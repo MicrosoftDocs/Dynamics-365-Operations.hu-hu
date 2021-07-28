@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6e8fb2baf85be0eaecfffcc7ec6cbb457c3bb04
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021890"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351249"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Tartalomkézbesítési hálózat végrehajtási beállításai
 
@@ -40,7 +40,7 @@ Mind a három CDN-bégrehajtási beállítás csak dinamikus HTML-tartalmat nyú
 
 A következő ábrán látható a Commerce architektúrája.
 
-![A Commerce architektúrájának áttekintése](media/Commerce_CDN-Option_ComparisonModels.png)
+![A Commerce architektúrájának áttekintése.](media/Commerce_CDN-Option_ComparisonModels.png)
 
 Az Azure Front Door-példányának Commerce rendszerbeli beállításával kapcsolatban lásd: [CDN-támogatás hozzáadása](add-cdn-support.md).
 
@@ -54,7 +54,7 @@ Az alábbi táblázat felsorolja a Commerce által a tartalomvégpontok kezelés
 
 Az alábbi ábra a Commerce-rendszer által biztosított Azure Front Door-példány architektúráját mutatja be.
 
-![A Commerce által biztosított Azure Front Door-példány](media/Commerce_CDN-Option_CommerceFrontDoor.png)
+![A Commerce által biztosított Azure Front Door-példány.](media/Commerce_CDN-Option_CommerceFrontDoor.png)
 
 ## <a name="use-a-customer-owned-azure-front-door-instance"></a>Vevő által birtokolt Azure Front Door példány használata
 
@@ -66,7 +66,7 @@ Az alábbi táblázat felsorolja a vevő által birtokolt, a tartalomvégpontok 
 
 A következő ábra egy Commerce-infrastruktúrát mutat be, amely egy vevő által birtokolt Azure Front Door-példányt tartalmaz.
 
-![Vevő által birtokolt Azure Front Door-példányt tartalmazó Commerce-infrastruktúra](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
+![Vevő által birtokolt Azure Front Door-példányt tartalmazó Commerce-infrastruktúra.](media/Commerce_CDN-Option_CustomerOwnedAzureFrontDoor.png)
 
 ## <a name="use-an-external-cdn-service"></a>Külső CDN-szolgáltatás használata
 
@@ -78,7 +78,7 @@ Az alábbi táblázat felsorolja a tartalomvégpontok kezelésére használt kü
 
 Az alábbi ábra egy külső CDN-szolgáltatást tartalmazó Commerce-infrastruktúrát mutat be.
 
-![Külső CDN-szolgáltatást tartalmazó Commerce-infrastruktúra](media/Commerce_CDN-Option_ExternalFrontDoor.png)
+![Külső CDN-szolgáltatást tartalmazó Commerce-infrastruktúra.](media/Commerce_CDN-Option_ExternalFrontDoor.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

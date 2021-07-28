@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2174
+ms.custom:
+- "2174"
+- intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e067c9df91894c5d2ce05a6afb92d1fadc954531
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: d8bde73d424e72ad66c27decd11a3b866d02b48c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6188197"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349794"
 ---
 # <a name="purchase-requisition-overview"></a>Beszerzési igénylések áttekintése
 
@@ -47,7 +49,7 @@ Konfigurálhatja a beszerzési igénylés munkafolyamatot, hogy egyetlen dokumen
 
 Az alábbi diagrammon a beszerzési igénylés állapotai és a beszerzési igénylések sorai láthatók, amint áthaladnak a munkafolyamaton.  
 
-[![A beszerzési igénylési sor fejléce és sorok állapota](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![A beszerzési igénylési sor fejléce és sorok állapota.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>A beszerzési igénylési sor fejléce és sorok állapotainak kapcsolatai
 
@@ -179,7 +181,7 @@ Olyan beszerzési igénylés létrehozásakor, beszerzési rendelésnél, amelye
 
 Az igényösszesítési eljárás akkor indul el, amikor a munkafolyamatban a beszerzési igénylés jóváhagyásra kerül és ha a költségvetés-ellenőrzés a szervezethez lett konfigurálva a költségvetési tartalékok és az előzetes kötelezettségvállalások rögzítésénél. A következő ábrán az igényösszesítés folyamata látható.  
 
-[![Folyamatáramlat igényösszesítéshez](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Folyamatáramlat igényösszesítéshez.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 A jóváhagyott beszerzési igénylési sorok konszolidálásához tegye a következőket:
 

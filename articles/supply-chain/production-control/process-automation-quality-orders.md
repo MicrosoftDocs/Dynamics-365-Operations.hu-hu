@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f35adab3075ba810964a41899ba95ae40c115e83
-ms.sourcegitcommit: 588f8343aaa654309d2ff735fd437dba6acd9d46
+ms.openlocfilehash: 0ebb34f58a4bfbe8bda935d7b40e9d89c3dacd03
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6115189"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353988"
 ---
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>Folyamatautomatizálási folyamatok meghívása minőségi rendelések létrehozásához
 
@@ -30,7 +30,7 @@ Az automatizálási megoldás sablonja [itt](https://aka.ms/D365SCMQualityOrderR
 
 A funkció és a funkció előnyeinek ismertetése a következő videóban tekinthető meg: [Minőségi rendelések készítése a Dynamics 365 Supply Chain Management rendszerben az RPA használatával](https://www.youtube.com/watch?v=LFbzJ6-H89w)
 
-![Az RPA automatizálási beállításai](media/rpa-automation-options.png "Az RPA automatizálási beállításai")
+![Az RPA automatizálási beállításai.](media/rpa-automation-options.png "Az RPA automatizálási beállításai")
 
 A Power Automate megoldássablonja olyan felhőautomatizálási folyamatot és asztali automatizálási folyamatot tartalmaz, amely automatizálja a minőségi rendelések létrehozását a Supply Chain Management szolgáltatásban.
 
@@ -38,7 +38,7 @@ Az automatizálás számos eseményre és jelre – többek között felhasznál
 
 Olyan megoldásparaméterek is rendelkezésre állnak, amelyekkel konfigurálni lehet egy termelési létesítményben egy adott használati esetre vonatkozó automatizálást.
 
-![Minőségi rendelés létrehozása](media/rpa-create-quality-roder.png "Minőségi rendelés létrehozása")
+![Minőségi rendelés létrehozása.](media/rpa-create-quality-roder.png "Minőségi rendelés létrehozása")
 
 A minőségi rendelés automatizálásához használható mintamegoldás letöltésével, telepítésével és használatával kapcsolatban a következő útmutató nyújt részletes útmutatást: [Minőségi rendelés létrehozásának automatizálása a Dynamics 365 Supply Chain Management rendszerben robotikus folyamatautomatizálással a Power Automate Desktop rendszerben](/power-automate/desktop-flows/dynamics365-scm-rpa).
 

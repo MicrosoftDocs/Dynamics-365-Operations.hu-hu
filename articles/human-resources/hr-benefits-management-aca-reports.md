@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-12-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 1417232baeaf03721bd0b25cc3f9fd5f750c65d5
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: b8a83982ad36abfe9032cae50fe4f09339985dc8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052265"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353662"
 ---
 # <a name="generate-aca-reports-in-benefits-management"></a>ACA-jelentések készítése a Juttatáskezelésben
 
@@ -48,11 +48,11 @@ Az Affordable Care fedezeti csoportok segítségével több olyan alkalmazotti r
 
 1. A **Juttatáskezelés** munkaterületen válassza az **Affordable Care fedezeti csoport** lehetőséget.
 
-    ![Az Affordable Care fedezeti csoport kiválasztása](./media/hr-benefits-management-aca-coverage-group.png)
+    ![Az Affordable Care fedezeti csoport kiválasztása.](./media/hr-benefits-management-aca-coverage-group.png)
 
 2. Válassza az **Új** lehetőséget, ha új Affordable Care fedezeti csoportot szeretne létrehozni vagy a **Szerkesztés** lehetőséget egy meglévő csoport módosításához.
 
-    ![Új vagy Szerkesztés kiválasztása](./media/hr-benefits-management-aca-new.png)
+    ![Új vagy Szerkesztés kiválasztása.](./media/hr-benefits-management-aca-new.png)
 
 3. Állítsa be a következő mezőket.
 
@@ -67,7 +67,7 @@ Az Affordable Care fedezeti csoportok segítségével több olyan alkalmazotti r
     | Csoport érvényességének kezdete | A rekord érvényességének első dátuma. |
     | Csoport érvényességi tartománya | A rekord érvényességének utolsó dátuma. Ha nincs lejárati dátum, akkor a **Soha** lehetőséget írja be. |
 
-    ![Fedezeti csoport létrehozása](./media/hr-benefits-management-aca-new-group.png)
+    ![Fedezeti csoport létrehozása.](./media/hr-benefits-management-aca-new-group.png)
 
 4. Válassza a **Mentés** lehetőséget.
 
@@ -77,11 +77,11 @@ Az Affordable Care fedezeti csoportok segítségével több olyan alkalmazotti r
 2. Válassza ki azt a csoportot, amelyhez alkalmazottakat szeretne rendelni.
 3. Válassza a **Tömeges hozzárendelés** lehetőséget.
 
-    ![A Tömeges hozzárendelés lehetőség kiválasztása](./media/hr-benefits-management-aca-mass-assignment.png)
+    ![A Tömeges hozzárendelés lehetőség kiválasztása.](./media/hr-benefits-management-aca-mass-assignment.png)
 
 4. Válassza ki az alkalmazottakat a listából, majd válassza a **Hozzárendelés** lehetőséget.
 
-    ![Kiválasztott alkalmazottak hozzárendelése egy csoporthoz](./media/hr-benefits-management-aca-assign-coverage-group.png)
+    ![Kiválasztott alkalmazottak hozzárendelése egy csoporthoz.](./media/hr-benefits-management-aca-assign-coverage-group.png)
 
 ## <a name="maintain-multiple-versions-of-coverage-options"></a>Fedezeti lehetőségek több változatának karbantartása
 
@@ -111,12 +111,12 @@ A következő lépésekkel kivételeket adhat meg egy Affordable Care fedezeti c
 2. A listából válassza ki az alkalmazottat.
 3. A **Foglalkoztatás** lap **További információk** szakaszában válassza az **Affordable Care fedezet** lehetőséget.
 
-    ![Egyetlen alkalmazott beállításainak módosítása](./media/hr-benefits-management-aca-change-single-employee.png)
+    ![Egyetlen alkalmazott beállításainak módosítása.](./media/hr-benefits-management-aca-change-single-employee.png)
 
 4. Válassza ki a **Szerkesztés** opciót.
 5. Minden, változtatást igénylő hónap esetén jelölje be az **Alapértelmezett érték felülbírálása** jelölőnégyzetet, majd szükség szerint módosítsa a többi értéket.
 
-    ![Alapértelmezett értékek felülbírálása](./media/hr-benefits-management-aca-override-default.png)
+    ![Alapértelmezett értékek felülbírálása.](./media/hr-benefits-management-aca-override-default.png)
 
 6. Válassza a **Mentés** lehetőséget.
 
@@ -131,7 +131,7 @@ Azt, hogy a juttatácsomagot jelenteni kell-e, kövesse a következő lépéseke
 3. Válassza ki a **Szerkesztés** opciót.
 4. Állítsa a **Jelentve az Affordable Care Act értelmében** lehetőséget **Igen** értékre.
 
-    ![Egészségügyi fedezeti jelentés](./media/hr-benefits-management-aca-report-coverage.png)
+    ![Egészségügyi fedezeti jelentés.](./media/hr-benefits-management-aca-report-coverage.png)
 
 5. Válassza a **Mentés** lehetőséget.
 
@@ -147,23 +147,23 @@ Lehetőség van az ACA 1095-B és 1095-C űrlapok létrehozására és a tovább
     > [!NOTE]
     > Ha több mint 500 alkalmazottnak nyomtat 1095-C űrlapot, egynél több PDF-fájlt fog kapni. Javasoljuk, hogy a **Dokumentumkezelés paraméterei** lapon a **Maximális fájlméret megabájtban** mező értékét **150**-re növelje. (Az oldal gyors megnyitásához használhatja a navigációs sáv keresőmezőjét.)
     >
-    > ![A maximális fájlméret módosítása](./media/hr-benefits-management-aca-maximum-file-size.png)
+    > ![A maximális fájlméret módosítása.](./media/hr-benefits-management-aca-maximum-file-size.png)
 
 3. A jelentések állapotának ellenőrzésére és megtekintésére használja a navigációs sáv keresőmezőjét az **Elektronikus jelentéskészítési feladatok** oldal megnyitásához.
 
-    ![Az Elektronikus jelentéskészítési feladatok oldal keresése](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
+    ![Az Elektronikus jelentéskészítési feladatok oldal keresése.](./media/hr-benefits-management-aca-search-electronic-reporting-jobs.png)
 
 4. Válassza ki a megtekinteni kívánt jelentést, majd válassza a **Fájlok megjelenítése** lehetőséget.
 
-    ![Fájlok megjelenítése](./media/hr-benefits-management-aca-show-files.png)
+    ![Fájlok megjelenítése.](./media/hr-benefits-management-aca-show-files.png)
 
 5. Válassza ki a **Megnyitás** lehetőséget.
 
-    ![Fájl megnyitása](./media/hr-benefits-management-aca-open-file.png)
+    ![Fájl megnyitása.](./media/hr-benefits-management-aca-open-file.png)
 
 6. Nyissa meg az irányítószámot a böngésző ablakának alján látható értesítési sávról, majd válassza ki a jelentést. Megtekintheti vagy kinyomtathatja a PDF-fájlt.
 
-    ![Minta: 1095-C űrlap](./media/hr-benefits-management-aca-1095-c-form.png)
+    ![Minta: 1095-C űrlap.](./media/hr-benefits-management-aca-1095-c-form.png)
 
 ## <a name="view-aca-coverage-information"></a>ACA-fedezeti információk megtekintése
 
@@ -178,7 +178,7 @@ Az adatok megtekintéséhez kövesse az alábbi lépéseket.
 1. A **Juttatáskezelés** munkaterületen válassza az **Dolgozói Affordable Care fedezeti jogosultság** lehetőséget.
 2. A **Csoport neve** mezőben válasszon ki egy csoportot.
 
-    ![ACA-fedezet megtekintése](./media/hr-benefits-management-aca-view-coverage.png)
+    ![ACA-fedezet megtekintése.](./media/hr-benefits-management-aca-view-coverage.png)
 
 Ha az Affordable Care fedezeti csoport bármely alapértelmezett értékét felülírták, egy csillag jelenik meg a módosított érték mellett. Ha az értékek a tizenkét hónap mindegyikében megegyeznek, és nem bírálták felül őket, az értéket a rendszer a **Mind a 12 hónap** oszlopba nyomtatja.
 
@@ -198,11 +198,11 @@ Ha a listák bármelyikét exportálni szeretné Microsoft Excel alkalmazásba, 
 
 Ha kötelező jelentenie az eltartott személyeket, mert munkáltatóként a munkavállaló által fizetett egészségügyi biztosítást nyújt, lehetőség van a juttatási csomagok által lefedett, **ACA szerint bejelentendő** megjelölésű eltartottak megtekintésére. A Művelet ablaktáblán válassza **Az eltartott fedezetének megtekintése** lehetőséget.
 
-![Eltartott fedezetének megtekintése](./media/hr-benefits-management-aca-view-dependent-coverage.png)
+![Eltartott fedezetének megtekintése.](./media/hr-benefits-management-aca-view-dependent-coverage.png)
 
 Megjelennek az alkalmazott eltartottakkal kapcsolatos fedezeti adatai.
 
-![Függő fél jogosultsága](./media/hr-benefits-management-aca-dependents.png)
+![Eltartott jogosultsága.](./media/hr-benefits-management-aca-dependents.png)
 
 > [!NOTE]
 > Az oldalon csak az **ACA szerint bejelentendő** típusú megjelölt juttatási tervek jelennek meg.

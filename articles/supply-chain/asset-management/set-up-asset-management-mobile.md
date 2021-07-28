@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: bc170df2fc58ae6b42fbc8834caad0bb7cd16f69
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9c8f202a813520129867b57e660e8d995c20ed87
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837777"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351513"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Eszközkezelés mobil munkaterület beállítása
 
@@ -47,7 +47,7 @@ Ahhoz, hogy elérhetővé tegye az eszközkezelési funkciókat a Finance and Op
 1. A Supply Chain Management szolgáltatásban válassza a **Beállítások** gombot (a jobb felső sarkában látható fogaskerekek szimbólumát), majd válassza a menüben a **Mobilalkalmazás** lehetőséget.
 1. A **Mobilalkalmazás-kezelés** párbeszédpanelen keresse meg az **Eszközkezelés** csempét. Ha azt a szöveget tartalmazza, hogy "Metaadatok között - nincs közzétéve", akkor a munkaterület még nincs közzétéve. Ha a "Metaadatok között - közzétett" szöveget tartalmazza, a munkaterület már közzé van téve, és a művelet hátralévő részét kihagyhatja.
 
-    ![Mobilalkalmazás párbeszédpanel kezelése](media/mobile-workspaces.png "Mobilalkalmazás párbeszédpanel kezelése")
+    ![Mobilalkalmazás párbeszédpanel kezelése.](media/mobile-workspaces.png "Mobilalkalmazás párbeszédpanel kezelése")
 
 1. Válassza az **Eszközkezelés** csempét, majd az eszköztár **Közzététel** gombját. Néhány másodperc múlva értesítést kell kapnia arról, hogy sikeresen megtörtént a munkaterület közzététele. Ezenkívül a csempe szövegének a "Metaadatok között – közzétéve" szövegre kell váltania.
 
@@ -60,22 +60,22 @@ Ahhoz, hogy elérhetővé tegye az eszközkezelési funkciókat a Finance and Op
 
 1. Nyissa meg Finance and Operations (Dynamics 365) alkalmazást. A bejelentkezési oldalnak meg kell jelenni. A **Bejelentkezés** mezőben adja meg a saját Supply Chain Management URL-címét, vagy válassza ki a közelmúltbeli URL-címet a **Közelmúltbeli környezetek** listában, majd koppintson a **Csatlakozás** gombra.
 
-    ![Bejelentkezési oldal](media/mobile-app-sign-in.png "Bejelentkezési oldal")
+    ![Bejelentkezési oldal.](media/mobile-app-sign-in.png "Bejelentkezési oldal")
 
 1. Ha a program kéri a kapcsolat megerősítését, jelölje be a **Megértettem** jelölőnégyzetet, majd koppintson a **Csatlakozás** gombra.
 1. A **Fiókválasztó** oldalon Microsoft-fiókjával jelentkezhet be a mobilalkalmazásba.
 
     Megjelenik a **Munkaterületek** oldal. Felsorolja a saját Supply Chain Management példánya által közzétett összes mobil munkaterületet.
 
-    ![Munkaterületek listája](media/mobile-app-workspaces.png "Munkaterületek listája")
+    ![Munkaterületek listája.](media/mobile-app-workspaces.png "Munkaterületek listája")
 
 1. Ha módosítania kell a jogi személyt (vállalatot), kattintson a bal felső sarkában látható Menü gombra (néha hamburgernek vagy a hamburgergombnak is nevezik), majd válassza a **Vállalat módosítása** lehetőséget.
 
-    ![A jogi személy módosítása](media/mobile-app-change-comp.png "A jogi személy módosítása")
+    ![A jogi személy módosítása.](media/mobile-app-change-comp.png "A jogi személy módosítása")
 
 1. Válassza ki a **Munkaterületek** lapon azt a munkaterületet, amelyet használni szeretne a megnyitásához.
 
-    ![Eszközkezelési mobil munkaterület](media/mobile-app-asset-workspace.png "Eszközkezelési mobil munkaterület")
+    ![Eszközkezelési mobil munkaterület.](media/mobile-app-asset-workspace.png "Eszközkezelési mobil munkaterület")
 
 ## <a name="work-with-the-asset-management-mobile-workspace"></a>Eszközkezelés mobil munkaterület használata
 

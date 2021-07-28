@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 2bada42073e46c69101e6d31f3328a2eeb95f880
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2921cb22bedf04db1c8d11a382b979b3c63e6683
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023291"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349976"
 ---
 # <a name="view-posted-tds-payments-and-transactions-for-a-tds-settlement-period"></a>A TDS kiegyenlítési időszakra feladott TDS fizetések és tranzakciók megtekintése
 
@@ -31,7 +31,7 @@ Ez a témakör elmagyarázza, hogyan tekintheti meg a az elszámolási időszakr
 
 1. Ugorjon az **Adó \> Közvetett adók \> Adóelőleg \> Adóelőleg-kiegyenlítési időszakok** elemre.
 
-    [![Adóelőleg-kiegyenlítési időszakok oldala](./media/apac-ind-TDS-50.png)](./media/apac-ind-TDS-50.png)
+    [![Adóelőleg-kiegyenlítési időszakok oldala.](./media/apac-ind-TDS-50.png)](./media/apac-ind-TDS-50.png)
 
 2. Az **Adóelőleg-elszámolási időszakok** lapon válassza az **Adóelőleg-kifizetések** lehetőséget az **Adóelőlegfizetés** oldal megnyitásához, ahol megtekintheti az adott TDS-elszámolási időszakra vonatkozóan teljesített TDS-elszámolásokat.
 

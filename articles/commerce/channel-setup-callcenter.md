@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e89c63c90aa8d46fd23900897a54165e14fb635d
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 34fa845c72f23485a2573d6bb4cf38b66c7adb7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800663"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351200"
 ---
 # <a name="set-up-a-call-center-channel"></a>Hívásközponti csatorna beállítása
 
@@ -54,11 +54,11 @@ A Dynamics 365 Commerce szolgáltatásban a hívásközpont egyfajta kereskedelm
 
 A következő kép bemutatja egy új hívásközpont csatorna létrehozását.
 
-![Új hívásközponti csatorna](media/channel-setup-callcenter-1.png)
+![Új hívásközponti csatorna.](media/channel-setup-callcenter-1.png)
 
 A következő kép egy példát mutat a hívásközpont csatornára.
 
-![Hívásközponti csatorna – példa](media/channel-setup-callcenter-2.png)
+![Hívásközponti csatorna – példa.](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>További csatornák beállítása
 
@@ -66,7 +66,7 @@ A hívásközpont csatorna beállításához szükséges további feladatok köz
 
 A következő képen láthatók a **Szállítási módok** és a **Fizetési módok** beállított lehetőségei a **Beállítás** lapon.
 
-![További hívásközpont-csatorna-beállítási műveletek](media/channel-setup-callcenter-3.png)
+![További hívásközpont-csatorna-beállítási műveletek.](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Fizetési módok beállítása
 
@@ -81,7 +81,7 @@ A fizetési módok beállításához a csatornán támogatott valamennyi fizeté
 
 A következő kép egy példát mutat a készpénzfizetési módra.
 
-![Fizetési módok – példa](media/channel-setup-callcenter-payments.png)
+![Fizetési módok – példa.](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Szállítási módok beállítása
 
@@ -97,7 +97,7 @@ Ha módosítani szeretné vagy hozzáadna egy szállítási módot, amelyet a h�
 
 A következő kép egy példát mutat a szállítási módra.
 
-![Szállítási módok beállítása](media/channel-setup-retail-7.png)
+![Szállítási módok beállítása.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Csatornafelhasználók beállítása
 

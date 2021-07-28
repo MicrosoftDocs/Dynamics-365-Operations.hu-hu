@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72b5831e3d2bc2e839b0a569fb314a8ec074a5a1
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b652045b130eca7e8236b4952b7c829e53a2269e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5746411"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352938"
 ---
 # <a name="getenumvaluebyname-er-function"></a>GETENUMVALUEBYNAME ER-függvény
 
@@ -62,7 +62,7 @@ Nem történik kivétel, ha a *Felsorolás* érték nem található a *Karakterl
 
 A következő ábra az adatmodellbe bevezetett **ReportDirection** sorszámozást mutatja be. Vegye figyelembe, hogy a címkék a felsorolási értékekhez vannak megadva.
 
-![Az adatmodell-felsorolásához elérhető értékek](./media/ER-data-model-enumeration-values.PNG)
+![Az adatmodell-felsorolásához elérhető értékek.](./media/ER-data-model-enumeration-values.PNG)
 
 A következő ábrán ezek a részletek láthatók:
 
@@ -70,7 +70,7 @@ A következő ábrán ezek a részletek láthatók:
 - Az `$IsArrivals` kifejezés a modellfelsorolás-alapú **$Direction** adatforrást a jelen függvény paramétereként használja.
 - Az összehasonlító kifejezés értéke **IGAZ**.
 
-![Egy adatmodell-felsorolás példája](./media/ER-data-model-enumeration-usage.PNG)
+![Egy adatmodell-felsorolás példája.](./media/ER-data-model-enumeration-usage.PNG)
 
 ## <a name="example-2"></a>2. példa
 
@@ -78,14 +78,14 @@ A `GETENUMVALUEBYNAME` és a [`LISTOFFIELDS`](er-functions-list-listoffields.md)
 
 A következő ábra a modell-leképezésben bevezetett **TransType** adatforrást mutatja be. Ez az adatforrás az **LedgerTransType** alkalmazás-felsorolásra vonatkozik.
 
-![Egy alkalmazás-felsorolásra hivatkozó modell-leképezési adatforrás](./media/er-functions-text-getenumvaluebyname-example2-1.png)
+![Egy alkalmazás-felsorolásra hivatkozó modell-leképezési adatforrás.](./media/er-functions-text-getenumvaluebyname-example2-1.png)
 
 A következő ábra a modell-leképezésben konfigurált **TransTypeList** adatforrást mutatja be. Ez az adatforrás a **TransType** alkalmazás felsorolása alapján van konfigurálva. A `LISTOFFIELDS` funkció használatával az összes felsorolási érték visszatéríthető mezőket tartalmazó rekordok listájaként. Így az összes felsorolási érték részletei megjeleníthetők.
 
 > [!NOTE]
 > Az **EnumValue** mező a **TransTypeList** adatforráshoz a `GETENUMVALUEBYNAME(TransType, TransTypeList.Name)` kifejezés használatával van konfigurálva. Ez a mező a lista minden rekordjához egy felsorolási értéket juttat vissza.
 
-![Egy modell-leképezés adatforrása, amely egy kiválasztott felsorolás összes felsorolási értékét rekordok listájaként juttatja vissza](./media/er-functions-text-getenumvaluebyname-example2-2.png)
+![Egy modell-leképezés adatforrása, amely egy kiválasztott felsorolás összes felsorolási értékét rekordok listájaként adja vissza.](./media/er-functions-text-getenumvaluebyname-example2-2.png)
 
 A következő ábra a modell-leképezésben konfigurált **VendTrans** adatforrást mutatja be. Ez az adatforrás szállítói tranzakciórekordokat juttat vissza a **VendTrans** alkalmazástáblából. Minden tranzakció főkönyvi típusát a **TransType** mező értéke határozza meg.
 
@@ -94,11 +94,11 @@ A következő ábra a modell-leképezésben konfigurált **VendTrans** adatforr�
 >
 > A **TransTypeTitle** mező egy olyan adatmodell **LedgerType** mezőjéhez van kötve, amely lehetővé teszi, hogy ez az információ minden olyan ER-formátumban használható legyen, amely az adatmodellt adatforrásként használja.
 
-![Szállítói tranzakciókat visszaadó modell-leképezési adatforrás](./media/er-functions-text-getenumvaluebyname-example2-3.png)
+![Szállítói tranzakciókat visszaadó modell-leképezési adatforrás.](./media/er-functions-text-getenumvaluebyname-example2-3.png)
 
 A következő ábra bemutatja, hogyan használható az [adatforrás hibakeresője](er-debug-data-sources.md) a konfigurált modell-leképezés teszteléséhez.
 
-![A konfigurált modell-leképezés tesztelése az adatforrás hibakeresőjének segítségével](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
+![A konfigurált modell-leképezés tesztelése az adatforrás hibakeresőjének segítségével.](./media/er-functions-text-getenumvaluebyname-example2-4.gif)
 
 Az adatmodell **LedgerType** mezője a várt módon jeleníti meg a tranzakciótípusok címkéit.
 

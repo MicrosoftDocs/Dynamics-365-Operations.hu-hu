@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 8229dc84040b1f3bd46d75c13795f0dc9b7e71f1
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 105fdc1b8e8c9e30c0d305894910194591707193
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897768"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356703"
 ---
 # <a name="one-voucher"></a>Egy bizonylat
 
@@ -33,18 +33,18 @@ A pénzügyi naplók (főkönyvi napló, tárgyieszköz-napló, szállítói kif
 
 - Állítsa be a napló nevét (**Főkönyv** \> **Naplóbeállítás** \> **Naplónevek**) úgy, hogy az **Új bizonylat** mező értéke **Csak egy bizonylatszám** legyen. Minden, a naplóhoz hozzáadott sor most ugyanarra a bizonylatra kerül. Ezért a bizonylat többsoros bizonylatként is megadható, mint számla/ellenszámla ugyanazon a soron, vagy kombinációként.
 
-    [![Egy sor](./media/same-line.png)](./media/same-line.png)
+    [![Egy sor.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
     > Az Egy bizonylat meghatározása **nem** tartalmazza azokat az eseteket, ahol a naplóneveket a **Csak egy bizonylatszám** beállítással hozták létre, de a felhasználó olyan bizonylatot ad meg, amely csak főkönyvi számla típusúakat tartalmaz. Ebben a témakörben az Egy bizonylat azt jelenti, hogy van egyetlen bizonylat, amelyen egynél több szállító, vevő, bank, tárgyi eszköz vagy projekt szerepel.
 
 - Adjon meg egy többsoros bizonylatot, ha nincs ellenszámla.
 
-    [![Többsoros bizonylat](./media/Multi-line.png)](./media/Multi-line.png)
+    [![Többsoros bizonylat.](./media/Multi-line.png)](./media/Multi-line.png)
 
 - Adjon meg egy bizonylatot, ahol a számla és az ellenszámla is analitikus számlatípust tartalmaz – például **Szállító**/**Szállító**, **Vevő**/**Vevő**, **Szállító**/**Vevő** vagy **Bank**/**Bank**.
 
-    [![Analitikus bizonylat](./media/subledger.png)](./media/subledger.png)
+    [![Analitikus bizonylat.](./media/subledger.png)](./media/subledger.png)
 
 ## <a name="issues-with-one-voucher"></a>Problémák az Egy bizonylat funkcióval
 
@@ -52,11 +52,11 @@ Az Egy bizonylat funkció problémákat okoz a kiegyenlítés, az adószámítá
 
 Például feladhatja az alábbi többsoros bizonylatot.
 
-[![Példa többsoros bizonylatra](./media/example.png)](./media/example.png)
+[![Példa többsoros bizonylatra.](./media/example.png)](./media/example.png)
 
 Ekkor létrehozza a **Szállítónkénti költségek** jelentést a **Pénzügyi információk** munkaterületen. Ezen a jelentésen a rendszer szállítócsoport, majd szállító szerint csoportosítja a költségszámla-egyenlegeket. A jelentés létrehozásakor a rendszer nem tudja megállapítani, melyik szállítói csoportok/szállítók esetében merült fel a 250,00 költség. Mivel a tranzakció részletei hiányoznak, a rendszer azt feltételezi, hogy a 250,00 összérték a bizonylaton található első szállítónál merült fel. Így a 250,00 költség, amely a 600120 fő számla egyenlegében szerepel, ekkor megjelenik a szállítói csoport vagy szállító alatt. Ugyanakkor nagyon valószínű, hogy a bizonylaton szereplő első szállító nem a megfelelő szállító volt. A jelentés ezért valószínűleg nem megfelelő.
 
-[![Szállítónkénti költségek jelentésben](./media/expenses.png)](./media/expenses.png)
+[![Szállítónkénti költségek jelentésben.](./media/expenses.png)](./media/expenses.png)
 
 ## <a name="the-future-of-one-voucher"></a>Az Egy bizonylat jövője
 

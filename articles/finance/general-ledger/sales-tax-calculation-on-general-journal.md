@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: EricWang
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: d0cb4b282fe2bd5c68af17c741787c4caca98003
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
+ms.openlocfilehash: c019c597f4734f92f5d9aacdff1cbb30f9fb0a60
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937306"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358833"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Áfa számítása az általános naplósorokhoz
 [!include [banner](../includes/banner.md)]
@@ -55,7 +55,7 @@ Ellenkező esetben az áfa iránya a visszaigényelhető áfa.
 
 A következő ábra grafikusan illusztrálja a szabályt.
 
-![A projektekhez tartozó számlák adózási irányának lehetőségei](media/Sales-Tax-Direction-Vendor.jpg)
+![A projektekhez tartozó számlák adózási irányának lehetőségei.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-vendor"></a>Számla típusa szállító
 
@@ -73,7 +73,7 @@ Ellenkező esetben az áfa iránya a visszaigényelhető áfa.
 
 A következő ábra grafikusan illusztrálja a szabályt.
 
-![A szállítóhoz tartozó számlák adózási irányának lehetőségei](media/Sales-Tax-Direction-Vendor.jpg)
+![A szállítóhoz tartozó számlák adózási irányának lehetőségei.](media/Sales-Tax-Direction-Vendor.jpg)
 
 ### <a name="account-type-is-customer"></a>Számla típusa ügyfél
 
@@ -89,7 +89,7 @@ Ellenkező esetben az áfa iránya a fizetendő áfa.
 
 A következő ábra grafikusan illusztrálja a szabályt.
 
-![Az ügyfélhez tartozó számlák adózási irányának lehetőségei](media/Sales-Tax-Direction-Customer.jpg)
+![Az ügyfélhez tartozó számlák adózási irányának lehetőségei.](media/Sales-Tax-Direction-Customer.jpg)
 
 ### <a name="account-type-is-ledger"></a>Számla típusa Főkönyv
 
@@ -103,7 +103,7 @@ Ellenkező esetben, ha a napló összege tartozik (pozitív), akkor az áfa irá
 
 A következő ábra grafikusan illusztrálja a szabályt.
 
-![A főkönyvi számlák adózási irányának lehetőségei](media/Sales-Tax-Direction-Ledger.jpg)
+![A főkönyvi számlák adózási irányának lehetőségei.](media/Sales-Tax-Direction-Ledger.jpg)
 
 #### <a name="override-the-sales-tax-direction"></a>Az áfa irányának felülírása
 
@@ -115,7 +115,7 @@ Nyissa meg a **Főkönyv \> Számlatükör \> Számlák \> Főszámlák**, és v
 
 Ez a szakasz bemutatja az áfa összeg jel kiszámításának módját.
 
-![Áfatranzakciók lap](media/sales-tax-amount-sign.jpg)
+![Áfatranzakciók lap.](media/sales-tax-amount-sign.jpg)
 
 A következő táblázat bemutatja az általános szabályt, amely meghatározza az áfa irányát és az áfa összegének az ideiglenes áfa táblába történő megjelölését.
 

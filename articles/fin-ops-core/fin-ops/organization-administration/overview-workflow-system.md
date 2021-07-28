@@ -8,18 +8,20 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 56381
+ms.custom:
+- "56381"
+- intro-internal
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dbcab469e1dc8c139d180abdb7ed0bd8fba488a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: dc73f1bde3407c144dc1cd48283385c19713430e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747735"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349084"
 ---
 # <a name="workflow-system-overview"></a>A munkafolyamat-rendszer áttekintése
 
@@ -39,7 +41,7 @@ A munkafolyamat olyan rendszer, amely az Application Object Server (AOS) kiszolg
 
 A munkafolyamat egy üzleti folyamatot jelent. Azt határozza meg, hogyan halad vagy mozog egy dokumentum a rendszeren keresztül annak jelzésével, hogy kinek a feladata a feladat végrehajtása, a döntéshozatal, illetve a dokumentum jóváhagyása. Az alábbi illusztráció szemlélteti a költségjelentések munkafolyamatát.
 
-![Munkafolyamat felhasználókhoz rendelt elemekkel](./media/workflow_user.gif)
+![Munkafolyamat felhasználókhoz rendelt elemekkel.](./media/workflow_user.gif)
 
 A munkafolyamat könnyebb megértésének érdekében tegyük fel, hogy Balázs benyújt egy 7000 dolláros költségjelentést. Ebben az esetben Ivánnak ellenőriznie kell a számlákat, amelyeket Sam irányított hozzá. Ezt követően Ferencnek és Zsuzsannának jóvá kell hagynia a költségjelentést. Ezután tegyük fel, hogy Sam benyújt egy újabb költségjelentést, ezúttal 11 000 dollárról. Ebben az esetben Ivánnak ellenőriznie kell a nyugtákat, majd Ferencnek, Zsuzsannának és Annának is jóvá kell hagynia a költségjelentést.
 

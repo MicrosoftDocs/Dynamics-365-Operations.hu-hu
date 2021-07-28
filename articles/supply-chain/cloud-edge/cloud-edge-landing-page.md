@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 24c322712edf1277eabfdd708f528d89bcf43640
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261746"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354809"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Felhőalapú és peremhálózat-léptékű egységek gyártási és raktárkezelési munkaterhelésekhez
 
@@ -41,7 +41,7 @@ A számítási feladat képességei folyamatosan kerülnek kiadásra a növekmé
 
 A skálázási egységek kiterjesztik a központi Supply Chain Management központ környezetét a dedikált feldolgozási kapacitás hozzáadásával. A skálázási egységek futhatnak a felhőben. Alternatív megoldásként a helyszíni létesítmény peremhálózatán is futhatnak.
 
-:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 skálázási egységekkel":::
+:::image type="content" source="./media/cloud_edge-HeroDiagram.png" alt-text="Dynamics 365 skálázási egységekkel.":::
 
 A skálázási egységek biztosítják a hozzárendelt munkaterhelések ellenállóképességét, megbízhatóságát és skálázását. A Peremhálózati skálázási egységek ideiglenesen leválaszthatók a felhőközponti környezetről, és a dolgozók továbbra is a peremhálózaton maradhatnak a hozzárendelt számítási feladatban.
 
@@ -157,7 +157,7 @@ A skálázási egységek több raktározási egységben (SKU-k) és árképzési
 
 A belépési szintű termékváltozatot *Alapszintűként*, a jobban teljesítő termékváltozatot pedig *Standardként* ismerheti. Minden egyes termékváltozat előre betöltődik a meghatározott számú havi tranzakciókkal. A havi tranzakció költségvetését azonban növelheti úgy, hogy minden egyes termékváltozathoz hozzáad egy kerettúllépés bővítményt.
 
-:::image type="content" source="media/SKUs-highlevel.png" alt-text="Bővítmények a felhőbeli skálázási egységekhez":::
+:::image type="content" source="media/SKUs-highlevel.png" alt-text="Bővítmények a felhőbeli skálázási egységekhez.":::
 
 > [!TIP]
 > Az igényeknek leginkább megfelelő méret azonosítása érdekében működjön együtt partnerével és a Microsofttal, és ismerkedjen meg a szükséges havi tranzakciómérettel.
@@ -181,11 +181,11 @@ Ha a keresett bérlő nem szerepel a listában, nyissa meg az [LCS](https://lcs.
 
 Minden bérlő esetében a lista a felvételi állapotot jeleníti meg.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Bérlők listája a Dynamics 365 bérlők fülön":::
+:::image type="content" source="media/cloud_edge-EnableHybrid1.png" alt-text="Bérlők listája a Dynamics 365 bérlők fülön.":::
 
 Válassza a **Kattintson ide az első lépésekhez** az LCS-bérlő beléptetési kérelem beküldéséhez. El kell fogadnia a feltételeket. Meg kell adnia egy üzleti e-mail-címet is, ahol a Microsoft elküldheti a felvételi folyamathoz kapcsolódó kommunikációt.
 
-:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Regisztrálási elküldés a bérlő számára":::
+:::image type="content" source="media/cloud_edge-EnableHybrid2.png" alt-text="Regisztrálás elküldése a bérlő számára.":::
 
 A Microsoft áttekinti a kérést, és a regisztrációs űrlapon megadott címre küldött e-mailben tájékoztatja a következő lépésekről. A Microsoft szorosan együttműködik Önnel, hogy az üzleti forgatókönyvéhez engedélyezze a skálázási egységeket a hibrid topológiában.
 
@@ -195,13 +195,13 @@ A felvétel befejezése után a port használatával konfigurálhatja a skáláz
 
 Nyissa meg a [Skálázásiegység-kezelő portált](https://aka.ms/SCMSUM), és jelentkezzen be a bérlői fiókjával. A **Skálázási egységek konfigurálása** lapon hozzáadhat egy központi környezetet, ha az még nem szerepel a listán. Ezután kiválaszthatja a központot, amelyet a skálázási egységekkel és a számítási feladatokkal konfigurálni kíván.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Skálázásiegység- és számításifeladat-kezelési élmény":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Skálázásiegység- és számításifeladat-kezelési élmény.":::
 
 Ha egy vagy több, az előfizetésben elérhető skálázási egységet szeretne hozzáadni, válassza a **Skálázási egységek hozzáadása** lehetőséget.
 
 A **Definiált számítási feladatok** lapon a **Számítási feladatok létrehozása** gombbal hozzáadhat egy raktárkezelési számítási feladatot az egyik skálázási egységhez. Minden számítási feladathoz meg kell adnia a számítási feladatok tulajdonában lévő folyamatok kontextusát. A raktárkezelési munkaterhelések esetében a kontextus egy adott hely és jogi személy adott raktára.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Számítási feladat létrehozása":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Számítási feladat létrehozása.":::
 
 > [!TIP]
 > Idővel további növekményes fejlesztések lesznek hozzáadva a Scale Unit Manager tapasztalatokhoz, így egyszerűbbé teszik az életciklus-kezelési műveleteket. A jelenlegi kiadással kapcsolatos különleges képességek a felvételre vonatkozó útmutatóban találhatók meg, ami elérhető a Supply Chain Management osztott, hibrid topológiáját felvevő vevők számára. <!-- KFM: Add a link to the handbook when it is published -->

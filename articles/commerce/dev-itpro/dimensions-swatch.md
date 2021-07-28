@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: 08564ce7af7412f2501b917b3496942004402611
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 513ec2f48a3c7c81a41fd64a9752067d12eb4ec8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117226"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353862"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Termékdimenzió értékeinek konfigurálása palettaként való megjelenítésre
 
@@ -39,11 +39,11 @@ A dimenziók palettaként való megjelenítésére szolgáló funkció lehetőv�
 
 Az alábbi képen olyan példa látható, ahol a színek palettaként jelennek meg egy kereskedelmi PDP oldalon.
 
-![Példa a színeknek palettaként való megjelenítésére a termék részleteit tartalmazó oldalon](../dev-itpro/media/swatch_pdp.png)
+![Példa a színeknek palettaként való megjelenítésére a termék részleteit tartalmazó oldalon.](../dev-itpro/media/swatch_pdp.png)
 
 Az alábbi képen olyan példa látható, ahol a színek palettaként jelennek meg a keresési eredményeket mutatót Commerce-listaoldalon.
 
-![Példa a színeknek palettaként való megjelenítésére a keresési eredményeket mutató listaoldalon](../dev-itpro/media/swatch_searchresults.PNG)
+![Példa a színeknek palettaként való megjelenítésére a keresési eredményeket mutató listaoldalon.](../dev-itpro/media/swatch_searchresults.PNG)
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>A dimenziók palettaként való megjelenítésének engedélyezésére szolgáló funkció a Commerce központjában
 
@@ -57,15 +57,15 @@ A konfiguráció a következő szintek bármelyikén elvégezhető:
 
 - **Dimenzió** – A Commerce központjában nyissa meg a dimenzióhoz tartozó oldalt: keressen a **Színre**, a **Méretre** vagy a **Stílusra**. A dimenzióértékek minden oldalon rácsban láthatók. A megjelenítési sorrendet, a hexadecimális kódot és a kép-URL értékét kezelheti. A következő képen a **Színek** oldal példakonfigurációját mutatja.
 
-    ![Dimenziókonfiguráció példája a Színek oldalon](../dev-itpro/media/swatch_Color.PNG)
+    ![Dimenziókonfiguráció példája a Színek oldalon.](../dev-itpro/media/swatch_Color.PNG)
 
 - **Dimenzió csoport** – A Dynamics 365 Commerce rendszerben a **Finomító csoport** tulajdonsággal hozhatók létre dimenziócsoportok. Ha dimenziócsoportokat szeretne meghatározni, nyissa meg a megfelelő oldalt: keressen a **Színcsoportra**, a **Méretcsoportra** vagy a **Stíluscsoportra**. Az egyes oldalakon kezelni lehet a hexadecimális kódot, a kép-URL-t és a finomító csoport értékét. A következő képen a **Színcsoportok** oldal példakonfigurációját mutatja.
 
-    ![Dimenziókonfiguráció példája a Színcsoportok oldalon](../dev-itpro/media/swatch_colorGroup.PNG)
+    ![Dimenziókonfiguráció példája a Színcsoportok oldalon.](../dev-itpro/media/swatch_colorGroup.PNG)
 
 - **Termékdimenzió (termék létrehozása során)** – Amikor új terméket hoz létre, a **Termékdimenziók** oldalon megadhatja a dimenzió értékeit. Meglévő termékek esetében lehet, hogy már be van állítva a **Hexadecimális kód**, az **URL** (képeknél) vagy a **Finomító csoport** mező. Az értékek azonban igény szerint módosíthatók. A következő képen a **Termékdimenziók** oldalon lévő példakonfiguráció látható.
 
-    ![Dimenziókonfiguráció példája a Termékdimenziók oldalon](../dev-itpro/media/swatch_product_dimensions.PNG)
+    ![Dimenziókonfiguráció példája a Termékdimenziók oldalon.](../dev-itpro/media/swatch_product_dimensions.PNG)
 
 > [!NOTE]
 > A hexadecimális kód és kép-URL konfigurációinak kezelési folyamata a dimenziók megjelenítési sorrendjének kezelésénél használt mintát követi.
@@ -76,7 +76,7 @@ A legtöbb színdimenziónál a Commerce központjában lévő dimenzióoldalako
 
 A következő ábrán lévő példa a színdimenziók hexadecimális kódú értékekkel történő konfigurálását mutatja.
 
-![Hexadecimális kódokat használó dimenziókonfiguráció példája](../dev-itpro/media/swatch_color_hexcode.png)
+![Hexadecimális kódokat használó dimenziókonfiguráció példája.](../dev-itpro/media/swatch_color_hexcode.png)
 
 ## <a name="configure-dimension-values-by-using-image-urls"></a>Dimenzióértékek konfigurálása kép-URL-lel
 
@@ -86,13 +86,13 @@ Minden képet fel kell töltenie a Commerce webhelyszerkesztőjébe, majd közz�
 
 A következő képen látható példában a kép URL-jét használtuk a konfigurációhoz a **Színek** oldalon.
 
-![Kép-URL-eket használó dimenziókonfiguráció példája](../dev-itpro/media/swatch_color_urls.PNG)
+![Kép-URL-eket használó dimenziókonfiguráció példája.](../dev-itpro/media/swatch_color_urls.PNG)
 
 Ahogy a termék- és kategóriaképek esetében, a képek URL-je meghatározható multimédiás sablonokkal. Amikor képeket tölt fel a webhelyszerkesztőbe, a fájlnevek használatának és a fájlok elérési útjának egységesnek kell lennie.
 
 A következő képen látható példában a kép URL-jét használtuk egy multimédiás sablon konfigurációjához.
 
-![Példa multimédiás sablon konfigurációjára](../dev-itpro/media/swatch_media_template.PNG)
+![Példa multimédiás sablon konfigurációjára.](../dev-itpro/media/swatch_media_template.PNG)
 
 ## <a name="configure-dimension-values-by-using-both-hex-codes-and-image-urls"></a>Dimenzióértékek konfigurálása mind hexadecimális kódokkal, mind kép-URL-ekkel
 
@@ -100,7 +100,7 @@ A legtöbb színdimenzióhoz mind hexadecimális kód, mind kép-URL beállítha
 
 A következő képen látható példában mind hexadecimális kódot, mind kép-URL-t használtunk a konfigurációhoz a **Színek** oldalon.
 
-![Kép-URL-eket és hexadecimális kódot egyaránt használó dimenziókonfiguráció példája](../dev-itpro/media/swatch_color_hexandimage.png)
+![Kép-URL-eket és hexadecimális kódot egyaránt használó dimenziókonfiguráció példája.](../dev-itpro/media/swatch_color_hexandimage.png)
 
 ## <a name="configure-refiner-groups"></a>Finomító csoportok konfigurálása
 
@@ -110,7 +110,7 @@ Ha például a szín dimenzióértékei „kék”, „kék kockás”, "halván
 
 Az alábbi képen a **Szín** és a **Finomító csoport** tulajdonságai közötti kapcsolat látható a Commerce központjában.
 
-![Példa a finomító csoport kezelésére](../dev-itpro/media/swatch_refiner_group.png)
+![Példa a finomító csoport kezelésére.](../dev-itpro/media/swatch_refiner_group.png)
 
 ## <a name="manage-images-in-commerce-site-builder"></a>Képek kezelése a Commerce webhelyszerkesztőjében
 
@@ -118,7 +118,7 @@ Ha kép-URL-eket használ valamelyik dimenzióértékhez, akkor a megfelelő ké
 
 A következő képen lévő példában a **Fájlok feltöltése** párbeszédpanel használatával töltöttünk fel képeket a webhelykészítő médiatárába. A képen kiemelten jelennek meg a kijelöléshez rendelkezésre álló **Méret**, **Szín** és **Stílus** kategóriák.
 
-![Példa képfájl-kategóriákra a webhelyszerkesztő médiatárába való feltöltés során](../dev-itpro/media/swatch_sitebuilder.png)
+![Példa képfájl-kategóriákra a webhelyszerkesztő médiatárába való feltöltés során.](../dev-itpro/media/swatch_sitebuilder.png)
 
 ## <a name="enable-swatch-display-on-e-commerce-site-pages"></a>A paletta megjelenítésének engedélyezése az e-kereskedelmi webhely oldalain
 

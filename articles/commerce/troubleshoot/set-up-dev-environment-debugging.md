@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 38a616c418c3b32490c9adaf69a69af0d47d3478
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 892f8001c52cd40d748c81f27c2f83618b84e5c2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019446"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350402"
 ---
 # <a name="set-up-an-e-commerce-development-environment-to-debug-against-a-tier-1-retail-server-virtual-machine"></a>E-kereskedelmi fejlesztői környezet beállítása 1. szintű Retail Server virtuális géppel való hibakereséshez
 
@@ -38,13 +38,13 @@ Ha az 1. szintű környezetben hibakeresést végez, mivel a webhely egy másik 
 
 A következő ábra egy olyan hibát mutat be, amely akkor fordulhat elő, ha a termék részleteit tartalmazó oldalon egy változatot választanak ki.
 
-![Hiba történt, amikor egy változatot választottak ki a termék részleteit tartalmazó oldalon](media/unhandled-rejection-error.jpg)
+![Hiba történt, amikor egy változatot választottak ki a termék részleteit tartalmazó oldalon.](media/unhandled-rejection-error.jpg)
 
 Az alábbi ábra a böngésző hibakereső eszközeiben (F12 Fejlesztői eszközök) található hasonló hibára mutat be példát. A hibaüzenet a tartalombiztonsági házirendjének megsértését említi.
 
-![Hiba a hibakereső eszközökben](media/debugger-tools-error.JPG)
+![Hiba a hibakereső eszközökben.](media/debugger-tools-error.JPG)
 
-## <a name="resolution"></a>Felbontás
+## <a name="resolution"></a>Megoldás
 
 ### <a name="disable-the-content-security-policy-for-the-site-in-commerce-site-builder"></a>A webhely tartalombiztonsági házirendjének letiltása a Commerce webhelyszerkesztőben
 

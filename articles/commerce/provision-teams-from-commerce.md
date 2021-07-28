@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1cb28fb50bdc972d1dae6d03a45f70a2f3a63357
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 39dabeb8bacc4ebc3376f53f15c7fb292c8d301c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022446"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352108"
 ---
 # <a name="provision-microsoft-teams-from-dynamics-365-commerce"></a>Microsoft Teams kiépítése a Dynamics 365 Commerce rendszerből
 
@@ -49,7 +49,7 @@ A Teams kiépítéséhez a Commerce központi felületén kövesse az alábbi l�
 > [!TIP]
 > Ha a regionális vezetők, üzletvezetők és áruházi dolgozók egyike sem lett Teams-licenccel társítva, a következő hibaüzenet jelenhet meg: „Nem sikerült beolvasni az alkalmazható SKU-kategóriákat a felhasználóhoz.” A probléma megoldásához válassza a **Csoportok és tagok szinkronizálása** lehetőséget a Művelet panelen.
 
-<!-- ![Dynamics 365 Commerce - Teams integration configuration](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
+<!-- ![Dynamics 365 Commerce - Teams integration configuration.](media/D365-Commerce-Microsoft-Teams-Configuration_with_disclaimer.png)-->
 
 ## <a name="validate-teams-provisioning-in-the-teams-admin-center"></a>A Teams kiépítésének ellenőrzése a Teams felügyeleti központjában
 
@@ -63,7 +63,7 @@ A Microsoft Teams felügyeleti központban a Microsoft Teams-kiépítés ellenő
 
 Az alábbi ábra egy példát mutat be a **Csapatok kezelése** lapra a Teams felügyeleti központban.
 
-![Példa a Csapatok kezelése lapra a Teams felügyeleti központban](media/Teams-FLW-Admin-Teams.png)
+![Példa a Csapatok kezelése lapra a Teams felügyeleti központban.](media/Teams-FLW-Admin-Teams.png)
 
 ## <a name="upload-a-commerce-organizational-hierarchy-to-teams"></a>Commerce szervezeti hierarchia feltöltése a Teamsbe
     
@@ -86,7 +86,7 @@ Annak ellenőrzéséhez, hogy a szervezeti hierarchia fel van-e töltve a Micros
 1. A **Közzétett listák** lapon hozzon létre egy új listát, amely üres feladattal rendelkezik.
 1. Válassza a **Közzététel** lehetőséget. A szervezeti hierarchiának meg kell jelennie a **Közzététel címzettjének kiválasztása** párbeszédpanelen, amint az az alábbi ábrán látható.
 
-![Példa szervezeti hierarchiára a Közzététel címzettjének kiválasztása párbeszédpanelen](media/Microsoft-teams-verify-org-hierarchy.png)
+![Példa szervezeti hierarchiára a Közzététel címzettjének kiválasztása párbeszédpanelen.](media/Microsoft-teams-verify-org-hierarchy.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

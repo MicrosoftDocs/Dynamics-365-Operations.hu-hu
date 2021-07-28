@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: fd33b1775afefed798f1e9bb7601f4112222c430
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: f4add6d32c34993338b0e587723df12d0a33ce43
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023299"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358266"
 ---
 # <a name="tds-group-pan-and-tan-information-setup-for-vendors-and-customers"></a>TDS-csoport, PAN és TAN-információk beállítása a vevők és szállítók számára
 
@@ -31,7 +31,7 @@ Ez a témakör bemutatja a forrásnál levont adó (TDS) csoport, az állandó s
 
 1. Ugrás a **Kötelezettségek \> Szállítók: \> Minden szállító** vagy **Kinnlevőségek \> Vevők \> Minden vevő** lehetőségre.
 
-    [![Minden szállító lap](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
+    [![Minden szállító lap.](./media/apac-ind-TDS-55.png)](./media/apac-ind-TDS-55.png)
 
 2. A Műveletablakban válassza az **Új** lehetőséget a szállító vagy vevő létrehozásához, és adja meg a szükséges adatokat. Másik lehetőségként válasszon ki egy meglévő szállítót vagy vevőt.
 3. A **Számla és szállítás** gyorslapon az **Adóelőleg** szakaszban állítsa be az **Adóelőleg számítása** lehetőséget **Igen** értékre adóelőleg, TDS, forrásnál beszedett adó (TCS) számításához a szállítóhoz vagy ügyfélhez.
@@ -54,13 +54,13 @@ Ez a témakör bemutatja a forrásnál levont adó (TDS) csoport, az állandó s
     - Cég
     - HUF
     - Megerősítve
-    - Individual
+    - Magánszemély
     - AOP
     - BOI
     - Önkormányzat
     - Egyebek
 
-    [![Adóinformációk gyorslap](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
+    [![Adóinformációk gyorslap.](./media/apac-ind-TDS-56.png)](./media/apac-ind-TDS-56.png)
 
 9. Ezután a Műveleti panelen a **Szállító** lap **Regisztráció** csoportjában válassza a **Regisztrációs azonosítók** lehetőséget a **Címek kezelése** lap megnyitásához.
 10. A **Címek kezelése** lapon, az **Adóinformációk** gyorslapon válassza a **Hozzáadás** vagy a **Szerkesztés** lehetőséget, hogy megnyíljon az **Adóinformációk kezelése** lap, ahol karbantarthatja az adóregisztrációs bejegyzést.

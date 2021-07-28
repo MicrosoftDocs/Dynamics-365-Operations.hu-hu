@@ -932,7 +932,9 @@
                   href: manage-ecommerce-users-roles.md
                 - name: Készletbeállítások alkalmazása
                   href: inventory-settings.md
-                - name: A webhely keresőmotor-optimalizálási (SEO) szempontjai
+                - name: Termék kosárhoz adására vonatkozó beállítások alkalmazása
+                  href: add-cart-settings.md
+                - name: A webhellyel kapcsolatos keresőmotor-optimalizálási (SEO) szempontok
                   href: search-engine-optimization-considerations.md
                 - name: Tartalomra vonatkozó biztonsági irányelv (CSP) kezelése
                   href: manage-csp.md
@@ -1016,9 +1018,13 @@
                       href: customize-site-navigation.md
                     - name: Weboldal URL-címének létrehozása
                       href: create-page-URL.md
+                - name: Adventure Works téma
+                  items:
+                    - name: Adventure Works téma áttekintése
+                      href: adventure-works-theme.md
             - name: Digitális eszközök kezelése
               items:
-                - name: Digitális eszközkezelés – áttekintés
+                - name: Digitális eszközök kezelésének áttekintése
                   href: dam-overview.md
                 - name: Képek feltöltése
                   href: dam-upload-images.md
@@ -1068,8 +1074,18 @@
                       href: add-content-rich-block.md
                     - name: Tartalomblokk-modul
                       href: add-hero-module.md
-                    - name: Videólejátszó-modul
+                    - name: Videólejátszó modul
                       href: add-video-player.md
+                    - name: Aktívképmodul
+                      href: active-image-module.md
+                    - name: Képlistamodul
+                      href: image-list-module.md
+                    - name: Interaktív funkciómodul
+                      href: interactive-feature-module.md
+                    - name: Előfizetési modul
+                      href: subscribe-module.md
+                    - name: Csempelistamodul
+                      href: tile-list-module.md
                 - name: Fejléc- és láblécmodulok
                   items:
                     - name: Fejlécmodul
@@ -1314,6 +1330,10 @@
                   href: localizations/emea-nor-cash-registers.md
                 - name: Pénztárgépek telepítésére vonatkozó irányelvek
                   href: localizations/emea-nor-loc-deployment-guidelines.md
+            - name: Oroszország
+              items:
+                - name: Commerce honosítása Oroszországra vonatkozóan
+                  href: localizations/rus-commerce-localization.md
             - name: Svédország
               items:
                 - name: Pénztárgép funkciói
@@ -2146,6 +2166,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Jóváhagyási lépések konfigurálása
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/commerce/toc.json
+                    - name: Kiadásellenőrök konfigurálása
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/commerce/toc.json
                     - name: Manuális döntések konfigurálása
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/commerce/toc.json
                     - name: Feltételes döntések konfigurálása
@@ -2558,6 +2580,8 @@
                   href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: A csatorna-adatbázis bővítményei
                   href: dev-itpro/channel-db-extensions.md
+                - name: Felhőskálázási egység bővítményeinek eltávolítása
+                  href: dev-itpro/retail-sdk/remove-csu-package.md
                 - name: Az egyéni CDX-szinkronizálás engedélyezése bővítménnyel
                   href: dev-itpro/cdx-extensibility.md
                 - name: Rendelési attribútumok meghatározása és beállítása

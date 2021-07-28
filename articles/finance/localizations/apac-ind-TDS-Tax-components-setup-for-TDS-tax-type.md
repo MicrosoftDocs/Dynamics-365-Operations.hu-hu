@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 6e0a6a05fcb4afb8c8965e25c3089bc1b3d98431
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 70e57a928ecd3f5d10ebd3d0fc3f52870d40fcd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023293"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358170"
 ---
 # <a name="set-up-tax-components-for-the-tds-tax-type"></a>Adó-összetevők beállítása a TDS-adótípusra
 
@@ -33,7 +33,7 @@ A TDS-összetevők beállításához kövesse az alábbi lépéseket.
 
 1. Lépjen az **Adó \> Beállítás \> Adóelőleg \> Adóelőleg-összetevők** részhez.
 
-    [![Adóelőleg-összetevők oldal](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
+    [![Adóelőleg-összetevők oldal.](./media/apac-ind-TDS-9.png)](./media/apac-ind-TDS-9.png)
 
 2. Az **Adótípus** mezőben válassza ki a **TDS** lehetőséget a TDS adótípus adóelőleg-komponenseinek beállításához.
 3. Jelölje be a műveleti ablakban az **Új** lehetőséget az új sor létrehozásához.
@@ -50,7 +50,7 @@ A TDS-összetevők beállításához kövesse az alábbi lépéseket.
 
     Ha például a kivétel küszöbérték összege 5000, akkor a TDS számítása egy adott számlasor alapján történik, ha a számlasor összege meghaladja az 5000-et (vagyis, ha 5001 vagy több).
 
-    [![Küszöbérték oldal](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
+    [![Küszöbérték oldal.](./media/apac-ind-TDS-10.png)](./media/apac-ind-TDS-10.png)
 
     > [!NOTE]
     > A kivételi küszöbérték összegének kisebbnek vagy egyenlőnek kell lennie a küszöbérték összegével.
@@ -66,6 +66,6 @@ A TDS-összetevők beállításához kövesse az alábbi lépéseket.
 
 14. Ha az **Adóelőleg-összetevők** lapon válassza az **OK lehetőséget a TDS-összetevők másolásához a másik TDS-összetevő csoportra az Adóelőleg-összetevők** oldalon.
 
-    [![Adóelőleg-összetevők másolása párbeszédpanel](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
+    [![Adóelőleg-összetevők másolása párbeszédpanel.](./media/apac-ind-TDS-11.png)](./media/apac-ind-TDS-11.png)
 
 15. Zárja be a lapot.

@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 248de8e12703a84482b67d0899857a6efb33531c
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: a698a8ccc781167060400068dc4011d318b5fe53
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023294"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360215"
 ---
 # <a name="update-certificate-numbers-and-dates-for-tds-transactions"></a>Tanúsítványszámok és -dátumok frissítése TDS-tranzakciókhoz
 
@@ -33,7 +33,7 @@ Kövesse az alábbi lépéseket a TDS-tanúsítványok számának és dátumána
 
 1. Lépjen ide: **Adó \> Bevallások \> Adóelőleg \> Tanúsítvány frissítése**.
 
-    [![Tanúsítvány frissítése oldal](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
+    [![Tanúsítvány frissítése oldal.](./media/apac-ind-TDS-45.png)](./media/apac-ind-TDS-45.png)
 
 2. A **Tanúsítvány frissítése** lapon, az **Adótípus** mezőben a **Kijelölés** szakaszában válassza ki a **TDS** lehetőséget.
 3. A **Tanúsítvány** száma mezőben válassza ki a vevő vagy a szállító TDS-tanúsítványának számát.
@@ -60,4 +60,4 @@ Kövesse az alábbi lépéseket a TDS-tanúsítványok számának és dátumána
 8. A **Frissítés** lehetőséget választva frissítheti az alsó rácsban a TDS-tranzakciók **Tanúsítványszám** és **Tanúsítvány dátuma** mezőit.
 10. Menjen az **Adó \> Közvetett adók \> Adóelőleg \> Visszaállítható tanúsítvány** menübe és a **Lekérdezés** lehetőséget választva megtekintheti azokat a frissített tranzakciósorokat, amelyek az új tanúsítványszámokat tartalmazzák a **Tanúsítványtranzakciók** oldalon.
 
-    [![Tanúsítványtranzakciók oldal](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)
+    [![Tanúsítványtranzakciók oldal.](./media/apac-ind-TDS-46.png)](./media/apac-ind-TDS-46.png)

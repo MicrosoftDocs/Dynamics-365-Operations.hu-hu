@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a4a963bcfe5932f5642b43751ccd96c472fec0d9
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: ba4f0eca471cf9734230bb2a23d53ff2e233ba2f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055004"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361225"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Ismétlődő adatexportálási alkalmazás létrehozása
 
@@ -63,13 +63,13 @@ A feladat végén talál egy logikai alkalmazást, amely kapcsolódik a Human Re
 
 A befejeződött logikai alkalmazás a következő ábrához fog hasonlítani.
 
-![Logikai alkalmazás áttekintése](media/integration-logic-app-overview.png)
+![Logikai alkalmazás áttekintése.](media/integration-logic-app-overview.png)
 
 ### <a name="step-1-create-a-data-export-project-in-human-resources"></a>1. lépés: adatexportálási projekt létrehozása a Human Resources alkalmazásban
 
 Olyan adatexportálási projekt létrehozása a Human Resources alkalmazásban, amely exportálja a dolgozókat. Nevezze el a projektet a következőre: **Dolgozók exportálása**, és győződjön meg arról, hogy az **Adatcsomag létrehozása** beállítás **Igen** értéken legyen. Adjon hozzá a projekthez egyetlen entitást (**Dolgozó**), majd válassza ki azt a formátumot, amelyben exportálni szeretne. (Az oktatóanyag Microsoft Excel-formátumot használ.)
 
-![Dolgozói adatok projekt exportálása](media/integration-logic-app-export-workers-project.png)
+![Dolgozói adatok projekt exportálása.](media/integration-logic-app-export-workers-project.png)
 
 > [!IMPORTANT]
 > Jegyezze meg az adatexportálási projekt nevét. Erre akkor lesz szükség, amikor a következő lépésben létrehozza a logikai alkalmazást.
@@ -80,12 +80,12 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
 
 1. Hozzon létre egy logikai alkalmazást az Azure-portálon.
 
-    ![Logikai alkalmazás létrehozása lap](media/integration-logic-app-creation-1.png)
+    ![Logikai alkalmazás létrehozása lap.](media/integration-logic-app-creation-1.png)
 
 2. A Logic Apps Designer programban kezdje a munkát egy üres logikai alkalmazással.
 3. Adjon hozzá egy [Ismétlődésütemezési indítót](/azure/connectors/connectors-native-recurrence) a logikai alkalmazás 24 óránként történő futtatásához (vagy az Ön által kiválasztott ütemezéshez).
 
-    ![Ismétlődés párbeszédpanel](media/integration-logic-app-recurrence-step.png)
+    ![Ismétlődés párbeszédpanel.](media/integration-logic-app-recurrence-step.png)
 
 4. Hívja az [ExportToPackage](../fin-ops-core/dev-itpro/data-entities/data-management-api.md#exporttopackage) DMF REST API-t az adatcsomag exportálásának ütemezése érdekében.
 
@@ -97,7 +97,7 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
         > [!NOTE]
         > A Human Resources-szolgáltatás még nem rendelkezik olyan csatlakozóval, amely megjeleníti a DMF-csomag REST összes API-ját (például **ExportToPackage**) alkotó API-kat. Ehelyett az API-kat a nyers HTTPS-kérésekkel kell hívnia a HTTP-n keresztül és az Azure AD-csatlakozó segítségével. Ez a csatlakozó az Azure Active Directory-t (Azure AD) használja a hitelesítésre és a Human Resources alkalmazáshoz való engedélyezéshez.
 
-        ![HTTP Azure AD-csatlakozóval](media/integration-logic-app-http-aad-connector-step.png)
+        ![HTTP Azure AD-csatlakozóval.](media/integration-logic-app-http-aad-connector-step.png)
 
     2. Jelentkezzen be a Human Resources környezetébe a HTTP-n keresztül az Azure AD-csatlakozó segítségével.
     3. Állítson be egy HTTP **POST**-kérelmet az **ExportToPackage** DMF REST API hívásához.
@@ -116,21 +116,21 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
             }
             ```
 
-        ![HTTP-kérelem műveletének meghívása](media/integration-logic-app-export-to-package-step.png)
+        ![HTTP-kérelem műveletének meghívása.](media/integration-logic-app-export-to-package-step.png)
 
     > [!TIP]
     > Előfordulhat, hogy az egyes lépéseket úgy szeretné átnevezni, hogy az az alapértelmezett nevénél érthetőbb legyen, **HTTP-kérelem meghívása**. Ezt a lépést például átnevezheti a következőre: **ExportToPackage**.
 
 5. [Változó inicializálása](/azure/logic-apps/logic-apps-create-variables-store-values#initialize-variable) az **ExportToPackage** kérelem végrehajtási állapotának tárolásához.
 
-    ![Változó művelet inicializálása](media/integration-logic-app-initialize-variable-step.png)
+    ![Változó művelet inicializálása.](media/integration-logic-app-initialize-variable-step.png)
 
 6. Várjon, amíg az adatexport végrehajtási állapota **Sikeres** nem lesz.
 
     1. Adjon hozzá egy [Érvényesség vége-ciklus](/azure/logic-apps/logic-apps-control-flow-loops#until-loop) műveletet, amely addig ismétlődik, amíg az **ExecutionStatus**-változó értéke **Sikeres** nem lesz.
     2. Adjon hozzá egy **Késleltetési** műveletet, amely az exportálás aktuális végrehajtási állapotához kapcsolódó lekérdezések előtt öt másodpercig várakozik.
 
-        ![Érvényesség vége-ciklus tárolója](media/integration-logic-app-until-loop-step.png)
+        ![Érvényesség vége-ciklus tárolója.](media/integration-logic-app-until-loop-step.png)
 
         > [!NOTE]
         > Állítsa be limitszámot **15** -ös értékre, és az exportálás befejezéséhez várjon legfeljebb 75 másodpercig (15 ismétlés x 5 másodperc). Ha az exportálás több időt vesz igénybe, szükség szerint módosítsa a limiteket.        
@@ -146,9 +146,9 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
             > [!NOTE]
             > Előfordulhat, hogy meg kell adnia **A kérelem törzse** értékét kódnézetben vagy a tervező funkciószerkesztőjében.
 
-        ![Egy HTTP-kérelem meghívása 2 művelet](media/integration-logic-app-get-execution-status-step.png)
+        ![Egy HTTP-kérelem meghívása 2 művelet.](media/integration-logic-app-get-execution-status-step.png)
 
-        ![Változó művelet beállítása](media/integration-logic-app-set-variable-step.png)
+        ![Változó művelet beállítása.](media/integration-logic-app-set-variable-step.png)
 
         > [!IMPORTANT]
         > A **Változó beállítása** művelet értéke (**body('Invoke\_an\_HTTP\_request\_2')?['value']**) nem fog megegyezni a **HTTP-kérelem 2 meghívása** törzsértékkel, habár a tervező ugyanolyan módon fogja mutatni az értékeket.
@@ -161,7 +161,7 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
         - **A kérelem URL-címe:** https://\<hostname\>/namespaces/\<namespace\_guid\>/data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.GetExportedPackageUrl
         - **A kérelem törzse:** {"executionId&quot;: Body (&quot;GetExportedPackageURL")?["value"]}
 
-        ![GetExportedPackageURL-művelet](media/integration-logic-app-get-exported-package-step.png)
+        ![GetExportedPackageURL-művelet.](media/integration-logic-app-get-exported-package-step.png)
 
 8. Az exportált csomag letöltése.
 
@@ -173,7 +173,7 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
             > [!NOTE]
             > Előfordulhat, hogy meg kell adnia az **URI** értékét kódnézetben vagy a tervező funkciószerkesztőjében.
 
-        ![HTTP GET-művelet](media/integration-logic-app-download-file-step.png)
+        ![HTTP GET-művelet.](media/integration-logic-app-download-file-step.png)
 
         > [!NOTE]
         > A kérelemhez nem szükséges további hitelesítés, mert a **GetExportedPackageUrl** API-t visszaküldő URL-cím tartalmaz egy megosztott hozzáférési aláírási tokent, amely hozzáférést biztosít a fájl letöltéséhez.
@@ -187,7 +187,7 @@ A feladat nagy része a logikai alkalmazás létrehozása lesz.
         - **Fájlnév:** dolgozó\_csomag.zip
         - **Fájl tartalma:** az előző lépés törzse (dinamikus tartalom)
 
-        ![Fájlművelet létrehozása](media/integration-logic-app-create-file-step.png)
+        ![Fájl létrehozása művelet.](media/integration-logic-app-create-file-step.png)
 
 ### <a name="step-3-test-the-logic-app"></a>3. lépés: a logikai alkalmazás tesztelése
 
@@ -197,7 +197,7 @@ Ha bármilyen lépésnél hibát jelez, jelölje ki a sikertelen lépést a terv
 
 A következő ábra bemutatja, hogy néz ki a Logic Apps Designer, amikor a logikai alkalmazás minden lépését sikeresen futtatták.
 
-![Sikeres futtatott logikai alkalmazás](media/integration-logic-app-successful-run.png)
+![Logikai alkalmazás sikeres futtatása.](media/integration-logic-app-successful-run.png)
 
 ## <a name="summary"></a>Összegzés
 

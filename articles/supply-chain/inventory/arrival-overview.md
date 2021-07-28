@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 274363
+ms.custom:
+- "274363"
+- intro-internal
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 734fbdd6f62c192580029a24844fff78fda8b919
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: fdd2995da04aa4752868a84499c81c2c01d80c16
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809590"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360448"
 ---
 # <a name="arrival-overview"></a>Beérkezés áttekintése
 
@@ -34,7 +36,7 @@ A **Beérkezés áttekintése** lap az összes várhatóan bejövő cikkek átte
 ## <a name="business-scenario"></a>Üzleti eset
 Fontolja meg a következő példát a bevételezési folyamatokban.
 
-[![Üzleti eset](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
+[![Üzleti eset.](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Sanyi, a bevételezési adminisztrátor az iránt érdeklődik, hogy milyen beérkező cikkekre számítson az aktuális napon. A **Beérkezés áttekintése** lapon Sanyi áttekintést kaphat az aktuális feladatokról, valamint megtekintheti a mennyiségek, a térfogat, a súly, a különféle típusú rendelések stb. durva becslését is. Később a szállítás megérkezik az egyik érkeztetési területre, és Sanyi kap egy szállítási listát. A **Beérkezés áttekintése** lapon Sanyi a következő feladatokat végezheti el:
 
@@ -66,7 +68,7 @@ Az érkeztetési naplók automatikus létrehozásához a **Beérkezés áttekint
 
 -   Új napló létrehozásakor meg kell adnia egy naplónevet.
 
-[![A napló nevének megadása](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
+[![A napló nevének megadása.](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
 -   Ha értékeket ad meg a **Raktár** és a **Hely** mezőkben, ezeket az értékeket a rendszer alkalmazza a naplósorokban. Ha nem ad meg értéket, a rendszer a készlettranzakciókban megadott dimenzióértékeket használja.
 

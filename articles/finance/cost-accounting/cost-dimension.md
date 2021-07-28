@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a9634612bcffbcf71b77dbb184e71367c67bac10
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 09dd9e2d648bec32d1504175dbb1470751e5c915
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822927"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355179"
 ---
 # <a name="create-dimensions-and-import-dimension-members"></a>Dimenziók létrehozása és dimenziótagok importálása
 
@@ -36,7 +36,7 @@ Egy **költségösszetevő** a számlatükör valamely költségfüggő eleméne
 
 A következő ábra bemutatja a költségkönyvelésben használt dimenziókat.
 
-[![Költségkönyvelés dimenziók](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
+[![Költségkönyvelési dimenziók.](./media/cost-eos-dimensions.png)](./media/cost-eos-dimensions.png)
 
 Miután a költségkönyvelésbe importálta az adatokat, különféle szempontok létrehozásához használhatja, hogy információkat nyújthasson a vezetőknek a szervezet minden szintjén. Az alábbi témakörök a dimenziók létrehozásával és a dimenziótagok importálásával kapcsolatban nyújtanak tájékoztatást. 
 

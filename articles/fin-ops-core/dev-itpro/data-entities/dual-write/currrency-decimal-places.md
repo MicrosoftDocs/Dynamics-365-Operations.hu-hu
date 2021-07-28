@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: c4f663ae36f7d4ea3db9888e618f2fe3bf8c3256
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 073f89b5ae44e20d1d2e854341afaa176f9b6280
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748947"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350935"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Pénznem-adattípus áttelepítése kettős írás esetén
 
@@ -82,13 +82,13 @@ Vannak bizonyos limitációk:
 
 Az áttelepítés befejeződése után az adminisztrátorok meghatározhatják a pénznem pontosságát. Nyissa meg a **Beállítások \> Adminisztráció** elemet, és válassza a **Rendszerbeállítások** elemet. Ezt követően az **Általános** lapon módosítsa a **Pénznem pontosságának beállítása, amely az árképzéshez használt a rendszer egészében** beállítás értékét, ahogyan az a következő ábrán látható.
 
-![Pénznem rendszerbeállításai](media/currency-system-settings.png)
+![Pénznem rendszerbeállításai.](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Üzleti menedzsment: Pénznemek
 
 Ha azt szeretné, hogy az adott pénznemre vonatkozó pontossági érték eltérjen az árképzéshez használt pénznem pontosságától, akkor ez módosítható. Nyissa meg a **Beállítások \> Üzleti menedzsment** lehetőséget, válassza ki a **Pénznemek** elemet, majd válassza ki a módosítani kívánt pénznemet. Ezt követően állítsa be a **Pénznem pontossága** oszlopot a kívánt tizedesjegyek számával, ahogy az a következő ábrán látható.
 
-![Adott területi beállításhoz tartozó pénznemek beállításai](media/specific-currency.png)
+![Adott területi beállításhoz tartozó pénznemek beállításai.](media/specific-currency.png)
 
 ### <a name="tables-currency-column"></a>táblák: Pénznem oszlop
 

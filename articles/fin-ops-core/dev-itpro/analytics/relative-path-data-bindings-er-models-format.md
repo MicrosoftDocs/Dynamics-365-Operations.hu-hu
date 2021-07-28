@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 141d58c2183c386584b0b974f4997e7a81ef3109
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: b9d072914b5effdd733ec2c18e4ada877f932ba8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749986"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350160"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Relatív elérési út használata az ER-modellek és -formátumok adatkötéseiben
 
@@ -31,20 +31,20 @@ Az elektronikus jelentéskészítési (ER) eszköz használatakor a felhasznál�
 
 Az elektronikus jelentéskészítési leképezések tervezőinek használhatóságát javítja a [relatív elérési út](er-formula-language.md#relative-path) funkció megjelentetése. A relatív elérési út ábrázolási beállítása alapértelmezés szerint be van kapcsolva az alkalmazás összes olyan új példányához, amelynél engedélyezve van az elektronikus jelentéskészítési környezet (Microsoft Dynamics 365 Finance 365 for Finance and operations, Microsoft Regulatory Configuration Service). Bevezettük a relatív elérési út paramétert, hogy a felhasználók a teljes elérési utat tudják használni az elektronikus jelentéskészítési kötések megjelenítésével végzett munka során.
 
-[![Felhasználói paraméterek](./media/relative-path-01.png)](./media/relative-path-01.png)
+[![Felhasználói paraméterek.](./media/relative-path-01.png)](./media/relative-path-01.png)
 
  
 Ha be van kapcsolva a relatív elérési út használati paraméter, egyetlen @ karakter helyettesíti a szülő elem elérési útját az aktuális modellelem kötésében. A teljes kötési út rövidebb lesz, így a teljes hozzárendelés egyértelműbbé és könnyebben érthetővé válik. Az esetek többségében az elektronikus jelentéskészítési tervezőben nincs szükség további görgetésre az adatmodell összes kötésének a megtekintéséhez.
 
-[![Modell-hozzárendelési tervező](./media/relative-path-02.png)](./media/relative-path-02.png)
+[![Modell-hozzárendelési tervező.](./media/relative-path-02.png)](./media/relative-path-02.png)
  
 Az új elektronikus jelentéskészítési kifejezések tervezésének megkezdésekor csak egy karaktert kell beírnia, hogy kötést határozzon meg a szülő elem mezőjéhez.
 
-[![Képletszerkesztő](./media/relative-path-03.png)](./media/relative-path-03.png)
+[![Képletszerkesztő.](./media/relative-path-03.png)](./media/relative-path-03.png)
  
 Ha abszolút elérési út használatával szeretné módosítani a szülő modellelemhez tartozó adatforrást, akkor manuálisan újra kell kötnie az új adatforráshoz ezt a modellelemet és a beágyazott elemeket. Ha a relatív elérési út használata be van kapcsolva, és új adatforrást szeretne kötni egy szülő elemhez, akkor lehetősége van arra, hogy a szülő elem minden beágyazott elemét egy kattintással automatikusan újrakösse.
 
-[![Elérési út meglévő üzenetének cseréje](./media/relative-path-04.png)](./media/relative-path-04.png)
+[![Elérési út meglévő üzenetének cseréje.](./media/relative-path-04.png)](./media/relative-path-04.png)
  
 Ha megerősíti a beágyazott elemek újrakötését, akkor az új szülő elem a meglévő szülő elemet tartalmazó beágyazott elemek elérési útjába kerül.
 Ez a funkció nincs hatással az elektronikus jelentéskészítési keretrendszer visszamenőleges kompatibilitására. A korábban tervezett elektronikus jelentéskészítési konfigurációk együttműködnek az új funkcióval; nincs szükség frissítésre vagy konverzióra.

@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 76c2f07ac5c25eea576cbb69256e76fbef4d86ca
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 6fb4e91f00163f5280d2c767843afd5c7a33712d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5754112"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350885"
 ---
 # <a name="dual-write-overview"></a>Kettős írás – áttekintés
 
@@ -37,7 +37,7 @@ A kettős írás egy olyan beépített infrastruktúra, amely közel valós idej
 
 A kettős írás szorosan összekapcsolt, kétirányú integrációt tesz lehetővé a Finance and Operations alkalmazások és a Dataverse között. A Finance and Operations alkalmazások bármely adatmódosulása írást eredményez a Dataverse szolgáltatásban, és a Dataverse bármely adatváltozása írást eredményez a Finance and Operations alkalmazásokban. Ez az automatizált adatáramlás integrált felhasználói élményt nyújt az alkalmazások között.
 
-![Adatkapcsolat az alkalmazások között](media/dual-write-overview.jpg)
+![Adatkapcsolat az alkalmazások között.](media/dual-write-overview.jpg)
 
 A kettős írásnak két aspektusa van: egy *infrastruktúra* szempont és egy *alkalmazási* szempont.
 

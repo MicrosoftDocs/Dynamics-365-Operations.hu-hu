@@ -8,18 +8,18 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f380f3f56727d927d7cd328fef3c9d999afa2873
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: f9fffb5b4f51c86076d62ac2a44bdc779490c7bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5794349"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351273"
 ---
 # <a name="default-category-landing-page-and-search-results-page-overview"></a>Alapértelmezett kategória-céloldal és keresési találatoldal áttekintése
 
@@ -31,7 +31,7 @@ Ez a témakör a Microsoft Dynamics 365 Commerce e-Commerce alkalmazás alapért
 
 Az alapértelmezett kategória kezdőlap az a lap, ahova a rendszer a webhely felhasználóit általában irányítja, amikor egy kategóriát választanak ki a navigációs hierarchiában. A kategória lapon tallózhat, és a kategorizált termékeket is rendezheti és finomíthatja.
 
-![Alapértelmezett kategória-céloldal](./media/SimpleCategoryLandingDressCategory.png)
+![Alapértelmezett kategória-céloldal.](./media/SimpleCategoryLandingDressCategory.png)
 
 A lap tetején egy fejléc jelenik meg, amelyen látható az összes termékkategória és egyéb lap, amelyet a termékkihelyezési vezető kategorizált. A konfiguráció a csatorna navigációs hierarchiájának konfigurációja részeként történik. A lap alján van egy lábléc, amely gyorshivatkozásokat tartalmaz a különböző témákhoz, amelyek érdekesek lehetnek a vevők számára.
 
@@ -55,7 +55,7 @@ A következő összetevők elengedhetetlenek a kategóriákhoz:
 
 Ha azt szeretné, hogy a kategória kezdőlapja egy adott kategóriára vonatkozóan testre szabottabb élményt nyújtson, akkor „bővítheti” az adott kategóriához tartozó céloldalt. Hozzáadhat például egy marketingvideót és némi kategórialeírást a vásárló figyelmének felkeltéséhez. A további tudnivalókat lásd: [Kategória céloldalának bővítése](enrich-category-page.md).
 
-![Bővített kategória-céloldal](./media/CategoryLandingPages.png)
+![Bővített kategória-céloldal.](./media/CategoryLandingPages.png)
 
 ## <a name="auto-suggest-and-search-results-pages"></a>Automatikus javaslat és keresési eredmények lapjai
 
@@ -69,11 +69,11 @@ Az alábbiakban a javaslatok néhány típusa látható:
 - A **Termékek** közvetlen kapcsolatot biztosítanak a termék részletes lapjához.
 - A **Hatókörön belüli kategória javaslatai** különböző kategóriákat sorolnak fel, és lehetővé teszik a felhasználók számára, hogy egy adott kategóriában keressenek rá a kulcsszóra.
 
-![Modern automatikus ajánlások](./media/ImmersiveAutoSuggestUX.png)
+![Modern automatikus ajánlások.](./media/ImmersiveAutoSuggestUX.png)
 
 Amikor a felhasználók kiválasztják a kulcsszó vagy a hatókörön belüli kategória keresési javaslatainak valamelyikét, vagy ha a megadott keresési kifejezésre nem található javaslat, akkor a program a keresési találatok lapra irányítja őket. A felhasználók ezután böngészhetik, rendezhetik és finomíthatják a keresési eredmények listáját a kívánt cikk megkereséséhez.
 
-![Keresés céloldala](./media/SearchLanding.png)
+![Keresés céloldala.](./media/SearchLanding.png)
 
 A következő összetevők elengedhetetlenek a keresési találatok laphoz:
 
@@ -94,13 +94,13 @@ A következő összetevők elengedhetetlenek a keresési találatok laphoz:
 
 >[!NOTE]
 >Ezek a felhőalapú keresési funkciók a 10.0.8 verziótól érhetők el. Ellenőrizze, hogy a **Kereskedelmi paraméterek > Konfigurációs paraméterek** között van-e egy bejegyzés a következőhöz: „ProductSearch. UseAzureSearch 'igaz' értékre állítva”. 
-![A felhőalapú keresés konfigurációs paraméterei](./media/CloudPoweredSearchConfigurationParameters.png)
+![A felhőalapú keresés konfigurációs paraméterei.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Felhőalapú keresés – áttekintés](cloud-powered-search-overview.md)
 
-[Kezdőlap áttekintése](quick-tour-home-page.md)
+[Kezdőlap – áttekintés](quick-tour-home-page.md)
 
 [Termékadatok oldalainak áttekintése](quick-tour-pdp.md)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 764444442aedcbf0934f1c636d7440bc0d277043
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 279212d05615805dd74c702b2b98c344c87fdc78
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944533"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348679"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
@@ -85,7 +85,7 @@ Néhány, a szokásos és a fontos változtatást laphoz végrehajtott érhetők
 
 Ezenkívül a legtöbb alaptípus személyre szabásai akkor érhetők el, kattintson a jobb gombbal egy elemre, és válassza a **Személyre szabást**. (Megjegyzendő, hogy az oldalon nem minden elem szabható személyre.) Ha a személyre szabásnak ezt a módszerét választja, akkor megjelenik az elem *tulajdonság ablak* lehetősége.
 
-![Egy elem tulajdonságainak testreszabása](./media/cli-element-property-window.png)
+![Egy elem tulajdonságainak személyre szabása.](./media/cli-element-property-window.png)
 
 A tulajdonságablak segítségével egy elem testreszabása a következőképpen történik:
 
@@ -107,7 +107,7 @@ Ha több módosítást is szeretne végrehajtani egy lapon, illetve olyan módos
 - Bármely oldal Művelet panelén válassza az **Oldal személyre szabása** csoportot a **Testreszabás** csoportban a **Beállítások** lapon.
 - Válassza ki a navigációs sávon a **Beállítások** gombot (a fogaskerék szimbólum), majd válassza a **Személyre szabás** lehetőséget.
 
-[![Személyre szabási eszköztár](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Személyre szabási eszköztár.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigálás a lapon
 
@@ -147,7 +147,7 @@ Egyes listákat tartalmazó lapok esetében a **Hozzáadás munkaterülethez** t
 > [!NOTE]
 > Ha a [Mentett nézetek](saved-views.md) funkció be van kapcsolva, a munkaterületre beküldött tartalom közvetlenül egy nézethez kapcsolódik. A nézet lekérdezése az adatok munkaterületre való lekérésére szolgál, és a munkaterületen található megfelelő csempe vagy hivatkozás megnyitja a nézethez tartozó lapot, úgy, hogy a nézet lekérdezése és a testreszabások alkalmazva vannak rá. Ha a nézet frissül, akkor az új nézet-definícióhoz igazodnak a megfelelő munkaterület elemei.
 
-[![Hozzáadás munkaterületenként](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Hozzáadás munkaterületenként.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Lista hozzáadásához a munkaterülethez, először rendezni és szűrni kell a listát a lapon, hogy az adatok a munkaterületen megjeleníteni kívánt módon jelenjenek meg. (Ha a **Mentett nézetek** funkció be van kapcsolva, akkor nem folytathatja addig, amíg nem menti azokat a nézeteket, amelyekhez ilyen feltételek tartoznak). Ezután válassza a **Hozzáadás munkaterülethez** lehetőséget. Válassza ki a munkaterületez, majd kattintson a **Prezentáció** mezőben a **Lista** elemre. Miután kijelölte **Konfigurálást**, megjelenik egy párbeszédpanel, ahol kiválaszthatja az oszlopok, amelyek jelenjenek meg a listában a munkaterületen. Megadhatja a munkaterületen a listához használandó címkét.
 - A munkaterület címének hozzáadásához először szűrnie kell a listát az oldalon, hogy az összesítendő adatokat megjelenítse – vagy azokat, amikhez gyors elérést szeretne. (Ha a **Mentett nézetek** funkció be van kapcsolva, akkor nem folytathatja addig, amíg nem menti azokat a nézeteket, amelyekhez ilyen feltételek tartoznak). Ezután válassza a **Hozzáadás munkaterülethez** lehetőséget. Válassza ki a munkaterületez, majd kattintson a **Prezentáció** mezőben a **Cím** elemre. Miután kijelölte a **Konfigurálást**, megjelenik egy párbeszédpanel, ahol megadhatja a munkaterületen található csempe használandó címkéjét. Megadhatja azt is, hogy a csempén kell-e egy számának megjelennie. Miután hozzáadta a csempét a munkaterülethez kiválaszthatja, hogy az aktuális lapot megnyissa a munkaterületről. Ezt követően megtekintheti a csempéhez társított szűrt listát.

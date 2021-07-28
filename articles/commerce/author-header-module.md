@@ -2,7 +2,7 @@
 title: Fejlécmodul
 description: Ez a témakör a fejlécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet oldalfejléceket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 6b14178431b281daa827749781dd16481f8bfb74
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 21bf454e57c62a2542ed055bb0913c48ab70e235
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799911"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479256"
 ---
 # <a name="header-module"></a>Fejlécmodul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör a fejlécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet oldalfejléceket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -33,7 +34,7 @@ A fejlécmodul tartalmaz egy webhelyemblémát, a navigációs hierarchiára mut
 
 A következő kép egy kezdőoldalon használt címsormodul egy példáját jeleníti meg.
 
-![Példa egy címsor modulra](./media/ecommerce-header.png)
+![Példa egy címsormodulra.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Fejlécmodul tulajdonságai
 
@@ -58,9 +59,16 @@ A következő modulban használható a fejlécmodulban:
 - **Üzletválasztó** – az üzletválasztó modul szerepelhet a fejléc modul üzletválasztó helyén. Lehetővé teszi, hogy a felhasználók böngésszenek és megtalálják a közeli üzleteket. A felhasználók megadhatnak egy preferált üzletet is. Ez az üzlet a fejlécben jelenik meg. Amikor az üzletválasztó modul szerepel a fejléc modulban, a **mód** tulajdonsága beállítása legyen **üzletek keresése**. További információ: [Üzletválasztó modul](store-selector.md).
 
 > [!NOTE]
-> - A kosárikon modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.11-es kiadásában érhető el.
-> - A telephely-választó modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.14-es kiadásában érhető el.
-> - Az üzletválasztó modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.15-es kiadásában érhető el.
+> - A kosárikon modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.11-es verziójában érhető el.
+> - A webhelyválasztó modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.14-es verziójában érhető el.
+> - Az üzletválasztó modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.15-ös verziójában érhető el.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>A fejlécmodul a Adventure Works témában
+
+Az Adventure Works témában a fejlécmodul támogatja a **Mobileembléma** tulajdonságot. Ez a tulajdonság lehetővé teszi egy embléma megadását a mobil nézetablakok számára. A **Mobilembléma** tulajdonság moduldefiníciós bővítményként áll rendelkezésre.
+
+> [!IMPORTANT]
+> Az Adventure Works téma a Dynamics 365 Commerce 10.0.20-as kiadásában érhető el.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Fejléctöredék létrehozása egy oldalhoz
 

@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a1a25e3d5bc1cc5c1c7509186451fdfef50dd6cf
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: c8a22a356053789f97fd4f3f9437d57978a67943
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792339"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352132"
 ---
 # <a name="add-product-recommendations-on-pos"></a>Termékajánlatok hozzáadása a pénztárnál
 
@@ -39,7 +39,7 @@ Az alábbi POS-esetekben engedélyezettek a termékajánlások. A felhő POS vag
 
     - Ha az üzlet alkalmazottja megnyitja valamelyik **Termékadatok** oldalt, amikor az előző tranzakciókat nézi meg különböző csatornákon keresztül, az ajánlások szolgáltatás további elemeket javasol, amelyek várhatóan együtt fognak megvásárolni.
 
-    [![Javaslatok a Termék részletei oldalon](./media/proddetails.png)](./media/proddetails.png)
+    [![Javaslatok a Termék részletei oldalon.](./media/proddetails.png)](./media/proddetails.png)
 
 2. A **Tranzakció** oldalon:
 
@@ -48,7 +48,7 @@ Az alábbi POS-esetekben engedélyezettek a termékajánlások. A felhő POS vag
     > [!NOTE]
     > Javaslatok megjelenítéséhez a **Tranzakció** lapon a kiskereskedőnek frissítenie kell a képernyő-elrendezést a Dynamics 365 Commerce rendszerben. Az **Ajánlások** vezérlőt rá kell húzni a **Tranzakció** oldalra.
 
-    [![Javaslatok a Tranzakció oldalon](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+    [![Javaslatok a Tranzakció oldalon.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
 ## <a name="configure-commerce-to-enable-pos-recommendations"></a>A Commerce konfigurálása pénztárjavaslatok engedélyezéséhez
 

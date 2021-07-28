@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: WorkGuidesManufacturing
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 61943
+ms.custom:
+- "61943"
+- intro-internal
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: cabeln
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: 15595c46f9d6ff91f6fd618859e9f059ae88bd78
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: d172e3dfcb9ca70e1047a174040e7940bdd25296
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910089"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354012"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Vegyes valóság útmutató a termelésben dolgozók számára
 
@@ -57,7 +59,7 @@ A következő alszakaszok néhány olyan esetet írnak le, amikor különféle i
 
 ### <a name="assembly"></a>Szerelvény
 
-![Útmutató használata összeszerelési feladatoknál](media/instruction-guides-hero-assembly.png "Útmutató használata szervizfeladatoknál")
+![Útmutató használata összeszerelési feladatoknál.](media/instruction-guides-hero-assembly.png "Útmutató használata szervizfeladatoknál")
 
 Az összeszerelési műveletekre vonatkozó utasítások megmutatják a dolgozóknak a szükséges szerszámokat és alkatrészeket, valamint használatukat valódi munkakörülmények között.
 
@@ -65,7 +67,7 @@ A termelésvezető útmutatókat hozhat létre és rendelhet hozzá, például [
 
 ### <a name="service"></a>Szerviz
 
-![Útmutató használata szervizfeladatoknál](media/instruction-guides-hero-service.png "Útmutató használata szervizfeladatoknál")
+![Útmutató használata szervizfeladatoknál.](media/instruction-guides-hero-service.png "Útmutató használata szervizfeladatoknál")
 
 A technikusokat irányított utasításokkal látja el a munkahelyükön, hogy feleslegessé váljanak további látogatások.
 
@@ -73,7 +75,7 @@ A szervizvezetők hozzárendelhetnek útmutatót például adott [termékekhez](
 
 ### <a name="quality"></a>Minőség
 
-![Útmutató használata minőségbiztosítási feladatoknál](media/instruction-guides-hero-quality.png "Útmutató használata minőségbiztosítási feladatoknál")
+![Útmutató használata minőségbiztosítási feladatoknál.](media/instruction-guides-hero-quality.png "Útmutató használata minőségbiztosítási feladatoknál")
 
 Új folyamatok bevezetése és a következetesség növelése az alkalmazottak tudásának megismételhető eszközzé alakításával.
 
@@ -81,13 +83,13 @@ A minőségbiztosítási vezetők hozzárendelhetnek útmutatót például [term
 
 ### <a name="certifications"></a>Tanúsítványok
 
-![Útmutató használata tanúsítással kapcsolatos feladatoknál](media/instruction-guides-hero-certification.png "Útmutató használata tanúsítással kapcsolatos feladatoknál")
+![Útmutató használata tanúsítással kapcsolatos feladatoknál.](media/instruction-guides-hero-certification.png "Útmutató használata tanúsítással kapcsolatos feladatoknál")
 
 Fontos, hogy az alkalmazottak képesek legyenek magas elvárások teljesítésére, és gyorsan észleljék, kinek és hol van szüksége segítségre.
 
 ### <a name="safety"></a>Biztonság
 
-![Útmutató használata munkavédelemmel kapcsolatos feladatoknál](media/instruction-guides-hero-safety.png "Útmutató használata munkavédelemmel kapcsolatos feladatoknál")
+![Útmutató használata munkavédelemmel kapcsolatos feladatoknál.](media/instruction-guides-hero-safety.png "Útmutató használata munkavédelemmel kapcsolatos feladatoknál")
 
 Utasításokat ad, amelyek virtuálisan áttekintik a veszélyes eljárásokat, mielőtt azokat fizikai környezetben alkalmaznák. A vegyes valóság megközelítésével a dolgozók virtuálisan gyakorolhatják a veszélyes eljárásokat.
 
@@ -119,7 +121,7 @@ A szolgáltatás elérhetővé tételéhez a rendszerén engedélyeznie kell a k
 
 Az Útmutatók üzemben használt felületének konfigurálásához folytassa itt: **Mixed Reality \> Dynamics 365 Guides \> Útmutatók integrálásának konfigurálása**.
 
-![Útmutató integrálásának konfigurálása a gyártáshoz](media/instruction-guides-configure-integration.png "Útmutató integrálásának konfigurálása a gyártáshoz")
+![Útmutató integrálásának konfigurálása a gyártáshoz.](media/instruction-guides-configure-integration.png "Útmutató integrálásának konfigurálása a gyártáshoz")
 
 Állítsa be a következő mezőket:
 
@@ -136,7 +138,7 @@ Az Útmutatók üzemben használt felületének konfigurálásához folytassa it
 
 Az **Összes útmutató** lapon megtekintheti a szervezet összes elérhető útmutatóját, valamint azok összes hozzárendelését a termelési folyamatokhoz és erőforrásokhoz. Megnyitásához válassza a **Vegyes valóság \> Útmutató \> Összes útmutató** elemeket. A felső lista az összes rendelkezésre álló útmutatót jeleníti meg; a lista az itt található mezővel szűrhető. A lenti lista az összes útmutató-hozzárendelést jeleníti meg, és egy eszköztárat tartalmaz a kezeléshez.
 
-![Útmutatók kezelése](media/instruction-guides-allguides.png "Útmutatók kezelése")
+![Útmutatók kezelése.](media/instruction-guides-allguides.png "Útmutatók kezelése")
 
 A következő szakaszok az útmutatókhoz társítható objektumok típusait mutatják be. Minden hozzárendelt útmutató olyan utasításokat tartalmaz, amelyek automatikusan a megfelelő gyártási feladatokhoz vannak csatolva, és amelyek elérhetők az üzemben.
 
@@ -157,7 +159,7 @@ Például csatolhat egy általános gépbiztonsági vagy kezelési utasításoka
 1. Bontsa ki a **Társított útmutatók** gyorslapot.
 1. Válassza a **Hozzáadás** elemet a **Társított útmutatók** eszköztárból. A program új sort ad hozzá a rácshoz.
 1. Az új sorhoz a **Név** oszlop legördülő listájából válassza ki a hozzárendelni kívánt útmutatót. Ha számos útmutatója van, akkor szűrheti a listát, hogy megtalálja azt, amit keres.
-    ![Útmutatók kezelése](media/instruction-guides-allguides.png "Útmutatók kezelése")
+    ![Útmutatók kezelése.](media/instruction-guides-allguides.png "Útmutatók kezelése")
 
 ## <a name="associate-a-guide-to-a-resource-group"></a><a name="resource-groups"></a>Útmutató társítása erőforráscsoporttal
 
@@ -178,7 +180,7 @@ Hozzáadhat útmutatót [erőforráscsoportokhoz](tasks/define-discrete-manufact
 1. Bontsa ki a **Társított útmutatók** gyorslapot.
 1. Válassza a **Hozzáadás** elemet a **Társított útmutatók** eszköztárból. A program új sort ad hozzá a rácshoz.
 1. Az új sorhoz a **Név** oszlop legördülő listájából válassza ki a hozzárendelni kívánt útmutatót. Ha számos útmutatója van, akkor szűrheti a listát, hogy megtalálja azt, amit keres.
-    ![Útmutató hozzáadása erőforráscsoporthoz](media/instruction-guides-resourcegroup.png "Útmutató hozzáadása erőforráscsoporthoz")
+    ![Útmutató hozzáadása erőforráscsoporthoz.](media/instruction-guides-resourcegroup.png "Útmutató hozzáadása erőforráscsoporthoz")
 
 ## <a name="associate-a-guide-to-a-released-product"></a><a name="released-products"></a>Útmutató társítása kiadott termékkel
 
@@ -198,7 +200,7 @@ Termékszintű útmutatók segítenek az üzemben dolgozóknak egy adott kiadott
 1. Megjelenik a kiválasztott termék **Társított útmutatók** lapja.
 1. A Művelet panelen válassza a **Hozzáadás** lehetőséget, ha hozzá szeretne adni egy sort a rácshoz. 
 1. Az új sorhoz a **Név** oszlop legördülő listájából válassza ki a hozzárendelni kívánt útmutatót.
-    ![Útmutató hozzáadása kiadott termékhez](media/instruction-guides-ReleasedProduct-AddGuides.png "Útmutató hozzáadása kiadott termékhez")
+    ![Útmutató hozzáadása kiadott termékhez.](media/instruction-guides-ReleasedProduct-AddGuides.png "Útmutató hozzáadása kiadott termékhez")
 
 ## <a name="associate-a-guide-to-a-formula"></a><a name="formulas"></a>Útmutató társítása receptúrával
 
@@ -223,7 +225,7 @@ A receptúraszintű útmutatók irányított kezelési utasításokat adnak az �
 1. Bontsa ki a **Társított útmutatók** gyorslapot.
 1. Válassza a **Hozzáadás** elemet a **Társított útmutatók** eszköztárból. A program új sort ad hozzá a rácshoz.
 1. Az új sorhoz a **Név** oszlop legördülő listájából válassza ki a hozzárendelni kívánt útmutatót.
-    ![Útmutató hozzáadása receptúrához](media/instruction-guides-Formula.png "Útmutató hozzáadása receptúrához")
+    ![Útmutató hozzáadása receptúrához.](media/instruction-guides-Formula.png "Útmutató hozzáadása receptúrához")
 
 ## <a name="associate-a-guide-to-a-formula-version"></a><a name="formula-versions"></a>Útmutató társítása receptúraverzióval
 
@@ -248,11 +250,11 @@ A receptúrák egyedi verzióihoz csatolt útmutatók az üzemi dolgozóknak oly
 1. Nyissa meg a **Fejléc** lapot a felső gyorslap fölött.
 1. Válassza ki a **Receptúraverziók** gyorslapján azt a verziót, amelyhez útmutatót szeretne társítani.
 1. A **Receptúraverziók** eszköztáron válassza a **Társított útmutatók** lehetőséget.
-    ![Kiválasztott receptúraverzióhoz társított útmutatók megnyitása](media/instruction-guides-FormulaVersion.png "Kiválasztott receptúraverzióhoz társított útmutatók megnyitása")
+    ![Kiválasztott receptúraverzióhoz társított útmutatók megnyitása.](media/instruction-guides-FormulaVersion.png "Kiválasztott receptúraverzióhoz társított útmutatók megnyitása")
 1. Megjelenik a receptúraverzió **Társított útmutatók** lapja.
 1. A Művelet panelen válassza a **Hozzáadás** lehetőséget, ha hozzá szeretne adni egy sort a rácshoz. 
 1. Az új sorhoz a **Név** oszlop legördülő listájából válassza ki a hozzárendelni kívánt útmutatót.
-    ![Útmutató hozzáadása receptúraverzióhoz](media/instruction-guides-FormulaVersionAddGuide.png "Útmutató hozzáadása receptúraverzióhoz")
+    ![Útmutató hozzáadása receptúraverzióhoz.](media/instruction-guides-FormulaVersionAddGuide.png "Útmutató hozzáadása receptúraverzióhoz")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials"></a><a name="bom"></a>Útmutató társítása anyagjegyzékhez
 
@@ -275,7 +277,7 @@ Az anyagjegyzékhez csatolt útmutatók az üzemi dolgozóknak utasításokat ad
 1. Bontsa ki a **Társított útmutatók** gyorslapot.
 1. Válassza a **Hozzáadás** elemet a **Társított útmutatók** eszköztárból. A program új sort ad hozzá a rácshoz.
 1. Az új sorhoz a **Név** oszlop legördülő listájából válassza ki a hozzárendelni kívánt útmutatót.
-    ![Útmutató hozzáadása anyagjegyzékhez](media/instruction-guides-BOM.png "Útmutató hozzáadása anyagjegyzékhez")
+    ![Útmutató hozzáadása anyagjegyzékhez.](media/instruction-guides-BOM.png "Útmutató hozzáadása anyagjegyzékhez")
 
 ## <a name="associate-a-guide-to-a-bill-of-materials-version"></a><a name="bom-versions"></a>Útmutató társítása anyagjegyzék-verzióhoz
 
@@ -297,11 +299,11 @@ Az egyes anyagjegyzék-verziókhoz csatolt útmutatók az üzemi dolgozóknak ut
 1. Nyissa meg a **Fejléc** lapot a felső gyorslap fölött.
 1. Válassza ki az **Anyagjegyzék-verziók** gyorslapján azt a verziót, amelyhez útmutatót szeretne társítani.
 1. Az **Anyagjegyzék-verziók** eszköztáron válassza a **Társított útmutatók** lehetőséget.
-    ![Kiválasztott anyagjegyzék-verzióhoz társított útmutatók megnyitása](media/instruction-guides-BOMVersion.png "Kiválasztott anyagjegyzék-verzióhoz társított útmutatók megnyitása")
+    ![Kiválasztott anyagjegyzék-verzióhoz társított útmutatók megnyitása.](media/instruction-guides-BOMVersion.png "Kiválasztott anyagjegyzék-verzióhoz társított útmutatók megnyitása")
 1. Megjelenik az anyagjegyzék-verzió **Társított útmutatók** lapja.
 1. A Művelet panelen válassza a **Hozzáadás** lehetőséget, ha hozzá szeretne adni egy sort a rácshoz.
 1. Az új sorhoz a **Név** oszlop legördülő listájából válassza ki a hozzárendelni kívánt útmutatót.
-    ![Útmutató hozzáadása anyagjegyzék-verzióhoz](media/instruction-guides-BOMVersionAddGuide.png "Útmutató hozzáadása anyagjegyzék-verzióhoz")
+    ![Útmutató hozzáadása anyagjegyzék-verzióhoz.](media/instruction-guides-BOMVersionAddGuide.png "Útmutató hozzáadása anyagjegyzék-verzióhoz")
 
 ## <a name="associate-a-guide-to-a-route"></a><a name="routes"></a>Útmutató társítása útvonallal
 
@@ -322,7 +324,7 @@ Rendeljen hozzá útmutatót egy útvonalhoz, hogy részletes utasításokat adh
 1. Bontsa ki a **Társított útmutatók** gyorslapot.
 1. Válassza a **Hozzáadás** elemet a **Társított útmutatók** eszköztárból. A program új sort ad hozzá a rácshoz.
 1. Az új sorhoz a **Név** oszlop legördülő listájából válassza ki a hozzárendelni kívánt útmutatót.
-    ![Útmutató hozzáadása útvonalhoz](media/instruction-guides-Route.png "Útmutató hozzáadása útvonalhoz")
+    ![Útmutató hozzáadása útvonalhoz.](media/instruction-guides-Route.png "Útmutató hozzáadása útvonalhoz")
 
 ## <a name="associate-a-guide-to-a-route-version"></a><a name="route-versions"></a>Útmutató társítása útvonalverzióval
 
@@ -340,11 +342,11 @@ Az útvonalverziók általában meglévő útvonalon alapuló termelési folyama
 1. Nyissa meg az útvonalat, amelyhez útmutatót szeretne hozzárendelni.
 1. Válassza ki a **Verziók** gyorslapján azt a verziót, amelyhez útmutatót szeretne társítani.
 1. A **Verziók** eszköztáron válassza a **Társított útmutatók** lehetőséget.
-    ![Kiválasztott útvonalverzióhoz társított útmutatók megnyitása](media/instruction-guides-RouteVersion.png "Kiválasztott útvonalverzióhoz társított útmutatók megnyitása")
+    ![Kiválasztott útvonalverzióhoz társított útmutatók megnyitása.](media/instruction-guides-RouteVersion.png "Kiválasztott útvonalverzióhoz társított útmutatók megnyitása")
 1. Megjelenik az anyagjegyzék-verzió **Társított útmutatók** lapja.
 1. A Művelet panelen válassza a **Hozzáadás** lehetőséget, ha hozzá szeretne adni egy sort a rácshoz.
 1. Az új sorhoz a **Név** oszlop legördülő listájából válassza ki a hozzárendelni kívánt útmutatót.
-    ![Útmutató hozzáadása útvonalverzióhoz](media/instruction-guides-RouteVersionAddGuide.png "Útmutató hozzáadása útvonalverzióhoz")
+    ![Útmutató hozzáadása útvonalverzióhoz.](media/instruction-guides-RouteVersionAddGuide.png "Útmutató hozzáadása útvonalverzióhoz")
 
 ## <a name="associate-a-guide-to-a-route-operation-relation"></a><a name="route-operation-relations"></a>Útmutató társítása útvonalműveleti kapcsolattal
 
@@ -368,7 +370,7 @@ A műveleti kapcsolatok a legspecifikusabb módja annak, hogy útmutatást adjun
 1. A felső rácsban válassza ki azt a műveletet, amelyhez útmutatást szeretne megadni.
 1. Az alsó rácsban válasszon egy adott kapcsolatot (vagy az általános **Minden** kapcsolatot).
     ![Válasszon egy műveletet, majd egy kapcsolatot.](media/instruction-guides-RouteOperationRelation.png "Művelet, majd egy kapcsolat kiválasztása")
-1. Az alsó rács fölött nyissa meg a **Társított útmutatók** lapot.  ![A Társított útmutatók lap](media/instruction-guides-RouteOperationRelation-AddGuide.png "Társított útmutatók lap")
+1. Az alsó rács fölött nyissa meg a **Társított útmutatók** lapot.  ![A Társított útmutatók lap.](media/instruction-guides-RouteOperationRelation-AddGuide.png "Társított útmutatók lap")
 1. Válassza az alsó rács tetején látható eszköztár **Hozzáadás** elemét, ha új sort szeretne hozzáadni a rácshoz.
 1. Az új sorhoz a **Név** oszlop legördülő listájából válassza ki a hozzárendelni kívánt útmutatót. A sor többi részén jelölje be a megfelelő jelölőnégyzetet, ha a kiválasztott útmutatónak elérhetőnek kell lennie.
 
@@ -379,11 +381,11 @@ A műveleti kapcsolatok a legspecifikusabb módja annak, hogy útmutatást adjun
 
 Amikor egy dolgozó megnyit egy feladatlistát az üzemi végrehajtási felületen, a Supply Chain Management megkeresi az adott feladathoz tartozó útmutatókat. Az **Útmutatók** gomb megnyomása kilistázza a megfelelő útmutatókat.
 
-![Útmutatók gomb az üzemi végrehajtási felületen](media/instruction-guides-Shopfloor1.png "Útmutatók gomb az üzemi végrehajtási felületen")
+![Útmutatók gomb az üzemi végrehajtási felületen.](media/instruction-guides-Shopfloor1.png "Útmutatók gomb az üzemi végrehajtási felületen")
 
 Ezután tegyen fel egy HoloLens-t, majd pillantson a QR-kódra, és aktiválja a megfelelő útmutatót, és elérhetővé válik a megfelelő útmutató.
 
-![QR-kód az útmutató eléréséhez HoloLens](media/instruction-guides-Shopfloor2.png "QR-kód az útmutatók HoloLens segítségével való eléréséhez") segítségével
+![QR-kód az útmutató eléréséhez HoloLens segítségével.](media/instruction-guides-Shopfloor2.png "QR-kód az útmutatók HoloLens segítségével való eléréséhez")
 
 ## <a name="resolving-the-logic-for-selecting-guides"></a><a name="logic"></a>Az útmutatók kiválasztásánál alkalmazott logika meghatározása
 
@@ -406,7 +408,7 @@ Amikor a Supply Chain Management létrehozza a termelés számára a feladatokat
 - Ha útvonalverziót csatol termelési rendeléshez, akkor az ehhez a verzióhoz kapcsolódó útmutatók, valamint a verzió szülő útvonalhoz csatolt útmutatói is megjelennek a feladaton.
 - Ha több útvonalműveleti kapcsolatot határoz meg, amelyek tartalmazzák az *összes* kapcsolatot, és útmutatókat rendelnek hozzájuk, akkor csak munkához tartozó legspecifikusabb kapcsolat útmutatói jelennek meg a feladaton.  
 
-![Diagram a vonatkozó útmutatók feloldásához](media/instruction-guides-Resolve.png "Diagram a vonatkozó útmutatók feloldásához")
+![Diagram a vonatkozó útmutatók feloldásához.](media/instruction-guides-Resolve.png "Diagram a vonatkozó útmutatók feloldásához")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

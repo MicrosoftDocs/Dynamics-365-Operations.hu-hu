@@ -14,12 +14,12 @@ ms.search.region: global
 ms.author: dabourq
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 8f6affd05e658f39d567f7512c71d944636588ff
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: ad4ba2781c1b1086f2b554ec1db0f0f970d2d671
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907939"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351441"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Szállítói együttműködési mobil munkaterület
 
@@ -120,12 +120,12 @@ A Finance and Operations mobilalkalmazás letöltése és telepítése:
 4.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót. Adja meg a hitelesítési adatait.
 5.  A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, akkor Önnek frissítenie kell a mobil munkaterületek listáját.
 
-    [![Lekérés frissítéshez](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Frissítés húzással.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Szállítói együttműködési mobil munkaterület használata
 Ha bejelöli a **Szállítói együttműködés** munkaterületet, megjelennek a következő lehetőségek.
 
-![Szállítói együttműködési mobil munkaterület](./media/vendor-collaboration-mobile-app.png)
+![Szállítói együttműködési mobil munkaterület.](./media/vendor-collaboration-mobile-app.png)
 
 A **Szállítói együttműködési** munkaterület a következő lapokat tartalmazza.
 

@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c58aa1cec6c0bfe33fa1ef90267dcd8ac1218157
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: af427e8df2ac7a3a3b5a7fd6edb740400f6bbeaf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830834"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358002"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával
 
@@ -53,14 +53,14 @@ A következő helyzet bemutatja, hogyan lehet létrehozni a raktárkezelést has
 1. A **Számlaszám** értéke legyen *1001*.
 1. Állítsa be a **Szám** értékét azon beszerzési rendelés számára, amelyet meghatározott ehhez a gyakorlathoz.
 
-    ![Cikkbeérkezési napló](../media/item-arrival-journal-header.png "Cikkbeérkezési napló")
+    ![Cikkbeérkezési napló.](../media/item-arrival-journal-header.png "Cikkbeérkezési napló")
 
 1. A naplófejléc létrehozásához kattintson az **OK** gombra.
 1. A **Naplósorok** szakaszban válassza a **Sor hozzáadása** lehetőséget, és írja be a következő adatokat:
     - **Cikkszám** – értéke legyen *M9200*. A **Telephely**, a **Raktár** és a **Mennyiség** beállítása a 10 raklap (1000 ea.) készlettranzakció-adatai alapján történik.
     - **Hely** – értéke *001*. Ez a hely nem követi az azonosítótáblákat.
 
-    ![Cikkérkeztetési naplósor](../media/item-arrival-journal-line.png "Cikkérkeztetési naplósor")
+    ![Cikkérkeztetési naplósor.](../media/item-arrival-journal-line.png "Cikkérkeztetési naplósor")
 
     > [!NOTE]
     > A **Dátum** mező határozza meg, hogy mikor lesz a cikk elérhető mennyisége regisztrálva a készletbe.  

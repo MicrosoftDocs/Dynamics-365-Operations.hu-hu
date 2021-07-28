@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df08bdffb2bda67269eec9f1572bd76af9ae1e11
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2da54d147c7e9c8a42ef9de94abcbe7f36c98295
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747177"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355748"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Jóváhagyási folyamatok műveletei
 
@@ -29,7 +29,7 @@ Ez a cikk ismerteti a munkafolyamat elfogadási folyamatának egyes résztvevői
 
 A munkafolyamat több csoportot is tartalmazhat: a létrehozó, a feladathoz hozzárendelt személyek, döntéshozók, valamint jóváhagyók. Például, az alábbi a költségjelentés munkafolyamatánál Balázs a létrehozó, a várólista tagjai a hozzárendelt személyek, János a döntéshozó, illetve Ferenc, Zsuzsanna és Anna a jóváhagyók.
 
-[![Munkafolyamat\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
+[![Munkafolyamat\_WithManualDecision.](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif)
 
 Az alábbi szakaszok leírják az egyes csoportok által a munkafolyamatban végrehajtható műveleteket.
 

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 21481
+ms.custom:
+- "21481"
+- intro-internal
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0356837b96fd21f763c9a60926ba1bc982cf2024
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
+ms.openlocfilehash: 62b4285f2f5ad93e0a888dd47d22ab5f2caa184c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897988"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355556"
 ---
 # <a name="fixed-assets-home-page"></a>Tárgyi eszközök kezdőlap
 
@@ -30,7 +32,7 @@ A tárgyi eszközök egy magánszemély vagy szervezet által birtokolt értékt
 
 A tárgyi eszközök beszerzési adatainak beállítása és rögzítése után lehetőség van az értékcsökkenésük elszámolására, valamint az értékcsökkenést meghatározó tőkésítési küszöb beállítására. Kiszámítható a tárgyi eszközök kiigazítása, végül elvégezhető az eszközök kivezetése. Ha a tárgyi eszközöket a főkönyvben tartja nyilván, akkor megtekintheti az összes tárgyi eszköz aktuális értékét. A tárgyi eszközök kezelésével kapcsolatos módszereknek meg kell felelniük a nemzetközi könyvelési szabványoknak, illetve az egyes országokban/régiókban érvényes könyvelési jogszabályoknak is. A követelmények a tárgyi eszközök beszerzési és kivezetési tranzakcióinak a rögzítésével, értékcsökkenésével, élettartamával, felértékelésével és leértékelésével kapcsolatos szabályokat tartalmazhatnak. A Tárgyi eszközök szolgáltatásban számos megtalálható e szabványok és szabályok közül.
 
-[![Üzleti folyamat](./media/FA-process.PNG)](./media/FA-process.PNG)
+[![Üzleti folyamat.](./media/FA-process.PNG)](./media/FA-process.PNG)
 
 
 

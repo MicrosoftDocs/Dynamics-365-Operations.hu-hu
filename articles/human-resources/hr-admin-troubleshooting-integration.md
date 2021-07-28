@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d2ac28a1bd09cf68c711295116fb007bdfab2070
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 946d0433df41ce7067b8b0673db680abb42b7792
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053395"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357289"
 ---
 # <a name="integration-with-finance-faq"></a>Integráció a Finance GYIK szolgáltatással
 
@@ -37,7 +37,7 @@ Szám Ha módosítja a Human Resources alkalmazás felhasználóját, a Human Re
 | --- | --- | --- | --- |
 | Dynamics365 for Talent | f9be0c49-aa22-4ec6-911a-c5da515226ff | 27fd8129-4b3c-43f7-b1bf-47495d3a049b | f9be0c49-aa22-4ec6-911a-c5da515226ff |
 
-![A Talent alkalmazásfelhasználó alapértelmezett beállításai](media/DynamicsApplicationUser.png)
+![A Talent alkalmazásfelhasználó alapértelmezett beállításai.](media/DynamicsApplicationUser.png)
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>A programok minden adatokat szinkronizálják vagy csak bizonyos adatentitásokat?
 
@@ -57,7 +57,7 @@ Pénzügyi dimenziók jelenleg nem szerepelnek a Dataverse szolgáltatásban, é
 
 Azon adatok esetében, amelyek léteznek a Finance alkalmazásban, de a Human Resources rendszerben nem, a Human Resources rendszer **Hivatkozások konfigurálása** funkciójával kapcsolja össze.
 
-![Pénzügyi dimenziók leképezése](media/MapFinancialDimensions.png)
+![Pénzügyi dimenziók leképezése.](media/MapFinancialDimensions.png)
 
 ## <a name="sometimes-when-i-import-employees-they-go-into-inactive-workers-in-finance-why"></a>Bizonyos esetekben, amikor az alkalmazottakat importálok, inaktív dolgozókként kerülnek be a Finance rendszerbe. Miért?
 
@@ -71,14 +71,14 @@ Adatszinkronizálás végrehajtási ütemezést követi. Az integráció átvesz
 
 A „Speciális lekérdezés” használatával szűrheti és átformálhatja a forrásadatokat a célhelyre történő továbbítás előtt.
 
-![Aktív dolgozók speciális lekérdezése](media/MapOnlyActiveWorkersAdvancedQuery.png)
+![Aktív dolgozók speciális lekérdezése.](media/MapOnlyActiveWorkersAdvancedQuery.png)
 
 ## <a name="can-i-specify-which-fields-to-send-to-finance-for-a-specific-entity"></a>Meghatározhatom, hogy mely mezők legyenek átküldve a Finance rendszerbe egy adott entitáshoz?
 
 Mezők hozzáadhatók vagy eltávolíthatók az integrációs feladatból. A Human Resources nem minden, a Dataverse-táblában lévő mezőt tölt ki.
 A további adatok a Power Apps segítségével tölthetők ki.
 
-![Mezők hozzáadása vagy eltávolítása az integrációs feladatból](media/SpecifyFieldsIncludedInIntegration.png)
+![Mezők hozzáadása vagy eltávolítása az integrációs feladatból.](media/SpecifyFieldsIncludedInIntegration.png)
 
 ## <a name="i-set-up-integration-as-a-batch-job-but-human-resources-lost-connection-to-the-destination-system-how-can-i-send-the-same-set-of-changes-to-the-destination-system"></a>Kötegelt feladatként állítottam be az integrációt, de a Human Resources kapcsolata megszakadt a célrendszerrel. Hogyan lehet elküldeni a célrendszernek ugyanazokat a módosításokat?
 
@@ -126,11 +126,11 @@ Kövesse nyomon az időt az adatintegrátor végrehajtási előzményeiben és k
 
 1. Rögzítse a tevékenységindexet az Adatintegrátorból (ebben a példában a „9”).
 
-    ![A feladatindex rögzítése az Adatintegrátorból](media/CaptureTaskIndex.png)
+    ![A feladatindex rögzítése az Adatintegrátorból.](media/CaptureTaskIndex.png)
 
 2. Kövesse nyomon a projekt végrehajtási idejét.
 
-    ![A projekt végrehajtási idejének nyomon követése](media/CaptureTimeOfExecution.png)
+    ![A projekt végrehajtási idejének nyomon követése.](media/CaptureTimeOfExecution.png)
 
 3. A Finance alkalmazásban azonosítsa be a -1 indexet. Ebben a példában a „8” utótaggal rendelkező projekt és az index „0” projekt végrehajtási ideje felel meg a 2. lépés végrehajtási idejének.
 
@@ -140,7 +140,7 @@ Kövesse nyomon az időt az adatintegrátor végrehajtási előzményeiben és k
 
 A Finance integrációja két lépésből áll. Először ellenőrizze, hogy a Human Resources adatai frissítve vannak-e, és elérhetők-e a Dataverse megoldásban. Ez közel valós idejű szinkronizálási, és ellenőrizhető a Power Apps alkalmazásban az adattáblák közötti adatok megtekintésével.
 
-![Adatok a Dataverse megoldásban](media/DataInCDS.png)
+![Adatok a Dataverse megoldásban.](media/DataInCDS.png)
 
 Ha az adatok nem a várt módon jelennek meg a Dataverse megoldásban, győződjön meg róla, az entitást az integráció támogatja. További adatok felvételéhez a Dataverse megoldásba módosításara van szükség a Microsoft oldalán.
 
@@ -165,7 +165,7 @@ Győződjön meg arról is, hogy a helyes jogi személyeket választja ki a tár
 
 Frissítse a Finance adatentitásait az **Adatkezelés \> Keretrendszer paraméterei \> Entitásbeállítások \> Entitáslista frissítése** helyen. Ez eltart néhány percig, majd láthatóvá válnak azok a hozzárendelések. Ez a probléma új projektek létrehozásakor merülhet fel.
 
-![Hiányzó mező-hozzárendelés](media/MissingFieldMapping.png)
+![Hiányzó mező-hozzárendelés.](media/MissingFieldMapping.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

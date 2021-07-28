@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 6941a38e96520befd3bdba65956d45a6bbaee4be
-ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
+ms.openlocfilehash: 115eaad4f11fc4fb5321f0d8bb9d4f5a9f2f2c7c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "6306389"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358593"
 ---
 # <a name="unified-product-experience"></a>Egységes terméktapasztalat
 
@@ -33,15 +33,15 @@ Ha egy üzleti ökoszisztéma olyan Dynamics 365-alkalmazásokból áll, mint a 
 
 Itt a termék adatmodellje a Sales megoldásból.
 
-![Adatmodell CE-termékekhez](media/dual-write-product-4.jpg)
+![Adatmodell CE-termékekhez.](media/dual-write-product-4.jpg)
 
 Itt a termék adatmodellje a Finance and Operations-alkalmazásokból.
 
-![Adatmodell a Finance and Operations termékeihez](media/dual-write-products-5.jpg)
+![Adatmodell a Finance and Operations termékeihez.](media/dual-write-products-5.jpg)
 
 Ez a két termékadat-modell integrálva lett a Dataverse szolgáltatásba az alábbiakban látható módon.
 
-![Adatmodell a Dynamics 365 alkalmazások termékeihez](media/dual-write-products-6.jpg)
+![Adatmodell a Dynamics 365 alkalmazások termékeihez.](media/dual-write-products-6.jpg)
 
 A termékekhez kapcsolódó kettős írású táblaleképezések csak egyirányú, csaknem valós idejű adatátvitelre vannak tervezve a Finance and Operations-alkalmazások és a Dataverse között. A termék-infrastruktúra azonban nyitott, hogy szükség esetén kétirányú lehessen. Noha személyre szabható, ez azonban az Ön felelőssége; a Microsoft nem javasolja ezt a megközelítést.
 
@@ -86,7 +86,7 @@ Mivel a termék SKU-ként képviselteti magát, az egyedi termékek, alaptermék
 - Az **Alaptermékek** általános termékként használatosak, amelyek meghatározzák az üzleti folyamatokban történő működéséthez kapcsolódó definíciókat és szabályokat. Ezeknek a definícióknak alapján egyedei termékeket lehet létrehozni, amelyek a termék változatát jelentik. Például a póló az alaptermék, és a szín és a méret dimenzióként is megadható. A változatok adhatók ki, amelyek ezen dimenziók különböző kombinációi, például a kis kék póló vagy egy közepes zöld póló. Az integrációban egy sor jön létre változatonként a terméktáblában. Ez a sor tartalmazza a változatspecifikus adatokat, például a különböző dimenziókat. A termék általános információinak tárolása a **msdyn\_sharedproductdetails** táblában történik. (Ez az általános információ az alaptermékben található.) Az alaptermék adatait a rendszer szinkronizálja Dataverse szolgáltatásba a kiadott alaptermék létrehozásával (de a változatok megjelenése előtt).
 - Az **Egyedi termékek** a termékek a termék összes altípusára és az összes termékváltozatra utalnak. 
 
-![Adatmodell termékekhez](media/dual-write-product.png)
+![Adatmodell termékekhez.](media/dual-write-product.png)
 
 Ha a kettős írás funkció engedélyezve van, a Finance and Operations modul alkalmazásai szinkronizálva lesznek a többi Dynamics 365 termékben a **Vázlat** állapotban. Az első azonos pénznemű árlistához lesznek hozzáadva. Más szóval a Dynamics 365 alkalmazás első árlistájához lesznek hozzáadva amely megfelel annak a jogi táblának a pénznemének, ahol a termék ki van adva a Finance and Operations-alkalmazásban. Ha a megadott pénznemhez nincs árlista, a program automatikusan létrehoz egy árlistát, és hozzárendeli a terméket. 
 
@@ -112,7 +112,7 @@ A termékek szinkronizálása a Finance and Operations-alkalmazásokból a Datav
 
 Termékdimenziók olyan jellemzők, amelyek termékváltozat azonosítására szolgálnak. A négy termékdimenzió (szín, méret, stílus és konfiguráció) a termék változatának meghatározásához hozzá van hozzárendelve a Dataverse szolgáltatáshoz is. A következő ábra a Szín cikkdimenzió adatmodelljét mutatja be. Ugyanez a modell a méretekre, stílusokra és a konfigurációkra is érvényes. 
 
-![Adatmodell a termékdimenziókhoz](media/dual-write-product-two.png)
+![Adatmodell a termékdimenziókhoz.](media/dual-write-product-two.png)
 
 [!include [product colors](includes/EcoResProductColorEntity-msdyn-productcolor.md)]
 
@@ -148,7 +148,7 @@ Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és 
 
 A mértékegységek és a kapcsolódó átváltás a diagramon látható adatmodellben érhetők el a Dataverse szolgáltatásban.
 
-![Adatmodell mértékegységhez](media/dual-write-product-three.png)
+![Adatmodell mértékegységhez.](media/dual-write-product-three.png)
 
 A mértékegység fogalma integrálva van a Finance and Operations-alkalmazások és más Dynamics 365 alkalmazások között. A Finance and Operations-alkalmazás minden egységosztálya esetében létrejön egy olyan egységcsoport a Dynamics 365-alkalmazásban, amely az egységosztályhoz tartozó egységeket tartalmazza. Minden egységcsoporthoz egy alapértelmezett alapegység is létrejön. 
 

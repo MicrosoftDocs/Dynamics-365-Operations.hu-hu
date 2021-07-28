@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8c2ae3368db47363a65e8ecd6317bb0432829802
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: ccad9c55c0200d008525c7d3fdaeeef99b7eecfb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748825"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350740"
 ---
 # <a name="general-troubleshooting"></a>Általános hibaelhárítás
 
@@ -44,16 +44,16 @@ A Package Deployer eszköz telepítését követően telepítse a megoldást tar
 
 1. Töltse le a legújabb megoldáscsomag-fájlt a Yammer.com oldalról. A csomag zip-fájljának letöltése után kattintson rá jobb gombbal, és válassza a **Tulajdonságok** elemet. Válassza ki a **Zárolás feloldása** jelölőnégyzetet, majd válassza az **Alkalmazás** lehetőséget. Ha nem látja a **Zárolás feloldása** jelölőnégyzetet, akkor a zip-fájl zárolása már fel van oldva, és kihagyhatja ezt a lépést.
 
-    ![Tulajdonságok párbeszédpanel](media/unblock_option.png)
+    ![Tulajdonságok párbeszédpanel.](media/unblock_option.png)
 
 2. Csomagolja ki a csomag zip-fájlját, és másolja az összes fájlt a **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438** mappába.
 
-    ![A Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 mappa tartalma](media/extract_package.png)
+    ![A Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 mappa tartalma.](media/extract_package.png)
 
 3. Illessze be az összes másolt fájlt a Package Deployer eszköz **Eszközök** mappájába. 
 4. Futtassa a **PackageDeployer.exe** fájlt a Dataverse-környezet kiválasztásához és a megoldások telepítéséhez.
 
-    ![Az Eszközök mappa tartalma](media/paste_copied_files.png)
+    ![Az Eszközök mappa tartalma.](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>A beépülő modul nyomkövetési naplójának engedélyezése és megtekintése a Dataverse szolgáltatásban a hiba részleteinek megtekintéséhez
 

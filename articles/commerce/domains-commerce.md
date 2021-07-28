@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 0a494a36d1d8fa55521c416efd4262d860e1a708
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: fb010f5cb70668913b937b73ba05144f0b99549a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022836"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356830"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Tartományok a Dynamics 365 Commerce szolgáltatásban
 
@@ -38,7 +38,7 @@ Egy e-kereskedelmi rendszernek a [Microsoft Dynamics Lifecycle Services (LCS)](h
 
 A következő ábra a LCS e-kereskedelmi létesítési képernyőt mutatja, ahol a **Támogatott állomásnevek** mező ki van emelve. 
 
-![LCS e-kereskedelmi létesítési képernyőn a **Támogatott állomásnevek** mező kijelölve](./media/Domains_ProvisioningeCommerceScreen_publish.png)
+![Az LCS e-kereskedelmi létesítési képernyőn a **Támogatott állomásnevek** mező kijelölve.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Szolgáltatási kérelmeket úgy is létrehozhat, hogy további tartományokat adjon hozzá egy környezethez, ha az üzembe helyezés már megtörtént. Szolgáltatási kérelem létrehozásához az LCS-ben a környezeten belül válassza a **Támogatás \> Támogatási problémák** lehetőséget, majd válassza a **Probléma beküldése** elemet.
 
@@ -56,7 +56,7 @@ Amikor először állít be webhelyet a webhelykészítőben megjelenik a **Webh
 
 A következő ábra egy „default” nevű helyhez tartozó **Webhely beállítása** párbeszédpanelt jeleníti meg, amikor a webhelyet első alkalommal nyitja meg a webhelykészítőben.
 
-![**Webhely beállítása** párbeszédpanel](./media/Domains_SetupyoursiteScreen.png)
+![**Webhely beállítása** párbeszédpanel.](./media/Domains_SetupyoursiteScreen.png)
 
 A **Tartomány kiválasztása** mező segítségével hozzárendelheti a webhely által biztosított támogatott állomásnevek egyikét az LCS-ben a weboldalhoz a webhelykészítőben.
 
@@ -79,11 +79,11 @@ Miután a webhely egy elérési úttal be van állítva, a webhelyhez tartozó o
 
 A következő ábra az **Új URL-cím** párbeszédpanelét jeleníti meg a webhelykészítőben, ahol ki van emelve egy példa URL-cím. 
 
-![**Új URL-cím** párbeszédpanel a webhelykészítőben](./media/Domains_PageSetup2a.png)
+![**Új URL-cím** párbeszédpanel a webhelykészítőben.](./media/Domains_PageSetup2a.png)
 
 A következő ábra az **URL-címek** oldalt jeleníti meg a webhelykészítőben, ahol ki van emelve egy példa URL-cím a listában.
 
-![Felhasználói folyamatbeállítás futtatása az irányelvben most](./media/Domains_URLsInSiteBuilder2a.png)
+![Felhasználói folyamatbeállítás futtatása az irányelvben most.](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>A webhelykészítő tartományai
 

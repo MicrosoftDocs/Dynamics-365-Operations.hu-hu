@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-ms.openlocfilehash: dd07c9c95639c8e69e1013fd7da283cf51b60ed0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 4d4f2ee97db52c055136912b237412b1148c26bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804527"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352348"
 ---
 # <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Nyugta nélküli visszárukhoz használható fizetési módok korlátozása
 
@@ -38,7 +38,7 @@ Fizetési módok beállításához a következő feladatokat kell elvégezni.
 3. Üzlethez tartozó fizetési módok beállítása. Minden egyes üzlethez fizetési módokat kell társítania, majd meg kell adnia az egyes fizetési módok adott üzletben jellemző beállításait.
 4. Kártyás fizetési módok beállítása az üzletekhez. Minden kártyás fizetési módhoz, amelyet az üzlet elfogad, végezze el a kártyabeállítást.
 
-![Üzlet beállítása](media/NoReceiptReturns1.png "Retail áruház beállítása") 
+![Üzlet beállítása.](media/NoReceiptReturns1.png "Retail áruház beállítása") 
 
 
 ## <a name="restrict-payment-methods-for-returns-without-a-receipt"></a>Nyugta nélküli visszárukhoz használható fizetési módok korlátozása
@@ -49,12 +49,12 @@ Az kapcsoló alapértelmezés szerinti értéke **Nem**, amely biztosítja, hogy
 
 Ha a **Nyugta nélkül visszatérítések korlátozása** értékre **Igen**, a választott fizetési nem érhető el visszatérítésekhez. 
 
-![Üzleti fizetési módja](media/NoReceiptReturns3.png "Retail áruházi fizetési mód") 
+![Üzlet fizetési módja.](media/NoReceiptReturns3.png "Retail áruházi fizetési mód") 
 
 > [!NOTE]
 > Amikor a pénztáros kiválaszt egy fizetési módot, amely korlátozva van nyugta nélküli visszatérítéshez megjelenik egy üzenet az elfogadható fizetési módok ellenőrzéséhez.
 
-![Elfogadható fizetési módok](media/NoReceiptReturns4.png "Elfogadható fizetési módok") 
+![Elfogadható fizetési módok.](media/NoReceiptReturns4.png "Elfogadható fizetési módok") 
 
 Ha egy tranzakcióhoz nyugtás és nyugata nélküli visszatérítés is tartozik akkor a korlátozási feltételek nem lesznek alkalmazva, mivel a tranzakció visszatérítés munkafolyamat lesz nyugtával. 
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: f0f1e0f3e7145c66b8f2b082b44ad7035c57d947
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: dc76c3c8c3da11202ebb29f4c5c0df72892c094a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936944"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351176"
 ---
 # <a name="set-up-an-online-channel"></a>Online csatorna beállítása
 
@@ -55,11 +55,11 @@ A Commerce online áruház létrehozásához először létre kell hoznia egy on
 
 A következő kép bemutatja egy új online csatorna létrehozását.
 
-![Új online csatorna](media/channel-setup-online-1.png)
+![Új online csatorna.](media/channel-setup-online-1.png)
 
 A következő kép egy példát mutat a online csatornára.
 
-![Online csatorna – példa](media/channel-setup-online-2.png)
+![Online csatorna – példa.](media/channel-setup-online-2.png)
 
 ## <a name="set-up-languages"></a>Nyelvek beállítása
 
@@ -75,7 +75,7 @@ Az online csatorna beállításához szükséges további feladatok közé tarto
 
 A következő képen láthatók a **Szállítási módok**, a **Fizetési módok** és a **Teljesítési csoport hozzárendelése** beállított lehetőségei a **Beállítás** lapon.
 
-![További online csatorna-beállítási műveletek](media/channel-setup-online-3.png)
+![További onlinecsatorna-beállítási műveletek.](media/channel-setup-online-3.png)
 
 ### <a name="set-up-payment-methods"></a>Fizetési módok beállítása
 
@@ -90,7 +90,7 @@ A fizetési módok beállításához a csatornán támogatott valamennyi fizeté
 
 A következő kép egy példát mutat a készpénzfizetési módra.
 
-![Fizetési módok – példa](media/channel-setup-retail-5.png)
+![Fizetési módok – példa.](media/channel-setup-retail-5.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Szállítási módok beállítása
 
@@ -104,7 +104,7 @@ Szállítási mód módosításához vagy hozzáadásához kövesse az alábbi l
 
 A következő kép egy példát mutat a szállítási módra.
 
-![Szállítási módok beállítása](media/channel-setup-retail-7.png)
+![Szállítási módok beállítása.](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-a-fulfillment-group-assignment"></a>Teljesítési csoport hozzárendelésének beállítása
 
@@ -118,13 +118,13 @@ A teljesítési csoport hozzárendelésének beállításához tegye a következ
 
 A következő kép egy példát mutat be a teljesítési csoport hozzárendelésének beállítására.
 
-![Teljesítési csoport hozzárendelésének beállítása](media/channel-setup-retail-9.png)
+![Teljesítési csoport hozzárendelésének beállítása.](media/channel-setup-retail-9.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Csatornák áttekintése](channels-overview.md)
 
-[Csatornák beállításának előfeltételei](channels-prerequisites.md)
+[Csatorna beállításainak előfeltételei](channels-prerequisites.md)
 
 [Kiskereskedelmi csatorna beállítása](channel-setup-retail.md)
 

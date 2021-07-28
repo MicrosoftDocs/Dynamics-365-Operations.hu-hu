@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 90759931fcbdb1e5acbd62f8a40e5b37b918f31a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b2122cb123e041d2194fa1ef5fd8024ec4c1a2a0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813869"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361090"
 ---
 # <a name="asset-kpis"></a>Eszköz KPI-k
 
@@ -82,7 +82,7 @@ A lenti táblázatban megtalálja a mezők leírását az **Eszköz KPI-k** olda
 
 Az alábbi ábra négy eszköz KPI-számításának képernyőképét jeleníti meg.
 
-![A KPI-számítás négy eszközre vonatkozó képernyőképe](media/11-controlling-and-reporting.png)
+![A KPI-számítás négy eszközre vonatkozó képernyőképe.](media/11-controlling-and-reporting.png)
 
 - Több eszköz is kiválasztható az **Összes eszköz** lehetőségnél, majd kattintson az **Eszköz KPI** gombra az **Általános** lapon. Ezután kattintson az **OK** gombra az **Eszköz KPI-k kiszámítása** párbeszédpanelen a kiválasztott eszközökhöz tartozó KPI-k számításához.  
 - A KPI-számítás eredményei nem kötelező jelleggel tartalmazhatják a [karbantartás miatti üzemkimaradás regisztrációkat](../work-orders/maintenance-downtime.md), a karbantartás miatti üzemkimaradás okkódok beállításának és használatának beállításától függően. 
