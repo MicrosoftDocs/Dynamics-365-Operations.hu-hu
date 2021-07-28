@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: ac3d540ee3d1737e4e8be45394cd5807ae4a8d6f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 9636348e7840206ad1ef5669eae7f553231cadf1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796148"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352614"
 ---
 # <a name="configure-call-center-delivery-modes-and-charges"></a>Szállítási módok és költségek beállítása a hívásközponthoz
 
@@ -65,11 +65,11 @@ A **Sorok** szakaszban szükség esetén megadhat egy vagy több költséget pé
 
 A vállalatok gyakran állítanak be többszintű költségeket. Ebben az esetben a vevők a rendelés értéke alapján fizetnek a kiszállításért. Többszintű költségek beállításához adja meg az értékeket az **Összeg alsó határa** és az **Összeg felső határa** mezőkben, illetve definiálja magát a költséget a **Költségek értéke** mezőben. Például olyan rendeléseknél, amelyeknek az értéke kisebb, mint 50 USD, a kiskereskedő 5,95 USD költséget számít fel a szárazföldi szállításért. Olyan rendeléseknél, amely értéke egyenlő vagy nagyobb, mint 50 USD, de kevesebb, mint 100 USD, a kiskereskedő 7,95 USD költséget számít fel. Végül azokat a rendeléseket, amelyek értéke egyenlő vagy nagyobb, mint 100 USD, a kiskereskedő ingyenesen kiszállítja. Az alábbi ábra az említett költségek konfigurációját mutatja be.
 
-![Példa rögzített többszintű költségekre](media/fixedtieredcharges.png)
+![Példa rögzített többszintű költségekre.](media/fixedtieredcharges.png)
 
 Az üzleti szükségletektől függően a költségkategóriákat vegyesen is használhatja. Például minden olyan rendelésnél, amelynek az értéke kisebb, mint 100 USD, fix 9,95 USD költséget számítanak fel a szállításért. Azoknál a rendeléseknél, amelyeknek az értéke egyenlő vagy nagyobb, mint a 100 USD, a szállítási költséget a rendelés értékének 5 százaléka adja. Az alábbi ábra az említett költségek konfigurációját mutatja be.
 
-![Példa vegyes többszintű költségekre](media/mixedtieredcharges.png)
+![Példa vegyes többszintű költségekre.](media/mixedtieredcharges.png)
 
 ## <a name="apply-delivery-modes-during-order-entry-in-a-call-center"></a>Szállítási módok alkalmazása a rendelésbevitel során egy hívásközpontban
 

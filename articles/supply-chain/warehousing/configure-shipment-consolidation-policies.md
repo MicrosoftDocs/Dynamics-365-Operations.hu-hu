@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 03150ccdaeaf48754f04a4329cb1bc14ea2b6895
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a9215672f4ace591bf7d964c8fbd3ad483bacca5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5840413"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360424"
 ---
 # <a name="configure-shipment-consolidation-policies"></a>Szállítmánykonszolidációs irányelvek konfigurálása
 
@@ -179,7 +179,7 @@ Kövesse az alábbi lépéseket az üzleti esethez tartozó szállítmánykonszo
 1. Hagyja a **Konszolidációt nyitott szállítmányokkal** beállítást *Nem* értéken.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 1. A **Konszolidációs mezők** gyorslapon a **Fennmaradó mezők** listában válassza ki a sort, ahol a **Mező neve** mező beállítása *Szállítási mód*.
-1. Válassza a **Hozzáadás** gombot ![Jobbra nyíl](media/forward-button.png) a mező **Kiválasztott mezők** listára történő átmozgatásához.
+1. Válassza a **Hozzáadás** gombot ![(a jobbra nyilat).](media/forward-button.png) hogy a mezőt a **Kijelölt mezők** listába helyezze át.
 1. A műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** lehetőséget.
 1. A lekérdezéstervező párbeszédablakában a **Tartomány** lapon levő rácsban keresse meg a sort, ahol a **Mező** mező beállítása *Vevői számla*, és állítsa az adott sor **Feltételek** mezőjének értékét: *US-001*.
 1. A **Hozzáadás** gombbal adjon hozzá egy sort a rácshoz a következő beállításokkal:
@@ -214,7 +214,7 @@ Kövesse az alábbi lépéseket az üzleti esethez tartozó szállítmánykonszo
 1. Állítsa a **Konszolidáció nyitott szállítmányokkal** beállítást *Igen* értékre.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 1. A **Konszolidációs mezők** gyorslapon a **Fennmaradó mezők** listában válassza ki a sort, ahol a **Mező neve** mező beállítása *Szállítási mód*.
-1. Válassza a **Hozzáadás** gombot ![Jobbra nyíl](media/forward-button.png) a mező **Kiválasztott mezők** listára történő átmozgatásához.
+1. Válassza a **Hozzáadás** gombot ![(a jobbra nyilat).](media/forward-button.png) hogy a mezőt a **Kijelölt mezők** listába helyezze át.
 1. A műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** lehetőséget.
 1. A lekérdezéstervező párbeszédablakban az **Illesztések** lapon bontsa ki és válassza ki a fában a **Táblák \> Rakomány részletei** elemet.
 1. Válassza a **Táblaillesztés hozzáadása** lehetőséget.
@@ -251,9 +251,9 @@ Kövesse az alábbi lépéseket az üzleti esethez tartozó szállítmánykonszo
 1. Állítsa a **Konszolidáció nyitott szállítmányokkal** beállítást *Igen* értékre.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 1. A **Konszolidációs mezők** gyorslapon a **Fennmaradó mezők** listában válassza ki a sort, ahol a **Mező neve** mező beállítása *Vevői igénylés*.
-1. Válassza a **Hozzáadás** gombot ![Jobbra nyíl](media/forward-button.png) a mező **Kiválasztott mezők** listára történő átmozgatásához.
+1. Válassza a **Hozzáadás** gombot ![(a jobbra nyilat).](media/forward-button.png) hogy a mezőt a **Kijelölt mezők** listába helyezze át.
 1. A **Fennmaradó mezők** listában válassza ki a sort, ahol a **Mező neve** mező beállítása *Szállítási mód*.
-1. Válassza a **Hozzáadás** gombot ![Jobbra nyíl](media/forward-button.png) a mező **Kiválasztott mezők** listára történő átmozgatásához.
+1. Válassza a **Hozzáadás** gombot ![(a jobbra nyilat).](media/forward-button.png) hogy a mezőt a **Kijelölt mezők** listába helyezze át.
 1. A műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** lehetőséget.
 1. A lekérdezéstervező párbeszédablakában a **Tartomány** lapon keresse meg a sort, ahol a **Mező** mező beállítása *Vevői számla*, és állítsa az adott sor **Feltételek** mezőjének értékét: *US-001*.
 1. Az **OK** gombbal zárja be a párbeszédpanelt.
@@ -283,7 +283,7 @@ Kövesse az alábbi lépéseket az üzleti esethez tartozó szállítmánykonszo
 1. Hagyja a **Konszolidációt nyitott szállítmányokkal** beállítást *Nem* értéken.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 1. A **Konszolidációs mezők** gyorslapon a **Fennmaradó mezők** listában válassza ki a sort, ahol a **Mező neve** mező beállítása *Szállítási mód*.
-1. Válassza a **Hozzáadás** gombot ![Jobbra nyíl](media/forward-button.png) a mező **Kiválasztott mezők** listára történő átmozgatásához.
+1. Válassza a **Hozzáadás** gombot ![(a jobbra nyilat).](media/forward-button.png) hogy a mezőt a **Kijelölt mezők** listába helyezze át.
 1. A műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** lehetőséget.
 1. A lekérdezésszerkesztő párbeszédablak **Tartomány** lapján a **Hozzáadás** gombbal adjon hozzá egy sort a rácshoz a következő beállításokkal:
 
@@ -317,7 +317,7 @@ Leggyakrabban ezt az üzleti esetet meg lehet oldani, ha az [1. forgatókönyvbe
 1. Hagyja a **Konszolidációt nyitott szállítmányokkal** beállítást *Nem* értéken.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 1. A **Konszolidációs mezők** gyorslapon a **Fennmaradó mezők** mezőben válassza ki a sort, ahol a **Mező neve** mező beállítása *Szállítási mód*.
-1. Válassza a **Hozzáadás** gombot ![Jobbra nyíl](media/forward-button.png) a mező **Kiválasztott mezők** listára történő átmozgatásához.
+1. Válassza a **Hozzáadás** gombot ![(a jobbra nyilat).](media/forward-button.png) hogy a mezőt a **Kijelölt mezők** listába helyezze át.
 1. A műveleti ablaktáblán válassza a **Lekérdezés szerkesztése** lehetőséget.
 1. A lekérdezéstervező párbeszédablakában a **Tartomány** lapon keresse meg a sort, ahol a **Mező** mező beállítása *Raktár*, és állítsa az adott sor **Feltételek** mezőjének értékét: *61, 63*.
 1. Az **OK** gombbal zárja be a párbeszédpanelt.

@@ -1,6 +1,6 @@
 ---
-title: A Finance Insights konfigurációja – 10.0.19 verzióig
-description: Ez a témakör azokat a konfigurációs lépéseket ismerteti, amelyek lehetővé teszik a rendszer számára a Finance Insights alkalmazásban elérhető képességek használatát a 10.0.19 verzióig.
+title: A Finance Insights konfigurációja – a 10.0.19-es verzióig
+description: Ez a témakör azokat a konfigurációs lépéseket ismerteti, amelyek lehetővé teszik a rendszer számára a Finance Insights alkalmazásban elérhető képességek használatát a 10.0.19-es verzióig.
 author: ShivamPandey-msft
 ms.date: 06/03/2021
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 6ad06bb6d041fc060b3a99538f6d4d0af333180f
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 6b578962839a34a1e2ce0311f7d8e7ee57a10927
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186420"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357438"
 ---
-# <a name="configuration-for-finance-insights-preview"></a>Pénzügyi információk konfigurációja (előzetes verzió)
+# <a name="configuration-for-finance-insights-for-private-preview-preview---before-version-10019"></a>A Finance Insights konfigurálása privát előzetes verzióhoz (előzetes verzió) – 10.0.19-as verzióig
 
 [!include [banner](../includes/banner.md)]
 
@@ -31,7 +31,7 @@ ms.locfileid: "6186420"
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> A Finance Insights beállításának következő eljárásai a Microsoft Dynamics 365 Finance 10.0.19 verziójáig érvényesek. "A Finance Insights10.0.20 és későbbi verziói beállításával kapcsolatosan lásd: : [Finance Insights (előzetes verzió) – 10.0.20 és újabb verziók](configure-for-fin-insites-PubPrvw.md).
+> A Finance Insights beállításának következő eljárásai a Microsoft Dynamics 365 Finance 10.0.19-es verziójáig érvényesek. "A Finance Insights10.0.20 és későbbi verziói beállításával kapcsolatosan lásd: : [Finance Insights (előzetes verzió) – 10.0.20 és újabb verziók](configure-for-fin-insites-PubPrvw.md).
 
 A Pénzügyi információk a Microsoft Dynamics 365 Finance és a Microsoft Dataverse, az Azure és az AI Builder funkcióit kombinálva hatékony előrejelző eszközöket biztosítanak a szervezet számára. Ez a témakör azokat a konfigurációs lépéseket ismerteti, amelyek lehetővé teszik a rendszer számára a Pénzügyi információkban elérhető képességek használatát.
 
@@ -59,7 +59,7 @@ A következő lépések segítségével konfigurálhatja a Dataverse-t a Finance
 
     1. Nyissa meg a **Környezetek** oldalt.
 
-        [![Környezetek oldal](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
+        [![Környezetek oldal.](./media/power-pltfrm-admin-center.png)](./media/power-pltfrm-admin-center.png)
 
     2. Válassza ki a fent létrehozott Dataverse-környezetet, majd válassza a **Beállítások** lehetőséget.
     3. Válassza az **Erőforrások \> Minden örökölt beállítás** lehetőséget.
@@ -792,6 +792,8 @@ A bővítményt néhány percen belül telepíti a program.
     | CDS szervezet URL-címe                                     | A Dataverse-szervezet URL-címe felülről másolva. |
     | CDS szerv. azon.                                               | A Dataverse-szervezet azonosítója felülről másolva. |
 5. Engedélyezze az **Ez az alapértelmezett CDS-környezet a bérlő számára?** elemet.
+
+A bővítmény telepítése eltarthat néhány percig.
     
 ## <a name="configure-the-entity-store"></a>Az entitásáruház konfigurálása
 

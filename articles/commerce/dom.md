@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f50bc2828df19062a6bdced6faaa7b4d66c38bed
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 52d8b1055517bc544eea6a8e405a8b6d5c0eee0a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792775"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356854"
 ---
 # <a name="distributed-order-management-dom"></a>Felosztott rendeléskezelés (DOM)
 
@@ -34,7 +34,7 @@ A DOM optimalizálja a rendelések teljesítését még a rendszerek és folyama
 
 A következő ábra bemutatja egy értékesítési rendelés teljes életútját a DOM rendszerben.
 
-![Értékesítési rendelés életciklusa a DOM környezetében](./media/flow.png "Értékesítési rendelés életciklusa a DOM környezetében")
+![Értékesítési rendelés életciklusa a DOM környezetében.](./media/flow.png "Értékesítési rendelés életciklusa a DOM környezetében")
 
 ## <a name="set-up-dom"></a>DOM beállítása
 
@@ -125,7 +125,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
         > [!NOTE]
         > A Retail 10.0.5-ös verziójában a **Rendelés teljesítése csak egy helyről** paraméter **Maximum teljesítési helyek** paraméterre módosult. Annak beállítása helyett, hogy a rendelést csak egy helyről, vagy a lehetséges összes helyről lehessen teljesíteni, mostantól a felhasználók megadhatják, hogy a teljesítést a helyek megadott csoportjából (legfeljebb 5 hely) lehet teljesíteni, vagy a lehetséges összes helyről. Ez nagyobb rugalmasságot biztosít a rendelésteljesítés helyeinek számát illetően. Ez a szabály csak a Termelési feloldás segítségével működik. 
 
-   - **Offline teljesítési hely szabály** – Ez a szabály lehetővé teszi a szervezeteknek, hogy egy helyet vagy helycsoportot offline vagy nem elérhető jelzéssel lássanak el, így a rendelések nem rendelhetők hozzá teljesítésre az adott helyhez.
+   - **Offline teljesítési hely szabály** – Ez a szabály lehetővé teszi a szervezeteknek, hogy egy helyet vagy helycsoportot offline vagy a DOM számára nem elérhető jelzéssel lássanak el, így a rendelések nem rendelhetők hozzá teljesítésre az adott helyhez.
     - **Maximum elutasítások szabály** – Ezzel a szabállyal a szervezetek meghatározhatnak egy elutasítási küszöbértéket. Amikor a rendszer eléri a küszöbértéket, a DOM processzor kivételként megjelöli a rendelést vagy rendelési sort, és kizárja a további feldolgozásból.
 
         Miután a rendelési sorokat egy helyhez rendelte a rendszer, a hely elutasíthatja a hozzárendelt rendelési sort, mivel bizonyos okok miatt előfordulhat, hogy nem képes teljesíteni a rendelést. Az elutasított sorokat a rendszer kivételként jelöli meg, és visszakerülnek az állományba, hogy a következő futáskor ismét feldolgozásra kerüljenek. A következő futás során a DOM megpróbálja az elutasított sort egy másik helyhez rendelni. Az új helynek szintén lehetősége van a hozzárendelt rendelési sor elutasítására. A hozzárendelési és elutasítási ciklus akár többször is lejátszódhat. Amikor az elutasítások száma eléri a meghatározott küszöbértéket, a DOM állandó kivételként jelöli meg az adott rendelési sort, és többé nem tárolja ki a sort hozzárendelésre. A DOM csak akkor veszi figyelembe ismét hozzárendelésre a sort, ha egy felhasználó manuálisan módosítja a rendelési sor állapotát.
@@ -200,7 +200,7 @@ A feldolgozás időpontjában a DOM az alábbiak szerint veszi majd figyelembe a
 
 Miután a DOM alkalmazta a szabályokat, a készletkorlátokat és az optimalizációt, kiválasztja a vevő szállítási címéhez legközelebbi helyet.
 
-![Értékesítési rendelés feltételei](./media/ordercriteria.png "Értékesítési rendelés feltételei")
+![Értékesítési rendelés feltételei.](./media/ordercriteria.png "Értékesítési rendelés feltételei")
 
 ## <a name="results-of-dom-runs"></a>DOM-futások eredményei
 

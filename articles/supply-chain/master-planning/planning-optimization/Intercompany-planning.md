@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e6fff06cb6194f17444025f7ea1f9dbb46e4f3ea
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: a3b48667bb266fec082c48e777fd71d8e5ef6dae
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907643"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357023"
 ---
 # <a name="intercompany-planning"></a>Vállalatközi tervezés
 
@@ -76,7 +76,7 @@ Ehhez a példához egy tervezett termelési rendelés jön létre a USMF vállal
 
 A következő ábra azt mutatja be, hogyan jelenhet meg ez a példa a tervezett termelési rendelés **Többszintű igénykövetés** oldalán.
 
-![Vállalatközi példa, amely két vállalatot érint](media/IntercompanyPlanning1.png)
+![Vállalatközi példa, amely két vállalatot érint.](media/IntercompanyPlanning1.png)
 
 ### <a name="intercompany-example-that-involves-three-companies"></a>Vállalatközi példa, amely három vállalatot érint
 
@@ -84,7 +84,7 @@ Ehhez a példához egy tervezett beszerzési rendelés jön létre a USMF válla
 
 A következő ábra azt mutatja be, hogyan jelenhet meg ez a példa a tervezett termelési rendelés **Többszintű igénykövetés** oldalán.
 
-![Vállalatközi példa, amely három vállalatot érint](media/IntercompanyPlanning2.png)
+![Vállalatközi példa, amely három vállalatot érint.](media/IntercompanyPlanning2.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

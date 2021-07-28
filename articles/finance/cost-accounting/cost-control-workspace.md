@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4c5528545e0215b3a3f92b7bd5b492f82274d35a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6fd2a8548d4929a7a3b3b6d20adbc230c5edf6ed
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5833042"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355227"
 ---
 # <a name="cost-control-workspace"></a>Költségellenőrzési munkaterület 
 
@@ -116,7 +116,7 @@ A **Költségkontroll** munkaterület webes jelentésként szolgál. Emiatt a k�
 
 Például a vezetők számára rendelkezésre álló jelentések listájának megadott beállítás szabályozza a **közzétett** beállítás a **Költségellenőrzés munkaterület konfigurációk** oldalon.
 
-![Egy jelentést, amely a felhasználók megtekinthetik a költség-ellenőrzés munkaterületen](./media/report-cost-control.png)
+![Egy jelentést, amely a felhasználók megtekinthetik a Költségellenőrzés munkaterületen.](./media/report-cost-control.png)
 
 Vezető kiválaszthatja a megjelenítendő pénzügyi naptári időszakot. Alapértelmezés szerint az alapértelmezett aktuális időszak a munkamenet dátuma határozza meg.
 
@@ -140,7 +140,7 @@ Két diagram mutatja a tényleges és költségvetési adatok összevetését é
 
 A felhasználók a **Költségbejegyzések** elemre kattintva leáshatnak szükség szerint a bejegyzés részleteihez.
 
-![Költségbejegyzések](./media/cost-entries.png)
+![Költségbejegyzések.](./media/cost-entries.png)
 
 Például a bérleti díj olyan kiadás, amelyet a költséghelyek között osztanak fel. A felhasználó, aki meg akarja érteni a bérleti költségét, amelyet a költségközpontjának meg kell tennie, lefújhat, hogy megnézze, hogy a bérleti díj kiszámításra került.
 
@@ -148,7 +148,7 @@ Ha a felhasználók a **Felosztás alapja** lehetőségre kattintanak a **Költs
 
 A következő példában az allokációs bázis a **Receptúrafelosztási alap** típusnál van, akkor megjelenik a receptúra. A receptúrában szereplő tényezők szerepelnek. Ezenkívül egy rács mutatja a költségobjektumonként elvégzett számítást.
 
-![Számítás költségobjektumként](./media/cost-entries-allocation-base.png)
+![Számítás költségobjektumként.](./media/cost-entries-allocation-base.png)
 
 További erőforrások 
 

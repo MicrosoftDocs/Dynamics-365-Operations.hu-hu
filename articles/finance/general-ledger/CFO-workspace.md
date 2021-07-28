@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b42fc4f0e299dc785ef465efc54286effccfb92b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: e44e0ff5c36190d0f66afb6a59389fee826d8214
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823836"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360712"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Pénzügyi dimenziók hozzáadása a pénzügyi igazgatói munkaterülethez
 
@@ -45,14 +45,14 @@ Ez a témakör bemutatja a pénzügyi dimenziók hozzáadását a pénzügyi iga
 11. Módosítsa a **Keresztszűrő iránya** értéket **Egyetlen** lehetőségre.
 12. Jelölje be a **Kapcsolat aktívvá tétele** és a **Hivatkozási integritás feltételezése** pontokat, válassza az **OK** lehetőséget, majd a **Lezárás** lehetőséget.
 
-    [![Kapcsolat létrehozása](./media/Create-relationship.png)](./media/Create-relationship.png)
+    [![Kapcsolat létrehozása.](./media/Create-relationship.png)](./media/Create-relationship.png)
 
 13. A **Mezők** listában megjelenik a tábla és a rendelkezésre álló pénzügyi dimenziók. Húzza át a kívánt pénzügyi dimenziókat a jelentésszintű szűrőkhöz.
 14. Mentse el a módosításokat.
 15. Az alkalmazásobjektum-fa (AOT), kattintson a jobb gombbal a projektre, és válassza a **Szinkronizálás** lehetőséget.
 16. Hozza létre a projektet, és nyissa meg az alkalmazást az eredmények megtekintéséhez.
 
-    [![Kész munkaterület](./media/workspace.png)](./media/workspace.png)
+    [![Kész munkaterület.](./media/workspace.png)](./media/workspace.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

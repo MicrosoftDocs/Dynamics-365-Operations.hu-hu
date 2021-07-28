@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6fc641233a1bd217de5b9eb6e06560b989f91c7b
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 176ce59547456a14b494caa4dc3c2d8251920fe5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056348"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360544"
 ---
 # <a name="set-up-reason-codes"></a>Okkódok beállítása
 
@@ -56,15 +56,15 @@ A **Juttatáskezelés** munkaterület **Hivatkozások** lapján megjelenik egy d
 
 1. Az **Okkódok** lehetőségben megtekintheti az áttelepítési állapottal kapcsolatos részleteket.
 
-   [![Okkódok](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
+   [![Okkódok.](./media/hr-benefits-setup-reason-codes-link.png)](./media/hr-benefits-setup-reason-codes-link.png)
 
 2. Válasszon ki egy olyan okkódot, amelynél az áttelepítés sikertelen volt.
 
-   [![Okkód áttelepítési állapota](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
+   [![Okkód áttelepítési állapota.](./media/hr-benefits-setup-reason-codes-status.png)](./media/hr-benefits-setup-reason-codes-status.png)
 
 3. Válassza az **Okkód áttelepítése** lehetőséget.
 
-   [![Okkód áttelepítése](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
+   [![Okkód áttelepítése.](./media/hr-benefits-setup-reason-codes-migrate.png)](./media/hr-benefits-setup-reason-codes-migrate.png)
 
 4. A **Juttatási okkód áttelepítése** ablakban két lehetőség áll rendelkezésre a Személyzetkezelés okkódjának leképezésére:
 
@@ -73,10 +73,10 @@ A **Juttatáskezelés** munkaterület **Hivatkozások** lapján megjelenik egy d
      > A Személyzetkezelés eszközben csak akkor használhat meglévő okkódot, ha még nincs rá áttelepítve másik Juttatáskezelési okkód.
    - Ha új okkódot kell létrehozni a Személyzetkezelés eszközben, írjon be egy újat az **Új okkód** pontba, majd adjon meg egy leírást az **Új leírás** lehetőségben.
 
-   [![Leképezés a Személyzetkezelés egy okkódjára](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
+   [![Leképezés a Személyzetkezelés egy okkódjára.](./media/hr-benefits-setup-reason-codes-mapping.png)](./media/hr-benefits-setup-reason-codes-mapping.png)
 
 Miután megtörtént az okkódok áttelepítése a Személyzetkezelés eszközbe, a Juttatáskezelés funkcióban való használatuk beállítása automatikusan **Igen** lesz.
 
-[![Okkód használata a Juttatáskezelés eszközben](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
+[![Okkód használata a Juttatáskezelés eszközben.](./media/hr-benefits-setup-reason-codes-use.png)](./media/hr-benefits-setup-reason-codes-use.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

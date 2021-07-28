@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4cf5a5fc2d40e66d189d281b343d1525edf7e8c5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 5e9d1f33102ed08d9e5c486d4d1490d4b278a28e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744123"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360298"
 ---
 # <a name="accessibility-features"></a>Hozzáférhetőségi funkciók
 
@@ -52,13 +52,13 @@ Az oldalon megadott minden művelet elérhető a billentyűzetről, a TAB-sorren
 
 Szeretné futtatni az **E-mail értesítési napló** műveletet, amely az **E-mail értesítés** csoportban jelenik meg az **Értékesítési rendelés** lapon a Művelet ablakban.
 
-![E-mail-értesítési napló művelete a Művelet ablakban](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "„E-mail-értesítési napló” művelete a Művelet panelen")
+![E-mail-értesítési napló művelete a Művelet panelen.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "„E-mail-értesítési napló” művelete a Művelet panelen")
 
 Az egyik lehetőség a billentyűzet használata. Nyomja le a Ctrl+F6 billentyűkombinációt a fókusz Művelet ablakra állításához, és nyomja le a TAB gombot többször a váltáshoz a lapok és a műveletek között, amíg az **E-mail értesítési napló** műveletre nem kerül a fókusz.
 
 Azonban a műveletet közvetlenebből is futtathatja. A lap tetszőleges pontján nyomja le a Ctrl+aposztróf (') kombinációt a műveletek keresőmezőjének megjelenítéséhez.
 
-![Műveletek keresőmezője](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Műveletek keresőmezője")
+![Műveletek keresőmezője.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Műveletek keresőmezője")
 
 A keresőmezőbe írja be a szöveget, amely leírja a műveletet. A művelet ekkor elérhetővé válik, és közvetlenül futtatható. Például az **e-mail**, az **értes** (részleges szó) vagy **napló** beírásával az E-mail értesítési naplóhoz „ugorhat”.
 

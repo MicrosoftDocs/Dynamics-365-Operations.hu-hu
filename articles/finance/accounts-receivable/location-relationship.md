@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2018-05-02
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 71e4c8ad122bc52103bda04144222785e9a059f8
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 406f87b5aaa5917fb075daca453e24f452611826
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5817245"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359709"
 ---
 # <a name="add-location-and-party-relationship-types"></a>Helyhez és felekhez tartozó kapcsolattípusok hozzáadása 
 
@@ -32,25 +32,25 @@ Két módszer áll rendelkezésre új helyszerepkör hozzáadására a cím és 
 
 -  Hozzáadás **A cím és a kapcsolattartási adatok célja** oldalon. Az új szerepkör mentésére a **LogisticsLocationRole** táblában kerül sor (típus= 0), ami azt jelzi, hogy a szerepkör nem a rendszer által meghatározott szerepkör a **LogisticsLocationRoleType** felsorolásban és a bővítményeiben. A felhasználó akkor tudja használni ezt a szerepkört, amikor címet vagy kapcsolattartási adatokat létrehozásakor hoz létre.
 
-    ![Cím- és tartalomadatok típusa](media/Address-Contact.PNG)
+    ![Cím- és tartalomadatok típusa.](media/Address-Contact.PNG)
 
 -  Adja hozzá a **LogisticsLocationRoleType** felsorolás kiterjesztéséhez, és hagyja, hogy az adatbázis feltöltődjön a szinkronizálási folyamat során.
 
     1.  Hozzon létre kiterjesztést a **LogisticsLocationRoleType** felsoroláshoz, és adja meg az új szerepkör a kiterjesztésben. 
   
-        ![A LogisticsLocationRoleType felsorolás bővítménye](media/Logistics.PNG)
+        ![A LogisticsLocationRoleType felsorolás bővítménye.](media/Logistics.PNG)
 
     2. Hozzon létre egy új erőforrásfájlt az új szerepkörhöz, majd rendeljen hozzá egy értéket a tulajdonságaihoz.
      
-     ![Új erőforrás-fájl](media/Resource.PNG)
+     ![Új erőforrás-fájl.](media/Resource.PNG)
         
     3.  Hozzon létre egy adatfeltöltési osztályt, és adjon meg egy kezelési módszert az új szerepkör feltöltéséhez. 
 
-        ![Adatfeltöltés](media/Dirdata.PNG)
+        ![Adatfeltöltés.](media/Dirdata.PNG)
 
     4.  Az új helyszerepkör feltöltésének teszteléséhez létrehozhat egy futtatható osztályt, és hívja elő ezt: DirDataPopulation::insertLogisticsLocationRoles() a Fő() menüben. Miután ez a folyamat befejeződött, látnia kell a feltöltött új szerepkört a **LogisticsLocationRole** táblában, melynek típusa \>0. Az új szerepkör megjelenik a **Cím- és kapcsolattartási adatok célja** oldalon.
 
-        ![Új hely beszúrása](media/InsertNewLocation.PNG)
+        ![Új hely beszúrása.](media/InsertNewLocation.PNG)
 
 ## <a name="add-party-relationship-types"></a>Fél-kapcsolattípus hozzáadása 
 
@@ -58,7 +58,7 @@ Két módszer áll rendelkezésre új helyszerepkör hozzáadására a cím és 
 
 -   Hozzáadás a **kapcsolattípusok** oldalon keresztül. Az új kapcsolat mentésére itt kerül sor: **DirRelationshipTypeTable**, systemtype = 0.
 
-    ![Kapcsolattípusok](media/Relationship.PNG)
+    ![Kapcsolattípusok.](media/Relationship.PNG)
 
 -  Adja hozzá a **DirSystemRelationshipType** felsorolás kiterjesztéséhez, és hagyja, hogy az adatbázis feltöltődjön a szinkronizálási folyamat során.
 
@@ -66,11 +66,11 @@ Két módszer áll rendelkezésre új helyszerepkör hozzáadására a cím és 
 
     2. Hozzon létre egy inicializálót ehhez az új típushoz. Számos példa található a fő kódra, az egyikük **DirRelationshipTypeChildInitialize**. Ez az egy inicializáló-osztály a "Gyermek" kapcsolattípusú félhez. A inicializálót ennek a kódnak a másolásával és beillesztésével, majd frissítse a kijelölt területeket.
     
-    ![DirRelationshipChild inicializálója](media/DirRelationship.PNG)
+    ![DirRelationshipChild inicializálója.](media/DirRelationship.PNG)
 
     3.  Az új kapcsolattípus feltöltésének teszteléséhez létrehozhat egy futtaható osztályt, és hívja elő ezt: DirDataPopulation::insertDirRelationshipTypes() a Fő() menüben. Az új kapcsolattípus megjelenik a **DirRelationshipTypeTable** táblában, és az új kapcsolattípus elérhető lesz a **Kapcsolattípusok** lapon.
 
-        ![Futtatható osztály](media/Runnable.PNG)
+        ![Futtatható osztály.](media/Runnable.PNG)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

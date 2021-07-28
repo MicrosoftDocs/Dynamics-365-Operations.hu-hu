@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 582a59f72e0e59f58191aeb00a7605b0ea08b2d3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 48c5b876108d877a03785f1ed1d48261f22b124b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753792"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357618"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Adatok importálásának konfigurálása a SharePoint-rendszerből
 
@@ -47,13 +47,13 @@ Játssza le az **Elektronikus jelentéskészítés – adatok importálása Micr
 - Elektronikus jelentéskészítés modellkonfiguráció, **1099-es kifizetések modell**
 - Elektronikus jelentéskészítés formátumkonfiguráció, **Formátum a szállítói tranzakciók importálához Excelből**
 
-![Elektronikus jelentéskészítés-konfigurációk adatok importálásához a SharePoint-rendszerből](./media/GERImportFromSharePoint-01-Configurations.PNG)
+![Elektronikus jelentéskészítés-konfigurációk adatok importálásához a SharePoint-rendszerből.](./media/GERImportFromSharePoint-01-Configurations.PNG)
 
 #### <a name="sample-of-the-incoming-file-for-data-import"></a>Minta bejövő fájlról adatimportáláshoz
 
 - Excel-fájl **1099import-data.xlsx**, szállítói tranzakciókkal, amelyeket importálni kell az alkalmazásba.
 
-![Minta -fájl a SharePoint-szolgáltatásból való importáláshoz](./media/GERImportFromSharePoint-02-Excel.PNG)
+![Minta Excel-fájl a SharePoint szolgáltatásból való importáláshoz.](./media/GERImportFromSharePoint-02-Excel.PNG)
     
 > [!NOTE]
 > A szállítói tranzakciók importálásához szükséges formátum alapértelmezett modell-leképezésként van megadva. Következésképpen, ha futtatja az **1099-es kifizetésekhez modell** modell-leképezését, és a modell-leképezés **Célhoz** típusú, akkor a modell-leképezés ezt a formátumot futtatja a külső fájlokból történő adatimportáláshoz. Ezután az adatokat felhasználja az alkalmazástáblák frissítéséhez.
@@ -68,7 +68,7 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
      - Fájlok importálási forrása (fő) (Példa az alábbi képernyőképen látható)
      - Fájlok importálásának forrása (másodlagos)
 
-    ![Fájlok importálásának forrása (fő)](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
+    ![Fájlok importálásának forrása (fő).](./media/GERImportFromSharePoint-04-SharePointFolder1.png)
 
 4. (Opcionális) Hozza létre a következő, a az importált elektronikus jelentési fájlok tárolására szolgáló mappákat: 
 
@@ -87,7 +87,7 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
 |SP-figyelmeztetés             |Fájl                |SharePoint     |Fájlfigyelmeztetések mappája|
 |SP-hiba             |Fájl                |SharePoint     |Fájlhibák mappája|
 
-![SharePoint-beállítás – új dokumentumtípus](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
+![SharePoint-beállítás – új dokumentumtípus.](./media/GERImportFromSharePoint-06-SharePointDocumentTypesSetup.png)
 
 ## <a name="configure-er-sources-for-the-er-format"></a>Elektronikus jelentéskészítési források beállítása az elektronikus jelentéskészítési formátumhoz
 1. Kattintson a **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Elektronikus jelentéskészítés forrása menüpontra**.
@@ -96,7 +96,7 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
 4. Módosítsa a **Fájlok rendezése importálás előtt** értéket **Nincs rendezés** értékre, ha több fájlt kell importálni, és az importálás sorrendje nem fontos
 5. Válassza ki a korábban létrehozott összes SharePoint-mappát.
 
-    [![Elektronikus jelentéskészítési fájlok – forrás beállítása](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
+    [![Elektronikus jelentéskészítési fájlok – forrás beállítása.](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)](./media/GERImportFromSharePoint-07-FormatSourceSetup.PNG)
 
 > [!NOTE]
 > - Az elektronikus jelentéskészítési *forrás* egyénileg meghatározott minden egyes alkalmazási vállalat esetén. A *konfigurációk* viszont kiterjednek az összes vállalatra.
@@ -114,7 +114,7 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
 ## <a name="import-data-from-excel-files-that-are-in-a-sharepoint-folder"></a>Adatok importálása SharePoint-mappában lévő Excel-fájlokból
 1. Töltse fel a SharePoint rendszerben a **1099import-data.xlsx** Microsoft Excel-fájlt, amely tartalmazza a szállítói tranzakciókat, a korábban létrehozott **Fájlok importálásának forrása (fő)** SharePoint-mappába.
 
-    [![SharePointtartalom – Microsoft Excel-fájl importáláshoz](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
+    [![SharePoint-tartalom – Microsoft Excel-fájl importáláshoz.](./media/GERImportFromSharePoint-08-UploadFile.png)](./media/GERImportFromSharePoint-08-UploadFile.png)
 
 2. **A források fájlállapotai** oldalon válassza a **Frissítés** lehetőséget az oldal frissítéséhez. A SharePoint rendszerbe feltöltött Excel-fájl ezen a lapon **Kész** állapotúként jelent meg. Jelenleg a következő állapotok támogatottak:
 
@@ -124,19 +124,19 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
     - **Sikertelen** – Automatikusan hozzárendelve egy elektronikus jelentéskészítési jelentés által, ha a fájl importálása hibákkal vagy kivételekkel zajlott le.
     - **Várakoztatott** – Manuálisan hozzárendelve a felhasználó által ezen a lapon. Ez az állapot azt jelenti, hogy a fájl most nem lesz importálva. Ezzel az állapottal elhalaszthatja néhány fájl importálását.
 
-    [![Frissített Elektronikus jelentéskészítéshez tartozó fájlállapotok oldala a kiválasztott forrásokhoz](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
+    [![Frissített Elektronikus jelentéskészítéshez tartozó fájlállapotok oldala a kiválasztott forrásokhoz.](./media/GERImportFromSharePoint-09-FileStatesForm.png)](./media/GERImportFromSharePoint-09-FileStatesForm.png)
 
 ## <a name="import-data-from-sharepoint-files"></a>Adatok importálása SharePoint-fájlokból
 1. Nyissa meg az elektronikus jelentéskészítés konfigurációs fát, kattintson az **1099-es kifizetési modell** elemre, majd bontsa ki az elektronikus jelentéskészítés modellösszetevők listáját.
 2. A kiválasztott elektronikus jelentéskészítési modellkonfigurációhoz tartozó modell-leképezések listájának megnyitásához válassza ki a modell-leképezés nevét.
 
-    [![Konfigurációs oldal](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
+    [![Konfigurációs oldal.](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)](./media/GERImportFromSharePoint-10-SelectModelMapping.PNG)
 
 3. Válassza a **Futtatás** lehetőséget a kiválasztott modell-leképezés futtatásához. Mivel beállított fájlforrásokat az elektronikus jelentéskészítési formátumhoz, szükség esetén módosíthatja a **Fájl forrása** lehetőséget, ha szükséges. Ha megtartja a lehetőség beállítását, az .xslx fájlok importálása a beállított forrásokból történik (ebben a példában a SharePoint-mappákból).
 
     Ebben a példában csak egy fájlt importál. Azonban több fájl esetén a fájlok abban a sorrendben kerülnek kiválasztásra az importáláshoz, amilyen sorrendben hozzáadta őket a SharePoint-mappához. Az elektronikus jelentéskészítési formátum minden egyes futtatásával egyetlen kiválasztott fájlt importál.
 
-    [![Importálás SharePoint-ból, és ER modell-leképezés futtatása](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
+    [![Importálás SharePoint rendszerből és az ER modell-leképezés futtatása.](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)](./media/GERImportFromSharePoint-11-RunModelMapping.PNG)
 
 4. A modell-leképezés [felügyelet nélkül](#limitations) futtatható kötegelt módban. Ebben az esetben minden alkalommal, amikor egy köteg futtatja az adott elektronikus jelentéskészítési formátumot, a rendszer egyetlen fájlt importál a beállított fájlforrásokból.
 
@@ -144,11 +144,11 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
 
 5. Adja meg a bizonylatazonosítót, például **V-00001**, majd válassza az **OK** lehetőséget.
 
-    [![Elektronikus jelentéskészítés modell-leképezésének futtatása](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)
+    [![Elektronikus jelentéskészítés modell-leképezésének futtatása.](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-12-ModelMappingRunFinished.PNG)
 
 6. **A források fájlállapotai** oldalon válassza a **Frissítés** lehetőséget az oldal frissítéséhez.
 
-    [![Elektronikus jelentéskészítéshez tartozó fájlállapotok oldala a forrásokhoz](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
+    [![Elektronikus jelentéskészítéshez tartozó fájlállapotok oldala a forrásokhoz.](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)](./media/GERImportFromSharePoint-13-FileStatesForm.PNG)
 
 7. A **Fájlok** szakaszban ellenőrizze a fájlok listáját. Az **Importálási formátumhoz tartozó forrásnapló** szakaszban jelennek meg az Excel-fájl importálásának előzményei. Mivel a fájl sikeresen importálva lett, **Törölt** jelölést kap a SharePoint-mappában.
 8. Tekintse át a **Fájlok importálásának forrása (fő)** SharePoint-mappát. Ebből a mappából törlődtek a sikeresen importált Excel-fájlok.
@@ -157,12 +157,12 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
 
     Az oldalon megjelennek a szállítói tranzakciók, amelyek lettek importálva az Excel-fájlokból a SharePoint rendszerben a **V-00001** bizonylattal.
 
-    [![1099-es szállítói tranzakciók oldala](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)
+    [![1099-es szállítói tranzakciók oldala.](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)](./media/GERImportFromSharePoint-14-ImportedTransactions.PNG)
 
 ## <a name="prepare-an-excel-file-for-import"></a>Excel-fájl előkészítése importáláshoz
 1. Nyissa meg a korábban használt Excel-fájlt. Az 1. sor 3 oszlopban adjon meg egy olyan szállítókód, amely nem szerepel az alkalmazásban. Adjon meg további hamis szállítói adatokat a sorban.
 
-    [![Minta Microsoft Excel-fájl a SharePoint rendszerből való importáláshoz](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
+    [![Minta Microsoft Excel-fájl a SharePoint rendszerből való importáláshoz.](./media/GERImportFromSharePoint-15-Excel.PNG)](./media/GERImportFromSharePoint-15-Excel.PNG)
 
 2. Töltse fel a szállítói tranzakciókat tartalmazó frissített Excel-fájlt a **Fájlok importálásának forrása (fő)** SharePoint-mappába.
 3. Nyissa meg az elektronikus jelentéskészítés konfigurációs fát, kattintson az **1099-es kifizetési modell** elemre, majd bontsa ki az elektronikus jelentéskészítés modellösszetevők listáját.
@@ -170,7 +170,7 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
 5. Válassza a **Tervező** lehetőséget.
 6. Az **Ellenőrzések** lapon módosítania kell az ellenőrzési szabályhoz tartozó ellenőrzést követő műveletet, amely szabály alapján a rendszer meghatározza, hogy az importált szállítói számla szerepel-e az alkalmazásban. Frissítse az **Ellenőrzést követő művelet** mező értékét a **Végrehajtás leállítása** művelethez, mentse a módosításokat, és zárja be a lapot.
 
-    [![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)
+    [![Elektronikus jelentéskészítés – modell-leképezés tervezési oldala.](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)](./media/GERImportFromSharePoint-16-UpdateModelMapping.PNG)
 
 7. Mentse a módosításokat, majd zárja be az elektronikus jelentéskészítési modell-leképezés tervezőjét.
 8. Válassza a **Futtatás** lehetőséget a módosított elektronikus jelentéskészítési modell-leképezés futtatásához.
@@ -178,11 +178,11 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
 
     Az információs napló tartalmaz egy értesítést, amely tájékoztatja arról, hogy a SharePoint-mappában található fájl hibás szállítói számlát tartalmaz, és nem lehet importálni.
 
-    [![Elektronikus jelentéskészítés modell-leképezés befejezve](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
+    [![Elektronikus jelentéskészítési modell-leképezés befejezve.](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)](./media/GERImportFromSharePoint-17-ModelMappingRunFinished.PNG)
 
 10. A **A források fájlállapotai** oldalon válassza a **Frissítés** lehetőséget, majd a **Fájlok** szakaszban ellenőrizze a fájlok listáját.
 
-    [![Elektronikus jelentéskészítéshez tartozó fájlállapotok oldala a kiválasztott forrásokhoz](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
+    [![Elektronikus jelentéskészítéshez tartozó fájlállapotok oldala a kiválasztott forrásokhoz.](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)](./media/GERImportFromSharePoint-18-FileStatesForm.PNG)
 
    Az **Importálási formátumhoz tartozó forrásnapló** szakasz jelzi, ha az importálási folyamat sikertelen volt, és a fájl továbbra is a Fájlhibák SharePoint-mappában van (a **Törölve van** jelölőnégyzet nincs bejelölve). Ha javítja ezt a fájlt a SharePoint rendszerben a megfelelő szállítói kód hozzáadásával, és áthelyezi azt a Fájlok importálásának forrása (fő) SharePoint-mappába, a fájlt importálhatja.
 

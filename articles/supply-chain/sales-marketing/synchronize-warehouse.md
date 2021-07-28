@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f302f780fa8ba3d387a71770024a1bf7ad42c4ef
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: e69c35745959c6f3a90a7c597d37316e9da5358e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5910257"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359557"
 ---
 # <a name="synchronize-warehouses-from-supply-chain-management-to-field-service"></a>Raktárak szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
 
@@ -31,7 +31,7 @@ ms.locfileid: "5910257"
 
 Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management raktárainak a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 
-[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
+[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/FSWarehouseOW.png)](./media/FSWarehouseOW.png)
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 A következő sablonokat és alapul szolgáló feladatokat használják a raktárszinkronizálás futtatásához a Supply Chain Management és a Field Service között:
@@ -77,7 +77,7 @@ Az alábbi ábrán látható a sablonleképezés az Adatintegrálásban.
 
 ### <a name="warehouses-supply-chain-management-to-field-service-warehouse"></a>Raktárak (Supply Chain Management és Field Service között): Raktár
 
-[![Sablonleképezés az adatintegrátorban](./media/Warehouse1.png)](./media/Warehouse1.png)
+[![Sablonleképezés az adatintegrátorban.](./media/Warehouse1.png)](./media/Warehouse1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

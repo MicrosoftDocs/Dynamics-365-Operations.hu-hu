@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c31564fdc40cb0cba82b9ab8fbfdfee7adf4f4ee
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 579f2946bceceaacc3e4f1d664a5211ce40f705e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053009"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353686"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Juttatási program meghatározása és kezelése
 
@@ -32,7 +32,7 @@ A Human Resources számos olyan eszközt biztosít, amelyek segítségével beá
 
 Mielőtt a dolgozókhoz juttatásokat rendelhetne, az adott juttatási elemeket létre kell hoznia. Ezek az elemek hasonló juttatási terveket kombinálnak és olyan alapértelmezett beállításokat tartalmaznak, mint a levonási díjak és a könyvelési részletek. Ezen beállítások közül sokat később is módosíthat, ha a dolgozók juttatásban részesülnek. Az egyes juttatási tervekhez egy szervezet több bejegyzési lehetőséget is biztosíthat, vagy a dolgozó is lemondhat egy tervben lévő juttatásról. 
 
-[![Juttatási folyamatábra](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
+[![Juttatási folyamatábra.](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## <a name="benefit-elements"></a>Juttatás elemei
 
@@ -44,7 +44,7 @@ Mielőtt elkezdené a juttatások létrehozását és a dolgozók hozzáadását
 
 Az egyes juttatási típusok, például látszerészeti vagy fogorvosi juttatás esetén a szervezet egy vagy több tervet is ajánlhat dolgozóinak. Az egyes tervekhez a szervezet különböző beállításokat is biztosíthat. A dolgozók például vásárolhatnak kiegészítő életbiztosítási csomagot éves bérük egyszeres, kétszeres vagy háromszoros mértékének megfelelően. A terv és annak minden beállítási kombinációja olyan juttatás lesz, amelyet a dolgozó kiválaszthat. 
 
-[![juttatási kép](./media/benefit-pic.png)](./media/benefit-pic.png)
+[![juttatási kép.](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Jogosultság
 A munkáltató által ajánlott különböző típusú juttatásokra való megfelelőség számos tényezőtől függ. Ha egy juttatást hoz létre a Dynamics 365 Human Resources rendszerben, meghatározhatja a megfelelőségi feltételeket az adott juttatáshoz. 

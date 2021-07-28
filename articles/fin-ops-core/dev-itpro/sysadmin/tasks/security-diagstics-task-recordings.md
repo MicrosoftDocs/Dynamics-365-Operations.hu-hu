@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Version 10.0.9
-ms.openlocfilehash: cb4d544d8d74ad10432901381253f84ec9331ae7
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: cb14a22a231d3fcc139228b59af00d405626cd2c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5745765"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358549"
 ---
 # <a name="security-diagnostics-for-task-recordings"></a>Biztonsági diagnosztika feladatrögzítésekhez
 
@@ -39,7 +39,7 @@ Ez a témakör azt mutatja be, hogyan lehet elemezni és kezelni a biztonsági e
 
 4. Az **Felhasználóazonosító** mezőben válasszon ki egy felhasználót. Ha a felhasználó néhány menüelemhez nem rendelkezik jogosultsággal, akkor a **Hiányzó engedélyek** mező az **Igen** értékre frissül.
   
-  ![Biztonsági menüelem részletei lap](../media/Security-Menu-Item-Details.png)
+  ![Biztonsági menüelem részletei lap.](../media/Security-Menu-Item-Details.png)
 
 5. A **Hivatkozás hozzáadása** lehetőséggel megjelenítheti a biztonsági objektumok listáját, többek között a szerepeket, kötelezettségeket és jogosultságokat, amelyek megadják a hiányzó engedélyt.
 6. Válasszon ki egy biztonsági objektumot a listából:

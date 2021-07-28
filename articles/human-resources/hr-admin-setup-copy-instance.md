@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8961b7156f52e48dbfcf7efb14e50316e81fcfff
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053683"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360149"
 ---
 # <a name="copy-an-instance"></a>Példány másolása
 
@@ -71,11 +71,11 @@ A feladat végrehajtásához először másolja a példányt, majd jelentkezzen 
 
 4. A **Példány másolása** munkaablakban válassza ki azt a példányt, amelyet felül szeretne írni, majd válassza a **Másolás** parancsot. Várjon, amíg a **Másolás állapota** mező értéke **Kész** értékre módosul.
 
-   ![[Felülírandó példány kiválasztása](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Felülírandó példány kiválasztása.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Válassza ki a **Power Platform** lehetőséget, majd jelentkezzen be a Microsoft Power Platform Admin Centerbe.
 
-   ![[Válassza a Power Platform lehetőséget](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Power Platform kiválasztása.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Válassza ki a másolni kívánt Power Apps-környezetet, majd válassza a **Másolás** parancsot.
 

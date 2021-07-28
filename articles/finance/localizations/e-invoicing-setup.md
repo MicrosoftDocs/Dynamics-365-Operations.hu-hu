@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 9aac18155fbc7a87554ac0521cd9f40d11eba9e2
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 35a2abaa2165288097bc07b47320e002efc290e7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5890831"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348486"
 ---
 # <a name="set-up-electronic-invoicing"></a>Az elektronikus számlázás beállítása
 
@@ -37,7 +37,7 @@ A konfigurálhatóság az Elektronikus jelentéskészítés (ER) formátumú kon
 
 A következő ábra bemutatja az elektronikus számlázás funkció fő elemeit.
 
-![Elektronikus számlázás funkció – áttekintés](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
+![Elektronikus számlázás funkció áttekintése.](media/e-Invoicing-services-feature-setup-Overview-e-Invoicing-feature.png)
 
 A számla- és műveletsor-formátumok eltérései miatt a szolgáltatások beállításai az ország vagy régió, illetve az üzleti követelményei alapján változhatnak.
 
@@ -50,7 +50,7 @@ A beállítási folyamatot az RCS-környezetben kell végrehajtani. A következ�
 3. Az **Elektronikus számlázás funkciók** lapon válassza az **Importálás** lehetőséget az ER-adatmodell-konfiguráció Globális adattárból való importálásához.
 4. A **Hozzáadás** lehetőség kiválasztásával létrehozhatja az Elektronikus számlázás funkciót. Létrehozhatja a funkciót az alapoktól, vagy származtathatja egy létező elektronikus számlázás funkcióból.
 
-    ![Elektronikus számlázás funkció hozzáadása](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
+    ![Elektronikus számlázás funkció hozzáadása.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature.png)
 
 > [!NOTE]
 > Új Elektronikus számlázás funkció létrehozásakor verziószámmal rendelkezik, és az alapértelmezett állapot a **Piszkozat** értékre van állítva .
@@ -63,21 +63,21 @@ A következő lépések végrehajtásával adjon hozzá ER-formátumokat az új 
 
 1. Az **Elektronikus számlázás funkciók** oldalon, a **Konfigurációk** lapon válassza ki a **Hozzáadás** lehetőséget az ER-fájlformátum-konfiguráció Elektronikus számlázás funkcióhoz való hozzáadásához.
 
-    ![Elektronikus számlázás funkció konfigurációinak hozzáadása](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
+    ![Elektronikus számlázás funkció konfigurációinak hozzáadása.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Amikor az alapoktól hozza létre az Elektronikus számlázás funkciót, akkor manuálisan kell hozzáadnia az összes ER-fájlformátum-konfigurációt. Ha egy meglévő funkcióból származtat egy Elektronikus számlázás funkciót, akkor a rendszer automatikusan létrehozza az ER-fájlformátum-konfigurációkat, mivel ezek az eredeti Elektronikus számlázás funkcióból öröklődnek.
 
 2. Ha meg szeretné nyitni a **Formátumtervező** lapot, akkor válassza a **Szerkesztés** lehetőséget, ahol szerkesztheti az ER-fájlformátum-konfigurációt.
 
-    ![Elektronikus számlázás funkció konfigurációinak szerkesztése](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
+    ![Elektronikus számlázás funkció konfigurációinak szerkesztése.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Configurations.png)
 
     > [!NOTE]
     > Miközben szerkeszti a formátumot, a konfigurációverzió állapota **Piszkozat** értékre van állítva.
 
 3. A fájlformátum-konfiguráció módosításához használja a **Formátumtervező** lapot. További információ: [Elektronikus dokumentum-konfigurációk létrehozása](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-    ![Formátumtervező oldal](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
+    ![Formátumtervező oldal.](media/e-Invoicing-services-feature-setup-ER-Format-designer.png)
 
 ### <a name="feature-setups"></a>Funkcióbeállítások
 
@@ -87,18 +87,18 @@ A következő lépések végrehajtásával adjon hozzá funkcióbeállításokat
 
 1. Az **Elektronikus számlázás funkciók** oldalon, a **Beállítások** lapon válassza ki a **Hozzáadás** lehetőséget a funkcióbeállítások Elektronikus számlázás funkcióhoz való hozzáadásához.
 
-    ![Elektronikus számlázás funkció beállításainak hozzáadása](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
+    ![Elektronikus számlázás funkció beállításainak hozzáadása.](media/e-Invoicing-services-feature-setup-Select-Add-e-Invoicing-feature-Setups.png)
 
     > [!NOTE]
     > Amikor az alapoktól hozza létre az Elektronikus számlázás funkciót, akkor manuálisan kell hozzáadnia az összes kívánt funkcióbeállítást. Ha egy meglévő funkcióból származtat egy Elektronikus számlázás funkciót, akkor a rendszer automatikusan létrehozza az összes funkcióbeállítást, mivel ezek az eredeti Elektronikus számlázás funkcióból öröklődnek.
 
 2. A funkcióverzió beállításainak szerkesztéséhez válassza a **Szerkesztés** parancsot.
 
-    ![Elektronikus számlázás funkció beállításainak szerkesztése](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
+    ![Elektronikus számlázás funkció beállításainak szerkesztése.](media/e-Invoicing-services-feature-setup-Select-Edit-e-Invoicing-feature-Setups.png)
 
 3. A **Funkcióverzió beállítása** lap a műveletek, az alkalmazhatósági szabályok és a változók konfigurálására használható.
 
-    ![Műveletek, alkalmazhatósági szabályok és változók](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
+    ![Műveletek, alkalmazhatósági szabályok és változók.](media/e-Invoicing-services-feature-setup-View-Actions-Applicability-Rules-Variables.png)
 
 ### <a name="actions"></a>Műveletek
 
@@ -113,7 +113,7 @@ A **Funkcióverziók beállítása** oldalon, a **Műveletek** lapj **Műveletek
 - Válassza ki az **Új** vagy **Törlés** lehetőséget az új műveletek hozzáadásához vagy a meglévő műveletek törléséhez.
 - A **Fel** vagy **Le** lehetőséggel a kijelölt műveleteket a rácsban felfelé vagy lefelé mozgathatja, így megváltoztatva, hogy milyen sorrendben fussanak. A műveletek a rácsban megjelenő – fentről lefelé haladó – sorrendben futnak.
 
-![Műveletek kezelése](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
+![Műveletek kezelése.](media/e-Invoicing-services-feature-setup-Manage-Actions.png)
 
 Az alábbi táblázat bemutatja a **Műveletek** gyorslapon rendelkezésre álló mezőket.
 
@@ -129,7 +129,7 @@ Az alábbi táblázat bemutatja a **Műveletek** gyorslapon rendelkezésre áll�
 
 A **Paraméterek** gyorslap felsorolja a **Műveletek** gyorslapon kiválasztott művelet paramétereit.
 
-![Paraméterek gyorslap](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
+![Paraméterek gyorslap.](media/e-Invoicing-services-feature-setup-View-Actions-Parameters.png)
 
 Az alábbi táblázat bemutatja a **Paraméterek** gyorslapon rendelkezésre álló mezőket.
 
@@ -259,20 +259,20 @@ Az alkalmazhatósági szabályokkal olyan logikai szabályokat is létrehozhat, 
 
 1. A **Funkcióverzió beállításai** oldal **Alkalmazhatósági szabályok** lapján válassza az **Új** lehetőséget az alkalmazhatósági szabály hozzáadásához.
 
-    ![Alkalmazhatósági szabályok kezelése](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
+    ![Alkalmazhatósági szabályok kezelése.](media/e-Invoicing-services-feature-setup-Manage-Actions-Applicability-rules.png)
 
 2. A rácsban válassza ki a csoportosítani kívánt feltételeket.
 3. **Csoportfeltétel** kiválasztása.
 
-    ![Csoportosítási feltételek](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
+    ![Csoportosítási feltételek.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-clause.png)
 
     Ha a feltételek csoportosítva vannak, akkor új oszlop lesz hozzáadva a rácshoz. Ez az oszlop a csoportosított feltételek logikai operátorát határozza meg.
 
-    ![A csoportosított feltételek logikai operátora](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
+    ![A csoportosított feltételek logikai operátora.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-Group-criterias.png)
 
 A feltételek csoportosításának szétválasztásához válassza ki a csoportosítot feltételeket, majd válassza a **Szétválasztás** elemet.
 
-![Feltételek szétválasztása](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
+![Feltételek szétválasztása.](media/e-Invoicing-services-feature-setup-Manage-Applicability-rules-UnGroup-criterias.png)
 
 > [!NOTE]
 > Feltételek szétválasztásakor mindig a legbelső csoportosítási szinttől induljon el.
@@ -294,7 +294,7 @@ Létrehozhat változókat, majd ezeket egy adott művelet paraméterének bemene
 
 - A **Funkcióverzió beállítása** oldal **Változók** lapján válassza az **Új** vagy a **Törlés** lehetőséget a változók kezeléséhez.
 
-    ![Változók kezelése](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
+    ![Változók kezelése.](media/e-Invoicing-services-feature-setup-Manage-Variables.png)
 
 Az alábbi táblázat bemutatja a **Változók** lapon rendelkezésre álló mezőket.
 
@@ -310,7 +310,7 @@ Az alábbi táblázat bemutatja a **Változók** lapon rendelkezésre álló mez
 
 - A **Funkcióverzió beállítása** oldalon található Művelet ablaktáblán válassza az **Ellenőrzés** elemet a funkcióverzió beállításának jóváhagyásához.
 
-   ![Az Ellenőrzés gomb kiválasztása](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
+   ![Az Ellenőrzés gomb kiválasztása.](media/e-Invoicing-services-feature-setup-Select-Validate-Button.png)
 
 Az ellenőrzéssel a teljes konfiguráció konzisztenciáját vizsgálják. Ha például egy művelethez egy konkrét paraméter kötelező, de az értéke üres marad, akkor az ellenőrzés észleli ezt az inkonzisztenciát, és figyelmezteti Önt.
 
@@ -323,7 +323,7 @@ Az Elektronikus számlázásbővítmény környezet Elektronikus számlázás fu
 1. Az **Elektronikus számlázás funkciók** oldalon, a **Környezetek** lapon válassza ki az **Engedélyezés** lehetőséget egy Elektronikus számlázási környezet hozzáadásához.
 2. A **Hatálybalépés dátuma** mezőbe írja be azt a dátumot, amikortól az új környezet hatályossá válik.
 
-![Az Elektronikus számlázás környezet engedélyezése](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
+![Az Elektronikus számlázás környezet engedélyezése.](media/e-Invoicing-services-feature-setup-Select-Enable-e-Invoicing-feature-Environment.png)
 
 ## <a name="organizations"></a>Szervezetek
 

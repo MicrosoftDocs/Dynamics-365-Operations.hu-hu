@@ -9,19 +9,21 @@ ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260594
+ms.custom:
+- "260594"
+- intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: e495ac4f3cc55503cc8b15d4d4640d3468ab7cd2
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 679c8d7895ac82236c12732e1080529f44231947
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936730"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349626"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Vevői rendelések a pénztárban (POS)
 
@@ -44,7 +46,7 @@ Mielőtt megpróbálja használni a POS rendszer vevői rendelés funkcióját, 
 
 A vevői rendelések használatához konfigurálni kell azokat a szállítási módokat, amelyeket az üzlet csatornája használhat. Legalább egy szállítási módot meg kell határoznia, amely akkor használható, ha a rendelési sorokat egy üzletből a vevőhöz szállítják. Legalább egy átvételi módot is meg kell határoznia, amely akkor használható, ha a rendelési sorokat egy üzletben veszik át. A szállítási módok a Commerce-központ **Szállítási módok** oldalán vannak meghatározva . A szállítási módok konfigurálásával kapcsolatos további információkat a Kereskedelmi csatornákon lásd: [Szállítási módok definiálása](./configure-call-center-delivery.md#define-delivery-modes).
 
-![Szállítási módok oldal](media/customer-order-modes-of-delivery.png)
+![Szállítási módok oldal.](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>Teljesítési csoportok beállítása
@@ -53,7 +55,7 @@ Előfordulhat, hogy egyes raktárak vagy raktári helyek nem tudják teljesíten
 
 A Commerce 10.0.12 és újabb verzióiban a vállalatok meghatározhatják, hogy a teljesítési csoportokban definiált raktár vagy raktár- és üzletkombinációk használhatók-e vagy szállításra, felvételre vagy szállításra és felvételre is. Ezzel még nagyobb rugalmasságot biztosít a vállalat számára annak meghatározásához, hogy mely raktárak választhatók ki a szállítandó cikkek vevői rendelésének létrehozásakor, illetve, hogy a szállítandó cikkek vevői rendelésének létrehozásakor mely üzleteket lehet kiválasztani. Ezen konfigurációs beállítások hasznáaltához be kell kapcsolni azt a **Helyek meghatározása „Szállításra” vagy „Átvételre” engedélyezve Teljesítési csoportban** funkciót. Ha egy teljesítési csoporthoz csatolt raktár nem üzlet, akkor csak szállítási helyként konfigurálható. Nem használható, ha a pénztárban átvételre konfigurálták a rendelést.
 
-![Teljesítési csoportok oldal](media/customer-order-fulfillment-group.png)
+![Teljesítési csoportok oldal.](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>Csatornabeállítások megadása
 
@@ -65,7 +67,7 @@ Amikor a vevői rendelésekkel dolgozik a pénztárban, figyelembe kell vennie a
 - **Célhelyen alapuló adó használata** – Ez a beállítás azt jelzi, hogy a szállítási cím használatos-e a vevő címére leszállított rendeléssorok esetében alkalmazott áfacsoportok meghatározására.
 - **Vevőn alapuló adó használata** – Ez a beállítás azt jelzi, hogy a vevő szállítási címéhez megadott adócsoport van-e alkalmazva a vevő otthonába történő szállításhoz a POS rendszerben létrehozott vevői rendelésekre.
 
-![A csatorna beállításának használat az Áruházak lapon](media/customer-order-all-stores.png)
+![A csatorna beállításának használat az Áruházak lapon.](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>Ügyfélrendelés paramétereinek beállítása
 
@@ -80,7 +82,7 @@ Mielőtt megpróbálkozna a vevői rendelések létrehozásával a POS rendszerb
 - **Szállítás költségkódja** – Ha a **Speciális automatikus költségek használata** beállítás értéke **Igen**, akkor ennek a paraméterbeállításnak nincs hatása. Ha ez a beállítás **Nem** értékre van állítva, akkor a program felkéri a felhasználót, hogy manuálisan adja meg a szállítási költséget, amikor vevői rendeléseket hoz létre a pénztárban. Ezzel a paraméterrel hozzárendelheti a Kinnlevőségek költségkódját, amelyet a program a rendelésekre alkalmaz, amikor a felhasználók szállítási költséget határoznak meg. A költségkód határozza meg a szállítási díj pénzügyi feladási logikáját.
 - **Speciális automatikus költség használata** – Ezt a beállítást **Igen** értékre kell állítani, ha a rendszer által kiszámított automatikus költséget kívánja használni a vevői rendelések létrehozásakor a POS rendszerben. Ezek az automatikus költségek szállítási költségek vagy más rendelés vagy tételspecifikus költségek kiszámítására használhatók. A speciális automatikus költség funkció beállításával és használatával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Többcsatornás speciális automatikus költségek](./omni-auto-charges.md).
 
-![Vevői rendelések lap a Commerce-paraméterek oldalon](media/customer-order-parameters.png)
+![Vevői rendelések lap a Commerce-paraméterek oldalon.](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Tranzakciós képernyő-elrendezések frissítése a pénztár rendszerben
 
@@ -95,7 +97,7 @@ Győződjön meg róla, hogy a pénztár [képernyő elrendezése](./pos-screen-
 - **Szállítási mód módosítása** – Ezzel a művelettel gyorsan megváltoztathatja a szállítási módot azoknál a soroknál, amelyek már be vannak állítva a szállításhoz, anélkül, hogy a felhasználó ismét végigmenne az „összes termék szállítása” vagy a „kiválasztott termék szállítása” folyamaton.
 - **Letét felülbírálása** – Ezzel a művelettel módosítható a vevő által a kiválasztott vevői rendeléshez fizetett letét összege.
 
-![Műveletek a pénztár tranzakciós képernyőjén](media/customer-order-screen-layout.png)
+![Műveletek a pénztár tranzakciós képernyőjén.](media/customer-order-screen-layout.png)
 
 ## <a name="work-with-customer-orders-in-pos"></a>Vevői rendelések használata a pénztárban
 

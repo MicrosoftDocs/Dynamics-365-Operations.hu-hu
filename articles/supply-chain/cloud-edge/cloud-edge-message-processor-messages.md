@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 86f15831f11dc9fdcada9639858fd3b18cdc7503
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 35fd48ef300d46d00c07f3231d780d1ba431d8ef
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271101"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350570"
 ---
 # <a name="message-processor-messages"></a>Üzenetfeldolgozó üzenetei
 
@@ -88,15 +88,15 @@ Ebben a példában az **Üzleti esemény bekövetkezésekor** beállítás haszn
 
 1. A [Power Automate](https://preview.flow.microsoft.com) szolgáltatásban hozzon létre egy új automatizált felhőfolyamatot az **Üzleti esemény bekövetkezésekor – Fin & Ops alkalmazás (Dynamics 365)** folyamat triggerhez, amelyet a **JSON elemzése** és az **E-mail küldése** lépések követik, ahogy a következő ábrán látható.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automatizált felhőfolyamat":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example1.png" alt-text="Power Automate automatizált felhőfolyamat.":::
 
 1. Az **Üzleti esemény bekövetkezésekor** lépésben megkeresheti vagy megadhatja a központ **példányát**, amelyet a **Kategória** követ, majd az *Üzenetfeldolgozó üzenete feldolgozva* **Üzleti esemény**, a következő ábrán látható módon.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Üzleti esemény bekövetkezésekor lépés":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example2.png" alt-text="Power Automate Üzleti esemény bekövetkezésekor lépés.":::
 
 1. A **JSON elemzése** lépéshez adjon meg egy **sémát**, amely meghatározza a kiterjesztett mezőket. A *Séma letöltése* lehetőséget használhatja az **Üzleti események katalógusa** oldalon a Supply Chain Management programban, vagy a séma példában használt szövegének beillesztésével kezdheti. A példa szövegét a következő ábra után adhatja meg.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate JSON elemzése lépés":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example3.png" alt-text="Power Automate JSON elemzése lépés.":::
 
     ```json
     {
@@ -183,7 +183,7 @@ Ebben a példában az **Üzleti esemény bekövetkezésekor** beállítás haszn
 
 1. Az **E-mail küldése** lépésben kiválaszthatja az egyes mezőket, vagy első lépésként beillesztheti az e-mail szövegtörzsének példáját a **Törzs** mezőbe. A példát a következő ábra után adhatja meg.
 
-    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate E-mail küldése lépés":::
+    :::image type="content" source="./media/cloud-edge-power-automate-example4.png" alt-text="Power Automate E-mail küldése lépés.":::
 
     ```plaintext
     Message queue: @{body('Parse_JSON')?['MessageQueue']}

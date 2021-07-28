@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20f320e84d5faaf964585f30581d24996131031c
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2e895c2d337139aa9a2b1f21b60675f956da9c7f
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747151"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348553"
 ---
 # <a name="workflow-elements"></a>Munkafolyamat-elemek
 
@@ -60,7 +60,7 @@ A *jóváhagyási folyamat* egy több lépésből álló folyamat. Az egyes jóv
 
 Munkafolyamat létrehozható dokumentumok vagy a sorban szereplő cikkek egy dokumentumban való feldolgozásához. Például létrehozott jóváhagyási munkafolyamatot időnyilvántartásokhoz. (Erre a munkafolyamatra *dokumentum-munkafolyamat* néven fogunk hivatkozni.) Lehetőség van *egy sortétel-munkafolyamat* elem hozzáadásához a dokumentum-munkafolyamathoz. A sortétel-elem futtatásakor a rendszer a dokumentumon szereplő minden sortételt elküld feldolgozásra. Lehet, hogy az azonos sortétel-munkafolyamattal akarja feldolgoztatni a sorban szereplő cikkeket, vagy egy másik sortétel-munkafolyamattal szeretné feldolgoztatni a sorban szereplő cikkeket. Tegyük fel, hogy az alkalmazott elküldött egy időnyilvántartást, amely hasonlít az alábbi ábrára.
 
-![Munkafolyamat sortételekkel](./media/workflow_lineitemworkflow.gif)
+![Munkafolyamat sortételekkel.](./media/workflow_lineitemworkflow.gif)
 
 Ebben az esetben szükség lehet a következő sortétel-munkafolyamatok létrehozására:
 

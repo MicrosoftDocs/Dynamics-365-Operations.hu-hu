@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c8ad853b8d1f8383b23f2ac4341a5f37a904795
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: eae89e9c3bf32ab5a4c4e6c497c9d3baa5b75fde
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054452"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359221"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-3-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. szeptember 3.)
 
@@ -99,9 +99,9 @@ Ez a funkció segíti a személyzeti műveletek képernyőjén megjelenő munkaf
 
 - [A szervezeti és személyzetkezelési munkafolyamatok fejlesztései](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) a Dynamics 365 2020-as 2. kiadási hullám csomagjában
 
-![Hozzám rendelt munkatételek](./media/hr-workflow-work-items-assigned-to-me.png)
+![Hozzám rendelt munkatételek.](./media/hr-workflow-work-items-assigned-to-me.png)
 
-![Munkafolyamat-elemek gyors elérése](./media/hr-workflow-quick-access.png)
+![Munkafolyamat-elemek gyors elérése.](./media/hr-workflow-quick-access.png)
 
 ## <a name="coming-soon"></a>Hamarosan
 
