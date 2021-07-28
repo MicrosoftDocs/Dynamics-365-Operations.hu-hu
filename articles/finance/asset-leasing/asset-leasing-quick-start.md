@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 4464
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 8141badab2561707e2055d7084323ed4310d2421
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 0f0d39e5a3a1a70f57d305da67e160b0b20cedf4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5892433"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360736"
 ---
 # <a name="asset-leasing-get-started"></a>Eszközlízing – első lépések
 
@@ -35,7 +37,7 @@ A könyvelési szabványokkal kapcsolatos további tudnivalókat lásd az IFRS 1
 ## <a name="asset-leasing-elements"></a>Tárgyieszköz-lízing elemei
 A következő ábra a lízingek üzleti folyamatának fő elemeit mutatja be.
 
-[![Tárgyieszköz-lízing elemei](./media/overview-01.png)](./media/overview-01.png)
+[![Tárgyieszköz-lízing elemei.](./media/overview-01.png)](./media/overview-01.png)
 
 Egy adott lízingelt eszköz a következő fő összetevőket tartalmazza:
 
@@ -54,7 +56,7 @@ Az eszközlízing modul feltérképezi a lízingadatokat, fizetési ütemezések
 
 A következő ábra a lízingkönyvet, a lízinget, a számított fizetés ütemtervet, a lízingek és a lízingkönyvek minősítésére használt teszteket, valamint a megfelelő számviteli tranzakciókat mutatja be.
 
-[![Lízing, lízingkönyv és fizetési ütemterv](./media/overview-02.png)](./media/overview-02.png)
+[![Lízing, lízingkönyv és fizetési ütemterv.](./media/overview-02.png)](./media/overview-02.png)
 
 - **Lízingkönyv** – A lízingkönyv tartalmazza a lízingszerződés összes adatát, például a lízingfeltételeket, a valós értéket és a lízingdíjfizetéseket. A modul az Ön által követett könyvelési szabványt, illetve a lízingminősítési teszten figyelembe veendő lízingtípust és annak küszöbértékeit is tartalmazza. A lízingkönyv tartalmazza továbbá a főkönyvben feladott lízingtranzakciókat is. 
   
@@ -117,7 +119,7 @@ Az első időszak a nulladik időszakkal kezdődik, ha az annuitás típusa az e
 
 A minősítési tesztek kiterjednek a tulajdonjog átruházására, a vételi opcióra, a lízingfutamidőre, a Nettó jelenértékre és az egyedi eszközre is. A következő ábra a lízingminősítési teszteket mutatja be.
 
-[![Lízingminősítési tesztek](./media/overview-03.png)](./media/overview-03.png)
+[![Lízingminősítési tesztek.](./media/overview-03.png)](./media/overview-03.png)
 
 Minden lízingtípus a különböző lízingtranzakciók esetében eltérően kezeli a könyvelést. A tranzakciók magukban foglalják a kezdeti megjelenítést, a kamatráfordítást, az esedékes lízingdíjfizetést és a lízing értékcsökkenését, továbbá a következő könyvelési szabványokon alapulnak (IFRS 16 vagy ASC 842). A főkönyvi számlák meghatározása a lízing feladási profilja alatt történik minden tranzakciótípus és számviteli keretrendszer esetében.
 
@@ -232,7 +234,7 @@ Ez a használatijog-eszköz átvitt egyenlegének csökkentését jelenti. Az é
 
    A **Fizetési ütemterv** oldal az adott lízingazonosítóhoz tartozó jövőbeli fizetési ütemterveket listázza. Válassza az **Ütemterv megerősítése** lehetőséget a **Kezdeti megjelenítési** tranzakciók feladásához. 
 
-[![Kezdeti megjelenítési funkció](./media/overview-13.png)](./media/overview-13.png)
+[![Kezdeti megjelenítési funkció.](./media/overview-13.png)](./media/overview-13.png)
 
 8. Válassza ki a **Kezdeti megjelenítést** a kezdeti megjelenítési napló létrehozásához. 
 
@@ -246,7 +248,7 @@ Ez a használatijog-eszköz átvitt egyenlegének csökkentését jelenti. Az é
 
    Az **Eszköz értékcsökkenésének ütemezése** oldal a kiválasztott lízingazonosítóhoz tartozó értékcsökkenési tranzakciókat jeleníti meg. 
 
-   [![ROU-eszközhöz tartozó tranzakciók oldal](./media/overview-20.png)](./media/overview-20.png)
+   [![ROU-eszközhöz tartozó tranzakciók oldal.](./media/overview-20.png)](./media/overview-20.png)
 
    A **ROU-eszköztranzakciók** oldal a kezdeti megjelenítést, a halmozott értékcsökkenést és az eszközegyenleget listázza. 
 

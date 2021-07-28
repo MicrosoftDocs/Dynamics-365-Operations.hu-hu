@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 067d7035cdb9c8f4bcb2bdac9cf0a33cd4e01079
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2fa602d01cadecbf24c2433360f7b2a8ebb0854a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5811437"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355155"
 ---
 # <a name="cost-element-dimensions"></a>Költségösszetevő-dimenziók
 
@@ -63,7 +63,7 @@ A költségösszetevőknek két típusa van: az elsődleges költségösszetevő
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Költségösszetevő-dimenziók és költségösszetevő-dimenziótagok
 A költségösszetevőket *költségösszetevő-dimenzióknak* nevezik. Az egyes dimenzióértékeket *költségösszetevő-dimenziótagoknak* nevezik. Vegyünk például egy Egyesült Államokbeli számlatükör-szerkezetet (számlatükör), amely a kötelezően előírt jelentéskészítés alapja. Ez a számlatükör költségösszetevő-dimenzióként használatos. A számlák, amelyek elsődleges költségösszetevők, a költségkönyvelésben költségösszetevő-dimenziótagokként jelennek meg. Az alábbi képernyőképen látható példa a fő számlákat ábrázolja költségösszetevő-dimenzióként, ahol a tényleges fő számlák a költségösszetevő-dimenziótagok. 
 
-[![A Fő számlákat költségösszetevő-dimenzióként bemutató képernyőkép](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![A Fő számlákat költségösszetevő-dimenzióként bemutató képernyőkép.](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>A költségösszetevő-dimenziótagok importálása adatcsatolókon keresztül
 Ahhoz, hogy megkönnyítse a költségösszetevő-dimenziók beállítását a költségkönyvelésben, használhat olyan adatcsatolókat, amelyeket előre vagy egyedileg készítenek el az elsődleges költségösszetevők lekéréséhez egy vagy több forrásrendszerből.

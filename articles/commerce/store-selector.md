@@ -2,7 +2,8 @@
 title: Üzletkiválasztó modul
 description: Ez a témakör az üzletválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 04/02/2021
+manager: annbe
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +16,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5a9311435264119e8287f1b7da2d0456552231f3
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 341312758e0a6da2e918406e09df618e2475811f
+ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021464"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "6479376"
 ---
 # <a name="store-selector-module"></a>Üzletválasztó modul
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör az üzletválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -50,12 +52,12 @@ Az üzlet helyének földrajzi hosszúságának és szélességének beállítá
 1. Válassza ki a raktár helyét a bal ablaktáblában.
 1. Válassza a **Címek** gyorslapon a **Speciális** lehetőséget.
 
-    ![Példa az üzlet a részleteire a központban](./media/Store-address.png)
+    ![Példa az üzlet a részleteire a központban.](./media/Store-address.png)
 
 1. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
 1. Adja meg az **Általános** gyorslapon a **Földrajzi szélesség** és a **Földrajzi hosszúság** értékét.
 
-    ![Példa az áruház földrajzi szélességi és földrajzi hosszúsági beállítására a központban](./media/Store-latitude-longitude.png)
+    ![Példa az áruház földrajzi szélességi és földrajzi hosszúsági beállítására a központban.](./media/Store-latitude-longitude.png)
 
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget. 
 
@@ -70,7 +72,6 @@ Az Autosuggest REST API esetében gondoskodni kell arról, hogy a webhely tartal
 - A **script-src** utasításhoz **adja hozzá a &#42;.bing.com, &#42;.virtualearth.net** kiterjesztést.
 - A **script style-src** utasításhoz adja hozzá a **&#42;.bing.com** kiterjesztést.
 
- 
 ## <a name="pickup-in-store-mode"></a>Felvétel az üzletben mód
 
 Az üzletválasztó modul támogatja a **Felvétel az üzletben** módot, amely megmutatja azon üzletek listáját, amelyeknél a termék átvehető. A listán szereplő üzletek nyitvatartását és készletét is megjeleníti. Ha a termék szállítási módja a kiválasztott üzletnél **átvétel** módban van, akkor az üzletválasztó modulban meg kell adni a termék kontextusát a termék elérhetőségének kiszámításához, illetve ahhoz, hogy a felhasználó betehesse a terméket a kosarába. További információ: [Készletbeállítások](inventory-settings.md). 
@@ -81,7 +82,7 @@ A forgatókönyv működéséhez a termékeket az **átvétel** szállítási m�
 
 A következő kép a PDP-ben használt üzletválasztó modul egy példáját jeleníti meg.
 
-![Példa egy üzletválasztó modulra, ami a PDP-ben van használva](./media/BOPIS.PNG)
+![Példa egy üzletválasztó modulra, ami a PDP-ben van használva.](./media/BOPIS.PNG)
 
 > [!NOTE]
 > A 10.0.16-os és újabb verzióban egy új funkció engedélyezhető, amely lehetővé teszi a szervezet számára, hogy több szállítási módot határozzon meg az ügyfelek számára.  Ha ez a funkció engedélyezve van, az áruházválasztó és az e-kereskedelem egyéb moduljai javulni fognak, hogy a vásárló a potenciálisan több felvételi szállítási lehetőség közül választhasson, ha be van állítva.  A funkcióról többet is megtudhat, olvassa el [ezt a dokumentációt](./multiple-pickup-modes.md). 
@@ -92,7 +93,7 @@ Az üzletválasztó modul az **Üzletek keresése** módot is támogatja. Ez a m
 
 A következő ábra egy üzletválasztó modul példáját mutatja be, amely az üzlethelyek lap térkép moduljával együtt használható.
 
-![Példa egy üzletválasztó modulra, és egy térkép modulra egy tárolási helyek lapon](./media/ecommerce-Storelocator.PNG)
+![Példa egy üzletválasztó modulra, és egy térkép modulra egy tárolási helyek lapon.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="render-a-map"></a>Térkép renderelése
 
@@ -110,6 +111,10 @@ Az üzletválasztó modul a térkép modullal együtt használva egy térképen 
 | Az Automatikus javaslat beállításai: max. eredmények | Szám | Ez a tulajdonság határozza meg, hogy legfeljebb hány olyan automatikus javaslat érhető el, amely a Bing automatikus javaslat API-n keresztül megjeleníthető. |
 | Keresési sugár | Szám | Ez a tulajdonság az üzletek keresési sugarát határozza meg (mérföldben). Ha nincs megadva érték, akkor a program az alapértelmezett 50 mérföldes keresési sugarat használja. |
 | Szolgáltatási feltételek | URL-cím |  Ez a tulajdonság meghatározza a szolgáltatási feltételek URL-címét, amely a Bing Maps szolgáltatás használatához szükséges. |
+
+## <a name="site-settings"></a>Hely beállításai
+
+Az üzletválasztó modulban figyelembe veszi a [Termék hozzáadása a kosárhoz beállítást](add-cart-settings.md). Miután az üzletválasztó modulból egy cikket hozzáadtak a kosárhoz, a webhely felhasználói látni fogják a megfelelő konfigurált munkafolyamatokat.
 
 ## <a name="add-a-store-selector-module-to-a-page"></a>Üzletválasztó modul hozzáadása a laphoz
 

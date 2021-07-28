@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 661bb8369fe4dbe6cdf6ee0fb05d16f4350ecf5a
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: aec6d784fd6bd54297ac4204c834c7f77ed75362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097259"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356512"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Szabadságkérelmek kezelése a Teamsben
 
@@ -61,7 +61,7 @@ A robot a következőre kérhető:
 
 - Szabadságkérelem indítása az Ön számára. Ha konkrétabb szabadságkérelmet szeretne a szabadság típusához, elküldheti például a következő üzenetet: „Szabadságot kérek a következő csütörtökre és péntekre”. 
 
-  ![Szabadságkérés indítása a Teams-csevegésben](./media/hr-teams-leave-app-initiate.png)
+  ![Szabadságkérés indítása a Teams-csevegésben.](./media/hr-teams-leave-app-initiate.png)
 
 - A csevegőrobot automatikusan kitölti a szabadságra vonatkozó kérést. Válassza ki a **Távollét kérelmezése** lehetőséget, és szerkessze a kérés részleteit.
 
@@ -69,11 +69,11 @@ A robot a következőre kérhető:
 
    Ha a szabadságkérelem napokban van megadva, de Ön félnapos szabadságot választ, megadhatja, hogy a nap első vagy második felére kéri a szabadságot. Ehhez válassza ki a **Félnapos meghatározás** elemet a **További beállítások** menüben.
    
-   ![Félnapos meghatározások](./media/HalfDayDefinitions.png)
+   ![Félnapos meghatározások.](./media/HalfDayDefinitions.png)
 
 - Ha végzett a szabadságkérés részleteinek szerkesztésével, a **Küldés** gombot kiválasztva küldje el jóváhagyásra.
 
-  ![Szabadságra vonatkozó kérelem elküldése](./media/hr-teams-leave-app-submit.png)
+  ![Szabadságra vonatkozó kérelem elküldése.](./media/hr-teams-leave-app-submit.png)
 
 ## <a name="manage-your-leave-in-teams"></a>Távollét kezelése a Teams alkalmazásban
 
@@ -93,7 +93,7 @@ A **Szabadság** lapon a következők jeleníthetők meg:
 
 2. Adja meg a kivenni kívánt napot vagy napokat, majd válassza a **Hozzáadás** lehetőséget.
 
-   ![Human Resources Teams szabadságkezelő alkalmazás szabadság hozzáadása](./media/TimeOffHours.png)
+   ![Human Resources Teams szabadságkezelő alkalmazás szabadság hozzáadása.](./media/TimeOffHours.png)
 
 3. Ha szükséges, írjon be egy okkódot. Adjon meg bármilyen megjegyzést, és vegyen fel hozzá mellékleteket.
 
@@ -123,7 +123,7 @@ Miután telepítette az Human Resources alkalmazást a Teams számára, egyszer�
 
 1. Egy csapatban vagy csevegésben a Teamsben válassza a chat ablak alatti Human Resources gombot.
 
-   ![A chat ablak alatti Human Resources gomb](./media/hr-teams-leave-app-chat-button.png)
+   ![A chat ablak alatti Human Resources gomb.](./media/hr-teams-leave-app-chat-button.png)
 
 2. Válassza ki a megosztani kívánt szabadságkérelmet. Ha meg szeretné osztani egy vázlat szabadságkérelmet, először válassza a **Vázlatok** lehetőséget.
 
@@ -173,11 +173,11 @@ Ha a fordítások nem a vártnak megfelelően jelennek meg, győződjön meg ró
 
 A Teamsben nézze meg az **Alkalmazás nyelve** elemet a **Beállítások** között.
 
-![Teams beállításai](./media/hr-teams-leave-app-settings.png)
+![Teams beállításai.](./media/hr-teams-leave-app-settings.png)
 
 A Humar Resources alkalmazásban válassza a **Beállítások** lehetőséget, majd a **Felhasználói beállítások** lehetőséget. Ellenőrizze, hogy a **Nyelv** mező megegyezik-e a Teams **Alkalmazás nyelve** mezőjével.
 
-![Human Resources Felhasználói beállítások](./media/hr-teams-leave-app-user-options.png)
+![Human Resources Felhasználói beállítások.](./media/hr-teams-leave-app-user-options.png)
 
 Ha továbbra is fordítási problémákat tapasztal, tudassa velünk. További információért tekintse át a [Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json) szolgáltatáshoz.
 

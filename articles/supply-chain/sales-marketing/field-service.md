@@ -9,19 +9,19 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
 ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 73d20958d0efadefc709db524fe16ed85d1ea33a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2ceb95198332d6a9da057d657771fe6fcca5c5b9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5824894"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359605"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>A Microsoft Dynamics 365 Field Service integráció áttekintése
 
@@ -34,7 +34,7 @@ Szabványos sablonok használhatók egyéni integrációs projektek létrehozás
 
 A field service integráció a meglévő Potenciális vevő készpénzre váltása funkcióra épül.
 
-![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/field-service-integration.png)
+![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/field-service-integration.png)
 
 A Field Service és a Supply Chain Management közötti integráció első fázisa a Field Service szolgáltatásban lévő munkarendelések és szerződések a Supply Chain Management szolgáltatásban történő számlázásának lehetővé tételére irányul. A támogatott forgalom a Field Service-ben kezdődik, ahol a munkarendelésekből származó információk értékesítési rendelésekként szinkronizálódnak a Supply Chain Management szolgáltatásba. A Supply Chain Management megoldásban az értékesítési rendelések számlázása a számlázási dokumentumokat generálásához történik. Emellett a Field Service-ben lévő szerződéses számlákban lévő információk szinkronizálódnak a Supply Chain Management szolgáltatásba. A Microsoft Dynamics 365 adatintegrátor testreszabható projektek használatával szinkronizálja az adatokat. Szabványos sablonok használhatók egyéni integrációs projektek létrehozására, ahol további szabványos és egyéni oszlopok, valamint táblák is leképezhetők az integráció módosítására és speciális követelmények teljesítésére.
 
@@ -58,7 +58,7 @@ A második fázisban a további funkciók célja, hogy a szerviztechnikusok bete
 - Supply Chain Management projektek összekapcsolva a Dynamics 365 Field Service munkarendelésekkel
 - A Dynamics 365 Field Service munkarendelések, amelyek hivatkozással rendelkeznek Supply Chain Management projektekre, alkalmazzák ezt a projektszámot az értékesítési rendelésre, amelyek így számlázhatók a projektből. 
 
-![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/FSv2overview.png)
+![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>A Field Service és a Supply Chain Management közötti integráció második fázisa a következő sablonokkal történő szinkronizálást teszi lehetővé:
 - Raktárak (Supply Chain Management – Field Service) – Raktárak a Supply Chain Management és és a Field Service között [speciális lekérdezés] 

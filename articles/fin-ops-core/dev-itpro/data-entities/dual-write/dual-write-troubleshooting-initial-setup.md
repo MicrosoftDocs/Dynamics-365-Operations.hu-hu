@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 9ffb1378eccf175fbb9bd84228f91ba606125a63
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753990"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350836"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Problémák elhárítása a kezdeti beállításkor
 
@@ -42,7 +42,7 @@ Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kett�
 
 A **Hivatkozás beállítása a Dataverse szolgáltatáshoz** oldal hibáit általában hiányos beállítás vagy jogosultsági problémák okozzák. Győződjön meg arról, hogy a teljes állapot-ellenőrzés megfelelt-e a **Hivatkozás beállítása a Dataverse szolgáltatáshoz** oldalon, az alábbi ábrán látható módon. A kettős írás nem kapcsolható össze, hacsak a teljes állapot-ellenőrzés meg nem felelt.
 
-![Sikeres állapot-ellenőrzés](media/health_check.png)
+![Sikeres állapot-ellenőrzés.](media/health_check.png)
 
 A Finance and Operations és Dataverse környezetek összekapcsolásához Azure AD bérlői rendszergazdai hitelesítő adatok szükségesek. A környezetek összekapcsolása után a felhasználók a saját fiókjaik hitelesítő adataival jelentkezhetnek be, és módosíthatják a meglévő táblák leképezését.
 
@@ -77,7 +77,7 @@ A kettős írás helyes működésének biztosítása érdekében a konfiguráci
 4. Válassza ki azt a vállalatot, amely a kettős írás konfigurálása során összekapcsolódott.
 5. Győződjön meg arról, hogy az **Alapértelmezett tulajdonos csoport** oszlopban szerepel érték. A következő ábrán az **Alapértelmezett tulajdonos csoport** oszlop értéke **USMF kettős írás**.
 
-    ![Az alapértelmezett tulajdonos csoport ellenőrzése](media/default_owning_team.png)
+    ![Az alapértelmezett tulajdonos csoport ellenőrzése.](media/default_owning_team.png)
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>A kettős íráshoz összekapcsolható táblák vagy vállalatok számához tartozó korlát megkeresése
 

@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: b901622bbfc8d6b3066879f6456a4ab618ca4076
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: d6854c11822e07ff06426b7a35eac86cdc0e9b06
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117227"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356902"
 ---
 # <a name="apply-display-settings-for-product-dimensions"></a>Megjelenítési beállítások alkalmazása termékdimenziókra
 
@@ -33,7 +33,7 @@ A Dynamics 365 Commerce támogatja a termékváltozatok megkülönböztetésére
 
 A Commerce webhelykészítőjében a dimenzióbeállítások a **Webhelybeállítások \> Bővítmények \> Dimenzióbeállítások** részen adhatók meg. Az alábbi ábra a webhelyszerkesztőn belüli dimenzióbeállításokra ad példát.
 
-![Példa a Commerce webhelyszerkesztőjének webhelybeállításaira](./dev-itpro/media/swatch_site_settings.PNG)
+![Példa a Commerce webhelyszerkesztőjének webhelybeállításaira.](./dev-itpro/media/swatch_site_settings.PNG)
 
 Két dimenzióbeállítás használható:
 
@@ -41,13 +41,13 @@ Két dimenzióbeállítás használható:
 
     Az alábbi képen olyan példa látható, ahol egy e-kereskedelmi webhelyen PDP szín- és méretpaletták vannak. Ebben a példában a szín dimenzióhoz egy hexadecimális kód van beállítva. Ennek megfelelően a paletták színekként jelennek meg. A méret dimenzióhoz viszont sem hexadecimális kód, sem kép-URL nincs beállítva. Ebből következően szöveg jelenik meg.
 
-    ![Példa, amelyben egy termék részleteit tartalmazó e-kereskedelmi oldalon palettaként jelenik meg a színdimenzió](./dev-itpro/media/swatch_pdp.png)
+    ![Példa, amelyben egy termék részleteit tartalmazó e-kereskedelmi oldalon palettaként jelenik meg a színdimenzió.](./dev-itpro/media/swatch_pdp.png)
 
 - **Termékkártyán megjelenítendő dimenziók** – adja meg, hogy melyik dimenziók jelenjenek meg a listákban és a listaoldalakon megjelenő termékkártyákban. Egy termékkártyán csak akkor jelenhet meg egy dimenzió, ha ezt a beállítást engedélyezi az adott dimenziónál. A **Dimenziók megjelenítése képként** beállítást is engedélyezni kell. A paletta termékkártyákon való kiválasztására szolgáló viselkedés a színdimenzióra van optimalizálva. Más dimenziók esetén szükség lehet egy nézetbővítményre a palettakiválasztási viselkedés testreszabásához.
 
     A következő ábrán lévő példán egy e-kereskedelmi webhely listaoldalán színpalettákat tartalmazó termékkártyák vannak.
 
-    ![Példa, amelyben egy e-kereskedelmi listaoldalon palettaként jelenik meg a színdimenzió](./dev-itpro/media/swatch_searchresults.PNG)
+    ![Példa, amelyben egy e-kereskedelmi listaoldalon palettaként jelenik meg a színdimenzió.](./dev-itpro/media/swatch_searchresults.PNG)
 
 További információ arról, hogyan állítható be, hogy a termékdimenziók palettaként jelenjenek meg a webhely oldalain: [Termékdimenzió értékeinek konfigurálása palettaként való megjelenítésre](./dev-itpro/dimensions-swatch.md).
 

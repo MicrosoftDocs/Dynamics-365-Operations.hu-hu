@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b617ce4358a6b6aaacea9069d8db40c4aa82b7ed
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 01797b5a1c29ee608e7796319a18d6402b542409
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798705"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353754"
 ---
 # <a name="pos-user-interface-visual-configurations"></a>A pénztár felhasználói felületének vizuális konfigurációja
 
@@ -32,15 +32,15 @@ A Microsoft Dynamics 365 Commerce pénztár (POS) felhasználói felülete vizu�
 
 A következő ábra a POS felhasználói felület konfigurálható részeit leképező különböző entitások közötti összefüggéseket mutatja.
 
-![POS képernyő-elrendezés entitások](../commerce/media/POS-layout-configuration-entities-diagram.png)
+![POS képernyő-elrendezés entitások.](../commerce/media/POS-layout-configuration-entities-diagram.png)
 
 ## <a name="visual-profile"></a>Vizuális profil
 
 A vizuális profilok nyilvántartásokhoz vannak rendelve, és a nyilvántartás-specifikus és a felhasználók számára közös vizuális elemek megadására szolgálnak. Bármelyik felhasználónak, aki bejelentkezik a nyilvántartásba, azonos lesz a téma az elrendezés a színek és a képek.
 
-![Világos téma a POS üdvözlő képernyőn](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
+![Világos téma a POS üdvözlő képernyőn.](../commerce/media/POS-Welcome-Screen-with-Light-theme.png)
 
-![Sötét téma a POS üdvözlő képernyőn](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
+![Sötét téma a POS üdvözlő képernyőn.](../commerce/media/POS-Transaction-Screen-with-Dark-theme.png)
 
 - **Profil száma** - A profilszám a vizuális profil egyedi azonosítója.
 - **Leírás** - Megadhat egy felismerhető nevet, amely segít azonosítani a megfelelő profilt az adott helyzetnek megfelelően.
@@ -65,15 +65,15 @@ Az **1090** (**Pénztárgépek**) elosztási ütemezési feladat futtatásával 
 
 A képernyő-elrendezés konfigurációja határozza meg a műveletek, a tartalom és a felhasználóifelület-vezérlők elhelyezését a pénztár **Üdvözlőképernyőjén** és **Tranzakciók** képernyőjén.
 
-![Pénztár képernyő-elrendezés megtekintése](../commerce/media/POS-Screen-Layout-View.png)
+![Pénztár képernyő-elrendezés megtekintése.](../commerce/media/POS-Screen-Layout-View.png)
 
 - **Üdvözlőképernyő**- A legtöbb esetben az üdvözlőképernyő az a lap, amely a felhasználók látnak, amikor először jelentkeznek be pénztárba. Az üdvözlőképernyő védjegyképből és a POS-műveletekhez való hozzáférést biztosító gombrácsokból állhat. Jellemzően a műveletek, amelyek nem kötődnek a jelenlegi tranzakcióhoz, itt vannak elhelyezve.
 
-    ![Pénztár üdvözlő képernyő](../commerce/media/POS-Welcome-Screen.png)
+    ![Pénztár üdvözlő képernyő.](../commerce/media/POS-Welcome-Screen.png)
 
 - **Tranzakció képernyőn** - A **Tranzakció** képernyő a pénztár fő képernyője az értékesítési tranzakciókat és a rendelések feldolgozásához. A képernyő-elrendezés tervezője használatával konfigurálhatók a tartalmak és az elrendezések.
 
-    ![POS tranzakciós képernyő](../commerce/media/POS-Transaction-Screen.png)
+    ![Pénztár tranzakciós képernyő.](../commerce/media/POS-Transaction-Screen.png)
 
 - **Alapértelmezett kezdőképernyő** - Egyes kiskereskedők azt részesítik előnyben, ha a pénztáros közvetlenül a **Tranzakció** képernyőre lép a bejelentkezés után. Az **Alapértelmezett kezdési képernyő** beállítással megadhatja az alapértelmezett képernyőt az egyes képernyő-elrendezésekre való bejelentkezéskor.
 
@@ -89,7 +89,7 @@ A pénztár kezelőfelületének nagy része interaktív, és az elrendezést au
 
 A pénztáralkalmazás az indítása alkalmával automatikusan kiválasztja a legközelebbi elrendezésméretet az eszközhöz. A képernyő-elrendezés az álló vagy fekvő módok, valamint teljes méretű és a kompakt eszközök konfigurációit is tartalmazhatja. Ezért a felhasználók hozzárendelhetők egyetlen képernyő-elrendezéshez, amely a különböző használt méretek és formátumok mindegyikén működik az üzletben.
 
-![Pénztár elrendezési méretek](../commerce/media/POS-Screen-Layout-Sizes.png)
+![Pénztár elrendezési méretek.](../commerce/media/POS-Screen-Layout-Sizes.png)
 
 - **Név** – A képernyő mérete azonosítására szolgáló értelemszerű nevet is megadhat.
 - **Elrendezés típusa** – A POS alkalmazás megjelenítheti a felhasználói felületet különböző módokon, biztosítva a legjob felhasználói élményt az adott eszköz.
@@ -102,7 +102,7 @@ A pénztáralkalmazás az indítása alkalmával automatikusan kiválasztja a le
 > [!TIP]
 > Megtudhatja az elrendezés kötelező méretét a képernyőhöz a felbontás megtekintésével az alkalmazásan. Indítsa el a pénztárat, és kattintson a **Beállítások \> Munkamenet-információk** elemre. A pénztár az aktuálisan betöltött képernyő-elrendezést mutatja, az elrendezés méretét és az alkalmazásablak felbontását.
 
-![A pénztár munkamenet-információk oldala az aktuálisan betöltött képernyő-elrendezést mutatja, az elrendezés méretét és az alkalmazásablak felbontását](../commerce/media/POS-Session-Information.png)
+![A pénztár munkamenet-információk oldala az aktuálisan betöltött képernyő-elrendezést mutatja, az elrendezés méretét és az alkalmazásablak felbontását.](../commerce/media/POS-Session-Information.png)
 
 ### <a name="button-grids"></a>Gombrácsok
 
@@ -112,7 +112,7 @@ A teljes pénztár képernyő-elrendezésekben a gombrácsok elhelyezése a kép
 
 A kompakt pénztár képernyő-elrendezésekben a gombrácsok automatikus elrendezése fentről le, a legkisebb számtól (1. tranzakció képernyő) a legnagyobb számig. Elérhetők el a **Műveletek** menüben.
 
-![Gombrácsok kompakt elrendezésnél](../commerce/media/Compact-View-Button-Grids.png)
+![Gombrácsok kompakt elrendezésnél.](../commerce/media/Compact-View-Button-Grids.png)
 
 > [!NOTE]
 > A tervezőben található gombméreteket a rendszer az ablak méretének megfelelően méretezi át, ezért előfordulhat, hogy nem tükrözik pontosan a pénztárban megjelenített tényleges gombokat. A gombrácselrendezés legjobb szimulálásához állítsa a tervezőablakokat a pénztár méretére.
@@ -132,7 +132,7 @@ A képernyő-elrendezés tervezője lehetővé teszi a pénztár **Tranzakció**
 
 A teljes képernyőelrendezés-tervező segítségével a felhasználók felhasználóifelület-vezérlőit ráhúzhatják a pénztár **Tranzakció** képernyőjére, és beállíthatják a vezérlőelemek konfigurációját.
 
-![Teljes pénztár képernyőelrendezés-tervező (fekvő mód)](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
+![Teljes pénztár képernyőelrendezés-tervező (fekvő mód).](../commerce/media/POS-Full-Layout-Designer-Landscape.png)
 
 - **Elrendezés importálása/exportálása** – Exportálhatja és importálhatja a pénztár képernyő-elrendezéseket XML-fájlként, így egyszerű az újrafelhasználásuk és környezetek közötti megosztásuk. Fontos, hogy a megfelelő elrendezésmérethez tartozó elrendezési terveket importálja. Ellenkező esetben a felhasználói felület elemeivel előfordulhat, hogy nem férnek el megfelelően a képernyőn.
 - **Fekvő/álló** – Ha a pénztár eszköz lehetővé teszi, hogy a felhasználók a fekvő és az álló üzemmódok között váltsanak, meg kell adnia minden üzemmódhoz a képernyő-elrendezést. A pénztár automatikusan észleli a képernyő elforgatását, és a helyes elrendezést jeleníti meg.
@@ -140,11 +140,11 @@ A teljes képernyőelrendezés-tervező segítségével a felhasználók felhasz
 - **Tervezői nagyítás** – A tervező nézet nagyítható a pénztár képernyő tartalmának jobb megjelenítéséhez. Ez a funkció akkor hasznos, ha a POS képernyőfelbontása jelentősen különbözik a tervező képernyőjének felbontásától.
 - **Megjelenítés/elrejtés navigációs sáv** – A teljes pénztárelrendezések esetében választani lehet, hogy a bal oldali navigációs sáv megjelenjen-e a **Tranzakció** képernyőn. Ez hasznos az alacsony felbontású kijelzőknél. A láthatóság beállításához kattintson a jobb gombbal a navigációs sávra a tervezően, és jelölje be vagy törölje a **Mindig látható** négyzet jelölését. Ha a navigációs sáv nem látható, a POS-felhasználó továbbra is elérheti a bal felső menü használatával.
 
-    ![A navigációs ablak megjelenítése és elrejtése](../commerce/media/Navigation-Bar.PNG)
+    ![A navigációs ablak megjelenítése és elrejtése.](../commerce/media/Navigation-Bar.PNG)
 
 - **POS-vezérlők** – A POS-képernyőelrendezés-tervező támogatja az alábbi vezérlőket. Kattintson a jobb gombbal, és a helyi menü segítségével beállíthat sok vezérlőt.
 
-    ![Pénztár kezelőfelület-vezérlőelemek](../commerce/media/POS-UI-Controls.png)
+    ![Pénztár kezelőfelület-vezérlőelemek.](../commerce/media/POS-UI-Controls.png)
 
     - **Számbillentyűzet** - A számbillentyűzet a fő felhasználói beviteli mód a pénztár **Tranzakció** képernyőjén. Beállíthatja a vezérlőt, hogy a teljes számbillentyűzetet jelenítse meg. Ez a beállítás az érintőképernyős eszközökhöz hasznos. Másik lehetőségként beállíthatja úgy, hogy csak a beviteli mező jelenjen meg. Ebben az esetben a fizikai billentyűzet szolgál a bevitelre. A számbillentyűzet-beállítások csak a teljes elrendezésben állnak rendelkezésre. A kompakt elrendezésekben a teljes számbillentyűzet mindig látható a **Tranzakció** képernyőn.
     - **Összegek panel** - Az összegek panel beállítható egy vagy két oszloposként, hogy olyan értékek legyenek megjeleníthetők, mint a sorok száma, az engedmény összege, a díjak, a részösszeg és az adó. A kompakt elrendezések csak egyetlen oszlopot támogatnak.
@@ -159,13 +159,13 @@ A teljes képernyőelrendezés-tervező segítségével a felhasználók felhasz
 
 A teljes képernyőelrendezés-tervezőhöz hasonlóan a kompakt képernyőelrendezés-tervező teszi lehetővé a pénztár képernyő-elrendezés konfigurálását telefonokhoz és kis táblagépekhez. Azonban ebben az esetben az elrendezés rögzítve van. Kattintson a jobb gombbal, és a helyi menü segítségével beállíthatja az elrendezésben a vezérlőket. Azonban a további tartalmakhoz fogd és vidd műveleteket nem használhat.
 
-![Kompakt elrendezés tervezője](../commerce/media/Compact-Layout-Designer.png)
+![Kompakt elrendezés tervezője.](../commerce/media/Compact-Layout-Designer.png)
 
 ### <a name="button-grid-designer"></a>Gombrács tervezője
 
 A gombrácstervező használható a pénztár gombrácsok konfigurálásához a pénztár üdvözlő képernyőjén és a **Tranzakció** képernyőn a teljes és a kompakt elrendezésekhez. Ugyanaz a gombrács használható minden elrendezéshez és elrendezéstípushoz. Ahogy a képernyő-elrendezés tervezője, a gombrácstervező is a ClickOnce telepítési technológiát használja az alkalmazás legújabb verziójának letöltésére, telepítésére és elindítására minden alkalommal, amikor a felhasználó megnyitja. Ügyeljen arra, hogy ellenőrizze a ClickOnce böngészővel szemben támasztott követelményeit. Néhány böngésző esetében, például a Google Chrome, bővítmények szükségesek.
 
-![Gombrács tervezője](../commerce/media/Button-Grid-Designer.png)
+![Gombrács tervezője.](../commerce/media/Button-Grid-Designer.png)
 
 - **Új gomb** – Ide kattintva új gombot vehet fel a gombrácsa. Új gombok alapértelmezés szerint a rács bal felső sarkában jelennek meg. Beállíthatja azonban a gombok sorrendjét húzással az elrendezésben.
 
@@ -178,7 +178,7 @@ A gombrácstervező használható a pénztár gombrácsok konfigurálásához a 
     > [!IMPORTANT]
     > Néhány gombrácsbeállítás csak az Enterprise POS esetében aktív, a Modern POS és a Cloud POS esetében nem.
 
-    ![Gombrácsgomb tulajdonságai](../commerce/media/Button-grid-button-properties.png)
+    ![Gombrácsgomb tulajdonságai.](../commerce/media/Button-grid-button-properties.png)
 
     - **Művelet** – Az alkalmazható pénztárműveletek listájában válassza ki a műveletet, amely végrehajtódik a gombra való rákattintáskor a pénztárban.
 
@@ -190,7 +190,7 @@ A gombrácstervező használható a pénztár gombrácsok konfigurálásához a 
     - **Elemleírás** – Adja meg a további súgószöveget, amely megjelenik, amikor a felhasználó rámutat az egérgombbal.
     - **Mérete oszlopokban/Méret sorokban** – Megadhatja a gomb magasságát és szélességét.
 
-        ![Pénztár gomb méretei a sorokban és oszlopokban](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
+        ![Pénztár gomb méretei a sorokban és oszlopokban.](../commerce/media/POS-Button-Sizes-In-Rows-And-Columns.png)
 
     - **Egyéni betűtípus** – Ha bejelöli az **Egyéni betűtípus engedélyezése az POS szolgáltatáshoz** jelölőnégyzetet, az alapértelmezett rendszerbetűtípustól eltérő betűtípust adhat meg a pénztár számára.
     - **Egyéni téma** – A POS gombok alapértelmezés szerint a kiemelés színét használják a vizuális profilból. Ha bejelöli az **egyéni téma használata** négyzet jelölését, további színeket adhat meg.
@@ -200,7 +200,7 @@ A gombrácstervező használható a pénztár gombrácsok konfigurálásához a 
 
     - **Gomb kép** – A gomb tartalmazhat képeket és ikonat. A rendelkezésre álló képek közül választhat, amelyek itt vannak megadva: **Retail és Commerce \> Csatorna beállítása \> POS beállítása \> POS \> Képek**.
 
-![Példa gombrács a pénztárban](../commerce/media/Example-Button-Grid-In-POS.png)
+![Példa gombrács a pénztárban.](../commerce/media/Example-Button-Grid-In-POS.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

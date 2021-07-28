@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 413be634e80b87781444e1c1445c78691f4b4b0b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: d152449b55ab111cf5bac363b38d32c3658a56e3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944292"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359411"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>ER-konfigurációk újrafelhasználása Excel-sablonokkal Word-formátumú jelentések generálásához
 
@@ -54,14 +54,14 @@ Ezek az eljárások a Dynamics 365 for Operations 1611-es verzióban (2016. nove
 5. Válassza a **Tervező** lehetőséget.
 6. A **Formátumtervező** lapon figyelje meg, hogy a gyökérformátum-elem címe jelzi, hogy jelenleg egy Excel-sablon van használatban.
 
-![A meglévő konfiguráció kiválasztása](../media/er-design-configuration-word-2016-11-image01.gif)
+![A meglévő konfiguráció kiválasztása.](../media/er-design-configuration-word-2016-11-image01.gif)
 
 ## <a name="review-the-downloaded-word-template"></a>A letöltött Word-sablon áttekintése
 
 1. Az asztali Word-alkalmazásban nyissa meg a korábban letöltött **SampleVendPaymDocReport.docx** sablonfájlt.
 2. Ellenőrizze, hogy a sablon csak az ER-kimenetként létrehozandó dokumentum elrendezését tartalmazza.
 
-![A Word-sablon elrendezése az asztali alkalmazásban](../media/er-design-configuration-word-2016-11-image02.png)
+![A Word-sablon elrendezése az asztali alkalmazásban.](../media/er-design-configuration-word-2016-11-image02.png)
 
 ## <a name="replace-the-excel-template-with-the-word-template-and-add-a-custom-xml-part"></a>Az Excel-sablon cseréje Word-sablonra és egyéni XML-rész hozzáadása
 
@@ -84,7 +84,7 @@ Jelenleg az Excel-dokumentum használatos sablonként a kimenet OPENXML-formátu
 
 9. Figyelje meg, hogy a gyökérformátum-elem címe jelzi, hogy jelenleg egy Word-sablon van használatban.
 
-    ![Az Excel-sablon cseréje Word-sablonra és egyéni XML-rész hozzáadása](../media/er-design-configuration-word-2016-11-image03.gif)
+    ![Az Excel-sablon cseréje Word-sablonra és egyéni XML-rész hozzáadása.](../media/er-design-configuration-word-2016-11-image03.gif)
 
 10. Válassza a **Formátum** lap **Mellékletek** elemét.
 
@@ -110,7 +110,7 @@ Ha megfelelő ismeretekkel rendelkezik a Word-dokumentumok tervezéséről [egy�
 1. Az asztali Word-alkalmazásban nyissa meg a **SampleVendPaymDocReportBounded.docx** sablonfájlt.
 2. Ellenőrizze, hogy a sablon az ER-kimenetként létrehozandó dokumentum elrendezését tartalmazza. Az ER által futásidőben ebbe a sablonba beírt adatok helyőrzőjeként használt tartalomvezérlők a **Jelentés** egyéni XML-része és a Word dokumentum tartalomvezérlői között beállított leképezéseken alapulnak.
 
-![A Word-sablon előnézete az asztali alkalmazásban](../media/er-design-configuration-word-2016-11-image04.png)
+![A Word-sablon előnézete az asztali alkalmazásban.](../media/er-design-configuration-word-2016-11-image04.png)
 
 ## <a name="upload-the-word-template-where-the-custom-xml-part-is-mapped-to-content-controls"></a>Annak a Word-sablonnak a feltöltése, ahol az egyéni XML-rész tartalomvezérlőkre van leképezve
 
@@ -144,7 +144,7 @@ Ahhoz, hogy a szerkeszthető formátum vázlatverzióját futtatni tudja, [futta
 3. A **Szállítói kifizetések** lapon jelölje ki a rács összes sorát.
 4. Válassza ki a **Fizetési állapot** \> **Nincs** lehetőséget.
 
-    ![A feldolgozandó kifizetések hozzáadva a Szállítói fizetések lapon](../media/er-design-configuration-word-2016-11-image05.png)
+    ![A feldolgozandó kifizetések hozzáadva a Szállítói fizetések lapon.](../media/er-design-configuration-word-2016-11-image05.png)
 
 5. A Művelet ablaktáblán válassza ki a **Kifizetések generálása** elemet.
 6. A megjelenő párbeszédpanelen hajtsa végre a következő lépéseket:
@@ -156,11 +156,11 @@ Ahhoz, hogy a szerkeszthető formátum vázlatverzióját futtatni tudja, [futta
 7. Az **Elektronikus jelentési paraméterek** párbeszédablakban válassza az **OK** lehetőséget.
 8. A létrehozott kimenet Word-formátumban jelenik meg, és a feldolgozott kifizetések adatait tartalmazza. Elemezze a létrehozott kimenetet.
 
-    ![Létrehozott kimenet Word-formátumban](../media/er-design-configuration-word-2016-11-image06.png)
+    ![Létrehozott kimenet Word-formátumban.](../media/er-design-configuration-word-2016-11-image06.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
-- [Új ER-konfiguráció tervezése Word-formátumú jelentések generálásához](../er-design-configuration-word.md)
+- [Új ER-konfiguráció tervezése Word formátumú jelentések generálásához](../er-design-configuration-word.md)
 - [Beágyazott képek és alakzatok az ER-rel generált dokumentumokban](../electronic-reporting-embed-images-shapes.md#embed-an-image-in-a-word-document)
 
 

@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: de317c2fae4607f5b8b887dd5e866d812043dcd3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a5f35dc48dbdf89e963108e9e8ef6faec326f970
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5799517"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349722"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Csatornaközi megosztás engedélyezése és használata
 
@@ -48,15 +48,15 @@ A következő lépésekkel engedélyezheti a csatornaközi megosztást a Commerc
 1. Lépjen a **Webhelybeállítások \> Funkciók** elemre.
 1. Állítsa a **Csatornaközi** funkciót **Be** értékre.
 
-    ![„Be” értékre állított Csatornaközi opció a Commerce webhelyszerkesztőben](./media/enabling-cross-channel-sharing.png)
+    ![„Be” értékre állított Csatornaközi opció a Commerce webhelyszerkesztőben.](./media/enabling-cross-channel-sharing.png)
 
 Miután engedélyezte a csatornaközi megosztást, a csatornaközi adatok megjelennek a **Csatornák** szakaszban a **Webhelybeállítások \> Funkciók** alatt, ahogy az alábbi ábrán látható.
 
-![A csatornák megjelenített adatai a csatornaközi megosztás engedélyezése után](./media/channels-cross-channel.png)
+![A csatornák megjelenített adatai a csatornaközi megosztás engedélyezése után.](./media/channels-cross-channel.png)
 
 A csatornaközi megosztás engedélyezését követően a Commerce webhelyszerkesztő jobb felső sarkában a **Csatorna** mezőben megjelenik egy **Csatornaközi online áruház** opció, amely a csatornaközi tartalom kezelésére használható, amint azt a következő ábra mutatja.
 
-![A Csatornaközi online áruház opció a Csatornák mezőben, a csatornaközi megosztás engedélyezése után](./media/cross-channel-dropdown.png)
+![A Csatornaközi online áruház opció a Csatornák mezőben, a csatornaközi megosztás engedélyezése után.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Csatornaközi tartalom létrehozása és használata
 

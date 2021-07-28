@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f1a405f5bbf8728876213e6c726ae41ebf809626
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: acfde5961f481f5d939f0c6388b80edfd65ee339
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810486"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351417"
 ---
 # <a name="outbound-workload-visualization"></a>Kimenő munkaterhelések megjelenítése
 
@@ -60,7 +60,7 @@ Kimenő munkaterhelés-vizualizáció beállításához kövesse az alábbi lép
     - **Tartalmazott napok** – Adja meg a azon múltbéli napok számát, amelyekhez a diagramot létre kell hozni.
     - **Munkarendelés típusa** – Válassza ki a szűrni kívánt kimenő munkarendelés-típusokat.
 
-    ![Szűrők konfigurálása oldal](media/work-viz-filters-1.png "Szűrők konfigurálása oldal")
+    ![Szűrők konfigurálása oldal.](media/work-viz-filters-1.png "Szűrők konfigurálása oldal")
 
 1. Zárja be a **Szűrők konfigurálása** oldalt, hogy visszatérjen a **Kimenő munkaterhelés vizualizációi** lapra.
 
@@ -70,11 +70,11 @@ Kimenő munkaterhelés-vizualizáció beállításához kövesse az alábbi lép
     - **Utolsó frissítés** – Ez a mező azt a dátumot és időpontot jeleníti meg, amikor a diagramon szereplő adatokat utoljára frissítették.
     - **Becsült/tényleges idő** – Ha a munkanormák a rendszerben be vannak állítva, akkor a beállítás *Igen* értékre állításával megjelenítheti a diagram egyes oszlopainak felső részén a felhalmozott becsült kitárolási időket. Ha nem használ munkanormákat, akkor ez a beállítás nem érhető el.
 
-    ![Példa vizualizáció](media/work-viz-chart.png "Példa vizualizáció")
+    ![Példa vizualizáció.](media/work-viz-chart.png "Példa vizualizáció")
 
 1. A kapcsolódó munkasor részletes adatainak megtekintéséhez válassza ki a diagram egyik sorát.
 
-    ![Munkasor adatai](media/work-viz-work-details.png "Munkasor adatai")
+    ![Munkasor adatai.](media/work-viz-work-details.png "Munkasor adatai")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Példa: A zónákhoz tartozó kimenő munkaterhelés megjelenítése
 
@@ -92,7 +92,7 @@ Ebben a példában egy vizuális megjelenítést szeretne beállítani, amely az
 
 A következő ábra az eredményül kapott diagramot szemlélteti.
 
-![Zóna és munkaállapot vizualizációja](media/work-viz-chart.png "Zóna és munkaállapot vizualizációja")
+![Zóna és munkaállapot vizualizációja.](media/work-viz-chart.png "Zóna és munkaállapot vizualizációja")
 
 Ez a diagram két olyan zónát mutat be, amelyek a **SZINT** és az **ÖMLESZTETT** elnevezésekkel rendelkeznek, valamint az **Üres** nevű zónát. Az **Üres** zóna minden olyan munkasort jelöl, amely nem tagja egy zónának. A diagram mindig **Üres** állapottal jeleníti meg az összes nem kapcsolódó szűrt adatot, hogy a lehető legnagyobb láthatóságot biztosítsa. A **SZINT** zónában a diagram három lezárt sort és négy nyitott sort mutat be. Az **ÖMLESZTETT** zónában a diagram négy lezárt sort és egy nyitott sort, valamint 24 érvénytelenített sort mutat be. Végezetül a diagram nyolc olyan lezárt sort jelenít meg, amelyek nem részei egy zónának sem, ezért **Üres** állapottal szerepelnek.
 

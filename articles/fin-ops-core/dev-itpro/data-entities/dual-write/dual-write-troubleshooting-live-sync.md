@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 1c0dfebb3ef442f67d8489d7aed00305c02cf410
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748897"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350788"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Élő szinkronizálási problémák elhárítása
 
@@ -73,21 +73,21 @@ Ha mindkét oldalon szerepel az adat, és megerősítette, hogy a probléma nem 
 
 Előfordulhat, hogy a következő példához hasonló „Hibás kérés” hibaüzenet jelenik meg, amikor egy Finance and Operations alkalmazásban hoz létre adatokat.
 
-![Példa a Hibás kérés hibaüzenetére](media/error_record_id_source.png)
+![Példa a Hibás kérés hibaüzenetére.](media/error_record_id_source.png)
 
 A hiba elhárításához a hiányzó jogosultság engedélyezéséhez társítania kell a megfelelő biztonsági szerepkört a megfeleltetett Dynamics 365 Sales vagy Dynamics 365 Customer Service üzleti egység csapatához a hiányzó jogosultság engedélyezéséhez.
 
 1. A Finance and Operations alkalmazásban keresse meg azt az üzleti egységet, amely hozzá van rendelve az Adatintegrációs csatlakozókészletben.
 
-    ![Szervezet leképezése](media/mapped_business_unit.png)
+    ![Szervezet leképezése.](media/mapped_business_unit.png)
 
 2. Jelentkezzen be a környezetbe a modellvezérelt alkalmazásban s Dynamics 365-ban, nyissa meg a **Beállítások \> Biztonság** lehetőséget, és keresse meg a leképezett üzleti egység csapatát.
 
-    ![A hozzárendelt üzleti egység csapata](media/setting_security_page.png)
+    ![A hozzárendelt üzleti egység csapata.](media/setting_security_page.png)
 
 3. Nyissa meg a csapat lapját szerkesztésre, majd válassza a **Szerepkörök kezelése** parancsot, a **Csapat szerepköreinek kezelése** párbeszédpanel megnyitásához.
 
-    ![Szerepkörök kezelése gomb](media/manage_team_roles.png)
+    ![Szerepkörök kezelése gomb.](media/manage_team_roles.png)
 
 4. Rendelje hozzá a megfelelő táblákhoz az olvasási/írási jogosultsággal rendelkező szerepkört, majd kattintson az **OK** gombra.
 

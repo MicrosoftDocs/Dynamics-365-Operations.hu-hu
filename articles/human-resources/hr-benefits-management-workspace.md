@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cf2c41af6aa8e77eff819cfacc3459ead290642b
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 45f776238fbb8e028e8d5b2f342b7d27009c686d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193431"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353614"
 ---
 # <a name="benefits-management-workspace"></a>Juttatáskezelési munkaterület
 
@@ -31,7 +31,7 @@ ms.locfileid: "6193431"
 Ez a témakör a Dynamics 365 Human Resources **Juttatáskezelési munkaterületét** részletezi.
 
 > [!NOTE]
-> A **Juttatáskezelés** munkaterület megtekintéséhez először engedélyeznie kell a Funkciókezelés **(Előzetes verzió) Juttatáskezelési munkaterület** funkcióját. Az előzetes funkciók aktiválásával kapcsolatos további részletekért tekintse meg a [Szolgáltatások kezelése](hr-admin-manage-features.md) oldalt.<br><br>![Juttatáskezelési munkaterület engedélyezése](./media/hr-benefits-management-workspace-enable.png)
+> A **Juttatáskezelés** munkaterület megtekintéséhez először engedélyeznie kell a Funkciókezelés **(Előzetes verzió) Juttatáskezelési munkaterület** funkcióját. Az előzetes funkciók aktiválásával kapcsolatos további részletekért tekintse meg a [Szolgáltatások kezelése](hr-admin-manage-features.md) oldalt.<br><br>![Juttatáskezelési munkaterület engedélyezése.](./media/hr-benefits-management-workspace-enable.png)
 
 A **Juttatáskezelés** munkaterület használatával gyorsan megtekinthetők azok a juttatások, amelyekre figyelni kell. Ezen az oldalon a következők láthatók:
 
@@ -43,13 +43,13 @@ A **Juttatáskezelés** munkaterület használatával gyorsan megtekinthetők az
 - Dolgozók aktív életeseményekkel
 - Azok a dolgozók, akiknek nyitott regisztrációjuk van, és egyetlen konstrukciót sem választottak
 
-![Juttatáskezelési munkaterület](./media/hr-benefits-management-workspace.png)
+![Juttatáskezelési munkaterület.](./media/hr-benefits-management-workspace.png)
 
 ## <a name="view-action-items"></a>Műveletelemek megtekintése
 
 A művelet elemeit csempe vagy lap kiválasztásával lehet megtekinteni. Ha kiválaszt egy lapot, a munkaterületi oldalon megtekintheti és kiválaszthatja a dolgozókat.
 
-![Műveletelemek](./media/hr-benefits-management-workspace-action-items.png)
+![Műveletelemek.](./media/hr-benefits-management-workspace-action-items.png)
 
 Ha egy csempét választ ki, akkor az arra a területre vonatkozó oldalra lép. Például ezen csempék valamelyikének kiválasztása a **Dolgozói juttatási konstrukció** oldalt jeleníti mega, azokra az alkalmazottakra szűrve, akik esetében műveletet kell végeznie:
 
@@ -58,21 +58,21 @@ Ha egy csempét választ ki, akkor az arra a területre vonatkozó oldalra lép.
 - **Juttatáshoz beléptetve**
 - **Az újonnan felvett dolgozó nincs beléptetve**
 
-![Dolgozói juttatási konstrukciók](./media/hr-benefits-management-workspace-plans.png)
+![Dolgozói juttatási konstrukciók.](./media/hr-benefits-management-workspace-plans.png)
 
 Az **Aktív életesemények** és a **Jövőbeli életesemények** kiválasztása az aktív vagy jövőbeli életesemények listájára viszi.
 
-![Életesemények](./media/hr-benefits-management-workspace-life-events.png)
+![Életesemények.](./media/hr-benefits-management-workspace-life-events.png)
 
 ## <a name="processing"></a>Feldolgozás folyamatban
 
 A felvételi jogosultságok, az életesemények és a díjváltozások frissítéseinek feldolgozásához jelölje ki a megfelelő elemet a navigációs sávon.
 
-![Feldolgozás folyamatban](./media/hr-benefits-management-workspace-processing.png)
+![Feldolgozás folyamatban.](./media/hr-benefits-management-workspace-processing.png)
 
 A folyamat eredményeinek megtekintéséhez válassza a **Folyamateredmények** lehetőséget az oldalon.
 
-![Folyamateredmények](./media/hr-benefits-management-workspace-process-results.png)
+![Folyamateredmények.](./media/hr-benefits-management-workspace-process-results.png)
 
 A juttatások feldolgozásával kapcsolatos további információkért lásd:
 
@@ -86,13 +86,13 @@ A juttatások feldolgozásával kapcsolatos további információkért lásd:
 
 Ha egy másik juttatási időszakot is meg kell tekinteni, válassza ki az **Időszak** legördülő menüből.
 
-![Időszak módosítása](./media/hr-benefits-management-workspace-period.png)
+![Időszak módosítása.](./media/hr-benefits-management-workspace-period.png)
 
 ## <a name="view-more-options"></a>További beállítások megtekintése
 
 További adatok és műveletek megtekintéséhez válassza a **Hivatkozások** lehetőséget.
 
-![Hivatkozások](./media/hr-benefits-management-workspace-links.png)
+![Hivatkozások.](./media/hr-benefits-management-workspace-links.png)
 
 ## <a name="see-also"></a>Lásd még
 

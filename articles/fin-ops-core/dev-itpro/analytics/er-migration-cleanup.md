@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 97dbb625fc312548fb266b2ef6643a2b8e2b0f81
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 8b6e81e47cd781bbe856676b1cecb50b8ee1adfc
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750886"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351049"
 ---
 # <a name="er-migration-cleanup"></a>ER-áttelepítéshez tartozó adattisztítás 
 
@@ -30,11 +30,11 @@ A Finance példányok kezelésekor úgy is dönthet, hogy áttelepíti az aktuá
 
 Ha tehát olyan ER formátumot próbál futtatni, amely sablon alapján üzleti dokumentumokat hoz létre, akkor kivétel történik, és a program értesíti a hiányzó sablonról. A program arra kéri, hogy használja az ER-áttelepítéshez tartozó adattisztítás lehetőséget, majd importálja újra az ER formátumkonfigurációt, amely a sablont tartalmazza.
 
-[![ER-formátum futtatása](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
+[![ER-formátum futtatása.](./media/er-migration-cleanup-run.png)](./media/er-migration-cleanup-run.png)
 
 Hasonló hibaüzenet jelenik meg, ha a **Konfigurációk** lapra navigál (**Szervezeti adminisztráció** \> **Elektronikus jelentéskészítési** \> **Konfigurációk**) és a konfigurációk fában egy sablont használó ER-formátumkonfigurációt próbál törölni.
 
-[![ER-formátum törlése](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
+[![ER-formátum törlése.](./media/er-migration-cleanup-delete.png)](./media/er-migration-cleanup-delete.png)
 
 Hajtsa végre a következő lépéseket a nem elérhető ER-sablonokkal kapcsolatos problémák megoldásához.
 
@@ -50,7 +50,7 @@ Hajtsa végre a következő lépéseket a nem elérhető ER-sablonokkal kapcsola
 >
 > Ha az **Áttelepítéshez tartozó adattisztítás** lehetőséggel töröl egy ER-formátumkonfigurációt, ha a hivatkozott sablon rendelkezésre álla a Blob-tárolóban, akkor a kapcsolódó konfigurációs műtermékeket csak az alkalmazás adatbázisában törli. A blob-tárolóban található sablon fizikai fájlja megmarad. A Blob-tárolóban lévő fájlok felülírása már nem engedélyezett. További tájékoztatás: [KB4557217](https://fix.lcs.dynamics.com/Issue/Details?kb=4557217). Ezenkívül már nem fogja tudni újra importálni a konfigurációkat, amelyeket az Áttelepítéshez tartozó adattisztítás funkcióval törölt ebben a környezetben. A probléma megoldásához meg kell keresnie a megfelelő fájlt a Blob-tárolóban, és manuálisan törölnie kell azt.
 
-[![ER-formátum importálása](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
+[![ER-formátum importálása.](./media/er-migration-cleanup-import.png)](./media/er-migration-cleanup-import.png)
 
 Egy hasonló hiba merülhet felé, ha az alkalmazás példányát egy másik helyre telepíti át, amelyet már többször áttelepítési célhelyként alkalmaztak, és amelyhez a Blob-tárhely már tartalmaz ER-sablonfájlokat.
 

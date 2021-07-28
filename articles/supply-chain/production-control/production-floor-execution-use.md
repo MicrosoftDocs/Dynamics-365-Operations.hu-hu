@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 0ece83a20a33a8f23e8700d1b5d680a11d64fea0
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: c8c50a9a6f9f3c6582e9fd0f28080a3259faab21
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5907717"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6349770"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -32,7 +32,7 @@ Mielőtt a dolgozók elkezdhetik az eszköz használatát, egy felettesnek vagy 
 
 Az eszköz előkészítését követően megjelenik a bejelentkezési lap. Ez a lap a helyi munkacella feladatainak állapotát jeleníti meg. Ez az információ időszakosan frissül. A lapra a dolgozók a jelvényazonosítójukkal lépnek be. Annak ellenére, hogy a dolgozóknak nincs felhasználói fiókjuk a Supply Chain Management programhoz, rendelkezniük kell egy olyan *Munkaidő-nyilvántartásba vett munkavállalói* fiókkal, amelyet a bejelentkezéskor használni tudnak.
 
-![A termelési üzem végrehajtási felületének bejelentkezési oldala](media/pfei-sign-in-page.png "A termelési üzem végrehajtási felületének bejelentkezési oldala")
+![A termelési üzem végrehajtási felületének bejelentkezési oldala.](media/pfei-sign-in-page.png "A termelési üzem végrehajtási felületének bejelentkezési oldala")
 
 A témakör többi része leírja, hogy a dolgozók hogyan használják a kezelőfelületet.
 
@@ -40,7 +40,7 @@ A témakör többi része leírja, hogy a dolgozók hogyan használják a kezel�
 
 A **Minden feladat** lap egy feladatlistát tartalmaz, amelyen látható az összes olyan termelési feladat, amely állapota *Nincs elindítva*, *Leállítva*, vagy *Elindítva*. (Ez a lapnév testreszabható, és az ön rendszerénél más lehet.)
 
-![Minden feladat lap](media/pfei-all-jobs-tab.png "Minden feladat lap")
+![Minden feladat lap.](media/pfei-all-jobs-tab.png "Minden feladat lap")
 
 A Feladatlista az alábbi oszlopokkal rendelkezik. A számok az előzőekben bemutatott számoknak felelnek meg.
 
@@ -59,7 +59,7 @@ A Feladatlista az alábbi oszlopokkal rendelkezik. A számok az előzőekben bem
 
 Az **Aktív feladatok** lapok felsorolják azokat a feladatokat, amelyeket a bejelentkezett dolgozó már megkezdett. (Ez a lapnév testreszabható, és az ön rendszerénél más lehet.)
 
-![Aktív feladatok lap](media/pfei-active-jobs-tab.png "Aktív feladatok lap")
+![Aktív feladatok lap.](media/pfei-active-jobs-tab.png "Aktív feladatok lap")
 
 Az aktív feladatokat tartalmazó lista az alábbi oszlopokkal rendelkezik.
 
@@ -76,7 +76,7 @@ Az aktív feladatokat tartalmazó lista az alábbi oszlopokkal rendelkezik.
 
 A **Saját gép** lapon a dolgozók kiválasztják azt az eszközt, amely egy géperőforráshoz kapcsolódik a **Minden feladat** lapon beállított szűrőn belül. A dolgozó ezután megtekintheti a kiválasztott eszköz állapotát: legfeljebb négy kijelölt számláló értékét és a közelmúltbeli karbantartási kérések és a regisztrált leállások listáját olvassa be. A dolgozó a kiválasztott eszköz karbantartását is kérheti, valamint regisztrálhatja és szerkesztheti a gép leállását. (Ez a lapnév testreszabható, és az ön rendszerénél más lehet.)
  
-![Saját gép lap](media/pfei-my-machine-tab.png "Saját gép lap")
+![Saját gép lap.](media/pfei-my-machine-tab.png "Saját gép lap")
 
 A **Saját gép lap** a következő oszlopokat tartalmazza. A számok az előzőekben bemutatott számoknak felelnek meg.
 
@@ -87,7 +87,7 @@ A **Saját gép lap** a következő oszlopokat tartalmazza. A számok az előző
 
 1. **Beállítások** – A fogaskerekek ikonjának kiválasztásával egy párbeszédpanel nyílik meg, amelyen kiválaszthatja, hogy a kiválasztott gépeszköz mely számlálóit kell megtekinteni. Ezeknek a számlálóknak az értékei az **Eszközkezelés lap** tetején jelennek meg. A **Beállítások** menü (a következő képernyőképen látható) segítségével akár négy számlálót engedélyezhet. Az engedélyezni kívánt számlálókhoz használja a csempe tetején található keresési mezőt, és válasszon ki egy számlálót. A keresési mező az **Eszközkezelés** lap tetején kijelölt eszközhöz társított összes számlálót listázza. Állítsa be az egyes számlálókat az **Összesített** érték vagy a számláló legutóbbi **Tényleges** értékének figyeléséhez. Ha például olyan számlálót állít be, amely nyomon követi, hogy a gép hány órát fut, akkor azt **Összesített** értékre kell állítania. Ha a legutóbb frissített hőmérséklet vagy hőmérséklet mérésére állít be számlálót, akkor a **Tényleges** értékre kell beállítania. Az **OK** gombra kattintva mentse a beállításokat, és zárja be a párbeszédpanelt.
 
-    ![Saját gép lap beállításai](media/pfei-my-machine-tab-settings.png "Saját gép lap beállításai")
+    ![Saját gép lap beállításai.](media/pfei-my-machine-tab-settings.png "Saját gép lap beállításai")
 
 1. **Karbantartás kérése** – Ezzel a gombbal megnyithat egy párbeszédpanelt, ahol létrehozhatja a karbantartási kéréseket. Meg lehet adni egy leírást és megjegyzést. A kéréssel egy Supply Chain Management felhasználó fog foglalkozni, aki ezt követően karbantartási munkarendelésre konvertálhatja a karbantartási kérést.
 1. **Leállás regisztrálása** – Ezzel a gombbal megnyithat egy párbeszédpanelt, ahol regisztrálhatja a gép leállását. Kiválaszthatja az okkódot, és megadhatja a leállás dátumát/tartományát. A gép leállási idejének regisztrációja a gépi eszköz hatékonyságának kiszámítására használható.
@@ -98,7 +98,7 @@ A **Saját gép lap** a következő oszlopokat tartalmazza. A számok az előző
 
 A dolgozók egy termelési feladatot úgy indíthatnak el, hogy kijelölnek egy feladatot a **Minden feladat** lapon, majd a **Feladat megkezdése** lehetőséget választják a **Feladat megkezdése** párbeszédpanel megnyitásához.
 
-![Feladat megkezdése párbeszédpanel](media/pfei-start-job-dialog.png "Feladat megkezdése párbeszédpanel")
+![Feladat megkezdése párbeszédpanel.](media/pfei-start-job-dialog.png "Feladat megkezdése párbeszédpanel")
 
 A dolgozók a **Feladat megkezdése** párbeszédpanelt használják a termelési mennyiség visszaigazolására, majd a feladat elindítására. A dolgozók a mennyiséget a **Mennyiség** mező kiválasztásával, majd a megjelenő numerikus billentyűzet használatával módosíthatják. A dolgozók ezt követően az **Elindítás** lehetőség kiválasztásával indíthatják el a feladatot. A **Feladat megkezdése** párbeszédpanel bezárulm és a feladat bekerül az **Aktív feladatok** lapra.
 
@@ -108,13 +108,13 @@ A dolgozók bármilyen állapotú feladatot elindíthatnak. Amikor egy dolgozó 
 
 Amikor egy dolgozó befejezte vagy részben befejezte a feladatot, akkor az **Aktív feladatok** lapon kiválaszthatna az **Előrehaladás jelentése** lehetőséget, hogy jelentse a legyártott jó mennyiséget. Ezután az **Előrehaladás jelentése** párbeszédpanelen a dolgozó beírja a jó mennyiséget a numerikus billentyűzet segítségével. Alapértelmezetten a mennyiségben semmi nem látható. A mennyiség megadása után a dolgozó a feladatra vonatkozó állapotot frissítheti az alábbiak valamelyikére: *Folyamatban*, *Leállítva* vagy *Befejezve*.
 
-![Az Előrehaladás jelentése párbeszédpanel](media/pfei-report-progress-dialog.png "Az Előrehaladás jelentése párbeszédpanel")
+![Az Előrehaladás jelentése párbeszédpanel.](media/pfei-report-progress-dialog.png "Az Előrehaladás jelentése párbeszédpanel")
 
 ## <a name="reporting-scrap"></a>Selejt jelentése
 
 Amikor egy dolgozó befejezte vagy részben befejezte a feladatot, akkor az **Aktív feladatok** lapon kiválaszthatna a **Selejtek jelentése** lehetőséget, hogy jelentse a legyártott leselejtezett mennyiséget. Ezután a **Selejtek jelentése** párbeszédpanelen a dolgozó beírja a leselejtezett mennyiséget a numerikus billentyűzet segítségével. A dolgozó az okot (*Semmilyen*, *Gép*, *Kezelő* vagy *Anyag*) is kiválasztja.
 
-![A Selejtek jelentése párbeszédpanel](media/pfei-report-scrap-dialog.png "A Selejtek jelentése párbeszédpanel")
+![A Selejtek jelentése párbeszédpanel.](media/pfei-report-scrap-dialog.png "A Selejtek jelentése párbeszédpanel")
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Feladat befejezése és új feladat megkezdése
 

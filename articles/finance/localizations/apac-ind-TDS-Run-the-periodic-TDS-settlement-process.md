@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: cfab08a4190bf51518bd4a9b445b229a5081e87d
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: bfa7dc9c2a86b5bd8783327c0e7cfa6b8b9ddd4c
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6023287"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358338"
 ---
 # <a name="run-the-periodic-tds-settlement-process"></a>Időszakos TDS-elszámolási folyamat futtatása
 
@@ -31,7 +31,7 @@ Ez a témakör elmagyarázza, hogyan kell elszámolni az időszakos forrásnál 
 
 1. Lépjen az **Adó \> Bevallások \> Adóelőleg \> Adóelőleg kifizetése** részhez.
 
-    [![Adóelőleg-kifizetés párbeszédpanel](./media/apac-ind-TDS-47.png)](./media/apac-ind-TDS-47.png)
+    [![Adóelőleg-kifizetés párbeszédpanel.](./media/apac-ind-TDS-47.png)](./media/apac-ind-TDS-47.png)
 
 2. Az **Adóelőleg-fizetési** párbeszédpanel **Adótípus** mezőjében válassza a **TDS** lehetőséget.
 3. Az **Adószámlaszám (TAN)** mezőben válassza az Adószámlaszámot (TAN) az elszámolási folyamat futtatásához.

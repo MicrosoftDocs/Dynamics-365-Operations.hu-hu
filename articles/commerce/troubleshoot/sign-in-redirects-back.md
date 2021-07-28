@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a1d0ae4e487c391020947c607d5d7cb5d1ba6af4
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: e83b381e73d28dce0a438a37d5f8ed23b4957adf
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020603"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6350378"
 ---
 # <a name="sign-in-link-redirects-back-to-an-e-commerce-site"></a>Bejelentkezési hivatkozás egy e-kereskedelmi webhelyre irányít át
 
@@ -43,7 +43,7 @@ Kövesse az alábbi lépéseket, hogy meggyőződjön arról, hogy a válasz URL
 1. Válassza ki az Azure AD B2C beállítása során létrehozott alkalmazást.
 1. A **Válasz URL** pontban győződjön meg arról, hogy a lista a webhely tartományának URL-címét és az e-kereskedelem által generált URL-címet is tartalmazza, amint azt az alábbi ábra mutatja.
 
-    ![Azure AD B2C válasz URL bejegyzései](media/aad-b2c-reply-url.jpg)
+    ![Azure AD B2C válasz URL bejegyzései.](media/aad-b2c-reply-url.jpg)
 
 > [!NOTE]
 > A webhelytartomány URL-címének és az e-kereskedelem által generált URL-címnek egyaránt érvényes URL-formátummal kell rendelkeznie, amely nem tartalmaz vezető vagy záró perjeleket.

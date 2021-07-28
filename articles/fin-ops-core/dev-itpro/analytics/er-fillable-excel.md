@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1c8d939fef4fd0f9e189ca37318c2c0306511785
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 96e1575e2237cab481c368083da1e60fec612087
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893908"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359029"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
@@ -39,7 +39,7 @@ Amikor egy új ER formátumú konfigurációt hoz létre egy kimenő dokumentum 
 
 A konfiguráció ER formátumkomponensének konfigurálásához válassza **Tervező** lehetőséget a művelet panelen, majd nyissa meg az ER-formátumkomponenst az ER operációs tevezőben.
 
-![Konfigurációk oldala](./media/er-excel-format-add-format.png)
+![Konfigurációk oldala.](./media/er-excel-format-add-format.png)
 
 ## <a name="excel-file-component"></a>Excelfájl-komponens
 
@@ -47,14 +47,14 @@ A konfiguráció ER formátumkomponensének konfigurálásához válassza **Terv
 
 Ahhoz, hogy a kimenő dokumentumokat Excel-formátumban hozza létre, egy **Excel\\fájl** komponenst kell hozzáadnia a konfigurált ER-formátumhoz.
 
-![Excel\fájl-komponens](./media/er-excel-format-add-file-component.png)
+![Excel\fájl-komponens.](./media/er-excel-format-add-file-component.png)
 
 A kimenő dokumentumok elrendezésének megadásához csatolnia kell egy olyan Excel-munkafüzetet, amelynek .xlsx kiterjesztéssel rendelkezik az **Excel\\fájlt** tartalmazó komponense, mint a kimenő dokumentumok sablonja.
 
 > [!NOTE]
 > A sablon manuális csatolása esetén olyan [dokumentumtípust](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) dokumentumtípust kell használnia, amely az adott célra be van állítva az [ER paramétereiben](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
-![Melléklet hozzáadása a Excel\fál-komponenshez](./media/er-excel-format-add-file-component2.png)
+![Melléklet hozzáadása az Excel\fál-komponenshez.](./media/er-excel-format-add-file-component2.png)
 
 Ha meg szeretné adni, hogy a rendszer hogyan töltse ki a csatolt sablont a konfigurált ER-formátum futtatásakor, akkor hozzá kell adnia a beágyazott **Lapok**, **Tartomány** és **Cella** komponenseket az **Excel\\fájl** komponenshez. Minden beágyazott komponenshez társítani kell egy elem elnevezésű Excelt.
 
@@ -62,7 +62,7 @@ Ha meg szeretné adni, hogy a rendszer hogyan töltse ki a csatolt sablont a kon
 
 Kiválaszthatja az **Importálás Excelből** lehetőséget a Műveleti panel **Importálás** lapfülén, ha egy új sablont üres ER-formátumba importál. Ebben a példában a program automatikusan létrehoz egy **Excel\\fájl** komponenst, és az importált sablont hozzárendeli a program. A program az összes szükséges ER-komponenst automatikusan létrehozza a felismert Excel nevű tételek listájának alapján.
 
-![Az Importálás az Excelből lehetőség kiválasztása](./media/er-excel-format-import-template.png)
+![Az Importálás az Excelből lehetőség kiválasztása.](./media/er-excel-format-import-template.png)
 
 > [!NOTE]
 > Ha létre szeretné hozni az opcionális **Lap** elemet szerkeszthető ER-formában, akkor állítsa az **Excel lapformátum elem létrehozása** lehetőséget **Igen** értékűre.
@@ -79,7 +79,7 @@ Az ER műveleti tervező **Leképezés** lapján beállíthatja az **Engedélyez
 - Ha az **Engedélyezés** tulajdonság kifejezése úgy van beállítva, hogy futás közben **Igaz** értéket ad vissza, vagy ha nincs megadva a kifejezés, akkor a rendszer a megfelelő munkalapot helyezi a létrejövő dokumentumba.
 - Ha az **Engedélyezve** tulajdonság kifejezése úgy van beállítva, hogy futás közben **Hamis** értéket ad vissza, akkor a létrejövő dokumentum nem tartalmaz munkalapot.
 
-![Példa a lap komponensére](./media/er-excel-format-sheet-component.png)
+![Példa a Lap összetevőre.](./media/er-excel-format-sheet-component.png)
 
 ## <a name="range-component"></a>Tartomány-összetevő
 
@@ -182,7 +182,7 @@ Kiválaszthatja az **Frissítés Excelből** lehetőséget a Műveleti panel **I
 >
 > Ha a szerkeszthetővé teszi az ER-formátumot eredetileg tartalmazó **Lap** elemeit, akkor javasolt az **Excel lapformátum elem létrehozása** beállítás **Igen** értékre állítása a frissített sablonok importálásakor. Ellenkező esetben a program az eredeti **Lap** elemének minden beágyazott elemét a semmiből hozza létre. Ennek megfelelően az újra létrehozott formátumú elemek összes kötése elvész a frissített ER-formátumban.
 
-![Az Excel lapformátum létrehozása elemopció az Excel párbeszédpanel frissítésében](./media/er-excel-format-update-template.png)
+![Az Excel lapformátum létrehozása elemopció a Frissítés az Excel programból párbeszédpanelen.](./media/er-excel-format-update-template.png)
 
 Ha további tájékoztatást szeretne erről a funkcióról, kövesse az [Elektronikus jelentéskészítési formátumok módosítása az Excel-sablonok újraalkalmazásával](modify-electronic-reporting-format-reapply-excel-template.md) dokumentum lépéseit.
 
@@ -190,7 +190,7 @@ Ha további tájékoztatást szeretne erről a funkcióról, kövesse az [Elektr
 
 Ha érvényesít egy módosítható ER-formátumot, akkor következetesség-ellenőrzéssel győződjön meg arról, hogy a jelenleg használt Excel-sablonban szerepel az Excel-név. A program értesíti a következetlenségekről. Bizonyos következetlenségek esetén a program felajánlja a problémák automatikus javítását.
 
-![Ellenőrzési hibaüzenet](./media/er-excel-format-validate.png)
+![Ellenőrzési hibaüzenet.](./media/er-excel-format-validate.png)
 
 ## <a name="control-the-calculation-of-excel-formulas"></a>Excel-képletek számításának ellenőrzése
 
@@ -209,7 +209,7 @@ Az Microsoft Excel munkafüzet formátumú kimenő dokumentumok létrehozásakor
 1. A megadott ER-konfigurációk segítségével nyomtatható szabadszöveges számlát (FTI) [generálhat](er-generate-printable-fti-forms.md).
 2. Ellenőrizze a létrehozott dokumentum láblécét. A dokumentum az aktuális oldalszámmal és a dokumentumok összesített oldalszámával kapcsolatos információkat tartalmaz.
 
-    ![Excel-formátumban létrehozott dokumentum láblécének felülvizsgálata](./media/er-fillable-excel-footer-1.gif)
+    ![Excel-formátumban létrehozott dokumentum láblécének felülvizsgálata.](./media/er-fillable-excel-footer-1.gif)
 
 3. Az ER-formátumtervezőben [nyissa meg](er-generate-printable-fti-forms.md#features-that-are-implemented-in-the-sample-er-format) felülvizsgálatra az ER mintaformátumot.
 
@@ -222,7 +222,7 @@ Az Microsoft Excel munkafüzet formátumú kimenő dokumentumok létrehozásakor
 
     - A második **Sztring** összetevő kitölti az aktuális oldalszámot és az aktuális dokumentum összesített oldalszámát tartalmazó szöveget.
 
-    ![A Lábléc ER formátumösszetevő felülvizsgálata a Formátumtervező lapon](./media/er-fillable-excel-footer-2.png)
+    ![A Lábléc ER-formátum-összetevő felülvizsgálata a Formátumtervező lapon.](./media/er-fillable-excel-footer-2.png)
 
 4. Az ER-mintaformátum testreszabása az aktuális lábléc módosításához:
 
@@ -237,14 +237,14 @@ Az Microsoft Excel munkafüzet formátumú kimenő dokumentumok létrehozásakor
         1. Adjon hozzá egy **Sztring** összetevőt, amely a jobbra igazítja a feldolgozási dátumot, és 8 pontos "Segoe UI Regular" betűtípussal (**"&R&"Segoe UI,Regular"&8"**) jeleníti meg.
         2. Adjon hozzá egy **Sztring** összetevőt, amely egyéni formátumban tölti ki a feldolgozási dátumot (**"&nbsp;"&DATEFORMAT(SESSIONTODAY(), "yyyy-MM-dd")**).
 
-        ![A Lábléc ER formátumösszetevő felülvizsgálata a Formátumtervező lapon](./media/er-fillable-excel-footer-3.png)
+        ![A Lábléc ER-formátum-összetevő felülvizsgálata a Formátumtervező lapon.](./media/er-fillable-excel-footer-3.png)
 
     4. [Töltse ki](er-quick-start2-customize-report.md#CompleteDerivedFormat) a származtatott **Szabadszöveges számla (Excel) egyéni** ER-formátum vázlatverzióját.
 
 5. [Konfigurálja](er-generate-printable-fti-forms.md#configure-print-management) a Nyomtatáskezelés lehetőséget a származtatott **Szabadszöveges számla (Excel) egyéni** ER-formátum használatával az ER-mintaformátum helyett.
 6. Hozzon létre egy nyomtatható FTI-dokumentumot, és vizsgálja felül a létrehozott dokumentum láblécét.
 
-    ![Excel-formátumban létrehozott dokumentum láblécének felülvizsgálata](./media/er-fillable-excel-footer-4.gif)
+    ![Excel-formátumban létrehozott dokumentum láblécének felülvizsgálata.](./media/er-fillable-excel-footer-4.gif)
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f624ddc2e7b8f59a2ba002d757ce68ee222a7223
-ms.sourcegitcommit: 60afcd85b3b5b9e5e8981ebbb57c0161cf05e54b
+ms.openlocfilehash: 9c26b45fc94d9983157eef9af5c0af6845d24056
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6216586"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356751"
 ---
 # <a name="set-up-fixed-assets"></a>Tárgyi eszközök beállítása
 
@@ -32,7 +32,7 @@ A Tárgyi eszközök lehetőségen belül a paraméterek az általános viselked
 
 A tárgyi eszközök létrehozásukkor egy cikkcsoporthoz társulnak. Alapértelmezés szerint a tárgyieszköz-csoporthoz rendelt könyveket a tárgyi eszközhöz társítja a rendszer. A főkönyvbe történő feladásra konfigurált könyveket a rendszer egy feladási profillal társítja. A főkönyvi számlákat a feladási profilban határozza meg a rendszer könyvenként, és a tárgyieszköz-tranzakciók feladásakor használja őket.
 
-![Tárgyieszköz-összetevők](./media/FAComponents_Updated.png)
+![Tárgyieszköz-összetevők.](./media/FAComponents_Updated.png)
 
 ## <a name="depreciation-profiles"></a>Értékcsökkenési profilok
 

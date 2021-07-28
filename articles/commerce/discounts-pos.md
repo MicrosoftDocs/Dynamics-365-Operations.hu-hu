@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: a9fd5a90d59ec329f8d4a2515e657fb822c098b0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: d251eb02e7d9db1e61ba8bb6531c90e0e23717b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792847"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356878"
 ---
 # <a name="show-discounts-in-pos"></a>Engedmények megjelenítése a pénztárban
 
@@ -33,7 +33,7 @@ A promóciók fontos szerepet játszanak a vásárlási döntéseket meghozó ve
 
 A Commerce egy "„Összes engedmény megtekintése” nevű műveletet tartalmaz. Ez a művelet az üzletben éppen elérhető összes engedményt jeleníti meg. Az „Összes engedmény megtekintése” művelet leképezhető a pénztár (POS) egyik gombjára, és ezt a gombot fel lehet venni **Üdvözlő** oldalra vagy a **Tranzakció** lapra. A következő ábra a megnyitott **Összes kedvezmény** oldalt szemlélteti.
 
-![Minden kedvezmény oldal](./media/View_all_discounts.png "Minden kedvezmény oldal")
+![Minden kedvezmény oldal.](./media/View_all_discounts.png "Minden kedvezmény oldal")
 
 A kedvezmények megjelenítéséhez a rendszer minden olyan engedményt megkeres, amely megfelel a következő feltételek valamelyikének:
 
@@ -61,11 +61,11 @@ A következő illusztrációk mutatják be azt a logikát, amely meghatározza, 
 
 A következő ábra bemutatja azt a logikát, amely akkor használatos, ha az engedmény vezérlőjének beállítása **Legjobb ár és kombináció a prioritáson belül, ne legyen kombinálás prioritások között**.
 
-![A Legjobb ár és kombináció a prioritáson belül, ne legyen kombinálás prioritások között logikája](./media/Model_1.png "A Legjobb ár és kombináció a prioritáson belül, ne legyen kombinálás prioritások között logikája").
+![A Legjobb ár és kombináció a prioritáson belül, ne legyen kombinálás a prioritások között logikája.](./media/Model_1.png "A Legjobb ár és kombináció a prioritáson belül, ne legyen kombinálás prioritások között logikája").
 
 A következő ábra bemutatja azt a logikát, amely akkor használatos, ha az engedmény vezérlőjének beállítása **Csak a legjobb ár prioritáson belül, mindig legyen kombinálás prioritások között**.
 
-![A Csak a legjobb ár prioritáson belül, mindig legyen kombinálás prioritások között logikája](./media/Model_2.png "A Csak a legjobb ár prioritáson belül, mindig legyen kombinálás prioritások között logikája").
+![A Csak a legjobb ár prioritáson belül, mindig legyen kombinálás a prioritások között logikája.](./media/Model_2.png "A Csak a legjobb ár prioritáson belül, mindig legyen kombinálás prioritások között logikája").
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

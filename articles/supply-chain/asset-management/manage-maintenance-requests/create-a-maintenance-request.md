@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 147388d5052bd14851bbddfbb7fe25297a43f104
-ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
+ms.openlocfilehash: 861899e4cd7565309ba513408346912642b7fa9a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "6102974"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354905"
 ---
 # <a name="create-maintenance-requests"></a>Karbantartási kérések létrehozása
 
@@ -52,7 +52,7 @@ Az **Aktív karbantartási kérések** részben a **Kapcsolódó információk**
 11. A **Megjegyzések** mezőbe írja be a szükséges további megjegyzéseket.
 12. Válassza ki az **OK** lehetőséget.
 
-![Karbantartási kérés létrehozása](media/03-manage-maintenance-requests.png)
+![Karbantartási kérés létrehozása.](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Karbantartási kérések utólagos feldolgozása
 
@@ -67,7 +67,7 @@ A részleteket nézetben különböző információkat lehet frissíteni. Íme n
 - Válassza ki a karbantartási feladat típusát, és ha ez az információ releváns, akkor egy kapcsolódó karbantartási feladat változatát és a szakmát.
 - A **Földrajzi szélesség** és **Földrajzi hosszúság** mezőkben adja meg a földrajzi koordinátákat. A karbantartási kéréshez hozzáadott koordinátákat a program automatikusan átviszi a kapcsolódó munkarendelésbe. 
 
-![Karbantartási kérések frissítése](media/04-manage-maintenance-requests.png)
+![Karbantartási kérések frissítése.](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Ha a karbantartási kérés létrehozásakor kiválaszt egy eszközt, akkor egy hiba adható hozzá a tárgyi eszközhöz. A karbantartási kérés létrehozása után, igény esetén több hibát is megadhat. Hibák hozzáadásához válassza ki az **Eszköz hibája** lehetőséget az **Összes karbantartási kérés** oldalon.

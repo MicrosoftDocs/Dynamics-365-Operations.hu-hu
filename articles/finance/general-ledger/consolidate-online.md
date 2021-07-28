@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 8a946a8325afebf76639991c60135d7425f5f211
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: eca0d30903985126412e1ae0b8e3232c3e4700f4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826762"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351684"
 ---
 # <a name="online-financial-consolidations"></a>Online pénzügyi konszolidációk
 
@@ -31,7 +31,7 @@ A beállítás befejezése után adja meg a konszolidáció részleteit a **Kons
 ## <a name="criteria"></a>Feltételek
 A **Feltételek** lapon a **Konszolidálás [Online]** oldalon megadhatja a számlákat, az időszakokat és a konszolidálandó adatok típusát.
 
-![Feltételek lap](./media/criteria-consolidate-online.png "Feltételek lap")
+![Feltételek lap.](./media/criteria-consolidate-online.png "Feltételek lap")
 
 Itt találja a lap különböző mezőinek magyarázatát:
 
@@ -57,16 +57,16 @@ Itt találja a lap különböző mezőinek magyarázatát:
 ## <a name="financial-dimensions"></a>Pénzügyi dimenziók
 A **Pénzügyi dimenziók** lapon meghatározhatja, hogy mely dimenzióknak kell szerepelnie a konszolidációs vállalatban. Dimenzió kiválasztásához állítsa a **Meghatározás** mezőt **Dimenzió** értékre, és adja meg a dimenzió sorrendjét a konszolidációs vállalatban.
 
-![Pénzügyi dimenziók lap](./media/financial-dimensions-cons.png "Pénzügyi dimenziók lap")
+![Pénzügyi dimenziók lap.](./media/financial-dimensions-cons.png "Pénzügyi dimenziók lap")
 
 Függetlenül attól, hogy milyen sorrendet határozott meg mindig a **Fő számla** lesz az első szegmens.
 
 ## <a name="legal-entities"></a>Jogi személyek
 A **Jogi személyek** lapon meghatározhatja, hogy mely vállalatoknak kell szerepelnie a konszolidációs vállalatban. Ezeknek a vállalatoknak tulajdonosi százalékát is meghatározza. Kisebb, mint 100 %-os tulajdoni hányadot ad meg, a megadott százalék összegezve lesz a konszolidációs vállalattal. Az esetleges átváltási különbségekhez az **Átváltási különbözetek számlatípusa** mező segítségével választhatja ki a fő számlát a **Számlák automatikus tranzakciókhoz** lapon.
 
-![Jogi személyek lap](./media/legal-entities-cons.png "Jogi személyek lap")
+![Jogi személyek lap.](./media/legal-entities-cons.png "Jogi személyek lap")
 
-![Számlák automatikus tranzakciókhoz oldal](./media/accounts-for-automatic-cons.png "Számlák automatikus tranzakciókhoz oldal")
+![Számlák automatikus tranzakciókhoz oldal.](./media/accounts-for-automatic-cons.png "Számlák automatikus tranzakciókhoz oldal")
 
 ## <a name="elimination"></a>Eltávolítás
 Az **Eltávolítás** lapon az eltávolítások feldolgozására három lehetőség van:
@@ -75,7 +75,7 @@ Az **Eltávolítás** lapon az eltávolítások feldolgozására három lehetős
 - Válassza ki az eltávolítási szabályt, majd a **Javaslatbeállítások** mezőben válassza ki a **Csak feladás** lehetőséget. Ez a beállítás feldolgozza az eltávolítást a konszolidálási folyamat során, és mindent felad egy lépésben.
 - Az eltávolítási napló használatával futtaható egy eltávolítási javaslat külön a konszolidációs folyamattól.
 
-![Eltávolítás lap](./media/elimination-cons-onl.png "Eltávolítás lap")
+![Eltávolítás lap.](./media/elimination-cons-onl.png "Eltávolítás lap")
 
 Az eltávolítással kapcsolatos további információkért, lásd: [Eltávolítási szabályok](./elimination-rules.md).
 
@@ -86,7 +86,7 @@ A **Devizaátváltás** lapon megadhatja a jogi személyt, a számlát és az á
 - **Tranzakció dátuma** – Az egyes tranzakciók dátuma használandó az árfolyam kiválasztásához. Ez a beállítás leggyakrabban a tárgyi eszközökhöz használatos, és korábbi árfolyamnak is gyakran nevezik. Az árfolyam előnézete nem látható, mivel a számlatartomány különböző tranzakcióinak sok árfolyama lesz.
 - **Felhasználó által definiált árfolyam** – Miután ezt a lehetőséget választja, megadhatja a használni kívánt átváltási árfolyamot. Ez a beállítás akkor átlagos árfolyamokhoz vagy rögzített árfolyammal szemben hasznos.
 
-![Pénznemátváltás típusa lap](./media/currency-translation-cons-online.png "Pénznemátváltás típusa lap")
+![Pénznemátváltás típusa lap.](./media/currency-translation-cons-online.png "Pénznemátváltás típusa lap")
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: 97423
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 140977a6eac145f35870d3516a4b0d0c794afe4b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 8bbb78f0b20ec12fe59dfb3c656b3177b2464004
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894777"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356077"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Első lépések az Olaszországra vonatkozó elektronikus számlázási használata során
 
@@ -59,7 +61,7 @@ Az RCS beállítása során a következő feladatokat kell elvégeznie:
 
 4. Válassza ki az **e-számlák exportálása (IT)** funkciót, majd válassza az **Importálás** lehetőséget.
 
-![Az e-számlák exportálása (IT) funkció importálása](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
+![Az e-számlák exportálása (IT) funkció importálása.](media/e-Invoicing-services-get-started-ITA-Select-Import-e-Invoicing-feature.png)
 
 Amikor az **e-számlák exportálása (IT)** funkciót a globális adattárból importálja, akkor azzal a következő szakaszokban ismertetett összes beállítást is importálja.
 
@@ -67,13 +69,13 @@ Amikor az **e-számlák exportálása (IT)** funkciót a globális adattárból 
 
 1. Az **e-számlázási funkciók** oldal **Verziók** lapján válassza az **Új** lehetőséget. 
 
-    ![Új e-számlázási funkcióverzió hozzáadása](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
+    ![Új e-számlázási funkcióverzió hozzáadása.](media/e-Invoicing-services-get-started-ITA-Select-New-e-Invoicing-feature-version.png)
 
     Ezután konfigurálhatja az e-számlázási funkcióhoz társított Elektronikus jelentéskészítési (ER) formátumokat.
 
 2. A **Konfigurációk** lapon válassza a **Hozzáadás** lehetőséget a konfigurációs verziók kezeléséhez.
 
-    ![E-számlázás funkció-konfigurációverziók kezelése](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
+    ![E-számlázás funkció-konfigurációverziók kezelése.](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-configurations.png)
 
     Ebben a lépésben hozzáadja és konfigurálja az olasz e-számlák exportálásához használt különböző fájlok ER-formátumát. Az olasz FatturaPA e-számlák esetében a következő szokásos konfigurációkat, illetve az e-számlázáshoz használt tényleges egyéni konfigurációkat kell használni:
 
@@ -85,17 +87,17 @@ Amikor az **e-számlák exportálása (IT)** funkciót a globális adattárból 
 3. A specifikus ER-formátum fájlkonfigurációjának kiválasztása.
 4. Válassza a **Szerkesztés** vagy **Megtekintés** lehetőséget a **Formátumtervező** lap megnyitásához.
 
-    ![A Formátumtervező lap megnyitása](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
+    ![A Formátumtervező lap megnyitása.](media/e-Invoicing-services-get-started-ITA-Configuration-ER-format-designer.png)
 
 5. Az ER-formátum fájlkonfiguráció szerkesztéséhez és megtekintéséhez használja a **Formátumtervező** lapot.
 
-    ![Formátumtervező oldal](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
+    ![Formátumtervező oldal.](media/e-Invoicing-services-get-started-ITA-ER-format-designer.png)
 
 ## <a name="manage-the-e-invoicing-feature-setups"></a>Kezelje az e-számlázás funkció beállításait
 
 - Az **e-számlázási funkciók** oldal **Beállítások** lapján válassza a **Hozzáadás**, **Törlés** vagy **Szerkesztés** parancsot az e-számlázási funkciók beállításainak kezeléséhez.
 
-![Az e-számlázás funkció beállításainak kezelése](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
+![Az e-számlázás funkció beállításainak kezelése.](media/e-Invoicing-services-get-started-ITA-Manage-e-Invoicing-feature-setup.png)
 
 Ebben a lépésben konfigurálhatja az elektronikus számlákra vonatkozó eseményeket, többek között az XML kimeneti fájlok **FatturaPA**-formátumban történő létrehozását, valamint a digitális aláírást (ha szükséges).
 
@@ -105,7 +107,7 @@ Ebben a lépésben konfigurálhatja az elektronikus számlákra vonatkozó esem�
 2. Válassza ki a **Szerkesztés** opciót.
 3. A **Funkcióverzió beállítása** oldalon válassza ki a **Műveletek** lapot a műveletek listájának kezeléséhez. A műveletek határozzák meg azokat a műveleteket, amelyeket az esemény teljes végrehajtásához sorrendben kell végrehajtani.
 
-    ![Műveletek lap](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
+    ![Műveletek lap.](media/e-Invoicing-services-get-started-ITA-Select-Actions.png)
 
     | Műveletazonosító | Művelet neve        | Művelet leírása                                     |
     |-----------|--------------------|--------------------------------------------------------|
@@ -114,11 +116,11 @@ Ebben a lépésben konfigurálhatja az elektronikus számlákra vonatkozó esem�
 
 4. Válassza az **Alkalmazhatósági szabályok** lapot az alkalmazhatósági szabályok megtekintéséhez és kezeléséhez. Az alkalmazhatósági szabályok határozzák meg, hogy melyik környezetben fusson a művelet.
 
-    ![Alkalmazhatósági szabályok lap](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
+    ![Alkalmazhatósági szabályok lap.](media/e-Invoicing-services-get-started-ITA-Select-Applicability-rules.png)
 
 5. A **Változók** lapon megtekintheti és karbantarthatja a változókat.
 
-    ![Változók lap](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
+    ![Változók lap.](media/e-Invoicing-services-get-started-ITA-Select-Variables.png)
 
 6. A műveletek futtatásához szükséges nyilvános változók meghatározása.
 
@@ -133,7 +135,7 @@ A **Projektszámla** funkció konfigurálásához szükséges lépések és beá
 3. A **Hatálybalépés dátuma** mezőben válassza ki azt a dátumot, amikortól a környezetnek hatályossá kell válnia.
 4. Válassza az **Engedélyezés** lehetőséget. 
 
-![Az e-számlázási környezet engedélyezése](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
+![Az e-számlázási környezet engedélyezése.](media/e-Invoicing-services-get-started-ITA-Enable-e-Invoicing-environment.png)
 
 ## <a name="publish-the-e-invoicing-feature"></a>Tegye közzé az e-számlázási funkciót
 
@@ -149,7 +151,7 @@ Az e-számlázási funkció közzétehető a verzió állapotának **Befejezett*
 1. Az **e-számlázási funkciók** oldal **Verziók** lapján válassza ki a **Befejezett** állapotú e-számlázási funkció verzióját.
 2. Válassza az **Állapot módosítása \> Közzétett** lehetőséget.
 
-![Az e-számlázási funkció állapotának módosítása](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
+![Az e-számlázási funkció állapotának módosítása.](media/e-Invoicing-services-get-started-ITA-Change-status-of-e-Invoicing-feature.png)
 
 ## <a name="set-up-electronic-invoicing-integration-in-finance"></a>Az Elektronikus számlázás integrációjának beállítása a Finance szolgáltatásban
 
@@ -170,7 +172,7 @@ A Finance szolgáltatás beállítása során a következő feladatokat kell elv
 1. Menjen a **Szervezeti adminisztráció \> Beállítás \> Elektronikus dokumentumparaméterek** lehetőségre.
 2. A **Funkciók** lapon válassza ki az **Engedélyezett** jelölőnégyzetet az **IT00036** funkcióhivatkozás sorában.
 
-![A FatturaPA funkció bekapcsolása](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
+![A FatturaPA funkció bekapcsolása.](media/e-Invoicing-services-get-started-ITA-Enable-FatturaPA-feature.png)
 
 #### <a name="configure-electronic-documents"></a>Elektronikus dokumentum konfigurálása
 
@@ -185,7 +187,7 @@ A Finance szolgáltatás beállítása során a következő feladatokat kell elv
     - Az **Ügyfélszámla napló** lehetőségben válassza a **Vevői számla kontextusát**.
     - A **Projektszámla** lehetőségnél válassza ki a **Projektszámla kontextusa** elemet.
 
-![Választípusok beállítása](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
+![Választípusok beállítása.](media/e-Invoicing-services-get-started-ITA-Set-up-response-types.png)
 
 ## <a name="electronic-invoice-processing"></a>Elektronikus számla feldolgozása
 
@@ -207,13 +209,13 @@ A dokumentumokat a saját e-számla dokumentumok igényeinek megfelelően manuá
 2. A dokumentumok első beküldésekor **Nem** értékre kell állítania a **Dokumentumok újraküldése** lehetőséget. Ha a szolgáltatáson keresztül újra kell küldenie a dokumentumot, akkor ezt a beállítást állítsa **Igen** értékre.
 3. A **Szerepeltetni kívánt rekordok** gyorslapon válassza a **Szűrő** lehetőséget a **Lekérdezés** párbeszédpanel megnyitásához, amelyen létrehozhat egy lekérdezést, hogy milyen dokumentumok legyenek kiválasztva a beküldéshez.
 
-![Elektronikus dokumentumok beküldése párbeszédpanel](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
+![Elektronikus dokumentumok beküldése párbeszédpanel.](media/e-Invoicing-services-get-started-ITA-Submission-form.png)
 
 #### <a name="filter-query"></a>Lekérdezés szűrése
 
 1. A **Lekérdezés** párbeszédpanelben konfigurálja az értékesítési- és a projektszámlák szűrési feltételeit, vagy hagyja üresen az összes feltételt az összes el nem küldött számla szerepeltetéséhez.
 
-    ![Beküldési szűrési feltételek beállítása](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
+    ![Beküldési szűrési feltételek beállítása.](media/e-Invoicing-services-get-started-ITA-Set-up-Submission-filter-criteria.png)
 
 2. Kattintson az **OK** gombra a **Lekérdezés** párbeszédpanel bezárásához.
 3. Kattintson az **OK** gombra a kiválasztott dokumentumok elküldéséhez.
@@ -227,13 +229,13 @@ Megtekintheti az összes beküldött dokumentum beküldési naplóját.
 1. Menjen a **Szervezeti adminisztráció \> Időszakos \> Elektronikus dokumentumok \> Elektronikus dokumentumbeküldési napló** lehetőségre.
 2. A **Dokumentumtípus** mezőben válassza ki a **Vevői számlanapló** vagy a **Projektszámla** lehetőséget a szükséges elektronikus dokumentumok szűréséhez.
 
-    ![A dokumentumtípus kiválasztása a beküldési naplók megtekintéséhez](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
+    ![A dokumentumtípus kiválasztása a beküldési naplók megtekintéséhez.](media/e-Invoicing-services-get-started-ITA-Select-Document-type-for-viewing-submission-log.png)
 
     A **Beküldési állapot** oszlopban látható érték a beküldési folyamat állapotát jelöli. Azt jelzi, hogy a folyamatot konfigurálták-e, és hogy szükség van-e további műveletre.
 
 3. A Művelet ablaktáblán válassza ki a **Lekérdezések \> Beküldések részletei** lehetőséget a beküldési végrehajtási naplók részleteinek megtekintéséhez.
 
-    ![A beküldési napló részleteinek megtekintése](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
+    ![A beküldési napló részleteinek megtekintése.](media/e-Invoicing-services-get-started-ITA-View-Submission-log-details.png)
 
 4. A **Műveletek feldolgozása** gyorslapon az RCS-ben beállított funkcióverzióban konfigurált műveletekhez tartozó végrehajtási naplót tekintheti meg. Az **Állapot** oszlop azt jelzi, hogy a művelet futtatása sikeres volt-e.
 5. A **Műveletfájlok** gyorslapon a műveletek végrehajtása során létrehozott közbenső fájlokat tekintheti meg. Kiválaszthatja a **Megtekintés** elemet a kimeneti XML-fájl **FatturaPA**-formátumban történő letöltéséhez, illetve annak tartalmának megtekintéséhez.

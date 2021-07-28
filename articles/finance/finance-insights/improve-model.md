@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 184a1cb5d3851e26b41340b711c51ef38e06eb53
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: 74005d17e2524b922b0fab1aab5350b85dfad771
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186642"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6355676"
 ---
 # <a name="improve-the-prediction-model-preview"></a>Az előrejelzési modell javítása (előzetes verzió)
 
@@ -33,7 +33,7 @@ Ez a témakör az előrejelzési modellek teljesítményének javítására hasz
 
 Először a számlák három lehetséges kimenetele közül válasszon ki egyet vagy többet: **Időben**, **Későn** és a **Nagyon későn**. Mindhárom eredményt ki kell választani. Ha törli az eredmények bármelyikének kiválasztását, a számlák ki lesznek szűrve a betanítási folyamatból, és az előrejelzés pontossága csökken.
 
-[![Eredmények megerősítése](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
+[![Eredmények megerősítése.](./media/confirm-3-outcomes.png)](./media/confirm-3-outcomes.png)
 
 Ha a szervezet csak két eredményt igényel, módosítsa a **Későn** és a **Nagyon későn** küszöbértékeket 0 (nulla) napra. Így hatékonyan összecsukhatja az előrejelzést az **Időben** vagy a **Későn** bináris állapotában.
 
@@ -51,7 +51,7 @@ A következő szakaszok a számla és a vevőentitások számára rendelkezésre
 
 A következő ábra a számlatáblához rendelkezésre álló mezőket mutatja be.
 
-[![A számlatábla elérhető mezői](./media/available-fields.png)](./media/available-fields.png)
+[![A számlatábla elérhető mezői.](./media/available-fields.png)](./media/available-fields.png)
 
 A következő mezőket nem szabad kiválasztani betanításhoz:
 
@@ -66,7 +66,7 @@ A következő mezőket nem szabad kiválasztani betanításhoz:
 
 A következő ábra a vevőtáblához rendelkezésre álló mezőket mutatja be.
 
-[![A vevőtábla elérhető mezői](./media/related-entities.png)](./media/related-entities.png)
+[![A vevőtábla elérhető mezői.](./media/related-entities.png)](./media/related-entities.png)
 
 A következő mezőt nem szabad kiválasztani betanításhoz:
 
@@ -74,8 +74,8 @@ A következő mezőt nem szabad kiválasztani betanításhoz:
 
 ## <a name="filters"></a>Szűrők
 
-A szűrők jelenleg nem támogatják az Ügyfél fizetési előrejelzési forgatókönyvet. Ezért válassza a **Lépés kihagyása** lehetőséget, majd menjen az összesítő lapra.
+A képzésre használt számlák szűréséhez szűrőfeltételeket kell meghatározni a számla vagy a vevőtáblák mezőihez. Beállíthatja például azt a küszöbértéket, hogy csak azok a számlák szerepeljenek a halmazban, amelyek teljes összege eléri vagy meghaladja a megadott összeget. Arra is lehetőség van, hogy kizárja az adott vevőcsoportba tartozó vevőkhöz kapcsolódó számlákat.
 
-[![Fókuszmodell szűrőkkel](./media/focus-model-with-filters.png)](./media/focus-model-with-filters.png)
+Az adatszűréssel kapcsolatos további tudnivalókat lásd: [Előrejelzési modell létrehozása](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

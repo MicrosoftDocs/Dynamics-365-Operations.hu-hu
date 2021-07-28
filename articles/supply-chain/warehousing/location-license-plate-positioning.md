@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: e5fd7a9a9703f9ab6802def0aac096e29aa04f1a
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 1235f8fa64fbc87a4c22f4dcf0e9ddd4b4565b76
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831386"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6359763"
 ---
 # <a name="location-license-plate-positioning"></a>Hely és azonosítótábla pozicionálása
 
@@ -88,7 +88,7 @@ A funkciót minden olyan hely helyprofiljában be kell kapcsolni, ahol használa
 1. Miközben az **Azonosítótábla** továbbra is be van jelölve, válassza a **Táblaillesztés hozzáadása** lehetőséget.
 1. A megjelenő táblák listáján, a **Kapcsolat** oszlopban válassza ki a **Helyazonosító tábla elhelyezése (Azonosítótábla)** lehetőséget. Ezután válassza a **Kiválasztás** lehetőséget **Helyazonosító tábla elhelyezése** elem hozzáadásához a **Készletdimenziók** táblaillesztéshez.
 
-    ![Táblaillesztések](media/LpTableJoin.png "Táblaillesztések")
+    ![Táblaillesztések.](media/LpTableJoin.png "Táblaillesztések")
 
 1. Az **OK** lehetőséget kiválasztva erősítse meg a frissített összekapcsolt táblákat, és zárja be a lekérdezésszerkesztőt.
 1. A **Helyutasítások műveletei** gyorslapon válassza ismét a **Lekérdezés szerkesztése** lehetőséget a lekérdezésszerkesztő ismételt megnyitásához.
@@ -100,7 +100,7 @@ A funkciót minden olyan hely helyprofiljában be kell kapcsolni, ahol használa
     - **Mező:** *LP pozíció*
     - **Feltételek:** *1*
 
-    ![Új tartomány](media/LpPositionCriteria.png "Új tartomány")
+    ![Új tartomány.](media/LpPositionCriteria.png "Új tartomány")
 
 1. Az **OK** gombra kattintva erősítse meg a változtatásokat, és zárja be a lekérdezésszerkesztőt.
 
@@ -275,7 +275,7 @@ Most, hogy a *Helyazonosító tábla elhelyezése* funkció be van állítva, é
 1. A **Munkaazonosító/azonosítótábla azonosítójának beolvasása** oldalon válassza ki az **Azonosító** mezőt, majd adja meg az értékesítési sor munkaazonosítóját.
 1. Figyelje meg, hogy a kitárolási munka az *A0002* cikknek a *01A01R1S2B* helyről való kitárolására utasítja. Ez az utasítás akkor jelenik meg, ha az *A0002* cikk olyan azonosítótáblán van, amely az adott helyen az *1*. pozícióban szerepel.
 
-    ![1. pozíció helye](media/LocationLicensePlatePositioning.png "1. pozíció helye")
+    ![1. pozíció helye.](media/LocationLicensePlatePositioning.png "1. pozíció helye")
 
 1. Adja meg a helyhez létrehozott azonosítótábla-azonosítót, majd kövesse a figyelmeztetéseket az értékesítési rendelés kitárolásához.
 

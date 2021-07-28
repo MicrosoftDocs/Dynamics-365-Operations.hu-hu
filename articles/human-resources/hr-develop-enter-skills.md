@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 5a65f1884ea87bbf2519cc94e4c52a40ac1a91bd
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
+ms.openlocfilehash: 8a6b36314d9d98f971cd1619dd3604f20a3770b3
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193977"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360520"
 ---
 # <a name="enter-skills"></a>Készségek megadása
 
@@ -45,17 +45,17 @@ A készségek jóváhagyás nélkül történő megadásához létre kell hoznia
 
 4. A **Munkafolyamat létrehozása** panelen válassza ki a **Dolgozó szakértelmei** lehetőséget.
 
-   [![A Dolgozó szakértelmei munkafolyamat kiválasztása](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
+   [![A Dolgozó szakértelmei munkafolyamat kiválasztása.](media/hr-develop-skills-new-workflow.png)](media/hr-develop-skills-new-workflow.png)
 
 5. A **Megnyitja ezt a fájlt?** párbeszédpanelen válassza a **Megnyitás** lehetőséget. Amikor a rendszer kéri, adja meg a hitelesítő adatait.
 
 6. A munkafolyamat-szerkesztőben válassza ki a **Készségek jóváhagyása** munkafolyamat-elemet, és húzza a vászonra.
 
-   [![A Készségek jóváhagyása munkafolyamat-elem kiválasztása](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
+   [![A Készségek jóváhagyása munkafolyamat-elem kiválasztása.](media/hr-develop-skills-element.png)](media/hr-develop-skills-element.png)
 
 7. Kapcsolja össze a **Kezdés** és az **1. készségek jóváhagyása**, majd az **1. készségek jóváhagyása** és a **Befejezés** elemet. Előfordulhat, hogy a **Záró** elem eléréséhez görgetni kell. Az elemet közelebb húzhatja a többi elemhez.
 
-   [![Munkafolyamat-elemek összekapcsolása](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
+   [![Munkafolyamat-elemek összekapcsolása.](media/hr-develop-skills-connect-elements.png)](media/hr-develop-skills-connect-elements.png)
 
 8. Kattintson duplán az **1. készségek jóváhagyása** munkafolyamat-elemre, majd kattintson a jobb gombbal az **1. lépés elemre**. Kattintson a jobb gombbal az **1. lépés** elemre, majd válassza a **Tulajdonságok** parancsot.
 
@@ -65,7 +65,7 @@ A készségek jóváhagyás nélkül történő megadásához létre kell hoznia
 
 11. Válassza ki a **Feltétel hozzáadása** lehetőséget. Az **Ahol** elem után válassza a **Alkalmazotti készségek önkiszolgáló módon**, majd az **Alkalmazotti készségek önkiszolgáló módon.Személy** lehetőséget. A **van** elem után válassza ki a **mezőt**, majd a **Felhasználó és szermély kapcsolata.Személy** lehetőséget.
 
-    [![Feltétel megadása](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
+    [![Feltétel megadása.](media/hr-develop-skills-condition.png)](media/hr-develop-skills-condition.png)
 
 12. Válassza a **Hozzárendelés** lehetőséget a bal oldali navigációs sávon.
 
@@ -73,7 +73,7 @@ A készségek jóváhagyás nélkül történő megadásához létre kell hoznia
 
 14. A **Hierarchia kiválasztása** lapon **Hierarchia típusa:** mezőjében válassza a **Vezetői hierarchia** lehetőséget.
 
-    [![Vezetői hierarchia megadása](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
+    [![Vezetői hierarchia megadása.](media/hr-develop-skills-hierarchy.png)](media/hr-develop-skills-hierarchy.png)
 
 15. Válassza a **Bezárás**, majd a vászon útkövető modulján a **Munkafolyamat** elemet, végül a **Mentés és bezárás** lehetőséget.
 

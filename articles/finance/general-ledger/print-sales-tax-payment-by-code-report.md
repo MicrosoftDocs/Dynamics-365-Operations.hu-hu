@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: anasyash
 ms.search.validFrom: 2020-04-08
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: eb3ee4a12d2d29c2769f1ae22e11dc05608b47c1
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: dad1cad6dcda1c7768f9be8bd7bd4426be7fbcbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815452"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358857"
 ---
 # <a name="print-the-sales-tax-payment-by-code-report"></a>Áfafizetés kód szerint jelentés nyomtatása 
 
@@ -40,11 +40,11 @@ A **Funkciókezelés** munkaterületen kapcsolja be a következő funkciót: **�
     - **Könyvelési pénznem** – A jelentés összegeinek nyomtatása a könyvelési pénznemben.
     - **Áfakód pénzneme** – A jelentés összegének nyomtatása az áfakód pénznemében.
 
-    ![Áfafizetés kód szerint párbeszédpanel](media/Sales-tax-payment-by-code.png)
+    ![Áfafizetés kód szerint párbeszédpanel.](media/Sales-tax-payment-by-code.png)
 
 A következő ábra egy példát mutat be a generált jelentésre. A jelentés azt jeleníti meg , hogy a **101** jelentési kód az pénzneme **EUR** ha az **Áfa pénzneme mező** **EUR** értékre van állítva az áfakódhoz, amelyhez a jelentési kód hozzá van rendelve.
 
-![Áfafizetés kód szerint jelentés nyomtatása példája](media/Sales-tax-payment-by-code-2.png)
+![Áfafizetés kód szerint jelentés nyomtatása példája.](media/Sales-tax-payment-by-code-2.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

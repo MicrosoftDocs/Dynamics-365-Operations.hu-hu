@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c1cceb15d64215cb8d5c996df792e863d466f87d
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 627883544f387e53920da268fa8d805c0074de47
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053563"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6357361"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources alkalmazás a Teams rendszerben
 
@@ -28,11 +28,11 @@ ms.locfileid: "6053563"
 
 A Microsoft Dynamics 365 Human Resources alkalmazás a Microsoft Teams rendszerben lehetővé teszi, hogy az alkalmazottak gyorsan kérelmezzenek szabadságot, és megtekintsék a szabadságegyenlegükett közvetlenül a Microsoft Teams rendszerben. Az alkalmazottak egy robottal léphetnek kapcsolatba információ kéréséhez. A **Szabadság** lapon részletesebb információk olvashatók. Ezenkívül a közelgő szabadságaikról információkat küldhetnek az embereknek a Teamsben és a Human Resources alkalmazáson kívüli csevegőfelületeken.
 
-![Human Resources Teams szabadságkezelő alkalmazás robot](./media/hr-teams-leave-app-bot.png)
+![Human Resources Teams szabadságkezelő alkalmazás robotja.](./media/hr-teams-leave-app-bot.png)
 
-![Human Resources Teams szabadságkezelő alkalmazás Szabadság lap](./media/hr-teams-leave-app-timeoff-tab.png)
+![Human Resources Teams szabadságkezelő alkalmazás Szabadság lapja.](./media/hr-teams-leave-app-timeoff-tab.png)
 
-![A Human Resources szabadságkérelem kártya](./media/hr-teams-leave-app-chat-card.png)
+![A Human Resources szabadságkérelem kártyája.](./media/hr-teams-leave-app-chat-card.png)
 
 ## <a name="install-and-setup"></a>Telepítés és beállítás
 
@@ -57,11 +57,11 @@ Ha azt szeretné, hogy a felhasználók távolléti értesítéseket a Teams alk
 
 4. Az **Általános** lapon állítsa be az **Értesítések engedélyezése a Teams alkalmazáshoz** elemet **Igen** értékre.
 
-   ![A Teams alkalmazás értesítések engedélyezése a Rendszer paraméterei között](./media/hr-admin-teams-leave-app-enable-notifications.png)
+   ![A Teams alkalmazás értesítések engedélyezése a Rendszer paraméterei között.](./media/hr-admin-teams-leave-app-enable-notifications.png)
 
 5. Ha minden felhasználó számára be kívánja kapcsolni a Teams értesítéseit, válassza az **Igen** lehetőséget a kérdésnél.
 
-   ![Értesítések engedélyezése a Teams alkalmazáshoz minden felhasználónak](./media/hr-admin-teams-leave-app-notifications-all-users.png)
+   ![Értesítések engedélyezése a Teams alkalmazáshoz minden felhasználónak.](./media/hr-admin-teams-leave-app-notifications-all-users.png)
 
 ### <a name="turn-teams-notifications-on-or-off-for-individual-users"></a>A Teams értesítéseinek be-és kikapcsolása egyéni felhasználókhoz
 
@@ -77,7 +77,7 @@ Miután engedélyezte az értesítéseket a Dynamics 365 Human Resources Teams a
 
 5. Állítsa az **Értesítések engedélyezése a Teams alkalmazáshoz** beállítást **Igen** értékre, hogy engedélyezze az értesítéseket a felhasználó számára. és **Nem** értékre az értesítések letiltásához a felhasználó számára.
 
-   ![A Teams alkalmazásértesítések engedélyezése a felhasználói beállítások Munkafolyamat lapján](./media/hr-admin-teams-leave-app-notifications.png)
+   ![A Teams alkalmazásértesítések engedélyezése a felhasználói beállítások Munkafolyamat lapján.](./media/hr-admin-teams-leave-app-notifications.png)
 
 6. Válassza a **Mentés** lehetőséget.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 143b9337dc9ca530383575e0f9bb16e4313ce96b
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 435e4c0b7aac8a8dc179ee8e74b985a4c434b7ea
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839607"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361114"
 ---
 # <a name="maintenance-plans"></a>Karbantartási tervek
 
@@ -145,23 +145,23 @@ Az alábbiakban példákat talál az időalapú és a számláló alapú karbant
 
 **1. példa – Időalapú karbantartási tervsor:** Egy kenési feladatot egy hetente egyszer bekövetkező rögzített intervallumként is beállítható. Erre a célra válassza az „Ismétlődés a terv dátumától" beállítást az **Intervallum típusa** mezőben. Egy példa a következő ábrán látható.
 
-![Egy rögzített intervallumként beállított szervizfeladat, amely hetente egyszer történik](media/02-preventive-maintenance.png "Egy rögzített intervallumként beállított szervizfeladat, amely hetente egyszer történik.")
+![Egy rögzített intervallumként beállított szervizfeladat, amely hetente egyszer történik.](media/02-preventive-maintenance.png "Egy rögzített intervallumként beállított szervizfeladat, amely hetente egyszer történik.")
 
 **2. példa – Időalapú karbantartási tervsor:** Egy ellenőrzési feladat beállítható úgy, hogy hetente egyszer legyen elvégezve. Erre a célra válassza az „Ismételve az utolsó munkarendelésből” beállítást az **Intervallum típusa** mezőben. Egy példa a következő ábrán látható.
 
-![Hetente egyszer legfeljebb egyszer elvégzendő, beállított ellenőrzési feladat](media/03-preventive-maintenance.png "Hetente egyszer legfeljebb egyszer elvégzendő, beállított ellenőrzési feladat")
+![Hetente egyszer legfeljebb egyszer elvégzendő, beállított ellenőrzési feladat.](media/03-preventive-maintenance.png "Hetente egyszer legfeljebb egyszer elvégzendő, beállított ellenőrzési feladat")
 
 **3. példa – Számláló-alapú karbantartási tervsor** : A következő óraszámláló grafikus illusztrációja, amelynek esetében 250 óra eltelte után egy új karbantartási ütemezési sor jön létre. Ennek a számláló-alapú sornak az intervallumtípusa „Ismétlődő a kezdő dátumtól”. A kezdő dátum a kapcsolódó eszköz kezdő dátuma az **Összes eszköz** részletek nézet \> **Eszközkarbantartási tervek** gyorslap \> **Kezdődátum** mezőjéből vagy a **Munkavégzési helyszín** részletek nézet \> **Karbantartási tervek** gyorslap \> **Kezdődátum** mezőjében. Ez egy példa a *megelőző* karbantartási tervre, hiszen a karbantartási ütemezési sor automatikusan létrejön a küszöb (+ 250) elérésekor.
 
-![Óraszámláló, amely rendszeres időközönként karbantartási ütemezési sorokat hoz létre](media/04-preventive-maintenance.png "Óraszámláló, amely rendszeres időközönként karbantartási ütemezési sorokat hoz létre")
+![Óraszámláló, amely rendszeres időközönként karbantartási ütemezési sorokat hoz létre.](media/04-preventive-maintenance.png "Óraszámláló, amely rendszeres időközönként karbantartási ütemezési sorokat hoz létre")
 
 **4. példa – Számláló alapú karbantartási tervsora:** A következő grafika a számláló értékének csökkenésének illusztrációja, a fékbetétkopás méréséhez. A karbantartási ütemezéssor akkor jön létre, amikor 20 mm alatti számláló-bejegyzés jön létre a fékbetét esetében. Ennek a számláló alapú sornak az intervallumtípusa „Miután elérte lent” vagy „Egyszer a legutóbbi kezdődátumtól”. Ez egy példa a *beavatkozó* karbantartási tervre, hiszen a karbantartási ütemezési sor nem jön létre, amíg 20 mm alatti mérés nincs regisztrálva.
 
-![A számláló értékének csökkenése, a fékbetét elhasználódásának mérése](media/05-preventive-maintenance.png "A számláló értékének csökkenése, a fékbetét elhasználódásának mérése")
+![A számláló értékének csökkenése, a fékbetét elhasználódásának mérése.](media/05-preventive-maintenance.png "A számláló értékének csökkenése, a fékbetét elhasználódásának mérése")
 
 **5. példa – Számlálóalapú karbantartási tervsor:** Egy -18 Celsiusfokos küszöbértéket tartalmazó grafikus illusztráció. A karbantartási ütemezési sor akkor jön létre, amikor a -18 ° Celsius-fok fölötti számlálóregisztrálás történik. Ennek a számláló-alapú sornak az intervallumtípusa „Miután elérte fent”. Ez egy példa a *beavatkozó* karbantartási tervre, hiszen a karbantartási ütemezési sor nem jön létre, amíg -18 Celsius fok feletti mérés nincs regisztrálva.
 
-![-18 °C-os küszöbértékű számláló](media/06-preventive-maintenance.png "-18 °C-os küszöbértékű számláló")
+![-18 °C-os küszöbértékű számláló.](media/06-preventive-maintenance.png "-18 °C-os küszöbértékű számláló")
 
 - Új eszköz létrehozásakor, ha az eszköz egy karbantartási tervhez kapcsolódó eszköztípust használ, a karbantartási tervet a program automatikusan beilleszti az **Összes objektum \> Eszközkarbantartási tervek** gyorslapra. Ezenkívül a **Tárgyi eszközök alapértelmezései** helyen a **Karbantartási tervek** gyorslapon automatikusan beilleszti a kapcsolódó karbantartási terveket.
 - Ha a **Karbantartási tervekben** eszköztípusokat vagy munkavégzési helyszíneket ad hozzá vagy távolít el, akkor ez a módosítás csak a módosítást követően létrejövő új eszközökre fog vonatkozni.
@@ -169,7 +169,7 @@ Az alábbiakban példákat talál az időalapú és a számláló alapú karbant
 
 A következő illusztráción egy „Truck Service” karbantartási terv látható a **Karbantartási tervek** oldalon.
 
-![Példa teherautó szerviz karbantartási tervére](media/07-preventive-maintenance.png "Példa teherautó szerviz karbantartási tervére")
+![Példa teherautó szerviz karbantartási tervére.](media/07-preventive-maintenance.png "Példa teherautó szerviz karbantartási tervére")
 
 ## <a name="add-a-maintenance-plan-to-an-asset"></a>Karbantartási terv hozzáadása egy eszközhöz
 
@@ -187,7 +187,7 @@ A következő illusztráción egy „Truck Service” karbantartási terv látha
 
 A következő illusztráción karbantartási tervek láthatók egy eszközön beállítva, a **Minden eszköz** oldalon.
 
-![Példa az eszközön beállított karbantartási tervekre](media/08-preventive-maintenance.png "Példa az eszközön beállított karbantartási tervekre")
+![Példa az eszközön beállított karbantartási tervekre.](media/08-preventive-maintenance.png "Példa az eszközön beállított karbantartási tervekre")
 
 <a id="counter-based-maintenance"></a>
 

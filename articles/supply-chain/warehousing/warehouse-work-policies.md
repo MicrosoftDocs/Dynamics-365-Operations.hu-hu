@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 39a9ba00763fac220eff16bdd42aa07cc8e35ba4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: d3f3a02a369cab34b965b2443bb77053377a190e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838130"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353372"
 ---
 # <a name="work-policies"></a>Munkairányelvek
 
@@ -200,7 +200,7 @@ A beszerzési rendelés fogadva, de nincs hozzárendelve munka. Az aktuális ké
 
 A következő példában két termelési rendelés szerepel: a *PRD-001* és a *PRD-002*. A *PRD-001* termelési rendeléshez egy *Összeszerelés* nevű művelet tartozik, ahol az *SC1* termék a jelentés szerint elkészült leszállításra a *001* helyre. A *PRD-002* termelési rendeléshez egy *Festés* nevű művelet tartozik, ami felhasználja az *SC1* terméket a *001* helyről. A *PRD-002* termelési rendelés *RM1* nyersanyagot is felhasznál a *001* helyről. A Nyersanyag *RM1* tárolása a *BULK-001* raktári helyszínen történik, és kitárolásra kerül a *001* helyre a nyersanyag-kitárolási raktári munka segítségével. A kitárolási munka akkor jön létre, amikor a *PRD-002* termelés kiadásra kerül.
 
-[![Raktári munkairányelvek](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Raktári munkairányelvek.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Amikor raktári munkairányelv konfigurálását tervezi ehhez az esethez, vegye figyelembe a következő információkat:
 

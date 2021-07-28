@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c865d5e055e3fadf2dda225b49f13a163974768f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: e7d2cd7b7ce9446d77eff66433739c8ea6b1f309
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797455"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348296"
 ---
 # <a name="tab-module"></a>Lapmodul
 
@@ -34,13 +34,13 @@ Minden lapmodulon belül egy vagy több lapelem-modul is hozzáadható. Minden l
 
 A következő kép egy webhelyoldalon használt lapmodul egy példáját jeleníti meg. Ebben a példában a **Szállítás** lap van kiválasztva.
 
-![Példa egy lapmodulra](./media/ecommerce-tab.PNG)
+![Példa egy lapmodulra.](./media/ecommerce-tab.PNG)
 
 ## <a name="tab-module-properties"></a>Lapmodul tulajdonságai
 
 | Tulajdonság neve | Értékek | Leírás |
 |---------------|--------|-------------|
-| Címsor | Szöveg | Ez a tulajdonság a lapmodul opcionális szöveges fejlécét határozza meg. |
+| Fejléc | Szöveg | Ez a tulajdonság a lapmodul opcionális szöveges fejlécét határozza meg. |
 | Aktív lap indexe | Szám | Ez a tulajdonság azt a lapot határozza meg, amely az oldal betöltésekor alapértelmezés szerint aktív. Ha nincs megadva érték, akkor az első lapelem lesz alapértelmezés szerint aktív. |
 
 ## <a name="tab-item-module-properties"></a>Lapelem-modul tulajdonságai

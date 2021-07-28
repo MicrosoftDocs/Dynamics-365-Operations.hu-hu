@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a06936da71d7b05f312a99c8c11d148403d29c3
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 11d15a9e932eb02fc1bc8960d9c7ecbf4b57a4e8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752388"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356295"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-4---run-the-report"></a>ER Pénzügyi dimenziók használata adatforrásként (4. rész – A jelentés futtatása)
 
@@ -34,19 +34,19 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 2. A fastruktúrában bontsa ki a következőt: „Pénzügyi dimenziók mintamodell”.
 3. A fastruktúrában válassza ki a következőt: „Pénzügyi dimenziók mintamodell\Főkönyvi naplójelentés”.
 4. Kattintson a Futtatásra.
-![ER-konfigurációk oldal](../media/er-financial-dimensions-guides-run1.png)
+![ER-konfigurációk oldal.](../media/er-financial-dimensions-guides-run1.png)
 5. A Dimenzió mezőben adjon meg vagy válasszon ki egy értéket.
     * Az aktuális vállalat összes dimenziójának kijelöléséhez írja be a következőt: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
-![ER-konfigurációk oldal](../media/er-financial-dimensions-guides-run2.png)
+![ER-konfigurációk oldal.](../media/er-financial-dimensions-guides-run2.png)
 6. Bontsa ki a Szerepeltetni kívánt rekordok szakaszt.
 7. Kattintson a Szűrő parancsra.
 8. Jelölje ki a főkönyvi napló táblájának a sorát, és a Napló kötegszáma mezőt.
 9. A Feltétel mezőbe írja be a „00057” értéket.
 10. Kattintson az OK gombra.
 11. Kattintson az OK gombra.
-![ER-konfigurációk oldal](../media/er-financial-dimensions-guides-run3.png)
+![ER-konfigurációk oldal.](../media/er-financial-dimensions-guides-run3.png)
     * Tekintse át a létrehozott kimenetet. A kiválasztott köteg minden tranzakciójához a megfelelő dimenziók pénzügyi dimenziói jelennek meg. Futtassa a jelentést, és válasszon ki különböző dimenziókat annak a megtekintéséhez, hogy a jelentés nem függ a kiválasztott dimenziók, vagy a példányhoz konfigurált dimenziók számától.  
-![ER-konfigurációk oldal](../media/er-financial-dimensions-guides-run4.png)
+![ER-konfigurációk oldal.](../media/er-financial-dimensions-guides-run4.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2019-06-07
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 37ae6ebd4347d3bbb414b7f1e4e0d54150878c02
-ms.sourcegitcommit: c5c8f19a696ad4a3d68dffd63bfe7b484b999d2b
+ms.openlocfilehash: 0fd573ab1676af292174efce562b010bcbeb6514
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "6097234"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6354737"
 ---
 # <a name="negative-days-and-dynamic-negative-days"></a>Negatív napok és dinamikus negatív napok
 
@@ -43,7 +43,7 @@ Az igény beérkezhet jóval azelőtt, hogy a cikk átfutási ideje elkezdődik,
 
 Az alábbi ábra bemutatja a forgatókönyv grafikus nézetét.
 
-![Az 1. forgatókönyv grafikus nézete](./media/negative-days-1.jpg)
+![Az 1. forgatókönyv grafikus nézete.](./media/negative-days-1.jpg)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>A eset: a negatív nap kevesebb, mint a cikk átfutási ideje.
 
@@ -51,11 +51,11 @@ Ha a negatív napokat a cikk átfutási idejénél kisebb számra állítja be, 
 
 Az alábbi ábra bemutatja az eset képernyőképét.
 
-![Az 1. forgatókönyv A esetének képernyőképe](./media/negative-days-2.png)
+![Az 1. forgatókönyv A esetének képernyőképe.](./media/negative-days-2.png)
 
 Az alábbi ábra bemutatja annak grafikus nézetét, hogy mi történik ebben az esetben.
 
-![Az 1. forgatókönyv A esetének grafikus nézete](./media/negative-days-3.png)
+![Az 1. forgatókönyv A esetének grafikus nézete.](./media/negative-days-3.png)
 
 Ha figyelembe veszi az MRP teljesítményét és a terv bizonytalanságát, akkor ez az eset nem megfelelő. Az MRP-nek új tervezett rendelést kell létrehoznia, és ki kell számítania a késéseket és a műveleteket. Ezek a feladatok időigényesek. Ez az eset két további tranzakcióval egészíti ki az Ön tervét. Másrészről az értékesítési rendelés csak hat nappal, nem pedig hét nappal késik.
 
@@ -73,11 +73,11 @@ Dinamikus negatív napok időkorlátja = Beszerzési átfutási idő + Negatív 
 
 Ha dinamikus negatív napokat használ, akkor az időkorlát, amelyet az MRP megnéz a bevételezésekhez, jelenleg 6 + 2 + 0 = 8 nap. Az MRP megkeresi a meglévő beszerzési rendelést, és az értékesítési rendeléshez rögzíti. Nem jön létre új tervezett rendelés. Ezért az MRP futási ideje rövidebb. A következő ábra bemutatja a DemoProduct cikkhez megállapított nettó igényeket.
 
-![Nettó igények az 1. forgatókönyv C esetéhez](./media/negative-days-4.png)
+![Nettó igények az 1. forgatókönyv C esetéhez.](./media/negative-days-4.png)
 
 Az alábbi ábra bemutatja annak grafikus nézetét, hogy mi történik ebben az esetben.
 
-![Az 1. forgatókönyv C esetének grafikus nézete](./media/negative-days-5.png)
+![Az 1. forgatókönyv C esetének grafikus nézete.](./media/negative-days-5.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>D eset: Csak dinamikus negatív napok használata
 
@@ -85,11 +85,11 @@ Ha a negatív napokat **0-ra** (nulla) állítja, és csak a dinamikus negatív 
 
 Az alábbi ábra bemutatja az eset képernyőképét.
 
-![Az 1. forgatókönyv D esetének képernyőképe](./media/negative-days-6.png)
+![Az 1. forgatókönyv D esetének képernyőképe.](./media/negative-days-6.png)
 
 Az alábbi ábra bemutatja annak grafikus nézetét, hogy mi történik ebben az esetben.
 
-![Az 1. forgatókönyv D esetének grafikus nézete](./media/negative-days-7.png)
+![Az 1. forgatókönyv D esetének grafikus nézete.](./media/negative-days-7.png)
 
 ### <a name="case-e-use-both-negative-days-that-are-more-than-the-items-lead-time-and-the-dynamic-negative-days-time-fence"></a>E eset: Használja mindkét negatív napot, amelyek meghaladják a cikk átfutási idejét és a dinamikus negatív napok időkorlátját.
 
@@ -106,7 +106,7 @@ Előfordulhat, hogy a cikk átfutási ideje alatt érkezik be igény. Példa err
 
 Az alábbi ábra bemutatja a forgatókönyv grafikus nézetét.
 
-![Az 2. forgatókönyv grafikus nézete](./media/negative-days-8.png)
+![Az 2. forgatókönyv grafikus nézete.](./media/negative-days-8.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>A eset: a negatív nap kevesebb, mint a cikk átfutási ideje.
 
@@ -114,11 +114,11 @@ Ha a negatív napokat a cikk átfutási idejénél kisebb számra állítja be, 
 
 Az alábbi ábra bemutatja az eset képernyőképét.
 
-![A 2. forgatókönyv A esetének képernyőképe](./media/negative-days-9.png)
+![A 2. forgatókönyv A esetének képernyőképe.](./media/negative-days-9.png)
 
 Az alábbi ábra bemutatja annak grafikus nézetét, hogy mi történik ebben az esetben.
 
-![Az 2. forgatókönyv A esetének grafikus nézete](./media/negative-days-10.png)
+![A 2. forgatókönyv A esetének grafikus nézete.](./media/negative-days-10.png)
 
 ### <a name="case-b-negative-days-are-more-than-the-items-lead-time"></a>B eset: a negatív nap több, mint a cikk átfutási ideje.
 
@@ -130,11 +130,11 @@ Ez az eset hasonlít az 1. forgatókönyv C esetére, mert a dinamikus negatív 
 
 Az alábbi ábra bemutatja az eset képernyőképét.
 
-![A 2. forgatókönyv C esetének képernyőképe](./media/negative-days-11.png)
+![A 2. forgatókönyv C esetének képernyőképe.](./media/negative-days-11.png)
 
 Az alábbi ábra bemutatja annak grafikus nézetét, hogy mi történik ebben az esetben.
 
-![Az 2. forgatókönyv C esetének grafikus nézete](./media/negative-days-12.png)
+![A 2. forgatókönyv C esetének grafikus nézete.](./media/negative-days-12.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>D eset: Csak dinamikus negatív napok használata
 
@@ -155,7 +155,7 @@ Előfordulhat, hogy az igény a cikk átfutási időszaka után érkezik be. Pé
 
 Az alábbi ábra bemutatja a forgatókönyv grafikus nézetét.
 
-![A 3. forgatókönyv grafikus nézete](./media/negative-days-13.png)
+![A 3. forgatókönyv grafikus nézete.](./media/negative-days-13.png)
 
 ### <a name="case-a-negative-days-are-less-than-the-items-lead-time"></a>A eset: a negatív nap kevesebb, mint a cikk átfutási ideje.
 
@@ -163,11 +163,11 @@ Ha a negatív napokat a cikk átfutási idejénél kisebb számra állítja be, 
 
 Az alábbi ábra bemutatja az eset képernyőképét.
 
-![A 3. forgatókönyv A esetének képernyőképe](./media/negative-days-14.png)
+![A 3. forgatókönyv A esetének képernyőképe.](./media/negative-days-14.png)
 
 Az alábbi ábra bemutatja annak grafikus nézetét, hogy mi történik ebben az esetben.
 
-![Az 3. forgatókönyv A esetének grafikus nézete](./media/negative-days-15.png)
+![A 3. forgatókönyv A esetének grafikus nézete.](./media/negative-days-15.png)
 
 > [!NOTE]
 > Az előző képernyőképen a beszerzési rendelés igénylési dátuma január 12. Mivel ez a képernyőkép 2015-ben készült, amikor január 11-e vasárnapra esett, az MRP áthelyezte az igénylés dátumát a következő munkanapra, hétfőre, január 12-re. Mindazonáltal a beszerzési rendelés szállítási dátuma január 11.
@@ -178,11 +178,11 @@ Ha a negatív napokat a cikk átfutási idejénél nagyobb számra állítja be,
 
 Az alábbi ábra bemutatja az eset képernyőképét.
 
-![A 3. forgatókönyv B esetének képernyőképe](./media/negative-days-16.png)
+![A 3. forgatókönyv B esetének képernyőképe.](./media/negative-days-16.png)
 
 Az alábbi ábra bemutatja annak grafikus nézetét, hogy mi történik ebben az esetben.
 
-![A 3. forgatókönyv B esetének grafikus nézete](./media/negative-days-17.png)
+![A 3. forgatókönyv B esetének grafikus nézete.](./media/negative-days-17.png)
 
 ### <a name="case-c-automatically-correlate-the-items-lead-time-to-the-negative-days-time-fence"></a>C eset: A cikk átfutási ideje és a negatív napok időkorlátja automatikusan összefügg egymással
 
@@ -192,7 +192,7 @@ A dinamikus negatív napok időkorlátja 6 + 2 – 7 = 1 nap. Ebben az esetben a
 
 Az alábbi ábra bemutatja annak grafikus nézetét, hogy mi történik ebben az esetben.
 
-![Az 3. forgatókönyv C esetének grafikus nézete](./media/negative-days-18.png)
+![A 3. forgatókönyv C esetének grafikus nézete.](./media/negative-days-18.png)
 
 ### <a name="case-d-use-only-dynamic-negative-days"></a>D eset: Csak dinamikus negatív napok használata
 
@@ -219,11 +219,11 @@ A negatív napokat hosszú időkorlátra is beállíthatja, és ezt követően a
 
 Az alábbi ábra grafikus nézetben mutatja be, mi történik ebben az esetben.
 
-![A példa grafikus áttekintése](./media/negative-days-19.png)
+![A példa grafikus áttekintése.](./media/negative-days-19.png)
 
 Az MRP a következő eredményeket produkálja.
 
-![Eredmények, 1. példa](./media/negative-days-20.png)
+![Eredmények, 1. példa.](./media/negative-days-20.png)
 
 Az előző képernyőképen az értékesítési rendelés igénylésének dátuma január 9., nem pedig január 10. Mivel ez a képernyőkép 2015-ben készült, amikor január 10-e szombatra esett, a rendelés igénylési dátumának az előző munkanapra, péntekre, azaz január 9-re kell esnie.
 
@@ -233,7 +233,7 @@ Az eredmények nem hibásak, de előfordulhat, hogy az MRP futási ideje hosszab
 
 Ha Ön csökkenti a negatív napokat a cikk átfutási idejéhez közelebb eső számra, és dinamikus negatív napokat használ, akkor az MRP a következő eredményeket hozza létre.
 
-![Eredmények, 2. példa](./media/negative-days-21.png)
+![Eredmények, 2. példa.](./media/negative-days-21.png)
 
 Az MRP létrehoz egy tervezett rendelést, amely az első értékesítési rendeléshez van csatolva. Ezt követően az elvárásoknak megfelelően a rendszer a második értékesítési rendelést a negatív napok beállításától függően a meglévő beszerzési rendeléshez rögzíti. Ez a tervezési eredmény is helyes, és az MRP futási ideje rövidebb lehet. Ebben az esetben nem feltétlenül szükséges a műveletkérő üzenetek megértése és az, hogy tudja, hogyan kell dolgoznia velük.
 

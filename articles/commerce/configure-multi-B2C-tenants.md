@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-12
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c813adb79ae1b78a052332e077393f125830633f
-ms.sourcegitcommit: cabd991fda2bfcabb55db84c225b24a7bb061631
+ms.openlocfilehash: 0ad2a86fbc17f107a065330a56da6cdcca69e172
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "6027722"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352566"
 ---
 # <a name="configure-multiple-b2c-tenants-in-a-commerce-environment"></a>Több B2C bérlő konfigurálása egy Commerce-környezetben
 
@@ -49,7 +49,7 @@ Gyakran előfordul, hogy az egyes csatornák vagy webhelyek külön üzletágké
 
 A következő ábra több B2C bérlőt mutat be a Commerce-környezetben.
 
-![Több B2C-bérlő Commerce környezetben](media/MultiB2C_In_Environment.png)
+![Több B2C-bérlő Commerce környezetben.](media/MultiB2C_In_Environment.png)
 
 Ha úgy dönt, hogy a vállalat külön B2C bérlőket igényel csatornánként ugyanazon a Commerce-környezetben, hajtsa végre a következő szakaszokban ismertetett lépéseket a funkció kéréséhez.
 
