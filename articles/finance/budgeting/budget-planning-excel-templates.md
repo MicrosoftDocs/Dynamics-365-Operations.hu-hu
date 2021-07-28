@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9d4e901871267d4f11d9afefc873708663dbabd6
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 7c94cdfda4bab43cfc753374d517e22fd21da4bd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190285"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343838"
 ---
 # <a name="budget-planning-templates-for-excel"></a>Költségvetés-tervezési sablonok az Excel programhoz
 
@@ -37,17 +37,17 @@ A költségvetésiterv-dokumentumok egy vagy több elrendezés használatával t
 1. Nyissa meg a **Költségvetési tervek listája** (**Költségvetés készítése** &gt; **Költségvetési tervek**) elemet. 
 2. Új költségvetésiterv-dokumentum létrehozásához kattintson az **Új** gombra. 
 
-   [![Költségvetési tervek listája](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![Költségvetési tervek listája.](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. Használja a **Hozzáadás** elemet sorok hozzáadásához. Kattintson az **Elrendezések** elemre a költségvetésiterv-dokumentum elrendezési konfigurációjának megtekintéséhez. 
 
-   [![Költségvetési tervek hozzáadása](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![Költségvetési tervek hozzáadása.](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 Áttekintheti és szükség szerint módosíthatja az elrendezés konfigurációját. 
 1. Ha Excel-fájlt akar létrehozni ehhez az elrendezéshez, lépjen a **Sablon** &gt; **Létrehozás** elemre. 
 2. A sablon létrejötte után a költségvetésiterv-dokumentumsablon megnyitásához és áttekintéséhez lépjen a **Sablon** &gt; **Nézet** elemre. Az Excel-fájlt elmentheti a helyi meghajtóra. 
 
-[![Mentés másként](./media/bpt3-1024x545.png)](./media/bpt3.png)
+[![Mentés másként.](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > A költségvetésiterv-dokumentum elrendezését nem lehet szerkeszteni, miután egy Excel-sablonhoz lett társítva. Az elrendezés módosításához törölje a kapcsolódó Excel-sablonfájlt, és hozza létre újra. Ez az elrendezésben és a munkalapon lévő mezők szinkronizálásának megtartásához szükséges. 
@@ -64,7 +64,7 @@ A **Tervezés** lapon kattintson a **Hozzáadás** mezőre, és válassza ki a *
 
 Vigye a kurzort a kívánt helyre az Excel fájlban. Kattintson a **Címke hozzáadása** elemre a mezőfelirat a kijelölt helyen történő hozzáadásához. Válassza az **Érték hozzáadása** elemet az értékmező a kijelölt helyre történő hozzáadásához. A tervező bezárásához kattintson a **Kész** gombra.
 
-## <a name="select-add-valuemediabpt7png"></a>[![Az Érték hozzáadása lehetőség kiválasztása](./media/bpt7.png)](./media/bpt7.png)
+## <a name="select-add-valuemediabpt7png"></a>[![Az Érték hozzáadása lehetőség kiválasztása.](./media/bpt7.png)](./media/bpt7.png)
 
 ## <a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Számított oszlop felvétele költségvetésiterv-dokumentum táblájába
 
@@ -72,11 +72,11 @@ Ezután következik a számított oszlopok hozzáadása a létrehozott költség
 
 Kattintson a **Tervezés** elemre az **Adatcsatlakozóban** oszlopok a táblához történő hozzáadásához. Kattintson a **Szerkesztés** elemre a **BudgetPlanWorksheet** adatforrás mellett az oszlopok felvételének megkezdéséhez.
 
-[![Oszlopok hozzáadásának megkezdése](./media/bpt8-1024x301.png)](./media/bpt8.png) 
+[![Oszlopok hozzáadásának megkezdése.](./media/bpt8-1024x301.png)](./media/bpt8.png) 
 
 A kiválasztott mezőcsoport megjeleníti a sablonban elérhető oszlopokat. Kattintson a **Képlet** lehetőségre egy új oszlop hozzáadásához. Adjon nevet az új oszlopnak, majd illessze be a képletet a **Képlet** mezőbe. Az oszlop beillesztéséhez kattintson a **Frissítés** elemre.
 
-[![Oszlop hozzáadása és beszúrása](./media/bpt12-1024x565.png)](./media/bpt12.png)
+[![Oszlop hozzáadása és beszúrása.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
 > A képlet megadásához hozza létre a képletet a táblázatban, majd másolja a **Tervezés** ablakba. A Finance and Operationshöz kapcsolt táblák neve általában „AXTable1”. Például az 1. n.évi kérelem : 4. n.évi kérelem oszlopok a táblázatban való összegzésére szolgáló képlet = AxTable1\[1. n.évi kérelem\]+AxTable1\[2. n.évi kérelem\]+AxTable1\[3. n.évi kérelem\]+AxTable1\[4. n.évi kérelem\].
@@ -85,11 +85,11 @@ Ismételje meg ezeket a lépéseket a **Kiigazítás** oszlop beillesztéséhez.
 
 Mentse és zárja be az Excel-fájlt. Az **Elrendezések** részben kattintson a **Sablon &gt; Feltöltés** elemre a mentett és a költségvetési tervhez használandó Excel-sablon feltöltéséhez. 
 
-[![Excel-sablon feltöltése](./media/bpt10-1024x352.png)](./media/bpt10.png) 
+[![Excel-sablon feltöltése.](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 
 Zárja be az **Elrendezések** csúszkát. A **Költségvetési terv** dokumentumban, kattintson a **Munkalap** elemre a dokumentum Excelben történő megtekintéséhez és szerkesztéséhez. Ne feledje, hogy a kiigazított Excel-sablont használtuk ezen költségvetésiterv-munkalap létrehozásához, és hogy a számított oszlopok az előző lépésben megadott képletek alapján frissülnek. 
 
-[![A dokumentum megtekintése és szerkesztése az Excel programban](./media/bpt111-1024x431.png)](./media/bpt111.png)
+[![A dokumentum megtekintése és szerkesztése az Excel programban.](./media/bpt111-1024x431.png)](./media/bpt111.png)
 
 ## <a name="tips--tricks-for-creating-budget-plan-templates"></a>Tippek és trükkök költségvetésiterv-sablonok létrehozásához
 ### <a name="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template"></a>Felvehetek és használhatok további adatforrásokat költségvetésiterv-sablonoknál?
@@ -102,21 +102,21 @@ Az **Adatcsatlakozó** **Szűrő** lehetőségével tetszés szerinti szűrőket
 
 Igen, nyissa meg az **Adatcsatlakozó** beállításait, ha el kívánja rejteni a **Tervezés** funkciót más felhasználók elől.
 
-[![Az Adatcsatlakozó beállításainak megnyitása](./media/bpt13-1024x565.png)](./media/bpt13.png)
+[![Az Adatcsatlakozó beállításainak megnyitása.](./media/bpt13-1024x565.png)](./media/bpt13.png)
 
 Bontsa ki az **Adatcsatlakozó beállításai** elemet, és törölje a **Tervezés engedélyezése** jelölőnégyzetet. Ez elrejti a **Tervezés** funkciót az **Adatcsatlakozóból**.
 
-[![A Tervezés beállítás elrejtése az Adatcsatlakozóban](./media/bpt14-1024x592.png)](./media/bpt14.png)
+[![A Tervezés beállítás elrejtése az Adatcsatlakozóban.](./media/bpt14-1024x592.png)](./media/bpt14.png)
 
 ### <a name="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data"></a>Megakadályozhatom, hogy a felhasználók adatokkal való munkavégzés közben véletlenül bezárják az Adatcsatlakozót?
 
 Ajánlott zárolni a sablont, hogy a felhasználók ne tudják bezárni. A zárolás bekapcsolásához kattintson az **Adatcsatlakozó** elemre, és a jobb felső sarokban megjelenik egy nyíl. 
 
-[![A zárolás bekapcsolása](./media/bpt15-1024x285.png)](./media/bpt15.png) 
+[![A zárolás bekapcsolása.](./media/bpt15-1024x285.png)](./media/bpt15.png) 
 
 Kattintson a nyílra a további menü megjelenítéséhez. Válassza a **Zárolás** elemet.
 
-### <a name="select-lockmediabpt16png"></a>[![A Zárolás elem kiválasztása](./media/bpt16-1024x614.png)](./media/bpt16.png)
+### <a name="select-lockmediabpt16png"></a>[![A Zárolás elem kiválasztása.](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
 ### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Használhatok más Excel-funkciókat, például cellaformázást, színeket, feltételes formázást és diagramokat a költségvetésiterv-sablonokhoz?
 

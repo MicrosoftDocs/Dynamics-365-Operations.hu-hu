@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: eae1e722a7c4d819cbca398eb14a2b36fa04eec5
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 6844f3962562a02609333ef7d6963801852af4b0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5830762"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344146"
 ---
 # <a name="work-split"></a>Felosztott munka
 
@@ -51,7 +51,7 @@ A *Munkafelosztás* funkció a következő két gombot adja hozzá a **Munka ré
 - **Munkafelosztás** – Ossza fel a munkaazonosítót több kisebb munkaazonosítóra, amelyet különböző dolgozók feldolgozhatnak.
 - **Munkafelosztási munkamenet megszakítása** – A munkafelosztási munkamenet megszakítása és a munka feldolgozásra való elérhetővé tétele.
 
-![Munkafelosztás és Munkafelosztási munkamenet megszakítási gombok](media/Work_split_buttons.png "Munkafelosztás és Munkafelosztási munkamenet megszakítási gombok")
+![Munkafelosztás és Munkafelosztási munkamenet megszakítási gombok.](media/Work_split_buttons.png "Munkafelosztás és Munkafelosztási munkamenet megszakítási gombok")
 
 > [!IMPORTANT]
 > A **Munkafelosztás** gomb nem érhető el, ha az alábbi feltételek bármelyike teljesül:
@@ -94,7 +94,7 @@ A munka felosztásához kövesse az alábbi lépéseket.
 
     Az aktuális munka **Munkazárolási ok** mezője a *Munkafelosztás* értékre lesz állítva, és a munka zárolva lesz.
 
-    ![Zárolás oka](media/Blocking_reason.png "Zárolás oka")
+    ![Zárolás oka.](media/Blocking_reason.png "Zárolás oka")
 
 1. Jelölje ki azokat a sorokat, amelyeket el szeretne távolítani az aktuális munkaazonosítóból, és hozzá szeretné adni egy új munkaazonosítóhoz. A következő események zajlanak le:
 

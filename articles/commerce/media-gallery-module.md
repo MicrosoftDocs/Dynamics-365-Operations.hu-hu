@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e9af56a8a82938fa7d23e8096db2c59ed5fcb517
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6271280"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346716"
 ---
 # <a name="media-gallery-module"></a>Médiagaléria modul
 
@@ -41,7 +41,7 @@ Ugyanígy a médiatár modulja a képtár olyan oldalán is tárolhatja a teljes
 
 A következő ábrán szereplő példában egy médiatár modul segítségével tekinthetők meg a PDP-n található vásárlásmezőben lévő képek.
 
-![Példa egy termék részletei oldalon található vásárlásmezőre, amely a médiatár modul használatával hosztol termékképeket](./media/ecommerce-pdp-buybox.PNG)
+![Példa egy termék részletei oldalon található vásárlásmezőre, amely a médiatár modul használatával hosztol termékképeket.](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Médiatár tulajdonságok
 
@@ -59,11 +59,11 @@ A következő ábrán szereplő példában egy médiatár modul segítségével 
 
 A következő ábra egy olyan médiatár-modult mutat be, amelyben elérhetők a teljes képernyős és a nagyítási lehetőségek.
 
-![A példa egy olyan médiatár-modult mutat be, amelyben elérhetők a teljes képernyős és a nagyítási lehetőségek](./media/ecommerce-media-zoom.png)
+![A példa egy olyan médiatár-modult mutat be, amelyben elérhetők a teljes képernyős és a nagyítási lehetőségek.](./media/ecommerce-media-zoom.png)
 
 A következő ábra egy olyan médiatár-modult mutat be, amely válogatott képeket tartalmaz (azaz a meghatározott képek nem függnek a termékazonosítótól vagy az oldalkontextustól).
 
-![A példa egy olyan médiatár-modult mutat be, amely válogatott képeket tartalmaz](./media/ecommerce-media-curated.PNG)
+![A példa egy olyan médiatár-modult mutat be, amely válogatott képeket tartalmaz.](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-interakció
 

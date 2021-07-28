@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 154ec719e16e4826b0e24deb5ecadf587d938e3c
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 1fce2570e1b0cc334fc0e92e5e83c53a4566b4a4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5800495"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345984"
 ---
 # <a name="warehouse-set-up"></a>Raktár beállítása
 
@@ -45,7 +45,7 @@ A raktári webhely konfigurálásához kövesse az alábbi lépéseket.
 
 A következő kép egy példát mutat a raktárwebhelyre.
 
-![Példa: raktárwebhely](media/warehouse-site.png)
+![Példa: raktárwebhely.](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse"></a>Raktár beállítása
 
@@ -98,7 +98,7 @@ A szokásos, sérült és visszaküldött készlet raktári készlethelyének be
     
 A következő képen a San Francisco raktár készlethely beállítása látható.
 
-![Példa raktári hely beállítására](media/warehouse-inventory-locations.png)
+![Példa raktári hely beállítására.](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Teljes raktári beállítás
 
@@ -121,7 +121,7 @@ Ennek a raktárbeállításnak a befejezéséhez kövesse az alábbi lépéseket
 
 A következő kép a konfigurált raktár adatait jeleníti meg.
 
-![Példa konfigurált raktárra](media/warehouse-sample.png)
+![Példa konfigurált raktárra.](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

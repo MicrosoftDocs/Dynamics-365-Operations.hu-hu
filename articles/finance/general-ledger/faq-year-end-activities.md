@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 379bb8a1f969a74618db0e57c84c2038db1b631c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 9ceacdbe36cc946b64d13b3faff2b3b1ca59afbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5822831"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345476"
 ---
 # <a name="year-end-activities-faq"></a>Év végi tevékenységek – GYIK 
 
@@ -29,7 +29,7 @@ Ez a témakör az év végi zárással kapcsolatos tevékenységek terén nyújt
 ## <a name="general-ledger-how-do-i-know-that-were-running-year-end-close-and-not-undoing-year-end-close"></a>Főkönyv: Hogyan tudok megbizonyosodni róla, hogy elvégezzük, és nem visszavonjuk az év végi zárást?
 Több szervezetet is láttunk már, amely az év végi zárás lefuttatása helyett véletlenül visszavonta a zárást. Ha az év végi zárás művelete rendkívül gyorsan lefut, vagy az év végi zárás nem hoz létre nyitó egyenlegeket, ellenőrizze az **Előző zárás visszavonása** beállítást az **Év végi zárás** menüben (**Főkönyv > Időszak lezárása > Év végi zárás > Pénzügyi zárás futtatása**). 
 
-[![Az év végi zárás futtatása és az év végi zárás visszavonása](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
+[![Az év végi zárás futtatása és az év végi zárás visszavonása.](./media/faq-2020-yr-end-01.png)](./media/faq-2020-yr-end-01.png)
 
 Ha az **Előző zárás visszavonása** beállításnál az **Igen** érték szerepel, a rendszer vissza fogja vonni az előző év végi zárást. A visszavonás futtatásakor a program a záró és nyitó egyenlegekhez kapcsolódó összes bejegyzést törli, mintha az év végi zárást még nem futtatták volna le. A program a bizonylatokat is törli. A program nem indítja el automatikusan újra az év végi zárást. A folyamatot Önnek kell újraindítania. Ügyeljen rá, hogy az **Előző zárás visszavonása** lehetőségnél a **Nem** érték legyen beállítva. 
 
@@ -39,11 +39,11 @@ Ha az **Előző zárás visszavonása** beállításnál az **Igen** érték sze
 ## <a name="general-ledger-what-is-the-difference-between-undo-and-delete-gl-parameter-for-year-end-close"></a>Főkönyv: Az év végi zárást tekintve mi a különbség a Visszavonás és a Törlés főkönyvi paraméterek között?
 Talán nem minden felhasználó számára egyértelmű, hogy mi a különbség az **Előző zárás visszavonása** paraméter (amely az **Év végi zárás** párbeszédpanelen található) és az **Évzáró tranzakciók törlése átvezetés közben** főkönyvi paraméter között (**Főkönyv > Időszak zárása > Év végi zárás > Pénzügyi zárás futtatása**).  
 
-[![A Visszavonás és a Törlés főkönyvi paraméterek közötti különbség az év végi zárásnál](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
+[![A Visszavonás és a Törlés főkönyvi paraméterek közötti különbség az év végi zárásnál.](./media/faq-2020-yr-end-02.png)](./media/faq-2020-yr-end-02.png)
 
 Ha az év végi zárási folyamat futtatása közben szeretné törölni az összes záró és nyitó egyenleggel kapcsolatos bejegyzést, a párbeszédpanel legördülő menüjéből válassza az **Előző zárás visszavonása** lehetőséget. Így olyan lesz, mintha az év végi zárást még nem futtatták volna le. A program a bizonylatokat is törli. A program nem indítja el automatikusan újra az év végi zárást. Az év végi zárás futtatásához a felhasználók ismét el kell indítania a folyamatot. Ebben az esetben módosítsa az **Előző zárás visszavonása** beállítást a **Nem** értékre (**Főkönyv > Főkönyv beállítása > Főkönyvi paraméterek**). 
 
-[![Főkönyvi paraméterek beállítása](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
+[![Főkönyvi paraméterek beállítása.](./media/faq-2020-yr-end-03.png)](./media/faq-2020-yr-end-03.png)
 
 A főkönyv **Évzáró tranzakciók törlése átvezetés közben** paramétere csak az év végi zárás futtatása során használatos (amikor az **Előző zárás visszavonása** lehetőség a **Nem** értékre van állítva), tehát a zárás visszavonásakor nem. Ha a paraméter az **Igen** értékre van állítva, a rendszer törli a záró egyenleghez és a nyitó egyenleghez kapcsolódó bejegyzéseket, és újra lefuttatja az év végi zárást. Ezt a folyamatot akkor használják, ha a szervezet egyetlen, a záró és a nyitó egyenleg bejegyzéseihez kapcsolódó könyvelési bejegyzésben szeretné feladni az összes tranzakciót, ideértve az előző év zárása óta végzett korrekciókat. 
 
@@ -60,7 +60,7 @@ Az év végi zárás futtatásakor a rendszernek minden dimenziókészlet egyenl
 
 A szükségtelen dimenziókészletek a **BudgetDimensionFocusInitializeBalance** kötegelt feladatot is befolyásolják (**Főkönyv > Számlatükör > Dimenziók > Pénzügyi dimenziókészletek**).
 
-[![Pénzügyi dimenziókészletek](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
+[![Pénzügyi dimenziókészletek.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Év végi zárásra vonatkozó sablon konfigurálása
 Az év végi zárásra vonatkozó sablon segítségével a szervezetek kiválaszthatják a pénzügyidimenzió-szintet, amelyet az eredményegyenlegek mérleg szerinti egyenlegbe való átviteléhez szeretnének használni. A beállítások segítségével a szervezetek kezelhetik a részletes pénzügyi dimenziókat (**Az összes lezárása**), amikor az egyenlegeket átviszik a mérleg szerinti eredménybe, vagy ha úgy döntenek, hogy az összegeket egyetlen dimenzióértékben szeretnék összegezni (**Egyetlen lezárása**). Ezt minden pénzügyi dimenziónál meg lehet határozni. A beállításokkal kapcsolatos további információkért lásd az [Év végi zárás](year-end-close.md) című témakört.
@@ -72,14 +72,14 @@ Ha a szervezet legutóbbi év végi zárása óta a 10.0.13-as vagy újabb verzi
  
 ## <a name="general-ledger--what-does-the-period-close--year-end-close-do"></a>Főkönyv – Mi történik az Időszak lezárása – Év végi zárás lehetőség használatakor?
  
-[![Időszaki lezárása, év végi zárás](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
+[![Időszaki lezárása, év végi zárás.](./media/faq-2020-yr-end-05.png)](./media/faq-2020-yr-end-05.png)
 
 ### <a name="performance-improvements-for-rebuilding-financial-dimension-sets-new-feature"></a>Teljesítménnyel kapcsolatos fejlesztések a pénzügyi dimenziókészletek újraépítéséhez (új funkció)
 A 10.0.16-os verzióban bevezetett új funkció javítja az év végi zárási és konszolidálási folyamatok teljesítményét. A funkció neve: Teljesítménnyel kapcsolatos fejlesztések a pénzügyi dimenziókészletek újraépítéséhez. Ez a funkció módosítja a dimenziókészletek újraépítésének módját, amelyeket így csak egy adott időkeretben lehet újraépíteni. A korábbi verziókban a program az összes dátumhoz újraépítette a dimenziókészleteket. Ha például a 2020-as évet zárja, a rendszer csak a 2020-as pénzügyi évhez tartozó tranzakciók egyenlegeit építi újra. Ha például a 2020. november 1. és 2020. november 30. közötti dátumtartományban futtat konszolidációt, a rendszer csak az erre a dátumtartományra vonatkozó egyenlegeket építi újra.
 
 Mivel ez a funkció kompatibilitástörő változásnak számít, a **Funkciókezelés** munkaterület segítségével kell engedélyeznie.
  
-[![Év végi zárás](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
+[![Év végi zárás.](./media/faq-2020-yr-end-06.png)](./media/faq-2020-yr-end-06.png)
 
 ## <a name="accounts-payable-what-changes-have-been-made-to-support-1099-year-end-reporting-for-2020"></a>Kötelezettségek: Milyen módosításokat vezettek be 2020-ban az 1099-es év végi jelentés támogatásához?
 
@@ -114,15 +114,15 @@ Nem. A „1099 frissítése” rutint egyszerre csak egy szállítón lehet lefu
 ## <a name="accounts-payable-1099--recalculate-existing-1099-amounts-vs-update-all-in-the-update-1099-utility"></a>Kötelezettségek: 1099 – „A meglévő 1099-es összegek újraszámítása” és az „Összes frissítése” lehetőség összehasonlítása az „1099 frissítése” segédprogramban.
 **A meglévő 1099-es összegek újraszámítása** jelölőnégyzet a teljes kifizetett értékre állítja vissza az 1099-es összeget, amennyiben az **Összes frissítése** jelölőnégyzettel együtt használják. 
 
-[![1099-es adótranzakciók: a frissítési rutin futtatása előtt](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
+[![1099-es adótranzakciók: a frissítési rutin futtatása előtt.](./media/faq-2020-yr-end-07.png)](./media/faq-2020-yr-end-07.png)
 
 **A meglévő 1099-es összegek újraszámítása** jelölőnégyzet csak akkor használható, ha a számlán részleges 1099-es értékek szerepelnek, vagy ha az 1099-es adóűrlapon módosították. Ha például a számla értéke 1000,00 $, de a felhasználó manuálisan megadja az űrlapon az 500,00 $ értéket az 1099-es funkciónál.
 
-[![1099-es adótranzakciók: Az Összes frissítése és A meglévő 1099-es összegek újraszámítása lehetőségek megjelölése](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
+[![1099-es adótranzakciók: Az Összes frissítése és A meglévő 1099-es összegek újraszámítása lehetőségek megjelölése.](./media/faq-2020-yr-end-08.png)](./media/faq-2020-yr-end-08.png)
 
 Ha ezt kifizetik, az 500,00 $ lesz a kifizetett 1099-es összeg. Ha lefuttatja az újraszámítási rutint, a rendszer 1000,00 $-re módosítja az 1099-es összeget, amely a teljes kifizetett összeg.
 
-[![1099-es adótranzakciók: Az 1099-es rutin futtatása után](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
+[![1099-es adótranzakciók: Az 1099-es rutin futtatása után.](./media/faq-2020-yr-end-09.png)](./media/faq-2020-yr-end-09.png)
 
 ## <a name="accounts-payable-1099--manually-create-1099-transactions"></a>Kötelezettségek: 1099 – Az 1099-es tranzakciók manuális létrehozása
 Előfordulhat, hogy egy szervezetnek manuálisan kell létrehoznia azokat az 1099-es tranzakciókat, amelyek nincsenek számlához társítva. Manuálisan is hozzáadhat 1099-es tranzakciókat, amelyhez a **Kötelezettségek > Időszakos feladatok > Adó - 1099 > Szállítói kiegyenlítések az 1099-es jelentéshez** menüpontot használhatja. Válassza a **Manuális 1099-es tranzakciók** gombot. 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 294ad788c97850880b479d3c3c44cc19d55e9a6e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 0646f8b6371ffbb5d203f8fd062999fb22613240
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837153"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345626"
 ---
 # <a name="revenue-recognition-setup"></a>A bevételelszámolás beállítása
 [!include [banner](../includes/banner.md)]
@@ -72,7 +72,7 @@ A bevételelszámolás beállításai a **Főkönyvi paraméterek** oldal (**Bev
     - Ha a **Nem** értéket adja meg, korlátozhatja a helyesbítő tranzakció főkönyvbe történő feladását. Ha a beállítás értéke **Nem**, akkor nem jönnek létre további dokumentumokat a Kinnlevőségek modulban a belső számviteli korrekcióhoz. A számla kifizetésekor az elszámolási folyamat a régi könyvelési bejegyzést használja fel a készpénzfizetési engedmények, illetve a realizált nyereségek vagy veszteségek feladásához.
     - Ha a beállításhoz az **Igen** értéket adja meg, a Kinnlevőségek modulban automatikusan létrejön egy sztornírozási dokumentum és egy új számla a helyesbítő tranzakcióhoz. Mivel ez a javítás belső könyvelési korrekció, a program nem küldi el és nem továbbítja a vevőnek az új dokumentumokat. A sztornírozási dokumentumot az eredeti számlára egyenlíti ki a program, és a vevő az új, helyesbített számlát fizeti ki. Ne feledje, hogy mindhárom dokumentum megjelenik a jelentésekben, például a vevői kivonatban.
 
-[![Beállítási adatok](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Beállítási adatok.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## <a name="revenue-schedules"></a>Bevételek ütemezései
 
@@ -82,7 +82,7 @@ Ha a bevétel megjelenítése mérföldkövek szerint történik, a megjelenít�
 
 A bevételek a **Bevételek ütemezései** lapon (**Bevételmegjelenítés \> Beállítás \> Bevételek ütemezései**) ütemezhetők.
 
-[![Bevételek ütemezései](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Bevételek ütemezései.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Adjon meg leíró értéket a **Bevétel ütemezése** és a **Leírás** mezőben. A program a következő további beállításokat használja a bevételi ütemezés számla feladásakor történő létrehozásához.
 
@@ -104,7 +104,7 @@ Adjon meg leíró értéket a **Bevétel ütemezése** és a **Leírás** mezőb
 
 Az általános időszakok és az egyes időszakokban megjelenített százalékos értékek megtekintéséhez kattintson a **Bevételütemezés részletei** gombra. A **Megjelenítés százalékos értéke** alapértelmezés szerint egyenlően oszlik el az időszakok között. Ha a megjelenítés alapja **Havi** vagy **Előfordulások**, akkor a megjelenítés százalékos értéke módosítható. A megjelenítés százalékos értékének módosításakor figyelmeztető üzenetet kap arról, hogy a teljes érték nem 100 százalék. Ha megjelenik az üzenet, folytathatja a sorok szerkesztését. A lap bezárása előtt viszont a teljes százalékos értéknek 100-nak kell lennie.
 
-[![Bevételütemezés részletei](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
+[![Bevételütemezés részletei.](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
 ## <a name="inventory-setup"></a>Készletbeállítás
 
@@ -139,7 +139,7 @@ A cikkcsoportok és a kiadott termékek a medián ár használatával vagy az en
 
 Miután megadta a kiadott termék beállításait, manuálisan kell megadnia a bevételi árat a forgalmi érték árának vagy a medián árnak (ha medián árat használ) a **Bevételi árak** oldalon (lépjen a **Bevételmegjelenítés \> Beállítás \> Készletbeállítás \> Kiadott termékek** részre, majd a műveleti ablaktábla **Eladás** lapjának **Bevételmegjelenítés** csoportjában válassza a **Bevételi árak lehetőséget**) való megadásával.
 
-[![Bevételi árak](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Bevételi árak.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 Az ezen az oldalon manuálisan meghatározott bevételi ár határozza meg az egyes értékesítési rendelések bevételi árának megadott feltételek alapján történő felosztását. A rendszer minden feltételt egyeztet az értékesítési rendelés sorával, és így határozza meg, hogy milyen bevételi árat kell használnia a felosztás során.
 
@@ -181,7 +181,7 @@ Amikor csomagolt cikket állít be, két mezőt kell kitöltenie a **Kiadott ter
 
 Ezután az összetevőket hozzá kell rendelni a csomag/anyagjegyzék szülőcikkéhez az **Anyagjegyzék-verziók** oldalon (lépjen a **Bevételmegjelenítés \> Beállítás \> Készlet- és termékbeállítás \> Kiadott termékek** részre, és a műveleti panel **Mérnöki feladatok** lapjának **Anyagjegyzék** csoportjában válassza ki az **Anyagjegyzék-verziók** lehetőséget). További részletek az anyagjegyzékek beállítási dokumentációjában találhatók.
 
-[![Kiadott termékek, anyagjegyzék ütemezései](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Kiadott termékek, anyagjegyzék ütemezései.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 Ha a csomag szülőcikkét és a csomag összetevőit beállítja felosztáshoz, akkor a program – a bevételhez való hozzájárulás százalékos értéke alapján – felosztja a csomag bevételi árát az összetevők között.
 

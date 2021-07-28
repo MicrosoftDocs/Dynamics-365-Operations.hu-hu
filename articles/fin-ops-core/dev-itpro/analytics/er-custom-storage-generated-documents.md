@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ca50f030e67e517a227766f6a30d4bd4b345300b
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 424917f98ec7c4c044fb5cdae78133d1529aefd9
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894124"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348164"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Egyéni tárolóhely meghatározása a létrehozott dokumentumoknak
 
@@ -39,7 +39,7 @@ Ezen topológia fejlesztői környezetéhez való hozzáféréssel is kell rende
 
 A jelenlegi topológiában [hozzon létre egy új ER formátumot](tasks/er-format-configuration-2016-11.md) dokumentumok létrehozásához, amelyekhez egyéni tárolóhely hozzáadását tervezi. Másik lehetőségként [Importáljon egy a meglévő ER formátum ehhez a topológiához](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Formátumtervező oldal](media/er-extend-file-storages-format.png)
+![Formátumtervező oldal.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > Az ER formátumának, amelyet létrehoz vagy importál a következő formátum-elemek valamelyikét tartalmaznia kell:
@@ -58,7 +58,7 @@ Annak megadásához, hogy az ER formátum által létrehozott dokumentumok hogya
 3. Az **Osztály** mezőben adja meg a **Fájl csatolása** elemet.
 4. A **Csoport** mezőben adja meg a **Fájl** elemet.
 
-![Dokumentumtípusok oldal](media/er-extend-file-storages-document-type.png)
+![Dokumentumtípusok lapja.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > A dokumentumtípusok vállalatspecifikusak. ER formátumú használatához több vállalathoz konfigurált célhoz konfigurálnia kell egy külön dokumentumtípust minden vállalatnál.
@@ -113,14 +113,14 @@ Az **AttachingFile()** esemény akkor következik be, amikor a következő ER c�
 - **Archív** – Ezen cél használata esetén a futtatott ER formátumhoz új rekord jön létre a ERFormatMappingRunJobTable táblában. Az **Archivált** mező értéke a rekordban **Hamis** lesz. Ha az ER-formátum sikeresen lefut, ha a generált dokumentum csatolva lesz ehhez a rekordhoz, és az **AttachingFile()** esemény bekövetkezik. A dokumentumtípus, amelyet ki van választva ebben az ER célban határozza meg a csatolt fájl tárolási helyét (Microsoft Azure tároló vagy a Microsoft SharePoint mappa).
 - **Munkaarchívum** – Ezen cél használata esetén a futtatott ER űrlaphoz új rekord jön létre a ERFormatMappingRunJobTable táblában. Az **Archivált** mező értéke a rekordban **Igaz** lesz. Ha az ER-formátum sikeresen lefut, ha a generált dokumentum csatolva lesz ehhez a rekordhoz, és az **AttachingFile()** esemény bekövetkezik. A dokumentumtípus, amely konfigurálva van az ER paraméterekben határozza meg a csatolt fájl tárolási helyét (Azure tároló vagy a Microsoft SharePoint mappa).
 
-![Elektronikus jelentéskészítés paraméterei lap](media/er-extend-file-storages-parameters.png)
+![Elektronikus jelentéskészítés paraméterei lap.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Egy ER-célhely konfigurálása
 
 1. Konfigurálja az archivált célt valamelyik korábban említett elemhez (fájl, mappa, egyesítés vagy melléklet) a létrehozott vagy importált ER formátumhoz. Útmutatásért lásd: [ER célok konfigurálása](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Használja a dokumentumtípust, amelyet korábban hozzáadott a konfigurált célhoz. (Például ebben a témakörben a dokumentumtípus **FileX**.)
 
-![Célhely beállításai párbeszédablak](media/er-extend-file-storages-destination.png)
+![Célhely beállításai párbeszédablak.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Forráskód módosítása
 

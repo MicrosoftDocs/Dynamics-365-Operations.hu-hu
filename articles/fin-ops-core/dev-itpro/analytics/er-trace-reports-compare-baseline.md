@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: a8609cb026e7738eab96980bc9fe4a53340272eb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: e4245f5951cc4891b378f2343a1563ced33bc937
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743581"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345840"
 ---
 # <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel
 
@@ -52,7 +52,7 @@ A példa lépéseinek végrehajtásához először el kell végeznie a jelen elj
 2. Az **Osztály** mezőben adja meg a **Fájl csatolása** elemet.
 3. A **Csoport** mezőben adja meg a **Fájl** elemet.
 
-![Dokumentumtípusok oldal](media/GER-BaselineSample-SetupDocumentType.PNG "A dokumentumtípusok oldal képernyőképe")
+![Dokumentumtípusok lapja.](media/GER-BaselineSample-SetupDocumentType.PNG "A dokumentumtípusok oldal képernyőképe")
 
 > [!NOTE]
 > Minden olyan adatkészlethez meg kell adni egy új dokumentumtípust, amelynél az ER alaptervi funkció használatát tervezi.
@@ -61,11 +61,11 @@ A példa lépéseinek végrehajtásához először el kell végeznie a jelen elj
 
 1. Az **Elektronikus jelentéskészítés** munkaterületen, a **Kapcsolódó hivatkozások** szakaszban, válassza az **Elektronikus jelentéskészítés paraméterei** elemet.
 
-    ![Elektronikus jelentések munkaterülete](media/GER-BaselineSample-ERWorkspace.PNG "Az elektronikus jelentéskészítés munkaterületének képernyőképe")
+    ![Elektronikus jelentések munkaterülete.](media/GER-BaselineSample-ERWorkspace.PNG "Az elektronikus jelentéskészítés munkaterületének képernyőképe")
 
 2. A **Mellékletek** lap **Alapterv** mezőjében adja meg vagy válassza ki az imént létrehozott dokumentumtípust.
 
-    ![Az elektronikus jelentéskészítési paraméterek oldal mellékletek lapja](media/GER-BaselineSample-ERParameters.PNG "Az elektronikus jelentéskészítési paraméterek képernyőképe")
+    ![Az elektronikus jelentéskészítési paraméterek oldal mellékletek lapja.](media/GER-BaselineSample-ERParameters.PNG "Az elektronikus jelentéskészítési paraméterek képernyőképe")
 
 3. Válassza a **Mentés** lehetőséget, majd zárja be az **Elektronikus jelentéskészítési paraméterek** lapot.
 
@@ -76,7 +76,7 @@ A példa lépéseinek végrehajtásához először el kell végeznie a jelen elj
 3. Írjon be a legördülő párbeszédpanel **Név** mezőjébe ezt: **ER-kiindulások tanulásához használatos modell**.
 4. Válassza a **Konfiguráció létrehozása** lehetőséget, hogy megerősítse egy új ER adatmodell-bejegyzés létrehozását.
 
-![Konfiguráció létrehozása legördülő párbeszédpanel](media/GER-BaselineSample-ModelAdd.PNG "A konfiguráció létrehozása legördülő párbeszédpanel képernyőképe")
+![Konfiguráció létrehozása legördülő párbeszédpanel.](media/GER-BaselineSample-ModelAdd.PNG "A konfiguráció létrehozása legördülő párbeszédpanel képernyőképe")
 
 ### <a name="design-a-data-model"></a>Adatmodell tervezése
 
@@ -90,7 +90,7 @@ A példa lépéseinek végrehajtásához először el kell végeznie a jelen elj
 8. Válassza az **Állapot módosítása** lehetőséget.
 9. Válassza a **Befejezés** parancsot, majd válassza az **OK** elemet.
 
-![Konfigurációk oldala](media/GER-BaselineSample-ModelComplete.PNG "A Konfigurációk oldal képernyőképe")
+![Konfigurációs oldal.](media/GER-BaselineSample-ModelComplete.PNG "A Konfigurációk oldal képernyőképe")
 
 ### <a name="add-a-new-er-format-configuration"></a>Új ER-formátum hozzáadása
 
@@ -99,7 +99,7 @@ A példa lépéseinek végrehajtásához először el kell végeznie a jelen elj
 3. A **Név** mezőbe írja be: **ER-kiindulások tanulási formátuma**.
 4. Válassza a **Konfiguráció létrehozása** lehetőséget, hogy megerősítse egy új ER formátumbejegyzés létrehozását.
 
-![Konfiguráció létrehozása legördülő párbeszédpanel](media/GER-BaselineSample-FormatAdd.PNG "A konfiguráció létrehozása legördülő párbeszédpanel képernyőképe")
+![Konfiguráció létrehozása legördülő párbeszédpanel.](media/GER-BaselineSample-FormatAdd.PNG "A konfiguráció létrehozása legördülő párbeszédpanel képernyőképe")
 
 ### <a name="design-a-format"></a>Formátum tervezése
 
@@ -128,7 +128,7 @@ Ebben a példában egyszerű ER-formátumot fog létrehozni az XML-dokumentumok 
     2. Adja meg a **Név** mezőben ezt: **ID**.
     3. Válassza ki az **OK** lehetőséget.
 
-    ![Formátumtervező oldal](media/GER-BaselineSample-FormatLayoutDesign.PNG "Képernyőkép – Formátumtervező oldala")
+    ![Formátumtervező oldal.](media/GER-BaselineSample-FormatLayoutDesign.PNG "Képernyőkép – Formátumtervező oldala")
 
 8. Válassza a **Hozzárendelés** lap **Törlés** elemét.
 9. Válassza a **Gyökér hozzáadása** elemet.
@@ -141,7 +141,7 @@ Ebben a példában egyszerű ER-formátumot fog létrehozni az XML-dokumentumok 
 11. A fában válassza ki az **Output\\Document\\Id** csomópontot.
 12. Válassza a **Kötés** parancsot, majd válassza a **Mentés** elemet.
 
-![Formátumtervező oldal](media/GER-BaselineSample-FormatMappingDesign.PNG "Képernyőkép – Formátumtervező oldala")
+![Formátumtervező oldal.](media/GER-BaselineSample-FormatMappingDesign.PNG "Képernyőkép – Formátumtervező oldala")
 
 A tervezett szerkezet alapján a konfigurált formátum generál egy XML-fájlt. Ez az XML-fájl tartalmazza azt a **Gyökér** elemet, amely rendelkezik azzal az **Azonosító** attribútummal, amelynél a felhasználó által az ER futásidejű párbeszédpanelen megadott érték van megadva.
 
@@ -151,11 +151,11 @@ A tervezett szerkezet alapján a konfigurált formátum generál egy XML-fájlt.
 2. Az **Azonosító megadása** mezőbe írja az **1** értéket.
 3. Válassza ki az **OK** lehetőséget.
 
-    ![Elektronikus jelentés paraméterei – párbeszédablak](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Az elektronikus jelentési paraméterek párbeszédablak képernyőképe")
+    ![Elektronikus jelentések paramétereinek párbeszédablaka.](media/GER-BaselineSample-FormatRunToMakeBaselineFile1.PNG "Az elektronikus jelentési paraméterek párbeszédablak képernyőképe")
 
 4. Mentse a létrehozott **out.Admin.xml** fájl helyi másolatát, hogy később kiindulásként használhassa ehhez az ER-formátumhoz.
 
-    ![Értesítés a Konfigurációk oldal létrejövő fájljáról](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "Képernyőkép – Értesítés a Konfigurációk oldal létrejövő fájljáról")
+    ![Értesítés a Konfigurációk oldal létrejövő fájljáról.](media/GER-BaselineSample-FormatRunToMakeBaselineFile2.PNG "Képernyőkép – Értesítés a Konfigurációk oldal létrejövő fájljáról")
 
 ### <a name="configure-er-parameters-to-use-the-baseline-feature"></a>Az ER alaptervi funkció használatához paraméterek konfigurálása
 
@@ -163,20 +163,20 @@ A tervezett szerkezet alapján a konfigurált formátum generál egy XML-fájlt.
 2. A **Futtatás hibakeresési módban** beállítása legyen **Igen**.
 3. Válassza ki az **OK** lehetőséget.
 
-![A Felhasználói paraméterek párbeszédablak](media/GER-BaselineSample-ERUserParameters.PNG "A felhasználói paraméterek párbeszédablak képernyőképe")
+![A Felhasználói paraméterek párbeszédablak.](media/GER-BaselineSample-ERUserParameters.PNG "A felhasználói paraméterek párbeszédablak képernyőképe")
 
 ### <a name="add-a-new-baseline-for-designed-er-format"></a>Új alapterv hozzáadása a tervezett ER formátumhoz
 
 1. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**.
 2. A Műveleti ablaktáblán válassza az **Alaptervek** elemet.
 
-    ![Alaptervek gomb a Konfigurációk oldalon](media/GER-BaselineSample-OpenBaselinePage.PNG "Képernyőkép – Alaptervek gomb a Konfigurációk oldalon")
+    ![Alaptervek gomb a Konfigurációk oldalon.](media/GER-BaselineSample-OpenBaselinePage.PNG "Képernyőkép – Alaptervek gomb a Konfigurációk oldalon")
 
 3. A Műveleti ablaktáblán kattintson az **Új** elemre.
 4. Válassza ki a korábban tervezett **ER-kiindulások tanulási formátuma** ER-formátumot.
 5. Válassza a **Mentés** lehetőséget.
 
-![Elektronikus jelentéskészítés formátumának alaptervei lap](media/GER-BaselineSample-AddBaseline.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
+![Elektronikus jelentéskészítés formátumának alaptervei lap.](media/GER-BaselineSample-AddBaseline.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
 
 A program a hozzáadja az alaptervet az **ER-kiindulások tanulási formátuma** formátumhoz.
 
@@ -186,7 +186,7 @@ A program a hozzáadja az alaptervet az **ER-kiindulások tanulási formátuma**
 2. A Műveleti ablaktáblán válassza az **Új** \> **Fájl** elemet. Az ER paraméterei között előzőleg be kell jelölni a **Fájl** dokumentumtípust az alapfájlok tárolásához használt dokumentumtípusként.
 3. Válassza a **Tallózás** lehetőséget, majd válassza ki az **out.Admin.xml** fájlt, amely a konfigurált ER formátum korábbi futtatásakor jött létre.
 
-    ![Mellékletek oldala](media/GER-BaselineSample-UploadBaselineFile.PNG "A Mellékletek oldal képernyőképe")
+    ![Mellékletek oldala.](media/GER-BaselineSample-UploadBaselineFile.PNG "A Mellékletek oldal képernyőképe")
 
 4. Zárja be a **Mellékletek** lapot.
 5. Az **Alaptervek** gyorslapon válassza az **Új** értéket.
@@ -201,7 +201,7 @@ A program a hozzáadja az alaptervet az **ER-kiindulások tanulási formátuma**
 10. Az **Alapterv** mezőbe írja be vagy válassza ki az **out.Admin** mellékletet.
 11. Válassza a **Mentés** lehetőséget.
 
-![Elektronikus jelentéskészítés formátumának alaptervei lap](media/GER-BaselineSample-SetupBaselineLine.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
+![Elektronikus jelentéskészítés formátumának alaptervei lap.](media/GER-BaselineSample-SetupBaselineLine.PNG "Képernyőkép – az elektronikus jelentéskészítés formátumának alaptervei lap")
 
 ### <a name="run-the-designed-er-format-and-review-the-log-to-analyze-the-results"></a>A tervezett ER formátum futtatása és a napló áttekintése az eredmények elemzéséhez
 
@@ -212,7 +212,7 @@ A program a hozzáadja az alaptervet az **ER-kiindulások tanulási formátuma**
 5. Válassza ki az **OK** lehetőséget.
 6. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk hibakeresési naplói**.
 
-    ![Elektronikus jelentéskészítés futtatási naplóinak oldala](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Az elektronikus jelentéskészítési futtatási naplók oldal képernyőképe")
+    ![Elektronikus jelentéskészítés futtatási naplóinak oldala.](media/GER-BaselineSample-ReviewBaselineComparison1.PNG "Az elektronikus jelentéskészítési futtatási naplók oldal képernyőképe")
 
     > [!NOTE]
     > A végrehajtási napló a megadott alapterv és a létrejövő fájl összehasonlításának eredményeiről tartalmaz információkat. Ebben a példában a napló azt jelzi, hogy a létrejövő fájl és az alapterv egyenlő.
@@ -228,7 +228,7 @@ A program a hozzáadja az alaptervet az **ER-kiindulások tanulási formátuma**
 5. Válassza ki az **OK** lehetőséget.
 6. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk hibakeresési naplói**.
 
-    ![Elektronikus jelentéskészítés futtatási naplóinak oldala](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Az elektronikus jelentéskészítési futtatási naplók oldal képernyőképe")
+    ![Elektronikus jelentéskészítés futtatási naplóinak oldala.](media/GER-BaselineSample-ReviewBaselineComparison2.PNG "Az elektronikus jelentéskészítési futtatási naplók oldal képernyőképe")
 
     > [!NOTE]
     > A végrehajtási napló a megadott alapterv és a létrejövő fájl összehasonlításának eredményeiről tartalmaz információkat. Ebben a példában a napló azt jelzi, hogy a létrejövő fájl és az alapterv eltér.

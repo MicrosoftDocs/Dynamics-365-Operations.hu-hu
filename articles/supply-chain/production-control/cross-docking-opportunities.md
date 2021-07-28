@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b23edee0884b595a0da6ebd7eca0cf0391ff33f7
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 32a1acba8b4ca9484cbbc4b23ba496521ec4f61b
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6190088"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347686"
 ---
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Termelési rendelések áttárolása kiszállítási területekbe
 
@@ -42,7 +42,7 @@ A terméket a gyártási kimeneti helyre (3) késztermékként jelentik, és egy
 -   Ha a pótkocsi már hozzá van rendelve a rakodóhelyre, akkor a teherautó-vezető rakodja a terméket közvetlenül a pótkocsira.
 -   Ha nincs tervezett tevékenység a termék átvitelére, akkor a targoncavezetőt arra irányítják, hogy a terméket a belső raktárba (5) helyezze el.
 
-[![lehetőség szerinti áttárolás](./media/scenario1.png)](./media/scenario1.png)
+[![lehetőség szerinti áttárolás.](./media/scenario1.png)](./media/scenario1.png)
 
 ## <a name="configure-cross-docking"></a>Áttárolás konfigurálása
 Az áttárolási folyamatot **munkairányelvekkel** konfigurálhatja. A munkairányelv munkarendelés-típust, helyet és terméket foglal magában. A következő példában az áttárolás az X termékhez és az Y helyhez van beállítva.

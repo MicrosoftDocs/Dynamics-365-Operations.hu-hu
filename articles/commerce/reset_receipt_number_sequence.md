@@ -16,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: cabce32a43e55f3a3f19bc2d78547d9bab0d89a2
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: a08d14369057ceb9b23e9d6f9a79847c6175f88e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5792049"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345082"
 ---
 # <a name="reset-receipt-numbers"></a>Nyugta számainak visszaállítása 
 
@@ -55,7 +55,7 @@ Ha be szeretné kapcsolni a visszaállítást, hajtsa végre az alábbi lépése
 1. A **Nyugtatípus visszaállítása** mezőben válassza ki az **Egy alkalommal** vagy **Évente** lehetőséget.
 1. Válassza ki az **OK** lehetőséget.
 
-![Nyugta alaphelyzetbe állítási dátumának kiválasztása](media/Enable_receipt_reset.png "Nyugta alaphelyzetbe állítási dátumának kiválasztása")
+![Nyugta alaphelyzetbe állítási dátumának kiválasztása.](media/Enable_receipt_reset.png "Nyugta alaphelyzetbe állítási dátumának kiválasztása")
 
 Miután kiválasztott egy dátumot, megjelenik a **Következő nyugta-visszaállítási dátum** oszlopban. A visszaállítási dátum az összes nyugtatranzakció-típusra érvényes. Ennélfogva a nyugta számsorozata alaphelyzetbe kerül az összes nyugtatípus esetében.
 

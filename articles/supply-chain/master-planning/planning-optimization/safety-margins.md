@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 9dc305f46dad6b372721805669529bbc9ac554e8
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 428de5304b3f6f9b861e765d5084d5573b79df90
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908293"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347734"
 ---
 # <a name="safety-margins"></a>Biztonsági határok
 
@@ -41,7 +41,7 @@ Háromféle biztonsági időtartalék van:
 
 A következő ábra bemutatja a biztonsági időtartalékok időbeli hatályát.
 
-![Biztonsági határok](media/safety-margins-1.png)
+![Biztonsági határok.](media/safety-margins-1.png)
 
 Minden időtartalék napokban van meghatározva. Az alapértelmezett érték a *0* (nulla), ami azt jelzi, hogy nincs időtartalék alkalmazva. Ha több időtartalékot hoz létre, ezek mind hozzá lesznek adva a teljes időhöz az ellátási *rendelési dátum* és az igény *követelménydátuma* között. Például a beállításnak nincs átfutási ideje, és mindhárom időtartalék-típus egy napra van állítva. Ebben az esetben az ellátási rendelés dátuma és a szükségleti követelmény dátuma között három nap lesz, így ha a rendelési dátum július 1. a követelmény dátuma július 4.
 
@@ -51,7 +51,7 @@ A bevételezési időtartalék a három biztonsági időtartalékból valószín
 
 A következő ábrán ki van emelve e bevételezési időtartalék.
 
-![Bevételezési időtartalék](media/safety-margins-2.png)
+![Bevételezési időtartalék.](media/safety-margins-2.png)
 
 A bevételezési időtartalék általában pufferként használatos, hogy legyen elegendő idő a raktári regisztrációhoz vagy más időigényes folyamatokhoz, amelyek nincsenek rögzítve az általános átfutási időhöz a rendszerben. A beszerzések esetében az egyik előny az, hogy a beszerzési rendelés *szállítási dátuma* ennek megfelelően áthelyeződik. Ha az átfutási időt növeli a biztonsági időtartalék használata helyett, akkor a szállítónak továbbra is az utolsó pillanatban szükséges szállítania.
 
@@ -66,7 +66,7 @@ Ne felejtse el, hogy a rendszer nem alkalmazza a bevételezési időtartalékot,
 
 A következő ábrán ki van emelve az újrarendelési időtartalék.
 
-![Újrarendelési időtartalék](media/safety-margins-3.png)
+![Újrarendelési időtartalék.](media/safety-margins-3.png)
 
 Az újrarendelési időtartalék a program az alaptervezés során az összes tervezett rendeléshez tartozó átfutási idő elé adja hozzá. Ennek megfelelően további időt biztosít az ellátási rendelés leadására. Ez a tartalék általában pufferként használatos az ellátási rendelések létrehozása során szükséges jóváhagyási folyamatok és egyéb belső folyamatok céljából. Az újrarendelési időtartalék az *ellátási rendelés dátuma* és a *kezdő dátum* közé lesz elhelyezve.
 
@@ -77,7 +77,7 @@ Az újrarendelési időtartalék a program az alaptervezés során az összes te
 
 A következő ábrán ki van emelve az kiadási időtartalék.
 
-![Kiadási időtartalék](media/safety-margins-4.png)
+![Kiadási időtartalék.](media/safety-margins-4.png)
 
 A kiadási időtartalék a mestertervezés során le lesz vonva az igény követelménydátumából. Segít abban, hogy ideje legyen a bejövő igény szerinti rendelésekre reagálni és leszállítani azokat. Ez az időtartalék általában pufferként használatos idő biztosításához szállításhoz és a kapcsolódó kimenő raktári folyamatokhoz.
 
@@ -165,7 +165,7 @@ A következő ábra bemutatja azt a mátrixot, amely összegzi a biztonsági id�
 - **Raktár (WH):** sárga
 - **Szállító (V):** kék
 
-[![Naptár-beállítás áttekintése – mátrix](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Naptár-beállítás áttekintése – mátrix.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Késések számítása
 
@@ -173,7 +173,7 @@ A biztonsági időtartalékok mindhárom típusa számításba van véve, amikor
 
 Például egy cikkek átfutási ideje egy nap és a bevételezési időtartalék három nap. Ehhez a tételhez egy értékesítési rendelés ma szükséges. Ebben az esetben a késés kiszámítása: *átfutási idő* + *bevételezési időtartalék* = négy nap. Ha tehát a mai dátum augusztus 14, akkor a négy nap késés augusztus 18-ára helyezi a szállítást. A következő ábrán ez a példa látható.
 
-![Késésszámítási példa](media/safety-margins-delays.png)
+![Késésszámítási példa.](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 7fbec962fea374afdbabaad48a42dad380708678
-ms.sourcegitcommit: dbffde1944b9d037124415c28053036c9ef1ecb7
+ms.openlocfilehash: 23b965bb51a4323164ae52bf70050133c9c9c9da
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6295573"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344882"
 ---
 # <a name="trace-the-execution-of-er-formats-to-troubleshoot-performance-issues"></a>Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárításához
 
@@ -56,14 +56,14 @@ A következő fájlokat is le kell töltenie és helyben tárolnia.
 
 Minden egyes, az alkalmazásban létrehozott ER teljesítmény-nyomonkövetést a rendszer a végrehajtási naplórekord mellékleteként tárolja. A Dokumentumkezelés (DM) keretrendszerével kezelhetők ezek a mellékletek. Az ER-paramétereket előre be kell állítania a teljesítmény-nyomkövetéshez használandó DM-dokumentumtípus meghatározásához. Az **Elektronikus jelentéskészítés** munkaterületen kattintson az **Elektronikus jelentések paraméterei** hivatkozására. Ezután az **Elektronikus jelentéskészítés paraméterei** oldalon, a **Mellékletek** lap **Egyéb** mezőjében válassza ki a teljesítmény-nyomkövetéshez használandó DM-dokumentum típusát.
 
-![Elektronikus jelentéskészítés paraméterei lap](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
+![Elektronikus jelentéskészítés paraméterei lap.](./media/GER-PerfTrace-GER-Parameters-DocumentType.png)
 
 Ahhoz, hogy elérhető legyen az **Egyebek** keresési mezőben, a DM-dokumentumtípust a következő módon kell konfigurálni a **Dokumentumtípusok** oldalon (**Szervezeti adminisztráció \> Dokumentumkezelés \>Dokumentumtípusok**):
 
 - **Osztály:** Fájl csatolása
 - **Csoport:** Fájl
 
-![Dokumentumtípusok oldal](./media/GER-PerfTrace-DM-DocumentType.png)
+![Dokumentumtípusok lapja.](./media/GER-PerfTrace-DM-DocumentType.png)
 
 > [!NOTE]
 > A kiválasztott dokumentumtípusnak az aktuális példány minden vállalatában elérhetőnek kell lennie, mivel a DM-mellékletek vállalatspecifikusak.
@@ -72,7 +72,7 @@ Ahhoz, hogy elérhető legyen az **Egyebek** keresési mezőben, a DM-dokumentum
 
 Az ER teljesítmény-nyomkövetéseket a rendszer elemzési célból az RCS szolgáltatásba importálja az ER-formátumtervező és az ER-leképezéstervező használatával. Mivel a rendszer az ER teljesítmény-nyomkövetéseket az adott ER-formátumhoz kapcsolódó végrehajtási naplórekord mellékleteként tárolja, előre be kell állítania az RCS-paramétereket a teljesítmény-nyomkövetések csatolására használandó DM-dokumentumtípus meghatározása érdekében. A vállalat számára rendelkezésre bocsátott RCS-példányban, az **Elektronikus jelentéskészítés** munkaterületen válassza az **Elektronikus jelentéskészítés paraméterei** lehetőséget. Ezután az **Elektronikus jelentéskészítés paraméterei** oldalon, a **Mellékletek** lap **Egyéb** mezőjében válassza ki a teljesítmény-nyomkövetéshez használandó DM-dokumentum típusát.
 
-![Elektronikus jelentéskészítés paraméterei lap az RCS szolgáltatásban](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
+![Elektronikus jelentéskészítés paraméterei lap az RCS szolgáltatásban.](./media/GER-PerfTrace-RCS-Parameters-DocumentType.png)
 
 Ahhoz, hogy elérhető legyen az **Egyebek** keresési mezőben, a DM-dokumentumtípust a következő módon kell konfigurálni a **Dokumentumtípusok** oldalon (**Szervezeti adminisztráció \> Dokumentumkezelés \>Dokumentumtípusok**):
 
@@ -92,7 +92,7 @@ Tegyük fel, hogy egy új ER-megoldást tervez, amellyel szállítói tranzakci�
     2. A **Tallózás** gombra kattintva válassza ki a megfelelő, XML-formátumú fájlt a szükséges ER-konfigurációhoz.
     3. Válassza ki az **OK** lehetőséget.
 
-    ![Konfigurációk oldal az RCS-ben](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
+    ![Konfigurációk oldal az RCS-ben.](./media/GER-PerfTrace-RCS-ImportedConfigurations.png)
 
 ## <a name="run-the-er-solution-to-trace-execution"></a>Az ER-megoldás futtatása a végrehajtás nyomon követéséhez
 
@@ -109,7 +109,7 @@ Tegyük fel, hogy befejezte az ER-megoldás első verziójának tervezését. Ez
     3. A **Konfigurációk** gyorslapon válassza ki a **Teljesítmény-nyomkövetés formátuma** konfigurációt.
     4. A **Verziók** gyorslapon válassza ki a kiválasztott konfiguráció **1.1** verzióját, majd az **Importálás** lehetőséget.
 
-    ![Konfigurációk tárháza oldal](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
+    ![Konfigurációk tárháza oldal.](./media/GER-PerfTrace-GER-ImportedConfigurations.png)
 
 Az adatmodell- és modell-hozzárendelési konfigurációk megfelelő verzióit a rendszer automatikusan importálja az importált ER-formátumkonfiguráció előfeltételeként.
 
@@ -156,7 +156,7 @@ Az adatmodell- és modell-hozzárendelési konfigurációk megfelelő verzióit 
     > [!NOTE]
     > A **Felhasználói paraméterek** párbeszédpanel paraméterei a felhasználóra és az aktuális vállalatra jellemzőek.
 
-    ![A Felhasználói paraméterek párbeszédablak](./media/GER-PerfTrace-GER-UserParameters.png)
+    ![A Felhasználói paraméterek párbeszédablak.](./media/GER-PerfTrace-GER-UserParameters.png)
 
 ### <a name="run-the-er-format"></a><a id='run-format'></a>Az ER-formátum futtatása
 
@@ -177,11 +177,11 @@ A teljesítmény-nyomkövetéseket leválaszthatja az ER forrásformátumából,
 2. Az **Elektronikus jelentéskészítés futtatási naplói** oldalon a bal oldali panelen, a **Konfiguráció neve** mezőben válassza a **Teljesítmény-nyomkövetés formátuma** lehetőséget, amellyel megtalálhatja a **Teljesítmény-nyomkövetés formátuma** végrehajtásával létrehozott naplórekordokat.
 3. Válassza a **Mellékletek** gombot (kapocs jel) az oldal jobb felső sarkában, vagy nyomja meg a **Ctrl+Shift+A** billentyűkombinációt.
 
-    ![Mellékletek gomb az Elektronikus jelentéskészítés futtatási naplói oldalon](./media/GER-PerfTrace-GER-DebugLog.png)
+    ![Mellékletek gomb az Elektronikus jelentéskészítés futtatási naplói oldalon.](./media/GER-PerfTrace-GER-DebugLog.png)
 
 4. Az **Elektronikus jelentéskészítés futtatási naplói – Mellékletek** oldalon a Műveleti ablaktáblán válassza a **Megnyitás** lehetőséget a teljesítmény-nyomkövetés zip-fájlként való lehívásához és helyi tárolásához.
 
-    ![Elektronikus jelentéskészítés futtatási naplók mellékletei](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
+    ![Elektronikus jelentéskészítés futtatási naplók mellékletei.](./media/GER-PerfTrace-GER-DebugLog-AttachedTrace.png)
 
 > [!NOTE]
 > A létrehozott nyomkövetés referenciával rendelkezik a kiindulási ER-jelentésre egy egyedi, csak **GUID** formátumban létező jelentésazonosítón keresztül. A formátum verziószámát a rendszer nem veszi figyelembe.
@@ -198,7 +198,7 @@ Megfigyelhető, hogy végrehajtott ER-formátumhoz létrehozott teljesítmény-n
 6. Válassza a **Tallózás** lehetőséget a korábban exportált zip fájl kiválasztásához.
 7. Válassza ki az **OK** lehetőséget.
 
-    ![A teljesítmény-nyomkövetési eredmények beállításai párbeszédpanel az RCS szolgáltatásban](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
+    ![A teljesítmény-nyomkövetési eredmények beállításai párbeszédpanel az RCS szolgáltatásban.](./media/GER-PerfTrace-RCS-ImportedPerfTrace.png)
 
 ### <a name="use-the-performance-trace-for-analysis-in-rcs--format-execution"></a>A teljesítmény-nyomkövetés alkalmazása elemzési célokra az RCS szolgáltatásban – Formátum-végrehajtás
 
@@ -209,7 +209,7 @@ Megfigyelhető, hogy végrehajtott ER-formátumhoz létrehozott teljesítmény-n
     - Az adatok a létrejövő kimeneti fájlba történő bevitelére fordított tényleges idő a formátumelem használatával
     - Ugyanez az időtartam a teljes kimeneti fájl létrehozására fordított összes idő százalékaként kifejezve
 
-    ![Formátumtervező oldal az RCS szolgáltatásban](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
+    ![Formátumtervező oldal az RCS szolgáltatásban.](./media/GER-PerfTrace-RCS-TraceInfoInFormat.png)
 
 2. Zárja be a **Formátumtervező** lapot.
 
@@ -232,7 +232,7 @@ Megfigyelheti, hogy az ER tájékoztatja Önt arról, hogy az aktuális modell-h
 - Az egyik lehívás annak érdekében történik, hogy az egyes tranzakciók részleteit bevigyék az adatmodellbe a konfigurált kötések alapján.
 - Egy lehívás pedig annak érdekében történik, hogy a szállítónkénti tranzakciók kiszámított mennyiségét bevigyék az adatmodellbe.
 
-![Ismétlődő adatbázis-kérelmekkel kapcsolatos üzenet a Modell-hozzárendelési tervező oldalon az RCS szolgáltatásban](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
+![Ismétlődő adatbázis-kérelmekkel kapcsolatos üzenet a Modell-hozzárendelési tervező oldalon az RCS szolgáltatásban.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1.png)
 
 A **\[Q:530\]** érték azt jelzi, hogy a VendTrans táblát a rendszer 530 alkalommal hívta le annak érdekében, hogy egy rekordot visszaadjon az adott táblából a VendTable/\<Kapcsolatok/VendTrans.VendTable\_AccountNum adatforrásba. Az **\[530\]** érték azt jelzik, hogy a VendTable/\<Kapcsolatok/VendTrans.VendTable\_AccountNum adatforrást 530 alkalommal hívta le a rendszer annak érdekében, hogy egy rekordot visszaadjon az adott adatforrásból, és az ebből származó részletes adatokat bevigye az adatmodellbe.
 
@@ -240,7 +240,7 @@ Javasoljuk a gyorsítótárazás használatát a VendTable/\<Relations/VendTrans
 
 A LedgerTransTypeList-adatforrásra vonatkozó lehívások számának csökkentéséhez is hasznos lehet. Ezzel az adatforrással lehetséges a **LedgerTransType** felsorolás minden egyes értékének saját címkéjéhez társítása. Az adatforrás használatával megkeresheti a megfelelő címkét, és megadhatja az egyes szállítói tranzakciókhoz tartozó adatmodellben. Az adatforráshoz intézett lehívások jelenlegi száma (9027) elég magas a 265 tranzakcióra vonatkoztatva.
 
-![Modell-hozzárendelési tervező lapja az RCS szolgáltatásban, amely 9027 lehívást jelez az adatforráshoz](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
+![Modell-hozzárendelési tervező lapja az RCS szolgáltatásban, amely 9027 lehívást jelez az adatforráshoz.](./media/GER-PerfTrace-RCS-TraceInfoInMapping1a.png)
 
 ## <a name="improve-the-model-mapping-based-on-information-from-the-execution-trace"></a>A modell-hozzárendelés javítása a végrehajtási nyomkövetésből származó információk alapján
 
@@ -253,7 +253,7 @@ A LedgerTransTypeList-adatforrásra vonatkozó lehívások számának csökkent�
     3. Bontsa ki a **VendTable** elemet, bontsa ki a VendTable adatforráshoz tartozó egy a többhöz kapcsolatos listáját (a **\<Kapcsolatok** elemet), és válassza a **VendTrans.VendTable\_AccountNum** elemet.
     4. Válassza a **Gyorsítótárazás** lehetőséget.
 
-    ![Gyorsítótár-beállítás az ismétlődő lehívások megelőzése érdekében](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
+    ![Gyorsítótár-beállítás az ismétlődő lehívások megelőzése érdekében.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache.png)
 
 2. Hajtsa végre az alábbi lépéseket, hogy a LedgerTransTypeList-adatforrás a VendTable-adatforrás hatókörébe kerüljön:
 
@@ -274,7 +274,7 @@ A LedgerTransTypeList-adatforrásra vonatkozó lehívások számának csökkent�
     3. Válassza ki a **a VendTable.\$TransType** elemet.
     4. Válassza a **Gyorsítótárazás** lehetőséget.
 
-    ![A $TransType mező gyorsítótárazásának beállítása](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
+    ![A $TransType mező gyorsítótárazásának beállítása.](./media/GER-PerfTrace-RCS-ChangeMapping-Cache2.png)
 
 4. Hajtsa végre az alábbi lépéseket a **\$TransTypeRecord** mező módosításához, hogy az a gyorsítótárazott **\$TransType** mezőt használja:
 
@@ -329,19 +329,19 @@ Ismételje meg a jelen témakörben korábban ismertetett, [AA teljesítmény-ny
 
 Megfigyelheti, hogy az Ön által a modell-hozzárendelésen végzett kiigazításokkal megszüntette az adatbázisba intézett ismétlődő lekérdezéseket. Az adott modellhozzárendeléshez tartozó, adatbázistáblákba és adatforrásokba küldött lehívások száma is csökkent. Ezáltal a teljes ER-megoldás teljesítménye javult.
 
-![A VendTable adatforrás információinak nyomon követése a Modell-hozzárendelési tervező oldalon az RCS szolgáltatásban](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
+![A VendTable adatforrás információinak nyomon követése a Modell-hozzárendelési tervező oldalon az RCS szolgáltatásban.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2.png)
 
 A nyomkövetési adatok között szereplő **\[12\]** érték azt jelzi, hogy az adatforrást 12 alkalommal hívták le. A **\[Q:6\]** érték azt jelzi, hogy hat hívást fordított le a rendszer a VendTable táblába irányuló adatbázishívásként. A **\[C:6\]** érték azt jelzik, hogy az adatbázisból lehívott rekordokat gyorsítótárazták, és 6 további hívást a gyorsítótár használatával dolgoztak fel.
 
 Megfigyelheti, hogy a LedgerTransTypeList adatforrásba indított hívások száma 9027-ről 240-re csökkent.
 
-![A LedgerTransTypeList adatforrás információinak nyomon követése a Modell-hozzárendelési tervező oldalon az RCS szolgáltatásban](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
+![A LedgerTransTypeList adatforrás információinak nyomon követése a Modell-hozzárendelési tervező oldalon az RCS szolgáltatásban.](./media/GER-PerfTrace-RCS-TraceInfoInMapping2a.png)
 
 ## <a name="review-the-execution-trace-in-the-application"></a>A végrehajtási nyomkövetés áttekintése az alkalmazásban
 
 Az RCS szolgáltatás mellett az egyes verziók kínálhatnak ER-keretrendszer tervezői élményére vonatkozó lehetőségeket. Ezek a verziók rendelkeznek a **Tervezői mód engedélyezése** lehetőséggel, amelyet be lehet kapcsolni. Ez a beállítás az **Elektronikus jelentéskészítés paraméterei** oldal **Általános** lapján található, amelyet az **Elektronikus jelentéskészítés** munkaterületről nyithat meg.
 
-![A tervezési mód lehetőség bekapcsolása az Elektronikus jelentéskészítés paraméterei oldalon](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
+![A tervezési mód lehetőség bekapcsolása az Elektronikus jelentéskészítés paraméterei oldalon.](./media/GER-PerfTrace-GER-Parameters-DesignMode.png)
 
 Ha ezen verziók egyikét használja, akkor közvetlenül az alkalmazásban elemezheti a létrehozott teljesítmény-nyomkövetés részleteit. Ezeket nem kell exportálnia az alkalmazásból, és importálnia az RCS szolgáltatásba.
 
@@ -359,7 +359,7 @@ Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtat�
 
 Megfigyelheti, hogy az internetböngésző felajánlja a zip-fájl letöltését. Ez a fájl a teljesítmény-nyomkövetést PerfView formátumban tartalmazza. Ezután használhatja a PerfView teljesítményelemzési eszközt az ER-formátum végrehajtás részleteinek elemzésére.
 
-![Teljesítmény-nyomkövetési adatok PerfView formátumban](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
+![Teljesítmény-nyomkövetési adatok PerfView formátumban.](./media/GER-PerfTrace2-PerfViewTrace1.PNG)
 
 ## <a name="use-external-tools-to-review-an-execution-trace-that-includes-database-queries"></a>Külső eszközök használata az adatbázis-lekérdezéseket tartalmazó végrehajtási nyomon követés áttekintéséhez
 
@@ -375,7 +375,7 @@ Az elektronikus jelentéskészítési keretrendszer fejlesztéseinek köszönhet
     - A **Lekérdezési statisztikák gyűjtése** beállításnál adja meg az **Igen** értéket.
     - A **Lekérdezés nyomon követése** beállításhoz adja meg az **Igen** lehetőséget.
 
-    ![Végrehajtási nyomkövetési szakasz, Felhasználói paraméterek párbeszédpanel](./media/GER-PerfTrace2-GER-UserParameters.PNG)
+    ![Végrehajtási nyomkövetési szakasz, Felhasználói paraméterek párbeszédpanel.](./media/GER-PerfTrace2-GER-UserParameters.PNG)
 
 ### <a name="run-the-er-format"></a>Az ER-formátum futtatása
 
@@ -383,7 +383,7 @@ Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtat�
 
 Megfigyelheti, hogy az internetböngésző felajánlja a zip-fájl letöltését. Ez a fájl a teljesítmény-nyomkövetést PerfView formátumban tartalmazza. Ezután használhatja a PerfView teljesítményelemzési eszközt az ER-formátum végrehajtás részleteinek elemzésére. Ez a nyomon követés már az SQL-adatbázis ER-formátum végrehajtása alatti hozzáférés részleteire is vonatkozik.
 
-![A végrehajtott ER-formátum információinak nyomon követése a PerfView szolgáltatásban](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
+![A végrehajtott ER-formátum információinak nyomon követése a PerfView szolgáltatásban.](./media/GER-PerfTrace2-PerfViewTrace2.PNG)
 
 ## <a name="additional-resources"></a>További erőforrások
 

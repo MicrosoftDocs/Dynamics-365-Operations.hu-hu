@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 17a454cd32a08db105a13577c32368ad819bed1c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 292db7e430bf0f2171f2b0a482ad70250774caec
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6053376"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346346"
 ---
 # <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>A Human Resources szolgáltatás nem jelenik meg a Microsoft Dynamics 365 alkalmazásai között
 
@@ -39,11 +39,11 @@ A felhasználót hozzá kell adni a környezet Környezetkészítő szerepköré
 
 3. A **Biztonság** lapon a **Környezeti szerepkörök** lapon válassza a **Környezetkészítő** lehetőséget.
 
-    ![Környezeti szerepkörök lap](media/environment-roles.png)
+    ![Környezeti szerepkörök lap.](media/environment-roles.png)
 
 4. A **Felhasználók** lapon adja hozzá a felhasználót vagy a szervezetet.
 
-    ![Felhasználók lap](media/environment-maker.png)
+    ![Felhasználók lap.](media/environment-maker.png)
 
 5. Válassza a **Mentés** lehetőséget.
 
@@ -51,7 +51,7 @@ A felhasználót hozzá kell adni a környezet Környezetkészítő szerepköré
 
 7. Válassza a **Szinkronizálás** elemet a felhasználói alkalmazások frissítéséhez.
 
-    ![Szinkronizálás gomb](media/get-more.png)
+    ![Szinkronizálás gomb.](media/get-more.png)
 
     A szinkronizálás befejezése után a Human Resources szolgáltatás megjelenik a kezdőlapon.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52aba53b5323a9c6c4331cd8de7e932bb9c3547e
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: bb7844a009bc35f7151827b8e675cb39f71459fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893201"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345738"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése
 
@@ -80,7 +80,7 @@ A következő, ER-rel kapcsolatos okok miatt javasolt a ER-konfigurációkat a f
 
 A fejlesztői környezetben megtervezett ER-konfigurációk [feltölthetők](#data-persistence-consideration) a tesztkörnyezetbe a konfiguráció kiértékelése (megfelelő folyamatintegrálás, eredményhelyesség, teljesítmény), illetve a minőségbiztosítás (például szerepkörtől függő hozzáférési jogok helyessége, feladatkörök szétválasztása) céljából. Azok a funkciók használhatóak erre a célra, amelyek engedélyezik az ER konfiguráció adatcseréjét. Az igazoltan helyes ER-konfigurációk feltölthetők az LCS-be megosztásra a szolgáltatás előfizetőivel, vagy [importálhatók](#data-persistence-consideration) az éles környezetbe belső használatra.
 
-![ER-konfigurációs életciklus](./media/ger-configuration-lifecycle.png)
+![ER-konfigurációs életciklus.](./media/ger-configuration-lifecycle.png)
 
 ## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Adatperzisztencia figyelembe vétele
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 721799c9a6fafe0a809f447189ce6814b30ca863
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 1a1ee5345e2d6b3736d45e233a59ac4009a9f1c8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052457"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344688"
 ---
 # <a name="configure-dataverse-integration"></a>Dataverse-integráció konfigurálása
 
@@ -48,15 +48,15 @@ Előfordulhat, hogy a következő helyzetekben ki szeretné kapcsolni az integr�
 
 1. Abban a Human Resources példányban, ahol megtekinteni vagy konfigurálni szeretné a Dataverse rendszerrel való integrációs beállításokat, válassza ki a **Rendszerfelügyelet** csempét.
 
-    [![Rendszerfelügyelet csempe](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
+    [![Rendszerfelügyelet csempe.](./media/hr-select-system-administration.png)](./media/hr-select-system-administration.png)
 
 2. Válassza ki a **Hivatkozások** lapot.
 
-    [![Hivatkozások lap](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
+    [![Hivatkozások lap.](./media/hr-system-administration-links.png)](./media/hr-system-administration-links.png)
 
 3. Az **Integrációk** menüpontban válassza a **Dataverse konfigurációja** elemet.
 
-    [![Dataverse konfigurációs hivatkozása](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
+    [![Dataverse-konfigurációs hivatkozás.](./media/hr-admin-integration-dataverse-select.png)](./media/hr-admin-integration-dataverse-select.png)
 
 ## <a name="turn-data-integration-between-human-resources-and-dataverse-on-or-off"></a>Adatintegráció be- vagy kikapcsolása a Human Resources és a Dataverse között
 
@@ -67,7 +67,7 @@ Előfordulhat, hogy a következő helyzetekben ki szeretné kapcsolni az integr�
 
 - Ha ki szeretné kapcsolni az integrációt, állítsa át a beállítást **Nem** értékre.
 
-[![Dataverse-integráció be- és kikapcsolása](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
+[![Dataverse-integráció be- és kikapcsolása.](./media/hr-admin-integration-dataverse-enable-disable.png)](./media/hr-admin-integration-dataverse-enable-disable.png)
 
 > [!WARNING]
 > Az adatáttelepítési feladatok végrehajtása közben erősen ajánlott kikapcsolni a Dataverse integrációt. A nagyméretű adatfeltöltések jelentősen befolyásolhatják a teljesítményt. Például 2000 dolgozó feltöltése több óráig is eltarthat, ha engedélyezve van az integráció, viszont kevesebb mint egy óráig tart, ha le van letiltva. A jelen példában megadott számok csak bemutató célt szolgálnak. A rekordok importálásához szükséges idő pontos mértékét számos tényező befolyásolhatja.
@@ -98,7 +98,7 @@ Ha problémák merülnének fel a Human Resources és a Dataverse közötti adat
 
 - Ha el szeretne távolítani egy rekordtársítást a Human Resources és a Dataverse-sor között, válassza ki az entitást a **Dataverse-tábla** mezőben, majd válassza a **Nyomonkövetési adatok törlése** elemet.
 
-[![Nyomonkövetési adatok törlése](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
+[![Nyomonkövetési adatok törlése.](./media/hr-admin-integration-dataverse-clear-tracking.png)](./media/hr-admin-integration-dataverse-clear-tracking.png)
 
 Ha szeretné, hogy a nyomon követés törlése után teljes szinkronizálás fusson a táblán, tekintse meg a következő eljárást.
 
@@ -116,13 +116,13 @@ Teljes szinkronizálás futtatása egy táblához a Human Resources és Datavers
 
 2. Válassza a **Szinkronizálás most** lehetőséget.
 
-[![Teljes szinkronizálás futtatása](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
+[![Teljes szinkronizálás futtatása.](./media/hr-admin-integration-dataverse-sync-now.png)](./media/hr-admin-integration-dataverse-sync-now.png)
 
 ## <a name="see-also"></a>Lásd még
 
 [Dataverse-táblák](hr-developer-entities.md)<br>
 [Dataverse virtuális táblák konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[A Human Resources számára elérhető virtuális táblák – GYIK](hr-admin-virtual-entity-faq.md)<br>
+[Human Resources – virtuális táblák – GYIK](hr-admin-virtual-entity-faq.md)<br>
 [Mi az a Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
 [Terminológia frissítései](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8c2e207efe0eeec6fc7e679a6ae12edcb21b291f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: f0dac25ede6c9b9dfcfa1be1f1a5f4d7a7752112
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6058584"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344714"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>Dataverse-virtuális táblák konfigurálása
 
@@ -41,7 +41,7 @@ A HR-ben található összes Open Data Protocol (OData) entitások virtuális t�
 
 A [Power Apps](https://make.powerapps.com)-ben megtekintheti a környezetben engedélyezett virtuális táblák listáját, valamint elkezdheti a munkát az táblákon a **Dynamics 365 HR Virtual Tables** megoldásban.
 
-![Dynamics 365 HR Virtual Tables a Power Apps rendszerben](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+![Dynamics 365 HR Virtual Tables a Power Apps rendszerben.](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
 ## <a name="virtual-tables-versus-native-tables"></a>Virtuális táblák és natív táblák
 
@@ -147,7 +147,7 @@ A következő lépésben a virtuális tábla adatforrásának a Power Apps körn
 
    - **AAD-alkalmazástitok**: A Microsoft Azure portálon regisztrált alkalmazáshoz létrehozott ügyféltitok. Ezt az információt korábban, az [Alkalmazás regisztrálása a Microsoft Azure-ban](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) lépésben kapta meg.
 
-   ![Microsoft HR-adatforrás](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+   ![Microsoft HR-adatforrás.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 9. Válassza ki a **Mentés és bezárás** lehetőséget.
 
@@ -187,7 +187,7 @@ A telepítés befejezését követően kiválaszthatja, hogy mely virtuális tá
 
 4. Válassza a **Létrehozás/frissítés** lehetőséget.
 
-![Dataverse-integráció](./media/hr-admin-integration-dataverse-integration.png)
+![Dataverse-integráció.](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>Táblagenerálási állapot ellenőrzése
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: c3648a2d9df300ecd0c26a12db8093babb3db48f
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8c5574efeb1dee372a8ecf8ddb1d1710f63b73a7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838250"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345234"
 ---
 # <a name="configure-product-filters-for-warehouse-transactions"></a>Termékszűrők konfigurálása raktári tranzakciókhoz
 
@@ -46,11 +46,11 @@ A termékszűrők legfeljebb 10 **Szűrőcím** jellemzőt tartalmaznak, amelyek
 1. Válasszon egy értéket a **Szűrőcím** mezőben.
 1. Írjon be értéket a **Szűrőkód** mezőbe.
 
-    ![Termékszűrő beállítása](media/Product_Filters10.png "Termékszűrő beállítása")
+    ![Termékszűrő beállítása.](media/Product_Filters10.png "Termékszűrő beállítása")
 
 1. A **Leírás** mezőbe írja be a kód nevét. A *2. kód* például a szállítókat jelentheti. Ezt követően termékszűrőt hozhat létre egy adott szállítóhoz vagy szállítócsoporthoz. További tudnivalókat a [Szállítói szűrőkódok beállítása](#vendor-product-filters) részben olvashat, a témakör későbbi részében.
 
-    ![Termékszűrők készlete](media/Product_Filters.png "Termékszűrők készlete")
+    ![Termékszűrők készlete.](media/Product_Filters.png "Termékszűrők készlete")
 
 ## <a name="set-up-product-filter-groups"></a>Termékszűrőcsoportok beállítása
 
@@ -69,7 +69,7 @@ A szűrőcsoportok beállításához kövesse az alábbi lépéseket.
 1. A **Cikkcsoport** mezőben válassza ki azt a cikkcsoportot, amelyre a termékszűrőnek érvényesnek kell lennie.
 1. Az **1. kód** – **10. kód** mezőben szükség szerint válassza ki a csoportba foglalni kívánt szűrőkódokat.
 
-    ![Cikkcsoport](media/ProdFilterGroup.png "Cikkcsoport")
+    ![Cikkcsoport.](media/ProdFilterGroup.png "Cikkcsoport")
 
 > [!NOTE]
 > Ha megjelenik egy hibaüzenet, amikor bezárja az oldalt, egy kódbeállítás hiányozhat. A **Cikkcsoportok** oldalon kötelezővé lehet tenni a kódokat egy cikkcsoporthoz az **1. szűrőkód hozzárendelése cikkcsoporthoz**, a **2. szűrőkód hozzárendelése cikkcsoporthoz** stb. jelölőnégyzetet kiválasztva.
@@ -88,7 +88,7 @@ A cikkcsoportok szűrőkódjainak beállításához kövesse az alábbi lépése
 
     Egy kiadott termék frissítéséhez nyissa meg a **Kiadott termék részletei** oldalt, majd a Művelet panelen válassza a **Szerkesztés** lehetőséget. A kódokhoz társított szűrők ezután elérhetővé válnak a **Raktár** gyorslapon.
 
-    ![Cikkcsoportok](media/ItemGroup10.png "Cikkcsoportok")
+    ![Cikkcsoportok.](media/ItemGroup10.png "Cikkcsoportok")
 
 1. Jelölje be a **Cikkcsoportszűrő** szakaszban azoknak a szűrőknek a jelölőnégyzeteit, amelyeknek meg kell egyeznie ahhoz, hogy a szűrőcsoport a cikk alapértelmezett szűrőcsoportja legyen.
 

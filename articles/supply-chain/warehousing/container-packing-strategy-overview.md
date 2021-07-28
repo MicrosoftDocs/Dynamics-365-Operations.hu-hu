@@ -7,16 +7,17 @@ ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f481f6ca047ee0285fe0e81d8fa96665e9d27cee
-ms.sourcegitcommit: 8e846b52763f90d2232ec7d427839f4722570bce
+ms.openlocfilehash: d39283dea37c0e0fbf432aae8b1a30a87198f9f0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "6292761"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343724"
 ---
 # <a name="container-packing-strategies"></a>Tárolócsomagolási stratégiák
 
@@ -251,7 +252,7 @@ A szállítási konszolidáció irányelvének beállításához kövesse ezeket
 1. Válassza ki az **Alapértelmezett** irányelveket a listából.
 1. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
 1. A **Konszolidációs mezők** gyorslapon a **Kiválasztott mezők** listában válassza ki a sort, ahol a **Mező neve** mező beállítása *Rendelési szám*.
-1. Válassza az **Eltávolatás** gombot ![Balra nyíl](media/backward-button.png) a mező **Hátralévő mezők** listára történő átmozgatásához.
+1. Válassza az **Eltávolítás** gombot a ![a balra nyíllal.](media/backward-button.png) hogy a mezőt a **Hátralévő mezők** listába helyezze át.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 
 ### <a name="set-up-physical-dimensions-for-the-product"></a>Állítsa be a termék fizikai méreteit

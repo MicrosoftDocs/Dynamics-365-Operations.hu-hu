@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 30ccdf45d4993e9803f86025f8e789d4f75f64dc
-ms.sourcegitcommit: 8d50c905a0c9d4347519549b587bdebab8ffc628
+ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "6184022"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345500"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -73,7 +73,7 @@ A központ a következő adatokat birtokolja:
 
 A skálázási egységek birtokolják a hullám kibocsátása után a tényleges hullámfeldolgozási egységeket (például a munka felosztását, a feltöltési munkát és a munkaszükségletek létrehozását). Ennélfogva a raktári dolgozók a kimenő munkát a skálázási egységhez kapcsolódó Raktárkezelés mobilalkalmazás segítségével dolgozzák fel.
 
-![Hullámfeldolgozási folyamat](./media/wes-wave-processing-ga.png "Hullámfeldolgozási folyamat")
+![Hullámfeldolgozási folyamat.](./media/wes-wave-processing-ga.png "Hullámfeldolgozási folyamat")
 
 ### <a name="process-work-and-ship"></a>Munka és szállítás feldolgozása
 
@@ -81,7 +81,7 @@ Amint a végső munkafolyamat a végső kiszállítási helyre (raktárajtó) he
 
 Amint a központ frissítette a tranzakciókat *Kitárolva* értékre, a rendszer feldolgozhatja a kimenő szállítmány megerősítését, valamint a társított értékesítési szállítólevelet vagy a rakományhoz tartozó átmozgatási rendelés szállítmányát.
 
-![Kimenő feldolgozási folyamat](./media/WES-outbound-processing-19.png "Kimenő feldolgozási folyamat")
+![Kimenő feldolgozási folyamat.](./media/WES-outbound-processing-19.png "Kimenő feldolgozási folyamat")
 
 ## <a name="inbound-process-flow"></a>Bemenő feldolgozási folyamat
 
@@ -107,11 +107,11 @@ A dolgozó a skálázási egységhez kapcsolódó Raktárkezelés mobilalkalmaz�
 
 Ha nem használja a *kiadás raktárba* folyamatot, és így nem használja a *raktári rendeléseket*, akkor a központ a raktári bevételezést és a munka feldolgozását a skálázási egységtől függetlenül feldolgozhatja.
 
-![Bemenő feldolgozási folyamat](./media/wes-inbound-ga.png "Bemenő feldolgozási folyamat")
+![Bemenő feldolgozási folyamat.](./media/wes-inbound-ga.png "Bemenő feldolgozási folyamat")
 
 Ha a raktári alkalmazás bevételezési folyamatával végez bejövő regisztrációt a skálázási egység raktári rendelése alapján, a skálázási egység munkaterhelése jelez a központnak, hogy frissítse a kapcsolódó beszerzésirendelés-sor tranzakcióit *Regisztrálva* értékre. Amint ez befejeződött, a központon futtathatja a beszerzési rendelés termékbevételezését.
 
-![Bejövő feldolgozási folyamat](./media/WES-inbound-processing-19.png "Bejövő feldolgozási folyamat")
+![Bejövő feldolgozási folyamat.](./media/WES-inbound-processing-19.png "Bejövő feldolgozási folyamat")
 
 ## <a name="supported-processes-and-roles"></a>Támogatott folyamatok és szerepkörök
 

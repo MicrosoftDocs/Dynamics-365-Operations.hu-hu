@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7790d7e581b9b4260a4c57af84b02a182dde953d
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 7bc02a97005f84f7ac01f9fd9371f2a0a29314c4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894076"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346644"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Új ER-konfiguráció tervezése Word-formátumú jelentések generálásához
 
@@ -26,37 +26,37 @@ ms.locfileid: "5894076"
 
 Ahhoz, hogy Microsoft Word-dokumentumként hozzon létre jelentéseket, meg kell terveznie egy sablont a jelentésekhez, például az asztali Word alkalmazás segítségével. A következő ábra az ellenőrző jelentés mintasablonját mutatja be, amely létrehozható a feldolgozott szállítói kifizetések részleteinek megjelenítéséhez.
 
-![Mintasablon az asztali Word alkalmazásban használható ellenőrző jelentéshez](./media/er-design-configuration-word-image1.png)
+![Mintasablon az asztali Word alkalmazásban használható ellenőrző jelentéshez.](./media/er-design-configuration-word-image1.png)
 
 Ha Word-dokumentumot kíván használni Word formátumú jelentések sablonjaként, egy új [Elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) [megoldást](er-quick-start1-new-solution.md) is konfigurálhat. Ennek a megoldásnak egy ER [konfigurációt](general-electronic-reporting.md#Configuration) kell tartalmaznia egy ER [formátum](general-electronic-reporting.md#FormatComponentOutbound) összetevővel.
 
 > [!NOTE]
 > Amikor új ER-formátumkonfigurációt hoz létre jelentések Word-formátumban való előállításához, vagy a **Word** formátumtípust kell kiválasztania a **Konfiguráció létrehozása** legördülő párbeszédpanelen, vagy üresen kell hagynia a **Formátumtípus** mezőt.
 
-![Az egyéni formátumkonfiguráció létrehozása a Konfigurációk oldalon](./media/er-design-configuration-word-image2.gif)
+![Az egyéni formátumkonfiguráció létrehozása a Konfigurációk oldalon.](./media/er-design-configuration-word-image2.gif)
 
 A megoldás ER-formátum-összetevőjének tartalmaznia kell az **Excel\\Fájl** formátumelemet, és ezt a formátumelemet össze kell kapcsolni a Word dokumentummal, amelyet a futásidőben generált jelentések sablonjaként fog használni. Az ER-formátum összetevő konfigurálásakor meg kell nyitnia a létrehozott ER-konfiguráció [vázlat](general-electronic-reporting.md#component-versioning) verzióját az ER-formátumtervezőben. Ezután adja hozzá az **Excel\\Fájl** elemet, csatolja a Word-sablont a szerkeszthető ER-formátumhoz, és csatolja a sablont a hozzáadott **Excel\\Fájl** elemhez.
 
 > [!NOTE]
 > A sablon manuális csatolása esetén olyan [dokumentumtípust](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) kell használnia, amely korábban [konfigurálva](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) lett az ER-paraméterekben az ER-formátumok sablonjainak tárolására.
 
-![Sablon csatolása a Formátumtervező oldalon](./media/er-design-configuration-word-image3.gif)
+![Sablon csatolása a Formátumtervező oldalon.](./media/er-design-configuration-word-image3.gif)
 
 Az **Excel\\Fájl** elemhez hozzáadhatja az **Excel\\Tartomány** és **Excel\\Cella** beágyazott elemeket, hogy megadja a futásidőben generált jelentésekbe bevitt adatok szerkezetét. Ezután ezeket az elemeket hozzá kell kötnie a szerkeszthető ER-formátum adatforrásaihoz, hogy megadja a tényleges adatokat, amelyek a generált jelentésekbe futásidőben fognak bekerülni.
 
-![Beágyazott elemek hozzáadása a Formátumtervező oldalon](./media/er-design-configuration-word-image4.gif)
+![Beágyazott elemek hozzáadása a Formátumtervező oldalon.](./media/er-design-configuration-word-image4.gif)
 
 Amikor a tervezés során menti az ER-formátum módosításait, a hierarchikus formátumszerkezet a csatolt Word-sablonban egy **Jelentés** nevű [egyéni XML-részként](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) tárolódik. A módosított sablonhoz hozzá kell férnie, le kell töltenie a Finance alkalmazásból, helyben kell tárolnia, majd meg kell nyitnia az asztali Word alkalmazásban. A következő ábra a **Jelentés** egyéni XML-részét tartalmazó ellenőrző jelentés helyileg tárolt mintasablonját mutatja be.
 
-![A jelentéssablon mintájának előnézete az asztali Word alkalmazásban](./media/er-design-configuration-word-image5.gif)
+![A jelentéssablon mintájának előnézete az asztali Word alkalmazásban.](./media/er-design-configuration-word-image5.gif)
 
 Amikor futásidőben futtatja az **Excel\\Tartomány** és **Excel\\Cella** formátumelemek kötését, az össze kötés által előállított adatok a létrehozott Word-dokumentumba kerülnek, a **Jelentés** egyéni XML-rész egyedi mezőjeként. Ha egy generált dokumentumban meg szeretne adni az egyéni XML-rész mezőiben található értékeket, akkor hozzá kell adnia a megfelelő Word [tartalomvezérlőket](/office/client-developer/word/content-controls-in-word) a Word-sablonhoz, hogy helyőrzőként szolgáljanak az olyan adatok számára, amelyek futásidőben ki lesznek töltve. A tartalomvezérlők kitöltésének megadásához minden tartalomvezérlőt le kell képezni kell a **Jelentés** egyéni XML-rész megfelelő mezőjére.
 
-![Tartalomvezérlők hozzáadása és leképezése az asztali Word-alkalmazásban](./media/er-design-configuration-word-image6.gif)
+![Tartalomvezérlők hozzáadása és leképezése az asztali Word-alkalmazásban.](./media/er-design-configuration-word-image6.gif)
 
 Ezt követően le kell cserélnie a szerkeszthető ER-formátum eredeti Word-sablonját arra a módosított sablonra, amely most a **Jelentés** egyéni XML-rész mezőihez hozzárendelt Word-tartalomvezérlőket tartalmazza.
 
-![Sablon cseréje a Formátumtervező oldalon](./media/er-design-configuration-word-image7.gif)
+![Sablon cseréje a Formátumtervező oldalon.](./media/er-design-configuration-word-image7.gif)
 
 A konfigurált ER-formátum futtatásakor a csatolt Word-sablon használatával új jelentés generálható. A tényleges adatok egy **Jelentés** nevű egyéni XML-részként tárolódnak a Word-jelentésben. A létrehozott jelentés megnyitásakor a Word-tartalomvezérlőket a rendszer kitölti a **Jelentés** egyéni XML-rész adataival.
 

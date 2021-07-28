@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f7b28a33dff4af6bf2b97db825a5a8304213f3a0
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 57f5d23533c2fd17593648a15745fa770fc01dc4
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796486"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345208"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Rendelési értesítések megjelenítése a pénztárnál (POS)
 
@@ -72,14 +72,14 @@ A pénztárgombok most már egy számlálót is megjeleníthetnek, amelynek a se
 
 A következő ábrán az élő tartalom beállítása látható a rácsgombtervezőben.
 
-![Élő tartalom beállítása a rácsgombtervezőben](./media/ButtonGridDesigner.png "Élő tartalom beállítása a rácsgombtervezőben")
+![Élő tartalom beállítása a rácsgombtervezőben.](./media/ButtonGridDesigner.png "Élő tartalom beállítása a rácsgombtervezőben")
 
 Ha meg szeretné jeleníteni az értesítések számát egy gombnyomással, gondoskodni kell arról, hogy a megfelelő képernyő-elrendezés frissítve legyen. A pénztár által használt képernyő-elrendezés meghatározásához jelölje be a **Beállítások** ikont a jobb felső sarokban, és jegyezze fel a **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása** adatokat. Most, az Edge böngésző használatával menjen a **Képernyőelrendezés** oldalra a rendszerben, keresse meg a fent azonosított **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása** adatokat, majd jelölje be az **Élő tartalom engedélyezése** jelölőnégyzetet. Nyissa meg a **Retail és Commerce \> Retail és Commerce IT \> Elosztási ütemezés** menüpontot, és futtassa az 1090 (Pénztárgépek) feladatot az elrendezésmódosítások szinkronizálásához.
 
-![A pénztár által használt képernyő-elrendezés keresése](./media/Choose_screen_layout.png "Képernyő-elrendezés keresése")
+![A pénztár által használt képernyő-elrendezés keresése.](./media/Choose_screen_layout.png "Képernyő-elrendezés keresése")
 
 A következő ábra bemutatja a **Jobb felső** és a **Középen** kiválasztásának hatását a **Tartalom igazítása** mezőben, különböző méretű gombok esetében.
 
-![Élő tartalom a pénztár gombjain](./media/ButtonsWithLiveContent.png "Élő tartalom a pénztár gombjain")
+![Élő tartalom a pénztár gombjain.](./media/ButtonsWithLiveContent.png "Élő tartalom a pénztár gombjain")
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

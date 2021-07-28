@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 84b3a3630d3809c05f87242784207c3c4af160ce
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 1351b9f22416e8ce6d90022997f0a15e9eb4042a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6018580"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344371"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
@@ -40,7 +40,7 @@ A Dynamics 365 Commerce az Azure AD B2C protokollt használja a felhasználók h
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com/).
 1. Válassza az Azure Portal menü **Erőforrás létrehozása** pontját. Ügyeljen arra, hogy a Commerce környezethez kapcsolt előfizetést és könyvtárat használja.
 
-    ![Erőforrás létrehozása az Azure-portálon](./media/B2CImage_1.png)
+    ![Erőforrás létrehozása az Azure-portálon.](./media/B2CImage_1.png)
 
 1. Nyissa meg az **Identitás \> Azure Active Directory B2C** elemet.
 1. A **AAD B2C-bérlő létrehozása vagy hivatkozás egy meglévő bérlőre az Azure Portal webhelyen** lapon, használja vállalat igényeinek leginkább megfelelő alábbi lehetőséget:
@@ -52,25 +52,25 @@ A Dynamics 365 Commerce az Azure AD B2C protokollt használja a felhasználók h
         1. Az **Ország vagy régió** helyen válassza ki az országot vagy régiót.
         1. Válassza a **Létrehozás** lehetőséget a bérlő létrehozásához.
 
-     ![Új Azure AD-bérlő létrehozása](./media/B2CImage_2.png)
+     ![Új Azure AD-bérlő létrehozása.](./media/B2CImage_2.png)
 
      - **Meglévő Azure AD B2C-bérlő csatolása a saját Azure előfizetésemhez**: Akkor használja ezt a lehetőséget, ha már van egy Azure AD B2C bérlője, amelyhez csatolni kívánja.
         1. Válassza ki a **Meglévő Azure AD B2C bérlő csatolása saját Azure előfizetéshez** lehetőséget.
         1. Az **Azure AD B2C bérlő** esetében válassza ki a megfelelő B2C-bérlőt. Ha a kiválasztási mezőben a „Nem jogosult B2C-bérlők találhatók” üzenet jelenik meg, akkor nem rendelkezik jogosult B2C Bérlővel, és újat kell létrehoznia.
         1. Az **Erőforráscsoport** helyen válassza az **Új létrehozása** lehetőséget. Írja be annak a csoportnak a **Nevét**, amely a bérlőt fogja tartalmazni, válassza ki az **Erőforráscsoport helyét** ,majd válassza a **Létrehozás** parancsot.
 
-    ![Válassza ki a Meglévő Azure AD B2C bérlő csatolása saját Azure előfizetéshez lehetőséget](./media/B2CImage_3.png)
+    ![Válassza ki a Meglévő Azure AD B2C bérlő csatolása saját Azure előfizetéshez lehetőséget.](./media/B2CImage_3.png)
 
 1. Miután létrehozta az új Azure AD B2C könyvtárat (ez néhány percet is igénybe vehet), az új könyvtárra mutató hivatkozás megjelenik az irányítópulton. Ez a link közvetlenül az „Üdvözli az Azure Active Directory B2C” oldalra mutat.
 
-    ![Hivatkozás az új AAD könyvtárra](./media/B2CImage_4.png)
+    ![Hivatkozás az új AAD könyvtárra.](./media/B2CImage_4.png)
 
 > [!NOTE]
 > Ha több előfizetése van a Azure-fiókján belül, vagy a B2C-bérlőt egy aktív előfizetés csatolása nélkül állította be, akkor egy **Hibaelhárítási** banner fogja arra kérni hogy a bérlőt egy előfizetéshez kapcsolja. Válassza ki a hibaelhárítási üzenetet, majd kövesse az utasításokat az előfizetési probléma megoldásához.
 
 A következő kép egy Azure AD B2C **Hibaelhárítási** bannert mutat be.
 
-![Figyelmeztetés, amely azt mutatja, hogy könyvtárának nincs aktív előfizetése](./media/B2CImage_5.png)
+![Figyelmeztetés, amely azt mutatja, hogy könyvtárának nincs aktív előfizetése.](./media/B2CImage_5.png)
 
 ## <a name="create-the-b2c-application"></a>A B2C-alkalmazás létrehozása
 
@@ -136,11 +136,11 @@ Feliratkozási és bejelentkezési felhasználóifolyamat-házirend konfigurál�
 
 A következő kép egy példa a Azure AD B2C feliratkozási és bejelentkezési felhasználói folyamatra.
 
-![A Regisztráció és bejelentkezés irányelv konfigurálása](./media/B2CImage_11.png)
+![A Regisztráció és bejelentkezés irányelv konfigurálása.](./media/B2CImage_11.png)
 
 A következő képen látható a **Felhasználói folyamat futtatása** lehetőség a Azure AD B2C regisztráció és a bejelentkezés felhasználói folyamatban.
 
-![Felhasználói folyamatbeállítás futtatása az irányelvben most](./media/B2CImage_23.png)
+![Felhasználói folyamatbeállítás futtatása az irányelvben most.](./media/B2CImage_23.png)
    
 ### <a name="create-a-profile-editing-user-flow-policy"></a>Profilszerkesztési felhasználóifolyamat-irányelv létrehozása
 
@@ -161,7 +161,7 @@ Profilszerkesztési felhasználóifolyamat-házirend konfigurálásához kövess
 
 A következő kép egy példát mutat be a Azure AD B2C profilszerkesztő felhasználói folyamatára.
 
-![A Profilszerkesztési felhasználói folyamat létrehozása](./media/B2CImage_12.png)
+![A Profilszerkesztési felhasználói folyamat létrehozása.](./media/B2CImage_12.png)
 
 ### <a name="create-a-password-reset-user-flow-policy"></a>Egy jelszóvisszaállítás felhasználóifolyamat létrehozása
 
@@ -225,18 +225,18 @@ Egy közösségi identitásszolgáltató hozzáadásához és beállításához 
 
 A következő képen példákat talál az **Identitásszolgáltató hozzáadása** és az **Identitiásszolgáltató beállítása** képernyőkre az Azure AD B2C-ben.
 
-![Közösségi identitásszolgáltató hozzáadása az alkalmazásához](./media/B2CImage_14.png)
+![Közösségi identitásszolgáltató hozzáadása az alkalmazásához.](./media/B2CImage_14.png)
 
 A következő képen egy példa látható arra, hogyan lehet kiválasztani az identitásszolgáltatót az Azure AD B2C **Identitásszolgáltatók** lapján.
 
-![Válassza ki az egyes közösségi identitásszolgáltatókat, hogy engedélyezze azokat házirendjéhez](./media/B2CImage_16.png)
+![Válassza ki az egyes közösségi identitásszolgáltatókat, hogy engedélyezze azokat házirendjéhez.](./media/B2CImage_16.png)
 
 A következő kép egy példát mutat be egy alapértelmezett bejelentkezési képernyőre, amely a közösségi identitásszolgáltató bejelentkezési gombját jeleníti meg.
 
 > [!NOTE]
 > Ha a Commerce alkalmazásban létrehozott egyéni oldalakat szeretné használni a felhasználói folyamatokhoz, a közösségi identitásszolgáltatók gombjait a Commerce modultár bővíthetőségi funkcióival kell hozzáadni. Továbbá, amikor az alkalmazásokat egy adott közösségi identitásszolgáltatónál állítja be, bizonyos esetekben az URL- vagy konfigurációs sztringekben megkülönböztethetik a kis- és nagybetűket. További információt a közösségi identitásszolgáltató csatlakozási utasításaiban talál.
  
-![Példa az alapértelmezett bejelentkezési képernyőre, melyen látható a közösségi identitásszolgáltató bejelentkezési gombja](./media/B2CImage_17.png)
+![Példa az alapértelmezett bejelentkezési képernyőre, melyen látható a közösségi identitásszolgáltató bejelentkezési gombja.](./media/B2CImage_17.png)
 
 ## <a name="update-commerce-headquarters-with-the-new-azure-ad-b2c-information"></a>A Commerce központ frissítése az új Azure AD B2C adatokkal
 
@@ -291,15 +291,15 @@ A szükséges alkalmazásadatok összegyűjtéséhez kövesse az alábbi lépés
 
 A következő képen egy példa látható a **Azure AD B2C – Alkalmazások** lapra.
 
-![Keresse meg a B2C alkalmazást a bérlőn belül](./media/B2CImage_19.png)
+![Keresse meg a B2C alkalmazást a bérlőn belül.](./media/B2CImage_19.png)
 
 A következő képen egy példa látható egy alkalmazás **Tulajdonságok** lapjára az Azure AD B2C-ben. 
 
-![Másolja ki az alkalmazásazonosítót B2C alkalmazás tulajdonságaiból](./media/B2CImage_21.png)
+![Másolja ki az alkalmazásazonosítót B2C alkalmazás tulajdonságaiból.](./media/B2CImage_21.png)
 
 A következő kép egy példát mutat be a felhasználói folyamatokra az **Azure AD B2C – felhasználói folyamatok (házirendek)** oldalon.
 
-![A B2C házirendfolyamatok neveinek összegyűjtése](./media/B2CImage_22.png)
+![A B2C házirendfolyamatok neveinek összegyűjtése.](./media/B2CImage_22.png)
 
 ### <a name="enter-your-aad-b2c-tenant-application-information-into-commerce"></a>Adja meg az AAD B2C bérlő alkalmazás adatait a Commerce alkalmazásban
 

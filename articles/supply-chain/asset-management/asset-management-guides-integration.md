@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-28
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 50cfea6656e1f13532b018784fa64b2aac10fc7f
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
+ms.openlocfilehash: 3793dca681e28b90e96469256f368620393704f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5908567"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344270"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>A Dynamics 365 Supply Chain Management (Eszközkezelés) integrálása a Dynamics 365 Guides alkalmazással
 
@@ -56,38 +56,38 @@ Egy útmutató társításához a Eszközkezelés modulban egy karbantartás ell
     1. A **Karbantartásiellenőrzőlista-sorok** gyorslapon válassza ki azt a sort, amelyhez társítani szeretné az útmutatót.
     1. Válassza a **Társított útmutatók** gyorslap **Útmutató hozzáadása** elemét.
 
-        ![Útmutató társítása karbantartásiellenőrzőlista-sorhoz](media/am-guides-integration-add-guide.png "Útmutató társítása karbantartásiellenőrzőlista-sorhoz")
+        ![Útmutató társítása karbantartásiellenőrzőlista-sorhoz.](media/am-guides-integration-add-guide.png "Útmutató társítása karbantartásiellenőrzőlista-sorhoz")
 
     1. A **Név** mezőben válasszon ki egy segédvonalat, majd válassza a **Mentés** parancsot.
 
-        ![A Név mezőben válasszon egy útmutatót](media/am-guides-integration-select-guide.png "A Név mezőben válasszon egy útmutatót")
+        ![A Név mezőben válasszon egy útmutatót.](media/am-guides-integration-select-guide.png "A Név mezőben válasszon egy útmutatót")
 
 1. A karbantartásiellenőrzőlista-sablon társítása egy feladattípushoz:
 
     1. [Hozzon létre egy karbantartásifeladat-típust](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type), vagy válasszon egy meglévő karbantartásifeladat-típust.
     1. A Művelet ablaktáblán válassza a **Karbantartási feladattípus alapértelmezései** lehetőséget.
 
-        ![Karbantartási feladattípus alapértelmezések gomb](media/am-guides-integration-job-defaults.png "Karbantartási feladattípus alapértelmezések gomb")
+        ![Karbantartási feladattípus alapértelmezések gomb.](media/am-guides-integration-job-defaults.png "Karbantartási feladattípus alapértelmezések gomb")
 
     1. Hozzon létre egy sort, majd kattintson a **Mentés** lehetőségre.
 
-        ![Egy sor létrehozása](media/am-guides-integration-add-line.png "Egy sor létrehozása")
+        ![Hozzon létre egy sort.](media/am-guides-integration-add-line.png "Egy sor létrehozása")
 
     1. A Művelet panelen válassza a **Karbantartási ellenőrzőlista** elemet.
 
-        ![Karbantartási ellenőrzőlista gombja](media/am-guides-integration-maintenance-checklist.png "Karbantartási ellenőrzőlista gombja")
+        ![Karbantartási ellenőrzőlista gombja.](media/am-guides-integration-maintenance-checklist.png "Karbantartási ellenőrzőlista gombja")
 
     1. A **Karbantartásellenőrzőlista-sorok** gyorslapján vegyen fel egy sort, majd módosítsa a **Típus** mező értékét **Sablon** értékre.
 
-        ![A Típus érték módosítása](media/am-guides-integration-checklist-lines.png "A Típus érték módosítása")
+        ![A Típus érték módosítása.](media/am-guides-integration-checklist-lines.png "A Típus érték módosítása")
 
     1. Válassza ki a **Sor részletei** gyorslap **Sablon** mezőjében azt a sablont, amelyhez az útmutatót társította, majd válassza a **Mentés** parancsot.
 
-        ![Sablon kijelölése](media/am-guides-integration-checklist-line-details.png "Sablon kijelölése")
+        ![Sablon kijelölése.](media/am-guides-integration-checklist-line-details.png "Sablon kijelölése")
 
 1. [Hozzon létre egy munkarendelést](work-orders/manually-created-workorders.md#create-work-order), majd válassza ki azt a karbantartási feladattípust, amely az útmutatóhoz társított karbantartásiellenőrzőlista-sablont használja. A program automatikusan a munkarendeléshez rendeli az útmutatót.
 
-    ![Válassza ki a karbantartási feladat típusát](media/am-guides-integration-create-work-order.png "Válassza ki a karbantartási feladat típusát")
+    ![Válassza ki a karbantartási feladat típusát.](media/am-guides-integration-create-work-order.png "Válassza ki a karbantartási feladat típusát")
 
 1. A munkarendeléshez és a dolgozókhoz kapcsolódó útmutató megtekintése:
 
@@ -95,11 +95,11 @@ Egy útmutató társításához a Eszközkezelés modulban egy karbantartás ell
     1. Nyissa meg a munkarendeléshez tartozó [Karbantartási ellenőrzőlistát](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job).
     1. Jelöljön ki egy ellenőrzőlista-sort a kapcsolódó útmutató megtekintéséhez.
 
-        ![Az ellenőrzőlista-sorhoz társított útmutató](media/am-guides-integration-show-guide.png "Az ellenőrzőlista-sorhoz társított útmutató")
+        ![Az ellenőrzőlista-sorhoz társított útmutató.](media/am-guides-integration-show-guide.png "Az ellenőrzőlista-sorhoz társított útmutató")
 
     1. Nyissa meg az útmutatót a HoloLens eszközön.
 
-        ![Az útmutatót megnyitása a HoloLens eszközön](media/am-guides-integration-hololens-select.png "Nyissa meg az útmutatót a HoloLens eszközön")
+        ![Az útmutató megnyitása a HoloLens eszközön.](media/am-guides-integration-hololens-select.png "Nyissa meg az útmutatót a HoloLens eszközön")
 
 > [!NOTE]
 > Az útmutatók közvetlenül is társíthatók egy munkarendelés vagy egy feladattípus karbantartási ellenőrzőlistájához.

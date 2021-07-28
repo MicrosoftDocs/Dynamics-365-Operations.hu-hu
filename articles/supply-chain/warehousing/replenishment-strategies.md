@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 84c97bdbe00285d7992a25edbf5d42ffe9b58903
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: a8ddc7022a1e9a7db14aaa67efcd442025b0f9d8
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5814512"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344472"
 ---
 # <a name="replenishment-strategies"></a>Feltöltési stratégiák
 
@@ -45,7 +45,7 @@ A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A ren
 
 A sablonok eléréséhez menjen a: **Raktárkezelés \> Beállítás \> Feltöltés \> Feltöltési sablonok** lehetőségre. Az **Áttekintés** részben válassza ki vagy hozzon létre egy olyan hullám igényfeltöltési sablont, amelynél a **Feltöltési típus** mező a *Hullámigény* lehetőségre van állítva. Ezt követően állítsa be a feltöltési sablon sorait a **Feltöltési sablon részletei** szakaszba. A **Feltöltési stratégia** mezőben válassza ki a használni kívánt feltöltési stratégiát mindegyik sorhoz.
 
-![Feltöltési sablonok oldal](media/ReplenTempWaveDmdMaxLocCap.png "Feltöltési sablonok oldal")
+![Feltöltési sablonok oldal.](media/ReplenTempWaveDmdMaxLocCap.png "Feltöltési sablonok oldal")
 
 Ha a **Feltöltési stratégia** oszlop nem jelenik meg a **Feltöltési sablon részletei** szakasz rácsában, győződjön meg arról, hogy a funkció be van kapcsolva, és a kijelölt feltöltési sablonnak a feltöltési típusa *Hullámigény*.
 

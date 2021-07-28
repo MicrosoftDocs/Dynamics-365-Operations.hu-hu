@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d92427c1aeee92921b5b817b67530cf8aeddbbfb
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 29b9e920744296d458e74ff3990191bde72b9e58
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744027"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344297"
 ---
 # <a name="configure-and-filter-workspaces"></a>Munkaterületek konfigurálása és szűrése
 
@@ -32,11 +32,11 @@ Ez a cikk a munkaterületek konfigurálásáról és szűréséről nyújt átte
 
 Teljes munkaterületre vonatkozó beállítások módosításával megváltoztathatja bizonyos munkaterületek megjelenését és viselkedését. Konfigurálható munkaterületek esetén a Művelet panel tartalmaz egy olyan gombot, amellyel az ott megjelenő leírás szerint megváltoztatható a konfiguráció. Például az alábbi példában a megfelelő gomb neve: **Munkaterület konfigurálása**.
 
-[![Munkaterületek konfigurálása és szűrése](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
+[![Munkaterületek konfigurálása és szűrése.](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
 
 Amikor rákattint a gombra, megjelenik egy párbeszédpanel, ahol módosíthatja a munkaterület előre megadott beállításait. A párbeszédpanelen látható beállítási lehetőségek munkaterületenként változnak, az adott munkaterületen elérhető vezérlőktől és üzleti adatoktól függenek.
 
-[![Munkaterület konfigurálása](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+[![Munkaterület konfigurálása.](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
 
 ## <a name="filtering-a-workspace"></a>Egy munkaterület szűrése
 
@@ -46,11 +46,11 @@ Sok munkaterületen szűrhető az ott megjelenő tartalom. Az elérhető vezérl
 
 Lehetősége van az egész munkaterület szűrésére egy munkaterület szintű szűrő segítségével. A munkaterület szintű szűrő a munkaterület bal felső sarkában jelenik meg. Ha kiválaszt egy konkrét értéket a legördülő menüből, a munkaterületen lévő tartalom a kiválasztott érték szerinti szűrés alapján rendeződik át.
 
-[![Munkaterület szűrése](./media/workspace-filter.png)](./media/workspace-filter.png)
+[![Munkaterület szűrése.](./media/workspace-filter.png)](./media/workspace-filter.png)
 
 Kattintással megnyílik a szűrő; ezután több lehetőség közül választhat.
 
-[![Kibontott munkaterületszűrő](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
+[![Kibontott munkaterületszűrő.](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
 
 Válasszon ki egy lehetőséget, amely alapján szűrni kívánja a munkaterületet.
 
@@ -58,7 +58,7 @@ Válasszon ki egy lehetőséget, amely alapján szűrni kívánja a munkaterüle
 
 Ha a munkaterület szakaszai rendelkeznek saját szűrővel, az egyes szakaszok külön-külön is szűrhetők. A következő ábra a szabadszöveges mező típusú szűrőre mutat példát (a szűrő az a mező, amely a „Szűrő” szöveget tartalmazza).
 
-[![Munkaterületszakasz-szűrők](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
+[![Munkaterületszakasz-szűrők.](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Ahogyan a munkaterület szintű szűrőnél, itt is válassza ki vagy adja meg azt az értékét, amely alapján a szakasz tartalmát szűkíteni kívánja.
 

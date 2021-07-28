@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: c50aabf94ae37b7b7b214699160bf958ad3ea9fd
-ms.sourcegitcommit: 2cc14f6c537628e79ad2dd17dabf2c246deaa40d
+ms.openlocfilehash: d61fdbb8efd8251cac6db7d5acab3caeb03f7879
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "6219787"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6346594"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>A beszerzés integrálása a Supply Chain Management és a Field Service között
 
@@ -31,7 +31,7 @@ Ez az integráció támogatja a beszerzési rendelések létrehozását, illetve
 
 A következő ábra bemutatja a táblákat mindkét rendszerben, és azt, hogy hogyan vannak leképezve egymáshoz. A Field Service szolgáltatásban lévő beszerzési rendelések egy *számlasorra* hivatkoznak, míg a Supply Chain Management szolgáltatásban *szállítói* sorra. Az integráció megoldásához a kettős írás hivatkozással kapcsolja össze a *szállítói* sorokat a *számlasorokkal*. További információ: [Integrált szállítói alapadat](vendor-mapping.md).
 
-![Beszerzés-leképezések](media/scm-field-service-tables.png)
+![Beszerzés-leképezések.](media/scm-field-service-tables.png)
 
 ## <a name="prerequisites"></a>Előfeltételek
 

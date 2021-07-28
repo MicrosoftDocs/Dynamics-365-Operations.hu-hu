@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 1a884031905e59e7bfedab9af7b97a7c54e40895
-ms.sourcegitcommit: e4992c57eea4c15ac052e9d65dddae625e3528f9
+ms.openlocfilehash: 97ecd7996ed2d8fb12c1038aa296450d3481e6fd
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "5866302"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345786"
 ---
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Jelentési fa definíciója a pénzügyi jelentésekben
 
@@ -170,23 +170,23 @@ A következő jelentési fában a jelentési egység struktúrája a következő
 - A legalacsonyabb szintű részletjelentési egységek (Kiskereskedelmi Értékesítés, Nagykereskedelmi Értékesítés, Ügyfélszolgáltatások és Műveletek) a pénzügyi adatok a részlegeit képviselik. Ezek a jelentési egységek a diagram árnyékolt területén találhatók.
 - A magasabb szintű összesítő egységek összesítik a részletegységek adatait.
 
-[![Contoso összegző jelentés szerkezete – 1. példa](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
+[![Contoso összegző jelentés szerkezete – 1. példa.](./media/contosoentertainmentsummaryreportstructure.png)](./media/contosoentertainmentsummaryreportstructure.png)
 
 ### <a name="reporting-unit-structure--example-2"></a>Jelentési egységek struktúrája – 2. példa
 
 A következő ábra bemutat egy jelentési fát, amely megjelenít egy szervezeti struktúrát, vállalati funkciók szerint van felosztva.
 
-[![Contoso összegző jelentés szerkezete – 2. példa](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
+[![Contoso összegző jelentés szerkezete – 2. példa.](./media/summaryofallunitscontoso.png)](./media/summaryofallunitscontoso.png)
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Példa a Jelentési egységek beszúrása dimenziókból párbeszédpanelre
 
 A következő ábra példa a **Jelentési egységek beszúrása dimenziókból** párbeszédpanelre. Ebben a példában az eredmény az üzleti egység, a költséghelyek és a részlegek kombinációja lesz.
 
-[![Jelentési egységek beszúrása](./media/insertreportingunits.png)](./media/insertreportingunits.png)
+[![Jelentési egységek beszúrása.](./media/insertreportingunits.png)](./media/insertreportingunits.png)
 
 A létrejövő jelentési fa definíció először üzleti egység szerint, majd költséghely, illetve részleg szerint lesz listázva. Az ötödik jelentési egység dimenziója az **Üzleti Egység = \[001\], Költséghely =\[\], Részleg = \[022\]**, valamint ez azonosítja a jelentési egységet a számlákhoz, amelyek a 001-es üzleti egységre és a 022-es részlegre vonatkoznak.
 
-[![A jelentési fa ábrája](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+[![A jelentési fa ábrája.](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Példák összesítési adatokra
 
@@ -194,11 +194,11 @@ Az alábbi példák lehetséges információkat mutatnak, melyeket a jelentési 
 
 #### <a name="example-1"></a>1. példa
 
-[![Többvállalatos összesítés](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
+[![Többvállalatos összesítés.](./media/mutlicompanyrollup.png)](./media/mutlicompanyrollup.png)
 
 #### <a name="example-2"></a>2. példa
 
-[![Vállalatközi részlegek összesítése](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
+[![Vállalatközi részlegek összesítése.](./media/crosscompanydepartmentrollup.png)](./media/crosscompanydepartmentrollup.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

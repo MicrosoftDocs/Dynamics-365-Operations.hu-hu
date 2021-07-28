@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 645022000d8746db3793a8a8611ab8f17c7bcc6e
-ms.sourcegitcommit: 53b797ff1b524f581046b48cdde42f50b37495bc
+ms.openlocfilehash: 04ffa8e56b72727c079db07f38bfae675ae2abb1
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "6117133"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6344956"
 ---
 # <a name="search-results-module"></a>Keresési eredmények modul
 
@@ -38,7 +38,7 @@ A kategóriákról és a keresési eredmények oldalairól [Az alapértelmezett 
 
 A következő ábra egy példát mutat be egy keresési eredmény oldal megjelenítésére egy kategóriához kapcsolódóan a Fabrikam webhelyen.
 
-![Példa a Fabrikam webhelyén lévő keresési eredmények oldalra](./media/SimpleCategoryLandingDressCategory.png)
+![Példa a Fabrikam webhelyén lévő keresési eredmények oldalra.](./media/SimpleCategoryLandingDressCategory.png)
 
 ## <a name="search-results-module-properties"></a>Keresési eredmények modul tulajdonságai
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d5ada93c0192aadac70c38c8c8c4f3af86ff6fc3
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
+ms.openlocfilehash: 2b26e31748f97603b0b175f79a8daae2650261d7
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5893276"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345888"
 ---
 # <a name="design-er-configurations-to-suppress-bom-characters-in-generated-files"></a>ER-konfigurációk tervezése az előállított fájlokban található bájtsorrendjelző karakterek elrejtéséhez
 
@@ -29,14 +29,14 @@ ms.locfileid: "5893276"
 > [!NOTE]
 > Ha a formátum hibás kódolási nevet tartalmaz, akkor a rendszer hibát jelez, amikor menti a formátum beállításainak módosításait.
 
-![Gyökérelem hozzáadása a Formátumtervező oldalon](./media/er-suppress-bom-characters-image1.gif)
+![Gyökérelem hozzáadása a Formátumtervező oldalon.](./media/er-suppress-bom-characters-image1.gif)
 
 Ha az **UTF-8**, **UTF-16** vagy **UTF-32** kódolást adja meg, elérhetővé válik az **Bájtsorrendjelző karakterek elrejtése** beállítás. A beállítást **Igen** értékre állítva elrejti a [bájtsorrendjelző (BOM) karaktereket](/globalization/encoding/byte-order-mark) a kimenő fájlokban, amelyek futásidőben jönnek létre a szerkeszthető ER-formátum futtatásakor.
 
 > [!NOTE]
 > Ha üresen hagyja a **Kódolás** mezőt, az alapértelmezett **UTF-8** kódolás kerül használatra.
 
-![A Bájtsorrendjelző karakterek elrejtése beállítás megadása a a Formátumtervező lapon](./media/er-suppress-bom-characters-image2.gif)
+![A Bájtsorrendjelző karakterek elrejtése beállítás megadása a Formátumtervező lapon.](./media/er-suppress-bom-characters-image2.gif)
 
 A funkció futásidőben való áttekintéséhez a megfelelő eljárást kell végrehajtani. Például a következő témakör lépéseit kell végrehajtani: [Az XML-elemek végrehajtásának elhalasztása az ER-formátumokban](er-defer-xml-element.md). Miután befejezte a lépéseket a témakör [Módosítsa úgy a formátumot, hogy a számítás alapja a létrejövő kimenet legyen](er-defer-xml-element.md#modify-the-format-so-that-the-calculation-is-based-on-generated-output) szakaszában, kövesse ezeket a további lépéseket.
 
@@ -59,7 +59,7 @@ A funkció futásidőben való áttekintéséhez a megfelelő eljárást kell v�
 
     Az első eltérés, amit észre fog venni, a fájl fejlécében van. A SampleXmlReport.xml fájl egy BOM-karaktert tartalmaz, míg a SampleXmlReport (1).xml fájl nem.
 
-    ![Generált fájlok összehasonlítása egy fájl-összehasonlítási segédprogrammal](./media/er-suppress-bom-characters-image3.png)
+    ![Generált fájlok összehasonlítása egy fájl-összehasonlítási segédprogrammal.](./media/er-suppress-bom-characters-image3.png)
 
 ## <a name="see-also"></a>Lásd még
 

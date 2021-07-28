@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 58941
+ms.custom:
+- "58941"
+- intro-internal
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 26088a01b0e849a5df559631591ec65d7885452b
-ms.sourcegitcommit: ab3f5d0da6eb0177bbad720e73c58926d686f168
+ms.openlocfilehash: 05c77b913c1c2281ca45a3dea8fef2223a1dcfbb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "5944365"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345690"
 ---
 # <a name="electronic-reporting-er-overview"></a>Elektronikus jelentéskészítés (ER) áttekintése
 
@@ -101,7 +103,7 @@ A formátum-összetevő lehetővé teszi bizonyos fájlok csatolását, amelyek 
 
 A következő ábra azt mutatja, hogy hogyan áramlanak az adatok ezeknek a formátumoknak az esetében.
 
-[![Kimenő formátum-összetevők adatáramlása](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+[![Kimenő formátum-összetevők adatáramlása.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
 
 Egyetlen ER-formátumkonfiguráció futtatásához és egy kimenő elektronikus dokumentum létrehozásához meg kell adni a formátumkonfiguráció hozzárendelését.
 
@@ -115,7 +117,7 @@ A formátum-összetevő a futásidőben importált bejövő dokumentum sémája.
 
 A következő ábra azt mutatja, hogy hogyan áramlanak az adatok ezeknek a formátumoknak az esetében.
 
-[![Bejövő formátum-összetevők adatáramlása](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Bejövő formátum-összetevők adatáramlása.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 Egyetlen ER-formátumkonfiguráció futtatásához, adatok importálásához egy bejövő elektronikus dokumentumból, meg kell adni egy formátumkonfiguráció kívánt hozzárendelését, valamint a modell-hozzárendelés integrációs pontját. A különböző típusú bejövő dokumentumokhoz ugyanaz a modell-leképezés és célok használhatók különböző formátumokkal.
 
@@ -290,7 +292,7 @@ Az ER automatikusan igazodik az alapösszetevő legújabb verziójához a szárm
 
 A Finance megoldásban az ER-konfigurációk listája folyamatosan frissül. Nyissa meg a [globális tárházat](er-download-configurations-global-repo.md) a jelenleg támogatott ER-konfigurációk listájának ellenőrzéshez. A **Megszűnés részletei** gyorslapon áttekintheti a már megszüntetett vagy már nem karbantartott konfigurációk adatait. 
 
-![A Globális adattár tartalma a Konfigurációs adattár oldalon](./media/er-overview-03.gif)
+![A Globális adattár tartalma a Konfigurációs adattár oldalon.](./media/er-overview-03.gif)
 
 ## <a name="additional-resources"></a>További erőforrások
 

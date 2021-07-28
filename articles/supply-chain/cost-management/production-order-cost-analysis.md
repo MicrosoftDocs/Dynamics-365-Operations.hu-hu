@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12e9446c145752cd74fb71884fcabe9d4bd03c68
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
+ms.openlocfilehash: 4d0a298a8f782ae318971e99c03e864fa5a4ef88
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6187698"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6343650"
 ---
 # <a name="production-order-cost-analysis"></a>Termelési rendelés költségelemzése
 
@@ -41,7 +41,7 @@ A különbözetek a jelentett termelési tevékenységek és a termelési cikkre
 
 A következő ábra bemutatja a négyféle különbözetet, amelyek a termelési rendelés tényleges költségei, illetve a cikk költségrekordján belüli számított költségek között fellépő eltéréseket okozzák a termelési rendelés befejezésekor. 
 
-![A termelési rendelés eltéréseit okozó különbözetek](./media/control.jpg) 
+![A termelési rendelés eltéréseit okozó különbözetek.](./media/control.jpg) 
 
 A **Különbözet** lapon vagy a **Termelési különbözet** jelentésben elemezheti a termelési különbözeteket. A megjelenítési beállítások használatával a részletes különbözetek cikkenként, üzemi erőforrásonként vagy költségcsoportonként jeleníthetők meg. A készletparaméterekben szereplő költség-alábontási szabály határozza meg, hogy a különbözetek nyomon-követése költségcsoportok szerint történik-e. Használhatja még az **egyszeres**, **többszörös**, és **teljes** megjelenítési beállításokat az összesített különbözetek megjelenítéséhez. A részletes különbözetekről szóló információk a segítségére lehetnek a különbözetek okának megértésében. Az eltérések előrejelzéséhez a termelési rendelés befejezése előtt elemezze a **Költségbecslés és kalkulációk** jelentésben található részletes információkat.
 
