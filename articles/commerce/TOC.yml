@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (2021. június)
                       href: get-started/whats-new-commerce-10-0-19.md
-                    - name: Commerce 10.0.18 (2021. május)
-                      href: get-started/whats-new-commerce-10-0-18.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -900,6 +898,8 @@
                   href: set-up-B2C-tenant.md
                 - name: Felhasználói bejelentkezéshez használt egyéni oldalak beállítása
                   href: custom-pages-user-logins.md
+                - name: Identitás rekordok vevőszámlákhoz való automatikus csatolásának engedélyezése
+                  href: identity-record-linking.md
                 - name: Több B2C-bérlő konfigurálása Commerce-környezetben
                   href: configure-multi-B2C-tenants.md
                 - name: Tartományok a Dynamics 365 Commerce szolgáltatásban
@@ -1022,6 +1022,8 @@
                   items:
                     - name: Adventure Works téma áttekintése
                       href: adventure-works-theme.md
+                    - name: Az Adventure Works téma telepítése
+                      href: install-adventure-works.md
             - name: Digitális eszközök kezelése
               items:
                 - name: Digitális eszközök kezelésének áttekintése

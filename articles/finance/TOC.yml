@@ -76,8 +76,6 @@
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (2021. június)
                       href: get-started/whats-new-changed-10-0-19.md
-                    - name: Finance 10.0.18 (2021. május)
-                      href: get-started/whats-new-changed-10-0-17.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -1566,6 +1564,8 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Nemzetközi szolgáltatásokra vonatkozó jelentés
                   href: localizations/emea-aut-cross-border-services-report.md
+                - name: Beszerzési illetékek
+                  href: localizations/emea-aut-purchase-duties.md
             - name: Bahrein
               items:
                 - name: Bahrein – áttekintés
@@ -1992,6 +1992,10 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: Európai Uniós Intrastat nyilatkozat létrehozása
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
+                    - name: Francia Intrastat
+                      href: localizations/emea-fra-intrastat.md
+                    - name: Olasz Intrastat
+                      href: localizations/emea-ita-intrastat.md
                 - name: Készletnapló-jelentések
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Számlakibocsátás határidői
@@ -2968,6 +2972,12 @@
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
                 - name: 'Áfabevallás jegyzékekkel (JPK_V7M, VDEK)'
                   href: localizations/emea-pol-vdek.md
+                - name: Felkészülés a JPK-V7M jelentésre
+                  href: localizations/emea-pol-vdek-setup.md
+                - name: JPK-V7M jelentés
+                  href: localizations/emea-pol-vdek-reporting.md
+                - name: Konkrét üzleti esetek részletei a JPK-V7M jelentésben
+                  href: localizations/emea-pol-vdek-scenarios.md
             - name: Katar
               items:
                 - name: Katar – áttekintés
@@ -3204,6 +3214,8 @@
                       href: localizations/rus-accounts-payable-debt-tax-registers-and-debt-write-offs.md
                     - name: Behajthatatlan tartozási tartalékok a kinnlevőségek között
                       href: localizations/rus-bad-debts.md
+                    - name: Az adózási eszköz és az adókötelezettség jegyzékeinek számítása
+                      href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
             - name: Szaúd-Arábia
               items:
                 - name: Szaúd-Arábia – áttekintés
@@ -3997,6 +4009,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: 'Jelentések készítése Office-formátumokban, amelyekben beágyazott képek szerepelnek'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: ER-formátum megtervezése az oldal fejlécében vagy láblécében beágyazott képeket tartalmazó Excel jelentés létrehozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-embed-images-header-footer-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
                   href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/finance/toc.json
                 - name: Anyagjegyzék-karakterek elrejtése a létrehozott fájlokban

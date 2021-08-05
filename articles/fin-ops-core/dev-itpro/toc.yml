@@ -18,8 +18,6 @@
                   href: get-started/whats-new-platform-updates-10-0-20.md
                 - name: Platformfrissítés a 10.0.19-es verzióhoz (2021. június)
                   href: get-started/whats-new-platform-updates-10-0-19.md
-                - name: Platformfrissítések a 10.0.18-as verzióhoz (2021. május)
-                  href: get-started/whats-new-platform-updates-10-0-18.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -366,6 +364,8 @@
                       href: deployment/troubleshoot-newinfrastructure.md
                     - name: Tervezett karbantartás önkiszolgáló környezetekben – GYIK
                       href: deployment/plannedmaintenance-selfservice.md
+                    - name: Üzletmenet-folytonosság és vészhelyreállítás
+                      href: sysadmin/business-continuity-disaster-recovery.md
                 - name: Azure Resource Manager felvételi folyamat teljesítése
                   href: deployment/arm-onboarding.md
                 - name: Azure ExpressRoute és Finance and Operations
@@ -376,6 +376,8 @@
                   href: deployment/apply-deployable-package-system.md
                 - name: Frissítések és bővítmények alkalmazása a Commerce Scale Unit (felhő) szolgáltatásra
                   href: deployment/Update-retail-channel.md
+                - name: Commerce Scale Unit (felhő) automatikus frissítése
+                  href: deployment/Auto-Update-Commerce-Scale-Unit.md
                 - name: A Commerce Scale Unit (felhő) inicializálása
                   href: deployment/Initialize-Retail-Channels.md
                 - name: Csatornák áttelepítése másik Commerce Scale Unit szolgáltatásba
@@ -392,6 +394,8 @@
                       href: deployment/on-premises-overview.md
                     - name: Helyszíni telepítések tervezése és előkészítése
                       href: deployment/plan-onprem-deployment.md
+                    - name: Microsoft Dynamics 365 Finance + Műveletek (on-premises) támogatott szoftver
+                      href: deployment/onprem-compatibility.md
                     - name: Hardver méretezésére vonatkozó követelmények
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
                     - name: Hitelesítés a Dynamics 365 Finance + Operations (on-premises) szolgáltatásban
@@ -502,8 +506,6 @@
                   href: dev-tools/access-instances.md
                 - name: Különálló fejlesztői környezetetek konfigurálása
                   href: dev-tools/configure-developer-vm.md
-                - name: Új felhasználók létrehozása fejlesztési gépeken
-                  href: dev-tools/enable-development-machine.md
                 - name: Rendszergazdai hozzáférést nem engedélyező virtuális gépek fejlesztése és összeállítása – GYIK
                   href: sysadmin/VMs-no-admin-access.md
                 - name: Helyi környezetek átnevezése az Azure DevOps eléréséhez
@@ -1116,7 +1118,7 @@
                       href: data-entities/dual-write/integrated-hr.md
                     - name: Fél és globális címjegyzék
                       href: data-entities/dual-write/party-gab.md
-                    - name: A Power Portal használata a Fél adatmodelljével
+                    - name: A Microsoft Power Apps portál használata a Fél adatmodelljével
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Frissítés a fél és globális címjegyzék modelljére
                       href: data-entities/dual-write/upgrade-party-gab.md
@@ -1604,9 +1606,11 @@
                   href: migration-upgrade/upgrade-go-live-prep.md
                 - name: AX 2012 frissítés – Éles indulás
                   href: migration-upgrade/2012-upgrade-cutover.md
+                - name: Frissítés AX 2012-ről - Adatfrissítési GYIK
+                  href: migration-upgrade/upgrade-faq.md
                 - name: 'Módosítások, amelyek hatással vannak az AX 2012-ről való frissítésre'
                   items:
-                    - name: A számlatükör-elválasztó egyedivé tétele
+                    - name: A számlatükör elválasztó karakterének egyedivé tétele
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
                     - name: Egyetlen bizonylatos naplók és pénznemértékelések frissítése
                       href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md

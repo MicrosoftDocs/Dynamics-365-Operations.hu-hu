@@ -5,6 +5,8 @@
       items:
         - name: Újdonságok és változások a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2021. július 12.
+          href: hr-whats-new-2021-07-12.md
         - name: 2021. június 22.
           href: hr-whats-new-2021-06-22.md
         - name: 2021. május 20.
@@ -255,6 +257,8 @@
           href: hr-admin-go-live-prepare.md
         - name: Éles indítás GYIK
           href: hr-admin-go-live-faq.md
+        - name: Human Resources infrastruktúra-egyesítési GYIK
+          href: hr-infrastructure-merge-faq.md
         - name: Dokumentum-erőforrások
           items:
             - name: Súgórendszer
@@ -691,6 +695,8 @@
               href: hr-compensation-define-process.md
             - name: Kompenzációs konstrukciók feldolgozása
               href: hr-compensation-process.md
+            - name: Alkalmazott megjelölése fizetésre készként
+              href: hr-compensation-payroll.md
         - name: Juttatások kezelése
           items:
             - name: Juttatáskezelés
@@ -715,7 +721,7 @@
                       href: hr-benefits-setup-payment-frequencies.md
                     - name: Életesemények típusának konfigurálása
                       href: hr-benefits-setup-life-event-types.md
-                    - name: Költségvetési terv típusai
+                    - name: Tervtípus áttekintése
                       href: hr-benefits-setup-plan-types.md
                     - name: Okkódok beállítása
                       href: hr-benefits-setup-reason-codes.md
@@ -807,6 +813,8 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Csapat és vállalati naptárak megtekintése
               href: hr-employee-self-service-calendar.md
+            - name: Távollétkezelő szerepkör konfigurálása
+              href: hr-configure-absence-manager.md
             - name: Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
             - name: Szabadság vásárlási és eladási munkafolyamatok létrehozása
