@@ -1,6 +1,6 @@
 ---
-title: A Power Portal használata a Fél adatmodelljével
-description: Ez a témakör a Power Portal webszerepkörök változásait írja le a fél adatmodell megjelenése miatt a kettős írásban.
+title: A Microsoft Power Apps portál használata a Fél adatmodelljével
+description: Ez a témakör a Microsoft Power Apps portálok webszerepkörök változásait írja le a fél adatmodell megjelenése miatt a kettős írásban.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -9,14 +9,14 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-22
-ms.openlocfilehash: 3b03603038d05305c63fc2890a196670ae343e53
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca9d4ad1efa128ba274cd84b1c2f672fe70975a5
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6358617"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542563"
 ---
-# <a name="using-power-portal-with-the-party-data-model"></a>A Power Portal használata a Fél adatmodelljével
+# <a name="using-microsoft-power-apps-portals-with-the-party-data-model"></a>A Microsoft Power Apps portál használata a Fél adatmodelljével
 
 [!INCLUDE[banner](../../includes/banner.md)]
 
@@ -44,13 +44,13 @@ Az alábbi lépések szerint hozhatja létre az új táblaengedélyeket:
 
     Három új engedélyt kell létrehoznia:
 
-    + Kapcsolattartó a félhez kapcsolat
-    + Fél a kapcsolattartóhoz kapcsolat
-    + Fél a rendeléshez kapcsolat
+    + **Kapcsolattartó** a **Félhez** táblakapcsolat
+    + **Fél** a **Számlához** táblakapcsolat
+    + **Számla** a **Rendeléshez** táblakapcsolat
 
 4. Új engedély létrehozása és mentése a Kapcsolattartó a Félhez kapcsolathoz a következő paraméterek beállításával:
 
-    + **Név**: Fél-Partner kapcsolat (vagy az Ön választása)
+    + **Név**: **Fél** – **Partner** táblakapcsolat (vagy az Ön választása)
     + **Tábla neve**: msdyn_contactforparty
     + **Weboldal**: Ügyfélportál
     + **Hatókör**: Kapcsolattartó

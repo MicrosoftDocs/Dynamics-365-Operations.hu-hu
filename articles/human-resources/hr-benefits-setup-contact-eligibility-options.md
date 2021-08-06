@@ -2,7 +2,7 @@
 title: A személyes kapcsolattartó jogosultsági beállításainak konfigurálása
 description: A Microsoft Dynamics 365 Human Resources rendszerben konfigurálhatja a személyes kapcsolattartók jogosultsági beállításait. A személyes kapcsolattartók lehetnek kedvezményezettek vagy függő felek.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d85677973f67f0c68de6c5ede62c142524939833
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 071523e2a1e9de6f0ed2b77e4ad6802efb0073f7
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6054404"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558249"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>A személyes kapcsolattartó jogosultsági beállításainak konfigurálása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a cikk bemutatja, hogyan lehet konfigurálni a Microsoft Dynamics 365 Human Resources rendszer juttatásaiban használt személyes kapcsolattartók típusait. A személyes kapcsolattartók lehetnek kedvezményezettek vagy függő felek. 
+Ez a témakör bemutatja, hogyan lehet konfigurálni a Microsoft Dynamics 365 Human Resources rendszer juttatásaiban használható személyes kapcsolattartók típusait. A személyes kapcsolattartók azok a személyek, akikre a terv fedezete vonatkozik (eltartottak), vagy akik a tervek kedvezményezettjei lesznek (kedvezményezettek). Az eltartottak általában házastársak vagy gyermekek. A kedvezményezettek házastársak, gyermekek, alapok vagy szülők lehet.
 
 1. A **Juttatások kezelése** munkaterület **Beállítás** részén válassza a **Személyes kapcsolattartó jogosultsági beállításai** lehetőséget.
 

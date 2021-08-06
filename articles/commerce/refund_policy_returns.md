@@ -2,7 +2,7 @@
 title: Visszáruk és visszatérítések irányelvének létrehozása és frissítése a csatornához
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy csatorna visszárukra és visszatérítésekre vonatkozó irányelvét.
 author: ShalabhjainMSFT
-ms.date: 07/02/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 6cb2bb77a62ee9fc2ea6115949e30496bf3365c4
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: ca5797cfc2d92c4cbc98d3f64d60e1fd260f0418
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345108"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558297"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Visszáruk és visszatérítések irányelvének létrehozása és frissítése a csatornához
 
@@ -36,12 +36,21 @@ Az irányelv hatálya jelenleg csak a csatornán megengedhető fizetőeszközök
 
 ## <a name="enable-return-policy"></a>Visszatérítési irányelv engedélyezése
 
-A csatorna-visszaküldési irányelvek funkcióinak engedélyezéséhez hajtsa végre a következőket:
+Ha engedélyezni szeretné a Commerce központi felületén a csatorna-visszaküldési irányelvet, kövesse az alábbi lépéseket.
 
 1. Ugorjon a **Funkciókezelés** munkaterülethez a Dynamics 365 Commerce-ben.
 1. Keresse meg a **Csatornavisszaküldési irányelvek engedélyezése** funkciót a szolgáltatások neveinek listáján.
 1. Válassza az **Engedélyezés most** lehetőséget.
-1. Az **Elosztás ütemezése** lapon futtassa a **1110-es** (globális konfiguráció) feladatot a funkció változtatásának terjesztéséhez. 
+1. Az **Elosztás ütemezése** lapon futtassa a **1110-es** (globális konfiguráció) feladatot a funkció változtatásának terjesztéséhez.
+
+## <a name="initialize-the-commerce-scheduler"></a>A kereskedelmi tervezés és ütemezés incializálása
+
+A **Csatorna-visszaküldési irányelvek engedélyezése** funkció engedélyezése után inicializálni kell a Commerce ütemezőt, hogy az új funkcióadatbázis-módosításokat hozzá tudja adni a Commerce Data Exchange CDX-szinkronizálással. 
+
+A Commerce ütemezőinicializáláshoz a Commerce központban kövesse az alábbi lépéseket.
+
+- Ugrás a **Retail és Commerce \> Headquarters beállítás \> Kereskedelmi ütemező  \>Kereskedelmi ütemező inicializálása** elemre. Vagy keressen rá a „Commerce ütemező inicializálása” elemre.
+- Győződjön meg arról, hogy a **Kereskedelmi ütemező inicializálása** párbeszédpanelen a **Meglévő konfiguráció törlése** beállítás **Nem** értékre van állítva, majd válassza az **OK** lehetőséget.
 
 ## <a name="configure-return-policy"></a>Konfigurálja a visszaküldési irányelvet
 

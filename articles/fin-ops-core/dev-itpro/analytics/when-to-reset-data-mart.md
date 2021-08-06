@@ -2,7 +2,7 @@
 title: Az adatpiac alaphelyzetbe állítása – GYIK
 description: Ez a témakör az adatpiac alaphelyzetbe állításával kapcsolatos néhány gyakran ismételt kérdésre ad választ.
 author: jinniew
-ms.date: 06/09/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 7cd96c7bc698986ef1ef07ca88479a3d49f22924
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: 90abe1fc3e84e0a9777f3eabd790a4b7e9b509c5
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266609"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638267"
 ---
 # <a name="data-mart-resets-faq"></a>Az adatpiac alaphelyzetbe állítása – GYIK
 
@@ -37,6 +37,9 @@ Ha a következők közül egy vagy több érvényes, akkor a szervezete számár
 
 - Az alkalmazás-adatbázis vissza lett állítva.
 - Támogatási jegyet nyitott meg, és egy ügyfélszolgálati szakértő arra utasítja, hogy állítsa vissza az adatpiacot egy hibaelhárítási lépés részeként.
+ 
+> [!NOTE]
+> Az adatpiac alaphelyzetbe állításának folyamatát befolyásolja az adatbázis főkönyvi és költségvetési tranzakcióinak száma. Attól függően, hogy hány tranzakció van a rendszerben, az adatpiac alaphelyzetbe állítása akár 15 perc alatt is befejeződhet, illetve akár négy óráig is eltarthat. Ha azonban az alaphelyzetbe állítás négy óránál tovább tart, akkor javasoljuk, hogy forduljon a támogatáshoz.
  
 ## <a name="when-is-a-data-mart-reset-inappropriate"></a>Mikor nem megfelelő lépés az adatpiac alaphelyzetbe állítása?
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3540cf17050a953a97c7291a1bcbe5ebf6fb670e
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 2f9cd8846688e6b70f3ac2034caa1a9e3015355e
+ms.sourcegitcommit: f9b40df70a77136529fbc790325ed657eb203731
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815716"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "6645372"
 ---
 # <a name="fixed-asset-transaction-options"></a>Tárgyieszköz-tranzakciók beállításai
 
@@ -46,7 +46,7 @@ Ha egy beszerzési rendelést vagy a Készlet a tárgyi eszközökhöz naplót h
 ## <a name="general-ledger"></a>Főkönyv
 A tárgyieszköz-tranzakciók bármely típusát fel lehet adni az Általános napló képernyő következő naplóiba: ( > ) vagy ( > ) . Emellett a tárgyieszköz-naplókat is használhatja a tárgyieszköz-tranzakciók feladásához.
 
-## <a name="options-for-entering-fixed-asset-transaction-types"></a>Tárgyieszköz-tranzakciótípusok rögzítésének lehetőségei
+### <a name="options-for-entering-fixed-asset-transaction-types"></a>Tárgyieszköz-tranzakciótípusok rögzítésének lehetőségei
 
 
 | Tranzakció típusa                    | Modul                   | Beállítások                                   |
@@ -61,10 +61,20 @@ A tárgyieszköz-tranzakciók bármely típusát fel lehet adni az Általános n
 | ** **                               | Főkönyv           | Általános napló                           |
 | ** **                               | Kinnlevőségek      | Szabadszöveges számla                         |
 
-
 A tárgyi eszközök értékcsökkenési időszakok fennmaradó értéke nem frissül, ha az értékcsökkenési tranzakció típusú naplósort manuálisan hozták létre vagy importálták egy adatentitáson keresztül. Ez az érték frissül, ha az értékcsökkenés javaslati folyamata segítségével hozták létre a naplósort.
 
 További tudnivalókért lásd: [Tárgyieszköz-integráció](fixed-asset-integration.md).
 
+### <a name="transactions-that-require-different-voucher-numbers"></a>Különböző bizonylatszámokat igénylő tranzakciók
+
+A következő tárgyieszköz-tranzakciók különböző bizonylatszámokat fognak használni:
+
+- Egy eszközön további beszerzés történik, és „elmaradt” értékcsökkenés kiszámítására kerül sor.
+- Egy eszköz fel van osztva.
+- Bekapcsolásra kerül az értékcsökkenés kivezetéskori kiszámítására használandó paraméter, és ezután a eszköz kivezetésre kerül.
+- Egy eszköz szolgáltatási dátuma a beszerzési dátum elé esik. Emiatt egy értékcsökkenési kiigazítás lesz feladva.
+
+> [!NOTE]
+> Tranzakciók bevitelekor győződjön meg arról, hogy minden tranzakció ugyanarra a tárgyi eszközre vonatkozik. A bizonylat nem lesz feladva, ha egynél több tárgyi eszközt tartalmaz, még akkor is , ha az **Új bizonylat** mező értéke **Csak egy bizonylatszám** a Főkönyv rész **Naplónevek** oldalán. Ha a bizonylatban egynél több tárgyi eszköz szerepel, akkor megjelenik a következő üzenet: „Csak egy tárgyieszköz-tranzakció lehet bizonylatonként”, és nem lehet feladni a bizonylatot.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

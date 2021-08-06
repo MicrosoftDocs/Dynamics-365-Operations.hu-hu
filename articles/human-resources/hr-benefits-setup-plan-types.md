@@ -1,8 +1,8 @@
 ---
-title: Költségvetési terv típusai
+title: Tervtípus áttekintése
 description: A konstrukciótípus a Microsoft Dynamics 365 Human Resources alkalmazásban a meghatározott típusú juttatások magas szintű csoportosítása. Minden konstrukciótípusnak van egy terv konstrukciótípus-kódja, amely meghatározza a konstrukció típusának szabályait.
 author: andreabichsel
-ms.date: 04/06/2020
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,34 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: eb4746425c2faa3c0b1bd3940bf2e03cf7f9595c
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 806b3839feb1e1bf889747986388a56113c3ebe1
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6057862"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558273"
 ---
-# <a name="create-plan-types"></a>Költségvetési terv típusai
+# <a name="plan-type-overview"></a>Tervtípus áttekintése
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A konstrukciótípus a Microsoft Dynamics 365 Human Resources alkalmazásban a meghatározott típusú juttatások magas szintű csoportosítása. Minden konstrukciótípusnak van egy terv konstrukciótípus-kódja, amely meghatározza a konstrukció típusának szabályait. Például az Alapélettartam konstrukciótípushoz az Élettartam konstrukciótípus-kód szükséges, mivel ez egyfajta életbiztosítási konstrukció, amelyeknek meg kell felelniük az Élettartam konstrukciótípus-kódhoz meghatározott szabályoknak. Egy másik konstrukciótípus lehet a Kiegészítő élettartam, szintén az Élettartam konstrukciótípus-kóddal.
+A konstrukciótípus a meghatározott típusú juttatások magas szintű csoportosítása. Minden konstrukciótípusnak van egy terv konstrukciótípus-kódja, amely meghatározza a konstrukció típusának szabályait. Például az **Alapélettartam** konstrukciótípushoz az **Élettartam** konstrukciótípus-kód lesz szükséges, mivel ez egyfajta életbiztosítás típusú konstrukció, amelyeknek meg kell felelniük az **Élettartam** konstrukciótípus-kódhoz meghatározott szabályoknak. Egy másik tervtípus lehet **Kiegészítő élettartam**. Ennek a tervtípusnak is **Élet** terv típuskódja lesz.
 
 Mindegyik konstrukciótípus jelzi, hogy egy alkalmazott regisztrálhat-e egy vagy több ilyen típusú konstrukcióra. Például egy alkalmazott valószínűleg képes regisztrálni az Alapélettartam és a Kiegészítő élettartam biztosításokra az Élettartam konstrukciótípusból. Egy alkalmazott valószínűleg csak egy Orvosi típusú biztosításra regisztrálhat.
 
 Ha egy konstukciótípus kapcsolattartókat tartalmaz, akkor a konstrukciótípus jelzi, hogy a kapcsolattartók kedvezményezettek vagy függő felek-e. Például egy Alapélettartam konstrukciótípushoz tartozhatnak kedvezményezettek, míg egy Alap orvosi konstukciótípushoz csak függő felek tartozhatnak. Bizonyos esetekben előfordulhat, hogy egy konstrukció nem rendelkezik személyes kapcsolattartókkal. Például egy Rugalmas kiadási számla vagy Parkolási támogatás.
 
 A konstrukciótípus meghatározhatja a fedezeti beállításokat. A fedezeti beállítások a Fedezeti beállítás képernyőn vannak meghatározva. A fedezeti beállítások határozzák meg a juttatás összegét, illetve azokat a kapcsolattartókat, akik jogosultak a konstrukciótípusra. Ha például a kapcsolattartó típusa Kedvezményezett, a fedezeti beállításnak meg kell határoznia, hogy a kedvezményezett milyen feltételekkel kaphat juttatást annak igénybevétele esetén. Ha a kapcsolattartó típusa Függő fél, a fedezeti beállításnak meg kell határoznia a függő fél és az alkalmazott közötti kapcsolatot. 
+
+> [!IMPORTANT]
+> Az űrlap olyan kulcsadatokat tartalmaz, amelyek az új juttatási tervek létrehozásakor rendelkezésre álló lehetőségeket érintik:
+>
+> - **Terv típuskódja** – ez a mező azt befolyásolja, hogy mi jelenik meg a **Konfiguráció** lapon a tényleges juttatás beállításakor.  
+> - **Párhuzamos regisztráció** – ez a mező határozza meg, hogy engedélyezve van-e több regisztráció. (Egy egészségügyi konstrukciónál ez a mező jellemzően a **Egy beléptetés**.)
+> - **Kapcsolattartó típusa** – ez a mező lehetővé teszi, hogy eltartottak vagy kedvezményezettek hozzáadását a tervhez. Ha a beállítás **Nincs**, a juttatásokra jogosult alkalmazottak nem választhatják ki a kedvezményezettet vagy az eltartottat.
+> - **Fedezeti beállítások** – ezzel a mezővel kapcsolhatják a fedezeti beállításokat a konstrukciótípusokhoz. Meghatározza, hogy az adott tervtípusban kinek legyen fedezete vagy azokat a fedezeti összegeket, amelyek erre a tervtípusra rendelkezésre állnak. Megadhatja például, hogy egy egészségügyi tervtípus fedezete csak az alkalmazott, az alkalmazott és egy másik személy, illetve az alkalmazott és a családja számára legyen elérhető.
+
+## <a name="create-plan-types"></a>Költségvetési terv típusai
 
 1. A **Juttatások kezelése** munkaterület **Beállítás** részén válassza a **Konstrukciótípusok** elemet.
 

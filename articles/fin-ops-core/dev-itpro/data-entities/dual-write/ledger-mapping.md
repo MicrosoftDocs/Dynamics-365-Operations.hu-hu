@@ -4,24 +4,16 @@ description: Ez a témakör a főkönyvi adatok Finance and Operations és más 
 author: robinarh
 ms.date: 09/06/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: rhaertle
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5fedcbcd8db2692214ea66b2fbab9f7381e0a622
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 9e6e65b2b8ec8241bc2082b30ae641692c31afdd
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748517"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542661"
 ---
 # <a name="integrated-ledger"></a>Integrált főkönyv
 
@@ -29,63 +21,26 @@ ms.locfileid: "5748517"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 Egy üzleti pályázatban a főkönyvi adatok határozzák meg a vállalat üzleti tevékenységének alapbeállítását. A főkönyvi adatok például tartalmazzák a vállalat üzleti évét, a tranzakciók pénznemét és a vállalat által használt számlákat. Ez a témakör az alapvető pénzügyi adatok integrálását írja le.
 
 ## <a name="templates"></a>Sablonok
 
 A főkönyvi adatok tartalmazzák azokat a központi pénzügyi táblaleképezéseket, amelyek – az alábbi táblázatban látható módon – együttműködnek az adatok interakciója során.
 
-Finance and Operations-alkalmazásoknak      | Modellvezérelt alkalmazás a Dynamics 365-ben | Leírás
+Finance and Operations alkalmazások | Customer Engagement alkalmazások     | Leírás
 ---------------------------------|----------------------------------|------------
-Pénznemek                       | transactioncurrencies            |
-FiscalCalendar                   | msdyn\_fiscalcalendars        |
-FiscalCalendarYear               | msdyn\_fiscalcalendaryears        |
-ExchRateType                     | msdyn\_exchangeratetypes        |
-ExchangeRateCurrencyPair         | msdyn\_currencyexchangeratepairs        |
-FiscalPeriodEntity               | msdyn\_fiscalcalendarperiods        |
-MainAccountCategory              | msdyn\_mainaccountcategory        |
-MainAccount                      | msdyn\_mainaccounts        |
-Főkönyv                           | msdyn\_ledgers        |
-ExchangeRates                    | msdyn\_currencyexchangerates        |
-FinancialCalendarPeriod          | msdyn\_fiscalcalendarperiods        |
-DimensionAttributeEntity         | msdyn\_dimensionattributes        |
-DimensionIntegrationFormatEntity | msdyn\_financialdimensionformats        |
-LedgerChartOfAccounts            | msdyn\_chartofaccounts        |
-
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Currency](includes/Currencies-transactioncurrencies.md)]
-
-[!include [Fiscal calendar](includes/FiscalCalendar-msdyn-fiscalcalendars.md)]
-
-[!include [Fiscal calendar year](includes/FiscalCalendarYear-msdyn-fiscalcalendaryears.md)]
-
-[!include [Exchange rate types](includes/ExchRateType-msdyn-exchangeratetypes.md)]
-
-[!include [Exchange rate pair](includes/ExchangeRateCurrencyPair-msdyn-currencyexchangeratepairs.md)]
-
-[!include [Main account category](includes/MainAccountCategory-msdyn-mainaccountcategory.md)]
-
-[!include [Main account](includes/MainAccount-msdyn-mainaccounts.md)]
-
-[!include [Ledger](includes/Ledger-msdyn-ledgers.md)]
-
-[!include [Exchange rates](includes/ExchangeRates-msdyn-currencyexchangerates.md)]
-
-[!include [Financial Calendar Period](includes/FiscalPeriodEntity-msdyn-fiscalcalendarperiods.md)]
-
-[!include [Dimension attribute](includes/DimensionAttributeEntity-msdyn-dimensionattributes.md)]
-
-[!include [Dimension integration format](includes/DimensionIntegrationFormatEntity-msdyn-financialdimensionformats.md)]
-
-[!include [Chart Of Account](includes/LedgerChartOfAccounts-msdyn-chartofaccounts.md)]
-
-
-
-
-
+[CDS-árfolyamok](mapping-reference.md#123) | msdyn_currencyexchangerates |
+[Számlatükör](mapping-reference.md#121) | msdyn_chartofaccountses |
+[Pénznemek](mapping-reference.md#218) | transactioncurrencies |
+[Az árfolyam pénznempárja](mapping-reference.md#122) | msdyn_currencyexchangeratepairs |
+[Árfolyamtípus](mapping-reference.md#129) | msdyn_exchangeratetypes |
+[Pénzügyi dimenzió formátuma](mapping-reference.md#130) | msdyn_financialdimensionformats |
+[Pénzügyi dimenziók](mapping-reference.md#128) | msdyn_dimensionattributes |
+[Pénzügyi naptár integrációs entitása](mapping-reference.md#132) | msdyn_fiscalcalendars |
+[Pénzügyi naptári időszak](mapping-reference.md#131) | msdyn_fiscalcalendarperiods |
+[Pénzügyi naptári év integrációs entitása](mapping-reference.md#133) | msdyn_fiscalcalendaryears |
+[Ledger](mapping-reference.md#148) | msdyn_ledgers |
+[Fő számla](mapping-reference.md#152) | msdyn_mainaccounts |
+[Főszámla-kategóriák](mapping-reference.md#151) | msdyn_mainaccountcategories |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

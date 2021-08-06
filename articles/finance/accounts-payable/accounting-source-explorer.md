@@ -1,7 +1,7 @@
 ---
 title: Könyvelési források böngészője
 description: A cikk információt biztosít a Könyvelés forrás felfedezőről, aminek segítségével részletes elemzést végezhet a főkönyvi könyvelés bejegyzései mögötti forrásinformációról.
-author: ShylaThompson
+author: rcarlson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4624a740538493c247b6c3a0f051ed6208c52504
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: f1ab7cb7f8f9a42d5f311f8760ff2463055dc178
+ms.sourcegitcommit: f2dfec2f4c427e37a574e6acdfaaf150bc92ebb6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5820931"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6661037"
 ---
 # <a name="accounting-source-explorer"></a>Könyvelési források böngészője
 
@@ -46,8 +46,10 @@ Azokhoz a forrásbizonylatokhoz, amelyek a forrásbizonylat hivatkozás identit�
 
 Ezek a dokumentumoknál navigálhat a tényleges forrásbizonylathoz a Könyvelési források böngészőjéből.
 
-
-
-
+> [!NOTE]
+> A 10.0.20-as verziótól a **Frissítés** gomb két további tartományt is biztosít, amelyek korlátozzák a lapon az adatok beírásához futtatott kezdeti lekérdezést. Ezek a további tartományok a 10.0.19-es verzióban is elérhetők szolgáltatásfrissítésként. A következő mezők lettek hozzáadva:
+>
+> - Kezdő bizonylat, Befejező bizonylat
+> - Kezdő főszámla, Befejező főszámla
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

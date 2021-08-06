@@ -2,7 +2,7 @@
 title: Javaslat lízing felmondására
 description: Ez a témakör bemutatja, hogyan történik egy lízing megszüntetésének javasolása.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2021-1-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6b32f9e8f80827e04269ac8cb6a4fbb5a13af8bc
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
+ms.openlocfilehash: 003eaa3f9e5ad653daed2e973044f384972b0331
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881108"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638488"
 ---
 # <a name="propose-a-lease-for-termination"></a>Lízing megszüntetésének javasolása
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ha egy lízinget korábban szüntetnek meg, az Eszközlízing rögzíthet egy felmondási naplóbejegyzést a lízingkötelezettség, a használatijog-eszköz és a halmozott értékcsökkenés leírásának, valamint nyereség vagy veszteség könyvelése érdekében. A korai megszüntetési folyamat lezárja a lízinget és a hozzá tartozó lízingkönyveket. Nem szünteti meg az egyes lízingkönyveket. Ez a témakör ismerteti azokat a funkciókat, amelyek segítségével javasolhatja egy lízing megszüntetését, és feldolgozhatja a lízing megszüntetésével kapcsolatos naplóbejegyzést.
 

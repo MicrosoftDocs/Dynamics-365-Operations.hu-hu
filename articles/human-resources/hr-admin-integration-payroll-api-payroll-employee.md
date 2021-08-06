@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 57501d07f6b9cffdff9f37737df8c278c574cf30
-ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
+ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
+ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314285"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "6538854"
 ---
 # <a name="payroll-employee"></a>Bárlista alkalmazottja
 
@@ -32,15 +32,19 @@ Fizikai név: mshr_payrollemployeeentity.
 
 Ez az entitás információt nyújt az alkalmazottról. Az entitás használata előtt be kell állítania a [bérlista-integráció paramétereit](hr-admin-integration-payroll-api-parameters.md).
 
+>[!IMPORTANT] 
+>A **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** és **NameValidTo** mezők már nem lesznek elérhetők ehhez az entitáshoz. Ez biztosítja, hogy csak egy dátumra ható adatforrás jöjjön létre ehhez az entitáshoz, ez pedig a **HcmEmployment**, az **EmploymentStartDate** és az **EmploymentEndDate** mezőkkel.
+
+>Ezek a mezők a **DirPersonNameHistoricalEntity** oldalon érhetők el, amely a 43. platformfrissítésben lett kiadva. A **Személy** mezőben OData-kapcsolat van a **PayrollEmployeeEntity** és a **DirPersonNameHistoricalEntity** között. Másik lehetőségként a **DirPersonNameHistoricalEntity** entitás közvetlenül is lekérdezhető OData használatával a **PersonHistoricalNames** nyilvános név használatával.
+
+
 ## <a name="properties"></a>Tulajdonságok
 
 | Tulajdonság<br>**Fizikai név**<br>**_Típus_** | Használat | Leírás |
 | --- | --- | --- |
 | **Személyzeti szám**<br>mshr_personnelnumber<br>*Sztring* | Írásvédett<br>Szükséges | Az alkalmazott egyedi személyzeti száma. |
 | **Elsődleges mező**<br>mshr_primaryfield<br>*Sztring* | Szükséges<br>Rendszer által előállított |  |
-| **Vezetéknév**<br>mshr_lastname<br>*Sztring* | Csak olvasható<br>Szükséges | Alkalmazott vezetékneve. |
 | **Jogi személy azonosítója**<br>mshr_legalentityID<br>*Sztring* | Írásvédett<br>Szükséges | Megadja a jogi személyt (vállalatot). |
-| **Érvényesség kezdete**<br>mshr_namevalidfrom<br>*Dátum és idő eltolása* | Írásvédett <br>Szükséges | Az a dátum, amelytől az alkalmazotti információ érvényes.  |
 | **Nem**<br>mshr_gender<br>[mshr_hcmpersongender beállításkészlet](hr-admin-integration-payroll-api-gender.md) | Írásvédett<br>Szükséges | Az alkalmazott neme. |
 | **Bérlista alkalmazotti entitás azonosítója**<br>mshr_payrollemployeeentityid<br>*GUID* | Szükséges<br>Rendszer által előállított | Az alkalmazott egyedi azonosítására szolgáló, rendszer által generált GUID-értéke. |
 | **Foglalkoztatás kezdő dátuma**<br>mshr_employmentstartdate<br>*Dátum és idő eltolása* | Írásvédett<br>Szükséges | Az alkalmazott foglalkoztatásának kezdő dátuma. |
@@ -50,8 +54,6 @@ Ez az entitás információt nyújt az alkalmazottról. Az entitás használata 
 | **Érvényesség vége:**<br>mshr_namevalidto<br>*Dátum és idő eltolása* |  Írásvédett<br>Szükséges | Az a dátum, ameddig az alkalmazotti információ érvényes. |
 | **Születési dátum**<br>mshr_birthdate<br>*Dátum és idő eltolása* | Írásvédett <br>Szükséges | Az alkalmazott születési dátuma. |
 | **Az azonosítószám ehhez**<br>mshr_identificationnumber<br>*Sztring* | Írásvédett <br>Szükséges |Az alkalmazotthoz meghatározott azonosítószám.  |
-| **Keresztnév**<br>mshr_firstname<br>*Sztring* | Írásvédett<br>Szükséges | Alkalmazott utóneve. |
-| **Második utónév**<br>mshr_middlename<br>*Sztring* | Írásvédett<br>Szükséges |Az alkalmazott második utóneve.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Példa lekérdezés a bérszámfejtési alkalmazotthoz
 
@@ -69,11 +71,6 @@ GET [Organizaton URI]/api/data/v9.1/mshr_payrollemployeeentities?$filter=mshr_pe
     "mshr_personnelnumber": "000041",
     "mshr_employmentstartdate": "2011-04-05T07:00:00Z",
     "mshr_employmentenddate": "2154-12-31T23:59:59Z",
-    "mshr_firstname": "Cassie",
-    "mshr_middlename": "Lassie",
-    "mshr_lastname": "Hicks",
-    "mshr_namevalidfrom": "2021-03-12T20:34:25Z",
-    "mshr_namevalidto": "2154-12-31T23:59:59Z",
     "mshr_birthdate": "1987-09-12T00:00:00Z",
     "mshr_gender": 200000002,
     "mshr_identificationtypeid": "SSN",

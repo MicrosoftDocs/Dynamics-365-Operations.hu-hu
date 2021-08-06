@@ -2,7 +2,7 @@
 title: Adventure Works téma áttekintése
 description: Ez a témakör áttekintést nyújt az Adventure Works témáról, és bemutatja, hogyan alkalmazható a téma a webhelyoldalakra a Microsoft Dynamics 365 Commerce rendszerében.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 07/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,36 +14,48 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c7557a36a948de5ae877d74bbbdea78821099b82
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
+ms.openlocfilehash: c8183d09e15f83606d84fddd02cb2dfb9b2fb528
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479467"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655632"
 ---
 # <a name="adventure-works-theme-overview"></a>Adventure Works téma áttekintése
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör áttekintést nyújt az Adventure Works témáról, és bemutatja, hogyan alkalmazható a téma a webhelyoldalakra a Microsoft Dynamics 365 Commerce rendszerében.
 
 A Dynamics 365 Commerce rendelkezik egy Adventure Works nevű e-kereskedelmi témával. Az Adventure Works téma sport- és szabadidős termékeket mutat be, és úgy van el optimalizálva, hogy fejlett, multimédiás történetmesélési élményt biztosítson. Modern megjelenést, új elrendezéseket és animációs effekteket biztosítva hoz létre lebilincselő és elkötelezettséget erősítő online vásárlási élményt az e-kereskedelmi ügyfelek számára.
 
-Az Adventure Works téma a következő új munkafolyamatokat biztosítja:
+## <a name="trial-environments-in-commerce"></a>Próbakörnyezetek a Commerce-ben
+
+Ha szeretné megnézni, hogyan néz ki a z Adventure Works, ha business-to-consumer (B2C)C és a business-to-business (B2B) webhelyekre telepítik, keresse fel a következő próbawebhelyeket:
+
+- [Adventure Works B2C webhely](https://www.adventure-works.com/)
+- [Adventure Works B2B webhely](https://www.adventure-works.com/business)
+
+## <a name="theme-capabilities"></a>Témaképességek
+
+Az Adventure Works téma a következő új képességeket biztosítja:
 
 - A videólejátszó modul mostantól támogatja a címsor-, bekezdés- és hivatkozásfunkciókat a hatékonyabb történetmeséléshez.
-- A Hozzáadás a kosárhoz művelet értesítés helyett a mini bevásárlókocsit hívja meg.
+- Az animáción használatával jobb lett a tartalmak közötti átmenet.
+- A „Hozzáadás a kosárhoz” művelet értesítés helyett a mini bevásárlókocsit hívja meg.
 - A gyorsnézet modul egy olyan ablaktábla, amely a számítógépes és a mobilos nézetablakokban is becsúszik.
-- Az üres kosárban már megjeleníthetők promóciók.
+- A webhelyoldalaknak új elrendezése van. 
+- A marketingtartalmak konfigurálhatók a kosárhoz és a mini kosárhoz, ha azok üresek.
+- A mini kosárban akciós üzenetek is megjelenhetnek, például "Ingyenes szállítás 50 dollár fölötti rendelésekre".
+- A leíráskártyák a keresési és kategóriaoldalakon vannak megjelenítve.
 
-Az Adventure Works téma a következő történetmesélési modulokat tartalmazza a Commerce modultárban:
+Az Adventure Works téma immár a következő történetmesélési modulokat tartalmazza a Commerce modultárban:
 
-- Csempelista modul
-- Interaktívfunkció-modul
-- Feliratkozási modul
-- Aktívképmodul
-- Képlista modul
+- [Csempelistamodul](tile-list-module.md)
+- [Interaktív funkciómodul](interactive-feature-module.md)
+- [Aktívképmodul](active-image-module.md)
+- [Előfizetési modul](subscribe-module.md)
+- [Képlistamodul](image-list-module.md)
 
 Az Adventure Works téma teljesen reszponzív, és optimalizált élményt kínál számítógépes, mobilos és táblagépes nézetben is.
 
@@ -78,11 +90,15 @@ Ehhez hasonlóan más modulok is tartalmaznak moduldefiníciós bővítményeket
 
 A témabővítményekkel kapcsolatos további tudnivalókat lásd a [Témabővítmények](e-commerce-extensibility/theme-module-extensions.md) című témakörben.
 
+## <a name="install-the-adventure-works-theme"></a>Az Adventure Works téma telepítése
+
+Az Adventure Works téma telepítésével kapcsolatos tudnivalókat lásd [Az Adventure Works téma telepítése](install-adventure-works.md) témakörben.
+
 ## <a name="additional-resources"></a>További erőforrások
 
 [Modultár áttekintése](starter-kit-overview.md)
 
-[Csempelista modul](tile-list-module.md)
+[Csempelistamodul](tile-list-module.md)
 
 [Interaktívfunkció-modul](interactive-feature-module.md)
 

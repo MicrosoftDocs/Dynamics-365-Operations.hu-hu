@@ -2,7 +2,7 @@
 title: Szabadság és távollét áttekintése
 description: A Dynamics 365 Human Resources rendszerben a szabadság és távollét munkaterülete rugalmas keretet biztosít az új szabadságkonstrukciók létrehozásához. Emellett munkafolyamatokat is biztosít a kérelmek és az alkalmazottak intuitív önkiszolgáló rendszere számára, hogy szabadságot kérhessenek.
 author: andreabichsel
-ms.date: 06/01/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b41838b447dcbffc656ab759fcc4746abb620661
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 7a3c305910f41ebd775292dee91a6044c2cdb244
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339715"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639486"
 ---
 # <a name="leave-and-absence-overview"></a>Szabadság és távollét áttekintése
 
@@ -34,7 +34,8 @@ Mielőtt létrehozza a szabadságterveket az alkalmazottak számára, végre kel
 
 - [Szabadság- és távollétparaméterek konfigurálása](hr-leave-and-absence-parameters.md)
 - [Munkaidőnaptár létrehozása](hr-leave-and-absence-working-time-calendar.md)
-- [Szabadságkérelem munkafolyamat létrehozása](hr-leave-and-absence-workflow.md)
+- [Szabadságkérelmezési munkafolyamat létrehozása](hr-leave-and-absence-workflow.md)
+- [A Távollétkezelő szerepkör konfigurálása](hr-configure-absence-manager.md)
 
 ## <a name="create-and-manage-leave-plans"></a>Szabadságtervek létrehozása és kezelése
 
@@ -50,8 +51,9 @@ Mielőtt létrehozza a szabadságterveket a dolgozók számára, létre kell hoz
 
 Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen az alkalmazottak elküldhetik a szabadságra vonatkozó kérelmeiket, Ön pedig kezelheti a kérelmeket.
 
-[Szabadságkérelem](hr-employee-self-service-request-time-off.md)
-[Szabadság- és távollétkérelmek kezelése](hr-employee-self-service-manage-requests.md)
+- [Távollét kérelmezése](hr-employee-self-service-request-time-off.md)
+- [Szabadság- és távollétkérelmek kezelése](hr-employee-self-service-manage-requests.md)
+- [Távollétkezelő szerepkör konfigurálása](hr-configure-absence-manager.md)
 
 
 

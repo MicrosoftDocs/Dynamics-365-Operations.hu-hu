@@ -4,30 +4,21 @@ description: Ez a témakör a potenciális vevők készpénzre váltásáról a 
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: 7554189c779404559187ecd99f4bca4636054446
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0fcbc5b0f571e9f2cf7f1ad7c1e976d022199b47
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6361395"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542271"
 ---
 # <a name="prospect-to-cash-in-dual-write"></a>Potenciális vevők készpénzre váltása kettős írásban
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 A legtöbb vállalat számára fontos cél a potenciális vevők konvertálása, majd a vevőkkel folytatott folyamatos üzleti kapcsolatok fenntartása. A Microsoft Dynamics 365 alkalmazások esetében a potenciális vevő készpénzre váltásának folyamata az árajánlatok vagy a rendelés feldolgozási munkafolyamatokon keresztül történik, és a program egyezteti és felismeri a pénzügyeket. A potenciális vevők készpénzre váltásának integrációja a kettős írással egy olyan munkafolyamatot hoz létre, amely árajánlatot és egy rendelést a Dynamics 365 Sales vagy Dynamics 365 Supply Chain Management alkalmazásból kezel és az árajánlatot és a rendelést mindkét alkalmazásban elérhetővé teszi.
 
@@ -70,6 +61,7 @@ Az értékesítési ajánlat létrehozása a Sales vagy Supply Chain Management 
 + A **Szállítási feltételek**, **Kiszállítási feltételek**, **Szállítási módszer** és **Szállítási mód** oszlopok nem találhatók meg az alapértelmezett leképezésekben. Ezen oszlopok megfeleltetéséhez be kell állítania egy értékmegfeleltetést, amely az adott szervezetek adataira specifikus, amelyek között a tábla szinkronizálódik.
 
 Ha a Field Service megoldást is használja, mindenképpen engedélyezze újra az **ajánlati sor gyorslétrehozása** paraméterét. A paraméter ismételt engedélyezése lehetővé teszi az Árajánlati sorok létrehozásának folytatását a gyorslétrehozás funkció segítségével.
+
 1. Keresse meg a Dynamics 365 Sales alkalmazást.
 2. A felső navigációs sávon válassza ki a beállítások ikont.
 3. Válassza a **Speciális beállítások** elemet.
@@ -121,43 +113,25 @@ A Potenciális vevők készpénzre váltása tartalmazza azokat a központi táb
 
 | Finance and Operations-alkalmazásoknak | Customer Engagement alkalmazások | Leírás |
 |-----------------------------|-----------------------------------|-------------|
-| Értékesítésiszámla-fejlécek V2    | számlák                          | Az értékesítési számla fejlécek V2 táblája a Finance and Operations alkalmazásban tartalmazza az értékesítési rendelések és a szabadszöveges számlák számláit. A Dataverse kettős írás szűrője kiszűri a szabadszöveges számladokumentumokat. |
-| Értékesítésiszámla-sorok V2      | invoicedetails                    |             |
-| CDS értékesítésirendelés-fejlécek     | salesorders                       |             |
-| CDS értékesítési rendelés sorai       | salesorderdetails                 |             |
-| Értékesítési rendelés eredetkódjai    | msdyn\_salesorderorigins          |             |
-| CDS értékesítésiajánlat-fejléc  | ajánlatok                            |             |
-| CDS értékesítési ajánlat sorai   | quotedetails                      |             |
+[Minden termék](mapping-reference.md#138) | msdyn_globalproducts | |
+[Vevők V3](mapping-reference.md#101) | számlák | |
+[Vevők V3](mapping-reference.md#116) | kapcsolattartók | |
+[Kapcsolattartók V2](mapping-reference.md#221) | msdyn_contactforparties | |
+[CDS értékesítésirendelés-fejlécek](mapping-reference.md#217) | salesorders | |
+[CDS értékesítési rendelés sorai](mapping-reference.md#216) | salesorderdetails | |
+[CDS értékesítésiajánlat-fejléc](mapping-reference.md#215) | ajánlatok | |
+[CDS értékesítési ajánlat sorai](mapping-reference.md#214) | quotedetails | |
+[Kiadott termékek V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
+[Értékesítésiszámla-fejlécek V2](mapping-reference.md#118) | számlák | Az értékesítési számla fejlécek V2 táblája a Finance and Operations alkalmazásban tartalmazza az értékesítési rendelések és a szabadszöveges számlák számláit. A Dataverse kettős írás szűrője kiszűri a szabadszöveges számladokumentumokat. |
+[Értékesítésiszámla-sorok V2](mapping-reference.md#117) | invoicedetails | |
+[Értékesítési rendelés eredetkódjai](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
-Itt találhatók a kapcsolódó alaptáblák leképezései a Potenciális vevők készpénzre váltásához:
-
-+ [V3 vevők a számlákhoz](customer-mapping.md#customers-v3-to-accounts)
-+ [CDS V2 kapcsolattartók hozzáadása a kapcsolatok mappához](customer-mapping.md#cds-contacts-v2-to-contacts)
-+ [V3 ügyfelek a kapcsolatokhoz](customer-mapping.md#customers-v3-to-contacts)
-+ [Az msdyn_sharedproductdetails kiadott termékei](product-mapping.md#released-products-v2-to-msdyn_sharedproductdetails)
-+ [A msdyn_globalproducts összes terméke](product-mapping.md#all-products-to-msdyn_globalproducts)
-+ [Árlista](product-mapping.md)
+Az árlistákkal kapcsolatos tudnivalókat lásd: [Egyesített termékkel kapcsolatos tapasztalat](product-mapping.md).
 
 ## <a name="limitations"></a>Korlátozások
+
 - A visszárurendelések nem támogatottak.
 - A jóváírások nem támogatottak.
-- Az alapadatokhoz, például a vevőhöz és a szállítóhoz, be kell állítani a pénzügyi dimenziókat. Amikor egy vevőt hozzáadnak egy ajánlathoz vagy értékesítési rendeléshez, a vevői rekordhoz kapcsolódó pénzügyi dimenziók automatikusan bekerülnek a rendelésbe. A kettős írás jelenleg nem tartalmazza az alapadatok pénzügyi dimenzióinak adatait. 
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [sales invoice](includes/SalesInvoiceHeaderV2Entity-invoice.md)]
-
-[!include [sales invoice line](includes/SalesInvoiceLineV2Entity-invoicedetail.md)]
-
-[!include [sales order header](includes/SalesOrderHeaderCDSEntity-salesorder.md)]
-
-[!include [sales order line](includes/SalesOrderLineCDSEntity-salesorderdetails.md)]
-
-[!include [sales order origin](includes/SalesOrderOriginEntity-msdyn-salesorderorigin.md)]
-
-[!include [sales quotation header](includes/SalesQuotationHeaderCDSEntity-quote.md)]
-
-[!include [sales quotation line](includes/SalesQuotationLineCDSEntity-QuoteDetails.md)]
-
+- Az alapadatokhoz, például a vevőhöz és a szállítóhoz, be kell állítani a pénzügyi dimenziókat. Amikor egy vevőt hozzáadnak egy ajánlathoz vagy értékesítési rendeléshez, a vevői rekordhoz kapcsolódó pénzügyi dimenziók automatikusan bekerülnek a rendelésbe. A kettős írás jelenleg nem tartalmazza az alapadatok pénzügyi dimenzióinak adatait.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,24 +2,24 @@
 title: Üzleti partner típusú felhasználók kezelése a B2B e-kereskedelmi webhelyeken
 description: Ez a témakör azt ismerteti, hogyan adhatnak hozzá, szerkeszthetnek és törölhetnek a rendszergazdák üzleti partner típusú felhasználókat a B2B e-kereskedelmi webhelyeken.
 author: josaw1
-ms.date: 01/20/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
-ms.search.form: RetailOperations
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: v-chgri
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6beee4cc4c0dd36f49a38ee49a1a23ad9b513360
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
+ms.openlocfilehash: 88f613be59a0c7b0d5efcdc0bef2c5a54506f9eb
+ms.sourcegitcommit: 0c77dbb8547cd36fce3977ca9515fa1474efa77a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5936656"
+ms.lasthandoff: 07/22/2021
+ms.locfileid: "6655606"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Üzleti partner típusú felhasználók kezelése a B2B e-kereskedelmi webhelyeken
 
@@ -67,7 +67,7 @@ Az üzleti partner rendszergazdájának a Commerce központi felületén törté
 
 1. Lépjen a **Kiskereskedelem és kereskedelem IT \> Elosztási ütemezés** lehetőségre, majd futtassa **1010** (**Vevők**) feladatot az újonnan létrehozott vevő- és vevőhierarchia-rekordoknak a csatorna-adatbázisba való továbbküldése érdekében.
 
-A kérelem jóváhagyása, valamint a vevő- és vevőhierarchia rekordjainak szinkronizálása után a kérelmező bejelentkezhet a B2B e-kereskedelmi webhelyre az igénylés elküldésekor megadott e-mail-cím használatával. A felhasználók a bejelentkezési folyamat során meghatározhatják a fiók jelszavát.
+A kérelem jóváhagyása, valamint a vevő- és vevőhierarchia rekordjainak szinkronizálása után a kérelmező bejelentkezhet a B2B e-kereskedelmi webhelyre az igénylés elküldésekor megadott e-mail-cím használatával. A felhasználók a bejelentkezési folyamat során meghatározhatják a fiók jelszavát. Ha engedélyezni szeretné az identitásszolgáltató (Azure AD B2C) rekord csatolását a regisztrációkor vagy bejelentkezéskor létrehozott B2B vevőrekordhoz, kövesse az [Identitás rekordok vevőszámlákhoz való automatikus csatolásának engedélyezése](../identity-record-linking.md) rész utasításait.
 
 ## <a name="onboard-additional-business-partner-users"></a>További üzleti partner típusú felhasználók beléptetése
 
@@ -83,7 +83,7 @@ További üzleti partnereknek a B2B e-kereskedelmi webhelyre történő belépte
 
 1. Futtassa a **1010** (**Vevők**) feladatot az új üzleti partner felhasználója és a csatorna-adatbázis szinkronizálásához.
 
-A vevőrekord szinkronizálása után a B2B e-kereskedelmi webhelyen lévő felhasználó állapota **Aktív** lesz, és az új felhasználó az e-mail-címével bejelentkezhet a B2B e-kereskedelmi webhelyre. A felhasználók a bejelentkezési folyamat során meghatározhatják a fiók jelszavát.
+A vevőrekord szinkronizálása után a B2B e-kereskedelmi webhelyen lévő felhasználó állapota **Aktív** lesz, és az új felhasználó az e-mail-címével bejelentkezhet a B2B e-kereskedelmi webhelyre. A felhasználók a bejelentkezési folyamat során meghatározhatják a fiók jelszavát. Ha engedélyezni szeretné az identitásszolgáltató (Azure AD B2C) rekord csatolását a regisztrációkor vagy bejelentkezéskor létrehozott B2B vevőrekordhoz, kövesse az [Identitás rekordok vevőszámlákhoz való automatikus csatolásának engedélyezése](../identity-record-linking.md) rész utasításait.
 
 ## <a name="edit-business-partner-user-details"></a>Üzleti partner felhasználói adatainak szerkesztése
 

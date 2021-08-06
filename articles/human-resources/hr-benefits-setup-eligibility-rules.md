@@ -2,7 +2,7 @@
 title: Jogosultsági szabályok és beállítások konfigurálása
 description: A Microsoft Dynamics 365 Human Resources szolgáltatás juttatáskezelésében megadhatja a jogosultsági szabályokat és beállításokat.
 author: andreabichsel
-ms.date: 05/20/2021
+ms.date: 06/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,25 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 25593bc4d136e403c7ba87e044c95f4fae1e7db9
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351657"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558369"
 ---
-# <a name="configure-eligibility-rules-and-options"></a>Jogosultsági szabályok és beállítások konfigurálása
+# <a name="configure-eligibility-rules-and-options"></a>Jogosultsági szabályok és beállítások konfigurálása 
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Miután konfigurálta a szükséges paramétereket a Microsoft Dynamics 365 Human Resources juttatáskezeléséhez, létrehozhat a juttatási konstrukciókhoz rendelhető jogosultsági szabályokat, csomagokat, időszakokat és programokat.
+Miután konfigurálta a szükséges paramétereket a Juttatáskezeléséhez, létrehozhat a juttatási konstrukciókhoz rendelhető jogosultsági szabályokat, csomagokat, időszakokat és programokat.
+
+A jogosultsági szabályok határozzák meg, hogy az alkalmazott jogosult-e egy konstrukcióra. Az alkalmazottaknak teljesíteniük kell legalább egy szabály feltételét ahhoz, hogy a juttatásra jogosultnak minősüljenek. Például egy tervhez két szabály tartozik. Az első szabály (1. sor) szerint az alkalmazott típusa csak **Alkalmazott** lehet. Az második szabály (2. sor) szerint az alkalmazottnak teljes munkaidősnek kell lennie. Ennek megfelelően az 1. szabálynak megfelelő alkalmazottak akkor is jogosultak, ha csak részmunkaidős alkalmazásban állnak.
+
+Beállítható azonban egyetlen szabály, amely több feltételt is támaszt. Ebben az esetben az alkalmazottaknak teljesíteniük kell legalább a szabály összes feltételét ahhoz, hogy a juttatásra jogosultnak minősüljenek. Van például egy **Teljes munkaidős alkalmazott** nevű szabálya. Ez a szabály írja le, hogy az alkalmazott típusának **Alkalmazottnak** kell lennie, *és* az alkalmazottnak teljes munkaidősnek kell lennie. Ennek megfelelően az alkalmazottaknak teljesíteniük kell a szabály mindkét feltételét ahhoz, hogy jogosulttá tehetők legyenek.
+
+> [!IMPORTANT]
+> Minden juttatási csomaghoz legalább egy jogosultsági szabályt hozzá kell rendelni. Egy juttatáshoz több szabályt is társíthat.
 
 ## <a name="create-an-eligibility-rule"></a>Jogosultsági szabály létrehozása
 
@@ -72,7 +79,7 @@ A nyitott jelentkezés során az alkalmazottak választhatnak juttatási konstru
    | **Jogosult beosztástípus** | Megadja a jogosultsági szabálynak eleget tevő beosztástípust vagy -típusokat. Például: teljes munkaidős. |
    | **Jogosult állapot** | Megadja a jogosultsági szabálynak eleget tevő államokat vagy tartományokat. Például: Észak-Dakota, USA vagy Brit Kolumbia, Kanada. |
    | **Jogosult foglalkoztatási feltételek** | Megadja a jogosultsági szabálynak eleget tevő foglalkoztatási feltételeket. Például: rendelkezésre vagy csoportos szerződés. |
-   | **Jogosult szakszervezet** | Megadja a jogosultsági szabálynak eleget tevő szakszervezeti tagságot. Például: Forklift Drivers of America. </br></br>Ha szakszervezeti alapú jogosultsági szabályt alkalmaz, a dolgozó szakszervezeti rekordjában szerepelnie kell a záró dátumnak. Nem hagyhatja üresen. |
+   | **Jogosult szakszervezet** | Megadja a jogosultsági szabálynak eleget tevő szakszervezeti tagságot. Például: Forklift Drivers of America.</br></br>Ha szakszervezeti alapú jogosultsági szabályt alkalmaz, a dolgozó szakszervezeti rekordjában szerepelnie kell a záró dátumnak. Nem hagyhatja üresen. |
    | **Jogosult irányítószám** | Megadja a jogosultsági szabálynak eleget tevő irányítószámokat. Például, 58104 elem. |
 
 5. A **További részletek** területen a következő további részleteket tekintheti meg.

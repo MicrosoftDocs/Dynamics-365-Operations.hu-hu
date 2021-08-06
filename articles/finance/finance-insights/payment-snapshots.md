@@ -2,7 +2,7 @@
 title: Pillanatképek áttekintése (előzetes verzió)
 description: Ez a témakör a pillanatképek funkciót ismerteti, amely lehetővé teszi a pénzforgalmi előrejelzés mentését elemzés vagy későbbi tényleges adatok összehasonlítása érdekében. Amikor pénzforgalmi előrejelzést hoz létre, az előrejelzést „pillanatképként” mentheti. Ezután a pillanatképek segítségével szerkesztheti az előrejelzésben szereplő fiókokat, vagy összehasonlíthatja a pillanatképen szereplő előrejelzést a tényleges adatokkal.
 author: ShivamPandey-msft
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23df01603e74847f6f01a1eaa84b8fd3bb1d6e59
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: cf39e5233b2ef4d50d6c5ace57ba2574ed5fe6fe
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6337208"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638344"
 ---
 # <a name="snapshots-overview-preview"></a>Pillanatképek áttekintése (előzetes verzió)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A pillanatképek lehetővé teszik a szervezetek számára, hogy egy adott időpontban szerkesszék és mentsék a készpénzes pozíciójukra és a készpénz-előrejelzéseikre vonatkozó információkat. Összehasonlíthatja a pillanatképet a tényleges pénzügyi adatokkal, megvizsgálhatja az eltérést, és ezt az információt felhasználhatja a pénzforgalmi előrejelzések időbeli javítására. Pontosabban a pillanatképeket a következő módokon lehet használni:
 

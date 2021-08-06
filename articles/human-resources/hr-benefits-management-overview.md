@@ -2,7 +2,7 @@
 title: Juttatáskezelés áttekintése
 description: A juttatáskezelés funkció áttekintése a Dynamics 365 Human Resources alkalmazásban. Az alkalmazottak számára kiterjesztett juttatási lehetőségeket kínálhat könnyen használható online felületen.
 author: andreabichsel
-ms.date: 04/21/2021
+ms.date: 07/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2f3a5583400b21aa11e88ba48b67e56fdbb05c3f
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: fd3ffa08b7714d1c6019ea5987dc18ad717720a7
+ms.sourcegitcommit: 08797bc43e93ea05711c5a70dd7cdb82cada667a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6353638"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6558321"
 ---
 # <a name="benefits-management-overview"></a>Juttatáskezelés – áttekintés
 
@@ -29,77 +29,118 @@ ms.locfileid: "6353638"
 A versenyképesség megőrzéséhez juttatások széles választékát kell nyújtania, hogy felkeltse a legjobb alkalmazottak figyelmét, és meg is tudja tartani őket. A szokásos juttatások, például az orvosi és a fogászati biztosítás mellett kiterjesztett szolgáltatásokat is kínálhat, például bevezetési támogatást, rekreációs programokat és ruházati pótlékokat. A Microsoft Dynamics 365 Human Resources juttatáskezelés funkciója rugalmas megoldást kínál, amely a juttatási lehetőségek széles választékát támogatja. A Human Resources szolgáltatás tartalmaz egy egyszerűen használható alkalmazotti felületet is, amelyen bemutathatja az ajánlatait.
 
 - A bővített juttatási konstrukciók lehetővé teszik egyedi juttatási konstrukciók létrehozását és kezelését, valamint összetett juttatásmérték-táblázatok és beágyazott szintek támogatását. Az alkalmazotti élmény javításához könnyen készíthet juttatási programokat, csomagokat és automatikus igénylési szabályokat.
-
 - A rugalmas jóváírási programok lehetővé teszik az arányosítást a nyugdíjazás és az egyéb élettartam-események támogatásához.
-
 - A számos jogosultsági szabály biztosítja, hogy a megfelelő juttatásokat tudja szolgáltatni a megfelelő alkalmazottak számára.
-
 - A juttatások online regisztrálása könnyen használható megoldást nyújt az alkalmazottaknak.
-
 - A minősített életesemények feldolgozása támogatja a jövőbeli életeseményeket.
 
 Ha szeretne hozzáférni a bemutató adatokhoz, újra kell telepítenie a tesztkörnyezetét.
 
->[!NOTE]
->Most már testre szabhatja a Juttatások kezelése űrlapot. A juttatási tervek **Fedezeti beállítás** űrlapjához mostantól a fedezeti díjakkal kapcsolatos egyéni mezőket is hozzáadhatja. További információkért az egyéni mezők felhasználásáról lásd: [Egyéni mezők](hr-developer-custom-fields.md).
->![Juttatások kezelésének egyéni mezői.](media/hr-benefits-management-custom-fields.png)
+> [!NOTE]
+> Most már testre szabhatja a Juttatások kezelése űrlapot. A juttatási tervek **Fedezeti beállítás** űrlapjához mostantól a fedezeti díjakkal kapcsolatos egyéni mezőket is hozzáadhatja. További információkért az egyéni mezők felhasználásáról lásd: [Egyéni mezők](hr-developer-custom-fields.md).
+>
+> ![Juttatások kezelésében egyéni mezők](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Juttatáskezelés engedélyezése
 
-A témakör azt írja le, hogyan lehet bekapcsolni funkciókat a Human Resources szolgáltatásban. Arról is tájékoztat, hogy a Human Resources szolgáltatásban melyik meglévő funkciók lesznek lecserélve vagy letiltva, amikor bekapcsolja a juttatáskezelést.
+A témakör azt írja le, hogyan lehet bekapcsolni funkciókat a Human Resources szolgáltatásban. Arról is tájékoztat, hogy a Human Resources szolgáltatásban melyik meglévő funkciók lesznek lecserélve a Juttatáskezeléssel vagy letiltva, amikor bekapcsolja a juttatáskezelést.
 
 > [!IMPORTANT]
 > Miután engedélyezte a juttatások kezelését egy **Termelési** környezetben, azt nem lehet letiltani. Azt ajánljuk , hogy a **Termelési** környezetben történő engedélyezése előtt engedélyezze és tesztelje a juttatások kezelését egy **Teszt** környezetben. Jelentősen különböznek egymástól a korábbi Juttatási funkciók és az új Juttatáskezelés funkciók – ezek további beállításokat igényelnek, és a termelésbe történő helyezés előtt tesztelni kell azokat.
 
-- [Szolgáltatások kezelése](hr-admin-manage-features.md)
+További információért lásd: [Funkciók kezelése](hr-admin-manage-features.md).
 
-## <a name="configure-employee-information"></a>Alkalmazottak adatainak konfigurálása
+## <a name="process-overview"></a>Folyamat áttekintése
 
-Ahhoz, hogy az alkalmazottakat juttatásokhoz lehessen regisztrálni, meg kell adnia a szükséges adatokat. A **Fix kompenzációs konstrukcióban** egy alkalmazottat be kell regisztrálni a kezdő dátumra, és ki kell választania egy **Juttatásfizetési gyakoriságot** a **Foglalkoztatás részletei** részben a **Dolgozó** képernyőn.
+A juttatások konfigurálása a következő feladatokat foglalja magában:
+
+1.  Állítsa be a szükséges juttatási adatokat.
+2.  Állítsa be az opcionális juttatási adatokat.
+3.  Juttatási konstrukciók beállítása.
+4.  Rugalmas jóváírási programok beállítása (opcionális).
+5.  Szükséges alkalmazotti adatok konfigurálása.
+6.  Opcionális alkalmazotti adatok konfigurálása.
+7.  Alkalmazottak feldolgozása a jogosultság meghatározásához.
+8.  Az alkalmazottak az alkalmazotti önkiszolgáló szolgáltatáson keresztül választják ki a csomagokat (nem kötelező).
+9.  Alkalmazotti csomagkiválasztások megerősítése.
+10. Életesemény feldolgozása (opcionális).
+11. Díjfrissítések (nem kötelező).
+
+## <a name="set-up-required-benefit-information"></a>Állítsa be a szükséges juttatási adatokat
+
+Mielőtt alkalmazottakat beléptetnék a csomagokba több összetevőt kell beállítani:
+
+- **Juttatáskezelési paraméterek** – ezek a beállítások több vállalat között meg vannak osztva. Be lehet állítani az alapértelmezett okkódokat, engedélyezni lehet a **Juttatások éves fizetése** lehetőséget, be lehet állítani az új felvétel esetén az alapértelmezett fizetési gyakoriságot, és engedélyezni lehet az életeseményeket. További információkért lásd: [Juttatáskezelési paraméterek beállítása](hr-benefits-setup-parameters.md).
+- **Személyes kapcsolattartóra vonatkozó jogosultsági beállítások** – a személyes kapcsolattartók azok a személyek, akik a beállított csomag függő felei vagy kedvezményezettjei lesznek. Ők általában gyermekek, házastársak vagy alapítványok. További információ: [A személyes kapcsolattartó jogosultsági beállításainak konfigurálása](hr-benefits-setup-contact-eligibility-options.md).
+- **Fedezeti lehetőségek** – a tervben elérhető fedezettípusok beállítása. Határozza meg konkrétan, hogy kinek jár fedezet vagy hogy mennyi fedezet érhető el. További információkért lásd: [Fedezeti lehetőségek létrehozása](hr-benefits-setup-coverage-options.md).
+- **Tervtípusok** – a juttatási csomag létrehozásakor elérhető tervtípusok beállítása. A tervtípusok között szerepel például a **Fogászati**, **Látás** és **Megtakarítás**. A tervtípus bizonyos fontos beállításai határozzák meg, hogy milyen beállítások érhetők el a juttatási csomagban. További információ: [Konstrukciótípusok létrehozása](hr-benefits-setup-plan-types.md).
+- **Jogosultsági szabályok** – a jogosultsági szabályok határozzák meg, hogy az alkalmazott jogosult-e egy csomagra. Minden juttatási csomaghoz legalább egy jogosultsági szabályt hozzá kell rendelni. További információ: [Jogosultsági szabályok és beállítások konfigurálása](hr-benefits-setup-eligibility-rules.md).
+- **Fizetési gyakoriságok** – a fizetési gyakoriságokra a juttatási mértékek konfigurálásakor van szükség. A mértékhez alkalmazott fizetési gyakoriság segít meghatározni, hogy az alkalmazott és/vagy a munkáltató hetente, havonta vagy évente mennyi összeggel tartozik. További tudnivalókért lásd: [Fizetési gyakoriságok beállítása](hr-benefits-setup-payment-frequencies.md).
+- **Mértékek** – A mértékek határozzák meg, hogy egy juttatás mekkora költséggel jár vagy az alkalmazottnak, vagy a munkáltatónak. Ha az alkalmazottnak pénzt kell visszaosztani (például jóváírás egy edzőtermi tagsághoz), negatív árfolyamot kell megadni. További információ: [Mértékek konfigurálása](hr-benefits-setup-rates.md).
+- **Szintmértékek** – a szintmértékek akkor használatosak, amikor bizonyos feltételek alapján módosítani kell a mértéket. A leggyakoribb szintmérték egy, a koron alapuló szint. A kettős szintmértékét is be lehet állítani, ahol a mérték nem, kor vagy más kritérium alapján változhat.
+- **Levonások** – A levonások alapvetően azok a fejlécinformációk/kódok, amelyek a bérszámfejtő rendszerbe át lesznek küldve a levonás azonosítása érdekében. Ezeket a levonásokat be kell állítani, mert a juttatási csomagban szükségesek lesznek. További információ: [Levonások konfigurálása](hr-benefits-setup-deductions.md).
+- **Juttatási időszakok** – a juttatási időszak az az időszak, amely alatt az alkalmazottak juttatásban részesülnek. Csomagévnek is nevezik. A nyitott beléptetési időszakok is itt vannak beállítva.
+
+## <a name="set-up-optional-benefit-information"></a>Állítsa be az opcionális juttatási adatokat
+
+A következő összetevők beállítása nem szükséges a juttatási csomag létrehozásához:
+
+- **Programok** – a program olyan juttatások halmaza, amelyekre ugyanazok a jogosultsági szabályok vonatkoznak. Az értékesítési osztályon mindenki kap például mobiltelefont.
+- **Csomagok** – a csomag juttatások egy csoportja, ahol ki kell választani egy tervet ahhoz, hogy további terveke is kiválaszthatók legyenek. Például egy levonható egészségügyi tervet egy egészségbiztosítási számla (HSA) tervvel lehet csomagba rendezni.
+- **Életesemény-típusok** – az életesemények olyan események, amelyek lehetővé teszik az alkalmazott fedezetének módosítását. Az életesemény-típusok egy tervtípushoz kapcsolódnak. Például egy egészségügyi tervtípus lehetővé teheti a tervek változtatását születés, örökbefogadás vagy családi állapot változása miatt. Előfordulhat azonban, hogy egy biztosításiterv-típus az életesemények miatt nem teszi lehetővé a módosításokat. A részleteket lásd: [Életesemény-típusok konfigurálása](hr-benefits-setup-life-event-types.md).
+- **Várakozási napok és várakozási időszakok** – a juttatási tervben be lehet állítani fedezeti várakozási időszakot. Például egy újonnan felvett alkalmazott csak három hónap munkaviszonya után tud belépni a 401(k) programba. Ebben az esetben a várakozási időszak három hónap. A várakozási napok a várakozási időszakban használatosak ha az új belépőket csak a hónap meghatározott napján lehet feldolgozni és a szolgáltatónak benyújtani. Ha például a 401(k) tagság csak a hónap tizenötödik napján, három hónap munkaviszony után feldolgozható, akkor a beállított várakozási időszak három hónap, a várakozási nap pedig a tizenötödike. További információ: [Várakozási napok konfigurálása](hr-benefits-setup-waiting-days.md) és [Várakozási időszakok konfigurálása](hr-benefits-setup-waiting-periods.md).
+- **Okkódok** – Az okkódok annak indoklására használhatók, hogy miért változik egy juttatás egy alkalmazottnál. További tájékoztatásért lásd: [Okkódok beállítása](hr-benefits-setup-reason-codes.md).
+
+## <a name="set-up-benefit-plans"></a>Juttatási konstrukciók beállítása
+
+A juttatási terv beállításakor az alkalmazottak felvételét csak azt követően lehet végrehajtani,m ha elvégezték a következő lépéseket:
+
+- Juttatási időszak hozzárendelése.
+- Fedezeti beállítások csatolása.
+- Az **Általános** lapon állítsa be az érvényesség kezdő és befejező dátumát.
+- Rendeljen hozzá legalább egy jogosultsági szabályt.
+- A **Beállítás** lapon állítsa be a **Regisztráció engedélyezése/folytatása** mezőt.
+
+Az juttatási tervek beállításának módjáról bővebben lásd: [Juttatási konstrukciók beállítása](hr-benefits-plans-setup.md).
+
+## <a name="set-up-flex-credit-programs-optional"></a>Rugalmas jóváírási programok beállítása (opcionális)
+
+A rugalmas jóváírási programokkal az alkalmazottakat előre meghatározott számú rugalmas jóváírásnak megfelelően lehet beléptetni a juttatásokba. Az alkalmazottak határozhatják meg, hogyan osztják fel a rugalmas jóváírásaikat. Ha például az alkalmazottak már a házastársuk egészségbiztosítása alá tartoznak, akkor nem kell a jóváírásukat az egészségügyi fedezetre használni. Emiatt előfordulhat, hogy ezeket más juttatásokra érdemes használniuk. A rugalmas jóváírási programokkal kapcsolatos további tudnivalókat lásd [Rugalmas jóváírási programok beállítása](hr-benefits-plans-flex-credit-programs.md).
+
+## <a name="configure-required-employee-information"></a>Szükséges alkalmazotti adatok konfigurálása
+
+Ahhoz, hogy az alkalmazottakat juttatásokhoz lehessen regisztrálni, meg kell adnia a szükséges adatokat hozzájuk. Minden alkalmazottnak legyen beosztása. Az alkalmazottakat a kezdési dátumuk napján kell fix kompenzációs konstrukcióba bevonni, vagy évi juttatású fizetési összeggel kell rendelkezzenek. Ezenkívül a **Dolgozó** lap **Foglalkoztatás részletei** szakaszában ki kell választania egy értéket a **Juttatás fizetésének gyakorisága** mezőben.
 
 Ha van olyan alkalmazottja, aki kiegészítő kompenzációt kap, mint a jutalékok, akkor az alkalmazotti rekordból származó **Juttatások évi fizetése** összegét veheti fel. Az emberi erőforrások a fix kompenzációs éves összeg helyett a fedezeti összegek meghatározásakor a **Juttatások évi fizetésének** összegét fogják használni. A **juttatások évi fizetésének** érvényesnek kell lennie az alkalmazott kezdő dátumától vagy a juttatási időszak kezdetével, amelyik a legújabb. Ha egy alkalmazottnál egy fix kompenzációs és juttatás éves fizetési összege is rögzítve van, akkor a juttatások évi fizetését használják a fedezeti összegek meghatározására.
 
+## <a name="configure-optional-employee-information"></a>Opcionális alkalmazotti adatok konfigurálása
+
 Ha olyan juttatási tervet hoz létre, amely nemen vagy életkoron alapuló arányokat használ, akkor meg kell adnia a születési dátumot és a nemet az alkalmazott számára a juttatási költség kiszámításához.
 
-## <a name="configure-benefits-management"></a>A juttatáskezelés konfigurálása
+## <a name="process-employees-to-determine-eligibility"></a>Alkalmazottak feldolgozása a jogosultság meghatározásához
 
-Az alkalmazottak juttatási konstrukcióinak létrehozása előtt konfigurálnia kell a konstrukciókhoz tartozó beállításokat.
+Mielőtt az alkalmazottak tervekbe regisztrálhatók lennének, a jogosultsági feldolgozás futtatásával meg kell határozni, hogy mely konstrukciókra jogosultak. A jogosultsági folyamat eredményeit a folyamat eredménymegjelenítője jeleníti meg. További információért tekintse át a [Felvételi jogosultság feldolgozása](hr-benefits-process-enrollment-eligibility.md) részt.
 
-- [A juttatáskezelés paramétereinek beállítása](hr-benefits-setup-parameters.md)
-- [Jogosultsági szabályok és beállítások konfigurálása](hr-benefits-setup-eligibility-rules.md)
-- [A személyes kapcsolattartó jogosultsági beállításainak konfigurálása](hr-benefits-setup-contact-eligibility-options.md)
-- [Fedezeti lehetőségek létrehozása](hr-benefits-setup-coverage-options.md)
-- [Fizetési gyakoriságok beállítása](hr-benefits-setup-payment-frequencies.md)
-- [Életesemények típusának konfigurálása](hr-benefits-setup-life-event-types.md)
-- [Költségvetési terv típusai](hr-benefits-setup-plan-types.md)
-- [Okkódok beállítása](hr-benefits-setup-reason-codes.md)
-- [Számkódok beállítása](hr-benefits-setup-tier-codes.md)
-- [Díjak konfigurálása](hr-benefits-setup-rates.md)
-- [Levonások konfigurálása](hr-benefits-setup-deductions.md)
-- [Várakozási napok konfigurálása](hr-benefits-setup-waiting-days.md)
-- [Várakozási időszakok konfigurálása](hr-benefits-setup-waiting-periods.md)
-- [Kerekítési szabályok beállítása](hr-benefits-setup-rounding-rules.md)
-- [Alkalmazási kategóriák létrehozása](hr-benefits-setup-employment-categories.md)
-- [Foglalkoztatási típusok beállítása](hr-benefits-setup-employment-types.md)
-- [Alkalmazotti önkiszolgáló rendszer konfigurálása](hr-benefits-setup-employee-self-service.md)
+## <a name="employees-select-plans-via-employee-self-service-optional"></a>Az alkalmazottak az alkalmazotti önkiszolgáló szolgáltatáson keresztül választják ki a csomagokat (nem kötelező)
 
-## <a name="create-benefit-plans"></a>Juttatási konstrukciók létrehozása
+Nyitott regisztráció esetén az alkalmazottakat újonnan vették fel, vagy egy életeseményre kerül sor, és az alkalmazottak az alkalmazott önkiszolgáló rendszerén keresztül választhatják ki vagy frissíthetik a juttatásukat. A további tudnivalókat lásd: [Alkalmazotti önkiszolgáló rendszer konfigurálása](hr-benefits-setup-employee-self-service.md).
 
-Ezek a cikkek a juttatási konstrukciók létrehozását ismertetik, beleértve a csomagokat és a rugalmas jóváírási programokat.
+## <a name="confirm-employee-plan-selections"></a>Alkalmazotti csomagkiválasztások megerősítése
 
-- [Juttatási tervek beállítása](hr-benefits-plans-setup.md)
-- [Rugalmas hitelprogramok beállítása](hr-benefits-plans-flex-credit-programs.md)
+Az alkalmazottak által kiválasztott juttatásokat vissza kell igazolni, mielőtt az alkalmazottak regisztráltnak számítanak azokhoz. A juttatások az alkalmazott nevében is kiválaszthatók. A juttatások kiválasztásához vagy megerősítéséhez az **Alkalmazott** oldalon a **Juttatások** lapon válassza a **Dolgozói juttatási konstrukció** lehetőséget. Több alkalmazott juttatásának kiválasztásához vagy megerősítéséhez használja a **Dolgozói juttatási tervek tömeges frissítése** lapot.
 
-## <a name="process-benefit-plans"></a>Juttatási tervek feldolgozása
+## <a name="life-event-processing-optional"></a>Életesemény feldolgozása (opcionális)
 
-Néhány módosítását fel kell dolgoznia, hogy aktiválja azokat.
+Az alkalmazottak életciklusa során az egyes alkalmazottak különböző életeseményeket élhetnek át, például megváltozhat a munkaviszonyuk vagy változások lehetnek az eltartottjaik vagy kedvezményezettjeik terén. Az életesemények csak akkor használhatók, ha engedélyezi azokat az **Emberi erőforrások megosztott paraméterei** oldalon. Adja meg az életesemények típusait és az életesemények beállításait a konstrukciótípusokhoz.
 
-- [Felvételi jogosultság feldolgozása](hr-benefits-process-enrollment-eligibility.md)
-- [Élettartam-események feldolgozása](hr-benefits-process-life-events.md)
-- [Élettartam-események módosításainak feldolgozása](hr-benefits-process-life-event-changes.md)
-- [Élettartam-eseményekre vonatkozó jogosultságok feldolgozása](hr-benefits-process-life-event-eligibility.md)
-- [Mértékmódosítás feldolgozása](hr-benefits-process-rate-changes.md)
+Az életesemények feldolgozása előtt a felvételi időkereten belül már legalább egyszer futtatni kell a nyitott jelentkezést. Az Egyesült Államokban a nyitott regisztráció általában évente egyszer történik. Az Egyesült Államokon kívül nyitott jelentkezés esetleg a felvételkor történik. Az életesemény feldolgozásához nincs szükség arra, hogy a dolgozók válasszanak egy juttatási konstrukciót. A dolgozóknak azonban szerepelniük kell a nyitott regisztráció-feldolgozásban. További információért tekintse át az alábbi témaköröket:
 
+- [Életesemények feldolgozása](hr-benefits-process-life-events.md)
+- [Életesemények változásainak feldolgozása](hr-benefits-process-life-event-changes.md)
+- [Életesemény-jogosultság feldolgozása](hr-benefits-process-life-event-eligibility.md)
 
+## <a name="rate-updates-optional"></a>Díjfrissítések (nem kötelező)
+
+Bizonyos esetekben a juttatás mértéke módosul a konstrukciós időszakban. Ha frissíteni kell a konstrukcióra már regisztrált alkalmazottak mértékeit, fel kell feldolgoznia a mértékváltozásokat. További információért tekintse át a [Mértékváltozások feldolgozása](hr-benefits-process-rate-changes.md) részt.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

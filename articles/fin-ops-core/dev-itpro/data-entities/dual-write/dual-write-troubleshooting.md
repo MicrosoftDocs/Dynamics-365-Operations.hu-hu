@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: ccad9c55c0200d008525c7d3fdaeeef99b7eecfb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b4de461d26fc6d5c39c1ac0c49201f265f562f5a
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350740"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542491"
 ---
 # <a name="general-troubleshooting"></a>Általános hibaelhárítás
 
@@ -61,14 +61,14 @@ A Package Deployer eszköz telepítését követően telepítse a megoldást tar
 
 Ha be szeretné kapcsolni a nyomkövetési naplót, hajtsa végre az alábbi lépéseket.
 
-1. Jelentkezzen be az a modellel vezérelt alkalmazásba a Dynamics 365-ben, nyissa meg a **Beállítások** lapot, majd a **Rendszer** területen válassza a **Felügyelet** elemet.
+1. Jelentkezzen be az ügyfélkapcsolati alkalmazásba, nyissa meg a **Beállítások** lapot, majd a **Rendszer** területen válassza a **Felügyelet** elemet.
 2. A **Felügyelet** oldalon válassza az **Rendszerbeállítások** lehetőséget.
 3. A **Testreszabás** lap **Beépülő modul és egyéni munkafolyamat tevékenységének nyomon követése** oszlopában válassza az **Összes** lehetőséget, ha engedélyezni szeretné a beépülő modul nyomkövetési naplóját. Ha csak a kivételek bekövetkezésekor szeretné naplózni a nyomkövetési naplókat, akkor válassza ehelyett a **Kivétel** elemet.
 
 
 Ha meg szeretné tekinteni a nyomkövetési naplót, hajtsa végre az alábbi lépéseket.
 
-1. Jelentkezzen be az a modellel vezérelt alkalmazásba a Dynamics 365-ben, nyissa meg a **Beállítások** lapot, majd a **Testreszabások** területen válassza a **Beépülő modul nyomkövetési naplója** elemet.
+1. Jelentkezzen be az ügyfélkapcsolati alkalmazásba, nyissa meg a **Beállítások** lapot, majd a **Testreszabások** területen válassza a **Beépülő modul nyomkövetési naplója** elemet.
 2. Keresse meg azokat a nyomkövetési naplókat, ahol a **Típus neve** oszlop értéke **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. A teljes napló megjelenítéséhez kattintson duplán egy elemre, majd a **Végrehajtás** gyorslapján tekintse át az **Üzenetblokk** szövegét.
 

@@ -2,7 +2,7 @@
 title: Csapatnaptár létrehozása
 description: A csapatnaptárak megtekintése és létrehozása a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cedff4031c6455b446af9c56a770a00f3b2efc80
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: 52ae36f499871087cc086bcaf8c345af41d06943
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6052097"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639390"
 ---
 # <a name="view-team-and-company-calendars"></a>Csoportos és vállalati naptárak megtekintése
 
@@ -30,7 +30,7 @@ Megtekintheti a csapat-és vállalati naptárakat a Dynamics 365 Human Resources
 
 ## <a name="view-your-team-calendar-as-an-employee"></a>A csoportja naptárának megtekintése alkalmazottként
 
-1. Az **Alkalmazotti önkiszolgáló** munkaterületen válassza az **Összegzés** alatt található **Csoport távolléti naptár** lehetőséget.
+- Az **Alkalmazotti önkiszolgáló** munkaterületen válassza az **Összegzés** alatt található **Csoport távolléti naptár** lehetőséget.
 
 ## <a name="view-your-team-calendar-as-a-manager"></a>A csoportja naptárának megtekintése vezetőként
 
@@ -39,6 +39,21 @@ Megtekintheti a csapat-és vállalati naptárakat a Dynamics 365 Human Resources
 2. Válassza a **Szabadság és távollét** lehetőséget, majd válassza a **Vezetői távolléti naptár megtekintése** lehetőséget.
 
 A vezetők a csoport naptárát a **Saját csapathoz tartozó szabadságkérelmek**, **Jóváhagyott szabadságkérelmek** és a **Táűvolléti kérelmek** helyekről tekinthetik meg. 
+
+## <a name="view-your-absence-manager-calendar-as-the-absence-manager"></a>Távollétkezelő naptárának megtekintése távollétkezelőként
+
+> [!NOTE]
+> A távollétkezelő naptár megtekintéséhez először be kell kapcsolnia az **(Előzetes verzió) A távollétkezelő kezeli a szabadásgokat** funkciót a funkciókezelésben. Az előzetes funkciók bekapcsolásával kapcsolatos további információt lásd a [Szolgáltatások kezelése](hr-admin-manage-features.md) című témakörben.
+
+A Távollétkezelő szerepkörű felhasználók a naptárban megtekinthetik az szabadságkérelmeket. A szabadságnaptár eléréséhez kövesse az alábbi lépéseket.
+
+1. Válassza ki az **Alkalmazotti önkiszolgáló szolgáltatás** munkaterületén a **Távollétkezelő**, majd a **Távollétkezelő naptára** lehetőséget.
+
+2. Adja meg a kívánt dátumokat a **Dátum** mezőben.
+
+3. Szükség szerint frissítse a nézetbeállításokat.
+
+A távollétkezelő naptára mutatja az összes olyan alkalmazott rekordját, aki a Távolléti hierarchiában a távollétkezelő alá tartoznak.
 
 ## <a name="view-a-company-calendar"></a>Vállalati naptár megtekintése
 
@@ -64,13 +79,11 @@ A szabadság és távollét paraméterben megadott naptárkonfiguráció határo
 
 A naptárak a felettes vagy a részleg alapján is szűrhetők. Az elsődleges beosztás-hozzárendelés határozza meg, hogy milyen alkalmazottak jelennek meg a szűrők beállításakor. 
 
->[!IMPORTANT]
->A szabadság és a távollét megtekintése a vállalatok között jelenleg előzetes verzióban érhető el. Engedélyeznie kell azt a **Tesztkörnyezetében**. Az előzetes funkciók engedélyezésével kapcsolatos további részletekért tekintse meg a [Kezelési funkciók](hr-admin-manage-features.md) cikket.<br><br>
->Ezután engedélyeznie kell a funkciót a **Human Resources megosztott paramétereiben**, hogy megjelenítse a jogi személy szűrőt a naptárakban. További tájékoztatás: [Szabadság és távolléti paraméterek konfigurálása](hr-leave-and-absence-parameters.md).<br><br>
->A naptárat jogi személy szerint szűrheti. Ha az összes alkalmazottat jogi személytől függetlenül szeretné látni, törölje a jelet a szűrőmezőből, és válassza az entert. 
+> [!IMPORTANT]
+> A **Vállalatközi szabadságnézet** funkciót a Funkciókezelésben kapcsolhatja be. Ezután engedélyeznie kell a funkciót a **Human Resources megosztott paraméterei** oldalon, hogy megjelenítse a jogi személy szűrőt a naptárakban. További tájékoztatás: [Szabadság és távolléti paraméterek konfigurálása](hr-leave-and-absence-parameters.md).
+> 
+> A naptárat jogi személy szerint szűrheti. Az összes alkalmazott megtekintéséhez jogi személytől függetlenül szeretné látni, törölje a jelet a szűrőmezőből, és nyomja meg az **Enter** billentyűt. 
 
 A naptár beállításaival kapcsolatos további tudnivalókat lásd: [Naptárparaméterek konfigurálása](hr-leave-and-absence-parameters.md?configure-calendar-parameters).
-
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

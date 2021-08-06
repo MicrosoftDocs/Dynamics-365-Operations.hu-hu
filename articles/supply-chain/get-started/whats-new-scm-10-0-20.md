@@ -1,5 +1,5 @@
 ---
-title: A Dynamics 365 Supply Chain Management 10.0.20 előzetes verziója (2021. augusztus)
+title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.20 szolgáltatásban (2021. augusztus)
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.20 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
 ms.date: 05/28/2021
@@ -10,30 +10,28 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a782416bdb12a8ac7f1ba807452ca54072af3ab5
-ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
+ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "6301746"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641056"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10020-august-2021"></a>A Dynamics 365 Supply Chain Management 10.0.20 előzetes verziója (2021. augusztus)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.20 szolgáltatásban (2021. augusztus)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.20 előzetes kiadásának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.886 a buildszáma, és a következő módon érhető el:
+Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.20 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.886 a buildszáma, és a következő módon érhető el:
 
 - **Kiadás előzetes verziója:** 2021. május
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2021. július
 - **A kiadás nyilvános megjelenése (automatikus frissítés):** 2021. augusztus
 
-
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
 Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: A *Funkció* oszlop a [kiadási tervre](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features) mutató hivatkozásokat tartalmaz, amelyeken látható az egyes funkciók hivatalos kiadási dátuma. A *További tudnivalók* oszlopban további részletek és/vagy a kapcsolódó dokumentációra mutató hivatkozások találhatóak.
 
-Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt. A felsorolt szolgáltatások egy része továbbra is előnézeti módban van, mások azonban már általánosan elérhetők.
+Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
 | Szolgáltatásterület | Funkció | További információ |
 |---|---|---|
@@ -49,7 +47,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tarta
 
 | Szolgáltatásterület | Funkció&nbsp;neve&nbsp;a Funkció-&nbsp;kezelésben | További információ |
 |---|---|---|
-| Alaptervezés | Negatív napok a tervezési optimalizáláshoz | Ez az előzetes verziójú funkció lehetővé teszi, hogy a tervezési optimalizálás a fedezeti csoportokban megadott **Negatív napok** paraméter alapján figyelembe vegye a késés tűréshatárát. |
+| Alaptervezés | Negatív napok a tervezési optimalizáláshoz | Ez a funkció lehetővé teszi, hogy a tervezési optimalizálás a fedezeti csoportokban megadott **Negatív napok** paraméter alapján figyelembe vegye a késés tűréshatárát. |
 | Alaptervezés | A helyesbített igény-előrejelzés párhuzamos engedélyezése | Ez a funkció engedélyezi a módosított igény-előrejelzés párhuzamos engedélyezését a **Módosított igény-előrejelzés** oldalon. A funkció célja az, hogy javítsa a teljesítményt, amikor nagy számú előrejelzés van engedélyezve. Az engedélyezés során a felhasználó megadhatja a **Szálak számát** az engedélyezési párbeszédpanelen. |
 | Alaptervezés | (Előzetes verzió) Kötegelhető megerősítés és konszolidáció a tervezett tömeges és csomagolt kötegelt rendelésekhez | Ez a funkció lehetővé teszi, hogy kötegelt feladattal erősítsen meg és konszolidáljon tervezett tömeges és csomagolás rendeléseket. |
 | Gyártásvezérlés | Általános útvonalak másolása | Ez a funkció a nem cikkspecifikus útvonalak másolására szolgáló útvonal-másolási funkciót tökéletesíti. Lehetővé teszi a rendszer számára, hogy minden releváns információt (például a helyet, az útvonal csoportját, a forrásszükségletet és a különböző időpontokat) frissítsen, miután az útvonalmásoló funkcióval felülírták a cikkhez még hozzá nem rendelt útvonalat. |
@@ -75,7 +73,7 @@ A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelent�
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.20 platformfrissítéseket tartalmaz. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.20 verziójához (2021. július)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md). <!-- KFM: Confirm link -->
+A Microsoft Dynamics 365 Supply Chain Management 10.0.20 platformfrissítéseket tartalmaz. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.20 verziójához (2021. július)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 

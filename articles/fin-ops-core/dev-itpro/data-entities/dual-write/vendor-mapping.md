@@ -4,24 +4,17 @@ description: Ez a témakör a szállítói adatok integrációját ismerteti a F
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7e6ac62b2b289ef818a083b9ae4d1d74946ae3fc
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 36cfed92535c1df3ba55fd56bc8aa2f9eccf3003
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346496"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542439"
 ---
 # <a name="integrated-vendor-master"></a>Integrált szállítói alapadat
 
@@ -29,9 +22,7 @@ ms.locfileid: "6346496"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
-A *szállító* kifejezés egy szállító szervezetre vagy egy olyan kizárólagos tulajdonosra vonatkozik, aki árukat vagy szolgáltatásokat nyújt egy vállalkozásnak. A *szállító* fogalmat ugyan kiterjedten használják a Microsoft Dynamics 365 Supply Chain Management alkalmazásban, a szállító fogalma nem létezik más Dynamics 365 modellvezérelt alkalmazásaiban. A szállítói adatok tárolására azonban lehetősége van az **Ügyfél/kapcsolattartó** tábla túlterhelésével. A integrált szállító alapadat a Dynamics 365 modellvezérelt alkalmazásokban explicit szállítói fogalmat vezet be. Használhatja az új szállító megoldást vagy a szállítói adatokat a **Partner/kapcsolattartó** táblában is tárolhatja. A kettős írás mindkét megközelítést támogatja.
+A *szállító* kifejezés egy szállító szervezetre vagy egy olyan kizárólagos tulajdonosra vonatkozik, aki árukat vagy szolgáltatásokat nyújt egy vállalkozásnak. A *szállító* fogalmat ugyan kiterjedten használják a Microsoft Dynamics 365 Supply Chain Management alkalmazásban, a szállító fogalma nem létezik az ügyfélkapcsolati alkalmazásokban. A szállítói adatok tárolására azonban lehetősége van az **Ügyfél/kapcsolattartó** tábla túlterhelésével. A integrált szállító alapadat az ügyfélkapcsolati alkalmazásokban explicit szállítói fogalmat vezet be. Használhatja az új szállító megoldást vagy a szállítói adatokat a **Partner/kapcsolattartó** táblában is tárolhatja. A kettős írás mindkét megközelítést támogatja.
 
 Mindkét módszernél a szállítói adatok integrálva lesznek a Dynamics 365 Supply Chain Management, a Dynamics 365 Sales, a Dynamics 365 Field Service és Power Apps portálok között. A Supply Chain Management alkalmazásban az adatok olyan munkafolyamatokhoz érhetők el, mint például a beszerzési igénylések és a beszerzési rendelések.
 
@@ -52,27 +43,17 @@ Ha a szállítói adatokat továbbra is a **Partner/kapcsolattartó** táblában
 
 A szállítói adatok között a szállító minden részlete (például a szállítói csoport, a címek, a kapcsolatfelvételi adatok, a fizetési és a számlázási profil) szerepel. Ahogy az alábbi táblázatban látható, az táblaleképezések gyűjteménye együttműködik a szállítói adatokkal végzett interakciók során.
 
-Finance and Operations-alkalmazásoknak | Egyéb Dynamics 365 alkalmazások     | Leírás
+Finance and Operations alkalmazások | Customer Engagement alkalmazások     | Leírás
 ----------------------------|-----------------------------|------------
-Szállító V2                   | Könyvelési számla                     | Azok a cégek, amelyek a Számla táblában tárolják a szállítói adatokat, továbbra is változás nélkül használhatják ezt a megoldást. A Finance and Operations alkalmazások integrációjának köszönhető explicit szállítói funkciókat ugyancsak kihasználhatja.
-Szállító V2                   | Msdyn\_vendors              | A szállítókhoz egyéni megoldást használó cégek a Finance and Operations-alkalmazások integrációjának köszönhetően kihasználhatják a Dataverse rendszerben bevezetett kész szállítói fogalmat. 
-Szállítói csoportok               | msdyn\_vendorgroups         | Ez a sablon szinkronizálja a szállítói csoport adatait.
-Szállítói fizetési mód       | msdyn\_vendorpaymentmethods | Ez a sablon szinkronizálja a szállító fizetési módra vonatkozó adatait.
-CDS névjegyek V2             | kapcsolattartók                    | A [névjegyek](customer-mapping.md#cds-contacts-v2-to-contacts) sablon a vevők és a szállítók összes elsődleges, másodlagos és harmadlagos kapcsolattartási adatát szinkronizálja.
-Kifizetési lista sorai      | msdyn\_paymentschedulelines | A [fizetési ütemezés sorai](customer-mapping.md#payment-schedule-lines-to-msdyn_paymentschedulelines) sablon a vevők és a szállítók hivatkozási adatait szinkronizálja.
-Kifizetés ütemezése            | msdyn\_paymentschedules     | A [fizetési ütemezések](customer-mapping.md#payment-schedule-to-msdyn_paymentschedules) sablon a vevők és a szállítók fizetési ütemezésre vonatkozó hivatkozási adatait szinkronizálja.
-Fizetési nap sorai, CDS V2    | msdyn\_paymentdaylines      | A [fizetési nap sorai](customer-mapping.md#payment-day-lines-cds-v2-to-msdyn_paymentdaylines) sablon a vevőkhöz és a szállítókhoz tartozó fizetési napok sorainak hivatkozási adatait szinkronizálja.
-Fizetési napok, CDS            | msdyn\_paymentdays          | A [fizetési napok](customer-mapping.md#payment-days-cds-to-msdyn_paymentdays) sablon a vevők és a szállítók fizetési napokra vonatkozó hivatkozási adatait szinkronizálja.
-Fizetési feltételek            | msdyn\_paymentterms         | A [fizetési feltételek](customer-mapping.md#terms-of-payment-to-msdyn_paymentterms) sablon a vevők és szállítók fizetési feltételekre vonatkozó hivatkozási adatait szinkronizálja.
-Névutótagok                | msdyn\_nameaffixes          | A [névutótagok](customer-mapping.md#name-affixes-to-msdyn_nameaffixes) sablon a vevők és szállítók névutótagjaira vonatkozó hivatkozási adatokat szinkronizálja.
-
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [Vendors](includes/VendorsV2-msdyn-vendors.md)]
-
-[!include [Vendor groups](includes/VendVendorGroup-msdyn-vendorgroups.md)]
-
-[!include [Vendor payment methods](includes/VendorPaymentMethod-msdyn-vendorpaymentmethods.md)]
-
+[CDS névjegyek V2](mapping-reference.md#115) | kapcsolattartók | Ez a sablon a vevők és a szállítók összes elsődleges, másodlagos és harmadlagos kapcsolattartási adatát szinkronizálja.
+[Névutótagok](mapping-reference.md#155) | msdyn_nameaffixes | Ez a sablon szinkronizálja a vevők és szállítók névutótagjaira vonatkozó hivatkozási adatokat.
+[Fizetési nap sorai, CDS V2](mapping-reference.md#157) | msdyn_paymentdaylines | Ez a sablon szinkronizálja a vevők és szállítók fizetési nap soraira vonatkozó hivatkozási adatait.
+[Fizetési napok, CDS](mapping-reference.md#158) | msdyn_paymentdays | Ez a sablon szinkronizálja a vevők és szállítók fizetési napokra vonatkozó hivatkozási adatait.
+[Kifizetési lista sorai](mapping-reference.md#159) | msdyn_paymentschedulelines | Szinkronizálja a vevők és szállítók fizetési ütemezés soraira vonatkozó hivatkozási adatait.
+[Fizetési ütemezés](mapping-reference.md#160) | msdyn_paymentschedules | Ez a sablon szinkronizálja a vevők és szállítók fizetési ütemezésre vonatkozó hivatkozási adatait.
+[Fizetési feltételek](mapping-reference.md#161) | msdyn_paymentterms | Ez a sablon szinkronizálja a vevők és szállítók fizetési feltételekre vonatkozó hivatkozási adatait.
+[Szállítók V2](mapping-reference.md#202) | msdyn_vendors | A szállítókhoz egyéni megoldást használó cégek a Finance and Operations-alkalmazások integrációjának köszönhetően kihasználhatják a Dataverse rendszerben bevezetett kész szállítói fogalmat.
+[Szállítói csoportok](mapping-reference.md#200) | msdyn_vendorgroups | Ez a sablon szinkronizálja a szállítói csoport adatait.
+[Szállítói fizetési mód](mapping-reference.md#201) | msdyn_vendorpaymentmethods | Ez a sablon szinkronizálja a szállító fizetési módra vonatkozó adatait.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

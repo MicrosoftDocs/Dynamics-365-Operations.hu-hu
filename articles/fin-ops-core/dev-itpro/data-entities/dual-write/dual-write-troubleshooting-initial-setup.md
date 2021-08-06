@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c641849b2aec76124b6661f339175325a312efce
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e7316d7749566b74835acded0addb2fa4b0e858
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350836"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542415"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Problémák elhárítása a kezdeti beállításkor
 
@@ -71,7 +71,7 @@ Az alkalmazás-hozzájárulás biztosításához kövesse az alábbi lépéseket
 
 A kettős írás helyes működésének biztosítása érdekében a konfiguráció során kiválasztott vállalatok a Dataverse-környezetben jönnek létre. Alapértelmezés szerint ezek a vállalatok csak olvashatók, az **IsDualWriteEnable** tulajdonság pedig **igaz** értékre van állítva. Ezenkívül létrejön az alapértelmezett részleg tulajdonosa és csoportja, amely tartalmazza a vállalat nevét. A leképezések engedélyezése előtt győződjön meg róla, hogy a csoport alapértelmezett tulajdonosa meg van adva. A **Vállalatok (CDM\_vállalat)** tábla megkereséséhez kövesse az alábbi lépéseket.
 
-1. A Dynamics 365 modellvezérelt alkalmazásában válassza ki a szűrőt a jobb felső sarokban.
+1. Az ügyfélkapcsolati alkalmazás jobb felső sarkában válassza ki a szűrőt.
 2. A legördülő listán válassza a **Vállalat** elemet.
 3. Az eredmények megtekintéséhez válassza a **Futtatás** parancsot.
 4. Válassza ki azt a vállalatot, amely a kettős írás konfigurálása során összekapcsolódott.

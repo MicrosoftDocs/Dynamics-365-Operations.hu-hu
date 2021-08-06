@@ -2,7 +2,7 @@
 title: Alkalmazotti szabadság kezelése
 description: Alkalmazotti szabadság kezelése a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
-ms.date: 11/02/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 33080fc5ca43f3d83ee9d17565f4c229ced7b94f
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: c161e324a1ebe5b30c95d6d3e0468da671a7c2de
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055628"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639462"
 ---
 # <a name="manage-employee-leave"></a>Alkalmazotti szabadság kezelése
 
@@ -44,12 +44,11 @@ Az alkalmazottak szabadságát szabadságtípusonként kezelheti. Ez magában fo
 
 Az alkalmazott szabadságegyenlegének módosításakor az okkódok és a megjegyzések is megadhatók. 
 
->[!IMPORTANT]
->A szabadságegyenlegekkel kapcsolatos további információk megtekintése előzetes verzióban érhető el. Engedélyeznie kell azt a **Tesztkörnyezetében**. Az előzetes funkciók engedélyezésével kapcsolatos további részletekért tekintse meg a [Kezelési funkciók](hr-admin-manage-features.md) cikket.<br>
->Ha az egérmutatót a szabadság egyenlege fölé viszi, akkor a következőket fogja látni:<br>
->- **Elérhető** : Összesen ebben az évben – Kivett ebben az évben
->- **Összesen ebben az évben**: Minden elhatárolás, kiigazítás és átvitel az évre
->- **Kivett ebben az évben**: Minden jóváhagyott távollét
+Most, amikor bármely szabadságegyenleg fölé viszi az egérmutatót, a következő információk jelennek meg:
+
+- **Elérhető** – az **Éves teljes érték** mínusz az **Ez évben kivett** érték.
+- **Összesen ebben az évben** – Minden elhatárolás, kiigazítás és átvitel az évre.
+- **Kivett ebben az évben** – Minden jóváhagyott távollét.
 
 ## <a name="see-also"></a>Lásd még
 

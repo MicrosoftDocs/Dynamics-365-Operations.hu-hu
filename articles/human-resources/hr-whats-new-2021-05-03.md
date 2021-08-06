@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-05-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0d0d39d19634498f9313aeda4143f9ec81e8f
-ms.sourcegitcommit: f3c28f57d997e824a64485d9a4ce8f198e3bcf23
+ms.openlocfilehash: 8cee60750d3c451024466109acbdc5924074a11f
+ms.sourcegitcommit: baad2723291774f610324a8054fc14abf3287fe1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059629"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "6559960"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-3-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban 2021. május 3-án
 
@@ -65,7 +65,7 @@ Az alábbi új funkciók előzetes verzióban érhetők el. A funkciók be- vagy
 | Juttatáskezelési munkaterület | [Juttatáskezelési munkaterület (előzetes verzió)](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/benefits-management-workspace) | [Juttatáskezelési munkaterület](hr-benefits-management-workspace.md) |
 | Szabadság és távollét munkafolyamat-élmény javításai | [Szabadság és távollét munkafolyamat-élmény javításai](https://go.microsoft.com/fwlink/?linkid=2147528) | [Távollét kérelmezése](hr-employee-self-service-request-time-off.md)|
 | Egyszerűsített bérintegrációs (Bérintegrációs API-k) engedélyezése | [Egyszerűsített integráció engedélyezése a bérszolgáltatókkal](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-simplified-integration-payroll-providers) | [Bérlista-integrációs API](hr-admin-integration-payroll-api-introduction.md)|
-| Szabadságelhatárolási tranzakció auditálása | - | [Szabadságelhatárolási tranzakció auditálása](hr-leave-and-absence-accrue.md#preview-leave-accrual-transaction-auditing)|
+| Szabadságelhatárolási tranzakció auditálása | - | [Szabadságelhatárolási tranzakció auditálása](hr-leave-and-absence-accrue.md)|
 
 ## <a name="coming-soon"></a>Hamarosan
 

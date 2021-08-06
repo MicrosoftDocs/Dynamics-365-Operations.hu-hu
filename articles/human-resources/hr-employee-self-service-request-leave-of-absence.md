@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4da23ff0dc8858558df3111b90159e43bd5fdccf
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.openlocfilehash: e00748fc9629d7ecfa91701002d3d2d7dda0a86f
+ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056324"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6639414"
 ---
 # <a name="request-a-leave-of-absence"></a>Távollétkérelem
 
@@ -48,6 +48,10 @@ Távollétre vonatkozó kérelmet küldhet, és megtekintheti a szabadságkérel
 1. Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Részletek** (...) lehetőséget a **Szabadságegyenlegek** csempén.
 
 2. A távollétkérelmeinek megtekintéséhez válassza a **Távollét megtekintése** lehetőséget.
+
+## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Szabadságkérések importálása más rendszerekből vagy régebbi rendszerekből
+
+Szabadságkérelmek importálásához egy másik rendszerből végig kell mennie a szokásos munkafolyamaton, hogy létrehozza a megfelelő szabadságtranzakciókat. Arra is lehetőség van, hogy szabadságbanki tranzakciókat és a szabadságkérelmeket befejezett állapotban importálja. Ne feledje, hogy a szabadságbanki tranzakciók nem jön létre automatikusan, ha csak a szabadságkéréseket importálja.
 
 ## <a name="see-also"></a>Lásd még
 

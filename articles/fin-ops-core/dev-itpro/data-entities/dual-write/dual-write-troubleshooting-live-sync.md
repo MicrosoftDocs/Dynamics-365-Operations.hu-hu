@@ -16,20 +16,18 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 2694f48b295ba727870f068e7062f7cdcababdbe
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: a0a14c87af7f0d2372d752233f21d9accbca58a8
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350788"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542515"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Élő szinkronizálási problémák elhárítása
 
 [!include [banner](../../includes/banner.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
-
-
 
 Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz. Pontosabban, olyan információkat tartalmaz, amelyek segítségével javíthatók az élő szinkronizálás problémái.
 
@@ -81,7 +79,7 @@ A hiba elhárításához a hiányzó jogosultság engedélyezéséhez társítan
 
     ![Szervezet leképezése.](media/mapped_business_unit.png)
 
-2. Jelentkezzen be a környezetbe a modellvezérelt alkalmazásban s Dynamics 365-ban, nyissa meg a **Beállítások \> Biztonság** lehetőséget, és keresse meg a leképezett üzleti egység csapatát.
+2. Jelentkezzen be a környezetbe az ügyfélkapcsolati alkalmazásban, nyissa meg a **Beállítások \> Biztonság** lehetőséget, és keresse meg a leképezett üzleti egység csapatát.
 
     ![A hozzárendelt üzleti egység csapata.](media/setting_security_page.png)
 
@@ -99,7 +97,7 @@ A következő hibaüzenet jelenhet meg, amikor adatot hoz létre a Finance and O
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Nem sikerült adatcsomagot generálni az CustCustomerV3Entity entitáshoz**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Adatcsinag létrehozása sikertelen érvénytelen URI hibával: Az URI üres."}\],"isErrorCountUpdated":true}*
 
-Így néz ki a hiba a Dynamics 365 egy modellvezérelt alkalmazásában:
+A következő a hiba az ügyfélkapcsolati alkalmazásában:
 
 *Váratlan hiba történt az ISV-kódból. (ErrorType = ClientError) Váratlan kivétel a bővítménytől (végrehajtás): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: nem sikerült feldolgozni az entitás fiókját (Egy kapcsolódási kísérlet nem sikerült, mert a kapcsolódó fél egy adott időt követően nem válaszolt helyesen, vagy a létrejött kapcsolat megszakadt, mert a csatlakoztatott állomás nem válaszolt*
 
@@ -125,6 +123,5 @@ Egy hiba javításához kövesse az alábbi lépéseket.
 
 3. Ügyeljen arra, hogy az **externalenvironmentURL** oszlop helyes Dataverse vagy alkalmazás URL-címmel rendelkezzen. Törölje a megfelelő Dataverse URL-címre mutató ismétlődő sorokat. Törölje a megfelelő sorokat a DUALWRITEPROJECTFIELDCONFIGURATION és DUALWRITEPROJECTCONFIGURATION táblákból.
 4. Állítsa le az táblák hozzárendelését, majd indítsa újra
-
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

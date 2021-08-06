@@ -2,7 +2,7 @@
 title: Az adószámítás első lépései
 description: Ez a témakör bemutatja, hogyan állítsuk be az adószámítást.
 author: wangchen
-ms.date: 05/17/2021
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 454608c2c3a86b71cf181129c762c837c5165902
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: b76184b3f1a97941fea7539aa3fac2c11b1f59b1
+ms.sourcegitcommit: cef2986e24d0510957b5db742545c266dec4275c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336656"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6644974"
 ---
 # <a name="get-started-with-the-tax-calculation-preview"></a>Első lépések az adószámításban (előzetes verzió)
 
@@ -58,15 +58,16 @@ Mielőtt elvégezhetné az ebben a témakörben ismertetett eljárásokat, a kö
 Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcsolódnak. Ezt az eljárást csak egyszer kell elvégeznie, és az RCS bármely jogi személyében elvégezheti.
 
 1. Bejelentkezés az [RCS](https://marketing.configure.global.dynamics.com/) alkalmazásba.
-2. Az **Elektronikus jelentéskészítés** munkaterületen adjon hozzá egy új konfigurációszolgáltatót. Használja a vállalat nevét a szolgáltató neveként. További információért tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
-3. Jelölje ki az éppen létrehozott konfigurációs szolgáltatót, majd válassza a **Beállítás aktívként** lehetőséget.
-4. Jelölje ki **a Microsoft** konfigurációs szolgáltatót, majd válassza az **Adattárak** lehetőséget.
-5. A **Típus** mezőben válassza ki a **Globális** lehetőséget.
-6. Válassza ki a **Megnyitás** lehetőséget.
-7. Válassza az **Adóadatok modell** lehetőséget, bontsa ki a fájlfát, majd válassza az **Adókonfiguráció** lehetőséget.
-8. Jelölje ki a legújabb verziót, majd kattintson az **Importálás** gombra.
-9. Térjen vissza a **Globalizációs szolgáltatások (Előzetes verzió)** munkaterületre, válassza a **Szolgáltatások** lehetőséget, jelölje ki az **Adószámítás** csempét lehetőséget, majd kattintson a **Hozzáadás** gombra.
-10. Válassza ki az alábbi szolgáltatástípusok valamelyikét:
+2. A **Funkciókezelés** munkaterületen válassza ki és engedélyezze a **Globalizációs funkciók** szolgáltatást.
+3. Az **Elektronikus jelentéskészítés** munkaterületen adjon hozzá egy új konfigurációszolgáltatót. Használja a vállalat nevét a szolgáltató neveként. További információért tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
+4. Jelölje ki az éppen létrehozott konfigurációs szolgáltatót, majd válassza a **Beállítás aktívként** lehetőséget.
+5. Jelölje ki **a Microsoft** konfigurációs szolgáltatót, majd válassza az **Adattárak** lehetőséget.
+6. A **Típus** mezőben válassza ki a **Globális** lehetőséget.
+7. Válassza ki a **Megnyitás** lehetőséget.
+8. Válassza az **Adóadatok modell** lehetőséget, bontsa ki a fájlfát, majd válassza az **Adókonfiguráció** lehetőséget.
+9. Jelölje ki a legújabb verziót, majd kattintson az **Importálás** gombra.
+10. Térjen vissza a **Globalizációs szolgáltatások** munkaterületre, válassza a **Szolgáltatások** lehetőséget, jelölje ki az **Adószámítás** csempét lehetőséget, majd kattintson a **Hozzáadás** gombra.
+11. Válassza ki az alábbi szolgáltatástípusok valamelyikét:
 
     - **Új funkció** – Hozzon létre egy üres tartalmú funkcióbeállítást.
     - **Meglévő funkció alapján** – Hozzon létre egy funkciót egy meglévő funkcióból, és másolja a tartalmat a meglévő funkcióbeállításból.
