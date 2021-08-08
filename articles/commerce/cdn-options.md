@@ -2,7 +2,7 @@
 title: Tartalomkézbesítési hálózat végrehajtási beállításai
 description: Ez a témakör a tartalomkézbesítési hálózat (CDN) végrehajtásának különböző, Microsoft Dynamics 365 Commerce-környezetekben használható beállításait vizsgálja meg. Ilyen lehetőségek például az Azure Front Door és a vevő által birtokolt Azure Front Door natív, Commerce rendszerbeli példányai.
 author: BrianShook
-ms.date: 03/11/2021
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: eec18dbffe33bc6366b4282d05189b31620616d6
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 0e6425d7e473d1d1c263624599d54c6b040d90cb
+ms.sourcegitcommit: a52ad281071b3a49c461e5853e82f302dd33095a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351249"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "6657119"
 ---
 # <a name="content-delivery-network-implementation-options"></a>Tartalomkézbesítési hálózat végrehajtási beállításai
 
@@ -74,7 +74,7 @@ Az alábbi táblázat felsorolja a tartalomvégpontok kezelésére használt kü
 
 | Előnyök | Hátrányok |
 |------|------|
-| <ul><li>Ez a lehetőség akkor hasznos, ha a meglévő tartomány már egy külső CDN-en található.</li><li>Lehet, hogy a versenytársak CDN-jei (például az Akamai) több WAF-lehetőséggel rendelkeznek.</li></ul> | <ul><li>Külön szerződés és további költségszámítás szükséges.</li><li>Az SSL-lel kapcsolatban további költségek merülhetnek fel.</li><li>Mivel a szolgáltatás nem az Azure felhőstruktúra része, egy további infrastruktúra kezelésére van szükség.</li><li>Előfordulhat, hogy a szolgáltatás hosszabb időbeli befektetést igényel a végponti és a biztonsági beállítások során.</li><li>A szolgáltatást Ön kezeli.</li><li>A szolgáltatást Ön felügyeli.</li></ul> |
+| <ul><li>Ez a lehetőség akkor hasznos, ha a meglévő tartomány már egy külső CDN-en található.</li><li>WAF: Külső szolgáltatótól függ.</li></ul> | <ul><li>Külön szerződés és további költségszámítás szükséges.</li><li>Az SSL-lel kapcsolatban további költségek merülhetnek fel.</li><li>Mivel a szolgáltatás nem az Azure felhőstruktúra része, egy további infrastruktúra kezelésére van szükség.</li><li>Előfordulhat, hogy a szolgáltatás hosszabb időbeli befektetést igényel a végponti és a biztonsági beállítások során.</li><li>A szolgáltatást Ön kezeli.</li><li>A szolgáltatást Ön felügyeli.</li></ul> |
 
 Az alábbi ábra egy külső CDN-szolgáltatást tartalmazó Commerce-infrastruktúrát mutat be.
 

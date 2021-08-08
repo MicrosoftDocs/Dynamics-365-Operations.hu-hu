@@ -4,24 +4,17 @@ description: Ez a témakör az ügyféladatok integrációját ismerteti a Finan
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 5af584eb0bdb65942921847219b46b8f93dae79d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 8f85759f650e1c0e2a1d228b6429d218edac8ef4
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6350911"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542539"
 ---
 # <a name="integrated-customer-master"></a>Integrált vevői alapadat
 
@@ -29,8 +22,7 @@ ms.locfileid: "6350911"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-A vevői adatok több mint egy Dynamics 365 alkalmazásban is elsajátíthatók. Egy vevői sor például származhat a Dynamics 365 Sales (a Dynamics 365 egyik modellvezérelt alkalmazása) értékesítési tevékenységéből, illetve a Dynamics 365 Commerce (egy Finance and Operations-alkalmazás) kiskereskedelmi tevékenységéből. Nem számít, hogy honnan származik a vevői adatok, a program a háttérben integrálta. Az integrált vevői alapadat bármely Dynamics 365 alkalmazásban biztosítja a vevők alapadatainak létrehozásának rugalmasságát, és a vevő Dynamics 365 alkalmazáscsomagon keresztüli átfogó nézetét.
+A vevői adatok több mint egy Dynamics 365 alkalmazásban is elsajátíthatók. Egy vevői sor például származhat a Dynamics 365 Sales (egy ügyfélkapcsolati alkalmazás) értékesítési tevékenységéből, illetve a Dynamics 365 Commerce (egy Finance and Operations alkalmazás) kiskereskedelmi tevékenységéből. Nem számít, hogy honnan származik a vevői adatok, a program a háttérben integrálta. Az integrált vevői alapadat bármely Dynamics 365 alkalmazásban biztosítja a vevők alapadatainak létrehozásának rugalmasságát, és a vevő Dynamics 365 alkalmazáscsomagon keresztüli átfogó nézetét.
 
 ## <a name="customer-data-flow"></a>Vevő adatfolyama
 
@@ -50,43 +42,18 @@ Ha egy nem eladható kapcsolat részt vesz egy árajánlatban vagy rendelési fo
 
 Az ügyféladatok a vevőre vonatkozó összes információt tartalmazzák, például a vevőcsoportot, a címeket, a kapcsolattartási adatokat, a fizetési profilt, a számlaprofilt és a hűségi állapotot. Az táblaleképezések gyűjteményei az alábbi tábla szerint működnek együtt az ügyféladata-interakció során.
 
-Finance and Operations-alkalmazásoknak | Egyéb Dynamics 365 alkalmazások         | Leírás
+Finance and Operations alkalmazások | Customer Engagement alkalmazások         | Leírás
 ----------------------------|---------------------------------|------------
-CDS névjegyek V2             | kapcsolattartók                        | Ez a sablon a vevők és a szállítók összes elsődleges, másodlagos és harmadlagos kapcsolattartási adatát szinkronizálja.
-Vevőcsoportok             | msdyn_customergroups            | Ez a sablon szinkronizálja a vevői csoport adatait.
-Vevő fizetési módszere     | msdyn_customerpaymentmethods    | Ez a sablon szinkronizálja a vevők fizetési módra vonatkozó adatait.
-Vevők V3                | számlák                        | Ez a sablon szinkronizálja a vevői törzsadatokat a kereskedelmi és a vállalati ügyfelekhez.
-Vevők V3                | kapcsolattartók                        | Ez a sablon szinkronizálja a vevőkhöz és a végfelhasználókhoz tartozó vevői alapadatokat.
-Névutótagok                | msdyn_nameaffixes               | Ez a sablon szinkronizálja a vevők és szállítók névutótagjaira vonatkozó hivatkozási adatokat.
-Fizetési nap sorai, CDS V2    | msdyn_paymentdaylines           | Ez a sablon szinkronizálja a vevők és szállítók fizetési nap soraira vonatkozó hivatkozási adatait.
-Fizetési napok, CDS            | msdyn_paymentdays               | Ez a sablon szinkronizálja a vevők és szállítók fizetési napokra vonatkozó hivatkozási adatait.
-Kifizetési lista sorai      | msdyn_paymentschedulelines      | Szinkronizálja a vevők és szállítók fizetési ütemezés soraira vonatkozó hivatkozási adatait.
-Fizetési ütemezés            | msdyn_paymentschedules          | Ez a sablon szinkronizálja a vevők és szállítók fizetési ütemezésre vonatkozó hivatkozási adatait.
-Fizetési feltételek            | msdyn_paymentterms              | Ez a sablon szinkronizálja a vevők és szállítók fizetési feltételekre vonatkozó hivatkozási adatait.
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [mapping contacts contacts](includes/CDSContactsV2-contacts.md)]
-
-[!include [mapping customer group](includes/CustCustomerGroup-msdyn-customergroups.md)]
-
-[!include [mapping customer payment method](includes/CustomerPaymentMethod-msdyn-customerpaymentmethods.md)]
-
-[!include [mapping customer accounts](includes/CustomersV3-accounts.md)]
-
-[!include [mapping customer contacts](includes/CustomersV3-contacts.md)]
-
-[!include [mapping name affixes](includes/NameAffixes-msdyn-nameaffixes.md)]
-
-[!include [mapping payment day lines](includes/PaymentDayLinesCdsV2-msdyn-paymentdaylines.md)]
-
-[!include [mapping payment days](includes/PaymentDaysCds-msdyn-paymentdays.md)]
-
-[!include [mapping payment schedule lines](includes/PaymentScheduleLines-msdyn-paymentschedulelines.md)]
-
-[!include [mapping payment schedules](includes/PaymentSchedules-msdyn-paymentschedules.md)]
-
-[!include [mapping terms of payment](includes/TermsofPayment-msdyn-paymentterms.md)]
-
+[CDS névjegyek V2](mapping-reference.md#115) | kapcsolattartók | Ez a sablon a vevők és a szállítók összes elsődleges, másodlagos és harmadlagos kapcsolattartási adatát szinkronizálja.
+[Vevőcsoportok](mapping-reference.md#126) | msdyn_customergroups | Ez a sablon szinkronizálja a vevői csoport adatait.
+[Vevő fizetési módszere](mapping-reference.md#127) | msdyn_customerpaymentmethods | Ez a sablon szinkronizálja a vevők fizetési módra vonatkozó adatait.
+[Vevők V3](mapping-reference.md#101) | számlák | Ez a sablon szinkronizálja a vevői törzsadatokat a kereskedelmi és a vállalati ügyfelekhez.
+[Vevők V3](mapping-reference.md#116) | kapcsolattartók | Ez a sablon szinkronizálja a vevőkhöz és a végfelhasználókhoz tartozó vevői alapadatokat.
+[Névutótagok](mapping-reference.md#155) | msdyn_nameaffixes | Ez a sablon szinkronizálja a vevők és szállítók névutótagjaira vonatkozó hivatkozási adatokat.
+[Fizetési nap sorai, CDS V2](mapping-reference.md#157) | msdyn_paymentdaylines | Ez a sablon szinkronizálja a vevők és szállítók fizetési nap soraira vonatkozó hivatkozási adatait.
+[Fizetési napok, CDS](mapping-reference.md#158) | msdyn_paymentdays | Ez a sablon szinkronizálja a vevők és szállítók fizetési napokra vonatkozó hivatkozási adatait.
+[Kifizetési lista sorai](mapping-reference.md#159) | msdyn_paymentschedulelines | Szinkronizálja a vevők és szállítók fizetési ütemezés soraira vonatkozó hivatkozási adatait.
+[Fizetési ütemezés](mapping-reference.md#160) | msdyn_paymentschedules | Ez a sablon szinkronizálja a vevők és szállítók fizetési ütemezésre vonatkozó hivatkozási adatait.
+[Fizetési feltételek](mapping-reference.md#161) | msdyn_paymentterms | Ez a sablon szinkronizálja a vevők és szállítók fizetési feltételekre vonatkozó hivatkozási adatait.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

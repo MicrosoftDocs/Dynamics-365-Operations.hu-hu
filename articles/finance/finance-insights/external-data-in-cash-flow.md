@@ -2,7 +2,7 @@
 title: Külső adatok használata pénzforgalmi előrejelzésekben (előzetes verzió)
 description: Ez a témakör azokat a beállítási lépéseket ismerteti, amelyeket végre kell hajtania ahhoz, hogy külső adatokat lehessen bevinni vagy behozni a pénzforgalmi előrejelzésekbe.
 author: rcarlson
-ms.date: 06/03/2021
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 66bdb8bd638859bb4fc5565e3f12a8f671addcff
-ms.sourcegitcommit: ebcd9019cbb88a7f2afd9e701812e222566fd43d
+ms.openlocfilehash: b728314f4c4e18543e4f3b75fe1e7dcddc448ea0
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6186690"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638536"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts-preview"></a>Külső adatok használata pénzforgalmi előrejelzésekben (előzetes verzió)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A külső adatok bevihetők vagy importálhatók a pénzforgalmi előrejelzésekbe. Ez a témakör azokat a beállítási lépéseket ismerteti, amelyek a külső adatok használatára vonatkoznak, és amelyek lehetővé teszik a külső adatok pénzforgalmi előrejelzésbe való beírását.
 

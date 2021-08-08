@@ -4,24 +4,17 @@ description: Ez a témakör a szervezeti adatok integrációját ismerteti a Fin
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 77625e6e80bfa45add6839df89d9aae27e41d456
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: d1ad3bc4eef1650b927d9f6dd699f788994c7e87
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355298"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542587"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Szervezeti hierarchia a Dataverse szolgáltatásban
 
@@ -45,32 +38,17 @@ A szervezeti hierarchiához tartozó táblaleképezések a Finance and Operation
 
 A termékinformációk tartalmazzák a termékhez és a termék meghatározásához kapcsolódó összes információt, például a termékdimenziókat, illetve a nyomon követési és tárolási dimenziókat. A következő táblázat bemutatja a termékek és a kapcsolódó információk szinkronizálására létrehozott táblaleképezések gyűjteményét.
 
-Finance and Operations-alkalmazásoknak | Egyéb Dynamics 365 alkalmazások | Leírás
+Finance and Operations alkalmazások | Customer Engagement alkalmazások     | Leírás
 -----------------------|--------------------------------|---
-Szervezeti hierarchiához kapcsolódó célok | msdyn_internalorganizationhierarchypurposes | Ez a sablon a Szervezeti hierarchia célja tábla egyirányú szinkronizálását teszi lehetővé.
-Szervezeti hierarchia típusa | msdyn_internalorganizationhierarchytypes | Ez a sablon a Szervezeti hierarchia típusa tábla egyirányú szinkronizálását teszi lehetővé.
-Szervezeti hierarchia – közzétéve | msdyn_internalorganizationhierarchies | Ez a sablon a Szervezeti hierarchia közzétéve tábla egyirányú szinkronizálását teszi lehetővé.
-Üzemi egység | msdyn_internalorganizations |
-Jogi személyek | msdyn_internalorganizations |
-Jogi személyek | cdm_companies | A jogi személy (vállalat) adatainak kétirányú szinkronizálását teszi lehetővé.
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Organization hierarchy purposes](includes/OrganizationHierarchyPurpose-msdyn-internalorganizationhierarchypurposes.md)]
-
-[!include [Organization hierarchy type](includes/OrganizationHierarchyType-msdyn-internalorganizationhierarchytypes.md)]
-
-[!include [Organization hierarchy - published](includes/OrganizationHierarchyPublished-msdyn-internalorganizationhierarchies.md)]
+[Jogi személyek](mapping-reference.md#102) | cdm_companies | A jogi személy (vállalat) adatainak kétirányú szinkronizálását teszi lehetővé.
+[Jogi személyek](mapping-reference.md#142) | msdyn_internalorganizations |
+[Üzemi egység](mapping-reference.md#143) | msdyn_internalorganizations |
+[Szervezeti hierarchia – közzétéve](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Ez a sablon a Szervezeti hierarchia közzétéve tábla egyirányú szinkronizálását teszi lehetővé.
+[Szervezeti hierarchiához kapcsolódó célok](mapping-reference.md#140) | msdyn_internalorganizationhierarchypurposes | Ez a sablon a Szervezeti hierarchia célja tábla egyirányú szinkronizálását teszi lehetővé.
+[Szervezeti hierarchia típusa](mapping-reference.md#141) | msdyn_internalorganizationhierarchytypes | Ez a sablon a Szervezeti hierarchia típusa tábla egyirányú szinkronizálását teszi lehetővé.
 
 ## <a name="internal-organization"></a>Belső szervezet
 
-A Dataverse belső szervezeti adati két táblából származnak: **üzemi egység** és **jogi személyek**.
-
-[!include [Operating unit](includes/OperatingUnit-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-msdyn-internalorganizations.md)]
-
-[!include [Legal entities](includes/LegalEntities-Companies.md)]
-
+A Dataverse belső szervezeti adatai két táblából származnak: **Üzemi egység** és **Jogi személyek**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

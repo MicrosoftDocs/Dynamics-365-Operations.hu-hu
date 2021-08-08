@@ -1,23 +1,21 @@
 ---
 title: A beszerzés integrálása a Supply Chain Management és a Field Service között
 description: Ez a témakör azt ismerteti, hogy hogyan támogatja a kettős írású integráció a beszerzési rendelések létrehozását és frissítéseit a Supply Chain Management és a Field Service szolgáltatásból.
-author: RichardLuan
+author: RamaKrishnamoorthy
 ms.date: 11/11/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User
 ms.reviewer: rhaertle
 ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: d61fdbb8efd8251cac6db7d5acab3caeb03f7879
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: c29efb885babea833e3c3fde0155e3722f8b77e9
+ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346594"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "6542391"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>A beszerzés integrálása a Supply Chain Management és a Field Service között
 
