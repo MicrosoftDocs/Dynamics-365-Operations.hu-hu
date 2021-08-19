@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 672db002ddf8d12aaab5b97241390c036ad7ab5c
-ms.sourcegitcommit: 8fb79920bea14746a71551a4456236a6386bfcea
+ms.openlocfilehash: 20e74e97f98d0bc0fd454d54cbf969d4f1b46c7c98b2949b0ed8cfe671312dd2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "6538854"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6768191"
 ---
 # <a name="payroll-employee"></a>Bárlista alkalmazottja
 
@@ -33,27 +33,25 @@ Fizikai név: mshr_payrollemployeeentity.
 Ez az entitás információt nyújt az alkalmazottról. Az entitás használata előtt be kell állítania a [bérlista-integráció paramétereit](hr-admin-integration-payroll-api-parameters.md).
 
 >[!IMPORTANT] 
->A **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** és **NameValidTo** mezők már nem lesznek elérhetők ehhez az entitáshoz. Ez biztosítja, hogy csak egy dátumra ható adatforrás jöjjön létre ehhez az entitáshoz, ez pedig a **HcmEmployment**, az **EmploymentStartDate** és az **EmploymentEndDate** mezőkkel.
-
->Ezek a mezők a **DirPersonNameHistoricalEntity** oldalon érhetők el, amely a 43. platformfrissítésben lett kiadva. A **Személy** mezőben OData-kapcsolat van a **PayrollEmployeeEntity** és a **DirPersonNameHistoricalEntity** között. Másik lehetőségként a **DirPersonNameHistoricalEntity** entitás közvetlenül is lekérdezhető OData használatával a **PersonHistoricalNames** nyilvános név használatával.
-
+>A **FirstName**, **MiddleName**, **LastName**, **NameValidFrom** és **NameValidTo** mezők már nem állnak rendelkezésre ezen az entitáson. Ez biztosítja, hogy csak egy hatályos dátummal rendelkező adatforrás álljon az entitás mögött.
+>Ezek a mezők a **DirPersonNameHistoricalEntity** oldalon érhetők el, amely a 43. platformfrissítésben lett kiadva. OData-kapcsolat áll fenn a **PayrollEmployeeEntity** és a **DirPersonNameHistoricalEntity** között a **Személy** mezőn. 
 
 ## <a name="properties"></a>Tulajdonságok
 
 | Tulajdonság<br>**Fizikai név**<br>**_Típus_** | Használat | Leírás |
 | --- | --- | --- |
-| **Személyzeti szám**<br>mshr_personnelnumber<br>*Sztring* | Írásvédett<br>Szükséges | Az alkalmazott egyedi személyzeti száma. |
-| **Elsődleges mező**<br>mshr_primaryfield<br>*Sztring* | Szükséges<br>Rendszer által előállított |  |
-| **Jogi személy azonosítója**<br>mshr_legalentityID<br>*Sztring* | Írásvédett<br>Szükséges | Megadja a jogi személyt (vállalatot). |
-| **Nem**<br>mshr_gender<br>[mshr_hcmpersongender beállításkészlet](hr-admin-integration-payroll-api-gender.md) | Írásvédett<br>Szükséges | Az alkalmazott neme. |
+| **Személyzeti szám**<br>mshr_personnelnumber<br>*Sztring* | Írásvédett | Az alkalmazott egyedi személyzeti száma. |
+| **Elsődleges mező**<br>mshr_primaryfield<br>*Sztring* | Írásvédett<br>Rendszer által előállított |  |
+| **Jogi személy azonosítója**<br>mshr_legalentityID<br>*Sztring* | Írásvédett | Megadja a jogi személyt (vállalatot). |
+| **Nem**<br>mshr_gender<br>[mshr_hcmpersongender beállításkészlet](hr-admin-integration-payroll-api-gender.md) | Írásvédett | Az alkalmazott neme. |
 | **Bérlista alkalmazotti entitás azonosítója**<br>mshr_payrollemployeeentityid<br>*GUID* | Szükséges<br>Rendszer által előállított | Az alkalmazott egyedi azonosítására szolgáló, rendszer által generált GUID-értéke. |
-| **Foglalkoztatás kezdő dátuma**<br>mshr_employmentstartdate<br>*Dátum és idő eltolása* | Írásvédett<br>Szükséges | Az alkalmazott foglalkoztatásának kezdő dátuma. |
-| **Azonosítótípus azonosítója**<br>mshr_identificationtypeid<br>*Sztring* |Írásvédett<br>Szükséges | Az alkalmazotthoz meghatározott azonosító típus. |
-| **Munkaviszony záró dátuma**<br>mshr_employmentenddate<br>*Dátum és idő eltolása* | Írásvédett<br>Szükséges |Az alkalmazott foglalkoztatásának vége.  |
-| **Adatterület azonosítója**<br>mshr_dataareaid_id<br>*GUID* | Szükséges <br>Rendszer által előállított | A jogi személyt (vállalatot) azonosító, rendszer által generált GUID-érték. |
-| **Érvényesség vége:**<br>mshr_namevalidto<br>*Dátum és idő eltolása* |  Írásvédett<br>Szükséges | Az a dátum, ameddig az alkalmazotti információ érvényes. |
-| **Születési dátum**<br>mshr_birthdate<br>*Dátum és idő eltolása* | Írásvédett <br>Szükséges | Az alkalmazott születési dátuma. |
-| **Az azonosítószám ehhez**<br>mshr_identificationnumber<br>*Sztring* | Írásvédett <br>Szükséges |Az alkalmazotthoz meghatározott azonosítószám.  |
+| **Foglalkoztatás kezdő dátuma**<br>mshr_employmentstartdate<br>*Dátum és idő eltolása* | Írásvédett | Az alkalmazott foglalkoztatásának kezdő dátuma. |
+| **Azonosítótípus azonosítója**<br>mshr_identificationtypeid<br>*Sztring* |Írásvédett | Az alkalmazotthoz meghatározott azonosító típus. |
+| **Munkaviszony záró dátuma**<br>mshr_employmentenddate<br>*Dátum és idő eltolása* | Írásvédett |Az alkalmazott foglalkoztatásának vége.  |
+| **Adatterület azonosítója**<br>mshr_dataareaid_id<br>*GUID* | Írásvédett <br>Rendszer által előállított | A jogi személyt (vállalatot) azonosító, rendszer által generált GUID-érték. |
+| **Érvényesség vége:**<br>mshr_namevalidto<br>*Dátum és idő eltolása* |  Írásvédett | Az a dátum, ameddig az alkalmazotti információ érvényes. |
+| **Születési dátum**<br>mshr_birthdate<br>*Dátum és idő eltolása* | Írásvédett | Az alkalmazott születési dátuma. |
+| **Az azonosítószám ehhez**<br>mshr_identificationnumber<br>*Sztring* | Írásvédett |Az alkalmazotthoz meghatározott azonosítószám.  |
 
 ## <a name="example-query-for-payroll-employee"></a>Példa lekérdezés a bérszámfejtési alkalmazotthoz
 

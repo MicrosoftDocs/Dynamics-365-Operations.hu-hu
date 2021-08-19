@@ -3,7 +3,6 @@ title: Az üzleti területre jellemző kategóriába tartozó ER-függvények li
 description: A témakör tájékoztatást nyújt az Elektronikus jelentéskészítésben (ER) támogatott üzleti területre jellemző függvényekről.
 author: NickSelin
 ms.date: 12/12/2019
-ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a3d2055be7a755e35d0e88230e19038cf2d02ccc
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: a8f0812e4262a264ffc89b72e0f4fc8c55d6c6822095f550c8f05296bb057a38
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5748015"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712333"
 ---
 # <a name="list-of-er-functions-in-the-business-domainspecific-category"></a>Az üzleti területre jellemző kategóriába tartozó ER-függvények listája
 

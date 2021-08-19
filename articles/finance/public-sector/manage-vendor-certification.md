@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b6e4194a4b3463476a32679ff11b35affc131faa
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 932b8bc2982a7c38404ff4203fce7fb65c1182d4490d2aad5a6d78fd809ec768
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270504"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736112"
 ---
 # <a name="maintain-vendor-certification"></a>Szállítói minősítés karbantartása
 
@@ -23,13 +23,20 @@ ms.locfileid: "6270504"
 
 Ez a témakör azokat a lépéseket ismerteti, amelyek segítségével a szállítói a **Szállítói együttműködési munkaterületen** karbantarthatják a tanúsítványukat. A minősítési példák között lehet Női üzleti vállalkozás (WBE) vagy Energia- és környezettervezésben vezető (LEED) vállalat. A szállítóknak meg kell adniuk a minősítési információkat a **Szállítói adatok** munkaterületen. Ezután a szállítók kiválasztják a **További részleteket**, majd a **Minősítéseket**.
 
+## <a name="turn-on-the-vendor-certification-feature"></a>Kapcsolja be a szállítóminősítési funkciót
+
+A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [Funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) oldalt a funkció állapotának ellenőrzéséhez, és szükség esetén engedélyezéséhez. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+
+- **Modul** - *Kötelezettségek*
+- **Funkció neve** - *A szállítói együttműködés tanúsítványkezelésének engedélyezése*
+
 ## <a name="add-a-new-certification"></a>Új tanúsítvány hozzáadása
 
 Új minősítés hozzáadásához válassza a **Hozzáadás** gombot, amely a **Szállítói adatok** munkaterület **Minősítés** rácsa felett található. Adja meg a következő adatokat:
- 
+
 - Tanúsítvány száma
 - Tanúsítvány típusa
-- Tanúsító szervezet 
+- Tanúsító szervezet
 - Tanúsítvány dátuma
 - Kötelezettség összege, ha szükséges
 - Érvényesség dátuma
@@ -42,9 +49,9 @@ Az ezen a lapon a szállítók által megadott minősítésekhez a „Szállít�
 
 A szállítók szükség szerint szerkeszthetik vagy törölhetik a minősítésüket.
 
-## <a name="vendor-collaboration-generated-certification-records"></a>Szállítói együttműködéssel generált tanúsítványrekordok 
- 
+## <a name="vendor-collaboration-generated-certification-records"></a>Szállítói együttműködéssel generált tanúsítványrekordok
+
 Miután a szállító hozzáadta a tanúsítási információkat, az információk a **Szállítói együttműködéssel generált tanúsítványrekordok** lapon lesznek láthatók. Az oldal megnyitásához lépjen a **Kintlévőségek > Lekérdezések > Szállítói jelentések > Szállítói együttműködés által generált tanúsítványok** menübe. Alapértelmezés szerint minden új vagy módosított tanúsítási rekord látható. A kötelezettségekért felelős ügyintéző megtekintheti a változásokat, és érvényesítheti az információkat a megerősítési folyamaton keresztül. Az információ megerősítésekor az oldalon szereplő tanúsítási rekord kiválasztható és felülvizsgáltként megjelölhető. A rekord ellenőrzöttként való megjelölése eltávolítja azt az alapértelmezett listáról.
- 
-Az összes tanúsítási módosítás látható a **Szállítói együttműködés által generált tanúsítványok** lapon. Ha egy módosítás nem jelenik meg az oldalon, megtekintheti szűrők módosításával, a szállítói számla, tényleges dátumtartomány értékre vagy annak kiválasztásával, hogy a felülvizsgált tanúsítási módosítások információi szerepeljenek. 
+
+Az összes tanúsítási módosítás látható a **Szállítói együttműködés által generált tanúsítványok** lapon. Ha egy módosítás nem jelenik meg az oldalon, megtekintheti szűrők módosításával, a szállítói számla, tényleges dátumtartomány értékre vagy annak kiválasztásával, hogy a felülvizsgált tanúsítási módosítások információi szerepeljenek.
 

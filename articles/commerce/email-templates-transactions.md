@@ -2,7 +2,7 @@
 title: E-mail-sablonok létrehozása a tranzakciók eseményeihez
 description: Ez a témakör azt mutatja be, hogyan lehet létrehozni, feltölteni és konfigurálni a Microsoft Dynamics 365 Commerce tranzakciós eseményeihez tartozó e-mail-sablonokat.
 author: bicyclingfool
-ms.date: 03/01/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,20 +14,18 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bfc773bec035ceee151e2e2dd8925aa772747452
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: 2da1044cd332d841a8c18f7139d0d8c09bad95f446494034060e59416b4018b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6019883"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718707"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>E-mail-sablonok létrehozása tranzakciós eseményekhez
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet létrehozni, feltölteni és konfigurálni a Microsoft Dynamics 365 Commerce tranzakciós eseményeihez tartozó e-mail-sablonokat.
-
-## <a name="overview"></a>Áttekintés
 
 A(z) Dynamics 365 Commerce olyan e-mailek küldését teszi lehetővé, amelyek figyelmeztetik a vevőket a tranzakciós eseményekről (például egy megrendelés leadásáról, ha egy rendelés felvehető, vagy a rendelést leszállították). Ez a témakör a tranzakciós e-mailek küldésére használt e-mail-sablonok létrehozásához, feltöltéséhez és beállításához szükséges lépéseket mutatja be.
 
@@ -79,26 +77,33 @@ A következő helyőrzők az értékesítési rendelés szintjén megadott adato
 | Helyőrző neve     | Helyőrző értéke                                            |
 | -------------------- | ------------------------------------------------------------ |
 | customername         | A rendelést küldő vevő neve.               |
-| salesId              | A rendelés értékesítési azonosítója.                                   |
-| deliveryaddress      | A kiszállított rendelések szállítási címe.                     |
 | customeraddress      | A vevő címe.                                 |
 | customeremailaddress | A vevő által a pénztárnál megadott e-mail-cím.     |
+| salesId              | A rendelés értékesítési azonosítója.                                   |
+| orderconfirmationid  | A megrendelés létrehozásakor generált keresztcsatornás azonosító. |
+| channelid            | Annak a kiskereskedelmi vagy online csatornának az azonosítója, amelyen keresztül a megrendelés leadásra került. |
+| deliveryname         | A szállítási címhez megadott név.        |
+| deliveryaddress      | A kiszállított rendelések szállítási címe.                     |
 | deliverydate         | A kiszállítás dátuma.                                           |
 | shipdate             | A szállítás dátuma.                                               |
 | modeofdelivery       | A rendelés szállítási módja.                              |
+| ordernetamount       | A rendelés teljes összege, mínusz a teljes adó.         |
+| engedmény             | A rendelés teljes engedménye.                            |
 | KÖLTSÉGEK              | A rendelés teljes költsége.                             |
 | adó                  | A rendelést terhelő teljes adó.                                 |
 | összesen                | A rendelés teljes összege.                              |
-| ordernetamount       | A rendelés teljes összege, mínusz a teljes adó.         |
-| engedmény             | A rendelés teljes engedménye.                            |
 | StoreName            | Az üzlet neve, ahonnan a rendelést a vevő küldte.            |
 | storeaddress         | A rendelést küldő üzlet címe.              |
 | storeopenfrom        | A rendelést küldő üzlet nyitvatartási ideje.         |
 | storeopento          | A rendelést küldő üzlet zárási ideje.         |
-| pickupstorename      | Az üzlet neve, ahol a rendelést felveszik.     |
-| pickupstoreaddress   | Az üzlet címe, ahol a rendelést felveszik.  |
-| pickupopenstorefrom  | Az üzlet nyitvatartási ideje, ahol a rendelést felveszik. |
-| pickupopenstoreto    | Az üzlet zárási ideje, ahol a rendelést felveszik. |
+| pickupstorename      | Az üzlet neve, ahol a rendelést felveszik.\* |
+| pickupstoreaddress   | Az üzlet címe, ahol a rendelést felveszik.\* |
+| pickupopenstorefrom  | Az üzlet nyitvatartási ideje, ahol a rendelést felveszik.\* |
+| pickupopenstoreto    | Az üzlet zárási ideje, ahol a rendelést felveszik.\* |
+| pickupchannelid      | A felvételi típusú szállítási módhoz megadott áruház csatornaazonosítója.\* |
+| packingslipid        | Annak a szállítólevélnek az azonosítója, amelyet a rendelés sorainak csomagolásakor generáltak.\* |
+
+\* Ezek a helyőrző elemek csak akkor adnak vissza adatokat, ha a **Rendelés átvételre kész** értesítés típushoz használják őket. 
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Rendelési sor helyőrzői (értékesítési sor szintje)
 
@@ -106,7 +111,10 @@ A következő helyőrzők az értékesítési rendelés egyes termékeinek (sora
 
 | Helyőrző neve               | Helyőrző értéke |
 |--------------------------------|-------------------|
-| productid                      | A sor termékazonosítója. |
+| productid                      | <p>A termék azonosítója. Ez az azonosító figyelembe veszi a változatokat.</p><p><strong>Megjegyzés:</strong> Ezt a helyőrzőt már nem használják a **lineproductrecid** helyett.</p> |
+| lineproductrecid               | A termék azonosítója. Ez az azonosító figyelembe veszi a változatokat. Egyedileg azonosít egy tételt a változat szintjén. |
+| lineitemid                     | A termék termékszintű azonosítója. (Ez az azonosító nem veszi figyelembe a változatokat.) |
+| lineproductvariantid           | A termékváltozat azonosítója. |
 | lineproductname                | A termék neve. |
 | lineproductdescription         | A termék leírása. |
 | linequantity                   | A sorhoz rendelt egységek száma, valamint a mértékegység (például **db** vagy **pár**). |
@@ -125,6 +133,8 @@ A következő helyőrzők az értékesítési rendelés egyes termékeinek (sora
 | linedeliverydate               | A sor kiszállítási dátuma. |
 | linedeliverymode               | A sor kiszállítási módja. |
 | linedeliveryaddress            | A sor kiszállítási címe. |
+| linepickupdate                 | A vevő által megadott átvételi dátum egy átvételi módot használó megrendelések esetében. |
+| linepickuptimeslot             | A vevő által megadott átvételi időintervallum egy átvételi módot használó megrendelések esetében. |
 | giftcardnumber                 | Az ajándékutalvány száma az ajándékutalvány-típus termékei esetében. |
 | giftcardbalance                | Az ajándékutalvány egyenlege az ajándékutalvány-típus termékei esetében. |
 | giftcardmessage                | Az ajándékutalvány üzenete az ajándékutalvány-típus termékei esetében. |
