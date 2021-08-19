@@ -94,6 +94,8 @@
                   items:
                     - name: Újdonságok vagy változások a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.21 (2021. október)
+                      href: get-started/whats-new-commerce-10-0-21.md
                     - name: Commerce 10.0.20 (2021. augusztus)
                       href: get-started/whats-new-commerce-10-0-20.md
                     - name: Commerce 10.0.19 (2021. június)
@@ -516,8 +518,16 @@
                       href: tasks/configure-credit-card-processing.md
                     - name: A „visszajáró” párbeszédpanel kihagyása a POS-eszközön
                       href: dev-itpro/skip-change-due.md
-                    - name: Adyen fizetési összekötő
-                      href: dev-itpro/adyen-connector.md
+                    - name: Dynamics 365 Payment Connector az Adyen szolgáltatáshoz
+                      items:
+                        - name: Dynamics 365 Payment Connector az Adyen szolgáltatáshoz - áttekintés
+                          href: dev-itpro/adyen-connector.md
+                        - name: Dynamics 365 Payment Connector az Adyen szolgáltatáshoz beállítása
+                          href: dev-itpro/adyen-connector-setup.md
+                        - name: Dynamics 365 Payment Connector az Adyen - GYIK
+                          href: dev-itpro/adyen-connector-faq.md
+                        - name: Dynamics 365 Payment Connector az Adyen szolgáltatáshoz – hibaelhárítás
+                          href: dev-itpro/adyen-connector-troubleshoot.md
                     - name: Online fizetési eszközök mentése az Adyen összekötővel
                       href: dev-itpro/adyen-connector-listPI.md
                     - name: Erős vevőhitelesítés (SCA) az Adyen összekötővel
@@ -1182,6 +1192,10 @@
               items:
                 - name: Online csatornajelentések készítése
                   href: generate-reports.md
+            - name: Célcsoportkezelés
+              items:
+                - name: 'Eszköz, piac és földrajzi hely célcsoportja'
+                  href: targeting-overview.md
             - name: Kísérletezés
               items:
                 - name: Kísérletezés a Dynamics 365 Commerce szolgáltatásban
@@ -1336,6 +1350,10 @@
               items:
                 - name: Commerce honosítása Oroszországra vonatkozóan
                   href: localizations/rus-commerce-localization.md
+                - name: Commerce Oroszországra vonatkozó honosításának beállítása
+                  href: localizations/rus-commerce-setup.md
+                - name: Előlegek a Commerce szolgáltatásban Oroszországban
+                  href: localizations/rus-commerce-prepayments.md
             - name: Svédország
               items:
                 - name: Pénztárgép funkciói
