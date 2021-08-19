@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c088f6e3fea7c218cfd2108d0f279bccf1292772
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 339f52727b6f5a680f711cf4e6e0b8b0bc290853316fc2f2ff63164c8292d2d8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5816196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728841"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Szállítói számla irányelveinek beállítása
 
@@ -56,7 +56,7 @@ Ez a témakör ismerteti a szállítói számlákkal kapcsolatos irányelvek be�
 2. Válassza az **Új** lehetőséget.
 3. Töltse ki a **Név** és a **Leírás** mezőt.
 4. Csukja be vagy bontsa ki az **Irányelv szervezetei** szakaszt.
-5. A fán válassza ki a **Contoso Entertainment System USA** lehetőséget.
+5. A fán válassza a **Contoso Entertainment System USA** lehetőséget.
 6. Válassza a **Hozzáadás** lehetőséget.
 7. Csukja be vagy bontsa ki az **Irányelvszabályok** szakaszt.
 8. Válassza ki az **Irányelvszabály létrehozása** lehetőséget.

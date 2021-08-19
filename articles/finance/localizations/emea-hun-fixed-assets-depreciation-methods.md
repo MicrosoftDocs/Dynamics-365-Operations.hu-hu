@@ -15,12 +15,12 @@ ms.search.region: Hungary
 ms.author: anasyash
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 3a0fbadace164a3e434b32b23311e651da2a8173
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: b34236730dd9d3f85d3ae033a716d5e6f45b5606df8b55016ac9f6fba4d527f9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815015"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727237"
 ---
 # <a name="fixed-assets-depreciation-methods-for-hungary"></a>Tárgyi eszközök értékcsökkenési módjai Magyarország esetében
 

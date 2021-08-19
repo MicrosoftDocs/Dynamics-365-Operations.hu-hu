@@ -1,8 +1,8 @@
 ---
 title: Kettős írás beállítása a Lifecycle Services szolgáltatásból
 description: Ez a témakör bemutatja, hogyan lehet kettős írású kapcsolatot beállítani a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
-author: RamaKrishnamoorthy
-ms.date: 05/11/2021
+author: laneswenka
+ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
@@ -10,12 +10,12 @@ ms.search.region: global
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: e604e1491bbafa041fa3f52ad0f8b454c63d47de
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 060734154607263b5fed80b21fc9355b513ea26e3b1be88498310905531dceaa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359363"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729043"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services szolgáltatásból
 
@@ -66,5 +66,18 @@ Ha meglévő Dataverse-környezetben szeretne kettős írást beállítani, [tá
 
 > [!NOTE]
 > A környezetek nem csatolhatók le az LCS használatával. Egy környezet kapcsolatának megszüntetése érdekében nyissa meg az **Adatintegráció** munkaterületet a Finance and Operations környezetben , majd válassza a **Csatolás megszüntetése** parancsot.
+
+## <a name="linking-mismatch"></a>Kapcsolódási eltérés
+
+Lehetséges, hogy az Ön LCS-környezete egy Dataverse példányhoz, míg a kétírásos környezet egy másik Dataverse példányhoz kapcsolódik. Ez a kapcsolódási eltérés váratlan viselkedést okozhat, és a végén a rendszer rossz környezetbe küldhet adatokat. A kettős íráshoz ajánlott a Power Platform integráció részeként létrehozott környezetet használni, és hosszú távon ez lesz az egyetlen módja a környezetek közötti kapcsolat létrehozásának.
+
+Ha a környezetben nem egyezik a kapcsolat, az LCS figyelmeztetést jelenít meg a környezet adatlapján, amely a következőhöz hasonló: "A Microsoft észlelte, hogy a környezet a kettős írás segítségével a Power Platform integrációban megadottól eltérő célhoz van kapcsolva, ami nem ajánlott":
+
+:::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integrációs kapcsolat nem egyező.":::
+
+Ha ezzel a hibával találkozik, az Ön igényei alapján két lehetősége van:
+
++ [A kétírásos környezetek összekapcsolásának feloldása és újbóli összekapcsolása (összekapcsolás visszaállítása vagy módosítása)](relink-environments.md#scenario-reset-or-change-linking) az LCS-környezet adatlapján megadottak szerint. Ez az ideális megoldás, mert a Microsoft támogatása nélkül is futtatható.  
++ Ha a kapcsolatot továbbra is kettős írással szeretné fenntartani, kérhet segítséget a Microsoft ügyfélszolgálatától, hogy a Power Platform integrációt úgy módosítsa, hogy az a meglévő Dataverse környezetet használja az előző szakaszban leírtak szerint.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

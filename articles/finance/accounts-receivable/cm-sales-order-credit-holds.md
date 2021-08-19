@@ -1,8 +1,8 @@
 ---
 title: Értékesítési rendelések hitelvisszatartása
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a szabályokat, amelyekkel egy értékesítési rendeléshez hitelfelfüggesztést lehet beállítani.
-author: mikefalkner
-ms.date: 01/25/2019
+author: JodiChristiansen
+ms.date: 07/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,16 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d94b19061838f9bb2552c3c91c6b3591040ccf52
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 14cafa69e75d7e8a0f08fb385a8c364c0162da1ec609a4e0b3cad6178ec3f716
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5827650"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723967"
 ---
 # <a name="credit-holds-for-sales-orders"></a>Értékesítési rendelések hitelvisszatartása
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet beállítani a szabályokat, amelyekkel egy értékesítési rendeléshez hitelfelfüggesztést lehet beállítani. A hitelkezelés zárolási szabályai egy adott vevőre vagy egy vevői csoportra vonatkozhatnak. A zárolási szabályok a következő esetekre vonatkozó válaszokat határoznak meg:
 
@@ -41,6 +42,11 @@ Ezenkívül két paraméter vezérli az értékesítési rendelés zárolására
 
 Amikor egy vevő egy értékesítési tranzakciót kezdeményez, az értékesítési rendelésen szereplő adatok olyan zárolási szabályokkal szemben kerülnek ellenőrzésre, amelyek meghatározzák, hogy a vevőnek számára meghosszabbítható-e a hitel, és engedélyezhető-e az értékesítés végrehajtása. Megadhat olyan kivételeket is, amelyek felülírják a zárolási szabályokat, és lehetővé teszik egy értékesítési rendelés feldolgozását. A **Hitelkeret-kezelés > Beállítások > Hitelkezelés-beállítása > Zárolási szabályok** lapon beállíthatja a zárolási szabályokat és a kizárási szabályokat.
 
+A 10.0.21-es verziónak megfelelően a jóváíráskezelés zárolási szabályait a következőképpen terveztük újra, hogy nagyobb rugalmasságot nyújtsanak:
+
+- A bővítési kérelmek engedélyezésre kerültek, így saját zárolási szabályokat hozhat létre.
+- Az **Értékesítési rendelés kiadása** jelölőnégyzet immár minden zárolási szabály számára elérhető. Korábban csak az értékesítési rendelés zárolási szabálya számára volt elérhető. Ha ez a jelölőnégyzet be van jelölve, a kizárási szabály anélkül ad ki értékesítési rendelést, hogy figyelembe venne más olyan szabályt, amely zárolhatja az értékesítési rendeléseket. Ez a jelölőnégyzet csak a **Kizárás** szabálytípus esetében érhető el.
+
 ### <a name="days-overdue"></a>Késedelmes napok
 
 Nyissa meg a **Késedelmes napok** lapot, ha a zárolási szabály egy vagy több olyan számlára vonatkozik, amely egy adott számú napnál korábban lejárt.
@@ -57,7 +63,7 @@ Nyissa meg a **Késedelmes napok** lapot, ha a zárolási szabály egy vagy töb
 5. Válasszon **Értéktípust**. Az alapértelmezett bejegyzés egy rögzített számú nap. Ha kizárást hoz létre, akkor egy rögzített számú nap vagy egy összeg adható meg. 
 6. Adja meg a **Késedelmes** napok számát, amely a kiválasztott zárolási szabályhoz engedélyezve van, mielőtt egy rendelés hitelkezelési zárolásra kerül felülvizsgálat céljából. A késedelmes napok száma további türelmi napokat jelent, amelyek hozzá lesznek adva a számla fizetési határidején túli napokhoz, mielőtt azt késedelmesnek tekintené a rendszer. Ha egy kizáráshoz összegként megadott egy **Értéktípust**, akkor adjon meg egy összeget és egy pénznemet ahhoz az összeghez.
 
-### <a name="accounts-status"></a>Számlák állapota
+### <a name="account-status"></a>Számla állapota
 
 Akkor nyissa meg a **Számla állapota** lapot, ha a zárolási szabály egy kiválasztott számlaállapotú vevőre vonatkozik.
 1. Válassza ki a szabálytípust, amit beállít.  **Zárolás**: egy rendelést zároló szabályt hoz létre. **Kizárás**: egy olyan szabályt fog létrehozni, amely kizár egy másik szabályt egy rendelés zárolásából. 
@@ -102,7 +108,7 @@ Nyissa meg a **Lejárt összeg** lapot, ha a zárolást szabály a lejárt össz
    - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
    - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
 5. Adja meg a **Késedelmes összeg** értéket a kijelölt zárolási szabályhoz, annak meghatározásához, hogy mennyi idő teljen el, mielőtt egy megrendelés hitelkezelési várakoztatásra kerül ellenőrzéshez. 
-6. Válassza ki az **Érték típusát** amely meghatározza, hogy milyen típusú értékkel lesz használva, illetve annak tesztelését, hogy mennyi lett felhasználva a hitelkorlátból. A zárolási szabályoknak százalékértéket kell megadni, de a kizáráshoz megadható rögzített összeg vagy százalékos érték. A Küszöb a hitelkeretre vonatkozik.
+6. Válassza ki az **Érték típusát** amely meghatározza, hogy milyen típusú értékkel lesz használva, illetve annak tesztelését, hogy mennyi lett felhasználva a hitelkorlátból. A zárolási és kizárási szabályok csak a **Lejárt összeg** százalékos hányadát teszik lehetővé. A Küszöb a hitelkeretre vonatkozik.
 7. Adjon meg egy **Hitelkeret-küszöbértéket** a kiválasztott szabályhoz, mielőtt a vevő a hitelkeretkezelés céljából várakoztatásra kerül. Ez lehet egy összeg vagy egy százalék az érték típusa helyen kiválasztott értéktípus alapján.
 8. A szabály ellenőrzi, hogy a **Hátralékos érték** túl van-e lépve és azt, hogy a **Hitelkorlát küszöbérték** túl van-e lépve. 
 
@@ -122,8 +128,6 @@ Válassza ki az **Értékesítési rendelés** lehetőséget, ha a zárolási sz
    - Válassz a **Zárolás**:lehetőséget egy rendelést zároló szabály létrehozásához. 
    - Válassza a **Kizárás** lehetőséget egy olyan szabály létrehozásához, amely kizár egy másik szabályt egy rendelés zárolásából. 
 5. Adja meg az **Értékesítési rendelés összege** értéket a kijelölt zárolási szabályhoz, annak meghatározásához, hogy mennyi idő teljen el, mielőtt egy megrendelés hitelkezelési várakoztatásra kerül. 
-
-Az értékesítési rendelés szabálya egy további beállítást tartalmaz, amely felülbírálja az összes többi szabályt. Ha olyan kizárást szeretne létrehozni, amely az értékesítési rendelést az egyéb szabályok figyelembe vétele nélkül fogja felszabadítani , jelölje be az **Értékesítési rendelés felszabadítása** jelölőnégyzetet a kizárási sorban.
 
 ### <a name="credit-limit-used"></a>Hitelkeret felhasználva
 

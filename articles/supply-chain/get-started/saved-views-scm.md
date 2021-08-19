@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1b1077fdb4707bf2c019e86cb073b30465817577
-ms.sourcegitcommit: dc4898aa32f381620c517bf89c7856e693563ace
+ms.openlocfilehash: 2544591773bea7d54b4da4ac25ed3fed3f9e3594c5f791a0975c0349583b695c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "6270659"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728627"
 ---
 # <a name="standard-saved-views-for-supply-chain-management"></a>A Supply Chain Management szabványos mentett nézetei
 
@@ -77,6 +77,18 @@ Az alábbi táblázat leírja a Beszerzés és forrás modulban elérhető mente
 | Beszerzési rendelés részletei | Pénzgazdálkodás | Ez az egyszerűsített nézet a pénzügyekkel kapcsolatos tevékenységek, például az árak, az összegek és a költségek számlázása és ellenőrzése érdekében optimalizálható. | Mentett nézetek beszerzési rendelésekhez |
 | Beszerzési rendelés részletei | Rendelés jóváhagyása | Ez az egyszerűsített nézet az új beszerzési rendelések jóváhagyásához van optimalizálva. | Mentett nézetek beszerzési rendelésekhez |
 
+## <a name="saved-views-for-the-product-information-management-module"></a>A Termékinformáció kezelése modul mentett nézetei
+
+Az alábbi táblázat leírja a Termékinformációk kezelése modulban elérhető mentett nézeteket.
+
+| Oldal | Nézet neve | A leírás megtekintése | Funkció neve |
+|---|---|---|---|
+| Megjelent termékek listája | Termék létrehozása | Egyszerűsített lapnézet, amely csak a termékek létrehozásakor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet |
+| Megjelent termék részletei | Termék létrehozása | Egyszerűsített lapnézet, amely csak a termékek létrehozásakor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet |
+| Megjelent termék részletei | Logisztikai információkezelés | Egyszerűsített lapnézet, amely csak a termékek logisztikai információinak kezelésekor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet |
+| Megjelent termék részletei | Beszerzési adatok kezelése | Egyszerűsített lapnézet, amely csak a termékek beszerzési adatainak kezelésekor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet |
+| Megjelent termék részletei | Értékesítési adatok kezelése | Egyszerűsített lapnézet, amely csak a termékek értékesítési információinak kezelésekor leggyakrabban használt mezőket tartalmazza. | Kiadott termékekhez tartozó mentett nézet |
+
 ## <a name="saved-views-for-the-production-control-module"></a>A Gyártásvezérlési modul mentett nézetei
 
 Az alábbi táblázat leírja a Gyártásvezérlési modulban elérhető mentett nézeteket.
@@ -110,7 +122,7 @@ Az alábbi táblázat leírja a Raktárkezelési modulban elérhető mentett né
 | Minden szállítmány | Bejövő feldolgozása | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a bejövő szállítmányok feldolgozásához. | Szállítmányfeldolgozás mentett nézetei |
 | Minden szállítmány | Kimenő feldolgozása | Ez az egyszerűsített nézet csak azokat a mezőket tartalmazza, amelyek leggyakrabban használatosak a kimenő szállítmányok feldolgozásához. | Szállítmányfeldolgozás mentett nézetei |
 | Minden hullám | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | Hullámfeldolgozás mentett nézete |
-| Rakománytervező munkaterület | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A munkatervezési munkaterülethez mentett nézet |
+| Rakománytervező munkaterület | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A rakománytervezési munkaterület mentett nézetei |
 | Munka részletes adatai | Egyszerűsített | Ez az egyszerűsített nézet csak a leggyakrabban használt mezőket tartalmazza. Ily módon gyorsabb áttekintést és egyszerűbb munkafolyamatot nyújt. | A munka részleteit tartalmazó oldal mentett nézete |
 
 
