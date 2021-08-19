@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 9c31b8dd7d69fee40ecefb6c6bc81c9c2dd17ef7
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 81888e0703c53333ab9697c0445270f2f40c7b9ba02f3ba5fa728aef0b78b3a6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6359077"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730010"
 ---
 # <a name="planned-cross-docking"></a>Tervezett áttárolás
 
@@ -117,6 +117,9 @@ A tervezett áttárolás a rakományok feladási módjaként történik. A funkc
     - **Sorszám:** *1*
     - **Beszerzési forrás:** *Beszerzési rendelés*
 
+> [!NOTE]
+> Beállíthat egy lekérdezést, amivel szabályozza, hogy egy adott áttárolási sablon mikor legyen használva. Az áttárolási sablonok lekérdezése csak az *InventTable* (cikkek) táblát és a belső összekapcsolt *WHSInventTable* (WHS-cikkek) táblát tartalmazza. Ha további táblákat szeretne hozzáadni a lekérdezéshez, akkor csak *létező egyesítéseket* vagy *nem létező egyesítések* használatával egyesítheti ezeket. Amikor az összekapcsolt táblákra szűr, a főtáblából egy rekordot olvassa be a rendszer az összekapcsolt tábla mindegyik egyező rekordjához. Ha az összekapcsolástípus *létező összekapcsolás*, a keresés az első egyezés megtalálása után ér véget. Ha például az értékesítési rendelési sor tábláját a cikkek táblához kapcsolja, a rendszer ellenőrzi és visszaadja azokat a cikkeket, amelyekre legalább egy értékesítésirendelés-sornál meg van adva a megadott feltétel. A rendszer alapvetően a szülő (cikkek) táblából, nem a gyermek táblából (értékesítésirendelés-sor) másolja át az adatokat. Emiatt forrásdokumentumok (például értékesítésirendelés-sorok vagy vevők) alapján alapkivitelben nem lehet szűrést végezni.
+
 ### <a name="create-a-work-class"></a>Munkaosztály létrehozása
 
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Munka \> Munkaosztályok** pontra.
@@ -151,6 +154,9 @@ A tervezett áttárolás a rakományok feladási módjaként történik. A funkc
     - **Munkaosztály azonosítója:** *CrossDock*
 
 1. Válassza a **Mentés** lehetőséget, és győződjön meg arról, hogy az **Érvényes** jelölőnégyzet be van jelölve az *51 Áttárolás* sablonhoz.
+1. Nem kötelező: Válassza a **Lekérdezés szerkesztése** lehetőséget, ha be szeretné állítani, hogy a munkasablon mikor és hol használható.
+
+    Beállíthat egy lekérdezést, amivel szabályozza, hogy egy adott munkasablon mikor legyen használva. Megadhatja például, hogy egy sablon csak egy meghatározott helyen használható munkához. Ha az áttárolási munkasablont egy adott helyen szeretné alkalmazni, akkor nem a **Hely** mezőre, hanem a **Kezdés helye** mezőre kell szűrni, mert a bejövő folyamatok (beszerzés, áttárolás és feltöltés) munkalétrehozása a betárolási sortól kezdődik. A munka létrehozásakor a helyutasítás a **Hely** mezőt a betárolási helyre állítja. A kitárolási hely azonban a **Kezdési hely** mezőben van tárolva.
 
 > [!NOTE]
 > A *Kitárolás* és a *Betárolás* munkatípusok munkaosztályainak azonosnak kell lennie.
