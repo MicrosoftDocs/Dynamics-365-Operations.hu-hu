@@ -3,24 +3,19 @@ title: Támogatott egyszerű adattípusok az elektronikus jelentési képletekbe
 description: A témakör tájékoztatást nyújt az Elektronikus jelentéskészítésben (ER) képleteiben támogatott egyszerű adattípusokról.
 author: NickSelin
 ms.date: 06/02/2021
-ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1c70dd0fa89c6cc5a8b4778b073d1cf4a3dadd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 72c372a4d9b6af337731ff0bbd750b3b58f27bb79cb3813a0b5e4f79707d9f5c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6355322"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730607"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Támogatott egyszerű adattípusok az elektronikus jelentési képletekben
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: hasrivas
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e8a8250b36d2774ac308637253b780592df316cd
-ms.sourcegitcommit: 86d38cf57abe768e5bccde48b28280bc2224080c
+ms.openlocfilehash: 050874628388629569751afae201ef346af020da09c81d24a69e1a4b5eb41b6f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6639606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6732345"
 ---
 # <a name="configure-the-absence-manager-role"></a>A Távollétkezelő szerepkör konfigurálása
 
@@ -89,16 +89,21 @@ A távollétkezelő szerepkört alkalmazottakhoz kell rendelni, hogy jóváhagyh
 
 ## <a name="absence-manager-workspace"></a>Távollétkezelő munkaterülete
 
-Az **Alkalmazotti önkiszolgáló** munkaterületen a **Távollétkezelő** lap a távollét hierarchiában a távollétkezelőhöz rendelt alkalmazottak távolléti adatait jeleníti meg.
+Az **Alkalmazotti önkiszolgálás** munkaterületen a **Szabadságkezelés** lap mutatja a távolléti információkat azoknál az alkalmazottaknál, akik a távollétkezelőhöz vannak rendelve a Szabadság hierarchiában. A távollétkezelőben több lehetőség is rendelkezésre áll: 
+ - Szabadságkérelmek felülvizsgálata.</br>
+ - Szabadságkérelem benyújtása a munkavállaló nevében.</br>
+ - A szabadsághierarchia részeként a hozzájuk rendelt összes munkavállaló megtekintése.</br>
+ - A távollétkezelő naptárának megtekintése.</br>
 
-A **Szabadság és távollét** lapon az egyes alkalmazottaknál a következő lehetőségek érhetők el:
-
-- **Szabadságolás** –Aa kiválasztott alkalmazott egyenlegének, jóváhagyott távolléteinek és távolléti kérelmeinek megtekintése.
-- **Szabadságegyenlegek** – a kiválasztott alkalmazott különböző távolléti terveihez megadott egyenlegeinek listájának megtekintése.
+A **Szabadságkezelés** munkaterületen két lap található:
+ - **Szabadságkérelmek**: Ez a lap felsorolja a függőben lévő szabadságkérelmeket, amelyeket a távollétkezelő jóváhagyhat. A távollétkezelő több rekordot is kiválaszthat, és egyszerre intézkedhet velük kapcsolatban. Ha engedélyezve van a vállalatközi szabadságok nézete, ez a lista a folyamatban lévő szabadságkérelmeket mutatja az összes olyan jogalanyra vonatkozóan, amelyhez hozzáféréssel rendelkezik. Ellenkező esetben az aktuálisan kiválasztott jogalany függőben lévő szabadságkérelmeit mutatja. </br>
+ - **Minden alkalmazott**: Ez a lap felsorolja az összes olyan alkalmazottat, aki a távollétkezelőhöz van rendelve a Szabadság hierarchiában. Minden munkavállaló számára több lehetőség is rendelkezésre áll:
+    - **Szabadságkérelem** - Új szabadságkérelem benyújtása a kiválasztott munkavállaló számára.</br>
+    - **Szabadságolás** –Aa kiválasztott alkalmazott egyenlegének, jóváhagyott távolléteinek és távolléti kérelmeinek megtekintése.</br>
 
 ## <a name="approve-time-off-requests"></a>Szabadságkérelmek jóváhagyása
 
-A távollétkezelők jóváhagyhatják vagy elutasíthatják az alkalmazottak szabadságkérelmeit. Szükség esetén az alkalmazottak nevében is létrehozhatnak igényléseket.
+A távollétkezelők jóváhagyhatják vagy elutasíthatják az alkalmazottak szabadságkérelmeit. 
 
 > [!IMPORTANT]
 > Ahhoz, hogy a távollétkezelők jóváhagyhatják vagy elutasíthatják a szabadságkérelmeket, be kell állítani szabadságkérelem munkafolyamatát, hogy szabadságkérelmi munkaelemet lehessen hozzájuk rendelni, amelyekt áttekinthetnek.
@@ -109,15 +114,13 @@ A távollétkezelők jóváhagyhatják vagy elutasíthatják az alkalmazottak sz
 >
 > A szabadságkérelem munkafolyamatának létrehozásával további tudnivalókért lásd: [Szabadságkérelmezési munkafolyamat létrehozása](hr-leave-and-absence-workflow.md).
 
-1. Válassza ki az **Alkalmazotti önkiszolgáló rendszer** munkaterületen a **Távollétkezelő** lapot.
+1. Az **Alkalmazotti önkiszolgáló** munkaterületen válassza a **Szabadságkezelés** lapot.
 
-2. A **Távollétkezelő** lapon válassza ki a kívánt alkalmazottat.
+2. A **Szabadságkérelmek** lapon jelölje ki azokat a szabadságkérelmeket, amelyekkel kapcsolatban intézkedni kíván. Ebben a listanézetben több rekordot is kijelölhet.
 
-3. Válassza ki a **Részletek**, majd a **Szabadság** lehetőséget.
+3. A rács tetején található műveletgombok segítségével jóváhagyhatja, elutasíthatja vagy delegálhatja a szabadságkérelmet. 
 
-4. Keresse meg a szabadságkérelmet kérést, és válassza a **Jóváhagyás** lehetőséget. Ezután választhat, hogy jóváhagyja vagy elutasítja-e a szabadságkérelmet.
-
-Az **Érvénytelenítve** állapot azt jelzi, hogy a kérést elutasították. A **Befejezett** állapot azt jelzi, hogy a kérést jóváhagyták.
+Másik lehetőségként a felhasználó a bal oldali **Szabadságkérelmek** csempével is navigálhat az összes szabadságkérelem munkaelem listájához. 
 
 ## <a name="view-time-off-in-the-calendar"></a>Szabadság megtekintése a naptárban
 
@@ -126,7 +129,7 @@ A Távollétkezelő szerepkörű felhasználók a naptárban megtekinthetik az s
 > [!IMPORTANT]
 > A távollétkezelő naptár nézetbeállításait a rendszergazdának kell beállítania. A **Szabadság és távollét paraméterei** lap **Naptár** lapján lehetőség van a születésnapok, a részletek nélküli távollétek, a szabadásgok és a függőben lévő távolléti kérelmek elrejtésére és megjelenítésére. Lehetőség van a naptárnézet dolgozótípus szerint való szűrésére is.
 
-1. Válassza ki az **Alkalmazotti önkiszolgáló szolgáltatás** munkaterületén a **Távollétkezelő**, majd a **Távollétkezelő naptára** lehetőséget.
+1. Az **Alkalmazotti önkiszolgáló** munkaterületen válassza a **Szabadságkezelés**, majd a **Távollétkezelő naptár** menüpontot.
 
 2. Adja meg a kívánt dátumokat a **Dátum** mezőben.
 

@@ -2,7 +2,7 @@
 title: Médiatár modul
 description: Ez a témakör a médiatár modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 1d8e8ce51d9e7f962a4d4e39db502089d846d748
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6346716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733197"
 ---
 # <a name="media-gallery-module"></a>Médiagaléria modul
 
@@ -56,6 +56,10 @@ A következő ábrán szereplő példában egy médiatár modul segítségével 
 | Képek | Webhelykészítő médiatárból kiválasztott képek | A termékből való renderelésen kívül a képek a médiatár modulban is összeválogathatók. Ezeket a képeket a program hozzáfűzi az elérhető termékképekhez. Ez a funkció a Commerce 10.0.12 verzióban érhető el. |
 | Miniatűr tájolása | **Vízszintes** vagy **Függőleges** | Ez a tulajdonság azt határozza meg, hogy a miniatűrök képei függőleges vagy vízszintes csíkban jelenjenek-e meg. |
 | Alaptermék képének elrejtése a változónál | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, ha egy változó ki van választva, az alaptermék képei rejtve maradnak, hacsak a változónak nincsenek képei. Ez a tulajdonság nincs hatással a változókkal nem rendelkező termékekre. |
+| A média frissítése dimenzió kiválasztásakor | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, akkor a médiatárban lévő képek frissülnek, ha bármelyik dimenzió (például szín, stílus vagy méret) kiválasztásra kerül, és ha egy kép elérhető. Ez a tulajdonság segít leegyszerűsíteni a böngészést, mivel nem kell minden termékváltozat-dimenziót kiválasztani a megfelelő kép frissítéséhez. Ez a tulajdonság a **Speciális** lapon érhető el. |
+
+> [!IMPORTANT]
+> A **Média frissítése a dimenzió kiválasztásakor** tulajdonság a Commerce 10.0.21-es verziójától érhető el. Ehhez a Commerce modultárcsomag 9.31-es verziójának telepítése szükséges.
 
 A következő ábra egy olyan médiatár-modult mutat be, amelyben elérhetők a teljes képernyős és a nagyítási lehetőségek.
 

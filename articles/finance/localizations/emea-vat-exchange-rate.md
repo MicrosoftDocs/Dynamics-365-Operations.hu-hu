@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: ff918768a65618c39023a6b141c5f168a9fdd9ca
-ms.sourcegitcommit: fb563aa77d62c797562ddc2bb84415cdfa3dbb79
+ms.openlocfilehash: af2ebb282883696b1240e1ec9d7becdf9e26ccec6712ffc73964e733079047b6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/08/2021
-ms.locfileid: "6479051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734499"
 ---
 # <a name="vat-exchange-rate-overview"></a>Áfa átváltási arány áttekintése
 
