@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 577d48e207c8ce5911d104e657101a8557100064
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 136e528093e6e73ffe090cea0c02a4cdbf787c5efc3d9c0664869c995a682daa
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6339994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720252"
 ---
 # <a name="rebate-management-module-overview"></a>Visszatérítés-kezelő modul áttekintése
 
@@ -91,10 +91,9 @@ A felhasználóknak már nem kell két lépésben kezelniük az ajánlatokat vag
 
 A visszatérítések kiszámításakor a folyamat olyan tranzakciókat hoz létre, amelyek a feladás előtt felülvizsgálhatók. A visszatérítés-kezelési tranzakciókat külön folyamat adja fel. Ezt követően a javasolt tranzakciókba való feladás során létre lehet hozott naplót, jóváírást vagy terhelési tranzakciót. A megfelelőség, a hatékonyság és az átláthatóság biztosítása érdekében jelentési kimutatások és tranzakciólisták kérhetők le.
 
-
 ## <a name="guaranteed-royalty-payments"></a>Garantált jogdíjfizetések
 
-A visszatérítés-kezelésben az automatikus fizetésgenerálás lehetővé teszi a jogdíjak gyors és könnyű kezelését, még akkor is, ha garantált minimumok érvényesek. 
+A visszatérítés-kezelésben az automatikus fizetésgenerálás lehetővé teszi a jogdíjak gyors és könnyű kezelését, még akkor is, ha garantált minimumok érvényesek.
 
 ## <a name="maximizing-spend-versus-rebates"></a>A kiadások maximalizálása a visszatérítésekkel szemben
 

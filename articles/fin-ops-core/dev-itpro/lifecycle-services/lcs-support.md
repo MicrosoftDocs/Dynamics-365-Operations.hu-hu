@@ -2,7 +2,7 @@
 title: Támogatás szerzése a Finance and Operations-alkalmazások és a Lifecycle Services (LCS) szolgáltatáshoz
 description: Ez a témakör ismerteti, hogyan kérhet segítséget a Finance and Operations-alkalmazásokkal vagy Microsoft Dynamics Lifecycle Services (LCS) alkalmazásokkal kapcsolatban.
 author: EricMoos
-ms.date: 09/16/2020
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b32ae88f9c4439b83ae60e6a0b5f0e16280fcf
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.openlocfilehash: 4314545941cd4c401325aad7651c8882db322f58aae54e85dbad2548733cc95e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5753878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713334"
 ---
 # <a name="get-support-for-finance-and-operations-apps-or-lifecycle-services-lcs"></a>Támogatás szerzése a Finance and Operations-alkalmazások és a Lifecycle Services (LCS) szolgáltatáshoz
 
@@ -48,7 +48,7 @@ Ez a témakör ismerteti, hogyan kérhet segítséget a Finance and Operations-a
 <td>Az <a href="https://lcs.dynamics.com/">LCS</a> rendszerben használja a <strong>Megoldáskereső</strong> eszközt a Microsoft Tudásbázis (KB) cikkeinek, gyorsjavításainak és megkerülő megoldásainak megtalálásához a bejelentett problémák megoldására. Megtudhatja, hogy melyik jelentett probléma van folyamatban, vagy már megoldották egy adott funkcionális területre vonatkozóan. További tudnivalókért lásd: <a href="issue-search-lcs.md">Megoldáskereső (Lifecycle Services, LCS)</a>.</td>
 </tr>
 <tr>
-<td>Támogatás kérése az alkalmazáson belül.</td>
+<td>Kérjen támogatást a Finance and Operations alkalmazáson belül.</td>
 <td>Válassza ki az alkalmazás jobb felső sarkában látható <strong>Súgó</strong> gombot (<strong>?</strong>), majd válassza a <strong>Támogatás</strong> lehetőséget. A problémák az <strong>Aktív problémák</strong> LCS-lapon lesznek bejelentve. Itt az adminisztrátorok meghatározhatják, hogy saját támogatást biztosítanak, vagy elküldik a Microsoft számára a kérdéseket.</td>
 </tr>
 <tr>

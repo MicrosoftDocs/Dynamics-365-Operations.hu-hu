@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: c29efb885babea833e3c3fde0155e3722f8b77e9
-ms.sourcegitcommit: f65bde9ab0bf4c12a3250e7c9b2abb1555cd7931
+ms.openlocfilehash: 4a2420981553957b6b234fe56747bc6f3568acf6b8ad77366c33caeae63b4faf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "6542391"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716759"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>A beszerzés integrálása a Supply Chain Management és a Field Service között
 
@@ -192,7 +192,7 @@ Ha a feldolgozás során megszakították a termékbevételezés feladási folya
 
 A beszerzésekkel kapcsolatos dokumentumok integrálásához a következő sablonok állnak rendelkezésre.
 
-| Ellátásilánc-kezelés | Field Service | Leírás |
+| Supply Chain Management | Field Service | Leírás |
 |---|---|---|
 | [Beszerzési rendelés V2 fejléce](mapping-reference.md#183) | msdyn\_Purchaseorders | Ez a tábla a beszerzési rendelés fejlécének megfelelő oszlopokat tartalmazza. |
 | [Beszerzésirendelés-sor entitás](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Ez a tábla a beszerzési rendelés sorainak megfelelő sorokat tartalmazza. A termékszám a szinkronizáláshoz használható. Ez a termékraktározási egységként (SKU) azonosítja a terméket, a termékdimenziókkal együtt. A Dataverse szolgáltatással történő termékintegrációval kapcsolatos további tudnivalókat lásd: [Egyesített termékkel kapcsolatos tapasztalat](product-mapping.md). |

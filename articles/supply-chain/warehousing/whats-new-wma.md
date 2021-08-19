@@ -2,7 +2,7 @@
 title: Újdonságok és változások a Warehouse Management mobilalkalmazásban
 description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új és módosult funkcióit ismerteti.
 author: ivanv-microsoft
-ms.date: 06/07/2021
+ms.date: 07/30/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,38 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 61124728942c0b8162de9f687ae752773c47d07e
-ms.sourcegitcommit: 4cbd83e21a78459e4711a2dedba0f5a7acc3c841
+ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "6261780"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720084"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Újdonságok és változások a Warehouse Management mobilalkalmazásban
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új funkcióit, hibajavításait, fejlesztéseit és ismert hibáit ismerteti.
+
+## <a name="2070"></a>2.0.7.0
+
+### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Új funkciók, hibajavítások és fejlesztések a 2.0.7.0 verzióban
+
+- Szakasz hozzáadása a **Névjegy** laphoz, amely ellenőrzi az alkalmazás legújabb kiadott verzióját.
+- Megkönnyíti a lapok pöccintését és húzását.
+- A munkalista növekvő/csökkenő gombjának ikonja módosult.
+- Csökkentette a **Részletek** kártya margóját, hogy még több adat férjen el rajta.
+- Különböző teljesítményjavításokkal csökkenti azt a problémát, hogy az alkalmazás idővel egyre lassabbá vált.
+- Ha a képernyő kapacitásánál több vezérlőelem van, ami lapozást eredményezve, a betöltésjelző vezérlő már nem görgethető ugyanúgy, mint a lap.
+- Az utolsó beolvasott érték megjelenítésének előnyben részesítése a feladat címének megjelenítése előtt, így ha átfedésben van a feladat címével, akkor az csonkolva lesz.
+- Számos olyan problémát javított, amely a rendszer leállását okozta.
+- A különböző helyeken már nincs levágva a szöveg egyes nyelveken.
+- Az alkalmazás immár alapértelmezés szerint teljes képernyős módban fut.
+- Kijavított egy problémát, amely esetenként a beolvasások figyelmen kívül hagyását okozhatja a főoldalon bizonyos készülékekkel.
+
+### <a name="known-issues-in-version-2070"></a>Ismert problémák a 2.0.7.0 verzióban
+
+- Egyes eszközöknél a következő hibaüzenet jelenik meg, amikor elindítja az alkalmazást, vagy elindít egy feladatot: "Nem található megfelelő nézet a megadott mérethez." Ha bármelyik eszközön látja ezt a hibaüzenetet, akkor álljon vissza az eszközön a Warehouse Management mobilalkalmazás 2.0.6.0 verziójára azon az eszközön, és várja meg a frissítést, amíg az alkalmazás következő verziója meg nem jelenik.
 
 ## <a name="version-2060"></a>2.0.6.0-s verzió
 

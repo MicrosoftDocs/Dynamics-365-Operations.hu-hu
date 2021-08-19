@@ -14,12 +14,12 @@ ms.search.region: Hungary
 ms.author: anasyash
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: bdd7b81a2563b86cda5fa04025d958e8b23062ba
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 41be85b6b6f5b6337bce9c724fe0dafe744f23b3eb552ba251a9858b46560ecd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5815017"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721709"
 ---
 # <a name="move-a-fixed-asset-to-inventory"></a>Tárgyi eszköz áthelyezése leltárba
 
