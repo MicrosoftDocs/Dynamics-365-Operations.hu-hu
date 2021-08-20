@@ -2,7 +2,7 @@
 title: Kosárikon modul
 description: Ez a témakör a kosárikon modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d9e3850d98e716d1bbea2017f6e8c9d75f19adc9
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
+ms.openlocfilehash: 5cf86876ba03d510b03237c9c89a1fc069a73482b755a1d72227037c91439e86
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735678"
 ---
 # <a name="cart-icon-module"></a>Kosárikon modul
 
@@ -35,9 +35,14 @@ A következő képen egy példa látható a kosárikon modulra, amely egy miniko
 
 ## <a name="module-properties"></a>Modul tulajdonságai
 
-- **Mini-kosár megjelenítése** – Ha ennek értéke igaz, ez a tulajdonság lehetővé teszi a kosár összesítésének (mini kosár) megjelenítését, ha a kosár ikonja fölé viszik az egérmutatót. Ez a funkció csak az asztali nézet portjain használható.
+- **Mini-kosár megjelenítése** – Ha ennek a tulajdonságnak az értéke **Igaz**, a kosár összesítése (mini kosár) jelenik meg, amikor a kosár ikonja fölé viszik az egérmutatót. Ez a funkció csak az asztali nézet portjain használható.
+- **Névtelen kifizetés engedélyezése** – Ha ez a tulajdonság **Igaz** beállítású, a mini kosár lehetővé teszi, hogy a be nem jelentkezett felhasználók vendégkifizetést végezhessenek. Ez a tulajdonság a Commerce modultárcsomag részeként elérhető a Commerce rendszer 10.0.21-es verziójában.
+- **Cikkek sorrendje** – Ez a tulajdonság szabályozza, hogy milyen sorrendben jelenjenek meg a cikkek a mini kosárban. Ha be van jelölve az **Új cikkek lista tetejéhez adása** beállítás, akkor a kosárhoz adott új cikkek a mini bevásárlókocsiba sorolt cikkek listájának tetején jelennek meg. Ha be van jelölve az **Új cikkek lista aljához adása** alapértelmezett beállítás, akkor a kosárhoz adott új cikkek a mini bevásárlókocsiba sorolt cikkek listájának alján jelennek meg. Ez a tulajdonság a Commerce modultárcsomag részeként érhető el a Commerce rendszer 10.0.21-es verziójában.
 
-## <a name="module-properties-in-the-adventure-works-theme"></a>Modultulajdonságok a Adventure Works témában
+> [!IMPORTANT]
+> A **Névtelen kifizetés engedélyezése** és a **Cikkek sorrendje** tulajdonságok a Commerce rendszer 10.0.21-es verziójában érhetők el. Ezekhez a Commerce modultárcsomag 9.31-es verziójának telepítése szükséges.
+
+## <a name="module-properties-and-slots-in-the-adventure-works-theme"></a>Modultulajdonságok és helyek az Adventure Works témában
 
 Az Adventure Works témában a kosárikon modulja két további helyet tartalmaz a minikosár számára. Ezek a helyek moduldefiníciós bővítményként vannak belefoglalva.
 

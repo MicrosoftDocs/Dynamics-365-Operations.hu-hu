@@ -2,7 +2,7 @@
 title: Pénzügyi jelentéskészítés – GYIK
 description: Ez a témakör a pénzügyi jelentéskészítéssel kapcsolatos néhány gyakran ismételt kérdésre ad választ.
 author: jiwo
-ms.date: 01/13/2021
+ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e1b67f86446403933005008a9a1e2cc6739dc516
-ms.sourcegitcommit: ecabf43282a3e55f1db40341aa3f3c7950b9e94c
+ms.openlocfilehash: dd493e855e45362c1681dc9cdfbbcb71f7627d64624cd093eadab32fd966c174
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "6266633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733611"
 ---
 # <a name="financial-reporting-faq"></a>Pénzügyi jelentéskészítés – GYIK
 
@@ -76,6 +76,30 @@ Most már a **főkönyvi kivonati** jelentésbe másolhatja az Excelben létreho
 Az üzenet azt jelzi, hogy hiba történt, amikor a rendszer megpróbálta lekérni a pénzügyi metaadatokat az adatpiacról a Pénzügyi jelentéskészítés használata közben. Erre a problémára kétféleképpen tud reagálni:
 
 - Tekintse át az adatok integrációs állapotát a Report Designerben lévő **Eszközök \> Integráció állapota** segítségével. Ha az integráció még nem fejeződött be, várjon, amíg befejeződik. Ezután próbálja meg újra elvégezni azt, amit az üzenet megjelenésekor szeretett volna.
-- Forduljon az ügyfélszolgálathoz a probléma azonosítása és megoldása érdekében. Inkonzisztens adatok lehetnek a rendszerben. A támogatási szakemberek segítséget tudnak nyújtani a kiszolgálón lévő probléma azonosításában, és a frissítéshez szükséges konkrét adatok megkeresésében.
+- Forduljon az ügyfélszolgálathoz a probléma azonosítása és megoldása érdekében. Inkonzisztens adatok lehetnek a rendszerben. A támogatási szakemberek segítséget tudnak nyújtani a kiszolgálón lévő probléma azonosításában, és a konkrét adatok megkeresésében, melyeket lehet, hogy frissíteni kell.
+
+## <a name="how-does-the-selection-of-historical-rate-translation-affect-report-performance"></a>Hogyan befolyásolja a korábbi árfolyamok átszámításának kiválasztása a jelentés teljesítményét?
+
+Ezt a historikus árfolyamot jellemzően az elhatárolt nyereség, az ingatlanok, gépek és berendezések, valamint a tőkeszámlák esetében használják. A historikus árfolyam a FASB (Pénzügyi Számviteli Normák Testülete) vagy az általánosan elfogadott könyvelési elvek (GAAP) irányelvei alapján írható elő. A további tudnivalókért lásd: [Pénznemekkel kapcsolatos képességek a pénzügyi jelentésben](financial-reporting-currency-capability.md).
+
+## <a name="how-many-types-of-currency-rate-are-there"></a>Hányfajta pénznem árfolyamtípus létezik?
+
+Három típus van:
+
+- **Aktuális árfolyam** – ez a típus jellemzően mérlegszámlákhoz használatos. Ez általában *azonnali árfolyam* néven ismert, és lehet a hónap utolsó napján vagy más előre meghatározott időpontban érvényes árfolyam.
+- **Átlagárfolyam** – ez a típus jellemzően a eredménykimutatási (nyereség/veszteség) számlák esetében használatos. Az átlagárfolyam beállítható egyszerű vagy súlyozott átlag alkalmazására.
+- **Historikus árfolyam** – Ezt a típust jellemzően az elhatárolt nyereség, az ingatlanok, gépek és berendezések, valamint a tőkeszámlák esetében használják. Ezek a számlák a FASB vagy a GAAP irányelvei alapján lehetnek szükségesek.
+
+## <a name="how-does-historical-currency-translation-work"></a>Hogyan működik a historikus devizaátváltás?
+
+Az árfolyamok a tranzakció időpontjára vonatkoznak. Ezért minden tranzakciót egyénileg kell váltani, a legközelebbi árfolyam alapján.
+
+A historikus pénznem átváltásához az előre kiszámított időszaki egyenlegek használhatók az egyes tranzakciók részletei helyett. Ez a működés eltér az aktuális árfolyamon történő váltástól.
+
+## <a name="how-does-historical-currency-translation-affect-performance"></a>Hogyan befolyásolja a teljesítményt a historikus devizaátváltás?
+
+Amikor a jelentésekben megjelenő adatokat frissítik, előfordulhat késés, mivel az összegeket újra kell kalkulálni a tranzakció részleteinek ellenőrzésével. Ez a késleltetés minden alkalommal bekövetkezik, amikor az árfolyamokat frissítik vagy több tranzakciót könyvelnek. Ha például naponta több alkalommal több ezernyi számla van beállítva historikus átszámításra, a jelentésben található adatok frissítése akár egy órányit is késhet. Ha viszont kisebb számú konkrét számla van, akkor a jelentésadatok feldolgozási ideje percekre vagy még kevesebb időre csökkenthető.
+
+Hasonlóképpen, amikor a jelentések a historikus típusú számlák devizaátváltásának használatával készülnek, extra tranzakciónkénti számításokat kell végezni. A számlák számától függően a jelentés elkészítésének ideje több mint kétszeresére nőhet.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
