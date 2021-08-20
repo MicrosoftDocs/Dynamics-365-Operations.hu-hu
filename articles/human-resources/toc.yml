@@ -5,6 +5,8 @@
       items:
         - name: Újdonságok és változások a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2021. július 26.
+          href: hr-whats-new-2021-07-26.md
         - name: 2021. július 12.
           href: hr-whats-new-2021-07-12.md
         - name: 2021. június 22.
@@ -27,38 +29,38 @@
           href: hr-whats-new-2021-01-28.md
         - name: 2021. január 21.
           href: hr-whats-new-2021-01-21.md
-        - name: 2020. december 2.
-          href: hr-whats-new-2020-12-02.md
-        - name: 2020. október 22.
-          href: hr-whats-new-2020-10-22.md
-        - name: 2020. október 6.
-          href: hr-whats-new-2020-10-06.md
-        - name: 2020. szeptember 26.
-          href: hr-whats-new-2020-09-26.md
-        - name: 2020. szeptember 16.
-          href: hr-whats-new-2020-09-16.md
-        - name: 2020. szeptember 3.
-          href: hr-whats-new-2020-09-03.md
-        - name: 2020. augusztus 20.
-          href: hr-whats-new-2020-08-20.md
-        - name: 2020. augusztus 6.
-          href: hr-whats-new-2020-08-06.md
-        - name: 2020. július 23.
-          href: hr-whats-new-2020-07-23.md
-        - name: 2020. július 8.
-          href: hr-whats-new-2020-07-08.md
-        - name: 2020. június 25.
-          href: hr-whats-new-2020-06-23.md
-        - name: 2020. június 11.
-          href: hr-whats-new-2020-06-11.md
-        - name: 2020. május 28.
-          href: hr-whats-new-2020-05-28.md
-        - name: 2020. május 14.
-          href: hr-whats-new-2020-05-14.md
-        - name: 2020. május 1.
-          href: hr-whats-new-2020-05-01.md
         - name: Újdonságok (2020. évi archívum)
           items:
+            - name: 2020. december 2.
+              href: hr-whats-new-2020-12-02.md
+            - name: 2020. október 22.
+              href: hr-whats-new-2020-10-22.md
+            - name: 2020. október 6.
+              href: hr-whats-new-2020-10-06.md
+            - name: 2020. szeptember 26.
+              href: hr-whats-new-2020-09-26.md
+            - name: 2020. szeptember 16.
+              href: hr-whats-new-2020-09-16.md
+            - name: 2020. szeptember 3.
+              href: hr-whats-new-2020-09-03.md
+            - name: 2020. augusztus 20.
+              href: hr-whats-new-2020-08-20.md
+            - name: 2020. augusztus 6.
+              href: hr-whats-new-2020-08-06.md
+            - name: 2020. július 23.
+              href: hr-whats-new-2020-07-23.md
+            - name: 2020. július 8.
+              href: hr-whats-new-2020-07-08.md
+            - name: 2020. június 25.
+              href: hr-whats-new-2020-06-23.md
+            - name: 2020. június 11.
+              href: hr-whats-new-2020-06-11.md
+            - name: 2020. május 28.
+              href: hr-whats-new-2020-05-28.md
+            - name: 2020. május 14.
+              href: hr-whats-new-2020-05-14.md
+            - name: 2020. május 1.
+              href: hr-whats-new-2020-05-01.md
             - name: 2020. április 13.
               href: hr-whats-new-2020-04-13.md
             - name: 2020. április 3.
@@ -473,6 +475,10 @@
                   href: hr-admin-integration-payroll-api-leave-type.md
                 - name: Szabadságkérelem
                   href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Juttatásokhoz kapcsolódó entitások
+              items:
+                - name: Bérszámfejtési dolgozói juttatási terv
+                  href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
             - name: Lehetőségkészletek
               items:
                 - name: Nem
@@ -483,6 +489,10 @@
                   href: hr-admin-integration-payroll-api-award-type.md
                 - name: Folyamat típusa
                   href: hr-admin-integration-payroll-api-process-type.md
+                - name: Juttatási terv típus fedezete
+                  href: hr-admin-integration-payroll-api-benefit-plan-type-cover.md
+                - name: Munkavállalói juttatási program státusza
+                  href: hr-admin-integration-payroll-api-benefit-employee-plan-status.md
     - name: Használati útmutató
       items:
         - name: Áttekintés
