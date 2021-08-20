@@ -2,7 +2,7 @@
 title: Rács funkciói
 description: Ez a témakör ismerteti a rács vezérlőelem számos erőteljes funkcióját. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 08/04/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: b7a1809a3012af86ad9ba39da8721c63b3c4b885
-ms.sourcegitcommit: 2f766e5bb8574d250f19180ff2e101e895097713
+ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "5923598"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775242"
 ---
 # <a name="grid-capabilities"></a>Rácsfunkciók
 
@@ -158,6 +158,13 @@ Ha a szervezet egy olyan oldalt észlel, amelyen problémák lépnek fel az új 
  ```this.forceLegacyGrid();```
 
 Ezt az API-t a 2021 októberi kiadásig kell figyelembe venni, amikor az új rácsvezérlő használata kötelezővé válik. Ha bármilyen probléma az API használatát igényli jelentse azokat a Microsoftnak.
+
+### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Új rács használatának kikényszerítése egy laphoz a rács korábbi elutasítását követően
+Ha az új rács használatát egy adott oldalra vonatkozóan elutasította, akkor az alapproblémák megoldása után később érdemes lehet újra engedélyeznie az új rácsot. Ehhez egyszerűen el kell távolítania a következő hívását: `forceLegacyGrid()`. A módosítás csak akkor lép hatályba, ha az alábbiak valamelyike bekövetkezik:
+
+- **Környezet újratelepítése**: Amikor egy környezetet frissítenek és újratelepítenek, az új rácsból (FormControlReactGridState) elutasított lapokat tároló táblázat automatikusan törlődik.
+
+- **Tábla kézi törlése**: Fejlesztési forgatókönyvek esetén SQL segítségével törölni kell a FormControlReactGridState táblát, majd újra kell indítani az AOS-t. Ez a műveletkombináció visszaállítja az új rácshálót elutasító lapok gyorsítótárazását.  
 
 ## <a name="developer-size-to-available-width-columns"></a>[Fejlesztői] Oszlopok rendelkezésre álló szélességre méretezése
 Ha egy fejlesztő beállítja a **WidthMode** tulajdonságot **SizeToAvailable** értékre az új rácsban található oszlopokhoz, akkor ezek az oszlopok kezdetben ugyanolyan szélességgel rendelkeznek, mintha a tulajdonság **SizeToContent** értékre lenne állítva. A rácson belül azonban képesek kiszélesedni, hogy kihasználják az extra elérhető helyet. Ha a tulajdonság több oszlopnál **SizeToAvailable** értékre van állítva, akkor az egyes oszlopok a rácson belül a további rendelkezésre álló szélességet osztják fel. Ha viszont a felhasználó manuálisan átméretezi az egyik oszlopot, akkor az oszlop statikus lesz. Ezen a szélességen marad, és a rendszer nem nyúlik tovább, hogy kihasználja az extra elérhető szélességet.  

@@ -2,7 +2,7 @@
 title: Tervezés negatív tényleges készleten lévő mennyiségekkel
 description: Ez a témakör azt mutatja be, hogy hogyan kezeli a program a negatív aktuális készletet a tervezés optimalizálása során.
 author: ChristianRytt
-ms.date: 02/18/2020
+ms.date: 07/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 1c403e23309dda36dd1c99e22bbae0aa2d6d76a4
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 97688e09aae9706dd85e7965aa08c7ea873a44d81391c39406e2e6367660e0d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758544"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Tervezés negatív tényleges készleten lévő mennyiségekkel
 
@@ -73,17 +73,29 @@ Ebben az esetben a tervezési motor feltételezi, hogy a 13. raktár aktuális k
 
 Az eredmény 25 darabból álló tervezett rendelés. (= 25 db. &minus; 0 db.) a 13. raktár újratöltése 0 darabról 25 darabra.
 
+## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>Tervezés negatív aktuális készletre vonatkozó foglalás esetén
+
+Ha úgy módosítja a készletet, hogy közben tényleges foglalások vannak, olyan helyzet alakulhat, amikor egy rendelés ténylegesen le lesz foglalva a negatív készletből. Ebben az esetben fizikai foglalás létezik, ezért a Tervezési optimalizálás azt feltételezi, hogy az aktuális készlet támogatja azt, még akkor is, ha az aktuális készlet bevételezése még nincs regisztrálva a rendszerben. Ebből következően azt feltételezi, hogy a feltöltés nem szükséges, és nem hoz létre tervezett rendelést a rendelés mennyiségének feltöltéséhez.
+
+Az alábbi forgatókönyv ezt a példát ábrázolja.
+
+### <a name="example"></a>Példa
+
+A rendszer a következő módon van konfigurálva:
+
+- Az *FG* termék létezik és *10* db van belőle. aktuális készleten.
+- A termékkonfiguráció lehetővé teszi a tényleges negatív készletet.
+- *10* db. mennyiségre van egy értékesítési rendelés Az *FG* termékből.
+- Az értékesítési rendelés mennyisége ténylegesen le van foglalva a meglévő aktuális készlettel szemben.
+
+Ezután módosítja az *FG* termék mennyiségét úgy, hogy az aktuális készlet 0 (nulla) legyen. Mivel az aktuális termékkészlet nulla, az értékesítési rendelés mennyisége most negatív készlettel szemben lesz lefoglalva. Ha azonban most futtatja az alaptervezést, nem jön létre tervezett rendelés az értékesítési rendelés ellátásához, mivel a Tervezési optimalizálás feltételezi, hogy a tényleges foglaláshoz szükséges aktuális készlet létezik.
+
 ## <a name="related-resources"></a>Kapcsolódó erőforrások
 
-[Tervezési optimalizálás áttekintése](planning-optimization-overview.md)
-
-[Tervezési optimalizálás indítása](get-started.md)
-
-[A tervezésoptimalizálása illeszkedési elemzése](planning-optimization-fit-analysis.md)
-
-[Tervelőzmények és tervezési naplók megtekintése](plan-history-logs.md)
-
-[Tervezési feladat érvénytelenítése](cancel-planning-job.md)
-
+- [Tervezési optimalizálás áttekintése](planning-optimization-overview.md)
+- [A Tervezési optimalizálás kezdő lépései](get-started.md)
+- [A tervezésoptimalizálása illeszkedési elemzése](planning-optimization-fit-analysis.md)
+- [Tervelőzmények és tervezési naplók megtekintése](plan-history-logs.md)
+- [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

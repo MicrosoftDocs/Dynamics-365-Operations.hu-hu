@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: fe0e63ef742b7bfd09684a94d273a1841d24599c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 076a4dfdc49525eef616d1008073371be1dd4a248cd6f16d395b544ae70e7531
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828273"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757494"
 ---
 # <a name="pick-line-grouping"></a>Kitárolási sor csoportosítása
 
@@ -116,7 +116,7 @@ A kitárolási sor csoportosításának beállítása előtt létre kell hoznia 
     - **M9201 cikk:** *3* egyenként
     - **M9202 cikk:** *9* egyenként
 
-1. Mielőtt kiadja a rendeléseket a raktárba, meg kell győződnie arról, hogy a kitárolási helyek elegendő készlettel rendelkeznek az összes rendelés minden cikkéhez. A **Helyutasítás** beállítás áttekintésével határozza meg, hogy melyik kitárolási helyeket használja az értékesítési rendelések kitároláshoz. Ha a Contoso bemutató adatkörnyezetét használja az *51-es* raktárhoz, erősítse meg, hogy van-e elérhető készlet.
+1. Mielőtt kiadja a rendeléseket a raktárba, meg kell győződnie arról, hogy a kitárolási helyek elegendő készlettel rendelkeznek az összes rendelés minden cikkéhez. A **Helyutasítás** beállítás áttekintésével határozza meg, hogy melyik kitárolási helyeket használja az értékesítési rendelések kitároláshoz. Ha a Contoso bemutató adatkörnyezetét használja az *51*-es raktárhoz, erősítse meg, hogy van-e elérhető készlet.
 
     A készletet minden sorhoz le kell foglalnia.
 
