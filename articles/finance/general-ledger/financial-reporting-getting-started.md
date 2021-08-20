@@ -2,7 +2,7 @@
 title: Pénzügyi jelentéskészítés – áttekintés
 description: Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 Finance pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési képességeket.
 author: aprilolson
-ms.date: 12/04/2020
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf07b12d83221952aefb80ab6a5b651bb4ef3762
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: da997af4c4cab7b99dfa14f185de6a7c057d6831b7ee576787c17b550fa60194
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338157"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748210"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting – első lépések 
 
@@ -47,10 +47,10 @@ Ha pénzügyi jelentést szeretne létrehozni és generálni egy jogi személy s
 -   Számlatükör
 -   Pénznem
 -   Tranzakció feladása legalább egy számlára
--   A Fő számla elem a **Főkönyv > Főkönyv beállítása > Financial Reporting beállítása** elem Kijelölve oszlopában van felsorolva.
+-   A MainAccount a **Financial Reporting beállítása** lehetőség (**Főkönyv > Főkönyv beállítása > Financial Reporting beállítása**) **Kijelölve** oszlopában van felsorolva.
 
 ## <a name="granting-security-access-to-financial-reporting"></a>Biztonsági hozzáférés biztosítása a Financial Reporting szolgáltatáshoz
-A pénzügyi jelentéskészítő funkciók azon felhasználók számára érhetők el, amelyek megfelelő jogosultságokkal és kiadott feladatokkal rendelkeznek a biztonsági szerepkörüknek megfelelően. Az alábbi szakaszok tartalmazzák ezen jogosultságok és feladatkörök listáját, valamint a kapcsolódó szerepköröket.
+A Financial Reporting szolgáltatás funkciói azon felhasználók számára érhetők el, akik megfelelő jogosultságokkal és kiadott feladatokkal rendelkeznek a biztonsági szerepkörüknek megfelelően. Az alábbi szakaszok tartalmazzák ezen jogosultságok és feladatkörök listáját, valamint a kapcsolódó szerepköröket.
 
 ### <a name="duties"></a>Feladatkör
 
@@ -79,7 +79,7 @@ A pénzügyi jelentéskészítő funkciók azon felhasználók számára érhet�
 | Pénzügyi jelentések létrehozása            | Pénzügyi jelentések létrehozása            | Vezérigazgató, pénzügyi igazgató, könyvelő                                                            |
 | Pénzügyi jelentések megtekintése                | Pénzügyi teljesítmény ellenőrzése          | Nincs hozzárendelve                                                                   |
 
-Miután hozzáadtunk egy felhasználót vagy egy szerepkör módosult, a felhasználónak el kell tudni érnie a pénzügyi beszámolókat néhány percen belül. 
+Miután hozzáadtak egy felhasználót vagy egy szerepkör módosult, a felhasználónak el kell tudni érnie a Financial Reporting szolgáltatást néhány percen belül. 
 
 > [!NOTE]
 > A sysadmin szerepkör hozzáadódik a pénzügyi beszámoló minden szerepköréhez.
@@ -165,10 +165,47 @@ A jelentéskészítő megnyitásakor problémák merülhetnek fel néhány gyako
   Ha egy másik felhasználó megnyithatja a Jelentéskészítőt, válassza az **Eszközök** elemet , majd kiválaszthatja az **integráció állapota** elemet. Győződjön meg róla, hogy az integrációs leképezés „Vállalat felhasználói biztosítója a vállalatnak” sikeresen lefutott, mert Önhöz hozzárendelték a Financial Reporting használati jogosultságát. 
 * Előfordulhat, hogy egy másik hiba megakadályozta a **Dynamics felhasználó és Financial Reporting felhasználói integrációt** a befejezéstől. Vagy előfordulhat, hogy az adatpiac alaphelyzetbe állítása megtörtént, de még nem fejeződött be, vagy más rendszerhiba történt. Próbálja meg újra futtatni a folyamatot később. Ha a probléma továbbra is fennáll, forduljon a rendszergazdához.
 
-3. probléma: Továbbléphet a ClickOnce-jelentéstervező bejelentkezési oldalán, de a Jelentéskészítőben nem hajtható végre a bejelentkezés. 
+3. probléma: Továbbléphet a **ClickOnce jelentéstervező** bejelentkezési oldalán, de a Jelentéskészítőben nem hajtható végre a bejelentkezés. 
 
-* A helyi számítógépen a bejelentkezési hitelesítő adatok megadásakor beállított idő csak a Financial Reporting kiszolgáló idejétől számított öt percen belül lehet. Ha több, mint öt perc eltérés van, akkor a rendszer nem engedélyezi a bejelentkezést. 
-* Ebben az esetben azt javasoljuk, hogy a Windows automatikus beállításával engedélyezze a számítógép idejét. 
+* A rendszerbe való bejelentkezéskor a helyi számítógépen beállított időnek öt percen belül kell lennie a Financial Reporting kiszolgálón lévő időhöz képest. Ha a különbség öt percnél nagyobb, a rendszer nem engedi a bejelentkezést. 
+* Ha a számítógépen lévő idő eltér a Financial Reporting kiszolgálón lévő időtől, javasoljuk, hogy engedélyezze a számítógép idejének automatikus beállítására vonatkozó Windows opciót. 
+
+## <a name="troubleshoot-report-designer-issues-with-event-viewer"></a>A jelentéskészítővel kapcsolatos problémák hibaelhárítása az eseménynaplóval
+
+Az Eseménynapló segítségével elemezheti a Financial Reporting használata során felmerülő egyes problémákat. 
+
+### <a name="what-happens-when-you-have-connections-issues-with-financial-reporting"></a>Mi történik, ha a Financial Reporting szolgáltatással kapcsolatos kapcsolati problémái vannak? 
+
+Az alábbi lépésekkel hatékonyabbá teheti a Microsoft ügyfélszolgálatával folytatott beszélgetéseket, és gyorsabban kaphat megoldásokat. 
+ 
+A következő lépésekben a Financial Reporting szolgáltatáshoz tartozó Eseménynapló üzenetei bekapcsolásának folyamatát ismertetjük. Az Eseménynapló által generált naplók segítenek az ügyfélszolgálati szakértőknek a kapcsolati probléma forrásának gyors azonosításában. A naplók másolatát küldje be a jegyével együtt, amikor kapcsolatba lép az ügyfélszolgálattal.
+
+> 1.    Másolja a RegisterETW.zip fájlt a kliens munkaállomásra (lehetőleg az Asztalra), és csomagolja ki a [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster) fájlt.
+
+> 2.    Győződjön meg róla, hogy a Windows Eseménynapló be van zárva.
+
+> 3.    Nyisson meg egy Administrator PowerShell parancssort, és lépjen abba a könyvtárba, ahol a RegisterETW.ps1 található.
+
+> 4.    Futtassa a következő parancsot: .\RegisterETW.ps1
+   
+   A sikeres kimenetet a PowerShellben a következő üzenet jelzi: **Befejezett RegisterETW parancsfájl**.
+Nyissa meg újra az Eseménynaplót, és most már látni fogja ezeket a naplókat a **Microsoft > Dynamics** alatt: * MR-Client * MR-DVT * MR-Integration * MR-Logger * MR-Reporting * MR_SchedulerTasks * MR-Sql * MR-TraceManager
+   
+> 5. Reprodukálja a problémát a Report Designerben.
+   
+> 6. Exportálja az MR-Logger eseményeit az Eseménynapló segítségével.
+
+## <a name="troubleshoot-issues-connecting-to-financial-reporting"></a>A Financial Reporting szolgáltatáshoz való csatlakozással kapcsolatos problémák elhárítása
+
+Probléma: A következő hibaüzenetet kapja: "Nem sikerült csatlakozni a Financial Reporting kiszolgálóhoz".
+
+* Határozza meg, hogy a probléma a Chrome és az Edge internetes böngészőkben jelentkezik-e.
+* Ha a probléma csak egy böngészőben jelentkezik, akkor ez lehet a ClickOnce problémája. 
+* Amikor megkapja a kapcsolódási hibaüzenetet, válassza az **Ellenőrzés** lehetőséget a kapcsolat teszteléséhez, és nézze meg, milyen üzenet jelenik meg. 
+* A probléma oka lehet, hogy egy másik felhasználónak nincs hozzáférése a Financial Reporting szolgáltatáshoz. Ha egy felhasználónak nincs hozzáférése, akkor egy üzenetet kap, amely szerint nincs jogosultsága.
+* Ha a probléma több böngészőben is jelentkezik, győződjön meg arról, hogy a munkaállomáson az óra Automatikus értékre van állítva.
+* Működjön együtt olyan felhasználóval, aki biztonsági rendszergazdai jogokkal rendelkezik a Dynamics 365 Finance alkalmazásban, és rendszergazdai jogosultsággal rendelkezik a hálózati tartományban, jelentkezzen be a munkaállomásra, és nézze meg, hogy tud-e csatlakozni. Ha tud csatlakozni, a probléma a hálózati engedélyekkel lehet összefüggésben.
+* A munkaállomáson ideiglenesen tiltsa le a tűzfalat. Ha ezután képes csatlakozni a Report Designerhez, a probléma a tűzfallal van. Működjön együtt a szervezet informatikai osztályával a probléma megoldása érdekében.
 
 ## <a name="additional-resources"></a>További erőforrások
 - [Pénzügyi jelentések megtekintése](view-financial-reports.md)
