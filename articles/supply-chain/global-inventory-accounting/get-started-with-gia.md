@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 07d3222680d9d9bff639f34eca5fea64d753ffd1
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
+ms.openlocfilehash: 90fcbdc5c9dd4301225952d885794bd4d03ef825fd5590896be13eacfad1f979
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336979"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773296"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Első lépések a Global Inventory Accounting szolgáltatással
 
@@ -42,7 +42,7 @@ A Global Inventory Accounting jelenleg nem támogatja a Supply Chain Management 
 > [!IMPORTANT]
 > A Global Inventory Accounting csak akkor használható, ha engedélyezve van az LCS-szolgáltatásban engedélyezett, nagy rendelkezésre állású környezet (nem OneBox környezet). Ezenkívül a Supply Chain Management 10.0.19-es vagy újabb verziójának is futnia kell.
 
-A Global Inventory Accounting nyilvános előnézetére való regisztrációhoz küldje el e-mailben az LCS-környezetazonosítót a [Global Inventory Accounting csoportnak](mailto:GlobalInventoryAccounting@service.microsoft.com). Ha jóváhagyta a programot, a csoport egy követő e-mailt küld, amely tartalmaz egy Global Inventory Accounting bétakulcsot és a szolgáltatási végpontokat. Miután megkapja a béta kulcsot, [telepítheti a bővítményt](#install).
+A Global Inventory Accounting nyilvános előnézetére való regisztrációhoz küldje el e-mailben az LCS-környezetazonosítót a [Global Inventory Accounting csoportnak](mailto:GlobalInvAccount@microsoft.com). Ha jóváhagyta a programot, a csoport egy követő e-mailt küld, amely tartalmaz egy Global Inventory Accounting bétakulcsot és a szolgáltatási végpontokat. Miután megkapja a béta kulcsot, [telepítheti a bővítményt](#install).
 
 ## <a name="licensing"></a>Licenckezelés
 

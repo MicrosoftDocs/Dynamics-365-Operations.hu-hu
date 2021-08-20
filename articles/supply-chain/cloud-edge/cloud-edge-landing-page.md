@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ffb1cedc08b033532580fda1349ade32b7dc1eb1
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6354809"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780674"
 ---
 # <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Felhőalapú és peremhálózat-léptékű egységek gyártási és raktárkezelési munkaterhelésekhez
 
@@ -102,7 +102,7 @@ A jelenlegi működési környezetnek **Önkiszolgáló** típusúnak kell lenni
 > [!IMPORTANT]
 > A szolgáltatott infrastruktúraként (IaaS) futtatott környezetek nem támogatottak. Ezek a környezetek általában **Microsoft által kezelt** típussal vannak megjelölve az LCS-ben. Ha ilyen típusú környezettel rendelkezik, a Microsoft kapcsolattartóval együtt kell dolgoznia az **Önkiszolgáló** típussal való áttelepítési időrendet.
 
-A Microsoft összes Supply Chain Management felhőkörnyezetének átállása folyamatban van az IaaS-modellről a Service Fabricben tárolt topológiára. Ez az áthelyezés jobb skálázhatóságot eredményez, és megkönnyíti a szolgáltatásmenedzsmentet. Így a telepítési és karbantartási műveletek gyorsabbak. Hasonlóképpen a szolgáltatásösszetevőket a mikroszolgáltatások koncepciójának megfelelően áttelepítik, és a szolgáltatásgazda modell egy virtuális gép (VM) modellről egy könnyű tárolóra bontott architektúrára [telepíti át](https://docs.microsoft.com/virtualization/windowscontainers/about/containers-vs-vm).
+A Microsoft összes Supply Chain Management felhőkörnyezetének átállása folyamatban van az IaaS-modellről a Service Fabricben tárolt topológiára. Ez az áthelyezés jobb skálázhatóságot eredményez, és megkönnyíti a szolgáltatásmenedzsmentet. Így a telepítési és karbantartási műveletek gyorsabbak. Hasonlóképpen a szolgáltatásösszetevőket a mikroszolgáltatások koncepciójának megfelelően áttelepítik, és a szolgáltatásgazda modell egy virtuális gép (VM) modellről egy könnyű tárolóra bontott architektúrára [telepíti át](/virtualization/windowscontainers/about/containers-vs-vm).
 
 Végső soron ugyanaz a Service Fabric-alapú tárolóra bontott szolgáltatási infrastruktúra fogja működtetni a szolgáltatás felhő- és peremhálózati példányait is, attól függetlenül, hogy a példány a felhő egy központja, vagy a felhőben vagy a peremhálózaton található skálázási egység.
 

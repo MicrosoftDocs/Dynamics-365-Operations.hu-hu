@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: db75b09f1ae1f83a88a5e5eaef0c8c1b8eab5901
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 27dc29109693c06913c8107e27e79a48cf2c9db7146ff3a5919305366641af3d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774461"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Kulcsrakész jelentések generálása és futtatása
 
@@ -36,7 +36,7 @@ A bemutató adatsor típusa, melyet a vállalat használt az útmutató készít
 4. Adjon meg egy dátumot a Kezdő dátum mezőben.
 5. Adja meg a dátumot a „Záró dátum” mezőben.
 6. A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-7. A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\Central\Houston” lehetőséget.
+7. A fán válassza ki a 'Contoso Retail\Contoso Retail USA\Central\Houston' lehetőséget.
     * Ez megmutatja az alapértelmezett szervezeti hierarchiát a Commerce jelentési célja esetében.   Ugorjon a Szervezet felügyelete > Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a Commerce jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop. A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy az Áruházak régiók szerint az alapértelmezett szervezeti hierarchia a jelentési célra.     
 8. Kattintson az OK gombra.
 9. Válasszon ki egy lehetősége a Nézet mezőben.
@@ -48,7 +48,7 @@ A bemutató adatsor típusa, melyet a vállalat használt az útmutató készít
 2. Adjon meg egy dátumot a Kezdő dátum mezőben.
 3. Adja meg a dátumot a „Záró dátum” mezőben.
 4. A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-5. A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\West\Seattle” lehetőséget.
+5. A fán válassza a 'Contoso Retail\Contoso Retail USA\West\Seattle' lehetőséget.
     * Ez megmutatja az alapértelmezett szervezeti hierarchiát a Commerce jelentési célja esetében. Ugorjon a Szervezet felügyelete > Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a Commerce jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop. A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy az Áruházak régiók szerint az alapértelmezett szervezeti hierarchia a jelentési célra.     
 6. Kattintson az OK gombra.
 7. Kattintson az OK gombra.
