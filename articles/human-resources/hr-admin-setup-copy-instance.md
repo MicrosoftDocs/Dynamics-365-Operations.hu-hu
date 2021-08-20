@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd5a92470b711b9d316e4fe96aecadd7252ff807
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 48fef68dc3e5935f0032ca006840202b53d577e06e5376ead0b66eca2a9c36bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6360149"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740839"
 ---
 # <a name="copy-an-instance"></a>Példány másolása
 
@@ -52,9 +52,9 @@ A Human Resources-adatbázis másolásakor a következő események történnek:
 
 - A Microsoft Azure Blob-tárolóban lévő dokumentumok nem kerülnek át egyik környezetből a másikba. Ennek megfelelően a rendszer nem másolja a csatolt dokumentumokat és sablonokat, és a forráskörnyezetben maradnak.
 
-- Az összes felhasználó elérhetetlen lesz a rendszergazdai felhasználó és az egyéb belső szolgáltatási felhasználói fiókok kivételével. A Rendszergazda felhasználó törölheti vagy álcázhatja az adatokat, mielőtt a többi felhasználó visszakerül a rendszerbe.
+- A "Rendszergazda" biztonsági szerepkörrel rendelkező felhasználók és más belső szolgáltatási felhasználói fiókok kivételével egyik felhasználó sem lesz elérhető. A Rendszergazda felhasználó törölheti vagy álcázhatja az adatokat, mielőtt a többi felhasználó visszakerül a rendszerbe.
 
-- A Rendszergazda felhasználónak végre kell hajtania a szükséges konfigurációs változtatásokat, például az integrációs végpontok újracsatlakoztatását meghatározott szolgáltatásokhoz vagy URL-címekhez.
+- A "Rendszergazda" biztonsági szerepkörrel rendelkező felhasználóknak el kell végezniük a szükséges konfigurációs módosításokat, például az integrációs végpontok újrakapcsolását bizonyos szolgáltatásokhoz vagy URL-címekhez.
 
 ## <a name="copy-the-human-resources-database"></a>Human Resources-adatbázis másolása
 
@@ -71,11 +71,11 @@ A feladat végrehajtásához először másolja a példányt, majd jelentkezzen 
 
 4. A **Példány másolása** munkaablakban válassza ki azt a példányt, amelyet felül szeretne írni, majd válassza a **Másolás** parancsot. Várjon, amíg a **Másolás állapota** mező értéke **Kész** értékre módosul.
 
-   ![[Felülírandó példány kiválasztása.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Válassza ki a felülírandó példányt.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Válassza ki a **Power Platform** lehetőséget, majd jelentkezzen be a Microsoft Power Platform Admin Centerbe.
 
-   ![[Power Platform kiválasztása.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Válassza a Power Platform lehetőséget.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Válassza ki a másolni kívánt Power Apps-környezetet, majd válassza a **Másolás** parancsot.
 
@@ -111,7 +111,7 @@ Néhány elemet nem másolt át a program, mert környezetspecifikusak. Ilyenek 
 
 Ezenkívül a következő állapotok módosulnak egy példány másolásakor:
 
-- A rendszergazda kivételével minden felhasználó **Letiltva** állapotban van.
+- A "Rendszergazda" biztonsági szerepkörrel rendelkező felhasználók kivételével minden felhasználó **Letiltott** állapotra van beállítva.
 
 - Minden kötegelt feladat – kivéve néhány rendszerfeladatot – **Visszatartás** értékre van állítva.
 

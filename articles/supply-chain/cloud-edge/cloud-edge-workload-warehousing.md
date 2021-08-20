@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dc065684952cbbe2a324b766dc8c465371cdb49d
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 725b6dea98805baaf3f4d60b3922543067a205bc7196a05f33af21a6cd680a37
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345500"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740695"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -142,7 +142,7 @@ A következő munkarendelés-típusok jelenleg támogatottak a WES számítási 
 
 - Értékesítési rendelés
 - Átmozgatási probléma
-- Feltöltés
+- Feltöltés (a termelés nyersanyagait nem tartalmazza)
 - Készletmozgás
 - Ciklikus leltározás
 - Beszerzési rendelések (raktári rendelésekhez kapcsolódó)
@@ -298,6 +298,7 @@ A következő táblázat összefoglalja, hogy mely raktárkezelési termelési h
 | Készként jelentés és késztermék betárolása | Igen | Igen |
 | Társ- és melléktermék betárolása | Igen | Igen |
 | <p>A termeléshez kapcsolódó összes egyéb raktárkezelési folyamat, beleértve:</p><li>Kiadás raktárba</li><li>Termelés hullámfeldolgozása</li><li>Nyersanyag kitárolása</li><li>Kanban betárolás</li><li>Kanban kitárolás</li><li>Termelési rendelés indítása</li><li>Termelési selejt</li><li>Termelés – utolsó raklap</li><li>Anyagfelhasználás regisztrálása</li><li>Üres kanban</li></ul> | Igen | Nincs |
+| Nyersanyag feltöltése | Nincs | Nincs |
 
 ## <a name="maintaining-scale-units-for-wes"></a>A WES skálázási egységeinek karbantartása
 
