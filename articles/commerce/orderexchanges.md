@@ -2,7 +2,7 @@
 title: Csere konfigurálása és feldolgozása visszárurendelésen
 description: Ez a témakör a cserék visszáru esetén való konfigurálását részletezi a Dynamics 365 Commerce szolgáltatásban.
 author: josaw1
-ms.date: 11/12/2018
+ms.date: 07/28/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 46d6e912aca64951da2865f5609a9dc22fbbcbe3
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 488f6fb5af6451bc462566a9714054b49eb1a80b8264528778797f6a39647764
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5804601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758336"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Csere konfigurálása és feldolgozása visszárurendelésen
 
@@ -32,7 +32,10 @@ Azonban a funkció hozzáadásra került azokhoz a támogatási forgatókönyvek
 
 ## <a name="configure-commerce-to-support-exchanges-on-return-orders"></a>A Commerce konfigurálása a visszárurendeléseken történő cserék támogatására
 
-Kövesse az alábbi lépéseket, ha szeretné a rendszert úgy konfigurálni, hogy támogassa a visszárurendeléseken történő cseréket.
+> [!NOTE]
+> A Commerce 10.0.20-as és újabb verziójában elérhető egy "Egységes visszaküldés feldolgozási tapasztalat a pénztárban" nevű új funkció. Ha engedélyezi ezt a funkciót, az alábbi beállítási lépések nem szükségesek. **A visszaküldések feldolgozása értékesítési rendelésként** véglegesen konfigurált beállítássá válnak, és ezt nem lehet megváltoztatni.
+
+A következő lépések szerint konfigurálhatja a rendszert a visszárurendelésekkel kapcsolatos adatcsere támogatására (ha nincs engedélyezve az **Egységes visszaküldés feldolgozási tapasztalat a pénztárban** funkció.
 
 1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce paraméterek** menüpontra. A **Vevői rendelések** gyorslapon állítsa a **Visszárurendelések feldolgozása értékesítési rendelésként** beállítást **Igen** értékre.
 2. Futtassa a **Globális konfigurációelosztási ütemezés** feladatot (**1110**).
