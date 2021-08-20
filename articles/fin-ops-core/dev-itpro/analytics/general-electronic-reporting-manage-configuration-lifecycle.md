@@ -2,7 +2,7 @@
 title: Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése
 description: Ez a témakör ismerteti az Elektronikus jelentés (ER) konfigurációk életciklusának kezelését a Dynamics 365 Finance megoldás esetén.
 author: NickSelin
-ms.date: 04/13/2021
+ms.date: 07/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bb7844a009bc35f7151827b8e675cb39f71459fd
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: b8b61082cf17707c952b6e07613769a671c349bb8fa92c21e3fe8524ef62dcb2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6345738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767779"
 ---
 # <a name="manage-the-electronic-reporting-er-configuration-lifecycle"></a>Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése
 
@@ -82,20 +82,34 @@ A fejlesztői környezetben megtervezett ER-konfigurációk [feltölthetők](#da
 
 ![ER-konfigurációs életciklus.](./media/ger-configuration-lifecycle.png)
 
-## <a name="data-persistence-consideration"></a><a name="data-persistence-consideration" />Adatperzisztencia figyelembe vétele
+## <a name="data-persistence-consideration"></a>Adatperzisztencia figyelembe vétele
 
 Az ER [konfiguráció](general-electronic-reporting.md#Configuration) különböző [verzióit](general-electronic-reporting.md#component-versioning) külön-külön is [importálhatja](tasks/er-import-configuration-lifecycle-services.md) a Finance példányba. Az ER-konfiguráció új verziójának importálása esetén a rendszer szabályozza ennek a konfigurációnak a vázlatverzióját:
 
-   - Ha az importált verzió alacsonyabb, mint a jelenlegi Finance példány konfigurációjának legmagasabb verziója, akkor a konfiguráció vázlatverziójának tartalma változatlan marad.
-   - Ha az importált verzió magasabb, mint a jelenlegi Finance példány konfigurációjának bármely más verziója, akkor a program átmásolja az importált verzió tartalmát ennek a konfigurációnak a vázlatverzióba, hogy folytatható legyen a legutóbbi befejeződött verzió szerkesztése.
+- Ha az importált verzió alacsonyabb, mint a jelenlegi Finance példány konfigurációjának legmagasabb verziója, akkor a konfiguráció vázlatverziójának tartalma változatlan marad.
+- Ha az importált verzió magasabb, mint a jelenlegi Finance példány konfigurációjának bármely más verziója, akkor a program átmásolja az importált verzió tartalmát ennek a konfigurációnak a vázlatverzióba, hogy folytatható legyen a legutóbbi befejeződött verzió szerkesztése.
 
 Ha a konfiguráció tulajdonosa az aktuálisan aktivált konfigurációs [szolgáltató](general-electronic-reporting.md#Provider), akkor ennek a konfigurációnak a vázlatverziója látható a **Konfigurációk** lap **Verziók** gyorslapján (**Szervezet felügyelete** > **Elektronikus jelentés** > **Konfigurációk**). A megfelelő ER tervezővel kiválaszthatja a konfiguráció vázlatverzióját, és [módosíthatja](er-quick-start2-customize-report.md#ConfigureDerivedFormat) a tartalmát. Ha szerkesztette az ER-konfiguráció vázlatverzióját, akkor a tartalma már nem egyezik meg a jelenlegi Finance példány konfigurációjának legmagasabb verziójával. A módosítások elvesztésének megakadályozása érdekében a rendszer hibát jelenít meg azzal, hogy az importálás nem folytatható, mert a konfiguráció verziója magasabb, mint a konfigurációnak a jelenlegi Finance példányban érvényes legmagasabb verziója. Ilyen esetben például az **X** formátumkonfigurációnál, ez a hiba jelenik meg: **Az „X” formátum verziója nem fejeződött be**.
 
 A vázlatverzióban bevezetett módosítások visszavonásához válassza ki a Finance eszközben az ER-konfiguráció legmagasabb befejeződött vagy megosztott verzióját a **Verziók** gyorslapon, majd válassza a **Verzió beszerzése** lehetőséget. A kiválasztott verzió tartalmát a program a vázlatverzióba másolja.
 
+## <a name="applicability-consideration"></a>Alkalmazhatósági megfontolás
+
+Amikor egy ER-konfiguráció új verzióját tervezi, meghatározhatja annak más szoftverkomponensektől való [függőségét](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md). Ez a lépés előfeltétele annak, hogy a konfiguráció verziójának ER-adattárból vagy külső XML-fájlból történő letöltését ellenőrizze, valamint a verziót később is használja. Amikor megpróbálja importálni egy ER-konfiguráció új verzióját, a rendszer a konfigurált előfeltételek alapján ellenőrzi, hogy a verzió importálható-e.
+
+Bizonyos esetekben megkövetelheti, hogy a rendszer figyelmen kívül hagyja a konfigurált előfeltételeket, amikor az ER-konfigurációk új verzióit importálja. Ha szeretné, hogy a rendszer az importálás során figyelmen kívül hagyja az előfeltételeket, kövesse az alábbi lépéseket.
+
+1. Nyissa meg a következőt: **Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**.
+2. A **Konfigurációk** oldal műveleti ablaktábláján, a **Konfigurációk** lapon, a **Speciális beállítások** csoportban válassza a **Felhasználói paraméterek** lehetőséget.
+3. Állítsa a **Termékfrissítések és verzió-előfeltételek ellenőrzésének kihagyása importálás közben** opciót **Igen** értékre.
+
+    > [!NOTE]
+    > Ez a paraméter a felhasználó- és a vállalatspecifikus.
+
 ## <a name="additional-resources"></a>További erőforrások
 
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 
+[Az ER-konfigurációk függőségének meghatározása más összetevőknél](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
