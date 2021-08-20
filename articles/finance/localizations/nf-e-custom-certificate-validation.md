@@ -2,7 +2,7 @@
 title: NF-e egyéni tanúsítvány érvényesítése
 description: Ez a témakör az NF-e egyéni tanúsítvány érvényesítéséről és használatáról ad tájékoztatást.
 author: gionoder
-ms.date: 10/06/2020
+ms.date: 07/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,24 +15,19 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 895513f51798a797ebf59f8a5be4f5cde006726d
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 8144e16b127bdbe954ef44f52c5ac71689a2036e6085e9a4ccc8bb17f91ae9b8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5813968"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6755591"
 ---
 # <a name="nf-e-custom-certificate-validation"></a>NF-e egyéni tanúsítvány érvényesítése
 
 [!include [banner](../includes/banner.md)]
 
-Az NF-e egyéni tanúsítvány érvényesítési funkciójának bekapcsolásakor az egyéni érvényesítés lehetővé teszi a webszolgáltatásokkal való kapcsolatot. Erre a kapcsolatra azért van szükség, hogy továbbítsa az NF-e-t, és fogadni tudja a SEFAZ-tól kapott engedélyt.
+A brazil legfelsőbb szintű hitelesítésszolgáltató által kiállított tanúsítványok **Kiszolgálóhitelesítési cél** tulajdonsága alapértelmezés szerint ki van kapcsolva, és manuálisan kell engedélyezni. Bizonyos körülmények között az automatikus tanúsítványfrissítés ezt a tulajdonságot letilthatja. Ha ez megtörténik, az a TLS-kapcsolatot is befolyásolja, és többé nem lesz megbízható. Ez érinti Minas Gerais (MG) és Paraná (PR) államban a brazil elektronikus pénzügyi dokumentum 55-ös modelljének (NF-e) kibocsátását a termelési környezetekben.
 
-A V5-tanúsítványból származó **Kiszolgálóihitelesítési cél** tulajdonságot a brazil legfelsőbb szintű hitelesítésszolgáltató adja ki. Ez a tulajdonság alapértelmezés szerint ki van kapcsolva, és manuálisan kell engedélyezni. Bizonyos körülmények között az automatikus tanúsítványfrissítés ezt a tulajdonságot letilthatja. Ha ez történik, akkor az hatással lehet a TLS-kapcsolatra, amely így a továbbiakban már nem megbízható. Ezen felül a Minas Gerais (MG) és Paraná (PR) államok számára gyártási környezetre vonatkozó NF-e kiadása is nehézségekbe ütközhet.
-
-Ez a frissítés alternatív megoldást kínál a tanúsítványok hitelesítésére, ami azt jelenti, hogy biztonságos kommunikációt létesíthető.
-
-
-
+Az **NF-e egyéni tanúsítványérvényesítés** javításának engedélyezéséhez lépjen a **Funkciókezelés** lehetőségre. Ez a funkció alternatív megoldást kínál a V5 és V10 tanúsítványok érvényesítésére, és lehetővé teszi a megbízható kapcsolatot a webszolgáltatásokkal, ami az NF-e biztonságos továbbításához és a SEFAZ engedélyezésének fogadásához szükséges.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
