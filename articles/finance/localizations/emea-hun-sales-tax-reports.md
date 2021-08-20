@@ -13,12 +13,12 @@ ms.search.region: Hungary
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9f944cd4dfb36388a2bd5e1fffd6df865bab397b
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.openlocfilehash: 07f0a658a3b44a554ffe7a2d1fb37c6670fa0459eef394dfefc2c854e7867480
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774228"
 ---
 # <a name="sales-tax-reports-for-hungary"></a>Áfajelentések Magyarországról
 
