@@ -72,6 +72,8 @@
                   items:
                     - name: Újdonságok és változások a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.21 (2021. október)
+                      href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (2021. augusztus)
                       href: get-started/whats-new-changed-10-0-20.md
                     - name: Finance 10.0.19 (2021. június)
@@ -1168,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: Pénzügyi naplósablonok megnyitása az Office programban
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Miért nem lehet visszafordítani ezt a tranzakciót?
+                  href: general-ledger/cant-reverse-transctns.md
         - name: Pénzügyi jelentéskészítés
           items:
             - name: Első lépések a Pénzügyi jelentéskészítéssel
@@ -1498,12 +1502,16 @@
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések az elektronikus számlázás használata során
                           href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Új elektronikus számlázási funkció létrehozása
+                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
                         - name: Első lépések a Brazíliára vonatkozó elektronikus számlázás használata során
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázás használata során
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Az elektronikus számlázási szolgáltatás használata a szállítói számlák importálására
+                          href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Az elektronikus számlázás beállítása
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
                     - name: Elektronikus számlázás – GYIK
@@ -1514,8 +1522,12 @@
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
                     - name: Az adószámítás első lépései
                       href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                    - name: Az áfa alkalmazhatósága és az áfacsoport meghatározásának logikája
+                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
                     - name: Adófunkció támogatása átmozgatási rendelésekhez
                       href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Adó kiszámítása az árra, ha engedélyezve van, hogy az Árak tartalmazzák az adókat.'
+                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
                     - name: Adatmezők hozzáadása adókonfigurációkhoz
                       href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                     - name: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
@@ -1528,6 +1540,10 @@
                       items:
                         - name: Jelentés több áfaregisztrációhoz
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
+                        - name: Francia jelentések
+                          items:
+                            - name: Áfabevallás
+                          href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: Hollandiai jelentés
                           items:
                             - name: Áfabevallás
@@ -1544,6 +1560,8 @@
               items:
                 - name: Ausztrália – áttekintés
                   href: localizations/australia.md
+                - name: Ausztrál bankok fájlformátumai
+                  href: localizations/apac-aus-bank-file-formats.md
                 - name: BAS jelentés
                   href: localizations/apac-aus-business-activity-statement.md
                 - name: Jelentési mezők hozzáadása és a BAS-jelentés elkészítése
@@ -1552,6 +1570,8 @@
                   href: localizations/apac-aus-low-value-pool-depreciation.md
                 - name: BAS-okkódok beállítása
                   href: localizations/tasks/set-up-reason-codes-australia-bas.md
+                - name: Fizetési idők jelentési sémája
+                  href: localizations/apac-aus-payment-times-report.md
             - name: Ausztria
               items:
                 - name: Ausztria – áttekintés
@@ -1802,6 +1822,8 @@
                   href: localizations/china.md
                 - name: 'Finance and Operations, amelyet a 21Vianet működtet Kínában'
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
+                - name: Számlacsoportok kiválasztása kínai utalványtípusokhoz
+                  href: localizations/apac-chn-account-groups-selection.md
                 - name: Anyagjegyzékek összehasonlítása
                   href: localizations/apac-chn-bom-comparison.md
                 - name: A számlatükör kínai hierarchiája
@@ -1870,6 +1892,10 @@
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: Áfabevallás (Cseh Köztársaság)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: Bankszámlák banki szimbólumai
+                  href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
+                - name: Közösségi áfa
+                  href: localizations/emea-cze-intra-community-VAT.md
                 - name: Év végi zárás
                   href: localizations/emea-cze-hun-year-end.md
             - name: Dánia
@@ -1992,10 +2018,6 @@
                       href: localizations/tasks/eur-00002-specify-lading-address-intra-community.md
                     - name: Európai Uniós Intrastat nyilatkozat létrehozása
                       href: localizations/tasks/eur-00002-eu-intrastat-declaration.md
-                    - name: Francia Intrastat
-                      href: localizations/emea-fra-intrastat.md
-                    - name: Olasz Intrastat
-                      href: localizations/emea-ita-intrastat.md
                 - name: Készletnapló-jelentések
                   href: localizations/emea-set-up-report-inventory-journal-names.md
                 - name: Számlakibocsátás határidői
@@ -2120,6 +2142,8 @@
                   href: localizations/emea-fra-derogatory-depreciation.md
                 - name: Francia váltók és kötelezvények
                   href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+                - name: Francia Intrastat
+                  href: localizations/emea-fra-intrastat.md
                 - name: NAF-kódok és siret-számok
                   href: localizations/emea-fra-naf-codes-siret-numbers.md
                 - name: NAF-kódok és Siret-számok beállítása
@@ -2138,6 +2162,8 @@
                   href: localizations/tasks/fr-00004-setup-method-payment.md
                 - name: Fizetési mód módosítása a vevőnél
                   href: localizations/tasks/fr-00004-update-method-payment-customer.md
+                - name: Áfabevallás
+                  href: localizations/emea-fra-VAT-declaration-preview-France.md
                 - name: DAS-2-jelentés
                   href: localizations/emea-fra-das2-report.md
             - name: Németország
@@ -2162,6 +2188,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Elektronikus áfabevallás (ELSTER) továbbítása
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
+                - name: Német Intrastat
+                  href: localizations/emea-deu-intrastat.md
                 - name: Áfabevallási nyilatkozat Németország számára
                   href: localizations/emea-de-vat-declaration.md
                 - name: Elektronikus vevői számlák (jelentés)
@@ -2170,6 +2198,8 @@
                   href: localizations/emea-deu-journal-list-report.md
                 - name: Elektronikus adóbevallások beállítása
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
+                - name: Külön címke nyomtatása értékesítésből származó jóváírásokhoz
+                  href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
             - name: Magyarország
               items:
                 - name: Magyarország – áttekintés
@@ -2616,6 +2646,8 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Banki adatok használhatóságának javítása
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
+                - name: Olasz Intrastat
+                  href: localizations/emea-ita-intrastat.md
                 - name: Vegyes költségek kilogrammonként egy Intrastat-bevallásban
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Szándéknyilatkozatok – A szokásos exportőrök számlázása
@@ -2836,6 +2868,8 @@
                   href: localizations/emea-ltu-isaf.md
                 - name: Standard könyvvizsgálati fájl adóhoz (SAF-T) Litvánia esetén
                   href: localizations/emea-ltu-saf-t.md
+                - name: Vállalaton belüli árumozgás dokumentumainak beállítása
+                  href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
             - name: Malajzia
               items:
                 - name: Malajzia – áttekintés
@@ -2970,14 +3004,18 @@
                   href: localizations/emea-pol-turnover-balances-statement.md
                 - name: A kötelezettségek/kinnlevőségek árfolyam-különbözetének felosztása
                   href: localizations/emea-pol-split-ap-ar-exchange-difference.md
+                - name: PKWiU-kódok beállítása és használata Lengyelországhoz
+                  href: localizations/emea-pol-pkwiu-code.md
                 - name: 'Áfabevallás jegyzékekkel (JPK_V7M, VDEK)'
-                  href: localizations/emea-pol-vdek.md
-                - name: Felkészülés a JPK-V7M jelentésre
-                  href: localizations/emea-pol-vdek-setup.md
-                - name: JPK-V7M jelentés
-                  href: localizations/emea-pol-vdek-reporting.md
-                - name: Konkrét üzleti esetek részletei a JPK-V7M jelentésben
-                  href: localizations/emea-pol-vdek-scenarios.md
+                  items:
+                    - name: 'Áfabevallás jegyzékekkel (JPK_V7M, VDEK) áttekintés'
+                      href: localizations/emea-pol-vdek.md
+                    - name: Felkészülés a JPK-V7M jelentésre
+                      href: localizations/emea-pol-vdek-setup.md
+                    - name: JPK-V7M jelentés
+                      href: localizations/emea-pol-vdek-reporting.md
+                    - name: Konkrét üzleti esetek részletei a JPK-V7M jelentésben
+                      href: localizations/emea-pol-vdek-scenarios.md
             - name: Katar
               items:
                 - name: Katar – áttekintés
@@ -3200,6 +3238,8 @@
                       href: localizations/rus-reporting-deferrals.md
                 - name: Adókönyvelés
                   items:
+                    - name: Adójegyzékek és adójegyzéknaplók létrehozása
+                      href: localizations/rus-profit-tax-registers.md
                     - name: Kiadás- és jövedelemkódok
                       href: localizations/rus-expense-and-income-codes.md
                     - name: Eszközök adóügyi nyilvántartásai
@@ -3216,6 +3256,10 @@
                       href: localizations/rus-bad-debts.md
                     - name: Az adózási eszköz és az adókötelezettség jegyzékeinek számítása
                       href: localizations/rus-calculation-tax-asset-tax-liability-registers.md
+                    - name: Árumozgási adójegyzékek
+                      href: localizations/rus-goods-movement-tax-registers.md
+                    - name: Egyéb adójegyzékek
+                      href: localizations/rus-other-tax-registers.md
             - name: Szaúd-Arábia
               items:
                 - name: Szaúd-Arábia – áttekintés
@@ -3304,8 +3348,6 @@
                   href: localizations/apac-tha-tax-branch-dimensions.md
                 - name: Kimeneti áfával kapcsolatos jelentés
                   href: localizations/apac-tha-sales-vat-report.md
-                - name: Átlagos áfa a beszerzési tranzakciókhoz
-                  href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Adóelőleg
                   href: localizations/apac-tha-withholding-tax.md
             - name: Egyesült Arab Emírségek (UAE)

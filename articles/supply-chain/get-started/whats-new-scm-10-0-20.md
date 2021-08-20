@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
-ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.openlocfilehash: 1aada0d3ebe80e1efb92815c6d429ed5638dabdbac165aa09be1ca281c51b255
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "6641056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773513"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.20 szolgáltatásban (2021. augusztus)
 
@@ -47,7 +47,6 @@ Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tarta
 
 | Szolgáltatásterület | Funkció&nbsp;neve&nbsp;a Funkció-&nbsp;kezelésben | További információ |
 |---|---|---|
-| Alaptervezés | Negatív napok a tervezési optimalizáláshoz | Ez a funkció lehetővé teszi, hogy a tervezési optimalizálás a fedezeti csoportokban megadott **Negatív napok** paraméter alapján figyelembe vegye a késés tűréshatárát. |
 | Alaptervezés | A helyesbített igény-előrejelzés párhuzamos engedélyezése | Ez a funkció engedélyezi a módosított igény-előrejelzés párhuzamos engedélyezését a **Módosított igény-előrejelzés** oldalon. A funkció célja az, hogy javítsa a teljesítményt, amikor nagy számú előrejelzés van engedélyezve. Az engedélyezés során a felhasználó megadhatja a **Szálak számát** az engedélyezési párbeszédpanelen. |
 | Alaptervezés | (Előzetes verzió) Kötegelhető megerősítés és konszolidáció a tervezett tömeges és csomagolt kötegelt rendelésekhez | Ez a funkció lehetővé teszi, hogy kötegelt feladattal erősítsen meg és konszolidáljon tervezett tömeges és csomagolás rendeléseket. |
 | Gyártásvezérlés | Általános útvonalak másolása | Ez a funkció a nem cikkspecifikus útvonalak másolására szolgáló útvonal-másolási funkciót tökéletesíti. Lehetővé teszi a rendszer számára, hogy minden releváns információt (például a helyet, az útvonal csoportját, a forrásszükségletet és a különböző időpontokat) frissítsen, miután az útvonalmásoló funkcióval felülírták a cikkhez még hozzá nem rendelt útvonalat. |

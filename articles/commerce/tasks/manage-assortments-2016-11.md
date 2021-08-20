@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2321c78ba50ba0bfc996e8bd4e96cfbd0843ec45
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
+ms.openlocfilehash: 91d5b7077b033514f699c0393ec151d82dae5bf2551546c7371cb934273310e9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5796754"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769295"
 ---
 # <a name="manage-assortments-november-2016"></a>Szortimentek kezelése (2016. november)
 
@@ -40,7 +40,7 @@ Ez az eljárás bemutatja, hogy hogyan lehet egy új termékszortimentet létreh
 6. Adjon meg egy dátumot a Lejárati dátum mezőben.
 7. Bontsa ki a Commerce csatornák szakaszt.
 8. Kattintson az Új sor hozzáadása lehetőségre.
-9. A fastruktúrában válassza ki a következőt: „Contoso Retail\Elektronika\Boston”.
+9. A fán válassza ki a 'Contoso Retail\Electronics\Boston' lehetőséget.
 10. Kattintson a Hozzáadás gombra.
 11. Kattintson az OK gombra.
 12. Bontsa ki a Termékek szakaszt.
