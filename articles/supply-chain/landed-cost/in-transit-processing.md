@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: ecf8caa7f31c560af2cbc929a37f3ca02bd0da44
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
+ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6021200"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744798"
 ---
 # <a name="goods-in-transit-processing"></a>Úton lévő áruk feldolgozása
 
@@ -104,6 +104,7 @@ Az áruk érkeztetési napló létrehozásával is bevételezhetők. Az érkezte
 1. Nyissa meg a hajóutat, a tárolót vagy a levelet.
 1. A műveleti ablakban a **Kezelés** lapon a **Funkciók** csoportban válassza az **Érkeztetési napló létrehozása** lehetőséget.
 1. Az **Érkeztetési napló létrehozása** párbeszédpanelen adja meg a következő értékeket:
+
     - **Mennyiség inicializálása** – A mennyiség szállítás alatt lévő mennyiségből való beállításához állítsa *Igen* értékre. Ha ez a beállítás *Nem* értékű, nem lesz beállítva alapértelmezett mennyiség az úton lévő áruk soraiból.
     - **Létrehozás az úton lévő árukból** – A mennyiségeknek a kijelölt hajóút, konténer vagy levél kijelölt úton lévő áruk sorából történő megadásához állítsa *Igen* értékre a beállítás.
     - **Létrehozás rendeléssorokból** – A beállítás *Igen* értékre állításával beállítható az érkeztetési napló alapértelmezett mennyisége a beszerzésirendelés-sorokból. Az érkeztetési naplóban szereplő alapértelmezett mennyiséget csak akkor lehet ilyen módon beállítani, ha a beszerzési rendelés sorában szereplő mennyiség megegyezik az úton lévő áruk rendelésén szereplő mennyiséggel.
@@ -140,4 +141,21 @@ A Partraszállítási költség hozzáad egy új, *Úton lévő áruk* nevű mun
 
 ### <a name="work-templates"></a>Munkasablonok
 
+Ez a szakasz olyan funkciókat ír le, amelyekhez a **Partraszállási költség** modul hozzáad a munkasablonokhoz.
+
+#### <a name="goods-in-transit-work-order-type"></a>Úton lévő áruk munkarendelési típus
+
 A Partraszállítási költség hozzáad egy új, *Úton lévő áruk* nevű munkarendelés-típust a **Munkasablonok** oldalhoz. Ezt a munkarendelés-típust ugyanúgy kell konfigurálni, mint a [beszerzési rendelés munkasablonjait](/dynamicsax-2012/appuser-itpro/create-a-work-template).
+
+#### <a name="work-header-breaks"></a>Munkafejléc törések
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
+Az *Úton lévő áruk* típusú munkarendeléssel rendelkező munkarendelési sablonokat be lehet állítani munkafejlécek felosztására. A **Munkasablonok** oldalon hajtsa végre az alábbi lépések valamelyikét:
+
+- A sablon **Általános** lapján állítsa be a munkafejléc maximumait. Ezek a maximumok ugyanúgy működnek, mint a beszerzési rendelések munkasablonjain. (További tájékoztatás a [beszerzési rendelés munkasablonjai](/dynamicsax-2012/appuser-itpro/create-a-work-template) részben található.)
+- A **Munkafejléc törése** gombbal meghatározhatja, hogy a rendszer mikor hozzon létre új munkafejléceket a rendezéshez használt mezők alapján. Ha például munkafejlécet szeretne létrehozni minden egyes tárolóazonosítóhoz , válassza a műveleti panelen a **Lekérdezés szerkesztése** lehetőséget, majd adja hozzá a **Tárolóazonosító** mezőt a lekérdezésszerkesző **Rendezés** lapjához. A **Rendezés** lapra hozzáadott mezők *csoportosítási mezőként* választhatók ki. A csoportosítási mezők beállításához válassza a műveleti panel **Munkafejléc törlései** elemet, majd minden egyes, csoportosítási mezőként használni kívánt mezőhöz jelölje be a **Csoportosítás adott mező szerint** oszlopban található jelölőnégyzetet.
+
+A partraszállási költség a [várton felüli tranzakciót](over-under-transactions.md) hoz létre, ha a regisztrált mennyiség meghaladja az eredeti rendelési mennyiséget. Amikor elkészült egy munkafejléc, a rendszer frissíti a fő rendelési mennyiség készlettranzakcióinak állapotát. Először azonban frissíti a vártnál nagyobb tranzakcióhoz kapcsolódó mennyiséget, miután az fő rendelést teljesen megvásárolták.
+
+Ha visszavon egy már regisztrált vártnál nagyobb tranzakció munkafejlécét, akkor a vártnál nagyobb tranzakciót előbb csökkenti a visszavont mennyiséggel. Miután a vártnál nagyobb tranzakciót 0-ra (nulla) csökkentették, a rekord törlődik, és a további mennyiségek regisztrációja törlődik a fő rendelési mennyiséggel szemben.

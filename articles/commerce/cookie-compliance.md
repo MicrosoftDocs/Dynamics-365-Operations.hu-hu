@@ -2,7 +2,7 @@
 title: Cookie-k megfelelősége
 description: Ez a témakör a cookie-megfelelőséggel és a Microsoft Dynamics 365 Commerce által tartalmazott alapértelmezett irányelvekkel kapcsolatos szempontokat ismerteti.
 author: BrianShook
-ms.date: 07/01/2021
+ms.date: 07/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 71b2e0e8d0a7db6cbbc8b9b4024b067bd5c6a2a1
-ms.sourcegitcommit: 43962e6fedaf55aab2f28f53bc38a69d2ff58403
+ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "6333069"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747697"
 ---
 # <a name="cookie-compliance"></a>Cookie-k megfelelősége
 
@@ -54,6 +54,10 @@ A következő táblázat felsorolja a Dynamics 365 Commerce helyek által felado
 | \_msdyn365___muid_                            | Akkor használatos, ha a kísérletezés aktiválva van a környezetben: felhasználóazonosítóként használatos a kísérletezési célokhoz. | 1 év |
 | \_msdyn365___exp_                             | Akkor használatos, ha a kísérletezés aktiválva van a környezetben: a teljesítmény terheléselosztásának mérésére használatos.         | 1 óra |
 | d365mkt                                       | Akkor használatos, ha az üzlet helyjavaslataizoz tartozó felhasználói IP-cím nyomon követésének hely alapú észlelési szolgáltatása engedélyezve van a Commerce webhely-szerkesztőjében, a **Webhelybeállítások \> Általános \> Helyalapú áruházészlelés engedélyezése** részen.      | 1 óra |
+| \_msdyn365___tuid_                           | Csak akkor használatos, ha a kísérletezés aktiválva van egy környezetben; egy GUID-t generál, amely felhasználói azonosítóként szolgál. Az érték akkor változik, ha a felhasználó bejelentkezési állapota változik.      | 1 év |
+| \_msdyn365___aud_0                          | A célzás által használt szegmensértékeket tárolja, és csak akkor használatos, ha a célzás egy lapon vagy egy webhely egyik felhasználója által kért töredéken konfigurálják. A sütit csak akkor helyezi el a rendszer, ha a szegmensértékek egy külső fél szegmentációszolgáltatótól származnak.      | 7 nap |
+| \_msdyn365___aud_1                           | A célzás által használt szegmensértékeket tárolja, és csak akkor használatos, ha a célzás egy lapon vagy egy webhely egyik felhasználója által kért töredéken konfigurálják. A sütit csak akkor helyezi el a rendszer, ha a szegmensértékek egy külső fél szegmentációszolgáltatótól származnak.      | 7 nap |
+| \_msdyn365___aud_2                           | A célzás által használt szegmensértékeket tárolja, és csak akkor használatos, ha a célzás egy lapon vagy egy webhely egyik felhasználója által kért töredéken konfigurálják. A sütit csak akkor helyezi el a rendszer, ha a szegmensértékek egy külső fél szegmentációszolgáltatótól származnak.      | 7 nap |
 
 Ha egy webhely felhasználója a webhely bármelyik közösségi média hivatkozását kiválasztja, az alábbi táblában található cookie-k is nyomon lesznek követve a böngészőikben.
 
