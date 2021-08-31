@@ -332,9 +332,7 @@
                       href: database/api/v1/reference-create-export.md
                     - name: Műveleti tevékenység állapotának lekérése
                       href: database/api/v1/reference-get-status.md
-                    - name: Környezetek indítása és leállítása
-                      href: database/api/v1/reference-start-stop-environments.md
-        - name: Bemutatóadatok
+        - name: Bemutató adatok
           items:
             - name: Bemutató adatok – áttekintés
               href: ../fin-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
@@ -368,8 +366,10 @@
                       href: deployment/plannedmaintenance-selfservice.md
                     - name: Üzletmenet-folytonosság és vészhelyreállítás
                       href: sysadmin/business-continuity-disaster-recovery.md
-                - name: Azure Resource Manager felvételi folyamat teljesítése
+                - name: Az Azure Resource Manager felvételi folyamatának teljesítése
                   href: deployment/arm-onboarding.md
+                - name: Az Azure Resource Manager felvételi folyamatának teljesítése az USA kormányzati LCS-projektjeire vonatkozóan
+                  href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute és Finance and Operations
                   href: deployment/expressroute.md
                 - name: Finance and Operations architektúra
@@ -944,6 +944,16 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS partnerek számára
                   href: lifecycle-services/getting-started-lcs.md
+                - name: RESTful API-k
+                  items:
+                    - name: Környezetek indítása és leállítása
+                      href: lifecycle-services/api/v1/reference-start-stop-environments.md
+                    - name: Környezeti metaadatok beolvasása
+                      href: lifecycle-services/api/v1/reference-environment-metadata.md
+                    - name: Környezeti előzmények beolvasása
+                      href: lifecycle-services/api/v1/reference-environment-history.md
+                    - name: Környezeti RSAT-tanúsítvány irányítószámának beolvasása
+                      href: lifecycle-services/api/v1/reference-download-rsat-certificate.md
                 - name: Új vagy módosult elemek a Lifecycle Services szolgáltatásban
                   href: lifecycle-services/whats-new-lcs.md
             - name: Lifecycle Services használati útmutató
@@ -1134,26 +1144,28 @@
                   items:
                     - name: A Field Service és a Project Service Automation megoldások támogatása
                       href: data-entities/dual-write/field-service-project-service-automation.md
-                    - name: A Potenciális vevők készpénzre váltása megoldás adatainak migrálása az adatintegrátor megoldásból a kettős írás szolgáltatásba
+                    - name: A Potenciális vevők készpénzre váltása megoldás adatainak áttelepítése az adatintegrátor megoldásból a kettős írás szolgáltatásba
                       href: data-entities/dual-write/migrate-prospect-to-cash.md
                     - name: Hibaelhárítás
                       items:
-                        - name: A kettős írás konfigurációjának ellenőrzése a Finance and Operations alkalmazásokban és a Dataverse szolgáltatásban
-                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: Általános hibaelhárítás
+                          href: data-entities/dual-write/dual-write-troubleshooting.md
                         - name: Problémák elhárítása a kezdeti beállításkor
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-setup.md
                         - name: Problémák elhárítása a kezdeti szinkronizációkor
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
-                        - name: A kettős írással kapcsolatos hibaelhárítás a Finance and Operations alkalmazásokban
-                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: Élő szinkronizálási problémák elhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
+                        - name: A kettős írással kapcsolatos hibaelhárítás a Finance and Operations alkalmazásokban
+                          href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
+                        - name: A fél és a globális címjegyzék problémáinak hibaelhárítása
+                          href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: A megoldások érzékenységével kapcsolatos problémák elhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
                         - name: A Finance and Operations alkalmazások frissítése miatti problémák elhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: Általános hibaelhárítás
-                          href: data-entities/dual-write/dual-write-troubleshooting.md
+                        - name: A kettős írás konfigurációjának ellenőrzése a Finance and Operations alkalmazásokban és a Dataverse szolgáltatásban
+                          href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                 - name: Kettős írás – gyakori kérdések
                   href: data-entities/dual-write/dual-write-faq.md
             - name: Virtuális entitások

@@ -222,6 +222,26 @@
                       href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Regulatory Configuration Service – Lifecycle Services-tárhely elavulása
                       href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-konfigurációk letöltése a Supply Chain Managementbe
+                      items:
+                        - name: Konfigurációk letöltése az RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk importálása RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Globális adattár (GR)
+                      items:
+                        - name: Konfigurációk importálása GR-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Az ER-konfigurációk frissített verzióinak importálása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk feltöltése a GR-be
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: Konfigurációk megosztása a GR-ben
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk megszüntetése az RCS Globális adattárban
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elektronikus számlázás
                   items:
                     - name: Elektronikus számlázás áttekintése
@@ -1237,30 +1257,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurációk importálása (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: Globalizációs funkciók az RCS-ben
-                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: ER-konfigurációk letöltése a Supply Chain Managementbe
-                      items:
-                        - name: Konfigurációk letöltése az RCS-ből
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Konfigurációk importálása RCS-ből
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Globális adattár (GR)
-                      items:
-                        - name: Konfigurációk importálása GR-ből
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Az ER-konfigurációk frissített verzióinak importálása
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Konfigurációk feltöltése a GR-be
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
-                        - name: Konfigurációk megosztása a GR-ben
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Konfigurációk megszüntetése az RCS Globális adattárban
-                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
             - name: Rövid útmutatók
               items:
                 - name: ER-formátum beállítása egyéni elektronikus dokumentum generálásához
@@ -1319,7 +1315,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Adatforrásokban történő hibakeresés
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Használja a VONALKÓDOT a vonalkódképek létrehozásához
+                    - name: Használja a VONALKÓD lehetőséget a vonalkódképek létrehozásához
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Modell-hozzárendelések konfigurálása
                   items:
@@ -1573,13 +1569,25 @@
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
             - name: Készlettranzakciók archiválása
               href: inventory/archive-inventory-transactions.md
-            - name: Készletláthatósági bővítmény
-              href: inventory/inventory-visibility.md
+            - name: Készletláthatóság bővítménye
+              items:
+                - name: Készletláthatóság bővítményének áttekintése
+                  href: inventory/inventory-visibility.md
+                - name: Készletláthatóság beállítása
+                  href: inventory/inventory-visibility-setup.md
+                - name: Készletláthatóság konfigurálása
+                  href: inventory/inventory-visibility-configuration.md
+                - name: Készletláthatóság-foglalások
+                  href: inventory/inventory-visibility-reservations.md
+                - name: A Készletláthatóság Power App
+                  href: inventory/inventory-visibility-power-platform.md
+                - name: Készletláthatóság nyilvános API-jai
+                  href: inventory/inventory-visibility-api.md
         - name: IoT-intelligencia
           items:
             - name: IoT-intelligencia kezdőlapja
               href: iot/iot-intelligence-home-page.md
-            - name: Azure erőforrások beállítása
+            - name: Azure-erőforrások beállítása
               href: iot/iot-azure-setup.md
             - name: Az IoT-központhoz tartozó üzenetséma-formátumok
               href: iot/iot-schema-format.md
@@ -1607,6 +1615,8 @@
                   href: master-planning/planning-optimization/release-process.md
                 - name: A Tervezési optimalizálás igazítási elemzése
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: A beépített alaptervezés és a tervezési optimalizálás közötti különbségek
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: A Tervezési optimalizálás által nem használt paraméterek
                   href: master-planning/planning-optimization/not-used-parameters.md
                 - name: Szűrők alkalmazása egy tervre
@@ -1795,7 +1805,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Entitásadatok megnyitása Excelben és frissítésük az Excel-bővítmény segítségével
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Az Excel programban történő megnyitási gyakorlat létrehozása
+            - name: Megnyitás az Excelben típusú felületek GYIK
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Sablonok hozzáadása a Sorok megnyitása az Excelben menühöz
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -1975,8 +1985,6 @@
                   href: procurement/request-quotations.md
                 - name: Ajánlatkérés létrehozása
                   href: procurement/tasks/create-request-quotation.md
-                - name: Lezárt ajánlattétel ajánlatkéréshez
-                  href: procurement/sealed-bidding.md
                 - name: 'Olyan igénylés létrehozása, amely ajánlatkérést használ'
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Pontozási mód létrehozása az ajánlatkérésekhez
@@ -3297,11 +3305,13 @@
                   items:
                     - name: A Warehouse Management mobilalkalmazás újdonságai vagy változásai
                       href: warehousing/whats-new-wma.md
-                    - name: A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
+                    - name: A Warehouse Management mobilalkalmazás telepítése és csatlakoztatása
                       href: warehousing/install-configure-warehouse-management-app.md
                     - name: A raktározási alkalmazás telepítése és csatlakoztatása
                       href: warehousing/install-configure-warehousing-app.md
-                    - name: Vonalkódok beolvasása a Raktárkezelés mobilalkalmazás kamerája segítségével
+                    - name: Mobil vonalkód-támogatás
+                      href: warehousing/mobile-barcode-support.md
+                    - name: Vonalkódok beolvasása a Warehouse Management mobilalkalmazás kamerája segítségével
                       href: warehousing/scan-bar-codes-using-a-camera.md
                     - name: Raktárkezelés mobilalkalmazás kapcsolódási problémáinak hibaelhárítása
                       href: warehousing/troubleshoot-warehouse-app-connection.md
@@ -3311,6 +3321,8 @@
                       href: warehousing/configure-app-field-names-priorities-warehouse.md
                     - name: Mobileszközök beállítása raktári munkához
                       href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: A Warehouse Management mobilalkalmazás lépéscímeinek és utasításainak testreszabása
+                      href: warehousing/mobile-app-titles-instructions.md
                     - name: Azonosítótábla-bevételezés a Warehouse Management mobilalkalmazás használatával
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
@@ -3331,7 +3343,7 @@
                   href: warehousing/mobile-device-user-settings.md
                 - name: Raktározási alkalmazás eseményeinek feldolgozása
                   href: warehousing/warehouse-app-events.md
-                - name: A raktáralkalmazás testreszabása
+                - name: Raktári mobilfolyamatok kiterjesztése
                   items:
                     - name: Folyamatútmutató-keretrendszer
                       href: warehousing/process-guide-framework.md
@@ -3403,8 +3415,8 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Dokumentumirányítási elrendezés azonosítótábla-címkékhez
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Mobil vonalkód-támogatás
-                      href: warehousing/mobile-barcode-support.md
+                    - name: GS1-vonalkódok és QR-kódok
+                      href: warehousing/gs1-barcodes.md
                     - name: Raktár beállítása átmozgatási rendelésekhez
                       href: warehousing/transfer-orders-warehouse.md
                     - name: Raktár konfigurálása – hibaelhárítás

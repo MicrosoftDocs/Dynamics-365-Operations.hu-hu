@@ -1170,6 +1170,8 @@
                   href: general-ledger/yec-mssng-open-blnces.md
                 - name: Pénzügyi naplósablonok megnyitása az Office programban
                   href: general-ledger/open-fincl-jrnls-in-office.md
+                - name: Naplófeladási hiba egyensúlyhiány miatt
+                  href: general-ledger/posting-fail-imbalance.md
                 - name: Miért nem lehet visszafordítani ezt a tranzakciót?
                   href: general-ledger/cant-reverse-transctns.md
         - name: Pénzügyi jelentéskészítés
@@ -1482,6 +1484,26 @@
                       href: localizations/rcs-delete-environment.md
                     - name: Regulatory Configuration Service – Lifecycle Services-tárhely elavulása
                       href: localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/finance/toc.json
+                    - name: ER konfigurációk letöltése a Finance programba
+                      items:
+                        - name: Konfigurációk letöltése az RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurációk importálása RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
+                    - name: Globális adattár (GR)
+                      items:
+                        - name: Konfigurációk importálása GR-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Az ER-konfigurációk frissített verzióinak importálása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurációk feltöltése a GR-be
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurációk megosztása a GR-ben
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurációk megszüntetése az RCS Globális adattárban
+                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
                 - name: Elektronikus számlázás
                   items:
                     - name: Elektronikus számlázás áttekintése
@@ -1520,40 +1542,56 @@
                   items:
                     - name: Adószámítás áttekintése
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Az adószámítás első lépései
-                      href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-                    - name: Az áfa alkalmazhatósága és az áfacsoport meghatározásának logikája
-                      href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
-                    - name: Adófunkció támogatása átmozgatási rendelésekhez
-                      href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-                    - name: 'Adó kiszámítása az árra, ha engedélyezve van, hogy az Árak tartalmazzák az adókat.'
-                      href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
-                    - name: Adatmezők hozzáadása adókonfigurációkhoz
-                      href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
-                    - name: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
-                      href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                    - name: Alapadat-keresés környezetének beállítása
-                      href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
-                    - name: Több adószám
-                      href: localizations/emea-multiple-vat-registration-numbers.md
-                    - name: Jelentés több áfaregisztrációhoz
+                    - name: Beállítás
                       items:
-                        - name: Jelentés több áfaregisztrációhoz
+                        - name: Az adószámítás első lépései
+                          href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: Alapadat-keresés környezetének beállítása
+                          href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                    - name: Meghatározás
+                      items:
+                        - name: Az áfa alkalmazhatósága és az áfacsoport meghatározásának logikája
+                          href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                    - name: Számítás
+                      items:
+                        - name: 'Adó kiszámítása az árra, ha engedélyezve van az Árak tartalmazzák az adókat beállítás'
+                          href: localizations/global-exclude-from-tax-base-amount-calculation.md?toc=/dynamics365/finance/toc.json
+                        - name: Adószámítás kerekítési szabályai
+                          href: localizations/tax-calculation-rounding-rules.md
+                    - name: Több áfanyilvántartás
+                      items:
+                        - name: Több adószám
+                          href: localizations/emea-multiple-vat-registration-numbers.md
+                        - name: Jelentés több áfanyilvántartáshoz
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
-                        - name: Francia jelentések
+                        - name: Franciaországi jelentések
                           items:
                             - name: Áfabevallás
-                          href: localizations/emea-fra-VAT-declaration-preview-France.md
+                              href: localizations/emea-fra-VAT-declaration-preview-France.md
                         - name: Hollandiai jelentés
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU értékesítési lista
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Svájci jelentés
+                          items:
+                            - name: Áfabevallás
+                              href: localizations/emea-che-vat-declaration-switzerland.md
                         - name: Egyesült királyságbeli jelentés
                           items:
                             - name: Felkészülés az MTD-vel való áfaintegrációra
                               href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: Adószámítás engedélyezése átmozgatási rendeléshez
+                      items:
+                        - name: Adófunkció támogatása átmozgatási rendelésekhez
+                          href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
+                    - name: Bővítmény
+                      items:
+                        - name: Adatmezők hozzáadása adókonfigurációkhoz
+                          href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
+                        - name: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
+                          href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
             - name: Jogszabálykövetési frissítések
               href: localizations/regulatory-updates.md
             - name: Ausztrália
@@ -1710,6 +1748,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: NF-e paraméterek beállítása a pénzügyi létesítményhez
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NT2020.005 – Az elektronikus pénzügyi bizonylat (NF-e) elrendezési és ellenőrzési frissítései
+                      href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – Közvetítő értékesítési digitális platform az NF-e esetében
                       href: localizations/latam-bra-nf-e-nt2020-006-v1-00.md
                     - name: NT2019.001 – Adókedvezmények és mentességi szabályok az NF-e/NFC-e esetében
@@ -2330,12 +2370,10 @@
                               href: localizations/apac-ind-GST-set-up-rate-percentage-tables.md
                             - name: Áfahierarchia és a visszatérítési szabályok beállítása
                               href: localizations/apac-ind-GST-set-up-activate-tax-hierarchy-tree.md
-                            - name: Az Indiai GST hivatkozáscsoportjai
+                            - name: India GST hivatkozáscsoportjai
                               href: localizations/apac-ind-gst-reference-groups.md
                         - name: Adótranzakciók
                           items:
-                            - name: GST TDS az áruk és szolgáltatások kifizetésekor
-                              href: localizations/ind-gst-tds-payment-goods-services.md
                             - name: Beszerzési tranzakciók
                               items:
                                 - name: Beszerzések nem regisztrált szállítóktól
@@ -2370,6 +2408,10 @@
                                   href: localizations/apac-ind-GST-purchase-return-order.md
                                 - name: 'Szállítói előlegfizetések, ahol sztornózott költségek merültek fel'
                                   href: localizations/apac-ind-GST-vendor-advance-payment-reverse-charges.md
+                                - name: GST TDS az áruk és szolgáltatások kifizetésekor
+                                  href: localizations/ind-gst-tds-payment-goods-services.md
+                                - name: GST TCS az áruk és szolgáltatások kifizetésekor
+                                  href: localizations/ind-gst-tcs-payment.md
                             - name: Értékesítési tranzakciók
                               items:
                                 - name: Adóköteles áruk értékesítése vevőknek
@@ -3132,14 +3174,16 @@
                           href: localizations/rus-post-budget-fixed-asset-acquisition.md
                         - name: Tárgyi eszközök átvitele
                           href: localizations/rus-fixed-asset-transfer.md
+                        - name: Egységes nyomtatási űrlapok a tárgyi eszközökhöz
+                          href: localizations/printing-forms-fixed-assets.md
+                        - name: Lekérdezések és jelentések
+                          href: localizations/rus-fa-inquiries-reports.md
                     - name: Nem értékes tárgyi eszközök és munkaruházat
                       items:
-                        - name: Nem értékes tárgyi eszközök (Oroszország)
+                        - name: Érték nélküli tárgyi eszközök (Oroszország)
                           href: localizations/rus-not-valuable-assets.md
                         - name: Munkaruházat/különleges felszerelés könyvelése (Oroszország)
                           href: localizations/rus-working-clothes-instruments-accounting.md
-                        - name: Egységes nyomtatási űrlapok a tárgyi eszközökhöz
-                          href: localizations/printing-forms-fixed-assets.md
                 - name: Kötelezettségek és kinnlevőségek
                   items:
                     - name: Jóváírás-helyesbítések (Oroszország)
@@ -3330,6 +3374,8 @@
                   href: localizations/emea-che-esr-customer-payments-import.md
                 - name: Svájci QR-számlák
                   href: localizations/emea-che-swiss-qr-bills.md
+                - name: Áfabevallás
+                  href: localizations/emea-che-VAT-declaration-Switzerland.md
             - name: Thaiföld
               items:
                 - name: Thaiföld – áttekintés
@@ -4101,30 +4147,6 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurációk importálása (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/finance/toc.json
-                - name: Regulatory services (RCS)
-                  items:
-                    - name: Globalizációs funkciók az RCS-ben
-                      href: localizations/rcs-globalization-feature.md?toc=dynamics365/finance/toc.json
-                    - name: ER konfigurációk letöltése a Finance programba
-                      items:
-                        - name: Konfigurációk letöltése az RCS-ből
-                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/finance/toc.json
-                        - name: Konfigurációk importálása RCS-ből
-                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/finance/toc.json
-                    - name: Globális adattár (GR)
-                      items:
-                        - name: Konfigurációk importálása GR-ből
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Az ER-konfigurációk frissített verzióinak importálása
-                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
-                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/finance/toc.json
-                        - name: Konfigurációk feltöltése a GR-be
-                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/finance/toc.json
-                        - name: Konfigurációk megosztása a GR-ben
-                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/finance/toc.json
-                        - name: Konfigurációk megszüntetése az RCS Globális adattárban
-                          href: localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/finance/toc.json
             - name: Rövid útmutatók
               items:
                 - name: ER-formátum beállítása egyéni elektronikus dokumentum generálásához
@@ -4181,7 +4203,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/finance/toc.json
                         - name: Formátumok módosítása és futtatása Dokumentumkezelési fájlok használatára
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/finance/toc.json
-                    - name: Használja a VONALKÓDOT a vonalkódképek létrehozásához
+                    - name: Használja a VONALKÓD lehetőséget a vonalkódképek létrehozásához
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Konfigurálja a KERESÉSI adatforrásokat az ER-alkalmazásspecifikus paraméterek használatára
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/finance/toc.json
@@ -4355,7 +4377,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/finance/toc.json
             - name: Entitásadatok megnyitása Excelben és frissítésük az Excel-bővítmény segítségével
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/finance/toc.json
-            - name: Az Excel programban történő megnyitási gyakorlat létrehozása
+            - name: Megnyitás az Excelben típusú felületek GYIK
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/finance/toc.json
             - name: Sablonok hozzáadása a Sorok megnyitása az Excelben menühöz
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/finance/toc.json
