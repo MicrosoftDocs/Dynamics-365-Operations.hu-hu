@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-01-21
 ms.dyn365.ops.version: Retail 10.0.9 update
-ms.openlocfilehash: 5c32156aea5f43d41b51f34b45b5b6dfedb5cad0f948924ecea9b3d89e6bb402
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4346f9eefa04688c80ce2512a7972bfd4627942c
+ms.sourcegitcommit: 53fad4d4b5fb67aa75550956ec205f456a5be01d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763692"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7388933"
 ---
 # <a name="create-and-update-a-returns-and-refunds-policy-for-a-channel"></a>Visszáruk és visszatérítések irányelvének létrehozása és frissítése a csatornához
 
@@ -42,15 +42,6 @@ Ha engedélyezni szeretné a Commerce központi felületén a csatorna-visszakü
 1. Keresse meg a **Csatornavisszaküldési irányelvek engedélyezése** funkciót a szolgáltatások neveinek listáján.
 1. Válassza az **Engedélyezés most** lehetőséget.
 1. Az **Elosztás ütemezése** lapon futtassa a **1110-es** (globális konfiguráció) feladatot a funkció változtatásának terjesztéséhez.
-
-## <a name="initialize-the-commerce-scheduler"></a>A kereskedelmi tervezés és ütemezés incializálása
-
-A **Csatorna-visszaküldési irányelvek engedélyezése** funkció engedélyezése után inicializálni kell a Commerce ütemezőt, hogy az új funkcióadatbázis-módosításokat hozzá tudja adni a Commerce Data Exchange CDX-szinkronizálással. 
-
-A Commerce ütemezőinicializáláshoz a Commerce központban kövesse az alábbi lépéseket.
-
-- Ugrás a **Retail és Commerce \> Headquarters beállítás \> Kereskedelmi ütemező  \>Kereskedelmi ütemező inicializálása** elemre. Vagy keressen rá a „Commerce ütemező inicializálása” elemre.
-- Győződjön meg arról, hogy a **Kereskedelmi ütemező inicializálása** párbeszédpanelen a **Meglévő konfiguráció törlése** beállítás **Nem** értékre van állítva, majd válassza az **OK** lehetőséget.
 
 ## <a name="configure-return-policy"></a>Konfigurálja a visszaküldési irányelvet
 

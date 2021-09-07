@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31b1d9e26a5c21a6be5fd89992316e1d6e657c183a71d5155d8d76e83362c845
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e9f9504ec87fd58bbf685519108477a48055da93
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721151"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344150"
 ---
 # <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás mezőinek konfigurálása
 
@@ -50,7 +50,7 @@ Amikor a Warehousing alkalmazást a mobileszközön használja, konfigurálható
 <tbody>
 <tr class="odd">
 <td>Preferált beviteli mód</td>
-<td>Ez a beállítás határozza meg, hogy egy keresési mező vagy egy kézi beviteli mező jelenjen-e meg a kijelölt mezőnévnél. Ez a mezők vonalkódhasználaton alapuló megkülönböztetéséhez hasznos. <strong>Megjegyzés:</strong> azon mezőneveknél, amelyeknél az elsődleges beviteli mód beállítása <strong>Beolvasás</strong>, adatokat manuálisan is megadhat, ha a vonalkód nem olvasható vagy sérült.</td>
+<td>Ez a beállítás határozza meg, hogy egy keresési mező vagy egy kézi beviteli mező jelenjen-e meg a kijelölt mezőnévnél. Ez hasznos a mezők megkülönböztetéséhez attól függően, hogy a mezőhöz vonalkódot használnak-e. <strong>Megjegyzés:</strong> Azon mezőnevek esetében, amelyeknél az előnyben részesített beviteli mód <strong>Beolvasás</strong> beállítása van megadva, manuálisan is megadhatja az adatokat, ha a vonalkód nem olvasható vagy sérült.</td>
 </tr>
 <tr class="even">
 <td>Beviteltípus</td>

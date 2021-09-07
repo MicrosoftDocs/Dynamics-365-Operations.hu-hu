@@ -1,8 +1,8 @@
 ---
 title: Életesemények típusának konfigurálása
-description: A Microsoft Dynamics 365 Human Resources az élettartamesemény-típusok használatával határozza meg az olyan eseményeket, amikor lehetőség van az alkalmazotti juttatások beléptetéseinek frissítésére.
-author: andreabichsel
-ms.date: 04/20/2021
+description: A Microsoft Dynamics 365 Human Resources az életeseménytípusokat használja az események meghatározására a munkavállalói juttatások beiratkozásának frissítéséhez.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 44a6848b4a3ed6d5dd00ade27d18cce405f09f94284de4bd39c4c9441abfcd8a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f8f81d6cc00154ca85b41294f4ae2ecb52c908c4
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732825"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423357"
 ---
 # <a name="configure-life-event-types"></a>Életesemények típusának konfigurálása
 
@@ -61,23 +61,23 @@ Az élettartamesemény-típus létrehozásakor a következő élettartam-esemén
 | Életesemény | Helyszín | Eseményindító |
 | --- | --- | --- |
 | **Családi állapot változása** | Dolgozó > Profil > Személyes adatok > Családi állapot| Családi állapot változása |
-| **Foglalkoztatási állapot változása** | Dolgozó > Foglalkoztatás<br>Foglalkoztatási előzmények oldal | Ha egy dolgozónak van meglévő foglalkoztatási adata, akkor egy új, más foglalkoztatási állapotú foglalkoztatási adat létrehozása elindít egy életeseményt.  Egy meglévő, más foglalkoztatási állapotú foglalkoztatási adat frissítése is elindít egy életeseményt.  |
-| **Alkalmazott címváltozása** | Dolgozó > Profil > Címek<br>Dolgozó > Személyes adatok > Személyes kapcsolattartók > Cím | Címváltozás. A címnek elsődlegesnek kell lennie egy életesemény indításához. |
-| **Függő fél változása** | Dolgozó > Profil > Személyes adatok > Személyes kapcsolattartók<br>Alkalmazotti önkiszolgáló rendszer | Egy személyes kapcsolattartó függő félként történő megadása és az **Érvényesség kezdete** meghatározása. Egy személyes kapcsolattartó függő fél **Érvényesség vége** információjának frissítése. A személyes kapcsolattartónak gyermeknek, házastársnak, élettársnak vagy volt házastársnak kell lennie.  |
-| **Szülés vagy örökbefogadás (függő fél)** | Dolgozó > Profil > Személyes adatok > Személyes kapcsolattartók<br>Alkalmazotti önkiszolgáló szolgáltatás > Személyes adatok szerkesztése > Személyes kapcsolattartók | A **Születési dátum** vagy az **Elfogadási dátum** frissítése hozzá lett adva vagy frissítve lett. A gyermek **Születési dátumának** megadása kötelező. |
+| **Foglalkoztatási állapot változása** |<br><ul><li>Dolgozó > Foglalkoztatás</li><li>Foglalkoztatási előzmények oldal</li></ul> | Ha egy dolgozónak van meglévő foglalkoztatási adata, akkor egy új, más foglalkoztatási állapotú foglalkoztatási adat létrehozása elindít egy életeseményt.  Egy meglévő, más foglalkoztatási állapotú foglalkoztatási adat frissítése is elindít egy életeseményt.  |
+| **Alkalmazott címváltozása** |<br><ul><li>Dolgozó > Profil > Címek</li><li>Dolgozó > Személyes adatok > Személyes kapcsolattartók > Cím</li></ul> | Címváltozás. A címnek **elsődlegesnek** kell lennie ahhoz, hogy életeseményt váltson ki. |
+| **Függő fél változása** |<br><ul><li>Munkavállaló > Profil > Személyes információk > Személyes kapcsolatok/li><li>Alkalmazotti önkiszolgáló rendszer</li></ul> | Egy személyes kapcsolattartó függő félként történő megadása és az **Érvényesség kezdete** meghatározása. Egy személyes kapcsolattartó függő fél **Érvényesség vége** információjának frissítése. A személyes kapcsolattartónak gyermeknek, házastársnak, élettársnak vagy volt házastársnak kell lennie.  |
+| **Szülés vagy örökbefogadás (függő fél)** |<br><ul><li>Dolgozó > Profil > Személyes adatok > Személyes kapcsolattartók</li><li>Alkalmazotti önkiszolgáló szolgáltatás > Személyes adatok szerkesztése > Személyes kapcsolattartók</li></ul>| A **Születési dátum** vagy az **Elfogadási dátum** frissítése hozzá lett adva vagy frissítve lett. A gyermek **Születési dátumának** megadása kötelező. |
 | **Fedezetvesztés (házastárs/élettárs)** | Dolgozó > Profil > Személyes adatok > Személyes kapcsolattartók > Függő fél adatai > Fedezetvesztés | A **Fedezetvesztés** és az **Érvényesség dátuma** kiválasztása a személyes kapcsolattartóhoz. |
 | Élettárs foglalkoztatásának változása | Dolgozó > Profil > Személyes adatok > Személyes kapcsolattartók > Függő fél adatai > Alkalmazott | Személyes kapcsolattartó létrehozása és az **Alkalmazott** lehetőség **Igen** értékre való állítása. Személyes kapcsolattartó frissítése és az **Alkalmazott** módosítása.  |
 | **Távollét (házastárs/élettárs)** | Dolgozó > Profil > Személyes adatok > Személyes kapcsolattartók > Függő fél adatai > Távozás | A személyes kapcsolattartó létrehozva, és a **Távollétkérelem érvényességi dátuma** meg van adva. A személyes kapcsolattartó **Távollétkérelme** frissítve van. A személyes kapcsolattartó **Távollétkérelem érvényességi dátuma** frissítve van.  |
-| **Fedezet változása (beosztás)** | Dolgozó > Beosztás-hozzárendelés > Dolgozóhoz rendelt beosztások<br>Beosztások > Beosztások | A dolgozó beosztásának változása a beosztás-hozzárendelési rekordokban. A beosztás változása a dolgozó hozzárendelésében. |
-| **Fedezet változása (fizetés)** | Dolgozó > Kompenzáció > Fix konstrukció<br>Dolgozó > Személyes adatok > Juttatások éves fizetése | Ha a Juttatások kezelése > Emberi erőforrások megosztott paraméterei > Juttatások > Juttatások éves fizetése nem engedélyezett, Dolgozó frissítése > Kompenzáció > Fix terv létre fog hozni egy életeseményt. Ha a Juttatások kezelése > Emberi erőforrások megosztott paraméterei > Juttatások > Juttatások éves fizetése engedélyezett, Dolgozó frissítése > Személyes adatok > Juttatások éves fizetése létre fog hozni egy életeseményt. |
+| **Fedezet változása (beosztás)** |<br><ul><li>Dolgozó > Beosztás-hozzárendelés > Dolgozóhoz rendelt beosztások</li><li>Beosztások > Beosztások</li></ul>| A dolgozó beosztásának változása a beosztás-hozzárendelési rekordokban. A beosztás változása a dolgozó hozzárendelésében. |
+| **Fedezet változása (fizetés)** |<br><ul><li>Dolgozó > Kompenzáció > Fix konstrukció</li><li>Dolgozó > Személyes adatok > Juttatások éves fizetése</li></ul>| Ha a Juttatások kezelése > Emberi erőforrások megosztott paraméterei > Juttatások > Juttatások éves fizetése nem engedélyezett, Dolgozó frissítése > Kompenzáció > Fix terv létre fog hozni egy életeseményt. Ha a Juttatások kezelése > Emberi erőforrások megosztott paraméterei > Juttatások > Juttatások éves fizetése engedélyezett, Dolgozó frissítése > Személyes adatok > Juttatások éves fizetése létre fog hozni egy életeseményt. |
 | **Egészségbiztosítási adó (alkalmazott/függő fél)** | Dolgozó > Profil > Személyes adatok > Személyes kapcsolattartók > Függő fél adatai > Egészségbiztosítási adó érvényességi dátuma | Személyes kapcsolattartó **Egészségbiztosítás érvényességi** dátumának hozzáadása vagy frissítése létrehozza ezt az életeseményt. |
-| **Bíróság által elrendelt tartás** | Dolgozó > Profil > Személyes adatok > Személyes kapcsolattartók > Függő fél > Bíróság által elrendelt tartás (egészségbiztosítás/járadék és érvényességi dátumok) | Személyes kapcsolattartó létrehozása esetén egy életesemény is létrejön, ha a **Bíróság által elrendelt tartás** lehetőség **Igen** értékre van állítva. A **Bíróság által elrendelt tartás** vagy a **Bíróság által elrendelt tartás lejárati dátuma** is elindít egy életeseményt. |
-| **Elhunyt** | Dolgozó > Profil > Személyes adatok > Elhalálozás dátuma | Elhalálozás dátumának megadása vagy frissítése. |
+| **Bíróság által elrendelt tartás** | Munkavállaló > Profil > Személyes adatok > Személyes kapcsolatok > Függő > Bíróság által elrendelt támogatás (QMSCO/QDRO) és tényleges dátumok | Személyes kapcsolattartó létrehozása esetén egy életesemény is létrejön, ha a **Bíróság által elrendelt tartás** lehetőség **Igen** értékre van állítva. A **Bíróság által elrendelt tartás** vagy a **Bíróság által elrendelt tartás lejárati dátuma** is elindít egy életeseményt. |
+| **Elhunyt** | Dolgozó > Profil > Személyes adatok > Elhalálozás dátuma | Egy **Elhunyt dátumot** adunk meg vagy frissítünk. |
 | **Biztosítás igazolása** | Dolgozó > Dolgozó > Verziók > Foglalkoztatási előzmények > Dátumkezelő > Juttatás részletei | **Biztosíthatóság igazolása** lehetőség **Igen** értékre van állítva. **Biztosíthatóság igazolásának megerősítési dátuma** megadva. |
-| **Kedvezményezett** | Dolgozó > Profil > Személyes adatok > Személyes kapcsolattartók | Személyes kapcsolattartó hozzáadása, a **Kedvezményezett** és az **Érvényesség dátuma** mező kitöltése. A személyes kapcsolattartó típusának a következőnek kell lennie: **Gyermek**, **Házastárs**, **Élettárs**, **Testvér**, **Családon belüli kapcsolattartó**, **Egyéb kapcsolattartó** vagy **Szülő**. |
+| **Kedvezményezett** | Dolgozó > Profil > Személyes adatok > Személyes kapcsolattartók | A személyes kapcsolat hozzáadásra kerül, és a **Kedvezményezett** és a **Hatálybalépés napja** mezők kitöltésre kerülnek. A személyes kapcsolattartó típusának a következőnek kell lennie: **Gyermek**, **Házastárs**, **Élettárs**, **Testvér**, **Családon belüli kapcsolattartó**, **Egyéb kapcsolattartó** vagy **Szülő**. |
 | **Alkalmazotti egészségbiztosítási adó** | Dolgozó > Dolgozó > Verziók > Foglalkoztatási előzmények > Dátumkezelő > Juttatás részletei | A **Társadalombiztosításra jogosult** lehetőség **Igen** értékűre állítása. A **Társadalombiztosításra jogosultság dátuma** módosult. |
 | **Születésnap** | Juttatások kezelése > Életesemény változásának feldolgozása | Ezek az életesemények az **Életesemény változásának feldolgozásból** vannak létrehozva. A folyamat elemzi a kiválasztott időszakot és jogi személyt, illetve megkeresi a társított dolgozókat. Kiszámítja a legutóbbi születésnapjukat, és létrehoz egy születésnapi eseményt, ha az még nincs létrehozva. |
-| **Dolgozói jogosultság változása (nem USA)** | Dolgozó > Foglalkoztatás<br>Dolgozó > Dolgozó > Verziók > Foglalkoztatási előzmények | Életesemény létrehozása, ha:<br><ul><li>Új foglalkoztatást hoz létre, valamint van egy korábbi foglalkoztatás, és a dolgozó típusa megváltozik.</li><li>Új foglalkoztatási részletet hoz létre, valamint van egy korábbi foglalkoztatási részlet, és a dolgozó foglalkoztatási típusa vagy foglalkoztatási kategóriája megváltozik.</li><li>Egy foglalkoztatási rekord frissítése, és egy másik dolgozótípus van meghatározva.</li><li>Egy foglalkoztatási részletrekord frissítése, és másik foglalkoztatási típus vagy kategória meghatározása.</li></ul> |
+| **Dolgozói jogosultság változása (nem USA)** |<br><ul><li>Dolgozó > Foglalkoztatás</li><li>Dolgozó > Dolgozó > Verziók > Foglalkoztatási előzmények</li></ul>| Életesemény létrehozása, ha:<br><ul><li>Új foglalkoztatást hoz létre, valamint van egy korábbi foglalkoztatás, és a dolgozó típusa megváltozik.</li><li>Új foglalkoztatási részletet hoz létre, valamint van egy korábbi foglalkoztatási részlet, és a dolgozó foglalkoztatási típusa vagy foglalkoztatási kategóriája megváltozik.</li><li>Egy foglalkoztatási rekord frissítése, és egy másik dolgozótípus van meghatározva.</li><li>Egy foglalkoztatási részletrekord frissítése, és másik foglalkoztatási típus vagy kategória meghatározása.</li></ul> |
 | **Új jogosultság felülbírálása (nem USA)** | Human Resources – Speciális > Juttatások > Konstrukciók > Juttatások > Jogosultsági szabály felülbírálása | Élettartam-esemény feldolgozásának használata<br>Egy dolgozónál a juttatási terv alkalmazhatóságának felülbírálásának létrehozása elindítja ezt az életeseményt.<br>BenefitEligibilityRuleOverride.ValidFrom. |
 | **Jogosultsági szabály felülbírálásának változása (nem USA)** | Human Resources – Speciális > Juttatások > Konstrukciók > Juttatások > Jogosultsági szabály felülbírálása | Ha frissíti egy juttatási terv **Érvényesség kezdete** vagy **Érvényesség vége** lehetőséget egy juttatási terv jogosultsági felülbírálásán, azzal elindítja ezt az életeseményt. |
 | **Jogosultsági szabály felülbírálásának lejárata (nem USA)** | Juttatások kezelése > Életesemény változásának feldolgozása  | Ezek az életesemények az **Életesemény változásának feldolgozásból** vannak létrehozva. A folyamat elemzi a kiválasztott időszakot és jogi személyt, illetve megkeresi a juttatási terv jogosultsági felülbírálását. Életeseményeket hoz létre, ha a felülbírálások lejártak. |

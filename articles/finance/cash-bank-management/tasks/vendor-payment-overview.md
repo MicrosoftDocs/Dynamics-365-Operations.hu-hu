@@ -1,6 +1,6 @@
 ---
 title: Szállítói fizetési áttekintés
-description: Ez a feladatútmutató végigvezeti a szállítói kifizetések létrehozásához használt különböző módszereken, többek között a fizetési javaslat használatán, vagy egy egyszeri fizetés manuális rögzítésén.
+description: Ez az eljárás végigvezeti Önt a szállítói kifizetések létrehozásának különböző módszerein, beleértve a fizetési javaslat használatát vagy az egyszeri kifizetés kézi bevitelét.
 author: kweekley
 ms.date: 06/25/2019
 ms.topic: business-process
@@ -13,25 +13,25 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 997d505cc89eaa39b2bac273a5ae381c1c892a9537cbaa9b45156ecbb6fd237c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 73fd1b46bbf73bb3e65f381289e0b3efa12392b4
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721827"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394438"
 ---
 # <a name="vendor-payment-overview"></a>Szállítói fizetési áttekintés
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a feladatútmutató végigvezeti a szállítói kifizetések létrehozásához használt különböző módszereken, többek között a fizetési javaslat használatán, vagy egy egyszeri fizetés manuális rögzítésén. Ez az eljárás az USMF bemutatócéget használja.
+Ez az eljárás végigvezeti Önt a szállítói kifizetések létrehozásának különböző módszerein, beleértve a fizetési javaslat használatát vagy az egyszeri kifizetés kézi bevitelét. Ez az eljárás az USMF bemutatócéget használja.
 
 1. Válassza a **Navigációs ablaktábla >Modulok > Kötelezettségek > Kifizetések > Kifizetési napló** elemet.
 2. Kattintson az **Új** elemre.
 3. Válassza ki a kifizetési naplót, amelybe a szállítói kifizetéseket menti. 
 4. Válassza ki a naplót, vagy manuálisan adja meg.
 5. Kattintson a **Sorok** pontra.
-6. A **Műveleti ablaktáblán** kattintson a **Fizetési javaslat** elemre.
+6. A **Művelet ablaktáblán** kattintson a **Fizetési javaslat** gombra.
 7. Kattintson a **Fizetési javaslat létrehozása** lehetőségre. A fizetési javaslat egy lekérdezés, amely a kifizetendő számlák kiválasztásában segít. Szerkesztheti a fizetendő számlák listáját a szállítói kifizetések létrehozása vagy generálása előtt.
 8. Válassza ki a számlákat esedékesség dátuma, készpénzfizetési engedmény vagy mindkettő szerint kifizetendő számlák szerint. 
 9. Adja meg a dátumot az esedékességi dátum vagy a készpénzfizetési engedmény dátumával való összehasonlításhoz. 

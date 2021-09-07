@@ -4,24 +4,17 @@ description: Ez a cikk a Finance and Operations és a Dataverse alkalmazások k�
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 779cc80d4cb510e79885919f1c705824ab6ad58b3e2fe1bab7bbec0511d08951
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b4adc2d83667a05d14a26ace23e5bd8026df4b5f
+ms.sourcegitcommit: caa41c076f731f1e02586bc129b9bc15a278d280
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736302"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7380212"
 ---
 # <a name="general-troubleshooting"></a>Általános hibaelhárítás
 
@@ -29,31 +22,10 @@ ms.locfileid: "6736302"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-
 Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos általános információkat tartalmaz.
 
 > [!IMPORTANT]
 > Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazda szerepkört vagy Microsoft Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
-
-## <a name="when-you-try-to-install-the-dual-write-package-by-using-the-package-deployer-tool-no-available-solutions-are-shown"></a>Amikor a Package Deployer eszközzel próbálja meg telepíteni a kettős írású csomagot, nem jelennek meg a rendelkezésre álló megoldások
-
-A Package Deployer eszköz egyes verziói nem kompatibilisek a kettős írású megoldáscsomaggal. A csomag sikeres telepítéséhez győződjön meg arról, hogy a Package Deployer eszköz [9.1.0.20](https://www.nuget.org/packages/Microsoft.CrmSdk.XrmTooling.PackageDeployment.Wpf/9.1.0.20) vagy újabb verzióját használja.
-
-A Package Deployer eszköz telepítését követően telepítse a megoldást tartalmazó csomagot a következő lépések végrehajtásával.
-
-1. Töltse le a legújabb megoldáscsomag-fájlt a Yammer.com oldalról. A csomag zip-fájljának letöltése után kattintson rá jobb gombbal, és válassza a **Tulajdonságok** elemet. Válassza ki a **Zárolás feloldása** jelölőnégyzetet, majd válassza az **Alkalmazás** lehetőséget. Ha nem látja a **Zárolás feloldása** jelölőnégyzetet, akkor a zip-fájl zárolása már fel van oldva, és kihagyhatja ezt a lépést.
-
-    ![Tulajdonságok párbeszédpanel.](media/unblock_option.png)
-
-2. Csomagolja ki a csomag zip-fájlját, és másolja az összes fájlt a **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438** mappába.
-
-    ![A Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 mappa tartalma.](media/extract_package.png)
-
-3. Illessze be az összes másolt fájlt a Package Deployer eszköz **Eszközök** mappájába. 
-4. Futtassa a **PackageDeployer.exe** fájlt a Dataverse-környezet kiválasztásához és a megoldások telepítéséhez.
-
-    ![Az Eszközök mappa tartalma.](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>A beépülő modul nyomkövetési naplójának engedélyezése és megtekintése a Dataverse szolgáltatásban a hiba részleteinek megtekintéséhez
 
@@ -74,18 +46,17 @@ Ha meg szeretné tekinteni a nyomkövetési naplót, hajtsa végre az alábbi l�
 
 ## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Hibakeresési mód engedélyezése az Finance and Operations alkalmazások élő szinkronizálási problémáinak elhárításához
 
-**A hibák megtekintéséhez szükséges szerepkör:** a rendszeradminisztrátor A kettős írás hibák, amelyek származhatnak a Dataverse szolgáltatásból, megjelenhetnek a Finance and Operations alkalmazásban. Bizonyos esetekben a hibaüzenet teljes szövege nem érhető el, mivel az üzenet túl hosszú, vagy személyes azonosításra alkalmas adatokat (PII) tartalmaz. A hibák részletes naplózását a következő lépések végrehajtásával kapcsolhatja be.
+**A hibák megtekintéséhez szükséges szerepkör:** Rendszergazda
 
-1. A Finance and Operations-alkalmazások minden projektkonfigurációjában van egy **IsDebugMode** tulajdonság a **DualWriteProjectConfiguration** táblában. Nyissaa meg a **DualWriteProjectConfiguration** táblát az Excel-bővítmény használatával.
+A Dataverse alkalmazásból származó kettős írású hibák megjelenhetnek a Finance and Operations alkalmazásban. A hibák szóbeli naplózásának engedélyezéséhez kövesse az alábbi lépéseket:
 
-    > [!TIP]
-    > A tábla megnyitásának egyszerű módja a **Tervező** mód bekapcsolása az Excel-bővítményben, majd adja hozzá a **DualWriteProjectConfigurationEntity** entitást a munkalaphoz. További információért lásd: [Táblaadatok megnyitása az Excel programban, és frissítésük az Excel-bővítmény használatával](../../office-integration/use-excel-add-in.md).
-
-2. Állítsa a projekt **IsDebugMode** tulajdonságát **Igen** értékre.
-3. Futtassa a hibákat létrehozó esetet.
-4. A részletes naplók a DualWriteErrorLog táblában érhetők el. Az adatoknak a tábla böngészőjében való kereséséhez használja a következő URL-címet (helyettesítse az **XXX** részt a megfelelő elemmel):
-
-    `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
+1. A Finance and Operations alkalmazásban minden projektkonfigurációhoz van egy **IsDebugMode** jelző a **DualWriteProjectConfiguration** táblában.
+2. Nyissa meg a **DualWriteProjectConfiguration** elemet az Excel bővítménnyel. A bővítmény használatához engedélyezze a tervezési módot a Finance and Operations Excel bővítményben, és adja hozzá a **DualWriteProjectConfiguration** elemet a laphoz. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
+3. Állítsa az **IsDebugMode**-ot **Yes**-re a projektben.
+4. Futtassa a hibákat létrehozó esetet.
+5. A szóbeli naplók a **DualWriteErrorLog** táblában tárolódnak.
+6. Az adatok kereséséhez a táblázatkezelőben használja a következő linket: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, szükség szerint a `999`-t helyettesítve.
+7. Frissítsen újra a [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe) után, amely a 37-es és későbbi platformfrissítésekhez érhető el. Ha ez a javítás telepítve van, akkor a hibakeresési mód több naplót fog rögzíteni.  
 
 ## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Szinkronizálási hibák keresése a Finance and Operations alkalmazás virtuális gépén
 
@@ -116,10 +87,28 @@ Ezután új környezet csatolható.
 Amikor értékesítési rendelést hoz létre a Dynamics 365 Sales modulban, akkor ha a **+ Termékek hozzáadása** gombra kattint, előfordulhat, hogy a rendszer átirányítja a Dynamics 365 Project Operations rendelési sor űrlapjára. Az értékesítésirendelés-sor **adatainak** űrlapját nem lehet arról az űrlapról megtekinteni. Az **adatok** beállítása nem jelenik meg a legördülő listában az **új rendelési sor** alatt. Ennek az az oka, hogy a Projektműveletek már telepítve van a környezetben.
 
 Az **Adatok** űrlapbeállítás újbóli engedélyezéséhez kövesse az alábbi lépéseket:
+
 1. Lépjen a **Rendeléssor** táblára.
-2. Keresse meg az **Adatok** űrlapot az űrlapok csomópont alatt. 
-3. Válassza ki az **Adatok** űrlapot, és kattintson a **Biztonsági szerepkörök engedélyezése** pontra. 
+2. Keresse meg az **Adatok** űrlapot az űrlapok csomópont alatt.
+3. Válassza ki az **Adatok** űrlapot, és kattintson a **Biztonsági szerepkörök engedélyezése** pontra.
 4. Módosítsa a biztonsági beállítást: **Megjelenítés mindenkinek**.
 
+## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Hogyan engedélyezheti és mentheti a hálózati nyomkövetést, hogy a nyomkövetés csatolható legyen a támogatási jegyekhez?
+
+Előfordulhat, hogy a támogatási csapatnak át kell néznie a hálózati nyomvonalakat, hogy bizonyos problémákat elháríthasson. Hálózati nyomvonal létrehozásához kövesse az alábbi lépéseket:
+
+### <a name="chrome"></a>Chrome
+
+1. A megnyitott lapon nyomja meg az **F12** billentyűt, vagy válassza a **Fejlesztői eszközök** lehetőséget a fejlesztői eszközök megnyitásához.
+2. Nyissa meg a **Hálózat** lapot, és írja be a szűrő szövegmezőbe az **integ** szót.
+3. Futtassa a forgatókönyvet, és figyelje meg a naplózott kéréseket.
+4. Kattintson a jobb gombbal a bejegyzésekre, és válassza az **Összes mentése HAR-ként tartalommal** lehetőséget.
+
+### <a name="microsoft-edge"></a>Microsoft Edge
+
+1. A megnyitott lapon nyomja meg az **F12** billentyűt, vagy válassza a **Fejlesztői eszközök** lehetőséget a fejlesztői eszközök megnyitásához.
+2. Nyissa meg a **Hálózat** lapot.
+3. Futtassa le a forgatókönyvet.
+4. Az eredmények HAR-ként történő exportálásához válassza a **mentés** lehetőséget.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

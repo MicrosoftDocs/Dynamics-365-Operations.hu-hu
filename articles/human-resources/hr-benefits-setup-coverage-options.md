@@ -1,8 +1,8 @@
 ---
 title: Fedezeti lehetőségek létrehozása
-description: A Microsoft Dynamics 365 Human Resources fedezeti lehetőségei fedezeti szintek a résztvevőknek egy juttatási csomagban vagy programban.
-author: andreabichsel
-ms.date: 06/25/2021
+description: Ez a témakör a Microsoft Dynamics 365 Human Resources rendszerben található, a résztvevők által egy juttatási tervben vagy programban választott fedezeti lehetőségeket ismerteti.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 447317d0e9cb23bea21dae448048d05a3d989c89df17e4b8ea836201c20aefff
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a553fa1aa4bac0d2fb11b87ee05e4e52c019411d
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741429"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423520"
 ---
 # <a name="create-coverage-options"></a>Fedezeti lehetőségek létrehozása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A fedezeti lehetőségek határozzák meg, hogy kinek jár fedezet, illetve hogy mekkora fedezet érhető el a biztosítási konstrukcióban. Például egy egészségügyi terv esetén lehet egy **csak az alkalmazott** lehetőség, egy **alkalmazott + 1** lehetőség és egy **családra** lehetőség. Az életbiztosításnál lehet **1 x fizetés**, illetve **2 x fizetés** fedezetet kínálni.
+A fedezeti lehetőségek határozzák meg, hogy kinek jár fedezet, illetve hogy mekkora fedezet érhető el a biztosítási konstrukcióban. Például egy egészségügyi biztosítási terv esetében lehet egy **csak munkavállaló**, egy **munkavállaló + 1** opció és egy **családi** opció. Az életbiztosításnál lehet **1 x fizetés**, illetve **2 x fizetés** fedezetet kínálni.
 
 A definiálásukat követően, a juttatások fedezeti beállításai újra felhasználhatók. Egy beállítást egy vagy több tervhez is társítani lehet.
 
@@ -46,7 +46,7 @@ A definiálásukat követően, a juttatások fedezeti beállításai újra felha
    | **Leírás** | A fedezeti beállítás leírása. |
    | **Fedezeti kód** | A fedezeti kódok minimális és maximális összegeket rendelnek hozzá minden jogosult fedezett személytípushoz. A fedezeti kód a jogosultságot vagy azt jelzi, hogy az adott tervtípushoz mekkora fedezetösszeg engedélyezett. A fedezet összegét dollárban vagy százalékban lehet kifejezni. Példa:<ul><li>**Alk+1** – a minősítéshez az alkalmazottnak ki kell választania egy függő felet (ha egynél több van kiválasztva, már nem lehet jogosult).</li><li>**Alk+család** – a minősítéshez az alkalmazottnak legalább két függő felet kell kiválasztania.</li></ul> |
    | **Maximális szám** | A függő felek maximális száma. |
-   | **Állapot** | A fedezeti beállítás állapota. Ha a Fedezeti beállítás állapota inaktív értékre van állítva, akkor a program nem jelöli be a fedezeti beállítást a tervtípusokon. |
+   | **Állapot** | A fedezeti beállítás állapota. Ha a Fedezet opció állapota **Inaktív**, a Fedezet opció nem választható ki a tervtípusoknál. |
    | **Százalék** | A százalékos összeg. Ez a mező csak akkor aktív, ha a Fedezet kódja mezőben % x Fizetés van kiválasztva. |
    | **Osztó** | A(z) % x fedezeti kód kiválasztásakor a számításban használt osztó. |
    | **Százalék minimuma** | Minimális százalék a százalékos fedezeti kód kiválasztása esetén. |
@@ -58,8 +58,8 @@ A definiálásukat követően, a juttatások fedezeti beállításai újra felha
 
    | Mező | Leírás |
    | --- | --- |
-   | **Alkalmazotti hozzájárulás összegének engedélyezése** | Azt adja meg, hogy az alkalmazottak módosíthatják-e az önkiszolgálói juttatás összegét a juttatások kiválasztása alkalmával. Ha bejelöli ezt a jelölőnégyzetet, a rendszer kiszámítja a juttatási terv paramétereit azon hozzájárulás összege alapján, amelyet az alkalmazott önkiszolgáló juttatásként megad. |
-   | **Alkalmazotti fedezet összegének engedélyezése** | Azt adja meg, hogy az alkalmazottak módosíthatják-e a fedezeti juttatás önkiszolgálói összegét a juttatások kiválasztása alkalmával. Ha bejelöli ezt a jelölőnégyzetet, a rendszer kiszámítja a juttatási terv paramétereit azon fedezeti összeg alapján, amelyet az alkalmazott önkiszolgáló alkalmazottként megad. |
+   | **Alkalmazotti hozzájárulás összegének engedélyezése** | Meghatározza, hogy az alkalmazottaknak lehetővé tegye-e a hozzájárulás összegének módosítását a juttatások önkiszolgálásában, amikor a juttatásokat választják. Ha bejelöli ezt a jelölőnégyzetet, a rendszer a juttatási terv paramétereit a munkavállaló által a juttatások önkiszolgáló szolgáltatásban megadott járulékösszeg alapján számítja ki. |
+   | **Alkalmazotti fedezet összegének engedélyezése** | Meghatározza, hogy az alkalmazottaknak lehetővé tegye-e a fedezeti összeg módosítását a juttatások önkiszolgáló szolgáltatásban, amikor a juttatásokat kiválasztják. Ha bejelöli ezt a jelölőnégyzetet, a rendszer kiszámítja a juttatási terv paramétereit azon fedezeti összeg alapján, amelyet az alkalmazott önkiszolgáló alkalmazottként megad. |
 
 6. Válassza a **Mentés** lehetőséget. 
 

@@ -2,7 +2,7 @@
 title: Képek feltöltése
 description: Ez a témakör azt mutatja be, hogyan tölthet fel képeket a Microsoft Dynamics 365 Commerce webhelykészítőben.
 author: psimolin
-ms.date: 03/03/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5f4f84c41e6af23483ccb74a9189cb713016f4ac9d0d9981bf918ca8a71743eb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757398"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423255"
 ---
 # <a name="upload-images"></a>Képek feltöltése
 
@@ -52,10 +52,17 @@ Az alapértelmezett elnevezési konvenció a kategória alapján változik:
 - Kategóriaképek: "**/Categories/\{CategoryName\}.png**"
 - Vevői képek: "**/Customers/\{CustomerNumber\}.jpg**"
 - Alkalmazotti képek: "**/Workers/\{WorkerNumber\}.jpg**"
-- Termékképek: "**/Products/\{ProductNumber\}_000_001.png**"
+- A termékképek neve legyen **"/Products/\{ProductNumber\}\_000_001.png"**
     - A 001 a kép sorszáma, amely lehet 001, 002, 003, 004 vagy 005
 - Termékváltozat-képek: „**/Products/\{ProductNumber\} \^ \{Style\} \^ \{Size\} \^ \{Color\} \^\_000_001.png**”
-    - Például: 93039 \^ \^ 2 \^ Fekete \^_000_001.png
+    - Például: 93039 \^ &nbsp;\^ 2 \^ Black \^\_000_001.png
+- A konfigurációs dimenzióval rendelkező termékváltozatok képeit a „**/Products/\{ProductNumber\} \^ \{Configuration\}\_000_001.png**” névvel kell ellátni.
+    - Például: 93039 \^ LB8017_000_001.png
+
+> [!NOTE]
+> A termékváltozat képeinél, ha a dimenzió értéke üres, a fájlnévben a pontok között két szóköznek kell lennie.
+
+A fenti példák az alapértelmezett konfigurációt használják. Az elválasztó karakter és a méretek konfigurálhatók, és a pontos elnevezések telepítésenként eltérőek lehetnek. A szükséges pontos elnevezési konvenció azonosításának egyik módszere, hogy a böngésző fejlesztői konzolján keresztül megvizsgálja a termékváltozat képkérelmeit, miközben a termék méreteit megváltoztatja az áruház termékadatlapján (PDP).
 
 ## <a name="upload-an-image"></a>Kép feltöltése
 

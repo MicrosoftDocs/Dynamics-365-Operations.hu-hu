@@ -1,8 +1,8 @@
 ---
 title: Tervtípus áttekintése
-description: A konstrukciótípus a Microsoft Dynamics 365 Human Resources alkalmazásban a meghatározott típusú juttatások magas szintű csoportosítása. Minden konstrukciótípusnak van egy terv konstrukciótípus-kódja, amely meghatározza a konstrukció típusának szabályait.
-author: andreabichsel
-ms.date: 06/25/2021
+description: A konstrukciótípus a Microsoft Dynamics 365 Human Resources alkalmazásban a meghatározott típusú juttatások magas szintű csoportosítása.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8966b0aa01795ff00832e480a186c05fa129e7c728112f81cf4f78b6b0915463
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732729"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423344"
 ---
 # <a name="plan-type-overview"></a>Tervtípus áttekintése
 
@@ -32,10 +32,10 @@ Mindegyik konstrukciótípus jelzi, hogy egy alkalmazott regisztrálhat-e egy va
 
 Ha egy konstukciótípus kapcsolattartókat tartalmaz, akkor a konstrukciótípus jelzi, hogy a kapcsolattartók kedvezményezettek vagy függő felek-e. Például egy Alapélettartam konstrukciótípushoz tartozhatnak kedvezményezettek, míg egy Alap orvosi konstukciótípushoz csak függő felek tartozhatnak. Bizonyos esetekben előfordulhat, hogy egy konstrukció nem rendelkezik személyes kapcsolattartókkal. Például egy Rugalmas kiadási számla vagy Parkolási támogatás.
 
-A konstrukciótípus meghatározhatja a fedezeti beállításokat. A fedezeti beállítások a Fedezeti beállítás képernyőn vannak meghatározva. A fedezeti beállítások határozzák meg a juttatás összegét, illetve azokat a kapcsolattartókat, akik jogosultak a konstrukciótípusra. Ha például a kapcsolattartó típusa Kedvezményezett, a fedezeti beállításnak meg kell határoznia, hogy a kedvezményezett milyen feltételekkel kaphat juttatást annak igénybevétele esetén. Ha a kapcsolattartó típusa Függő fél, a fedezeti beállításnak meg kell határoznia a függő fél és az alkalmazott közötti kapcsolatot. 
+A konstrukciótípus meghatározhatja a fedezeti beállításokat. A lefedettségi opciókat a **Lefedettségi opciók** lapon lehet meghatározni. A fedezeti beállítások határozzák meg a juttatás összegét, illetve azokat a kapcsolattartókat, akik jogosultak a konstrukciótípusra. Ha például a kapcsolattartó típusa Kedvezményezett, a fedezeti beállításnak meg kell határoznia, hogy a kedvezményezett milyen feltételekkel kaphat juttatást annak igénybevétele esetén. Ha a kapcsolattartó típusa Függő fél, a fedezeti beállításnak meg kell határoznia a függő fél és az alkalmazott közötti kapcsolatot. 
 
 > [!IMPORTANT]
-> Az űrlap olyan kulcsadatokat tartalmaz, amelyek az új juttatási tervek létrehozásakor rendelkezésre álló lehetőségeket érintik:
+> Az oldal olyan kulcsfontosságú adatokat tartalmaz, amelyek befolyásolják az új juttatási terv létrehozásakor rendelkezésre álló lehetőségeket:
 >
 > - **Terv típuskódja** – ez a mező azt befolyásolja, hogy mi jelenik meg a **Konfiguráció** lapon a tényleges juttatás beállításakor.  
 > - **Párhuzamos regisztráció** – ez a mező határozza meg, hogy engedélyezve van-e több regisztráció. (Egy egészségügyi konstrukciónál ez a mező jellemzően a **Egy beléptetés**.)

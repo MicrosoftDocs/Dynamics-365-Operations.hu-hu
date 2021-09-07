@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: f9dfa54f0a2b849a38c71a041f6d72dd84c762edba3482575b0b7867b1e11a53
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5055d18e57d36bc8218bb0423721056e33fc3018
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716621"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402176"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-finance"></a>Megvalósítási projektmenedzsment képzési katalógus megvalósítása ezzel: Dynamics 365 Finance
 
@@ -61,7 +61,6 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | [7.0 (RTW)/7.1 (Release 1611) verzióról 7.2 (2017. június) verzióra frissítés (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | Ebben a munkamenetben elmagyarázzák, hogyan kell frissíteni a Dynamics 365 Finance and Operations alkalmazás 7.0 (RTW) és 7.1 (1611) verziókról a 7.2 (2017. július) verzióra. Egyértelmű megkülönböztetést teszünk az élő vevők és a folyamatban lévő projektek (még nem élők) között. | Tech Talk (rögzített webes szeminárium) | 58 perc |
 | [Finance and Operations: Frissítés 7.x-ről 8+-ra (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Csatlakozzon a következő TechTalkhoz, amely a 7.X – 8.X frissítési folyamatról fog szólni. Megvitatjuk a különböző forgatókönyveket és lépéseket a kód frissítésére és az adatok frissítésére. A bővíthetőségi kérelmekkel kapcsolatos eseteket, valamint a rájuk adott esetben a szükséges emeléseket is le fogjuk fedni. Kettőből az 1. rész. | Tech Talk (rögzített webes szeminárium) | 61 perc |
 | [AX2012 – Dynamics 365 for Operations frissítés (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Ez a Tech Talk áttekintést nyújt arról, hogyan lehet frissíteni a kódot és az adatokat a Dynamics AX 2012 rendszerről a Dynamics 365 for Operations rendszerre. | Tech Talk (rögzített webes szeminárium) | 45 perc |
-| [Jelentési funkciók a Dynamics 365 for Operations alkalmazásban (VIR810PAL) ](https://community.dynamics.com/365/b/techtalks/posts/reporting-options-in-dynamics-365-for-operations-february-23-2017) | Ez a munkamenet különböző nyomtatási eseteket fog megvitatni a D365 for Operations esetében, például a dokumentum-útválasztóval kapcsolatos tippeket és trükköket. | Tech Talk (rögzített webes szeminárium) | 60 perc |
 | [Analitikai és jelentéskészítési beállítások, nyomtatás és a dokumentum útválasztás ügynök](https://community.dynamics.com/365/b/techtalks/posts/analytics-amp-reporting-options-printing-and-the-document-routing-agent-february-8-2018)| Legyen szíves kövesse ezt a tech beszélgetést a két kapcsolódó témakörről. Először az Enterprise Edition elemzési és jelentéskészítési megoldási mintáit és a Dynamics 365 for Finance and Operations eszközöket fogjuk megvitatni. Másodszor pedig a nyomtatási forgatókönyveket és a dokumentum útválasztási ügynököt fogjuk megvitatni. | Tech Talk (rögzített webes szeminárium) | 45 perc |
 | [Tanfolyam MB-300T01-A: a Dynamics 365 for Finance and Operations alapvető közös jellemzői](https://www.microsoft.com/learning/course.aspx?cid=MB-300T01) | Ez a tanfolyam bemutatja a Microsoft Dynamics 365 for Finance and Operations fő közös jellemzőit. | Oktató által vezetett személyes vagy online képzés; a költség régiónként és partnertől függően változik | 1 nap |
 | [Tanfolyam MB-300T02-A: Dynamics 365 for Finance and Operations alap konfiguráció](https://www.microsoft.com/learning/course.aspx?cid=MB-300T02) | Ez a tanfolyam bemutatja a Microsoft Dynamics 365 for Finance and Operations fő konfigurációs feladatait. | Oktató által vezetett személyes vagy online képzés; a költség régiónként és partnertől függően változik | 1 nap |
@@ -93,6 +92,5 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | [Vizsga MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: gyakori funkciók és végrehajtási eszközök használata; a biztonság, a folyamatok és a beállítások konfigurálása; adatáttelepítés végrehajtása; a megoldás érvényesítése és támogatása. | Vizsga; a költség régiónként változik |
 | [Vizsga MB-310: Microsoft Dynamics 365 for Finance and Operations, pénzügyek](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: a pénzügyi menedzsment beállítása és konfigurálása; közös folyamatok kezelése és alkalmazása; kötelezettségek és követelések végrehajtása és kezelése a költségvetés és a tárgyi eszközök kezelése. | Vizsga; a költség régiónként változik |
 | [Microsoft tanúsított: Dynamics 365 for Finance and Operations, pénzügyi funkciós konzulens munkatárs](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft tanúsított: A Dynamics 365 for Finance and Operations, pénzügyi funkciós konzulensek egyesítik a globális pénzügyeket és műveleteket, és automatizálják a feladatokat és a munkafolyamatokat, egyszerűsítik a vevői rendelést, az értékesítést, a számlázást és a jelentéskészítést. | Tanúsítás; a költség régiónként változik |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

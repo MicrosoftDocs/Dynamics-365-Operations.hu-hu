@@ -1,8 +1,8 @@
 ---
 title: Ismétlődő adatexportálási alkalmazás létrehozása
-description: Ez a cikk azt mutatja be, hogyan lehet olyan Microsoft Azure logikai alkalmazást létrehozni, amely a Microsoft Dynamics 365 Human Resources adatait ismétlődő ütemezéssel exportálja.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Ez a témakör leírja, hogyan hozhat létre egy olyan Microsoft Azure logikai alkalmazást, amely ismétlődő ütemezéssel exportálja az adatokat a Microsoft Dynamics 365 Human Resources rendszerből.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cef9e7f78646a4a5794eb14a9f1ad355768480644504c548afbb32e23fff4cd5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0ce9fe4e77fa968463052e037ca767ed38e72796
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744870"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414762"
 ---
 # <a name="create-a-recurring-data-export-app"></a>Ismétlődő adatexportálási alkalmazás létrehozása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a cikk azt mutatja be, hogyan lehet olyan Microsoft Azure logikai alkalmazást létrehozni, amely a Microsoft Dynamics 365 Human Resources adatait ismétlődő ütemezéssel exportálja. Az oktatóanyag kihasználja a Human Resources DMF-csomagjának REST alkalmazásprogramozási felületét (API) az adatok exportálásához. Az adatok exportálása után a logikai alkalmazás az exportált adatcsomagot a Microsoft OneDrive for Business mappába menti.
+Ez a témakör leírja, hogyan hozhat létre egy olyan Microsoft Azure logikai alkalmazást, amely ismétlődő ütemezéssel exportálja az adatokat a Microsoft Dynamics 365 Human Resources rendszerből. Az oktatóanyag kihasználja a Human Resources DMF-csomagjának REST alkalmazásprogramozási felületét (API) az adatok exportálásához. Az adatok exportálása után a logikai alkalmazás az exportált adatcsomagot a Microsoft OneDrive for Business mappába menti.
 
 ## <a name="business-scenario"></a>Üzleti eset
 

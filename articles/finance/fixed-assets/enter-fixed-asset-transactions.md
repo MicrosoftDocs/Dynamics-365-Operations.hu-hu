@@ -1,8 +1,8 @@
 ---
 title: Tárgyieszköz-tranzakciók beállításai
 description: Ez a témakör a tárgyieszköz-tranzakciók létrehozásának különféle módszereit mutatja be.
-author: ShylaThompson
-ms.date: 02/07/2019
+author: moaamer
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1857d68a0dfaa25386f19344e4cb3ddc9ffd39b8a75860a1642773d6bd59cce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9e2d7f21d8c88185383e252f8f6324208493c81
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764263"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344690"
 ---
 # <a name="fixed-asset-transaction-options"></a>Tárgyieszköz-tranzakciók beállításai
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör a tárgyieszköz-tranzakciók létrehozásának különféle módszereit mutatja be.
 
@@ -58,14 +59,16 @@ A tárgyieszköz-tranzakciók bármely típusát fel lehet adni az Általános n
 | Értékcsökkenés                        | Tárgyi eszközök             | Tárgyi eszközök                              |
 |                                     | Főkönyv           | Általános napló                           |
 | Kivezetés                            | Tárgyi eszközök             | Tárgyi eszközök                              |
-| ** **                               | Főkönyv           | Általános napló                           |
-| ** **                               | Kinnlevőségek      | Szabadszöveges számla                         |
+|                                     | Főkönyv           | Általános napló                           |
+|                                     | Kinnlevőségek      | Szabadszöveges számla                         |
 
-A tárgyi eszközök értékcsökkenési időszakok fennmaradó értéke nem frissül, ha az értékcsökkenési tranzakció típusú naplósort manuálisan hozták létre vagy importálták egy adatentitáson keresztül. Ez az érték frissül, ha az értékcsökkenés javaslati folyamata segítségével hozták létre a naplósort.
+A fennmaradó érték nem frissül a tárgyi eszköz értékcsökkenési időszakaihoz, amikor az értékcsökkenési tranzakciótípusú naplósor manuálisan jön létre, vagy adategységen keresztül importálódik. A fennmaradó érték akkor frissül, amikor az értékcsökkenési javaslat folyamatot használják a naplósor létrehozására.
 
 További tudnivalókért lásd: [Tárgyieszköz-integráció](fixed-asset-integration.md).
 
-### <a name="transactions-that-require-different-voucher-numbers"></a>Különböző bizonylatszámokat igénylő tranzakciók
+A rendszer megakadályozza, hogy az értékcsökkenést kétszer ugyanarra az időszakra könyvelje. Ha például két felhasználó külön-külön készít értékcsökkenési javaslatokat januárra, akkor az első felhasználó értékcsökkenése az első naplóban kerül könyvelésre. Amikor a második felhasználó értékcsökkenést könyvel a második naplóban, a rendszer ellenőrzi az értékcsökkenés utolsó futtatásának dátumát, és másodszor nem könyvel értékcsökkenést ugyanarra az időszakra.
+
+### <a name="transactions-that-require-a-different-voucher-number"></a>Más utalványszámot igénylő tranzakciók
 
 A következő tárgyieszköz-tranzakciók különböző bizonylatszámokat fognak használni:
 

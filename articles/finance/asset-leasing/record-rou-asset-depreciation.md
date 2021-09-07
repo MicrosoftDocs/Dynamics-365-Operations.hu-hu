@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 40af957582f9cdf4e1caf3ab03ead41f2823b42d59d427c7e7623cd8688e1827
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02364a0871e9a54f52c7c526cd1897165d52ec68
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778362"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345370"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Használatijog-eszköz értékcsökkenésének rögzítése (előzetes verzió)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 A szervezet mérlegében elismert lízingek esetében a használatijog-eszközt (ROU) havi rendszerességgel kell elszámolni. Ez a témakör azt mutatja be, hogyan lehet létrehozni naplóbejegyzést az amortizációhoz. Az amortizáció megterheli a költség főkönyvi számlát, és jóváírja a halmozott értékcsökkenési főkönyvi számlát a feladási profil és a lízingtípus beállítása alapján. Ezek a bejegyzések minden lízinghez létrehozhatók, vagy több lízinghez is létrehozhatók a kötegnapló funkció használatával.
 
@@ -36,6 +38,9 @@ A szervezet mérlegében elismert lízingek esetében a használatijog-eszközt 
 
 2. Jelölje ki az értékcsökkenési időszakot, majd válassza a **Napló létrehozása** lehetőséget. Megjelenik egy üzenet arról szólt, hogy létrehozták az értékcsökkenés rögzítésére használt naplót.
 3. Válassza a **Naplók \> Eszközlízing-naplók** lehetőséget az **Eszközlízing napló** lap megnyitásához, ahol megtekintheti a létrehozott értékcsökkenési költségnapló-bejegyzést.
+
+   A rendszer bizonyos pénzügyi mezőket zárolja a szerkesztéstől, hogy megakadályozza a tranzakciók és az ütemtervek közötti eltéréseket. Néhány zárolt mező: **Számla**, **Összegek**, **Pénzügyi dimenziók**, **Pénznem** és **Tranzakciótípus**. Ezenkívül nem lesz lehetősége naplóbejegyzési sorokat hozzáadni vagy törölni az eszközlízing naplóbejegyzésekben, mivel ez eltéréseket okozhat az ütemezések és a tranzakciók között.
+
 4. Jelölje ki a naplóbejegyzést, majd válassza a **Feladás** lehetőséget az értékcsökkenési tétel Főkönyvbe történő rögzítéséhez.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>A ROU-eszközamortizációs költség kiszámítása az operatív lízingek esetében

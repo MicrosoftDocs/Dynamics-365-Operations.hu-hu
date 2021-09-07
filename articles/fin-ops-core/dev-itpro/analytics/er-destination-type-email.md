@@ -2,7 +2,7 @@
 title: E-mail ER céltípusa
 description: Ez a témakör bemutatja, hogyan kell konfigurálni egy e-mail-célt az Elektronikus jelentéskészítési (ER) formátumok egyes MAPPA vagy FÁJL összetevőihez.
 author: NickSelin
-ms.date: 07/27/2021
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769319"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343860"
 ---
 # <a name="email-er-destination-type"></a>E-mail ER céltípusa
 
@@ -53,9 +53,22 @@ Egy vagy több kimeneti fájl e-mailben történő elküldéséhez kövesse az a
 
 ## <a name="configure-an-email-destination"></a>Egy e-mail-célhely konfigurálása
 
-Megadhatja az e-mail feladóját és címzettjeit, valamint szerkesztheti az e-mail üzenet tárgyát és szövegét. Beállíthat állandó szöveget az e-mail tárgyához és szövegtörzséhez, vagy használhatja az ER-[képleteket](er-formula-language.md) az e-mail szövegek dinamikus létrehozásához.
+### <a name="email-content"></a>E-mail tartalma
 
-Alapértelmezés szerint a rendszer az aktuális felhasználó nevében küld e-mailt. Más e-mail feladó megadásához a **Feladó** mezőt kell beállítania.
+Szerkesztheti az e-mail üzenet tárgyát és szövegét.
+
+A **Tárgy** mezőbe írja be az e-mail tárgyának szövegét, amely a futáskor generált elektronikus üzenet tárgymezőjében jelenjen meg. A **Törzs** mezőbe írja be az e-mail szövegét, amely az elektronikus üzenet törzs mezőjében jelenik meg. Beállíthat állandó szöveget az e-mail tárgyához és törzséhez, vagy [ER-képletekkel](er-formula-language.md) dinamikusan létrehozhatja az e-mail szövegét futásidőben. A konfigurált képletnek [String](er-formula-supported-data-types-primitive.md#string) típusú értéket kell visszaadnia.
+
+Az e-mail törzse az e-mail klienstől függően TEXT vagy HTML formátumban készül. Bármilyen elrendezést, stílust és védjegyezést használhat, amit a HTML és a szövegközti stíluslapok (CSS) lehetővé tesznek.
+
+> [!NOTE]
+> Az e-mail kliensek olyan elrendezési és stílusbeli korlátozásokat írnak elő, amelyekhez HTML-kiigazítás szükséges, és CSS amit az üzenet törzséhez használhat. Javasoljuk, hogy ismerkedjen meg a HTML létrehozásának legjobb gyakorlataival, amelyeket a legnépszerűbb e-mail kliensek támogatnak.
+>
+> A megfelelő kódolást használja a kocsivissza megvalósításához, a törzs formázásától függően. További információért lásd a [String](er-formula-supported-data-types-primitive.md#string) adattípus definícióját.
+
+### <a name="email-addresses"></a>E-mail címek
+
+Megadhatja az e-mail feladóját és az e-mail címzettjeit. Alapértelmezés szerint az e-maileket az aktuális felhasználó nevében küldi a rendszer. Más e-mail feladó megadásához a **Feladó** mezőt kell beállítania.
 
 > [!NOTE]
 > Amikor be van állítva egy e-mail célja, a **Feladó** mező csak a `ERFormatDestinationSenderEmailConfigure`, **A feladó e-mail címének beállítása ER formátumú célállomásokhoz** biztonsági jogosultsággal rendelkező felhasználók számára látható.

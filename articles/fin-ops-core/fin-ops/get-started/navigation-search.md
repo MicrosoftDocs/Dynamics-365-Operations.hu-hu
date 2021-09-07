@@ -2,7 +2,7 @@
 title: Navigációs keresés
 description: Ez a témakör bemutatja, hogyan használja a keresési funkciót, hogy el lehessen érni a lapokat.
 author: aneesmsft
-ms.date: 04/27/2017
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82c7bf17eaf0276c448223182b4268a50addb37f1ff115fec0223bc3313905e5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e30b56287520bb3536b250a886e74e6cbe30b412
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749604"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344398"
 ---
 # <a name="navigation-search"></a>Navigációs keresés
 
@@ -34,7 +34,7 @@ A funkció használatához kattintson a **Keresés** ikonra a **Keresés** doboz
 > [!NOTE]
 > A **Keresés** doboz segít a lapok megtalálásában és a navigálásban. Azonban nem nyújt segítséget adatok és műveletek megtalálásához.
 
-[![keresőmező.](media/navigation-search.png "Keresőmező")
+![keresőmezőben.](media/navigation-search.png "Keresőmező")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Gyors navigáció adott oldalhoz
 

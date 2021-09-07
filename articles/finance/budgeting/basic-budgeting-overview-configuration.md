@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3f2144d2ca9b2f5e06f0a21f6f97b7ca6440ffe8ce300bdbf329279505059459
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 849b1202ea2c0080f5fc5bacba1f95180fc4008a
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720598"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343656"
 ---
 # <a name="budgeting-overview"></a>Költségvetés készítésének áttekintése
 
@@ -38,7 +38,7 @@ Többféle módszer létezik a költségvetésjegyzék-bejegyzések létrehozás
 
 -   Manuálisan adja meg a dokumentum adatait a **Költségvetésjegyzék bejegyzés** oldalon.
 -   Használja a Microsoft Excel sablont amelyet a **Megnyitás Excel-fájlban** gomb megnyomásával nyithat meg a **Költségvetésjegyzék-bejegyzések** oldalról.
--   Használja a **Költségvetési számlabejegyzések** adatentitást az Adatkezelés lehetőségben költségvetésjegyzék bejegyzések importálásához. Fontolja meg a módszer használatát és a **Halmazalapú** **feldolgozás** paraméter bekapcsolását, amikor sok költségvetésitételjegyzék-bejegyzést kell importálni a rendszerbe.
+-   Használja a **Költségvetési számlabejegyzések** adatentitást az Adatkezelés lehetőségben költségvetésjegyzék bejegyzések importálásához. Akkor érdemes megfontolni ennek a módszernek a használatát és a **Készlet alapú feldolgozás** paraméter bekapcsolását, ha sok költségvetési számla bejegyzést kell importálnia a rendszerbe.
 -   Ha a vállalat Költségvetési tervezés funkciót használ a költségvetési adatok előkészítéséhez, akkor használhatja a **Költségjegyzék bejegyzés generálása** időszakos folyamatot.
 
 A költségvetésitételjegyzék-bejegyzés akkor tekinthető befejezettnek, ha a költségvetési egyenleg frissült. A **Költségvetésitételjegyzék-bejegyzések** oldalon kattintson a **Költségvetési egyenlegek frissítése** lehetőségekre a kiválasztott egy vagy több költségvetésitételjegyzék-bejegyzésnél. Miután frissítette a költségvetési egyenleget a költségvetésjegyzék állapota **Kész** értékre módosul. A kész költségvetésjegyzék bejegyzés nem nyitható meg újraszerkesztésre. Emiatt ha módosítani kell a költségvetési adatokat, akkor új költségvetésjegyzék bejegyzést kell létrehozni a kész költségvetésjegyzék bejegyzésben lévő adatok javítása helyett.
@@ -50,7 +50,7 @@ Ezután ha vannak olyan irányelvek amelyek meghatározzák a költségvetésjeg
 
 A **Költségvetési dimenziók** oldalon válassza ki a pénzügyi dimenziókat amelyeket költségvetéshez kíván használni a számlatükörben használt dimenziók alapján. Választhat, hogy az összes pénzügyi dimenziót vagy csak egy részüket választja költségvetés-tervezéshez.
 
-Adja meg a *költségvetési modellt*, amelyik megfelel az összes vagy néhány költségvetésnek. Használhat egyetlen költségvetési modellt az összes költségvetésjegyzék bejegyzéshez. Másik lehetőségként létrehozhat elkülönített modelleket amelyek a költségvetés típusán, a földrajzi elhelyezkedésen vagy valamilyen egyéb költségvetéstípuson alapulnak. 
+Határozzon meg egy olyan *költségvetési modellt*, amely megfelel az összes vagy néhány költségvetésnek. Használhat egyetlen költségvetési modellt az összes költségvetésjegyzék bejegyzéshez. Másik lehetőségként létrehozhat elkülönített modelleket amelyek a költségvetés típusán, a földrajzi elhelyezkedésen vagy valamilyen egyéb költségvetéstípuson alapulnak. 
 
 > [!NOTE] 
 > Ha költségvetés-ellenőrzést használ, akkor csak egy költségvetési modellt társíthat egy specifikus költségvetésiciklus-időtartammal. 

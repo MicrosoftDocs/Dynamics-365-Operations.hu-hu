@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 328791cc321eeaf8f032a1eecedbe50cf9498eccd442c718d2e44e246915bc9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2f4aeefe5fe7698d9dfaf80619102f2b753e52b
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726187"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423447"
 ---
 # <a name="unified-product-experience"></a>Egységes terméktapasztalat
 
@@ -81,9 +81,9 @@ Mivel a termék SKU-ként képviselteti magát, az egyedi termékek, alaptermék
 
 ![Adatmodell termékekhez.](media/dual-write-product.png)
 
-Ha a kettős írás funkció engedélyezve van, a Finance and Operations modul alkalmazásai szinkronizálva lesznek a többi Dynamics 365 termékben a **Vázlat** állapotban. Az első azonos pénznemű árlistához lesznek hozzáadva. Más szóval a Dynamics 365 alkalmazás első árlistájához lesznek hozzáadva amely megfelel annak a jogi táblának a pénznemének, ahol a termék ki van adva a Finance and Operations-alkalmazásban. Ha a megadott pénznemhez nincs árlista, a program automatikusan létrehoz egy árlistát, és hozzárendeli a terméket.
+Ha a kettős írás funkció engedélyezve van, a Finance and Operations modul alkalmazásai szinkronizálva lesznek a többi Dynamics 365 termékben a **Vázlat** állapotban. Az első árlistához az ügyfélkapcsolati alkalmazásban használt pénznemmel és az árlista nevének ábécé szerinti rendezésével kerülnek hozzáadásra. Más szóval a Dynamics 365 alkalmazás első árlistájához lesznek hozzáadva amely megfelel annak a jogi táblának a pénznemének, ahol a termék ki van adva a Finance and Operations-alkalmazásban. Ha a megadott pénznemhez nincs árlista, a program automatikusan létrehoz egy árlistát, és hozzárendeli a terméket.
 
-A kettős írású beépülő modulok jelenlegi megvalósítása, amelyek az alapértelmezett árlistát társítják a Finance and Operations alkalmazáshoz társított pénznem kereséséhez, és az árlista betűrendes rendezésével megkeresik az első árlistát a vevői megállapodási alkalmazásban. Ha egy adott pénznemhez alapértelmezett árlistát szeretne beállítani, ha több árlistája van az adott pénznemnek, akkor frissítenie kell az árlista nevét olyan névre, amely a betűrendben korábbi, mint bármely más árlista ugyanarra a pénznemre.
+A kettős írású beépülő modulok jelenlegi megvalósítása, amelyek az alapértelmezett árlistát társítják a Finance and Operations alkalmazáshoz társított pénznem kereséséhez, és az árlista betűrendes rendezésével megkeresik az első árlistát a vevői megállapodási alkalmazásban. Ha egy adott pénznemhez alapértelmezett árlistát szeretne beállítani, ha több árlistája van az adott pénznemnek, akkor frissítenie kell az árlista nevét olyan névre, amely a betűrendben korábbi, mint bármely más árlista ugyanarra a pénznemre. Ha nincs árlista az adott pénznemhez, akkor egy újat hoz létre.
 
 Alapértelmezés szerint a Finance and Operations-alkalmazások termékeit szinkronizálja a rendszer a többi Dynamics 365-alkalmazással **Vázlat** állapotban. Ha azt szeretné, hogy az **Aktív** állapotú termék szinkronizálva legyen, hogy például közvetlenül tudja használni az értékesítési rendelések árajánlataiban, akkor az alábbi beállítást kell választani: a **Rendszer > Adminisztráció > Rendszeradminisztráció > Rendszerbeállítások > Sales** lapon válassza a **Termékek létrehozása az aktív állapotban = igen** értéket.
 

@@ -1,8 +1,9 @@
 ---
 title: A Commerce-csatornák pénzügyi integrálásának áttekintése
 description: Ez a témakör a Dynamics 365 Commerce szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségekről ad áttekintést.
-author: josaw
-ms.date: 02/01/2019
+author: EvgenyPopovMBS
+manager: annbe
+ms.date: 08/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,26 +16,26 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 6545f3ee488cdd98530839f546ca2e6a434194437dfa98712a1a6ac3407afdbf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733941"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343287"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>A Commerce-csatornák pénzügyi integrálásának áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-## <a name="introduction"></a>Bevezetés
+Ez a témakör a Dynamics 365 Commerce szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségek áttekintése. 
 
-Ez a témakör a Dynamics 365 Commerce szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségek áttekintése. A pénzügyi integráció tartalmazza a különböző pénzügyi eszközök és szolgáltatások integrációját, amelyek lehetővé teszik az értékesítések pénzügyi regisztrációját a helyi pénzügyi jogszabályokkal összhangban, amelyek célja az adócsalás megakadályozása a kiskereskedelmi iparágban. Alább láthatók olyan tipikus esetek, amelyek pénzügyi integrációval megoldhatók:
+A pénzügyi integráció tartalmazza a különböző pénzügyi eszközök és szolgáltatások integrációját, amelyek lehetővé teszik az értékesítések pénzügyi regisztrációját a helyi pénzügyi jogszabályokkal összhangban, amelyek célja az adócsalás megakadályozása a kiskereskedelmi iparágban. Alább láthatók olyan tipikus esetek, amelyek pénzügyi integrációval megoldhatók:
 
 - Ertékesítés regisztrálása olyan pénzügyi eszközön, amely a pénztárhoz (POS) csatlakozik, például pénzügyi nyomtató, majd a pénzügyi nyugta nyomtatása a vevő számára.
 - A Retail POS szolgáltatásban végrehajtott értékesítéshez és visszárukhoz kapcsolódó információk biztonságos elküldése külső webes szolgáltatásnak, amelyet az ahatóság üzemeltet.
 - Segít az értékesítési tranzakcióadatok megmásíthatatlanságát digitális aláírások segítségével.
 
-A pénzügyi integrációs funkció egy keretrendszer, amely közös megoldást kínál a Retail POS és a pénzügyi eszközök és szolgáltatások közti integráció továbbfejlesztésére és testreszabására. A funkció pénzügyi integráció mintákat is tartalmaz, amelyek támogatják az alapvető eseteket az adott országban vagy régiókban, és amelyek specifikus pénzügyi eszközökkel vagy szolgáltatásokkal működnek. Pénzügyi integráció minta a Commerce-összetevők számos kiterjesztését is tartalmazza, és szerepel a szoftverfejlesztő készletben (SDK). A pénzügyi integrációs sablonokkal kapcsolatos további tudnivalókat lásd: [Pénzügyi integrációs sablonok a Retail SDK-ban](#fiscal-integration-samples-in-the-retail-sdk). A Retail SDK telepítésével és használatával kapcsolatos tudnivalókat lásd: [Retail szoftverfejlesztői készlet (SDK) architektúrája](../dev-itpro/retail-sdk/retail-sdk-overview.md).
+A pénzügyi integrációs funkció egy keretrendszer, amely közös megoldást kínál a Retail POS és a pénzügyi eszközök és szolgáltatások közti integráció továbbfejlesztésére és testreszabására. A funkció pénzügyi integráció mintákat is tartalmaz, amelyek támogatják az alapvető eseteket az adott országban vagy régiókban, és amelyek specifikus pénzügyi eszközökkel vagy szolgáltatásokkal működnek. Pénzügyi integráció minta a Commerce-összetevők számos kiterjesztését is tartalmazza, és szerepel a szoftverfejlesztő készletben (SDK). A fiskális integrációs mintákról további információkat a [Commerce SDK fiskális integrációs mintái](#fiscal-integration-samples-in-the-commerce-sdk) című fejezetben talál. A Commerce SDK telepítéséről és használatáról a [kiskereskedelmi szoftverfejlesztő készlet (SDK) architektúrája](../dev-itpro/retail-sdk/retail-sdk-overview.md)című fejezetben talál információkat.
 
 Az olyan helyzetek támogatásához, amelyeket nem támogat a pénzügyi integrációs minta, a Retail POS egyéb pénzügyi eszközökkel vagy szolgáltatásokkal való integrálásához, vagy a más országokban vagy régiókban levő követelmények lefedéséhez vagy ki kell terjesztenie a létező pénzügyi integrációs mintát, vagy új mintát kell létrehoznia egy meglévő minta példaként való használatával.
 
@@ -55,13 +56,13 @@ Egy adott POS-pénztárgép pénzügyi regisztrációs folyamatát a pénztár f
 A következő példa bemutatja a tipikus pénzügyi regisztrációs végrehajtási folyamatot egy pénzügyi eszközhöz. A folyamat a pénztárban történt eseménnyel kezdődik (például egy értékesítési tranzakció véglegesítése), és az alábbi lépéssorozatot hajtja végre:
 
 1. A pénztár a CRT-ből pénzügyi bizonylatot kér.
-2. A CRT határozza meg, hogy szükséges-e az aktuális eseményhez pénzügyi regisztráció.
-3. A pénzügyi regisztrációs folyamat beállításainak megfelelően a CRT azonosít egy pénzügyi csatlakozót, és a hozzá tartozó pénzügyi dokumentumszolgáltatót, amelyet a pénzügyi nyilvántartáshoz használ majd.
-4. A CRT futtatja a pénzügyi dokumentumszolgáltatót, amely egy pénzügyi dokumentumot hoz létre (például egy XML-dokumentumot), amely képviseli a tranzakciót vagy eseményt.
-5. A pénztár elküldi a pénzügyi bizonylatot, amelyet a CRT előkészít a hardverállomás számára.
-6. A hardverállomás lefuttatja a pénzügyi csatlakozót, amely feldolgozza a pénzügyi dokumentumot, és tájékoztatja a pénzügyi eszközt vagy szolgáltatást.
-7. A pénztár elemzi a pénzügyi eszköz vagy szolgáltatás válaszát, és meghatározza, hogy sikeres volt-e a pénzügyi regisztráció.
-8. A CRT elmenti a választ a csatorna-adatbázisba.
+1. A CRT határozza meg, hogy szükséges-e az aktuális eseményhez pénzügyi regisztráció.
+1. A pénzügyi regisztrációs folyamat beállításainak megfelelően a CRT azonosít egy pénzügyi csatlakozót, és a hozzá tartozó pénzügyi dokumentumszolgáltatót, amelyet a pénzügyi nyilvántartáshoz használ majd.
+1. A CRT futtatja a pénzügyi dokumentumszolgáltatót, amely egy pénzügyi dokumentumot hoz létre (például egy XML-dokumentumot), amely képviseli a tranzakciót vagy eseményt.
+1. A pénztár elküldi a pénzügyi bizonylatot, amelyet a CRT előkészít a hardverállomás számára.
+1. A hardverállomás lefuttatja a pénzügyi csatlakozót, amely feldolgozza a pénzügyi dokumentumot, és tájékoztatja a pénzügyi eszközt vagy szolgáltatást.
+1. A pénztár elemzi a pénzügyi eszköz vagy szolgáltatás válaszát, és meghatározza, hogy sikeres volt-e a pénzügyi regisztráció.
+1. A CRT elmenti a választ a csatorna-adatbázisba.
 
 ![Megoldási séma.](media/emea-fiscal-integration-solution.png "Megoldási séma")
 
@@ -117,6 +118,8 @@ A pénzügyi tranzakció tárolja a következő adatokat:
 - A pénzügyi regisztráció állapota: **Kész** sikeres regisztráció esetén, **Kihagyva**, ha az operátor a **Kihagyás** lehetőséget választotta egy sikertelen regisztráció esetén, vagy **Megjelölve regisztráltként**, ha az operátor bejelölte a **Megjelölés regisztráltként** lehetőséget.
 - A kijelölt pénzügyi tranzakcióhoz kapcsolódó összes infókód-tranzakció. Az Infókód-tranzakciók megtekintéséhez a **Pénzügyi tranzakciók** gyorslapon válasszon egy olyan pénzügyi tranzakciót, amelynek állapota **Kihagyva** vagy **Megjelölve regisztráltként**, majd válassza ki **Infókód-tranzakciók** elemet.
 
+A **Bővített adatok** kiválasztásával megtekintheti az adótranzakció egyes tulajdonságait is. A megtekinthető tulajdonságok listája az adóügyi tranzakciót generáló adóügyi nyilvántartási funkcióra jellemző. Például megtekintheti a digitális aláírást, a sorszámot, a tanúsítvány ujjlenyomatát, a kivonatoló algoritmus azonosítását és más adózási tranzakciótulajdonságokat a franciaországi digitális aláírási funkcióhoz.
+
 ## <a name="fiscal-texts-for-discounts"></a>Pénzügyi szövegek engedményekhez
 
 Egyes országokban vagy régiókban különleges követelmények vannak érvényben a további szövegekkel kapcsolatban, amelyeket a pénzügyi nyugtára kell nyomtatni, amikor különböző engedményeket alkalmaznak. A pénzügyi integráció funkció segítségével beállíthat egy speciális szöveget az engedményhez, amelyet az engedmény sora után a pénzügyi nyugtára nyomtat. Manuális engedmények esetén, konfigurálhatja az infókódhoz megadott pénzügyi szöveget, amelyhez az infókód a **Termék engedménye** infókódként van megadva a pénztár funkcióprofilján. A pénzügyi szövegek engedményekhez való beállításával kapcsolatos további tudnivalókat lásd: [Pénzügyi szövegek beállítása engedményekhez](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-texts-for-discounts).
@@ -128,26 +131,29 @@ A pénzügyi integráció funkció támogatja az integrált pénzügyi eszköz v
 - A megfelelő műveletek futtatására használatos új gombokat a pénztár képernyő-elrendezésén kell hozzáadni. További részletekért lásd: [Pénzügyi X/Z jelentések beállítása a pénztárból](setting-up-fiscal-integration-for-retail-channel.md#set-up-fiscal-xz-reports-from-the-pos).
 - A pénzügyi integrációs mintában ezeket a műveleteket meg kell feleltetni a pénzügyi eszköz megfelelő műveleteivel.
 
-## <a name="fiscal-integration-samples-in-the-retail-sdk"></a>Pénzügyi integrációs minták a Retail szoftverfejlesztői készletben (SDK)
+## <a name="fiscal-integration-samples-in-the-commerce-sdk"></a>Adóügyi integrációs minták a Commerce SDK-ban
 
-A Retail SDK-ban jelenleg a következő pénzügyi integráció minták érhetők el:
+A Commerce SDK-ban jelenleg a következő adóügyi integrációs minták állnak rendelkezésre:
 
-- [Adóügyi nyomtató integrációját bemutató minta Olaszországra vonatkozóan](emea-ita-fpi-sample.md)
-- [Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan](emea-pol-fpi-sample.md)
-- [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan](emea-aut-fi-sample.md)
-- [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Csehországra vonatkozóan](emea-cze-fi-sample.md)
+- [Adóügyi nyomtató integrációját bemutató minta Olaszországra vonatkozóan](./emea-ita-fpi-sample.md)
+- [Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan](./emea-pol-fpi-sample.md)
+- [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan](./emea-aut-fi-sample.md)
+- [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Csehországra vonatkozóan](./emea-cze-fi-sample.md)
 - [Ellenőrzőegység integrációs mintája Svédország esetén](./emea-swe-fi-sample.md)
 - [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Németországra vonatkozóan](./emea-deu-fi-sample.md)
 
-A következő pénzügyi integrációs funkció szintén elérhető a Retail SDK-ban, de jelenleg használja ki a pénzügyi integrációs keretrendszer előnyeit. Ennek a funkciónak az áttelepítése a pénzügyi integrációs keretrendszerbe a későbbi frissítésekben tervezett.
+A következő adóügyi integrációs funkciókat szintén a költségvetési integrációs keretrendszer használatával valósítjuk meg, de ezek a funkciók a dobozból elérhetőek, és nem szerepelnek a Commerce SDK-ban:
 
+- [Adóügyi nyilvántartásba vétel Brazíliában](./latam-bra-commerce-localization.md#fiscal-registration-for-brazil)
+- [Digitális aláírás Franciaország esetén](./emea-fra-cash-registers.md)
 
-- [Digitális aláírás Franciaország esetén](emea-fra-cash-registers.md)
-- [Digitális aláírás Norvégia esetén](emea-nor-cash-registers.md)
+A következő adóügyi integrációs funkciók szintén elérhetők a Commerce SDK-ban, de jelenleg nem használják ki az adóügyi integrációs keretrendszert. Ennek a funkciónak az áttelepítése a pénzügyi integrációs keretrendszerbe a későbbi frissítésekben tervezett.
 
-A Retail SDK csomagban elérhető alábbi örökölt pénzügyi integrációs funkciók nem használják a pénzügyi integrációs keretrendszert, és a későbbi frissítésekkel elavulttá válnak:
+- [Digitális aláírás Norvégia esetén](./emea-nor-cash-registers.md)
+
+A következő, a Commerce SDK-ban elérhető, régebbi adóügyi integrációs funkciók nem használják a költségvetési integrációs keretrendszert, és a későbbi frissítések során elavulttá válnak:
 
 - [Ellenőrzőegység integrációs mintája Svédország esetén (örökölt)](./retail-sdk-control-unit-sample.md)
-
+- [Digitális aláírás Franciaország esetében (örökölt)](./emea-fra-deployment.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

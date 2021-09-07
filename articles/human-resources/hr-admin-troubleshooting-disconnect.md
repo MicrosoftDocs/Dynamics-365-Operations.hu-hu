@@ -1,8 +1,8 @@
 ---
-title: Az ügyfél kapcsolata megszakad
-description: Ez a cikk bemutatja, hogy mi a teendő, ha a vevő kapcsolata megszakad a saját környezetével, és nem tudja, ennek mi az oka.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Kliens kapcsolata megszakad
+description: Ez a téma elmagyarázza, hogy mi a teendő, ha az ügyfél nem kapcsolódik a környezethez.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3ee3bb4547cb9d77b7559ce4ba54b478f63cb045caefefec0583b3f9b03cf53b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f99731d4d0658ed6f06b9e6915237532601a0a1d
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770480"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413511"
 ---
 # <a name="client-disconnects"></a>Kliens kapcsolata megszakad
 

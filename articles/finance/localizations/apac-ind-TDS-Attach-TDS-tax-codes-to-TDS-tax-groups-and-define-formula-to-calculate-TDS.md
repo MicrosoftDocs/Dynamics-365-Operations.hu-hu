@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 81aac53cca91a75cde811c314bd6f7039852d32505fe6540921e17f3d1bbc7ad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 98d6ceb794716f39c6ae47b300bdb7618a8e688b
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739310"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345228"
 ---
 # <a name="attach-tds-tax-codes-to-tds-tax-groups-and-define-the-formula-for-calculating-tds"></a>TDS-adókódok csatolása a TDS-adócsoportokhoz, és a TDS kiszámításának képletének meghatározása
 
@@ -55,7 +55,7 @@ Kövesse ezeket a lépéseket a TDS-adócsoport beállításához, csatolja hozz
     > [!NOTE]
     > Az **Adóköteles összeg** mező nem állítható be prioritásazonosítóval rendelkező TDS adókód **Kiz. bruttó összegére** **1**.
 
-12. A TDS-számítás a TDS-adócsoporthoz csatolt minden egyes adókód **Számítási kifejezés** mezőjében meghatározott képleten alapul. Válassza ki a pluszjelet (**+**), a mínuszjel (**-**), a szorzásjel (**\**_), vagy az osztásjel (_*/**) gombot a kiválasztott TDS-adókód számítási kifejezésének megadásához a **Számítási kifejezés** mezőben.
+12. A TDS-számítás a TDS-adócsoporthoz csatolt minden egyes adókód **Számítási kifejezés** mezőjében meghatározott képleten alapul. Válassza a pluszjel (+), mínuszjel (-), szorzójel (\*) vagy osztásjel (/) gombot a kiválasztott TDS-adókódhoz tartozó számítási kifejezés megadásához a **Számítási kifejezés** mezőben.
 
     > [!NOTE]
     > Nem határozható meg számítási kifejezés az **1** prioritási azonosítóval rendelkező TDS-adókódhoz.

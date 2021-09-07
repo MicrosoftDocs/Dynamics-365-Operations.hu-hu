@@ -10,20 +10,19 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
 ms.search.scope: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sndray
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 51f0ab8f76fe3bce91d6e4ed56bdfa8529c1aacbd326a8b4b3d80615f872f8c6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d78af13e0b3879afd0b6dae7b1a9ece651c3fd2
+ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729551"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "7403891"
 ---
 #  <a name="withholding-tax-declaration-for-egypt-eg-00005"></a>Adóelőleg-bevallás Egyiptom számára (EG-00005)
 
 [!include[banner](../includes/banner.md)]
-
 [!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Áttekintés
@@ -113,7 +112,7 @@ Az áfabevallási jelentés létrehozásához kövesse az alábbi lépéseket.
 1. Lépjen ide: **Adó** > **Bevallások** > **Adóelőleg** > **Adóelőleg kifizetése*.
 2. Válassza ki a kiegyenlítési időszakot, majd válassza ki a jelentés dátumát. 
 3. Írja be a tranzakció dátumát, majd kattintson az **OK** gombra.
-4. A megjelenő párbeszédpanelen válasszon ki egy vagy több űrlaptípust **41-es űrlap**, **11-es űrlap** vagy **Nincs**. Ha a **Nincs** lehetőséget választja, a normál jelentés jön létre. 
+4. A megnyíló párbeszédpanelen válasszon ki egy vagy több nyomtatványtípust a **41. számú nyomtatvány**, a **11. számú nyomtatvány** vagy a **Nincs** közül. Ha a **Nincs** lehetőséget választja, a normál jelentés jön létre. 
 5. Válassza ki a nyelvet. Minden jelentés fordítása **en-us** és **ar-eg**.
 6. Írja be azon fiók és bank nevét, ahol az adóbefizetés megtörténik.
 7. Válassza ki az üzlettípust, majd adja meg a csekk- és dokumentumszámokat. 

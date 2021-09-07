@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4811c65a32e27668d1247086d962366eb8369d5e9fe28a105e1d6a020bca325d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd55d433b0961b8b210b9c28d7340ff880635a85
+ms.sourcegitcommit: 3af457fc216bd0020843291ca57fd379acb53c96
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737749"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7392474"
 ---
 # <a name="associate-fixed-assets-with-leases"></a>Lízingek társítása tárgyi eszközhöz
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A témakör bemutatja, hogyan társítható egy meglévő tárgyi eszköz egy új lízinghez. Amikor egy tárgyi eszközt egy lízinghez társít, a használatijog-eszköz (ROU) értéke a kezdeti megjelenítéskor a tárgyi eszköz beszerzési költsége lesz.
 
@@ -49,8 +50,18 @@ A kezdeti elszámolásnapló-bejegyzés könyvelése után a tranzakció a tárg
 
 A tárgyi eszköz értékcsökkenése a tárgyi eszközök standard értékcsökkenési funkciójának használatával. Az értékcsökkenéssel kapcsolatos további tudnivalókért lásd: [Értékcsökkenési módszerek és szabályok](../fixed-assets/depreciation-methods-conventions.md).
 
+Amikor egy lízinget egy tárgyi eszközhöz társítanak, a tárgyi eszköz könyvében a **Szolgáltatási élettartam** mezőt úgy frissítik, hogy az a következő kritériumok közül a legkisebb értékkel egyezik meg: 
+
+ - Az eszköz hasznos élettartama
+ - A lízing futamideje a kapcsolódó lízingkönyvből
+
+Ha a **Tulajdonjog átadása** mező a lízingkönyv esetében **Igen**-re van állítva, a **Használati idő** mezőben szereplő érték mindig az eszköz hasznos élettartama lesz. 
+ 
+A használati élettartamot minden alkalommal frissíteni kell, amikor a lízinget módosítják, hogy a használati joggal rendelkező eszköz értékcsökkenése a lízing időtartama alatt történjen, mintha az eszközlízingben értékcsökkenne.
+
 > [!NOTE]
 > Ha a tárgyi eszközt lízinghez rendeli hozzá, akkor az **Eszköz értékcsökkenése** és a **Lízing értékvesztése** gombok le vannak tiltva az Eszközlízingelésnél. Megtekintheti a tárgyi eszközökből származó eszközök értékcsökkenését és a lízing-értékvesztési tranzakciókat. Az **Eszköztranzakciók** gomb, amely megnyitja a lekérdezési képernyőt is, le van tiltva. Az **Eszközranzakciók** lekérdezési űrlapot a Tárgyi eszközökben is megnyithatja.  
 
+A **Befektetett eszközök** és a **Befektetett eszközök könyve** oldalakon megjelenik a tárgyi eszközhöz tartozó lízingazonosító. Ha egy tárgyi eszköz lízinghez kapcsolódik, a lízing azonosítója és a lízing leírása megjelenik a **Lízinginformációk** gyorslapon a **Tárgyi eszközök** lapon. A lízingkönyvekhez kapcsolódó tárgyi eszközkönyvek esetében a **Lízingazonosító**, a **Lízingleírás** és a **Könyvtípus** mezők a **Lízinginformációk** gyorslapon megjelenítik a kiválasztott tárgyi eszközkönyvre vonatkozó információkat, jelezve, hogy az egy lízingkönyvhöz kapcsolódik.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

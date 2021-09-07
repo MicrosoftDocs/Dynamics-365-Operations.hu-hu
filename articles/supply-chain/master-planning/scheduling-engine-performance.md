@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 223ad9b5a297a5bcdbb0314d406f64d5de2b239431c6df21299ddebd9e47b8a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0a37e3463273d1ffd35b267b36dfbd6fd92bb255
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738269"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343477"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Az ütemezési motor teljesítményének javítása
 
@@ -70,7 +70,7 @@ Például gondolja át a következő táblázatban és képen látható útvonal
 
 A program ezt a motornak történő elküldésekor nyolc feladatra osztja fel, amint az a következő ábrán látható (válassza ki a képet a nagyításhoz).
 
-[![Ütemezési motor feladatok](media/scheduling-engine-jobs.png „Ütemezési motor feladatok.”](media/scheduling-engine-jobs-large.png)
+[![Motorfeladatok ütemezése](media/scheduling-engine-jobs.png "Motoros munkák ütemezése.")](media/scheduling-engine-jobs-large.png)
 
 A két feladat közötti normál kapcsolat `FinishStart`, amely azt jelenti, hogy egy feladat befejezési időpontjának meg kell előznie egy másik feladat kezdési időpontját. Mivel a beállítást ugyanannak az erőforrásnak kell elvégeznie, amely a folyamatot később végrehajtja, a kettő között `OnSameResource` megszorítások vannak. A 10 elsődleges és másodlagos műveletéhez tartozó feladatok között van `StartStart` és `FinishFinish` hivatkozás van, ami azt jelenti, hogy a feladatoknak ugyanakkor kell kezdődniük és befejeződniük, és `NotOnSameResource` megszorítások is vannak, amelyek megakadályozzák, hogy az elsődleges és a másodlagos erőforrás azonos legyen.
 

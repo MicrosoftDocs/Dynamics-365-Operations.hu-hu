@@ -1,8 +1,8 @@
 ---
-title: Juttatáskezelési és alkalmazotti önkiszolgáló paraméterek beállítása minden vállalatnál
-description: Juttatáskezelési és alkalmazotti önkiszolgáló paraméterek konfigurálása a Microsoft Dynamics 365 Human Resources alkalmazásban.
-author: andreabichsel
-ms.date: 12/07/2020
+title: Juttatások kezelésének és a munkavállalók önkiszolgálásának paramétereinek beállítása minden vállalat számára
+description: A juttatások kezelésének és a munkavállalók önkiszolgálásának paramétereinek beállítása a Microsoft Dynamics 365 Human Resources rendszerben.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9c6761c549aaa38d16616f3e9e9084cbff7c93d9350f8adc50720d263efaff25
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cdda08ad2debe6ffe40f1f3fd2ac84ce9fc1d620
+ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732777"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7423423"
 ---
-# <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Juttatáskezelési és alkalmazotti önkiszolgáló paraméterek beállítása minden vállalatnál
+# <a name="set-benefits-management-and-employee-self-service-parameters-for-all-companies"></a>Juttatások kezelésének és a munkavállalók önkiszolgálásának paramétereinek beállítása minden vállalat számára
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -61,7 +61,7 @@ Mielőtt beállítaná a juttatásterveket a Microsoft Dynamics 365 Human Resour
 
    | Mező | Leírás |
    | --- | --- |
-   | **Juttatás ellenőrzése** | Az önkiszolgáló juttatásfizetés során használandó ellenőrzési szöveg. |
+   | **Juttatás ellenőrzése** | Az önkiszolgáló kifizetés során használandó ellenőrző szöveg. |
    | **Kijelölt személyek automatikus kiválasztása** | Megadja, hogy a program automatikusan kiválassza-e a függő feleket és a kedvezményezetteket a konstrukció opcióira való jogosultságuk alapján. |
 
 3. Válassza a **Mentés** lehetőséget.

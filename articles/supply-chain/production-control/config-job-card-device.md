@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: 9da14c22b0ab62a8384fbe76918cc19da0205cdbbf2f4fd2ef8e7aec57b264ee
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bead8a80110df174c094d0729fbde3d96b230cbf
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781014"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343997"
 ---
 # <a name="configure-job-card-for-devices"></a>Feladatkártya konfigurálása az eszközökhöz
 
@@ -65,7 +65,7 @@ Az **Általános** gyorslap a kiválasztott eszközkonfigurációhoz rendelkezé
 
 - **Mennyisége jelentése távozáskori blokkoláskor** – Ezt állítsa **Igen** értékre megkérheti a dolgozókat, hogy adják meg a folyamatban lévő munkák visszajelzéseit a távozáskori blokkoláskor. Ha **Nem** értékre van állítva, akkor a dolgozók nem lesznek figyelmeztetve.
 - **Alkalmazott zárolása** – Ha ez a beállítás **Nem** értékre van állítva, akkor a rendszer egy regisztrációt (például új feladat regisztrációja) követően azonnal kijelentkeztet minden dolgozót, majd az eszköz visszatér a bejelentkezési lapra. Ha ez a beállítás **Igen** értékre van állítva , akkor minden dolgozó bejelentkezve marad a feladatkártya-eszközbe. Ugyanakkor a dolgozónak továbbra is lehetősége van a manuális kijelentkezésre ,hogy egy másik dolgozó bejelentkezhessen úgy, hogy az eszköz ugyanabban a rendszerfelhasználói fiókban marad. A fiókok típusairól a [Hozzárendelt felhasználók](#assigned-users) című témakörben olvashat bővebben.
-- **Vonalkód-olvasó** – Ezt a lehetőséget **Igen** értékre állítva lehetőséget biztosít a feladatkártya eszközön a felhasználóknak, hogy egy vonalkód beolvasásával regisztrálják egy feladat megkezdését.
+- **Vonalkódolvasó** - Állítsa ezt a beállítást **Igenre**, hogy a munkakártya-eszközön legyen egy olyan lehetőség, amely lehetővé teszi a dolgozók számára, hogy egy vonalkód beolvasásával regisztrálják egy új munka kezdetét.
 - **A regisztráció tényleges időpontjának használata** – Ezt a beállítást **Igen** értékre állíthatja, ha azt szeretné, hogy az egyes új regisztrációk időpontja a dolgozó által benyújtott regisztráció pontos időpontjával egyezzen meg. A **Nem** értékre állításával a bejelentkezési időt használhatja helyette. Ezt a beállítást általában **Igen** értékre kell állítani , ha engedélyezve van az **Alkalmazott zárolása** és/vagy az **Egy dolgozó** beállítás, aminek következtében a dolgozók általában hosszabb ideig bejelentkezve maradnak.
 - **Egyetlen dolgozó** – Állítsa ezt a beállítást **Igen** értékre ha csak egy dolgozó használja a feladatkártya-eszközt, ha ez a konfiguráció aktív. Ha ez a beállítás be van jelölve, akkor az **Alkalmazott zárolása** beállítás automatikusan **Igen** értékre van állítva. Ezenkívül ez a beállítás eltávolítja a dolgozónak a belépőkártya-azonosító (vagy hasonló) használatával történő bejelentkezésre vonatkozó követelményét (és képességét). Ehelyett a dolgozó a Supply Chain Management alkalmazásba egy olyan rendszerfelhasználói fiókkal jelentkezik be, amely egy *időregisztrált dolgozóhoz* van társítva (a *dolgozók* táblából), és dolgozóval egyidőben bejelentkezik a feladatkártya eszközbe.  A fiókok típusairól a [Hozzárendelt felhasználók](#assigned-users) című témakörben olvashat bővebben.
 - **Személyes szűrők beállításának engedélyezése a dolgozóknak** – Ezt a beállítást **Igen** értékre állítva a dolgozók szűrhetik az eszközön számukra megjelenített feladatokat. A dolgozó módosíthatja következő három szűrési feltétel bármely értékeit: **Termelési egység**, **Erőforráscsoport** és **Erőforrás**. Csak a kiválasztott szűrési feltételeknek megfelelő erőforrásokra ütemezett feladatok jelennek meg az eszközön. A feltételek bármelyikéhez vagy mindegyikéhez rendelhet hozzárendelhet alapértelmezett értékeket is, és azok akkor is alkalmazva lesznek, ha ez a beállítás nincs kiválasztva.

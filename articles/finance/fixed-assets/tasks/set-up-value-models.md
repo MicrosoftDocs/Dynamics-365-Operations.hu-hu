@@ -1,8 +1,8 @@
 ---
 title: Értékmodellek beállítása
 description: Ez az eljárás bemutatja, hogyan hozzon létre új tárgyieszköz-könyvet, és hogyan társítsa azt tárgyieszköz-csoporthoz.
-author: saraschi2
-ms.date: 08/29/2018
+author: moaamer
+ms.date: 08/12/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,19 +13,20 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 923c3d0c7a2d54f616452a8b927681603f4955c2d7e5ff306971561b73355743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 46c26e5fad3c5c60d87c2fea2b29043c69b82b5d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741536"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344658"
 ---
 # <a name="set-up-value-models"></a>Értékmodellek beállítása
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../../includes/preview-banner.md)]
+
 
 Ez az eljárás bemutatja, hogyan hozzon létre új tárgyieszköz-könyvet, és hogyan társítsa azt tárgyieszköz-csoporthoz. Ez a könyvelői szerepkört és a bemutató adatokat használja a USMF jogi személyhez.
-
 
 ## <a name="create-a-book"></a>Könyv létrehozása
 1. Nyissa meg a következőt: Tárgyi eszközök > Beállítás > Könyvek.
@@ -48,9 +49,10 @@ Ez az eljárás bemutatja, hogyan hozzon létre új tárgyieszköz-könyvet, és
 1. Kattintson a Tárgyieszköz-csoportok elemre.
 2. A Tárgyieszköz-csoport mezőben adjon meg vagy válasszon ki egy értéket.
 3. Adjon meg egy számot az Élettartam mezőben.
-    * Ügyeljen, hogy az Értékcsökkenési időszakok értéke az Élettartam beállítását követően kerül kiszámításra.  
-    * Az értékcsökkenési szabályok beállíthatók az adózási szabályokkal összhangban.  
 
+  - Az értékcsökkenési időszakok kiszámítása az eszköz élettartamának megadása után történik.  
+  - Az értékcsökkenési konvenciót az adózási céloknak megfelelően lehet beállítani.
+  - A lízinghez kapcsolódó befektetett eszközök esetében a **Szolgáltatási élettartam** mezőben szereplő értéket felülírja az eszközkönyvben szereplő lízing futamideje vagy az eszköz hasznos élettartama közül a kisebbik. Ha a **Tulajdonjog átadása** mező a lízingkönyv esetében **Igen**-re van állítva, a **Használati idő** mezőben szereplő érték mindig az eszköz hasznos élettartama lesz.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

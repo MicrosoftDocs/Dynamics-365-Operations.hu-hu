@@ -1,8 +1,8 @@
 ---
 title: Juttatáskezelés áttekintése
-description: A juttatáskezelés funkció áttekintése a Dynamics 365 Human Resources alkalmazásban. Az alkalmazottak számára kiterjesztett juttatási lehetőségeket kínálhat könnyen használható online felületen.
-author: andreabichsel
-ms.date: 07/13/2021
+description: Ez a témakör a Dynamics 365 Human Resources rendszerben található Juttatások kezelése funkció áttekintését nyújtja.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a1e00bb3fa227eab62b6e530a32f0eae0bd871c1cfe5bb3d29e09a06a707ce17
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c4709a63201dd1a02c8879151762886f644ce22
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719143"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417409"
 ---
-# <a name="benefits-management-overview"></a>Juttatáskezelés – áttekintés
+# <a name="benefits-management-overview"></a>Juttatáskezelés áttekintése
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A versenyképesség megőrzéséhez juttatások széles választékát kell nyújtania, hogy felkeltse a legjobb alkalmazottak figyelmét, és meg is tudja tartani őket. A szokásos juttatások, például az orvosi és a fogászati biztosítás mellett kiterjesztett szolgáltatásokat is kínálhat, például bevezetési támogatást, rekreációs programokat és ruházati pótlékokat. A Microsoft Dynamics 365 Human Resources juttatáskezelés funkciója rugalmas megoldást kínál, amely a juttatási lehetőségek széles választékát támogatja. A Human Resources szolgáltatás tartalmaz egy egyszerűen használható alkalmazotti felületet is, amelyen bemutathatja az ajánlatait.
+A versenyképesség megőrzéséhez juttatások széles választékát kell nyújtania, hogy felkeltse a legjobb alkalmazottak figyelmét, és meg is tudja tartani őket. A szokásos juttatások, például az orvosi és a fogászati biztosítás mellett kiterjesztett szolgáltatásokat is kínálhat, például bevezetési támogatást, rekreációs programokat és ruházati pótlékokat. A juttatások kezelése a Microsoft Dynamics 365 Human Resources rendszerben rugalmas megoldást kínál, amely a juttatási lehetőségek széles skáláját támogatja. A Human Resources szolgáltatás tartalmaz egy egyszerűen használható alkalmazotti felületet is, amelyen bemutathatja az ajánlatait.
 
 - A bővített juttatási konstrukciók lehetővé teszik egyedi juttatási konstrukciók létrehozását és kezelését, valamint összetett juttatásmérték-táblázatok és beágyazott szintek támogatását. Az alkalmazotti élmény javításához könnyen készíthet juttatási programokat, csomagokat és automatikus igénylési szabályokat.
 - A rugalmas jóváírási programok lehetővé teszik az arányosítást a nyugdíjazás és az egyéb élettartam-események támogatásához.
@@ -37,13 +37,13 @@ A versenyképesség megőrzéséhez juttatások széles választékát kell nyú
 Ha szeretne hozzáférni a bemutató adatokhoz, újra kell telepítenie a tesztkörnyezetét.
 
 > [!NOTE]
-> Most már testre szabhatja a Juttatások kezelése űrlapot. A juttatási tervek **Fedezeti beállítás** űrlapjához mostantól a fedezeti díjakkal kapcsolatos egyéni mezőket is hozzáadhatja. További információkért az egyéni mezők felhasználásáról lásd: [Egyéni mezők](hr-developer-custom-fields.md).
+> Mostantól testreszabhatja a Juttatások kezelése oldalakat. A fedezeti díjakkal kapcsolatos egyéni mezők hozzáadhatók a **fedezeti opciós** oldalhoz a juttatási tervek esetében. További információkért az egyéni mezők felhasználásáról lásd: [Egyéni mezők](hr-developer-custom-fields.md).
 >
 > ![Juttatások kezelésében egyéni mezők](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Juttatáskezelés engedélyezése
 
-A témakör azt írja le, hogyan lehet bekapcsolni funkciókat a Human Resources szolgáltatásban. Arról is tájékoztat, hogy a Human Resources szolgáltatásban melyik meglévő funkciók lesznek lecserélve a Juttatáskezeléssel vagy letiltva, amikor bekapcsolja a juttatáskezelést.
+A témakör azt írja le, hogyan lehet bekapcsolni funkciókat a Human Resources szolgáltatásban. Azt is elmagyarázza, hogy a Humán erőforrás meglévő funkcióit mely funkciókat váltja fel a Juttatások kezelése, és mely funkciókat tiltja le a Juttatások kezelése bekapcsolása után.
 
 > [!IMPORTANT]
 > Miután engedélyezte a juttatások kezelését egy **Termelési** környezetben, azt nem lehet letiltani. Azt ajánljuk , hogy a **Termelési** környezetben történő engedélyezése előtt engedélyezze és tesztelje a juttatások kezelését egy **Teszt** környezetben. Jelentősen különböznek egymástól a korábbi Juttatási funkciók és az új Juttatáskezelés funkciók – ezek további beállításokat igényelnek, és a termelésbe történő helyezés előtt tesztelni kell azokat.

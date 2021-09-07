@@ -1,8 +1,8 @@
 ---
-title: Életesemények módosításainak feldolgozása
-description: Egy életeseményben végrehajtott módosítás feldolgozása a Microsoft Dynamics 365 Human Resources rendszerben.
-author: andreabichsel
-ms.date: 04/06/2020
+title: Életesemények változásainak feldolgozása
+description: Ez a téma elmagyarázza, hogyan kell feldolgozni az életesemény-változásokat a Microsoft Dynamics 365 Human Resources rendszerben.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6bc8f02b32d7c66d045015d07b8cb1f1e958d8b13b1c9b5a6d7aa5bda300da89
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 30834b685c535d464dbe016d92579752fac4b7fa
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750244"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417461"
 ---
-# <a name="process-life-event-changes"></a>Életesemények módosításainak feldolgozása
+# <a name="process-life-event-changes"></a>Életesemények változásainak feldolgozása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

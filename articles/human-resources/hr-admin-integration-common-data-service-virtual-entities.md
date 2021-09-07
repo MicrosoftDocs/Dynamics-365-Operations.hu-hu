@@ -1,8 +1,8 @@
 ---
-title: Dataverse-virtuális táblák konfigurálása
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani a virtuális táblákat a Dynamics 365 Human Resources esetén. Meglévő virtuális táblák létrehozása és frissítése, valamint létrehozott és elérhető táblák elemzése.
-author: andreabichsel
-ms.date: 01/25/2021
+title: A Dataverse virtuális tábláinak konfigurálása
+description: Ez a témakör bemutatja, hogyan kell konfigurálni, létrehozni, frissíteni a meglévő virtuális táblákat, valamint elemezni a generált és a rendelkezésre álló táblákat a Dynamics 365 Human Resources számára.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4461b072c12848220c48d3a711cc2d4991c98f068e1ba477becf6d0be068fca8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721607"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414664"
 ---
-# <a name="configure-dataverse-virtual-tables"></a>Dataverse-virtuális táblák konfigurálása
+# <a name="configure-dataverse-virtual-tables"></a>A Dataverse virtuális tábláinak konfigurálása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -140,6 +140,9 @@ A következő lépésben a virtuális tábla adatforrásának a Power Apps körn
 
      >[!NOTE]
      >Ügyeljen arra, hogy az URL-cím végén a „**/**” karakter is szerepeljen a hibák elkerülése érdekében.
+
+     >[!NOTE]
+     >A Cél URL határozza meg azt a humánerőforrás-környezetet, amelyre a virtuális táblák az adatokért mutatnak. Ha tesztkörnyezetet hoz létre a termelési környezet másolatának létrehozásával, frissítse ezt az értéket az új tesztkörnyezet névtér-URL-ére. Ez biztosítja, hogy a virtuális táblák a tesztkörnyezet adataihoz kapcsolódnak, és nem továbbra is a termelési környezetre mutatnak.
 
    - **Bérlő azonosítója**: az Azure Active Directory (Azure AD) bérlő azonosítója.
 

@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 08ece85c773538283fa31ed72e8af61e2da03845fbaa4e6b0507a65626bce803
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720526"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344058"
 ---
 # <a name="one-voucher"></a>Egy bizonylat
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 ## <a name="what-is-one-voucher"></a>Mi az az Egy bizonylat?
@@ -81,7 +82,7 @@ Vevőkkel folytatott beszélgetések alapján a Microsoft összeállította az a
 
 A következő forgatókönyvek csak az Egy bizonylat funkció használatával végezhetők el. Amennyiben a szervezeténél ezen forgatókönyvek bármelyike előfordul, engedélyeznie kell azt, hogy egy bizonylatra több tranzakciót is megadjanak az **Általános főkönyvi paraméterek** oldalon a **Több tranzakció engedélyezése egy bizonylaton** paraméter beállításának módosítása révén. Ezeket a működési réseket más szolgáltatások fogják betölteni a későbbi verziókban.
 
-> [!Note]
+> [!NOTE]
 > [A következő esetek mindegyikében a **Főkönyv paraméterei** lap **Általános** gyorslapján a **Több tranzakció engedélyezése egy bizonylaton belül** mezőt Igen értékre kell tenni.]
 
 ### <a name="post-vendor-or-customer-payments-in-summary-form-to-a-bank-account"></a>Szállítói vagy vevői kifizetések feladása a bankszámlára összegző formában
@@ -115,15 +116,7 @@ Ebben az esetben az egyetlen bizonylaton szereplő vevők ugyanaz a vevő, mert 
 Ha a Visszatérítés időszaki feladat futtatása a Kinnlevőségek modulból történik, ez létrehoz egy tranzakciót, amelynek segítségével az egyenleg a vevőtől a szállítóhoz mozgatható. Ebben az esetben Egy bizonylatot kell használni a vevő visszatérítéséhez.
 
 ### <a name="fixed-asset-maintenance-catch-up-depreciation-split-asset-calculate-depreciation-on-disposal"></a>Tárgyi eszközök karbantartása: felzárkózó értékcsökkenés, felosztott eszköz, értékcsökkenés kiszámítása kivezetéskor
-A következő tárgyieszköz-tranzakciók szintén több tranzakciót hoznak létre egyetlen bizonylaton belül:
-
-- Egy eszközön további beszerzés történik, és „elmaradt” értékcsökkenés kiszámítására kerül sor.
-- Egy eszköz fel van osztva.
-- Bekapcsolásra kerül az értékcsökkenés kivezetéskori kiszámítására használandó paraméter, és ezután a eszköz kivezetésre kerül.
-- Egy eszköz szolgáltatási dátuma a beszerzési dátum elé esik. Emiatt egy értékcsökkenési kiigazítás lesz feladva.
-
-> [!Note]
-> Tranzakciók bevitelekor győződjön meg arról, hogy minden tranzakció ugyanarra a tárgyi eszközre vonatkozik. A bizonylat nem lesz feladva, ha egynél több tárgyi eszközt tartalmaz, még akkor is , ha az **Új bizonylat** mező értéke Csak egy bizonylatszám a Főkönyv rész **Naplónevek** oldalán. Ha a bizonylatban egynél több tárgyi eszköz szerepel, akkor megjelenik a következő üzenet: **Csak egy tárgyieszköz-tranzakció lehet bizonylatonként**, és nem lehet feladni a bizonylatot.  
+A 10.0.21-es és későbbi verziókkal a tárgyi eszközökre vonatkozó tranzakciók a felzárkóztató értékcsökkenés, az eszköz felosztása és az eszköz elidegenítéséhez szükséges értékcsökkenés kiszámítása különböző utalványszámok használatával jön létre.
 
 ### <a name="bills-of-exchange-and-promissory-notes"></a>Váltók és kötelezvények
 Váltók és kötelezvények esetén szükséges az Egy bizonylat használata, mivel a tranzakciók a vevő vagy szállító egyenlegét egyik Kinnlevőségek/Kötelezettségek főkönyviszámláról egy másikra mozgatja át, a kifizetés állapotától függően.

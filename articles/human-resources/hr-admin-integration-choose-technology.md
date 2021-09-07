@@ -1,8 +1,8 @@
 ---
-title: Válasszon ki egy adatintegrációs technológiát
-description: Ez a cikk a Human Resources által kezelt adatokkal való integrációval kapcsolatban tartalmaz tájékoztatást. Leírja a különböző integrációs technológiákat, amelyek segítségével eldöntheti, hogy mely technológiáknak legmegfelelőbbek a szükségleteinek.
-author: andreabichsel
-ms.date: 02/28/2020
+title: Adatintegrációs technológia kiválasztása
+description: Ez a téma a humánerőforrás által kezelt adatok integrálásával kapcsolatos információkat tartalmaz.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,27 +15,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5f7942d08459455192f816b2a06251d0f756b8de521d958eb38a84fa2e5616d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
+ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720468"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7414714"
 ---
-# <a name="choose-a-data-integration-technology"></a>Válasszon ki egy adatintegrációs technológiát
+# <a name="choose-a-data-integration-technology"></a>Adatintegrációs technológia kiválasztása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ez a cikk a Dynamics 365 Human Resources által kezelt adatokkal való integrációval kapcsolatban tartalmaz tájékoztatást. Leírja a különböző integrációs technológiákat, amelyek segítségével eldöntheti, hogy mely technológiáknak legmegfelelőbbek a szükségleteinek.
+Ez a téma a Dynamics 365 Human Resources által kezelt adatokkal való integrációval kapcsolatos információkat tartalmazza. Leírja a különböző integrációs technológiákat, amelyek segítségével eldöntheti, hogy mely technológiáknak legmegfelelőbbek a szükségleteinek.
 
 ## <a name="data-integration-background"></a>Az adatintegráció háttere
 
 Az üzleti adatok olyan kulcsfontosságú eszközök, amely egyedivé teszik a vállalatát. Vállalatának adatai rendkívül értékesek. Az üzleti folyamatok és az üzleti intelligencia szervezeten belüli fejlesztése érdekében a vállalaton belül összegyűjtött adatok közötti kapcsolatokat is használhatja. Igyekszünk egyszerű, biztonságos és stabil hozzáférést biztosítani üzleti adataihoz, függetlenül attól, hogy melyik rendszerből származnak.
 
-Korábban nehézkes volt az adatok integrálása több rendszer között.
-A Microsoft lépéseket tesz annak érdekében, hogy könnyebb legyen az adatok integrálása, és komoly haladást ért el a [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) segítségével.
+Korábban nehézkes volt az adatok integrálása több rendszer között. A Microsoft lépéseket tesz annak érdekében, hogy könnyebb legyen az adatok integrálása, és komoly haladást ért el a [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) segítségével.
 
 A Human Resources segítségével a Dataverse válik a Human Resources szolgáltatás preferált nyilvános felületévé. Arra számítunk, hogy idővel a Human Resources által kezelt összes fontos adat megjelenik a Dataverse szolgáltatásban. A Dataverse szolgáltatást olyan technológiaként tudjuk ajánlani, amely megfelelő választás a legtöbb integrációs alkalmazáshoz.
 
@@ -47,7 +46,7 @@ A következő szakaszok leírják a Human Resources szolgáltatással használha
 
 ### <a name="dataverse-tables"></a>Dataverse-táblák
 
-A Dataverse a Human Resources elsődleges nyilvános adatillesztő-felülete. A program a Dynamics 365 XRM-platformból nőtt ki, amelyet a [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps) megoldások használnak.
+A Dataverse a Human Resources elsődleges nyilvános adatillesztő-felülete. A Dynamics 365 XRM platformból nőtt ki, amelyet a [Dynamics 365 Customer Engagement](/dynamics365/?panel=customer-engagement#pivot=business-apps) megoldások használnak.
 
 A Dataverse egy platformot és API-t biztosít az adattáblákhoz. A Human Resources telepítésekor az egy Dataverse példányhoz kapcsolódik. A Human Resources entitásai abba a Dataverse példányba települnek. A táblák és adataik minden olyan alkalmazás számára elérhetők, amely csatlakozni képes a Dataverse-példányhoz. A Human Resources szinkronizálja az adatokat a Dataverse-táblák között.
 

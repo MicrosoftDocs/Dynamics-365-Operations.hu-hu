@@ -1,6 +1,6 @@
 ---
 title: Fő számla létrehozása
-description: A feladat-útmutató bemutatja a fő számla hozzáadását a meglévő számlatükörhöz.
+description: Ez az eljárás azt mutatja be, hogyan adhatunk hozzá egy főszámlát egy meglévő számlatükörhöz.
 author: aprilolson
 ms.date: 07/11/2019
 ms.topic: business-process
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 66e248d029063d4a465ad789e5eb193706b8a2351bf659306050c7ac7d1c950d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: cbc93e2d2aec1ffcfa755c46553022931bc24c5b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729630"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394636"
 ---
 # <a name="create-a-main-account"></a>Fő számla létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-A feladat-útmutató bemutatja a fő számla hozzáadását a meglévő számlatükörhöz. Ez a felvétel az USMF bemutatócéget használja.  
+Ez az eljárás azt mutatja be, hogyan adhatunk hozzá egy főszámlát egy meglévő számlatükörhöz. Ez a felvétel az USMF bemutatócéget használja.  
 
 1. Ugorjon a **Navigációs ablaktábla > Modulok > Főkönyv > Számlatükör > Számlák > Fő számlák** lehetőségre.
 2. Kattintson az **Új** elemre.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 55952a9b1c25b806ee4a21ef1982c5b15a41adeb9c9bfdf2fccb8c9da242ffdb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714330"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384585"
 ---
 # <a name="manage-changes-to-engineering-products"></a>A mérnöki termékek módosításának kezelése
 
@@ -113,16 +113,16 @@ Az érintett tranzakciók áttekintéséhez, a kijelölt tranzakciók blokkolás
     - **Tranzakció megtekintése** – a kiválasztott tranzakciórekord megnyitása.
     - **Rendelés zárolása** – ez a gomb csak az **Értékesítési rendelések** lapon érhető el. A gombbal zárolhatja a kijelölt értékesítési rendelést.
     - **Sor zárolása** – ez a gomb csak a **Beszerzési rendelések** lapon érhető el. A gombbal zárolhatja a beszerzési rendelés kijelölt sorát.
-    - **Felelős értesítése** – ez a gomb csak az **Értékesítési rendelések** lapon érhető el. A használatával értesítést küldhet a kiválasztott értékesítési rendelésnél felelősként beállított felhasználónak.
-    - **Megrendelő értesítése** – ez a gomb csak az **Beszerzési rendelések** lapon érhető el. A használatával értesítést küldhet a kiválasztott beszerzési rendelésnél beállított megrendelőnek.
-    - **Termelés értesítése** – ez a gomb csak a **Termelési rendelések** lapon érhető el. Az értékesítési és a beszerzési rendelésektől eltérően a termelési rendelések esetében nincsen egyetlen olyan felhasználó, aki be lenne állítva a teljes rendeléshez felelősként. Ehelyett általában a különböző felügyelők vagy tervezők tulajdonában van egy adott hely vagy a termelés adott része (például konkrét erőforrások vagy erőforráscsoportok). Ennek megfelelően a gombra kattintás után minden olyan felhasználó, aki felelős a kiválasztott termelési rendeléshez kapcsolódó valamelyik erőforrásért, értesítést kap a módosításról.
-    - **Készítő értesítése** – ez a gomb csak az **Beszerzési igénylés** lapon érhető el. A használatával értesítést küldhet a kiválasztott beszerzési igénylésnél beállított készítőnek.
-    - **Értékesítési felelős értesítése** – ez a gomb csak az **Árajánlatok** lapon érhető el. A használatával értesítést küldhet a kiválasztott értékesítési rendelésnél felelősként beállított felhasználónak.
+    - **Felelős értesítése** – ez a gomb csak az **Értékesítési rendelések** lapon érhető el. A használatával értesítést küldhet a kiválasztott értékesítési rendelésnél felelősként beállított felhasználónak. További információt arról, hogy ki és hogyan láthatja az értesítéseket, a [Tranzakciókhoz tartozó módosítási értesítések áttekintése és feldolgozása](#review-notifications) című témakörben talál.
+    - **Megrendelő értesítése** – ez a gomb csak az **Beszerzési rendelések** lapon érhető el. A használatával értesítést küldhet a kiválasztott beszerzési rendelésnél beállított megrendelőnek. További információt arról, hogy ki és hogyan láthatja az értesítéseket, a [Tranzakciókhoz tartozó módosítási értesítések áttekintése és feldolgozása](#review-notifications) című témakörben talál.
+    - **Termelés értesítése** – ez a gomb csak a **Termelési rendelések** lapon érhető el. Az értékesítési és a beszerzési rendelésektől eltérően a termelési rendelések esetében nincsen egyetlen olyan felhasználó, aki be lenne állítva a teljes rendeléshez felelősként. Ehelyett általában a különböző felügyelők vagy tervezők tulajdonában van egy adott hely vagy a termelés adott része (például konkrét erőforrások vagy erőforráscsoportok). Ennek megfelelően a gombra kattintás után minden olyan felhasználó, aki felelős a kiválasztott termelési rendeléshez kapcsolódó valamelyik erőforrásért, értesítést kap a módosításról. További információt arról, hogy ki és hogyan láthatja az értesítéseket, a [Tranzakciókhoz tartozó módosítási értesítések áttekintése és feldolgozása](#review-notifications) című témakörben talál.
+    - **Készítő értesítése** – ez a gomb csak az **Beszerzési igénylés** lapon érhető el. A használatával értesítést küldhet a kiválasztott beszerzési igénylésnél beállított készítőnek. További információt arról, hogy ki és hogyan láthatja az értesítéseket, a [Tranzakciókhoz tartozó módosítási értesítések áttekintése és feldolgozása](#review-notifications) című témakörben talál.
+    - **Értékesítési felelős értesítése** – ez a gomb csak az **Árajánlatok** lapon érhető el. A használatával értesítést küldhet a kiválasztott értékesítési rendelésnél felelősként beállított felhasználónak. További információt arról, hogy ki és hogyan láthatja az értesítéseket, a [Tranzakciókhoz tartozó módosítási értesítések áttekintése és feldolgozása](#review-notifications) című témakörben talál.
     - **Selejt** – ez a gomb csak a **Készlet** lapon érhető el. A használatával a kiválasztott készletet selejtezheti le.
     - **Előzmények megtekintése** – a kijelölt tranzakcióval kapcsolatos műveletek előzményeinek megnyitása az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanelen. (Az előzményekben például látható, hogy az értesítések el lettek-e küldve, vagy a tranzakciók zárolva lettek-e.) 
     - **Az összes tranzakció megjelenítése** – az összes tranzakciót (nem csak a nyitottakat) tartalmazó lista megnyitása.
 
-#### <a name="review-and-process-change-notifications-for-transactions"></a>A tranzakciók értesítéseinek áttekintése és feldolgozása
+#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>A tranzakciók értesítéseinek áttekintése és feldolgozása
 
 A kapott módosítási értesítéseket a következőképpen olvashatja át és dolgozhatja fel:
 

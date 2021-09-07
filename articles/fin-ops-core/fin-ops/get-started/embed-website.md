@@ -2,7 +2,7 @@
 title: Harmadik fél alkalmazások beágyazása
 description: Ez a témakör azt mutatja be, hogyan végezhető el a harmadik fél alkalmazások beágyazása a termék funkcionalitásának kibővítése érdekében.
 author: jasongre
-ms.date: 04/22/2021
+ms.date: 08/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,21 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: f47fb6a2fdb586fbc9f25938c3b9c1cfc16ddc1af432b91621421bd829b23925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737799"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345410"
 ---
 # <a name="embed-third-party-apps"></a>Harmadik fél alkalmazások beágyazása
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Sok ügyfél különféle alkalmazások használatával végzi üzleti tevékenységét. Az alkalmazások közül vannak olyan harmadik fél alkalmazások, amelyek a Finance and Operations alkalmazásokkal együtt működnek. A felhasználói felület problémamentesebb használata érdekében az **(Előzetes verzió) Teljes oldalas alkalmazások** funkció használatával közvetlenül beágyazhatja ezeket a harmadik fél alkalmazásokat a saját Finance and Operations alkalmazásaiba (feltéve, hogy a harmadik fél alkalmazások engedélyezik a beágyazásukat). Így a felhasználók anélkül is elérhetik a szükséges webhelyeket és alkalmazásokat, hogy a fülek vagy ablakok között kellene ingázniuk.
+Sok ügyfél különféle alkalmazások használatával végzi üzleti tevékenységét. Az alkalmazások közül vannak olyan harmadik fél alkalmazások, amelyek a Finance and Operations alkalmazásokkal együtt működnek. A zökkenőmentesebb felhasználói élmény biztosítása érdekében a **Teljes oldal alkalmazásai** funkcióval közvetlenül a Finance and Operations alkalmazásaiba ágyazhatja be ezeket a harmadik féltől származó alkalmazásokat (feltéve, hogy a harmadik féltől származó alkalmazások engedélyezik a beágyazást). Így a felhasználók anélkül is elérhetik a szükséges webhelyeket és alkalmazásokat, hogy a fülek vagy ablakok között kellene ingázniuk.
 
-Mielőtt harmadik fél alkalmazásokat ágyazna be a termékbe, be kell kapcsolnia a Funkciókezelésben az **(Előzetes verzió) Teljes oldalas alkalmazások** funkciót. Ezután a következő módszerek egyikével beágyazhat egy harmadik fél alkalmazást vagy webhelyet. Ezek a módszerek hasonlóak ahhoz a módszerhez, amely a vászonalapú alkalmazásokat beágyazza a Microsoft Power Apps szolgáltatásból a Finance and Operations alkalmazásokba.
+Mielőtt harmadik féltől származó alkalmazásokat ágyazhatna be a termékbe, a funkciókezelésben be kell kapcsolnia a **Teljes oldal alkalmazásai** funkciót. Ezután a következő módszerek egyikével beágyazhat egy harmadik fél alkalmazást vagy webhelyet. Ezek a módszerek hasonlóak ahhoz a módszerhez, amely a vászonalapú alkalmazásokat beágyazza a Microsoft Power Apps szolgáltatásból a Finance and Operations alkalmazásokba.
 
 - Az alkalmazás vagy webhely beágyazása meglévő lapra új lapként (kimutatás fül, gyorslap, panel vagy munkaterület rész).
 - Új teljes képernyős élmény létrehozása alkalmazáshoz vagy webhelyhez az irányítópulton.
@@ -64,7 +64,7 @@ Ezt az eljárást akkor használja, ha a rendszerben egy létező oldalt ki szer
 Akkor használja ezt az eljárást, ha a beágyazni kívánt alkalmazás nem létező laphoz kapcsolódik, vagy ha a Finance and Operations alkalmazáson belül teljes képernyős élményre van szükség.
 
 1. Nyissa meg az irányítópultot.
-2. Jelölje ki és tartsa lenyomva (vagy kattintson a jobb egérgombra) az oldalt, válassza a **Személyre szabás** lehetőséget, majd válassza a **Lap hozzáadása** lehetőséget.
+2. Válassza ki és tartsa lenyomva (vagy kattintson a jobb gombbal) az irányítópultot, válassza a **Testreszabás**, majd az **Oldal hozzáadása** lehetőséget.
 3. A **Lap hozzáadása** panelen válassza a **Webhely** lehetőséget.
 4. Beágyazott alkalmazás konfigurálása:
 
@@ -76,15 +76,15 @@ Akkor használja ezt az eljárást, ha a beágyazni kívánt alkalmazás nem lé
     > - Az alkalmazást vagy webhelyet úgy kell konfigurálni, hogy lehetővé tegye a saját beágyazását.
 
 5. A **Mentés** gombra kattintva új csempeként hozzáadhatja az alkalmazást a irányítópulthoz.
-6. Válassza ki az új csempét az irányítópult, és győződjön meg arról, hogy az alkalmazás a vártnak megfelelően jelenik meg. Ha az alkalmazás nincs renderelve, akkor tekintse meg témakör későbbi [Hibaelhárítás](#troubleshooting) szakaszát.
+6. Válassza ki az új csempét az irányítópult, és győződjön meg arról, hogy az alkalmazás a vártnak megfelelően jelenik meg. Ha az alkalmazás nem jelenik meg, olvassa el a témakör későbbi [Hibaelhárítás](#troubleshooting) szakaszát.
 
 ## <a name="sharing-embedded-apps"></a>A beágyazott alkalmazások megosztása
 
 Miután az előző részekben ismertetett valamelyik módszerrel beágyazott egy alkalmazást, érdemes lehet a nézetet megosztani a rendszer más felhasználóival. Beágyazott alkalmazás megosztásához használja a következő módszerek egyikét:
 
-- **Nézet közzététele (Ajánlott):** Ha a beágyazott alkalmazást elmentették egy nézetbe, a megosztás javasolt és preferált módja a nézet közzétételének a megfelelő biztonsági szerepkörekkel rendelkező felhasználók számára. Majd minden olyan felhasználó, aki a közzétett nézet által tervezett biztonsági szerepkörökkel rendelkezik, látja az alkalmazást a Finance and Operations alkalmazások képernyőjén. További információért a nézet közzétételéhez lásd a [Nézetek közzététele](saved-views.md#publishing-views) lehetőséget.
+- **A nézet közzététele (ajánlott):** Ha a beágyazott alkalmazás egy nézetbe lett mentve, a megosztás ajánlott és előnyben részesített módja a nézet közzététele a megfelelő biztonsági szerepkörrel rendelkező felhasználók számára a célzott jogalanyoknál. Ebben az esetben csak a kívánt felhasználók fogják látni a beágyazott alkalmazást az adott oldalon. További információért a nézet közzétételéhez lásd a [Nézetek közzététele](saved-views.md#publishing-views) lehetőséget.
 
-    Olyan alkalmazást is közzé lehet tenni, amely teljes képernyős élményként van beágyazva az irányítópultról. Az irányítópulton jelölje ki és tartsa lenyomva (vagy kattintson a jobb egérgombbal) az alkalmazáshoz társított csempét, válassza a **Személyre szabás** lehetőséget, majd válassza a **Lap közzététele** lehetőséget. Jelenleg csak biztonsági szerepkörökhöz tud közzétenni. A jogi személyek számára való közzétételt azonban csak azt megelőzően lehet hozzáadni, hogy a funkció általánosan elérhetővé válik.
+    Olyan alkalmazást is közzé lehet tenni, amely teljes képernyős élményként van beágyazva az irányítópultról. Az irányítópulton jelölje ki és tartsa lenyomva (vagy kattintson a jobb egérgombbal) az alkalmazáshoz társított csempét, válassza a **Személyre szabás** lehetőséget, majd válassza a **Lap közzététele** lehetőséget. Megjelenik egy, a *nézetek közzététele* élményhez hasonló élmény, és kiválaszthatja a közzéteendő biztonsági szerepköröket. A 10.0.21-es vagy újabb frissítésben, ha a **Mentett nézetek javított jogi személy támogatása** funkció be van kapcsolva, akkor az alkalmazást a kívánt jogi személyek számára is közzéteheti.
 
 - **Személyre szabás másolása:** Olyan lapok esetén, amelyek nem támogatják a nézeteket (például párbeszédpanelek vagy munkaterületek), vagy a teljes oldalas alkalmazással való használatnál, átmásolhatja a személyre szabást a megfelelő felhasználókhoz. A további tudnivalókat lásd: [Személyre szabások megosztása](personalize-user-experience.md#sharing-personalizations).
 

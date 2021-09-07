@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve a Dynamics 365 Commerce alkalmazásban.
 author: josaw
-ms.date: 01/11/2021
+ms.date: 08/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: aa6030468259069cf031feb8df48d6710e1160f310a1d82c1034afe69249f00f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740407"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386741"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 
@@ -32,6 +32,55 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 > [!NOTE]
 > A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](/dynamics/s-e/) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.21 kiadásában
+
+[!include [banner](../includes/preview-banner.md)]
+
+### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Kiskereskedelmi SDK a Lifecycle Services használatával
+
+A kiskereskedelmi SDK-t a Lifecycle Services (LCS) csomagban szállítjuk. Ez a terjesztési mód a 10.0.21-es kiadásban elavult. A jövőben a kiskereskedelmi SDK referenciacsomagokat, könyvtárakat és mintákat a GitHub nyilvános tárolóiban teszik közzé.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A kiskereskedelmi SDK az LCS-ben kerül szállításra. Az LCS-folyamat néhány órát vesz igénybe, és a folyamatot minden frissítésnél meg kell ismételni. A jövőben a kiskereskedelmi SDK referenciacsomagokat, könyvtárakat és mintákat a GitHub nyilvános tárolóiban teszik közzé. A kiterjesztett minták és referenciacsomagok könnyen fogyaszthatók, és a frissítések néhány perc alatt befejeződnek. |
+| **Felváltotta másik szolgáltatás?**   |  [Töltse le a kiskereskedelmi SDK mintákat és referenciacsomagokat a GitHubról és innen: NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
+| **Érintett területek**         | Retail SDK |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Megszűnt: A 10.0.21-es kiadástól kezdve az LCS VM-eken keresztül szállított SDK 2022 októberében eltávolításra kerül. |
+
+### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Kiskereskedelmi telepíthető csomag és kombinált POS, hardverállomás és Cloud Scale egység telepítői
+
+A kiskereskedelmi SDK MSBuild segítségével létrehozott kiskereskedelmi telepíthető csomagok a 10.0.21-es verzióban elavulttá váltak. A jövőben használja a Cloud Scale Unit (CSU) csomagot a Cloud Scale unit bővítményekhez (Commerce Runtime, csatorna adatbázis, Headless commerce API-k, Fizetések és Cloud Point of Sale (POS)). Használja a csak bővítményt tartalmazó telepítőket a POS, a hardverállomás és a felhőskála önállóan üzemeltetett egységéhez.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A kiskereskedelmi telepíthető csomag egy olyan kombinált csomag, amely a bővítőcsomagok és telepítők teljes készletét tartalmazza. Ez a kombinált csomag összetetté teszi a telepítést, mivel a CSU-bővítmények a Cloud scale egységbe kerülnek, a telepítők pedig az üzletekben kerülnek telepítésre. A telepítők tartalmazzák a bővítményt és az alapterméket, ami megnehezíti a frissítéseket. Minden frissítéskor kódegyesítésre és csomaggenerálásra van szükség. A folyamat egyszerűsítése érdekében a bővítménycsomagok mostantól komponensekre vannak bontva a könnyebb telepítés és kezelés érdekében. Az új megközelítéssel a bővítmények és az alaptermék telepítői elkülönülnek, és egymástól függetlenül, kódegyesítés vagy újracsomagolás nélkül karbantarthatók és frissíthetők.|
+| **Felváltotta másik szolgáltatás?**   | CSU-bővítések, POS-bővítések telepítői, hardverállomás-bővítések telepítői |
+| **Érintett területek**         | Dynamics 365 Commerce bővítés és telepítés |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Megszűnt: A 10.0.21-es kiadástól kezdve a RetailDeployablePackage LCS-ben történő telepítésének támogatása 2022 októberében megszűnik. |
+
+További tájékoztatás:
+
++ [Külön csomag létrehozása a kereskedelmi felhőskála egységhez (CSU)](../dev-itpro/retail-sdk/retail-sdk-packaging.md#generate-a-separate-package-for-commerce-cloud-scale-unit-csu)
++ [Modern POS-bővítménycsomag létrehozása](../dev-itpro/pos-extension/mpos-extension-packaging.md)
++ [A POS integrálása egy új hardvereszközzel](../dev-itpro/hardware-device-extension.md)
++ Kódminták
+    + [Cloud Scale egység](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit)
+    + [POS, CSU és hardverállomás](https://github.com/microsoft/Dynamics365Commerce.InStore)
+
+### <a name="modernpossln-and-cloudpossln-in-the-retail-sdk"></a>ModernPos.Sln és CloudPOs.sln a kiskereskedelmi SDK-ban
+
+A ModernPos.sln, CloudPOs.sln, POS.Extension.csproj és a POS mappát használó POS-bővítmény fejlesztése a 10.0.21-es kiadásban elavult. A jövőben használja a POS-független csomagolási SDK-t a POS-bővítésekhez.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A kiskereskedelmi SDK korábbi verzióiban, ha vannak POS-bővítmények, a POS legújabb verziójára való frissítéshez kódegyesítésre és újracsomagolásra van szükség. A kódegyesítés időigényes frissítési folyamat volt, és a teljes Retail SDK-t fenn kellett tartania a tárolóban. A POS.App projektet is le kellett fordítania. A független csomagolási modell használatával csak a kiterjesztést kell karbantartania. A POS-bővítmények legújabb verziójára való frissítés olyan egyszerű, mint a NuGet csomag verziójának frissítése, amelyet a projekt fogyaszt. A kiterjesztések önállóan is telepíthetők, a szolgáltatások pedig a kiterjesztések telepítőit használják. Az alap POS külön telepíthető és karbantartható, és nincs szükség kódegyesítésre vagy újracsomagolásra az alap telepítővel vagy kóddal. |
+| **Felváltotta másik szolgáltatás?**   | [POS-független csomagolási SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
+| **Érintett területek**         | Dynamics 365 Commerce POS bővítés és telepítés |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Megszűnt: A 10.0.21-es kiadástól kezdve a ModernPos.Sln, CloudPOs.sln és POS.Extensons.csproj csomagok és bővítmények kombinált POS csomagok és bővítmény modelljének támogatása a Retail SDK-ban 2022 októberében megszűnik. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.17 kiadásában
 

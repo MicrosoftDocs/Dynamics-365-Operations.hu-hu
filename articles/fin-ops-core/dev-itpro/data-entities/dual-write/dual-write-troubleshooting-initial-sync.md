@@ -4,24 +4,17 @@ description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, a
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 0fe319f4c8edd54700b2b32ef80539a8d0ff793aa815cef3813af4c63fd1b0d3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: 985825d3a205f566a94ac7532e45895e7060edf5
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736374"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416981"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Problémák elhárítása a kezdeti szinkronizációkor
 
@@ -46,7 +39,7 @@ Miután engedélyezte a leképezési sablonokat, a leképezések állapotának *
 
 A következő hibaüzenetek jelenhetnek meg a leképezlés és a kezdeti szinkronizálás futtatása során:
 
-*(\[Hibás kérelem\], A távoli kiszolgáló hibát adott vissza: (400) hibás kérelem.), AX exportálás hibát észlelt*
+*(\[Bad Request\], A távoli szerver hibát küldött vissza: (400) Bad Request.), az AX export hibát észlelt.*
 
 Íme, egy példa a teljes hibaüzenetre.
 
@@ -198,7 +191,7 @@ Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceA
 
         ![Adatintegrációs projekt a CustomerAccount és a ContactPersonId frissítéséhez.](media/cust_selfref6.png)
 
-    2. Adja meg a vállalat feltételeit a szűrőben a Dataverse oldalán, hogy csak a szűrőfeltételeknek megfelelő sorok legyenek frissítve a Finance and Operations alkalmazásban. Szűrő hozzáadásához kattintson a szűrő ikonra. Ezután a **Lekérdezés szerkesztése** párbeszédpanelen hozzáadhat egy olyan szűrőlekérdezést, mint az **\_msdyn\_company\_value eq '\<guid\>'**. 
+    2. Adja meg a vállalat feltételeit a szűrőben a Dataverse oldalán, hogy csak a szűrőfeltételeknek megfelelő sorok legyenek frissítve a Finance and Operations alkalmazásban. Szűrő hozzáadásához kattintson a szűrő ikonra. Ezután a **Lekérdezés szerkesztése** párbeszédpanelen hozzáadhat egy olyan szűrőlekérdezést, mint az **\_msdyn\_company\_value eq '\<guid\>'**.
 
         > [MEGJEGYZÉS] Ha a szűrő gomb nem látszik, akkor hozzon létre egy támogató jegyet, és kérje meg az adatintegrációs csoportot, hogy engedélyezze a szűrő képességét a bérlőjén.
 
@@ -210,5 +203,36 @@ Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceA
 
 8. Engedélyezze újra Finance and Operations alkalmazásban az **Ügyfelek V3** tábla változáskövetését.
 
+## <a name="initial-sync-failures-on-maps-with-more-than-10-lookup-fields"></a>Kezdeti szinkronizálási hibák 10-nél több keresési mezőt tartalmazó térképeken
+
+A következő hibaüzenetet kaphatja, amikor megpróbálja futtatni a kezdeti szinkronizálási hibákat az **Ügyfelek V3 - Számlák**, **értékesítési megrendelések** leképezéseken vagy bármely olyan leképezésen, amely több mint 10 keresési mezőt tartalmaz:
+
+*CRMExport: A csomag végrehajtása befejeződött. Hiba Leírás 5 Az adatok lekérdezése a https://xxxxx//datasets/yyyyy/tables/accounts/items?$select=accountnumber, address2_city, address2_country, ... (msdyn_company/cdm_companyid eq 'id')&$orderby=accountnumber asc oldalról sikertelen.*
+
+A lekérdezés keresési korlátozása miatt a kezdeti szinkronizálás sikertelen, ha az entitás-leképezés 10-nél több keresést tartalmaz. További információért lásd: [Kapcsolódó tábla rekordjainak lekérdezéssel történő lekérdezése](/powerapps/developer/common-data-service/webapi/retrieve-related-entities-query).
+
+A probléma megoldásához kövesse az alábbi lépéseket:
+
+1. Az opcionális keresési mezők eltávolítása a kettős írású entitástérképből, hogy a keresések száma 10 vagy kevesebb legyen.
+2. Mentse a térképet, és végezze el a kezdeti szinkronizálást.
+3. Ha az első lépés kezdeti szinkronizálása sikeres, adja hozzá a többi keresési mezőt, és távolítsa el az első lépésben szinkronizált keresési mezőket. Győződjön meg róla, hogy a keresési mezők száma 10 vagy annál kevesebb. Mentse a térképet, és futtassa a kezdeti szinkronizálást.
+4. Ismételje meg ezeket a lépéseket, amíg az összes keresési mezőt szinkronizáljuk.
+5. Adja vissza az összes keresési mezőt a térképhez, mentse a térképet, és futtassa a térképet a **kezdeti szinkronizálás kihagyásával**.
+
+Ez a folyamat engedélyezi a térképet az élő szinkronizálási módhoz.
+
+## <a name="known-issue-during-initial-sync-of-party-postal-addresses-and-party-electronic-addresses"></a>Ismert probléma a felek postai címeinek és elektronikus címeinek kezdeti szinkronizálásakor
+
+A következő hibaüzenetet kaphatja, amikor megpróbálja lefuttatni a Fél postai címek és a Fél elektronikus címek kezdeti szinkronizálását:
+
+*A fél száma nem található a Dataverse-en.*
+
+A Finance and Operations alkalmazásokban a **DirPartyCDSEntity-re** van egy tartomány, amely a **Személy** és **Szervezet** típusú felek szűrését végzi. Ennek eredményeképpen a **CDS felek - msdyn_parties** leképezés kezdeti szinkronizálása nem szinkronizálja a más típusú feleket, beleértve a **Jogi személyt** és a **Működési egységet**. A **CDS Party postai címek (msdyn_partypostaladdresses)** vagy a **Party Contacts V3 (msdyn_partyelectronicaddresses)** kezdeti szinkronizálásakor előfordulhat, hogy a következő hiba jelentkezik.
+
+Dolgozunk egy olyan javításon, amely eltávolítja a féltípus-tartományt a Finance and Operations entitáson, hogy minden típusú fél sikeresen szinkronizálhasson a Dataverse-en.
+
+## <a name="are-there-any-performance-issues-while-running-initial-sync-for-customers-or-contacts-data"></a>Vannak teljesítményproblémák az ügyfelek vagy a névjegyek adatainak kezdeti szinkronizálása során?
+
+Ha lefuttatta az **Ügyféladatok** kezdeti szinkronizálását, és futnak az **Ügyféltérképek**, majd lefuttatja a **Kapcsolatok** adatainak kezdeti szinkronizálását, teljesítményproblémák léphetnek fel a **LogisticsPostalAddress** és **LogisticsElectronicAddress** táblákba történő beillesztések és frissítések során a **Kapcsolatok** címei esetében. A **CustCustomerV3Entity** és a **VendVendorV2Entity** esetében ugyanazokat a globális postai cím és elektronikus cím táblákat követik, és a kettős írás több lekérdezést próbál létrehozni az adatok másik oldalra történő írásához. Ha már lefuttatta a kezdeti szinkronizálást az **Ügyféladatokhoz**, akkor állítsa le a megfelelő leképezést a **Kapcsolatok** adatainak kezdeti szinkronizálása közben. Ugyanígy járjon el a **Szállító** adatokkal is. Ha a kezdeti szinkronizálás befejeződött, a kezdeti szinkronizálás kihagyásával az összes térképet futtathatja.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

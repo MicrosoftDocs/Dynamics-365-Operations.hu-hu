@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 76e7c0be047decb40019be207a735be27f79d78b4cde9321e8c3728bdbd45e35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b337e80db6d47354dc187477832add370a164172
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760538"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402201"
 ---
 # <a name="learning-catalog-for-implementation-project-managers-working-with-dynamics-365-supply-chain-management"></a>Megvalósítási projektmenedzsment képzési katalógus megvalósítása ezzel: Dynamics 365 Supply Chain Management
 
@@ -27,8 +27,8 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 ## <a name="get-started"></a>Első lépések<a name="get-started"></a>
 
-| Tartalom | Leírás  | Formátum  | Hossz    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|-----------|
+| Tartalom | Leírás | Formátum | Hossz |
+|---------|-------------|--------|--------|
 | [Ismerje meg a Microsoft Dynamics365, valamint a Power Platform üzleti értékét](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Érdeklik az üzleti alkalmazások? Talán nem tudja, hogyan kezdjen hozzá a Microsoft Dynamics 365 és Power Platform alkalmazások használatához? Ismerje meg, hogyan lehet az üzleti alkalmazások erejével segíteni a vállalkozás átalakításában. | Ingyenes, saját tempójú online tanulási útvonal | 7 óra |
 | [Dynamics 365 és Power Platform alapok](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Érdeklik az üzleti alkalmazások? Ezzel a tanulási útvonallal kezdheti a Dynamics 365 alkalmazások használatát. További tájékoztatás a felhőalapú fogalmakról, a Power Platform, valamint a Dynamics 365 alkalmazásokkal való ismerkedéshez. | Ingyenes, saját tempójú online tanulási útvonal | 5.5 óra |
 | [Első lépések a Finance and Operations alkalmazásokban](/learn/paths/get-started-finance-operations/) | Ismerje meg, hogy a Finance and Operations alkalmazások hogy támogatják a vállalatok globális pénzügyi rendszereinek, működési folyamatainak és a korszerű ellátási láncok kezelésének a felhatalmazása érdekében, hogy a személyek gyors, tájékozott döntéseket hozzanak. A Finance and Operations alkalmazások használatával kapcsolatos pályafutásának első lépéseként a kívánt szerepkörtől függetlenül meg kell Ismerkedjen a jellemzőivel és a funkcionalitással. | Ingyenes, saját tempójú online tanulási útvonal | 2 óra |
@@ -38,8 +38,8 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 ## <a name="core-platform-knowledge"></a>Alapplatform ismerete<a name="core-platform-knowledge"></a>
 
-| Tartalom  | Leírás  | Formátum   | Hossz    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Tartalom | Leírás | Formátum | Hossz |
+|---------|-------------|--------|--------|
 | [A Lifecycle Services használata a Finance and Operations alkalmazások végrehajtásának tervezéséhez és kialakításának](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | A Lifecycle Services (LCS) olyan együttműködésen alapuló munkaterület, amelyet a vevők és a partnereik használnak a Finance and Operations alkalmazások az értékesítés előtti projekteknek a végrehajtási szakaszba történő feldolgozására, végül a termelési környezetre. Olyan feladatlistákat és eszközöket biztosít, amelyek segítik a projekt kezelését, többek között a végrehajtás és a rendszeresen frissített szolgáltatások előállítását előkészítő módszertanok létrehozásával. | Ingyenes, saját tempójú online tanulási útvonal | 2 óra |
 | [A szervezet konfigurálása a Finance and Operations alkalmazásokban](/learn/paths/configure-your-organization-finance-ops/) | Funkcionális tanácsadóként, aki a Finance and Operations alkalmazásokat használja, tudnia kell, hogyan kell beállítani szervezetet a vevői számára. Ez a tanulási útvonal többek között bemutatja a jogi személyek beállítását, a biztonsági beállítások megvalósítását, a felhasználók felhasználói felületének személyre szabását, valamint a mobil alkalmazások tervezését és összeállítását, valamint a közös integrációk végrehajtását. | Ingyenes, saját tempójú online tanulási útvonal | 12 óra |
 | [Adatok áttelepítése és közzététel a Finance and Operations alkalmazásokkal](/learn/paths/migrate-data-go-live-finance-operations/) | Funkció-tanácsadóként ismernie kell a felhasználói adatok áttelepítéshez történő előkészítését, az adatkezeléssel való együttműködést és a felhasználó általi elfogadás vizsgálat elvégzését a Finance and Operations alkalmazások éles indításához. | Ingyenes, saját tempójú online tanulási útvonal | 4 óra |
@@ -69,8 +69,8 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 ## <a name="supply-chain-management"></a>Ellátásilánc-kezelés<a name="supply-chain-management"></a>
 
-| Tartalom  | Leírás  | Formátum | Hossz    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Tartalom | Leírás | Formátum | Hossz |
+|---------|-------------|--------|--------|
 | [Termékek és készlet konfigurálása és kezelése a következőben: Dynamics 365 Supply Chain Management](/learn/paths/configure-manage-products-inventory-dyn365-supply-chain-mgmt/) | A termékinformáció az ellátási lánc és a kiskereskedelmi alkalmazások oszlopa minden ágazatban. Az üzleti megoldások különböző moduljaiban termékkel kapcsolatos információkra és a konfigurálásra van szükség az egyes termékekhez, termékcsaládokhoz, anyagjegyzékekhez és termékkategóriákhoz kapcsolódó üzleti folyamatok kezeléséhez. A leltári jelentések a készlet szintjét mutatják különböző módokon, és azt, hogy hogyan lehet hatékonyabban megvalósítani a készlettranzakciókat. | Ingyenes, saját tempójú online tanulási útvonal | 6 óra |
 | [Beszerzés és szállítók konfigurálása és kezelése a következőben: Dynamics 365 Supply Chain Management](/learn/paths/configure-manage-procurement-vendors-dyn365-supply-chain-mgmt/) | A szállítók kiválasztása és a velük való együttműködést, a termékek beszerzése és az áruk és szolgáltatások minősége biztosításának folyamata fontos tényező a vállalat hírnevének és sikerességének a hatására. | Ingyenes, saját tempójú online tanulási útvonal | 6 óra |
 | [Raktárkezelés konfigurálása és használata a következőben: Dynamics 365 for Finance and Operations](/learn/paths/configure-work-warehouse-management-d365-finance-ops/) | A raktárkezelés a Dynamics 365 for Finance and Operations megoldásban segíti a raktári folyamatok optimalizálását és ésszerűsítését az Ön egyéni igényei szerint, és biztosítja a betekintést a készletbe és az eszközökbe a vevői elégedettség növelése és a költségek csökkentése érdekében. | Ingyenes, saját tempójú online tanulási útvonal | 5 óra |
@@ -86,8 +86,8 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 ## <a name="manufacturing"></a>Gyártás<a name="manufacturing"></a>
 
-| Tartalom  | Leírás  | Formátum    | Hossz    |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|-----------|---------------------------------------------------------------------------|
+| Tartalom | Leírás | Formátum | Hossz |
+|---------|-------------|--------|--------|
 | [Diszkrét gyártás konfigurálása és használata a következőben: Dynamics 365 Supply Chain Management](/learn/paths/configure-use-discrete-manufacturing-dyn365-supply-chain-mgmt/) | Ha egy vállalat csak egyszerű termékeket hoz létre, akkor a termelést manuálisan lehet ütemezni a megfelelő anyagjegyzék-részegységek termelési területre érkezésével, a megfelelő időben és a megfelelő erőforrásnál. A gyártás funkcionális tanácsadójaként ismernie kell a Dynamics 365 for Finance and Operations konfigurálását a diszkrét gyártásra, így a vevő végrehajthatja és vezérelheti a termelési életciklusát. | Ingyenes, saját tempójú online tanulási útvonal | 9 óra |
 | [Lean manufacturing konfigurálása és használata a következőben: Dynamics 365 Supply Chain Management](/learn/paths/configure-use-lean-manufacturing-dyn365-supply-chain-mgmt/) | A lean Manufacturing a folyamatos javítás útja. A cél az, hogy pontosan azt kell előállítani, amit a vevő szeretne, amikor a vevő akarja, és gazdaságosan kell csinálni. Használhatja a lean manufacturing lehetőséget egyesített (vegyes módú) gyártási környezetben, ahol különféle készletek, termelések és forrásstratégiák vannak. Ezek a stratégiák tartalmazzák a termelési rendeléseket, kötegrendeléseket feldolgozóiparoknak, beszerzési rendeléseket és transzferrendeléseket. A lean manufacturing architektúra a Dynamics 365 for Finance and Operations megoldásban tartalmazza a termelési folyamatokat, tevékenységeket és kanbanszabályokat. | Ingyenes, saját tempójú online tanulási útvonal | 6.5 óra |
 | [Folyamatgyártás konfigurálása és használata a következőben: Dynamics 365 Supply Chain Management](/learn/paths/configure-use-process-manufacturing-dyn365-supply-chain-mgmt/) | A folyamatgyártás a képletekhez és a gyártási receptekhez van társítva, szemben a diszkrét gyártással, amely diszkrét egységeket és anyagjegyzékeket alkalmaz. A folyamatgyártás olyan termelési környezetekben használatos, ahol a termelés köteg- vagy félig folytonos folyamatokban történik. | Ingyenes, saját tempójú online tanulási útvonal | 6 óra |
@@ -98,13 +98,12 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 ## <a name="exams"></a>Vizsgák<a name="exams"></a>
 
-| Tartalom  | Leírás  | Formátum   |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|---------------------------------------------------------------------------|
+| Tartalom | Leírás | Formátum |
+|---------|-------------|--------|
 | [Microsoft tanúsított: Dynamics 365 for Finance and Operations, Supply Chain Management funkcionális tanácsadó munkatárs](https://www.microsoft.com/learning/d365-functional-consultant-supply-chain-management.aspx) | Microsoft tanúsított: Dynamics 365 for Finance and Operations, a Supply Chain Management funkcionális tanácsadók a költségkönyvelés, a készletkezelés, az alaptervezés és a raktárkezelés ésszerűsítést optimalizálják az ügyfeleik számára. | Tanúsítás; a költség régiónként változik |
 | [Microsoft tanúsított: Dynamics 365 for Finance and Operations, termelési funkcionális tanácsadó munkatárs](https://www.microsoft.com/learning/d365-functional-consultant-manufacturing.aspx) | Microsoft tanúsított: A Dynamics 365 for Finance and Operations gyártási funkcionális tanácsadóink integrálják a digitális és a fizikai rendszereket; a láthatóság, a gyártási hatékonyság és a rugalmasság javítása; alacsonyabb költségek az ügyfeleknek. | Tanúsítás; a költség régiónként változik |
 | [Vizsga MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: gyakori funkciók és végrehajtási eszközök használata; a biztonság, a folyamatok és a beállítások konfigurálása; adatáttelepítés végrehajtása; a megoldás érvényesítése és támogatása. | Vizsga; a költség régiónként változik |
 | [Vizsga MB-320: Microsoft Dynamics 365 for Finance and Operations, gyártás](/learn/certifications/exams/mb-320?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: a gyártás beállítása és konfigurálása; termelési és lean rendelések létrehozása és kezelése; termelési kötegrendelések létrehozása, feldolgozása és kezelése. | Vizsga; a költség régiónként változik |
 | [Vizsga MB-330: Microsoft Dynamics 365 for Finance and Operations, Supply Chain Management](/learn/certifications/exams/mb-330?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: termékinformációk kezelése; készletkezelés megvalósítása; az ellátási lánc folyamatainak megvalósítása és kezelése; a raktárkezelési és szállítási menedzsment és az üzleti folyamatok végrehajtása. | Vizsga; a költség régiónként változik |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

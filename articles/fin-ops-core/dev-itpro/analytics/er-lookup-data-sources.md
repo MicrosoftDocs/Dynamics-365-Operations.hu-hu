@@ -2,7 +2,7 @@
 title: Konfigurálja a Keresési adatforrásokat az ER-alkalmazásspecifikus paraméterek használatára
 description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni a Keresési adatforrásokat az Elektronikus jelentéskészítési (ER) formátumokban az ER alkalmazásspecifikus paraméterek használatához.
 author: NickSelin
-ms.date: 04/02/2021
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 2849df85c37c4ed00754be91b9a9708db1bb16b7d0eb49d3a61d169037687196
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c028b01aa2889a517bee69de46411ada12d6fe25
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723189"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343429"
 ---
 # <a name="configure-lookup-data-sources-to-use-er-application-specific-parameters"></a>Konfigurálja a Keresési adatforrásokat az ER-alkalmazásspecifikus paraméterek használatára 
 
@@ -69,7 +69,7 @@ A kiválasztott ER-formátum keresési szabályait a konfigurált adatforrás sz
 A következő ábra bemutatja, hogyan lehet beállítani a **Számított mezőtípus** `Model.Data.Summary.LevelByLookup` adatforrását úgy, hogy a szükséges paraméterekkel meg tudja hívni a konfigurált **Keresési** adatforrást. A hívás futásidőben való feldolgozásához az ER végigfut a megadott sorrendben beállított szabályok listáján, és megkeresi az első szabályt, amely kielégíti a megadott feltételeket. Ebben a példában ez a szabály tartalmazza a megadottnak megfelelő adókódot. Ennek eredményeképpen a rendszer a legmegfelelőbb szabályt találta, és a szabályhoz beállított felsorolási értéket visszaadja ez az adatforrás.
 
 > [!NOTE]
-> Kivétel akkor áll elő, ha nem található alkalmazható szabály. A kivételek megakadályozásához konfigurálja a szabályok listájának végén található további szabályokat, hogy kezelni tudja az eseteket, ha nem konfigurált értéket van megadva, vagy nincs megadott érték. Ennek megfelelően használja a **\*Nem üres\*** és az **\*Üres\*** lehetőséget.  
+> Kivétel akkor áll elő, ha nem található alkalmazható szabály. A kivételek megakadályozásához konfigurálja a szabályok listájának végén található további szabályokat, hogy kezelni tudja az eseteket, ha nem konfigurált értéket van megadva, vagy nincs megadott érték. Ennek megfelelően használja a **\*Nem üres**\* és az **\*Üres**\* opciókat.  
 >
 > ![Adatforrás hozzáadása a konfigurált Keresési adatforrás meghívására.](./media/er-lookup-data-sources-img7.png)
 

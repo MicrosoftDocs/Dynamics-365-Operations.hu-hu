@@ -1,8 +1,8 @@
 ---
 title: Felvételi jogosultság feldolgozása
-description: Ez a cikk bemutatja, hogyan kell futtatni a felvételi jogosultsági folyamatot.
-author: andreabichsel
-ms.date: 04/06/2020
+description: Ez a témakör a beiratkozási jogosultsági folyamat futtatását ismerteti.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 989b493af6e8386f9517737c582150470a4e226d161e63c3f7a6088dbd3df903
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7c83753c17721487ba6adbf822c994a71ae0a0e6
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782072"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417484"
 ---
 # <a name="process-enrollment-eligibility"></a>Felvételi jogosultság feldolgozása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a cikk bemutatja, hogyan kell futtatni a felvételi jogosultsági folyamatot.
+Ez a témakör a beiratkozási jogosultsági folyamat futtatását ismerteti.
 
 1. A **Juttatások kezelése** munkaterületen, amely a **Feldolgozás** menüpontban található, válassza a **Felvételi jogosultság feldolgozása** lehetőséget.
 
@@ -53,11 +53,11 @@ Ez a cikk bemutatja, hogyan kell futtatni a felvételi jogosultsági folyamatot.
 
 ## <a name="view-process-results"></a>Folyamateredmények megtekintése
 
-Ez a cikk bemutatja, hogyan lehet megtekinteni a jogosultsági folyamat eredményeit.
+Ez a témakör a jogosultsági folyamatok eredményeinek megtekintését ismerteti.
 
 1.  A **Juttatások kezelése** munkaterületen, amely a **Feldolgozás** menüpontban található, válassza az **Eredmények feldolgozása** lehetőséget.
 
-2.  A **Folyamateredmények** képernyőn a következő mezők vannak megadva:
+2.  A **Folyamat eredményei** lapon a következő mezők vannak megadva:
 
    | Mező | Leírás |
    | --- | --- |

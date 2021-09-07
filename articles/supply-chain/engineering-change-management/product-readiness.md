@@ -1,6 +1,6 @@
 ---
 title: Termékkészenlét
-description: Ez a témakör azt mutatja be, hogyan használhatók a készenléti ellenőrzések annak biztosítására, hogy a szükséges alapadatok egy termékhez teljesek a tranzakciókban való használat előtt.
+description: Ez a témakör elmagyarázza, hogyan használhatja a készenléti ellenőrzéseket annak biztosítására, hogy a szükséges törzsadatok kitöltésre kerüljenek egy termékhez, mielőtt azt a tranzakciókban használnák.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -12,20 +12,20 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8cbeba336438d5ad6365e26500ca8c53edd9fb829a30c075c34674b49cdf1946
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
+ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723551"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7415321"
 ---
 # <a name="product-readiness"></a>Termékkészenlét
 
 [!include [banner](../includes/banner.md)]
 
-A készenléti ellenőrzéseket annak biztosítására használhatja, hogy a szükséges alapadatok mindegyike meg legyen adva egy termékhez a tranzakciókban való használat előtt. Amikor készenléti ellenőrzést alkalmaznak, a felhasználó vagy a csoport felelős a megadott előre meghatározott termékkel kapcsolatos adatok ellenőrzéséért. Ha egy termékhez nyitott készenléti ellenőrzés tartozik, akkor a termék nem adható ki, illetve nem használható fel a tranzakciókban.
+A készenléti ellenőrzéseket annak biztosítására használhatja, hogy a szükséges alapadatok mindegyike meg legyen adva egy termékhez a tranzakciókban való használat előtt. Amikor készenléti ellenőrzést alkalmaznak, a felhasználó vagy a csoport felelős a megadott előre meghatározott termékkel kapcsolatos adatok ellenőrzéséért. Ha egy termékkel kapcsolatban nyitott készenléti ellenőrzés van, a termék nem használható tranzakciókban.
 
-A mérnöki termékhez, változathoz vagy verzióhoz tartozó **Aktív** jelölőnégyzet csak akkor érhető el, ha az összes szükséges adatot bevitték és ellenőrizték, és miután minden készenléti ellenőrzést feldolgoztak. Ezen a ponton a termék, verzió vagy változat más vállalatoknak is kiadható, és a tranzakciókban használható. A készenléti ellenőrzéseket új termékekhez, új változatokhoz és új mérnöki verziókhoz lehet létrehozni.
+A mérnöki termékhez, változathoz vagy verzióhoz tartozó **Aktív** jelölőnégyzet csak akkor érhető el, ha az összes szükséges adatot bevitték és ellenőrizték, és miután minden készenléti ellenőrzést feldolgoztak. Ekkor a termék, a verzió vagy a változat felhasználható a tranzakciókban. A készenléti ellenőrzéseket új termékekhez, új változatokhoz és új mérnöki verziókhoz lehet létrehozni.
 
 A normál (nem tervezési) termékekhez készenléti ellenőrzést is használhat. További információ a cikk későbbi részén lévő [Készenléti ellenőrzés haszánálata normál termékekhez](#standard-products) szakaszban olvasható.
 

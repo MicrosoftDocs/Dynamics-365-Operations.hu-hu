@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3fee88c9822956672469968c3f4fa171a65e1cf301d61d48d5d31e08949797a3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ff9d4d0c1d72d3002f84f895f67d3c9cb347f1e8
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764884"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402225"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Képzési katalógus a Dynamics 365 Supply Chain Management adminisztrátorok számára
 
@@ -61,6 +61,14 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | [Finance and Operations: Frissítés 7.x-ről 8+-ra (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Csatlakozzon a következő TechTalkhoz, amely a 7.X – 8.X frissítési folyamatról fog szólni. Megvitatjuk a különböző forgatókönyveket és lépéseket a kód frissítésére és az adatok frissítésére. A bővíthetőségi kérelmekkel kapcsolatos eseteket, valamint a rájuk adott esetben a szükséges emeléseket is le fogjuk fedni. | Webes konferencia szabad rögzítése | 61 perc |
 | [7.0 (RTW)/7.1 (Release 1611) verzióról 7.2 (2017. június) verzióra frissítés (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | Ebben a munkamenetben elmagyarázzák, hogyan kell frissíteni a Dynamics 365 Finance and Operations alkalmazás 7.0 (RTW) és 7.1 (1611) verziókról a 7.2 (2017. július) verzióra. Egyértelmű megkülönböztetést teszünk az élő vevők és a folyamatban lévő projektek (még nem élők) között. | Webes konferencia szabad rögzítése | 58 perc |
 | [AX2012 – Dynamics 365 for Operations frissítés (VIR817PAL2) ](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | Ez a Tech Talk áttekintést nyújt arról, hogyan lehet frissíteni a kódot és az adatokat a Dynamics AX 2012 rendszerről a Dynamics 365 for Operations rendszerre. | Webes konferencia szabad rögzítése | 45 perc |
+| [AX2009 a Dynamics 365 for Operations áttelepítési eszközök felé (VIR809PAL) ](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | Ez az alkalom az AX2009 és a D365 for Operations között történő áttelepítéshez használható eszközöket fogja lefedni. | Webes konferencia szabad rögzítése | 55 perc |
+| [AX2009 Áttelepítési eszköz](https://community.dynamics.com/365/b/techtalks/posts/ax2009-migration-tool-may-11-2017) | Ez az alkalom az AX2009 és a D365 for Operations között történő áttelepítéshez használható eszközöket fogja lefedni. | Webes konferencia szabad rögzítése | 55 perc |
+
+## <a name="supply-chain-management"></a>Supply Chain Management<a name="scm"></a>
+
+| Tartalom | Leírás | Formátum | Hossz |
+|---------|-------------|--------|--------|
+| [Mérnöki változásmenedzsment beállítása a Dynamics 365 Supply Chain Management-hoz](/learn/paths/set-up-engineering-change-management/) | A mai gyártóknak erős termékadat-kezelésre, verziókezelésre és mérnöki változásmenedzsmentre van szükségük ahhoz, hogy sikeresek legyenek a folyamatosan csökkenő termékéletciklusok, a megnövekedett minőségi és megbízhatósági követelmények, valamint a termékbiztonságra való fokozott odafigyelés világában. Ebben a tananyagban megtanulhatja, hogyan állítsa be a mérnöki változásmenedzsmentet. | Ingyenes, saját tempójú online tanulási útvonal | 4 óra |
 
 ## <a name="servicing"></a>Karbantartás<a name="servicing"></a>
 
@@ -69,6 +77,7 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | [Finance and Operations: Funkciókezelése (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-feature-management-may-17-2019) | Tech Talk a szolgáltatások kezelési tapasztalatairól. Olyan munkaterületet biztosít, amelyben megtekintheti, engedélyezheti, letilthatja és ütemezheti az egyes kiadásokban leszállított funkciókat. Alapértelmezés szerint az új szolgáltatások ki vannak kapcsolva. A munkaterületen bekapcsolhatja a szolgáltatásokat, és megtekintheti a rájuk vonatkozó dokumentációt. Vegyen részt a találkozón, és tekintse meg a 10.0.3 funkcióit és a jövőbeli kiadásokra vonatkozó terveket. | Webes konferencia szabad rögzítése | 47 perc |
 | [Finance and Operations– A termelés szervizelése, támogatása és karbantartása (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tech Talk a Dynamics 365 for Finance and Operations termelési környezet hatékony támogatásához, karbantartásához és szolgáltatásához. | Webes konferencia szabad rögzítése | 53 perc |
 | [Finance and Operations: Microsoft által kezelt folyamatos frissítések (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Elindult a Finance and Operations folyamatos frissítési ütemezése! A Microsoft által kezelt folyamatos frissítések megvitatására, az Lifecycle Services esetében már elérhető felhasználói élmények és a soron következő frissítések megvitatásához vegye fel velünk a kapcsolatot. | Webes konferencia szabad rögzítése | 61 perc |
+| [Finance and Operations: Microsoft által kezelt folyamatos frissítések: Újdonságok – 2018. november 1. (DYN533cust)](https://community.dynamics.com/Techtalks-FinOps-Videos/MicrosoftManagedContinuousUpdates-WhatsNew-DYN533cust.mp4) | Az óra alatt megvitatjuk a Microsoft által kezelt folyamatos frissítés ritmusának frissítéseit, valamint a Lifecycle Services felhasználói élményét. | Webes konferencia szabad rögzítése | 59 perc |
 | [Microsoft által kezelt folyamatos frissítések: Újdonságok (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | Egy óra alatt elmagyarázzuk, hogy mik az újdonságok a Microsoft által kezelt folyamatos frissítésekről szóló első bejelentések óta. Megbeszéljük a frissítés ritmusát, és azt, hogy hogyan reagáltunk az Ön értékes visszajelzésére a folyamaton, és vessen egy pillantást a közelgő Lifecycle Services felhasználói élményére, amelyen keresztül Ön képes lesz a frissítések kezelésére. | Webes konferencia szabad rögzítése | 56 perc |
 | [Microsoft által kezelt folyamatos frissítések (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | Megbeszéljük a Microsoft azon terveit, amelyek a legfrissebb kiadással naprakészen tartják a rendszerét. Lefedjük az időkereteket, a fő- és a kisebb frissítések ritmusát, a tervezett eljárásokat, a következményeket, valamint azt, hogy mit kell tenni az optimális eredmények érdekében. | Webes konferencia szabad rögzítése | 62 perc |
 | [Figyelés, optimalizálási tanácsadó & kritikus KB-k (DYN456PAL2)](https://community.dynamics.com/365/b/techtalks/posts/monitoring-optimization-advisor-amp-critical-kbs-july-13-2018) | Megbeszéljük a nyomon követési képességeket, valamint azt, hogy milyen Microsoft-monitorok vannak a termelési környezetben, az optimalizálási tanácsadóban és a bővítés módjában, a „Kritikus X++ frissítések” élmény az LCS-ben, valamint az LCS „Jelentés termelési leállásról” opciójának legjobb gyakorlatai. | Webes konferencia szabad rögzítése | 40 perc |
@@ -86,6 +95,5 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 | Tartalom  | Leírás  | Formátum  |
 |----------|--------------|---------|
 | [Dynamics 365 alapok](/learn/certifications/d365-fundamentals?wt.mc_id=learningredirect_certs-web-wwl) | Bizonyítsa be, hogy érti a Microsoft Dynamics 365 Power Platform lényegét; felhőalapú fogalmak, licencelési beállítások, és telepítési és kiadási beállítások. | Vizsga; a költség régiónként változik |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

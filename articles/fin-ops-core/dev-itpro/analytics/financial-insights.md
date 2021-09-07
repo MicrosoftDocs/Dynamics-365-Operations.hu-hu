@@ -2,7 +2,7 @@
 title: Pénzügyi elemzés
 description: A Pénzügyi elemzés a Microsoft Power BI szolgáltatást használja kulcsfontosságú pénzügyi mutatók (KPI), diagramok és pénzügyi kimutatások összefogására.
 author: kweekley
-ms.date: 04/22/2021
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 4937235dddaf5c1c8d6d504542f161fa232c86213eb6ac4274349e02d18fb8b3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767827"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416305"
 ---
 # <a name="financial-analysis"></a>Pénzügyi elemzés
 
@@ -36,9 +36,9 @@ A **Pénzügyi elemzés** kombinálja az adatokat a főkönyvből és az analiti
 > - **Oldal** – Egyetlen .pbix fájl egy füle. Minden egyes oldal egy vagy több vizuális elemet tartalmazhat.
 > - **Vizuális elem** – Egyetlen adatforrás, például karton, KPI, diagram, grafikon, mátrix vagy pénzügyi kimutatás. Az olyan oldal, amelyen pénzügyi kimutatás szerepel vizuális elemként, nem tartalmazhat más vizuális elemeket a jelentésben szereplő adatok mérete miatt.
 
-Jelenleg a **Pénzügyi elemzés** az aktív jogi személy vagy az összes jogi személy adatainak megtekintésére szolgál. A jövőbeli kiadásokban a munkaterület úgy fog fejlődni, hogy a Power BI segítségével módosíthat és létrehozhat majd vizuális elemeket.
+A **Pénzügyi elemzés** munkaterület arra összpontosít, hogy lehetővé tegye a meglévő jelentések adatainak megtekintését és szűrését. A **Pénzügyi elemzés** munkaterülethez új vizuális elemeket adhat hozzá. A **Pénzügyi elemzés** munkaterület elérhető az aktuális vállalat, valamint az összes vállalat számára, hogy az összes jogi személy adatait megjelenítse, függetlenül attól, hogy a szerepkör milyen jogi személyekhez rendelkezik hozzáféréssel.
 
-A **Pénzügyi igazgató-áttekintés** munkaterület ugyanazokat a vizuális elemeket jeleníti meg, mint a **Pénzügyi elemzés**, de középpontjában a meglévő jelentések adatainak megtekintése és szűrése áll. A jövőbeni kiadásokban új vizuális elemeket adhat hozzá a **Pénzügyi elemzés** munkaterülethez. Az új vizuális elemek olyan munkaterületeken is elérhetők lehetnek, amelyek más szerepkörökre koncentrálnak, például a projektmenedzserekre vagy a kötelezettségek kezelőire. A **Pénzügyi igazgató áttekintés** a munkaterület továbbra is minden jogi személynél megjeleníti az adatokat, függetlenül azoktól a jogi személyektől, amelyekhez a szerepkör hozzáfér.
+- [A Power BI vizualizációk hozzáadása vagy szerkesztése az irányítópulton](/powerapps-docs/user/add-powerbi-dashboards.md)
 
 ## <a name="dynamics-365-finance-setup"></a>Dynamics 365 Finance beállítása
 **Főkönyv**

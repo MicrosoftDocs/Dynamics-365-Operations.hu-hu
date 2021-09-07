@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5a0ea3efc08ac9305887727c57a3821c694d6b25d3355edb6a60a6348967842c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8b2efa7021c302e771f36179be690fc1c8653a07
+ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763094"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "7402373"
 ---
 # <a name="learning-catalog-for-dynamics-365-finance-functional-consultants"></a>Képzési katalógus a Dynamics 365 Finance funkcionális konzulensek számára
 
@@ -34,6 +34,7 @@ A funkcionális konzulensek esetében a feladatunk-feladat elemzése során a ku
 | [Ismerje meg a Microsoft Dynamics365, valamint a Power Platform üzleti értékét](/learn/paths/learn-business-value-of-dynamics-365-and-power-platform/) | Érdeklik az üzleti alkalmazások? Talán nem tudja, hogyan kezdjen hozzá a Microsoft Dynamics 365 és Power Platform alkalmazások használatához? Ismerje meg, hogyan lehet az üzleti alkalmazások erejével segíteni a vállalkozás átalakításában. | Ingyenes, saját tempójú online tanulási útvonal | 7 óra |
 | [Dynamics 365 és Power Platform alapok](/learn/paths/dyn-power-plat-bus-app-fundamentals/) | Érdeklik az üzleti alkalmazások? Ezzel a tanulási útvonallal kezdheti a Dynamics 365 alkalmazások használatát. További tájékoztatás a felhőalapú fogalmakról, a Power Platform, valamint a Dynamics 365 alkalmazásokkal való ismerkedéshez. | Ingyenes, saját tempójú online tanulási útvonal | 5.5 óra |
 | [Első lépések a Finance and Operations alkalmazásokban](/learn/paths/get-started-finance-operations/) | Ismerje meg, hogy a Finance and Operations alkalmazások hogy támogatják a vállalatok globális pénzügyi rendszereinek, működési folyamatainak és a korszerű ellátási láncok kezelésének a felhatalmazása érdekében, hogy a személyek gyors, tájékozott döntéseket hozzanak. A Finance and Operations alkalmazások használatával kapcsolatos pályafutásának első lépéseként a kívánt szerepkörtől függetlenül meg kell Ismerkedjen a jellemzőivel és a funkcionalitással. | Ingyenes, saját tempójú online tanulási útvonal | 2 óra |
+| [Első lépések az Dynamics 365 Intelligent Order Management használatában](/learn/modules/get-started-intelligent-order-management/) | A Dynamics 365 Intelligent Order Management segítségével az ügyfelek irányíthatják a megrendelések összehangolását a teljesítésig. Ezek a képességek lehetővé teszik a szervezetek számára, hogy a különböző platformokon és alkalmazásokon keresztül összehangolják a megrendelések áramlását. | Ingyenes, saját tempójú online tanulási modul | 30 perc |
 | [Vásárlás előtti teendők](/dynamics365/unified-operations/fin-and-ops/get-started/before-you-buy) | Tekintse át a lépésenkénti útmutatót, amely hasznára válhat; akár még teszteli a Finance and Operations szolgáltatást, akár már készen áll a vásárlásra. | Dokumentáció | |
 | [Kiadási terv](/dynamics365/release-plans/) | A Dynamics 365 legújabb lehetőségeinek és továbbfejlesztéseinek megkeresése | Dokumentáció | |
 
@@ -41,6 +42,7 @@ A funkcionális konzulensek esetében a feladatunk-feladat elemzése során a ku
 
 | Tartalom  | Leírás | Formátum  | Hossz    |
 |----------|-------------|---------|-----------|
+| [Használja a Success by Design for Dynamics 365 megoldásokat](/learn/paths/use-success-design/) | A FastTrack for Dynamics 365 célja, hogy segítse az ügyfeleket és a partnereket a Dynamics 365 megoldások sikeres bevezetésében. E szolgáltatás nyújtásához a megoldás-architekteknek a Success by Design rendszert kell használniuk. Ez a tanulási útvonal a Success by Design fogalmakat tárgyalja. | Ingyenes, saját tempójú online tanulási modul | 12 óra |
 | [A Lifecycle Services használata a Finance and Operations alkalmazások végrehajtásának tervezéséhez és kialakításának](/learn/paths/use-lcs-design-plan-implementation-finance-operations/) | A Lifecycle Services (LCS) olyan együttműködésen alapuló munkaterület, amelyet a vevők és a partnereik használnak a Finance and Operations alkalmazások az értékesítés előtti projekteknek a végrehajtási szakaszba történő feldolgozására, végül a termelési környezetre. Olyan feladatlistákat és eszközöket biztosít, amelyek segítik a projekt kezelését, többek között a végrehajtás és a rendszeresen frissített szolgáltatások előállítását előkészítő módszertanok létrehozásával. | Ingyenes, saját tempójú online tanulási útvonal | 2 óra |
 | [A szervezet konfigurálása a Finance and Operations alkalmazásokban](/learn/paths/configure-your-organization-finance-ops/) | Funkcionális tanácsadóként, aki a Finance and Operations alkalmazásokat használja, tudnia kell, hogyan kell beállítani szervezetet a vevői számára. Ez a tanulási útvonal többek között bemutatja a jogi személyek beállítását, a biztonsági beállítások megvalósítását, a felhasználók felhasználói felületének személyre szabását, valamint a mobil alkalmazások tervezését és összeállítását, valamint a közös integrációk végrehajtását. | Ingyenes, saját tempójú online tanulási útvonal | 12 óra |
 | [Adatok áttelepítése és közzététel a Finance and Operations alkalmazásokkal](/learn/paths/migrate-data-go-live-finance-operations/) | Funkció-tanácsadóként ismernie kell a felhasználói adatok áttelepítéshez történő előkészítését, az adatkezeléssel való együttműködést és a felhasználó általi elfogadás vizsgálat elvégzését a Finance and Operations alkalmazások éles indításához. | Ingyenes, saját tempójú online tanulási útvonal | 4 óra |
@@ -102,6 +104,5 @@ A funkcionális konzulensek esetében a feladatunk-feladat elemzése során a ku
 | [Microsoft tanúsított: Dynamics 365 for Finance and Operations, pénzügyi funkciós konzulens munkatárs](https://www.microsoft.com/learning/d365-functional-consultant-financials.aspx) | Microsoft tanúsított: A Dynamics 365 for Finance and Operations, pénzügyi funkciós konzulensek egyesítik a globális pénzügyeket és műveleteket, és automatizálják a feladatokat és a munkafolyamatokat, egyszerűsítik a vevői rendelést, az értékesítést, a számlázást és a jelentéskészítést. | Tanúsítás; a költség régiónként változik |
 | [Vizsga MB-300: Microsoft Dynamics 365 Unified Operations Core](/learn/certifications/exams/mb-300?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: gyakori funkciók és végrehajtási eszközök használata; a biztonság, a folyamatok és a beállítások konfigurálása; adatáttelepítés végrehajtása; a megoldás érvényesítése és támogatása. | Vizsga; a költség régiónként változik |
 | [Vizsga MB-310: Microsoft Dynamics 365 for Finance and Operations, pénzügyek](/learn/certifications/exams/mb-310?wt.mc_id=learningredirect_certs-web-wwl) | Ez a vizsga a következő műszaki feladatok végrehajtásának képességét méri fel: a pénzügyi menedzsment beállítása és konfigurálása; közös folyamatok kezelése és alkalmazása; kötelezettségek és követelések végrehajtása és kezelése a költségvetés és a tárgyi eszközök kezelése. | Vizsga; a költség régiónként változik |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

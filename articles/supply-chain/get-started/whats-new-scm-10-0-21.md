@@ -2,7 +2,7 @@
 title: A Dynamics 365 Supply Chain Management 10.0.21 előzetes verziója (2021. október)
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.21 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
-ms.date: 08/02/2021
+ms.date: 08/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 517411512760374f1d1fd3b8ea3615563c47202c2e847569d00cb17a94657630
-ms.sourcegitcommit: fa5ff2a0822aac16b518a2aea0d3389f79793390
+ms.openlocfilehash: 42d296cb0402b5e96f23d628f08a28fb35683d5f
+ms.sourcegitcommit: 5a44eb4f555bf5ee0b1293f0ecdc37ee8b53aa24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "7012037"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "7391208"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10021-october-2021"></a>A Dynamics 365 Supply Chain Management 10.0.21 előzetes verziója (2021. október)
 
@@ -29,17 +29,18 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.21 előzete
 - **A kiadás általános elérhetővé tétele (automatikus frissítés):** 2021. október
 
 ## <a name="known-deployment-issue"></a>Ismert telepítési probléma
+
 Az IaaS 10.0.21-es kiadásának telepítésekor a következő telepítési figyelmeztetés jelenik meg:
 
 **Figyelmeztetés kódja:** 95017
 
-**Figyelmeztető üzenet:** A [SetupDiagnostics] parancsfájl végrehajtása sikertelen volt az VM-mel szemben
+**Figyelmeztető üzenet:** A \[BeállításDiagnostics\] szkript végrehajtása a VM ellen sikertelen volt
 
-A telepítés a figyelmeztetés ellenére is működni fog, azonban a Lifecycle Services (LCS) következő ismert problémái fordulhatnak elő:
+A telepítés a figyelmeztetés ellenére is működik. A Lifecycle Services (LCS) esetében azonban a következő ismert problémák fordulhatnak elő:
 
--   A **Környezet figyelése** lapon nem jelenik meg a **Részletes verzióinformációk megtekintése** hivatkozás, így nem fogja látni a környezetben telepített modulok adott verzióit. Az adatok nélkül a további gyorsjavítások sikertelenek lehetnek, mert a gyorsjavításokat alkalmazó folyamat ezeket az adatokat használja annak ellenőrzésére, hogy teljesülnek-e a modulverzió előfeltételei. Mivel a PEAP/Preview build nem használható termelésben, és nem alkalmazható gyorsjavítások, ennek a hatásnak minimálisnak kell lennie.
--   Az SQL Insights alatti **Környezetfigyelés** lap **Teljesítménymetrikák** és **Indexelemzés** lapjai nem jelenítnek meg adatokat. A **Környezetfigyelés** minden egyéb szolgáltatása a várakozásoknak megfelelően működik.
--   A **Teljes rendszerdiagnosztika** oldal nem lesz elérhető. Az éjszakai gyűjtőfutások állapotára és a szabályai által észlelhető problémákra vonatkozó társított adatok szintén nem fognak megjelenni.
+- A **Környezet figyelése** lapon nem jelenik meg a **Részletes verzióinformációk megtekintése** hivatkozás, így nem fogja látni a környezetben telepített modulok adott verzióit. Az adatok nélkül a további gyorsjavítások sikertelenek lehetnek, mert a gyorsjavításokat alkalmazó folyamat ezeket az adatokat használja annak ellenőrzésére, hogy teljesülnek-e a modulverzió előfeltételei. Mivel a PEAP/Preview build nem használható termelésben, és nem alkalmazható gyorsjavítások, ennek a hatásnak minimálisnak kell lennie.
+- Az SQL Insights alatti **Környezetfigyelés** lap **Teljesítménymetrikák** és **Indexelemzés** lapjai nem jelenítnek meg adatokat. A **Környezetfigyelés** minden egyéb szolgáltatása a várakozásoknak megfelelően működik.
+- A **Teljes rendszerdiagnosztika** oldal nem lesz elérhető. Az éjszakai gyűjtőfutások állapotára és a szabályai által észlelhető problémákra vonatkozó társított adatok szintén nem fognak megjelenni.
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
@@ -52,10 +53,10 @@ Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Fun
 | Készlet&nbsp;és&nbsp;logisztika | [A Global Inventory Accounting bővítmény a Dynamics 365 Supply Chain Management alkalmazáshoz](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/global-inventory-accounting-add-in-dynamics-365-supply-chain-management) | [Globális készletkönyvelési kezdőlapja](../global-inventory-accounting/global-inventory-accounting-home.md) |
 | Készlet&nbsp;és&nbsp;logisztika | [Az ellenszámlákhoz kapcsolódó kódok használatával törtöné készlethelyesbítések feladása](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/post-on-hand-adjustments-using-configurable-reason-codes-connected-offset-accounts) | [Készletleltár okkódjai](../warehousing/reason-codes-for-counting-journals.md) |
 | Készlet&nbsp;és&nbsp;logisztika | [Értékesítési ajánlat hivatkozott adatexportálási irányelve](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/sales-quotation-referenced-data-export-policy) | Válassza ki, hogy az ajánlatok által hivatkozott adatok változásai miatt a ezek ajánlatok (vagy sorok) be legyenek-e foglalva a következő növekményes exportálásba. A növekményes exportálások gyorsabban futnak, ha úgy dönt, hogy nem foglal bele ilyen árajánlatokat vagy sorokat.<br><br>Ez a funkció a **Kinnlevőségek paraméterei** oldalon hozzáadja az **Értékesítési ajánlatok hivatkozott adatainak kihagyása a változáskövetés során** nevű beállítást. |
-| Készlet&nbsp;és&nbsp;logisztika | [Vonalkódok beolvasása a raktárban a GS1 formátumszabványok alapján](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | *Hamarosan*<!-- KFM: Add doc link when ready. --> |
-| Készlet&nbsp;és&nbsp;logisztika | Lezárt pályázat <!-- KFM: Add RP link when available --> | *Hamarosan*<!-- KFM: Add doc link when ready. --> |
+| Készlet&nbsp;és&nbsp;logisztika | [Vonalkódok beolvasása a raktárban a GS1 formátumszabványok alapján](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-vonalkódok és QR-kódok](../warehousing/gs1-barcodes.md) |
+| Készlet&nbsp;és&nbsp;logisztika | [A készletláthatósági bővítmény lágy foglalása](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/soft-reservation-inventory-visibility-add-in) | [Készletláthatóság-foglalások](../inventory/inventory-visibility-reservations.md) |
 | Készlet&nbsp;és&nbsp;logisztika | [Levonásokkal és a tényleges súllyal kapcsolatos továbbfejlesztések a Visszatérítések kezeléséhez](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/deduction-catch-weight-enhancements-rebate-management) | [A levonások kezelése a levonás munkaterületről](../rebate-management/deduction-workbench.md )<br><br>[Visszatérítések feldolgozása, felülvizsgálata és feladása](../rebate-management/process-review-post.md)<br><br>[Visszatérítés-kezelési ajánlatok](../rebate-management/rebate-management-deals.md) |
-| Készlet&nbsp;és&nbsp;logisztika | [A raktári alkalmazás lépéseinek útmutatója](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | *Hamarosan*<!-- KFM: Add doc link when ready --> |
+| Készlet&nbsp;és&nbsp;logisztika | [A raktári alkalmazás lépéseinek útmutatója](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-app-step-instructions) | [A Warehouse Management mobilalkalmazás lépéscímeinek és utasításainak testreszabása](../warehousing/mobile-app-titles-instructions.md) |
 | Készlet&nbsp;és&nbsp;logisztika | [Partraszállási költség munkaszünetei és nyomon követési frissítései](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/work-breaks-tracking-updates-landed-cost) | [Betárolás frissítéskövetése](../landed-cost/update-tracking-putaway.md )<br><br>[Úton lévő áruk feldolgozása](../landed-cost/in-transit-processing.md) |
 | Alaptervezés | [Negatív napok a tervezési optimalizáláshoz](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/negative-days-support-planning-optimization) | [Késés tűréshatára (negatív napok)](../master-planning/planning-optimization/delay-tolerance.md) |
 
@@ -66,9 +67,9 @@ Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tarta
 | Szolgáltatásterület | Funkció&nbsp;neve&nbsp;a Funkció-&nbsp;kezelésben | További információ |
 |---|---|---|
 | Költségkezelés | Készletzárás folyamatának részletei | Ez az előzetes verziójú funkció lehetővé teszi a készletzárás előrehaladásának részletes megtekintését. |
-| Alaptervezés | (Előzetes verzió) Prioritásvezérelt MRP-támogatás Tervezési optimalizáláshoz | Ez a Tervezési optimalizálási előnézeti funkció lehetővé teszi, hogy az alaptervezést az újrarendelési ponttal vezérelt tervezési prioritással vezérelje. A kiemelt változások közé tartoznak a következők: **Tervezési prioritás** mező az értékesítésirendelés-sorokban, a beszerzésirendelés-sorokban, az igény-előrejelzésben és a tervezett rendelésekben; egy új fedezetkód-beállítás; **Cikkfedezet mező** az újrarendelési ponthoz; Az alaptervezés beállítási képernyői a tervezési prioritás beállításának szabályozásához; A tervezési optimalizálási és a tervezési optimalizálási számítás logikája a tervezési prioritás beállítását figyelembe veszi. |
 | Beszerzés és forrás | Az általános költségvetési foglalások túlfoglalásának megakadályozása, ha több beszerzési igénylés van a munkafolyamatban | Ez az előnézeti funkció javítja a hibaellenőrzést, ha a felhasználók olyan beszerzési igényléseket küldnek és hagynak jóvá, amelyek túllépik egy általános költségvetési foglalási sor fennmaradó egyenlegét. Így megelőzhető az általános költségvetési foglalások túlfoglalása, amikor több beszerzési igénylés van a munkafolyamatban. |
 | Gyártásvezérlés | Teljes sorozatszám, köteg- és azonosítótáblaszám megjelenítése a termelési üzem végrehajtási felületén | Ez a funkció jobb felületet biztosít a termelési üzem végrehajtási felületén a sorozatszám-, köteg- és azonosítótáblák listáinak megtekintéséhez. A megjelenítés a korlátozott karakterszámú kártyanézetről egy olyan listanézetre változik, amely elegendő helyet biztosít a teljes értékek megjelenítéséhez. A lista adott számok keresésére is lehetőséget biztosít. |
+| Értékesítés és marketing | A feladásra kiválasztható értékesítési rendelések számának korlátozása | Ez a funkció lehetővé teszi, hogy meghatározza a visszaigazolások, komissiózási listák, csomagolószelvények és számlák feladásakor az értékesítési megrendelések listalevélről történő feladásakor kiválasztható értékesítési megrendelések maximális számát. Automatikusan engedélyezve van. A funkció a **Követelések paraméterei** laphoz hozzáadja a **könyveléshez szükséges értékesítési megbízások maximális száma** nevű beállítást. Az új beállítás alapértelmezett értéke *100*. A funkció segít javítani az értékesítési megrendelések listája oldal teljesítményét, amikor jelentős számú értékesítési megrendelés van kijelölve. Ez nincs hatással az időszakos feladat által feldolgozható értékesítési megbízások számára. |
 | Raktárkezelés | Betárolási munka elválasztása ASN-ekből | Ez a funkció akkor szükséges, ha előzetes kiszállítási értesítéseket (ASN-eket) küld és fogad, amikor egy skálázási egységre (elosztott topológia részeként) Warehouse Management terhelést futtat. Új adatbázistáblát ad hozzá a betárolási munkához szükséges információk tárolására. Ezt az információt korábban az ASN-ként is használt táblák tárolták. |
 | Raktárkezelés | Vegyes egységek a helyen | Lehetővé teszi a rendszer számára, hogy többféle egysége tartalmazó elemeket (például dobozokat és eseteket) helyezzen el különböző helyekre. Ez a funkció minden egyes elhelyezést sablonsornál lehetővé teszi annak eldöntését, hogy a sor cikkeit vegyes egységű vagy egy egységgel rendelkező helyekre kell eltárolni. |
 | Raktárkezelés | Gyorsabb API használata a csomagolási állomáson lévő zárási/újranyitási tárolókhoz | Ha ez az előzetes funkció engedélyezve van, akkor a tárolókhoz kapcsolódó készlettranzakciók egy új, kis terhelésű folyamattal jönnek létre, amely javítja a tárolók lezárásának és ismételt megnyitásának teljesítményét a manuális csomagolóállomás-feldolgozás során. |

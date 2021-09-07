@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: ivanv
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 43d1381e73d5659bfd6ae6c6d944b7e6918b681a4f89df7ad23abbed5b4a0d3c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
+ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720084"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386099"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Újdonságok és változások a Warehouse Management mobilalkalmazásban
 
@@ -23,7 +23,23 @@ ms.locfileid: "6720084"
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új funkcióit, hibajavításait, fejlesztéseit és ismert hibáit ismerteti.
 
-## <a name="2070"></a>2.0.7.0
+## <a name="version-2090"></a>2.0.9.0-s verzió
+
+Ez a verzió javítja azt a problémát, hogy az alkalmazás nem reagál, ha a felhasználók a lista tetejéről lapoznak felfelé.
+
+## <a name="version-2080"></a>2.0.8.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+
+- A 10.0.21-es Supply Chain Management verzióban bevezetett [lépésutasítás funkció](mobile-app-titles-instructions.md) támogatása.
+- Hozzáadva a célzási animáció, amely megmutatja a felhasználóknak, hogy lefelé húzással bezárhatják az átfedéseket.
+- Hozzáadva a funkcióbillentyűk támogatása a műveleti listákon és menükben. A felhasználók bármelyik funkcióbillentyűt három másodpercig lenyomva tartva megjeleníthetik az elérhető parancsok listáját.
+- Javítottunk egy olyan problémát, amely miatt egyes eszközökön a következő hibaüzenet jelent meg: „Nem talál megfelelő nézetet a megadott mérethez”
+- Javítottunk egy olyan problémát, amikor a teljes képernyős mód nem mindig működött, amikor a képernyőn megjelenő billentyűzetet használtuk.
+- Javítottunk egy olyan problémát, amikor az oldalhúzás nem működött a Windows-eszközökön.
+- Számos olyan problémát javított, amely a rendszer leállását okozta.
+
+## <a name="version-2070"></a>2.0.7.0-s verzió
 
 ### <a name="new-features-fixes-and-improvements-in-version-2070"></a>Új funkciók, hibajavítások és fejlesztések a 2.0.7.0 verzióban
 

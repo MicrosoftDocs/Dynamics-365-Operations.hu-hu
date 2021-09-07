@@ -1,8 +1,8 @@
 ---
 title: Human Resources kiépítése
-description: Ez a témakör végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 Human Resources számára.
-author: andreabichsel
-ms.date: 06/14/2021
+description: Ez a téma a Microsoft Dynamics 365 Human Resources új termelési környezetének biztosítását ismerteti.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 58ffce072c8b73f4907b18c6c60b022f9a3b55f26cb785238367254021afdc28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756148"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393523"
 ---
 # <a name="provision-human-resources"></a>Human Resources kiépítése
 
@@ -28,9 +28,15 @@ ms.locfileid: "6756148"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ez a témakör végigvezeti Önt az új termelési környezet létesítésén a Microsoft Dynamics 365 Human Resources számára. Ez a téma feltételezi, hogy a Human Resources rendszert felhőalapú szolgáltatón (CSP) keresztül vagy vállalati architektúra (EA) megállapodás részeként vásárolta. Ha rendelkezik meglévő Microsoft Dynamics 365-licenccel, amely már tartalmazza a Human Resources szolgáltatási konstrukciót, és nem tudja elvégezni a cikkben szereplő lépéseket, forduljon a támogatási szolgálathoz.
+Ez a téma a Microsoft Dynamics 365 Human Resources új termelési környezetének biztosítását ismerteti. 
 
-Első lépésként a globális rendszergazdának be kell jelentkeznie a [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) szolgáltatásba, és létre kell hoznia egy új Human Resources projektet. Ha licencelési probléma nem akadályozza meg a Human Resources létesítését, a támogatás vagy a Dynamics Service Engineering (DSE) képviselőinek segítségére nincsen szükség.
+## <a name="prerequisites"></a>Előfeltételek
+
+Mielőtt elkezdené egy új termelési környezet biztosítását, a következő előfeltételeknek kell teljesülniük:
+
+- Ön a humánerőforrás-szolgáltatást felhőalapú megoldásszolgáltatói (CSP) vagy vállalati architektúra (EA) megállapodáson keresztül vásárolta meg. Ha már rendelkezik olyan Microsoft Dynamics 365 licenccel, amely már tartalmazza a Humánerőforrás szolgáltatási csomagot, és nem tudja elvégezni az ebben a témakörben leírt lépéseket, forduljon az ügyfélszolgálathoz.
+
+- A globális rendszergazda bejelentkezett a [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) szolgáltatásba, és létrehozott egy új humánerőforrás-projektet. 
 
 ## <a name="provision-a-human-resources-trial-environment"></a>Az Emberi erőforrások próbakörnyezetének kiépítése
 
@@ -42,7 +48,7 @@ A próbaverzió környezetet nem úgy tervezték, hogy termelési környezetekbe
 
 Az első Human Resources-környezet létrehozása előtt gondosan tervezze meg a projekt környezeti szükségleteit. A Human Resources alap-előfizetése két környezetet foglal magában: egy éles környezetet és egy tesztkörnyezetet. A projekt összetettségétől függően előfordulhat, hogy a projekttevékenységek támogatásához további tesztkörnyezeteket kell megvásárolni. 
 
-A további környezetekkel kapcsolatos szempontok többek között a következők:
+További környezetekre vonatkozó megfontolások:
 
 - **Adatáttelepítés**: Előfordulhat, hogy egy további környezetre lehet szükség az adatáttelepítési tevékenységekhez ahhoz, hogy a rendszer tesztkörnyezetét használ a projekt teljes egészében tesztelési célokra használhassa. A további környezetek lehetővé teszik az adatáttelepítési tevékenységek folytatását úgy, hogy a tesztelés és a konfigurálás ezzel egyidejűleg egy másik környezetben történik.
 - **Integráció**: Előfordulhat, hogy egy további környezetre is szükség lesz az integrációk konfigurálásához és teszteléséhez. Idetartozhatnak az olyan natív integrációk, mint például a Ceridian Dayforce LinkedIn Talent Hub-integrációk, vagy olyan egyéni integrációk, mint például a bérszámfejtési, a pályázókövetési rendszerek, illetve a juttatási rendszerek és a szolgáltatók egyéni integrációi.
@@ -50,10 +56,11 @@ A további környezetekkel kapcsolatos szempontok többek között a következő
 - **Többfázisos projekt**: Szükség lehet egy további környezetre a konfiguráció, az adatáttelepítés, a tesztelés és más tevékenységek támogatásához egy olyan projektfázisban, amelyet a projekt kezdeti indulása után terveztek be.
 
  > [!IMPORTANT]
- > Javasoljuk, hogy az éles környezetet az egész projektben ARANY konfigurációs környezetként használja. Ez azért fontos, mert a tesztkörnyezetet nem lehet éles környezetbe másolni. Éppen ezért éles környezetben az ARANY környezet az éles környezet, és az ilyen környezetben fogja elvégezni az átállási tevékenységeket.</br></br>
- > Javasoljuk, hogy az éles indítás előtt a tesztkörnyezetben vagy más környezetben végezzen egy szimulált átállást. Ezt úgy teheti meg, hogy frissíti az ARANY konfigurációval rendelkező éles környezetet a tesztkörnyezetbe.</br></br>
- > Javasoljuk, hogy az éles átállás során a végső adatok éles környezetbe való áttelepítéséhez szükséges adatcsomagokat tartalmazó részletes átállási ellenőrző listát hozzon létre.</br></br>
- > Azt is javasoljuk, hogy a tesztkörnyezetet az egész projektben TESZT környezetként használja. Ha további környezetekre van szükség, a szervezet további költségért meg tudja vásárolni őket.</br></br>
+ > Környezetének átgondolása során a következőket javasoljuk:
+ > - Használja a gyártási környezetet a projekt során GOLD konfigurációs környezetként. Ez azért fontos, mert a tesztkörnyezetet nem lehet éles környezetbe másolni. Éppen ezért éles környezetben az ARANY környezet az éles környezet, és az ilyen környezetben fogja elvégezni az átállási tevékenységeket.</br></br>
+ > - Használja a homokozót vagy egy másik környezetet egy próbaváltás elvégzésére az üzembe helyezés előtt. Ezt úgy teheti meg, hogy frissíti az ARANY konfigurációval rendelkező éles környezetet a tesztkörnyezetbe.</br></br>
+ > - Készítsen részletes átadási ellenőrző listát, amely tartalmazza a végleges adatoknak a termelési környezetbe történő átviteléhez szükséges adatcsomagokat az éles átállás során.</br></br>
+ > - Használja a tesztkörnyezetét a projekt során TESZT-környezetként. Ha további környezetekre van szükség, a szervezet további költségért meg tudja vásárolni őket.</br></br>
 
 ## <a name="create-an-lcs-project"></a>LCS-projekt létrehozása
 
@@ -86,7 +93,7 @@ Miután létrehozott egy LCS-projektet, elvégezheti a Human Resources létesít
     > A Human Resources példány típusát a beállítás után nem lehet módosítani. Folytatás előtt győződjön meg arról, hogy a helyes példánytípus van kiválasztva.</br></br>
     > A Human Resources példánytípus eltér a Microsoft Power Apps környezet Power Apps Felügyeleti központjában beállítható példánytípusától.
     
-3. Válassza ki a **Demó adatokat tartalmaz** beállítást, ha azt szeretné, hogy a környezet ugyanazokat a demóadatokat tartalmazza, mint amelyeket a Human Resources tesztverzióiban használt. A bemutatóadat hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni. Az első telepítés esetén kell ezt a lehetőséget kiválasztania. Meglévő telepítés később nem frissíthető.
+3. Válassza a **Demó adatok felvétele** opciót, ha azt szeretné, hogy a környezet tartalmazza ugyanazt a demó adathalmazt, amelyet a humánerőforrás kísérleti környezetben használnak. A bemutatóadat hosszú távú bemutató vagy képzési környezetben előnyös, de éles környezetben soha nem szabad használni. Az első telepítés esetén kell ezt a lehetőséget kiválasztania. Meglévő telepítés később nem frissíthető.
 
 4. A Human Resources szolgáltatást mindig Microsoft Power Apps környezetbe kell létesíteni annak érdekében, hogy biztosítsa a Power Apps integrációját és bővíthetőségét. Olvassa el a témakör „Power Apps környezet kiválasztása” című cikkét a folytatás előtt. Ha még nem rendelkezik Power Apps környezettel, válassza a Környezetek kezelése LCS-ben lehetőséget, vagy látogasson el a Power Apps adminisztrációs központjába. Kövesse a [Power Apps környezet](/powerapps/administrator/create-environment) létrehozása részben leírt lépéseket.
 
@@ -115,7 +122,7 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy melyik Power 
 
 4. Az adatintegrációs és tesztelési stratégiákat figyelembe kell venni, például: védőfal, UAT vagy termelés. Javasoljuk, hogy vegye figyelembe a telepítés különböző következményeit, mert nem könnyű a későbbiekben megváltoztatni a Power Apps környezethez hozzárendelt Human Resources környezetet.
 
-5. A következő Power Apps-környezetek nem használhatók a Human Resources szolgáltatáshoz. Ezeket a rendszer az LCS-en belül kiszűri a kiválasztások listájából:
+5. A következő Power Apps környezetek nem használhatók a humánerőforráshoz. Ezeket a rendszer az LCS-en belül kiszűri a kiválasztások listájából:
  
     - **Alapértelmezett Power Apps-környezetek** – noha a bérlők automatikusan egy alapértelmezett Power Apps-környezettel rendelkeznek, nem ajánlott ezeket használni a Human Resources szolgáltatással. A bérlő minden felhasználója hozzáférhet a Power Apps-környezethez, és véletlenül a termelési adatok sérülését okozhatja a Power Apps vagy Power Automate-integrációkkal történő tesztelés és felfedezés révén.
    
@@ -147,7 +154,7 @@ Az Emberi erőforrások környezet adatai mindig abban az Azure földrajzi terü
 
 ## <a name="grant-access-to-the-environment"></a>Hozzáférés biztosítása a környezethez
 
-Alapértelmezés szerint a környezetet csak az a globális rendszergazda érheti el, aki létrehozta. Az alkalmazás további felhasználóinak kifejezett módon engedélyezni kell a hozzáférést. Fel kell vennie a felhasználókat, és hozzájuk kell rendelnie a megfelelő szerepköröket a Human Resources környezetben. A Human Resources szolgáltatást telepítő globális rendszergazdának el kell indítania az Attract és az Onboard alkalmazást is ahhoz, hogy befejezze az inicializálást, és engedélyezze a hozzáférést más bérlő felhasználók számára is. Amíg erre nem kerül sor, más felhasználók nem tudják elérni az Attract és Onboard alkalmazást, és hozzáférési hibákra vonatkozó üzeneteket fognak kapni. További tudnivalókért lásd: [Új felhasználók létrehozása](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) és [Felhasználók hozzárendelése biztonsági szerepkörökhöz](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
+Alapértelmezés szerint a környezetet csak az a globális rendszergazda érheti el, aki létrehozta. Az alkalmazás további felhasználóinak kifejezett módon engedélyezni kell a hozzáférést. Fel kell vennie a felhasználókat, és hozzájuk kell rendelnie a megfelelő szerepköröket a Human Resources környezetben. További tudnivalókért lásd: [Új felhasználók létrehozása](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) és [Felhasználók hozzárendelése biztonsági szerepkörökhöz](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles). 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

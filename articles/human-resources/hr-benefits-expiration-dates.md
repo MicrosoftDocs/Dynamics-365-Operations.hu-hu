@@ -1,8 +1,8 @@
 ---
 title: Juttatások lejárati dátumainak kezelése
-description: Ez az eljárás bemutatja, hogyan zárhat le vagy hosszabbíthat meg egy juttatást, és miként kezelheti a juttatásra jogosult dolgozók tagsági időszakát.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Ez az eljárás bemutatja, hogyan járhatnak le vagy hosszabbíthatók meg a juttatások, és hogyan kezeli a munkavállalók beiratkozási időpontjait.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,21 +10,21 @@ ms.search.form: HcmBenefit, HcmMassBenefitExpiration, HcmMassBenefitExpirationRe
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: ccd3126ba45cf90b6fa55f0a3853531fd0e43ed48a9e715bb1692726482fb432
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fa3f5b1c1ada243b351fc8c809eee6cea37e5955
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727112"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416405"
 ---
 # <a name="manage-benefit-expiration-dates"></a>Juttatások lejárati dátumainak kezelése
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez az eljárás bemutatja, hogyan zárhat le vagy hosszabbíthat meg egy juttatást, és miként kezelheti a juttatásra jogosult dolgozók tagsági időszakát. Ez az eljárás az USMF bemutatócéget használja.
+Ez az eljárás bemutatja, hogyan járhatnak le vagy hosszabbíthatók meg a juttatások, és hogyan kezeli a munkavállalók beiratkozási időpontjait. Ez az eljárás az USMF bemutatócéget használja.
 
 ## <a name="benefit-expiration-dates"></a>Juttatások lejárati dátumai
 

@@ -2,19 +2,19 @@
 title: Fél és globális címjegyzék
 description: Ez a témakör a kettős írás Fél és globális címjegyzék-funkcióit ismerteti.
 author: RamaKrishnamoorthy
-ms.date: 02/22/2021
+ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 3cb4cdaefe7bd82dec612a11d75aeedb77bce152a00ff90fb0095f75b23a4bbb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729776"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386685"
 ---
 # <a name="party-and-global-address-book"></a>Fél és globális címjegyzék
 
@@ -139,7 +139,10 @@ A rács a következő oszlopokat tartalmazza:
 
 A rács fölötti **Új elektronikus cím** gombbal annyi címet hozhat létre, amennyit csak szeretne.
 
-Az elektronikus címek csak ebben a rácsban érhetők el. A későbbi verziókban minden postai és elektronikus cím mező törlődik a többi lapról (például az **Összegzés** és **Részletek** lapról).
+Az elektronikus címek csak ebben a rácsban érhetők el. A jövőbeni kiadásokban a postai cím és az elektronikus cím mezőit eltávolítjuk más lapokról, például az **Összefoglaló** és a **Részletek** lapokról. A **Részletek** lapon megjelenő elérhetőségi adatok az elsődleges elektronikus cím csak olvasható másolatai, mint például az elsődleges telefon, az elsődleges e-mail, az elsődleges telefon, az elsődleges fax és az elsődleges Twitter azonosító. A leadminősítési folyamat során megadhat egy üzleti telefonszámot és egy mobiltelefonszámot is. Az üzleti telefonszámot tekintjük elsődleges telefonszámnak, ha **IsMobile=No**, és a mobiltelefonszámot tekintjük másodlagos telefonszámnak, ha **IsMobile=Yes**.
+
+> [!TIP]
+> A postai és elektronikus címek kezeléséhez használja a **Címek** és az **Elektronikus címek** lapokat a **Fiók** és a **Kapcsolat** űrlapokon. Ez biztosítja a címadatok szinkronizálását a Finance and Operations alkalmazásokkal.
 
 ## <a name="setup"></a>Beállítás
 
@@ -249,13 +252,11 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A későbbi verziókb
     [CDS értékesítésirendelés-fejlécek](mapping-reference.md#217) | salesorders
     [Értékesítésiszámla-fejlécek V2](mapping-reference.md#118) | számlák
 
-> [!Note]
+> [!NOTE]
 > A `CDS Contacts V2 (contacts)` leképezés az 1. lépésben leállított leképezés. Amikor más leképezéseket próbál futtatni, előfordulhat, hogy ez a 2 leképezés a függők listájában fog megjelenni. Ne futtassa ezeket a leképezéseket.
-
-> [!Note]
+>
 > Ha telepítve van a fél és globális címjegyzék megoldás, akkor le kell tiltani a `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead` nevű beépülő modult. Ha törli a fél és globális címjegyzék megoldást, akkor újra engedélyeznie kell a beépülő modult.
-
-> [!Note]
+>
 > A `msdyn_*partynumber` mezőt (egyetlen sor szövegmezője) nem szabad előre használni a **Partner**, **Kapcsolattartó** és **Szállító** táblában. A címkenév az egyértelműség kedvéért az **(Elavult)** előtagot fogja viselni. Ehelyett használja az **msdyn_partyid** mezőt. A mező a **msdyn_party** tábla keresője.
 
 > Tábla neve | Régi mező | Új mező
@@ -296,7 +297,6 @@ További tájékoztatás: [Kettős írású leképezési hivatkozás](mapping-re
 
 + A Finance and Operations alkalmazásokban, amikor a címmel együtt hoz létre vevőt, és azt menti is, akkor előfordulhat, hogy a cím nem szinkronizálható a **Cím** táblával. Ez a kettős írású platform sorrendbe állítási hibája miatt van. Ez a megoldás megoldás: először hozza létre a vevőt, és mentse el. Ezután adja meg a címet.
 + A Finance and Operations alkalmazásokban, amikor egy vevőrekordhoz elsődleges cím tartozik, és az adott vevőhöz új kapcsolattartót hoz létre, akkor a kapcsolattartó-rekord a társított vevőrekordtól örökli az elsődleges címet. Ez a szállító kapcsolattartója esetén is megtörténik. Dataverse jelenleg nem támogatja ezt a viselkedést. Ha engedélyezve van a kettős írás, a rendszer szinkronizálja a Finance and Operations alkalmazásokból az elsődleges címmel örökölt vevői kapcsolattartókat a Dataverse címével együtt.
-+ A `msdyn_partyelectronicaddress` táblából származó elektronikus címek nem lépnek át a **Partner** és **Kapcsolattartó** táblák elektronikus címmezőibe. A probléma javítását a növekményes kiadásban tervezzük eszközölni. A program nem írja felül a **Partner** és a **Kapcsolattartó** tábla elektronikus címmezőiben létező adatokat.
 + A `msdyn_partyelectronicaddress` táblából származnak a **Partner**, **Kapcsolattartó** és **Szállító** űrlapok elektronikus cím fülében beállított elektronikus címek. Ezek az információk nem jutnak el a társított tranzakciókhoz, mint például az értékesítési rendeléshez, árajánlathoz vagy beszerzési rendeléshez. A probléma javítását a növekményes kiadásban tervezzük eszközölni. A számla és a kapcsolattartó rekord e-mail-cím mezőiben lévő adatok továbbra is működni fognak az olyan tranzakciókon, mint az értékesítési rendelés, az árajánlat és a beszerzési rendelés.
 + A Finance and Operations alkalmazásokban létrehozhat kapcsolattartórekordot a **Kapcsolattartó hozzáadása** űrlapról. Amikor a **Kapcsolattartó megtekintése** képernyőről megpróbál új kapcsolattartót létrehozni, a művelet sikertelen lesz. Ez egy ismert probléma.
 

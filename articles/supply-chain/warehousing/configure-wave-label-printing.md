@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 3040406af731e2e35fff456804f893108e7eb896bfa0132082986c09ad128952
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b75dcb7d56648f3be291cb1c09ec57a53477ec0
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777671"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344174"
 ---
 # <a name="wave-label-printing"></a>Hullámcímke nyomtatása
 
@@ -506,7 +506,7 @@ A hullámcímkék újranyomtathatók a **Raktárkezelés \> lekérdezések és a
 
 ## <a name="scenario-3-wave-label-printing-for-multi-tiered-labels"></a>3. forgatókönyv: Többszintű címkék hullámcímke-nyomtatása
 
-Ez a példa azt mutatja be, hogyan kell használni a hullámcímkék nyomtatási funkcióit, amikor a raktározási folyamatokban a szállítási címkék több szintje szükséges. Például külön címkéket kell nyomtatni a kartondobozok és raklapok számára, és előfordulhat, hogy egy teljes szállítmányhoz ki kell nyomtatni egy szünetcímkét. A szünetcímkék külön típusú címkék, amelyek a tekercsek és a tárolók közti elválasztóként használhatók, például a szállítmány azonosítója és a vonalkód között, így a címkék nyomtatás után egyszerűen rendezhetők.
+Ez a példa azt mutatja be, hogyan kell használni a hullámcímkék nyomtatási funkcióit, amikor a raktározási folyamatokban a szállítási címkék több szintje szükséges. Például külön címkéket kell nyomtatni a kartondobozok és raklapok számára, és előfordulhat, hogy egy teljes szállítmányhoz ki kell nyomtatni egy szünetcímkét. A törhető címkék egy különálló címketípus, amely a tekercsek és a konténerek közötti elválasztóként használható, mint például a küldeményazonosító és a vonalkód címkéi, így a címkék nyomtatás után könnyen szétválogathatók.
 
 A jelen forgatókönyv konfiguráció és az 1. eset konfigurációja közti legfontosabb különbség, a szünetcímkék engedélyezésén kívül, hogy több hullámcímketípust kell társítani a hullámcímkesablonokhoz és az egységszekvencia-csoportsorokhoz. Ennek a konfigurációnak a végrehajtásához a következő elemeket kell beállítania erre az esetre:
 

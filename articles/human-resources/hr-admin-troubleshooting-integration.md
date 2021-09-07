@@ -1,8 +1,8 @@
 ---
 title: Integráció a Finance GYIK szolgáltatással
-description: Ez a cikk bemutatja, hogy a rendszer milyen adatokat szinkronizál a Human Resources és a Finance integrációja során.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Ez a téma elmagyarázza, hogy milyen adatok szinkronizálódnak a humánerőforrás és a pénzügy integrációban.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,15 +11,15 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f6a3141f1c7f4e488af0318569118be10da106a035f29e1752f0a0da5a1637f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c368f916a199c7472f6f886d143048487a38ecc
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782144"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413376"
 ---
 # <a name="integration-with-finance-faq"></a>Integráció a Finance GYIK szolgáltatással
 
@@ -158,8 +158,7 @@ A Human Resources alkalmazás végrehajtása során ellenőrizze, hogy a számso
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Munkaviszonyok szinkronizáláskor a következő hibaüzenet jelenik meg: „CompanyInfo_FK nem létezik” vagy „A 12/31/2154 11:59:59 pm' érték a 'Munkaviszony befejezésének dátuma' mezőben a kapcsolódó 'Munkaviszony' táblában nem található” Mit tegyek?
 
-Győződjön meg róla, hogy a megfelelő jogi személyekhez rendel hozzá. Jogi személy szinkronizálása nem az alapértelmezett sablon része, így elvárt, hogy minden egyes jogi személy, amely szerepel a Human Resources és a Dataverse megoldásban, szerepeljen a Finance alkalmazásban is.
-Győződjön meg arról is, hogy a helyes jogi személyeket választja ki a társított Csatlakozókészletben.
+Győződjön meg róla, hogy a megfelelő jogi személyekhez rendel hozzá. Jogi személy szinkronizálása nem az alapértelmezett sablon része, így elvárt, hogy minden egyes jogi személy, amely szerepel a Human Resources és a Dataverse megoldásban, szerepeljen a Finance alkalmazásban is. Győződjön meg arról is, hogy a helyes jogi személyeket választja ki a társított Csatlakozókészletben.
 
 ## <a name="after-setting-up-my-project-the-field-mapping-for-finance-appears-to-be-empty-what-should-i-do"></a>A projektem beállítását követően a Finance alkalmazáshoz tartozó mezőtársítás üres. Mit tegyek?
 

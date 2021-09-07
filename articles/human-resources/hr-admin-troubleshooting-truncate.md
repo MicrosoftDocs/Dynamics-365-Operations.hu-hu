@@ -1,8 +1,8 @@
 ---
 title: Szövegcsonkolás elkerülése a pozícióhierarchián és exportálás Visio szolgáltatásba
-description: Ez a cikk ismerteti azoknak a problémáknak a megoldását, ahol a magánszemélyek nevei és a beosztások csonkolva jelennek meg, amikor a vevő megtekinti a beosztáshierarchiát a Microsoft Dynamics 365 Human Resources szolgáltatásban. A szöveg csonkolt megjelenítése megnehezítheti a képernyőkép készítését vagy a hierarchia nyomtatását.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Ez a téma elmagyarázza, hogyan lehet a Microsoft Dynamics 365 Human Resources rendszerben a pozícióhierarchiában az egyének és pozíciók csonka nevének problémáját orvosolni.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,17 +11,17 @@ ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 36fc7684cf0351a10ab5910d46f6d56d46d78921143c537269699c11a38ae12b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a9a8d22df0416ef417a6216c3131bfb6d40d200
+ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779326"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "7413535"
 ---
-# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Szövegcsonkolás elkerülése a pozícióhierarchiában és exportálás a Visio szolgáltatásba
+# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Szövegcsonkolás elkerülése a pozícióhierarchián és exportálás Visio szolgáltatásba
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -43,7 +43,7 @@ Kövesse ezeket a lépéseket a Visio alkalmazásba való exportáláshoz.
 
 1. A Human Resources modulban nyissa meg **Beosztások** lista lapját.
 
-    Ha több információt szeretne szerepeltetni a szervezetistruktúra-diagramban, adjon mezőket a **Beosztások** listához, így ezek elérhetőek lesznek, amikor később használja a varázslót az eljárás során.
+    Ha több információt szeretne felvenni a szervezeti struktúra diagramba, adjon hozzá mezőket a **Pozíciók** listához, hogy azok elérhetőek legyenek, amikor a **Szervezeti diagram varázslót** használja az eljárás későbbi részében.
 
 2. A Művelet panelen válassza a **Megnyitás Microsoft Office programban** gombot, majd az **Exportálás Excel programba** rész alatt válassza a **Beosztások** lehetőséget. Vagy pedig nyomja meg a Ctrl+T billentyűkombinációt.
 

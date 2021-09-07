@@ -1,8 +1,8 @@
 ---
 title: Dynamics 365 Human Resources infrastruktúraegyesítés – GYIK
 description: Ez a témakör a Microsoft Dynamics 365 Human Resources és Finance and Operations alkalmazások infrastruktúra-egyesítésével kapcsolatos gyakori kérdéseket válaszolja meg.
-author: rachel-profitt
-ms.date: 07/14/2021
+author: twheeloc
+ms.date: 08/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: raprofit
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 537917e9a987d701a0c96dfb7592e124e09bb748e4f2f52d39f8d97000c70ae3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5ae2896eda98a8f9545d465e941d5b50065ae94b
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712001"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386539"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Dynamics 365 Human Resources infrastruktúraegyesítés – GYIK
 
@@ -38,12 +38,12 @@ A Dynamics 365 Human Resources olyan önálló alkalmazás, amely más infrastru
 
 ### <a name="my-organization-uses-dynamics-365-human-resources-to-manage-its-hr-operations-what-benefits-will-we-see-from-these-changes"></a>A szervezetem a Dynamics 365 Human Resources alkalmazást használja a HR műveleteinek kezelésére. Milyen előnyöket kaphatunk a változtatásokból?
 
-- Ezek a változtatások eltávolítanak több emberi erőforrás (HR) többféle képességet a Dynamics 365-ből.
+- Ezek a változások megszüntetik a Dynamics 365-ben a humánerőforrás (HR) képességek többféle készlete okozta zavart.
 - Ezek nyújtják a Microsoft Power Platform bővíthetőségét és lehetőséget nyújtanak az üzleti logika és a funkciók kiterjesztésére.
 - Konzisztenciát biztosítanak a Dynamics 365 Human Resources és más Finance and Operations alkalmazások között az Alkalmazások életciklus-kezelése (ALM), Microsoft Dynamics. Lifecycle Services (LCS), földrajzi elérhetőség, bővíthetőség stb. terén.
 - lehetővé teszik megosztott szolgáltatások és eszközkészletek használatát és hozzájárulnak a költségek csökkentéséhez.
 
-### <a name="my-organization-uses-dynamics-365-human-resources-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>A szervezetem a Dynamics 365 Human Resources alkalmazást a Dynamics 365 Finance, Supply Chain Management, Commerce vagy Project Operations alkalmazásban használja. Milyen előnyöket kaphatunk a változtatásokból?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-benefits-will-we-see-from-these-changes"></a>Szervezetem a Dynamics 365 Finance rendszerben a Supply Chain Management, a Commerce vagy a Project Operations modulját használja. Milyen előnyöket kaphatunk a változtatásokból?
 
 A Dynamics 365 Human Resources alkalmazásban már megtalálható képességek és beruházások elérhetővé válnak azok a vevők számára, akik a HR modult használják a Dynamics 365 Finance alkalmazásban. Ilyen képeségek többek között a szabadság- és távollétkezelés, a juttatások kezelése és a feladatkezelés.
 
@@ -67,21 +67,27 @@ Ha a szervezet más Dynamics 365 Human Resources alkalmazásokat használ, de ne
 
 Ezenkívül a termelési környezet áttelepítése előtt rendelkezésre állnak majd eszközök eszközöknek, hogy tesztelni és ellenőrizni tudja az adatokat és az elményt mielőtt áttelepíteni a termelési környezetét.
 
-Ha a szervezet egyszerre Dynamics 365 Human Resources alkalmazást és más Finance and Operations alkalmazásokat is használ, akkor több időt kell tervezni az ellenőrzésre, hogy az adatok megfelelően át legyenek telepítve az új környezetbe. Az új infrastruktúrára való áttelepítés során a rendszer a Human Resources környezetben lévő adatokat egyesíteni foguk a Finance and Operations környezettel. Az eszköz a lehető legnagyobb mértékben automatizálja az adategyesítési folyamatot. Az ütköző adatok esetében azonban felhasználói adatbevitel szükséges az ütközés megoldási módjának meghatározásához. A felhasználóknak és a rendszergazdáknak kezelniük kell az adatleképezéseket, ahol ütközések vannak, és tesztelni kell az áttelepítést tesztkörnyezetben a termelési környezet áttelepítése előtt.
+Ha a szervezet egyszerre Dynamics 365 Human Resources alkalmazást és más Finance and Operations alkalmazásokat is használ, akkor több időt kell tervezni az ellenőrzésre, hogy az adatok megfelelően át legyenek telepítve az új környezetbe. Az új infrastruktúrára való áttelepítés során a rendszer a Human Resources környezetben lévő adatokat egyesíteni foguk a Finance and Operations környezettel. Az ellentmondó adatokhoz a felhasználónak kell megadnia, hogyan kell feloldani az ellentmondást. A felhasználóknak és a rendszergazdáknak kell kezelniük az adatleképezéseket, ahol konfliktusok vannak, és tesztelniük kell a migrációt a tesztkörnyezetekben a termelési környezetek migrációja előtt.
 
-### <a name="my-organization-uses-dynamics-365-human-resources-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>A szervezetem a Dynamics 365 Human Resources alkalmazást a Dynamics 365 Finance, Supply Chain Management, Commerce vagy Project Operations alkalmazásban használja. Mit kell megterveznünk az új élményre való áttelepítéshez?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-what-do-we-have-to-plan-for-to-migrate-to-the-new-experience"></a>Szervezetem a Dynamics 365 Finance rendszerben a Supply Chain Management, a Commerce vagy a Project Operations modulját használja. Mit kell megterveznünk az új élményre való áttelepítéshez?
 
-A Finance and Operations alkalmazásokban a HR modult használó szervezeteknél az új funkció a Dynamics 365 Human Resources alkalmazásból a szokásos "Egyverziós" frissítési folyamaton keresztül lesznek alkalmazva a környezetére. Látni fogja majd az új funkciókat a környezetében, ahogy elérhetővé válnak az egyes frissítések során. A Szolgáltatáskezelés használatával kapcsolhatja be az új funkciókat. Azonban a funkciók érvényességét ellenőrizni kell. Kövesse azokat a folyamatokat, amelyel már rendelkezésre állnak környezetében a más frissítések ellenőrzésére. A frissítések a Finance and Operations alkalmazásokra való alkalmazásának kapcsolatosan lásd: [Egyverziós frissítés áttekintése](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
+A Finance and Operations alkalmazásokban a HR modult használó szervezeteknél az új funkció a Dynamics 365 Human Resources alkalmazásból a szokásos "Egyverziós" frissítési folyamaton keresztül lesznek alkalmazva a környezetére. Látni fogja majd az új funkciókat a környezetében, ahogy elérhetővé válnak az egyes frissítések során. Az új funkciók bekapcsolásához használhatja a funkciókezelést, azonban terveznie kell, hogy ezeket a funkciókat érvényesíti. Kövesse azokat a folyamatokat, amelyel már rendelkezésre állnak környezetében a más frissítések ellenőrzésére. A frissítések a Finance and Operations alkalmazásokra való alkalmazásának kapcsolatosan lásd: [Egyverziós frissítés áttekintése](../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md).
 
 ### <a name="when-will-my-organization-be-migrated"></a>Mikor történik meg a saját szervezetem áttelepítése?
 
 Az egyes szervezetek áttelepítése a konfigurációtól és az új infrastruktúrára való áttelepítésre való alkalmasságtól függ. Ezek a dátumok változhatnak.
 
-- Azok a szervezetek, amelyek jelenleg a Finance and Operations alkalmazásokban használják az HR modult, a szokásos Egyverziós frissítési folyamat részeként megkapják a HR-funkciókat a Dynamics 365 Human Resources alkalmazáshoz. Az új funkciók a tervek szerint 2021 októberében válnak általánosan elérhetővé.
-- Azok a szervezetek, amelyek jelenleg csak a Dynamics 365 Human Resources alkalmazást használják hozzáférnek az áttelepítési eszközhöz, hogy megkezdjék a tesztelést és elindíthassák az áttelepítést 2022 elején-közepén. Még nem határoztuk meg azt a dátumot, amikorra az új infrastruktúrára való átállást végre kell hajtani. Az áttelepítési eszköz elérhetővé válását követően legalább egy évet biztosítunk erre.
-- Azok a szervezetek, amelyek jelenleg a Dynamics 365 Human Resources alkalmazást és más Finance and Operations alkalmazásokat is használnak hozzáférnek az áttelepítési eszközhöz, hogy megkezdjék a tesztelést és elindíthassák az áttelepítést 2022 végén. Még nem határoztuk meg azt a dátumot, amikorra az új infrastruktúrára való átállást végre kell hajtani. Az áttelepítési eszköz elérhetővé válását követően legalább egy évet biztosítunk erre.
+- Azok a szervezetek, amelyek a Finance and Operations alkalmazásokban használják a HR modult, a rendszeres One Version frissítési folyamat részeként megkapják a Dynamics 365 Human Resources HR funkciót. Az új funkciók a tervek szerint 2022 januárjától válnak általánosan elérhetővé.
+- A kizárólag a Dynamics 365 Human Resources rendszert használó szervezetek hozzáférhetnek az átállási eszközökhöz, így 2022 közepétől megkezdhetik a tesztelést és az átállást. Még nem határoztuk meg azt a dátumot, amikorra az új infrastruktúrára való átállást végre kell hajtani. Az áttelepítési eszköz elérhetővé válását követően legalább egy évet biztosítunk erre.
+- A Dynamics 365 Human Resources és más Finance and Operations alkalmazásokat egyaránt használó szervezetek hozzáférhetnek a migrációs eszközökhöz, így 2022 végétől kezdve megkezdhetik a tesztelést és az átállást. Még nem határoztuk meg azt a dátumot, amikorra az új infrastruktúrára való átállást végre kell hajtani. Az áttelepítési eszköz elérhetővé válását követően legalább egy évet biztosítunk erre.
 
 A Dynamics 365 Human Resources új funkcióival kapcsolatos további tudnivalókat lásd a [Human Resources újdonságai és módosításai](./hr-admin-whats-new.md) részben.
+
+### <a name="my-organization-has-not-yet-gone-live-on-dynamics-365-human-resources-should-we-go-live-with-the-human-resources-module-in-the-finance-and-operations-apps-or-with-the-dynamics-365-human-resources-app-on-the-legacy-infrastructure"></a>Szervezetem még nem élő a Dynamics 365 Human Resources rendszerben. A Finance and Operations alkalmazásokban lévő humánerőforrás-modullal vagy a Dynamics 365 Human Resources alkalmazással a régi infrastruktúrán menjünk élesbe?
+
+Fontos figyelembe venni, hogy milyen HR-funkciókra van szükség, és hogy ezek a funkciók mikor lesznek elérhetők az új infrastruktúrán. Ha a szervezetnek szüksége van a személyzeti menedzsment alapvető funkcióira, az jelenleg a Finance and Operations alkalmazások HR-moduljában érhető el az új infrastruktúrán. A Finance and Operations alkalmazások HR-modulja és a Dynamics 365 Human Resources alkalmazás közötti funkcióparitás a 10.0.25-ös kiadásban várható, amely a tervek szerint 2022 márciusában lesz általánosan elérhető. Az olyan integrációs funkciók, mint a Teams alkalmazás és a Dataverse entitás integrációk a későbbi kiadásokban lesznek elérhetők.
+
+Ha a szervezet HR-funkciókkal kapcsolatos igényei az új infrastruktúrán is elérhetőek lesznek a szervezet éles üzembe helyezésének időszaka alatt, egyszerűbb lehet a Finance and Operations alkalmazásokban található humánerőforrás-modul éles üzembe helyezése. Ez könnyebb migrációt eredményez, mivel ez egy szabványos alkalmazásfrissítés lesz a Dynamics 365 Human Resources alkalmazáshoz, és az ügyfél már az új infrastruktúrán lesz. Ha a szervezet úgy dönt, hogy a Dynamics 365 Human Resources alkalmazást a régi infrastruktúrán vezeti be, akkor az új infrastruktúrára való áttéréshez környezeti migrációra lesz szükség. Ez elkerülhető az új infrastruktúra éles üzembe helyezésével.
 
 ### <a name="i-am-using-new-capabilities-that-are-available-only-in-dynamics-365-human-resources-such-as-leave-and-absence-and-benefits-management-will-these-capabilities-now-be-available-in-the-human-resources-module-on-the-finance-and-operations-infrastructure-too"></a>Olyan új funkciókat használok, amelyek csak a Dynamics 365 Human Resources alkalmazásban érhetők el (például **Szabadság és távolét** és **Juttatások kezelése**). Ezek a képességek elérhetők lesznek a Human Resources modulban a Finance and Operations infrastruktúrában is?
 
@@ -97,7 +103,7 @@ A független szoftverszállítói (ISV) megoldásoknál az áttelepítési élm�
 
 ### <a name="my-organization-uses-linkedin-talent-hub-integration-with-dynamics-365-human-resources-will-this-integration-continue-to-work-after-the-infrastructure-change-is-completed"></a>A szervezem a LinkedIn Talent Hub integrációját használja a Dynamics 365 Human Resources alkalmazással. Továbbra is működik majd ez az integráció az infrastruktúra-módosítás befejezése után?
 
-Igen, a LinkedIn Talent Hub integráció az új infrastruktúrára való áttelepítés után is működni fog.
+Nem, a LinkedIn Talent Hub integráció nem fog működni az új infrastruktúrára való áttérés után. A LinkedIn Talent Hub integrációs szolgáltatása a régi Dynamics 365 Human Resources infrastruktúrával együtt nyugdíjba vonul.
 
 ### <a name="my-organization-uses-the-human-resources-app-for-teams-will-the-app-continue-to-work-after-the-infrastructure-change-is-completed"></a>Saját szervezetem a Human Resources alkalmazást használja a Teamshez. Továbbra is működik majd ez az alkalmazás az infrastruktúra-módosítás befejezése után?
 
@@ -109,13 +115,13 @@ Igen, az új infrastruktúrába való adatáttelepítésben is szerepelni fognak
 
 ### <a name="we-are-using-data-integrator-to-move-data-between-dynamics-365-human-resources-and-finance-and-operations-apps-how-will-the-data-that-is-currently-being-integrated-be-affected"></a>Adatintegrátort használunk az adatok mozgatására a Dynamics 365 Human Resources és a Finance and Operations alkalmazások között. Hogyan lesz ez hatással éppen integrált adatokra?
 
-A Dynamics 365 Human Resources alkalmazásban mesteradatként kezelt HR-adatok a Dataverse-rendszerrel vannak szinkronizálva. Ezután az adatintegrátor egyirányú szinkronizálásra használható a Finance and Operations alkalmazásokkal. Az új infrastruktúrába való áttelepítés után a HR-adatok natívak lesznek a Finance and Operations alkalmazásokban. Az adatintegrátorra már nem lesz szükség a Finance and Operations alkalmazások és a Human Resources közötti adatszinkronizáláshoz.
+A jelenleg a Dynamics 365 Human Resources rendszerben található HR-adatok szinkronizálódnak a Dataverse rendszerrel. Ezután az adatintegrátor egyirányú szinkronizálásra használható a Finance and Operations alkalmazásokkal. Az új infrastruktúrára való áttérés után a HR-adatok a Finance and Operations alkalmazásokban lesznek natívan megtalálhatóak. Az adatintegrátorra már nem lesz szükség a Finance and Operations alkalmazások és a Human Resources közötti adatszinkronizáláshoz.
 
 A Human Resources aktuális Dataverse natív adattáblái továbbra is szinkronizálni fogják az új infrastruktúra alatt a környezet adatait. Az entitások kétírásos formátum támogatásához lesznek konvertálva. A többi Dynamics 365 alkalmazások az Adatintegrátor segítségével konfigurált egyéb adatintegrációi a jelenleg konfigurált módon folytatódnak.
 
 ### <a name="we-are-using-dual-write-to-move-hr-data-between-dataverse-and-other-finance-and-operations-apps-how-will-the-data-that-is-currently-being-integrated-be-affected-by-the-migration-to-the-new-infrastructure"></a>A HR-adatok mozgatásár a Dataverse és más Finance and Operations alkalmazások között kettős írással végezzük majd. Hogyan lesz hatással az jelenleg integrált adatokra az új infrastruktúrára való áttelepítés?
 
-Az új infrastruktúra környezetében a HR-adatok natívak lesznek a Finance and Operations alkalmazásokhoz. Ezt követően a kettős írás segítségével lehet mozgatni a HR-adatokat az új környezet és a Dataverse-környezet között.
+Az új infrastruktúra környezetében a HR-adatok natívak lesznek a Finance and Operations alkalmazásokhoz. A kettős írást a HR-adatoknak az új környezet és a Dataverse környezet közötti mozgatására használják.
 
 ### <a name="we-have-built-custom-integrations-from-dynamics-365-human-resources-to-one-or-more-external-systems-will-we-have-to-develop-new-integrations-after-the-infrastructure-change-is-completed"></a>Egyéni integrációt építünk fel egy Dynamics 365 Human Resources felől egy vagy több külső rendszerbe. Új integrációkat kell majd fejlesztenünk infrastruktúra-módosítás befejezése után?
 
@@ -123,15 +129,15 @@ Ez az integrációs végponttól függ. A Finance and Operations alkalmazásokba
 
 ### <a name="we-have-extended-dataverse-for-dynamics-365-human-resources-will-these-extensions-be-migrated-automatically"></a>Bővítettük a Dataverse-t a Dynamics 365 Human Resources alkalmazáshoz. Ezek a bővítések automatikusan át lesznek telepítve?
 
-Ha a Dynamics 365 Human Resources és a Finance and Operations környezetek, amelyek össze lesznek kapcsolva az új környezetben az új infrastruktúrában ugyanahhoz a Dataverse-környezethez kapcsolódnak, a két alkalmazás továbbra is ugyanabban a Dataverse-környezetben lesz az áttelepítés után. A Dataverse-bővítmények áttelepítése ennek megfelelően nem szükséges.
+Ha a Dynamics 365 Human Resources és a Finance and Operations környezetek, amelyek össze lesznek kapcsolva az új környezetben az új infrastruktúrában ugyanahhoz a Dataverse-környezethez kapcsolódnak, a két alkalmazás továbbra is ugyanabban a Dataverse-környezetben lesz az áttelepítés után. A Dataverse bővítmények esetében nem lesz szükség migrációra.
 
-Ugyanakkor, ha a Dynamics 365 Human Resources és a Finance and Operations környezetek jelenleg külön Dataverse-környezetekhez vannak kapcsolva, a két Dataverse-környezet egyesítése lesz szükséges, hogy egy környezethez kapcsolódjanak az új infrastruktúrában. A Dataverse áttelepítés során a Human Resources estében szabványos Dataverse táblákat lehet csatlakoztatni és újraszinkronizálni az új Dataverse környezethez. A Dataverse környezet bővítései azonban nem lesznek automatikusan áttelepítve, hanem újra kell azokat telepíteni az új környezetben. Javasoljuk, hogy a felügyelt megoldások segítségével kezelje a Dataverse-bővítményeket. A további tudnivalókat lásd: [Bevezetés a megoldásokba](https://docs.microsoft.com/powerapps/developer/data-platform/introduction-solutions).
+Ugyanakkor, ha a Dynamics 365 Human Resources és a Finance and Operations környezetek jelenleg külön Dataverse-környezetekhez vannak kapcsolva, a két Dataverse-környezet egyesítése lesz szükséges, hogy egy környezethez kapcsolódjanak az új infrastruktúrában. A Dataverse áttelepítés során a Human Resources estében szabványos Dataverse táblákat lehet csatlakoztatni és újraszinkronizálni az új Dataverse környezethez. A Dataverse környezethez készült bővítmények nem kerülnek automatikusan áttelepítésre, hanem azokat újra kell telepíteni az új környezetbe. Javasoljuk, hogy a felügyelt megoldások segítségével kezelje a Dataverse-bővítményeket. A további tudnivalókat lásd: [Bevezetés a megoldásokba](/powerapps/developer/data-platform/introduction-solutions).
 
 ### <a name="we-have-configured-microsoft-power-automate-flows-andor-microsoft-power-apps-to-work-with-dynamics-365-human-resources-will-these-microsoft-power-platform-components-be-migrated-and-work-automatically-after-the-infrastructure-change-is-completed"></a>Úgy konfiguráltuk a Microsoft Power Automate folyamatokra és/vagy Microsoft Power Apps alkalmazásokat, hogy működjenek Dynamics 365 Human Resources alkalmazással. Ezeket a Microsoft Power Platform összetevőket áttelepíti a program, és automatikusan működnek az infrastruktúra-módosítás befejezése után?
 
 A Power Apps és Power Automate folyamatok és egyéb Microsoft Power Platform testreszabások hasonlóak a Dataverse bővítményekhez. Az, hogy automatikusan működnek-e az új infrastruktúrára való áttelepítés után, attól függ, hogy a Human Resources alkalmazás és a Finance and Operations alkalmazások az áttelepítés előtt ugyanahhoz a Power Apps környezethez kapcsolódnak-e.
 
-Ha az alkalmazások jelenleg ugyanahhoz a Power Apps környezethez vannak csatlakoztatva, akkor az új infrastruktúrára való áttelepítés után is csatlakoznak ugyanahhoz a Power Apps-környezethez. Ebben az esetben a Power Apps és Power Automate folyamatok és egyéb Microsoft Power Platform testreszabások további konfiguráció nélkül is működnek. Javasoljuk, hogy a felügyelt megoldások segítségével kezelje az alkalmazásbővítményeket a Dataverse alatt. A további tudnivalókat lásd: [Bevezetés a megoldásokba](https://docs.microsoft.com/powerapps/developer/data-platform/introduction-solutions).
+Ha az alkalmazások jelenleg ugyanahhoz a Power Apps környezethez vannak csatlakoztatva, akkor az új infrastruktúrára való áttelepítés után is csatlakoznak ugyanahhoz a Power Apps-környezethez. Ebben az esetben a Power Apps és Power Automate folyamatok és egyéb Microsoft Power Platform testreszabások további konfiguráció nélkül is működnek. Javasoljuk, hogy a felügyelt megoldások segítségével kezelje az alkalmazásbővítményeket a Dataverse alatt. A további tudnivalókat lásd: [Bevezetés a megoldásokba](/powerapps/developer/data-platform/introduction-solutions).
 
 Ha azonban a Human Resources alkalmazás és a Finance and Operations alkalmazások külön Power Apps környezetekhez vannak kapcsolva, akkor az áttelepítés részeként kombinálni kell ezeket. Ehhez a feladathoz az szükséges, hogy az új környezetben újra legyen telepítve az összes Power Apps és más testreszabások.
 
@@ -149,7 +155,7 @@ Ugyanakkor, ha a környezet egy az új infrastruktúrán egy másik Dataverse-k�
 
 ### <a name="is-there-an-impact-on-the-azure-region-when-my-environment-is-migrated"></a>Befolyásolja az Azure-régiót, amikor a környezetem át lesz telepítve?
 
-A Human Resources környezete jellemzően ugyanabban az Azure-régióban marad az áttelepítés során. Az egyetlen kivétel akkor fordul elő, ha a Human Resources egyesíte lesz egy Finance and Operations környezettel, amely másik régióban található. Ebben az esetben a Human Resources környezet át lesz telepítve a Finance and Operations környezet Azure-régiójába.
+A Human Resources környezete jellemzően ugyanabban az Azure-régióban marad az áttelepítés során. Az egyetlen kivétel az, ha a humánerőforrás-környezetet egy másik régióban található Finance and Operations környezettel egyesítik. Ebben az esetben a Human Resources környezet át lesz telepítve a Finance and Operations környezet Azure-régiójába.
 
 ### <a name="my-organization-depends-on-workflows-in-dynamics-365-human-resources-for-one-or-more-business-processes-will-the-workflows-be-migrated-automatically"></a>A saját szervezet egy vagy több üzleti folyamata Dynamics 365 Human Resources munkafolyamataitól függ. Ezek a munkafolyamatok automatikusan át lesznek telepítve?
 
@@ -173,7 +179,7 @@ Az áttelepítés után a vevők nagyobb rugalmasságot fognak kapni az ALM és 
 
 ### <a name="how-will-the-migration-affect-my-lcs-project-for-dynamics-365-human-resources"></a>Hogyan lesz hatással az áttelepítés a saját Dynamics 365 Human Resources LCS-projektjeimre?
 
-Az új infrastruktúra áttelepítése a Dynamics 365 Human Resources környezetek kezelését egy LCS-megvalósítási projektbe fogja áthelyezni. Ha az áttelepítéssel a Dynamics 365 Human Resources környezetet egy meglévő Finance and Operations környezettel egyesíti, a Human Resources LCS-projekt egyesítve lesz egy LCS implementációs projektbe a Finance and Operations alkalmazáshoz. Ha jelenleg csak a Dynamics 365 Human Resources alkalmazást használja, a rendszer létrehoz egy új LCS implementálási projektet, és a meglévő Human Resources LCS-projektet áttelepíti az új projektbe.
+Az új infrastruktúrára való áttérés a Dynamics 365 Human Resources környezetek kezelését a Finance and Operations LCS implementációs projektjébe helyezi át. Ha az áttelepítéssel a Dynamics 365 Human Resources környezetet egy meglévő Finance and Operations környezettel egyesíti, a Human Resources LCS-projekt egyesítve lesz egy LCS implementációs projektbe a Finance and Operations alkalmazáshoz. Ha jelenleg csak a Dynamics 365 Human Resources alkalmazást használja, a rendszer létrehoz egy új LCS implementálási projektet, és a meglévő Human Resources LCS-projektet áttelepíti az új projektbe.
 
 Az új projekt a Finance and Operations alkalmazások által használttal megegyező típusú lesz. A környezetkezelésben ugyanazok a funkciók és funkciók lesznek elérhetők. További tudnivalókért lásd: [Lifecycle Services-erőforrások](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
@@ -217,7 +223,7 @@ Ez a dokumentáció nem helyettesíti és nem cseréli le a használatra vonatko
 
 Ez a változás nem érinti a vevőket, akik Dynamics 365 Human Resources licenceket vásároltak. Ezeknek a vevőknek nincs licencáttelepítés. A kiegészítő tesztverziós termékváltozat (SKU), amely kifejezetten a Human Resources alkalmazáshoz volt specifikus a továbbiakban nem lesz érvényes. Ehelyett az ügyfelek választhatják, hogy egy 2. szintű tesztkörnyezetet vásárolnak a Finance and Operations alkalmazásokhoz, némileg alacsonyabb költséggel. A meglévő ügyfelek, akik a Human Resources tesztkörnyezetet megvásárolták további költség nélkül át lesznek a telepítve a Finance and Operations alkalmazások 2. szintű tesztkörnyezetébe.
 
-### <a name="my-organization-uses-dynamics-365-human-resources-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-does-my-licensing-or-cost-change"></a>A szervezetem a Dynamics 365 Human Resources alkalmazást a Dynamics 365 Finance, Supply Chain Management, Commerce vagy Project Operations alkalmazásban használja. A licencelés vagy a költség változik?
+### <a name="my-organization-uses-the-human-resources-module-in-dynamics-365-finance-supply-chain-management-commerce-or-project-operations-does-my-licensing-or-cost-change"></a>Szervezetem a Dynamics 365 Finance rendszerben a Supply Chain Management, a Commerce vagy a Project Operations modulját használja. A licencelés vagy a költség változik?
 
 A Dynamics 365-alkalmazások meglévő felhasználói és az önálló Dynamics 365 Finance, Supply Chain Management, Commerce, és Project Operations felhasználók a licencek részeként 2025 februárig, illetve a jelenlegi licencszerződés lejártáig (amelyik előbb bekövetkezik) hozzáférhetnek a Human Resources alkalmazáshoz. Dönthet úgy, hogy korábban áttér a Human Resources licencekre, ha az segítséget jelent Önnek, vagy így költségeket takaríthat meg. 2025 februártól kezdve minden meglévő CSP- és EA-vevőnek ki kell vezetnie a HR-modult, és meg kell vásárolnia a Human Resources licenceket, hogy kihasználják a Finance and Operations alkalmazásokba kerülő új funkciókat.
 

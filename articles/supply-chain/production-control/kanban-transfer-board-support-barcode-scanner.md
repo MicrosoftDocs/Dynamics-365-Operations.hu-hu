@@ -1,6 +1,6 @@
 ---
-title: Kanban átviteli tábla támogatás vonalkódolvasókhoz
-description: A Kanban átviteli tábla támogatja vezérlő vonalkód leolvasó szkenner bemenetét, így annak segítségével kiválaszthatja, elindíthatja, teljesítheti és kiürítheti a kanban feladatot.
+title: Kanbanátviteli tábla támogatása vonalkódolvasókhoz
+description: A Kanbanátviteli tábla támogatja a widget vonalkódolvasóról történő beolvasást a kanban munkák kiválasztásához, indításához, befejezéséhez és kiürítéséhez.
 author: ChristianRytt
 ms.date: 06/20/2017
 ms.topic: article
@@ -16,18 +16,18 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 973c9f4c6960d5e263ee06bd665c94f770696d0dd5a7cdfad8471687054d57f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1316c4f77cabf0184ec01b64d0c6a86830e2675d
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736016"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343942"
 ---
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban átviteli tábla támogatás vonalkódolvasókhoz
+# <a name="kanban-transfer-board-support-for-bar-code-scanners"></a>Kanbanátviteli tábla támogatása vonalkódolvasókhoz
 
 [!include [banner](../includes/banner.md)]
 
-A Kanban átviteli tábla támogatja vezérlő vonalkód leolvasó szkenner bemenetét, így annak segítségével kiválaszthatja, elindíthatja, teljesítheti és kiürítheti a kanban feladatot.
+A Kanbanátviteli tábla támogatja a widget vonalkódolvasóról történő beolvasást a kanban munkák kiválasztásához, indításához, befejezéséhez és kiürítéséhez.
 
 ## <a name="registration-modes"></a>Regisztrációs módok
 

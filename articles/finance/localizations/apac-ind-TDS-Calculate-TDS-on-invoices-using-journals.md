@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: cfe473f39ee729957924fd7c161aed01138cd507eea56766af35177891676f65
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fde81efed6b8a72e2149056f0196e4f9d60e59f2
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778893"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7345519"
 ---
 # <a name="calculate-tds-on-invoices-using-journals"></a>TDS kiszámítása számlákon naplók segítségével
 
@@ -65,6 +65,6 @@ Kezdje az **Általános naplók** oldal megnyitásával (**Főkönyv > Naplóbej
 
 8. Adja meg az egyéb szükséges adatokat. Ellenőrizze és adja fel a naplót. A beszerzési számlákon kiszámított TDS-összeg a fizetendő számlára kerül. Az értékesítési számlákon kiszámított TDS-összeg a TDS-csoport minden egyes TDS-adókódjára meghatározott követelésszámlára kerül. A TDS-adókódok fizetendő számláit vagy követelésszámláit az **Adóelőleg-kódok** oldalon határozzák meg.
 
-9. Az **Adóelőleg**-**tranzakciók** lap megnyitásához válassza a **Feladott adóelőleg** lehetőséget. Az **Érték** mezőben megjelenik a tranzakció-TDS kiszámításához használt teljes százalék.
+9. Az **Adóelőleg-tranzakciók** lap megnyitásához válassza a **Feladott adóelőleg** lehetőséget. Az **Érték** mezőben megjelenik a tranzakció-TDS kiszámításához használt teljes százalék.
 
    Az Adóelőleg-tranzakciók oldal **Áttekintés**, **Általános** és **Összeg** lapján található mezők a TDS-csoporthoz csatolt egyes TDS-adókódok számított TDS-összegét és kiigazított TDS-összegadatait jelenítik meg.

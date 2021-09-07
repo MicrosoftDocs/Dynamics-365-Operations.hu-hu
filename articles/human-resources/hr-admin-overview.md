@@ -1,8 +1,8 @@
 ---
 title: Adminisztráció áttekintése
-description: Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer beállításában, kezelésében és problémaelhárításában.
-author: andreabichsel
-ms.date: 02/03/2020
+description: Ez a témakör a Dynamics 365 Human Resources beállításához, kezeléséhez és hibaelhárításához szükséges súgó témakörök és egyéb források listáját tartalmazza.
+author: twheeloc
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3b2cefd0281abfc94df05a1ae929e0b65bc533b292a6c4779a4fbc7ba1134a0e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4ceba9f071f73813eb9e79c5d8e2a00779c915
+ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765614"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7393571"
 ---
 # <a name="administration-overview"></a>Adminisztráció áttekintése
 
@@ -28,7 +28,7 @@ ms.locfileid: "6765614"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer beállításában, kezelésében és problémaelhárításában.
+Ez a témakör a Dynamics 365 Human Resources beállításához, kezeléséhez és hibaelhárításához szükséges súgó témakörök és egyéb források listáját tartalmazza.
 
 - [Rendszerkövetelmények](hr-admin-system-requirements.md)
 
@@ -92,14 +92,23 @@ Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer be
   - [Kompenzációs folyamat futtatása](hr-admin-troubleshooting-compensation.md)
   - [Feladat útmutatójának mentése az LCS-be](hr-admin-troubleshooting-task-guide.md)
   - [Hozzáférés privát címekhez biztonsági szerepkörnek megfelelően](hr-admin-troubleshooting-private-addresses.md)
-  - [A Human Resources alkalmazás nem jelenik meg a Dynamics 365 alkalmazásai között](hr-admin-troubleshooting-not-in-apps.md)
+  - [Az Emberi erőforrások nem jelenik meg a Dynamics 365 alkalmazásokban](hr-admin-troubleshooting-not-in-apps.md)
   - [Jelentési funkciók](hr-admin-troubleshooting-reporting.md)
   - [Integrációval kapcsolatos GYIK](hr-admin-troubleshooting-integration.md)
 
+## <a name="additional-resources"></a>További erőforrások
+
+### <a name="elearning-courses"></a>eLearning-tanfolyamok
+Az online tanfolyamokkal és tréningekkel kapcsolatban tekintse meg a következőt: [Dynamics 365 Human Resources a Microsoft Learn szolgáltatásban](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+
+### <a name="videos"></a>Videók
+
+Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.
+
 ## <a name="see-also"></a>Lásd még
 
-- [Új vagy módosult elemek a Human Resources alkalmazásban](hr-admin-whats-new.md)
-- [Fejlesztői útmutató](hr-developer-overview.md)
+- [Újdonságok és változások a Human Resources szolgáltatásban](hr-admin-whats-new.md)
+- [Fejlesztői iránymutatás](hr-developer-overview.md)
 - [Felhasználói útmutató](hr-hrpro-overview.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

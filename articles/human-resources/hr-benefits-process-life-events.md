@@ -1,8 +1,8 @@
 ---
 title: Életesemények feldolgozása
 description: A Microsoft Dynamics 365 Human Resources alkalmazotti életciklusa során minden alkalmazott találkozhat különböző életeseményekkel kapcsolatos változásokkal.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6bfbb9e31a7d8973c2b993f3792a7216f41924e0ff4c24b08c0dd954ab327c7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 688a47d77dbd75ecd12af23f22a1d401703ed672
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775017"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417548"
 ---
 # <a name="process-life-events"></a>Életesemények feldolgozása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A Microsoft Dynamics 365 Human Resources alkalmazotti életciklusa során minden alkalmazott találkozhat különböző életeseményekkel kapcsolatos változásokkal. Például a házasság, a foglalkoztatás változása vagy a függő fél/kedvezményezett változása. Az életesemények használatához engedélyeznie kell az életeseményeket a juttatás paraméterei űrlapon, be kell állítania az életesemény típusát, és be kell állítania a terv típusára vonatkozó beállításokat.
+A Microsoft Dynamics 365 Human Resources alkalmazotti életciklusa során minden alkalmazott találkozhat különböző életeseményekkel kapcsolatos változásokkal. Például a házasság, a foglalkoztatás változása vagy a függő fél/kedvezményezett változása. Az életesemények használatához engedélyeznie kell az életeseményeket a **Juttatások paraméterei** oldalon, be kell állítania az életeseménytípusokat, és be kell állítania az életesemény opciókat a tervtípusokhoz.
 
 Az életesemények feldolgozása előtt a felvételi időkereten belül már legalább egyszer futtatni kell a nyitott jelentkezést. Az Egyesült Államokban a nyitott jelentkezés általában évente egyszer történik. Az Egyesült Államokon kívül nyitott jelentkezés a felvételkor történik. A dolgozónak nem kell kiválasztania juttatási tervet az életesemények feldolgozásához, viszont a nyitott jelentkezés feldolgozásakor szerepelniük kell. 
 

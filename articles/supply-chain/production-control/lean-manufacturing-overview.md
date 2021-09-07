@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da812bcc7d31db25abc0ed7e6c1a7f9e5433f80bfdfc5421e4e18d6b8af68884
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1374a451c65b4bafdc6efeb10949d1f6eceb4758
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738915"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343918"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing (áttekintés)
 
@@ -66,7 +66,7 @@ A lean manufacturing segítségével látható a termelési és logisztikai tev�
 Az alábbi lista leírja a specializált kanbantáblákat:
 -   Kanban feladat ütemezése – áttekintése nyújt a kanbanfeladatokhoz. A tábla a kanbanfeladatokat és az állapotukat jeleníti meg egy vagy több munkacellában. A feladatok a tervezési időszakok (napok vagy hetek) szerint vannak listázva, amit a termelési folyamatmodellben határoztak meg. A tábla az egyes tervezési időszakra vonatkozó fogyasztást is megjeleníti, így nyomon követheti az ütemezett terhelést. Megváltoztathatja a kanbanfeladatok állapotát, újraütemezhet kanbanfeladatokat eltérő tervezési időszakokhoz és végrehajthat egyéb feladatokat.
 -   Kanbantábla az átviteli feladatokhoz – Ez a tábla az aktuális átviteli feladatokról nyújt áttekintést. Frissíthet és regisztrálhat kitárolási listákat, elindíthat és befejezhet transzferfeladatokat és végrehajthat egyéb feladatokat.
--   Kanbantábla feldolgozási feladathoz – Ez a tábla a normális termelési folyamat támogatásához lett tervezve, áttekintést nyújt az aktuális helyzethez egy vagy több munkacellában. Erről a tábláról a kanbanok priorizálhatók, kitárolhatók és gyárthatók. Továbbá a tábla segíti a vonalkód beolvasását kanbanok jelentéséhez.
+-   Kanbantábla feldolgozási feladathoz – Ez a tábla a normális termelési folyamat támogatásához lett tervezve, áttekintést nyújt az aktuális helyzethez egy vagy több munkacellában. Erről a tábláról a kanbanok priorizálhatók, kitárolhatók és gyárthatók. A táblát úgy is tervezték, hogy támogassa a vonalkódolvasást a kanbanok jelentésére.
 
 ## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-feladatok és integráció a Supply Chain Management folyamataival
 A Kanbanfeladatok teljes mértékben integráltak a jelenlegi készlettranzakciós folyamatokkal a Supply Chain Management rendszerben.

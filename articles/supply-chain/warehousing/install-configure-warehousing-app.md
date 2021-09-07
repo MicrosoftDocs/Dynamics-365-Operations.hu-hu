@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 8386adc3f0e9c9a782e6cd5d4ba770f9650583b8ff3f32c3ac23478475d085ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 094d7f0f5642653c6e059952783041b1430e98d6
+ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753795"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7384635"
 ---
 # <a name="install-and-connect-the-warehouse-app"></a>A raktározási alkalmazás telepítése és csatlakoztatása
 
@@ -136,7 +136,7 @@ A csatlakozási beállításokat egy fájlból vagy egy QR-kódból is importál
 | ConnectionName | Adja meg a csatlakozási beállítás nevét. A maximális hossz 20 karakter. Mivel ez az érték egy csatlakozási beállítás egyedi azonosítója, győződjön meg arról, hogy egyedi a listán. Ha már létezik ilyen nevű kapcsolat az eszközön, akkor az importált fájl beállításai felülbírálják. |
 | ActiveDirectoryClientAppId | Adja meg az ügyfélazonosítót, amelyet az Azure AD beállítása közben jegyzett fel a [Webszolgáltatási alkalmazás létrehozása az Azure Active Directory rendszerben](#create-service) szakaszban. |
 | ActiveDirectoryResource | Adja meg a Supply Chain Management gyökér-URL-címét. |
-| ActiveDirectoryTenant | Adja meg az Azure AD Supply Chain Management-kiszolgálón használt bérlőt. Ez az érték a `https://login.windows.net/<your-Azure-AD-tenant-ID>` formátummal rendelkezik. Íme egy példa: `https://login.windows.net/contosooperations.onmicrosoft.com`. |
+| ActiveDirectoryTenant | Adja meg a Azure AD tartománynevet, amelyet a Supply Chain Management kiszolgálóval használ. Ez az érték a `https://login.windows.net/<your-Azure-AD-domain-name>` formátummal rendelkezik. Íme egy példa: `https://login.windows.net/contosooperations.onmicrosoft.com`. A Azure AD tartománynév megkeresésével kapcsolatos további információkért lásd: [Fontos azonosítók keresése egy felhasználóhoz](/partner-center/find-ids-and-domain-names). |
 | Cég | Adja meg a Supply Chain Managementben szereplő jogi személyt, amelyhez az alkalmazásnak csatlakoznia kell. |
 | ConnectionType | (választható) Adja meg, hogy a kapcsolatbeállításnak tanúsítvány vagy titkos ügyfélkód használatával kell-e kapcsolódnia egy környezethez. Az érvényes értékek: *"certificate"* és *"clientsecret"*. Az alapértelmezett érték a *"certificate"*.<p>**Megjegyzés:** A titkos ügyfélkódok nem importálhatók.</p> |
 | IsEditable | (választható) Adja meg, hogy az alkalmazás felhasználója szerkesztheti-e a kapcsolatbeállítást. Az érvényes értékek az *"igaz"* és a *"hamis"*. Az alapértelmezett érték az *"igaz"*. |
@@ -248,7 +248,7 @@ Manuálisan konfigurálhatja az alkalmazást az eszközön, hogy csatlakozni tud
         > [!NOTE]
         > Ne fejezze be ezt az értéket perjellel (/).
 
-    - **Active Directory-bérlő** – Adja meg a Supply Chain Management-kiszolgálón használt Azure AD bérlőt. Ez az érték a `https://login.windows.net/<your-Azure-AD-tenant-ID>` formátummal rendelkezik. Íme egy példa: `https://login.windows.net/contosooperations.onmicrosoft.com`.
+    - **Active directory bérlő** - Adja meg a Azure AD tartománynevet, amelyet a Supply Chain Management kiszolgálóval használ. Ez az érték a `https://login.windows.net/<your-Azure-AD-domain-name>` formátummal rendelkezik. Íme egy példa: `https://login.windows.net/contosooperations.onmicrosoft.com`. A Azure AD tartománynév megkeresésével kapcsolatos további információkért lásd: [Fontos azonosítók keresése egy felhasználóhoz](/partner-center/find-ids-and-domain-names).
 
         > [!NOTE]
         > Ne fejezze be ezt az értéket perjellel (/).
