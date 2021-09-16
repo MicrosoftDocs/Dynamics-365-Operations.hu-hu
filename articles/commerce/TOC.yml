@@ -6,6 +6,8 @@
           href: index.md
         - name: Első lépések
           items:
+            - name: Szolgáltatásleírás
+              href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/commerce/toc.json
             - name: Vásárlás előtti teendők
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/commerce/toc.json
             - name: Egyverziós szolgáltatásfrissítések
@@ -94,6 +96,8 @@
                   items:
                     - name: Újdonságok vagy változások a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Commerce 10.0.22 (2021. november)
+                      href: get-started/whats-new-commerce-10-0-22.md
                     - name: Commerce 10.0.21 (2021. október)
                       href: get-started/whats-new-commerce-10-0-21.md
                     - name: Commerce 10.0.20 (2021. augusztus)
@@ -254,8 +258,12 @@
                       href: dev-itpro/define-retail-channel-communications-cdx.md
                     - name: Commerce Data Exchange – hibaelhárítás
                       href: dev-itpro/CDX-Troubleshooting.md
+                    - name: Commerce Data Exchange csomagok rendezése elsődleges index szerint
+                      href: CDX-package-sort.md
                 - name: Modern POS-architektúra
                   href: dev-itpro/retail-modern-pos-architecture.md
+                - name: Commerce offline implementáció és hibaelhárítás
+                  href: dev-itpro/implementation-considerations-offline.md
                 - name: Online áruház katalógusának közzététele
                   href: dev-itpro/retail-online-store-publishing-architecture.md
                 - name: Retail Channel Performance Power BI-tartalom
@@ -704,6 +712,10 @@
                   href: configure-ratings-reviews.md
                 - name: A termék minősítések szinkronizálása
                   href: sync-product-ratings.md
+                - name: A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése
+                  href: manual-publish-rating-reviews.md
+                - name: Értékelések és vélemények GYIK
+                  href: ratings-reviews-faq.md
             - name: Saját készlet kezelése
               items:
                 - name: Készlet
@@ -754,6 +766,8 @@
                   href: multiple-pickup-modes.md
                 - name: Vevői rendelés felvételének feldolgozása a pénztárban
                   href: process-order-pickup-POS.md
+                - name: Rendelés keresésének engedélyezése vendég pénztárak részére
+                  href: order-lookup-guest.md
             - name: Értékesítési rendelések
               items:
                 - name: Hívásközponti rendelések létrehozása
@@ -1146,6 +1160,8 @@
                       href: order-confirmation-module.md
                     - name: Ajándékutalvány modul
                       href: add-giftcard.md
+                    - name: Rendelés keresési modul
+                      href: order-lookup-module.md
                 - name: Üzletkereső modulok
                   items:
                     - name: Térképmodul
@@ -1174,6 +1190,8 @@
                       href: nav-menu-module.md
                     - name: Telephelyválasztó modul
                       href: site-selector.md
+                    - name: Ország/régió kiválasztó modul
+                      href: country-region-picker-module.md
                 - name: Keresési modulok
                   items:
                     - name: Keresési eredmények modul
@@ -1196,6 +1214,8 @@
               items:
                 - name: 'Eszköz, piac és földrajzi hely célcsoportja'
                   href: targeting-overview.md
+                - name: A földrajzi hely észlelés és az átirányítás beállítása
+                  href: geo-detection-redirection.md
             - name: Kísérletezés
               items:
                 - name: Kísérletezés a Dynamics 365 Commerce szolgáltatásban
@@ -1258,15 +1278,15 @@
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
             - name: A kiskereskedelmi üzletek felhasználó által megadott tanúsítványprofiljai
               href: localizations/certificate-profiles-for-retail-stores.md
-            - name: Regulatory Configuration Service
+            - name: Regulatory Configuration Service (RCS)
               items:
-                - name: Regulatory Configuration Service áttekintése
+                - name: Regulatory configuration service (RCS) áttekintése
                   href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Configuration Service – Globalizációs jellemzők
+                - name: (RCS) Regulatory configuration service (RCS) - Globalizációs jellemzők
                   href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/commerce/toc.json
-                - name: 'Hozzon létre ER-konfigurációkat a Regulatory Configuration Service szolgáltatásban, és töltse fel őket a globális adattárba'
+                - name: 'Hozzon létre ER-konfigurációkat a Regulatory configuration service (RCS) szolgáltatásban, és töltse fel őket a globális adattárba'
                   href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                - name: Regulatory Configuration Service – Lifecycle Services-tárhely elavulása
+                - name: Regulatory Configuration Service (RCS) – Lifecycle Services-tárhely elavulása
                   href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/commerce/toc.json
                 - name: ER-konfigurációk letöltése a Commerce programba
                   items:
@@ -1274,20 +1294,20 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurációk importálása RCS-ből
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
-                - name: Globális adattár (GR)
-                  items:
-                    - name: Konfigurációk importálása GR-ből
-                      href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
-                    - name: Az ER-konfigurációk frissített verzióinak importálása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
-                    - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
-                      href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurációk feltöltése a GR-be
-                      href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurációk megosztása a GR-ben
-                      href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
-                    - name: Konfigurációk megszüntetése az RCS Globális adattárban
-                      href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
+                    - name: Globális adattár (GR)
+                      items:
+                        - name: Konfigurációk importálása GR-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: Az ER-konfigurációk frissített verzióinak importálása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: Konfigurációk feltöltése a GR-be
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                        - name: Konfigurációk megosztása a GR-ben
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                        - name: Konfigurációk megszüntetése az RCS Globális adattárban
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Ausztria
               items:
                 - name: Pénzügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan
@@ -1888,6 +1908,30 @@
                       href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/commerce/toc.json
                     - name: Konfigurációk importálása (LBD)
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/commerce/toc.json
+                - name: Regulatory Configuration Service (RCS)
+                  items:
+                    - name: Regulatory configuration service (RCS) áttekintése
+                      href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/commerce/toc.json
+                    - name: ER-konfigurációk letöltése a Commerce programba
+                      items:
+                        - name: Konfigurációk letöltése az RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/commerce/toc.json
+                        - name: Konfigurációk importálása RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/commerce/toc.json
+                    - name: Globális adattár (GR)
+                      items:
+                        - name: Konfigurációk importálása GR-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: Az ER-konfigurációk frissített verzióinak importálása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/commerce/toc.json
+                        - name: Konfigurációk feltöltése a GR-be
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/commerce/toc.json
+                        - name: Konfigurációk megosztása a GR-ben
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/commerce/toc.json
+                        - name: Konfigurációk megszüntetése az RCS Globális adattárban
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/commerce/toc.json
             - name: Rövid útmutatók
               items:
                 - name: ER-formátum beállítása egyéni elektronikus dokumentum generálásához
@@ -1944,15 +1988,21 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/commerce/toc.json
                         - name: Formátumok módosítása és futtatása Dokumentumkezelési fájlok használatára
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/commerce/toc.json
+                    - name: Használja a VONALKÓD lehetőséget a vonalkódképek létrehozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: Konfigurálja a KERESÉSI adatforrásokat az ER-alkalmazásspecifikus paraméterek használatára
+                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: ADATGYŰJTÉS adatforrások használata ER-formátumokban
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Adatforrásokban történő hibakeresés
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Használja a VONALKÓD lehetőséget a vonalkódképek létrehozásához
                       href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Modell-hozzárendelések konfigurálása
                   items:
-                    - name: Országkörnyezet-függő ER-modell-leképezések konfigurálása
+                    - name: Országkörnyezet-függő ER-modell leképezések konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
-                    - name: ER-modell-leképezés kezelése külön ER-konfigurációkban
+                    - name: ER-modell leképezés kezelése külön ER-konfigurációkban
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
                     - name: Több származtatott leképezés kezelése egy modellgyökérnél
                       href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?toc=/dynamics365/commerce/toc.json
@@ -2014,6 +2064,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/commerce/toc.json
                     - name: Műveletfüggő célok konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/commerce/toc.json
+                    - name: Nyomtatáskezelési rekord-specifikus ER-célpontok konfigurálása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/commerce/toc.json
                 - name: Egy ER-formátumra mutató hivatkozás beállítása
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/commerce/toc.json
                 - name: Létrehozott jelentések automatikus ellenőrzése
@@ -2062,6 +2114,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/commerce/toc.json
                     - name: 10.0.19-es alkalmazásfrissítés
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/commerce/toc.json
+                    - name: 10.0.21-es alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/commerce/toc.jso
                 - name: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
                   items:
                     - name: 'Feliratkozás egy eseményre, hogy választ kérjen a feliratkozáskezelőtől'
@@ -2072,6 +2126,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/commerce/toc.json
                 - name: A USER INPUT PARAMETER típusú adatforrásértékek kezdeményezése forráskódból
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/commerce/toc.json
+                - name: 'A kód módosítása, hogy a felhasználók számára lehetővé tegye a névre szóló ER-célpontok konfigurálását és használatát'
+                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
         - name: Finance and Operations (Dynamics 365) mobilalkalmazás
           items:
             - name: Mobilalkalmazás kezdőoldala
@@ -2456,11 +2512,7 @@
               items:
                 - name: A Retail szoftverfejlesztői készlet (SDK) architektúrája
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
-                - name: A Retail szoftverfejlesztői készlet (SDK) közelgő változásai
-                  href: dev-itpro/UpcomingSDKChanges.md
-                - name: Fejlesztések és ALM-változások a 10.0.10 és a 10.0.13 verzió között
-                  href: dev-itpro/dev-changes-10-13.md
-                - name: Buildelési folyamat beállítása a független csomagolási SDK számára
+                - name: Buildelési folyamat beállítása a független becsomagolású SDK számára
                   href: dev-itpro/build-pipeline.md
                 - name: A Commerce és Finance and Operations buildrendszereinek egyesítése
                   href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
@@ -2586,8 +2638,6 @@
                   href: dev-itpro/retail-server-customer-consumer-api.md
                 - name: Retail Server-bővítmény API-jának létrehozása (Retail szoftverfejlesztői készlet (SDK) 10.0.11 és újabb)
                   href: dev-itpro/retail-server-icontroller-extension.md
-                - name: Új Retail Server-bővítmény API létrehozása (Retail szoftverfejlesztői készlet (SDK) 10.0.11 és korábbi verziók)
-                  href: dev-itpro/retail-server-extension.md
                 - name: A Retail Typescript és a C# proxyk
                   href: dev-itpro/typescript-proxy-retail-pos.md
                 - name: Retail Server API-k felhasználása külső alkalmazásokban
@@ -2704,6 +2754,8 @@
                   href: troubleshoot/pickup-store-missing.md
                 - name: A készlettel nem rendelkező cikkek kivehetők
                   href: troubleshoot/items-without-inventory-checked-out.md
+                - name: 'Ha a minősítések és az áttekintések megoldása nincs engedélyezve, akkor a minősítések finomítója megjelenik a keresési eredményekben és a kategóriaoldalakon.'
+                  href: troubleshoot/hide-ratings-refiner.md
             - name: SDK hibaelhárítás
               items:
                 - name: E-kereskedelmi fejlesztési környezet beállítása hibakeresés céljából az 1. szintű Retail Server virtuális gépéhez

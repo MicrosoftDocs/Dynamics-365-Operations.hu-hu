@@ -14,6 +14,8 @@
               items:
                 - name: Újdonságok és változások a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
+                - name: Platformfrissítések a 10.0.22-es verzióhoz (2021. november)
+                  href: get-started/whats-new-platform-updates-10-0-22.md
                 - name: Platformfrissítések a 10.0.21-es verzióhoz (2021. október)
                   href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: Platformfrissítés a 10.0.20-as verzióhoz (2021. augusztus)
@@ -590,24 +592,22 @@
                   href: dev-tools/update-development-tools.md
             - name: X++ programozási nyelv
               items:
-                - name: X++ és hibakeresési funkciók
-                  href: dev-tools/new-x-debugger-features.md
-                - name: A Visual Studio 2017 követelményei az X++ nyelvhez
-                  href: dev-tools/developer-tools-vs2017.md
-                - name: Hibakeresés az X++-kódban
-                  href: dev-tools/debug-xpp.md
-                - name: EventHandlerResult-osztályok a kérelmi vagy válaszesetekben
-                  href: dev-tools/event-handler-result-class.md
-                - name: Üzleti logika írása C# és X++ forráskóddal
-                  href: dev-tools/write-business-logic.md
-                - name: Az X ++ és az X ++ fordító változásai
-                  href: dev-tools/programming-language-support.md
-                - name: LINQ-szolgáltató a C#-nyelvhez
-                  href: dev-tools/linq-provider-c.md
-                - name: Ajánlott eljárási szabályok írása
-                  href: dev-tools/author-best-practice-rules.md
-                - name: Az Alkalmazásböngésző tulajdonságai
-                  href: dev-ref/application-explorer-aot-properties.md
+                - name: X++ nyelvi támogatás
+                  items:
+                    - name: A Visual Studio 2017 követelményei az X++ nyelvhez
+                      href: dev-tools/developer-tools-vs2017.md
+                    - name: Hibakeresés az X++-kódban
+                      href: dev-tools/debug-xpp.md
+                    - name: EventHandlerResult-osztályok a kérelmi vagy válaszesetekben
+                      href: dev-tools/event-handler-result-class.md
+                    - name: Üzleti logika írása C# és X++ forráskóddal
+                      href: dev-tools/write-business-logic.md
+                    - name: LINQ-szolgáltató a C#-nyelvhez
+                      href: dev-tools/linq-provider-c.md
+                    - name: Ajánlott eljárási szabályok írása
+                      href: dev-tools/author-best-practice-rules.md
+                    - name: Az Alkalmazásböngésző tulajdonságai
+                      href: dev-ref/application-explorer-aot-properties.md
                 - name: X++ nyelvi referencia
                   items:
                     - name: X++ nyelvi referencia áttekintése
@@ -652,7 +652,7 @@
                           href: dev-ref/xpp-interfaces.md
                         - name: Tárak
                           href: dev-ref/xpp-library-objects.md
-                        - name: Események
+                        - name: Események és delegáltak
                           href: dev-ref/xpp-events.md
                     - name: X++-adatkiválasztás és -manipuláció
                       items:
@@ -906,6 +906,8 @@
               href: dev-tools/date-effectivity.md
             - name: Fejlesztés független szoftverszállítók számára
               items:
+                - name: ISV fejlesztés kezdőlapja
+                  href: dev-tools/isv-dev-home-page.md
                 - name: X++-modulok csatolása a csomagokhoz az ISV Studio használatával
                   href: dev-tools/isv-studio-solutions.md
                 - name: Független szoftverszállítók licencelése
@@ -1018,6 +1020,8 @@
               href: lifecycle-services/performancetroubleshooting.md
             - name: Lekérdezési útmutató
               href: lifecycle-services/querycookbook.md
+            - name: Lejárt előfizetések és adatok törlése
+              href: lifecycle-services/expired-subscription-data-deletion.md
             - name: Microsoft Dynamics 365 Translation Service
               items:
                 - name: Dynamics 365 Translation Service áttekintése
@@ -1048,6 +1052,8 @@
                       href: data-entities/dual-write/connection-setup.md
                     - name: Szempontok a kezdeti szinkronizáláshoz
                       href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: Az élő szinkronizálás korlátai
+                      href: data-entities/dual-write/sync-limits.md
                     - name: Kettős írás beállítása a Lifecycle Services szolgáltatásból
                       href: data-entities/dual-write/lcs-setup.md
                     - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
