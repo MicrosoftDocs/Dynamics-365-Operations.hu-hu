@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5b0f04f27c95b2498ea2b5ad66c3df19bc8df0d9
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393523"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441165"
 ---
 # <a name="provision-human-resources"></a>Human Resources kiépítése
 
@@ -43,6 +43,11 @@ Mielőtt elkezdené egy új termelési környezet biztosítását, a következő
 Az első üzenetkészlet vagy termelési környezet létesítása előtt szükség lehet egy Emberi erőforrások próbakörnyezet építésére, hogy érvényes legyen az [Emberi erőforrások próbakörnyezet](https://go.microsoft.com/fwlink/p/?LinkId=2115962) Emberi erőforrások szolgáltatás. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók a Human Resources környezet rendszergazdai felületén keresztül. 
 
 A próbaverzió környezetet nem úgy tervezték, hogy termelési környezetekben használják őket. Csak a 60 napos próbaidőszakra korlátozódnak. A próbaidőszak lejártakor a környezet és az abban lévő összes adat törlődik, és nem állítható helyre. A környezet nem alakítható tesztkörnyezetté és éles környezetté. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
+
+Az Emberi erőforrások próbakörnyezet létrehozásakor a bérlőn egy Power Apps próbakörnyezet is létrejön, és kapcsolódik a Emberi erőforrások környezethez. A "TestDrive" nevű Power Apps környezetben ugyanaz a próbaidőszak, mint az Emberi erőforrások környezetben.
+
+> [!NOTE]
+> Az Emberi erőforrások próbakörnyezet kiépítése sikertelen lesz, ha a hitelesített felhasználónak nincs engedélye a Power Apps próbakörnyezetek létrehozására. A felhasználónak szerepelnie kell abban a felhasználói csoportban, amely próbakörnyezetet hozhat létre a Power Platform felügyeleti központban. A további tudnivalókat lásd: [Annak szabályozása, hogy ki hozhat létre és kezelhet környezeteket a Power Platform felügyeleti központban](//power-platform/admin/control-environment-creation).
 
 ## <a name="plan-human-resources-environments"></a>A Human Resources-környezetek megtervezése
 
@@ -69,7 +74,7 @@ Az LCS-nek a Human Resources kezelésére való használatához előbb egy LCS-p
 1. Jelentkezzen be az [LCS](https://lcs.dynamics.com/Logon/Index)-be azzal a fiókkal, amelyet a Human Resources szolgáltatásra való feliratkozáshoz használt.
 
    > [!NOTE]
-   > A sikeres üzembe helyezés érdekében az Emberi erőforrások környezet építéséhez használt fiókot hozzá kell rendelni vagy a **Rendszergazda** vagy a **Rendszer testre szabó** szerepkörhöz, amely az Emberi erőforrások Power Apps környezethez hozzá van rendelve. A Power Platformon való biztonsági szerepkörök felhasználókhoz való hozzárendelésével kapcsolatos további információért lásd: [Felhasználói biztonság konfigurálása az erőforrásokhoz](/power-platform/admin/database-security).
+   > A sikeres üzembe helyezés érdekében az Emberi erőforrások környezet építéséhez használt fiókot hozzá kell rendelni vagy a **Rendszergazda** vagy a **Rendszer testre szabó** szerepkörhöz, amely az Emberi erőforrások Power Apps környezethez hozzá van rendelve. A biztonsági szerepköröknek a Power Platform rendszerben a felhasználókhoz való hozzárendeléséről további információkat a következő témakörben talál: [Felhasználói biztonság konfigurálása az erőforrásokhoz](/power-platform/admin/database-security).
 
 2. Válassza ki a pluszjelet (**+**) projekt létrehozásához.
 

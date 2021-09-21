@@ -2,7 +2,7 @@
 title: Tervezési változáskezelés áttekintése
 description: Ez a témakör áttekintést nyújt a tervezési változáskezeléssel kapcsolatban, amely segítséget nyújt a termék verziószámozásának tervezéséhez és kezeléséhez, valamint a termékéletciklusok és mérnöki változásainak kezeléséhez.
 author: t-benebo
-ms.date: 11/11/2020
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 8f2d577d9e48ced9d4c516a66e4f53671417875cbfb51bd6bdc2cb0938d83c01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: Release 10.0.21
+ms.openlocfilehash: b4fe2d62bc8084cf8c0d10b7bcb94f08cc618900
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714956"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467398"
 ---
 # <a name="engineering-change-management-overview"></a>Tervezési változáskezelés áttekintése
 
@@ -43,9 +43,11 @@ A tervezési változáskezelés segítséget nyújt a termék verziószámozás�
 
 Az előző videó ([Módosításkezelési képességek a Dynamics 365 Supply Chain Management rendszerben](https://youtu.be/N313FqvRuBc)) szerepel a [Finance and Operations lejátszási listában](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) a YouTube-on.
 
-## <a name="turn-on-the-engineering-change-management-and-version-dimension-features-for-your-system"></a>Kapcsolja be a tervezési változáskezelést és a verziódimenziókat a rendszerén
+## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>A rendszer tervezési változáskezelési funkcióinak bekapcsolása
 
-A tervezési változáskezelés használata előtt engedélyeznie kell a *Tervezési változáskezelés* szolgáltatást és annak konfigurációs kulcsát. Ha a tranzakciókban nyomon szeretné követni a termékek verziódimenzióját is (opcionális), akkor engedélyeznie kell a *Termékverzió dimenzió* szolgáltatást és annak konfigurációs kulcsát is.
+A tervezési változáskezelés használata előtt engedélyeznie kell a *Tervezési változáskezelés* szolgáltatást és annak konfigurációs kulcsát. Ha a tranzakciókban nyomon szeretné követni a termékek verziódimenzióját is (opcionális), akkor engedélyeznie kell a *Termékverzió dimenzió* szolgáltatást és annak konfigurációs kulcsát is. Az előfeltételek szükség szerint való beállítása után bekapcsolhatja a tervezési változáskezelés további választható funkcióit.
+
+### <a name="turn-on-the-basic-engineering-change-management-features"></a>A rendszer alapszintű tervezési változáskezelési funkcióinak bekapcsolása
 
 Először kapcsolja be a funkciókat a következő lépések végrehajtásával.
 
@@ -53,6 +55,8 @@ Először kapcsolja be a funkciókat a következő lépések végrehajtásával.
 1. Keressen frissítéseket.
 1. Kapcsolja be a *Mérnöki módosításkezelés* szolgáltatást.
 1. Ha használni szeretné, kapcsolja be a *Termékdimenzió verziója* nevű szolgáltatást is.
+
+### <a name="turn-on-the-required-configuration-keys"></a>A szükséges konfigurációs kulcsok bekapcsolás
 
 Ezután kapcsolja be a konfigurációs kulcsokat a következő lépések végrehajtásával.
 
@@ -70,5 +74,18 @@ Ezután kapcsolja be a konfigurációs kulcsokat a következő lépések végreh
 
 > [!IMPORTANT]
 > 2022 áprilisától kezdve a **Mérnöki változások kezelése** és a **Termékdimenzió – Verzió** licenckulcsok alapértelmezés szerint engedélyezve lesznek minden új telepítés esetén, de szükség esetén továbbra is letilthatja őket.
+
+### <a name="turn-on-additional-engineering-change-management-features"></a>A rendszer további tervezési változáskezelési funkcióinak bekapcsolása
+
+Miután bekapcsolta az alapvető tervezési változáskezelési funkciókat, és engedélyezi a konfigurációs kulcsokat, a funkciókezeléshez további és választható tervezési változáskezelési funkciók is hozzáadódnak. Ezek a funkciók a **Tervezési változáskezelés** modulban vannak felsorolva. A következő táblázat az egyes választható funkciókat írja le, és további tájékoztatásért tartalmaz hivatkozásokat.
+
+| Funkcióneve a funkciókezelésben | Leírás |
+|---|---|
+| Változáskezelés engedélyezése meglévő termékek esetében | <p>Ezzel a funkcióval a meglévő termékeket tervezési termékekké konvertálhatja, hogy a tervezési változáskezelés segítségével el tudja kezdeni a termékek kezelését.</p><p>További információk: [Változáskezelés engedélyezése meglévő termékek esetében](change-management-existing-products.md).</p> |
+| Tervezési értesítések a termelés számára | <p>Ha egy termék műszaki tervezésben módosul, akkor fontos lehet a termelést értesíteni a változásokról. Ily módon a termelési dolgozók meg tudnak tenni megfelelő lépéseket, például az összetevő-helyettesítést, az anyagjegyzék-cserét vagy az útvonalcserét. Ez a funkció lehetővé teszi a termelés értesítését az előállított termékek változásairól.</p><p>További tájékoztatást [A mérnöki termékek módosításának kezelése](engineering-change-management.md) részben talál.</p> |
+| Továbbfejlesztett attribútumöröklődés a tervezési változáskezeléshez | <p>Ez a funkció egyszerűbbé teszi a késztermékek és közbenső cikkek attribútumainak kezelését. Ha ez a funkció be van kapcsolva, akkor egyszerűbben azonosítani lehet az adott cikkhez tartozó összes attribútumot, és ki lehet választani azokat az attribútumokat, amelyek az adott cikkből a szülő cikkbe kell származtatni. Ez a funkció például akkor hasznos, ha egy késztermék egyik összetevője törékeny, mérgező vagy gyúlékony, mivel így könnyen azonosítani lehet a törékeny, méregző vagy gyúlékony attribútumot, és tovább lehet azt vinni a késztermékbe.</p><p>További információ: [Mérnöki attribútumok és mérnöki attribútumok keresése](engineering-attributes-and-search.md).</p> |
+| Termékkészültségi ellenőrzések | <p>Ezzel a funkcióval normál (nem tervezési) termékekhez készenléti ellenőrzéseket is beállíthat. A termék készenléti ellenőrzése révén gondoskodhat arról, hogy minden termék teljesen meg legyen határozva, és minden szükséges házirend konfigurálva legyenl, mielőtt a terméket elérhetővé tette és tranzakciókban felhasználta. Ha letiltja ezt a funkciót egy ideig történő alkalmazás után, a normál termékekre vonatkozó összes készenlét-ellenőrzés törlődik.</p><p>További információ: [Termékkészenlét](product-readiness.md).</p> |
+| Receptúrák és összetevőik módosításainak kezelése | <p>Ez a funkció lehetővé teszi a receptúrás összetevők, társtermékek és melléktermékek változásainak nyomon követését.</p><p>További tudnivalók: [Receptúrák és receptúra-összetevők változásainak kezelése](manage-formula-changes.md).</p> |
+| Változatlétrehozás tervezési termékekhez | <p>Ezzel a funkcióval a rendelkezésre álló dimenzióértékek alapján változatokat lehet létrehozni a tervezési termékekhez.</p><p>További tájékoztatás: [Változatok létrehozása tervezési termékekhez](engineering-variants.md).</p> |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

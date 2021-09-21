@@ -1,5 +1,5 @@
 ---
-title: Készlet láthatóságának konfigurálása
+title: Készletláthatóság konfigurálása
 description: Ez a témakör a Készletláthatóság konfigurálását ismerteti.
 author: yufeihuang
 ms.date: 08/02/2021
@@ -11,19 +11,19 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 92e42b22d424ab80303d771f760cfcf0599b9f4c
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345033"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474676"
 ---
-# <a name="inventory-visibility-configuration"></a>Készlet láthatóságának konfigurálása
+# <a name="configure-inventory-visibility"></a>Készletláthatóság konfigurálása
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-Ez a témakör a Készletláthatóság konfigurálását ismerteti.
+Ez a témakör a Készlet láthatósága alkalmazás használatával a Készlet láthatósága bővítmény konfigurálását ismerteti a Power Apps rendszerben.
 
 ## <a name="introduction"></a><a name="introduction"></a>Bevezetés
 
@@ -35,27 +35,58 @@ Mielőtt elkezdene dolgozni a Készletláthatósággal, a következő konfigurá
 - [Foglalási konfiguráció (opcionális)](#reservation-configuration)
 - [Alapértelmezett konfigurációs minta](#default-configuration-sample)
 
-> [!NOTE]
-> A Készletláthatósági konfigurációkat a [Microsoft Power Apps](./inventory-visibility-power-platform.md#configuration)-ban tekintheti meg és szerkesztheti. A konfiguráció befejezése után válassza a **Konfiguráció frissítése** lehetőséget az alkalmazásban.
+## <a name="prerequisites"></a>Előfeltételek
 
-## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Adatforrás konfiguráció
+Mielőtt elkezdené, telepítse és állítsa be a Készletláthatóság bővítményt a [Készletláthatóság telepítés és beállítása](inventory-visibility-setup.md) című fejezetben leírtak szerint.
 
-Az adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen például a `fno` (ami a "Dynamics 365 Finance and Operations alkalmazások" rövidítése) és a `pos` (ami a "point of sale" rövidítése).
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>A Készlet láthatósága funkció engedélyezése a Power Apps szolgáltatáskezelésben
 
-Az adatforrás konfigurációja a következő részeket tartalmazza:
+A Készlet láthatósága bővítmény számos új funkcióval bővíti a Power Apps telepítését. Alapértelmezés szerint ezek a funkciók ki vannak kapcsolva. Használatukhoz nyissa meg a **Konfiguráció** oldalt a Power Apps oldalon, majd a **Funkicókezelés** lapon kapcsolja be a következő funkciókat.
 
-- Dimenzió (dimenzió leképezés)
-- Fizikai mérőszám
-- Kiszámított mérőszám
+- *OnHandReservation*
+- *OnHandMostSpecificBackgroundService*
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>A szolgáltatás végpontjának keresése
+
+Ha nem ismeri a megfelelő Készletláthatóság szolgáltatás végpontját, nyissa meg a **Konfiguráció** oldalt a Power Apps oldalon, majd válassza a jobb felső sarokban a **Szolgáltatás végpontjának megjelenítése** lehetőséget. Az oldal a megfelelő szolgáltatás végpontját fogja megjeleníteni.
+
+## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>A Készlet láthatósága alkalmazás konfigurációs lapja
+
+A Power Apps alkalmazásban a [Készlet láthatósága alkalmazás](inventory-visibility-power-platform.md) **Konfiguráció** oldala segít a kézi konfiguráció és a lágy foglalási konfiguráció beállításában. A bővítmény telepítése után az alapértelmezett konfiguráció tartalmazza a Microsoft Dynamics 365 Supply Chain Management (a `fno` adatforrás) értékét. Az alapértelmezett beállítást felülvizsgálhatja. Ezenfelül, az Ön üzleti követelményei és a külső rendszer készletkönyvelési követelményei alapján módosíthatja a konfigurációt, hogy egységesítse a készletváltozások könyvelésének, rendszerezésének és lekérdezésének módját a több rendszerben. A témakör további részei a **Konfiguráció** lap egyes részeinek használatát ismertetik.
+
+A konfiguráció befejezése után mindenképpen válassza ki a **Konfiguráció frissítése** lehetőséget az alkalmazásban.
+
+## <a name="data-source-configuration"></a>Adatforrás konfiguráció
+
+Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen adatforrásnév például a `fno` (ami a "Dynamics 365 Finance and Operations alkalmazások" rövidítése) és a `pos` (ami a "point of sale" rövidítése). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
 
 > [!NOTE]
 > A `fno` adatforrás a Dynamics 365 Supply Chain Management számára van fenntartva.
 
-### <a name="dimension-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimenzió (dimenzió leképezés)
+Adatforrás hozzáadásához kövesse az alábbi lépéseket.
 
-A dimenzió-konfiguráció célja a több rendszerre kiterjedő integráció szabványosítása az események és lekérdezések feladásához a dimenziók kombinációi alapján.
+1. Jelentkezzen be a Power Apps környezetébe, és nyissa meg a **Készletláthatóság** menüpontot.
+1. Nyissa meg a **Konfiguráció** oldalt.
+1. Az **Adatforrás** lapon válassza az **Új adatforrás** lehetőséget egy adatforrás hozzáadásához.
 
-A készlet láthatósága a következő általános alapméreteket támogatja.
+> [!NOTE]
+> Adatforrás hozzáadásakor győződjön meg róla, hogy az adatforrás nevét, a fizikai mérőszámokat és a dimenzió-hozzárendeléseket érvényesítette, mielőtt frissítené a Készletláthatósági szolgáltatás konfigurációját. Ezeket a beállításokat nem tudja módosítani, miután kiválasztotta a **Konfiguráció frissítése** lehetőséget.
+
+Az adatforrás konfigurációja a következő részeket tartalmazza:
+
+- Dimenziók (dimenzió leképezés)
+- Fizikai mérőszámok
+- Számított mérőszámok
+
+### <a name="dimensions-dimension-mapping"></a><a name="data-source-configuration-dimension"></a>Dimenziók (dimenzió leképezés)
+
+A dimenzió-konfiguráció célja a több rendszerre kiterjedő integráció szabványosítása az események és lekérdezések feladásához a dimenziók kombinációi alapján. A Készletláthatósága az adatforrás dimenzióiból leképezhető alapdimenziók listáját biztosítja. Harminchárom dimenzió áll rendelkezésre a leképezéshez.
+
+- Alapértelmezés szerint, ha a Supply Chain Managementet használja az egyik adatforrásként, 13 dimenzió kerül leképezésre a Supply Chain Management szabványos dimenzióihoz. Tizenkét másik dimenzió (`inventDimension1` - `inventDimension12`) a Supply Chain Managementt egyedi dimenzióihoz van rendelve. A fennmaradó nyolc dimenzió olyan kiterjesztett dimenziók, amelyeket külső adatforrásokhoz rendelhet.
+- Ha nem a Supply Chain Managementet használja az egyik adatforrásként, akkor szabadon leképezheti a dimenziókat. A következő táblázat a rendelkezésre álló dimenziók teljes listáját tartalmazza.
+
+> [!NOTE]
+> Ha a dimenzió nem szerepel az alapértelmezett dimenziólistában, és külső adatforrást használ, javasoljuk, hogy a `ExtendedDimension1` és a `ExtendedDimension8` segítségével végezze el a leképezést.
 
 | Dimenzió típusa | Alapdimenzió |
 |---|---|
@@ -73,7 +104,8 @@ A készlet láthatósága a következő általános alapméreteket támogatja.
 | Raktárspecifikus | `LicensePlateId` |
 | Egyebek | `VersionId` |
 | Készlet (egyéni) | `InventDimension1` - `InventDimension12` |
-| Mellék | `ExtendedDimension1` - `ExtendedDimension8` |
+| Bővítmény | `ExtendedDimension1` - `ExtendedDimension8` |
+| System | `Empty` |
 
 > [!NOTE]
 > Az előző táblázatban felsorolt mérettípusok csak tájékoztató jellegűek. Ezeket nem kell a Készletláthatóságban definiálnia.
@@ -92,11 +124,24 @@ A külső rendszerek a RESTful API-kon keresztül érhetik el a Készletláthat�
 
 A dimenzió-leképezés konfigurálásával a külső dimenziókat közvetlenül a Készletláthatósághoz küldheti. A Készletláthatóság ezután automatikusan átalakítja a külső méreteket alapméretekké.
 
+A dimenzióleképezések hozzáadásához kövesse az alábbi lépéseket.
+
+1. Jelentkezzen be a Power Apps környezetébe, és nyissa meg a **Készletláthatóság** menüpontot.
+1. Nyissa meg a **Konfiguráció** oldalt.
+1. Az **Adatforrás** lap **Dimenzióleképezések** szakaszában válassza a **Hozzáadás** lehetőséget a dimenzióleképezések hozzáadásához.
+    ![Dimenzióleképezések hozzáadása](media/inventory-visibility-dimension-mapping.png "Dimenzió leképezések hozzáadása")
+
+1. A **Dimenzió neve** mezőben adja meg a forrásdimenziót.
+1. A **Bázisdimenzióhoz** mezőben válassza ki a Készletláthatóságában azt a dimenziót, amelyet le kíván képezni.
+1. Válassza a **Mentés** lehetőséget.
+
+Ha például az adatforrás tartalmaz egy termékszín dimenziót, akkor azt leképezheti a `ColorId` alapdimenzióra, hogy a `exterchannel` adatforrásban hozzáadhasson egy `ProductColor` egyéni dimenziót. Ezt követően a `ColorId` alapdimenzióra képezzük le.
+
 ### <a name="physical-measures"></a>Fizikai mérőszámok
 
-A fizikai mérőszámok módosítják a mennyiséget és tükrözik a készletállapotot. Az Ön igényei alapján meghatározhatja saját fizikai mérőszámait.
+Amikor egy adatforrás készletváltozást könyvel a Készletláthatóságba, a változást *fizikai mérőszámok* segítségével könyveli. A fizikai mérőszámok módosítják a mennyiséget és tükrözik a készletállapotot. Az Ön igényei alapján meghatározhatja saját fizikai mérőszámait. A lekérdezések a fizikai mérőszámokon alapulhatnak.
 
-A Készletláthatósága a Supply Chain Managementhez (a `fno` adatforráshoz) kapcsolódó alapértelmezett fizikai mérőszámok listáját biztosítja. A következő táblázat példát mutat a fizikai mérőszámokra.
+A Készletláthatósága a Supply Chain Managementhez (a `fno` adatforráshoz) kapcsolódó alapértelmezett fizikai mérőszámok listáját biztosítja. Ezek az alapértelmezett fizikai mérések a Supply Chain Management **Kézi lista** oldalán **(Készletgazdálkodás \> Készletlekérdezések és jelentések \> Készletlista**) található készletmozgás-állapotokból származnak. A következő táblázat példát mutat a fizikai mérőszámokra.
 
 | Fizikai mérőszám neve | Leírás |
 |---|---|
@@ -117,11 +162,33 @@ A Készletláthatósága a Supply Chain Managementhez (a `fno` adatforráshoz) k
 | `ReservOrdered` | Rendelt, lefoglalt |
 | `ReservPhysical` | Ténylegesen fenntartott |
 
-### <a name="calculated-measures"></a><a name="data-source-configuration-calculated-measure"></a>Számított mérőszámok
+Ha az adatforrás a Supply Chain Management, nem kell újra létrehoznia az alapértelmezett fizikai mérőszámokat. Külső adatforrásokhoz azonban az alábbi lépésekkel új fizikai mérőszámokat hozhat létre.
 
-A kiszámított mérőszámok olyan testreszabott számítási képletet biztosítanak, amely fizikai mérőszámok kombinációjából áll. Ez a funkció lehetővé teszi, hogy meghatározzon egy sor fizikai mérőszámot, amelyeket hozzáad, és/vagy egy sor fizikai mérőszámot, amelyeket kivon, hogy kialakítsa a testreszabott mérést.
+1. Jelentkezzen be a Power Apps környezetébe, és nyissa meg a **Készletláthatóság** menüpontot.
+1. Nyissa meg a **Konfiguráció** oldalt.
+1. Az **Adatforrás** lap **Fizikai mérések** szakaszában válassza a **Hozzáadás** lehetőséget, adja meg a forrásmérőszám nevét, majd mentse a módosításokat.
 
-Például a következő lekérdezés eredménye.
+### <a name="calculated-measures"></a>Számított mérőszámok
+
+A Készletláthatóság funkcióval a fizikai készletmérések és az *egyéni számított mérések* lekérdezésére egyaránt használható. A kiszámított mérőszámok olyan testreszabott számítási képletet biztosítanak, amely fizikai mérőszámok kombinációjából áll. Ez a funkció lehetővé teszi, hogy meghatározzon egy sor fizikai mérőszámot, amelyeket hozzáad, és/vagy egy sor fizikai mérőszámot, amelyeket kivon, hogy kialakítsa a testreszabott mérést.
+
+A konfiguráció lehetővé teszi, hogy meghatározzon egy sor módosítót, amelyeket összead vagy kivon, hogy megkapja a teljes aggregált kimeneti mennyiséget.
+
+Egyéni számított mérőszám beállításához kövesse az alábbi lépéseket.
+
+1. Jelentkezzen be a Power Apps környezetébe, és nyissa meg a **Készletláthatóság** menüpontot.
+1. Nyissa meg a **Konfiguráció** oldalt.
+1. A **Számított intézkedés** lapon válassza az **Új számítási intézkedés** lehetőséget egy számított mérőszám hozzáadásához. Ezután állítsa be a mezőket a következő táblázatban leírtak szerint.
+
+    | Mező | Érték |
+    |---|---|
+    | Új számított mérőszám neve | Adja meg a számított mérőszám nevét. |
+    | Adatforrás | A lekérdező rendszer egy adatforrás. |
+    | Módosító adatforrás | Adja meg a módosító adatforrását. |
+    | Módosító | Adja meg a módosító nevét. |
+    | Módosító típusa | Válassza ki a módosító típusát *(összeadás* vagy *kivonás*). |
+
+Például a következő lehet a lekérdezés eredménye.
 
 ```json
 [
@@ -202,7 +269,7 @@ Ha ezt a számítási képletet használja, az új lekérdezés eredménye tarta
 ]
 ```
 
-A `MyCustomAvailableforReservation` kimeneti értéke az egyéni mérések számítási beállítása alapján 100 + 50 + 80 + 90 + 30 - 10 - 20 - 60 - 40 = 220.
+A `MyCustomAvailableforReservation` kimeneti értéke az egyéni mérések számítási beállítása alapján 100 + 50 – 10 + 80 – 20 + 90 + 30 – 60 – 40 = 220.
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Partíciókonfiguráció
 
@@ -230,11 +297,21 @@ A Készletláthatóság rugalmasságot biztosít azáltal, hogy lehetővé teszi
 | Dimenzió | A lekérdezés eredményének aggregált bázisdimenziója. |
 | Hierarchia | A hierarchia a lekérdezhető támogatott dimenziókombinációk meghatározására szolgál. Például létrehoz egy olyan dimenziókészletet, amelynek hierarchiasorrendje a `(ColorId, SizeId, StyleId)`. Ebben az esetben a rendszer négy dimenziókombinációra vonatkozó lekérdezéseket támogat. Az első kombináció üres, a második a `(ColorId)`, a harmadik a `(ColorId, SizeId)`, a negyedik pedig a `(ColorId, SizeId, StyleId)`. A többi kombináció nem támogatott. További információért lásd a következő példát. |
 
+A termékhierarchia-index beállításához kövesse az alábbi lépéseket.
+
+1. Jelentkezzen be a Power Apps környezetébe, és nyissa meg a **Készletláthatóság** menüpontot.
+1. Nyissa meg a **Konfiguráció** oldalt.
+1. A **Termékhierarchia-index** lapon a **Dimenzió-leképezések** szakaszban válassza a **Hozzáadás** lehetőséget a dimenzió-leképezések hozzáadásához.
+1. Alapértelmezés szerint az indexek listáját adja meg. Egy meglévő index módosításához válassza a **Szerkesztés** vagy a **Hozzáadás** lehetőséget az adott indexre vonatkozó szakaszban. Új indexkészlet létrehozásához válassza az **Új indexkészlet** lehetőséget. Minden indexkészlet minden sora esetében a **Dimenzió** mezőben válasszon az alapdimenziók listájából. A következő mezők értékei automatikusan generálódnak:
+
+    - **Készletszám** - Az azonos csoportba (indexbe) tartozó dimenziók csoportosítva lesznek, és ugyanaz a készletszám lesz hozzájuk rendelve.
+    - **Hierarchia** - A hierarchia a dimenziócsoportban (index) lekérdezhető támogatott dimenziókombinációk meghatározására szolgál. Ha például olyan dimenziócsoportot állít be, amelynek hierarchiasorrendje a *Stílus*, a *Szín* és a *Méret*, a rendszer három lekérdezési csoport eredményét támogatja. Az első csoport csak a stílus. A második csoport a stílus és a szín kombinációja. A harmadik csoport pedig a stílus, a szín és a méret kombinációja. A többi kombináció nem támogatott.
+
 ### <a name="example"></a>Példa
 
 Ez a szakasz egy példán keresztül mutatja be a hierarchia működését.
 
-A következő tételek vannak a készletben.
+A következő táblázat a példához rendelkezésre álló készletek listáját tartalmazza.
 
 | Tétel | ColorId | SizeId | StyleId | Mennyiség |
 |---|---|---|---|---|
@@ -246,7 +323,7 @@ A következő tételek vannak a készletben.
 | Póló | Piros | Kicsi | Szabályos | 6 |
 | Póló | Piros | Nagy | Szabályos | 7 |
 
-Itt az index.
+A következő táblázat az indexhierarchia felépítését mutatja be.
 
 | Készletszám | Dimenzió | Hierarchia |
 |---|---|---|
@@ -284,6 +361,8 @@ Az index segítségével a következő módon kérdezheti le a készletet:
 
 > [!NOTE]
 > A partíciókonfigurációban definiált alapméreteket nem szabad definiálni az indexkonfigurációkban.
+> 
+> Ha csak olyan készletet kell lekérdeznie, amelyet az összes dimenziókombináció összesít, egyetlen indexet is be lehet állítani, amely az `Empty` alapdimenziót tartalmazza.
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Foglalási konfiguráció (opcionális)
 
@@ -296,22 +375,37 @@ A foglalási konfigurációra akkor van szükség, ha a lágy foglalási funkci�
 
 ### <a name="soft-reservation-mapping"></a>Lágy foglalási leképezés
 
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+
 Foglaláskor érdemes tudni, hogy a készleten lévő készletek jelenleg rendelkezésre állnak-e foglalásra. Az érvényesítés egy számított mértékhez kapcsolódik, amely fizikai mértékek kombinációjának számítási képletét jelenti.
 
-Például egy foglalási intézkedés a `SoftReservOrdered` fizikai mérőszámon alapul a `iv` (Készletláthatóság) adatforrásból. Ebben az esetben a `iv` adatforrás `AvailableToReserve` számított mérőszámát az alábbiakban bemutatott módon állíthatja be.
+A fizikai mérték és a számított mérték közötti leképezés beállításával lehetővé teszi a Készletláthatóság szolgáltatás számára, hogy a fizikai mérték alapján automatikusan érvényesítse a foglalások rendelkezésre állását.
 
-| Számítás típusa | Adatforrás | Fizikai mérőszám |
-|---|---|---|
-| Hozzáadás | `fno` | `AvailPhysical` |
-| Hozzáadás | `pos` | `Inbound` |
-| Kivonás | `pos` | `Outbound` |
-| Kivonás | `iv` | `SoftReservOrdered` |
+Mielőtt beállítaná ezt a hozzárendelést, a fizikai mérőszámokat, a számított mérőszámokat és azok adatforrásait a Power Apps oldalon a **Konfiguráció** lap **Adatforrás** és **Számított intézkedés** lapjain kell meghatározni (a témakör korábbi részében leírtak szerint).
 
-Ezután állítson be egy lágy foglalási leképezést, hogy a `SoftReservOrdered` foglalási mértéket leképezze a `AvailableToReserve` számított mértékre.
+A lágy foglalási leképezés definiálásához kövesse az alábbi lépéseket.
 
-| Fizikai mérőszám adatforrás | Fizikai mérőszám | Foglalási adatforráshoz rendelkezésre álló | Elérhető foglalásra számított mérőszám |
-|---|---|---|---|
-| `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+1. Határozza meg azt a fizikai mértéket, amely a lágy foglalási mértékként szolgál (például `SoftReservOrdered`).
+1. A **Konfiguráció** lap **Számított intézkedés** lapján határozza meg a *Foglalásra rendelkezésre álló* (AFR) számított mérőszámot, amely tartalmazza a fizikai mérőszámhoz leképezni kívánt AFR-számítási képletet. Például beállíthatja a `AvailableToReserve` (foglalható) címet úgy, hogy az a korábban meghatározott `SoftReservOrdered` fizikai mérőszámhoz legyen hozzárendelve. Így megtudhatja, hogy a `SoftReservOrdered` készletállapotú mennyiségek közül melyek lesznek foglalhatók. A következő táblázat az AFR számítási képletét mutatja.
+
+    | Számítás típusa | Adatforrás | Fizikai mérőszám |
+    |---|---|---|
+    | Hozzáadás | `fno` | `AvailPhysical` |
+    | Hozzáadás | `pos` | `Inbound` |
+    | Kivonás | `pos` | `Outbound` |
+    | Kivonás | `iv` | `SoftReservOrdered` |
+
+    Javasoljuk, hogy úgy állítsa be a számított mérőszámot, hogy az tartalmazza a foglalási mérőszám alapjául szolgáló fizikai mérőszámot. Ilyen módon a kiszámított mérési mennyiséget befolyásolja a foglalási mérés mennyisége. Ebben a példában tehát az `iv` adatforrás számított `AvailableToReserve` mérőszámának összetevőként tartalmaznia kell a `SoftReservOrdered` fizikai mérőszámot az `iv` adatforrásból.
+
+1. Nyissa meg a **Konfiguráció** oldalt.
+1. A **Lágy foglalási leképezés** lapon állítsa be a fizikai mérőszám és a számított mérőszám közötti leképezést. Az előző példában a következő beállításokat használhatja a `AvailableToReserve` leképezéséhez a korábban meghatározott `SoftReservOrdered` fizikai mérőszámhoz.
+
+    | Fizikai mérőszám adatforrás | Fizikai mérőszám | Foglalási adatforráshoz rendelkezésre álló | Elérhető foglalásra számított mérőszám |
+    |---|---|---|---|
+    | `iv` | `SoftReservOrdered` | `iv` | `AvailableToReserve` |
+
+    > [!NOTE]
+    > Ha a **Lágy foglalási leképezés** lapot nem tudja szerkeszteni, előfordulhat, hogy be kell kapcsolnia az *OnHandReservation* funkciót a **Funkciókezelés** lapon.
 
 Most, amikor a `SoftReservOrdered` rendszerben foglalást végez, a Készletláthatóság automatikusan megtalálja a `AvailableToReserve`-et és a hozzá tartozó számítási képletet a foglalás érvényesítéséhez.
 
@@ -348,11 +442,16 @@ Ebben az esetben a következő számítás alkalmazandó:
 
 Ezért, ha a `iv.SoftReservOrdered` oldalon próbál foglalni, és a mennyiség kisebb vagy egyenlő, mint `AvailableToReserve` (10), akkor a foglalást megteheti.
 
+> [!NOTE]
+> A foglalási API hívása esetén a foglalások érvényességének ellenőrzése a logikai `ifCheckAvailForReserv` paraméter megadásával szabályozható a kérelemtörzsben. A `True` érték azt jelenti, hogy ellenőrzés szükséges, míg a `False` érték azt, hogy az ellenőrzés nem kötelező. Az alapértelmezett érték a `True`.
+
 ### <a name="soft-reservation-hierarchy"></a>Lágy foglalási hierarchia
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 A foglalási hierarchia a foglalások során megadandó dimenziók sorrendjét írja le. Ugyanúgy működik, mint a termékindex-hierarchia a kézben lévő lekérdezéseknél.
 
-A foglalási hierarchia független a termékindex-hierarchiától. Ez a függetlenség lehetővé teszi a kategóriamenedzsment megvalósítását, ahol a felhasználók részletekre bonthatják a dimenziókat, hogy pontosabb foglalásokhoz meghatározzák a követelményeket.
+A foglalási hierarchia független a termékindex-hierarchiától. Ez a függetlenség lehetővé teszi a kategóriamenedzsment megvalósítását, ahol a felhasználók részletekre bonthatják a dimenziókat, hogy pontosabb foglalásokhoz meghatározzák a követelményeket. A lágy foglalás hierarchiájának tartalmaznia kell a `SiteId` és a `LocationId` elemet összetevőként, mivel ezek partíciókonfigurációt alkotnak. A foglalás során meg kell adnia egy partíciót a termékhez.
 
 Íme egy példa a lágy foglalási hierarchiára.
 
@@ -364,10 +463,8 @@ A foglalási hierarchia független a termékindex-hierarchiától. Ez a függetl
 | `SizeId` | 4 |
 | `StyleId` | 5 |
 
-Ebben a példában a foglalást a következő dimenziósorozatokban végezheti el:
+Ebben a példában a foglalást a következő dimenziósorozatokban végezheti el. A foglalás során meg kell adnia egy partíciót a termékhez. Ebből következően a használható alapszintű hierarchia a `(SiteId, LocationId)`.
 
-- `()` - Nincs megadva dimenzió.
-- `(SiteId)`
 - `(SiteId, LocationId)`
 - `(SiteId, LocationId, ColorId)`
 - `(SiteId, LocationId, ColorId, SizeId)`
@@ -375,9 +472,24 @@ Ebben a példában a foglalást a következő dimenziósorozatokban végezheti e
 
 Az érvényes dimenzió-sorrendnek szigorúan követnie kell a foglalási hierarchiát, dimenzióról dimenzióra. Például a `(SiteId, LocationId, SizeId)` hierarchiasorozat nem érvényes, mert hiányzik a `ColorId`.
 
+## <a name="complete-and-update-the-configuration"></a>A konfiguráció befejezése és frissítése
+
+Miután befejezte a konfigurációt, minden módosítást rögzítenie kell a Készletláthatóságban. A módosítások rögzítéséhez válassza a Power Apps oldalon a **Konfiguráció** oldal jobb felső sarkában a **Konfiguráció frissítése** lehetőséget.
+
+Amikor először választja a **Konfiguráció frissítése** lehetőséget, a rendszer bekéri a hitelesítő adatokat.
+
+- **Ügyfélazonosító** - Az Az Azure-alkalmazás azonosítója, amelyet a Készletláthatósághoz létrehozott.
+- **Bérlőazonosító** - Az Ön Azure bérlőjének azonosítója.
+- **Ügyféltitok** - Az Azure-alkalmazás titka, amelyet a Készletláthatósághoz létrehozott.
+
+A bejelentkezés után a konfiguráció frissül a Készletláthatóság szolgáltatásban.
+
+> [!NOTE]
+> A Készletláthatóság szolgáltatás konfigurációjának frissítése előtt mindenképpen ellenőrizze az adatforrás nevét, a fizikai mérőszámokat és a dimenziók hozzárendelését. Ezeket a beállításokat nem tudja módosítani, miután kiválasztotta a **Konfiguráció frissítése** lehetőséget.
+
 ## <a name="default-configuration-sample"></a><a name="default-configuration-sample"></a>Alapértelmezett konfigurációs minta
 
-Az inicializálási szakaszban a Készletláthatóság alapértelmezett konfigurációt állít be. A konfigurációt igény szerint módosíthatja.
+Az inicializálási szakaszban a Készletláthatóság alapértelmezett konfigurációt állít be, amelyet itt részletezünk. A konfigurációt igény szerint módosíthatja.
 
 ### <a name="data-source-configuration"></a>Adatforrás konfiguráció
 

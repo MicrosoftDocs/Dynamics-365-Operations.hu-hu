@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4a77b157e9dd5ee1f551cbb59abbc89aaa28d325cc74a77e6624f25902c5b19e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bd3c72f2c008b936ceda53a3fcdde79df1e6b1b7
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731889"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471692"
 ---
 # <a name="warehouse-orders-for-cloud-and-edge-scale-units"></a>Raktérkezelés rendelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -27,16 +27,18 @@ ms.locfileid: "6731889"
 
 ## <a name="what-are-warehouse-orders"></a>Mi az a raktári rendelés?
 
-A *raktári rendelések* olyan rendelési típus, amely a központi és mérlegegységraktárak telepítésének támogatásához jött létre. Akkor kaphat készletet, amikor egy mérlegegységen futtat egy raktári terhelést. Jelenleg csak beszerzési rendelésekkel használatosak.
+A *Raktári rendelések* olyan rendelési típus, amely a központi és mérlegegységraktárak telepítésének támogatásához használatos. Akkor kaphat és szállíthat készletet, amikor egy skálázási egységen futtat egy raktári terhelést.
 
-A raktári rendelések a raktárkezelés feldolgozásában használatosak, például amikor a Raktárkezelés mobilalkalmazás segítségével regisztrálják a tényleges aktuális készletet a bejövő beszerzési rendelések feldolgozása során. A raktári rendelések létrehozása a *raktárba való kiadás* folyamat részeként történik, amely a raktárkezelési folyamatok használatára engedélyezett mérlegegységraktárat megszabadó beszerzési rendelésekhez áll rendelkezésre.
+A raktári rendelések mind a bejövő, mind a kimenő raktárkezelési feldolgozás részeként használatosak. A *Raktárba kiadás* folyamat részeként jön létre, amely a központon inicializálódik.
+A bejövő feldolgozásnál a Warehouse Mobile App a tényleges aktuális készlet regisztrálására használható a bejövő rendelések feldolgozása során, ez elérhető a beszerzési és termelési rendelésekhez, amelyek meghatározzák a raktárkezelési folyamatok használatára engedélyezett skálázásiegység-raktárat és cikkeket.
+A kimenő raktári rendelések az átszállítási és értékesítési rendelések szállítmány hullámfeldolgozásának részeként használatosak.
 
 > [!IMPORTANT]
 > A raktári rendelések csak olyan telepítésekben érhetők el, amelyek [raktárkezelési terheléseket használnak a felhő- és peremhálózati egységekhez](cloud-edge-workload-warehousing.md).
 
-## <a name="create-a-warehouse-order"></a>Raktári rendelés létrehozása
+## <a name="create-an-inbound-warehouse-order"></a>Bejövő raktárrendelés létrehozása
 
-Raktári rendelés létrehozásához kövesse az alábbi lépéseket.
+A következő lépéseket követve hozhat létre bejövő raktári rendelést a beszerzési rendelési folyamatához.
 
 1. Jelentkezzen be a központon futó Microsoft Dynamics 365 Supply Chain Management példányára. (Kezdeményeznie kell a *Kiadás raktárba* folyamatot, amíg be van jelentkezve a központba.)
 1. Menjen a **Beszerzés és forrás \> Beszerzési rendelés \> Összes beszerzési rendelés** pontra.

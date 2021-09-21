@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
-ms.date: 05/26/2021
+ms.date: 08/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7bd5a64553afa04517633ed03d8bbd6077208c0b511d8fa131dc9a2849998708
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774409"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463623"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -32,7 +32,29 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](/dynamics/s-e/global/axtechrefrep_61) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
 
-## <a name="feature-deprecation-notice-effective-may-2021"></a>Funkciók eltávolításával kapcsolatos értesítés; 2021 májusától érvényes
+## <a name="feature-deprecation-effective-august-2021"></a>Funkciók eltávolításával kapcsolatos értesítés; 2021 augusztusától érvényes
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL-jelentések a LifeCycle Services (LCS) szolgáltatásban
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az LCS szolgáltatásban elavult néhány SQL-jelentés. A továbbiakban nem kell figyelnie a jelentéseket, mert ezt a funkciót más szolgáltatások helyettesítik majd. |
+| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Érintett területek**         | SQL-jelentések: jelenlegi DTU, aktuális DTU-részletek, Zárolási részletek lekérdezése, Aktuális csomagútmutató listája, Lekérdezésazonosítók listájának lekérdezése, SQL-lekérdezési csomag lekérése adott csomagazonosítóhoz, Lekérdezési csomagok és végrehajtási állapotok lekérdezése, Szabályozási konfiguráció lekérdezése, Várakozási statisztikák lekérése, Legdrágább lekérdezések listája |
+| **Telepítési beállítás**              | Felhőtelepítés: a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
+| **Állapot**                         | Elavult: A tervezett eltávolítási dátum 2021 októbere. |
+
+### <a name="azure-sql-actions-in-lcs"></a>Azure SQL-műveletek az LCS szolgáltatásban
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az LCS szolgáltatásban elavult néhány SQL-művelet.  |
+| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Érintett területek**         | SQL-műveletek: Csomagútmutató létrehozása a tervazonosító kényszerítésére, Csomagútmutató létrehozása táblatippek hozzáadásához, Csomagútmutató eltávolítása, Oldalzárolások letiltása/engedélyezése és eszkaláció zárolása, Tábla statisztikáinak frissítése, Index újjáépítése, Index létrehozása |
+| **Telepítési beállítás**              | Felhőtelepítés: a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
+| **Állapot**                         | Elavult: A tervezett eltávolítási dátum 2021 októbere. |
+
+## <a name="feature-deprecation-effective-may-2021"></a>Funkciók elavulásával kapcsolatos értesítés; 2021 májusától érvényes
 
 ### <a name="globalization-portal-in-lifecycle-services-lcs"></a>A Lifecycle Services (LCS) globalizációs portálja
 

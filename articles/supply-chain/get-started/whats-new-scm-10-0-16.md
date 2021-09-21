@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-11-30
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 58a69907bdd1b03ea2e025b736dbbf84eed73c76d54bd5c93386ba8a627f095f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4c5c8e1d13a58b5ebc68315c75e5245cb10377f3
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712049"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474916"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10016-february-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.16 verziójában (2021. február)
 
@@ -54,36 +54,12 @@ A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelent�
 - [Attribútumalapú eladási árak korlátokon alapuló termékkonfigurációhoz](../pim/attribute-based-product-configurator.md)
 - [A kiadások automatikus felosztása](../procurement/automatic-charges-allocation.md)
 - [Veszélyes anyagok áttekintése](../pim/hazmat-overview.md) (és a kapcsolódó témakörök)
-- [Áttelepítés az alaptervezéshez használatos Tervezési optimalizálásra](../master-planning/new-master-planning-engine.md)
+- [Áttelepítés tervezési optimalizálásra alaptervezéshez](../master-planning/new-master-planning-engine.md)
 - [Beszerzési cXML fejlesztései](../procurement/purchasing-cxml-enhancements.md)
-- [Költségkezelés – Hibaelhárítás](../cost-management/troubleshoot-costmanagement.md)
-- [Bejövő raktári műveletek – Hibaelhárítás](../warehousing/troubleshoot-warehouse-inbound.md)
-- [Rakományok összeállítása és szállítása – Hibaelhárítás](../warehousing/troubleshoot-warehouse-loads-shipments.md)
-- [Alaptervezés – Hibaelhárítás](../master-planning/troubleshoot-masterplanning.md)
-- [Kimenő raktári műveletek – Hibaelhárítás](../warehousing/troubleshoot-warehouse-outbound.md)
-- [Részleges kiadások és részleges szállítmányok – Hibaelhárítás](../warehousing/troubleshoot-warehouse-partial-release-shipment.md)
-- [A termékkonfigurátor – Hibaelhárítás](../pim/troubleshooting-productconfigurator.md)
-- [Termékinformáció – Hibaelhárítás](../pim/troubleshooting-productinformation.md)
-- [Beszerzésekkel és forrásokkal kapcsolatos munkafolyamatok hibajavítása](../procurement/troubleshoot-procurementworkflows.md)
-- [Beszerzési rendelések hibajavítása](../procurement/troubleshoot-purchaseorders.md)
-- [Árak, engedmények, szerződések és visszatérítések hibajavítása](../procurement/troubleshooting-pricediscountagreements.md)
-- [Termékbevételezések és számlázás hibajavítása](../procurement/troubleshooting-productreceiptinvoicing.md)
-- [Árucikkgyártás – Hibaelhárítás](../production-control/troubleshoot-discretemanufacturing.md)
-- [Kitárolás és csomagolás – Hibaelhárítás](../warehousing/troubleshoot-warehouse-picking-packing.md)
-- [Folyamatgyártás – Hibaelhárítás](../production-control/troubleshoot-processmanufacturing.md)
-- [Foglalások a raktárkezelési modulban – Hibaelhárítás](../warehousing/troubleshoot-warehouse-reservations.md)
-- [Értékesítési rendelések hibajavítása](../sales-marketing/troubleshooting-sales.md)
-- [Értékesítési ajánlatok hibajavítása](../sales-marketing/troubleshooting-salesquotation.md)
-- [Speciális raktárkezelésre való frissítés és áttelepítés – hibaelhárítás](../warehousing/troubleshoot-warehouse-upgrade-migration.md)
-- [Raktárkezelés mobilalkalmazás kapcsolódási problémáinak hibaelhárítása](../warehousing/troubleshoot-warehouse-app-connection.md)
-- [Raktár konfigurálása – Hibaelhárítás](../warehousing/troubleshoot-warehouse-configuration.md)
-- [Raktár feltöltése – Hibaelhárítás](../warehousing/troubleshoot-warehouse-replenishment.md)
-- [Raktárbeállítás – Hibaelhárítás](../warehousing/troubleshoot-warehouse-setup.md)
-- [Raktármunka – Hibaelhárítás](../warehousing/troubleshoot-warehouse-work.md)
 - [Betárolási fürtök](../warehousing/putaway-clusters.md)
 - [Feltöltési stratégiák](../warehousing/replenishment-strategies.md)
 - [Felosztott munka](../warehousing/work-split.md)
-- [Helyutasítások kezelése](../warehousing/create-location-directive.md)
+- [Munka helyutasításokkal](../warehousing/create-location-directive.md)
 
 ## <a name="additional-resources"></a>További erőforrások
 

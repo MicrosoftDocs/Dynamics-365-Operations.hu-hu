@@ -1,8 +1,8 @@
 ---
 title: Várakozási időszakok konfigurálása
 description: A Microsoft Dynamics 365 Human Resources rendszerben a várakozási napokkal hozhatók létre mérföldkövek, amelyek a juttatási konstrukciókhoz használhatók.
-author: andreabichsel
-ms.date: 04/06/2020
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8e928987a8e25de9c0c5429af1a305ad20b9892d9d3617482ea209af181e3227
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 537ca48e819f047f2095bd5d9337ac7d80e49c5f
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732585"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431065"
 ---
 # <a name="configure-waiting-periods"></a>Várakozási időszakok konfigurálása
 
@@ -38,7 +38,7 @@ A Microsoft Dynamics 365 Human Resources rendszerben a várakozási napokkal hoz
    | --- | --- |
    | **Várakozási kód** | A várakozási időszak egyedi azonosítója. |
    | **Leírás** | A várakozási időszak rövid leírása. |
-   | **Várakozás módja** | Válassza ki a megfelelő várakozási módot az értékeket tartalmazó legördülő listáról. A választási lehetőségek a következők: Nettó, Aktuális hónap, Aktuális negyedév, Aktuális év és Aktuális hét. |
+   | **Várakozás módja** | Válassza ki a megfelelő várakozási módot az értékeket tartalmazó legördülő listáról. A választási lehetőségek a következők: **Nettó**, **Aktuális hónap**, **Aktuális negyedév**, **Aktuális év** és **Aktuális hét**. |
    | **hónap** | Adja meg a várakozási módszerhez hozzáadandó hónapok számát a várakozási dátum kiszámításához. |
    | **Nap** | Adja meg a várakozási módszerhez hozzáadandó napok számát a várakozási dátum kiszámításához. |
    | **Várakozási nap** | Válassza ki a várakozási dátum kiszámításához használandó várakozási napot. |

@@ -2,7 +2,7 @@
 title: Termékajánlatok engedélyezése
 description: Ez a témakör azt mutatja be, hogyan lehet olyan termékjavaslatokat létrehozni, amelyek a Microsoft Dynamics 365 Commerce-felhasználók számára elérhető mesterséges intelligencia gépi tanulás (AI-ML) technológián alapulnak.
 author: bebeale
-ms.date: 08/18/2020
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: bfecc53a17eb44c5726103b4df738d6c6b0311aec07ad8eab55fa9c94787957a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4a7be82b3a40aba621693f080ff41767fdaea474
+ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752483"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466316"
 ---
 # <a name="enable-product-recommendations"></a>Termékajánlatok engedélyezése
 
@@ -31,32 +31,28 @@ Ez a témakör azt mutatja be, hogyan lehet olyan termékjavaslatokat létrehozn
 
 ## <a name="recommendations-pre-check"></a>Javaslatok előzetes ellenőrzése
 
-Az engedélyezés előtt felhívjuk figyelmét, hogy a termékjavaslatok csak azok számára a Commerce-ügyfelek számára támogatott, akik a tárhelyüket áttelepítették, és az Azure Data Lake Storage felhasználói. 
+1. Győződjön meg róla, hogy érvényes Dynamics 365 Commerce ajánlatok licenccel rendelkezik.
+1. Győződjön meg arról, hogy az entitástár kapcsolódik egy vevő által birtokolt Azure Data Lake Storage Gen2-fiókhoz. További információ: [Győződjön meg róla, hogy az Azure Data Lake Storage-t megvásárolták és sikeresen hitelesítették a környezetben](enable-ADLS-environment.md).
+1. Győződjön meg róla, hogy az Azure AD identitáskonfiguráció tartalmaz egy Ajánlási bejegyzést. A művelet végrehajtásával kapcsolatos további információk az alábbiakban láthatók.
+1. Győződjön meg arról, hogy az entitástár napi frissítése be lett ütemezve a Azure Data Lake Storage Gen2-höz. A további tudnivalókat lásd: [Győződjön meg róla, hogy az entitástár frissítés automatizált](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+1. Engedélyezze a RetailSale-mértékeket az entitástárhoz. A folyamat beállításával kapcsolatos további tudnivalókat lásd: [Intézkedések használata](/dynamics365/ai/customer-insights/pm-measures).
 
-Az ajánlások engedélyezése előtt engedélyeznie kell a következő konfigurációkat a háttérirodában:
-
-1. Győződjön meg róla, hogy a Azure Data Lake Storage-t megvásárolták és sikeresen hitelesítették a környezetben. További információ: [Győződjön meg róla, hogy az Azure Data Lake Storage-t megvásárolták és sikeresen hitelesítették a környezetben](enable-ADLS-environment.md).
-2. Győződjön meg róla, hogy az entitástár frissítés automatizált. A további tudnivalókat lásd: [Győződjön meg róla, hogy az entitástár frissítés automatizált](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
-3. Győződjön meg róla, hogy az Azure AD identitáskonfiguráció tartalmaz egy Ajánlási bejegyzést. A művelet végrehajtásával kapcsolatos további információk az alábbiakban láthatók.
-
-Ezenkívül győződjön meg arról, hogy a RetailSale-mértékek engedélyezve vannak. A beállítással kapcsolatos további tudnivalókat lásd: [Intézkedések használata](/dynamics365/ai/customer-insights/pm-measures).
+A fenti lépések befejezése után készen áll az ajánlások engedélyezésére.
 
 ## <a name="azure-ad-identity-configuration"></a>Azure AD identitáskonfiguráció
 
-Ezt a lépést kötelező megadni az összes olyan vevőnek, aki infrastruktúra szolgáltatásként (IaaS) konfigurációt futtat. A Service Fabric (SF) modulban futó vevők esetében ennek a lépésnek automatikusnak kell lennie, és javasoljuk, hogy ellenőrizze, hogy ez a beállítás a várakozásoknak megfelelően van-e konfigurálva.
+Ezt a lépést csak az olyan vevőknek kötelező megadni, akik szolgáltatott infrastruktúra (IaaS) konfigurációt futtatnak. Az Azure AD identitáskonfiguráció automatikus a Azure Service Fabric-ben futó vevők esetében, de ajánlott ellenőrizni, hogy a beállítás az elvárásoknak megfelelően van-e konfigurálva.
 
 ### <a name="setup"></a>Beállítás
 
-1. Keresse meg az **Azure Active Directory alkalmazások** lapot a háttér-irodában.
-2. Ellenőrizze, hogy létezik-e bejegyzés a következőhöz: „RecommendationSystemApplication-1”.
+1. A Commerce központban keresse meg az **Azure Active Directory alkalmazások** oldalt.
+1. Ellenőrizze, hogy létezik-e bejegyzés a következőhöz: **RecommendationSystemApplication-1**. Ha nem létezik bejegyzés, hozzon létre egyet a következő információk alapján:
 
-Ha a bejegyzés nem létezik, adjon hozzá egy új bejegyzést a következő adatokkal:
+    - **Ügyfél-azonosító**: d37b07e8-dd1c-4514-835d-8b918e6f9727
+    - **Név**: RecommendationSystemApplication-1
+    - **Felhasználói azonosító**: RetailServiceAccount
 
-- **Ügyfélazonosító** - d37b07e8-dd1c-4514-835d-8b918e6f9727
-- **Név** – RecommendationSystemApplication-1
-- **Felhasználói azonosító** – RetailServiceAccount
-
-Mentés és a képernyő bezárása. 
+1. Mentés és a képernyő bezárása. 
 
 ## <a name="turn-on-recommendations"></a>Termékjavaslatok bekapcsolása
 
@@ -71,15 +67,20 @@ A termékajánlások bekapcsolásához kövesse az alábbi lépéseket.
 ![Javaslatok bekapcsolása.](./media/FeatureManagement_Recommendations.PNG)
 
 > [!NOTE]
-> Ez az eljárás elindítja a termékjavaslati listák létrehozásának folyamatát. A listák elérhetővé tételéhez akár több óra szükséges lehet, és a pénztárban (POS) vagy a Dynamics 365 Commerce szolgáltatásban lehet megtekinteni.
+> - A fenti eljárás elindítja a termékjavaslati listák létrehozásának folyamatát. A listák elérhetővé tételéhez akár több óra szükséges lehet, és a pénztárban (POS) vagy a Dynamics 365 Commerce szolgáltatásban lehet megtekinteni.
+> - Ez a konfiguráció nem engedélyezi az ajánlások minden funkcióját. A speciális funkciókat, például a személyre szabott ajánlásokat, a "hasonló szettek vásárlása" és a "hasonló leírású termékek vásárlása" ajánlásokat dedikált funkciókezelési bejegyzések vezérlik. A Commerce központ ezen funkcióinak engedélyezésével kapcsolatos tudnivalókat lásd: [Személyre szabott ajánlatok engedélyezése](personalized-recommendations.md), [„Hasonló szettek vásárlása” javaslatok engedélyezése](shop-similar-looks.md) és [„Hasonló leírású termékek vásárlása” javaslatok engedélyezése](shop-similar-description.md).
 
 ## <a name="configure-recommendation-list-parameters"></a>A javaslati lista paramétereinek konfigurálása
 
 Alapértelmezés szerint az AI-ML-alapú termékjavaslati lista javasolt értékeket tartalmaz. Az alapértelmezett javasolt értékek módosíthatók, hogy megfeleljenek az Ön vállalatának. Az alapértelmezett paraméterek módosításával kapcsolatos további tudnivalókat az [AI-ML-alapú termékajánlás eredményeinek kezelése](modify-product-recommendation-results.md) témakörben talál.
 
+## <a name="include-recommendations-in-e-commerce-experiences"></a>Ajánlatok felvétele az e-kereskedelmi tapasztalatokba
+
+Miután engedélyezte az ajánlatokat a Commerce központ számára, az ajánlatok eredményeinek megjelenítésére használt Commerce-modulok készen állnak az e-kereskedelmi tapasztalatok konfigurálára. További információ: [Termékgyűjtemény-modulok](product-collection-module-overview.md).
+
 ## <a name="show-recommendations-on-pos-devices"></a>Javaslatok megjelenítése pénztáreszközökön
 
-Miután engedélyezte a javaslatokat a Commerce háttérirodában, hozzá kell adnia a javaslatok panelt a vezérlő pénztárképernyőhöz az elrendezés eszközzel. A folyamattal kapcsolatos további tudnivalókat lásd: [Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez](add-recommendations-control-pos-screen.md). 
+Miután engedélyezte az ajánlatokat a Commerce központban, hozzá kell adnia az ajánlatok panelt a pénztár vezérlése képernyőhöz az elrendezés eszközzel. A folyamattal kapcsolatos további tudnivalókat lásd: [Ajánlások hozzáadása egy a POS-eszközök tranzakció lapjának vezérléséhez](add-recommendations-control-pos-screen.md). 
 
 ## <a name="enable-personalized-recommendations"></a>Személyre szabott ajánlatok engedélyezése
 

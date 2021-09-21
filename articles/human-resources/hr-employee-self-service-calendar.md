@@ -1,8 +1,8 @@
 ---
 title: Csapatnaptár létrehozása
 description: A csapatnaptárak megtekintése és létrehozása a Dynamics 365 Human Resources alkalmazásban.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ccbf12d4dcc75e22fc62c356653a91b9a8a8d1761ccefb18c93e65f343250830
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eacf2dc460367ebefb7e9f4d9e301ec719cd2317
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744226"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431486"
 ---
 # <a name="view-team-and-company-calendars"></a>Csoportos és vállalati naptárak megtekintése
 
@@ -75,7 +75,7 @@ A naptárak most további szűrőket és beállításokat tartalmaznak. Az össz
 - Szabadságkérelmek 
 - Távollétkérelmek
 
-A szabadság és távollét paraméterben megadott naptárkonfiguráció határozza meg a rendelkezésre álló nézetbeállításokat.
+A **Szabadság és távollét paraméter** oldalon megadott naptárkonfiguráció határozza meg a rendelkezésre álló nézetbeállításokat.
 
 A naptárak a felettes vagy a részleg alapján is szűrhetők. Az elsődleges beosztás-hozzárendelés határozza meg, hogy milyen alkalmazottak jelennek meg a szűrők beállításakor. 
 

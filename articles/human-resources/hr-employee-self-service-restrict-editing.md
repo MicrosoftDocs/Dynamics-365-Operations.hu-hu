@@ -1,8 +1,8 @@
 ---
 title: Személyes adatok szerkesztésének korlátozása
 description: A kapcsolattartók részleteinek alkalmazottak általi szerkesztésének korlátozása a Dynamics 365 Human Resources alkalmazásban.
-author: andreabichsel
-ms.date: 03/03/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 87977ff004e0785ec1d31fe3abac2728f87e7083348895b58e58f46cd3e79925
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c4a13818103434df5005ad2805ac2ea7495bb767
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748883"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431405"
 ---
 # <a name="restrict-editing-of-personal-information"></a>Személyes adatok szerkesztésének korlátozása
 
@@ -54,7 +54,7 @@ Ez a témakör azt ismerteti, hogyan lehet korlátozni az alkalmazottak számár
 
 Miután korlátozta az alkalmazottak számára a kapcsolattartók részleteinek hozzáadását vagy szerkesztését, láthatják az adatokat, de nem módosíthatja őket.
 
-Ebben a példában, ahol az alkalmazottak nem szerkeszthetik az **Üzleti** kapcsolattartási adatokat, továbbra is láthatják az adatokat az Alkalmazotti önkiszolgáló rendszerben:
+Ebben a példában, ahol az alkalmazottak nem szerkeszthetik az **Üzleti** kapcsolattartási adatokat, továbbra is láthatják az adatokat az **Alkalmazotti önkiszolgáló** rendszerben:
 
 ![Üzleti kapcsolattartói részletek megtekintése.](./media/hr-employee-self-service-restrict-view.png)
 

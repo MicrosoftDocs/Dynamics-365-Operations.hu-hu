@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e5d66d205d2a987310cd592a00feb10ad0dcd90e
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
+ms.openlocfilehash: 2eb8ecdd849aa2f583202ac2ec7c3e1bb06698a1
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423344"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431392"
 ---
 # <a name="plan-type-overview"></a>Tervtípus áttekintése
 
@@ -28,14 +28,15 @@ ms.locfileid: "7423344"
 
 A konstrukciótípus a meghatározott típusú juttatások magas szintű csoportosítása. Minden konstrukciótípusnak van egy terv konstrukciótípus-kódja, amely meghatározza a konstrukció típusának szabályait. Például az **Alapélettartam** konstrukciótípushoz az **Élettartam** konstrukciótípus-kód lesz szükséges, mivel ez egyfajta életbiztosítás típusú konstrukció, amelyeknek meg kell felelniük az **Élettartam** konstrukciótípus-kódhoz meghatározott szabályoknak. Egy másik tervtípus lehet **Kiegészítő élettartam**. Ennek a tervtípusnak is **Élet** terv típuskódja lesz.
 
-Mindegyik konstrukciótípus jelzi, hogy egy alkalmazott regisztrálhat-e egy vagy több ilyen típusú konstrukcióra. Például egy alkalmazott valószínűleg képes regisztrálni az Alapélettartam és a Kiegészítő élettartam biztosításokra az Élettartam konstrukciótípusból. Egy alkalmazott valószínűleg csak egy Orvosi típusú biztosításra regisztrálhat.
+Mindegyik konstrukciótípus jelzi, hogy egy alkalmazott regisztrálhat-e egy vagy több ilyen típusú konstrukcióra. Például egy alkalmazott valószínűleg képes regisztrálni az **Alapélettartam** és a **Kiegészítő élettartam** biztosításokra az Élettartam konstrukciótípusból. Egy alkalmazott valószínűleg csak egy Orvosi típusú biztosításra regisztrálhat.
 
-Ha egy konstukciótípus kapcsolattartókat tartalmaz, akkor a konstrukciótípus jelzi, hogy a kapcsolattartók kedvezményezettek vagy függő felek-e. Például egy Alapélettartam konstrukciótípushoz tartozhatnak kedvezményezettek, míg egy Alap orvosi konstukciótípushoz csak függő felek tartozhatnak. Bizonyos esetekben előfordulhat, hogy egy konstrukció nem rendelkezik személyes kapcsolattartókkal. Például egy Rugalmas kiadási számla vagy Parkolási támogatás.
+Ha egy konstukciótípus kapcsolattartókat tartalmaz, akkor a konstrukciótípus jelzi, hogy a kapcsolattartók kedvezményezettek vagy függő felek-e. Például egy **Alapélettartam** konstrukciótípushoz tartozhatnak kedvezményezettek, míg egy Alap orvosi konstukciótípushoz csak függő felek tartozhatnak. Bizonyos esetekben előfordulhat, hogy egy konstrukció nem rendelkezik személyes kapcsolattartókkal. Például egy Rugalmas kiadási számla vagy Parkolási támogatás.
 
-A konstrukciótípus meghatározhatja a fedezeti beállításokat. A lefedettségi opciókat a **Lefedettségi opciók** lapon lehet meghatározni. A fedezeti beállítások határozzák meg a juttatás összegét, illetve azokat a kapcsolattartókat, akik jogosultak a konstrukciótípusra. Ha például a kapcsolattartó típusa Kedvezményezett, a fedezeti beállításnak meg kell határoznia, hogy a kedvezményezett milyen feltételekkel kaphat juttatást annak igénybevétele esetén. Ha a kapcsolattartó típusa Függő fél, a fedezeti beállításnak meg kell határoznia a függő fél és az alkalmazott közötti kapcsolatot. 
+
+A konstrukciótípus meghatározhatja a fedezeti beállításokat. A fedezeti opciókat a **Fedezeti opciók** lapon lehet meghatározni. A fedezeti beállítások határozzák meg a juttatás összegét, illetve azokat a kapcsolattartókat, akik jogosultak a konstrukciótípusra. Ha például a kapcsolattartó típusa **Kedvezményezett**, a fedezeti beállításnak meg kell határoznia, hogy a kedvezményezett milyen feltételekkel kaphat juttatást annak igénybevétele esetén. Ha a kapcsolattartó típusa **Függő fél**, a fedezeti beállításnak meg kell határoznia a függő fél és az alkalmazott közötti kapcsolatot. 
 
 > [!IMPORTANT]
-> Az oldal olyan kulcsfontosságú adatokat tartalmaz, amelyek befolyásolják az új juttatási terv létrehozásakor rendelkezésre álló lehetőségeket:
+> A **Konstrukciótípusok** oldal olyan kulcsfontosságú adatokat tartalmaz, amelyek befolyásolják az új juttatási terv létrehozásakor rendelkezésre álló lehetőségeket:
 >
 > - **Terv típuskódja** – ez a mező azt befolyásolja, hogy mi jelenik meg a **Konfiguráció** lapon a tényleges juttatás beállításakor.  
 > - **Párhuzamos regisztráció** – ez a mező határozza meg, hogy engedélyezve van-e több regisztráció. (Egy egészségügyi konstrukciónál ez a mező jellemzően a **Egy beléptetés**.)

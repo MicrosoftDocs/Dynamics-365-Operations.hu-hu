@@ -2,7 +2,7 @@
 title: Raktárkezelési számítási feladatok felhőalapú és peremhálózati skálázási egységekhez
 description: Ez a témakör arról a szolgáltatásról nyújt tájékoztatást, amely lehetővé teszi a skálázási egységek számára a kiválasztott folyamatok futtatását a raktárkezelési számítási feladatából.
 author: perlynne
-ms.date: 04/22/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,13 +15,13 @@ ms.search.region: global
 ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 7541688e8428dbc17a3c53d696913365580c3db8
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: f3de160cb4e62f9b30c01c56fa6fe5a4dfad5229
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343764"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471716"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -32,71 +32,59 @@ ms.locfileid: "7343764"
 
 ## <a name="warehouse-execution-on-scale-units"></a>Raktári végrehajtás skálázási egységeken
 
-Ez a szolgáltatás lehetővé teszi a skálázási egységek számára a kiválasztott folyamatok futtatását a raktárkezelési képességekből.
-
-Ebben a témakörben a skálázási egységként definiált raktárban történő raktárkezelési végrehajtásokat *Raktárvégrehajtási rendszernek* (*WES*) nevezzük.
+A Warehouse management munkaterhelések lehetővé teszik a felhő- és peremhálózati skálázási egységek számára, hogy a kiválasztott folyamatokat a raktárkezelési kapacitásokból futtassák.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Rendelkeznie kell egy Dynamics 365 Supply Chain Management-központtal és skálázási egységgel, amely telepítve van a raktárfelügyeleti számítási feladatokkal. Az architektúráról és a telepítési folyamatról további információt a [Skálázási egységek használata a Resilience for Supply Chain Management munkaterheléseivel](cloud-edge-landing-page.md) talál.
+Rendelkeznie kell egy Dynamics 365 Supply Chain Management-központtal és skálázási egységgel, amely telepítve van a raktárfelügyeleti számítási feladatokkal. Az architektúrával és a telepítési folyamattal kapcsolatos további tudnivalókat lásd: [Skálázási egységek elosztott hibridtopológiában](cloud-edge-landing-page.md).
 
-## <a name="how-the-wes-workload-works-on-scale-units"></a>A WES-számítási feladat működése a skálázási egységeken
+## <a name="how-the-warehouse-execution-workload-works-on-scale-units"></a>A raktárvégrehajtási feladat működése a skálázási egységeken
 
 A folyamatok a raktárkezelési számítási feladat folyamatai esetében az adatok a központ és a skálázási egység között szinkronizálva vannak.
 
-A skálázási egység csak a tulajdonában lévő adatokat tarthatja karban. A méretezési egységek adattulajdonosi koncepciója segít megelőzni a több főkiszolgálós megoldások ütközéseit. Ezért fontos, hogy tisztában legyen azzal, hogy mely folyamatok vannak a központ tulajdonában, és melyek vannak a skálázási egységek tulajdonában.
+A skálázási egység csak a tulajdonában lévő adatokat tarthatja karban. A méretezési egységek adattulajdonosi koncepciója segít megelőzni a több főkiszolgálós megoldások ütközéseit. Ezért fontos, hogy tisztában legyen azzal, hogy mely folyamatadatok vannak a központ tulajdonában, és melyek vannak a skálázási egységek tulajdonában.
 
-A skálázási egységek a következő adatokat birtokolják:
+Az üzleti folyamatoktól függően ugyanaz az adatrekord megváltoztathatja a tulajdonost a központ és a skálázási egységek között. Erre az esetre a következő szakaszban talál példát.
 
-- **Szállítási hullámfeldolgozási adatok** – A kiválasztott hullámfeldolgozási módszerek a skálázási egység hullámfeldolgozásának részeként kerülnek kezelésre.
-- **Munkafeldolgozási adatok** – a skálázási egységen létrehozott raktári munka tulajdonosa ez a megadott skálázási egység lesz. A következő típusú munkarendelések feldolgozása támogatott:
-
-  - **Készletmozgatások** (manuális mozgatás és mozgatás sablon szerint)
-  - **Ciklikus leltározás** és a jóváhagyási/elutasítási folyamat a leltározási műveletek részeként
-  - **Beszerzési rendelések** (rakodómunka raktári rendelésen keresztül, ha a beszerzési rendelések nincsenek rakományhoz társítva)
-  - **Értékesítési rendelések** (egyszerű kitárolási és rakodási munka)
-  - **Átmozgatási rendelések** (csak kimenő egyszerű kitárolási és berakodási munka esetén)
-
-- **Raktári rendelés bevételezési adatai** – ezeket az adatokat csak olyan beszerzési rendelésekhez használja a program, amelyeket kiadtak a raktárba.
-- **Azonosítótábla-adatok** – a központon és a skálázási egységeken azonosítótáblák hozhatók létre. Dedikált ütközés-kezelés van megadva. 
-
-    > [!IMPORTANT]
-    > Az azonosítótábla-adat nem a raktárspecifikus. Ha ugyanaz az azonosítótábla-szám jön létre mind a központban, mind a skálázási egységen ugyanabban a szinkronizálási ciklusban, a következő szinkronizálás sikertelen lesz. Ha ez megtörténik, lépjen a **Rendszerfelügyelet > Lekérdezések > Munkaterhelés lekérdezések > Duplikált rekordok** helyre, ahol megtekintheti és egyesítheti az adatokat.
+> [!IMPORTANT]
+> Néhány adat a központon és a skálázási egységen is létrehozható. Ilyenek például az **Azonosítótáblák** és a **Kötegszámok**. Olyan helyzetekben, amikor ugyanaz az egyedi rekord jön létre a központon és egy skálázási egységen ugyanazon a szinkronizálási cikluson keresztül, dedikált ütközéskezelés áll rendelkezésre. Ilyen esetben a következő szinkronizálás sikertelen lesz, és a **Rendszerfelügyelet > Lekérdezések > Terhelési lekérdezések > Ismétlődő rekordok** menüponthoz kell ugrania, ahol megtekintheti és egyesítheti az adatokat.
 
 ## <a name="outbound-process-flow"></a>Kimenő feldolgozási folyamat
 
-A központ a következő adatokat birtokolja:
+A kimenő adatok tulajdonosi folyamata attól függ, hogy használja-e a rakománytervezési folyamatot. A *forrásdokumentumok*, például az értékesítési és átviteli rendelések, valamint a rendelésfelosztási folyamat és a kapcsolódó rendelési tranzakciók adatai minden esetben a központ tulajdonában állnak. A rakománytervezési folyamat használata esetén azonban a rakományok a központon lesznek létrehozva, és ezért kezdetben a központ tulajdonában állnak. A *Raktárba történő kiadás* folyamat részeként a rakományadatok tulajdonosa átkerül a dedikált skálázási egység üzemelő példányába, amely a következő *szállítmányhullám-feldolgozás* tulajdonosa lesz (például a munkafelosztásé, feltöltési munkáé és igénylétrehozásé). Ezért a raktári dolgozók csak egy olyan Warehouse Management mobilalkalmazás segítségével dolgozhatnak fel kimenő értékesítési és átviteli rendelési munkát, amely az adott skálázási egység terhelését futtató üzemelő példányhoz kapcsolódik.
 
-- Minden forrásdokumentum, például értékesítési rendelések és átmozgatási rendelések
-- Rendelés felosztása és kimenő terhelés feldolgozása
-- A raktárba történő kiadás, a szállítmány létrehozása, a hullámlétrehozás és a hullámvéglegesítés folyamatok
+Amint a végső munkafolyamat a végső kiszállítási helyre (raktárajtó) helyezi a készletet, a skálázási egység jelzi a központnak, hogy frissítse a forrásdokumentum készlettranzakcióit *Kitárolva* értékre. Amíg ez a folyamat le nem fut, és nem szinkronizálja őket, addig a skálázási egység terhelésének aktuális készlete fizikailag le lesz foglalva a raktár szintjén, és a kimenő szállítás visszaigazolását azonnal fel lehet feldolgozni anélkül, hogy megvárja a szinkronizálás befejeződését. A későbbi értékesítési szállítólevelet és a rakomány számlázását vagy az átmozgatási megbízás feladását a központ kezeli.
 
-A skálázási egységek birtokolják a hullám kibocsátása után a tényleges hullámfeldolgozási egységeket (például a munka felosztását, a feltöltési munkát és a munkaszükségletek létrehozását). Ennélfogva a raktári dolgozók a kimenő munkát a skálázási egységhez kapcsolódó Raktárkezelés mobilalkalmazás segítségével dolgozzák fel.
+A következő ábra a kimenő folyamatot mutatja be, és jelzi, hogy hol zajlanak az egyes üzleti folyamatok. (Válassza ki a diagramot a nagyításhoz.)
 
-![Hullámfeldolgozási folyamat.](./media/wes-wave-processing-ga.png "Hullámfeldolgozási folyamat")
+[![Kimenő feldolgozási folyamat.](media/wes_outbound_warehouse_processes-small.png "Kimenő feldolgozási folyamat")](media/wes_outbound_warehouse_processes.png)
 
-### <a name="process-work-and-ship"></a>Munka és szállítás feldolgozása
+### <a name="outbound-processing-with-load-planning"></a>Kimenő rakományok feldolgozása rakománytervezéssel
 
-Amint a végső munkafolyamat a végső kiszállítási helyre (raktárajtó) helyezi a készletet, a skálázási egység jelzi a központnak, hogy frissítse a forrásdokumentum készlettranzakcióit *Kitárolva* értékre. Amíg ez a folyamat fut, és visszaszinkronizálásra kerül, addig a skálázási egység munkaterhelésén található aktuális készlet fizikailag le lesz foglalva a raktár szintjén.
+A rakománytervezési folyamat használata esetén a rakományok és szállítmányok létrejönnek a központnál, és az adatok tulajdonjoga átkerül a skálázási egységbe a *Raktárba való kiadás* folyamat részeként, amint azt az alábbi ábra mutatja.
 
-Amint a központ frissítette a tranzakciókat *Kitárolva* értékre, a rendszer feldolgozhatja a kimenő szállítmány megerősítését, valamint a társított értékesítési szállítólevelet vagy a rakományhoz tartozó átmozgatási rendelés szállítmányát.
+![Kimenő rakományok feldolgozása rakománytervezéssel.](./media/wes_outbound_processing_with_load_planning.png "Kimenő rakományok feldolgozása rakománytervezéssel")
 
-![Kimenő feldolgozási folyamat.](./media/WES-outbound-processing-19.png "Kimenő feldolgozási folyamat")
+### <a name="outbound-processing-without-load-planning"></a>Kimenő rakományok feldolgozása rakománytervezés nélkül
+
+Ha nem használja a rakománytervezési folyamatot, akkor a szállítmányok a skálázási egységeknél jönnek létre. A skálázási egységeknél rakományok is létrejönnek a hullámfolyamat részeként.
+
+![Kimenő rakományok feldolgozása rakománytervezés nélkül.](./media/wes_outbound_processing_without_load_planning.png "Kimenő rakományok feldolgozása rakománytervezés nélkül")
 
 ## <a name="inbound-process-flow"></a>Bemenő feldolgozási folyamat
 
 A központ a következő adatokat birtokolja:
 
-- Minden forrásdokumentum, például beszerzési rendelések és értékesítési visszárurendelések
+- Minden forrásdokumentum, például beszerzési és termelési rendelések
 - Bejövő terhelésfeldolgozás
 - Minden költség- és pénzügyi frissítés
 
 > [!NOTE]
-> A bejövő beszerzési rendelési folyamat koncepciójában különbözik a kimenő folyamattól. Ugyanazt a raktárat a mérlegegységen vagy a központon lehet működtetni attól függően, hogy a beszerzési rendelés ki van-e adva raktárba. Ha már kiadott egy rendelést a raktárba, akkor csak akkor dolgozhat azzal a rendeléssel, ha bejelentkezett a skálázási egységbe.
+> A bejövő beszerzési rendelési folyamat koncepciójában különbözik a kimenő folyamattól. Ugyanazt a raktárat a mérlegegységen vagy a központon lehet működtetni attól függően, hogy a beszerzési rendelés ki van-e adva raktárba, vagy sem. Miután kiadott egy rendelést a raktárba, akkor csak akkor dolgozhat azzal a rendeléssel, ha bejelentkezett a skálázási egységbe.
 >
 > Ha a *Kiadás raktárba* folyamatot használja, akkor létrejönnek a [*raktári rendelések*](cloud-edge-warehouse-order.md), és a kapcsolódó bevételezési folyamat tulajdonjoga a skálázási egységhez van rendelve. A központ nem fogja tudni regisztrálni a bejövő bevételezéseket.
 
-Be kell jelentkeznie a központba a *Kiadás raktárba* folyamat használatához. Lépjen a következő oldalak egyikére a futtatáshoz vagy ütemezéshez:
+Be kell jelentkeznie a központba a *Kiadás raktárba* folyamat használatához. A beszerzési rendelés feldolgozásához lépjen a következő oldalak egyikére a futtatáshoz vagy ütemezéshez:
 
 - **Beszerzés és forrás > Beszerzési rendelések > Összes beszerzési rendelés > Raktár > Műveletek > Kiadás raktárba**
 - **Raktárkezelés > Kiadás a raktárba > Értékesítési rendelések automatikus kiadása**
@@ -109,15 +97,17 @@ Ha nem használja a *kiadás raktárba* folyamatot, és így nem használja a *r
 
 ![Bemenő feldolgozási folyamat.](./media/wes-inbound-ga.png "Bemenő feldolgozási folyamat")
 
-Ha a raktári alkalmazás bevételezési folyamatával végez bejövő regisztrációt a skálázási egység raktári rendelése alapján, a skálázási egység munkaterhelése jelez a központnak, hogy frissítse a kapcsolódó beszerzésirendelés-sor tranzakcióit *Regisztrálva* értékre. Amint ez befejeződött, a központon futtathatja a beszerzési rendelés termékbevételezését.
+Ha egy dolgozó a Warehouse Management mobilalkalmazás bevételezési folyamat segítségével, a skálázási egységre vonatkozóan bejövő regisztrációt ad meg, akkor a rendszer a kapcsolódó raktári rendeléssel szemben rögzíti a nyugtát, amely a skálázási egységben van tárolva. A skálázási egység terhelése ezt követően jelzést küld a központnak, hogy frissítse a kapcsolódó beszerzésirendelés-sortranzakciókat *Regisztrálva* állapotúra. Amint ez befejeződött, a központon futtathatja a beszerzési rendelés termékbevételezését.
 
-![Bejövő feldolgozási folyamat.](./media/WES-inbound-processing-19.png "Bejövő feldolgozási folyamat")
+A következő ábra a bejövő folyamatot mutatja be, és jelzi, hogy hol zajlanak az egyes üzleti folyamatok. (Válassza ki a diagramot a nagyításhoz.)
+
+[![Bejövő feldolgozási folyamat](media/wes_inbound_warehouse_processes-small.png "Bejövő feldolgozási folyamat")](media/wes_inbound_warehouse_processes.png)
 
 ## <a name="supported-processes-and-roles"></a>Támogatott folyamatok és szerepkörök
 
-A program nem minden raktárkezelési folyamatot támogat egy WES-számítási feladatban egy skálázási egységen. Ezért ajánlott olyan szerepköröket hozzárendelni, amelyek megfelelnek az egyes felhasználók számára elérhető funkcióknak.
+A program nem minden raktárkezelési folyamatot támogat egy raktárvégrehajtási számítási feladatban egy skálázási egységen. Ezért ajánlott olyan szerepköröket hozzárendelni, amelyek megfelelnek az egyes felhasználók számára elérhető funkcióknak.
 
-Ennek a folyamatnak a megkönnyítésére a program a *Raktárkezelő számítási feladaton* nevű mintaszerepkör megtalálható a **Rendszerfelügyelet \> Biztonság \> Biztonsági beállítások** alatti bemutató adatok között. Ennek a szerepkörnek a célja, hogy a raktárkezelők hozzáférjenek a WES-hez a skálázási egységen. A szerepkör olyan oldalakhoz való hozzáférést biztosít, amelyek a skálázási egységen szereplő számítási feladatok összefüggésében fontosak.
+Ennek a folyamatnak a megkönnyítésére a program a *Raktárkezelő számítási feladaton* nevű mintaszerepkör megtalálható a **Rendszerfelügyelet \> Biztonság \> Biztonsági beállítások** alatti bemutató adatok között. Ennek a szerepkörnek a célja, hogy a raktárkezelők hozzáférjenek a raktárvégrehajtási számítási feladathoz a skálázási egységen. A szerepkör olyan oldalakhoz való hozzáférést biztosít, amelyek a skálázási egységen szereplő számítási feladatok összefüggésében fontosak.
 
 A skálázási egység felhasználói szerepköreit a program a központ által a skálázási egység történő kezdeti adatszinkronizálás részeként rendeli hozzá.
 
@@ -125,11 +115,11 @@ A felhasználóhoz rendelt szerepkörök módosításához nyissa meg a **Rendsz
 
 Azokhoz a felhasználókhoz, akik mind a központban, mind a skálázási egységeken tevékenykednek raktárikezelőként, a meglévő *Raktárkezelő munkás* nevű szerepet kell hozzárendelni. Ne feledje, hogy ez a szerepkör biztosítja a raktári dolgozók számára a felhasználói felületen (UI) megjelenő funkciókat (például az átmozgatási rendelés bevételezési feldolgozását), amelyek jelenleg nem támogatottak a skálázási egységen.
 
-## <a name="supported-wes-processes"></a>Támogatott WES-folyamatok
+### <a name="supported-warehouse-execution-processes"></a>Támogatott raktárvégrehajtási folyamatok
 
-A következő raktári végrehajtási folyamatok engedélyezettek egy WES-számítási feladat esetében egy skálázási egységen:
+A következő raktárvégrehajtási folyamatok engedélyezettek egy raktárvégrehajtási számítási feladat esetében egy skálázási egységen:
 
-- Kiválasztott hullám metódusok értékesítési és átátviteli rendelésekhez (felosztás, igényfeltöltés, tárolóra készítés, munka létrehozása és hullámcímke-nyomtatás)
+- Kiválasztott hullámmetódusok értékesítési és átátviteli rendelésekhez (ellenőrzés, rakománylétrehozás, felosztás, igényfeltöltés, tárolóra készítés, munka létrehozása és hullámcímke-nyomtatás)
 
 - Az értékesítési és átviteli rendelések raktári munkához történő feldolgozása a raktári alkalmazással (a feltöltési munkát is beleértve)
 - Aktuális készlet lekérdezése a raktári alkalmazás használatával
@@ -138,49 +128,49 @@ A következő raktári végrehajtási folyamatok engedélyezettek egy WES-szám�
 - Készletkorrekció végrehajtása a raktári alkalmazás használatával
 - Beszerzési rendelések regisztrálása és betárolási munka a raktári alkalmazás használatával
 
-A következő munkarendelés-típusok jelenleg támogatottak a WES számítási feladatok esetében a skálázási egység telepítésein:
+A skálázási egységen a következő munkatípusok dolgozhatók fel, ezért a raktárkezelési számítási feladat részeként fel lehet dolgozni:
 
-- Értékesítési rendelés
-- Átmozgatási probléma
-- Feltöltés (a termelés nyersanyagait nem tartalmazza)
-- Készletmozgás
-- Ciklikus leltározás
-- Beszerzési rendelések (raktári rendelésekhez kapcsolódó)
+- **Készletmozgatások** – Manuális mozgatás és mozgatás sablon szerint.
+- **Ciklikus leltározás** – Beleértve az egyeztetés-jóváhagyási/-elutasítási folyamatot a leltározási műveletek részeként.
+- **Beszerzési rendelések** – Rakodómunka raktári rendelésen keresztül, ha a beszerzési rendelések nincsenek rakományhoz társítva.
+- **Értékesítési rendelések** – Egyszerű kitárolási és rakodási munka.
+- **Átmozgatási probléma** – Egyszerű kitárolás és rakodás.
+- **Feltöltés** – A termelés nyersanyagait nem tartalmazza.
+- **Késztermékek betárolása** – A készként jelentés utáni termelési folyamat.
+- **Társtermék és melléktermék betárolása** – A készként jelentés utáni termelési folyamat.
 
-A program jelenleg nem támogatja a forrásoldali dokumentumok egyéb típusainak feldolgozását vagy a raktári munkát a skálázási egységekben. Például egy skálázási egységre vonatkozó WES-munkaterhelés esetén nem lehet áthozott rendelés bevételezését (átviteli bevételezést), ehelyett ezt a központi példánynak kell feldolgoznia.
+A program jelenleg nem támogatja a forrásoldali dokumentumok egyéb típusainak feldolgozását vagy a raktári munkát a skálázási egységekben. Például egy skálázási egységre vonatkozó raktárvégrehajtási számítási feladat esetén nem lehet áthozott rendelés bevételezését (átviteli bevételezést) végrehajtani, ehelyett ezt a központi példánynak kell feldolgoznia.
 
 > [!NOTE]
 > A nem támogatott funkciókhoz használható mobileszköz-menüpontok és gombok nem jelennek meg a _Raktárkezelés mobilalkalmazásban_, ha skálázásiegység-telepítéshez kapcsolódik.
-
-> [!WARNING]
+> 
 > Amikor egy skálázási egységen számítási feladatot alkalmaz, akkor nem futtathat nem támogatott folyamatokat az adott raktár esetében a központban. A témakörben később található táblázatok a támogatott funkciókat dokumentálják.
 >
 > Kiválasztott raktári munkatípusokat a központon és a skálázási egységeken is létre lehet hozni, de csak a saját központ vagy skálázási egység (az adatokat létrehozó telepítés) tarthatja fenn.
 >
-> Még ha támogatott is egy adott folyamat a skálázási egység által, ne feledje, hogy az összes szükséges adat nem feltétlenül szinkronizálható a központból a skálázási egységbe, vagy a skálázási egységből a központba, ami a váratlan rendszerfeldolgozást eredményező kockázathoz vezet. Példák erre:
+> Még ha támogatott is egy adott folyamat a skálázási egység által, ne feledje, hogy az összes szükséges adat nem feltétlenül szinkronizálható a központból a skálázási egységbe, vagy a skálázási egységből a központba, ami a váratlan rendszerfeldolgozást eredményező kockázathoz vezet. Ilyen helyzet lehet például a következő:
 > 
 > - Ha olyan helylekérdező lekérdezést használ, amely olyan adattáblarekordhoz csatlakozik, amely csak a központ telepítésében létezik.
 > - A helyállapot és/vagy a hely rakodási kapacitás funkciók használata esetén. Ezek az adatok nem lesznek szinkronizálva a telepítések között, ezért csak akkor működnek, ha az egyik telepítés aktuális hely készletét frissítik.
 
 A következő raktárkezelési funkciók jelenleg nem támogatottak a skálázásiegység-munkaterhelésekben:
 
-- Rakományhoz rendelt beszerzésirendelés-sorok bejövő feldolgozása
-- Beszerzési rendelések bejövő feldolgozása egy projekthez
-- A **Tulajdonos** és/vagy **Sorozatszám** aktív követési dimenziókat tartalmazó cikkek bejövő és kimenő feldolgozása
-- Zároló állapotértékű készlet feldolgozása
-- Készletállapot módosítása bármely munkamozgási folyamat során
-- Rendelésben véglegesített rugalmas raktárszintű dimenziófoglalások
-- A *Raktári helyállapot* funkció használata (az adatok nincsenek szinkronizálva a telepítések között)
-- *Hely és azonosítótábla pozicionálása* funkció használata
-- *Termékszűrők* és *Termékszűrő-csoportok* használata, beleértve a **Napok száma a kötegek kombinációjára** beállítást
-- Integráció a minőségirányítással
-- Feldolgozás tényleges súllyal rendelkező cikkekkel
-- Feldolgozás csak szállításkezelésre engedélyezett cikkekkel (TMS)
-- Feldolgozás negatív aktuális készlettel
-- Raktári munka feldolgozása egyéni munkatípusokkal
-- Raktári munka feldolgozása szállítmánylevelekkel
-- Raktári munka feldolgozása anyagkezelési/raktárautomatizálással
-- Az alaptermék adatképének használata (például a Raktárkezelés mobilalkalmazásban)
+- Rakományhoz rendelt beszerzésirendelés-sorok bejövő feldolgozása.
+- Beszerzési rendelések bejövő feldolgozása egy projekthez.
+- A **Tulajdonos** és/vagy **Sorozatszám** aktív követési dimenziókat tartalmazó cikkek bejövő és kimenő feldolgozása.
+- Zároló állapotértékű készlet feldolgozása.
+- Készletállapot módosítása bármely munkamozgási folyamat során.
+- Rendelésben véglegesített rugalmas raktárszintű dimenziófoglalások.
+- A *Raktári helyállapot* funkció használata (az adatok nincsenek szinkronizálva az üzemelő példányok között).
+- *Helyazonosító tábla pozicionálása* funkció használata.
+- *Termékszűrők* és *Termékszűrő-csoportok* használata, beleértve a **Napok száma a kötegek kombinációjára** beállítást.
+- Integráció a minőségirányítással.
+- Feldolgozás tényleges súllyal rendelkező cikkekkel.
+- Feldolgozás csak szállításkezelésre engedélyezett cikkekkel (TMS).
+- Feldolgozás negatív aktuális készlettel.
+- Raktári munka feldolgozása szállítmánylevelekkel.
+- Raktári munka feldolgozása anyagkezelési/raktárautomatizálással.
+- Az alaptermék adatképének használata (például a Warehouse Management mobilalkalmazásban).
 
 > [!WARNING]
 > Bizonyos raktári funkciók nem érhetők el az olyan raktáraknál, ahol a raktárkezelési terhelések egy skálázási egységen futnak, és a központ és a skálázási egység munkaterhelés esetén sem támogatott.
@@ -193,42 +183,42 @@ A következő raktárkezelési funkciók jelenleg nem támogatottak a skálázá
 
 A következő táblázat bemutatja, hogy mely kimenő funkciók, és hol támogatottak, amikor a raktárkezelési számítási feladatok a felhőalapú és a peremhálózati skálázási egységekben használatosak.
 
-| Feldolgozás                                                      | Központ | WES számítási feladat egy skálázási egységben |
+| Feldolgozás                                                      | Központ | Raktári végrehajtási számítási feladat skálázási egységeken |
 |--------------------------------------------------------------|-----|------------------------------|
 | Forrásdokumentum feldolgozása                                   | Igen | Nincs |
-| Rakomány és szállításkezelési folyamatok feldolgozása                | Igen | Nincs |
+| Rakomány és szállításkezelési folyamatok feldolgozása                | Igen, de csak a rakománytervezési folyamatok. A szállításkezelési folyamatok feldolgozása nem támogatott  | Nincs |
 | Kiadás raktárba                                         | Igen | Nincs |
 | Tervezett áttárolás                                        | Nincs  | Nincs |
-| Szállítmánykonszolidáció                                       | Igen | Nincs |
-| Szállítmány hullámfeldolgozása                                     | Igen, de csak a hullám állapotának inicializálása és véglegesítése történik a központban. Ez azt jelenti, hogy a kimenő átvitelt és az értékesítési rendelés feldolgozását csak a skálázási egység intézheti.|<p>Nem, az inicializálást és a véglegesítést a központ intézi, és a **Rakományok összeállítása és rendezése** nem támogatott.<p><b>Megjegyzés:</b> A központhoz való hozzáféréshez szükséges a hullám állapotának véglegesítése a hullám feldolgozásának részeként.</p> |
-| Hullámhoz szállítások karbantartása                                  | Igen | Nincs |
-| Raktári munka feldolgozása (az azonosítótábla nyomtatásával együtt)        | Nincs  | <p>Igen, de csak a fent említett támogatott funkciókhoz. |
+| Szállítmánykonszolidáció                                       | Igen, a rakománytervezés használata esetén | Igen |
+| Szállítmány hullámfeldolgozása                                     | Nincs  |Igen, a **Rakományok összeállítása és rendezése** kivételével |
+| Hullámhoz szállítások karbantartása                                  | Nincs  | Igen|
+| Raktári munka feldolgozása (az azonosítótábla nyomtatásával együtt)        | Nincs  | Igen, de csak a korábban említett támogatott funkciókhoz |
 | Fürt kitárolása                                              | Nincs  | Igen|
 | Manuális csomagolásfeldolgozás, beleértve a „Becsomagolt tároló kitárolása” munkafeldolgozást | Nincs <P>Bizonyos feldolgozás elvégezhető egy skálázási egység által kezelt kezdeti kitárolási folyamat után, de a következő blokkolt műveletek miatt nem ajánlott.</p>  | Nincs |
 | Tároló eltávolítása csoportból                                  | Nincs  | Nincs |
 | Kimenő rendezés feldolgozása                                  | Nincs  | Nincs |
-| Rakományhoz kapcsolódó dokumentumok nyomtatása                           | Igen | Nincs |
-| Fuvarlevél és ASN-generálás                            | Igen | Nincs |
-| Szállítmány megerősítése                                             | Igen | Nincs |
+| Rakományhoz kapcsolódó dokumentumok nyomtatása                           | Igen | Igen|
+| Fuvarlevél és ASN-generálás                            | Nincs  | Igen|
+| Szállítmány megerősítése                                             | Nincs  | Igen|
 | Szállítmány megerősítése a „Megerősítés és áthelyezés” lehetőséggel            | Nincs  | Nincs |
 | Szállítólevél és számlázások feldolgozása                        | Igen | Nincs |
-| Rövid kitárolás (értékesítési és áttárolási rendelések)                    | Nincs  | Nincs |
-| Előírtnál nagyobb mennyiség kitárolása (értékesítési és áttárolási rendelések)                     | Nincs  | Nincs |
+| Rövid kitárolás (értékesítési és áttárolási rendelések)                    | Nincs  | Igen, a forrásdokumentumok foglalásának eltávolítása nélkül|
+| Előírtnál nagyobb mennyiség kitárolása (értékesítési és áttárolási rendelések)                     | Nincs  | Igen|
 | Munkahelyek módosítása (értékesítési és áttárolási rendelések)         | Nincs  | Igen|
 | Befejezett munka (értékesítési és áttárolási rendelések)                    | Nincs  | Igen|
-| Munka jelentésének nyomtatása                                            | Igen | Nincs |
+| Munka jelentésének nyomtatása                                            | Igen | Igen|
 | Hullámcímke                                                   | Nincs  | Igen|
 | Felosztott munka                                                   | Nincs  | Igen|
 | Munkafeldolgozás – „Szállítási berakodás” irányítja            | Nincs  | Nincs |
 | Kitárolt mennyiség csökkentése                                       | Nincs  | Nincs |
 | Munka sztornírozása                                                 | Nincs  | Nincs |
-| Szállítmány visszaigazolásának sztornírozása                                | Igen | Nincs |
+| Szállítmány visszaigazolásának sztornírozása                                | Nincs  | Igen|
 
 ### <a name="inbound"></a>Bejövő
 
 A következő táblázat bemutatja, hogy mely bejövő funkciók, és hol támogatottak, amikor a raktárkezelési számítási feladatok a felhőalapú és a peremhálózati skálázási egységekben használatosak.
 
-| Feldolgozás                                                          | Központ | WES számítási feladat egy skálázási egységben<BR>*(Az „Igen” jelölésű cikkek csak raktári rendelésekre vonatkoznak)*</p> |
+| Feldolgozás                                                          | Központ | Raktári végrehajtási számítási feladat skálázási egységeken<BR>*(Az „Igen” jelölésű cikkek csak raktári rendelésekre vonatkoznak)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
 | Forrásdokumentum&nbsp;feldolgozása                             | Igen | Nincs |
 | Rakomány és szállításkezelési folyamatok feldolgozása                    | Igen | Nincs |
@@ -238,7 +228,7 @@ A következő táblázat bemutatja, hogy mely bejövő funkciók, és hol támog
 | Beszerzési rendelés – cikk bevételezése és eltárolása                       | <p>Igen,&nbsp;ha&nbsp;nincs&nbsp;raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, ha a beszerzési rendelés nem része egy <i>rakománynak</i></p> |
 | Beszerzésirendelés-sor bevételezése és betárolása                       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, ha a beszerzési rendelés nem része egy <i>rakománynak</i></p></p> |
 | Visszárurendelés bevételezése és eltárolása                              | Igen | Nincs |
-| Vegyes azonosítótábla bevételezése és eltárolása                       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
+| Vegyes azonosítótábla bevételezése és eltárolása                       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Igen |
 | Rakomány – cikk bevételezése                                              | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
 | Azonosítótábla bevételezése és eltárolása                             | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
 | Átmozgatási rendelés – cikk bevételezése és eltárolása                       | Igen | Nincs |
@@ -260,7 +250,7 @@ A következő táblázat bemutatja, hogy mely bejövő funkciók, és hol támog
 
 A következő táblázat bemutatja, hogy mely raktári műveletek és kivételkezelési funkciók, és hol támogatottak, amikor a raktárkezelési számítási feladatok a felhőalapú és a peremhálózati skálázási egységekben használatosak.
 
-| Feldolgozás                                            | Központ | WES számítási feladat egy skálázási egységben |
+| Feldolgozás                                            | Központ | Raktári végrehajtási számítási feladat skálázási egységeken |
 |----------------------------------------------------|-----|------------------------------|
 | Azonosítótábla lekérdezése                              | Igen | Igen                          |
 | Cikklekérdezés                                       | Igen | Igen                          |
@@ -270,7 +260,7 @@ A következő táblázat bemutatja, hogy mely raktári műveletek és kivételke
 | Mozgás sablon szerint                               | Igen | Igen                          |
 | Raktári átmozgatás                                 | Igen | Nincs                           |
 | Átmozgatási rendelés létrehozása a raktári alkalmazásból           | Igen | Nincs                           |
-| Igazítás ki (be/ki)                                | Igen | Igen, de nem abban a korrekciós helyzetben, ahol a készletfoglalást el kell távolítani a **Foglalások eltávolítása** funkció használatával a készletkorrekció-típusoknál.</p>                           |
+| Igazítás ki (be/ki)                                | Igen | Igen, de nem abban a korrekciós helyzetben, ahol a készletfoglalást el kell távolítani a **Foglalások eltávolítása** funkció használatával a készletkorrekció-típusoknál</p>                           |
 | Készletállapot-változás                            | Igen | Nincs                           |
 | Ciklikus leltározás és számbavételi eltérés feldolgozása | Igen | Igen                           |
 | Címke újranyomtatása (azonosítótábla nyomtatása)             | Igen | Igen                          |
@@ -291,16 +281,16 @@ A következő táblázat bemutatja, hogy mely raktári műveletek és kivételke
 
 ### <a name="production"></a>Termelés
 
-A következő táblázat összefoglalja, hogy mely raktárkezelési termelési helyzetek (nem) támogatottak jelenleg a skálázási egység munkaterheléseken, a következő táblázatban jelzett módon.
+A következő táblázat összefoglalja, hogy mely raktárkezelési termelési helyzetek támogatottak (és nem támogatottak) jelenleg a skálázási egység munkaterheléseken, a következő táblázatban jelzett módon.
 
-| Feldolgozás | Központ | WES számítási feladat egy skálázási egységben |
+| Feldolgozás | Központ | Raktári végrehajtási számítási feladat skálázási egységeken |
 |---------|-----|------------------------------|
 | Készként jelentés és késztermék betárolása | Igen | Igen |
 | Társ- és melléktermék betárolása | Igen | Igen |
 | <p>A termeléshez kapcsolódó összes egyéb raktárkezelési folyamat, beleértve:</p><li>Kiadás raktárba</li><li>Termelés hullámfeldolgozása</li><li>Nyersanyag kitárolása</li><li>Kanban betárolás</li><li>Kanban kitárolás</li><li>Termelési rendelés indítása</li><li>Termelési selejt</li><li>Termelés – utolsó raklap</li><li>Anyagfelhasználás regisztrálása</li><li>Üres kanban</li></ul> | Igen | Nincs |
 | Nyersanyag feltöltése | Nincs | Nincs |
 
-## <a name="maintaining-scale-units-for-wes"></a>A WES skálázási egységeinek karbantartása
+## <a name="maintaining-scale-units-for-warehouse-execution"></a>A raktárvégrehajtáshoz szükséges skálázási egységek karbantartása
 
 Több kötegelt feladat fut mind a központon, mind a skálázási egységeken.
 

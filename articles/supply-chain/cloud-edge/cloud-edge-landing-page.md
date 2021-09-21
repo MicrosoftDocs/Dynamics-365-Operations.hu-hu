@@ -1,5 +1,5 @@
 ---
-title: Felhőalapú és peremhálózat skálázási egységek a gyártási és a raktárkezelési számítási feladatokhoz
+title: Skálázási egységek elosztott hibridtopológiában
 description: Ez a témakör további információt biztosít a Felhőalapú és peremhálózati skálázási egységgel kapcsolatban a gyártási és raktárkezelési munkaterhelésekhez.
 author: cabeln
 ms.date: 04/22/2021
@@ -10,14 +10,14 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: dbe5833d4c9d8038fcebf1d9d446af757c834e42a2f77f10c7eb7268e738ed28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
+ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780674"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7471740"
 ---
-# <a name="cloud-and-edge-scale-units-for-manufacturing-and-warehouse-management-workloads"></a>Felhőalapú és peremhálózat-léptékű egységek gyártási és raktárkezelési munkaterhelésekhez
+# <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skálázási egységek elosztott hibridtopológiában
 
 [!include [banner](../includes/banner.md)]
 
@@ -26,11 +26,11 @@ ms.locfileid: "6780674"
 >
 > A felhő- és peremhálózati egységek engedélyezésekor meg kell erősítenie, hogy megértette, hogy a felhő- és peremhálózati egységek konfigurálásához és feldolgozásához kapcsolódó egyes adatokat az Egyesült Államokban található adatközpontban lehet tárolni. Ha további információkat szeretne megtudni a felhő- és szélskálázi egységek adatainak feldolgozásával kapcsolatban, tekintse meg az [Adatfeldolgozás a skálázási egységek kezelése során](#data-processing-management) témakör későbbi részét.
 
-## <a name="core-value-proposition-for-scale-units"></a>Alapvető értékajánlat a skálázási egységekhez
+## <a name="core-value-proposition-for-a-distributed-hybrid-topology"></a>Elosztott hibridtopológia alapvető értékajánlata
 
-A gyártással és elosztással foglalkozó vállalatoknak képesnek kell lenniük a kulcsfontosságú üzleti folyamatok futtatására nonstop, megszakítás nélkül és megfelelő méretben. A felhőalapú és a peremhálózati skálázási egységek lehetővé teszik a vállalatok számára, hogy megszakítás nélkül futtassák a kulcsfontosságú feladathoz kapcsolódó termelési és raktári folyamatokat, még akkor is, ha időnként hálózati kapcsolati vagy késleltetési problémák lépnek fel.
+A gyártással és elosztással foglalkozó vállalatoknak képesnek kell lenniük a kulcsfontosságú üzleti folyamatok futtatására nonstop, megszakítás nélkül és megfelelő méretben. Az elosztott hibridtopológia lehetővé teszi a vállalatok számára, hogy megszakítás nélkül futtassák a kulcsfontosságú feladathoz kapcsolódó termelési és raktári folyamatokat, még akkor is, ha időnként hálózati kapcsolati vagy késleltetési problémák lépnek fel.
 
-A felhőalapú és a peremhálózati skálázási egységek lehetővé teszik a különböző környezetek között az üzemi és raktári végrehajtási munkaterhelések felosztását. Ez a funkció javítja a teljesítményt, megakadályozhatja a szolgáltatás megszakadását, és maximalizálhatja az üzemidőt. A skálázási egységek a Supply Chain Management előfizetés következő bővítményei révén biztosítottak:
+Az elosztott hibridtopológia bemutatja a *skálázási egységek* fogalmát, amely lehetővé teszi az üzletek és raktárak végrehajtási terhelésének elosztását a különböző környezetekben. Ez a funkció javítja a teljesítményt, megakadályozhatja a szolgáltatás megszakadását, és maximalizálhatja az üzemidőt. A skálázási egységek a Supply Chain Management előfizetés következő bővítményei révén biztosítottak:
 
 - A felhő skálázási egység bővítménye a Dynamics 365 Supply Chain Management szolgáltatáshoz (*elérhető: 2021. április.*)
 - Az Edge skálázási egység bővítménye a Dynamics 365 Supply Chain Management szolgáltatáshoz (*hamarosan elérhető*)

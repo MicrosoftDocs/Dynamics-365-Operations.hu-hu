@@ -2,7 +2,7 @@
 title: Többnyelvű jelentések tervezése elektronikus jelentésekben
 description: Ez a témakör azt mutatja be, hogyan lehet használni az elektronikus jelentések (ER) címkéit a többnyelvű jelentések tervezéséhez és létrehozásához.
 author: NickSelin
-ms.date: 04/21/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 86facc26f57b3ab166d6274689d774adbac50e46aa7759cfd079a0ef5a45456e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e199b350101e10ba3e424894f4dc9881d05c9558
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718429"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473405"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Többnyelvű jelentések tervezése elektronikus jelentésekben
 
 [!include[banner](../includes/banner.md)]
+
+[!include[banner](../includes/preview-banner.md)]
 
 ## <a name="overview"></a>Áttekintés
 
@@ -229,10 +231,14 @@ A jelen témakörben korábban ismertetett módon a **Címke** és **Leírás** 
 - A **Címke** attribútumaihoz kapcsolt ER-címke értékét a visszaküldött rekord **Címke** mezőjében tárolja a program.
 - A **Leírás** attribútumaihoz kapcsolt ER-címke értékét a visszaküldött rekord **Leírás** mezőjében tárolja a program.
 
+## <a name="performance"></a><a name=performance></a>Teljesítmény
+
+Amikor az ER-formátum összetevőt a kívánt [nyelven](#language) jelentés előállítására konfigurálja, vagy olyan bejövő dokumentumot importál, ahol a tartalmat a preferált nyelv használja, javasoljuk, hogy engedélyezze **Az aktuális felhasználó preferált nyelvének gyorsítótárba helyezése ER futtatásokhoz** funkciót a [Funkciókezelés](../../fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületen. Ez a funkció javítja a teljesítményt, különösen olyan ER-formátumösszetevők esetén, amelyek több címkére hivatkoznak az ER-képletekben és -kötésekben, valamint számos [érvényesítési](general-electronic-reporting-formula-designer.md#TestFormula) szabályban a felhasználónak küldött üzeneteknek a kívánt nyelven történő generálása érdekében.
+
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
-- [Az elektronikus jelentéskészítés funkciói](er-formula-language.md#functions)
+- [Az elektronikus jelentéskészítés funkciói](er-formula-language.md#Functions)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

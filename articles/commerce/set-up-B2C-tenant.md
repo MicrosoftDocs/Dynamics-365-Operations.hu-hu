@@ -2,7 +2,7 @@
 title: B2C-bérlő beállítása a Commerce-ben
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani az Azure Active Directory (Azure AD) cég-ügyfél (B2C) bérlőket felhasználói webhely-hitelesítéshez Dynamics 365 Commerce alkalmazásban.
 author: BrianShook
-ms.date: 08/11/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 107e06d44d159152b260897dfba456a525f19e27
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: d54de9025926d2c1908ce29d2b680a48172f46a4
+ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344498"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466268"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
@@ -37,6 +37,26 @@ A Dynamics 365 Commerce az Azure AD B2C protokollt használja a felhasználók h
 
 > [!TIP]
 > A Azure AD azonosítóvédelemmel és a feltételes hozzáféréssel tovább védheti webhelyének felhasználóit, és növelheti a Azure AD B2C bérlőinek biztonságát. A Azure AD B2C Premium P1 és Premium P2 bérlők számára elérhető képességek áttekintéséhez lásd: [Identitásvédelem és feltételes hozzáférés a Azure AD B2C oldalon](/azure/active-directory-b2c/conditional-access-identity-protection-overview).
+
+## <a name="dynamics-environment-prerequisites"></a>Dynamics-környezet előfeltételei
+
+Mielőtt hozzákezd, győződjön meg arról, hogy a Dynamics 365 Commerce-környezet és az e-kereskedelmi csatorna a következő előfeltételeknek megfelelően van konfigurálva.
+
+- Állítsa az **AllowNonymousAccess** pénztári műveletek értékét „1” értékre a Commerce központban:
+    1. Ugrás a **POS-műveletekhez**.
+    1. A műveleti rácsban kattintson a jobb gombbal, majd válassza a **Testreszabás** parancsot.
+    1. Válassza a **Mező hozzáadása** lehetőséget.
+    1. Az elérhető oszlopok listájában válassza az **AllowAnonymousAccess** oszlopot a hozzáadáshoz.
+    1. Válassza ki a **Frissítés** lehetőséget.
+    1. A **612** „Vevő hozzáadása” műveletnél módosítsa az **AllowAnonymousAccess** gombra az „1” lehetőséget.
+    1. Futtassa az **1090 (Pénztárgépek)** feladatot.
+- Állítsa a vevői számla számsorozatának **Manuális** attribútumát **Nem** értékre a Commerce központban:
+    1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Kinnlevőségi paraméterek** menüpontra.
+    1. Válassza a **Számsorozatok** elemet.
+    1. A **Vevői számla** sorban kattintson duplán a **Számsorozatkód** értékre.
+    1. A számsorozat **Általános** gyorslapján állítsa a **Manuális** beállítást **Nem** értékre.
+
+A Dynamics 365 Commerce környezet telepítését követően ajánlott a [Kiindulási adatok inicializálása](enable-configure-retail-functionality.md) a környezetben.
 
 ## <a name="create-or-link-to-an-existing-aad-b2c-tenant-in-the-azure-portal"></a>AAD B2C-bérlő létrehozása vagy hivatkozás egy meglévő bérlőre az Azure Portal webhelyen
 

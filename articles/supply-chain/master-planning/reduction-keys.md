@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 555f75df1b28d374f2a46481857902c2f9315809c082699355190c54e856899b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32d1c7efaefaecae12031073d67b0e4c2cf78a78
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736623"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474772"
 ---
 # <a name="forecast-reduction-keys"></a>Előrejelzés csökkentési kulcsok
 
@@ -86,7 +86,18 @@ Ebben az eseteben, ha előrejelzési ütemezést január 1-jén futtatja, az ig�
 
 ### <a name="transactions--reduction-key"></a>Tranzakciók – csökkentési kulcs
 
-Ha a **Tranzakciók – csökkentési kulcs** lehetőséget választja, az előrejelzési követelmények azon tranzakciók mértékével csökkennek, amelyek a csökkentési kulcs által definiált időszakokra vonatkoznak.
+Ha az **Előrejelzési követelmények csökkentésére használt módszert** a *Tranzakciók – csökkentési kulcs* értékre állítja, az előrejelzési követelmények a minősített igénytranzakciókkal csökkennek, amelyek a csökkentési kulcs által megadott időszakok során következnek be.
+
+A minősített igényt a **Fedezeti csoportok** oldal **Előrejelzés csökkentése a következővel:** mezője határozza meg. Ha az **Előrejelzés csökkentése a következővel:** mező értékét *Rendelések* értékre állítja, csak az értékesítésirendelés-tranzakciók számítanak minősített igénynek. Ha az *Összes tranzakció* érték van beállítva, bármely nem vállalatközi kiadású készlettranzakció minősített igénynek számít. Ha vállalatközi értékesítési rendeléseket is minősített igényként kell tekinteni, állítsa a **Vállalatközi rendelések szerepeltetése** beállítást *Igen* értékre.
+
+Az előrejelzés csökkentése a csökkentési kulcs időszakának első (legkorábbi) igény-előrejelzési rekordjával kezdődik. Ha a minősített készlettranzakciók mennyisége nagyobb, mint az ugyanabban a csökkentési kulcs időszakában szereplő igény-előrejelzési sorok mennyisége, a készlettranzakciók mennyiségének egyenlegét használja a rendszer az előző időszak igény-előrejelzési mennyiségének csökkentésére (amennyiben van fel nem használt előrejelzés).
+
+Ha az előző csökkentési kulcs időszakában nem marad fel nem használt előrejelzés, akkor a készlettranzakciók mennyiségének egyenlegét használja a rendszer a következő hónap előrejelzési mennyiségének csökkentésére (amennyiben van nem felhasznált előrejelzés).
+
+A csökkentésikulcs-sorok **Százalék** mezőjének értéke nem használatos, ha az **Előrejelzési követelmények csökkentésére szolgáló metodológia** mező értékének beállítása *Tranzakciók - csökkentési kulcs*. A csökkentési kulcs időszakát csak a dátumok határozzák meg.
+
+> [!NOTE]
+> A program minden olyan előrejelzést figyelmen kívül hagy, amely a mai napon vagy azelőtt lett feladva, és nem lesz használva tervezett rendelések létrehozásához. Ha például a hónapra vonatkozó igény-előrejelzés január 1-jén jön létre, és január 2-án igény-előrejelzést tartalmazó alaptervezést futtat, a számítás figyelmen kívül hagyja a január 1-jei dátummal létrehozott igény-előrejelzési sort.
 
 #### <a name="example-transactions--reduction-key"></a>Példa: Tranzakciók – csökkentési kulcs
 

@@ -1,8 +1,8 @@
 ---
 title: Az Azure Data Lake Storage engedélyezése Dynamics 365 Commerce környezetben
-description: Ez a témakör azt mutatja be, hogyan lehet engedélyezni és tesztelni az Azure Data Lake Storage megoldást egy Dynamics 365 Commerce környezet számára, amely előfeltétele a termékajánlások engedélyezésének.
+description: Ez a témakör arról nyújt útmutatást, hogyan lehet az Azure Data Lake Storage Gen 2 megoldást csatlakoztatni a Dynamics 365 Commerce környezet entitástárához. Ez a termékajánlások engedélyezése előtti szükséges lépés.
 author: bebeale
-ms.date: 04/13/2020
+ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,42 +16,41 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8ec56a260501c0d33145c23cb9656446bc871f7c448bbbf33330ad591c506e49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c96c29a4d9639b02e6a60ad938b7e06f7d500c68
+ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775362"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7466292"
 ---
 # <a name="enable-azure-data-lake-storage-in-a-dynamics-365-commerce-environment"></a>Az Azure Data Lake Storage engedélyezése Dynamics 365 Commerce környezetben
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet engedélyezni és tesztelni az Azure Data Lake Storage megoldást egy Dynamics 365 Commerce környezet számára, amely előfeltétele a termékajánlások engedélyezésének.
+Ez a témakör arról nyújt útmutatást, hogyan lehet az Azure Data Lake Storage Gen2 megoldást csatlakoztatni a Dynamics 365 Commerce környezet entitástárához. Ez a termékajánlások engedélyezése előtti szükséges lépés.
 
-A Dynamics 365 Commerce megoldásban minden termék- és tranzakciós adatot nyomon követése megtörténik a környezet Entitás tárában. Ha az adatokat elérhetővé szeretné tenni a Dynamics 365 más szolgáltatásaihoz (például az adatelemzéshez, az üzleti intelligenciához és a személyre szabott ajánlásokhoz), akkor a környezetet egy vevő által birtokolt Azure Data Lake Storage Gen 2 megoldáshoz kell csatlakoztatni.
+A Dynamics 365 Commerce megoldásban az ajánlások, termékek és tranzakciók kiszámításához szükséges adatokat a rendszer a környezet entitástárában összesíti. Ha az adatokat elérhetővé szeretné tenni a Dynamics 365 más szolgáltatásaihoz (például az adatelemzéshez, az üzleti intelligenciához és a személyre szabott ajánlásokhoz), akkor a környezetet egy vevő által birtokolt Azure Data Lake Storage Gen2 megoldáshoz kell csatlakoztatni.
 
-Mivel az Azure Data Lake Storage egy környezetben konfigurálható, az összes szükséges adatot tükrözni kell az Entitás tárból, miközben továbbra is védve vannak, az ügyfél felügyelete alatt.
+A fenti lépések befejezése után a környezet entitástárolójában található összes vevőadat automatikusan a vevő Azure Data Lake Storage Gen 2 megoldásában tükröződik. Ha a Commerce központ Funkciókezelési munkaterületén keresztül engedélyezi az ajánlások funkcióit, akkor az ajánlások vermében ugyanaz a Azure Data Lake Storage Gen2 megoldás lesz hozzáférhető.
 
-Ha a termékajánlások vagy a személyre szabott javaslatok is engedélyezve vannak a környezetben, akkor a termékajánlások készlete hozzáférési jogosultságot kap az Azure Data Lake Storage dedikált mappájához, hogy beolvassa a vevő adatait, és kiszámítsa a javaslatokat ez alapján.
+A teljes folyamat során a vevők adatai védve és ellenőrzésük alatt maradnak.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A vevőknek a saját Azure-előfizetésben kell konfigurálniuk az Azure Data Lake Storage-t. Ez a témakör nem terjed ki egy Azure-előfizetés vagy egy Azure Data Lake Storage-alapú tárolási fiók beállításainak beszerzésére.
+A Dynamics 365 Commerce környezet entitástárát egy Azure Data Lake Gen Storage Gen2 fiókhoz és a kapcsolódó szolgáltatásokhoz kell csatlakoztatni.
 
-Az Azure Data Lake Storage-dzsel kapcsolatos további tudnivalókért lásd: [Azure Data Lake Storage Gen 2hivatalos dokumentációja](https://azure.microsoft.com/pricing/details/storage/data-lake).
+Az Azure Data Lake Storage Gen2-vel és beállításával kapcsolatos további tudnivalókért lásd: [Azure Data Lake Storage Gen 2 hivatalos dokumentációja](https://azure.microsoft.com/pricing/details/storage/data-lake).
   
 ## <a name="configuration-steps"></a>Konfigurációs lépések
 
-Ez a szakasz azokat a konfigurációs lépéseket ismerteti, amelyek szükségesek ahhoz, hogy az Azure Data Lake Storage engedélyezve legyen egy környezetben, mivel a termékajánlásokhoz kapcsolódik.
-Az Azure Data Lake Storage engedélyezéséhez szükséges lépésekről a további tudnivalókat lásd: [Entitástár elérhetővé tétele Data Lake alkalmazásként](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
+Ez a szakasz azokat a konfigurációs lépéseket ismerteti, amelyek szükségesek ahhoz, hogy az Azure Data Lake Storage Gen2 engedélyezve legyen egy környezetben, mivel a termékajánlásokhoz kapcsolódik.
+Az Azure Data Lake Storage Gen2 engedélyezéséhez szükséges lépésekről a további tudnivalókat lásd: [Entitástár elérhetővé tétele Data Lake alkalmazásként](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 
 ### <a name="enable-azure-data-lake-storage-in-the-environment"></a>Azure Data Lake Storage engedélyezése a környezetben
 
 1. Jelentkezzen be a környezet back office portáljára.
 1. Keresse meg a **Rendszerparamétereket**, és navigáljon az **Adatkapcsolatok** lapra. 
 1. Állíts az **Data Lake-integráció engedélyezése** elemet **Igen** értékre.
-1. Állíts a **Data Lake folyamatos frissítése** elemet **Igen** értékre.
 1. Adja meg a következő kötelező adatokat:
     1. **Alkalmazásazonosító** // **Alkalmazástitok** // **DNS-név** – Az Azure Data Lake Storage titok tárolására szolgáló KeyVaulthoz való csatlakozáshoz szükséges.
     1. **Titok neve** – A KeyVaultban tárolt titkos név, amely az Azure Data Lake Storage-dzsel történő hitelesítéshez használatos.
@@ -67,7 +66,7 @@ A következő kép egy példát mutat az Azure Data Lake Storage-konfigurációr
 1. Ellenőrizze a kapcsolatot az Azure Data Lake Storage-dzsel az **Azure Storage tesztelése** link segítségével.
 
 > [!NOTE]
-> Ha a tesztek sikertelenek, ellenőrizze, hogy a fentiekben hozzáadott összes KeyVault-információ helyes-e, majd próbálkozzon újra.
+> Ha a fenti tesztek bármelyike sikertelen, erősítse meg, hogy a fentiekben hozzáadott összes KeyVault-információ helyes-e, majd próbálkozzon újra.
 
 A csatlakozási tesztek sikeres végrehajtása után engedélyeznie kell az Entitás tároló automatikus frissítését.
 

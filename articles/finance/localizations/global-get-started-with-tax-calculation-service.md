@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1ddbb22d4f7c6108ca93b415276c53794b5450dd
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: b180a8cee1c5b7e9dda837915e6fdf94af30d06a
+ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394509"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7465077"
 ---
 # <a name="get-started-with-tax-calculation"></a>Az adószámítás első lépései
 
@@ -49,13 +49,9 @@ Termelési környezetben a következő előfeltételeknek kell teljesülniük:
 - Létre kell hoznia egy RCS-környezetet a szervezet számára, és hozzáféréssel kell rendelkeznie a fiókjához. Az RCS-környezet létrehozásával kapcsolatos további információkért lásd a [Regulatory Configuration Service áttekintése](rcs-overview.md) című részt.
 - A következő funkciókat az üzleti igényeknek megfelelően be kell kapcsolni a bevezetett pénzügyi vagy Supply Chain Management környezet **funkciókezelési** munkaterületén:
 
-    - Áfaszámítás
+    - Áfaszámítási szolgáltatás
     - Több áfaregisztrációs szám támogatása
     - Adó az átmozgatási rendelésben
-    - EU értékesítési lista átvitele csak az adóügyi tranzakciók alapján
-    - Intrastat jelentés több adószám szerint
-    - EU értékesítési lista jelentése több adószám szerint
-    - Forgalmiadó-bevallás több adószám szerint
 
 - A következő funkciókat be kell kapcsolni a telepített RCS-környezet **funkciókezelési** munkaterületén.
 
@@ -65,18 +61,14 @@ Termelési környezetben a következő előfeltételeknek kell teljesülniük:
 
 A tesztkörnyezethez a következő előfeltételeknek kell teljesülniük:
 
-- Hozzá kell férnie az LCS-fiókjához, és rendelkeznie kell egy telepített LCS-projekttel, amely Tier 2 vagy annál magasabb szintű környezetet tartalmaz, és a Dynamics 365 10.0.18-as verzióját futtatja a KB4616360 vagy egy későbbi verzióval.
+- Hozzá kell férnie az LCS-fiókjához, és rendelkeznie kell egy telepített LCS-projekttel, amely Tier 2 vagy annál magasabb szintű környezetet tartalmaz, és a Dynamics 365 10.0.21-es vagy újabb verzióját futtatja.
 - Létre kell hoznia egy RCS-környezetet a szervezet számára, és hozzáféréssel kell rendelkeznie a fiókjához. Az RCS-környezet létrehozásával kapcsolatos további információkért lásd a [Regulatory Configuration Service áttekintése](rcs-overview.md) című részt.
 - A <taxcalc@microsoft.com> e-mail címen kapcsolatba kell lépnie a Microsofttal, hogy engedélyezze a repülést a telepített pénzügyi vagy Supply Chain Management környezetben.
 - A következő funkciókat az üzleti igényeknek megfelelően be kell kapcsolni a bevezetett pénzügyi vagy Supply Chain Management környezet **funkciókezelési** munkaterületén:
 
-    - Áfaszámítás
+    - Áfaszámítási szolgáltatás
     - Több áfaregisztrációs szám támogatása
     - Adó az átmozgatási rendelésben
-    - EU értékesítési lista átvitele csak az adóügyi tranzakciók alapján
-    - Intrastat jelentés több adószám szerint
-    - EU értékesítési lista jelentése több adószám szerint
-    - Forgalmiadó-bevallás több adószám szerint
 
 - A következő funkciókat be kell kapcsolni a telepített RCS-környezet **funkciókezelési** munkaterületén.
 
@@ -103,12 +95,12 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
 7. Válassza az **Adóadatok modell** lehetőséget, bontsa ki a fájlfát, majd válassza az **Adókonfiguráció** lehetőséget.
 8. Válassza ki a megfelelő adókonfigurációs verziót a Pénzügyi verzió alapján, majd válassza az **Importálás** lehetőséget.
 
-    | Kiadás verziója | Adókonfiguráció                       | Modell leképezése                   |
-    | --------------- | --------------------------------------- | ------------------------------- |
-    | 10.0.18         | Adókonfiguráció - Európa 30.12.82     |                                 |
-    | 10.0.19         | Adószámítási konfiguráció 36.38.193 |                                 |
-    | 10.0.20         | Adószámítási konfiguráció 40.43.208 |                                 |
-    | 10.0.21         | Adószámítási konfiguráció 40.46.212 | Dataverse Modell leképezése 40.46.9 |
+    | Kiadás verziója | Adókonfiguráció                       |
+    | --------------- | --------------------------------------- |
+    | 10.0.18         | Adókonfiguráció - Európa 30.12.82     |
+    | 10.0.19         | Adószámítási konfiguráció 36.38.193 |
+    | 10.0.20         | Adószámítási konfiguráció 40.43.208 |
+    | 10.0.21         | Adószámítási konfiguráció 40.46.212 |
 
 9. A **Globalizációs funkciók** munkaterületen válassza a **Funkciók** lehetőséget, majd jelölje ki az **Adószámítás** lapot, és válassza a **Hozzáadás** lehetőséget.
 10. Válassza ki az alábbi szolgáltatástípusok valamelyikét:

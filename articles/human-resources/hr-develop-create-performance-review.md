@@ -1,8 +1,8 @@
 ---
 title: Teljesítményértékelések létrehozása
 description: Ez a témakör ismerteti, hogyan hozható létre teljesítmény-áttekintés, és ismerteti az áttekintés egyes szakaszainak célját.
-author: andreabichsel
-ms.date: 05/05/2020
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscu
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0a4a9f83c2b6cb30888ed5a797fb72b9f382187cb8f119d15a5fa437ed5aba1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1340653c1e9a21d41743b8e3c0b81a4285245d5a
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732249"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431160"
 ---
 # <a name="create-performance-reviews"></a>Teljesítményértékelések létrehozása
 
@@ -65,13 +65,13 @@ Ez a témakör ismerteti, hogyan hozható létre teljesítmény-áttekintés, é
 30. Válassza a **Minősítések** lapot.  
 
     - A **Minősítés részletei** gyorslapon az alkalmazottak saját maguk értékelhetik magukat, és a vezető értékelheti az alkalmazottat. Súlyok használata esetén a pontszámok súlyozásának értékét a program automatikusan kiszámítja.  
-    - Ennek a szakasznak a megtekintéséhez engedélyezze az alkalmazotti minősítések megjelenítésének paraméterbeállításait.  
+    - A szakasz megtekintéséhez engedélyezze az alkalmazottminősítések megjelenítésének paraméterbeállítását az **Emberi erőforrások megosztott paraméterei** oldalon.  
 
-31. Válassza a **Láttamozások** lapot. Ha az ellenőrzés munkafolyamatot alkalmaz, a láttamozások csak a munkafolyamat befejeződése után jelennek meg. Nincs munkafolyamat használva, úgy mind a munkavállaló, mind a vezető egyaránt szerepelnek itt. A szükséges jelölőnégyzet be van jelölve az ellenőrzési típus beállításainak alapján.  
+31. Válassza a **Láttamozások** lapot. Ha az ellenőrzés munkafolyamatot alkalmaz, a láttamozások csak a munkafolyamat befejeződése után jelennek meg. Nincs munkafolyamat használva, úgy mind a munkavállaló, mind a vezető egyaránt szerepelnek itt. A **Szükséges** jelölőnégyzet a **Láttamozásokhoz** be van jelölve az ellenőrzési típus beállításainak alapján.  
 32. Válassza ki az **Általános** fület.
 
     - A teljesítési időszak létrehozza az alapértelmezett kezdési és befejezési dátumot. E dátumok szerkeszthetők.  
-    - Az állapotok szabályozzák az ellenőrzés elérhetőségét. A **Még el nem kezdett** állapotnál mindenki szerkesztheti az ellenőrzést. A **Folyamatban** állapotnál csak az alkalmazott tekintheti meg és szerkesztheti az ellenőrzést. Az **Ellenőrzésre kész** állapotnál csak a vezető tekintheti meg és szerkesztheti az ellenőrzést. A **Végleges ellenőrzés** állapotnál az alkalmazott és a vezető egyaránt megtekinthetik az ellenőrzést, és szerkeszthetik is, ha ez be van állítva az ellenőrzés típusában. A **Kész** és **Visszavonva** állapotok csak olvashatóvá teszik az ellenőrzést. Ha egy felülvizsgálat **Elutasított** és vissza lesz küldve az alkalmazottnak, akkor az alkalmazott és a vezető is módosíthatja a szükséges módosításokat, hogy az alkalmazott újra beküldhesse.
+    - Az állapotok szabályozzák az ellenőrzés elérhetőségét. A **Még el nem kezdett** állapotnál mindenki szerkesztheti az ellenőrzést. A **Folyamatban** állapotnál csak az alkalmazott tekintheti meg és szerkesztheti az ellenőrzést. Az **Ellenőrzésre kész** állapotnál csak a vezető tekintheti meg és szerkesztheti az ellenőrzést. **A végleges ellenőrzés** állapot lehetővé teszi, hogy az alkalmazott és a vezető is megtekintse és szerkessze a véleményt, ha az ellenőrzés típusában be van jelölve a **Szerkesztés engedélyezése a végleges véleményben** beállítás. A **Kész** és **Visszavonva** állapotok csak olvashatóvá teszik az ellenőrzést. Ha egy felülvizsgálat **Elutasított** és vissza lesz küldve az alkalmazottnak, akkor az alkalmazott és a vezető is módosíthatja a szükséges módosításokat, hogy az alkalmazott újra beküldhesse.
 
 33. Az **Áttekintés** mezőben adjon meg egy értéket.
 34. Válasza a **Felülvizsgálat** lapot. Ahogy az ellenőrzés végighalad az állapotokon, mind az alkalmazott, mind a vezető adhat hozzá megjegyzéseket az egyes célokhoz és kompetenciákhoz.  

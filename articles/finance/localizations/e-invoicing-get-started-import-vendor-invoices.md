@@ -2,7 +2,7 @@
 title: Az elektronikus számlázási szolgáltatás használata a szállítói számlák importálására
 description: Ez a témakör arról tartalmaz tájékoztatást, hogy hogyan lehet importálni a szállítói számlákat az elektronikus számlázás szolgáltatással.
 author: gionoder
-ms.date: 08/03/2021
+ms.date: 09/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 434bf1f6a5a727a71592493b85ab166cbeff2f0980c2c968c99973a03f4dc660
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c28adbfe532e77a52cab7625b9539d1e8e528bea
+ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751252"
+ms.lasthandoff: 09/03/2021
+ms.locfileid: "7473376"
 ---
 # <a name="use-the-electronic-invoicing-service-to-import-vendor-invoices"></a>Az elektronikus számlázási szolgáltatás használata a szállítói számlák importálására
 
@@ -45,13 +45,21 @@ Konfiguráljon egy e-mail fiók csatornát, ha az Elektronikus számlázás funk
 
 1. Az RCS-ben válassza ki a létrehozott Elektronikus számlázás funkciót. Győződjön meg arról, hogy a **Vázlat** állapotú verziót választotta ki.
 2. A **Beállítások** lapon a rácson jelölje ki a funkcióbeállítást, majd válassza a **Szerkesztés** lehetőséget.
-3. Az **Adatcsatorna** lapon a **Paraméterek** mezőcsoportban válassza a **Kiszolgáló címe** lehetőséget, és adja meg az e-mail fiók szolgáltatóját.
-4. Válassza ki a **Kiszolgálóportot**, és adja meg az e-mail fiók szolgáltatója által használt port számát.
-5. Válassza a **Felhasználónév titok** lehetőséget, és adja meg annak a Kulcstároló titoknak a nevét, amely az e-mail felhasználói fiók azonosítóját tartalmazza.
-6. Válassza a **Felhasználói jelszó titok** lehetőséget, és adja meg annak a Kulcstároló titoknak a nevét, amely az e-mail felhasználói fiók jelszavát tartalmazza.
-7. Válassza ki a **Tárgy szűrőt**. Tekintse át és frissítse az alapértelmezett e-mail tárgyát tartalmazó karakterláncot az importálandó elektronikus szállítói számlát tartalmazó e-mail azonosításához.
-8. Az **Alkalmazhatósági szabályok** lapon tekintse át és szükség szerint frissítse a kritériumokat. További információ: [Alkalmazhatósági szabályok](e-invoicing-configuration-rcs.md#applicability-rules).
-9. Válassza a **Mentés** gombot, és zárja be az oldalt.
+3. Adja meg a csatorna nevét az **Adatcsatorna** lapon a **Paraméterek** mezőcsoportban az **Adatcsatorna** mezőben. A csatornanév nem lehet több tíz karakternél.
+4. A **Kiszolgáló címe** mezőbe írja be az e-mail-fiók szolgáltatóját. Például a kiszolgáló címe a **https://outlook.live.com/** oldalhoz **imap-mail.outlook.com**.
+5. A **Kiszolgálóport** mezőben adja meg az e-mail-fiók szolgáltatója által használt port számát. Például a **https://outlook.live.com/** kiszolgálóportja **993**.
+6. A **Felhasználónév titkos kódja** mezőben adja meg annak a Kulcstároló titkos kódnak a nevét, amely az e-mail felhasználói fiók azonosítóját tartalmazza. Ezt a titkos kulcsot az Azure Key Vault szolgáltatással kell létrehozni és a szolgáltatási környezetben beállítani. 
+7. A **Felhasználói jelszó titkos kódja** mezőben adja meg annak a Kulcstároló titkos kódnak a nevét, amely az e-mail felhasználói fiók jelszavát tartalmazza.
+8. Nem kötelező – Adja meg az értékeket a **Szűrőtől**, **Tárgyszűrő** és **Dátumszűrő** mezőkben.
+9. Adja meg azoknak a postafiók-mappáknak a nevét, amelyekre a következő műveletek vonatkoznak:
+
+    - Importálva a következőből: **Fő mappa**
+    - A sikeres feldolgozás után mentve: **Archiválási mappa**
+    - A sikertelen feldolgozás után mentve:  **Hibamappa**, ezeket a mappákat nem szükséges létrehozni a postafiókban. A mappák automatikusan létrejönnek az első e-számla importálása és feldolgozása után. 
+   
+10. Adja hozzá a fájlszűrés adatait a **Mellékletszűrő** mezőcsoportban. A rendszer csak a megadott szűrőnek megfelelő mellékleteket dolgozza fel. Beállíthatja például az xml-kiterjesztésű mellékletekhez az "\*.xml"-t. A melléklet nevét a Dynamics 365 Finance vagy a Dynamics 365 Supply Chain Management beállítás során használja. 
+11. Az **Alkalmazhatósági szabályok** lapon tekintse át és szükség szerint frissítse a kritériumokat. A **Csatorna** mezőnek meg kell egyeznie a korábban megadott **Adatcsatornával**. További információ: [Alkalmazhatósági szabályok](e-invoicing-configuration-rcs.md#applicability-rules).
+12. Válassza a **Mentés** gombot, és zárja be az oldalt.
 
 ### <a name="configure-a-microsoft-sharepoint-channel"></a>Microsoft SharePoint-csatorna konfigurálása
 
@@ -71,10 +79,10 @@ Konfiguráljon egy Microsoft SharePoint-csatornát, ha az Elektronikus számláz
 
 Az Elektronikus számlázás funkció telepítését lásd: [Az elektronikus számlázás funkció telepítése a szolgáltatási környezetbe](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment).
 
-## <a name="set-up-vendor-invoice-import-in-finance-and-supply-chain-management"></a>Szállítói számlaimport beállítása a Finance és a Supply Chain Management szolgáltatásban
+## <a name="set-up-vendor-invoice-import-in-finance-or-supply-chain-management"></a>Szállítói számlaimport beállítása a Finance vagy a Supply Chain Management szolgáltatásban
 Végezze el a következő két szakasz lépéseit a különböző típusú szállítói számlaimportálások beállításához.
 
-### <a name="import-vendor-invoices-from-email"></a>Szállítói számlák importálása e-mailből
+### <a name="import-brazilian-nf-e-from-email"></a>Brazíliai NF-e importálása e-mailből (BR)
 
 1. Jelentkezzen be a Finance vagy a Supply Chain Management környezetbe, és ellenőrizze, hogy a megfelelő jogi személyhez tartozik-e.
 2. Menjen a **Szervezeti adminisztráció** > **Beállítás** > **Elektronikus dokumentumparaméterek** lehetőségre.
@@ -98,30 +106,43 @@ Végezze el a következő két szakasz lépéseit a különböző típusú szál
 ### <a name="import-peppol-electronic-vendor-invoices"></a>PEPPOL elektronikus szállítói számlák importálása
 
 1. Menjen az **Elektronikus jelentéskészítés** munkaterületre, és válassza a **Jelentéskonfigurációk** menüpontot.
-2. Válassza ki az **Vevői számla kontextus modell** lehetőséget, és hozzon létre egy származtatott konfigurációt.
-3. A **Vázlat** verzióban válassza a **Tervező** lehetőséget.
-4. Az **Adatmodell** fában jelölje ki a **Vevői számla** elemet, majd válassza a **Modell hozzárendelése adatforráshoz** lehetőséget.
-5. A **Meghatározások** fán jelölje ki a **Vevői számla** elemet, majd válassza a **Tervező** elemet.
-6. Az **Adatforrások** fán válassza a **Kontextus\_Csatorna** elemet. Az **Érték** mezőben válassza ki a **PEPPOL** lehetőséget. Ez annak a csatornának a neve, amelyet az RCS-ben az Elektronikus számlázás funkció adatcsatornájának konfigurációjában adtak meg. 
+2. Válassza ki a **Vevői számlakontextus-modellt**, majd válassza ki a **Konfiguráció létrehozása** > **Származtatás innen: Vevői számlamodell, Microsoft** lehetőséget származtatott konfiguráció létrehozásához.
+3. A **Vázlat** verzióban válassza a **Tervező** lehetőséget és az **Adatmodell** fában válassza a **Modell hozzárendelése adatforráshoz** lehetőséget.
+4. A **Meghatározások** fán jelölje ki az **Adatcsatorna** elemet, majd válassza a **Tervező** elemet.
+5. Bontsa ki az **Adatforrások** fában a **$Context\_Csatorna** tárolót. Az **Érték** mezőben válassza a **Szerkesztés** lehetőséget, és adja meg az adatcsatorna nevét. Ez annak a csatornának a neve, amelyet az RCS-ben az Elektronikus számlázás funkció adatcsatornájának konfigurációjában adtak meg. 
 7. Válassza a **Mentés** gombot, és zárja be az oldalt.
 8. Zárja be a lapot.
-9. Válassza ki a **Vevői számla kontextus modell** lehetőséget, majd a **Verziók** gyorslapon válassza az **Állapot módosítása** > **Befejezett** lehetőséget.
+9. Válassza ki a **Vevői számlakontextus-modellből** az imént létrehozott származtatott konfigurációt, és a **Verziók** gyorslapon válassza a **Módosítási állapot** > **Befejezve** lehetőséget.
 10. Menjen a **Szervezeti adminisztráció** > **Beállítás** > **Elektronikus dokumentum paraméterek** menüpontba, és a **Jellemzők** lapon győződjön meg arról, hogy a **PEPPOL Global elektronikus számlák** van kiválasztva. 
 11. A **Külső csatornák** lapon a **Csatornák** mezőcsoportban válassza a **Hozzáadás** lehetőséget.
-12. A **Csatorna** mezőbe írja be a **PEPPOL** értéket. Adjon meg egy leírást a **Leírás** mezőben.
-13. A **Vállalat** mezőben válassza ki a jogi személyt. A **Dokumentum kontextus** mezőben válassza az **Vevői számla kontextus - Vevői számla kontextus modell** lehetőséget.
-14. Válassza a **Mentés** gombot, majd zárja be az oldalt.
+12. A **Csatorna** mezőben adja meg az adatcsatorna nevét, a **Leírás** mezőben pedig egy leírást.
+13. A **Vállalat** mezőben válassza ki a jogi személyt. 
+14. A **Dokumentumkontextus** mezőben válassza ki az újonnal származtatott konfigurációt a **Vevői számlakontextus-modellből**. A leképezés leírásának **Adatcsatorna-kontextusnak** kell lennie.
+15. A **Források importálása** mezőcsoportban válassza a **Hozzáadás** lehetőséget.
+16. A **Név** mezőben adja meg a **Mellékletszűrő neve** elemet, és az **Adatentitás neve** mezőben válassza ki a **Szállítói számla fejlécét**.
+17. A **Modellleképezés** mezőben válassza a **Szállítói számla importálása – Import szállítói számla** lehetőséget.
+18. Kattintson a **Mentés** gombra, majd zárja be az oldalt.
 
 
 ## <a name="receive-electronic-invoices"></a>Elektronikus számlák fogadása
+
+Az elektronikus számlázás szolgáltatás két lépést hajt végre az adatcsatornákból történő számlázás során:
+
+1. A postafiók elérése és az e-mail olvasása.
+2. Az e-mailek feldolgozása. 
+    
+E két lépés végrehajtásához az ügyfélnek minden egyes lépésnél manuálisan kell meghívnia a szolgáltatást. Javasoljuk azonban, hogy állítsa be az elektronikus dokumentumok fogadására szolgáló köteget.
+
 Ha elektronikus számlákat szeretne kapni, kövesse az alábbi lépéseket:
 
 1. Menjen a **Szervezeti adminisztráció** > **Időszakos** > **Elektronikus dokumentumok** > **Elektronikus dokumentumok fogadása** menüpontra.
 2. Válassza az **OK** lehetőséget, majd zárja be az oldalt.
 
+
 ## <a name="view-receive-logs-for-electronic-invoices"></a>Elektronikus számlák fogadási naplóinak megtekintése
 
 Az elektronikus számlák fogadási naplóinak megtekintéséhez lépjen a **Szervezet adminisztráció** > **Időszakos** > **Elektronikus dokumentumok** > **Elektronikus dokumentumok fogadási naplója** menüpontra.
+Ha nem látja a sikeresen feldolgozott számlákat, távolítsa el a táblaszűrőt.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

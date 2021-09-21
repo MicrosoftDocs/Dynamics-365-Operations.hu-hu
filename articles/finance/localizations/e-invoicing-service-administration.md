@@ -2,7 +2,7 @@
 title: Elektronikus számlázás adminisztrációs összetevői
 description: Ez a témakör az Elektronikus számlázás adminisztrációval kapcsolatos összetevőiről nyújt tájékoztatást.
 author: gionoder
-ms.date: 04/29/2021
+ms.date: 08/31/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6582a0a9eda19fe69ead853ea5d79d763afcb8a468717fde84a32146fd0f79af
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d187e8a03552258099d7021ff056d0726ea60ca1
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721726"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463881"
 ---
 # <a name="electronic-invoicing-administration-components"></a>Elektronikus számlázás adminisztrációs összetevői
 
@@ -31,14 +31,14 @@ Ez a témakör az Elektronikus számlázás adminisztrációval kapcsolatos öss
 
 ## <a name="azure"></a>Azure
 
-A Microsoft Azure használatával létrehozhatja a kulcstartó és a tárfiók titkos kódjait. Ezután használja az Elektronikus számlázás konfigurációjában használt titkos kódokat.
+A Microsoft Azure használatával létrehozhatja a kulcstartó titkos kódjait és beállíthatja a tárfiókot. Ezután használja az elektronikus számlázás konfigurációjában a kulcstartó titkos kódjait és a tárfiók SAS-jogkivonatát.
 
 ## <a name="lifecycle-services"></a>Lifecycle Services
 
-A Microsoft Dynamics Lifecycle Services (LCS) használatával engedélyezze a mikroszolgáltatást az LCS-telepítési projekt mikroszolgáltatásai számára.
+A Microsoft Dynamics Lifecycle Services (LCS) használatával engedélyezze az LCS-telepítési projekt elektronikus számlázási bővítménye számára.
 
 > [!NOTE]
-> A mikroszolgáltatások LCS-szolgáltatásba való telepítéséhez legalább egy 2. szintű virtuális gép szükséges. A környezet tervezésével kapcsolatos további tudnivalókat lásd: [Környezet tervezése](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+> A bővítmények LCS-szolgáltatásba való telepítéséhez legalább egy **2. szintű környezet** szükséges. A környezet tervezésével kapcsolatos további tudnivalókat lásd: [Környezet tervezése](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
  
 
 ## <a name="regulatory-configuration-services"></a>Regulatory Configuration Services
@@ -53,20 +53,21 @@ Az RCS-szel kapcsolatos további információért lásd a [Regulatory Configurat
 
 Ahhoz, hogy az RCS használatával konfigurálni tudja az elektronikus számlákat, be kell állítania, hogy az RCS lehetővé tegye a kommunikációt az Elektronikus számlázással. Ezt a konfigurációt az **Elektronikus jelentéskészítés paraméterei** oldal **Elektronikus számlázás** lapján lehet végrehajtani.
 
-#### <a name="service-endpoint"></a>Szolgáltatás végpontja
+#### <a name="service-endpoint"></a><a id='svc-endpoint-uris'></a>Szolgáltatás végpontja
 
 Az Elektronikus számlázás számos Azure adatközpont földrajzi régióban elérhető. Az alábbi tábla felsorolja a régiónkénti elérhetőségeket.
 
-| Azure adatközpont földrajzi régió |
-|----------------------------|
-| Amerikai Egyesült Államok              |
-| Európa                     |
-| Egyesült Királyság             |
-| Ázsia                       |
+
+| Adatközpont Azure földrajzi régió | Szolgáltatási végpont URI-címe                                                       |
+|----------------------------|----------------------------------------------------------------------------|
+| Egyesült Államok              | <p>https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing</p> |
+| Európa                     | <p>https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Egyesült Királyság             | <p>https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
+| Ázsia                       | <p>https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/</p><p>https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/</p> |
 
 ### <a name="service-environments"></a>Szolgáltatáskörnyezetek
 
-A szolgáltatási környezetek olyan logikai partíciók, amelyek az Elektronikus számlázás elektronikus számlázási funkcióinak végrehajtását támogatják. A biztonsági titkos kódokat és digitális tanúsítványokat, valamint a cégirányítást (azaz a hozzáférési engedélyeket) a szolgáltatási környezet szintjén kell konfigurálni.
+A szolgáltatási környezetek olyan logikai partíciók, amelyek az Elektronikus számlázás globalizáció funkcióinak végrehajtását támogatják. A biztonsági titkos kódokat és digitális tanúsítványokat, valamint a cégirányítást (azaz a hozzáférési engedélyeket) a szolgáltatási környezet szintjén kell konfigurálni.
 
 Az ügyfelek annyi szolgáltatási környezetet hozhatnak létre, amennyit csak akarnak. Az ügyfél által létrehozott összes szolgáltatási környezetek egymástól függetlenek.
 
@@ -84,8 +85,8 @@ A szolgáltatási környezeteket kezelése állapotokkal történik. Lehetséges
 
 Az Elektronikus számlázási szolgáltatás a felelős a vállalat tulajdonában lévő Azure-erőforrásokban lévő összes üzleti adatának tárolásáért. Ha biztosítani szeretné, hogy a szolgáltatás megfelelően működjön, és hogy az elektronikus számlázáshoz szükséges, illetve az általa létrehozott összes üzleti adat megfelelően elérhet legyen, akkor két fő Azure-erőforrást kell létrehoznia:
 
-- Az elektronikus számlák tárolásához szükséges Azure tárfiókot (Blob-tároló)
-- Egy Azure-kulcstartót a tanúsítványok és a tárolási fiók Uniform Resource Identifier (URI) tárolásához
+- Az Azure-tárfiók (Blob storage), amely elektronikus dokumentumokat, például elektronikus számlákat, dokumentumátalakítások eredményeit és külső webszolgáltatásoktól kapott válaszokat tárol.
+- Egy Azure Key Vault a tanúsítványok és a tárolási fiók (SAS-jogkivonat) Uniform Resource Identifier (URI) tárolásához.
 
 
 A dedikált kulcstartót és a vevői tárfiókot kifejezetten az Elektronikus számlázással történő használatra kell felosztani. További információért lásd az [Azure tárfiók és kulcstartó létrehozása](e-invoicing-create-azure-storage-account-key-vault.md) lehetőséget.
@@ -122,13 +123,13 @@ A Finance and Supply Chain Management modul és az Elektronikus számlázási b�
 
 A szolgáltatásvégpont az az URL-cím, ahol az Elektronikus számlázás található. Ahhoz, hogy a Finance and Supply Chain Management modul segítségével elektronikus számlákat tudjon kiállítani a szolgáltatásvégpontot úgy kell konfigurálni, hogy lehetővé tegye a szolgáltatással való kommunikációt.
 
-A szolgáltatásvégpont beállításához lépjen a **Szervezeti adminisztráció \> Beállítás \> Elektronikus dokumentum paramétere** lehetőségre, majd a **Benyújtási szolgáltatások** oldal **Elektronikus számlázás URL-címe** mezőben adja meg az URL-címet a **Szolgáltatávégpont** szakaszban ismertetett módon.
+A szolgáltatásvégpont beállításához lépjen a **Szervezeti adminisztráció \> Beállítás \> Elektronikus dokumentum paraméterei** lehetőségre, majd az **Elektronikus számlázás** oldal **Végpont URL-címe** mezőben adja meg a megfelelő URL-címet az ebben a témakörben korábban ismertetett [Szolgáltatás-végpont](#svc-endpoint-uris) szakaszban található táblázatból.
 
 #### <a name="environments"></a>Környezetek
 
 A Finance and Supply Chain Management modulban megadott környezetnév annak a környezetnek a nevére vonatkozik, amelyet az RCS-ben hoztak létre, és az Elektronikus számlázásban tettek közzé.
 
-A környezetet be kell állítani az **Elektronikus dokumentum paraméter** oldal **Benyújtási szolgáltatások** lapján, hogy minden elektronikus számla kiadási kérése tartalmazza azt a környezetet, ahol az Elektronikus számlázás eldöntheti, hogy melyik elektronikus számlázási funkciónak kell feldolgoznia a kérést.
+A környezetet be kell állítani az **Elektronikus bizonylat paraméterei** lap **Elektronikus számlázás** lapján. Ily módon minden elektronikus számla kiállítására vonatkozó kérés tartalmazza azt a környezetet, ahol az elektronikus számlázás meghatározhatja, hogy melyik elektronikus számlázási funkciónak kell feldolgoznia az igénylést.
 
 ## <a name="additional-resources"></a>További erőforrások
 

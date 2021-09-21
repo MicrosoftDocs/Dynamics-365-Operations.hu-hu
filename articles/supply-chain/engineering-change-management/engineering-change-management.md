@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: bb6fd57f200b101cb2df396cb10417feaa9425c1
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
+ms.openlocfilehash: 2fe94ea1afb74520ee97268f62d42832bad5c3df
+ms.sourcegitcommit: 07fada750de54e2907377df2a9f7dae497c3b66e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384585"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "7467422"
 ---
 # <a name="manage-changes-to-engineering-products"></a>A mérnöki termékek módosításának kezelése
 
@@ -122,6 +122,9 @@ Az érintett tranzakciók áttekintéséhez, a kijelölt tranzakciók blokkolás
     - **Előzmények megtekintése** – a kijelölt tranzakcióval kapcsolatos műveletek előzményeinek megnyitása az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanelen. (Az előzményekben például látható, hogy az értesítések el lettek-e küldve, vagy a tranzakciók zárolva lettek-e.) 
     - **Az összes tranzakció megjelenítése** – az összes tranzakciót (nem csak a nyitottakat) tartalmazó lista megnyitása.
 
+> [!IMPORTANT]
+> A **Termelés értesítése** gomb csak akkor érhető el, ha a *Tervezési értesítések termeléshez* funkció be van kapcsolva a rendszerben. További utasításokat a [Tervezési változtatáskezelés – áttekintés](product-engineering-overview.md) részben talál.
+
 #### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>A tranzakciók értesítéseinek áttekintése és feldolgozása
 
 A kapott módosítási értesítéseket a következőképpen olvashatja át és dolgozhatja fel:
@@ -131,6 +134,9 @@ A kapott módosítási értesítéseket a következőképpen olvashatja át és 
 - Termelési rendelések esetén kiválaszthatja, hogy csak az Ön által kezelt termelési erőforrásokra vonatkozó módosítási értesítéseket szeretné-e áttekinteni. A Műveleti panel **Termelési szint kezelése** munkaterületén lévő **Munkaterület konfigurálása** lehetőség kiválasztásával úgy szűrheti az oldalt, hogy csak az Ön által kezelt termelési egységekre, csoportokra és/vagy erőforrásokra vonatkozó adatok jelenjenek meg. Az **Összegzés** szakaszban lévő **Módosított termékekkel rendelkező termelési rendelések** csempén látható a megadott szűrőbeállításoknak megfelelő értesítések száma. A csempe kiválasztásával megnyithatja a **Tervezési értesítések** lapot, amelyen megtekintheti a szűrő feltételeinek megfelelő tranzakciók teljes listáját.
 
 A termelési rendelés értesítéseinek **Tervezési értesítések** oldalon történő áttekintése során követheti a kapcsolódó változási vagy termelési rendelésekre mutató hivatkozásokat. Ehhez válassza ki az oszlop értékeit vagy a kapcsolódó parancsokat a Művelet panelen. Miután befejezte a módosítások kiértékelét, és miután igény szerint visszavonta vagy módosította a termelési rendeléseket, az értesítéseket megjelölheti megoldottként. Válassza ki az értesítést, majd a Művelet panelen válassza a **Megoldás** lehetőséget. Az értesítést az összes felhasználó nézetéből eltávolítja a rendszer.
+
+> [!IMPORTANT]
+> A termelési rendelésekre vonatkozó értesítések küldésének lehetősége megköveteli, hogy a *Tervezési értesítések termeléshez* funkció be legyen kapcsolva a rendszerben. További utasításokat a [Tervezési változtatáskezelés – áttekintés](product-engineering-overview.md) részben talál.
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Módosítási rendelés létrehozása módosítási kérelemből
 

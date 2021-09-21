@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-15
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 96a644bf129de6dd3f78098bcb6415d17058d6decbd7d904a99bb6f050d3a9e0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c30df23debed9e2ab90745e6ea9d0e6b8a05b6d5
+ms.sourcegitcommit: 4d11061f5de0ddba1f968bd5c3fd694a8b104ccc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730442"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "7429267"
 ---
 # <a name="payroll-variable-compensation-plan"></a>Változó kompenzációs konstrukció bérlistája
 
@@ -36,44 +36,51 @@ Fizikai név: mshr_payrollvariablecompensationawardentity.
 
 | Tulajdonság</br>**Fizikai név**</br>**_Típus_** | Használat | Leírás |
 | --- | --- | --- |
-| **Személyzeti szám**</br>mshr_personnelnumber</br>*Sztring* | Írásvédett</br>Szükséges |Az alkalmazott egyedi személyzeti száma.  |
-| **Jutalom dátuma**</br>mshr_awarddate</br>*Dátum és idő eltolása* | Írásvédett</br>Szükséges | A jutalom dátuma. |
-| **Jutalom típusa**</br>mshr_awardtype</br>*[mshr_HrmCompVarAwardEmplType beállításkészlet](hr-admin-integration-payroll-api-award-type.md)* | Írásvédett</br>Szükséges | A változó kompenzációs konstrukcióhoz meghatározott jutalomtípus. |
-| **Pénznem**</br>mshr_unitcurrencycode</br>*Sztring* | Írásvédett </br>Szükséges |A változó kompenzációs konstrukcióhoz meghatározott pénznem.   |
+| **Személyzeti szám**</br>mshr_personnelnumber</br>*Sztring* | Írásvédett | Az alkalmazott egyedi személyzeti száma.  |
+| **Jutalom dátuma**</br>mshr_awarddate</br>*Dátum és idő eltolása* | Írásvédett | A jutalom dátuma. |
+| **Jutalom típusa**</br>mshr_awardtype</br>*[mshr_HrmCompVarAwardEmplType beállításkészlet](hr-admin-integration-payroll-api-award-type.md)* | Írásvédett | A változó kompenzációs konstrukcióhoz meghatározott jutalomtípus. |
+| **Pénznem**</br>mshr_unitcurrencycode</br>*Sztring* | Írásvédett |A változó kompenzációs konstrukcióhoz meghatározott pénznem.   |
 | **Fix kompenzációs konstrukció azonosítója**</br>mshr_fixedplanid</br>*Sztring* | Írásvédett | A jutalom számításához alapként használt fix fizetési konstrukció. |
 | **Egységérték**</br>mshr_awardamount</br>*Decimális* | Írásvédett | Az egység értéke |
 | **Folyamat típusa**</br>mshr_processtype</br>*[mshr_hrmCompProcessType beállításkészlet](hr-admin-integration-payroll-api-process-type.md)* | Írásvédett | A folyamat típusa. |
 | **Változó kompenzációs konstrukció típusa**</br>Sztring</br>*mshr_typeid* | Írásvédett | A változó kompenzációs konstrukció típusa. |
 | **Változó kompenzációs konstrukció azonosítója**</br>Sztring</br>*mshr_planid* | Írásvédett | A változó kompenzációs konstrukció azonosítója. |
+| **Egységek száma**</br>Decimális</br>*mshr_numberofunits* | Írásvédett | A jutalom egységeinek száma. |
 | **Elsődleges mező**</br>mshr_primaryfield</br>*GUID* | Írásvédett</br>Rendszer által előállított. | |
-| **Alkalmazott azonosítója**</br>mshr_fk_employee_id_value</br>*GUID* | Írásvédett</br>Szükséges</br>Idegen kulcs: mshr_payrollemployeeentity entitáshoz tartozó mshr_Employee_id  | Alkalmazott azonosítója. |
-| **Változó kompenzációs konstrukció bérlistájának entitása**</br>mshr_payrollvariablecompensationawardentityid</br>*GUID* | Szükséges</br>Rendszer által előállított | A kompenzációs konstrukció azonosítására szolgáló, rendszer által generált GUID-értéke. |
+| **Változó kompenzációs konstrukció bérlistájának entitása**</br>mshr_payrollvariablecompensationawardentityid</br>*GUID* | Rendszer által előállított | A kompenzációs konstrukció azonosítására szolgáló, rendszer által generált GUID-értéke. |
 
+## <a name="relations"></a>Kapcsolatok 
+
+|Eszközérték | Kapcsolódó entitás | Navigációs tulajdonság | Gyűjtemény típusa |
+| --- | --- | --- | --- |
+| _mshr_fk_employee_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Employee_id | mshr_FK_PayrollEmployeeEntity_VariableCompAward |
+| _mshr_fk_fixedcomp_id_value | [mshr_payrollfixedcompensationplanentity](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md) | mshr_FK_FixedComp_id | mshr_FK_PayrollFixedCompensationPlanEntity_VariableCompAward |
 
 ## <a name="example-query"></a>Példa lekérdezésre
 
 **Kérelem**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/mshr_payrollvariablecompensationawardentities?$filter=mshr_personnelnumber eq '000001'
+GET [Organizaton URI]/api/data/v9.1/mshr_payrollvariablecompensationawardentities?$filter=mshr_personnelnumber eq '000046'
 ```
 
 **Válasz**
 
 ```json
 {
-    "mshr_personnelnumber": "000001",
+    "mshr_personnelnumber": "000046",
     "mshr_awarddate": "2015-01-15T00:00:00Z",
     "mshr_awardtype": 200000000,
     "mshr_unitcurrencycode": "USD",
     "mshr_fixedplanid": "",
-    "mshr_awardamount": 1,
+    "mshr_unitvalue": 1,
     "mshr_processtype": 200000003,
     "mshr_typeid": "Bonus",
     "mshr_planid": "MgBonus",
-    "mshr_primaryfield": "000001 | MgBonus | Bonus | 1/15/2015",
-    "_mshr_fk_employee_id_value": "00000655-0000-0000-adff-004105000000",
-    "mshr_payrollvariablecompensationawardentityid": "000001a1-0000-0000-adff-004105000000",
+    "mshr_numberofunits": 1500,
+    "mshr_primaryfield": "000046 | MgBonus | Bonus | 1/15/2015",
+    "_mshr_fk_employee_id_value": "00000666-0000-0000-daff-004105000000",
+    "mshr_payrollvariablecompensationawardentityid": "000001a4-0000-0000-0d00-005001000000",
     "_mshr_fk_fixedcomp_id_value": null
 }
 ```

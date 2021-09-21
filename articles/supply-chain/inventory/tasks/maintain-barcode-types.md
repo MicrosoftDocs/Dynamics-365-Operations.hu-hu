@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 052311e15aeb20b927cbed217a2bda600dad60a5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4102f8036c0aede7c8a2adcaa9b8799a71ac7ada
+ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345650"
+ms.lasthandoff: 08/28/2021
+ms.locfileid: "7441289"
 ---
 # <a name="maintain-bar-code-types"></a>Vonalkódtípusok kezelése
 
@@ -32,7 +32,8 @@ Ez az eljárás bemutatja, hogyan állíthat be egy új vonalkód-definíciót, 
 1. A **Vonalkód beállítása** mezőbe írjon be egy értéket.
 1. Írjon egy értéket a **Leírás** mezőbe.
 1. A **Vonalkód típusa** mezőben válasszon ki egy lehetőséget.
-    * Az USMF használata esetén választhatja az „39-es kódot”.  
+    * Az USMF használata esetén választhatja az „39-es kódot”.
+1. A **Maszkazonosító** mezőben adja meg a vonalkódmaszk azonosítóját. A vonalkódmaszkok vonalkódok létrehozására és a pénztári (POS) rendszerben beolvasott vonalkódok gyors azonosítására használhatók. A részleteket lásd: [Vonalkódmaszkok beállítása](../../../commerce/set-up-bar-code-masks.md).
 1. A **Méret** mezőbe írjon be egy számot.
 1. A **Maximális hossz** mezőbe írjon be egy számot.
 1. Válassza a **Mentés** lehetőséget.

@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: defbcdc7ada4471345f8c728522e15f16a8bec8f
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 644eb0d682c35bd604c188aa02e4a6c69b3ff209
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344288"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474988"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Készletláthatóság bővítményének áttekintése
 
@@ -31,13 +31,11 @@ A Microsoft Dataverse rendszerre épülő mikroszolgáltatásként a Készletlá
 
 A készlet láthatóságát több harmadik fél rendszerével is integrálhatja a szabványosított készletméretekre vonatkozó konfigurációs opciók beállításával és a tranzakciótípusok beállításával. A készlet láthatósága támogatja az egyéni bővíthetőséget is a konfigurálható számított mennyiségek révén.
 
-## <a name="supported-features"></a>Támogatott funkciók
+## <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Készletláthatóság integráció a Dynamics 365 Supply Chain Management rendszerbe
 
-### <a name="inventory-visibility-integration-with-dynamics-365-supply-chain-management"></a>Készletláthatóság integráció a Dynamics 365 Supply Chain Management rendszerbe
+Az integrált megoldás a készletadatokat a Dynamics 365 Supply Chain Management rendszerből tölti le, és folyamatosan nyomon követi a készletváltozásokat. A további tudnivalókat lásd a [Készlet láthatóságának telepítése és beállítása](inventory-visibility-setup.md), valamint a [Készlet láthatóságának beállítása](inventory-visibility-configuration.md) részben.
 
-Az integrált megoldás a készletadatokat a Dynamics 365 Supply Chain Management rendszerből tölti le, és folyamatosan nyomon követi a készletváltozásokat. További információért lásd: [Készletláthatóság beállítás](inventory-visibility-setup.md).
-
-### <a name="get-a-global-view-of-inventory"></a>A készlet globális áttekintése
+## <a name="get-a-global-view-of-inventory"></a>A készlet globális áttekintése
 
 Az integrált megoldás lehetővé teszi saját adatforrásainak meghatározását és a készletadatok központosítását. További információért lásd: [Készlet láthatóságának konfigurálása](inventory-visibility-configuration.md).
 
@@ -46,7 +44,7 @@ A készlet megtekintéséhez kétféle megközelítés létezik:
 - Küldjön lekérdezést a nagy teljesítményű API-n keresztül. Ez az API közel valós idejű készletadatokat tud visszaadni közvetlenül egy gyorsítótárazott példányból. Szerződéseket és mintákat a [Készletláthatóság nyilvános API-k](inventory-visibility-api.md) között talál.
 - Tekintse meg a nyers készletlistát. Ez a lista rendszeresen szinkronizálódik egy gyorsítótárazott példányból, és a Dataverse rendszerben látható. További információért lásd: [Készletláthatóság alkalmazás](inventory-visibility-power-platform.md).
 
-### <a name="soft-reservations"></a>Lágy foglalások
+## <a name="soft-reservations"></a>Lágy foglalások
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 

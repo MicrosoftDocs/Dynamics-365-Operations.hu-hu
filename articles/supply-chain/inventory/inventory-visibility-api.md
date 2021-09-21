@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 0aca5838ff6d7c9c4d881698be1e2da2e0e1c02e
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343632"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474652"
 ---
 # <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
 
@@ -46,6 +46,9 @@ A következő táblázat a jelenleg elérhető API-kat sorolja fel:
 
 A Microsoft biztosít egy out-of-box *Postman* kérésgyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
+> [!NOTE]
+> Az elérési útvonal {environmentId} része a Microsoft Dynamics Lifecycle Services (LCS) környezetazonosítója.
+
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>A Lifecycle Services környezetének megfelelő végpont megkeresése
 
 A Készletláthatóság mikroszolgáltatás a Microsoft Azure Service Fabric rendszerben kerül telepítésre, több földrajzi területen és több régióban. Jelenleg nincs olyan központi végpont, amely automatikusan átirányítaná a kérést a megfelelő földrajzi területre és régióra. Ezért az információkat a következő minta segítségével kell URL-címé állítani:
@@ -54,22 +57,26 @@ A Készletláthatóság mikroszolgáltatás a Microsoft Azure Service Fabric ren
 
 A régió rövid neve a Microsoft Dynamics Lifecycle Services (LCS) környezetben található. Az alábbi táblázat a jelenleg elérhető régiókat sorolja fel.
 
-| Azure-régió | Régió rövid neve |
-|---|---|
-| Kelet-Ausztrália | eau |
-| Délkelet-Ausztrália | seau |
-| Közép-Kanada | cca |
-| Kelet-Kanada | eca |
-| Észak-Európa | neu |
-| Nyugat-Európa | weu |
-| USA keleti régiója | eus |
-| USA nyugati régiója | wus |
-| Dél-UK | suk |
-| Nyugat-UK | wuk |
+| Azure-régió        | Régió rövid neve |
+| ------------------- | ----------------- |
+| Kelet-Ausztrália      | eau               |
+| Délkelet-Ausztrália | seau              |
+| Közép-Kanada      | cca               |
+| Kelet-Kanada         | eca               |
+| Észak-Európa        | neu               |
+| Nyugat-Európa         | weu               |
+| USA keleti régiója             | eus               |
+| USA nyugati régiója             | wus               |
+| Dél-UK            | suk               |
+| Nyugat-UK             | wuk               |
+| Kelet-Japán          | ejp               |
+| Nyugat-Japán          | wjp               |
+| Dél-Brazília        | sbr               |
+| USA déli középső régiója    | scus              |
 
 A sziget száma az a hely, ahol az LCS-környezetet a Service Fabricon telepítették. Jelenleg nincs mód arra, hogy ezt az információt a felhasználói oldalról megkapjuk.
 
-A Microsoft egy felhasználói felületet (UI) épített be a Power Apps rendszerbe, hogy a mikroszolgáltatás teljes végpontját megismerhesse. További információért lásd: [A szolgáltatás végpontjának keresése](inventory-visibility-power-platform.md#get-service-endpoint).
+A Microsoft egy felhasználói felületet (UI) épített be a Power Apps rendszerbe, hogy a mikroszolgáltatás teljes végpontját megismerhesse. További információért lásd: [A szolgáltatás végpontjának keresése](inventory-visibility-configuration.md#get-service-endpoint).
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Hitelesítés
 
@@ -80,66 +87,66 @@ A biztonsági szolgáltatási token megszerzéséhez kövesse az alábbi lépés
 1. Jelentkezzen be az Azure portálra, és keresse meg a `clientId` és a `clientSecret` értékeket a Dynamics 365 Supply Chain Management alkalmazáshoz.
 1. A Azure AD token (`aadToken`) lekérése egy HTTP-kérelem elküldésével, amely a következő tulajdonságokkal rendelkezik:
 
-    - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
-    - **Módszer:** `GET`
-    - **Törzstartalom (űrlapadatok):**
+   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+   - **Módszer:** `GET`
+   - **Törzstartalom (űrlapadatok):**
 
-        | Kulcs | Érték |
-        |---|---|
-        | ügyfél azonosítója | ${aadAppId} |
-        | titkos ügyfélkód | ${aadAppSecret} |
-        | engedélyezési típus | ügyfél_azonosító adatai |
-        | erőforrás | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+     | Kulcs           | Érték                                |
+     | ------------- | ------------------------------------ |
+     | ügyfél azonosítója     | ${aadAppId}                          |
+     | titkos ügyfélkód | ${aadAppSecret}                      |
+     | engedélyezési típus    | ügyfél_azonosító adatai                   |
+     | erőforrás      | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
 
-    Válaszként egy Azure AD tokent (`aadToken`) kell kapnia. Az alábbi példához hasonlóan jelenik meg.
+   Válaszként egy Azure AD tokent (`aadToken`) kell kapnia. Az alábbi példához hasonlóan jelenik meg.
 
-    ```json
-    {
-        "token_type": "Bearer",
-        "expires_in": "3599",
-        "ext_expires_in": "3599",
-        "expires_on": "1610466645",
-        "not_before": "1610462745",
-        "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
-        "access_token": "eyJ0eX...8WQ"
-    }
-    ```
+   ```json
+   {
+       "token_type": "Bearer",
+       "expires_in": "3599",
+       "ext_expires_in": "3599",
+       "expires_on": "1610466645",
+       "not_before": "1610462745",
+       "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
+       "access_token": "eyJ0eX...8WQ"
+   }
+   ```
 
 1. Fogalmazzon meg egy JavaScript Object Notation (JSON) kérést, amely hasonlít a következő példára.
 
-    ```json
-    {
-        "grant_type": "client_credentials",
-        "client_assertion_type": "aad_app",
-        "client_assertion": "{Your_AADToken}",
-        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-        "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
-        "context_type": "finops-env"
-    }
-    ```
+   ```json
+   {
+       "grant_type": "client_credentials",
+       "client_assertion_type": "aad_app",
+       "client_assertion": "{Your_AADToken}",
+       "scope": "https://inventoryservice.operations365.dynamics.com/.default",
+       "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
+       "context_type": "finops-env"
+   }
+   ```
 
-    Vegye figyelembe az alábbiakat:
+   Vegye figyelembe az alábbiakat:
 
-    - A `client_assertion` értéknek az előző lépésben kapott Azure AD tokennek (`aadToken`) kell lennie.
-    - A `context` érték az a környezetazonosító, ahová telepíteni szeretné a bővítményt.
-    - Az összes többi értéket állítsa be a példában látható módon.
+   - A `client_assertion` értéknek az előző lépésben kapott Azure AD tokennek (`aadToken`) kell lennie.
+   - A `context` érték az a LCS-környezetazonosító, ahová telepíteni szeretné a bővítményt.
+   - Az összes többi értéket állítsa be a példában látható módon.
 
 1. Küldjön el egy HTTP-kérelmet, amely a következő tulajdonságokkal rendelkezik:
 
-    - **URL:** `https://securityservice.operations365.dynamics.com/token`
-    - **Módszer:** `POST`
-    - **HTTP fejléc:** tartalmazza az API verzióját. (A kulcs a `Api-Version`, az érték pedig a `1.0`.)
-    - **Törzstartalom:** Tartalmazza az előző lépésben létrehozott JSON-kérést.
+   - **URL:** `https://securityservice.operations365.dynamics.com/token`
+   - **Módszer:** `POST`
+   - **HTTP fejléc:** tartalmazza az API verzióját. (A kulcs a `Api-Version`, az érték pedig a `1.0`.)
+   - **Törzstartalom:** Tartalmazza az előző lépésben létrehozott JSON-kérést.
 
-    Válaszként egy hozzáférési tokent (`access_token`) kell kapnia. Ezt a tokent kell használnia a Készletláthatóság API hívásához. Íme, egy példa.
+   Válaszként egy hozzáférési tokent (`access_token`) kell kapnia. Ezt a tokent kell használnia a Készletláthatóság API hívásához. Íme, egy példa.
 
-    ```json
-    {
-        "access_token": "{Returned_Token}",
-        "token_type": "bearer",
-        "expires_in": 3600
-    }
-    ```
+   ```json
+   {
+       "access_token": "{Returned_Token}",
+       "token_type": "bearer",
+       "expires_in": 3600
+   }
+   ```
 
 A későbbi szakaszokban a `$access_token` címet fogja használni az utolsó lépésben lekért token ábrázolására.
 
@@ -160,6 +167,9 @@ A következő táblázat összefoglalja a JSON-törzs egyes mezőinek jelentés�
 | `quantities` | Az a mennyiség, amellyel a készleten lévő mennyiséget módosítani kell. Például, ha 10 új könyv kerül a polcra, ez az érték `quantities:{ shelf:{ received: 10 }}` lesz. Ha három könyvet levesznek a polcról vagy eladnak, ez az érték `quantities:{ shelf:{ sold: 3 }}` lesz. |
 | `dimensionDataSource` | A kiküldetés-változtatási eseményben és a lekérdezésben használt dimenziók adatforrása. Az adatforrás megadása esetén a megadott adatforrás egyéni dimenzióit is használhatja. A Készletláthatóság a dimenziókonfiguráció segítségével leképezheti az egyéni dimenziókat az általános alapértelmezett dimenziókhoz. Ha nincs megadva `dimensionDataSource` érték, akkor csak az általános [alapméreteket](inventory-visibility-configuration.md#data-source-configuration-dimension) használhatja lekérdezéseiben. |
 | `dimensions` | Dinamikus kulcs-érték pár. Az értékek a Supply Chain Management néhány dimenziójához vannak rendelve. Azonban egyéni dimenziókat is hozzáadhat (például _Forrás_), hogy jelezze, hogy az esemény a Supply Chain Managementtből vagy egy külső rendszerből származik. |
+
+> [!NOTE]
+> A `SiteId` és a `LocationId` paraméterek építik fel a [partíciókonfigurációt](inventory-visibility-configuration.md#partition-configuration). Ezért ezeket a dimenziókban kell megadni a készletmódosítási események létrehozásakor, a készleten lévő mennyiségek beállításakor vagy felülbírálásakor, illetve a foglalási események létrehozásakor.
 
 ### <a name="create-one-on-hand-change-event"></a><a name="create-one-onhand-change-event"></a>Egy kézben lévő változtatási esemény létrehozása
 
@@ -201,6 +211,9 @@ A következő példa a törzs tartalmának mintáját mutatja. Ebben a mintában
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
+        "SiteId": "1",
+        "LocationId": "11",
+        "PosMachineId": "0001",
         "ColorId": "Red"
     },
     "quantities": {
@@ -211,7 +224,7 @@ A következő példa a törzs tartalmának mintáját mutatja. Ebben a mintában
 }
 ```
 
-A következő példa a `dimensionDataSource` nélküli törzstartalom mintáját mutatja.
+A következő példa a `dimensionDataSource` nélküli törzstartalom mintáját mutatja. Ebben az esetben a `dimensions` lesznek az [alapszintű dimenziók](inventory-visibility-configuration.md#data-source-configuration-dimension). Ha a `dimensionDataSource` be van állítva, a `dimensions` lehet adatforrás- vagy alapszintű dimenzió is.
 
 ```json
 {
@@ -219,9 +232,9 @@ A következő példa a `dimensionDataSource` nélküli törzstartalom mintáját
     "organizationId": "usmf",
     "productId": "T-shirt",
     "dimensions": {
-        "ColorId": "Red",
         "SiteId": "1",
-        "LocationId": "11"
+        "LocationId": "11",
+        "ColorId": "Red"
     },
     "quantities": {
         "pos": {
@@ -275,6 +288,8 @@ A következő példa a törzs tartalmának mintáját mutatja.
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
+            "PosSiteId": "1",
+            "PosLocationId": "11",
             "PosMachineId&quot;: &quot;0001"
         },
         "quantities": {
@@ -284,10 +299,11 @@ A következő példa a törzs tartalmának mintáját mutatja.
     {
         "id": "654321",
         "organizationId": "usmf",
-        "productId": "@PRODUCT1",
-        "dimensionDataSource": "pos",
+        "productId": "Pants",
         "dimensions": {
-            "PosMachineId&quot;: &quot;0001"
+            "SiteId": "1",
+            "LocationId": "11",
+            "ColorId&quot;: &quot;black"
         },
         "quantities": {
             "pos": { "outbound": 3 }
@@ -341,6 +357,8 @@ A következő példa a törzs tartalmának mintáját mutatja. Ennek az API-nak 
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
+             "PosSiteId": "1",
+            "PosLocationId": "11",
             "PosMachineId": "0001"
         },
         "quantities": {
@@ -359,6 +377,12 @@ A következő példa a törzs tartalmának mintáját mutatja. Ennek az API-nak 
 A *Foglalási* API használatához meg kell nyitnia a foglalási funkciót, és ki kell töltenie a foglalási konfigurációt. További információért lásd: [Foglalási konfiguráció (opcionális)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a><a name="create-one-reservation-event"></a>Egy foglalási esemény létrehozása
+
+Különböző adatforrás-beállítások alapján is lehet foglalást indítani. Az ilyen típusú foglalások konfigurálása érdekében először adja meg az adatforrást a `dimensionDataSource` paraméterben. Ezután a `dimensions` paraméterben határozza meg a dimenziókat a céladatforrás dimenzióbeállításai szerint.
+
+A foglalási API hívása esetén a foglalások érvényességének ellenőrzése a logikai `ifCheckAvailForReserv` paraméter megadásával szabályozható a kérelemtörzsben. A `True` érték azt jelenti, hogy ellenőrzés szükséges, míg a `False` érték azt, hogy az ellenőrzés nem kötelező. Az alapértelmezett érték a `True`.
+
+Ha érvényteleníteni szeretne egy foglalást, vagy le szeretné foglalni a megadott készleten lévő mennyiségeket, állítsa a mennyiséget negatív értékre, és állítsa be a `ifCheckAvailForReserv` paramétert `False` értékre az ellenőrzés kihagyása céljából.
 
 ```txt
 Path:
@@ -467,14 +491,28 @@ ContentType:
     application/json
 Body:
     {
-        organizationId: string,
+        dimensionDataSource: string, # Optional
         filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
             [dimensionKey:string]: string[],
         },
         groupByValues: string[],
         returnNegative: boolean,
     }
 ```
+
+A kérés törzsrészében a `dimensionDataSource` még mindig egy választható paraméter. Ha nincs beállítva, a `filters` értékek *alapszintű dimenzióként* lesznek kezelve. A `filters` paraméternek négy kötelező mezője van: `organizationId`, `productId`, `siteId` és `locationId`.
+
+- Az `organizationId` csak egy értéket tartalmazhat, de ettől még egy tömb.
+- A `productId` egy vagy több értéket tartalmazhat. Ha ez egy üres tömb, a rendszer az összes terméket visszaküldi.
+- A `siteId` és a `locationId` particionálásra használatosak a Készletláthatóságban.
+
+A `groupByValues` paraméternek követnie kell az indexelés konfigurációját. További információért lásd: [Termékindex-hierarchia konfigurálása](./inventory-visibility-configuration.md#index-configuration).
+
+A `returnNegative` paraméter szabályozza, hogy az eredmények tartalmaznak-e negatív bejegyzéseket.
 
 A következő példa a törzs tartalmának mintáját mutatja.
 
@@ -484,7 +522,24 @@ A következő példa a törzs tartalmának mintáját mutatja.
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["T-shirt"],
+        "siteId": ["1"],
+        "LocationId": ["11"],
         "ColorId": ["Red"]
+    },
+    "groupByValues": ["ColorId", "SizeId"],
+    "returnNegative": true
+}
+```
+
+Az alábbi példák bemutatják, hogyan lehet lekérdezni egy adott telephely és hely összes termékét.
+
+```json
+{
+    "filters": {
+        "organizationId": ["usmf"],
+        "productId": [],
+        "siteId": ["1"],
+        "LocationId": ["11"],
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true
@@ -512,7 +567,7 @@ Query(Url Parameters):
 Íme egy minta URL-cím. Ez a get-kérés pontosan megegyezik a korábban megadott post-mintával.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

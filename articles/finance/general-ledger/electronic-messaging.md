@@ -2,7 +2,7 @@
 title: Elektronikus üzenetküldés
 description: Ez a témakör a áttekintést és beállítással kapcsolatos információt nyújt az elektromos üzenetküldéssel kapcsolatban a Microsoft Dynamics 365 Finance szolgáltatásban.
 author: liza-golub
-ms.date: 06/29/2021
+ms.date: 08/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 191abc37b7c349aaf3c9e871fe2f1885eec9fc896271d6fac27e5caa0b0fe3b0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16b0e0fa74109f1c63ed47606bebe2fefc604fc5
+ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768339"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7478724"
 ---
 # <a name="electronic-messaging"></a>Elektronikus üzenetküldés
 
@@ -57,6 +57,16 @@ Az EM funkció az alábbi eseteket támogatja:
 - A létrehozott jelentések tárolása és áttekintése.
 - A naplóadatok tárolása és áttekintése, amelyek egy üzenettel vagy üzenetelemhez kapcsolódóan futtatott műveletre vonatkoznak.
 - A feldolgozás szabályozása különböző üzenetállapotok és üzenetelem-állapotok segítségével.
+
+## <a name="security-privileges"></a>Biztonsági jogosultságok
+
+Az elektronikus üzenetekhez a következő biztonsági jogosultságok állnak rendelkezésre.
+
+| Biztonsági jogosultság           | Hozzáférési szint | Társítás |
+|------------------------------|--------------|-------------|
+| Elektronikus üzenetek kezelése | Ez a jogosultság teljes hozzáférést ad az EM-funkciókhoz. Ha rendelkezik ezzel a jogosultsággal, beállíthatja az elektronikus üzenetküldést, és futtathatja az összes feldolgozást. | Ez a jogosultság szerepel az **Értékesítésiadó-tranzakciók karbantartása** biztonsági feladatban. Ez a feladat továbbá szerepel a **Könyvelő** biztonsági szerepkörben. |
+| Elektronikus üzenetek megtekintése     | Ez a jogosultság csak olvasási jogosultságot ad az EM-funkciókhoz. Ha rendelkezik ezzel a jogosultsággal, megtekintheti az elektronikus üzenetküldés beállításait és üzeneteit. Azonban nem állíthat be és nem futtathat semmit. | Ez a jogosultság szerepel az **Forgalmiadó-tranzakció státuszának lekérdezése** biztonsági feladatban. Ez a feladat továbbá szerepel a következő biztonsági szerepkörökben:<ul><li>Beszedési vezető</li><li>Kinnlevőség-adminisztrátor</li><li>Kinnlevőség-kezelő</li><li>Adókönyvelő</li><li>Könyvelő</li><li>Főkönyvelő</li><li>Számviteli felügyelő</li><li>Értékesítési igazgató</li><li>Kötelezettségkezelő adminisztrátor</li></ul> |
+| Elektronikus üzenetek működtetése  | Ez a jogosultság csak az **Elektronikus üzenetek** és az **Elektronikus üzenetelemek** lapokhoz ad hozzáférést. Ha rendelkezik ezzel a jogosultsággal, az ilyen lapokon hívott összes feldolgozás futtatható. | Ez a jogosultság szerepel az **Elektronikus üzenetek kezelése** biztonsági feladatban. Ez a feladat továbbá szerepel az **Elektronikus üzenetek kezelője** biztonsági szerepkörben. |
 
 ## <a name="country-specific-regulatory-features-supported-by-the-em-functionality"></a>Az EM funkció által támogatott országspecifikus szabályozási funkciók
 

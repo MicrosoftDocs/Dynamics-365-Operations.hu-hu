@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c9f94ec35ebed5a14252377fb543de09cb994ffd
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: f84a81444e6d5ce9a0d2da4c9a60b1ae3478ee2f
+ms.sourcegitcommit: 2d8035f8bb75957c793c0d293c079a792595eeaf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416180"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7481315"
 ---
 # <a name="sync-on-demand-with-the-supply-chain-management-pricing-engine"></a>Igény szerinti szinkronizálás a Supply Chain Management árképzés motorral
 
@@ -41,7 +41,7 @@ A Microsoft Dynamics 365 Supply Chain Management tartalmaz egy árképzési moto
     + Adó összesen
     + Teljes összeg
     
-5. Annak biztosítására, hogy a rendszer a kereskedelmi és értékesítési szerződéseket figyelembe vegye az ár kiszámításához:
+5. Annak biztosítására, hogy a rendszer a kereskedelmi szerződéseket figyelembe vegye az ár kiszámításához:
     1. Navigáljon a Supply Chain Management környezetébe.
     2. Lépjen a **Kinnlevőségek \> Beállítások \> Kinnlevőségek paraméterei** pontra.
     3. Válassza ki az **Árak** lapot az oldalsó navigációs sávon.
@@ -51,7 +51,7 @@ A Microsoft Dynamics 365 Supply Chain Management tartalmaz egy árképzési moto
 
 Amikor kiválasztja a **Rendelés árazása** lehetőséget a Sales alkalmazásban az **Összeg** funkció az **Értékesítési rendelés \> Nézet** lapon a Supply Chain Management alkalmazásban meg lesz hívva a társított rendelésért.. A rendelés teljes összege az Sales alkalmazásból lesz felhasználva a Supply Chain Management megfelelő oszlopainak kitöltéséhez.
 
-Amikor az értékesítési rendelés összesítése a Supply Chain Management alkalmazásban van kiszámítva a számítás a vevőre vonatkozó meglévő kereskedelmi megállapodásokat és értékesítési szerződéseket, valamint az értékesítési rendelésben felsorolt termékeket értékeli. Ezek az adatok lesznek felhasználva a végösszeg számításához. Ha a **Rendelés árazása** van kiválasztva, akkor a Sales automatikusan tükrözi a Supply Chain Management alkalmazásban elvégzett összes beállítást.
+Amikor az értékesítési rendelés összesítése a Supply Chain Management alkalmazásban van kiszámítva a számítás a vevőre vonatkozó meglévő kereskedelmi megállapodásokat, valamint az értékesítési rendelésben felsorolt termékeket értékeli. Ezek az adatok lesznek felhasználva a végösszeg számításához. Ha a **Rendelés árazása** van kiválasztva, akkor a Sales automatikusan tükrözi a Supply Chain Management alkalmazásban elvégzett összes beállítást.
 
 ## <a name="limitations"></a>Korlátozások
 

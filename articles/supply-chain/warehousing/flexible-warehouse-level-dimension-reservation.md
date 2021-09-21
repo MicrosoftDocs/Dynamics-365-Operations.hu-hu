@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 32beabd40aa62cce832505edd56d92a8a8f12192b821f075e9b1f058d52bf8d0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0fe4b377ec80601f616f81f71222129256dfd448
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733444"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474940"
 ---
 # <a name="flexible-warehouse-level-dimension-reservation-policy"></a>Rugalmas raktárszintű dimenzió foglalási irányelv
 
@@ -858,7 +858,5 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 - [Egy értékesítési rendelés foglalása ugyanazon kötegből](../sales-marketing/reserve-same-batch-sales-order.md)
 - [Legrégebbi köteg kitárolása mobileszközön](pick-oldest-batch.md)
 - [Köteg és azonosítótábla megerősítése](batch-and-license-plate-confirmation.md)
-- [Foglalások a raktárkezelési modulban – hibaelhárítás](troubleshoot-warehouse-reservations.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

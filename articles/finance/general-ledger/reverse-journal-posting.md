@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ae4e25874488890f0eeb601038e308fdc7e89485b5f6a8cf5d5fab713107dfcf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8a4fd7c242fc2d857cb35f8ef8c08567c758b768
+ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753480"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463589"
 ---
 # <a name="reverse-journal-posting"></a>Naplófeladás sztornírozása
 
@@ -28,13 +28,17 @@ ms.locfileid: "6753480"
 
 Ez a témakör a Microsoft Dynamics 365 Finance egyik funkcióját mutatja be, amelyek lehetővé teszik a teljes napló sztornírozását, illetve egy vagy több bizonylat sztornírozását a bizonylati tranzakciólistáról, az eredettől függetlenül. 
 
+Az ebben a témakörben ismertetett funkciók bármelyikének használata előtt be kell kapcsolni azokat a rendszerben. A rendszergazdák használhatják a **Funkciókezelés** munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
+ - Modul: Főkönyv
+ - Funkció neve: **Több dokumentum tömeges sztornírozása**
+
 ## <a name="reversing-journals"></a>Naplók sztornózása
 
 A naplósorok egyenként is sztornírozhatók. A sztornírozási naplófeladással a teljes pénzügyi naplót is sztornírozhatja. Napló sztornírozása: 
 
-- A pénzügyi napló megnyitása és a feladott naplók szűrése.
+- Szűrje a feladott naplókat, és nyissa meg a napló **Sorok** nézetét.
 - Kattintson a képernyő felső részén lévő **Sztornírozás** menüre.
-- Megjelenik a bizonylatok és a bizonylatsorok teljes száma, valamint a sztornírozott sorok teljes összege
+- Megjelenik a bizonylatok és a bizonylatsorok teljes száma, valamint a sztornírozott sorok teljes összege.
 - Válassza az **Igen** lehetőséget, ha a meglévő tranzakciós dátumokat szeretné használni, vagy a **Nem** lehetőséget új beírásához. Bizonyos esetekben előfordulhat, hogy az eredeti tranzakció időszaka le van zárva, és új tranzakció dátumát kell megadni a sztornírozáshoz.
 - Ha a **Nem** beállítást választja, adjon meg egy tranzakciós dátumot a sztornírozáshoz. 
 - Írjon be egy megjegyzést, amelyet a sztornírozási tranzakcióhoz szeretne adni.
@@ -52,7 +56,7 @@ A bizonylatokat a **Bizonylat tranzakciólista** modulból sztornírozhatja az �
 
 Egy vagy több bizonylat sztornírozása: 
 
-- Kattintson a képernyő felső részén lévő **Sztornírozás** menüre
+- Kattintson a képernyő felső részén lévő **Napló teljes legördülő menüjének sztornírozása** menüre.
 - Megjelenik a bizonylatok és a bizonylatsorok teljes száma, valamint a sztornírozott sorok teljes összege.
 - Válassza az **Igen** lehetőséget, ha a meglévő tranzakciós dátumokat szeretné használni, vagy a **Nem** lehetőséget új beírásához. Bizonyos esetekben előfordulhat, hogy az eredeti tranzakció időszaka le van zárva, és új tranzakció dátumát kell megadni a sztornírozásához.
 - Ha a **Nem** beállítást választja, adjon meg egy tranzakciós dátumot a sztornírozáshoz. 

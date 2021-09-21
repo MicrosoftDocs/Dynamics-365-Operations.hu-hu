@@ -2,7 +2,7 @@
 title: Első lépések az elektronikus számlázási használata során
 description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Elektronikus számlázással kapcsolatos első lépéseket a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3a62f68718a9bd46cdf15146bbb6a4e5166bfcc7abcf99b24d3fbc7e3e6c94ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
+ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732981"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "7463840"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Első lépések az elektronikus számlázási használata során
 
@@ -40,10 +40,10 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 ## <a name="import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider"></a>Elektronikus számlázási funkció importálása a Microsoft konfigurációszolgáltatóból 
 
 1. Jelentkezzen be a saját RCS-fiókjába.
-2. A **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás** csempét.
+2. A **Globalizációs funkciók** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás** csempét.
 3. Válassza ki az **Import**, majd a **Szinkronizálás** lehetőséget.
 4. Szűrje a **Konfigurációszolgáltató** oszlopot a **Microsoft** kifejezés szerint.
-5. Válassza ki az Elektronikus számlázási funkció nevét a témakör elején található táblából, majd válassza az **Importálás** lehetőséget.
+5. Válassza ki a táblából az elektronikus számlázás funkció nevét, majd válassza az **Importálás** lehetőséget.
 
 ## <a name="create-an-electronic-invoicing-feature-under-your-organization-provider"></a>Elektronikus számlázás funkció létrehozása a szervezetszolgáltató keretében
 
@@ -113,7 +113,7 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
     | Spanyol elektronikus számla (ES)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
     | PEPPOL elektronikus számla            | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
 
-7. Minden egyes létrehozott táblanévhez válassza ki és adja meg a kontextusértéket a következő táblázatnak megfelelően.
+6. Minden egyes létrehozott táblanévhez válassza ki és adja meg a kontextusértéket a következő táblázatnak megfelelően.
 
     | Funkció neve                         | Üzleti dokumentum | Környezet |
     |--------------------------------------|-------------------|---------|
@@ -134,7 +134,7 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
     | Spanyol elektronikus számla (ES)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
     | PEPPOL elektronikus számla            | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
 
-8. Minden egyes táblanévhez és kontextushoz válasszon ki és adjon meg egy üzletidokumentum-leképezés értéket a következő táblának megfelelően.
+7. Minden egyes táblanévhez és kontextushoz válasszon ki és adjon meg egy üzletidokumentum-leképezés értéket a következő táblának megfelelően.
 
     | Funkció neve                         | Üzleti dokumentum | Üzleti dokumentum leképezése |
     |--------------------------------------|-------------------|---------------------------|
@@ -177,11 +177,11 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
 ## <a name="deploy-the-electronic-invoicing-feature-to-connected-application"></a>Az Elektronikus számlázás szolgáltatás telepítése Csatlakoztatott alkalmazásba
 
 1. A **Verziók** lapon válassza ki az Elektronikus számlázási funkció egy telepíteni kívánt verzióját.
-4. Válassza a **Telepítés** lehetőséget.
-5. A **Telepítés a csatlakoztatott alkalmazásra** lehetőségnél válassza az **Igen** lehetőséget.
-6. Az **Alkalmazás csatlakoztatása** mezőben válassza ki a Finance- vagy Supply Chain Management-példányhoz társított kapcsolatot.
-7. A **Telepítés szolgáltatási környezetbe** lehetőségnél válassza az **Nem** lehetőséget.
-10. Válassza ki az **OK** lehetőséget.
+2. Válassza a **Telepítés** lehetőséget.
+3. A **Telepítés a csatlakoztatott alkalmazásra** lehetőségnél válassza az **Igen** lehetőséget.
+4. Az **Alkalmazás csatlakoztatása** mezőben válassza ki a Finance- vagy Supply Chain Management-példányhoz társított kapcsolatot.
+5. A **Telepítés szolgáltatási környezetbe** lehetőségnél válassza az **Nem** lehetőséget.
+6. Válassza ki az **OK** lehetőséget.
 
 ## <a name="turn-on-the-electronic-invoicing-feature-in-finance-or-supply-chain-management"></a>Az Elektronikus számlázási funkció bekapcsolása a Finance vagy Supply Chain Management szolgáltatásban
 
@@ -213,7 +213,7 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
 ## <a name="issue-electronic-invoices"></a>Elektronikus számlák kibocsátása
 
 1. Menjen a **Szervezeti adminisztráció** \> **Időszakos** \> **Elektronikus dokumentumok** \> **Elektronikus dokumentumok beküldése** lehetőségre.
-2. A **Szerepeltetni kívánt rekord** gyorslapon válassza a **Szűrő** elemet.
+2. **A szerepeltetni kívánt rekordok** gyorslapján válassza a **szűrő** elemet.
 3. Ha táblanevet szeretne hozzáadni a lekérdezésszűrőhöz, válassza a **Hozzáadás** lehetőséget.
 4. Válassza ki a számlákat tartalmazó táblát.
 

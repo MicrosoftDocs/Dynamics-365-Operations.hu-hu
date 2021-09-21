@@ -1,8 +1,8 @@
 ---
 title: Okkódok beállítása
 description: A Dynamics 365 Human Resources okkódokat használ annak elmagyarázása érdekében, hogy miért változnak az alkalmazottak juttatásai.
-author: andreabichsel
-ms.date: 01/25/2021
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bd7c5a35a6d4b40eb376eee2580af681f7bfd7f8f93aab8aad67f238fc40470b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5f89d6158f351e30376fc3f80c793f29734cdcbb
+ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732681"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "7431342"
 ---
 # <a name="set-up-reason-codes"></a>Okkódok beállítása
 
@@ -29,11 +29,11 @@ ms.locfileid: "6732681"
 A Dynamics 365 Human Resources okkódokat használ annak elmagyarázása érdekében, hogy miért változnak az alkalmazottak juttatásai.
 
 > [!NOTE]
-> 2021 januárjától az okkódok a **Személyzetkezelés** munkaterületre kerülnek a **Juttatáskezelés** munkaterület helyett. További információk: [Okkódok manuális áttelepítése a Személyzetkezelés munkaterületre](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
+> 2021 januárjától az okkódok a **Személyzetkezelés** munkaterületre kerültek a **Juttatáskezelés** munkaterület helyett. További információk: [Okkódok manuális áttelepítése a Személyzetkezelés munkaterületre](hr-benefits-setup-reason-codes.md#manually-migrate-reason-codes-to-personnel-management).
 
 ## <a name="create-reason-codes"></a>Okkódok létrehozása
 
-1. A **Személyzetkezelés** munkaterületen (vagy a **Juttatáskezelés** munkaterületen, ha az okkódok még nincsenek áttelepítve), válassza a **Hivatkozások** lehetőséget, majd válassza az **Okkódok** lehetőséget.
+1. A **Személyzetkezelés** munkaterületen (vagy a **Juttatáskezelés** munkaterületen, ha az okkódok nincsenek áttelepítve), válassza a **Hivatkozások** lehetőséget, majd válassza az **Okkódok** lehetőséget.
 
 2. Válassza az **Új** lehetőséget.
 
@@ -44,13 +44,13 @@ A Dynamics 365 Human Resources okkódokat használ annak elmagyarázása érdek�
    | **Okkód** | Egyedi név, amellyel azonosíthatja, hogy az alkalmazott milyen okból módosítja a juttatási konstrukciós regisztrációját. |
    | **Leírás** | Az okkód leírása. |
 
-4. Az **Alkalmazandó forgatókönyvek** pontban állítsa a **Juttatáskezelés** lehetőséget **Igen** értékre. (Nem alkalmazandó, ha az okkódokat még nem telepítette át a **Személyzetkezelés** munkaterületre.)
+4. Az **Alkalmazandó forgatókönyvek** pontban állítsa a **Juttatáskezelés** lehetőséget **Igen** értékre. (Nem alkalmazandó, ha az okkódokat nem telepítette át a **Személyzetkezelés** munkaterületre.)
 
 5. Válassza a **Mentés** lehetőséget.
 
 ## <a name="manually-migrate-reason-codes-to-personnel-management"></a>Okkódok manuális áttelepítése a Személyzetkezelés munkaterületre
 
-2021 januárjától az okkódok a **Személyzetkezelés** munkaterületre kerülnek a **Juttatáskezelés** munkaterület helyett. A legtöbb okkódadat automatikusan áttelepítésre kerül a környezetben. Előfordulhat, hogy néhány okkódadat nem kerül áttelepítésre. Például az okkódok most már legfeljebb 15 karakterből állhatnak, így a 15 karakternél hosszabb okkódok nem kerülnek automatikusan áttelepítésre.
+2021 januárjában az okkódok a **Személyzetkezelés** munkaterületre kerültek a **Juttatáskezelés** munkaterület helyett. A legtöbb okkódadat automatikusan áttelepítésre kerül a környezetben. Előfordulhat, hogy néhány okkódadat nem kerül áttelepítésre. Például az okkódok most már legfeljebb 15 karakterből állhatnak, így a 15 karakternél hosszabb okkódok nem kerülnek automatikusan áttelepítésre.
 
 A **Juttatáskezelés** munkaterület **Hivatkozások** lapján megjelenik egy dokumentum, amely tájékoztatja az áttelepítésről, illetve arról, hogy van-e olyan okkód, amely nem került áttelepítésre.
 

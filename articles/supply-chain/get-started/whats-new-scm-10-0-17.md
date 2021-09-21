@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 67240491bba5a81455bff00be22908670880803c3e08091d76e037fa0b5f49ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ef6b7c619cfce70c2f0b3f676d3cae988674c858
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760514"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474602"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10017-april-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.17. (2021. április ) szolgáltatásban
 
@@ -99,10 +99,6 @@ Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Fun
 
 A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelentősen frissítve. A program nem feltétlenül kapcsolódik ehhez a kiadáshoz hozzáadott új funkcióhoz, amint az az előző részben szerepel, de segítséget jelenthet a meglévő szolgáltatások kiválasztásában.
 
-### <a name="cost-management"></a>Költségkezelés
-
-- [Költségkezelés – hibaelhárítás](../cost-management/troubleshoot-costmanagement.md)
-
 ### <a name="asset-management"></a>Eszközkezelés
 
 - [Az eszközkezelési mobil munkaterület beállítása](../asset-management/set-up-asset-management-mobile.md)
@@ -114,8 +110,6 @@ A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelent�
 - [Helyek részleges ciklikus leltározása](../warehousing/partial-location-cycle-counting.md)
 
 - [Kitárolási sor csoportosítása](../warehousing/pick-line-grouping.md)
-
-- [Készletműveletek hibaelhárítása](../inventory/troubleshoot-inventory-operations.md)
 
 - [Raktári időközökre bontás](../warehousing/warehouse-slotting.md)
 

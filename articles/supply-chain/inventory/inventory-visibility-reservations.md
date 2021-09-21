@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6c87018cbfbe22fbbc441a1a23aee0ac44af9ddc
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: acc5d5f93f3f625892aac37780a44e221b6eb5ac
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345149"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7475036"
 ---
 # <a name="inventory-visibility-reservations"></a>Készletláthatóság-foglalások
 
@@ -32,19 +32,20 @@ Opcionálisan beállíthatja a Microsoft Dynamics 365 Supply Chain Management (�
 
 Ha bekapcsolja a foglalási funkciót, a Supply Chain Management automatikusan készen áll a készletek láthatóságának használatával készített foglalások kiegyenlítésére.
 
-> [!NOTE]
-> Az ellentételezési funkcióhoz a Supply Chain Management 10.0.22-es vagy újabb verziója szükséges. Ha használni szeretné a készleti láthatósági foglalásokat, javasoljuk, hogy várjon, amíg a Supply Chain Management 10.0.22-es vagy újabb verzióra frissíti a Supply Chain Managementet.
-
-## <a name="turn-on-the-reservation-feature"></a>A foglalási funkció bekapcsolása
+## <a name="turn-on-and-set-up-the-reservation-feature"></a><a name="turn-on"></a>A foglalási funkció bekapcsolása és beállítása
 
 A foglalási funkció bekapcsolásához kövesse az alábbi lépéseket.
 
-1. A Power Apps oldalon nyissa meg a **Készletláthatóság** lehetőséget.
+1. Jelentkezzen be a Power Apps-be, és nyissa meg a **Készletlátóság** lehetőséget.
 1. Nyissa meg a **Konfiguráció** oldalt.
 1. A **Funkciókezelés** lapon kapcsolja be az *OnHandReservation* funkciót.
 1. Jelentkezzen be a Supply Chain Management alkalmazásba.
-1. Menjen a **Készletgazdálkodás \> Beállítás \> Készletláthatóság integrációs paraméterek** menüpontba.
-1. A **Foglalási eltolás** alatt állítsa a **Foglalási eltolás engedélyezése** opciót *Igen*-re.
+1. Ugorjon a **[Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** munkaterületre, és engedélyezze a *Készletláthatósági integráció foglaláseltolása* funkciót (a 10.0.22-es vagy újabb verzió szükséges).
+1. Ugorjon a **Készletkezelés \> Beállítás \> Készletláthatóság integrációs paraméterek** lapra, nyissa meg a **Foglalások eltolása** lapot, és tegye a következő beállításokat:
+    - **Foglalási eltolás engedélyezése** – A funkció engedélyezéséhez állítsa *Igen* értékre.
+    - **Foglaláseltolás módosítója** – Válassza ki azt a készlettranzakció-állapotot, amely a készlet láthatósága alapján eltolja a foglalásokat. Ez a beállítás határozza meg azt a rendelésfeldolgozási szakaszt, amely az eltolásokat kiváltja. A szakasz nyomon követhető a megrendelés készlettranzakciós státusza alapján. A következők közül választhat:
+        - *Megrendeléskor* - A *Tranzakciókor* státusz esetén a megrendelés létrehozásakor a megrendelés elküldi az ellentételezési kérelmet. Az eltolásmennyiség a létrehozott rendelés mennyisége lesz.
+        - *Tartalékolás* - A *Megrendelt tartalékolás tranzakciós* státusz esetén a rendelés akkor küld beszámítási kérelmet, amikor lefoglalják, felveszik, feladják a csomagolólapot vagy kiszámlázzák. A kérés csak egyszer, az első lépésben aktiválódik, amikor az említett folyamat bekövetkezik. Az eltolás mennyisége az a mennyiség, amelynél a készlettranzakció állapota a *Megrendelt* állapotról *Lefoglalt rendeltre* (vagy későbbi állapotra) változott a megfelelő rendelési sorban.
 
 ## <a name="use-the-reservation-feature-in-inventory-visibility"></a>Használja a foglalási funkciót a Készletláthatóságban
 
@@ -56,13 +57,21 @@ A foglalási hierarchia a foglalások során megadandó dimenziók sorrendjét �
 
 A foglalási hierarchia eltérhet az indexhierarchiától. Ez a függetlenség lehetővé teszi a kategóriamenedzsment megvalósítását, ahol a felhasználók részletekre bonthatják a dimenziókat, hogy pontosabb foglalásokhoz meghatározzák a követelményeket.
 
-A lágy foglalási hierarchia konfigurálásához a Power Apps oldalon nyissa meg a **Konfiguráció** lapot, majd a **Lágy foglalási leképezés** lapon állítsa be a foglalási hierarchiát a dimenziók és hierarchiaszintjeik hozzáadásával és/vagy módosításával.
+A lágy foglalási hierarchia konfigurálásához a Power Apps oldalon nyissa meg a **Konfiguráció** lapot, majd a **Lágy foglalási hierarchia** lapon állítsa be a foglalási hierarchiát a dimenziók és hierarchiaszintjeik hozzáadásával és/vagy módosításával.
+
+A lágy foglalás hierarchiájának tartalmaznia kell a `SiteId` és a `LocationId` elemet összetevőként, mivel ezek partíciókonfigurációt alkotnak.
+
+A foglalások konfigurálásával kapcsolatos további tudnivalókat lásd: [Foglalási konfiguráció](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="call-the-reservation-api"></a>A foglalási API hívása
 
 A foglalások a Készletláthatóság szolgáltatásban a szolgáltatás URL-jének (például `/api/environment/{environment-ID}/onhand/reserve`) küldött POST-kérelemmel történnek.
 
 Foglalás esetén a kérelem testének tartalmaznia kell egy szervezet azonosítóját, egy termék azonosítóját, a lefoglalt mennyiségeket és dimenziókat. A kérés minden egyes foglalási rekordhoz egyedi foglalási azonosítót generál. A foglalási rekord tartalmazza a termék azonosítójának és dimenzióinak egyedi kombinációját.
+
+A foglalási API hívása esetén a foglalások érvényességének ellenőrzése a logikai `ifCheckAvailForReserv` paraméter megadásával szabályozható a kérelemtörzsben. A `True` érték azt jelenti, hogy ellenőrzés szükséges, míg a `False` érték azt, hogy az ellenőrzés nem kötelező. Az alapértelmezett érték a `True`.
+
+Ha érvényteleníteni szeretne egy foglalást, vagy le szeretné foglalni a megadott készleten lévő mennyiségeket, állítsa a mennyiséget negatív értékre, és állítsa be a `ifCheckAvailForReserv` paramétert `False` értékre az ellenőrzés kihagyása céljából.
 
 Itt van egy példa a kérés törzsére, referenciaként.
 
@@ -108,18 +117,9 @@ Azon készleti tranzakciós státuszok esetében, amelyek tartalmaznak egy megha
 
 Az ellentételezési mennyiség a készleti tranzakciókban megadott készletmennyiséget követi. Az ellentételezés nem lép érvénybe, ha a Készletláthatóság szolgáltatásban nem maradt lefoglalt mennyiség.
 
-> [!NOTE]
-> Az ellentételezés funkció a 10.0.22-es verziótól érhető el
+### <a name="set-up-the-reservation-offset-modifier"></a>A foglaláseltolás módosító beállítása
 
-### <a name="set-up-the-reserve-offset-modifier"></a>A tartalék ellentételezés módosító beállítása
-
-A tartalék ellentételezés módosító határozza meg azt a megbízás-feldolgozási szakaszt, amely az ellentételezéseket kiváltja. A szakasz nyomon követhető a megrendelés készlettranzakciós státusza alapján. A tartalék ellentételezés módosító beállításához kövesse az alábbi lépéseket.
-
-1. Menjen a **Készletgazdálkodás \> Beállítás \> Készletláthatóság integrációs paraméterek \> Foglalási eltolás** pontra.
-1. Állítsa be a **Tartalék-ellentételezési módosító** mezőt az alábbi értékek egyikére:
-
-    - *Megrendeléskor* - A *Tranzakciókor* státusz esetén a megrendelés létrehozásakor a megrendelés elküldi az ellentételezési kérelmet.
-    - *Tartalékolás* - A *Megrendelt tartalékolás tranzakciós* státusz esetén a rendelés akkor küld beszámítási kérelmet, amikor lefoglalják, felveszik, feladják a csomagolólapot vagy kiszámlázzák. A kérés csak egyszer, az első lépésben aktiválódik, amikor az említett folyamat bekövetkezik.
+Ha még nem tette meg, állítsa be a foglalásmódosítót [A foglalási funkció bekapcsolása és beállítása](#turn-on) szakaszban leírtak szerint.
 
 ### <a name="set-up-reservation-ids"></a>Foglalási azonosítók beállítása
 

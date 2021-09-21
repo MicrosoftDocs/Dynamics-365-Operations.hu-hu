@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 71e651afc83e0c2ea147a4657c0f2ce1865ec50efcd932127b4918266d3d7cd8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
+ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778676"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "7474844"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Alaptervezés az igény-előrejelzésekkel
 
@@ -137,32 +137,85 @@ Ebben az eseteben, ha előrejelzési ütemezést január 1-jén futtatja, az ig�
 
 #### <a name="transactions--reduction-key"></a>Tranzakciók – csökkentési kulcs
 
-Ha a **Tranzakciók – csökkentési kulcs** lehetőséget választja, az előrejelzési követelmények azon tranzakciók mértékével csökkennek, amelyek a csökkentési kulcs által definiált időszakokra vonatkoznak.
+Ha az **Előrejelzési követelmények csökkentésére használt módszert** a *Tranzakciók – csökkentési kulcs* értékre állítja, az előrejelzési követelmények a minősített igénytranzakciókkal csökkennek, amelyek a csökkentési kulcs által megadott időszakok során következnek be.
+
+A minősített igényt a **Fedezeti csoportok** oldal **Előrejelzés csökkentése a következővel:** mezője határozza meg. Ha az **Előrejelzés csökkentése a következővel:** mező értékét *Rendelések* értékre állítja, csak az értékesítésirendelés-tranzakciók számítanak minősített igénynek. Ha az *Összes tranzakció* érték van beállítva, bármely nem vállalatközi kiadású készlettranzakció minősített igénynek számít. Ha vállalatközi értékesítési rendeléseket is minősített igényként kell tekinteni, állítsa a **Vállalatközi rendelések szerepeltetése** beállítást *Igen* értékre.
+
+Az előrejelzés csökkentése a csökkentési kulcs időszakának első (legkorábbi) igény-előrejelzési rekordjával kezdődik. Ha a minősített készlettranzakciók mennyisége nagyobb, mint az ugyanabban a csökkentési kulcs időszakában szereplő igény-előrejelzési sorok mennyisége, a készlettranzakciók mennyiségének egyenlegét használja a rendszer az előző időszak igény-előrejelzési mennyiségének csökkentésére (amennyiben van fel nem használt előrejelzés).
+
+Ha az előző csökkentési kulcs időszakában nem marad fel nem használt előrejelzés, akkor a készlettranzakciók mennyiségének egyenlegét használja a rendszer a következő hónap előrejelzési mennyiségének csökkentésére (amennyiben van nem felhasznált előrejelzés).
+
+A csökkentésikulcs-sorok **Százalék** mezőjének értéke nem használatos, ha az **Előrejelzési követelmények csökkentésére szolgáló metodológia** mező értékének beállítása *Tranzakciók - csökkentési kulcs*. A csökkentési kulcs időszakát csak a dátumok határozzák meg.
+
+> [!NOTE]
+> A program minden olyan előrejelzést figyelmen kívül hagy, amely a mai napon vagy azelőtt lett feladva, és nem lesz használva tervezett rendelések létrehozásához. Ha például a hónapra vonatkozó igény-előrejelzés január 1-jén jön létre, és január 2-án igény-előrejelzést tartalmazó alaptervezést futtat, a számítás figyelmen kívül hagyja a január 1-jei dátummal létrehozott igény-előrejelzési sort.
 
 ##### <a name="example-transactions--reduction-key"></a>Példa: Tranzakciók – csökkentési kulcs
 
 Csökkentési kulcs az előrejelzési követelmények csökkentése a százalékok és az időszakok alapján történik, amelyeket a csökkentési kulcs definiál.
 
-Ebben a példában az **Alaptervek** oldalon, az **Előrejelzési követelmények csökkentésére szolgáló metodológia** mezőben kiválasztja a **Százalék - csökkentési kulcs** lehetőséget.
+[![Tényleges rendelések és előrejelzések az alaptervezés futtatása előtt.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-A következő értékesítési rendelések léteznek január 1-én.
+Ebben a példában az *Alaptervek* oldalon, az **Előrejelzési követelmények csökkentésére szolgáló metodológia** mezőben kiválasztja a **Százalék - csökkentési kulcs** lehetőséget.
 
-| Hónap    | Rendelt darabszám |
-|----------|--------------------------|
-| Január  | 956                      |
-| Február | 1,176                    |
-| Március    | 451                      |
-| Április    | 119                      |
+A következő igény-előrejelzési sorok léteznek április 1-jén.
 
-Ugyanazt a havi 1000 darabos értékesítési előrejelzést alkalmazva, mint az előző példában az alábbi mennyiségi követelések kerülnek az alaptervbe.
+| Dátum     | Előrejelzett darabszám |
+|----------|-----------------------------|
+| április 5.  | 100                         |
+| április 12. | 100                         |
+| április 19. | 100                         |
+| április 26. | 100                         |
+| május 3.    | 100                         |
+| május 10.   | 100                         |
+| május 17.   | 100                         |
 
-| Hónap                | Szükséges darabszám |
-|----------------------|---------------------------|
-| Január              | 44                        |
-| Február             | 0                         |
-| Március                | 549                       |
-| Április                | 881                       |
-| május – december | 1000                     |
+A következő értékesítésirendelés-sorok léteznek áprilisban.
+
+| Dátum     | Igényelt darabszám |
+|----------|----------------------------|
+| április 27. | 240                        |
+
+[![Az áprilisi rendelések alapján létrehozott tervezett ellátás.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+A következő mennyiségi követelések kerülnek át az alaptervbe, amikor az alaptervezés április 1-jén fut. Amint látható, az áprilisi előrejelzési tranzakciók egy sorozatban 240-es igénymennyiséggel csökkentek, az első ilyen tranzakciótól kezdve.
+
+| Dátum     | Szükséges darabszám |
+|----------|---------------------------|
+| április 5.  | 0                         |
+| április 12. | 0                         |
+| április 19. | 60                        |
+| április 26. | 100                       |
+| április 27. | 240                       |
+| május 3.    | 100                       |
+| május 10.   | 100                       |
+| május 17.   | 100                       |
+
+Most tegyük fel, hogy az új rendeléseket májusban importálták.
+
+A következő értékesítésirendelés-sorok léteznek májusban.
+
+| Dátum   | Igényelt darabszám |
+|--------|----------------------------|
+| május 4.  | 80                         |
+| május 11. | 130                        |
+
+[![Az áprilisi és májusi rendelések alapján létrehozott tervezett ellátás.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+A következő mennyiségi követelések kerülnek át az alaptervbe, amikor az alaptervezés április 1-jén fut. Amint látható, az áprilisi előrejelzési tranzakciók egy sorozatban 240-es igénymennyiséggel csökkentek, az első ilyen tranzakciótól kezdve. A májusi előrejelzési tranzakciók összege azonban 210-zel csökkent, a májusi első igény-előrejelzési tranzakciótól kezdve. Az időszakonkénti összegek azonban megmaradtak (áprilisban 400, májusban pedig 300).
+
+| Dátum     | Szükséges darabszám |
+|----------|---------------------------|
+| április 5.  | 0                         |
+| április 12. | 0                         |
+| április 19. | 60                        |
+| április 26. | 100                       |
+| április 27. | 240                       |
+| május 3.    | 0                         |
+| május 4.    | 80                        |
+| május 10.   | 0                         |
+| május 11.   | 130                       |
+| május 17.   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Tranzakciók – dinamikus időszak
 
