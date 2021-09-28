@@ -1007,7 +1007,11 @@
                 - name: Tervezett karbantartási időtartamra vonatkozó GYIK
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Megfigyelés és diagnosztika
-              href: lifecycle-services/monitoring-diagnostics.md
+              items:
+                - name: Megfigyelési és diagnosztikai eszközök
+                  href: lifecycle-services/monitoring-diagnostics.md
+                - name: Az Azure Data Explorer használata a nyers adatnaplók lekérdezésére
+                  href: lifecycle-services/azure-data-explorer.md
             - name: Környezeti szolgáltatások újraindítása
               href: lifecycle-services/restart-environment-services.md
             - name: Termelési kimaradás jelentése

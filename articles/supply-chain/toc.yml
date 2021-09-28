@@ -80,8 +80,6 @@
                       href: get-started/whats-new-scm-10-0-21.md
                     - name: Supply Chain Management 10.0.20 (2021. augusztus)
                       href: get-started/whats-new-scm-10-0-20.md
-                    - name: Supply Chain Management 10.0.19 (2021. június)
-                      href: get-started/whats-new-scm-10-0-19.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -1669,6 +1667,8 @@
                   href: master-planning/planning-optimization/production-planning.md
                 - name: Ütemezés végtelen kapacitással
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
+                - name: Ütemezés képességen alapuló erőforrás kiválasztásával
+                  href: master-planning/planning-optimization/capability-based-scheduling.md
                 - name: Készletjelölés tervezési optimalizálással
                   href: master-planning/planning-optimization/marking.md
                 - name: Vállalatközi tervezés
@@ -2017,6 +2017,8 @@
                   href: procurement/request-quotations.md
                 - name: Ajánlatkérés létrehozása
                   href: procurement/tasks/create-request-quotation.md
+                - name: Lezárt ajánlattétel ajánlatkéréshez
+                  href: procurement/sealed-bidding.md
                 - name: 'Olyan igénylés létrehozása, amely ajánlatkérést használ'
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Pontozási mód létrehozása az ajánlatkérésekhez

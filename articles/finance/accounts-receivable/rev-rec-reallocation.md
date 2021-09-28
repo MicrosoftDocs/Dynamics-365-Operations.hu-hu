@@ -2,7 +2,7 @@
 title: Bevételelszámolás újbóli felosztása
 description: Ez a témakör az újbóli felosztás lehetőségét ismerteti, amellyel a szervezetek újraszámíthatják a bevételi árakat, ha megváltoznak a szerződéses értékesítési feltételek. Más témakörökre mutató hivatkozásokat is talál itt, amelyek a bevételelszámolás különböző eseteit írják le.
 author: kweekley
-ms.date: 12/21/2020
+ms.date: 09/09/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 50ae395c370947e348714ce5685123328849966f3a67903e9ddf8c27dee42f5f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53304842bdbe7dadb435ab3a0381f3835c2c443a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745037"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7487018"
 ---
 # <a name="revenue-recognition-reallocation"></a>Bevételelszámolás újbóli felosztása
 
@@ -35,10 +35,22 @@ A szervezetnek önállóan kell eldöntenie, hogy szükséges-e az újbóli felo
 Az újbóli felosztási folyamatra néhány fontos korlátozás vonatkozik:
 
 - A folyamat csak egyszer futtatható. Ezért fontos, hogy csak az összes módosítás véglegesítését követően futtassa le a folyamatot.
+
+    - Ez a korlátozás a 10.0.17-es és későbbi verziókból el lett távolítva.
+
 - A folyamat nem futtatható a projekt típusú értékesítési rendeléseken.
+
+    - Ez a korlátozás a 10.0.17-es és későbbi verziókból el lett távolítva.
+
 - Több értékesítési rendelés esetén csak akkor futtatható, ha ezek ugyanahhoz a vevőfiókhoz tartoznak.
 - Az újból felosztott értékesítési rendeléseknek ugyanazt a tranzakciós pénznemet kell használniuk.
 - A folyamatot a futtatás után nem lehet sztornírozni, sem visszavonni.
+
+    - Ez a korlátozás a 10.0.17-es és későbbi verziókból el lett távolítva.
+
+- Az újraelosztás csak értékesítési rendelések vagy projekt értékesítési rendelések esetében lehetséges. Értékesítési rendelések és projekt értékesítési rendelések kombinációja esetén nem lehetséges.
+
+    - Ez a korlátozás a 10.0.17-es és későbbi verziókból el lett távolítva.
 
 ## <a name="set-up-reallocation"></a>Az újbóli felosztás beállítása
 
@@ -78,7 +90,7 @@ Az újbóli felosztási folyamat elindításához válassza **Az ár újrafelosz
 
 [![Az ár újrafelosztása új rendelési sorokba oldal.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-**Az ár újrafelosztása új rendelési sorokba** oldal felső rácsának neve **Értékesítés**. Itt láthatja a vevőhöz tartozó értékesítési rendeléseket. Válassza ki az újból felosztani kívánt értékesítési rendeléseket. Projekthez tartozó értékesítési rendeléseket nem választhat ki, mert ezeket nem lehet újból felosztani. Olyan értékesítési rendeléseket sem jelölhet ki, amelyekhez már tartozik újrafelosztási azonosító, mert a nem projekthez tartozó értékesítési rendeléseket is csak egyszer lehet újból felosztani. Ha valamelyik értékesítési rendeléshez már tartozik újrafelosztási azonosító, ezt a rendelést egy másik felhasználó már megjelölte újbóli felosztásra.
+**Az ár újrafelosztása új rendelési sorokba** oldal felső rácsának neve **Értékesítés**. Itt láthatja a vevőhöz tartozó értékesítési rendeléseket. Válassza ki az újból felosztani kívánt értékesítési rendeléseket. Ha valamelyik értékesítési rendeléshez már tartozik újrafelosztási azonosító, ezt a rendelést egy másik felhasználó már megjelölte újbóli felosztásra. Ha egy vagy több értékesítési rendelésnél előzőleg ismételt elosztás történt, és egy másik újraelosztásban kell ezeknek szerepelniük, akkor először vissza kell vonni ezeknek az értékesítési rendeléseknek az ismételt elosztását. Csak ezután lehet őket bevonni egy új újrafelosztásban. A részletesebb információkért lásd az [Újrafelosztás visszavonása](#undo-a-reallocation) és [Többszöri újrafelosztás](#reallocate-multiple-times) szakaszokat később ebben a témában.
 
 A lap alsó rácsának neve **Sorok**. Ha az **Értékesítés** rácsban kiválasztotta a kívánt értékesítési rendeléseket, a **Sorok** rácsban megjelennek a kapcsolódó értékesítésirendelés-sorok. Válassza ki az újból felosztani kívántértékesítésirendelés-sorokat. Ha csak egy értékesítési rendelést választott ki, az ahhoz tartozó sorokat újból fel kell osztani. Ez akkor fordulhat elő, ha az értékesítési rendelés egyik sorát korábban már kiszámlázták, majd új sort adtak hozzá a rendeléshez, vagy egy meglévő sort eltávolítottak vagy érvénytelenítettek. Az eltávolított sorok nem jelennek meg a rácsban. Ezért ezek nem választhatók ki. A rendszer azonban ezeket is figyelembe veszi az újbóli felosztási folyamat futtatásakor.
 
@@ -104,6 +116,26 @@ Ha végzett a szükséges értékesítésirendelés-sorok kijelölésével, az a
 
 - **Adatok alaphelyzetbe állítása a kiválasztott vevőnél** – Ha az újbóli felosztási folyamatot elkezdték, de nem fejezték be, akkor ezzel a funkcióval törölheti az újbóli felosztási táblában szereplő adatokat a kiválasztott vevőnél. Például Ön több értékesítésirendelés-sort is kijelöl újbóli felosztásra, és megnyitva hagyja az oldalt, de nem választja ki a **Feldolgozás** lehetőséget, ezért a rendszer időtúllépés miatt kilép. Ebben az esetben az értékesítésirendelés-sorok megjelölve maradnak, de más felhasználó nem éri el őket, és nem tudja elvégezni az újbóli felosztást. Az is elképzelhető, hogy az oldal megnyitáskor üresen jelenik meg. Ebben a helyzetben az **Adatok alaphelyzetbe állítása a kiválasztott vevőnél** gombbal törölheti a fel nem dolgozott értékesítési rendeléseket, hogy egy másik felhasználó befejezhesse az újbóli felosztási folyamatot.
 
+## <a name="undo-a-reallocation"></a>Újrafelosztás visszavonása
+
+Egy újrafelosztás visszavonása egy másik újrafelosztás futtatásával vonható vissza. Ismét megtörténik az újrafelosztás, és a felhasználó más értékesítésirendelés-sorokat választ ki, hogy ezek szerepeljenek a második újrafelosztási folyamatban.
+
+Ha egy újrafelosztás két vagy több külön értékesítési rendelésen történt meg, akkor az **Ár újrafelosztása új rendelési sorokkal** lehetőség kiválasztásával vonható vissza bármely értékesítési rendelésből, ami az újrafelosztásban szerepel. A **Bevétel-felismerés \> Időszakos feladatok \> Ár újrafelosztása új rendelési sorokkal** műveletekkel nem lehet visszavonni az újrafelosztást, mert az így megnyitott lap ezzel a módszerrel csak azokat az értékesítési rendeléseket jeleníti meg, amelyekhez nincs újrafelosztási azonosító. Az újrafelosztási azonosítót a dokumentum újrafelosztása után rendeli hozzá a rendszer.
+
+Az **Ár újrafelosztása új rendelési sorokkal** lapon vegye ki a jelölést minden olyan értékesítési rendelésnél, amelyet ki kell zárni a szerződéses megállapodásból. Az újrafelosztás feldolgozásához használja a Műveleti ablak megfelelő gombjait, mint például az **Újrafelosztás frissítése** és **Feldolgozás**. Ha az aktív értékesítési rendelésen kívül minden értékesítési rendelésnél ki van véve a jelölés, akkor a rendszer a módosítás feldolgozásakor eltávolítja az újrafelosztási azonosítót.
+
+Ha egy teljesen vagy részben számlázott értékesítési rendeléshez egy új sor hozzáadásával történt az újrafelosztás, akkor ez csak úgy vonható vissza, ha eltávolítja azt a sort az értékesítési rendelésből, majd ismét lefuttatja az újrafelosztást. Az értékesítésirendelés-sort el kell távolítani, mert egy értékesítési rendelés minden sora egyazon szerződés részének tekintendő. Az értékesítésirendelés-sorok jelölését nem lehet visszavonni, amíg az **Ár újrafelosztása új rendelési sorokkal** lapon van.
+
+## <a name="reallocate-multiple-times"></a>Többszöri újrafelosztás
+
+Ugyanannak az értékesítési rendelésnek a többszöri újrafelosztása akkor lehetséges, ha a szerződésen több módosítás történt. Minden újrafelosztás kiváltja egy újrafelosztási azonosító hozzárendelését az értékesítési rendeléshez vagy értékesítési rendelések csoportjához, hogy a módosításokat csoportosítsa. Ha többszöri újrafelosztás történik, minden további újrafelosztás ugyanazt az újrafelosztási azonosítót használja, mint az első újrafelosztás.
+
+Például a 00045-ös értékesítési rendelés bevitel történik, ami több sorból áll. Az értékesítési rendelés teljes számlázása után egy új értékesítésirendelés-sor kerül a rendelésbe. Az újrafelosztást ezután az **Ár újrafelosztása új rendelési sorokkal** oldal megnyitásával futtatható, ami történhet a 00045-ös értékesítési rendelésből, vagy a **Bevétel-felismerés \> Időszakos feladatok \> Ár újrafelosztása új rendelési sorokkal** menüpontra lépve. A **Reall000001** újrafelosztási azonosítót a rendszer hozzárendeli az értékesítési rendeléshez.
+
+Ugyanehhez a szerződéshez létrejön egy második értékesítési rendelés is, a 00052. Az újrafelosztás ismét lefuttatható az **Ár újrafelosztása új rendelési sorokkal** megnyitásával a 00045-ös értékesítési rendelésből, de 00052-es értékesítési rendelésből nem. Ha a 00052 értékesítési rendelésből nyitja meg az **Ár újrafelosztása új rendelési sorokkal** oldalt, a 00045-ös értékesítési rendelés nem jelenik meg, mivel hozzá van rendelve egy újrafelosztási azonosító. Az oldalon csak azok az értékesítési rendelések jelennek meg, amelyekhez nincs újrafelosztási azonosító.
+
+A második újrafelosztást kétféleképpen lehet végrehajtani. Visszavonhatja a 00045 értékesítési rendelés újrafelosztását. Ebben az esetben a rendszer eltávolítja az újrafelosztási azonosítót, majd a 00045-ös vagy a 00052-es értékesítési rendelésből meg tudja csinálni az újrafelosztást. Másik lehetőségként megnyithatja a 00045-ös értékesítési rendelésből az **Ár újrafelosztása új rendelési sorokkal** oldalt, és hozzáadhatja a második értékesítési rendelést is. Az újrafelosztás feldolgozásakor a rendszer a **Reall000001** újrafelosztási azonosítót rendeli hozzá a 00045-ös értékesítési rendeléshez és a 00052-es értékesítési rendeléshez is.
+
 ## <a name="scenarios-for-reallocation"></a>Újbóli felosztáshoz kapcsolódó esetek
 
 A következő témakörök a bevételelszámolás során felmerülő különböző helyzeteket mutatják be:
@@ -112,6 +144,5 @@ A következő témakörök a bevételelszámolás során felmerülő különböz
 - [Bevételelszámolás újbóli felosztása – 2. eset](rev-rec-reallocation-scenario-2.md) – Két értékesítési rendelést visznek be, majd a vevő az első értékesítési rendelés kiszámlázása után hozzáad egy további cikket a szerződéshez.
 - [Bevételelszámolás újbóli felosztása – 3. eset](rev-rec-reallocation-scenario-3.md) –Új sort adnak egy meglévő, már kiszámlázott értékesítési rendeléshez.
 - [Bevételelszámolás újbóli felosztása – 4. eset](rev-rec-reallocation-scenario-4.md) – Egy sort eltávolítanak egy meglévő, részben kiszámlázott értékesítési rendelésből.
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

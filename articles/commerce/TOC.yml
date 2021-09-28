@@ -102,8 +102,6 @@
                       href: get-started/whats-new-commerce-10-0-21.md
                     - name: Commerce 10.0.20 (2021. augusztus)
                       href: get-started/whats-new-commerce-10-0-20.md
-                    - name: Commerce 10.0.19 (2021. június)
-                      href: get-started/whats-new-commerce-10-0-19.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -668,6 +666,8 @@
                   href: tasks/base-price-trade-agreements.md
                 - name: Kereskedelmi szerződések létrehozása kategóriaárazási szabályok segítségével
                   href: tasks/category-pricing-rules-trade-agreements.md
+                - name: Pontos ár- és engedményszámítás késleltetése
+                  href: delayed-price-calculation.md
             - name: Javaslatok
               items:
                 - name: Termékajánlatok áttekintése
@@ -1328,6 +1328,8 @@
                   href: localizations/latam-bra-nfce-contingency-mode.md
                 - name: 'Brazil pénzügyi dokumentumok közzététele kiskereskedelmi kimutatások útján, a Commerce Headquartersben'
                   href: localizations/latam-bra-retail-statements.md
+                - name: Dynamics 365 Payment Connector az Adyennek – Commerce POS - Brazília
+                  href: localizations/latam-bra-adyen.md
             - name: Kelet-Európa
               items:
                 - name: Általános
@@ -2436,7 +2438,7 @@
                       href: e-commerce-extensibility/event-based-data-actions.md
                     - name: Alapadatok műveletei
                       href: e-commerce-extensibility/core-data-actions.md
-                    - name: Retail Server API-k hívása
+                    - name: Commerce Scale Unit API-k hívása
                       href: e-commerce-extensibility/call-retail-server-apis.md
                     - name: Retail Server bővítmény API-k hívása
                       href: e-commerce-extensibility/call-retail-extension-api.md
@@ -2514,8 +2516,6 @@
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Buildelési folyamat beállítása a független becsomagolású SDK számára
                   href: dev-itpro/build-pipeline.md
-                - name: A Commerce és Finance and Operations buildrendszereinek egyesítése
-                  href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
                 - name: A Retail szoftverfejlesztői készlet (SDK) áttelepítése a Visual Studio 2015 szolgáltatásból a Visual Studio 2017 szolgáltatásba
                   href: dev-itpro/retail-sdk/migrate-sdk.md
                 - name: A Retail szoftverfejlesztői készlet (SDK) bővíthetőségi mintái
@@ -2628,8 +2628,6 @@
                               href: dev-itpro/pos-extension/consume-apis-pos.md
             - name: Hardware Station bővíthetősége
               items:
-                - name: Hardware Station és bővíthetősége
-                  href: dev-itpro/hardware-station-extensibility.md
                 - name: A pénztár integrálása új hardvereszközzel
                   href: dev-itpro/hardware-device-extension.md
             - name: Retail Server bővíthetősége

@@ -80,8 +80,6 @@
                       href: get-started/whats-new-changed-10-0-21.md
                     - name: Finance 10.0.20 (2021. augusztus)
                       href: get-started/whats-new-changed-10-0-20.md
-                    - name: Finance 10.0.19 (2021. június)
-                      href: get-started/whats-new-changed-10-0-19.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -450,6 +448,8 @@
                   href: accounts-receivable/tasks/review-collections-information.md
                 - name: Beszedési folyamat automatizálása
                   href: accounts-receivable/collections-process-automate.md
+                - name: A beszedési folyamat automatizálási paramétereinek konfigurálása
+                  href: accounts-receivable/config-paramtrs-collections-proc-automate.md
                 - name: Hitelkezelés beállítása
                   href: accounts-receivable/cm-credit-mgmt-setup.md
                 - name: Hitelkezelési beállítások adatai
@@ -1635,7 +1635,9 @@
                 - name: Áfabevallás
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Nemzetközi szolgáltatásokra vonatkozó jelentés
-                  href: localizations/emea-aut-cross-border-services-report.md
+                  href: localizations/emea-aut-vat-statement-details.md
+                - name: Intrastat jelentés
+                  href: localizations/emea-aut-intrastat.md
                 - name: Beszerzési illetékek
                   href: localizations/emea-aut-purchase-duties.md
             - name: Bahrein
@@ -1668,6 +1670,8 @@
                   href: localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: PRODCOM beállítása és karbantartása
                   href: localizations/emea-bel-prodcom-report.md
+                - name: Belföldi értékesítések éves áfalistája
+                  href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
             - name: Brazília
               items:
                 - name: Brazília – áttekintés
@@ -2974,6 +2978,8 @@
                   href: localizations/tasks/mx-00010-e-invoicing-cfdi.md
                 - name: Elektronikus számlák
                   href: localizations/latam-mex-CFDI-electronic-invoices.md
+                - name: Fuvarlevél (Carta de Porte) kiegészítés (1.0-s verzió)
+                  href: localizations/latam-mex-carta-de-porte.md
                 - name: Elektronikus főkönyvi számla kimutatásai
                   href: localizations/latam-mex-electronic-ledger-accounting-statements.md
                 - name: Adóregisztrációs azonosítók megadása mexikói jogi személyekre
@@ -2994,12 +3000,6 @@
                   href: localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: Szállítói regisztrációs azonosítók
                   href: localizations/tasks/mx-00008-vendor-registration-ids.md
-            - name: Omán
-              items:
-                - name: Omán – áttekintés
-                  href: localizations/oman.md
-                - name: Áfabevallási nyilatkozat Omán (OM-00003) számára
-                  href: localizations/emea-oma-vat-declaration.md
             - name: Hollandia
               items:
                 - name: Hollandia – áttekintés
@@ -3016,6 +3016,10 @@
                   href: localizations/emea-nl-vat-declaration-netherlands.md
                 - name: EU értékesítési lista
                   href: localizations/emea-nl-EU-sales-list.md
+            - name: Új-Zéland
+              items:
+                - name: GST bevallási űrlap GST101A - Új-Zéland (NZ-00003)
+                  href: localizations/apac-nzl-gst-declaration.md
             - name: Norvégia
               items:
                 - name: Norvégia – áttekintés
@@ -3032,6 +3036,12 @@
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Elektronikus vevői számlák Norvégiában
                   href: localizations/emea-nor-e-invoices.md
+            - name: Omán
+              items:
+                - name: Omán – áttekintés
+                  href: localizations/oman.md
+                - name: Áfabevallási nyilatkozat Omán (OM-00003) számára
+                  href: localizations/emea-oma-vat-declaration.md
             - name: Lengyelország
               items:
                 - name: Lengyelország – áttekintés
@@ -3450,20 +3460,20 @@
                           href: localizations/emea-gbr-mtd-vat-integration.md
                         - name: A környezet előkészítése a HMRC MTD ÁFA webszolgáltatással való együttműködésre
                           href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: A Finance környezet engedélyezése a HMRC MTD ÁFA webszolgáltatással való együttműködésre
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: Az MTD ÁFA szolgáltatással történő együttműködés tesztelése tesztkörnyezetben
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: Áfa visszatérítés beküldése a HMRC MTD webszolgáltatásnak
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
                         - name: Ellenőrzőlista az MTD ÁFA szolgáltatás Elektronikus üzeneteinek beállításához
                           href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: Áfabevallás készítése papírformátumban (ÁFA 100-as jelentés)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
-                        - name: Áfabeállítás részletei az Egyesült Királyságban tett áfabevalláshoz
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: Az MTD ÁFA szolgáltatással történő együttműködés tesztelése tesztkörnyezetben
+                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                        - name: A Finance környezet engedélyezése a HMRC MTD ÁFA webszolgáltatással való együttműködésre
+                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                        - name: Áfa visszatérítés beküldése a HMRC MTD webszolgáltatásnak
+                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
                         - name: Áfa fizetések és kötelezettségekkel kapcsolatos adatok beolvasása a HMRC-ből
                           href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                        - name: Áfabeállítás részletei az Egyesült Királyságban tett áfabevalláshoz
+                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                        - name: Áfabevallás készítése papírformátumban (ÁFA 100-as jelentés)
+                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Kifizetési gyakorlatok statisztikai adataival kapcsolatos jelentés
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Egyesült Államok
@@ -4119,6 +4129,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/finance/toc.json
                         - name: 'Futtasson formátumokat, hogy dinamikusan tudjon hozzáadni oszlopokat az Excel-jelentésekhez'
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
+                    - name: ER-formátum megtervezése a létrehozott dokumentumok Excel programban való oldalszámozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurációk tervezése Word-formátumú jelentések generálásához
                   items:
                     - name: Új ER-konfiguráció tervezése Word formátumú jelentések generálásához
