@@ -2,7 +2,7 @@
 title: Tervezési optimalizálás kiadási folyamata és kiadási előzmények
 description: Ez a témakör a tervezési optimalizálás kiadási folyamatához és kiadási előzményeihez nyújt tájékoztatást.
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d0f7a9f59d1034451c5c2dec1150c017bda27ad4
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 1bf08fc75aa2c05b2f2974ee46ec16609505f696
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474700"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506783"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Tervezési optimalizálás kiadási folyamata és kiadási előzmények
 
@@ -33,6 +33,7 @@ Mivel az értesítések nem jelennek meg, amikor a környezetben frissítik a Te
 
 | Változások | Funkciókezelés részletei | Kiadási dátumok |
 |---|---|---|
+| <p>Az alaptervek támogatása, ha a **Műveletek ütemezése** beállítása *Műveletek ütemezése*.</p><p>Az **Útvonalcsoportok** lapon tiszteletben tartja az **Aktiválás**, **Munkaidő** és **Kapacitás** jelölőmezőket az **Útvonal/munka típusa** vagy *Beállítás* vagy *Folyamat* értékkel rendelkező sorokhoz. </p><p>Általános teljesítmény-, minőség- és stabilitásjavítások. | <p>A műveltek ütemezése a funkciókezelésben a 10.0.20 verziótól elérhető.</p><p>Funkció neve: *Végtelen kapacitásütemezés a tervezési optimalizáláshoz*</p>  | 2021. szeptember 9–17. |
 | Általános teljesítmény-, minőség- és stabilitásjavítások. | Nincs szükség funkciókezelésre. | 2021. augusztus 25–30. |
 | <p>A tervezett megrendelésekhez hozzáadtuk **az átfutási idő** mezőt.</p><p>Általános teljesítmény-, minőség- és stabilitásjavítások.</p> | Nincs szükség funkciókezelésre. | 2021. augusztus 12–17. |
 | <p>A végtelen kapacitású ütemezéshez hozzáadott erőforrás-típuskövetelmények.</p><p>Javított erőforrás- és naptárhatékonyság végtelen kapacitású ütemezés esetén.</p><p>További tájékoztatás: [Ütemezés végtelen kapacitással](infinite-capacity-planning.md). | <p>A funkciókezelésben a 10.0.20 verziótól elérhető.</p><p>Funkció neve: *Végtelen kapacitásütemezés a tervezési optimalizáláshoz*</p> | 2021. július 6–12. |

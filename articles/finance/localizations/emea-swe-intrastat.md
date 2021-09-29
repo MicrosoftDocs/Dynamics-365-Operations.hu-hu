@@ -9,12 +9,12 @@ ms.reviewer: kfender
 ms.search.region: Global
 ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 404fb8dff1519aefb2f4af25eb95dfa6fce75b7c
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
+ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417082"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "7486946"
 ---
 # <a name="swedish-intrastat"></a>Svéd Intrastat
 
@@ -48,7 +48,7 @@ További információért lásd: [ER-konfigurációk letöltése a Konfiguráci�
 3. A **Jelentésformátum-hozzárendelés** mezőben válassza az **Intrastat jelentés** lehetőséget.
 4. Az **Árucikk-kódok hierarchiája** gyorslapon a **Kategóriahierarchia** mezőben válassza az **Intrastat** lehetőséget.
 5. A **Tranzakciókód** mezőben válassza ki a vagyonátruházáshoz létrehozott tranzakciókódot. Ezt a kódot olyan tranzakciókra használja, amelyek tényleges vagy tervezett tulajdonátruházást eredményeznek (pénzügyi vagy egyéb) ellenszolgáltatás ellenében. Javításra is használható. A svédországi vállalatok egyjegyű tranzakciós kódokat használnak.
-6. A **Jóváírási megjegyzés** mezőben válassza ki az áruk visszaküldésének tranzakciós kódját. Ezt a kódot az eredetileg a tranzakció kódja alatt rögzített áruk visszaküldésére használja a tranzakciót követően. A svédországi vállalatok egyjegyű tranzakciós kódokat használnak.
+6. A **Jóváírási megjegyzés** mezőben válassza ki az áruk visszaküldésének tranzakciós kódját.
 7. Az **Ország/régió tulajdonságai** lapon az **Ország/régió** mezőben sorolja fel azokat az országokat vagy régiókat, amelyekkel a vállalata üzleti kapcsolatban áll. Minden olyan ország esetében, amely az EU része, az **Ország/régió típusa** mezőben válassza az **EU-t**, hogy az ország megjelenjen az Intrastat-jelentésben.
 
 ## <a name="set-up-the-product-parameters-for-the-intrastat-declaration"></a>Az Intrastat-nyilatkozat termékparamétereinek beállítása

@@ -2,7 +2,7 @@
 title: Ütemezés végtelen kapacitással
 description: Ez a témakör a tervezési optimalizálás korlátlan kapacitásütemezésével kapcsolatban tartalmaz tájékoztatást. Az aktuális funkciókorlátozásokat is leírja.
 author: crytt
-ms.date: 09/02/2021
+ms.date: 09/21/2021
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2e730340cddac107b04a6b5877e51b84f4dd7b21
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: 9e1e423aaed06f6bb2b42e27d41c2aef46ffe104
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471668"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506807"
 ---
 # <a name="scheduling-with-infinite-capacity"></a>Ütemezés végtelen kapacitással
 
@@ -27,7 +27,12 @@ A *Tervezés optimalizálása végtelen kapacitásütemezéssel* szolgáltatás 
 
 ## <a name="turn-on-the-infinite-capacity-scheduling-feature"></a>A korlátlan kapacitásütemezési funkció bekapcsolása
 
-Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, nyissa meg a [Funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet, és a kapcsolja be a *Tervezés optimalizálása végtelen kapacitásütemezéssel* funkciót.
+A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+
+- **Modul:** *Alaptervezés modul*
+- **Funkció neve:** *Végtelen kapacitásütemezés a tervezési optimalizáláshoz*
+
+Ezzel a funkcióval kapcsolatos további tudnivalókat lásd: [Ütemezés erőforrás-kijelöléssel képesség alapján](capability-based-scheduling.md).
 
 ## <a name="added-functionality"></a>Hozzáadott funkcionalitás
 
@@ -42,7 +47,7 @@ Az ütemezési folyamat során a rendszer figyelembe veszi a műveletekhez megha
 - Erőforrás típusa
 - Erőforrás
 - Erőforráscsoport
-- Képesség
+- Képesség (További tudnivalókat lásd: [Ütemezés erőforrás-kijelöléssel képesség alapján](capability-based-scheduling.md).)
 
 > [!NOTE]
 > Az emberi erőforrásokkal kapcsolatos követelmények, például a szakértelem vagy a tanúsítványkövetelmények még nem támogatottak.
@@ -55,7 +60,6 @@ A funkció a **beállítási idő** és a **futási idő** üzemeltetési tulajd
 
 A tervezési optimalizálási ütemezés használata esetén a következő korlátozások érvényesek:
 
-- A funkció csak a feladatütemezést támogatja. A műveletütemezéshez kapcsolódó beállítások az ütemezés során nem számítanak, az alaptervek ütemezési módszerétől függetlenül.
 - A funkció csak a végtelen kapacitást támogatja.
 - A funkció nem támogatja az erőforrás-terhelési funkciókat.
 - A funkció nem veszi figyelembe az útvonalselejtezést.

@@ -1,8 +1,8 @@
 ---
 title: Szabadság- és távolléttípusok konfigurálása
 description: Beállíthatja, hogy az alkalmazottak milyen típusú szabadságot vehetnek igénybe a Dynamics 365 Human Resources alkalmazásban.
-author: andreabichsel
-ms.date: 07/16/2021
+author: twheeloc
+ms.date: 09/09/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0ca474fe12867ae767db936ad0b2995c4437bdf0ee94831450fda825b9e075dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b616d1f2c8b0bc8131045424b01dbfaa82f41f84
+ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730418"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485807"
 ---
 # <a name="configure-leave-and-absence-types"></a>Szabadság- és távolléttípusok konfigurálása
 
@@ -65,9 +65,9 @@ A Dynamics 365 Human Resources szabadságtípusai határozzák meg az alkalmazot
 
 1. Adja meg a szabadságtípus kerekítési beállításait. Választási lehetőségek: **Nincs**, **Fel**, **Le** és **Legközelebbi**. A szabadságtípus kerekítési pontosságát is megadhatja.
 
-2. Adja meg a szabadságtípus **Munkaszünet-korrekció** beállítását. Ha bejelöli ezt a lehetőséget, akkor a Human Resources szolgáltatás a munkanapra eső napok száma alapján határozza meg, hogyan kell elszámolni a szabadságtípus távolléti idejét. Ha például karácsony napja hétfőre esik, akkor a Human Resources szolgáltatás levon egy napot a szabadságtípusból a könyvelés feldolgozásakor.
+2. Adja meg a szabadságtípus **Munkaszünet-korrekció** beállítását. Ha bejelöli ezt a lehetőséget, akkor a munkanapra eső napok száma alapján lesz meghatározva, hogyan kell elszámolni a szabadságtípus távolléti idejét. Ha például karácsony napja hétfőre esik, akkor a Human Resources szolgáltatás levon egy napot a szabadságtípusból a könyvelés feldolgozásakor.
 
-   A szabadnapokat a munkaidőnaptárban állíthatja be. További információ: [Munkaidőnaptár létrehozása](hr-leave-and-absence-working-time-calendar.md)
+   A szabadnapokat a munkaidőnaptárban állíthatja be. További információ: [Munkaidőnaptár létrehozása](hr-leave-and-absence-working-time-calendar.md).
    
  3. Állítsa be a szabadság típusaként az **Átvihető szabadságtípust**. Ha ezt a lehetőséget választja, akkor az átvitt egyenlegek átkerülnek a megadott szabadságtípusba. Az átvitt szabadságtípust is figyelembe kell venni a szabadság- és a távolléti tervben. 
  
@@ -76,7 +76,7 @@ A Dynamics 365 Human Resources szabadságtípusai határozzák meg az alkalmazot
 ## <a name="configure-the-required-attachment-per-leave-type"></a>Szükséges melléklet konfigurálása szabadságtípusonként
 
 > [!NOTE]
-> A **Melléklet kötelező** mező használatához be kell kapcsolnia a Funkciókezelés funkcióban az **(Előzetes verzió) szabadságkérések kötelező mellékletének konfigurálása** elemet. Az előzetes funkciók bekapcsolásával kapcsolatos további információt lásd a [Szolgáltatások kezelése](hr-admin-manage-features.md) című témakörben.
+> A **Melléklet kötelező** mező használatához be kell kapcsolnia a Funkciókezelés funkcióban az **Szabadságkérések kötelező mellékletének konfigurálása** elemet. A funkciók bekapcsolásával kapcsolatos további információt lásd a [Szolgáltatások kezelése](hr-admin-manage-features.md) című témakörben.
 
 1. A **Szabadság és távollét** lapon a **Hivatkozások** lapon a **Beállítások** alatt válassza a **Szabadság- és távolléttípusok** lehetőséget.
 
@@ -87,7 +87,7 @@ Az alkalmazottaknak akkor kell feltölteniük a mellékletet, amikor olyan új s
 ## <a name="configure-leave-units-hoursdays-per-leave-type"></a>Szabadság-mértékegységek (óra/nap) konfigurálása szabadságtípusonként
 
 > [!NOTE]
-> Az egységek szabadságtípusonként funkció használatához először be kell kapcsolni az **(Előnézet) Szabadság-mértékegységek konfigurálása szabadságtípusonként** funkciót a Funkciókezelésben. Az előzetes funkciók bekapcsolásával kapcsolatos további információt lásd a [Szolgáltatások kezelése](hr-admin-manage-features.md) című témakörben.
+> Az egységek szabadságtípusonként funkció használatához először be kell kapcsolni az **Szabadság-mértékegységek konfigurálása szabadságtípusonként** funkciót a Funkciókezelésben. A funkciók bekapcsolásával kapcsolatos további információt lásd a [Szolgáltatások kezelése](hr-admin-manage-features.md) című témakörben.
 
 > [!IMPORTANT]
 > A jogi személynél a szabadságtípusok alapértelmezés szerint a szabadságparaméterek konfigurációjában megadott szabadságegységeket használják a jogi személy szintjén.

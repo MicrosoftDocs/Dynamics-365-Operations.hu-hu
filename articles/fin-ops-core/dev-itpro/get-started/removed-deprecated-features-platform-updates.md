@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
-ms.date: 08/27/2021
+ms.date: 09/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 68114989ab96d175b534a31a7115420ee4adbcfb
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463623"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500109"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -38,7 +38,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Az LCS szolgáltatásban elavult néhány SQL-jelentés. A továbbiakban nem kell figyelnie a jelentéseket, mert ezt a funkciót más szolgáltatások helyettesítik majd. |
+| **Elavulás/eltávolítás oka** |   Minden tevékenységet és megfigyelést belsőleg, a platformon keresztül, az automatizáláson keresztül hajt végre a rendszer. Ehhez nem szükséges kézi beavatkozás.|
 | **Felváltotta másik szolgáltatás?**   | Nincs |
 | **Érintett területek**         | SQL-jelentések: jelenlegi DTU, aktuális DTU-részletek, Zárolási részletek lekérdezése, Aktuális csomagútmutató listája, Lekérdezésazonosítók listájának lekérdezése, SQL-lekérdezési csomag lekérése adott csomagazonosítóhoz, Lekérdezési csomagok és végrehajtási állapotok lekérdezése, Szabályozási konfiguráció lekérdezése, Várakozási statisztikák lekérése, Legdrágább lekérdezések listája |
 | **Telepítési beállítás**              | Felhőtelepítés: a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
@@ -181,7 +181,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | Az [új rácsvezérlő](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Érintett területek**         | Webes ügyfél |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | A 10.0.13 verzióban az új rácsvezérlő általánosan elérhető, és a vevők tetszés szerint be tudják kapcsolni ezt a funkciót. Az új rácsvezérlő használata kötelezővé válik a 2021 októberi kiadástól. Amikor az új rácsvezérlő használata kötelezővé válik, a **forceLegacyGrid()** API többé nem lesz figyelembe véve. |
+| **Állapot**                         | A 10.0.13 verzióban az új rácsvezérlő általánosan elérhető, és a vevők tetszés szerint be tudják kapcsolni ezt a funkciót. Az új rácsvezérlő alapértelmezés szerint a 2021. októberi kiadással lesz bekapcsolva,és a jelenleg célok szerint kötelező lesz 2022. áprilisban. Amikor az új rácsvezérlő használata kötelezővé válik, a **forceLegacyGrid()** API többé nem lesz figyelembe véve. |
 
 ### <a name="personalization-without-saved-views"></a>Mentett nézetek nélküli személyre szabás 
 

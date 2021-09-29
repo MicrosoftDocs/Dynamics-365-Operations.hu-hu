@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: Release 10.0.18
-ms.openlocfilehash: 1a9603df8fd3b2c81c37ca95fd1b13d0b6f4004a38b0cf86846486e3b5d41bfa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db3c7561a7249930def2e519f3b6718c429fa3ba
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729410"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500475"
 ---
 # <a name="process-review-and-post-rebates"></a>Visszatérítések feldolgozása, felülvizsgálata és feladása
 
@@ -43,8 +43,6 @@ A **FIFO beszerzési ár kiszámítása** ismétlődő feladat futtatásával ki
 Lépjen a **Visszatérítés-kezelés \> Ismétlődő feladatok \> FIFO beszerzési ár kiszámítása** lehetőségre. A megjelenő párbeszédpanelen válassza az **OK** lehetőséget a számítás futtatásához.
 
 ## <a name="create-source-transactions"></a>Forrástranzakciók létrehozása
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Létrehozhat értékesítési és beszerzési rendeléseket, amelyekhez forrástranzakciókat tartalmaznak egy megfelelő visszatérítési ügylet létrehozása előtt vagy után is.
 
@@ -158,8 +156,6 @@ Adott ajánlatok vagy ajánlatsorok feldolgozása helyett kötegelt feldolgozás
 
 ### <a name="process-deals-by-using-the-rebate-workbench"></a>Ügyletek feldolgozása a visszatérítési munkaterület használatával
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 Adott ajánlatok vagy ajánlatsorok feldolgozása helyett használj a *visszatérítés munkaterületet* több ügylet egyszerre történő feldolgozásához. Opcionálisan alkalmazhat rekordszűrőket és/vagy beállíthat ismétlődő ütemezést. Nem kell sorokat kijelölni. A rendszer feldolgoz minden sort, amely megfelel a beállított dátumnak és szűrési követelményeknek.
 
 Az ügyeletek kötegelta visszatérítési munkaterülettel történő feldolgozásához kövesse az alábbi lépéseket.
@@ -213,8 +209,6 @@ Visszatérítéskezelési tranzakciók megtekintéséhez és szerkesztéséhez a
 > Ha igénylési folyamatot használ, a következő időszak feldolgozásakor a tranzakciólista tartalmazza az előző feladásból származó nem igényelt tranzakciókat, valamint a kiválasztott időszakra vonatkozó új tranzakciókat.
 
 ### <a name="view-and-edit-rebate-management-transactions-by-using-the-rebate-workbench"></a>Visszatérítéskezelési tranzakciók megtekintése és szerkesztése a visszatérítési munkaterület használatával
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Visszatérítéskezelési tranzakciók megtekintéséhez és szerkesztéséhez a visszatérítés munkaterület használatával kövesse az alábbi lépéseket.
 
@@ -295,8 +289,6 @@ Adott ajánlatok vagy ajánlatsorok tranzakcióinak feladása helyett kötegelt 
 
 ### <a name="post-transactions-by-using-the-rebate-workbench"></a>Tranzakciók feladása a visszatérítési munkaterület használatával
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 A létesítő, visszatérítési vagy leírási tranzakciók feldolgozása után a következő lépésekkel lehet a visszatérítés munkaterületet használni az összes ügylet egy vagy több konkrét tranzakciósorához létrehozott tranzakciók áttekintésére és feladására.
 
 1. Lépjen a **Visszatérítés-kezelés \> Visszatérítés-kezelési ajánlatok \> Visszatérítési munkaterület** részre.
@@ -332,8 +324,6 @@ A visszatérítés-kezelési ajánlathoz társított naplóbejegyzések áttekin
 
 ### <a name="review-journals-by-using-the-rebate-workbench"></a>Naplók áttekintése a visszatérítési munkaterület használatával
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 A naplóók áttekintéséhez a visszatérítési munkaterülettel kövesse az alábbi lépéseket.
 
 1. Lépjen a **Visszatérítés-kezelés \> Visszatérítés-kezelési ajánlatok \> Visszatérítési munkaterület** részre.
@@ -342,8 +332,6 @@ A naplóók áttekintéséhez a visszatérítési munkaterülettel kövesse az a
 1. Megjelenik a megfelelő naplók, dokumentumok vagy cikkek listája. Ha további információt szeretne megtekinteni bármely naplóról, dokumentumról vagy cikkről, jelölje ki a sorát, majd a Művelet panelen válassza a **Részletek megtekintése** lehetőséget.
 
 ## <a name="rebate-management-transactions-on-the-deduction-workbench"></a>A Visszatérítés munkaterület tranzakciói a levonások munkaterületen
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Amikor felad egy olyan Visszatérítés-kezelési tranzakciót, amely a következő **Fizetéstípus** értékek valamelyikét tartalmazza, a rendszer létrehoz egy vevői levonási naplót vagy egy szabadszöveges számlát a megfelelő vevői számlához:
 
@@ -358,8 +346,6 @@ További tájékoztatás: [Levonások kezelése a levonás munkaterület haszná
 
 ## <a name="purge-unposted-transactions"></a>Fel nem adott tranzakciók kiürítése
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 A létesítő, visszatérítési vagy leírási tranzakciók feldolgozása után kövesse ezeket a lépéseket a kijelölt, fel nem adott tranzakciók kiürítése érdekében.
 
 1. Lépjen a **Visszatérítés-kezelés \> Visszatérítés-kezelési ajánlatok \> Visszatérítési munkaterület** részre.
@@ -368,8 +354,6 @@ A létesítő, visszatérítési vagy leírási tranzakciók feldolgozása után
 4. Kattintson az **OK** gombra a nem feladott tranzakciók törléséhez.
 
 ## <a name="cancel-a-posted-provision"></a>Feladott létesítés törlése
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Egy létesítés feldolgozása és feladása után kövesse az alábbi lépéseket a feladott létesítő tranzakciók törléséhez.
 

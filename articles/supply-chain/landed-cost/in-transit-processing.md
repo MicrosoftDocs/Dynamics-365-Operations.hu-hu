@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: d4503b6939e3d01ae5bcf1d79c1f85d39348fbb6233cfb7a965f84f3a3b0699a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af7ac416053a90766138f999ce69d9993ee2ff6c
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744798"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500279"
 ---
 # <a name="goods-in-transit-processing"></a>Úton lévő áruk feldolgozása
 
@@ -148,8 +148,6 @@ Ez a szakasz olyan funkciókat ír le, amelyekhez a **Partraszállási költség
 A Partraszállítási költség hozzáad egy új, *Úton lévő áruk* nevű munkarendelés-típust a **Munkasablonok** oldalhoz. Ezt a munkarendelés-típust ugyanúgy kell konfigurálni, mint a [beszerzési rendelés munkasablonjait](/dynamicsax-2012/appuser-itpro/create-a-work-template).
 
 #### <a name="work-header-breaks"></a>Munkafejléc törések
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Az *Úton lévő áruk* típusú munkarendeléssel rendelkező munkarendelési sablonokat be lehet állítani munkafejlécek felosztására. A **Munkasablonok** oldalon hajtsa végre az alábbi lépések valamelyikét:
 

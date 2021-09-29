@@ -2,7 +2,7 @@
 title: Rács funkciói
 description: Ez a témakör ismerteti a rács vezérlőelem számos erőteljes funkcióját. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
-ms.date: 08/04/2021
+ms.date: 09/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775242"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483854"
 ---
 # <a name="grid-capabilities"></a>Rácsfunkciók
 
@@ -30,7 +30,7 @@ Az új rács vezérlőelem számos hasznos és erőteljes funkciót tartalmaz, a
 -  Teljes összegek számítása
 -  A rendszer előtt történő gépelés
 -  Matematikai kifejezések kiértékelése 
--  Táblázatos adatok csoportosítása (külön lehet engedélyezni az **(Előzetes verzió) Csoportosítás rácsokban** szolgáltatással)
+-  Táblázatos adatok csoportosítása (külön lehet engedélyezni az **Csoportosítás rácsokban** szolgáltatással)
 -  Oszlopok rögzítése
 
 ## <a name="calculating-totals"></a>Teljes összegek számítása
@@ -93,7 +93,7 @@ A hatékonyság javításaként a felhasználók matematikai képleteket írhatn
 Ha azt szeretné, hogy a rendszer bizonyos értékeket kifejezésként ismerjen fel, akkor az értéket egyenlőségjellel (**=**) kell bevezetnie. A támogatott operátorokkal és szintaxissal kapcsolatos további információkat lásd: [Támogatott matematikai szimbólumok](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Táblázatos adatok csoportosítása
-Az üzleti felhasználóknak gyakran kell ad hoc adatelemzést végezniük. Bár ez megoldható az adatok Microsoft Excel alkalmazásba való exportálásával és pivot táblákkal, a táblázatos rácsok **Csoportosítás rácsokban** funkciója amely általánosan elérhető a 10.0.16 verzióban / 40-es platformfrissítésben, amely az új rácsvezérlő funkción alapul lehetővé teszi, hogy a felhasználok a Finance and Operations alkalmazásokban is érdekes módon szervezzék a táblázatos adataikat. Mivel ez a funkció kiterjeszti az **Összegek** funkciót, a **Csoportosítás** lehetővé teszi, hogy egy csoport szintjén részösszegek megadásával jelentőségteljes betekintést nyerjen az adatokba.
+Az üzleti felhasználóknak gyakran kell ad hoc adatelemzést végezniük. Bár ez megoldható az adatok Microsoft Excel alkalmazásba való exportálásával és pivot táblákkal, a táblázatos rácsok **Csoportosítás rácsokban** funkciója, amely az új rácsvezérlő funkción alapul lehetővé teszi, hogy a felhasználok a Finance and Operations alkalmazásokban is érdekes módon szervezzék a táblázatos adataikat. Mivel ez a funkció kiterjeszti az **Összegek** funkciót, a **Csoportosítás** lehetővé teszi, hogy egy csoport szintjén részösszegek megadásával jelentőségteljes betekintést nyerjen az adatokba.
 
 A funkció használatához kattintson a jobb egérgombbal a csoportosítani kívánt oszlopra, és válassza ki a **Csoportosítás az oszlop szerint** lehetőséget. Ez a művelet a kiválasztott oszlop szerint rendezi az adatokat, egy új **Csoportosítás** oszlopot ad hozzá a rácshoz, majd az egyes csoportok elejére „fejlécsorokat” szúr be. Ezek a fejlécsorok a következő információkat tartalmazzák az egyes csoportokról: 
 -  A csoport adatértéke 
@@ -108,9 +108,6 @@ Miután egyetlen oszlop szerint csoportosította az adatokat, csoportosíthatja 
 
 A csoportosítást bármikor eltávolíthatja bármelyik oszlopból, ha a jobb gombbal az adott oszlopra kattint, és a **Szétválasztás** parancsot választja. A csoportosítást az összes oszlopból úgy is eltávolíthatja, hogy a **Rácsbeállítások**, majd az **Összes szétválasztása** lehetőséget választja.   
 
-Ne feledje, hogy a 10.0.16-os verzió / 40-es platformfrissítés előtt csak egy csoportszint támogatott. Ezekben a verziókban, ha az adatok csoportosítva vannak, és egy másik oszlophoz a **Csoportosítás az oszlop szerint** lehetőséget választja, az eredeti csoportosítás lecserélődik.  
-
-
 ### <a name="expanding-and-collapsing-groups"></a>Csoportok kibontása és összecsukása
 Az adatok kezdeti csoportosítása esetén minden csoport ki lesz bontva. Az adatok összegzett nézeteit az egyes csoportok összecsukásával lehet létrehozni, illetve a csoport kibontása és összecsukása révén segítséget nyújthat a navigálásban az adatokon keresztül. Egy csoport kibontásához vagy összecsukásához válassza ki a nyíl (>) gombot a megfelelő csoportfej sorban. Ne feledje, hogy az egyes csoportok kibontása/összecsukása **nincs** mentve a személyre szabásban.
 
@@ -118,10 +115,10 @@ Az adatok kezdeti csoportosítása esetén minden csoport ki lesz bontva. Az ada
 A rács első oszlopának felső részén található jelölőnégyzet bejelölésével ugyanúgy kiválaszthatja (vagy megszüntetheti a kiválasztást) a rács minden sorában, ha a megfelelő csoportfej sorában a jelölőnégyzetet bejelöli, és egy csoport minden sorát is gyorsan kiválaszthatja (vagy törölheti a kijelölést). A csoportfej sorában található jelölőnégyzet mindig a csoport sorainak aktuális kiválasztási állapotát tükrözi, függetlenül attól, hogy az összes sor ki van-e választva, vagy csak néhány sor van kiválasztva.
 
 ### <a name="hiding-column-names"></a>Oszlopok neveinek elrejtése
-Az adatok csoportosításakor az alapértelmezett viselkedés a csoportfej sorában az oszlop nevének megjelenítése. A verzió 10.0.14/Platform Update 38-es verziójától kezdve elhagyhatja az oszlop nevét a csoportfej soraiban, ha kiválasztja a **Rácsbeállítások** > **Csoportoszlop nevének elrejtése** lehetőséget.
+Az adatok csoportosításakor az alapértelmezett viselkedés a csoportfej sorában az oszlop nevének megjelenítése. Elhagyhatja az oszlop nevét a csoportfej soraiban, ha kiválasztja a **Rácsbeállítások** > **Csoportoszlop nevének elrejtése** lehetőséget.
 
 ## <a name="freezing-columns"></a>Oszlopok rögzítése
-A rács egyes oszlopai elég fontosak lehetnek kontextus tekintetében ahhoz, hogy nem szeretné, hogy kigörgethetők legyenek a nézetből. Ehelyett azt szeretné, hogy az oszlopokban lévő értékek mindig láthatók legyenek. A 10.0.17-es verzióban a **Rács oszlopainak rögzítése** funkció biztosítja ezt a rugalmasságot a felhasználók számára. 
+A rács egyes oszlopai elég fontosak lehetnek kontextus tekintetében ahhoz, hogy nem szeretné, hogy kigörgethetők legyenek a nézetből. Ehelyett azt szeretné, hogy az oszlopokban lévő értékek mindig láthatók legyenek. A **Rács oszlopainak rögzítése** funkció biztosítja ezt a rugalmasságot a felhasználók számára. 
 
 Oszlop rögzítéséhez kattintson a jobb gombbal az oszlop fejlécére, majd válassza az **Oszlop rögzítése** lehetőséget. Amikor először végrehajtka ezt a lépést, a kiválasztott oszlop lesz az első oszlop, és többé nem lesz kigörgethető a nézetből. Az ezt követő rögzített oszlopok mindegyike az utolsóként rögzített oszlop jobb oldalához lesz hozzáadva. A Rögzített oszlopok újrarendezéséhez a szokásos Áthelyezés funkciót használhatja. A rögzített oszlopok azonban nem helyezhetők át úgy, hogy a rögzítetlen oszlopok között jelenjenek meg. Hasonlóképp, a nem rögzített oszlopok nem helyezhetők át úgy, hogy a rögzített oszlopok között jelenjenek meg.
 
@@ -132,32 +129,16 @@ Ne feledje, hogy az új rács sorkiválasztási és sorállapot-oszlopait mindig
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hogyan engedélyezhető az új rácsvezérlő a saját környezetemben? 
 
-**10.0.9 / 33-as platformfrissítés vagy újabb**
+A **Új rácsvezérlő** funkció elérhető közvetlenül a Funkciókezelésben bármilyen környezetben. Miután engedélyezte a funkciót a Funkciókezelésben, minden ezt követő felhasználói munkamenet az új rácsvezérlőt fogja használni. 
 
-A **Új rácsvezérlő** funkció elérhető közvetlenül a Funkciókezelésben bármilyen környezetben. A többi nyilvános előnézeti funkcióhoz hasonlóan a funkció engedélyezése termelési környezetben a [Kiegészítő felhasználási szerződés](public-preview-terms.md) hatálya alá tartozik.  
-
-**10.0.8 / 32-es platformfrissítés és 10.0.7 / 31-es platformfrissítés**
-
-Az **Új rácsvezérlő** funkció engedélyezhető az 1. szintű (fejlesztés/tesztelés) és a 2. szintű (tesztkörnyezet) környezetekben, hogy az alábbi lépések követésével további teszteket és tervezési változtatásokat lehessen biztosítani.
-
-1.  **Engedélyezze a tesztcsomagot**: hajtsa végre a következő SQL-utasítást: 
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, enabled, FLIGHTSERVICEID, PARTITION) VALUES('CLIReactGridEnableFeature', 1, 0, 5637144576);`
-
-2. **IIS alaphelyzetbe állítása** a statikus tesztelési gyorsítótár kiürítéséhez. 
-
-3.  **Keresse meg a funkciót**: ugorjon a **Funkciók kezelése** munkaterületre. Ha az **Új rácsvezérlő** nem szerepel az összes funkció listáján, akkor válassza a **frissítések keresése** lehetőséget.   
-
-4.  **Engedélyezze a funkciót**: keresse meg az **Új rácsvezérlő** funkciót a funkciólistában, majd válassza ki az **Engedélyezés most** lehetőséget a részleteket tartalmazó ablaktáblán. Ne feledje, hogy a böngésző frissítése szükséges. 
-
-Minden további felhasználói munkamenet engedélyezett új rácsvezérlővel indul.
+Ez a funkció alapértelmezés szerint a 10.0.21-es verziótól be van kapcsolva, és a cél az, hogy kötelezővé váljon a 10.0.25-ös verzióban. 
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Fejlesztő] Egyes oldalak elutasítása az új rács használatából 
-Ha a szervezet egy olyan oldalt észlel, amelyen problémák lépnek fel az új rács használata miatt, akkor a 10.0.13 / 37-es platformfrissítéstől egy API felület lehetővé teszi, hogy az egyes űrlapok használhassák a régi rácsvezérlőt, miközben a rendszer további részei az új rácsvezérlőt használják. Ha el szeretné utasítani az egyes oldalakat az új rácsból, adja hozzá a következő hívásfeladást `super()` az űrlap `run()` módjához.
+Ha a szervezet egy olyan oldalt észlel, amelyen problémák lépnek fel az új rács használata miatt, akkor egy API felület lehetővé teszi, hogy az egyes űrlapok használhassák a régi rácsvezérlőt, miközben a rendszer további részei az új rácsvezérlőt használják. Ha el szeretné utasítani az egyes oldalakat az új rácsból, adja hozzá a következő hívásfeladást `super()` az űrlap `run()` módjához.
 
  ```this.forceLegacyGrid();```
 
-Ezt az API-t a 2021 októberi kiadásig kell figyelembe venni, amikor az új rácsvezérlő használata kötelezővé válik. Ha bármilyen probléma az API használatát igényli jelentse azokat a Microsoftnak.
+Ezt az API-t addig tiszteletben fogjuk tartani, amíg az új rácsvezérlő kötelezővé nem válik, amely jelenleg 2022. áprilisában várható. Ha bármilyen probléma az API használatát igényli jelentse azokat a Microsoftnak.
 
 ### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Új rács használatának kikényszerítése egy laphoz a rács korábbi elutasítását követően
 Ha az új rács használatát egy adott oldalra vonatkozóan elutasította, akkor az alapproblémák megoldása után később érdemes lehet újra engedélyeznie az új rácsot. Ehhez egyszerűen el kell távolítania a következő hívását: `forceLegacyGrid()`. A módosítás csak akkor lép hatályba, ha az alábbiak valamelyike bekövetkezik:

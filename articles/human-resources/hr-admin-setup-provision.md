@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2eb2f7c0f35eb05263644248ecf16c5874547de9
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 766e807ee9061f52b692cf3436ba393b334e67c4
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441165"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488083"
 ---
 # <a name="provision-human-resources"></a>Human Resources kiépítése
 
@@ -41,6 +41,8 @@ Mielőtt elkezdené egy új termelési környezet biztosítását, a következő
 ## <a name="provision-a-human-resources-trial-environment"></a>Az Emberi erőforrások próbakörnyezetének kiépítése
 
 Az első üzenetkészlet vagy termelési környezet létesítása előtt szükség lehet egy Emberi erőforrások próbakörnyezet építésére, hogy érvényes legyen az [Emberi erőforrások próbakörnyezet](https://go.microsoft.com/fwlink/p/?LinkId=2115962) Emberi erőforrások szolgáltatás. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók a Human Resources környezet rendszergazdai felületén keresztül. 
+
+A próbakörnyezet lehetővé teszi az emberi erőforrások funkcióinak kiértékelését az olyan személyek számára, akik még nem férnek hozzá Human Resources környezethez. Ha próbakörnyezetet létesít, és a hitelesített felhasználónak már van hozzáférése egy vagy több meglévő Human Resources környezethez, a rendszer átirányítja a felhasználót a meglévő környezetre vagy a környezetek listájára.
 
 A próbaverzió környezetet nem úgy tervezték, hogy termelési környezetekben használják őket. Csak a 60 napos próbaidőszakra korlátozódnak. A próbaidőszak lejártakor a környezet és az abban lévő összes adat törlődik, és nem állítható helyre. A környezet nem alakítható tesztkörnyezetté és éles környezetté. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
 
@@ -135,7 +137,12 @@ Kövesse az alábbi útmutatást, amikor azt állapítja meg, hogy melyik Power 
    
     - **Nem támogatott földrajzi területek** - A környezetnek támogatott földrajzi területnek kell lennie. A további tudnivalókat lásd: [Támogatott földrajzi területek](hr-admin-setup-provision.md#supported-geographies).
 
-6. Miután meghatározta a használandó a helyes környezetet, folytathatja a létesítési folyamat. 
+6. A Human Resources és a Power Apps környezet integrálásához használható kettős írási képességek csak akkor használhatók, ha a **Dynamics 365 alkalmazások engedélyezése** beállítás van kiválasztva a környezetben. Lásd: [Kettős írás kezdőlapja](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) a kettős írással kapcsolatos további információkért.
+
+    > [!NOTE]
+    > A Power Apps környezet létrehozásakor ki kell választani a **Dynamics 365-alkalmazások engedélyezése** beállítást. Ha a telepítéskor nem választja ki ezt a lehetőséget, nem használhatja a Kettős írás lehetőséget a Dynamics 365 Human Resources és a Power Apps környezet adatainak integrálására, és nem telepíthet Dynamics 365-alkalmazásokat, például a Dynamics 365 Sales és Field Service alkalmazásokat a környezetbe. Ez a beállítás nem visszavonható. További tudnivalókat a Power Platform dokumentációs webhely [Fontos szempontok új környezet létrehozásakor](//power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) részében talál.
+
+7. Miután meghatározta a használandó a helyes környezetet, folytathatja a létesítési folyamat. 
 
 ### <a name="supported-geographies"></a>Támogatott földrajzi területek
 

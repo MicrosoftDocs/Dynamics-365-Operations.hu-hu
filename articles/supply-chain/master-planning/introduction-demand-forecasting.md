@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99248a1bc231cfe58270b043827cde00a520f872658217b85dffd810bed391c9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 984669d5e4bde4bd967bf0a181d1b45df16ee569
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736671"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7484049"
 ---
 # <a name="demand-forecasting-overview"></a>Igény-előrejelzés áttekintése
 
@@ -34,7 +34,9 @@ Az igény-előrejelzés értékesítési rendelésekből származó független i
 A kiinduló előrejelzés generálásához a rendszer elküldi az előzménytranzakciók összesítését az Azure rendszerbeli Microsoft Azure gépi tanulás szolgáltatásnak. Mivel ez a szolgáltatás nincs megosztva a felhasználók között, egyszerűen, az iparágra jellemző szükségleteknek megfelelően testreszabható. A Supply Chain Management segítségével megjelenítheti és kiigazíthatja az előrejelzést, valamint megtekintheti az előrejelzés pontosságára vonatkozó fő teljesítménymutatókat (KPI-ket).
 
 > [!NOTE]
-> Microsoft Azure A Machine Learning Studio (klasszikus) szükséges az előrejelzés gépi tanulással való generálásához. 2021 januárjától a következő területeken érhető el: Kelet-Japán, USA déli középső régiója, Délkelet-Ázsia, USA nyugati középső régiója és Nyugat-Európa. Az aktuális elérhetőséggel kapcsolatos frissített információkért lásd: [Azure-termékek régiónként.](https://azure.microsoft.com/global-infrastructure/services/?regions=all&products=machine-learning-studio)
+> Microsoft Azure A Machine Learning Studio (klasszikus) szükséges az előrejelzés gépi tanulással való generálásához. 2021. december 1-től nem hozhat létre új Machine Learning Studio (klasszikus) erőforrásokat. 2024. augusztus 31-ig azonban a meglévő Machine Learning Studio (klasszikus) erőforrásokat továbbra is használhatja. A frissített információkat lásd: [Azure Machine Learning Studio](/azure/machine-learning/overview-what-is-machine-learning-studio#ml-studio-classic-vs-azure-machine-learning-studio).
+> 
+> Dynamics 365 Supply Chain Management 10.0.23-as és későbbi verzió támogatást nyújt az új Azure Machine Learning Studio számára.
 
 ## <a name="key-features-of-demand-forecasting"></a>Az igény-előrejelzés fő funkciói
 

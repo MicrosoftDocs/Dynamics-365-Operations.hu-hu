@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: a57b51870d5738d906ca779474e0591dc16395cc992b3f79d37d1f45782bf66a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7b240038a946a7f34a3c69df18329edbe1df6be0
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715334"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500303"
 ---
 # <a name="peripherals"></a>Perifériák
 
@@ -562,7 +562,7 @@ Ez a konfiguráció minden olyan Modern POS-ügyfél esetében használható, am
 > Ha az eszközök gyakran használnak különböző hardverállomásokat, a Modern POS alkalmazást ajánlott úgy beállítani, hogy a hardverállomás kiválasztását kérje a pénztárosoktól a fizetési folyamat kezdetén. Kattintson a **Retail és Commerce** &gt; **Csatorna beállítása** &gt; **Pénztár beállítása** &gt; **Pénztárgépek** elemre. Jelölje ki a pénztárgépet, és állítsa be a **Kiválasztás fizetéskor** opciót az **Igen** értékre. Használja a **1090** elosztási ütemezést a módosítások szinkronizálására a csatornaadatbázisba.
 
 ## <a name="extensibility"></a>Bővíthetőség
-A hardverállomás bővítési forgatókönyveivel kapcsolatos információért lásd: [Hardverállomás-bővíthetőség](dev-itpro/hardware-station-extensibility.md).
+A hardverállomás bővítési forgatókönyveivel kapcsolatos tudnivalókat lásd a [POS integrálása új hardvereszközrel, és bővítménytelepítő generálása](dev-itpro/hardware-device-extension.md).
 
 ## <a name="security"></a>Biztonság
 Az aktuális biztonsági előírások szerint a következő beállításokat lehet éles környezetben lehet használni: 

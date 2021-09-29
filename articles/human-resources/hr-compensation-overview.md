@@ -1,8 +1,8 @@
 ---
 title: Kompenzációs konstrukciók
-description: A kompenzációkért és juttatásokért felelős vezetők használhatják a Kompenzációkezelést a karbantartáshoz és a szervezet alkalmazottaira vonatkozó fix és változó kompenzáció feldolgozásához.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Ez a témakör azt ismerteti, hogyan lehet használni a kompenzációkezelést a kompenzációs konstrukciók kezelésére és feldolgozására.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: intro-internal
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dafba542ec1421a6ef3437d9c2f22e0c363e557d7f5b6410af36fc7cb8d4be7d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 64169ebc5bbd2f0a9b4be3d4ec076c8814e6eb97
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732441"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483809"
 ---
 # <a name="compensation-plans"></a>Kompenzációs konstrukciók
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A kompenzációkért és juttatásokért felelős vezetők használhatják a Kompenzációkezelést a karbantartáshoz és a szervezet alkalmazottaira vonatkozó fix és változó kompenzáció feldolgozásához.
+A kompenzációkért és juttatásokért felelős vezetők használhatják a **Kompenzációkezelést** a karbantartáshoz és a szervezet alkalmazottaira vonatkozó fix és változó kompenzáció feldolgozásához.
 
 ### <a name="introduction"></a>Bevezetés
 
@@ -43,7 +43,7 @@ Az alábbi táblázat felsorolja azokat a kompenzációs folyamatokat, amelyek a
 <thead>
 <tr class="header">
 <th>Összetevő</th>
-<th>További információ...</th>
+<th>További információ</th>
 </tr>
 </thead>
 <tbody>
@@ -89,10 +89,10 @@ Az alábbi táblázat felsorolja azokat a kompenzációs folyamatokat, amelyek a
 </tr>
 <tr class="even">
 <td>Ellenőrzőpont</td>
-<td>A vezérlőpont az alkalmazottaknak adandó ideális fizetést határozza meg, az adott kompenzációs szinten. A fokozatos konstrukciójú szerkezeteknél a vezérlőpontok általában a tartományok felezőpontjai. A sávos szerkezeteknél ritkán alkalmaznak vezérlőpontokat. A Fix kompenzáció tervek képernyőn megadhatja a fix kompenzációs terv vezérlőpontját.</td>
+<td>A vezérlőpont az alkalmazottaknak adandó ideális fizetést határozza meg, az adott kompenzációs szinten. A fokozatos konstrukciójú szerkezeteknél a vezérlőpontok általában a tartományok felezőpontjai. A sávos szerkezeteknél ritkán alkalmaznak vezérlőpontokat. A Fix kompenzáció tervek lapon megadhatja a **Fix kompenzációs konstrukció** vezérlőpontját.</td>
 </tr>
 <tr class="odd">
-<td>Beosztások</td>
+<td>Feladatfunkciók</td>
 <td>A beosztások segítségével osztályozhatók és szűrhetők az adott munkákhoz a kompenzációs tervek.</td>
 </tr>
 <tr class="even">

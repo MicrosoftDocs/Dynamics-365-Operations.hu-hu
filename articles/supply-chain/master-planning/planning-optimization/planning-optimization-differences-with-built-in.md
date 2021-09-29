@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a102f1d77362f650c060ce5d0aee5b62d2102532
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 63f3bc6cb7563ee6ff719272a0795efffcb40bc8
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344954"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500196"
 ---
 # <a name="differences-between-built-in-master-planning-and-planning-optimization"></a>A beépített alaptervezés és a tervezési optimalizálás közötti különbségek
 
@@ -33,6 +33,8 @@ A Tervezésoptimalizálás eredményei eltérhetnek a beépített főtervező mo
 | Tervmásolás, terv törlése és tervverzió tisztítás | <p>A navigációs ablaktáblában a következő elemek vannak letiltva a **Főtervezés \> Főtervezés \> Tervek karbantartása** alatt:</p><ul><li>Tervmásolat</li><li>Terv törlése</li><li>Tervezett verzió tisztítása</li></ul> |
 | Visszárurendelések | A visszaküldött megrendeléseket nem vesszük figyelembe. |
 | Ütemezéssel kapcsolatos funkciók | Részletekért lásd: [Ütemezés végtelen kapacitással](infinite-capacity-planning.md#limitations). |
+| Biztonsági készlet teljesítése | A tervezési optimalizálás mindig a *Mai dátum + beszerzési* idő lehetőséget használja a **Cikkfedezet** lap **Minimális teljesítése** mezőjében. Ez segít elkerülni a nem kívánt tervezési rendeléseket, és más problémákat, ha a beszerzési idő nem szerepel a biztonsági készletben, akkor az aktuális alacsony raktárkészlethez létrehozott tervezett rendeléseket mindig az átfutási idő miatt késlelteti a program. |
+| Biztonsági készlet-igénykövetés és nettó követelmények | A *Biztonsági készlet* követelménytípusa nem szerepel, és nem jelenik meg a **Nettó követelmények** lapon. A biztonsági készlet nem képvisel igényt, és nincs hozzá szükségletdátum társítva. Ehelyett megszorítást ad meg arra, hogy mennyi készletnek kell jelen lennie mindig. Az alaptervezés során azonban még mindig figyelembe veszi a rendszer a **Minimum** mező értékét a tervezett rendelések számítása során. Javasoljuk, hogy a **Nettó követelmények** lapon vizsgálja meg az **Összesített mennyiség** oszlopot, és ellenőrizze, hogy figyelembe lett-e véve ez az érték. |
 | Közlekedési naptárak | A szállítási **módok** lapon a **szállítási naptár** oszlopban szereplő értéket figyelmen kívül hagyjuk. |
 
 ## <a name="additional-resources"></a>További erőforrások

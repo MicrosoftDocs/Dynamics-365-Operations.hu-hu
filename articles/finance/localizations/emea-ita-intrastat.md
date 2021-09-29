@@ -1,20 +1,20 @@
 ---
 title: Olasz Intrastat
 description: Ez a témakör az Olaszországban az Intrastat-jelentéskészítéssel kapcsolatban tartalmaz tájékoztatást.
-author: andosip
-ms.date: 7/9/2021
+author: anasyash
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: f80a82f4c3c00ee263cc0bf31b0dc5fc69a05dea324fe96e3e0db9a13a488fac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3b676ba754cded03fdc6d566ffbfbb35c204b03a
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779368"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488259"
 ---
 # <a name="italian-intrastat"></a>Olasz Intrastat
 
@@ -597,13 +597,10 @@ Két jelentést kell küldenie a hatóságnak. Az egyik jelentés a közössége
 
 - **Fedőlap**
 
-- **1. szakasz Áruk** – ez a szakasz az Intrastat bevallási időszakban szereplő áruk számláihoz kapcsolódó normál tranzakciókkal és jóváírásokkal kapcsolatos információkat tartalmaz.
-
-- **2. szakasz Helyesbítések árukhoz** – Ez a szakasz információkat tartalmaz helyesbítésekről és jóváírásokról, amelyek az előző Intrastat jelentési időszak áruinak számláihoz kapcsolódnak.
-
-- **3. szakasz Szolgáltatások** – ez a szakasz az Intrastat bevallási időszakban szereplő szolgáltatások számláihoz kapcsolódó normál tranzakciókkal és jóváírásokkal kapcsolatos információkat tartalmaz.
-
-- **4. szakasz Helyesbítések szolgáltatásokhoz** – Ez a szakasz információkat tartalmaz helyesbítésekről és jóváírásokról, amelyek az előző Intrastat jelentési időszak szolgáltatásinak számláihoz kapcsolódnak.
+- **1. szakasz Áruk**: ez a szakasz az Intrastat bevallási időszakban szereplő áruk számláihoz kapcsolódó normál tranzakciókkal és jóváírásokkal kapcsolatos információkat tartalmaz.
+- **2. szakasz Helyesbítések árukhoz**: Ez a szakasz információkat tartalmaz helyesbítésekről és jóváírásokról, amelyek az előző Intrastat jelentési időszak áruinak számláihoz kapcsolódnak.
+- **3. szakasz Szolgáltatások**: ez a szakasz az Intrastat bevallási időszakban szereplő szolgáltatások számláihoz kapcsolódó normál tranzakciókkal és jóváírásokkal kapcsolatos információkat tartalmaz.
+- **4. szakasz Helyesbítések szolgáltatásokhoz**: Ez a szakasz információkat tartalmaz helyesbítésekről és jóváírásokról, amelyek az előző Intrastat jelentési időszak szolgáltatásinak számláihoz kapcsolódnak.
 
 ## <a name="set-up-intrastat"></a>Intrastat beállítása
 
@@ -611,21 +608,14 @@ Két jelentést kell küldenie a hatóságnak. Az egyik jelentés a közössége
 
 Az Intrastattal való munka megkezdéséhez a következő általános információkat kell beállítani:
 
--   Árucikk-kódok. Szolgáltatások esetében hatjegyű vámtariatkódokat kell definiálni.
-
--   Tranzakciókódok. Olaszország egyjegyű tranzakciókódokat használ.
-
--   Szállítási módok.
-
--   Statisztikai eljárások.
-
--   Külkereskedelmi paraméterek.
-
--   Raktárkészlet-nyilvántartás.
-
--   Megjelent termék részletei.
-
--   Az ügynök kapcsolattartási adatai.
+   - Árucikk-kódok. Szolgáltatások esetében hatjegyű vámtariatkódokat kell definiálni.
+   - Tranzakciókódok. Olaszország egyjegyű tranzakciókódokat használ.
+   - Szállítási módok.
+   - Statisztikai eljárások.
+   - Külkereskedelmi paraméterek.
+   - Raktárkészlet-nyilvántartás.
+   - Megjelent termék részletei.
+   - Az ügynök kapcsolattartási adatai.
 
 A további tudnivalókat lásd: [Intrastat áttekintése](emea-intrastat.md).
 
@@ -633,97 +623,68 @@ A további tudnivalókat lásd: [Intrastat áttekintése](emea-intrastat.md).
 
 A következő lépések szerint állítsa be az Olaszországra jellemző beállításokat, hogy dolgozhasson az Intrastattal.
 
-1.  A [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) szolgáltatásban, a Közös eszközök könyvtárából töltse le a legfrissebb verzióit a következő Elektronikus jelentéskészítési (ER) konfigurációkat az Intrastat nyilatkozathoz:
+1. A [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/Logon/Index) szolgáltatásban, a Közös eszközök könyvtárából töltse le a legfrissebb verzióit a következő Elektronikus jelentéskészítési (ER) konfigurációkat az Intrastat nyilatkozathoz:
 
-    -   Intrastat modell
+    - Intrastat modell
+    - Intrastat jelentés
+    - Intrastat (IT)
 
-    -   Intrastat jelentés
+    További tudnivalókért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
-    -   Intrastat (IT)
+2. A Dynamics 365 Finance alkalmazásban menjen az **Adó** > **Beállítás** > **Külkereskedelmi paraméterek** menüponthoz.
+3. Az **Intrastat** lapon az **Általános** gyorslapon állítsa be a következő mezőket:
 
-További tudnivalókért lásd: [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+    - **Származási/cél megye**: A vállalat megyének kiválasztása. Ez a megye lesz használva az elküldések során.
+    - **Tranzakciókód**: a tranzakciókód kiválasztása a tulajdonságátvitelhez. Ez a kód olyan tranzakciókhoz használható, amelyek tényleges vagy tervezett tulajdonjogátadást okoznak a kompenzációval szemben, valamint korrekciókhoz.
 
-2.  A Dynamics 365 Finance alkalmazásban válassza a **Adó** &gt; **Beállítás** &gt; **Külkereskedelmi paraméterek** lehetőséget.
+    - **Jóváírás**: Válasszon tranzakciókódot az áruk visszavételéhez.
+    - **Értékesítési jelentés időszaka**: Az exportbevallás jelentési időszakának kiválasztása: **Hónap** vagy **Negyedév**. A negyedéves bevallásokat egyszerűsített formátumban exportálja a rendszer.
+    - **Vásárlás jelentés időszaka**: Az importbevallás jelentési időszakának kiválasztása: **Hónap** vagy **Negyedév**. A negyedéves bevallásokat egyszerűsített formátumban exportálja a rendszer.
 
-3.  Az **Intrastat** lapon az **Általános** gyorslapon állítsa be a következő mezőket:
+4. Az **Elektronikus jelentéskészítés** gyorslapon állítsa be a következő mezőket:
 
-    - **Származási/cél megye** – A vállalat megyének kiválasztása. Ez a megye lesz használva az elküldések során.
+    - **Fájlformátum-hozzárendelés**: Válassza az **Intrastat IT** lehetőséget.
+    - **Jelentésformátum-hozzárendelés**: Válassza az **Intrastat jelentés** lehetőséget.
 
-    <!-- -->
+5. Az **Árucikk-kódok hierarchiája** gyorslapon a **Kategóriahierarchia** mezőben válassza az **Intrastat** lehetőséget.
+6. A **Statisztikai érték** gyorslapon állítsa a **Statisztikai adatok nyomtatása és exportálása** lehetőséget **Igen** értékre, ha szükséges. Ez a beállítás aktiválja a statisztikai szakasz átvitelét. A statisztikai szakasz a súlyokkal, kiegészítő egységekkel, statisztikai értékekkel, szállítási feltételekkel, szállítási ütemezésekkel, szállítási módokkal és származási régiókkal kapcsolatos adatokból áll.
 
-    - **Tranzakciókód** – a tranzakciókód kiválasztása a tulajdonságátvitelhez. Ez a kód olyan tranzakciókhoz használható, amelyek tényleges vagy tervezett tulajdonjogátadást okoznak a kompenzációval szemben, valamint korrekciókhoz.
+    > [!NOTE]
+    > Negyedévente történő bevallás esetén az Intrastat-jelentés nem tartalmazza a statisztikai szakaszt, illetve a szállítási feltételekre és szállítási módokra vonatkozó adatokat. A további tudnivalókat lásd a témakör [Áttekintés](#overview) részében található táblázatban.
 
-    - **Jóváírás** – Válasszon tranzakciókódot az áruk visszavételéhez. Ezt a kódot használja a rendszer az áruk visszaküldésére, miután az eredeti tranzakciót a tranzakciókód alatt rögzítették.
+7. Az **Ország/régió tulajdonságai** lap sorolja fel azokat az országokat és régiókat, amelyekkel a szervezet üzleti tevékenységet végez. Állítsa be a következő mezőket minden egyes ország vagy régió esetében:
 
-    - **Értékesítési jelentés időszaka** – Az exportbevallás jelentési időszakának kiválasztása: **Hónap** vagy **Negyedév**. A negyedéves bevallásokat egyszerűsített formátumban exportálja a rendszer.
+    - **Fél országa/régiója**: Válassza ki az ország-/régiókódot.
+    - **Intrastat-kód**: adja meg a kétjegyű Intrastat-kódot.
+    - **Pénznem**: adja meg az ország vagy régió nemzeti pénznemét. Ha a szállító egy olyan EU-országban van, ahol nem használják az eurót, a számlaösszegek a szállító pénznemében és euróban is jelentve lesznek. Ha például a szállító Dániában található, az importbevalláshoz jelentett összegek dán koronában (DKK) és euróban (EUR) is jelentve lesznek.
+    - **Ország/régió típusa**: az ország vagy régió a szervezettel kapcsolatos típusának kiválasztása. Az Intrastat-naplóban csak az **EU** és a **Speciális belföldi** típusú országok vagy régiók kerülnek átvitelre.
 
-    - **Vásárlás jelentés időszaka** – Az importbevallás jelentési időszakának kiválasztása: **Hónap** vagy **Negyedév**. A negyedéves bevallásokat egyszerűsített formátumban exportálja a rendszer.
+    > [!NOTE]
+    > A **Speciális belföldi** típusú országok és régiók esetében az Intrastat jelentésfájlból a következő mezőket kihagyja a program: **Tömeg**, **Kiegészítő egységek**, **Statisztikai érték**, **Szállítási feltételek**, **Szállítási kód**, **Származási/cél ország/régió**, valamint **Származási/cél megye**. Például a **Fél országa/területe** mezőben kiválasztja az **SMR (San Marino)** lehetőséget, majd az **Ország/régió típusa** mezőben válassza a **Speciális belföldi** lehetőséget.
 
-4.  Az **Elektronikus jelentéskészítés** gyorslapon állítsa be a következő mezőket:
-
-    - **Fájlformátum-hozzárendelés** – Válassza az **Intrastat IT** lehetőséget.
-
-    <!-- -->
-
-    - **Jelentésformátum-hozzárendelés** – Válassza az **Intrastat jelentés** lehetőséget.
-
-5.  Az **Árucikk-kódok hierarchiája** gyorslapon a **Kategóriahierarchia** mezőben válassza az **Intrastat** lehetőséget.
-
-6.  A **Statisztikai érték** gyorslapon állítsa a **Statisztikai adatok nyomtatása és exportálása** lehetőséget **Igen** értékre, ha szükséges. Ez a beállítás aktiválja a statisztikai szakasz átvitelét. A statisztikai szakasz a súlyokkal, kiegészítő egységekkel, statisztikai értékekkel, szállítási feltételekkel, szállítási ütemezésekkel, szállítási módokkal és származási régiókkal kapcsolatos adatokból áll.
-
->[!NOTE]
->
->Negyedévente történő bevallás esetén az Intrastat-jelentés nem tartalmazza a statisztikai szakaszt, illetve a szállítási feltételekre és szállítási módokra vonatkozó adatokat. A további tudnivalókat lásd a témakör [Áttekintés](#overview) részében található táblázatban.
-
-7.  Az **Ország/régió tulajdonságai** lap sorolja fel azokat az országokat és régiókat, amelyekkel a szervezet üzleti tevékenységet végez. Állítsa be a következő mezőket minden egyes ország vagy régió esetében:
-
-- **Fél országa/régiója** – Válassza ki az ország-/régiókódot.
-
-- **Intrastat-kód** – adja meg a kétjegyű Intrastat-kódot.
-
-- **Pénznem** – adja meg az ország vagy régió nemzeti pénznemét. Ha a szállító egy olyan EU-országban van, ahol nem használják az eurót, a számlaösszegek a szállító pénznemében és euróban is jelentve lesznek. Ha például a szállító Dániában található, az importbevalláshoz jelentett összegek dán koronában (DKK) és euróban (EUR) is jelentve lesznek.
-
-- **Ország/régió típusa** – az ország vagy régió a szervezettel kapcsolatos típusának kiválasztása. Az Intrastat-naplóban csak az **EU** és a **Speciális belföldi** típusú országok vagy régiók kerülnek átvitelre.
-
->[!NOTE]
->
->A **Speciális belföldi** típusú országok és régiók esetében az Intrastat jelentésfájlból a következő mezőket kihagyja a program: **Tömeg**, **Kiegészítő egységek**, **Statisztikai érték**, **Szállítási feltételek**, **Szállítási kód**, **Származási/cél ország/régió**, valamint **Származási/cél megye**. Például a **Fél országa/területe** mezőben kiválasztja az **SMR (San Marino)** lehetőséget, majd az **Ország/régió típusa** mezőben válassza a **Speciális belföldi** lehetőséget.
-
-8.  Menjen a **Kötelezettségek** &gt; **Beállítás** &gt; **Fizetési feltételek** elemre.
-
-9.  A rácsban válassza ki a szállítási feltételeket.
-
+8. Lépjen a **Fizetendő számlák** > **Beállítás** > **Szállítási feltételek** pontra.
+9. A rácsban válassza ki a szállítási feltételeket.
 10. Adja meg az Intrastat-jelentésen használt egyjegyű kódot az **Általános** gyorslap **Intrastat-kód** mezőjében.
-
 11. A következő lépések szerint rendeljen adómentességi számokat a vevőkhöz és szállítókhoz. Ezek a számok megjelennek az Intrastat jelentésben.
+12. Menjen az **Adó** > **Beállítások** > **Áfa** > **Adómentességi számok** helyre, és sorolja fel a vevők és szállítók összes adószámát. Állítsa be a következő mezőket minden egyes mezőhöz:
 
--   Menjen az **Adó** &gt; **Beállítások** &gt; **Áfa** &gt; **Adómentességi számok** helyre, és sorolja fel a vevők és szállítók összes adószámát. Állítsa be a következő mezőket minden egyes mezőhöz:
+    - **Ország/régió**: Válassza ki a partner országát vagy régióját.
+    - **Adómentességi szám**: Adja meg a partner adómentességi számát.
+    - **Vállalat neve**: Adja meg a partner nevét.
 
-    - **Ország/régió** – Válassza ki a partner országát vagy régióját.
+13. Menjen a **Kinnlevőségek** > **Vevők** > **Minden vevő** menübe, és hajtsa végre a következő lépéseket minden vevő esetében:
 
-    - **Adómentességi szám** – Adja meg a partner adómentességi számát.
+    1. Válasszon vevőt.
+    2. A **Számlázás és szállítás** gyorslapon, az **Áfa** szakaszban az **Adómentességi szám** mezőben válassza ki az **Összes** lehetőséget.
+    3. Válassza ki az ügyfél adómentességi számát.
 
-    - **Vállalat neve** – Adja meg a partner nevét.
+14. Menjen a **Kötelezettségek** > **Szállítók** > **Minden szállító** menübe, és hajtsa végre a következő lépéseket minden szállító esetében:
 
-<!-- -->
+    1. Válasszon ki egy szállítót.
+    2. A **Számlázás és szállítás** gyorslapon, az **Áfa** szakaszban az **Adómentességi szám** mezőben válassza ki az **Összes** lehetőséget.
+    3. Válassza ki a szállító adómentességi számát.
 
--   Menjen a **Kinnlevőségek** &gt; **Vevők** &gt; **Minden vevő** menübe, és hajtsa végre a következő lépéseket minden vevő esetében:
-
-    1.  Válasszon vevőt.
-
-    2.  A **Számlázás és szállítás** gyorslapon, az **Áfa** szakaszban az **Adómentességi szám** mezőben válassza ki az **Összes** lehetőséget.
-
-    3.  Válassza ki az ügyfél adómentességi számát.
-
--   Menjen a **Kötelezettségek** &gt; **Szállítók** &gt; **Minden szállító** menübe, és hajtsa végre a következő lépéseket minden szállító esetében:
-
-    1.  Válasszon ki egy szállítót.
-
-    2.  A **Számlázás és szállítás** gyorslapon, az **Áfa** szakaszban az **Adómentességi szám** mezőben válassza ki az **Összes** lehetőséget.
-
-    3.  Válassza ki a szállító adómentességi számát.
-
-12. Menjen az **Adó** &gt; **Beállítás** &gt; **Külkereskedelem** &gt; **Intrastat tömörítés** menübe és válassza ki azokat a mezőket, amelyeket össze kell hasonlítani az Intrastat adatok összegzésekor. Olaszország esetében válassza ki az **Adószámot**, a **Tranzakciókódot**, az **Árucikket**, a **Szállítási feltételeket**, a **Szállítást**, az **Országot/régiót**, a **Származási országot/régiót**, a **Származási megyét**, a **Származási megyét/rendeltetési megyét**, a **Pénznemet**, a **Hónapot**, a **Negyedévet** és a **Helyesbítési évet**.
+15. Válassza az **Adó** > **Beállítások** > **Külkereskedelem** > **Intrastat tömörítése** menüpontot, és válassza ki azokat a mezőket, amelyeket össze kell hasonlítani az Intrastat-adatok összesítése során. Olaszország esetében válassza ki az **Adószámot**, a **Tranzakciókódot**, az **Árucikket**, a **Szállítási feltételeket**, a **Szállítást**, az **Országot/régiót**, a **Származási országot/régiót**, a **Származási megyét**, a **Származási megyét/rendeltetési megyét**, a **Pénznemet**, a **Hónapot**, a **Negyedévet** és a **Helyesbítési évet**.
 
 ## <a name="italian-vendor-invoice-journal-for-foreign-trade"></a>Olasz szállítói számlanapló külkereskedelemhez
 
@@ -762,10 +723,10 @@ Az Intrastat-napló megnyitásához nyissa meg az **Adó** &gt; **Bevallások** 
 >
 >Ha a jelentési időszakkal azonos időszakban negatív korrekciót (jóváírást) kap, akkor az Intrastat naplót kézzel kell módosítania az alábbi lépések szerint.
 >
->1.  Ugorjon az **Adó** &gt; **Nyilatkozatok** &gt; **Külkereskedelem** &gt; **Intrastat** pontra.
->2.  A javításként megjelölt tranzakció megkeresése és törlése.
->3.  Keresse meg az eredeti tranzakciót, és szükség szerint módosítsa a **Számla összege** mező értékét.
->Van például egy 10 000 értékű számlája, és -2000 értékben kap jóváírást. Ebben az esetben meg kell nyitnia az Intrastat naplót, és meg kell találnia és törölnie kell a -2000 összeg tranzakcióját. Ezután keresse meg az eredeti 10 000 értékű tranzakciót, és állítsa be a számla összegét 8 000-re (= 10 000 - 2000).
+> 1. Ugorjon a következőre: **Adó** > **Nyilatkozatok** > **Külkereskedelem** > **Intrastat**.
+> 2. A javításként megjelölt tranzakció megkeresése és törlése.
+> 3. Keresse meg az eredeti tranzakciót, és szükség szerint módosítsa a **Számla összege** mező értékét.
+> Van például egy 10 000 értékű számlája, és -2000 értékben kap jóváírást. Ebben az esetben meg kell nyitnia az Intrastat naplót, és meg kell találnia és törölnie kell a -2000 összeg tranzakcióját. Ezután keresse meg az eredeti 10 000 értékű tranzakciót, és állítsa be a számla összegét 8 000-re (= 10 000 - 2000).
 
 ### <a name="intrastat-transfer"></a>Intrastat-átvitel
 
@@ -773,235 +734,30 @@ A műveletpanelen az **Átvitel** gombra kattintva automatikusan át lehet vinni
 
 Másik lehetőségként manuálisan is beírhatja a tranzakciókat az **Új** gombra kattintva a Műveletei panelen.
 
-Minden tranzakcióhoz több Olaszországra jellemző paramétert is be lehet állítani az **Általános** lapon.
+Minden tranzakcióhoz több Olaszországra jellemző paramétert is be lehet állítani az **Általános** lapon. Az alábbi táblázat további tájékoztatást tartalmaz a mezőkkel kapcsolatban.
 
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Mező</strong></p>
-</td>
-<td>
-<p><strong>Leírás</strong></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Általános</strong> szakasz</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Cikk típusa</p>
-</td>
-<td>
-<p>A mező értéke lehet <strong>Áruk</strong> vagy <strong>Szolgáltatások</strong>.</p>
-<p>Ahhoz, hogy egy tranzakció szolgáltatásnak legyen tekinthető, a számlasort a következő módok egyikének használatával kell beállítani:</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Nincs vámtarifakódja.</p>
-<p>&middot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hatjegyű vámtarifakódja van</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Származási ország/régió</strong> szakasz</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Származási megye</p>
-</td>
-<td>
-<p>A termék vagy szolgáltatás származási országa. Ez az érték a <strong>Kiadott termékek</strong> oldalon van megadva.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Kódok</strong> szakasz</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Szállítás módja</p>
-</td>
-<td>
-<p>A szállítási mód. Ugorjon az <strong>Értékesítés és marketing</strong> &gt; <strong>Beállítás</strong> &gt; <strong>Elosztás</strong> &gt; <strong>Szállítási módok</strong> lehetőségre a szállítási mód meghatározásához.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Helyesbítések</strong> szakasz</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Hónap</p>
-</td>
-<td>
-<p>Az eredeti tranzakció hónapja.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Negyedév</p>
-</td>
-<td>
-<p>Az eredeti tranzakció negyedéve.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Helyesbítési év</p>
-</td>
-<td>
-<p>Az eredeti tranzakció éve.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Eredeti Intrastat-rekord</p>
-</td>
-<td>
-<p>Szolgáltatások javításakor adja meg az eredeti Intrastat-rekord számát.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p style="text-align: center;"><strong>Számlaérték</strong> szakasz</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Pénznem</p>
-</td>
-<td>
-<p>A partner nemzeti pénzneme.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Számlaösszeg a tranzakció pénznemében</p>
-</td>
-<td>
-<p>A számlaösszeg a partner nemzeti pénznemében.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Számlaköltségek összege a tranzakció pénznemében</p>
-</td>
-<td>
-<p>A számla díjai a partner nemzeti pénznemében.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Számlaérték a tranzakció pénznemében</p>
-</td>
-<td>
-<p>A számlaérték a partner nemzeti pénznemében.</p>
-</td>
-</tr>
-</tbody>
-</table>
+| Mező | Leírás |
+|-------|-------------|
+| Cikk típusa | A mező értéke lehet **Áruk** vagy **Szolgáltatások**.<br> Ahhoz, hogy egy tranzakció szolgáltatásnak legyen tekinthető, a számlasort a következő módok egyikének használatával kell beállítani:<br>- Nincs vámtarifakódja<br>- Hatjegyű vámtarifakódja van  |
+| Származási megye | A termék vagy szolgáltatás származási országa. Ez az érték a **Kiadott termékek** oldalon van megadva. |
+| Szállítás módja | A szállítási mód. <br>Ugorjon az **Értékesítés és marketing** > **Beállítás** > **Elosztás** > **Szállítási módok** lehetőségre a szállítási mód meghatározásához. |
+| Hónap | Az eredeti tranzakció hónapja. |
+| Negyedév | Az eredeti tranzakció negyedéve. |
+| Helyesbítési év | Az eredeti tranzakció éve. |
+| Eredeti Intrastat-rekord | Szolgáltatások javításakor adja meg az eredeti Intrastat-rekord számát. |
+| Pénznem | A partner nemzeti pénzneme. |
+| Számlaösszeg a tranzakció pénznemében | A számlaösszeg a partner nemzeti pénznemében. |
+| Számlaköltségek összege a tranzakció pénznemében | A számla díjai a partner nemzeti pénznemében. |
+| Számlaérték a tranzakció pénznemében | A számlaérték a partner nemzeti pénznemében. |
 
 A számladíjakról a partner nemzeti pénznemében a [Intrastat áttekintés előfeltételek (Vegyes díjak)](emea-intrastat.md) részben talál további tájékoztatást.
 
 ### <a name="generate-an-intrastat-report"></a>Intrastat jelentés készítése
 
-1.  Az Intrastat jelentés létrehozásához nyissa meg az **Adó** &gt; **Bevallások** &gt; **Külkereskedelem** &gt; **Intrastat** lehetőséget.
-
-2.  A műveleti ablaktáblán válassza a **Kimenet** &gt; **Jelentés** lehetőséget.
-
-3.  Az **Intrastat jelentés** párbeszédpanelen a következő mezőket állítsa be.
-
-<table>
-<tbody>
-<tr>
-<td>
-<p><strong>Mező</strong></p>
-</td>
-<td>
-<p><strong>Leírás</strong></p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><strong>Dátum</strong> szakasz</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Kezdő dátum</p>
-</td>
-<td>
-<p>Válassza ki a jelentés kezdő dátumát.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Záró dátum</p>
-</td>
-<td>
-<p>Válassza ki a jelentés befejező dátumát.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><strong>Exportálási beállítások</strong> szakasz</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Fájl létrehozása</p>
-</td>
-<td>
-<p>Egy .txt fájl generálásához állítsa ezt a beállítást <strong>Igen</strong> értékre.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Fájlnév</p>
-</td>
-<td>
-<p>Adja meg az Intrastat-jelentés .txt fájljának nevét.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Jelentés létrehozása</p>
-</td>
-<td>
-<p>Egy .xlsx fájl generálásához állítsa ezt a beállítást <strong>Igen</strong> értékre.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Jelentésfájl neve</p>
-</td>
-<td>
-<p>Adja meg az Intrastat-jelentés .xlsx fájlnevét.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Irány</p>
-</td>
-<td>
-<p>Válassza a <strong>Beérkezések</strong> lehetőséget a közösségen belüli beérkezésekkel kapcsolatos jelentésekhez. A közösségen belüli kiküldésekről szóló jelentéshez válassza a <strong>Kiküldések</strong> lehetőséget.</p>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<p><strong>Fájlformátum-hozzárendelés</strong> szakasz</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Hivatkozási szám</p>
-</td>
-<td>
-<p>A dokumentum számának megadása. Ez az érték hatással lesz az Intrastat-jelentésben található <strong>Fájlszám</strong> kódra. A további tudnivalókat lásd: Fájlformátum.</p>
-</td>
-</tr>
-</tbody>
-</table>
+1. Az Intrastat jelentés létrehozásához nyissa meg az **Adó** > **Bevallások** > **Külkereskedelem** > **Intrastat** lehetőséget.
+2. A Műveletpanelen válassza a **Kimenet** > **Jelentés** lehetőséget.
+3. Az **Intrastat jelentés** párbeszédpanelen válassza ki a jelentés kezdő és záró dátumát.
+4. A **Fájl létrehozása** mezőben válassza az **Igen** elemet a .txt fájl létrehozásához, és adja meg a fájl nevét.
+5. A **Jelnetés létrehozása** mezőben válassza az **Igen** elemet a .xlsx fájl létrehozásához, ,majd adja meg a jelentés nevét.
+6. Az **Érkezések** és **Elküldések** kiválasztása a jelentés tartalma alapján.
+7. A **Hivatkozási szám** mezőbe írja be a dokumentum számát. Ez az érték hatással van az Intrastat-jelentésben található Fájlszám kódra. 

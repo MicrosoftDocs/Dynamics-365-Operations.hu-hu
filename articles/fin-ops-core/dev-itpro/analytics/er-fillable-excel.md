@@ -2,7 +2,7 @@
 title: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
 description: Ez a témakör azt mutatja be, hogyan lehet az Elektronikus jelentéskészítés (ER) formátumát egy Excel-sablon kitöltéséhez tervezni, majd a kimenő Excel-formátumú dokumentumokat generálni.
 author: NickSelin
-ms.date: 03/10/2021
+ms.date: 09/14/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2d737c3a58bf94079b8b674238ed7dd651e238752a2bd992f57c9be4b95aedae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748472"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488138"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
@@ -138,6 +138,55 @@ Ha további tájékoztatást szeretne arról, hogyan lehet beágyazni a képeket
 
 A **PageBreak** összetevő az Excelt új lap létrehozására kényszeríti. Ezt az összetevőt nem szükséges használni az Excel alapértelmezett lapozásához, de akkor kell használni, ha azt szeretné, hogy az Excel kövesse a saját formátumát a lapozás felépítéséhez.
 
+## <a name="page-component"></a><a name="page-component"></a>Lapösszetevő
+
+### <a name="overview"></a>Áttekintés
+
+A **Lap** összetevőt akkor használhatja, ha azt szeretné, hogy az Excel kövesse az ER-formátumot és a struktúra lapozását egy generált kimenő dokumentumban. Amikor az ER-formátum futtatja az **Oldal** összetevő alatt található összetevőket, a program automatikusan hozzáadja a szükséges oldaltöréseket. A folyamat során figyelembe kell venni a létrehozott tartalom méretét, az Excel-sablon oldalbeállítását és az Excel-sablonban kiválasztott papírméretet.
+
+Ha egy létrehozott dokumentumot különböző szakaszokra kell felosztani, amelyek mindegyikének más a lapozása, akkor minden [Lap](er-fillable-excel.md#sheet-component) összetevőben konfigurálhat több **Oldal** összetevőt.
+
+### <a name="structure"></a><a name="page-component-structure"></a>Szerkezet
+
+Ha az **Oldal** összetevő alatt az első összetevő egy [Tartomány](er-fillable-excel.md#range-component) összetevő, ahol a **Replikáció iránya** tulajdonság **Nincs replikáció** értékre van állítva, ez a tartomány az aktuális **Oldal** összetevő beállításain alapuló lapfejlécnek számít. Az ehhez a formátumösszetevőhöz társított Excel-tartomány minden olyan lap tetején meg van ismételve, amelyet az aktuális **Oldal** összetevő beállításainak használatával generál a program.
+
+> [!NOTE]
+> A helyes oldalakra törés érdekében, ha a [Felsül ismételni kívánt sorok](https://support.microsoft.com/office/repeat-specific-rows-or-columns-on-every-printed-page-0d6dac43-7ee7-4f34-8b08-ffcc8b022409) tartomány van állítva az Excel-sablonban, ennek az Excel-tartománynak a címének meg kell egyeznie a korábban leírt **Tartomány** összetevőhöz társított Excel-tartomány címével.
+
+Ha az **Oldal** összetevő alatt az utolsó összetevő egy **Tartomány** összetevő, ahol a **Replikáció iránya** tulajdonság **Nincs replikáció** értékre van állítva, ez a tartomány az aktuális **Oldal** összetevő beállításain alapuló lapláblécnek számít. Az ehhez a formátumösszetevőhöz társított Excel-tartomány minden olyan lap alján meg van ismételve, amelyet az aktuális **Oldal** összetevő beállításainak használatával generál a program.
+
+> [!NOTE]
+> A helyes oldalakra tördelés érdekében a **Tartomány** összetevőihez társított Excel-tartományokat nem szabad futásidőben átméretezni. Nem ajánlott az ilyen tartományba írt cellák formázása a **Szöveg tördelése cellában** és a **Sormagasság automatikus kitöltése** Excel [beállítások](https://support.microsoft.com/office/wrap-text-in-a-cell-2a18cff5-ccc1-4bce-95e4-f0d4f3ff4e84) használatával.
+
+A választható **Tartomány** összetevők között több más **Tartomány** összetevőt is hozzáadhat, amelyek meghatározzák a létrehozott dokumentumok kitöltését.
+
+Ha az **Oldal** összetevő alatt egymásba ágyazott **Tartomány** összetevők halmaza nem felel meg a korábban leírt struktúrának, az ER formátumtervező tervezési idejében érvényesítési [hiba](er-components-inspections.md#i17) merül fel. A hibaüzenet arról ad tájékoztatást, hogy a probléma futásidőben problémákat okozhat.
+
+> [!NOTE]
+> A helyes kimenet létrehozásához ne adjon meg kötést az **Oldal** összetevő alatt egyetlen **Tartomány** összetevőhöz sem, ha a **Tartomány** összetevő **Replikáció iránya** tulajdonsága **Nincs replikáció**, és a tartomány úgy van beállítva, hogy oldalfejléceket vagy oldallábléceket generáljon.
+
+Ha azt szeretné, hogy a lapszámozással kapcsolatos összegzés és számozás kiszámítsa a laponként a görgetett összegeket és összegeket, javasoljuk, hogy konfigurálja a szükséges [Adatgyűjtés](er-data-collection-data-sources.md) adatforrásokat. Ha meg szeretne ismerkedni az **Oldal** összetevő használatával egy generált Excel-dokumentum oldalakra töréséhez, végezze el az [ER formátum tervezése a létrehozott dokumentum oldalakra töréséhez Excel-formátumban](er-paginate-excel-reports.md).
+
+### <a name="limitations"></a><a name="page-component-limitations"></a>Korlátozások
+
+Ha az **Oldal** összetevőt használja az Excel oldalakra töréséhez, a generált dokumentum végső oldalszámát nem fogja tudni a program, amíg be nem fejeződik az oldalakra tördelés. Ennek megfelelően nem tudja kiszámítani az oldalak összesített számát az ER-képletek használatával, és nem tudja kinyomtatni a létrehozott dokumentumok helyes oldalszámát az utolsó oldal előtti bármelyik oldalra.
+
+> [!TIP]
+> Ennek az eredménynek az eléréséhez egy Excel-fejlécben vagy láblécben, használjon különleges Excel [formázást](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) a fejlécekhez és láblécekhez.
+
+Ha egy Excel-sablont a Dynamics 365 Finance 10.0.22-es verzióban szerkeszthető formátumban frissít, akkor a program nem figyelembe venni a konfigurált **Oldal** összetevők használatát. Ez a funkció a Finance további kiadásai során tervezett.
+
+Ha [feltételes formázásra](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting) használatára konfigurálja az Excel-sablont, bizonyos esetekben előfordulhat, hogy az nem a várt módon működik.
+
+### <a name="applicability"></a>Alkalmazhatóság
+
+A **Oldal** összetevő csak akkor működik az [Excel fájl](er-fillable-excel.md#excel-file-component) formátumösszetevővel, ha az összetevő egy Excel-sablonban való használatra van konfigurálva. Ha az Excel-sablont Word-sablonra [cseréli](tasks/er-design-configuration-word-2016-11.md), és futtatja a szerkeszthető ER-formátumot, a rendszer figyelmen kívül hagyja az **Oldal** összetevőt.
+
+Az **Oldal** összetevő csak akkor működik, ha engedélyezve van az **EPPlus könyvtár használatának engedélyezése az elektronikus jelentési keretrendszerben** funkció. Futásidőben kivétel történik amikor az ER megpróbálja feldolgozni az **Oldal** összetevőt, miközben ez a funkció le van tiltva.
+
+> [!NOTE]
+> Kivétel merül fel futásidőben, ha az ER-formátum feldolgozza egy olyan Excel-sablon **Oldal** összetevőjét, amely legalább egy érvénytelen cellára hivatkozik. A futásidejű hibák elkerülése érdekében javítsa ki az Excel-sablont a következőben leírtak szerint: [Hogyan javítható ki a #HIV! hiba](https://support.microsoft.com/office/how-to-correct-a-ref-error-822c8e46-e610-4d02-bf29-ec4b8c5ff4be).
+
 ## <a name="footer-component"></a>Lábléc összetevő
 
 A **Lábléc** összetevő segítségével kitölthető a lábléc egy Excel-munkafüzetben létrehozott munkalap alján.
@@ -197,9 +246,12 @@ Ha érvényesít egy módosítható ER-formátumot, akkor következetesség-elle
 Az Microsoft Excel munkafüzet formátumú kimenő dokumentumok létrehozásakor előfordulhat, hogy a dokumentum egyes cellái Excel-képleteket tartalmaznak. Ha az **EPPlus könyvtár használatának engedélyezése az elektronikus jelentési keretrendszerben** funkció engedélyezve van, akkor a képletek kiszámítását szabályozhatja, ha módosítja **Számítási beállítások** [paraméter](https://support.microsoft.com/office/change-formula-recalculation-iteration-or-precision-in-excel-73fc7dac-91cf-4d36-86e8-67124f6bcce4#ID0EAACAAA=Windows) értékét a használt Excel-sablonban:
 
 - Válassza az **Automatikus** lehetőséget az összes függő képlet újraszámításához minden olyan alkalommal, amikor a létrejövő dokumentumhoz új tartományokat, cellákat stb. fűznek hozzá.
+
     >[!NOTE]
     > Ennek hatására előfordulhat, hogy a több kapcsolódó képletet tartalmazó Excel sablonok teljesítménye romlik.
+
 - A dokumentum létrehozásakor a képlet újraszámításának elkerüléséhez válassza a **Manuális** lehetőséget.
+
     >[!NOTE]
     > A képlet-újraszámítást kézzel kell végrehajtani, amikor a generált dokumentumot előnézetre megnyitják az Excel alkalmazással.
     > Ne használja ezt a lehetőséget, ha olyan ER-célt állított be, amely az Excel előnézete nélkül (PDF-átalakítás, e-mailek stb.) a létrejövő dokumentumok használatát feltételezi, mivel előfordulhat, hogy a létrejövő dokumentum nem tartalmaz értékeket a képleteket tartalmazó cellákban.

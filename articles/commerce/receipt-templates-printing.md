@@ -2,7 +2,7 @@
 title: Bevételezési formátumok beállítása és tervezése
 description: Ez a cikk ismerteti, hogyan módosíthatja a képernyőelrendezések létrehozását, hogy irányíthassa a nyugták, számlák és egyéb dokumentumok nyomtatását. A Dynamics 365 Commerce és kiskereskedelem és kereskedelem képernyőelrendezés-tervezője lehetővé teszi különféle képernyőelrendezések egyszerű grafikus létrehozását és módosítását.
 author: rubencdelgado
-ms.date: 06/20/2017
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 7f70918e6fd274ac8e3476d6c309eac40744b0dd24a8b79f531d8627bb4a68e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2107670cb5dbac3b8f28c4e3caa357102932291
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715358"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500170"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Bevételezési formátumok beállítása és tervezése
 
@@ -46,7 +46,12 @@ Ez a cikk ismerteti, hogyan módosíthatja a képernyőelrendezések létrehozá
 
 ## <a name="print-images"></a>Képek nyomtatása
 
-A nyugtatervező egy **Logó** változót tartalmaz, amely a nyugtára nyomtatandó képek megadására használható. A **Logó** változót használó nyugtákban szereplő képeknek monokróm bitkép fájltípusúnak (.bmp) kell lenniük. Ha a nyugtatervezőben meg van adva egy .bmp kép, de a nyomtatóra küldve nem nyomtat, akkor előfordulhat, hogy a fájl mérete túl nagy, vagy a képen található képpontméret nem kompatibilis a nyomtatóval. Ha ez történik, próbálja meg csökkenteni a képfájl felbontását.   
+A nyugtatervező egy **Logó** változót tartalmaz. Ezzel a változóval meghatározhatja, hogy mi legyen a nyugtákra nyomtatandó kép. A **Logó** változót használó nyugtákban nyomatatott képeknek monokróm bitkép fájltípusúnak (.bmp) kell lenniük. Ha a nyugtatervezőben bitkép van megadva, de a nyugta kinyomtatása nem történik meg, akkor a következő problémák lehetnek:
+
+- A fájl mérete túl nagy, vagy a kép méretei nem kompatibilisek a nyomtatóval. Ebben az esetben próbálja meg csökkenteni a képfájl felbontását vagy fizikai méreteit.
+- Néhány Object Linking and Embedding for Retail POS (OPOS) nyomtató-illesztőprogramokhoz nem implementálja a **PrintMemoryBitmap** metódust, amelyet a hardverállomások a logóképek nyomtatásához használnak. Ebben az esetben próbálja meg hozzáadni a következő jelzőt a kijelölt vagy megosztott hardverállomás **HardwareStation.Extension.config** fájljához:
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Nyugtaformátum tervezése
 

@@ -1,8 +1,8 @@
 ---
 title: Adófunkció támogatása átmozgatási rendelésekhez
 description: Ez a témakör ismerteti az átutalási rendelések új adózási szolgáltatásának támogatását az adószámítási szolgáltatás használatával.
-author: kailiang
-ms.date: 04/20/2021
+author: Kai-Cloud
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: wangchen
+ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 1c47c327841b8c712220e440e2aa6b4fe2b31b4a1ccd03dc0a200dbeb7394071
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 01bf7c251fe57072f042c9187b9f5b6b6687ab0f
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721689"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500076"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Adófunkció támogatása átmozgatási rendelésekhez
 
@@ -53,7 +53,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         4. A **Díj** táblában válassza a **Hozzáadás** lehetőséget.
         5. Kapcsolja az **Adómentes** lehetőséget **Igen** értékre az **Általános** részben.
 
-        ![NL adómentes adókód.](../media/tax-feature-support-02.png)
+           ![NL adómentes adókód.](../media/tax-feature-support-02.png)
 
     - Amikor átmozgatási rendelés megérkezik egy belgiumi raktárba, a fordított adózás mechanizmusa a **BE-RC-21** és **BE-RC+21** adókódok használatával kerül alkalmazásra.
         
@@ -66,7 +66,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         6. Kapcsolja a **Fordított áfás** lehetőséget **Igen** értékre az **Általános** részben.
         7. Válassza a **Mentés** lehetőséget.
 
-        ![BE-RC-21 adókód a fordított áfához.](../media/tax-feature-support-03.png)
+           ![BE-RC-21 adókód a fordított áfához.](../media/tax-feature-support-03.png)
         
         Hozza létre a **BE-RC+21** adókódot.
         1. Válassza a **Hozzáadás** lehetőséget, írja be a **BE-RC-21** értéket az **Adókód** mezőbe.
@@ -76,7 +76,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         5. Adja meg a **21** értéket az **Adókulcs** mezőbe.
         6. Válassza a **Mentés** lehetőséget.
 
-        ![BE-RC+21 adókód a fordított áfához.](../media/tax-feature-support-04.png)
+           ![BE-RC+21 adókód a fordított áfához.](../media/tax-feature-support-04.png)
 
 3. Adja meg az adókódok alkalmazhatóságát.
 
@@ -97,6 +97,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         7. Az **Adócsoport** mezőben és a **Cikkáfa csoportban** adja meg a Finance rendszerben definiált kapcsolódó áfacsoportot és cikkáfacsoportot.
         
         Adjon hozzá egy másik szabályt az átmozgatási rendelés befogadásához.
+        
         1. A **Díj** táblában válassza az **Alkalmazhatósági szabályok** lehetőséget.
         2. Az **Üzleti folyamat** mezőben válassza a **Készlet** lehetőséget, hogy a szabály alkalmazható legyen az átmozgatási rendelésre.
         3. A **Szállítás országból/régióból** mezőbe írja be az **NLD** értéket.
@@ -105,7 +106,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         6. Az **Adókódok** mezőben válassza a **BE-RC+21** és a **BE-RC-21** lehetőséget.
         7. Az **Adócsoport** mezőben és a **Cikkáfa csoportban** adja meg a Finance rendszerben definiált kapcsolódó áfacsoportot és cikkáfacsoportot.
 
-        ![Alkalmazhatósági szabályok.](../media/image5.png)
+           ![Alkalmazhatósági szabályok.](../media/image5.png)
 
 4. Töltse ki és tegye közzé az új adófunkció-verziót.
 
@@ -115,7 +116,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
 
 Kövesse ezeket a lépseket az adók beállításához és engedélyezéséhez az értékesítési rendelésekhez.
 
-1. A Finance-ben ugorjon **Munkaterületek** \> **Funkciókezelés** lehetőségre.
+1. A Finance-ben ugorjon **Munkaterületek** > **Funkciókezelés** lehetőségre.
 2. A listában keresse meg és válassza az **Adó átmozgatási rendelésben** funkciót, majd az **Engedélyezés most** lehetőséget a bekapcsoláshoz.
 
     > [!IMPORTANT]
@@ -128,10 +129,10 @@ Kövesse ezeket a lépseket az adók beállításához és engedélyezéséhez a
     > [!IMPORTANT]
     > Ezt a lépést minden olyan jogi személynél el kell végeznie a Finance-ben, ahol az adószolgáltatást és az átmozgatási rendelések adófunkcióit elérhetővé szeretné tenni.
 
-    1. Ugrás az **Adó** \> **Beállítás** \> **Adókonfiguráció** \> **Adószolgáltatás beállítása** lapra.
+    1. Ugrás az **Adó** > **Beállítás** > **Adókonfiguráció** > **Adószolgáltatás beállítása** lapra.
     2. Az **Üzleti folyamat** mezőben válassza a **Készlet** lehetőséget.
 
-    ![Az Üzleti folyamat mező beállítása.](../media/image8.png)
+      ![Az Üzleti folyamat mező beállítása.](../media/image8.png)
 
 4. Ellenőrizze, hogy a fordított áfa mechanizmus be van-e állítva. Válassza a **Főkönyv** \> **Beállítás** \> **Paraméterek** lapot, majd a **Fordított áfa** lapon ellenőrizze, hogy a **Fordított áfa engedélyezése** beállítás **Igen** értékű-e.
 
@@ -140,10 +141,10 @@ Kövesse ezeket a lépseket az adók beállításához és engedélyezéséhez a
 5. Ellenőrizze, hogy a kapcsolódó adókódok, adócsoportok, cikkadócsoportok és áfaregisztrációs számok az adószolgáltatási útmutatónak megfelelően vannak-e beállítva a Finance-ben.
 6. Ideiglenes tranzitszámla beállítása. Erre a lépésre csak akkor van szükség, ha az átutalási megbízásra alkalmazott adó nem alkalmazható adómentes vagy fordított adózású mechanizmusra.
 
-    1. Lépjen az **Adó** \> **Beállítás** \> **Áfa** \> **Főkönyvi feladási csoportok** elemre.
+    1. Ugrás az **Adó** > **Beállítás** > **Áfa** \ **Főkönyvi feladási csoportok** elemre.
     2. Az **Ideigelens tranzit** mezőben jelöljön ki egy főkönyvi számlát.
 
-    ![Ideiglenes tranzitszámla kiválasztása.](../media/image10.png)
+       ![Ideiglenes tranzitszámla kiválasztása.](../media/image10.png)
 
 ## <a name="set-up-basic-inventory-for-transfer-order-transactions"></a>Alapleltár beállítása adóhoz és az átmozgatási rendelési tranzakciókhoz
 
@@ -151,7 +152,7 @@ Az alábbi lépésekkel állíthatja be az alapkészletet az átmozgatási rende
 
 1. Hozzon létre szállítás kiindulási és szállítási célhelyeket a raktárakhoz különböző országokban vagy régiókban, és adja hozzá az egyes helyek elsődleges címét.
 
-    1. Ugorjon a **Raktárkezelés** \> **Beállítás** \> **Raktár** \> **Helyek** elemre.
+    1. Menjen a **Raktárkezelés** > **Beállítás** > **Raktár** > **Oldalak** pontra.
     2. Válassza az **Új** lehetőséget egy hely létrehozásához, amit később hozzárendelhet egy raktárhoz.
     3. Ismételje meg a 2. lépés minden más helyhez, amit létre kell hozna.
 
@@ -162,11 +163,11 @@ Az alábbi lépésekkel állíthatja be az alapkészletet az átmozgatási rende
 
 2. Hozzon létre kiindulási, tranzit- és szállítási raktárakat. A raktárban megtartott címadatok felülírják a hely címét az adó kiszámítása során.
 
-    1. Ugorjon a **Raktárkezelés** \> **Beállítás** \> **Raktár** \> **Raktárak** pontra.
+    1. Ugorjon a **Raktárkezelés** > **Beállítás** > **Raktár** > **Raktárak** pontra.
     2. Válassza az **Új** lehetőséget egy hely létrehozásához, és rendelje hozzá egy kapcsolódó helyhez.
     3. Ismételje meg a 2. lépést egy raktár létrehozásához mindegyik helyszínhez igény szerint.
 
-    ![Raktárak beállítása.](../media/image12.png)
+       ![Raktárak beállítása.](../media/image12.png)
 
     > [!NOTE]
     > Feladó raktár esetén a tranzitraktárt a **Tranzit raktár** mezőben kell kiválasztani az átmozgatási rendelési tranzakciókhoz.
@@ -175,7 +176,7 @@ Az alábbi lépésekkel állíthatja be az alapkészletet az átmozgatási rende
 
 3. Ellenőrizze, hogy a készletfeladás konfigurációja be van-e állítva az átmozgatási rendelési tranzakciókhoz.
 
-    1. Nyissa meg a **Készletkezelés** \> **Beállítás** \> **Feladás** \> **Feladás** menüt.
+    1. Nyissa meg a **Készletkezelés** > **Beállítás** > **Feladás** > **Feladás** menüt.
     2. A **Készlet** lapon ellenőrizze, hogy a főkönyvi számla be van-e állítva mind a **Készletkiadás**, mind a **Készletbevételezés** feladásához.
 
         ![Készletkiadás és készletbevételezés feladásának beállítása.](../media/image14.png)
@@ -187,3 +188,6 @@ Az alábbi lépésekkel állíthatja be az alapkészletet az átmozgatási rende
     4. Ellenőrizze, hogy a főkönyvi számla be van-e állítva a **Egységközi követelések** könyveléséhez.
 
         ![Egységközi követelések könyvelésének beállítása.](../media/image16.png)
+        
+        
+  [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 95f7ceb39d2afef1871f395ed562632865022b39
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 4c178ddf342b13a0ef8fee8b8b958554a9a31069
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345266"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500590"
 ---
 # <a name="reason-codes-for-inventory-counting"></a>Okkódok készletszámláláshoz
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 Az okkódok segítségével elemezheti a számlálási folyamat eredményeit és a folyamat során felmerülő esetleges eltéréseket. Megadhatja a számlálás okait, például hogy eltört a raklap vagy a készletmintákon alapuló készletkiigazítás történt. Ezzel egyidejűleg a korrekciós funkcióval az egyes készlethelyesbítések indoka alapján az aktuális készlethelyesbítések értékét fel lehet adni a megfelelő ellenszámlára.
 
@@ -42,8 +41,6 @@ Mielőtt beállítaná a rendszert, javasoljuk, hogy dolgozzon ki egy stratégi�
 - Az okkódok vezérlik a pénzügyi ellenszámla feladását?
 
 ## <a name="turn-on-reason-code-features-in-your-system"></a>Okkód funkció bekapcsolása a rendszerben
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Ha nem látja a rendszerben az ebben a témakörben leírt összes szolgáltatást, akkor valószínűleg be kell kapcsolnia a *Az ellenszámlákhoz kapcsolódó kódok használatával történő készlethelyesbítések feladása* funkciót. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 

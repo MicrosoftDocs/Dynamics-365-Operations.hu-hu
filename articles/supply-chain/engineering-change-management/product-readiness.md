@@ -12,22 +12,24 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 96e2cf45296d937db9b136f1472374ae7254e10e
-ms.sourcegitcommit: 3d7905627ce5260ce1e6a6d5c9fdfc4c92c3163d
+ms.openlocfilehash: 12707774c780a0f805deed532af27c3705ea1f55
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7415321"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500598"
 ---
 # <a name="product-readiness"></a>Termékkészenlét
 
 [!include [banner](../includes/banner.md)]
 
-A készenléti ellenőrzéseket annak biztosítására használhatja, hogy a szükséges alapadatok mindegyike meg legyen adva egy termékhez a tranzakciókban való használat előtt. Amikor készenléti ellenőrzést alkalmaznak, a felhasználó vagy a csoport felelős a megadott előre meghatározott termékkel kapcsolatos adatok ellenőrzéséért. Ha egy termékkel kapcsolatban nyitott készenléti ellenőrzés van, a termék nem használható tranzakciókban.
+A készenléti ellenőrzéseket annak biztosítására használhatja, hogy a szükséges alapadatok mindegyike meg legyen adva egy termékhez a tranzakciókban való használat előtt. Amikor készenléti ellenőrzést alkalmaznak, a felhasználó vagy a csoport felelős a megadott előre meghatározott termékkel kapcsolatos adatok ellenőrzéséért.
 
-A mérnöki termékhez, változathoz vagy verzióhoz tartozó **Aktív** jelölőnégyzet csak akkor érhető el, ha az összes szükséges adatot bevitték és ellenőrizték, és miután minden készenléti ellenőrzést feldolgoztak. Ekkor a termék, a verzió vagy a változat felhasználható a tranzakciókban. A készenléti ellenőrzéseket új termékekhez, új változatokhoz és új mérnöki verziókhoz lehet létrehozni.
+A mérnöki termékhez, változathoz vagy verzióhoz tartozó **Aktív** jelölőnégyzet bejelölheti, ha az összes szükséges adatot bevitték és ellenőrizték, és miután minden készenléti ellenőrzést feldolgoztak. Ha egy vagy több ellenőrzés nem lett feldolgozva a termékhez, verzióhoz vagy változathoz, majd amikor megpróbálja bejelölni az **Aktív** jelölőnégyzetet, rendszer figyelmezteti, hogy nem minden ellenőrzés lett befejezve.
 
-A normál (nem tervezési) termékekhez készenléti ellenőrzést is használhat. További információ a cikk későbbi részén lévő [Készenléti ellenőrzés haszánálata normál termékekhez](#standard-products) szakaszban olvasható.
+A készenléti ellenőrzéseket új tervezési termékekhez, új változatokhoz és verziókhoz lehet létrehozni. A szokásos (nem tervezési) termékekre készenlét-ellenőrzést is alkalmazhat (lásd még [Normál termékek készenléti ellenőrzése](#standard-products)). 
+
+A tranzakciókban használhatja az általános termékeket annak ellenére, hogy nem minden készenlét-ellenőrzés lett befejezve. Ha le kell tiltani egy termék tranzakciókban való használatát, használja annak életciklus-állapotát. Hozzárendelhet egy életciklus-állapotot, amely megakadályozza a termék tranzakciókban történő használatát, majd miután minden készenlét-ellenőrzés befejeződött, új életciklus-állapotot rendelhet hozzá, amely engedélyezi a szükséges tranzakciókat.
 
 ## <a name="types-of-readiness-checks"></a>Készenléti ellenőrzések típusai
 

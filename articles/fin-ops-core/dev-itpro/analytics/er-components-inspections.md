@@ -2,7 +2,7 @@
 title: A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 description: Ez a témakör azt mutatja be, hogyan lehet ellenőrizni a konfigurált Elektronikus jelentéskészítési (ER) összetevőket az esteleges futásidejű problémák megelőzésére.
 author: NickSelin
-ms.date: 03/04/2021
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dd4f2b00dd7634a44b75c76753f5d864b039391f4fcb29e750fb17e8a03e9b77
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718623"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488114"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 
@@ -229,6 +229,12 @@ Az alábbi táblázat tartalmazza az ER által kínált vizsgálatokat. Ha tová
 <p>A fejlécek/láblécek (&lt;összetevő típusa: Fejléc vagy Lábléc&gt;) következetlenek.</p>
 <p><b>Futásidő:</b> Az utolsó konfigurált összetevő futásidőben használatos, ha végrehajtják a konfigurált ER-formátum vázlatverzióját.</p>
 </td>
+</tr>
+<tr>
+<td><a href='#i17'>Az Oldal összetevő inkonzisztens beállítása</a></td>
+<td>Adatok sértetlensége</td>
+<td>Hiba</td>
+<td>Több mint két tartomány-összetevő van replikáció nélkül. Távolítsa el a szükségtelen összetevőket.</td>
 </tr>
 </tbody>
 </table>
@@ -866,6 +872,26 @@ Módosítsa a konfigurált formátumot az egyik következetlen **Excel\\Fejléc*
 #### <a name="option-2"></a>2. beállítás
 
 Módosítsa a **Fejléc/lábléc megjelenése** tulajdonság értékét az **Excel\\Fejléc** vagy **Excel\\Lábléc** következetlen összetevőinek egyikében.
+
+## <a name="inconsistent-setting-of-page-component"></a><a id="i17"></a>Az Oldal összetevő inkonzisztens beállítása
+
+Amikor egy ER-formátumösszetevőt úgy [konfigurál](er-fillable-excel.md), hogy egy Excel-sablont használjon kimenő dokumentum előállításához, hozzáadhatja az **Excel\\Oldal** összetevőt, hogy a generált dokumentumot ER-képletek segítségével tördelje oldalakra. Minden egyes hozzáadott **Excel\\Oldal** összetevőhöz hozzáadhat beágyazott [Tartomány](er-fillable-excel.md#range-component) összetevőt, és továbbra is megfelel a következő [struktúrának](er-fillable-excel.md#page-component-structure):
+
+- Az első beágyazott **Tartomány** összetevő úgy konfigurálható, hogy a **Replikáció iránya** tulajdonság beállítása **Nincs replikáció**. Ezzel a tartománnyal lehet oldalfejléceket generálni a létrehozott dokumentumokban.
+- További beágyazott **Tartomány** összetevőt is hozzáadhat, ahol a **Replikáció iránya** tulajdonság beállítása **Függőleges**. Ezek a tartományok a létrehozott dokumentumok kitöltéséhez használhatók.
+- Az utolsó beágyazott **Tartomány** összetevő úgy konfigurálható, hogy a **Replikáció iránya** tulajdonság beállítása **Nincs replikáció**. Ezzel a tartománnyal lehet oldalléceket generálni a létrehozott dokumentumokban, és hozzáadni a szükséges oldaltöréseket.
+
+Ha a tervezés során nem követi ezt a szerkezetet egy ER-fomtáumhoz az ER-formátumtervezőben, ellenőrzési hiba történik, és a következő hibaüzenet jelenik meg: "Több mint két tartomány-összetevő van replikáció nélkül. Távolítsa el a szükségtelen összetevőket."
+
+### <a name="automatic-resolution"></a>Automatikus megoldás
+
+A hiba automatikus javítása nem lehetséges.
+
+### <a name="manual-resolution"></a>Manuális megoldás
+
+#### <a name="option-1"></a>1. beállítás
+
+Módosítsa a konfigurált formátumot az **Excel\\Tartomány** inkonzisztens összetevőinél a **Replikációs irány** tulajdonságának módosításával.
 
 ## <a name="additional-resources"></a>További erőforrások
 

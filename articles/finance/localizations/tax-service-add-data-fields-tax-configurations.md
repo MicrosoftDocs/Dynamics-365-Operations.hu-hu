@@ -1,8 +1,8 @@
 ---
 title: Adatmezők hozzáadása adókonfigurációkhoz
 description: Ez a témakör az adókonfigurációk adatmezők hozzáadásával való testreszabását ismerteti.
-author: kailiang
-ms.date: 04/20/2021
+author: Kai-Cloud
+ms.date: 09/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: kfend
 ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: wangchen
+ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 56b2eae37738ff6a12226671c386e2dd63c380bd4dca1554ef2d1cad0b75faaa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fb10fb5feb317dca5253eea6e5694a3960a58a7d
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725941"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500146"
 ---
 # <a name="add-data-fields-in-tax-configurations"></a>Adatmezők hozzáadása adókonfigurációkhoz
 
@@ -30,7 +30,7 @@ Ez a témakör ismerteti az adókonfigurációk testreszabását az [adóintegr�
 
 ## <a name="customize-the-tax-data-model"></a>Az adóadatmodell konfigurációjának testreszabása
 
-1. A Microsoft Dynamics 365 Finance alkalmazásban nyissa meg az **Elektronikus jelentéskészítés** \> **Konfigurációk** lehetőséget.
+1. A Microsoft Dynamics 365 Finance alkalmazásban nyissa meg az **Elektronikus jelentéskészítés** > **Konfigurációk** lehetőséget.
 2. A konfigurációs fán válassza az **Adóadat-modell - Európa** lehetőséget. Majd a Műveleti ablaktáblán kattintson a **Konfiguráció létrehozása** elemre.
 3. A legördülő párbeszédpanelen jelölje ki az **Adóköteles dokumentummodell származtatva névből: Adóadatmodell - Európa** lehetőséget, írja be az új adóadatmodell nevét, majd válassza a **Konfiguráció létrehozása** lehetőséget.
 4. Jelölje ki az éppen létrehozott adóadatmodellt, majd a Műveleti panelen válassza a **Tervező** lehetőséget.
@@ -42,7 +42,7 @@ Ez a témakör ismerteti az adókonfigurációk testreszabását az [adóintegr�
 
 ## <a name="customize-the-tax-configuration"></a>Az adókonfiguráció testreszabása
 
-1. A Finance alkalmazásban nyissa meg az **Elektronikus jelentéskészítés** \> **Konfigurációk** lehetőséget.
+1. A Finance alkalmazásban nyissa meg az **Elektronikus jelentéskészítés** > **Konfigurációk** lehetőséget.
 2. A konfigurációs fán válassza az **Adókonfiguráció - Európa** lehetőséget. Majd a Műveleti ablaktáblán kattintson a **Konfiguráció létrehozása** elemre.
 3. A legördülő párbeszédpanelen jelölje ki az **Adószolgáltatás-konfiguráció származtatva névből: Adókonfiguráció - Európa** lehetőséget, írja be az új adókonfiguráció nevét, majd válassza a **Konfiguráció létrehozása** lehetőséget.
 4. Jelölje ki az éppen létrehozott adókonfigurációt, majd a Műveleti panelen válassza a **Tervező** lehetőséget.
@@ -54,8 +54,11 @@ Ez a témakör ismerteti az adókonfigurációk testreszabását az [adóintegr�
 
 ## <a name="implement-tax-features-in-the-customized-tax-configuration"></a>Adófunkciók implementása a testreszabott adókonfigurációban
 
-1. A Regulatory Configuration Services (RCS) szolgáltatásban nyissa meg a **Globalizációs funkciók** \> **Adó** lehetőséget.
+1. A Regulatory Configuration Service (RCS) szolgáltatásban nyissa meg a **Globalizációs funkciók** > **Adó** lehetőséget.
 2. Válassza a **Hozzáadás** lehetőséget, írja be az új funkció adatait, majd válassza a **Funkció létrehozása** lehetőséget.
 3. A **Verziók** lapon válassza ki a funkciót, majd kattintson a **Szerkesztés** gombra.
 4. Az **Általános** lap **Konfigurációs verzió** mezőjében jelölje ki a testreszabott adókonfigurációt és -verziót.
 5. Az **Oszlopok kezelése** párbeszédpanelen jelölje ki a testreszabott adómértékbe felvenni kívánt fejléc- és soroszlopokat, majd a megfelelő nyílgombot válassza a **Kijelölt oszlopok** listájához való hozzáadásához.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

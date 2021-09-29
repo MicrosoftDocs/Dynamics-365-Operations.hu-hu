@@ -2,7 +2,7 @@
 title: Harmadik fél alkalmazások beágyazása
 description: Ez a témakör azt mutatja be, hogyan végezhető el a harmadik fél alkalmazások beágyazása a termék funkcionalitásának kibővítése érdekében.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,17 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: b0471fd2ea9a5e8b07b9e8bc279da53f6a1539ca
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 89f101bcf33080f6a73664fe7c3fe6719de04a4e
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7345410"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488234"
 ---
 # <a name="embed-third-party-apps"></a>Harmadik fél alkalmazások beágyazása
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Sok ügyfél különféle alkalmazások használatával végzi üzleti tevékenységét. Az alkalmazások közül vannak olyan harmadik fél alkalmazások, amelyek a Finance and Operations alkalmazásokkal együtt működnek. A zökkenőmentesebb felhasználói élmény biztosítása érdekében a **Teljes oldal alkalmazásai** funkcióval közvetlenül a Finance and Operations alkalmazásaiba ágyazhatja be ezeket a harmadik féltől származó alkalmazásokat (feltéve, hogy a harmadik féltől származó alkalmazások engedélyezik a beágyazást). Így a felhasználók anélkül is elérhetik a szükséges webhelyeket és alkalmazásokat, hogy a fülek vagy ablakok között kellene ingázniuk.
 

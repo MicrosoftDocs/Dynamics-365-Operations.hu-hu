@@ -2,7 +2,7 @@
 title: Kifizetésre kész
 description: Ez a témakör azt mutatja be, hogyan lehet az alkalmazottat fizetésre készként megjelölni a Dynamics 365 Human Resources alkalmazásban.
 author: marcelbf
-ms.date: 07/13/2020
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70b3f31db459fe021caf08fe09b2e44a597294d1992ee16a69efd8745941a4bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
+ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732417"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "7483782"
 ---
 # <a name="ready-to-pay"></a>Kifizetésre kész
 
@@ -39,7 +39,7 @@ Az alkalmazotti adatok összegyűjtése és ellenőrzése sok időt emészthet f
 
 Alkalmazott megjelölése fizetésre készként:
 
-1. Nyissa meg a **Kompenzációkezelés** lehetőséget. A munkaterületen két csempe található 
+1. Nyissa meg a **Kompenzációkezelés** lehetőséget. A munkaterületen két csempe található: 
     - **Kifizetésre kész alkalmazottak**
     - **Azok az alkalmazottak, akik nem állnak készen a fizetésre**
     ![Kompenzációkezelési munkaterület.](./media/hr-ready-to-pay-1-workspace.png)
@@ -53,22 +53,20 @@ Alkalmazott megjelölése fizetésre készként:
 
 ## <a name="validation"></a>Ellenőrzés
 
-Mielőtt fizetésre készként jelöl egy alkalmazottat, a rendszer alapvető ellenőrzést fog végrehajtani a profil teljességére vonatkozóan.
+Mielőtt fizetésre készként jelöl egy alkalmazottat, az alkalmazott profilja ellenőrizve lesz teljesség szempontjából.
 
 ![Eredmények ellenőrzése.](./media/hr-ready-to-pay-3-results.png)
 
-A következő táblázatban tájékozódhat az egyes elvégzett ellenőrzésekről. 
-
 | Ellenőrzés | Részletek |
 | --- | --- |
-| Cím célparamétere | Ellenőrzi, hogy be van-e kapcsolva a **Bérlistacímek céljainak használata** paraméter. |
-| Bérlista címe | Ellenőrzi, hogy a dolgozói profilban van-e legalább egy cím "Bérlista-hely" vagy "Bérlista szerinti lakóhely" vagy "Bérlista szerinti munkavégzési hely" céllal, és célonként csak egy cím van. |
-| Alkalmazás | Ellenőrizze, hogy a dolgozónak van-e legalább egy munkaviszonya (jelenlegi, előző vagy jövőbeli). |
-| Azonosítószám | Ellenőrzi, hogy az "Azonosítótípusok használata a bérlista feldolgozásában" paraméter értéke igen-e, és hogy a paraméterben megadott azonosítási típus ki van töltve a dolgozói profilban. |
-| Keresztnév és vezetéknév | Ellenőrzi, hogy érvényes-e a dolgozói profil, és ellenőrzi, hogy ki van-e töltve a **Név** és a **Vezetéknév** mező.|
-| Sorszám | Ellenőrizze, hogy van-e hozzárendelve beosztás a dolgozóhoz. |
-| Születési dátum | Ellenőrzi, hogy érvényes-e a dolgozói profil, és ellenőrzi, hogy ki van-e töltve a **Születésnap** mező. |
-| Kompenzáció | Győződjön meg róla, hogy a dolgozó fix kompenzációs konstrukcióban van. |
+| **Cím célparamétere** | Megerősíti, hogy ki van-e választva a **Bérlistacímek céljainak használata** paraméter. |
+| **Bérlista címe** | Megerősíti, hogy a dolgozói profilban van-e legalább egy cím **Bérlista szerinti lakóhely** vagy **Bérlista szerinti munkavégzési hely** céllal, és célonként csak egy cím van. |
+| **Alkalmazás** | Megerősíti, hogy a dolgozónak van-e legalább egy munkaviszonya (jelenlegi, előző vagy jövőbeli). |
+| **Azonosítószám** | Megerősíti, hogy az **Azonosítótípusok használata a bérlista feldolgozásában** mező értéke **Igen**-e a **Human Resources paranéterek** oldalon és hogy a paraméterben megadott azonosítási típus ki van töltve a dolgozói profilban. |
+| **Keresztnév és vezetéknév** | Megerősíti, hogy a **Név** és a **Vezetéknév** mező ki van-e töltve.|
+| **Sorszám** | Megerősíti, hogy van-e hozzárendelve beosztás a dolgozóhoz. |
+| **Születési dátum** | Megerősíti, hogy a **Születésnapok** mező ki van-e töltve. |
+| **Kompenzáció** | Megerősíti, hogy a dolgozó fix kompenzációs konstrukcióban van. |
 
 Ha valamelyik ellenőrzés sikertelen, akkor az alkalmazott nem jelölhető meg fizetésre készként.
 
@@ -77,7 +75,7 @@ Ha a **Fizetésre kész** mező értéke **Nem**, az azt jelzi, hogy végre kell
 ## <a name="known-issues"></a>Ismert problémák
 
 - Le kell tiltania az **Egyszerű alkalmazott rekord** lehetőséget a funkciókezelésben. Ha használja ezt a funkciót, akkor nem működnek megfelelően a kompenzációkezelési munkaterület csempéi.
-- A dolgozó űrlapon a **Bérszámfejtés lapon** a **Fizetésre kész** csoport bármely felhasználói szerepkör számára elérhető. 
+- A **Dolgozó** űrlapon a **Bérszámfejtés lapon** a **Fizetésre kész** csoport bármely felhasználói szerepkör számára elérhető. 
 
 ## <a name="see-also"></a>Lásd még
 

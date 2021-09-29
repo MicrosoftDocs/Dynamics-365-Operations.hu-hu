@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: bd82ad9a0eb2f8f85bc7dad0ae174726234ad84f
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: 86735065864149df27cd3d8b03451ace773af048
+ms.sourcegitcommit: b5f2d88ff4e0a234fa6b9ee33516425e54ff2c3b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474892"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "7506855"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.19-es verziójában (2021. június)
 
@@ -40,8 +40,7 @@ Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Fun
 | Készlet és logisztika | [A raktár-végrehajtási képességek növekményes fejlesztése mérlegegységekkel](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/incremental-enhancements-warehouse-execution-capabilities-scale-units) |[Üzenetfeldolgozó üzenetei](../cloud-edge/cloud-edge-message-processor-messages.md)<br><br>[Raktárkészlet helyesbítése](../cloud-edge/cloud-edge-warehouse-inventory-adjustment.md)<br><br>[Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-warehousing.md) |
 | Készlet és logisztika | [Keresési funkció az Értékesítési ajánlat lapon a Dokumentumbevezetés és Dokumentum-összefoglalás mezőkhöz](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/lookup-functionality-document-introduction-document-conclusion-fields-sales-quotation-page) | A funkció keresési szolgáltatást ad hozzá az **Értékesítési ajánlat** oldal **Dokumentumbevezetés** és **Dokumentum összefoglalása** mezőjéhez.<br><br>Alapértelmezetten ez a paraméter engedélyezett. |
 | Készlet és logisztika | [Raktár végrehajtása az egyéni hardveren található peremhálózati skálaegységekkel](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-execution-edge-scale-units-custom-hardware) | [Peremskálaegységek telepítése egyéni hardverre a LBD használatával](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Gyártás | [Gyártás végrehajtása az egyéni hardveren található peremhálózati skálaegységekkel](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Peremhálózati skálázási egységek telepítése egyedi hardverre LBD segítségével](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
-| Tervezés | [Végtelen kapacitás ütemezése a tervezési optimalizáláshoz](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Ütemezés végtelen kapacitással](../master-planning/planning-optimization/infinite-capacity-planning.md) |
+| Gyártás | [Gyártás végrehajtása az egyéni hardveren található peremhálózati skálaegységekkel](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/manufacturing-execution-edge-scale-units-custom-hardware) | [Peremskálaegységek telepítése egyéni hardverre a LBD használatával](../cloud-edge/cloud-edge-edge-scale-units-lbd.md) |
 | Tervezés | Lekérdezés alapú tervezett rendelésmegerősítés | [Biztosra tervezett rendelések](../master-planning/planning-optimization/planned-order-firming.md) |
 | Termékinformációk kezelése | [Változatjavaslatok oldalának fejlesztései](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/variant-suggestions-page-improvements) | [Az előre meghatározott termékváltozatok létrehozása](../pim/tasks/create-predefined-product-variants.md) |
 

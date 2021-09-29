@@ -1,27 +1,39 @@
 ---
 title: Újdonságok és változások a Warehouse Management mobilalkalmazásban
 description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új és módosult funkcióit ismerteti.
-author: ivanv-microsoft
-ms.date: 07/30/2021
+author: MarkusFogelberg
+ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: ivanv
+ms.author: mafoge
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6d98cea29f4c25319caed6680966f61c660778f0
-ms.sourcegitcommit: 3d05bb2a423fe130700686ff73daa355d15b0e09
+ms.openlocfilehash: ac3ea6a088b2086054eb692cd0688b269dafca51
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386099"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485622"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Újdonságok és változások a Warehouse Management mobilalkalmazásban
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új funkcióit, hibajavításait, fejlesztéseit és ismert hibáit ismerteti.
+
+## <a name="version-20100"></a>2.0.10.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+
+- Hozzáadva egy animáció, amikor listákon és oldalakon pöccint át.
+- A szöveg a kapcsolati hiba oldalon helyesen jelenik meg.
+- Az alapértelmezett értékek nélküli kombinált listák most megfelelően jelennek meg.
+- Az alfejléc terület adatai mostantól csak a teljes részletek lapon jelennek meg.
+- A részleteket tartalmazó kártyán már nem jelennek meg üres beviteli mezők.
+- A részleteket tartalmazó kártyán már nincsenek duplikálva a megerősítési értékek.
+- Számos olyan problémát javított, amely a rendszer leállását okozta.
 
 ## <a name="version-2090"></a>2.0.9.0-s verzió
 

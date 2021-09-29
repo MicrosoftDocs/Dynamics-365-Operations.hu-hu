@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 2fd3d2e4f4c3e53913bd811728b0950c63b38bc5afe6fe5282b4cfb05f414619
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45c5774ac1f6db5845d6be6bf2f5d8f99063ea07
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744178"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7488202"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Változáskezelés engedélyezése meglévő termékek esetében
 
@@ -47,7 +47,9 @@ Ezért ha egyedi terméke van, akkor csak olyan mérnöki termékre lehet módos
 
 Minden tervezési termékhez hozzá kell rendelni egy *tervezési termékkategóriát*. Ezt a hozzárendelést akkor végezheti el, amikor futtatja az **Átalakítás tervezési termékké** varázslót futtatja. Létezniük kell tervezési termékkategóriáknak az összes releváns standard termékhez, *mielőtt* átalakíthatná azokat a termékeket.
 
-A tervezési termékkategória alapot biztosít a tervezési termékek létrehozásához, és az alapértelmezett értékek és irányelvek halmazát hozza létre. A tervezési kategóriának meg kell felelnie a terméknek, amelyhez hozzárendeli. Például a terméktípusnak és a dimenziócsoportnak meg kell egyeznie a termékkel és a termék tervezési termékkategóriájával is. A további tudnivalókat lásd: [Mérnöki verziók és a mérnöki termékkategóriák](engineering-versions-product-category.md).
+A tervezési termékkategória alapot biztosít a tervezési termékek létrehozásához, és az alapértelmezett értékek és irányelvek halmazát hozza létre. A tervezési attribútumokat és azok alapértelmezett értékeit (a tervezés kategóriában meghatározottak szerint) a kapott tervezési termékre is alkalmazza a rendszer. Az attribútumértékeket szerkesztheti, és/vagy szükség esetén további tervezési attribútumokat adhat hozzá az eredményül kapott termékhez.
+
+A tervezési kategóriának meg kell felelnie a terméknek, amelyhez hozzárendeli. Például a terméktípusnak és a dimenziócsoportnak meg kell egyeznie a termékkel és a termék tervezési termékkategóriájával is. A további tudnivalókat lásd: [Mérnöki verziók és a mérnöki termékkategóriák](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > Az **Átalakítás mérnöki termékké** varázsló a terméket csak olyan tervezési termékké képes alakítani, ahol a verziót nem követik nyomon a tranzakciókban. Ezért a meglévő termékek átalakítása céljából létrehozott tervezési termékkategóriák esetén a **Verziókövetés a tranzakciókban** beállítást *Nem* értékre kell állítani.

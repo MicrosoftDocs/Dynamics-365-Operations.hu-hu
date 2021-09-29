@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3de160cb4e62f9b30c01c56fa6fe5a4dfad5229
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
+ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
+ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471716"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "7500427"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -157,6 +157,7 @@ A következő raktárkezelési funkciók jelenleg nem támogatottak a skálázá
 
 - Rakományhoz rendelt beszerzésirendelés-sorok bejövő feldolgozása.
 - Beszerzési rendelések bejövő feldolgozása egy projekthez.
+- A kirakodási költség kezelése, hajóút használatával és a szállítás alatt lévő áruk nyomon követése.
 - A **Tulajdonos** és/vagy **Sorozatszám** aktív követési dimenziókat tartalmazó cikkek bejövő és kimenő feldolgozása.
 - Zároló állapotértékű készlet feldolgozása.
 - Készletállapot módosítása bármely munkamozgási folyamat során.
@@ -187,6 +188,7 @@ A következő táblázat bemutatja, hogy mely kimenő funkciók, és hol támoga
 |--------------------------------------------------------------|-----|------------------------------|
 | Forrásdokumentum feldolgozása                                   | Igen | Nincs |
 | Rakomány és szállításkezelési folyamatok feldolgozása                | Igen, de csak a rakománytervezési folyamatok. A szállításkezelési folyamatok feldolgozása nem támogatott  | Nincs |
+| Partraszállási költség és úton lévő áruk fogadása                                         | Igen | Nincs |
 | Kiadás raktárba                                         | Igen | Nincs |
 | Tervezett áttárolás                                        | Nincs  | Nincs |
 | Szállítmánykonszolidáció                                       | Igen, a rakománytervezés használata esetén | Igen |
