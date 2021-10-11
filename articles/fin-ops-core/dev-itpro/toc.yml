@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-21.md
                 - name: Platformfrissítés a 10.0.20-as verzióhoz (2021. augusztus)
                   href: get-started/whats-new-platform-updates-10-0-20.md
-                - name: Platformfrissítés a 10.0.19-es verzióhoz (2021. június)
-                  href: get-started/whats-new-platform-updates-10-0-19.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -1080,6 +1078,8 @@
                   items:
                     - name: Entitás- és mezőleképezések testreszabása
                       href: data-entities/dual-write/customizing-mappings.md
+                    - name: Testreszabási útmutató a kettős íráshoz
+                      href: data-entities/dual-write/custom-best-practices.md
                     - name: Több entitásleképezés kezelése
                       href: data-entities/dual-write/multiple-entity-maps.md
                     - name: Jogi személy szerkesztése a kettős írás beállítása után

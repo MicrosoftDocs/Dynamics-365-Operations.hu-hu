@@ -5,6 +5,8 @@
       items:
         - name: Újdonságok és változások a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2021. szeptember 20.
+          href: hr-whats-new-2021-09-20.md
         - name: 2021. szeptember 06.
           href: hr-whats-new-2021-09-06.md
         - name: 2021. augusztus 23.
@@ -291,6 +293,8 @@
               href: hr-admin-troubleshooting-batch-history.md
             - name: Beragadt kötegelt feladatok alaphelyzetbe állítása
               href: hr-admin-troubleshooting-batch-execution.md
+            - name: Dataverse szinkronizáció visszaállítása
+              href: hr-admin-troubleshooting-dataverse-sync.md
             - name: Az elemzési jelentések nincsenek frissítve
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Nem lehet környezetet létrehozni a Power Apps felügyeleti központjában
@@ -485,6 +489,12 @@
               items:
                 - name: Bérszámfejtési dolgozói juttatási terv
                   href: hr-admin-integration-payroll-api-payroll-worker-benefit-plan.md
+            - name: Egyéb entitások
+              items:
+                - name: Személynév előzményei
+                  href: hr-admin-integration-payroll-api-person-name-history.md
+                - name: Átváltási árfolyam
+                  href: hr-admin-integration-payroll-api-compensation-pay-frequency.md
             - name: Lehetőségkészletek
               items:
                 - name: Nem
@@ -543,6 +553,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Globális címjegyzék konfigurálása
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/human-resources/toc.json
+                - name: Címbeállítás
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/human-resources/toc.json
                 - name: Címjegyzékek GYIK
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/human-resources/toc.json
                 - name: Címjegyzékek konfigurálása
@@ -641,7 +653,7 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
             - name: E-mail konfigurálása és küldése
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
-            - name: Dátum-/időadatok és időzónák
+            - name: Dátum/időadatok és időzónák
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
         - name: Személyzet kezelése
           items:
@@ -781,6 +793,8 @@
                       href: hr-benefits-process-rate-changes.md
                 - name: ACA-jelentés
                   href: hr-benefits-management-aca-reports.md
+                - name: Juttatási kimutatás
+                  href: hr-benefits-statement.md
             - name: Juttatási program meghatározása és kezelése
               href: hr-benefits-manage-program.md
             - name: Juttatásra vonatkozó jogosultsággal kapcsolatos irányelvek

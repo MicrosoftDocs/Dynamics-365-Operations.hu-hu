@@ -1179,7 +1179,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Példa a jelentések OPENXML-formátumban történő létrehozásához
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: ER (elektronikus jelentés) formátum módosítása Excel-sablonok újbóli alkalmazásával
+                    - name: ER (Elektronikus jelentés) formátum módosítása Excel-sablonok újbóli alkalmazásával
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
                       items:
@@ -1651,6 +1651,8 @@
                   href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
                 - name: A Tervezési optimalizálás által nem használt paraméterek
                   href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Készletütemezés
+                  href: master-planning/supply-schedule.md
                 - name: Szűrők alkalmazása egy tervre
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Alaptervezés igény-előrejelzéssel
@@ -1759,8 +1761,6 @@
                   href: master-planning/tasks/create-intercompany-plan.md
                 - name: Kimenő tervezett vállalatközi igény megtekintése
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: Együttműködés a belső ellátási lánc vevőivel
-                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
                 - name: Nettó követelmények és igénykövetési információ a beépített fő tervezéssel
                   href: master-planning/net-requirements-built-in-master-planning.md
             - name: Előrejelzés
@@ -2037,8 +2037,12 @@
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: Beszerzési rendelés jóváhagyásához használt mobil munkaterület
                   href: procurement/purchase-order-mobile-workspace.md
+                - name: Vállalatközi beszerzési rendelés létrehozása és számlázása belső használatra
+                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                - name: Vállalatközi rendelések áreltéréseinek ellenőrzése
+                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: Az áruk bevételezésének rögzítése a beszerzési rendelésen
-                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
+                  href: procurement/tasks/record-receipt-goods-purchase-order.md
             - name: Beszerzési rendelés létrehozása
               items:
                 - name: Beszerzési rendelések manuális létrehozása
@@ -2729,7 +2733,63 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Értékesítési ajánlatok létrehozása és szerkesztése
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
-            - name: Visszáru
+            - name: Vállalatközi kereskedelem
+              items:
+                - name: Vállalatközi kereskedelem beállítása
+                  items:
+                    - name: Vállalatközi kereskedelem beállítása
+                      href: sales-marketing/intercompany-trade-set-up.md
+                    - name: Vállalatközi paraméterek
+                      href: sales-marketing/intercompany-parameters.md
+                    - name: 'Szállítók, vevők, és cikkek beállítása vállalatközi kereskedelemhez'
+                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+                    - name: Vállalatközi rendelések költségeinek beállítása
+                      href: sales-marketing/intercompany-set-up-charges.md
+                    - name: Paraméterek beállítása vállalatközi rendelés feladásához
+                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+                - name: Vállalatközi adatok szinkronizálása
+                  items:
+                    - name: Vállalatközi árak és engedmények szinkronizálása
+                      href: sales-marketing/intercompany-sync-prices-discounts.md
+                    - name: Vállalatközi költségek szinkronizálása
+                      href: sales-marketing/intercompany-sync-charges.md
+                    - name: Vállalatközi ügyféladatok szinkronizálása
+                      href: sales-marketing/intercompany-synch-customer-information.md
+                    - name: Vállalatközi intézkedési kódok szinkronizálása
+                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
+                - name: Vállalatközi értékesítési rendelések és számlák
+                  items:
+                    - name: Vállalatközi beszerzés és vevői rendelések létrehozása több vállalatban
+                      href: sales-marketing/intercompany-orders-in-several-companies.md
+                    - name: Vállalatközi rendelések és visszárurendelések
+                      href: sales-marketing/intercompany-orders-and-return-orders.md
+                    - name: Vállalatközi értékesítési rendelés létrehozása belső használatra
+                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
+                    - name: Létrehoz egy eredeti értékesítési rendelés egy külső vevő számára
+                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
+                    - name: Vállalatközi foglalások
+                      href: sales-marketing/intercompany-reservations.md
+                    - name: Eredeti vállalatközi értékesítési rendelés módosítása vagy törlése
+                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
+                    - name: Vállalatközi rendelések módosítása
+                      href: sales-marketing/intercompany-change-orders.md
+                    - name: Vállalatközi köteg- és sorozatszámok
+                      href: sales-marketing/intercompany-batch-serial-numbers.md
+                    - name: Vállalatközi szállítólevelek
+                      href: sales-marketing/intercompany-packing-slips.md
+                    - name: A vállalatközi értékesítési ügyfélszámlák kifizetéseinek automatikus regisztrációja
+                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
+                - name: Vállalatközi beszerzési rendelések
+                  items:
+                    - name: Vállalatközi beszerzési rendelés létrehozása és számlázása belső használatra
+                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                    - name: Vállalatközi rendelések áreltéréseinek ellenőrzése
+                      href: sales-marketing/intercompany-check-price-discrepancies.md
+                - name: Vállalatközi pénznem átváltása
+                  href: sales-marketing/intercompany-currency-conversions.md
+                - name: Vállalatközi alapütemezés
+                  href: sales-marketing/intercompany-master-scheduling.md
+            - name: Visszáruk
               items:
                 - name: Értékesítési visszáruk
                   href: warehousing/sales-returns.md
@@ -3067,6 +3127,8 @@
               href: landed-cost/landed-cost-vs-tms.md
             - name: A partraszállási költség moduljának beállítása és konfigurálása
               items:
+                - name: Kapcsolja be a partraszállási költség modult a rendszeréhez
+                  href: landed-cost/landed-cost-enable.md
                 - name: Partraszállási költség paraméterei
                   href: landed-cost/landed-cost-parameters.md
                 - name: A partraszállási költség beszerzési és erőforrásszerzési paraméterei
@@ -3185,6 +3247,8 @@
                       href: warehousing/warehouse-slotting.md
                     - name: Helyutasítás – készletkitárolás korosítása
                       href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Horgonyzás
+                      href: warehousing/anchoring.md
                     - name: Kimenő rendezés
                       href: warehousing/outbound-sorting.md
                     - name: Falhoz helyez – üzletbe helyez
@@ -3341,6 +3405,8 @@
                       href: warehousing/display-older-batches-within-warehouses.md
                     - name: Legrégebbi köteg kitárolása mobileszközön
                       href: warehousing/pick-oldest-batch.md
+                - name: Globális mobileszköz-paraméterek
+                  href: warehousing/mobile-device-parameters.md
                 - name: Mobileszköz felhasználói beállításai
                   href: warehousing/mobile-device-user-settings.md
                 - name: Raktározási alkalmazás eseményeinek feldolgozása

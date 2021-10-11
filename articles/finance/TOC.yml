@@ -284,6 +284,8 @@
               href: accounts-payable/broker-contract.md
             - name: Jogdíjszerződések kezelése
               href: accounts-payable/royalty-contract.md
+            - name: Hivatkozás az eredeti számlákra a jóváírásokban (szállítói számlák)
+              href: accounts-payable/gbl-original-invoice-numbers-credit-notes-ap.md
             - name: Kifizetések és kiegyenlítések
               items:
                 - name: A Kötelezettségek modul központosított kifizetései
@@ -306,7 +308,7 @@
                   href: accounts-payable/create-vendor-payments-payment-proposal.md
                 - name: Szállítói kifizetés sztornózása
                   href: accounts-payable/reverse-vendor-payment.md
-                - name: Elektronikus jelentéskészítési minta szállítói csekkekhez
+                - name: Elektronikus jelentéskészítéskészítési minta szállítói csekkekhez
                   href: accounts-payable/electronic-reporting-sample-vendor-checks.md
                 - name: Előlegszámlák és előlegek áttekintése
                   href: accounts-payable/prepayments-invoices-vs-prepayments.md
@@ -1272,6 +1274,8 @@
                   href: finance-insights/use-customer-payment-predictions.md
                 - name: Pillanatképek áttekintése
                   href: finance-insights/payment-snapshots.md
+            - name: Finance Insights – hibaelhárítási GYIK
+              href: finance-insights/finance-insights-troubleshooting-faq.md
         - name: Projektvezetés és könyvelés
           items:
             - name: Projektvezetés és könyvelés áttekintése
@@ -1572,9 +1576,13 @@
                       items:
                         - name: Több adószám
                           href: localizations/emea-multiple-vat-registration-numbers.md
-                        - name: Jelentés több áfanyilvántartáshoz
+                        - name: Jelentés több adószámhoz
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
-                        - name: Franciaországi jelentések
+                        - name: Osztrák jelentés
+                          items:
+                            - name: Áfabevallás
+                              href: localizations/emea-aut-vat-declaration-austria.md
+                        - name: Franciaországi jelentés
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
@@ -1636,10 +1644,12 @@
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Nemzetközi szolgáltatásokra vonatkozó jelentés
                   href: localizations/emea-aut-vat-statement-details.md
-                - name: Intrastat jelentés
+                - name: Osztrák Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Beszerzési illetékek
                   href: localizations/emea-aut-purchase-duties.md
+                - name: Áfabevallás
+                  href: localizations/emea-aut-vat-declaration-austria.md
             - name: Bahrein
               items:
                 - name: Bahrein – áttekintés
@@ -2676,8 +2686,6 @@
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Negyedéves áfaügyi kommunikációs jelentés
                   href: localizations/emea-ita-quarterly-vat-communication.md
-                - name: Tiltólista-jelentés
-                  href: localizations/emea-ita-black-list-report.md
                 - name: Kompetencia dátuma és pénzügyi napló
                   href: localizations/emea-ita-competence-date.md
                 - name: Tárgyi eszközök értékcsökkenése
@@ -3801,13 +3809,15 @@
           items:
             - name: Elektronikus jelentéskészítés áttekintése
               href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md?toc=/dynamics365/finance/toc.json
+            - name: Elektronikus jelentéskészítés összetevői
+              href: ../fin-ops-core/dev-itpro/analytics/er-overview-components.md?toc=/dynamics365/finance/toc.json
             - name: Konfigurációk
               items:
                 - name: Konfigurációk létrehozása
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/finance/toc.json
                 - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/finance/toc.json
-                - name: Az Elektronikus jelentéskészítés megoldás összetevőinek előkészítése
+                - name: Az Elektronikus jelentéskészítéskészítés megoldás összetevőinek előkészítése
                   items:
                     - name: Tartományspecifikus adatmodell kialakítása
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/finance/toc.json
@@ -4121,7 +4131,7 @@
                   items:
                     - name: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/finance/toc.json
-                    - name: ER (elektronikus jelentés) formátum módosítása Excel-sablonok újbóli alkalmazásával
+                    - name: ER (Elektronikus jelentéskészítés) formátum módosítása Excel-sablonok újbóli alkalmazásával
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/finance/toc.json
                     - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
                       items:
@@ -4325,9 +4335,9 @@
               items:
                 - name: Keretrendszer konfigurálása
                   items:
-                    - name: Az Elektronikus jelentéskészítési keretrendszer konfigurálása
+                    - name: Az Elektronikus jelentéskészítéskészítési keretrendszer konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
-                    - name: Elektronikus jelentéskészítési sablonok biztonsági mentése és helyreállítása
+                    - name: Elektronikus jelentéskészítéskészítési sablonok biztonsági mentése és helyreállítása
                       items:
                         - name: ER-sablonok biztonságimentés-tárhelye
                           href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/finance/toc.json
@@ -4369,7 +4379,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/finance/toc.json
                     - name: Tesztelés automatizálása ER segítségével
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/finance/toc.json
-                - name: Üzleti folyamatok automatizálása elektronikus jelentéskészítési konfigurációk segítségével
+                - name: Üzleti folyamatok automatizálása Elektronikus jelentéskészítéskészítési konfigurációk segítségével
                   items:
                     - name: ER konfigurálása az adatok Power BI szolgáltatásba való lehívásához
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/finance/toc.json
@@ -4393,7 +4403,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/finance/toc.json
                         - name: Üzleti dokumentumsablon szerkezetének frissítése
                           href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/finance/toc.json
-            - name: Elektronikus jelentéskészítési keretrendszer API
+            - name: Elektronikus jelentéskészítéskészítési keretrendszer API
               items:
                 - name: Beépített funkciók listájának kibővítése
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/finance/toc.json
@@ -4509,6 +4519,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Globális címjegyzék konfigurálása
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/finance/toc.json
+                - name: Címbeállítás
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/finance/toc.json
                 - name: Címjegyzékek GYIK
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/finance/toc.json
                 - name: Címjegyzékek konfigurálása

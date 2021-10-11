@@ -1398,12 +1398,16 @@
               items:
                 - name: Commerce honosítása Oroszországra vonatkozóan
                   href: localizations/rus-commerce-localization.md
-                - name: Egyszerűsített vevői címformátum a Commerce POS szolgáltatásban Oroszországra vonatkozóan
-                  href: localizations/rus-simplified-address.md
                 - name: Commerce Oroszországra vonatkozó honosításának beállítása
                   href: localizations/rus-commerce-setup.md
                 - name: Előlegek a Commerce szolgáltatásban Oroszországban
                   href: localizations/rus-commerce-prepayments.md
+                - name: Egyszerűsített vevői címformátum a Commerce POS szolgáltatásban Oroszországra vonatkozóan
+                  href: localizations/rus-simplified-address.md
+                - name: Adóügyi nyomtató integrációját bemutató minta Oroszországra vonatkozóan
+                  href: localizations/rus-fpi-sample.md
+                - name: Ügyfélinformációk kezelése Oroszországra vonatkozóan
+                  href: localizations/rus-customer-information.md
             - name: Svédország
               items:
                 - name: Pénztárgép funkciói
@@ -1832,7 +1836,7 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/commerce/toc.json
                     - name: Példa a jelentések OPENXML-formátumban történő létrehozásához
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/commerce/toc.json
-                    - name: ER (elektronikus jelentés) formátum módosítása Excel-sablonok újbóli alkalmazásával
+                    - name: ER (Elektronikus jelentés) formátum módosítása Excel-sablonok újbóli alkalmazásával
                       href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/commerce/toc.json
                     - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
                       items:
@@ -2220,6 +2224,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Globális címjegyzék konfigurálása
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/commerce/toc.json
+                - name: Címbeállítás
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/commerce/toc.json
                 - name: Címjegyzékek GYIK
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/commerce/toc.json
                 - name: Címjegyzékek konfigurálása
@@ -2329,7 +2335,11 @@
         - name: Bővíthetőség
           items:
             - name: Kereskedelmi fejlesztés és bővíthetőség
-              href: dev-itpro/dev-retail-home-page.md
+              items:
+                - name: Commerce informatikai szakemberek és fejlesztők számára
+                  href: dev-itpro/dev-retail-home-page.md
+                - name: Helyi fejlesztői környezet beállítása
+                  href: dev-itpro/setup-local-dev-env.md
             - name: Online csatorna bővíthetősége
               items:
                 - name: Online csatorna bővíthetősége – áttekintés
