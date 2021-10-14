@@ -1,8 +1,8 @@
 ---
 title: Pénzforgalmi előrejelzés
 description: Ez a témakör a pénzforgalmi előrejelzések folyamatáról nyújt áttekintést. Azt is elmagyarázza, hogy miként integrálódnak a pénzforgalm előrejelzések a rendszer más moduljaival.
-author: JodiChristiansen
-ms.date: 12/16/2020
+author: panolte
+ms.date: 09/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9455d132a928185bdfeb49c01c141b4c9b2c52e3b3beb9f8a3c96a38238f296
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
+ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779446"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7547955"
 ---
 # <a name="cash-flow-forecasting"></a>Pénzforgalmi előrejelzés
 
@@ -83,7 +83,10 @@ Felülírhatja a **Likviditási számla** mező értékét az adott vevői felad
 
 ### <a name="budgeting"></a>Költségvetés készítése
 
-A pénzforgalmi előrejelzésekben költségvetési modellekből készített költségvetéseket is szerepeltethet. A **Pénzforgalmi előrejelzés beállítása** oldalon, a **Főkönyv** lapon, válassza ki azokat a fő számlákat, melyeket szerepeltetni kíván az előrejelzésben. Alapértelmezés szerint az új költségkeret-bejegyzések szerepelnek az előrejelzésekben, miután a költségvetési modellt bekapcsolta a pénzforgalmi előrejelzéseknél. A pénzforgalmi előrejelzésbe való bekerülés felülírható az egyes költségvetési tételjegyzék-bejegyzéseken.
+A pénzforgalmi előrejelzésekben költségvetési modellekből készített költségvetéseket is szerepeltethet. A **Pénzforgalmi előrejelzés beállítása** oldalon, a **Költségvetés-készítés** lapon, válassza ki azokat a fő számlákat, melyeket szerepeltetni kíván az előrejelzésben. Alapértelmezés szerint az új költségkeret-bejegyzések szerepelnek az előrejelzésekben, miután a költségvetési modellt bekapcsolta a pénzforgalmi előrejelzéseknél.
+
+A költségvetési tételjegyzék-rekordok személyre szabás révén, külön-külön is szerepeltetheti a pénzforgalmi előrejelzésben. Amikor hozzáadja a "Felvétel a pénzforgalmi előrejelzésekbe" oszlopot a **Költségvetési tételjegyzék-bejegyzés** laphoz, a rendszer felülírja a **Pénzforgalmi előrejelzés beállítása** lapon található beállításokat, hogy az előrejelzésben egy különálló költségvetési tételjegyzék-bejegyzés szerepeljen.
+
 
 ### <a name="inventory-management"></a>Készletgazdálkodás
 
@@ -144,7 +147,7 @@ Megtekintheti a pénzforgalmi előrejelzések elemzéseit a rendszer pénzneméb
 
 Megtekintheti a pénzforgalmi előrejelzések elemzéseit a vállalat által meghatározott pénznemben a **Készpénzáttekintés – jelenlegi vállalat** munkaterületen. Az elemzésekhez használt könyvelési pénznem meghatározása a **Főkönyv** oldalon történik. Ez a munkaterület áttekintést nyújt a pénzforgalmi előrejelzésről és a bankszámla-egyenlegekről a jelenlegi vállalat vonatkozásában. A készpénzbeáramlás és -kiáramlás áttekintése áttekintést nyújt a jövőbeli pénzmozgásokról és egyenlegekről a könyvelés pénznemében, valamint részletes információkat tartalmaz az előrejelzett tranzakciókra vonatkozóan. Az előrejelzett pénznem egyenlegeit is megjelenítheti.
 
-Ha további információt szeretne a pénzforgalmi előrejelzések elemzéséről, tekintse meg a [Készpénzáttekintés Power BI tartalom](./cash-overview-power-bi-content.md) témakört.
+Ha további információt szeretne a pénzforgalmi előrejelzések elemzéséről, lásd: [Készpénzáttekintés Power BI tartalom](Cash-Overview-Power-BI-content.md).
 
 Ezenkívül a következő oldalakon megtekintheti a pénzforgalmi előrejelzési adatokat az adott fiókokhoz, rendelésekhez és cikkekhez:
 

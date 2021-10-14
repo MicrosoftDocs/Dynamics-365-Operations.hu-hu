@@ -2,7 +2,7 @@
 title: A felhasználói élmény testreszabása
 description: Ez a témakör bemutatja, hogyan lehet személyre szabni az alkalmazást.
 author: jasongre
-ms.date: 08/09/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e3d126bf9ec5687d97dacc8763a221da656fdef1
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: a1f24ff1a0730f13af6231510c8e6b3cb46fde48
+ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344374"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7581065"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
@@ -119,7 +119,8 @@ A következő eszközök érhetők el a **Személyre szabása** eszköztáron:
 
 - A **Kijelölés** eszközzel egy elemet kijelölve megnyithat egy párbeszédablakot, és módosíthatja az elem tulajdonságait. Az eszköz használatához válassza ki az eszköztárban a **Kijelölés** gombot, majd jelölje ki a kívánt elemet. Az elem tulajdonságok ablaka jelenik meg, ahol az elem bármilyen tulajdonsága módosítható. Megismételheti a folyamatot más elemekkel is, amelyek a lapon testre szabhatók. Bizonyos esetekben előfordulhat, hogy egyes testreszabható tulajdonságok nem érhetők el. Kötelező mezőt például nem tud zárolni.
 - Válassza ki az **Elrejtés** eszközt egy elem és elrejtéséhez a lapon. Az eszköz használatához válassza ki az eszköztárban az **Elrejtés** gombot, majd rejtse el a kívánt elemet. Ha használja az **Elrejtés** eszközt, minden éppen rejtett elem látható lesz, de egy árnyékolt tárolóban jelennek meg. Ezután kijelölheti, hogy az elem látható legyen. Ha szeretné megtekinteni, hogyan fog kinézni a lap az elemek elrejtésével, váltson át egy másik személyre szabási eszközre vagy zárja be a személyre szabási eszköztárat.
-- Használja a **Mezők hozzáadása** eszközt az új mezők laphoz való felvételére. Az eszköz használata esetén csak az oldal definíciójának részét képező mezőket veheti fel. Új mezők, amelyek nem részei az aktuális oldaldefiníciónak, létrehozásával kapcsolatos további tudnivalókat lásd: [Egyéni mezők létrehozása és használata](user-defined-fields.md). Miután kiválasztotta a **Mezők hozzáadása** gombot az eszközsora először válasszon adott rács vagy szakasz, ahová mező hozzáadását szeretné. A kijelölt ráccsal vagy szakasszal kapcsolatos mezők listája egy párbeszédpanelen jelenik majd meg. A párbeszédpanelen válasszon hozzáadandó mezőket, majd a **Frissítés** lehetőséget. Korábban hozzáadott mező eltávolításához meg kell ismételni a folyamatot, de a mező a párbeszédpanelen ne legyen kijelölve.
+- Használja a **Mezők hozzáadása** eszközt az új mezők laphoz való felvételére. Az eszköz használata esetén csak az oldal definíciójának részét képező mezőket veheti fel. Új mezők, amelyek nem részei az aktuális oldaldefiníciónak, létrehozásával kapcsolatos további tudnivalókat lásd: [Egyéni mezők létrehozása és használata](user-defined-fields.md). Miután kiválasztotta a **Mezők hozzáadása** gombot az eszközsora először válasszon adott rács vagy szakasz, ahová mező hozzáadását szeretné. A kijelölt ráccsal vagy szakasszal kapcsolatos mezők listája egy párbeszédpanelen jelenik majd meg. A párbeszédpanelen válassza ki a hozzáadni kívánt mezőket a **Javasolt mezők** vagy az **Összes mező** listából. A kívánt mezők kiválasztása után válassza a **Frissítés** lehetőséget. Korábban hozzáadott mező eltávolításához meg kell ismételni a folyamatot, de a mező a párbeszédpanelen ne legyen kijelölve.
+    - A **Javasolt mezők** lista azokat a mezőket jeleníti meg, amelyek korábban hozzáadtak a szervezet más felhasználóihoz. A mezők listája az **Ajánlás kötegelt feladat** ismétlődési gyakorisága alapján frissül. Hasonló tapasztalat áll rendelkezésre új szűrőmezőknek a lap Szűrő ablaktáblája segítségével való hozzáadása esetén.
 - Használja az **Áthelyezés** eszközt, ha egy elemet ki szeretne jelölni és az elemek jelenlegi csoportján belül egy másik helyre szeretné áthelyezni. Ne feledje, hogy a szülőcsoporton kívülre nem helyezhető át elem. Az eszköz használatához válassza ki az eszköztárban az **Áthelyezés** gombot, majd helyezze át a kívánt elemet. Amikor kiválaszt egy elemet, az alkalmazás meghatározza, ha azokat a helyeket, ahová az elemet át lehet helyezni. Ezek a helyek *lerakási zónákként* ismertek. Az aktuális csoporton belül az elem húzásakor minden lerakási zóna mellett a terület, ahová az elem húzható színes, félkövér sorként jelenik meg.
 - Válassza ki a **Kihagyás** eszközt egy elem eltávolítására az oldal billentyűparancs-sorozatából Ha bejelöli a **Kihagyás** gombot az eszközsoron, minden éppen kihagyott elem látható lesz, és egy árnyékolt tárolóban jelennek meg. Interaktívan eltávolíthat vagy hozzáadhat mezőket a lapsorrendhez.
 - Használja a **Megjelenítés a fejlécben** eszközt, ha azt szeretné, hogy az elem a gyorslap összesítő lapján megjelenjen. Ha kiválasztja a **Megjelenítés a fejlécben** gombot az eszközsoron , összesítő mezők szerepelnek az árnyékolt tároló bejelölt összes mezőt. Interaktívan mezők felvétele az összesítő gyorslapre, és a mezők eltávolítása összegző mezőinek a kiválasztásával.

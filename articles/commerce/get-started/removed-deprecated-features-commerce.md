@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve a Dynamics 365 Commerce alkalmazásban.
 author: josaw
-ms.date: 08/16/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 3ac08a409284681ba9bcc4825b936c0330d14e04
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386741"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559559"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 
@@ -36,6 +36,18 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.21 kiadásában
 
 [!include [banner](../includes/preview-banner.md)]
+
+### <a name="overlapping-discounts-handling-setting-in-commerce-parameters"></a>Átfedő engedménykezelés beállítása a Commerce paramétereiben
+
+A Commerce rendszer 10.0.21-es verziójában elavult a **Commerce paraméterek** oldalon az **Átfedő kedvezmények kezelése** beállítás. A Commerce árképzési motor innentől egyetlen algoritmust használ az átfedő engedmények optimális kombinációjának meghatározására.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | <p>A Commerce paraméterek **Átfedő engedmények kezelése** beállítása határozza meg, hogy hogyan keresi meg a Commerce árképzési motor az átfedő engedményeket, és határozza meg az átfedő engedmények optimális kombinációját. Jelenleg három lehetőség áll rendelkezésre:<p><ul><li> **Legjobb teljesítmény** – Ez a beállítás speciális heurisztikus algoritmust és a [marginálisérték-rangsorolás](../optimal-combination-overlapping-discounts.md) módszerét használja a prioritás meghatározására, értékelésére és a legjobb engedménykombináció gyors meghatározására.</li><li>**Kiegyensúlyozott számítás** – az aktuális kódbázisban ez a beállítás a **Legjobb teljesítmény** beállításhoz hasonló módon működik. Emiatt gyakorlatilag egy ismétlődő beállításról van szó.</li><li>**Teljes számítás** – Ez a beállítás egy régi algoritmust használ, amely az árszámítás során minden lehetséges engedménykombináción végig megy. Nagy sorokat és mennyiségeket eredményező rendelések esetén ez a beállítás teljesítménybeli problémákat okozhat.</li></ul><p>A konfigurálás egyszerűsítése, a teljesítmény javítása és a régi algoritmus által okozott problémák csökkentése érdekében teljesen eltávolítjuk az **Átfedő engedmények kezelése** beállítást, és frissítjük a Commerce árképzési motor belső logikáját, hogy most csak a speciális algoritmust (vagyis a **Legjobb teljesítmény** beállítást használó algoritmust) használja.</p> |
+| **Felváltotta másik szolgáltatás?**   | Nem. A funkció eltávolítása előtt ajánlott a **Kiegyensúlyozott számítás** vagy a **Teljes számítása** beállítást kapcsolót **Legjobb teljesítmény** értékre állítani. |
+| **Érintett területek**         | Árképzés és engedmények |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | A 10.0.21-es kiadástól az **Átfedő engedmények kezelése** beállítás törlődik a Commerce rendszer 2022. októberi paramétereiből. |
 
 ### <a name="retail-sdk-distributed-by-using-lifecycle-services"></a>Kiskereskedelmi SDK a Lifecycle Services használatával
 

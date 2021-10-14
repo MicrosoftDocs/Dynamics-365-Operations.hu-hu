@@ -1,7 +1,7 @@
 ---
-title: Alaptervezés-beállítási varázsló
-description: Ez a témakör az alaptervezés beállításához használt különböző fontos stratégiákat és paramétereket ismerteti.
-author: t-benebo
+title: Alaptervezés-beállítás varázslója
+description: Ez a témakör azt ismerteti, hogyan lehet futtatni az alaptervezés telepítővarázslóját az alaptervezés beállításához.
+author: ChristianRytt
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
@@ -16,14 +16,14 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 26dea90a208eddc39b9a92d534fbc3a5242da29f4839a7f0e427b0efb03701b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b825858653599e8474a6fbd54b682c4fa0118053
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767460"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577504"
 ---
-# <a name="master-planning-setup-wizard"></a>Alaptervezés-beállítási varázsló
+# <a name="master-planning-setup-wizard"></a>Alaptervezés-beállítás varázslója
 
 [!include [banner](../includes/banner.md)]
 
@@ -127,7 +127,7 @@ Ez a rész két kitalált vállalat beállításait írja le, hogy megmutassa, h
 
 ### <a name="example-1-contoso-manufacturer"></a>1. példa: Contoso Manufacturer
 
-Contoso Manufacturer olyan gyártó cég, amely hangszórókat gyárt. Megvásárolja azokat a különböző nyersanyagokat és alkatrészeket különböző szállítóktól, amelyeket a végtermék hangszórókhoz használnak. Íme az ellátás és a gyártás néhány jellemzője:
+A Contoso Manufacturer olyan gyártó cég, amely hangszórókat gyárt. Megvásárolja azokat a különböző nyersanyagokat és alkatrészeket különböző szállítóktól, amelyeket a végtermék hangszórókhoz használnak. Íme az ellátás és a gyártás néhány jellemzője:
 
 - A vállalat által gyártott végső cikkek anyagjegyzék-struktúrával (BOM) rendelkeznek.
 - A végső cikkeket és alkatrészeket az Alaptervezés tervezi. A manuális tervezés nem történik meg.

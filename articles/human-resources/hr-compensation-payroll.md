@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-07-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 80bba5446eb7a87d96a7da4ae856cb5ca114ce52
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
+ms.openlocfilehash: b9536a6e12b4037458910b7a2d27450ac175fd9d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483782"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559607"
 ---
 # <a name="ready-to-pay"></a>Kifizetésre kész
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-[!include [preview feature](./includes/preview-feature.md)]
 
 > [!NOTE]
 > Ha egy alkalmazottat fizetésre készként szeretne megjelölni, először engedélyeznie kell az **(Előzetes verzió) bérszámfejtés integrációja** funkciót a funkciókezelésben. Az előzetes funkciók aktiválásával kapcsolatos további részletekért tekintse meg a [Szolgáltatások kezelése](hr-admin-manage-features.md) oldalt.
@@ -72,10 +70,9 @@ Ha valamelyik ellenőrzés sikertelen, akkor az alkalmazott nem jelölhető meg 
 
 Ha a **Fizetésre kész** mező értéke **Nem**, az azt jelzi, hogy végre kell hajtania egy műveletet, hogy a dolgozói profil teljes legyen. Ezzel nem lehet leállítani az adatentitások közötti adatelérést. 
 
-## <a name="known-issues"></a>Ismert problémák
+## <a name="process-automation"></a>Folyamatok automatizálása
 
-- Le kell tiltania az **Egyszerű alkalmazott rekord** lehetőséget a funkciókezelésben. Ha használja ezt a funkciót, akkor nem működnek megfelelően a kompenzációkezelési munkaterület csempéi.
-- A **Dolgozó** űrlapon a **Bérszámfejtés lapon** a **Fizetésre kész** csoport bármely felhasználói szerepkör számára elérhető. 
+A [Folyamatautomatizálás](/dynamics365/fin-ops-core/dev-itpro/sysadmin/process-automation) funkcióval automatizálhatja az összes alkalmazott ellenőrzését. A **Kompenzációkezelés** munkaterületen lépjen a **Hivatkozások** \> **Paraméterek** \> **Folyamatautomatizálás** menüpontra.
 
 ## <a name="see-also"></a>Lásd még
 
