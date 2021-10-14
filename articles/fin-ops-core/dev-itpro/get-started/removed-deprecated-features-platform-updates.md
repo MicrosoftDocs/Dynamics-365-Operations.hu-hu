@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
-ms.date: 09/17/2021
+ms.date: 09/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 8910fc338f822e6b6b59acb0e6ee7a90db2b5007
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500109"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595145"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -32,14 +32,26 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](/dynamics/s-e/global/axtechrefrep_61) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
 
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.21 verziójához
+
+### <a name="skype-for-business-online-support"></a>Skype for Business Online-támogatás
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Skype for Business Online szolgáltatás ki lett vezetve. A további tudnivalókat lásd: [A Skype for Business Online szolgáltatás ki lett vezetve](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/the-skype-for-business-online-service-has-retired/ba-p/2596601). |
+| **Felváltotta másik szolgáltatás?**   | Jelenleg nem, bár előfordulhat, hogy a jövőben megfontoljuk a Teams jelenlét hozzáadását.|
+| **Érintett területek**         | Webes ügyfél |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult. A10.0.21-es kiadásban már ki van kapcsolva a **Skype engedélyezve** beállítás. A beállítás eltávolítása 2022. áprilisára várható; A funkció azonban akkor áll le, amikor a Skype csapat lezárja a szolgáltatást. |
+ 
 ## <a name="feature-deprecation-effective-august-2021"></a>Funkciók eltávolításával kapcsolatos értesítés; 2021 augusztusától érvényes
 
 ### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL-jelentések a LifeCycle Services (LCS) szolgáltatásban
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** |   Minden tevékenységet és megfigyelést belsőleg, a platformon keresztül, az automatizáláson keresztül hajt végre a rendszer. Ehhez nem szükséges kézi beavatkozás.|
-| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Elavulás/eltávolítás oka** | Minden tevékenységet és megfigyelést belsőleg, a platformon keresztül, az automatizáláson keresztül hajt végre a rendszer. Ehhez nem szükséges kézi beavatkozás.|
+| **Felváltotta másik szolgáltatás?**   | Igen, jelenleg egy automatizált rendszer van, amely ezeket a képességeket elavulttá teszi. |
 | **Érintett területek**         | SQL-jelentések: jelenlegi DTU, aktuális DTU-részletek, Zárolási részletek lekérdezése, Aktuális csomagútmutató listája, Lekérdezésazonosítók listájának lekérdezése, SQL-lekérdezési csomag lekérése adott csomagazonosítóhoz, Lekérdezési csomagok és végrehajtási állapotok lekérdezése, Szabályozási konfiguráció lekérdezése, Várakozási statisztikák lekérése, Legdrágább lekérdezések listája |
 | **Telepítési beállítás**              | Felhőtelepítés: a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
 | **Állapot**                         | Elavult: A tervezett eltávolítási dátum 2021 októbere. |
@@ -48,8 +60,8 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Az LCS szolgáltatásban elavult néhány SQL-művelet.  |
-| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Elavulás/eltávolítás oka** | Az LCS szolgáltatásban elavult néhány SQL-művelet. Minden tevékenységet és megfigyelést belsőleg, a platformon keresztül, az automatizáláson keresztül hajt végre a rendszer. Ehhez nem szükséges kézi beavatkozás. |
+| **Felváltotta másik szolgáltatás?**   | Igen, jelenleg egy automatizált rendszer van, amely ezeket a képességeket elavulttá teszi. |
 | **Érintett területek**         | SQL-műveletek: Csomagútmutató létrehozása a tervazonosító kényszerítésére, Csomagútmutató létrehozása táblatippek hozzáadásához, Csomagútmutató eltávolítása, Oldalzárolások letiltása/engedélyezése és eszkaláció zárolása, Tábla statisztikáinak frissítése, Index újjáépítése, Index létrehozása |
 | **Telepítési beállítás**              | Felhőtelepítés: a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
 | **Állapot**                         | Elavult: A tervezett eltávolítási dátum 2021 októbere. |
@@ -158,7 +170,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Az egyéni kód általában korlátozott kedvezményeket biztosít, a támogatásához viszont jelentős erőforrások és számítás szükséges. Az egyéni kódokat elsősorban a jelentések készítői használják, hogy nyilvános metódusokat hívjanak egyéni kódszerelvényekből. A felhőben tárolt szolgáltatás azonban nem támogatja az SSRS-jelentésekhez az egyéni szerelvényekre mutató hivatkozásokat. |
-| **Felváltotta másik szolgáltatás?**   | A jelentés szerzője dönthetnek úgy továbbra nyilvános .NET-API-kra hivatkoznak a szövegdobozban lévő kifejezésekből származó matematikai, konverziós és formátumműveletekhez. További információ: [Kód hozzáadása jelentéshez (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Felváltotta másik szolgáltatás?**   | A jelentés szerzője dönthetnek úgy továbbra nyilvános .NET-API-kra hivatkoznak a szövegdobozban lévő kifejezésekből származó matematikai, konverziós és formátumműveletekhez. További információ: [Kód hozzáadása jelentéshez (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs).  |
 | **Érintett területek**         | Egyéni kódot tartalmazó, RDL-jelentésben alkalmazásjelentési megoldások csoportjai. |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | A 10.0.13-as verzióban a fordító figyelmeztetést küld az olyan példányok esetében, ahol egyéni kódokat észlel egy SSRS-jelentésdefinícióban. A hiba elhárításához nyissa meg a jelentéstervezési definíciót, és távolítsa el az összes egyéni kódot használó megoldás. Ezt a figyelmeztetést egy jövőbeli frissítés fordítói hibára fog lecserélni.   |

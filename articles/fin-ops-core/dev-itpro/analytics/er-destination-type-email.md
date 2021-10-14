@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 4ee1ae4d8a106e467640a8cbcf5986e770395431
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: dc89e7ff43e5df358f6d41bd295e981c883085bc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343860"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595203"
 ---
 # <a name="email-er-destination-type"></a>E-mail ER céltípusa
 
@@ -75,7 +75,7 @@ Megadhatja az e-mail feladóját és az e-mail címzettjeit. Alapértelmezés sz
 >
 > Amikor egy e-mail céljának módosítását kínálja fel a rendszer [futási időben](electronic-reporting-destinations.md#security-considerations), a **From** mező csak a `ERFormatDestinationSenderEmailMaintain`, **A feladó e-mail címének fenntartása az ER formátumú célhoz** biztonsági jogosultsággal rendelkező felhasználók számára látható.
 >
-> Ha a **Feladó** mezőt az aktuális felhasználóétól eltérő e-mail cím használatára konfigurálja, akkor a **Küldés mint** vagy a **Küldés más nevében** engedélyt előzetesen helyesen kell [beállítani](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide). Ellenkező esetben a következő kivételt dobja a rendszer futás közben: „Nem lehet e-mailt küldeni \<from email account\> feladóval a(z) \<current user account\> fiókból, kérjük ellenőrizze a(z) \<from email account\> fiók »Send as« engedélyeit.”
+> Ha a **Feladó** mezőt az aktuális felhasználóétól eltérő e-mail cím használatára konfigurálja, akkor a **Küldés mint** vagy a **Küldés más nevében** engedélyt előzetesen helyesen kell [beállítani](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group). Ellenkező esetben a következő kivételt dobja a rendszer futás közben: „Nem lehet e-mailt küldeni \<from email account\> feladóval a(z) \<current user account\> fiókból, kérjük ellenőrizze a(z) \<from email account\> fiók »Send as« engedélyeit.”
 
 A **Feladó** mezőt úgy is beállíthatja, hogy egynél több e-mail címet adjon vissza. Ebben az esetben a lista első címét lesz e-mail feladójának címe.
 

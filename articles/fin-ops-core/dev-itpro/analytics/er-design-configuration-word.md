@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 7040a74fbb08bed0b0c2808784d9c0b70f2adf96bef28783102c7eb117eeb851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a351567e0ed61fac040a6209a221833ab73a242a
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718357"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595262"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Új ER-konfiguráció tervezése Word-formátumú jelentések generálásához
 
@@ -46,7 +46,7 @@ Az **Excel\\Fájl** elemhez hozzáadhatja az **Excel\\Tartomány** és **Excel\\
 
 ![Beágyazott elemek hozzáadása a Formátumtervező oldalon.](./media/er-design-configuration-word-image4.gif)
 
-Amikor a tervezés során menti az ER-formátum módosításait, a hierarchikus formátumszerkezet a csatolt Word-sablonban egy **Jelentés** nevű [egyéni XML-részként](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) tárolódik. A módosított sablonhoz hozzá kell férnie, le kell töltenie a Finance alkalmazásból, helyben kell tárolnia, majd meg kell nyitnia az asztali Word alkalmazásban. A következő ábra a **Jelentés** egyéni XML-részét tartalmazó ellenőrző jelentés helyileg tárolt mintasablonját mutatja be.
+Amikor a tervezés során menti az ER-formátum módosításait, a hierarchikus formátumszerkezet a csatolt Word-sablonban egy **Jelentés** nevű [egyéni XML-részként](/visualstudio/vsto/custom-xml-parts-overview) tárolódik. A módosított sablonhoz hozzá kell férnie, le kell töltenie a Finance alkalmazásból, helyben kell tárolnia, majd meg kell nyitnia az asztali Word alkalmazásban. A következő ábra a **Jelentés** egyéni XML-részét tartalmazó ellenőrző jelentés helyileg tárolt mintasablonját mutatja be.
 
 ![A jelentéssablon mintájának előnézete az asztali Word alkalmazásban.](./media/er-design-configuration-word-image5.gif)
 
