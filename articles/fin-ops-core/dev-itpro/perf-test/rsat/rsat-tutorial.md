@@ -1,24 +1,21 @@
 ---
 title: Regression Suite Automation Tool-oktatóanyag
 description: Ez a témakör bemutatja, hogy hogyan használható a Regression Suite Automation Tool (RSAT). Leírja a különböző funkciókat, és speciális parancsfájlkezelést használó példákat tartalmaz.
-author: robinarh
-ms.date: 01/15/2021
+author: FrankDahl
+ms.date: 09/23/2021
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: rhaertle
-ms.custom: 21761
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: d70b2e7cf497fbf165a452f7977a14a98b9e1956e5a964d42c7bf8a6c3abe0bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f1d818944ed2779cdad15d84673369e31243285f
+ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714549"
+ms.lasthandoff: 09/25/2021
+ms.locfileid: "7556765"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool-oktatóanyag
 
@@ -82,13 +79,19 @@ Miután lefutott a teszteset, az Excel-paraméterfájlban szereplő üzenetet a 
 
 Ez a funkció képernyőképeket készít a feladatrögzítés során végrehajtott lépésekről. Ez a ellenőrzés vagy hibakeresés céljából hasznos.
 
-- A funkció használatához nyissa meg a **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elem értékét **hamis** értékről **igaz** értékre.
+- A funkció használatához az RSAT futtatása során felhasználói felülettel nyissa meg a **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Amikor futtatja a tesztesetet, az RSAT pillanatképeket (képeket) fog generálni a lépésekről a visszajátszási mappában munkakönyvtárban. Ha egy korábbi RSAT-verziót használ a képek a különálló **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback** mappába lesznek mentve, és minden futtatott tesztesethez egy külön mappa jön létre.
+- A funkció használatához az RSAT futtatása CLI-n keresztül (például Azure DevOps) nyissa meg a **Microsoft.Dynamics.ConsoleApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
+
+    ```xml
+    <add key="VerboseSnapshotsEnabled" value="false" />
+    ```
+
+Amikor futtatja a teszteseteket, az RSAT pillanatképeket (képeket) fog generálni a lépésekről a visszajátszási mappába elmenti azokat a munkakönyvtárban. Az mappában egy külön almappa jön létre **StepSnapshots** nevű mappában. Ez a mappa a futtatott tesztesetek pillanatképét tartalmazza.
 
 ## <a name="assignment"></a>Hozzárendelés
 
@@ -521,7 +524,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 A következő példa egy Open Data protokoll (OData) hívással keresi meg a beszerzési rendelések rendelési állapotát. Ha az állapot nem **számlázott**, akkor például lehívhat egy RSAT-tesztet, amely feladja a számlát.
 
-```xpp
+```powershell
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )

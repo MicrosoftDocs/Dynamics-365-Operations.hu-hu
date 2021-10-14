@@ -12,12 +12,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: b9996b4d6ab84070cc3e9863a454c4fd8ed14091490273cde0eec1ea2bc508fc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756226"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594719"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Fordított költségmechanizmus az adó/GST sémához
 
@@ -45,7 +45,6 @@ A következő beállításokat kell elvégeznie a fordított áfa alkalmazásáh
 Javasoljuk, hogy külön áfakódokat használjon az értékesítési és beszerzési műveleteknél.
 
 <table>
-<body>
 <tr>
 <td><strong>Áfakód az értékesítésekre vonatkozóan</strong></td>
 <td>Hozzon létre áfakódot a fordított áfa fizetésének műveleteihez (<strong>Adó</strong> &gt; <strong>Közvetett adók</strong> &gt; <strong>Áfa</strong> &gt; <strong>Áfakódok</strong>).
@@ -62,7 +61,6 @@ Ezt a negatív áfakódot egy cikkáfacsoporthoz rendelje hozzá, majd ebbe a ci
 <p>További információért lásd a következő szakaszt: &quot;Áfacsoportok és cikkáfacsoportok beállítása&quot;.</p>
 </td>
 </tr>
-</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Adócsoportok és cikkáfacsoportok beállítása

@@ -1,7 +1,7 @@
 ---
 title: Költségvetés-tervezés
 description: Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 Finance költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.
-author: ShylaThompson
+author: panolte
 ms.date: 06/25/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e995a3fb7f87db2aed676d12ca4b4732eb3e96c5e52b702890d53cd1840d7cb1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0420887c35bbb07aaf8cce05a68173ab6c534f92
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775194"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595334"
 ---
 # <a name="budget-planning"></a>Költségvetés-tervezés
 
@@ -36,7 +36,7 @@ Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 Fin
 
 ## <a name="prerequisites"></a>Előfeltételek 
 
-A jelen oktatóanyaghoz a Microsoft Dynamics 365 Finance környezetet a Contoso bemutatóadatokkal kell elérnie, és a példányra vonatkozóan rendszergazdai hozzáférés szükségessel kell rendelkeznie. Az oktatóanyag kapcsán ne használja a Privát böngészőmód beállítást - szükség esetén jelentkezzen ki az eltérő böngészőfiókból, majd jelentkezzen be rendszergazda adatokkal. A bejelentkezéskor **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ez az Excel alkalmazáshoz aktuálisan szükséges cookie-t hoz létre. Ha Internet Explorertől eltérő böngészővel bejelentkezik be az alkalmazásba, a rendszer arra kéri majd, hogy jelentkezzen be az Excel alkalmazás segítségével. Ha az Excel alkalmazásban a „Bejelentkezés” lehetőségre kattint, megnyílik egy Internet Explorer felugró ablak, a bejelentkezéskor pedig **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ha a „Bejelentkezés” lehetőség bejelölése az Excel alkalmazásban látszólag nem vezet eredményre, akkor törölje az Internet Explorer cookie-gyorsítótárat.
+A jelen oktatóanyaghoz a Microsoft Dynamics 365 Finance környezetet Contoso bemutatóadatokkal kell elérnie, és a példányra vonatkozóan rendszergazdai hozzáférés szükségessel kell rendelkeznie. Az oktatóanyag kapcsán ne használja a Privát böngészőmód beállítást - szükség esetén jelentkezzen ki az eltérő böngészőfiókból, majd jelentkezzen be rendszergazda adatokkal. A bejelentkezéskor **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ez az Excel alkalmazáshoz aktuálisan szükséges cookie-t hoz létre. Ha Internet Explorertől eltérő böngészővel bejelentkezik be az alkalmazásba, a rendszer arra kéri majd, hogy jelentkezzen be az Excel alkalmazás segítségével. Ha az Excel alkalmazásban a „Bejelentkezés” lehetőségre kattint, megnyílik egy Internet Explorer felugró ablak, a bejelentkezéskor pedig **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ha a „Bejelentkezés” lehetőség bejelölése az Excel alkalmazásban látszólag nem vezet eredményre, akkor törölje az Internet Explorer cookie-gyorsítótárat.
 
 ## <a name="scenario-overview"></a>**Eset áttekintése**
 Ágnes a Contoso Szórakozási Rendszerekben (DEMF) pénzügyi vezetőjeként dolgozik Németországban. Közeleg a 2016-os pénzügyi év, és Ágnesnek be kell állítania vállalat jövő évi költségvetését. A költségvetés előkészítése az alábbiak szerint történik:

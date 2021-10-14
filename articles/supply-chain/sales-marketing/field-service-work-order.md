@@ -1,7 +1,7 @@
 ---
 title: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel
 description: Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a Supply Chain Management munkarendelések a Field Service vevői rendelésekre történő szinkronizálásához szükségesek.
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 7d7688e757a3ab9746ae0307a7c15f0624c1d8aceeb0dc935b0da32d3ab2994b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c54f5eaec1ae453ba9e55ef54d47c8591276ec89
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752682"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568375"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel
 
@@ -245,31 +245,31 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 
 Szűrő: (msdyn_systemstatus ne 690970005) and (msdyn_systemstatus ne 690970000) és (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Sablonleképezés az adatintegrátorban.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Sablonleképezés a munkarendelések és az értékesítési rendelések közötti adatintegrációban (Field Service – Supply Chain Management): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Munkarendelések Értékesítési rendelésekké (Field Service – Supply Chain Management): WorkOrderServiceLineEstimate
 
 Szűrő: (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és (msdyn_linestatus eq 690970000) és (msdynce_headersystemstatus ne 690970004)
 
-[![Sablonleképezés az adatintegrátorban.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Sablonleképezés a munkarendelések és az értékesítési rendelések közötti adatintegrációban (Field Service – Supply Chain Management): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Munkarendelések Értékesítési rendelésekké (Field Service – Supply Chain Management): WorkOrderServiceLineUsed
 
 Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és ((msdyn_linestatus eq 690970001) vagy (msdynce_headersystemstatus eq 690970004))
 
-[![Sablonleképezés az adatintegrátorban.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Sablonleképezés a munkarendelések és az értékesítési rendelések közötti adatintegrációban (Field Service – Supply Chain Management): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Munkarendelések Értékesítési rendelésekké (Field Service – Supply Chain Management): WorkOrderProductLineEstimate
 
 Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és (msdyn_linestatus eq 690970000) és (msdynce_headersystemstatus ne 690970004) és (msdyn_allocated eq true)
 
-[![Sablonleképezés az adatintegrátorban.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Sablonleképezés a munkarendelések és az értékesítési rendelések közötti adatintegrációban (Field Service – Supply Chain Management): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Munkarendelések Értékesítési rendelésekké (Field Service – Supply Chain Management): WorkOrderProductLineUsed
 
 Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és ((msdyn_linestatus eq 690970001) vagy (msdynce_headersystemstatus eq 690970004) vagy (msdyn_allocated ne true))
 
-[![Sablonleképezés az adatintegrátorban.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Sablonleképezés a munkarendelések és az értékesítési rendelések közötti adatintegrációban (Field Service – Supply Chain Management): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

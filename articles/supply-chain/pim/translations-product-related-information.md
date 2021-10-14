@@ -1,7 +1,7 @@
 ---
 title: Termékekkel kapcsolatos GYIK
 description: Ez a témakör ismerteti, hogyan kell kezelni a termékek, termékdimenzió értékek és termékattribútumok fordításait.
-author: cvocph
+author: t-benebo
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 201853
 ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ms.search.region: global
 ms.search.industry: Product information
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29c191a3dcdb13ba54be3077d7e24706673bc14be659d39595e199fff0176930
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 24a341973b8648b1a697c8c07b6ecbc808e0e504
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758496"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570490"
 ---
 # <a name="product-related-translations-faq"></a>Termékekkel kapcsolatos GYIK
 
@@ -109,7 +109,7 @@ Vállalata különböző stílusú pólókat gyárt, és minden stílus Kicsi, K
 Termékkel dimenzióváltozat-csoporton keresztül társított dimenzióértéket a termékváltozat-csoportban tud karbantartani.   
 Dimenzióérték-csoport létrehozásához tegye a következőket:
 1.  Kattintson a **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Változatcsoportok** lehetőségre.
-2.  Válasszon a **Méretcsoportok**, **Színcsoportok** vagy **Stíluscsoportok** közül.
+2.  Válasszon a **Méret** **csoportok**, **Színcsoportok** vagy **Stíluscsoportok** közül.
 3.  Kattintson az **Új** lehetőségre, és írjon be egy csoportnevet a **Méret** **csoport**, **Színcsoport** vagy **Stíluscsoport** mezőbe. Kattintson a **Méretek**, **Színek** vagy **Stílusok** lehetőségre sorok csoportokban történő létrehozásához.
 4.  A **Méret** **csoport** sorok, **Szín** **csoport** **sorok** vagy **Stílus csoportsorok** lapon kattintson az **Új** lehetőségre, majd hozza létre a csoportokban használandó méreteket, színeket és a stílusokat.
 

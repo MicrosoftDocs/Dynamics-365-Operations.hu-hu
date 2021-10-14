@@ -3,7 +3,7 @@ title: A Commerce-csatornák pénzügyi integrálásának áttekintése
 description: Ez a témakör a Dynamics 365 Commerce szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségekről ad áttekintést.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/10/2021
+ms.date: 09/22/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2019-1-16
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 35612714f9443f1f37b744d87eda373df84aaadd
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 323d9f4816a4f622143692ead3d1871980b19b52
+ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7343287"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "7512580"
 ---
 # <a name="overview-of-fiscal-integration-for-commerce-channels"></a>A Commerce-csatornák pénzügyi integrálásának áttekintése
 
@@ -141,6 +141,7 @@ A Commerce SDK-ban jelenleg a következő adóügyi integrációs minták állna
 - [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Csehországra vonatkozóan](./emea-cze-fi-sample.md)
 - [Ellenőrzőegység integrációs mintája Svédország esetén](./emea-swe-fi-sample.md)
 - [Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Németországra vonatkozóan](./emea-deu-fi-sample.md)
+- [Adóügyi nyomtató integrációját bemutató minta Oroszországra vonatkozóan](./rus-fpi-sample.md)
 
 A következő adóügyi integrációs funkciókat szintén a költségvetési integrációs keretrendszer használatával valósítjuk meg, de ezek a funkciók a dobozból elérhetőek, és nem szerepelnek a Commerce SDK-ban:
 

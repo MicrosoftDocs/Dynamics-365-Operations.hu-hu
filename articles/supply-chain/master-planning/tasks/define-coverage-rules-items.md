@@ -1,7 +1,7 @@
 ---
 title: Cikkek fedezeti szabályainak meghatározása
-description: Ez az eljárás az USMF bemutatócéget használja.
-author: ShylaThompson
+description: Ez az eljárás bemutatja, hogyan tud fedezeti szabályokat létrehozni és egy adott cikk fedezeti beállításait felülírni. Azt is bemutatja, hogyan kell megadni az alapértelmezett készletbeállításokat.
+author: ChristianRytt
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoRes
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 13725f904c569be21bdc50c8dceea4275da1bae67415e4017842dd258f11b07a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 15b0ad9faf2bcac25dec01a7ab44f804ad2345cd
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768047"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567223"
 ---
 # <a name="define-coverage-rules-for-items"></a>Cikkek fedezeti szabályainak meghatározása
 
@@ -26,78 +26,92 @@ ms.locfileid: "6768047"
 
 Ez az eljárás az USMF bemutatócéget használja. Ez az eljárás bemutatja, hogyan tud fedezeti szabályokat létrehozni és egy adott cikk fedezeti beállításait felülírni. Azt is bemutatja, hogyan kell megadni az alapértelmezett készletbeállításokat.
 
-
 ## <a name="create-a-coverage-group"></a>Fedezetcsoport létrehozása
+
+Hozzon létre egy fedezeti csoportot a következő lépések alapján:
+
 1. Nyissa meg a **Navigációs ablak > Modulok > alaptervezés > Beállítások> Fedezeti csoportok** elemet.
-2. Kattintson az **Új** elemre.
-3. Írjon be egy értéket a **Fedezeti csoport** mezőbe.
-4. Írjon be egy értéket a **Név** mezőbe.
-5. Írjon be egy értéket a **Naptár** mezőbe. Válassza ki azt a naptárat, amely alapján az ebben a csoportban szereplő cikkek esetében az alaptervezés a feltöltési javaslatokat létrehozza.  
-6. A **Fedezet kódja** mezőben válasszon ki egy lehetőséget. Jelölje be az eljáráshoz szükséges „követelményeket”.  
-7. A **Fedezet időkorlátja (napok)** mezőben, írja be: '90'. Az ebben a csoportban szereplő cikkek esetében az alaptervezés legfeljebb 90 napos jövőbeni időszakra szóló feltöltési javaslatokat hoz létre.  
-8. A **Negatív napok** mezőbe írja be az „1” értéket.
-9. A **Pozitív napok** mezőbe írja be az „1” értéket.
-10. Bontsa ki vagy zárja be az **Egyéb** szakaszt.
-11. A **Biztonsági időtartalék napban** szakaszban a **Követelmény dátumához hozzáadott bevételezési időtartalék** mezőbe írja be az „1” értéket. Ha például a bevételezési különbözet 1 napra van állítva, és a beszerzési rendelési sor május 15-re van bevételezésre ütemezve, az alapütemezés május 16-ra számítja ki a korrigált bevételezési dátumot.  
-12. A **Követelmény dátumából levont kiadási időtartalék** mezőbe írja be az „1” értéket. Ha például a kiadási különbözet 1 napra van állítva, és az értékesítési rendelési sor május 15-re van kiszállításra ütemezve, az alapütemezés május 14-re számítja ki a korrigált kiadási dátumot.  
-13. Az **Újrarendelési időtartalék hozzáadva a cikkátfutási időhöz** mezőbe írja be az „1” értéket.
-14. Kattintson a **Mentés** gombra.
+1. Válassza az **Új** lehetőséget.
+1. Írjon be egy értéket a **Fedezeti csoport** mezőbe.
+1. Írjon be egy értéket a **Név** mezőbe.
+1. Írjon be egy értéket a **Naptár** mezőbe. Válassza ki azt a naptárat, amely alapján az ebben a csoportban szereplő cikkek esetében az alaptervezés a feltöltési javaslatokat létrehozza.  
+1. A **Fedezet kódja** mezőben válasszon ki egy lehetőséget. Jelölje be az eljáráshoz szükséges „követelményeket”.  
+1. A **Fedezet időkorlátja (napok)** mezőben, írja be: '90'. Az ebben a csoportban szereplő cikkek esetében az alaptervezés legfeljebb 90 napos jövőbeni időszakra szóló feltöltési javaslatokat hoz létre.  
+1. A **Negatív napok** mezőbe írja be az „1” értéket.
+1. A **Pozitív napok** mezőbe írja be az „1” értéket.
+1. Bontsa ki vagy zárja be az **Egyéb** szakaszt.
+1. A **Biztonsági időtartalék napban** szakaszban a **Követelmény dátumához hozzáadott bevételezési időtartalék** mezőbe írja be az „1” értéket. Ha például a bevételezési különbözet 1 napra van állítva, és a beszerzési rendelési sor május 15-re van bevételezésre ütemezve, az alapütemezés május 16-ra számítja ki a korrigált bevételezési dátumot.
+1. A **Követelmény dátumából levont kiadási időtartalék** mezőbe írja be az „1” értéket. Ha például a kiadási különbözet 1 napra van állítva, és az értékesítési rendelési sor május 15-re van kiszállításra ütemezve, az alapütemezés május 14-re számítja ki a korrigált kiadási dátumot.  
+1. Az **Újrarendelési időtartalék hozzáadva a cikkátfutási időhöz** mezőbe írja be az „1” értéket.
+1. Válassza a **Mentés** lehetőséget.
 
 ## <a name="create-a-new-product"></a>Új termék létrehozása
-1. Kattintson ide: **Navigációs ablaktábla > Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek**.
-2. Kattintson az **Új** elemre.
-3. Írjon be egy értéket a **Termékszám** mezőbe.
-4. Írjon be egy értéket a **Terméknév** mezőbe.
-5. A **Cikkmodellcsoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-6. A kívánt rekord megkeresése és kijelölése a listán
-7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-8. A **Cikkcsoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-9. A kívánt rekord megkeresése és kijelölése a listán
-10. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-11. A **Tárolási dimenzió csoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-12. A kívánt rekord megkeresése és kijelölése a listán
-13. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-14. A **Nyomon követési dimenzió csoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-15. Keresse meg és jelölje ki a kívánt rekordot a listán.
-16. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-17. Kattintson az **OK** gombra.
 
-## <a name="setup-default-order-settings"></a>Alapértelmezett rendelésbeállítások beállítása
-1. A **Művelet panelen** kattintson a **Tervezés** elemre.
-2. Kattintson a **Rendelésbeállításai** alatta az **Alapértelmezett rendelés beállításai** elemre.
-3. A **Beszerzési rendelés** alatta az **Alapértelmezett telephely** mezőbe írja be azt a telephelyet amelyet alapértelmezettként használtak a beszerzési rendelések létrehozásakor.
-4. Az **Alapértelmezett raktár** mezőjébe írja be azt a helyet, ahol a cikket tárolják.
-5. Bontsa ki vagy csukja össze a **Készlet** szakaszt.
-6. A **Többszörös** mezőbe írja be 10 értéket.
-7. A **Minimális rendelési mennyiség** mezőbe írja be a „10” értéket.
-8. A **Maximális rendelési mennyiség** mezőbe írja be a „100” értéket.
-9. A **Standard rendelési mennyiség** mezőbe írja be a „10” értéket.
-10. Adjon meg egy számot az **Beszerzési átfutási idő** mezőben.
-11. Jelölje be törölje a **Munkanapok** jelölőnégyzetet.
-12. Kattintson a **Mentés** gombra.
-13. Az **Alapértelmezett rendeléstípus** mezőben válassza ki a „Beszerzési rendelés” elemet.
-14. Kattintson a **Mentés** gombra.
-15. Zárja be a lapot. Zárja be az Alapértelmezett rendelésbeállítások oldalt.  
+Hozzon létre egy új terméket a következő lépések alapján:
+
+1. Kattintson ide: **Navigációs ablaktábla > Modulok > Termékinformációk kezelése > Termékek > Kiadott termékek**.
+1. Válassza az **Új** lehetőséget.
+1. Írjon be egy értéket a **Termékszám** mezőbe.
+1. Írjon be egy értéket a **Terméknév** mezőbe.
+1. A **Cikkmodellcsoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán.
+1. A listában válassza ki a kiválasztott sorból a hivatkozást.
+1. A **Cikkcsoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán.
+1. A listában válassza ki a kiválasztott sorból a hivatkozást.
+1. A **Tárolási dimenzió csoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán.
+1. A listában válassza ki a kiválasztott sorból a hivatkozást.
+1. A **Nyomon követési dimenzió csoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán.
+1. A listában válassza ki a kiválasztott sorból a hivatkozást.
+1. Válassza ki az **OK** lehetőséget.
+
+## <a name="set-up-default-order-settings"></a>Alapértelmezett rendelésbeállítások beállítása
+
+Adja meg az alapértelmezett rendelési beállításokat a következő lépések alapján:
+
+1. A **Műveleti ablaktáblán** válassza a **Tervezés** elemet.
+1. Kattintson a **Rendelésbeállításai** alatt válassza az **Alapértelmezett rendelés beállítások** elemet.
+1. A **Beszerzési rendelés** alatta az **Alapértelmezett telephely** mezőbe írja be azt a telephelyet amelyet alapértelmezettként használtak a beszerzési rendelések létrehozásakor.
+1. Az **Alapértelmezett raktár** mezőjébe írja be azt a helyet, ahol a cikket tárolják.
+1. Bontsa ki vagy csukja össze a **Készlet** szakaszt.
+1. A **Többszörös** mezőbe írja be 10 értéket.
+1. A **Minimális rendelési mennyiség** mezőbe írja be a „10” értéket.
+1. A **Maximális rendelési mennyiség** mezőbe írja be a „100” értéket.
+1. A **Standard rendelési mennyiség** mezőbe írja be a „10” értéket.
+1. Adjon meg egy számot az **Beszerzési átfutási idő** mezőben.
+1. Jelölje be törölje a **Munkanapok** jelölőnégyzetet.
+1. Válassza a **Mentés** lehetőséget.
+1. Az **Alapértelmezett rendeléstípus** mezőben válassza ki a „Beszerzési rendelés” elemet.
+1. Válassza a **Mentés** lehetőséget.
+1. Zárja be a lapot. Zárja be az Alapértelmezett rendelésbeállítások oldalt.  
 
 ## <a name="add-an-item-to-a-coverage-group"></a>Cikk felvétele egy fedezetcsoportba
+
+Adjon hozzá egy elemet a fedezeti csoporthoz a következő lépések alapján:
+
 1. Bontsa ki vagy zárja be a **Terv** szakaszt.
-2. A **Fedezeti csoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-3. Keresse meg a létrehozott **Fedezeti csoportot** a listában.
-4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+1. A **Fedezeti csoport** mezőben válassza a legördítő nyilat a keresőlista megnyitásához.
+1. Keresse meg a létrehozott **Fedezeti csoportot** a listában.
+1. A listában válassza ki a kiválasztott sorból a hivatkozást.
 
 ## <a name="create-item-coverage-rules"></a>Cikkfedezet szabályainak létrehozása
-1. A **Művelet panelen** kattintson a **Tervezés** elemre.
-2. A **Fedezet** területen kattintson a **Cikkfedezeti** elemre.
-3. Kattintson az **Új** elemre.
-4. Kattintson az **Általános** fülre.
-5. Jelölje be a négyzetet a fejlécben a **Fedezeticsoport** beállítások felülbírálatában.
-6. A **Fedezet időkorlátja (napok)** mezőbe, írja be: '60'. Annak ellenére, hogy a fedezeti csoport Követelményeket 90 nappal előre megtervezik, ezt a cikket 60 nappal előre fogják tervezni.  
-7. A **Negatív napok** mezőbe írja be az „2” értéket.
-8. A **Pozitív napok** mezőbe írja be az „2” értéket.
-9. Kattintson az **Átfutási idő** fülre.
-10. Jelölje be a **Vásárlás** fejlécén lévő jelölőnégyzetet.
-11. A **Beszerzés ideje** mezőbe írja be, hogy „5”.
-12. Kattintson a **Mentés** gombra.
+
+Hozzon létre cikkfedezeti-szabályokat a következő lépések alapján:
+
+1. A **Műveleti ablaktáblán** válassza a **Tervezés** elemet.
+1. A **Fedezet** területen válassza a **Cikkfedezeti** elemet.
+1. Válassza az **Új** lehetőséget.
+1. Válassza ki az **Általános** fület.
+1. Jelölje be a négyzetet a fejlécben a **Fedezeticsoport** beállítások felülbírálatában.
+1. A **Fedezet időkorlátja (napok)** mezőbe, írja be: '60'. Annak ellenére, hogy a fedezeti csoport Követelményeket 90 nappal előre megtervezik, ezt a cikket 60 nappal előre fogják tervezni.  
+1. A **Negatív napok** mezőbe írja be az „2” értéket.
+1. A **Pozitív napok** mezőbe írja be az „2” értéket.
+1. Válasza az **Átfutási idő** fület.
+1. Jelölje be a **Vásárlás** fejlécén lévő jelölőnégyzetet.
+1. A **Beszerzés ideje** mezőbe írja be, hogy „5”.
+1. Válassza a **Mentés** lehetőséget.
 
 
 

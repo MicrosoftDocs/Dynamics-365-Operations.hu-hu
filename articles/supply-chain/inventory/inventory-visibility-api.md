@@ -2,7 +2,7 @@
 title: Készletláthatóság nyilvános API-jai
 description: Ez a témakör a Készletláthatóság által biztosított nyilvános API-kat ismerteti.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 09/30/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 6dff54f54a495c2b4a7837f3a41f410d418cf12b
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.dyn365.ops.version: 10.0.22
+ms.openlocfilehash: 43fa94118c4d76e021bb635d720208d5f971db19
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474652"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592488"
 ---
 # <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
 
@@ -82,6 +82,8 @@ A Microsoft egy felhasználói felületet (UI) épített be a Power Apps rendsze
 
 A platform biztonsági tokenje a készlet láthatóság nyilvános API hívására szolgál. Emiatt az Azure AD-alkalmazás használatával létre kell hozni egy _Azure Active Directory (Azure AD) tokent_. Ezt követően az Azure AD-tokent kell ahhoz használnia, hogy a _hozzáférési tokent_ be tudja szerezni a biztonsági szolgáltatásból.
 
+A Microsoft biztosít egy gyári *Postman* jogkivonatlekérés-gyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
+
 A biztonsági szolgáltatási token megszerzéséhez kövesse az alábbi lépéseket.
 
 1. Jelentkezzen be az Azure portálra, és keresse meg a `clientId` és a `clientSecret` értékeket a Dynamics 365 Supply Chain Management alkalmazáshoz.
@@ -131,7 +133,7 @@ A biztonsági szolgáltatási token megszerzéséhez kövesse az alábbi lépés
    - A `context` érték az a LCS-környezetazonosító, ahová telepíteni szeretné a bővítményt.
    - Az összes többi értéket állítsa be a példában látható módon.
 
-1. Küldjön el egy HTTP-kérelmet, amely a következő tulajdonságokkal rendelkezik:
+1. Hozzáférési jogkivonat (`access_token`) lekérése HTTP-kérelem elküldésével, amely a következő tulajdonságokkal rendelkezik:
 
    - **URL:** `https://securityservice.operations365.dynamics.com/token`
    - **Módszer:** `POST`
@@ -148,7 +150,8 @@ A biztonsági szolgáltatási token megszerzéséhez kövesse az alábbi lépés
    }
    ```
 
-A későbbi szakaszokban a `$access_token` címet fogja használni az utolsó lépésben lekért token ábrázolására.
+> [!IMPORTANT]
+> Amikor a *Postman* kérésgyűjteményt használja a Készlet láthatósága nyilvános API-k hívására, minden egyes kéréshez hozzá kell adni egy tulajdonosi jogkivonatot. A tulajdonosi jogkivonat megkeresése érdekében válassza az **Engedélyezés** lapot a kérés URL-címe alatt, jelölje és válassza ki a **Tulajdonosi jogkivonat** típust, és másolja át az utolsó lépésben beírt hozzáférési jogkivonatot. A témakör későbbi szakaszaiban a `$access_token` elemet fogja használni az utolsó lépésben lekért token ábrázolására.
 
 ## <a name="create-on-hand-change-events"></a><a name="create-onhand-change-event"></a>Kézben lévő változtatási események létrehozása
 
@@ -508,7 +511,7 @@ A kérés törzsrészében a `dimensionDataSource` még mindig egy választható
 
 - Az `organizationId` csak egy értéket tartalmazhat, de ettől még egy tömb.
 - A `productId` egy vagy több értéket tartalmazhat. Ha ez egy üres tömb, a rendszer az összes terméket visszaküldi.
-- A `siteId` és a `locationId` particionálásra használatosak a Készletláthatóságban.
+- A `siteId` és a `locationId` particionálásra használatosak a Készletláthatóságban. Egynél több `siteId` és `locationId` értéket is megadhat az *Készleten lévő lekérdezés* kérésben. Az aktuális verzióban meg kell adnia a `siteId` és a `locationId` értékeket is.
 
 A `groupByValues` paraméternek követnie kell az indexelés konfigurációját. További információért lásd: [Termékindex-hierarchia konfigurálása](./inventory-visibility-configuration.md#index-configuration).
 

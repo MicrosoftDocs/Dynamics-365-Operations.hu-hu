@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: d8c88b742c1dccb169e47fe96a5c9d9aac35e605be685cc1a0f010826c959db5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 372bb556ec1207096a8ff3c7df8bac9b7011b5c4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712862"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574137"
 ---
 # <a name="put-to-wall---put-to-store"></a>Falhoz helyez – üzletbe helyez
 
@@ -44,7 +44,7 @@ Ha be van kapcsolva, a *Kimenő rendezés* funkció együtt használható a *Sze
 
 ## <a name="setup"></a>Beállítás
 
-Ehhez a demóhoz a szabványos Contoso-adatok és a *62*-es raktár használatos. Néhány később említett kiegészítő is használatban van.
+Ehhez a demóhoz a szabványos Contoso-adatok és a *62-es* raktár használatos. Néhány később említett kiegészítő is használatban van.
 
 ### <a name="location-type"></a>Hely típusa
 
@@ -355,7 +355,7 @@ Létre kell hoznia egy helyirányelvet a rendezés befejezését követően lét
 
 Ez a forgatókönyv szimulálja azt a helyzetet, amikor a raktár kis cikkeket tárol helyeken, és ezeket a csomagolás előtt dobozokba kell csomagolni, és a csomagolási állomás funkciói nem megfelelő. A dolgozók a kitárolási sebesség növelése érdekében egyszerre több vevőhöz és különböző címekhez tartozó rendeléseket vesznek fel. A kitárolás befejezése után a dolgozók megérkeznek a rendezési helyre, ahol a kitárolt cikkek a szükséges feltételek alapján rendezhetők a megfelelő dobozokba. Ebben a példában a szállítmányazonosító a megfelelő mező meghatározására szolgál, mivel minden szállítmányhoz más cím tartozik. Miután a rakomány minden cikkét becsomagolták és szállítmány szerint rendezték, a dobozok átkerülnek az előkészítő területre, majd egy teherautóra rakodják azokat.
 
-A forgatókönyv elkezdése előtt győződjön meg arról, hogy az összes standard raktári funkció helyesen van beállítva a raktárban. Erre a célra a *62*-es szabványos Contoso raktár használatos. A szokásos konfigurációk nem változtak a beállításban ismertetetteken kívül.
+A forgatókönyv elkezdése előtt győződjön meg arról, hogy az összes standard raktári funkció helyesen van beállítva a raktárban. Erre a célra a *62-es* szabványos Contoso raktár használatos. A szokásos konfigurációk nem változtak a beállításban ismertetetteken kívül.
 
 ### <a name="create-demand"></a>Igény létrehozása
 

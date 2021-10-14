@@ -12,14 +12,16 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-06-11
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4158fa93d9e424e796c038d0c907ea155868440bfcb79666c3e13fa997d4834b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4e5faf8e4544b2bcb58f3c578789b2bd379a27b0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774729"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572361"
 ---
 # <a name="container-packing-strategies"></a>Tárolócsomagolási stratégiák
+
+[!include [banner](../includes/banner.md)]
 
 A *konténercsomagolási stratégia* olyan stratégia, amin a tárolók közötti cikkallokációk definiálhatók. Ez a témakör bemutatja a *Csomagolás az összes nyitott tárolóba* és a *Csomagolás csak az aktuális tárolóba* stratégiák közötti különbségeket.
 

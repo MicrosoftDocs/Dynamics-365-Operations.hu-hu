@@ -1,7 +1,7 @@
 ---
 title: Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Supply Chain Management szolgáltatásból a Sales szolgáltatásba
 description: Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak a számlafejlécek és sorok közvetlen szinkronizálásához a Dynamics 365 Supply Chain Management és a Dynamics 365 Sales között.
-author: ChristianRytt
+author: Henrikan
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 9076d04e71ceae41a4fbdd09bebd2db8e9ed298c2a318a64f2fea6fb71447e5b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c2f988b4f170c027444ba7cf54a55e0bd846cedf
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736647"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571641"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Értékesítésszámla-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations Sales szolgáltatásba
 
@@ -116,11 +116,11 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
-![Sablonleképezés az adatintegrátorban.](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
+![Sablonleképezés a SalesInvoiceHeader adatintegrációjában.](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="salesinvoiceline"></a>SalesInvoiceLine
 
-![Sablonleképezés az adatintegrátorban.](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
+![Sablonleképezés a SalesInvoiceLine adatintegrációjában.](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
 
 
 

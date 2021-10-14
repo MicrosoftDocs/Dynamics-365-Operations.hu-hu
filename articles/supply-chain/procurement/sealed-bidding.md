@@ -1,22 +1,22 @@
 ---
 title: Lezárt ajánlattétel ajánlatkéréshez
 description: Ez a témakör leírja, hogyan lehet lezárt pályázatokat beállítani, hogy a szállítói ajánlatok válaszai titkosak maradjak, amíg a beszerzési személyzet fel oldja azokat.
-author: yanansong
+author: Henrikan
 ms.date: 08/02/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: yanansong
+ms.author: henrikan
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 02cbe9d6a6d157208d73ed756efae24df2a082de
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 96549b6053ba75f2d5b9a85bcd5b7feb006f0f1b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500634"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578080"
 ---
 # <a name="sealed-bidding-for-rfqs"></a>Lezárt ajánlattétel ajánlatkéréshez
 
@@ -53,7 +53,11 @@ Mielőtt elkezdené a funkció beállítását vagy használatát, győződjön 
 A Supply Chain Management titkosítási kulcsokkal védi az összes lezárt ajánlatot, és a megfelelő időpontig titokban tartja azokat. A szükséges kulcsok generálásához és kezeléséhez a Key Vault képességeit veszi igénybe. Emiatt a rendszer engedélyezéséhez be kell állítania egy kapcsolatot a Supply Chain Management és egy kulcstartó között.
 
 > [!IMPORTANT]
-> A kulcstartót egy olyan Azure-előfizetésben kell létrehozni, amely a szervezetéhez (nem pedig a Supply Chain Management alkalmazáshoz használt előfizetéshez) van létrehozva.
+> A lezárt ajánlattételhez használt kulcstartóknak a következő követelményeknek kell megfelelniük:
+>
+> - Ha fejlesztési és tesztelési célra egy tesztkörnyezetet használ, akkor külön kulcsra van szükség a tesztkörnyezethez és egy másik a termeléshez.
+> - Az egyes kulcstartókat egy olyan Azure-előfizetésben kell létrehozni, amely a szervezetéhez (nem pedig a Supply Chain Management alkalmazáshoz használt előfizetéshez) van létrehozva.
+> - Minden kulcstartót kizárólag a lezárt ajánlathoz kell használni. A lezárt ajánlat kulcstartóit más célra nem használhatja.
 
 Minden ajánlat megkapja a saját titkos kulcsát. Ez a kulcs van minden alkalommal használva, amikor egy felhasználó megtekinti, frissíti vagy feloldja az ajánlatot.
 

@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 09caa7fa8f10d1afc44bb9343550bc633b8ec99a
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: 4fd6039843be09ec706e45746d5724faa99a95e6
+ms.sourcegitcommit: 3f59b15ba7b4c3050f95f2b32f5ae6d7b96e1392
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472225"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7563061"
 ---
 # <a name="customer-management-in-stores"></a>Vevők kezelése az üzletekben
 
@@ -45,7 +45,8 @@ Az értékesítési munkatársak több címet is rögzíthetnek egy vevőhöz. A
 
 ## <a name="sync-customers-and-async-customers"></a>Szinkron vevők és Aszinkron vevők
 
-> [FONTOS] Amikor a pénztár kapcsolat nélküli üzemmódba kerül, a rendszer automatikusan aszinkron hoz létre vevőket, még akkor is, ha a vevők aszinkron létrehozási módja le van tiltva. A Commerce központ rendszergazdáinak tehát attól függetlenül, hogy Ön milyen beállításokat adott meg a szinkron és az aszinkron vevő létrehozása között, ismétlődő kötegelt feladatot kell létrehozniuk és ütemezniük a **P-feladathoz**, a **Vevők és üzleti partnerek szinkronizálása aszinkron módból** feladathoz (korábban: **Vevők és üzleti partnerek szinkronizálása aszinkron módból** feladathoz) és az **1010**-es feladathoz, hogy az aszinkron vevők szinkron vevőkké alakuljanak át a Commerce központban.
+> [!IMPORTANT]
+> Amikor a pénztár kapcsolat nélküli üzemmódba kerül, a rendszer automatikusan aszinkron hoz létre vevőket, még akkor is, ha a vevők aszinkron létrehozási módja le van tiltva. A Commerce központ rendszergazdáinak tehát attól függetlenül, hogy Ön milyen beállításokat adott meg a szinkron és az aszinkron vevő létrehozása között, ismétlődő kötegelt feladatot kell létrehozniuk és ütemezniük a **P-feladathoz**, a **Vevők és üzleti partnerek szinkronizálása aszinkron módból** feladathoz (korábban: **Vevők és üzleti partnerek szinkronizálása aszinkron módból** feladathoz) és az **1010**-es feladathoz, hogy az aszinkron vevők szinkron vevőkké alakuljanak át a Commerce központban.
 
 A Commerce rendszerben két lehetőség van vevők létrehozására: a szinkron (vagy Sync) és az aszinkron (vagy Async). Alapértelmezés szerint a vevők létrehozása szinkronban történik. Más szóval a Commerce központi felületén jönnek létre valós időben. A Szinron vevő létrehozása módja azért előnyös, mert az új vevők azonnal kereshetők a különböző csatornákon keresztül. Ennek azonban van egy hátránya is. Mivel [Commerce Data Exchange Valós idejű szolgáltatás](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) típusú hívásokat generál a Commerce központi felülete irányába, befolyásolhatja a teljesítményt, ha a rendszer sok egyidejű vevői létrehozási hívást kezdeményez.
 

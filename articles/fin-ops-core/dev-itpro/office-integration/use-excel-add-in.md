@@ -2,7 +2,7 @@
 title: Az entitásadatok megtekintése és frissítése az Excel programmal
 description: Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Excel bővítményének segítségével.
 author: jasongre
-ms.date: 01/22/2021
+ms.date: 10/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: aefebe094a0429f22a1a7038a55ab2190e41da6348447850148b8b98e082e743
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761354"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592665"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Az entitásadatok megtekintése és frissítése az Excel programmal 
 
@@ -60,9 +60,9 @@ Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne f
 
 6. A módosítások megerősítéséhez válassza az **OK**, majd az **Igen** elemet. Az Excel-bővítmény újraindul és betölti a metaadatokat.
 
-    Most már elérhető a **Terv** menügomb. Ha az Excel-bővítmény rendelkezik egy **Kisalkalmazások betöltése** gombbal, akkor valószínűleg nem a megfelelő felhasználóként jelentkezett be. További információért lásd a „Látszik a Kisalkalmazások betöltése gomb” részt a témakör [Hibaelhárítás](../office-integration/use-excel-add-in.md#troubleshooting) című szakaszában.
+    Most már elérhető a **Terv** menügomb. Ha az Excel-bővítmény rendelkezik egy **Kisalkalmazások betöltése** hivatkozással, akkor valószínűleg nem a megfelelő felhasználóként jelentkezett be. A probléma megoldásáról a [Kisalkalmazások betöltése](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) hibaelhárítási bejegyzés nyújt további tájékoztatást.
 
-7. Válassza a **Tervezés** lehetőséget. Az Excel-bővítmény lekéri az entitás metaadatait.
+7. Válassza ki a **Tervezés** lehetőséget. Az Excel-bővítmény lekéri az entitás metaadatait.
 8. Válassza a **Táblázat beszúrása** lehetőséget. Megjelenik az entitások listája. Az entitások „Név – címke” formátumban jelennek meg.
 9. Válasszon ki a listában egy entitást, például **Vevő - Vevők**, és válassza a **Tovább** elemet.
 10. Mező hozzáadásához a **Választható mezők** listáról a **Kijelölt mezők** listához, válassza ki a mezőt, és kattintson a **Hozzáadás** elemre. Alternatív megoldásként kattintson duplán a mezőre a **Választható mezők** listában.
@@ -136,7 +136,7 @@ Az egyik környezetből a munkafüzetbe beolvasott adatok átmásolhatók egy m�
 ## <a name="troubleshooting"></a>Hibaelhárítás
 Vannak bizonyos problémák, amelyek néhány egyszerű lépéssel megoldhatók.
 
-- **Látszik a Kisalkalmazások betöltése gomb.** – Ha az Excel-bővítmény rendelkezik egy **Kisalkalmazások betöltése** gombbal a bejelentkezés után, akkor valószínűleg nem a megfelelő felhasználóként jelentkezett be. A probléma megoldásához ellenőrizze, hogy a helyes felhasználónév jelenik-e meg az Excel-bővítmény a jobb felső sarkában. Ha helytelen felhasználónév jelenik meg, kattintson rá, jelentkezzen ki, majd jelentkezzen be újra.
+- **A „Kisalkalmazások betöltése” hivatkozás látható** – A problémáról a [Kisalkalmazások betöltése](../office-integration/office-integration-troubleshooting.md#issue-the-excel-add-in-loads-but-instead-of-showing-data-it-displays-load-applets-in-the-task-pane) hibaelhárítási bejegyzés nyújt további tájékoztatást. 
 - **A „Tiltott” üzenetet kapja.** – Ha a „Tiltott” üzenetet kapja, miközben az Excel-bővítmény a metaadatok betöltését végzi, a fiók, amelyik be van jelentkezve az Excel-bővítménybe, nem rendelkezik engedéllyel a megcélzott szolgáltatás, példány vagy adatbázis használatához. A probléma megoldásához ellenőrizze, hogy a helyes felhasználónév jelenik-e meg az Excel-bővítmény a jobb felső sarkában. Ha helytelen felhasználónév jelenik meg, kattintson rá, jelentkezzen ki, majd jelentkezzen be újra.
 - **Egy üres weblap jelenik meg az Excel felett.** – Ha üres weblap jelenik meg a bejelentkezési folyamat során, a fiók AD FS-t igényel, de az Excel-programnak a bővítményt futtató verziója nem elég friss a bejelentkezési párbeszédpanel betöltéséhez. A probléma megoldásához frissítse a használt Excel-verziót. Ha a vállalata a késleltetett csatornán van, az Excel verziójának frissítéséhez használja az [Office telepítési eszközt](/deployoffice/overview-office-deployment-tool) [a késleltetett csatornáról az aktuális csatornára váltáshoz](/deployoffice/overview-update-channels).
 - **Időtúllépés üzenet jelenik meg az adatváltozások közzététele közben** – Ha időtúllépés üzenetet kap, miközben egy entitásban próbálja közzétenni az adatok módosításait, érdemes megfontolni az érintett munkafüzet közzétételi kötegméretének csökkentését. Előfordulhat, hogy azok az entitások, amelyek nagyobb mennyiségű logikát váltanak ki a rekord módosításaiban, kisebb kötegekben küldendő frissítéseket igényelnek, hogy megelőzhető legyen az időtúllépés.
