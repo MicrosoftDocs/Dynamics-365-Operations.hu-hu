@@ -1,7 +1,7 @@
 ---
 title: A beszerzési irányelvek áttekintése
 description: Ez a cikk a beszerzési irányelvekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési irányelv az igénylési folyamatot szabályozó szabályok gyűjteménye. A beszerzési irányelvek lehetővé teszik a beszerzési rendszergazdáknak a beszerzési stratégia megvalósítását a szervezet stratégiai beszerzési követelményihez igazodó irányelv struktúrájának létrehozásával.
-author: kamaybac
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4fd090f6e8b91c6a75eced17fadd76f686c5441f1526736534ad1a947d80cea0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d3c35cabc9b5b8c69dbf4d597388192b4130d49
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761782"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575488"
 ---
 # <a name="purchasing-policies-overview"></a>A beszerzési irányelvek áttekintése
 
@@ -57,13 +57,13 @@ Ha egy, a 2222-es jogi személyhez tartozó alkalmazott hoz létre beszerzési i
 Az előző példában az összes beszerzési szabály meghatározása egyetlen szervezeti hierarchiában, a Vállalatok szervezeti hierarchiában történt. Egy összetett szervezet azonban több szervezeti hierarchiára is definiálhat irányelveket.  
 
 
-A Contoso egy olyan nagyvállalat, amelyben az igénylési folyamat kézben tartásához összetett beszerzési szabályokra van szükség. A Contoso két különböző szervezeti hierarchiára vonatkozóan ad meg szabályokat: Részleg és Globális beszerzés ellenőrzése.  
+A Contoso egy nagyvállalat, amelyben az igénylési folyamat kézben tartásához összetett beszerzési szabályokra van szükség. A Contoso két különböző szervezeti hierarchiára vonatkozóan ad meg szabályokat: Részleg és Globális beszerzés ellenőrzése.  
 
 Az 123 irányelv az Egyesült Királyságbeli értékesítés – Értékesítési osztályra vonatkozó Részleg szervezeti hierarchiára érvényes. Az 123 irányelvben szereplő, beszerzési igénylést ellenőrző szabály előírja, hogy minimális rendelési mennyiségre vonatkozó korlátozásokat kell bevezetni. Ebben a szabályban a **Minimális rendelési mennyiségre vonatkozó korlátozások érvényesítése** beállítás ki van választva.  
 
 A 456 irányelv az Értékesítési- és marketingosztályra vonatkozó Globális beszerzés ellenőrzése szervezeti hierarchiára érvényes. Az 456 irányelvben szereplő, beszerzési igénylést ellenőrző szabály nem írja elő, hogy minimális rendelési mennyiségre vonatkozó korlátozásokat kell bevezetni. Ebben a szabályban a **Minimális rendelési mennyiségre vonatkozó korlátozások érvényesítése** beállítás nincs kiválasztva.  
 
-Sam a Contoso egyesült királyságbeli irodájában, az „Egyesült Királyság, értékesítés – Értékesítési osztályon” dolgozik. Az osztályára érvényesek mind a Részleg, mind a Globális beszerzés ellenőrzése szervezeti hierarchiákra vonatkozó irányelvek. Amikor Sam beszerzési igénylést hoz létre, a rendszernek el kell döntenie, hogy melyik irányelvet alkalmazza. A rendszergazda úgy állítja be a beszerzési irányelvek paramétereit, hogy a beszerzési irányelvek alkalmazása a következő elsőbbségi sorrend szerint történjen:
+Sam a Contonso Egyesült királyságbeli irodájában, az Egyesült Királyságbeli értékesítés – Értékesítési osztályon dolgozik. Az osztályára érvényesek mind a Részleg, mind a Globális beszerzés ellenőrzése szervezeti hierarchiákra vonatkozó irányelvek. Amikor Sam beszerzési igénylést hoz létre, a rendszernek el kell döntenie, hogy melyik irányelvet alkalmazza. A rendszergazda úgy állítja be a beszerzési irányelvek paramétereit, hogy a beszerzési irányelvek alkalmazása a következő elsőbbségi sorrend szerint történjen:
 
 1.  Globális beszerzés ellenőrzése
 2.  Részleg

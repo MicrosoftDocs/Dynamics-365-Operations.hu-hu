@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 70ebe47997f3b5945a433150ae66de6eb41ff12acf4f4f3c8268351116bdd313
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 4c366d2f9091ee46ac3b1b6eff72e178932da18e
+ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767951"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "7592628"
 ---
 # <a name="confirm-and-transfer"></a>Megerősítés és áthelyezés
 
@@ -45,8 +45,8 @@ Csak olyan rakományok oszthatók fel, amelyek megfelelnek az összes következ�
 
 - Egy vagy több rakománysor már kitárolt mennyiséget tartalmaz.
 - A rakomány állapota kisebb, mint a betöltött.
-- Nincs rakománysoradat. (Ez az adat az azonosítótábla-konszolidáción keresztül jön létre az előkészítési helyen, és a *Megerősítés és áthelyezés* funkció nem támogatja az azonosítótábla-konszolidációt.)
-- Jelenleg nem vár készlet csomagolásra a csomagolás helyén. (A *Megerősítés és áthelyezés* funkció nem támogatja azt a készletet, amely már ki van adva a csomagolási állomásnak, de még nincs bepakolva.)
+- Nincs rakománysoradat. (Ez az adat az azonosítótábla-konszolidáción keresztül jön létre az előkészítési helyen, és a Megerősítés és áthelyezés funkció nem támogatja az azonosítótábla-konszolidációt.)
+- Jelenleg nem vár készlet csomagolásra a csomagolás helyén. (A *Megerősítés és átvitel* szolgáltatás nem támogatja a csomaghelyre kitárolt, de még nem csomagolt készletet, hacsak a csomagolt tárolókat az előkészítő helyekre nem helyezik a berakodási munka létrejöttével.)
 
 > [!NOTE]
 > Ez a funkció eltér a szállítási raktárfunkciótól, amelyet olyan raktárakban kell használni, amelyek nem tervezhetnek és nem hozhatnak létre rakományokat a kitárolás előtt, de a kitárolás után betölti a rendelkezésre álló szállítási helyet.

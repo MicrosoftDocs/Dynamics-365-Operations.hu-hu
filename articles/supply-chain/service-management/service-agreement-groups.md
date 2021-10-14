@@ -1,7 +1,7 @@
 ---
 title: Szolgáltatási szerződések áttekintése
-description: A szolgáltatásiszerződés-csoportok jól hasznosíthatók a szolgáltatási szerződések rendezésére és szűrésére.
-author: ShylaThompson
+description: Ez a témakör a szolgáltatási szerződések működésével kapcsolatban nyújt áttekintést.
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a3baaccf490af8231ca4389fa409b71f6286ff8d37bdcde78d8af95916d55cf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82cb77dbeb03a2d43ec5a6f797d11984a33b6698
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734091"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578704"
 ---
 # <a name="service-agreements-overview"></a>Szolgáltatási szerződések áttekintése
 
@@ -32,9 +32,9 @@ A **Szolgáltatáskezelési paraméterek** lap **Szolgáltatásiszerződés-csop
 
 ## <a name="example"></a>Példa
 
--  Csoportosíthatja szolgáltatási szerződéseit a kínált szolgáltatás szintje szerint. 
--  Három szerződéscsoport van a vállalatnál: arany, ezüst és bronz.
--  Új szervizfiókvezetőt alkalmaztak a vállalatánál. A szervizvezető feladata, hogy foglalkozzon minden ügyféllel az arany fokozatú szerződések csoportjában. A szerződések rekordjait az arany fokozatú szerződéscsoport segítségével kiszűrheti a többi szerződés közül, és beállíthatja, hogy ezeknél az új ügyfélkapcsolati vezető legyen a felelős személy.
+- Csoportosíthatja szolgáltatási szerződéseit a kínált szolgáltatás szintje szerint.
+- Három szerződéscsoport van a vállalatnál: arany, ezüst és bronz.
+- Új szervizfiókvezetőt alkalmaztak a vállalatánál. A szervizvezető feladata, hogy foglalkozzon minden ügyféllel az arany fokozatú szerződések csoportjában. A szerződések rekordjait az arany fokozatú szerződéscsoport segítségével kiszűrheti a többi szerződés közül, és beállíthatja, hogy ezeknél az új ügyfélkapcsolati vezető legyen a felelős személy.
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 

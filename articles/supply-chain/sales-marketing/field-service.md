@@ -1,7 +1,7 @@
 ---
 title: A Microsoft Dynamics 365 Field Service integráció áttekintése
 description: Ez a témakör a Microsoft Dynamics 365 Field Service szolgáltatással való integrációról nyújt áttekintést.
-author: ChristianRytt
+author: Henrikan
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: ecfd19cf79b9547c67b5bb90cef451d4aeab8f5ee775e50578161783e370462f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 23661bca91ccd7b7a04c763e60cfca9a99d62bfa
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761758"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566455"
 ---
 # <a name="integration-with-microsoft-dynamics-365-field-service-overview"></a>A Microsoft Dynamics 365 Field Service integráció áttekintése
 
@@ -58,7 +58,7 @@ A második fázisban a további funkciók célja, hogy a szerviztechnikusok bete
 - Supply Chain Management projektek összekapcsolva a Dynamics 365 Field Service munkarendelésekkel
 - A Dynamics 365 Field Service munkarendelések, amelyek hivatkozással rendelkeznek Supply Chain Management projektekre, alkalmazzák ezt a projektszámot az értékesítési rendelésre, amelyek így számlázhatók a projektből. 
 
-![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/FSv2overview.png)
+![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között, beleértve a készlet- és projektadatokat.](./media/FSv2overview.png)
 
 ### <a name="the-second-phase-of-the-integration-between-field-service-and-supply-chain-management-enables-synchronization-with-the-following-templates"></a>A Field Service és a Supply Chain Management közötti integráció második fázisa a következő sablonokkal történő szinkronizálást teszi lehetővé:
 - Raktárak (Supply Chain Management – Field Service) – Raktárak a Supply Chain Management és és a Field Service között [speciális lekérdezés] 

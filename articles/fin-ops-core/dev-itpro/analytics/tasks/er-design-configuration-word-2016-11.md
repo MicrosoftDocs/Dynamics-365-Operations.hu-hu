@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 83e75eee54516539be939e9547a8b637bbf2ab107ae96c07c4bbefaad75f1022
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4d4eb4fd4ea32db5aa19e9d2b1300818b3aaf6fc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768441"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594984"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>ER-konfigurációk újrafelhasználása Excel-sablonokkal Word-formátumú jelentések generálásához
 
@@ -90,7 +90,7 @@ Jelenleg az Excel-dokumentum használatos sablonként a kimenet OPENXML-formátu
 
 Most már leképezheti a **Jelentés** egyéni XML-rész elemeinek leképezését a Word-dokumentum tartalomvezérlőire.
 
-Ha megfelelő ismeretekkel rendelkezik a Word-dokumentumok tervezéséről [egyéni XML-részek](/visualstudio/vsto/custom-xml-parts-overview?view=vs-2019) elemeire leképezett [tartalomvezérlőket](/office/client-developer/word/content-controls-in-word) tartalmazó űrlapokként, akkor hajtsa végre a következő eljárás minden lépését a dokumentum létrehozásához. A további információk: [A felhasználó által Wordben kitölthető vagy kinyomtatható űrlapok létrehozása](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Ellenkező esetben hagyja ki a következő eljárást.
+Ha megfelelő ismeretekkel rendelkezik a Word-dokumentumok tervezéséről [egyéni XML-részek](/visualstudio/vsto/custom-xml-parts-overview) elemeire leképezett [tartalomvezérlőket](/office/client-developer/word/content-controls-in-word) tartalmazó űrlapokként, akkor hajtsa végre a következő eljárás minden lépését a dokumentum létrehozásához. A további információk: [A felhasználó által Wordben kitölthető vagy kinyomtatható űrlapok létrehozása](https://support.office.com/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b). Ellenkező esetben hagyja ki a következő eljárást.
 
 ## <a name="get-a-word-document-that-has-a-custom-xml-part-and-do-data-mapping"></a><a id='get-word-doc'></a>Egyéni XML-résszel rendelkező Word-dokumentum beszerzése adatleképezés végrehajtásához
 

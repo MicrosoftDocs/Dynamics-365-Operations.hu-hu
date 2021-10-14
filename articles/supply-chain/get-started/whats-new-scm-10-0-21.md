@@ -4,18 +4,18 @@ description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.21 új v
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 3f586a00943e23b458ede1470b353d7c018ba923
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 894686446436a390ec2d019672e3a2b8b0e5f5ef
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500555"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579736"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management szolgáltatásban – 10.0.21. (2021. október)
 
@@ -26,20 +26,6 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.21 változa
 - **Előzetes kiadás:** 2021. augusztus
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2021. szeptember
 - **A kiadás általános elérhetővé tétele (automatikus frissítés):** 2021. október
-
-## <a name="known-deployment-issue"></a>Ismert telepítési probléma
-
-Az IaaS 10.0.21-es kiadásának telepítésekor a következő telepítési figyelmeztetés jelenik meg:
-
-**Figyelmeztetés kódja:** 95017
-
-**Figyelmeztető üzenet:** A \[BeállításDiagnostics\] szkript végrehajtása a VM ellen sikertelen volt
-
-A telepítés a figyelmeztetés ellenére is működik. A Lifecycle Services (LCS) esetében azonban a következő ismert problémák fordulhatnak elő:
-
-- A **Környezet figyelése** lapon nem jelenik meg a **Részletes verzióinformációk megtekintése** hivatkozás, így nem fogja látni a környezetben telepített modulok adott verzióit. Az adatok nélkül a további gyorsjavítások sikertelenek lehetnek, mert a gyorsjavításokat alkalmazó folyamat ezeket az adatokat használja annak ellenőrzésére, hogy teljesülnek-e a modulverzió előfeltételei. Mivel a PEAP/Preview build nem használható termelésben, és nem alkalmazható gyorsjavítások, ennek a hatásnak minimálisnak kell lennie.
-- Az SQL Insights alatti **Környezetfigyelés** lap **Teljesítménymetrikák** és **Indexelemzés** lapjai nem jelenítnek meg adatokat. A **Környezetfigyelés** minden egyéb szolgáltatása a várakozásoknak megfelelően működik.
-- A **Teljes rendszerdiagnosztika** oldal nem lesz elérhető. Az éjszakai gyűjtőfutások állapotára és a szabályai által észlelhető problémákra vonatkozó társított adatok szintén nem fognak megjelenni.
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 

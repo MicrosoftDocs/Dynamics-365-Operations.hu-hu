@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 898ca7b33e39ec33990fecc4c3a7229620fbfddd5ce8ad14423af38047187e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf3fc5f333333b9a832ecb9c185473e476ac231d
+ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761974"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "7559509"
 ---
 # <a name="payroll-worker-address"></a>Bérlista dolgozói címe
 
@@ -36,20 +36,26 @@ Ez az entitás biztosítja az adott alkalmazott bérlista szerinti lakó- és mu
 
 | Tulajdonság</br>**Fizikai név**</br>**_Típus_** | Használat | Leírás |
 | --- | --- | --- |
-| **Város**</br>mshr_city</br>*Sztring* | Írásvédett</br>Szükséges | A címhez megadott város.   |
-| **Személyzeti szám**</br>mshr_personnelnumber</br>*Sztring* | Írásvédett</br>Szükséges | Az alkalmazott egyedi személyzeti száma.  |
-| **Ország régió**</br>mshr_countryregionid</br>*Sztring* | Írásvédett</br>Szükséges | A címhez tartozó ország/régió megadása.  |
-| **Érvényesség kezdete**</br>mshr_postaladdressvalidfrom</br>*Dátum és idő eltolása* | Írásvédett </br>Szükséges | A cím érvényességének kezdő dátuma |
-| **A címen dolgozott** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes beállításkészlet](hr-admin-integration-payroll-api-no-yes.md)* | Írásvédett</br>Szükséges | Azt jelzi, hogy a címen dolgozik-e az alkalmazott. |
-| **Megye**</br>mshr_county</br>*Sztring* | Írásvédett</br>Szükséges | A címhez megadott megye.  |
-| **Bérlista dolgozói címe azonosítója**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Szükséges</br>Rendszer által előállított | A cím egyedi azonosítására szolgáló, rendszer által generált GUID-értéke.  |
-| **Elsődleges mező**</br>mshr_primaryfield</br>*Sztring* | Írásvédett</br>Szükséges |  |
-| **Utca**</br>mshr_street</br>*Sztring* | Írásvédett</br>Szükséges | A címhez megadott utca. |
-| **Érvényesség vége:**</br>mshr_postaladdressvalidto</br>*Dátum és idő eltolása* | Írásvédett </br>Szükséges | A cím érvényességének befejező dátuma.  |
-| **Helyazonosító**</br>mshr_locationidbr>*karakterlánc* | Írásvédett <br>Szükséges | A cím azonosítója.  |
-| **Irányítószám**</br>mshr_zipcode<br>*Sztring* | Írásvédett <br>Szükséges |Az alkalmazotthoz meghatározott azonosítószám.  |
-| **A címen lakott**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes beállításkészlet](hr-admin-integration-payroll-api-no-yes.md)* | Írásvédett</br>Szükséges | Azt jelzi, hogy a címen lakott-e az alkalmazott. |
-| **Állami**</br>mshr_state</br>*Sztring* | Írásvédett</br>Szükséges | A címhez megadott állam.  |
+| **Személyzeti szám**</br>mshr_personnelnumber</br>*Sztring* | Írásvédett | Az alkalmazott egyedi személyzeti száma. |
+| **Helyazonosító**</br>mshr_locationidbr>*karakterlánc* | Írásvédett | A cím azonosítója. |
+| **A címen lakott**</br>mshr_islivedinaddressbr </br> *[mshr_NoYes beállításkészlet](hr-admin-integration-payroll-api-no-yes.md)* | Írásvédett | Ez az érték azt a címet jelzi, ahol él az alkalmazott. |
+| **A címen dolgozott** </br> mshr_isworkedinaddressbr </br>*[mshr_NoYes beállításkészlet](hr-admin-integration-payroll-api-no-yes.md)* | Írásvédett | Ez az érték azt a címet jelzi, ahol dolgozik az alkalmazott. |
+| **Ország régió**</br>mshr_countryregionid</br>*Sztring* | Írásvédett</br>Szükséges | A címhez meghatározott ország/régió. |
+| **Irányítószám**</br>mshr_zipcode<br>*Sztring* | Írásvédett | Az alkalmazotthoz meghatározott azonosítószám. |
+| **Utca**</br>mshr_street</br>*Sztring* | Írásvédett | A címhez megadott utca. |
+| **Város**</br>mshr_city</br>*Sztring* | Írásvédett | A címhez megadott város. |
+| **Állami**</br>mshr_state</br>*Sztring* | Írásvédett | A címhez meghatározott állam vagy tartomány. |
+| **Megye**</br>mshr_county</br>*Sztring* | Írásvédett | A címhez megadott megye. |
+| **Érvényesség kezdete**</br>mshr_postaladdressvalidfrom</br>*Dátum és idő eltolása* | Írásvédett | A cím érvényességének kezdő dátuma. |
+| **Érvényesség vége:**</br>mshr_postaladdressvalidto</br>*Dátum és idő eltolása* | Írásvédett | A cím érvényességének befejező dátuma. |
+| **Elsődleges mező**</br>mshr_primaryfield</br>*Sztring* | Írásvédett | Az elsődleges mező. |
+| **Bérlista dolgozói címe azonosítója**</br>mshr_payrollworkeraddressentityid</br>*GUID* | Rendszer által előállított | Rendszer által generált globálisan egyedi azonosító (GUID) érték, amely egyedileg azonosítja a címet. |
+
+## <a name="relations"></a>Kapcsolatok
+
+| Eszközérték | Kapcsolódó entitás | Navigációs tulajdonság | Gyűjtemény típusa |
+| --- | --- | --- | --- |
+| _mshr_fk_worker_id_value | [mshr_payrollemployeeentity](hr-admin-integration-payroll-api-payroll-employee.md) | mshr_FK_Worker_id | mshr_FK_PayrollEmployeeEntity_Address |
 
 ## <a name="example-query"></a>Példa lekérdezésre
 

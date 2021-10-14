@@ -10,17 +10,19 @@ ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSSh
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: ab7c23ac7cf70de08425783df231bc95a3252b332efa38d9b95fe8dd7f9508b1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 11ee4beefed02425d4650de3e896e608d3d00ef5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776728"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577960"
 ---
 # <a name="shipment-consolidation-policies"></a>Szállítmánykonszolidációs irányelvek
+
+[!include [banner](../includes/banner.md)]
 
 A szállítmánykonszolidációs irányelveket használó szállítmánykonszolidációs folyamat lehetővé teszi az automatizált szállítmánykonszolidálást a raktárba történő automatikus és manuális kiadáskor. A funkció bevezetése előtt rendelkezésre álló automatikus konszolidáció véglegesen kódolt mezőket tartalmazott, és a raktárhoz beállított **Szállítmány konszolidálása a raktárnak való kiadáskor** mezőn alapult.
 

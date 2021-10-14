@@ -2,19 +2,19 @@
 title: A Finance and Operations-alkalmazások szolgáltatásleírása
 description: Ez a témakör a Finance and Operations-alkalmazások szolgáltatásleírását tartalmazza.
 author: tomhig
-ms.date: 09/03/2021
+ms.date: 09/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 4df681641490fe3b43f4d927ad09e43007f83367
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
+ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472505"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581816"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások szolgáltatásleírása
 
@@ -28,7 +28,7 @@ A Finance and Operations-alkalmazások a vállalati erőforrás-tervezés (ERP) 
 - [Dynamics 365 Commerce](/dynamics365/commerce/)
 - [Dynamics 365 Project Operations](/dynamics365/project-operations/)
 
-Az [üzleti intelligenciával](/power-bi/fundamentals/power-bi-service-overview), az [infrastruktúrával](https://azure.microsoft.com/global-infrastructure/), a [számítási](/azure/service-fabric/service-fabric-overview) és [adatbázis-szolgáltatásokkal](/azure/azure-sql/azure-sql-iaas-vs-paas-what-is-overview) együtt ezek az alkalmazások lehetővé teszik a szervezetek számára, hogy az iparágukra jellemző és üzemeltetési üzleti folyamatok futtatását. A megvalósítási partnerük által támogatva, az ügyfelek meghatározzák az üzleti alkalmazás logikájának konfigurációját, amely leginkább megfelel az egyedi üzleti folyamatoknak. A funkciók és üzleti folyamatok a következő megoldások egyikével vagy ezek egy kombinációjával bővíthetők és terjeszthetők ki:
+Az [üzleti intelligenciával](/power-bi/fundamentals/power-bi-service-overview), az [infrastruktúrával](https://azure.microsoft.com/global-infrastructure/), a [számítási](/azure/service-fabric/service-fabric-overview) és [adatbázis-szolgáltatásokkal](https://devblogs.microsoft.com/azure-sql/running-1m-databases-on-azure-sql-for-a-large-saas-provider-microsoft-dynamics-365-and-power-platform/) együtt ezek az alkalmazások lehetővé teszik a szervezetek számára, hogy az iparágukra jellemző és üzemeltetési üzleti folyamatok futtatását. A megvalósítási partnerük által támogatva, az ügyfelek meghatározzák az üzleti alkalmazás logikájának konfigurációját, amely leginkább megfelel az egyedi üzleti folyamatoknak. A funkciók és üzleti folyamatok a következő megoldások egyikével vagy ezek egy kombinációjával bővíthetők és terjeszthetők ki:
 
 - Beépített [személyre szabási felület](personalize-user-experience.md)
 - A [Microsoft Power Platform](../../dev-itpro/power-platform/overview.md) eszközei
@@ -197,17 +197,17 @@ A következő táblázat a szolgáltatásra jellemző helyzeteket és tevékenys
 | Építse ki az összes működési példányt és nem működési példányt. | X | |
 | Ellenőrizze a telepített működési példányokat és nem működési példányokat. | | X |
 | **Szolgáltatásfrissítések** | |
-| A Microsoft szolgáltatásfrissítéseket alkalmaz a kijelölt nem működési és működési példányokhoz. | X | X |
-| Töltse le a frissítést az LCS-ből, határozza meg, fejlessze ki és tesztelje a frissítést, majd töltse vissza a kódfrissítési csomagot az LCS-ben. | | X |
-| Bővítményfrissítések működési példányra való alkalmazását kérelmezheti. | | X |
+| Szolgáltatásfrissítéseket alkalmazása a kijelölt nem működési és működési példányokhoz. | X | |
+| Szolgáltatásfrissítések manuális alkalmazása az LCS-ből tesztkörnyezeti példányokhoz. A frissítés definiálása, fejlesztése, és a kódfrissítés visszaküldése az LCS-be. | | X |
+| Bővítményfrissítések működési példányra való alkalmazásának kérelmezése és ütemezése. | | X |
 | A frissítések alkalmazása előtt hozzon létre biztonsági másolatot a kódról és az adatokról a működési példányban. | X | |
 | Hiba esetén vissza kell állítani a termelési példányt a kód és az adatok biztonsági mentésére. | X | |
 | **Adatkezelés (biztonsági másolat, visszaállítás és frissítés)** | | |
 | Készítsen biztonsági mentést az adatbázisról. | X | |
 | A magas rendelkezésre állás és a vészhelyreállítási terv meghatározása. | X | |
-| A termelési példányok adatbázisának teljesítményének figyelése. | X | X |
-| A termelési példányok adatbázisának összehangolása a teljesítmény érdekében. | X | X |
-| Kezdeményezze a működési példány adatbázisának másolását egy nem működési példányba. | | X |
+| A termelési példányok adatbázisának teljesítményének figyelése. | X | |
+| A termelési példányok adatbázisának összehangolása a teljesítmény érdekében. | X | |
+| A termelési példány adatbázisának egy időponthoz kötött frissítése nem termelési példányra. | | X |
 | **Az infrastruktúra frissítése** | | |
 | Rendszeres infrastruktúra-frissítések ütemezése. | X | |
 | **Skálázás felfelé és lefelé (felhasználók, ttárterület és példányok)** | | |
@@ -215,7 +215,7 @@ A következő táblázat a szolgáltatásra jellemző helyzeteket és tevékenys
 | Frissítse a használat változásait az LCS Előfizetés-becslési eszközében. | | X |
 | Jelentse a szolgáltatás használatát befolyásoló lényeges teljesítménybeli problémákat. | | X |
 | Az adott szolgáltatáshoz szükséges erőforrások proaktív kezelése. | X | |
-| Az esetek kivizsgálása és hibaelhárítása. | X | X |
+| Az esetek kivizsgálása és hibaelhárítása. | X | |
 | **Biztonság (felhasználói hozzáférés)** | | |
 | Adjon felhasználói hozzáférést a szolgáltatáshoz. | | X |
 | Adjon LCS-projekthozzáférést a példányok kezeléséhez és üzemeltetéséhez, amelyeket az LCS-en keresztül helyeztek üzembe. | | X |

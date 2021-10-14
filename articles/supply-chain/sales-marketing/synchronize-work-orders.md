@@ -1,7 +1,7 @@
 ---
 title: Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a Supply Chain Management alkalmazásba
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatot, amelye a Dynamics 365 Field Service munkarendeléseinek a Dynamics 365 Supply Chain Management szolgáltatásban található projektszámaival történő szinkronizálására használatos.
-author: ChristianRytt
+author: Henrikan
 ms.date: 03/12/2019
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 1b953e7649e0a88a31b40aa21de9296f4591904d7629cb12eb10f36091c33bc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f0b3214aba5882a585664030d6c1aebe34de455c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779980"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572529"
 ---
 # <a name="synchronize-work-orders-with-project-from-field-service-to-supply-chain-management"></a>Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a Supply Chain Management alkalmazásba
 
@@ -61,19 +61,19 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheader"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba): WorkOrderHeader
 
-[![Sablonleképezés az adatintegrátorban.](./media/FSWOP1.png)](./media/FSWOP1.png)
+[![Sablonleképezés az adatintegrációban, Munkarendelések projektekhez (Field Service – Supply Chain Management): WorkOrderHeader.](./media/FSWOP1.png)](./media/FSWOP1.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderheaderproject"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba): WorkOrderHeaderProject
 
-[![Sablonleképezés az adatintegrátorban.](./media/FSWOP2.png)](./media/FSWOP2.png)
+[![Sablonleképezés az adatintegrációban, Munkarendelések projektekhez (Field Service – Supply Chain Management): WorkOrderHeaderProject.](./media/FSWOP2.png)](./media/FSWOP2.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderproduct"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba): WorkOrderProduct
 
-[![Sablonleképezés az adatintegrátorban.](./media/FSWOP3.png)](./media/FSWOP3.png)
+[![Sablonleképezés az adatintegrációban, Munkarendelések projektekhez (Field Service – Supply Chain Management): WorkOrderProduct.](./media/FSWOP3.png)](./media/FSWOP3.png)
 
 ### <a name="work-orders-with-project-field-service-to-supply-chain-management-workorderservice"></a>Munkarendelések projekttel (a Field Service alkalmazásból a Supply Chain Management alkalmazásba): WorkOrderService
 
-[![Sablonleképezés az adatintegrátorban.](./media/FSWOP4.png)](./media/FSWOP4.png)
+[![Sablonleképezés az adatintegrációban, Munkarendelések projektekhez (Field Service – Supply Chain Management): WorkOrderService.](./media/FSWOP4.png)](./media/FSWOP4.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

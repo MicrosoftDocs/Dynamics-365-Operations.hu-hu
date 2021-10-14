@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b2b85f533a3318701ed08857b899cf9bdd103863
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
+ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474820"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581865"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Készletláthatóság telepítése és beállítása
 
@@ -35,63 +35,11 @@ A Készletláthatóság telepítése előtt a következő feladatokat kell elvé
 
 - Szerezzen be egy LCS megvalósítási projektet, ahol legalább egy környezetet telepítettek.
 - Győződjön meg arról, hogy a bővítmények beállításának előfeltételei teljesültek. Az előfeltételekkel kapcsolatos információkért lásd: [Add-inek áttekintése](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). A Készlet láthatósága nem igényel kettős írású csatolást.
-- A következő szükséges fájlok beszerzéséhez lépjen kapcsolatba a Készletláthatóság termékcsapattal a [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) címen:
-
-    - `InventoryServiceApplication.PackageDeployer.zip`
-    - `Inventory Visibility Integration.zip` (ha a Supply Chain Management által futtatott verzió korábbi, mint a 10.0.18)
 
 > [!NOTE]
 > A jelenleg támogatott országok és régiók közé tartozik Kanada (CCA, ECA), az Egyesült Államok (WUS, EUS), az Európai Unió (NEU, WEU), az Egyesült Királyság (SUK, WUK), Ausztrália (EAU, SEAU), Japán (EJP, WJP) és Brazília (SBR, SCUS).
 
-Ha bármilyen kérdése van ezekkel az előfeltételekkel kapcsolatban, forduljon a Készletláthatóság termékcsapatához.
-
-## <a name="set-up-dataverse"></a><a name="setup-microsoft-dataverse"></a>Dataverse beállítása
-
-A Dataverse úgy történő beállításához, hogy az Készletláthatóság csomaggal együtt használható legyen, használja a csomagtelepítő eszközt az Készletláthatóság csomag telepítéséhez. A következő alfejezetek az egyes feladatok elvégzését ismertetik.
-
-> [!NOTE]
-> Jelenleg csak az LCS használatával létrehozott Dataverse környezetek támogatottak. Ha a Dataverse környezetet más módon hozták létre (például a Power Apps admin center használatával), és ha az az Ön Supply Chain Management környezetéhez kapcsolódik, akkor először a Készletláthatóság termékcsapattal kell felvennie a kapcsolatot a hozzárendelési probléma megoldása érdekében. Ezután telepítheti a Készletláthatóság funkciót.
-
-### <a name="migrate-from-an-old-version-of-the-dataverse-solution"></a>A Dataverse megoldás régi verziójáról történő migráció
-
-Ha a Dataverse megoldás régebbi verzióját telepítette, a következő utasításokkal frissítheti verzióját. Két eset van:
-
-- **1. eset:** Ha a Dataverse oldalt manuálisan állította be a `Inventory Visibility Dataverse Solution_1_0_0_2_managed.zip` megoldás importálásával, kövesse az alábbi lépéseket:
-
-    1. Töltse le a következő három fájlt:
-
-        - `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip`
-        - `InventoryServiceBase_managed.cab`
-        - `InventoryServiceApplication.PackageDeployer.zip`
-
-    1. Kézzel importálja a `Inventory Visibility Dataverse Solution_1_0_0_3_managed.zip` és a `InventoryServiceBase_managed.cab` címeket a Dataverse rendszerbe az alábbi lépésekkel:
-
-        1. Nyissa meg a Dataverse környezete URL-címét.
-        1. Nyissa meg a **Megoldások** oldalt.
-        1. Válassza az **Importálás** lehetőséget.
-
-    1. A `InventoryServiceApplication.PackageDeployer.zip` csomag telepítéséhez használja a csomagtelepítő eszközt. Az utasításokat lásd a [csomag telepítő eszköz használata a csomag telepítéséhez](#deploy-package) című részben, a témakör későbbi részében.
-
-- **2. eset:** Ha a régebbi `.*PackageDeployer.zip` csomag telepítése előtt a Dataverse csomag telepítő eszközzel állította be a csomagot, töltse le a `InventoryServiceApplication.PackageDeployer.zip` rendszert, és végezze el a frissítést. Az utasításokat lásd a [Csomag telepítő eszköz használata a csomag telepítéséhez](#deploy-package) című szakaszban.
-
-### <a name="use-the-package-deployer-tool-to-deploy-the-package"></a><a name="deploy-package"></a>A csomagtelepítő eszközzel telepítse a csomagot
-
-1. Telepítse a fejlesztői eszközöket a következő pontban leírtak szerint: [Eszközök letöltése NuGet](/dynamics365/customerengagement/on-premises/developer/download-tools-nuget).
-1. A következő lépésekkel oldja fel a Teams csoportból letöltött `InventoryServiceApplication.PackageDeployer.zip` fájl blokkolását:
-
-    1. Jelölje ki és tartsa lenyomva (vagy kattintson a jobb gombbal a fájlra), majd válassza a **Tulajdonságok** lehetőséget.
-    1. A **Tulajdonságok** párbeszédpanelen az **Általános** lapon keresse meg a **Biztonság** részt, válassza a **Blokkolás feloldása** lehetőséget és alkalmazza a módosítást. Ha az **Általános** lapon nincs **Biztonsági** szakasz, a fájl nincs blokkolva. Ebben az esetben lépjen tovább a következő lépésre.
-
-    ![A letöltött fájl blokkolásának feloldása](media/unblock-file.png "A letöltött fájl blokkolásának feloldása")
-
-1. Nyissa ki a `InventoryServiceApplication.PackageDeployer.zip` csomagot, hogy megtalálja a következő elemeket:
-
-    - `InventoryServiceApplication`-mappa
-    - `[Content_Types].xml`-fájl
-    - `Microsoft.Dynamics.InventoryServiceApplication.PackageExtension.dll`-fájl
-
-1. Másolja az egyes elemeket a `.\Tools\PackageDeployment` könyvtárba. (Ez a könyvtár a fejlesztői eszközök telepítésekor jött létre.)
-1. Futtassa a `.\Tools\PackageDeployment\PackageDeployer.exe` rendszert, és kövesse a képernyőn megjelenő utasításokat a megoldások importálásához.
+Ha bármilyen kérdése van ezekkel az előfeltételekkel kapcsolatban, kérjük, forduljon a Készlet láthatósága termékcsapatához a [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) címen.
 
 ## <a name="install-the-inventory-visibility-add-in"></a><a name="install-add-in"></a>A Készlet láthatósága bővítmény telepítése
 
@@ -102,7 +50,11 @@ Miután regisztrált egy alkalmazást, és hozzáad egy ügyféltitkot a Azure A
 1. Bejelentkezés az [LCS](https://lcs.dynamics.com/Logon/Index) alkalmazásba.
 1. A kezdőlapon válassza ki azt a projektet, amelyben a környezet telepítve van.
 1. A projekt oldalon jelölje ki azt a környezetet, amelyben telepíteni szeretné a bővítményt.
-1. A környezet oldalon görgessen lefelé, amíg meg nem találja a **Környezeti bővítmények** részt az **Power Platform integráció** szakaszban. Itt található a Dataverse környezet neve.
+1. A környezet oldalon görgessen lefelé, amíg meg nem találja a **Környezeti bővítmények** részt az **Power Platform integráció** szakaszban. Itt található a Dataverse környezet neve. Győződjön meg arról, hogy a Dataverse-környezet nevét szeretné használni a Készlet láthatóságához.
+
+    > [!NOTE]
+    > Jelenleg csak az LCS használatával létrehozott Dataverse környezetek támogatottak. Ha a Dataverse környezetet más módon hozták létre (például a Power Apps felügyeleti központ használatával), és ha az az Ön Supply Chain Management környezetéhez kapcsolódik, akkor először a Készletláthatóság termékcsapattal kell felvennie a kapcsolatot a hozzárendelési probléma megoldása érdekében a [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) címen. Ezután telepítheti a Készletláthatóság funkciót.
+
 1. A **Környezeti bővítmények** szakaszban válassza az **Új bővítmény telepítése** lehetőséget.
 
     ![Környezeti oldal az LCS-ben](media/inventory-visibility-environment.png "Környezeti oldal az LCS-ben")
@@ -118,6 +70,7 @@ Miután regisztrált egy alkalmazást, és hozzáad egy ügyféltitkot a Azure A
 
 1. Egyetért a feltételekkel a **Feltételek** jelölőnégyzet kiválasztásával.
 1. Válassza a **Telepítés** parancsot. A bővítmény állapota a következő: **Telepítés**. Ha a telepítés befejeződött, frissítse az oldalt. Az állapotnak **Telepítettre** kell változnia.
+1. A Dataverse-ben válassza ki az **Alkalmazások** szakaszt a bal oldali navigációban, és ellenőrizze, hogy sikeresen telepítve van-e **Készlet láthatósága** Power Apps. Ha az **Alkalmazások** szakasz nem létezik, lépjen kapcsolatba a Készletláthatóság termékcsapattal az [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) címen.
 
 > [!IMPORTANT]
 > Ha több LCS-környezete van, mindegyik környezethez hozzon létre egy másik Azure AD alkalmazást. Ha ugyanazt az alkalmazásazonosítót és bérlőazonosítót használja a készlet láthatósági bővítményének különböző környezetekben való telepítéséhez, jogkivonat-probléma fog előfordulni a régebbi környezetekben. Csak az utolsó telepített bővítmény lesz érvényes.
@@ -126,13 +79,13 @@ Miután regisztrált egy alkalmazást, és hozzáad egy ügyféltitkot a Azure A
 
 A Készletláthatóság kiegészítő eltávolításához válassza az LCS oldalon az **Eltávolítás** lehetőséget. Az eltávolítási folyamat megszünteti a Készletláthatóság bővítményt, törli a bővítmény LCS-ből történő regisztrációját, és törli a Készletláthatóság bővítmény adatcache-ében tárolt ideiglenes adatokat. A Dataverse előfizetésben tárolt elsődleges készletadatok azonban nem törlődnek.
 
-A Dataverse előfizetésen tárolt készletadatok eltávolításához nyissa meg a [Power Apps](https://make.powerapps.com), válassza a navigációs sávon a **Környezet** lehetőséget, és válassza ki az LCS-környezetéhez kapcsolt Dataverse környezetet. Ezután lépjen a **Megoldások** menüpontba, és törölje a következő öt megoldást:
+A Dataverse előfizetésen tárolt készletadatok eltávolításához nyissa meg a [Power Apps](https://make.powerapps.com), válassza a navigációs sávon a **Környezet** lehetőséget, és válassza ki az LCS-környezetéhez kapcsolt Dataverse környezetet. Ezután lépjen a **Megoldások** menüpontba, és törölje a következő öt megoldást ebben a sorrendben:
 
-- Horgonymegoldás a Dynamics 365 megoldásokban a készletláthatósági alkalmazáshoz
-- Dynamics 365 FNO SCM Készletláthatósági alkalmazások megoldása
-- Készletszolgáltatás konfigurációja
-- Készletláthatóság önállóan
-- Dynamics 365 FNO SCM készletláthatóság alapmegoldás
+1. Horgonymegoldás a Dynamics 365 megoldásokban a készletláthatósági alkalmazáshoz
+1. Dynamics 365 FNO SCM Készletláthatósági alkalmazások megoldása
+1. Készletszolgáltatás konfigurációja
+1. Készletláthatóság önállóan
+1. Dynamics 365 FNO SCM készletláthatóság alapmegoldás
 
 Miután törölte ezeket a megoldásokat, a táblázatokban tárolt adatok is törlődnek.
 

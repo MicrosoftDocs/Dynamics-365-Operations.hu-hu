@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c2215ae4162616fec892a8bce6cff5d5f68e5aa1457b41d86bb540bdcff87197
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 63e26004b28f1ff6c760476933e1d524c0b40451
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747865"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569337"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -138,7 +138,7 @@ A dolgozó kiválasztja a harmadik feladatot a **Minden feladat** lapon, majd ki
 
 A közvetett tevékenységek olyan tevékenységek, amelyek nem kapcsolódnak közvetlenül a termelési rendeléshez. A közvetett tevékenységek rugalmasan meghatározhatók, a [Munkaidő és jelenlét közvetett tevékenységeinek beállítása](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance) című témakörben leírtak szerint.
 
-Például Shannon, egy dolgozó a(z) Contoso nevű vállalatnál, egy vállalati találkozón szeretne részt venni, és a találkozókat közvetett tevékenységnek tekinti. A következő két eset valamelyike érvényes:
+Például Shannon, egy dolgozó a Contoso nevű vállalatnál, egy vállalati találkozón szeretne részt venni, és a találkozókat közvetett tevékenységnek tekinti. A következő két eset valamelyike érvényes:
 
 - **Shannon egy vagy több aktív feladaton dolgozik.** Shannon kiválasztja a **Tevékenység** lehetőséget, azonosítja a tevékenységet (találkozó), és megerősíti a kijelölést. A megjelenő üzenet arról tájékoztatja, hogy már vannak folyamatban lévő feladatai. Az üzenetből Shannon eldöntheti, hogy befejezi vagy leállítja azokat a feladatokat, amelyeken dolgozik, mielőtt elmenne a találkozóra.
 - **Shannonnak nincsenek aktív feladatai.** Shannon kiválasztja a **Tevékenység** lehetőséget, azonosítja a tevékenységet (találkozó), és megerősíti a kijelölést. A rendszer regisztrálta, hogy a találkozón van.
