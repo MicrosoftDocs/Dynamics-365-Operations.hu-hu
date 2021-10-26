@@ -1194,6 +1194,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
             - name: Pénzügyi jelentések pénznemei
               href: general-ledger/financial-reporting-currency-capability.md
+            - name: Pénzügyi jelentések pénzügyi eredményeinek kiszámítása
+              href: general-ledger/retained-earnings-enhancements.md
             - name: Mérleg – pénzügyi jelentések
               href: general-ledger/balance-sheet-financial-reports.md
             - name: Pénzügyi jelentések létrehozása
@@ -1224,9 +1226,9 @@
               href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md?toc=/dynamics365/finance/toc.json
             - name: Sordefiniáló cellák módosítása
               href: ../fin-ops-core/dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/dynamics365/finance/toc.json
-            - name: A pénzügyi jelentéskészítési adatpiac alaphelyzetbe állítása
+            - name: A pénzügyi jelentéskészítési data mart alaphelyzetbe állítása
               href: ../fin-ops-core/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/dynamics365/finance/toc.json
-            - name: Mikor szükséges az adatpiac alaphelyzetbe állítása?
+            - name: Mikor szükséges a data mart alaphelyzetbe állítása?
               href: ../fin-ops-core/dev-itpro/analytics/when-to-reset-data-mart.md?toc=/dynamics365/finance/toc.json
             - name: Pénzügyi jelentéskészítés – GYIK
               href: general-ledger/financial-reporting-faq.md

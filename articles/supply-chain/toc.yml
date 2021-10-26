@@ -865,7 +865,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Az Elektronikus jelentéskészítés megoldás összetevőinek előkészítése
+                - name: Az Elektronikus jelentéskészítéskészítés megoldás összetevőinek előkészítése
                   items:
                     - name: Tartományspecifikus adatmodell kialakítása
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
@@ -1381,7 +1381,7 @@
                   items:
                     - name: Az Elektronikus jelentéskészítési keretrendszer konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Elektronikus jelentéskészítési sablonok biztonsági mentése és helyreállítása
+                    - name: Elektronikus jelentéskészítéskészítési sablonok biztonsági mentése és helyreállítása
                       items:
                         - name: ER-sablonok biztonságimentés-tárhelye
                           href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
@@ -1447,7 +1447,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Üzleti dokumentumsablon szerkezetének frissítése
                           href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Elektronikus jelentéskészítési keretrendszer API
+            - name: Elektronikus jelentéskészítéskészítési keretrendszer API
               items:
                 - name: Beépített funkciók listájának kibővítése
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
@@ -2813,6 +2813,8 @@
               href: sales-marketing/trade-allowance.md
             - name: Új kereskedelmi szerződés létrehozása
               href: sales-marketing/tasks/create-new-trade-agreement.md
+            - name: Értékesítési előzmények adattisztítási teljesítményének javításai
+              href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: Szolgáltatáskezelés
           items:
             - name: Szolgáltatáskezelés áttekintése
@@ -3711,6 +3713,8 @@
                   href: troubleshooting/rebates/cumulating-customer-.md
             - name: Értékesítés és marketing
               items:
+                - name: Értékesítésfrissítések előzményadat-tisztítási feladata sikertelen vagy teljesítményproblémákat tapasztalt
+                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
                 - name: Egy csomagolt cikk nem támogatott a vállalatközi folyamatban
                   href: troubleshooting/sales/bundle-item-intercompany-process.md
                 - name: Nem tud érvényteleníteni egy értékesítési rendeléshez kapcsolódó vállalatközi beszerzési rendelést
