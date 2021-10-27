@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 0b324891b38f851f8cce9210e3d09a26d567a291
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
+ms.openlocfilehash: b1a40db34d42c3f25e910309a9e5ef7b0e7e0361
+ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386587"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "7599375"
 ---
 # <a name="enable-customer-payment-predictions"></a>Az ügyfélfizetési előrejelzések lehetővé tétele
 
@@ -41,7 +41,7 @@ Ez a témakör azt mutatja be, hogyan lehet bekapcsolni és konfigurálni a Vev�
 2. Kapcsolja be az Ügyfél fizetési elemzés funkciót:
 
     1. Lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre.
-    2. Keresse meg az **Ügyfél fizetési elemzés adatai (előzetes verzió)** nevű funkciót.
+    2. Keresse meg az **Ügyfél fizetési elemzés adatai** nevű funkciót.
     3. Válassza az **Engedélyezés most** lehetőséget.
 
     Az Ügyfél fizetési elemzés funkciója be van kapcsolva, és készen áll a konfigurálásra.

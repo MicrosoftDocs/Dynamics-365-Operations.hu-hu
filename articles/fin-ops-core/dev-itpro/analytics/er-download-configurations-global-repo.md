@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 6923954e2d287a16425a9f823e8f8800503735ec0b3837cff764cf8d6e752039
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724417"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605331"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából
 
@@ -63,7 +63,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
     > [!NOTE]
     > Az **Importálás** gomb nem érhető el azon ER konfigurációs verziókhoz, amelyek már szerepelnek az aktuális Finance-példányban.
 
-    ![Konfigurációk tárháza oldal.](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Konfigurációs tárház lap, Konfigurációk gyorslap.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Szűrt konfigurációk importálása
 
@@ -77,7 +77,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 4. Válassza a **Konfigurációk** gyorslap **Importálás** parancsát a szűrt konfigurációknak a globális tárból a jelenlegi példányra történő letöltéséhez.
 5. Válassza a **Konfigurációk** gyorslap **Szűrő alaphelyzetbe állítása** parancsát a megadott kiválasztási feltételek törléséhez.
 
-    ![Konfigurációk tárháza oldal.](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Konfigurációs tárházoldal, Verziók gyorslap, Importálás gomb.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően. Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap. Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt. További információkért nézze meg a jelen témakörrel kapcsolatos erőforrások listáját.

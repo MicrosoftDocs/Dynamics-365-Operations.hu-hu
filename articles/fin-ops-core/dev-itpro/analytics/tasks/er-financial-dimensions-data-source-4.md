@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3bf58ec746fedb046b6014f5343d4ac92c2e6aba72882dec5b1f737aa1aaae46
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f14be560ab014224e32169b4ac97682a669249b4
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743213"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605305"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-4---run-the-report"></a>ER Pénzügyi dimenziók használata adatforrásként (4. rész – A jelentés futtatása)
 
@@ -37,16 +37,16 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 ![ER-konfigurációk oldal.](../media/er-financial-dimensions-guides-run1.png)
 5. A Dimenzió mezőben adjon meg vagy válasszon ki egy értéket.
     * Az aktuális vállalat összes dimenziójának kijelöléséhez írja be a következőt: BusinessUnit;CostCenter;Department;ItemGroup;MainAccount;Project  
-![ER-konfigurációk oldal.](../media/er-financial-dimensions-guides-run2.png)
+![Az elektronikus jelentés paraméterei kiúszó elem, Dimenzió neve legördülő lista.](../media/er-financial-dimensions-guides-run2.png)
 6. Bontsa ki a Szerepeltetni kívánt rekordok szakaszt.
 7. Kattintson a Szűrő parancsra.
 8. Jelölje ki a főkönyvi napló táblájának a sorát, és a Napló kötegszáma mezőt.
 9. A Feltétel mezőbe írja be a „00057” értéket.
 10. Kattintson az OK gombra.
 11. Kattintson az OK gombra.
-![ER-konfigurációk oldal.](../media/er-financial-dimensions-guides-run3.png)
+![Az elektronikus jelentés paraméterei kiúszó elem, Belefoglalni kívánt jelentések szakasz.](../media/er-financial-dimensions-guides-run3.png)
     * Tekintse át a létrehozott kimenetet. A kiválasztott köteg minden tranzakciójához a megfelelő dimenziók pénzügyi dimenziói jelennek meg. Futtassa a jelentést, és válasszon ki különböző dimenziókat annak a megtekintéséhez, hogy a jelentés nem függ a kiválasztott dimenziók, vagy a példányhoz konfigurált dimenziók számától.  
-![ER-konfigurációk oldal.](../media/er-financial-dimensions-guides-run4.png)
+![Az ER-konfigurációk által generált kimenet.](../media/er-financial-dimensions-guides-run4.png)
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

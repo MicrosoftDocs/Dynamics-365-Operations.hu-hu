@@ -1,8 +1,8 @@
 ---
 title: Retail értékesítési utalványok beállítása
-description: Ez a témakör az utalványokat tekinti át, és bemutatja, hogyan állíthatja be őket.
-author: scott-tucker
-ms.date: 06/04/2020
+description: Ez a témakör az utalványokat tekinti át, és bemutatja, hogyan állíthatja be őket a Dynamics 365 Commerce alkalmazásban.
+author: josaw1
+ms.date: 10/05/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.reviewer: josaw
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: bc79970528e23397b756fa15a715fba834edcc06e4522c6c35b64aede4976300
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
+ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745308"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "7603123"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Retail értékesítési utalványok beállítása
 
@@ -40,6 +40,8 @@ Utalvány létrehozásához külön hozza létre az engedményt és az utalvány
 > Miután az utalványhoz egy engedményt kapcsolt, az engedményhez kapcsolódó több mező írásvédetté válik a Commerce rendszerben, mivel ezek az utalvány beállításaitól függnek. Idetartoznak az állapotjelző és a szokásos dátumtartományok mezői.
 > 
 > Az utalvány hívásközponti csatornában való használata esetén ki kell választania az **Újraszámítás** gombot **(Értékesítés lap > Számítás > Újraszámítás)** az utalványhoz társított engedmény alkalmazásához. Ez a további lépés egy későbbi verzióban törlődni fog.
+
+Ha egy utalványt alkalmaznia kell egy értékesítési tranzakcióra a pénztárnál, használhatja az **Utalványkódot** vagy az **Utalvány vonalkódját**. Az **Utalványkód** használata érdekében az **Utalványkód hozzáadása** műveletet be kell állítani a pénztár **Tranzakció** [képernyőelrendezésében](pos-screen-layouts.md). Válassza az **Utalványkód hozzáadása** lehetőséget, és adja meg az utalványkódot. Másik lehetőségként használja az **Utalvány vonalkódját**, olvassa be a vonalkódot, vagy adja meg a vonalkódot a **Tranzakció** képernyőn numerikus billentyűzet használatával.
 
 ### <a name="limited-use-coupons"></a>Korlátozottan használható utalványok
 

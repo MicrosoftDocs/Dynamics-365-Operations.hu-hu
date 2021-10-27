@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 59b2cc1dae5774322d47f76e1213f0e8c8a0b8b244a68c113e34484c1e59b209
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 395282eb267e7e356fca6087f99c6f193741ac9d
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767218"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605157"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>A felhasználók számára a Globális tárházban tárolt formátumot lekérő formátumreferencia beállításának engedélyezése
 
@@ -34,27 +34,27 @@ Például a [Külkereskedelmi paraméterek](../../../finance/localizations/emea-
 
 Ha az aktuális Finance példány nem tartalmaz Intrastat üzleti folyamatokkal kapcsolatos ER-formátumokat, akkor ez a keresési mező üresen marad.
 
-[![Külkereskedelmi paraméterek oldal.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
+[![Külkereskedelmi paraméterek lap, üres jelentésformátum-hozzárendelési mező.](./media/ER-ExtLookup-Lookup1.gif)](./media/ER-ExtLookup-Lookup1.gif)
 
 Ha az aktuális Finance-példány tartalmaz Intrastat üzleti folyamatokkal kapcsolatos ER-formátumokat, akkor ez a keresési mező ER-formátumokat ajánl fel.
 
-[![Külkereskedelmi paraméterek oldal.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
+[![Külkereskedelmi paraméterek lap, jelentésformátum-hozzárendelési mező lehetőségekkel.](./media/ER-ExtLookup-Lookup2.png)](./media/ER-ExtLookup-Lookup2.png)
 
 Ez a keresés csak az aktuális Finance-példányba már importált ER-formátumokat kínálja fel. Ha az aktuális Financeapéldánybe ER-megoldásokat szeretne [importálni](./tasks/er-import-configuration-lifecycle-services.md), rendelkeznie kell jogosultsággal az olyan ER-keretrendszer megfelelő funkciójának futtatásához, amely támogatja az ER-formátumokat tartalmazó megoldások [életciklusát](general-electronic-reporting-manage-configuration-lifecycle.md).
 
 A Finance 10.0.9 verziójával (2020. áprilisi kiadás) kezdődően az ER-formátumkereseés felhasználói felületét (amelyet az ER-keretrendszer API-jával hoztunk létre) kiterjesztettük. Továbbra is kiválaszthatja a meglévő ER- formátumokat, amelyek a **Válassza ki a formátumkonfigurációt** gyorslapon találhatóak. Ezenkívül a kiterjesztett keresés az új lehetőséget kínál a globális tárházban (GR) való keresésre, hogy konkrét ER-formátumokat találhasson. A GR összes ER-formátuma felkínálható az **Importálás a globális tárházból** gyorslapon.
 
-[![Külkereskedelmi paraméterek oldal.](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
+[![Külkereskedelmi paraméterek lap, importálás a Globális tárház gyorslapról](./media/ER-ExtLookup-Lookup3.png)](./media/ER-ExtLookup-Lookup3.png)
 
 A **Válassza ki a formátumkonfigurációt** gyorslaphoz hasonlóan az **Importálás a globális tárházból** gyorslapról történő importálás csak azokat az ER-formátumokat jeleníti meg, amelyek arra az üzleti folyamatra vonatkoznak, amelyekhez a keresési mezőben be van jelölve az ER-formátum. Ebben a példában egy Intrastat-bevallás generálása látható. Az ER-formátum attól függően alkalmazható a vállalat esetén, amelyhez a felhasználó pillanatnyilag be van jelentkezve, hogy a vállalat országa milyen környezetben van.
 
 Amikor az **Importálás a globális tárházból** gyorslapjon kijelöl egy ER-formátumot, a program a GR-ből az aktuális Finance-példányba importálja a kiválasztott ER-formátum[konfigurációt](general-electronic-reporting.md#Configuration).
 
-[![Külkereskedelmi paraméterek oldal.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
+[![Külkereskedelmi paraméterek lap, Feldolgozási művelet megjegyzése.](./media/ER-ExtLookup-FormatImport.png)](./media/ER-ExtLookup-FormatImport.png)
 
 Ezt követően, ha az importálás sikeresen befejeződött, a program a keresési mezőben tárolja az importált értékre mutató hivatkozást. Amikor első alkalommal nyitja meg a GR-t, követnie kell a megadott hivatkozást, hogy feliratkozzon a GR-tárolóhoz való hozzáférés kezelésére használt [Regulatory Configuration Service](https://aka.ms/rcs) szolgáltatásra (RCS).
 
-[![Külkereskedelmi paraméterek oldal.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
+[![A Külkereskedelmi paraméterek lap, Hivatkozás az RCS-regisztrációra.](./media/ER-ExtLookup-RepoSignUp.png)](./media/ER-ExtLookup-RepoSignUp.png)
 
 Alapértelmezetten az **Importálás a globális tárházból** gyorslap a teljesítmény javítása érdekében a GR-tartalom alapján automatikusan létrehozott ideiglenes tárolóból származó ER-formátumok listáját mutatja. Ez akkor fordulhat elő, ha az **Importálás a globális tárházból** gyorslapot első alkalommal nyitja meg, ami több másodpercig is eltarthat.
 

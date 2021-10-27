@@ -1,8 +1,8 @@
 ---
 title: Pénzügyi konszolidáció és pénznemátváltás áttekintése
 description: Ez a témakör leírja a pénzügyi konszolidálási és devizaátváltási tranzkaciókat a főkönyvben.
-author: aprilolson
-ms.date: 07/25/2019
+author: jiwo
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-5-31
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: 0df16db842c159b4db469139a0b5463a82e3fe07b4e23f8f7cf0272caaf23602
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9ec8e6a371f08ad7eab0d133e1b71861943274e
+ms.sourcegitcommit: f76fecbc28c9a6048366e8ead70060b1f5d21a97
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748980"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "7615935"
 ---
 # <a name="financial-consolidations-and-currency-translation-overview"></a>Pénzügyi konszolidáció és pénznemátváltás áttekintése
 
@@ -182,5 +182,17 @@ Az alábbiakban néhány az konszolidációs esetet, amelyeket a Financial repor
 ## <a name="generating-consolidated-financial-statements"></a>Konszolidált pénzügyi kimutatások generálása
 További információért azzal kapcsolatosan, hogy hol generálhat konszolidált pénzügyi kimutatásokat, lásd: [Konszolidált pénzügyi kimutatások létrehozását](./generating-consolidated-financial-statements.md).
 
+## <a name="performance-enhancement-for-large-consolidations"></a>Nagy méretű konszolidációk teljesítményjavítása
+
+Előfordulhat, hogy a környezetek, amelyekben sok főkönyvi tranzakció fut, lassabban futnak, mint az optimális lenne. A probléma megoldásához be lehet állítani a felhasználó által megadott számú dátumot használó kötegek párhuzamos feldolgozását. A megoldás megfelelő működése érdekében adjon hozzá egy kiterjesztési pontot a konszolidációhoz, hogy egy dátumtartományok egy tárolóját adja vissza. Az alap implementációnak tartalmaznia kell egy dátumtartományt a konszolidáció kezdő és záró dátumához. A program ellenőrzi az alap implementációban található dátumtartományokat, hogy azok ne tartalmaznak szüneteket vagy átfedéseket. A dátumtartományok segítségével lehet párhuzamos kötegcsomagokat létrehozni minden egyes vállalathoz.
+
+A dátumtartományok számát testreszabhatja a szervezet követelményeinek megfelelően. A dátumtartományok számának testreszabásával egyszerűbbé teheti a tesztelést, és minimálisra csökkentheti a meglévő kódot, mivel nincs felosztási logika. Az egyetlen olyan új teszt, amely szükséges ahhoz, hogy ellenőrizze a kötegcsomagok létrehozását, ellenőrizze a dátumtartományok részhalmazát, annak ellenőrzésére, hogy lehet-e azokat társítani a végső kötegfeladatban. 
+
+Ez a funkció folyamat kötegelt futtatásakor javítja a főkönyv konszolidációs folyamatát. A továbbfejlesztés javítja a főkönyvi konszolidációs folyamat teljesítményét, azáltal, hogy a konszolidációt több, párhuzamosan feldolgozható feladatra osztja fel. A konszolidáció futtatásának alapértelmezett módszerében minden feladat nyolc napos főkönyvi tevékenységet dolgoz fel. Ugyanakkor egy bővítési pont lett hozzáadva, amivel testreszabhatja a létrehozott feladatok számát.
+
+A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a **Funkciókezelés** munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
+
+- **Modul:** Főkönyv
+- **Funkció neve:** Nagy méretű konszolidációk teljesítményjavítása
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

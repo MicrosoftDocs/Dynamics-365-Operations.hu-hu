@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.2
-ms.openlocfilehash: 64963348ef2cf850477d03fcb9a40d3a167c715bea86eca1d756f01f54472d5a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5b26c605bd64b8d8e5a90f4389261e8e56825111
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718551"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605371"
 ---
 # <a name="configure-country-context-dependent-er-model-mappings"></a>Az országkörnyezet-függő modell-leképezések konfigurálása
 
@@ -48,7 +48,7 @@ Az ebben a témakörben leírt lépések végrehajtásához kötelező az ER for
 
 A szükséges ER-összetevők megtervezéséhez kövesse a témakör [1. függelékének](#appendix1) lépéseit. Most megvan a **Leképezés (Általános)** modell-leképezési konfiguráció, amely tartalmazza az **1. belépési pont** meghatározásához tartozó modell-leképezést.
 
-![ER-konfigurációk oldal.](./media/RCS-Context-specific-mapping-Tree.PNG)
+![ER konfigurációs lap, formátumok a megfeleltetések konfigurációjának elsajátításához.](./media/RCS-Context-specific-mapping-Tree.PNG)
 
 ### <a name="run-the-configured-format"></a>A konfigurált formátum futtatása
 
@@ -61,7 +61,7 @@ Figyelje meg, hogy a webböngésző felajánlja a végrehajtható ER formátumma
 
 A szükséges ER-összetevők megtervezéséhez kövesse a témakör [2. függelékének](#appendix2) lépéseit. Most megvan a **Leképezés (Általános)** és **Leképezés (Általános) egyéni** modell-leképezési konfiguráció, amelyek tartalmazzák az **1. belépési pont** meghatározásához tartozó modell-leképezést.
 
-![ER-konfigurációk oldal.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
+![ER konfigurációs lap, Leképezés általános egyéni konfiguráció.](./media/RCS-Context-specific-mapping-TreeCustom.PNG)
 
 ### <a name="run-the-configured-format"></a>A konfigurált formátum futtatása
 
@@ -71,7 +71,7 @@ A szükséges ER-összetevők megtervezéséhez kövesse a témakör [2. függel
 
 Figyelje meg, hogy a kijelölt ER formátum végrehajtása sikertelen. Egy hibaüzenet arról tájékoztat, hogy a **Leképezések megismerése modellhez** és az **1. belépési pont** definícióhoz egynél több modell-leképezés létezik a **Leképezés (általános)** és **Leképezés (általános) egyéni** modell-leképezés konfigurációjában. Az üzenet azt is javasolja, hogy az egyik konfigurációt az alapértelmezett konfigurációként válassza ki.
 
-![ER-konfigurációk oldal.](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
+![ER konfigurációs lap hibaüzenettel.](./media/RCS-Context-specific-mapping-FormatRunCustomFailed.PNG)
 
 ### <a name="define-a-default-mapping-configuration"></a>Alapértelmezett leképezési konfiguráció definiálása
 
@@ -82,7 +82,7 @@ Kövesse ezeket a lépéseket a **Leképezés (általános) egyéni** modell-lek
 3.  Állítsa az **Alapértelmezett a modell-hozzárendeléshez** beállítást **Igen** értékre.
 4.  Válassza a **Mentés** lehetőséget.
 
-![ER-konfigurációk oldal.](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
+![ER konfigurációs lap, Az alapértelmezett modell-leképezés csúszka Igen értékre állítva.](./media/RCS-Context-specific-mapping-MappingsCustomDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>A konfigurált formátum futtatása
 
@@ -101,7 +101,7 @@ A szükséges ER-összetevők megtervezéséhez kövesse a témakör [3. függel
 
 Figyelje meg, hogy a **Leképezés (FR)** modell-hozzárendelési konfiguráció 1. verziója úgy van beállítva, hogy csak a **Leképezések megismerési modellje** modell ER formátumaira érvényes, amelyek a francia ország/régió környezettel rendelkező Finance vállalatokon futnak.
 
-![ER-konfigurációk oldal.](./media/RCS-Context-specific-mapping-TreeFR.PNG)
+![ER konfigurációs lap, Modell-leképezés (ER) konfiguráció.](./media/RCS-Context-specific-mapping-TreeFR.PNG)
 
 ### <a name="run-the-configured-format"></a>A konfigurált formátum futtatása
 
@@ -121,7 +121,7 @@ Hajtsa végre az alábbi lépéseket, ha alapértelmezett konfigurációként me
 3.  Állítsa az **Alapértelmezett a modell-hozzárendeléshez** beállítást **Igen** értékre.
 4.  Válassza a **Mentés** lehetőséget.
 
-![ER-konfigurációk oldal.](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
+![ER konfigurációs lap, Leképezés (FR) konfiguráció, Alapértelmezett modell-leképezés csúszka Igen értékre állítva.](./media/RCS-Context-specific-mapping-TreeFRDefault.PNG)
 
 ### <a name="run-the-configured-format"></a>A konfigurált formátum futtatása
 
@@ -276,7 +276,7 @@ Figyelje meg, hogy ez az ER-konfiguráció 1. tervezeti verziója készen áll a
 5.  Válassza a **Mentés** lehetőséget.
 6.  Zárja be a **Képlettervező** lapot.
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](./media/RCS-Context-specific-mapping-Mapping1.PNG)
+    ![ER modellleképezés tervezőlap, 1. beviteli pont definíciója.](./media/RCS-Context-specific-mapping-Mapping1.PNG)
 
 7.  Válassza a **Mentés** lehetőséget.
 8.  Zárja be a **Modell-hozzárendelési tervező** lapot.
@@ -289,12 +289,12 @@ Figyelje meg, hogy ez az ER-konfiguráció 1. tervezeti verziója készen áll a
 15. Válassza a **Mentés** lehetőséget.
 16. Zárja be a **Képlettervező** lapot.
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](./media/RCS-Context-specific-mapping-Mapping2.PNG)
+    ![ER modell-leképezés tervezőlap, 2. beviteli pont definíciója.](./media/RCS-Context-specific-mapping-Mapping2.PNG)
 
 17. Válassza a **Mentés** lehetőséget.
 18. Zárja be a **Modell-hozzárendelési tervező** lapot.
 
-    ![ER-modell-hozzárendelések oldala.](./media/RCS-Context-specific-mapping-Mappings.PNG)
+    ![ER modell-leképezések oldal beviteli pont definíciókkal.](./media/RCS-Context-specific-mapping-Mappings.PNG)
 
 19. Zárja be a **Modell-hozzárendelések** lapot.
 
@@ -369,7 +369,7 @@ Figyelje meg, hogy ez az ER-konfiguráció 1. tervezeti verziója készen áll a
 6.  Válassza a **Mentés** lehetőséget.
 7.  Zárja be a lapot.
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
+    ![ER modell-leképezés tervezőlapja, Általános funkciók 1 – egyéni képlet.](./media/RCS-Context-specific-mapping-Mapping1Custom.PNG)
 
 8.  Válassza a **Mentés** lehetőséget.
 9.  Zárja be a lapot.
@@ -380,12 +380,12 @@ Figyelje meg, hogy ez az ER-konfiguráció 1. tervezeti verziója készen áll a
 14. Válassza a **Mentés** lehetőséget.
 15. Zárja be a lapot.
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
+    ![ER modell-leképezés tervezőlapja, Általános funkciók 2 – egyéni képlet.](./media/RCS-Context-specific-mapping-Mapping2Custom.PNG)
 
 16. Válassza a **Mentés** lehetőséget.
 17. Zárja be a lapot.
 
-    ![ER-modell-hozzárendelések oldala.](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
+    ![AZ ER-modell és az adatforrás leképezési lapja a Leképezéshez (általános) a leképezés másolása.](./media/RCS-Context-specific-mapping-MappingsCustom.PNG)
 
 18. Zárja be a lapot.
 
@@ -432,7 +432,7 @@ Figyelje meg, hogy ez az ER-konfiguráció 1. tervezeti verziója készen áll a
 7.  Válassza a **Mentés** lehetőséget.
 8.  Zárja be a lapot.
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
+    ![ER modell-leképezés tervezőlapja, FR funkciók 1 – egyéni képlet.](./media/RCS-Context-specific-mapping-Mapping1FR.PNG)
 
 9.  Válassza a **Mentés** lehetőséget.
 10. Zárja be a lapot.
@@ -444,12 +444,12 @@ Figyelje meg, hogy ez az ER-konfiguráció 1. tervezeti verziója készen áll a
 16. Válassza a **Mentés** lehetőséget.
 17. Zárja be a lapot.
 
-    ![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
+    ![ER modell-leképezés tervezőlapja, FR funkciók 2 – egyéni képlet.](./media/RCS-Context-specific-mapping-Mapping2FR.PNG)
 
 18. Válassza a **Mentés** lehetőséget.
 19. Zárja be a lapot.
 
-    ![ER-modell-hozzárendelések oldala.](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
+    ![ER modell leképezése adatforráshoz lap.](./media/RCS-Context-specific-mapping-MappingsFR.PNG)
 
 20. Zárja be a lapot.
 

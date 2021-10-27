@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7e4e3322bbeb64472bdcd27f9ff571fe45ef87d1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
+ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574113"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "7599348"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Helyek konfigurálása WMS szolgáltatással rendelkező raktárban
 
@@ -33,7 +33,7 @@ Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis rakt
 2. Kattintson az **Új** elemre.
 3. Érték beírása a **Raktár** mezőbe.
 4. Írjon be egy értéket a **Név** mezőbe.
-5. Adjon meg egy értéket a **Telephely** mezőben.
+5. A **Hely** mezőben válasszon ki vagy írjon be egy létező helyértéket.
 6. Bontsa ki a **Raktár** szakaszt.
 7. Állítsa **A raktárkezelési folyamatok felhasználói hibanaplója opcióját** erre: Igen. Ezzel a beállítással lehetővé válik a speciális raktározási folyamatok futtatása a raktármunkák és mobileszközök segítségével.
 8. Zárja be a lapot.

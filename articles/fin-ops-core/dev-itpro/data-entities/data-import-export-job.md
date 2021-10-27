@@ -2,7 +2,7 @@
 title: Adatimportálási és -exportálási feladatok áttekintése
 description: Az Adatezelése munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat.
 author: peakerbl
-ms.date: 04/22/2021
+ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4f9ae06893a8247828fa4d3c2cb40b9155043c87
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
+ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
+ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404034"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "7612364"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Adatimportálási és -exportálási feladatok áttekintése
 
@@ -198,16 +198,10 @@ A tisztítási folyamat ütemezésekor a következő paramétereket kell megadni
 > [!NOTE]
 > Ha az előkészítési táblák rekordjait nem teljes mértékben tisztították meg, győződjön meg arról, hogy az tisztítási feladat futtatása ismétlődő ütemezésű. A fentieknek megfelelően a tisztítási művelet során a feladat csak annyi végrehajtási azonosítót tisztít meg, amennyi a megadott maximum órán belül lehetséges. Ha folytatni szeretné a fennmaradó előkészítési rekordok tisztítását, akkor a feladatnak rendszeresen futnia kell.
 
-## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Feladatelőzmények törlése és archiválása (előzetes verzióként érhető el a 39-es platformfrissítésben vagy a 10.0.15 verzióban)
+## <a name="job-history-clean-up-and-archival"></a>Feladatelőzmények tisztítása és archiválása 
 A feladat előzmények törlése és archiválása funkció felülírja a karbantartás funkció korábbi verzióit. Ez a szakasz ezeket az új képességeket fogja elmagyarázni.
 
-A karbantartás funkció egyik fő változtatása a rendszer kötegelt munkájának használata a előzmények törlésére. A rendszer kötegelt feladatának használata lehetővé teszi a Finance and Operations alkalmazások számára, hogy amikor a rendszer készen áll, automatikusan ütemezze és futtassa a karbantartási kötegelt feladatot. A kötegelt feladat manuális ütemezésére már nincs szükség. Ebben az alapértelmezett végrehajtási módban a kötegelt feladat éjféltől óránként indul, és a legutóbbi 7 nap végrehajtási előzményeit fogja megtartani. A program archiválja a kiürített előzményeket a jövőbeli visszakeresés céljából.
-
-> [!NOTE]
-> Mivel ez a funkció előzetes verziójú, a rendszer kötegelt feladata nem törli a végrehajtási előzményeket mindaddig, amíg az nincs engedélyezve a DMFEnableExecutionHistoryCleanupSystemJob tesztfeladattal. Ha a funkció egy későbbi verzióban általánosan elérhető lesz, akkor ez a tesztművelet nem kötelező, és, amikor a rendszer készen áll a kötegelt feladat megkezdi a törlést és archiválást, a fent ismertetett ütemezés szerint. 
-
-> [!NOTE]
-> A jövőbeli verziókban a karbantartási funkciók korábbi verziói el lesznek távolítva a Finance and Operations alkalmazásokból.
+A karbantartás funkció egyik fő változtatása a rendszer kötegelt munkájának használata a előzmények törlésére. A rendszer kötegelt feladatának használata lehetővé teszi a Finance and Operations alkalmazások számára, hogy amikor a rendszer készen áll, automatikusan ütemezze és futtassa a karbantartási kötegelt feladatot. A kötegelt feladat manuális ütemezésére már nincs szükség. Ebben az alapértelmezett végrehajtási módban a kötegelt feladat éjféltől óránként indul, és a legutóbbi 7 nap végrehajtási előzményeit fogja megtartani. A program archiválja a kiürített előzményeket a jövőbeli visszakeresés céljából. A 10.0.20-as verziótól kezdve ez a funkció mindig be van kapcsolva.
 
 A karbantartási folyamat második változása a törölt végrehajtási előzmények archiválása. A karbantartási feladat archiválja a törölt rekordokat a blob-tárolóba amelyet a DIXF használ a rendszeres integrációhoz. Az archivált fájl DIXF-csomagformátumú lesz, és 7 napig elérhető lesz a blobban, és ekkor azt le lehet tölteni. Az archivált fájl alapértelmezett megtartási időtartama 7 nap, ami legfeljebb 90 napra módosítható a paraméterekben.
 

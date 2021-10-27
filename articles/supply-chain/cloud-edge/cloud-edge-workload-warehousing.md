@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c3f703e39e5e9d475dcb4f96dfb400a961ae2dcf
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
+ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500427"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641160"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -171,7 +171,8 @@ A következő raktárkezelési funkciók jelenleg nem támogatottak a skálázá
 - Feldolgozás negatív aktuális készlettel.
 - Raktári munka feldolgozása szállítmánylevelekkel.
 - Raktári munka feldolgozása anyagkezelési/raktárautomatizálással.
-- Az alaptermék adatképének használata (például a Warehouse Management mobilalkalmazásban).
+- Alaptermék adatképe (például a Warehouse Management mobilalkalmazásban).
+- Vállalatközi adatmegosztás termékek számára.
 
 > [!WARNING]
 > Bizonyos raktári funkciók nem érhetők el az olyan raktáraknál, ahol a raktárkezelési terhelések egy skálázási egységen futnak, és a központ és a skálázási egység munkaterhelés esetén sem támogatott.
@@ -188,7 +189,6 @@ A következő táblázat bemutatja, hogy mely kimenő funkciók, és hol támoga
 |--------------------------------------------------------------|-----|------------------------------|
 | Forrásdokumentum feldolgozása                                   | Igen | Nincs |
 | Rakomány és szállításkezelési folyamatok feldolgozása                | Igen, de csak a rakománytervezési folyamatok. A szállításkezelési folyamatok feldolgozása nem támogatott  | Nincs |
-| Partraszállási költség és úton lévő áruk fogadása                                         | Igen | Nincs |
 | Kiadás raktárba                                         | Igen | Nincs |
 | Tervezett áttárolás                                        | Nincs  | Nincs |
 | Szállítmánykonszolidáció                                       | Igen, a rakománytervezés használata esetén | Igen |
@@ -222,9 +222,10 @@ A következő táblázat bemutatja, hogy mely bejövő funkciók, és hol támog
 
 | Feldolgozás                                                          | Központ | Raktári végrehajtási számítási feladat skálázási egységeken<BR>*(Az „Igen” jelölésű cikkek csak raktári rendelésekre vonatkoznak)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Forrásdokumentum&nbsp;feldolgozása                             | Igen | Nincs |
-| Rakomány és szállításkezelési folyamatok feldolgozása                    | Igen | Nincs |
-| Beérkező szállítmány megerősítése                                    | Igen | Nincs |
+| Forrásdokumentum&nbsp;feldolgozása                             | Igen | Nem |
+| Rakomány és szállításkezelési folyamatok feldolgozása                    | Igen | Nem |
+| Partraszállási költség és úton lévő áruk fogadása                       | Igen | Nem |
+| Beérkező szállítmány megerősítése                                    | Igen | Nem |
 | Beszerzési rendelés kiadása a raktárba (raktári rendelés feldolgozása) | Igen | Nincs |
 | Raktári rendelési sorok visszavonása<p>Ne feledje, hogy ez csak akkor támogatott, ha a sorhoz nem történt regisztráció</p> | Igen | Nincs |
 | Beszerzési rendelés – cikk bevételezése és eltárolása                       | <p>Igen,&nbsp;ha&nbsp;nincs&nbsp;raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, ha a beszerzési rendelés nem része egy <i>rakománynak</i></p> |

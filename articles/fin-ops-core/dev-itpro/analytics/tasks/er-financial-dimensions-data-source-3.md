@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 548eec45739a52d4eb168a80660540196225b2ed482d2104a4cd0d00503109dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c854e9d30006dfa2deed63983a3a6b67f6ae9717
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773788"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605185"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-3---design-the-report"></a>ER Pénzügyi dimenziók használata adatforrásként (3. rész – A jelentés megtervezése)
 
@@ -92,7 +92,7 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 59. Kattintson az Attribútum hozzáadása lehetőségre.
 60. A Név mezőbe írja be a következőt: „Leír.”.
 61. Kattintson az OK gombra.
-![ER-művelettervező oldal.](../media/er-financial-dimensions-guides-format1.png)
+![Formátumtervező oldal fája.](../media/er-financial-dimensions-guides-format1.png)
 
 ## <a name="map-report-elements-to-data-sources"></a>Rendelje hozzá a jelentés elemeit az adatforrásokhoz
 1. Kattintson a Hozzárendelés fülre.
@@ -141,7 +141,7 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 44. Kattintson a Kötés gombra.
 45. Kattintson a Mentés gombra.
 46. Zárja be a lapot.
-![ER-művelettervező oldal.](../media/er-financial-dimensions-guides-format2.png)
+![Formátumtervező oldal, jelentéselemek leképezése adatforrásokhoz.](../media/er-financial-dimensions-guides-format2.png)
 
 
 

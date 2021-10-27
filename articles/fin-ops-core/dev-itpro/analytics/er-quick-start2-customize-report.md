@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2ec7f5bcf9f01512d22f502a4b512f2919b3caf348eb1f5c4365238d6fd3f476
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770020"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605230"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>ER-formátum módosítása egyéni elektronikus dokumentum generálásához
 
@@ -160,7 +160,7 @@ Ha a szabvány ER-konfigurációkat a Microsoft Dynamics 365 Finance jelenlegi p
     - **Kifizetési modell leképezés 1611** – Ez a konfiguráció tartalmazza a [modell-leképezés](general-electronic-reporting.md#data-model-and-model-mapping-components) összetevőt, amely leírja, hogy az adatmodell milyen módon van kitöltve az alkalmazási adatokkal futási időben.
     - **BACS (UK)** – Ez a konfiguráció tartalmazza az ER-összetevők [formátum](general-electronic-reporting.md#FormatComponentOutbound) és formátumleképezés ER-összetevőit. A formátum összetevő meghatározza a jelentés elrendezését. A formátumleképezési összetevő tartalmazza a modell-adatforrást, és meghatározza, hogy a jelentés elrendezését milyen módon kell kitölteni ennek az adatforrásnak a használatával futásidőben.
 
-![Konfigurációs oldal.](./media/er-quick-start2-imported-solution1.png)
+![Konfigurációs lap a fában elérhető megadott ER-konfigurációkkal.](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a>Szállítói fizetés előkészítése feldolgozásra
 
@@ -222,7 +222,7 @@ Az elektronikus fizetési módot úgy kell konfigurálni, hogy az az importált 
 4. Adja meg a **Fájlformátumok** gyorslap **Általános elektronikus export formátum** beállítását **Igen** értékre.
 5. Az **Exportálási formátum konfigurálása** mezőben válassza ki az **BACS (UK)** formátumkonfigurációt.
 
-    ![Fizetési módok – szállítók oldal.](./media/er-quick-start2-method-of-payment1.png)
+    ![Fizetési módok – a szállítók számára az elektronikus fizetési módok beállítására használt lap, amely szabványos formátumban feldolgozza a szállítói kifizetéseket.](./media/er-quick-start2-method-of-payment1.png)
 
 6. Válassza a **Mentés** lehetőséget.
 
@@ -273,7 +273,7 @@ Ebben az esetben a Litware, Inc. képviselőjeként létre kell hozni (származt
 
 A **BACS (UK egyéni)** ER-formátum konfigurációjának 1.1.1-es verziója jön létre. Ez a verzió **Piszkozat** [állapottal](general-electronic-reporting.md#component-versioning) rendelkezik, és szerkeszthető. Az egyéni ER-formátum jelenlegi tartalma megegyezik a Microsoft által biztosított formátum tartalmával.
 
-![Konfigurációs oldal.](./media/er-quick-start2-derived-format-configuration1.png)
+![Konfigurációk oldal a BACS (UK egyéni) ER-formátum konfigurációjának 1.1.1-es verziójával.](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a>Egyéni formátum szerkesztése
 
@@ -349,7 +349,7 @@ Az elektronikus fizetési módot úgy kell konfigurálni, hogy a rendszer a szá
 4. Adja meg a **Fájlformátum** gyorslap **Általános elektronikus export formátum** beállítását **Igen** értékre.
 5. Az **Exportálási formátum konfigurálása** mezőben válassza ki az **BACS (UK egyéni)** formátumkonfigurációt.
 
-    ![Fizetési módok – szállítók oldal.](./media/er-quick-start2-method-of-payment2.png)
+    ![Fizetési módok – a szállítók számára az elektronikus fizetési módok beállítására használt lap, amely egyéni formátumban feldolgozza a szállítói kifizetéseket.](./media/er-quick-start2-method-of-payment2.png)
 
 6. Válassza a **Mentés** lehetőséget.
 
@@ -378,7 +378,7 @@ Az elektronikus fizetési módot úgy kell konfigurálni, hogy a rendszer a szá
 
         Figyelje meg, hogy az egyéni ER-formátum struktúrájával összhangban a létrehozott fájl kifizetési sora most azzal a SWIFT-kóddal [kezdődik](#PositionSWIFTCode), amelyet azon szállító bankszámláján [rögzítettek](#DefineSWIFTCode), amelynek a kifizetését már feldolgozták.
 
-        ![Fizetési fájl TXT-formátumban.](./media/er-quick-start2-payment-file2.png)
+        ![A szállítói kifizetés feldolgozásához használt TXT formátumú kifizetési fájl](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a>A szabvány ER-formátumkonfigurációk új verzióinak importálása
 
@@ -395,7 +395,7 @@ Ha az ER-konfigurációk új verzióit szeretné hozzáadni az aktuális Finance
 5. A **Verziók** gyorslapon válassza ki a kijelölt ER-formátumkonfiguráció **3.3**-es verzióját.
 6. Kattintson az **Importálás** lehetőségre a kiválasztott verzió Globális tárból a jelenlegi Finance and Operations példányba történő letöltéséhez.
 
-![Konfigurációk tárháza oldal.](./media/er-quick-start2-import-solution2.png)
+![Konfigurációs tárházoldal, Verziók gyorslap, Importálás gomb.](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > Ha nem sikerül elérnie a [globális adattárat](er-download-configurations-global-repo.md), akkor lehetősége van ehelyett [letölteni konfigurációkat](download-electronic-reporting-configuration-lcs.md) a Lifecycle Services (LCS) szolgáltatásból.
@@ -507,7 +507,7 @@ A 3.3-as verziójú **BACS (UK)** formátum új funkcióinak a testreszabásába
 
         Figyelje meg, hogy a létrehozott fájl kifizetési sora azzal a SWIFT-kóddal kezdődik, amelyet azon szállító bankszámláján rögzítettek, amelynek a kifizetését már feldolgozták.
 
-        ![Fizetési fájl TXT-formátumban.](./media/er-quick-start2-payment-file3.png)
+        ![A új szállítói kifizetés új alapra helyezett ER formátummal történő feldolgozásához használt TXT formátumú kifizetési fájl.](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>További erőforrások
 
