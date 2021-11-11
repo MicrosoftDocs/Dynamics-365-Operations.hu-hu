@@ -1,7 +1,7 @@
 ---
 title: Tárgyi eszközök kezdőlap
-description: A tárgyi eszközök egy magánszemély vagy szervezet által birtokolt értéktárgyak. Ezek az értéktárgyak lehetnek épületek, járművek, földterületek vagy felszerelések.
-author: ShylaThompson
+description: Ebben a témakörben olyan forrásokat talál, amelyek segítséget nyújtanak a Microsoft Dynamics 365 Finance Tárgyi eszközök funkciójának használatához.
+author: moaamer
 ms.date: 08/31/2017
 ms.topic: index-page
 ms.prod: ''
@@ -14,21 +14,21 @@ ms.custom:
 - intro-internal
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
-ms.author: roschlom
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c483073c924a9a881a3d2668d41614703046f718746f5f439accc3646f6f822
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c1a31273e16275750594ef8d9b99f9a4cd2222ef
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753552"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674851"
 ---
 # <a name="fixed-assets-home-page"></a>Tárgyi eszközök kezdőlap
 
 [!include [banner](../includes/banner.md)]
 
-A tárgyi eszközök egy magánszemély vagy szervezet által birtokolt értéktárgyak. Ezek az értéktárgyak lehetnek épületek, járművek, földterületek vagy felszerelések. 
+Ebben a témakörben olyan forrásokat talál, amelyek segítséget nyújtanak a Microsoft Dynamics 365 Finance Tárgyi eszközök funkciójának használatához. A tárgyi eszközök egy magánszemély vagy szervezet által birtokolt értéktárgyak. Ezek az értéktárgyak lehetnek épületek, járművek, földterületek vagy felszerelések. 
 
 A tárgyi eszközök beszerzési adatainak beállítása és rögzítése után lehetőség van az értékcsökkenésük elszámolására, valamint az értékcsökkenést meghatározó tőkésítési küszöb beállítására. Kiszámítható a tárgyi eszközök kiigazítása, végül elvégezhető az eszközök kivezetése. Ha a tárgyi eszközöket a főkönyvben tartja nyilván, akkor megtekintheti az összes tárgyi eszköz aktuális értékét. A tárgyi eszközök kezelésével kapcsolatos módszereknek meg kell felelniük a nemzetközi könyvelési szabványoknak, illetve az egyes országokban/régiókban érvényes könyvelési jogszabályoknak is. A követelmények a tárgyi eszközök beszerzési és kivezetési tranzakcióinak a rögzítésével, értékcsökkenésével, élettartamával, felértékelésével és leértékelésével kapcsolatos szabályokat tartalmazhatnak. A Tárgyi eszközök szolgáltatásban számos megtalálható e szabványok és szabályok közül.
 

@@ -74,12 +74,12 @@
                   items:
                     - name: Újdonságok és változások a Supply Chain Management kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Supply Chain Management 10.0.23
+                      href: get-started/whats-new-scm-10-0-23.md
                     - name: Supply Chain Management 10.0.22 (2021. november)
                       href: get-started/whats-new-scm-10-0-22.md
                     - name: Supply Chain Management 10.0.21 (2021. október)
                       href: get-started/whats-new-scm-10-0-21.md
-                    - name: Supply Chain Management 10.0.20 (2021. augusztus)
-                      href: get-started/whats-new-scm-10-0-20.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -1659,6 +1659,8 @@
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: A Tervezési optimalizálás által használt dátum- és időparaméterek
+                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Biztonsági határok
                   href: master-planning/planning-optimization/safety-margins.md
                 - name: Késés tűréshatára (negatív napok)
@@ -1885,6 +1887,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Globális címjegyzék konfigurálása
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Címbeállítás
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Címjegyzékek GYIK
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Címjegyzékek konfigurálása
@@ -2427,18 +2431,6 @@
                       href: production-control/release-production-orders.md
                     - name: Termelési rendelések jelentése befejezettként
                       href: production-control/report-production-orders-as-finished.md
-                    - name: A termelési üzem végrehajtási felületének beállítása és használata
-                      items:
-                        - name: A termelési üzem végrehajtási felületének konfigurálása
-                          href: production-control/production-floor-execution-configure.md
-                        - name: A termelési üzem végrehajtási felületének tervezése
-                          href: production-control/production-floor-execution-tabs.md
-                        - name: A termelési üzem végrehajtási felületének futtatására szolgáló eszköz beállítása
-                          href: production-control/production-floor-execution-setup.md
-                        - name: A termelési üzem végrehajtási felületének használata dolgozók számára
-                          href: production-control/production-floor-execution-use.md
-                        - name: A termelési üzem végrehajtási felületének kialakítása
-                          href: production-control/production-floor-execution-styles.md
                     - name: Feladatkártya konfigurálása az eszközökhöz
                       href: production-control/config-job-card-device.md
                     - name: Jelentés befejezettként a feladatkártya-eszközből
@@ -2645,6 +2637,18 @@
                       href: production-control/consumption.md
                     - name: Termelés feladása
                       href: cost-management/production-posting.md
+            - name: A termelési üzem végrehajtási felületének beállítása és használata
+              items:
+                - name: A termelési üzem végrehajtási felületének konfigurálása
+                  href: production-control/production-floor-execution-configure.md
+                - name: A termelési üzem végrehajtási felületének tervezése
+                  href: production-control/production-floor-execution-tabs.md
+                - name: A termelési üzem végrehajtási felületének futtatására szolgáló eszköz beállítása
+                  href: production-control/production-floor-execution-setup.md
+                - name: A termelési üzem végrehajtási felületének használata dolgozók számára
+                  href: production-control/production-floor-execution-use.md
+                - name: A termelési üzem végrehajtási felületének kialakítása
+                  href: production-control/production-floor-execution-styles.md
         - name: Visszatérítés-kezelés
           items:
             - name: Visszatérítés-kezelő modul áttekintése
@@ -3391,6 +3395,10 @@
                       href: warehousing/configure-mobile-devices-warehouse.md
                     - name: A Warehouse Management mobilalkalmazás lépéscímeinek és utasításainak testreszabása
                       href: warehousing/mobile-app-titles-instructions.md
+                    - name: Előléptetett mezők konfigurálása a mobileszközön használt lépésekhez
+                      href: warehousing/warehouse-app-promoted-fields.md
+                    - name: Elterelések konfigurálása a mobileszközök menüelemeinek lépéseihez
+                      href: warehousing/warehouse-app-detours.md
                     - name: Azonosítótábla-bevételezés a Warehouse Management mobilalkalmazás használatával
                       href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
                     - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
@@ -3409,9 +3417,11 @@
                       href: warehousing/pick-oldest-batch.md
                 - name: Globális mobileszköz-paraméterek
                   href: warehousing/mobile-device-parameters.md
+                - name: Mobileszköz felhasználói fiókjai
+                  href: warehousing/mobile-device-work-users.md
                 - name: Mobileszköz felhasználói beállításai
                   href: warehousing/mobile-device-user-settings.md
-                - name: Raktározási alkalmazás eseményeinek feldolgozása
+                - name: Raktári alkalmazás eseményeinek feldolgozása
                   href: warehousing/warehouse-app-events.md
                 - name: Raktári mobilfolyamatok kiterjesztése
                   items:
@@ -3737,6 +3747,12 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Raktárkezelés
               items:
+                - name: Warehouse Mobile App
+                  items:
+                    - name: Nem található a tanúsítvány elérési útjának megbízhatósági kapcsolatok alapja az alkalmazáskapcsolat beállításakor
+                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
+                    - name: Nem található a tanúsítvány elérési útjának megbízhatósági kapcsolatok alapja a WMS-be történő frissítéskor és migráláskor
+                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: A kötegszám automatikus foglalási kérésekor még a rendelkezésre álló készlet is megjelenik.
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Befejezetlen feltöltési munka miatt nem oldható fel a kitárolási munka zárolása.
@@ -3747,8 +3763,6 @@
                   href: troubleshooting/warehousing/cant-move-license-plate.md
                 - name: 'Nem tudja áthelyezni a készletet olyan helyre, amely azonosítótábla-vezérelt.'
                   href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
-                - name: Nem található a tanúsítvány elérési útjának megbízhatósági kapcsolatok alapja az alkalmazáskapcsolat beállításakor
-                  href: troubleshooting/warehousing/certification-path-app-connection-error.md
                 - name: A fürtprofil nem található.
                   href: troubleshooting/warehousing/cluster-profile-not-found-error.md
                 - name: A szállítólevél javítása nem feldolgozható.
@@ -3819,8 +3833,6 @@
                   href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
                 - name: Egy értékesítési rendelés sorában nem lehet készletfoglalást visszavonni
                   href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
-                - name: Nem található a tanúsítvány elérési útjának megbízhatósági kapcsolatok alapja a WMS-be történő frissítéskor és migráláskor
-                  href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
                 - name: 'Nem erősítheti meg a szállítmányt, mert az ügyfél várakoztatott'
                   href: troubleshooting/warehousing/customer-is-on-hold.md
                 - name: 'Nem erősítheti meg a szállítmányt, mert a rakománysorok mennyisége nulla'

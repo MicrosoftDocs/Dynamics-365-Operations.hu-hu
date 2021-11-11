@@ -74,12 +74,12 @@
                   items:
                     - name: Újdonságok és változások a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
+                    - name: Finance 10.0.23
+                      href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (2021. november)
                       href: get-started/whats-new-changed-10-0-22.md
                     - name: Finance 10.0.21 (2021. október)
                       href: get-started/whats-new-changed-10-0-21.md
-                    - name: Finance 10.0.20 (2021. augusztus)
-                      href: get-started/whats-new-changed-10-0-20.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -240,6 +240,10 @@
                   href: accounts-payable/auto-vendr-invc-process.md
                 - name: A szállítói számla automatizálásának beállítási lehetőségei
                   href: accounts-payable/vnd-invoice-set-up-options.md
+                - name: Előlegek automatikus alkalmazása a szállítói számlákra – áttekintés
+                  href: accounts-payable/apply-prepymnts-overview.md
+                - name: Számlasorok létrehozása a szállítói számlák importálásakor
+                  href: accounts-payable/auto-create-invc-lines-at-import.md
                 - name: Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugtasorok egyeztetése
                   href: accounts-payable/submit-invoice-workflow-automatically.md
                 - name: Szállítói számlák automatizálási eredményeinek megtekintése
@@ -272,6 +276,8 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Szállítói feladási profilok
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Szállítóiszámla-dátumok
+              href: accounts-payable/vendor-invoice-dates.md
             - name: A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Mobilos számlajóváhagyások
@@ -990,6 +996,8 @@
                   href: general-ledger/tasks/create-main-account.md
                 - name: Számlatükör tervezése
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: Helyi számlatükör tervezése
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: Kiegyenlítési tranzakciók a főkönyvi számlák között
                   href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
                 - name: Főkönyvi számlaalias beállítása
@@ -1104,6 +1112,8 @@
                   href: general-ledger/enable-delayed-tax-calculation.md
                 - name: Áfakifizetés létrehozása
                   href: general-ledger/tasks/create-sales-tax-payment.md
+                - name: Adóelszámolás-kerekítés a pénznemhez beállított egyéni tizedesjegyek alapján
+                  href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
                 - name: Áfatranzakciók létrehozása dokumentumokra
                   href: general-ledger/tasks/create-sales-tax-transactions-documents.md
                 - name: Főkönyvi feladási csoportok beállítása az áfához
@@ -1546,6 +1556,8 @@
                           href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
+                        - name: Első lépések a Szaúd-Arábiára vonatkozó Elektronikus számlázás használata során
+                          href: localizations/e-invoicing-sa-get-started.md
                         - name: Az elektronikus számlázási szolgáltatás használata a szállítói számlák importálására
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Az elektronikus számlázás beállítása
@@ -1568,6 +1580,8 @@
                           href: localizations/tax-calculation-data-model-overview.md
                         - name: Az áfa alkalmazhatósága és az áfacsoport meghatározásának logikája
                           href: localizations/global-sales-tax-group-determination.md?toc=/dynamics365/finance/toc.json
+                        - name: Adóilletékességi paraméterek használata a készpénzfizetési engedmény kiszámításának beállításához
+                          href: localizations/global-tax-jurisdiction-cash-discount-setup.md?toc=/dynamics365/finance/toc.json
                     - name: Számítás
                       items:
                         - name: 'Adó kiszámítása az árra, ha engedélyezve van az Árak tartalmazzák az adókat beállítás'
@@ -1594,6 +1608,10 @@
                               href: localizations/emea-nl-vat-declaration-netherlands.md
                             - name: EU értékesítési lista
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Spanyolországi jelentés
+                          items:
+                            - name: 'Azonnali információbiztosítás az áfáról (Suministro Inmediato de Información del IVA, SII)'
+                              href: localizations/emea-esp-sii-spain.md
                         - name: Svédországi jelentés
                           items:
                             - name: Áfabevallás
@@ -1604,18 +1622,24 @@
                               href: localizations/emea-che-vat-declaration-switzerland.md
                         - name: Egyesült királyságbeli jelentés
                           items:
-                            - name: Felkészülés az MTD-vel való áfaintegrációra
-                              href: localizations/emea-gbr-mtd-vat-integration.md
+                            - name: Áfabevallás
+                              href: localizations/emea-gbr-vat-declaration.md
                     - name: Adószámítás engedélyezése átmozgatási rendeléshez
                       items:
                         - name: Adófunkció támogatása átmozgatási rendelésekhez
                           href: localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/finance/toc.json
-                    - name: Bővítmény
+                        - name: Adóinformációk rányomtatása az átmozgatási rendelésekre
+                          href: localizations/tax-calculation-print-tax-information-on-transfer-order-documents.md?toc=/dynamics365/finance/toc.json
+                    - name: Kiterjesztés
                       items:
                         - name: Adatmezők hozzáadása adókonfigurációkhoz
                           href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
                           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
+                        - name: Adókonfigurációk testreszabása az alapadatok kereséséhez
+                          href: localizations/customize-tax-configurations-master-data-lookup.md
+                    - name: Áfaszámítási GYIK
+                      href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Jogszabálykövetési frissítések
               href: localizations/regulatory-updates.md
             - name: Ausztrália
@@ -1684,6 +1708,8 @@
                   href: localizations/emea-bel-prodcom-report.md
                 - name: Belföldi értékesítések éves áfalistája
                   href: localizations/emea-bel-annual-vat-listing-of-domestic-sales.md
+                - name: Belgium – Intrastat
+                  href: localizations/emea-bel-intrastat.md
             - name: Brazília
               items:
                 - name: Brazília – áttekintés
@@ -2312,6 +2338,8 @@
                   href: localizations/apac-ind-scope.md
                 - name: Újdonságok és változások az indiai honosításában
                   items:
+                    - name: Újdonságok és változások a 10.0.20–10.0.22-es verziójában
+                      href: localizations/ind-news-letter-10-0-20-22.md
                     - name: Újdonságok és változások a 10.0.15–10.0.19-es verziójában
                       href: localizations/ind-news-letter-10-0-15-19.md
                     - name: Újdonságok és változások a 10.0.14-es verzióban
@@ -2680,6 +2708,12 @@
                           href: localizations/apac-ind-TDS-Record-TDS-recoverable-certificate-numbers.md
                         - name: Tanúsítványszámok és dátumok frissítése TDS-tranzakciókhoz
                           href: localizations/apac-ind-TDS-Update-certificate-numbers-and-dates-for-TDS-transactions.md
+            - name: Indonézia
+              items:
+                - name: Indonézia – áttekintés
+                  href: localizations/indonesia.md
+                - name: Áfabevallás Indonézia számára
+                  href: localizations/apac-idn-ppn-declaration.md
             - name: Olaszország
               items:
                 - name: Olaszország – áttekintés
@@ -3024,6 +3058,8 @@
                   href: localizations/emea-nl-audit-file.md
                 - name: Áfabevallás (Hollandia)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
+                - name: Hollandia – Intrastat
+                  href: localizations/emea-nl-intrastat.md
                 - name: EU értékesítési lista
                   href: localizations/emea-nl-EU-sales-list.md
             - name: Új-Zéland
@@ -3352,11 +3388,13 @@
                   href: localizations/emea-sau-zakat-reporting.md
                 - name: Banki bizonylati költségek hozzárendelése szállítmányhoz
                   href: localizations/apac-sau-allocate-bank-document-charges-shipment.md
+                - name: Elektronikus vevői számlák Szaúd-Arábiában
+                  href: localizations/emea-sau-e-invoices.md
             - name: Szingapúr
               items:
                 - name: Szingapúr – áttekintés
                   href: localizations/singapore.md
-                - name: A GST-05 jelentés elkészítése
+                - name: Az GST-05 jelentés elkészítése
                   href: localizations/apac-sgp-generate-gst-05-report.md
             - name: Spanyolország
               items:
@@ -3378,6 +3416,8 @@
                   href: localizations/emea-esp-fixed-asset-group-revaluation.md
                 - name: Közösségi áfa
                   href: localizations/emea-esp-intra-community-vat.md
+                - name: Spanyolország – Intrastat
+                  href: localizations/emea-esp-intrastat.md
                 - name: Egyszeri vevők
                   href: localizations/emea-esp-no-one-time-customer-for-project-contracts.md
                 - name: Csekkek kinyomtatása spanyol elrendezésben
@@ -3462,28 +3502,26 @@
                       href: localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
                     - name: A fordított áfafizetésnél alkalmazott áfacsoportok beállítása
                       href: localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-                - name: Egyesült királyságbeli jelentés
+                - name: Adó digitalizálása (MTD) az áfára vonatkozóan
                   items:
-                    - name: Adó digitalizálása (MTD) az áfára vonatkozóan
-                      items:
-                        - name: Adó digitalizálása (MTD) Áfa visszatérítés benyújtása az Egyesült Királyságban
-                          href: localizations/emea-gbr-mtd-vat-integration.md
-                        - name: A környezet előkészítése a HMRC MTD ÁFA webszolgáltatással való együttműködésre
-                          href: localizations/emea-gbr-mtd-vat-integration-setup.md
-                        - name: Ellenőrzőlista az MTD ÁFA szolgáltatás Elektronikus üzeneteinek beállításához
-                          href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
-                        - name: Az MTD ÁFA szolgáltatással történő együttműködés tesztelése tesztkörnyezetben
-                          href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
-                        - name: A Finance környezet engedélyezése a HMRC MTD ÁFA webszolgáltatással való együttműködésre
-                          href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                        - name: Áfa visszatérítés beküldése a HMRC MTD webszolgáltatásnak
-                          href: localizations/emea-gbr-mtd-vat-integration-submission.md
-                        - name: Áfa fizetések és kötelezettségekkel kapcsolatos adatok beolvasása a HMRC-ből
-                          href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
-                        - name: Áfabeállítás részletei az Egyesült Királyságban tett áfabevalláshoz
-                          href: localizations/emea-gbr-mtd-vat-integration-declaration.md
-                        - name: Áfabevallás készítése papírformátumban (ÁFA 100-as jelentés)
-                          href: localizations/emea-gbr-mtd-vat-integration-vat100.md
+                    - name: Adó digitalizálása (MTD) Áfa visszatérítés benyújtása az Egyesült Királyságban
+                      href: localizations/emea-gbr-mtd-vat-integration.md
+                    - name: A környezet előkészítése a HMRC MTD ÁFA webszolgáltatással való együttműködésre
+                      href: localizations/emea-gbr-mtd-vat-integration-setup.md
+                    - name: Ellenőrzőlista az MTD ÁFA szolgáltatás Elektronikus üzeneteinek beállításához
+                      href: localizations/emea-gbr-mtd-vat-integration-em-setup-checklist.md
+                    - name: Az MTD ÁFA szolgáltatással történő együttműködés tesztelése tesztkörnyezetben
+                      href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
+                    - name: A Finance környezet engedélyezése a HMRC MTD ÁFA webszolgáltatással való együttműködésre
+                      href: localizations/emea-gbr-mtd-vat-integration-authorization.md
+                    - name: Áfa visszatérítés beküldése a HMRC MTD webszolgáltatásnak
+                      href: localizations/emea-gbr-mtd-vat-integration-submission.md
+                    - name: Áfa fizetések és kötelezettségekkel kapcsolatos adatok beolvasása a HMRC-ből
+                      href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
+                    - name: Áfabeállítás részletei az Egyesült Királyságban tett áfabevalláshoz
+                      href: localizations/emea-gbr-mtd-vat-integration-declaration.md
+                    - name: Áfabevallás készítése papírformátumban (ÁFA 100-as jelentés)
+                      href: localizations/emea-gbr-mtd-vat-integration-vat100.md
                 - name: Kifizetési gyakorlatok statisztikai adataival kapcsolatos jelentés
                   href: localizations/emea-gbr-statistics-on-payment-practices-report.md
             - name: Egyesült Államok
@@ -3877,6 +3915,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-datetime.md?toc=/dynamics365/finance/toc.json
                         - name: AddDays
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-adddays.md?toc=/dynamics365/finance/toc.json
+                        - name: ChangeTimeZone
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-changetimezone.md?toc=/dynamics365/finance/toc.json
                         - name: DateFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-dateformat.md?toc=/dynamics365/finance/toc.json
                         - name: DateTimeFormat
@@ -4021,6 +4061,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-lower.md?toc=/dynamics365/finance/toc.json
                         - name: Mid
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-mid.md?toc=/dynamics365/finance/toc.json
+                        - name: NewGUID
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-newguid.md?toc=/dynamics365/finance/toc.json
                         - name: NumberFormat
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-numberformat.md?toc=/dynamics365/finance/toc.json
                         - name: NumeralsToText
@@ -4421,6 +4463,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/finance/toc.json
                     - name: 10.0.21-es alkalmazásfrissítés
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
+                    - name: 10.0.23-as alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
                 - name: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
                   items:
                     - name: 'Feliratkozás egy eseményre, hogy választ kérjen a feliratkozáskezelőtől'
@@ -4433,6 +4477,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
                 - name: 'A kód módosítása, hogy a felhasználók számára lehetővé tegye a névre szóló ER-célpontok konfigurálását és használatát'
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
+                - name: Bejövő dokumentumok egyéni elektronikus jelentéskészítéskészítési forrásának implementálása
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
         - name: Mobilalkalmazás
           items:
             - name: Mobilalkalmazás kezdőoldala
