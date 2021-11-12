@@ -10,17 +10,16 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: cb03ccb208f19f540fefafd9964f74309736dc05
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: ccf827983694eab2037c73aa3251846b051e66f1
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577480"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678567"
 ---
 # <a name="delay-tolerance-negative-days"></a>Késleltetési tűréshatár (negatív napok)
 
 [!include [banner](../../includes/banner.md)]
-[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 A késleltetett tűréshatár funkcióval a tervezési optimalizálás figyelembe veszi a **Negatív napok** értékét, amely be van állítva a fedezetcsoportokhoz. Az alaptervezés során alkalmazott késleltetett tűréshatár időszakának meghosszabbítása. Ily módon elkerülheti az új ellátási rendelések létrehozását, ha a meglévő készlet képes lesz fedezni az igényt egy rövid késleltetés után. A funkció célja annak meghatározása, hogy van-e értelme új ellátási rendelést létrehozni egy adott igényre.
 

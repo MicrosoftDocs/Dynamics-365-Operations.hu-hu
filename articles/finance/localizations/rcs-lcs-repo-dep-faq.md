@@ -2,7 +2,7 @@
 title: Regulatory Configuration Service (RCS) - Lifecycle Services (LCS) tárhely kivezetése
 description: Ez a témakör a Regulatory Configuration Service (RCS) globális tárházának kivezetésének a Microsoft Dynamics Lifecycle Services (LCS) tárolók kivezetéséről tájékoztatást.
 author: JaneA07
-ms.date: 05/25/2021
+ms.date: 10/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 7a738af04da4425e76bd3b224400f91bc4eb8364d323da67ea457eaba9e65643
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 68f1ed6a6d6bb0d15a81539da7f483ad71a4d696
+ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6782198"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7715230"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) tárhely kivezetése
 
@@ -38,8 +38,9 @@ Az LCS tárhelyként való felhasználása kivezetésének kommunikálása a [Dy
 
 ## <a name="key-features"></a>Fő funkciók
 
-- Az RCS használatával konfigurációkat lehet létrehozni és szerkeszteni. Ezután a konfigurációkat közvetlenül a tervezőből egy csatlakoztatott alkalmazásba lehet átküldeni. Így gyorsan módosíthatja és tesztelheti a konfigurációkat.
-- A globális tárház az összes ER-konfiguráció központi tárolója.
+- Az RCS használatával ER-konfigurációkat és globalizációs funkciókat hozhat létre és szerkeszthet.
+- A konfigurációkat közvetlenül az RCS-tervezőből küldheti át egy csatlakoztatott alkalmazásba, például egy Dynamics 365 Finance környezetbe, így gyorsan el lehet elvégezni és tesztelni a konfigurációk módosításait.
+- Az ER-konfigurációk és a globalizációs funkciók életciklusának központi tárolása, megosztása és kezelése a globális tárház központi tárolóján keresztül.
 
 ## <a name="guidance-for-one-time-and-ongoing-actions"></a>Útmutatás az egyszeri és folyamatos műveletekhez
 
@@ -53,11 +54,20 @@ Importálja az összes szükséges konfigurációt az LCS-ről az RCS szolgálta
 2. A létesített RCS-példányban a származtatott ER-konfigurációkat tartalmazó eszköztár minden LCS-projekthez regisztráljon megfelelő LCS-tárházat.
 3. Az LCS-tárházból az RCS-be importálja az ER-konfigurációkat. További információ: [Konfigurációk importálása LCS-ből](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md).
 4. Ha nincs automatikusan biztosítva globális tárház, regisztrálja az RCS szolgáltatásban.
-5. Az aktuális RCS-példány összes származtatott konfigurációját töltse fel a globális adattárba. Használja a **Konfigurációscsomagok, amelyek lehetővé teszik a felhasználónak, hogy az össze konfigurációt egy művelettel töltse fel a globális adattárba** funkciót, hogy segítsen a feltöltésben. A további tudnivalókat lásd: [RCS globális adattár felöltés](rcs-global-repo-upload.md).
+5. Az aktuális RCS-példány összes származtatott konfigurációját töltse fel a globális adattárba. A **Konfigurációs csomagok** funkció használata segíthet a feltöltésben. A további tudnivalókat lásd: [RCS globális adattár felöltés](rcs-global-repo-upload.md).
 
 ### <a name="going-forward"></a>A későbbiekben
 
-Az RCS vizuális tervezőivel hozza létre az összes új konfigurációt. Majd töltse fel a konfigurációkat a globális tárházba tárolásra. A további tudnivalókat lásd: [Hozzon létre ER-konfigurációkat a RCS-ben, és töltse fel őket a globális tárházba](rcs-global-repo-upload.md).
+Az RCS vizuális tervezői a következő célokra használhatók:
+
+- A Microsoft által biztosított sablonok kibővítése.
+- A szervezet számára szükséges új konfigurációk létrehozása.
+- Az elektronikus számlázás és az adószámítási szolgáltatás globalizációs funkcióinak testreszabása.
+
+A Globalizációs tárhely a következő célokra használható:
+
+- Hozzáférés a Microsoft által készített konfigurációkhoz és a globalizációs funkciókhoz.
+- Töltse fel a létrehozott vagy kibővített konfigurációkat a globális tárházba, és ossza meg azokat a szervezete Dynamics 365 alkalmazáskörnyezetében vagy külső szervezetekkel. A további tudnivalókat lásd: [Hozzon létre ER-konfigurációkat a RCS-ben, és töltse fel őket a globális tárházba](rcs-global-repo-upload.md).
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 
@@ -76,3 +86,22 @@ Az RCS a *csatlakoztatott alkalmazás* koncepcióját használja. A csatlakoztat
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Vannak példák a beállításokra és a kezelésre?
 
 Nincsenek példák, de a témakör korábbi lépései alapján át lehet telepíteni a konfigurációkat az RCS globális tárházba.
+
+### <a name="is-rcs-a-prerequisite-to-configure-electronic-reporting"></a>Az RCS előfeltétele az Elektronikus jelentéskészítés konfigurálásának?
+
+Igen. Az RCS olyan funkciókat tartalmaz, amelyek támogatják a globalizációs szolgáltatások, például az elektronikus számlázás és az adószámítási szolgáltatás által használt globalizációs funkciók beállítását. A szolgáltatás ugyanakkor ugyanazokkal a vizuális tervezői funkciókkal rendelkezik, amelyek révén új ER-konfigurációkat lehet kibővíteni vagy létrehozni. Az RCS az ER-konfigurációkhoz és a globalizációs funkciókhoz is biztosít életciklus-kezelési funkciókat.
+
+### <a name="which-regions-can-rcs-be-deployed-in"></a>Mely régiókban telepíthető az RCS-k?
+
+Az RCS a következő Azure-régiókban érhető el:
+
+- Egyesült Államok
+- India
+- Franciaország
+- Európa
+
+A terméktámogatásról a [Dynamics globalizációs szolgáltatások áttekintése](globalization-services-overview.md) cikk nyújt további tájékoztatást. A földrajzi támogatással kapcsolatos további tudnivalókat lásd: [Dynamics 365 és Power Platform: Elérhetőség, adatok helye, nyelv és honosítás](https://aka.ms/rcs/D365Productavailabilityguide).
+
+### <a name="whats-the-cost-of-using-rcs"></a>Mi az RCS használatának költsége?
+
+Az RCS és a globalizációs tárház ingyenesen elérhető a meglévő Finance and Operations alkalmazáslicencek részeként. Nincs külön költség társítva az RCS tervezőszolgáltatás használatához vagy a konfigurációknak a globális tárházban való tárolásához. Jelenleg nincs korlátozva a konfigurációk vagy a csatlakoztatott alkalmazások száma.

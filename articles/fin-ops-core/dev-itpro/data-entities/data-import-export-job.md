@@ -2,7 +2,7 @@
 title: Adatimportálási és -exportálási feladatok áttekintése
 description: Az Adatezelése munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat.
 author: peakerbl
-ms.date: 10/07/2021
+ms.date: 10/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dec8270417cb7237081aa49203ca93d76c0d02ed
-ms.sourcegitcommit: 132c3dbdd66bceb7596d329c34b2256c581a20fa
-ms.translationtype: HT
+ms.openlocfilehash: 51c7d678017bdd9388767500735e21e5374c9f29
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "7612364"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675369"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Adatimportálási és -exportálási feladatok áttekintése
 
@@ -68,6 +68,9 @@ Ha kiválaszt egy entitást, ki kell választania az exportálandó vagy import�
 | Excel                  | Excel                                      | \-–                     |
 | XML                    | \-–                                      | XML-elem XML-attribútum |
 | Elválasztott, rögzített szélesség | Vessző, pontosvessző, tabulátor, függőleges sáv, kettőspont | \-–                     |
+
+> [!NOTE]
+> Fontos kiválasztani a helyes értéket a **Sorelválasztó**, az **Oszlopelválasztó** és a **Szövegminősítő** számára, ha a **Fájlformátum** beállítása **Tagolt**. Győződjön meg róla, hogy az adatok nem tartalmazzák elválasztóként vagy minősítőként használt karaktert, mivel ez hibákat okozhat az importálás és exportálás során.
 
 ### <a name="sequence-the-entities"></a>Az entitások sorozetba állítása
 Az entitások sorrendbe állíthatók egy adatsablonban, valamint az importálási és exportálási feladatokban. Ha egy több adatentitást tartalmazó feladatot futtat, meg kell győződnie arról, hogy az adatentitások megfelelően vannak sorrendbe állítva. Az entitásokat alapvetően úgy kell sorozatba állítani, hogy meg lehessen címezni a funkcionális függőségeket az entitások között. Ha az entitások között nincsenek funkcionális függőségek, párhuzamos importálásra vagy exportálásra lehet ütemezni őket.

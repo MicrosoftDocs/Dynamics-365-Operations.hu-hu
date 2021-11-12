@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 942b144c78176e9a00cdc12101e2948e8aa4685e
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 3485f0722b8b99d7dc2d6dab470fdcc465b1da3d
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579760"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678665"
 ---
 # <a name="manage-standard-cost-updates"></a>Az elszámolóár frissítéseinek kezelése
 
@@ -43,8 +43,6 @@ A következő példa bemutatja, hogyan használhatók az egyverziós és kétver
 Ez a példa egy további költségszámítási verziót használt a 2020-os év frissítéseinek kezelésére. Egynél több költségszámítási verzió használható, minden frissítési köteg esetében külön verzióként. Több mint egy további költségszámítás használata esetén a tartalékot aktív költségekként kell megadni, mert az aktív költségek több költségszámítási verzióban oszlanak el.
 
 ## <a name="financial-dimensions-for-the-standard-cost-revaluation"></a>Az elszámolóár átértékelésének pénzügyi dimenziói
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Új elszámolóár aktiválása általában átértékelési a tényleges készlet értékét az elszámolóáras átértékelési tranzakciók alapján. A cikk pénzügyi dimenziói általában fel vannak adva a tranzakciókba. Ha azonban szabályozni szeretné, hogy a pénzügyi dimenziók feladása miként és hogyan történjen, a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) segítségével bekapcsolhatja *Az alapértelmezett pénzügyi dimenziók lehetőségei a készlet elszámolóárának átértékeléséhez* nevű funkciót. A funkció engedélyezése után kattintson a **Költségkezelés > Készletkönyvelési irányelvek beállítása > Paraméterek** parancsra, és állítsa a **Pénzügyi dimenziók eredete** új legördülő listát a következő értékek egyikére:
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e93aff4914314ea99798415a0bacc7b844169bc2
-ms.sourcegitcommit: 2b04b5a5c883d216072bb91123f9c7709a41f69a
-ms.translationtype: HT
+ms.openlocfilehash: 3a0a8555ac7c523af03401ab84af30f577777995
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7384611"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647620"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
 
@@ -109,7 +109,7 @@ Az Azure AD webszolgáltatási alkalmazásainak beállításával kapcsolatos to
     - [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](/azure/active-directory/develop/quickstart-register-app)
     - [Útmutató: Erőforrások elérésére képes Azure AD alkalmazás és szolgáltatási főkiszolgáló létrehozása portál használatával](/azure/active-directory/develop/howto-create-service-principal-portal)
 
-## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a>Felhasználói fiók létrehozása és konfigurálása a Supply Chain Management megoldásban
+## <a name="create-and-configure-a-user-account-in-supply-chain-management"></a><a name="user-azure-ad"></a>Felhasználói fiók létrehozása és konfigurálása a Supply Chain Management megoldásban
 
 A következő lépésekkel engedélyezheti az Supply Chain Management számára az Azure AD alkalmazása használatát.
 
@@ -117,17 +117,24 @@ A következő lépésekkel engedélyezheti az Supply Chain Management számára 
 
     1. A Supply Chain Management szolgáltatásban lépjen a **Rendszerfelügyelet \> Felhasználók \> Felhasználók** elemre.
     1. Hozzon létre egy felhasználót.
-    1. Rendelje hozzá a raktározási mobileszköz felhasználóját.
+    1. Rendelje hozzá a *Raktározási mobileszköz felhasználója* szerepkört a felhasználóhoz.
 
     ![Rendelje hozzá a raktározási mobileszköz felhasználóját.](media/app-connect-app-users.png "Rendelje hozzá a raktározási mobileszköz felhasználóját")
 
 1. Társítsa az Azure AD alkalmazást a Raktárkezelés mobilalkalmazás felhasználójával:
 
     1. Ugrás a **Rendszerfelügyelet \> Beállítás \> Azure Active Directory alkalmazások** elemre.
-    1. Hozzon létre egy sort.
-    1. Írja be az előző szakaszban feljegyzett ügyfél-azonosítót, adja meg a nevet, és válassza ki az imént létrehozott felhasználót. Javasoljuk, hogy az összes eszközt címkézze fel. Ezt követően, ha elveszik egy eszköz, egyszerűen eltávolíthatja a Supply Chain Management alkalmazáshoz való hozzáférést ezen az oldalon.
+    1. Jelölje be a műveleti ablakban az **Új** lehetőséget az új sor létrehozásához.
+    1. Az **Ügyfélazonosító** mezőben adja meg azt az ügyfélazonosítót amelyet feljegyzett az előző szakaszban.
+    1. A **Név** mezőben adjon meg egy nevet.
+    1. Válassza ki az újonnan létrehozott felhasználói azonosítót a **Felhasználói azonosító** mezőben.
 
     ![Azure Active Directory alkalmazások.](media/app-connect-aad-apps.png "Azure Active Directory alkalmazások")
+
+> [!TIP]
+> Ezeknek a beállításoknak a használatának az egyik módja az, hogy létrehoz egy ügyfélazonosítót az Azure szolgáltatásban minden egyes fizikai eszközhöz, majd hozzáadja az egyes ügyfélazonosítókat az **Azure Active Directory alkalmazások** oldalhoz. Ezt követően, ha elveszik egy eszköz, egyszerűen eltávolíthatja a Supply Chain Management alkalmazáshoz való hozzáférést, ha eltávolítja az ügyfélazonosítóját ezen az oldalon. (Ez a megközelítés működik, mert az egyes eszközökre mentett kapcsolati hitelesítő adatok szintén meghatároznak egy ügyfélazonosítót, amint azt a témakör későbbi része ismerteti.)
+>
+> Ezenkívül az egyes ügyfélazonosítók alapértelmezett nyelv-, számformátum- és időzóna-beállításait az itt beállított **Felhasználói azonosítóhoz** beállított beállítások határozzák meg. Tehát ezeket a beállításokat használhatja az egyes eszközök vagy eszközgyűjtemények alapértelmezett beállításainak létrehozására, az ügyfélazonosító alapján. Ezeket az alapértelmezett beállításokat azonban felülbírálja a rendszer, ha azok a *raktári alkalmazás felhasználói fiókjához* is be vannak állítva, amelyről a dolgozó bejelentkezik az eszközre. (További tudnivalókat lásd: [Mobileszközök felhasználói azonosítói](mobile-device-work-users.md).)
 
 ## <a name="authenticate-by-using-a-certificate-or-client-secret"></a><a name="authenticate"></a>Hitelesítés tanúsítványok vagy titkos ügyfélkód használatával
 

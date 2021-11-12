@@ -2,7 +2,7 @@
 title: Elektronikus jelentéskészítés (ER) céljai
 description: Ez a témakör az Elektronikus jelentéskészítés rendeltetési helyeinek kezelésével, a támogatott célhelyek típusaival, valamint a biztonsági szempontokkal kapcsolatban tartalmaz tájékoztatást.
 author: nselin
-ms.date: 05/19/2021
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: df617ad476d8210c658f60569656292df22670df44cc094bf0d61b4ee6a19775
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743311"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647093"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -164,12 +164,12 @@ Ha azt szeretné, hogy a PDF-átalakítási beállítás elérhető legyen az ak
 
 ### <a name="applicability"></a>Alkalmazhatóság
 
-A PDF-átalakítási beállítás csak azon fájlösszetevők esetében kapcsolható be, amelyeknél a kimenet Office (Excel vagy Word) formátumban (**Excel-fájl**) generálódik. Ha ez a beállítás be van kapcsolva, a program automatikusan PDF-formátumra alakítja az Office formátumú kimenetet. A Finance-szolgáltatás **10.0.18 előtti verzióiban** csak az **Excel\\fájltípus** olyan összetevőire vonatkozóan kapcsolhatja be ezt a funkciót, amelyeket [Excel](er-fillable-excel.md) vagy [Word](er-design-configuration-word.md) formátumú kimenet generálására használnak. A **10.0.18-as és újabb verziókban** azonban a **közös\\fájltípus** összetevőihez is be lehet kapcsolni ezt a beállítást.
+A Finance-szolgáltatás **10.0.18 előtti verzióiban** a PDF-konverzió beállítás csak az olyan **Excel\\Fájl** komponensekhez állítható be, amelyek Office-formátumú (Excel vagy Word) kimenet generálásához használatosak. Ha ez a beállítás be van kapcsolva, a program automatikusan PDF-formátumra alakítja az Office formátumú kimenetet. A **10.0.18-as és újabb verziókban** azonban a **közös\\fájltípus** összetevőihez is be lehet kapcsolni ezt a beállítást.
 
 > [!NOTE]
 > Ügyeljen arra a figyelmeztető üzenetre, amely akkor jelenik meg, ha a PDF-konverziós lehetőséget a **közös\\fájltípus** egyik ER-összetevőjére vonatkozóan kapcsolja be. Ez az üzenet arról tájékoztat, hogy a tervezés során nem garantálható, hogy a kiválasztott fájlösszetevő futásidőben elérhetővé teszi a PDF-formátumot vagy PDF konvertálható tartalmat. Ezért csak akkor kapcsolja be ezt a beállítást, ha biztos benne, hogy a kiválasztott fájlösszetevő úgy van beállítva, hogy futásidőben elérhetővé tegye a PDF-formátumot vagy a PDF konvertálható tartalmat.
 > 
-> Ha az **Excel\\fájltípus** egyik összetevőjéhez bekapcsolja a PDF-konverziós beállítást, akkor az összetevő PDF-formátumtól különböző formátumban teszi elérhetővé a tartalmat, és ha a megjelenített tartalom nem konvertálható PDF-formátumra, kivétel lép fel futásidőben. A kapott üzenet arról tájékoztat, hogy a létrehozott tartalom nem konvertálható PDF-formátumra.
+> Ha a egy formátum összetevőjéhez bekapcsolja a PDF-konverziós beállítást, akkor az összetevő PDF-formátumtól különböző formátumban teszi elérhetővé a tartalmat, és ha a megjelenített tartalom nem konvertálható PDF-formátumra, kivétel lép fel futásidőben. A kapott üzenet arról tájékoztat, hogy a létrehozott tartalom nem konvertálható PDF-formátumra.
 
 ### <a name="limitations"></a>Korlátozások
 
@@ -189,16 +189,26 @@ Ha be kívánja kapcsolni a PDF-konverziót egy célhelyre, jelölje be a **Konv
 
 ### <a name=""></a><a name="SelectPdfPageOrientation">Lap tájolásának kiválasztása PDF-konverzióhoz</a>
 
-Ha Excel-formátumban generál egy Elektronikus jelenrés konfigurációt, és PDF-formátumra szeretné átalakítani, akkor megadhatja a PDF-dokumentum tájolását. Ha bejelöli a **Konvertálás PDF formátumba** jelölőnégyzetet, hogy egy célhelyre bekapcsolja a PDF-konverziót egy Excel formátumú kimeneti fájl létrehozásához, akkor a **Lap tájolása** mező elérhetővé válik a **PDF-konverzió beállításai** gyorslapon. A **Lap tájolása** mezőben válassza ki a preferált tájolást.
+Ha Excel-formátumban generál egy Elektronikus jelenrés konfigurációt, és PDF-formátumra szeretné átalakítani, akkor kifejezetten megadhatja a PDF-dokumentum tájolását. Ha bejelöli a **Konvertálás PDF formátumba** jelölőnégyzetet, hogy egy célhelyre bekapcsolja a PDF-konverziót egy Excel formátumú kimeneti fájl létrehozásához, akkor a **Lap tájolása** mező elérhetővé válik a **PDF-konverzió beállításai** gyorslapon. A **Lap tájolása** mezőben válassza ki a preferált tájolást.
 
 [![Lap tájolásának kiválasztása PDF-konverzióhoz.](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)](./media/ER_Destinations-SelectPDFConversionPageOrientation.png)
 
-> [!NOTE]
-> Ha azt szeretné, hogy a PDF laptájolása kiválasztható legyen, telepítenie kell a Finance 10.0.10 vagy újabb verzióját.
->
-> A kiválasztott laptájolás minden olyan ER-konfigurációra vonatkozik, amely Excel-formátumban jön létre, majd PDF formátumra lesz konvertálva.
->
-> Ha egy Word-formátumú ER-konfigurációt konvertálnak PDF-formátumban, akkor a program a Word-dokumentumból veszi át a PDF-dokumentum laptájolását.
+Ha azt szeretné, hogy a PDF laptájolása kiválasztható legyen, telepítse a Finance 10.0.10 vagy újabb verzióját. A Finance **10.0.23 előtti verzióiban** ez a beállítás a következő tájolási beállításokat kínálja fel:
+
+- Álló
+- Fekvő
+
+A kiválasztott laptájolás a kimeneti dokumentum minden oldalára vonatkozik, amely Excel-formátumban jön létre, majd PDF formátumra lesz konvertálva.
+
+A **10.0.23-as és újabb verziókban** azonban a lap tájolási beállításainak listája a következőképpen módosult:
+
+- Álló
+- Fekvő
+- Munkalaphoz kapcsolódó
+
+Ha kiválasztja a **Munkalaphoz kapcsolódó** beállítást, a létrehozott Excel-munkafüzet minden munkalapja PDF-formátumba lesz konvertálva a használt Excel-sablonban a munkalaphoz beállított oldaltájolás alapján. Tehát lehet, hogy egy végső olyan PDF-dokumentumot kap, amely álló és fekvő oldalakat tartalmaz. 
+
+Ha egy Word-formátumú ER-konfigurációt konvertálnak PDF-formátumban, akkor a program mindig a Word-dokumentumból veszi át a PDF-dokumentum laptájolását.
 
 ## <a name="output-unfolding"></a>Kimenet kibontása
 

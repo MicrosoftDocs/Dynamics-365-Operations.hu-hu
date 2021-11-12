@@ -1,7 +1,7 @@
 ---
 title: Tárgyieszköz-csoportok helyettesítési költségének és biztosított értékének újraszámítása
-description: Ez a cikk ismerteti a tárgyi eszközök helyettesítési költségének és biztosított értékének frissítésének folyamatát.
-author: ShylaThompson
+description: Ez a témakör ismerteti a tárgyi eszközök helyettesítési költségének és biztosított értékének frissítésének folyamatát.
+author: moaamer
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
@@ -11,21 +11,21 @@ ms.reviewer: roschlom
 ms.custom: 3261
 ms.assetid: b8876f83-8772-4f2a-b277-12724e2a0c44
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 074a976e3d815211f4a4fe24268ffc7ac7e9c4f4b4449167d288876a93749e1a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 33d3dba59e459193798d790e64d2493c244d49a3
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763142"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674876"
 ---
 # <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Tárgyieszköz-csoportok helyettesítési költségének és biztosított értékének újraszámítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk ismerteti a tárgyi eszközök helyettesítési költségének és biztosított értékének frissítésének folyamatát.
+Ez a témakör ismerteti a tárgyi eszközök helyettesítési költségének és biztosított értékének frissítésének folyamatát.
 
 A felhasználók időnként értesítést kaphatnak arról, hogy egy meghatározott tárgyi eszköz helyettesítési vagy biztosítási költsége megváltozott. Például a felettes küldhet számukra egy üzenetet, hogy az infláció három százalék volt az előző évben, ezért minden tárgyi eszköz helyettesítési költségét meg kell növelni három százalékkal. 
 

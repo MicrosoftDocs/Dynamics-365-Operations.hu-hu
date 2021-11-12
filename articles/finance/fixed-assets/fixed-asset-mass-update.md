@@ -1,7 +1,7 @@
 ---
 title: Tárgyi eszközök tömeges módosítása
 description: Ha könyveket használ, akkor egyszerre módosíthatja azoknak az eszközcsoportoknak az értékcsökkenési szabályát, amelyek ugyanahhoz a könyvhöz tartoznak.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -11,15 +11,15 @@ ms.reviewer: roschlom
 ms.custom: 3521
 ms.assetid: 50207ffb-6b89-4fb9-92e9-928bc0729489
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e260f1702d17c79ae608519f48a5722043fe1c9895036d68832eb2f4a4366210
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 087f110da6a0d9582ee6b04a59ade24a5ed3fc68
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736146"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675077"
 ---
 # <a name="fixed-asset-mass-update"></a>Tárgyi eszközök tömeges módosítása
 

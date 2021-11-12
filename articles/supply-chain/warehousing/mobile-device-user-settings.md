@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mafoge
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e20367f4261d0112855f36c69c25cd732c78be7bb23d7c6333aea84db437d735
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 51c530fd0043a4ec5a82660af72c001be25b7e62
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769419"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647485"
 ---
 # <a name="mobile-device-user-settings"></a>Mobileszköz felhasználói beállításai
 
@@ -54,7 +54,7 @@ Olyan beállítási profilt is meghatározhat, amely minden eszközmárkára, es
 
 A következő lépéseket követve létrehozhatja és kezelheti a mobileszközök felhasználói beállításait.
 
-1. Lépjen a **Raktárkezelés \> Mobileszköz \> Mobileszköz-felhasználói beállítások** elemre.
+1. Lépjen a **Raktárkezelés \> Beállítás \> Mobileszköz \> Mobileszköz-felhasználói beállítások** elemre.
 1. Válasszon ki egy létező felhasználóibeállítás-profilt a lista ablaktáblán a rekord megnyitásához. Másik lehetőségként válassza az **Új** lehetőséget a műveleti ablaktáblán egy új profil létrehozásához.
 
     A lista ablaktáblán minden profil címkével van ellátva, jelezve a márkát, a modellt és/vagy a felhasználói azonosítót, amelyre a profil vonatkozik. Általánosabb profilok esetében a jellemzők egy része vagy minden profil értéke *Összes* lesz.
@@ -83,7 +83,7 @@ A **Mobilmárkák** oldalon megtekintheti, létrehozhatja és kezelheti a beáll
 
 A következő lépéseket követve létrehozhatja és kezelheti a mobileszközök márkáit és modelljeit.
 
-1. Lépjen a **Raktárkezelés \> Mobileszköz \> Mobilmárkák** menüre.
+1. Menjen a **Raktárkezelés \> Beállítás \> Mobileszköz \> Mobileszköz-márkák** pontra.
 1. A rekord megnyitásához válassza ki a mobilmárka nevét a lista ablaktáblán. Másik lehetőségként válassza az **Új** lehetőséget a műveleti ablaktáblán egy új márka létrehozásához.
 1. Az új vagy kiválasztott eszközmárka rekordja fejlécében állítsa be a következő mezőket:
 

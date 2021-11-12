@@ -2,7 +2,7 @@
 title: Üzleti partner típusú felhasználók kezelése a B2B e-kereskedelmi webhelyeken
 description: Ez a témakör azt ismerteti, hogyan adhatnak hozzá, szerkeszthetnek és törölhetnek a rendszergazdák üzleti partner típusú felhasználókat a B2B e-kereskedelmi webhelyeken.
 author: josaw1
-ms.date: 07/22/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f6cc1d5dfeb48fd00216fc1908e9e8be24f07131b3e5f1eaeefb10396efbebc3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 090dc9af49840e559b4c1ad1500718fde9764aa2
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734943"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713693"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Üzleti partner típusú felhasználók kezelése a B2B e-kereskedelmi webhelyeken
 
@@ -68,6 +68,18 @@ Az üzleti partner rendszergazdájának a Commerce központi felületén törté
 1. Lépjen a **Kiskereskedelem és kereskedelem IT \> Elosztási ütemezés** lehetőségre, majd futtassa **1010** (**Vevők**) feladatot az újonnan létrehozott vevő- és vevőhierarchia-rekordoknak a csatorna-adatbázisba való továbbküldése érdekében.
 
 A kérelem jóváhagyása, valamint a vevő- és vevőhierarchia rekordjainak szinkronizálása után a kérelmező bejelentkezhet a B2B e-kereskedelmi webhelyre az igénylés elküldésekor megadott e-mail-cím használatával. A felhasználók a bejelentkezési folyamat során meghatározhatják a fiók jelszavát. Ha engedélyezni szeretné az identitásszolgáltató (Azure AD B2C) rekord csatolását a regisztrációkor vagy bejelentkezéskor létrehozott B2B vevőrekordhoz, kövesse az [Identitás rekordok vevőszámlákhoz való automatikus csatolásának engedélyezése](../identity-record-linking.md) rész utasításait.
+
+## <a name="notify-b2b-prospects-when-they-are-approved-or-rejected"></a>A B2B potenciális vevők értesítése jóváhagyás vagy elutasítás után
+
+Ha jóváhagy vagy elutasít egy B2B potenciális vevő a onboarding kérelmét, automatikusan küldhet e-mailben értesítést a potenciális vevőnek. 
+
+E-mail értesítések beállításához a Commerce Headquarters szolgáltatásban a jóváhagyott a B2B potenciális vevők jóváhagyva vagy B2B potenciális vevők elutasítva értesítéstípusokhoz kövesse az alábbi lépéseket.
+
+1. Hozzon létre e-mail sablonokat a potenciális vevőknek küldendő e-mailkhez a B2B potenciális vevő jóváhagyva vagy a B2B potenciális vevő elutasítva értesítéstípus indítása eseténre.
+
+    A B2B potenciális vevő jóváhagyva és a B2B potenciális vevő elutasítva értesítési típusok által támogatott helyőrzőkkel kapcsolatosan lásd: [Értesítési típusok](../email-templates-transactions.md#notification-types). Az e-mail-sablonok létrehozásával kapcsolatos további tudnivalókért tekintse meg az [E-mail-sablon létrehozása](../email-templates-transactions.md#create-an-email-template) részt. 
+
+1. Adja hozzá a B2B potenciális vevő jóváhagyva és a B2B potenciális vevő elutasítva értesítési típusokat az e-mail értesítési profilhoz, és képezze le őket a létrehozott e-mail sablonokra. További információt az értesítési profilokról az [E-mailes értékesítési profil beállítása](../email-notification-profiles.md) című témakörben talál. 
 
 ## <a name="onboard-additional-business-partner-users"></a>További üzleti partner típusú felhasználók beléptetése
 

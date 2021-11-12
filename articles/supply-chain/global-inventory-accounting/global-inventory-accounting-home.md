@@ -10,17 +10,17 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 3e1dbb97ba56b5910dda368b9ec15e27a683dde5
-ms.sourcegitcommit: 5c0a0adeb859cc1ade6f067444f3bf08a895b35a
-ms.translationtype: HT
+ms.openlocfilehash: 954a3bcdf6ad163afd2596227ce2c8548fe37027
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/27/2021
-ms.locfileid: "7557392"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678495"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Global Inventory Accounting kezdőlap
 
-[!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
 
 A nemzetközi szervezetekre egyre nagyobb nyomás nehezedik a hatóságok részéről, hogy megfeleljenek a helyi és globális számviteli előírásoknak. A készletértékelés fontos szerepet tölt be a megfelelés biztosításában. A Global Inventory Accounting bővítménye átfogó megoldást kínál a szervezeteknek (különösen a nemzetközi szervezeteknek) arra, hogy több költségszámítási főkönyvet használjanak a Microsoft Dynamics 365 Supply Chain Management készletkönyvelés során. Emiatt ezek a szervezetek egyszerre több könyvelési szabványoknak és belső vezetésű könyvelésnek is megfelelniük kell.
 

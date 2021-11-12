@@ -2,7 +2,7 @@
 title: Rács funkciói
 description: Ez a témakör ismerteti a rács vezérlőelem számos erőteljes funkcióját. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
-ms.date: 09/08/2021
+ms.date: 10/25/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 9aa79e6e61f3a53073dffa5f3030892cc921d246
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
-ms.translationtype: HT
+ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483854"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700137"
 ---
 # <a name="grid-capabilities"></a>Rácsfunkciók
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 
 Az új rács vezérlőelem számos hasznos és erőteljes funkciót tartalmaz, amelyek a felhasználó hatékonyságának növelésére, az adatokkal kapcsolatos érdekesebb nézetek kialakítására és az adatokkal kapcsolatos jelentőségteljes rálátás megszerzésére használhatók. Ez a cikk a következő funkciókat mutatja be: 
@@ -32,6 +33,8 @@ Az új rács vezérlőelem számos hasznos és erőteljes funkciót tartalmaz, a
 -  Matematikai kifejezések kiértékelése 
 -  Táblázatos adatok csoportosítása (külön lehet engedélyezni az **Csoportosítás rácsokban** szolgáltatással)
 -  Oszlopok rögzítése
+-  Oszlop szélességének automatikus illesztése
+-  Nyújtható oszlopok
 
 ## <a name="calculating-totals"></a>Teljes összegek számítása
 A Finance and Operations alkalmazásokban a felhasználók a számokat tartalmazó oszlopok alján látható összesítéseket megtekinthetik a rácsokban. Ezeket az összegeket a rács alján látható lábléc szakasz mutatja. 
@@ -43,7 +46,7 @@ A Finance and Operations alkalmazásokban minden egyes táblázatos rács alján
 - Végösszegek a konfigurált numerikus oszlopok alján
 - Az adathalmazban lévő sorok száma összesen 
 
-Alapértelmezetten ez a lábléc rejtett, de be lehet kapcsolni. A rács láblécének megjelenítéséhez kattintson a jobb gombbal a rács egy oszlopának fejlécére, és válassza ki a **Lábléc megjelenítése** lehetőséget. Miután bekapcsolta egy adott rács láblécét, erre a beállításra a rendszer addig fog emlékezni, amíg a felhasználó el nem rejti a láblécet. A lábléc elrejtéséhez kattintson a jobb gombbal az oszlopfejlécre, és válassza a **Lábléc elrejtése** lehetőséget.  (Egy jövőbeli frissítésben a **Lábléc megjelenítése/elrejtése** műveletet valószínűleg áthelyezzük egy másik helyre.) 
+Alapértelmezetten ez a lábléc rejtett, de be lehet kapcsolni. A rács láblécének megjelenítéséhez kattintson a **Rácsbeállítások** gombra a rács fejlécében, és válassza ki a **Lábléc megjelenítése** lehetőséget. Miután bekapcsolta egy adott rács láblécét, erre a beállításra a rendszer addig fog emlékezni, amíg a felhasználó el nem rejti a láblécet. A lábléc elrejtéséhez válassza a **Lábléc elrejtése** parancsot a **Rácsbeállítások** menüben.  
 
 ### <a name="specifying-columns-with-totals"></a>Összesítéssel ellátott oszlopok megadása
 Alapértelmezés szerint egyetlen oszlop sem mutatja az összegeket. Ezt a rács oszlopai szélességének beállításához hasonlóan egyszeri beállítási tevékenységnek tekintjük. Miután megadta, hogy szeretné egy oszlop összegeit megtekinteni, a rendszer a lap legközelebbi meglátogatásakor emlékezni fog a beállításra.  
@@ -82,7 +85,7 @@ Ennek az új viselkedésnek a támogatásához egy új oszlop lett hozzáadva a 
 Amikor a felhasználók az előtt a hely előtt visznek be adatokat, ahol a kiszolgáló feldolgoz, alacsonyabb szintű adatbeviteli élményt tapasztalhatnak, például a keresések hiánya, a vezérlői szintű ellenőrzés és az alapértlemezett értékek bevitele. Ha meg szeretne találni egy értéket a legördülő listáról, akkor arra kell várnia, hogy a kiszolgáló az aktuális sorhoz felzárkózzon. Amikor a kiszolgáló dolgozza fel a sort, akkor az vezérlői szint ellenőrzése és az alapértelmezett értékek bevitele is megtörténik.   
 
 ### <a name="pasting-from-excel"></a>Beillesztés az Excel programból
-A felhasználók mindig képesek voltak a Finance and Operations alkalmazások rácsaiból az Excel programba adatokat exportálni az **Exportálás az Excel programba** mechanizmussal. Az adatok rendszert megelőzően való megadásának képessége lehetővé teszi az új rács számára, hogy támogassa a táblák másolását Excelből, és közvetlenül a Finance and Operations alkalmazások rácsaiba. Az a rácsvonalcella, amelyből a beillesztési művelet el van indítva, határozza meg, hogy a program hová kezdi a másolt tábla beillesztését. A rács tartalma felülíródik a másolt tábla tartalmával, kivéve a következő két esetet:
+A felhasználók mindig képesek voltak a Finance and Operations alkalmazások rácsaiból a Microsoft Excel programba adatokat exportálni az **Exportálás az Excel programba** mechanizmussal. Az adatok rendszert megelőzően való megadásának képessége lehetővé teszi az új rács számára, hogy támogassa a táblák másolását Excelből, és közvetlenül a Finance and Operations alkalmazások rácsaiba. Az a rácsvonalcella, amelyből a beillesztési művelet el van indítva, határozza meg, hogy a program hová kezdi a másolt tábla beillesztését. A rács tartalma felülíródik a másolt tábla tartalmával, kivéve a következő két esetet:
 
 - Ha a másolt tábla oszlopainak száma meghaladja a rácsban maradó oszlopok számát, a beillesztés helyétől kezdve, a felhasználó értesítést kap arról, hogy a további oszlopok figyelmen kívül lettek hagyva. 
 - Ha a másolt tábla sorainak száma meghaladja a rács sorainak számát, a beillesztés helyétől kezdve a meglévő cellák felülíródnak, és a másolt táblából származó további sorok a rács alján új sorokként jelennek meg. 
@@ -125,6 +128,9 @@ Oszlop rögzítéséhez kattintson a jobb gombbal az oszlop fejlécére, majd v�
 Oszlop rögzítésének feloldásához kattintson a jobb gombbal a rögzített oszlop fejlécére, majd válassza az **Oszlop rögzítésének feloldása** lehetőséget. 
 
 Ne feledje, hogy az új rács sorkiválasztási és sorállapot-oszlopait mindig rögzíti a rendszer az első két oszlopban. Ezért ha ezek az oszlopok egy rácsban szerepelnek, akkor mindig láthatók lesznek a felhasználó számára, attól függetlenül, hogy a rács vízszintes görgetése milyen helyzetben van. Ezt a két oszlopot nem lehet átrendezni.
+
+## <a name="autofit-column-width"></a>Oszlop szélességének automatikus illesztése
+Az Excelhez hasonlóan a felhasználók az oszlopban jelenleg látható tartalom alapján automatikusan kényszeríthetik egy oszlopot átméretezését. Ehhez kattintson duplán az oszlop méretező fogantyúira, vagy tegye a fókuszt az oszlopfejlécbe, és nyomja le az **A** billentyűt (automatikus kitöltéshez). Ez a funkció a 10.0.23 verziótól kezdve érhető el.  
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hogyan engedélyezhető az új rácsvezérlő a saját környezetemben? 

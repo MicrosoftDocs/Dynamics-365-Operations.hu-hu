@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dfc1bc0d457d0b0b2632aa2e2e5ba6a3c2f3fae7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 1ea1d8c1b0e8c996ead8461005960fa756ce6ca7
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575171"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678909"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Készletláthatóság bővítményének áttekintése
 
@@ -45,8 +45,6 @@ A készlet megtekintéséhez kétféle megközelítés létezik:
 - Tekintse meg a nyers készletlistát. Ez a lista rendszeresen szinkronizálódik egy gyorsítótárazott példányból, és a Dataverse rendszerben látható. További információért lásd: [Készletláthatóság alkalmazás](inventory-visibility-power-platform.md).
 
 ## <a name="soft-reservations"></a>Lágy foglalások
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 A lágy foglalás akkor alkalmazható, amikor egy vállalkozásnak meghatározott mennyiségű terméket kell lefoglalnia, például az értékesítési megrendelések teljesítése érdekében, hogy elkerülje a túlértékesítést. Amikor egy értékesítési megrendelés létrejön és visszaigazolásra kerül a Supply Chain Managementtben vagy más megrendeléskezelő rendszerben, a mennyiség lefoglalására vonatkozó kérés elküldésre kerül a Készletláthatósághoz. A Készletláthatóság lehetővé teszi, hogy lefoglalja a méretadatokkal és meghatározott készleti tranzakciótípusokkal rendelkező termékeket. (További információért lásd a [Készletláthatóság alkalmazásban](inventory-visibility-power-platform.md).) A mennyiség sikeres lefoglalása után a rendszer egy foglalási azonosítót küld vissza. Ezt a foglalási azonosítót használhatja az eredeti megrendeléshez való visszakapcsoláshoz a Supply Chain Managementtben vagy más megrendeléskezelő rendszerekben.
 

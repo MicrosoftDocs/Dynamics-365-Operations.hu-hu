@@ -1,7 +1,7 @@
 ---
 title: Tárgyi eszközök értékcsökkenése
-description: Ez a témakör a tárgyi eszközök értékcsökkenéséről nyújt áttekintést.
-author: ShylaThompson
+description: Ez a témakör a Tárgyi eszközök értékcsökkenéséről nyújt áttekintést.
+author: moaamer
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 3121
 ms.assetid: 98ff891f-e0e2-4184-b618-28107a50851f
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a72aa631f4678876de28c1d8b94c658c092d90865b2db4b10dac13e5cbcc7e7c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 54da35a39791a9e528896f3decd10476ad5af2d9
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734538"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675000"
 ---
 # <a name="fixed-asset-depreciation"></a>Tárgyi eszközök értékcsökkenése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a tárgyi eszközök értékcsökkenéséről nyújt áttekintést.
+Ez a témakör a Tárgyi eszközök értékcsökkenéséről nyújt áttekintést.
 
 Állítson be értékcsökkenést, ami egy ismétlődő tranzakció, és amely a mérlegszámlán csökkenti a tárgyi eszköz értékét, és a csökkenést kiadásként egy eredményszámlára terheli. Ezért általában a fő számla szolgál a mérlegszámla időszakos értékcsökkenése jóváírására. Az Ellenszámla pedig a a számlatükör eredményszámla részébe egy olyan számla.
 

@@ -1,7 +1,7 @@
 ---
 title: Értékcsökkenési tényező
 description: Ez a cikk az tényezős értékcsökkentési módszerről nyújt áttekintést.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 13831
 ms.assetid: 2b6c4fe4-02ff-4191-bcad-32f1f34c15f2
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fdb35f7b0efaf2f1a5f63eb0dbdf14363f63a389c5449b7fe145a46fd5c14cc2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: aab5ab518f2806e1b27f352e354dc9280fd27def
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746464"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674455"
 ---
 # <a name="factor-depreciation"></a>Értékcsökkenési tényező
 
@@ -28,7 +28,7 @@ ms.locfileid: "6746464"
 
 Ez a cikk az tényezős értékcsökkentési módszerről nyújt áttekintést.
 
-A szorzók a tárgyi eszközök értékcsökkenéséhez használt százalékos értékek. Ha az értékcsökkenési profilok beállítása során a **Mód** mezőjében a **Szorzó** értéket választja az **Értékcsökkenési profilok** oldalon, akkor növekvő, csökkenő vagy lineáris értékcsökkenést állíthat be:
+A szorzók a tárgyi eszközök értékcsökkenéséhez használt százalékos értékek. Ha az értékcsökkenési profilok beállítása során a **Mód** mezőjében a **Szorzó** értéket választja az **Értékcsökkenési profilok** oldalon, akkor növekvő, csökkenő vagy lineáris értékcsökkenést állíthat be.
 
 -   Ha a növekvő értékcsökkenést választja, akkor az értékcsökkenés összege minden értékcsökkenési időszakban emelkedik.
 -   Ha csökkenő értékcsökkenést állít be, akkor az értékcsökkenés időszakonkénti összege mindig csökken.

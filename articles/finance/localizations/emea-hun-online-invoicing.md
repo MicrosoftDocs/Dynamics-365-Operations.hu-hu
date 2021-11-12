@@ -2,7 +2,7 @@
 title: Online számlázási rendszer
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani az elektronikus jelentéskészítési (ER) konfigurációkat, valamint azt, hogy hogyan lehet beállítani és használni az elektronikus üzenetküldési funkciókat (EM) a valós idejű számlajelentéshez (RTIR).
 author: anasyash
-ms.date: 05/27/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 170184269378f89e4ed36495dc49caef3c70d5bbe52cbb2f4e3c14046975b4dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: b32711efa6cb0ed95022aa7621daf212f920ad41
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768251"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647675"
 ---
 # <a name="online-invoicing-system"></a>Online számlázási rendszer
 
@@ -36,6 +36,8 @@ A témakör a következő feladatok végrehajtásával kapcsolatban tartalmaz t�
 - ER-konfigurációk importálása és a alkalmazásspecifikus paraméterek beállítása.
 - Az EM (elektronikus üzenetküldés) funkció beállítása.
 - Az EM funkció használata az RTIR-hez.
+
+A magyarországi online számlázási rendszerben a TLS 1.2 használata szükséges. A TLS 1.2 engedélyezésével kapcsolatos további tudnivalókat lásd [A TLS 1.2 engedélyezése](/mem/configmgr/core/plan-design/security/enable-tls-1-2). 
 
 ## <a name="import-er-configurations"></a>ER-konfigurációk importálása
 
@@ -66,6 +68,9 @@ Az ER-konfigurációk a Microsoft globális tárából való letöltésével kap
 A számlázási adatoknak a magyar online számlázási rendszerbe történő jelentéséhez használt formátum bizonyos elemekhez (például mértékegység vagy sor kifejezési mutatók) meghatározott értékeket kér számozott listákból. Ezekhez az elemekhez az RTIR használata előtt be kell állítania az alkalmazásfüggő paramétereket, amelyeket az **RTIR számlaadatok (HU)** formátum használni fog.
 
 Ha befejezte a feltételek beállítását, módosítsa az **Állapot** mező értékét **Kész** értékre, mentse a módosításokat, és zárja be a lapot.
+
+> [!NOTE]
+> Javasoljuk, hogy engedélyezze az **Alkalmazásspecifikus paraméterek használata az elektronikus jelentéskészítési formátumok előző verzióiból** funkciót a **Szolgáltatáskezelés** munkaterületen. Ha ez a funkció engedélyezve van, akkor az ER-formátum korábbi verziójához beállított paraméterek automatikusan alkalmazhatók ugyanannak a formátumnak a későbbi verzióira is. Ha ez a funkció nincs engedélyezve, akkor explicit módon konfigurálnia kell az alkalmazásspecifikus paramétereket az egyes formátumverziókhoz. Az **Alkalmazásspecifikus paraméterek használata az elektronikus jelentéskészítési formátumok előző verzióiból** funkció a **Szolgáltatáskezelés** munkaterületen a Finance 10.0.23 verziójától érhető el. Az egyes jogi személyek ER-formátumának paramétereinek beállítását lásd: [Az ER-formátum paramétereinek beállítása jogi személyenként](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 ### <a name="line-expression-indicator"></a>Sorkifejezési mutató
 

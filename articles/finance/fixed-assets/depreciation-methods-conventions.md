@@ -1,7 +1,7 @@
 ---
 title: Értékcsökkenési módszerek és szabályok
 description: Ez a cikk betekintést nyújt a Microsoft Dynamics 365 Finance által támogatott értékcsökkenési szabályokba és az értékcsökkenési metódusokba.
-author: ShylaThompson
+author: moaamer
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3441
 ms.assetid: 1d8267b1-86a8-44bf-8814-f56b5d45a0ae
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: daa8f70e12a8c837a599ead5ef8b98aaf13e8cc827853de8b0332611ed2e257e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: e6abf98b4c1eee3657960a1912445171acc0686a
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713234"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674526"
 ---
 # <a name="depreciation-methods-and-conventions"></a>Értékcsökkenési módszerek és konvenciók
 
@@ -32,7 +32,7 @@ Különféle értékcsökkenési módszerek és szabályok közül lehet válasz
 
 Ha értékcsökkenési szabályokat használ, és módosítja egy eszköz értékcsökkenésének a futtatási dátumát, amellyel néhány értékcsökkenés kihagyását okozza, akkor a legutóbbi év értékcsökkenése kevesebb vagy több lehet a vártnál. Az értékcsökkenés kiigazítható az értékcsökkenés legutóbbi futtatási dátumának a módosításával befolyásolt értékcsökkenési időszakok számával.
 
-Ha például három évig használja a féléves értékcsökkenési szabályt, akkor az értékcsökkenés normális esetben 3 1/2 évig tart. Ha a 3 1/2 év alatt módosítja a legutóbbi értékcsökkenés futtatási dátumát, akkor az értékcsökkenés utolsó éve már nem tartozik a érintett időszakok közé. Ha három hónappal áthelyezi a dátumot, akkor az utolsó évben kilenc hónapnyi értékcsökkenés lesz, pedig normális esetben csak hat hónapnyi értékcsökkenés lenne.
+Ha például három évig használja a féléves értékcsökkenési szabályt, akkor az értékcsökkenés normális esetben három és fél évig tart. Ha a három és fél év alatt módosítja a legutóbbi értékcsökkenés futtatási dátumát, akkor az értékcsökkenés utolsó éve már nem tartozik a érintett időszakok közé. Ha három hónappal áthelyezi a dátumot, akkor az utolsó évben kilenc hónapnyi értékcsökkenés lesz, pedig normális esetben csak hat hónapnyi értékcsökkenés lenne.
 
 Az alábbi értékcsökkenési szabályok közül lehet választani.
 
@@ -46,12 +46,12 @@ Az alábbi értékcsökkenési szabályok közül lehet választani.
 -   Félév (következő év)
 
 A következő értékcsökkenési módok közül választhat.
--   Lineáris - élettartam
+-   Lineáris élettartam
 -   Degresszív
 -   Manuális
 -   Szorzó
 -   Felhasználás
--   Lineáris - hátralevő élettartam
+-   Lineáris hátralevő élettartam
 -   200% degresszív
 -   175% degresszív
 -   150% degresszív
@@ -75,7 +75,7 @@ A következő értékcsökkenési módok közül választhat.
 
 [Felhasználás értékcsökkenése](consumption-depreciation.md)
 
-[Lineáris - hátralevő élettartam értékcsökkenés](straight-line-life-remaining-depreciation.md)
+[Lineáris hátralevő élettartam értékcsökkenés](straight-line-life-remaining-depreciation.md)
 
 [125 százalékos degresszív értékcsökkenés](125-percent-reducing-balance-depreciation.md)
 

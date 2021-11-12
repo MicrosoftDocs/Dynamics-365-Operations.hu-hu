@@ -1,7 +1,7 @@
 ---
-title: Lineáris – élettartam szerinti értékcsökkenés
-description: Ez a cikk a Lineáris, élettartam szerinti értékcsökkenés módszeréről nyújt tájékoztatást.
-author: ShylaThompson
+title: Élettartamon alapuló lineáris értékcsökkenés
+description: Ez a témakör a Lineáris-hasznosélettartam értékcsökkenési módszeréről nyújt tájékoztatást.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 3341
 ms.assetid: ae5ceaeb-aeb7-45cd-b835-23cf9c5cf95a
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 985a1a23510a2cc698eb496cf9f3db2427d21119c1586ed69cf7e5ffd3d08867
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: b34cdf9485d38cdbf1362bd605841201a4295f26
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752199"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675271"
 ---
-# <a name="straight-line-service-life-depreciation"></a>Lineáris – élettartam szerinti értékcsökkenés
+# <a name="straight-line-service-life-depreciation"></a>Élettartamon alapuló lineáris értékcsökkenés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk a Lineáris, élettartam szerinti értékcsökkenés módszeréről nyújt tájékoztatást.
+Ez a témakör a Lineáris-hasznosélettartam értékcsökkenési módszeréről nyújt tájékoztatást.
 
 Ha lineáris vagy degresszív tárgyieszköz-értékcsökkenési profilt állít be, akkor a Lineáris - hátralevő élettartam érték is választható az Értékcsökkenési profilok képernyő Módszer mezőjében, és az értékcsökkenési profilhoz társított tárgyi eszközök értékcsökkenésének az eszköz fennmaradó élettartama lesz az alapja. Ez általában időszakonként azonos értékcsökkenési összeget eredményez. 
 
@@ -44,11 +44,11 @@ Naptár választása esetén az év január 1-től december 31-ig számít, akko
 A Naptár beállítás használata esetén a rendszer minden évben január elsején frissíti az értékcsökkenés alapját, amely jellemzően a nettó könyv szerinti érték csökkentve a maradványértékkel. Az ebben a témában szereplő későbbi példákban az értékcsökkenés alapja a számítások oszlop első kifejezésében szereplő számláló. 
 
 A Naptár lehetőség választása esetén a következő beállítások állnak rendelkezésre az Időszak gyakorisága mezőben, amelyek egész évben meghatározzák az értékcsökkenés feladási időpontját és összegét:
--   Éves felad egy összeget december 31-én.
--   Havonta: felad egy havi összeget minden naptári hó végén.
--   Negyedévente: Felad egy negyedéves összeget minden naptári negyedév végén (március 31., június 30., szeptember 30. és december 31.).
--   Féléves: féléves összeg feladása minden naptári félév végén (június 30. és december 31.).
--   A Naponta lehetőséget választva minden nap feladható egy tranzakció a napi értékcsökkenés módszerrel számolt értékcsökkenés összegével.
+- Éves felad egy összeget december 31-én.
+- Havonta: felad egy havi összeget minden naptári hó végén.
+- Negyedévente: Felad egy negyedéves összeget minden naptári negyedév végén (március 31., június 30., szeptember 30. és december 31.).
+- Féléves: féléves összeg feladása minden naptári félév végén (június 30. és december 31.).
+- A Naponta lehetőséget választva minden nap feladható egy tranzakció a napi értékcsökkenés módszerrel számolt értékcsökkenés összegével.
 
 Ha például az Évente beállítást választja, az éves értékcsökkenés csak egyszer, minden év december 31-én kerül feladásra. Ha a Havonta beállítást választja, a havi értékcsökkenés feladása havonta történik, az éves értékcsökkenési összeg egy-tizenkettedeként.
 
@@ -59,14 +59,14 @@ Ha a Pénzügyi beállítást választja az Értékcsökkenési év mezőben, ak
 Egy július 1-től június 30-ig tartó pénzügyi év esetén az értékcsökkenés számítása július 1-jén kezdődik. Az üzleti év 12 hónapnál hosszabb vagy rövidebb is lehet. Az értékcsökkenés minden egyes pénzügyi időszak végén módosul. A következő pénzügyi év hossza az új pénzügyi évnek a Pénzügyi naptárak lapon való létrehozásakor beállított pénzügyi időszakoktól függ. 
 
 Ha a Pénzügyi beállítást választja, az alábbi opciók lesznek elérhetőek az az Időszak gyakorisága mezőben:
--   Az Éves beállítás esetében az üzleti évre vonatkozó értékcsökkenés teljes összege a pénzügyi év utolsó napján egy összegként lesz feladva.
--   Pénzügyi időszak az üzleti évre vonatkozó teljes értékcsökkenési összeg kiszámítása, majd az Pénzügyi naptárak képernyőn vagy az egyes pénzügyi évek tárgyieszköznaptárán beállított pénzügyi időszakoknak megfelelő felbontása.
+- Az Éves beállítás esetében az üzleti évre vonatkozó értékcsökkenés teljes összege a pénzügyi év utolsó napján egy összegként lesz feladva.
+- Pénzügyi időszak az üzleti évre vonatkozó teljes értékcsökkenési összeg kiszámítása, majd az Pénzügyi naptárak képernyőn vagy az egyes pénzügyi évek tárgyieszköznaptárán beállított pénzügyi időszakoknak megfelelő felbontása.
 
 ## <a name="example-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Példa: változatlan tárgyi eszközök lineáris értékcsökkenése
 Tegyük fel, hogy egy tárgyi eszköz a következő jellemzőkkel rendelkezik.
 
 | Jellemző      | Érték  |
-|---------------------|--------|
+|:---------------------|--------:|
 | Beszerzési költség    | 11,000 |
 | Maradványérték       | 1000  |
 | Értékcsökkenés alapja   | 10 000 |
@@ -76,7 +76,7 @@ Tegyük fel, hogy egy tárgyi eszköz a következő jellemzőkkel rendelkezik.
 Minden évben azonos értékcsökkenési összeget eredményez. (Beszerzési ár - Maradványérték) / Élettartam években
 
 | Időszak | Az éves értékcsökkenési összeg számítása | Nettó könyv szerinti érték az év végén |
-|--------|-------------------------------------------|---------------------------------------|
+|:--------:|:-------------------------------------------|---------------------------------------:|
 | 1. év | (11 000-1000)/5 = 2000              | 9 000                                 |
 | 2. év | (11 000-1000)/5 = 2000              | 7 000                                 |
 | 3. év | (11 000-1000)/5 = 2000              | 5 000                                 |
@@ -90,7 +90,7 @@ Most tegyük fel, hogy ugyanehhez a tárgyi eszközhöz a 2. évben hozzáadunk 
 A beszerzés-módosítás élettartama azonos a tárgyi eszköz élettartamával, és a beszerzés idején kezdődik. A nettó könyv szerinti érték megmarad az 5. év végén, a beszerzés-módosítás nettó könyv szerinti értékének megfelelően. Az időszakos értékcsökkenés kiszámítása az alábbi táblázatban leírt módon történik.
 
 | Időszak | Az éves értékcsökkenési összeg számítása | Nettó könyv szerinti érték az év végén |
-|--------|-------------------------------------------|---------------------------------------|
+|:--------:|:-------------------------------------------|---------------------------------------:|
 | 1. év | 10 000/5 = 2000                        | 11 000 - 2000 = 9000                |
 | 2. év | 4000 (beszerzés helyesbítése)            | 9000 + 4000 =13 000                 |
 | 2. év | 14 000/5 = 2800                        | 13 000-2800 = 10 200               |

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 15fcfd72027e081e633fe68209cf85f528ff02d7
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576928"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647189"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -74,6 +74,12 @@ Ez a funkció egy eszközkezelési lapot ad hozzá a termelési üzem végrehajt
 Ezzel a funkcióval keresőmezőt adhat a feladatok listájához. A dolgozók a feladatazonosító megadásával rákereshetnek egy adott feladatra, vagy a rendelés azonosítójának megadásával megkereshetik egy adott rendelés összes feladatát. A dolgozók a billentyűzettel írhatják be vagy vonalkód beolvasásával adhatják meg az azonosítót. Ha használni szeretné, kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Feladatkeresés a gyártóüzem végrehajtási interfészén
+
+### <a name="enable-reporting-on-co-products-and-by-products"></a>Társ- és melléktermékek jelentésének engedélyezése
+
+Ez a funkció lehetővé teszi a dolgozók számára a gyártóterületi végrehajtási felület használatát a kötegelt rendelések előrehaladásának jelentéséhez. Ez a jelentésfunkció jelentéseket tartalmaz a társtermékekről és melléktermékekről. A funkció használatához kapcsolja be a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő funkciót:
+
+- Jelentés a termelési üzem végrehajtási felületéről származó társ- és melléktermékekről
 
 ## <a name="work-with-production-floor-execution-configurations"></a>A termelési üzem végrehajtási konfiguációinak használata
 

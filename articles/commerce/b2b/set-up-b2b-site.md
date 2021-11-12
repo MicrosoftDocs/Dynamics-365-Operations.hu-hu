@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: d77e1f3b5f8d558643b078dbe8e829e62f85120e4931d60224116a33f171fab3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
+ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721007"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7713748"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>B2B e-kereskedelmi webhely beállítása
 
@@ -37,7 +37,7 @@ A vállalatok közötti (B2B) e-kereskedelmi webhelyek néhány olyan kulcsfonto
 
 A webhelyszintű beállításokat a webhelykészítőben a **Webhelybeállítások \> Bővítmények** pontban érheti el. A B2B helyzetekben a következő két webhelyszintű beállítás érvényes:
 
-- **Vevői számlafizetések engedélyezése** – ez a tulajdonság lehetővé teszi a felhasználók számára, hogy vevői számlák segítségével fizessék ki a rendeléseket. A rendelkezésre álló értékek a következők: **Engedélyezve B2B vevők esetében**, **Engedélyezve B2C vevők esetében**, **Engedélyezve minden vevő esetében** és **Letiltva minden vevő esetében**. Ha a B2B webhely támogatja a vevői számlákat, akkor az **Engedélyezve B2C vevők esetében** lehetőséget kell kiválasztania.
+- **Vevői számlafizetések engedélyezése** – ez a tulajdonság lehetővé teszi a felhasználók számára, hogy vevői számlák segítségével fizessék ki a rendeléseket. A rendelkezésre álló értékek a következők: **Engedélyezve B2B vevők esetében**, **Engedélyezve B2C vevők esetében**, **Engedélyezve minden vevő esetében** és **Letiltva minden vevő esetében**. Ha a B2B webhely támogatja a vevői számlákat, akkor az **Engedélyezve B2B vevők esetében** lehetőséget kell kiválasztania.
 - **Rendelési mennyiségi korlátok engedélyezése** – ez a tulajdonság lehetővé teszi az egyes termékek vagy kategóriák esetében megrendelhető cikkek számának korlátozását. A rendelkezésre álló értékek a következők: **Engedélyezve B2B vevők esetében**, **Engedélyezve B2C vevők esetében**, **Engedélyezve minden vevő esetében** és **Letiltva minden vevő esetében**.
 
 > [!NOTE]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 3ba0b68ee61b130b8d0304d0bac6d1d720af8139
-ms.sourcegitcommit: baf82100f0aa7d5f5f47c7f54bc155d8a07beab5
+ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463840"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700379"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Első lépések az elektronikus számlázási használata során
 
@@ -84,6 +84,7 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
 | Norvég elektronikus számla (NO)    | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
 | Spanyol elektronikus számla (ES)      | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
 | PEPPOL elektronikus számla            | <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
+| Szaúd-arábiai elektronikus számla (SA)| <p>Vevői számlakontextus-modell</p><p>Számlamodell</p> |
 
 
 ## <a name="configure-the-application-setup"></a>Az alkalmazás beállításának konfigurálása
@@ -112,6 +113,7 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
     | Norvég elektronikus számla (NO)    | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
     | Spanyol elektronikus számla (ES)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
     | PEPPOL elektronikus számla            | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
+    | Szaúd-arábiai elektronikus számla (SA)| <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számlanapló</p><p>Projektszámla</p> |
 
 6. Minden egyes létrehozott táblanévhez válassza ki és adja meg a kontextusértéket a következő táblázatnak megfelelően.
 
@@ -133,6 +135,7 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
     | Norvég elektronikus számla (NO)    | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
     | Spanyol elektronikus számla (ES)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
     | PEPPOL elektronikus számla            | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
+    | Szaúd-arábiai elektronikus számla (SA)| <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Vevői számla kontextusmodell – vevői számla kontextusa</p><p>Vevői számla kontextusmodell – projektszámla kontextusa</p> |
 
 7. Minden egyes táblanévhez és kontextushoz válasszon ki és adjon meg egy üzletidokumentum-leképezés értéket a következő táblának megfelelően.
 
@@ -154,6 +157,7 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
     | Norvég elektronikus számla (NO)    | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
     | Spanyol elektronikus számla (ES)      | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
     | PEPPOL elektronikus számla            | <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
+    | Szaúd-arábiai elektronikus számla (SA)| <p>Értékesítési számla</p><p>Projektszámla</p> | <p>Számlamodell leképezése – vevői számla</p><p>Számlamodell leképezése – projektszámla</p> |
 
 
 ## <a name="country-specific-configuration-of-application-setup"></a>Az alkalmazás beállításainak országspecifikus konfigurációja
@@ -207,6 +211,8 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
     | Norvég elektronikus számla (NO)                     | Norvégia          |
     | PEPPOL elektronikus számla                             | Globális          |
     | Spanyol elektronikus számla (ES)                       | Spanyolország           |
+    | Szaúd-arábiai elektronikus számla (SA)                 | Szaúd-Arábia    |
+    
 
 4. Válassza a **Mentés** lehetőséget.
 
@@ -244,6 +250,7 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
 - [Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során](e-invoicing-mex-get-started.md)
 - [Első lépések az Olaszországra vonatkozó elektronikus számlázási használata során](e-invoicing-ita-get-started.md)
 - [Elektronikus vevői számlák Egyiptomban](emea-egy-e-invoices.md)
+- [Elektronikus vevői számlák Szaúd-Arábiában](emea-sau-e-invoices.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

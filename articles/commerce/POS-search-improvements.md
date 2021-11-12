@@ -2,7 +2,7 @@
 title: Termék- és vevőkeresés a pénztárban (POS)
 description: Ez a témakör áttekintést nyújt a Dynamics 365 Commerce termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
 author: ShalabhjainMSFT
-ms.date: 03/10/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 043a630408d6b03e528f0afd5443de73ad5f3802c968b9d9bd7a5c51bfe1fb03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
+ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716395"
+ms.lasthandoff: 10/26/2021
+ms.locfileid: "7700089"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Termék- és vevőkeresés a pénztárban (POS)
 
@@ -47,7 +47,7 @@ A helyi termékkeresés a következő terméktulajdonságokon belül történik:
 - Vonalkód
 - Keresési név
 
-### <a name="additional-local-product-search-capabilities"></a>További helyi termékkeresési funkciók
+### <a name="additional-local-product-search-capabilities-conventional-sql-full-text-search"></a>További helyi termékkeresési lehetőségek (SQL teljes szöveges keresés) 
 
 - A több kulcsszavas keresésnél (például a keresési kifejezések használatával végzett keresésnél), a kiskereskedők beállíthatják, hogy a keresési találatok közé a *bármelyik* keresési feltételnek megfelelő találatok vagy csak az *összes* keresési feltételeknek megfelelő találatok kerüljenek-e be. A funkció beállítása a pénztári funkcióprofilban, a **Termékkeresés** nevű új csoportban érhető el. Az alapértelmezett beállítás **Bármelyik keresési kifejezés egyeztetése**. Ez a beállítás egyúttal az ajánlott beállítás is. A **Bármely keresési kifejezésnek megfelel** beállítás használatakor minden olyan termék megjelenik a találatok között, amely egy vagy több teljes vagy részleges keresési kifejezést tartalmaz. Ezeket az eredményeket a rendszer automatikusan sorrendbe rendezi azon olyan termékek növekvő sorrendjében, amelyeknél a legtöbb a kulcsszóegyezés (teljes vagy részleges).
 
@@ -55,6 +55,8 @@ A helyi termékkeresés a következő terméktulajdonságokon belül történik:
 
     - A keresés az egyes terméktulajdonságok alapján történik. Például csak azokat a termékeket adja vissza, amelyeknél az összes keresett kulcsszó szerepel legalább egy terméktulajdonságnál.
     - A dimenziók között nincs keresés.
+> [!NOTE]
+> A pénztár funkció következő **Bármelyik keresési kifejezés egyeztetése**/**Összes keresési kifejezés egyeztetése** funkciói csak a **helyi** termékkeresési élményekre hagyományos SQL teljes szöveges keresés érvényes. Ez a konfiguráció nincs hatással a felhőalapú keresési élményekre. Az új keresőmotor saját speciális algoritmussal rendelkezik, amely támogatja a keresés relevanciáját a termékkeresési eredményekhez. 
 
 - A kiskereskedők a termékkeresést most úgy is beállíthatják, hogy keresési javaslatok jelenjenek meg a terméknevek beírása közben. A funkció egy új beállítása a pénztári funkcióprofilban, a **Termékkeresés** nevű csoportban érhető el. A beállítás neve **Keresési javaslatok mutatása gépelés közben**. A funkció segítségével az alkalmazottak gyorsan megtalálhatják a terméket, amelyet keresnek, mivel nem kell manuálisan beírniuk a teljes nevét.
 - A termékkeresési algoritmus mostantól a **Keresési név** terméktulajdonságban is keresi a keresési kifejezéseket.
@@ -147,7 +149,5 @@ Az alábbi lista bemutatja, hogy miben különbözik a felhőalapú vevőkeresé
 > Az Azure Cognitive Search szolgáltatással használt vevőkeresési funkció előzetes verziója korlátozott régiókban érhető el. A vevőkeresési funkció a következő régiókban *nem* érhető el:
 > - Brazília
 > - India
-> - Kanada
-> - Egyesült Királyság
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

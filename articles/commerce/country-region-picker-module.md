@@ -15,17 +15,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2021-08-12
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 3134e10c096525ec2d82365a25eff16a3c5d5e11
-ms.sourcegitcommit: d420b96d37093c26f0e99c548f036eb49a15ec30
-ms.translationtype: HT
+ms.openlocfilehash: 35d78cdcc356d35776940147e9b0afee0f0be2a2
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7472621"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674723"
 ---
 # <a name="countryregion-picker-module"></a>Ország/régió kiválasztómodulja
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör az ország/régió kiválasztómodulját ismerteti, és bemutatja, hogyan konfigurálhatjuk a Microsoft Dynamics 365 Commerce alkalmazásban.
 
@@ -35,13 +34,13 @@ Egy kanadai vevő például olyan webhely URL-címét kéri, amely nincs Kanadá
 
 ![Példa egy ország/régió kiválasztó párbeszédpanelére egy honlapon.](./media/Geo_country-region-module-insitu.png)
 
-## <a name="countryregion-picker-module-properties&quot;></a>Ország/régió kiválasztómoduljának tulajdonságai
+## <a name="countryregion-picker-module-properties"></a>Ország/régió kiválasztómoduljának tulajdonságai
 
 | Tulajdonság neve              | Érték       | Leírás |
 | -------------------------- | ----------- | ----------- |
 | Fejléc                    | Szöveg        | A párbeszédpanel tetején megjelenő fejléc. |
 | Alcímsor                 | Szöveg        | A fejléc alatt megjelenő alfejléc. |
-| Ország: Megjelenítési sztring    | Szöveg        | Egy URL-lehetőség megjelenítendő neve (például &quot;Kanada"). |
+| Ország: Megjelenítési sztring    | Szöveg        | Egy URL-lehetőség megjelenítendő neve (például "Kanada"). |
 | Ország: Megjelenítési alsztring | Szöveg        | Egy URL-beállítás (például "angol" vagy "francia") megjelenítési alsztringje. |
 | Ország: Ország képe     | Médiaeszköz | Nem kötelező kép, amely egy URL-beállításhoz van társítva (például a kanadai zászló képe). |
 | Ország: Ország URL-címe       | Szöveg        | Az URL-cím, amely megfelel annak a csatornának és területi beállításnak, amely az országhoz vagy régióhoz be van állítva a Commerce webhelyszerkesztő **Csatornák** lapján (**Webhely-beállítások \> Csatornák**). Ennek az URL-címnek pontosan meg kell egyeznie a **Csatornák** lapon beállított URL-címmel. |

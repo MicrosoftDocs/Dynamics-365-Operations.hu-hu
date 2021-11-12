@@ -1,8 +1,8 @@
 ---
-title: Forgalmi adókifizetések és kerekítési szabályok
-description: Ez a cikk bemutatja az adóhatóságokon történő kerekítési szabályok működésének módját és az áfaegyenleg kerekítését az Áfa kiegyenlítése és feladása során.
-author: ShylaThompson
-ms.date: 04/20/2020
+title: Áfakifizetések és kerekítési szabályok
+description: Ez a témakör bemutatja az adóhatóságokon történő kerekítési szabályok működésének módját és az áfaegyenleg kerekítését az Áfa kiegyenlítése és feladása során.
+author: kailiang
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,23 +12,23 @@ ms.reviewer: roschlom
 ms.custom: 6134
 ms.assetid: 7dcd3cf5-ebdf-4a9f-806c-1296c7da0331
 ms.search.region: Global
-ms.author: pacheren
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1838666b57bf2ce4eb78f5d3486c03e4c2447646a121a537efd6bffa0019b96f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 3a75d41195875c5ed48cbe8ce5f5e448f173e718
+ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760686"
+ms.lasthandoff: 10/31/2021
+ms.locfileid: "7726800"
 ---
-# <a name="sales-tax-payments-and-rounding-rules"></a>Forgalmi adókifizetések és kerekítési szabályok
+# <a name="sales-tax-payments-and-rounding-rules"></a>Áfakifizetések és kerekítési szabályok
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk bemutatja az adóhatóságokon történő kerekítési szabályok működésének módját és az áfaegyenleg kerekítését az Áfa kiegyenlítése és feladása során.
+Ez a témakör bemutatja az adóhatóságokon történő kerekítési szabályok működésének módját és az áfaegyenleg kerekítését az Áfa kiegyenlítése és feladása során.
 
-Rendszeres időközönként forgalmi adót be kell vallani és ki kell fizetni az adóhatóságoknak. Ez a Forgalmi adó oldalon a forgalmi adó rendezése és feladása folyamat használatával végezhető el. Az egy időszakra vonatkozó áfa az áfaszámlák alapján egyenlíthető ki, és az áfaegyenleg rákerül az áfakiegyenlítési számlára. A forgalmi adóegyenleg, amely az ÁFA elszámolási számláján lesz könyvelve, kerekíthető az adóhatóságok elvárásai szerint, egy kerekítési szabály felállításával a Forgalmi adó lapon. 
+Rendszeres időközönként forgalmi adót be kell vallani és ki kell fizetni az adóhatóságoknak. Ez a művelet az **Áfa** oldalon az Áfa kiegyenlítése és feladása folyamat használatával végezhető el. Az egy időszakra vonatkozó áfa az áfaszámlák alapján egyenlíthető ki, és az áfaegyenleg rákerül az áfakiegyenlítési számlára. A forgalmi adóegyenleg, amely az ÁFA elszámolási számláján lesz könyvelve, kerekíthető az adóhatóságok elvárásai szerint, egy kerekítési szabály felállításával a **Forgalmi adó** lapon. 
 
 A kerekítési különbség rákerül a Forgalmi adó kerekítési számlájára, amelyet a Számlák automatikus tranzakciókhoz mezőben, a Főkönyvben kell kiválasztani.
 
@@ -63,59 +63,60 @@ Az alábbi táblázat bemutatja, hogyan kerekítjük a 98 765,43 összeget az e
 
 ### <a name="normal-round-and-round-precision-is-001"></a>Normál kerekítés és kerekítési pontosság 0,01
 
-<table>
+```<table>
   <tr>
-    <td>Kerekítés
+    <td>Rounding
     </td>
-    <td>Számítási folyamat
+    <td>Calculation process
     </td>
   </tr>
     <tr>
-    <td>kerekítés(1,015, 0,01) = 1,02
+    <td>round(1.015, 0.01) = 1.02
     </td>
     <td>
       <ol>
-        <li>kerekítés(1,015 / 0,01, 0) = kerekítés(101,5, 0) = 102
+        <li>round(1.015 / 0.01, 0) = round(101.5, 0) = 102
         </li>
-        <li>102 * 0,01 = 1,02
-        </li>
-      </ol>
-    </td>
-  </tr>
-    <tr>
-    <td>kerekítés(1,014, 0,01) = 1,01
-    </td>
-    <td> <ol>
-        <li>kerekítés(1,014 / 0,01, 0) = kerekítés(101,4, 0) = 101
-        </li>
-        <li>101 * 0,01 = 1,01
+        <li>102 * 0.01 = 1.02
         </li>
       </ol>
     </td>
   </tr>
     <tr>
-    <td>kerekítés(1,011, 0,02) = 1,02
+    <td>round(1.014, 0.01) = 1.01
     </td>
     <td> <ol>
-        <li>kerekítés(1,011 / 0,02, 0) = kerekítés(50,55, 0) = 51
+        <li>round(1.014 / 0.01, 0) = round(101.4, 0) = 101
         </li>
-        <li>51 * 0,02 = 1,02
+        <li>101 * 0.01 = 1.01
         </li>
       </ol>
     </td>
   </tr>
     <tr>
-    <td>kerekítés(1,009, 0,02) = 1,00
+    <td>round(1.011, 0.02) = 1.02
     </td>
     <td> <ol>
-        <li>kerekítés(1,009 / 0,02, 0) = kerekítés(50,45, 0) = 50
+        <li>round(1.011 / 0.02, 0) = round(50.55, 0) = 51
         </li>
-        <li>50 * 0,02 = 1,00
+        <li>51 * 0.02 = 1.02
+        </li>
+      </ol>
+    </td>
+  </tr>
+    <tr>
+    <td>round(1.009, 0.02) = 1.00
+    </td>
+    <td> <ol>
+        <li>round(1.009 / 0.02, 0) = round(50.45, 0) = 50
+        </li>
+        <li>50 * 0.02 = 1.00
         </li>
       </ol>
     </td>
   </tr>
 </table>
+```
 
 > [!NOTE]                                                                                  
 > Saját előny választása esetén a kerekítés mindig a jogi személy előnyére történik. 

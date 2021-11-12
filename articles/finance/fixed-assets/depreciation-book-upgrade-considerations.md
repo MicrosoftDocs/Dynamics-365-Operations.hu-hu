@@ -1,7 +1,7 @@
 ---
 title: Értékcsökkenési könyv frissítésének áttekintése
-description: 'A korábbi kiadásokban két értékelési fogalom vonatkozott a tárgyi eszközökre: értékmodellek és értékcsökkenési könyvek.'
-author: ShylaThompson
+description: Ez a témakör a Tárgyi eszközök aktuális könyv funkcióját ismerteti. Ez a funkció a korábbi verziókban elérhető értékmodellfunkción alapul, de magában foglal minden olyan funkciót, amelyek korábban csak az értékcsökkenési könyvekben szerepeltek.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,25 +13,25 @@ ms.custom:
 - intro-internal
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
 ms.search.region: global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b1d14154cd2e9bd18a886ba490891a02afeb0b05
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
-ms.translationtype: HT
+ms.openlocfilehash: c36e0ab53f8a10e81e1bed207417861066dd6917
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344714"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675152"
 ---
 # <a name="depreciation-book-upgrade-overview"></a>Értékcsökkenési könyv frissítésének áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-A korábbi kiadásokban két értékelési fogalom vonatkozott a tárgyi eszközökre - értékmodellek és értékcsökkenési könyvek. A Microsoft Dynamics 365 for Operations 1611-es verziójában az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv. Ez a témakör olyan szempontokat ismertet, amelyeket figyelembe kell venni a frissítéshez. 
+Ez a témakör a Tárgyi eszközök aktuális könyv funkcióját ismerteti. Ez a funkció a korábbi verziókban elérhető értékmodellfunkción alapul, de magában foglal minden olyan funkciót, amelyek korábban csak az értékcsökkenési könyvekben szerepeltek. Az értékmodell funkcióit és az értékcsökkenési könyv funkcióit egyetlen koncepció alapján egyesítették, ennek neve: könyv. A könyv funkcióval egyetlen lap-, lekérdezés- és jelentéskészletet használhat a szervezet összes tárgyieszköz-folyamatában. Ez a témakör néhány olyan dolgot tartalmaz, amelyeket a frissítés előtt érdemes megfontolni. 
 
-A frissítési folyamat áthelyezi a meglévő beállításokat és az összes meglévő tranzakciót az új könyv struktúrájának megfelelően. Az értékmodellek megmaradnak a jelenleg állapotukban, olyan könyvként, amely a főkönyvbe ad fel. Az értékcsökkenési könyvek áthelyezésre kerülnek egy olyan könyvbe, amelynél a **Feladás a főkönyvbe** opció beállítása **Nem**. Az értékcsökkenési könyvhöz tartozó naplónevek átkerülnek a főkönyvi napló nevéhez, amelynél a feladási réteg beállítása **Nincs**. Az értékcsökkenési könyv tranzakciói átkerülnek a tárgyieszköz-tranzakciókhoz. 
+A frissítési folyamat áthelyezi a meglévő beállításokat és az összes meglévő tranzakciót az új könyv struktúrájának megfelelően. Az értékmodellek megmaradnak a jelenleg állapotukban, olyan könyvként, amely a főkönyvbe ad fel. Az értékcsökkenési könyvek áthelyezésre kerülnek egy olyan könyvbe, amelynél a Feladás a főkönyvbe opció beállítása Nem. Az értékcsökkenési könyvhöz tartozó naplónevek átkerülnek a főkönyvi napló nevéhez, amelynél a feladási réteg beállítása Nincs. Az értékcsökkenési könyv tranzakciói átkerülnek a tárgyieszköz-tranzakciókhoz.
 
-Mielőtt futtatná az adatfrissítést, meg kell ismernie azt a két lehetőséget, amely rendelkezésre áll ahhoz, hogy az értékcsökkenési könyv naplósorait a tranzakciók bizonylataihoz frissítse, és ismernie kell azt a számsorozatot, amelyet a program a bizonylatszám-sorozatokhoz alkalmaz. 
+Mielőtt futtatná az adatfrissítést, meg kell ismernie azt a két lehetőséget, amely rendelkezésre áll ahhoz, hogy az értékcsökkenési könyv naplósorait a tranzakciók bizonylataihoz frissítse, és ismernie kell azt a számsorozatot, amelyet a program a bizonylatszám-sorozatokhoz alkalmaz.
 
 1. módszer:  **Rendszer által meghatározott számsorozat** – Ez az alapértelmezett beállítás a teljesítmény javításához. A frissítés nem fogja használni a számsorozat-keretrendszert, hanem felosztja a bizonylatokat egy készlet alapú megközelítés segítségével. A frissítés után úgy jön létre az új számsorozat, hogy a **Következő számkészlet** a frissített tranzakciókon alapul a megfelelő módon. Alapértelmezés szerint az alkalmazott számsorozat a FADBUpgr\#\#\#\#\#\#\#\#\# formátumban lesz. Amikor ezt a módszert alkalmazzák, rendelkezésre áll néhány paraméter a formátum módosítására:
 
@@ -53,7 +53,7 @@ Mielőtt futtatná az adatfrissítést, meg kell ismernie azt a két lehetőség
 -   **Számsorozat kódja** – a számsorozatkód kódja.
     -   Állandó név: **NumberSequenceExistingCode**
     -   Alapértelmezett érték: nincs alapértelmezés, ezt frissíteni kell a számsorozat kódjának megfelelően.
--   **Közös számsorozat** – a számsorozat hatókörének azonosítására szolgáló logikai érték. Ha a számsorozatok közösek az összes vállalatnál, használja az "igaz" lehetőséget, ha a hatókör egyetlen vállalatra korlátozódik, használja a "hamis" lehetőséget. A „hamis” használatakor a megadott nevű számsorozatnak minden olyan vállalatnál léteznie kell, amely tartalmazza az értékcsökkenési könyv tranzakcióit. Megosztott számsorozatok minden olyan partíciónál léteznek, amelyek tartalmazzák az értékcsökkenési könyv tranzakcióit.
+-   **Közös számsorozat** – A számsorozat hatókörének azonosítására szolgáló logikai érték. Ha a számsorozatok közösek az összes vállalatnál, használja az "igaz" lehetőséget, ha a hatókör egyetlen vállalatra korlátozódik, használja a "hamis" lehetőséget. A „hamis” használatakor a megadott nevű számsorozatnak minden olyan vállalatnál léteznie kell, amely tartalmazza az értékcsökkenési könyv tranzakcióit. Megosztott számsorozatok minden olyan partíciónál léteznek, amelyek tartalmazzák az értékcsökkenési könyv tranzakcióit.
     -   Állandó név: **NumberSequenceExistingIsShared**
     -   Alapértelmezett érték: igaz
 

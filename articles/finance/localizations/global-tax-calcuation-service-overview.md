@@ -2,7 +2,7 @@
 title: Adószámítás áttekintése
 description: Ez a témakör az adószámítási funkció általános hatókörét és jellemzőit ismerteti.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 72895cc18368ebf38818f30510cec999391c7910
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
-ms.translationtype: HT
+ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394586"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647057"
 ---
 # <a name="tax-calculation-overview"></a>Adószámítás áttekintése
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Az adószámítás egy hiperskálázható több-bérlős szolgáltatás, amely lehetővé teszi a Global Tax Engine számára, hogy automatizálja és egyszerűsítse az adómeghatározási és számítási folyamatot. Az adómotor teljesen konfigurálható. A konfigurálható elemek közé tartozik többek között az adóköteles adatmodell, az adókód, az adóalkalmazási mátrix és az adószámítási képlet. Az adómotor a Microsoft Azure alapszolgáltatási platformon fut, és modern technológiát és exponenciális méretezhetőséget kínál.
 
@@ -120,6 +118,10 @@ A 10.0.21-es verzió a következő tranzakciókat támogatja:
     - Átmozgatási rendelések – szállítás
     - Átmozgatási rendelés – bevételezés
 
+A 10.0.23-es verzió a következő tranzakciókat támogatja: 
+
+- Szabadszöveges számla
+
 ## <a name="supported-countriesregions"></a>Támogatott országok/régiók
 
 Az adószámítás jogi személyenként engedélyezhető. 
@@ -145,6 +147,28 @@ A 10.0.21-es verzió a jogi személyek elsődleges címének következő ország
 - Svájc
 - Egyesült Királyság
 - Egyesült Államok
+
+A 10.0.22-es verzió a jogi személyek elsődleges címének következő országait/régióit támogatja:
+
+- Ausztrália
+- Bahrein
+- Kanada
+- Egyiptom
+- Hongkong (KKT)
+- Kuvait
+- Új-Zéland
+- Omán
+- Katar
+- Szaúd-arábiai
+- Dél-Afrika
+- Egyesült Arab Emírségek
+
+A 10.0.23-es verzió a jogi személyek elsődleges címének következő országait/régióit támogatja:
+
+- Thaiföld
+- Japán
+- Malajzia
+- Szingapúr
 
 ## <a name="related-resources"></a>Kapcsolódó erőforrások
 

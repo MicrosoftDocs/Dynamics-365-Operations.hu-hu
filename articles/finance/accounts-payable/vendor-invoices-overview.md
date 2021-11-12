@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3fac6a0232f7e51e859fcc5b23244be092ce8d76123ec42f586063a02abab603
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: e846cde14fe078d6675ec31d1a3271f751dd6468
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722791"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647140"
 ---
 # <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
 
@@ -71,13 +71,10 @@ A szervezet használhat meghatározott munkafolyamatokat a szállítói számlá
 
 A következőkben többféle módot ismerhet meg, amelyekkel megakadályozhatja, hogy egy számla beküldésre kerüljön a munkafolyamatba.
 
-- **A számla végösszege és a regisztrált végösszeg nem egyenlő.** A számlát benyújtó személynek figyelmeztetés érkezik, ha az összegek nem egyeznek meg. A figyelmeztetés lehetőséget biztosít az egyenlegek korrigálására, mielőtt újból benyújtja a számlát a munkafolyamatba. Ez a funkció akkor érhető el , ha a **Munkafolyamatba küldés tiltása, ha a számla végösszege és a regisztrált végösszeg nem egyeznek** paraméter a **Funkciókezelés** oldalon be van kapcsolva. 
-
+- **A számla végösszege és a regisztrált végösszeg nem egyenlő.** A számlát benyújtó személynek figyelmeztetés érkezik, hogy az összegek nem egyeznek meg. A figyelmeztetés lehetőséget biztosít az egyenlegek korrigálására, mielőtt újból benyújtja a számlát a munkafolyamatba. Ez a funkció akkor érhető el , ha a **Munkafolyamatba küldés tiltása, ha a számla végösszege és a regisztrált végösszeg nem egyeznek** paraméter a **Funkciókezelés** oldalon be van kapcsolva. 
 - **A számla nem hozzárendelt költségeket tartalmaz.** A számlát benyújtó személy figyelmeztetést kap, hogy a számlán hozzárendeletlen költségek találhatók, így a számlának a munkafolyamatba való újraküldése előtt javítani tudja a számlát. Ez a funkció akkor érhető el , ha a **Munkafolyamatba küldés tiltása, ha a szállítói számlán hozzárendeletlen költéségek találhatók** paraméter a **Funkciókezelés** oldalon be van kapcsolva.
-
 - **A számla sorszáma megegyezik egy másik feladott számla sorszámával.** A számlát beküldő személy üzenetet kap, amely tájékoztatja, hogy ismétlődő számú számla található. Az ismétlődő szám a számla munkafolyamatba való újrabevallása előtt kijavítható. Ez a figyelmeztetés akkor jelenik meg, ha a Kötelezettségek pont **Használt számlaszám ellenőrzése** paraméterének beállítása **Ismétlődések tiltása**. Ez a funkció akkor érhető el **Munkafolyamatba küldés tiltása, ha a számlaszám már létezik egy feladott számlán, és az Ön rendszere nincs beállítva ismétlődő számlaszámok fogadására** paraméter a **Funkciókezelés** oldalon be van kapcsolva.
-
-- **A számla olyan sort tartalmaz, ahol a számlázott mennyiség kisebb, mint az egyező termékbevételezési mennyiség.** A számlát beküldő vagy feladni próbáló személy üzenetet kap arról, hogy a mennyiségek nem egyeznek. Az üzenet lehetőséget biztosít az értékeknek a számla munkafolyamatba való újbóli beküldése előtti korrigálására. Ez a funkció akkor áll rendelkezésre, ha a **Szállítói számlák munkafolyamatba történő benyújtásának és feladásának blokkolása** paraméter be van kapcsolva a **Funkciókezelés** oldalon, és a **Munkafolyamatba történő benyújtás és feladás blokkolása** paraméter be van kapcsolva a **Kötelezettségek paraméterei** oldalon.  
+- **A számla olyan sort tartalmaz, ahol a számlázott mennyiség kisebb, mint az egyező termékbevételezési mennyiség.** A számlát beküldő vagy feladni próbáló személy üzenetet kap arról, hogy a mennyiségek nem egyeznek. Az üzenet lehetőséget biztosít az értékeknek a számla munkafolyamatba való újbóli beküldése előtti korrigálására. Ez a funkció akkor áll rendelkezésre, ha a **Szállítói számlák munkafolyamatba történő benyújtásának és feladásának blokkolása** paraméter be van kapcsolva a **Funkciókezelés** oldalon, és a **Munkafolyamatba történő benyújtás és feladás blokkolása** paraméter be van kapcsolva a **Kötelezettségek paraméterei** oldalon.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Szállítói számlák egyeztetése a termékbevételezésekkel
 
@@ -122,9 +119,32 @@ A helyreállíthatatlan hiba miatt leállított munkafolyamat-példány **Helyre
 A **Munkafolyamat-előzmények** oldal segítségével visszaállíthatja a munkafolyamat állapotát **Tervezet** értékre. Ezt az oldalt a **Szállítói számla**  vagy a **Közös > Lekérdezések > Munkafolyamatok** lehetőséghez navigálva nyithatja meg. A munkafolyamat állapotának **Tervezet** értékre való visszaállításához válassza ki a **Visszahívás** lehetőséget. A munkafolyamat-állapotot úgy is visszaállíthatja tervezetnek, ha a **Szállítói számla** vagy a **Függőben lévő szállítói számlák** oldalon kiválasztja a **Visszahívás** műveletet. Miután a munkafolyamat állapotát visszaállította **Tervezet** állapotba, szerkeszthetővé válik a **Szállítói számlák** lapon.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>A számla végösszegének megtekintése a függőben lévő szállítói számlák lapon
+
 A függőben lévő szállítói számlák lapon megtekintheti a számla összegét a **Függőben lévő szállítói számlák** oldalon a **Kötelezettségek paraméterei** oldalon lévő **Számla végösszegének megjelenítése a függő szállítói számlák listájában** paraméter engedélyezésével. 
 
+## <a name="vendor-open-transactions-report"></a>Nyitott szállítói tranzakciók – jelentés
 
+A **Nyitott szállítói tranzakciók** jelentés részletes adatokat nyújt az egyes szállítókhoz tartozó, a megadott dátumon nyitott tranzakciókról. Ezt a jelentést gyakran használják auditálási eljárás során a szállító könyvi tranzakciók és a főkönyvi számlatranzakciók közötti egyenlegek ellenőrzésére.
+
+A jelentés minden tranzakcióhoz a következő adatokat tartalmazza:
+
+- Számla száma
+- Tranzakció dátuma
+- Bizonylatszám
+- A tranzakció összege a tranzakció pénznemében és a könyvelési pénznemben
+- Jóváírás egyenlege a tranzakció pénznemében és a könyvelési pénznemben
+- Terhelés egyenlege a tranzakció pénznemében és a könyvelési pénznemben
+- Részösszeg a könyvelési pénznemben
+- Fizetési határidő
+
+### <a name="filter-the-data-on-the-report"></a>A jelentésen látható adatok szűrése
+
+A **Szállító nyitott tranzakciói** jelentés létrehozásakor a következő alapértelmezett paraméterek állnak rendelkezésre. Ezekkel szűrheti a jelentésben lévő adatokat.
+
+- **Jövőbeli kiegyenlítés kizárása** – jelölje be ezt a jelölőnégyzetet, ha ki szeretné zárni a tranzakciókat, amelyek azután a dátum után vannak kiegyenlítve, amely meg van adva a **Nyitott tranzakciók ekkor** mezőben.
+- **Nyitott tranzakciók ekkor** – Adjon meg egy dátumot, hogy tartalmazza az adott napon nyitott tranzakciókat. Ha nem ad meg dátumot, akkor ez a mező a maximális dátumra lesz állítva. (A legkésőbbi dátum az a legkésőbbi dátum, amit a rendszer elfogad, tehát 2154 december 31.)Alapértelmezés szerint a jelentés következő futtatásakor ebben a mezőben az utolsó korábban beállított dátum lesz beállítva.
+
+A **Szerepeltetni kívánt rekord** mezővel tovább korlátozhatja a jelentésben szereplő tranzakcióadatokat.
 
 ## <a name="additional-resources"></a>További erőforrások
 

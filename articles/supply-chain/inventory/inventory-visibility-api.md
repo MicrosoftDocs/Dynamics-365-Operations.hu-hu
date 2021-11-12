@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 43fa94118c4d76e021bb635d720208d5f971db19
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
-ms.translationtype: HT
+ms.openlocfilehash: 1899969ddbbccafde3f7bb06a897ea7c0f2d656b
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592488"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678787"
 ---
 # <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
 
@@ -374,8 +374,6 @@ A következő példa a törzs tartalmának mintáját mutatja. Ennek az API-nak 
 ```
 
 ## <a name="create-reservation-events"></a>Foglalási események létrehozása
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 A *Foglalási* API használatához meg kell nyitnia a foglalási funkciót, és ki kell töltenie a foglalási konfigurációt. További információért lásd: [Foglalási konfiguráció (opcionális)](inventory-visibility-configuration.md#reservation-configuration).
 

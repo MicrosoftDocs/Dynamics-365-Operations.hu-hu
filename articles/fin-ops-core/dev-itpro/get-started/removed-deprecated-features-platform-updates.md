@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
 author: sericks007
-ms.date: 09/27/2021
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 956ead503d426bb6cdfd136957c7f9dfa157bc08
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
-ms.translationtype: HT
+ms.openlocfilehash: 0065f5c101237de49ae362ecd3378ec5046dbf4b
+ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595145"
+ms.lasthandoff: 10/29/2021
+ms.locfileid: "7725049"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
 
@@ -31,6 +31,64 @@ Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a p
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
 A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](/dynamics/s-e/global/axtechrefrep_61) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+
+## <a name="feature-removal-effective-october-2021"></a>2021. októbertől hatályos funkcióeltávolítás
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL-jelentések a LifeCycle Services (LCS) szolgáltatásban
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Minden tevékenységet és megfigyelést belsőleg, a platformon keresztül, az automatizáláson keresztül hajt végre a rendszer. Ehhez nem szükséges kézi beavatkozás.|
+| **Felváltotta másik szolgáltatás?**   | Igen, jelenleg egy automatizált rendszer van, amely ezeket a képességeket elavulttá teszi. |
+| **Érintett területek**         | SQL-jelentések: jelenlegi DTU, aktuális DTU-részletek, Zárolási részletek lekérdezése, Aktuális csomagútmutató listája, Lekérdezésazonosítók listájának lekérdezése, SQL-lekérdezési csomag lekérése adott csomagazonosítóhoz, Lekérdezési csomagok és végrehajtási állapotok lekérdezése, Szabályozási konfiguráció lekérdezése, Várakozási statisztikák lekérése, Legdrágább lekérdezések listája |
+| **Telepítési beállítás**              | Felhőtelepítés: a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
+| **Állapot**                         | Kivéve |
+
+### <a name="azure-sql-actions-in-lcs"></a>Azure SQL-műveletek az LCS szolgáltatásban
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az LCS szolgáltatásban elavult néhány SQL-művelet. Minden tevékenységet és megfigyelést belsőleg, a platformon keresztül, az automatizáláson keresztül hajt végre a rendszer. Ehhez nem szükséges kézi beavatkozás. |
+| **Felváltotta másik szolgáltatás?**   | Igen, jelenleg egy automatizált rendszer van, amely ezeket a képességeket elavulttá teszi. |
+| **Érintett területek**         | SQL-műveletek: Csomagútmutató létrehozása a tervazonosító kényszerítésére, Csomagútmutató létrehozása táblatippek hozzáadásához, Csomagútmutató eltávolítása, Oldalzárolások letiltása/engedélyezése és eszkaláció zárolása, Tábla statisztikáinak frissítése, Index újjáépítése, Index létrehozása |
+| **Telepítési beállítás**              | Felhőtelepítés: a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
+| **Állapot**                         | Kivéve |
+
+
+## <a name="feature-deprecation-effective-october-2021"></a>Funkciók eltávolításával kapcsolatos értesítés; 2021 októberétől érvényes
+
+### <a name="show-related-document-attachments-feature"></a>"Kapcsolódó dokumentummellékletek megjelenítése" funkció
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A funkció nem várt eredményeket adott vissza. |
+| **Felváltotta másik szolgáltatás?**   | Nem. A funkcióval kapcsolatos további tervek kommunikálását a szokásos kiadási hullám közzétételi folyamata fogja tartalmazni. |
+| **Érintett területek**         | Webes ügyfél - Dokumentummelléklet-élmény |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult  |
+
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.23 verziójához
+
+### <a name="ondbsynchronize-event"></a>OnDBSynchronize esemény
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az esemény végrehajtásához nincs vezérlő. |
+| **Felváltotta másik szolgáltatás?**   | Igen, helyezze át az **OnDBSynchronzie** esemény által feliratkozott meglévő metódusokat egy SysSetup kiterjesztett osztályba. |
+| **Érintett területek**         | Adatbázis szinkronizálása |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult. A tervezett eltávolítás dátuma: 2022. október. |
+
+
+### <a name="systemnotificationsmanageraddnotification-api"></a>SystemNotificationsManager.AddNotification API
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Microsoft további paramétereket kér az értesítések hozzáadásakor. |
+| **Felváltotta másik szolgáltatás?**   | Igen, a **SystemNotificationsManager.AddSystemNotification()** API. Az API-hoz explicit módon be kell állítania a Létrehozott értesítésekhez az ExpirationDateTime és a RuleID értékeket. |
+| **Érintett területek**         | Webes ügyfél |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult. A tervezett eltávolítás dátuma: 2023. április. |
 
 ## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.21 verziójához
 

@@ -2,7 +2,7 @@
 title: A szöveges kategóriába tartozó ER-függvények listája
 description: A témakör tájékoztatást nyújt az Elektronikus jelentéskészítésben (ER) támogatott szövegfüggvényekről.
 author: NickSelin
-ms.date: 04/02/2020
+ms.date: 09/09/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b51fc00ba512677ccac9fcfbd26d2b0650f36f3b42eb81fc07d37417fb6d4d4d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: b69b16e4a40b5370c3a73f2aee40a8a86b952d9e
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741014"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647560"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>A szöveges kategóriába tartozó ER-függvények listája
 
@@ -32,7 +32,7 @@ Az Elektronikus jelentéskészítés (ER) szövegfüggvényei a *Karakterlánc* 
 | Funkció | Leírás |
 |----------|-------------|
 | [Char](er-functions-text-char.md) | Ez a függvény olyan *Karakterlánc* értéket ad eredményül, amely egyetlen karaktert mutat be, amelyre a megadott Unicode szám hivatkozik. |
-| [Összefűzés](er-functions-text-concatenate.md) | Ez a függvény az összes megadott karakterláncot *Karakterlánc* értékként adja vissza, miután egy karakterláncba lettek egyesítve. |
+| [Összefűzés](er-functions-text-concatenate.md) | Ez a függvény az összes megadott karakterláncot *Sztring* értékként adja vissza, miután egy karakterláncba lettek egyesítve. |
 | [Formátum](er-functions-text-format.md) | Ez a függvény a megadott karakterláncot egy *Karakterlánc* értékként adja vissza, miután az **%N** minden előfordulását az *N*. argumentummal helyettesítve formázza. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Ez a függvény egy adott *Felsorolás* értéket keres a megadott felsorolási adatforrásban a *Karakterlánc* értékként megadott felsorolási név használatával. Ha a *Felsorolás* értéke megtalálható, a függvény azt visszaadja. |
 | [GuidValue](er-functions-text-guidvalue.md) | Ez a függvény a megadott *Karakterlánc* típusú bemenetet *GUID* típusú adatelemmé konvertálja. |
@@ -40,7 +40,8 @@ Az Elektronikus jelentéskészítés (ER) szövegfüggvényei a *Karakterlánc* 
 | [Balra](er-functions-text-left.md) | Ez a függvény olyan *Karakterlánc* értéket ad vissza, amely megadott számú karaktert mutat a megadott karakterlánc kezdete után. |
 | [Len](er-functions-text-len.md) | Ez a függvény olyan *Egész* értéket ad vissza, amely a karakterek számát mutatja a megadott karakterláncban. |
 | [Lower](er-functions-text-lower.md) | Ez a függvény *Karakterlánc* értékként adja vissza a megadott karakterláncot, miután a program kisbetűssé alakította. |
-| [Mid](er-functions-text-mid.md) | Ez a függvény olyan *Karakterlánc* értéket ad vissza, amely megadott számú karaktert mutat a megadott karakterlánc adott pozíciójától kiindulva. |
+| [Mid](er-functions-text-mid.md) | Ez a függvény olyan *[Sztring](er-formula-supported-data-types-primitive.md#string)* értéket ad vissza, amely megadott számú karaktert mutat a megadott karakterlánc adott pozíciójától kiindulva. |
+| [NewGUID](er-functions-text-newguid.md) | Ez a függvény egy újonnan létrehozott *[GUID](er-formula-supported-data-types-primitive.md#guid)* értéket ad eredményül. |
 | [NumberFormat](er-functions-text-numberformat.md) | Ez a függvény egy *Karakterlánc* értéket ad eredményül, amely a megadott számot mutatja a megadott formátumban és egy opcionálisan meghatározott területi beállításokban. |
 | [NumeralsToText](er-functions-text-numeralstotext.md) | Ez a függvény *Karakterlánc* értékként adja vissza a megadott számot, miután kiírta (azaz szöveges karakterlánccá konvertálta) a megadott nyelven. |
 | [PadLeft](er-functions-text-padleft.md) | Ez a funkció egy adott hosszúságú *Karakterlánc* értéket ad vissza, amelyben a megadott karakterlánc eleje egy vagy több megadott karakterrel van kitöltve. |

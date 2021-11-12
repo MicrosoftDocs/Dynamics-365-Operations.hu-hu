@@ -1,7 +1,7 @@
 ---
 title: Felhasználás értékcsökkenése
 description: Ez a cikk az értékcsökkenés felhasználási módszeréről nyújt áttekintést.
-author: ShylaThompson
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 13751
 ms.assetid: d25a681f-49a5-4bfc-aa76-1c6373e35dd8
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0bc761160dc7d46519aad13ec2575cb882fc0641830b76952763b54834a64d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: d9b97caefcb650f289e7f29f14473e0a22aa5d88
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747489"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674304"
 ---
 # <a name="consumption-depreciation"></a>Felhasználás értékcsökkenése
 

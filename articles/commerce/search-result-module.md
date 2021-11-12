@@ -2,7 +2,7 @@
 title: Keresési eredmények modul
 description: Ez a témakör a keresési eredmények modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 05/28/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c3fce73b1827de12bc8d40e1abb43ad000b8aa1c38812221dfae95010513ede1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: dc4a01e520379a74ca3b21c1d588531412e762be
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712405"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647512"
 ---
 # <a name="search-results-module"></a>Keresési eredmények modul
 
@@ -83,6 +83,58 @@ A következő lépésekkel lehet hozzáadni egy keresési eredmények modult egy
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
 1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a létrehozott **Keresési eredmények** sablont, írja be a **Kategóriaoldal** lehetőséget az **OIdal neve** pontba, majd kattintson az **OK** gombra. Mivel a sablonban minden érték be van állítva, az oldal készen áll a közzétételre.
 1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
+
+## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Készletérzékenység engedélyezése a keresési eredmények modulban
+
+Az ügyfelek általában azt várják, hogy egy e-commerce webhely a böngészési élmény során figyelembe vegye a készletet, hogy eldöntsék, mi történjen, ha egy termékből nincs készlet. A keresési eredmények modul tovább javítható, hogy készletadatokat tartalmazzon, és a következő élményeket nyújtsa:
+
+- Készlet elérhetőségi címkéjének megjelenítse a termékekkel együtt.
+- Készleten nem lévő termékek elrejtése.
+- A készleten nem található termékek megjelenítése a keresési eredmények listájának végén.
+    
+Az élmények engedélyezéséhez konfigurálnia kell a Commerce Headquarters következő előfeltétel-beállításait.
+
+### <a name="enable-the-enhanced-e-commerce-product-discovery-to-be-inventory-aware-feature"></a>Engedélyezze a Továbbfejlesztett e-Commerce-termékészlelés, amely figyelembe veszi a készletet funkciót
+
+> [!NOTE]
+> A **Továbbfejlesztett e-Commerce-termékészlelés, amely figyelembe veszi a készletet** a Commerce 10.0.20-as verziójú kiadásában érhető el.
+
+A következő lépésekkel engedélyezheti a **Továbbfejlesztett e-Commerce-termékészlelés, amely figyelembe veszi a készletet** funkciót a Commerce Headquarters szolgáltatásban.
+
+1. Menjen a **Munkaterületek \> Funkciókezelés** lehetőségre.
+1. Keressen rá a **Továbbfejlesztett e-Commerce-termékészlelés, amely figyelembe veszi a készletet** funkcióra, majd engedélyezze.
+
+### <a name="configure-the-populate-product-attributes-with-inventory-level-job"></a>Konfigurálja a Termékattribútumok feltöltése készletszinttel feladatot
+
+A **Termékattribútumok feltöltése készletszinttel** feladat új termékattribútumot hoz létre a készlet elérhetőségének rögzítéséhez, majd az attribútumot az egyes alaptermékekkel kapcsolatos legutóbbi készletszint-értékre állítja. Mivel az eladott termékek vagy szortimentek készlet rendelkezésre állása folyamatosan változik, ezért kifejezetten ajánljuk, hogy a feladatot kötegfolyamatként ütemezze.
+
+A Következő lépések szerint konfigurálhatja a **Termékattribútumok feltöltése készletszinttel** feladatot a Commerce központban.
+
+1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem IT \> Termékek és készlet** lehetőségre.
+1. Válassza a **Termékattribútumok feltöltése készletszinttel** lehetőséget.
+1. A **Termékattribútumok feltöltése készletszinttel** párbeszédpanelen a következő lépéseket kövesse:
+
+    1. A **Paraméterek** területen **Termékattribútum és típus neve** mezőben adja meg a kijelölt termékattribútum nevét, amely a készlet rendelkezésre állásának rögzítéséhez fog létrejönni.
+    1. A **Paraméterek** területen a **Készlet rendelkezésre állása a következő alapján:** mezőben válassza ki azt a mennyiséget, amelyen a készletszint-számításnak alapulnia kell (például **Elérhető fizikai**).
+    1. A **Futtatás a háttérben** alatt állítsa be a feladatot a háttérben való futtatásra, és opcionálisan kapcsolja be e **Kötegfeldolgozás** lehetőséget. 
+
+> [!NOTE]
+> Az egységes készletszint-számításhoz a PDP-k és az e-commerce webhely terméklistaoldalai között, győződjön meg róla, hogy ugyanazt a mennyiségbeállítást válassza a Commerce központ **Készlet rendelkezésre állása a következő alapján:** és Commerce oldalkészítő **Készletszint alapja** beállításánál is. Az oldaltervező készletbeállításaival kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Készletbeállítások alkalmazása](inventory-settings.md).
+
+### <a name="configure-the-new-product-attribute"></a>Az új termékattribútum konfigurálása
+
+Miután futtatta a **Termékattribútumok feltöltése készletszinttel** feladatot konfigurálnia kell az újonnan létrehozott termékattribútumokat az e-commerce webhelyen, ahol engedélyezni szeretné a készlet észlelését a keresési eredmények modul számára.
+
+A Commerce központban az új termékattribútum konfigurálásához kövesse az alábbi lépéseket.
+
+1. Nyissa meg a következőt: **Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Csatornakategóriák és termékattribútumok**, és válasszon egy e-kereskedelmi oldalt.
+1. Válasszon ki és nyisson meg egy társított attribútumcsoportot, adja hozzá az újonnan létrehozott termékattribútumot, majd zárja be a lapot.
+1. Válassza ki az **Attribútum-metaadatok beállítása** lehetőséget, válassza ki az újonnan hozzáadott termékattribútumot, majd kapcsolja be az **Attribútum megjelenítése a csatornában**, **Lekérhető**, **Finomítható** és **Lekérdezhető** beállításokat.
+
+> [!NOTE]
+> A keresési eredmények modulban megjelenő termékeknél a készletszint az alaptermék szintjén kerül bevitelre az egyes változatok szintje helyett. Csak két lehetséges érték áll rendelkezésre: "elérhető" és a "nincs készleten". Az értékek tényleges szövegét a [készletszint-profil](inventory-buffers-levels.md) definíciója olvassa be. Az alaptermék csak akkor minősül készlethiányosnak, ha az egyik változata nincs készleten. A változat készletszintje a termék készletszintű profiljának meghatározása alapján határozható meg. 
+
+Miután az előző konfigurációs lépések mindegyikét befejezte, a keresési eredményoldalak finomítói egy készlet alapú szűrőt fognak mutatni, és a keresési eredménymodul beolvassa a mögöttes készletadatokat. Ezután a Commerce webhelyszerkesztőben konfigurálhatja a **Termékbeállítások terméklistaoldalakhoz** beállítást, hogy szabályozza, a keresési eredmények modulban hogyan jelenítse meg a raktáron nem lévő termékeket. További információk: [Készletbeállítások alkalmazása](inventory-settings.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 

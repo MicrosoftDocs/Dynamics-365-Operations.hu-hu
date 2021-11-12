@@ -2,7 +2,7 @@
 title: Billentyűparancsok
 description: Ez a témakör áttekintést nyújt azokról a billentyűparancsokról, amelyeket a Finance and Operations alkalmazásokkal folytatott munka során használhat.
 author: jasongre
-ms.date: 10/05/2020
+ms.date: 10/12/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 749fc3655b1ad41fbe7dd4794fc4ca907f1c86b9ee4e92e2415e924058191ffa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 7e700b841014e1e12560bf0ce9e5e012361ec397
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743171"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647536"
 ---
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A következő billentyűparancsok segítségével gyorsan és hatékonyan viheti be az adatokat a Finance and Operations alkalmazásokban.
 
@@ -147,15 +148,16 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Az alapértelmezett művelet végrehajtása rácsban<blockquote>[!NOTE] Ez a billentyűparancs akkor van engedélyezve, amikor a fókusz egy hivatkozást tartalmazó cellán van, és az adott oszlop összes cellájában vannak hivatkozások.</blockquote> | Bevitel                           |
 | A fókusz váltása a kiválasztott sor és a fejlécsor között                                                               | Alt+Shift+H                     |
 | Az aktuális oszlop nagyítása/kicsinyítése (a fókusz a fejlécsorban)                                                  | Jobbra nyíl / balra nyíl        |
-| Rácsszűrés megnyitása az aktuális oszlopnál (a fókusz a fejlécsorban)                                              | Bevitel                           |
+| Rácsszűrés megnyitása az aktuális oszlopnál (a fókusz a fejlécsorban)                                              | Enter                           |
+| Az aktuális oszlop átméretezése a tartalomnak megfelelőre (a fejlécsorban lévő fókuszsal)                                           | A                               |
 
 ## <a name="input-control-shortcuts"></a>Beviteli vezérlő gyorsbillentyűk
 
-| Művelet                                                                   | Billentyű vagy billentyűkombináció                         |
+| Művelet                                                                   | Nyomja meg a(z)  billentyűt                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Hivatkozás megnyitása                                                           | Ctrl+Enter                    |
-| A munkamenet dátumának bevitele egy dátummezőbe.                                       | T                         |
-| A mai dátum bevitele egy dátummezőbe.                                       | K                         |
+| A munkamenet dátumának bevitele egy dátummezőbe.                                       | T                             |
+| A mai dátum bevitele egy dátummezőbe.                                       | K                             |
 | Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel megnyitása                         | Alt+Lefelé nyíl                |
 | Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel bezárása                        | Esc                           |
 | Fókusz áthelyezése egy keresésbe (Ha a keresés már meg nyitva)                   | Alt+Lefelé nyíl                |
@@ -202,8 +204,8 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Az Áthelyezés eszköz használata (személyre szabási módban)                                                                       | M                                   |
 | Az aktuális vezérlőelem kiválasztása áthelyezéshez (az Áthelyezés eszköz használata esetén, ha és még nincs kijelölve vezérlő áthelyezésre)  | Szóköz vagy Enter                      |
 | Áthelyezendő vezérlőelem kijelölésének törlése (a Mozgatás eszköz használata esetén)                                                                   | Esc                                 |
-| A kijelölt vezérlőelem áthelyezése a következő helyre (a Mozgatás eszköz használata esetén)                                          | Lap vagy Jobbra nyíl vagy Lefelé nyíl    |
-| A kijelölt vezérlőelem áthelyezése az előző helyre (a Mozgatás eszköz használata esetén)                                      | Shift + Tab vagy Balra nyíl és Felfelé nyíl |
+| A kijelölt vezérlőelem áthelyezése a következő helyre (a Mozgatás eszköz használata esetén)                                              | Lap vagy Jobbra nyíl vagy Lefelé nyíl    |
+| A kijelölt vezérlőelem áthelyezése az előző helyre (a Mozgatás eszköz használata esetén)                                          | Shift + Tab vagy Balra nyíl és Felfelé nyíl |
 | Az Elrejtés eszköz használata (személyre szabási módban)                                                                       | H:                                   |
 | Átváltás aközött, hogy az aktuális vezérlőelem látható-e vagy rejtett (az Elrejtés eszköz használata esetén)                                     | Szóköz vagy Enter                      |
 | A Kihagyás eszköz használata (személyre szabási módban)                                                                       | ezer                                   |

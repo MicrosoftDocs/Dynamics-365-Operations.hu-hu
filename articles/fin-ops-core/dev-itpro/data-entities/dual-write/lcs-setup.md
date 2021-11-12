@@ -9,12 +9,12 @@ ms.reviewer: rhaertle
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 2cfe6d882c5de763164ddb4a344cba2991c88783
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 9f461837c65c30eace3358c231618aedf428f487
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416651"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7675297"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services szolgáltatásból
 
@@ -28,8 +28,8 @@ Ez a témakör bemutatja, hogyan lehet engedélyezni a kettős írást a Microso
 
 A következő témakörökben leírtak szerint végre kell hajtani a Power Platform-integrációt:
 
-+ [Power Platform-integráció – engedélyezés a környezet telepítése során](../../power-platform/overview.md#enable-during-environment-deployment)
-+ [Power Platform-integráció – beállítás a környezet telepítése után](../../power-platform/overview.md#set-up-after-environment-deployment)
++ [Power Platform-integráció – engedélyezés a környezet telepítése során](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
++ [Power Platform-integráció – engedélyezés a környezet telepítése után](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
 
 ## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Kettős írás beállítása az új Dataverse-környezetekhez
 

@@ -2,7 +2,7 @@
 title: Készlet beállításainak alkalmazása
 description: Ez a témakör a készlet beállításaival foglalkozik, és leírja, hogy hogyan kell alkalmazni azokat a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 04/23/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f57f1f941fe0c0c70394d1ecbf8d88a13c7a3682fdfa8b5439a4f3830f616876
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765266"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647584"
 ---
 # <a name="apply-inventory-settings"></a>Készletbeállítások alkalmazása
 
@@ -39,7 +39,7 @@ A Commerce webhelykészítőben egy termékhez vagy egy kategóriához lehet def
 
 ## <a name="inventory-settings"></a>Készletbeállítások
 
-A Commerce alkalmazásban a készletbeállítások a **Webhelybeállítások \> Bővítmények \> Készletkezelés** alatt adhatók meg a webhelykészítőben. Öt készletbeállítás van, amelyek közül az egyik elavult:
+A Commerce alkalmazásban a készletbeállítások a **Webhelybeállítások \> Bővítmények \> Készletkezelés** alatt adhatók meg a webhelykészítőben. Hat készletbeállítás van, amelyek közül az egyik elavult:
 
 - **Készletellenőrzés engedélyezése az alkalmazásban** – Ez a beállítás bekapcsolja a termékkészlet ellenőrzését. A vásárlás mező, a kosár és az átvétel az üzletben modul is ellenőrzi a termék készletét, és lehetővé teszi a terméknek a kosárba történő felvételét, ha a készlet elérhető.
 - **Készletszint alapja** – Ez a beállítás határozza meg a készletszint számításának módját. A rendelkezésre álló értékek a **Teljes rendelkezésre álló**, a **Rendelkezésre álló tényleges** és az **Elfogyott küszöbérték**. A Commerce webhelykészítőben minden termékhez ás kategóriához lehet definiálni a készletküszöbértéket és -tartományokat. A készlet API-k termékkészlet-információkat adnak vissza mind a **Teljes rendelkezésre álló** tulajdonság, mind a **Rendelkezésre álló tényleges** tulajdonság esetében. A kiskereskedő dönti el, hogy a **Teljes rendelkezésre álló** vagy a **Rendelkezésre álló tényleges** érték kerüljön felhasználásra a készletszám és a vonatkozó raktáron és elfogyott állapotok megállapításához.
@@ -48,8 +48,13 @@ A Commerce alkalmazásban a készletbeállítások a **Webhelybeállítások \> 
 
 - **Több raktár készletszintje** – Ez a beállítás lehetővé teszi a készletszint kiszámítását az alapértelmezett raktárhoz vagy több raktárhoz. Az **Egyedi raktár alapján** lehetőség az alapértelmezett raktár alapján számítja ki a készletszinteket. Másik lehetőségként az e-kereskedelmi webhely több raktárra is mutathat, hogy megkönnyítse a teljesítést. Ebben az esetben a készlet rendelkezésre állásának jelzésére a **Szállítási és kitárazási raktárak összesítése alapján** beállítás használható. Ha például egy vevő vásárol egy cikket, és a szállítási módként a „szállítás” lehetőséget választja, akkor a cikk a teljesítési csoport bármelyik raktárába szállítható, amelynek van rendelkezésre álló készlete. A termék részleteit tartalmazó oldal (PDP) a szállításhoz egy „Készleten” üzenetet fog küldeni, ha a teljesítő csoportban bármelyik rendelkezésre álló szállító raktárnak van készlete. 
 
-> [!IMPORTANT] 
-> A **Több raktár készletszintje** beállítás a Commerce 10.0.19-es verziójától érhető el. Ha a Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az utasításokat lásd itt: [SDK- és modultár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+    > [!IMPORTANT] 
+    > A **Több raktár készletszintje** beállítás a Commerce 10.0.19-es verziójától érhető el. Ha a Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az utasításokat lásd itt: [SDK- és modultár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+- **Terméklistaoldalak készletbeállításai** – Ez a beállítás meghatározza, hogy hogyan jelennek meg a nem készleten található termékek a terméklistákban, amelyeket a termékgyűjtemény és keresési előzmények modulok hoztak létre. Az elérhető értékek: **Megjelenítés sorrendben más termékekkel**, **A nem készleten lévő termékek elrejtése** és **Nem készleten lévő termékek megjelenítése a lista végén**. A beállítás csak akkor használható, ha előbb konfigurál néhány előfeltételül szolgáló beállítást a Commerce Headquarters szolgáltatásban. A további tudnivalókat lásd a [Készletérzékenység engedélyezése a keresési eredmények modulban](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+
+    > [!IMPORTANT] 
+    > A **Termékbeállítások terméklistaoldalakhoz** beállítás a Commerce 10.0.20-es verziójától érhető el. Ha a Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az utasításokat lásd itt: [SDK- és modultár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Készlettartományok** – Ez a beállítás határozza meg a készlettartományokat, amelyekhez üzenetek kerülnek megjelenítésre a helyi modulok esetében. Csak akkor alkalmazható, ha a **Teljes rendelkezésre álló** érték vagy a **Rendelkezésre álló tényleges** érték van kiválasztva a **Készletszint alapja** számára. A rendelkezésre álló értékek a **Mind**, az **Alacsony és elfogyott**, valamint az **Elfogyott**.
 

@@ -10,18 +10,31 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ac3ea6a088b2086054eb692cd0688b269dafca51
-ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
-ms.translationtype: HT
+ms.openlocfilehash: 6ab5f6887cb60d3d0434b59cda82b44eca272d7e
+ms.sourcegitcommit: 60ade60f72fd0fa0683f7a3eaf93439d10cf3373
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485622"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7655385"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Újdonságok és változások a Warehouse Management mobilalkalmazásban
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új funkcióit, hibajavításait, fejlesztéseit és ismert hibáit ismerteti.
+
+## <a name="version-20110"></a>2.0.11.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+
+- Támogatás előléptetett mezőkhöz.
+- A hardveres billentyűzetes navigáció támogatása hozzáadva.
+- Jobb akadálymentesség.
+- Továbbfejlesztett részletező kártyák.
+- Továbbfejlesztett eltérítések a menüelemek lépéseinél.
+- Kisebb fejlesztések a felhasználói felületen.
+- Kijavított egy problémát, amely miatt a vonalkódok beolvasása során az alkalmazás összeomlhat.
+- Számos olyan problémát javított, amely a rendszer leállását okozhatták.
 
 ## <a name="version-20100"></a>2.0.10.0-s verzió
 

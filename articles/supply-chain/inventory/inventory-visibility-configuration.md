@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 27dfc3f431fdfc1ec5c2cad2c3458b11c94189c3
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
-ms.translationtype: HT
+ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474676"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678471"
 ---
 # <a name="configure-inventory-visibility"></a>Készletláthatóság konfigurálása
 
@@ -366,16 +366,12 @@ Az index segítségével a következő módon kérdezheti le a készletet:
 
 ## <a name="reservation-configuration-optional"></a><a name="reservation-configuration"></a>Foglalási konfiguráció (opcionális)
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-
 A foglalási konfigurációra akkor van szükség, ha a lágy foglalási funkciót használni kívánja. A konfiguráció két alapvető részből áll:
 
 - Lágy foglalási leképezés
 - Lágy foglalási hierarchia
 
 ### <a name="soft-reservation-mapping"></a>Lágy foglalási leképezés
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 Foglaláskor érdemes tudni, hogy a készleten lévő készletek jelenleg rendelkezésre állnak-e foglalásra. Az érvényesítés egy számított mértékhez kapcsolódik, amely fizikai mértékek kombinációjának számítási képletét jelenti.
 
@@ -446,8 +442,6 @@ Ezért, ha a `iv.SoftReservOrdered` oldalon próbál foglalni, és a mennyiség 
 > A foglalási API hívása esetén a foglalások érvényességének ellenőrzése a logikai `ifCheckAvailForReserv` paraméter megadásával szabályozható a kérelemtörzsben. A `True` érték azt jelenti, hogy ellenőrzés szükséges, míg a `False` érték azt, hogy az ellenőrzés nem kötelező. Az alapértelmezett érték a `True`.
 
 ### <a name="soft-reservation-hierarchy"></a>Lágy foglalási hierarchia
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 A foglalási hierarchia a foglalások során megadandó dimenziók sorrendjét írja le. Ugyanúgy működik, mint a termékindex-hierarchia a kézben lévő lekérdezéseknél.
 
@@ -747,8 +741,6 @@ A következő táblázat az alapértelmezett indexkonfigurációt mutatja.
 Ez a szakasz az alapértelmezett foglalási konfigurációt ismerteti.
 
 #### <a name="reservation-mapping"></a>Foglalási leképezés
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
 A következő táblázat az alapértelmezett foglalási leképezést mutatja.
 

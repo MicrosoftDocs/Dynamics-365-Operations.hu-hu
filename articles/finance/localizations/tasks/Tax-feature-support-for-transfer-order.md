@@ -2,7 +2,7 @@
 title: Adófunkció támogatása átmozgatási rendelésekhez
 description: Ez a témakör ismerteti az átutalási rendelések új adózási szolgáltatásának támogatását az adószámítási szolgáltatás használatával.
 author: Kai-Cloud
-ms.date: 09/15/2021
+ms.date: 10/13/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 01bf7c251fe57072f042c9187b9f5b6b6687ab0f
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
-ms.translationtype: HT
+ms.openlocfilehash: 2f68a3d7ed4384fe5a97f1e59903e3191df6b741
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500076"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647713"
 ---
 # <a name="tax-feature-support-for-transfer-orders"></a>Adófunkció támogatása átmozgatási rendelésekhez
 
@@ -31,7 +31,7 @@ Ez a témakör az adószámításról és az átmozgatási rendelések integrác
 A funkció konfigurálásához és használathoz három fő lépést kell elvégeznie:
 
 1. **RCS beállítása:** A Regulatory Configuration Services szolgáltatásban állítsa be az adófunkciót, az adókódok és az adókódok alkalmazhatóságát az adókód meghatározására az átviteli rendelésekben.
-2. **Finance beállítása:** A Microsoft Dynamics 365 Finance alkalmazásban kapcsolja be az **Adó az átmozgatási rendelésben** szolgáltatást, állítsa be a készlet adószolgáltatásának paramétereit, és állítsa be az alapvető adóparamétereket.
+2. **Dynamics 365 Finance beállítása:** A Finance alkalmazásban kapcsolja be az **Adó az átmozgatási rendelésben** szolgáltatást, állítsa be a készlet adószámítási szolgáltatásának paramétereit, és állítsa be az alapvető adóparamétereket.
 3. **Készletbeállítás:** Állítsa be az átviteli rendelési tranzakciók készletkonfigurációját.
 
 ## <a name="set-up-rcs-for-tax-and-transfer-order-transactions"></a>Az RCS beállítása adóhoz és az átmozgatási rendelési tranzakciókhoz
@@ -39,8 +39,6 @@ A funkció konfigurálásához és használathoz három fő lépést kell elvég
 Az átmozgatási rendelésben érintett adó beállítását az alábbi lépésekkel állíthatja be. Az itt látható példában az átmozgatási rendelés Hollandiából Belgiumba irányul.
 
 1. Az **Adófunkciók** oldalon a **Verziók** lapon jelölje ki a vázlat funkcióverziót, majd kattintson a **Szerkesztés** gombra.
-
-    ![Szerkesztés kiválasztása.](../media/tax-feature-support-01.png)
 
 2. Az **Adófunkciók beállítása** oldal **Adókódok** lapján válassza a **Hozzáadás** lehetőséget új adókódok létrehozásához. Ebben a példában három adókód jön létre: **NL-Exempt**, **BE-RC-21** és **BE-RC+21**.
 
@@ -51,9 +49,8 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         2. Válassza a **Nettó összeg szerint** lehetőséget az **Adóösszetevő** mezőben.
         3. Válassza a **Mentés** lehetőséget.
         4. A **Díj** táblában válassza a **Hozzáadás** lehetőséget.
-        5. Kapcsolja az **Adómentes** lehetőséget **Igen** értékre az **Általános** részben.
-
-           ![NL adómentes adókód.](../media/tax-feature-support-02.png)
+        5. Állíts be az **Adómentes** lehetőséget **Igen** értékre az **Általános** részben.
+        6. A **Mentességi kód** mezőbe adja meg az **EC** értéket.
 
     - Amikor átmozgatási rendelés megérkezik egy belgiumi raktárba, a fordított adózás mechanizmusa a **BE-RC-21** és **BE-RC+21** adókódok használatával kerül alkalmazásra.
         
@@ -63,10 +60,8 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         3. Válassza a **Mentés** lehetőséget.
         4. A **Díj** táblában válassza a **Hozzáadás** lehetőséget.
         5. Adja meg a **-21** értéket az **Adókulcs** mezőbe.
-        6. Kapcsolja a **Fordított áfás** lehetőséget **Igen** értékre az **Általános** részben.
+        6. Állítsa be a **Fordított áfás** lehetőséget **Igen** értékre az **Általános** részben.
         7. Válassza a **Mentés** lehetőséget.
-
-           ![BE-RC-21 adókód a fordított áfához.](../media/tax-feature-support-03.png)
         
         Hozza létre a **BE-RC+21** adókódot.
         1. Válassza a **Hozzáadás** lehetőséget, írja be a **BE-RC-21** értéket az **Adókód** mezőbe.
@@ -76,16 +71,26 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         5. Adja meg a **21** értéket az **Adókulcs** mezőbe.
         6. Válassza a **Mentés** lehetőséget.
 
-           ![BE-RC+21 adókód a fordított áfához.](../media/tax-feature-support-04.png)
-
-3. Adja meg az adókódok alkalmazhatóságát.
+3. Definiálja az adócsoportot.
+    1. Válassza az **Oszlopok kezelése**, majd az **Adócsoport** sormezőt.
+    2. Válassza a **->** lehetőséget, majd kattintson az **OK** gombra.
+    3. Kattintson a **Hozzáadás** lehetőségre egy adócsoport hozzáadásához.
+    4. Az **Adócsoport** oszlopban adja meg az **AR-EU** kódot, majd válassza ki az **NL-mentesség** adókódot.
+    5. Kattintson a **Hozzáadás** lehetőségre egy adócsoport hozzáadásához.
+    6. Az **Adócsoport** oszlopban adja meg az **RC-ÁFA** értéket, majd válassza ki a **BE-RC-21** és **BE-RC+21** adókódokat.
+4. Definiálja a cikkáfacsoportot.
+    1. Válassza az **Oszlopok kezelése**, majd az **Cikkáfacsoport** sormezőt.
+    2. Válassza a **->** lehetőséget, majd kattintson az **OK** gombra.
+    3. Kattintson a **Hozzáadás** lehetőségre egy cikkáfacsoport hozzáadásához.
+    4. Adja meg a **TELJES** elemet a **Cikkáfacsoport** oszlopban. Válassza ki a **BE-RC-21**, **BE-RC+21** és **NL-Exempt** adókódokat.
+5. Adja meg az adócsoportok alkalmazhatóságát.
 
     1. Válassza az **Oszlopok kezelése** lehetőséget, majd jelölje ki az alkalmazhatósági tábla létrehozásához használható oszlopokat.
 
         > [!NOTE]
         > Mindenképpen adja hozzá az **Üzleti folyamat** és az **Adóirányok** oszlopokat a táblához. Mindkét oszlop nélkülözhetetlen az átmozgatási rendelések adófunkciójához.
 
-    2. Alkalmazhatósági szabályok hozzáadása. Ne hagyja üresen az **Adókódok**, **Adócsoport** és **Cikkáfacsoport** mezőket.
+    2. Alkalmazhatósági szabályok hozzáadása. Ne hagyja üresen az **Adócsoport** mezőt.
         
         Adjon hozzá egy új szabályt az átmozgatási rendelés szállítmányához.
         1. A **Díj** táblában válassza az **Alkalmazhatósági szabályok** lehetőséget.
@@ -93,8 +98,7 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         3. A **Szállítás országból/régióból** mezőbe írja be az **NLD** értéket.
         4. A **Szállítás országa/régiója** mezőbe írja be a **BEL** értéket.
         5. Az **Adó iránya** mezőben válassza a **Kimenet** lehetőséget, ha a szabályt az átmozgatási rendelés szállítmányára is alkalmazni kell.
-        6. Az **Adókódok** mezőben válassza ki az **NL-Exempt** értéket.
-        7. Az **Adócsoport** mezőben és a **Cikkáfa csoportban** adja meg a Finance rendszerben definiált kapcsolódó áfacsoportot és cikkáfacsoportot.
+        6. Az **Áfacsoport** mezőben válassza ki az **AR-EU** lehetőséget.
         
         Adjon hozzá egy másik szabályt az átmozgatási rendelés befogadásához.
         
@@ -103,14 +107,19 @@ Az átmozgatási rendelésben érintett adó beállítását az alábbi lépése
         3. A **Szállítás országból/régióból** mezőbe írja be az **NLD** értéket.
         4. A **Szállítás országa/régiója** mezőbe írja be a **BEL** értéket.
         5. Az **Adó iránya** mezőben válassza a **Bemenet** lehetőséget, ha a szabályt az átmozgatási rendelés fogadására is alkalmazni kell.
-        6. Az **Adókódok** mezőben válassza a **BE-RC+21** és a **BE-RC-21** lehetőséget.
-        7. Az **Adócsoport** mezőben és a **Cikkáfa csoportban** adja meg a Finance rendszerben definiált kapcsolódó áfacsoportot és cikkáfacsoportot.
+        6. Az **Áfacsoport** mezőben válassza ki az **RC-VAT** lehetőséget.
 
-           ![Alkalmazhatósági szabályok.](../media/image5.png)
+6. Adja meg a cikkáfacsoportok alkalmazhatóságát.
 
-4. Töltse ki és tegye közzé az új adófunkció-verziót.
+    1. Válassza az **Oszlopok kezelése** lehetőséget, majd jelölje ki az alkalmazhatósági tábla létrehozásához használható oszlopokat.
+    2. Alkalmazhatósági szabályok hozzáadása. Ne hagyja üresen az **Cikkáfacsoport** mezőt.
+        
+        Adjon hozzá egy új szabályt az átmozgatási rendelés szállítmányához és nyugtájához.
+        1. Az **Alkalmazhatósági szabályok** oldalon válassza a **Hozzáadás** lehetőséget.
+        2. Az **Üzleti folyamat** mezőben válassza a **Készlet** lehetőséget, hogy a szabály alkalmazható legyen az átmozgatási rendelésre.
+        3. A **Cikkáfacsoport** mezőben válassza ki az **FULL** lehetőséget.
+7. Töltse ki és tegye közzé az új adófunkció-verziót.
 
-    [![Az új verzió állapotának módosítása.](../media/image6.png)](../media/image6.png)
 
 ## <a name="set-up-finance-for-transfer-order-transactions"></a>A Finance beállítása adóhoz és az átmozgatási rendelési tranzakciókhoz
 
@@ -120,28 +129,26 @@ Kövesse ezeket a lépseket az adók beállításához és engedélyezéséhez a
 2. A listában keresse meg és válassza az **Adó átmozgatási rendelésben** funkciót, majd az **Engedélyezés most** lehetőséget a bekapcsoláshoz.
 
     > [!IMPORTANT]
-    > Az **Adó az átmozgatási rendelésben** funkció teljes mértékben függ az adószolgáltatástól. Ezért csak az adó szolgáltatás telepítése után kapcsolható be.
+    > Az **Adó az átmozgatási rendelésben** funkció teljes mértékben függ az adószámítási szolgáltatástól. Ezért csak az adószámítási szolgáltatás telepítése után kapcsolható be.
 
     ![Adó az átmozgatási rendelés funkcióban.](../media/image7.png)
 
-3. Engedélyezze az adószolgáltatást, és válassza ki a **Készlet** üzleti folyamatot.
+3. Engedélyezze az adószámítási szolgáltatást, és válassza ki a **Készlet** üzleti folyamatot.
 
     > [!IMPORTANT]
-    > Ezt a lépést minden olyan jogi személynél el kell végeznie a Finance-ben, ahol az adószolgáltatást és az átmozgatási rendelések adófunkcióit elérhetővé szeretné tenni.
+    > Ezt a lépést minden olyan jogi személynél el kell végeznie a Finance-ben, ahol az adószámítási szolgáltatást és az átmozgatási rendelések adófunkcióit elérhetővé szeretné tenni.
 
-    1. Ugrás az **Adó** > **Beállítás** > **Adókonfiguráció** > **Adószolgáltatás beállítása** lapra.
+    1. Lépjen az **Adó** > **Beállítás** > **Adókonfiguráció** > **Adószámítási paraméterek** menüpontba.
     2. Az **Üzleti folyamat** mezőben válassza a **Készlet** lehetőséget.
-
-      ![Az Üzleti folyamat mező beállítása.](../media/image8.png)
 
 4. Ellenőrizze, hogy a fordított áfa mechanizmus be van-e állítva. Válassza a **Főkönyv** \> **Beállítás** \> **Paraméterek** lapot, majd a **Fordított áfa** lapon ellenőrizze, hogy a **Fordított áfa engedélyezése** beállítás **Igen** értékű-e.
 
     ![Fordított áfa engedélyezése beállítás.](../media/image9.png)
 
-5. Ellenőrizze, hogy a kapcsolódó adókódok, adócsoportok, cikkadócsoportok és áfaregisztrációs számok az adószolgáltatási útmutatónak megfelelően vannak-e beállítva a Finance-ben.
+5. Ellenőrizze, hogy a kapcsolódó adókódok, adócsoportok, cikkadócsoportok és áfaregisztrációs számok az adószámítási szolgáltatás útmutatónak megfelelően vannak-e beállítva a Finance-ben.
 6. Ideiglenes tranzitszámla beállítása. Erre a lépésre csak akkor van szükség, ha az átutalási megbízásra alkalmazott adó nem alkalmazható adómentes vagy fordított adózású mechanizmusra.
 
-    1. Ugrás az **Adó** > **Beállítás** > **Áfa** \ **Főkönyvi feladási csoportok** elemre.
+    1. Ugrás az **Adó** > **Beállítás** > **Áfa** > **Főkönyvi feladási csoportok** elemre.
     2. Az **Ideigelens tranzit** mezőben jelöljön ki egy főkönyvi számlát.
 
        ![Ideiglenes tranzitszámla kiválasztása.](../media/image10.png)

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 63e26004b28f1ff6c760476933e1d524c0b40451
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 72fe7f8a6b05bd7c6fa242ef599e506a1178d913
+ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569337"
+ms.lasthandoff: 10/25/2021
+ms.locfileid: "7678689"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -93,7 +93,6 @@ A **Saját gép lap** a következő oszlopokat tartalmazza. A számok az előző
 1. **Leállás regisztrálása** – Ezzel a gombbal megnyithat egy párbeszédpanelt, ahol regisztrálhatja a gép leállását. Kiválaszthatja az okkódot, és megadhatja a leállás dátumát/tartományát. A gép leállási idejének regisztrációja a gépi eszköz hatékonyságának kiszámítására használható.
 1. **Megtekintés vagy szerkesztés** – Ezzel a gombbal megnyithat egy párbeszédpanelt, ahol szerkesztheti és megtekintheti a meglévő leállási rekordokat.
 
-
 ## <a name="starting-and-completing-production-jobs"></a>Termelési feladatok elindítása és befejezése
 
 A dolgozók egy termelési feladatot úgy indíthatnak el, hogy kijelölnek egy feladatot a **Minden feladat** lapon, majd a **Feladat megkezdése** lehetőséget választják a **Feladat megkezdése** párbeszédpanel megnyitásához.
@@ -109,6 +108,32 @@ A dolgozók bármilyen állapotú feladatot elindíthatnak. Amikor egy dolgozó 
 Amikor egy dolgozó befejezte vagy részben befejezte a feladatot, akkor az **Aktív feladatok** lapon kiválaszthatna az **Előrehaladás jelentése** lehetőséget, hogy jelentse a legyártott jó mennyiséget. Ezután az **Előrehaladás jelentése** párbeszédpanelen a dolgozó beírja a jó mennyiséget a numerikus billentyűzet segítségével. Alapértelmezetten a mennyiségben semmi nem látható. A mennyiség megadása után a dolgozó a feladatra vonatkozó állapotot frissítheti az alábbiak valamelyikére: *Folyamatban*, *Leállítva* vagy *Befejezve*.
 
 ![Az Előrehaladás jelentése párbeszédpanel.](media/pfei-report-progress-dialog.png "Az Előrehaladás jelentése párbeszédpanel")
+
+## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Helyes mennyiségek jelentése olyan kötegelt rendelések esetén, amelyek társ- és melléktermékeket tartalmaznak
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)] <!--KFM: GA with 10.0.23 -->
+
+A dolgozók használhatják a gyártóterületi végrehajtási felületet a kötegelt rendelések előrehaladásának jelentéséhez. Ez a jelentésfunkció jelentéseket tartalmaz a társtermékekről és melléktermékekről.
+
+Egyes gyártók, különösen a feldolgozóiparban, a kötegrendelések segítségével felügyelik a termelési folyamatokat. A kötegrendelések receptúrákból vannak létrehozva, és ezek a receptúrák úgy is definiálhatók, hogy társ- és melléktermékekkel is rendelkezzenek kimeneten. A kötegrendelésekre vonatkozó visszajelzések jelentésénél a kimenet mennyiségét regisztrálni kell a receptúracikken, valamint a társ- és melléktermékeken.
+
+Amikor egy dolgozó kötegelt rendelésen befejez vagy részben befejez egy feladatot, akkor jelenteni tudja a jó vagy selejt termékek mennyiségét minden egyes termékhez, amely a rendelés kimeneteként van meghatározva. A kötegelt rendelés kimeneteként definiált termékek *Receptúra*, *Társtermék* vagy *Melléktermék* típusúak is lehetek.
+
+A termékek jó mennyiségének jelentéséhez egy dolgozó kiválaszt egy feladatot az **Aktív feladatok** lapon, majd kiválasztja a **Jelentés az előrehaladásról** lehetőséget.
+
+Ezután a **Jelentés az előrehaladásról** párbeszédpanelen a dolgozó kiválaszthat azok közül a termékek közül, amelyek kimenetként vannak megadva a kötegrendeléshez. A dolgozó kiválaszthat egy vagy több terméket a listából, majd kiválaszthatja a **Jelentés az előrehaladásról** lehetőséget. Alapértelmezés szerint minden terméknél üres a mennyiség, és a dolgozó a numerikus billentyűzet használatával adhatja meg a mennyiséget. A dolgozó az **Előző** és a **Következő** gombbal mozoghat a kijelölt termékek között. A mennyiség megadása után íz egyes termékekhez a dolgozó a feladatra vonatkozó állapotot frissítheti az alábbiak valamelyikére: *Folyamatban*, *Leállítva* vagy *Befejezve*.
+
+![Társtermékek és melléktermékek jelentése.](media/report-co-by-products.png "Társtermékek és melléktermékek jelentése")
+
+### <a name="reporting-on-batch-orders-for-planning-items"></a>Jelentés kötegrendelésről cikkek tervezéséhez
+
+Amikor egy dolgozó befejez egy tervezési cikkre vonatkozó kötegrendelési feladatot, akkor a mennyiségeket csak a társ- és melléktermékekről jelenti, mivel a tervezési cikkek nem tartalmaznak *Receptúra* típusú cikket.
+
+### <a name="reporting-co-product-variation"></a>Társtermék variációinak jelentése
+
+Ha olyan receptúraverzióból jött létre kötegrendelés, amelyben a **Társtermékek változatai** beállítás *Igen* értékű a dolgozó jelenthet az olyan társtermékekről, amelyek nem részei a kötegrendelés definíciójának. Ez a funkció olyan helyzetekben használatos, amikor váratlan termékkimenet fordulhat elő a termelési folyamatban.
+
+Ebben az esetben a dolgozó meghatározhatja a társterméket és a jelentendó mennyiséget, ha kiválasztja a **Társtermékek variációi** elemet az előrehaladás jelentése párbeszédpanelen. A dolgozó ezután választhat a társtermékként definiált kiadott termék közül.
 
 ## <a name="reporting-scrap"></a>Selejt jelentése
 

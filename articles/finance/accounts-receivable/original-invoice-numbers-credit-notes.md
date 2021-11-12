@@ -2,7 +2,7 @@
 title: Hivatkozások eredeti számlákra a jóváírásokban
 description: Ez a témakör bemutatja az eredeti számlaszámok beállítását és nyomtatását a kapcsolódó jóváírásokban.
 author: ilkond
-ms.date: 01/12/2021
+ms.date: 10/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: ilyako
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6a5ac50c996f92f5cfa569ad00fa4b911827fd4ec8bddb2442bbd6ac67d1f33f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 7147c5bea5273f385b004effe0844b5f4541a881
+ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723847"
+ms.lasthandoff: 10/27/2021
+ms.locfileid: "7700355"
 ---
 # <a name="references-to-original-invoices-in-credit-notes"></a>Hivatkozások eredeti számlákra a jóváírásokban
 
@@ -95,5 +95,10 @@ Szabadszöveges, vevői és projektjóváírások nyomtatása esetén a jóváí
 > [!NOTE]
 > Győződjön meg arról, hogy a dokumentumok nyomtatható formátumai helyesen legyenek konfigurálva, feltételezve, hogy az eredeti számlákra mutató hivatkozásokat ki fogják nyomtatni.
 
+## <a name="references-to-original-invoices-in-debit-notes"></a>Hivatkozások az eredeti számlákra a terhelésekben
+
+Alapértelmezés szerint az eredeti számlákra való hivatkozásokat lehet megadni a jóváíráshoz. Hivatkozásokat lehet megadni például az eredeti számlák negatív értékű (csökkenő) javításai esetén.
+
+Ha az eredeti számlák pozitív (növelés) javításaihoz hivatkozásokat szeretne megadni, engedélyeznie kell az **Eredeti számlákra mutató hivatkozások terheléseknél** funkciót a **Szolgáltatáskezelés** munkaterületen.  
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

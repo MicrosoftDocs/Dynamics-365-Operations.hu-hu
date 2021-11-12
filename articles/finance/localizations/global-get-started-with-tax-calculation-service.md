@@ -2,7 +2,7 @@
 title: Az adószámítás első lépései
 description: Ez a témakör bemutatja, hogyan állítsuk be az adószámítást.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
-ms.translationtype: HT
+ms.openlocfilehash: 2f26f8e5eafe29e88c26d3fb6cfa950466ec6be9
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562126"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647434"
 ---
 # <a name="get-started-with-tax-calculation"></a>Az adószámítás első lépései
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör az adószámítással kapcsolatos első lépésekről nyújt tájékoztatást. Végigvezeti Önt a Microsoft Dynamics Lifecycle Services (LCS), a Regulatory Configuration Service (RCS), a Dynamics 365 Finance és a Dynamics 365 Supply Chain Management konfigurációs lépésein. Ezt követően áttekinti a Finance és a Supply Chain Management tranzakcióiban az adószámítási funkciója használatának közös folyamatát.
 
@@ -41,29 +39,10 @@ A beállítás négy fő lépésből áll:
 
 Mielőtt a témakörben leírt eljárásokat elvégezhetné, az egyes környezettípusok esetében előfeltételeknek kell teljesülniük.
 
-### <a name="for-a-production-environment"></a>Termelési környezetben
-
-Termelési környezetben a következő előfeltételeknek kell teljesülniük:
+A következő előfeltételeknek teljesülniük kell:
 
 - Hozzá kell férnie az LCS-fiókjához, és rendelkeznie kell egy telepített LCS-projekttel, amely Tier 2 vagy annál magasabb szintű környezetet tartalmaz, és a Dynamics 365 10.0.21-es vagy újabb verzióját futtatja.
 - Létre kell hoznia egy RCS-környezetet a szervezet számára, és hozzáféréssel kell rendelkeznie a fiókjához. Az RCS-környezet létrehozásával kapcsolatos további információkért lásd a [Regulatory Configuration Service áttekintése](rcs-overview.md) című részt.
-- A következő funkciókat az üzleti igényeknek megfelelően be kell kapcsolni a bevezetett pénzügyi vagy Supply Chain Management környezet **funkciókezelési** munkaterületén:
-
-    - Áfaszámítási szolgáltatás
-    - Több áfaregisztrációs szám támogatása
-    - Adó az átmozgatási rendelésben
-
-- A következő funkciókat be kell kapcsolni a telepített RCS-környezet **funkciókezelési** munkaterületén.
-
-    - Globalizációs funkciók
-
-### <a name="for-a-test-environment-public-preview"></a>Tesztkörnyezethez (nyilvános előnézet)
-
-A tesztkörnyezethez a következő előfeltételeknek kell teljesülniük:
-
-- Hozzá kell férnie az LCS-fiókjához, és rendelkeznie kell egy telepített LCS-projekttel, amely Tier 2 vagy annál magasabb szintű környezetet tartalmaz, és a Dynamics 365 10.0.21-es vagy újabb verzióját futtatja.
-- Létre kell hoznia egy RCS-környezetet a szervezet számára, és hozzáféréssel kell rendelkeznie a fiókjához. Az RCS-környezet létrehozásával kapcsolatos további információkért lásd a [Regulatory Configuration Service áttekintése](rcs-overview.md) című részt.
-- A <taxcalc@microsoft.com> e-mail címen kapcsolatba kell lépnie a Microsofttal, hogy engedélyezze a repülést a telepített pénzügyi vagy Supply Chain Management környezetben.
 - A következő funkciókat az üzleti igényeknek megfelelően be kell kapcsolni a bevezetett pénzügyi vagy Supply Chain Management környezet **funkciókezelési** munkaterületén:
 
     - Áfaszámítási szolgáltatás
