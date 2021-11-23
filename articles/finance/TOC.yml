@@ -708,48 +708,6 @@
               href: general-ledger/electronic-messaging-work-with-em.md
             - name: Egyszerű exportálási ER-formátum hívása Excel-jelentés generálásához
               href: general-ledger/electronic-messaging-example.md
-        - name: Költséggazdálkodás
-          items:
-            - name: Költséggazdálkodás – áttekintés
-              href: /dynamics365/project-operations/prod-exp/expense-management
-            - name: Költségjelentések újragondolva
-              href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
-            - name: Költséggazdálkodás tervezése
-              href: /dynamics365/project-operations/prod-exp/plan-expense-management
-            - name: Költséggazdálkodási paraméterek
-              href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
-            - name: Költségkezelési mobil munkaterület
-              href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
-            - name: Munkafolyamatok beállítása a költséggazdálkodáshoz
-              href: /dynamics365/project-operations/prod-exp/expense-workflows
-            - name: A költséggazdálkodás munkafolyamata
-              href: /dynamics365/project-operations/prod-exp/expense-workflow
-            - name: Költség delegálásának kezelése
-              href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
-            - name: Költség a bevételezés feldolgozásakor
-              href: /dynamics365/project-operations/prod-exp/expense-receipt-processing
-            - name: Hitelkártya-tranzakciók importálása és karbantartása
-              href: /dynamics365/project-operations/prod-exp/import-credit-card
-            - name: Felosztások egy költségjelentésben
-              href: /dynamics365/project-operations/prod-exp/expense-report-distributions
-            - name: Vállalatközi költségek
-              href: /dynamics365/project-operations/prod-exp/intercompany-expense
-            - name: Költségszabályok meghatározása
-              href: /dynamics365/project-operations/prod-exp/travel-expense-policies
-            - name: Költségjelentés megtekintése
-              href: /dynamics365/project-operations/prod-exp/view-expense-report
-            - name: Költségjelentés feladása
-              href: /dynamics365/project-operations/prod-exp/post-expense
-            - name: Költségjelentések és több jóváhagyó
-              href: /dynamics365/project-operations/prod-exp/expense-report-multiple-approvers
-            - name: Áfa-visszaigénylés a Költséggazdálkodás modulban
-              href: /dynamics365/project-operations/prod-exp/VAT-expense-report
-            - name: Napidíj-szabályok
-              href: /dynamics365/project-operations/prod-exp/per-diem
-            - name: Utazási igénylések
-              href: /dynamics365/project-operations/prod-exp/travel-req
-            - name: Személyes kiadások a költségjelentéseken
-              href: /dynamics365/project-operations/prod-exp/personal-expenses
         - name: Tárgyi eszközök
           items:
             - name: Tárgyi eszközök kezdőlap
@@ -1248,9 +1206,7 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Beállítás és felügyelet
               items:
-                - name: A Finance Insights konfigurálása nyilvános előzetes verzióhoz
-                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: A Finance Insights konfigurálása privát előzetes verzióhoz
+                - name: A Finance Insights konfigurálása
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Vevői fizetési előrejelzések engedélyezése
                   href: finance-insights/enable-cust-paymnt-prediction.md
@@ -1288,88 +1244,6 @@
                   href: finance-insights/payment-snapshots.md
             - name: Finance Insights – hibaelhárítási GYIK
               href: finance-insights/finance-insights-troubleshooting-faq.md
-        - name: Projektvezetés és könyvelés
-          items:
-            - name: Projektvezetés és könyvelés áttekintése
-              href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
-            - name: Vállalatközi számlázás
-              href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
-            - name: Vállalatközi projektszámlázás konfigurálása
-              href: /dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing
-            - name: Munka és kiadások elszámolóárainak konfigurálása
-              href: /dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses
-            - name: Szállítói kifizetések visszatartási feltételeinek létrehozása és alkalmazása
-              href: /dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms
-            - name: Saját fizetés beérkezésekor fizetendő szállítói fizetések beállítása és használata
-              href: /dynamics365/project-operations/prod-pma/setup-manage-vendor-payments
-            - name: Projektköltség-könyvelési beszerzési bizonylatok
-              href: accounts-payable/project-cost-accrual-purchase-receipts.md
-            - name: Projektszámlázás
-              href: accounts-payable/project-invoicing.md
-            - name: Projektszerződések
-              href: /dynamics365/project-operations/prod-pma/project-contracts
-            - name: Speciális szerződések létrehozása a folyamat alapján történő számlázáshoz
-              href: /dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress
-            - name: Projekt-előrejelzések és -költségvetések
-              href: /dynamics365/project-operations/prod-pma/project-forecasts-budgets
-            - name: Előrejelzési modellek létrehozása projektköltségvetésekhez
-              href: /dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets
-            - name: Projekt költségvetéseinek átvitele a pénzügyi év végén
-              href: /dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end
-            - name: Projekt értékesítési rendelései
-              href: /dynamics365/project-operations/prod-pma/project-sales-orders
-            - name: Projekt beszerzési rendelései
-              href: /dynamics365/project-operations/prod-pma/project-purchase-orders
-            - name: Projektajánlatok
-              href: /dynamics365/project-operations/prod-pma/project-quotations
-            - name: 'Projektárajánlat megerősítése, frissítése és elküldése'
-              href: /dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation
-            - name: Árajánlat átvitele egy projektbe
-              href: /dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project
-            - name: Projekterőforrások
-              items:
-                - name: Projekterőforrások áttekintése
-                  href: /dynamics365/project-operations/prod-pma/project-resourcing
-                - name: Projekterőforrások beállítása
-                  href: /dynamics365/project-operations/prod-pma/set-up-project-resources
-                - name: Erőforrás-kompetenciák kezelése
-                  href: /dynamics365/project-operations/prod-pma/manage-resource-competencies
-                - name: Új projekt létrehozása
-                  href: /dynamics365/project-operations/prod-pma/create-new-project
-                - name: Szerepköralapú árképzés beállítása
-                  href: /dynamics365/project-operations/prod-pma/set-up-role-based-pricing
-                - name: Projektcsapat létrehozása
-                  href: /dynamics365/project-operations/prod-pma/create-project-team
-                - name: Erőforrás-kapacitás szinkronizálása
-                  href: /dynamics365/project-operations/prod-pma/synchronize-resource-capacity
-                - name: Projekterőforrás-ütemezés teljesítménye
-                  href: /dynamics365/project-operations/prod-pma/project-scheduling-performance
-                - name: Szerepkörök beállítása a munkalebontási struktúra sablonjain
-                  href: /dynamics365/project-operations/prod-pma/set-up-roles-wbs-template
-                - name: A tervezett erőforrások erőforrás-teljesítése
-                  href: /dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources
-            - name: Cikkek átvétele cikkszükségletből származó beszerzési rendelés alapján
-              href: /dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement
-            - name: Munkalebontási struktúrák
-              items:
-                - name: Munkalebontási struktúrák áttekintése
-                  href: /dynamics365/project-operations/prod-pma/work-breakdown-structures
-                - name: Microsoft Project Client-integráció
-                  href: /dynamics365/project-operations/prod-pma/project-integration
-                - name: Project-mobilalkalmazások áttekintése
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview
-                - name: Projektidő megadására szolgáló mobil munkaterület
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace
-                - name: Project Timesheet mobilalkalmazás
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet
-                - name: Projekthez tartozó időnyilvántartások mobileszközön
-                  href: /dynamics365/project-operations/prod-pma/Mobile-timesheets
-                - name: Egyéni mezők alkalmazása a Project Timesheet mobilalkalmazás esetében
-                  href: /dynamics365/project-operations/prod-pma/custom-fields-mobile
-            - name: Projekttámogatások
-              href: /dynamics365/project-operations/prod-pma/project-grants
-            - name: Projektbecslés figyelmen kívül hagyása
-              href: /dynamics365/project-operations/prod-pma/eliminate-project-estimate
         - name: Állami szektor
           items:
             - name: Állami szektor – kezdőlap
@@ -1804,6 +1678,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: NF-e paraméterek beállítása a pénzügyi létesítményhez
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NF-e XML-fájlok áthelyezése mellékletként
+                      href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
                     - name: NT2020.005 – Az elektronikus pénzügyi bizonylat (NF-e) elrendezési és ellenőrzési frissítései
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – Közvetítő értékesítési digitális platform az NF-e esetében
@@ -2190,6 +2066,8 @@
                       href: localizations/tasks/create-submit-vat-report.md
                 - name: Kiegyenlítési tranzakciók megtekintése
                   href: localizations/emea-transactions-settlement-form.md
+                - name: Pénzügyi ok
+                  href: localizations/emea-financial-reason.md
             - name: Finnország
               items:
                 - name: Finnország – áttekintés
@@ -2750,10 +2628,14 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Banki adatok használhatóságának javítása
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
-                - name: Olasz Intrastat
-                  href: localizations/emea-ita-intrastat.md
-                - name: Érkezések és küldemények feladása az Intrastat számára
-                  href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                - name: Intrastat
+                  items:
+                    - name: Olasz Intrastat
+                      href: localizations/emea-ita-intrastat.md
+                    - name: Érkezések és küldemények feladása az Intrastat számára
+                      href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                    - name: Intrastat (IT) fájlformátum
+                      href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
                 - name: Vegyes költségek kilogrammonként egy Intrastat-bevallásban
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Szándéknyilatkozatok – A szokásos exportőrök számlázása
@@ -3110,6 +2992,8 @@
                   href: localizations/emea-pol-returnable-packages.md
                 - name: Áfajelentések
                   href: localizations/emea-pol-sales-tax-reports.md
+                - name: Lengyelország – Intrastat
+                  href: localizations/emea-pol-intrastat.md
                 - name: Raktárak szerinti számsorozatok beállítása
                   href: localizations/emea-pol-number-sequence-warehouses.md
                 - name: Standard könyvvizsgálati fájl
@@ -4375,11 +4259,13 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
                 - name: Adatkötések relatív elérési útja
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
+                - name: Kifejezések tervezése az alkalmazásosztályú metódusok meghívására
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?toc=/dynamics365/finance/toc.json
             - name: ER-megoldások használata a Finance szolgáltatásban
               items:
                 - name: Keretrendszer konfigurálása
                   items:
-                    - name: Az Elektronikus jelentéskészítéskészítési keretrendszer konfigurálása
+                    - name: Az elektronikus jelentéskészítési keretrendszer konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
                     - name: Elektronikus jelentéskészítéskészítési sablonok biztonsági mentése és helyreállítása
                       items:

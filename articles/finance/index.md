@@ -2,7 +2,7 @@
 title: Finance kezdőlapja
 description: Ez a témakör a Microsoft Dynamics 365 Finance pénzgazdálkodással kapcsolatos funkcióinak súgótémaköreit és egyéb erőforrásait tartalmazza.
 author: roschlom
-ms.date: 08/18/2021
+ms.date: 11/04/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad6c671dd48ff482caf1b24a3842d8db0064dc18
-ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.openlocfilehash: 13a5e12c7ea45ff343a5c7ae14b8ed5a030aabf5
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7394563"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753721"
 ---
 # <a name="finance-home-page"></a>Finance kezdőlapja
 
@@ -41,12 +41,10 @@ További információkért válasszon ki egy szolgáltatásterületet.
         - [Költségkönyvelés](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Költséggazdálkodás](/dynamics365/project-operations/prod-exp/expense-management)
         - [Pénzügyi jelentéskészítés](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
         - [Tárgyi eszközök](fixed-assets/fixed-assets.md)
         - [Finance Insights](finance-insights/finance-insights-home-page.md)
         - [Főkönyv és pénzügyi jelentéskészítés](general-ledger/general-ledger.md) 
-        - [Projektvezetés és könyvelés](/dynamics365/project-operations/prod-pma/overview-project-management-accounting)
         - [Állami szektor](public-sector/public-sector-functionality.md) 
     :::column-end:::
 :::row-end:::
@@ -66,11 +64,19 @@ Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube 
 
 ### <a name="countryregion-functionality"></a>Ország/régió szerinti funkciók
 
-Az ország/régió előírásai befolyásolják az adóbeállítások és a pénzgazdálkodás egyéb területeit. Az ország- és régióspecifikus funkciókról többet tudhat meg a [Honosítási és szabályozási funkciók​](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json) részben.
+Az ország/régió előírásai befolyásolják az adóbeállítások és a pénzgazdálkodás egyéb területeit. Ha szeretne többet tudni az ország- és régióspecifikus funkciókról, lásd: [Honosítási és szabályozási funkciók](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json).
 
 ### <a name="additional-content"></a>További tartalom
 
-Az ellátásilánc-kezelési funkciók a teljes beszerzésirányítási folyamat egy részéért felelősek, beleértve a kérelmezés, rendelés, bevételezés, számlázás és a szervezet által beszerzett áruk és szolgáltatások kifizetési folyamata is. A beszerzések, készletek és gyártás kezeléséhez kapcsolódó lehetőségekre vonatkozó további információkért tekintse meg a [Supply Chain Management kezdőoldalát](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
+A Supply Chain Management funkció lefedi a teljes beszerzésirányítási folyamat bizonyos részeit:
+
+   - Igénylés
+   - Rendelés 
+   - Bevételezés
+   - Számlázás
+   - A szervezet által vásárolt áruk és szolgáltatások kifizetése 
+    
+A beszerzések, a készlet és a gyártás kezelésével kapcsolatos képességekkel kapcsolatos további információkért lásd a [Supply Chain Management kezdőoldalát](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
 
 ## <a name="elearning-courses"></a>eLearning-tanfolyamok
 

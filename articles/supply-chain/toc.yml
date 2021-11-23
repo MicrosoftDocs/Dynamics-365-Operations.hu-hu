@@ -713,8 +713,10 @@
                   href: cost-management/inventory-close.md
                 - name: Az aktuális készlet költségértékeinek korrekciója
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Készletérték-tárolási jelentés
+                - name: Készletérték-jelentések
                   href: cost-management/inventory-value-report-storage.md
+                - name: Készletérték-jelentés – példák és logika
+                  href: cost-management/inventory-value-report-examples.md
                 - name: Készletkorosítási jelentés tárolása
                   href: cost-management/inventory-aging-report-storage.md
                 - name: Készletkorosítási jelentés – példák és logika
@@ -1673,6 +1675,8 @@
                   href: master-planning/planning-optimization/infinite-capacity-planning.md
                 - name: Ütemezés képességen alapuló erőforrás kiválasztásával
                   href: master-planning/planning-optimization/capability-based-scheduling.md
+                - name: Prioritásokon alapuló tervezés
+                  href: master-planning/planning-optimization/priority-based-planning.md
                 - name: Készletjelölés tervezési optimalizálással
                   href: master-planning/planning-optimization/marking.md
                 - name: Vállalatközi tervezés
@@ -1719,6 +1723,8 @@
                   href: master-planning/maintain-planned-orders.md
                 - name: Biztonsági készlet teljesítése cikkek számára
                   href: master-planning/safety-stock-replenishment.md
+                - name: A biztonsági készlet napló használata a cikkek minimális fedezetének frissítésére
+                  href: master-planning/safety-stock-journal.md
                 - name: Késések
                   href: master-planning/delays.md
                 - name: Alaptervezési feladat visszavonása
@@ -2351,6 +2357,8 @@
               href: production-control/unified-job-ids.md
             - name: Folyamatautomatizációs folyamatok kezdeményezése minőségi rendelések létrehozása érdekében
               href: production-control/process-automation-quality-orders.md
+            - name: Integráció külső gyártásvégrehajtási rendszerekkel
+              href: production-control/mes-integration.md
             - name: Árucikkgyártás
               items:
                 - name: Termelési alapadatok karbantartása
@@ -2649,6 +2657,8 @@
                   href: production-control/production-floor-execution-use.md
                 - name: A termelési üzem végrehajtási felületének kialakítása
                   href: production-control/production-floor-execution-styles.md
+                - name: A termelési üzem végrehajtási felületének testreszabása
+                  href: production-control/production-floor-execution-customize.md
         - name: Visszatérítés-kezelés
           items:
             - name: Visszatérítés-kezelő modul áttekintése

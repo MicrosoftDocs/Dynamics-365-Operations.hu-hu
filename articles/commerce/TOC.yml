@@ -2536,8 +2536,10 @@
                       href: e-commerce-extensibility/sdk-faq.md
                     - name: Gyakorlati tanácsok a hibaelhárításhoz a Dynamics 365 Commerce fejlesztéséhez
                       href: e-commerce-extensibility/debugging-best-practices.md
-            - name: Retail szoftverfejlesztői készlet (SDK)
+            - name: Retail SDK
               items:
+                - name: Áttelepítés a Commerce SDK-ra
+                  href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
                 - name: A Retail szoftverfejlesztői készlet (SDK) architektúrája
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
                 - name: Buildelési folyamat beállítása a független becsomagolású SDK számára
