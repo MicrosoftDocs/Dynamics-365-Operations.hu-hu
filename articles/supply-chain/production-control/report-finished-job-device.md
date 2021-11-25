@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 19c4e3c6ad682f3814d334f88c0653c4e7a51d23
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 2fa82c721316fb21442e1cfc00ba00ff8cb2b750
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569287"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778231"
 ---
 # <a name="report-as-finished-from-the-job-card-device"></a>Jelentés befejezettként a feladatkártya eszközből
 
@@ -218,7 +218,7 @@ A speciális raktári folyamatok az azonosítótábla-dimenzió segítségével 
 
 Az ebben a szakaszban ismertetett szolgáltatások használatához a [szolgáltatások kezelésénél](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) be kell kapcsolni a következő szolgáltatásokat (ebben a sorrendben):
 
-1. A Feladatkártya eszközhöz hozzáadott, készként történő jelentéshez használt azonosítótábla
+1. A feladatkártya-eszközhöz hozzáadott készként jelentéshez szükséges tábla (az ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció alapértelmezés szerint be van kapcsolva.)
 1. Az azonosítótábla-szám automatikus létrehozásának engedélyezése, amikor a feladatkártya eszközében befejezettként jelentik
 1. Címke nyomtatása a Feladatkártya eszközéből
 

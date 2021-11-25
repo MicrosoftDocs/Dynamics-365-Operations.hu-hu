@@ -1,8 +1,8 @@
 ---
-title: Dátuma és Idő mezők ismertetése
-description: Annak megértése, mire számíthat, ha a Microsoft Dynamics 365 Human Resources megoldásban dátum-és időmezőket használ.
-author: andreabichsel
-ms.date: 02/03/2020
+title: Dátum és Idő mezők ismertetése
+description: Ez a témakör bemutatja, hogy mi várható a Microsoft Dátum és idő mezőinek használatakor Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb011ca7b5f4c036b2f49875a256885182564c391c6dd263a0bfa70bbd29f4a7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 06c783c1e4a2961f1445909ea03d557c0985064e
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733540"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728589"
 ---
 # <a name="understand-date-and-time-fields"></a>Dátum és Idő mezők ismertetése
 
@@ -28,37 +28,37 @@ ms.locfileid: "6733540"
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-**A dátum és Idő** mezők alapvető fontosságúak a Dynamics 365 Human Resources megoldásban. Fontos, hogy megtanulja, hogyan dolgozzon a **Dátum és idő** adatokkal űrlapokon, a Dataverse szolgáltatásban és külső forrásokon.
+**A Dátum és** idő mezők a Microsoft alapvető alapfogalmai Dynamics 365 Human Resources. Fontos, hogy jobban megértsük, hogyan kell dolgozni a lapokon, a külső forrásokban és a lapokon található dátum- és **·** Dataverse időadatokon.
 
 ## <a name="understanding-the-difference-between-date-and-date-and-time-field-data-types"></a>A Dátum és a Dátum és az idő mező adattípusai különbségeinek megértése
 
-A **Dátum és idő** mező időzóna-információt tartalmaz, míg a **Dátum** mezők nem. A **Dátum** mezők bármilyen helyen ugyanazt az információt jelenítik meg. Amikor dátumot ír be a **Dátum** mezőbe, az Emberi erőforrások ugyanazt a dátumot írja az adatbázisba.
+**A Dátum és** idő mezők időzónaadatokat tartalmaznak, míg a Dátum mezők **·** nincsenek. **A** dátummezők minden helyen ugyanazt az információt mutatják. Ha dátumot ad meg egy Dátum mezőben, akkor az adatbázisba ugyanez a **dátum lesz** írva.
 
-Amikor egy **Dátumot és idő** mezőben adatokat jeleníti meg, az Emberi erőforrások a **Felhasználói beállítások** képernyőn (**Közös > Beállítás > Felhasználói beállítások**) megadott időzóna alapján módosítja a dátumot és az időt. Előfordulhat, hogy a mezőben megadott dátum-és időadatok nem egyeznek meg az adatbázisba írt adatokkal.
+Ha egy Dátum és idő mezőben adatok jelennek meg, akkor a program a felhasználónak a Felhasználói beállítások lapon kiválasztott időzónája (Általános beállítási felhasználói beállítások) alapján módosítja a dátumot és az **·** **·** **\>\>** időt. Lehet, hogy a mezőben beírt dátum- és időinformációk nem egye meg, mint az adatbázisba írt adatok.
 
-[![Felhasználói beállítások képernyő.](./media/useroptionsform.png)](./media/useroptionsform.png)
+[![ Felhasználói beállítások lap.](./media/Useroptionsform.png)](./media/Useroptionsform.png)
 
-## <a name="understanding-date-and-time-fields-in-forms"></a>Dátum és Idő mezők képernyőkön 
+## <a name="understanding-date-and-time-fields-on-pages"></a>A lapokon található Dátum és idő mezők ismertetése 
 
 A **Dátum és idő** mezőben a képernyőn megjelenő adatok nem egyeznek meg az adatbázisban tárolt adatokkal, ha a felhasználó időzónája nem az univerzális világidő (UTC) szerint van állítva. A **Dátum és idő** mezők adatait mindig UTC-ben tárolja a program.
 
-[![Dolgozó képernyő UTC.](./media/worker-form.png)](./media/worker-form.png)
+[![ Dolgozói oldal UTC-formátuma](./media/worker-form.png)](./media/worker-form.png)
 
 ## <a name="understand-date-and-time-fields-in-the-database"></a>A Dátum és Idő mezők működés az adatbázisban 
 
-Amikor a Human Resources alkalmazás egy **Dátum és idő** értéket ír az adatbázisba, az adatokat UTC-ben tárolja. Ez lehetővé teszi a felhasználók számára , hogy a felhasználói beállításaiban megadott időzónához viszonyítva jelenítsenek meg minden **Dátum és idő** adatot.
+Ha egy dátum- és időértéket írnak az adatbázisba, akkor a rendszer UTC-formátumban tárolja **·** az adatokat. A felhasználók tehát a felhasználói beállításaikban megadott időzónához képest bármilyen dátum- és időadatokat **·** láthatnak.
  
 A fenti példában a kezdési időpont egy időpont, nem pedig egy adott dátum. Ha módosítja a bejelentkezett felhasználó időzónáját a GMT + 12:00 értékről GMT UTC értékre, akkor ugyanaz a rekord 04/30/2019 12:00:00 értéket mutat 05/01/2019 12:00:00 időpont helyett.
-  
-Az alábbi példában a 000724 számú alkalmazott munkaviszonya az időzónatól függetlenül aktívvá válik ugyanabban az időpontban. Az alkalmazott aktív lesz 2019. 04. 30-án a GMT-időzónában, amely ugyanaz, mint a 2019. 05. 01. a GMT + 12:00 időzónában. Mindkettő ugyanarra az idő pontra hivatkozik, és nem egy adott dátumra. 
 
-[![Dolgozó képernyő GMT.](./media/worker-form2.png)](./media/worker-form2.png)
+Az alábbi példában az 000724 alkalmazott foglalkoztatása időzónától függetlenül egyidejűleg aktívvá válik. Az alkalmazott aktív lesz 04. 30-án a GMT-időzónában, amely ugyanaz, mint a 05. 01. a GMT + 12:00 időzónában. Mindkettő ugyanarra az idő pontra hivatkozik, és nem egy adott dátumra. 
+
+[![ Dolgozó lapja, GMT.](./media/worker-form2.png)](./media/worker-form2.png)
 
 ## <a name="date-and-time-data-in-data-management-framework-excel-dataverse-and-power-bi"></a>Dátum-és időadatok az adatkezelési keretrendszerben, Excel programban, Dataverse és Power BI szolgáltatásokban 
 
-Az adatkezelési keretrendszer, az Excel-bővítmény, a Dataverse és a Power BI és a jelentéskészítés mind az adatbázis szintjén, közvetlenül az adatokkal való együttműködésre szolgálnak. Mivel a felhasználó időzónájában nincs ügyfél a **Dátum és idő** adatok helyesbítésére, az összes **Dátum és idő** érték UTC-ben van, ami helytelen feltételezésekhez vezethet az adatok beírása vagy megtekintése során.  
+Az adatkezelési keretrendszer (DMF), Excel-bővítmények és jelentések mind úgy vannak kialakítva, hogy közvetlenül az adatbázis szintjén kommunikálnak az Dataverse Power BI adatokkal. Mivel a felhasználó időzónájában nincs ügyfél a **Dátum és idő** adatok helyesbítésére, az összes **Dátum és idő** érték UTC-ben van, ami helytelen feltételezésekhez vezethet az adatok beírása vagy megtekintése során.
  
-A **Dátum és idő** adatokat, amelyeket DMF, Excel, vagy Dataverse szolgáltatáson keresztül küldtek be, az adatbázis UTC-nek tekinti. Ez némi zavart okozhat, ha a benyújtott **dátum-és időérték** nem a várt módon jelenik meg, mert az adatokat megjelenítő felhasználó időzónája nem UTC értékre van állítva. 
+Amikor **a dátum- és időadatokat** DMF, Excel vagy az adatbázis feltételezi, hogy az adatok UTC-időben Dataverse vannak. Ha azonban az adatokat megtekintő felhasználók felhasználói időzónája nem UTC-értékre van állítva, akkor a beküldött dátum- és időérték nem fog a vártnak megfelelően megjelenni, és előfordulhat, hogy a felhasználók **·** össze vannak állítva. 
  
 Ugyanaz a dolog történik meg visszafelé az adatok exportálásakor. Az exportált DMF-entitás **Dátum és idő** adatai eltérhetnek attól, ami a Dynamics-ügyfélben látható. 
  
@@ -68,27 +68,27 @@ Ha a DMF-hez hasonló külső forrásokat használ az adatok szerkesztéséhez v
 
 **Az Emberi erőforrások időzónája UTC értékre van állítva**
 
-[![Dolgozói űrlap UTC-formátumra állítva.](./media/worker-form3.png)](./media/worker-form3.png)
+[![ A dolgozói lap UTC-formátumra van állítva.](./media/worker-form3.png)](./media/worker-form3.png)
 
 **Az Emberi erőforrások időzónája GMT +12:00 értékre van állítva** 
 
-[![Dolgozói űrlap GMT-formátumra állítva.](./media/worker-form4.png)](./media/worker-form4.png)
+[![ A dolgozói lap a GMT-be van állítva.](./media/worker-form4.png)](./media/worker-form4.png)
 
 **Excel-OData-n keresztül**
 
-[![Excel-OData-n keresztül.](./media/Excelviaodata.png)](./media/Excelviaodata.png)
+[![ Excel-OData-n keresztül.](./media/Excelviaodata.png)](./media/Excelviaodata.png)
 
 **DMF-előkészítés**
 
-[![DMF-előkészítés.](./media/DMFStaging.png)](./media/DMFStaging.png)
+[![ DMF-előkészítés.](./media/DMFStaging.png)](./media/DMFStaging.png)
 
 **DMF-exportálás**
 
-[![DMF-export.](./media/DMFexport.png)](./media/DMFexport.png)
+[![ DMF-export.](./media/DMFExport.png)](./media/DMFExport.png)
 
 **Excel Dataverse szolgáltatáson keresztül**
 
-[![Excel Dataverse szolgáltatáson keresztül.](./media/ExcelCDS.png)](./media/ExcelCDS.png)
+[![ Excel Dataverse szolgáltatáson keresztül.](./media/ExcelCDS.png)](./media/ExcelCDS.png)
 
 ## <a name="see-also"></a>Lásd még
 

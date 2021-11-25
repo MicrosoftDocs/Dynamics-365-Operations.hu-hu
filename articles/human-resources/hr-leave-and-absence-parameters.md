@@ -1,8 +1,8 @@
 ---
 title: Szabadság- és távollétparaméterek konfigurálása
-description: Emberi erőforrások paramétereinek meghatározása a szabadsághoz és a távolléthez a Dynamics 365 Human Resources alkalmazásban.
-author: andreabichsel
-ms.date: 11/02/2020
+description: Ez a témakör azt írja le, hogyan lehet definiálni az emberi erőforrásokkal kapcsolatos paramétereket a távolléthez és a távolléthez Dynamics 365 Human Resources.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ab4b2b3adefa388acfadc77c7b25a6b47d01571f0e58f6ab81101e25d1b548e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 59d89c4b22d71057fd3b398c91e1fbf04112e4a9
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777959"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728857"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Szabadság- és távollétparaméterek konfigurálása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Mielőtt beállítaná a szabadság- és a távollétterveket a Dynamics 365 Human Resources alkalmazásban, célszerű ellenőrizni az összes kapcsolódó emberierőforrás-paraméter beállítását, többek között a következőket:
+Mielőtt távolléti és távolléti terveket ad meg, jó lenne ellenőrizni az összes kapcsolódó emberierőforrás-paraméter Dynamics 365 Human Resources **·** beállításait, például a következőket:
 
 - A szabadságkérelmek számsorozata
 - Családi okból történő és a betegszabadságról szóló amerikai törvény (FMLA) beállításai
@@ -74,7 +74,7 @@ Mielőtt beállítaná a szabadság- és a távollétterveket a Dynamics 365 Hum
 
     - Válassza az **Egyenleg számítása** lehetőséget, ha az egyenlegeket a mai napig vagy az elhatárolási időszakig szeretné megjeleníteni. Ha az **Egyenleg a mai napig** lehetőséget választja, akkor az egyenleg az összes elhatárolást, kiigazítást és kérelmet megjeleníti a mai napig. Ha az **Egyenleg az elhatárolási időszakig** lehetőséget választja, akkor az egyenleg az elszámolási időszak gyakorisága által meghatározott elhatárolási időszak összes elhatárolását, helyesbítését és kérését jeleníti meg. 
 
-    - Az átvitt lejárati kötegelt feladat kezdési időpontjának beállítása.  
+    - Az **Áthozott** lejárati kötegelt **feladat** kezdési ideje.  
     
     - Válassza az **Igen** lehetőséget a **Szabadság vásárlásnak engedélyezése az alkalmazottaknak** és **Szabadság eladásánek engedélyezése az alkalmazottaknak** lehetőségekhez. Ha ezekhez a lehetőségekhez az **Igen** értéket választja, akkor létrehozhat szabadságvásárlási és -eladási irányelveket, és lehetővé teszi az alkalmazottak számára, hogy vásároljanak és eladjanak a szabadságot.
 

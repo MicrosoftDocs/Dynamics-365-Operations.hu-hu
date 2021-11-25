@@ -1,43 +1,43 @@
 ---
 title: Személyzetkezelési munkaterület
 description: Ez a témakör a Személyzetkezelési munkaterület fogalmi elemeit ismerteti.
-author: andreabichsel
-ms.date: 07/01/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.author: anbichse
-ms.reviewer: anbichse
+ms.author: twheeloc
+ms.reviewer: twheeloc
 ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 923d4a980c3f8f9b3bf5be1f77d8910081123fa08b068f1fd8fa935312d3a101
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 4332be972ab3dc81e7e4f3cc297a91cd247e721e
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754818"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771338"
 ---
 # <a name="personnel-management-workspace"></a>Személyzetkezelési munkaterület
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A **Személyzetkezelési** munkaterületen nagy mennyiségű tartalom található. Tartalmazza a személyzeti mozgásokat, nyomon követi az alkalmazottak módosításait, a nyitott pozíciókat, a címváltozásokat, a lejáró rekordokat és az analitikát, valamint hivatkozásokat tartalmaz bizonyos információkra. Ez a témakör részletes információkat tartalmaz a munkaterületével minden egyes részéről.
+A **Személyzetkezelési** munkaterületen nagy mennyiségű tartalom található. Tartalmazza a személyzeti mozgásokat, nyomon követi az alkalmazottak módosításait, a nyitott pozíciókat, a címváltozásokat, a lejáró rekordokat és az analitikát, valamint hivatkozásokat tartalmaz az adott információkra. Ez a témakör részletes információkat tartalmaz a munkaterületével minden egyes részéről.
 
 ## <a name="activity-tab"></a>Tevékenység lap
 
 A **Tevékenység** lap olyan szakaszokat tartalmaz, amelyek az alapján csoportosítják a dolgozókat, hogy hol tartanak az alkalmazás folyamatában:
 
-- Felveendő jelentkezők
-- Hamarosan indul
-- Legutóbbi felvételek
-- Kilépés
-- Kilépett
+- **Felveendő jelentkezők**
+- **Hamarosan indul**
+- **Legutóbbi felvételek**
+- **Kilépés**
+- **Kilépett**
 
 Amikor egy dolgozó az alkalmazási folyamat e fázisainak valamelyikében van, adott műveletek érhetők el gombként a kártyán, illetve a jobb felső sarokban látható hárompontos (**...**) ikon kiválasztásakor megjelenő menüben. Az alábbi alszakaszok a **Tevékenység** lap szakaszait írják le, és felsorolják az elérhető műveleteket.
 
@@ -51,9 +51,9 @@ A munkaterület **Felveendő jelentkezők** szakaszát több forrásból tölti 
 
 Amikor a **Felveendő jelentkezők** szakaszban megjelennek a jelentkezők, a következő műveleteket végezheti el a kártyáján a hárompontos ikont kiválasztva:
 
-- Jelölt elutasítása
-- Nem felveendő
-- Felvétel
+- **Jelölt elutasítása**
+- **Nem felveendő**
+- **Felvétel**
 
 > [!NOTE]
 > Ha a lista feltöltése a Microsoft Dataverse rendszeréből történik, akkor ugyanazok a ek jelennek meg az összes jogi személynél, mivel a höz nincs jogi személy társítva.
@@ -65,7 +65,7 @@ A **Hamarosan indul** szakaszban olyan dolgozók jelennek meg, akik a jövőben 
 Ha a vezető nem jelenik meg a kártyán, nincs beosztás rendelve a dolgozóhoz.
 
 > [!NOTE] 
-> Javasoljuk, hogy az ellenőrző lista alkalmazása előtt rendeljen hozzá egy beosztást a dolgozóhoz, mert az előkészítési feladatok időnként az újonnan felvett alkalmazott feletteséhez vannak hozzárendelve. Ha azonban nincs beosztás hozzárendelve, akkor nem lehet meghatározni az új alkalmazott felettesét. Ebben az esetben a vezetőnek szánt előkészítési feladatokat az ellenőrzőlista tulajdonosához rendeli hozzá a rendszer.
+> Javasoljuk, hogy feladatlista alkalmazása előtt rendeljen beosztást egy dolgozóhoz. Előfordul, hogy a felvett alkalmazottak vezetőihez a berakodó feladatok vannak hozzárendelve. Ha azonban nincs beosztás hozzárendelve, akkor nem lehet meghatározni az új alkalmazott felettesét. Ebben az esetben a vezetőnek szánt előkészítési feladatokat az ellenőrzőlista tulajdonosához rendeli hozzá a rendszer.
 
 Amikor a dolgozók megjelennek a **Hamarosan indul** szakaszban, a következő műveletek érhetők el hozzájuk:
 
@@ -85,7 +85,7 @@ A **Legutóbbi felvételek** szakasz sorolja fel azokat a dolgozókat, akiknek a
 A lista alapértelmezés szerint az elmúlt hét napban felvett dolgozókat jeleníti meg. A beállítás módosításához az **Emberi erőforrások paraméterei** oldal **Általános** lapján adja meg a **Legutóbbi felvételek** időkeretét. A **Legutóbbi felvételek** szakaszban az adatok megadott számú napra, hónapra vagy évre vonatkozóan jeleníthetők meg. Például az elmúlt 14 napban felvett dolgozók listájának megtekintéséhez állítsa az **Időszak** mezőt **14** értékre, az **Egység** mezőben pedig adja meg a **Napok** értéket.
 
 > [!NOTE]
-> Az **Emberi erőforrások paraméterei** oldalon szereplő beállítások vállalatspecifikusak. Emiatt a megtekinthető közelmúltbeli felvételek időkerete vállalatonként eltérő lehet. Az USMF vállalatnál például szeretné az elmúlt hét nap minden új felvételét megtekinteni. Az USSI vállalatnál azonban szeretné az elmúlt 14 nap minden új felvételét megtekinteni. Ebben az esetben minden vállalatnál meg kell nyitnia az **Emberi erőforrások paraméterei** lapot, és be kell állítania a szükséges paramétereket.
+> Az **Emberi erőforrások paraméterei** oldalon szereplő beállítások vállalatspecifikusak. Emiatt a megtekinthető közelmúltbeli felvételek időkerete vállalatonként eltérő lehet. Az USMF vállalatnál például szeretné az elmúlt hét nap minden új felvételét megtekinteni. Az USSI vállalatnál azonban érdemes lehet megtekinteni az összes, az elmúlt 14 napból származó új felvételeket. Ebben az esetben minden vállalatban nyissa meg az Emberi erőforrások paraméterei lapot, és állítsa be **·** a szükséges paramétereket.
 
 Ha a vezető nem jelenik meg a kártyán, nincs beosztás rendelve a dolgozóhoz.
 
@@ -132,13 +132,9 @@ Amikor a dolgozó megjelenik a **Kilépett** szakaszban, a következő művelete
 
 Az **Alkalmazott módosításai** lapon látható a dolgozók személyzeti műveleteinek listája. Ez a lista nem érhető el alapértelmezetten. A funkció engedélyezéséhez az **Emberi erőforrások megosztott paraméterei** oldal **Személyzeti műveletek** lapján állítsa be a **Dolgozói műveletek engedélyezése** lehetőség számára az **Igen** értéket.
 
-A személyzeti műveletekkel kapcsolatos további tudnivalókért lásd: (Személyzeti műveletek lapra mutató hivatkozás).
-
 ## <a name="position-changes-tab"></a>Beosztásváltozások lap
 
 A **Beosztásváltozások** lapon látható a dolgozók beosztással kapcsolatos műveleteinek listája. Ez a lista nem érhető el alapértelmezetten. A funkció engedélyezéséhez az **Emberi erőforrások megosztott paraméterei** oldal **Személyzeti műveletek** lapján állítsa be a **Beosztásműveletek engedélyezése** lehetőség számára az **Igen** értéket.
-
-A személyzeti műveletekkel kapcsolatos további tudnivalókért lásd: (Személyzeti műveletek lapra mutató hivatkozás).
 
 ## <a name="open-positions-tab"></a>Nyitott pozíciók lap
 
@@ -151,11 +147,11 @@ A **Nyitott pozíciók** lap felsorolja az összes nyitott pozíciót. Ahhoz, ho
 
 A **Lejáró rekordok** lap felsorolja az összes olyan elemet, amely lejárt vagy le fog járni annak a vállalatnak a dolgozói esetében, amelybe a felhasználó be van jelentkezve. A listában a következő elemek jelennek meg:
 
-- Diplomák
-- Azonosítás
-- Próbaidők
-- Szűrések
-- Tesztek
+- **Diplomák**
+- **Azonosítás**
+- **Próbaidők**
+- **Szűrések**
+- **Tesztek**
 
 Ha meg szeretné adni, hogy a lista a lejárt vagy a lejáró rekordokat jeleníti meg, az **Emberi erőforrások paraméterei** oldal **Általános** lapján határozzon meg időkeretet a **Lejáró rekordok** vagy a **Lejárt rekordok** számára. A **Lejáró rekordok** lapon szereplő adatok a megadott számú napig jeleníthetők meg. Például a következő 14 napban lejáró rekordok listájának megtekintéséhez a **Napok száma** mezőben adja meg a **14** értéket.
 
@@ -185,4 +181,4 @@ A **Jóváhagyások** csempe az aktuális felhasználó jóváhagyására váró
 
 A **Címváltozások** csempe az összes olyan címváltozást számba veszi, amely az **Emberi erőforrások paraméterei** oldalon megadott számú napon belül történt. Amikor kiválasztja a **Címváltozások** csempét, egy új lapon megjelennek a címváltozások részletei. Az oldal jobb felső sarkában kiválaszthatja a **Jövőbeli címváltozásokkal** lehetőséget a jövőbeli dátumú címváltozások megjelenítéséhez.
 
-A címváltozások megtekintésével és kezelésével kapcsolatos további tudnivalókat lásd a [Címváltozások megtekintése és kezelése ](hr-personnel-view-address-changes.md)oldalon.
+A címváltozások megtekintésével és kezelésével kapcsolatos további tudnivalókat lásd a [Címváltozások megtekintése és kezelése](hr-personnel-view-address-changes.md) oldalon.

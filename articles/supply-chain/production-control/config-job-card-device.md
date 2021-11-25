@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 259ed49b9bdfb70ea357a7d20ea7ae8b141978cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576952"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777740"
 ---
 # <a name="configure-job-card-for-devices"></a>Feladatkártya konfigurálása az eszközökhöz
 
@@ -34,19 +34,19 @@ Az ebben a témakörben leírt néhány beállítást engedélyeznie kell a rend
 
 A funkció elérhetővé tétele érdekében engedélyezze a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő szolgáltatásokat (sorrendben):
 
-1. A Feladatkártya eszközhöz hozzáadott, készként történő jelentéshez használt azonosítótábla
+1. A feladatkártya-eszközhöz hozzáadott készként jelentéshez szükséges tábla (az ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció alapértelmezés szerint be van kapcsolva.)
 1. Az azonosítótábla-szám automatikus létrehozásának engedélyezése, amikor a feladatkártya eszközében befejezettként jelentik
 
 ### <a name="print-label"></a>Címkenyomtatás
 
 A funkció elérhetővé tétele érdekében engedélyezze a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő szolgáltatásokat (sorrendben):
 
-1. A Feladatkártya eszközhöz hozzáadott, készként történő jelentéshez használt azonosítótábla
+1. A feladatkártya-eszközhöz hozzáadott készként jelentéshez szükséges tábla (az ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció alapértelmezés szerint be van kapcsolva.)
 1. Címke nyomtatása a Feladatkártya eszközéből
 
 ### <a name="allow-locking-of-touch-screen"></a>Az érintőképernyő zárolásának engedélyezése
 
-A funkció elérhetővé tétele érdekében engedélyezze a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő funkciót:
+Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. Ha használni szeretné, ellenőrizze, hogy be van-e kapcsolva a következő funkció a [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) szolgáltatáskezelésben:
 
 - A feladatkártya-eszköz és a feladatkártya-terminál zárolására alkalmas funkció az eszközök fertőtlenítése érdekében
 

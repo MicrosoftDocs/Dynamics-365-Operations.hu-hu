@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 02/06/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: intro-internal
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 859bb270a0c1e37b6673413b1e8444a6e4b00e2d
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
-ms.translationtype: HT
+ms.openlocfilehash: 131c002000ee6ebed81a23f45ce17b7a7fff0b95
+ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417031"
+ms.lasthandoff: 11/16/2021
+ms.locfileid: "7817361"
 ---
 # <a name="dual-write-overview"></a>Kettős írás – áttekintés
 
@@ -68,11 +68,7 @@ A kettős írás megfeleltetést hoz létre a Finance and Operations alkalmazás
 + Lehetőség a tényleges készlet elérhetőségének és részleteinek keresésére
 + Projekt készpénzre váltási élménye
 + Több cím és szerepkör kezelésének képessége a fél koncepción keresztül
-+ Önálló erőforrás-kezelés felhasználók számára
-+ Integrált csatornák a kiskereskedelem és marketing modulhoz
-+ Betekintési lehetőség promóciókba és engedményekbe
-+ Szolgáltatáskérési funkciók
-+ Egyszerűsített szolgáltatási műveletek
+
 
 ## <a name="top-reasons-to-use-dual-write"></a>A kettős írás használatának legfőbb okai
 
@@ -83,7 +79,7 @@ A kettős írás adatintegrációt tesz lehetővé az egész Microsoft Dynamics 
 + A kettős írás infrastruktúrája a nincs kódolás/kevés kódolás elvet követi. Minimális mérnöki erőfeszítést kell tenni a szabványos táblák közti leképezések kiterjesztéséhez, és az egyéni leképezések szerepeltetéséhez.
 + A kettős írás online és offline módot is támogat. A Microsoft az egyetlen olyan vállalat, amely online és offline mód támogatását is kínálja.
 
-## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Mit jelent a kettős írás az ügyfélkapcsolati alkalmazások fejlesztői és tervezői számára?
+## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a> Mit jelent a kettős írás az ügyfélkapcsolati alkalmazások fejlesztői és tervezői számára?
 
 A kettős írás automatizálja a Finance and Operations alkalmazások és az ügyfélkapcsolati alkalmazások közti adatáramlást. A kettős írás két olyan AppSource-megoldást tartalmaz, amelyek telepítve van Dataverse-szolgáltatásban. A megoldások bővítik a tábla sémáját, beépülő moduljait és munkafolyamatait a Dataverse-ben, hogy ERP méretűre skálázhatók legyenek. A sikeres végrehajtás érdekében az ügyfélkapcsolati alkalmazások fejlesztőinek és tervezőinek ismerniük kell ezeket a változtatásokat, és együtt kell működniük az ellenpéldányaikkal a Finance and Operations alkalmazásokban.
 

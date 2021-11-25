@@ -5,17 +5,17 @@ author: RamaKrishnamoorthy
 ms.date: 11/11/2020
 ms.topic: article
 audience: Application User
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-11-11
 ms.dyn365.ops.version: Release 10.0.17
-ms.openlocfilehash: 4a2420981553957b6b234fe56747bc6f3568acf6b8ad77366c33caeae63b4faf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: ab251ee60bf3c831b0139beb9557c6b3faaf9f66
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716759"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7783283"
 ---
 # <a name="integrate-procurement-between-supply-chain-management-and-field-service"></a>A beszerzés integrálása a Supply Chain Management és a Field Service között
 
@@ -165,7 +165,7 @@ Az állapotoszlopok a következő szabályokat alkalmazzák:
 - Ha a Supply Chain Management szolgáltatásban a dokumentumfejléc állapota *Visszavonva* állapotra módosul, és a Field Service mezőben található beszerzési rendelés bevételezési termékei nincsenek a beszerzési rendeléshez társítva (beszerzési rendelési termékeken keresztül), a Field Service szolgáltatás rendszerállapota *Visszavonva* állapotú lesz.
 - Ha a Supply Chain Management szolgáltatásban a beszerzésirendelés-sor állapota *Visszavonva*, a Field Service szolgáltatásban a beszerzési rendelés termékállapota *Visszavonva* állapotúra lesz beállítva. Továbbá ha a Supply Chain Management szolgáltatásban a beszerzési rendelés sorának állapota *Visszavonva* állapotról *Utánrendelésre* módosul, akkor a Field Service szolgáltatásban a beszerzési rendelés termékének állapota *Függőben*.
 
-## <a name="sync-with-the-supply-chain-management-procurement-data-on-demand"></a><a id="sync-procurement"></a>Szinkronizálás a Supply Chain Management beszerzési adatokkal igény szerint
+## <a name="sync-with-the-supply-chain-management-procurement-data-on-demand"></a><a id="sync-procurement"></a> Szinkronizálás a Supply Chain Management beszerzési adatokkal igény szerint
 
 A Supply Chain Management olyan beszerzési adatokat tartalmaz, amelyek a kereskedelmi megállapodások, engedmények és más olyan helyzetek kezelésére használhatók, amelyek a Supply Chain Management szolgáltatásban másodlagos folyamatokon alapulnak. A beszerzési motor összetett szabályokat használ egy adott rendelés legjobb árának megállapításához. Ha kettős írást használ, akkor az adatok nem mindig szinkronizálódnak a két környezet között, különösen olyan helyzetekben, amikor a sort létrehozták vagy frissítették a  Dataverse szolgáltatásból, és a Supply Chain Management szolgáltatásban követési folyamatokat vált ki.
 
@@ -194,10 +194,10 @@ A beszerzésekkel kapcsolatos dokumentumok integrálásához a következő sablo
 
 | Supply Chain Management | Field Service | Leírás |
 |---|---|---|
-| [Beszerzési rendelés V2 fejléce](mapping-reference.md#183) | msdyn\_Purchaseorders | Ez a tábla a beszerzési rendelés fejlécének megfelelő oszlopokat tartalmazza. |
-| [Beszerzésirendelés-sor entitás](mapping-reference.md#181) | msdyn\_PurchaseOrderProducts | Ez a tábla a beszerzési rendelés sorainak megfelelő sorokat tartalmazza. A termékszám a szinkronizáláshoz használható. Ez a termékraktározási egységként (SKU) azonosítja a terméket, a termékdimenziókkal együtt. A Dataverse szolgáltatással történő termékintegrációval kapcsolatos további tudnivalókat lásd: [Egyesített termékkel kapcsolatos tapasztalat](product-mapping.md). |
-| [Termékbevételezések fejléce](mapping-reference.md#185) | msdyn\_purchaseorderreceipts | Ez a tábla azokat a termékbevételezési fejléceket tartalmazza, amelyek a Supply Chain Management szolgáltatásban a termékbevételezés feladása során jönnek létre. |
-| [Termékbevételezési sor](mapping-reference.md#184) | msdyn\_purchaseorderreceiptproducts | Ez a tábla azokat a termékbevételezési sorokat tartalmazza, amelyek a Supply Chain Management szolgáltatásban a termékbevételezés feladása során jönnek létre. |
-| [Beszerzés rendelési sora – részben törölt entitás](mapping-reference.md#182) | msdyn\_purchaseorderproducts | Ez a tábla az olyan beszerzésirendelés-sorokról tartalmaz információkat, amelyek részben törölve vannak. A Supply Chain Management szolgáltatásban a beszerzésirendelés-sorok csak akkor törölhetők részlegesen, ha a beszerzési rendelést megerősítették vagy jóváhagyták, a változáskezelés bekapcsolt állapota esetén. A sor megtalálható a Supply Chain Management adatbázisban, és **Törölve** jelöléssel van ellátva. Mivel a Dataverse nem tartalmazza a részleges törlés koncepcióját, fontos, hogy ezek az adatok szinkronizálva legyenek a Dataverse szolgáltatással. Ily módon a Supply Chain Management szolgáltatásban részlegesen törölt sorok automatikusan törölhetők a Dataverse szolgáltatásból. Ebben az esetben a sorok Dataverse szolgáltatásból történő törlésének logikája a Supply Chain Management Extended szolgáltatásában található. |
+| [Beszerzési rendelés V2 fejléce](mapping-reference.md#183) | msdyn\_ Purchaseorders | Ez a tábla a beszerzési rendelés fejlécének megfelelő oszlopokat tartalmazza. |
+| [Beszerzésirendelés-sor entitás](mapping-reference.md#181) | msdyn\_ PurchaseOrderProducts | Ez a tábla a beszerzési rendelés sorainak megfelelő sorokat tartalmazza. A termékszám a szinkronizáláshoz használható. Ez a termékraktározási egységként (SKU) azonosítja a terméket, a termékdimenziókkal együtt. A Dataverse szolgáltatással történő termékintegrációval kapcsolatos további tudnivalókat lásd: [Egyesített termékkel kapcsolatos tapasztalat](product-mapping.md). |
+| [Termékbevételezések fejléce](mapping-reference.md#185) | msdyn\_ purchaseorderreceipts | Ez a tábla azokat a termékbevételezési fejléceket tartalmazza, amelyek a Supply Chain Management szolgáltatásban a termékbevételezés feladása során jönnek létre. |
+| [Termékbevételezési sor](mapping-reference.md#184) | msdyn\_ purchaseorderreceiptproducts | Ez a tábla azokat a termékbevételezési sorokat tartalmazza, amelyek a Supply Chain Management szolgáltatásban a termékbevételezés feladása során jönnek létre. |
+| [Beszerzés rendelési sora – részben törölt entitás](mapping-reference.md#182) | msdyn\_ purchaseorderproducts | Ez a tábla az olyan beszerzésirendelés-sorokról tartalmaz információkat, amelyek részben törölve vannak. A Supply Chain Management szolgáltatásban a beszerzésirendelés-sorok csak akkor törölhetők részlegesen, ha a beszerzési rendelést megerősítették vagy jóváhagyták, a változáskezelés bekapcsolt állapota esetén. A sor megtalálható a Supply Chain Management adatbázisban, és **Törölve** jelöléssel van ellátva. Mivel a Dataverse nem tartalmazza a részleges törlés koncepcióját, fontos, hogy ezek az adatok szinkronizálva legyenek a Dataverse szolgáltatással. Ily módon a Supply Chain Management szolgáltatásban részlegesen törölt sorok automatikusan törölhetők a Dataverse szolgáltatásból. Ebben az esetben a sorok Dataverse szolgáltatásból történő törlésének logikája a Supply Chain Management Extended szolgáltatásában található. |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

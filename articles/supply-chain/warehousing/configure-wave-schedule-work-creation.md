@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 358f5a87cdb42f0ff646948da8d38475cf49e3f2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 5e9dc9b7cf33f9393f408d8f8a458e9b0ea47639
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577912"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778377"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Munka létrehozásának ütemezése hullám közben
 
@@ -33,7 +33,7 @@ Ha ez a funkció engedélyezve van, akkor automatikusan létrejön a tervezett m
 
 Az ebben a témakörben leírt funkciók csak akkor használhatók, ha a rendszerben be van kapcsolva. Használja a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a következő funkcióknak az alábbi sorrendben történő bekapcsolásához:
 
-1. **Szervezeti szintű munkazárolás** – Az ütemezett munkalétrehozás kézi és automatikus konfigurálásához egyaránt szükséges.
+1. **Szervezeti szintű munkazárolás** – Az ütemezett munkalétrehozás kézi és automatikus konfigurálásához egyaránt szükséges. (Az Ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció kötelező, ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni.)
 1. **Munka létrehozásának ütemezése** – Az ütemezett munkalétrehozás kézi és automatikus konfigurálásához egyaránt szükséges.
 1. **Szervezeti szintű „Munka létrehozásának ütemezése” módszer** – Az ütemezett munkalétrehozás automatikus konfigurálásához szükséges. Erre a funkcióra nincs szükség, ha csak manuális konfigurációt használ.
 

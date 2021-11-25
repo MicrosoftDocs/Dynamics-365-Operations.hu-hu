@@ -1,5 +1,5 @@
 ---
-title: Peremhálózati skálázási egységek telepítése egyedi hardverre LBD segítségével (előzetes verzió)
+title: Peremhálózati skálázási egységek telepítése egyedi hardverre LBD segítségével
 description: Ez a témakör bemutatja, hogy hogyan lehet a helyszíni peremhálózati egységeit a helyi üzleti adatokon (BELID) alapuló egyedi hardvereszközök és telepítések segítségével létesíteni.
 author: cabeln
 ms.date: 04/22/2021
@@ -9,24 +9,21 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
-ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 0ebbdaab9d6f040497d3158db2712e102b6e9aa8
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.21
+ms.openlocfilehash: f1ab0a2c289f48dd8bfb7529f0dcc694a97f18ea
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678981"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729075"
 ---
-# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd-preview"></a>Peremhálózati skálázási egységek telepítése egyedi hardverre LBD segítségével (előzetes verzió)
+# <a name="deploy-edge-scale-units-on-custom-hardware-using-lbd"></a>Peremhálózati skálázási egységek telepítése egyedi hardverre LBD segítségével
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)] <!--KFM: Until 11/1/2021 -->
 
 A peremhálózati egységek fontos szerepet töltenek be az ellátásilánc-kezelés elosztott topológiája területén. A hibrid topológiában eloszthatja a terhelést a Supply Chain Management felhőközpontja és a felhőben vagy a peremen lévő további skálaegységek között.
 
 A peremhálózati egységek úgy telepíthetők, hogy létrehoznak egy helyi üzleti adatok (LBD) [helyi környezetet](../../fin-ops-core/dev-itpro/deployment/on-premises-deployment-landing-page.md), majd úgy konfigurálják, hogy skálázási egységként működjön a terjesztett hibrid topológiában a Supply Chain Managementhez. Ez úgy érhető el, hogy a helyi LBD-környezetet egy Supply Chain Management környezethez társítja a felhőben, amely a központként való működésre van konfigurálva.  
-
-A peremskálaegységek jelenleg előzetes verziójú. Ebből következően csak az [előzetes verzió feltételeinek](https://aka.ms/scmcnepreviewterms) megfelelően használhat ilyen típusú környezetet.
 
 Ez a témakör azt írja le, hogyan lehet beállítani a helyi LBD-környezetet peremskálaegységként, majd társítani azt egy központhoz.
 
@@ -36,11 +33,9 @@ Itt talál egy áttekintést a telepítési lépésekről.
 
 1. **Engedélyezzen egy LBD-helyet az LBD-projektben a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban.**
 
-    Az előzetes verzió során az LBD-peremskálaegység a meglévő LBD-vevőket célozza. Csak bizonyos vevői helyzetekben áll rendelkezésre egy további 60 napos korlátozott LBD tesztkörnyezeti hely.
-
 1. **Az LBD-környezet beállítása és telepítése *üres* adatbázissal.**
 
-    Az LCS segítségével a legújabb topológiával és egy üres adatbázissal telepítheti az LBD-környezetet. A további tudnivalókat lásd a témakör későbbi [Az LBD-környezet beállítása és telepítése üres adatbázissal](#set-up-deploy) szakaszát. A Supply Chain Management 10.0.19-es verzióját kell használnia a 43-as vagy újabb platformfrissítéssel a központ és a sakálázási egység környezetek között.
+    Az LCS segítségével a legújabb topológiával és egy üres adatbázissal telepítheti az LBD-környezetet. A további tudnivalókat lásd a témakör későbbi [Az LBD-környezet beállítása és telepítése üres adatbázissal](#set-up-deploy) szakaszát. Az Ellátásilánc-kezelés 10.0.21-es vagy újabb verziója szükséges az összes központi és mérlegegység-környezetben.
 
 1. **Célcsomagok feltöltése LBD-projekteszközökbe az LCS-ben.**
 
@@ -56,16 +51,16 @@ Itt talál egy áttekintést a telepítési lépésekről.
 
 A témakör hátralévő részei további részleteket tartalmaznak lépések elvégzéséről.
 
-## <a name="set-up-and-deploy-an-lbd-environment-with-an-empty-database"></a><a name="set-up-deploy"></a>Az LBD-környezet beállítása és telepítése üres adatbázissal
+## <a name="set-up-and-deploy-an-lbd-environment-with-an-empty-database"></a><a name="set-up-deploy"></a> Az LBD-környezet beállítása és telepítése üres adatbázissal
 
 Ez a lépés egy működő LBD-környezetet hoz létre. A környezet azonban nem feltétlenül ugyanazt az alkalmazás- és platformverziót használja, mint a központi környezet. Emellett még hiányoznak belőle a testreszabások, és még nincs engedélyezve a skálázási egységként való működéshez.
 
-1. Kövesse a [Helyszíni környezetek beállítása és telepítése (Platformfrissítés 41-es és újabb verziókon)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) rész utasításait. A Supply Chain Management 10.0.19-es verzióját kell használnia a 43-as vagy újabb platformfrissítéssel a központ és a sakálázási egység környezetek között
+1. Kövesse a [Helyszíni környezetek beállítása és telepítése (Platformfrissítés 41-es és újabb verziókon)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md) rész utasításait. Az Ellátásilánc-kezelés 10.0.21-es vagy újabb verziója szükséges az összes központi és mérlegegység-környezetben. Ezenkívül az infrastruktúra-parancsfájlok 2.12.0-s vagy újabb verzióját is használnia kell. 
 
     > [!IMPORTANT]
     > Olvassa el a szakasz további részét, **mielőtt** végrehajtaná annak a témakörnek a lépéseit.
 
-1. Mielőtt leírná a konfigurációt az infrastruktúra\\ConfigTemplate.xml fájlban, futtassa a következő parancsfájlt:
+1. Mielőtt leírná a konfigurációt az infrastruktúra\\ ConfigTemplate.xml fájlban, futtassa a következő parancsfájlt:
 
     ```powershell
     .\Configure-ScriptsForEdgeScaleUnits.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
@@ -75,10 +70,51 @@ Ez a lépés egy működő LBD-környezetet hoz létre. A környezet azonban nem
     > Ez a parancsfájl eltávolít minden olyan konfigurációt, amely nem szükséges a peremhálózati skálázási egységek telepítéséhez.
 
 1. Állítsa be az üres adatokat tartalmazó adatbázist az [Adatbázisok konfigurálása](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) résznek megfelelően. Használja az üres data.bak fájlt ehhez a lépéshez.
-1. Állítsa be a telepítés előtti parancsfájlt. További információ: [Helyi ügynök telepítés előtti és telepítés utáni parancsfájljai](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+1. Miután befejezte az Adatbázisok konfigurálása lépést, futtassa a következő parancsfájlt a Scale [...](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) Unit Alm Orchestrator adatbázis konfigurálához.
 
-    1. Az **Infrastruktúra-parancsfájlok** **ScaleUnit** mappájában található tartalmat másolja a környezetben beállított ügynökfájl-tárolási megosztás **Scripts** mappájába. A jellemző elérési út \\\\lbdiscsi01\\agent\\Scripts.
-    2. Hozza létre a **PreDeployment.ps1** parancsfájlt, amely a szükséges paraméterekkel meghívja a parancsfájlokat. A telepítés előtti parancsfájlt az ügynök fájlmegosztásán található **Parancsfájlok** mappába kell tenni. Ellenkező esetben nem futtatható. Egy jellemző elérési út: \\\\lbdiscsi01\\agent\\Scripts\\PreDeployment.ps1.
+    > [!NOTE]
+    > Ne konfigurálja a pénzügyi jelentéskészítő adatbázist az [adatbázisok konfigurálása lépés](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) során.
+
+    ```powershell
+    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName EdgeScaleUnit
+    ```
+
+    Az Inicializálás-Database.ps1 parancsfájl a következő műveleteket végzi:
+
+    1. Hozzon létre egy **ScaleUnitAlmDb nevű üres adatbázist**.
+    2. A felhasználók leképezés az adatbázisszerepekre a következő táblázat alapján.
+
+        | Felhasználó            | Típus | Adatbázis-szerepkör |
+        |-----------------|------|---------------|
+        | svc-LocalAgent$ | gMSA | Db \_ tulajdonosa     |
+
+1. Kövesse a telepítőben található utasításokat, és telepítse a helyi környezeteket [(Platform update 41-es és újabb verzió)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md).
+1. Miután befejezte az AD FS konfigurálás [lépését, hajtsa végre a következő](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md#configuredb) lépéseket:
+
+    1. Új Active Directory összevonási szolgáltatások (AD FS) alkalmazás létrehozása, amely lehetővé teszi, hogy az Alm Szolgáltatás szolgáltatás kommunikáljon az Application Object Server (AOS) kiszolgálóval.
+
+        ```powershell
+        # Host URL is your DNS record\host name for accessing the AOS
+        .\Create-ADFSServerApplicationForEdgeScaleUnits.ps1 -HostUrl 'https://ax.d365ffo.onprem.contoso.com'
+        ```
+
+    1. Új () alkalmazás létrehozása, amely lehetővé teszi, hogy az Alm Szolgáltatás szolgáltatás kommunikáljon a Azure Active Directory Azure AD skálaegység-kezelési szolgáltatással.
+
+        ```powershell
+        # Example .\Create-SumAADApplication.ps1 -ConfigurationFilePath ..\ConfigTemplate.xml -TenantId '6240a19e-86f1-41af-91ab-dbe29dbcfb95' -ApplicationDisplayName 'EdgeAgent-SUMCommunication-EN01'
+        .\Create-SumAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                       -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                       -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+        ```
+
+1. Kövesse a telepítőben található utasításokat, és telepítse a helyi környezeteket [(Platform update 41-es és újabb verzió)](../../fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-pu41.md). Amikor meg kell adnia a helyi ügynök konfigurációját, ellenőrizze, hogy engedélyezi-e az peremhálózati egység funkcióit, és adja meg az összes szükséges paramétert.
+
+    ![A peremhálózati egység funkcióinak engedélyezése.](media/EnableEdgeScaleUnitFeatures.png "A peremhálózati egység funkcióinak engedélyezése.")
+
+1. A környezet LCS-ről való telepítése előtt állítsa be a telepítés előtti parancsfájlt. További információ: [Helyi ügynök telepítés előtti és telepítés utáni parancsfájljai](../../fin-ops-core/dev-itpro/lifecycle-services/pre-post-scripts.md).
+
+    1. Másolja a Configure-CloudAndEdge.ps1 parancsfájlt az Infrastruktúra parancsfájlok ScaleUnit mappájába a környezetben beállított ügynökfájl-tárolási megosztás Parancsfájlok **·** **·** **·** mappájába. A jellemző elérési út \\\\ lbdiscsi01\\ agent\\ Scripts.
+    2. Hozza létre a **PreDeployment.ps1** parancsfájlt, amely a szükséges paraméterekkel meghívja a parancsfájlokat. A telepítés előtti parancsfájlt az ügynök fájlmegosztásán található **Parancsfájlok** mappába kell tenni. Ellenkező esetben nem futtatható. Egy jellemző elérési út: \\\\ lbdiscsi01\\ agent\\ Scripts\\ PreDeployment.ps1.
 
         Az PreDeployment.ps1 parancsfájl tartalma hasonlít a következő példához.
 
@@ -86,7 +122,7 @@ Ez a lépés egy működő LBD-környezetet hoz létre. A környezet azonban nem
         $agentShare = '\\lbdiscsi01\agent'
         
         Write-Output "AgentShare is set to $agentShare" 
-        & $agentShare\Scripts\Configure-CloudandEdge.ps1 -AgentShare $agentShare -InstanceId '@A' -DatabaseServer 'lbdsqla01.contoso.com' -DatabaseName 'AXDB'
+        . $PSScriptRoot\Configure-CloudAndEdge.ps1 -AgentShare $agentShare -InstanceId '@A'
         ```
 
         > [!NOTE]
@@ -101,137 +137,97 @@ Ez a lépés egy működő LBD-környezetet hoz létre. A környezet azonban nem
         >   - @#
 
 1. Telepítse a környezetet a rendelkezésre álló legújabb alaptopológia segítségével.
+1. A környezet telepítése után hajtsa végre a következő lépéseket:
 
-## <a name="upload-target-packages-into-lbd-project-assets-in-lcs"></a><a name="upload-packages"></a>Célcsomagok feltöltése LBD-projekteszközökbe az LCS-ben
+    1. Futtassa a következő SQL-parancsokat az üzleti adatbázison (AXDB).
+
+        ```sql
+        ALTER TABLE dbo.NUMBERSEQUENCETABLE ENABLE CHANGE_TRACKING WITH (TRACK_COLUMNS_UPDATED = ON)
+        delete from NumberSequenceTable
+        delete from NumberSequenceReference
+        delete from NumberSequenceScope
+        delete from FeatureManagementMetadata
+        delete from FeatureManagementState
+        delete from SysFeatureStateV0
+        ```
+
+    1. Az egyidejű maximális köteg munkamenetének növelése 4-nél nagyobb értékre.
+
+        ```sql
+        Update batchserverconfig set maxbatchsessions = '<Replace with number of concurrent batch tasks you want>'
+        ```
+
+    1. Győződjön meg róla, hogy engedélyezve van a változáskövetés az üzleti adatbázisban (AXDB).
+
+        1. Nyissa meg az SQL Server Management Studio (SSMS) függvényt.
+        1. Válassza ki és tartsa lenyomva az üzleti adatbázist (AXDB), majd válassza a **Tulajdonságok** parancsot.
+        1. A megjelenő ablakban válassza a Változáskövetés lehetőséget, majd állítsa be **·** a következő értékeket:
+
+            - **Change Tracking:** *Igaz*
+            - **Adatmegőrzési idő:** *7*
+            - **Adatmegőrzés egysége:** *Nap*
+            - **Automatikus tisztítás:** *Igaz*
+
+    1. Adja hozzá a korábban létrehozott AD FS-alkalmazásazonosítót (a skálaegységben található Create-ADFSServerApplicationForEdgeScaleUnits.ps1 parancsfájl Azure AD használatával). Ezt a lépést kézzel lehet elvégezni a felhasználói felületen (ui). Másik lehetőségként az alábbi parancsfájl használatával az adatbázison keresztül is befejezheti a műveletet.
+
+        ```sql
+        DECLARE @ALMOrchestratorId NVARCHAR(76) = '<Replace with the ADFS Application ID created in a previous step>';
+
+        IF NOT EXISTS (SELECT TOP 1 1 FROM SysAADClientTable WHERE AADClientId = @ALMOrchestratorId)
+        BEGIN
+            INSERT INTO SysAADClientTable (AADClientId, UserId, Name, ModifiedBy, CreatedBy)
+            VALUES (@ALMOrchestratorId, 'ScaleUnitManagement', 'Scale Unit Management', 'Admin', 'Admin');
+        END
+        ```
+
+## <a name="set-up-an-azure-key-vault-and-an-azure-ad-application-to-enable-communication-between-scale-units"></a><a name="set-up-keyvault"></a> Azure-kulcs és alkalmazás beállítása a mérlegegységek Azure AD közötti kommunikáció engedélyezéséhez
+
+1. A környezet telepítése után hozzon létre egy további alkalmazást, amely lehetővé teszi a központ és a mérlegegység közötti Azure AD megbízható kommunikációt.
+
+    ```powershell
+    .\Create-SpokeToHubAADApplication.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                          -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                          -ApplicationDisplayName '<Whichever name you want the Azure AD app to have>'
+    ```
+
+1. Miután létrehozott egy ügyfelet, létre kell hoznia egy ügyfél titkos adatait, és az adatokat egy Azure-kulcshoz kell mentenie. Ezenkívül hozzáférést kell biztosítanának a létrehozott pályázathoz is, hogy beolvassa a kulcsban tárolt Azure AD adatokat. A következő parancsfájl automatikusan végrehajtja a szükséges műveleteket a kényelmet szolgálja.
+
+    ```powershell
+    .\Create-SpokeToHubAADAppSecrets.ps1 -ConfigurationFilePath '<Path of the ConfigTemplate.xml file>' `
+                                         -TenantId '<ID of the tenant where your cloud hub is deployed>' `
+                                         -SubscriptionName '<Any subscription within your tenant>' `
+                                         -ResourceGroupName '<Any resource group within your subscription>' `
+                                         -KeyVaultName '<Any key vault within your resource group>' `
+                                         -Location '<Any Azure location where Azure Key Vault is available>' `
+                                         -LCSEnvironmentId '<The LCS environment ID of your deployed scale unit>' `
+    ```
+
+    > [!NOTE]
+    > Ha nincs olyan kulcskulcs, amelynél a KeyVaultName érték létezik, a **·** parancsprogram automatikusan létrehoz egyet.
+
+1. Adja hozzá a most létrehozott alkalmazásazonosítót (a hubban található alkalmazástáblában a Azure AD Create-AhubAADApplication.ps1 parancsfájl Azure AD használata esetén). Ezt a lépést manuálisan a felhasználói felületen is végre lehet végezni.
+
+## <a name="upload-target-packages-into-lbd-project-assets-in-lcs"></a><a name="upload-packages"></a> Célcsomagok feltöltése LBD-projekteszközökbe az LCS-ben
 
 Ez a lépés készíti elő az alkalmazás verzióját, a platformverziót és a testreszabásokat, amelyek át fognak kerülni az LBD skálaegység-környezetbe.
 
 1. Töltse fel ugyanazt kombinált alkalmazás-/platformcsomagok amely alkalmazva lett a központi környezetben az LCS helyi projekt eszközkönyvtárába.
 1. Kérje le egy másolatát az egyéni telepíthető csomagnak amely alkalmazva lett a központi környezetben, és töltse fel az LCS helyi projekt eszközkönyvtárába.
 
-## <a name="service-the-lbd-environment-with-target-packages"></a><a name="service-target-packages"></a>Az LBD-környezet kiszolgálása a célcsomagokkal
+## <a name="service-the-lbd-environment-with-target-packages"></a><a name="service-target-packages"></a> Az LBD-környezet kiszolgálása a célcsomagokkal
 
 Ez a lépés illeszti alkalmazás verzióját, a platformverziót és a testreszabásokat az LBD skálázási egység környezetben a központtal.
 
 1. Szolgálja ki az LBD-környezetet az előző lépésben feltöltött, kombinált alkalmazás-/platformcsomaggal.
 1. Szolgálja ki az LBD-környezetet az előző lépésben feltöltött egyéni telepíthető csomaggal.
 
-    ![A Karbantartás > Frissítések alkalmazása az LCS-ben kiválasztása.](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "A Karbantartás > Frissítések alkalmazása az LCS-ben kiválasztása")
+    ![Frissítések alkalmazása az LCS-szolgáltatásban](media/cloud_edge-LBD-LCS-ServiceLBDEnv1.png "Frissítések alkalmazása az LCS-szolgáltatásban")
 
     ![A testreszabási csomag kiválasztása.](media/cloud_edge-LBD-LCS-ServiceLBDEnv2.png "A testreszabási csomag kiválasztása")
 
-## <a name="assign-your-lbd-edge-scale-unit-to-a-hub"></a><a name="assign-edge-to-hub"></a>Az LBD peremhálózati skálaegység hozzárendelése egy központhoz
+## <a name="assign-your-lbd-edge-scale-unit-to-a-hub"></a><a name="assign-edge-to-hub"></a> Az LBD peremhálózati skálaegység hozzárendelése egy központhoz
 
-Amíg a peremhálózati skálaegységek még előzetes verzióban vannak, a [skálázási egység telepítési és konfigurációs eszközeit](https://github.com/microsoft/SCMScaleUnitDevTools) kell használnia, amelyek a GitHubban érhetők, hogy hozzárendelje az LBD peremhálózati skálaegységet egy központhoz. A folyamat lehetővé teszi az LBD-konfiguráció számára a peremhálózati skálaegységként való működést, és társítja a központhoz. A folyamat hasonló egy különálló fejlesztői környezet beállításához.
-
-1. Töltse le az [SCMScaleUnitDevTools](https://github.com/microsoft/SCMScaleUnitDevTools/releases) legújabb kiadását, és bontsa ki a fájl tartalmát.
-1. Készítsen másolatot a `UserConfig.sample.xml` fájlról, és nevezze el `UserConfig.xml` néven.
-1. Hozzon létre egy Microsoft Azure Active Directory (Azure AD) alkalmazást az Azure AD bérlőjében a [Telepítési útmutató skálázási egységekhez és munkaterhelésekhez](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#aad-application-registrations) részben leírtak szerint.
-    1. Létrehozás után lépjen a Azure AD alkalmazások űrlapjára (SysAADClientTable) a központjában.
-    1. Hozzon létre egy új bejegyzést, és állítsa be az **Ügyfélazonosítót** a létrehozott alkalmazás azonosítójára. A **Név** elemet állítsa be *ScaleUnits* értékre a **Felhasználói azonosítót** pedig *Rendszergazda* értékre.
-
-1. Hozzon létre egy Active Directory Federation Service (AD FS) alkalmazást a [Telepítési útmutató skálázási egységekhez és munkaterhelésekhez](https://github.com/microsoft/SCMScaleUnitDevTools/wiki/Step-by-step-usage-guide#adfs-application-registrations) részben leírtak szerint.
-    1. Létrehozás után lépjen a Azure AD alkalmazások űrlapjára (SysAADClientTable) a peremhálózati skálaegységben.
-    1. Hozzon létre egy új bejegyzést, és állítsa be az **Ügyfélazonosítót** a létrehozott alkalmazás azonosítójára. A **Felhasználói azonosító** állítsa *Rendszergazda* értékre.
-
-1. Módosítsa a `UserConfig.xml` fájlt.
-    1. A `InterAOSAADConfiguration` szakasz alatt adja meg a korábban létrehozott Azure AD alkalmazás adatait.
-        - Az `AppId` elembe írja be az Azure-alkalmazás alkalmazásazonosítóját.
-        - Az `AppSecret` elembe írja be az Azure-alkalmazás titkos kódját.
-        - Az `Authority` elemnek tartalmaznia kell a bérlő biztonsági hitelesítésszolgáltatóra mutató URL-címet.
-
-        ```xml
-        <InterAOSAADConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopty56TGUedDTVhtER-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </InterAOSAADConfiguration>
-        ```
-
-    1. A `ScaleUnitConfiguration` szakaszban az első `ScaleUnitInstance` elemhez módosítsa az `AuthConfiguration` szakaszt.
-        - Az `AppId` elembe írja be az Azure-alkalmazás alkalmazásazonosítóját.
-        - Az `AppSecret` elembe írja be az Azure-alkalmazás titkos kódját.
-        - Az `Authority` elemnek tartalmaznia kell a bérlő biztonsági hitelesítésszolgáltatóra mutató URL-címet.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>8dab14f6-97b1-48e3-b51b-350b45f6ede5</AppId>
-            <AppSecret>k6em-_7.lopdz.6d3DTVOtf9Lo-j_6anY1</AppSecret>
-            <Authority>https://login.windows.net/contoso.onmicrosoft.com</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Mindemellett ugyanehhez a `ScaleUnitInstance` elemhez állítsa be a következő értékeket:
-        - Az `Domain` elemben adja meg a központ URL-címét. Például: `https://cloudhub.sandbox.operations.dynamics.com/`
-        - Győződjön meg róla, hogy az `EnvironmentType` elemben be van állítva az `LCSHosted` érték.
-
-    1. A `ScaleUnitConfiguration` szakaszban a második `ScaleUnitInstance` elemhez módosítsa az `AuthConfiguration` szakaszt.
-        - Az `AppId` elembe írja be az AD-FS alkalmazás alkalmazásazonosítóját.
-        - Az `AppSecret` elembe írja be az ADFS alkalmazás titkos kódját.
-        - Az `Authority` elemnek tartalmaznia kell az AD FS-példány URL-címét.
-
-        ```xml
-        <AuthConfiguration>
-            <AppId>26b16f25-21d8-4d36-987b-62df292895aa</AppId>
-            <AppSecret>iZFfObgI6lLtY9kEbBjEFV98NqI5_YZ0e5SBcWER</AppSecret>
-            <Authority>https://adfs.contoso.com/adfs</Authority>
-        </AuthConfiguration>
-        ```
-
-    1. Mindemellett ugyanehhez a `ScaleUnitInstance` elemhez állítsa be a következő értékeket:
-        - Az `Domain` elemben adja meg a peremhálózati skálaegység URL-címét. Például: https://ax.contoso.com/
-        - Győződjön meg róla, hogy az `EnvironmentType` elemben be van állítva az LBD érték.
-        - A `ScaleUnitId` elemben adja meg ugyanazt az értéket, mint amit a telepítés előtti `Configure-CloudandEdge.ps1` parancsfájl konfigurálásakor megadott az `InstanceId` elemhez.
-
-        > [!NOTE]
-        > Ha nem az alapértelmezett azonosítót (@A) használja, frissítse a ScaleUnitId azonosítót minden ConfiguredWorkload értékhez a Terhelések szakaszban.
-
-1. Nyissa meg a PowerShell-t, és navigáljon a `UserConfig.xml` fájlt tartalmazó mappához.
-
-1. Futtassa az eszközt ezzel a paranccsal.
-
-    ```powershell
-    .\CLI.exe
-    ```
-
-    > [!NOTE]
-    > Minden művelet után újra el kell indítania az eszközt.
-
-1. Az eszközben válassza a **2. Környezetek előkészítése a számítási feladat telepítéséhez** lépést. Majd futtassa az alábbi lépéseket:
-    1. Válassza az **1. A központ előkészítése** lépést.
-    1. Válassza a **2. A skálázási egység előkészítése** lépést.
-
-    > [!NOTE]
-    > Ha nem tiszta telepítésből futtatja ezt a parancsot, és sikertelen, tegye a következőt:
-    >
-    > - Az összes mappa eltávolítása az `aos-storage` mappából (a `GACAssemblies` kivételével).
-    > - Futtassa a következő SQL parancsot az üzleti adatbázison (AXDB):
-    >
-    > ```sql 
-    > delete from storagefoler
-    > ```
-
-1. Futtassa a következő SQL parancsokat az üzleti adatbázison (AXDB):
-
-    ```sql
-    delete from FEATUREMANAGEMENTMETADATA
-    delete from FEATUREMANAGEMENTSTATE
-    delete from NUMBERSEQUENCESCOPE
-    ```
-
-1. Ellenőrizze, hogy engedélyezve van-e a változáskövetés az üzleti adatbázisban (AXDB)
-    1. Indítsa el az SQL Server Management Studio (SSMS) alkalmazást.
-    1. Kattintson a jobb gombbal az üzleti adatbázisra (AXDB), és válassza ki a tulajdonságokat.
-    1. A megnyíló ablakban válassza a **Change Tracking** lehetőséget, és adja meg a következő beállításokat:
-
-        - **Change Tracking:** *Igaz*
-        - **Adatmegőrzési idő:** *7*
-        - **Adatmegőrzés egysége:** *Nap*
-        - **Automatikus tisztítás:** *Igaz*
-
-1. Az eszközben válassza a **3. Terhelések telepítése** lépést. Majd futtassa az alábbi lépéseket:
-    1. Válassza az **1. Telepítés a Központra** lépést.
-    1. Válassza a **2. telepíts a skálaegységre** lépést.
+A peremskála egységét a Skálaegység-kezelő portálon konfigurálhatja és kezelheti. A további tudnivalókat lásd a Mérlegegység-kezelő portál segítségével a mérlegegységek és [terhelések](./cloud-edge-landing-page.md#scale-unit-manager-portal) kezelése.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

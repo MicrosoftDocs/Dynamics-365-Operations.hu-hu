@@ -2,7 +2,7 @@
 title: Pénzforgalmi előrejelzés
 description: Ez a témakör a pénzforgalmi előrejelzések folyamatáról nyújt áttekintést. Azt is elmagyarázza, hogy miként integrálódnak a pénzforgalm előrejelzések a rendszer más moduljaival.
 author: panolte
-ms.date: 09/23/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,16 +13,17 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 83f8e5b03a2222884758dc567688da2a756421da
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
-ms.translationtype: HT
+ms.openlocfilehash: 5ad3b2444f194f8324a309df32612a5377851995
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7547955"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752904"
 ---
 # <a name="cash-flow-forecasting"></a>Pénzforgalmi előrejelzés
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A készpénzforgalom-előrejelzési eszközökkel elemezheti a közelgő pénzforgalmi és devizakövetelményeket, és így megbecsülheti a vállalat jövőbeli készpénzigényét. A készpénzforgalom előrejelzésének lekéréséhez a következő feladatokat kell végrehajtania:
 
@@ -93,9 +94,12 @@ A költségvetési tételjegyzék-rekordok személyre szabás révén, külön-k
 A készletkínálati és -keresleti előrejelzések szerepeltethetők a pénzforgalmi előrejelzésekben. A **Pénzforgalmi előrejelzés beállítása** oldalon, a **Készletgazdálkodás** lapon, válassza ki azt az előrejelzési modellt, amelyet szerepeltetni kíván a pénzforgalmi előrejelzésben. A pénzforgalmi előrejelzésbe való bekerülés felülírható az egyes kínálati és keresleti előrejelzési soroknál.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>A Pénzforgalmi előrejelzés dimenzióinak beállítása
-A **Pénzforgalmi előrejelzés beállítása** lap egy új lapján beállíthatja, hogy milyen pénzügyi dimenziókat kell használni a **Pénzforgalmi előrejelzés** munkaterületen végzett szűréshez. Ez a lap csak akkor jelenik meg, ha engedélyezve van a Pénzforgalmi előrejelzések funkció. 
+A Pénzforgalmi előrejelzés beállítási lapján új lap használatával lehet szabályozni, hogy mely pénzügyi dimenziók használhatók a pénzforgalmi **·** előrejelzés **munkaterületén** szűrésre. Ez a lap csak akkor jelenik meg, ha engedélyezve van a Pénzügyi információk pénzforgalmi előrejelzési funkció. 
 
 A **Dimenziók** fülön válassza ki a szűréshez használni kívánt dimenziók listáját, és a nyilakkal helyezze át őket a jobb oldali oszlopba. A pénzforgalmi előrejelzések adatainak szűréséhez csak két dimenzió választható ki. 
+
+### <a name="setting-up-external-source"></a>Külső forrás beállítása
+A külső adatok bevihetők vagy importálhatók a pénzforgalmi előrejelzésekbe. A külső adatok bevitele vagy importálása előtt be kell állítani a külső adatforrásokat. A Külső **forrás lapon állítsa be a külső pénzforgalmi** kategóriákat. A kategória lehet kimenő **vagy** **·** bejövő. **Feladási** típusként a likviditást kell kiválasztani. A Jogi személyek beállításai rácsban válassza ki a jogi személyeket és a megfelelő fő számlákat, amelyekre a külső pénzforgalmi **·** kategóriák vonatkoznak.
 
 ### <a name="project-management-and-accounting"></a>Projektvezetés és könyvelés
 

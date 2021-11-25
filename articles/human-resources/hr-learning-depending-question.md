@@ -1,8 +1,8 @@
 ---
 title: A kérdés függővé tétele az előző kérdésre adott választól
 description: A feltételes kérdések segítségével meghatározhatja, hogy ilyen további kérdések jelennek meg a válaszadónak az előző kérdésekre adott válaszai alapján.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: KMCollection, KMCollectionQuestion, KMCollectionQuestionTree, Hc
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b9397b3dfa353398a5d326ae68ec8269369ebf85b7b2e61c73013db76c5dd475
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 11787aa0b32c0d7493e4528b00304e51f01a655f
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745694"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7728906"
 ---
 # <a name="make-a-question-dependent-on-the-answer-of-the-previous-question"></a>A kérdés függővé tétele az előző kérdésre adott választól
 
@@ -30,28 +30,28 @@ A feltételes kérdések segítségével meghatározhatja, hogy ilyen további k
 
 
 ## <a name="find-the-existing-questionnaire"></a>Meglévő kérdőív megkeresése
-1. Ugorjon a Kérdőív > Tervezés > Kérdőívek lehetőségre.
+1. Ugrás a **·** > **·** > **kérdőívtervezési kérdőívekre**.
 2. A listában válassza ki a WorkFH kérdőívet.
 
 ## <a name="add-all-questions-and-sub-questions-to-the-questionnaire"></a>Összes kérdés és alkérdés hozzáadása a Kérdőívhez
-1. Kattintson a Kérdések lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. A Kérdések mezőben válassza ki a 00016 számú kérdést.
+1. Kattintson a **Kérdések gombra**.
+2. Kattintson az **Új** elemre.
+3. A Kérdés **·** mezőben válassza ki a 00016 kérdésszámot.
 4. Keresse meg és jelölje ki a kívánt rekordot a listán.
 5. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-6. Kattintson a Mentés gombra.
+6. Kattintson a **Mentés** gombra.
 7. Zárja be a lapot.
 
 ## <a name="set-the-questionnaire-sequence-to-conditional-and-make-the-question-dependent-on-the-appropriate-question"></a>Kérdőív sorrendjének Feltételesre állítása, és a kérdés függővé tétele a megfelelő kérdéstől
-1. Kattintson a Szerkesztés lehetőségre.
-2. Bontsa ki a Beállítások szakaszt.
-3. A Kérdések sorrendje mezőben válassza ki a „Feltételes” lehetőséget.
-4. Kattintson a Feltételes kérdés lehetőségre.
+1. Kattintson a **Szerkesztés** lehetőségre.
+2. Bontsa ki a **Beállítások** szakaszt.
+3. A Kérdés **sorrendje** mezőben válassza a "Feltételes" lehetőséget.
+4. Kattintson **a Feltételes kérdés** gombra.
 5. A fanézetben jelölje ki a „Kérdések\Magyarázza el, hogy miért válaszolt így az előző kérdésre?” lehetőséget.
-6. Az Elsődleges kérdések mezőben válassza ki a 00009 számú kérdést.
+6. Az Elsődleges **kérdés** mezőben válassza ki a 00009- es kérdést.
 7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-8. A Válasz mezőben adja meg azon válaszlehetőség válaszsorrend-azonosítóját, amelytől függő szeretné tenni a kérdést. Például adja meg az 1 értéket az első válaszlehetőséghez.
-9. Kattintson a Mentés gombra.
+8. A Válasz mezőben adja meg annak a válaszsorozatnak az azonosítóját, amelytől függővé szeretné tenni **·** a kérdést. Például adja meg az 1 értéket az első válaszlehetőséghez.
+9. Kattintson a **Mentés** gombra.
 10. A fanézetben válassza ki a „Kérdések\Rendesen megfizetik a munkámat” lehetőséget.
     * Vegye figyelembe, hogy a kérdésfa frissül a függőségek jelzése érdekében.  
 

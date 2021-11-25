@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: a4f9e5a4a318ceaa45b6919e394e1ff335bfb193
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
-ms.translationtype: HT
+ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678835"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778157"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.22 alkalmazásban (2021. november)
 
@@ -41,7 +41,6 @@ Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tarta
 
 | Modul | Funkcióneve a funkciókezelésben | További információ |
 |---|---|---|
-| Költségkezelés | Kapcsolódó bizonylatok létrehozása elszámolóár kerekítési átértékeléseihez | <p>Pénzügyi készletfeladáskor (például értékesítési rendelés számlája vagy készlettranzakció) történik, ennek a funkciónak az hatására a rendszer létrehoz egy külön bizonylatot minden kapcsolódó elszámolóáras kerekítési átértékeléshez, és kapcsolódó bizonylatként csatolja a pénzügyi feladási bizonylathoz.</p><p>E funkció nélkül a rendszer ugyanazon bizonylatfeladás elszámolóár-kerekítési átértékeléseit rögzíti. Ez a viselkedés bizonyos esetekben ütköző dátumadatokat is okozhat, mivel az átértékelések a munkamenet vagy a rendszer dátumát használják, míg a pénzügyi feladások a feladási dátumot használják.</p> |
 | Elosztott hibrid topológia | *(Nincs szükség funkciókezelésre.)* | <p>Ez a kiadás kibővíti a raktárkezelési munkaterhelés kimenő rakománytervezési lehetőségeit a felhő- és peremskálaegységek esetén.</p><p>További információk: [Raktárkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Tervezési változáskezelés | Változatlétrehozás tervezési termékekhez | <p>Ezzel a funkcióval egy termék színe, mérete, stílusa és konfigurációdimenziói alapján több változat is létrehozható egy mérnöki termékhez.</p><p>További tájékoztatás: [Változatok létrehozása tervezési termékekhez](../engineering-change-management/engineering-variants.md).</p> |
 | Készlet- és raktárkezelés | Készletláthatósági integráció foglalási ellenszámlával | <p>Ez a funkció csak akkor engedélyezhető, ha engedélyezve van a *Készletláthatóság integrációja* funkció. Ezzel a funkcióval a készlet láthatóságán végzett ellenfoglalásokat lehet kiegyenlítetni.</p><p>További információért lásd a [Készletláthatósági foglalások](../inventory/inventory-visibility-reservations.md) című részt.</p> |

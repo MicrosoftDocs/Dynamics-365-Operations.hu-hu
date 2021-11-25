@@ -1,8 +1,8 @@
 ---
-title: Alapadat-keresés környezetének beállítása
-description: Ez a témakör bemutatja, hogy hogyan lehet beállítani a környezetet az adószámítási alapadat-keresési funkció használatához.
+title: Alapadat-keresés engedélyezése adószámítási konfigurációhoz
+description: Ez a témakör bemutatja, hogy hogyan lehet beállítani és engedélyezni az adószámítási alapadat-keresési funkciót.
 author: kai-cloud
-ms.date: 10/26/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 901f8bcb0220355866952b68e92bc2dd906bb430
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
-ms.translationtype: HT
+ms.openlocfilehash: dafeac01aaff62cbbd5ce6ecb0af0ef111f513b2
+ms.sourcegitcommit: 76fe020f9c5f4e5cc2e93f5ccb3b040f12b0363e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700404"
+ms.lasthandoff: 11/03/2021
+ms.locfileid: "7749510"
 ---
-# <a name="set-up-an-environment-for-master-data-lookup"></a>Alapadat-keresés környezetének beállítása
+# <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Alapadat-keresés engedélyezése adószámítási konfigurációhoz 
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan lehet beállítani a környezetet az adószámítási alapadat-keresési funkció használatához.
+Ez a témakör bemutatja, hogy hogyan lehet beállítani és engedélyezni az adószámítási alapadat-keresési funkciót. Legördülő lista áll rendelkezésre az adószámítási konfigurációban az olyan mezők értékeinek kiválasztásához, mint például a Szállítói számla, a Cikk **kódja és a Szállítási** **·** **feltételek**. Ezek az értékek a Microsoft által csatlakoztatott Dynamics 365 Finance környezetből, az Microsoft Dataverse adatforrás használatával jönnek létre.
 
 1. A Microsoft Power Platform integráció beállítása a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban. További informáciért lásd: [Microsoft Power Platform integráció – Bővítmények áttekintése](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). A lépés befejezése után a Microsoft Power Platform környezet neve megjelenik a **Power Platform Integráció** szakaszban.
 2. Menjen a [Microsoft Power Platform felügyeleti központba](https://admin.powerplatform.microsoft.com/environments), és válassza ki a környezet nevét. A környezet URL-címe meg van adva.
@@ -66,16 +66,16 @@ Ez a témakör bemutatja, hogy hogyan lehet beállítani a környezetet az adós
 
 9. Válassza a **Kapcsolat ellenőrzése** lehetőséget, és fejezze be a kapcsolódási folyamatot. 
 
-    [![Kapcsolat ellenőrzése gomb.](./media/tax-service-setup-environment-for-mater-date-pic1.png)](./media/tax-service-setup-environment-for-mater-date-pic1.png)
+    [![ Kapcsolat ellenőrzése gomb.](./media/tax-service-setup-environment-for-mater-date-pic1.png)](./media/tax-service-setup-environment-for-mater-date-pic1.png)
 
 10. Ugrás az **Elektronikus jelentés** > **Adókonfigurációk** elemhez, és importálja az adókonfigurációkat az [Adókonfigurációk](https://go.microsoft.com/fwlink/?linkid=2158352) elemből.
 
-    [![Adókonfigurációs oldal, adóadatmodellfa.](./media/tax-service-setup-environment-for-mater-date-pic2.png)](./media/tax-service-setup-environment-for-mater-date-pic2.png)
+    [![ Adókonfigurációs oldal, adóadatmodellfa.](./media/tax-service-setup-environment-for-mater-date-pic2.png)](./media/tax-service-setup-environment-for-mater-date-pic2.png)
 
 11. Ha Microsoft-konfigurációt használ, lépjen az **Adóköteles dokumentummodell-hozzárendelés** vagy a **Dataverse modellleképezés** elemhez, és a **Kapcsolódó alkalmazás** mezőben válassza ki a 7. lépésben létrehozott rekordot.
 12. Állítsa az **Alapértelmezett modell-hozzárendelés** beállítást **Igen** értékre.
 
-    [![Modell-leképezés oldal.](./media/tax-service-setup-environment-for-mater-date-pic3.png)](./media/tax-service-setup-environment-for-mater-date-pic3.png)
+    [![ Modell-leképezés oldal.](./media/tax-service-setup-environment-for-mater-date-pic3.png)](./media/tax-service-setup-environment-for-mater-date-pic3.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

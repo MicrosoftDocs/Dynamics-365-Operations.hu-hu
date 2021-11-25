@@ -1,7 +1,7 @@
 ---
 title: Hitelkezelés beállítása
 description: Ez a témakör a Hitelkezeléshez szükséges beállításokat írja le.
-author: mikefalkner
+author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 4cfb747c9a510474d0ca27a595158cd6e6d24359a37f665f64b4c640536874aa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 9b9e756b678786d2c5a8c5bb9e890ce988090c09
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723943"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753668"
 ---
 # <a name="credit-management-setup"></a>Hitelkezelés beállítása 
 
@@ -39,7 +39,7 @@ Ha a rendelésben szereplő fizetési feltételek nem egyeznek meg a vevő alap�
 
 Ha a fizetési feltételek rangsora aktív, és a rendelésen szereplő fizetési feltételek magasabb rangúak a vevő alapértelmezett fizetési feltételeinél, az értékesítési rendelések várakoztatott állapotba kerülnek.
 
-A fizetési feltételek rangsorát a **Követelések és beszedések \> Beállítások \> Hitelkeret beállítása \>Fizetési feltételek rangsorolása** lapon állíthatja be.  
+A fizetési feltételek rangsorát a **Követelések és beszedések \> Beállítások \> Hitelkeret beállítása \> Fizetési feltételek rangsorolása** lapon állíthatja be.  
 
 ### <a name="ranking-settlement-discounts"></a>Kiegyenlítési kedvezmények rangsorolása
 
@@ -47,7 +47,7 @@ Ha a rendelésben készpénzfizetési engedmény nem egyez meg a vevő alapérte
 
 Ha a készpénzfizetési engedmények rangsora aktív, és ha a rendelésen szereplő készpénzfizetési engedmény magasabb rangú a vevő alapértelmezett készpénzfizetési engedményénél, az értékesítési rendelés várakoztatott állapotba kerül.
 
-A fizetési feltételek rangsorát a **Követelések és beszedések \> Beállítások \> Hitelkeret beállítása \>Kiegyenlítési engedmények rangsorolása** lapon állíthatja be.  
+A fizetési feltételek rangsorát a **Követelések és beszedések \> Beállítások \> Hitelkeret beállítása \> Kiegyenlítési engedmények rangsorolása** lapon állíthatja be.  
 
 ## <a name="reasons"></a>Okok
 

@@ -2,7 +2,7 @@
 title: Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
 description: Ez a témakör bemutatja, hogy hogyan konfigurálhatja az Elektronikus számlázást a Dynamics 365 Regulatory Configuration Services (RCS) szolgáltatásban.
 author: gionoder
-ms.date: 07/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 98ba40da7b365e46e1c624ba70c7dc048144e2c7137e8fd8eb5abe348028ce35
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757974"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779670"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
 
@@ -28,7 +28,7 @@ ms.locfileid: "6757974"
 
 Ez a témakör a Dynamics 365 Regulatory Configuration Services (RCS) Elektronikus számlázásnak konfigurációs lehetőségeiről nyújt tájékoztatást.
 
-Az Elektronikus számlázás konfigurációs lehetőségei révén segíti az elektronikus számlákra vonatkozó üzleti és jogi követelményeknek programozás nélkül való megfelelését. Az olyan helyzetekben pedig, amikor az elektronikus számlákat elektronikusan egy webes szolgáltatásnak jóvá kell hagynia, a konfigurációs képességek segítséget nyújtanak a webes szolgáltatásokkal történő üzenetváltásban, mindezt programozás nélkül.
+Az Elektronikus számlázás konfigurációs lehetőségei révén segíti az elektronikus számlákra vonatkozó üzleti és jogi követelményeknek programozás nélkül való megfelelését. És olyan helyzetekben, amikor egy webszolgáltatásnak elektronikusan jóvá kell hagynia az elektronikus számlákat, a konfigurációs képességek segítséget nyújtanak a webszolgáltatással történő üzenetcserével kapcsolatos, kód nélküli követelményeknek is.
 
 ## <a name="electronic-reporting"></a>Elektronikus jelentés
 
@@ -73,6 +73,7 @@ Az alábbi táblázat bemutatja az általánosan elérhető elektronikus száml�
 | Spanyolország          | Spanyol elektronikus számla (ES)      | Értékesítési és projektszámlák |
 | Európa         | PEPPOL elektronikus számla            | PEPPOL értékesítési és projektszámlák |
 | Európa         | PEPPOL szállítói számla                | PEPPOL import szállítói számlák |
+| Szaúd-Arábia   | Szaúd-arábiai elektronikus számla (SA)| Értékesítési és projektszámlák |
 
 ### <a name="preview-features"></a>Előnézeti funkciók
 
@@ -197,6 +198,11 @@ A következő listák megjeleníti az elektronikus számlázási funkciókhoz el
 - Értékesítési számla (ES)
 - Projektszámla (ES)
 
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>Szaúd-arábiai elektronikus számla : Szaúd-Arábia értékesítési és projektszámlái
+
+- Értékesítés - e-számla (SA)
+- Projekt - e-számla (SA)
+
 Az elektronikus számlázási szolgáltatással azonnal használatba vehető elektronikus jelentéskészítési formátumkonfigurációk mellett saját elektronikus jelentéskészítési formátumkonfigurációkat is létrehozhat. Az elektronikus számlázási funkciókhoz létrehozott formátumkonfigurációk azonban nem támogatják a Finance és a Supply Chain Management tábláira történő közvetlen hivatkozást, illetve a megfelelő metaadatokat. Csak az elektronikus jelentéskészítési modellleképezésre mutató hivatkozások támogatottak.
 
 ### <a name="actions"></a>Műveletek
@@ -274,7 +280,7 @@ Logikai operátorok:
 - És
 - Vagy
 
-Operátorok típusai:
+Kezelőtípusok:
 - Equal
 - Not equal
 - Greater than

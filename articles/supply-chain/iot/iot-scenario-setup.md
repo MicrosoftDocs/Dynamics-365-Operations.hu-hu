@@ -1,25 +1,25 @@
 ---
 title: Forgatókönyv beállítása IoT Intelligencia esetén
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a IoT-intelligencia forgatókönyveit a Microsoft Dynamics 365 Supply Chain Management alkalmazásban.
-author: robinarh
+author: tonyafehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 9a45ed57f1fb5e4d508c30b2f3a83dafacfb7dd870701a8f519bbc1e807ed982
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: b8e8c65cebe64f86dcf158668e8a4f5600c158a1
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736793"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782427"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Forgatókönyv beállítása IoT Intelligencia esetén
 

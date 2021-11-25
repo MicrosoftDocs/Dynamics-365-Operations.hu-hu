@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 7d1bd846dae767b47280310fc8d9ca5ee82337ad
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: fd73c515c653de9160301e069fb25d995db40741
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568855"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778305"
 ---
 # <a name="inventory-journal-approval-workflows"></a>Készletnapló-jóváhagyási munkafolyamatok
 
@@ -31,7 +31,7 @@ Ez a témakör bemutatja, hogyan kell beállítani a készletnapló-jóváhagyá
 
 ## <a name="turn-on-the-inventory-journal-approval-workflows-feature"></a>Készletnaplók jóváhagyási munkafolyamatai funkció aktiválása
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés lapon ellenőrizhetik a funkció állapotát, és szükség esetén engedélyezhetik vagy [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) letilthatják azt. Itt a funkció a következőként szerepel:
 
 - **Modul:** *Készlet- és raktárkezelés*
 - **Funkció neve:** *Készletnapló jóváhagyási munkafolyamata*
@@ -44,7 +44,7 @@ A munkafolyamatok támogatják a verzióvezérlést, illetve mindegyikhez tartoz
 
 A saját készletnapló-jóváhagyási munkafolyamatai létrehozásához:
 
-1. Menjen a **Készletkezelés \> Beállítás\> Készletkezelési munkafolyamatok** lehetőségre.
+1. Menjen a **Készletkezelés \> Beállítás \> Készletkezelési munkafolyamatok** lehetőségre.
 1. A Művelet panelen válassza az **Új** lehetőséget.
 1. Válassza ki azt a készletnapló-típust, amelyhez be szeretné állítani a munkafolyamatot:
     - l **Készlet címkeszámlálási naplója**

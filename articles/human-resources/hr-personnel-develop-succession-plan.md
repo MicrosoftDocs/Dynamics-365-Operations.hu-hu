@@ -1,8 +1,8 @@
 ---
 title: Utódlási terv kialakítása
 description: A szervezet növekedésével el kell kezdenie az utánpótlás-tervezést.
-author: andreabichsel
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,15 +10,15 @@ ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ca1d9dda75038d937e2a3dad4582feefa617aac9f7f3f1a75ffd274c69c68ae9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: ed10813c30b9a49b84a7e8e333fbac3d1e26720a
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768215"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731516"
 ---
 # <a name="develop-a-succession-plan"></a>Utódlási terv kialakítása
 
@@ -35,8 +35,8 @@ A szervezet növekedésével el kell kezdenie az utánpótlás-tervezést. Az ut
 7. Válassza a **Személy** lehetőséget.
 8. A **Személy** mezőben adjon meg egy nevet vagy válasszon a legördülő listából.
 9. Válassza ki az **OK** lehetőséget.
-10. Bontsa ki a **Tanúsítványok** gyorslapot, így láthatja vagy szerkesztheti a szakértelem-feltérképezésben szereplő tanúsítványokat.
-11. Bontsa ki a **Szakértelmek** gyorslapot a belefoglalandó szakértelmek megjelenítéséhez és szerkesztéséhez.
+10. A szakértelem-feltérképezésben szereplő bizonyítványok megtekintéséhez vagy szerkesztéséhez bontsa ki a Tanúsítványok **·** gyorsét.
+11. A szakértelem gyorsét kibontva megtekintheti és szerkesztheti a **·** szerepeletendő készségeket.
 12. A listában jelölje meg az első sort. Például: könyvelés.
 13. Jelölje be a **Választható** jelölőnégyzetet.
 14. A **Fontosság** mezőben válasszonki egy lehetőséget. Ha egy szakértelmet opcionális cikként jelöl meg, ki kell választania a szakértelem fontosságának szintjét.  
@@ -48,8 +48,8 @@ A szervezet növekedésével el kell kezdenie az utánpótlás-tervezést. Az ut
 20. A **Fontosság** mezőben válasszonki egy lehetőséget.
 21. Jelölje ki az 4. sort a listában.
 22. Jelölje be a **Választható** jelölőnégyzetet.
-23. Egy lehetőség kiválasztása Fontosság mezőben.
-24. A szakértelem-feltérképezésbe belekerülő végzettség kompetenciák megtekintéséhez és szerkesztéséhez bontsa ki a **Végzettségek** gyorslapot.
+23. A **Fontosság** mezőben válasszonki egy lehetőséget.
+24. A végzettség-feltérképezésben szerepeltetendő képzettségi kompetenciák megtekintéséhez vagy szerkesztéséhez bontsa ki a **·** Végzettség gyorsét.
 25. Válassza a **Végrehajtás** lehetőséget.
 26. Válassza ki az **OK** lehetőséget.
 27. Válassza az **Eredmény** lehetőséget.

@@ -2,7 +2,7 @@
 title: A pénzforgalom előrejelzésének lehetővé tétele
 description: Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a Pénzforgalmi előrejelzések funkcióját a pénzügyi elemzésekben.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,45 +15,37 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b5e54772b132b4098df8259e954a484a0838ee38
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
-ms.translationtype: HT
+ms.openlocfilehash: d968f28126cf205a487d84301aa28f1251713386
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386711"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752688"
 ---
 # <a name="enable-cash-flow-forecasting"></a>A pénzforgalom előrejelzésének lehetővé tétele
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a Pénzforgalmi előrejelzések funkcióját a pénzügyi elemzésekben.
+Ez a témakör bemutatja a Pénzügyi információk pénzforgalmi előrejelzési funkció bekapcsolt funkcióját.
 
 > [!NOTE]
 > Ha fizetési előrejelzéseket szeretne használni a pénzforgalomban, be kell állítania a Vevői fizetési előrejelzések funkciót a [Vevői fizetési előrejelzések engedélyezése](enable-cust-paymnt-prediction.md) című részben leírtak szerint.
-
-1. A Microsoft Dynamics Lifecycle Services (LCS) környezet lapjáról származó információk használatával csatlakozhat az Azure SQL elsődleges példányához az adott környezetben. Futtassa a következő Transact-SQL (T-SQL) parancsot a tesztkörnyezetben a teszteléshez kiadás bekapcsolásához. (Előfordulhat, hogy az LCS-ben be kell kapcsolnia az IP-cím hez való hozzáférést, mielőtt távolról csatlakozhatna az Application Object Server szolgáltatáshoz \[AOS\].)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('CashflowInsightsFeature', 1)`
-
-    > [!NOTE]
-    > Hagyja ki ezt a lépést, ha a 10.0.20-as vagy újabb verziót használja, vagy ha Service Fabric-telepítést használ. A pénzügyi elemzési csoportnak már be kellett kapcsolnia a tesztelés kiadását az Ön számára. Ha nem látja a funkciót a **Funkciókezelés** munkaterületen, vagy ha problémákat tapasztal, amikor megpróbálja bekapcsolni, keressen fel minket: <fiap@microsoft.com>.
   
-2. Nyissa meg a **Funkciókezelés** munkaterületet, és kövesse az alábbi lépéseket:
+1. Nyissa meg a **Funkciókezelés** munkaterületet, és kövesse az alábbi lépéseket:
 
     1. Válassza a **Frissítések keresése** elemet.
-    2. Kapcsolja be a következő szolgáltatásokat:
+    2. A **Mind** lapon keressen rá a **pénzforgalmi előrejelzésekre**. Ha nem találja ezt a funkciót, keressen **pénzforgalmi előrejelzéseket (előnézet)**. 
+    3. A funkció bekapcsolva.
 
-        - Új rácsvezérlő
-        - Csoportosítás rácsokba (előzetes verzió) 
-        - Vevői fizetési előrejelzések (előzetes verzió)
-        - Pénzforgalmi előrejelzések (előzetes verzió)
-
-3. Nyissa meg a **Készpénz- és bankkezelés \> Pénzforgalom-előrejelzés** lehetőséget, és adja hozzá az előrejelzésekben szerepeltetni kívánt likviditási számlákat.
+2. Nyissa meg a **Készpénz- és bankkezelés \> Pénzforgalom-előrejelzés** lehetőséget, és adja hozzá az előrejelzésekben szerepeltetni kívánt likviditási számlákat. A Kinnlevőségek és kötelezettségek lapon a kifizetések likviditási **·** **számlájának** beállítása is. Győződjön meg róla, hogy újraszámálja a pénzforgalmi előrejelzést.
 
     > [!NOTE]
     > Ha a likviditási számlák nincsenek beállítva, a pénzforgalom nem generálható.
+    >
+    > A pénzforgalmi előrejelzések beállításának további tudnivalókat lásd: [Pénzforgalmi](../cash-bank-management/cash-flow-forecasting.md) előrejelzés.
 
-4. Nyissa meg a **Készpénz- és bankkezelés \> Beállítás \> Pénzügyi elemzések (előzetes verzió) \> Pénzforgalmi előrejelzések (előzetes verzió)** című részt, és kövesse az alábbi lépéseket:
+3. Nyissa meg a **Készpénz- és bankkezelés \> Beállítás \> Pénzügyi elemzések (előzetes verzió) \> Pénzforgalmi előrejelzések (előzetes verzió)** című részt, és kövesse az alábbi lépéseket:
 
     1. A **Pénzforgalmi előrejelzés** lapon válassza a **Funkció engedélyezése** lehetőséget.
     2. Válassza az **Előrejelzési modell létrehozása** lehetőséget.

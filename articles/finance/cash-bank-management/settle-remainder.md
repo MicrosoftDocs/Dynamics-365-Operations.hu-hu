@@ -1,7 +1,7 @@
 ---
 title: Hátralék kiegyenlítése
 description: Egy kiegyenlítési tevékenységből maradt összeget úgy egyenlíthet ki, hogy azt a főkönyvi számlához rendeli.
-author: mikefalkner
+author: roschlom
 ms.date: 10/16/2018
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 1eb82c1f5982b30052acb2cb7659f6c07f2a4da54b68f602a2afb4e499fbcc73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 216c5c1d7db72e5f5071f2cd03656df538a64e72
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719788"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754096"
 ---
 # <a name="settle-remainder"></a>Hátralék kiegyenlítése
 
@@ -33,7 +33,7 @@ A Hátralék kiegyenlítése funkciót engedélyeznie kell, és meg kell adnia a
 2)  Válassza ki a **Kiegyenlítés** lapot, majd kattintson a **Hátralék kiegyenlítésének engedélyezése** lehetőségre.
 3)  Az **Alapértelmezett okkód** helyen válassza ki az alapértelmezett okkódot. Az okkódoknak már be kell lennie állítva **Kinnlevőségek > Beállítás > Vevői leírási okkódok** vagy **Kötelezettségek > Beállítás > Vevői leírási okkódok** helyen. A **Hátralékszámlák alapértelmezett kiegyenlítése** alapértelmezetten ahhoz a számlához lesz rendelve, amelyik a leírási okkódhoz van rendelve.
 3)  Frissítse a **Hátralékszámlák alapértelmezett kiegyenlítése** elemet szükség szerint.
-4)  Az **Alapértelmezett naplónév** elemnél válasszon ki egy kifizetési naplót, amelyet akkor használ, amikor kifizetési naplót szeretne létrehozni, amikor csak nyitott tranzakciókat egyenlít ki. A fennmaradó hátralék kiegyenlítése funkció engedélyezése esetén hozzá kell adnia egy alapértelmezett naplónevet.
+4)  Az Alapértelmezett naplónév mezőben válassza ki azt a kifizetési naplót, amely akkor használatos, ha csak nyitott tranzakciókkal szeretne kifizetési **·** naplót létrehozni. A fennmaradó hátralék kiegyenlítése funkció engedélyezése esetén hozzá kell adnia egy alapértelmezett naplónevet.
 
 ## <a name="settle-remainder-from-a-journal"></a>Hátralék kiegyenlítése naplóból
 Ha nem engedélyezi a **Hátralék kiegyenlítése** funkciót, akkor is bevihet egy tranzakciót a naplóba, és kiegyenlíthet ezzel szemben tranzakciókat, ahogy korábban is. Amikor rákattint az **OK** gombra, a nyitott egyenleg a számlán a pénzfizetés összegével csökken. Ha pénzösszeg nem egyenlíti ki teljesen a számlát, a számla nyitott a fennmaradó összeg egy későbbi időpontban történő kiegyenlítéséig.

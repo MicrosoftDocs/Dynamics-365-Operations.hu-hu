@@ -1,8 +1,8 @@
 ---
 title: Adatintegrációs projekt létrehozása
-description: Ez a témakör bemutatja, hogyan hozhat létre adatintegrációs projektet.
+description: Ez a témakör bemutatja az adatintegrációs projektek létrehozásához szükséges témaköröket.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,25 +15,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: b08af906c18f6c0790ca56c69a833733f48cd88c
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
-ms.translationtype: HT
+ms.openlocfilehash: 7841f8b31e0ac1a40dce9acaac747f5f378236e0
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386362"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752664"
 ---
-# <a name="create-a-data-integrator-project"></a>Adatintegrációs projekt létrehozása
+# <a name="create-a-data-integration-project"></a>Adatintegrációs projekt létrehozása
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör bemutatja, hogyan hozhat létre adatintegrációs projektet.
+Ez a témakör bemutatja az adatintegrációs projektek létrehozásához szükséges témaköröket.
 
 1. Jelentkezzen be a Microsoft Dynamics 365 Finance szolgáltatásba.
 2. Menjen a **Munkaterületek \> Adatkezelés** pontra, és válassza az **Adatentitások** lehetőséget. Várja meg, amíg az összes adatentitás frissül, mielőtt továbblépne a következő lépésre.
 3. Nyissa meg a [Power Apps-portált](https://make.powerapps.com/), és kövesse az alábbi lépéseket:
 
     1. Válassza ki a megfelelő környezetet.
-    2. A bal oldali navigációs ablakban válassza ki az **Adat \> kapcsolatok** lehetőséget.
+    2. A bal oldali navigációs ablakban válassza a Kapcsolatok **Dataverse\> lehetőséget**.
     3. Csatlakozzon a következő elemek megfelelő példányaihoz:
 
         - Dynamics 365
@@ -41,7 +42,7 @@ Ez a témakör bemutatja, hogyan hozhat létre adatintegrációs projektet.
 
 4. Nyissa meg a [Power Apps környezetet](https://admin.powerapps.com/environments), és kövesse az alábbi lépéseket:
 
-    1. Válassza az **Adatintegrátor** lehetőséget.
+    1. **Adatintegráció kiválasztása**.
     2. Válassza ki a **Csatlakozókészletek** lehetőséget.
     3. Válassza ki az **Új csatlakozókészlet** lehetőséget.
     4. Adja meg a csatlakozás nevét.
@@ -57,8 +58,7 @@ Ez a témakör bemutatja, hogyan hozhat létre adatintegrációs projektet.
 
     1. Az imént létrehozott kapcsolatkészlet használatával adatintegrációs projekteket hozhat létre a következő sablonokhoz:
 
-        - Az ügyfelek fizetési információinak eredményei (CDS to Fin and Ops)
-            - Ha a 10.0.17-es vagy újabb verziót használja, akkor az ügyfélkifizetések eredményének megfelelő sablont (CDS to Fin and Ops 10.0.17+) kell használnia.
+        - Vevői kifizetések eredményének (CDS – Fin and Ops 10.0.17+)
         - Készpénzáramlási idősorozatok eredményei (CDS to Fin and Ops)
         - Költség idősorozatok eredményei (CDS to Fin and Ops)
 

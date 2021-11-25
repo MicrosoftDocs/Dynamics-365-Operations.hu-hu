@@ -1,8 +1,8 @@
 ---
 title: A Human Resources paramétereinek konfigurálása
 description: Ez a témakör ismerteti a vállalat-specifikus paraméterek beállítását a Dynamics 365 Human Resources alkalmazásban.
-author: andreabichsel
-ms.date: 06/23/2021
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 476f44c665adb2918e7cd882d4ea873b4b4f94fa33a74dc96d3eccc74b676ce5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739251"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771435"
 ---
 # <a name="configure-human-resources-parameters"></a>A Human Resources paramétereinek konfigurálása
 
@@ -65,7 +65,7 @@ Az **Általános** lapon található beállítások határozzák meg a távollé
 
 A **Toborzás** lapon megadott beállítások határozzák meg azokat a dokumentumtípusokat, amelyek a pályázóknak automatikusan küldött levelezéshez használatosak. Jelezheti a kéretlen pályázatokhoz használt toborzási projektet is.
 
-A toborzási projekt korosításához definiált időszak határozza meg a **Toborzás kezelése** munkaterületen található **Korosítási projektek** csempe által tartalmazott toborzási projekteket. A pályázati határidőre vonatkozó figyelmeztetéshez definiált időszak használatos a **Toborzás** munkaterületen a **Közelgő jelentkezési határidő** csempében található, a pályázati határidejükhöz közelítő toborzási projektek megjelenítéséhez.
+A Toborzási projekt korosítási beállításában meghatározott időszak határozza meg, hogy mely toborzási projektek szerepelnek a Toborzáskezelés munkaterület Korosítási projektek **·** csempe **·** **·** területén. A jelentkezési határidő figyelmeztetéséhez megadott időszak használatával lehet látni a Toborzás munkaterületen a jelentkezési határidő felé közeledő toborzási **·** **·** projekteket.
 
 A toborzásról a [Jelöltek toborzása](hr-personnel-recruit.md) oldalon található részletes tájékoztatás.
 
@@ -107,20 +107,20 @@ Az FMLA lapon lehet beállítani az FMLA-alkalmazhatósági követelmények és 
 
 ## <a name="employee-self-service"></a>Alkalmazotti önkiszolgáló rendszer
 
-Az **Alkalmazotti önkiszolgáló rendszer** lap beállításai befolyásolják, hogyan jelenik meg az Alkalmazotti önkiszolgáló rendszer az alkalmazottak számára. Ezen a lapon a következő beállításokat használhatja:
+Az Alkalmazott – önkiszolgáló szolgáltatás lapon megadott beállítások befolyásolják, hogy hogyan jelenik meg **·** az **·** alkalmazotti önkiszolgáló rendszer az alkalmazottaknak. Ezen a lapon a következő feladatokat lehet elvégezni:
 
-- Alkalmazotti önkiszolgáló munkaterület nevének megadása
+- Adja meg az Alkalmazott önkiszolgáló **munkaterületének** nevét.
 - Adja meg, hogy a vezető mely adatokat adhatja meg az alkalmazottak számára
 - Hasznos hivatkozások hozzáadása az alkalmazottak számára
 - Az alkalmazottak korlátozása az üzleti kapcsolattartók részleteinek hozzáadása és szerkesztése tekintetében. A további tudnivalókat lásd: [Személyes adatok szerkesztésének korlátozása](hr-employee-self-service-restrict-editing.md).
 
-Az Alkalmazotti önkiszolgáló rendszer beállításával kapcsolatos további tudnivalókat lásd: [Alkalmazotti és vezetői önkiszolgáló rendszer áttekintése](hr-employee-manager-self-service-overview.md).
+Az alkalmazotti önkiszolgáló rendszer beállításának további tudnivalókat lásd az Alkalmazott és a **·** Vezető [önkiszolgáló rendszer](hr-employee-manager-self-service-overview.md) áttekintésében.
 
 ![Alkalmazotti önkiszolgáló rendszer lap.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Vezetői önkiszolgáló rendszer
 
-A **Vezetői önkiszolgáló rendszer** lapon megadott beállítások befolyásolják, hogy mit látnak a vezetők a Vezetői önkiszolgáló rendszerében. Ezen a lapon a következő beállításokat lehet beállítani:
+A Vezetői önkiszolgáló lapon **megadott beállítások** azt befolyásolják, hogy milyen vezetők látnak a **Vezető önkiszolgáló szolgáltatásban.** Ezen a lapon a következő beállításokat lehet beállítani:
 
 - A lejáró rekordok tartománya
 - A vezetők által a lejáró rekordokban látható információk
@@ -128,13 +128,13 @@ A **Vezetői önkiszolgáló rendszer** lapon megadott beállítások befolyáso
 - A kilépő dolgozók nézete
 - Hasznos hivatkozások a vezetőknek
 
-A Vezetői önkiszolgáló rendszer beállításával kapcsolatos további tudnivalókat lásd: [Alkalmazotti és vezetői önkiszolgáló rendszer áttekintése](hr-employee-manager-self-service-overview.md).
+A vezetői önkiszolgáló rendszer beállításának további **tudnivalókat lásd: Alkalmazott és vezető**[önkiszolgáló szolgáltatás –](hr-employee-manager-self-service-overview.md) áttekintés.
 
 ![Vezetői önkiszolgáló rendszer lap.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Juttatáskezelés
 
-A Juttatáskezelés lapon beállíthatja a Juttatáskezelése e-mail-beállításait. A Juttatáskezelés beállításával és használatával kapcsolatos további tudnivalókért lásd: [Juttatáskezelés áttekintése](hr-benefits-management-overview.md).
+A Juttatások kezelése lapon beállíthatja a Juttatások kezelése **·** e-mailben megadott beállításait. A Juttatások kezelése beállítási és használatával kapcsolatos további tudnivalókat lásd a [Juttatások kezelése](hr-benefits-management-overview.md) témakörben.
 
 ![Juttatáskezelés lap.](./media/hr-setup-parameters-benefits-management.png)
 

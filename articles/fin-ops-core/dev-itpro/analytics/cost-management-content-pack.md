@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 78be9c67eeac1307d67d70ef75751adebbc246ee69e093b1b9dbc8f408d63258
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 9fbdc6addc820aadc1f5469cb059a62724cfe905
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726333"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752640"
 ---
 # <a name="cost-management-power-bi-content"></a>Költségkezelés Power BI tartalom
 
@@ -30,11 +30,6 @@ ms.locfileid: "6726333"
 ## <a name="overview"></a>Áttekintés
 
 A **Költségkezelés** Microsoft Power BI-tartalom készletkönyvelők, valamint a szervezeten belül a készletekért és a folyamatban lévő munkákért felelős vagy ez iránt érdeklődő, valamint elszámolóár-különbözetek elemzésével foglalkozó szakemberek számára készült.
-
-> [!NOTE]
-> A témakörben leírt **Költségkezelés** Power BI-tartalom a Dynamics 365 Finance and Operations 8.0-s verzióra vonatkozik.
-> 
-> A **Költségkezelés** Power BI tartalomcsomag, amely az AppSource webhelyen elérhető, már elavult. További információ az ilyen elavulásról: [Eltávolított vagy elavult szolgáltatások a Finance and Operations-alkalmazásban](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Ez a Power BI-tartalom olyan kategorizált formátumot biztosít, amely segítséget nyújt a készletek teljesítményének figyelemmel kísérésében, és bemutatja a rajtuk átáramló költségeket. Ön vezetői betekintést nyerhet például a forgalom arányába, azon napok számába, amelyeken a készlet rendelkezésre áll, a pontosságba, a kívánt összesítési szinten (vállalat, cikk, cikkcsoport vagy telephely) elérhető „ABC-osztályozásba”. Az elérhető információk pénzügyi kimutatás részletes kiegészítéseként felhasználhatók.
 
@@ -184,16 +179,16 @@ Az alábbi táblázat bemutatja a legfontosabb számított mértékeket a Power 
 
 | Méret                            | Számítás |
 |------------------------------------|-------------|
-| Nyitó egyenleg                  | Nyitó egyenleg = \[[Záró egyenleg\]-\[Nettó változás\]] |
-| Nyitó egyenleg menny.             | Nyitó egyenleg menny. = \[Záró egyenleg menny.\]-\[Nettó változás menny.\] |
-| Záró egyenleg                     | Záró egyenleg = (CALCULATE(SUM(\[Amount\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\])))) |
-| Záró egyenleg menny.                | Záró egyenleg menny. = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
-| Nettó változás                         | Nettó változás = SUM(\[AMOUNT\]) |
-| Nettó változás menny.                    | Nettó változás menny. = SUM(\[QTY\]) |
-| Készletforgalom aránya összegenként | Készletforgalom aránya összegenként = if(\[OR(Készlet átlagos egyenlege\] \<= 0, \[Inventory sold or consumed issues\] \>= 0), 0, ABS(\[Értékesített vagy felhasznált készlet problémák\])/\[Készlet átlagos egyenlege\]) |
-| Készlet átlagos egyenlege          | Készlet átlagos egyenlege = ((\[Záró egyenleg\] + \[Nyitó egyenleg\]) / 2) |
-| Napok száma, amióta a készlet rendelkezésre áll             | Napok száma, amióta a készlet rendelkezésre áll = 365 / CostObjectStatementEntries\[Készletforgalom aránya összegenként\] |
-| Készlet pontossága                 | Készlet pontossága összeg = IF (\[záró egyenleg\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[záró egyenleg\] \< 0), 0, 1), MAX(0, (\[záró egyenleg\] -ABS (\[készletként számított összeg\]))/\[záró egyenleg\])) |
+| Nyitó egyenleg                  | Nyitó egyenleg = \[[Záró egyenleg\]-\[ Nettó változás\]] |
+| Nyitó egyenleg menny.             | Nyitó egyenleg menny. = \[ Záró egyenleg menny.\]-\[ Nettó változás menny.\] |
+| Záró egyenleg                     | Záró egyenleg = (CALCULATE(SUM(\[ Amount\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[ MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[ MONTHSTARTDATE\])))) |
+| Záró egyenleg menny.                | Záró egyenleg menny. = CALCULATE(SUM(\[ QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[ MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[ MONTHSTARTDATE\]))) |
+| Nettó változás                         | Nettó változás = SUM(\[ AMOUNT\]) |
+| Nettó változás menny.                    | Nettó változás menny. = SUM(\[ QTY\]) |
+| Készletforgalom aránya összegenként | Készletforgalom aránya összegenként = if(\[ OR(Készlet átlagos egyenlege\] \<= 0, \[Inventory sold or consumed issues\] \>= 0), 0, ABS(\[ Értékesített vagy felhasznált készlet problémák\])/\[ Készlet átlagos egyenlege\]) |
+| Készlet átlagos egyenlege          | Készlet átlagos egyenlege = ((\[ Záró egyenleg\] + \[ Nyitó egyenleg\]) / 2) |
+| Napok száma, amióta a készlet rendelkezésre áll             | Napok száma, amióta a készlet rendelkezésre áll = 365 / CostObjectStatementEntries\[ Készletforgalom aránya összegenként\] |
+| Készlet pontossága                 | Készlet pontossága összeg = IF (\[ záró egyenleg\] \<= 0, IF(OR(\[Inventory counted amount\] \<\> 0, \[ záró egyenleg\] \< 0), 0, 1), MAX(0, (\[ záró egyenleg\] -ABS (\[ készletként számított összeg\]))/\[ záró egyenleg\])) |
 
 Az alábbi táblázat megjeleníti azokat a fő dimenziókat, amelyek szűrőként szolgálnak az összesítő mértékek szeletelésére, nagyobb részletességet és mélyebb elemzési betekintések elérését téve lehetővé.
 

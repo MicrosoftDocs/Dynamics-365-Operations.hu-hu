@@ -5,16 +5,16 @@ author: t-benebo
 ms.date: 12/12/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: a2f4aeefe5fe7698d9dfaf80619102f2b753e52b
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
-ms.translationtype: HT
+ms.openlocfilehash: 81f49cf08dcd1b4b1c3d71ff286a1f070e65e914
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423447"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782332"
 ---
 # <a name="unified-product-experience"></a>Egységes terméktapasztalat
 
@@ -46,37 +46,37 @@ Finance and Operations-alkalmazásoknak | Egyéb Dynamics 365 alkalmazások | Le
 -----------------------|--------------------------------|---
 [Minden termék](mapping-reference.md#138) | msdyn_globalproducts | A minden terméktábla tartalmazza a Finance and Operations-alkalmazások összes rendelkezésre álló termékét, a kiadott termékeket és a nem kiadott termékeket is.
 [Kiadott CDS-egyedi termékek](mapping-reference.md#213) | Termék | A **Termék** tábla a termék meghatározására szolgáló oszlopokat tartalmazza. Tartalmazza az egyedi termékeket (termék altípusú termékeket) és a termékváltozatokat. A következő táblázat a leképezéseket mutatja be.
-[Színek](mapping-reference.md#170) | msdyn\_productcolors
-[Konfigurációk](mapping-reference.md#171) | msdyn\_productconfigurations
+[Színek](mapping-reference.md#170) | msdyn\_ productcolors
+[Konfigurációk](mapping-reference.md#171) | msdyn\_ productconfigurations
 [Alapértelmezett rendelésbeállítások](mapping-reference.md#172) | msdyn_productdefaultordersettings |
 [Termékkategóriák](mapping-reference.md#166) | msdyn_productcategories | A termékkategóriák mindegyike, valamint a szerkezetükkel és a jellemzőikkel kapcsolatos információk a termékkategória-táblában találhatók.
 [Termékkategóriák hozzárendelései](mapping-reference.md#167) | msdyn_productcategoryassignments | Ha terméket szeretne hozzárendelni egy kategóriához, akkor a termékkategória hozzárendelési tábláját használhatja.
 [Termékkategóriák hierarchiái](mapping-reference.md#168) | msdyn_productcategoryhierarchies | A termékhierarchiák használatával kategóriákat vagy termékeket csoportosíthat. A kategória-hierarchiák a Dataverse szolgáltatásban termékkategória-hierarchia tábla használatával érhetők el.
 [Termékkategória-hierarchiához tartozó szerepkörök](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | A termékhierarchiák a D365 Finance and Operations különböző szerepköreiben használhatók. Azt határozzák meg, hogy melyik kategóriát használja az egyes szerepkörökben, amelyekben a termékkategória szerepkörtáblához használatos.
 [Termék alapértelmezett rendelésbeállításai V2](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
-[Termékdimenzió-csoportok](mapping-reference.md#173) | msdyn\_productdimensiongroups | A termékdimenzió csoportja határozza meg, hogy mely cikkdimenziók határozzák meg a terméket.
+[Termékdimenzió-csoportok](mapping-reference.md#173) | msdyn\_ productdimensiongroups | A termékdimenzió csoportja határozza meg, hogy mely cikkdimenziók határozzák meg a terméket.
 [Alaptermékszínek](mapping-reference.md#187) | msdyn_sharedproductcolors | A **Megosztott termékszín** tábla azt jelzi, hogy egy adott alapterméknek milyen színei lehetnek. Ezt a koncepciót a program a Dataverse szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
 [Alaptermék-konfigurációk](mapping-reference.md#188) | msdyn_sharedproductconfigurations | A **Megosztott termékkonfiguráció** tábla azt jelzi, hogy egy adott alapterméknek milyen konfigurációi lehetnek. Ezt a koncepciót a program a Dataverse szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
 [Alaptermékméretek](mapping-reference.md#190) | msdyn_sharedproductsizes | A **Megosztott termékméret** tábla azokat a méreteket jelzi, amelyekkel egy adott alaptermék rendelkezhet. Ezt a koncepciót a program a Dataverse szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
 [Alaptermékstílusok](mapping-reference.md#191) | msdyn_sharedproductstyles | A **Megosztott termékstílus** tábla azt jelzi, hogy egy adott alapterméknek milyen stílusai lehetnek. Ezt a koncepciót a program a Dataverse szolgáltatásba is áthelyezi az adatok konzisztenciájának fenntartására.
-[Termékszám alapján azonosított vonalkód](mapping-reference.md#164) | msdyn\_productbarcodes | A termék vonalkódja a termékek egyedileg történő azonosítására szolgál.
+[Termékszám alapján azonosított vonalkód](mapping-reference.md#164) | msdyn\_ productbarcodes | A termék vonalkódja a termékek egyedileg történő azonosítására szolgál.
 [Termékspecifikus egységátváltások](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
-[Kiadott termékek V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | A **msdyn\_sharedproductdetails** tábla tartalmazza a termék meghatározására szolgáló oszlopokat a Finance and Operations alkalmazásokból, illetve ez tartalmazza a termék pénzügyi és vezetési információit.
-[Méretek](mapping-reference.md#174) | msdyn\_productsizes
+[Kiadott termékek V2](mapping-reference.md#189) | msdyn\_ sharedproductdetails | A **msdyn\_ sharedproductdetails** tábla tartalmazza a termék meghatározására szolgáló oszlopokat a Finance and Operations alkalmazásokból, illetve ez tartalmazza a termék pénzügyi és vezetési információit.
+[Méretek](mapping-reference.md#174) | msdyn\_ productsizes
 [Tárolásidimenzió-csoportok](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | A termék tárolási dimenziócsoportja képviseli azt a módszert amelyet használnak a termék elhelyezésének definiálásához a raktárban.
-[Stílusok](mapping-reference.md#178) | msdyn\_productsytles
+[Stílusok](mapping-reference.md#178) | msdyn\_ productsytles
 [Nyomonkövetésidimenzió-csoportok](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups | A termék nyomon követési dimenziócsoportja a termék készletben történő nyomon követésére használt módszert jelöli.
 [Egységek](mapping-reference.md#219) | uoms
 [Egységek átváltása](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
 
 ## <a name="integration-of-products"></a>Termékek integrálása
 
-Ebben a modellben a termék a következő két tábla kombinációjával van ábrázolva a Dataverse: **Termék** és **msdyn\_sharedproductdetails** helyeken. Ahol az első tábla a termék definícióját tartalmazza (a termék egyedi azonosítója, a termék neve és a leírás), a második tábla a termék szintjén tárolt oszlopokat tartalmazza. Ennek a két táblának a kombinációja a terméknek a készletezési egység (SKU) fogalma alapján történő meghatározására szolgál. Minden kiadott termék adatai megjelennek az említett táblákban (Termék és Megosztott termék részletei). Az összes (kiadott és nem kiadott) termék nyomon követésére a **Globális termék** tábla szolgál.
+Ebben a modellben a termék a következő két tábla kombinációjával van ábrázolva a Dataverse: **Termék** és **msdyn\_ sharedproductdetails** helyeken. Ahol az első tábla a termék definícióját tartalmazza (a termék egyedi azonosítója, a termék neve és a leírás), a második tábla a termék szintjén tárolt oszlopokat tartalmazza. Ennek a két táblának a kombinációja a terméknek a készletezési egység (SKU) fogalma alapján történő meghatározására szolgál. Minden kiadott termék adatai megjelennek az említett táblákban (Termék és Megosztott termék részletei). Az összes (kiadott és nem kiadott) termék nyomon követésére a **Globális termék** tábla szolgál.
 
 Mivel a termék SKU-ként képviselteti magát, az egyedi termékek, alaptermékek és termékváltozatok koncepciója a következő módon rögzíthető Dataverse szolgáltatásban:
 
-- **A termékek altípus termékkel rendelkező termékek** saját maguk által meghatározott termékek. Nem kell dimenziókat definiálni. Egy példa erre egy meghatározott könyv. Ezeknél a termékeknél egy sor jön létre a **Termék** táblában, és egy sor jön létre a **msdyn\_sharedproductdetails** táblában. Nem jön létre termékcsaládsor.
-- Az **Alaptermékek** általános termékként használatosak, amelyek meghatározzák az üzleti folyamatokban történő működéséthez kapcsolódó definíciókat és szabályokat. Ezeknek a definícióknak alapján egyedei termékeket lehet létrehozni, amelyek a termék változatát jelentik. Például a póló az alaptermék, és a szín és a méret dimenzióként is megadható. A változatok adhatók ki, amelyek ezen dimenziók különböző kombinációi, például a kis kék póló vagy egy közepes zöld póló. Az integrációban egy sor jön létre változatonként a terméktáblában. Ez a sor tartalmazza a változatspecifikus adatokat, például a különböző dimenziókat. A termék általános információinak tárolása a **msdyn\_sharedproductdetails** táblában történik. (Ez az általános információ az alaptermékben található.) Az alaptermék adatait a rendszer szinkronizálja Dataverse szolgáltatásba a kiadott alaptermék létrehozásával (de a változatok megjelenése előtt).
+- **A termékek altípus termékkel rendelkező termékek** saját maguk által meghatározott termékek. Nem kell dimenziókat definiálni. Egy példa erre egy meghatározott könyv. Ezeknél a termékeknél egy sor jön létre a **Termék** táblában, és egy sor jön létre a **msdyn\_ sharedproductdetails** táblában. Nem jön létre termékcsaládsor.
+- Az **Alaptermékek** általános termékként használatosak, amelyek meghatározzák az üzleti folyamatokban történő működéséthez kapcsolódó definíciókat és szabályokat. Ezeknek a definícióknak alapján egyedei termékeket lehet létrehozni, amelyek a termék változatát jelentik. Például a póló az alaptermék, és a szín és a méret dimenzióként is megadható. A változatok adhatók ki, amelyek ezen dimenziók különböző kombinációi, például a kis kék póló vagy egy közepes zöld póló. Az integrációban egy sor jön létre változatonként a terméktáblában. Ez a sor tartalmazza a változatspecifikus adatokat, például a különböző dimenziókat. A termék általános információinak tárolása a **msdyn\_ sharedproductdetails** táblában történik. (Ez az általános információ az alaptermékben található.) Az alaptermék adatait a rendszer szinkronizálja Dataverse szolgáltatásba a kiadott alaptermék létrehozásával (de a változatok megjelenése előtt).
 - Az **Egyedi termékek** a termékek a termék összes altípusára és az összes termékváltozatra utalnak.
 
 ![Adatmodell termékekhez.](media/dual-write-product.png)
@@ -107,10 +107,10 @@ Termékdimenziók olyan jellemzők, amelyek termékváltozat azonosítására sz
 
 Finance and Operations alkalmazások | Customer Engagement alkalmazások |
 ---|---
-[Színek](mapping-reference.md#170) | msdyn\_productcolors
-[Méretek](mapping-reference.md#174) | msdyn\_productsizes
-[Stílusok](mapping-reference.md#178) | msdyn\_productsytles
-[Konfigurációk](mapping-reference.md#171) | msdyn\_productconfigurations
+[Színek](mapping-reference.md#170) | msdyn\_ productcolors
+[Méretek](mapping-reference.md#174) | msdyn\_ productsizes
+[Stílusok](mapping-reference.md#178) | msdyn\_ productsytles
+[Konfigurációk](mapping-reference.md#171) | msdyn\_ productconfigurations
 
 Ha egy terméknek különböző a termékdimenziói vannak (például a az alaptermék mérete és szín termékdimenziók tartoznak), akkor mindegyik különböző termék (azaz a termék variánsa) ezen termékdimenziók kombinációja. A B0001 termékszámű termék például egy extra kis méretűfekete póló, és a B0002 termékszám egy kis fekete póló. Ebben az esetben a termékdimenziók meglévő kombinációinak meghatározása történik. Például az előző példából származó póló lehet extra kicsi és fekete, kicsi és fekete, közepes és fekete, illetve nagy és fekete, de nem lehet extra nagy és fekete. Más szóval az a termékdimenziók, amelyek az alaptermékhez tartozhatnak meghatározottak, és a változatokat ezen értékek alapján lehet kiadni.
 
@@ -122,11 +122,11 @@ Finance and Operations alkalmazások | Customer Engagement alkalmazások |
 [Alaptermék-konfigurációk](mapping-reference.md#188) | msdyn_sharedproductconfigurations |
 [Alaptermékméretek](mapping-reference.md#190) | msdyn_sharedproductsizes |
 [Alaptermékstílusok](mapping-reference.md#191) | msdyn_sharedproductstyles |
-[Termékszám alapján azonosított vonalkód](mapping-reference.md#164) | msdyn\_productbarcodes |
+[Termékszám alapján azonosított vonalkód](mapping-reference.md#164) | msdyn\_ productbarcodes |
 
 ## <a name="default-order-settings-and-product-specific-default-order-settings"></a>Alapértelmezett rendelési beállítások és termékspecifikus alapértelmezett rendelési beállítások
 
-Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét. Ezek az információk a Dataverse rendszerben az alapértelmezett rendelési beállításokkal és a termékre vonatkozó alapértelmezett rendelésbeállítási entitással érhetők el. További információ az [Alapértelmezett rendelési beállítások cikkben](../../../../supply-chain/production-control/default-order-settings.md)olvasható.
+Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét. Ezek az információk a Dataverse rendszerben az alapértelmezett rendelési beállításokkal és a termékre vonatkozó alapértelmezett rendelésbeállítási entitással érhetők el. További információ az [Alapértelmezett rendelési beállítások cikkben](../../../../supply-chain/production-control/default-order-settings.md) olvasható.
 
 Finance and Operations alkalmazások | Customer Engagement alkalmazások |
 ---|---
@@ -176,7 +176,7 @@ A termékirányelvek a termékek és a készletbeli jellemzőik meghatározásá
 
 Finance and Operations alkalmazások | Customer Engagement alkalmazások |
 ---|---
-[Termékdimenzió-csoportok](mapping-reference.md#173) | msdyn\_productdimensiongroups |
+[Termékdimenzió-csoportok](mapping-reference.md#173) | msdyn\_ productdimensiongroups |
 [Tárolásidimenzió-csoportok](mapping-reference.md#177) | msdyn_productstoragedimensiongroups |
 [Nyomonkövetésidimenzió-csoportok](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups |
 

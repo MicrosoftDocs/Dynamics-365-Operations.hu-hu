@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: fa5a618527ce5a20b59902e7397000bf0796cbbb
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
-ms.translationtype: HT
+ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647189"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777961"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -39,7 +39,7 @@ A termelési üzem végrehajtási felületét, valamint a jelen témakörben le�
 
 ### <a name="the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felülete
 
-Ez a témakörben leírt elsődleges funkció. Hozzáadja a termelési üzem végrehajtási felületét a rendszeréhez. Az engedélyezéséhez kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Ez a témakörben leírt elsődleges funkció. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint alapértelmezés szerint be van kapcsolva. Hozzáadja a termelési üzem végrehajtási felületét a rendszeréhez. Az engedélyezéséhez kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - Termelési üzem végrehajtása
 
@@ -47,19 +47,19 @@ Ez a témakörben leírt elsődleges funkció. Hozzáadja a termelési üzem vé
 
 Ezek a funkciók elérhetővé teszik az azonosítótábla funkciót a termelési üzem végrehajtási felületéhez. Ha használni szeretné őket, kapcsolja be a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő szolgáltatásokat (ebben a sorrendben):
 
-1. A Feladatkártya eszközhöz hozzáadott, készként történő jelentéshez használt azonosítótábla
+1. A feladatkártya-eszközhöz hozzáadott készként jelentéshez szükséges tábla (az ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció alapértelmezés szerint be van kapcsolva.)
 1. Az azonosítótábla-szám automatikus létrehozásának engedélyezése, amikor a feladatkártya eszközében befejezettként jelentik
 
 ### <a name="print-labels"></a>Címkék nyomtatása
 
 Ezek a funkciók elérhetővé teszik a címkenyomtatás funkciót a termelési üzem végrehajtási felületéhez. Ha használni szeretné őket, kapcsolja be a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő szolgáltatásokat (ebben a sorrendben):
 
-1. A Feladatkártya eszközhöz hozzáadott, készként történő jelentéshez használt azonosítótábla
+1. A feladatkártya-eszközhöz hozzáadott készként jelentéshez szükséges tábla (az ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció alapértelmezés szerint be van kapcsolva.)
 1. Címke nyomtatása a Feladatkártya eszközéből
 
 ### <a name="allow-locking-the-touch-screen"></a>Az érintőképernyő zárolásának engedélyezése
 
-Ez a funkció egy gombot vesz fel a termelési üzem végrehajtási felületére, amely lehetővé teszi, hogy a dolgozók megtisztítsák a képernyőt. Ha használni szeretné, kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. Egy gombot ad hozzá a termelési emelet végrehajtási felületére, amely lehetővé teszi a dolgozók számára az érintőképernyő sanitizálását. Ha használni szeretné, ellenőrizze, hogy be van-e kapcsolva a következő funkció a [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) szolgáltatáskezelésben:
 
 - A feladatkártya-eszköz és a feladatkártya-terminál zárolására alkalmas funkció az eszközök fertőtlenítése érdekében
 

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 503ba8ae95119f3ce9533f81cdd16c34cf3a9223
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574545"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752832"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Eszköz beállítása a termelési üzem végrehajtási felületének futtatására
 
@@ -28,9 +28,9 @@ A termelési üzem végrehajtási felülete a termelési üzemben található ö
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Egy adott eszköz konfigurációjának és szűrőinek beállítása
 
-Egy eszköz konfigurációs és feladattípusának beállításához jelentkezzen be a **Termelési üzem végrehajtása** lapjára olyan fiókkal, amely olyan biztonsági szerepkörrel rendelkezik, amely tartalmazza a *Felügyelői idő fenntartása* kötelességet. (A beépített biztonsági szerepkörök közül az *Üzemirányítás vezetője* rendelkezik ezzel a kötelességgel.) Hajtsa végre az alábbi lépéseket.
+Egy eszköz konfigurációjának és feladatszűrőinek beállításéhez jelentkezzen be a Termelés - üzem végrehajtási lapjára egy olyan fiók használatával, amely rendelkezik egy olyan biztonsági szerepkörsel, amely tartalmazza az Időfelügyeleti feladat **·** karbantartása *·* feladatot. (A beépített biztonsági szerepkörök közül az *Üzemirányítás vezetője* rendelkezik ezzel a kötelességgel.) Hajtsa végre az alábbi lépéseket.
 
-1. Nyissa meg a beállítani kívánt eszközt, és jelentkezzen be a Microsoft Dynamics 365 Supply Chain Management szolgáltatásba üzemfelügyelőként. (Olyan fiókot használjon, amely tartalmazza a *Felügyelői idő fenntartása* kötelességet.)
+1. Nyissa meg a beállítani kívánt eszközt, és jelentkezzen be a Microsoft Dynamics 365 Supply Chain Management szolgáltatásba üzemfelügyelőként. (Olyan számla használata, amely tartalmazza a következőt: *Időfelügyeleti* feladat karbantartása.)
 1. Győződjön meg róla, hogy a beállított eszköz számára elérhető legyen a konfiguráció. Ha még nem létezik konfiguráció, akkor a rendszer egy alapértelmezett konfigurációt ad meg. A konfiguráció beállításával kapcsolatos további tudnivalókért lásd [A termelési üzem végrehajtási felületének konfigurálása](production-floor-execution-configure.md) című témakört.
 1. Lépjen a **Gyártásvezérlés \> Gyártásvégrehajtás \> Termelési üzem végrehajtásának konfigurálása** részre.
 

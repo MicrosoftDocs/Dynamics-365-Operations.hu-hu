@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 985825d3a205f566a94ac7532e45895e7060edf5
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
-ms.translationtype: HT
+ms.openlocfilehash: 241277ada768cc6497035cc377d0e158646a42d6
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416981"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781114"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Problémák elhárítása a kezdeti szinkronizációkor
 
@@ -39,7 +39,7 @@ Miután engedélyezte a leképezési sablonokat, a leképezések állapotának *
 
 A következő hibaüzenetek jelenhetnek meg a leképezlés és a kezdeti szinkronizálás futtatása során:
 
-*(\[Bad Request\], A távoli szerver hibát küldött vissza: (400) Bad Request.), az AX export hibát észlelt.*
+*(\[ Bad Request\], A távoli szerver hibát küldött vissza: (400) Bad Request.), az AX export hibát észlelt.*
 
 Íme, egy példa a teljes hibaüzenetre.
 
@@ -71,7 +71,7 @@ Ha ez a hiba folyamatosan történik, és a kezdeti szinkronizálás nem hajthat
 
 A következő hibaüzenetek jelenhetnek meg a kezdeti szinkronizálás során:
 
-*(\[Tiltott\], A távoli kiszolgáló hibát adott vissza: (403) Tiltott.), AX exportálás hibát észlelt*
+*(\[ Tiltott\], A távoli kiszolgáló hibát adott vissza: (403) Tiltott.), AX exportálás hibát észlelt*
 
 Egy hiba javításához kövesse az alábbi lépéseket.
 
@@ -87,9 +87,9 @@ Hibaüzenet jelenhet meg, ha bármely leképezésben önmagára mutató hivatkoz
 - [Hiba elhárítása a szállítók V2–to–msdyn_vendors táblaleképezésben](#error-vendor-map)
 - [Hiba elhárítása a vevők v3 – ügyfelek táblaleképezésben](#error-customer-map)
 
-## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-table-mapping"></a><a id="error-vendor-map"></a>Hibák elhárítása a szállítók V2–to–msdyn_vendors táblaleképezésben
+## <a name="resolve-errors-in-the-vendors-v2tomsdyn_vendors-table-mapping"></a><a id="error-vendor-map"></a> Hibák elhárítása a szállítók V2–to–msdyn_vendors táblaleképezésben
 
-Előfordulhat, hogy kezdeti szinkronizálási hibákkal találkozik a **Szállítók V2** – **msdyn\_vendors** leképezés során, ha az táblák rendelkeznek meglévő sorokkal amelyek értékeket tartalmaznak a **PrimaryContactPersonId** és **InvoiceVendorAccountNumber** oszlopokban. Ezek a hibák azért fordulnak elő, mert az **InvoiceVendorAccountNumber** egy saját magára hivatkozó oszlop, és a **PrimaryContactPersonId** egy körkörös hivatkozás a szállítói hozzárendelésben.
+Előfordulhat, hogy kezdeti szinkronizálási hibákkal találkozik a **Szállítók V2** – **msdyn\_ vendors** leképezés során, ha az táblák rendelkeznek meglévő sorokkal amelyek értékeket tartalmaznak a **PrimaryContactPersonId** és **InvoiceVendorAccountNumber** oszlopokban. Ezek a hibák azért fordulnak elő, mert az **InvoiceVendorAccountNumber** egy saját magára hivatkozó oszlop, és a **PrimaryContactPersonId** egy körkörös hivatkozás a szállítói hozzárendelésben.
 
 A kapott hibaüzenetek a következő formátumban jelennek meg.
 
@@ -97,14 +97,14 @@ A kapott hibaüzenetek a következő formátumban jelennek meg.
 
 Íme néhány példa:
 
-- *Nem sikerült a mező GUID-értékét feloldani: msdyn\_vendorprimarycontactperson.msdyn\_contactpersonid. A keresés nem található: 000056. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
-- *Nem sikerült a mező GUID-értékét feloldani: msdyn\_invoicevendoraccountnumber.msdyn\_vendoraccountnumber. A keresés nem található: V24-1. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
+- *Nem sikerült a mező GUID-értékét feloldani: msdyn\_ vendorprimarycontactperson.msdyn\_ contactpersonid. A keresés nem található: 000056. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
+- *Nem sikerült a mező GUID-értékét feloldani: msdyn\_ invoicevendoraccountnumber.msdyn\_ vendoraccountnumber. A keresés nem található: V24-1. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/msdn_vendors?$select=msdyn_vendoraccountnumber,msdyn_vendorid&$filter=msdyn_vendoraccountnumber eq 'V24-1'`*
 
 Ha a szállítói táblának a **PrimaryContactPersonId** és az **InvoiceVendorAccountNumber** oszlopaiban értékei vannak, akkor a kezdeti szinkronizálás befejezéséhez kövesse az alábbi szakasz lépéseit.
 
 1. A Finance and Operations alkalmazásban törölje a **PrimaryContactPersonId** és az **InvoiceVendorAccountNumber** oszlopokat a leképezésből, és mentse a leképezést.
 
-    1. Nyissa meg a **Vendors V2 (msdyn\_vendors)** kettős írás leképezési lapját , és válassza ki az **Táblaleképezések** fület: A bal oldali szűrőben válassza a **Finance and Operations apps.Vendors V2** lehetőséget. A jobb oldali szűrőben válassz a **Sales.Vendor** lehetőséget.
+    1. Nyissa meg a **Vendors V2 (msdyn\_ vendors)** kettős írás leképezési lapját , és válassza ki az **Táblaleképezések** fület: A bal oldali szűrőben válassza a **Finance and Operations apps.Vendors V2** lehetőséget. A jobb oldali szűrőben válassz a **Sales.Vendor** lehetőséget.
     2. Keressen rá a **primarycontactperson** elemre a **PrimaryContactPersonId** forrásoszlop megkereséséhez.
     3. Válassza a **Műveletek**, majd a **Törlés** lehetőséget.
 
@@ -128,13 +128,13 @@ Ha a szállítói táblának a **PrimaryContactPersonId** és az **InvoiceVendor
 
         ![Kattintás a Változáskövetés tiltása lehetőségre.](media/selfref_tracking.png)
 
-3. Futtassa a **Szállítók v2 (msdyn\_vendors)** hozzárendelésének kezdeti szinkronizálását. A kezdeti szinkronizálásnak hiba nélkül kell lefutnia.
+3. Futtassa a **Szállítók v2 (msdyn\_ vendors)** hozzárendelésének kezdeti szinkronizálását. A kezdeti szinkronizálásnak hiba nélkül kell lefutnia.
 4. Futtassa a **CDS kapcsolattartók V2 (kapcsolattartók)** hozzárendelésének kezdeti szinkronizálását. Akkor kell szinkronizálnia ezt a leképezést, ha szinkronizálni szeretné az elsődleges kapcsolattartó oszlopot a szállítók táblában, mert a kapcsolattartók sorainak kezdeti szinkronizálását is el kell végezni.
-5. Adja hozzá ismét a **PrimaryContactPersonId** és **InvoiceVendorAccountNumber** oszlopokat a **Szállítók v2 (msdyn\_vendors)** leképezéshez, és mentse a leképezést.
-6. Futtassa ismét a **Szállítók v2 (msdyn\_vendors)** hozzárendelésének kezdeti szinkronizálását. Minden sor szinkronizálva lesz, mert a változások követése le van tiltva.
+5. Adja hozzá ismét a **PrimaryContactPersonId** és **InvoiceVendorAccountNumber** oszlopokat a **Szállítók v2 (msdyn\_ vendors)** leképezéshez, és mentse a leképezést.
+6. Futtassa ismét a **Szállítók v2 (msdyn\_ vendors)** hozzárendelésének kezdeti szinkronizálását. Minden sor szinkronizálva lesz, mert a változások követése le van tiltva.
 7. Kapcsolja be a **Szállító V2** tábla módosításainak nyomon követését ismét.
 
-## <a name="resolve-errors-in-the-customers-v3toaccounts-table-mapping"></a><a id="error-customer-map"></a>Hibák elhárítása a Vevők v3 – Ügyfelek a táblaleképezésben
+## <a name="resolve-errors-in-the-customers-v3toaccounts-table-mapping"></a><a id="error-customer-map"></a> Hibák elhárítása a Vevők v3 – Ügyfelek a táblaleképezésben
 
 Előfordulhat, hogy kezdeti szinkronizálási hibákkal találkozik a **Szállítók V3** – **Fiókok** leképezés során, ha az táblák rendelkeznek meglévő sorokkal amelyek értékeket tartalmaznak a **ContactPersonID** és **InvoiceAccount** oszlopokban. Ezek a hibák azért fordulnak elő, mert az **InvoiceAccount** egy saját magára hivatkozó oszlop, és a **ContactPersonID** egy körkörös hivatkozás a szállítói hozzárendelésben.
 
@@ -144,8 +144,8 @@ A kapott hibaüzenetek a következő formátumban jelennek meg.
 
 Íme néhány példa:
 
-- *Nem sikerült a mező GUID-értékét feloldani: primarycontactid.msdyn\_contactpersonid. A keresés nem található: 000056. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
-- *Nem sikerült a mező GUID-értékét feloldani: msdyn\_billingaccount.accountnumber. A keresés nem található: 1206-1. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
+- *Nem sikerült a mező GUID-értékét feloldani: primarycontactid.msdyn\_ contactpersonid. A keresés nem található: 000056. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/contacts?$select=msdyn_contactpersonid.contactid&$filter=msdyn_contactpersonid eq '000056'`*
+- *Nem sikerült a mező GUID-értékét feloldani: msdyn\_ billingaccount.accountnumber. A keresés nem található: 1206-1. Próbálja meg ezt az URL-címet, és ellenőrizze, hogy létezik-e a hivatkozási adat: `https://focdsdevtest2.crm.dynamics.com/api/data/v9.0/accounts?$select=accountnumber.account&$filter=accountnumber eq '1206-1'`*
 
 Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceAccount** oszlopokban értékei vannak, akkor a kezdeti szinkronizálás befejezéséhez kövesse az alábbi szakasz lépéseit. Ezt a megközelítést használhatja bármely gyári táblákhoz például a **Partnerek** és **Kapcsolattartók** entitásokhoz.
 
@@ -179,7 +179,7 @@ Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceA
 4. Futtassa a **CDS kapcsolattartók V2 (kapcsolattartók)** hozzárendelésének kezdeti szinkronizálását.
 
     > [!NOTE]
-    > Két olyan megfeleltetés van, amelyeknek ugyanaz a neve. Válassza ki azt a leképezést, amelynek a következő a leírása a **Részletek** lapon: **Kettős írású sablon a FO.CDS Vendor Contacts V2 – CDS.Contacts szinkronizálásához. Új csomag szükséges \[Dynamics365SupplyChainExtended\].**
+    > Két olyan megfeleltetés van, amelyeknek ugyanaz a neve. Válassza ki azt a leképezést, amelynek a következő a leírása a **Részletek** lapon: **Kettős írású sablon a FO.CDS Vendor Contacts V2 – CDS.Contacts szinkronizálásához. Új csomag szükséges \[ Dynamics365SupplyChainExtended\].**
 
 5. Adja hozzá ismét az **InvoiceAccount** és **ContactPersonId** oszlopot az **Ügyfelek V3 (partnerek)** leképezéshez, majd mentse a leképezést. Most az **InvoiceAccount** és a **ContactPersonId** oszlop is újra része az élő szinkronizálási üzemmódnak. A következő lépésben végre fogja hajtani ezeknek az oszlopoknak a kezdeti szinkronizálását.
 6. Futtassa le az **Ügyfelek V3 (Partnerek)** hozzárendelésének kezdeti szinkronizálását ismét. Mivel a változások követése ki van kapcsolva, szinkronizálva lesznek az **InvoiceAccount** és a **ContactPersonId** adatai a Finance and Operations alkalmazásból a Dataverse-szolgáltatásba.
@@ -191,11 +191,11 @@ Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceA
 
         ![Adatintegrációs projekt a CustomerAccount és a ContactPersonId frissítéséhez.](media/cust_selfref6.png)
 
-    2. Adja meg a vállalat feltételeit a szűrőben a Dataverse oldalán, hogy csak a szűrőfeltételeknek megfelelő sorok legyenek frissítve a Finance and Operations alkalmazásban. Szűrő hozzáadásához kattintson a szűrő ikonra. Ezután a **Lekérdezés szerkesztése** párbeszédpanelen hozzáadhat egy olyan szűrőlekérdezést, mint az **\_msdyn\_company\_value eq '\<guid\>'**.
+    2. Adja meg a vállalat feltételeit a szűrőben a Dataverse oldalán, hogy csak a szűrőfeltételeknek megfelelő sorok legyenek frissítve a Finance and Operations alkalmazásban. Szűrő hozzáadásához kattintson a szűrő ikonra. Ezután a **Lekérdezés szerkesztése** párbeszédpanelen hozzáadhat egy olyan szűrőlekérdezést, mint az **\_ msdyn\_ company\_ value eq '\<guid\>'**.
 
         > [MEGJEGYZÉS] Ha a szűrő gomb nem látszik, akkor hozzon létre egy támogató jegyet, és kérje meg az adatintegrációs csoportot, hogy engedélyezze a szűrő képességét a bérlőjén.
 
-        Ha nem ír be szűrő lekérdezést az **\_msdyn\_company\_value** elemhez, az összes sor szinkronizálva lesz.
+        Ha nem ír be szűrő lekérdezést az **\_ msdyn\_ company\_ value** elemhez, az összes sor szinkronizálva lesz.
 
         ![Szűrő lekérdezés hozzáadása.](media/cust_selfref7.png)
 

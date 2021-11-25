@@ -1,8 +1,8 @@
 ---
 title: Kérdőívek létrehozása
-description: Ez a cikk a kérdőív készítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Ez a témakor a kérdőívkészítés folyamatát írja le.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,21 @@ ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c2a8c156aa75b02b69da3ee70a1ee60ea9d73a8aa67c70babdaaad88d6eb81f4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 08c8015e8729a4ca33f3fb3c48f654e489f32f3f
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755564"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729051"
 ---
 # <a name="create-questionnaires"></a>Kérdőívek létrehozása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a cikk a kérdőív készítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek. 
+Ez a témakor a kérdőívkészítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek. 
 
 Egy alaposan megtervezett kérdőív segítségével javítható a begyűjtött adatok minősége. Alapos tervezéssel könnyebben kiválaszthatja a megfelelő beállításokat a megfelelő időben kérdőívhez. A következő szempontok segíthetnek hatékony kérdőívet tervezni:
 
@@ -63,7 +63,7 @@ Bizonyos előfeltételeket meg kell határoznia mielőtt kérdőíveket, kérdé
 
 ### <a name="questionnaire-types"></a>Kérdőívtípusok
 
-A kérdőívtípusok kötelezőek, és kötelező társítani őket egy kérdőív létrehozásakor. A kérdőív típusok segítenek, a kérdőívek könnyebb kezelésében és rendezésében. A kérdőívek rendezése és megkülönböztetése érdekében, használja a kérdőív típusokat. Például, amennyiben több kérdőív közül is választhat, kiszűrheti őket típusok alapján, hogy megkönnyítse a megfelelő kérdőív megtalálását. Az alábbiakban néhány példa látható a különböző kérdőív típusokra:
+**A kérdőívtípusok kötelezők, és a kérdőívek létrehozásakor** kell hozzárendelni. **A** kérdőívtípusok segítségével könnyebben lehet kezelni és osztályozni a kérdőíveket. A kérdőívek rendezése és megkülönböztetése érdekében, használja a kérdőív típusokat. Például, amennyiben több kérdőív közül is választhat, kiszűrheti őket típusok alapján, hogy megkönnyítse a megfelelő kérdőív megtalálását. Az alábbiakban néhány példa látható a különböző kérdőív típusokra:
 
 -   Emberi erőforrások fejlesztése
 -   Vevői felmérések
@@ -71,9 +71,9 @@ A kérdőívtípusok kötelezőek, és kötelező társítani őket egy kérdő�
 
 ### <a name="question-types"></a>Kérdéstípusok
 
-A kérdéstípusok kötelezőek, és kötelező kijelölni őket egy kérdőív létrehozásakor. 
+**A** kérdéstípusok kötelezők, és a kérdés létrehozásakor kell ilyen típusokat megadni. 
 
-Használja a kérdés típusokat, hogy kategorizálja a kérdéseket a jelentéshez. A kérdéstípusok megkönnyítik továbbá a kérdések megtalálását, mivel szűrőként is használhatja a típusokat a **kérdések** oldalon. Az alábbiakban néhány példa látható a különböző kérdés típusokra:
+A **Kérdéstípusok segítségével** kérdéseket kategorizálni lehet a jelentésekhez. **A kérdéstípusok megkönnyítik a kérdések keresését is, mivel a típusok szűrőkként használhatók a** **Kérdések** lapon. Az alábbiakban néhány példa látható a különböző kérdés típusokra:
 
 -   Emberi erőforrások
 -   Üzletkezelés
@@ -92,7 +92,7 @@ Az adatok elkészítése előtt ajánlott minden paramétert meghatározni. A k�
 ## <a name="questionnaire-components"></a>A kérdőív részei
 A kérdőívek három fő elemből állnak: válaszcsoportok, melyek a feleletválasztós kérdések válaszait tartalmazzák, kérdések és a kérdőív maga. A kérdéseket a kérdőíven válaszcsoportokba csoportosíthatja. A válaszcsoportok segítségével kérdéseket kategorizálhat és további elemzést végezhet a kérdőíven. 
 
-[![QuestionnaireComponents.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![ QuestionnaireComponents.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Válaszcsoportok és válaszok
 
@@ -105,7 +105,7 @@ Ahhoz, hogy eldöntendő kérdésekhez hozzon létre lehetséges válaszokat, ha
 
 A válaszcsoportok és a válaszok adják meg a fő információkat, melyekből a kérdések készülnek. Válaszcsoport létrehozása után, a válaszcsoportokat és a kérdéseket a **Válaszcsoport** mezőn, a **Kérdések** oldalon társíthatja. 
 
-Ugyanaz a válaszcsoport ugyanannak a kérdőívnek több kérdésére, illetve egynél több kérdőívre is alkalmazható. 
+Egy válaszcsoport ugyanannak a kérdőívnek több kérdésére is használható, és egynél több **·** kérdőívhez is használható. 
 
 > [!NOTE]
 > Amennyiben olyan válaszcsoportban lévő válasz szövegét módosítja, amelyet már használtak befejezett kérdőíveken, az adatok nehezen kiértékelhetővé válhatnak és a kérdőív eredményei már nem biztos, hogy érvényesek lesznek. Amennyiben módosítani kell egy válaszcsoportot, fontolja meg az új válaszcsoport létrehozását, a meglévő megváltoztatása helyett. A kérdésekhez vagy válaszokhoz csatolt, illetve a már megválaszolt válaszcsoportok nem törölhetőek.
@@ -171,7 +171,7 @@ A következő típusú kérdések nem törölhetőek a kérdőívből:
 
 ### <a name="result-groups"></a>Eredménycsoportok
 
-Az eredménycsoportok használata nem kötelező, amennyiben a kérdéseket csatolja a kérdőívhez. 
+**Az** eredménycsoportokat nem kötelező kérdések kérdőívhez csatolása esetén megadni. 
 
 Az eredménycsoport célja a kérdőív pontjainak a kiszámítása és az eredmények kategorizálása. Amennyiben eredménycsoportokat használ, a következő feladatokat hajthatja végre:
 

@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 10/12/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 6450ef7b0a59df3a8da2c8bed3aa9c0b14a9cc97
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
-ms.translationtype: HT
+ms.openlocfilehash: 434d1a432cc4b8cfd31198f8f668aef6e04a51fa
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7417057"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782603"
 ---
 # <a name="guidance-for-dual-write-setup"></a>Útmutató a kettős írás beállításához
 
@@ -50,7 +50,7 @@ A következő beállítású forgatókönyvek támogatottak:
 + [Egy meglévő Finance and Operations-alkalmazáspéldány és egy új ügyfélkapcsolati alkalmazáspéldány](#existing-new)
 + [Egy meglévő Finance and Operations-alkalmazáspéldány és egy meglévő ügyfélkapcsolati alkalmazáspéldány](#existing-existing)
 
-## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a>Egy új Finance and Operations-alkalmazáspéldány és egy új ügyfélkapscsolati alkalmazáspéldány
+## <a name="a-new-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="new-new"></a> Egy új Finance and Operations-alkalmazáspéldány és egy új ügyfélkapscsolati alkalmazáspéldány
 
 Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben nincsenek adatok, és a Dynamics 365 ügyfélkapcsolati alkalmazásainak egy új példányával, kövesse a lépéseket itt: [Kettős írás beállítása a Lifecycle Services szolgáltatásból](lcs-setup.md). A kapcsolat beállításának végeztével a következő műveletek történnek automatikusan:
 
@@ -61,7 +61,7 @@ Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új pé
 
 A két környezet készen áll az élő adatszinkronizálására.
 
-## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a>Egy új Finance and Operations-alkalmazáspéldány és egy meglévő ügyfélkapcsolati alkalmazáspéldány
+## <a name="a-new-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="new-existing"></a> Egy új Finance and Operations-alkalmazáspéldány és egy meglévő ügyfélkapcsolati alkalmazáspéldány
 
 Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben nincsenek adatok, és a Dynamics 365 ügyfélkapcsolati alkalmazásainak egy meglévő példányával, kövesse a lépéseket itt: [Kettős írás beállítása a Lifecycle Services szolgáltatásból](lcs-setup.md). A kapcsolat beállításának végeztével a következő műveletek történnek automatikusan:
 
@@ -80,7 +80,7 @@ Ha a meglévő Dataverse-adatokat szinkronizálni szeretné Finance and Operatio
 
 A példaekre mutató hivatkozásokat és az alternatív megközelítést a témakör későbbi [Példa](#example) részében találhatja meg.
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a>Egy új Finance and Operations-alkalmazáspéldány, amely adatokkal rendelkezik, és egy új ügyfélkapcsolati alkalmazáspéldány
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-a-new-customer-engagement-app-instance"></a><a id="new-data-new"></a> Egy új Finance and Operations-alkalmazáspéldány, amely adatokkal rendelkezik, és egy új ügyfélkapcsolati alkalmazáspéldány
 
 Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben adatok vannak, és a Dynamics 365 ügyfélkapcsolati alkalmazásainak egy új példányával, kövesse a lépéseket itt: [Az új Finance and Operations alkalmazáspéldány és egy új ügyfélkapcsolati alkalmazáspéldány](#new-new) szakaszt a témakör korábbi részében. Ha befejezte a kapcsolat beállítását, hajtsa végre az alábbi lépéseket, ha szinkronizálni szeretné az adatait az ügyfélkapcsolati alkalmazással.
 
@@ -89,7 +89,7 @@ Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új pé
 
 A példaekre mutató hivatkozásokat és az alternatív megközelítést a [Példa](#example) részben találhatja meg.
 
-## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a>Egy új Finance and Operations-alkalmazáspéldány, amely adatokkal rendelkezik, és egy meglévő ügyfélkapcsolati alkalmazáspéldány
+## <a name="a-new-finance-and-operations-app-instance-that-has-data-and-an-existing-customer-engagement-app-instance"></a><a id="new-data-existing"></a> Egy új Finance and Operations-alkalmazáspéldány, amely adatokkal rendelkezik, és egy meglévő ügyfélkapcsolati alkalmazáspéldány
 
 Ha a kettős írás kapcsolatot olyan Finance and Operations-alkalmazás új példányával szeretné beállítani, amelyben adatok vannak, és a Dynamics 365 ügyfélkapcsolati alkalmazásainak egy meglévő példányával, kövesse a lépéseket itt: [Az új Finance and Operations alkalmazáspéldány és egy meglévő ügyfélkapcsolati alkalmazáspéldány](#new-existing) szakaszt a témakör korábbi részében. Ha befejezte a kapcsolat beállítását, hajtsa végre az alábbi lépéseket, ha szinkronizálni szeretné az adatait az ügyfélkapcsolati alkalmazással.
 
@@ -105,7 +105,7 @@ Ha a meglévő Dataverse-adatokat szinkronizálni szeretné Finance and Operatio
 
 A példaekre mutató hivatkozásokat és az alternatív megközelítést a [Példa](#example) részben találhatja meg.
 
-## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a>Egy meglévő Finance and Operations-alkalmazáspéldány és egy új ügyfélkapcsolati alkalmazáspéldány
+## <a name="an-existing-finance-and-operations-app-instance-and-a-new-customer-engagement-app-instance"></a><a id="existing-new"></a> Egy meglévő Finance and Operations-alkalmazáspéldány és egy új ügyfélkapcsolati alkalmazáspéldány
 
 A Finance and Operations alkalmazás egy létező példánya és egy ügyfélkapcsolati alkalmazás új példánya között egy kettős írás kapcsolat létrehozása a Finance and Operation környezetben történik.
 
@@ -114,7 +114,7 @@ A Finance and Operations alkalmazás egy létező példánya és egy ügyfélkap
 
 A példaekre mutató hivatkozásokat és az alternatív megközelítést a [Példa](#example) részben találhatja meg.
 
-## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a>Egy meglévő Finance and Operations-alkalmazáspéldány és egy meglévő ügyfélkapcsolati alkalmazáspéldány
+## <a name="an-existing-finance-and-operations-app-instance-and-an-existing-customer-engagement-app-instance"></a><a id="existing-existing"></a> Egy meglévő Finance and Operations-alkalmazáspéldány és egy meglévő ügyfélkapcsolati alkalmazáspéldány
 
 A Finance and Operations alkalmazás egy létező példánya és egy ügyfélkapcsolati alkalmazás meglévő példánya között egy kettős írás kapcsolat létrehozása a Finance and Operation környezetben történik.
 

@@ -1,7 +1,7 @@
 ---
 title: Helyi számlatükör tervezése
 description: Ez a témakör segítséget nyújt a számlatükre tervezéséhez, ha követelményei vannak a szervezete törvényi/helyi követelményei kapcsán.
-author: veneva
+author: VeselinaE
 ms.date: 10/07/2021
 ms.topic: article
 ms.prod: ''
@@ -19,12 +19,12 @@ ms.search.industry: ''
 ms.author: veneva
 ms.search.validFrom: 10/07/2021
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a99e4ef3355188f574930c1d885e53fcb3134ad1
-ms.sourcegitcommit: c4500b626667185643b3a2e7fc3a004d42198d07
-ms.translationtype: HT
+ms.openlocfilehash: e224a2e24b4ba293c953c6c883307038128e2f04
+ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7725175"
+ms.lasthandoff: 11/11/2021
+ms.locfileid: "7798296"
 ---
 # <a name="plan-your-local-chart-of-accounts"></a>Helyi számlatükör tervezése
 
@@ -54,7 +54,7 @@ Ha a szervezet megköveteli, hogy egy jogi személy helyi számlatükröt haszn�
 
 Az alkalmazott megoldást a szervezeti struktúra és a jelentési struktúra határozza meg.
 
-[![Diagram, amely mutatja, hogyan határozza meg a szervezeti struktúra, hogy globális vagy helyi számlatükör legyen-e használva.](./media/local-chart-of-accounts-diagram.png)](./media/local-chart-of-accounts-diagram.png)
+[![ Diagram, amely mutatja, hogyan határozza meg a szervezeti struktúra, hogy globális vagy helyi számlatükör legyen-e használva.](./media/local-chart-of-accounts-diagram.png)](./media/local-chart-of-accounts-diagram.png)
 
 Ha a globális számlatükör hozzá van rendelve a jogi személyhez, a következő lehetőségek állnak rendelkezésre a helyi jelentési követelményeknek való megfeleléshez:
 

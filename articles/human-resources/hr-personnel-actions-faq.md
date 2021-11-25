@@ -1,8 +1,8 @@
 ---
-title: Személyzeti műveletekkel kapcsolatos GYIK
-description: Ez a cikk azokra a kérdésekre ad válaszokat, amelyek akkor merülhetnek fel, ha szervezete személyzeti műveleteket használ. A személyzeti műveletek olyan kiegészítő lépések, amelyeket bizonyos személyzeti feladatok végrehajtásakor kell elvégeznie.
-author: andreabichsel
-ms.date: 06/23/2021
+title: Személyzeti műveletek GYIK
+description: Ez a témakör azokra a kérdésekre ad válaszokat, amelyek akkor merülhetnek fel, ha szervezete személyzeti műveleteket használ.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -11,23 +11,33 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: c005c08c7ceafffc63650b64c3602aa65ae94e2788a5c70b5fd372a4f54a0301
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: cfaa67e051529dac8f29a5b289d7025aee681178
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748835"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731681"
 ---
 # <a name="personnel-actions-faq"></a>Személyzeti műveletekkel kapcsolatos GYIK
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a cikk azokra a kérdésekre ad válaszokat, amelyek akkor merülhetnek fel, ha szervezete személyzeti műveleteket használ. A személyzeti műveletek olyan kiegészítő lépések, amelyeket bizonyos személyzeti feladatok végrehajtásakor kell elvégeznie. Számos feladat megköveteli személyzeti műveletek elvégzését, pédául az új beosztások létrehozása, a meglévő beosztások értékeinek módosítása, új dolgozók felvétele, dolgozók átvétele, dolgozók kompenzációjának módosítása, beosztás-hozzárendelések módosítása, illetve a felmondások.
+Ez a témakör azokra a kérdésekre ad válaszokat, amelyek akkor merülhetnek fel, ha szervezete személyzeti műveleteket használ. A személyzeti műveletek olyan kiegészítő lépések, amelyeket bizonyos személyzeti feladatok végrehajtásakor kell elvégeznie. 
 
-**Megjegyzés:** a személyzeti műveletek csak akkor érhetők el, ha a **Dolgozói műveletek engedélyezése** és a **Beosztásműveletek engedélyezése** mezők **Igen** értékre vannak állítva a **Személyzeti műveletek** lapon az **Emberi erőforrások megosztott paraméterei** oldalon. 
+Példák személyzeti műveleteket igénylő feladatokra:
+ - Új beosztások létrehozásakor. 
+ - Meglévő beosztásértékek módosítása. 
+ - Új dolgozók felvétele. 
+ - Dolgozók átvitele. 
+ - Dolgozói kompenzáció módosítása 
+ - Beosztás-hozzárendelések módosítása 
+ - Felmondás a dolgozóknak.
+
+> [!NOTE]
+> Személyzeti műveletek csak akkor érhetők el, ha a Dolgozói műveletek engedélyezése és a Beosztásműveletek engedélyezése mező Beállítása **·** Igen **·** **·** beállítású, **·** **·** az Emberi erőforrások megosztott paraméterei lap Személyzeti műveletek lapján. 
 
 ## <a name="how-can-i-tell-if-my-organization-requires-personnel-actions"></a>Honnan tudhatom, hogy a szervezetemnél szükség van személyzeti műveletekre?
 Ha a szervezet előír bizonyos személyzet műveleteket, akkor a rendszer felszólítja ezek elvégzésére olyankor, amikor új beosztásokat hoz létre, meglevő beosztásokat módosít, új dolgozókat vesz fel, dolgozókat visz át, dolgozók kompenzációját módosítja, beosztás-hozzárendeléseket módosít, dolgozóknak felmond, vagy amikor távollétet rögzít. 
@@ -35,26 +45,26 @@ Ha a szervezet előír bizonyos személyzet műveleteket, akkor a rendszer felsz
 ## <a name="what-is-the-difference-between-a-position-action-and-a-worker-action"></a>Mi a különbség egy beosztásművelet és egy dolgozói művelet között?
 A személyzeti műveleteket két típusra osztjuk:
 
-- Beosztásművelet – A beosztásműveletet új vagy létező beosztásokon lehet elvégezni. Beosztásműveletre lehet például szükség, ha módosítja egy létező beosztás értékét, vagy új szezonális beosztást hoz létre. A beosztásműveletek használatával kapcsolatos részletes tudnivalókat lásd: Legfontosabb feladatok: Meglévő dolgozói beosztások vagy Legfontosabb feladatok: Új dolgozói beosztások.
+- **Beosztás** művelete – beosztási művelet történik a meglévő beosztásokkal vagy az új beosztásokkal. Beosztásműveletre lehet például szükség, ha módosítja egy létező beosztás értékét, vagy új szezonális beosztást hoz létre. 
 
-- Dolgozói művelet – A dolgozói műveletet létező vagy új alkalmazottakon lehet elvégezni. Dolgozói műveletre van szükség például akkor, ha egy új alkalmazottat vesz fel, vagy egy meglévő alkalmazottat előléptet. A dolgozói műveletek használatával kapcsolatos részletes tudnivalókat lásd: Személyzeti műveletek hozzárendelése dolgozókhoz.
+- **Dolgozói művelet – a dolgozói művelet a** meglévő alkalmazottakon vagy az új alkalmazottakon történik. Dolgozói műveletre van szükség például akkor, ha egy új alkalmazottat vesz fel, vagy egy meglévő alkalmazottat előléptet. 
 
 ## <a name="what-do-the-statuses-of-the-personnel-actions-mean"></a>Mit jelentenek a személyzeti műveletek állapotai?
 A személyzeti műveletek a következő állapotokat vehetik fel:
 
 - **Tervezet** – Ha munkafolyamatokat használ, akkor művelet még nem lett elküldve. Ha nem használ munkafolyamatokat, akkor a művelet nem lett befejezve.
 - **Ellenőrzés alatt** – A személyzeti műveletet beküldték a munkafolyamatba, de a munkafolyamat nem fejeződött be.
-- **Jóváhagyva várakozik** – A munkafolyamat befejeződött, de a módosítások még folyamatban vannak. Megszakítva – A munkafolyamatot megszakították, vagy a személyzeti műveletet visszavonták. Elutasítva – A műveletkérelmet a jóváhagyó elutasította.
+- **Jóváhagyva várakozik** – A munkafolyamat befejeződött, de a módosítások még folyamatban vannak. **Megszakítva** – a munkafolyamatot megszakította, vagy visszahívta a személyzeti műveletet. **Elutasítva** – a műveletkkérést a jóváhagyó elutasította.
 - **Művelet feldolgozása** – A műveletkérelmet jóváhagyták, a módosítások feldolgozás alatt állnak.
-- **Munkafolyamat befejezve** – A munkafolyamat befejeződött és a módosításokat feldolgozták. Sikertelen – A munkafolyamat nem sikerült, mert az információ elavult. Kattintson az Újraaktiválás elemre a legfrissebb információkat megjelenítéséhez, majd folytassa.
-- **Befejezve** – A beosztást sikeresen létrehozták vagy módosították, vagy az alkalmazottat sikeresen felvették, átvették vagy elbocsátották, vagy kompenzációját sikeresen megváltoztatták. Hiba – Hiba történt, amelyet nem elavult információ okozott. Nyissa meg a Személyzeti műveletek üzenetnaplót, hogy megtudhassa a hiba okát.
+- **Munkafolyamat befejezve** – A munkafolyamat befejeződött és a módosításokat feldolgozták. **Sikertelen** – a munkafolyamat nem sikerült, mert az információ elavult. A legfrissebb adatok megjelenítéséhez és a folytatáshoz kattintson az **·** Újraaktiválás gombra.
+- **Befejezve** – A beosztást sikeresen létrehozták vagy módosították, vagy az alkalmazottat sikeresen felvették, átvették vagy elbocsátották, vagy kompenzációját sikeresen megváltoztatták. **Hiba – a hiba a dátumon kívül más** probléma lépett fel. A Személyzeti **műveletek üzenetnapló megnyitása** a hiba okának meghatározásához.
 - **Megtagadva** – A műveletkérelmet elutasította a jóváhagyó.
 
 ## <a name="can-i-delete-a-personnel-action"></a>Lehetséges személyzeti műveleteket törölni?
 Igen, törölheti az olyan személyzeti műveleteket, amelyek állapota **Tervezet**, **Hiba**, **Sikertelen** vagy **Megszakítva**. Csak akkor törölhet **Befejeződött** állapotú személyzeti műveleteket, ha a **Befejeződött dolgozói műveletek törlésének engedélyezése** lehetőséget a **Human Resources megosztott paraméterei** oldalon **Igen** állapotúra állította.
 
 ## <a name="what-is-the-fastest-way-to-check-the-status-of-a-personnel-action-request"></a>Hogyan tudom a leggyorsabban ellenőrizni egy személyzeti művelet kérelmének állapotát?
-Nyissa meg bármelyik személyzeti művelet listaoldalát, majd válasszon egy műveletet.
+A Személyzeti művelet **·** listaoldalak bármelyikének megnyitása és egy személyzeti művelet kiválasztása.
 
 ## <a name="what-should-i-do-if-a-personnel-action-request-fails"></a>Mit tegyek, ha egy személyzeti műveletkérelem sikertelen?
 Ha egy személyzeti műveleti kérelem sikertelen, az alábbi lépésekkel tudja megoldani a hibát és újraküldeni a kérelmet:
@@ -66,23 +76,23 @@ Ha egy személyzeti műveleti kérelem sikertelen, az alábbi lépésekkel tudja
 > 3. Oldja meg a hibát, majd kattintson a **Befejezés** vagy a **Küldés** opcióra.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Mi történik a munkafolyamatot használó személyzeti műveletekkel a végleges jóváhagyás után?
-Ha nincsenek hibák, a személyzeti művelet írásvédetté válik. (Megtekintheti a **Minden dolgozói művelet** listaoldal előzményeit, de nem módosíthatja a személyzeti műveletet.) Ha a személyzeti művelet állapota **Befejezve**, a beosztás vagy a dolgozói rekord már frissítve van. A végrehajtott módosítások megtekintéséhez nyissa meg a **Beosztások** vagy a **Dolgozók** listaoldalt.
+Ha nincsenek hibák, a személyzeti művelet írásvédetté válik. (Az előzményeket a következőben lehet megtekinteni: **A dolgozói műveletek** listaoldala, de nem lehet módosítani a személyzeti műveletet.) Ha egy személyzeti művelet állapota Befejeződött, a beosztás vagy a dolgozó **·** rekordja már frissítve lett. A végrehajtott módosítások megtekintéséhez nyissa meg a **Beosztások** vagy a **Dolgozók** listaoldalt.
 
 ## <a name="why-do-i-receive-the-following-error-when-i-enter-a-non-zero-value-in-the-pay-rate-field-the-value-is-out-of-its-valid-range--it-much-be-between-000-and-000"></a>Miért jelenik meg a következő hiba, ha nem nullát adok meg a Fizetési díjalap mezőben? "Az érték kívül esik az érvényes tartományon: 0,00 és 0,00 között kell lennie"
-Ilyen üzenetet akkor kap, ha a kiválasztott beosztáshoz tartozó feladatnál a Szint mező üres a Munkakör képernyőn.
+Ez az üzenet azért jelenik meg, mert a Feladat lap Szint mezője üres a kiválasztott beosztáshoz társított **·** **·** feladathoz.
 
 A hiba elhárításához kövesse az alábbi lépéseket:
 
-> 1. A dolgozó beosztáshoz megbízások űrlapjának kattintson Beosztás mező.  
-> 2. Kattintson a Munka mező tartalmára, amely megnyitja a Feladat lapot.
-> 3. Kattintson a Műveleti ablak Szerkesztés elemére.
-> 4. Kattintson a Kompenzáció fülre.
-> 5. Válasszon egy szintet a Szint mezőben.
-> 6. Zárja be a Feladat lapot.
-> 7. Zárja be a Beosztás lapot.
-> 8. Lépjen vissza a Kompenzáció lapra vissza a Dolgozó lapon, és válassza a Fix kompenzáció lehetőséget.  Válassza az Új lehetőséget, és adja meg a Beosztás mezőben az alkalmazott pozícióját.  A Terv mezőben adjon meg egy értéket, és a Fizetési díjalap mezőben adja meg az alkalmazotti kompenzációt.
+> 1. A Dolgozó **beosztás-hozzárendelések** lapján kattintson a Pozíció **·** mezőre.  
+> 2. A Feladat lap megnyitásához kattintson a Feladat **·** mező **·** értékre.
+> 3. A műveletpanelen kattintson a Szerkesztés **·** gombra.
+> 4. Kattintson a **Kompenzáció** fülre.
+> 5. A **Szint** mezőben válasszon ki egy szintet.
+> 6. Zárja be **a Feladat** lapot.
+> 7. Zárja be **a Pozíció** lapot.
+> 8. Visszatérés a Dolgozó lap Kompenzáció **·** **·** lapjára, válassza a **Fix kompenzáció** lehetőséget.  Válassza az Új lehetőséget, és adja meg az alkalmazott **·** pozícióját a **Beosztás** mezőben.  Adjon meg egy értéket a Terv mezőben, majd adja meg az alkalmazott kompenzációját a **·** Fizetés **·** mezőben.
 
-## <a name="why-cant-i-change-the-effective-date-in-the-header-of-the-worker-action-form"></a>Miért nem tudom módosítani az érvénybe lépési dátumot dolgozói művelet képernyő fejlécében?
+## <a name="why-cant-i-change-the-effective-date-on-the-header-of-the-worker-action-page"></a>Miért nem lehet módosítani az hatályos dátumot a Dolgozó műveletlap fejlécében?
 Az érvénybe lépési dátum nem módosítható, mert a mezőbe a rendszer a művelettípusra vonatkozóan leginkább logikus dátumot írja be.
 
 Példa:

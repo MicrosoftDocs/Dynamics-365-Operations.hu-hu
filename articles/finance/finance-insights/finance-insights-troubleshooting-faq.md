@@ -2,7 +2,7 @@
 title: A Finance Insights beállítási problémáinak elhárítása
 description: Ez a témakör a Finance Insights funkciók használata során előforduló problémákat sorolja fel. Ezenkívül bemutatja a problémák megoldását is.
 author: panolte
-ms.date: 08/20/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,16 +17,17 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 7ff42ffc334147c1a4c6b6349c86580df7f1955b
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
+ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512890"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752617"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>A Finance Insights beállítási problémáinak elhárítása
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör a Finance Insights funkciók használata során előforduló problémákat sorolja fel. Ezenkívül bemutatja a problémák megoldását is.
 
@@ -34,7 +35,7 @@ Ez a témakör a Finance Insights funkciók használata során előforduló prob
 
 ### <a name="resolution"></a>Megoldás
 
-Előfordulhat, hogy egy korábbi verzióhoz készült sablont használ. A 10.0.17-es verzió kiadása előtt az előzetes verziót használó vevők az **Ügyfél fizetési információk eredményei (CDS – Fin and Ops)** adatintegrációs (DI) sablont konfigurálták a **Fizetési előrejelzés eredménye (előzetes verzió)** entitással. A 10.0.17-es és újabb verzióra történő frissítés után az **Ügyfelek fizetési információinak eredményei (CDS – Fin and Ops 10.0.17 és újabb)** DI sablonját kell használnia a megfeleltetés befejezéséhez. Lehet, hogy nem tudja leképezni a DI sablon céloszlopát mindaddig, amíg az adatkezelési entitások listája frissül, és a **Fizetési előrejelzés eredménye** entitás meg nem jelenik benne. Az entitáslista frissítésééhez és a fizetési előrejelzés eredményének a megjelenítése érdekében a Microsoft Dynamics 365 Finance és a Dataverse (korábban Common Data Service \[CDS\] rendszergazdai portál) lépéseit is végre kell hajtania.
+Előfordulhat, hogy egy korábbi verzióhoz készült sablont használ. A 10.0.17-es verzió kiadása előtt az előzetes verziót használó vevők az **Ügyfél fizetési információk eredményei (CDS – Fin and Ops)** adatintegrációs (DI) sablont konfigurálták a **Fizetési előrejelzés eredménye (előzetes verzió)** entitással. A 10.0.17-es és újabb verzióra történő frissítés után az **Ügyfelek fizetési információinak eredményei (CDS – Fin and Ops 10.0.17 és újabb)** DI sablonját kell használnia a megfeleltetés befejezéséhez. Lehet, hogy nem tudja leképezni a DI sablon céloszlopát mindaddig, amíg az adatkezelési entitások listája frissül, és a **Fizetési előrejelzés eredménye** entitás meg nem jelenik benne. Az entitáslista frissítésééhez és a fizetési előrejelzés eredményének a megjelenítése érdekében a Microsoft Dynamics 365 Finance és a Dataverse (korábban Common Data Service \[ CDS\] rendszergazdai portál) lépéseit is végre kell hajtania.
 
 ### <a name="in-finance"></a>A Finance-ben
 
@@ -53,6 +54,12 @@ Az alábbi lépések szerint frissítheti az adatintegrációs projekteket a [Po
 
 1. Ha a Finance Insights előnézeti verzióját használja, távolítsa el a **Vevői kifizetési információk eredményei (CDS – Fin Ops)** sablonhoz társított DI projektet.
 2. Hajtsa végre az [Adatentregrátor projekt létrehozása](create-data-integrate-project.md) rész lépéseit. Használja a **ügyfelek fizetési információinak eredményei (CDS – Fin and Ops 10.0.17 vagy újabb)** sablont.
+
+## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>Tünet: Amikor a Vevői kifizetések előrejelzése beállítási lapon található hivatkozásokkal szeretnék megnyitni az AI Buildert, miért jelenik meg a következő hibaüzenet: "Sajnáljuk, de megszakadt a kapcsolat"?
+
+### <a name="resolution"></a>Megoldás
+
+Dynamics 365 Finance A felhasználónak felhasználói fiókkal kell lennie a környezetnek, és annak a felhasználói fióknak a Rendszer Microsoft Power Apps szabó szerepkörével kell lennie. A Microsoft Power Apps rendszergazda létrehozhatja a felhasználói fiókot, és hozzárendelheti a szerepkört. Ezután a megfelelő felhasználói fiók használatával <https://make.preview.powerapps.com/> bejelentkezhet, majd újra megpróbálkodhat a hivatkozásokkal.
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>Tünet: Miért nem mutat adatokat a Pénzforgalmi előrejelzés munkaterület Készpénzforgalmi-előrejelzés lapja?
 

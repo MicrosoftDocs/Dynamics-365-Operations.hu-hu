@@ -2,7 +2,7 @@
 title: ER-kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)
 description: Ez a témakör leírja, hogy hogyan használhatja fel újra a meglévő alkalmazáslogikát az elektronikus jelentéskészítési konfigurációkban az alkalmazásosztályok szükséges metódusainak lehívásával.
 author: NickSelin
-ms.date: 12/12/2017
+ms.date: 11/02/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -12,149 +12,180 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 78e7596760c4707578e2458a93631b571a7bfec86b9c51d877502ba04ed843a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 81fae8d3603677afd7dd4b09b9073805f73582b4
+ms.sourcegitcommit: e6b4844a71fbb9faa826852196197c65c5a0396f
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726285"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7751706"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>ER-kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az útmutató azzal kapcsolatban tartalmaz tájékoztatást, hogy hogyan használhatja fel újra a meglévő alkalmazáslogikát az elektronikus jelentéskészítési (ER-) konfigurációkban az ER-kifejezések alkalmazásosztályainak szükséges metódusainak lehívásával. A hívóosztályok argumentumértékeit dinamikusan lehet futásidőben definiálni: például az elemző dokumentumban lévő információk alapján az információk helyességének biztosítása érdekében. Ebben az útmutatóban létrehozzuk a szükséges ER-konfigurációkat a Litware, Inc. mintavállalatra vonatkozóan. Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője szerepkör rendelkező felhasználók számára készült. 
+Ez a témakör azt írja le, hogyan lehet újra felhasználni az elektronikusjelentés-konfigurációk meglévő alkalmazáslogikát az ER-kifejezésekben szükséges [alkalmazásosztály-metódusok](../general-electronic-reporting.md) hívhatók meg. Az osztályok hívása esetén az argumentumok értékei dinamikusan definiálhatók futásidőben. Az értékek például az elemzési dokumentumban található információkon alapulnak a helyesség biztosítása érdekében.
 
-Ezek a lépések bármely adathalmazzal végrehajthatók. Le kell töltenie és helyileg mentenie kell következő fájlt: (https://go.microsoft.com/fwlink/?linkid=862266): SampleIncomingMessage.txt.
+Ebben a témakörben példaként be lehet tervezni egy folyamatot, amely a bejövő banki kivonatokat egy alkalmazásadat-frissítésre használja. A bejövő banki kivonatokat szöveges (.txt) fájlokként fogja kapni, amelyek nemzetközi bankszámlaszám -kódokat (International Bank Account Number – IBAN) tartalmaznak. A banki kivonatok importálásának részeként a már elérhető logika alkalmazásával ellenőrizni kell az IBAN-kód helyességét.
 
-Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfigurációszolgáltató létrehozása és aktívként történő megjelölése (ER)” eljárás lépéseit.
+## <a name="prerequisites"></a>Előfeltételek
 
-1. Ugorjon a Szervezeti adminisztráció > Munkaterületek > Elektronikus jelentés pontra.
-    * Ellenőrizze, hogy a Litware, Inc. mintavállalat esetében rendelkezésre áll és aktívként van megjelölve a konfigurációszolgáltató. Ha nem látja a konfigurációszolgáltatót, először el kell végeznie a „Konfigurációszolgáltató létrehozása, és megjelölés aktívként” eljárásban szereplő lépéseket.   
-    * Egy alkalmazásadat-frissítéshez tervez egy folyamatot a beérkező banki kivonatok elemzésére. Az IBAN-kódokat tartalmazó bejövő banki kivonatokat TXT-fájlként fogja megkapni. A banki kivonat importálási folyamatának részeként ellenőriznie kell az IBAN-kódok helyességét már elérhető logikát használva.   
+A témakörben található eljárásokat olyan felhasználóknak szántuk, akik be vannak osztva a Rendszergazda vagy az **·** Elektronikus **jelentéskészítés fejlesztői** szerepkörrel.
+
+Az eljárás bármelyik adathalmazt be lehet állítani.
+
+A letöltéshez le kell töltenie és mentenie kell a következő fájlt: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
+
+Ebben a témakörben létrehozhatja a szükséges ER-konfigurációkat a Litware, Zrt. mintavállalat számára. Ezért a témakörben található eljárások befejezése előtt ezeket a lépéseket kell végrehajtani.
+
+1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
+2. A honosítási konfigurációs lapon ellenőrizze, hogy a Litware, Inc. mintavállalat konfigurációszolgáltatója elérhető-e és aktívként van-e **·** **·** megjelölve. Ha nem látja ezt a konfigurációs szolgáltatót, először végre kell hoznia a Konfigurációszolgáltató létrehozása lépést, és aktívként [kell megjelölnie](er-configuration-provider-mark-it-active-2016-11.md) őket.
 
 ## <a name="import-a-new-er-model-configuration"></a>Új ER-modellkonfiguráció importálása
-1. Keresse meg és jelölje ki a kívánt rekordot a listán.
-    * Válassza ki a Microsoft lapot.  
-2. Kattintson a Tárházak gombra.
-3. Kattintson a Szűrők megjelenítése pontra.
-4. Adjon hozzá egy „Típusnév” szűrőmezőt. Írja be az „erőforrások” szűrőértéket a Név mezőbe a „tartalmazza” szűrési operátor használatával, majd kattintson az Alkalmazás lehetőségre.
-5. Kattintson a Megnyitás gombra.
-6. A fastruktúrában válassza ki a „Fizetési modell” lehetőséget.
-    * Ha a Verziók gyorslapon az Importálás gomb még nincs engedélyezve, az azt jelenti, hogy már importálta a „Fizetési modell” ER-konfiguráció 1. verzióját. Az alfeladat többi műveletét kihagyhatja.   
-7. Kattintson az Importálás gombra.
-8. Kattintson az Igen gombra.
-9. Zárja be a lapot.
-10. Zárja be a lapot.
+
+1. A **Honosítási konfigurációk lapon, a Konfigurációszolgáltatók szakaszban válassza ki a Microsoft konfigurációs szolgáltató** **·** **·** csempeit.
+2. Válassza ki a **Tárházak** lehetőséget.
+3. A **Honosítási tárház oldalon** válassza a Szűrők megjelenítése **·** lehetőséget.
+4. A globális tárházrekord kiválasztásához adjon hozzá egy **Név** szűrőmezőt.
+5. A Név mezőben adja meg **·** a Globális **·** mezőt. Ezután válassza a szűrő **·** operátort.
+6. Válassza az **Alkalmazás** lehetőséget.
+7. A **[kijelölt tárházban található ER-konfigurációk listájának ellenőrzéshez válassza a Megnyitás](../er-download-configurations-global-repo.md#open-configurations-repository)** lehetőséget.
+8. Válassza ki a Kifizetési modellt a konfigurációs **tárház oldalon, a konfigurációs** **·** fán.
+9. Ha elérhető az Importálás gomb, válassza ki a Verziók gyorsgombot, majd válassza az **·** Igen **·** **·** lehetőséget.
+
+    Ha az Importálás gomb nem érhető el, akkor már importálta a fizetési modell **·** ER **konfigurációjának kiválasztott** verzióját.
+
+10. Zárja be a Konfigurációs tárház lapot, majd zárja be a **·** **Honosítási tárház** lapját.
 
 ## <a name="add-a-new-er-format-configuration"></a>Új ER-formátum hozzáadása
-1. Kattintson a Jelentéskészítés konfigurációi lehetőségre.
-    * Adjon hozzá egy új ER-formátumot a TXT formátumú bejövő banki kivonatok elemzéséhez.  
-2. A fastruktúrában válassza ki a „Fizetési modell” lehetőséget.
-3. A Konfiguráció létrehozása gombra kattintva megnyithatja a legördülő párbeszédmenüt.
-4. Az Új mezőbe írja be a „PaymentModel modellen alapuló formátum” kifejezést.
-5. A Név mezőbe írja be a következőt: A banki kivonat importálási formátuma (minta).
-    * A banki kivonat importálási formátuma (minta)  
-6. A Támogatja az adatimportálást mezőben válassza az Igen lehetőséget.
-7. Kattintson a Konfiguráció létrehozása lehetőségre.
 
-## <a name="design-the-er-format-configuration---format"></a>ER-formátumú konfiguráció kialakítása – formázás
-1. Kattintson a Tervező pontra.
-    * A tervezett formátum a külső fájl várt struktúráját jelöli TXT formátumban.  
-2. Kattintson a Gyökér hozzáadása lehetőségre a legördülő párbeszédmenü megnyitásához.
-3. A fastruktúrában válassza ki ezt: „Szöveg\Sorozat”.
-4. A Név mezőbe írja be a következőt: „Gyökér”.
-    * Gyökér  
-5. A Különleges karakterek mezőben válassza ki az „Új sor – Windows (CR LF)” lehetőséget.
-    * A „Különleges karakterek” mezőben ki van választva az „Új sor – Windows (CR LF)” lehetőség. Ezen beállítás alapján az elemzési fájl minden sora külön nyilvántartásnak minősül.  
-6. Kattintson az OK gombra.
-7. A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-8. A fastruktúrában válassza ki ezt: „Szöveg\Sorozat”.
-9. A Név mezőbe írja be a Sorok szöveget.
-    * Sorok  
-10. A Multiplicitás mezőben válassza ki ezt: 'Egy a többhöz'.
-    * A „Multiplicitás” mezőben kiválasztotta az „Egy a többhöz” lehetőséget. Ezen beállítás alapján valószínű, hogy legalább egy sor fog szerepelni az elemzési fájlban.  
-11. Kattintson az OK gombra.
-12. A fastruktúrában válassza ki a Gyökér\Sorok csomópontot.
-13. Kattintson a Számsorozat hozzáadása lehetőségre.
-14. A Név mezőbe írja be a Mezők lehetőséget.
-    * Mezők  
-15. A Multiplicitás mezőben válassza ki ezt: 'Pontosan egy'.
-16. Kattintson az OK gombra.
-17. A fastruktúrában válassza ki ezt: Gyökér\Sorok\Mezők.
-18. A Hozzáadása gombra kattintva nyissa meg a legördülő párbeszédpanelt.
-19. A fában válassza ki ezt: „Text\String”.
-20. A Név mezőbe írja be az „IBAN” szöveget.
-    * IBAN  
-21. Kattintson az OK gombra.
-    * A konfiguráció szerint az elemzési fájl minden sora csak az IBAN-kódot tartalmazza.  
-22. Kattintson a Mentés gombra.
+Adjon hozzá egy új ER-formátumot a TXT formátumú bejövő banki kivonatok elemzéséhez.
 
-## <a name="design-the-er-format-configuration--mapping-to-data-model"></a>ER-formátumú konfiguráció kialakítása – adatmodell leképezése
-1. Kattintson a Formátum hozzárendelése modellhez lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. A Definíció mezőbe írja be a „BankToCustomerDebitCreditNotificationInitiation” szöveget.
-    * BankToCustomerDebitCreditNotificationInitiation  
-4. ResolveChanges meghatározása.
-5. A Név mezőbe írja be a következőt: „Adatmodell leképezése”.
-    * Adatmodell leképezése  
-6. Kattintson a Mentés gombra.
-7. Kattintson a Tervező pontra.
-8. A fastruktúrában válassza ki ezt: „Dynamics 365 for Operations\Osztály”.
-9. Kattintson a Gyökér hozzáadása gombra.
-    * Adjon hozzá egy új adatforrást a meglévő alkalmazáslogika hívására az IBAN-kódok ellenőrzése érdekében.  
-10. A Név mezőbe írja be a „kódok ellenőrzése” szöveget.
-    * ellenőrző_kódok  
-11. Az Osztály mezőbe írja be az ISO7064 értéket.
-    * ISO7064  
-12. Kattintson az OK gombra.
-13. A fastruktúrában bontsa ki ezt: „format”.
-14. A fában bontsa ki a „format\Root: Sequence(Root)” elemet.
-15. A fán válassza a „format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)” lehetőséget.
-16. Kattintson a Kötés gombra.
-17. A fán bontsa ki a „format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)” lehetőséget.
-18. A fán bontsa ki a „format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)” lehetőséget.
-19. A fán válassza a „format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)\IBAN: String(IBAN)” lehetőséget.
-20. A fában bontsa ki a „Payments = format.Root.Rows” elemet.
-21. A fában bontsa ki a következőt: „Payments = format.Root.Rows\Creditor Account(CreditorAccount)”.
-22. A fában bontsa ki a következőt: „Payments = format.Root.Rows\Creditor Account(CreditorAccount)\Identification”.
-23. A fában válassza a következőt: „Payments = format.Root.Rows\Creditor Account(CreditorAccount)\Identification\IBAN”.
-24. Kattintson a Kötés gombra.
-25. Kattintson az Ellenőrzések fülre.
-26. Kattintson az Új lehetőségre.
-    * Adjon hozzá egy új ellenőrzési szabályt, amely hibaüzenetet jelenít meg az érvénytelen IBAN-kódot tartalmazó elemzési fájl hiba minden sorához.  
-27. Kattintson a Feltétel szerkesztése elemre.
-28. A fában bontsa ki a „check_codes” csomópontot.
-29. A fán válassza a check_codes\verifyMOD1271_36 pontot.
-30. Kattintson az Adatforrás hozzáadása pontra.
-31. A Képlet mezőbe írja be a „check_codes.verifyMOD1271_36(” szöveget.
-    * check_codes.verifyMOD1271_36(  
-32. A fastruktúrában bontsa ki ezt: „format”.
-33. A fában bontsa ki a „format\Root: Sequence(Root)” elemet.
-34. A fán bontsa ki a „format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)” lehetőséget.
-35. A fán bontsa ki a „format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)” lehetőséget.
-36. A fán válassza a „format\Root: Sequence(Root)\Rows: Sequence 1..* (Rows)\Fields: Sequence 1..1 (Fields)\IBAN: String(IBAN)” lehetőséget.
-37. Kattintson az Adatforrás hozzáadása pontra.
-38. A képlet mezőbe írja be a „check_codes.verifyMOD1271_36 (formátuma. Root.Rows.Fields.IBAN)” szöveget.
-    * check_codes.verifyMOD1271_36(format.Root.Rows.Fields.IBAN)  
-39. Kattintson a Mentés gombra.
-40. Zárja be a lapot.
-    * Az érvényességi feltétel úgy van konfigurálva, hogy minden érvénytelen IBAN-kód esetén HAMIS választ adjon az „ISO7064” alkalmazásosztály „verifyMOD1271_36” meglévő módszerét előhívva. Vegye figyelembe, hogy az IBAN-kód értéke dinamikusan van megadva futásidőben az elemző TXT-fájl tartalmán alapuló hívásmódszer argumentumaként.   
-41. Kattintson az Üzenet szerkesztése lehetőségre.
-42. A Receptúra mezőbe írja be a következőt: CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN).
-    * CONCATENATE("Invalid IBAN code has been found:  ", format.Root.Rows.Fields.IBAN)  
-43. Kattintson a Mentés gombra.
-44. Zárja be a lapot.
-45. Kattintson a Mentés gombra.
-46. Zárja be a lapot.
+1. Válassza a **Honosítási konfigurációk** lapon a **Jelentéskészítési konfigurációk csempe** lehetőséget.
+2. Válassza ki a Fizetésmodellt a Konfigurációk lap **·** bal oldali konfigurációs **·** fájában.
+3. Válassza a **Konfiguráció létrehozása** lehetőséget. 
+4. A legördülő párbeszédpanelen hajtsa végre a következő lépéseket:
+
+    1. Az **Új** mezőbe írja be a **PaymentModel modellen alapuló formátum** kifejezést.
+    2. A Név mezőben adja meg a **·** Banki kivonat **importálási formátumát** (minta).
+    3. Az Adatok **importálását támogató** mezőben válassza az **Igen** lehetőséget.
+    4. A **konfiguráció létrehozásának** befejezéséhez válassza a Konfiguráció létrehozása lehetőséget.
+
+## <a name="design-the-er-format-configuration--format"></a>Az ER-formátum konfigurációjának tervezése – formátum
+
+A külső fájl txt formátumú várható szerkezetének megfelelő ER-formátum megtervezése.
+
+1. A **Hozzáadott banki kivonat importálási formátuma (mintaformátum) beállításához válassza** a Tervező **·** lehetőséget.
+2. Válassza a Gyökér hozzáadása lehetőséget a Formátumtervező lapon a bal oldali ablak formázási **·** szerkezetének **·** fájában.
+3. A megjelenő párbeszédpanelen hajtsa végre a következő lépéseket:
+
+    1. A fában válassza ki a **\\ Szövegsorozat lehetőséget** a **Szekvenciaformátum-összetevő** hozzáadásához.
+    2. A Név **·** mezőben adja meg a gyökér **·** nevét.
+    3. A Speciális **karakterek** mezőben válassza az **Új sor – Windows (CRSTB)** lehetőséget. E beállítás alapján az elemzési fájl minden sorát külön rekordnak fogja tekinteni a rendszer.
+    4. Válassza ki az **OK** lehetőséget.
+
+4. Válassza a **Hozzáadás** lehetőséget.
+5. A megjelenő párbeszédpanelen hajtsa végre a következő lépéseket:
+
+    1. A fán válassza ki a **Szövegsorozat \\** lehetőséget.
+    2. A Név **·** mezőben adja meg a **sorokat**.
+    3. A **Multiplicitás** mezőben válassza ki az **Egy a többhöz** értéket. E beállítás alapján legalább egy sornak jelen kell lennie az elemzési fájlban.
+    4. Válassza ki az **OK** lehetőséget.
+
+6. Válassza ki a gyökérsorokat a **fán, majd válassza a \\** **Szekvencia hozzáadása lehetőséget**.
+7. A megjelenő párbeszédpanelen hajtsa végre a következő lépéseket:
+
+    1. A Név **·** mezőben adja meg a **·** mezőket.
+    2. A **Többszörösség** mezőben válassza **a Pontosan** egyet.
+    3. Válassza ki az **OK** lehetőséget.
+
+8. A fában válassza ki a **\\ Gyökérsorok \\** mezőit, majd válassza a **Hozzáadás** lehetőséget.
+9. A megjelenő párbeszédpanelen hajtsa végre a következő lépéseket:
+
+    1. Válassza ki a fán a **Szöveg \\** karakterláncot.
+    2. A Név **·** mezőben adja meg az **IBAN-t.**
+    3. Válassza ki az **OK** lehetőséget.
+
+10. Válassza a **Mentés** lehetőséget.
+
+A konfiguráció ezzel úgy van beállítva, hogy az elemzőfájl minden sora csak az IBAN-kódot tartalmazza.
+
+![Banki kivonat importálási formátuma (mintaformátum) a Formátumtervező lapon.](../media/design-expressions-app-class-er-01.png)
+
+## <a name="design-the-er-format-configuration--mapping-to-a-data-model"></a>ER-formátumkonfiguráció tervezése – hozzárendelés adatmodellhez
+
+AZ elemzési fájlból származó adatokat használó ER-formátum-leképezés megtervezése az adatmodell kitöltéséhez.
+
+1. A **Formátumtervező** lap munkaablakában válassza a **Leképezés formátuma a modellhez** lehetőséget.
+2. A Modell **adatforráshoz hozzárendelési lapon válassza az Új lehetőséget** a **munkaablakban.**
+3. A **Definíció** mezőben válassza a **BankToCustomerDebitCreditNotificationInitiation** lehetőséget.
+4. A Név mezőben adja meg **·** a **Leképezés az adatmodellhez való** hozzárendelést.
+5. Válassza a **Mentés** lehetőséget.
+6. Válassza a **Tervező** lehetőséget.
+7. A **modellleképezés** tervezőlapján, az **Adatforrástípusok** fában válassza az **Dynamics 365 for Operations\\ Osztály** lehetőséget.
+8. Az Adatforrások szakaszban válassza a Gyökér hozzáadása lehetőséget egy olyan adatforrás hozzáadásához, amely az IBAN-kódok érvényesség-ellenőrzésének meglévő **·** **·** alkalmazáslogikát hívja meg.
+9. A megjelenő párbeszédpanelen hajtsa végre a következő lépéseket:
+
+    1. A Név **mezőbe írja be a** **\_ Csekkkódok** mezőjét.
+    2. Az Osztály mezőben adja meg vagy **·** válassza ki az **ISO7064** szabványt.
+    3. Válassza ki az **OK** lehetőséget.
+
+10. Az **Adatforrástípusok** fában kövesse az alábbi lépéseket:
+
+    1. Bontsa ki **·** a formátum-adatforrást.
+    2. Gyökérformátum **\\ kibontása: Sequence(Root)**
+    3. Gyökérformátum **\\ kibontása: Sequence(Root) \\ Sorok: 1. \* sorozat (sorok)**
+    4. Gyökérformátum **\\ kibontása: Sequence(Root) \\ Sorok: 1. sorozat.\* (Sorok) \\ mezői: 1..1. sorozat** (mezők).
+
+11. Az **adatmodellfában** kövesse az alábbi lépéseket:
+
+    1. Bontsa **ki** az adatmodell Kifizetések mezőjét.
+    2. Bontsa ki a kifizetések **\\ hitelezői számláját (CreditorAccount)**.
+    3. **Bontsa ki a kifizetések \\ hitelezői számlájának (CreditorAccount) \\** azonosítóját.
+    4. Bontsa ki a kifizetések **\\ hitelezői számláját (CreditorAccount) \\ azonosító \\ IBAN-azonosítóját.**
+
+12. A következő lépések szerint lehet a konfigurált formátum összetevőit az adatmodellmezőkhöz kötni:
+
+    1. Gyökérformátum **\\ kiválasztása: Sequence(Root) \\ Sorok: 1. \* sorozat (sorok)**
+    2. Válassza ki **a** kifizetéseket.
+    3. Válassza a **Bind** elemet. E beállítás alapján az elemzési fájl minden sorát egyetlen kifizetésnek fogja tekinteni a rendszer.
+    4. Gyökérformátum **\\ kiválasztása: Sequence(Root) \\ Sorok: 1. sorozat.\* (Sorok) \\ mezői: 1..1. sorozat (mezők) \\ IBAN: String(IBAN)**.
+    5. Válassza **ki a kifizetések \\ hitelezői számláját (CreditorAccount) \\ azonosító \\ IBAN-azonosítót.**
+    6. Válassza a **Bind** elemet. E beállítás alapján az adatmodell IBAN-mezője ki lesz töltve az elemzési **·** fájlban található értékkel.
+
+    ![A formátumösszetevők kötése a Modellleképezés tervezőlapján található adatmodell-mezőkhöz.](../media/design-expressions-app-class-er-02.png)
+
+13. Az Ellenőrzések lapon kövesse az alábbi lépéseket egy olyan érvényesítési szabály hozzáadásához, amely hibaüzenetet tartalmaz az érvénytelen IBAN-kódot tartalmazó elemzőfájl bármelyik **·**[...](../general-electronic-reporting-formula-designer.md#Validation) sora esetén:
+
+    1. Válassza **az** Új, majd a Feltétel szerkesztése **·** lehetőséget.
+    2. A Képlettervező lap adatforrásfában bontsa ki az **·** **·** **\_** **ISO7064** alkalmazásosztálynak megfelelő Csekk kódok adatforrását, hogy megtekintse az osztály elérhető metódusát.
+    3. Jelölje ki **a check \_ codes \\ verifyMOD1271 \_ 36** kódot.
+    4. **Adatforrás hozzáadása** lehetőség választása.
+    5. A Receptúra mezőbe írja be a **·** következő [...](../general-electronic-reporting-formula-designer.md#Binding) kifejezést: **\_ Csekkkódok.verifyMOD1271 \_ 36(format. Root.Rows.Fields.IBAN)**.
+    6. Válassza a **Mentés** gombot, majd zárja be az oldalt.
+    7. Válassza az **Üzenet szerkesztése** lehetőséget.
+    8. A Képlettervező lap Receptúra mezőjében adja meg a **·** **·** **CONCATENATE("Érvénytelen IBAN-kód: &nbsp; ", formátum: Root.Rows.Fields.IBAN)**.
+    9. Válassza a **Mentés** gombot, majd zárja be az oldalt.
+
+    Ezen beállítások alapján az ellenőrzési feltétel hamis értéket ad vissza érvénytelen IBAN-kódok esetén az *[...](../er-formula-supported-data-types-primitive.md#boolean)* **ISO7064 alkalmazásosztály meglévő verifyMOD1271 \_ 36** **·** metódusának hívásával. Ne feledje, hogy futásidőben dinamikusan definiálja az IBAN-kód értékét a hívó metódus argumentumaként, az elemző szövegfájl tartalma alapján.
+
+    ![Ellenőrzési szabály a modellleképezés tervezőlapján.](../media/design-expressions-app-class-er-03.png)
+
+14. Válassza a **Mentés** lehetőséget.
+15. Zárja be **a Modellleképezés tervezőlapját, majd zárja be a** Modell **adatforrás-hozzárendelési** lapot.
 
 ## <a name="run-the-format-mapping"></a>Formátum-hozzárendelés futtatása
-Tesztelési célokra hajtsa végre a letöltött SampleIncomingMessage.txt fájllal formátumleképezést. A létrehozott kimenet olyan adatokat tartalmaz, amelyek importálása a kijelölt TXT-fájlból történik, és a valós importáláskor tölti fel az egyéni adatmodellt.   
-1. Kattintson a Futtatás elemre.
-    * Kattintson a Böngészés lehetőségre, és a navigáljon a korábban letöltött SampleIncomingMessage.txt fájlhoz.  
-2. Kattintson az OK gombra.
-    * Tekintse át az XML-formátumú kimenetet, amely azokat az adatokat jelöli, amelyeket a kiválasztott fájlból importált, és az adatmodellbe portolt a rendszer. Vegye figyelembe, hogy az importált TXT-fájlnak csak 3 sora került feldolgozásra. A rendszer kihagyta a 4. sorban található érvénytelen IBAN-kódot, és hibaüzenetet hagyott az információs naplóban.  
 
+Tesztelés céljából futtassa a formátum-hozzárendelést a korábban letöltött SampleIncomingMessage.txt fájl használatával. A létrehozott kimenet a kijelölt szövegfájlból importált adatokat fogja tartalmazni, és a valódi importálás során át lesz portálva az egyéni adatmodellbe.
 
+1. A Modell **adatforráshoz** hozzárendelési lapon válassza a Futtatás **·** lehetőséget.
+2. Az Elektronikus jelentés paraméterei oldalon válassza a Tallózás elemet, tallózással keresse meg a letöltött **·** **·** **SampleIncomingMessage.txt fájlt, és válassza** ki azt.
+3. Válassza ki az **OK** lehetőséget.
+4. A Modell adatforráshoz hozzárendelése lapon egy hibaüzenet jelenik meg **·** az érvénytelen IBAN-kódról.
+
+    ![A formátum-hozzárendelés futtatásának eredménye a modell és az adatforrás megfeleltetési lapján.](../media/design-expressions-app-class-er-04.png)
+
+5. Tekintse át az XML-formátumú kimenetet, amely azokat az adatokat jelöli, amelyeket a kiválasztott fájlból importált, és az adatmodellbe portolt a rendszer. Ne figyelje meg, hogy az importált szövegfájlnak csak három sorát feldolgozása történt hiba nélkül. Az online 4-es IBAN-kód érvénytelen, ezért a rendszer kihagyta.
+
+    ![XML-kimenet.](../media/design-expressions-app-class-er-05.png)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,8 +1,8 @@
 ---
-title: A kérdőívek eredményeinek megtekintése és kiértékelése
-description: Ez a cikk ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait.
-author: andreabichsel
-ms.date: 06/20/2017
+title: A kérdőívek megtekintése és az eredmények kiértékelése
+description: Ez a témakör ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,26 +12,26 @@ ms.search.scope: Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: e2241c2ade361631228cf721b18adabcb1fbc091c8949d47727bb89f0f67bdb6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 8265b6b2269822bcae6d573091d2994e25826d1a
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6755491"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729123"
 ---
-# <a name="view-and-evaluate-the-results-of-questionnaires"></a>A kérdőívek eredményeinek megtekintése és kiértékelése
+# <a name="view-and-evaluate-the-results-of-questionnaires"></a>A kérdőívek megtekintése és az eredmények kiértékelése
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a cikk ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait. 
+Ez a témakör ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait. 
 
 Ha a válaszadók kitöltötték a kérdőívet, megtekintheti, valamint kiértékelheti a kérdőív eredményét az alábbi módokon:
 
 -   **Befejezett válaszmunkamenetek** – A válaszadók által kitöltött kérdőívek részleteinek megtekintése, valamint a válaszok és elért pontok összesítésére szolgáló jelentés létrehozása.
--   **Eredmény csoportok** – A kérdőív eredménycsoportjainak és statisztikájának megtekintése. Az eredménycsoport statisztikája létrehozható a kérdőív egyetlen válaszmunkamenetéhez, illetve az összes válaszmunkamenethez.
+-   **Eredmény csoportok** – A kérdőív eredménycsoportjainak és statisztikájának megtekintése. Eredménycsoport-statisztika generálható egy kérdőív egyetlen válasz-munkamenetére vagy az összes válasz-munkamenetre.
 -   **Kérdőív-statisztika** – A válaszadók bizonyos csoportjához tartozó statisztika kiszámítási feltételeinek megadása.
 
 Létrehozhat az eredmények megtekintéséhez személy, válaszmunkamenet vagy eredménycsoport alapján rendezett jelentéseket. Az alábbi jelentések érhetőek el a kitöltött kérdőívekhez:

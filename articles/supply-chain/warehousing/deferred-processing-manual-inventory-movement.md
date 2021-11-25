@@ -1,6 +1,6 @@
 ---
 title: Kézi készletmozgás halasztott feldolgozása
-description: Ez a témakör azt mutatja be, hogyan használható a kézi készletmozgás halasztott feldolgozása a Micorsoft Dynamics 365 Supply Chain Managementben.
+description: Ez a témakör azt mutatja be, hogyan használható a kézi készletmozgás halasztott feldolgozása a Micorsoft Dynamics 365 Supply Chain Management ben.
 author: Mirzaab
 ms.date: 04/27/2021
 ms.topic: article
@@ -11,18 +11,18 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a15c913c876e961c6824c1e8812ab2be2d6ffa4333cd0d4e6f80cae8bac79394
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: f5c9ba7079895feeb0c171f2021479587aa13cc9
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746747"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777666"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Kézi készletmozgás halasztott feldolgozása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan használható a kézi készletmozgás halasztott feldolgozása a Micorsoft Dynamics 365 Supply Chain Managementben.
+Ez a témakör azt mutatja be, hogyan használható a kézi készletmozgás halasztott feldolgozása a Micorsoft Dynamics 365 Supply Chain Management ben.
 
 A halasztott feldolgozás esetében a raktári dolgozók továbbra is más munkát folytatnak, mialatt a betárolási művelet a háttérben lesz feldolgozva. A haslasztott feldolgozás akkor hasznos, ha a kiszolgálón előfordulhat a feldolgozási idő megnövekedése alkalomszerűen vagy nem tervezetten, és a megnövekedett feldolgozási idő hatással lehet a dolgozó termelékenységére. Ezzel a *Készletmozgás* munkatípus hozzá lett adva a funkció által támogatott munkatípusok halmazhoz.
 
@@ -32,7 +32,7 @@ A háttérbeli feldolgozást a [Raktári alkalmazás eseményeinek feldolgozása
 
 A funkció elérhetővé tétele érdekében kapcsolja be a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő funkciókat. A következő sorrendben kell bekapcsolni őket:
 
-1. Szervezeti szintű munkazárolás
+1. Szervezeti szintű munkazárolás (az ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció kötelező, ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni.)
 1. Raktári alkalmazás eseményeinek feldolgozása
 1. Halasztott Put műveletek
 1. Manuális készletmozgási művelet halasztott feldolgozása

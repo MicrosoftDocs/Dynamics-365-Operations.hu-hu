@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 08/19/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 73a226d10c951179fd9f3bc2aed4a70efcc7f020
-ms.sourcegitcommit: 98061a5d096ff4b9078d1849e2ce6dd7116408d1
-ms.translationtype: HT
+ms.openlocfilehash: 69667f8b64c048f5957168d1af21a6c858bc0bad
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/01/2021
-ms.locfileid: "7466244"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782579"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Élő szinkronizálási problémák elhárítása
 
@@ -224,7 +224,7 @@ A Finance and Operations alkalmazásokban frissítés áll rendelkezésre a kapc
 
 Hasonló helyzet fordulhat elő bizonyos nem szabványos mintázatokban is, például olyan esetekben, amikor az Finance and Operations alkalmazásokban módosított tábla nem kötődik az azt tartalmazó entitáshoz. Például az elsődleges címadatok számítása az **smmContactPersonCDSV2Entity** entitás alapján történt. A kettős írású keretrendszer megpróbálja meghatározni, hogy egy alapul szolgáló tábla módosítása hogyan van leképezve az entitásokra. Ez a megközelítés általában elegendő. Bizonyos esetekben azonban a kapcsolat olyan bonyolult, hogy Önnek pontosabb megközelítést kell alkalmaznia. Meg kell győződnie arról, hogy a kapcsolódó tábla **RecId** azonosítója közvetlenül elérhető-e az entitáshoz. Ezután adjon meg egy statikus metódust a tábla változásának figyelése érdekében.
 
-Példaként tekintse át az **smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping()** metódust. A **CustCustomerV3entity** és a **VendVendorV2Entity módosítása megtörtént** a helyzet kezelése érdekében.
+Példaként tekintse át az **smmContactPersonCDSV2Entity:: getEntityDataSourceToFieldMapping()** metódust. A **CustCustomerV3entity** és a **VendVendorV2Entity módosítása megtörtént** a helyzet kezelése érdekében.
 
 Egy hiba javításához kövesse az alábbi lépéseket.
 

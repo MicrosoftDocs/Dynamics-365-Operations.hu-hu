@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 76ac50ba2606ffff5a5a90d29ca99c8d67e5f14cce2127f5de6225d1cd8224ef
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745176"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753026"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
@@ -84,7 +84,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: 2020. október 1-től a **setUtcString ()** metódus nem támogatott. A fejlesztőknek helyette a **setUtcDateTime()** metódust kell használniuk. |
 
-### <a name="blacklist-report-it--feature-reference-it-00001"></a>Feketelistás jelentés (IT) – Funkcióhivatkozás IT-00001
+### <a name="blocklist-report-it--feature-reference-it-00001"></a>Blokklista-jelentés (IT) – funkcióhivatkozási IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

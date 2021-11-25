@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 59d246dd348bca6c00dc90b19353a382986841f2
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
-ms.translationtype: HT
+ms.openlocfilehash: 3111de1f9862cbf926e763f963c86059f4121fc0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471740"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733439"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skálázási egységek elosztott hibridtopológiában
 
@@ -32,8 +32,8 @@ A gyártással és elosztással foglalkozó vállalatoknak képesnek kell lenni�
 
 Az elosztott hibridtopológia bemutatja a *skálázási egységek* fogalmát, amely lehetővé teszi az üzletek és raktárak végrehajtási terhelésének elosztását a különböző környezetekben. Ez a funkció javítja a teljesítményt, megakadályozhatja a szolgáltatás megszakadását, és maximalizálhatja az üzemidőt. A skálázási egységek a Supply Chain Management előfizetés következő bővítményei révén biztosítottak:
 
-- A felhő skálázási egység bővítménye a Dynamics 365 Supply Chain Management szolgáltatáshoz (*elérhető: 2021. április.*)
-- Az Edge skálázási egység bővítménye a Dynamics 365 Supply Chain Management szolgáltatáshoz (*hamarosan elérhető*)
+- Felhőbeli skálázási egység bővítmény a következőhöz: Dynamics 365 Supply Chain Management
+- Peremhálózati skálázási egység bővítmény a következőhöz: Dynamics 365 Supply Chain Management
 
 A számítási feladat képességei folyamatosan kerülnek kiadásra a növekményes fejlesztésekkel.
 
@@ -51,21 +51,12 @@ Konfigurálhatja a központi környezetet és a felhőbeli skálázási egysége
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikált raktárkezelési számítási feladatok képességei egy skálázási egységben
 
-A raktárkezelési számítási feladat az első elosztott számítási feladat az olyan skálázási egységekhez, amelyek nyilvános megjelenésként vannak kiadva.
-
-A raktárkezelésben a skálázási egységek a következő lehetőségeket nyújtják:
-
-- A rendszer feldolgozza az értékesítési rendelésekhez és a szükségletek feltöltéséhez kiválasztott hullámos módszereket.
-- A raktári dolgozók a Raktárkezelés mobilalkalmazás használatával futtathatják az értékesítési és igény szerinti feltöltési raktári munkát.
-- A raktári dolgozók a Raktárkezelés mobilalkalmazás segítségével érdeklődhetnek az aktuális készletről.
-- A raktári dolgozók a Raktárkezelés mobilalkalmazás segítségével létrehozhatnak és futtathatnak készletmozgatásokat.
-- A raktári dolgozók regisztrálhatnak beszerzési rendeléseket és betárolási munkát végezhetnek a Raktárkezelés mobilalkalmazás használatával.
-
+A raktárkezelési terhelés lehetővé teszi, hogy egy különálló telepítésen raktárkezelési folyamatokat futtathat.
 További információk: [Raktárkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedikált gyártási végrehajtási számítási feladatok képességei egy skálázási egységben
 
-A gyártási számítási feladat első kiadása előzetes verzióban van, és a következő lehetőségeket biztosítja:
+A gyártási terhelés a következő lehetőségeket biztosítja:
 
 - A gépkezelők és az üzemirányítók hozzáférhetnek az üzemeltetési termelési tervhez.
 - A gépkezelők diszkrét és folyamatgyártási feladatok futtatásával naprakészen tarthatják a tervet.
@@ -78,7 +69,7 @@ További információk: [Gyártási végrehajtás munkaterhelései felhőalapú 
 
 Az osztott, hibrid topológia engedélyezésével a Supply Chain Management felhőkörnyezetét úgy lehet átváltani, hogy központként működjön. További olyan környezeteket is társíthat, amelyek skálázási egységként vannak konfigurálva a felhőben vagy a peremen.
 
-### <a name="prerequisites-and-limitations-for-cloud-scale-units"></a><a name="cloud-scale-unit-prerequisites"></a>Előfeltételek és korlátozások a felhőalapú skálázási egységekhez
+### <a name="prerequisites-and-limitations-for-cloud-scale-units"></a><a name="cloud-scale-unit-prerequisites"></a> Előfeltételek és korlátozások a felhőalapú skálázási egységekhez
 
 A skálázási egységek jelenlegi kiadásakor egyes funkciók még nem érhetők el, de idővel a növekményes kiadásokban is hozzáadhatóak.
 
@@ -123,7 +114,7 @@ Korlátozottak azok a vezetői képességek, amelyek segítenek a munkaterhelés
 
 Még nem állnak rendelkezésre azok a metrikák és mértékek, amelyek segítenek kiválasztani a legjobb alkalmazást a skálázási egységekhez. A Microsoft kapcsolattartó vagy megvalósítási partner segítségével válassza ki a leginkább megfelelő alkalmazást.
 
-### <a name="data-processing-during-management-of-scale-units"></a><a name="data-processing-management"></a>Adatfeldolgozás a skálázási egységek kezelése során
+### <a name="data-processing-during-management-of-scale-units"></a><a name="data-processing-management"></a> Adatfeldolgozás a skálázási egységek kezelése során
 
 Ha engedélyezi a Dynamics 365 környezetben a felhő- és peremhálózati skálázási egységek osztott, hibrid topológiáját, néhány kezelő szolgáltatás az LCS esetében is csak az Egyesült Államokban működik. Ez a viselkedés befolyásolja a [Scale Unit Manager portál](https://sum.dynamics.com) által használt egyes adminisztratív és konfigurációs információk átvitelét és tárolását. Íme néhány példa:
 
@@ -191,17 +182,33 @@ A Microsoft áttekinti a kérést, és a regisztrációs űrlapon megadott címr
 
 A felvétel befejezése után a port használatával konfigurálhatja a skálázási egységeket és a munkaterheléseket.
 
-### <a name="manage-cloud-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a>Felhőalapú skálázási egységek és számítási feladatok kezelése a Skálázásiegység-kezelő portál használatával
+### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a> A mérlegegységek és terhelések kezelése az Egységkezelő portál segítségével
 
 Nyissa meg a [Skálázásiegység-kezelő portált](https://aka.ms/SCMSUM), és jelentkezzen be a bérlői fiókjával. A **Skálázási egységek konfigurálása** lapon hozzáadhat egy központi környezetet, ha az még nem szerepel a listán. Ezután kiválaszthatja a központot, amelyet a skálázási egységekkel és a számítási feladatokkal konfigurálni kíván.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Skálázásiegység- és számításifeladat-kezelési élmény.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Mérlegegység-kezelő portál, Mértékegységek konfigurálása lap.":::
 
 Ha egy vagy több, az előfizetésben elérhető skálázási egységet szeretne hozzáadni, válassza a **Skálázási egységek hozzáadása** lehetőséget.
 
 A **Definiált számítási feladatok** lapon a **Számítási feladatok létrehozása** gombbal hozzáadhat egy raktárkezelési számítási feladatot az egyik skálázási egységhez. Minden számítási feladathoz meg kell adnia a számítási feladatok tulajdonában lévő folyamatok kontextusát. A raktárkezelési munkaterhelések esetében a kontextus egy adott hely és jogi személy adott raktára.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Számítási feladat létrehozása.":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Terhelések párbeszédpanel definiálása":::
+
+#### <a name="manage-workloads"></a>Terhelések kezelése
+
+Ha egy vagy több terhelés engedélyezve van, a Terhelések kezelése funkcióval kezdeményezheti és kezelheti az alábbi táblázatban felsorolt **·** folyamatokat.
+
+| Feldolgozás | Leírás |
+|---|---|
+| Skálaegység-kommunikáció szüneteltetése | Szünetelteti a központ és a mérlegegység közötti t csővezeték-üzeneteket. Ezzel a folyamattal leállíthatja a kommunikációt, és leállíthatja az adattárat a központ és a mérlegegységek között. Ezt a folyamatot előbb kell futtatnia, mielőtt futtat egy ellátásilánc-kezelési szervizműveletet a központon vagy a mérlegegységen, de ez más esetekben is használható. |
+| Skálaegység-kommunikáció folytatása | A központ és a mérlegegység közötti csővezeték-üzenetek folytatása. Lehet, hogy ezt a folyamatot kell használnia, például miután vagy a központon, vagy a mérlegegységen futtatta az ellátásilánc-kezeléshez szükséges szervizműveletet. |
+| Terhelések frissítése | Új funkciók szinkronizálása a központ és az egység terhelése között. Lehet, hogy ezt a folyamatot kell használnia, például amikor a szervizelés miatt módosítani kellett az adatcsere lekérdezéseit, és/vagy új táblákat vagy mezőket adott hozzá a terheléshez. |
+| Terhelések átvitele egy mérlegegységbe | A központon futó terhelés ütemezése egy mérlegegységbe való mozgatása érdekében. Ennek a folyamatnak a futtatásakor az adatok szinkronizálása meg fog változni, és mind a központ, mind a mérlegegység úgy lesz beállítva, hogy megváltoztassa a terhelés tulajdonosát. |
+| Mérlegegység átvitele a központba | Olyan terhelés ütemezése, amely jelenleg egy mérlegegységen fut a központba való mozgatása érdekében. Ennek a folyamatnak a futtatásakor az adatok szinkronizálása meg fog változni, és mind a központ, mind a mérlegegység úgy lesz beállítva, hogy megváltoztassa a terhelés tulajdonosát.
+| Rendkívüli váltás központra | <p>Azonnal át kell utalni egy meglévő terhelést a központba. *Ez a folyamat csak a központ aktuálisan elérhető adatainak tulajdonosát fogja megváltoztatni.*</p><p><strong>Figyelmeztetés: Ez a folyamat adatvesztést okozhat az nem szinkronizált adatok miatt, illetve az</strong> üzleti feldolgozás sikertelenségében. Ezért csak olyan olyan 4000 forintos adatokat szabad használni, ahol az üzleti folyamatokat fel kell használni a központon, mivel a mérlegegységben olyan kimaradás van, amely nem enyhíthető időn belül.</p> |
+| Elosztott topológia elosztása | A mérlegegység-telepítés eltávolítása, és csak a központon való futtatás a terhelés feldolgozása nélkül. |
+
+:::image type="content" source="media/sum-manage-workloads.png" alt-text="Skálázásiegység- és számításifeladat-kezelési élmény.":::
 
 > [!TIP]
 > Idővel további növekményes fejlesztések lesznek hozzáadva a Scale Unit Manager tapasztalatokhoz, így egyszerűbbé teszik az életciklus-kezelési műveleteket. A jelenlegi kiadással kapcsolatos különleges képességek a felvételre vonatkozó útmutatóban találhatók meg, ami elérhető a Supply Chain Management osztott, hibrid topológiáját felvevő vevők számára. <!-- KFM: Add a link to the handbook when it is published -->

@@ -1,8 +1,8 @@
 ---
-title: Költségvetési javaslatok engedélyezése
+title: Költségvetési javaslat engedélyezése
 description: Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a Költségvetési javaslat funkcióját a pénzügyi elemzésekben.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,31 +15,26 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: ab65d1b0e366bfe6bdb07688f89d440662165063
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
-ms.translationtype: HT
+ms.openlocfilehash: 3ad610feccf88ac88475a463fd1f10f4336b9407
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386486"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752712"
 ---
-# <a name="enable-budget-proposals"></a>Költségvetési javaslatok engedélyezése
+# <a name="enable-budget-proposal"></a>Költségvetési javaslat engedélyezése
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a Költségvetési javaslat funkcióját a pénzügyi elemzésekben.
 
-1. A Microsoft Dynamics Lifecycle Services (LCS) környezet lapjáról származó információk használatával csatlakozhat az Azure SQL elsődleges példányához az adott környezetben. Futtassa a következő Transact-SQL (T-SQL) parancsot a tesztkörnyezetben a teszteléshez kiadás bekapcsolásához. (Előfordulhat, hogy az LCS-ben be kell kapcsolnia az IP-cím hez való hozzáférést, mielőtt távolról csatlakozhatna az Application Object Server szolgáltatáshoz \[AOS\].)
-
-    `INSERT INTO SYSFLIGHTING (FLIGHTNAME, ENABLED) VALUES ('BudgetIntelligentBudgetRegisterProposalFeature', 1)`
-
-    > [!NOTE]
-    > Hagyja ki ezt a lépést, ha a 10.0.20-as vagy újabb verziót használja, vagy ha Service Fabric-telepítést használ. A pénzügyi elemzési csoportnak már be kellett kapcsolnia a tesztelés kiadását az Ön számára. Ha nem látja a funkciót a **Funkciókezelés** munkaterületen, vagy ha problémákat tapasztal, amikor megpróbálja bekapcsolni, keressen fel minket: <fiap@microsoft.com>.
-
-2. Nyissa meg a **Funkciókezelés** munkaterületet, és kövesse az alábbi lépéseket:
+1. Nyissa meg a **Funkciókezelés** munkaterületet, és kövesse az alábbi lépéseket:
 
     1. Válassza a **Frissítések keresése** elemet.
-    2. Keresse meg a **Költségvetési javaslat** lehetőséget, majd kapcsolja be a funkciót.
+    2. A Minden **lapon keresse meg a költségvetési** **javaslatot**. Ha nem találja ezt a funkciót, keressen rá **az (előnézet) költségvetési javaslatra**. 
+    3. A funkció bekapcsolva.
 
-3. Nyissa meg a **Költségvetés \> Beállítás \> alapszintű költségvetés \> Költségvetési javaslat (előzetes verzió)**, és válassza a **Funkció engedélyezése** lehetőséget.
+2. Menjen a **Költségvetés-beállítás \>\> alapszintű költségvetési \> javaslatához, és válassza az Engedélyezés** **·** funkciót.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

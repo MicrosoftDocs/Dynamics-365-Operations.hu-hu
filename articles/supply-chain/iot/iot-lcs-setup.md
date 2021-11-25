@@ -1,25 +1,25 @@
 ---
 title: A IoT Intelligencia beépülő modul telepítése az LCS-ben
 description: Ez a témakör bemutatja, hogyan telepítheti az IoT Intelligencia beépülő modult a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban.
-author: robinarh
+author: tonyafehr
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: ''
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c4727f4341104b77838c103fcf378a5971f8ba176f18c2d32d619ecd6614b1ae
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: ebf11b55f1034b9a84dda9ada77c2f1b7f587a58
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736819"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781589"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>A IoT Intelligencia beépülő modul telepítése az LCS-ben
 
@@ -47,7 +47,7 @@ Ez a témakör bemutatja, hogyan telepítheti az IoT Intelligencia beépülő mo
 
 Az LCS-beállítás befejeződött. A következő lépés a [forgatókönyvek beállítása](iot-scenario-setup.md).
 
-## <a name="uninstall-the-add-in"></a><a id="uninstall-addin"></a>A bővítmény eltávolítása
+## <a name="uninstall-the-add-in"></a><a id="uninstall-addin"></a> A bővítmény eltávolítása
 
 1. A Supply Chain Management alkalmazásban [tiltsa le a forgatókönyveket](iot-scenario-setup.md#disable-a-scenario).
 2. Az LCS-ben lépjen a Supply Chain Management környezet részleteihez.

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 024bbaad45f320b8c82b20a52ced05322371e337
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 9ad7f116f979d571a5e34eee67beb7218a271522
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575387"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777594"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Szállítói együttműködés a vevőkkel
 
@@ -102,7 +102,7 @@ Az állami szektorban dolgozó emberek megtekinthetik azokat a nyitott és lejá
 
     Ha önt ajánlani hívták, megtalálhatja ugyanazt az ajánlatkérést az **Új eladásiár-meghívások** oldalon. Bizonyos esetekben ön ajánlana egy nyitott ajánlatkérésen, de nem lett meghívva. Ebben az esetben lehet, hogy meg tudja hívni önmagát, feltéve, hogy a vevő engedélyezte az önmeghívást az Ajánlatkérési esetre.
 
-    Javítsa a **Közzétett ajánlatkérések megnyitása** elérhetőséget a **„Közzétett ajánlatkérések megnyitása” hivatkozás megjelenítése mozaikként** funkció bekapcsolásával. Ez a funkció egy mozaikká alakítja át a hivatkozást, és egy kiemelkedő helyre teszi át, hogy könnyen megtalálható legyen.
+    Javítsa a **Közzétett ajánlatkérések megnyitása** elérhetőséget a **„Közzétett ajánlatkérések megnyitása” hivatkozás megjelenítése mozaikként** funkció bekapcsolásával. Ez a funkció egy mozaikká alakítja át a hivatkozást, és egy kiemelkedő helyre teszi át, hogy könnyen megtalálható legyen. (Az Ellátásilánc-kezelés 10.0.21-es verziója alapértelmezés szerint be van kapcsolva.)
 
 - Válassza ki a **Lezárt közzétett ajánlatkérések** hivatkozást, ha meg szeretné tekinteni a nyilvánosság számára elérhető lezárt ajánlatkérések listáját. A lezárt ajánlatkérés egy olyan ajánlatkérés, ami már lejárt. A lejárati dátumot és időpontot az Ajánlatkérés fejlécében találhatja meg.
 

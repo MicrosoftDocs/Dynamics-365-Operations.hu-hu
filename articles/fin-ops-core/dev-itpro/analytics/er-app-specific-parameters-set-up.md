@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 0fce566bea6340b4016e559b1f5f1764a6881e28
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
-ms.translationtype: HT
+ms.openlocfilehash: 9b57c6165e5de4a115818a135ed1455e3b05e3f0
+ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675393"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7733463"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Az ER-formátum paramétereinek beállítása jogi személyenként
 
@@ -118,7 +118,7 @@ Az ER keretrendszerrel beállíthatja az alkalmazásra jellemző paramétereket 
 
 15. Válassza a **Hozzáadás** lehetőséget, majd kövesse az alábbi lépéseket:
 
-    1. A **Kód** mezőben válassza a **\*Nem üres\*** beállítást.
+    1. A **Kód** mezőben válassza a **\* Nem üres\*** beállítást.
     2. A **keresési eredmény** mezőben válassza ki az **Egyéb** értéket.
 
     Az utolsó rekord hozzáadásával megadhatja a következő szabályt: Amikor az arugmentumként átadott adókód nem teljesíti a korábbi szabályok egyikét sem, a keresési adatforrás **Egyéb** értéket ad vissza a kért adózási szintként.
@@ -170,7 +170,7 @@ Az USMF vállalat paramétereinek beállítását a következő lépések szerin
 8. Válassza ki a **EXEMPT** áfakódot.
 9. Az új rekord **keresési eredmény** mezőjében válassza ki a **Nincs adózás** értéket.
 10. Válassza a **Hozzáadás** lehetőséget.
-11. Az új rekord **Kód** mezőjében válassza a **\*Nem üres\*** beállítást.
+11. Az új rekord **Kód** mezőjében válassza a **\* Nem üres\*** beállítást.
 12. Az új rekord **keresési eredmény** mezőjében válassza ki a **Rendes adózás** értéket.
 13. Az **Állapot** mezőben válassza ki a **Befejeződött** értéket.
 14. Válassza a **Mentés** lehetőséget.
@@ -226,15 +226,6 @@ Ezzel az exportálás-importálás módszerrel olyan ER formátumhoz kapcsolód�
 Ha egy ER-formátum alkalmazásspecifikus paramétereit konfigurálja, majd egy későbbi verzióját importálja ugyanannak a formátumnak az aktuális Finance példányá, a meglévő alkalmazásspecifikus paramétereket nem alkalmazza a program az importált verzióra, hacsak nem az **Alkalmazásspecifikus paraméterek használata az elektronikus jelentéskészítési formátumok előző verzióiból** funkciót használja. További tudnivalókat a [Meglévő paraméterek újrafelhasználása](#reuse-existing-parameters) részben olvashat, a témakör későbbi részében.
 
 Amikor importálásra kiválaszt egy fájlt, akkor az adott fájl alkalmazásspecifikus paramétereinek szerkezetét összeveti az importálásra kijelölt ER formátum kapcsolódó, **Keresés** típusú adatforrásainak szerkezetével. Az importálás alapértelmezetten csak akkor történik meg, amikor az alkalmazásspecifikus paraméterek szerkezete megfelel a kapcsolódó adatforrás struktúrájának az importáláshoz kiválasztott ER-formátumban. Ha a szerkezetek nem egyeznek, akkor egy figyelmeztető üzenet tájékoztatja, hogy az importálás nem hajtható végre. Ha kényszeríti az importálást, akkor a program a kijelölt ER formátumra vonatkozó meglévő alkalmazásfüggő paramétereket kitörli, és a kezdetektől fogva újra be kell állítani őket.
-
-A Dynamics 365 Finance 10.0.23-as verziójától kezdve módosítani lehet az alapértelmezett viselkedést, és így el lehet kerülni a figyelmeztető üzenetet az **ER-alkalmazásspecifikus paraméterek összehangolása az importálás során** funkció engedélyezésével a **Funkciókezelés** munkaterületen. Ha ez a funkció engedélyezve van, amikor az adott fájl alkalmazásspecifikus paramétereinek szerkezete eltér a cél ER-formátum kapcsolódó adatforrásainak struktúrájától, amely ki van választva importálásra, az importálás a következő esetekben lesz sikeres:
-
-- A cél ER-formátum szerkezete úgy módosult, hogy új feltételoszlopokat adott hozzá a meglévő **Keresés** típusú adatforrásokhoz. Az importálás befejeztével frissülnek az alkalmazásspecifikus paraméterek. Az alkalmazásspecifikus paraméterek minden importált rekordjánál az értékek minden hozzáadott feltételoszlopban inicializálva lesznek az adott oszlop [adattípusának](er-formula-supported-data-types-primitive.md) alapértelmezett értékével.
-- A cél ER-formátum szerkezete úgy módosult, hogy új feltételoszlopokat távolított el a meglévő **Keresés** típusú adatforrásokból. Az importálás befejeztével frissülnek az alkalmazásspecifikus paraméterek. Az alkalmazásspecifikus paraméterek minden importált rekordjában az összes eltávolított feltételoszlop értékei törölve lesznek.
-- A cél ER-formátum szerkezete úgy módosult, hogy **Keresés** típusú adatforrások lettek hozzáadva. Az importálás befejeztével a hozzáadott keresések hozzá lesznek fűzve az alkalmazásspecifikus paraméterekhez.
-- A cél ER-formátum szerkezete úgy módosult, hogy el lettek távolítva **Keresés** típusú meglévő adatforrások. Az importálás befejeztével a rendszer törli az importált alkalmazásspecifikus paraméterekből azokat a műtermékeket, amelyek a cél ER-formátumból eltávolított **Keresés** típusú adatforrásához kapcsolódnak.
-
-Amikor az importálás befejeződik, az előbb leírt módosításokon túl az importált alkalmazásspecifikus paraméterek állapota **Folyamatban** értékre lesz módosítva. Figyelmeztető üzenet tájékoztatja, hogy az automatikusan módosított alkalmazásspecifikus paramétereket manuálisan kell szerkeszteni.
 
 ### <a name="reuse-existing-parameters"></a>Meglévő paraméterek újrafelhasználása
 

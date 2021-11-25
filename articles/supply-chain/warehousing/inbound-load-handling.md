@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-03-21
 ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c2d7f140c0199b4b81a7b42220d5800d427be680
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 464d49f4e096fdd4fe47f73efc253c97200f4de3
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577840"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778059"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Beszerzési rendelések bejövő rakományának kezelése a raktárban
 
@@ -54,7 +54,7 @@ A következő ábra a beszerzésirendelési-mennyiséggel rendelkező bejövő r
 
     Miután a rakománymennyiségek regisztrálva lettek, ezeknek a mennyiségeket termékként kell bevételezni vagy feladni, hogy bekerüljenek a vállalat készletfőkönyvébe a fizikai készlet növekedésének rögzítéséhez. A további tudnivalókat lásd [Termékbevételezés összevetése a beszerzési rendelésekkel – termékbevételezés](../procurement/product-receipt-against-purchase-orders.md#product-receipt) és [Regisztrált termékmennyiségek feladása beszerzési rendelésekkel szemben](#post-registered-quantities).
 
-## <a name="register-item-quantities-that-arrive-on-an-inbound-load"></a><a name="register-item-quantities-arriving"></a>Bejövő rakománnyal érkező cikkmennyiség regisztrálása
+## <a name="register-item-quantities-that-arrive-on-an-inbound-load"></a><a name="register-item-quantities-arriving"></a> Bejövő rakománnyal érkező cikkmennyiség regisztrálása
 
 A Microsoft Dynamics 365 Supply Chain Management számos operatív megközelítést támogat a megrendelt termékek érkezésének regisztrálásához. Így a rendszer beállítható úgy, hogy megfeleljen a specifikus üzleti követelményeknek. Ez a szakasz bemutatja, hogyan regisztrálhatók a bejövő cikkmennyiség egy mobileszköz használatával, amikor a speciális raktárkezelés be van kapcsolva a rendszerben. Azonban van egy alternatív folyamat, amely a mobileszköz helyett a cikkérkezési-napló használatán alapul. Ezen folyamattal kapcsolatos további információért lásd: [Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával](tasks/register-items-advanced-warehousing.md).
 
@@ -92,7 +92,7 @@ Miután a dolgozó befejezte ezeket a lépéseket, a rendszer a megfelelő entit
 
 | Entitás | Frissítések | Jegyzet |
 |---|---|---|
-| Betöltés | A program frissíti a **Munka létrehozva mennyiség** mezőjét a rakománysoron a regisztrált mennyiség megjelenítéséhez. | A **Rakomány állapota** értéke továbbra is _Leszállított_ vagy _Nyitott_ , ha a rakományhoz nem állítottak be szállítási visszaigazolást. Ha legalább egy elraktározási munka elindult, akkor az _folyamatban_ állapotra módosul. |
+| Betöltés | A program frissíti a **Munka létrehozva mennyiség** mezőjét a rakománysoron a regisztrált mennyiség megjelenítéséhez. | A **Rakomány állapota** értéke továbbra is _Leszállított_ vagy _Nyitott_, ha a rakományhoz nem állítottak be szállítási visszaigazolást. Ha legalább egy elraktározási munka elindult, akkor az _folyamatban_ állapotra módosul. |
 | Olyan beszerzési rendeléshez tartozó készlettranzakció, amelyhez kapcsolódó rakomány-mennyiségek vannak regisztrálva |<p>Az alábbi mezőket frissíti a program:</p><ul><li>A <b>Bevételezés</b> mező be van állítva <i>Regisztrált</i> értékre.</li><li>A <b>Hely</b> mezőt a program a bevételezési tároló helykódjával frissíti. (Ez a kód az egyes raktárak <b>Alapértelmezett bevételezési hely</b> mezőjében van megadva.)</li><li>Az <b>Azonosítótábla</b> mező a regisztráció során megadott vagy létrehozott azonosítótábla-számmal frissül.</li><li>A <b>Rakományazonosító</b> mező értéke annak a rakománynak a számával lesz frissítve, amelyhez a mennyiség regisztrálva van. (Lásd a megjegyzést.)</li></ul> | A beszerzési rendelési készlettranzakciók és a rakománnyal szemben regisztrált mennyiségek közötti kapcsolatot a 10.0.9 verzióban vezették be opcionális funkcióként, amelynek neve _Beszerzésirendelés-készlettranzakciók társítása egy rakománnyal_. Ez a funkció különösen olyan folyamatok esetében hasznos, ha a beszerzett áruk egyetlen rendelését több rakományként szállítják, vagy ha a rakomány több beszerzési rendeléshez tartalmaz mennyiségeket. |
 | Raktári elraktározás | A munka egy munkasablon alapján jön létre, és utasítja a dolgozót, hogy helyezze át a regisztrált mennyiségeket a bevételezési helyről egy szabályos tárolási helyre. | A tárolóhely választását az Elraktározási helyutasítás vezérli. Ha nincs meghatározva helyutasítás, akkor a munka elraktározási helye üres. |
 
@@ -113,7 +113,7 @@ A raktári dolgozók részleges rakománymennyiség-bevételezés regisztráció
 
 Amikor egy rakomány érkezik, ha a cikkmennyiség kisebb, mint a rakományrekordban szereplő mennyiség, a raktári befogadó személyzet közvetlenül az ügyfélen is képes feldolgozni, nyugtázva ezt az eltérést úgy, hogy a terhelési sor mennyiségét csökkenti, hogy az megfeleljen a beérkezett és regisztrált tényleges mennyiségnek.
 
-#### <a name="load-over-receiving"></a><a name="load-over-receiving"></a>Nagyobb mennyiségű rakomány bevételezése
+#### <a name="load-over-receiving"></a><a name="load-over-receiving"></a> Nagyobb mennyiségű rakomány bevételezése
 
 Túlbevételezésre akkor kerül sor, amikor a rakomány megérkezik, és a cikkmennyiség túllépi a várt terhelésisor-mennyiséget. Megadhatja, hogy a rakomány regisztrálásakor milyen mértékű túlbevételezést engedélyez a program, ha egyáltalán engedélyezi.
 
@@ -147,7 +147,7 @@ Amikor a raktári dolgozó befejezte az elraktározási munkát, a rendszer rög
 | Azon munkafolyamatok készlettranzakciói, amelyekhez a társított mennyiségek eltárolásra kerülnek | A program frissíti a **Bevételezés** és a **Hely** és más kapcsolódó mezőket és, hogy azok bevételezési helyről a tárolóhelyre irányuló mozgást tükrözzék. | A beszerzési rendelés készlettranzakció **Bevételezési állapot** értéke továbbra is _Regisztrálva_ értéken marad. |
 | Raktári elraktározás | A **Munk állapota** értéke _Lezárt_ értékre módosul. | |
 
-## <a name="post-registered-product-quantities-against-purchase-orders"></a><a name="post-registered-quantities"></a>A regisztrált termékmennyiségek feladása a beszerzési rendelésekkel szemben
+## <a name="post-registered-product-quantities-against-purchase-orders"></a><a name="post-registered-quantities"></a> A regisztrált termékmennyiségek feladása a beszerzési rendelésekkel szemben
 
 Miután a bejövő termékmennyiség regisztrálva van a rendszerben, elérhetővé válik az értékesítési és egyéb kimenő és belső műveletekkel kapcsolatos foglalások számára. A rendszer azonban még nem frissíti a készlet- (ideiglenes) számlákat. Ez a frissítés csak akkor történhet meg, ha a műveleti csoport feladja a regisztrált termékbevételezéseket.
 
@@ -267,7 +267,7 @@ A forgatókönyvek előfeltétele, hogy a _Több termékbevételezés feladása 
 
 1. Nyissa meg a **Funkciókezelés** munkaterületet. (A munkaterület megtalálásával és használatával kapcsolatos részletes tudnivalókat lásd: [Funkciókezelés áttekintése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. Kapcsolja be a _Beszerzésirendelés-készlettranzakciók társítása egy rakománnyal_ funkciót, amely a következő módon van listázva:
+1. Győződjön meg róla, hogy be van kapcsolva a Beszerzési rendelés _készlettranzakciók társítása a_ rakományhoz funkció. Az Ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció kötelező, ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni. Ennek ellenére a funkció a következő módon továbbra is megjelenik a [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) Szolgáltatáskezelésben:
 
     - **Modul:** _Raktárkezelés_
     - **Funkció neve:** _Beszerzésirendelés-készlettranzakciók társítása egy rakománnyal_

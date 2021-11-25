@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 08/11/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: da5ca16ed87108f8046348c831d37085f6f780d7
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
-ms.translationtype: HT
+ms.openlocfilehash: 127b4092ad3c5e8737aff43f503e0a8f36ff1ec8
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386685"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781344"
 ---
 # <a name="party-and-global-address-book"></a>Fél és globális címjegyzék
 
@@ -26,18 +26,18 @@ A *Fél* és *globális címjegyzék* fogalmak a Finance and Operations alkalmaz
 
 ## <a name="party"></a>Fél
 
-A fél az üzletben részt vevő személy vagy szervezet. Amikor a fél fogalmának használatával egy személy vagy szervezet egynél több szerepkört (például dolgozó, vevő, szállító vagy kapcsolattartó) is játszhat egy vállalkozásban. A szerepkör a kontextuson és a célon alapul. Íme néhány példa két fiktív vállalat szerepköréről, a Contoso-ról és a Fabrikam-ról:
+A fél az üzletben részt vevő személy vagy szervezet. Amikor a fél fogalmának használatával egy személy vagy szervezet egynél több szerepkört (például dolgozó, vevő, szállító vagy kapcsolattartó) is játszhat egy vállalkozásban. A szerepkör a kontextuson és a célon alapul. Néhány példa két fiktív vállalat, a Contoso és a Gyár szerepi szerepire:
 
 + **Dolgozó** – Egy alkalmazott. Ilyen például a Contoso alkalmazottja.
-+ **Szállító** – Egy szállító szervezetre vagy egy olyan kizárólagos tulajdonosra vonatkozik, aki árukat vagy szolgáltatásokat nyújt egy vállalkozásnak. Ha például a Fabrikam készleteket ad el a Contoso-nak, akkor a Fabrikam a Contoso szállítója:
-+ **Névjegy** – Kapcsolattartó személy. Ha például a Contoso kellékanyagokat vásárol a Fabrikamtól, akkor a Contoso alkalmazottai kapcsolatba lépnek a Fabrikam kapcsolattartójával.
-+ **Vevő** – Olyan személy vagy vállalat, aki vagy amely dolgokat vásárol egy vállalattól. Ha például a Contoso kellékeket vásárol a Fabrikamtól, akkor a Contoso a Fabrikam vevője.
++ **Szállító** – Egy szállító szervezetre vagy egy olyan kizárólagos tulajdonosra vonatkozik, aki árukat vagy szolgáltatásokat nyújt egy vállalkozásnak. Ha például a Gyár kellékeket értékesít a Contoso számára, akkor a Gyár a Contoso szállítója.
++ **Névjegy** – Kapcsolattartó személy. Ha például a Contoso kellékeket vásárol a Gyártól, akkor a Contoso alkalmazottai kapcsolatba lépnek a Gyár kapcsolattartóval.
++ **Vevő** – Olyan személy vagy vállalat, aki vagy amely dolgokat vásárol egy vállalattól. Ha például a Contoso kellékeket vásárol a Gyártól, akkor a Contoso a Gyár vevői.
 
 A fél modellt gyakran használják a szervezetek és az emberek közötti közepes és összetett kapcsolatok képviseletére, különösen akkor, ha egy párt egynél több szerepet játszik. Íme néhány gyakori példa:
 
-+ A fél lehet vevő és szállító is. Észak-Amerikában például a Fabrikam elektromos vezetékeket értékesít a Contoso-nak, és összeszerelt hangszórókat vásárol a Contoso-tól. Európában a Fabrikam alkatrészeket ad el a Contoso-nak, de a Contoso-tól semmit sem vásárol.
++ A fél lehet vevő és szállító is. Például Észak-Amerika, a Gyár elektromos autókat értékesít a Contoso számára, és összeállítva vásárol a Contoso vállalattól. Európában a Gyár alkatrészeket értékesít a Contoso számára, de nem vásárol a Contoso vállalattól.
 + A fél lehet munkavállaló és vevő is. A Contoso egyik alkalmazottja például személyes használatra vásárol elektronikai termékeket a Contoso-tól.
-+ Egy személy és egy szervezet között sok a sokhoz (N:N) kapcsolat is lehet. A Fabrikam például szervizszakértőket biztosít, és elhelyezési koordinátort alkalmaz. A helyettes koordinátor elosztja a Fabrikam több ügyféltől érkező munkakérelmeihez a szervizszakembereket. Contoso a Fabrikam egyik vevője. Amikor a Contoso-nak szervizszakemberre van szüksége, kapcsolatba lép a helyettes koordinátorral, aki elintézi a kérést. Mivel a helyettes koordinátor kezeli az összes vevő kérését, egy N:N kapcsolatban vesz részt.
++ Egy személy és egy szervezet között sok a sokhoz (N:N) kapcsolat is lehet. A Fabrikam például szervizszakértőket biztosít, és elhelyezési koordinátort alkalmaz. A helyettes koordinátor elosztja a Fabrikam több ügyféltől érkező munkakérelmeihez a szervizszakembereket. A Contoso a Gyár egyik vevői. Ha a Contoso szakértőt igényel, akkor kapcsolatba lép az elhelyezések koordinálóját, aki ezután megkönnyíti a kérést. Mivel a helyettes koordinátor kezeli az összes vevő kérését, egy N:N kapcsolatban vesz részt.
 
 A következő ábrán a fél adatmodellje látható.
 
@@ -271,25 +271,25 @@ Ahogy az alábbi táblázatban látható, az táblaleképezések gyűjteménye e
 
 | Finance and Operations alkalmazás | Customer Engagement alkalmazás | Leírás |
 |----------------------------|-------------------------|-------------|
-| [Kapcsolattartó megszólításai](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
+| [Kapcsolattartó megszólításai](mapping-reference.md#223) | msdyn\_ salescontactpersontitles |
 | [Vevők V3](mapping-reference.md#101) | számlák |
 | [Vevők V3](mapping-reference.md#116) | kapcsolattartók |
-| [CDS-felek](mapping-reference.md#220) | msdyn\_parties |
-| [CDS-fél postai címének helyei](mapping-reference.md#233) | msdyn\_partypostaladdresses |
-| [CDS-fél postai címének előzményei V2](mapping-reference.md#235) | msdyn\_postaladdresses |
-| [CDS postai címének helyei](mapping-reference.md#234) | msdyn\_postaladdresscollections |
+| [CDS-felek](mapping-reference.md#220) | msdyn\_ parties |
+| [CDS-fél postai címének helyei](mapping-reference.md#233) | msdyn\_ partypostaladdresses |
+| [CDS-fél postai címének előzményei V2](mapping-reference.md#235) | msdyn\_ postaladdresses |
+| [CDS postai címének helyei](mapping-reference.md#234) | msdyn\_ postaladdresscollections |
 | [CDS értékesítésiajánlat-fejléc](mapping-reference.md#215) | ajánlatok |
 | [CDS értékesítésirendelés-fejlécek](mapping-reference.md#217) | salesorders |
-| [Udvarias levélzárások](mapping-reference.md#222) | msdyn\_complimentaryclosings |
-| [Kapcsolattartók V2](mapping-reference.md#221) | msdyn\_contactforparties |
-| [Döntéshozatali szerepkörök](mapping-reference.md#224) | msdyn\_decisionmakingroles |
-| [Foglalkoztatási beosztásfunkciók](mapping-reference.md#225) | msdyn\_employmentjobfunctions |
-| [Hűségszintek](mapping-reference.md#226) | msdyn\_loyaltylevels |
-| [Ügyfél-kapcsolattartók V3](mapping-reference.md#236) | msdyn\_partyelectronicaddresses |
-| [Személyes karaktertípusok](mapping-reference.md#227) | msdyn\_personalcharactertypes |
+| [Udvarias levélzárások](mapping-reference.md#222) | msdyn\_ complimentaryclosings |
+| [Kapcsolattartók V2](mapping-reference.md#221) | msdyn\_ contactforparties |
+| [Döntéshozatali szerepkörök](mapping-reference.md#224) | msdyn\_ decisionmakingroles |
+| [Foglalkoztatási beosztásfunkciók](mapping-reference.md#225) | msdyn\_ employmentjobfunctions |
+| [Hűségszintek](mapping-reference.md#226) | msdyn\_ loyaltylevels |
+| [Ügyfél-kapcsolattartók V3](mapping-reference.md#236) | msdyn\_ partyelectronicaddresses |
+| [Személyes karaktertípusok](mapping-reference.md#227) | msdyn\_ personalcharactertypes |
 | [Értékesítésiszámla-fejlécek V2](mapping-reference.md#118) | számlák |
-| [Üdvözlések](mapping-reference.md#228) | msdyn\_salutations |
-| [Szállítók V2](mapping-reference.md#202) | msdyn\_vendors |
+| [Üdvözlések](mapping-reference.md#228) | msdyn\_ salutations |
+| [Szállítók V2](mapping-reference.md#202) | msdyn\_ vendors |
 
 További tájékoztatás: [Kettős írású leképezési hivatkozás](mapping-reference.md).
 

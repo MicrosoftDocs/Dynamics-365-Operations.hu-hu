@@ -5,17 +5,17 @@ author: FrankDahl
 ms.date: 09/23/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f1d818944ed2779cdad15d84673369e31243285f
-ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
-ms.translationtype: HT
+ms.openlocfilehash: 2f31009424629221a8e4f130b0ec1879c6c6e3d4
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2021
-ms.locfileid: "7556765"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781963"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool-oktatóanyag
 
@@ -79,13 +79,13 @@ Miután lefutott a teszteset, az Excel-paraméterfájlban szereplő üzenetet a 
 
 Ez a funkció képernyőképeket készít a feladatrögzítés során végrehajtott lépésekről. Ez a ellenőrzés vagy hibakeresés céljából hasznos.
 
-- A funkció használatához az RSAT futtatása során felhasználói felülettel nyissa meg a **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
+- A funkció használatához az RSAT futtatása során felhasználói felülettel nyissa meg a **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\ Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-- A funkció használatához az RSAT futtatása CLI-n keresztül (például Azure DevOps) nyissa meg a **Microsoft.Dynamics.ConsoleApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
+- A funkció használatához az RSAT futtatása CLI-n keresztül (például Azure DevOps) nyissa meg a **Microsoft.Dynamics.ConsoleApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\ Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />

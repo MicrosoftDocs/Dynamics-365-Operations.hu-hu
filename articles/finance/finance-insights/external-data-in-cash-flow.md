@@ -1,8 +1,8 @@
 ---
 title: Külső adatok használata pénzforgalmi előrejelzésekben
-description: Ez a témakör azokat a beállítási lépéseket ismerteti, amelyeket végre kell hajtania ahhoz, hogy külső adatokat lehessen bevinni vagy behozni a pénzforgalmi előrejelzésekbe.
+description: Ez a témakör azokat a beállítási lépéseket ismerteti, amelyeket el kell végrehajtani annak érdekében, hogy a pénzforgalmi előrejelzésekbe külső adatokat lehet beírni vagy importálni.
 author: rcarlson
-ms.date: 07/16/2021
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,30 +15,35 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 855f428ae8ce79f2b7ce9a6f3347cd454bad9566
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
-ms.translationtype: HT
+ms.openlocfilehash: dbfa04228cf63c0874a7d69af4e2b932544c0d7f
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386462"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7753002"
 ---
 # <a name="use-external-data-in-cash-flow-forecasts"></a>Külső adatok használata pénzforgalmi előrejelzésekben
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A külső adatok bevihetők vagy importálhatók a pénzforgalmi előrejelzésekbe. Ez a témakör azokat a beállítási lépéseket ismerteti, amelyek a külső adatok használatára vonatkoznak, és amelyek lehetővé teszik a külső adatok pénzforgalmi előrejelzésbe való beírását.
 
 ## <a name="external-data-setup"></a>Külső adatbeállítás
 
-A **Pénzforgalmi előrejelzés beállítása** lapon (**Készpénz- és bankkezelés \> Pénzforgalmi előrejelzés**) lévő **Külső forrás** oldalon adhatja meg azokat a beállításokat, amelyek támogatják a külső adatok használatát a pénzforgalmi előrejelzésekben.
+A Pénzforgalom előrejelzése beállítási lapjának Külső forrás lapja ( Készpénz- és bankkezelés pénzforgalmi előrejelzés - Pénzforgalmi előrejelzés beállítása) használatával adja meg a külső adatok pénzforgalmi előrejelzésekben való használatát támogató **·** **·** **\>\>** beállításokat.
 
-Az számlálók beállításával kapcsolatos további információkat lásd: [Pénzforgalmi előrejelzés](../cash-bank-management/cash-flow-forecasting.md).
+A külső adatok bevihetők vagy importálhatók a pénzforgalmi előrejelzésekbe. A külső adatok bevitele vagy importálása előtt be kell állítani a külső adatforrásokat. A Külső **forrás lapon állítsa be a külső pénzforgalmi** kategóriákat. A kategória lehet kimenő **vagy** **·** bejövő. **Feladási** típusként a likviditást kell kiválasztani. A Jogi személyek beállításai rácsban válassza ki a jogi személyeket és a megfelelő fő számlákat, amelyekre a külső pénzforgalmi **·** kategóriák vonatkoznak.
 
-A pénzforgalmi előrejelzések külső adatainak megadásához használja az Open in Excel felhasználói felületet külső adatok beviteléhez és módosításához. Válassza ki a **Külső adatok** gombot, majd válassza a **Külső adatok hozzáadása** vagy a **Meglévő külső adatok szerkesztése** lehetőséget. A Microsoft Excel-fájl megnyitásakor a következő mezőkben adhatja meg a kívánt adatokat:
+A pénzforgalmi előrejelzések beállításának további tudnivalókat lásd: [Pénzforgalmi](../cash-bank-management/cash-flow-forecasting.md) előrejelzés.
 
-- **Bejegyzésazonosító**
+## <a name="enter-external-data"></a>Külső adatok beírása
+
+A pénzforgalmi előrejelzések külső adatainak módosítására az Excelben való megnyitás tapasztalat **·** használható. Jelölje ki a Külső adatok gomb a Pénzforgalmi előrejelzés beállítása lapon, majd válassza a Külső adatok hozzáadása vagy a Meglévő külső adatok **·** szerkesztése **·** **·** **·** lehetőséget. A Microsoft Excel-fájl megnyitásakor a következő mezőkben adhatja meg a kívánt adatokat:
+
+- **Bejegyzésazonosító** (egyedi)
 - **Leírás** (nem kötelező)
-- **Külső forrás neve** – A pénzügyi betekintések beállításakor megadott lista egyik értékének kiválasztása.
+- **Külső forrás neve – válasszon ki egyet a Pénzügyi információk beállításakor meghatározott** listából.
 - **Jogi személy**
 - **Dátum**
 - **Összeg a tranzakció pénznemében.**

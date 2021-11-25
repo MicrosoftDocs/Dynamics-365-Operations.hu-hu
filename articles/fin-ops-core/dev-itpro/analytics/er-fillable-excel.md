@@ -2,7 +2,7 @@
 title: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
 description: Ez a témakör azt mutatja be, hogyan lehet az Elektronikus jelentéskészítés (ER) formátumát egy Excel-sablon kitöltéséhez tervezni, majd a kimenő Excel-formátumú dokumentumokat generálni.
 author: NickSelin
-ms.date: 09/14/2021
+ms.date: 10/29/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fd3171ad24f9c06f04372b30f2682b6da516bcb6
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
-ms.translationtype: HT
+ms.openlocfilehash: cfacc2232201b85a49068ee724b55e71b60eb2be
+ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488138"
+ms.lasthandoff: 11/02/2021
+ms.locfileid: "7731638"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
@@ -45,22 +45,22 @@ A konfiguráció ER formátumkomponensének konfigurálásához válassza **Terv
 
 ### <a name="manual-entry"></a>Manuális bejegyzés
 
-Ahhoz, hogy a kimenő dokumentumokat Excel-formátumban hozza létre, egy **Excel\\fájl** komponenst kell hozzáadnia a konfigurált ER-formátumhoz.
+Ahhoz, hogy a kimenő dokumentumokat Excel-formátumban hozza létre, egy **Excel\\ fájl** komponenst kell hozzáadnia a konfigurált ER-formátumhoz.
 
 ![Excel\fájl-komponens.](./media/er-excel-format-add-file-component.png)
 
-A kimenő dokumentumok elrendezésének megadásához csatolnia kell egy olyan Excel-munkafüzetet, amelynek .xlsx kiterjesztéssel rendelkezik az **Excel\\fájlt** tartalmazó komponense, mint a kimenő dokumentumok sablonja.
+A kimenő dokumentumok elrendezésének megadásához csatolnia kell egy olyan Excel-munkafüzetet, amelynek .xlsx kiterjesztéssel rendelkezik az **Excel\\ fájlt** tartalmazó komponense, mint a kimenő dokumentumok sablonja.
 
 > [!NOTE]
 > A sablon manuális csatolása esetén olyan [dokumentumtípust](../../../fin-ops-core/fin-ops/organization-administration/configure-document-management.md#configure-document-types) dokumentumtípust kell használnia, amely az adott célra be van állítva az [ER paramétereiben](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents).
 
 ![Melléklet hozzáadása az Excel\fál-komponenshez.](./media/er-excel-format-add-file-component2.png)
 
-Ha meg szeretné adni, hogy a rendszer hogyan töltse ki a csatolt sablont a konfigurált ER-formátum futtatásakor, akkor hozzá kell adnia a beágyazott **Lapok**, **Tartomány** és **Cella** komponenseket az **Excel\\fájl** komponenshez. Minden beágyazott komponenshez társítani kell egy elem elnevezésű Excelt.
+Ha meg szeretné adni, hogy a rendszer hogyan töltse ki a csatolt sablont a konfigurált ER-formátum futtatásakor, akkor hozzá kell adnia a beágyazott **Lapok**, **Tartomány** és **Cella** komponenseket az **Excel\\ fájl** komponenshez. Minden beágyazott komponenshez társítani kell egy elem elnevezésű Excelt.
 
 ### <a name="template-import"></a>Sablon importálása
 
-Kiválaszthatja az **Importálás Excelből** lehetőséget a Műveleti panel **Importálás** lapfülén, ha egy új sablont üres ER-formátumba importál. Ebben a példában a program automatikusan létrehoz egy **Excel\\fájl** komponenst, és az importált sablont hozzárendeli a program. A program az összes szükséges ER-komponenst automatikusan létrehozza a felismert Excel nevű tételek listájának alapján.
+Kiválaszthatja az **Importálás Excelből** lehetőséget a Műveleti panel **Importálás** lapfülén, ha egy új sablont üres ER-formátumba importál. Ebben a példában a program automatikusan létrehoz egy **Excel\\ fájl** komponenst, és az importált sablont hozzárendeli a program. A program az összes szükséges ER-komponenst automatikusan létrehozza a felismert Excel nevű tételek listájának alapján.
 
 ![Az Importálás az Excelből lehetőség kiválasztása.](./media/er-excel-format-import-template.png)
 
@@ -85,6 +85,8 @@ Az ER műveleti tervező **Leképezés** lapján beállíthatja az **Engedélyez
 
 A **Tartomány**-összetevő egy olyan Excel-tartományt jelöl, amelyet ennek az ER-komponensnek kell vezérelni. Az **Excel-tartományban** megadott kiterjedés neve a komponens tulajdonságában van meghatározva.
 
+### <a name="replication"></a>Replikáció
+
 A **Replikációs irány** tulajdonság határozza meg, hogy a rendszer hogyan fogja megismételni a tartományt a létrejövő dokumentumban:
 
 - Ha a **Replikációs irány** tulajdonsága **Nem replikálásra** van állítva, akkor a megfelelő Excel-tartomány nem fog megismétlődni a létrejövő dokumentumban.
@@ -92,6 +94,8 @@ A **Replikációs irány** tulajdonság határozza meg, hogy a rendszer hogyan f
 - Ha a **Replikációs irány** tulajdonsága **Vízszintes** értékre van állítva, akkor a megfelelő Excel-tartomány nem fog megismétlődni a létrejövő dokumentumban. Minden replikált tartomány egy Excel-sablonban az eredeti tartomány jobb oldalára kerül. Az ismétlések számát a **Rögzítési lista** típus adatforrásainak rögzítéseinek számának meghatározása határozza meg, amely az típusú ER-komponenshez kötődik.
 
 Ha további tájékoztatást szeretne a vízszintes replikálásról, hajtsa végre a [Vízszintesen kibontható tartományok az Excel-jelentések oszlopainak dinamikus hozzáadásához](tasks/er-horizontal-1.md) dokumentum lépéseit.
+
+### <a name="nested-components"></a>Beágyazott összetevők
 
 A **Tartomány**-összetevő más beágyazott ER-összetevőkkel is rendelkezhet, amelyek a megfelelő Excel-tartományokban szereplő értékek megadására szolgálnak.
 
@@ -105,11 +109,40 @@ A **Tartomány**-összetevő más beágyazott ER-összetevőkkel is rendelkezhet
     > [!NOTE]
     > Ennek a mintának a használatával engedélyezheti az Excel-alkalmazás számára a megadott értékek formátumát a kimenő dokumentumot megnyitó helyi számítógép területi beállításai alapján.
 
+### <a name="enabling"></a>Engedélyezés folyamatban
+
 Az ER műveleti tervező **Leképezés** lapján beállíthatja az **Engedélyezés** tulajdonságot egy **Tartomány** komponenshez annak meghatározására, hogy a komponenst egy generált dokumentumban kell-e elhelyezni:
 
 - Ha az **Engedélyezés** tulajdonság kifejezése úgy van beállítva, hogy futás közben **Igaz** értéket ad vissza, vagy ha nincs megadva a kifejezés, akkor a rendszer a megfelelő tartománnyal tölti ki a létrejövő dokumentumot.
 - Ha az **Engedélyezés** tulajdonság kifejezése úgy van beállítva, hogy futás közben **Hamis** értéket ad vissza, és ez a tartomány nem az összes sort vagy oszlopot reprezentálja, akkor a rendszer a megfelelő tartománnyal tölti ki a létrejövő dokumentumot.
 - Ha az **Engedélyezés** tulajdonság kifejezése úgy van beállítva, hogy futás közben **Hamis** értéket ad vissza, és ez a tartomány az összes sort vagy oszlopot reprezentálja, akkor a létrejövő dokumentum ezeket a sorokat és oszlopokat rejtett sorokként és oszlopokként fogja tartalmazni.
+
+### <a name="resizing"></a>Átméretezés
+
+Az Excel-sablont úgy is beállíthatja, hogy cellákat használjon a szöveges adatokhoz. Annak érdekében, hogy a cella teljes szövege látható legyen egy generált dokumentumban, be lehet állítani, hogy a cella automatikusan becsomagolja a szöveget a szövegbe. Beállíthatja azt is, hogy a cellát tartalmazó sor automatikusan módosítsa a magasságát, ha a szöveg nem látható teljesen. A további tudnivalókat lásd a "Szöveg csomagolása cellában" szakasz a cellákban levágott adatok [kijavítása című részében](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e).
+
+> [!NOTE]
+> Az Excel egy ismert korlátozása miatt – még akkor is, ha a cellákat a szöveg csomagolására konfigurálja, és úgy konfigurálja a cellákat tartalmazó sorokat, hogy a magasságuk automatikusan a szöveg szövegének megfelelő legyen, előfordulhat, hogy az egyesített cellákhoz és az őket tartalmazó sorokhoz nem tudja használni az AutoFit és a Csomagoló szöveg [...](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353) Excel **·** **·** szolgáltatást. 
+
+A 10.0.23-as verziótól az ER-t kényszerítheti arra, hogy egy generált dokumentumban kiszámítsa minden olyan sor magasságát, amely úgy volt beállítva, hogy automatikusan elférjen az egymásba ágyazott cellák tartalmához, valahányszor ez a sor legalább egy olyan egyesített cellát tartalmaz, amely úgy van beállítva, hogy a szöveget a fájlba Dynamics 365 Finance csomagolja. A kiszámított magasság segítségével átméretezheti a sort, hogy a létrehozott dokumentumban a sor minden cellája látható legyen. Ha elkezdi használni ezt a funkciót, amikor bármilyen OLYAN ER-formátumot futtat, amely a kimenő dokumentumok előállításához Excel-sablonokat használt, kövesse ezeket a lépéseket.
+
+1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
+2. A **Lokalizációs konfigurációk** oldalon, a **Kapcsolódó hivatkozások** szakaszban, válassza az **Elektronikus jelentéskészítés paraméterei** elemet.
+3. Az Elektronikus jelentés paraméterei lap Futási idő lapján állítsa Az Automatikus illesztés sor magassága beállítást **·** Igen **·** **·** **·** beállításra.
+
+Ha egyetlen ER-formátumban szeretné módosítani ezt a szabályt, a következő lépések szerint frissítse annak vázlatverzióját.
+
+1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
+2. A **Lokalizációs konfigurációk** oldalon, a **Konfigurációk** szakaszban, válassza ki a **Jelentéskészítési konfiguráció** csempét.
+3. A Konfigurációk lap bal oldali konfigurációs fájában válasszon ki egy ER-konfigurációt, amely Egy Excel-sablont használ a kimenő dokumentumok **·** előállítására.
+4. A **Verziók** gyorslapon válassza ki azt a konfigurációverziót, amelynek az állapota **Piszkozat**.
+5. A Műveleti ablaktáblán kattintson a **Tervező** elemre.
+6. A Formátumtervező lap bal oldali formátumfában válassza ki azt az Excel-összetevőt, amely Excel-sablonhoz **·** van kapcsolva.
+7. A Formátum lap Sor magasságának módosítása mezőjében válassza ki azt az értéket, amely meghatározza, hogy futásidőben az ER kötelező legyen-e a sorok magasságának módosítására a szerkesztett ER-formátum által létrehozott kimenő **·** **·** dokumentumban:
+
+    - **Alapértelmezett – az Elektronikus jelentés paraméterei oldal Automatikus illesztés sor magassága mezőjében beállított általános** **beállítás** **·** használata.
+    - **Igen – az általános beállítás felülbírálása és a sor** magasságának módosítása futásidőben.
+    - **Nem – felülbírálja az általános beállítást, és futásidőben nem módosítja** a sor magasságát.
 
 ## <a name="cell-component"></a>Cellaösszetevő
 
@@ -138,7 +171,7 @@ Ha további tájékoztatást szeretne arról, hogyan lehet beágyazni a képeket
 
 A **PageBreak** összetevő az Excelt új lap létrehozására kényszeríti. Ezt az összetevőt nem szükséges használni az Excel alapértelmezett lapozásához, de akkor kell használni, ha azt szeretné, hogy az Excel kövesse a saját formátumát a lapozás felépítéséhez.
 
-## <a name="page-component"></a><a name="page-component"></a>Lapösszetevő
+## <a name="page-component"></a><a name="page-component"></a> Lapösszetevő
 
 ### <a name="overview"></a>Áttekintés
 
@@ -146,7 +179,7 @@ A **Lap** összetevőt akkor használhatja, ha azt szeretné, hogy az Excel köv
 
 Ha egy létrehozott dokumentumot különböző szakaszokra kell felosztani, amelyek mindegyikének más a lapozása, akkor minden [Lap](er-fillable-excel.md#sheet-component) összetevőben konfigurálhat több **Oldal** összetevőt.
 
-### <a name="structure"></a><a name="page-component-structure"></a>Szerkezet
+### <a name="structure"></a><a name="page-component-structure"></a> Szerkezet
 
 Ha az **Oldal** összetevő alatt az első összetevő egy [Tartomány](er-fillable-excel.md#range-component) összetevő, ahol a **Replikáció iránya** tulajdonság **Nincs replikáció** értékre van állítva, ez a tartomány az aktuális **Oldal** összetevő beállításain alapuló lapfejlécnek számít. Az ehhez a formátumösszetevőhöz társított Excel-tartomány minden olyan lap tetején meg van ismételve, amelyet az aktuális **Oldal** összetevő beállításainak használatával generál a program.
 
@@ -167,7 +200,7 @@ Ha az **Oldal** összetevő alatt egymásba ágyazott **Tartomány** összetevő
 
 Ha azt szeretné, hogy a lapszámozással kapcsolatos összegzés és számozás kiszámítsa a laponként a görgetett összegeket és összegeket, javasoljuk, hogy konfigurálja a szükséges [Adatgyűjtés](er-data-collection-data-sources.md) adatforrásokat. Ha meg szeretne ismerkedni az **Oldal** összetevő használatával egy generált Excel-dokumentum oldalakra töréséhez, végezze el az [ER formátum tervezése a létrehozott dokumentum oldalakra töréséhez Excel-formátumban](er-paginate-excel-reports.md).
 
-### <a name="limitations"></a><a name="page-component-limitations"></a>Korlátozások
+### <a name="limitations"></a><a name="page-component-limitations"></a> Korlátozások
 
 Ha az **Oldal** összetevőt használja az Excel oldalakra töréséhez, a generált dokumentum végső oldalszámát nem fogja tudni a program, amíg be nem fejeződik az oldalakra tördelés. Ennek megfelelően nem tudja kiszámítani az oldalak összesített számát az ER-képletek használatával, és nem tudja kinyomtatni a létrehozott dokumentumok helyes oldalszámát az utolsó oldal előtti bármelyik oldalra.
 
@@ -206,7 +239,7 @@ Egyetlen **Lap** összetevőhöz több **Lábléc** összetevőt is hozzáadhat,
 > [!NOTE]
 > Győződjön meg arról, hogy az egyes **Lap** összetevőkhöz hozzáadott **Lábléc** összetevőnek más értéke legyen a **Fejléc/lábléc megjelenése** tulajdonságban. Ellenkező esetben [ellenőrzési hiba](er-components-inspections.md#i16) lép fel. A kapott hibaüzenet az inkonzisztenciáról tájékoztatja.
 
-A hozzáadott **Lábléc** összetevőnél adja hozzá a **Szöveg\\Sztring**, **Szöveg\\DátumIdő** vagy egyéb típusú beágyazott összetevőit. Konfigurálja ezen összetevők kötését a lábléc kitöltési módjának beállítására.
+A hozzáadott **Lábléc** összetevőnél adja hozzá a **Szöveg\\ Sztring**, **Szöveg\\ DátumIdő** vagy egyéb típusú beágyazott összetevőit. Konfigurálja ezen összetevők kötését a lábléc kitöltési módjának beállítására.
 
 Speciális [formázási kódokat](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) is használhat a létrehozott lábléc tartalmának megfelelő formázása érdekében. A megközelítés használatának elsajátításához kövesse a témakör [1. példájában](#example-1) leírt lépéseket.
 
@@ -221,7 +254,7 @@ A **Fejléc** összetevő segítségével kitölthető a fejléc egy Excel-munka
 
 ### <a name="update-a-template"></a>Sablon frissítése
 
-Kiválaszthatja az **Frissítés Excelből** lehetőséget a Műveleti panel **Importálás** lapfülén, ha egy frissített sablont egy szerkeszthető ER-formátumba importál. A folyamat során a kiválasztott **Excel\\fájl** komponens egy sablonját a program felülírja egy új sablonnal. A szerkeszthetővé tett ER-formátum tartalmát a program szinkronizálja a frissített ER-sablon tartalmával.
+Kiválaszthatja az **Frissítés Excelből** lehetőséget a Műveleti panel **Importálás** lapfülén, ha egy frissített sablont egy szerkeszthető ER-formátumba importál. A folyamat során a kiválasztott **Excel\\ fájl** komponens egy sablonját a program felülírja egy új sablonnal. A szerkeszthetővé tett ER-formátum tartalmát a program szinkronizálja a frissített ER-sablon tartalmával.
 
 - Minden Excel-névhez automatikusan létrejön egy új ER-formátum-összetevő, ha az ER-formátum összetevője nem található a szerkeszthető formában.
 - Ha nem találja meg a megfelelő Excel-nevet, akkor minden ER-formátum-összetevő törlődik a szerkeszthető ER-formátumból.
@@ -256,7 +289,7 @@ Az Microsoft Excel munkafüzet formátumú kimenő dokumentumok létrehozásakor
     > A képlet-újraszámítást kézzel kell végrehajtani, amikor a generált dokumentumot előnézetre megnyitják az Excel alkalmazással.
     > Ne használja ezt a lehetőséget, ha olyan ER-célt állított be, amely az Excel előnézete nélkül (PDF-átalakítás, e-mailek stb.) a létrejövő dokumentumok használatát feltételezi, mivel előfordulhat, hogy a létrejövő dokumentum nem tartalmaz értékeket a képleteket tartalmazó cellákban.
 
-## <a name="example-1-format-footer-content"></a><a name="example-1"></a>1. példa: Lábléc tartalmának formázása
+## <a name="example-1-format-footer-content"></a><a name="example-1"></a> 1. példa: Lábléc tartalmának formázása
 
 1. A megadott ER-konfigurációk segítségével nyomtatható szabadszöveges számlát (FTI) [generálhat](er-generate-printable-fti-forms.md).
 2. Ellenőrizze a létrehozott dokumentum láblécét. A dokumentum az aktuális oldalszámmal és a dokumentumok összesített oldalszámával kapcsolatos információkat tartalmaz.

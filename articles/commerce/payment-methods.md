@@ -1,8 +1,8 @@
 ---
 title: Kifizetési módok
 description: Minden egyes fizetéstípust, amelyet a kiskereskedő elfogad, konfigurálni kell a rendszer beállításakor. Ez a cikk a beállítható fizetéstípusokat mutatja be, valamint azok beállításának folyamatát.
-author: rubencdelgado
-ms.date: 06/17/2020
+author: BrianShook
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: yabinl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: c174dd136cecedc9b23bdaa778885f75e51c9aa556a9e2709bc7da171faa8617
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 0450dbaa37365705ca59fd2223c9d3866054c12a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713966"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779570"
 ---
 # <a name="payment-methods"></a>Kifizetési módok
 
@@ -47,5 +47,10 @@ Fizetési módok beállításához a következő feladatokat kell elvégeznie.
 3. Üzlethez tartozó fizetési mód beállítása. Minden egyes üzlethez fizetési módokat kell társítania, majd meg kell adnia az egyes fizetési módok adott üzletben jellemző beállításait.
 4. Kártyás fizetési módok beállítása az üzletekhez. Minden kártyás fizetési módhoz, amelyet az üzlet elfogad, végezze el a kártyabeállítást.
 
+## <a name="handle-change-tendering-for-payment-methods"></a>A fizetési módokhoz használt visszaváltásos fizetési módok kezelési módjai
+
+Egyes fizetési módok nem támogatják a közvetlen visszaváltásos fizetőeszközt, ha a fedezet vissza lesz fizetve a vevőknek a point-of-sale tranzakciók során. Csak a készpénzes és a pénznemes fizetési **·** módok **·** használhatók fizetőeszköz-váltásra. 
+
+Olyan esetek kezeléséhez, amikor egy tranzakció során módosítani kell a fizetőeszközt, de a fizetési mód nem támogatja, megadhatja a Visszaváltás fizetőeszköze fizetési **·** módot. Az üzlet fizetési módjainál válassza ki a használni kívánt fizetési módot. Ezután a Visszaváltás szakaszban adjon meg egy visszaváltásos fizetési **·** **·** beállítást. 1 érték megírása esetén például jelezheti, hogy a készpénz fizetőeszköz-módosítási fizetési **·** lehetőségként használható.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

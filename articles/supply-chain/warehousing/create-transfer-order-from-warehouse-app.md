@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 986abfaef81474571de7db179253c4d76f65d4bec180fa9f355f3218ddbb96ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746819"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777815"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Átmozgatási rendelések létrehozása a raktári alkalmazásból
 
@@ -26,7 +26,7 @@ ms.locfileid: "6746819"
 
 Ez a funkció lehetővé teszi a raktári dolgozók számára, hogy közvetlenül a Raktárkezelés mobilalkalmazásból hozzanak létre és dolgozzanak fel átmozgatási rendeléseket. A dolgozók azzal kezdik, hogy kiválasztják a célraktárat, majd az alkalmazás segítségével egy vagy több azonosítótáblát beolvasnak, hogy azonosítótáblát adhassanak hozzá az átmozgatási rendeléshez. Ha a raktári dolgozó kiválasztja a **Rendelés teljesítése** elemet, akkor egy kötegelt feladat létrehozza a szükséges átmozgatási rendelést és a rendelési sorokat az adott azonosítótáblákhoz regisztrált aktuális készlet alapján.
 
-## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Átmozgatási rendelések létrehozásának engedélyezése raktári alkalmazásból
+## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a> Átmozgatási rendelések létrehozásának engedélyezése raktári alkalmazásból
 
 A funkció használatba vétele előtt engedélyeznie kell a funkciót és annak előfeltételeit a rendszerben. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) oldalt a funkció állapotának ellenőrzéséhez, és szükség esetén engedélyezéséhez.
 
@@ -36,11 +36,11 @@ A funkció használatba vétele előtt engedélyeznie kell a funkciót és annak
 1. Ezután engedélyezze az *Átmozgatási rendelések létrehozása a raktári alkalmazásból* funkciót, amely a következőként szerepel a listában:
     - **Modul:** Raktárkezelés
     - **Funkció neve** – Átmozgatási rendelések létrehozása és feldolgozása raktári alkalmazásból
-1. Ha szeretné automatizálni a kimenő szállítmányok feldolgozását, engedélyeznie kell a [Kimenő szállítmányok jóváhagyása kötegelt feladatokból](confirm-outbound-shipments-from-batch-jobs.md) funkciót. A funkció a következőként szerepel:
+1. Ha szeretné automatizálni a kimenő szállítmányok feldolgozását, engedélyeznie kell a [Kimenő szállítmányok jóváhagyása kötegelt feladatokból](confirm-outbound-shipments-from-batch-jobs.md) funkciót. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés lapon ellenőrizhetik a funkció állapotát, és szükség esetén engedélyezhetik vagy [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) letilthatják azt. Itt a funkció a következőként szerepel:
     - **Modul:** Raktárkezelés
     - **Funkció neve** – Kimenő szállítmányok jóváhagyása a kötegelt feladatokból
 
-## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Mobileszköz-menüelem beállítása átmozgatási rendelések létrehozásához
+## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a> Mobileszköz-menüelem beállítása átmozgatási rendelések létrehozásához
 
 Az alábbiakban általános útmutatás található az átmozgatási rendelés létrehozásához szükséges mobileszköz-menüelemek beállításáról. Attól függően, hogy a vállalat igényei szerint milyen automatizálási szintet kell beállítani, amikor a felhasználók az üzemben átmozgatási rendeléseket hoznak létre, különféle konfigurációk lesznek engedélyezve. Az ebben a dokumentumban szereplő eset egy ilyen konfigurációt mutat be.
 
@@ -254,7 +254,7 @@ Adjon hozzá ténylegesen rendelkezésre álló mennyiségeket a következő ér
 
 Az említett példában két **Raktári alkalmazási esemény** (*Átmozgatási rendelés létrehozása* és az *Átmozgatási rendelés teljesítése*) került alkalmazásra.
 
-### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a>Raktári alkalmazás eseményeinek lekérdezése
+### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a> Raktári alkalmazás eseményeinek lekérdezése
 
 A Raktárkezelés mobilalkalmazás által létrehozott esemény-várólistát és eseményüzeneteket a **Raktárkezelés \> Lekérdezések és jelentések \> Mobileszköznaplók \> Raktári alkalmazás eseményei** menüpontba lépve tekintheti meg.
 

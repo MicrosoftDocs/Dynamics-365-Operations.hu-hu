@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: f4a7ee091d73e2104571ac9134a9de9bab0a7074
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 210d92b9fd962708b141b79f3634f142cca9787a
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575464"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777767"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Beszerzési cXML fejlesztései
 
@@ -28,7 +28,7 @@ A _Beszerzési cXML-fejlesztések_ funkció a [meglévő külső katalógus funk
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>A beszerzési cXML-fejlesztések funkció bekapcsolása
 
-A funkció bekapcsolásához nyissa meg a **[Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** lapot, és keressen rá a *Beszerzési cXML fejlesztései* kifejezésre. Válassza ki a bekapcsolni kívánt funkciót, majd a részletek ablaktáblán válassza az **Engedélyezés most** lehetőséget a bekapcsolásához.
+A funkció bekapcsolásához nyissa meg a **[Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** lapot, és keressen rá a *Beszerzési cXML fejlesztései* kifejezésre. Válassza ki a bekapcsolni kívánt funkciót, majd a részletek ablaktáblán válassza az **Engedélyezés most** lehetőséget a bekapcsolásához. (Az Ellátásilánc-kezelés 10.0.21-es verziója alapértelmezés szerint be van kapcsolva.)
 
 A funkció bekapcsolását követően konfigurálnia kell a beállításokat a következő három területen:
 
@@ -42,7 +42,7 @@ A következő ábra összefoglalja ezt a konfigurációt.
 
 Ezenkívül be kell állítania a [Beszerzési rendelési kérelem kötegelt feladatot](#po-batch). Ez a kötegelt feladat a visszaigazolt beszerzési rendelések küldéséhez használatos.
 
-## <a name="set-up-global-cxml-parameters"></a><a name="cxml-parameters"></a>Globális cXML-paraméterek beállítása
+## <a name="set-up-global-cxml-parameters"></a><a name="cxml-parameters"></a> Globális cXML-paraméterek beállítása
 
 A **cXML-paraméterek** oldal használatával elvégezhet néhány globális beállítást, amelyek a beszerzési rendelések küldésének funkcionalitására vonatkoznak.
 
@@ -60,7 +60,7 @@ Nyissa meg a **Beszerzési és forrás \> Beállítások \> cXML-kezelése \> cX
 - **Archívumfájl** – Adja meg a fájl elérési útját, amelybe exportálni szeretné az archivált cXML dokumentumokat. Az elérési út akkor használatos, amikor futtatja a véglegesen töröl funkciót a **Beszerzési rendelési kérelem** lapon.
 - **Utca sor maximális karakterszáma** – Adja meg, hogy legfeljebb hány karakter használható a cXML dokumentumban az utcacímekhez. Ez a globális paraméter az összes szállítót érinti, ha a külső katalógus tulajdonságainál nincs megadva felülbírálás.
 
-## <a name="set-up-vendor-purchase-orders-to-use-cxml"></a><a name="vendor-setup"></a>Szállítói beszerzési rendelések beállítása cXML használatára
+## <a name="set-up-vendor-purchase-orders-to-use-cxml"></a><a name="vendor-setup"></a> Szállítói beszerzési rendelések beállítása cXML használatára
 
 Minden alkalommal, amikor megerősít egy beszerzési rendelést, amelynél a **beszerzési rendelés küldése cXML-en keresztül** beállítás értéke _Igen_, a rendszer automatikusan létrehozza a cXML üzenetet, és leszállítja az adott beszerzési rendeléshez társított szállítónak. A beszerzési rendelésekhez kétféle módszerrel lehet szabályozni ezt a beállítást:
 
@@ -69,7 +69,7 @@ Minden alkalommal, amikor megerősít egy beszerzési rendelést, amelynél a **
 
 ![Szállítói beszerzési rendelések alapértelmezett beállításai.](media/cxml-order-defaults.png "Szállítói beszerzési rendelések alapértelmezett beállításai")
 
-## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a>Külső szállítói katalógus beállítása cXML használatára
+## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a> Külső szállítói katalógus beállítása cXML használatára
 
 A **Külső katalógusok** lapon mindegyik katalógushoz be lehet állítani a PunchOut funkciót és a beszerzési rendelések küldésének funkcióját. A megfelelő beállítások megkereséséhez nyissa meg a **Beszerzési és forrás \> Katalógusok \> Külső katalógusok lehetőséget**. Kezdje úgy , hogy [minden katalógust a megszokott módon állít be](set-up-external-catalog-for-punchout.md). Ez a folyamat tartalmazza egy szállító hozzárendelését, azon kategóriák beállítását, amelynél a szállító számára engedélyezett az ellátás, illetve a katalógus aktiválását. Ezután konfigurálja a szakaszban ismertetett további beállításokat.
 
@@ -84,7 +84,7 @@ A **Külső katalógusok** lap **Általános** gyorslapján állítsa a **Puncho
 
 Ha a PunchOuthoz tartozó katalógust is használja, akkor [be kell állítania az üzenet formátumát](set-up-external-catalog-for-punchout.md) is. Az üzenet formátuma a szállítóval való kapcsolat létrehozására szolgál az igénylésből származó PunchOut-tranzakcióban. Beszerzési rendelés elküldésekor a program a rendelés tulajdonságait használja a szállítóval való kapcsolat létrehozásához.
 
-### <a name="set-the-order-properties"></a><a name="set-order-properties"></a>A rendelés tulajdonságainak beállítása
+### <a name="set-the-order-properties"></a><a name="set-order-properties"></a> A rendelés tulajdonságainak beállítása
 
 A _Beszerzési cXML fejlesztései_ funkció hozzáadja az új **Rendelési tulajdonságok** gyorslapot a külső katalógusokhoz. Ez a gyorslap egy rácsot biztosít, ahol megadhatja a rendelés tulajdonságait. Emellett egy eszköztárat is tartalmaz. Ez az eszköztár a következő három gombot tartalmazza, amelyek segítségével kezelhetők a rendelési tulajdonságok:
 
@@ -96,36 +96,36 @@ Minden alkalommal, amikor egy vagy több tulajdonságot hozzáad a rácshoz, a j
 
 Az alapértelmezett tulajdonságokat a következőképpen lehet használni:
 
-- **BUYER\_COOKIE** – Ezt a nyomon követési mezőt a vállalatra vonatkozó konkrét információk jelzésére lehet használni. Hacsak nem rendelkezik a szállítóval megállapodással a tulajdonság használatáról, akkor a beszerzési rendelés elküldésekor nem hordoz sok jelentést. Ezért egy egyszerű értéket kell megadni.
+- **BUYER\_ COOKIE** – Ezt a nyomon követési mezőt a vállalatra vonatkozó konkrét információk jelzésére lehet használni. Hacsak nem rendelkezik a szállítóval megállapodással a tulajdonság használatáról, akkor a beszerzési rendelés elküldésekor nem hordoz sok jelentést. Ezért egy egyszerű értéket kell megadni.
 - **DELIVERTO** – Amikor a szállítási cím szerepel a dokumentumban a beszerzési rendelésből, a **Figyelmeztető információ** mező szolgál a **DeliverTo** mező beállítására az XML-üzenetben. Ha azt szeretné, hogy ez az érték legyen kérelmező neve, és a beszerzési rendelés fejlécében beállítja a kérelmező mezőt, akkor adja meg az ehhez a tulajdonsághoz tartozó _REQUESTER_ értéket, hogy a kérelmező neve szerepeljen az XML **DeliverTo** mezőjében. Ebben az esetben a használt elsődleges e-mail cím és telefonszám a megrendelő helyett a kérelmezőből lesz használva.
 - **DEPLOYMENTMODE** – Ezt a tulajdonságot a szállító által megköveteltként állíthatja be. Az értékek általában _PRODUCTION_ vagy _TEST_. Az értéket a szállítóval folytatott kommunikáció alapján állítsa be. A programnak általában egyeznie kell a **ORDERCHECKURL** érték mögötti szándékolt rendszerrel, amelyet a szállító teszt- vagy termelési rendszerként jelez.
 - **FIXEDBILLADDRESSID** – Ha be van állítva az XML-üzenet **addressID** mezője, akkor a rendszer észleli az ezen a címen megadott helyet. Ha a szállítónak küldött azonosító érték eltér a cím helyén lévő értéktől valamilyen oknál fogva, akkor az itt megadott érték megadásával kényszerítheti a felülírást. A feltételezés az, hogy csak egy címet fog használni a szállítónál, és a cím be van állítva a szállítói rendszerben. A számlázási cím a jogi személynek a Supply Chain Management alkalmazásban megadott elsődleges számlázási címe.
 - **FIXEDSHIPADDRESSID** – Ha be van állítva az XML-üzenet **addressID** mezője, akkor a rendszer észleli az ezen a címen megadott helyet. Ha a szállítónak küldött azonosító érték eltér a cím helyén lévő értéktől valamilyen oknál fogva, akkor az itt megadott érték megadásával kényszerítheti a felülírást. A feltételezés az, hogy csak egy címet fog használni a szállítónál, és a cím be van állítva a szállítói rendszerben. A szállítási cím a beszerzési rendelés fejlécében megadott cím. A legtöbb szállító csak fejléc-címeket fogad el, nem pedig sorcímeket. Annak ellenére, hogy az XML-címben szerepelnek mezők sorcímeihez, fejléccímre lesznek állítva.
-- **FROM\_DOMAIN** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
-- **FROM\_IDENTITY** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
+- **FROM\_ DOMAIN** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
+- **FROM\_ IDENTITY** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
 - **ORDERCHECKURL** – Adja meg az URL-címet, amelyre továbbítani szeretné a beszerzési rendelési dokumentumokat. Ez az URL-cím a `https://` előtaggal kezdődik, és a szállító biztosítja.
-- **PAYLOAD\_ID** – Adjon meg egy előtagot a rakomány azonosítója számára, az aktuális szállítónál érvényes üzleti folyamatokhoz szükséges módon.
-- **SENDER\_DOMAIN** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
-- **SENDER\_IDENTITY** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
-- **SHARED\_SECRET** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
+- **PAYLOAD\_ ID** – Adjon meg egy előtagot a rakomány azonosítója számára, az aktuális szállítónál érvényes üzleti folyamatokhoz szükséges módon.
+- **SENDER\_ DOMAIN** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
+- **SENDER\_ IDENTITY** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
+- **SHARED\_ SECRET** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
 - **STREETLENGTH** – Adja meg azt a számot, amely azt jelzi, hogy a szállító maximálisan hány karaktert fogad el az utcanév értékének. Ha meg van adva egy érték, akkor felülbírálja a **cXML paraméterek** lapon megadott értéket. A rendszer eltávolítja a sortöréseket és a szóközöket, és megpróbálja a Supply Chain Management alkalmazásban alapértelmezett címet az itt megadott számú karakterhez igazítani. A program csonkolja a további karaktereket.
-- **TO\_DOMAIN** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
-- **TO\_IDENTITY** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
+- **TO\_ DOMAIN** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
+- **TO\_ IDENTITY** – Adja meg a beszerzési rendelési dokumentumok küldéséhez használt értéket. Ezt az értéket a szállító biztosítja.
 - **USERAGENT** – Adjon meg egy értéket a használt rendszer meghatározásához. Például írja be, hogy _Dynamics 365 Supply Chain Management_.
 - **VERSION** – Adja meg a cXML verziószámát, ha a szállító ezt az információt kéri. Az alapértelmezett verzió *1.2.008*. Ez a verzió stabil, és a legtöbb szállító elfogadja.
 - **RESPONSETEXT** – Adja meg azt a saját szöveget, amelyet a szállítónak a cXML-válasz üzenetbe történő visszaküldéséhez elvár. Ily módon a rendszer képes megjelölni az üzenetet a _Nyugtázott_ értékkel. Ha a válasz nem egyezik meg a normál szöveggel vagy az itt megadott vevő szövegével, akkor a kérést a program _Hibaként_ jelöli meg.
 - **RESPONSETEXTSUB** – Ezt a tulajdonságot állítsa _IGAZ_ értékre ha a szállítói válasz szövegében a **RESPONSETEXT** mezőben megadott értékekre kívánja keresni. Előfordulhat például, hogy a szállító hosszú karakterláncot ad vissza, amely a válaszban az „OK” értéket tartalmazza. Ebben az esetben megadhatja az _OK_ értéket a **RESPONSETEXT** mezőben és a **RESPONSETESTSUB** tulajdonságot _IGAZ_ értékre állítva az „OK” kifejezésre bárhol kereshet a válaszban. Ezt követően a rendelést _Nyugtázott_ értékre lehet állítani.
 - **CONTENTTYPE** – Egy tipikus katalógus-beállításban nem kell beállítani ezt a tulajdonságot. Ha egy beszerzési rendelés elküldésekor a 500-as kiszolgálóhibát kap a szállító rendszerétől, akkor a tesztelést a tulajdonság _HAMIS_ értékre állításával végezheti el. Ez az érték megváltoztatja a webes kérelem beállítását, és lehetővé teheti, hogy bizonyos platformokra elküldjék az üzenetet.
-- **ENABLEHEADERS** – Ezt a tulajdonságot állítsa _IGAZ_ értékre, ha a beszerzési rendeléssel együtt a fejléceket is el kell küldeni. Ezt a tulajdonságot csak akkor kell megadni, ha a szállító igényli. Ha _IGAZ_ értékűre állítja ezt a tulajdonságot , adja meg a szállító által biztosított neveken alapuló további egyéni tulajdonságokat, és adja hozzájuk a _H\__ előtagot. Ilyan például a **H\_USERID**, **H\_PASSWORD**, **H\_RECEIVERID**, and **H\_ACTIONREQUEST**. A következő egyéni tulajdonságok szerepelnek az alapértelmezett tulajdonságok között:
+- **ENABLEHEADERS** – Ezt a tulajdonságot állítsa _IGAZ_ értékre, ha a beszerzési rendeléssel együtt a fejléceket is el kell küldeni. Ezt a tulajdonságot csak akkor kell megadni, ha a szállító igényli. Ha _IGAZ_ értékűre állítja ezt a tulajdonságot , adja meg a szállító által biztosított neveken alapuló további egyéni tulajdonságokat, és adja hozzájuk a _H\__ előtagot. Ilyan például a **H\_ USERID**, **H\_ PASSWORD**, **H\_ RECEIVERID**, and **H\_ ACTIONREQUEST**. A következő egyéni tulajdonságok szerepelnek az alapértelmezett tulajdonságok között:
 
-    - **H\_USERID** – Ha a kereskedelmi partner azt szeretné, hogya a beszerzési rendelés elküldéséhez szükséges URL-cím részeként egy felhasználói azonosítót küldjön, itt adja meg az értéket.
-    - **H\_USERID** – Ha a kereskedelmi partner azt szeretné, hogya a beszerzési rendelés elküldéséhez szükséges URL-cím részeként egy jelszót is küldjön, itt adja meg az értéket.
+    - **H\_ USERID** – Ha a kereskedelmi partner azt szeretné, hogya a beszerzési rendelés elküldéséhez szükséges URL-cím részeként egy felhasználói azonosítót küldjön, itt adja meg az értéket.
+    - **H\_ USERID** – Ha a kereskedelmi partner azt szeretné, hogya a beszerzési rendelés elküldéséhez szükséges URL-cím részeként egy jelszót is küldjön, itt adja meg az értéket.
 
 - **ENABLEMANUALPO** – Ha ez a tulajdonság _IGAZ_ értékre van állítva, akkor, amikor a felhasználók manuálisan hoznak létre beszerzési rendeléseket (azaz amikor nem egy igénylésből indulnak ki), akkor ezek a beszerzési rendelések öröklik a szállítóhoz tartozó **Beszerzési rendelés küldése cXML-en keresztül** beállítás értékeit. Ha ez a tulajdonság nincs megadva, vagy _HAMIS_ értékre van állítva, akkor a beszerzési rendelés fejlécében a program nem állítja be a **Beszerzési rendelés küldése cXML-en keresztül** lehetőséget a beszerzési rendelések fejlécében. Az igénylésből létrehozott beszerzési rendelések esetében a **Beszerzési rendelés küldése cXML-en keresztül** beállítás mindig a szállítótól lesz örökölve, a tulajdonság beállításától függetlenül. További tudnivalókért lásd a [Szállítói beszerzési rendelések beállítása cXML használatára](#vendor-setup) című részt, a témakör korábbi részében.
 - **PUNCHOUTPOONLY** – Ha ez a tulajdonság _IGAZ_ értékre van állítva, akkor csak a PunchOut folyamatból létrehozott beszerzési igénylési sorok esetében lesz beállítva a **Beszerzési rendelés küldése cXML-en keresztül** beállítás a beszerzési rendelés fejlécében. Ezenkívül a beszerzési rendelési sor típusa a beszerzési rendelés minden soránál _Külső katalóguscikk_ kell legyen. Ellenkező esetben a cXML beszerzési rendelés nem hozható létre.
 - **PUNCHOUTSHIPTO** – Ha ez a tulajdonság _IGAZ_ értékre van állítva, akkor a rendszer a jogi személy alapértelmezett címét adja hozzá a PunchOut-beállítás kérelemüzenethez, amikor a felhasználó megnyit egy külső katalógust. Ezt a címet **ShipTo** címként adja hozzá a program. A szállítók a **ShipTo** cím használatával jelenítik meg a vállalat helyétől függő árképzést.
 - **TRACEPUNCHOUT** – Ezt a tulajdonságot akkor kell _IGAZ_ értékre állítani, ha hibaüzenet jelenik meg, amikor megpróbál egy külső katalógust böngészni az igénylésből. A nyomon követési adatok kitöltése a Supply Chain Management és a szállítói webhely között elküldött **PunchOutSetupRequest** és **PunchOutResponse** üzenetekben történik. Ezt az információt a **cXML-kosárüzenet-napló** lapon tekintheti meg , amelyet a **Külső katalógus beállítása** lapján nyithat meg a problémás szállítói katalógushoz. Ezt a tulajdonságot csak akkor kell _IGAZ_ értékűre kell állítania , ha a hibakeresést végzi, mivel minden PunchOUt művelethez nagy terhelés generál az adatbázisban. A további tudnivalókat lásd a [A cXML kosár-üzenetek naplójának megtekintése a külső katalógus PunchOut esetében](#message-log) című részében, a témakörben később.
-- **REPLACENEWLINE** – Állítsa ezt a tulajdonságot _IGAZ_ értékre, ha problémája van, mivel a szállítói rendszer olyan **PunchOutResponse** üzenetet küld, amely sortörés (\\n) karaktereket tartalmaz. Ez a hiba akkor fordulhat elő, ha a szállítói üzeneteket köztes szoftver vagy beszerzési központ útján elemzik. Ha problémája van egy új szállítói beállítással, a **TRACEPUNCHOUT** tulajdonságot _IGAZ_ értékre kell állítani, hogy megtekintse a **PunchOutResponse** üzenetet, és meghatározza, hogy az XML-címkék sortörési karakterekkel fel vannak-e bontva.
+- **REPLACENEWLINE** – Állítsa ezt a tulajdonságot _IGAZ_ értékre, ha problémája van, mivel a szállítói rendszer olyan **PunchOutResponse** üzenetet küld, amely sortörés (\\ n) karaktereket tartalmaz. Ez a hiba akkor fordulhat elő, ha a szállítói üzeneteket köztes szoftver vagy beszerzési központ útján elemzik. Ha problémája van egy új szállítói beállítással, a **TRACEPUNCHOUT** tulajdonságot _IGAZ_ értékre kell állítani, hogy megtekintse a **PunchOutResponse** üzenetet, és meghatározza, hogy az XML-címkék sortörési karakterekkel fel vannak-e bontva.
 - **POCOMMENTS** – Ezt a tulajdonságot állítsa _IGAZ_ értékre , ha azt szeretné, hogy a cXML dokumentum tartalmazzon megjegyzéseket, amelyek mellékelve vannak a beszerzési rendeléshez a Supply Chain Management alkalmazásban. A melléklet szövege a beszerzési rendelési üzenet fejlécében szereplő megjegyzések között szerepel. Ha további tájékoztatást szeretne arról, hogy a rendszer hogyan választja ki és dolgozza fel ezeket a mellékleteket, tekintse meg ebben a témakörben a [Megjegyzések csatolása egy beszerzési rendelés](#attach-po-notes) című szakaszt.
 - **VENDCOMMENTS** – Ezt a tulajdonságot állítsa _IGAZ_ értékre , ha azt szeretné, hogy a cXML dokumentum tartalmazzon megjegyzéseket, amelyek mellékelve vannak a beszerzési rendeléshez a Supply Chain Management alkalmazásban. A melléklet szövege a beszerzési rendelési üzenet fejlécében szereplő megjegyzések között szerepel. Ha további tájékoztatást szeretne arról, hogy a rendszer hogyan választja ki és dolgozza fel ezeket a mellékleteket, tekintse meg a [Megjegyzések csatolása egy beszerzési rendelés](#attach-po-notes) című szakaszt.
 - **CLEANAMP** – ezt a tulajdonságot akkor állítsa _IGAZ_ értékre , ha hibaüzenet jelenik meg, amikor egy szállítóhoz megpróbál PunchOut-ot küldeni, és a szállító visszatérési URL-címe helytelenül kódolt és jeleket tartalmaz (\&).
@@ -137,7 +137,7 @@ Az alapértelmezett tulajdonságokat a következőképpen lehet használni:
 
 Ha befejezte az összes tulajdonság beállítását és a külső katalógus egyéb beállításainak konfigurálását, térjen vissza a **Külső katalógusok** lap **Általános** gyorslapára , és állítsa be az **Aktív** beállítást *Igen* értékre.
 
-### <a name="attach-notes-to-a-purchase-order"></a><a name="attach-po-notes"></a>Megjegyzések csatolása beszerzési rendeléshez
+### <a name="attach-notes-to-a-purchase-order"></a><a name="attach-po-notes"></a> Megjegyzések csatolása beszerzési rendeléshez
 
 Amint azt a [Rendelés tulajdonságainak beállítása](#set-order-properties) szakasz említi , ha azt szeretné, hogy a leszállított cXML tartalmazza a megfelelő beszerzési rendeléshez és/vagy szállítói rekordhoz csatolt megjegyzések szövegét, akkor a külső katalógus beállításaiban a **POCOMMENTS** és/vagy a **VENDCOMMENTS** tulajdonságot is _IGAZ_ értékre állíthatja. Ez a szakasz részletesen bemutatja, hogy a rendszer hogyan választja és dolgozza fel ezeket a mellékleteket, ha használja őket.
 
@@ -149,7 +149,7 @@ A mellékletek csak akkor lesznek társítva a beszerzési rendeléshez, ha a **
 
 ![Csatolt melléklet, amely be van állítva a szállítónak való elküldésre.](media/cxml-note-to-vendor.png "Csatolt melléklet, amely be van állítva a szállítónak való elküldésre")
 
-## <a name="view-the-cxml-cart-message-log-for-external-catalog-punchout"></a><a name="message-log"></a>A cXML-kosárüzenetek naplójának megtekintése a külső katalógus PunchOut-hoz
+## <a name="view-the-cxml-cart-message-log-for-external-catalog-punchout"></a><a name="message-log"></a> A cXML-kosárüzenetek naplójának megtekintése a külső katalógus PunchOut-hoz
 
 Ha a egy külső katalógushoz a **PunchOut-protokoltípus** értékét _cXML_ értékre állítja be , akkor a rendszer rögzíti a szállítóktól érkező kosarak üzenetnaplóját. Ez a napló a hibaelhárításhoz és egyéb adatcélokhoz használható.
 
@@ -184,7 +184,7 @@ A felhasználó vagy adminisztrátor nem fogja látni a külső elemeket, mert n
 
 ![Az XML-hez hozzáadott külső elemek.](media/cxml-extrinsics-xml.png "Az XML-hez hozzáadott külső elemek")
 
-## <a name="create-and-process-a-purchase-order"></a><a name="create-po"></a>Beszerzési rendelés létrehozása és feldolgozása
+## <a name="create-and-process-a-purchase-order"></a><a name="create-po"></a> Beszerzési rendelés létrehozása és feldolgozása
 
 Ha egy szállítóhoz beszerzési rendelést hoz létre, akkor a szállítótól örökli a **Beszerzési rendelés küldése cXML-en keresztül** beállítást. A beállítás azonban a beszerzési rendelés **Fejléc** nézetének **Beállítás** gyorslapján továbbra is elérhető, így később szükség szerint módosítható.
 
@@ -212,7 +212,7 @@ Ha a kötegelt feladat be van állítva, és fut, akkor a program elküldi a dok
 
 ![Állapotüzenetek a beszerzési rendelési kérelem lapon.](media/cxml-po-request-2.png "Állapotüzenetek a beszerzési rendelési kérelem lapon")
 
-## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>A beszerzési rendelési kérelem kötegelt feladatának ütemezése
+## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a> A beszerzési rendelési kérelem kötegelt feladatának ütemezése
 
 Ha aktiválni szeretné a kötegelt feladatot a beszerzési rendelési kérelmek küldéséhez, nyissa meg a **Beszerzési és forrás \> Beállítás \> cXML-kezelés \> Beszerzési rendelés** lehetőséget majd kattintson a művelet ablaktábla **Beszerzési rendelési kérelem** lapján a **Köteg** csoportban válassza a **Feladat beküldése** elemet, és nyissa meg a **Beszerzési kérelem előkészítése és küldése** párbeszédpanelét. Ezen a párbeszédpanelen beállíthatja az ismétlődést, ugyanúgy, ahogy a Supply Chain Management kötegelt feladataihoz. Válasszon egy intervallumot a rendelési mennyiség alapján. Annak ellenére, hogy percenként is futtathatja a kötegelt feladatot, valószínűleg érdemes a kötegelt feladatokat a munkanap során elküldeni a rendelésfogadási ablakokban, amelyek megfelelnek a szállító napirendjének.
 
@@ -220,11 +220,11 @@ Például a szállítónak van egy szabályzata, amely azt jelzi, hogy az délut
 
 A folyamat megkeresi a *Várakozik* állapotú beszerzési rendelési kérelmeket. Ha egy rendelést azonnal el kell küldenie egy szállítónak, akkor kiválaszthatja a **Feladat beküldése** és a **Kötegelt feldolgozás** beállítását *Nem* értékre állíthatja.
 
-## <a name="monitor-purchase-order-requests"></a><a name="monitor-po-requests"></a>Beszerzési rendelési kérelmek figyelése
+## <a name="monitor-purchase-order-requests"></a><a name="monitor-po-requests"></a> Beszerzési rendelési kérelmek figyelése
 
 ### <a name="view-the-status-of-a-purchase-order"></a>A beszerzési rendelés állapotának megtekintése
 
-Amikor a cXML keresztül küldendő rendeléseket visszaigazolják, azok _Várakozik_ állapotba kerülnek. Amint azt a [Beszerzési rendelés létrehozása és feldolgozása](#create-po) című szakaszban már ismertettük, a **Beszerzési rendelési kérelem** lapon megtekintheti a beszerzési rendelés állapotát. Minden beszerzési rendelési kérelem több állapotból eggyel rendelkezhet, attól függően, hogy milyen paramétereket és adatokat tartalmaz. Ez a szakasz a különböző állapottípusokat és azok lehetséges értékeit írja le. Ezek az információk a problémák kezelését és a beszerzési rendelések állapotának megértését segítik.
+Amikor a cXML keresztül küldendő rendeléseket visszaigazolják, azok _Várakozik_ állapotba kerülnek. Amint azt a [Beszerzési rendelés létrehozása és feldolgozása](#create-po) című szakaszban már ismertettük, a Beszerzési rendelési kérelem lapon megtekintheti a beszerzési rendelés állapotát. Minden beszerzési rendelési kérelem több állapotból eggyel rendelkezhet, attól függően, hogy milyen paramétereket és adatokat tartalmaz. Ez a szakasz a különböző állapottípusokat és azok lehetséges értékeit írja le. Ezek az információk a problémák kezelését és a beszerzési rendelések állapotának megértését segítik.
 
 ![Beszerzési rendelés állapota a beszerzési rendelési kérelem lapon.](media/cxml-monitor-po-request.png "Beszerzési rendelés állapota a beszerzési rendelési kérelem lapon")
 

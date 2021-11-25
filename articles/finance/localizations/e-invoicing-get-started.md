@@ -2,7 +2,7 @@
 title: Első lépések az elektronikus számlázási használata során
 description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják az Elektronikus számlázással kapcsolatos első lépéseket a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban.
 author: gionoder
-ms.date: 08/17/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d0550228dc77ed255a0033bc3b0a4ec21d48a497
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
-ms.translationtype: HT
+ms.openlocfilehash: ebef9cf97f7a91e0a2fd45f5e0e0fc620070b42a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7700379"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779694"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Első lépések az elektronikus számlázási használata során
 
@@ -57,7 +57,12 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 
 Az országtól vagy régiótól függően az Elektronikus számlázási funkció specifikus konfigurálást igényelhet. 
 
-Az adott lépésekről az adott ország vagy régió számára elérhető Első lépések dokumentációjában található részletes információ.
+> [!NOTE]
+> Ha Finnország esetében engedélyezi az elektronikus számlázás funkciót, akkor a keresések alkalmazásspecifikus paraméterei nem támogatottak. A probléma megoldásához tekintse át az Elektronikus jelentés modulban az értékesítési számla és a projekt **·** számlaformátumának konfigurációit. Manuálisan állítsa be a számított mezőt $PaymentMethodSubstitution hozzárendeléshez, majd kötnie kell azt a mezőt az értékesítési számla és a projekt számlaformátuma **·** Alapján **aPaymentMeansCode** mezőhöz.
+>
+> Ha engedélyezi az Elektronikus számlázás funkciót Olaszország számára, akkor a keresések alkalmazásspecifikus paraméterei nem támogatottak. A probléma megoldásához állítsa be kézzel az Elektronikus jelentés modulban a számított mezőt $NaturaReverseCharge **·** **·** hozzárendeléséhez.
+>
+> A más helyekkel kapcsolatos konkrét lépéseket lásd az adott ország vagy régió számára elérhető "Első lépések" dokumentációban.
 
 ## <a name="import-the-model-mapping-configurations-from-electronic-reporting"></a>Importálja a modell-leképezési konfigurációk az elektronikus jelentéskészítésből
 
@@ -241,6 +246,14 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
 
 3. Válasszon ki egy számlát a rácsban, majd válassza a **Lekérdezés** \> **Beküldési részletek** lehetőséget.
 
+## <a name="download-an-electronic-document-file"></a>Elektronikusdokumentum-fájl letöltése
+
+1. Menjen a **Szervezeti adminisztráció** \> **Időszakos** \> **Elektronikus dokumentumok** \> **Elektronikus dokumentumbeküldési napló** lehetőségre.
+2. A **Dokumentumtípus** mezőben válassza ki a számlákat tartalmazó táblát.
+3. Válasszon ki egy dokumentumot a rácsban, majd válassza az **Elektronikus dokumentum** \> **letöltése** fájlt. A program az elektronikus dokumentumfájlt tartalmazó archívumot javasolja letöltéshez.
+
+> [!NOTE]
+> Fájlok letöltése előtt be kell kapcsolva lennie az Exportálás eredménye lehetőségnek az RCS elektronikus számlázási funkcióbeállításában található kapcsolódó **·** művelet esetében.
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 

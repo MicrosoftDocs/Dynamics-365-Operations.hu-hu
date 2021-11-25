@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: c2fbaa6945cf46b7ef09232e6004f09b487ea7c822e72225dc00d3d28ecb008e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 3612dd45a3f4b8c3597c81962a66c21ed14fb206
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780198"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729027"
 ---
 # <a name="apply-filters-to-a-plan"></a>Szűrők alkalmazása egy tervre
 
@@ -43,7 +43,7 @@ Az A, B és C cikkeket tartalmazó tervszűrő van beállítva. Az alaptervezés
 - **Az összes cikket tartalmazó futásidejű szűrő (üres szűrő)** : az A, a A és a C cikkek szerepelnek a tervezés futtatásakor, és korábbi tervezési kimenet A és B eleme felülíródik.
 
 > [!NOTE]
-> Lehetőleg ne állítson be tervszűrőt olyan terven, amelyet az **Alaptervezés paraméterei** oldalon **Aktuális dinamikus alaptervként** állított be. Ellenkező esetben a rendszer a szűrt cikkekre korlátozza a dinamikus alapterv funkcióját. Ha például a nettó követelmények olyan cikkeknél frissülnek, amelyek nem részei a tervszűrőnek, akkor nem jön létre eredmény.
+> Ha az Alaptervezés paraméterei lapon az Aktuális dinamikus alapterv beállítású tervhez beállít egy tervszűrőt, akkor a dinamikus alapterv funkció a szűrt cikkekre **·** **·** korlátozódik. Ha például a nettó követelmények olyan cikkeknél frissülnek, amelyek nem részei a tervszűrőnek, akkor nem jön létre eredmény.
 
 ## <a name="related-resources"></a>Kapcsolódó erőforrások
 

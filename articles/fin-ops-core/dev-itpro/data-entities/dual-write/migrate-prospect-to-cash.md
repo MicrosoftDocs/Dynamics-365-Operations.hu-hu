@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 01/04/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: d216f1c46aa3362730c126ffc33fefdddddf1853
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
-ms.translationtype: HT
+ms.openlocfilehash: d119a9e5874f73e024cedc4cdb581f947e5bf1a0
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416377"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782505"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Potenciális vevők készpénzre váltási adatainak áttelepítése a Data Integrator szolgáltatásból kettős írásba
 
@@ -60,7 +60,7 @@ A Potenciális vevők készpénzre váltási adatainak a Data Integrator szolgá
 
 3. Ha A potenciális ügyfelek készpénzre váltása megoldást a **Kapcsolattartó számának** testreszabása nélkül használja, állítsa be a következő oszlopokat:
 
-    - Telepítse át a kapcsolattartó számát a CSV-fájlból (**msdynce\_contactnumber**) a **Kapcsolattartó** táblában található kapcsolattartói számba (**msdyn\_contactnumber**).
+    - Telepítse át a kapcsolattartó számát a CSV-fájlból (**msdynce\_ contactnumber**) a **Kapcsolattartó** táblában található kapcsolattartói számba (**msdyn\_ contactnumber**).
     - Használja a **Fél száma** oszlopban található **Kapcsolattartó száma** tábla értékeit.
     - Használja a **Számlaszám/Kapcsolattartó személy azonosítója** oszlopban található **Fél száma** tábla értékeit.
 
