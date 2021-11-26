@@ -15,7 +15,7 @@ ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 7759e952a5da37b6241fc2d29e84c7f515846a75113a4b6455d1f31aaeaf851e
 ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "6764182"
@@ -34,7 +34,7 @@ Ez a felsorolás biztosítja a beállításkészletet a Human Resources virtuál
 
 | Érték | Címke | Leírás |
 | --- | --- | --- |
-| 200000000 | Nincs | Nem. |
+| 200000000 | Nem | Nem. |
 | 200000001 | Igen | Igen. |
 
 ## <a name="see-also"></a>Lásd még

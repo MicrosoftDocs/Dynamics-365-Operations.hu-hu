@@ -14,7 +14,7 @@ ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
 ms.openlocfilehash: b582b8b95fcf2ad45aa1bb49eb5594d30874e0f4
 ms.sourcegitcommit: 12e26ef25c492e5032260733b50cd642cbd6164d
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 09/28/2021
 ms.locfileid: "7559559"
@@ -101,7 +101,7 @@ A ModernPos.sln, CloudPOs.sln, POS.Extension.csproj és a POS mappát használó
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Ezzel a kiadással kezdődően a Dynamics 365 központi felületén a **Commerce ütemezés paraméterei** űrlapjában a **Teljes adatkészlet-generálás intervalluma napokban** mező elavult lesz. Ezzel a kiadással kezdődően a mezőt vizuálisan is eltávolítjuk, így az értéket nem lehet szerkeszteni. Ez **0** érték marad. |
-| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Felváltotta másik szolgáltatás?**   | Nem |
 | **Érintett területek**         | Dynamics 365 Commerce |
 | **Telepítési beállítás**              | Összes|
 | **Állapot**                         | Elavult. Ne használja ezt a mezőt, vagy ne módosítsa az értékét.|

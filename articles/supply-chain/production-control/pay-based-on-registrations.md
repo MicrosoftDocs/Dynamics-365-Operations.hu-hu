@@ -17,7 +17,7 @@ ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.openlocfilehash: 58ff2629c2894e85ca5529df5f995ffa5273de67e1c22564f5f9911ea86fbd95
 ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "6715722"
@@ -170,7 +170,7 @@ A **Számítási paraméterek** oldalon válassza **Túlóra** lehetőséget a p
 
 | Reg. meghatározása | Profilspecifikáció típusa | Számítás   | Beállítás | Fizetve         | Beállítás |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Munkaidő       | Túlóra                   | Szokásos idő | Igen | Fizetett idő     | Nincs  |
+| Munkaidő       | Túlóra                   | Szokásos idő | Igen | Fizetett idő     | Nem  |
 |                    |                            | Fizetett idő      | Igen | Fizetett túlóra | Igen |
 
 A számítási paraméterek beállítása után a következő fizetési tételek jönnek létre.

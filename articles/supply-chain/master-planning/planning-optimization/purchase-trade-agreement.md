@@ -18,7 +18,7 @@ ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
 ms.openlocfilehash: 10b4f9f45899b808bd0baa73974a173cf120aa6c3fd33e10d0d79a59614f1f70
 ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "6757758"
@@ -75,14 +75,14 @@ A következő táblázat bemutatja, hogy a kiadott termék és a hozzájuk kapcs
 
 | Kibocsátott termék: Szállító | Alapértelmezett rendelési beállítás: Átfutási idő | Cikkfedezeti tétel: Szállító felülbírálása | Cikkfedezeti tétel: Átfutási idő felülbírálása | Kereskedelmi megállapodás: Szállító | Kereskedelmi megállapodás: Átfutási idő | Kereskedelmi megállapodás: Átfutási idő figyelmen kívül hagyása | Létrejövő szállító | Létrejövő átfutási idő |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001** _ | _*_1_*_ | Nincs | Nincs | US003 | 3 | Nincs | _ *US001** | **1** |
-| US001 | 1 | ***Igen: US002** _ | _*_Igen: 2_*_ | US003 | 3 | Nincs | _ *US002** | **2** |
-| *(Üres)* | 1 | Nincs | Nincs | ***US003** _ | _*_3_*_ | Nincs | _ *US003** | **3** |
-| *(Üres)* | ***1** _ | Nincs | Nincs | _*_US003_*_ | 3 | Igen | _ *US003** | **1** |
-| *(Üres)* | ***1** _ | _*_Igen: US002_*_ | Nincs | US003 | 3 | Nincs | _ *US002** | **1** |
-| *(Üres)* | ***1** _ | _*_Igen: US002_*_ | Nincs | US003 | 3 | Nincs | _ *US002** | **1** |
-| *(Üres)* | 1 | Nincs | Igen: 2 | ***US003** _ | _*_3_*_ | Nincs | _ *US003** | **3** |
-| *(Üres)* | 1 | Nincs | ***Igen: 2** _ | _*_US003_*_ | 3 | Igen | _ *US003** | **2** |
+| ***US001** _ | _*_1_*_ | Nem | Nem | US003 | 3 | Nem | _ *US001** | **1** |
+| US001 | 1 | ***Igen: US002** _ | _*_Igen: 2_*_ | US003 | 3 | Nem | _ *US002** | **2** |
+| *(Üres)* | 1 | Nem | Nem | ***US003** _ | _*_3_*_ | Nem | _ *US003** | **3** |
+| *(Üres)* | ***1** _ | Nem | Nem | _*_US003_*_ | 3 | Igen | _ *US003** | **1** |
+| *(Üres)* | ***1** _ | _*_Igen: US002_*_ | Nem | US003 | 3 | Nem | _ *US002** | **1** |
+| *(Üres)* | ***1** _ | _*_Igen: US002_*_ | Nem | US003 | 3 | Nem | _ *US002** | **1** |
+| *(Üres)* | 1 | Nem | Igen: 2 | ***US003** _ | _*_3_*_ | Nem | _ *US003** | **3** |
+| *(Üres)* | 1 | Nem | ***Igen: 2** _ | _*_US003_*_ | 3 | Igen | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>További erőforrások
 

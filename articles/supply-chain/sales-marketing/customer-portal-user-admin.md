@@ -14,7 +14,7 @@ ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: 448f315b888b63eba74dcb8b47a9b238e371bb2b
 ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 09/29/2021
 ms.locfileid: "7573489"
@@ -88,9 +88,9 @@ A következő táblázat bemutatja, hogy a rendszerben mely értékesítési ren
 
 | Értékesítési rendelés | Adminisztrátor | X&nbsp;ügyfél ügyfélképviselője | Jogosult felhasználó: Jane | Jogosult felhasználó: Sam | Nem felhatalmazott felhasználó: May |
 |---|---|---|---|---|---|
-| X&nbsp;ügyfél megrendelő:&nbsp;Jane | Igen | Igen | Igen | Nincs | Nincs |
-| X&nbsp;ügyfél megrendelő:&nbsp;Sam | Igen | Igen | Nincs | Igen | Nincs |
-| Y&nbsp;ügyfél Megrendelő:&nbsp;May | Igen | Nincs | Nincs | Nincs | Nincs |
+| X&nbsp;ügyfél megrendelő:&nbsp;Jane | Igen | Igen | Igen | Nem | Nem |
+| X&nbsp;ügyfél megrendelő:&nbsp;Sam | Igen | Igen | Nem | Igen | Nem |
+| Y&nbsp;ügyfél Megrendelő:&nbsp;May | Igen | Nem | Nem | Nem | Nem |
 
 > [!NOTE]
 > Annak ellenére, hogy mind a Sam, mind a Jane olyan kapcsolattartó, aki az X ügyfélnek dolgozik, csak azokat a rendeléseket láthatja, amelyekhez ők maguk adtak le, és semmi mást. Annak ellenére, hogy Maynek van egy rendelése a rendszerben, az Ügyfélportálon nem láthatja ezt a rendelést mivel ő egy nem felhatalmazott felhasználó. (Ezenkívül a rendelést egy az Ügyfélportáltól eltérő csatornán adta le.)

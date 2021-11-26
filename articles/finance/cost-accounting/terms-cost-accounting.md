@@ -18,7 +18,7 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: f61ae7a6657eaad3510833c17f342b7266be247aec2a9bfe80b97172f662ae0a
 ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "6774377"
@@ -128,7 +128,7 @@ A legtöbb forrásrendszer olyan adatokat tud biztosítani, amelyek megfelelnek 
 |---|---|---|---|
 | Költségösszetevő-dimenziótagok  |  Igen | Igen  | Igen  |
 |  Költségobjektum-dimenziótagok |  Igen | Igen  | Igen  |
-|  Statisztikai dimenziótagok | Igen  | Nincs  | Nincs  |
+|  Statisztikai dimenziótagok | Igen  | Nem  | Nem  |
 |  Főkönyv | Igen  | Igen  | Igen  |
 |  Költségvetési bejegyzések  | Igen  | Igen  | Igen  |
 |  Statisztikai mértékek | Igen  | Igen  | Igen  |

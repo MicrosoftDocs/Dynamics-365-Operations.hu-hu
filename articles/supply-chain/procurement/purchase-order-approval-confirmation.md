@@ -18,7 +18,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 7ae625950e62b2bf5ec092ccda414ee306c62d79
 ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 09/29/2021
 ms.locfileid: "7570537"
@@ -41,8 +41,8 @@ Ha a változáskezelés engedélyezve van, a beszerzési rendelések 6 jóváhag
 | Jóváhagyási állapot | Leírás                                                                      | Változtatás kérése engedélyezve |
 |-----------------|----------------------------------------------------------------------------------|---------------------------|
 | Vázlat           | A beszerzési rendelés még csak vázlat, illetve nem lett benyújtva jóváhagyásra a beszerzési rendelés munkafolyamatában.     | Nem                        |
-| Ellenőrzés alatt       | A beszerzési rendelés el lett küldve jóváhagyásra a beszerzési rendelés munkafolyamatában. Jóváhagyásra vár.       | Szám                        |
-| Elutasítva        | A beszerzési rendelés el lett utasítva a jóváhagyási folyamat során.                                 | Szám                        |
+| Ellenőrzés alatt       | A beszerzési rendelés el lett küldve jóváhagyásra a beszerzési rendelés munkafolyamatában. Jóváhagyásra vár.       | Nem                        |
+| Elutasítva        | A beszerzési rendelés el lett utasítva a jóváhagyási folyamat során.                                 | Nem                        |
 | Engedélyezve        | A beszerzési rendelés jóvá lett hagyva.                                                             | Igen                       |
 | Visszaigazolva       | A beszerzési rendelés megerősítve. A beszerzési rendelés nem erősíthető meg, amíg jóvá nem hagyták.        | Igen                       |
 | Véglegesítve       | A beszerzési rendelés véglegesítve lett. Pénzügyileg lezárult, és már nem módosítható. | Nem                        |

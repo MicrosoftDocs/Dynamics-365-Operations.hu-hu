@@ -15,7 +15,7 @@ ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.13
 ms.openlocfilehash: 0fe4b377ec80601f616f81f71222129256dfd448
 ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 09/07/2021
 ms.locfileid: "7474940"
@@ -421,7 +421,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 <td>Nem alkalmazható</td>
 </tr>
 <tr>
-<td>Nincs</td>
+<td>Nem</td>
 <td>
 <ol>
 <li>Válassza ki a <strong>Hely felülbírálása</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka megkezdésekor.</li>
@@ -719,7 +719,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 </tr>
 <tr>
 <td>A <strong>Rövid kitárolás</strong> típusra munkakivétel ven beállítva, amelynek értelmében <strong>Cikk újbóli felosztása</strong> = <strong>Manuális</strong>, <strong>Készlethelyesbítés</strong> = <strong>Igen</strong>, és <strong>Foglalások eltávolítása</strong> = <strong>Nem</strong>. Ezenkívül a <strong>Cikk újbóli manuális felosztásának engedélyezése</strong> beállítás a dolgozó esetén engedélyezve van.</td>
-<td>Nincs</td>
+<td>Nem</td>
 <td>
 <ol>
 <li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka futtatásakor.</li>
@@ -732,7 +732,7 @@ Az alábbi táblázatokban egy áttekintés látható, amely bemutatja, hogy a r
 </tr>
 <tr>
 <td>A <strong>Rövid kitárolás</strong> típusra munkakivétel ven beállítva, amelynek értelmében <strong>Cikk újbóli felosztása</strong> = <strong>Manuális</strong>, <strong>Készlethelyesbítés</strong> = <strong>Igen</strong>, és <strong>Foglalások eltávolítása</strong> = <strong>Igen</strong>. Ezenkívül a <strong>Cikk újbóli manuális felosztásának engedélyezése</strong> beállítás a dolgozó esetén engedélyezve van.</td>
-<td>Nincs</td>
+<td>Nem</td>
 <td>
 <ol>
 <li>Válassza ki a <strong>Rövid kitárolás</strong> menüpontot a Raktárkezelés mobilalkalmazásban a kitárolási munka futtatásakor.</li>

@@ -444,27 +444,27 @@ Az **Online számlázás** feldolgozása a következő elektronikus üzenetálla
 
 | Állapot                                  | Leírás                                                                             | Az ilyen állapotú rekordok törölhetők |
 |-----------------------------------------|-----------------------------------------------------------------------------------------|---------------------------------------|
-| Hiba a számlakérelem létrehozásakor        | Technikai hiba történt a számlakérelem létrehozásakor.                | Nincs                                    |
-| Hiba az állapotkérelem létrehozásakor         | Technikai hiba történt az állapotkérelem létrehozásakor.                 | Nincs                                    |
-| Hiba a tokenkérelem létrehozásakor          | Technikai hiba történt az tokenkérelem létrehozásakor.                  | Nincs                                    |
-| Hiba a számlaválasz importálásakor        | Technikai hiba történt a számlaválasz importálása során.                | Nincs                                    |
-| Az állapotkérelem hibaválaszának importálása | Technikai hiba történt a az állapotkérelemre adott válasz importálása során. | Nincs                                    |
-| Hiba a számlakérelem küldésekor           | Technikai hiba történt a számlakezelési kérelem elkeüldésekor.              | Nincs                                    |
-| Hiba az állapotkérelem küldésekor            | Technikai hiba történt a számlaállapot-kérelem elküldésekor.              | Nincs                                    |
-| Hiba a tokenkérelem küldésekor             | Technikai hiba történt az tokenkérelem elküldésekor.                       | Nincs                                    |
-| Hiba a tokenválasz importálásakor          | Technikai hiba történt a tokenválasz importálása során.                  | Nincs                                    |
-| Létrehozva                               | Az üzenet létre lett hozva.                                                              | Nincs                                    |
-| Folyamatban                              | Az online számlázási rendszer feldolgozza az üzenetet.                          | Nincs                                    |
-| Számlakérelem létrehozva               | A számlák beküldésére vonatkozó kérelem létre lett hozva.                                           | Nincs                                    |
-| Számlakérelem beküldve               | A számlákat tartalmazó kérelem az Online számlázási rendszerbe be lett küldve.        | Nincs                                    |
-| Feldolgozva                               | Az online számlázási rendszer feldolgozta az üzenetet.                               | Nincs                                    |
-| Elküldött                                    | Az üzenet létre el lett küldve.                                                                   | Nincs                                    |
-| Állapotkérelem létrehozva                | A számlaállapot-kérelem létrejött.                                               | Nincs                                    |
-| Állapotkérelem beküldve                | A számlaállapot-kérelem be lett küldve.                                               | Nincs                                    |
-| Token fogadva                          | A token fogadva lett.                                                                 | Nincs                                    |
-| A tokenkérelem létrehozva                 | A tokenkérelem létre lett hozva.                                                        | Nincs                                    |
-| Tokenkérelem beküldve                 | A tokenkérelem be lett küldve.                                                        | Nincs                                    |
-| Tranzakcióazonosító fogadva                 | A tranzakcióazonosítót tartalmazó számlaválasz beérkezett.                     | Nincs                                    |
+| Hiba a számlakérelem létrehozásakor        | Technikai hiba történt a számlakérelem létrehozásakor.                | Nem                                    |
+| Hiba az állapotkérelem létrehozásakor         | Technikai hiba történt az állapotkérelem létrehozásakor.                 | Nem                                    |
+| Hiba a tokenkérelem létrehozásakor          | Technikai hiba történt az tokenkérelem létrehozásakor.                  | Nem                                    |
+| Hiba a számlaválasz importálásakor        | Technikai hiba történt a számlaválasz importálása során.                | Nem                                    |
+| Az állapotkérelem hibaválaszának importálása | Technikai hiba történt a az állapotkérelemre adott válasz importálása során. | Nem                                    |
+| Hiba a számlakérelem küldésekor           | Technikai hiba történt a számlakezelési kérelem elkeüldésekor.              | Nem                                    |
+| Hiba az állapotkérelem küldésekor            | Technikai hiba történt a számlaállapot-kérelem elküldésekor.              | Nem                                    |
+| Hiba a tokenkérelem küldésekor             | Technikai hiba történt az tokenkérelem elküldésekor.                       | Nem                                    |
+| Hiba a tokenválasz importálásakor          | Technikai hiba történt a tokenválasz importálása során.                  | Nem                                    |
+| Létrehozva                               | Az üzenet létre lett hozva.                                                              | Nem                                    |
+| Folyamatban                              | Az online számlázási rendszer feldolgozza az üzenetet.                          | Nem                                    |
+| Számlakérelem létrehozva               | A számlák beküldésére vonatkozó kérelem létre lett hozva.                                           | Nem                                    |
+| Számlakérelem beküldve               | A számlákat tartalmazó kérelem az Online számlázási rendszerbe be lett küldve.        | Nem                                    |
+| Feldolgozva                               | Az online számlázási rendszer feldolgozta az üzenetet.                               | Nem                                    |
+| Elküldött                                    | Az üzenet létre el lett küldve.                                                                   | Nem                                    |
+| Állapotkérelem létrehozva                | A számlaállapot-kérelem létrejött.                                               | Nem                                    |
+| Állapotkérelem beküldve                | A számlaállapot-kérelem be lett küldve.                                               | Nem                                    |
+| Token fogadva                          | A token fogadva lett.                                                                 | Nem                                    |
+| A tokenkérelem létrehozva                 | A tokenkérelem létre lett hozva.                                                        | Nem                                    |
+| Tokenkérelem beküldve                 | A tokenkérelem be lett küldve.                                                        | Nem                                    |
+| Tranzakcióazonosító fogadva                 | A tranzakcióazonosítót tartalmazó számlaválasz beérkezett.                     | Nem                                    |
 
 ### <a name="electronic-message-actions"></a>Elektronikusüzenet-műveletek
 
@@ -476,22 +476,22 @@ Az **Online számlázás** feldolgozása a következő elektronikus feldolgozás
 
 | Név                           | Futtatás külön |
 |--------------------------------|----------------|
-| EM-elemek létrehozása                | Nincs             |
-| EM-elemek értékelése              | Nincs             |
+| EM-elemek létrehozása                | Nem             |
+| EM-elemek értékelése              | Nem             |
 | EM-elemek kizárása               | Igen            |
-| EM létrehozása                    | Nincs             |
-| Számlakérelem létrehozása       | Nincs             |
-| Állapotkérelem létrehozása        | Nincs             |
-| Token-kérelem létrehozása         | Nincs             |
-| Számlaválasz importálása        | Nincs             |
-| Állapotválasz importálása         | Nincs             |
-| Tokenválasz importálása          | Nincs             |
+| EM létrehozása                    | Nem             |
+| Számlakérelem létrehozása       | Nem             |
+| Állapotkérelem létrehozása        | Nem             |
+| Token-kérelem létrehozása         | Nem             |
+| Számlaválasz importálása        | Nem             |
+| Állapotválasz importálása         | Nem             |
+| Tokenválasz importálása          | Nem             |
 | EM cikkek belefoglalása a fedolgozásba | Igen            |
 | EM elem állapotának visszaállítása           | Igen            |
 | EM állapot visszaállítása                | Igen            |
-| Számlakérelem benyújtása         | Nincs             |
-| Állapotkérelem elküldése          | Nincs             |
-| Token-kérelem beküldése           | Nincs             |
+| Számlakérelem benyújtása         | Nem             |
+| Állapotkérelem elküldése          | Nem             |
+| Token-kérelem beküldése           | Nem             |
 
 ## <a name="appendix-2-implementation-details"></a>2. függelék: Az implementálás részletei
 

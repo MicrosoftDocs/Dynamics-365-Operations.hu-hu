@@ -18,7 +18,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: ab90c8e57d831fbbfe0b4a6f6814ca0ab5182a7ccc0436ca5a11526b72f9da30
 ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "6781585"
@@ -38,9 +38,9 @@ A következő táblázat két eshetőséget mutat be. Az első során a rendszer
 
 | Feltétel                                               | A rendszer a becsült mozgóátlagon alapuló önköltségi árat alkalmazza. | A rendszer a cikk törzsadataiban meghatározott önköltségi árat alkalmazza. |
 |---------------------------------------------------------|----------------------------------------------------------|-------------------------------------------------------------------|
-| A számláló\* és a nevező\*\* is pozitív.  | Igen                                                      | Nincs                                                                |
-| A számláló\*, a nevező\*\* vagy mind a kettő negatív. | Nincs                                                       | Igen                                                               |
-| Ha a nevező\*\* 0 (nulla).                        | Nincs                                                       | Igen                                                               |
+| A számláló\* és a nevező\*\* is pozitív.  | Igen                                                      | Nem                                                                |
+| A számláló\*, a nevező\*\* vagy mind a kettő negatív. | Nem                                                       | Igen                                                               |
+| Ha a nevező\*\* 0 (nulla).                        | Nem                                                       | Igen                                                               |
 
 \* számláló = (fizikai összeg + pénzügyi összeg) \*\* nevező = (fizikai mennyiség + pénzügyi mennyiség) 
 

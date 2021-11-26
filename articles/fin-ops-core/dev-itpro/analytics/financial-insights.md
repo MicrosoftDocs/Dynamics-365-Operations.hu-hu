@@ -16,7 +16,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.2999999999999998
 ms.openlocfilehash: 4dc6cb7c0d6c04371ada611626415d87e9f149f0
 ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/24/2021
 ms.locfileid: "7416305"
@@ -89,16 +89,16 @@ A következő összehasonlító táblázattal különbséget tehet a két lehet�
 
 | Funkció                                                   | Financial Reporting                                               | Pénzügyi elemzés |
 |----------------------------------------------------------|-------------------------------------------------------------------|--------------------|
-| **Alapértelmezett jelentések szerkesztése**                                 | Igen                                                               | Nincs |
-| **Új jelentések készítése**                                   | Igen                                                               | Nincs |
-| **Jelentések nyomtatása**                                        | Igen                                                               | Nincs |
+| **Alapértelmezett jelentések szerkesztése**                                 | Igen                                                               | Nem |
+| **Új jelentések készítése**                                   | Igen                                                               | Nem |
+| **Jelentések nyomtatása**                                        | Igen                                                               | Nem |
 | **Exportálás az Excel programba**                                      | Igen                                                               | A korlátozott nyers adatokat exportál az Excel programba, nem formázott jelentést |
-| **Jelentéskészítési hierarchia / szervezeti hierarchia támogatása**   | Igen                                                               | Nincs |
+| **Jelentéskészítési hierarchia / szervezeti hierarchia támogatása**   | Igen                                                               | Nem |
 | **Jelentés analitikus adatokról**                             | Igen a Korlátozott csak szállítóra, vevőre                              | Igen: szállító, vevő, vevői és szállítói csoportok, vevői és szállítói címek stb. |
 | **Jelentési pénznem**                                   | Igen: könyvelési pénznem és a fordítás jelentési pénznemre       | Nem: Csak a könyvelési pénznem |
 | **Biztonság**                                             | Igen, a Finance és a jelentési fa biztonsága alapján | Korlátozott: jelentések megtekintése minden vállalatnál (Finance and Operations biztonságtól függetlenül) vagy csak az aktív vállalatnál |
-| **Támogatás különböző számlatükrökhöz és pénzügyi évekhez** | Igen                                                               | Nincs |
-| **jelentés külső adatokról**                              | Nincs                                                                | Nincs |
+| **Támogatás különböző számlatükrökhöz és pénzügyi évekhez** | Igen                                                               | Nem |
+| **jelentés külső adatokról**                              | Nem                                                                | Nem |
 | **Konszolidációk támogatása**                               | Igen                                                               | Korlátozott: jelentés több vállalatról is, de csak a könyvelési pénznem használatával |
 
 A következő pénzügyi kimutatások állnak rendelkezésre:

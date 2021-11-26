@@ -1,6 +1,6 @@
 ---
 title: Gyakran ismételt kérdések LinkedIn-integrációval kapcsolatosan
-description: Ez a témakör azokat a kérdéseket válaszolja meg, amelyekkel a LinkedIn és a Microsoft Microsoft Dynamics 365 Talent - Attract közötti integrációval kapcsolatosan merülhetnek fel.
+description: Ez a témakör azokat a kérdéseket válaszolja meg, amelyekkel a LinkedIn és a Microsoft Dynamics 365 Talent - Attract közötti integrációval kapcsolatosan merülhetnek fel.
 author: hasrivas
 manager: AnnBe
 ms.date: 07/08/2019
@@ -117,6 +117,3 @@ A következő táblázatban a különböző lehetőségek láthatók állások k
 [Jelöltek felkutatása a LinkedIn Recruiter megoldással a Microsoft Dynamics 365 Talent – Attract szolgáltatásban](./attract-linkedin-recruiter.md)
 
 [A LinkedIn és a Microsoft Dynamics 365 Talent – Attract közötti integráció hibaelhárítása](./attract-troubleshoot-linkedin.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

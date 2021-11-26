@@ -16,7 +16,7 @@ ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.18
 ms.openlocfilehash: e6b178704fde18036d526e7a645cb9b4f8bd66c7
 ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 09/29/2021
 ms.locfileid: "7579064"
@@ -47,11 +47,11 @@ Az alábbi táblázat a visszatérítések csökkentési elvének jellemző beá
 
 | Visszatérítés-csökkentési elv | Leírás | Csökkentés alkalmazása | Csökkentési alap | Kihagyás a csökkentésből |
 |---|---|---|---|---|
-| Halasztott | Visszatérítés csökkentése | Igen | Mindkettő | Nincs |
+| Halasztott | Visszatérítés csökkentése | Igen | Mindkettő | Nem |
 | Exclreb | Visszatérítés kihagyása | Igen | Visszatérítés | Igen |
 | Többszörös | Több visszatérítés | Igen | Mindkettő | Igen |
-| None | Csak tartalék és visszatérítés | Nincs | Mindkettő | Igen |
-| Üzembe helyezés | Csak tartalék | Igen | Üzembe helyezés | Nincs |
+| None | Csak tartalék és visszatérítés | Nem | Mindkettő | Igen |
+| Üzembe helyezés | Csak tartalék | Igen | Üzembe helyezés | Nem |
 | Visszatérítés | Csak visszatérítés | Igen | Visszatérítés | Igen |
 
 ## <a name="examples-of-rebate-reduction-principle-calculations"></a>Visszatérítés-csökkentés elvének számításai – példák

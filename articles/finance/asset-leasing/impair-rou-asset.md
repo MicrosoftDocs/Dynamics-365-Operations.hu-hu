@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: 816f65cff77339ef8684c0449ed2e5f0762b17a2e22174412d5ea9f2a1a62069
 ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "6723823"
@@ -92,8 +92,8 @@ Az alábbi táblázatok a példában használt lízing **Általános** és **Fiz
     | Tranzakció dátuma       | 2022.01.01. |
     | Fennmaradó időszakok      | 84       |
     | Feladás                   | Igen      |
-    | Előnézet feladás előtt | Nincs       |
-    | Könyv lezárása             | Nincs       |
+    | Előnézet feladás előtt | Nem       |
+    | Könyv lezárása             | Nem       |
 
 6. Értékvesztési költség naplóbejegyzés létrehozása és feladása történt. A megtekintéshez nyissa meg az eszköz lízingnaplóját a lízingkönyvben. Figyelje meg, hogy az értékvesztés összegét az Értékvesztés költség feladási számlájára terhelték, és a ROU-eszköz feladási számlát jóváírták.
 7. Az értékvesztés nettó hatásának megtekintéséhez lépjen a kötelezettség- és eszköztranzakciók táblához. Figyelje meg, hogy az értékvesztési költség csökkentette a ROU-eszközt, de a lízingkötelezettség könyv szerinti értéke nem változott.

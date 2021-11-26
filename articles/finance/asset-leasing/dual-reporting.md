@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
 ms.openlocfilehash: 406fbb53fc4cd17a7c257b5f5463227118c9051f44d81db000fbe87dca142efe
 ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "6767056"
@@ -47,7 +47,7 @@ Az IFRS 16 könyvet úgy kell beállítani, hogy megfeleljen az IFRS 16 könyvel
 | Jelenérték / Eszköz valós értékének beállítása | 0,00           |
 | Rövid távú küszöb                    | 12             |
 | Alacsony értékű küszöb                     | 5,000.00       |
-| Fizetés szállítónak                           | Nincs             |
+| Fizetés szállítónak                           | Nem             |
 
 **Kötelező könyv**
 
@@ -64,7 +64,7 @@ A kötelező könyv egy készpénzalapú könyv, ahol a vállalat a lízingkölt
 | Jelenérték / Eszköz valós értékének beállítása | 0,00        |
 | Rövid távú küszöb                    | 0           |
 | Alacsony értékű küszöb                     | 0           |
-| Fizetés szállítónak                           | Nincs          |
+| Fizetés szállítónak                           | Nem          |
 
 **Kötelező sztornírozási könyv**
 
@@ -81,7 +81,7 @@ A kötelező sztornírozási könyvet ugyanúgy kell beállítani, mint a kötel
 | Jelenérték / Eszköz valós értékének beállítása | 0,00                           |
 | Rövid távú küszöb                    | 0                              |
 | Alacsony értékű küszöb                     | 0                              |
-| Fizetés szállítónak                           | Nincs                             |
+| Fizetés szállítónak                           | Nem                             |
 
 Ez a példa egy olyan lízing létrejöttét hozta létre, amelynek a következő beállításait találja az **Általános** és a **Fizetési ütemezés sorai** lapon.
 

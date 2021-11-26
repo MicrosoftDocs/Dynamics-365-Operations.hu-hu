@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 081b6968575a8a057903d96de2833a98552ed123
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
-ms.translationtype: MT
+ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
+ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813723"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "7641160"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -187,34 +187,34 @@ A következő táblázat bemutatja, hogy mely kimenő funkciók, és hol támoga
 
 | Feldolgozás                                                      | Központ | Raktári végrehajtási számítási feladat skálázási egységeken |
 |--------------------------------------------------------------|-----|------------------------------|
-| Forrásdokumentum feldolgozása                                   | Igen | Nincs |
-| Rakomány és szállításkezelési folyamatok feldolgozása                | Igen, de csak a rakománytervezési folyamatok. A szállításkezelési folyamatok feldolgozása nem támogatott  | Nincs |
-| Kiadás raktárba                                         | Igen | Nincs |
-| Tervezett áttárolás                                        | Nincs  | Nincs |
+| Forrásdokumentum feldolgozása                                   | Igen | Nem |
+| Rakomány és szállításkezelési folyamatok feldolgozása                | Igen, de csak a rakománytervezési folyamatok. A szállításkezelési folyamatok feldolgozása nem támogatott  | Nem |
+| Kiadás raktárba                                         | Igen | Nem |
+| Tervezett áttárolás                                        | Nem  | Nem |
 | Szállítmánykonszolidáció                                       | Igen, a rakománytervezés használata esetén | Igen |
-| Szállítmány hullámfeldolgozása                                     | Nincs  |Igen, a **Rakományok összeállítása és rendezése** kivételével |
-| Hullámhoz szállítások karbantartása                                  | Nincs  | Igen|
-| Raktári munka feldolgozása (az azonosítótábla nyomtatásával együtt)        | Nincs  | Igen, de csak a korábban említett támogatott funkciókhoz |
-| Fürt kitárolása                                              | Nincs  | Igen|
-| Manuális csomagolásfeldolgozás, beleértve a „Becsomagolt tároló kitárolása” munkafeldolgozást | Nincs <P>Bizonyos feldolgozás elvégezhető egy skálázási egység által kezelt kezdeti kitárolási folyamat után, de a következő blokkolt műveletek miatt nem ajánlott.</p>  | Nincs |
-| Tároló eltávolítása csoportból                                  | Nincs  | Nincs |
-| Kimenő rendezés feldolgozása                                  | Nincs  | Nincs |
+| Szállítmány hullámfeldolgozása                                     | Nem  |Igen, a **Rakományok összeállítása és rendezése** kivételével |
+| Hullámhoz szállítások karbantartása                                  | Nem  | Igen|
+| Raktári munka feldolgozása (az azonosítótábla nyomtatásával együtt)        | Nem  | Igen, de csak a korábban említett támogatott funkciókhoz |
+| Fürt kitárolása                                              | Nem  | Igen|
+| Manuális csomagolásfeldolgozás, beleértve a „Becsomagolt tároló kitárolása” munkafeldolgozást | Nem <P>Bizonyos feldolgozás elvégezhető egy skálázási egység által kezelt kezdeti kitárolási folyamat után, de a következő blokkolt műveletek miatt nem ajánlott.</p>  | Nem |
+| Tároló eltávolítása csoportból                                  | Nem  | Nem |
+| Kimenő rendezés feldolgozása                                  | Nem  | Nem |
 | Rakományhoz kapcsolódó dokumentumok nyomtatása                           | Igen | Igen|
-| Fuvarlevél és ASN-generálás                            | Nincs  | Igen|
-| Szállítmány megerősítése                                             | Nincs  | Igen|
-| Szállítmány megerősítése a „Megerősítés és áthelyezés” lehetőséggel            | Nincs  | Nincs |
-| Szállítólevél és számlázások feldolgozása                        | Igen | Nincs |
-| Rövid kitárolás (értékesítési és áttárolási rendelések)                    | Nincs  | Igen, a forrásdokumentumok foglalásának eltávolítása nélkül|
-| Előírtnál nagyobb mennyiség kitárolása (értékesítési és áttárolási rendelések)                     | Nincs  | Igen|
-| Munkahelyek módosítása (értékesítési és áttárolási rendelések)         | Nincs  | Igen|
-| Befejezett munka (értékesítési és áttárolási rendelések)                    | Nincs  | Igen|
+| Fuvarlevél és ASN-generálás                            | Nem  | Igen|
+| Szállítmány megerősítése                                             | Nem  | Igen|
+| Szállítmány megerősítése a „Megerősítés és áthelyezés” lehetőséggel            | Nem  | Nem |
+| Szállítólevél és számlázások feldolgozása                        | Igen | Nem |
+| Rövid kitárolás (értékesítési és áttárolási rendelések)                    | Nem  | Igen, a forrásdokumentumok foglalásának eltávolítása nélkül|
+| Előírtnál nagyobb mennyiség kitárolása (értékesítési és áttárolási rendelések)                     | Nem  | Igen|
+| Munkahelyek módosítása (értékesítési és áttárolási rendelések)         | Nem  | Igen|
+| Befejezett munka (értékesítési és áttárolási rendelések)                    | Nem  | Igen|
 | Munka jelentésének nyomtatása                                            | Igen | Igen|
-| Hullámcímke                                                   | Nincs  | Igen|
-| Felosztott munka                                                   | Nincs  | Igen|
-| Munkafeldolgozás – „Szállítási berakodás” irányítja            | Nincs  | Nincs |
-| Kitárolt mennyiség csökkentése                                       | Nincs  | Nincs |
-| Munka sztornírozása                                                 | Nincs  | Nincs |
-| Szállítmány visszaigazolásának sztornírozása                                | Nincs  | Igen|
+| Hullámcímke                                                   | Nem  | Igen|
+| Felosztott munka                                                   | Nem  | Igen|
+| Munkafeldolgozás – „Szállítási berakodás” irányítja            | Nem  | Nem |
+| Kitárolt mennyiség csökkentése                                       | Nem  | Nem |
+| Munka sztornírozása                                                 | Nem  | Nem |
+| Szállítmány visszaigazolásának sztornírozása                                | Nem  | Igen|
 
 ### <a name="inbound"></a>Bejövő
 
@@ -222,31 +222,31 @@ A következő táblázat bemutatja, hogy mely bejövő funkciók, és hol támog
 
 | Feldolgozás                                                          | Központ | Raktári végrehajtási számítási feladat skálázási egységeken<BR>*(Az „Igen” jelölésű cikkek csak raktári rendelésekre vonatkoznak)* |
 |------------------------------------------------------------------|-----|----------------------------------------------------------------------------------|
-| Forrásdokumentum&nbsp; feldolgozása                             | Igen | Nem |
+| Forrásdokumentum&nbsp;feldolgozása                             | Igen | Nem |
 | Rakomány és szállításkezelési folyamatok feldolgozása                    | Igen | Nem |
 | Partraszállási költség és úton lévő áruk fogadása                       | Igen | Nem |
 | Beérkező szállítmány megerősítése                                    | Igen | Nem |
-| Beszerzési rendelés kiadása a raktárba (raktári rendelés feldolgozása) | Igen | Nincs |
-| Raktári rendelési sorok visszavonása<p>Ne feledje, hogy ez csak akkor támogatott, ha a sorhoz nem történt regisztráció</p> | Igen | Nincs |
-| Beszerzési rendelés – cikk bevételezése és eltárolása                       | <p>Igen,&nbsp; ha&nbsp; nincs&nbsp; raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, ha a beszerzési rendelés nem része egy <i>rakománynak</i></p> |
+| Beszerzési rendelés kiadása a raktárba (raktári rendelés feldolgozása) | Igen | Nem |
+| Raktári rendelési sorok visszavonása<p>Ne feledje, hogy ez csak akkor támogatott, ha a sorhoz nem történt regisztráció</p> | Igen | Nem |
+| Beszerzési rendelés – cikk bevételezése és eltárolása                       | <p>Igen,&nbsp;ha&nbsp;nincs&nbsp;raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, ha a beszerzési rendelés nem része egy <i>rakománynak</i></p> |
 | Beszerzésirendelés-sor bevételezése és betárolása                       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, ha a beszerzési rendelés nem része egy <i>rakománynak</i></p></p> |
-| Visszárurendelés bevételezése és eltárolása                              | Igen | Nincs |
+| Visszárurendelés bevételezése és eltárolása                              | Igen | Nem |
 | Vegyes azonosítótábla bevételezése és eltárolása                       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Igen |
-| Rakomány – cikk bevételezése                                              | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
-| Azonosítótábla bevételezése és eltárolása                             | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
-| Átmozgatási rendelés – cikk bevételezése és eltárolása                       | Igen | Nincs |
-| Átmozgatásirendelés-sor bevételezése és betárolása                       | Igen | Nincs |
+| Rakomány – cikk bevételezése                                              | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nem |
+| Azonosítótábla bevételezése és eltárolása                             | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nem |
+| Átmozgatási rendelés – cikk bevételezése és eltárolása                       | Igen | Nem |
+| Átmozgatásirendelés-sor bevételezése és betárolása                       | Igen | Nem |
 | Munka érvénytelenítése (bejövő)                                            | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, de csak ha a <b>Bevételezés regisztrációjának törlése a munka visszavonásakor</b> beállítás (a <b>Raktárkezelés paraméterei</b> lapon) törölve lett</p> |
-| Beszerzési rendelés termékbevételezés feldolgozása                        | Igen | Nincs |
+| Beszerzési rendelés termékbevételezés feldolgozása                        | Igen | Nem |
 | Beszerzési rendelés bevétele alulszállítással                      | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Igen, de csak érvénytelenítési kérelem elküldésével a központból |
 | Beszerzési rendelés bevétele túlszállítással                       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Igen  |
-| Fogadás *Áttárolás* munka létrehozásával                 | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
-| Fogadás *Minőségi rendelés* munka létrehozásával                  | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
-| Fogadás *Minőségi cikk-mintavételezés* munka létrehozásával          | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
-| Fogadás *Minőség a minőség-ellenőrzésnél* munka létrehozásával       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
-| Fogadás minőségi rendelés létrehozásával                            | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nincs |
-| Munkafeldolgozás – *Fürtbetárolás* irányításával                 | Igen | Nincs |
-| Munkafeldolgozás *Rövid kitárolással*                               | Igen | Nincs |
+| Fogadás *Áttárolás* munka létrehozásával                 | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nem |
+| Fogadás *Minőségi rendelés* munka létrehozásával                  | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nem |
+| Fogadás *Minőségi cikk-mintavételezés* munka létrehozásával          | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nem |
+| Fogadás *Minőség a minőség-ellenőrzésnél* munka létrehozásával       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nem |
+| Fogadás minőségi rendelés létrehozásával                            | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nem |
+| Munkafeldolgozás – *Fürtbetárolás* irányításával                 | Igen | Nem |
+| Munkafeldolgozás *Rövid kitárolással*                               | Igen | Nem |
 | Azonosítótábla rakodása                                           | Igen | Igen |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Raktári műveletek és kivételek kezelése
@@ -261,20 +261,20 @@ A következő táblázat bemutatja, hogy mely raktári műveletek és kivételke
 | Raktár módosítása                                   | Igen | Igen                          |
 | Mozgás                                           | Igen | Igen                          |
 | Mozgás sablon szerint                               | Igen | Igen                          |
-| Raktári átmozgatás                                 | Igen | Nincs                           |
-| Átmozgatási rendelés létrehozása a raktári alkalmazásból           | Igen | Nincs                           |
+| Raktári átmozgatás                                 | Igen | Nem                           |
+| Átmozgatási rendelés létrehozása a raktári alkalmazásból           | Igen | Nem                           |
 | Igazítás ki (be/ki)                                | Igen | Igen, de nem abban a korrekciós helyzetben, ahol a készletfoglalást el kell távolítani a **Foglalások eltávolítása** funkció használatával a készletkorrekció-típusoknál</p>                           |
-| Készletállapot-változás                            | Igen | Nincs                           |
+| Készletállapot-változás                            | Igen | Nem                           |
 | Ciklikus leltározás és számbavételi eltérés feldolgozása | Igen | Igen                           |
 | Címke újranyomtatása (azonosítótábla nyomtatása)             | Igen | Igen                          |
-| Azonosítótábla felépítése                                | Igen | Nincs                           |
-| Azonosítótábla felbontása                                | Igen | Nincs                           |
-| Csomagolás beágyazott azonosítótáblákhoz                                | Igen | Nincs                           |
-| Járművezető bejelentkezése                                    | Igen | Nincs                           |
-| Járművezető kijelentkezése                                   | Igen | Nincs                           |
+| Azonosítótábla felépítése                                | Igen | Nem                           |
+| Azonosítótábla felbontása                                | Igen | Nem                           |
+| Csomagolás beágyazott azonosítótáblákhoz                                | Igen | Nem                           |
+| Járművezető bejelentkezése                                    | Igen | Nem                           |
+| Járművezető kijelentkezése                                   | Igen | Nem                           |
 | Köteg intézkedési kódjának módosítása                      | Igen | Igen                          |
 | Nyitott munkalista megjelenítése                             | Igen | Igen                          |
-| Azonosítótáblák egyesítése                         | Igen | Nincs                           |
+| Azonosítótáblák egyesítése                         | Igen | Nem                           |
 | Min./max. és zónaküszöb feltöltési feldolgozása| Igen <p>Az ajánlás az, hogy ne foglalja bele ugyanazt a helyet a lekérdezésekbe</p>| Igen                          |
 | Időközökre bontott feltöltés feldolgozása                  | Igen  | Igen<p>Ne feledje, hogy a beállítást a skálázási egységen kell beállítani</p>                           |
 | Munka zárolása és feloldása                             | Igen | Igen                          |
@@ -290,9 +290,8 @@ A következő táblázat összefoglalja, hogy mely raktárkezelési termelési h
 |---------|-----|------------------------------|
 | Készként jelentés és késztermék betárolása | Igen | Igen |
 | Társ- és melléktermék betárolása | Igen | Igen |
-| Termelési rendelés indítása | Igen | Igen |
-| <p>A termeléshez kapcsolódó összes egyéb raktárkezelési folyamat, beleértve:</p><li>Kiadás raktárba</li><li>Termelés hullámfeldolgozása</li><li>Nyersanyag kitárolása</li><li>Kanban betárolás</li><li>Kanban kitárolás</li><li>Termelési selejt</li><li>Termelés – utolsó raklap</li><li>Anyagfelhasználás regisztrálása</li><li>Üres kanban</li></ul> | Igen | Nincs |
-| Nyersanyag feltöltése | Nincs | Nincs |
+| <p>A termeléshez kapcsolódó összes egyéb raktárkezelési folyamat, beleértve:</p><li>Kiadás raktárba</li><li>Termelés hullámfeldolgozása</li><li>Nyersanyag kitárolása</li><li>Kanban betárolás</li><li>Kanban kitárolás</li><li>Termelési rendelés indítása</li><li>Termelési selejt</li><li>Termelés – utolsó raklap</li><li>Anyagfelhasználás regisztrálása</li><li>Üres kanban</li></ul> | Igen | Nem |
+| Nyersanyag feltöltése | Nem | Nem |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>A raktárvégrehajtáshoz szükséges skálázási egységek karbantartása
 

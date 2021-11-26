@@ -333,9 +333,9 @@ A Microsoft három támogatási tervet kínál a Finance and Operations-vevőkne
 | Korlátlan szünet-/hibajavítási eset benyújtása | Igen | Igen | Igen |
 | 24/7 hozzáférés LCS-en keresztül | Igen | Igen | Igen |
 | Incidens válaszideje | Kevesebb, mint egy óra | Kevesebb, mint egy óra | Következő munkanap |
-| Tanácsadási óra | A készletek szerződésenként lesznek beszerezve.. | Nincs | Nincs |
-| Kijelölt támogatási ügyfélmenedzser | Igen | Nincs | Nincs |
-| Kijelölt támogatási mérnök | Lépjen kapcsolatba küldő szerződés alapján | Nincs | Nincs |
+| Tanácsadási óra | A készletek szerződésenként lesznek beszerezve.. | Nem | Nem |
+| Kijelölt támogatási ügyfélmenedzser | Igen | Nem | Nem |
+| Kijelölt támogatási mérnök | Lépjen kapcsolatba küldő szerződés alapján | Nem | Nem |
 
 A további tudnivalókat lásd: [Támogatás áttekintése](/power-platform/admin/support-overview).
 

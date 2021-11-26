@@ -18,7 +18,7 @@ ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
 ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "6779956"
@@ -69,7 +69,7 @@ A szervezeti jelentési követelményeket teljesítő dimenziók hierarchiája a
 
 | Dimenzióhierarchia neve | Dimenzió    | Dimenzióhierarchia típus neve      | Hozzáférési lista hierarchia |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Szervezet             | Költséghelyek | Dimenzió-osztályozáshierarchia | Nincs                    |
+| Szervezet             | Költséghelyek | Dimenzió-osztályozáshierarchia | Nem                    |
 
 **Dimenzióhierarchia**
 

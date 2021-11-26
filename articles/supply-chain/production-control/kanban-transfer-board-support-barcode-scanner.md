@@ -18,7 +18,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: b18aad4dcdbf8c2d18960ae306556c3ea679d622
 ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 09/29/2021
 ms.locfileid: "7566811"
@@ -90,7 +90,7 @@ Az eseménykanbanoknál a kijelölt feladatok és a rögzített feladatok állap
 <td>Igen</td>
 <td>Igen</td>
 <td>Igen</td>
-<td>Szám</td>
+<td>Nem</td>
 <td>Igen</td>
 </tr>
 <tr class="even">
@@ -100,61 +100,61 @@ Az eseménykanbanoknál a kijelölt feladatok és a rögzített feladatok állap
 <li>A rögzített feladat nincs Befejezve.</li>
 </ul></td>
 <td>Igen</td>
-<td>Szám</td>
+<td>Nem</td>
 <td>Igen</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
 </tr>
 <tr class="odd">
 <td>Áthelyezés</td>
 <td>Folyamatban</td>
 <td>Igen</td>
-<td>Szám</td>
+<td>Nem</td>
 <td>Igen</td>
 <td>Igen</td>
-<td>Szám</td>
-<td>Szám</td>
+<td>Nem</td>
+<td>Nem</td>
 </tr>
 <tr class="even">
 <td>Áthelyezés</td>
 <td>Befejeződött</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
 <td>Igen</td>
-<td>Szám</td>
+<td>Nem</td>
 </tr>
 <tr class="odd">
 <td>Átvitel vagy folyamat</td>
 <td>Üres</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
 </tr>
 <tr class="even">
 <td>Átvitel vagy folyamat</td>
 <td>A kanbankártya nem található</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
 </tr>
 <tr class="odd">
 <td>Átvitel vagy folyamat</td>
 <td>A kanbankártya megtalálható, de nincs hozzárendelve kanbanhoz</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
 </tr>
 <tr class="even">
 <td>Feldolgozás</td>
@@ -163,22 +163,22 @@ Az eseménykanbanoknál a kijelölt feladatok és a rögzített feladatok állap
 <li>Előkészítve</li>
 <li>Folyamatban</li>
 </ul></td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
 </tr>
 <tr class="odd">
 <td>Feldolgozás</td>
 <td>Befejeződött</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
-<td>Szám</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
+<td>Nem</td>
 </tr>
 </tbody>
 </table>

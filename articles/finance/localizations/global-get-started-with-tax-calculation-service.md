@@ -201,7 +201,7 @@ Az ebben a szakaszban található beállításokat jogi személy végzi. Be kell
 3. A **Számítás** lapon határozza meg a jogi személy elvárt kerekítési szabályát. A kerekítési logikával kapcsolatos további információkért lásd: [Adószámítás kerekítési szabályok](https://go.microsoft.com/fwlink/?linkid=2166988).
 4. Adja meg a **Hibakezelés** lapon a jogi személy elvárt hibakezelési módját. Három lehetőség áll rendelkezésre:
 
-    - Nincs
+    - Nem
     - Figyelmeztetés
     - Hiba
 

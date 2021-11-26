@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2e03becf2572aeaf213e8c3a0e874405ed0d5613
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
-ms.translationtype: MT
+ms.openlocfilehash: 76ac50ba2606ffff5a5a90d29ca99c8d67e5f14cce2127f5de6225d1cd8224ef
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7753026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745176"
 ---
 # <a name="removed-or-deprecated-features-in-previous-releases"></a>Eltávolított vagy elavult funkciók a korábbi kiadásokban
 
@@ -84,7 +84,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: 2020. október 1-től a **setUtcString ()** metódus nem támogatott. A fejlesztőknek helyette a **setUtcDateTime()** metódust kell használniuk. |
 
-### <a name="blocklist-report-it--feature-reference-it-00001"></a>Blokklista-jelentés (IT) – funkcióhivatkozási IT-00001
+### <a name="blacklist-report-it--feature-reference-it-00001"></a>Feketelistás jelentés (IT) – Funkcióhivatkozás IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -360,7 +360,7 @@ Ez a funkció az új nyereségadó-jegyzékekhez tartozó sablonok létrehozás�
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A funkció nem kompatibilis a Finance and Operations bővíthetőségi modellel. |
-| **Felváltotta másik szolgáltatás?**   | Szám |
+| **Felváltotta másik szolgáltatás?**   | Nem |
 | **Érintett területek**         | Adó |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Eltávolítva a Finance and Operations 8.1-es verzió és Platform update 20 után. |
@@ -371,7 +371,7 @@ Orosz országspecifikus modul a személyzeti ügyintézési adatok kezeléséhez
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A bérlista nem szerepel a Dynamics 365 portfólió globális stratégiai fókuszában. A partnerek és független szoftvergyártók jelentik a legjobb megoldást, hogy a helyi szabályozásnak és adófrissítésnek megfelelő bérszámfejtési funkciókhoz.|
-| **Felváltotta másik szolgáltatás?**   | Nincs|
+| **Felváltotta másik szolgáltatás?**   | Nem|
 | **Érintett területek**         | Oroszországi Bérlista és Emberi erőforrások kezelés |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: A funkció eltávolításának cél időkerete a 10.0-s verzió egyik frissítése. |
@@ -455,7 +455,7 @@ Ezeket az adókat már magában foglalja az indiai GST.
 |              &nbsp;                               |      &nbsp;                                                                   |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Elavulás vagy eltávolítás oka**       | Vevői használat hiánya.                                                  |
-| **Felváltotta másik szolgáltatás?**            | Nincs                                                                      |
+| **Felváltotta másik szolgáltatás?**            | Nem                                                                      |
 | **Érintett területek**                  | Indiai adóelőleg                                                  |
 | **Telepítési beállítás**                       | Minden modul                                                                    |
 | **Állapot**                                  | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.   |        
@@ -467,7 +467,7 @@ A felhasználók a kormányzati portálról tölthetik le.
 |             &nbsp;                                |    &nbsp;                                                                     |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Elavulás vagy eltávolítás oka**       | Vevői használat hiánya.                                                  |
-| **Felváltotta másik szolgáltatás?**            | Nincs                                                                      |
+| **Felváltotta másik szolgáltatás?**            | Nem                                                                      |
 | **Érintett területek**                  | Indiai adóelőleg                                                  |
 | **Telepítési beállítás**                       | Minden modul                                                                   |
 | **Állapot**                                  | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.     |    
@@ -478,7 +478,7 @@ A felhasználók a kormányzati portálról tölthetik le.
 |              &nbsp;                               |        &nbsp;                                                                 |
 |---------------------------------------------|-------------------------------------------------------------------------|
 | **Elavulás vagy eltávolítás oka**       | Vevői használat hiánya.                                                  |
-| **Felváltotta másik szolgáltatás?**            | Nincs                                                                      |
+| **Felváltotta másik szolgáltatás?**            | Nem                                                                      |
 | **Érintett területek**                  | Importálás és exportálás                                                       |
 | **Telepítési beállítás**                       | Minden modul                                                                    |
 | **Állapot**                                  | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.  |    
@@ -578,7 +578,7 @@ Ez az eszköz akkor használatos, ha a számlatükör esetében jelentős válto
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Korlátozott felhasználás                                                  |
-| **Felváltotta másik szolgáltatás?**   | Nincs                                                             |
+| **Felváltotta másik szolgáltatás?**   | Nem                                                             |
 | **Érintett területek**         | Főkönyv                                                 |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz. |
 
@@ -622,7 +622,7 @@ EDIVAT a biztonságos levelezésen keresztüli elektronikus nyilatkozat elavult 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Ez a funkció már nincs használatban.                           |
-| **Felváltotta másik szolgáltatás?**   | Nincs                                                             |
+| **Felváltotta másik szolgáltatás?**   | Nem                                                             |
 | **Érintett területek**         | Főkönyv                                                 |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz. |
 
@@ -699,7 +699,7 @@ Ez a funkció a számlatükör és a számviteli szabályok változásaihoz hasz
 |  &nbsp; |&nbsp;  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Korlátozott felhasználás                                                  |
-| **Felváltotta másik szolgáltatás?**   | Nincs                                                             |
+| **Felváltotta másik szolgáltatás?**   | Nem                                                             |
 | **Érintett területek**         | Főkönyv                                                 |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz. |
 
@@ -787,7 +787,7 @@ A rádiófrekvenciás azonosítás (Radio Frequency Identification – RFID) egy
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Alacsony vevői használat és korlátozott szolgáltatáskészlet.   |
-| **Felváltotta másik szolgáltatás?**   | Nincs                                              |
+| **Felváltotta másik szolgáltatás?**   | Nem                                              |
 | **Érintett területek**         | Készletgazdálkodás                            |
 | **Állapot**                         | Eltávolítva az Dynamics 365 for Operations 1611-es verziójától kezdve. |
 
@@ -798,7 +798,7 @@ A lett jogszabályok szigorú szabályokat írnak elő az értékesítési szám
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Az állami számlák számozását már nem kell fenntartani. A felhasznált számlaszámokra vonatkozó jelentésre már nincs szükség. |
-| **Felváltotta másik szolgáltatás?**   | Nincs       |
+| **Felváltotta másik szolgáltatás?**   | Nem       |
 | **Érintett területek**         | Kinnlevőségek    |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.  |
 
@@ -860,7 +860,7 @@ Emberi Erőforrások Bérlistaadatai
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Alacsony használat                                                           |
-| **Felváltotta másik szolgáltatás?**   | Nincs                                                                  |
+| **Felváltotta másik szolgáltatás?**   | Nem                                                                  |
 | **Érintett területek**         | Emberi erőforrások                                                     |
 | **Állapot**                         | Eltávolítva a Dynamics 365 for Operations 1611 verziójától kezdve |
 
@@ -883,7 +883,7 @@ A munkavállalók céljai létrehozásának kezelésére vonatkozó munkafolyama
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Teljesítménynövekedés.        |
-| **Felváltotta másik szolgáltatás?**   | Nincs                             |
+| **Felváltotta másik szolgáltatás?**   | Nem                             |
 | **Érintett területek**         | Kötelezettségek               |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve. |
 
@@ -916,7 +916,7 @@ Korábban az **Anyagjegyzék-verziók** konfigurációs kulcs letiltásakor, az 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Anyagjegyzék-verziók konfigurációs kulcsokkal való vezérlése nem méretezhető felhő környezetre. |
-| **Felváltotta másik szolgáltatás?**   | Nincs                                                                                      |
+| **Felváltotta másik szolgáltatás?**   | Nem                                                                                      |
 | **Érintett területek**         | Termékinformációk kezelése, Készletkezelés                                    |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                                                          |
 
@@ -927,7 +927,7 @@ Egyedi fizetési mód brazil vállalatok esetében
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Brazil borderó fizetési mód támogatása már nem része a brazil honosításnak |
-| **Felváltotta másik szolgáltatás?**   | Nincs   |
+| **Felváltotta másik szolgáltatás?**   | Nem   |
 | **Érintett területek**         | Kötelezettségek   |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz. |
 
@@ -949,7 +949,7 @@ A (SCAN) készenléti környezet a Nota Fiscal eletrônica (NF-e) állapotának 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Ez a készenléti módszer már nem alkalmazható minden brazil államban |
-| **Felváltotta másik szolgáltatás?**   | Nincs                                                                          |
+| **Felváltotta másik szolgáltatás?**   | Nem                                                                          |
 | **Érintett területek**         | Kinnlevőségek                                                         |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.              |
 
@@ -1000,7 +1000,7 @@ A Megfelelési Központ egy Enterprise Portal webhely volt, amely a Sarbanes-Oxl
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Vevői használat hiánya. A Microsoft SharePoint magában foglalja ugyanazt a képességet, ami korábban a Megfelelési Központban volt elérhető. |
-| **Felváltotta másik szolgáltatás?**   | Nincs   |
+| **Felváltotta másik szolgáltatás?**   | Nem   |
 | **Érintett területek**         | Megfelelés és belső ellenőrzés  |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.    |
 
@@ -1029,7 +1029,7 @@ Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származ
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Kötegcsoportok használatával korábban egy vagy több Köteget lehetett megjeleníteni az Adatterületen. A feltöltés korlátozottsága mellett teljesítményproblémák is felléptek, mivel egy szülőűrlapon történő rekordváltoztatás a Kötegcsoport minden egyes Kötegéhez létrehozott egy lekérdezést. |
-| **Felváltotta másik szolgáltatás?**   | Nincs      |
+| **Felváltotta másik szolgáltatás?**   | Nem      |
 | **Érintett területek**         | Minden modul    |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.  |
 
@@ -1047,7 +1047,7 @@ Ezzel az eszközzel integrálták a Microsoft Dynamics CRM rendszerből származ
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A dán csekkformátum elrendezésének támogatása megszűnt, a jelentést eltávolítottuk a dán honosításból. |
-| **Felváltotta másik szolgáltatás?**   | Nincs    |
+| **Felváltotta másik szolgáltatás?**   | Nem    |
 | **Érintett területek**         | Minden modul    |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.  |
 
@@ -1079,7 +1079,7 @@ A Dynamics AX 2012 lehetővé tette a mellékletek tárolását az adatbázisban
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A funkció hasznossága nem mutatható ki. |
-| **Felváltotta másik szolgáltatás?**   | Nincs                                     |
+| **Felváltotta másik szolgáltatás?**   | Nem                                     |
 | **Érintett területek**         | Munkaidő és jelenlét                    |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.         |
 
@@ -1137,7 +1137,7 @@ Ez a funkció az eXtensible Business Reporting Language (XBRL) kimenetet biztos�
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Alacsony vevői használat és korlátozott szolgáltatáskészlet.  |
-| **Felváltotta másik szolgáltatás?**   | Nincs              |
+| **Felváltotta másik szolgáltatás?**   | Nem              |
 | **Érintett területek**         | Megfelelés és belső ellenőrzés, Kötelezettségek  |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve. |
 
@@ -1193,7 +1193,7 @@ Előjegyzés létrehozás nem lehetséges köteg használatával, azonban a felh
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Német EU Értékesítési Lista jelentés XML-formátuma, már nem támogatott. Csak az ELMA5 szövegfájl formátumban lehet a Német Adóhivatal számára jelenteni az EU értékesítési lista jelentést. |
-| **Felváltotta másik szolgáltatás?**   | Nincs         |
+| **Felváltotta másik szolgáltatás?**   | Nem         |
 | **Érintett területek**         | Adó        |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz.   |
 
@@ -1246,7 +1246,7 @@ Ez a funkció lehetővé tette a CFD módszerrel történő mexikói elektroniku
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A módszer már nem alkalmazható. Az adóhatóságok beszüntettették az elektronikus számlák CFD módszerrel való létrehozását. Ennek helyét a CFDI (Comprobante Fiscal Digital a través de Internet) módszer vette át, amelynek megfelelően egy külső szolgáltató (PAC) ír alá. A havi jelentést eltávolítottuk, a felhasználók egy lekérdezési lehetőség segítségével kérhetnek le előzménytranzakciókat. |
-| **Felváltotta másik szolgáltatás?**   | Nincs    |
+| **Felváltotta másik szolgáltatás?**   | Nem    |
 | **Érintett területek**         | Kinnlevőségek, Projekt   |
 | **Állapot**                         | Elavult: Az eltávolítási dátum nem lett beállítva ehhez a szolgáltatáshoz. |
 
@@ -1278,7 +1278,7 @@ A készlet- és raktárnaplók már nem támogatják naplók megjelölését egy
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A funkció hasznossága nem mutatható ki. |
-| **Felváltotta másik szolgáltatás?**   | Nincs                                     |
+| **Felváltotta másik szolgáltatás?**   | Nem                                     |
 | **Érintett területek**         | Készletgazdálkodás                   |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.         |
 
@@ -1311,7 +1311,7 @@ Ez a szolgáltatás lehetővé tette a három alap termékdimenzió egyikének (
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Dynamics AX jelenlegi verziója nem támogatja címkék módosítását futtatás alatt. |
-| **Felváltotta másik szolgáltatás?**   | Nincs                                                                            |
+| **Felváltotta másik szolgáltatás?**   | Nem                                                                            |
 | **Érintett területek**         | Termékinformációk kezelése                                                |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.                                                |
 
@@ -1340,7 +1340,7 @@ A Dynamics AX 2012 R3 rendszerben a Retail Server a HTTP-kommunikáció (nem vé
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Alacsony vevői használat és korlátozott szolgáltatáskészlet. |
-| **Felváltotta másik szolgáltatás?**   | Nincs                                           |
+| **Felváltotta másik szolgáltatás?**   | Nem                                           |
 | **Érintett területek**         | Amerikai áfa                                 |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.               |
 
@@ -1351,7 +1351,7 @@ Az Oldal Szolgáltatások lehetővé teszik olyan weboldalak megalkotását, mel
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Dynamics AX által használt Microsoft Azure infrastruktúra új helyettesítő lehetőségekkel rendelkezik (például Azure oldalakkal). |
-| **Felváltotta másik szolgáltatás?**   | Nincs   |
+| **Felváltotta másik szolgáltatás?**   | Nem   |
 | **Érintett területek**         | HR-toborzás, esetkezelés, ajánlatkérés, szállítóregisztrálás, lehetőségekhez és kampányokhoz tartozó együttműködési munkaterületek  |
 | **Állapot**                         | Eltávolítva a Dynamics AX 7.0-s verziójától kezdve.    |
 

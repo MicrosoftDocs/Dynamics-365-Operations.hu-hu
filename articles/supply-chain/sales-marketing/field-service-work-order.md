@@ -18,7 +18,7 @@ ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.openlocfilehash: c54f5eaec1ae453ba9e55ef54d47c8591276ec89
 ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 09/29/2021
 ms.locfileid: "7568375"
@@ -88,21 +88,21 @@ Az alábbi táblázat áttekintést ad a terméksorok különböző kombináció
 | Rendszer állapota <br>(Field Service) | Sor állapota <br>(Field Service) | Felosztott <br>(Field Service) |Szinkronizált érték <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Nyitott – beütemezve   | Becsült   | Igen       | Becsült                       |
-| Nyitott – beütemezve   | Becsült   | Nincs        | Felhasználva                            |
+| Nyitott – beütemezve   | Becsült   | Nem        | Felhasználva                            |
 | Nyitott – beütemezve   | Felhasználva        | Igen       | Felhasználva                            |
-| Nyitott – beütemezve   | Felhasználva        | Nincs        | Felhasználva                            |
+| Nyitott – beütemezve   | Felhasználva        | Nem        | Felhasználva                            |
 | Nyitott – folyamatban | Becsült   | Igen       | Becsült                       |
-| Nyitott – folyamatban | Becsült   | Nincs        | Felhasználva                            |
+| Nyitott – folyamatban | Becsült   | Nem        | Felhasználva                            |
 | Nyitott – folyamatban | Felhasználva        | Igen       | Felhasználva                            |
-| Nyitott – folyamatban | Felhasználva        | Nincs        | Felhasználva                            |
+| Nyitott – folyamatban | Felhasználva        | Nem        | Felhasználva                            |
 | Nyitott – befejezve   | Becsült   | Igen       | Becsült                       |
-| Nyitott – befejezve   | Becsült   | Nincs        | Felhasználva                            |
+| Nyitott – befejezve   | Becsült   | Nem        | Felhasználva                            |
 | Nyitott – befejezve   | Felhasználva        | Igen       | Felhasználva                            |
-| Nyitott – befejezve   | Felhasználva        | Nincs        | Felhasználva                            |
+| Nyitott – befejezve   | Felhasználva        | Nem        | Felhasználva                            |
 | Lezárva – feladva    | Becsült   | Igen       | Felhasználva                            |
-| Lezárva – feladva    | Becsült   | Nincs        | Felhasználva                            |
+| Lezárva – feladva    | Becsült   | Nem        | Felhasználva                            |
 | Lezárva – feladva    | Felhasználva        | Igen       | Felhasználva                            |
-| Lezárva – feladva    | Felhasználva        | Nincs        | Felhasználva                            |
+| Lezárva – feladva    | Felhasználva        | Nem        | Felhasználva                            |
 
 Az alábbi táblázat áttekintést ad a szolgáltatási sorok különböző kombinációiról.
 

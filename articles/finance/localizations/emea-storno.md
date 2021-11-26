@@ -15,7 +15,7 @@ ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 6c8bea5d5ec8069e78f3ed5e7d1d6a74ee28ce2dea1891ad71e410d4c309a79c
 ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "6764212"
@@ -119,7 +119,7 @@ A Finance különlegesen kezeli a negatív naplóösszegeket. Általános napló
 <tbody>
 <tr class="row-2">
 <td class="column-1"> Tartozik</td>
-<td class="column-2">Nincs</td>
+<td class="column-2">Nem</td>
 <td class="column-3">&gt;0.</td>
 <td class="column-4" align="right">Összeg</td>
 <td class="column-5" align="right">Összeg</td>
@@ -129,7 +129,7 @@ A Finance különlegesen kezeli a negatív naplóösszegeket. Általános napló
 </tr>
 <tr class="row-3">
 <td class="column-1"> Jóváírás</td>
-<td class="column-2">Nincs</td>
+<td class="column-2">Nem</td>
 <td class="column-3">&lt;0.</td>
 <td class="column-4" align="right">-Összeg</td>
 <td class="column-5" align="right">Összeg</td>

@@ -18,7 +18,7 @@ ms.search.validFrom: 2020-06-18
 ms.dyn365.ops.version: AX 7.0.0
 ms.openlocfilehash: 28984730e5660414eec1ba087eb5de1eba4cbbb8
 ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 09/29/2021
 ms.locfileid: "7571929"
@@ -344,7 +344,7 @@ Ha a gyártásban az **Eseménytípus** mezőt a *Befejezettnek jelentés* ért�
 </tr>
 <tr>
 <td>Rögzített mennyiség: 1</td>
-<td>Nincs</td>
+<td>Nem</td>
 <td>
 <p>Kötegszám: Nincs</p>
 <p>Sorozatszám: Nincs</p>
@@ -399,7 +399,7 @@ Ha a gyártásban az **Eseménytípus** mezőt a *Befejezettnek jelentés* ért�
 </tr>
 <tr>
 <td>Rögzített mennyiség: 2</td>
-<td>Nincs</td>
+<td>Nem</td>
 <td>
 <p>Kötegszám: Igen</p>
 <p>Sorozatszám: Igen</p>

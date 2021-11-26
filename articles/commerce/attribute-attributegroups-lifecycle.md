@@ -18,7 +18,7 @@ ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
 ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/05/2021
 ms.locfileid: "6727654"
@@ -43,7 +43,7 @@ Például egy tipikus televízió terméknek a következő attribútumai lehetne
 |            | Kompozit bemenetek         | 0–10                        | 2             |
 |            | Komponens bemenetek         | 0–10                        | 1             |
 | LCD        | 3D Ready                 | Igen vagy Nem                   | Igen           |
-|            | 3D Enabled               | Igen vagy Nem                   | Nincs            |
+|            | 3D Enabled               | Igen vagy Nem                   | Nem            |
 | Plazma     | Min. üzemhőmérséklet      | 32–110 fok              | 32            |
 |            | Max. üzemhőmérséklet        | 32–110 fok              | 100           |
 | Projektoros | Képcsőgarancia | 6, 12 vagy 18 hónap         | 12            |

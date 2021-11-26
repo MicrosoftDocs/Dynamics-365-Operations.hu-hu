@@ -178,7 +178,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A Dynamics 2012 AX Enterprise Portal (EP) alkalmazással összefüggő metaadat-műtermékei elavultak, mert az EP soha nem volt támogatott a Finance and Operations alkalmazásokban. |
-| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Felváltotta másik szolgáltatás?**   | Nem |
 | **Érintett területek**         | Webes ügyfél |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: Az összes EP-kód eltávolítása a 2021. októberi kiadásban van ütemezve. |
@@ -335,7 +335,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A szolgáltatás által megjelenített, dokumentumokba ágyazott navigációs URL-címek bizalmas üzleti adatokat is tartalmazhatnak. Biztonsági óvintézkedésként megszüntetjük a dokumentumok beágyazott részletező hivatkozásainak támogatását a vevők adatainak további védelme érdekében. A felhasználók számára is előnyös a jobb teljesítményt, miközben interaktívan állítanak elő dokumentumokat a módosítás eredményeképpen.  |
-| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Felváltotta másik szolgáltatás?**   | Nem |
 | **Érintett területek**         | Jelentés |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Ez a funkció aktívan el lesz távolítva a szolgáltatásból.<br><br>A korszerű ügyfél számos lehetőséget kínál olyan nézetek készítésére, amelyek automatikusan létrejövő hivatkozásokat is tartalmaznak, hogy segítsék a navigálást az alkalmazásban. A szolgáltatás által megjelenített, oldalszámmal ellátott dokumentumok olyan külső kommunikációhoz ajánlottak, amelyeket e-mailben elküldenek, archiválnak és kinyomtatnak címzetteknek. A dokumentumok közvetlenül a böngészőben történő előnézetének élményét a tapasztalatok alapján javítottuk amely közvetlen hozzáférést biztosít a helyi nyomtatókhoz. A további tudnivalókat lásd: [PDF-dokumentumok előnézete beágyazott megjelenítővel](../analytics/preview-pdf-documents.md). |

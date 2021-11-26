@@ -17,7 +17,7 @@ ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
 ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/24/2021
 ms.locfileid: "7414714"
@@ -143,7 +143,7 @@ Mivel számos különböző integrációs technológia érhető el, a használan
 | BYOD                   | Igen, a Human Resources rendszergazdája által ütemezve        | Aszinkron, kötegelt                                | Nem<sup>3</sup>                                    | Magas (rekordok százezrei)                    | Az összes DMF-entitást támogatja           |
 | OData-kompatibilis entitások | Igen, középrétegű megoldás használatával                    | Szinkronizálás                                        | Igen, a Human Resources adatszolgáltatásával (OData)  | A használati esettől függően változik (támogatja a lapozást az interaktív használathoz) | Magas                                |
 | Excel-bővítmény           | Nem                                       | Szinkronizálás                                        | Nem                                        | Közepes (rekordok tízezrei)                      | Támogatja az összes OData-kompatibilis entitást |
-| Data Integrator        | Igen, a Data Integratorban ütemezve        | Aszinkron, kötegelt                                | Nincs                                        | A használati esettől függően változik                                       | Minden Dataverse-táblát támogat           |
+| Data Integrator        | Igen, a Data Integratorban ütemezve        | Aszinkron, kötegelt                                | Nem                                        | A használati esettől függően változik                                       | Minden Dataverse-táblát támogat           |
 
 <sup>2</sup>A Microsoft jelentősen növeli a növekvő adatlefedettséget a Dataverse-táblák számára. A Dataverse használatát ajánljuk, amikor a lefedettség elérhető. A Dataverse adatlefedettsége jelenleg alacsony a DMF- és az OData-kompatibilis entitásokéhoz képest.
 
