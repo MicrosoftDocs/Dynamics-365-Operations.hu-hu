@@ -74,10 +74,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/commerce/toc.json
                 - name: Commerce Data Exchange megvalósítási útmutatás
                   href: dev-itpro/implementation-considerations-cdx.md
-                - name: 'Finance and Operations alkalmazások, amelyeket a 21Vianet működtet Kínában'
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations alkalmazások Franciaországban
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/commerce/toc.json
             - name: Támogatás kérése
               href: ../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=/dynamics365/commerce/toc.json
             - name: Frissítés és N-1-támogatás
@@ -90,7 +86,7 @@
                   href: dev-itpro/RetailSDK-update.md
             - name: Új vagy módosult elemek
               items:
-                - name: Új vagy módosult elemek az Finance and Operations alkalmazásokban
+                - name: Új vagy módosult elemek a Finance and Operations alkalmazásokban
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
                 - name: Új vagy módosult elemek a Commerce szolgáltatásban
                   items:
@@ -200,7 +196,7 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and OperationsAlkalmazások architektúrája
+                - name: Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Microsoft FastTrack
                   href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
@@ -1092,7 +1088,7 @@
                       href: add-accordion.md
                     - name: Lapmodul
                       href: add-tab.md
-                    - name: iFrame modul
+                    - name: Iframe modul
                       href: iframe-module.md
                 - name: Marketingmodulok
                   items:
@@ -1274,6 +1270,8 @@
               href: set-up-rfm-analysis.md
             - name: Microsoft Clarity beállítása a Dynamics 365 Commerce alkalmazásban
               href: set-up-clarity.md
+            - name: Commerce elemzések (Előzetes verzió)
+              href: commerce-analytics.md
         - name: Globalizáció
           items:
             - name: A Commerce csatorna pénzügyi integrálásának áttekintése
@@ -1412,6 +1410,10 @@
                   href: localizations/rus-fpi-sample.md
                 - name: Ügyfélinformációk kezelése Oroszországra vonatkozóan
                   href: localizations/rus-customer-information.md
+            - name: Szaúd-Arábia
+              items:
+                - name: QR-kódok létrehozása és nyomtatása nyugtákra Szaúd Arábiára vonatkozóan
+                  href: localizations/emea-sau-qr-code.md
             - name: Svédország
               items:
                 - name: Pénztárgép funkciói
@@ -2536,9 +2538,11 @@
                       href: e-commerce-extensibility/sdk-faq.md
                     - name: Gyakorlati tanácsok a hibaelhárításhoz a Dynamics 365 Commerce fejlesztéséhez
                       href: e-commerce-extensibility/debugging-best-practices.md
-            - name: Retail SDK
+                    - name: Az e-kereskedelmi webhely oldalainak tesztelése memóriaszivárgások tekintetében
+                      href: e-commerce-extensibility/memory-leak-detection.md
+            - name: Retail szoftverfejlesztői készlet (SDK)
               items:
-                - name: Áttelepítés a Commerce SDK-ra
+                - name: Áttelepítés a Commerce szoftverfejlesztői készletre (SDK)
                   href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
                 - name: A Retail szoftverfejlesztői készlet (SDK) architektúrája
                   href: dev-itpro/retail-sdk/retail-sdk-overview.md
@@ -2590,7 +2594,7 @@
                   href: dev-itpro/pos-handler.md
                 - name: Pénztárbővítmény csomaginformációjának megtekintése
                   href: dev-itpro/view-pos-extension-package-details.md
-                - name: A Cloud POS tesztrögzítője és Regression Suite Automation Tool eszköze
+                - name: A Cloud POS tesztrögzítője és a Regression suite automation tool eszköze
                   href: dev-itpro/pos-rsat.md
                 - name: Egyéni mezők hozzáadása a pénztár Összegek paneljéhez
                   href: dev-itpro/custom-field-pos-totals.md

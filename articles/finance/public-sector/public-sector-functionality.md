@@ -1,7 +1,7 @@
 ---
 title: Állami szektor – kezdőlap
-description: A Dynamics 365 Finance az állami szektorban gyakran használt üzleti folyamatokat. Ezek között költségvetés-tervezési, beszerzési, kötelezettség- és követeléskezelési feladatok egyaránt találhatók.
-author: ShylaThompson
+description: A Dynamics 365 Finance az állami szektorban gyakran használt üzleti folyamatokat. Ezen folyamatok között költségvetés-tervezési, beszerzési, kötelezettség- és kinnlévőségkezelési feladatok egyaránt találhatók.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
@@ -18,12 +18,12 @@ ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6d9331b8a8af74f86febff1d72538efa24aa6978f41a4c6b21375d1d6c856267
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f59522ab857445d69012f4cfdfade47c40189266
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748909"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817741"
 ---
 # <a name="public-sector-home-page"></a>Állami szektor – kezdőlap
 

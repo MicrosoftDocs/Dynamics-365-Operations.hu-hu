@@ -2,7 +2,7 @@
 title: Pénzügyi konfiguráció – információk
 description: Ez a témakör azokat a konfigurációs lépéseket ismerteti, amelyek lehetővé teszik a rendszer számára a Pénzügyi információkban elérhető képességek használatát.
 author: ShivamPandey-msft
-ms.date: 1/03/2021
+ms.date: 11/19/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,19 +15,19 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 5668d3ddff777645b4f1c6608f025d0c5a63208a
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
-ms.translationtype: HT
+ms.openlocfilehash: 6183e8a7500e9deff0ebf6b5dec8842ad4ca94cb
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752978"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827028"
 ---
 # <a name="configuration-for-finance-insights"></a>Pénzügyi konfiguráció – információk
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-A Pénzügyi információk a Microsoft Dynamics 365 Finance és a Dataverse, az Azure és az AI Builder funkcióit kombinálva hatékony előrejelző eszközöket biztosítanak a szervezet számára. Ez a témakör azokat a konfigurációs lépéseket ismerteti, amelyek lehetővé teszik a rendszer számára a Pénzügyi információkban elérhető képességek használatát. A témakörben található eljárások sikeres befejezéséhez rendszergazdai és rendszer szabó hozzáféréssel kell rendelkezik a Power Portal admin center, a System Administrator hozzáférése a [...](https://admin.powerplatform.microsoft.com/)Dynamics 365 Finance Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban, valamint hozzáféréssel kell lennie a környezetek létrehozásához.
+A Pénzügyi információk a Microsoft Dynamics 365 Finance és a Dataverse, az Azure és az AI Builder funkcióit kombinálva hatékony előrejelző eszközöket biztosítanak a szervezet számára. Ez a témakör azokat a konfigurációs lépéseket ismerteti, amelyek lehetővé teszik a rendszer számára a Pénzügyi információkban elérhető képességek használatát. A témakörben található eljárások sikeres befejezéséhez rendszergazdai és rendszer szabó hozzáféréssel kell rendelkezik a [Power Portal admin center](https://admin.powerplatform.microsoft.com/), a System Administrator hozzáférése aDynamics 365 Finance Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban, valamint hozzáféréssel kell lennie a környezetek létrehozásához.
 
 > [!NOTE]
 > A pénzügyi információk beállításának következő eljárásai a Dynamics 365 Finance 10.0.21-es és újabb verziókra érvényesek.
@@ -43,14 +43,34 @@ Kövesse az alábbi lépéseket a környezetek telepítéséhez.
 
 2. Ha a pénzügyi információkat egy üzenetkészlet-környezetben konfigurálja, előfordulhat, hogy termelési adatokat kell másolnia a környezetbe, mielőtt az előrejelzések működni fognak. Az előrejelzési modell több évnyi adatból használatával készít előrejelzéseket. A Contoso bemutató adatai nem tartalmaznak elég előzményadatot az előrejelzési modell megfelelő képzéséhez. 
 
+## <a name="configure-your-azure-ad-tenant"></a>A bérlő Azure AD konfigurálása
+
+Azure Active Directory( ) konfigurálni kell, hogy használni Azure AD tudja az alkalmazásokat Dataverse és az Microsoft Power Platform alkalmazásokat. Ehhez a konfigurációhoz vagy a Projekttulajdonos szerepkört, vagy a Környezetkezelő szerepkört hozzá kell rendelni a felhasználóhoz **az** **·** **LCS Projekt biztonsági szerepkör** mezőjében.
+
+Győződjön meg a következő beállításokról:
+
+- A Power Portal felügyeleti központban rendszergazdai és **rendszerszabó** **hozzáféréssel** rendelkezik.
+- Ahhoz a felhasználóhoz, aki a Pénzügyi információk bővítményt telepíti, egy vagy ezzel egyenértékű Dynamics 365 Finance licencet alkalmaz a rendszer.
+
+A következő Azure AD alkalmazások vannak regisztrálva a Azure AD következőben:
+
+|  Pályázat                             | Alkalmazás azonosítója                               |
+|------------------------------------------|--------------------------------------|
+| Microsoft Dynamics ERP mikroszolgáltatások CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
+    
 ## <a name="configure-dataverse"></a>Dataverse konfigurálása
 
 A következő lépések segítségével konfigurálhatja a Dataverse-t a Finance Insights alkalmazáshoz.
 
 - Nyissa meg a környezet oldalát az LCS-ben, és ellenőrizze, hogy az **Power Platform-Integráció** szakasz már be van-e állítva.
 
-    - Ha már be van állítva, akkor a Dataverse-környezethez kapcsolt Finance-környezet nevének szerepelnie kell a listában.
-    - Ha még nincs beállítva, válassza a **Telepítőt**. A környezet Dataverse beállítása akár egy óráig is eltelhet. Ha a telepítés sikeresen befejeződött, megjelenik a Pénzügyi környezethez kapcsolt Dataverse környezet neve.
+    - Ha már be van állítva, akkor megjelenik a Pénzügyi környezethez kapcsolódó Dataverse Dataverse környezeti név.
+    - Ha Dataverse még nincs beállítva, válassza a **Beállítás** lehetőséget. A környezet Dataverse beállítása akár egy óráig is eltelhet. Ha a telepítés sikeresen befejeződött, megjelenik a Pénzügyi környezetben összekapcsolt Dataverse környezet neve.
+    - Ha az integráció már meglévő környezetben van beállítva, forduljon a rendszergazdához, és győződjön meg arról, hogy a kapcsolt környezet nem letiltott Microsoft Power Platform állapotban van.
+
+        A további tudnivalókat lásd Az integráció [Power Platform](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md) engedélyezése. 
+
+        A rendszergazdai Microsoft Power Platform webhely eléréséhez menjen a következő <https://admin.powerplatform.microsoft.com/environments> oldalra:
 
 ## <a name="configure-the-finance-insights-add-in"></a>A Finance Insights bővítmény konfigurálása
 
@@ -70,18 +90,18 @@ A bővítmény telepítése eltarthat néhány percig.
 
 ## <a name="one-last-thing"></a>Még egy utolsó tetet...
 
-A bővítmény telepítése után előfordulhat, hogy a pénzügyi információk funkciójának engedélyezése akár egy óráig is eltelhet a funkciókezelés **·** Dynamics 365 Finance munkaterületén. Ha nem szeretne túl hosszú ideig várni, manuálisan futtathatja az **Információ létesítés állapotának ellenőrzése** folyamatot. 
+A bővítmény telepítése után előfordulhat, hogy a pénzügyi információk funkciójának engedélyezése akár egy óráig is eltelhet a **funkciókezelés** Dynamics 365 Finance munkaterületén. Ha nem szeretne túl hosszú ideig várni, manuálisan futtathatja az **Információ létesítés állapotának ellenőrzése** folyamatot. 
 
 1. Menjen Dynamics 365 Finance a Rendszerfelügyelet – **\> Beállítási folyamat \> automatizálása gombra.**
-2. Az Elemzési **létesítés állapotának ellenőrzése a Háttérfolyamatok** **·** lapon, és válassza a **Szerkesztés** lehetőséget.
+2. Az Elemzési **létesítés állapotának ellenőrzése a Háttérfolyamatok** **lapon**, és válassza a **Szerkesztés** lehetőséget.
 3. A **Következő végrehajtási mező** beállítása 30 perccel az aktuális idő előtt.
 
    Ennek a módosításnak arra kell kényszerítenie az **"Adatátépítési állapot** ellenőrzése" folyamatot, hogy azonnal fusson.
 
-   Az Adatátépítési állapot ellenőrzése sikeres futtatása után engedélyezheti a Pénzügyi információk funkciókat a **·** **Szolgáltatáskezelés** munkaterületen.
+   Az Adatátépítési állapot ellenőrzése sikeres futtatása után engedélyezheti a Pénzügyi információk funkciókat **a** **Szolgáltatáskezelés** munkaterületen.
 
 ## <a name="feedback-and-support"></a>Visszajelzés és támogatás
 
-Ha visszajelzést szeretne küldeni, vagy ha segítségre van szüksége, e-mailt küld a Pénzügyi információk [(Előnézet)](mailto:fiap@microsoft.com) címre.
+Ha visszajelzést szeretne küldeni, vagy segítségre van szüksége, e-mailben küldje el a Pénzügyi információk [(Előnézet) címre](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

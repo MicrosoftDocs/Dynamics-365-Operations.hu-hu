@@ -62,13 +62,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Raktárkezelés konfigurálása helyszíni telepítések esetében
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: 'Finance and Operations alkalmazások, amelyeket a 21Vianet működtet Kínában'
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations alkalmazások Franciaországban
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
             - name: Új vagy módosult elemek
               items:
-                - name: Új vagy módosult elemek az Finance and Operations alkalmazásokban
+                - name: Új vagy módosult elemek a Finance and Operations alkalmazásokban
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
                 - name: Újdonságok és változások a Finance szolgáltatásban
                   items:
@@ -178,7 +174,7 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and OperationsAlkalmazások architektúrája
+                - name: Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/index
@@ -500,6 +496,8 @@
               href: accounts-receivable/customer-aging-snapshot.md
             - name: Vevő korosítási jelentése
               href: accounts-receivable/customer-aging.md
+            - name: Vevőkorosítási adattároló
+              href: accounts-receivable/customer-aging-data-storage.md
             - name: Leírási napló létrehozása vevőhöz
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Speciális megjegyzések kezelése
@@ -1476,6 +1474,10 @@
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
+                        - name: Németországi jelentés
+                          items:
+                            - name: Áfabevallás
+                              href: /localizations/emea-deu-vat-declaration-germany.md
                         - name: Hollandiai jelentés
                           items:
                             - name: Áfabevallás
@@ -2160,11 +2162,13 @@
                       href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: Értékcsökkentési helyesbítések további beszerzésekhez a második év során
                   href: localizations/tasks/de-00002-depreciation.md
+                - name: Áfabevallás
+                  href: localizations/emea-deu-vat-declaration-germany.md
                 - name: Elektronikus áfabevallás (ELSTER) továbbítása
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Német Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Áfabevallási nyilatkozat Németország számára
+                - name: Áfabevallás
                   href: localizations/emea-de-vat-declaration.md
                 - name: Elektronikus vevői számlák (jelentés)
                   href: localizations/emea-deu-e-invoices.md

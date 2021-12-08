@@ -2,19 +2,19 @@
 title: A Finance and Operations-alkalmazások szolgáltatásleírása
 description: Ez a témakör a Finance and Operations-alkalmazások szolgáltatásleírását tartalmazza.
 author: tomhig
-ms.date: 09/29/2021
+ms.date: 11/17/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581816"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825400"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások szolgáltatásleírása
 
@@ -50,10 +50,10 @@ A Finance and Operations-alkalmazások működési modellje a szolgáltatás tel
 
 ### <a name="customer-activities"></a>Ügyféltevékenységek
 
-Az ügyfelek együttműködnek a partnereikkel és a [Microsoft FastTrackkel](/dynamics365/fasttrack/) a [Success by Design](/dynamics365/fasttrack/success-by-design-overview) keretrendszert követve, és a [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) rendszerben biztosított eszközök és bevált gyakorlati minták segítségével valósítják meg a megoldást. Gyakori tevékenységek a következők:
+Az ügyfelek a [Dynamics 365 implementáció útmutatóját](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), a keretrendszert, valamint a...[Success by Design](/dynamics365/fasttrack/success-by-design-overview) [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) rendszernek a megoldás megvalósításához rendelkezésre álló eszközöket és gyakorlati sablonokat követik, partnerüknek és [Microsoft FastTrackjüknek](/dynamics365/fasttrack/) megfelelően. Gyakori tevékenységek a következők:
 
 - Felhasználói identitás és biztonságkezelés
-- Üzleti folyamatok meghatározása, kialakítása és üzemeltetése
+- Üzleti folyamatok meghatározása, kialakítása és működtetása
 - Bővítmények meghatározása, fejlesztése, tesztelése és működtetése
 - Nem termelési telepítések figyelése és kezelése
 - Alkalmazásfrissítések kezelése és bővítmények érvényesítése
@@ -66,7 +66,7 @@ A Microsoft kezeli a Finance and Operations szolgáltatást az ügyfelek teszt- 
 **Infrastruktúra-kezelés**
 - Biztonság és elkülönítés
 - Operációs rendszerek és virtualizálás
-- Kiszolgálók, tárterület és hálózatépítés
+- Kiszolgálók, tárolás és hálózat
 - Adatközpont áramellátása, hálózatépítés, hűtés
 
 **Alkalmazásplatform-kezelés**

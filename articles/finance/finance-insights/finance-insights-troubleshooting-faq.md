@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: f3cac30a66ff3a74a7f67c11dd9fa14af79d10af
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
-ms.translationtype: HT
+ms.openlocfilehash: 68115d484abcdc3c37357ae441e9f9ccb5212659
+ms.sourcegitcommit: 6a9f068b59b62c95a507d1cc18b23f9fd80a859b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752617"
+ms.lasthandoff: 11/20/2021
+ms.locfileid: "7827053"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>A Finance Insights beállítási problémáinak elhárítása
 
@@ -35,7 +35,7 @@ Ez a témakör a Finance Insights funkciók használata során előforduló prob
 
 ### <a name="resolution"></a>Megoldás
 
-Előfordulhat, hogy egy korábbi verzióhoz készült sablont használ. A 10.0.17-es verzió kiadása előtt az előzetes verziót használó vevők az **Ügyfél fizetési információk eredményei (CDS – Fin and Ops)** adatintegrációs (DI) sablont konfigurálták a **Fizetési előrejelzés eredménye (előzetes verzió)** entitással. A 10.0.17-es és újabb verzióra történő frissítés után az **Ügyfelek fizetési információinak eredményei (CDS – Fin and Ops 10.0.17 és újabb)** DI sablonját kell használnia a megfeleltetés befejezéséhez. Lehet, hogy nem tudja leképezni a DI sablon céloszlopát mindaddig, amíg az adatkezelési entitások listája frissül, és a **Fizetési előrejelzés eredménye** entitás meg nem jelenik benne. Az entitáslista frissítésééhez és a fizetési előrejelzés eredményének a megjelenítése érdekében a Microsoft Dynamics 365 Finance és a Dataverse (korábban Common Data Service \[ CDS\] rendszergazdai portál) lépéseit is végre kell hajtania.
+Előfordulhat, hogy egy korábbi verzióhoz készült sablont használ. A 10.0.17-es verzió kiadása előtt az előzetes verziót használó vevők az **Ügyfél fizetési információk eredményei (CDS – Fin and Ops)** adatintegrációs (DI) sablont konfigurálták a **Fizetési előrejelzés eredménye (előzetes verzió)** entitással. A 10.0.17-es és újabb verzióra történő frissítés után az **Ügyfelek fizetési információinak eredményei (CDS – Fin and Ops 10.0.17 és újabb)** DI sablonját kell használnia a megfeleltetés befejezéséhez. Lehet, hogy nem tudja leképezni a DI sablon céloszlopát mindaddig, amíg az adatkezelési entitások listája frissül, és a **Fizetési előrejelzés eredménye** entitás meg nem jelenik benne. Az entitáslista frissítésééhez és a fizetési előrejelzés eredményének a megjelenítése érdekében a Microsoft Dynamics 365 Finance és a Dataverse (korábban Common Data Service \[CDS\] rendszergazdai portál) lépéseit is végre kell hajtania.
 
 ### <a name="in-finance"></a>A Finance-ben
 
@@ -70,3 +70,26 @@ Be kell állítani és engedélyezni kell a Pénzforgalom és bankkezelés pénz
 Először állítsa be és engedélyezze a pénzforgalmi előrejelzési és a likviditási számlákat. További információkért lásd: [Pénzforgalmi előrejelzés](../cash-bank-management/cash-flow-forecasting.md). Ha ez a beállítás elkészült, de a várt eredmények nem láthatóak, a további tudnivalókat lásd a [Pénzforgalmi előrejelzés beállításainak hibaelhárítása](../cash-bank-management/cash-flow-forecasting-tsg.md) témakörben.
 
 Ezután győződjön meg arról, hogy a Finance Insights (**Készpénz- és bankkezelés \> Beállítások \> Finance Insights \> Pénzforgalmi előrejelzések**) funkció engedélyezve van, és hogy befejeződött az AI-modell képzése. Ha a képzés még nem fejeződött be, az **Előrejelzés most** lehetőséget választva elindítható a modell betanítási folyamata.
+
+## <a name="symptom-why-isnt-the-install-a-new-add-in-button-visible-in-microsoft-dynamics-lifecycle-services"></a>Tünet: Miért nem látható az Új bővítmény telepítése gomb a Microsoft Dynamics Lifecycle Services szolgáltatásban?
+
+### <a name="resolution"></a>Megoldás
+
+Először ellenőrizze, hogy a Környezetkezelő vagy a Projekttulajdonos szerepkör hozzá van-e rendelve **a** **·** **·** Microsoft Dynamics Lifecycle Services (LCS) Projekt biztonsági szerepkör mezőjében a bejelentkezett felhasználóhoz. Az új bővítmények telepítéséhez a projekt egyik biztonsági szerepköre szükséges.
+
+Ha a megfelelő projektbiztonsági szerepkör van hozzárendelve, lehet, hogy frissítenie kell a böngészőablakot, hogy az Új bővítmény telepítése gomb **látható** legyen.
+
+## <a name="symptom-the-finance-insights-add-in-doesnt-seem-to-be-installing-why-is-that"></a>Tünet: A Pénzügyi információk bővítmény nem úgy látszik, hogy telepítve van. Mi az?
+
+### <a name="resolution"></a>Megoldás
+
+A következő lépéseknek el kellett volna fejeződni.
+
+- Ellenőrizze, hogy rendelkezik-e rendszergazdai és rendszer szabó hozzáféréssel a **Power Portal admin center** **alkalmazásban**.
+- Ellenőrizze, hogy alkalmazta-e a bővítményt telepítő felhasználó egy vagy ezzel egyenértékű Dynamics 365 Finance licencet.
+- Győződjön meg róla, hogy a következő Azure AD alkalmazás regisztrálva van a következőben: Azure AD 
+
+  | Pályázat                  | Alkalmazás azonosítója           |
+  | ---------------------------- | ---------------- |
+  | Microsoft Dynamics ERP mikroszolgáltatások CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
+  

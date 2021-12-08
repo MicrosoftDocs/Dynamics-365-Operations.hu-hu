@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 0f322dd63cb2dee6a9048e6ed086dc075cc0e1b9
-ms.sourcegitcommit: 2d6e31648cf61abcb13362ef46a2cfb1326f0423
-ms.translationtype: HT
+ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7474844"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867247"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Alaptervezés az igény-előrejelzésekkel
 
@@ -86,9 +86,9 @@ Ha előrejelzés vesz fel egy alaptervbe, kiválaszthatja az előrejelzési köv
 
 Alapterv beépítéséhez az alaptervbe, és az előrejelzési követelmények csökkentése érdekében használt módszer kiválasztásához válassza az **Alaptervezés \> Beállítás \> Tervek \> Alaptervek** lehetőséget. Az **Előrejelzési modell** mezőben válasszon egy előrejelzési modellt. A **Előrejelzési követelmények csökkentésére szolgáló metodológia** mezőben válasszon egy metodológiát. Ehhez a következő lehetőségek állnak rendelkezésre:
 
-- None
+- Egyik sem
 - Százalék – csökkentési kulcs
-- Tranzakciók – csökkentési kulcs (még nem támogatott a Tervezési optimalizálásban)
+- Tranzakciók – csökkentési kulcs
 - Tranzakciók – dinamikus időszak
 
 A következő részekben további információkat találhat minden egyes lehetőségről.

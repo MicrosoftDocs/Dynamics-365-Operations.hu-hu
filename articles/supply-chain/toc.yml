@@ -62,13 +62,9 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Raktárkezelés konfigurálása helyszíni telepítések esetében
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Finance and Operations alkalmazások, amelyeket a 21Vianet működtet Kínában'
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations alkalmazások Franciaországban
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
             - name: Új vagy módosult elemek
               items:
-                - name: Új vagy módosult elemek az Finance and Operations alkalmazásokban
+                - name: Új vagy módosult elemek a Finance and Operations alkalmazásokban
                   href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
                 - name: A Supply Chain Management kezelésének új vagy módosított adatai
                   items:
@@ -839,7 +835,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Pénzügyi dimenziók hozzáadása összesítő mértékekhez
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Elemzési jelentések létrehozása a Power BI Desktop használatával
+                - name: Elemzési jelentések létrehozása a PowerBI Desktop használatával
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elemzések hozzáadása munkaterületekhez Power BI Embedded használatával
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -2147,7 +2143,7 @@
               items:
                 - name: Projekt erőforrásadatainak beállítása
                   href: procurement/tasks/set-up-project-resource-information.md
-                - name: Projektköltségvetések elküldése és jóváhagyása
+                - name: Projekt-költségvetési munkafolyamat létrehozása és elküldése
                   href: procurement/tasks/submit-approve-project-budget.md
                 - name: Projekt-költségvetési verziók elküldése és jóváhagyása
                   href: procurement/tasks/submit-approve-project-budget-revision.md
@@ -3757,7 +3753,7 @@
                   href: troubleshooting/transportation/reconciliation-reaso.md
             - name: Raktárkezelés
               items:
-                - name: Warehouse Mobile App
+                - name: Warehouse mobile app
                   items:
                     - name: Nem található a tanúsítvány elérési útjának megbízhatósági kapcsolatok alapja az alkalmazáskapcsolat beállításakor
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md

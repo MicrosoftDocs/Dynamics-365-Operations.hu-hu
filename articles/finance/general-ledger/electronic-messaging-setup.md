@@ -2,7 +2,7 @@
 title: Elektronikus üzenetek beállítása
 description: Ez a témakör az Elektronikus üzenetek (EM) funkció beállításának lépéseiről tartalmaz információt.
 author: liza-golub
-ms.date: 07/07/2021
+ms.date: 11/18/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 2b62efabfae26a6cc004604e687a49bce992d78a30f0d441aa74fa5cde70e063
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: a9d623c712de34afd1b38dbc6a8738ebf9613d49
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752175"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860558"
 ---
 # <a name="set-up-electronic-messages"></a>Elektronikus üzenetek beállítása
 
@@ -34,6 +34,7 @@ Ha nem importál adatentitás-csomagot, akkor manuálisan is beállíthatja az E
 - [További mezők](#additional)
 - [Végrehajtható osztály beállításai](#executable)
 - [Rekordok műveletek feltöltése](#populate)
+- [Rekordok feltöltése több vállalatból](#multiple-companies-populate)
 - [Webalkalmazások](#applications)
 - [Webszolgáltatás-beállítások](#settings)
 - [Üzenetfeldolgozási műveletek](#actions)
@@ -139,6 +140,38 @@ Az **Adatforrások beállítása** gyorslapon adjon hozzá egy sort minden olyan
 | Cég                | Ez a mező akkor érhető el, ha a **Szolgáltatáskezelés** munkaterületen be van kapcsolva a **Rekordok feltöltése funkció több vállalatot átfedő lekérdezései** beállítás. Ezzel a funkcióval vállalatközi adatforrásokat állíthat be a rekordfeltöltési műveletekhez. Az adatokat több vállalattól is le lehet kérni. |
 | Felhasználó lekérdezése             | <p>Ha a rács fölötti **Lekérdezés szerkesztése** lehetőség kiválasztásával beállít egy lekérdezést, és megadja azokat a feltételeket, amelyeket arra a kijelölt fő táblára kell alkalmazni, amelyekből az adatokat betölti a rendszer, akkor ez a jelölőnégyzet automatikusan be van jelölve. Ellenkező esetben az összes rekordot a kiválasztott fő táblából tölti fel a rendszer.</p><p>Ha a **Rekordok feltöltése funkció több vállalatot átfedő lekérdezései** funkció be van kapcsolva a **Funkciókezelés** munkaterületen, és a rekordokat több vállalattól kell összegyűjteni, akkor minden további jogi személyhez adjon hozzá egy olyan sort, amely részt fog venni a jelentésen. Minden új sornál válassza a **Lekérdezés szerkesztése** lehetőséget, és adjon meg egy olyan kapcsolódó feltételt, amely a sor **Vállalat** mezőjében megadott jogi személyre vonatkozik. Ha végzett, az **Adatforrások beállítása** rács minden olyan jogi személy sorait tartalmazni fogja, amelyeknek szerepelniük kell a jelentésen.</p> |
 
+## <a name="populate-records-from-multiple-companies"></a><a id="multiple-companies-populate"></a> Rekordok feltöltése több vállalatból
+
+Ha a vállalatnak több jogi személytől kell jelentést készítése ugyanabban a pénzügyi adatbázisban, állítsa be a rekordműveletek feltöltését az összes olyan jogi személyhez, amelyből az adatokat jelenteni [kell](#populate).
+
+A képesség pénzügyi környezetben való engedélyezéséhez kövesse az alábbi lépéseket. 
+
+1. Menjen a **Munkaterületek** \> **Funkciókezelés** lehetőségre.
+2. A listában található, a rekordműveletek feltöltése funkcióhoz használható több vállalatot **átfedő** lekérdezések megkeresések és kijelölése.
+3. Válassza az **Engedélyezés most** lehetőséget. 
+
+A következő lépések szerint állíthatja be több olyan vállalat rekordműveletének feltöltését, amelyek adatait szerepelíteni [kell](#populate) a jelentésekben.
+
+1. Ugrás az **Adóbeállítás** \> **elektronikus üzenetek** \> **–** \> **Rekordok feltöltése műveletekbe**
+
+    Ha engedélyezve van a Rekordok feltöltése műveletek funkció több vállalatot tartalmazó lekérdezése, akkor a Rekordok feltöltése műveletlap Adatforrások beállítási rácsa tartalmaz egy **Vállalat** **·** **·** **mezőt**. A rekord-feltöltési műveletek általános beállítása során létrehozott, meglévő rekordokhoz ez a mező az aktuális jogi [személy](#populate) azonosítóját jeleníti meg.
+
+2. A DataSources beállítási rácsában adjon hozzá egy sort minden olyan leányvállalat jogi személyhez, amely részt kell vennie a jelentéskészítésben, és állítsa be **a** következő mezőket.
+
+    | Mezőnév             | Érték |
+    |------------------------|-------|
+    | Név                   | Adjon meg egy szöveges értéket, amely segít megérteni, hogy honnan származik ez a rekord. Például adja meg **az adatforrás nevét – 1.** leányvállalat. |
+    | Üzenetelem típusa      | Válassza ki az EM feldolgozásához szükséges üzenettétel-típust. |
+    | Számla típusa           | Adja meg az EM feldolgozásához szükséges számlatípust. Ha az EM feldolgozásnak nincsenek meghatározott számlatípusai, válassza az Összes **lehetőséget**. |
+    | Fő tábla neve      | Adja meg az EM feldolgozáshoz szükséges mestertábla nevét. |
+    | Dokumentumszám mező  | Az EM feldolgozás rekordjaiban a dokumentumszámot tartalmazó mező megadása. |
+    | Dokumentumdátum mező    | Az EM feldolgozás rekordjaiban a dokumentumdátumot tartalmazó mező megadása. |
+    | Dokumentumszámla mező | Az EM feldolgozás rekordjaiban a dokumentumfiókot tartalmazó mező megadása. |
+    | Vállalat                | Válassza ki a leányvállalat jogi személy azonosítóját. |
+    | Felhasználó lekérdezése             | A lekérdezés szerkesztése lehetőség kiválasztásával automatikusan be van jelölve ez a **jelölőnégyzet**. |
+
+3. Minden új sornál válassza a Lekérdezés szerkesztése lehetőséget, és adja meg a sor Vállalat mezőjében megadott **jogi** **személyhez** tartozó kapcsolódó feltételeket.
+
 ## <a name="web-applications"></a><a id="applications"></a>Webalkalmazások
 
 A webalkalmazás beállításai segítségével beállíthat egy olyan webalkalmazást, amely támogatja az Open Authorization (OAuth) 2.0 szabványt. Az OAuth az a nyitott szabvány, amelynek segítségével a felhasználók saját nevükben „biztonságos delegált hozzáférést” biztosíthatnak az alkalmazásnak anélkül, hogy a hozzáféréshez használt hitelesítési adataikat meg kellene vele osztaniuk. Az engedélyezési folyamatot is elvégezheti, amelyhez kérhet egy ellenőrzőkódot és hozzáférési tokent. A webalkalmazás beállításait az **Adó** \> **Beállítások** \> **Elektronikus üzenetek** \> **Webalkalmazások** oldalon állíthatja be.
@@ -185,7 +218,7 @@ Az alábbi táblázat ismerteti a **Webes szolgáltatás beállításai** oldalo
 |--------------------------------|-------------|
 | Webes szolgáltatás                    | Adja meg a webes szolgáltatás nevét. |
 | Leírás                    | Itt megadhatja a webes szolgáltatás leírását. |
-| Internetcím               | <p>Adja meg a webes szolgáltatás internetcímét. Ha egy webalkalmazás van megadva egy webszolgáltatáshoz, és a webszolgáltatás internetcímének meg kell egyeznie a kiválasztott webalkalmazáshoz meghatározott internetcímmel, kattintson az **Alap URL-cím másolása** gombra. A rendszer ezután átmásolja a webalkalmazás alap URL-címét ebbe a mezőbe.</p><p>**Figyelmeztetés:** A harmadik fél által nyújtott szolgáltatások és az itt beállított egyéb szolgáltatások nem követelnek meg tanúsítványt, és előfordulhat, hogy nem felelnek meg a Microsoft adatvédelmi követelményeinek. Át kell tekintenie az egyes szolgáltatások adatvédelmi dokumentációját, valamint együtt kell működnie az egyes szolgáltatókkal, hogy megtudja, milyen szintű megfelelőséget biztosít a szolgáltatás. Ön felelős azért, hogy ezek a szolgáltatások teljesítsék a biztonsági, adatvédelmi és jogi előírásokat. A szolgáltatások használatával járó kockázatot Ön viseli. A Microsoft nem nyújt semmiféle kifejezett jótállást, garanciát vagy feltételt. Erősen ajánljuk, hogy csak olyan szolgáltatásokat használjon, amelyek biztonságos és engedélyezett kapcsolatokat, például HTTPS-t biztosítanak.</p> |
+| Internetcím               | <p>Adja meg a webes szolgáltatás internetcímét. Ha egy webalkalmazás van megadva egy webszolgáltatáshoz, és a webszolgáltatás internetcímének meg kell egyeznie a kiválasztott webalkalmazáshoz meghatározott internetcímmel, kattintson az **Alap URL-cím másolása** gombra. A rendszer ezután átmásolja a webalkalmazás alap URL-címét ebbe a mezőbe.</p><p>**Figyelmeztetés:** A harmadik fél által nyújtott szolgáltatások és az itt beállított egyéb szolgáltatások nem követelnek meg tanúsítványt, és előfordulhat, hogy nem felelnek meg a Microsoft adatvédelmi követelményeinek. Át kell tekintenie az egyes szolgáltatások adatvédelmi dokumentációját, valamint együtt kell működnie az egyes szolgáltatókkal, hogy megtudja, milyen szintű megfelelőséget biztosít a szolgáltatás. Ön felelős azért, hogy ezek a szolgáltatások teljesítsék a biztonsági, adatvédelmi és jogi előírásokat. A szolgáltatások használatával járó kockázatot Ön viseli. A Microsoft nem ad kifejezett garanciákat, garanciavállalásokat és feltételeket. Erősen ajánljuk, hogy csak olyan szolgáltatásokat használjon, amelyek biztonságos és engedélyezett kapcsolatokat, például HTTPS-t biztosítanak.</p> |
 | Diploma                    | Válasszon ki egy korábban beállított Azure Key Vault-tanúsítványt. |
 | Webalkalmazás                | Válasszon ki egy korábban beállított webalkalmazást. |
 | A válasz típusa – XML        | Állítsa ezt a beállítást **Igen** értékre, ha a választípus XML. |
@@ -214,6 +247,7 @@ Az alábbi táblázat ismerteti az **Üzenetfeldolgozási műveletek** oldalon e
 | Végrehajtható osztály                          | Válasszon ki egy meglévő végrehajtható osztálybeállítást. Ez a mező csak az **Üzenetelem-végrehajtási szint** és **Üzenetelem-végrehajtási szint** típusokhoz tartozó műveletekhez érhető el. |
 | Rekordok művelet feltöltése                   | Válasszon ki egy meglévő rekordfeltöltési műveletet. Ez a mező csak a **Rekordfeltöltés** típusú műveletekhez érhető el. |
 | Webes szolgáltatás                               | Válasszon ki egy meglévő webszolgáltatást. Ez a mező csak a **Webszolgáltatás** típusú műveletekhez érhető el. |
+| Elküldendő fájlnév                         | Adja meg egy elektronikus üzenethez csatolt melléklet nevét, amelyet ennek a műveletnek el kell küldenie. Ha több mellékletnek ugyanaz az eredeti fájlneve, akkor a program a legújabbat küldi el. Ha nem található a megadott eredeti fájlnévvel megjelölt melléklet, a rendszer tartalom nélkül küldi el a kérést. Ez a mező csak a **Webszolgáltatás** típusú műveletekhez érhető el. |
 | Fájlnév                                 | Adja meg a fájl nevét, amely a művelet eredményeképp jön létre. Ez a fájl lehet a webkiszolgálótól érkező válasz vagy a létrehozott jelentés. Ez a mező csak a **Webszolgáltatás** és **Elektronikus jelentéskészítés üzenet exportálása** típusú műveletekhez érhető el. |
 | Fájlok csatolása a forrásbizonylatokhoz          | Jelölje be ezt a jelölőnégyzetet, ha a generált fájlokat az EM-elemek hivatkozott fő táblájában található rekordokhoz szeretné csatolni. Ez a mező csak az **Elektronikus jelentéskészítés exportálása** és a **Webszolgáltatás** típusú műveletekhez érhető el. |
 | Fájlok csatolása elemekhez a kimeneti archívumból | Jelölje be ezt a jelölőnégyzetet, ha a kimeneti archív fájlból különálló XML-fájlokat szeretne kinyerni, és csatolni szeretné őket a megfelelő elektronikusüzenet-elemekhez. Ez a mező csak az **Elektronikus jelentéskészítés exportálása** típusú műveletekhez érhető el. |

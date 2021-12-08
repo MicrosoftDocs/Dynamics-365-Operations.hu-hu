@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 15b0ad9faf2bcac25dec01a7ab44f804ad2345cd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: c3947c8a51facfb02012cc8e9a3ffd5887073bd9
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567223"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860613"
 ---
 # <a name="define-coverage-rules-for-items"></a>Cikkek fedezeti szabályainak meghatározása
 
@@ -113,6 +113,7 @@ Hozzon létre cikkfedezeti-szabályokat a következő lépések alapján:
 1. A **Beszerzés ideje** mezőbe írja be, hogy „5”.
 1. Válassza a **Mentés** lehetőséget.
 
-
+> [!NOTE]
+> Gyártott cikkek esetén a termelés átfutási idejét használja a rendszer, ha **nincs útvonal a** cikkhez. Ha a cikkhez van aktív útvonal társítva, az alaptervezés ütemezi a rendelést, és kiszámítja a dátumokat az erőforrások útvonal-időpontjai és kapacitása alapján (ha van ilyen).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

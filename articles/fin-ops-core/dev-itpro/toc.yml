@@ -8,7 +8,7 @@
           href: index.md
         - name: Új vagy módosult elemek
           items:
-            - name: Új vagy módosult elemek az Finance and Operations alkalmazásokban
+            - name: Új vagy módosult elemek a Finance and Operations alkalmazásokban
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Új vagy módosult elemek a Platform frissítésekben
               items:
@@ -458,6 +458,16 @@
                   href: help/language-locale.md
                 - name: 'Bővítse, szabja testre és működjön együtt a súgóval'
                   href: help/contributor-guide.md
+            - name: Telepítési szempontok
+              items:
+                - name: A rendszer és a helyi felhőbeli telepítési beállításai Dynamics 365 Finance és a Dynamics 365 Supply Chain Management számára
+                  href: deployment/deployment-options-geo.md
+                - name: Finance és Supply Chain Management az Egyesült Államok Government Community Cloud felhőben (GCC)
+                  href: deployment/us-gcc-deployment.md
+                - name: A Finance és a Supply Chain Management alkalmazás üzemeltetője Kínában a 21Vianet
+                  href: deployment/china-local-deployment.md
+                - name: Finance and Operations alkalmazások Franciaországban
+                  href: deployment/france-local-deployment.md
         - name: Fejlesztés és testreszabás
           items:
             - name: Fejlesztés és testreszabás kezdőoldala
@@ -1118,6 +1128,8 @@
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Frissítés a fél és globális címjegyzék modelljére
                       href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Fél adatainak megtekintése
+                      href: data-entities/dual-write/view-party.md
                     - name: Jegyzetintegráció
                       href: data-entities/dual-write/notes-integration.md
                     - name: Leképezési hivatkozás
@@ -1442,15 +1454,15 @@
               href: process-automation/log-results.md
             - name: A felhasználói felület testreszabása
               href: process-automation/ui-customization.md
-        - name: Regression Suite Automation Tool
+        - name: Regression suite automation tool
           items:
-            - name: Regression Suite Automation Tool áttekintése
+            - name: Regression suite automation tool áttekintése
               href: perf-test/rsat/rsat-overview.md
             - name: Telepítés és konfiguráció
               href: perf-test/rsat/rsat-install-configure.md
-            - name: A Regression Suite Automation Tool használata
+            - name: A Regression suite automation tool használata
               href: perf-test/rsat/rsat-run.md
-            - name: Tesztesetek karbantartása a Regression Suite Automation Tool eszközben
+            - name: Tesztesetek karbantartása a Regression suite automation tool eszközben
               href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: Várható értékek ellenőrzése
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1460,7 +1472,7 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Paraméterfájlok frissítése
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
-            - name: Regression Suite Automation Tool-oktatóanyag
+            - name: Regression suite automation tool-oktatóanyag
               href: perf-test/rsat/rsat-tutorial.md
             - name: Nem rendszergazda felhasználók konfigurálása
               href: perf-test/rsat/rsat-configure-nonadmin.md
@@ -1584,7 +1596,7 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Kötegelt feladatok létrehozása
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Kötegelt feladatok automatikus újrapróbálásának engedélyezése
+                - name: Köteg-újrapróbálások engedélyezése
                   href: sysadmin/retryable-batch.md
                 - name: Kötegelt feladat másolása
                   href: sysadmin/copy-batch-job.md

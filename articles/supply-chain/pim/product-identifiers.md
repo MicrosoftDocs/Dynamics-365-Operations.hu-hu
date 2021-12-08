@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 792245e7821fe2ecb147e2b4756f3178fcdb17d1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 1a311b4a304984044a1c3bd3924c129821afbbb9
+ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569673"
+ms.lasthandoff: 11/18/2021
+ms.locfileid: "7825375"
 ---
 # <a name="product-identifiers"></a>Termékazonosítók
 
@@ -39,7 +39,7 @@ A Dynamics 365 Supply Chain Management, rendszerben a termék elsődleges azonos
 
 Sok esetben a termékszámot eredetileg nem a Dynamics 365 Supply Chain Management rendszerben hozták létre. Ehelyett egy termékciklus-kezelő (PLM) vagy termékadatkezelő (PDM) rendszerben található termékhez kapcsolódik. Ebben az esetben adatentitások használhatók a termékek és a termékváltozatok importálására. Ezt követően a Supply Chain Management az összes műveletben a számokat fogja használni.
 
-A Supply Chain Management implementációjakor különös figyelmet kell fordítani a termékszámokkal kapcsolatos stratégiára. A jó számozási rendszer javítja a logisztikai folyamatokat, és segít elkerülni a hibákat. A jó termékazonosító legfeljebb 15 karaktert tartalmaz. Ideális esetben kevesebb, mint 10 karakter, és legfeljebb öt besoroló karaktert tartalmaz. Keresési nevek segítségével gyors kereséseket engedélyezhet. A keresési név egy további név, amely egy termék osztályozását képviseli.
+A Supply Chain Management implementációjakor különös figyelmet kell fordítani a termékszámokkal kapcsolatos stratégiára. A jó számozási rendszer javítja a logisztikai folyamatokat, és segít elkerülni a hibákat. A helyes termékazonosítónak általában 20 karakterből vagy rövidebbből kell lennie, de általában 10 karakternél kevesebb karakter használatát javasoljuk, és 5 karakternél nem hosszabb osztályozást. Keresési nevek segítségével gyors kereséseket engedélyezhet. A keresési név egy további név, amely egy termék osztályozását képviseli.
 
 A Microsoft Dataverse használata során a Supply Chain Management termékszáma egyben a termék száma is a Microsoft Dataverse rendszerben. A termékváltozatok a Dataverse-be egyedi termékként szinkronizálódnak.
 

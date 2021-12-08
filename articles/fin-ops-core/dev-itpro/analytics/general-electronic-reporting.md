@@ -2,7 +2,7 @@
 title: Elektronikus jelentéskészítés (ER) áttekintése
 description: Ez a témakör az Elektronikus jelentéskészítési eszközről nyújt áttekintést. Alapvető fogalmakat, támogatott eseteket és a megoldás részét képező formátumokat ír le.
 author: NickSelin
-ms.date: 09/20/2021
+ms.date: 11/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0fd83c787be4d9de151d2727384d07bc209e33f
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
-ms.translationtype: HT
+ms.openlocfilehash: 0b772acd4a8d0849803cefa8fc14ae3dd6e18831
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562176"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867280"
 ---
 # <a name="electronic-reporting-er-overview"></a>Elektronikus jelentéskészítés (ER) áttekintése
 
@@ -30,11 +30,37 @@ ms.locfileid: "7562176"
 
 Ez a témakör az Elektronikus jelentéskészítés eszközről nyújt áttekintést. Tájékoztatást nyújt az alapfogalmakról, az Elektronikus jelentéskészítés által támogatott esetekről, valamint az Elektronikus jelentéskészítés megoldás részeként megtervezett és kibocsátott formátumok listájáról.
 
-Az elektronikus jelentés (ER) olyan eszköz, amelyet bejövő és kimenő elektronikus dokumentumok formázására egyaránt használhat, a különböző országok/régiók jogi követelményeinek megfelelően. Az ER lehetővé teszi, hogy ezeket a formátumokat a teljes életciklusuk során kezelje. Például alkalmazhat új jogszabályi követelményeket, és létrehozhat üzleti dokumentumokat a kívánt formátumban, annak érdekében, hogy elektronikusan információt cseréljen kormányzati testületekkel, bankokkal és egyéb felekkel.
+Az ER egy konfigurálható eszköz, amely a szabályozáson áteső elektronikus jelentések és kifizetések létrehozásában és karbantartásában segít. A következő három fogalomon alapul:
+
+- Konfiguráció a kódolás helyett:
+
+    - A konfigurálást egy üzleti felhasználó használhatja, de ehhez nincs szükség fejlesztőre.
+    - Az adatmodell üzleti szempontból van meghatározva.
+    - A vizuális szerkesztők segítségével lehet létrehozni az ER-konfiguráció összes összetevőjét.
+    - Az adatátalakításhoz használt nyelv hasonlít a Microsoft Excel.
+
+- Egy konfiguráció több Dynamics 365 Finance kiadáshoz:
+
+    - Egy tartományspecifikus adatmodell kezelése, amely üzleti feltételekben van meghatározva.
+    - Alkalmazás-kiadás részleteinek elengedése a kiadásfüggő adatmodell-leképezésekben.
+    - Egy formátumkonfiguráció karbantartása az aktuális verzió többszöri kiadására az adatmodell alapján.
+
+- Egyszerű vagy automatikus frissítés:
+
+    - Az ER-konfigurációk verziószámozása támogatott.
+    - A Microsoft Dynamics Lifecycle Services (LCS) assets tárház az ER-konfigurációk tárházaként használható verzióváltáshoz.
+    - Az eredeti ER-konfigurációkon alapuló honosításokat gyermekverzióként is be lehet vezetni.
+    - Az ER konfigurációs fa segítségével lehet szabályozni a verzióktól való függőségeket.
+    - A honosítási vagy a különbözeti konfigurációk eltéréseit a rendszer rögzíti, hogy lehetővé tegye az eredeti ER-konfiguráció új verziójára való automatikus frissítést.
+    - A honosítási verziók automatikus frissítése során talált ütközések manuális feloldása egyszerű.
+
+Az ER segítségével elektronikus formátumszerkezeteket határozhat meg, majd megadhatja, hogyan kell kitölteni a szerkezeteket az adatok és algoritmusok segítségével. Az adatok átalakítása az Excel nyelvéhez hasonló képletnyelvet is használható. Az adatbázis-formátum leképezés kezelhetőbb, újrahasználható és a formátumváltozástól független beállítása érdekében egy köztes adatmodell-koncepciót is bevezet a rendszer. Ez a fogalom lehetővé teszi a megvalósítás részleteinek elrejtését a formátumleképezés elől, és lehetővé teszi egyetlen adatmodell újrahasználatát több formátumleképezéshez.
+
+Az ER segítségével a különböző országok és régiók jogi követelményeinek megfelelően a bejövő és a kimenő elektronikus dokumentumok formátumait is beállíthatja. Az ER lehetővé teszi, hogy ezeket a formátumokat a teljes életciklusuk során kezelje. Például alkalmazhat új jogszabályi követelményeket, és létrehozhat üzleti dokumentumokat a kívánt formátumban, annak érdekében, hogy elektronikusan információt cseréljen kormányzati testületekkel, bankokkal és egyéb felekkel.
 
 Az ER-motor a fejlesztők helyett az üzleti felhasználóknak készült. Mivel nem kódokat, hanem formátumokat konfigurál, az elektronikus dokumentumok formátumának létrehozása és beállítása gyorsabb és könnyebb.
 
-Az ER jelenleg a TEXT, XML, Microsoft Word dokumentumokat és OPENXML munkalap-formátumokat támogatja. Azonban egy kiterjesztési felület további formátumok támogatását biztosítja.
+Az ER jelenleg támogatja a TEXT, XML, JSON, Microsoft Word PDF, Microsoft Excel és OPENXML munkalapformátumokat.
 
 ## <a name="capabilities"></a>Képességek
 
@@ -48,6 +74,10 @@ Az ER motor a következő képességekkel rendelkezik:
 
 ## <a name="key-concepts"></a>Alapfogalmak
 
+### <a name="main-data-flow"></a>Fő adatáramlás
+
+[![ER fő adatáramlás.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
+
 ### <a name="components"></a>Összetevők
 
 Az ER a következő típusú összetevőket támogatja:
@@ -59,74 +89,6 @@ Az ER a következő típusú összetevőket támogatja:
 
 További információ: [Elektronikus jelentéskészítés összetevői](er-overview-components.md).
 
-#### <a name="data-model-and-model-mapping-components"></a>Adatmodell és modell-hozzárendelési összetevők
-
-Az adatmodell-összetevő az adatszerkezet absztrakt ábrázolása. Egy adott üzleti területet leírására szolgál elegendő részletességgel ahhoz, hogy megfeleljen a terület jelentési követelményeinek. Egy adatmodell-összetevő a következő részekből áll:
-
-- <a name="DataModelComponent"></a>Egy adatmodell, ami a területspecifikus üzleti entitások egy csoportja, és egy hierarchikusan felépített kapcsolatrendszer ezen entitások között.
-- <a name="ModelMappingComponent"></a>Egy modell-leképezés, amely összekapcsolja az alkalmazás-adatforrásokat az adatmodell adott, egyes elemeivel a futási időben, valamint az adatfolyam, és az üzleti adatok feltöltésének szabályai az adatmodell-összetevőbe.
-
-Egy adatmodell üzleti entitását egy tároló (rekord) képviseli. Az üzleti entitások tulajdonságai adatelemként (mezőként) jelennek meg. Minden adatelem egyedi névvel, címkével, leírással és értékkel rendelkezik. Az egyes adatelemek értékeit megszerkesztheti, hogy karakterláncként, egész számként, valós számként, dátumként, enumerációként, logikai értékként vagy egyéb változóként legyenek kiolvasva. Továbbá lehet másik rekord vagy rekordlista is.
-
-Egyetlen adatmodell-összetevő több tartományspecifikus üzletientitás-hierarchiát tartalmazhat. Modell-hozzárendeléseket is tartalmazhat, amelyek támogatják a jelentésspecifikus adatáramlást futásidőben. A hierarchiákat egyetlen rekord különbözteti meg, amit a modell-hozzárendelés gyökerének választott ki. Például, a fizetési tartomány adatmodellje támogathatja a következő leképezéseket:
-
-- Vállalat \> Szállító \> Az AP tartomány kifizetési tranzakciói
-- Vevő \> Vállalat \> Az AR tartomány kifizetési tranzakciói
-
-Vegyük figyelembe, hogy az üzleti entitásokat (úgy mint a vállalat és a fizetési tranzakciók) egyszer hozza létre. Ezután különböző hozzárendelések újrahasználják őket.
-
-A modell-hozzárendelés, amely támogatja a kimenő elektronikus dokumentumokat, a következő lehetőségeket kínálja:
-
-- Használhat különböző adattípusokat az adatmodell adatforrásaként. Használhat például táblázatokat, adatentitásokat, módszereket vagy felsorolásokat.
-- Olyan felhasználói bemeneti paramétereket támogat, amelyeket meghatározhat az adatmodell adatforrásaiként, amikor bizonyos adatokat a futási időben kell megadni.
-- Támogatja az adatok átalakítását a szükséges csoportokba. Az adatok szűrését, rendezését és összegzését is lehetővé teszi, továbbá logikai számított mezők hozzáfűzését a Microsoft Excel képleteihez hasonló képletekkel. További tudnivalókért lásd: [Képletszerkesztő elektronikus jelentéskészítésben (ER)](general-electronic-reporting-formula-designer.md).
-
-A modell-hozzárendelés, amely támogatja a bejövő elektronikus dokumentumokat, a következő lehetőségeket kínálja:
-
-- Különböző frissíthető adatelemeket használhat célként. Ezek az adatelemek lefedik a táblákat, az entitásokat és a nézeteket is. A bejövő elektronikus dokumentumok adatai alapján lehet frissíteni az adatokat. Egy modell hozzárendelésben több cél is használható.
-- Olyan felhasználói bemeneti paramétereket támogat, amelyeket meghatározhat az adatmodell adatforrásaiként, amikor bizonyos adatokat a futási időben kell megadni.
-
-Minden üzleti tartományhoz készül egy adatmodell-összetevő, amelyet egységes adatforrásként kell használni a jelentésekhez, és amely elkülöníti a jelentéskészítést az adatforrások fizikai megvalósításától. Olyan módon képezi le a tartományspecifikus üzleti fogalmakat és funkciókat, amely hatékonyabbá teszi a jelentésformátum kezdeti tervét és további karbantartását.
-
-#### <a name="format-components-for-outgoing-electronic-documents"></a><a name="FormatComponentOutbound"></a>Kimenő elektronikus dokumentumok komponensformázása
-
-A formátum összetevője a futásidőben létrejövő jelentési kimenet sémája. A rendszer az alábbi elemekből áll:
-
-- Egy formátum, amely a kimenő elektronikus dokumentum futásidőben generált struktúráját és tartalmát határozza meg.
-- Adatforrásokból, amelyek felhasználói bemeneti paraméterek és tartományspecifikus adatmodellek formájában jelennek meg kiválasztott modell-hozzárendeléssel.
-- Egy formátum hozzárendelésből, amely formátum-adatforrások formájában jelenik meg olyan egyedi formátumelemekkel, amelyek megadják a futásidőben az adatfolyamot és a formátumkimenet generálásának szabályait.
-- Formátumérvényesítésből, amely olyan konfigurálható szabályok formájában jelenik meg, melyek a jelentéslétrehozást kontrollálják a futásidőben a futó környezetben. Létezhet például egy olyan szabály, amely leállítja a szállítói kifizetések kimenetének létrehozását, és kivételt okoz, ha a kiválasztott szállító meghatározott attribútumai hiányoznak, például a bankszámlaszám.
-
-Egy formátum összetevő, amely támogatja az alábbi funkciókat:
-
-- Különálló fájlokként különböző formátumú kimenet jelentés létrehozása, például szöveg, XML, Microsoft Word-dokumentum vagy munkalap.
-- Több külön fájl létrehozása, és ezen fájlok zip fájlba történő tömörítése.
-
-A formátum-összetevő lehetővé teszi bizonyos fájlok csatolását, amelyek a jelentési kimenetben a következőképpen használhatók:
-
-- Excel-munkafüzetek, melyek olyan munkalapot tartalmaznak amik sablonként használhatóak a kimenethez az OPENXML munkalap formátumban
-- Word-fájlok, melyek olyan dokumentumot tartalmaznak, amely sablonként használható a kimenethez a Microsoft Word-dokumentum formátumban
-- Más fájlok, amelyeket előre definiált fájlként konvertálni lehet a formátum kimenetébe.
-
-A következő ábra azt mutatja, hogy hogyan áramlanak az adatok ezeknek a formátumoknak az esetében.
-
-[![Kimenő formátum-összetevők adatáramlása.](./media/ER-overview-02.png)](./media/ER-overview-02.png)
-
-Egyetlen ER-formátumkonfiguráció futtatásához és egy kimenő elektronikus dokumentum létrehozásához meg kell adni a formátumkonfiguráció hozzárendelését.
-
-#### <a name="format-components-for-incoming-electronic-documents"></a><a name="FormatComponentInbound"></a>Bejövő elektronikus dokumentumok komponensformázása
-
-A formátum-összetevő a futásidőben importált bejövő dokumentum sémája. A rendszer az alábbi elemekből áll:
-
-- Egy formátumból, amely a bejövő, adatokat tartalmazó elektronikus dokumentum futásidőben importált struktúráját és tartalmát határozza meg Egy formátum-összetevőből, amely különböző formátumú bejövő dokumentumok elemzésére szolgál: ilyen például a szöveg és az XML.
-- Egy formátum-hozzárendelésből, amely összekapcsolja az egyes formátumelemeket egy tartományspecifikus adatmodell elemeivel. Futási időben az adatmodell elemei megadják az adatfolyamot és az adatok importálásának szabályait a bejövő dokumentumokból, majd ezt követően tárolják az adatokat egy adatmodellben.
-- Formátumérvényesítésből, amely olyan konfigurálható szabályok formájában jelenik meg, melyek az adatimportálást kontrollálják a futásidőben a futó környezetben. Létezhet például egy olyan szabály, amely leállítja egy szállító kifizetéseivel rendelkező banki kivonat importálását, és kivételt okoz, ha a kiválasztott szállító attribútumai hiányoznak, például a szállító azonosító kódja.
-
-A következő ábra azt mutatja, hogy hogyan áramlanak az adatok ezeknek a formátumoknak az esetében.
-
-[![Bejövő formátum-összetevők adatáramlása.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
-
-Egyetlen ER-formátumkonfiguráció futtatásához, adatok importálásához egy bejövő elektronikus dokumentumból, meg kell adni egy formátumkonfiguráció kívánt hozzárendelését, valamint a modell-hozzárendelés integrációs pontját. A különböző típusú bejövő dokumentumokhoz ugyanaz a modell-leképezés és célok használhatók különböző formátumokkal.
 
 #### <a name="component-versioning"></a>Összetevő verziókövetése
 

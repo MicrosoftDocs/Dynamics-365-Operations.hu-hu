@@ -2,7 +2,7 @@
 title: Kötegelt feladat létrehozása
 description: A kötegelt feladat egy Alkalmazásobjektum-kiszolgáló (AOS) példányához elküldött feladatcsoport az automatikus feldolgozáshoz.
 author: maertenm
-ms.date: 06/21/2019
+ms.date: 11/22/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ac91c907f4c2cfa03b9750cb3995851e319a3827f42442402f7c02824209b3b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 76c6c68f7effad0c40282b22ea2a6bf991862cf5
+ms.sourcegitcommit: d7d997ad84623ad952672411c0eb6740972ae0b1
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733709"
+ms.lasthandoff: 11/24/2021
+ms.locfileid: "7864173"
 ---
 # <a name="create-a-batch-job"></a>Kötegelt feladat létrehozása
 
@@ -29,29 +29,53 @@ A kötegelt feladat egy Alkalmazásobjektum-kiszolgáló (AOS) példányához el
 
 ## <a name="create-the-batch-job"></a>Kötegelt feladat létrehozása
 1. Ugorjon a **Navigációs lap > Modulok > Rendszerfelügyelet > Lekérdezések > Kötegelt feladatok** pontra.
-2. Kattintson az **Új** elemre.
-3. A **Munkaköri leírás** mezőbe írjon be egy értéket.
-4. Az **Ütemezett kezdő dátum/idő** mezőben adjon meg egy dátumot és időt.
-5. Kattintson a **Mentés** gombra.
+2. Válassza az **Új** lehetőséget.
+3. A Feladat **leírása mezőbe írja be a kötegelt feladat** leírását.
+4. Az Ütemezett kezdő dátum/idő mezőbe írja be a kötegelt feladat futtatásának dátumát és **időpontját**.
+5. Válassza a **Mentés** lehetőséget.
 
 ## <a name="create-a-recurrence"></a>Ismétlődés létrehozása
-1. Kattintson a Művelet panelen a **Kötegelt feladat** lehetőségre.
-2. Kattintson az **Ismétlődésre**. E beállítások segítségével megadhatja az ismétlődés tartományát és a mintáját.  
-3. Kattintson az **OK** gombra.
+1. A munkaablakban válassza ki a **Kötegelt feladatot**.
+2. **Ismétlődés** kiválasztása. E beállítások segítségével megadhatja az ismétlődés tartományát és a mintáját.  
+3. Válassza ki az **OK** lehetőséget.
 
 ## <a name="add-alerts"></a>Figyelmeztetések hozzáadása
-1. Kattintson a Művelet panelen a **Kötegelt feladat** lehetőségre.
-2. Kattintson a **Figyelmeztetések** lehetőségre. Jelezze, ha szeretne figyelmeztető üzenetet kapni a kötegelt feladat befejeződése, meghibásodása vagy törlődése esetén. Adja meg, ha azt szeretné, hogy a figyelmeztetések előugró üzenetekként jelenjenek meg.   
-3. Kattintson az **OK** gombra.
+1. A munkaablakban válassza ki a **Kötegelt feladatot**.
+2. Figyelmeztetések **kiválasztása**. Jelezze, ha szeretne figyelmeztető üzenetet kapni a kötegelt feladat befejeződése, meghibásodása vagy törlődése esetén. Adja meg, ha azt szeretné, hogy a figyelmeztetések előugró üzenetekként jelenjenek meg.   
+3. Válassza ki az **OK** lehetőséget.
+
+## <a name="add-a-task-to-a-batch-job"></a>Feladat hozzáadása kötegelt feladathoz
+1.  A Kötegelt **feladatok lapon válassza a Feladatok megtekintése** **lehetőséget**.
+2.  Feladat **létrehozásához nyomja le a CTRL+N** billentyűkombinációt.
+3.  Adja meg a kötegelt feladat leírását.
+4.  A Vállalati számlák mezőben válassza ki azt a vállalati adatbázist, amelybe **a feladatot futtatni** kell.
+5.  Az **Osztálynév mezőben válassza ki, hogy a feladatnak mit** kell futtatnia. 
+6.  Szükség szerint válasszon egy kötegcsoportot a feladathoz.
+
+    Az ügyfélfeladatokat kötegcsoporthoz kell rendelni. A program automatikusan az alapértelmezett kötegcsoporthoz (más néven Üres kötegcsoporthoz) rendeli hozzá őket.
+
+7.  Mentse a **feladatot a CTRL+S** billentyűkombináció lenyomásával.
+8.  Ha a kiválasztott feladattól a feladatban található másik feladattól szeretne függeni, jelölje be a Feltételek rácsát, majd hajtsa végre a következő lépéseket minden definiálni kívánt **feltételnél**:
+
+    1. Feltétel **létrehozásához nyomja le a CTRL+N** billentyűkombinációt.
+    2. Válassza ki a szülőfeladat feladatazonosítóját.
+    3. Válassza ki, hogy a szülőfeladatnak el kell érnie az állapotot, mielőtt a függő feladat futhat.
+    4. Mentse a feltételt a **Ctrl+S** billentyűkombináció lenyomásával.
+
+    Ha egynél több feltételt ad meg, és a függő feladat csak akkor futhat, ha az összes feltételnek teljesülnie kell, válassza az *Összes* **feltételtípust.** Ha a függő feladat bármelyik feltétel teljesülését követően futtatható, válassza a *Bármelyik* **feltételtípust**.
+
+9.  Válassza ki, hogyan kell kezelni a feladathibákat. Ha figyelmen kívül hagyja egy adott feladat sikertelenségét, akkor az Általános lapon jelölje be a Feladathiba figyelmen kívül **hagyása** **lehetőséget**. Ha ez a beállítás be van jelölve, a feladat sikertelen lesz, és a feladat nem fog leállni. A Maximális újratárgyalások mező használatával megadhatja azt is, hogy a rendszer hányszor ássa újra a feladatot, mielőtt a rendszer **sikertelennek** tekintheti. Javasoljuk, hogy a Maximális újraküldő értékeknél ne állítsa 5-nél **nagyobb** **értékre**.
+
+    A kötegelt újraküldő feladatokkal kapcsolatos további tudnivalókat [lásd: Köteg-újraküldetek](../retryable-batch.md) engedélyezése.
 
 ## <a name="adjust-batch-job-status"></a>Kötegelt feladat állapotának beállítása
 1. Ugorjon a **Rendszerfelügyelet > Lekérdezések > Kötegelt feladatok** pontra.
 2. Jelölje ki a megfelelő kötegelt feladatokat.
-3. Kattintson a Művelet panelen a **Kötegelt feladat > Funkciók > Állapot módosítása** lehetőségre.
+3. Válassza ki a műveletpanelEn a Kötegelt > **funkció > állapot módosítása** lehetőséget.
 4. Válassza ki a megfelelő állapotot.
     - **Visszatartás**: A kötegelt feladat **visszatartási** értékre állítása, így a kötegelt munkaütemezőből visszatartható. A *leállítással* egyenértékű.
     - **Várakozás**: A kötegelt feladat **várakozásra** történő beállítása, így a kötegelt munkaütemező által elindítható. A *mehettel* egyenértékű.
-5. Kattintson az **OK** gombra.
+5. Válassza ki az **OK** lehetőséget.
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

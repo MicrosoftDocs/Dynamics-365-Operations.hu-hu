@@ -10,17 +10,18 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 97c27006ce95d0cd4551fec209f40328779b435b
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: 7844671202a03533eb6215f557a206c13978e902
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678591"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860692"
 ---
 # <a name="conventions"></a>Szabályok
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: Until 4/30/2022 -->
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 4/30/2022 -->
 
 A konvenció a rendszer viselkedését befolyásoló irányelvek tárolója. Az üzleti követelmények alapján meg kell határoznia az egyezményeket a különböző politikák kombinációjával, amelyek meghatározzák, hogyan kell a költségeket a Global Inventory Accounting szolgáltatásban elszámolni. Az egyes konvenciókat egy vagy több főkönyvvel társíthatja, hogy biztosítsa a főkönyvekben alkalmazott számviteli irányelvek következetességét.
 
