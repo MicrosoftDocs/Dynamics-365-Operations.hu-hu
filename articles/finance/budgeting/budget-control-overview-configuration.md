@@ -2,7 +2,7 @@
 title: Költségvetés-ellenőrzés áttekintése
 description: Ez a témakör bemutatja a költségvetés-ellenőrzési funkciót, és segítséget nyújt a költségvetés-ellenőrzésnek a szervezet pénzügyi erőforrásainak kezeléséhez való konfigurálásában.
 author: panolte
-ms.date: 06/25/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0c8e7a08796a7f1c537978e406f53531e0f0682e6b5a769ced9d771063c30d5
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 21277361a3d05c57be7aeaa05348723e23873ef6
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772879"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890700"
 ---
 # <a name="budget-control-overview"></a>Költségvetés-ellenőrzés áttekintése
 
@@ -78,9 +78,7 @@ A következő, a **Költségvetés-túllépési engedélyek** lapon megadhatja a
 A következő, az **Rendelkezésre álló költségvetési alapok** lapon meghatározhatja a rendelkezésre álló költségvetési alapok kiszámításához használt képletet. Attól függően, hogy a vállalat mennyire konzervatívan kezeli a pénzügyi forrásokat, vagy a szabályozásoktól vagy az iparági követelményektől függően a számítás vázlatot vagy fel nem adott dokumentumokat tartalmazhat. 
 
 > [!NOTE]
-> Ez a számítás módosul a költségvetési ciklusban, a változók nem befolyásolják azokat a dokumentumokat, amelyek megfeleltek korábban költségvetés-ellenőrzésen, és amelyek feladásra kerültek vagy befejeződtek. A 10.0.17-es verzióban egy új, **Csak a rendelkezésre álló költségvetési források számítása** funkció válik elérhetővé a korlátozott vevők számára. Ezzel a funkcióval módosíthatja, hogy milyen adatok követhetők nyomon a BudgetSourceTracking táblákban. Ha ez a funkció be van kapcsolva, a rendszer csak akkor tárolja az összegeket, ha ki van választva a rendelkezésre álló költségvetési alapok számításához. A **Csak a rendelkezésre álló költségvetési források számítása** funkció bekapcsolásával kapcsolatosan forduljon a támogatási szolgálathoz. 
-
-### <a name="documents-and-journals"></a>Dokumentumok és naplók
+> Ha egy költségvetési ciklus során módosítják a számítást, a módosítások nem befolyásolják a költségvetés-ellenőrzési ellenőrzést korábban átadott, feladott vagy befejezett dokumentumokat. A Csak a nyomon követések összegei a rendelkezésre álló költségvetési alapok számításában nevű funkcióval módosíthatja, hogy milyen adatok követhetők nyomon a **BudgetSourceTracking** táblákban. Ha ez a funkció be van kapcsolva, a rendszer csak akkor tárolja az összegeket, ha ki van választva a rendelkezésre álló költségvetési alapok számításához. A további tudnivalókat lásd a rendelkezésre [álló költségvetési alapoknál](budget-funds-available.md).
 
 Következő, a **Dokumentumok és naplók** lapon kiválaszthatja, hogy mely forrásbizonylat és napló legyen a tárgya a költségvetés-ellenőrzés csekkekre vonatkozóan, és hogy a csekkek sorbejegyzés szintjén vagy az egész dokumentumnál jelenjen-e meg. 
 

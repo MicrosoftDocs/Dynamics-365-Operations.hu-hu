@@ -2,7 +2,7 @@
 title: Használatijog-eszközök értékvesztésének könyvelése
 description: Ez a témakör az értékvesztést rögzítő funkciókat ismerteti, és a 842-es könyvelési standardok kodifikációs témakörének eszközértékcsökkenési ütemezését módosítja.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,17 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 816f65cff77339ef8684c0449ed2e5f0762b17a2e22174412d5ea9f2a1a62069
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723823"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890830"
 ---
 # <a name="impair-right-of-use-assets"></a>Használatijog-eszközök értékvesztésének könyvelése
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ha a használatijog-eszköz (ROU) könyv szerinti értéke nem hasznosítható meg, előfordulhat, hogy meg kell vizsgálnia, hogy az eszköz értékvesztett-e. Ha úgy dönt, hogy az eszköz értékvesztett, az eszközlízing rögzítheti az értékvesztést, és ennek megfelelően módosíthatja az értékcsökkenési ütemezést. Ez a témakör az értékvesztést rögzítő funkciókat ismerteti, és a 842-es könyvelési standardok kodifikációs témakörének értékcsökkenési ütemezését módosítja. Ugyanez a módszer vonatkozik a nemzetközi pénzügyi beszámolási szabvány 16 (IFRS 16) lízingre is.
 
@@ -37,13 +38,16 @@ A ROU-eszköz fennmaradó egyenlegét a fennmaradó időszakok száma alapján p
 3. A megjelenő párbeszédpanel **Értékvesztés összege** mezőjében adja meg az eszközértékvesztés összegét. A ROU-eszköz csökkentéséhez pozitív értéket kell megadnia.
 4. A **Tranzakció dátuma** mezőben adja meg azt a dátumot, amikor az értékvesztés tételt könyvelni kell.
 5. A **Fennmaradó időszakok** mezőben adja meg az amortizálandó hónapok fennmaradó számát.
-6. Ha azt szeretné, hogy a rendszer automatikusan könyvelje az értékvesztési költségnapló-bejegyzést, kapcsolja be a **Közzététel** paramétert. Ha kikapcsolja ezt a paramétert, a rendszer létrehozza a bejegyzést, de nem könyveli azt. Ezután könyvelheti a bejegyzést az **Eszközlízing naplók** oldalon.
-7. Állítsa az **Előnézetes verzió közzététel előtt** beállítást **Igen** értékre a javasolt tétel létrehozásának vagy feladási helyének megtekintéséhez.
-8. Állítsa a **Könyv bezárása** beállítást **Igen** értékre a lízingkönyv bezárásához. Nem vonható vissza ez a művelet. A tételek nem könyvelhetők lezárt lízingekkel, és a lezárt lízingek nem módosíthatók.
-9. Válassza az **OK** lehetőséget az értékvesztési bejegyzés létrehozásához vagy könyveléséhez.
-10. Az eszközértékcsökkenési ütemezés megtekintéséhez nyissa meg a lízingkönyv értékcsökkenési ütemezését. Az eszköz mostantól lineárisan leértékelt a **Fennmaradó időszak** mezőben megadott hónapok számának megfelelően.
-11. Az értékvesztési költségnapló bejegyzésének megtekintéséhez válassza az **Eszközlízing napló** lehetőséget az értékvesztett lízingkönyv műveletablakában. A rendszer létrehoz egy naplóbejegyzést, amely megterheli az értékvesztési költség könyvelési számlát, és jóváírja a lízingeszköz könyvelési számláját.
-12. A ROU-eszköz új könyv szerinti értékének megtekintéséhez válassza az **Eszköztranzakciók** lehetőséget a lízingkönyv műveletablakában.
+6. Az Előnézet beállítással megtekintheti a javasolt eszközegyenleget és pénzügyi bejegyzést létrehozás vagy **feladás** előtt.
+7. Állítsa a **Könyv bezárása** beállítást **Igen** értékre a lízingkönyv bezárásához. Ezt a műveletet a Bérlet ismételt megnyitása állapottal **lehet** visszavonni. A tételek nem könyvelhetők lezárt lízingekkel, és a lezárt lízingek nem módosíthatók. 
+8. Válassza **a Post lehetőséget az** értékvesztési bejegyzés létrehozásához vagy felad létrehozásához.
+
+    > [!NOTE]
+    > A értékvesztési tranzakció feladása után új könyvverzió jön létre.
+
+9. A visszaeső tárgyi eszközök értékcsökkenési ütemezésének megtekintéséhez nyissa meg a bérleti könyv tárgyieszköz-értékcsökkenési ütemezését. Az eszköz mostantól lineárisan leértékelt a **Fennmaradó időszak** mezőben megadott hónapok számának megfelelően.
+10. Az értékvesztési költségnapló bejegyzésének megtekintéséhez válassza az **Eszközlízing napló** lehetőséget az értékvesztett lízingkönyv műveletablakában. A rendszer létrehoz egy naplóbejegyzést, amely megterheli az értékvesztési költség könyvelési számlát, és jóváírja a lízingeszköz könyvelési számláját. 
+11. A ROU-eszköz új könyv szerinti értékének megtekintéséhez válassza az **Eszköztranzakciók** lehetőséget a lízingkönyv műveletablakában.
 
 ## <a name="example-of-rou-asset-impairment"></a>Példa a ROU-eszköz értékvesztésére
 

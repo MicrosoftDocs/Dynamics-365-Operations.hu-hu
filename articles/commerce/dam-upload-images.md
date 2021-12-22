@@ -2,7 +2,7 @@
 title: Képek feltöltése
 description: Ez a témakör azt mutatja be, hogyan tölthet fel képeket a Microsoft Dynamics 365 Commerce webhelykészítőben.
 author: psimolin
-ms.date: 08/25/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a5607fa70f5d5d28d10bcbd50da11bb96cbf75de
-ms.sourcegitcommit: 8592c661b41f9cef8b7ef2863a3b97bf49a4e6f9
-ms.translationtype: HT
+ms.openlocfilehash: 3b99aeff7eafd788c19204e22dbfc61f45b25408
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7423255"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891522"
 ---
 # <a name="upload-images"></a>Képek feltöltése
 
@@ -41,7 +41,8 @@ Kép feltöltésekor meg lehet adni a következő adatokat.
 - **Eszközök közzététele feltöltés után**: Ha ez a jelölőnégyzet be van jelölve, akkor a képet vagy a képeket a feltöltés után azonnal közzéteszi a program.
 
 > [!NOTE]
-> A kiválasztott kategóriába tartozó képeszközöket is automatikusan címkézik a kategóriával, hogy egy adott kategóriába tartozó eszközök keresésekor támogassa a keresést.
+> - A kiválasztott kategóriába tartozó képeszközöket is automatikusan címkézik a kategóriával, hogy egy adott kategóriába tartozó eszközök keresésekor támogassa a keresést.
+> - A termék részletező lapjai dinamikusan generálják az Alt Text szöveget a terméknév használatával, így a termékkép Helyettesítő szövegének módosítása nem fogja befolyásolni **a** megjelenített **képet**.
 
 ### <a name="naming-conventions-for-omni-channel-images"></a>Az omnicsatornás képek elnevezési konvenciói 
 

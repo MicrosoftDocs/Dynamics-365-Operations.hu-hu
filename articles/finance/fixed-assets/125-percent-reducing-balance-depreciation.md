@@ -1,7 +1,7 @@
 ---
 title: 125 százalékos degresszív értékcsökkenés
-description: Ez a cikk a 125 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
-author: saraschi2
+description: Ez a témakör áttekintést nyújt az értékcsökkenés 125 százalékos delegáló módszerével kapcsolatban.
+author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13871
 ms.assetid: 3abc263e-59d6-4f1a-986d-1be388948bd3
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68afee1840707a74ca3a0ac9643c2a23761da8da6d2e85e6b79d48bee4aad27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 605f9fd3dea02e01c2c49b8e1a6cc52310132304
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744989"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883518"
 ---
 # <a name="125-percent-reducing-balance-depreciation"></a>125 százalékos degresszív értékcsökkenés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk a 125 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
+Ez a témakör áttekintést nyújt az értékcsökkenés 125 százalékos delegáló módszerével kapcsolatban.
 
 Amikor beállít egy tárgyieszköz-értékcsökkenési profilt a **125% degresszív** értéket választja a **Mód** mezőben az **Értékcsökkenési profilok** lapon, akkor a tárgyi eszközök, amelyek az értékcsökkenési profilokhoz vannak rendelve értékcsökkenése ugyanazzal százalékos értékkel lesz egyenlő, ami az egyes értékcsökkenési időszakoknál szerepel. A százalék kiszámítása az eszköz élettartama alapján történik. Ha például egy eszköz élettartama öt év, akkor a számított százalékos érték 25% lesz (125% ÷ 5).
 

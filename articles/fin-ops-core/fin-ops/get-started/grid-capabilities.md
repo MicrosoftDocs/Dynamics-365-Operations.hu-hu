@@ -2,7 +2,7 @@
 title: Rács funkciói
 description: Ez a témakör ismerteti a rács vezérlőelem számos erőteljes funkcióját. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
-ms.date: 10/25/2021
+ms.date: 12/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: a21a41399b5884fda9cce214f99851ffa93bbc43
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
+ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700137"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7890869"
 ---
 # <a name="grid-capabilities"></a>Rácsfunkciók
 
@@ -119,6 +119,9 @@ A rács első oszlopának felső részén található jelölőnégyzet bejelöl�
 
 ### <a name="hiding-column-names"></a>Oszlopok neveinek elrejtése
 Az adatok csoportosításakor az alapértelmezett viselkedés a csoportfej sorában az oszlop nevének megjelenítése. Elhagyhatja az oszlop nevét a csoportfej soraiban, ha kiválasztja a **Rácsbeállítások** > **Csoportoszlop nevének elrejtése** lehetőséget.
+
+### <a name="grouping-on-date-and-time-columns"></a>Csoportosítás dátum- és időoszlopokon
+A 10.0.24-es verziótól kezdve a Dátum vagy a Dátumidő mezők esetében a beállítás év, hónap vagy nap szerint lett hozzáadva a csoporthoz. A megfelelő fejlécsor "értéke" csoport megegyezik az adott mező formátumának. Ezenkívül a DateTime és az Idő mezők esetében óra, perc vagy másodperc szerint csoportosíthatja.    
 
 ## <a name="freezing-columns"></a>Oszlopok rögzítése
 A rács egyes oszlopai elég fontosak lehetnek kontextus tekintetében ahhoz, hogy nem szeretné, hogy kigörgethetők legyenek a nézetből. Ehelyett azt szeretné, hogy az oszlopokban lévő értékek mindig láthatók legyenek. A **Rács oszlopainak rögzítése** funkció biztosítja ezt a rugalmasságot a felhasználók számára. 

@@ -1,7 +1,7 @@
 ---
 title: Tárgyieszköz-feladási profilok beállítása
-description: Ez a feladat-útmutató beállítja a Tárgyieszköz-feladási profilokat.
-author: saraschi2
+description: Ez az eljárás bemutatja a tárgyieszköz-feladási profilok beállítását.
+author: moaamer
 ms.date: 07/22/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,21 +10,21 @@ ms.search.form: AssetPosting
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2708997848352205cab2e425c9ae1fb531b8a566ba86a65ba2cbeb7e0b5c2b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: ee0006c9588a22d720687e7aceb49acc756b83e1
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767623"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883768"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Tárgyieszköz-feladási profilok beállítása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a feladat-útmutató beállítja a Tárgyieszköz-feladási profilokat.  Ez a Könyvelői szerepkört és a bemutató adatokat használja a USMF jogi személyhez.  A feladat-útmutatóban megadott példák egy alap feladási profilra vonatkoznak, a feladási profilokat azonban az Ön konkrét számlatükrének és pénzügyi-jelentéskészítési elvárásainak megfelelően kell létrehoznia.
+Ez az eljárás bemutatja a tárgyieszköz-feladási profilok beállítását. A témakörben megadott példák egy alap feladási profilra vonatkoznak, bár a könyvelési profilokat létre kell hozni az adott számlatükörhöz és a pénzügyi beszámolási követelményekhez.
 
 1. A Navigációs ablaktáblán ugorjon a **Modulok > Tárgyi eszközök > Beállítás > Tárgyieszköz-feladási profilok** elemre.
 2. Kattintson az **Új** elemre.

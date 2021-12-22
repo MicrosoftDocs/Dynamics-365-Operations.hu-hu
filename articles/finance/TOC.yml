@@ -70,12 +70,12 @@
                   items:
                     - name: Újdonságok és változások a Finance kezdőlapján
                       href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.23
+                    - name: Finance 10.0.24 (február)
+                      href: get-started/whats-new-changed-10-0-24.md
+                    - name: Finance 10.0.23 (január)
                       href: get-started/whats-new-changed-10-0-23.md
                     - name: Finance 10.0.22 (2021. november)
                       href: get-started/whats-new-changed-10-0-22.md
-                    - name: Finance 10.0.21 (2021. október)
-                      href: get-started/whats-new-changed-10-0-21.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -174,7 +174,7 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations alkalmazások architektúrája
+                - name: Finance and OperationsAlkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/index
@@ -516,11 +516,13 @@
               href: budgeting/budget-planning-overview-configuration.md
             - name: Költségvetés-ellenőrzés áttekintése
               href: budgeting/budget-control-overview-configuration.md
-            - name: Költségvetés áttekintése
+            - name: Költségvetés-készítés áttekintése
               href: budgeting/basic-budgeting-overview-configuration.md
-            - name: Beosztás előre jelzése
+            - name: Rendelkezésre álló költségvetési források
+              href: budgeting/budget-funds-available.md
+            - name: Pozíciós előrejelzés
               href: budgeting/position-forecasting.md
-            - name: Költségvetés-tervezés igazoló dokumentumai
+            - name: Költségvetés-tervezés alátámasztó dokumentumai
               href: budgeting/budget-planning-justification-docs.md
             - name: Költségvetés létrehozása tranzakciószámlákból vagy összegző számlákból
               href: budgeting/create-budget-transaction-accounts-total-accounts.md
@@ -638,7 +640,7 @@
               href: general-ledger/CFO-workspace.md
             - name: Számlastruktúrák létrehozása
               href: general-ledger/tasks/create-account-structures.md
-            - name: Költségvetés áttekintése
+            - name: Költségvetés-készítés áttekintése
               href: budgeting/basic-budgeting-overview-configuration.md
             - name: Dimenziók létrehozása és dimenziótagok importálása
               href: cost-accounting/cost-dimension.md
@@ -1434,6 +1436,8 @@
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Az elektronikus számlázás beállítása
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
+                        - name: Power Platform beépülő modul rendszergazdai hivatkozása
+                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: Elektronikus számlázás – GYIK
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Áfaszámítás
@@ -1444,6 +1448,14 @@
                       items:
                         - name: Az adószámítás első lépései
                           href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
+                        - name: Adókódok beállítása
+                          href: localizations/set-up-tax-codes.md
+                        - name: Adócsoportok beállítása
+                          href: localizations/set-up-tax-groups.md
+                        - name: Cikk adócsoportjainak beállítása
+                          href: localizations/set-up-item-tax-groups.md
+                        - name: Adószámítások importálása és exportálása
+                          href: localizations/tax-calculation-import-export-feature.md
                         - name: Alapadat-keresés környezetének beállítása
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
                     - name: Meghatározás
@@ -2594,6 +2606,8 @@
               items:
                 - name: Indonézia – áttekintés
                   href: localizations/indonesia.md
+                - name: Adószámla-számozás és -számlázás
+                  href: localizations/apac-idn-invoicing.md
                 - name: Áfabevallás Indonézia számára
                   href: localizations/apac-idn-ppn-declaration.md
             - name: Olaszország
@@ -2662,6 +2676,8 @@
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Elektronikus vevői számlák
                   href: localizations/emea-ita-e-invoices.md
+                - name: Szállítói elektronikus számlák
+                  href: localizations/emea-ita-vend-e-invoices.md
                 - name: Éves adóügyi kommunikáció
                   href: localizations/emea-ita-yearly-tax-communication.md
                 - name: Kifizetés nyomonkövethetősége
@@ -2964,6 +2980,20 @@
                   href: localizations/emea-nor-nets-import-format.md
                 - name: Áfabevallás
                   href: localizations/emea-nor-sales-tax-payment-report.md
+                - name: Áfa-visszatérítés az Altinnba küldött közvetlen beküldéssel
+                  items:
+                    - name: 'Áttekintés: Áfa-visszatérítés az Altinnba küldött közvetlen beküldéssel'
+                      href: localizations/emea-nor-vat-return.md
+                    - name: Integrációs pont regisztrálása az ID-porten webportálon
+                      href: localizations/emea-nor-vat-return-integration-point.md
+                    - name: A környezet előkészítése az ID-porten és az Altinn webszolgáltatásokkal való együttműködésre
+                      href: localizations/emea-nor-vat-return-setup.md
+                    - name: Ellenőrzőlista az áfa-visszatérítéssel kapcsolatos Elektronikus üzenetek beállításához
+                      href: localizations/emea-nor-vat-return-checklist.md
+                    - name: A Finance-környezet engedélyezése az ID-Porten és az Altinn webszolgáltatásokkal való együttműködésre
+                      href: localizations/emea-nor-vat-return-authorization.md
+                    - name: Áfa-visszatérítés beküldése az Altinn webszolgáltatásnak
+                      href: localizations/emea-nor-vat-return-submission.md
                 - name: Standard könyvvizsgálati fájl adóhoz (SAF-T) Norvégia esetén
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Elektronikus vevői számlák Norvégiában
@@ -3402,7 +3432,7 @@
                       href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
                     - name: A Finance környezet engedélyezése a HMRC MTD ÁFA webszolgáltatással való együttműködésre
                       href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                    - name: Áfa visszatérítés beküldése a HMRC MTD webszolgáltatásnak
+                    - name: Áfa-visszatérítés beküldése a HMRC MTD webszolgáltatásnak
                       href: localizations/emea-gbr-mtd-vat-integration-submission.md
                     - name: Áfa fizetések és kötelezettségekkel kapcsolatos adatok beolvasása a HMRC-ből
                       href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
@@ -3831,7 +3861,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
-                    - name: Lista
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
+                    - name: List
                       items:
                         - name: Listafüggvények
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json

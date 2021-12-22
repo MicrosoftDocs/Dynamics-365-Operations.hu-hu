@@ -2,19 +2,19 @@
 title: A Finance and Operations-alkalmazások szolgáltatásleírása
 description: Ez a témakör a Finance and Operations-alkalmazások szolgáltatásleírását tartalmazza.
 author: tomhig
-ms.date: 11/17/2021
+ms.date: 12/07/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 262cf00bdca63876c284be40954ca5de559b993a
-ms.sourcegitcommit: f11ad8d7ee8a4d2ee1a1bb601622b50e14955c4a
-ms.translationtype: HT
+ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
+ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/18/2021
-ms.locfileid: "7825400"
+ms.lasthandoff: 12/07/2021
+ms.locfileid: "7898389"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások szolgáltatásleírása
 
@@ -50,7 +50,7 @@ A Finance and Operations-alkalmazások működési modellje a szolgáltatás tel
 
 ### <a name="customer-activities"></a>Ügyféltevékenységek
 
-Az ügyfelek a [Dynamics 365 implementáció útmutatóját](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), a keretrendszert, valamint a...[Success by Design](/dynamics365/fasttrack/success-by-design-overview) [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) rendszernek a megoldás megvalósításához rendelkezésre álló eszközöket és gyakorlati sablonokat követik, partnerüknek és [Microsoft FastTrackjüknek](/dynamics365/fasttrack/) megfelelően. Gyakori tevékenységek a következők:
+Az ügyfelek a [Dynamics 365 implementáció útmutatóját](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), a keretrendszert, valamint [Success by Design](/dynamics365/fasttrack/success-by-design-overview), [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) rendszernek a megoldás megvalósításához rendelkezésre álló eszközöket és gyakorlati sablonokat követik, partnerüknek és [Microsoft FastTrackjüknek](/dynamics365/fasttrack/) megfelelően. Gyakori tevékenységek a következők:
 
 - Felhasználói identitás és biztonságkezelés
 - Üzleti folyamatok meghatározása, kialakítása és működtetása
@@ -314,7 +314,7 @@ A Microsoft vészhelyreállítási terveit és eljárásait rendszeresen ellenő
 | A Microsoft másodlagos környezetet biztosít az Azure párosított adatforrásában az elsődleges termelési példány telepítésekor. A további tudnivalókat lásd: [Üzletmenet-folytonosság és vészhelyreállítás (BCDR): Azure párosított régiók](/azure/best-practices-availability-paired-regions). | None |
 | A Microsoft engedélyezi az Azure SQL- és Azure Blob Storage földrajzi redundanciáját az elsődleges termelési példány telepítésekor. | None |
 | A Microsoft engedélyezi az automatikus biztonsági mentést az Azure SQL-adatbázisokon. | None |
-| <p>Ha üzemkimaradás történik, a Microsoft meghatározza, hogy a vevő esetén el kell-e végezni a feladatátvételt, és hogy adatvesztés történik-e. Az adatvesztés akár 5 másodperc is lehet. A további tudnivalókat lásd: [az Azure SQL-adatbázis földrajzi visszaállítása](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>Adatvesztés esetén a Microsoft kéri az ügyfél aláírását a feladatátvételhez.</p> | Adatvesztés esetén előfordulhat, hogy a vevőnek írásban alá kell írnia a regisztrációt, hogy a feladatátvételt kiváltsa. |
+| <p>Ha üzemkimaradás történik, a Microsoft meghatározza, hogy a vevő esetén el kell-e végezni a feladatátvételt, és hogy adatvesztés történik-e. A vevők a kiesés jellegétől és időzítésétől függően legfeljebb 15 percnyi adatvesztést tapasztalnak. | Adatvesztés esetén előfordulhat, hogy a vevőnek írásban alá kell írnia a feladatátvétel kiváltása érdekében. |
 | A feladatátvételi folyamat esetén a megfelelő szolgáltatás korlátozott módban működik. A frissítés karbantartása nem indítható el feladatátvételi módban. | Az ügyfél nem kérhet csomagtelepítést vagy más rendszeres karbantartási kérést feladatátvételi módban. |
 | Amikor az adatközpont működésbe lép, a Microsoft visszatér az elsődleges Azure-régió termelési példányához. A normál műveletek folytatódnak. | Előfordulhat, hogy az ügyfélnek vissza kell jelentkeznie a termelési példányra az elsődleges Azure-régióban. |
 

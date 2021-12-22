@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce értékelési környezet konfigurálása
 description: Ez a témakör bemutatja, hogyan lehet konfigurálni egy Microsoft Dynamics 365 Commerce értékelési környezetet a létesítést követően.
 author: psimolin
-ms.date: 08/24/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2e98ea9e98380ee63f6cc1eb6dfc7b84d38c7dbb
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
-ms.translationtype: HT
+ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416479"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913727"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet konfigurálása
 
@@ -39,6 +39,7 @@ Miután a Commerce értékelési környezet teljes körűen kiépítésre kerül
 1. A listából válassza ki a környezetét.
 1. Kattintson a jobb oldalon található környezeti információk **Bejelentkezés a környezetbe** elemére. Megnyílik a Commerce központ modul.
 1. Győződjön meg róla , hogy az **USRT** jogi személy van kiválasztva a jobb felső sarokban.
+2. Menjen a Commerce >, és ellenőrizze, hogy van-e **a** **ProductSearch.UseAzureSearch paraméter igaz beállítású** **bejegyzése**. Ha hiányzik ez a bejegyzés, hozzáadhatja ezt a bejegyzést, és teljes szinkronizálást futtathat **> az eCommerce webhelyhez társított** Commerce Scale egység számára.
 
 A Commerce központ alkalmazásban történő létesítés utáni tevékenységek során győződjön meg arról, hogy a **USRT** jogi személy mindig be van jelölve.
 
@@ -105,6 +106,12 @@ A feladatok engedélyezéséhez a Kereskedelemben kövesse az alábbi lépéseke
     1. Válassza ki a rekordot.
     1. A Művelet panel **Kötegelt feladat** lapján válassza az **Állapot módosítása** lehetőséget.
     1. Válassza a **Megszakítás**, majd az **OK** elemet.
+
+1. Ha a feladat állapota **Visszatartva, hajtsa végre a következő** lépéseket:
+
+    1. Válassza ki a rekordot.
+    1. A Művelet panel **Kötegelt feladat** lapján válassza az **Állapot módosítása** lehetőséget.
+    1. Válassza a **Várakozás** parancsot, majd válassza az **OK** elemet.
 
 Lehetőség van arra is, hogy a következő feladatokhoz egy (1) percet is be lehessen állítani az ismétlődési intervallumhoz:
 

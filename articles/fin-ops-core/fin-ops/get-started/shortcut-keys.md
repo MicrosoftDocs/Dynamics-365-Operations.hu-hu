@@ -2,7 +2,7 @@
 title: Billentyűparancsok
 description: Ez a témakör áttekintést nyújt azokról a billentyűparancsokról, amelyeket a Finance and Operations alkalmazásokkal folytatott munka során használhat.
 author: jasongre
-ms.date: 11/12/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 969cd6aaf2d7c4cee7bb95029f19741372f915eb
-ms.sourcegitcommit: ab32fc90ea498ce3b629384f78cbe1aee747f157
+ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/12/2021
-ms.locfileid: "7800193"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913518"
 ---
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A következő billentyűparancsok segítségével gyorsan és hatékonyan viheti be az adatokat a Finance and Operations alkalmazásokban.
 
@@ -73,7 +72,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Az adatterület ablak megnyitása (vagy az adatterület ablakra fókuszálás, ha már meg van nyitva) | Alt+M,B vagy Ctrl+F2                        |
 | Az adatterület ablak bezárása (a fókusszal az adatterület ablakban)                         | Esc                                       |
 | Ugrás a következő/előző adatterületre (a fókusszal az adatterület ablakban)              | Alt+Shift+Lefelé nyíl/Alt+Shift+Felfelé nyíl |
-| Ugrás az &lt; n&gt;-edik adatterületre (a fókusszal az adatterület ablakban)                | Alt+&lt; n&gt; (&lt; n&gt; = 1-9)           |
+| Ugrás az &lt;n&gt;-edik adatterületre (a fókusszal az adatterület ablakban)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Adatterület kibontása (a fókusszal az adatterület fejlécen)                             | Szóköz vagy Enter                            |
 | Az aktuális adatterület összecsukása                                                    | Alt+0                                     |
 
@@ -114,11 +113,11 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 |-----------------------------------------------------|----------------------------------------------|
 | Ugrás a következő/előző mezőre                     | Tab/Shift+Tab                              |
 | Ugrás az következő/előző lapra                       | Alt+Shift+Jobbra nyíl / Alt+Shift+Balra nyíl |
-| Ugrás az &lt; n&gt;-edik lapra                         | Alt+Shift+&lt; n&gt; (&lt; n&gt; = 1-9)        |
+| Ugrás az &lt;n&gt;-edik lapra                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Ugrás a következő/előző gyorslapra                   | Alt+Shift+Lefelé nyíl/Alt+Shift+Felfelé nyíl    |
-| Ugrás az &lt; n&gt;-edik gyorslapra                     | Alt+&lt; n&gt; (&lt; n&gt; = 1-9)              |
+| Ugrás az &lt;n&gt;-edik gyorslapra                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
 | Ugrás a következő/előző lapátra (függőleges lap)      | Alt+Shift+Jobbra nyíl / Alt+Shift+Balra nyíl |
-| Lépjen az &lt; n&gt;. lapátra (függőleges lap)        | Alt+Shift+&lt; n&gt; (&lt; n&gt; = 1-9)        |
+| Lépjen az &lt;n&gt;. lapátra (függőleges lap)        | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Gyorslap kibontása (a fókusszal az Gyorslap fejlécen) | Szóköz vagy Enter                               |
 | Az aktuális gyorslap összecsukása                        | Alt+0                                        |
 | Váltás rácsnézetre                                 | Ctrl+Shift+G                                 |
@@ -150,6 +149,7 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Az alapértelmezett művelet végrehajtása rácsban<blockquote>[!NOTE] Ez a billentyűparancs akkor van engedélyezve, amikor a fókusz egy hivatkozást tartalmazó cellán van, és az adott oszlop összes cellájában vannak hivatkozások.</blockquote> | Bevitel                           |
 | A fókusz váltása a kiválasztott sor és a fejlécsor között                                                               | Alt+Shift+H                     |
 | Az aktuális oszlop nagyítása/kicsinyítése (a fókusz a fejlécsorban)                                                  | Jobbra nyíl / balra nyíl        |
+| Az aktuális oszlop áthelyezése a következő/előző pozícióba (a fejléc sorában lévő fókuszsal)                                   | Ctrl+Shift+Jobbra nyíl / Ctrl+Shift+Balra nyíl |
 | Rácsszűrés megnyitása az aktuális oszlopnál (a fókusz a fejlécsorban)                                              | Enter                           |
 | Az aktuális oszlop átméretezése a tartalomnak megfelelőre (a fejlécsorban lévő fókuszsal)                                           | A (vagy kattintson duplán az oszlopméretező gombra) |
 

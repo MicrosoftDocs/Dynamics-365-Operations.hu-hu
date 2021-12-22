@@ -2,7 +2,7 @@
 title: Az Adventure Works téma telepítése
 description: Ez a témakör azt írja le, hogyan lehet telepíteni az Adventure Works témát a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 07/21/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ad704c6c3b95abcfd52e449a0ffbb4b82b236498ae8d2775c4e65811de3ef503
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: d9d0d04c1a698c765b5effcca88624e6fb99da64
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763836"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913702"
 ---
 # <a name="install-the-adventure-works-theme"></a>Az Adventure Works téma telepítése
 
@@ -32,7 +32,7 @@ Ez a témakör azt írja le, hogyan lehet telepíteni az Adventure Works témát
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Az Adventure Works téma telepítése előtt szükség van egy olyan Dynamics 365 Commerce környezetre (a Commerce 10.0.20-as vagy újabb verzióra), amely tartalmazza a Retail Cloud Scale Unit (RCSU), Commerce online szoftverfejlesztő készlet (SDK) és a Commerce modulkönyvtár elemeket. A Commerce SDK és a modultár telepítésének lépéseit lásd az [SDK- és modultár-frissítések](e-commerce-extensibility/sdk-updates.md) részben. 
+Az Adventure Works téma telepítése előtt szükség van egy olyan Dynamics 365 Commerce környezetre (a Commerce 10.0.20-as vagy újabb verzióra), amely tartalmazza a Retail Cloud Scale Unit (RCSU), Commerce online szoftverfejlesztő készlet (SDK) és a Commerce modulkönyvtár elemeket. A Commerce SDK és a modultár telepítésével kapcsolatos tudnivalókat [lásd: Fejlesztői környezet](e-commerce-extensibility/setup-dev-environment.md) beállítása. 
 
 ## <a name="installation-steps"></a>A telepítés lépései
 
@@ -48,11 +48,19 @@ Az Adventure Works témacsomag a **dynamics365-commerce** feedben szolgáltatás
 
     `"@msdyn365-commerce-theme:registry" "https://pkgs.dev.azure.com/commerce-partner/Registry/_packaging/dynamics365-commerce/npm/registry/"`  
     
-Ha a csomag telepítéséhez a helyi környezetben, futtassa a következő parancsot a parancssorból. Ez a parancs automatikusan frissíti a package.json fájlt, hogy tartalmazza a függőséget.
+Ha a csomagot helyi környezetben is telepíteni kell, futtassa a parancsot a parancssorból, ahol az THEME_PACKAGE témacsomag `yarn add THEME_PACKAGE@VERSION`**·** (@msdyn365-commerce-téma/kalandworks-témacsomag) és a VERZIÓ a modultár használt **verziója**. Fontos, hogy a témacsomag és a modultár verziói megegyeznek. A megfelelő modultár-verziószám megkereséhez nyissa meg a package.json fájlt, és keresse meg az indulócsomag értékét **a** **függőségek** szakaszban. A következő példában a package.json fájl a modultár 9.32-es verzióját használja, amely a Dynamics 365 Commerce 10.0.22-es verzióra mutat.  
 
-`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit`
+```json
+"dependencies": {
+    "@msdyn365-commerce-modules/starter-pack": "9.32",
+}
+```
 
-A **package.json** fájlban a témaverziót egy adott verzióra kell frissíteni.
+A következő példa bemutatja, hogyan lehet futtatni a Kalandoror téma `yarn add` 9.32-es verziójának hozzáadására parancsokat. A parancs automatikusan frissíti a package.json fájlt, hogy tartalmazza a függőséget.
+
+`yarn add @msdyn365-commerce-theme/adventureworks-theme-kit@9.32`
+
+A modultár verziójának frissítésével kapcsolatos további tudnivalókat lásd az SDK és [a modultár frissítéseit.](e-commerce-extensibility/sdk-updates.md) 
 
 > [!IMPORTANT]
 > - A témaverziónak meg kell egyeznie a modultár verziójával, hogy minden funkció a várt módon működjön. 

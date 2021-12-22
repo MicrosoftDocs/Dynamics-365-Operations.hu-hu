@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-8-03
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fc413f8230849653aef8c2951f1749823edded6e
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
-ms.translationtype: HT
+ms.openlocfilehash: 0f1f49a7da2f015d90987587fc251a36cfe82d49
+ms.sourcegitcommit: cd7f1c63f48542a8ebcace7b3d512eb810d4b56e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605429"
+ms.lasthandoff: 12/10/2021
+ms.locfileid: "7903250"
 ---
 # <a name="journal-posting-failure-because-of-imbalance"></a>Napló kiküldésének hibája egyensúlyhiány miatt
 
@@ -52,13 +52,13 @@ Egy támogatott forgatókönyv szerint egy utalványhoz egynél több tranzakci�
 
 Ha egy utalvány minden sora azonos tranzakciós pénznemmel rendelkezik, és ha a tranzakciós pénznemek összegei kiegyenlítettek, a rendszer ellenőrzi, hogy a könyvelési pénznemek összegei is kiegyenlítettek. Ha az utalványt külföldi pénznemben adják meg, az utalvány soraiban szereplő árfolyamot használják a tranzakció pénznemében megadott összegek számviteli pénznemre történő átszámításához. Először a bizonylat minden sorát átváltja és két tizedesjegyre kerekíti. Ezután a sorokat összeadjuk, hogy meghatározzuk a teljes terhelést és a teljes jóváírást. Mivel minden egyes sort lefordítanak, előfordulhat, hogy a teljes terhelés és a teljes jóváírás nem lesz egyensúlyban. Mindazonáltal, ha a különbözet abszolútértéke a **főkönyvi paraméterek** lapon meghatározott **Maximális filléres különbözet** értékén belül van, az utalvány könyvelésre kerül, és a különbözet automatikusan a Filléres különbözet számlára kerül könyvelésre.
 
-Ha az utalvány egynél több tranzakciós pénznemet tartalmaz, az utalvány minden egyes sorát át kell számítani a számviteli pénznemre, majd két tizedesjegyre kerekíteni, majd a sorokat össze kell adni a teljes terhelés és a teljes jóváírás meghatározásához. Ahhoz, hogy kiegyensúlyozottnak számítsa a tartozik és a követel tételeket kik kell egyensúlyozni, vagy átváltva, vagy ha a könyvelési pénznem fillérre kerekített összege is bele van foglalva.
+Ha az utalvány egynél több tranzakciós pénznemet tartalmaz, az utalvány minden egyes sorát át kell számítani a számviteli pénznemre, majd két tizedesjegyre kerekíteni, majd a sorokat össze kell adni a teljes terhelés és a teljes jóváírás meghatározásához. Ahhoz, hogy kiegyensúlyozottnak lehessen tekinteni, a terheléseknek és hiteleknek egyensúlyban kell lenniük a számviteli pénznemben.  A penny különbség számla soha nem kerül hozzáadásra az utalványhoz a számviteli pénznemben, hogy a terheléseket és a hiteleket egyensúlyba hozza. 
 
 ### <a name="reporting-currency"></a>Jelentési pénznem
 
 Ha egy utalvány minden sora azonos tranzakciós pénznemmel rendelkezik, és ha a tranzakciós pénznemek összegei kiegyenlítettek, a rendszer ellenőrzi, hogy a jelentési pénznemek összegei kiegyenlítettek-e. Ha az utalványt külföldi pénznemben adják meg, az utalvány soraiban szereplő árfolyamot használják a tranzakció pénznemében megadott összegek beszámolási pénznemre történő átszámításához. Először a bizonylat minden sorát átváltja és két tizedesjegyre kerekíti. Ezután a sorokat összeadjuk, hogy meghatározzuk a teljes terhelést és a teljes jóváírást. Mivel minden egyes sort lefordítanak, előfordulhat, hogy a teljes terhelés és a teljes jóváírás nem lesz egyensúlyban. Mindazonáltal, ha a különbözet a **főkönyvi paraméterek** lapon meghatározott, a **jelentési pénznemben megadott maximális filléres kerekítésen** belül van, az utalvány könyvelésre kerül, és a különbözet automatikusan a Filléres különbözet számlára kerül könyvelésre.
 
-Ha az utalvány egynél több tranzakciós pénznemet tartalmaz, az utalvány minden egyes sorát át kell számítani a jelentési pénznemre, majd két tizedesjegyre kerekíteni, majd a sorokat össze kell adni a teljes terhelés és a teljes jóváírás meghatározásához. Ahhoz, hogy kiegyensúlyozottnak számítsa a tartozik és a követel tételeket kik kell egyensúlyozni, vagy átváltva, vagy ha a jelentési pénznem fillérre kerekített összege is bele van foglalva.
+Ha az utalvány egynél több tranzakciós pénznemet tartalmaz, az utalvány minden egyes sorát át kell számítani a jelentési pénznemre, majd két tizedesjegyre kerekíteni, majd a sorokat össze kell adni a teljes terhelés és a teljes jóváírás meghatározásához. Ahhoz, hogy kiegyensúlyozottnak lehessen tekinteni, a terheléseket és a hiteleket egyensúlyba kell hozni a jelentési pénznemben.  A penny különbség számla soha nem kerül hozzáadásra az utalványhoz a jelentési pénznemben, hogy a terheléseket és a hiteleket egyensúlyba hozza.
 
 ### <a name="example-for-an-accounting-currency-imbalance"></a>Példa a könyvelési pénznem kiegyensúlyozatlanságára
 

@@ -2,7 +2,7 @@
 title: Online és offline pénztár (POS) műveletek
 description: Ez a témakör ismerteti a pénztár (POS) műveleteit Dynamics 365 Commerce alkalmazásban. Azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy offline módban érhető el.
 author: jblucher
-ms.date: 02/21/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc4835258c7a1968c51e4d1a3a4d0eb33aaf2cddf31efd965adff0ac80aa4ec1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88daca466e0e01bf3870b6eeee0628e0c159fea3
+ms.sourcegitcommit: 971456c197820421f108ad7345001cc1b6c99949
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745284"
+ms.lasthandoff: 12/01/2021
+ms.locfileid: "7875477"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 
 [!include [banner](includes/banner.md)]
 
-A legtöbb felhasználó műveletek a pont (POS) értékesítési műveletek veszi figyelembe. Műveletek konfigurálása és kezelése a Dynamics 365 Commerce háttérirodában történik. A POS-gombrács gombjai számos művelet lehet hozzáadni. Felhasználó kiválaszthatja a gombokra kattintva hajtani a műveleteket, és a kapcsolódó feladatok végrehajtása. Egyéb műveletekhez részét képezik a fő POS alkalmazást, és előforduló vagy a gombok vagy más munkafolyamatokat, és a folyamatok részeként.
+A felhasználók legtöbb művelete műveletnek számít a pénztárnál. Műveletek konfigurálása és kezelése a Dynamics 365 Commerce háttérirodában történik. A POS-gombrács gombjai számos művelet lehet hozzáadni. Felhasználó kiválaszthatja a gombokra kattintva hajtani a műveleteket, és a kapcsolódó feladatok végrehajtása. Egyéb műveletekhez részét képezik a fő POS alkalmazást, és előforduló vagy a gombok vagy más munkafolyamatokat, és a folyamatok részeként.
 
 A következő táblázatban a Modern POS és a Cloud POS rendszerekben rendelkezésre álló műveleteket találja. A táblázat azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy a pénztár offline módjában elérhető-e.
 
@@ -72,18 +72,17 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 121 | Értékesítő törlése | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem |
 | 1055 | Műszakzárás | Az aktuális Műszakzárás, és a Z-jelentés nyomtatása a rendszerből a felhasználói bejelentkezés. | Igen | Igen | Igen | Nem | Nem |
 | 139 | Tranzakció lezárása | Megkéri a felhasználót, hogy válasszon fizetési módot | Igen | Igen | Nem | Igen | Nem |
-| 620 | Vevői rendelés létrehozása | A kijelölt pénztártranzakció átalakítása vevői rendeléssé | Igen | Igen | Nem | Igen\* | Nem |
 | 925 | Banki csekk másolása | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Igen |
 | 620 | Vevői rendelés létrehozása | A kijelölt pénztártranzakció átalakítása vevői rendeléssé | Igen | Igen | Nem | Igen\* | Nem |
 | 621 | Árajánlat létrehozása | A kijelölt pénztártranzakció átalakítása értékesítési árajánlattá. | Igen | Igen | Nem | Igen\* | Nem |
-| 636 | Kiskereskedelmi tranzakció létrehozása | Ez a művelet lehetővé teszi, hogy a felhasználó szokásos értékesítési tranzakció létrehozása a POS alapértelmezés vevői rendelések létrehozása esetén. | Igen | Igen | Nem | Igen | Nem |
+| 636 | Kiskereskedelmi tranzakció létrehozása | Hozzon létre egy szokásos értékesítési tranzakciót, ha a POS alapértelmezett viselkedése a vevői rendelések létrehozása. | Igen | Igen | Nem | Igen | Nem |
 | 600 | Vevő | Adja hozzá a megadott vevőt a tranzakcióhoz. | Nem | Nem | Nem | Igen | Nem |
 | 1100 | Vevői számlára történő betét | Kifizetés teljesítése a vevő számlájára. | Igen | Igen | Igen | Igen | Igen |
-| 612 | Vevő hozzáadása | Ez a művelet lehetővé teszi, hogy a felhasználó új vevőrekordot hozzon létre. | Igen | Igen | Igen | Igen† | Nem |
+| 612 | Vevő hozzáadása | Új vevőrekord létrehozása | Igen | Igen | Igen | Igen† | Nem |
 | 603 | Vevő törlése | A vevő eltávolítása a jelenlegi tranzakcióból. | Igen | Igen | Nem | Igen | Nem |
-| 602 | Vevőkeresés | Ez a művelet lehetővé teszi, hogy a felhasználó keresése a vevőrekord nyissa meg a vevő lapon a POS. | Igen | Igen | Igen | Igen | Nem |
+| 602 | Ügyfélkeresés | Vevőrekord keresése a POS vevőkereső oldalára való navigálásval. | Igen | Igen | Igen | Igen | Nem |
 | 609 | Vevői tranzakciók | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem |
-| 917 | Adatbázis-kapcsolat állapota | Ez a művelet lehetővé teszi, hogy a felhasználó az aktuális kapcsolat beállításainak megtekintése és online és offline módok közötti váltás. | Igen | Igen | Igen | Igen | Nem |
+| 917 | Adatbázis-kapcsolat állapota | Az aktuális kapcsolati beállítások megtekintése, valamint váltás az online és offline üzemmódok között. | Igen | Igen | Igen | Igen | Nem |
 | 1200 | Nyitó összeg elszámolása | A pénztárfiókban a nap vagy a műszak kezdetén lévő összeg közlése. | Igen | Igen | Igen | Igen | Nem |
 | 132 | Letét felülbírálása | A vevői rendelések alapértelmezett letétjének felülbírálása. | Igen | Igen | Nem | Igen\* | Nem |
 | 913 | Tervező mód letiltása | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem |
@@ -96,14 +95,14 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 615 | Árajánlat szerkesztése | A kiválasztott árajánlat visszahívása, úgy, hogy a POS módosítható. | Nem | Nem | Nem | Nem | Nem |
 | 518 | Kiadási számlák | A pénztárfiókból eseti kiadásokra kivett készpénz nyilvántartása. | Igen | Igen | Igen | Igen | Nem |
 | 919 | Kiterjesztett bejelentkezés | Bejelentkezési jogosultság hozzárendelése vagy eltávolítása .vonalkód beolvasásával vagy kártya lehúzásával. | Igen | Igen | Igen | Igen | Nem |
-| 1201 | Váltópénzbetét | Ez a művelet lehetővé teszi, hogy a felhasználó további pénzt hozzáadása az aktuális fiók vagy a műszak. | Igen | Igen | Igen | Igen | Nem |
+| 1201 | Váltópénzbetét | Adjon hozzá további pénzt az aktuális fiókhoz vagy műszakhoz. | Igen | Igen | Igen | Igen | Nem |
 | 1218 | Perifériás eszköz zárfeloldásának kényszerítése | A rendszer ezt a műveletet segítségével zárolásának feloldása a POS-perifériák beállításait. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem |
 | 520 | Ajándékutalvány egyenlege | Az ajándékutalvány egyenlegének megjelenítése. | Igen | Igen | Nem | Nem | Nem |
 | 708 | Eszköz inaktiválása | Az aktuális eszköz inaktiválása, így nem használható a POS-nál jegyzék. | Nem | Nem | Nem | Nem | Nem |
 | 804 | Bejövő művelet | A bejövő üzleti készletkezelési szolgáltatások elérése. | Igen | Nem | Igen | Nem| Nem |
 | 517 | Bevételi számlák | Az értékesítésen kívüli okból a pénztárfiókban elhelyezett összeg rögzítése. | Igen | Igen | Igen | Igen | Nem |
 | 801 | Keresés a készletben | Keresse meg az aktuális üzletre és más elérhető helyekre vonatkozó mennyiségek érhető el, a rendelésen és a Ígérethez rendelkezésre álló (ATP). | Igen | Igen | Igen | Nem | Nem |
-| 122 | Számlamegjegyzés | Ez a művelet lehetővé teszi, hogy a felhasználó adja meg az aktuális tranzakcióval kapcsolatos megjegyzés hozzáadása. | Igen | Igen | Nem | Igen | Nem |
+| 122 | Számlamegjegyzés | Az aktuális tranzakcióval kapcsolatos megjegyzés beírva. | Igen | Igen | Nem | Igen | Nem |
 | 511 | Jóváírás kibocsátása | Kiadás jóváírás helyett visszatérítést bizonylat megadását. | Igen | Igen | Nem | Nem | Nem |
 | 512 | Ajándékutalvány kibocsátása | Új ajándékutalvány kiadás a megadott összeget. | Igen | Igen | Nem | Nem | Nem |
 | 625 | Hűségkártya kibocsátása | Hűségkártya kiállítása a vevőnek az üzlet hűségprogramjában való részvételhez. | Igen | Igen | Igen | Nem | Nem |
@@ -147,42 +146,42 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 1056 | X nyomtatás | X jelentés nyomtatása az aktuális műszakhoz. | Igen | Igen | Igen | Nem | Nem |
 | 103 | Megjegyzés a termékhez | Megjegyzés hozzáadása a tranzakció kiválasztott sortételéhez. | Igen | Igen | Nem | Igen | Nem |
 | 100 | Termékértékesítés | Meghatározott termék hozzáadása a tranzakcióhoz. | Igen | Igen | Igen | Igen | Nem |
-| 108 | Termékkeresés | Ez a művelet lehetővé teszi, hogy a felhasználó termékre keressen úgy, hogy hozzá navigál a pénztár keresőoldalán. | Igen | Igen | Igen | Igen | Nem |
-| 633 | Árajánlat lejárati dátuma | Ez a művelet lehetővé teszi, hogy a felhasználó megtekintse vagy módosítsa az értékesítési ajánlat lejárati dátumát. | Igen | Igen | Nem | Igen\* | Nem |
+| 108 | Termékkeresés | Termék keresése a POS termékkereső oldalára való navigálásval. | Igen | Igen | Igen | Igen | Nem |
+| 633 | Árajánlat lejárati dátuma | Az értékesítési ajánlat lejárati dátumának megtekintése vagy módosítása. | Igen | Igen | Nem | Igen\* | Nem |
 | 627 | Újraszámítás | Összes vevői rendeléssor és adók újraszámítása az aktuális konfiguráció alapján. | Igen | Igen | Nem | Igen\* | Nem |
 | 143 | Költségek újraszámítása | A rendelésre alkalmazott automatikus költségek újraszámítása. | Igen | Igen | Nem | Nem| Nem |
-| 515 | Rendelés visszahívása | Ez a művelet lehetővé teszi, hogy a felhasználó rákeressen a vevői rendelésekre és értékesítési ajánlatokra, és visszahívja őket. | Igen | Igen | Igen | Nem | Nem |
-| 504 | Tranzakció visszahívása | Ez a művelet lehetővé teszi, hogy a felhasználó visszahívjon egy korábban felfüggesztett tranzakciót a jelenlegi üzletből. | Igen | Igen | Nem | Igen‡ | Nem |
+| 515 | Rendelés visszahívása | Vevői rendelések és értékesítési ajánlatok keresése és visszahívása. | Igen | Igen | Igen | Nem | Nem |
+| 504 | Tranzakció visszahívása | Egy korábban felfüggesztett tranzakció visszahívása az aktuális üzletből. | Igen | Igen | Nem | Igen‡ | Nem |
 | 305 | Hűségpontok beváltása | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Igen |
-| 635 | Szállítási költségek visszatérítése | Ez a művelet lehetővé teszi, hogy a felhasználó visszatérítse a szállítási költségeket egy érvénytelenített rendelésen. | Nem | Nem | Nem | Nem | Nem |
+| 635 | Szállítási költségek visszatérítése | Az érvénytelenített rendelés szállítási költségeinek visszatérítése | Nem | Nem | Nem | Nem | Nem |
 | 644 | Utalványkód eltávolítása | Arra kéri a felhasználót, hogy távolítsa el a kuponokat úgy, hogy kiválasztja őket egy, a tranzakcióval jelenleg társított kuponlistából. | Igen | Igen | Nem | Igen | Nem |
 | 1057 | Z újranyomtatás | Az előző műszak vagy a kijelölt műszak Z-jelentésének kinyomtatása. | Igen | Igen | Igen | Nem | Nem |
 | 1216 | Adja meg az új jelszót. | Ez a művelet lehetővé teszi, hogy a jelszó-visszaállítási engedéllyel rendelkező felhasználó visszaállíthatja egy alkalmazott jelszavát egy ideiglenes jelszó használatával. | Igen | Igen | Igen | Nem | Nem |
-| 1219 | URl megnyitása a pénztárban | Ez a művelet lehetővé teszi, hogy a felhasználó megnyisson egy rendszergazda által konfigurált URL-t a pénztárban. | Igen | Igen | Igen | Igen | Nem | 
+| 1219 | URl megnyitása a pénztárban | Nyisson meg egy rendszergazda által konfigurált URL-címet a POS-terminálon. | Igen | Igen | Igen | Igen | Nem |
 | 109 | Visszaküldött termék | Egyedi termékek visszavételének végrehajtása. A következő leolvasott termék visszaküldött termékként jelenik meg, negatív mennyiséggel és árral. | Igen | Igen | Nem | Igen | Nem |
 | 114 | Visszáru-tranzakció | Korábbi tranzakció visszahívása bizonylatszám alapján egy vagy több termék visszaküldéséhez. | Igen | Igen | Igen | Igen§ | Nem |
 | 1211 | Széfes befizetés | Széfes befizetés, mellyel a pénz áthelyezhető a pénztárból a széfbe. | Igen | Igen | Igen | Igen | Nem |
 | 516 | Értékesítési számla | Ez a művelet lehetővé teszi, hogy a vevő felé a kiválasztott értékesítési számla kifizetéseket. | Igen | Igen | Nem | Nem | Nem |
-| 502 | Értékesítő | Ez a művelet lehetővé teszi, hogy a felhasználó beállítsa az **Értékesítési átvevő** értéket az ügyfélrendelésekre vonatkozó értékesítési rendelésen a pénztárnál. | Igen | Igen | Nem | Igen\* | Nem |
+| 502 | Értékesítő | A POS-ban vevői rendelések értékesítési rendelésében az **Értékesítés** át vevője értékének beállítása. | Igen | Igen | Nem | Igen\* | Nem |
 | 2000 | Ütemezéskezelés | Ez a művelet még nem támogatott. | Igen | Igen | Igen | Nem | Nem |
 | 2001 | Kérelmek ütemezése | Ez a művelet még nem támogatott. | Igen | Igen | Igen | Nem | Nem |
 | 622 | Rendelések keresése | Ez a művelet segítségével a felhasználók előre POS cikk, vevő vagy kategória szerinti keresés gombra. | Igen | Igen | Igen | Igen | Nem |
 | 1213 | Szállítási cím keresése | A művelet nem támogatott. | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem alkalmazható | Nem |
-| 709 | Hardverállomás kiválasztása | Ez a művelet lehetővé teszi, hogy a felhasználó jelölje ki azt a rendelkezésre álló állomás listájában hardverállomás. | Igen | Igen | Igen | Igen | Nem |
-| 637 | Alapértelmezett üzletkötő beállítása a tranzakcióban | Ez a művelet lehetővé teszi, hogy a felhasználó alapértelmezett üzletkötő később hozzáadott sorok megjelölése a támogatható az értékesítési jutalékcsoportok (eladás kereskedőt) egyik. | Igen | Igen | Nem | Igen | Nem |
+| 709 | Hardware station kiválasztása | Hardverállomás kiválasztása a rendelkezésre álló hardverhibák listájáról. | Igen | Igen | Igen | Igen | Nem |
+| 637 | Alapértelmezett üzletkötő beállítása a tranzakcióban | Válassza ki a később hozzáadott sorok alapértelmezett üzletkötőiként a megfelelő jutalékos értékesítési csoportok (üzletkötők) valamelyikét. | Igen | Igen | Nem | Igen | Nem |
 | 105 | Mennyiség beállítása | A tranzakcióban szereplő sortétel mennyiségének módosítása. | Igen | Igen | Nem | Igen | Nem |
-| 638 | Üzletkötő beállítása a sorban | Ez a művelet lehetővé teszi, hogy a felhasználó alapértelmezett üzletkötő később hozzáadott sorok megjelölése a támogatható az értékesítési jutalékcsoportok a jelenleg kiválasztott sornál. | Igen | Igen | Nem | Igen | Nem |
+| 638 | Üzletkötő beállítása a sorban | Az aktuálisan kiválasztott sorra vonatkozó jutalékos értékesítési csoportok (üzletkötők) egyikének kiválasztása. | Igen | Igen | Nem | Igen | Nem |
 | 630 | Az összes termék szállítása | A teljesítési mód beállításához **szállítási** sor összes cikkhez. | Igen | Igen | Nem | Igen\* | Nem |
 | 629 | Kijelölt termékek szállítása | Az összes sor a szállítási mód beállítása a kijelölt **Szállítás**. | Igen | Igen | Nem | Igen\* | Nem |
 | 115 | Napló megjelenítése | Az üzlet naplójának megjelenítése. Tranzakciók megjelenítése, és a bevételek ajándékutalvány újranyomtatása és visszaküldés visszahívása. | Igen | Igen | Igen | Igen\*\* | Nem |
-| 802 | Készletszámlálás | Ez a művelet lehetővé teszi, hogy a felhasználó létrehozása vagy módosítása a tényleges készlet vagy ciklikus leltározási számlálási naplókat. | Igen | Igen | Igen | Nem | Nem |
+| 802 | Leltár | Leltárnaplók létrehozása vagy módosítása tényleges készlethez vagy ciklikus leltározáshoz. | Igen | Igen | Igen | Nem | Nem |
 | 401 | Almenü | Ezt a műveletet a felhasználó egy másik csatolt gombrács vesz igénybe. | Igen | Igen | Igen | Igen | Nem |
 | 1054 | Műszak felfüggesztése | Az aktuális műszak felfüggesztése, úgy, hogy az aktuális jegyzék másik műszak aktiválható. | Igen | Igen | Igen | Nem | Nem |
 | 503 | Tranzakció felfüggesztése | Az aktuális értékesítési tranzakció felfüggesztése, így később hívható vissza az üzletben. | Igen | Igen | Nem | Igen‡ | Nem |
 | 1004 | Feladatrögzítő | Nyissa meg a műveleteket lépésről lépésre ismertető lépéseket rögzíti a POS Feladatrögzítő. | Nem | Nem | Nem | Igen | Nem |
-| 1052 | Fizetőeszköz-elszámolás | Ez a művelet lehetővé teszi, hogy a felhasználó adja meg az összeget a fiókban a leszámlált fizetési módokhoz. | Igen | Igen | Igen | Igen | Nem |
-| 1210 | Fizetőeszköz kivétele | Ez a művelet lehetővé teszi, hogy a felhasználó pénzt vegyen el az aktuális fióktól vagy műszaktól. | Igen | Igen | Igen | Igen | Nem |
-| 920 | Blokkolóóra | Ez a művelet segítségével a felhasználók Lyukasztás és lyukasztás műszakok és szüneteket. | Igen | Igen | Igen | Nem | Nem |
+| 1052 | Fizetőeszköz-elszámolás | Az egyes leszámolt fizetési módoknál adja meg a pénz mennyiségét a fiókban. | Igen | Igen | Igen | Igen | Nem |
+| 1210 | Fizetőeszköz kivétele | Pénz eltávolítása az aktuális fiókból vagy műszakból. | Igen | Igen | Igen | Igen | Nem |
+| 920 | Blokkolóóra | A műszakok és szünetek be- és kiverődjön. | Igen | Igen | Igen | Nem | Nem |
 | 302 | Teljes engedmény összege | Az engedmény összegének megadása. Ez a művelet csak olyan cikkeknél érvényes, amelyekre engedmény adható, és csak a megadott határértékek között. | Igen | Igen | Nem | Igen | Nem |
 | 303 | Teljes engedmény (százalék) | Az engedmény százalékának megadása. Ez a művelet csak olyan cikkeknél érvényes, amelyekre engedmény adható, és csak a megadott határértékek között. | Igen | Igen | Nem | Igen | Nem |
 | 501 | Tranzakció megjegyzése | Megjegyzés hozzáfűzése a jelenlegi tranzakcióhoz. | Igen | Igen | Nem | Igen | Nem |

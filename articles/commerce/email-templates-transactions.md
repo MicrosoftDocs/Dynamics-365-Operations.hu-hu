@@ -2,7 +2,7 @@
 title: E-mail-sablonok létrehozása a tranzakciók eseményeihez
 description: Ez a témakör azt mutatja be, hogyan lehet létrehozni, feltölteni és konfigurálni a Microsoft Dynamics 365 Commerce tranzakciós eseményeihez tartozó e-mail-sablonokat.
 author: bicyclingfool
-ms.date: 10/26/2021
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 69ba8821cde6788d6e0accb37288f92acdfc776c
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
-ms.translationtype: MT
+ms.openlocfilehash: 25d7fcb803645f50ee4f5c608f5b6e789dfe3c31
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713797"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913752"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>E-mail-sablonok létrehozása tranzakciós eseményekhez
 
@@ -136,7 +136,7 @@ A B2B potenciális vevő jóváhagyva értesítési típus a következő tovább
 | `storename`        | Annak a csatornának a neve, amelyben a potenciális vevő létrejött. |
 | `storeurl`         | Alapértelmezés szerint üres. A helyőrző csak akkor használható, ha egyéni bővítményt hoznak létre. |
 
-### <a name="b2b-prospect-approved"></a>B2B potenciális vevő jóváhagyva
+### <a name="b2b-prospect-rejected"></a>B2B potenciális vevő elutasítva
 
 A *B2B potenciális vevő elutasítva* értesítési típus akkor jelenik meg, ha egy potenciális vevő onboarding kérését elutasítják a Commerce központban. A B2B potenciális vevők jóváhagyásáról vagy elutasításáról a [Rendszergazda felhasználó beállítása új üzleti partnerhez](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner) rész tartalmaz további tájékoztatást. 
 

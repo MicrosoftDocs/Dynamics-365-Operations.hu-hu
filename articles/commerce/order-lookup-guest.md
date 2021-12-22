@@ -2,7 +2,7 @@
 title: Rendelés keresésének engedélyezése vendégpénztárak részére
 description: Ez a témakör azt ismerteti, hogyan lehet engedélyezni a rendeléskeresést a vendégpénztáraknál a Microsoft Dynamics 365 Commerce-ben.
 author: stuharg
-ms.date: 09/01/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2021-08-15
 ms.dyn365.ops.version: Release 10.0.22
-ms.openlocfilehash: 639ee670b83198423425d03dad308306c9eed25c
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: a2a10b122faae354b0ea002e43a9bd60157f6216
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674976"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891500"
 ---
 # <a name="enable-order-lookup-for-guest-checkouts"></a>Rendelés keresésének engedélyezése vendégpénztárak részére
 
@@ -58,11 +58,21 @@ A **Rendeléskeresés** gyorslapon, a **Vevői rendelések** oldalon a Commerce 
 > [!NOTE]
 > Ezek a lehetőségek határozzák meg, hogy a névtelen vendég felhasználók számára mikor jelennek meg a személyes adatok, például a vevő címe és a vevő hitelkártyaszámának utolsó négy számjegye. A regisztrált vevők adatainak védelme érdekében javasoljuk, hogy **Csak a vendégrendelések** beállítást válassza. A legbiztonságosabb beállítás azonban a **Soha**.
 
-Miután módosítja a **Személyes adatok szerepeltetése a vendégrendelések keresésében** mező értékét, futtatnia kell az 1070-es (**Csatornakonfiguráció**) feladatot a Commerce központban, amelyet a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem IT \> Elosztási ütemezés**.
+Miután a Személyes adatok behelyettesítése a vendégrendelések keresési mezőjébe értékét módosítja, a **Commerce** Headquarters 1070-es feladatának **(csatornakonfigurációja) futtatásához a Retail and Commerce Retail and Commerce IT Distribution ütemezését kell** **\>\> futtatnia**.
 
 ## <a name="configure-the-order-lookup-module"></a>A rendeléskeresési modul konfigurálása
 
 A Commerce modultár rendeléskeresési modulja a vendégfelhasználók által a rendelések keresésére használt képernyő megjelenítésére használható. A rendeléskeresési modul bármelyik olyan lap törzsében szerepeltethető, amely nem igényli a vevői bejelentkezést. A modul konfigurálására vonatkozó tudnivalókat lásd a [Rendeléskeresési modulban](order-lookup-module.md).
+
+## <a name="configure-the-order-details-page"></a>A rendelés részleteit tartalmazó lap konfigurálása
+
+Ahhoz, hogy a vendég felhasználók megtekinthetik a rendelési adataikat, az e-commerce webhelyen be kell állítani a rendelési adatokat úgy, hogy ne legyen szükség a bejelentkezésre. Ha ki kívánja kapcsolni a rendelési adatok oldalához szükséges bejelentkezési követelményeket, nyissa meg a lapot a Commerce webhelyszerkesztőben, fanézetben válassza ki az Alapértelmezett oldal (kötelező) lehetőséget, és törölje a jelet a Be kell jelentkezni szükséges jelölőnégyzetből a tulajdonságok **ablaktábla** **alján**.
+
+## <a name="add-a-link-to-order-details-in-transactional-emails"></a>Rendelési részletekre mutató hivatkozás hozzáadása a tranzakciós e-mailekben
+
+A rendeléshez kapcsolódó e-mailekben meg lehet adni egy hivatkozást vagy gombot, amely a vevőket a rendelésük részletes adatait tartalmazó lapra viszi. Ennek a hivatkozásnak vagy gombnak a hozzáadásához hozzon létre egy HTML-hivatkozást, amely az e-commerce webhely rendelési részleteire mutat, és adja át a rendelés visszaigazolási azonosítóját és az ügyfél e-mail címét URL-paraméterként, amint azt az alábbi példa mutatja.
+
+`<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
 
 ## <a name="additional-resources"></a>További erőforrások
 

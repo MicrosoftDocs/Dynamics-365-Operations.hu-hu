@@ -70,7 +70,9 @@
                   items:
                     - name: Újdonságok és változások a Supply Chain Management kezdőlapján
                       href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.23
+                    - name: Supply Chain Management 10.0.24 (2022. február)
+                      href: get-started/whats-new-scm-10-0-24.md
+                    - name: Supply Chain Management 10.0.23 (2022. január)
                       href: get-started/whats-new-scm-10-0-23.md
                     - name: Supply Chain Management 10.0.22 (2021. november)
                       href: get-started/whats-new-scm-10-0-22.md
@@ -559,7 +561,7 @@
               href: ../finance/general-ledger/CFO-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Számlastruktúrák létrehozása
               href: ../finance/general-ledger/tasks/create-account-structures.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Költségvetés áttekintése
+            - name: Költségvetés-készítés áttekintése
               href: ../finance/budgeting/basic-budgeting-overview-configuration.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dimenziók létrehozása és dimenziótagok importálása
               href: ../finance/cost-accounting/cost-dimension.md?toc=/dynamics365/supply-chain/toc.json
@@ -947,7 +949,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Lista
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: List
                       items:
                         - name: Listafüggvények
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/supply-chain/toc.json
@@ -3755,7 +3759,7 @@
               items:
                 - name: Warehouse mobile app
                   items:
-                    - name: Nem található a tanúsítvány elérési útjának megbízhatósági kapcsolatok alapja az alkalmazáskapcsolat beállításakor
+                    - name: Nem található a tanúsítvány elérési útjához tartozó megbízhatósági kapcsolatok alapja az alkalmazáskapcsolat beállításakor
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Nem található a tanúsítvány elérési útjának megbízhatósági kapcsolatok alapja a WMS-be történő frissítéskor és migráláskor
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md

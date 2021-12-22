@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 14e86a49777eefefae711bfe0d756361b09d69c2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 43814023474d44b8c95bae087c7b6a4d52d21471
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778449"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891926"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integráció külső gyártásvégrehajtási rendszerekkel
 
@@ -191,7 +191,7 @@ Az alábbi táblázat bemutatja azokat a mezőket, amelyek az üzenet szakaszán
 
 | Mezőnév | Állapot | Típus |
 |---|---|---|
-| `OperationNumber` | Kötelező | Kötelező, egész szám |
+| `OperationNumber` | Kötelező | Egész |
 | `OperationPriority` | Választható | Enum (elsődleges \| másodlagos1 \|\| másodlagos2... \| Másodlagos20) |
 | `OperationId` | Választható | Sztring |
 | `OperationsResourceId` | Választható | Sztring |
@@ -242,5 +242,5 @@ Ilyen esetekben az Ellátásilánc-kezelés általános figyelmeztetési szolgá
 
 Beállíthatja például az alábbi figyelmeztetéseket, hogy visszajelzést ad az üzenetek állapotáról:
 
-- Az üzenet sikertelen küldése esetén használt üzleti esemény ("Külső küldés") *·* létrehozása.
+- Az üzenet sikertelen küldése esetén használt üzleti esemény ("Külső küldés") *létrehozása*.
 - Értesítés és e-mail küldése az rendszergazdának vagy a termelés felelősének.

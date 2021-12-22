@@ -2,7 +2,7 @@
 title: Részfőkönyv átvitele a főkönyvbe
 description: Ez a témakör azt mutatja be, hogy a milyen funkciók kapcsolódnak a részfőkönyv főkönyvbe történő átmozgatási folyamatához kapcsolódóan.
 author: rcarlson
-ms.date: 07/20/2021
+ms.date: 12/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2020-01-18
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 03c04a5eb8b544b582019ddd204382900b162d952842c901f69ed4a853bd8183
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 213bbc2541c614aa26b0c830431818fb99c7682d
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716645"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900730"
 ---
 # <a name="subledger-transfer-to-the-general-ledger"></a>Részfőkönyv átvitele a főkönyvbe
 
@@ -39,7 +39,7 @@ A 10.0.8-as verzióban az **Aszinkron** beállítás teljesítményének javít�
 
 Az analitikusnapló kötegek aszinkron átvitelére vonatkozó funkcióval javítható az analitikus naplóból a főkönyvbe történő adatátvitel. A kisebb tranzakciók csoportosítása és a tranzakciók csoportokban való átvitele segítségével a funkció hatékonyabban dolgozza fel a tranzakciókat. A tranzakciók csoportosítása esetén a kötegkiszolgáló erőforrásainak használata hatékonyabb lehet.
 
-Az analitikaiszámla-kötegek aszinkron átvitelhez szükséges, hogy a kötegszerver be legyen állítva, legyen online és működjön. Ellenkező esetben az **Aszinkron** átviteli beállítás nem működik.
+Az aszinkron átvitelhez be kell állítani, online módon kell beállítani a kötegkiszolgálót, valamint be kell állítani az online munkát, mivel a kötegelt feladatok a kötegkiszolgálón történő azonnali végrehajtáshoz létrejönnek. Ha engedélyezve van a Főkönyv modulba történő adagotra vonatkozó teljesítményoptimalizálási funkció, engedélyezni kell a Folyamatautomatizálás rendszer kötegelt feladatot is, amely **a** **·** **Folyamatautomatizálás lekérdezési rendszer** feladata. További információért tekintse át a [Folyamat automatizálása](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) menüpontot.
 
 A köteg szintjén végzett hatékonysági változás egy ismétlődő kötegelt feladatot használ a rendszerben található összes jogi személyhez. Futásidőben egy új kötegelt feladat jön létre a még nem átvitt szükséges rekordok feldolgozásához. A több beállítást a rendszerfelügyelet **Folyamatautomatizálás** lapján lehet szabályozni. Ezen a lapon módosíthatja a háttérfolyamatot, módosíthatja a gyakoriságot, és meghatározhat egy szüneteltetési időszakot.
 

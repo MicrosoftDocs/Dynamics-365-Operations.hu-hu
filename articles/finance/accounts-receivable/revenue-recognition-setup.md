@@ -2,7 +2,7 @@
 title: A bevételelszámolás beállítása
 description: Ez a cikk a bevételmegjelenítés beállítási lehetőségeit és a beállítások hatását mutatja be.
 author: kweekley
-ms.date: 08/24/2018
+ms.date: 11/24/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: b5ffd86d736cb7b6b5c270663c2b774e14556a6b
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675178"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867220"
 ---
 # <a name="revenue-recognition-setup"></a>A bevételelszámolás beállítása
 [!include [banner](../includes/banner.md)]
@@ -61,7 +61,7 @@ Az első: miután az összes szerződéses kötelezettség teljesül, és sor ke
 
 A második eset akkor fordul elő, amikor napló jön létre az újbóli felosztást követően. Újbóli felosztás akkor történik, amikor az értékesítési rendelés egy sorát hozzáadják egy korábban számlázott értékesítési rendeléshez, vagy amikor olyan új értékesítési rendelés jön létre, amely az eredeti szerződés részét képező sort tartalmaz. Ha egy számlát feladtak az értékesítési rendelés új sorának a hozzáadása előtt, a feladott vevői számlához helyesbítő könyvelési tételt kell létrehozni.
 
-A naplót a **Naplónevek** oldalon (**Bevételmegjelenítés \> Beállítás \> Naplónevek**) lehet beállítani. A napló típusaként a **Bevételmegjelenítést** kell megadni. A bevételmegjelenítési naplóval kiválaszthatja a feladás céljaként használandó feladási réteget.
+A naplót a **Naplónevek** oldalon (**Bevételmegjelenítés \> Beállítás \> Naplónevek**) lehet beállítani. A napló típusaként a **Bevételmegjelenítést** kell megadni. 
 
 ## <a name="parameters-for-revenue-recognition"></a>A bevételmegjelenítés paraméterei
 

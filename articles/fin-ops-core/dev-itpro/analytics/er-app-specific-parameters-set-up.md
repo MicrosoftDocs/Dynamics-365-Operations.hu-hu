@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 9b57c6165e5de4a115818a135ed1455e3b05e3f0
-ms.sourcegitcommit: 4b7e9d074e368a08d2f75482b722dce0c69a4bbd
-ms.translationtype: MT
+ms.openlocfilehash: 130487c41d8021692968141eca1a16d298a809e1
+ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7733463"
+ms.lasthandoff: 12/11/2021
+ms.locfileid: "7913651"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Az ER-formátum paramétereinek beállítása jogi személyenként
 
 [!include[banner](../includes/banner.md)]
-
-[!include[banner](../includes/preview-banner.md)]
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -118,7 +116,7 @@ Az ER keretrendszerrel beállíthatja az alkalmazásra jellemző paramétereket 
 
 15. Válassza a **Hozzáadás** lehetőséget, majd kövesse az alábbi lépéseket:
 
-    1. A **Kód** mezőben válassza a **\* Nem üres\*** beállítást.
+    1. A **Kód** mezőben válassza a **\*Nem üres\*** beállítást.
     2. A **keresési eredmény** mezőben válassza ki az **Egyéb** értéket.
 
     Az utolsó rekord hozzáadásával megadhatja a következő szabályt: Amikor az arugmentumként átadott adókód nem teljesíti a korábbi szabályok egyikét sem, a keresési adatforrás **Egyéb** értéket ad vissza a kért adózási szintként.
@@ -170,7 +168,7 @@ Az USMF vállalat paramétereinek beállítását a következő lépések szerin
 8. Válassza ki a **EXEMPT** áfakódot.
 9. Az új rekord **keresési eredmény** mezőjében válassza ki a **Nincs adózás** értéket.
 10. Válassza a **Hozzáadás** lehetőséget.
-11. Az új rekord **Kód** mezőjében válassza a **\* Nem üres\*** beállítást.
+11. Az új rekord **Kód** mezőjében válassza a **\*Nem üres\*** beállítást.
 12. Az új rekord **keresési eredmény** mezőjében válassza ki a **Rendes adózás** értéket.
 13. Az **Állapot** mezőben válassza ki a **Befejeződött** értéket.
 14. Válassza a **Mentés** lehetőséget.

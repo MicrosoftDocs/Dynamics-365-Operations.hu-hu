@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 2c2d2604dc1948d067311a12d00422ef074ac61a
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
-ms.translationtype: HT
+ms.openlocfilehash: ae8e9791b590a32581b66853f55ea11bc389bb19
+ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641160"
+ms.lasthandoff: 12/04/2021
+ms.locfileid: "7891752"
 ---
 # <a name="warehouse-management-workloads-for-cloud-and-edge-scale-units"></a>Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
@@ -50,6 +50,11 @@ Az üzleti folyamatoktól függően ugyanaz az adatrekord megváltoztathatja a t
 > Néhány adat a központon és a skálázási egységen is létrehozható. Ilyenek például az **Azonosítótáblák** és a **Kötegszámok**. Olyan helyzetekben, amikor ugyanaz az egyedi rekord jön létre a központon és egy skálázási egységen ugyanazon a szinkronizálási cikluson keresztül, dedikált ütközéskezelés áll rendelkezésre. Ilyen esetben a következő szinkronizálás sikertelen lesz, és a **Rendszerfelügyelet > Lekérdezések > Terhelési lekérdezések > Ismétlődő rekordok** menüponthoz kell ugrania, ahol megtekintheti és egyesítheti az adatokat.
 
 ## <a name="outbound-process-flow"></a>Kimenő feldolgozási folyamat
+
+Mielőtt raktárkezelési terhelést telepít egy felhő- vagy szélskálaegységre, győződjön meg róla, hogy a Skálaegység segítségével kiadja a kimenő rendelések raktárába a vállalati *központot*. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+
+- **Modul:** *Raktárkezelés*
+- **Funkció neve:** *Mértékegység-támogatás kimenő rendelések raktárába való kiadásához*
 
 A kimenő adatok tulajdonosi folyamata attól függ, hogy használja-e a rakománytervezési folyamatot. A *forrásdokumentumok*, például az értékesítési és átviteli rendelések, valamint a rendelésfelosztási folyamat és a kapcsolódó rendelési tranzakciók adatai minden esetben a központ tulajdonában állnak. A rakománytervezési folyamat használata esetén azonban a rakományok a központon lesznek létrehozva, és ezért kezdetben a központ tulajdonában állnak. A *Raktárba történő kiadás* folyamat részeként a rakományadatok tulajdonosa átkerül a dedikált skálázási egység üzemelő példányába, amely a következő *szállítmányhullám-feldolgozás* tulajdonosa lesz (például a munkafelosztásé, feltöltési munkáé és igénylétrehozásé). Ezért a raktári dolgozók csak egy olyan Warehouse Management mobilalkalmazás segítségével dolgozhatnak fel kimenő értékesítési és átviteli rendelési munkát, amely az adott skálázási egység terhelését futtató üzemelő példányhoz kapcsolódik.
 
@@ -202,7 +207,7 @@ A következő táblázat bemutatja, hogy mely kimenő funkciók, és hol támoga
 | Rakományhoz kapcsolódó dokumentumok nyomtatása                           | Igen | Igen|
 | Fuvarlevél és ASN-generálás                            | Nem  | Igen|
 | Szállítmány megerősítése                                             | Nem  | Igen|
-| Szállítmány megerősítése a „Megerősítés és áthelyezés” lehetőséggel            | Nem  | Nem |
+| Szállítmány megerősítése a „Megerősítés és áthelyezés” lehetőséggel            | Nem  | Igen|
 | Szállítólevél és számlázások feldolgozása                        | Igen | Nem |
 | Rövid kitárolás (értékesítési és áttárolási rendelések)                    | Nem  | Igen, a forrásdokumentumok foglalásának eltávolítása nélkül|
 | Előírtnál nagyobb mennyiség kitárolása (értékesítési és áttárolási rendelések)                     | Nem  | Igen|
@@ -212,8 +217,8 @@ A következő táblázat bemutatja, hogy mely kimenő funkciók, és hol támoga
 | Hullámcímke                                                   | Nem  | Igen|
 | Felosztott munka                                                   | Nem  | Igen|
 | Munkafeldolgozás – „Szállítási berakodás” irányítja            | Nem  | Nem |
-| Kitárolt mennyiség csökkentése                                       | Nem  | Nem |
-| Munka sztornírozása                                                 | Nem  | Nem |
+| Kitárolt mennyiség csökkentése                                       | Nem  | Igen|
+| Munka sztornírozása                                                 | Nem  | Igen|
 | Szállítmány visszaigazolásának sztornírozása                                | Nem  | Igen|
 
 ### <a name="inbound"></a>Bejövő
@@ -227,7 +232,7 @@ A következő táblázat bemutatja, hogy mely bejövő funkciók, és hol támog
 | Partraszállási költség és úton lévő áruk fogadása                       | Igen | Nem |
 | Beérkező szállítmány megerősítése                                    | Igen | Nem |
 | Beszerzési rendelés kiadása a raktárba (raktári rendelés feldolgozása) | Igen | Nem |
-| Raktári rendelési sorok visszavonása<p>Ne feledje, hogy ez csak akkor támogatott, ha a sorhoz nem történt regisztráció</p> | Igen | Nem |
+| Raktári rendelési sorok visszavonása<p>Ne feledje, hogy ez csak akkor támogatott, ha a művelet megszakítására vonatkozó kérés feldolgozása közben nem *történt regisztráció a* sorra.</p> | Igen | Nem |
 | Beszerzési rendelés – cikk bevételezése és eltárolása                       | <p>Igen,&nbsp;ha&nbsp;nincs&nbsp;raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, ha a beszerzési rendelés nem része egy <i>rakománynak</i></p> |
 | Beszerzésirendelés-sor bevételezése és betárolása                       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | <p>Igen, ha a beszerzési rendelés nem része egy <i>rakománynak</i></p></p> |
 | Visszárurendelés bevételezése és eltárolása                              | Igen | Nem |
@@ -246,7 +251,7 @@ A következő táblázat bemutatja, hogy mely bejövő funkciók, és hol támog
 | Fogadás *Minőség a minőség-ellenőrzésnél* munka létrehozásával       | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nem |
 | Fogadás minőségi rendelés létrehozásával                            | <p>Igen, ha nincs raktári rendelés</p><p>Nem, ha van raktári rendelés</p> | Nem |
 | Munkafeldolgozás – *Fürtbetárolás* irányításával                 | Igen | Nem |
-| Munkafeldolgozás *Rövid kitárolással*                               | Igen | Nem |
+| Munkafeldolgozás *Rövid kitárolással*                               | Igen | Igen |
 | Azonosítótábla rakodása                                           | Igen | Igen |
 
 ### <a name="warehouse-operations-and-exception-handing"></a>Raktári műveletek és kivételek kezelése
@@ -290,7 +295,8 @@ A következő táblázat összefoglalja, hogy mely raktárkezelési termelési h
 |---------|-----|------------------------------|
 | Készként jelentés és késztermék betárolása | Igen | Igen |
 | Társ- és melléktermék betárolása | Igen | Igen |
-| <p>A termeléshez kapcsolódó összes egyéb raktárkezelési folyamat, beleértve:</p><li>Kiadás raktárba</li><li>Termelés hullámfeldolgozása</li><li>Nyersanyag kitárolása</li><li>Kanban betárolás</li><li>Kanban kitárolás</li><li>Termelési rendelés indítása</li><li>Termelési selejt</li><li>Termelés – utolsó raklap</li><li>Anyagfelhasználás regisztrálása</li><li>Üres kanban</li></ul> | Igen | Nem |
+| Termelési rendelés indítása | Igen | Igen |
+| <p>A termeléshez kapcsolódó összes egyéb raktárkezelési folyamat, beleértve:</p><li>Kiadás raktárba</li><li>Termelés hullámfeldolgozása</li><li>Nyersanyag kitárolása</li><li>Kanban betárolás</li><li>Kanban kitárolás</li><li>Termelési selejt</li><li>Termelés – utolsó raklap</li><li>Anyagfelhasználás regisztrálása</li><li>Üres kanban</li></ul> | Igen | Nem |
 | Nyersanyag feltöltése | Nem | Nem |
 
 ## <a name="maintaining-scale-units-for-warehouse-execution"></a>A raktárvégrehajtáshoz szükséges skálázási egységek karbantartása

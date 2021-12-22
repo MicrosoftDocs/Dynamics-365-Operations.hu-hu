@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 013a5b1ac5b99c6a8ac75885e6d65067d5ed4c2ffd5cc5f625a73963666c0a81
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: e1ade9af06848b125fb6253ea1182f6098588150
+ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779502"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902507"
 ---
 # <a name="close-the-fiscal-year"></a>A pénzügyi év lezárása
 
@@ -36,7 +36,7 @@ Ez a folyamat bemutatja az év végi zárás folyamatát, amely az egyenlegeket 
 
 4. Válassza az „Igen” vagy „Nem” elemet a **Záró tranzakciók létrehozása átvezetés közben** lehetőségnél.
 
-    Ha Igen értékre van állítva, két tranzakció jön létre. Egy bizonylat jön létre a lezárás alatt álló pénzügyi évhez, hogy az eredménykimutatási főkönyvi számlák egyenlegét lenullázza, és egy második bizonylat is létrejön a következő pénzügyi évi nyitó egyenlegekhez. Ha Nem értékre van állítva, egyetlen bizonylat jön létre a következő pénzügyi évi nyitó egyenlegekhez.  
+    Ha Igen értékre van állítva, két tranzakció jön létre. A lezárt pénzügyi évben létrejön egy bizonylat, amely az összes főkönyvi számla egyenlegét nullára állítja, és egy másik bizonylatot hoz létre a következő pénzügyi évben a kezdő egyenlegekhez. Ha Nem értékre van állítva, egyetlen bizonylat jön létre a következő pénzügyi évi nyitó egyenlegekhez.  
 
 5. Válassza az „Igen” vagy „Nem” elemet a **Pénzügyi év beállítása véglegesen lezárt állapotúra** lehetőségnél.
 

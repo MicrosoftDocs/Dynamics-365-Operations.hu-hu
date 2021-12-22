@@ -2,7 +2,7 @@
 title: Adószámítás áttekintése
 description: Ez a témakör az adószámítási funkció általános hatókörét és jellemzőit ismerteti.
 author: wangchen
-ms.date: 10/15/2021
+ms.date: 11/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: caa7e458763b6ba6b2b85ab016a1aa2e53cee89a
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 28b14eba7dd870e80a83f8d31671525b593a09c9
+ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647057"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7892424"
 ---
 # <a name="tax-calculation-overview"></a>Adószámítás áttekintése
 
@@ -65,9 +65,23 @@ Az adószámítás a következő Azure-földrajzi területeken van telepítve. A
 > [!NOTE]
 > Az Adószámítás nem támogatja a Dynamics 365 korábbi verzióit, például a Dynamics AX 2012-t vagy a Dynamics 365 helyben telepített verzióit.
 
+## <a name="versions"></a>Verziók
+Javasoljuk, hogy importálja és állítsa be az adószámítás konfigurációját a Pénzügy vagy az Ellátásilánc-kezelés verziójának megfelelő verzióval.
+
+| Pénzügyi vagy ellátásilánc-kezelés verziója | Adókonfigurációs verzió               |
+| --------------- | --------------------------------------- |
+| 10.0.18         | Adókonfiguráció - Európa 30.12.82     |
+| 10.0.19         | Adószámítási konfiguráció 36.38.193 |
+| 10.0.20         | Adószámítási konfiguráció 40.43.208 |
+| 10.0.21         | Adószámítási konfiguráció 40.48.215 |
+| 10.0.22         | Adószámítási konfiguráció 40.48.215 |
+| 10.0.23         | Adószámítási konfiguráció 40.50.221 |
+| 10.0.24         | Adószámítási konfiguráció 40.50.225 |
+
+
 ## <a name="data-flow"></a>Adatáramlás
 
-Az alábbiakban a tTax-számítás adatáramlási folyamatát vázoljuk fel. 
+Az adószámítási folyamat szerkezeti része. 
 
 1. Az RCS-ben megtekintheti és importálhatja az adóköteles dokumentummodell-konfigurációkat és a modelltérkép-konfigurációkat. Ha egy speciális forgatókönyvhöz ki kell bővítenie a konfigurációkat, lásd: [Adatmezők hozzáadása az adókonfigurációkban.](tax-service-add-data-fields-tax-configurations.md)
 2. Az RCS-ben hozzon létre vagy tartson fenn adójellemzőket. Az adózási funkciókat az adókulcsok és az adóalkalmazhatósági szabályok karbantartására használhatja.
@@ -169,6 +183,10 @@ A 10.0.23-es verzió a jogi személyek elsődleges címének következő ország
 - Japán
 - Malajzia
 - Szingapúr
+
+A 10.0.24-es verzió a jogi személyek elsődleges címének következő országait/régióit támogatja:
+
+- Mexikó
 
 ## <a name="related-resources"></a>Kapcsolódó erőforrások
 

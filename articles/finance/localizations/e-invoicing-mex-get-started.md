@@ -2,7 +2,7 @@
 title: Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
 description: Ez a témakör olyan információkat tartalmaz, amelyek bemutatják a mexikói Elektronikus számlázással kapcsolatos első lépéseket.
 author: gionoder
-ms.date: 09/22/2020
+ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 4266d7bca163b1d6aa1261e086f10a4f0f5d7e360051db169fbcab34363c81c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
+ms.sourcegitcommit: 385fc4e9c641b43734ddb030893904489361af7d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6742153"
+ms.lasthandoff: 12/02/2021
+ms.locfileid: "7881591"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
 
@@ -35,7 +35,15 @@ Ez a témakör olyan információkat tartalmaz, amelyek bemutatják a mexikói E
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A témakör lépéseinek végrehajtása előtt végre kell hajtania az [Első lépések az Elektronikus számlázással](e-invoicing-get-started.md) részben található lépéseket.
+A témakörben található lépések befejezése előtt el kell kezdenie az [Elektronikus számlázás szolgáltatásfelügyeletének első lépéseit](e-invoicing-get-started-service-administration.md) és az [Elektronikus számlázás használatának első lépéseit](e-invoicing-get-started.md).
+
+## <a name="set-up-the-cadena-xslt"></a>A Patna XSLT beállítása
+
+A CFDI-feldolgozás globalizációs funkcióhoz való hozzáadásához a következő lépéseket kell végrehajtania:
+
+1. Séma letöltése a [SAT webhelyről](http://www.sat.gob.mx/sitio_internet/cfd/3/cadenaoriginal_3_3/cadenaoriginal_3_3.xslt)
+2. A séma tömörítése egy zip-fájlba.
+3. Az xslt-fájl mentése az Új tároló szolgáltatáskörnyezetében beállított Azure-tárolási fiókba.
 
 ## <a name="rcs-setup"></a>RCS beállítása
 
@@ -127,6 +135,17 @@ A CFDI-számla érvénytelenítésre való beküldéséhez az **Érvénytelenít
 
 > [!NOTE]
 > Kövesse ugyanezeket a lépéseket a **Visszavonás** és az **Érvénytelenítési kérelem** funkció beállításaihoz a **mexikói PAC szolgáltatás** művelet URL-címének frissítéséhez.
+
+### <a name="set-up-the-path-for-the-cadena-xlst-schema"></a>A Gyorsítóna XLST séma elérési útjának beállítása
+
+1. A Funkcióverzió beállítási lapján, a Változók lapon válassza ki a változó **nevét** (**·** **DigitalSignatureXSLT).**
+2. Az Értékek mezőben adja meg **a** {következőt: "containerUrl":" https://&lt; AccountStorageName &gt; .blob.core.windows.net/ &lt; ContainerName &gt; ","path":" &lt;&gt; RelativePath"}
+   
+    where: <RelativePath> = \\ mappamappa fájlneve dupla perjelekkel, a ContainerName mezőben a szolgáltatáshoz használt \\ tárolót kell jelöli.
+   
+    Példa a változóra:
+    
+    {"path":"x xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx\\ dev \\ cadena_xslt","containerUrl":https://yyyyyyyyyy.blob.core.windows.net/containername}
 
 ## <a name="assign-the-draft-version-to-an-e-invoicing-environment"></a>A Piszkozat verzió hozzárendelése e-számlázási környezethez
 

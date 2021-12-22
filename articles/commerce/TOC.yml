@@ -92,7 +92,9 @@
                   items:
                     - name: Újdonságok vagy változások a Commerce kezdőlapján
                       href: get-started/whats-new-home-page.md
-                    - name: Commerce 10.0.23
+                    - name: Commerce 10.0.24 (2022. február)
+                      href: get-started/whats-new-commerce-10-0-24.md
+                    - name: Commerce 10.0.23 (2022. január)
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (2021. november)
                       href: get-started/whats-new-commerce-10-0-22.md
@@ -196,7 +198,7 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and Operations alkalmazások architektúrája
+                - name: Finance and OperationsAlkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Microsoft FastTrack
                   href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
@@ -542,9 +544,11 @@
                       href: payinvoice.md
                     - name: Ismétlődő kifizetések megakadályozása
                       href: duplicate-payment-protection.md
-                    - name: Többcsatornás kifizetések áttekintése
+                    - name: Omnicsatornás kifizetések áttekintése
                       href: omni-channel-payments.md
-                    - name: Többcsatornás Commerce-megrendelések kifizetései
+                    - name: Több elérhető fizetési mód az üzletben történő átvételhez
+                      href: dev-itpro/multiple-payments-pickup.md
+                    - name: Omnicsatornás Commerce-rendelés-kifizetések
                       href: dev-itpro/commerce-payments.md
                     - name: Hitelkártyás tranzakciók adatainak archiválása
                       href: dev-itpro/archive-cc-data.md
@@ -814,6 +818,10 @@
           items:
             - name: Ügyfélkezelés az üzletekben
               href: customer-mgmt-stores.md
+            - name: Aszinkron vevőlétrehozási mód
+              href: async-customer-mode.md
+            - name: Aszinkron vevők átalakítása szinkron vevőkké
+              href: convert-async-to-sync.md
             - name: Ügyfélkör
               items:
                 - name: Ügyfélkör áttekintése
@@ -1320,7 +1328,7 @@
                   href: localizations/latam-bra-commerce-localization.md
                 - name: A Commerce honosításának beállítása és telepítése Brazíliára vonatkozóan
                   href: localizations/latam-bra-deployment.md
-                - name: 'A Commerce pénztárban lévő NFC-e pénzügyi dokumentum-funkciók, Brazíliára vonatkozóan'
+                - name: 'A Commerce POS-ban lévő NFC-e pénzügyi dokumentum-funkciók, Brazíliára vonatkozóan'
                   href: localizations/latam-bra-nfce.md
                 - name: 'Ügyfélinformációk kezelése a pénztárban, Brazíliára vonatkozóan'
                   href: localizations/latam-bra-customer-information.md
@@ -1330,6 +1338,8 @@
                   href: localizations/latam-bra-nfce-contingency-mode.md
                 - name: 'Brazil pénzügyi dokumentumok közzététele kiskereskedelmi kimutatások útján, a Commerce Headquartersben'
                   href: localizations/latam-bra-retail-statements.md
+                - name: 'A Commerce POS-ban lévő CF-e pénzügyi dokumentum és a SAT-funkcióval való integráció, Brazíliára vonatkozóan'
+                  href: localizations/latam-bra-cf-e-sat.md
                 - name: Dynamics 365 Payment Connector az Adyennek – Commerce POS - Brazília
                   href: localizations/latam-bra-adyen.md
             - name: Kelet-Európa
@@ -1378,8 +1388,10 @@
                   href: localizations/apac-ind-loc-deployment-guidelines.md
                 - name: Frissítés és N-1 támogatása (India)
                   href: localizations/apac-ind-n-1-for-india.md
-                - name: QR-kódok létrehozása és nyomtatása nyugtákra
+                - name: QR-kódok létrehozása és nyomtatása nyugtákra (India)
                   href: localizations/ind-generate-qr-code-print-receipt.md
+                - name: Áruk és szolgáltatások adójának (GST) integrálása e-kereskedelmi webhelyek esetén
+                  href: localizations/apac-ind-e-commerce.md
             - name: Olaszország
               items:
                 - name: Adóügyi nyomtató integrációját bemutató minta Olaszországra vonatkozóan
@@ -1616,7 +1628,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/commerce/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/commerce/toc.json
-                    - name: Lista
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/commerce/toc.json
+                    - name: List
                       items:
                         - name: Listafüggvények
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/commerce/toc.json

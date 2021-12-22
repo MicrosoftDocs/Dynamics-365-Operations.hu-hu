@@ -2,7 +2,7 @@
 title: B2B e-kereskedelmi webhely beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy B2B e-kereskedelmi webhelyet a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: josaw1
-ms.date: 04/23/2021
+ms.date: 12/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: c630580dd75a86085746b36726e9ee55a9db2af5
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 171e518258e9600bd7526cf52e3e456d272e6bce
+ms.sourcegitcommit: 5f5a8b1790076904f5fda567925089472868cc5a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713748"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7891385"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>B2B e-kereskedelmi webhely beállítása
 
 [!include [banner](../../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 A vállalatok közötti (B2B) e-kereskedelmi webhelyek néhány olyan kulcsfontosságú lehetőséget kínálnak, amelyek optimalizálják a munkafolyamatot egy B2B-felhasználó számára. Ez a témakör azt mutatja be, hogyan lehet beállítani egy B2B e-kereskedelmi webhelyet a Microsoft Dynamics 365 Commerce alkalmazásban. Végigmegy a modulokon és a webhelybeállításokon, amelyeket a B2B-specifikus helyzetek engedélyezéséhez kell konfigurálni.
 
@@ -306,6 +307,30 @@ A gyorshozzáadási modulnak a kosároldalhoz való hozzáadásához a Commerce 
 
 > [!NOTE] 
 > A gyorshozzáadás modul a Commerce 10.0.17-es verziójának kiadásaként érhető el. Ha a Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az utasításokat lásd itt: [SDK- és modultár-frissítések](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+## <a name="add-a-bulk-purchase-module-to-a-product-details-page"></a>Tömeges beszerzési modul hozzáadása egy termék részletei laphoz
+
+A PDP-lapon található tömeges beszerzési modul mátrixalapú tapasztalatokat biztosít, amellyel a beszerző gyorsan hozzáadhatja a termék több változatát a kosárhoz. Ha egy helyfelhasználónak ugyanannak a terméknek több változatát kell rendelnie, ez a tapasztalat nem teszi szükségesné a termékdimenziók kombinációjának kiválasztását, a mennyiséget, a változatot a kosárba adhatja, majd megismételheti a folyamatot a termékdimenziók más kombinációinál.
+
+A commerce webhelyszerkesztőben a tömeges beszerzési modulnak a PDP-hez való hozzáadásához kövesse ezeket a lépéseket.
+
+1. Menjen **a Sablonok** pontra, és válassza ki a webhely PDP-sablonját.
+1. Válassza ki a **Szerkesztés** opciót.
+1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
+1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A Modul hozzáadása párbeszédpanelen válassza ki a Tömeges beszerzés **modult, majd kattintson az OK** **·** **gombra**.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
+1. Menjen az **Oldalak** lapra, és válassza ki a webhely PDP-ját.
+1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
+1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
+1. A Tároló modul tulajdonságok ablakában, a Szélesség mezőben válassza **a** **·** **Kitöltési tároló** lehetőséget.
+1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
+1. A Modul hozzáadása párbeszédpanelen válassza ki a Tömeges beszerzés **modult, majd kattintson az OK** **·** **gombra**.
+1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
+
+> [!NOTE] 
+> A tömeges beszerzési modul a Commerce rendszer 10.0.24-es verziójának kiadásában érhető el. Ha a Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az utasításokat lásd itt: [SDK- és modultár-frissítések](../e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 ## <a name="additional-resources"></a>További erőforrások
 
