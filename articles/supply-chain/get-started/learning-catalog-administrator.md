@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: ff9d4d0c1d72d3002f84f895f67d3c9cb347f1e8
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
-ms.translationtype: HT
+ms.openlocfilehash: a11455c4e3f59ef52d9a1e3d2e6a10c57a070a79
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402225"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920423"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-administrators"></a>Képzési katalógus a Dynamics 365 Supply Chain Management adminisztrátorok számára
 
@@ -68,7 +68,7 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 | Tartalom | Leírás | Formátum | Hossz |
 |---------|-------------|--------|--------|
-| [Mérnöki változásmenedzsment beállítása a Dynamics 365 Supply Chain Management-hoz](/learn/paths/set-up-engineering-change-management/) | A mai gyártóknak erős termékadat-kezelésre, verziókezelésre és mérnöki változásmenedzsmentre van szükségük ahhoz, hogy sikeresek legyenek a folyamatosan csökkenő termékéletciklusok, a megnövekedett minőségi és megbízhatósági követelmények, valamint a termékbiztonságra való fokozott odafigyelés világában. Ebben a tananyagban megtanulhatja, hogyan állítsa be a mérnöki változásmenedzsmentet. | Ingyenes, saját tempójú online tanulási útvonal | 4 óra |
+| [Mérnöki változásmenedzsment beállítása a Dynamics 365 Supply Chain Management-hoz](/learn/paths/set-up-engineering-change-management/) | A mai gyártóknak erős termékadat-kezelési, verziókövető és mérnöki változáskezelésre van szükségük ahhoz, hogy a termék életciklusa folyamatosan csökkenjön, növelhető a minőség és a megbízhatósági követelmények, és növelhető a termékbiztonság. Ebben a tananyagban megtanulhatja, hogyan állítsa be a mérnöki változásmenedzsmentet. | Ingyenes, saját tempójú online tanulási útvonal | 4 óra |
 
 ## <a name="servicing"></a>Karbantartás<a name="servicing"></a>
 

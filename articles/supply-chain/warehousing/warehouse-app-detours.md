@@ -11,18 +11,16 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 536fe2fa8819129f14e31ff966ab2349f836f0f7
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
-ms.translationtype: HT
+ms.openlocfilehash: 874abbdf7c0938a7ad4cc66e23dd01d901a1f0d3
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902121"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920348"
 ---
 # <a name="configure-detours-for-steps-in-mobile-device-menu-items"></a>Elterelések konfigurálása a mobileszközök menüelemeinek lépéseihez
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until GA with 10.0.23 -->
 
 > [!IMPORTANT]
 > Az ebben a témakörben ismertetett funkciók csak az új Warehouse Management mobilalkalmazásra vonatkoznak. Ezek nem érintik a régi raktár alkalmazást, amely már elavult.

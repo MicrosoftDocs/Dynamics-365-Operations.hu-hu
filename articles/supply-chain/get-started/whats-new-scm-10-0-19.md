@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-23
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 2c14101099473025f88632245553da0bf50d4622
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 03ed2d52f44bd38910b01ffbd3767f750da2cbf8
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647215"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920573"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-version-10019-june-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.19-es verziójában (2021. június)
 
@@ -50,7 +50,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tarta
 
 | Modul | Funkció&nbsp;neve&nbsp;a Funkció-&nbsp;kezelésben | További információ |
 |---|---|---|
-| Értékesítés és marketing | Értékesítési előzményadat-tisztítás teljesítményének javítása | Az értékesítési előzményadatok megtisztítása hosszú ideig tart, ha olyan környezetben fut, ahol nagy mennyiségű értékesítést kell frissíteni. Az időtartam csökkentése és a megbízhatóság javítása érdekében ez a funkció rövidebb ideig futó kötegekre osztja fel az adattisztítást. Ahol lehetséges, az adatbázissal kapcsolatos funkciókat a lehető legrövidebb ideig zárolja a rendszer, hogy a tisztítás során ne kelljen csatlakoztatni a tranzakciós táblákat. A további tudnivalókat lásd az [Értékesítési előzmények tisztítása teljesítményjavítások](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
+| Értékesítés és marketing | Értékesítési előzményadat-tisztítás teljesítményének javítása | Az értékesítési előzményadatok megtisztítása hosszú ideig tart, ha olyan környezetben fut, ahol nagy mennyiségű értékesítést kell frissíteni. Az időtartam csökkentése és a megbízhatóság javítása érdekében ez a funkció rövidebb ideig futó kötegekre osztja fel az adattisztítást. Ahol lehetséges, az adatbázissal kapcsolatos funkciókat a lehető legrövidebb ideig zárolja a rendszer, hogy a tisztítás során ne kelljen csatlakoztatni a tranzakciós táblákat. A további tudnivalókat lásd az Értékesítési [előzmények tisztítása teljesítményjavasítási fejlesztéseknél](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Értékesítés és marketing | Kért átvételi dátum frissítése a visszaigazolt dátummal vállalatközi rendelések esetén | Ezzel a funkcióval szabályozható, hogy mi történjen az értékesítési és beszerzési dátum mező értékével a vállalatközi közvetlen kiszállítás során. Eldöntheti, hogy a rendszer frissítse-e a kért dátumokat, vagy hagyja ki a frissítést. Ha kihagyja a frissítést, a kért dátumok jelzik a vevő kérését. Ha engedélyezi a frissítést, a kért dátumok (a szállítási dátum ellenőrzése esetén) kezdetben csak a vevő kérését jelzik. A szállítási dátum ellenőrzése – ha nem a *Nincs* érték van megadva – felülbírálja az eredetileg kért értéket. Ezt a beállítást a vállalatközi szállítói vagy a vevői beállítások új **Kért átvételi dátum megerősített dátumkal való frissítése** beállításával lehet megadni.<br><br>Ha a funkció le van tiltva, a rendszer felülírja a szállítási dátum ellenőrzési szabályán alapuló eredeti értékesítési rendelésen lévő kért átvételi dátumot, de a kért szállítási dátum változatlan marad. |
 | Raktárkezelés | Mennyiségek lekerekítése a legközelebbi értékesítési egységre a raktárba való kiadáskor | Ez a funkció egy olyan beállítást vesz fel, amely korlátozhatja a rendelési mennyiségeket a raktárba való kiadás esetén. Ha engedélyezve van, a rendszer a rendelési mennyiségeket a legközelebbi egész értékesítési egységre kerekíti, és elutasítja az olyan rendelések kiadását, amelyekben egy értékesítési egységnél kevesebb mennyiség szerepel. |
 | Raktárkezelés | Szervezetszintű „Munkalétrehozás ütemezése” hullámmetódusa | A funkció engedélyezése esetén a *Munka létrehozásának ütemezése* hullámmódszer úgy lesz beállítva, hogy párhuzamosan fusson az összes jogi személynél. Mindez további beállításokat is érint. Az összes részlet: [Munka létrehozásának ütemezése hullám közben](../warehousing/configure-wave-schedule-work-creation.md). |

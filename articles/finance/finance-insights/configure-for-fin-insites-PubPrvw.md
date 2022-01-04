@@ -7,6 +7,7 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
+ROBOTS: noindex,nofollow
 audience: Application User
 ms.reviewer: roschlom
 ms.custom: 14151
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 58b23058582c949a757ec5c141e218b36833ec21e72c35db89762017dc26ae19
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 7e5752b8deffbd2694193494652a0ff808ecbfb0
+ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752942"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927404"
 ---
 # <a name="configuration-for-finance-insights-for-public-preview-preview---version-10020-and-later"></a>A Finance Insights konfigurálása nyilvános előzetes verzióhoz (előzetes verzió) – 10.0.20-as vagy újabb verzió
 
@@ -39,7 +40,7 @@ Kövesse az alábbi lépéseket a környezetek telepítéséhez.
 
 1. A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban hozzon létre vagy frissítsen egy Finance környezetet. A környezethez 10.0.20 vagy újabb Finance and Operations alkalmazások verzióra van szükség.
 2. A környezetnek magas rendelkezésre állású (HA) környezetnek kell lennie a tesztkörnyezetben. (Az ilyen típusú környezetet 2. szintű környezetnek is nevezik.) További információ: [Környezettervezés](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Ha a Finance Insights beállítása egy tesztkörnyezetben történik, lehet, hogy a termelési adatokat az adott környezetbe kell másolnia, hogy az előrejelzések működjenek. Az előrejelzési modell több évnyi adatból használatával készít előrejelzéseket. A Contoso demóadatok nem tartalmaznak elég előzményadatot az előrejelzési modell megfelelő képzéséhez. 
+3. Ha a Finance Insights beállítása egy tesztkörnyezetben történik, lehet, hogy a termelési adatokat az adott környezetbe kell másolnia, hogy az előrejelzések működjenek. Az előrejelzési modell több évnyi adatból használatával készít előrejelzéseket. A Contoso bemutató adatai nem tartalmaznak elég előzményadatot az előrejelzési modell megfelelő képzéséhez. 
 
 ## <a name="configure-dataverse"></a>Dataverse konfigurálása
 

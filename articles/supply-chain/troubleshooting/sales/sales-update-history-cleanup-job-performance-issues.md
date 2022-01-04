@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 4f04dc204c705b40ed25fadc75118feaef4d6b6e
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
-ms.translationtype: HT
+ms.openlocfilehash: c02273adf90afc67b7c0ae1b82c19d489bfbd3b1
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641463"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920074"
 ---
 # <a name="sales-update-history-cleanup-job-fails-or-has-performance-issues"></a>Értékesítésfrissítések előzményadat-tisztítási feladata sikertelen vagy teljesítményproblémákat tapasztalt
 
@@ -30,5 +30,5 @@ Ez akkor fordulhat elő, ha a rendszer nagy számú értékesítési frissítés
 
 ## <a name="resolution"></a>Megoldás
 
-Az **Értékesítés frissítési előzményeinek tisztítása** kötegelt feladat egy új verziója elérhető a Supply Chain Management 10.0.19-es és újabb verzióiban. Alapértelmezés szerint ez a funkció nincs bekapcsolva. A működésről és a funkciókezelésben való engedélyezéséről az [Értékesítési előzmények tisztítása teljesítményjavításai](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md) szakasz tartalmaz részletes információkat.
+Az **Értékesítés frissítési előzményeinek tisztítása** kötegelt feladat egy új verziója elérhető a Supply Chain Management 10.0.19-es és újabb verzióiban. Alapértelmezés szerint ez a funkció nincs bekapcsolva. A funkció működésével és a funkciókezelésben való engedélyezésével kapcsolatos részleteket lásd az Értékesítési [előzmények tisztítása teljesítményjavítási fejlesztésekben](../../sales-marketing/sales-update-history-cleanup-performance-improvements.md).
 

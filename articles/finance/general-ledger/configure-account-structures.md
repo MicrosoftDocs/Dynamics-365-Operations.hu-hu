@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3632f115b1ef4cd3a41a483270fb5f6bb6c73526ce9322f16a6533265302937c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: cc9219009991cce3f4df9c6f7e04903f5625dd80
+ms.sourcegitcommit: b2fe67e2fe6a99a35decb04c8d62efd1e94fe1b8
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719716"
+ms.lasthandoff: 12/22/2021
+ms.locfileid: "7945541"
 ---
 # <a name="configure-account-structures"></a>Számlastruktúrák konfigurálása
 
@@ -79,7 +79,7 @@ Egy napló bevitelekor és egy számla kiválasztásakor az eredménytartományb
 
 ## <a name="more-than-7-criteria-needed"></a>Több, mint 7 feltételek szükséges
 
-Ha több, mint 7 feltétel szükséges, folytathatja és hozzáadhatja őket a következő sorban. Miközben a **Megengedett értékek részletei** . szakaszon dolgozik, megfigyelheti, hogy az **+Új hozzáadása** feltétel már nem aktív, miután a hetedik kritériát is megadta. Ez számos tényezőnek köszönhető, például: 
+Ha több, mint 7 feltétel szükséges, folytathatja és hozzáadhatja őket a következő sorban. Az Engedélyezett értékek részletei szakaszban való munka során észreveszi, hogy a +Új feltétel hozzáadása már nem aktív a 7. feltétel **·** **bevitele** után. Ez számos tényezőnek köszönhető, például: 
  - Oszlopszélesség 
  - Hogyan történik az adatok tárolása 
  - A **Megengedett értékek részletei** vezérlő teljesítménye
@@ -101,7 +101,7 @@ A számlastruktúra beállításakor van néhány ajánlott eljárás, melyet k�
 - Nem javasoljuk, hogy a számlastruktúra minden szegmensét megcsillagozza, majd ezután kizárólag a speciális szabályokra támaszkodjon. Ezt nehéz lehet kezelni, és gyakran vezet felhasználói hibához a karbantartás alatt, amelynek következtében előfordulhat, hogy a rendszer nem lesz képes a feladásra.
 
 ## <a name="account-structure-activation"></a>Számlastruktúra aktiválása
-Ha elégedett az új beállítással vagy a számlastruktúra módosításával, aktiválnia kell. Ha egy számlastruktúra hozzá van rendelve egy főkönyvhöz, az aktiválási folyamat hosszú ideig is eltarthat, mivel a rendszerben szereplő összes fel nem adott tranzakciót szinkronizálni kell az új struktúrával. A feladott tranzakciókat nem befolyásolja a számlastruktúra módosítása.
+Ha meg van elégedve az új beállítással vagy egy számlastruktúra változtatásával, aktiválnia kell. Ha egy számlastruktúra hozzá van rendelve egy főkönyvhöz, az aktiválási folyamat hosszú ideig is eltarthat, mivel a rendszerben szereplő összes fel nem adott tranzakciót szinkronizálni kell az új struktúrával. A feladott tranzakciókat nem befolyásolja a számlastruktúra módosítása.
 
 További tudnivalókért lásd: [Számlatükör tervezése](plan-chart-of-accounts.md), [Pénzügyi dimenziók](financial-dimensions.md) és [A számla és dimenzió kombinációk megadása (szegmentált bejegyzés ellenőrzés)](enter-account-dimension-combinations-segmented-entry-control.md).
 

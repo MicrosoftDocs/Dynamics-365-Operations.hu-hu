@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 93eff7a54f9d3851c59b83a28d3aa61a8de7bc41f2a845be21c8bf4d1c6401d4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 8d5bcf3a0d36e323ee96c1f37829a95b60f529bc
+ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731031"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7944713"
 ---
 # <a name="refund-payment-processing-in-call-centers"></a>Visszatérítési fizetések feldolgozása hívásközpontoknál
 
@@ -33,11 +33,14 @@ A hívásközponti logika határozza meg a visszatérítési fizetési sor fizet
 
 A hívásközpont az eredeti rendelés fizetési módja alapján határozza meg a visszárurendelésre alkalmazandó fizetési módot. Ez a folyamat az eredeti fizetési módokon a következőképpen működik:
 
-- **Normál** (készpénz) vagy **Csekk** – ha a létrehozott visszárurendelés olyan eredeti rendelésre hivatkozik, amelyet a normál (készpénzes) vagy csekkfizetési típus használatával fizettek ki, akkor a hívásközponti alkalmazás a **Hívásközponti visszatérítési módok** lapján található konfigurációkra hivatkozik. Ez a lap lehetővé teszi a szervezetek számára, hogy a rendelés pénzneme szerint meghatározzák, hogyan adták ki a vevőknek az eredetileg a normál vagy csekkes fizetéstípussal kifizetett rendelések visszatérítését. A **Hívásközponti visszatérítési módok** lap lehetőséget nyújt a szervezeteknek annak kiválasztására is, hogy a rendszer által létrehozott visszatérítési csekket küldik-e a vevőnek, vagy vevői számlajóváírást hoznak-e létre a belső vevői számlaegyenleggel szemben. Ilyen helyzetekben a hívásközponti logika a visszárurendelés pénznemére hivatkozik, majd az ahhoz a pénznemhez a **Kiskereskedelmi fizetési mód** értékével hoz létre visszatérítési fizetési sort a visszáruértékesítési rendelésen. Később a pénznemhez kapcsolva létezik egy kinnlevőségek (AR) vevői fizetési napló, amely a leképezett kinnlevőségek fizetési módot használja.
+- **Normál** (készpénz) vagy **Csekk** – ha a létrehozott visszárurendelés olyan eredeti rendelésre hivatkozik, amelyet a normál (készpénzes) vagy csekkfizetési típus használatával fizettek ki, akkor a hívásközponti alkalmazás a **Hívásközponti visszatérítési módok** lapján található konfigurációkra hivatkozik. Ez a lap lehetővé teszi a szervezetek számára, hogy a rendelés pénzneme szerint meghatározzák, hogyan adták ki a vevőknek az eredetileg a normál vagy csekkes fizetéstípussal kifizetett rendelések visszatérítését. A Hívásközpont visszatérítési módok lapja azt is lehetővé teszi a szervezetek számára, hogy kiválasztják, kell-e rendszer által generált visszatérítési csekket küldeni a **vevőnek**. Ilyen helyzetekben a hívásközponti logika a visszárurendelés pénznemére hivatkozik, majd az ahhoz a pénznemhez a **Kiskereskedelmi fizetési mód** értékével hoz létre visszatérítési fizetési sort a visszáruértékesítési rendelésen. Később a pénznemhez kapcsolva létezik egy kinnlevőségek (AR) vevői fizetési napló, amely a leképezett kinnlevőségek fizetési módot használja.
 
     A következő ábra egy olyan helyzetet mutat be, amikor a vevő az USD pénznemhez kapcsolódó értékesítési rendelésből küld vissza termékeket, és amelyeket eredetileg a normál vagy csekkes fizetéstípussal fizettek ki. Ebben az esetben a rendszer létrehoz egy visszatérítési csekket, és a vevő ezen kapja meg a visszatérítést. A **REF-CHK** kinnlévőségek fizetési módot visszatérítési csekkes fizetéstípusként állították be.
 
     ![Hívásközponti visszatérítési módok konfigurálása normál kifizetésekhez és eredeti kifizetések ellenőrzése.](media/callcenterrefundmethods.png)
+
+    > [!NOTE]
+    > A vevőszámla nem támogatott visszatérítési mód készpénzes vagy csekkes fizetés esetén.
 
 - **Hitelkártya** – amikor a létrehozott visszárurendelés olyan eredeti rendelésre hivatkozik, amelyet hitelkártyával fizettek ki, akkor a visszatérítés hívásközponti logikája ugyanezt az eredeti hitelkártyát alkalmazza a visszárurendelésre is.
 - **Hűségkártya** – amikor a létrehozott visszárurendelés olyan eredeti rendelésre hivatkozik, amelyet vevői hűségkártyával fizettek ki, akkor a visszatérítés hívásközponti logikája ugyanezt a hűségkártyát alkalmazza a visszárurendelésre is.

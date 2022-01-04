@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ee4803c4653b8c2df2cb731652456b1ce2796cd0
-ms.sourcegitcommit: e77d72fde17a43bd1780c265702254011af7407c
-ms.translationtype: HT
+ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
+ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7893645"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7931981"
 ---
 # <a name="add-or-copy-leases-preview"></a>Lingek hozzáadása vagy másolása (előzetes verzió)
 
@@ -35,7 +35,7 @@ A következő lépéseket követve hozzon létre egy lízinget az Eszközlízing
 1. A **Lízing összefoglalása** lap műveleti paneljén válassza ki az **Új** elemet.
 2. Adja meg a lízing adatait. A kötelezően kitöltendő mezők piros szegéllyel rendelkeznek.
 
-> A bérleti díj kezdő dátuma nem lehet korábbi a bérlet kezdő dátumán. Ha a bérlet kezdő dátumán korábbi dátumot ad meg a bérleti díj kifizetésére, akkor hibaüzenetet kap.
+> A bérleti díj kezdő dátuma nem lehet korábbi, mint a lízing kezdési dátuma. Ha a lízing kifizetésének kezdő dátumát adja meg, amely korábban van, mint a bérlet kezdő dátuma, hibaüzenet jelenik meg.
   
 ## <a name="create-a-lease-schedule"></a>Lízingütemezés létrehozása
 
@@ -50,6 +50,9 @@ Miután befejezte a lízing adatainak megadását, hajtsa végre az alábbi lép
     A **Könyv részletei** lap mutatja, hogy a lízinget milyen módon kell elszámolni a hozzárendelt könyvek között. Itt megtekintheti a lízingütemezéseket.
 
     A fizetési ütemezés tartalmazza a **Lízing hozzáadása** lap **Fizetési ütemezés sorai** fül bemeneteit. Továbbra is módosíthatja az egyes kifizetési összegeket és a változó fizetéseket. A lízingkötelezettséget a módosított fizetési ütemezés alapján számítja ki a program.
+    
+> [!NOTE]
+> A lízing kifizetésének kezdő dátumának meg kell egynek vagy egy későbbi dátumnak kell lennie, mint a lízing kezdő dátumának. Hibaüzenet jelenik meg, ha a kifizetés kezdő dátuma korábbi, mint a bérlet kezdő dátuma. 
 
 4. Miután befejezte a kifizetési ütemezés áttekintését, jelölje be az **Ütemezés jóváhagyása** jelölőnégyzetet. Az ütemezés megerősítése után a lízing már nem érhető el szerkesztésre.
 

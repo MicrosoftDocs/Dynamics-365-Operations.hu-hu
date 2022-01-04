@@ -11,14 +11,14 @@ ms.search.region: Global
 ms.author: myvakalo
 ms.search.validFrom: 2021-09-29
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 1b2de9d6a7b1b7793b6bb753dd580d052d3c2841
-ms.sourcegitcommit: 96515ddbe2f65905140b16088ba62e9b258863fa
-ms.translationtype: HT
+ms.openlocfilehash: 610f0d4e0448dd21d10765400f25cd89e3c7a84b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2021
-ms.locfileid: "7891768"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920273"
 ---
-# <a name="saleshistorycleanupperformanceimprovements"></a>Értékesítési előzmények adattisztítási teljesítményének javításai
+# <a name="sales-history-cleanup-performance-improvements"></a>Értékesítési előzmények adattisztítási teljesítményének javításai
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
@@ -34,7 +34,7 @@ A funkció a következőképpen javítja a meglévő tisztítási feladatot:
 
 A funkció engedélyezése után az **Értékesítések frissítési előzményeinek tisztítása** kötegelt feladat (**Értékesítési és marketing \> Időszakos feladatok \> Tisztítás \> Értékesítés frissítési előzményeinek tisztítása**) a korábbiakkal megegyezően fog futni, de jobb teljesítménnyel és maximum 2 órás működéssel fog futni. Ez azt jelenti, hogy egy adott megőrzési időkeret minden adatának tisztítása többször is szükséges lehet.
 
-## <a name="turn-on-the-saleshistorycleanupperformanceimprovements-feature"></a>Értékesítési előzmények adattisztítási teljesítményének javításai funkció bekapcsolása
+## <a name="turn-on-the-sales-history-cleanup-performance-improvements-feature"></a>Az értékesítési előzmények tisztítása teljesítményjavasítási funkció bekapcsolása
 
 A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 

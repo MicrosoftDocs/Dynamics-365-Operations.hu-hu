@@ -1,8 +1,8 @@
 ---
 title: Fizetésifelszólítás-sorozat létrehozása
 description: Ezzel az eljárással létrehozhat egy beszedőlevél-sorozatot.
-author: abruer
-ms.date: 07/22/2019
+author: JodiChristiansen
+ms.date: 12/07/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bfc5bd0b1228ef28631da8746b2eb60e4cf488c1
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753586"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921199"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Fizetésifelszólítás-sorozat létrehozása
 
@@ -31,10 +31,10 @@ Ezzel az eljárással létrehozhat egy beszedőlevél-sorozatot. Ez a feladat az
 3. A **fizetésifelszólítás-sorozat** mezőben adjon meg egy sorozatazonosítót, amely a sorozatot jelöli majd. Ezt akkor használja majd, ha feladási profilt állít be.
 4. Írjon egy értéket a **Leírás** mezőbe.  A fizetési feltétel opcionális. Ha itt megad egy értéket, a fizetési felszólítási díj számlája ezeket a fizetési feltételeket használja a vevőhöz tárolt fizetési feltételek helyett.  
 5. A **Fizetési felszólítás kódmezőjében** válassza ki az első elküldeni kívánt fizetési felszólítás kódját. A számlán szereplő határidő, a Napok mezőben megadott türelmi időszak és az ebben a sorban megadott értékek és egyéb információk alapján automatikusan létrehozza az első fizetési felszólítást a rendszer.  
-6. Írjon egy értéket a **Leírás** mezőbe. A díj pénzneme alapértelmezetten a vevő pénzneme. Ez a pénznemkód eltérhet a számla pénznemétől.  
-7. A sorozatban következő fizetési felszólítás hozzáadásához kattintson a **Hozzáadás** lehetőségre. Az első fizetési felszólítás sok esetben csak figyelmeztetés. Szükség esetén díjakat is hozzáadhat.  
-8. A fizetési felszólítás kódmezőjében válassza ki a soron következő fizetési felszólítást.
-9. Írjon egy értéket a **Leírás** mezőbe.
+6. Írjon egy értéket a **Leírás** mezőbe. 
+7. A díj alapértelmezett pénzneme a jogi személy pénzneme. Ez a pénznemkód eltérhet a számla pénznemétől.   
+8. A sorozatban következő fizetési felszólítás hozzáadásához kattintson a **Hozzáadás** lehetőségre. Az első fizetési felszólítás sok esetben csak figyelmeztetés. Szükség esetén díjakat is hozzáadhat.  
+9. A **Fizetési felszólítás kódja** mezőben válassza ki a soron következő fizetési felszólítást.
 10. A **Fő számla mezőben** válassza ki a díjakhoz használni kívánt bevételi számlát.
 11. Adja meg a fizetési felszólítás feladásakor felszámolt díjat.
 12. A **Cikkáfacsoport** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához. Válasszon a cikkhez áfacsoportot, ha a díj áfaköteles.  

@@ -1,5 +1,5 @@
 ---
-title: Tervezési változáskezelés áttekintése
+title: Mérnöki változáskezelés – áttekintés (videofelvételt tartalmaz)
 description: Ez a témakör áttekintést nyújt a tervezési változáskezeléssel kapcsolatban, amely segítséget nyújt a termék verziószámozásának tervezéséhez és kezeléséhez, valamint a termékéletciklusok és mérnöki változásainak kezeléséhez.
 author: t-benebo
 ms.date: 08/26/2021
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 89a3eb584275e52910726ca5a9ed53f744f10b8d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: e9dc692061cec830f487e01a79075eda835bac23
+ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574689"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7937660"
 ---
 # <a name="engineering-change-management-overview"></a>Tervezési változáskezelés áttekintése
 
@@ -26,9 +26,9 @@ ms.locfileid: "7574689"
 
 ## <a name="feature-summary"></a>Funkció összegzése
 
-A mai gyártóknak szükségük van hatékony termék-adatmenedzsmentre, verziószabályozásra és tervezési változáskezelésre, hogy sikeresek legyenek a folyamatosan csökkenő termékéletciklusok, a megnövekedő minőségi és megbízhatósági követelmények, valamint a növekedő termékbiztonsági fókusz világában.
+A mai gyártóknak erős termékadat-kezelési, verziókövető és mérnöki változáskezelésre van szükségük ahhoz, hogy sikeresek legyenek a termékek életciklusát folyamatosan csökkenő követelmények, a nagyobb minőségi és megbízhatósági követelmények területén, és még inkább a termékbiztonságra fókuszálnak.
 
-A mérnöki változtatáskezelés struktúrát és fegyelmet hoz a termékadat-menedzsment folyamatba, és a termékek így szabályozott módon határozhatók meg, adhatók ki és felügyelhetők, amelyet munkafolyamatok támogatnak. A termékverziók és a mérnöki változáskezelés segítségével dokumentálhatja a mérnöki változásokat, értékelheti a határukat és alkalmazhatja őket a termék teljes életciklusa során.
+A műszaki változáskezelés a termékadat-kezelési folyamat szerkezetét és logikáját is jelenti, és a munkafolyamatok által támogatott, ellenőrzött módon teszi lehetővé a termékek definiálját, kiadott és módosított adatait. A termékverziók és a műszaki változáskezelés segítségével dokumentálhatja, kiértékelheti és alkalmazhatja a műszaki módosításokat a termék életciklusában.
 
 A tervezési változáskezelés segítséget nyújt a termék verziószámozásának tervezéséhez és kezeléséhez, valamint a termékéletciklusok és mérnöki változásainak kezeléséhez. Itt van egy lista a fő funkciókról:
 

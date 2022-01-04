@@ -2,7 +2,7 @@
 title: Készpénzpozíció
 description: Ez a témakör azt mutatja be, hogyan lehet a Pénzforgalmi előrejelzési funkció egy szervezet készpénzpozícióját egy adott időpontra megjósolni. Leírja a különböző időszakok előrejelzésének megjelenítésére használható beállításokat is.
 author: ShivamPandey-msft
-ms.date: 11/03/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: bf99ce5c9de00061cba2f49d00cc9dbc728753a8
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752880"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945789"
 ---
 # <a name="cash-position"></a>Készpénzpozíció
 
@@ -45,5 +45,17 @@ A **Készpénzpozíció** fül alsó részében talál részleteket a pozícióv
 - A **Bankfiók** rács a várható pénzbe- és kiáramlások hatását jeleníti meg a banki egyenlegen.
 
 A készpénzpozíció mentéséhez és szerkesztéséhez hozzon létre egy pillanatképet. További tájékoztatás a pillanatképekkel kapcsolatban itt találhat: [Pillnatképek – áttekintés](payment-snapshots.md).
+
+## <a name="details-of-the-cash-position-capability"></a>A készpénzpozíció képességének részletei 
+
+A Készpénz pozíció funkció a következő funkciókat tartalmazza. 
+
+- A készpénzpozíció funkció a rendszerben meglévő dokumentumokon alapuló cashflow-t, valamint a külső rendszerekből importált készpénzbeáramlási és kiáramlási sorokat mutatja.
+- Segítségével egyszerű a pénzforgalmi adatok külső rendszerekből Dynamics 365 Finance-be történő integrálása. A készpénzpozíció az adatimportálási-exportálási keretrendszert is használhatja. Ez a keretrendszer megkönnyíti az Excel OData-val történő integrációt. Több forrásból származó adatokat is kombinálhat egy átfogó készpénzpozíciós megoldás létrehozásához.
+- Intelligens készpénzpozíciót vezet be. A készpénzpozíció az ügyfél fizetési viselkedése alapján jön létre, hogy megjósolja, mikor számíthat a vállalat készpénz megérkezésére a számlájukra.
+- Vevői rendelések és számlák esetében a vevői fizetési előrejelzés AI funkciója határozza meg az előző vevői fizetési viselkedést, amikor egy rendelést vagy számlát fizetnek.
+- Szállítói rendelések és számlák esetében a szállítás és a számla közötti átlagos időt, valamint szállítónkénti számla kifizetését használjuk annak meghatározására, hogy mikor fizetnek ki egy szállítói rendelést vagy számlát, így pontosabbak lesznek a kiáramlások.
+
+Ez pontosabb képet ad a pénzforgalomról a kincstárnok múltbeli fizetési viselkedése alapján. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

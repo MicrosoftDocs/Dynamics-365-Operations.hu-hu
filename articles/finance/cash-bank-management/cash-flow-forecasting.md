@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 5ad3b2444f194f8324a309df32612a5377851995
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 7d462992816a5a2dee73979ed4cb1521ca4ce4f7
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752904"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945754"
 ---
 # <a name="cash-flow-forecasting"></a>Pénzforgalmi előrejelzés
 
@@ -37,6 +37,7 @@ Miután végrehajtotta ezeket a feladatokat, kiszámíthatja és elemezheti a k�
 A pénzforgalmi jelentések integrálhatók a főkönyvvel, a kötelezettségekkel, a kintlevőségekkel, a költségvetéssel és a készletkezeléssel. Az előrejelzési folyamat a rendszerbe bevitt tranzakciós információkat használja, és a számítási folyamat előrejelzi az egyes tranzakciók várható pénzforgalmi hatását. A következő tranzakciótípusokat veszi figyelembe a rendszer a készpénzforgalom kiszámítása során:
 
 - **Értékesítési rendelések** – A még nem számlázott értékesítési rendelések, valamint a fizikai vagy pénzügyi teljesítésű értékesítések.
+- **Szabadszöveges számlák** – Olyan szabadszöveges számlák, amelyek még nincsenek közzéírva, és amelyek pénzügyi értékesítést eredményeznek. 
 - **Beszerzési rendelések** – A még nem számlázott beszerzési rendelések, valamint a fizikai vagy pénzügyi teljesítésű beszerzések.
 - **Kinnlevőségek** – Nyitott vevői tranzakciók (eddig kifizetetlen számlák).
 - **Kötelezettségek** – Nyitott szállítói tranzakciók (eddig kifizetetlen számlák).
@@ -44,7 +45,9 @@ A pénzforgalmi jelentések integrálhatók a főkönyvvel, a kötelezettségekk
 - **Költségvetési tételjegyzék-bejegyzések** – Olyan költségvetési tételjegyzék-bejegyzések, amelyek ki lettek választva a pénzforgalmi előrejelzésekhez.
 - **Igény-előrejelzések** – A készlet-előrejelzési modell azon sorai, amelyek ki lettek választva a készpénzforgalmi előrejelzésekhez.
 - **Ellátási előrejelzések** – A készlet-előrejelzési modell azon sorai, amelyek ki lettek választva a készpénzforgalmi előrejelzésekhez.
+- **Külső adatforrás** – A pénzforgalmi előrejelzésekbe táblázatsablonok használatával bevitt vagy importált külső adatok.
 - **Projekt-előrejelzések** – Projektvezetés és könyvelés előrejelzések az előrejelzési modell használatával.
+- **Pénzforgalmi értékesítési adóhatósági kifizetések** – Előrejelzett áfahatósági fizetési összegek és időzítés, amelyek pénzügyi kifizetéseket eredményeznek. Engedélyezze a pénzforgalmi áfahatósági kifizetések funkciót.
 
 ## <a name="configuration"></a>Konfiguráció
 
@@ -94,12 +97,12 @@ A költségvetési tételjegyzék-rekordok személyre szabás révén, külön-k
 A készletkínálati és -keresleti előrejelzések szerepeltethetők a pénzforgalmi előrejelzésekben. A **Pénzforgalmi előrejelzés beállítása** oldalon, a **Készletgazdálkodás** lapon, válassza ki azt az előrejelzési modellt, amelyet szerepeltetni kíván a pénzforgalmi előrejelzésben. A pénzforgalmi előrejelzésbe való bekerülés felülírható az egyes kínálati és keresleti előrejelzési soroknál.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>A Pénzforgalmi előrejelzés dimenzióinak beállítása
-A Pénzforgalmi előrejelzés beállítási lapján új lap használatával lehet szabályozni, hogy mely pénzügyi dimenziók használhatók a pénzforgalmi **·** előrejelzés **munkaterületén** szűrésre. Ez a lap csak akkor jelenik meg, ha engedélyezve van a Pénzügyi információk pénzforgalmi előrejelzési funkció. 
+A Pénzforgalmi előrejelzés beállítási oldalának új lapja   segítségével szabályozhatja, hogy mely pénzügyi dimenziókat használja a rendszer szűrésre a pénzforgalmi előrejelzés  munkaterületen. Ez a lap csak akkor jelenik meg, ha a Pénzforgalmi előrejelzések funkció engedélyezve van.
 
 A **Dimenziók** fülön válassza ki a szűréshez használni kívánt dimenziók listáját, és a nyilakkal helyezze át őket a jobb oldali oszlopba. A pénzforgalmi előrejelzések adatainak szűréséhez csak két dimenzió választható ki. 
 
 ### <a name="setting-up-external-source"></a>Külső forrás beállítása
-A külső adatok bevihetők vagy importálhatók a pénzforgalmi előrejelzésekbe. A külső adatok bevitele vagy importálása előtt be kell állítani a külső adatforrásokat. A Külső **forrás lapon állítsa be a külső pénzforgalmi** kategóriákat. A kategória lehet kimenő **vagy** **·** bejövő. **Feladási** típusként a likviditást kell kiválasztani. A Jogi személyek beállításai rácsban válassza ki a jogi személyeket és a megfelelő fő számlákat, amelyekre a külső pénzforgalmi **·** kategóriák vonatkoznak.
+A külső adatok bevihetők vagy importálhatók a pénzforgalmi előrejelzésekbe. A külső adatok bevitele vagy importálása előtt be kell állítani a külső adatforrásokat. A Külső **forrás lapon állítsa be a külső pénzforgalmi** kategóriákat. A kategória lehet kimenő **vagy** **bejövő**. **Feladási** típusként a likviditást kell kiválasztani. A Jogi személyek beállításai rácsban válassza ki a jogi személyeket és a megfelelő fő számlákat, amelyekre a külső pénzforgalmi **kategóriák** vonatkoznak.
 
 ### <a name="project-management-and-accounting"></a>Projektvezetés és könyvelés
 
@@ -108,6 +111,10 @@ A 10.0.17-es verzióban egy új funkció lehetővé teszi az integrációt a Pro
 Miután a Pénzforgalmi projektelőrejelzé funkció be van kapcsolva, a pénzforgalmi előrejelzés megtekinthető minden projekthez a **Minden projekt** oldalon. A Művelet panelen a **Tervezés** lapon, az **Előrejelzés** csoportban, kattintson a **Pénzforgalmi előrejelzés** elemre. A **Pénzforgalmi áttekintés** munkaterületeken (lásd a [Jelentés](#reporting) szakaszt később ebben a témakörben), a Projekt előrejelzés tranzakciótípus mutatja a beáramlások (projekt előrejelzett bevétele) és a kiáramlásokat (projekt előrejelzett költségei). Az összegek csak akkor szerepeltethetők, ha a **Projektfázis** mező a **Pénzforgalmi áttekintés** munkaterületeken **Feldolgozás alatt** értékre van állítva.
 
 A projekttranzakciók továbbra is többféleképpen szerepelnek a pénzforgalmi előrejelzésben, függetlenül attól, hogy be van-e kapcsolva a **Pénzforgalmi projektelőrejelzés** funkció. A feladott projektszámlákat az előrejelzés tartalmazza a nyitott vevői tranzakciók részeként. A projekt által kezdeményezett értékesítési rendelések és beszerzési rendelések az előrejelzésben nyitott rendelésként szerepelnek a rendszerbe való beírásuk után. Projektelőrejelzéseket át is lehet vinni egy főkönyvi költségvetésmodellbe. Ez a főkönyvi költségvetési modell a költségvetési nyilvántartási bejegyzések részeként szerepel a pénzforgalmi előrejelzésben. Ha bekapcsolta a **Pénzforgalmi projekt előrejelzés** funkciót, ne vigye át a projekt-előrejelzéseket főkönyvi költségvetési modellbe, mert ez a művelet a projekt-előrejelzések kétszeri számítását fogja okozni.
+
+### <a name="sales-tax-authority-payments"></a>Adóhatósági kifizetések 
+
+A pénzforgalmi értékesítési adóhatósági kifizetések funkció előrejelzi az áfafizetések pénzforgalmi hatását. Kifizetetlen forgalmiadó-tranzakciókat, adóelszámolási időszakokat és az adóperiódum fizetési futamidejét használja a pénzforgalmi kifizetések dátumának és összegének előrejelzésére. 
 
 ### <a name="calculation"></a>Számítás
 

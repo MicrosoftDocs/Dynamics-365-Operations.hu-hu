@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 25507a482b2db7c01f56679bf3e8454249de3a6b9965f9c359a2ebe2cc8445ce
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: ec5e0ac8dd097e5ebf016683fc5c17df7ecb2305
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6711687"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920398"
 ---
 # <a name="quantity-that-youre-trying-to-update-exceeds-the-receiveddelivered-quantity"></a>A frissíteni próbált mennyiség meghaladja a kapott/leszállított mennyiséget
 
@@ -62,8 +62,8 @@ Az alábbi módon korrigálja a rakománysor mennyiségét.
 
 1. Lépjen a **Raktárkezelés \> Rakományok \> Minden rakomány** elemhez.
 1. Válassza ki azt a rakományt, amelyhez nem hozható létre a szállítólevél.
-1. A Művelet panel  **Szállítás és fogadás** lapján lévő  **Sztornírozás** csoportban válassza a  **Szállítmány visszaigazolásának sztornírozása** lehetőséget.
-1. A  **Rakománysorok** lapon válassza ki annak a cikknek rakománysorát, amely a hibát okozza.
+1. A Művelet ablakTábla Szállítás és fogadás lap Sztornírozási csoportjában válassza a **Szállítmány** **·** **visszaigazolásának sztornírozására lehetőséget**.
+1. A Rakománysorok lapon válassza ki a problémát okozó cikk **rakománysorát**.
 1. A kiválasztott mennyiség beállításához válassza a **Kitárolt mennyiség csökkentése** lehetőséget.
 1. Állítsa be úgy a **Rakománysor csökkentése** mezőt, hogy tükrözze a terhelési sor módosításait.
 
@@ -75,5 +75,5 @@ A regisztráció kiválasztásának sztornírozásához használja a következő
 
 1. Lépjen a **Kinnlevőségek \> Rendelések \> Minden rendelés** részre.
 1. Válassza ki azt az értékesítési rendelést, amelynél nem tud szállítólevelet feladni a rakományhoz.
-1. Az  **Értékesítési rendelés sorai** lapon válassza ki az értékesítési rendelési azon sorát, amelyhez a regisztráció kiválasztása történt.
+1. Az Értékesítésirendelés-sorok lapon válassza ki azt az értékesítésirendelés-sort, amelyről a **kiválasztó** regisztrációját végezték.
 1. Válassza a **Sor frissítése \> Kitárolás** lehetőséget a kiválasztás visszavonásához.

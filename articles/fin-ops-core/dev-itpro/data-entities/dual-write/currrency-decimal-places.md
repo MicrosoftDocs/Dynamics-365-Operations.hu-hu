@@ -2,19 +2,19 @@
 title: Pénznem-adattípus áttelepítése kettős írás esetén
 description: Ez a témakör azt mutatja be, hogyan lehet módosítani azoknak a tizedesjegyeknek a számát, amelyeket a kettős írás támogat a pénznemhez.
 author: RamaKrishnamoorthy
-ms.date: 04/06/2020
+ms.date: 12/08/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: eaf0cd931e763f31faa334d5353ae6950ed7ee4f
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: bce58631ecd54bb90993bd552d529d3b379de1b1
+ms.sourcegitcommit: 6762a674a552353d9f53587923c9acba9b43cb56
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782807"
+ms.lasthandoff: 12/13/2021
+ms.locfileid: "7917730"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Pénznem-adattípus áttelepítése kettős írás esetén
 
@@ -83,9 +83,20 @@ Ha azt szeretné, hogy az adott pénznemre vonatkozó pontossági érték eltér
 
 ![Adott területi beállításhoz tartozó pénznemek beállításai.](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>táblák: Pénznem oszlop
+### <a name="tables-currency-column"></a>Táblák: Pénznem oszlop
 
 A megadott pénznem oszlopokhoz konfigurálható tizedesjegyek száma legfeljebb négy lehet.
 
+### <a name="default-currency-decimal-precision"></a>Pénznem alapértelmezett tizedes pontossága
+Az alapértelmezett pénznem tizedes pontosságának áttelepítés és nem áttelepítési helyzetek esetén várható viselkedését lásd az alábbi táblázatban. 
+
+| Létrehozás dátuma  | Pénznem tizedesmezője    | Létező szervezet (a Pénznem mező nincs áttelepítve) | Létező szervezet (Pénznemmező áttelepítve) | Az új szervezet által létrehozott felépítési 9.2.21062.00134 |
+|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
+| Pénznemmező létrehozva a pénznemkódok 9.2.21111.00146  |     |  |       |
+|    | A felhasználói felületen látható maximális pontosság   | 4 számjegy    | 10 számjegy    | N.a.    |
+| | Maximális pontosság látható az adatbázis- és adatbázis-lekérdezés eredményének felhasználói felületén         | 4 számjegy   | 10 számjegy   | N.a.    |
+| A pénznemmező létrehozása a létrehozási idő 9.2.21111.00146 |    |  |     |   |
+|   | A felhasználói felületen látható maximális tizedes pontosság     | 4 számjegy   | 10 számjegy   | 10 számjegy     |
+|          | Az adatbázis- és adatbázis-lekérdezés eredményének felhasználói felületén látható maximális tizedes pontosság | 10 számjegy. Azonban csak 4 lényeges a 4 tizedesjegyet túllépő nullák esetén. Ez a szervezet szükség esetén egyszerűbb és gyorsabb áttelepítését teszi lehetővé. | 10 számjegy      | 10 számjegy     |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

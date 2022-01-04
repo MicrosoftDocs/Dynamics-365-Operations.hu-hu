@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3abe82bb888b7501b00af44b48bfb40fbe8e2ee3
-ms.sourcegitcommit: 6ef4906621fbb4e3afaf2b0d6697536288365bb1
-ms.translationtype: HT
+ms.openlocfilehash: 4f53171361b655ab4ae05894d098203df0af8d60
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7868637"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920773"
 ---
 # <a name="demand-forecasting-setup"></a>Igény-előrejelzési beállítások
 
@@ -196,9 +196,6 @@ Ezeknek a paramétereknek az értékét az Alaptervezés beállítása igény-el
 
 Az ellátásilánc-kezelés az igény-előrejelzéseket az Azure gépi oktatási szolgáltatás használatával számítja ki, amelyet saját Azure-előfizetésére kell beállítania és futtatnia. Ez a szakasz azt írja le, hogyan lehet beállítani az Azure-t és az Ellátásilánc-kezelési környezetet az Azure szolgáltatásban, majd csatlakoztatni azt az ellátásilánc-kezelési környezethez.
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: Preview until 10.0.23 GA -->
-
 ### <a name="enable-the-azure-machine-learning-service-in-feature-management"></a>Az Azure-számítógép oktatási szolgáltatás engedélyezése a funkciókezelésben
 
 Az Azure-gépi oktatási szolgáltatás igény-előrejelzésre való használata előtt be kell kapcsolnia az Ellátásilánc-kezelés egy funkcióját, hogy engedélyezze az integrációt. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
@@ -226,8 +223,8 @@ Ez a szakasz bemutatja, hogyan lehet beállítani a gépi oktatási munkaterüle
     - src/run.py
     - src/REntryScript/forecast.r
 
-1. Nyisson meg egy PowerShell-ablakot, és futtassa az quick_setup.ps1 parancsfájlt, amely az **előző** lépésben letöltött. Kövesse a képernyőn megjelenő utasításokat. A parancsfájl be fogja állítani a szükséges munkaterületet, tárolót, alapértelmezett adattárat és erőforrásokat. Ennek ellenére létre kell hoznia a szükséges csővezetékeket az eljárás további lépéseit követve. (A csővezetékek segítségével el lehet kezdeni az ellátásilánc-kezelésből származó előrejelzési parancsfájlokat.)
-1. Az Azure Machine Learning Studio szolgáltatásban töltse fel az 1. lépésben letöltött **sampleInput.csv fájlt a** *demplan-azureml nevű* tárolóba. (A quick_setup.ps1 parancsprogram hozta létre ezt a tárolót.) Ez a fájl szükséges a csővezeték közzétételéhez és a teszt-előrejelzés generálásához. Az utasításokat [lásd: Blokk blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob) feltöltése.
+1. Nyisson meg egy PowerShell-ablakot, és futtassa az előző lépésben letöltött **quick_setup.ps1** parancsfájlt. Kövesse a képernyőn megjelenő utasításokat. A parancsfájl be fogja állítani a szükséges munkaterületet, tárolót, alapértelmezett adattárat és erőforrásokat. Ennek ellenére létre kell hoznia a szükséges csővezetékeket az eljárás további lépéseit követve. (A csővezetékek segítségével el lehet kezdeni az ellátásilánc-kezelésből származó előrejelzési parancsfájlokat.)
+1. Az Azure Machine Learning Studio szolgáltatásban töltse fel az 1. lépésben letöltött **sampleInput.csv fájlt a** *demplan-azureml nevű* tárolóba. (A quick_setup.ps1 parancsfájl létrehozta ezt a tárolót.) Ez a fájl szükséges a csővezeték közzétételéhez és a teszt-előrejelzés generálásához. Az utasításokat [lásd: Blokk blob](/azure/storage/blobs/storage-quickstart-blobs-portal#upload-a-block-blob) feltöltése.
 1. Az Azure Machine Learning Studio szolgáltatásban válassza **ki a Előfizetések** lehetőséget a fájlban.
 1. A következő hely a Fájlok struktúrában: **·** **Felhasználók/ \[aktuális felhasználó \] /src.**
 1. Töltse fel az 1. lépésben letöltött fennmaradó négy fájlt az előző lépésben talált helyre.
@@ -281,7 +278,7 @@ A következő eljárás szerint állíthat be egy számítási erőforrást az A
 1. A Fürtök számítása lapon az Új gombra választva megnyit egy varázslót, amely segít új számítási **fürt** **létrehozásában**. Kövesse a képernyőn megjelenő utasításokat. A számítási fürt az igény-előrejelzések előállítására lesz használva. A beállítások befolyásolják a teljesítményt és a futtatás maximális párhuzamosítási szintjét. A következő mezők beállítása, de az összes többi mező alapértelmezett beállításainak használata:
 
     - **Név** – adja meg az *e2ecpuclustert.*
-    - **Virtuális gép mérete – a beállítást annak megfelelően kell módosítani, hogy milyen adatmennyiségre számít** az igény-előrejelzés bemeneteként. A csomópontok számának nem szabad 11-et túllépni, mert egy csomópont szükséges az igény-előrejelzés előállításának az aktiválásához, és az előrejelzés generálása esetén használható csomópontok maximális száma 10. (A csomópontok számát a <a0/parameters.py fájljában is be fogja állítani. [5. lépés: Csővezetékek](#create-pipelines) szakasz létrehozása.) Minden csomóponton több olyan dolgozói folyamat is lesz, amelyek párhuzamosan futtatnak előrejelzési parancsfájlokat. A feladatban található dolgozói folyamatok száma a csomópontok csomópontok számának megfelelő × *·* *lesz*. Ha például a számítási fürt szabványos *\_ D4 (8 processzormag) típusú, maximum 11 csomópont, és ha az* parameters.py `nodes_count`*fájlban 10-re van állítva, akkor a párhuzamosság tényleges* szintje 80.
+    - **Virtuális gép mérete – a beállítást annak megfelelően kell módosítani, hogy milyen adatmennyiségre számít** az igény-előrejelzés bemeneteként. A csomópontok számának nem szabad 11-et túllépni, mert egy csomópont szükséges az igény-előrejelzés előállításának az aktiválásához, és az előrejelzés generálása esetén használható csomópontok maximális száma 10. (A csomópontok számát a <a0/parameters.py fájljában is be fogja állítani. [5. lépés: Csővezetékek](#create-pipelines) szakasz létrehozása.) Minden csomóponton több olyan dolgozói folyamat is lesz, amelyek párhuzamosan futtatnak előrejelzési parancsfájlokat. A feladatban található dolgozói folyamatok száma a csomópontok csomópontok számának megfelelő × *·* *lesz*. Ha például a számítási fürt szabványos *\_ D4 (8 processzormag) típusú, maximum 11 csomópont, és ha az*`nodes_count`*parameters.py-fájlban 10-re van állítva, akkor a párhuzamosság tényleges* szintje 80.
 
 ##### <a name="step-5-create-pipelines"></a><a name="create-pipelines"></a> 5. lépés: Csővezetékek létrehozása
 

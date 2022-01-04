@@ -15,17 +15,17 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ad96a3dde93a48694aee418ecfbbd33dc9830d6
-ms.sourcegitcommit: 6bf9e18989e6d77497a9dda1c362f324b3c2fbf2
+ms.openlocfilehash: 760b97a895758073c8ffd1209be4a5f7df0f13a8
+ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7713885"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7919450"
 ---
 # <a name="configure-a-product-to-be-purchased-for-free"></a>Ingyenes termékvásárlás konfigurálása
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
+
 
 Ez a témakör azt ismerteti, hogyan kell konfigurálni egy terméket úgy, hogy ingyenes termékként megvásárolható legyen a Microsoft Dynamics 365 Commerce alkalmazásban.
 

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: 130487c41d8021692968141eca1a16d298a809e1
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
-ms.translationtype: HT
+ms.openlocfilehash: cb600c55cb2d40129d1b29ab989bc8f7cf3f4686
+ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913651"
+ms.lasthandoff: 12/17/2021
+ms.locfileid: "7927454"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Az ER-formátum paramétereinek beállítása jogi személyenként
 
@@ -224,6 +224,16 @@ Ezzel az exportálás-importálás módszerrel olyan ER formátumhoz kapcsolód�
 Ha egy ER-formátum alkalmazásspecifikus paramétereit konfigurálja, majd egy későbbi verzióját importálja ugyanannak a formátumnak az aktuális Finance példányá, a meglévő alkalmazásspecifikus paramétereket nem alkalmazza a program az importált verzióra, hacsak nem az **Alkalmazásspecifikus paraméterek használata az elektronikus jelentéskészítési formátumok előző verzióiból** funkciót használja. További tudnivalókat a [Meglévő paraméterek újrafelhasználása](#reuse-existing-parameters) részben olvashat, a témakör későbbi részében.
 
 Amikor importálásra kiválaszt egy fájlt, akkor az adott fájl alkalmazásspecifikus paramétereinek szerkezetét összeveti az importálásra kijelölt ER formátum kapcsolódó, **Keresés** típusú adatforrásainak szerkezetével. Az importálás alapértelmezetten csak akkor történik meg, amikor az alkalmazásspecifikus paraméterek szerkezete megfelel a kapcsolódó adatforrás struktúrájának az importáláshoz kiválasztott ER-formátumban. Ha a szerkezetek nem egyeznek, akkor egy figyelmeztető üzenet tájékoztatja, hogy az importálás nem hajtható végre. Ha kényszeríti az importálást, akkor a program a kijelölt ER formátumra vonatkozó meglévő alkalmazásfüggő paramétereket kitörli, és a kezdetektől fogva újra be kell állítani őket.
+
+
+A Dynamics 365 Finance 10.0.24-as verziójától kezdve módosítani lehet az alapértelmezett viselkedést, és így el lehet kerülni a figyelmeztető üzenetet az **ER-alkalmazásspecifikus paraméterek összehangolása az importálás során** funkció engedélyezésével a **Funkciókezelés** munkaterületen. Ha ez a funkció engedélyezve van, amikor az adott fájl alkalmazásspecifikus paramétereinek szerkezete eltér a cél ER-formátum kapcsolódó adatforrásainak struktúrájától, amely ki van választva importálásra, az importálás a következő esetekben lesz sikeres:
+
+- A cél ER-formátum szerkezete úgy módosult, hogy új feltételoszlopokat adott hozzá a meglévő **Keresés** típusú adatforrásokhoz. Az importálás befejeztével frissülnek az alkalmazásspecifikus paraméterek. Az alkalmazásspecifikus paraméterek minden importált rekordjánál az értékek minden hozzáadott feltételoszlopban inicializálva lesznek az adott oszlop [adattípusának](er-formula-supported-data-types-primitive.md) alapértelmezett értékével.
+- A cél ER-formátum szerkezete úgy módosult, hogy új feltételoszlopokat távolított el a meglévő **Keresés** típusú adatforrásokból. Az importálás befejeztével frissülnek az alkalmazásspecifikus paraméterek. Az alkalmazásspecifikus paraméterek minden importált rekordjában az összes eltávolított feltételoszlop értékei törölve lesznek.
+- A cél ER-formátum szerkezete úgy módosult, hogy **Keresés** típusú adatforrások lettek hozzáadva. Az importálás befejeztével a hozzáadott keresések hozzá lesznek fűzve az alkalmazásspecifikus paraméterekhez.
+- A cél ER-formátum szerkezete úgy módosult, hogy el lettek távolítva **Keresés** típusú meglévő adatforrások. Az importálás befejeztével a rendszer törli az importált alkalmazásspecifikus paraméterekből azokat a műtermékeket, amelyek a cél ER-formátumból eltávolított **Keresés** típusú adatforrásához kapcsolódnak.
+
+Amikor az importálás befejeződik, az előbb leírt módosításokon túl az importált alkalmazásspecifikus paraméterek állapota **Folyamatban** értékre lesz módosítva. Figyelmeztető üzenet tájékoztatja, hogy az automatikusan módosított alkalmazásspecifikus paramétereket manuálisan kell szerkeszteni.
 
 ### <a name="reuse-existing-parameters"></a>Meglévő paraméterek újrafelhasználása
 

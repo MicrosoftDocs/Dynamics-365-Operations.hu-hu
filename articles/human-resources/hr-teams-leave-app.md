@@ -2,7 +2,7 @@
 title: Szabadság- és távollétkérelmek kezelése a Teams alkalmazásban
 description: Ez a témakör azt mutatja be, hogyan lehet szabadságot kérelmezni a Dynamics 365 Human Resources alkalmazásban a Microsoft Teams rendszerben.
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 10538c96a7637a95c60beef40a02fdb5432959ec
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: d004e33d01dbd171626d7e23f93df081bc0210a9
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771531"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924747"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Szabadságkérelmek kezelése a Teamsben
 
@@ -32,9 +32,12 @@ A Dynamics 365 Human Resources alkalmazás a Microsoft Teams rendszerben lehető
 
 A Dynamics 365 Human Resources alkalmazás a Teams áruházban található.
 
-1. A Microsoft Teams ben lépjen az alkalmazások listájához.
+1. A Microsoft Teamsben lépjen az alkalmazások listájához.
  
 2. Keresse meg a Dynamics 365 Human Resources alkalmazást, majd válassza ki a **Human Resources** címet.
+
+> [!NOTE]
+> 2021. december 20-án kezdődően a Microsoft bérlőben tárolt Human Resources App 1.1.4 szolgáltatása elérhető lesz. A legfrissebb verziójú bővítmény (1.1.5 verzió) telepíthető. A további tudnivalókat lásd [a Szabadságkérések kezelése a Teamsben](hr-admin-teams-leave-app.md#update-app).
 
 3. Válassza a **Hozzáadás** gombot az alkalmazás telepítéséhez.
 
@@ -165,11 +168,11 @@ Ha nem sikerül bejelentkeznie a Dynamics 365 Human Resources Teams alkalmazásb
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Nem lehet bejelentkezni a Human Resources alkalmazásba a Teamsben.
 
-Ha nem tud bejelentkezni az alkalmazásba, akkor előfordulhat, hogy a Microsoft Teams be való bejelentkezéshez használt fiók nincs alkalmazotti rekordhoz társítva a Dynamics 365 Human Resources alkalmazásban. Forduljon a rendszergazdához, és ellenőrizze, hogy az alkalmazotti rekord helyesen van-e társítva.
+Ha nem tud bejelentkezni az alkalmazásba, akkor előfordulhat, hogy a Microsoft Teamsbe való bejelentkezéshez használt fiók nincs alkalmazotti rekordhoz társítva a Dynamics 365 Human Resources alkalmazásban. Forduljon a rendszergazdához, és ellenőrizze, hogy az alkalmazotti rekord helyesen van-e társítva.
 
 ### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>A környezet nem található Dynamics 365 Human Resources a beállítások között.
 
-Ha nem tudja kiválasztani a megfelelő Dynamics 365-környezetet, lehet, hogy a felhasználói rekord szinkronizálása nem megfelelő. Forduljon a rendszergazdához, és hozza létre újra a felhasználói rekordot, és társítsa azt a felhasználói hitelesítő adatokkal. Ezután próbáljon meg néhány perc múlva bejelentkezni a Human Resources alkalmazásba a Microsoft Teams ben.
+Ha nem tudja kiválasztani a megfelelő Dynamics 365-környezetet, lehet, hogy a felhasználói rekord szinkronizálása nem megfelelő. Forduljon a rendszergazdához, és hozza létre újra a felhasználói rekordot, és társítsa azt a felhasználói hitelesítő adatokkal. Ezután próbáljon meg néhány perc múlva bejelentkezni a Human Resources alkalmazásba a Microsoft Teamsben.
 
 ### <a name="translations-dont-display-correctly"></a>A fordítások nem megfelelően jelennek meg
 
@@ -189,7 +192,7 @@ Ha továbbra is fordítási problémákat tapasztal, tudassa velünk. További i
 
 Ha hibaüzenetet kap, amikor megpróbálja jóváhagyni a szabadságkérelmeket a Teams alkalmazásban, próbálja végrehajtani a következő hibaelhárítási lépéseket:
 
-1. Ellenőrizze, hogy a Microsoft Teams be való bejelentkezéshez használt fiók megegyezik-e a Dynamics 365 Human Resources eléréséhez használt fiókkal.
+1. Ellenőrizze, hogy a Microsoft Teamsbe való bejelentkezéshez használt fiók megegyezik-e a Dynamics 365 Human Resources eléréséhez használt fiókkal.
 
 2. Ellenőrizze, hogy Ön-e a kérelem érvényes jóváhagyója a szabadság jóváhagyására vonatkozó munkafolyamaton belüli beállítások ellenőrzésével. A szabadságkérelem munkafolyamatairól további tudnivalókért lásd: [Szabadságkérelmezési munkafolyamat létrehozása](hr-leave-and-absence-workflow.md).
 
@@ -199,7 +202,7 @@ Ha hibaüzenetet kap, amikor megpróbálja jóváhagyni a szabadságkérelmeket 
 
 2. Győződjön meg róla, hogy a felhasználók ugyanolyan hitelesítő adatokkal vannak bejelentkezve a **Csevegések** fülön, mint a szabadságkérések jóváhagyásához. A „kijelentkezés” és a „bejelentkezés” üzenetekkel jelentkezzen be a megfelelő hitelesítő adatokkal.
 
-3. Ha a probléma továbbra is fennáll, ellenőrizze az Üzleti események rendszer kötegelt feladatának **·** állapotát rendszergazdaként. Ha Várakozás vagy Végrehajtás szakaszban **·** **·** van, ellenőrizze újra pár perc múlva. Ha az állapot változatlan marad, akkor jelentkezzen be egy támogatási jegyre, hogy a mi csapatunk segíthet kijavítani a problémát.
+3. Ha a probléma továbbra is fennáll, ellenőrizze az Üzleti események rendszer kötegelt feladatának **állapotát** rendszergazdaként. Ha Várakozás vagy Végrehajtás **szakaszban** **van**, ellenőrizze újra pár perc múlva. Ha az állapot változatlan marad, akkor jelentkezzen be egy támogatási jegyre, hogy a mi csapatunk segíthet kijavítani a problémát.
 
 ## <a name="known-accessibility-issues"></a>Ismert kisegítő lehetőségekkel kapcsolatos problémák
 
@@ -217,7 +220,7 @@ A Teams Human Resources alkalmazásában a következőak adálymentességgel kap
 
 ### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
 
-A felhasználói szövegbevitel elemzése után a program elemzi a bejövő szövegeket, hogy megértsük a Dynamics 365 Human Resources Microsoft Teams mögöttes lekérdezést/célját. A felhasználó által megadott adatok például a "Search account Contoso" a Microsoft language Understanding Intelligens szolgáltatás (LANGUAGE Understanding Intelligens szolgáltatás) nevű szolgáltatásának, a Language Understanding Intelligens szolgáltatásnak (STB) az egyikéhez vannak irányítva. A LUIS-ról  [itt](https://www.luis.ai/) olvashat többet. A LUIS szolgáltatás egyértelműsíti vagy megérti a felhasználói bevitel szándékát (ebben az esetben a szándék az, hogy információt találjon) és a cél entitást (ebben az esetben a szándékolt entitás egy Contoso nevű számla). Ez az információ ezután át lesz stb. a  [Microsoft Azure-keretrendszere számára, amely az adatokkal kommunikál a felhasználói lekérdezésből, és beolvassa](https://azure.microsoft.com/services/bot-service/) a kívánt Dynamics 365 Human Resources adatokat. 
+A felhasználói szövegbevitel elemzése után a program elemzi a bejövő szövegeket, hogy megértsük a Dynamics 365 Human Resources Microsoft Teams mögöttes lekérdezést/célját. A felhasználó bevitele, például „Contoso partner keresése” továbbítódik a Microsoft Cognitive Service szolgáltatásához, amelynek neve Nyelvértő intelligens szolgáltatás (Language Understanding Intelligent Service – LUIS). A LUIS-ról  [itt](https://www.luis.ai/) olvashat többet. A LUIS szolgáltatás egyértelműsíti vagy megérti a felhasználói bevitel szándékát (ebben az esetben a szándék az, hogy információt találjon) és a cél entitást (ebben az esetben a szándékolt entitás egy Contoso nevű számla). Ezeket az adatokat a rendszer majd továbbítja a Microsoft  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/) keretrendszerének, amely a Dynamics 365 Human Resources adataival végez műveleteket, és lekéri a kívánt adatokat a felhasználói lekérdezéshez. 
 
 A robot telepítésével és a használatához való hozzáférés engedélyezésével Ön elfogadja, hogy a LUIS szolgáltatás és az Azure robot keretrendszer feldolgozza a bemenet mögötti szándékot, ami egy továbbfejlesztett, társalgásszerű felhasználói élményt eredményez. A LUIS szolgáltatás és az Azure robot keretrendszer különböző szintű megfeleléssel rendelkezhet a Dynamics 365 Human Resources alkalmazáshoz képest. Habár az ORI szolgáltatás csak a felhasználói lekérdezésekhez van hozzáférése, és nincs a felhasználó adataihoz vagy fiókjához való csatlakozásra tervezve, az adatbázis egy felhasználója tudott egy vevői adatokat, személyes adatokat vagy más adatokat tartalmazó lekérdezést, és ezeket a lekérdezési tartalmat el lehet küldeni aKISZOLGÁLÓ szolgáltatásnak és az Dynamics 365 Human Resources Dynamics 365 Human Resources Azure-keretrendszernek. 
 

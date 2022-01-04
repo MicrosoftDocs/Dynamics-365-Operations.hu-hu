@@ -2,7 +2,7 @@
 title: Készletláthatóság konfigurálása
 description: Ez a témakör a Készletláthatóság konfigurálását ismerteti.
 author: yufeihuang
-ms.date: 08/02/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 53cc457c788d24adfe3c523719ccffc6d445fb61
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678471"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920298"
 ---
 # <a name="configure-inventory-visibility"></a>Készletláthatóság konfigurálása
 
@@ -61,7 +61,7 @@ A konfiguráció befejezése után mindenképpen válassza ki a **Konfiguráció
 Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen adatforrásnév például a `fno` (ami a "Dynamics 365 Finance and Operations alkalmazások" rövidítése) és a `pos` (ami a "point of sale" rövidítése). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
 
 > [!NOTE]
-> A `fno` adatforrás a Dynamics 365 Supply Chain Management számára van fenntartva.
+> Az `fno` adatforrás le van foglalva az Ellátásilánc-kezeléshez. Ha a készlet láthatósági bővítménye integrálva van egy ellátásilánc-kezelési környezettel, javasoljuk, hogy ne törölje az adatforráshoz kapcsolódó `fno` konfigurációkat.
 
 Adatforrás hozzáadásához kövesse az alábbi lépéseket.
 
@@ -273,17 +273,17 @@ A `MyCustomAvailableforReservation` kimeneti értéke az egyéni mérések szám
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Partíciókonfiguráció
 
-A partíció konfigurációja az alapméretek kombinációjából áll. Meghatározza az adatelosztási mintát. Az azonos partícióban végzett adatműveletek nagy teljesítményt támogatnak, és nem kerülnek túl sokba. Ezért a jó partícióminták jelentős előnyökkel járhatnak.
-
-A Készletláthatóság a következő alapértelmezett partíciókonfigurációt biztosítja.
+Jelenleg a partíció-konfiguráció két alapdimenzióból (és ) áll, amelyek az adatok `SiteId``LocationId` elosztását jelzik. Az ugyanazon a partíción található műveletek magasabb teljesítményt és alacsonyabb költségű műveleteket is tudnak szállítani. A következő táblázat bemutatja a készlet láthatósági bővítménye által biztosít alapértelmezett partíció-konfigurációt.
 
 | Alapdimenzió | Hierarchia |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-> [!NOTE]
-> Az alapértelmezett partíciókonfiguráció csak referenciaként szolgál. Ezt nem kell a Készletláthatóságban definiálnia. Jelenleg a partíciókonfiguráció frissítése nem támogatott.
+A megoldás alapértelmezés szerint tartalmazza ezt a partíciókonfigurációt. Nem *kell tehát saját magának meghatároznia*.
+
+> [!IMPORTANT]
+> Ne szabja testre az alapértelmezett partíciókonfigurációt. Ha törli vagy módosítja, akkor valószínűleg váratlan hibát fog okozhatni.
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Termékindex-hierarchia konfigurációja
 

@@ -2,7 +2,7 @@
 title: Készletláthatóság nyilvános API-jai
 description: Ez a témakör a Készletláthatóság által biztosított nyilvános API-kat ismerteti.
 author: yufeihuang
-ms.date: 09/30/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 1899969ddbbccafde3f7bb06a897ea7c0f2d656b
-ms.sourcegitcommit: 1e5a46271bf7fae2f958d2b1b666a8d2583e04a8
+ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/25/2021
-ms.locfileid: "7678787"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920100"
 ---
 # <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
 
@@ -41,8 +41,8 @@ A következő táblázat a jelenleg elérhető API-kat sorolja fel:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Feladás | [Készleten lévő mennyiségek beállítása/felülbírálása](#set-onhand-quantities) |
 | /api/környezet/{environmentId}/onhand/reserve | Feladás | [Egy foglalási esemény létrehozása](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Feladás | [Több foglalási esemény létrehozása](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/indexquery | Beolvasás | [Lekérdezés a post módszer használatával](#query-with-post-method) |
-| /api/environment/{environmentId}/onhand/indexquery | Feladás | [Lekérdezés a get módszer használatával](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/indexquery | Feladás | [Lekérdezés a post módszer használatával](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand | Beolvasás | [Lekérdezés a get módszer használatával](#query-with-get-method) |
 
 A Microsoft biztosít egy out-of-box *Postman* kérésgyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
@@ -476,7 +476,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Készleten lévő lekérdezés
 
-A _Query on-hand_ API a termékek aktuális készletadatainak lekérdezésére szolgál.
+Az aktuális készlet lekérdezési API-ja segítségével lekérheti a termékek _aktuális_ készletének adatait. Az API jelenleg legfeljebb 100 különálló cikk érték alapján való lekérdezését `ProductID` támogatja. Az `SiteID` egyes `LocationID` lekérdezések több és több értéket is meg lehet adni. A maximális korlát a következőként van meghatározva:`NumOf(SiteID) * NumOf(LocationID) <= 100`
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Lekérdezés a post módszer használatával
 
@@ -551,7 +551,7 @@ Az alábbi példák bemutatják, hogyan lehet lekérdezni egy adott telephely é
 
 ```txt
 Path:
-    /api/environment/{environmentId}/onhand/indexquery
+    /api/environment/{environmentId}/onhand
 Method:
     Get
 Headers:
@@ -568,7 +568,7 @@ Query(Url Parameters):
 Íme egy minta URL-cím. Ez a get-kérés pontosan megegyezik a korábban megadott post-mintával.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 00e3da7767b80e16f9351f59b109765bffc0128fe149cefafc1edda3a6cbcb96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: bc74c5748950b1f0f001fd89acb2e023640065ee
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781345"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920050"
 ---
 # <a name="quantity-exceeds-over-delivery-percentage-during-packing-slip-generation"></a>A szállítólevél létrehozása során a mennyiség meghaladja a túlszállítás arányát
 
@@ -50,10 +50,10 @@ Az alábbi módon korrigálja a rakománysor mennyiségét.
 
 1. Lépjen a **Raktárkezelés \> Rakományok \> Minden rakomány** elemhez.
 1. Válassza ki azt a rakományt, amelyhez nem hozható létre a szállítólevél.
-1. A Művelet panel  **Szállítás és fogadás** lapján lévő  **Sztornírozás** csoportban válassza a  **Szállítmány visszaigazolásának sztornírozása** lehetőséget.
-1. A  **Rakománysorok** lapon válassza ki annak a cikknek rakománysorát, amely meghaladja a túlszállítás százalékos arányát.
+1. A Művelet ablakTábla Szállítás és fogadás lap Sztornírozási csoportjában válassza a **Szállítmány** **·** **visszaigazolásának sztornírozására lehetőséget**.
+1. A Rakománysorok lapon válassza ki a cikknek a túlszállítási százaléknál nagyobb **rakománysorát**.
 1. A kiválasztott mennyiség beállításához válassza a **Kitárolt mennyiség csökkentése** lehetőséget.
-1. A  **Sor részletei** lapon válassza ki a **Rendelés** lehetőséget.
+1. A Sor részletei lapon válassza a **Rendelés** **lehetőséget**.
 1. A **Mennyiség** mezőben állítsa be a kitárolt mennyiség értékét (azaz a **Munka létrehozott mennyisége** mező értékét), hogy a szállítólevél létrehozása elvégezhető legyen.
 
 ### <a name="adjust-the-over-delivery-percentage"></a>Korrigálja a túlszállítás százalékos értékét
@@ -62,8 +62,8 @@ Az alábbi módon korrigálja a túlszállítás százalékos értékét.
 
 1. Lépjen a **Kinnlevőségek \> Rendelések \> Minden rendelés** részre.
 1. Válassza ki azt az értékesítési rendelést, amelynél nem tud szállítólevelet feladni a rakományhoz.
-1. Az  **Értékesítési rendelés sorai** lapon válassza ki az értékesítési rendelésnek azt a sorát, amely meghaladja a túlszállítás százalékos arányát.
-1. A  **Sor részletei** lapon válassza ki a **Szállítás** lehetőséget.
+1. Az Értékesítésirendelés-sorok lapon válassza ki a cikknek a szállítási túlszállítási százaléknál nagyobb **értékesítésirendelés**-sorát.
+1. A Sor **részletei lapon válassza a Szállítás** **lehetőséget**.
 1. A **Túlszállítás** mezőben állítson be olyan, nagyobb százalékértéket, amely megfelelő a rakománymennyiséggel szemben kitárolt mennyiségnek; így a rendszer létre tudja hozni a szállítólevelet.
 
 ### <a name="reverse-and-make-adjustments"></a>Sztornírozzon, és végezzen kiigazításokat
@@ -73,14 +73,14 @@ A rakományhoz feladott minden részletet (például a szállítólevelet, a sz�
 Az alábbi módon érvénytelenítse a szállítólevelet.
 
 1. Lépjen a **Raktárkezelés \> Rakományok \> Minden rakomány** elemhez.
-1. A Művelet panel  **Szállítás és fogadás** lapján lévő  **Sztornírozás** csoportban válassza a  **Szállítólevelek érvénytelenítése** lehetőséget.
+1. A Munkaablak Szállítás és fogadás lap Sztornírozási csoportjában válassza **a** **·** **Csomagjegyzékek visszavonása** lehetőséget.
 
 Az alábbi módon sztornírozza a szállítmányok visszaigazolását.
 
 1. Lépjen a **Raktárkezelés \> Rakományok \> Minden rakomány** elemhez.
-1. A Művelet panel  **Szállítás és fogadás** lapján lévő  **Sztornírozás** csoportban válassza a  **Szállítmány visszaigazolásának sztornírozása** lehetőséget.
+1. A Művelet ablakTábla Szállítás és fogadás lap Sztornírozási csoportjában válassza a **Szállítmány** **·** **visszaigazolásának sztornírozására lehetőséget**.
 
 A munkák az alábbi módon sztornírozahtók.
 
 1. Lépjen a **Raktárkezelés \> Rakományok \> Minden rakomány** elemhez.
-1. A Művelet ablaktábla  **Rakományok** lapjának  **Munka** csoportjában válassza a  **Munka sztornírozása** elemet.
+1. Válassza a Munka sztornírozva lehetőséget a munkaablak **Rakományok** **·** **lapján**.

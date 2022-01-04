@@ -12,12 +12,12 @@ ms.reviewer: margoc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 7271436bd155918dfdac792486c89966e7adb18c
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
-ms.translationtype: HT
+ms.openlocfilehash: a028de4bd37b965d55783dad4b39378d6400bf4b
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402642"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920748"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management-functional-consultants"></a>Képzési katalógus a Dynamics 365 Supply Chain Management funkcionális konzulensek számára
 
@@ -113,7 +113,7 @@ A funkcionális konzulensek esetében a feladatunk-feladat elemzése során a ku
 | [A z eszközkezelés konfigurálása a Dynamics 365 Supply Chain Management szolgáltatásnál](/learn/paths/configure-asset-management-dyn365-supply-chain-mgmt/) | Az Eszközkezelés a Dynamics 365 Supply Chain Management egyik bővítménye, amellyel kezelhetők a vállalat napi folyamataiban használt eszközök. Ilyen típusú eszközök például a gépek, termelési berendezések és a targoncák. | Ingyenes, saját tempójú online tanulási útvonal | 7 óra |
 | [A z eszközkezelés használata a Dynamics 365 Supply Chain Management szolgáltatásnál](/learn/paths/work-asset-management-dyn365-supply-chain-mgmt/) | Az Eszközkezelés a Dynamics 365 Supply Chain Management egyik bővítménye, amellyel kezelhetők a vállalat napi folyamataiban használt eszközök. Ilyen típusú eszközök például a gépek, termelési berendezések és a targoncák. | Ingyenes, saját tempójú online tanulási útvonal | 12.5 óra |
 | [A termékverziós információk kezelése a Dynamics 365 Supply Chain Management rendszerben](/learn/paths/manage-product-version-engineering-change-management/) | A Engineering Change Management Add-in for Dynamics 365 Supply Chain Management strukturált folyamatot biztosít a termékváltozati információk kezeléséhez egy mérnöki termék életciklusa során. | Ingyenes, saját tempójú online tanulási útvonal | 4 óra |
-| [Mérnöki változásmenedzsment beállítása a Dynamics 365 Supply Chain Management-hoz](/learn/paths/set-up-engineering-change-management/) | A mai gyártóknak erős termékadat-kezelésre, verziókezelésre és mérnöki változásmenedzsmentre van szükségük ahhoz, hogy sikeresek legyenek a folyamatosan csökkenő termékéletciklusok, a megnövekedett minőségi és megbízhatósági követelmények, valamint a termékbiztonságra való fokozott odafigyelés világában. Ebben a tananyagban megtanulhatja, hogyan állítsa be a mérnöki változásmenedzsmentet. | Ingyenes, saját tempójú online tanulási útvonal | 4 óra |
+| [Mérnöki változásmenedzsment beállítása a Dynamics 365 Supply Chain Management-hoz](/learn/paths/set-up-engineering-change-management/) | A mai gyártóknak erős termékadat-kezelési, verziókövető és mérnöki változáskezelésre van szükségük ahhoz, hogy a termék életciklusa folyamatosan csökkenjön, növelhető a minőség és a megbízhatósági követelmények, és növelhető a termékbiztonság. Ebben a tananyagban megtanulhatja, hogyan állítsa be a mérnöki változásmenedzsmentet. | Ingyenes, saját tempójú online tanulási útvonal | 4 óra |
 | [Microsoft tanúsított: Dynamics 365 for Finance and Operations, Supply Chain Management funkcionális tanácsadó munkatárs](https://www.microsoft.com/learning/d365-functional-consultant-supply-chain-management.aspx) | Microsoft tanúsított: Dynamics 365 for Finance and Operations, a Supply Chain Management funkcionális tanácsadók a költségkönyvelés, a készletkezelés, az alaptervezés és a raktárkezelés ésszerűsítést optimalizálják az ügyfeleik számára. | Tanúsítás; a költség régiónként változik | |
 
 ## <a name="exams"></a>Vizsgák<a name="exams"></a>

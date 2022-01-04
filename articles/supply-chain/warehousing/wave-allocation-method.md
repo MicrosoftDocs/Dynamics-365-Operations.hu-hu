@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: fd874f3c6c1f4d25b3257d6465686dcb8e95b933
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 541e6c42ae1fa7d803b5becc1b52e34860777594
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576016"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920598"
 ---
 # <a name="wave-allocation"></a>Hullámfelosztás
 
@@ -77,7 +77,7 @@ A párhuzamos felosztás feldolgozásához a hullámfeldolgozásnak kötegelten 
 
 Szükség esetén visszavonhatja az alapértelmezés szerint adott beállításokat, amikor a *Hullámpárhuzamosítás a Hullámfelosztás metódushoz* funkció automatikusan engedélyezve van a példányhoz. Megvalósítás:
 
-- Ugorjon a **Raktárkezelés \> Beállítás \> Raktárkezelési paraméterek** elemre. A **Hullámfeldolgozás** lapon alkalmazza az előnyben részesített értékeket a **Hullámok feldolgozása kötegben** és a **Várakozás zárolásra (ms)** mezőkben.
+- Lépjen a **Raktárkezelés \> Beállítás \> Raktárkezelési paraméterek** részre. A **Hullámfeldolgozás** lapon alkalmazza az előnyben részesített értékeket a **Hullámok feldolgozása kötegben** és a **Várakozás zárolásra (ms)** mezőkben.
 - Ugorjon a **Raktárkezelés \> Beállítás \> Hullámok \> Hullámfeldolgozás módszerei** lehetőségre. Válassza ki az `allocateWave` módot. A Művelet ablaktáblán válassza a **Feladatkonfiguráció** lehetőséget egy olyan lap megnyitásához, amely felsorolja azokat a raktárakat, ahol a metódus párhuzamosan fut. Szükség szerint módosíthatja vagy törölheti a kötegelt tevékenységek számát és a hozzárendelt hullámcsoportot az egyes felsorolt raktárakhoz.
 
 ## <a name="troubleshooting"></a>Hibaelhárítás

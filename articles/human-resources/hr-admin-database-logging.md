@@ -1,8 +1,8 @@
 ---
 title: Adatbázis-naplózás konfigurálása és kezelése
 description: Nyomon követheti a táblák és a mezők módosításait az Dynamics 365 Human Resources adatbázisnaplózás funkciójával.
-author: andreabichsel
-ms.date: 06/10/2020
+author: twheeloc
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4fd0f69df4a141e509c8c250f767cbbc3a20ef4ab7ac3dcec2bc6faa15eababb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 10591abee7890d54d721c9324101a4b4bd0a74d2
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6781657"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924820"
 ---
 # <a name="configure-and-manage-database-logging"></a>Adatbázis-naplózás konfigurálása és kezelése
 
@@ -93,14 +93,14 @@ Az adatbázis-naplókat egészben vagy egy részben törölheti a következő be
 Az adatbázis-tisztítás beállításához kövesse az alábbi lépéseket: 
 
 1. Nyissa meg a **Rendszeradminisztráció > Hivatkozások > Adatbázis-> Adatbázis-napló** elemet. Válassza ki a **Napló tisztítása** lehetőséget.
-
-2. Válassza ki a törölni kívánt naplók kiválasztására szolgáló módszert a következő lehetőségek egyikének megadásával:
+2. A **Belefoglalandó Rekordok** csoportban válassza a **Szűrés lehetőséget**.
+3. Válassza ki azt a módszert, amely a törölni kívánt naplók kiválasztásához lesz. Adja meg az alábbi lehetőségek egyikét:
 
    - Táblaazonosító (ID)
    - Napló típusa
    - Létrehozás dátuma és időpontja
 
-3. Az **Adatbázis-napló tisztítása** lapon megadhatja, hogy mikor fusson a naplókarbantartási feladat. Alapértelmezés szerint az adatbázisnaplók 30 napig érhetők el.
+4. Az **Adatbázis-napló tisztítása** lapon megadhatja, hogy mikor fusson a naplókarbantartási feladat. Alapértelmezés szerint az adatbázisnaplók 30 napig érhetők el.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

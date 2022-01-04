@@ -2,7 +2,7 @@
 title: Human Resources alkalmazás a Teams rendszerben
 description: Ez a témakör bemutatja a Microsoft Dynamics 365 Human Resources alkalmazást a Microsoft Teams rendszerben.
 author: twheeloc
-ms.date: 12/09/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 8eebe154a19dd8476f6e9d75ebfd69fdc5b9e2b7
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
-ms.translationtype: HT
+ms.openlocfilehash: 9274ab345616561deddd322ebad0d6e0b834d1d4
+ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913489"
+ms.lasthandoff: 12/16/2021
+ms.locfileid: "7924722"
 ---
 # <a name="human-resources-app-in-teams"></a>Human Resources alkalmazás a Teams rendszerben
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A Dynamics 365 Human Resources Microsoft alkalmazás a Microsoft Teams Let's alkalmazottakban gyorsan szabadságot kér, és megtekintheti a szabadidő egyenleg adatait a alkalmazásban Microsoft Teams. Az alkalmazottak egy robottal léphetnek kapcsolatba információ kéréséhez. A **Szabadság** lapon részletesebb információk olvashatók. Ezenkívül a közelgő szabadságaikról információkat küldhetnek az embereknek a Teamsben és a Human Resources alkalmazáson kívüli csevegőfelületeken.
+A Microsoft alkalmazás segítségével az alkalmazottak gyorsan időt kérhetnek, és megtekinthetik az időkorlegük Dynamics 365 Human Resources Microsoft Teams adatait a következőben:Microsoft Teams Az alkalmazottak egy robottal léphetnek kapcsolatba információ kéréséhez. A **Szabadság** lapon részletesebb információk olvashatók. Ezenkívül a közelgő szabadságaikról információkat küldhetnek az embereknek a Teamsben és a Human Resources alkalmazáson kívüli csevegőfelületeken.
 
 ![Human Resources Teams szabadságkezelő alkalmazás robotja.](./media/hr-teams-leave-app-bot.png)
 
@@ -41,6 +41,21 @@ A Dynamics 365 Human Resources alkalmazás a Teams áruházban található. A Te
 A Teams alkalmazásengedélyeinek kezelésével kapcsolatos információkért lásd: [Alkalmazásengedély-irányelvek kezelése a Microsoft Teams rendszerben](/MicrosoftTeams/teams-app-permission-policies).
 
 Ha azt szeretné, hogy a felhasználók a Távollét és szabadság naptárát az alkalmazásban tekintsék meg, engedélyeznie kell a **Szabadság és távollét naptárja a Teamsben** funkciót a Funkciókezelésben. A funkciók aktiválásával kapcsolatos további részletekért tekintse meg a [Szolgáltatások kezelése](hr-admin-manage-features.md) oldalt.
+
+## <a name="update-app"></a>Alkalmazás frissítése
+>[!NOTE]
+> 2021. december 20-án kezdődően elindul a Microsoft bérlőben tárolt Emberi erőforrások alkalmazás szolgáltatás. A telepítésre elérhető, naprakész bővítményekre (1.1.5-ös verzióra) nem lesz hatással. A fő hatással lesz az elavult kiterjesztésre (1.1.4). A verzióban elérhető csevegési program leáll. Az **Idő-idő** lap mindkét kiterjesztésben továbbra is működni fog.
+
+Az 1.1.4-es verziónál a beszélgetési program leállítja a válaszadást bármilyen üzenetre. Például **bejelentkezés**, **egyenlegek megtekintése** és **idő-idő** megtekintése. Az alkalmazást manuálisan kell frissíteni a legújabb verzióra. A további tudnivalókat lásd [Az alkalmazások frissítése Microsoft Teams](/MicrosoftTeams/apps-update-experience) itt:
+
+A következő lépések szerint frissít az 1.1.5-ös verzióra:
+1. Az Microsoft Teams Alkalmazások **2003 alkalmazásba ugrás**
+2. Az Emberi **erőforrások alkalmazás** megkeresve.
+3. Válassza a **Frissítés** lehetőséget.
+
+Az Emberi erőforrások alkalmazás verzióját úgy ellenőrizheti, hogy vagy a Személyes lapra, vagy a Személyes **alkalmazás** **szakaszra** megy. 
+
+![Emberi erőforrások **Névjegy** lapja.](./media/HR-teams-about.png)
 
 ## <a name="enable-notifications-for-the-human-resources-app-in-teams"></a>Értesítések engedélyezése a Human Resources alkalmazáshoz a Teamsben
 
@@ -106,14 +121,14 @@ A következő munkaelemek a későbbi verziókban jelennek meg:
 | --- | --- |
 | Az egyenleg nem helyes, amikor jövőbeli dátumra vonatkozó szabadságot küld be. | Az előrejelzés még nem érhető el. A megjelenített egyenleg az aktuális dátumra vonatkozik. |
 | Nem lehet visszavonni egy **Ellenőrzés alatt** állapotú kérelmet. | Ez a funkció jelenleg nem támogatott, és egy későbbi verzióban kerül hozzáadásra. |
-| Az egyenleg adatait a mai naptól számítja ki a program. | A rendszer jelenleg nem jeleníti meg az egyenlegeket az eredményszemléletű időszaktól, még akkor sem, ha a Szabadság és távollét paraméterek oldalon van **konfigurálva.** |
+| Az egyenleg adatait a mai naptól számítja ki a program. | A rendszer jelenleg nem mutatja az egyenlegeket a könyvelési időszaknak megfelelően, még akkor sem, ha be van állítva a Szabadság és távollét **paraméterei** oldalon. |
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 
 Ha egy felhasználónak sikerül bejelentkeznie a Human Resources Teams alkalmazásba vagy nem tudja használni, próbálja ki ezeket a hibaelhárítási utasításokat. Ha a hibaelhárítás után sem oldódott meg a probléma, akkor forduljon a támogatáshoz. További információért lásd a [Támogatás kérése](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) lehetőséget.
 
-### <a name="ensure-the-teams-human-resources-application-is-up-to-date"></a>Győződjön meg arról, hogy a Teams Humánerőforrás-alkalmazás naprakész
-Ha problémák merülnek fel a Teams Emberi Erőforrások alkalmazással, meg kell erősítenie, hogy a legújabb verziót futtatja. A minimálisan támogatott verzió 1.1.5. A Teams-alkalmazások frissítésével kapcsolatos útmutatásért lásd: [Teams dokumentáció](/MicrosoftTeams/apps-update-experience).
+### <a name="ensure-the-teams-human-resources-application-is-up-to-date"></a>A Teams Emberi erőforrások alkalmazás naprakészen tartásának biztosítása
+Ha problémákat észlelt a Teams Emberi erőforrások alkalmazással, meg kell erősítenie, hogy a legújabb verziót futtatja. A minimális támogatott verzió az 1.1.5. A Teams-alkalmazások frissítésével kapcsolatos tudnivalókat lásd a [Teams](/MicrosoftTeams/apps-update-experience) dokumentációjában.
 
 ### <a name="cant-sign-into-the-human-resources-app-in-teams"></a>Nem lehet bejelentkezni a Human Resources alkalmazásba a Teamsben.
 
@@ -121,7 +136,7 @@ Ha egy felhasználó azzal keresi meg Önt, hogy nem tud bejelentkezni az alkalm
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Hiba történt a Teamsen belüli Human Resource alkalmazásban a szabadságkérelmek jóváhagyásakor.
 
-Ha egy felhasználó hibaüzenetet kap, miközben a Teams alkalmazásban próbálja jóváhagyni a szabadságkéréseket, próbálkozzon az alábbi hibaelhárítási lépésekkel:
+Ha egy felhasználó hibaüzenetet kap, miközben szabadságkéréseket próbál jóváhagyni a Teams alkalmazásban, próbálja meg a következő hibaelhárítási lépéseket:
 
 1. Ellenőrizze, hogy a Teams-fiókjuk megegyezik-e azzal a fiókkal, amelyet a HR eléréséhez használnak.
 
@@ -133,25 +148,25 @@ Ha egy felhasználó hibaüzenetet kap, miközben a Teams alkalmazásban próbá
 
 2. Győződjön meg róla, hogy a felhasználók ugyanolyan hitelesítő adatokkal vannak bejelentkezve a **Csevegések** fülön, mint a szabadságkérések jóváhagyásához. A „kijelentkezés” és a „bejelentkezés” üzenetekkel jelentkezzen be a megfelelő hitelesítő adatokkal.
 
-3. Ha a probléma továbbra is fennáll, ellenőrizze a **Business Events rendszer kötegelt feladat állapotát** rendszergazdaként. Ha **várakozási vagy** **végrehajtási** szakaszban van, ellenőrizze újra néhány perc múlva. Ha az állapot változatlan marad, jelentkezzen be egy támogatási jegyet, hogy csapatunk segítsen megoldani a problémát.
+3. Ha a probléma továbbra is fennáll, ellenőrizze az Üzleti események rendszer kötegelt feladatának **állapotát** rendszergazdaként. Ha Várakozás vagy Végrehajtás **szakaszban** **van**, ellenőrizze újra pár perc múlva. Ha az állapot változatlan marad, akkor jelentkezzen be egy támogatási jegyre, hogy a mi csapatunk segíthet kijavítani a problémát.
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 
 ### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
 
-A Dynamics 365 Human Resources robot be van Microsoft Teams véve, a rendszer elemzi a felhasználó szövegbeviteleit az alapul szolgáló lekérdezés/szándék megértéséhez. A felhasználó bemenete, például a "Contoso keresési fiók" a Microsoft Cognitive Service egyik, a Language Understanding Intelligent Service (LUIS) nevű szolgáltatásához van irányítva. A LUIS-ról  [itt](https://www.luis.ai/) olvashat többet. A LUIS szolgáltatás egyértelműsíti vagy megérti a felhasználói bevitel szándékát (ebben az esetben a szándék az, hogy információt találjon) és a cél entitást (ebben az esetben a szándékolt entitás egy Contoso nevű számla). Ezeket az információkat ezután továbbítja a Microsoft  [Azure bot keretrendszerének](https://azure.microsoft.com/services/bot-service/), amely kölcsönhatásba lép a felhasználói Dynamics 365 Human Resources lekérdezéshez szükséges adatokkal, és lekéri a kívánt információkat.
+A felhasználói szövegbevitel elemzése után a program elemzi a bejövő szövegeket, hogy megértsük a Dynamics 365 Human Resources Microsoft Teams mögöttes lekérdezést/célját. A felhasználó bevitele, például „Contoso partner keresése” továbbítódik a Microsoft Cognitive Service szolgáltatásához, amelynek neve Nyelvértő intelligens szolgáltatás (Language Understanding Intelligent Service – LUIS). A LUIS-ról  [itt](https://www.luis.ai/) olvashat többet. A LUIS szolgáltatás egyértelműsíti vagy megérti a felhasználói bevitel szándékát (ebben az esetben a szándék az, hogy információt találjon) és a cél entitást (ebben az esetben a szándékolt entitás egy Contoso nevű számla). Ezeket az adatokat a rendszer majd továbbítja a Microsoft  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/) keretrendszerének, amely a Dynamics 365 Human Resources adataival végez műveleteket, és lekéri a kívánt adatokat a felhasználói lekérdezéshez.
 
-A robot telepítésével és a használatához való hozzáférés engedélyezésével Ön elfogadja, hogy a LUIS szolgáltatás és az Azure robot keretrendszer feldolgozza a bemenet mögötti szándékot, ami egy továbbfejlesztett, társalgásszerű felhasználói élményt eredményez. A LUIS szolgáltatás és az Azure robot keretrendszer különböző szintű megfeleléssel rendelkezhet a Dynamics 365 Human Resources alkalmazáshoz képest. Míg a LUIS-szolgáltatás csak a felhasználói lekérdezésekhez fér hozzá, és nem úgy tervezték, hogy a felhasználó Dynamics 365 Human Resources adataihoz vagy fiókjához csatlakozzon, a robot felhasználója Dynamics 365 Human Resources önkéntesen megadhat egy lekérdezést, amely ügyféladatokat, személyes adatokat vagy más adatokat tartalmaz, és az ilyen lekérdezési tartalom elküldhető a LUIS szolgáltatásnak és az Azure bot keretrendszerének. 
+A robot telepítésével és a használatához való hozzáférés engedélyezésével Ön elfogadja, hogy a LUIS szolgáltatás és az Azure robot keretrendszer feldolgozza a bemenet mögötti szándékot, ami egy továbbfejlesztett, társalgásszerű felhasználói élményt eredményez. A LUIS szolgáltatás és az Azure robot keretrendszer különböző szintű megfeleléssel rendelkezhet a Dynamics 365 Human Resources alkalmazáshoz képest. Habár az ORI szolgáltatás csak a felhasználói lekérdezésekhez van hozzáférése, és nincs a felhasználó adataihoz vagy fiókjához való csatlakozásra tervezve, az adatbázis egy felhasználója tudott egy vevői adatokat, személyes adatokat vagy más adatokat tartalmazó lekérdezést, és ezeket a lekérdezési tartalmat el lehet küldeni aKISZOLGÁLÓ szolgáltatásnak és az Dynamics 365 Human Resources Dynamics 365 Human Resources Azure-keretrendszernek. 
 
-A felhasználó lekérdezéseinek és üzeneteinek tartalma legfeljebb 30 napig marad meg a LUIS-rendszerben, nyugalmi állapotban titkosítva van, és nem használható betanításra vagy szolgáltatásfejlesztésre. A Cognitive Services szolgáltatással kapcsolatban  [itt](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/) olvashat többet. 
+A felhasználó lekérdezései és üzenetei legfeljebb 30 napig megmaradnak a SSL rendszerben, más titkosítással vannak titkosítva, és nem használható képzésre és szolgáltatásfejlesztésre. A Cognitive Services szolgáltatással kapcsolatban  [itt](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/) olvashat többet. 
 
 Az Microsoft Teams-alkalmazások felügyeleti beállításainak kezeléséhez nyissa meg a [Microsoft Teams felügyeleti központot](https://admin.teams.microsoft.com/).
 
 ### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid és Azure Cosmos DB
 
-Az alkalmazás használatakor Dynamics 365 Human Resources Microsoft Teams bizonyos ügyféladatok a bérlő emberi erőforrás szolgáltatásának üzembe helyezésének földrajzi régióján kívül áramlanak.
+Az alkalmazás használata esetén bizonyos vevőadatok azon a földrajzi területen kívülre is kiterjedhetnek, ahová a bérlő emberi erőforrások Dynamics 365 Human Resources Microsoft Teams szolgáltatását telepítik.
 
-Dynamics 365 Human Resources továbbítja az alkalmazott szabadságkérésének és munkafolyamat-feladatának részleteit Microsoft Azure az Event Grid és a Microsoft Teams. Ezeket az adatokat a Microsoft Azure Event Grid felületen az Egyesült Államokban legfeljebb 24 óráig tárolhatjuk, és a rendszer a szállítás és tárolás során titkosítja, és a Microsoft vagy az alfeldolgozók nem használják a tanításhoz vagy szolgáltatások fejlesztéséhez. Annak megértéséhez, hogy az adatok a Teamsben hol vannak tárolva akkor lásd: [Adatok helye Microsoft Teams-alkalmazásban](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
+Dynamics 365 Human Resources az alkalmazott távolléti kérelmét és a munkafolyamat-feladat részleteit továbbítja az Microsoft Azure eseményrács és Microsoft Teams a. Ezeket az adatokat a Microsoft Azure Event Grid felületen az Egyesült Államokban legfeljebb 24 óráig tárolhatjuk, és a rendszer a szállítás és tárolás során titkosítja, és a Microsoft vagy az alfeldolgozók nem használják a tanításhoz vagy szolgáltatások fejlesztéséhez. Annak megértéséhez, hogy az adatok a Teamsben hol vannak tárolva akkor lásd: [Adatok helye Microsoft Teams-alkalmazásban](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
 
 Miközben a csevegőrobottal beszélget a Human Resources alkalmazásban beszélgetett, a beszélgetés tartalma lehet, hogy el lesz tárolva az Azure Cosmos DB-szolgáltatásban és át lesz adva Microsoft Teams alkalmazásnak. Ezeket az adatokat a program legfeljebb 24 óráig tárolhatja az Azure Cosmos DB modulban, és feldolgozható azon a földrajzi régión kívül, amelyen a bérlő Human Resources szolgáltatását telepítették, a szállítás és a nyugalmi állapotban titkosítva van, és a Microsoft vagy annak alfeldolgozói nem használják a tréningek vagy szolgáltatások fejlesztése céljából. Annak megértéséhez, hogy az adatok a Teamsben hol vannak tárolva akkor lásd: [Adatok helye Microsoft Teams-alkalmazásban](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
  

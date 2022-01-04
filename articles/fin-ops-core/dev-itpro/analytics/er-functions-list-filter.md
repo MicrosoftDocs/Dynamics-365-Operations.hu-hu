@@ -2,7 +2,7 @@
 title: FILTER ER-funkció
 description: A témakör tájékoztatást nyújt a FILTER Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
 author: NickSelin
-ms.date: 12/12/2019
+ms.date: 12/14/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c601babd3ea7122bc9ddf7bf101751d4c032016fb33c3d4101f588789491e817
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: e857306574dda7bad5dd25fc7708514997d8e86f
+ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760026"
+ms.lasthandoff: 12/15/2021
+ms.locfileid: "7922423"
 ---
 # <a name="filter-er-function"></a>FILTER ER-funkció
 
@@ -49,11 +49,17 @@ A *Rekordlista* adattípus adatforrásának érvényes elérési útja.
 
 A rekordok eredményül kapott listája.
 
-## <a name="usage-notes"></a>Használati megjegyzések
+## <a name="usage-notes"></a><a name="usage-notes"></a>Használati megjegyzések
 
 Ez a függvény eltér a [WHERE](er-functions-list-where.md) függvénytől, mivel a megadott feltétel az adatbázis szintjén kerül alkalmazásra a *Táblarekordok* típus bármely Elektronikus jelentéskészítés (ER) adatforrására. A lista és a feltétel táblák és kapcsolatok segítségével határozhatók meg.
 
 Ha a függvényhez konfigurált egyik vagy mindkét argumentum (`list` és `condition`) nem engedélyezi ennek a kérésnek a lefordítását a közvetlen SQL-hívásra, akkor a tervezési időben kivétel történik. Ez a kivétel tájékoztatja a felhasználót, hogy a `list` vagy `condition` nem használható az adatbázis lekérdezéséhez.
+
+> [!NOTE]
+> A funkció másképp működik, mint a funkció, ha a funkció a `FILTER``WHERE` kiválasztási feltételek [`VALUEIN`](er-functions-logical-valuein.md) megadására használható.
+> 
+> - Ha a függvényt a függvény hatókörében használják, és a második argumentum olyan adatforrásra hivatkozik, amely nem ad vissza rekordokat, a rendszer a logikai hamis értéket `VALUEIN``WHERE` figyelembe véve adja `VALUEIN`*[...](er-formula-supported-data-types-primitive.md#boolean)*`VALUEIN` vissza. Ebből következően a kifejezés nem ad vissza `WHERE(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))` szállítói rekordokat, ha a **VendGroups adatforrás nem ad vissza** szállítóicsoport-rekordot.
+> - Ha a függvényt a függvény hatókörében használják, és a második argumentum olyan adatforrásra hivatkozik, amely nem ad vissza rekordokat, a rendszer figyelmen kívül hagyja a logikai értékként megadott hamis `VALUEIN``FILTER``VALUEIN`*[...](er-formula-supported-data-types-primitive.md#boolean)*`VALUEIN` értéket. Emiatt a kifejezés a szállítói adatforrás összes szállítói rekordját visszaadja, még akkor is, ha a `FILTER(Vendors, VALUEIN(Vendors.VendGroup, VendGroups, VendGroups.VendGroup))`**·** **VendGroups adatforrás nem ad vissza** szállítóicsoport-rekordot.
 
 ## <a name="example-1"></a>1. példa
 

@@ -1,22 +1,22 @@
 ---
 title: Hullámcímke-nyomtatás ütemezése hullám közben
 description: Ez a témakör leírja, hogyan lehet beállítani és használni a feladatalapú hullámcímke-nyomtatásban használható funkciókat.
-author: MSFTGarm
+author: perlynne
 ms.date: 06/09/2021
 ms.topic: article
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-obaranov
+ms.author: perlynne
 ms.search.validFrom: 2021-06-09
 ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: 4883f8a548645436e17b933d87d4ee6330570d48
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 1323538765308ec3dd366456e31f5e08b08ce5ab
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777865"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920149"
 ---
 # <a name="schedule-wave-label-printing-during-wave"></a>Hullámcímke-nyomtatás ütemezése hullám közben
 
@@ -40,7 +40,7 @@ Az ebben a témakörben leírt funkciók csak akkor használhatók, ha a rendsze
 
 Először készítse el az új hullámlépés-metódust, majd engedélyezze az aszinkron feladatok párhuzamos feldolgozását.
 
-1. Ugorjon a  **Raktárkezelés \> Beállítás \> Hullámok \> Hullámfeldolgozás módszerei** lehetőségre.
+1. Ugorjon a **Raktárkezelés \> Beállítás \> Hullámok \> Hullámfeldolgozás módszerei** lehetőségre.
 1. A Művelet ablaktáblán válassza ki a **Metódus újragenerálása** elemet. A *waveLabelPrinting* megjelenik a szállítási hullámsablonok során használható hullámfolyamati metódusok listájában.
 1. Válassza ki azt a rekordot, amelyben a **Metódus neve** mezőben a *waveLabelPrinting* beállítás van beállítva, majd a műveletpanelen válassza ki a **Feladat** konfigurációt.
 1. A műveleti ablakpanelen válassza ki az **Új** lehetőséget, ha hozzá szeretne adni egy sort a rácshoz. Ezután új sorhoz állítsa be a következő mezőket:
@@ -51,7 +51,7 @@ Először készítse el az új hullámlépés-metódust, majd engedélyezze az a
 
 Most frissíthet egy meglévő hullámsablont, hogy az a *Hullámcímke-nyomtatási* mhullámfeldolgozási metódust használja. Másik lehetőségként létrehozhat egy új hullámsablont, amely azt használja.
 
-1. Ugorjon a  **Raktárkezelés \> Beállítás \> Hullámok \> Hullámsablonok** pontra.
+1. Ugorjon a **Raktárkezelés \> Beállítás \> Hullámok \> Hullámsablonok** pontra.
 1. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
 1. A lista ablaktáblában válassza ki a frissíteni kívánt hullámsablont. (Ha tesztelési célokra bemutatóadatokat használ, a *24 Szállítási alapértelmezés* választhatja ki.)
 1. A **Módszerek** Gyorslapon a **Fennmaradó módszerek** oszlopban válassza ki a sort, ahol a **Név** mező a *waveLabelPrinting* értékre van beállítva.

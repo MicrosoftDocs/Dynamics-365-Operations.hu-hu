@@ -2,7 +2,7 @@
 title: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
 description: Ez a témakör azt mutatja be, hogyan lehet az Elektronikus jelentéskészítés (ER) formátumát egy Excel-sablon kitöltéséhez tervezni, majd a kimenő Excel-formátumú dokumentumokat generálni.
 author: NickSelin
-ms.date: 12/03/2021
+ms.date: 12/15/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ebe2647bb382421921aa6ffc733953f379a8af10
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
-ms.translationtype: HT
+ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
+ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890865"
+ms.lasthandoff: 12/21/2021
+ms.locfileid: "7943612"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
 [!include[banner](../includes/banner.md)]
 
-Tervezhet olyan [elektronikus jelentési (ER)](general-electronic-reporting.md) formátumú konfigurációt, amely rendelkezik er formátumú összetevővel, amelyet úgy konfigurálhat, hogy munkafüzet formátumú kimenő dokumentumot hozzon Microsoft Excel létre. Erre a célra külön ER formátumú komponenseket kell használni.
+Tervezhet [Elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) formátumú konfiguráció, aminek olyan ER formátumkomponense van, amit a kimenő dokumentumok Microsoft Excel-munkafüzetformátumban való konfigurálására használhat. Erre a célra külön ER formátumú komponenseket kell használni.
 
 Ha további tájékoztatást szeretne erről a funkcióról, kövesse a [Jelentések készítésének konfigurációja OPENXML formátumban](tasks/er-design-reports-openxml-2016-11.md) témakör lépéseit.
 
@@ -119,30 +119,30 @@ Az ER műveleti tervező **Leképezés** lapján beállíthatja az **Engedélyez
 
 ### <a name="resizing"></a>Átméretezés
 
-Az Excel-sablont úgy állíthatja be, hogy cellákat használjon szöveges adatok bemutatására. Annak érdekében, hogy a cella teljes szövege látható legyen egy létrehozott dokumentumban, beállíthatja, hogy a cella automatikusan körbetekerje a benne lévő szöveget. A cellát tartalmazó sort úgy is beállíthatja, hogy automatikusan módosítsa a magasságát, ha a becsomagolt szöveg nem teljesen látható. További információt a Cellákban levágott adatok javítása című szakasz "Szöveg körbefuttatása cellában" című szakaszában [talál](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e).
+Az Excel-sablont úgy is beállíthatja, hogy cellákat használjon a szöveges adatokhoz. Annak érdekében, hogy a cella teljes szövege látható legyen egy generált dokumentumban, be lehet állítani, hogy a cella automatikusan becsomagolja a szöveget a szövegbe. Beállíthatja azt is, hogy a cellát tartalmazó sor automatikusan módosítsa a magasságát, ha a szöveg nem látható teljesen. A további tudnivalókat lásd a "Szöveg csomagolása cellában" szakasz a cellákban levágott adatok [kijavítása című részében](https://support.microsoft.com/office/fix-data-that-is-cut-off-in-cells-e996e213-6514-49d8-b82a-2721cef6144e).
 
 > [!NOTE]
-> Egy ismert [Excel-korlátozás miatt](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353), még akkor is, ha úgy konfigurálja a cellákat, hogy szövegbe wrapzessék, és úgy konfigurálja a cellákat tartalmazó sorokat, hogy automatikusan úgy módosítsák a magasságukat, hogy azok illeszkedjenek a becsomagolt szöveghez, előfordulhat, hogy nem tudja használni az **AutoFit és a Wrap text** Excel **szolgáltatásokat** az egyesített cellákhoz és az azokat tartalmazó sorokhoz. 
+> Az Excel egy ismert korlátozása miatt – még akkor is, ha a cellákat a szöveg csomagolására konfigurálja, és úgy konfigurálja a cellákat tartalmazó sorokat, hogy a magasságuk automatikusan a szöveg szövegének megfelelő legyen, előfordulhat, hogy az egyesített cellákhoz és az őket tartalmazó sorokhoz nem tudja használni az AutoFit és a Csomagoló szöveg [Excel](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353) **·** **szolgáltatást**. 
 
-A Dynamics 365 Finance 10.0.23-as verziótól kényszerítheti az ER-t, hogy egy generált dokumentumban számítsa ki minden olyan sor magasságát, amely úgy van konfigurálva, hogy automatikusan illeszkedjen a beágyazott cellák tartalmához, amikor a sor legalább egy egyesített cellát tartalmaz, amely úgy van konfigurálva, hogy körbetekerje a benne lévő szöveget. A számított magasság ezután a sor átméretezésére szolgál annak biztosítása érdekében, hogy a sor összes cellámja látható legyen a létrehozott dokumentumban. Ha el szeretné kezdeni használni ezt a funkciót, ha olyan ER-formátumokat futtat, amelyek úgy vannak konfigurálva, hogy Excel-sablonokat használjanak kimenő dokumentumok létrehozásához, kövesse az alábbi lépéseket.
+A 10.0.23-as verziótól az ER-t kényszerítheti arra, hogy egy generált dokumentumban kiszámítsa minden olyan sor magasságát, amely úgy volt beállítva, hogy automatikusan elférjen az egymásba ágyazott cellák tartalmához, valahányszor ez a sor legalább egy olyan egyesített cellát tartalmaz, amely úgy van beállítva, hogy a szöveget a fájlba Dynamics 365 Finance csomagolja. A kiszámított magasság segítségével átméretezheti a sort, hogy a létrehozott dokumentumban a sor minden cellája látható legyen. Ha elkezdi használni ezt a funkciót, amikor bármilyen OLYAN ER-formátumot futtat, amely a kimenő dokumentumok előállításához Excel-sablonokat használt, kövesse ezeket a lépéseket.
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 2. A **Lokalizációs konfigurációk** oldalon, a **Kapcsolódó hivatkozások** szakaszban, válassza az **Elektronikus jelentéskészítés paraméterei** elemet.
-3. Az **Elektronikus jelentési paraméterek** lap **Futtatókörnyezet** lapján állítsa az **Automatikus felszerelés sormagasság beállítást Igen** **értékre**.
+3. Az Elektronikus jelentés paraméterei lap Futási idő lapján állítsa Az Automatikus illesztés sor magassága beállítást **Igen** **·** **·** **beállításra**.
 
-Ha ezt a szabályt egyetlen ER formátumra szeretné módosítani, frissítse a formátum tervezetverzióját az alábbi lépésekkel.
+Ha egyetlen ER-formátumban szeretné módosítani ezt a szabályt, a következő lépések szerint frissítse annak vázlatverzióját.
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 2. A **Lokalizációs konfigurációk** oldalon, a **Konfigurációk** szakaszban, válassza ki a **Jelentéskészítési konfiguráció** csempét.
-3. A **Konfigurációk** lapon a bal oldali ablaktábla konfigurációs fájában jelöljön ki egy olyan ER-konfigurációt, amelyet úgy terveztek, hogy Excel-sablont használjon kimenő dokumentumok létrehozásához.
+3. A Konfigurációk lap bal oldali konfigurációs fájában válasszon ki egy ER-konfigurációt, amely Egy Excel-sablont használ a kimenő dokumentumok **előállítására**.
 4. A **Verziók** gyorslapon válassza ki azt a konfigurációverziót, amelynek az állapota **Piszkozat**.
 5. A Műveleti ablaktáblán kattintson a **Tervező** elemre.
-6. A **Formátumtervező** lap bal oldali ablaktáblájának formátumfájában jelölje ki az Excel-sablonhoz csatolt Excel-összetevőt.
-7. A **Formátum** lap **Sormagasság beállítása** mezőjében válasszon ki egy értéket annak megadásához, hogy a hibaértéket futásidőben kényszeríteni kell-e a szerkesztett ER formátum által generált kimenő dokumentum sormagasságának módosítására:
+6. A Formátumtervező lap bal oldali formátumfában válassza ki azt az Excel-összetevőt, amely Excel-sablonhoz **van** kapcsolva.
+7. A Formátum lap Sor magasságának módosítása mezőjében válassza ki azt az értéket, amely meghatározza, hogy futásidőben az ER kötelező legyen-e a sorok magasságának módosítására a szerkesztett ER-formátum által létrehozott **kimenő** **dokumentumban**:
 
-    - **Alapértelmezett** – Használja az Elektronikus **jelentési paraméterek lap Automatikus felszerelés sormagasság mezőjében konfigurált általános** **beállítást**.
-    - **Igen** – Felülbírálja az általános beállítást, és futásidőben módosítsa a sormagasságot.
-    - **Nem** – Felülbírálja az általános beállítást, és ne módosítsa a sormagasságot futásidőben.
+    - **Alapértelmezett – az Elektronikus jelentés paraméterei oldal Automatikus illesztés sor magassága mezőjében beállított általános** **beállítás** **használata**.
+    - **Igen – az általános beállítás felülbírálása és a sor** magasságának módosítása futásidőben.
+    - **Nem – felülbírálja az általános beállítást, és futásidőben nem módosítja** a sor magasságát.
 
 ## <a name="cell-component"></a>Cellaösszetevő
 
@@ -331,39 +331,55 @@ Az Microsoft Excel munkafüzet formátumú kimenő dokumentumok létrehozásakor
 
     ![Excel-formátumban létrehozott dokumentum láblécének felülvizsgálata.](./media/er-fillable-excel-footer-4.gif)
 
-## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a> 2. példa: Az egyesített cellák EPPlus-problémájának megoldása
+## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a> 2. példa: Az egyesített cellák EPGra kiadásának kijavítása
 
-Az ER formátum futtatásával excel-munkafüzet-formátumban hozhat létre kimenő dokumentumot. Ha az **EPPlus-tár használatának engedélyezése az elektronikus jelentéskészítési** keretrendszerben funkció engedélyezve van a **Funkciókezelési** munkaterületen, az [EPPlus-könyvtár](https://www.nuget.org/packages/epplus/4.5.2.1) excel kimenetet hozhat. Az ismert [Excel-viselkedés](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) és az EPPlus-tár korlátozása miatt azonban a következő kivétel érheti el: "Nem lehet törölni/felülírni az egyesített cellákat. A tartomány részben összeolvad a másik egyesített tartománysal." Ha meg szeretné tudni, hogy milyen Excel-sablonok okozhatják ezt a kivételt, és hogyan oldhatja meg a problémát, töltse ki az alábbi példát.
+Az ER-formátum futtatásával Egy kimenő dokumentumot Excel-munkafüzet-formátumban generálhat. Ha az Elektronikus jelentési keretrendszer EPGra tárhasználatának engedélyezése a Szolgáltatáskezelési munkaterületen engedélyezve van, akkor az EPGra függvénytár az **Excel** **·**[kimenetének](https://www.nuget.org/packages/epplus/4.5.2.1) létrehozásához használható. Az Ismert Excel-viselkedés és az EPGra függvénytár korlátozása miatt azonban a következő kivétel előfordulhat: "Egyesített cellákat nem lehet [törölni](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9)/felülírni. Egy tartományt részben egyesít a másik egyesített tartománysal." A következő példában olvashatja, hogy milyen Excel-sablonok okozhatják ezt a kivételt, és hogyan javíthatja ki a problémát.
 
-1. Az Asztali Excel alkalmazásban hozzon létre egy új Excel-munkafüzetet.
-2. A **munkalapján a 1**, adja hozzá az **A2 cella ReportTitle** **nevét**.
-3. **A1 és A2 cellák** **egyesítése**.
+1. Hozzon létre egy új Excel-munkafüzetet az Excel asztali alkalmazásban.
+2. Munkalap **1. munkalapján adja hozzá a** **ReportTitle nevét** az **A2** cellhoz.
+3. Az **A1 és** az **A2 cellák egyesítése**
 
-    ![Az Asztali Excel-alkalmazás tervezett Excel-munkafüzetében az A1 és A2 cellák egyesítésének eredményeinek áttekintése.](./media/er-fillable-excel-example2-1.png)
+    ![Az A1 és az A2 celláknak az Excel asztali alkalmazásban tervezett Excel-munkafüzetben való összefésülésének áttekintése.](./media/er-fillable-excel-example2-1.png)
 
-3. A **Konfigurációk** lapon [adjon hozzá egy új ER formátumot egy kimenő dokumentum](er-fillable-excel.md#add-a-new-er-format) Excel-munkafüzet-formátumban való létrehozásához.
-4. A **Formátumtervező** lapon [importálja a tervezett](er-fillable-excel.md#template-import) Excel-munkafüzetet a hozzáadott ER formátumba a kimenő dokumentumok új sablonjaként.
-5. A **Leképezés** lapon konfigurálja a **Cellatípus ReportTitle** összetevőjének [kötését.](er-fillable-excel.md#cell-component)
-6. Futtassa a konfigurált ER formátumot. Figyelje meg, hogy a következő kivétel dobott: "Nem lehet törölni/felülírni az egyesített cellákat. A tartomány részben összeolvad a másik egyesített tartománysal."
+3. A Konfigurációk lapon adjon hozzá egy új ER-formátumot, hogy egy Excel-munkafüzet formátumú kimenő **dokumentumot** [generáljon](er-fillable-excel.md#add-a-new-er-format).
+4. A Formátumtervező lapon importálja a tervezett Excel-munkafüzetet a **hozzáadott**[ER](er-fillable-excel.md#template-import)-formátumba, mint a kimenő dokumentumok új sablonját.
+5. A Leképezés lapon állítsa be a cell **típusú** **ReportTitle** összetevő [kötését](er-fillable-excel.md#cell-component).
+6. A konfigurált ER-formátum futtatása. A következő kivétel történt: "Egyesített cellákat nem lehet törölni/felülírni. Egy tartományt részben egyesít a másik egyesített tartománysal."
 
-    ![A konfigurált ER formátum formátumának a Formátumtervező lapon történő futtatásának eredményeinek áttekintése.](./media/er-fillable-excel-example2-2.png)
+    ![A konfigurált ER-formátum futtatásának eredményeinek áttekintése a Formátumtervező lapon.](./media/er-fillable-excel-example2-2.png)
 
-A problémát az alábbi módokon oldhatja meg:
+A probléma a következőképpen javítható ki:
 
-- **Egyszerűbb, de nem ajánlott:** A **Funkciókezelési** munkaterületen kapcsolja ki az **EPPlus-könyvtár használatának engedélyezése az elektronikus jelentéskészítési** keretrendszerben funkciót. Bár ez a megközelítés egyszerűbb, más problémákat is tapasztalhat, ha használja, mert bizonyos ER-funkciók csak akkor támogatottak, ha az **EPPlus-könyvtár használatának engedélyezése az elektronikus jelentési** keretrendszerben funkció engedélyezve van.
-- **Ajánlott:** Kövesse az alábbi lépéseket:
+- **Egyszerűbb, de nem ajánlott: A Szolgáltatáskezelés munkaterületen kapcsolja ki az EPGra függvénytár használatának engedélyezése az** **elektronikus** **jelentési** keretrendszerben funkciót. Bár ez a megközelítés egyszerűbb, használata esetén más problémákat is tapasztalhat, mivel az ER egyes funkcióit csak akkor támogatja a rendszer, ha engedélyezve van az ELEKTRONIKUS jelentési keretrendszer **EPGra** tárhasználatának engedélyezése.
+- **Ajánlott:** Kövesse a következő lépéseket:
 
-    1. Az Asztali Excel alkalmazásban módosítsa az Excel-munkafüzetet az alábbi módok egyikével:
+    1. Az Excel asztali alkalmazásban a következőképpen módosíthatja az Excel-munkafüzetet:
 
-        - A **munkalapon a Sheet1**, az **A1 és** **A2 cellákat.**
-        - Módosítsa a **ReportTitle név hivatkozását** **=Sheet1!$A$2-ról** **=Sheet1!$A$1** értékre.
+        - Az **A1 és az** A2 cella egyesítésének az **1**. **munkalapon**
+        - Módosítsa a ReportTitle név hivatkozását **a** **következőről: =Sheet1!$A$2** to **=Sheet1!$A$1.**
 
-        ![A hivatkozás módosításának eredményeinek áttekintése a tervezett Excel-munkafüzetben az Excel asztali alkalmazásban.](./media/er-fillable-excel-example2-3.png)
+        ![Az Excel asztali alkalmazásban tervezett Excel-munkafüzetben a hivatkozás módosításának eredményeiről áttekintést ad.](./media/er-fillable-excel-example2-3.png)
 
-    2. A **Formátumtervező** lapon [importálja a módosított](er-fillable-excel.md#template-import) Excel-munkafüzetet a szerkeszthető ER formátumba a meglévő sablon frissítéséhez.
-    3. Futtassa a módosított ER formátumot.
+    2. A Formátumtervező lapon importálja a módosított Excel-munkafüzetet a szerkeszthető ER-formátumba, hogy **frissítse** a meglévő [sablont](er-fillable-excel.md#template-import).
+    3. A módosított ER-formátum futtatása.
 
-        ![A létrehozott dokumentum áttekintése az Asztali Excel alkalmazásban.](./media/er-fillable-excel-example2-4.png)
+        ![A létrehozott dokumentum áttekintése az Excel asztali alkalmazásban.](./media/er-fillable-excel-example2-4.png)
+
+## <a name="limitations"></a>Korlátozások
+
+### <a name="known-epplus-library-limitations"></a>Az EPGra tár ismert korlátai
+
+#### <a name="external-data-sources"></a>Külső adatforrások
+
+Ha valamelyik sablon olyan kimutatást tartalmaz, amely egy külső adatforrásra hivatkozó modellen alapul, és engedélyezve van az EPGra tár használatának engedélyezése az elektronikus jelentési keretrendszerben funkció, akkor a következő hibaüzenet jelenik meg, amikor olyan ER-formátumot futtat, amely ezt a sablont használja kimenő dokumentum Excel formátumú PowerPivot [...](https://support.microsoft.com/office/create-a-pivottable-with-an-external-data-source-db50d01d-2e1c-43bd-bfb5-b76a818a927b)**előállítására**: "A gyorsítótárforrás nem munkalap." A probléma megoldásához a következő lehetőségek állnak rendelkezésre:
+
+- **Ajánlott:** Tervezd újra a használt Excel-megoldást:
+
+    1. Tássa ki a kimutatásokat tartalmazó részt egy különálló Excel-munkafüzetben (A munkafüzet). 
+    2. Az ER segítségével elő lehet hozni egy másik Excel-munkafüzetet (B-munkafüzetet) a Pénzügyben, amely tartalmazza a szükséges adatokat. 
+    3. A B munkafüzet generálása után nézze meg a B munkafüzetet.
+
+- Az EPGra beállítástól más lehetőséggel kapcsolhatja ki a funkciót. 
 
 ## <a name="additional-resources"></a>További erőforrások
 

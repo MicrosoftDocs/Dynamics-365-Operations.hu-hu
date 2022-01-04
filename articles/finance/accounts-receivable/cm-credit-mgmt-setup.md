@@ -2,7 +2,7 @@
 title: Hitelkezelési pereméterek beállítása
 description: Ez a témakör azt mutatja be, milyen beállításokkal lehet konfigurálni a Hitelkezelést a vállalkozás igényeinek kielégítésére.
 author: JodiChristiansen
-ms.date: 08/03/2020
+ms.date: 12/10/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 768fb5121ae6be513c4a533a20027cf784640b2a
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 745a51617f8c87c0f757aee0304ec3efb55d0f98
+ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753465"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7921215"
 ---
 # <a name="credit-management-parameters-setup"></a>Hitelkezelési pereméterek beállítása
 
@@ -31,7 +31,7 @@ Négy gyorslap van a **Hitel** szakaszban, ahol megváltoztathatja a Hitelkezel�
 
 ### <a name="credit-holds"></a>Hitelfelfüggesztések
 
-- Állítsa be az **Értékesítési rendelések értékei módosításának engedélyezése a várakoztatás feloldását követően** beállítást **Nem**, hogy meg legyen követelve az, hogy a feladási szabályok ismét ellenőrizve legyenek ha az értékesítési rendelés értéke (kiterjesztett ár) növelve lett, amióta az értékesítési rendelést felszabadították a várakoztatási listából. .
+- Állítsa be az **Értékesítési rendelések értékei módosításának engedélyezése a várakoztatás feloldását követően** beállítást **Nem**, hogy meg legyen követelve az, hogy a feladási szabályok ismét ellenőrizve legyenek ha az értékesítési rendelés értéke (kiterjesztett ár) növelve lett, amióta az értékesítési rendelést felszabadították a várakoztatási listából.
 - A **Visszavont rendelések okai** mezőben válassza ki azt a felszabadítási okot, amelyet alapértelmezésként fog használni, amikor az értékesítési rendelést, amely a hitelkeretkezelésen esett át érvényteleníti.
 - A **Ügyfelek hitelcsoportjainak hitelkorlátjának ellenőrzése** beállítást állítsa **Igen** értékre, ha ellenőrizni szeretné egy ügyfélhitelcsoport hitelkorlátját, ha az értékesítési rendelés egy ügyfélhitelcsoporthoz tartozik. A rendszer ellenőrzi a csoport hitelkeretét, majd ha szükséges, a program ellenőrzi a vevő hitelkeretét.
 - Állítsa be a **Hitelkorlát ellenőrzése, aha a fizetési feltételek magasabbak lettek** beállítás **Igen** értékre, hogy a fizetési feltételek rangsorolása ellenőrizve legyen annak meghatározásához, hogy a fizetési feltételek az értékesítési rendelésen eltérnek az ügyfél alapértelmezett fizetési feltételeitől. Ha az új fizetési feltételek magasabb rangúak, mint az eredeti fizetési feltételek, akkor a rendelés a hitelkeretkezeléssel kapcsolatos várakoztatásra kerül.
@@ -72,6 +72,10 @@ A **vevői hitelkezelési statisztika** adatterületen számos hitelezési stati
 
 - A Hitelkezelés esetében a vevői hitelkorlát a vevő pénznemében jelenik meg. Meg kell adnia az árfolyamtípust a hitelkerethez az ügyfél pénznemében. A **Hitelkorlát árfolyamtípusa** mezőben válassza ki azt az árfolyamtípust, amelyet az elsődleges hitelkeret és a vevő hitelkeretének átváltásához kíván használni.
 - A **Hitelkeret manuális szerkesztésének engedélyezése** beállítás **Nem** értékre állításával megakadályozhatja, hogy a felhasználók módosítsák a hitelkorlátot a **Vevő** oldalon. Ha ez a beállítás **Nem** értékre van állítva, akkor a vevő hitelkeretének módosítása csak hitelkorlát-korrekciós tranzakciók feladásával végezhető el.
+- Állítsa a **Készletfoglalások megkerülése** beállítást Igen **értékre**, hogy figyelmen kívül hagyja a készletfenntartásokat a hitelkezelési zárolási szabályok ellenőrzésekor. Ebben az esetben a rendszer ellenőrzi a teljes sormennyiségeket, és engedélyezi az ellenőrzőpont türelmi időszakait, függetlenül a készletfoglalás mennyiségétől.
+- Ha a hitelkezelés engedélyezve van, az **Üzenet beállítása a hitelkeret túllépése esetén** csak a szabadszöveges számlák feldolgozására szolgál. Bár az üzenetek továbbra is hozzáadódnak az értékesítési rendelésekhez, ha a vevők túllépték a hitelkeretüket, ezeknek az üzeneteknek a jelenléte nem akadályozza a megerősítést, a kitárolási listák és a szállítólevelek nyomtatását, illetve a számlák feladását.
+
+    A hitelkezelés alapértelmezés szerint engedélyezve van, de letilthatja azt. Ha engedélyezve van, a Hitelkezelési blokkolási szabályokkal és ellenőrzőpontokkal azonosíthatja, hogy az ügyfelek mikor lépték túl a hitelkeretüket. Ha le van tiltva, az üzenet beállítása alapján az üzenetnek a hitelkeret túllépése esetén hozzáadott üzenetek **segíthetnek** azonosítani, hogy a vevők mikor lépték túl a hitelkeretüket.
 
 ### <a name="number-sequences-and-shared-number-sequence-parameters"></a>Számsorozatok és megosztott számsorozat paraméterei
 
