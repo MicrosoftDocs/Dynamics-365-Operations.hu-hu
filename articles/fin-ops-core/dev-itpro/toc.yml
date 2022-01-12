@@ -1010,8 +1010,10 @@
                   href: lifecycle-services/use-translation-service.md
                 - name: Dokumentációs fájlok fordítása
                   href: lifecycle-services/use-translation-service-ua.md
-                - name: Fordításimemória-fájlok
+                - name: Fordítómemória-fájlok
                   href: lifecycle-services/use-translation-service-tm.md
+                - name: Azure DevOps bővítmény (nyilvános előzetes verzió)
+                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform-integráció
           items:
             - name: Áttekintés
@@ -1602,6 +1604,8 @@
                   href: sysadmin/retryable-batch.md
                 - name: Kötegelt feladat másolása
                   href: sysadmin/copy-batch-job.md
+                - name: Prioritáson alapuló kötegütemezés
+                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: Aktív kötegidőszakok
                   href: sysadmin/activeperiod.md
                 - name: Nyári időszámítás támogatása aktív kötegelési időszakoknál

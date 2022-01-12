@@ -98,8 +98,6 @@
                       href: get-started/whats-new-commerce-10-0-23.md
                     - name: Commerce 10.0.22 (2021. november)
                       href: get-started/whats-new-commerce-10-0-22.md
-                    - name: Commerce 10.0.21 (2021. október)
-                      href: get-started/whats-new-commerce-10-0-21.md
                 - name: Eltávolított vagy elavult funkciók
                   items:
                     - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -198,7 +196,7 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-                - name: Finance and OperationsAlkalmazások architektúrája
+                - name: Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
                 - name: Microsoft FastTrack
                   href: 'https://docs.microsoft.com/dynamics365/fasttrack/'
@@ -842,7 +840,7 @@
           items:
             - name: Kimutatások áttekintése
               href: retail-statements.md
-            - name: Tranzakció konzisztencia-ellenőrzése
+            - name: Üzleti tranzakciók ellenőrzése kimutatásszámításhoz
               href: valid-checker.md
             - name: Kiskereskedelmi tranzakciók konzisztencia-ellenőrzési szabályainak letiltása
               href: disable-consistency-check-rule.md
@@ -1286,6 +1284,8 @@
               href: localizations/fiscal-integration-for-retail-channel.md
             - name: A Commerce csatorna pénzügyi integrálásának beállítása
               href: localizations/setting-up-fiscal-integration-for-retail-channel.md
+            - name: A pénzügyi integrációs minta buildelési folyamatának beállítása
+              href: localizations/fiscal-integration-sample-build-pipeline.md
             - name: A kiskereskedelmi üzletek felhasználó által megadott tanúsítványprofiljai
               href: localizations/certificate-profiles-for-retail-stores.md
             - name: Regulatory Configuration Service (RCS)
@@ -1322,6 +1322,8 @@
               items:
                 - name: Pénzügyi regisztrációs szolgáltatás integrációját bemutató minta Ausztriára vonatkozóan
                   href: localizations/emea-aut-fi-sample.md
+                - name: Az Ausztriára vonatkozó pénzügyi integrációs minta központi telepítési irányelvei (örökölt)
+                  href: localizations/emea-aut-fi-sample-sdk.md
             - name: Brazília
               items:
                 - name: Commerce honosítása Brazíliára vonatkozóan
@@ -1358,12 +1360,16 @@
                   items:
                     - name: Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Csehországra vonatkozóan
                       href: localizations/emea-cze-fi-sample.md
+                    - name: A Cseh Köztársaságra vonatkozó pénzügyi integrációs minta központi telepítési irányelvei (örökölt)
+                      href: localizations/emea-cze-fi-sample-sdk.md
                 - name: Lengyelország
                   items:
                     - name: Adóügyi nyomtató integrációját bemutató minta Lengyelországra vonatkozóan
                       href: localizations/emea-pol-fpi-sample.md
                     - name: Ügyfélinformációk kezelése Lengyelországra vonatkozóan
                       href: localizations/emea-pol-customer-information.md
+                    - name: A Lengyelországra vonatkozó pénzügyi integrációs minta központi telepítési irányelvei (örökölt)
+                      href: localizations/emea-pol-fpi-sample-sdk.md
             - name: Franciaország
               items:
                 - name: Pénztárgép funkciói
@@ -1380,6 +1386,8 @@
               items:
                 - name: Adóügyi regisztrációs szolgáltatás integrációját bemutató minta Németországra vonatkozóan
                   href: localizations/emea-deu-fi-sample.md
+                - name: A Németországra vonatkozó pénzügyi integrációs minta központi telepítési irányelvei (örökölt)
+                  href: localizations/emea-deu-fi-sample-sdk.md
             - name: India
               items:
                 - name: Áruk és szolgáltatások adójának (GST) integrálása a pénztárgépek esetén
@@ -1398,6 +1406,8 @@
                   href: localizations/emea-ita-fpi-sample.md
                 - name: Ügyfélinformációk kezelése (Olaszország)
                   href: localizations/emea-ita-customer-information.md
+                - name: Az Olaszországra vonatkozó pénzügyi integrációs minta központi telepítési irányelvei (örökölt)
+                  href: localizations/emea-ita-fpi-sample-sdk.md
             - name: Mexikó
               items:
                 - name: Globális CFDI e-számlák Mexikóban
@@ -1407,6 +1417,8 @@
                 - name: Pénztárgép funkciói
                   href: localizations/emea-nor-cash-registers.md
                 - name: Pénztárgépek telepítésére vonatkozó irányelvek
+                  href: localizations/emea-nor-fi-deployment.md
+                - name: Pénztárgépek telepítésére vonatkozó irányelvek (korábbi)
                   href: localizations/emea-nor-loc-deployment-guidelines.md
             - name: Oroszország
               items:
@@ -1432,6 +1444,8 @@
                   href: localizations/emea-swe-cash-registers.md
                 - name: Ellenőrzőegység integrációs mintája Svédország esetén
                   href: localizations/emea-swe-fi-sample.md
+                - name: A Svédországra vonatkozó ellenőrzőegység integrációs minta központi telepítési irányelvei (örökölt)
+                  href: localizations/emea-swe-fi-sample-sdk.md
                 - name: A Retail POS ellenőrzőegységekkel való integrációját bemutató minta (örökölt)
                   href: localizations/retail-sdk-control-unit-sample.md
         - name: Jelentéskészítés és Power BI-integrációk
@@ -2466,6 +2480,8 @@
                       href: e-commerce-extensibility/set-up-key-vault.md
                     - name: Kérési folyamat beépülő moduljához tartozó horog létrehozása
                       href: e-commerce-extensibility/request-pipeline-hook.md
+                    - name: Képösszetevő
+                      href: e-commerce-extensibility/image-component.md
                 - name: Adatműveletek fejlesztése
                   items:
                     - name: Adatműveletek áttekintése
@@ -2574,6 +2590,8 @@
                   href: dev-itpro/retail-sdk/SDK-build-pipeline.md
                 - name: Minták és csomagok letöltése a GitHub és NuGet portálról
                   href: dev-itpro/retail-sdk/sdk-github.md
+                - name: A Visual Studio 2017 buildügynök beállítása a Modern POS felépítéséhez
+                  href: dev-itpro/retail-sdk/mpos-build-agent.md
                 - name: Retail szoftverfejlesztői készlet (SDK) GYIK
                   href: dev-itpro/retail-sdk/sdk-faq.md
             - name: Pénztár (POS) bővíthetősége

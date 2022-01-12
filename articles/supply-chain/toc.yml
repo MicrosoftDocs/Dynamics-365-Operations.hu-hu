@@ -2,8 +2,36 @@
   items:
     - name: Dynamics 365 Supply Chain Management
       items:
-        - name: Dynamics 365 Supply Chain Management kezdőlapja
+        - name: A Dynamics 365 Supply Chain Management kezdőlapja
           href: index.md
+        - name: Új vagy módosult elemek
+          items:
+            - name: Új vagy módosult elemek a Finance and Operations alkalmazásokban
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+            - name: A Supply Chain Management újdonságai vagy módosításai
+              items:
+                - name: Újdonságok és változások a Supply Chain Management kezdőlapján
+                  href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.24 (2022. február)
+                  href: get-started/whats-new-scm-10-0-24.md
+                - name: Supply Chain Management 10.0.23 (2022. január)
+                  href: get-started/whats-new-scm-10-0-23.md
+                - name: Supply Chain Management 10.0.22 (2021. november)
+                  href: get-started/whats-new-scm-10-0-22.md
+                - name: Supply Chain Management 10.0.21 (2021. október)
+                  href: get-started/whats-new-scm-10-0-21.md
+            - name: Eltávolított vagy elavult funkciók
+              items:
+                - name: Eltávolított vagy elavult funkciók a kezdőlapon
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
+                  href: get-started/removed-deprecated-features-scm-updates.md
+                - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Az AX 2012 elhalasztott funkciói
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+            - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
         - name: Első lépések
           items:
             - name: Szolgáltatásleírás
@@ -62,34 +90,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Raktárkezelés konfigurálása helyszíni telepítések esetében
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Új vagy módosult elemek
-              items:
-                - name: Új vagy módosult elemek a Finance and Operations alkalmazásokban
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                - name: A Supply Chain Management kezelésének új vagy módosított adatai
-                  items:
-                    - name: Újdonságok és változások a Supply Chain Management kezdőlapján
-                      href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.24 (2022. február)
-                      href: get-started/whats-new-scm-10-0-24.md
-                    - name: Supply Chain Management 10.0.23 (2022. január)
-                      href: get-started/whats-new-scm-10-0-23.md
-                    - name: Supply Chain Management 10.0.22 (2021. november)
-                      href: get-started/whats-new-scm-10-0-22.md
-                    - name: Supply Chain Management 10.0.21 (2021. október)
-                      href: get-started/whats-new-scm-10-0-21.md
-                - name: Eltávolított vagy elavult funkciók
-                  items:
-                    - name: Eltávolított vagy elavult funkciók a kezdőlapon
-                      href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
-                      href: get-started/removed-deprecated-features-scm-updates.md
-                    - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Az AX 2012 elhalasztott funkciói
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentum-erőforrások
               items:
                 - name: Súgórendszer
@@ -178,7 +178,7 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and OperationsAlkalmazások architektúrája
+                - name: Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/
@@ -1617,9 +1617,11 @@
                   href: inventory/inventory-visibility-reservations.md
                 - name: Készletláthatóság nyilvános API-jai
                   href: inventory/inventory-visibility-api.md
-        - name: IoT intelligencia
+                - name: Készletláthatósággal kapcsolatos tanácsok
+                  href: inventory/inventory-visibility-tips.md
+        - name: IoT-intelligencia
           items:
-            - name: IoT-intelligencia kezdőlapja
+            - name: Az IoT-intelligencia kezdőlapja
               href: iot/iot-intelligence-home-page.md
             - name: Azure-erőforrások beállítása
               href: iot/iot-azure-setup.md
@@ -3573,7 +3575,9 @@
                   href: troubleshooting/inventory/while-splitting-the.md
             - name: Alaptervezés
               items:
-                - name: Az anyagjegyzék alábontása másképpen viselkedik a megerősített és a becsült termelési rendeléseknél.
+                - name: 'Ha több rendelést kezel, a rendszer nem talál egy tervezett rendelést'
+                  href: troubleshooting/planning/planned-order-not-exist.md
+                - name: Az anyagjegyzék alábontása másképpen viselkedik a megerősített és a becsült termelési rendeléseknél
                   href: troubleshooting/planning/bom-explosion-works-differently.md
                 - name: 'A késleltetés érték nem frissül, amikor átütemez egy tervezett rendelést'
                   href: troubleshooting/planning/delay-value-not-updated.md
