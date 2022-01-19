@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d6f58eab38d1aee97a5d39704255bf06a168b36c
-ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
-ms.translationtype: HT
+ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7581865"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952496"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Készletláthatóság telepítése és beállítása
 
@@ -71,6 +71,9 @@ Miután regisztrált egy alkalmazást, és hozzáad egy ügyféltitkot a Azure A
 1. Egyetért a feltételekkel a **Feltételek** jelölőnégyzet kiválasztásával.
 1. Válassza a **Telepítés** parancsot. A bővítmény állapota a következő: **Telepítés**. Ha a telepítés befejeződött, frissítse az oldalt. Az állapotnak **Telepítettre** kell változnia.
 1. A Dataverse-ben válassza ki az **Alkalmazások** szakaszt a bal oldali navigációban, és ellenőrizze, hogy sikeresen telepítve van-e **Készlet láthatósága** Power Apps. Ha az **Alkalmazások** szakasz nem létezik, lépjen kapcsolatba a Készletláthatóság termékcsapattal az [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) címen.
+
+> [!TIP]
+> Javasoljuk, hogy csatlakozzon a Készlet láthatósági bővítmények felhasználócsoporthoz, ahol hasznos segédeket találhat, behasználhatja a legújabb frissítéseit, és bármilyen kérdést feladhat, amelyek a készlet láthatóságának használatával kapcsolatban előfordulhatnak. A csatlakozáshoz e-mailt küld a készlet láthatósági termékcsoportjának inventvisibilitysupp@microsoft.com, és adja meg [az](mailto:inventvisibilitysupp@microsoft.com) ellátásilánc-kezelési környezet azonosítóját.
 
 > [!IMPORTANT]
 > Ha több LCS-környezete van, mindegyik környezethez hozzon létre egy másik Azure AD alkalmazást. Ha ugyanazt az alkalmazásazonosítót és bérlőazonosítót használja a készlet láthatósági bővítményének különböző környezetekben való telepítéséhez, jogkivonat-probléma fog előfordulni a régebbi környezetekben. Csak az utolsó telepített bővítmény lesz érvényes.

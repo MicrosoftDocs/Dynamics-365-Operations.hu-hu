@@ -2,7 +2,7 @@
 title: Human Resources kiépítése
 description: Ez a téma a Microsoft Dynamics 365 Human Resources új termelési környezetének biztosítását ismerteti.
 author: twheeloc
-ms.date: 08/11/2021
+ms.date: 01/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c84fdb3c5c61598dfd0934e769f4a7262ce74052
-ms.sourcegitcommit: 8439ce2d4ad5ee5c1ec870640b52b5d2e947a671
-ms.translationtype: HT
+ms.openlocfilehash: b5ea27c6650df0b94284902eb37e2169ea36261a
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/14/2021
-ms.locfileid: "7644527"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952702"
 ---
 # <a name="provision-human-resources"></a>Human Resources kiépítése
 
@@ -44,7 +44,7 @@ Az első üzenetkészlet vagy termelési környezet létesítása előtt szüks�
 
 A próbakörnyezet lehetővé teszi az emberi erőforrások funkcióinak kiértékelését az olyan személyek számára, akik még nem férnek hozzá Human Resources környezethez. Ha próbakörnyezetet létesít, és a hitelesített felhasználónak már van hozzáférése egy vagy több meglévő Human Resources környezethez, a rendszer átirányítja a felhasználót a meglévő környezetre vagy a környezetek listájára.
 
-A próbaverzió környezetet nem úgy tervezték, hogy termelési környezetekben használják őket. Csak a 60 napos próbaidőszakra korlátozódnak. A próbaidőszak lejártakor a környezet és az abban lévő összes adat törlődik, és nem állítható helyre. A környezet nem alakítható tesztkörnyezetté és éles környezetté. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
+A próbaverzió környezetet nem úgy tervezték, hogy termelési környezetekben használják őket. Csak a 30 napos próbaidőszakra korlátozódnak. A próbaidőszak lejártakor a környezet és az abban lévő összes adat törlődik, és nem állítható helyre. A környezet nem alakítható tesztkörnyezetté és éles környezetté. Regisztrálhat egy új próbakörnyezetre, miután lejárt a meglévő környezet.
 
 Az Emberi erőforrások próbakörnyezet létrehozásakor a bérlőn egy Power Apps próbakörnyezet is létrejön, és kapcsolódik a Emberi erőforrások környezethez. A "TestDrive" nevű Power Apps környezetben ugyanaz a próbaidőszak, mint az Emberi erőforrások környezetben.
 

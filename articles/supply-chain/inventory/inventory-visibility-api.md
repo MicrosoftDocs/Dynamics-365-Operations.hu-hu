@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: d676191f921d74a5a0ced934f3692dacbe7cd7b4
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 92c427d3063c34f263d5bc449be6fac695b5912d
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920100"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952627"
 ---
 # <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
 
@@ -48,6 +48,8 @@ A Microsoft biztosít egy out-of-box *Postman* kérésgyűjteményt. Ezt a gyűj
 
 > [!NOTE]
 > Az elérési útvonal {environmentId} része a Microsoft Dynamics Lifecycle Services (LCS) környezetazonosítója.
+> 
+> A tömeges API legfeljebb 512 rekordot ad vissza minden kéréshez.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>A Lifecycle Services környezetének megfelelő végpont megkeresése
 
@@ -249,7 +251,7 @@ A következő példa a `dimensionDataSource` nélküli törzstartalom mintáját
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Több változási esemény létrehozása
 
-Ez az API egyszerre több rekordot is létrehozhat. Az egyetlen különbség az API és az [egyszeri esemény API](#create-one-onhand-change-event) között a `Path` és a `Body` értékek. Ehhez az API-hoz a `Body` egy rekordtömböt biztosít.
+Ez az API egyszerre több rekordot is létrehozhat. Az egyetlen különbség az API és az [egyszeri esemény API](#create-one-onhand-change-event) között a `Path` és a `Body` értékek. Ehhez az API-hoz a `Body` egy rekordtömböt biztosít. A rekordok maximális száma 512, ami azt jelenti, hogy az elérhető tömeges módosítási API egyszerre legfeljebb 512 módosítási eseményt támogathat.
 
 ```txt
 Path:

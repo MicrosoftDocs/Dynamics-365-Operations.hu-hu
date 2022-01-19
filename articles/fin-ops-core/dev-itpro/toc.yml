@@ -512,6 +512,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Lifecycle Services (LCS)-kapcsolat létrehozása Azure Pipelines szolgáltatásban
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: LCS-kapcsolat hitelesítési feladatainak frissítése az Azure Pipelines szolgáltatásban elérhető MSAL felületre
+                  href: dev-tools/pipeline-lcs-connection-update.md
                 - name: A szolgáltatott Azure Pipeline frissítése új NuGet-csomagokhoz
                   href: dev-tools/pipeline-nuget-split.md
                 - name: Örökölt folyamat frissítése az Azure Pipelines szolgáltatásban
@@ -1480,13 +1482,15 @@
               href: perf-test/rsat/rsat-tutorial.md
             - name: Nem rendszergazda felhasználók konfigurálása
               href: perf-test/rsat/rsat-configure-nonadmin.md
-            - name: Gyakorlati tanácsok
+            - name: Bevált gyakorlatok
               href: perf-test/rsat/rsat-best-practices.md
-            - name: Adatagnosztikus tesztelés a Regression Suite Automation Tool használatával
+            - name: Adatagnosztikus tesztelés a Regression Suite Automation Tool segítségével
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+            - name: A Regression Suite Automation Tool (RSAT) futtatása párhuzamos végrehajtással
+              href: perf-test/rsat/rsat-parallel-execution.md
             - name: Hibaelhárítás
               href: perf-test/rsat/rsat-troubleshooting.md
-        - name: Megoldások kiadása a Lifecycle Services használatával
+        - name: Megoldások kiadása a Lifecycle Services segítségével
           items:
             - name: Fejlesztés és kiadás
               href: lcs-solutions/lcs-solutions-app-source.md

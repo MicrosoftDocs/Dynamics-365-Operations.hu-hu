@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: e9dc692061cec830f487e01a79075eda835bac23
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
-ms.translationtype: MT
+ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937660"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952598"
 ---
 # <a name="engineering-change-management-overview"></a>Tervezési változáskezelés áttekintése
 
@@ -71,6 +71,7 @@ Ezután kapcsolja be a konfigurációs kulcsokat a következő lépések végreh
 
 1. Ha használni szeretné a verziódimenziót is, jelölje be a **Termékdimenzió – Verzió** jelölőnégyzetet is. (Ez a jelölőnégyzet a listában lejjebb van, nem a **Műszaki módosítások kezelése** csomópont alatt.)
 1. Kapcsolja ki a karbantartási módot a [Karbantartási mód](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
+1. Adatbázis-szinkronizálás futtatása a konfigurációs kulcsok megfelelő engedélyezése érdekében.
 
 > [!IMPORTANT]
 > 2022 áprilisától kezdve a **Mérnöki változások kezelése** és a **Termékdimenzió – Verzió** licenckulcsok alapértelmezés szerint engedélyezve lesznek minden új telepítés esetén, de szükség esetén továbbra is letilthatja őket.

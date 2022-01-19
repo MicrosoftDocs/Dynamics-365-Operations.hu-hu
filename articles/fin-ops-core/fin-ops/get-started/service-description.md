@@ -2,19 +2,19 @@
 title: A Finance and Operations-alkalmazások szolgáltatásleírása
 description: Ez a témakör a Finance and Operations-alkalmazások szolgáltatásleírását tartalmazza.
 author: tomhig
-ms.date: 12/07/2021
+ms.date: 01/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: f7ce73018fda79156cc7ef3d4e1faa3fedf966f8
-ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7898389"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952366"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások szolgáltatásleírása
 
@@ -50,7 +50,7 @@ A Finance and Operations-alkalmazások működési modellje a szolgáltatás tel
 
 ### <a name="customer-activities"></a>Ügyféltevékenységek
 
-Az ügyfelek a [Dynamics 365 implementáció útmutatóját](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide), a keretrendszert, valamint [Success by Design](/dynamics365/fasttrack/success-by-design-overview), [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) rendszernek a megoldás megvalósításához rendelkezésre álló eszközöket és gyakorlati sablonokat követik, partnerüknek és [Microsoft FastTrackjüknek](/dynamics365/fasttrack/) megfelelően. Gyakori tevékenységek a következők:
+Az ügyfelek a Dynamics 365 implementáció útmutatóját, a keretrendszert, valamint [a](/dynamics365/fasttrack/)[...](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide)[Success by Design](/dynamics365/fasttrack/success-by-design-overview)[Lifecycle Services rendszernek a megoldás megvalósításához rendelkezésre álló eszközöket és gyakorlati sablonokat követik, partnerüknek és Microsoft FastTrackjüknek](../../dev-itpro/lifecycle-services/lcs.md) megfelelően. Gyakori tevékenységek a következők:
 
 - Felhasználói identitás és biztonságkezelés
 - Üzleti folyamatok meghatározása, kialakítása és működtetása
@@ -117,7 +117,7 @@ A Finance and Operations-alkalmazásokat világszerte számos Azure-régió szol
 ### <a name="countryregion-specific-considerations"></a>Ország- vagy régióspecifikus szempontok
 
 - A szabályozott iparágban vagy kereskedelmi szervezetben található olyan vevőknek, akik entitásokkal rendelkeznek Franciaországban, és helyi adattárolási helyre van szükségük, tekintsék át: [Finance and Operations Franciaországban](../../dev-itpro/deployment/france-local-deployment.md).
-- Az ügyfelek, akik Kínában folytatnak üzletet, tekintsék át: [Finance and Operations amelyet a 21Vianet működtet Kínában](../../dev-itpro/deployment/china-local-deployment.md).
+- A kínai műveletekkel működő vevőknek át kell vizsgálniuk az Azure kínai forgatókönyvet, és a [kínai](/azure/china/) [Finance and Operations 21Vianet által működtetett könyveket kell](../../dev-itpro/deployment/china-local-deployment.md) működtetni.
 - Az Oroszországban üzletet folytató ügyfelek tekintsék át: [Oroszorszégi személyesadat-honosítással kapcsolatos törvény](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Általános adatvédelmi rendelet (GDPR)
@@ -356,6 +356,7 @@ A Microsoft elkötelezett a szolgáltatás havonta 99,9 százalékos elérhetős
 - **[Licencelési útmutató](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Ebben az útmutatóban további tudnivalókat olvashat a Dynamics 365 licencelésével kapcsolatban.
 - **[Ügyféltámogatás](https://dynamics.microsoft.com/support/)** – Iparágvezető támogatást nyújt a Dynamics 365-alkalmazásokhoz.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Itt kezelheti az alkalmazása életciklusát, és áttérhet tervezhető, megismételhető, jó minőségű megvalósításokra.
+- **[Dynamics 365 implementációs útmutató – a Dynamics 365-ös implementációs útmutató időkorrektív elveket tartalmaz, és általános útmutatást ad a mérnöknek, a buildnek, a tesztelésnek és a](https://aka.ms/D365ImplementationGuideFlip)** Success by Design Dynamics 365-alapú megoldásoknak.
 
 ## <a name="definitions"></a>Definíciók
 
@@ -428,6 +429,10 @@ A SLA a Microsoft online szolgáltatásaira vonatkozik. További információké
 ### <a name="service-update"></a>Szolgáltatásfrissítés
 
 A Microsoft a Finance and Operations-környezeteket a szolgáltatásfrissítések révén, rendszeres időközönként szervizeli. Az ügyfelek az üzleti igényeiknek megfelelően saját szolgáltatásfrissítési naptárat állíthatnak be. További információk: [Egyverziós szolgáltatásfrissítések](../../dev-itpro/lifecycle-services/oneversion-overview.md).
+
+### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
+
+Ez a keretrendszer a kritikus szakaszokban végzett végrehajtáson keresztül módszeres végigvezeti a megvalósítást, hogy garantálható legyen a Dynamics 365-ös megoldás optimális architektúrája, biztonsága, teljesítménye és felhasználói élménye.
 
 ### <a name="user"></a>Felhasználó
 

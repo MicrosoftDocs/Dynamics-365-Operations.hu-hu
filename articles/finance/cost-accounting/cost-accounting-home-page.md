@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 88dea2724f574383298c5deac9b76b4cd1d802b5427c8ec2a59a9d1ab0de4e0c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: ab125f963b8f2e00c8d937c6eea091970feaef65
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741584"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952546"
 ---
 # <a name="cost-accounting-home-page"></a>Költségkönyvelés kezdőlap
 
@@ -38,7 +38,7 @@ A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, ame
 
 | &nbsp; | &nbsp;  |
 |------|---|
-|  [Alapentitások konfigurálása (eLearning)](https://mbspartner.microsoft.com/Home) (CustomerSource-fiók szükséges)  |[Költségösszetevő-dimenziók](cost-elements.md)  |
+|  [Költségkönyvelés – Első lépések (További tudnivalók)](https://docs.microsoft.com/learn/modules/get-started-cost-accounting-dyn365-finance/)  |[Költségösszetevő-dimenziók](cost-elements.md)  |
 |  [Dimenzióhierarchia](dimension-hierarchy.md)  |[Költség-ellenőrzőegységek meghatározása](./tasks/define-cost-control-units.md)| 
 | [Felosztás alapjai](allocation-bases.md)|[Költségfelosztási irányelv létrehozása egy költségellenőrző-egységhez](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
 | [A költségkönyvelési főkönyv adatforrásának kezelése](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [Folyamat- és nyomkövetési forrásadatok](./tasks/process-trace-source-data.md)     | 

@@ -15,18 +15,18 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b3d56b3d19bd671d0015e87eefdf8ae62f4cee0
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: a4aa7369c84836154b8217a5b70267021f4028b1
+ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731540"
+ms.lasthandoff: 01/03/2022
+ms.locfileid: "7948475"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Feladat összetevőinek beállítása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a cikk azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben. 
+Ez a témakör azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben. 
 
 Feladatok létrehozása előtt be kell állítania bizonyos referenciaadatokat. Létrehozhat olyan feladatot is, amelynek csak neve van. További információk - például beosztás - megadásával viszont alapértelmezett értékek biztosíthatók a feladathoz rendelt beosztások számára. Emellett a beírt adatok egy része használható kompenzációs konstrukciók szűréséhez konkrét feladatokhoz. Ha szeretne jogosultságot beállítani, amelyet felhasználhat bizonyos feladathoz tartozó kompenzációs konstrukciók szűrésére, úgy állítson be feladatbeosztásokat és feladattípusokat a feladatok beállítása előtt. Ha ezen alapértelmezett értékek elérhetők, időt takaríthat meg, amikor beosztások hozzáadását végzi a feladathoz. 
 
@@ -60,7 +60,7 @@ A beosztási funkciók magas szintű funkcionális kategóriákat írnak le maga
 A beosztási funkciók karbantartásához használja a **Beosztási funkciók** oldalt. A **Beosztási funkciók** oldalon adja meg a beosztási funkció azonosító kódját és rövid leírását.
 
 ## <a name="compensation"></a>Kompenzáció
-Ha fix kompenzációs konstrukciót szeretne hozzárendelni egy olyan alkalmazotthoz, aki egy adott beosztásban van egy adott feladaton belül, kompenzációs szinteket kell beállítania a feladathoz. A kompenzációs szint akkor használatos, amikor a minimális, a középső és a maximális összeg be van állítva **·** egy kompenzációs struktúrában (kompenzációs rács). Fix kompenzációs konstrukció létrehozása esetén a kompenzációs szerkezetet kell kiválasztani. A kompenzációs struktúra tartalmazza a kompenzációs szintet is. Amikor egy alkalmazotthoz fix kompenzációs konstrukciót választ, a kiválasztható kompenzációs szintek az alkalmazott beosztásához hozzárendelt feladattól függenek. A kompenzáció beállításával kapcsolatos további információkért lásd: [Kompenzációs konstrukciók](hr-compensation-overview.md).
+Ha fix kompenzációs konstrukciót szeretne hozzárendelni egy olyan alkalmazotthoz, aki egy adott beosztásban van egy adott feladaton belül, kompenzációs szinteket kell beállítania a feladathoz. A kompenzációs szint akkor használatos, amikor a minimális, a középső és a maximális összeg be van állítva **egy** kompenzációs struktúrában (kompenzációs rács). Fix kompenzációs konstrukció létrehozása esetén a kompenzációs szerkezetet kell kiválasztani. A kompenzációs struktúra tartalmazza a kompenzációs szintet is. Amikor egy alkalmazotthoz fix kompenzációs konstrukciót választ, a kiválasztható kompenzációs szintek az alkalmazott beosztásához hozzárendelt feladattól függenek. A kompenzáció beállításával kapcsolatos további információkért lásd: [Kompenzációs konstrukciók](hr-compensation-overview.md).
 
 ## <a name="job-skills"></a>Feladat – szakértelem
 A feladathoz tartozó szakértelem írja le a feladat végrehajtásához szükséges készségeket. A feladat minden szakértelmi eleméhez társítani kell a szakértelem szintjét. A szakértelem szintjeit a felhasználó határozza meg. Jelzik, hogy milyen szintű tudás vagy jártasság szükséges az szakterületen. A vállalatok beállíthatnak például numerikus, 1-től 5-ig terjedő szintrendszert, amelyben az **1** a kezdő, az **5** pedig a szakértő szintet jelzi. Másik lehetőségként a vállalatok beállíthatnak **Kezdő**, **Haladó** és **Szakértő** jelölésű szinteket is. A szakértelem szintjének beállítása után a szakértelem fontossága is beállítható. Ha például egy könyvelőnek alapos Microsoft Excel-ismeretekkel kell rendelkezni, létrehozható egy **Excel-ismeretek** szakértelem. A szakértelemszinthez ezután beállítható a **Haladó** érték, míg a fontossághoz a **Legfontosabb** szint.

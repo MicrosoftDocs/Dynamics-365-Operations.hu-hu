@@ -2,7 +2,7 @@
 title: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
 description: Ez a témakör azt mutatja be, hogyan lehet az Elektronikus jelentéskészítés (ER) formátumát egy Excel-sablon kitöltéséhez tervezni, majd a kimenő Excel-formátumú dokumentumokat generálni.
 author: NickSelin
-ms.date: 12/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 87d5929557e5120a5339ee46eac655fd399679d1
-ms.sourcegitcommit: f51e74ee9162fe2b63c6ce236e514840795acfe1
+ms.openlocfilehash: 9b1c83894d93789a270ed4521ba7f80da70285ac
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7943612"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952652"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
 [!include[banner](../includes/banner.md)]
 
-Tervezhet [Elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) formátumú konfiguráció, aminek olyan ER formátumkomponense van, amit a kimenő dokumentumok Microsoft Excel-munkafüzetformátumban való konfigurálására használhat. Erre a célra külön ER formátumú komponenseket kell használni.
+Elektronikus jelentéskészítő (ER) formátumkonfigurációt tervezhet, amely egy ER formátumösszetevővel rendelkezik, és amely konfigurálható a kimenő dokumentumok munkafüzet [formátumú](general-electronic-reporting.md)Microsoft Excel előállítására. Erre a célra külön ER formátumú komponenseket kell használni.
 
 Ha további tájékoztatást szeretne erről a funkcióról, kövesse a [Jelentések készítésének konfigurációja OPENXML formátumban](tasks/er-design-reports-openxml-2016-11.md) témakör lépéseit.
 
@@ -379,7 +379,7 @@ Ha valamelyik sablon olyan kimutatást tartalmaz, amely egy külső adatforrásr
     2. Az ER segítségével elő lehet hozni egy másik Excel-munkafüzetet (B-munkafüzetet) a Pénzügyben, amely tartalmazza a szükséges adatokat. 
     3. A B munkafüzet generálása után nézze meg a B munkafüzetet.
 
-- Az EPGra beállítástól más lehetőséggel kapcsolhatja ki a funkciót. 
+- A funkció kikapcsolása: Az EPGra tár használatának engedélyezése az elektronikus jelentési keretrendszerben az EPGra beállítástól **különböző** beállítás használatához. 
 
 ## <a name="additional-resources"></a>További erőforrások
 

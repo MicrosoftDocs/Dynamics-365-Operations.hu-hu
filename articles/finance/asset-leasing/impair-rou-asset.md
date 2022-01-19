@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd79880dc8aa77eea8c16f350c0853013c6ad17b
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: b104cec399a368ada64a73688c42476e6fbd9e52
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890830"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947340"
 ---
 # <a name="impair-right-of-use-assets"></a>Használatijog-eszközök értékvesztésének könyvelése
 
@@ -44,6 +44,8 @@ A ROU-eszköz fennmaradó egyenlegét a fennmaradó időszakok száma alapján p
 
     > [!NOTE]
     > A értékvesztési tranzakció feladása után új könyvverzió jön létre.
+
+    > Ha a bérlet üzemi bérleti díjnak van minősítve, a értékvesztés utáni havi értékcsökkenés számítása straight-line értékcsökkenéssel történik.
 
 9. A visszaeső tárgyi eszközök értékcsökkenési ütemezésének megtekintéséhez nyissa meg a bérleti könyv tárgyieszköz-értékcsökkenési ütemezését. Az eszköz mostantól lineárisan leértékelt a **Fennmaradó időszak** mezőben megadott hónapok számának megfelelően.
 10. Az értékvesztési költségnapló bejegyzésének megtekintéséhez válassza az **Eszközlízing napló** lehetőséget az értékvesztett lízingkönyv műveletablakában. A rendszer létrehoz egy naplóbejegyzést, amely megterheli az értékvesztési költség könyvelési számlát, és jóváírja a lízingeszköz könyvelési számláját. 
@@ -100,6 +102,7 @@ Az alábbi táblázatok a példában használt lízing **Általános** és **Fiz
     | Könyv lezárása             | Nem       |
 
 6. Értékvesztési költség naplóbejegyzés létrehozása és feladása történt. A megtekintéshez nyissa meg az eszköz lízingnaplóját a lízingkönyvben. Figyelje meg, hogy az értékvesztés összegét az Értékvesztés költség feladási számlájára terhelték, és a ROU-eszköz feladási számlát jóváírták.
+
 7. Az értékvesztés nettó hatásának megtekintéséhez lépjen a kötelezettség- és eszköztranzakciók táblához. Figyelje meg, hogy az értékvesztési költség csökkentette a ROU-eszközt, de a lízingkötelezettség könyv szerinti értéke nem változott.
 
 Az értékvesztésnek van még egy hatása, amit figyelembe kell vennie. Mivel a ROU-eszköz összege most már sokkal kisebb, mint a lízingkötelezettség, az összeget másképp kell amortizáltatni, mint korábban. Pontosabban, az eszköz már lineárisan értékcsökkent a lízing teljes, fennmaradó 84 hónapjára, kezdve a tranzakció időpontjától.

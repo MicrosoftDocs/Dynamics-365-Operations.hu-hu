@@ -174,7 +174,7 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and OperationsAlkalmazások architektúrája
+                - name: Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/index
@@ -1212,6 +1212,8 @@
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: Pénzforgalmi előrejelzés engedélyezése
                   href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Külső adatok a pénzforgalmi előrejelzésekben
+                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Költségvetési javaslatok engedélyezése
                   href: finance-insights/enable-budget-proposal.md
                 - name: Adatintegrációs projekt létrehozása
@@ -1232,10 +1234,8 @@
                   href: finance-insights/budget-proposals.md
                 - name: Készpénzpozíció
                   href: finance-insights/cash-position.md
-                - name: Pénzforgalmi előrejelzés
+                - name: Készpénzre vonatkozó előrejelzés
                   href: finance-insights/cash-flow-forecast-intro.md
-                - name: Külső adatok használata pénzforgalmi előrejelzésekben
-                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Vevői fizetési előrejelzések
                   href: finance-insights/payment-insights-overview.md
                 - name: Vevői fizetési előrejelzések használata
@@ -1432,6 +1432,8 @@
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések a Szaúd-Arábiára vonatkozó Elektronikus számlázás használata során
                           href: localizations/e-invoicing-sa-get-started.md
+                        - name: Olasz FatturaPA és az SDI közvetlen integrációjának beállítása
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Az elektronikus számlázási szolgáltatás használata a szállítói számlák importálására
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Az elektronikus számlázás beállítása
@@ -1512,6 +1514,10 @@
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-gbr-vat-declaration.md
+                        - name: Norvégiai jelentés
+                          items:
+                            - name: Áfabevallás
+                              href: localizations/emea-nor-vat-declaration.md
                     - name: Adószámítás engedélyezése átmozgatási rendeléshez
                       items:
                         - name: Adófunkció támogatása átmozgatási rendelésekhez
@@ -1557,7 +1563,7 @@
                 - name: Áfabevallás
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Nemzetközi szolgáltatásokra vonatkozó jelentés
-                  href: localizations/emea-aut-vat-statement-details.md
+                  href: localizations/emea-aut-cross-border-services-report.md
                 - name: Osztrák Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Beszerzési illetékek
@@ -1824,7 +1830,7 @@
                   href: localizations/tasks/golden-tax-integration-export-setup.md
                 - name: Értékcsökkenés módjai tárgyi eszközöknél
                   href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Kínai Aranyadó adatentitás importálása
+                - name: Kínai Aranyadó fájljainak importálása
                   href: localizations/apac-chn-import-golden-tax-data-entity.md
                 - name: Havi átlagos készletköltségmodell
                   href: localizations/apac-chn-monthly-average-cost-model.md
@@ -2088,6 +2094,8 @@
                   href: localizations/finland.md
                 - name: Áfafizetéssel kapcsolatos jelentés Finnország esetén
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
+                - name: Finn Intrastat
+                  href: localizations/emea-fin-intrastat.md
             - name: Franciaország
               items:
                 - name: Franciaország – áttekintés
@@ -2610,6 +2618,8 @@
                   href: localizations/apac-idn-invoicing.md
                 - name: Áfabevallás Indonézia számára
                   href: localizations/apac-idn-ppn-declaration.md
+                - name: Adóelőleg-jelentés Indonéziában
+                  href: localizations/apac-idn-wht-declaration.md
             - name: Olaszország
               items:
                 - name: Olaszország – áttekintés

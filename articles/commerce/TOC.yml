@@ -2474,12 +2474,10 @@
                       href: e-commerce-extensibility/mock-sign-in.md
                     - name: A modul megjelenítendő tulajdonságainak konfigurálása kontextus alapján
                       href: e-commerce-extensibility/configure-properties-context.md
-                    - name: Modulok globalizálása a CultureInfoFormatter osztály használatával
+                    - name: Modulok globalizálása a CultureInfoFormatter osztály segítségével
                       href: e-commerce-extensibility/globalize-modules.md
                     - name: Azure Key Vault beállítása a biztonságos kulcskezeléshez
                       href: e-commerce-extensibility/set-up-key-vault.md
-                    - name: Kérési folyamat beépülő moduljához tartozó horog létrehozása
-                      href: e-commerce-extensibility/request-pipeline-hook.md
                     - name: Képösszetevő
                       href: e-commerce-extensibility/image-component.md
                 - name: Adatműveletek fejlesztése
