@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: b21fba6fbfd4fe2a645efd56fb3592252c2a3fe0
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: e4a120dd4199b143c3103392515c85e7b887194b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920623"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982720"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management rendszerben
 
@@ -29,9 +29,9 @@ ms.locfileid: "7920623"
 
 Ha látni szeretné, hogy mi új vagy módosult a Dynamics 365 Supply Chain Management egyes verzióiban, tekintse át az alábbi témaköröket.
 
-| Verzió | Szám felépítése | Automatikus frissítés rendelkezésre állása | További tudnivalók |
+| Verzió | Szám felépítése | Automatikus frissítés rendelkezésre állása | További információ |
 |---|---|---|---|
-| 10.0.24 | 10.0.1084 | február 2022. | [A Dynamics 365 Supply Chain Management 10.0.24 előzetes verziója](whats-new-scm-10-0-24.md) |
+| 10.0.24 | 10.0.1084 | február 2022. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.24-es verziójában](whats-new-scm-10-0-24.md) |
 | 10.0.23 | 10.0.1037 | Január 2022. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.23-es verziójában](whats-new-scm-10-0-23.md) |
 | 10.0.22 | 10.0.995 | 2021. november | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.22-es verziójában](whats-new-scm-10-0-22.md) |
 | 10.0.21 | 10.0.960 | Október 2021. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.21-es verziójában](whats-new-scm-10-0-21.md) |
@@ -62,8 +62,8 @@ Ha látni szeretné, hogy mi új vagy módosult a 2019 november előtti kiadáso
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.3      | 10.0.107         | június 2019.        | [Új vagy módosult elemek a Dynamics 365 for Finance and Operations 10.0.3-as verziójában (2019. június)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md)                    |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.2      | 10.0.80          | május 2019.         | [Új vagy módosult elemek a Dynamics 365 for Finance and Operations 10.0.2-es verziójában (2019. május)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-2.md)                     |
 | Microsoft Dynamics 365 for Finance and Operations                     | 10.0.1      | 10.0.51          | április 2019.       | [Új vagy módosult elemek a Dynamics 365 for Finance and Operations 10.0.1-es verziójában (2019. április)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                   |
-| Microsoft Dynamics 365 for Finance and Operations                     | 10.0        | 10.0.8           | április 2019.       | [Új vagy módosult elemek a Finance and Operations 10.0-es verziójában (2019. április)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                                      |
-| Microsoft Dynamics 365 for Finance and Operations                     | 8,1,3       | 8,1,227          | Január 2019.     | [Új vagy módosult elemek a Dynamics 365 for Finance and Operations 8.1.3. verziójában (2019. január)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-3.md)                   |
+| Microsoft Dynamics 365 for Finance and Operations                     | 10.0        | 10.0.8           | április 2019.       | [Újdonságok és változások a Finance and Operations Enterprise10.0 verziójában (2019. április) ](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-1.md)                                      |
+| Microsoft Dynamics 365 for Finance and Operations                     | 8.1.3       | 8.1.227          | Január 2019.     | [Új vagy módosult elemek a Dynamics 365 for Finance and Operations 8.1.3. verziójában (2019. január)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-3.md)                   |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8,1,2       | 8,1,195          | december 2018.    | [Új vagy módosult elemek a Dynamics 365 for Finance and Operations szolgáltatásban 8.1.2. verzió (2018. december)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-2.md)                  |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8,1,1       | 8,1,170          | október 2018.     | [Új vagy módosult elemek a Dynamics 365 for Finance and Operations 8.1.1 verziójában (2018. október)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-1.md)                   |
 | Microsoft Dynamics 365 for Finance and Operations                     | 8,1         | 8,1,136          | október 2018.     | [Új vagy módosult elemek a Dynamics 365 for Finance and Operations 8.1 verziójában (2018. október)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-8-1-october-2018.md)          |

@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "14151"
 - intro-internal
@@ -17,22 +17,21 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-20
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: dfc4d9cb5be4d8d287122fd33bf09b0570498169
-ms.sourcegitcommit: a46f0bf9f58f559bbb2fa3d713ad86875770ed59
-ms.translationtype: MT
+ms.openlocfilehash: 8cc7b2d733cdcf1adef2885b7900ea312a10d98c
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/15/2021
-ms.locfileid: "7813747"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968810"
 ---
 # <a name="finance-insights-home-page"></a>A Finance Insights kezdőlapja
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A pénzügyi információk konfigurálható és extensible megoldásokat kínálnak, amelyek segítségével intelligens módon előre jelezhető a vállalat pénzforgaloma, várható, hogy mikor kap fizetést a kinnlevőségekért, és olyan költségvetési javaslatot generál, amely gyorsíthatja a költségvetés-folyamot. Ezek a funkciók intelligens gépi oktatási sablonokat használnak a modellek ön által használt felhasználásával (például egy külső féltől származó adatok, például egy iroda felhasználói jelentési információi). Ezek az intelligens képességek a döntéshozásról nyújtanak tájékoztatást, és segítséget nyújtanak annak érdekében, hogy hatékonyan reagáljanak a jelenlegi és várható üzleti problémákra. Ön felelős minden adatért, amely a Pénzügyi információkkal együtt (vagy ezek kimenetei alapján) használatos.
 
 > [!NOTE]
-> A pénzügyi előnézet előnézete az Amerikai Egyesült Államokban, Kanadában, az Egyesült Királyságban, Európa, Ázsia csendes-óceáni, Japánban, Ausztráliában és Új-Zélandban való telepítésre használható. A Microsoft fokozatosan adja hozzá a további régiók támogatását.
+> A pénzügyi információk rendelkezésre állnak az Amerikai Egyesült Államokban, Kanadában, az Egyesült Királyságban, Az Európa, Ázsia csendes-óceáni, Japánban, Ausztráliában és Új-Zélandban való telepítéshez. A Microsoft fokozatosan adja hozzá a további régiók támogatását.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -76,7 +75,7 @@ A pénzforgalmi előrejelzés engedélyezéséhez végre kell hajtson egy sor l�
 
 ### <a name="enable-budget-proposals"></a>Költségvetési javaslatok engedélyezése
 
-A Költségvetési javaslatok funkció egy gépi tanulási modellt és a szervezet előzményadatait használja a költségvetési javaslat létrehozásához. A létrehozott javaslat segítségével elindíthatja a manuális folyamatoknál hatásosabb és hatékonyabb költségvetés-kezelési folyamatot. A funkció engedélyezéséhez szükséges konkrét lépéseket a [Költségvetési javaslatok engedélyezése](enable-budget-proposal.md) című témakörben talál. 
+A Költségvetési javaslatok funkció egy gépi tanulási modellt és a szervezet előzményadatait használja a költségvetési javaslat létrehozásához. A létrehozott javaslat segítségével elindíthatja a manuális folyamatoknál hatásosabb és hatékonyabb költségvetés-kezelési folyamatot. A funkció engedélyezésének részletes lépéseit lásd A költségvetési [javaslatok engedélyezése](enable-budget-proposal.md). 
 
 ## <a name="using-finance-insights-features"></a>A Finance Insights funkcióinak használata
 
@@ -84,14 +83,14 @@ A Költségvetési javaslatok funkció egy gépi tanulási modellt és a szervez
 
 - A Vevői kifizetések előrejelzései segítségével a beszedési tevékenységek proaktív megkezdéséhez szükséges információkat tudni a Vevői kifizetések [előrejelzésének használata](use-customer-payment-predictions.md).
 - A funkció használatának megkezdése után, az előrejelzési modell hatékonyságának kiértékelésében hasznos információkkal kapcsolatban további tájékoztatást a [Kezdeti vevői fizetési előrejelzési modell kiértékelése](evaluate-payment-prediction.md) szakaszban talál.
-- Az előrejelzés létrehozásához és ezáltal a hatékonyság növeléséhez használt adatok módosításához az [Előrejelzési modell javítása](improve-model.md) című témakörben talál tájékoztatást.
+- Az előrejelzés létrehozásához és ezáltal a hatékonyság növeléséhez használt adatok módosításához az[ Előrejelzési modell javítása](improve-model.md) című témakörben talál tájékoztatást.
 - Az AI-előrejelzési modellek eredményeivel kapcsolatos további információt a [Gépi tanulási modellek eredményei](confusion-matrix.md) részben talál.
 
 ### <a name="using-cash-flow-forecasts"></a>Pénzforgalmi előrejelzés használata
 
 A Pénzforgalmi előrejelzés funkció segítségével pontosabban megbecsülheti készpénzpozícióját. Az intelligens pénzforgalmi előrejelzés a Dynamics 365 Finance. A meglévő képesség áttekintéséhez olvassa el a [Pénzforgalmi előrejelzés](../cash-bank-management/cash-flow-forecasting.md) című témakört.
 
-- A Pénzforgalmi előrejelzések új képességeiről a [Pénzforgalmi előrejelzés](cash-flow-forecast-intro.md) című témakörben olvashat.
+- A pénzforgalmi előrejelzésekben új képességekre vonatkozó tudnivalókat lásd a [Pénzforgalmi előrejelzésben](cash-flow-forecast-intro.md).
 - A pénzforgalmi előrejelzésben szereplő külső adatok importálásáról a [Külső adatok használata a pénzforgalmi előrejelzésekben](external-data-in-cash-flow.md) című témakörben olvashat. 
 - Ha tudni szeretné, hogyan használható a rövid távú pénzforgalom az AI-modell használatával, olvassa el a [Készpénzpozíció](cash-position.md) című témakört.
 - A pénzforgalmi pozíciók és a pénzforgalmi előrejelzések pillanatképként való mentésével, valamint a pillanatképek tényleges adatokkal való összehasonlításáról a [Pillanatképek áttekintése](payment-snapshots.md) című témakörben olvashat.
@@ -102,6 +101,6 @@ A költségvetés létrehozásának felgyorsításáról a [Költségvetési jav
 
 ## <a name="feedback-and-support"></a>Visszajelzés és támogatás
 
-Ha visszajelzést szeretne küldeni, vagy segítségre van szüksége, e-mailben küldje el a [pénzügyi információkat](mailto:fiap@microsoft.com).
+Ha visszajelzést szeretne küldeni, vagy ha segítségre van szüksége, e-mailben küldje el a [pénzügyi](mailto:fiap@microsoft.com) információkat.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

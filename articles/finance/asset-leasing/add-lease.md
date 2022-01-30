@@ -2,25 +2,25 @@
 title: Lingek hozzáadása vagy másolása (előzetes verzió)
 description: Ez a témakör azt mutatja be, hogyan lehet új lízinget létrehozni az eszközlízingben való adatok megadásával vagy egy meglévő lízing adatainak másolásával.
 author: moaamer
-ms.date: 12/06/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e6f47e7bccdfa5205209a290b2ce0d37f2e5a534
-ms.sourcegitcommit: c42d047cb866f7988f1879ac84cd45284a03abf8
+ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7931981"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967926"
 ---
 # <a name="add-or-copy-leases-preview"></a>Lingek hozzáadása vagy másolása (előzetes verzió)
 
@@ -35,8 +35,19 @@ A következő lépéseket követve hozzon létre egy lízinget az Eszközlízing
 1. A **Lízing összefoglalása** lap műveleti paneljén válassza ki az **Új** elemet.
 2. Adja meg a lízing adatait. A kötelezően kitöltendő mezők piros szegéllyel rendelkeznek.
 
-> A bérleti díj kezdő dátuma nem lehet korábbi, mint a lízing kezdési dátuma. Ha a lízing kifizetésének kezdő dátumát adja meg, amely korábban van, mint a bérlet kezdő dátuma, hibaüzenet jelenik meg.
-  
+A bérleti díj kezdő dátuma nem lehet korábbi a bérlet kezdő dátumán. Ha a bérlet kezdő dátumán korábbi dátumot ad meg a bérleti díj kifizetésére, akkor hibaüzenetet kap.
+
+Alapértelmezés szerint a Bérlet részletei lap Általános gyorslapján a Fizetési összeg lebontása beállítás Nem beállítás van megjelölve, ha a Fizetéslebontás engedélyezése az Eszköz paraméterei lapon Az Igen **beállítás** **van** **·** **·** **·** **·** **megjelölve**. 
+
+Ha a Kifizetés összegének lebontása beállítás Igen, a Fizetési ütemezés sorai gyorsábra Fizetési összeg **mezője** **·** **·** **zárolva** van. Ez lesz a kifizetés összegének összesítése, amely a kifizetési összegeket lebontó katalógusból később **van** beállítva.
+
+Válassza **ki a Kifizetés összegének** lebontását egy olyan lap megnyitásához, ahol hozzáadhatja a részletezett kifizetéstípusokat. Az **Összegek hozzáadása a kifizetés összeghez gombja az összegeket a Kifizetés összege** **mezőbe** mozgatja.
+
+> [!NOTE]
+> Ha egy tételes kifizetési összeget ad hozzá, majd az Esc billentyűt választja, a beírt összegek nem kerülnek be a Fizetési ütemezés sorai gyorsbillentyű Fizetési ütemezés **sorai** **·** **mezőbe**. Ehelyett a Kifizetés összegeit részletező párbeszédpanelen **tárolja** őket a rendszer. Ha azt szeretné, hogy a párbeszédpanelen a teljes összeg látható, válassza az Összeg oszlopot, válassza ki és tartsa lenyomva (vagy kattintson a jobb **gombbal**), majd válassza az Összesítés ezt az **oszlopot**. 
+
+A **Sor** másolása gomb a részletezett kifizetés részletezését másolja.
+
 ## <a name="create-a-lease-schedule"></a>Lízingütemezés létrehozása
 
 Miután befejezte a lízing adatainak megadását, hajtsa végre az alábbi lépéseket a lízingütemezés létrehozásához.
@@ -50,9 +61,9 @@ Miután befejezte a lízing adatainak megadását, hajtsa végre az alábbi lép
     A **Könyv részletei** lap mutatja, hogy a lízinget milyen módon kell elszámolni a hozzárendelt könyvek között. Itt megtekintheti a lízingütemezéseket.
 
     A fizetési ütemezés tartalmazza a **Lízing hozzáadása** lap **Fizetési ütemezés sorai** fül bemeneteit. Továbbra is módosíthatja az egyes kifizetési összegeket és a változó fizetéseket. A lízingkötelezettséget a módosított fizetési ütemezés alapján számítja ki a program.
-    
-> [!NOTE]
-> A lízing kifizetésének kezdő dátumának meg kell egynek vagy egy későbbi dátumnak kell lennie, mint a lízing kezdő dátumának. Hibaüzenet jelenik meg, ha a kifizetés kezdő dátuma korábbi, mint a bérlet kezdő dátuma. 
+
+    > [!NOTE]
+    > A bérleti díj kezdő dátuma nem lehet későbbi, mint a bérlet kezdő dátuma. Hibaüzenetet kap, ha a kifizetés kezdő dátuma korábbi a bérlet kezdő dátumán. 
 
 4. Miután befejezte a kifizetési ütemezés áttekintését, jelölje be az **Ütemezés jóváhagyása** jelölőnégyzetet. Az ütemezés megerősítése után a lízing már nem érhető el szerkesztésre.
 

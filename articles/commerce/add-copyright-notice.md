@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 89f1716cd71d191f419dfd1fb1db887af62335504724b4f08ead701d7f57efc6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 4a9a7fed4393f9c35b0bdc765fe7d0723c193f89
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715456"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964756"
 ---
 # <a name="add-a-copyright-notice"></a>Szerzői jogi értesítés hozzáadása
 
@@ -65,8 +65,6 @@ A szerzői jogi nyilatkozatot tartalmazó lábléc automatikusan megjelenik a ki
 [A CSS felülíró fájljainak használata](css-override-files.md)
 
 [Kedvencek ikon hozzáadása](add-favicon.md)
-
-[Üdvözlő üzenet hozzáadása](add-welcome-message.md)
 
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
 

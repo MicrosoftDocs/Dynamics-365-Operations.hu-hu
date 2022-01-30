@@ -3,24 +3,23 @@ title: Juttatáskezelés áttekintése
 description: Ez a témakör a Dynamics 365 Human Resources rendszerben található Juttatások kezelése funkció áttekintését nyújtja.
 author: twheeloc
 ms.date: 12/06/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.search.scope: Human Resources
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dc06fd2ef4992b4ef2e20ace4f5c6bcc0bffb9d2
-ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
+ms.openlocfilehash: 4cbe79a7e64477eaaefd2a5df2ca2ee34ef29f26
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892502"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982765"
 ---
 # <a name="benefits-management-overview"></a>Juttatáskezelés áttekintése
 
@@ -111,27 +110,27 @@ A rugalmas jóváírási programokkal az alkalmazottakat előre meghatározott s
 
 Ahhoz, hogy az alkalmazottakat juttatásokhoz lehessen regisztrálni, meg kell adnia a szükséges adatokat hozzájuk. 
 
-A munkavállalónak **beosztást kell** hozzárendelnie hozzájuk. **A** Beosztás hozzárendelhető a **Dolgozó vagy a Pozíció lapok alkalmazottjahoz a** Dolgozó **hozzárendelés** **frissítésével.** 
+Az alkalmazottnak beosztást kell **rendelnie** hozzá. A dolgozó hozzárendelésének frissítésével lehet beosztást hozzárendelni az alkalmazotthoz a Dolgozó vagy a **Beosztás** **·** **·** **lapokon**. 
 
-Ezután a munkavállalókat a kezdési időpontban rögzített kompenzációs tervbe kell regisztrálni, vagy **éves juttatási fizetéssel kell rendelkezniük.** Mielőtt rögzített kompenzációt rendel egy **alkalmazotthoz**, **pozíciót** kell hozzárendelni. 
+Ezután az alkalmazottakat a kezdő dátumuk napján fix kompenzációs konstrukcióba kell bevonni, vagy éves juttatásban kell **részesülnie**. A fix kompenzáció alkalmazotthoz való hozzárendelése előtt hozzá kell **rendelni egy** **beosztást**. 
 
 > [!NOTE] 
-> A **Rögzített kompenzáció kezdési dátuma nem lehet a** Pozíció hozzárendelés dátuma **előtt**.
+> A **fix kompenzáció kezdő dátuma** nem lehet a beosztás **hozzárendelési dátuma** előtti.
 
-Alternatív megoldásként, ha olyan alkalmazottja van, aki kiegészítő kompenzációt, például jutalékokat kap, hozzáadhat egy **juttatás éves** fizetésének összegét a munkavállalói nyilvántartásból. Az emberi erőforrások a **fix kompenzációs éves összeg helyett a juttatások éves fizetését használják** fel a fedezeti összegek **meghatározásakor**. A **juttatások évi fizetésének** érvényesnek kell lennie az alkalmazott kezdő dátumától vagy a juttatási időszak kezdetével, amelyik a legújabb. A juttatások éves fizetésének hozzárendeléséhez azonban nem szükséges **pozíció**. Az Előnyök éves fizetése funkció engedélyezéséhez **lépjen** a **Humánerőforrás-megosztott paraméterek** oldalra, az Előnyök kezelése **lapon**. Ez a funkció alapértelmezés szerint ki van kapcsolva.
+Másik lehetőségként, ha van olyan alkalmazott, aki jutalékhoz hasonló kiegészítő kompenzációt kap, hozzáadhatja a juttatások éves bérét **az** alkalmazotti rekordhoz. Az Emberi erőforrások az juttatások éves bérének összegét használják a fedezeti összegek meghatározásakor, nem pedig a fix kompenzáció **éves** **összegének** meghatározásakor. A **juttatások évi fizetésének** érvényesnek kell lennie az alkalmazott kezdő dátumától vagy a juttatási időszak kezdetével, amelyik a legújabb. A juttatások éves bérének hozzárendeléséhez azonban nincs **szükség** beosztásra. A Juttatások éves bér funkció engedélyezéséhez használja az Emberi erőforrások megosztott paraméterei lapot **a** Juttatások **kezelése** **lapon**. Ez a funkció alapértelmezés szerint ki van kapcsolva.
 
 > [!IMPORTANT]
-> Ha mind **a rögzített** kompenzációt, mind a juttatások éves **fizetését** beírják a munkavállaló számára, a juttatások éves fizetését használják fel a **fedezeti** összegek meghatározásához. A **Dolgozó lap Foglalkoztatási részletek** szakaszában **ki kell** választania egy értéket a **Juttatási fizetés gyakoriság** mezőben.
+> Ha az alkalmazottnak egy fix kompenzációt és egy éves bérösszeget is meg kell adni, a juttatások éves bérét használja a program **a** **·** **fedezeti** összegek meghatározására. A Dolgozó lap Foglalkoztatás részletei szakaszában ki kell választania egy értéket a Juttatás fizetésének **gyakorisága** **·** **mezőben**.
 
 ## <a name="configure-optional-employee-information"></a>Opcionális alkalmazotti adatok konfigurálása
 Ha olyan juttatási tervet hoz létre, amely nemen vagy életkoron alapuló arányokat használ, akkor meg kell adnia a születési dátumot és a nemet az alkalmazott számára a juttatási költség kiszámításához.
 
 ## <a name="process-employees-to-determine-eligibility"></a>Alkalmazottak feldolgozása a jogosultság meghatározásához
-Mielőtt az alkalmazottak tervekbe regisztrálhatók lennének, a jogosultsági feldolgozás futtatásával meg kell határozni, hogy mely konstrukciókra jogosultak. A jogosultsági folyamat eredményeit a **Folyamat eredménymegjelenítő című témakörben tekintheti** meg. További információért tekintse át a [Felvételi jogosultság feldolgozása](hr-benefits-process-enrollment-eligibility.md) részt.
+Mielőtt az alkalmazottak tervekbe regisztrálhatók lennének, a jogosultsági feldolgozás futtatásával meg kell határozni, hogy mely konstrukciókra jogosultak. Az alkalmazhatósági folyamat eredményeit a Folyamat **eredménymegjelenítője** megtekintheti. További információért tekintse át a [Felvételi jogosultság feldolgozása](hr-benefits-process-enrollment-eligibility.md) részt.
 
-## <a name="employees-select-plans-using-employee-self-service-optional"></a>Az alkalmazottak **az Alkalmazott önkiszolgáló (opcionális) használatával választják ki a terveket**
+## <a name="employees-select-plans-using-employee-self-service-optional"></a>Alkalmazottak terveket választnak **az Alkalmazott önkiszolgáló rendszer** használatával (nem kötelező)
 
-Nyílt regisztráció esetén az alkalmazottak újonnan kerülnek fel, vagy életesemény történik, az alkalmazottak kiválaszthatják vagy frissíthetik juttatásaikat **az Alkalmazott önkiszolgáló** segítségével. A további tudnivalókat lásd: [Alkalmazotti önkiszolgáló rendszer konfigurálása](hr-benefits-setup-employee-self-service.md).
+Nyitott felvétel esetén az alkalmazottakat újonnan felvették, vagy egy életeseményre kerül sor, és az alkalmazottak az alkalmazott önkiszolgáló rendszerével választhatják ki vagy frissíthetik a **juttatásukat**. A további tudnivalókat lásd: [Alkalmazotti önkiszolgáló rendszer konfigurálása](hr-benefits-setup-employee-self-service.md).
 
 ## <a name="confirm-employee-plan-selections"></a>Alkalmazotti csomagkiválasztások megerősítése
 

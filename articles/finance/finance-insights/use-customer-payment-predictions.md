@@ -15,31 +15,30 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-11-16
 ms.dyn365.ops.version: AX 10.0.14
-ms.openlocfilehash: 0606118007c01fc21c2c61d2128a7ec014617fcc
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: ed70e133b93c783542d4669b679fc5b6d2d20240
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752784"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968912"
 ---
 # <a name="use-customer-payment-predictions"></a>Vevői fizetési előrejelzések használata
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan kell használni a Vevői kifizetési előrejelzéseket. A funkció használata előtt győződjön meg arról, hogy végrehajtotta a beállítási lépéseket. További információkért lásd: [Vevői kifizetés előrejelzések engedélyezése](enable-cust-paymnt-prediction.md).
 
-A vevői kifizetések előrejelzéseit a Vevői jóváírások és beszedése munkaterületen, valamint két új listaoldalon lehet megtekinteni: a tranzakciók fizetési előrejelzései és a vevői kifizetések **·** **·** **előrejelzései**.
+A vevői kifizetések előrejelzéseit a Vevői jóváírások és beszedése munkaterületen, valamint két új listaoldalon lehet megtekinteni: a tranzakciók fizetési előrejelzései és a vevői **kifizetések** **·** **előrejelzései**.
 
 ### <a name="manage-customer-credit-and-collections-workspace"></a>Vevői jóváírás és gyűjtemények munkaterület
 
-A Vevői jóváírások és beszedése munkaterületen két új előrejelzés található: a tranzakciók fizetési előrejelzései és a vevői **·** kifizetések **·** **·** előrejelzései.
+A Vevői jóváírások és beszedése munkaterületen két új előrejelzés található: a tranzakciók fizetési előrejelzései és a vevői **kifizetések** **·** **előrejelzései**.
 
 ### <a name="transaction-payment-predictions-list-page"></a>Tranzakció-fizetési előrejelzések listaoldala
 
-A Tranzakció- és fizetési előrejelzések listaoldalon megtekintheti a nyitott tranzakciók fizetési valószínűségét az Időben, a Késésben és a **·** Nagyon **·** **·** **·** késedelmes időszakban. A rácsban lévő mindegyik tranzakcióhoz az **Idővalószínűség** oszlop jelzi, hogy a számla fizetése a határidőre vagy azt megelőzően történik. Ha egy időben történő fizetés valószínűsége 50 százaléknál kisebb, akkor egy piros kör jelenik meg az **Idővalószínűség** oszlop százalékos értéke mellett, hogy jelezze a késedelmes fizetés kockázatát.
+A Tranzakció- és fizetési előrejelzések listaoldalon megtekintheti a nyitott tranzakciók fizetési valószínűségét az Időben, a Késésben és a **Nagyon** **·** **·** **késedelmes** időszakban. A rácsban lévő mindegyik tranzakcióhoz az **Idővalószínűség** oszlop jelzi, hogy a számla fizetése a határidőre vagy azt megelőzően történik. Ha egy időben történő fizetés valószínűsége 50 százaléknál kisebb, akkor egy piros kör jelenik meg az **Idővalószínűség** oszlop százalékos értéke mellett, hogy jelezze a késedelmes fizetés kockázatát.
 
-[![ Tranzakcióoldalankénti fizetési előrejelzés.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
+[![Tranzakcióoldalankénti fizetési előrejelzés.](./media/payment-predictions-per-transaction.png)](./media/payment-predictions-per-transaction.png)
 
 A lap jobb oldalán található **Kapcsolódó** információ ablaktábla az előrejelzés részletes adatait tartalmazza:
 
@@ -49,13 +48,13 @@ A lap jobb oldalán található **Kapcsolódó** információ ablaktábla az el�
 
 A **Legfontosabb tényezők** szakasz adatai, valamint a **Customer Insights** és a **Vevői előzmények** gyorslapok segítenek a kifizetési előrejelzések elmagyarázásában. Az előrejelzések hatékonyságának növelése érdekében fokozhatja a megbízhatóságát.
 
-[![ A kapcsolódó információ ablaktáblán látható kifizetési előrejelzések grafikai mutatói.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
+[![A kapcsolódó információ ablaktáblán látható kifizetési előrejelzések grafikai mutatói.](./media/payment-prediction-gauges.png)](./media/payment-prediction-gauges.png)
 
 ### <a name="customer-payment-predictions-list-page"></a>Vevői kifizetések előrejelzési listaoldala
 
-A Vevői kifizetések előrejelzése listaoldalon látható a teljes nyitott egyenleg, valamint az az összeg, amely az előre jelzett időben, késve és nagyon **·** késő **·** **·** **·** időszakban lesz kifizetve.
+A Vevői kifizetések előrejelzése listaoldalon látható a teljes nyitott egyenleg, valamint az az összeg, amely az előre jelzett időben, késve és nagyon **késő** **·** **·** **időszakban** lesz kifizetve.
 
-[![ Vevői listaoldalonkénti fizetési előrejelzések.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
+[![Vevői listaoldalonkénti fizetési előrejelzések.](./media/payment-predictions-per-transaction-02.png)](./media/payment-predictions-per-transaction-02.png)
 
 A program kiszámítja az egyes gyűjtők kifizetési összegét a tranzakció egyenlege súlyozott átlagának összegével. Ez az összeg számítása az egyes gyűjtők fizetési valószínűségei alapján történik.
 
@@ -81,16 +80,16 @@ A lap jobb oldalán található **Kapcsolódó** információ szakasz az előrej
 - A **Customer Insights** gyorslap a kiválasztott tranzakcióra vonatkozóan megjeleníti a vevő aktuális számláját, kifizetését és beszedési statisztikáit.
 - A **Vevő előzmények** gyorslap a vevő fizetési előzményeit az **Időben**, a **Későn** és a **Nagyon későn** gyűjtőkben jeleníti meg.
 
-A Vevői információk és a Vevői előzmények gyorselemzési funkcióval kapcsolatos adatok segítséget nyújtanak a **·** fizetési előrejelzések **·** magyarázatában. Az előrejelzések hatékonyságának növelése érdekében fokozhatja a megbízhatóságát.
+A Vevői információk és a Vevői előzmények gyorselemzési funkcióval kapcsolatos adatok segítséget nyújtanak a **fizetési** előrejelzések **magyarázatában**. Az előrejelzések hatékonyságának növelése érdekében fokozhatja a megbízhatóságát.
 
 ## <a name="improving-the-accuracy-of-payment-predictions"></a>A kifizetési előrejelzések pontosságának javítása
 
 Megtekintheti a fizetési előrejelzések pontosságát a **Jóváírások és gyűjtemények \> Beállítás \> Pénzügyi információk \> Pénzügyi információ paraméterek** alapján. A **Vevői fizetési információk** lapon az **Előrejelzési modell** szakasz az előrejelzési modell pontosságát jeleníti meg százalékban.
 
-[![ A kifizetési előrejelzések pontossága.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
+[![A kifizetési előrejelzések pontossága.](./media/finance-insights-parameters-accuracy-2nd.png)](./media/finance-insights-parameters-accuracy-2nd.png)
 
-Ha nem elégedett a pontossággal, akkor a **Modell pontosságának javítása** hivatkozásra kattintva nyissa meg az AI Builder bővítményélményt. Az AI Builder bővítményélményben kiválaszthatja vagy törölheti a kiválasztott mezőket mindaddig, amíg be nem jelölte azokat a mezőket, amelyeket úgy gondolja, hogy a fizetési valószínűségek pontos előrejelzéséhez a legfontosabbak. Ha befejezte a munkát, egyszerűen átrendezheti a előrejelzési modellt, majd feladhatja a változtatásokat. Az újonnan betanított előrejelzési modell automatikusan felveszi az előrejelzéseket a Dynamics 365 Finance-ben.
+Ha nem elégedett a pontosságával, a hosszabbítási tapasztalat megnyitásához válassza a Modellpontosság **javítása** AI Builder hivatkozást. A hosszabbítás során addig választhatja vagy törölheti a mezők kijelölését, amíg be nem jelölte azokat a mezőket, amelyekről úgy gondolja, hogy a kifizetési valószínűségek pontos előrejelzése AI Builder a legfontosabb. Ha befejezte a munkát, egyszerűen átrendezheti a előrejelzési modellt, majd feladhatja a változtatásokat. Az újonnan betanított előrejelzési modell automatikusan felveszi az előrejelzéseket a Dynamics 365 Finance-ben.
 
-[![ AI Builder bővítményélmény.](./media/ai-builder.png)](./media/ai-builder.png)
+[![AI Builder hosszabbítási tapasztalat.](./media/ai-builder.png)](./media/ai-builder.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

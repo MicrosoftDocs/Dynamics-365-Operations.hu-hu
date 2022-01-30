@@ -15,19 +15,18 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 16ccd7f2e11f0b46aaa646de272e668d29ccc0c0
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 5002fc79842bef150892347a7ff4702b07cfe5be
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752928"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968877"
 ---
 # <a name="enable-customer-payment-predictions"></a>Az ügyfélfizetési előrejelzések lehetővé tétele
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet bekapcsolni és konfigurálni a Vevői fizetési előrejelzések funkciót a pénzügyi elemzésekben. Bekapcsolja a funkciót a Szolgáltatáskezelés munkaterületen, és a konfigurációs beállításokat a Pénzügyi információk konfigurációs **·** oldalon adja **·** meg. Ez a témakör olyan információkat is tartalmaz, amelyek segíthetnek a funkció hatékony használatában.
+Ez a témakör azt mutatja be, hogyan lehet bekapcsolni és konfigurálni a Vevői fizetési előrejelzések funkciót a pénzügyi elemzésekben. Bekapcsolja a funkciót a Szolgáltatáskezelés munkaterületen, és a konfigurációs beállításokat a Pénzügyi információk konfigurációs **oldalon** adja **meg**. Ez a témakör olyan információkat is tartalmaz, amelyek segíthetnek a funkció hatékony használatában.
 
 > [!NOTE]
 > A következő lépések elvégzése előtt mindenképpen hajtsa végre az előfeltételeket a [Pénzügyi elemzések konfigurálása](configure-for-fin-insites.md) témakörben.
@@ -44,9 +43,9 @@ Ez a témakör azt mutatja be, hogyan lehet bekapcsolni és konfigurálni a Vev�
 2. Konfigurálja az Ügyfél fizetési elemzés funkciót:
 
     1. Ugrás **a Jóváírás és beszedések \> – Beállítás \> pénzügye – \> vevői kifizetési** előrejelzésekhez.
-    2. A Pénzügyi információk konfigurációs lapján, a Vevői kifizetések előrejelzése lapon válassza az Előrejelzési modellben használt adatmezők megtekintése lehetőséget az Előrejelzési modell oldalának **·** **·** **·** **·** megnyitásához. Itt megtekintheti a mesterséges intelligencia (AI) előrejelzési modelljének létrehozásához használt mezők alapértelmezett listáját az ügyfelek fizetési előrejelzéseihez.
+    2. A Pénzügyi információk konfigurációs lapján, a Vevői kifizetések előrejelzése lapon válassza az Előrejelzési modellben használt adatmezők megtekintése lehetőséget az Előrejelzési modell **oldalának** **·** **·** **megnyitásához**. Itt megtekintheti a mesterséges intelligencia (AI) előrejelzési modelljének létrehozásához használt mezők alapértelmezett listáját az ügyfelek fizetési előrejelzéseihez.
 
-        Ha az előrejelzési modell létrehozásához a mezők alapértelmezett listáját szeretné használni, zárja be az Előrejelzési modell oldal adatmezőit, majd a Pénzügyi információk konfigurációs lapján állítsa a Funkció engedélyezése lehetőséget **·** Igen **·** **·** **·** beállításra.
+        Ha az előrejelzési modell létrehozásához a mezők alapértelmezett listáját szeretné használni, zárja be az Előrejelzési modell oldal adatmezőit, majd a Pénzügyi információk konfigurációs lapján állítsa a Funkció engedélyezése lehetőséget **Igen** **·** **·** **beállításra**.
 
     3. Adja meg a „nagyon későn” tranzakciós időszakot annak meghatározásához, hogy mit jelent a **Nagyon későn** előrejelzési gyűjtő a vállalkozás számára.
 
@@ -59,13 +58,13 @@ Ez a témakör azt mutatja be, hogyan lehet bekapcsolni és konfigurálni a Vev�
         > [!NOTE]
         > Ha módosítja a „nagyon későn” tranzakciós időszakot, és a **Későn küszöbérték módosítása** lehetőséget választja a vevői kifizetések előrejelzési modelljének létrehozása után, a meglévő előrejelzési modell törlődik, és egy új modell jön létre. Az új előrejelzési modell a tranzakciókat a „nagyon későn” időszakba mozgatja a definiáláshoz megadott beállítások alapján.
 
-    4. Miután befejezte a „nagyon későn” tranzakciós időszak definiálását, válassza az **Előrejelzési modell létrehozása** lehetőséget az előrejelzési modell létrehozásához. A Pénzügyi információk konfigurációs lap előrejelzési modell szakasza az **·** **·** előrejelzési modell állapotát mutatja.
+    4. Miután befejezte a „nagyon későn” tranzakciós időszak definiálását, válassza az **Előrejelzési modell létrehozása** lehetőséget az előrejelzési modell létrehozásához. A Pénzügyi információk konfigurációs lap előrejelzési modell szakasza **az** **előrejelzési** modell állapotát mutatja.
 
         > [!NOTE]
         > Az előrejelzési modell létrehozása közben bármikor kiválaszthatja a **Modell létrehozásának visszaállítása** lehetőséget a folyamat újraindításához.
 
     A funkció most már konfigurálva van, és készen áll a használatra.
 
-Miután a funkció be van kapcsolva és konfigurálva van, és az előrejelzési modell létrejött és működik, a Pénzügyi információk paraméterei lap Előrejelzési modell szakasza bemutatja a modell **·** **·** pontosságát.
+Miután a funkció be van kapcsolva és konfigurálva van, és az előrejelzési modell létrejött és működik, a Pénzügyi információk paraméterei lap Előrejelzési modell szakasza bemutatja a **modell** **pontosságát**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

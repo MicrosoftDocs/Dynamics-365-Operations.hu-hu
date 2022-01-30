@@ -2,7 +2,7 @@
 title: Újdonságok és változások a Warehouse Management mobilalkalmazásban
 description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új és módosult funkcióit ismerteti.
 author: Mirzaab
-ms.date: 09/09/2021
+ms.date: 01/18/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,51 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 9d50c1380418365f7c51d6b96051e9ea68a5f104
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: 6f45cacd7f43c8caf836fd1ea24d354e4bcf5853
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901888"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007574"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Újdonságok és változások a Warehouse Management mobilalkalmazásban
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új funkcióit, hibajavításait, fejlesztéseit és ismert hibáit ismerteti.
+
+## <a name="version-20140"></a>2.0.14.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+
+- Kijavított egy olyan problémát, amely letiltotta az alapértelmezett Küldés gombot.
+
+## <a name="version-20130"></a>2.0.13.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+ 
+- Továbbfejlesztett görgetés a lapok között a finomabb animációval.
+- Rögzített, számlálóra adott válaszok a mozgások lehúzására és a képernyő időnkénti befagyasztására.
+- Továbbfejlesztett sötét módú szöveg- és háttérszín-kombinációk a jobb olvashatóság érdekében.
+- Javítva egy olyan hiba, amely miatt az alkalmazás ablakának átméretezésekor néhány szöveg nagyon kicsivé válhat.
+- Kijavított egy olyan problémát, amely a vonalkódok beolvasása során időnként leomlhatja az alkalmazást.
+- Hozzáadva egy gombra kattintva lecserélhető egy új szöveg.
+- Kijavított egy problémát, amely miatt az alkalmazás a következő hibaüzenetet tudta látni: "AADSTS7000215: Érvénytelen ügyfél titkos információ van meg adni."
+- Rögzítették a javaslat-animációt, amely a lapnak a lehúzással való bezárását mutatja.
+- A lap lezárásának lehetőségét hozzáadta a megfelelő lefelé záráshoz.
+- Javítva egy olyan hiba, amely miatt a legördülő lista címei nem jelennek meg a Felhasználói **beállítások** lapon.
+- Honosítási probléma kijavítása, amely miatt az alkalmazás hibát jelent, és a tizedeselválasztóként nem ismerhető fel vessző (,).
+- Jobb akadálymentesség.
+- A jobb kisegítő lehetőségek érdekében rögzítette a navigációt az **Új** kapcsolat oldalon.
+- Javítva egy olyan hiba, amely miatt a billentyűzet billentyűzete nem jelenik meg beviteli mező be kijelölésekor.
+- Kijavított egy olyan problémát, amely akkor ütközhet az alkalmazással, ha a felhasználók gyorsan átméretezték az ablakát.
+- Kijavított egy olyan problémát, ahol a gyorsbillentyűt gyakran hosszú billentyű megnyomásként értelmezték.
+- Kijavított egy problémát, amely miatt az alkalmazáselrendezés az Ellátásilánc-kezelés mezőinek testreszabása miatt sérült lehet.
+- Javítva az a hiba, amely miatt a cikkhelyek nem megfelelően jelennek meg.
+- A termékváltozat-munkafolyamat rövid kitárolásával kapcsolatos probléma kijavítva.
+- Eltávolította az előre beállított alapértelmezett értékeket tartalmazó mezők szükségtelen érvényesség-ellenőrzéseit.
+- Jobb teljesítmény.
+- Új beállítással a felhasználók kiválaszthatja, hogy hogyan szűrik és rendelik meg a mezőket a kártyaoldalon.
 
 ## <a name="version-20110"></a>2.0.11.0-s verzió
 

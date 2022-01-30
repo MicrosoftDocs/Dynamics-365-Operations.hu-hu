@@ -2,7 +2,7 @@
 title: Jelentések és dokumentumok összegformátumának megjelenítésének módosítása
 description: Ez a témakör a jelentésekben és egyéb dokumentumokban megjelenített összegek frissítésének módjáról tartalmaz információkat Észtország, Lettország, Litvánia, Lengyelország, Csehország, Magyarország és Oroszország tekintetében.
 author: anasyash
-ms.date: 08/13/2019
+ms.date: 01/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1cc9effcf685efac84fb4a3a1eea00a5d524a7992599e8b01ed08dc2403f3dfe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 678c7ac288e7754809ad51cc609e1aaa011776ee
+ms.sourcegitcommit: 9638d3a2bd592dc28f5952bda4af7dcf06edfaa4
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719696"
+ms.lasthandoff: 01/19/2022
+ms.locfileid: "8007590"
 ---
 # <a name="update-how-amounts-are-displayed-on-reports-and-documents"></a>Jelentések és dokumentumok összegformátumának megjelenítésének módosítása
 
@@ -47,7 +47,7 @@ Pénzegységek teljes és rövid nevének és nyelvek részegységeinek beállí
    |    <strong>Egységek rövidített neve (Mezőcsoport rövid neve)</strong>    |                                                                                         Adja meg a pénznem azonosítására szolgáló ISO-kódot. Például a litván litas azonosítására az LTL karaktersort adja meg.                                                                                         |
    |   <strong>Részek rövidített neve (Mezőcsoport rövid neve)</strong>    |                                                                                               Adja meg a pénznem alegységének megnevezését. Például írja be azt, hogy Centas.                                                                                               |
    |       <strong>„És” kapcsolat az egységek és részek között</strong>       |                                     Jelölje be a pénzegységek és egységrészek közötti „és” kapcsolat kinyomtatásához. A 100,20 LTL összeg például így „100 litas és 20 centas” formában jelenik meg a számlákon és jelentéseken.                                      |
-   |       <strong>Nem</strong>       |  Válassza ki a **Férfi**, **Nő** vagy **Semleges** értéket. Ez a paraméter befolyásolhatja annak az összegnek a szövegét, amely a készpénzes rendelésen szereplő helyi nyelvű szövegében látható. Ha például a **Nemet** a **Semleges** nem értékre állítja az EUR valutához, akkor az 1,01 EUR összeg 1,01 EUR-ként a Cseh nyelvű *Edno euró 01 cent* nyugtán.  |
+   |       <strong>Nem</strong>       |  Válassza ki a **Férfi**, **Nő** vagy **Semleges** értéket. Ez a paraméter befolyásolhatja annak az összegnek a szövegét, amely a készpénzes rendelésen szereplő helyi nyelvű szövegében látható. Ha például nezóként az eur pénznemhez adja meg a nemet, akkor az 1,01 eurós összeg cseh nyelven, **·** **jedno** euró 01 centként íródott a *készpénzutelékre*.  |
 
 5. Válassza a **Mentés** lehetőséget.
 

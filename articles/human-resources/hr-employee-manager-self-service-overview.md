@@ -3,7 +3,7 @@ title: Alkalmazotti és vezetői önkiszolgáló rendszer áttekintése
 description: Ez a témakör áttekintést nyújt az alkalmazottak és a vezetők önkiszolgáló munkaterületéről.
 author: twheeloc
 ms.date: 08/26/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cea92092701f960f12aa74efe4c82c379a2b2c6d
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
-ms.translationtype: HT
+ms.openlocfilehash: 2a356aae6590c2bce289c8d180324027efc76983
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431211"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7991742"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Alkalmazotti és vezetői önkiszolgáló rendszer áttekintése
 
@@ -93,7 +93,7 @@ Dokumentumainak megtekintése és kezelése a **Mellékletek** csempével. Minde
 
 Ez a szakasz az **Alkalmazotti önkiszolgáló rendszer** más területeire mutató hivatkozásokat tartalmaz, hasonlóan a **Saját karrieradatok** szakaszhoz.
 
-A **Juttatások** hivatkozással regisztrálhat a juttatásokra. A Juttatáskezelés további tudnivalókat lásd: [Juttatások áttekintése](hr-benefits-management-overview.md)
+A **Juttatások** hivatkozással regisztrálhat a juttatásokra. A juttatások kezelésével kapcsolatos további tudnivalókat lásd [a Juttatások áttekintése témakörben](hr-benefits-management-overview.md).
 
 A **Teljesítmény** területen kiválaszthatja a **Teljesítménynapló** elemet ahol teljesítménnyel kapcsolatos naplóbejegyzéseket hozhat létre, amelyeket a teljesítménycélokhoz és -értékelésekhez is használhat. A **Visszajelzés küldése** lehetőséget választva a szervezeten belüli más alkalmazottaknak is küldhet visszajelzést. A szervezet beállításaitól függően előfordulhat, hogy e-mailek lesznek küldve a címzettnek, a feladónak és a vezetőknek. A szervezeten belül az összes alkalmazottnak lehet visszajelzést küldeni. A visszajelzések küldése nincs vállalatra korlátozva.
 

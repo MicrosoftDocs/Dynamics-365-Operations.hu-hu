@@ -1,27 +1,26 @@
 ---
 title: Funkciókezelés áttekintése
-description: Ez a témakör bemutatja a funkciókezelés szolgáltatást, valamint azt, hogy hogyan használhatja azt.
+description: Ez a témakör ismerteti a szolgáltatáskezelést és annak használatát.
 author: Peakerbl
-ms.date: 09/13/2021
-ms.topic: article
+ms.date: 01/10/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: IT Pro, Application user
 ms.reviewer: sericks
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 1318093d66cfc30a04815311cce332df010d4b69
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
-ms.translationtype: HT
+ms.openlocfilehash: 6605fe68576ce80726438b60c1f1fbf3782d0934
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488178"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984459"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
@@ -75,9 +74,9 @@ Az **Alapértelmezés szerint bekapcsolt** állapotra frissített funkciók alap
 > [!NOTE]
 > Mivel ezek a funkciók automatikusan lesznek engedélyezve, fontos annak meghatározása, hogy a szervezete készen áll-e a funkciók átvételére, vagy több időre van szükség. Ha több időre van szükség, szükség lehet ezen funkciók ideiglenes letiltására. Vegye figyelembe, hogy egy funkció **Alapértelmezés szerint bekapcsolt** állapotba történő átváltása általában a funkció **Kötelező**-vé tétele előtt a fő verzióban történik. Ekkor már nem lesz lehetősége a funkció letiltására. 
 
-### <a name="released-features-mandatory"></a>Kiadott funkciók (kötelező)
+### <a name="mandatory"></a>Kötelező
 
-A **Kiadott** a funkciók végső állapota. Azt jelzi, hogy a funkciók be vannak kapcsolva, és nem lehet letiltani őket a Microsoft értesítése nélkül. A választható funkciók várhatóan két nagyobb kiadás után válnak kötelezővé. A kritikus funkciók kivételes jelleggel kötelezően bevezethetők.
+**Kötelező a** funkciók várható végső állapota. Azt jelzi, hogy a funkciók be vannak kapcsolva, és nem lehet letiltani őket a Microsoft értesítése nélkül. A választható funkciók várhatóan két nagyobb kiadás után válnak kötelezővé. A kritikus funkciók kivételes jelleggel kötelezően bevezethetők.
 
 ## <a name="example-of-expected-feature-lifecycles"></a>Példa a funkciók várható életciklusára
 

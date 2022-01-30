@@ -3,7 +3,7 @@ title: Termelési folyamat áttekintése
 description: Ez a témakör a gyártási folyamatokról nyújt áttekintést. Bemutatja a termelési rendelések, a kötegrendelések és a kanbanok különböző szintjeit, a rendelés létrehozásától a pénzügyi időszak zárásáig.
 author: johanhoffmann
 ms.date: 09/13/2019
-ms.topic: article
+ms.topic: overview
 ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace, ProdParmCostEstimation, ProdParmRelease, ProdSchedule, ProdTableListPage
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a07733f7e1e830fa1c1c4c8e0cfdc5b41d10750
-ms.sourcegitcommit: efccf0838c74cf65382bb6cd852f9bc30ca69230
+ms.openlocfilehash: 8c9eac4d3f984b6fe511d7cc5ebab67e6c24c722
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7727335"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983213"
 ---
 # <a name="production-process-overview"></a>Termelési folyamat áttekintése
 
@@ -31,7 +31,7 @@ A termékek legyártása, más néven a termelési életciklus specifikus lépé
 
 A **Gyártásvezérlés** modul egyéb modulokkal van összekötve, például **Termékinformációk kezelése**, **Készletkezelés**, **Főkönyv**, **Raktárkezelés**, **Projekt-könyvelés** és **Szervezeti adminisztráció**. Ez az integráció teremti meg annak az információáramlásnak a feltételeit, amely egy elkészült termék legyártásához szükséges.
 
-A gyártási folyamatot általában a költségkönyvelés és a készletértékelési módszerek befolyásolják, amelyeket egy specifikus gyártási folyamathoz határoztak meg. A Supply Chain Management támogatja a tényleges költség (elsőként be, elsőként ki \[ FIFO\]; utolsóként be, utolsóként ki \[ LIFO\]; mozgóátlag; és időszakos súlyozott átlag) és standard költség módszereket is. A lean gyártás a visszavezetéses költségelszámolás elv alapján valósítható meg.
+A gyártási folyamatot általában a költségkönyvelés és a készletértékelési módszerek befolyásolják, amelyeket egy specifikus gyártási folyamathoz határoztak meg. A Supply Chain Management támogatja a tényleges költség (elsőként be, elsőként ki \[FIFO\]; utolsóként be, utolsóként ki \[LIFO\]; mozgóátlag; és időszakos súlyozott átlag) és standard költség módszereket is. A lean gyártás a visszavezetéses költségelszámolás elv alapján valósítható meg.
 
 A kiválasztott költségmérési módszerek meghatározzák a jelentés anyagokkal és forrásfelhasználással kapcsolatos követelményeit a gyártási folyamat során. Általában a tényleges költség módszerekhez pontos jelentés szükséges a feladat szintjén, ugyanakkor az időszakos költségszámítási módszerek lehetővé teszik az elnagyoltabb anyag- és forrásfogyasztás jelentés elkészítését.
 

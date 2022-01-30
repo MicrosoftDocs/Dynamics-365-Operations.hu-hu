@@ -2,25 +2,25 @@
 title: Referencia-kamatlábhoz kapcsolt lízingdíjfizetések újraértékelése
 description: Ez a témakör azt a kiigazítást ismerteti, amely a kötelezettség használatijog-eszköz (ROU) lízingeléséhez történik, amikor a változó lízingfizetések a referencia-kamatláb változása miatt változnak.
 author: moaamer
-ms.date: 04/12/2021
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseIndexRevaluation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1b3eed28ba6fc5af02c1bbf430cc9779426084f0eaf4e027141bbdd18a70dde4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 5abd1f5d265c6e8b53903e6df5c52a06b3468880
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734586"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968052"
 ---
 # <a name="revalue-lease-payments-that-are-linked-to-an-index-rate"></a>Referencia-kamatlábhoz kapcsolt lízingdíjfizetések újraértékelése
 
@@ -43,7 +43,7 @@ Kövesse az alábbi lépéseket a referencia-kamatlábhoz kapcsolt lízingdíjfi
 4. Válassza ki a háttérfeldolgozásban szerepeltetni kívánt lízingek kiválasztásához tartozó szűrőket, majd kattintson az **OK** gombra.
 
     Megjelenik a **Referencia-kamatláb újraértékelési előnézet** párbeszédpanel, amely megjeleníti az újraértékelendő lízingeket. Bemutatja továbbá az eszköz- és forráskiigazításokat, illetve a változó kifizetési kiigazításokat.
-    
+
 5. A lízingek újraértékelésének megakadályozásához válassza ki az **újraértékelendő** lízingeket. Ha nem választ ki lízingeket, a lízingek át lesznek értékelve. Ha befejezte a munkát, az **OK** gombra kattintva újraértékelheti a lízingdíjfizetéseket.
 6. Egy adott index újraértékelési folyamathoz létrehozott tranzakciók megtekintéséhez jelölje ki a folyamatazonosítót, majd válassza a **Tranzakciók** lehetőséget.
 
@@ -54,7 +54,7 @@ Kövesse az alábbi lépéseket a referencia-kamatlábhoz kapcsolt lízingdíjfi
 
 ## <a name="asc-842-leases--index-revaluation"></a>ASC 842 lízingek – Index újraértékelés
 
-A lízing újraértékelési folyamat ASC 842 lízingre gyakorolt hatásainak megtekintéséhez nyissa meg a lízing fizetési ütemezését. Az oldalon csak az újraértékelési dátumon vagy azt követően végrehajtott változó kifizetések láthatók az index átértékelése miatt. Az amortizációs és az értékcsökkenési ütemezés változatlan marad. Ha változó fizetéssel rendelkező számlát hoz létre, a változó fizetés megterhelése a Változó fizetési feladási számlára kerül. A változó fizetési összeg hozzáadódik a közvetlenül a szállítónak feladott jóváírási tételhez, vagy a Bizonylatkötelezettségek számlára, a lízingkönyv beállításától függően.
+A lízing újraértékelési folyamat ASC 842 lízingre gyakorolt hatásainak megtekintéséhez nyissa meg a lízing fizetési ütemezését. Az oldalon csak az újraértékelési dátumon vagy azt követően végrehajtott változó kifizetések láthatók az index átértékelése miatt. Az amortizációs és az értékcsökkenési ütemezés változatlan marad. Ha változó fizetéssel rendelkező számlát hoz létre, a változó fizetés megterhelése a Változó fizetési feladási számlára kerül. Ezenkívül a változó kifizetési összeget a rendszer hozzáadja a közvetlenül a szállítóhoz feladott jóváírási bejegyzéshez, vagy feladja a megjegyzések kötelezettségek számlájára, a bérleti könyv beállításától függően.
 
 A lízing részletei oldalon a fizetési ütemezés sorai automatikusan frissülnek egy új sokkal, amely az új referencia-kamatlábat jelzi. Ezenkívül egy oszlop is mutatja, hogy a sort manuálisan vagy az indexátértékelési folyamaton keresztül hozták-e létre.
 
@@ -66,5 +66,7 @@ Megtekintheti az átértékelési dátummal kezdődő újonnan létrehozott fize
 
 A naplóbejegyzés automatikusan feladta a helyesbítő naplóbejegyzést a számlára az index újraértékeléshez kapcsolódó lízingkifizetések változására.
 
+> [!NOTE]
+> Ha a Fizetés összegének lebontása beállítás engedélyezve van a Bérlet részletei lap Általános gyorslapján, és a kapcsolódó könyv **az** **·** **IFRS** 16, az indexátértékelési folyamat **automatikusan hozzáad egy rekordot a Kifizetési összeg lebontása** párbeszédpanelen. Az összeg az index átértékelés miatt a kifizetésen történt változtatást tükrözi. A rekord az **IRFS 16 index átértékelésében használtként lesz** megjelölve.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

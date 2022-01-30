@@ -3,24 +3,23 @@ title: Minősítések és értékelések áttekintése
 description: Ez a témakör a Microsoft Dynamics 365 Commerce minősítéseit és értékeléseit mutatja be.
 author: gvrmohanreddy
 ms.date: 10/01/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3c5db01b00390179c2dffcbec50343d7b7101d96
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
-ms.translationtype: HT
+ms.openlocfilehash: eb68652e0d3ecd8d75f2bc0fe9c243749d7de284
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473477"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982252"
 ---
 # <a name="ratings-and-reviews-overview"></a>Minősítések és értékelések áttekintése
 
@@ -53,6 +52,14 @@ Az értékelések és vélemények megoldás egy üzleti intelligencia (BI) sabl
 [Minősítések és értékelések konfigurálása](configure-ratings-reviews.md)
 
 [A termék minősítések szinkronizálása a következőben: Dynamics 365 Commerce](sync-product-ratings.md)
+
+[A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
+
+[Minősítések és felülvizsgálatok importálása és exportálása](import-export-reviews.md)
+
+[Szolgáltatás-szolgáltatás hitelesítés konfigurálása](service-to-service-auth.md)
+
+[Értékelések és vélemények GYIK](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

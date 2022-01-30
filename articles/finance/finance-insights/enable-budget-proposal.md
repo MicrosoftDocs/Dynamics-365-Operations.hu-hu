@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-24
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 3ad610feccf88ac88475a463fd1f10f4336b9407
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 11882f641830f04acb4eb58fa631b5372c25e65b
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752712"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969037"
 ---
 # <a name="enable-budget-proposal"></a>Költségvetési javaslat engedélyezése
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a Költségvetési javaslat funkcióját a pénzügyi elemzésekben.
 
@@ -35,6 +34,6 @@ Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a Költségvetési javas
     2. A Minden **lapon keresse meg a költségvetési** **javaslatot**. Ha nem találja ezt a funkciót, keressen rá **az (előnézet) költségvetési javaslatra**. 
     3. A funkció bekapcsolva.
 
-2. Menjen a **Költségvetés-beállítás \>\> alapszintű költségvetési \> javaslatához, és válassza az Engedélyezés** **·** funkciót.
+2. Menjen a **Költségvetés-beállítás \>\> alapszintű költségvetési \> javaslatához, és válassza az Engedélyezés** **funkciót**.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

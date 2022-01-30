@@ -3,7 +3,7 @@ title: A beszerzési irányelvek áttekintése
 description: Ez a cikk a beszerzési irányelvekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési irányelv az igénylési folyamatot szabályozó szabályok gyűjteménye. A beszerzési irányelvek lehetővé teszik a beszerzési rendszergazdáknak a beszerzési stratégia megvalósítását a szervezet stratégiai beszerzési követelményihez igazodó irányelv struktúrájának létrehozásával.
 author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3d3c35cabc9b5b8c69dbf4d597388192b4130d49
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 3cc150ae1a912fbfb4daf505e4240786c2f380a3
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575488"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982277"
 ---
 # <a name="purchasing-policies-overview"></a>A beszerzési irányelvek áttekintése
 

@@ -2,7 +2,7 @@
 title: WEEKNUM ER függvény
 description: Ez a témakör a WEEKNUM Elektronikus jelentés (ER) funkcióval kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
-ms.date: 12/03/2021
+ms.date: 01/15/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: AX 10.0.24
-ms.openlocfilehash: fe36d4142b6e4922e2cbca09bb0ca9f68f6680a0
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 37e62b32896e2030b3322a89ac4acdd6c18d5e3c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7891366"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982177"
 ---
 # <a name="weeknum-er-function"></a>WEEKNUM ER függvény
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 A függvény egy egész értéket ad vissza, amely egy adott dátumértéket tartalmazó év `WEEKNUM`*[...](er-formula-supported-data-types-primitive.md#integer)* hetének *[megfelelő egész értéket](er-formula-supported-data-types-primitive.md#date)* ad vissza. A számítás a naptári hetet és a hét első napját meghatározó kultúrafüggő szabályokon alapul.
 
@@ -54,7 +53,7 @@ Az eredményül kapott numerikus érték.
 
 Az év hetének számítása az ISO 8601 szabvány alapján történik, ha a szabványt olyan ország vagy régió elfogadta, amely számára futásidőben meg van biztosítanak [a](https://www.iso.org/iso-8601-date-and-time-format.html) területi adatok. Ellenkező esetben a számítás az ország-/régióspecifikus nemzeti szabványokon alapul.
 
-Ha futásidőben nem támogatott [kulturális](#arguments) kódot ad meg a függvény argumentumaként, akkor a program `WEEKNUM` kivételt ad. Ha az üres karakterlánc kulturális kódot tartalmaz, akkor a program az angol országsemleges naptárat használja a heti szám kiszámításához.
+Ha futásidőben nem támogatott kulturális kódot ad meg a függvény argumentumaként, akkor a [program](#arguments)`WEEKNUM` kivételt ad. Ha az üres karakterlánc kulturális kódot tartalmaz, akkor a program az angol országsemleges naptárat használja a heti szám kiszámításához.
 
 ## <a name="examples"></a>Példák
 

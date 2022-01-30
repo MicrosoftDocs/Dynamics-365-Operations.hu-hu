@@ -3,7 +3,7 @@ title: Áfa átváltási arány áttekintése
 description: Ez a témakör a Cseh Köztársaságban, Magyarországban és Lengyelországban elérhető áfaszámítási árfolyamokról tartalmaz tájékoztatást.
 author: ShylaThompson
 ms.date: 07/08/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
@@ -17,12 +17,12 @@ ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: af2ebb282883696b1240e1ec9d7becdf9e26ccec6712ffc73964e733079047b6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: b96c5e7c3dc32cb720f6174fb84d878a5c02f672
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734499"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982952"
 ---
 # <a name="vat-exchange-rate-overview"></a>Áfa átváltási arány áttekintése
 

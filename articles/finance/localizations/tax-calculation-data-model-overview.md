@@ -3,7 +3,7 @@ title: Adószámítási adatmodell
 description: Ez a témakör információt nyújt az adózási adatmodelről, valamint arról, hogy az egyes adatmodellek mezőértékeit hogyan határozza meg az adószámítási tranzakciók kontextusa.
 author: kailiang
 ms.date: 10/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 4b9b3e28b9435e9614b06d4fa2855b31d0e38b41
-ms.sourcegitcommit: 93cc9823016c9f2fd568ada0b670a52c8c3bfa33
+ms.openlocfilehash: 2773efaed9ee30ccb27b35f5aa00515ebba1c84a
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2021
-ms.locfileid: "7864260"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985966"
 ---
 # <a name="tax-calculation-data-model"></a>Adószámítási adatmodell
 
 Ez a témakör információt nyújt arról, hogy az adózási adatmodell mezőértékeit hogyan határozzák meg az adószámítási tranzakciókban.
 
-Az *adózási adatmodell* az adószámításhoz szükséges mezőkből áll. A Microsoft biztosítja az *adószámítási adatmodellt*, amely tartalmazza a Finance and Operations-alkalmazásokban található tranzakciós dokumentumok fejlécmezőit és sormezőit. Az adószámítási adatmodellben definiált mezők az alkalmazhatósági szabályok tábláinak rendelkezésre álló oszlopai az adószámítási funkció konfigurációjában.
+Az *adózási adatmodell* az adószámításhoz szükséges mezőkből áll. A Microsoft biztosítja az adószámítási adatmodellt, amely tartalmazza a Pénzügyi és műveletalkalmazások tranzakciós dokumentumainak fejlécmezőit és *sormezőit*. Az adószámítási adatmodellben definiált mezők az alkalmazhatósági szabályok tábláinak rendelkezésre álló oszlopai az adószámítási funkció konfigurációjában.
 
 > [!NOTE] 
 > Az adatmodellben definiált egyes csomópontok, például a **Rekordazonosító** és a **Táblaazonosító** technikai célokat szolgálnak. Ezek nem elérhető oszlopok az adószámítási funkció konfigurációjában.
@@ -55,7 +55,7 @@ Megtekintheti az adószámítási adatmodellt és az alkalmazhatósági szabály
 
     [![Oszlopok kezelése.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-Az adószámítási adatmodell integrálva van a Finance and Operations-alkalmazásokkal. Az adószámításhoz kapcsolódó egyes tranzakciók során a program összegyűjti az alkalmazhatósági szabályok tábláiban meghatározott mezők értékeit, és elküldi számításra az adószámítási szolgáltatásba. A 40.46 verzióban a következő tranzakciótípusokhoz 57 előre definiált adatmodell áll rendelkezésre: beszerzési rendelések, értékesítési rendelések, átmozgatási rendelések, beszerzési igénylések, ajánlatkérések és értékesítési árajánlatok.
+Az adószámítási adatmodell integrálva van a Pénzügy és a Műveletek alkalmazással. Az adószámításhoz kapcsolódó egyes tranzakciók során a program összegyűjti az alkalmazhatósági szabályok tábláiban meghatározott mezők értékeit, és elküldi számításra az adószámítási szolgáltatásba. A 40.46 verzióban a következő tranzakciótípusokhoz 57 előre definiált adatmodell áll rendelkezésre: beszerzési rendelések, értékesítési rendelések, átmozgatási rendelések, beszerzési igénylések, ajánlatkérések és értékesítési árajánlatok.
 
 Harmincegy adatmodell használható egy tranzakció fejlécének mezőiként. Nem minden mező érvényes azonban az összes tranzakciótípusra. Az alábbi táblázat bemutatja, hogy mely fejlécmezők érhetők el az egyes tranzakciótípusokhoz. Bizonyos esetekben a mezőleképezést előre meghatározott logika alapján kell meghatározni. Ahol alkalmazható, a logika is rendelkezésre áll.
 

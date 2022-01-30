@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7ac91dd1d3dfffbf98733bbd8fe8beda538250da
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
-ms.translationtype: HT
+ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473549"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968102"
 ---
 # <a name="configure-ratings-and-reviews"></a>Minősítések és értékelések konfigurálása
 
@@ -87,9 +87,17 @@ A Minősítések és értékelések modulok a termék részletei oldalain tört�
 
 [Minősítések és értékelések kezelése](manage-reviews.md)
 
-[A Minősítések és értékelések modulok konfigurálása a termék részletes oldalain](ratings-reviews-modules.md)
-
 [A termék minősítések szinkronizálása a következőben: Dynamics 365 Retail](sync-product-ratings.md)
+
+[A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
+
+[Minősítések és felülvizsgálatok importálása és exportálása](import-export-reviews.md)
+
+[Szolgáltatás-szolgáltatás hitelesítés konfigurálása](service-to-service-auth.md)
+
+[Értékelések és vélemények GYIK](ratings-reviews-faq.md)
+
+[Minősítések és értékelések modulok](ratings-reviews-modules.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

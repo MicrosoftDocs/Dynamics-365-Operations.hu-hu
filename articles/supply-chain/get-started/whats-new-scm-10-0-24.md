@@ -1,5 +1,5 @@
 ---
-title: A Dynamics 365 Supply Chain Management 10.0.24 (2022. február) előzetes verziója
+title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.24 verziójában (2022. február)
 description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.24 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
 ms.date: 12/03/2021
@@ -10,21 +10,20 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f6402d7f9f433ca621c475bd62553529943dbe62
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: d7dd3bbb0d1aa701757ad7fa525aba04fe9419c9
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920548"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986303"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10024-february-2022"></a>A Dynamics 365 Supply Chain Management 10.0.24 (2022. február) előzetes verziója
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10024-february-2022"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.24 verziójában (2022. február)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.24 előzetes kiadásának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.1084 a buildszáma, és a következő módon érhető el:
+Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.24 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.1084 a buildszáma, és a következő módon érhető el:
 
-- **A kiadás előzetese:** 2021. december
+- **Kiadás előnézete:** 2021. december
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2022. január
 - **A kiadás általános elérhetővé tétele (saját frissítés):** 2022. február
 
@@ -34,22 +33,22 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Lehe
 
 | Szolgáltatásterület | Funkció | További információ | Engedélyezte:   |
 |---|---|---|---|
-| Elosztott hibrid topológia | [Továbbfejlesztett raktárvégrehajtási számítási feladatok a méretezési egységeken](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-warehouse-execution-workloads-scale-units) | [Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-warehousing.md) | Alapértelmezés szerint engedélyezve. |
-| Tervezés | [Tervezési optimalizálási támogatás az újrarendelési margóhoz és a kibocsátási margóhoz](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-reorder-margin-issue-margin) | [Biztonsági határok](../master-planning/planning-optimization/safety-margins.md) | Alapértelmezés szerint engedélyezve. |
+| Elosztott hibrid topológia | [A raktár végrehajtási terhelésének javítása a mérlegegységeken](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/enhanced-warehouse-execution-workloads-scale-units) | [Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-warehousing.md) | Alapértelmezés szerint engedélyezve. |
+| Tervezés | [Tervezési optimalizálás támogatása az újrarendelési különbözet és a kiadási árrés esetén](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-reorder-margin-issue-margin) | [Biztonsági határok](../master-planning/planning-optimization/safety-margins.md) | Alapértelmezés szerint engedélyezve. |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>A kiadásban található funkciófejlesztések
 
 Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tartalmazza: Ezek közül mindegyik fejlesztés egy már meglévő funkciót fejleszt tovább. Mivel fejlesztésekről van szó, nem szerepelnek a [kiadási tervben](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). Alapértelmezés szerint mindegyik fejlesztés ki van kapcsolva (hacsak nincs másképpen jelezve), így biztos lehet abban, hogy nem ütköznek a meglévő testreszabásokkal vagy beállításokkal.
 
-Ha be- vagy kikapcsolni szeretné ezeket a funkciókat, ezt a [funkciókezelésben kell megtennie](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Ha bármelyik funkciót be szeretné kapcsolni, akkor ezt a funkciókezelésben [kell megtenni](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Modul | Funkcióneve a funkciókezelésben | További információ |
 |---|---|---|
-| Gyártásvezérlés | Igény szerinti anyagelérhetőségi ellenőrzés a termelési rendelésekre vonatkozóan | Ez a funkció gyorsabbá teszi a **Termelési rendelések kiadásához való megnyitását,** amely elérhető a Termelési padló felügyeleti **munkaterületéről**. E funkció nélkül a rendszer automatikusan ellenőrzi, hogy az összes felsorolt gyártási rendeléshez rendelkezésre állnak-e anyagok, amint megnyitja az oldalt, ami jelentős időt vehet igénybe, ha nagyszámú megrendelése van. Ha ez a funkció engedélyezve van, a rendszer eszköztárgombot biztosít, amellyel csak a kiválasztott rendelések esetében és szükség esetén kezdeményezheti az anyagellenőrzést. |
-| Gyártásvezérlés | (Előzetes verzió) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (nem WMS) | Ez a funkció lehetővé teszi a dolgozók számára, hogy a termelési padló végrehajtási felületét használják az anyagfelhasználás, a kötegszámok és a sorozatszámok regisztrálására. Ez a szolgáltatás csak azokat a cikkeket támogatja, amelyek nem engedélyezettek a speciális raktári folyamatok (WMS) használatára. A WMS-kompatibilis elemek támogatása egy jövőbeli kiadásra van ütemezve.<p>Egyes gyártóknak, különösen a feldolgozóiparban lévőknek, kifejezetten regisztrálniuk kell az egyes tételekhez vagy gyártási rendelésekhez felhasznált anyag mennyiségét. A munkavállalók például egy skálát használhatnak a munka közben felhasznált anyag mennyiségének mérésére. A teljes anyagkövetés biztosítása érdekében ezeknek a szervezeteknek regisztrálniuk kell azt is, hogy mely tételszámokat fogyasztották az egyes termékek gyártásakor. |
-| Gyártásvezérlés | Jelentés készként a felhő- és peremskálázási egység raktárkezelési számítási feladatán | Ez a funkció lehetővé teszi a dolgozók számára, hogy a Raktárkezelés mobilalkalmazással a gyártási vagy kötegelt rendelést készként jelentsék, amikor az alkalmazás felhő- vagy peremskálás egység raktárkezelési számítási feladatán fut. További információ: [Jelentés befejezettként és elhelyezve egy méretarányos egységen](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Gyártásvezérlés | Gyártási rendelés indítása a felhő- és peremskálás egység raktárkezelési számítási feladatán | Ez a funkció lehetővé teszi a dolgozók számára, hogy a Raktárkezelés mobilalkalmazással éles vagy kötegelt rendelést indítsanak, amikor az alkalmazás felhő- vagy peremskálás egység raktárkezelési számítási feladatán fut. |
-| Raktárkezelés | Új terheléstervezési munkapad-oldalak | Két új terheléstervezési munkapad-oldalt engedélyez: **Bejövő terheléstervezési munkapad** és Kimenő **terheléstervezési munkapad**. |
+| Gyártásvezérlés | Igény szerinti anyagelérhetőségi ellenőrzés a termelési rendelésekre vonatkozóan | Ez a funkció gyorsabbá teszi a termelési rendelések kiadási lapjának megnyitását, amely a **Termelésirányítás** **munkaterületről** érhető el. A rendszer e funkció nélkül automatikusan ellenőrzi, hogy a lap megnyitása után a felsorolt termelési rendelésekhez rendelkezésre állnak-e anyagok, ami nagy számú rendelés esetén jelentős időt is igénybe vehet. Ha ez a funkció engedélyezve van, akkor a rendszer egy eszköztárgombot biztosít, amelynek segítségével az anyagok ellenőrzése csak a kiválasztott rendelésekre és szükség esetén történik meg. |
+| Gyártásvezérlés | (Előzetes verzió) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (nem WMS) | Ez a funkció lehetővé teszi a dolgozók számára, hogy a termelési emelet végrehajtási felületével regisztrálják az anyagfelhasználást, a kötegszámokat és a sorozatszámokat. Ez a funkció csak olyan cikkeket támogat, amelyek nincsenek engedélyezve a speciális raktári folyamatok (WMS) használatára. A WMS-kompatibilis cikkek támogatása egy jövőbeli kiadásra van ütemezve.<p>Egyes gyártóknak, különösen a folyamatiparban használt gyártóknak explicit módon regisztrálniük kell az egyes köteg- vagy termelési rendelésenként felhasznált anyagok mennyiségét. Például a dolgozók a mérleg segítségével leméneklik a munka közben felhasznált anyagok mennyiségét. A teljes anyagkövetés biztosítása érdekében ezeknek a szervezeteknek regisztrálniuk kell azt is, hogy az egyes termékek gyártása során melyik kötegszámokat felhasználták. |
+| Gyártásvezérlés | Jelentés befejezettként a raktárkezelési munkaterhelésben, felhőalapú és peremhálózat-léptékű egység esetén | Ez a funkció lehetővé teszi a dolgozók számára a Raktárkezelés mobilalkalmazás használatával, hogy készként jelentsen egy termelési vagy kötegrendelést, amikor az alkalmazás egy felhő vagy peremhálózati egység raktárkezelési terhelésével szemben fut. A további tudnivalókat lásd a Készként [jelentve és a mérlegegységre rakva.](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF) |
+| Gyártásvezérlés | Termelési rendelés kezdése a felhő- és szélskála egysége raktárkezelési terhelésére | Ez a funkció lehetővé teszi a dolgozók számára, hogy a Raktárkezelés mobilalkalmazás segítségével elindítsak egy termelési vagy kötegrendelést, amikor az alkalmazás egy felhő vagy peremhálózati egység raktárkezelési terhelésével fut. |
+| Raktárkezelés | Új rakománytervezési munkaterületlapok | Két új rakománytervezési munkaterületi lapnak ad lehetőséget: a bejövő rakománytervezési munkaterületet és a **kimenő** **rakománytervezési** munkaterületet. |
 
 ## <a name="new-and-updated-documentation-resources"></a>Új és frissített dokumentáció-erőforrások
 
@@ -69,9 +68,9 @@ A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelent�
 
 ## <a name="additional-resources"></a>További erőforrások
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások platformfrissítései
+### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.24 platformfrissítéseket tartalmaz. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.24 verziójához (2021. november)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+A Microsoft Dynamics 365 Supply Chain Management 10.0.24 platformfrissítéseket tartalmaz. A további tudnivalókat lásd a Pénzügy és műveletek alkalmazások [10.0.24-es verziójának Platformfrissítései (2021. november).](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md)
 
 ### <a name="bug-fixes"></a>Hibajavítások
 

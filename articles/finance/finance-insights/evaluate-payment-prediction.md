@@ -1,5 +1,5 @@
 ---
-title: A kezdeti vevői fizetési előrejelzési modell kiértékelése (előzetes verzió)
+title: A kezdeti vevői fizetési előrejelzési modell kiértékelése
 description: Ez a témakör azokat a lépéseket mutatja be, amelyekkel megismerheti a vevői kifizetési előrejelzési modellt, és értékelheti annak hatékonyságát.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: f45392d540b6696d23261a6b2197c3185f5ede2b7c646f6b751480145dcacfdc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768867"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969112"
 ---
-# <a name="evaluate-the-initial-customer-payment-prediction-model-preview"></a>A kezdeti vevői fizetési előrejelzési modell kiértékelése (előzetes verzió)
+# <a name="evaluate-the-initial-customer-payment-prediction-model"></a>A kezdeti vevői fizetési előrejelzési modell kiértékelése
 
 [!include [banner](../includes/banner.md)]
 
@@ -34,13 +34,13 @@ A Microsoft Dynamics 365 Finance **Finance Insights paraméterei** lapon a **Mod
 
 [![Modell pontosságának javítása hivatkozás.](./media/prediction-model.png)](./media/prediction-model.png)
 
-Ez a link elviszi az AI Builderhez, ahol többet megtudhat az aktuális modellről, és lépéseket tehet a javítása érdekében. A következő ábrán egy megnyitott oldal látható.
+Ez a hivatkozás a következő lépésekkel kapcsolható össze, ahol további tudnivalókat lehet ismerkedni az aktuális modellel, és lépéseket lehet tenni annak AI Builder javítása érdekében. A következő ábrán egy megnyitott oldal látható.
 
 [![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 A megnyitott oldal az alábbi információt mutatja:
 
-- A **Teljesítmény** szakaszban a modell teljesítményi osztálya biztosítja a modell minőségét. Ha további tájékoztatást szeretne erről az osztályról, tekintse meg az [Előrejelzési modell teljesítménye](/ai-builder/prediction-performance) részt az AI Builder dokumentációjában.
+- A **Teljesítmény** szakaszban a modell teljesítményi osztálya biztosítja a modell minőségét. Erről az osztályról a dokumentáció [előrejelzési modell](/ai-builder/prediction-performance) teljesítményével kapcsolatban tartalmaz AI Builder további tájékoztatást.
 - A **Legbefolyásosabb adat** szakasz bemutatja, hogy milyen fontos a különböző típusú adatok bevitele a modellhez. A lista és a megfelelő százalékok értékelésével meghatározhatja, hogy az adatok összhangban vannak-e a vállalattal és a piaccal kapcsolatos ismeretekkel.
 
     [![Teljesítmény és legbefolyásosabb adatszakaszok az előrejelzési modellhez.](./media/models.png)](./media/models.png)
@@ -51,7 +51,7 @@ A megnyitott oldal az alábbi információt mutatja:
 
 ## <a name="digging-deeper"></a>Mélyebbre ásás
 
-Bár a pontosság jó kiindulópont egy modell kiértékeléséhez, és a teljesítmény osztálya biztosítja a távlatot, az AI Builder részletesebb metrikákat tartalmaz, amelyek az értékeléséhez használhat. A részletek letöltéséhez kattintson a **Teljesítmény** szakaszban a három pont gombra (**...**) a **Modell használata** gombra, majd válassza ki a **Részletes metrikák letöltése** lehetőségre.
+Bár a pontosság jól kiindulópontként szolgál egy modell értékeléséhez, és a teljesítmény-fokozat ad szempontot, részletesebb mérőszámokat is biztosít, amelyek az értékeléshez AI Builder használhatók. A részletek letöltéséhez kattintson a **Teljesítmény** szakaszban a három pont gombra (**...**) a **Modell használata** gombra, majd válassza ki a **Részletes metrikák letöltése** lehetőségre.
 
 [![Részletes metrikák letöltése parancs.](./media/performance.png)](./media/performance.png)
 
@@ -89,7 +89,7 @@ Ebben az esetben az F1 makrópontszám körülbelül 49,3 százalékban azt jelz
 
 ## <a name="improving-the-model"></a>A modell javítása
 
-Miután jobban megértette az első modell eredményeit, érdemes lehet javítani a modellt a jellemzőoszlopok hozzáadásával vagy eltávolításával, vagy az adatkészlet olyan részeinek szűrésével, amelyek nem támogatják a pontos előrejelzéseket. Zárja be az AI Buildert, majd használja a **Modell javítása** hivatkozást: Dynamics 365 Finance az AI Builder folyamat újraindításához. Kísérletezhet a különböző jellemzőkkel anélkül, hogy befolyásolná a közzétett modellt. A közzétett modellt csak akkor befolyásolja, ha a **Közzététel** lehetőséget választja. Ne feledje, hogy a Dynamics 365 Finance példányához egyetlen modellt használ. Ezért a közzététel előtt alaposan tekintse át az új modelleket.
+Miután jobban megértette az első modell eredményeit, érdemes lehet javítani a modellt a jellemzőoszlopok hozzáadásával vagy eltávolításával, vagy az adatkészlet olyan részeinek szűrésével, amelyek nem támogatják a pontos előrejelzéseket. Ezután a Folyamat újraindításához kattintson a AI Builder Modell **javítása** Dynamics 365 Finance AI Builder hivatkozásra. Kísérletezhet a különböző jellemzőkkel anélkül, hogy befolyásolná a közzétett modellt. A közzétett modellt csak akkor befolyásolja, ha a **Közzététel** lehetőséget választja. Ne feledje, hogy a Dynamics 365 Finance példányához egyetlen modellt használ. Ezért a közzététel előtt alaposan tekintse át az új modelleket.
 
 ## <a name="for-more-information"></a>További információ
 

@@ -3,7 +3,7 @@ title: Többcsatornás fizetések áttekintése
 description: Ez a témakör áttekintést nyújt a többcsatornás fizetésekről a Dynamics 365 Commerce szolgáltatásban.
 author: BrianShook
 ms.date: 09/17/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application user
@@ -17,12 +17,12 @@ ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 8.1.3
-ms.openlocfilehash: 0b01a5b08304b04b924da20310b6eee0c50e9d0e
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.openlocfilehash: 593a647caeaf7d06aa1f2067954466db7dac6a1d
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779718"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984166"
 ---
 # <a name="omni-channel-payments-overview"></a>Többcsatornás fizetések áttekintése
 

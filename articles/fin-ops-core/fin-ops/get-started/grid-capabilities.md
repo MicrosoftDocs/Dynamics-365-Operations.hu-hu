@@ -13,18 +13,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ba3640cf13fecc54f4cc58cd8996e434cd16cf60
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 37484ce022085dfac66edba31b7adf9af4095df8
+ms.sourcegitcommit: bbe8ab054ad7cc00a63c63e02dc90bfa8ede15bb
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890869"
+ms.lasthandoff: 01/14/2022
+ms.locfileid: "7974381"
 ---
 # <a name="grid-capabilities"></a>Rácsfunkciók
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
-
 
 Az új rács vezérlőelem számos hasznos és erőteljes funkciót tartalmaz, amelyek a felhasználó hatékonyságának növelésére, az adatokkal kapcsolatos érdekesebb nézetek kialakítására és az adatokkal kapcsolatos jelentőségteljes rálátás megszerzésére használhatók. Ez a cikk a következő funkciókat mutatja be: 
 
@@ -37,10 +35,10 @@ Az új rács vezérlőelem számos hasznos és erőteljes funkciót tartalmaz, a
 -  Nyújtható oszlopok
 
 ## <a name="calculating-totals"></a>Teljes összegek számítása
-A Finance and Operations alkalmazásokban a felhasználók a számokat tartalmazó oszlopok alján látható összesítéseket megtekinthetik a rácsokban. Ezeket az összegeket a rács alján látható lábléc szakasz mutatja. 
+A Pénzügy és a Műveletek alkalmazásokban a felhasználók láthatják az összegeket a rácsok numerikus oszlopainak alján. Ezeket az összegeket a rács alján látható lábléc szakasz mutatja. 
 
 ### <a name="showing-the-grid-footer"></a>A rács láblécének megjelenítése
-A Finance and Operations alkalmazásokban minden egyes táblázatos rács alján láblécterület található. A lábléc értékes információkat jeleníthet meg, amely a rácsban megjelenő adatokhoz kapcsolódik. Íme néhány példa az ilyen információkra:
+A Pénzügy és műveletek alkalmazások minden táblázatos rácsának alján egy lábléc található. A lábléc értékes információkat jeleníthet meg, amely a rácsban megjelenő adatokhoz kapcsolódik. Íme néhány példa az ilyen információkra:
 
 - A táblázatból kiválasztott sorok száma (ha egynél több rekord van kiválasztva)
 - Végösszegek a konfigurált numerikus oszlopok alján
@@ -85,7 +83,7 @@ Ennek az új viselkedésnek a támogatásához egy új oszlop lett hozzáadva a 
 Amikor a felhasználók az előtt a hely előtt visznek be adatokat, ahol a kiszolgáló feldolgoz, alacsonyabb szintű adatbeviteli élményt tapasztalhatnak, például a keresések hiánya, a vezérlői szintű ellenőrzés és az alapértlemezett értékek bevitele. Ha meg szeretne találni egy értéket a legördülő listáról, akkor arra kell várnia, hogy a kiszolgáló az aktuális sorhoz felzárkózzon. Amikor a kiszolgáló dolgozza fel a sort, akkor az vezérlői szint ellenőrzése és az alapértelmezett értékek bevitele is megtörténik.   
 
 ### <a name="pasting-from-excel"></a>Beillesztés az Excel programból
-A felhasználók mindig képesek voltak a Finance and Operations alkalmazások rácsaiból a Microsoft Excel programba adatokat exportálni az **Exportálás az Excel programba** mechanizmussal. Az adatok rendszert megelőzően való megadásának képessége lehetővé teszi az új rács számára, hogy támogassa a táblák másolását Excelből, és közvetlenül a Finance and Operations alkalmazások rácsaiba. Az a rácsvonalcella, amelyből a beillesztési művelet el van indítva, határozza meg, hogy a program hová kezdi a másolt tábla beillesztését. A rács tartalma felülíródik a másolt tábla tartalmával, kivéve a következő két esetet:
+A felhasználók mindig exportálni tudják az adatokat a Pénzügy és műveletalkalmazások rácsaiból az Exportálás az Excel programba mechanizmus Microsoft Excel **segítségével**. Ugyanakkor az adatok rendszerbeli beíratási lehetősége lehetővé teszi, hogy az új rács lehetővé teszi táblák másolását az Excel programból, és közvetlenül bemásolást a Pénzügyi és műveleti alkalmazások rácsaiba. Az a rácsvonalcella, amelyből a beillesztési művelet el van indítva, határozza meg, hogy a program hová kezdi a másolt tábla beillesztését. A rács tartalma felülíródik a másolt tábla tartalmával, kivéve a következő két esetet:
 
 - Ha a másolt tábla oszlopainak száma meghaladja a rácsban maradó oszlopok számát, a beillesztés helyétől kezdve, a felhasználó értesítést kap arról, hogy a további oszlopok figyelmen kívül lettek hagyva. 
 - Ha a másolt tábla sorainak száma meghaladja a rács sorainak számát, a beillesztés helyétől kezdve a meglévő cellák felülíródnak, és a másolt táblából származó további sorok a rács alján új sorokként jelennek meg. 
@@ -96,7 +94,7 @@ A hatékonyság javításaként a felhasználók matematikai képleteket írhatn
 Ha azt szeretné, hogy a rendszer bizonyos értékeket kifejezésként ismerjen fel, akkor az értéket egyenlőségjellel (**=**) kell bevezetnie. A támogatott operátorokkal és szintaxissal kapcsolatos további információkat lásd: [Támogatott matematikai szimbólumok](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## <a name="grouping-tabular-data"></a>Táblázatos adatok csoportosítása
-Az üzleti felhasználóknak gyakran kell ad hoc adatelemzést végezniük. Bár ez megoldható az adatok Microsoft Excel alkalmazásba való exportálásával és pivot táblákkal, a táblázatos rácsok **Csoportosítás rácsokban** funkciója, amely az új rácsvezérlő funkción alapul lehetővé teszi, hogy a felhasználok a Finance and Operations alkalmazásokban is érdekes módon szervezzék a táblázatos adataikat. Mivel ez a funkció kiterjeszti az **Összegek** funkciót, a **Csoportosítás** lehetővé teszi, hogy egy csoport szintjén részösszegek megadásával jelentőségteljes betekintést nyerjen az adatokba.
+Az üzleti felhasználóknak gyakran kell ad hoc adatelemzést végezniük. Miközben ez a kimutatástáblákba történő exportálással és kimutatásos táblák használatával végrehajtásához végrehajtásához használható, a rácsok csoportosítása funkció, amely az új rácsvezérlő funkciótól függ, lehetővé teszi a felhasználók számára, hogy érdekes módon rendszerezzék a táblázatos adatokat a Pénzügy és a Műveletek alkalmazáson Microsoft Excel **belül**. Mivel ez a funkció kiterjeszti az **Összegek** funkciót, a **Csoportosítás** lehetővé teszi, hogy egy csoport szintjén részösszegek megadásával jelentőségteljes betekintést nyerjen az adatokba.
 
 A funkció használatához kattintson a jobb egérgombbal a csoportosítani kívánt oszlopra, és válassza ki a **Csoportosítás az oszlop szerint** lehetőséget. Ez a művelet a kiválasztott oszlop szerint rendezi az adatokat, egy új **Csoportosítás** oszlopot ad hozzá a rácshoz, majd az egyes csoportok elejére „fejlécsorokat” szúr be. Ezek a fejlécsorok a következő információkat tartalmazzák az egyes csoportokról: 
 -  A csoport adatértéke 
@@ -120,8 +118,8 @@ A rács első oszlopának felső részén található jelölőnégyzet bejelöl�
 ### <a name="hiding-column-names"></a>Oszlopok neveinek elrejtése
 Az adatok csoportosításakor az alapértelmezett viselkedés a csoportfej sorában az oszlop nevének megjelenítése. Elhagyhatja az oszlop nevét a csoportfej soraiban, ha kiválasztja a **Rácsbeállítások** > **Csoportoszlop nevének elrejtése** lehetőséget.
 
-### <a name="grouping-on-date-and-time-columns"></a>Csoportosítás dátum- és időoszlopokon
-A 10.0.24-es verziótól kezdve a Dátum vagy a Dátumidő mezők esetében a beállítás év, hónap vagy nap szerint lett hozzáadva a csoporthoz. A megfelelő fejlécsor "értéke" csoport megegyezik az adott mező formátumának. Ezenkívül a DateTime és az Idő mezők esetében óra, perc vagy másodperc szerint csoportosíthatja.    
+### <a name="grouping-on-date-and-time-columns"></a>Csoportosítás dátum- és időoszlopok szerint
+A Date és DateTime mezők 10.0.24-es verziójától kezdve ez a beállítás év, hónap vagy nap szerint lett hozzáadva a csoportosításhoz. A megfelelő fejlécsor "érték" csoportja meg fog egyezni az adott mezőben megadott formátummal. Ezenkívül a DateTime és az Time mezőben óra, perc és másodperc szerint is csoportosíthat.    
 
 ## <a name="freezing-columns"></a>Oszlopok rögzítése
 A rács egyes oszlopai elég fontosak lehetnek kontextus tekintetében ahhoz, hogy nem szeretné, hogy kigörgethetők legyenek a nézetből. Ehelyett azt szeretné, hogy az oszlopokban lévő értékek mindig láthatók legyenek. A **Rács oszlopainak rögzítése** funkció biztosítja ezt a rugalmasságot a felhasználók számára. 

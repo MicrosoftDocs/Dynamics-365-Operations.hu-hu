@@ -9,20 +9,18 @@ ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "10444"
-- intro-internal
+ms.custom: intro-internal
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 464092ae2fdcdfd8a0ada254e88f4418c825c1f9
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
-ms.translationtype: HT
+ms.openlocfilehash: 1fbdab1f4f81bbdb8b0b5cb3e6a5237196d7dc76
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486970"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983977"
 ---
 # <a name="get-started-with-financial-reporting"></a>Első lépések a Pénzügyi jelentéskészítéssel 
 
@@ -148,7 +146,7 @@ Korlátlan számú jelentési fát hozhat létre, hogy szervezete adatait külö
 
 ## <a name="update-the-financial-reporting-version-through-slipstreaming"></a>A pénzügyi jelentés verziójának frissítése slipstreamingen keresztül
 
-A Finance and Operations alkalmazások minden hónapban frissítve vannak. A Financial Reporting azonban nem feltétlenül frissülnek ebben az ütemben. Ezenkívül a vevőknek további lehetőségeik vannak arra, hogy mikor implementálják meg a Finance and Operations alkalmazások frissítéseit. A Financial Reporting frissítései automatikusan telepítve vannak. A Financial Reporting egy erre a célra kijelölt verziót használ fel, amely az ügyfél környezetében lesz betöltve, amikor szolgáltatásfrissítés történik, amikor a szolgáltatás leállítását kezdeményezik, vagy ha a vevő környezete Karbantartási módban van. Ennek a folyamatnak az neve *slipstreaming* vagy *valós frissítés* mivel minden ügyfél-implementáció a Financial Reporting ugyanazon verziójára van beállítva.
+A Pénzügy és a Műveletek alkalmazás minden hónapban frissül. A Financial Reporting azonban nem feltétlenül frissülnek ebben az ütemben. Ezenkívül a vevőknek több lehetőség áll rendelkezésre arról, hogy mikor valósítják meg a Pénzügyi és üzemeltetési alkalmazások frissítéseit. A Financial Reporting frissítései automatikusan telepítve vannak. A Financial Reporting egy erre a célra kijelölt verziót használ fel, amely az ügyfél környezetében lesz betöltve, amikor szolgáltatásfrissítés történik, amikor a szolgáltatás leállítását kezdeményezik, vagy ha a vevő környezete Karbantartási módban van. Ennek a folyamatnak az neve *slipstreaming* vagy *valós frissítés* mivel minden ügyfél-implementáció a Financial Reporting ugyanazon verziójára van beállítva.
 
 Az egyes verziókban kiadott módosítások [A Dynamics 365 Finance újdonságai és módosításai](../../finance/get-started/whats-new-home-page.md) részben találhatók. A platformfrissítések és hibajavítások az egyes kiadásokhoz a lap alján, a "További erőforrások" szakaszban találhatók.
 

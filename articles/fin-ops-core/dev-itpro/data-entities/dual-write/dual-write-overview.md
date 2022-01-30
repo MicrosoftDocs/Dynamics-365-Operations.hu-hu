@@ -1,21 +1,20 @@
 ---
 title: Kettős írás – áttekintés
-description: Ez a témakör a kettős írás áttekintését nyújtja, amely közel valós idejű interakciót tesz lehetővé az ügyfélkapcsolati alkalmazások és a Finance and Operations alkalmazások között.
+description: Ez a témakör áttekintést nyújt a kettős írásról, amely szinte valós idejű kommunikációt biztosít az ügyfél-kapcsolati alkalmazások, illetve a Pénzügy és Az Üzemeltetés alkalmazások között.
 author: RamaKrishnamoorthy
 ms.date: 02/06/2020
-ms.topic: article
+ms.topic: overview
 audience: Application User, IT Pro
 ms.reviewer: tfehr
-ms.custom: intro-internal
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 131c002000ee6ebed81a23f45ce17b7a7fff0b95
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
+ms.openlocfilehash: e71d1496da24b21949259e8f43a32cd4ff60249c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817361"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984141"
 ---
 # <a name="dual-write-overview"></a>Kettős írás – áttekintés
 
@@ -27,9 +26,9 @@ ms.locfileid: "7817361"
 
 ## <a name="what-is-dual-write"></a>Mi az a kettős írás?
 
-A kettős írás egy olyan beépített infrastruktúra, amely közel valós idejű interakciót tesz lehetővé az ügyfélkapcsolati alkalmazások és a Finance and Operations alkalmazások között. Amikor a vevőkkel, termékekkel, személyekkel és műveletekkel kapcsolatos adatok az alkalmazás határain túl is eljutnak, az a szervezet minden részlegét felbátorítja.
+A kettős írás egy olyan kiváló infrastruktúra, amely szinte valós idejű kommunikációt biztosít az ügyfél-kapcsolati alkalmazások, illetve a Pénzügy és a Műveletek alkalmazások között. Amikor a vevőkkel, termékekkel, személyekkel és műveletekkel kapcsolatos adatok az alkalmazás határain túl is eljutnak, az a szervezet minden részlegét felbátorítja.
 
-A kettős írás szorosan összekapcsolt, kétirányú integrációt tesz lehetővé a Finance and Operations alkalmazások és a Dataverse között. A Finance and Operations alkalmazások bármely adatmódosulása írást eredményez a Dataverse szolgáltatásban, és a Dataverse bármely adatváltozása írást eredményez a Finance and Operations alkalmazásokban. Ez az automatizált adatáramlás integrált felhasználói élményt nyújt az alkalmazások között.
+A kettős írással szorosan és kétirányúan működik együtt a Pénzügy és a Műveletek alkalmazások és a Dataverse. A Pénzügy és a Művelet alkalmazások bármely adatváltozása írást, a pénzműveleti alkalmazásokba írást és bármilyen Dataverse Dataverse adatváltozást okoz. Ez az automatizált adatáramlás integrált felhasználói élményt nyújt az alkalmazások között.
 
 ![Adatkapcsolat az alkalmazások között.](media/dual-write-overview.jpg)
 
@@ -50,9 +49,9 @@ A kettős írás infrastruktúrája bővíthető és megbízható, és a követk
 + Megbízható alkalmazáséletciklus-kezelés
 + Beépített beállítási élmény új ügyfelek számára
 
-### <a name="application"></a>Alkalmazás
+### <a name="application"></a>Pályázat
 
-A kettős írás megfeleltetést hoz létre a Finance and Operations alkalmazások és az ügyfélkapcsolati alkalmazások koncepciói között. Ez az integráció a következő eseteket támogatja:
+A kettős írás a Pénzügy és művelet alkalmazásokban használt fogalmak és az ügyfél-megállapodási alkalmazások koncepciói közötti megfeleltetést hozza létre. Ez az integráció a következő eseteket támogatja:
 
 + Integrált vevői alapadat
 + A vevői hűségkártyákhoz és jutalompontokhoz való hozzáférés
@@ -79,17 +78,17 @@ A kettős írás adatintegrációt tesz lehetővé az egész Microsoft Dynamics 
 + A kettős írás infrastruktúrája a nincs kódolás/kevés kódolás elvet követi. Minimális mérnöki erőfeszítést kell tenni a szabványos táblák közti leképezések kiterjesztéséhez, és az egyéni leképezések szerepeltetéséhez.
 + A kettős írás online és offline módot is támogat. A Microsoft az egyetlen olyan vállalat, amely online és offline mód támogatását is kínálja.
 
-## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a> Mit jelent a kettős írás az ügyfélkapcsolati alkalmazások fejlesztői és tervezői számára?
+## <a name="what-does-dual-write-mean-for-developers-and-architects-of-customer-engagement-apps"></a><a id="developer-architect"></a>Mit jelent a kettős írás az ügyfélkapcsolati alkalmazások fejlesztői és tervezői számára?
 
-A kettős írás automatizálja a Finance and Operations alkalmazások és az ügyfélkapcsolati alkalmazások közti adatáramlást. A kettős írás két olyan AppSource-megoldást tartalmaz, amelyek telepítve van Dataverse-szolgáltatásban. A megoldások bővítik a tábla sémáját, beépülő moduljait és munkafolyamatait a Dataverse-ben, hogy ERP méretűre skálázhatók legyenek. A sikeres végrehajtás érdekében az ügyfélkapcsolati alkalmazások fejlesztőinek és tervezőinek ismerniük kell ezeket a változtatásokat, és együtt kell működniük az ellenpéldányaikkal a Finance and Operations alkalmazásokban.
+A kettős írás automatizálja a Pénzügy és a Műveletek alkalmazások, valamint az ügyfél-megállapodási alkalmazások közötti adatáramlást. A kettős írás két olyan AppSource-megoldást tartalmaz, amelyek telepítve van Dataverse-szolgáltatásban. A megoldások bővítik a tábla sémáját, beépülő moduljait és munkafolyamatait a Dataverse-ben, hogy ERP méretűre skálázhatók legyenek. A sikeres implementációhoz az ügyfél-programfejlesztőknek és -fejlesztőknek meg kell érteniük ezeket a módosításokat, és együtt kell működniük a Pénzügyi és üzemeltetési alkalmazásokkal.
 
-Ha a Finance and Operations alkalmazásokkal paritást szeretne létrehozni, a kettős írás a séma néhány fontos változtatást eszközök a Dataverse sémájában. Ha megérti a konstrukciót, akkor a későbbiekben elkerülhetők lesznek a tervezéssel és fejlesztéssel kapcsolatos javítások.
+Ha paritást hoz létre a Pénzügy és Művelet alkalmazásokkal, akkor a kettős írás alapvető változásokat hoz létre a Dataverse sémában. Ha megérti a konstrukciót, akkor a későbbiekben elkerülhetők lesznek a tervezéssel és fejlesztéssel kapcsolatos javítások.
 
-+ Ha a kettős írású AppSource-csomagot telepítik, a Dataverse új fogalmakat kap, például a vállalatot és a felet. Ezek a koncepciók elősegítik, hogy a Dataverse-re épülő alkalmazások, köztük a Dynamics 365 Sales, Dynamics 365 Marketing, Dynamics 365 Customer Service és Dynamics 365 Field Service, zökkenőmentesen működhessenek együtt a Finance and Operations alkalmazásokkal.
++ Ha a kettős írású AppSource-csomagot telepítik, a Dataverse új fogalmakat kap, például a vállalatot és a felet. Ezek az alapfogalmak segítik a Dataverse dynamics 365 értékesítésre, a Dynamics 365 marketingre, a Dynamics 365 ügyfélszolgálatra és a Pénzügy és műveletek alkalmazásokkal való problémamentes együttműködésre használt Dynamics 365 Field Service alkalmazásokat.
 
 + A tevékenységek és megjegyzések egyesülnek, és bővítésükkel támogatják a C1 (a rendszer felhasználóit) és a C2 (a rendszer ügyfeleit).
 
-+ Ha meg szeretné akadályozni, hogy a Finance and Operations alkalmazások és a Dataverse közötti pénznemátvitelek során az adatveszteséget, bővítse ki a tizedes helyek számát az ügyfélkapcsolati alkalmazások pénznem adattípusában. A funkció a meglévő sorokat a metaadat-réteg új kiterjesztett állapotára fordítja le. A folyamat során a program a pénzadatok helyett decimális adatokra fordítja le a pénznemet, és a pénznem értéke 10 tizedesjegyet támogat. Ez a funkció választható, és a szervezetek, amelyeknél nem szükséges a több, mint 4 tizedesjegy pontosság nem kell, hogy elfogadják. A további tudnivalókat lásd: [Pénznem-adattípus áttelepítése a kettős íráshoz](currrency-decimal-places.md).
++ Ha meg szeretné akadályozni, hogy a pénzügyi és a műveletalkalmazások és az alkalmazások közötti pénznemátadás során adatvesztés jelennek meg, a vevői kapcsolati alkalmazások pénznem adattípusában meg lehet hosszabbíthatja Dataverse a tizedesjegyek számát. A funkció a meglévő sorokat a metaadat-réteg új kiterjesztett állapotára fordítja le. A folyamat során a program a pénzadatok helyett decimális adatokra fordítja le a pénznemet, és a pénznem értéke 10 tizedesjegyet támogat. Ez a funkció választható, és a szervezetek, amelyeknél nem szükséges a több, mint 4 tizedesjegy pontosság nem kell, hogy elfogadják. A további tudnivalókat lásd: [Pénznem-adattípus áttelepítése a kettős íráshoz](currrency-decimal-places.md).
 
 + [Dátum hatályossága](../../dev-tools/date-effectivity.md) hozzá lesz adva a Dataverse-hez. A múltbéli, jelenlegi és jövőbeli dátumokat is támogatni fogja ugyanazon táblában.
 

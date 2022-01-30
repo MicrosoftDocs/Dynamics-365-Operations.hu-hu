@@ -3,7 +3,7 @@ title: Az alaptervek áttekintése
 description: A vállalat napi munkaműveleteinek támogatásához, a különböző figyelni kívánt tervezési stratégiák szimulálásához és vállalati (például a belső teljesítménnyel és a vevői elégedettséggel kapcsolatos) alapszabályok megvalósításához használjon különféle alapterveket.
 author: ChristianRytt
 ms.date: 05/28/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ReqParameters, ReqPlanSched
@@ -18,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 75f18d708bf71a7bec1d8a5bd95008aaa2ec4d90
-ms.sourcegitcommit: 2084fc166d027f8192a08cd5c00169c448869ac8
-ms.translationtype: HT
+ms.openlocfilehash: 03467778025287f3692e171bea37b1bfb2ca1646
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/30/2021
-ms.locfileid: "7582540"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982354"
 ---
 # <a name="master-plans-overview"></a>Az alaptervek áttekintése
 

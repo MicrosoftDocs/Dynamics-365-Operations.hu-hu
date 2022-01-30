@@ -3,7 +3,7 @@ title: Elektronikus számlázás áttekintése
 description: Ez a témakör információkat tartalmaz arról, hogyan tudja beállítani az Elektronikus számlázást a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban.
 author: gionoder
 ms.date: 03/29/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 815e3f15f97c7f7083c4044b9f61bd05a33624cc
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 6983abeb4d0fdd1a595a53ea0fd9cd840b24030b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778184"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983852"
 ---
 # <a name="electronic-invoicing-overview"></a>Elektronikus számlázás áttekintése
 
@@ -68,7 +68,7 @@ Az Elektronikus számlázás olyan helyzetekben használható, amikor a kijelöl
 - Egységes felhasználói élmény az e-számla folyamatának konfigurálásához és nyomon követéséhez az összes országban vagy régióban
 - Az Elektronikus számlázás megoldások új országokban vagy régiókban történő gyorsabb, könnyebb és olcsóbb elfogadása
 - A szolgáltatás konfigurációja a Regulatory Configuration Service (RCS) szolgáltatással és a Globalizációs funkció beállításával
-- Üzleti adatok átalakítása több e-számla formátumba (XML, JavaScript Object Notation \[ JSON\], TXT és vesszővel tagolt értékek \[ CSV\]) az RCS-ben meghatározott konfigurációk használatával:
+- Üzleti adatok átalakítása több e-számla formátumba (XML, JavaScript Object Notation \[JSON\], TXT és vesszővel tagolt értékek \[CSV\]) az RCS-ben meghatározott konfigurációk használatával:
 
     - Azok az elektronikus jelentési formátumok, amelyek elérhetők azon országokban vagy régiókban, ahol az e-számla átalakításának konfigurálhatósága nem érhető el
 

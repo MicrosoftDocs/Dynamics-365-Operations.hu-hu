@@ -1,60 +1,61 @@
 ---
 title: Jelentkezők kiválasztására szolgáló eszközök azonosítása és rendszerbe állítása
 description: Nehéz megfelelően képzett személyeket találni bizonyos pozíciók betöltésére, különösen, ha az a pozíció különleges képességeket igényel.
-author: andreabichsel
-ms.date: 11/20/2020
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmJobLookup, HcmSkillMappingLine, HcmPersonCertificate, CCHTMLPrintPreview
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cae72f9ad1e627c1de547de9689f951a6aea0f9eb37d426034652332a7929a22
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 23ac3067c03bf2cf336848301e8c27b60da8dc8c
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723031"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964831"
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Jelentkezők kiválasztására szolgáló eszközök azonosítása és rendszerbe állítása
 
 [!include [banner](../../includes/banner.md)]
 
-Nehéz megfelelően képzett személyeket találni bizonyos pozíciók betöltésére, különösen, ha az a pozíció különleges képességeket igényel.  Azonban lehet, hogy a megfelelő képzettségű pályázók már az ön szervezeténél dolgoznak. Rákereshet egy adott szakértelemre a meglévő alkalmazottak és az új pályázók között. Ez lehetővé teszi, hogy a toborzó gyorsan megszűrhesse és összegyűjthesse a pályázókat, akik most vagy a múltban pályáztak egy nyitott pozícióra, vagy hogy a meglévő alkalmazottak közül találjon valakit. A feladatrögzítés segítségével megtudhatja, hogy a Szakértelem feltérképezése funkció hogyan segíti önt a megfelelő személy megtalálásában egy nyitott pozícióra. Ez az eljárás az USMF bemutatócéget használja.
+Nehéz megfelelően képzett személyeket találni bizonyos pozíciók betöltésére, különösen, ha az a pozíció különleges képességeket igényel. Azonban lehet, hogy a megfelelő képzettségű pályázók már az ön szervezeténél dolgoznak. Rákereshet egy adott szakértelemre a meglévő alkalmazottak és az új pályázók között. Ez lehetővé teszi, hogy a toborzó gyorsan megszűrhesse és összegyűjthesse a pályázókat, akik most vagy a múltban pályáztak egy nyitott pozícióra, vagy hogy a meglévő alkalmazottak közül találjon valakit. Ezzel az eljárással megismerheti, hogy a szakértelem-feltérképezési funkció hogyan segíthet megtalálni a nyitott beosztások megfelelő személyét. A **művelet az USMF** bemutatóadat-vállalatot használta az eljárás létrehozásához.
 
-1. Ugrás az Emberi erőforrások > Szakértelem > Szakértelem elemzése > Szakértelem-feltérképezési profilok lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. A szakértelem-feltérképezéshez adjon meg egy nevet a Szakértelem feltérképezése mezőben.  Például: könyvelő.
-4. A Leírás mezőbe írja be a szakértelem-feltérképezés leírását.
-5. Adja meg a dátumot a Dátum mezőben.
-6. Kattintson a Profil beolvasására.
-    * A profil beolvasása segítségével a Diploma, Szakértelem, Végzettség adatokban a kijelölt Személy, Feladat vagy Tanfolyam közül kérhet elemet a keresés alapjára vonatkozóan.   Ezután hozzáadhat vagy távolítsa el a feltételeket, ha a feltétel nem kötelező, és rangsorolja a feltételek fontosságát.  
-7. Kattintson a Munkára.
-8. A Munka mezőben adjon meg vagy válasszon ki egy értéket.
-9. Kattintson az OK gombra.
-10. Bontsa ki Tartomány gyorslapot, és adjon meg további információkat, például részleg.
-11. Bontsa ki a Tanúsítványok gyorslapot a diplomák megjelenítéséhez és szerkesztéséhez.
-12. Bontsa ki a Szakértelmek gyorslapot a Szakértelmek megjelenítéséhez és szerkesztéséhez.
-13. Bontsa ki a Képzettség gyorslapot a képzettségi kritériumok megjelenítéséhez és szerkesztéséhez.
-14. Kattintson a végrehajtásra.
-15. Kattintson az OK gombra.
-16. Kattintson az Eredményre.
-17. Kattintson az Eredményre.
-18. Kattintson az Önéletrajzra.
-19. Kattintson a Bizonyítványokra.
-    * Minden megjelenő személy esetében külön megtekintheti a végzettséggel, szakértelemmel és szakmai tapasztalattal kapcsolatos részletes információkat.  
+1. Ugrás a **Humán erőforrások \> kompetenciái \> szakértelemelemzés \> szakértelem-feltérképezési profiljaihoz**.
+2. Válassza az **Új** lehetőséget.
+3. A **Szakértelem feltérképezése** mezőben adjon meg egy nevet a szakértelem feltérképezéséhez. Beírhatja például **a könyvelőt**.
+4. A Leírás **mezőbe írja be a** szakértelem-feltérképezés leírását.
+5. Adja meg a dátumot a **Dátum** mezőben.
+6. Profil beolvasása a kiválasztott személy, munkakör vagy tanfolyam tanúsítvány-, szakértelem- és végzettségi adataiból való lekéréséhez, hogy a keresés alapjaként fel tudja **használni**. Ezután feltételeket adhat hozzá vagy távolíthat el, jelezheti, hogy választhatóak-e, és rangsorolja a fontosságukat.
+7. Feladat **kiválasztása**.
+8. A Feladat **mezőben** adjon meg vagy válasszon ki egy értéket.
+9. Válassza ki az **OK** lehetőséget.
+10. Adja hozzá **a** további adatokat a Tartomány gyorsgombra, például a részleghez.
+11. A Tanúsítványok **gyorsnézetben** tekintse meg vagy szerkessze a tanúsítványokat.
+12. A Szakértelem **gyorsététen** megtekintheti vagy szerkesztheti a készségeket.
+13. A **Végzettség gyorsgombra vonatkozó feltételek megtekintése** vagy szerkesztése.
+14. Válassza a **Végrehajtás** lehetőséget.
+15. Válassza ki az **OK** lehetőséget.
+16. Válassza az **Eredmény** lehetőséget.
+17. Válassza az **Eredmény** lehetőséget.
+18. Válassza az **önéletrajzt**.
+19. Tanúsítványok **kiválasztása**.
+
+    A listán szereplő összes személyhez további részleteket lehet ásni, és megtekintheti végzettségük, szakértelmük és szakmai tapasztalatuk részletes adatait.
+
 20. Zárja be a lapot.
 21. Zárja be a lapot.
 22. Válassza ki újra az eredményt.
-23. Kattintson a Jelentésre.
-    * A jelentés a legjobb találatokat felül mutatja.  Megtekintheti, hogy van-e hiányelem felsorolva.  Ez az elem az eltérést jelzi a szakértelem feltérképezésén felsorolt szint és a személy szakértelmének szintje között.  
+23. Válassza a **Jelentés** lehetőséget.
+
+    A legjobb egyezések a jelentés tetején lesznek felsorolva. Látnia kell, hogy megjelenik a listán egy hiányelem. Ez az elem a szakértelem-feltérképezésben szereplő szint és az adott személyhez rendelt szakértelem szintje közötti különbséget jelöli.
+
 24. Zárja be a lapot.
-25. Kattintson a Mentés gombra.
-
-
+25. Válassza a **Mentés** lehetőséget.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -3,7 +3,7 @@ title: Vevői fizetési előrejelzések
 description: Ez a témakör a fizetési előrejelzések képességét ismerteti, amelyek segíthetnek jobban megérteni a vevők tipikus fizetési gyakorlatait. Ez a funkció segíthet azonosítani azokat a körülményeket, amelyek a begyűjtési folyamatok az eredeti kezdésnél korábbi megkezdését okozhatják..
 author: ShivamPandey-msft
 ms.date: 11/03/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,17 +17,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 300c835c835a5c653b75b9e151462337dfbe49a5
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.openlocfilehash: 04897e3a7765264ab2e664422caa928c49b9cc61
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752737"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982039"
 ---
 # <a name="customer-payment-predictions"></a>Vevői fizetési előrejelzések
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör a fizetési előrejelzések képességét ismerteti, amelyek segíthetnek jobban megérteni a vevők tipikus fizetési gyakorlatait. Ez a funkció segíthet azonosítani azokat a körülményeket, amelyek a begyűjtések folyamatainak az eredeti kezdésnél korábbi megkezdését okozhatják..
 
@@ -39,7 +38,7 @@ Szervezetek gyakran nehezen jósolják meg, hogy a vevők mikor fizetik ki a sz�
 - Túl későn elindított gyűjtési folyamatok
 - Azoknak a vevőknek kiadott rendelések, akik elmulaszthatják a kifizetést
 
-A Vevői kifizetés előrejelzések (előzetes verzió) segítenek a szervezeteknek megjósolni a vevői számla kifizetését. Ezért olyan gyűjtési stratégiákat hozhatnak létre, amelyek növelik annak valószínűségét, hogy időben fizessenek.
+A vevői kifizetések előrejelzései segítik a szervezeteket annak előrejelzésében, hogy mikor lesz kifizetve a vevői számla. Ezért olyan gyűjtési stratégiákat hozhatnak létre, amelyek növelik annak valószínűségét, hogy időben fizessenek.
 
 ## <a name="predictions"></a>Előrejelzések
 
@@ -55,11 +54,11 @@ Minden nyitott számlához a funkció három kifizetési valószínűséget rend
 
 A szolgáltatás a várható kifizetések összesített nézetét is tartalmazza.
 
-[![ Kifizetési előrejelzések összesített nézete.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Kifizetési előrejelzések összesített nézete.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Minden számlához hozzárendeli a rendszer az időben való fizetés valószínűségét. Azoknál a számláknál, amelyeknél az időben való fizetés valószínűsége 50%-nál alacsonyabb, akkor a rendszer a számlát piros körrel jelöli meg, amellyel jelzi, hogy ezekre a számlákra a pénzbehajtó fokozott figyelme szükséges.
 
-[![ Kifizetési valószínűségek listája.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Kifizetési valószínűségek listája.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 A Vevői kifizetési előrejelzések funkció kontextus szerinti adatokat is tartalmaz az előrejelzés elmagyarázása érdekében. Ezek az adatok a legjelentősebb tényezőket tartalmazzák, amelyek befolyásolják az előrejelzést, a vevővel folytatott üzleti állapotot, valamint a vevő múltbeli fizetési magatartásának részleteit.
 
@@ -67,6 +66,6 @@ A beszedési folyamat számos vállalkozásban reaktív tevékenység. Más szó
 
 ## <a name="methodology"></a>Módszertan
 
-A múltban általában nehéz mesterséges intelligencia-(AI) megoldást fejleszteni és alkalmazni. A folyamatnak adatszakértők, adott téma szakértői (SME-k) és mérnökök csapatára van szükség, akik idővel dolgoznak egy használható AI-megoldás kialakításán, fejlesztésén, üzembe helyezésén és karbantartásán. A vevői kifizetési előrejelzések segítségével egyszerűen telepíthető és használható a Microsoft Dynamics 365 Finance AI megoldása. A Microsoft AI Builder tetejére épülő AI megoldásokat építünk be. Ezért a felhasználók egyetlen kattintással telepíthetik az AI megoldást, hogy kihasználhassák egy intelligens előrejelzés előnyeit. Ha nem elégedett az előrejelzések pontosságával, egy kiemelt felhasználó, szintén egy kattintással beléphet az AI Builder bővítmény gyakorlatába, majd kiválaszthatja vagy törölheti azon mezőket, amiket az előrejelzések létrehozásához szeretne használni. Ha készen áll a programra, akkor „tanítsa be” a modellt, majd tegye közzé a változtatásokat. Az újonnan betanított modell automatikusan felveszi az előrejelzések létrehozásához a Dynamics 365 Finance-ben.
+A múltban általában nehéz mesterséges intelligencia-(AI) megoldást fejleszteni és alkalmazni. A folyamatnak adatszakértők, adott téma szakértői (SME-k) és mérnökök csapatára van szükség, akik idővel dolgoznak egy használható AI-megoldás kialakításán, fejlesztésén, üzembe helyezésén és karbantartásán. A vevői kifizetési előrejelzések segítségével egyszerűen telepíthető és használható a Microsoft Dynamics 365 Finance AI megoldása. A Microsoft előre csomagolja a Microsoftra épülő AI-megoldásokat AI Builder. Ezért a felhasználók egyetlen kattintással telepíthetik az AI megoldást, hogy kihasználhassák egy intelligens előrejelzés előnyeit. Ha nem elégedett az előrejelzések pontosságával, egy felhasználó (ismét, egyetlen kattintással) megadhatja a hosszabbítást, majd kiválaszthatja vagy törli a megfelelő mezőket, amelyek az előrejelzések generálásával AI Builder használatosak. Ha készen áll a programra, akkor „tanítsa be” a modellt, majd tegye közzé a változtatásokat. Az újonnan betanított modell automatikusan felveszi az előrejelzések létrehozásához a Dynamics 365 Finance-ben.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

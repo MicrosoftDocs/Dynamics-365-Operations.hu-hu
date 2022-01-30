@@ -1,9 +1,9 @@
 ---
 title: Perifériák
 description: Ez a témakör ismerteti a Commerce perifériákkal kapcsolatos fogalmakat.
-author: rubencdelgado
+author: BrianShook
 ms.date: 02/06/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: RetailTerminalTable, RetailDevice, RetailHardwareProfile
@@ -14,15 +14,15 @@ ms.custom:
 - intro-internal
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7b240038a946a7f34a3c69df18329edbe1df6be0
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
-ms.translationtype: HT
+ms.openlocfilehash: ec991f34fcaa1a71a7e7aa3d1eaac4c6988acfa7
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500303"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986226"
 ---
 # <a name="peripherals"></a>Perifériák
 

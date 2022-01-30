@@ -1,43 +1,48 @@
 ---
 title: Meglévő dolgozók felvétele toborzás útján
 description: Időnként a nyitott pozíciók feltölthetők olyan pályázókkal, akik már alkalmazottak a szervezetben.
-author: andreabichsel
-ms.date: 02/10/2017
+author: twheeloc
+ms.date: 01/10/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: df23be9a657b7001b4974e7802a507c0c54a18dacb46354a68699d759827e941
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 49bb7bea167674eb81fd6d1144c6c302a7c29391
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749580"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964908"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Meglévő dolgozók felvétele toborzás útján
 
 [!include [banner](../../includes/banner.md)]
 
-Időnként a nyitott pozíciók feltölthetők olyan pályázókkal, akik már alkalmazottak a szervezetben. Ez az eljárás végigvezeti egy meglévő alkalmazott felvételén a toborzási folyamat lépéseivel. Ezzel az eljárással egy toborzási projekt már létrejött, és egy meglévő alkalmazott már beküldött a toborzási projekthez egy kérelmet. Ez az eljárás az USMF bemutatócéget használja.
+Bizonyos esetekben a nyitott pozíciókat kitöltik azok a pályázók, akik már alkalmazottak a szervezetben. Ez az eljárás végigvezeti egy meglévő alkalmazott felvételén a toborzási folyamat lépéseivel. Ezzel az eljárással egy toborzási projekt már létrejött, és egy meglévő alkalmazott már beküldött a toborzási projekthez egy kérelmet. A **művelet az USMF** bemutatóadat-vállalatot használta az eljárás létrehozásához.
 
-1. Ugorjon az Emberi erőforrások > Toborzás > Pályázatok > Pályázatok lehetőségre.
-2. A listából keresse meg a felvenni kívánt alkalmazott jelentkezését. Példa: 00002 John Emory
-3. Kattintson a Pályázat állapota lehetőségre.
-    * A pályázat állapota jelzi, hogy a pályázat hol áll a toborzási folyamatban.  Ezek a lépések nem kötelezők. Általában egy alkalmazás a következő sorrendben mozgatná az állapotokoat: átvéve, jóváhagyva és interjúvolva. Az interjúfolyamat után felvételi döntés születik.  
-4. Kattintson a Pozíció módosítása gombra.
-5. Válassza ki a pozíciót, amelybe az alkalmazottat tervezi felvenni.
-6. Az Új megbízás kezdő dátum mezőben adja meg az alkalmazott új beosztásának kezdő dátumát.  
-7. A Megbízás befejező dátum mezőben adja meg az alkalmazott jelenlegi beosztásának befejező dátumát.
-    * Előfordulhat, hogy az új beosztás kezdő dátuma és a régi beosztás záró dátuma átfedésben vannak. Ez akkor fordulhat elő, ha egy személy mindkét beosztásban végzett feladatokat egy átmeneti időszak során.  
-8. Opcionálisan kiválaszthatja az ok kódját. Példa: Átszervezés
-9. Kattintson a Pozíció módosítása gombra.
-    * Ezen a ponton a kompenzáció is módosítható. Ha most nem rendel hozzá kompenzációt, módosíthatja a munkaképernyőn, a Kompenzáció lap és Rögzített terv kiválasztásával. Miután kiválasztotta a Pozíció módosítása lehetőséget, az alkalmazás állapota „Alkalmazott”-ra frissül.  
+1. Ugrás az **Emberi erőforrások \> toborzási \>\> pályázatokhoz**
+2. Keresse meg a listában a felvenni kívánt alkalmazott pályázatát. Válassza például a **00002 John Emory lehetőséget**.
+3. Válassza **ki a pályázat állapotát**.
 
+    A pályázat állapota jelzi, hogy a pályázat hol áll a toborzási folyamatban. Minden lépés nem kötelező. Egy alkalmazás általában a következő sorrendben halad végig az **állapoton**: Beérkezett, **Visszaigazolt és** **Interjúval**. Az interjúfolyamat után felvételi döntés készül.
 
+4. Pozíció **módosítása**
+5. Válassza ki azt a beosztást, amelyért az alkalmazottat felveszi.
+6. Az Új megbízás kezdő dátuma mezőben adja meg azt a dátumot, amikor az alkalmazott elkezdi az **új** beosztásban dolgozni.
+7. A Megbízás záró dátuma mezőben adja meg azt a dátumot, amikor az alkalmazott fel fog állni **az** aktuális beosztásában.
+
+    Az új beosztás kezdő dátuma és a régi beosztás záró dátuma átfedésben lehet. Ez átfedés akkor fordulhat elő, ha egy személy feladatokat hajt végre mindkét beosztáson az átmeneti időszakban.
+
+8. Nem kötelező: Válasszon egy okkódot. Válassza például az **Átszervezés** lehetőséget.
+9. Pozíció **módosítása**
+
+    Ebben az időpontban a kompenzációt is módosíthatja. Ha nem, később is módosíthatja, ha a Dolgozó lap Kompenzáció lapján a Fix **konstrukció** **·** **gombra** választ.
+
+    A Beosztás módosítása beállítás kiválasztása után a pályázat állapota "Alkalmazva" **·** **lesz**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

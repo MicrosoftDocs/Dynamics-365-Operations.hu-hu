@@ -3,7 +3,7 @@ title: Előlegre jogosultak áttekintése
 description: Ez a témakör az előlegre jogosult funkcióval kapcsolatban tartalmaz információkat.
 author: liza-golub
 ms.date: 09/15/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmWorkerAdvHolderTableListPage_RU
@@ -16,12 +16,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, R
 ms.author: elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2f71d6f693d2ad4f9a0a8c6ec93d4b111c4d2b39
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
-ms.translationtype: HT
+ms.openlocfilehash: ed09542e3f369a079c60c17a02f4d08c9f8a9e99
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500093"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984949"
 ---
 # <a name="advance-holders-overview"></a>Előlegre jogosultak áttekintése
 

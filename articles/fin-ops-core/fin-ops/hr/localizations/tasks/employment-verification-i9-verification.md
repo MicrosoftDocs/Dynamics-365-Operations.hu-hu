@@ -2,23 +2,23 @@
 title: Alkalmazotti ellenőrzés - i9 ellenőrzése
 description: A Bevándorlási reform és ellenőrzési törvény megköveteli, hogy az Egyesült Államokbeli munkáltatók igazolják az újonnan felvett alkalmazottak alkalmazási jogosultsági állapotát.
 author: ShielaSogge
-ms.date: 08/29/2018
+ms.date: 01/10/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmWorker, HcmPersonIdentificationNumber, Hcmi9Document
 audience: Application User
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d2af12a41c587fd9b69874f087558d36f9b9a1d3491996a3ab931ae2c2591dc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: ea77f112413a5b7d5c96768ad46fdb361023bd84
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752275"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964883"
 ---
 # <a name="employment-verification-i9-verification"></a>Alkalmazotti ellenőrzés - i9 ellenőrzése
 
@@ -26,32 +26,34 @@ ms.locfileid: "6752275"
 
 A Bevándorlási reform és ellenőrzési törvény megköveteli, hogy az Egyesült Államokbeli munkáltatók igazolják az újonnan felvett alkalmazottak alkalmazási jogosultsági állapotát. Ez az eljárás végigvezeti az I-9 ellenőrzéshez szükséges dokumentumok rögzítésén. Az eljáráshoz használja az USMF bemutatócéget.
 
-1. Ugrás az Emberi erőforrások > Dolgozók > Alkalmazottak lehetőségre.
-2. Rekordok kereséséhez használja a gyorsszűrőt. Például szűkítsen a Név mezővel a „Vince” szót beírva.
-3. Az alkalmazott kiválasztása. Példa: Vince Prado
-4. Bontsa ki a Személyes adatok gyorslapot.
-5. Kattintson az Azonosítószámok gombra.
-6. Kattintson az Új elemre.
-7. Válassza ki a megfelelő azonosítási típust, amelyet rögzíteni kíván. Példa: útlevél
-8. Érték beírása a Szám mezőbe.
-9. Válassza ki az Igen lehetőséget az Elsődleges mezőben.
-10. Írja be az azonosítórekord rövid leírását a Leírás mezőbe.
-11. Válassza ki a kibocsátó hatóságot, amely kiállította a dolgozó azonosító okmányát. Példa: Kormányzat
-12. Írja be a dátumot, amelyen a kibocsátó hatóság kiállította a dolgozó azonosító okmányát. Példa: 2011. 02. 15.
-13. Adja meg a személyazonosító okmány lejáratának dátumát. Példa: 2021. 02. 15.
-14. Kattintson a Mentés gombra.
+1. Ugrás a **humán erőforrások \>\> dolgozóihoz**.
+2. Rekordok kereséséhez használja a gyorsszűrőt. Szűrést lehet például a **Név mezőre a** Márk értéke **alapján**.
+3. Az alkalmazott kiválasztása. Választhatja például **a Fordo jelölőnégyzetet.**
+4. Válassza ki **a Személyes adatok** gyorsét.
+5. Azonosító **számok** kiválasztása.
+6. Válassza az **Új** lehetőséget.
+7. Válassza ki a rögzített azonosítási típust. Például válassza ki az **Útlevél** lehetőséget.
+8. A **Szám** mezőbe írjon be egy értéket.
+9. Az Elsődleges **mezőben** válassza az Igen **lehetőséget**.
+10. A **Leírás** mezőbe írja be az azonosító rekord rövid leírását.
+11. A Kibocsátó ügynökség mezőben válassza ki azt a szervezetet, amely az **azonosítót** kiállította a dolgozónak. Válassza például a Kormányzati **lehetőséget**.
+12. Adja meg azt a dátumot, amikor a kibocsátó ügynökség kiállította a dolgozó azonosító űrlapját. Például adja meg **a 2011. február** 15-ét (2011. február 15.).
+13. Adja meg a személyazonosító okmány lejáratának dátumát. Adja meg például **2021. február 15-ét** (2021. február 15.).
+14. Válassza a **Mentés** lehetőséget.
 15. Zárja be a lapot.
-16. Kattintson a Foglalkoztatás lapra.
-17. Kattintson az I-9 elemre.
-18. Kattintson az Új lehetőségre.
-19. A Munkára jogosultság mezőben válasszon ki egy lehetőséget.
-    * Ha az alkalmazott nem az Egyesült Államok állampolgára, akkor meg kell adnia a tartózkodási engedély vagy belépési engedély számát is.  
-20. Válassza ki a GroupListA lehetőséget.
-    * A kiválasztott lista attól függ, hogy a dolgozó milyen személyazonosító okmányt adott meg. A dolgozónak meg kell adnia egy A listás dokumentumot vagy egy B vagy C listás dokumentumot. Ha például a dolgozó útlevelet adott meg, kiválasztható az A lista. Ha azonban a dolgozó csak a vezetői jogosítványa és a társadalombiztosítási kártyája számát adta meg, a B és C listát kell kiválasztani.  
-21. Az I-9 dokumentumtípus mezőben válassza ki a dolgozó által benyújtott dokumentum típusát.
-22. A Bizonylat száma mezőben adjon meg, vagy válasszon ki egy értéket.
-23. Kattintson a Mentés gombra.
+16. Válassza a **Foglalkoztatás** lapot.
+17. Válassza **az I-9** et.
+18. Válassza az **Új** lehetőséget.
+19. Válasszon egy beállítást a **Munka** jogosultsága mezőben.
 
+    Ha az alkalmazott nem az Egyesült Államok állampolgára, akkor meg kell adnia a dolgozó rezidens külföldi vagy beléptetési számát.
 
+20. Válassza a **GroupListA** lehetőséget.
+
+    A kiválasztott lista a dolgozó által megadott azonosítótól függ. Egy dolgozónak vagy egy A listás dokumentumot, vagy egy B listás és egy C listás dokumentumot is meg kell adnia. Ha például a dolgozó útlevelet adott meg, az "A" listát választhatja. Ha azonban a dolgozó csak a jogosítványt és a társadalombiztosítási kártyát biztosította, a B és a C listát kell választania.
+
+21. Az **I-9 dokumentumtípus mezőben válassza ki a dolgozó** által megadott dokumentum típusát.
+22. A Dokumentum száma mezőben adjon meg vagy **válasszon** ki egy értéket.
+23. Válassza a **Mentés** lehetőséget.
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]

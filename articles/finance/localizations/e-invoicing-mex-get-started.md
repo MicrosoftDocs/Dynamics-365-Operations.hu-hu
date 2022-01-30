@@ -9,20 +9,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom:
-- "97423"
-- intro-internal
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
-ms.sourcegitcommit: 385fc4e9c641b43734ddb030893904489361af7d
+ms.openlocfilehash: 76c9f44dcc68b23058319cd317ba8426709fdca7
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2021
-ms.locfileid: "7881591"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986358"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
 
@@ -35,7 +33,7 @@ Ez a témakör olyan információkat tartalmaz, amelyek bemutatják a mexikói E
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A témakörben található lépések befejezése előtt el kell kezdenie az [Elektronikus számlázás szolgáltatásfelügyeletének első lépéseit](e-invoicing-get-started-service-administration.md) és az [Elektronikus számlázás használatának első lépéseit](e-invoicing-get-started.md).
+A témakörben található lépések befejezése előtt el kell kezdenie az Elektronikus számlázás szolgáltatásfelügyeletének első lépéseit és az Elektronikus számlázás használatának [első](e-invoicing-get-started-service-administration.md)[lépéseit](e-invoicing-get-started.md).
 
 ## <a name="set-up-the-cadena-xslt"></a>A Patna XSLT beállítása
 

@@ -2,8 +2,8 @@
 title: Szervezetek és szervezeti hierarchiák áttekintése
 description: Szervezeti hierarchiák a vállalkozását alkotó szervezetek közötti kapcsolatotat jelölik.
 author: sericks007
-ms.date: 11/10/2021
-ms.topic: article
+ms.date: 01/03/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6f0388b6e7c22c339d26b82c35f1bbb1ef54cdb5
-ms.sourcegitcommit: ba10ba2cd4fb4267afb5aacae4f6a52aa2456e7e
+ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/11/2021
-ms.locfileid: "7798346"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7991736"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>A szervezetek és a szervezeti hierarchiák áttekintése
 
@@ -54,7 +54,7 @@ A működési egységek típusába a költséghelyek, az üzleti egységek, az �
 | Üzleti egység       | Félig autonóm, a stratégiai üzleti célkitűzések teljesítése érdekében létrehozott üzemi egység. | Olyabn ágazatok vagy terméksorozatokon alapuló pénzügyi jelentéseihez használják, amelyeket a szervezet jogi személyiségétől függetlenül nyújt. |
 | Érték-előállítási folyamat        | Egy vagy több termelési folyamatot szabályzó üzemi egység. | Gyakran használják a lean manufacturing tevékenységek és folyamatok ellenőrzésére, amelyek során a fogyasztóknak termékek adnak át vagy szolgáltatást nyújtanak. |
 | Részleg          | A szervezet egy kategóriáját vagy funkcionális részét képező üzleti egység egy adott feladatot, mint például az értékesítés vagy a könyvelés, látja el. | Működési területek jelentésére használt. A részlegnek lehet eredménykimutatási felelőssége, és állhat több költségcentrumból. |
-| Kereskedelmi csatorna      | Az üzemi egység lehet fizikailag létező bolt, online üzlet vagy online piactér. | Egy vagy több jogi személy egy vagy több üzletének vezetői és üzemi ellenőrzésére használják. |
+| Kiskereskedelmi csatorna      | Egy üzlet, egy online áruház vagy egy hívásközpont egysége, amely egy kockák és egy mozdárüzlet számára van ábrázolva. | Egy vagy több jogi személy egy vagy több üzletének vezetői és üzemi ellenőrzésére használják. |
 
 ### <a name="teams"></a>Csapatok
 

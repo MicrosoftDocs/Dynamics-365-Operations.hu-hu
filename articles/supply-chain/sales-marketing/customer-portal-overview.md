@@ -1,24 +1,23 @@
 ---
-title: Ügyfélportál az Dynamics 365 Supply Chain Management áttekintéshez (videót tartalmaz)
+title: Vevői portál Dynamics 365 Supply Chain Management áttekintéshez (videofelvételt tartalmaz)
 description: Ez a témakör bemutatja a Ügyfélportált, valamint ismerteti, hogy kinek érdemes használnia, és hogyan működik.
 author: Henrikan
 ms.date: 06/16/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c1383ee3c8e72f630d29a557de4150cdd3aa905f
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: 04a1a06dce79259e35ce66dda469e9b157d7ed1c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937504"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983238"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>A Dynamics 365 Supply Chain Management Ügyfélportáljának áttekintése
 
@@ -43,7 +42,7 @@ A Ügyfélportál-sablon minden olyan testreszabási funkcióval rendelkezik, am
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-A [Ügyfélportál webhely áttekintése a Dynamics 365 Supply Chain Management megoldásban](https://youtu.be/nPrqoLuHfV8) videó (lásd fentebb) a [Finance and Operations lejátszási lista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) része, amely elérhető a YouTube szolgáltatásban.
+A vevői portál sablonjának áttekintése videofelvételen (fent látható) a Pénzügy és műveletek [Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8)[űrlapon](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) érhető el YouTube.
 
 ## <a name="who-should-use-it"></a>Kinek érdemes használnia?
 
@@ -63,7 +62,7 @@ Az Ügyfélportál Power Apps-portálok sablonként van szállítva. A Power App
 
 A [Power Apps-portálok](/powerapps/maker/portals/overview) olyan funkció, amely lehetővé teszi, hogy a felhasználók egy kívülről elérhető hozzanak létre, amelybe a szervezeten kívüli személyek be tudnak jelentkezni. A portálok létrehozásához alig vagy nem szükséges kódolás. A Ügyfélportál a Microsoft által elérhető számos [Dynamics 365 portálsablon egyike](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365).
 
-A [kettős írás](/powerapps/maker/portals/overview) egy olyan beépített infrastruktúratermék, amely közel valós idejű interakciót tesz lehetővé az ügyfélkapcsolati alkalmazások és a Finance and Operations alkalmazások között. A kettős írás kétirányú integrációt tesz lehetővé a Finance and Operations alkalmazások és a Microsoft Dataverse között. Ezért integrált felhasználói élményt nyújt az alkalmazások között. A Ügyfélportál a kettős írással szinkronizált táblákra épül. Mielőtt az Supply Chain Management alkalmazásból adatok felhasználhatók lennének a vevői portálon, a kettős írást az összes szükséges táblához engedélyezni kell.
+[A kettős írás egy olyan infrastruktúra-termék, amely szinte valós idejű kommunikációt biztosít az ügyfél-megállapodási alkalmazások, illetve a Pénzügy és az](/powerapps/maker/portals/overview) Üzemeltetés alkalmazások között. A kettős írás kétirányú integrációt biztosít a Pénzügy és a Műveletek alkalmazások és a Microsoft Dataverse. Ezért integrált felhasználói élményt nyújt az alkalmazások között. A Ügyfélportál a kettős írással szinkronizált táblákra épül. Mielőtt az Supply Chain Management alkalmazásból adatok felhasználhatók lennének a vevői portálon, a kettős írást az összes szükséges táblához engedélyezni kell.
 
 ![Ügyfélportál függőségei.](media/customer-portal-elements.png "Ügyfélportál függőségei")
 

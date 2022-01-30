@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 6bb99084a2ffef067dd0d7158ecb5e57d6d97d75
-ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
+ms.openlocfilehash: 7d43657573ea8092f047615fc50a1a50ab97f094
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "7945789"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968987"
 ---
 # <a name="cash-position"></a>Készpénzpozíció
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A készpénzpozíció a pénzforgalom előrejelzése, amely a közeljövőben várható. Ennek alapja a vevőktől érkező készpénz-befizetések leképezése, amelyek kifizetik a kinnlévő számlákat és rendeléseket, valamint a szállítóknak a beszerzési számlákra és rendeléseket is.
 
@@ -46,16 +45,16 @@ A **Készpénzpozíció** fül alsó részében talál részleteket a pozícióv
 
 A készpénzpozíció mentéséhez és szerkesztéséhez hozzon létre egy pillanatképet. További tájékoztatás a pillanatképekkel kapcsolatban itt találhat: [Pillnatképek – áttekintés](payment-snapshots.md).
 
-## <a name="details-of-the-cash-position-capability"></a>A készpénzpozíció képességének részletei 
+## <a name="details-of-the-cash-position-capability"></a>Készpénzpozíció - képesség részletei 
 
-A Készpénz pozíció funkció a következő funkciókat tartalmazza. 
+A Készpénzpozíció funkció a következő funkciókat tartalmazza. 
 
-- A készpénzpozíció funkció a rendszerben meglévő dokumentumokon alapuló cashflow-t, valamint a külső rendszerekből importált készpénzbeáramlási és kiáramlási sorokat mutatja.
-- Segítségével egyszerű a pénzforgalmi adatok külső rendszerekből Dynamics 365 Finance-be történő integrálása. A készpénzpozíció az adatimportálási-exportálási keretrendszert is használhatja. Ez a keretrendszer megkönnyíti az Excel OData-val történő integrációt. Több forrásból származó adatokat is kombinálhat egy átfogó készpénzpozíciós megoldás létrehozásához.
-- Intelligens készpénzpozíciót vezet be. A készpénzpozíció az ügyfél fizetési viselkedése alapján jön létre, hogy megjósolja, mikor számíthat a vállalat készpénz megérkezésére a számlájukra.
-- Vevői rendelések és számlák esetében a vevői fizetési előrejelzés AI funkciója határozza meg az előző vevői fizetési viselkedést, amikor egy rendelést vagy számlát fizetnek.
-- Szállítói rendelések és számlák esetében a szállítás és a számla közötti átlagos időt, valamint szállítónkénti számla kifizetését használjuk annak meghatározására, hogy mikor fizetnek ki egy szállítói rendelést vagy számlát, így pontosabbak lesznek a kiáramlások.
+- A készpénzpozíció funkció a pénzkiáramlást a rendszerben meglévő dokumentumok, valamint a külső rendszerekből importált pénzbeáramlási és pénzkiáramlási sorok alapján mutatja be.
+- Segítségével egyszerű a pénzforgalmi adatok külső rendszerekből Dynamics 365 Finance-be történő integrálása. A készpénzpozíció az adatimportport-exportálási keretrendszert is használhatja. Ez a keretrendszer megkönnyíti az Excel OData-val történő integrációt. Többféle forrásból származó adatok kombinálával átfogó készpénzpozíció-megoldást hozhat létre.
+- Intelligens készpénzpozíciót vezet be. A készpénzpozíció a vevő fizetési viselkedése alapján jön létre, amely előre jelezheti, hogy a vállalat mikorra várja a készpénz érkezését a számláira.
+- Vevői rendelések és számlák esetén a vevői kifizetések előrejelzése az AI funkcióval határozza meg a vevői kifizetések múltbeli viselkedését a rendelés vagy számla kifizetése esetén.
+- A szállítói rendeléseknél és számláknál a szállítás és a számla közötti átlagos idő, illetve a szállítónkénti számlafizetés közötti átlagos idő alapján határozzák meg, hogy mikor történik a szállítói rendelés vagy számla kifizetése a pénzkiáramlás pontosabb megállapításához.
 
-Ez pontosabb képet ad a pénzforgalomról a kincstárnok múltbeli fizetési viselkedése alapján. 
+Így pontosabb képet lehet alkotni a pénzforgalomról a pénztáros korábbi fizetései alapján. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

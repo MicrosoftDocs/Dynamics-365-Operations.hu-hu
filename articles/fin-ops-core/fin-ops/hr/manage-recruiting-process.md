@@ -1,8 +1,8 @@
 ---
 title: Toborzási folyamatok kezelése
-description: Ez a témakör azt a koncepciót írja le, amellyel a toborzási folyamat lépéseit a toborzók nyomon követhetik.
+description: Ez a témakör azt a fogalmat írja le, amely szerint a toborzási folyamat lépéseit a toborzási folyamat során a toborzók nyomon követhetik.
 author: andreabichsel
-ms.date: 06/20/2017
+ms.date: 01/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adf873a58900fa86d068d9ebc75f4f389e7d8359cc685d4635e083437c55ae56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: c9a5e89e700858ed9e625fbdee630fa14ebea26e
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752990"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7965064"
 ---
 # <a name="manage-recruiting-processes"></a>Toborzási folyamatok kezelése
 
@@ -42,7 +42,7 @@ A toborzási projektek lehetővé teszik a felvétellel foglalkozók számára e
 - Jelentkezési határidő
 - Becsült kezdő dátum
 
-A toborzási projektben a **Álláshirdetés** használja a **Alkalmazotti önkiszolgáló áruház** számára, hogy a nyitó. Meg szeretné jeleníteni a nyitó hozzá az alkalmazottakhoz, a toborzási projekt rendelkeznie kell egy **álláshirdetés**, a **megjelenítése az alkalmazotti önkiszolgáló szolgáltatás** mezőt be kell állítani az Igen, a **Jelentkezési határidő** egy jövőbeli dátumot kell megadni, és a toborzási projekt kell egy **projekt állapota** elindítva. Az alábbi táblázat felsorolja toborzási projektek lehetséges állapotait és azok leírását.
+A toborzási projekt tartalmazza az Alkalmazott önkiszolgáló oldalának álláshirdetési értékét a **nyitó** **álláshirdetés** hirdetésére. A nyitó érték csak akkor jeleníthető meg az alkalmazottak számára, ha a toborzási projekt állásdátummal rendelkezik, az alkalmazotti önkiszolgáló rendszer Megjelenítésének beállítása Igen, a Pályázat határideje mező jövőbeli dátumra van állítva, és a toborzási projekt Projekt **állapota** **·** **·** **·** **·** **Elindítva**. Az alábbi táblázat felsorolja toborzási projektek lehetséges állapotait és azok leírását.
 
 | Állapot    | Értelmezés...                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -55,7 +55,7 @@ Recruiters is lehet rögzíteni a **Media** hirdetése a nyitó külső értéke
 
 ## <a name="applicants"></a>Pályázók
 
-A pályázó olyan személy, aki munkára pályázik a vállalatnál. A pályázók a szervezet összes jogi személye között megoszlanak, így Ön nagy kínálatban kereshet. Megadhat és karban tarthat személyes információkat, állásinterjú dátumokat és időpontokat, referenciákat, kompetenciákat és a pályázó kérvényeit. Ha létrehoz egy pályázói rekordot, egy személyes rekord jön létre a pályázószámára a globális címjegyzékben. Használhatja a **Jelentkező** lap frissítése a következő globális címjegyzék adatait a pályázók számára:
+A pályázó olyan személy, aki munkára pályázik a vállalatnál. A pályázók a szervezet összes jogi személye között meg vannak osztva. Ebből következően nagy mennyiségű adata van a kereséshez. Megadhat és karban tarthat személyes információkat, állásinterjú dátumokat és időpontokat, referenciákat, kompetenciákat és a pályázó kérvényeit. Ha létrehoz egy pályázói rekordot, egy személyes rekord jön létre a pályázószámára a globális címjegyzékben. Használhatja a **Jelentkező** lap frissítése a következő globális címjegyzék adatait a pályázók számára:
 
 - Címadatok
 - Kapcsolattartási adatok
@@ -84,7 +84,7 @@ A pályázat állapota jelzi, hogy a pályázat hol áll a toborzási folyamatba
 
 ### <a name="correspondence-actions"></a>Levelezési tevékenységek
 
-Egy **Alkalmazás** kapcsolattartási művelet határozza meg, hogy a dokumentum vagy e-mail sablont használó kommunikálni a a pályázatot benyújtó jelentkező. A **Pályázat könyvjelzői** levelezési műveletekkel társíthatók, aminek köszönhetően a pályázókkal folytatott kommunikáció során felhasználhat értékeket a Pályázat, Pályázó, Interjú és Toborzás projektoldalakról. **Pályázat e-mail sablonjai** hozhatók létre a levelezési műveletekhez, és ezekkel gyorsa küldhetők e-mailek azon pályázók számára, akiknek bizonyos állapotú pályázatuk van folyamatban adott levelezési művelettel párosítva. Például visszaigazoló e-mailt küldhet az összes pályázónak, akiknél az **Állapot** Fogadva, és a **Kapcsolattartási művelet** Fogadva. Az e-mail elküldése után lehetősége van a pályázat állapotának automatikus frissítésére.
+A pályázat levelezési művelete határozza meg azt a dokumentumot vagy e-mail sablont, amely a pályázatot beküldött jelentkezővel való kommunikációra használ. A pályázati könyvjelzők megfeleltetési tevékenységhez társításával a Pályázók, Pályázó, Interjú és Toborzás projektoldalak értékeit használhatja a pályázókkal **folytatott** **·** **·** **·** **kommunikációban**. A levelezési műveletek pályázat-e-mail sablonjainak létrehozásával gyorsan elküldheti e-maileket azoknak a pályázóknak, akiknek jelentkezése az állapot és a levelezési **művelet** meghatározott kombinációját tartalmazza. Küldhet például visszaigazoló e-mailt minden olyan pályázatnak, amely Beérkezett állapotú és Megfeleltetés művelet **értéke** **·** **·** **Beérkezett**. Az e-mail elküldése után lehetőség van a pályázatok automatikus frissítésére.
 
 ## <a name="application-routing"></a>Pályázat útválasztása
 
@@ -101,6 +101,5 @@ Ha egy pályázatot több alkalmazottnak is át kell néznie, akkor a folyamat k
 ## <a name="hiring-applicants"></a>Pályázók felvétele
 
 Használja a **alkalmazások** pályázó lapra. Pályázó felvételekor az alkalmazás rekord állapotú lesz, **alkalmazott** és az új dolgozói rekordot a kérelmező személy globáliscímjegyzék rekordja kapcsolódik. A globális címjegyzék adatait az új dolgozó rekord módosításai is megjelennek a pályázó rekordját. Így kevesebb adatot kell bevinni, ha az új dolgozó valaha a vállalaton belüli más munkakörre adna be pályázatot. Meglévő dolgozó felvételéhez új beosztásba kattintson a **Pozíció módosítása** elemre a **Pályázat állapota** legördülő listában, és az átviteli folyamat megkezdődik.
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

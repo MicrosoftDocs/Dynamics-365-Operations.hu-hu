@@ -2,23 +2,22 @@
 title: Mérnöki változáskezelés – áttekintés (videofelvételt tartalmaz)
 description: Ez a témakör áttekintést nyújt a tervezési változáskezeléssel kapcsolatban, amely segítséget nyújt a termék verziószámozásának tervezéséhez és kezeléséhez, valamint a termékéletciklusok és mérnöki változásainak kezeléséhez.
 author: t-benebo
-ms.date: 08/26/2021
-ms.topic: article
+ms.date: 01/11/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d667aef827addcf7c34075b08afffffe3fd71935
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
-ms.translationtype: HT
+ms.openlocfilehash: 8c200796d587d77c0f4d2344524a890ba964ab39
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952598"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985212"
 ---
 # <a name="engineering-change-management-overview"></a>Tervezési változáskezelés áttekintése
 
@@ -39,9 +38,9 @@ A tervezési változáskezelés segítséget nyújt a termék verziószámozás�
 - Tervezési változási kérelmek, amelyeket munkafolyamatok támogatnak
 - Tervezési változási rendelések, amelyeket munkafolyamatok támogatnak
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4HE6B]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4HE6B]
 
-Az előző videó ([Módosításkezelési képességek a Dynamics 365 Supply Chain Management rendszerben](https://youtu.be/N313FqvRuBc)) szerepel a [Finance and Operations lejátszási listában](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) a YouTube-on.
+Az előző video - változáskezelési képességek - a Pénzügy és műveletek elérhetővé [Dynamics 365 Supply Chain Management](https://youtu.be/N313FqvRuBc)[válik](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) YouTube.
 
 ## <a name="turn-on-the-engineering-change-management-features-for-your-system"></a>A rendszer tervezési változáskezelési funkcióinak bekapcsolása
 
@@ -71,7 +70,9 @@ Ezután kapcsolja be a konfigurációs kulcsokat a következő lépések végreh
 
 1. Ha használni szeretné a verziódimenziót is, jelölje be a **Termékdimenzió – Verzió** jelölőnégyzetet is. (Ez a jelölőnégyzet a listában lejjebb van, nem a **Műszaki módosítások kezelése** csomópont alatt.)
 1. Kapcsolja ki a karbantartási módot a [Karbantartási mód](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
-1. Adatbázis-szinkronizálás futtatása a konfigurációs kulcsok megfelelő engedélyezése érdekében.
+1. A konfigurációs kulcsok megfelelő engedélyezése érdekében szinkronizálni kell az adatbázist. Tegye a következő lépések valamelyikét attól függően, hogy milyen típusú környezeten dolgozik:
+    - **1. rétegbeli (fejlesztői) környezetek esetén: nyissa meg a projektet a Microsoft programban, majd válassza a** Visual Studio Dynamics **365 \> Szinkronizálás az adatbázis \> szinkronizálása** lehetőséget.
+    - **2. rétegbeli (és magasabb) környezetek esetén : az adatbázis automatikusan szinkronizálódik, miután a környezetet karbantartási üzemmódba tette, illetve ki van lépni a karbantartási üzemmódból, így ezt a lépést** kihagyhatja.
 
 > [!IMPORTANT]
 > 2022 áprilisától kezdve a **Mérnöki változások kezelése** és a **Termékdimenzió – Verzió** licenckulcsok alapértelmezés szerint engedélyezve lesznek minden új telepítés esetén, de szükség esetén továbbra is letilthatja őket.

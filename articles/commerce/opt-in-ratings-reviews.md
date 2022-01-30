@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9fe8e9403ccbdc1e26620ae33c6a3866af06b23c
-ms.sourcegitcommit: 81bc42551e6c9af6ad38908afb606ee1f8d3c44b
-ms.translationtype: HT
+ms.openlocfilehash: fd6715539693389f25800a40c0beffcdc1b0de72
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7473429"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7968003"
 ---
 # <a name="opt-in-to-use-ratings-and-reviews"></a>A minősítések és értékelések használatának bekapcsolása
 
@@ -58,7 +58,13 @@ A következő lépések végrehajtásával választhatja ki azt, hogy használni
 
 [A termék minősítések szinkronizálása a következőben: Dynamics 365 Commerce](sync-product-ratings.md)
 
+[A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
 
+[Minősítések és felülvizsgálatok importálása és exportálása](import-export-reviews.md)
+
+[Szolgáltatás-szolgáltatás hitelesítés konfigurálása](service-to-service-auth.md)
+
+[Értékelések és vélemények GYIK](ratings-reviews-faq.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
