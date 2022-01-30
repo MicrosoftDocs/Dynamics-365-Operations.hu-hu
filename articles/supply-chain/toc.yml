@@ -4,11 +4,11 @@
       items:
         - name: A Dynamics 365 Supply Chain Management kezdőlapja
           href: index.md
-        - name: Új vagy módosult elemek
+        - name: Újdonságok és változások
           items:
-            - name: Új vagy módosult elemek a Finance and Operations alkalmazásokban
+            - name: Újdonságok és változások a Finance and Operations alkalmazásaiban
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-            - name: A Supply Chain Management újdonságai vagy módosításai
+            - name: A Supply Chain Management újdonságai és változásai
               items:
                 - name: Újdonságok és változások a Supply Chain Management kezdőlapján
                   href: get-started/whats-new-home-page.md
@@ -16,10 +16,6 @@
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management 10.0.23 (2022. január)
                   href: get-started/whats-new-scm-10-0-23.md
-                - name: Supply Chain Management 10.0.22 (2021. november)
-                  href: get-started/whats-new-scm-10-0-22.md
-                - name: Supply Chain Management 10.0.21 (2021. október)
-                  href: get-started/whats-new-scm-10-0-21.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -178,7 +174,7 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations alkalmazások architektúrája
+                - name: A Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/
@@ -202,7 +198,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
                 - name: LCS végrehajtási projektek áthelyezése helyszíni verzióból a felhőbe
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Több LCS-projekt és gyártási környezet egyetlen Azure AD-bérlőnél
+                - name: Több LCS-projekt és működési környezet egyetlen Azure AD-bérlőnél
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globalizáció
           items:
@@ -286,7 +282,7 @@
                       href: ../finance/localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Több adószám
                       href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Alapadat-keresés környezetének beállítása
+                    - name: Alapadat-lekérdezés környezetének beállítása
                       href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
             - name: Jogszabálykövetési frissítések
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
@@ -617,11 +613,11 @@
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Tartalomcsomag használata a Microsoft Power BI segítségével végzett jelentéskészítéshez
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Költségellenőrzési munkaterület alkalmazása Finance and Operations mobilalkalmazásban
+            - name: Költségellenőrzési munkaterület alkalmazása a Finance and Operations mobilalkalmazásban
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globális készletkönyvelés
           items:
-            - name: Globális készletkönyvelési kezdőlapja
+            - name: Globális készletkönyvelés kezdőlapja
               href: global-inventory-accounting/global-inventory-accounting-home.md
             - name: A globális készletkönyvelés első lépései
               href: global-inventory-accounting/get-started-with-gia.md
@@ -3513,7 +3509,7 @@
                       href: warehousing/transfer-orders-warehouse.md
                 - name: Frissítés és áttelepítés
                   items:
-                    - name: A raktárkezelési folyamatok frissítése Microsoft Dynamics AX 2012-ről Finance and Operations szolgáltatásra
+                    - name: A raktárkezelési folyamatok frissítése Microsoft Dynamics AX 2012 szolgáltatásról Finance and Operations szolgáltatásra
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
         - name: Supply Chain Management fejlesztése
           items:
@@ -3905,7 +3901,7 @@
                   href: troubleshooting/warehousing/work-remains-blocked.md
                 - name: Felhasználóhoz rendelt munkát nem lehet érvényteleníteni
                   href: troubleshooting/warehousing/you-cannot-cancel-wo.md
-    - name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
+    - name: A Finance and Operations alkalmazás fejlesztése és felügyelete
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md

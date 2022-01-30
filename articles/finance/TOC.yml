@@ -2,8 +2,32 @@
   items:
     - name: Dynamics 365 Finance
       items:
-        - name: Dynamics 365 Finance kezdőlapja
+        - name: A Dynamics 365 Finance kezdőlapja
           href: index.md
+        - name: Újdonságok és változások
+          items:
+            - name: Újdonságok és változások a Finance and Operations alkalmazásaiban
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+            - name: Újdonságok és változások a Finance szolgáltatásban
+              items:
+                - name: Újdonságok és változások a Finance kezdőlapján
+                  href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.24 (február)
+                  href: get-started/whats-new-changed-10-0-24.md
+                - name: Finance 10.0.23 (január)
+                  href: get-started/whats-new-changed-10-0-23.md
+            - name: Eltávolított vagy elavult funkciók
+              items:
+                - name: Eltávolított vagy elavult funkciók a kezdőlapon
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+                - name: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
+                  href: get-started/removed-deprecated-features-finance.md
+                - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+            - name: Az AX 2012 elhalasztott funkciói
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+            - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
         - name: Első lépések
           items:
             - name: Szolgáltatásleírás
@@ -62,32 +86,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Raktárkezelés konfigurálása helyszíni telepítések esetében
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-            - name: Új vagy módosult elemek
-              items:
-                - name: Új vagy módosult elemek a Finance and Operations alkalmazásokban
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                - name: Újdonságok és változások a Finance szolgáltatásban
-                  items:
-                    - name: Újdonságok és változások a Finance kezdőlapján
-                      href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.24 (február)
-                      href: get-started/whats-new-changed-10-0-24.md
-                    - name: Finance 10.0.23 (január)
-                      href: get-started/whats-new-changed-10-0-23.md
-                    - name: Finance 10.0.22 (2021. november)
-                      href: get-started/whats-new-changed-10-0-22.md
-            - name: Eltávolított vagy elavult funkciók
-              items:
-                - name: Eltávolított vagy elavult funkciók a kezdőlapon
-                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
-                - name: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
-                  href: get-started/removed-deprecated-features-finance.md
-                - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-            - name: Az AX 2012 elhalasztott funkciói
-              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-            - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
-              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentum-erőforrások
               items:
                 - name: Súgórendszer
@@ -174,7 +172,7 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations alkalmazások architektúrája
+                - name: A Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/index
@@ -198,7 +196,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
                 - name: LCS végrehajtási projektek áthelyezése helyszíni verzióból a felhőbe
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
-                - name: Több LCS-projekt és gyártási környezet egyetlen Azure AD-bérlőnél
+                - name: Több LCS-projekt és működési környezet egyetlen Azure AD-bérlőnél
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: Kötelezettségek
           items:
@@ -836,6 +834,8 @@
                   href: asset-leasing/set-up-lease-books.md
                 - name: Lízingcsoport létrehozása
                   href: asset-leasing/create-lease-group.md
+                - name: Kifizetett összeg típusa
+                  href: asset-leasing/Payment-amount-type.md
                 - name: Referencia-kamatláb beállítása
                   href: asset-leasing/set-up-index-rate-types.md
                 - name: Költségtípusok beállítása
@@ -1458,8 +1458,10 @@
                           href: localizations/set-up-item-tax-groups.md
                         - name: Adószámítások importálása és exportálása
                           href: localizations/tax-calculation-import-export-feature.md
-                        - name: Alapadat-keresés környezetének beállítása
+                        - name: Alapadat-lekérdezés környezetének beállítása
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                        - name: Adóbeállítások szinkronizálása az adószámítási szolgáltatásból a Finance alkalmazásba
+                          href: localizations/global-master-data-sync-tax-calculation-service-finance.md
                     - name: Meghatározás
                       items:
                         - name: Adószámítási adatmodell
@@ -1491,7 +1493,7 @@
                         - name: Németországi jelentés
                           items:
                             - name: Áfabevallás
-                              href: /localizations/emea-deu-vat-declaration-germany.md
+                              href: localizations/emea-deu-vat-declaration-germany.md
                         - name: Hollandiai jelentés
                           items:
                             - name: Áfabevallás
@@ -1502,6 +1504,8 @@
                           items:
                             - name: 'Azonnali információbiztosítás az áfáról (Suministro Inmediato de Información del IVA, SII)'
                               href: localizations/emea-esp-sii-spain.md
+                            - name: Áfabevallás
+                              href: localizations/emea-esp-vat-declaration-spain.md
                         - name: Svédországi jelentés
                           items:
                             - name: Áfabevallás
@@ -1530,12 +1534,14 @@
                           href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
                           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                        - name: Adókonfigurációk testreszabása az alapadatok kereséséhez
+                        - name: Adókonfigurációk testreszabása az alapadatok lekérdezéséhez
                           href: localizations/customize-tax-configurations-master-data-lookup.md
-                    - name: Áfaszámítási GYIK
+                    - name: Adószámítási GYIK
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Jogszabálykövetési frissítések
               href: localizations/regulatory-updates.md
+            - name: Jogszabálykövetési frissítések keresése
+              href: localizations/search-for-regulatory-updates.md
             - name: Ausztrália
               items:
                 - name: Ausztrália – áttekintés
@@ -1560,7 +1566,7 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Csomagolóanyag díjai
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: Áfabevallás
+                - name: Áfakimutatás
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Nemzetközi szolgáltatásokra vonatkozó jelentés
                   href: localizations/emea-aut-cross-border-services-report.md
@@ -1754,6 +1760,8 @@
                   href: localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
                 - name: Kamat és bírságok kiszámítása a vevői kifizetésekhez
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
+                - name: Bankszámlaszámok beállítása Brazíliához
+                  href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
                 - name: Adók
                   items:
                     - name: Brazília – adók áttekintése
@@ -1782,6 +1790,8 @@
                       href: localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
                     - name: 'ICMS-ST kiegészítési és visszaszolgáltatási folyamat és nyilatkozat az RS, SC és SP államok számára'
                       href: localizations/latam-bra-complement-restitution.md
+                    - name: Más államok szállítói termékeire vonatkozó ICMS-DIF adószámítások alapváltozása
+                      href: localizations/latam-brazil-basis-change-ICMS-DIF-tax-calculation-products-suppliers-other-states.md
                     - name: Kiigazítási kódok beállítása az IPI-adókhoz
                       href: localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
                     - name: PIS és COFINS tárgyi eszközök
@@ -1812,7 +1822,7 @@
               items:
                 - name: Kína – áttekintés
                   href: localizations/china.md
-                - name: 'Finance and Operations, amelyet a 21Vianet működtet Kínában'
+                - name: Kínában a Finance and Operations üzemeltetője a 21Vianet
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Számlacsoportok kiválasztása kínai utalványtípusokhoz
                   href: localizations/apac-chn-account-groups-selection.md
@@ -1880,10 +1890,12 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése
                   href: localizations/emea-amount-printing-forms.md
-                - name: Áfabevallás
+                - name: Áfakimutatás
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: Áfabevallás (Cseh Köztársaság)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: Cseh Intrastat
+                  href: localizations/emea-cze-intrastat.md
                 - name: Bankszámlák banki szimbólumai
                   href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
                 - name: Közösségi áfa
@@ -1916,6 +1928,8 @@
                   href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
                 - name: Fizetési bizonylat formátumának beállítása
                   href: localizations/tasks/set-up-payment-slip-format.md
+                - name: Dán Intrastat
+                  href: localizations/emea-dnk-intrastat.md
             - name: Egyiptom
               items:
                 - name: Egyiptom – áttekintés
@@ -1936,8 +1950,10 @@
                   href: localizations/estonia.md
                 - name: Személyes információk kérése
                   href: localizations/emea-est-personal-info.md
-                - name: Áfabevallás
+                - name: Áfakimutatás
                   href: localizations/emea-est-vat-statement-details.md
+                - name: Észt Intrastat
+                  href: localizations/emea-est-intrastat.md
             - name: Európa
               items:
                 - name: Európa – áttekintés
@@ -2080,10 +2096,12 @@
                       href: localizations/emea-vat-register-transactions.md
                     - name: Adópont dátuma (áfatételjegyzék dátuma)
                       href: localizations/emea-tax-point-date.md
-                    - name: Áfabevallás
+                    - name: Áfajelentés
                       href: localizations/emea-vat-reporting.md
                     - name: Áfajelentés létrehozása és elküldése
                       href: localizations/tasks/create-submit-vat-report.md
+                    - name: Szállító áfatételjegyzékének dátuma
+                      href: localizations/emea-date-vendor-vat-register.md
                 - name: Kiegyenlítési tranzakciók megtekintése
                   href: localizations/emea-transactions-settlement-form.md
                 - name: Pénzügyi ok
@@ -2188,7 +2206,7 @@
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Német Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Áfabevallás
+                - name: Áfakimutatás
                   href: localizations/emea-de-vat-declaration.md
                 - name: Elektronikus vevői számlák (jelentés)
                   href: localizations/emea-deu-e-invoices.md
@@ -2624,7 +2642,7 @@
               items:
                 - name: Olaszország – áttekintés
                   href: localizations/italy.md
-                - name: Áfabevallások részletei
+                - name: Áfakimutatások részletei
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Negyedéves áfaügyi kommunikációs jelentés
                   href: localizations/emea-ita-quarterly-vat-communication.md
@@ -2870,8 +2888,10 @@
                   href: localizations/emea-invoices-packing-slips-numbering.md
                 - name: Természeti erőforrások adójáról szóló jelentés
                   href: localizations/emea-lva-tax-natural-resources.md
-                - name: Áfabevallás részletei
+                - name: Áfakimutatás részletei
                   href: localizations/emea-lva-vat-statement-details.md
+                - name: Lett Intrastat
+                  href: localizations/emea-lva-intrastat.md
             - name: Litvánia
               items:
                 - name: Litvánia – áttekintés
@@ -2880,7 +2900,7 @@
                   href: localizations/emea-ltu-fixed-asset-repair-statement.md
                 - name: Bizonylat létrehozása a raktárak közti tárgyieszköz-átvitelről
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
-                - name: Áfabevallás részletei
+                - name: Áfakimutatás részletei
                   href: localizations/emea-ltu-vat-statement-details.md
                 - name: i.SAF-jelentés Litvánia esetében
                   href: localizations/emea-ltu-isaf.md
@@ -2988,7 +3008,7 @@
                   href: localizations/tasks/no-00002-customer-payment-based-payment-id.md
                 - name: Nets importálási formátum
                   href: localizations/emea-nor-nets-import-format.md
-                - name: Áfabevallás
+                - name: Áfakimutatás
                   href: localizations/emea-nor-sales-tax-payment-report.md
                 - name: Áfa-visszatérítés az Altinnba küldött közvetlen beküldéssel
                   items:
@@ -3060,6 +3080,8 @@
                       href: localizations/emea-pol-vdek-reporting.md
                     - name: Konkrét üzleti esetek részletei a JPK-V7M jelentésben
                       href: localizations/emea-pol-vdek-scenarios.md
+                - name: Kereskedelmi tranzakciók fizetési feltételei – jelentés
+                  href: localizations/emea-pol-payment-terms-report.md
             - name: Katar
               items:
                 - name: Katar – áttekintés
@@ -3356,9 +3378,11 @@
                   href: localizations/emea-esp-report-340.md
                 - name: 347-es bevallás jelentése
                   href: localizations/emea-esp-declaration-347-report.md
+                - name: 303-as áfabevallás
+                  href: localizations/emea-esp-vat-declaration-spain.md
                 - name: Beszerzési és értékesítési ciklusok
                   href: localizations/emea-esp-sales-purchase-cycle.md
-                - name: Speciális bevitelek és nyitólapok
+                - name: Speciális bejegyzések és nyitólapok
                   href: localizations/emea-esp-opening-sheets-spain.md
                 - name: Azonnali áfa-információk beküldése
                   href: localizations/emea-esp-sii.md
@@ -3466,6 +3490,8 @@
           items:
             - name: Human Resources áttekintése
               href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
+            - name: 'Infrastruktúra-kiadás: 10.0.25'
+              href: ../human-resources/hr-infrastructure.md?toc=/dynamics365/finance/toc.json
             - name: Human Resources beállítása
               items:
                 - name: A Human Resources paramétereinek konfigurálása
@@ -3473,7 +3499,7 @@
                 - name: A Human Resource megosztott paramétereinek konfigurálása
                   href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
                 - name: Emberi erőforrásokkal kapcsolatos munkafolyamatok beállítása
-                  href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
+                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
                 - name: Dátum és Idő mezők ismertetése
                   href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
             - name: Személyzet kezelése
@@ -4409,7 +4435,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
                 - name: 'A kód módosítása, hogy a felhasználók számára lehetővé tegye a névre szóló ER-célpontok konfigurálását és használatát'
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
-                - name: Bejövő dokumentumok egyéni elektronikus jelentéskészítéskészítési forrásának implementálása
+                - name: Bejövő dokumentumok egyéni ER-forrásának implementálása
                   href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
         - name: Mobilalkalmazás
           items:
@@ -4723,11 +4749,11 @@
               items:
                 - name: Árfolyam-szolgáltatók létrehozása
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-providers.md
-                - name: Árfolyam-szolgáltatók létrehozása a Finance and Operations 8.0-s verzióban
+                - name: Árfolyam-szolgáltatók létrehozása a Finance and Operations 8.0 alkalmazásban
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'Tranzakciók kiegyenlítése a CustTrans::settleTransaction használatával'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
-    - name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
+    - name: A Finance and Operations alkalmazás fejlesztése és felügyelete
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md

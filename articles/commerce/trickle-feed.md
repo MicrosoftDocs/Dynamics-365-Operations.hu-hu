@@ -2,7 +2,7 @@
 title: A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz
 description: Ez a témakör bemutatja az áruházi tranzakciók folyamatos, apránkénti rendelés-létrehozási folyamatát a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: analpert
-ms.date: 12/14/2021
+ms.date: 01/11/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a7fd8698d7123403cf9092a4a4bf810595d795b
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: 67b66cd4bf2a77f3ab7f33f691156e38cc13770a
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921245"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964629"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz
 
 [!include [banner](includes/banner.md)]
 
-Javasoljuk, hogy a Microsoft Dynamics 365 Commerce 10.0.5-ös és újabb verziókban minden kimutatásfeladási folyamatot a kimutatások apránkénti feladása folyamatokba vigyen át. Jelentős teljesítmény- és üzleti előnyök társulnak az apránkénti funkcionalitáshoz. Az értékesítési tranzakciók feldolgozása a nap folyamán történik. A fizetőeszköz- és készpénzkezelési tranzakciókat a nap végén kell feldolgozni a pénzügyi kimutatásban. Az apránkénti feldolgozás funkció az értékesítési rendelések, számlák és kifizetések folyamatos feldolgozását teszi lehetővé. Ebből következően a készlet, bevétel és kifizetések közel valós időben frissíthetők és ismerhetőek fel.
+Javasoljuk, hogy a Microsoft Dynamics 365 Commerce 10.0.5-ös és újabb verziókban minden kimutatásfeladási folyamatot a kimutatások apránkénti feladása folyamatokba vigyen át. Jelentős teljesítmény- és üzleti előnyök társulnak az apránkénti funkcionalitáshoz. Az értékesítési tranzakciók feldolgozása a nap folyamán történik. A fizetőeszköz- és készpénzkezelési tranzakciókat a nap végén kell feldolgozni a pénzügyi kimutatásban. Az apránkénti feldolgozás funkció az értékesítési rendelések, számlák és kifizetések folyamatos feldolgozását teszi lehetővé. Ebből következően a készlet, bevétel és kifizetések közel valós időben frissíthetők és elszámolhatók.
 
 ## <a name="use-trickle-feed-based-posting"></a>A folyamatos, apránkénti feladás használata
 
@@ -37,7 +37,7 @@ Ha engedélyezni szeretné a kiskereskedelmi tranzakciók folyamatos, apránkén
 
 ### <a name="transactional-statements"></a>Tranzakciós kimutatások
 
-A tranzakciós kimutatásoknak sűrű gyakorisággal kell futniuk a nap során, így a bizonylatok létrehozása akkor történik, amikor a tranzakciókat a rendszer felölti a Commerce központba. A **P-feladat** futtatásakor a tranzakciók az üzletekből a Commerce központba töltődnek fel. Az **Üzleti tranzakciók ellenőrzése** feladatot is futtatnia kell a tranzakciók ellenőrzéséhez, hogy a tranzakciós kimutatás felvegye azokat.
+A tranzakciós kimutatások feldolgozásának gyakran kell futniuk a nap során, így a bizonylatok létrehozása akkor történik, amikor a tranzakciókat a rendszer felölti a Commerce központjába. A **P-feladat** futtatásakor a tranzakciók az üzletekből a Commerce központba töltődnek fel. Az **Üzleti tranzakciók ellenőrzése** feladatot is futtatnia kell a tranzakciók ellenőrzéséhez, hogy a tranzakciós kimutatás felvegye azokat.
 
 A következő feladatokat nagy gyakorisággal való futtatására ütemezze:
 
@@ -47,6 +47,10 @@ A következő feladatokat nagy gyakorisággal való futtatására ütemezze:
 ### <a name="financial-statements"></a>Pénzügyi kimutatások
 
 A pénzügyi kimutatás feldolgozása nap végi folyamatként esedékes. Az ilyen típusú kimutatásfeldolgozás csak a **Műszak** zárása módot támogatja, és csak lezárt műszakokat vesz fel. A kimutatások csak a pénzügyi egyeztetésre korlátozódnak. Csak a különböző fizetőeszközök számított összege és tranzakciós összege közti összegeltérésekről készít naplókat, valamint a további készpénzkezelési tranzakciók naplóit hozza létre.
+
+A pénzügyi kimutatások a következő tranzakciók áttekintését is lehetővé teszik: fizetőeszköz-nyilatkozati tranzakciók, fizetési tranzakciók, banki fizetőeszköz-tranzakciók és széfes fizetési tranzakciók. A fizetőeszköz részletei lap csak akkor látható, ha pénzügyi kimutatás van kiválasztva.
+
+![A feladott kimutatások képernyő fizetési részletei szakaszát csak akkor megjelenítő kép, ha ki van választva a pénzügyi kimutatás.](./media/Trickle-feed-posted-statements-transaction-view.png)
 
 A következő pénzügyi kimutatási feladatok kezdő és záró időpontjának ütemezése a nap várható vége alapján:
 
