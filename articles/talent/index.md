@@ -1,6 +1,6 @@
 ---
-title: Üdvözöljük a Dynamics 365 Talent szolgáltatásban!
-description: A Talent rendszer segítségével rengeteg rutinszerű adminisztrációs feladat leegyszerűsíthető, továbbá a szervezet munkatársaival kapcsolatos számos folyamat automatizálható. Ezek a folyamatok magukba foglalják az alkalmazottak toborzását és megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítménnyel kapcsolatos beszámolókat és a változáskezelést.
+title: Dynamics 365 Talent kezdőlapja
+description: A Talent rendszer segítségével rengeteg rutinszerű adminisztrációs feladat leegyszerűsíthető, továbbá a szervezet munkatársaival kapcsolatos számos folyamat automatizálható. Ezek a folyamatok magukba foglalják az alkalmazottak megtartását, a juttatások adminisztrációját, a képzéseket, a teljesítményértékeléseket és a változáskezelést.
 author: andreabichsel
 ms.date: 10/03/2019
 ms.topic: index-page
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
-ms.openlocfilehash: 414d31dd951e25b38fd504a3cbe5389c62c9ba37b622aa8cff622f2fa91ff290
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9ebfec7a723e5f6cf2e4ad7f74a9531be7dfd89
+ms.sourcegitcommit: 7fc0a9a6440ac087292e9e76c26c67f56154b9e6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738101"
+ms.lasthandoff: 01/28/2022
+ms.locfileid: "8051395"
 ---
-# <a name="welcome-to-dynamics-365-talent"></a>Üdvözöljük a Dynamics 365 Talent szolgáltatásban!
+# <a name="dynamics-365-talent-home-page"></a>Dynamics 365 Talent kezdőlapja
 
 [!include [banner](includes/banner.md)]
 

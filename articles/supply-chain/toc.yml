@@ -12,6 +12,8 @@
               items:
                 - name: Újdonságok és változások a Supply Chain Management kezdőlapján
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.25 (2022. április)
+                  href: get-started/whats-new-scm-10-0-25.md
                 - name: Supply Chain Management 10.0.24 (2022. február)
                   href: get-started/whats-new-scm-10-0-24.md
                 - name: Supply Chain Management 10.0.23 (2022. január)
@@ -102,8 +104,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Videók
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Fogalomtár
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
             - name: Képzési katalógus
               items:
                 - name: Tanulási katalógus kezdőlapja
@@ -308,6 +308,8 @@
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: A Warehouse Management mobilalkalmazás konfigurálása felhőalapú és peremhálózat-léptékű egységekhez
+              href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
             - name: Raktári rendelések felhőalapú és peremhálózati skálázási egységekből
               href: cloud-edge/cloud-edge-warehouse-order.md
             - name: Raktárkészlet helyesbítése
@@ -1233,6 +1235,8 @@
                   items:
                     - name: Konfigurációk létrehozása adatok külső XML-fájlból történő importálásához
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importálás manuálisan kiválasztott fájlokból kötegelt módban
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
                 - name: SharePoint felületén tárolt fájlokból származó adatok kötegelt módban történő importálásának konfigurálása
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Fájlok importálása XML-formátumban
@@ -1461,6 +1465,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
                     - name: 10.0.21-es alkalmazásfrissítés
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 10.0.23-as alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 10.0.25-ös alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
                   items:
                     - name: 'Feliratkozás egy eseményre, hogy választ kérjen a feliratkozáskezelőtől'
@@ -1691,15 +1699,19 @@
                   href: master-planning/planning-optimization/approved-planned-order.md
                 - name: Biztosra tervezett rendelések
                   href: master-planning/planning-optimization/planned-order-firming.md
+                - name: Tervezett rendelések egyszerűsítve
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Tervezés negatív tényleges készleten lévő mennyiségekkel
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Tervelőzmények és tervezési naplók megtekintése
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Tervezési feladat visszavonása
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Műveletkérő üzenetek
+                  href: master-planning/action-messages.md
                 - name: Tervezési optimalizálás hibaelhárítása
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
-                - name: Tervezési optimalizálás – bővíthetőség
+                - name: Tervezési optimalizálás bővíthetősége
                   href: master-planning/planning-optimization/extensibility.md
             - name: Alaptervek
               items:
@@ -1729,8 +1741,6 @@
                   href: master-planning/cancel-master-planning-job.md
                 - name: Nyomkövetés használata az alábontáshoz
                   href: master-planning/trace-explosion.md
-                - name: Műveletkérő üzenetek
-                  href: master-planning/action-messages.md
                 - name: Alaptervezés futtatásának megfigyelése
                   href: master-planning/tasks/monitor-master-planning-run.md
                 - name: Egy telephelyhez tartozó ütemezés létrehozása
@@ -3761,9 +3771,11 @@
                   items:
                     - name: Nem található a tanúsítvány elérési útjához tartozó megbízhatósági kapcsolatok alapja az alkalmazáskapcsolat beállításakor
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
-                    - name: Nem található a tanúsítvány elérési útjának megbízhatósági kapcsolatok alapja a WMS-be történő frissítéskor és migráláskor
+                    - name: Nem található a tanúsítvány elérési útjának megbízhatósági fixpontja a WMS-be történő frissítéskor és migráláskor
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
-                - name: A kötegszám automatikus foglalási kérésekor még a rendelkezésre álló készlet is megjelenik.
+                - name: Feldolgozási problémák fordulnak elő a skálázási egység szerinti raktári terhelés telepítése után
+                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
+                - name: A kötegszám automatikus foglalási kérésekor még a rendelkezésre álló készlet is megjelenik
                   href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
                 - name: Befejezetlen feltöltési munka miatt nem oldható fel a kitárolási munka zárolása.
                   href: troubleshooting/warehousing/blocked-unfinished-replenishment-work.md
@@ -3901,9 +3913,11 @@
                   href: troubleshooting/warehousing/work-remains-blocked.md
                 - name: Felhasználóhoz rendelt munkát nem lehet érvényteleníteni
                   href: troubleshooting/warehousing/you-cannot-cancel-wo.md
-    - name: A Finance and Operations alkalmazás fejlesztése és felügyelete
+    - name: Pénzügyi és műveleti alkalmazások fejlesztése és felügyelete
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md

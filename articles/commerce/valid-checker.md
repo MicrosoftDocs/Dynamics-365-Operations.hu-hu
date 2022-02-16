@@ -2,7 +2,7 @@
 title: Üzleti tranzakciók ellenőrzése kimutatásszámításhoz
 description: Ez a témakör az üzleti tranzakciók ellenőrzésével kapcsolatos funkciókat ismerteti a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: analpert
-ms.date: 12/15/2021
+ms.date: 01/31/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 008368ae32aa92682d578b75b148e0587fcc94e0
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924771"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087449"
 ---
 # <a name="validate-store-transactions-for-statement-calculation"></a>Üzleti tranzakciók ellenőrzése kimutatásszámításhoz
 
@@ -49,9 +49,9 @@ Az **Üzleti tranzakciók ellenőrzése** kötegfolyamat ellenőrzi a kereskedel
 
 ### <a name="transaction-header-validation-rules"></a>Tranzakciófejléc ellenőrzési szabályai
 
-Az alábbi táblázat felsorolja azokat a tranzakciófejlécellenőrzési szabályokat, amelyekkel szemben ellenőrizve vannak a kereskedelmi tranzakciók fejlécei, mielőtt a tranzakció át lennének adva kimutatás-feladásra.
+Az alábbi táblázat felsorolja azokat a tranzakciófejléc-ellenőrzési szabályokat, amelyekkel szemben ellenőrizve vannak a kereskedelmi tranzakciók fejlécei, mielőtt a tranzakciók át lennének adva kimutatás-feladásra.
 
-| Cím | Leírás |
+| Szabály | Leírás |
 |-------|-------------|
 | Üzleti dátum | Ez a szabály ellenőrzi, hogy a tranzakció üzleti dátuma egy nyitott pénzügyi időszakhoz van-e társítva a főkönyvben. |
 | Pénznemkerekítés | Ez a szabály ellenőrzi, hogy a tranzakcióösszegek kerekítése a pénznemkerekítési szabály szerint történik-e. |
@@ -70,9 +70,9 @@ Az alábbi táblázat felsorolja azokat a tranzakciófejlécellenőrzési szabá
 
 ### <a name="transaction-line-validation-rules"></a>Tranzakciósor ellenőrzési szabályai
 
-Az alábbi táblázat felsorolja azokat a tranzakciósorellenőrzési szabályokat, amelyekkel szemben ellenőrizve vannak a kereskedelmi tranzakciók sorainak részletei, mielőtt a tranzakció át lennének adva kimutatás-feladásra.
+Az alábbi táblázat felsorolja azokat a tranzakciósor-ellenőrzési szabályokat, amelyekkel szemben ellenőrizve vannak a kereskedelmi tranzakciók sorainak részletei, mielőtt a tranzakciók át lennének adva kimutatás-feladásra.
 
-| Cím | Leírás |
+| Szabály | Leírás |
 |-------|-------------|
 | Vonalkód | Ez a szabály ellenőrzi, hogy a tranzakciósorok minden cikkvonalkódja létezik-e az adatbázisban. |
 | Költségsorok | Ez a szabály ellenőrzi, hogy a számított összeg és a költségsorok adómentességi összeg megegyezik-e az eredeti számított összeggel. |
