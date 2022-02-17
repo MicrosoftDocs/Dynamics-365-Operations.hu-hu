@@ -2,7 +2,7 @@
 title: Kompenzációs rácsok beállítása
 description: A kompenzációs rácsok segítségével meghatározható és fenntartható a fix kompenzációs tervek fizetési szerkezete.
 author: twheeloc
-ms.date: 08/25/2021
+ms.date: 01/03/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9e6aabf5c05b2a7a5d2b37b43c9a7e93ea6e9bbb
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
-ms.translationtype: HT
+ms.openlocfilehash: 51b98320eac539e49787d352f32683efadc11f41
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7483817"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071705"
 ---
 # <a name="set-up-compensation-grids"></a>Kompenzációs rácsok beállítása
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -66,29 +69,17 @@ A kompenzációs rácsok segítségével meghatározható és fenntartható a fi
     * Most a tömeges módosítás funkcióval fogjuk növelni az összegeket minden egymást követő szinten egy bizonyos százalékkal vagy összeggel. Ebben a példában minden fokozat 12,5 % szórással fog rendelkezni a középpontjaik körük.  
 7. A **Módosítás típusa** mezőben válasszon ki egy lehetőséget.
 8. A **Kiigazítás összege** mezőben adjon meg egy számot.
-9. A kívánt rekord megkeresése és kijelölése a listán
-10. A kívánt rekord megkeresése és kijelölése a listán
-11. A kívánt rekord megkeresése és kijelölése a listán
-12. A kívánt rekord megkeresése és kijelölése a listán
-13. Kattintson az **Alkalmazás a rácsra** elemre.
-14. A kívánt rekord megkeresése és kijelölése a listán
-15. A kívánt rekord megkeresése és kijelölése a listán
-16. A kívánt rekord megkeresése és kijelölése a listán
-17. Kattintson az **Alkalmazás a rácsra** elemre.
-18. A kívánt rekord megkeresése és kijelölése a listán
-19. A kívánt rekord megkeresése és kijelölése a listán
-20. Kattintson az **Alkalmazás a rácsra** elemre.
-21. Keresse meg és jelölje ki a kívánt rekordot a listán.
-22. Kattintson az Alkalmazás a rácsra elemre.
+9. Keresse meg és jelölje ki a kívánt rekordot a listán.
+10. Kattintson az **Alkalmazás a rácsra** elemre.
     * Most a Tömeges módosítás funkcióval beállítjuk az egy szintek minimum és maximum referenciapontjait. Ebben a példában 50%-os lesz a szórás így a minimum hivatkozási pont -20%-kal, a maximum pedig +20%-kal módosul.  
-23. A **Kiigazítás összege** mezőben adjon meg egy számot.
-24. A **Referenciapont** mezőben adjon meg vagy válasszon ki egy értéket.
-25. A listában jelölje meg az összes sort, vagy törölje a jelölésüket.
-26. Kattintson az **Alkalmazás a rácsra** elemre.
-27. A **Kiigazítás összege** mezőben adjon meg egy számot.
-28. A **Referenciapont** mezőben adjon meg vagy válasszon ki egy értéket.
-29. A listában jelölje meg az összes sort, vagy törölje a jelölésüket.
-30. Kattintson az **Alkalmazás a rácsra** elemre.
+11. A **Kiigazítás összege** mezőben adjon meg egy számot.
+12. A **Referenciapont** mezőben adjon meg vagy válasszon ki egy értéket.
+13. A listában jelölje meg az összes sort, vagy törölje a jelölésüket.
+14. Kattintson az **Alkalmazás a rácsra** elemre.
+15. A **Kiigazítás összege** mezőben adjon meg egy számot.
+16. A **Referenciapont** mezőben adjon meg vagy válasszon ki egy értéket.
+17. A listában jelölje meg az összes sort, vagy törölje a jelölésüket.
+18. Kattintson az **Alkalmazás a rácsra** elemre.
 
 
 

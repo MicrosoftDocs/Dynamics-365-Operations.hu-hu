@@ -1,6 +1,6 @@
 ---
 title: Tömeges felvételi projektek
-description: Ez a témakör a tömeges felvételi projekteket írja le, amelyek segítségével az emberi erőforrások szakértői több beosztást hozhatnak létre, és a dolgozókat hatékonyan fel lehet venni erre a beosztásra.
+description: Ez a témakör olyan tömeges bérbeadási projekteket ír le, amelyek lehetővé teszik a humánerőforrás-szakértők számára, hogy több pozíciót hozzanak létre, és hatékonyan alkalmazzanak munkavállalókat ezekbe a pozíciókba.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e0a8bba2227136995542d08f4b3f1e9d6d48ad5
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: fcfc973dc9acea624336f059d68562fa5eb41353
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728656"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070201"
 ---
 # <a name="mass-hire-projects"></a>Tömeges felvételi projektek
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -43,19 +46,19 @@ Ha egyszerre több alkalmazottat állít munkába, például egy szezonális ig�
 
 Nyáron általában 15-20 részmunkaidős egyetemistát vesz fel, hogy kitöltse a vállalat gyakornoki helyeit. Ebben az évben fel szeretné venni öt könyvelőt, öt értékesítési munkatársat és öt pénztárost. Ahelyett, hogy minden egyes beosztást és alkalmazotti rekordot külön létrehozna, egyetlen tömeges felvételi projektet hoz létre „SummerInterns” néven. A projekt kezdő és záró dátumai megegyeznek a beosztások időszakának elejével és végével, amelyet a tömeges felvételi projektben létrehoz.
 
-A Tömeges **felvételi projektek lapon jelölje ki a** **SummerInterns projektet, majd válassza a Projekt** **megnyitása lehetőséget**. A nyitott tömeges felvételi projektben válassza a Beosztások létrehozása lehetőséget, és adja meg a **·** könyvelői beosztásra vonatkozó adatokat. Jelezheti, hogy öt könyvelői pozíciót kell létrehozni, és mindegyikhez ugyanazt az információt kell használni. Majd kattintson az **OK** lehetőségre. Ismételje meg ezt a folyamatot a rendelésfeldolgozói és a pénztárosi beosztásokra is.
+A **Tömeges bérbeadási projektek** oldalon válassza ki a **Nyári gyakornokok** projektet, majd válassza ki **Projekt megnyitása**. A nyílt tömeges bérbeadási projektben válassza a lehetőséget **Hozzon létre pozíciókat**, és adja meg a könyvelői pozíció adatait. Jelezheti, hogy öt könyvelői pozíciót kell létrehozni, és mindegyikhez ugyanazt az információt kell használni. Majd kattintson az **OK** lehetőségre. Ismételje meg ezt a folyamatot a rendelésfeldolgozói és a pénztárosi beosztásokra is.
 
-Miután kiválasztotta az új beosztásra való felvételi lehetőséget, minden egyes hallgató adatait beírja annak a beosztásnak a részleteibe, amelybe felveszi őket. Amikor megadta a beosztások összes adatát, válassza ki a beosztást a Tömeges felvételi projektek lapon, majd válassza a **·** Felvétel **·** lehetőséget. Minden egyes beosztáshoz létrejön egy beosztásrekord, és létrejön egy dolgozórekord, amely a megfelelő beosztáshoz kerül minden egyes alkalmazotthoz.
+Miután kiválasztotta a gyakornoki pozíciókra felvenni kívánt hallgatókat, az egyes hallgatók adatait meg kell adnia annak a pozíciónak a pozíció részleteiben, amelyre felveszi őket. Ha megadta a pozíció összes adatát, válassza ki a pozíciót a **Tömeges bérbeadási projektek** oldalt, majd válassza ki **Bérel**. Minden pozícióhoz létrejön egy pozíciórekord, és minden egyes felvett személyhez egy dolgozói rekord készül, és hozzárendelődik a megfelelő pozícióhoz.
 
 ## <a name="mass-hire-project-statuses"></a>Tömeges felvételi projekt állapota
 
 A tömeges felvételi projekt állapota a következők egyike lehet.
 
 - Létrehozva
-- Nyitva
-- Zárt
+- Megnyitás
+- Zárva
 
-A Tömeges felvételi projekt lapon válassza a Projekt megnyitása vagy a Projekt bezárása lehetőséget a tömeges felvételi projekt **·** **·** **·** állapotának a módosításahoz. A következő táblázatban látható, mit lehet tenni a projekt egyes állapotaiban.
+A **Tömeges bérbeadási projekt** oldal, válassza ki **Projekt megnyitása** vagy **Projekt bezárása** tömeges bérbeadási projekt státuszának megváltoztatására. A következő táblázatban látható, mit lehet tenni a projekt egyes állapotaiban.
 
 <table>
 <thead>
@@ -76,7 +79,7 @@ A Tömeges felvételi projekt lapon válassza a Projekt megnyitása vagy a Proje
 <tr>
 <td>Lezárva</td>
 <td><p>Nem adhat hozzá beosztásokat a projekthez. Ha beosztásokat kíván hozzáadni a tömeges felvételi projekthez, nyissa meg újra a projektet. Ez a befejezett projektek állapota.</p>
-<p><strong>Megjegyzés: A tömeges felvételi projekteket csak akkor lehet lezárni, ha a projekt összes beosztása Létrehozva vagy Lezárva</strong><b></b><b></b> állapotú.</p>
+<p><strong>Jegyzet:</strong> Mielőtt bezárhatna egy tömeges bérbeadási projektet, a projektben lévő összes pozíciónak valamelyik állapottal kell rendelkeznie<b>Létrehozva</b> vagy<b>Zárva</b>.</p>
 </td>
 </tr>
 </tbody>

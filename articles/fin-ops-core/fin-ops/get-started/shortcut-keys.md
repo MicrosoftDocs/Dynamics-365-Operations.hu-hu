@@ -1,6 +1,6 @@
 ---
 title: Billentyűparancsok
-description: Ez a témakör áttekintést nyújt azokról a billentyűparancsokról, amelyeket a Finance and Operations alkalmazásokkal folytatott munka során használhat.
+description: Ez a témakör áttekintést nyújt a Finance and Operations alkalmazásokkal végzett billentyűkombinációkról.
 author: jasongre
 ms.date: 12/10/2021
 ms.topic: article
@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6e6f6faf75bb9dc2b11b3a27a886b1674cc7b339
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
-ms.translationtype: MT
+ms.openlocfilehash: 0ecf745337c15270290f02496cc6ce4ccac86861
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913518"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070983"
 ---
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
 [!include [banner](../includes/banner.md)]
 
-A következő billentyűparancsok segítségével gyorsan és hatékonyan viheti be az adatokat a Finance and Operations alkalmazásokban.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+A következő billentyűkódok segítségével gyorsan és hatékonyan adhat meg adatokat a Finance and Operations alkalmazásokban.
 
 > [!NOTE]
 > Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak. Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.
@@ -129,8 +132,8 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 
 | Művelet                                                                                                             | Nyomja meg a(z)  billentyűt                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
-| Függőleges görgetés                                                                                                     | Egérkerék                     |
-| Vízszintes görgetés                                                                                                   | Műszak + egérkerék             |
+| Függőleges görgetés                                                                                                     | Egérgörgő                     |
+| Vízszintes görgetés                                                                                                   | Shift + egérgörgő             |
 | Ugrás a következő/előző oszlopra                                                                                       | Tab/Shift+Tab                 |
 | Ugrás a következő/előző sorra                                                                                          | Lefelé nyíl/Felfelé nyíl           |
 | Lépés a következő/előző sorra kijelölés nélkül<blockquote>[!NOTE] Ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.</blockquote> | Ctrl+Felfelé nyíl / Ctrl+Lefelé nyíl |
@@ -149,9 +152,9 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Az alapértelmezett művelet végrehajtása rácsban<blockquote>[!NOTE] Ez a billentyűparancs akkor van engedélyezve, amikor a fókusz egy hivatkozást tartalmazó cellán van, és az adott oszlop összes cellájában vannak hivatkozások.</blockquote> | Bevitel                           |
 | A fókusz váltása a kiválasztott sor és a fejlécsor között                                                               | Alt+Shift+H                     |
 | Az aktuális oszlop nagyítása/kicsinyítése (a fókusz a fejlécsorban)                                                  | Jobbra nyíl / balra nyíl        |
-| Az aktuális oszlop áthelyezése a következő/előző pozícióba (a fejléc sorában lévő fókuszsal)                                   | Ctrl+Shift+Jobbra nyíl / Ctrl+Shift+Balra nyíl |
+| Az aktuális oszlop áthelyezése a következő/előző pozícióba (a fókusz a fejlécsorban)                                   | Ctrl+Shift+jobbra nyíl / Ctrl+Shift+balra nyíl |
 | Rácsszűrés megnyitása az aktuális oszlopnál (a fókusz a fejlécsorban)                                              | Enter                           |
-| Az aktuális oszlop átméretezése a tartalomnak megfelelőre (a fejlécsorban lévő fókuszsal)                                           | A (vagy kattintson duplán az oszlopméretező gombra) |
+| Az aktuális oszlop átméretezése a tartalomnak megfelelőre (a fejlécsorban lévő fókuszsal)                                           | A (vagy kattintson duplán az oszlopméretezési fogantyúra) |
 
 ## <a name="input-control-shortcuts"></a>Beviteli vezérlő gyorsbillentyűk
 

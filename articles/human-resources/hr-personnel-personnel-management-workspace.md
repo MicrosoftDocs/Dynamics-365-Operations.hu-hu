@@ -16,18 +16,21 @@ ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4332be972ab3dc81e7e4f3cc297a91cd247e721e
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 7a83dea308e3e2eec1edebd5d619f9455e1a2268
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771338"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066575"
 ---
 # <a name="personnel-management-workspace"></a>Személyzetkezelési munkaterület
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A **Személyzetkezelési** munkaterületen nagy mennyiségű tartalom található. Tartalmazza a személyzeti mozgásokat, nyomon követi az alkalmazottak módosításait, a nyitott pozíciókat, a címváltozásokat, a lejáró rekordokat és az analitikát, valamint hivatkozásokat tartalmaz az adott információkra. Ez a témakör részletes információkat tartalmaz a munkaterületével minden egyes részéről.
+A **Személyzetkezelési** munkaterületen nagy mennyiségű tartalom található. Tartalmazza a személyzet mozgását, nyomon követi az alkalmazottak változásait, a nyitott pozíciókat, a címváltozásokat, a lejáró rekordokat és az elemzéseket, valamint hivatkozásokat biztosít konkrét információkhoz. Ez a témakör részletes információkat tartalmaz a munkaterületével minden egyes részéről.
 
 ## <a name="activity-tab"></a>Tevékenység lap
 
@@ -65,7 +68,7 @@ A **Hamarosan indul** szakaszban olyan dolgozók jelennek meg, akik a jövőben 
 Ha a vezető nem jelenik meg a kártyán, nincs beosztás rendelve a dolgozóhoz.
 
 > [!NOTE] 
-> Javasoljuk, hogy feladatlista alkalmazása előtt rendeljen beosztást egy dolgozóhoz. Előfordul, hogy a felvett alkalmazottak vezetőihez a berakodó feladatok vannak hozzárendelve. Ha azonban nincs beosztás hozzárendelve, akkor nem lehet meghatározni az új alkalmazott felettesét. Ebben az esetben a vezetőnek szánt előkészítési feladatokat az ellenőrzőlista tulajdonosához rendeli hozzá a rendszer.
+> Javasoljuk, hogy az ellenőrzőlista alkalmazása előtt rendeljen egy pozíciót egy dolgozóhoz. Néha a bevezető feladatokat egy újonnan felvett alkalmazott vezetőjéhez rendelik. Ha azonban nincs beosztás hozzárendelve, akkor nem lehet meghatározni az új alkalmazott felettesét. Ebben az esetben a vezetőnek szánt előkészítési feladatokat az ellenőrzőlista tulajdonosához rendeli hozzá a rendszer.
 
 Amikor a dolgozók megjelennek a **Hamarosan indul** szakaszban, a következő műveletek érhetők el hozzájuk:
 
@@ -85,7 +88,7 @@ A **Legutóbbi felvételek** szakasz sorolja fel azokat a dolgozókat, akiknek a
 A lista alapértelmezés szerint az elmúlt hét napban felvett dolgozókat jeleníti meg. A beállítás módosításához az **Emberi erőforrások paraméterei** oldal **Általános** lapján adja meg a **Legutóbbi felvételek** időkeretét. A **Legutóbbi felvételek** szakaszban az adatok megadott számú napra, hónapra vagy évre vonatkozóan jeleníthetők meg. Például az elmúlt 14 napban felvett dolgozók listájának megtekintéséhez állítsa az **Időszak** mezőt **14** értékre, az **Egység** mezőben pedig adja meg a **Napok** értéket.
 
 > [!NOTE]
-> Az **Emberi erőforrások paraméterei** oldalon szereplő beállítások vállalatspecifikusak. Emiatt a megtekinthető közelmúltbeli felvételek időkerete vállalatonként eltérő lehet. Az USMF vállalatnál például szeretné az elmúlt hét nap minden új felvételét megtekinteni. Az USSI vállalatnál azonban érdemes lehet megtekinteni az összes, az elmúlt 14 napból származó új felvételeket. Ebben az esetben minden vállalatban nyissa meg az Emberi erőforrások paraméterei lapot, és állítsa be **·** a szükséges paramétereket.
+> Az **Emberi erőforrások paraméterei** oldalon szereplő beállítások vállalatspecifikusak. Emiatt a megtekinthető közelmúltbeli felvételek időkerete vállalatonként eltérő lehet. Az USMF vállalatnál például szeretné az elmúlt hét nap minden új felvételét megtekinteni. Az USSI vállalatnál azonban érdemes megnézni az elmúlt 14 nap összes újonnan felvett személyét. Ebben az esetben nyissa meg a **Emberi erőforrás paraméterek** oldalon minden cégnél, és állítsa be a paramétereket igény szerint.
 
 Ha a vezető nem jelenik meg a kártyán, nincs beosztás rendelve a dolgozóhoz.
 
@@ -181,4 +184,4 @@ A **Jóváhagyások** csempe az aktuális felhasználó jóváhagyására váró
 
 A **Címváltozások** csempe az összes olyan címváltozást számba veszi, amely az **Emberi erőforrások paraméterei** oldalon megadott számú napon belül történt. Amikor kiválasztja a **Címváltozások** csempét, egy új lapon megjelennek a címváltozások részletei. Az oldal jobb felső sarkában kiválaszthatja a **Jövőbeli címváltozásokkal** lehetőséget a jövőbeli dátumú címváltozások megjelenítéséhez.
 
-A címváltozások megtekintésével és kezelésével kapcsolatos további tudnivalókat lásd a [Címváltozások megtekintése és kezelése](hr-personnel-view-address-changes.md) oldalon.
+A címváltozások megtekintésével és kezelésével kapcsolatos további tudnivalókat lásd a [Címváltozások megtekintése és kezelése ](hr-personnel-view-address-changes.md)oldalon.

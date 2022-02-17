@@ -1,6 +1,6 @@
 ---
 title: Szervezeti hierarchia a Dataverse szolgáltatásban
-description: Ez a témakör a szervezeti adatok integrációját ismerteti a Finance and Operations alkalmazás és a Dataverse között.
+description: Ez a témakör a szervezeti adatok integrációját ismerteti a Finance and Operations alkalmazások és a Dataverse között.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: c7ef3a11817d60343503c80d89493262711524b1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: afc1b5996667835c460f467526493380aa2d6403
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782308"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062086"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Szervezeti hierarchia a Dataverse szolgáltatásban
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Mivel a Dynamics 365 Finance egy pénzügyi rendszer a *szervezet* egy alapvető koncepciója, és a rendszerbeállítás a szervezeti hierarchia konfigurációjával kezdődik. A vállalati pénzügyei nyomon követhetők a szervezet szintjén, illetve a szervezeti hierarchia bármely szintjén.
 
@@ -32,7 +32,7 @@ Egy olyan üzleti ökoszisztéma, amely a Finance and Operations alkalmazásokb�
 
 ![Architektúra képe.](media/dual-write-data-flow.png)
 
-A szervezeti hierarchiához tartozó táblaleképezések a Finance and Operations alkalmazások és a Dataverse szolgáltatás közötti egyirányú adatáramlást szolgálják.
+Szervezeti hierarchia táblázattérképek állnak rendelkezésre az adatok egyirányú szinkronizálásához a Finance and Operations alkalmazásokból a következőbe Dataverse.
 
 ## <a name="templates"></a>Sablonok
 

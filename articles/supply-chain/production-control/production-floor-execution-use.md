@@ -2,7 +2,7 @@
 title: A termelési üzem végrehajtási felületének dolgozók általi használata
 description: Ez a témakör azt mutatja be, hogyan kell használni a termelési üzem végrehajtási felületét egy dolgozó szemszögéből.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e872600222ad23bf3de62c0f2d6cda74942d5b55
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.dyn365.ops.version: 10.0.24
+ms.openlocfilehash: 086d05b4080015f6185a083ca20963539f76619f
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920648"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075019"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -138,6 +138,65 @@ Ebben az esetben a dolgozó meghatározhatja a társterméket és a jelentendó 
 Amikor egy dolgozó befejezte vagy részben befejezte a feladatot, akkor az **Aktív feladatok** lapon kiválaszthatna a **Selejtek jelentése** lehetőséget, hogy jelentse a legyártott leselejtezett mennyiséget. Ezután a **Selejtek jelentése** párbeszédpanelen a dolgozó beírja a leselejtezett mennyiséget a numerikus billentyűzet segítségével. A dolgozó az okot (*Semmilyen*, *Gép*, *Kezelő* vagy *Anyag*) is kiválasztja.
 
 ![A Selejtek jelentése párbeszédpanel.](media/pfei-report-scrap-dialog.png "A Selejtek jelentése párbeszédpanel")
+
+## <a name="adjust-material-consumption-and-make-material-reservations"></a>Állítsa be az anyagfelhasználást és készítsen anyagfoglalást
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+A dolgozók minden egyes termelési munkához beállíthatják az anyagfelhasználást. Ezt a funkciót olyan forgatókönyvekben használják, ahol a termelési feladat által felhasznált anyagok tényleges mennyisége több vagy kevesebb volt, mint a tervezett mennyiség. Ezért úgy kell beállítani, hogy a készletszintek aktuálisak legyenek.
+
+A dolgozók az anyagok tétel- és sorozatszámát is lefoglalhatják. Ezt a funkciót olyan forgatókönyvekben használják, amikor a dolgozónak manuálisan kell megadnia, hogy melyik anyagtétel- vagy sorozatszámot használta fel, hogy megfeleljen az anyag nyomon követhetőségi követelményeinek.
+
+A dolgozók kiválaszthatják a módosítandó mennyiséget **Állítsa be az anyagot**. Ez a gomb a következő helyeken érhető el:
+
+- Ban,-ben **Bejelenteni a töredéket** párbeszédablak
+- Ban,-ben **Jelentse az előrehaladást** párbeszédablak
+- A jobb oldali eszköztáron
+
+### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Állítsa be az anyagfelhasználást a Selejt jelentés és a Haladás jelentése párbeszédpanelen
+
+Miután egy dolgozó beírta a jelenteni kívánt mennyiséget a **Jelentse az előrehaladást** vagy **Bejelenteni a töredéket** párbeszédpanel, a **Állítsa be az anyagot** gomb elérhetővé válik. Amikor a felhasználó kiválasztja ezt a gombot, a **Állítsa be az anyagot** párbeszédpanel jelenik meg. Ez a párbeszédpanel felsorolja azokat a cikkeket, amelyeket a munkához felhasználni tervezett áru vagy selejt mennyiség bejelentésekor.
+
+A párbeszédpanel listája a következő információkat mutatja:
+
+- **Termék szám** – A termékmester és termékváltozat.
+- **Terméknév** – A termék neve.
+- **Javaslat** – Az elfogyasztott anyag becsült mennyisége, amikor a munka előrehaladását vagy selejtét jelentik a megadott mennyiségben.
+- **Fogyasztás** – A ténylegesen felhasznált anyagmennyiség, amikor előrehaladást vagy selejtet jelentenek a munka meghatározott mennyiségére vonatkozóan.
+- **Fenntartott** – A készletben fizikailag lefoglalt anyagmennyiség.
+- **Mértékegység** – Az anyagjegyzék (BOM) egység.
+
+A párbeszédpanel jobb oldalán a következő információk láthatók:
+
+- **Termék szám** – A termékmester és termékváltozat.
+- **Becsült** – A becsült fogyasztandó mennyiség.
+- **Elindult** – A termelési munkán megkezdett mennyiség.
+- **Fennmaradó mennyiség** – A becsült mennyiségből a még elfogyasztandó mennyiség.
+- **Kiadott mennyiség** – Az elfogyasztott mennyiség.
+
+A következő műveletek hajthatók végre:
+
+- A munkás kiválaszthatja az anyaghoz beállítani kívánt mennyiséget **Állítsa be a fogyasztást**. A mennyiség megerősítése után a mennyiség a **Fogyasztás** oszlop frissül a módosított mennyiséggel.
+- Amikor a dolgozó választ **Állítsa be az anyagot**, egy termelési komissiózási lista napló jön létre. Ez a napló ugyanazokat a tételeket és mennyiségeket tartalmazza, mint a **Állítsa be az anyagot** lista.
+- Amikor a dolgozó beállít egy mennyiséget a **Állítsa be az anyagot** párbeszédpanel, a **Javaslat** a megfelelő naplósoron lévő mező ugyanazzal a mennyiséggel frissül. Ha a dolgozó kiválasztja **Megszünteti** ban,-ben **Állítsa be az anyagot** párbeszédpanelen a komissiózási lista törlődik.
+- Ha a dolgozó kiválasztja **rendben**, a komissiózási lista nem törlődik. Akkor teszik közzé, amikor a munkát jelentették a **Bejelenteni a töredéket** vagy **Jelentse az előrehaladást** párbeszédablak.
+- Ha a dolgozó kiválasztja **Megszünteti** ban,-ben **Jelentse az előrehaladást** vagy **Bejelenteni a töredéket** párbeszédpanelen a komissiózási lista törlődik.
+
+### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Állítsa be az anyagot a jobb oldali eszköztárról
+
+A **Állítsa be az anyagot** gomb konfigurálható úgy, hogy az a jobb oldali eszköztáron jelenjen meg. (További információért lásd [Tervezze meg a termelési szint végrehajtási felületét](production-floor-execution-tabs.md) .) A dolgozó választhat **Állítsa be az anyagot** folyamatban lévő gyártási munkához. Ebben az esetben a **Állítsa be az anyagot** párbeszédpanel jelenik meg, ahol a dolgozó elvégezheti a kívánt beállításokat. A párbeszédpanel megnyitásakor a gyártási rendeléshez létrejön egy termelési komissiózási lista, amely a módosított mennyiségekhez tartozó sorokat tartalmazza. Ha a dolgozó kiválasztja **Hozzászólás most**, a beállítás megerősítésre kerül, és a komissiózási lista felkerül. Ha a dolgozó kiválasztja **Megszünteti**, a komissiózási lista törlődik, és nem történik módosítás.
+
+### <a name="reserve-materials"></a>Tartalék anyagok
+
+Ban,-ben **Állítsa be az anyagot** párbeszédpanelen a munkás anyagfoglalásokat készíthet és módosíthat a kiválasztással **Tartalék anyag**. A **Tartalék anyag** A megjelenő párbeszédpanel az egyes tárolási és nyomon követési dimenziókhoz tartozó cikkhez tartozó fizikailag elérhető készletet mutatja.
+
+Ha az anyag engedélyezve van a speciális raktári folyamatokhoz, a lista csak a fizikailag elérhető készletet mutatja az anyag gyártási bemeneti helyéhez. A termelési bemenet helye azon az erőforráson van meghatározva, ahol a termelési feladatot tervezik. Ha a cikkszámot tétel- vagy sorozatszám vezérli, megjelenik a fizikailag elérhető tétel- és sorozatszámok teljes listája. A lefoglalandó mennyiség megadásához a dolgozó választhat **Tartalék anyag**. Meglévő foglalás eltávolításához a dolgozó kiválaszthat **Foglalás eltávolítása**.
+
+A gyártási bemeneti hely beállításával kapcsolatos további információkért tekintse meg a következő blogbejegyzést: [A termelés bemeneti helyének beállítása](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+
+> [!NOTE]
+> Fenntartások, amelyeket a dolgozó a **Tartalék anyag** párbeszédablak megmarad, amikor a dolgozó kiválasztja **Megszünteti** ban,-ben **Jelentse az előrehaladást** vagy **Bejelenteni a töredéket** párbeszédablak.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Feladat befejezése és új feladat megkezdése
 

@@ -2,7 +2,7 @@
 title: Juttatáskezelési munkaterület
 description: Ez a témakör a Dynamics 365 Human Resources Juttatáskezelési munkaterületét részletezi.
 author: twheeloc
-ms.date: 09/21/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-24
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e6cc1432e108c74706dea124a62024272e65b6c1
-ms.sourcegitcommit: 47a3ad71210c7ac84d0c25e913c440b5ba205282
-ms.translationtype: HT
+ms.openlocfilehash: 424f4a2098e05b4f7dc6fa84df133dda81cc59f0
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7512474"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071729"
 ---
 # <a name="benefits-management-workspace"></a>Juttatáskezelési munkaterület
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [applies to](../includes/applies-to-hr.md)]
 
@@ -94,7 +97,7 @@ Ha egy másik juttatási időszakot is meg kell tekinteni, válassza ki az **Id�
 A művelet elemeit csempe vagy lap kiválasztásával lehet megtekinteni. Ha kiválaszt egy lapot, a munkaterületi oldalon megtekintheti és kiválaszthatja a dolgozókat.
 A **Nyitott belépés** lap fontos mérőszámokat biztosít a nyitott beléptetési folyamathoz. 
 
-A nyitott tagságra vonatkozó adatok a **Beléptetés kezdő dátuma** előtt 30 nappal lesznek látható. Ez az **Időszakok** beállításban van meghatározva a **Juttatáskezelés** > **Hivatkozások** > **Időszakok** menüben a **Beléptetés kezdődátuma** mezőben.  Ennek a beállításnak a módosításához ugorjon a **Human Resource megosztott paraméterei** > **Juttatások kezelése** > **Nyitott tagsági beállítások** helyre, és frissítse a **Száma** mezőt.  
+A nyitott tagságra vonatkozó adatok a **Beléptetés kezdő dátuma** előtt 30 nappal lesznek látható. Ez az **Időszakok** beállításban van meghatározva a **Juttatáskezelés** > **Hivatkozások** > **Időszakok** menüben a **Beléptetés kezdődátuma** mezőben.  A beállítás módosításához lépjen a következőre: **Az emberi erőforrások megosztott paraméterei** > **Előnyök kezelése** > **Nyissa meg a jelentkezési lehetőségeket** és frissítse a **Száma** terület.  
 
 A Következő információk érhetők el a **Beléptetés megnyitása** lapon:
  - Azok az alkalmazottak, akik még nem indították el a beléptetés megnyitása folyamatot
@@ -109,11 +112,11 @@ A Következő információk érhetők el a **Beléptetés megnyitása** lapon:
   > [!NOTE]
   > Ha nem szeretné nyomon követni egy **Tervtípus** nyitott beléptetésének előrehaladását, akkor kizárhatja azt a következő helyen: **Juttatáskezelés** > **Hivatkozások** > **Munkavállalói önkiszolgáló rendszer paraméterei** > **Juttatási konstrukciók csempéjének beállítása**, itt frissítheti a **Nyitott beléptetések nyomon követése** mezőt.  Létrehozhat például olyan konstrukciókat, amelyeknél a **Konstrukció típusa** = **Egyéb**. Ezek a konstrukciók választható konstrukciók lehetnek, amelyekhez nem szeretné nyomon követni a beléptetés előrehaladását. Ha nem ezt a konstrukciótípust választja, akkor a rendszer figyelmen kívül hagyja az ilyen típusú konstrukciókat, amikor nyomon követi a beléptetés előrehaladását vagy a befejezését a **Nyitott beléptetés** lapon. Ez a beállítás az összes időszakra és jogi személyre vonatkozóan kiválasztott tervtípusra vonatkozik.
 
-- **Folyamatban** – a **Folyamatban** csempe a folyamatban lévő kiválasztással rendelkező alkalmazottak számát adja meg. A **Folyamatban** csempe egy szűrt lista, amely csak azokat az alkalmazottakat jeleníti meg, akiknél legalább egy terv le van mondva, vagy ki van választva. A kötelező tervek figyelmen kívül vannak hagyva, és nem szerepelnek ebben, mert alapértelmezés szerint ki vannak választva az alkalmazotthoz. Ebben a csempében lehet visszaásni a kiválasztott és a lemondott tervekhez a **Dolgozói juttatási konstrukciók tömeges frissítése** lapon.
+- **Folyamatban** – a **Folyamatban** csempe a folyamatban lévő kiválasztással rendelkező alkalmazottak számát adja meg. A **Folyamatban** csempe egy szűrt lista, amely csak azokat az alkalmazottakat jeleníti meg, akiknél legalább egy terv le van mondva, vagy ki van választva. A kötelező tervek figyelmen kívül vannak hagyva, és nem szerepelnek ebben, mert alapértelmezés szerint ki vannak választva az alkalmazotthoz. Erről a csempéről visszaléphet a kiválasztott és lemondott tervek megtekintéséhez **Munkavállalói juttatási tervek tömeges frissítése** oldalon.
 
 - **Juttatásokra regisztrált** – A **Juttatásokra regisztrált** csempe segítségével meg lehet számolni az olyan alkalmazottakat, akik teljesen regisztráltak juttatásra. A **Juttatásra regisztrált** csempe egy szűrt lista, amely azokat az alkalmazottakat jeleníti meg, akik vagy az összes konstrukciót kiválasztották vagy lemondták. A lekérdezés kizárja azokat a konstrukciókat, amelyekhez nincs nyomon követve a nyitott beléptetés az **Alkalmazott önkiszolgálás** paraméterei oldalon. Erről a csempéről visszaáshat, hogy láthassa az alkalmazottak listáját a **Dolgozói juttatási konstrukciók** oldalon.
 
-- **Nem megerősített kiválasztások** – a **Nem megerősített kiválasztások** csempe mutatja azon alkalmazottak számát, akikhez kiválasztott vagy lemondott tervek vannak amelyek megerősítése szükséges. Erről a csempéről visszaáshat, hogy láthassa az alkalmazottak listáját a **Dolgozói juttatási konstrukciók tömeges frissítése** oldalon.
+- **Nem megerősített kiválasztások** – a **Nem megerősített kiválasztások** csempe mutatja azon alkalmazottak számát, akikhez kiválasztott vagy lemondott tervek vannak amelyek megerősítése szükséges. Visszafúrhat erről a csempéről, hogy megjelenítse a **Munkavállalói juttatási tervek tömeges frissítése** oldalon.
 
 **Tevékenység**
 

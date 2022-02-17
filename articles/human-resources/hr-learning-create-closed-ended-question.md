@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8758b74f9ce7c8687b7c2925ccd04cd512602db0
-ms.sourcegitcommit: 8246ba3872a1f3eaa18c8bb1ba86d3c2142a6e10
-ms.translationtype: HT
+ms.openlocfilehash: b3b90bb2a4981f32feb10ee1192e9c4d2e604e7a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7465173"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071738"
 ---
 # <a name="create-a-closed-ended-question"></a>Eldöntendő kérdés létrehozása
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -34,10 +37,10 @@ A zárt kérdések lehetővé teszik, hogy válaszlehetőségeket kínáljon fel
 2. Kattintson az **Új** elemre.
 3. Írjon be egy értéket a **Válaszcsoport** mezőbe.
 4. Írjon egy értéket a **Leírás** mezőbe.
-    * Használja a Véletlenszerűsítés funkciót, hogy minden alkalommal véletlenszerű sorrendben helyezze el a válaszokat, ha a válaszcsoportot felhasználják egy kérdéshez.  
+    * Használja a **Véletlenszerűvé** olyan funkció, amely a válaszokat véletlenszerűen más sorrendbe helyezi minden alkalommal, amikor a válaszcsoportot egy kérdéshez használják.  
 5. Kattintson a **Válasz** lehetőségre.
 6. Kattintson az **Új** elemre.
-    * Ha a Véletlenszerűsítés nincs kiválasztva a Válaszcsoport számára a sorszám vezérli a válaszok megjelenítésének sorrendjét.  
+    * A sorszám határozza meg a válaszok megjelenítési sorrendjét, hacsak nem **Véletlenszerűvé** van kiválasztva a **Válaszcsoport**.  
     * A válaszokhoz pontok rendelhetőek a kérdőív értékeléséhez.  
 7. A **Pontok** mezőben adjon meg egy számot.
     * A helyes válasz megjelölhető, hogy jelezze melyik az. Ez használható a kérdőív pontozására.  
@@ -61,8 +64,8 @@ A zárt kérdések lehetővé teszik, hogy válaszlehetőségeket kínáljon fel
 ## <a name="create-the-question"></a>Kérdés létrehozása
 1. Ugorjon a **Kérdőív** > **Tervezés** > **Kérdések** lehetőségre.
 2. Kattintson az **Új** elemre.
-3. A Típus mező segítségével rendezze csoportba az összetartozó kérdéseket.
-    * Használhatja a Jelölőnégyzet, Alternatív gomb vagy Kombinált lista beviteli típusokat az eldöntendő kérdésekhez.  
+3. Használja a **típus** mezőben, hogy csoportosítsa össze a kapcsolódó kérdéseket.
+    * Bemeneti típusokat használhat **Jelölje be a négyzetet**, **gomb**, vagy **Kombinált doboz** zárt kérdésekre.  
 4. Válasszon ki egy lehetőséget a **Beviteli típus** mezőben.
 5. A **Válaszcsoport** mezőben adjon meg, vagy válasszon ki egy értéket.
 6. Írjon be egy értéket a **Szöveg** mezőbe.

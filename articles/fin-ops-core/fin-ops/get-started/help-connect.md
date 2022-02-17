@@ -1,5 +1,5 @@
 ---
-title: A Finance and Operations alkalmazások súgóélményének konfigurálása
+title: Konfigurálja a Súgót a Finance and Operations alkalmazásokhoz
 description: Ez a témakör néhány Microsoft Dynamics 365 alkalmazáshoz tartalmaz tájékoztatást a Súgó rendszer összetevőiről.
 author: margoc
 ms.date: 08/11/2021
@@ -15,22 +15,25 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3a6c37822e84ba08fa0720ed2b3912cbec1448e3
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
-ms.translationtype: HT
+ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594857"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071008"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>A Finance and Operations alkalmazások súgóélményének konfigurálása
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurálja a Súgót a Finance and Operations alkalmazásokhoz
 
 [!include [banner](../includes/banner.md)]
 
-Ebben a témakörben egy áttekintést talál a Finance and Operations alkalmazások súgórendszerének összetevőiről, például a Microsoft Dynamics 365 Finance, a Dynamics 365 Supply Chain Management, a Dynamics 365 Commerce és a Dynamics 365 Human Resources. A témakör emellett bemutatja az összetevők csatlakoztatásának módját, valamint az egyéni súgó létrehozási folyamatának összegzését.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Ebben a témakörben áttekintést talál a Finance and Operations alkalmazások súgórendszerének összetevőiről, mint például a Microsoft.Dynamics 365 Finance,Dynamics 365 Supply Chain Management,Dynamics 365 Commerce, és Dynamics 365 Human Resources. A témakör emellett bemutatja az összetevők csatlakoztatásának módját, valamint az egyéni súgó létrehozási folyamatának összegzését.
 
 ## <a name="help-architecture"></a>Súgó-architektúra
 
-A Finance and Operations alkalmazások fogalmi áttekintéseket és egyéb témaköröket tartalmaznak, amelyek a [Microsoft Dynamics 365 dokumentáció](/dynamics365/) webhelyen vannak közzétéve. Ez a tartalom később a termék **Súgó** paneljéből érthető el. A következő ábrán a súgórendszer részei láthatók.
+A Finance and Operations alkalmazások koncepcionális áttekintéseket és egyéb témákat tartalmaznak, amelyeket közzétesznek a [Microsoft Dynamics 365 dokumentáció](/dynamics365/) webhely. Ez a tartalom később a termék **Súgó** paneljéből érthető el. A következő ábrán a súgórendszer részei láthatók.
 
 [![Súgóarchitektúra.](./media/help-architecture.png)](./media/help-architecture.png)
 
@@ -60,7 +63,7 @@ A megoldás feladat-útmutatóinak konfigurálásához kövesse az alábbi lép�
 2. Válassza ki a BPM könyvtárakat (a kiválasztott projekten belül) amelyekből szeretné előhívni a rögzítéseket.
 3. Adja meg a BPM könyvtárak megjelenítési sorrendjét. A megjelenítési sorrend meghatározza a sorrendet, amelyben a feladatrögzítések megjelennek a **Súgó** ablakban.
 
-Miután végrehajtotta ezeket a lépéseket, nyissa meg a **Súgó** ablakot, és kattintson a **Feladat-útmutatók** lapra. Ekkor megjelennek a Finance and Operations-alkalmazások aktuális oldalához kapcsolódó feladat-útmutatók. Amennyiben nem találhatók feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést.
+Miután elvégezte ezeket a lépéseket, megnyithatja a **Segítség** ablaktáblát, és válassza ki a **Feladat útmutatók** lapon. Mostantól megjelennek a Finance and Operations alkalmazásokban éppen megtekintett oldalra vonatkozó feladat-útmutatók. Amennyiben nem találhatók feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést.
 
 ### <a name="showing-translated-task-guides"></a>Lefordított feladat-útmutatók megjelenítése
 
@@ -84,7 +87,7 @@ Ha partnerként hozzájárul egy könyvtárral egy vállalati tár kialakítás�
 
 ### <a name="connect-a-custom-help-site"></a>Egyéni súgóoldal csatlakoztatása
 
-A Finance and Operations alkalmazások ritkán használatosak a gyári állapotukban. Helyette a megoldást testreszabják, és kiterjesztik, hogy megfeleljen a szervezet igényeihez. A Súgó élményét testreszabhatja és ki is bővítheti. Lehetőség van például egyéni súgó hozzáadására a terméken belüli **Súgó** panelen.
+A Finance and Operations alkalmazásokat ritkán használják készenléti formájukban. Helyette a megoldást testreszabják, és kiterjesztik, hogy megfeleljen a szervezet igényeihez. A Súgó élményét testreszabhatja és ki is bővítheti. Lehetőség van például egyéni súgó hozzáadására a terméken belüli **Súgó** panelen.
 
 A Microsoft egy eszközkészletet biztosít egyéni súgók telepítéséhez és csatlakoztatásához a **Súgó** panelen. A **Súgó** panelhez kapcsolt egyéni súgótartalom beállításával kapcsolatos tudnivalókat lásd: [Egyéni Súgó – áttekintés](../../dev-itpro/help/custom-help-overview.md).
 

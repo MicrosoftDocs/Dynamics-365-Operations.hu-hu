@@ -1,6 +1,6 @@
 ---
 title: Beosztások beállítása
-description: Ez a témakör azt írja le, hogyan lehet a beosztások a szervezeti hierarchia alsóbb szintje fontos eleme.
+description: Ez a témakör leírja, hogy a pozíciók hogyan fontos elemei a szervezeti hierarchia alsó szintjének.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: business-process
@@ -13,70 +13,72 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f4b9f09db8465cc55c9b0c4dc403c2c7a3647d7e
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 67682b6ea949183c2697b658bb77925a791e7da1
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728718"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071751"
 ---
 # <a name="set-up-positions"></a>Beosztások beállítása
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei. Egy beosztás egy feladat egyedi példánya. Például az "értékesítési igazgató (Kelet)" a beosztáshoz társított beosztások egyike, az "Értékesítési vezető". Egy pozíció létezik a részlegen belül, és megtörténhet, hogy csak egy dolgozóval van társítva. Ebben a feladatban a beosztás létrehozásához szükséges lépéseket mutatjuk be. Ez az eljárás az emberi erőforrások szakértői számára alkalmas.
+A beosztások szervezeti hierarchia alacsonyabb szintjének fontos részei. Egy beosztás egy feladat egyedi példánya. Például az „Értékesítési vezető (Kelet)” pozíció az „Értékesítési vezető” álláshoz társított pozíciók egyike. Egy pozíció létezik a részlegen belül, és megtörténhet, hogy csak egy dolgozóval van társítva. Ebben a feladatban a beosztás létrehozásához szükséges lépéseket mutatjuk be. Ez az eljárás az emberi erőforrások szakértői számára alkalmas.
 
-1. Válassza ki **a munkaerő-gazdálkodást**.
-2. Nyitott **beosztások kiválasztása**.
-3. A legördülő párbeszédpanel megnyitásához válassza az Új **·** lehetőséget.
-4. A Feladat **·** mezőben adjon meg vagy válasszon ki egy értéket.
+1. Válassza ki **Munkaerő menedzsment**.
+2. Válassza ki **Nyitott pozíciók**.
+3. Válassza ki **Új** a legördülő párbeszédpanel megnyitásához.
+4. Ban,-ben **Munka** mezőbe írja be vagy válasszon értéket.
 
-    A Beosztás leírás, Beosztás és Teljes munkaidőssel egyenértékű foglalkoztatási tényező mezőket a program automatikusan átmásolja a kiválasztott beosztásból a **·** **·** **·** beosztásba.
+    A **Munkaköri leírás**, **·**, és **Teljes munkaidős egyenértékű foglalkoztatási tényező** A mezők automatikusan átmásolódnak a kiválasztott munkából a pozícióba.
 
-5. ResolveChanges a Feladat.
-6. Válassza **a Beosztás létrehozása** lehetőséget.
-7. A Részleg **·** mezőben adjon meg vagy válasszon ki egy értéket.
-8. A **Pozíciótípus** mezőben adjon meg vagy válasszon ki egy értéket.
-9. A **Kompenzációs régió** mezőben adjon meg vagy válasszon ki egy értéket.
+5. Válassza ki **Pozíció létrehozása**.
+6. Ban,-ben **Osztály** mezőbe írja be vagy válasszon értéket.
+7. Ban,-ben **Pozíció típusa** mezőbe írja be vagy válasszon értéket.
+8. Ban,-ben **Kompenzációs régió** mezőbe írja be vagy válasszon értéket.
 
-    A Kompenzációs régió mező határozza meg a kompenzációra való jogosultsági szabályokat és a fix fizetésemelési költségvetéseket, amelyek az adott beosztásban **·** dolgozó alkalmazottra vonatkoznak.
+    A **Kompenzációs régió** mező határozza meg a kompenzációs jogosultsági szabályokat és a rögzített emelési költségvetést, amelyek az adott pozícióban lévő munkavállalóra vonatkoznak.
 
-10. A **Megbízásra elérhető** mezőben adja meg a dátumot és az időpontot.
-11. Bontsa ki **a Beosztás időtartama** szakaszt.
+9. Ban,-ben **Megbízható** mezőbe írja be a dátumot és az időt.
+10. Bontsa ki a **Pozíció időtartama** szakasz.
 
-    A beosztás tartamának bevitele alapértelmezés szerint a korábban megadott aktiválási és nyugdíjazási dátumok alapján történt.
+    A pozíció időtartama alapértelmezés szerint a korábban megadott aktiválási és visszavonási dátumok alapján kerül megadásra.
 
-12. Bontsa ki **a Jelentések a** beosztáshoz szakaszt.
+11. Bontsa ki a **Jelentések a pozícióba** szakasz.
 
     Ha hozzárendel egy dolgozót egy olyan pozícióhoz, amely egy másik pozícióhoz van rendelve, akkor közvetlen jelentési kapcsolatot hoz lére a két beosztáshoz rendelt dolgozó között.
 
-13. A legördülő párbeszédpanel megnyitásához válassza az Új **·** lehetőséget.
-14. Írjon be vagy válasszon ki egy értéket a Jelentések **·** a mezőbe mezőben.
-15. Válassza a **Létrehozása** lehetőséget.
-16. Bontsa ki **a Dolgozó-hozzárendelés** szakaszt.
-17. Bontsa ki **a Kapcsolatok** szakaszt.
+12. Válassza ki **Új** nyissa meg a legördülő párbeszédpanelt.
+13. Ban,-ben **Jelentések a** mezőbe írja be vagy válasszon értéket.
+14. Válassza a **Létrehozása** lehetőséget.
+15. Bontsa ki a **Munkás megbízás** szakasz.
+16. Bontsa ki a **Kapcsolatok** szakasz.
 
     Ha szervezete mátrix hierarchiát vagy egyéb egyéni hierarchiát alkalmaz, beállíthat pozíció hierarchia típusokat, majd hozzáadhat jelentési kapcsolatokat minden egyes beállított hierarchia típushoz.
 
-18. Válassza a **Hozzáadás** lehetőséget.
-19. A listában jelölje meg a kiválasztott sort.
-20. A **Hierarchia neve** mezőben adjon meg vagy válasszon ki egy értéket.
-21. A Jelentések **a** beosztáshoz mezőben adjon meg vagy válasszon ki egy értéket.
-22. Bontsa ki **a Bérlista** szakaszt.
-23. A Fizetési **ciklus** mezőben adjon meg vagy válasszon ki egy értéket.
-24. Adjon meg vagy válasszon ki egy értéket **·** a Fizetve mezőben.
-25. Írjon be egy számot az Éves rendszeres órák **·** mezőbe.
+17. Válassza a **Hozzáadás** lehetőséget.
+18. A listában jelölje meg a kiválasztott sort.
+19. Ban,-ben **Hierarchia neve** mezőbe írja be vagy válasszon értéket.
+20. Ban,-ben **Jelentések a pozícióba** mezőbe írja be vagy válasszon értéket.
+21. Bontsa ki a **Bérszámfejtés** szakasz.
+22. Ban,-ben **Fizetési ciklus** mezőbe írja be vagy válasszon értéket.
+23. Ban,-ben **Területenként fizetve**, írjon be vagy válasszon egy értéket.
+24. Ban,-ben **Éves rendes óra** mezőbe írjon be egy számot.
 
-    A megadott érték azt a rendszeresen fizetett munkaidőt jelenti, amely szerint az ebben a beosztásban dolgozó dolgozónak minden évben dolgoznia kell.
+    A beírt érték a rendszeresen fizetett órák száma, amelyet az ebben a pozícióban lévő munkavállalónak évente kell ledolgoznia.
 
-26. Bontsa ki **a Szakszervezet** szakaszt.
-27. A **Szakszervezeti szakasz** összecsukása
-28. Bontsa ki **a Pénzügyi dimenziók** szakaszt.
-29. Az **Elosztási sablon** mezőben adjon meg vagy válasszon ki egy értéket.
-30. A Részleg **·** mezőben adjon meg vagy válasszon ki egy értéket.
-31. Válassza a **Mentés** lehetőséget.
+25. Bontsa ki a **Szakszervezet** szakasz.
+26. Összecsukja a **Szakszervezet** szakasz.
+27. Bontsa ki a **Pénzügyi dimenziók** szakasz.
+28. Ban,-ben **Terjesztési sablon** mezőbe írja be vagy válasszon értéket.
+29. Ban,-ben **Osztály** mezőbe írja be vagy válasszon értéket.
+30. Válassza a **Mentés** lehetőséget.
 
 
 

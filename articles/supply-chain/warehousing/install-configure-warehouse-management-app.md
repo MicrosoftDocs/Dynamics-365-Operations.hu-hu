@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: b1687b24f499f4d226406a0035f8ea70b6046167
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
-ms.translationtype: MT
+ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901989"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069379"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
 
@@ -143,6 +143,10 @@ Az Azure AD használatával történő hitelesítéssel biztonságos módon csat
 A tanúsítványok felhasználhatók titkos kódokként az alkalmazás azonosságának igazolására, ha a rendszer tokent kér. A tanúsítvány nyilvános része fel van töltve az alkalmazásregisztrációba az Azure portálon, míg a teljes tanúsítványt telepíteni kell minden olyan eszközre, amelyre a Raktárkezelés mobilalkalmazás telepítésre kerül. A szervezet felelős a tanúsítvány rotációjának és egyéb szempontjainak kezelésével kapcsolatban. Önaláírt tanúsítványok is használhatók, de mindig nem exportálható tanúsítványokat kell használnia.
 
 A tanúsítványt helyileg elérhetővé kell tenni minden olyan eszközön, amelyen a Raktárkezelés mobilalkalmazást futtatja. A Intune által vezérelt eszközök tanúsítványainak kezelésével kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Tanúsítványok használata hitelesítéshez a Microsoft Intune szolgáltatásban](/mem/intune/protect/certificates-configure).
+
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfigurálja a Warehouse Management mobilalkalmazást felhő- és peremléptékű egységekhez
+
+Néhány további lépésre van szükség, ha azt tervezi, hogy a Warehouse Management mobilalkalmazást felhőben vagy szélső léptékű egységben futtatja. Az utasításokat lásd [Konfigurálja a Warehouse Management mobilalkalmazást felhő- és peremléptékű egységekhez](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Az alkalmazás konfigurálása a kapcsolati beállítások importálásával
 
@@ -306,5 +310,6 @@ Ha egy eszköz elveszett vagy a biztonsága sérült, el kell távolítania az e
 
 - [Mobileszköz felhasználói beállításai](mobile-device-user-settings.md)
 - [Lépésikonok és címek hozzárendelése a Warehouse Management mobilalkalmazáshoz](step-icons-titles.md)
+- [Konfigurálja a Warehouse Management mobilalkalmazást felhő- és peremléptékű egységekhez](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

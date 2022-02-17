@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 685c8951b7c0d8524091cf06306388736d894f58
-ms.sourcegitcommit: a21166da59675e37890786ebf7e0f198507f7c9b
-ms.translationtype: HT
+ms.openlocfilehash: 68db4c6561f2cc3fcfd64b49da59a4cc164685f2
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/03/2021
-ms.locfileid: "7471644"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069429"
 ---
 # <a name="message-processor-messages"></a>Üzenetfeldolgozó üzenetei
 
@@ -29,7 +29,7 @@ ms.locfileid: "7471644"
 
 Az üzenetfeldolgozó üzenetei a felhő- és peremalapú skálázási egységek futtatásakor használatosak a [gyártási munkaterhelések](cloud-edge-workload-manufacturing.md) és a [raktárkezelési munkaterhelések](cloud-edge-workload-warehousing.md) során.
 
-Nagy mennyiségű adatcsere történik a központ és a skálázási egységek telepítési környezete között, hogy azok szinkronban legyenek, de az *üzenetfeldolgozó* ezek közül csak néhány adatcserét fog feldolgozni. Az üzenetfeldolgozó által feldolgozott üzeneteket a **Rendszerfelügyelet > Üzenetfeldolgozó > Üzenetfeldolgozó üzenetei** között lehet megtekinteni.
+A hub és a scale unit telepítési környezetek nagy mennyiségű adatot cserélnek, hogy szinkronban maradjanak. A kicserélt adatok egy része további logikát vált ki a *üzenetfeldolgozó*. Az üzenetfeldolgozó által feldolgozott üzeneteket a címen tekintheti meg **Rendszerfelügyelet > Üzenetfeldolgozó > Üzenetfeldolgozó üzenetek**.
 
 ## <a name="message-grid-columns-and-filters"></a>Üzenetrács oszlopai és szűrői
 

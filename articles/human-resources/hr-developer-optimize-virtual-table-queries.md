@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-04-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40fc4c06c563415cd5b1a13c145b778276274fd97279dc9f56ff5e3f8954dc76
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 1857d2e35e369bcd0c8f02a059a307f31da8b3b9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732009"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067454"
 ---
 # <a name="optimize-dataverse-virtual-table-queries"></a>Virtuális Dataverse-táblák lekérdezéseinek optimalizálása
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## <a name="issue"></a>Kiadás
 
@@ -47,12 +50,12 @@ A Human Resources Dataverse virtuális tábláinál a lassú teljesítmény egyi
 Ilyen hatás például a dolgozóra (**mshr_hcmworkerentity**) vagy az alap dolgozóra (**mshr_hcmworkerbaseentity**) vonatkozó lekérdezésekben látható. A teljesítményprobléma többféleképpen is megjelenhet:
 
 - **Lassú lekérdezés-végrehajtás**: A virtuális tábla lekérdezése visszaadhatja a várt eredményt, de a lekérdezés végrehajtása vártnál tovább tarthat.
-- **Lekérdezés időtúllépése**: A lekérdezés időtúllépést okozhat, és a következő hibát adja vissza: „Token beszerezve Finance and Operations meghívására, de Finance and Operations InternalServerError típusú hibát adott vissza.”
+- **Lekérdezés időtúllépése** : A lekérdezés időtúllépést okozhat, és a következő hibát adja vissza: "A Finance and Operations hívásához egy tokent kapott, de a Finance and Operations InternalServerError típusú hibát adott vissza."
 - **Váratlan hiba**: A lekérdezés 400-as hibatípust ad vissza a következő üzenettel: „Váratlan hiba történt.”
 
   ![400-as hibatípus a HcmWorkerBaseEntity esetében.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Szabályozás**: A lekérdezés túlhasználhatja a kiszolgáló erőforrásait, és szabályozás tárgya lehet. Ebben az esetben a lekérdezés a következő hibát adja vissza: „Token beszerezve Finance and Operations meghívására, de Finance and Operations 429-es típusú hibát adott vissza.” A Human Resources szabályozásával kapcsolatos további tudnivalókat lásd: [Szabályozás – GYIK](./hr-admin-integration-throttling-faq.md).
+- **Szabályozás**: A lekérdezés túlhasználhatja a kiszolgáló erőforrásait, és szabályozás tárgya lehet. Ebben az esetben a lekérdezés a következő hibát adja vissza: "A Finance and Operations hívásához kapott tokent, de a Finance and Operations 429-es típusú hibát adott vissza." A Human Resources szabályozásával kapcsolatos további tudnivalókat lásd: [Szabályozás – GYIK](./hr-admin-integration-throttling-faq.md).
 
   ![429-as hibatípus a HcmWorkerBaseEntity esetében.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -101,7 +104,7 @@ Ha a Dataverse virtuális táblára irányuló Power BI jelentés készítése s
 4. Bontsa ki az **Entitások** csomópontot a navigátor ablakban.
 5. A keresési mezőbe írja be: **mshr_hcmworkerbaseentity**, majd válassza ki az entitást.
 6. Válassza az **Adatok átalakítása** elemet.
-7. A Power Query Editor ablakban válassza a **Speciális szerkesztő** lehetőséget.
+7. Ban,-ben Power Query Szerkesztő ablak, válassza ki **Haladó szerkesztő**.
 8. A **Speciális szerkesztő** ablakban frissítse a lekérdezést úgy, hogy az alábbihoz hasonló legyen, és szükség szerint adja hozzá vagy távolítsa el az oszlopokat a tömbhöz.
 
    ```
@@ -113,14 +116,14 @@ Ha a Dataverse virtuális táblára irányuló Power BI jelentés készítése s
    in
      selectedWorkerBaseEntityColumns
    ```
-   ![A lekérdezés frissítése a Power Query Editor speciális szerkesztőjével.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
+   ![Frissítse a lekérdezést a Speciális szerkesztőben Power Query Szerkesztő.](./media/HcmWorkerBaseEntityPowerQueryEditor.png)
 
 9. Válassza a **Kész** lehetőséget.
 
    > [!NOTE]
    > Ha frissítés előtt 429-es típusú hibát kapott a lekérdezésből, lehet, hogy a lekérdezés sikeres befejezéséhez meg kell várnia az újrapróbálkozási időszakot.
 
-10. Kattintson a **Bezárás és alkalmazás** elemre a Power Query Editor műveletszalagján.
+10. Kattintson **Bezárás és alkalmazása** a Power Query Szerkesztő műveleti szalag.
 
 Ezután el lehet kezdeni a Power BI jelentésnek a virtuális táblában kiválasztott oszlopok alapján való megépítését.
 

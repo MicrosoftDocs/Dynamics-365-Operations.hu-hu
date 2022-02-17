@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 1fd15b5d664fead10949750678a2d3eab967af22
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781392"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063672"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services szolgáltatásból
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ez a témakör bemutatja, hogyan lehet engedélyezni a kettős írást a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
 
@@ -53,18 +53,18 @@ A kettős írás **Környezet részletes adatai** LCS-oldalról történő beál
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Összekapcsolás Power Platform-környezettel.":::
 
-8. Ha befejeződött az összekapcsolás, megjelenik egy hivatkozás. A hivatkozásra kattintva jelentkezzen be a Finance and Operations-környezet kettős íráshoz használatos felügyeleti területére. Itt beállíthatja az entitások leképezését.
+8. Ha befejeződött az összekapcsolás, megjelenik egy hivatkozás. A hivatkozás segítségével jelentkezzen be a Finance and Operations környezet kettős írású adminisztrációs területére. Itt beállíthatja az entitások leképezését.
 
 ## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Kettős írás beállítása meglévő Dataverse-környezetekhez
 
 Ha meglévő Dataverse-környezetben szeretne kettős írást beállítani, [támogatási jegyet](../../lifecycle-services/lcs-support.md) kell küldenie a Microsoftnak. A jegynek a következőket kell tartalmaznia:
 
-+ A Finance and Operations-környezet azonosítója.
++ Az Ön Finance and Operations környezeti azonosítója.
 + A környezet neve a Lifecycle Services szolgáltatásból.
 + A Dataverse-szervezetazonosító, vagy a Power Platform-környezetazonosító a Power Platform Adminisztrációs központjából. A jegyben kérje, hogy az azonosító legyen a Power Platform-integrációhoz használt példány.
 
 > [!NOTE]
-> A környezetek nem csatolhatók le az LCS használatával. Egy környezet kapcsolatának megszüntetése érdekében nyissa meg az **Adatintegráció** munkaterületet a Finance and Operations környezetben , majd válassza a **Csatolás megszüntetése** parancsot.
+> A környezetek nem csatolhatók le az LCS használatával. Egy környezet leválasztásához nyissa meg a **Adatintegráció** munkaterületet a Finance and Operations környezetben, majd válassza ki **Leválasztás**.
 
 ## <a name="linking-mismatch"></a>Kapcsolódási eltérés
 

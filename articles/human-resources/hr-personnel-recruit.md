@@ -1,6 +1,6 @@
 ---
 title: Állásjelöltek toborzása
-description: Ez a témakör azt írja le, hogyan lehet pályázókat toborozni a toborzáshoz a következőben:Dynamics 365 Human Resources
+description: Ez a témakör leírja, hogyan toborozhat jelölteket itt:Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: c613586302b4d03972c7558b6b63cd1be018d3b3
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 77d37cba84fcd6fb8f93da79b10db2db91d91db0
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7729171"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066600"
 ---
 # <a name="recruit-job-candidates"></a>Állásjelöltek toborzása
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -45,20 +48,20 @@ Ha toborzási kérelmeket szeretne benyújtani a Human Resources alkalmazásban,
 
 1. A **Személyzetkezelés** munkaterületen válassza a **Hivatkozások** lehetőséget.
 2. A **Beállítás** alatt válassza a **Humán erőforrás megosztott paraméterek** lehetőséget.
-3. A Toborzás lap Toborzás csoportjában állítsa A toborzási kérelmek engedélyezése **·** **·** **·** **"Igen" beállításra**.
+3. A **Toborzás** fül, alatt **Toborzás**, készlet **Toborzási kérelmek engedélyezése** nak nek **Igen**.
 
 ## <a name="add-a-recruiting-request-location"></a>Toborzási kérelem helyének hozzáadása
 
 Ha a szervezetnek több helyszíne van, hozzáadhatja őket, így a kérelmezők kiválaszthatják azt a helyet, ahol az új belépő dolgozik majd. A hely szerepelni fog az álláshirdetésben.
 
-1. A keresési sávon adja meg a **Toborzási kérelem** helyét.
+1. A keresősávba írja be **Toborzási kérelem helye**.
 2. Válassza az **Új** lehetőséget.
 3. A **Toborzási kérelem helye** mezőben adja meg a hely nevét.
 
     ![Toborzási kérelem helyének hozzáadása.](./media/hr-recruit-0a-add-location.png)
 
 4. A **Leírás** mezőben adja meg a hely leírását.
-5. A **Hely** alatt válassz a **Hozzáadás** lehetőséget. Ha **megjelenik az Új cím** párbeszédpanel, adja meg a hely címét.
+5. A **Hely** alatt válassz a **Hozzáadás** lehetőséget. Ha a **Új cím** párbeszédpanel jelenik meg, írja be a hely címét.
 
     ![Cím megadása.](./media/hr-recruit-0b-address.png)
 
@@ -71,7 +74,7 @@ A vezetők toborzási kérelmeket nyújthatnak be a Human Resources alkalmazásb
 
 1. Válassza az **Alkalmazotti önkiszolgáló rendszer** lehetőséget.
 2. Válassza ki a **Saját csapat** lapot.
-3. Toborzási **kérelem** kiválasztása.
+3. Válassza ki **Toborzási kérelem**.
 
     ![Toborzási kérelem indítása.](./media/hr-recruit-1-request-to-recruit.png)
 
@@ -158,11 +161,11 @@ Ha a szervezet integrált egy másik alkalmazást a toborzási kérelmek kezelé
 
 Ha készen áll egy jelölt felvételére, kövesse ezt az eljárást a jelölt alkalmazottá való átalakításához.
 
-1. A Pályázó **lapon válassza a Felvétel** **·** lehetőséget.
+1. A **Jelölt** oldal, válassza ki **Bérel**.
 
     ![Jelentkező felvétele.](./media/hr-recruit-11-hire.png)
 
-2. Az Új **dolgozó felvétele lapon, a Részletek területen töltse ki az összes** **·** mezőt.
+2. A **Vegyél fel új dolgozót** oldal, alatt **Részletek**, töltse ki az összes mezőt.
 
     ![Új felvétel adatainak megadása.](./media/hr-recruit-12-hire-new-worker.png)
 
@@ -177,7 +180,7 @@ Ha készen áll egy jelölt felvételére, kövesse ezt az eljárást a jelölt 
 
 Ha úgy dönt, hogy nem vesz fel jelöltet, kövesse ezt az eljárást, hogy távolítsa el őket az ellenőrzési folyamatból. 
 
-1. A Pályázó **lapon válassza a Nem felvétel** **·** lehetőséget.
+1. A **Jelölt** oldal, válassza ki **Ne béreljen**.
 
     ![Nem vesz fel jelentkezőt.](./media/hr-recruit-13-do-not-hire.png)
 
@@ -188,7 +191,7 @@ Ha úgy dönt, hogy nem vesz fel jelöltet, kövesse ezt az eljárást, hogy tá
 
 Szükség esetén a felvétel után elbocsáthat egy jelöltet. Előfordulhat például, hogy egy jelölt elutasítja az ajánlatot, vagy nem jelenik meg az első napon.
 
-- A Jelölt **lapon válassza a Pályázó** **elbocsátása** lehetőséget.
+- A **Jelölt** oldal, válassza ki **A jelölt elbocsátása**.
 
     ![Jelölt elutasítása.](./media/hr-recruit-14-dismiss-candidate.png)
 

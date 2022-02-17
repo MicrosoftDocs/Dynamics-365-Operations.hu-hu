@@ -2,7 +2,7 @@
 title: Új webhelyoldal hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet egy új webhelyoldalt hozzáadni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: psimolin
-ms.date: 04/14/2020
+ms.date: 02/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4b031431499eba0e109ac04dc46ec187250eba694284864bf78bb1f90265d788
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: e0c2a73ae9e85cb299e7cb6fc70562659cdfadc5
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725386"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090719"
 ---
 # <a name="add-a-new-site-page"></a>Új webhelyoldal hozzáadása
 
@@ -33,11 +33,11 @@ Miután létrehozott sablonokat és töredékeket a webhelyhez, a következő l�
 
 Az új oldalhoz egy sablon vagy egy elrendezés használható. A további tudnivalókat lásd: [Sablonok és elrendezések áttekintése](templates-layouts-overview.md).
 
-## <a name="page-name"></a>Oldal neve
+## <a name="specify-the-page-name"></a>Adja meg az oldal nevét
 
-Az oldal nevének egyedinek kell lennie az oldalon. Leírónak kell lennie, hogy könnyen megtalálja azt, és mások tudják, hogy mire szánták a lapot. Gondosan válassza ki a lap nevét, mert a későbbiekben nem módosítható.
+Az oldal nevének egyedinek kell lennie a webhelyen, és leíró jellegűnek kell lennie, hogy könnyen megtalálhassa, és mások tudják, mire szánják az oldalt. Később átnevezheti az oldalt, ha szerkeszti, majd kiválasztja a toll szimbólumot az oldal neve mellett a tulajdonságpanelen.
 
-## <a name="page-url"></a>Oldal URL-címe
+## <a name="specify-the-page-url"></a>Adja meg az oldal URL-jét
 
 Lehetőség van az új oldal URL-címének megadására is. Az oldalak létrehozásakor megadhatja a teljes URL-cím alapjául szolgáló karakterláncot. Ez a karaktersorozat ismert relatív URL vagy URL alkategória néven is. A program ezt követően egy teljes URL-címet generál, és az új oldalt hozzárendeli a program az URL alkategória alapján. Később a lap közzététele előtt módosíthatja az URL alkategóriát. További tudnivalókkal kapcsolatban lásd: [Weblap URL-címének létrehozása](create-page-URL.md).
 

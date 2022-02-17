@@ -1,6 +1,6 @@
 ---
-title: Pénzügyi információk konfigurációja - 10.0.20-as és újabb verzió
-description: Ez a témakör leírja, hogyan kell konfigurálni a rendszert a pénzügyi információkban elérhető lehetőségek használatára a 10.0.20-as és újabb verziókban.
+title: Finance Insights konfigurálása – 10.0.20 és újabb verzió
+description: Ez a témakör bemutatja, hogyan konfigurálhatja a rendszert a Finance Insights 10.0.20-as és újabb verzióiban elérhető képességeinek használatára.
 author: ShivamPandey-msft
 ms.date: 06/16/2021
 ms.topic: article
@@ -16,20 +16,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-06-03
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 8ff20334445fba1db435d7005c4ca9ba18f97f72
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: cea6258d3a99ba33e73acd2508ec7b6c11d15859
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968962"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061754"
 ---
-# <a name="configuration-for-finance-insights---version-10020-and-later"></a>Pénzügyi információk konfigurációja - 10.0.20-as és újabb verzió
+# <a name="configuration-for-finance-insights---version-10020-and-later"></a>Finance Insights konfigurálása – 10.0.20 és újabb verzió
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-A pénzügyi információk egyesítik a Microsoft és az Azure funkcióit, és hatékony előrejelzési eszközöket biztosítanak Dynamics 365 Finance Dataverse a AI Builder szervezethez. Ez a témakör leírja, hogyan kell konfigurálni a 10.0.20-as verziót, hogy a rendszer használni tudja a Pénzügyi Dynamics 365 Finance információkban elérhető lehetőségeket.
+
+A Finance Insights egyesíti a Microsoft funkcionalitását Dynamics 365 Finance val vel Dataverse, Azure és AI Builder hogy hatékony előrejelzési eszközöket biztosítson szervezete számára. Ez a témakör a konfigurálást ismerteti Dynamics 365 Finance 10.0.20-as verzió, hogy a rendszere használni tudja a Finance Insights szolgáltatásban elérhető képességeket.
 
 > [!NOTE]
 > Az ebben a témakörben ismertetett konfigurációs lépések csak a Finance 10.0.20-as és későbbi verzióira érvényesek. "A Finance Insights 10.0.19-es és korábbi verzióinak beállításával kapcsolatosan lásd: [Konfiguráció a Finance Insights alkalmazáshoz – 10.0.19 verzióig](configure-for-fin-insites.md).
@@ -38,9 +38,9 @@ A pénzügyi információk egyesítik a Microsoft és az Azure funkcióit, és h
 
 Kövesse az alábbi lépéseket a környezetek telepítéséhez.
 
-1. A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban hozzon létre vagy frissítsen egy Finance környezetet. A környezethez a Pénzügyi és műveleti alkalmazásoknak a 10.0.20-as vagy újabb verziójára van szükség.
+1. A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban hozzon létre vagy frissítsen egy Finance környezetet. A környezethez a Finance and Operations alkalmazások 10.0.20-as vagy újabb verziója szükséges.
 2. A környezetnek magas rendelkezésre állású (HA) környezetnek kell lennie a tesztkörnyezetben. (Az ilyen típusú környezetet 2. szintű környezetnek is nevezik.) További információ: [Környezettervezés](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
-3. Ha a Finance Insights beállítása egy tesztkörnyezetben történik, lehet, hogy a termelési adatokat az adott környezetbe kell másolnia, hogy az előrejelzések működjenek. Az előrejelzési modell több évnyi adatból használatával készít előrejelzéseket. A Contoso bemutató adatai nem tartalmaznak elég előzményadatot az előrejelzési modell megfelelő képzéséhez. 
+3. Ha a Finance Insights beállítása egy tesztkörnyezetben történik, lehet, hogy a termelési adatokat az adott környezetbe kell másolnia, hogy az előrejelzések működjenek. Az előrejelzési modell több évnyi adatból használatával készít előrejelzéseket. A Contoso bemutató adatai nem tartalmaznak elegendő előzményadatot az előrejelzési modell megfelelő betanításához. 
 
 ## <a name="configure-dataverse"></a>Dataverse konfigurálása
 
@@ -126,7 +126,7 @@ Ha az előző alkalmazások egyikét sem találja, próbálkozzon az alábbi lé
         - **Teljesítmény** – Javasoljuk, hogy a **Standard** lehetőséget válassza.
         - **Fiók fajtája** – A **StorageV2** lehetőséget kell választania.
 
-    3. A **Speciális beállítások** párbeszédpanel **Data Lake Storage Gen2** lehetőséghez válassza az **Engedélyezés** elemet a **Hierarchikus névterek** funkció alatt. Ha nem engedélyezi ezt a funkciót, nem használhatja fel a Pénzügy és művelet alkalmazások által írt adatokat olyan szolgáltatások, mint például az Power BI adatáramlás használatával.
+    3. A **Speciális beállítások** párbeszédpanel **Data Lake Storage Gen2** lehetőséghez válassza az **Engedélyezés** elemet a **Hierarchikus névterek** funkció alatt. Ha nem engedélyezi ezt a funkciót, akkor nem tudja felhasználni azokat az adatokat, amelyeket a Finance and Operations alkalmazások olyan szolgáltatások használatával írnak, mint pl.Power BI adatfolyamok.
     4. Válassza a **Vélemény és létrehozás** lehetőséget. A központi telepítés befejezése után az új erőforrás megjelenik az Azure-portálon.
     5. Nyissa meg a létrehozott tárfiókot.
     6. A bal oldali menüben válassza a **Hívóbetű** lehetőséget.
@@ -752,6 +752,6 @@ A bővítmény telepítése eltarthat néhány percig.
 
 ## <a name="feedback-and-support"></a>Visszajelzés és támogatás
 
-Ha visszajelzést szeretne küldeni, vagy segítségre van szüksége, e-mailben küldje el a [pénzügyi](mailto:fiap@microsoft.com) információkat.
+Ha szeretne visszajelzést adni, vagy támogatásra van szüksége, küldjön egy e-mailt a következő címre: [Pénzügyi betekintések](mailto:fiap@microsoft.com).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

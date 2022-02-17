@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 06682a81b09f90de0ef5eb1b656338e634f229db
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 1fe7ce7eafdec175e3395a6ac37b33cb2bb8dbda
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728881"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066675"
 ---
 # <a name="manage-buy-and-sell-leave-policies"></a>Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

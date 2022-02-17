@@ -2,7 +2,7 @@
 title: A felhasználói élmény testreszabása
 description: Ez a témakör bemutatja, hogyan lehet személyre szabni az alkalmazást.
 author: jasongre
-ms.date: 11/08/2021
+ms.date: 01/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,16 +15,20 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6256765c41ff128b067cda9107c790691c5b376a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: 840a68d506664043c9affb67e801429e0594f0bd
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777985"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075422"
 ---
 # <a name="personalize-the-user-experience"></a>A felhasználói élmény testreszabása
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet személyre szabni az alkalmazást, illetve a következő témákat is taglalja: 
 
@@ -107,7 +111,7 @@ Ha több módosítást is szeretne végrehajtani egy lapon, illetve olyan módos
 - Bármely oldal Művelet panelén válassza az **Oldal személyre szabása** csoportot a **Testreszabás** csoportban a **Beállítások** lapon.
 - Válassza ki a navigációs sávon a **Beállítások** gombot (a fogaskerék szimbólum), majd válassza a **Személyre szabás** lehetőséget.
 
-[![ Személyre szabási eszköztár.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
+[![Személyre szabási eszköztár.](./media/restyledPersonalizationToolbar.png)](./media/restyledPersonalizationToolbar.png)
 
 #### <a name="navigating-the-page"></a>Navigálás a lapon
 
@@ -120,7 +124,9 @@ A következő eszközök érhetők el a **Személyre szabása** eszköztáron:
 - A **Kijelölés** eszközzel egy elemet kijelölve megnyithat egy párbeszédablakot, és módosíthatja az elem tulajdonságait. Az eszköz használatához válassza ki az eszköztárban a **Kijelölés** gombot, majd jelölje ki a kívánt elemet. Az elem tulajdonságok ablaka jelenik meg, ahol az elem bármilyen tulajdonsága módosítható. Megismételheti a folyamatot más elemekkel is, amelyek a lapon testre szabhatók. Bizonyos esetekben előfordulhat, hogy egyes testreszabható tulajdonságok nem érhetők el. Kötelező mezőt például nem tud zárolni.
 - Válassza ki az **Elrejtés** eszközt egy elem és elrejtéséhez a lapon. Az eszköz használatához válassza ki az eszköztárban az **Elrejtés** gombot, majd rejtse el a kívánt elemet. Ha használja az **Elrejtés** eszközt, minden éppen rejtett elem látható lesz, de egy árnyékolt tárolóban jelennek meg. Ezután kijelölheti, hogy az elem látható legyen. Ha szeretné megtekinteni, hogyan fog kinézni a lap az elemek elrejtésével, váltson át egy másik személyre szabási eszközre vagy zárja be a személyre szabási eszköztárat.
 - Használja a **Mezők hozzáadása** eszközt az új mezők laphoz való felvételére. Az eszköz használata esetén csak az oldal definíciójának részét képező mezőket veheti fel. Új mezők, amelyek nem részei az aktuális oldaldefiníciónak, létrehozásával kapcsolatos további tudnivalókat lásd: [Egyéni mezők létrehozása és használata](user-defined-fields.md). Miután kiválasztotta a **Mezők hozzáadása** gombot az eszközsora először válasszon adott rács vagy szakasz, ahová mező hozzáadását szeretné. A kijelölt ráccsal vagy szakasszal kapcsolatos mezők listája egy párbeszédpanelen jelenik majd meg. A párbeszédpanelen válassza ki a hozzáadni kívánt mezőket a **Javasolt mezők** vagy az **Összes mező** listából. A kívánt mezők kiválasztása után válassza a **Frissítés** lehetőséget. Korábban hozzáadott mező eltávolításához meg kell ismételni a folyamatot, de a mező a párbeszédpanelen ne legyen kijelölve.
-    - A **Javasolt mezők** lista azokat a mezőket jeleníti meg, amelyek korábban hozzáadtak a szervezet más felhasználóihoz. A mezők listája az **Ajánlás kötegelt feladat** ismétlődési gyakorisága alapján frissül. Hasonló tapasztalat áll rendelkezésre új szűrőmezőknek a lap Szűrő ablaktáblája segítségével való hozzáadása esetén.
+
+    A **Javasolt mezők** lista azokat a mezőket jeleníti meg, amelyek korábban hozzáadtak a szervezet más felhasználóihoz. A mezők listája az **Ajánlás kötegelt feladat** ismétlődési gyakorisága alapján frissül. Hasonló tapasztalat áll rendelkezésre új szűrőmezőknek a lap Szűrő ablaktáblája segítségével való hozzáadása esetén.
+
 - Használja az **Áthelyezés** eszközt, ha egy elemet ki szeretne jelölni és az elemek jelenlegi csoportján belül egy másik helyre szeretné áthelyezni. Ne feledje, hogy a szülőcsoporton kívülre nem helyezhető át elem. Az eszköz használatához válassza ki az eszköztárban az **Áthelyezés** gombot, majd helyezze át a kívánt elemet. Amikor kiválaszt egy elemet, az alkalmazás meghatározza, ha azokat a helyeket, ahová az elemet át lehet helyezni. Ezek a helyek *lerakási zónákként* ismertek. Az aktuális csoporton belül az elem húzásakor minden lerakási zóna mellett a terület, ahová az elem húzható színes, félkövér sorként jelenik meg.
 - Válassza ki a **Kihagyás** eszközt egy elem eltávolítására az oldal billentyűparancs-sorozatából Ha bejelöli a **Kihagyás** gombot az eszközsoron, minden éppen kihagyott elem látható lesz, és egy árnyékolt tárolóban jelennek meg. Interaktívan eltávolíthat vagy hozzáadhat mezőket a lapsorrendhez.
 - Használja a **Megjelenítés a fejlécben** eszközt, ha azt szeretné, hogy az elem a gyorslap összesítő lapján megjelenjen. Ha kiválasztja a **Megjelenítés a fejlécben** gombot az eszközsoron , összesítő mezők szerepelnek az árnyékolt tároló bejelölt összes mezőt. Interaktívan mezők felvétele az összesítő gyorslapre, és a mezők eltávolítása összegző mezőinek a kiválasztásával.
@@ -148,11 +154,14 @@ Egyes listákat tartalmazó lapok esetében a **Hozzáadás munkaterülethez** t
 > [!NOTE]
 > Ha a [Mentett nézetek](saved-views.md) funkció be van kapcsolva, a munkaterületre beküldött tartalom közvetlenül egy nézethez kapcsolódik. A nézet lekérdezése az adatok munkaterületre való lekérésére szolgál, és a munkaterületen található megfelelő csempe vagy hivatkozás megnyitja a nézethez tartozó lapot, úgy, hogy a nézet lekérdezése és a testreszabások alkalmazva vannak rá. Ha a nézet frissül, akkor az új nézet-definícióhoz igazodnak a megfelelő munkaterület elemei.
 
-[![ Hozzáadás munkaterületenként.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
+[![Hozzáadás munkaterületenként.](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
 - Lista hozzáadásához a munkaterülethez, először rendezni és szűrni kell a listát a lapon, hogy az adatok a munkaterületen megjeleníteni kívánt módon jelenjenek meg. (Ha a **Mentett nézetek** funkció be van kapcsolva, akkor nem folytathatja addig, amíg nem menti azokat a nézeteket, amelyekhez ilyen feltételek tartoznak). Ezután válassza a **Hozzáadás munkaterülethez** lehetőséget. Válassza ki a munkaterületez, majd kattintson a **Prezentáció** mezőben a **Lista** elemre. Miután kijelölte **Konfigurálást**, megjelenik egy párbeszédpanel, ahol kiválaszthatja az oszlopok, amelyek jelenjenek meg a listában a munkaterületen. Megadhatja a munkaterületen a listához használandó címkét.
 - A munkaterület címének hozzáadásához először szűrnie kell a listát az oldalon, hogy az összesítendő adatokat megjelenítse – vagy azokat, amikhez gyors elérést szeretne. (Ha a **Mentett nézetek** funkció be van kapcsolva, akkor nem folytathatja addig, amíg nem menti azokat a nézeteket, amelyekhez ilyen feltételek tartoznak). Ezután válassza a **Hozzáadás munkaterülethez** lehetőséget. Válassza ki a munkaterületez, majd kattintson a **Prezentáció** mezőben a **Cím** elemre. Miután kijelölte a **Konfigurálást**, megjelenik egy párbeszédpanel, ahol megadhatja a munkaterületen található csempe használandó címkéjét. Megadhatja azt is, hogy a csempén kell-e egy számának megjelennie. Miután hozzáadta a csempét a munkaterülethez kiválaszthatja, hogy az aktuális lapot megnyissa a munkaterületről. Ezt követően megtekintheti a csempéhez társított szűrt listát.
-- Hivatkozás hozzáadásához egy munkaterülethez, először a terméklista szűrése az oldalon, hogy az Ön érdeklő adatokat mutassa. (Ha a **Mentett nézetek** funkció be van kapcsolva, akkor nem folytathatja addig, amíg nem menti azokat a nézeteket, amelyekhez ilyen feltételek tartoznak). Ezután válassza a **Hozzáadás munkaterülethez** lehetőséget. Válassza ki a munkaterületez, majd kattintson a **Prezentáció** mezőben a **Hivatkozás** elemre. Miután kijelölte a **Konfigurálást**, megjelenik egy párbeszédpanel, ahol megadhatja a hivatkozáshoz használandó címkét. Megadhat címkét az új szakaszhoz, amely ezt a hivatkozást tartalmazza.
+- Hivatkozás hozzáadásához egy munkaterülethez, először a terméklista szűrése az oldalon, hogy az Ön érdeklő adatokat mutassa. (Ha a **Mentett nézetek** funkció be van kapcsolva, akkor nem folytathatja addig, amíg nem menti azokat a nézeteket, amelyekhez ilyen feltételek tartoznak). Ezután válassza a **Hozzáadás munkaterülethez** lehetőséget. Válassza ki a munkaterületez, majd kattintson a **Prezentáció** mezőben a **Hivatkozás** elemre. Miután kijelölte a **Konfigurálást**, megjelenik egy párbeszédpanel, ahol megadhatja a hivatkozáshoz használandó címkét. Opcionálisan megadhat egy címkét is annak a szakasznak, ahol ez a hivatkozás elhelyezhető. Ha ez a szakasz nem létezik, akkor új szakasz jön létre.
+
+> [!NOTE]
+> A 10.0.25-ös verziótól kezdve a lista, a csempének vagy a hivatkozásnak a konfigurálásakor előfordulhat, hogy ki kell választania azokat a munkaterület-nézeteket is, amelyekhez hozzá szeretné adni az elemet, ha **(Előnézet) Mentett nézetek támogatása a munkaterületekhez** funkció engedélyezve van. Az elérhető munkaterület-nézetek megjelennek a **Munkaterület-beállítások** része mindegyiknek **Beállítás** párbeszédablak. 
 
 Miután egy lista, a csempe vagy a hivatkozás egy munkaterülethez hozzá lett adva, a munkaterületet megnyithatja, és az elemeit igény szerint átrendezheti.
 
@@ -170,7 +179,7 @@ Az irányítópult legtöbbször az első oldal, amelyet az alkalmazás megnyit�
 Az irányítópulton elérhető egyedi személyre szabási lehetőséggel adhat hozzá lapokat. 
 
 - Ha a **Teljes oldalas alkalmazások** funkció ki van kapcsolva, akkor új csempét adhat hozzá, ha a jobb gombbal rákattint egy elemre az irányítópulton, majd kiválasztja a **Hozzáadás a munkaterülethez** lehetőséget. Egy új munkaterület lap jön létre az irányítópult alsó részén. Ez az új munkaterület csempe átnevezhető. Hozzáadhat listákat, csempéket és hivatkozásokat a munkaterülethez a témakörben itt leírtak szerint: [Csempék, listák és hivatkozások hozzáadása munkaterülethez](personalize-user-experience.md#adding-tiles-lists-and-links-to-a-workspace).
-- Ha a **Teljes oldalas alkalmazások** funkció be van kapcsolva, akkor új csempét adhat hozzá, ha a jobb gombbal rákattint egy elemre az irányítópulton, majd kiválasztja az **Alkalmazás hozzáadása** lehetőséget. A párbeszédpanelen válassza ki, hogy szeretne-e csempét hozzáadni egy új munkaterülethez, vagy egy olyan csempét, amelynek tartalma a Power Apps ből származik vagy egy webhelyről. Ezután a lépéseket követve konfigurálja a kiválasztott lehetőséget. Egy új csempe jön létre az irányítópult alsó részén. A beágyazott alkalmazások hozzáadásával, szerkesztésével, törlésével és megosztásával kapcsolatos további információkért lásd: [Vászonalkalmazások beágyazása a Power Apps helyről](embed-power-apps.md) és [Harmadik féltől származó alkalmazások beágyazása](embed-website.md).
+- Ha a **Teljes oldalas alkalmazások** funkció be van kapcsolva, akkor új csempét adhat hozzá, ha a jobb gombbal rákattint egy elemre az irányítópulton, majd kiválasztja az **Alkalmazás hozzáadása** lehetőséget. A párbeszédpanelen válassza ki, hogy szeretne-e csempét hozzáadni egy új munkaterülethez, vagy egy olyan csempét, amelynek tartalma a Power Appsből származik vagy egy webhelyről. Ezután a lépéseket követve konfigurálja a kiválasztott lehetőséget. Egy új csempe jön létre az irányítópult alsó részén. A beágyazott alkalmazások hozzáadásával, szerkesztésével, törlésével és megosztásával kapcsolatos további információkért lásd: [Vászonalkalmazások beágyazása a Power Apps helyről](embed-power-apps.md) és [Harmadik féltől származó alkalmazások beágyazása](embed-website.md).
 
 ## <a name="sharing-personalizations"></a>Személyre szabások megosztása
 
@@ -221,7 +230,7 @@ Ha nincsenek engedélyezve a mentett nézetek, akkor a személyre szabások más
 A személyre szabás egy másik módja az exportálás és importálás. Az egyes felhasználók, illetve a nevükben eljáró rendszergazdák ezt a módszert használhatják a személyre szabásuk vagy nézeteik exportálására, majd átadhatja az exportált fájlt más felhasználóknak importálás céljából. A felhasználók exportált személyre szabásokat adhatnak meg egy olyan felhasználónak, aki rendszergazdai jogosultságokkal rendelkezik, és ezt követően a **Személyre szabás** felügyelete lapon alkalmazhatja a személyre szabási fájlt egyszerre több felhasználóra is.
 
 > [!IMPORTANT]
-> Mivel a személyre szabás továbbra is fennáll a frissítések között, felesleges újra importálni a személyre szabásokat a szolgáltatás frissítése után vagy bármikor.   
+> Mivel a személyre szabás a frissítések során is fennáll, szükségtelen és erősen nem ajánlott az összes személyre szabás újraimportálása a szolgáltatás frissítése után vagy bármikor.
 
 #### <a name="export"></a>Export
 
@@ -271,11 +280,8 @@ Azon vevők esetében, akik bekapcsolták a **Mentett nézetek** funkciót, teki
 Azoknak a vevőknek, akik még nem kapcsolták be a [Mentett nézetek](saved-views.md) lehetőséget, ennek a weboldalnak négy lapja van:
 
 - **Alkalmazás** – Importálhat vagy kiválaszthat egy személyre szabási beállítást egy vagy több felhasználó számára. A személyre szabás alkalmazásához egy vagy több felhasználóra, először jelölje ki a szerepkört és az adott szerepkörrel rendelkező felhasználókat. Válasszon egy meglévő személyre szabást vagy importáljon egy személyre szabási fájlt a kiválasztott felhasználókra történő alkalmazáshoz. A rendszer ellenőrzi a személyre szabást, és alkalmazza az összes kijelölt felhasználóra, amikor azok legközelebb megnyitják a kijelölt lapot.
-
 - **Törlés** – A lap vagy a munkaterület összes személyre szabása egy vagy több felhasználó esetében is törölhető. Először válasszon egy oldalt vagy munkaterületet, hogy megtekinthesse azon felhasználók listáját, akik személyre szabták ezt az oldalt. Ezután válassza ki azokat a felhasználókat, akiknek az adott oldalhoz vagy munkaterülethez tartozó személyre szabását törölni kell, majd válassza a **Törlés** elemet. A kiválasztott felhasználók által a kiválasztott lapra vagy munkaterületre alkalmazott valamennyi személyre szabási beállítás törlődik. Ez a művelet nem vonható vissza. Ugyanakkor ha a lapnak vagy a munkaterületnek létezik mentett személyre szabási beállítása, ez a beállítás visszaimportálható.
-
 - **Felhasználók** – Válasszon egy felhasználót, hogy megtekinthesse a felhasználó által személyre szabott oldalak listáját. Ezután kiválaszthatja, hogy engedélyezze vagy letiltsa a kiválasztott felhasználónak a személyre szabott képességek használatát bizonyos oldalakon vagy az egész rendszerben. Emellett törölhet, importálhat és exportálhat személyre szabásokat a felhasználó számára. Ezenkívül a felhasználó számára alaphelyzetbe állíthatók a funkció-ábrafeliratok. Ebben az esetben, ha a felhasználó korábban elutasította az új funkciókat bemutató előugró ablakokat, ezek legközelebb újra megjelennek a felhasználó számra
-
 - **Rendszer:** – Itt tudja ideiglenesen kikapcsolni a rendszerben személyre szabásokat az összes felhasználó számára. Ebben az esetben minden személyre szabás minden felhasználónál törlődik, és az összes lap visszaáll az alapértelmezett állapotába. Amennyiben később újra bekapcsolja a személyre szabásokat, a rendszer minden személyre szabást újra alkalmaz. Véglegesen is törölheti a rendszerben szereplő személyes beállításokat az összes felhasználó számára. A törölt személyes beállításokat nem lehet visszaállítani. Ezért a lépés végrehajtása előtt ellenőrizze, hogy exportálta mindazokat a személyes beállításokat, amelyeket később esetleg importálni szeretne.
 
 ## <a name="personalizing-inventory-dimensions"></a>A készletdimenziók személyre szabása

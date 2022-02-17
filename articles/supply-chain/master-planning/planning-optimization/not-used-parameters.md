@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 55b174b426b02e59f75d58e9a6cf32991089ca22
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 01edccbf1a50264b3867e303cbca44eb1b1d7dd9
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728955"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087499"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>A tervezésoptimalizálás által nem használt paraméterek
 
@@ -60,7 +60,7 @@ A tervezésoptimalizálás nem használja a következő paramétereket és beál
 
 - **Általános** Gyorslap:
 
-  - **Pozitív napok – a** pozitív napok értéke nincs *·* használva. A tervezési optimalizálás során a pozitív napok végtelennek számítanak.
+  - **Pozitív napok** - A *Pozitív napok* érték nincs felhasználva. A tervezési optimalizálással a pozitív napokat végtelennek tekintjük.
   - **Aktuális készletfelhasználás** – az *Aktuális készletfelhasználás* támogatása függőben van.
   - **A megadott anyagjegyzék- vagy receptúraverzió használata** – a *Képletverziók társ- vagy melléktermékekkel* támogatása függőben van.
   - **A megadott útvonalverzió használata** – az *Igény megadott darajegyzék- vagy meghatározott útvonal-követelményekkel* támogatása függőben van.
@@ -160,6 +160,10 @@ A tervezésoptimalizálás nem használja a következő paramétereket és beál
   - **A számított késés hozzáadása a szükségletdátumhoz** (a **Tervezett termelési rendelések** szakaszban) – a *Számított késések* támogatása függőben van.
   - **A számított késés hozzáadása a szükségletdátumhoz** (a **Tervezett átvitel** szakaszban) – a *Számított késések* támogatása függőben van.
   - **A számított késés hozzáadása a szükségletdátumhoz** (a **Tervezett kanban** szakaszban) – a *Számított késések* támogatása függőben van.
+
+- **Akció üzenet** FastTab:
+
+  - **Az elhalasztott dátum frissítése kötelező dátumként** - Ez a paraméter a Tervezési optimalizálásnál megszűnik.
 
 - **Sorrendbe állítás** gyorslap:
 

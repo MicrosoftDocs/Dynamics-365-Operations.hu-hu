@@ -1,6 +1,6 @@
 ---
 title: Feladatkezelés
-description: Ez a témakör bemutatja a Microsoft által elérhető feladatkezelési funkciókat Dynamics 365 Human Resources.
+description: Ez a témakör a Microsoftban elérhető feladatkezelési funkciókat ismerteti Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 12/20/2021
 ms.topic: article
@@ -15,178 +15,180 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-29-11
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 614f37236bbd0239925e37ebf29f59ac006d09cd
-ms.sourcegitcommit: 4f84540e6121ca3d5ae52ee07e414116d423cefa
+ms.openlocfilehash: 727e1eb75f807d84f088cf3dd139eb094aa76618
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/03/2022
-ms.locfileid: "7948807"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087217"
 ---
 # <a name="task-management"></a>Feladatkezelés
 
-A feladatkezelés segítségével olyan feladatokat hozhat létre, amelyekhez az alkalmazottak felvételéhez (a hajó fedélzetére), felmondásához és az átvitelhez (átálláshoz) szükséges feladatokat kell elvégezni. A feladatkezelés az ellenőrzőlisták fogalmát használja. Az ellenőrzőlista tartalmazza a be- és kijelentkezési, illetve az átállási feladatok listáját. A feladatkezelés az ellenőrzőlisták segítségével csoportosítja a feladatokat, és hozzárendeli azokat az egyes személyekhez és csoportokhoz. Az ellenőrzőlista-funkciók hasonlóak a be- és kijelentkezés, valamint az átmenetek esetéhez.
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+A Feladatkezelés lehetővé teszi olyan feladatok létrehozását, amelyeket el kell végezni az alkalmazottak felvételéhez (beépített), felmondásához (offboard) és áthelyezéséhez (átmenet). A feladatkezelés az ellenőrző listák fogalmát használja. Az ellenőrző lista a belépési, kilépési vagy átállási feladatok listája. A feladatkezelés ellenőrzőlisták segítségével csoportosítja a feladatokat, és hozzárendeli azokat egyénekhez vagy csoportokhoz. Az ellenőrzőlista-funkciók a be- és kilépéshez és az átmenetekhez hasonlóak.
 
 ## <a name="checklist-overview"></a>Ellenőrzőlista áttekintése
 
-Az ellenőrzőlista feladatok egy csoportja. Az ellenőrzőlisták rugalmasan csoportosíthatók a feladatok, és felhasználhatók (például további alkalmazottak felvétele esetén). Annyi ellenőrzőlistát hozhat létre, amennyit csak szeretne, és ugyanazt a feladatot több ellenőrzőlistához rendelheti hozzá.
+Az ellenőrző lista feladatok csoportja. Az ellenőrzőlisták rugalmas módot kínálnak a feladatok csoportosítására, és újra felhasználhatók (például további alkalmazottak felvételekor). Annyi ellenőrzőlistát hozhat létre, amennyit csak szeretne, és ugyanazokat a feladatokat több ellenőrzőlistához is hozzárendelheti.
 
 ### <a name="examples"></a>Példák
 
-Az alábbi példák bemutatják, hogy hogyan használhatók az ellenőrzőlisták a berakodási folyamatban. Mivel azonban az ellenőrzőlista a be- és kijelentkezési, valamint az átállási funkciókhoz is hasonló, az adatok a külső és az áttérési folyamatokra is vonatkoznak.
+A következő példák bemutatják, hogyan használhatók fel az ellenőrző listák a bevezető folyamatban. Mivel azonban az ellenőrzőlista-funkciók a beépítéshez, a kilépéshez és az átmenetekhez hasonlóak, az információ a kilépési és átállási folyamatokra is vonatkozik.
 
-A berakodási folyamat részeként az emberi erőforrások (HR) szakemberek olyan feladatokat hozhatnak létre, amelyek nyomon követik a bejövő és a legutóbb felvett alkalmazottak haladását. Mivel a felvétel folyamata az alkalmazott beosztásától vagy földrajzi helyétől függően eltérő lehet, több, a felvételhez szükséges ellenőrzőlistát is létre lehet hozni a különböző felvételi helyzetek kezelésére.
+A bevezetési folyamat részeként a humánerőforrás (HR) szakemberei olyan feladatokat hozhatnak létre, amelyek nyomon követhetik a bejövő és nemrég felvett alkalmazottak felvételi folyamatát. Mivel a felvételi folyamat az alkalmazott pozíciójától vagy földrajzi elhelyezkedésétől függően változhat, több felvételi ellenőrzőlistát is létrehozhat a különböző felvételi helyzetekhez.
 
 **1. példa**
 
-Az Egyesült Államokban felvett valamennyi alkalmazottnak el kell elvégeznie bizonyos feladatokat, például az adóelőleg-képernyők kitöltését. Előfordulhat azonban, hogy a céges autó hozzárendelése csak a vezetői szintű munkatársakra vonatkozik. Ebben az esetben két bevezető ellenőrzőlistát lehet létrehozni: csak az Egyesült **Államokon alapuló alkalmazottakat és a** **vezetőket**. Ezt követően, amikor egy középső szintű vezetőt az Egyesült Államokban alkalmaznak, az egyesült államokbeli alkalmazottak ellenőrzőlistája lesz **kiválasztva**. Amikor azonban egy vezetőt az Egyesült Államokban alkalmaznak, mindkét ellenőrzőlista be van jelölve, hogy minden szükséges berakodható feladat be legyen fejezve.
+Minden egyesült államokbeli alkalmazottnak el kell végeznie olyan feladatokat, mint például az adólevonási űrlapok kitöltése. Előfordulhat azonban, hogy az olyan feladatok, mint például a céges autó kijelölése, csak a vezetői szintű alkalmazottakra vonatkozhatnak. Ebben az esetben két bevezető ellenőrző lista hozható létre: **USA-beli alkalmazottak** és **Csak vezetők**. Aztán amikor az Egyesült Államokban felvesznek egy középszintű menedzsert, a **USA-beli alkalmazottak** ellenőrzőlista van kiválasztva. Amikor azonban egy vezetőt alkalmaznak az Egyesült Államokban, mindkét ellenőrző lista kiválasztásra kerül annak biztosítására, hogy az összes szükséges bevezetői feladatot elvégezzék.
 
 **2. példa**
 
-Egy vállalatnál szezonális alkalmazottak és rendszeres, teljes munkaidős alkalmazottak is vannak. Bár bizonyos feladatok (például az új alkalmazott érkezésének ellenőrzése) mindkét típusú alkalmazottra vonatkoznak, néhány további feladat csak a rendes teljes munkaidős alkalmazottakra vonatkozik. Ebben az esetben két ellenőrzőlistát hozhat létre. Mindkét ellenőrzőlista a szezonális és a rendes teljes munkaidős alkalmazottakra vonatkozó feladatokat is tartalmazza, de csak egy ellenőrzőlista tartalmazza a rendszeres, teljes munkaidős alkalmazottakra jellemző feladatokat.
+Egy cégnek szezonális és teljes munkaidős alkalmazottai egyaránt vannak. Bár egyes feladatok (például az új munkavállaló érkezési idejének ellenőrzése) mindkét típusú munkavállalóra vonatkoznak, néhány további feladat csak a normál teljes munkaidős alkalmazottakra vonatkozik. Ebben az esetben két ellenőrző listát hozhat létre. Mindkét ellenőrző lista tartalmazza azokat a feladatokat, amelyek mind a szezonális, mind a normál teljes munkaidős alkalmazottakra vonatkoznak, de csak az egyik ellenőrzőlista tartalmazza azokat a feladatokat, amelyek a normál teljes munkaidős alkalmazottakra vonatkoznak.
 
 ## <a name="task-management-workspace"></a>Feladatkezelési munkaterület
 
-A Feladatkezelés munkaterülete felsorolja azokat a feladatokat, amelyek a berakodási, offboarding és áttérési folyamatokban egyes személyekhez **vannak** rendelve. Egy folyamathoz feladatok megtekintéséhez válassza ki a megfelelő lapot a bal felső sarokban: **Berakodva, Külső tervezés** **és** **Áttérések**. Alapértelmezés szerint csak hr-szakemberek férhetnek hozzá a **Feladatkezelés** munkaterülethez.
+A **Feladatkezelés** A munkaterület felsorolja az összes olyan feladatot, amelyet az egyénekhez rendeltek a be-, kilépési és átállási folyamatok során. Egy folyamat feladatainak megtekintéséhez válassza ki a megfelelő lapot a bal felső sarokban: **Beszállás**, **·**, vagy **Átmenetek**. Alapértelmezés szerint csak HR-esek férhetnek hozzá a **Feladatkezelés** munkaterület.
 
-A Felvétel lap tartalmaz egy Hamarosan induló listát, amely a bejövő alkalmazottakat és a legutóbb felvett alkalmazottakat **jeleníti** **·** **meg**. Mindkét listán csak egy alkalmazottat választhat. Amikor kiválaszt egy alkalmazottat, a lap jobb oldalán az adott alkalmazotthoz kapcsolódó összes feladat megjelenik a lap jobb oldalán. A Berakodva lap tartalmaz egy Minden feladat listát is, amely minden beérkező vagy legutóbb felvett alkalmazott **minden** **feladatát** megjeleníti. Végül tartalmazza a lejárt feladatok listáját és az aktuális felhasználóhoz rendelt feladatok listáját.
+A **Beszállás** lap tartalmazza a **Hamarosan kezdődő** lista, amelyen a bejövő alkalmazottak és a **Legutóbbi bérbeadások** lista, amely a nemrég felvett alkalmazottakat tartalmazza. Mindkét listában csak egy alkalmazottat választhat ki. Amikor kiválaszt egy alkalmazottat, az oldal jobb oldalán megjelenik az összes olyan feladat, amely az alkalmazott felvételével kapcsolatos. A **Beszállás** lap is tartalmaz egy **Minden feladat** lista, amely az összes bejövő vagy nemrég felvett alkalmazott összes feladatát mutatja. Végül tartalmazza a lejárt feladatok listáját és az aktuális felhasználóhoz rendelt feladatok listáját.
 
-Az Offboarding lap felsorolja azokat az alkalmazottakat, akik kilépnek a vállalatból, és listát tartalmaz azokról az alkalmazottakról, akik már **kilépett** a vállalatból. Mindkét listán csak egy alkalmazottat választhat. Alkalmazott kiválasztásakor az alkalmazott külső tevékenységével kapcsolatos összes feladat megjelenik. A Offboarding lap tartalmaz egy Minden feladat listát is, amely minden kilépést vagy kilépést tartalmazó alkalmazott **minden** **feladatát** megjeleníti. Végül tartalmazza a lejárt feladatok listáját és az aktuális felhasználóhoz rendelt feladatok listáját.
+A **Offboarding** A lap a vállalattól kilépő alkalmazottak listáját és a cégtől már kilépő alkalmazottak listáját tartalmazza. Mindkét listában csak egy alkalmazottat választhat ki. Amikor kiválaszt egy alkalmazottat, minden olyan feladat megjelenik, amely az adott alkalmazott kilépésével kapcsolatos. A **Offboarding** lap is tartalmaz egy **Minden feladat** lista, amely az összes kilépő vagy kilépő alkalmazott összes feladatát mutatja. Végül tartalmazza a lejárt feladatok listáját és az aktuális felhasználóhoz rendelt feladatok listáját.
 
-Az Átmenetek lap tartalmaz egy Minden feladat listát, amely minden olyan alkalmazott feladatát megjeleníti, aki beosztást fog módosítani, vagy aki **legutóbb** **módosította** a beosztásait. Megjelenik a lejárt feladatok listája és az aktuális felhasználóhoz rendelt feladatok listája.
+A **Átmenetek** lap tartalmaz egy **Minden feladat** lista, amely az összes pozíciót megváltoztató vagy a közelmúltban pozíciót váltott munkavállaló összes feladatát mutatja. Itt található a lejárt feladatok listája és az aktuális felhasználóhoz rendelt feladatok listája is.
 
-Az HR asszisztensek és vezetők mindhárom lapon a következő tevékenységeket használhatja:
+A HR-asszisztensek és vezetők mindhárom lapon a következő tevékenységeket hajthatják végre:
 
-- Ellenőrzőlista alkalmazása az alkalmazottra.
-- A feladat állapotának frissítése.
-- Feladat ismételt hozzárendelése.
-- A feladat határidőinek frissítése.
+- Alkalmazzon ellenőrző listát egy alkalmazottnak.
+- Frissítse a feladat állapotát.
+- Új feladat hozzárendelése.
+- Frissítse egy feladat esedékességi dátumát.
 
 > [!NOTE]
-> A Berakodva lap alapértelmezés szerint az elmúlt hét napban felvett **alkalmazottakat** jeleníti meg. A beállítás módosítása érdekében adjon meg egy időkeretet az Emberi erőforrások paraméterei lap Általános lapján a Legutóbbi **felvétel** **·** **mezőben**. A közelmúltbeli felvétellista adatai adott számú napra, hónapra vagy évre **vonatkoznak**. Az elmúlt 14 napban felvett alkalmazottak listájának megtekintéséhez például állítsa az Időszak mezőt **14**-re, az Egység mezőben pedig a **Napok** **·** **mezőt**.
+> Alapértelmezés szerint a **Beszállás** lapon az elmúlt hét napban felvett alkalmazottak láthatók. A beállítás módosításához a **Emberi erőforrás paraméterek** oldalon, a **Tábornok** lapon, a **Legutóbbi bérbeadások** mezőben adja meg az időkeretet. Az információ a **Legutóbbi bérbeadások** a lista adott számú napra, hónapra vagy évre vonatkozóan jeleníthető meg. Például az elmúlt 14 napban felvett alkalmazottak listájának megtekintéséhez állítsa be a **Időszak** mezőt **14** és a **Mértékegység** mezőt **Napok**.
 >
-> Az Emberi erőforrások paraméterei lapon frissítheti a kilépési és kilépési alkalmazottak listáinak dátumtartományát is, amelyek **az** **Offboarding lapon** jelennek meg.
+> A **Emberi erőforrás paraméterek** oldalon frissítheti a kilépő és kilépő alkalmazottak listájának dátumtartományát is **Offboarding** lapon.
 >
-> Ezek a beállítások a Személyzeti kezelés **munkaterületre is** vonatkoznak.
+> Ezek a beállítások a **Személyzeti menedzsment** munkaterület.
 
 ## <a name="setting-up-tasks"></a>Feladatok beállítása
 
-A feladatokat egyenként is létre lehet hozni, majd újra fel lehet használni őket több ellenőrzőlistán. Feladat létrehozásához válassza az Új lehetőséget a Feladatok lap **Berakodva** **beállítási** **lapján**.
+A feladatokat egyenként is létrehozhatja, majd több ellenőrzőlistában is felhasználhatja. Feladat létrehozásához a **Bevezetési beállítás** oldalon, a **Feladatok** lapon válassza ki **Új**.
 
-Közvetlenül is hozzá lehet adni feladatokat az ellenőrzőlistához. Feladat feladatnak az ellenőrzőlistához való hozzáadásához hozzon létre egy új ellenőrzőlistát az Ellenőrzőlista lapon, vagy vegye fel a feladatot egy **meglévő** **ellenőrzőlistához**.
+Alternatív megoldásként feladatokat közvetlenül is hozzáadhat egy ellenőrzőlistához. Ha egy tevékenységet ellenőrzőlistához szeretne hozzáadni, a **Bevezetés beállítási** lapján, az **Ellenőrzőlista** lapon hozzon létre egy új ellenőrzőlistát a tevékenység hozzáadásához, vagy adja hozzá a feladatot egy meglévő ellenőrzőlistához.
 
 > [!NOTE]
-> Ha egy feladatot közvetlenül az ellenőrzőlistához ad hozzá, akkor azt nem használhatja újra más ellenőrzőlistákon.
+> Ha egy tevékenységet közvetlenül egy ellenőrzőlistához ad hozzá, azt más ellenőrző listákban nem használhatja fel újra.
 
-A következő táblázat leírja azokat a mezőket, amelyek akkor érhetők el, ha valamelyik módszerrel hoz létre feladatot.
+Az alábbi táblázat azokat a mezőket ismerteti, amelyek akkor érhetők el, ha egy tevékenységet bármelyik módszerrel hoz létre.
 
 | Mező           | Leírás |
 |-----------------|-------------|
-| Feladat            | Adja meg a feladat nevét. |
-| Leírás     | Adja meg a feladat leírását. |
-| Választható        | Adja meg, hogy a feladat nem kötelező, és csak tájékoztatásra való. |
-| Feladathivatkozás       | Adja meg egy külső weboldal vagy az alkalmazás egy olyan lapja URL-címét, ahol a felhasználónak el kell végrehajtania a feladatot. A további tudnivalókat lásd a [Feladathivatkozások](#task-links) szakaszban. |
-| Hozzárendelés típusa | A feladatok adott dolgozóhoz, beosztáshoz vagy beosztáscsoporthoz, az érintett alkalmazott (vagyis a be- vagy külsős vagy átmeneti folyamathoz rendelt alkalmazott) vagy az érintett alkalmazott kezelőjébe rendelhetők. A hozzárendelés típusának kiválasztása. A további tudnivalókat lásd a [Hozzárendelési típusok](#assignment-types) szakaszban. |
-| Hozzárendelve a következőhöz:     | Annak a dolgozónak, beosztásnak vagy beosztáscsoportnak a kiválasztása, akihez a feladatot hozzárendeli. |
-| Kapcsolattartó  | Annak a személynek a megadása, akivel kapcsolatba kell lépni, ha kérdések vannak a feladattal kapcsolatban. |
-| Határidő eltolása | Adja meg, hogy hány nappal a feladat befejezésének, befejezésének vagy áttérésének dátuma előtt vagy után legyen esedékes a feladat. A további tudnivalókat lásd a Feladat határidői és a Határidő [ellenszámlája](#task-due-dates-and-the-due-date-offset-field) mezőben. |
-| Utasítások    | Útmutatások beírása a feladat befejezéséhez. A további tudnivalókat lásd az [Utasítások](#instructions) szakaszban. |
+| Feladat            | Adja meg a tevékenység nevét. |
+| Leírás     | Adja meg a tevékenység leírását. |
+| Választható        | Adja meg, hogy a tevékenység nem kötelező-e, és csak tájékoztató-e. |
+| Feladathivatkozás       | Adja meg egy külső weblap vagy egy adott oldal URL-címét az alkalmazásban, ahol a felhasználónak végre kell hajtania a feladatot. További információért lásd a [Tevékenységhivatkozások](#task-links) szakaszt. |
+| Hozzárendelés típusa | A feladatok hozzárendelhetők egy adott dolgozóhoz, pozícióhoz vagy pozíciócsoporthoz, az érintett alkalmazott vezetőjéhez (azaz a bevezetési, offboarding vagy átmeneti folyamat részét képező alkalmazotthoz) vagy az érintett alkalmazotthoz. Válassza ki a hozzárendelés típusát. További információért lásd a [Hozzárendelés-típusok](#assignment-types) szakaszt. |
+| Hozzárendelve a következőhöz:     | Válassza ki azt az adott dolgozót, pozíciót vagy pozíciócsoportot, amelyhez a tevékenységet hozzá szeretné rendelni. |
+| Kapcsolattartó  | Adja meg azt a személyt, akivel kapcsolatba kell lépnie, ha kérdése van a feladattal kapcsolatban. |
+| Határidő eltolása | Adja meg a tevékenység esedékes be- és bekapcsolási, befejezési vagy átmeneti dátuma előtti vagy utáni napok számát. További információt a [Tevékenység esedékességnapok és a Határidő eltolás mező című szakaszban talál](#task-due-dates-and-the-due-date-offset-field). |
+| Utasítások    | Adja meg a feladat elvégzésére vonatkozó utasításokat. További információért lásd az [Utasítások](#instructions) szakaszt. |
 
 ### <a name="task-links"></a>Feladathivatkozások
 
-A feladathivatkozás egy külső weboldalra vagy a Dynamics 365 alkalmazás egy lapjára mutató hivatkozást tartalmaz. A feladat hivatkozását megadhatja, ha a feladat végrehajtásához a feladat végrehajtásához a Dynamics 365 alkalmazás egy meghatározott weblapjára vagy lapjára kell ugrást végrehajtania. Feladathivatkozás létrehozásakor a következő lehetőségek közül választhat:
+A feladathivatkozás egy külső weblapra vagy lapra mutató hivatkozást tartalmaz a Dynamics 365 alkalmazásban. Megadhatja a tevékenységhivatkozást, ha a tevékenységhez rendelt személynek a Dynamics 365 alkalmazás egy adott weblapjára vagy egy adott lapjára kell mennie a feladat elvégzéséhez. Tevékenységhivatkozás létrehozásakor az alábbi lehetőségek közül választhat:
 
-- **Menüelem – ha ezt a lehetőséget** választja, megjelenik a Dynamics 365 alkalmazás összes oldalának listája. Válasszon egy lapot a listából.
-- **URL – ha ezt a lehetőséget választja, adja meg annak a weblapnak az URL-címét, amelybe a feladathoz rendelt személyt** el szeretné menni. A megadott lap olyan lap lehet, amely nem része a Dynamics 365 alkalmazásnak.
-- **Dolgozó részletei – ha ezt a lehetőséget** választja, válasszon a következő lehetőségek közül:
+- **Menüpont** – Ha ezt a lehetőséget választja, megjelenik a Dynamics 365 alkalmazás összes oldalának listája. Jelöljön ki egy oldalt a listában.
+- **URL –** Ha ezt a beállítást választja, adja meg annak a weblapnak az URL-címét, amelyhez a feladathoz rendelt személynek mennie kell. A megadott lap lehet olyan lap, amely nem része a Dynamics 365 alkalmazásnak.
+- **Dolgozói adatok** – Ha ezt a lehetőséget választja, válasszon az alábbi lehetőségek közül:
 
-    - **Alkalmazotti önkiszolgáló műveletek – ez a beállítás az alkalmazotti önkiszolgáló szolgáltatásban elérhető** **lapok listáját jeleníti** meg. Akkor használja, ha az alkalmazotti önkiszolgáló alkalmazottnál be kell fejeződnie a **feladatnak**. Ha például azt szeretné, hogy az alkalmazott adja meg személyes kapcsolattartási adatait, válassza ki az alkalmazott önkiszolgáló tevékenységét, majd válassza a Személyes **adatok** **&gt;** adatokat.
-    - **Dolgozókezelési műveletek – ez a beállítás megjeleníti a dolgozó rekordjához kapcsolódó, de az alkalmazott számára nem elérhető lapok** listáját. Ha például azt szeretné, hogy a feladat tulajdonosa adja meg a beépített dolgozóra jellemző adatokat, például a kompenzációs adatokat, válassza ki a Dolgozókezelési műveleteket, majd válassza a Fix kompenzáció **kompenzáció** **&gt;** lehetőséget.
+    - **Alkalmazotti önkiszolgáló műveletek** – Ez a beállítás az Alkalmazott önkiszolgáló **szolgáltatásában** elérhető oldalak listáját jeleníti meg. Akkor használja, ha a beépített alkalmazotthoz rendelt feladatot az Alkalmazott önkiszolgáló szolgáltatásában **kell** elvégezni. Ha például azt szeretné, hogy az alkalmazott megadja a személyes kapcsolattartási adatait, válassza az **Alkalmazott önkiszolgáló műveletei lehetőséget**, majd válassza a Személyes adatok **személyes adatai&gt; lehetőséget**.
+    - **Dolgozókezelési műveletek** – Ez a beállítás azoknak az oldalaknak a listáját jeleníti meg, amelyek a dolgozó rekordjához kapcsolódnak, de amelyek nem érhetők el az alkalmazott számára. Ha például azt szeretné, hogy a tevékenység tulajdonosa olyan adatokat adjon meg, amelyek egy beépített dolgozóra jellemzőek, például kompenzációs információkat, válassza a **Dolgozó felügyeleti műveletei lehetőséget**, majd válassza a CompensationFixed **kompenzáció lehetőséget&gt;**.
 
 ### <a name="assignment-types"></a>Hozzárendelés-típusok
 
-Alkalmazott felvett, felmondási vagy átadási lehetőség esetén egy vagy több ellenőrzőlistát lehet kiválasztani. Az ellenőrzőlista kiválasztása után a felvételi, a felmondási vagy az áthelyezési folyamat befejeződése után létrejönnek a feladatok, és hozzárendelik őket a felhasználókhoz az előrehaladás nyomon követéséhez.
+Amikor egy alkalmazottat bérelnek, megszüntetnek vagy áthelyeznek, egy vagy több ellenőrzőlista választható ki. Az ellenőrzőlista kiválasztása és a felvételi, megszüntetési vagy átviteli folyamat befejezése után a rendszer feladatokat hoz létre és rendel a felhasználókhoz az előrehaladás nyomon követéséhez.
 
-A feladat létrehozása után a feladat egy adott felhasználóhoz lesz hozzárendelve. Az a felhasználó, akihez a feladat hozzá van rendelve, az adott feladathoz kiválasztott hozzárendelés-típustól függ. A Hozzárendelés típusa mezőben a következő **értékek** érhetők el:
+Amikor egy tevékenységet létrehoznak, az egy adott felhasználóhoz lesz rendelve. Az a felhasználó, akihez egy tevékenység hozzá van rendelve, az adott tevékenységhez kiválasztott hozzárendelés típusától függ. A Hozzárendelés típusa **mezőben a** következő értékek érhetők el:
 
-- **Dolgozó** – a feladat hozzárendelése egy adott dolgozóhoz. Az érték kiválasztása után válassza ki a dolgozót a Hozzárendelve **a** mezőben.
-- **Beosztás** – a feladat hozzárendelése egy adott beosztáshoz. Az érték kiválasztása után válassza ki a pozíciót a Hozzárendelve **a** mezőben.
+- **Dolgozó** – Rendelje hozzá a feladatot egy adott dolgozóhoz. Miután kiválasztotta ezt az értéket, jelölje ki a dolgozót a **Hozzárendelve** mezőben.
+- **Pozíció** – Rendelje hozzá a tevékenységet egy adott pozícióhoz. Miután kiválasztotta ezt az értéket, jelölje ki a pozíciót a **Hozzárendelt mezőhöz** mezőben.
 
-    Például egy számítógép-mérnöki felelős lesz például egy új alkalmazott hordozható számítógépének elkészítéséért. Ebben az esetben a hordozható számítógép konfigurációs feladatának létrehozásakor válassza a Pozíció típust hozzárendelési típusként, majd válassza ki az **It** engineer **pozíciót**. Ezután amikor egy alkalmazottat felvettek, és az ellenőrzőlistát hozzárendelték, a hordozható számítógép konfigurációs feladatához azt a feladatot rendeli hozzá a program, amelyik a felvételi művelet bevitelekor az it-mérnöki pozícióban van.
+    Például egy informatikai mérnök mindig felelős egy laptop előkészítéséért egy új alkalmazott számára. Ebben az esetben a laptop konfigurációs feladatának létrehozásakor válassza a Pozíció **hozzárendelési típusként lehetőséget**, majd válassza **az INFORMATIKAI mérnököt** pozícióként. Ezután, amikor egy alkalmazottat bérelnek fel, és az ellenőrzőlista hozzá van rendelve, a laptop konfigurációs feladata hozzá lesz rendelve ahhoz a dolgozóhoz, aki az informatikai mérnök pozícióban van a felvételi művelet megadásakor.
 
-- **Csoport** – a feladat hozzárendelése beosztáscsoporthoz (hozzárendelési csoport). Az érték kiválasztása után válassza ki a csoportot a Hozzárendelve **a** mezőben. A további tudnivalókat lásd a Hozzárendelési [csoportok beállítása (Nem kötelező)](#setting-up-assignment-groups-optional) szakaszban.
-- **Vezető – a feladat hozzárendelése annak az alkalmazottnak a felettesének, aki jelenleg fel van véve, el lett** szüntetve vagy átkerült.
+- **Csoport** – A tevékenység hozzárendelése pozíciók csoportjához (hozzárendelési csoport). Miután kiválasztotta ezt az értéket, jelölje ki a csoportot a Hozzárendelve **a** mezőben. További információt a [Hozzárendelés-csoportok beállítása (Nem kötelező)](#setting-up-assignment-groups-optional) című szakaszban talál.
+- **Menedzser** – Rendelje hozzá a feladatot a bérelt, megszüntetett vagy áthelyezett alkalmazott vezetőjéhez.
 
     > [!IMPORTANT]
-    > Ellenőrzőlista alkalmazása esetén, ha jelenleg nincs beosztás rendelve a felvett, a kimondott vagy az áthelyezett alkalmazotthoz, akkor a vezető nem határozható meg. Ebben az esetben a feladat az ellenőrzőlista tulajdonosa lesz. További tájékoztatás az Ellenőrzőlisták beállítása [szakaszban](#setting-up-checklists) található.
+    > Ellenőrzőlista alkalmazásakor, ha jelenleg nincs hozzárendelve pozíció a bérelt, megszüntetett vagy áthelyezett alkalmazotthoz, a kezelő nem határozható meg. Ebben az esetben a feladat az ellenőrzőlista tulajdonosához van rendelve. További információért lásd az [Ellenőrző listák beállítása szakaszt](#setting-up-checklists).
 
-- **Alkalmazott** – az alkalmazott hozzárendelése, munkaviszonya megszüntetése vagy átvitele folyamatban van.
+- **Alkalmazott** – Rendelje hozzá azt az alkalmazottat, akit bérelnek, szüntetnek meg vagy helyeznek át.
 
-### <a name="task-due-dates-and-the-due-date-offset-field"></a>Feladat határidői és a határidő ellenszámlája mező
+### <a name="task-due-dates-and-the-due-date-offset-field"></a>Tevékenység esedékességnapok és a Határidő eltolás mező
 
-A feladat határidői a foglalkoztatás kezdő dátumán, a munkaviszony megszűnésének dátumán vagy az áttérés dátumán alapulnak. Bizonyos feladatokat még az alkalmazott kezdési dátuma előtt el kell kezdeni, míg az egyéb feladatokat csak ezt követően lehet elvégezni. A feladat definiálása során be kell állítani a Határidő eltolása mezőt, hogy a kezdő dátumhoz, a felmondási dátumhoz vagy az áttérési dátumhoz viszonyított határidő **legyen** meghatározva. Például egy számítógép-mérnöki munkatársnak két nappal az alkalmazott kezdő dátuma előtt egy hordozható számítógépet kell előkészítenie az új alkalmazottak számára. Ebben az esetben a hordozható számítógép konfigurációs feladatának létrehozásakor állítsa a Határidő **ellenszámlája** **mezőt -2-re**. Ezt követően, ha az alkalmazott kezdési dátuma május 5., a feladat május 3-án lesz esedékes.
+A tevékenység esedékességének időpontjai a foglalkoztatás kezdő dátumán, befejezési dátumán vagy átmeneti dátumán alapulnak. Egyes feladatokat az alkalmazott kezdési dátuma előtt kell elvégezni, míg más tevékenységek később is elvégezhetők. Tevékenység definiálásakor a Határidő eltolás **mezőt úgy kell beállítania, hogy a** kezdő dátumhoz, a befejezési dátumhoz vagy az átmenet dátumához viszonyítva adjon meg egy határidőt. Például egy informatikai mérnöknek elő kell készítenie egy laptopot egy új alkalmazott számára két nappal az alkalmazott kezdő dátuma előtt. Ebben az esetben a laptop konfigurációs tevékenységének létrehozásakor állítsa a **Határidő eltolás** mezőt -2-re **·**. Ha a munkavállaló kezdési dátuma május 5., a feladat május 3-án esedékes.
 
 > [!NOTE]
-> A határidő a feladat létrehozása után módosítható.
+> A határidő a tevékenység létrehozása után módosítható.
 
-A határidők számítása az ellenőrzőlistához társított naptár alapján történik. További tájékoztatás az Ellenőrzőlisták beállítása [szakaszban](#setting-up-checklists) található.
+A határidők kiszámítása az ellenőrzőlistához társított naptár alapján történik. További információért lásd az [Ellenőrző listák beállítása szakaszt](#setting-up-checklists).
 
 ### <a name="instructions"></a>Utasítások
 
-Az összetett feladatok végrehajtása több lépésből is áll, vagy lehet, hogy a feladatot végző személynek további információkat kell adnia. Az Utasítások mezőben útmutatásokat vagy további információkat lehet megadni, amelyek segítenek a feladathoz hozzárendelt személy **befejezésében**.
+Az összetett tevékenységek több lépést is igényelhetnek, vagy a feladatot végző személynek további információkat kell megadnia. **Az Utasítások** mezőben utasításokat vagy további információkat adhat meg, amelyek segítenek a tevékenységhez rendelt személynek a feladat elvégzésében.
 
-## <a name="setting-up-checklists"></a>Ellenőrzőlisták beállítása
+## <a name="setting-up-checklists"></a>Ellenőrző listák beállítása
 
-Az ellenőrzőlista feladatok egy csoportja. Annyi ellenőrzőlistát hozhat létre, amennyit csak szeretne, és ugyanazt a feladatot több ellenőrzőlistához rendelheti hozzá. Ellenőrzőlista létrehozásakor meg kell adnia egy tulajdonost és egy naptárat.
+Az ellenőrző lista feladatok csoportja. Annyi ellenőrzőlistát hozhat létre, amennyit csak szeretne, és ugyanazokat a feladatokat több ellenőrzőlistához is hozzárendelheti. Ellenőrzőlista létrehozásakor meg kell adnia egy tulajdonost és egy naptárat.
 
-Ha egy feladat Hozzárendelés típus mezőjének beállítása Beosztás, Vezető vagy Csoport, de konkrét személy nem származtatható a hozzárendelés típusból, akkor a feladat az ellenőrzőlista **tulajdonosa** **·** **·** **lesz**. Íme néhány példa olyan helyzetekre, amikor feladatok rendelhetők az ellenőrzőlista tulajdonosához:
+**Ha egy tevékenység Hozzárendelés típusa** mező pozíció **,** kezelő **vagy** csoport **mezőben** van beállítva, de a hozzárendelés típusából nem lehet konkrét személy származtatni, a tevékenység az ellenőrzőlista tulajdonosához lesz rendelve. Íme néhány példa arra, hogy olyan helyzetekre, amikor a feladatokat hozzárendelik az ellenőrzőlista tulajdonosához:
 
-- Nincs beosztás rendelve az alkalmazotthoz, aki jelenleg fel van véve vagy el lett szüntetve. Mivel az alkalmazottnak nincs beosztása, a felettesét nem lehet megállapítani.
-- A **Hozzárendelés típusa mező a Beosztás** **értékre van állítva, de a feladat létrehozásakor nincs alkalmazott hozzárendelve** a beosztáshoz. Például a Hordozható számítógép beállítási feladat a 000876 (Műszaki támogatási **szakértő**) **pozíciószámhoz van** rendelve. Az alkalmazott felvettekkor egy alkalmazott sem lesz a beosztáshoz rendelve 000876. Emiatt az ellenőrzőlista tulajdonosa számára létrejön egy feladat.
-- A Hozzárendelés típusa mező beállítása Csoport, de a feladat létrehozásakor a csoport beosztásához nincs **alkalmazott** **hozzárendelve**.
+- A bérbe vagy megszüntetett alkalmazotthoz nincs beosztás hozzárendelve. Mivel az alkalmazottnak nincs pozíció-hozzárendelése, a menedzserét nem lehet meghatározni.
+- A **Hozzárendelés típusa** mező Pozíció **beállításra** van állítva, de a tevékenység létrehozásakor egyetlen alkalmazott sem van hozzárendelve a pozícióhoz. A telepítő laptop **feladat például a** 000876 (**műszaki támogatási szakember)** pozíciószámhoz van rendelve. Abban az időben, amikor egy alkalmazottat bérelnek, egyetlen alkalmazott sem van hozzárendelve a pozícióhoz 000876. Ezért létrejön egy feladat az ellenőrzőlista tulajdonosához.
+- A **Hozzárendelés típusa** mező Csoportra **van** állítva, de a tevékenység létrehozásakor egyetlen alkalmazott sem lesz hozzárendelve a csoport pozícióihoz.
 
-Az ellenőrzőlistához megadott naptár alapján számítja ki a rendszer az ellenőrzőlistán található feladatok esedékességét. A munkanapokat és a nem munkavégzési napokat a naptár beállításai határozzák meg. A munkanapokat a feladatok határidőinek kiszámításakor kell figyelembe venni, és a nem munkanapok nem szerepelnek. A nem munkavégzési napok közé tartoznak a hétvégék és a munkaszüneti napok. 
+Az ellenőrzőlistához megadott naptár az ellenőrzőlista részét képező tevékenységek esedékességének kiszámítására szolgál. A munkanapok és a nem munkanapok a naptár beállítása határozza meg. A munkanapok a tevékenységek esedékességének kiszámításakor is szerepelnek, és a nem munkanapok ki vannak zárva. A nem munkanapok közé tartoznak a hétvégék és az ünnepek. 
 
-A naptár beállítása után hozzá lesz társítva egy ellenőrzőlista-sablonhoz. Ily módon az ellenőrzőlista minden feladatának esedékességét ugyanúgy számítja ki a program. Több naptár is beállítható, de minden ellenőrzőlistához csak egy naptár társítható.
+A naptár beállítása után egy ellenőrzőlistasablonhoz van társítva. Ily módon az ellenőrzőlista minden tevékenységének esedékessége ugyanúgy kerül kiszámításra. Több naptárat is beállíthat, de minden ellenőrző listához csak egy naptár társítható.
 
 ## <a name="setting-up-assignment-groups-optional"></a>Hozzárendelési csoportok beállítása (nem kötelező)
 
-Esetenként az egyes személyek egy csoportja felelős a feladatért. Például egy csoportja az it-dolgozóknak lehet felelős a hordozható számítógépek új felvételhez való előkészítéséért.
+Néha egyének egy csoportja felelős egy feladatért. Például az informatikai dolgozók egy csoportja felelős lehet a laptopok új bérlők számára való előkészítéséért.
 
-A következő lépések szerint állíthatja be a hozzárendelési csoportokat.
+Hozzárendelés-csoport beállításához kövesse az alábbi lépéseket.
 
-1. A **Csoport-hozzárendelés** lapon válassza az Új **lehetőséget**.
-1. Adjon meg egy nevet (például hordozható számítógép) **és** a csoport leírását.
+1. A Csoport hozzárendelés **lapján válassza az** Új **lehetőséget**.
+1. Adjon meg egy nevet (például **IT Laptop**) és a csoport leírását.
 1. Válassza a **Mentés** lehetőséget.
-1. Válassza a **Tagok** gyorsététi gombra, és válassza a **Hozzáadás** gombra.
-1. A **Beosztások mezőben válassza ki a** feladatért felelős beosztásokat.
+1. A Tagok **gyorslapon válassza a** Hozzáadás **lehetőséget**.
+1. **A Pozíciók** mezőben válassza ki a tevékenységért felelős összes pozíciót.
 
-A hozzárendelési csoport létrehozása után ki lehet válogatni a feladat létrehozásakor. Egy feladat adott csoportjának kiválasztásához a Hozzárendelés típusban a Csoport **lehetőséget** kell **kiválasztania**. A létrehozott csoport ezután elérhető lesz kiválasztásra a Hozzárendelve a **mezőben**.
+Hozzárendelés-csoport létrehozása után a tevékenység létrehozásakor kiválasztható. Egy tevékenység adott csoportjának kiválasztásához a Hozzárendelés típusban a Csoport **lehetőséget kell választania**.**·** A létrehozott csoport ezután kijelölhető lesz a Hozzárendelve **a** mezőben.
 
 > [!IMPORTANT]
-> Ha egy feladat csoporthoz van rendelve, akkor a feladat Készként lesz megjelölve, amikor a csoportban egy **személy** befejezi a feladatot. A feladatok létrehozása a felvétel, a munkaviszony megszüntetése vagy az átállás során megszabad. Ezek a csoportba foglalt beosztások felhasználóihoz vannak hozzárendelve.
+> Ha egy tevékenységet egy csoporthoz rendelnek, a tevékenység befejezettként **lesz** megjelölve, amikor a csoport egyik tagja befejezi azt. A feladatok a felvétel, a megszüntetés vagy az átmenet idején jönnek létre. A csoportban szereplő pozíciókhoz rendelt felhasználók számára jönnek létre.
 
 ## <a name="setting-up-task-groups-optional"></a>Feladatcsoportok beállítása (nem kötelező)
 
-A berakodási, a külsős vagy az áttérési folyamat több feladatot tartalmazhat. Ha egyszerűbbé szeretne tenni az összes szükséges feladat ellenőrzőlistához való hozzárendelését, létrehozhat feladatcsoportokat a kapcsolódó feladatok kategóriákba sorolása érdekében. Például az emberi erőforrásokkal, az itekkel és a bérszámfejtési részlegekkel kapcsolatos feladatokat kell elvégezniük ahhoz, hogy új alkalmazottat vegyenek fel. Ezért a következő feladatcsoportok hozhatók létre: **HR**, **It és** **Bérlista**. Ezután a feladat létrehozásakor társítani lehet a feladatcsoportok valamelyikét.
+A be- és bevezetési, offboarding vagy átmeneti folyamat számos feladatot tartalmazhat. Annak érdekében, hogy megkönnyítse az összes szükséges tevékenység hozzárendelését egy ellenőrző listához, opcionális feladatcsoportokat hozhat létre a kapcsolódó tevékenységek kategorizálására. Például a HR, az IT és a Bérszámfejtési osztályoknak minden egyes feladatot el kell végezniük egy új alkalmazott felvételéhez. Ezért a következő feladatcsoportokat hozza létre: **HR**, **IT** és **Payroll**. Ezután egy tevékenység létrehozásakor társíthatja az egyik ilyen feladatcsoportot.
 
-Ha feladatot szeretne hozzáadni egy ellenőrzőlistához, a feladatok listáját szűrheti azon feladatcsoport szerint, amelybe a kívánt feladat tartozik. Például ellenőrzőlista-sablon létrehozásakor szűrheti a listát, hogy csak az it-feladatcsoporthoz rendelt **it-feladatok megjelenítése** megjelenik. Így biztos lehet benne, hogy csak a fontos it-it feladatok vannak kiválasztva.
+Ha egy tevékenységet szeretne hozzáadni egy ellenőrzőlistához, szűrheti a tevékenységek listáját a kívánt tevékenységhez rendelt tevékenységcsoport szerint. Ellenőrzőlistasablon létrehozásakor például szűrheti a listát úgy, hogy csak az informatikai **tevékenységcsoporthoz** rendelt informatikai tevékenységek jelenjenek meg. Ezért biztosíthatja, hogy csak a megfelelő informatikai feladatok legyenek kiválasztva.
 
-## <a name="using-checklists"></a>Ellenőrzőlisták használata
+## <a name="using-checklists"></a>Ellenőrző listák használata
 
-Dolgozó felvett, felmondási vagy átvitt feladatlistája választható. A feladatok határidői és a dolgozók hozzárendelései a felvételi, a felmondási és az áttérési folyamat befejezése után jön létre. Ha például a Felvétel vagy felvétel gombra kattint, és hozzáadja a részleteket, a hozzárendelés típusától függően az egyes személyek számára jön **létre** **feladat**.
+Ha egy dolgozót bérelnek, megszüntetnek vagy áthelyeznek, egy vagy több ellenőrzőlista választható ki. A tevékenység esedékességnapjai és a munkavégző hozzárendelések a felvételi, végződési vagy átmeneti folyamat befejezése után jönnek létre. Ha például kiválasztja a **Bérlés** vagy **a Bérlés és a Részletek** hozzáadása gombot, a feladatok a hozzárendelés típusa alapján jönnek létre az egyének számára.
 
-Az egyes feladatokhoz úgy lehet határidőt rendelni, hogy hozzáadják az alkalmazott kezdő dátumát, vagy kivonják az esedékesség dátumát a határidőből. A további tudnivalókat lásd a Feladat határidői és a Határidő [ellenszámlája](#task-due-dates-and-the-due-date-offset-field) mezőben.
+A határidőt úgy rendelik hozzá a rendszer az egyes tevékenységekhez, hogy hozzáadják vagy kivonják a határidő eltoltását az alkalmazott kezdő dátumából. További információt a [Tevékenység esedékességnapok és a Határidő eltolás mező című szakaszban talál](#task-due-dates-and-the-due-date-offset-field).
 
-Személyzeti műveletek használata esetén a feladatok akkor jön létre, amikor a Kész gomb be van jelölve, vagy a műveletet **jóváhagyják**.
+Ha személyzeti műveleteket használ, a feladatok a Befejezés **gomb kijelölésekor vagy a művelet jóváhagyásakor** jönnek létre.
 
-A Feladatkezelés munkaterületen alkalmazhat ellenőrzőlistát az alkalmazottakhoz úgy, hogy kijelöli az alkalmazottat az egyszerű listaoldalon vagy a részletes listában, majd az Ellenőrzőlista **alkalmazása** **adatokat** választ. A feladatok határidőinek kiszámításához a Rendszer a Céldátum mező **értékét** használja. A céldátumnak általában meg kell egyeznie az alkalmazott felvételének, munkaviszonyának vagy átmeneti dátumának.
+A Feladatkezelés **munkaterületen ellenőrzőlistát alkalmazhat egy alkalmazottra, ha kiválasztja az alkalmazottat az egyszerű listaoldalon vagy a részletek lapon, majd kiválasztja** az Ellenőrzőlista alkalmazása lehetőséget **.** A céldátum **mező értéke a** tevékenységek esedékességének kiszámításához lesz számítva. A céldátumnak általában meg kell egyeznie az alkalmazott felvételi, felmondási vagy átmeneti dátummal.
 
-Az alkalmazottakhoz úgy is alkalmazhat ellenőrzőlistát, hogy megnyitja a Dolgozó lapot, és a **menü** **Ellenőrzőlistája** lehetőséget választják.
+Ellenőrzőlistát is alkalmazhat egy alkalmazottra, ha megnyitja **a Dolgozó** lapot, és kiválasztja **a menü ellenőrzőlistáját**.
 
-## <a name="completing-tasks"></a>Feladatok befejezése
+## <a name="completing-tasks"></a>Feladatok elvégzése
 
-Az Alkalmazott – önkiszolgáló oldalon az alkalmazottak megtekinthetik az összes hozzájuk **rendelt** feladatot. Minden hozzárendelt feladathoz **megjelennek a** Feladat, Leírás, Utasítások és **Kapcsolattartó** **·** **értékek**. Ezenkívül minden feladathoz megnyithatja a kapcsolódó külső webhelyet vagy a kapcsolódó lapot a Dynamics 365 alkalmazásban.
+Az Alkalmazott önkiszolgáló **oldalán az** alkalmazott megtekintheti a hozzájuk rendelt összes feladatot. Minden hozzárendelt tevékenységnél **megjelenik a Tevékenység**, **a Leírás**, **az Utasítások** és **a Kapcsolattartó személy** értékei. Ezenkívül az alkalmazott minden feladathoz megnyithatja a kapcsolódó külső weblapot vagy a hozzá tartozó oldalt a Dynamics 365 alkalmazásban.
 
-A feladatokat megjelölheti **Folyamatban, Visszavonva** **vagy** **Készként**. Ha egy feladatot hozzárendeltek egy csoporthoz, akkor Az Készként lesz megjelölve, amikor a csoportban egy **személy** befejezi a feladatot.
+A feladatok meg lehet jelölni folyamatban **lévőként,** megszakítva **vagy** befejezettként **·**. Ha egy tevékenységet egy csoporthoz rendeltek, akkor az befejezettként **lesz** megjelölve, amikor a csoport egyik tagja befejezi azt.
 
-A feladatok újraoszthatóak.
+A feladatokat is át lehet írni.

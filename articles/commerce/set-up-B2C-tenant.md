@@ -2,7 +2,7 @@
 title: B2C-bérlő beállítása a Commerce-ben
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani az Azure Active Directory (Azure AD) cég-ügyfél (B2C) bérlőket felhasználói webhely-hitelesítéshez Dynamics 365 Commerce alkalmazásban.
 author: BrianShook
-ms.date: 01/05/2022
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8e0fa2c4f22a1854a449a14aac3552313e808cf3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
-ms.translationtype: MT
+ms.openlocfilehash: dcd5c022c00070922e287a6b8750810ff76bc26f
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952444"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092459"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
@@ -58,9 +58,9 @@ Mielőtt hozzákezd, győződjön meg arról, hogy a Dynamics 365 Commerce-körn
 
 A Dynamics 365 Commerce környezet telepítését követően ajánlott a [Kiindulási adatok inicializálása](enable-configure-retail-functionality.md) a környezetben.
 
-## <a name="create-or-link-to-an-existing-azure-ad-b2c-tenant-in-the-azure-portal"></a>Meglévő Azure AD B2C-bérlő létrehozása vagy hivatkozása az Azure-portálon
+## <a name="create-or-link-to-an-existing-azure-ad-b2c-tenant-in-the-azure-portal"></a>Hozzon létre egy meglévőt, vagy hivatkozzon rá Azure AD B2C-bérlő az Azure Portalon
 
-Ez a szakasz a B2C-bérlők commerceben való használatra való létrehozásának és Azure AD kapcsolatának létrehozását foglalja magában. A további tudnivalókat [lásd: Azure Active Directory B2C bérlő létrehozása](/azure/active-directory-b2c/tutorial-create-tenant).
+Ez a rész egy Azure AD B2C bérlő az Ön kereskedelmi webhelyén való használatra. További információkért lásd [Oktatóanyag: Hozzon létre egy Azure Active Directory B2C bérlő](/azure/active-directory-b2c/tutorial-create-tenant).
 
 1. Jelentkezzen be az [Azure portálra](https://portal.azure.com/).
 1. Válassza az Azure Portal menü **Erőforrás létrehozása** pontját. Ügyeljen arra, hogy a Commerce környezethez kapcsolt előfizetést és könyvtárat használja.
@@ -70,7 +70,7 @@ Ez a szakasz a B2C-bérlők commerceben való használatra való létrehozásán
 1. Nyissa meg az **Identitás \> Azure Active Directory B2C** elemet.
 1. A **AAD B2C-bérlő létrehozása vagy hivatkozás egy meglévő bérlőre az Azure Portal webhelyen** lapon, használja vállalat igényeinek leginkább megfelelő alábbi lehetőséget:
 
-    - **Új Azure AD B2C bérlő** létrehozása: ezzel a beállítással új Azure AD B2C-bérlőt hozhat létre.
+    - **Újat csinálni Azure AD B2C bérlő** : Ezzel a lehetőséggel újat hozhat létre Azure AD B2C bérlő.
         1. Válassza az **Új Azure AD B2C-bérlő létrehozása** lehetőséget.
         1. A **Szervezet neve** területen írja be a szervezet nevét.
         1. A **Kezdeti tartománynév** mezőbe írja be a kezdeti tartománynevet.
@@ -88,7 +88,7 @@ Ez a szakasz a B2C-bérlők commerceben való használatra való létrehozásán
 
 1. Miután létrehozta az új Azure AD B2C könyvtárat (ez néhány percet is igénybe vehet), az új könyvtárra mutató hivatkozás megjelenik az irányítópulton. Ez a link közvetlenül az „Üdvözli az Azure Active Directory B2C” oldalra mutat.
 
-    ![Csatolás az új Azure AD könyvtárhoz](./media/B2CImage_4.png)
+    ![Link az újhoz Azure AD Könyvtár](./media/B2CImage_4.png)
 
 > [!NOTE]
 > Ha több előfizetése van a Azure-fiókján belül, vagy a B2C-bérlőt egy aktív előfizetés csatolása nélkül állította be, akkor egy **Hibaelhárítási** banner fogja arra kérni hogy a bérlőt egy előfizetéshez kapcsolja. Válassza ki a hibaelhárítási üzenetet, majd kövesse az utasításokat az előfizetési probléma megoldásához.
@@ -106,11 +106,11 @@ A B2C alkalmazás létrehozásához kövesse az alábbi lépéseket.
 1. Az Azure portálon válassza az **Alkalmazásregisztrációk** elemet, majd az **Új regisztráció** lehetőséget.
 1. A **Név** mezőbe írja be a Azure AD B2C-alkalmazásnak adni kívánt nevet.
 1. A **Támogatott fióktípusok** csoportban válassza a **Fiókok bármely identitásszolgáltatóban vagy szervezeti címtárban (felhasználók hitelesítéséhet a felhasználói folyamatokkal)**.
-1. Az **Átirányítási URI** szolgáltatáshoz írja be a dedikált válasz URL-eket **Web** típusúként. A válasz URL-címekkel és a formázásukkal kapcsolatos információkért lásd: [Válasz URL-címek](#reply-urls) részt alább. Meg kell adni egy átirányítási URI-címet/válasz URL-címet, amely lehetővé teszi a B2C rendszerből a webhelyre való Azure AD átirányítást, amikor egy felhasználó hitelesíti magát. A válasz URL-címe hozzáadható a regisztrációs folyamat során, illetve később is, ha **a** **B2C** **alkalmazás Áttekintés szakaszában az "Átirányítás URI hozzáadása" hivatkozásra** kattint.
+1. Az **Átirányítási URI** szolgáltatáshoz írja be a dedikált válasz URL-eket **Web** típusúként. A válasz URL-címekkel és a formázásukkal kapcsolatos információkért lásd: [Válasz URL-címek](#reply-urls) részt alább. Az átirányítások engedélyezéséhez meg kell adni egy átirányítási URI-t/válasz URL-t Azure AD B2C vissza a webhelyére, amikor a felhasználó hitelesít. A válasz URL-címe hozzáadható a regisztrációs folyamat során, vagy később is hozzáadható a lehetőség kiválasztásával **Adjon hozzá egy átirányítási URI-t** link a **Áttekintés** menü a B2C alkalmazásban **Áttekintés** szakasz.
 1. Az **Engedélyek** esetében válassza a **Rendszergazdai hozzájárulás biztosítása az OpenID-hoz és az offline hozzáférési engedélyezkhez** lehetőséget.
 1. Válassza a **Regisztrálás** lehetőséget.
-1. Válassza ki az újonnan létrehozott alkalmazást, és nyissa meg az **API-engedélyek** menüt. 
-1. Ha meg van adva egy válasz URL-címe, az Implicit támogatás és az áramlási folyamat mezőben válassza a Hozzáférési tokenek és **az** **·** **azonosítótokenek** **lehetőséget az alkalmazás engedélyezéséhez, majd válassza a Mentés** lehetőséget. Ha a regisztráció során nem lett megadva válasz URL-címe, akkor ezen a lapon a Platform hozzáadása, a Webes lehetőség kiválasztásával, majd az alkalmazás **átirányítási** **URI-jének beírásával is** hozzáadható. Ezt követően a Implicit támogatás és áramlási folyamat szakasz elérhetővé válik a Hozzáférési tokenek és **az** **·** **azonosítótokenek** beállításának kiválasztásához.
+1. Válassza ki az újonnan létrehozott alkalmazást, és navigáljon a **Hitelesítés** menü. 
+1. Ha beírt egy válasz URL-t, a **Implicit támogatási és hibrid áramlások** válassza ki mindkettőt **Hozzáférési tokenek** és **azonosító tokenek** opciókat, hogy engedélyezze őket az alkalmazáshoz, majd válassza ki **Megment**. Ha a regisztráció során nem adott meg válasz URL-t, akkor a kiválasztással ezen az oldalon is felveheti **Adjon hozzá egy platformot**, kiválasztva **Web**, majd adja meg az alkalmazás átirányítási URI-jét. A **Implicit támogatási és hibrid áramlások** szakasz elérhető lesz mindkettő kiválasztásához **Hozzáférési tokenek** és **azonosító tokenek** opciók.
 1. Lépjen az Azure Portal **Áttekintés** menüjébe, és másolja be az **Alkalmazás (ügyfél) azonosítóját**. Jegyezze fel ezt az azonosítót a későbbi beállítási lépésekhez (később **Ügyfél GUID azonosítóként** hivatkoznak rá).
 
 Az Azure AD B2C alkalmazásregisztrációiról további információt az [Azure Active Directory B2C új alkalmazásregisztrációs élménye](/azure/active-directory-b2c/app-registrations-training-guide) részben talál
@@ -133,7 +133,7 @@ Az Azure AD B2C három alapvető felhasználói folyamatot kínál:
 - Profil szerkesztése
 - Új jelszó létrehozása
 
-Választhat, hogy a B2C által biztosított alapértelmezett felhasználói folyamatokat használja-e, amelyek a B2C által tárolt lapot Azure AD Azure AD jelenítik meg. Másik megoldásként HTML-lapot is létrehozhat, amellyel szabályozhatja a felhasználói folyamatok megjelenését és érzetét. 
+Kiválaszthatja a által biztosított alapértelmezett felhasználói folyamatok használatát Azure AD, amely egy oldalt jelenít meg Azure AD B2C. Másik megoldásként HTML-lapot is létrehozhat, amellyel szabályozhatja a felhasználói folyamatok megjelenését és érzetét. 
 
 A felhasználói irányelvek oldalainak Dynamics 365 Commerce alkalmazásban létrehozott oldalakkal való testreszabásáról lásd: [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md). További tájékoztatás: [A felhasználói élmények kezelőfelületének testreszabása az Azure Active Directory B2C-ben](/azure/active-directory-b2c/tutorial-customize-ui).
 
@@ -145,9 +145,9 @@ Feliratkozási és bejelentkezési felhasználóifolyamat-házirend konfigurál�
 1. Az **Azure AD B2C – Felhasználói folyamatok (házirendek)** lapon válassza az **Új felhasználói folyamat** elemet.
 1. Válassza ki a **Regisztráció és bejelentkezés** irányelvet, majd válassza az **Ajánlott** verziót.
 1. A **Név** mezőbe írja be a házirend nevét. Ez a név azután jelenik meg, hogy a portál hozzárendel egy előtagot (például „B2C_1_”).
-1. Az Identitásszolgáltató területen válassza az E-mailben **való** **regisztrációt a Helyi** számlák **szakaszban**. A Commerce rendszer leggyakrabban az e-mail hitelesítést használja. Ha a társadalombiztosítási szolgáltató hitelesítését is használja, akkor ezeket is ki lehet választani most.
+1. Alatt **Identitásszolgáltatók**, ban,-ben **Helyi számlák** szakaszban válassza ki **E-mail regisztráció**. Az e-mail hitelesítést a Commerce legáltalánosabb forgatókönyveiben használják. Ha közösségi identitásszolgáltató hitelesítést is használ, akkor ezek is kiválaszthatók most.
 1. A **Többlépcsős hitelesítés** területen válassza ki a vállalat számára a megfelelő lehetőséget. 
-1. A **Felhasználói attribútumok és igények** területen válassza ki az attribútumok gyűjtését vagy igénylések visszaküldését szükség szerint. Válassza a Több megjelenítése... lehetőséget az attribútumok és a jogcímbeállítások **teljes** listájának bemutatja. A Commerce a következő alapértelmezett beállításokat igényli:
+1. A **Felhasználói attribútumok és igények** területen válassza ki az attribútumok gyűjtését vagy igénylések visszaküldését szükség szerint. Válassza ki **Mutass többet...** az attribútumok és igénylehetőségek teljes listájának megtekintéséhez. A Commerce a következő alapértelmezett beállításokat igényli:
 
     | **Attribútum összegyűjtése** | **Igény visszaküldése** |
     | ---------------------- | ----------------- |
@@ -172,7 +172,7 @@ Profilszerkesztési felhasználóifolyamat-házirend konfigurálásához kövess
 1. Az **Azure AD B2C – Felhasználói folyamatok (házirendek)** lapon válassza az **Új felhasználói folyamat** elemet.
 1. Válassza a **Profilszerkesztés** lehetőséget, majd az **Ajánlott** verziót.
 1. A **Név** mezőbe adja meg a profilszerkesztési felhasználói folyamatot. Ez a név azután jelenik meg, hogy a portál hozzárendel egy előtagot (például „B2C_1_”).
-1. Az **Identitás-szolgáltatók területen válassza az E-mail bejelentkezés lehetőséget a Helyi** **számlák** **szakaszban**.
+1. Alatt **Identitásszolgáltatók**, ban,-ben **Helyi számlák** szakaszban válassza ki **E-mail bejelentkezés**.
 1. A **Felhasználói attribútumok** alatt jelölje be az alábbi jelölőnégyzeteket:
     
     | **Attribútum összegyűjtése** | **Igény visszaküldése** |
@@ -187,7 +187,7 @@ Profilszerkesztési felhasználóifolyamat-házirend konfigurálásához kövess
 
 A következő kép egy példát mutat be a Azure AD B2C profilszerkesztő felhasználói folyamatára.
 
-![Példa a Azure AD B2C profil szerkesztésére - felhasználói folyamat](./media/B2CImage_12.png)
+![Példa a Azure AD B2C profilszerkesztő felhasználói folyamat](./media/B2CImage_12.png)
 
 ### <a name="create-a-password-reset-user-flow-policy"></a>Egy jelszóvisszaállítás felhasználóifolyamat létrehozása
 
@@ -309,29 +309,25 @@ A Azure AD B2C-bérlő beállításainak megadása után konfigurálni kell a B2
 
 A szükséges alkalmazásadatok összegyűjtéséhez kövesse az alábbi lépéseket.
 
-1. Az Azure portálon válassza a **Kezdőlap \> Azure AD B2C – alkalmazások** lehetőséget.
-1. Válassza ki az alkalmazását, majd a bal oldali navigációs ablakban válassza ki a **Tulajdonságok** elemet az alkalmazás adatainak beolvasásához.
-1. Az **Alkalmazásazonosító** mezőből gyűjtse be a B2C-bérlőben létrehozott B2C-alkalmazás alkalmazásazonosítóját. Ezt a későbbiekben a webhelykészítőben **Ügyfél GUID-ként** lesz megadva.
-1. A **Válasz URL** alatt gyűjtse ki a válasz URL-címet.
-1. Válassza a **Kezdőlap \> Azure AD B2C – Felhasználói folyamatok (házirendek)** elemet, majd gyűjtse be az egyes felhasználói folyamatokházirendek neveit.
+1. Az Azure Portalon nyissa meg a következőt: **itthon \>Azure AD B2C – Alkalmazások regisztrációja**.
+1. Válassza ki az alkalmazást, majd a bal oldali navigációs panelen válassza a lehetőséget **Áttekintés** hogy megkapja a pályázat részleteit.
+1. Tól **Alkalmazás (ügyfél) azonosító** hivatkozás, gyűjtse össze a B2C-bérlőben létrehozott B2C alkalmazás alkalmazásazonosítóját. Ezt a későbbiekben a webhelykészítőben **Ügyfél GUID-ként** lesz megadva.
+1. Válassza ki **URI-k átirányítása** és összegyűjti a webhelyéhez tartozó válasz URL-t (a beállításkor megadott válasz URL-t).
+1. Menj **itthon \>Azure AD B2C – Felhasználói áramlások**, majd összegyűjti az egyes felhasználói folyamatszabályzatok teljes nevét.
 
-A következő képen egy példa látható a **Azure AD B2C – Alkalmazások** lapra.
+A következő képen egy példa látható a **Azure AD B2C – Alkalmazások regisztrációja** áttekintő oldal.
 
-![Keresse meg a B2C alkalmazást a bérlőn belül.](./media/B2CImage_19.png)
-
-A következő képen egy példa látható egy alkalmazás **Tulajdonságok** lapjára az Azure AD B2C-ben. 
-
-![Másolja ki az alkalmazásazonosítót B2C alkalmazás tulajdonságaiból.](./media/B2CImage_21.png)
+![Azure AD B2C – Alkalmazásregisztrációkat áttekintő oldal az alkalmazás (ügyfél) azonosítójával kiemelve](./media/ClientGUID_Application_AzurePortal.png)
 
 A következő kép egy példát mutat be a felhasználói folyamatokra az **Azure AD B2C – felhasználói folyamatok (házirendek)** oldalon.
 
 ![A B2C házirendfolyamatok neveinek összegyűjtése.](./media/B2CImage_22.png)
 
-### <a name="enter-your-azure-ad-b2c-tenant-application-information-into-commerce"></a>Adja meg a Azure AD B2C bérlő alkalmazásával kapcsolatos adatokat a Commerce rendszerből.
+### <a name="enter-your-azure-ad-b2c-tenant-application-information-into-commerce"></a>Adja meg Azure AD B2C bérlői jelentkezési információk a kereskedelembe
 
 Meg kell adnia a Azure AD B2C bérlő adatait a Commerce oldalkészítő számára, mielőtt a B2C bérlőt a webhelyéhez/webhelyeihez társítja.
 
-A Azure AD B2C bérlőalkalmazási információinak a Commerce alkalmazásba való felvételéhez kövesse ezeket a lépéseket.
+A saját hozzáadásához Azure AD A B2C bérlői jelentkezési információk a Commerce számára, kövesse az alábbi lépéseket.
 
 1. Jelentkezzen be rendszergazdaként a saját környezetéhez tartozó Commerce oldalkészítőbe.
 1. A bal oldali navigációs panelen válassza a **Bérlőbeállítások** elemet a kibontáshoz.
@@ -363,7 +359,7 @@ A B2C alkalmazás társításához a webhelyéhez és a csatornához kövesse az
 1. A bal oldali navigációs panelen válassza a **Webhelybeállítások** elemet a kibontáshoz.
 1. A **Webhely beállításai** alatt válassza ki a **Csatornák** elemet.
 1. Válassza ki a **Csatorna** elem alatti fő ablakban válassza ki a csatornáját.
-1. A jobb oldali csatorna tulajdonságai ablaktáblán válassza ki a B2C alkalmazás nevét a **B2C alkalmazás kiválasztása** legördülő menüből.
+1. A jobb oldali csatornatulajdonságok ablaktáblában válassza ki a B2C alkalmazás nevét **Válassza a B2C alkalmazást** legördülő menü.
 1. Válassza a **Bezárás** parancsot, majd válassza a **Mentés és közzététel** parancsot.
 
 ## <a name="additional-b2c-information"></a>További B2C információk

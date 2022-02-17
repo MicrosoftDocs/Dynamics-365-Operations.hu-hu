@@ -1,26 +1,26 @@
 ---
 title: Vevői számla létrehozása
-description: Egy **értékesítési rendeléshez kiállított vevői számla** az értékesítéshez kapcsolódó váltó, amelyet a szervezet egy vevőnek ad.
+description: Egy értékesítési rendeléshez kiállított vevői számla az értékesítéshez kapcsolódó váltó, amelyet a szervezet egy vevőnek ad.
 author: ShivamPandey-msft
-ms.date: 01/12/2018
+ms.date: 02/01/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 77772
 ms.assetid: 00b4b40c-1576-4098-9aed-ac376fdeb8c5
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 369f0737ee4026c32ffbae6b11b5815c5548d83d564aebf2eae4b1c246e73508
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723871"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087423"
 ---
 # <a name="create-a-customer-invoice"></a>Vevői számla létrehozása
 
@@ -42,6 +42,23 @@ További tudnivalók:
 
 
 A **pro forma számla** olyan számla, amely a tényleges számla mennyiségeinek becsléseként készül el a számla feladása előtt. Pro forma számlát értékesítési rendeléshez kiadott vevői és szabadszöveges számlához is ki lehet nyomtatni.
+
+## <a name="using-sales-order-customer-invoice-data-entities"></a>Értékesítési rendelés ügyfélszámla adat entitások használata
+Adatentitások segítségével importálhat és exportálhat egy vevői számlával kapcsolatos információkat egy értékesítési rendeléshez. Az értékesítési számla fejlécében és az értékesítési számla soraiban lévő információkhoz különböző entitások tartoznak.
+
+A következő entitások állnak rendelkezésre az értékesítési számla fejlécében található információkhoz:
+
+- **Értékesítési számla napló fejléce** entitás (SalesInvoiceJournalHeaderEntity)
+- **Értékesítési számla fejlécek V2** entitás (SalesInvoiceHeaderV2Entity)
+
+Javasoljuk, hogy használja a **Értékesítési számla napló fejléce** entitást, mert hatékonyabb élményt nyújt az értékesítési fejlécek importálásához és exportálásához. Ez az entitás nem tartalmazza a **A forgalmi adó összege** (INVOICEHEADERTAXAMOUNT) oszlopban, amely az értékesítési számla fejlécében szereplő forgalmi adó értékét jelöli. Ha az üzleti szcenárió megköveteli ezeket az információkat, használja a **Értékesítési számla fejlécek V2** entitás az értékesítési számla fejléc információinak importálására és exportálására.
+
+A következő entitások érhetők el az értékesítési számlasorok információihoz:
+
+- **Ügyfélszámla sorai** entitás (BusinessDocumentSalesInvoiceLineItemEntity)
+- **Értékesítési számla sorai V3** entitás (SalesInvoiceLineV3Entity)
+
+Amikor meghatározza, hogy melyik sor entitást használja az exportáláshoz, fontolja meg, hogy a teljes vagy a növekményes leküldést használja-e. Ezenkívül vegye figyelembe az adatok összetételét. A **Értékesítési számla sorai V3** Az entitás összetettebb forgatókönyveket is támogat (például leképezés a készletmezőkre). Támogatja a teljes lenyomású exportálási forgatókönyveket is. Növekményes lökésekhez javasoljuk, hogy használja a **Ügyfélszámla sorai** entitás. Ez az entitás sokkal egyszerűbb adatösszetételt tartalmaz, mint a **Értékesítési számla sorai V3** entitás, és előnyben részesítjük, különösen akkor, ha nincs szükség a készletmező integrációjára. A vonal entitások közötti leképezési támogatásbeli különbségek miatt a **Ügyfélszámla sorai** Az entitás általában gyorsabban teljesít, mint a **Értékesítési számla sorai V3** entitás.
 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-sales-orders"></a>Vevői számla feladása és nyomtatása az értékesítési rendelések alapján
 Ezzel az eljárással olyan számlát hozhat létre, amely értékesítési rendelésen alapul. Erre akkor lehet szükség, ha az áruk vagy a szolgáltatások szállítása előtt kíván számlázni az ügyfélnek. 

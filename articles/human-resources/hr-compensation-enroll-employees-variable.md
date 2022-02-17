@@ -13,24 +13,27 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67b3cd95276b9e59e794583fa51ddbcec4c43b1e
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
-ms.translationtype: HT
+ms.openlocfilehash: 49a64407778fba5669ad13f239363bffd4b0c7d6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431314"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071741"
 ---
 # <a name="enroll-an-employee-in-a-variable-compensation-plan"></a>Alkalmazottak felvétele változó kompenzációs konstrukcióba
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A kompenzációkért és juttatásokért felelős vezető felvehet alkalmazottakat változó kompenzációs tervbe, hogy az alkalmazottak készpénzes és nem készpénzes jutalmát kiszámítsa. Ez az eljárás feltételezi, hogy a változó kompenzációs tervet úgy hozta létre, hogy a **Belépés engedélyezése** mező Igen értékre van állítva, és hogy létrehozott alkalmazhatósági szabályokat az adott változó kompenzációs tervhez. Ez az eljárás az USMF bemutatócéget használja. Az eljárás megkezdéséhez kattintson az **Emberi Erőforrások** > **Dolgozók** > **Alkalmazottak** > **Kompenzáció** > **Változó konstrukciós felvétel** lehetőségre.
+A kompenzációkért és juttatásokért felelős vezető felvehet alkalmazottakat változó kompenzációs tervbe, hogy az alkalmazottak készpénzes és nem készpénzes jutalmát kiszámítsa. Ez az eljárás feltételezi, hogy egy változó kompenzációs tervet hoztak létre a **Jelentkezés engedélyezése** mező beállítva **Igen**, és hogy jogosultsági szabályokat hoztak létre a változó kompenzációs tervhez. Ez az eljárás az USMF bemutatócéget használja. Az eljárás megkezdéséhez lépjen a következőre: **Emberi Erőforrások** > **Munkások** > **Alkalmazottak** > **Kártérítés** > **Változótervű beiratkozás**.
 
 1. Kattintson az **Új** elemre.
 2. A **Konstrukció** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
     * A terv keresése úgy kerül szűrésre, hogy csak az alkalmazhatósági szabályok alapján megfelelő változó kompenzációs tervek jelenjenek meg az alkalmazotthoz.  
 3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-4. Az Általános szakasz bővítésének átváltása.
+4. Kapcsolja be a bővítést a **Tábornok** szakasz.
 5. Adja meg a dátumot az **Érvényesség dátuma** mezőben.
 6. Kattintson a **Mentés** gombra.
 7. A **Felülbírálás** szakasz bővítésének átváltása.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 8e56688aac445b84d5a9c0df289d48ffefd5767f673f2329f69582e820c27820
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738149"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087370"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
 
@@ -138,7 +138,6 @@ Nem minden munkafolyamat támogatja a tényleges súllyal renelkező termékek f
 - A tényleges súllyal rendelkező termékek, amelyeknél a változatok engedélyezettek, nem használhatók együtt a mértékegység-változatok átalakítására vonatkozó funkcióval.
 - Tényleges súllyal rendelkező termékek nem jelölhetők meg kereskedelmi „termékcsomagként”.
 - Tényleges súllyal rendelkező termékek csak olyan egységszekvencia-csoporttal használhatók, amelynek az tényleges súly anyagkezelési egységei vannak és amelynek a tényleges súly egysége, a legkisebb sorozat.
-- A tényleges súllyal rendelkező termékek esetén a készletegységek csak akkor konvertálhatók tényleges súly egységre, ha az átalakítás által létrehozott névleges mennyiség több mint 1.
 - A tényleges súllyal rendelkező termékek vonalkódjainak beállítása nem támogatja a változó súly beállítását.
 
 ### <a name="order-processing"></a>Rendelés feldolgozása

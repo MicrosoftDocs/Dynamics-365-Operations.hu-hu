@@ -18,17 +18,17 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.15
-ms.openlocfilehash: edb4d1217617ee3bcb7f528da4aad42fb4fb6b82
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 703f2cb9a1ea8691420765a8598d59f3e6cc6488
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576904"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062952"
 ---
 # <a name="provide-mixed-reality-guides-for-workers-in-production"></a>Vegyes valóság útmutató a termelésben dolgozók számára
 
 [!include [banner](../includes/banner.md)]
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 A termelésben dolgozók számára hasznos, ha a megfelelő időben rendelkezésre állnak a munkájukra vonatkozó megfelelő utasítások. Az *Utasítások* számos területen használhatók, ilyenek többek között: összeállítás, szerviz, műveletek, minősítés és munkavédelem. Ezeknél az alapvető vállalati funkcióknál a folyamatos betanító utasítások segítséget jelentenek a dolgozóknak a jobb teljesítményhez és a pontosabb munkavégzéshez.
 

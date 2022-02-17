@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 72273a125da2e6c4a2fc16b449cd5077f3d767df
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
-ms.translationtype: HT
+ms.openlocfilehash: b5f7342a997407c8701b836c2a6a6222d8512121
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7548303"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074994"
 ---
 # <a name="create-and-invoice-an-intercompany-sales-order-for-an-external-customer"></a>Létrehoz egy vállalatközi értékesítési rendelést egy külső vevő számára
 
@@ -75,5 +75,18 @@ Hajtsa végre ezeket a lépéseket a B jogi személynél. Ezzel az eljárással 
 1. Válassza ki a termelési rendelést, majd válassza az **OK** lehetőséget.
 
 A vevői számlához tartozó vállalatközi értékesítési rendelést a program automatikusan feladja a B jogi személynél. A vállalatközi szállítói számla akkor az automatikusan létrejön az A jogi személynél. Ha az eredeti értékesítési rendelés közvetlen kiszállításként van beállítva, a vevői számla jön létre az eredeti értékesítési rendelés a következő jogi személynél A.
+
+> [!NOTE]
+> Korábban a vállalatközi értékesítési forgatókönyveknél, ha a szállítói számla munkafolyamata a vállalatközi beszerzési vállalatban volt konfigurálva, a vállalatközi értékesítési rendelést nem lehetett sikeresen számlázni. Ezért a szállítói számla munkafolyamatát ki kellett kapcsolni a vállalatközi beszerző vállalatnál. 
+> 
+> Ezt a korlátozást a 10.0.25-ös kiadás legújabb szolgáltatása javította. A vállalatközi értékesítési rendelések most számlázhatók, ha a szállítói számla munkafolyamat konfigurálva van a vállalatközi beszerzési vállalatban.
+> 
+> A funkció engedélyezéséhez kövesse az alábbi lépéseket.
+>
+> 1. Válassza ki a vállalatközi értékesítési jogi személyt.  
+> 2. Nyissa meg a **Kinnlevőségek \> Vevők \> Minden vevő** lehetőséget.
+> 3. Válassza ki a vevőt a vállalatközi beszerző társasághoz.
+> 4. Menj **Tábornok \> Beállít \> Vállalatközi**.
+> 5. A **Megrendelési szabályzat** lapon válassza ki a **A szállítói számla munkafolyamatának megkerülése a vállalatközi szállítói számlákhoz** paraméter.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

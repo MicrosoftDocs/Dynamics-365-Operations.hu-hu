@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ed10813c30b9a49b84a7e8e333fbac3d1e26720a
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: adcb7387b9ac21a88c1ee047d1b9573708a14abb
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731516"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068869"
 ---
 # <a name="develop-a-succession-plan"></a>Utódlási terv kialakítása
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -35,8 +38,8 @@ A szervezet növekedésével el kell kezdenie az utánpótlás-tervezést. Az ut
 7. Válassza a **Személy** lehetőséget.
 8. A **Személy** mezőben adjon meg egy nevet vagy válasszon a legördülő listából.
 9. Válassza ki az **OK** lehetőséget.
-10. A szakértelem-feltérképezésben szereplő bizonyítványok megtekintéséhez vagy szerkesztéséhez bontsa ki a Tanúsítványok **·** gyorsét.
-11. A szakértelem gyorsét kibontva megtekintheti és szerkesztheti a **·** szerepeletendő készségeket.
+10. Bontsa ki a **Tanúsítványok** FastTab a készségleképezésben szereplő tanúsítványok megtekintéséhez vagy szerkesztéséhez.
+11. Bontsa ki a **Készségek** FastTab a bevonni kívánt készségek megtekintéséhez vagy szerkesztéséhez.
 12. A listában jelölje meg az első sort. Például: könyvelés.
 13. Jelölje be a **Választható** jelölőnégyzetet.
 14. A **Fontosság** mezőben válasszonki egy lehetőséget. Ha egy szakértelmet opcionális cikként jelöl meg, ki kell választania a szakértelem fontosságának szintjét.  
@@ -49,7 +52,7 @@ A szervezet növekedésével el kell kezdenie az utánpótlás-tervezést. Az ut
 21. Jelölje ki az 4. sort a listában.
 22. Jelölje be a **Választható** jelölőnégyzetet.
 23. A **Fontosság** mezőben válasszonki egy lehetőséget.
-24. A végzettség-feltérképezésben szerepeltetendő képzettségi kompetenciák megtekintéséhez vagy szerkesztéséhez bontsa ki a **·** Végzettség gyorsét.
+24. Bontsa ki a **Oktatás** FastTab a készségleképezésbe bevonandó oktatási kompetenciák megtekintéséhez vagy szerkesztéséhez.
 25. Válassza a **Végrehajtás** lehetőséget.
 26. Válassza ki az **OK** lehetőséget.
 27. Válassza az **Eredmény** lehetőséget.

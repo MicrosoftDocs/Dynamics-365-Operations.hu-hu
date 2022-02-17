@@ -17,14 +17,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2a356aae6590c2bce289c8d180324027efc76983
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 28bf4ff4e456505efda3777a4f820c54f270c74b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7991742"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068944"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Alkalmazotti és vezetői önkiszolgáló rendszer áttekintése
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -93,7 +96,7 @@ Dokumentumainak megtekintése és kezelése a **Mellékletek** csempével. Minde
 
 Ez a szakasz az **Alkalmazotti önkiszolgáló rendszer** más területeire mutató hivatkozásokat tartalmaz, hasonlóan a **Saját karrieradatok** szakaszhoz.
 
-A **Juttatások** hivatkozással regisztrálhat a juttatásokra. A juttatások kezelésével kapcsolatos további tudnivalókat lásd [a Juttatások áttekintése témakörben](hr-benefits-management-overview.md).
+A **Juttatások** hivatkozással regisztrálhat a juttatásokra. A juttatások kezelésével kapcsolatos további információkért lásd: [Előnyök áttekintése](hr-benefits-management-overview.md).
 
 A **Teljesítmény** területen kiválaszthatja a **Teljesítménynapló** elemet ahol teljesítménnyel kapcsolatos naplóbejegyzéseket hozhat létre, amelyeket a teljesítménycélokhoz és -értékelésekhez is használhat. A **Visszajelzés küldése** lehetőséget választva a szervezeten belüli más alkalmazottaknak is küldhet visszajelzést. A szervezet beállításaitól függően előfordulhat, hogy e-mailek lesznek küldve a címzettnek, a feladónak és a vezetőknek. A szervezeten belül az összes alkalmazottnak lehet visszajelzést küldeni. A visszajelzések küldése nincs vállalatra korlátozva.
 

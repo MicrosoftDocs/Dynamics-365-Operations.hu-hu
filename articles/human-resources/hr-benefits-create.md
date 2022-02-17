@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 0d180ecd9b2f199e8bd85fb5e1e88ce550458bc0
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 222bac97d461cd0a090c3e5d99594c07724818ff
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771459"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066976"
 ---
 # <a name="create-a-new-benefit"></a>Új juttatás létrehozása
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -29,29 +32,29 @@ A feladat bemutatja, hogyan hozhat létre juttatási elemeket, amelyeket az új 
 
 ## <a name="create-benefit-elements"></a>Juttatás elemeinek létrehozása
 
-1. Ugrás az **Emberi erőforrások – Juttatások beállítása juttatás \>\>\> elemeihez**
+1. Menj **Emberi Erőforrások \> Előnyök \> Beállít \> Előnyös elemek**.
 2. Válassza az **Új** lehetőséget.
-3. A Típus mezőbe írja be a most létrehozott **·** juttatástípus nevét.
+3. Ban,-ben **típus** mezőbe írja be a létrehozandó juttatás típusának nevét.
 4. A **Leírás** mezőben adjon meg egy értéket.
-5. Válasszon egy beállítást a Egyidejű belépés **·** mezőben.
+5. Ban,-ben **Egyidejű beiratkozás** mezőben válasszon egy lehetőséget.
 
-    Ha korlátozni kívánta az alkalmazottaknak, hogy több ás tervbe is beléptetsen, típusonként egy **belépést válasszon** ki.
+    Ha korlátozni szeretné az alkalmazottak azon lehetőségét, hogy több egészségügyi tervbe is beiratkozhassanak, válassza a lehetőséget **Típusonként egy beiratkozás**.
 
-6. Válasszon egy beállítást a **·** Bérlistakategória mezőben.
-7. A Tervek **lapon válassza az Új** **·** lehetőséget.
+6. Ban,-ben **Bérszámfejtés kategória** mezőben válasszon egy lehetőséget.
+7. A **Tervek** lapon válassza ki **Új**.
 8. A **Konstrukció** mezőben adjon meg egy értéket.
 9. A **Leírás** mezőben adjon meg egy értéket.
-10. A **Típus** mezőben adjon meg vagy válasszon ki egy értéket.
-11. Válasszon egy **beállítást a** Bérszámfejtés hatása mezőben.
+10. Ban,-ben **típus** mezőbe írja be vagy válasszon értéket.
+11. Ban,-ben **A bérszámfejtési hatás** mezőben válasszon egy lehetőséget.
 12. Válassza a **Mentés** lehetőséget.
 
 ## <a name="create-a-benefit"></a>Juttatás létrehozása
 
-1. Ugrás az **Emberi erőforrások \>\> juttatásokhoz**.
+1. Menj **Emberi Erőforrások \> Előnyök \> Előnyök**.
 2. Válassza az **Új** lehetőséget.
-3. Írjon be vagy válasszon ki egy értéket a Terv mező legördülő **·** párbeszédpanelén.
-4. A Beállítás **·** mezőben adjon meg vagy válasszon ki egy értéket.
-5. Az Hatályos **·** mezőben adja meg a dátumot és az időpontot.
-6. Válassza **a Juttatás létrehozása** lehetőséget.
+3. A legördülő párbeszédpanelen a **Terv** mezőbe írja be vagy válasszon értéket.
+4. Ban,-ben **választási lehetőség** mezőbe írja be vagy válasszon értéket.
+5. Ban,-ben **Hatékony** mezőbe írja be a dátumot és az időt.
+6. Válassza ki **Hozzon létre előnyt**.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

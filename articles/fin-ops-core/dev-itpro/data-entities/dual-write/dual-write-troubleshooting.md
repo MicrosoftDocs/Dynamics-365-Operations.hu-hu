@@ -1,6 +1,6 @@
 ---
 title: Általános hibaelhárítás
-description: Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos általános információkat tartalmaz.
+description: Ez a témakör általános hibaelhárítási információkat tartalmaz a Finance and Operations alkalmazások és a kettős írási integrációhoz Dataverse.
 author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
@@ -9,25 +9,25 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: bcedb9f6e8fb15210512ed6a376d4329759593e4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: f6f5b9f26990e2f4db9bf69040a6c4be31400b40
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781174"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062338"
 ---
 # <a name="general-troubleshooting"></a>Általános hibaelhárítás
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos általános információkat tartalmaz.
+
+Ez a témakör általános hibaelhárítási információkat tartalmaz a Finance and Operations alkalmazások és a kettős írási integrációhoz Dataverse.
 
 > [!IMPORTANT]
 > Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazda szerepkört vagy Microsoft Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
 
-## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a> A beépülő modul nyomkövetési naplójának engedélyezése és megtekintése a Dataverse szolgáltatásban a hiba részleteinek megtekintéséhez
+## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>A beépülő modul nyomkövetési naplójának engedélyezése és megtekintése a Dataverse szolgáltatásban a hiba részleteinek megtekintéséhez
 
 **A nyomkövetési napló bekapcsolásához és a hibák megtekintéséhez szükséges szerepkör:** Rendszergazda
 
@@ -44,37 +44,37 @@ Ha meg szeretné tekinteni a nyomkövetési naplót, hajtsa végre az alábbi l�
 2. Keresse meg azokat a nyomkövetési naplókat, ahol a **Típus neve** oszlop értéke **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. A teljes napló megjelenítéséhez kattintson duplán egy elemre, majd a **Végrehajtás** gyorslapján tekintse át az **Üzenetblokk** szövegét.
 
-## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Hibakeresési mód engedélyezése az Finance and Operations alkalmazások élő szinkronizálási problémáinak elhárításához
+## <a name="enable-debug-mode-to-troubleshoot-live-synchronization-issues-in-finance-and-operations-apps"></a>Engedélyezze a hibakeresési módot az élő szinkronizálási problémák elhárításához a Finance and Operations alkalmazásokban
 
 **A hibák megtekintéséhez szükséges szerepkör:** Rendszergazda
 
-A Dataverse alkalmazásból származó kettős írású hibák megjelenhetnek a Finance and Operations alkalmazásban. A hibák szóbeli naplózásának engedélyezéséhez kövesse az alábbi lépéseket:
+Kettős írási hibák, amelyek innen erednek Dataverse megjelenhet a Finance and Operations alkalmazásban. A hibák szóbeli naplózásának engedélyezéséhez kövesse az alábbi lépéseket:
 
-1. A Finance and Operations alkalmazásban minden projektkonfigurációhoz van egy **IsDebugMode** jelző a **DualWriteProjectConfiguration** táblában.
-2. Nyissa meg a **DualWriteProjectConfiguration** elemet az Excel bővítménnyel. A bővítmény használatához engedélyezze a tervezési módot a Finance and Operations Excel bővítményben, és adja hozzá a **DualWriteProjectConfiguration** elemet a laphoz. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
+1. A Finance and Operations alkalmazás összes projektkonfigurációjához van egy jelző **IsDebugMode** a **DualWriteProjectConfiguration** asztal.
+2. Nyissa meg a **DualWriteProjectConfiguration** elemet az Excel bővítménnyel. A bővítmény használatához engedélyezze a tervezési módot a Finance and Operations Excel bővítményben, és adja hozzá a **DualWriteProjectConfiguration** a laphoz. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
 3. Állítsa az **IsDebugMode**-ot **Yes**-re a projektben.
 4. Futtassa a hibákat létrehozó esetet.
 5. A szóbeli naplók a **DualWriteErrorLog** táblában tárolódnak.
 6. Az adatok kereséséhez a táblázatkezelőben használja a következő linket: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, szükség szerint a `999`-t helyettesítve.
 7. Frissítsen újra a [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe) után, amely a 37-es és későbbi platformfrissítésekhez érhető el. Ha ez a javítás telepítve van, akkor a hibakeresési mód több naplót fog rögzíteni.  
 
-## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Szinkronizálási hibák keresése a Finance and Operations alkalmazás virtuális gépén
+## <a name="check-synchronization-errors-on-the-virtual-machine-for-the-finance-and-operations-app"></a>Ellenőrizze a virtuális gép szinkronizálási hibáit a Finance and Operations alkalmazásban
 
 **A hibák megtekintéséhez szükséges szerepkör:** Rendszergazda
 
 1. Jelentkezzen be a Microsoft Dynamics LifeCycle Services (LCS) szolgáltatásba.
 2. Nyissa meg azt az LCS-projektet, amelyhez kettős írású tesztelést szeretne végezni.
 3. Válassza a **Felhőbeli környezetek** csempét.
-4. A távoli asztal használatával jelentkezzen be a Finance and Operations-alkalmazás virtuális gépébe (VM). Az LCS képernyőn látható helyi fiókot használja.
+4. A Remote Desktop segítségével jelentkezzen be a Finance and Operations alkalmazás virtuális gépére (VM). Az LCS képernyőn látható helyi fiókot használja.
 5. Nyissa meg az eseménynaplót.
 6. Válassza az **Alkalmazás- és szolgáltatásnaplók \> Microsoft \> Dynamics \> AX-DualWriteSync \> Működő** részt.
 7. A legutóbbi hibák listájának áttekintése.
 
-## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>A Dataverse-környezet leválasztása és másik csatolása a Finance and Operations-alkalmazásból
+## <a name="unlink-and-link-another-dataverse-environment-from-a-finance-and-operations-app"></a>Leválasztás és másik összekapcsolás Dataverse környezet egy Finance and Operations alkalmazásból
 
-**A környezet szétválasztásához szükséges szerepkör:** Rendszergazda vagy a Finance and Operations alkalmazásban vagy a Dataverse szolgáltatásban.
+**A környezet leválasztásához szükséges szerepkör:** Rendszergazda akár a Finance and Operations alkalmazáshoz, akár Dataverse.
 
-1. Bejelentkezés a Finance and Operations alkalmazásba.
+1. Jelentkezzen be a Finance and Operations alkalmazásba.
 2. Nyissa meg a **Munkaterületek \> Adatkezelés** pontot, és válassza a **Kettős írás** csempét.
 3. Válassza ki az összes futó leképezést, és kattintson a **Leállítás** elemre.
 4. Válassza a **Környezet leválasztása** elemet.

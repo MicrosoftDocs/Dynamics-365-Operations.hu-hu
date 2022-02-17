@@ -2,7 +2,7 @@
 title: Adatok importálásának konfigurálása a SharePoint-rendszerből
 description: Ez a témakör ismerteti az adatok importálásának módját a Microsoft SharePoint rendszerből.
 author: NickSelin
-ms.date: 11/19/2020
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-ms.openlocfilehash: 6cd717c0c599d68574a5a064761c8d6777418515
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: 9ac328e660c7a8a3b4a4f34a650062a0fa974771
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7675345"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074766"
 ---
 # <a name="configure-data-import-from-sharepoint"></a>Adatok importálásának konfigurálása a SharePoint-rendszerből
 
@@ -140,7 +140,7 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
 
 4. A modell-leképezés [felügyelet nélkül](#limitations) futtatható kötegelt módban. Ebben az esetben minden alkalommal, amikor egy köteg futtatja az adott elektronikus jelentéskészítési formátumot, a rendszer egyetlen fájlt importál a beállított fájlforrásokból.
 
-    Ha egy fájl sikeresen importálva lett a SharePoint mappából, az törölve lesz a mappából, és átkerül a sikeresen importált fájlok mappájába vagy a figyelmeztetésekkel importált fájlok mappájába. Máskülönben átkerül a sikertelen fájlok mappájába, vagy ebben a mappában marad, ha a hibás fájlok mappája nincs beállítva. 
+    Ha egy fájl sikeresen importálva lett a SharePoint mappából, az törölve lesz a mappából, és átkerül a sikeresen importált fájlok mappájába vagy a figyelmeztetésekkel importált fájlok mappájába. Ellenkező esetben a rendszer áthelyezi a sikertelen fájlok mappájába, vagy ebben a mappában marad, ha a sikertelen fájlok mappája nincs beállítva. 
 
 5. Adja meg a bizonylatazonosítót, például **V-00001**, majd válassza az **OK** lehetőséget.
 
@@ -192,11 +192,11 @@ Elektronikus jelentésfájlok tárolásához a SharePoint-helyen, konfigurálnia
 
 ## <a name=""></a><a name="limitations">Korlátozások</a>
 
-Az ER keretrendszer nem képes új kötegelt feladatot kezdeményezni, amely az adatimportáláshoz felügyelet nélküli módban futtatja a modell-leképezést. Ennek végrehajtásához létre kell hoznia egy új logikát annak érdekében, hogy az alkalmazás felhasználói felületéről (UI) be lehessen hívni a konfigurált ER-modell leképezést az adatok bejövő fájlokból történő importálásához. Ennek megfelelően ehhez műszaki erőfeszítésre van szükség. 
+verzióiban Dynamics 365 Finance A 10.0.25-ös verzió előtt az ER-keretrendszer felhasználói felülete (UI) nem kínál olyan új kötegelt feladat kezdeményezését, amely modellleképezést futtat az adatok importálásához felügyelet nélküli módban. Ehelyett új logikát kell kifejlesztenie, hogy a konfigurált ER-modell-leképezés meghívható legyen az alkalmazás felhasználói felületéről a bejövő fájlokból származó adatok importálásához. Ennek a logikának a kialakításához némi mérnöki munkára van szükség. 
 
-Ha további tájékoztatást szeretne kapni a kapcsolódó ER API-ról, tekintse át a [Kód egy formátumleképezés futtatásához adatimportáláshoz](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) szakaszt az [Elektronikus jelentési keretrendszer API módosításai az Application update 7.3 számára](er-apis-app73.md) témakörben.
+A vonatkozó ER API-val kapcsolatos további információkért tekintse meg a [Kód az adatimportáláshoz szükséges formátumleképezés futtatásához](er-apis-app73.md#code-to-run-a-format-mapping-for-data-import) szakasz be [Az ER-keretrendszer API változásai a 7.3-as alkalmazásfrissítéshez](er-apis-app73.md). Tekintse át a `BankImport_RU` modell `Application Suite` osztályának kódját , és tekintse meg, hogyan hajthatja végre az egyéni logikát. A`BankImport_RU` osztály kiterjeszti a`RunBaseBatch` osztály. Különösen tekintse át a`runER()` módszer, ahol a`ERIModelMappingDestinationRun` Az objektum egy ER-modell-leképezés futtatójaként jön létre.
 
-Tekintse át a `BankImport_RU` modell `Application Suite` osztályának kódját , és tekintse meg, hogyan hajthatja végre az egyéni logikát. Ez az osztály kiterjeszti az `RunBaseBatch` osztályt. Vizsgálja meg a `runER()` metódust, ahol az `ERIModelMappingDestinationRun` objektum létrejön az ER modell-leképezés futtatójaként.
+A Finance 10.0.25-ös és újabb verzióiban az ER-keretrendszer felhasználói felülete lehetőséget kínál egy új kötegelt feladat kezdeményezésére, amely modellleképezést futtat az adatok importálásához felügyelet nélküli módban. A folyamattal kapcsolatos további információkért lásd: [Importáljon adatokat kötegelt módban a manuálisan kiválasztott fájlokból](er-configure-data-import-batch.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -205,6 +205,8 @@ Tekintse át a `BankImport_RU` modell `Application Suite` osztályának kódját
 [Az ER keretrendszer API módosításai az Application update 7.3 számára](er-apis-app73.md)
 
 [Az ER keretrendszer API módosításai az Application update 10.0.23 számára](er-apis-app10-0-23.md)
+
+[Az ER keretrendszer API módosításai az Application update 10.0.25 számára](er-apis-app10-0-25.md)
 
 
 

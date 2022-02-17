@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f082fe4af9c095d841dbcabf85d365a3fbee71b79a7765e39fbe691db7da458e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: a4c8086d511892f8965dfefca2789742a006f63f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771950"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068059"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Oldalak párhuzamos megjelenítése a Megnyitás új ablakban funkció használatával
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a cikk azt ismerteti, hogy miként jeleníthetők meg az oldalak egymás mellett.
 

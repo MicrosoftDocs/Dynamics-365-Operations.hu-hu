@@ -9,15 +9,18 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: raprofit
 ms.search.validFrom: 2021-06-24
-ms.openlocfilehash: ceb0a60ccf3d1c989d8663e933faaa5e430d314695e20990c9086cd1b8325ff1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: ad980889247e0239ad743078cb013c1c5839f676
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773727"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070146"
 ---
 # <a name="configure-expenditure-reviewers"></a>Kiadásellenőrök konfigurálása
 [!include[banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Beállíthat dinamikus kiadásellenőröket a kiadások ellenőrzésre küldéséhez vagy azon felhasználó alapján, aki hozzá van rendelve egy projektszerepkörhöz, vagy azon pénzügyi dimenzió alapján, ahol a kiadás megjelenik. A munkafolyamat a megadott projektszerepkör vagy pénzügyi dimenzió tulajdonosa alapján határozza meg, hogy kinek kell elküldeni a kiadást.
 
@@ -49,7 +52,7 @@ A pénzügyi dimenziókat az egyes jogi személyek fiókstruktúrái vezérlik. 
 
 ## <a name="example-1-expenditure-reviewers-based-on-organization-distributions"></a>1. példa: Költségellenőrök a szervezeti kiosztások alapján
 
-A Contoso Appliances vállalatnál dolgozik, és szervezetének hat részlege és 10 költséghelye van. Új beszerzési igénylés beküldése esetén először a részlegvezető, majd a költséghelyvezető jóváhagyását kell megszerezni.
+Ön a Contoso Appliances vállalatnál dolgozik, és szervezetének hat osztálya és 10 költséghelye van. Új beszerzési igénylés beküldése esetén először a részlegvezető, majd a költséghelyvezető jóváhagyását kell megszerezni.
 
 Ebben a példában két *beszerzési igénylési kiadásellenőrt* konfigurál:
 
@@ -62,7 +65,7 @@ A beszerzési igénylés létrehozásakor a részleg és a költséghely pénzü
 
 ## <a name="example-2-expenditure-reviewers-based-on-project-distributions"></a>2. példa: Költségellenőrök a projektkiosztások alapján
 
-Ön a szolgáltatási részlegen dolgozik a Contoso Appliances vállalatnál. A szervezet előírja, hogy minden beszerzési rendelés projektvezetőjének jóvá kell hagyni a költséget. Ezenkívül a projekt költséghely-kezelőjének is jóvá kell hagynia. A jóváhagyásokat egyszerre is el lehet végezni. A munkafolyamat folytatása előtt minden esetben mindkét felhasználónak jóvá kell hagynia a beszerzési rendelést.
+Ön a Contoso Appliances szolgáltatási részlegénél dolgozik. A szervezet előírja, hogy minden beszerzési rendelés projektvezetőjének jóvá kell hagyni a költséget. Ezenkívül a projekt költséghely-kezelőjének is jóvá kell hagynia. A jóváhagyásokat egyszerre is el lehet végezni. A munkafolyamat folytatása előtt minden esetben mindkét felhasználónak jóvá kell hagynia a beszerzési rendelést.
 
 Ebben a példában létrehoz egy *beszerzési rendelési kiadásellenőrt*, amelynek a **PM és költséghely** nevet adja. Bejelöli a **Projektvezető** jelölőnégyzetet, és a **Költséghely dimenzió** számára beállítja az **Igen** értéket a **Beszerzési rendelési kiadásellenőr** oldal **Projektkiosztások** lapján. A konfiguráció részeként gondoskodni kell arról, hogy a **Projektvezető** mező minden projektnél be legyen állítva, és hogy a **Pénzügyi dimenzióértékek** oldalon az összes költséghelyhez meg legyen adva tulajdonos.
 

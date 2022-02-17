@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 23f720db57bf60c81182ed8ae4bdac965676741ce2a2e53bc699c2bd49325b74
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: cb4693f3c856e7abcc39cbd658183d01ec98a066
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754137"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063747"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. május 14.)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ez a témakör a Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le. A változtatások a 8.1.3244-es buildszámra vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok tájékoztatásként a Lifecycle Services (LCS) támogatási számaira vonatkoznak.
 
 ## <a name="platform-changes"></a>Platformok módosításai
 
-Ez a heti kiadás tartalmazza a platform változásait. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.10 verziójához (2020. május)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Ez a kiadás hibajavításokat és a mentett nézetek módosításait tartalmazza.
+Ez a heti kiadás tartalmazza a platform változásait. További információkért lásd [Platformfrissítések a Finance and Operations alkalmazások 10.0.10-es verziójához (2020. május)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Ez a kiadás hibajavításokat és a mentett nézetek módosításait tartalmazza.
  
 ## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Biztosítja, hogy a Dataverse választási listák megfelelnek a Szabadság felsorolásainak (436343)
 

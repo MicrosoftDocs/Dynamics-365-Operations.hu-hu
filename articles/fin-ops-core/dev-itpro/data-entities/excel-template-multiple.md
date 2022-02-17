@@ -1,6 +1,6 @@
 ---
 title: Adatsablonok több munkalappal
-description: Ez a témakör leírja, hogyan lehet Excel adatentitás-sablonok segítségével adatokat importálni a Finance and Operations szolgáltatásba.
+description: Ez a témakör leírja, hogyan lehet Excel adatentitás-sablonok segítségével adatokat importálni a Finance and Operations alkalmazásba.
 author: peakerbl
 ms.date: 01/01/2018
 ms.topic: article
@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
-ms.openlocfilehash: 343767d056eb164a7da70fb983fe37569a12986c
-ms.sourcegitcommit: 7aa7d756e1e98a53da62e03c608a9597ef9893ea
-ms.translationtype: HT
+ms.openlocfilehash: cf3c423bdf06685a3c4025551927123773ae818a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "7404000"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070061"
 ---
 # <a name="data-templates-with-multiple-worksheets"></a>Adatsablonok több munkalappal
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Az adatok kezelése az alkalmazásban támogatja a Microsoft Excel alapú sablonokat az adatentitások esetén. Ezek a sablonok egy vagy több munkalapot is tartalmazhatnak. A több munkalapot tartalmazó sablonok gyakran használatosak olyan esetekben, amikor célszerű egyetlen fájlban kezelni az adatokat, és több entitásba importálni őket. Jó példát jelentenek erre a telephelyek és a raktárak.
 

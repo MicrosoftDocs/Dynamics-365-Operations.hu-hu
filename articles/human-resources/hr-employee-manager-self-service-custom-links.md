@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-21
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1aac3c50cbe40d65abc9bedcdd2a64a6e5a1c1ad
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
-ms.translationtype: HT
+ms.openlocfilehash: 1cf4ed8d2373a71594b9b03306c582ed998b6e39
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431184"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071708"
 ---
 # <a name="create-custom-links-in-manager-self-service"></a>Egyéni hivatkozások létrehozása a vezetői önkiszolgáló rendszerhez
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -36,11 +39,11 @@ A funkció használatához engedélyeznie kell az **Egyéni hivatkozások a Veze
 
 1. Válassza ki a **Vezetői önkiszolgáló szolgáltatást** lehetőséget a **Human Resources paraméterek** között.
 
-2. A **Hivatkozások beállítása vezetőknek** szakaszban hivatkozásokat adhat hozzá, módosíthat vagy törölhet. A hivatkozásokat ezenfelül csoportosíthatja, hogy egy csoportban jelenjenek meg a vezetői önkiszolgáló szolgáltatásban.
+2. A **Hivatkozások beállítása vezetőknek** szakaszban hivatkozásokat adhat hozzá, módosíthat vagy törölhet. A hivatkozásokat csoportosíthatja is, hogy egy csoportban jelenjenek meg **Menedzser önkiszolgáló**.
 
    ![Egyéni hivatkozások beállítása a vezetői önkiszolgálás szolgáltatásban.](./media/hr-employee-manager-self-service-custom-links-setup.png)
 
-3. A hivatkozások megjelenítéséhez nyissa meg az Alkalmazotti önkiszolgáló rendszer **Saját csoport** lapját.
+3. A hivatkozások megtekintéséhez nyissa meg a **Az én csapatom** lap be **Alkalmazotti önkiszolgáló**.
 
    ![Egyéni hivatkozások megtekintése a vezetői önkiszolgálás szolgáltatásban.](./media/hr-employee-manager-self-service-custom-links-view.png)
 

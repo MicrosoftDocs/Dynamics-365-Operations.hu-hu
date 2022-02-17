@@ -11,16 +11,18 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8f438e18356a6c16cc75bb59153ae7353d984a5a
-ms.sourcegitcommit: ecd4c148287892dcd45656f273401315adb2805e
-ms.translationtype: HT
+ms.openlocfilehash: 702985ef9726690829e35e43d270477be318fc41
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "7500330"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075214"
 ---
 # <a name="gs1-bar-codes-and-qr-codes"></a>GS1-vonalkódok és QR-kódok
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- Preview until 10.0.25 GA -->
 
 A raktári dolgozóknak gyakran több feladatot is el kell végezniük, amikor egy mobileszköz szkennerét használják egy tétel, paletta vagy konténer mozgásának regisztrálására. Ezek a feladatok magukban foglalhatják mind a vonalkódok beolvasását, mind az információk manuális bevitelét a mobileszközön. A vonalkódok egy vállalat-specifikus formátumot használnak, amelyet a Microsoft Dynamics 365 Supply Chain Management segítségével határoz meg és kezel.
 

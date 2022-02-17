@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: 92c427d3063c34f263d5bc449be6fac695b5912d
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: f74bb4bd4ed66520c04261bd9f82faad7775817e
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952627"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062111"
 ---
 # <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 Ez a témakör a Készletláthatóság által biztosított nyilvános API-kat ismerteti.
 
@@ -49,7 +49,7 @@ A Microsoft biztosít egy out-of-box *Postman* kérésgyűjteményt. Ezt a gyűj
 > [!NOTE]
 > Az elérési útvonal {environmentId} része a Microsoft Dynamics Lifecycle Services (LCS) környezetazonosítója.
 > 
-> A tömeges API legfeljebb 512 rekordot ad vissza minden kéréshez.
+> A tömeges API legfeljebb 512 rekordot tud visszaadni minden kérésnél.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>A Lifecycle Services környezetének megfelelő végpont megkeresése
 
@@ -251,7 +251,7 @@ A következő példa a `dimensionDataSource` nélküli törzstartalom mintáját
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Több változási esemény létrehozása
 
-Ez az API egyszerre több rekordot is létrehozhat. Az egyetlen különbség az API és az [egyszeri esemény API](#create-one-onhand-change-event) között a `Path` és a `Body` értékek. Ehhez az API-hoz a `Body` egy rekordtömböt biztosít. A rekordok maximális száma 512, ami azt jelenti, hogy az elérhető tömeges módosítási API egyszerre legfeljebb 512 módosítási eseményt támogathat.
+Ez az API egyszerre több rekordot is létrehozhat. Az egyetlen különbség az API és az [egyszeri esemény API](#create-one-onhand-change-event) között a `Path` és a `Body` értékek. Ehhez az API-hoz a `Body` egy rekordtömböt biztosít. A rekordok maximális száma 512, ami azt jelenti, hogy az aktuális tömeges módosítási API egyszerre akár 512 változási eseményt is támogathat.
 
 ```txt
 Path:
@@ -478,7 +478,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Készleten lévő lekérdezés
 
-Az aktuális készlet lekérdezési API-ja segítségével lekérheti a termékek _aktuális_ készletének adatait. Az API jelenleg legfeljebb 100 különálló cikk érték alapján való lekérdezését `ProductID` támogatja. Az `SiteID` egyes `LocationID` lekérdezések több és több értéket is meg lehet adni. A maximális korlát a következőként van meghatározva:`NumOf(SiteID) * NumOf(LocationID) <= 100`
+Használja a _Lekérdezés kéznél_ API a termékek aktuális készletadatainak lekéréséhez. Az API jelenleg legfeljebb 100 egyedi elem lekérdezését támogatja`ProductID` érték. Többszörös`SiteID` és`LocationID` értékek is megadhatók az egyes lekérdezésekben. A maximális korlát a következőképpen van meghatározva `NumOf(SiteID) * NumOf(LocationID) <= 100`.
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Lekérdezés a post módszer használatával
 

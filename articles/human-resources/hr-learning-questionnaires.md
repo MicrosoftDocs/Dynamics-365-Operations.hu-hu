@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: f67962a1bea071475395c1fea5ee49224025b574
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: ad5f3572e7b4b0594ffce6abaddceac955d1c678
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728785"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069504"
 ---
 # <a name="questionnaires"></a>Kérdőívek
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -40,9 +43,9 @@ Az alábbi táblázatban találhatóak hivatkozások, a kérdőív fő feladatai
 
 | Témakör| Leírás|
 |------|------------|
-| [Kérdőívek tervezése](hr-learning-design-questionnaires.md) | Ez a témakör a kérdőívek tervezésével kapcsolatban tartalmaz tájékoztatást. A tervezési folyamat magában foglalja az előfeltételeket, a kérdéseket, a válaszokat, valamint ezek egyesítését kérdőív formába. |
-| [Kérdőívek terjesztése és ütemezése](hr-learning-distribute-questionnaires.md) | Ez a témakör a kérdőívek válaszadók között való elosztásával és a kérdőívek kitöltésével kapcsolatban tartalmaz tájékoztatást. |
-| [A kérdőív eredményeinek megtekintése és kiértékelése](hr-learning-evaluate-questionnaire-results.md) | Ez a témakör a kitöltött kérdőívek eredményeinek megtekintésével és kiértékelével kapcsolatban tartalmaz tájékoztatást. |
+| [Kérdőívek tervezése](hr-learning-design-questionnaires.md) | Ez a témakör a kérdőív megtervezésével kapcsolatban nyújt információkat. A tervezési folyamat magában foglalja az előfeltételeket, a kérdéseket, a válaszokat, valamint ezek egyesítését kérdőív formába. |
+| [Kérdőívek terjesztése és ütemezése](hr-learning-distribute-questionnaires.md) | Ez a témakör tájékoztatást nyújt arról, hogyan lehet kérdőívet kiosztani a válaszadóknak, és hogyan kell kitölteni a kérdőíveket. |
+| [A kérdőív eredményeinek megtekintése és kiértékelése](hr-learning-evaluate-questionnaire-results.md) | Ez a témakör tájékoztatást nyújt a kitöltött kérdőívek eredményeinek megtekintéséről és értékeléséről. |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

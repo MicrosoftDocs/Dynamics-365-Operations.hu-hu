@@ -1,6 +1,6 @@
 ---
 title: Ellenőrzőegység integrációs mintája Svédország esetén
-description: Ez a témakör áttekintést nyújt Svédország pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
+description: Ez a témakör áttekintést nyújt a svédországi költségvetési integrációs mintáról Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -9,67 +9,67 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-10-08
-ms.openlocfilehash: 32c2cf31d82d17d3391536e7a9f1722e1462c336
-ms.sourcegitcommit: 0d2de52e12fdb9928556d37a4813a67b303695dc
+ms.openlocfilehash: ace1bd5b1a06317b6753a34779ecfa96e519a63e
+ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/21/2021
-ms.locfileid: "7944766"
+ms.lasthandoff: 02/01/2022
+ms.locfileid: "8077013"
 ---
 # <a name="control-unit-integration-sample-for-sweden"></a>Ellenőrzőegység integrációs mintája Svédország esetén
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt Svédország pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
+Ez a témakör áttekintést nyújt a svédországi költségvetési integrációs mintáról Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
-> Ez a minta pénzügyi integrációs funkció a korábbi, Svédországra vonatkozó ellenőrző egységekkel való [POS-integrációt helyettesíti](retail-sdk-control-unit-sample.md). A korábbi minta nem használja ki a pénzügyi integrációs keretrendszert, és a későbbi frissítések során [elavulttá](./fiscal-integration-for-retail-channel.md) válik. A korábbi minta Dynamics 365 Commerce **10.0.22-es vagy korábbi verziónak megfelelő mintába való áttelepítésével kapcsolatos tudnivalókat lásd: Áttelepítés a korábbi integrációs**[mintából](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample).
+> Ez a minta fiskális integrációs funkció a korábbi helyébe lép [minta POS-integrációhoz vezérlőegységekkel Svédország számára](retail-sdk-control-unit-sample.md). A korábbi minta nem használja ki a [költségvetési integrációs keret](./fiscal-integration-for-retail-channel.md) és a későbbi frissítések során elavulttá válik. A korábbi mintáról a megfelelő mintára való átállással kapcsolatos információkért Dynamics 365 Commerce változat **10.0.22 és korábbi**, lát [Áttérés a korábbi integrációs mintáról](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample).
 
-A Svédországra vonatkozó Commerce funkció egy mintaintegrációt tartalmaz a pénztár és Svédországspecifikus pénzügyi eszközök, más néven *vezérlőegységek* között. Ez a minta kiterjeszti [a pénzügyi integrációs funkciókat.](fiscal-integration-for-retail-channel.md) A feltételezés az, hogy a vezérlőegység fizikailag kapcsolódik egy olyan hardverállomáshoz, amelyhez a POS párosítva van. Ez a minta például a [Retail HTT AB CleanCash Type A vezérlőegységének alkalmazásprogramozási felületét (API)](https://www.retailinnovation.se/produkter) használja. A CleanCash API 1.1.4-es verziója használatos.
+A svédországi Kereskedelmi funkció magában foglalja az értékesítési pont (POS) mintaintegrációját Svédország-specifikus adóeszközökkel, amelyek az ún.*vezérlőegységek*. Ez a minta kiterjeszti a [fiskális integrációs funkcionalitás](fiscal-integration-for-retail-channel.md). Feltételezzük, hogy a vezérlőegység fizikailag csatlakozik egy hardver állomáshoz, amellyel a POS párosítva van. Példaként ez a minta az alkalmazásprogramozási felületet (API) használja [CleanCash A típusú](https://www.retailinnovation.se/produkter) vezérlőegység a Retail Innovation HTT AB-től. A CleanCash API 1.1.4-es verziója használatos.
 
-A minta forráskód formájában kapható, és része a Retail szoftverfejlesztői csomagnak (SDK).
+A minta forráskód formájában áll rendelkezésre, és a kiskereskedelmi szoftverfejlesztő készlet (SDK) része.
 
-A Microsoft nem ad ki hardvert, szoftvert vagy dokumentációt a Retail Retail HTT AB rendszerből. Az ellenőrző egység le- és működésről a [Retail Retail HTT AB elérhetőségét és elérhetőségét tudni](https://www.retailinnovation.se/) lehet.
+A Microsoft nem ad ki semmilyen hardvert, szoftvert vagy dokumentációt a Retail Innovation HTT AB-től. A vezérlőegység beszerzésével és kezelésével kapcsolatos információkért forduljon a következőhöz [Retail Innovation HTT AB](https://www.retailinnovation.se/).
 
 ## <a name="scenarios"></a>Forgatókönyvek
 
-A Svédországra vonatkozó vezérlőegység-integrációs minta a következő lehetőségeket tartalmazza:
+A svédországi vezérlőegység-integrációs minta a következő képességeket tartalmazza:
 
-- A rendszer automatikusan regisztrálja az értékesítési, a visszaadott és a bevételezési példányokat egy olyan vezérlőegységben, amely a PÉNZTÁRhoz csatlakoztatott hardverállomáshoz kapcsolódik.
-- A regisztrált tranzakció vezérlőkódját és gyártási számát a rendszer az ellenőrző egységből rögzíti, és a tranzakcióba menti. Ezt az adatot pénzügyi válasznak is *nevezik*. A pénzügyi válasz megtekinthető az Üzlet **tranzakciós** lapján.
-- Az ellenőrző kód egyéni mezői és az ellenőrző egység gyártási száma hozzáadható egy bevételezési elrendezéshez. Ily módon kinyomtathatja egy tranzakció pénzügyi válaszát egy nyugtára.
-- A tranzakció pénzügyi válasza megjelenik az **Elektronikus napló (Svédország)** csatornajelentésen.
-- Számos hibakezelési beállítás áll rendelkezésre. Íme néhány példa:
+- Az értékesítési, visszaküldési és nyugtapéldányok automatikusan regisztrálásra kerülnek egy vezérlőegységben, amely a POS-szal párosított hardverállomáshoz csatlakozik.
+- A regisztrált tranzakcióhoz tartozó vezérlőegység vezérlőkódja és gyártási száma rögzítésre kerül a vezérlőegységből és elmentésre kerül a tranzakcióba. Ezeket az adatokat a *fiskális válasz*. A fiskális válasz megtekinthető a **Bolti tranzakciók** oldalon.
+- Egyedi mezők az ellenőrző kódhoz és a vezérlőegység gyártási számához adhatók hozzá a nyugtaelrendezéshez. Ily módon kinyomtathatja egy tranzakció fiskális válaszát egy nyugtára.
+- A tranzakció fiskális válaszát a **Elektronikus folyóirat (Svédország)** csatorna jelentés.
+- Számos hibakezelési lehetőség áll rendelkezésre. Íme néhány példa:
 
-    - Próbálja meg újra a pénzügyi regisztrációt, ha újrapróbálkozás lehetséges. A pénzügyi regisztrációt újrapróbálhatja, ha például a vezérlőegység nincs csatlakoztatva, nem áll készen vagy nem válaszol.
-    - Pénzügyi regisztráció elhalasztása.
-    - Pénzügyi regisztráció kihagyása, vagy a tranzakció megjelölése regisztráltként, és infókódok beírása a hiba okának és a további információknak a rögzítéséhez.
-    - Ellenőrizze az ellenőrző egység rendelkezésre állását, mielőtt új értékesítési tranzakciót nyit meg vagy egy értékesítési tranzakciót véglegesítettek.
+    - Próbálkozzon újra az adóbejegyzéssel, ha lehetséges. Megpróbálhatja újra a fiskális regisztrációt, ha például a vezérlőegység nincs csatlakoztatva, nincs készenlétben vagy nem válaszol.
+    - Az adóbejegyzés elhalasztása.
+    - Hagyja ki a fiskális regisztrációt, vagy jelölje meg a tranzakciót regisztráltként, és adjon meg információs kódokat a hiba okának rögzítéséhez és további információkhoz.
+    - Ellenőrizze a vezérlőegység elérhetőségét egy új értékesítési tranzakció megnyitása vagy egy értékesítési tranzakció véglegesítése előtt.
 
 ### <a name="limitations-of-the-sample"></a>A minta korlátai
 
-A Svédországra vonatkozó vezérlőegység-integrációs minta jelenleg nem támogatja a vevői rendelési helyzeteket.
+A svédországi vezérlőegység-integrációs minta jelenleg nem támogatja az ügyfélrendelési forgatókönyveket.
 
 ## <a name="setting-up-the-integration-with-control-units"></a>A vezérlőegységekkel való integráció beállítása
 
-A Svédországra vonatkozó beállításokkal kapcsolatos további tudnivalókat lásd [a Commerce for Sweden beállításával](./emea-swe-cash-registers.md#setting-up-commerce-for-sweden) kapcsolatban.
+A Svédország számára szükséges beállításokkal kapcsolatos további információkért lásd: [A Commerce beállítása Svédország számára](./emea-swe-cash-registers.md#setting-up-commerce-for-sweden).
 
-### <a name="configuring-swedenspecific-receipts"></a>Svédország-specifikus bevételezések konfigurálása
+### <a name="configuring-swedenspecific-receipts"></a>Svédország-specifikus nyugták konfigurálása
 
-#### <a name="configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts"></a>Egyéni mezők konfigurálása az értékesítési nyugták nyugtaformátumában való használhatóra
+#### <a name="configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts"></a>Állítsa be az egyéni mezőket úgy, hogy azokat az értékesítési bizonylatok nyugtaformátumaiban lehessen használni
 
-A POS nyugtaformátumokban használt nyelvi szövegeket és egyéni mezőket beállíthatja. A nyugtabeállítást létrehozó felhasználó alapértelmezett vállalatának ugyanaznak kell lennie, mint ahol a nyelvi szöveg beállítása létre van hozva. Másik lehetőségként ugyanazt az idegen nyelvű szöveget kell létrehozni a felhasználó alapértelmezett vállalatában, valamint annak az üzletnek a jogi személyében, amely számára a beállítást létrehozták.
+Beállíthatja a POS nyugtaformátumokban használt nyelvi szöveget és egyéni mezőket. A nyugtabeállítást létrehozó felhasználó alapértelmezett cégének ugyanannak a jogi személynek kell lennie, mint ahol a nyelvi szövegbeállítás létrejött. Alternatív megoldásként ugyanazokat a nyelvű szövegeket kell létrehozni a felhasználó alapértelmezett vállalatában és annak az áruháznak a jogi személyében, amelyhez a beállítást létrehozták.
 
-Adja hozzá a Nyelv szöveglapon a következő rekordokat a nyugtaelrendezések **egyéni mezőinek** címkéihez. Ne feledje, hogy a táblázatban látható nyelvazonosító, szövegazonosító és szöveges értékek **csak** **·** **példák**. A beállításokat az igényeknek megfelelően módosíthatja. A használt szövegazonosító értékeknek azonban egyedinek kell lennie, és nem lehet kisebbek, mint **900001**.
+A **Nyelvi szöveg** oldalon adja hozzá a következő rekordokat a nyugtaelrendezések egyéni mezőinek címkéihez. Vegye figyelembe, hogy a **Nyelvazonosító**, **azonosító**, és **Szöveg** a táblázatban szereplő értékek csak példák. Módosíthatja őket, hogy megfeleljenek igényeinek. Azonban a **Szöveges azonosító** A használt értékeknek egyedinek kell lenniük, és egyenlőnek vagy nagyobbaknak kell lenniük a 900001 értéknél.
 
-Adja hozzá a következő POS-címkéket **a** Nyelv **szövegoldalának POS** szakaszában.
+Adja hozzá a következő POS-címkéket a **pozíció** szakasza a **Nyelvi szöveg** oldalon.
 
 | Nyelvazonosító | Szövegazonosító | Szöveg                  |
 |-------------|---------|-----------------------|
-| hu-USA       | 900001  | Jegyzék ellenőrző kódja |
-| hu-USA       | 900002  | Eszköz regisztrálása       |
+| hu-US       | 900001  | Regisztrálja az ellenőrző kódot |
+| hu-US       | 900002  | Regisztrálja az eszközt       |
 
-Adja hozzá a következő rekordokat az Egyéni mezők **lapon** a nyugtaelrendezések egyéni mezőihez. A felirat szövegazonosító értékeinek meg kell felelniük a Nyelv szövegoldalán megadott **szövegazonosító** **·** **értékeknek**.
+A **Egyéni mezők** oldalon adja hozzá a következő rekordokat a nyugtaelrendezések egyéni mezőihez. Vegye figyelembe, hogy **Felirat szövegének azonosítója** értékeknek meg kell felelniük a **Szöveges azonosító** oldalon megadott értékek **Nyelvi szöveg** oldalon.
 
 | Név                         | Típus    | Képaláírás-szöveg azonosítója |
 |------------------------------|---------|-----------------|
@@ -77,71 +77,71 @@ Adja hozzá a következő rekordokat az Egyéni mezők **lapon** a nyugtaelrende
 | SE_FISCALREGISTERID          | Fogadás | 900002          |
 
 > [!NOTE]
-> Fontos, hogy a megfelelő egyéni mezőneveket adja meg a fenti táblázatban felsoroltak szerint. Helytelen egyéni mezőnév esetén hiányoznak az adatok a nyugtákból.
+> Fontos, hogy helyes egyéni mezőneveket adjon meg, a fenti táblázat szerint. A helytelen egyéni mezőnév adatok hiányát okozza a nyugtákban.
 
-#### <a name="configure-receipt-formats"></a>Nyugtaformátumok konfigurálása
+#### <a name="configure-receipt-formats"></a>Konfigurálja a nyugtaformátumokat
 
-Minden kötelező bevételezési formátumnál módosítsa a Nyomtatás viselkedése mező **értékét** "Mindig **nyomtatás"** értékre.
+Minden szükséges nyugtaformátumnál módosítsa az értékét **Nyomtatási viselkedés** mezőt **Mindig nyomtasson**.
 
-A Nyugtaformátum-tervezőben adja hozzá a következő egyéni mezőket a **Lábléc** szakaszhoz. A mezőnevek megfelelnek a témakör előző részében meghatározott nyelvi szövegeknek.
+A Nyugtaformátum-tervezőben adja hozzá a következő egyéni mezőket a **Lábléc** szakasz. Vegye figyelembe, hogy a mezőnevek megfelelnek a témakör előző részében megadott nyelvi szövegeknek.
 
-- **Jegyzék** vezérlőkódja – ez a mező nyomtatja ki az ellenőrző kódot.
-- **Regisztráló** eszköz – ez a mező az ellenőrzési egység gyártási számát nyomtatja ki.
+- **Regisztrálja az ellenőrző kódot** – Ez a mező a vezérlőkódot nyomtatja ki.
+- **Regisztrálja az eszközt** – Ez a mező a vezérlőegység gyártási számát írja ki.
 
-A nyugtaformátumok használatával kapcsolatos további tudnivalókat lásd a Nyugtasablonokban [és a](../receipt-templates-printing.md) nyomtatásban.
+A nyugtaformátumokkal kapcsolatos további információkért lásd: [Nyugta sablonok és nyomtatás](../receipt-templates-printing.md).
 
-### <a name="set-up-fiscal-integration-for-sweden"></a>Pénzügyi integráció beállítása Svédországhoz
+### <a name="set-up-fiscal-integration-for-sweden"></a>Állítsa be a költségvetési integrációt Svédország számára
 
-A Svédországra vonatkozó vezérlőegység-integrációs minta a pénzügyi integrációs funkciókon alapul, és [a](fiscal-integration-for-retail-channel.md) Retail SDK része. A minta a Solutions-tárház (például a **\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/)[release/9.33)](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash) src FiscalIntegration CleanCash mappájában található. A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) pénzügyi dokumentumszolgáltatóból áll, amely a Commerce runtime () kiterjesztése, és egy pénzügyi csatlakoztató, amely CRT a Commerce Hardware Station kiterjesztése. További tudnivalók a Retail SDK használatáról: [A Retail SDK architektúrája](../dev-itpro/retail-sdk/retail-sdk-overview.md) és [Készítési folyamat beállítása független csomagkészítő SDK-hoz](../dev-itpro/build-pipeline.md).
+A Svédországra vonatkozó vezérlőegység-integrációs minta a [fiskális integrációs funkcionalitás](fiscal-integration-for-retail-channel.md) és a Retail SDK része. A minta a **src\\ Fiskális integráció\\ CleanCash** mappa a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattár (pl.[a minta kiadásban/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash)). A minta [egy pénzügyi bizonylatszolgáltatóból áll](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services), amely a Commerce futtatókörnyezet (CRT) kiterjesztése, és egy fiskális összekötőből, amely a Commerce Hardware Station kiterjesztése. A Kiskereskedelmi SDK használatáról a Retail SDK architektúrája [és](../dev-itpro/retail-sdk/retail-sdk-overview.md) build-folyamat beállítása a független csomagolású SDK-hoz [című témakörben talál](../dev-itpro/build-pipeline.md) további információt.
 
 > [!WARNING]
-> Az új független csomagolási és bővítési modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs [mintához](../dev-itpro/build-pipeline.md). A Retail SDK korábbi verzióját egy fejlesztő virtuális gépen (VM) kell használnia a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban. A további tudnivalókat lásd az ellenőrzési egység integrációs mintavételével kapcsolatos, [Svédországra vonatkozó telepítési irányelvekben (legacy).](emea-swe-fi-sample-sdk.md)
+> Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját egy fejlesztői virtuális gépen (VM) kell használnia az Microsoft Dynamics Életciklus-szolgáltatásokban (LCS). További információkért lásd [Üzembe helyezési irányelvek a vezérlőegység-integrációs mintához Svédországban (örökölt)](emea-swe-fi-sample-sdk.md).
 >
-> Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
+> A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
 
-A pénzügyi integráció beállítási lépéseit a Commerce-csatornák pénzügyi integrációjának beállítása [leírásában leírtak szerint lehet](setting-up-fiscal-integration-for-retail-channel.md) végrehajtani.
+Végezze el a fiskális integráció beállítási lépéseit az alábbiak szerint [Állítsa be a kereskedelmi csatornák pénzügyi integrációját](setting-up-fiscal-integration-for-retail-channel.md).
 
-1. [Pénzügyi regisztrációs folyamat](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process) beállítása. Ezenkívül jegyezze fel a pénzügyi nyilvántartási folyamatnak az ehhez az ellenőrzőegység-integrációs mintához [specifikus](#set-up-the-registration-process) beállításait.
-1. [Hibakezelési beállítások](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings) megadása.
-1. [Halasztott pénzügyi regisztráció kézi végrehajtásának](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration) engedélyezése.
-1. [Csatornaösszetevők](#configure-channel-components) konfigurálása
+1. [Hozzon létre egy pénzügyi regisztrációs folyamatot](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Jegyezze fel a fiskális regisztrációs folyamat beállításait is [erre a vezérlőegység-integrációs mintára jellemző](#set-up-the-registration-process).
+1. [Állítsa be a hibakezelési beállításokat](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+1. [Az elhalasztott adóregisztráció](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration) manuális végrehajtásának engedélyezése.
+1. [Csatornaösszetevők konfigurálása](#configure-channel-components).
 
 ### <a name="set-up-the-registration-process"></a>A regisztrációs folyamat beállítása
 
-A regisztráció engedélyezéséhez kövesse az alábbi lépéseket a Commerce Headquarters beállításához. A további tudnivalókat lásd a Commerce-csatornák pénzügyi [integrációjának](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process) beállítása.
+A regisztrációs folyamat engedélyezéséhez kövesse az alábbi lépéseket a Kereskedelmi központ beállításához. További információ: [A kereskedelmi csatornák](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process) pénzügyi integrációjának beállítása.
 
-1. A pénzügyi bizonylat szolgáltatójának és a pénzügyi csatlakoztatónak megfelelő konfigurációs fájlok letöltése:
+1. Konfigurációs fájlok letöltése a pénzügyi dokumentumszolgáltatóhoz és a pénzügyi összekötőhöz:
 
-    1. Nyissa meg [Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) a megoldástárházat.
-    1. Az SDK/alkalmazásverziónak (például **[kiadás/9.33) megfelelő kiadási fiókverzió](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)** kiválasztása.
-    1. A **következő src \> FiscalIntegration \> CleanCash** megnyitása:
-    1. Töltse le a pénzügyi bizonylat szolgáltatójának konfigurációs fájlját a **CommerceRuntime \> DocumentProvider.CleanCashSample \> Configuration \> DocumentProviderFiscalCleanCashSample.xml fájlból (például a kiadás** fájlja/ [9.33).](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/CleanCash/CommerceRuntime/DocumentProvider.CleanCashSample/Configuration/DocumentProviderFiscalCleanCashSample.xml)
-    1. Töltse le a pénzügyi csatlakoztató konfigurációs fájlját a **HardwareStation \> Connector.CleanCashSample \> Configuration \> ConnectorCleanCashSample.xml fájlból (például a kiadás**[fájlja/9.33).](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/CleanCash/HardwareStation/Connector.CleanCashSample/Configuration/ConnectorCleanCashSample.xml)
+    1. Nyissa meg a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattárat.
+    1. Válassza ki a megfelelő kiadási ágverziót az SDK/alkalmazás verziója szerint (például **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
+    1. Nyisd ki **src \> Fiskális integráció \> CleanCash**.
+    1. Töltse le az adódokumentum-szolgáltató konfigurációs fájlját a következő címről: **CommerceRuntime \> DocumentProvider.CleanCashSample \> Konfiguráció \> DocumentProviderFiscalCleanCashSample.xml** (például, [a kiadáshoz tartozó fájl/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/CleanCash/CommerceRuntime/DocumentProvider.CleanCashSample/Configuration/DocumentProviderFiscalCleanCashSample.xml)).
+    1. Töltse le a fiskális csatlakozó konfigurációs fájlját a következő címről: **HardwareStation \> Csatlakozó.CleanCashSample \> Konfiguráció \> ConnectorCleanCashSample.xml** (például, [a kiadáshoz tartozó fájl/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/CleanCash/HardwareStation/Connector.CleanCashSample/Configuration/ConnectorCleanCashSample.xml)).
 
     > [!WARNING]
-    > Az új független csomagolási és bővítési modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs [mintához](../dev-itpro/build-pipeline.md). A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A pénzügyi integrációs minta konfigurációs fájljai a Retail SDK készlet alábbi mappáiban találhatók az LCS egy fejlesztői VIRTUÁLIS eszközében:
+    > Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői virtuális gépen az LCS-ben. A pénzügyi integrációs minta konfigurációs fájljai a Retail SDK következő mappáiban találhatók egy fejlesztői virtuális gépen az LCS-ben:
     >
-    > - **Pénzügyi bizonylat szolgáltatójának konfigurációs fájlja:** RetailSdk \\ SampleExtensions \\ CommerceRuntime \\ Extensions.DocumentProvider.CleanCashSample \\ Configuration \\ DocumentProviderFiscalCleanCashSample.xml
-    > - **Pénzügyi csatlakoztató konfigurációs fájlja:** RetailSdk \\ SampleExtensions \\ HardwareStation \\ extension.CleanCashSample \\ Configuration \\ ConnectorCleanCashSample.xml
+    > - **Fiskális dokumentum-szolgáltató konfigurációs fájlja:** RetailSdk\\ SampleExtensions\\ CommerceRuntime\\ Extensions.DocumentProvider.CleanCashSample\\ Konfiguráció\\ DocumentProviderFiscalCleanCashSample.xml
+    > - **Fiskális csatlakozási konfigurációs fájl:** RetailSdk\\ SampleExtensions\\ HardwareStation\\ Extension.CleanCashSample\\ Konfiguráció\\ ConnectorCleanCashSample.xml
     > 
-    > Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
+    > A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
 
-1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce megosztott paraméterek** menüpontra. Az Általános lapon állítsa a Pénzügyi integráció engedélyezése lehetőséget **Igen** **·** **beállításra**.
-1. Menjen a Retail és Commerce Csatorna beállítása pénzügyi integráció pénzügyi **\>\>\> dokumentumszolgáltatóihoz, és töltse be a korábban letöltött pénzügyidokumentum-szolgáltató konfigurációs** fájlját.
-1. Menjen **a Retail és Commerce \> csatorna beállítása Pénzügyi integráció pénzügyi \>\> csatlakoztatóihoz, és töltse be a korábban letöltött pénzügyi csatlakoztató** konfigurációs fájlját.
-1. Ugrás **a Retail és Commerce \> csatorna beállítása Fiscal integration Connector funkcionális \>\> profiljaihoz.** Új funkcionális csatlakoztatóprofil létrehozása. Válassza ki a korábban betöltött dokumentumszolgáltatót és csatlakoztatót. Szükség szerint [frissítse az](#default-data-mapping) adatleképezés beállításait.
-1. Ugrás a **Retail és Commerce csatorna beállítása Fiscal integration Connector műszaki \>\>\>** profilokhoz. Hozzon létre egy új technikai csatlakoztatóprofilt, és válassza ki a korábban betöltött pénzügyi csatlakoztatóját. Szükség szerint [frissítse a](#fiscal-connector-settings) csatlakoztató beállításait.
-6. Ugrás a **Retail és Commerce csatorna beállítása Pénzügyi integráció Pénzügyi \>\>\> csatlakoztatócsoportjához** Hozzon létre egy új pénzügyi csatlakoztatócsoportot a korábban létrehozott csatlakoztató funkcionális profil számára.
-7. Ugrás **a Retail és Commerce \> csatorna pénzügyi integrációja pénzügyi \>\> nyilvántartási folyamatainak beállításához** Hozzon létre egy új pénzügyi regisztrációs folyamatot és egy pénzügyi nyilvántartási folyamat lépését, és válassza ki a korábban létrehozott pénzügyi csatlakoztatócsoportot.
-8. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**. Válasszon ki egy funkcióprofilt, amely ahhoz az üzlethez kapcsolódik, ahol aktiválni kell a regisztrációs folyamatot. A Pénzügyi regisztráció folyamata gyors oldalon válassza ki a korábban létrehozott pénzügyi **regisztrációs** folyamatot.
-9. Lépjen a **Kiskereskedelem és kereskedelem \> Csatorna beállítás \> POS beállítás \> POS profilok \> Hardverprofilok** pontra. Válassza ki azt a hardverprofilt, amely ahhoz a hardverállomáshoz van kapcsolva, amelyhez a pénzügyi nyomtató csatlakozik. Válassza ki a korábban létrehozott csatlakoztató-technikai profilt a Pénzügyi perifériák **gyorstára**.
-10. Az elosztási ütemezés megnyitása (Retail and Commerce Retail és Commerce IT Distribution ütemezés), majd a **\>\>** **1070-es és** **1090-es** feladat kiválasztása az adatoknak a csatorna-adatbázisba történő átviteléhez.
+1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce megosztott paraméterek** menüpontra. Az Általános **lapon állítsa a** Költségvetési integráció **engedélyezése beállítást Igen értékre** **.**
+1. Menj **Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Fiskális integráció \> Fiskális dokumentumszolgáltatók**, és töltse be a korábban letöltött adódokumentum-szolgáltató konfigurációs fájlját.
+1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Pénzügyi összekötők, és töltse be a korábban letöltött pénzügyi összekötő konfigurációs** fájlt.
+1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integrációs \> összekötő funkcionális profiljai**. Hozzon létre egy új csatlakozó funkcionális profilt. Válassza ki a dokumentumszolgáltatót és a korábban betöltött csatlakozót. Szükség szerint frissítse az [adatleképezési beállításokat](#default-data-mapping).
+1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Összekötő technikai profiljai**. Hozzon létre egy új összekötő műszaki profilját, és válassza ki a korábban betöltött pénzügyi összekötőt. Szükség szerint frissítse az [összekötő beállításait](#fiscal-connector-settings).
+6. Lépjen a **Kiskereskedelem és kereskedelem \> csatorna beállítására \> Pénzügyi integráció \> Pénzügyi összekötő csoportok**. Hozzon létre egy új pénzügyi összekötő-csoportot a korábban létrehozott összekötő funkcionális profilhoz.
+7. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Pénzügyi regisztrációs folyamatok**. Hozzon létre egy új adóregisztrációs folyamatot és egy fiskális regisztrációs folyamat lépést, és válassza ki a korábban létrehozott adóösszekötő csoportot.
+8. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**. Válasszon ki egy olyan funkcióprofilt, amely ahhoz az üzlethez kapcsolódik, ahol a regisztrációs folyamatot aktiválni kell. **A Pénzügyi regisztrációs folyamat** gyorslapon válassza ki a korábban létrehozott pénzügyi regisztrációs folyamatot.
+9. Lépjen a **Kiskereskedelem és kereskedelem \> Csatorna beállítás \> POS beállítás \> POS profilok \> Hardverprofilok** pontra. Válasszon ki egy hardverprofilt, amely ahhoz a hardverállomáshoz kapcsolódik, amelyhez a pénzügyi nyomtató csatlakozik. **A Pénzügyi perifériák** gyorslapon válassza ki a korábban létrehozott összekötő műszaki profilját.
+10. Nyissa meg a terjesztési ütemezést (**Kiskereskedelmi és \> kereskedelmi kiskereskedelem és kereskedelem IT-terjesztési \> ütemezése**), és válassza az 1070-es és **1090-es** **feladatokat** az adatok csatornaadatbázisba történő átviteléhez.
 
 #### <a name="default-data-mapping"></a>Alapértelmezett adatleképezés
 
-A pénzügyiintegrációs minta részeként megadott pénzügyi bizonylatszolgáltató konfigurációja a következő alapértelmezett adatleképezést tartalmazza:
+A költségvetési integrációs minta részeként megadott pénzügyi bizonylatszolgáltató konfigurációja a következő alapértelmezett adatleképezést tartalmazza:
 
-- **Áfakód-hozzárendelés – ez a hozzárendelés beállítja az eszközspecifikus áfakódokat a megfelelő** áfakódhoz. Az áfakódok leképezésének a következő formátumúnak kell lennie:
+- **Általános forgalmi adó (áfa) kód leképezés** – Ez a leképezés az eszközspecifikus általános forgalmi adó (áfa) kódokat a megfelelő forgalmiadó-kódokhoz állítja be. Az ÁFA-kód hozzárendelésének a következő formátumúnak kell lennie:
 
     ```
     1 : code1 ; 2 : code2
@@ -149,55 +149,55 @@ A pénzügyiintegrációs minta részeként megadott pénzügyi bizonylatszolgá
 
     Itt találja a formátum magyarázatát:
 
-    - *Az 1* és *a 2* eszközspecifikus áfakód.
-    - Pontosvessző (;) elválasztóként használható.
-    - *az 1. és a 2. kód a Commerce Headquarters szolgáltatásban* *konfigurált* áfakódok. A minta-hozzárendelést az alkalmazásban beállított adókódok szerint kell módosítani.
+    - *1* és *2* készülékspecifikus ÁFA kódok.
+    - Elválasztóként pontosvesszőt (;) használunk.
+    - *kód1* és *kód2* olyan forgalmi adó kódok, amelyek a Commerce központjában vannak konfigurálva. Módosítania kell a mintaleképezést az alkalmazásban konfigurált adókódoknak megfelelően.
 
-    Az ellenőrző egységek legfeljebb négy különböző áfakódot támogatnak. Ezért az áfakódok leképezése a következő módon lehet beállítva:
+    A vezérlőegységek akár négy különböző ÁFA kódot támogatnak. Ezért az áfakód-leképezést a következő módon lehet beállítani:
 
     ```
     1 : code1 ; 2 : code2 ; 3 : code3 ; 4 : code4
     ```
 
     > [!NOTE]
-    > Több áfakód is megfeleltetható ugyanannak az eszközspecifikus áfakódnak.
+    > Több általános forgalmi adó kód is hozzárendelhető ugyanahhoz az eszközspecifikus áfakódhoz.
 
-#### <a name="fiscal-connector-settings"></a>Pénzügyi csatlakoztató beállításai
+#### <a name="fiscal-connector-settings"></a>Pénzügyi összekötő beállításai
 
-A pénzügyi integrációs minta részeként biztosított pénzügyi csatlakoztató konfigurációja a következő beállításokat tartalmazza:
+A költségvetési integrációs minta részeként megadott pénzügyi összekötő konfiguráció a következő beállításokat tartalmazza:
 
-- **Kapcsolati karakterlánc** – a vezérlőegység kapcsolati beállításai.
-- **Időtúllépés** – az az idő ezredmásodpercben, ahányszor a vezető az ellenőrző egység válaszát várja.
+- **Csatlakozási karakterlánc** – A vezérlőegység csatlakozási beállításai.
+- **Időtúllépés** – Az az idő, ezredmásodpercben, ameddig a vezető vár a vezérlőegység válaszára.
 
 ### <a name="configure-channel-components"></a>Csatornaösszetevők konfigurálása
 
 > [!WARNING]
-> Az új független csomagolási és bővítési modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs [mintához](../dev-itpro/build-pipeline.md). A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat lásd az ellenőrzési egység integrációs mintavételével kapcsolatos, [Svédországra vonatkozó telepítési irányelvekben (legacy).](emea-swe-fi-sample-sdk.md)
+> Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői virtuális gépen az LCS-ben. További információkért lásd [Üzembe helyezési irányelvek a vezérlőegység-integrációs mintához Svédországban (örökölt)](emea-swe-fi-sample-sdk.md).
 >
-> Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
+> A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
 
-#### <a name="set-up-the-development-environment"></a>A fejlesztői környezet beállítása
+#### <a name="set-up-the-development-environment"></a>A fejlesztési környezet beállítása
 
-A minta tesztelésére és kiterjesztésére fejlesztői környezet beállításához kövesse az alábbi lépéseket.
+A minta tesztelésére és kiterjesztésére vonatkozó fejlesztési környezet beállításához kövesse az alábbi lépéseket.
 
-1. Le kell tölteni vagy le kell tölteni [Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions) a megoldástárházat. Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően. A további tudnivalókat lásd a Retail SDK-minta- és hivatkozáscsomagok letöltése [aHub és NuGet](../dev-itpro/retail-sdk/sdk-github.md) a.
-1. Nyissa meg az ellenőrzési egység integrációs megoldását **a Dynamics365Commerce.Solutions \\ FiscalIntegration \\ CleanCash \\ CleanCash.sln fájlban, és építse** fel.
-1. A CRT következő bővítmények telepítése:
+1. Klónozza vagy töltse le a [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) adattárat. Válassza ki a megfelelő kiadási ágverziót az SDK/alkalmazás verziójának megfelelően. További információkért lásd [Töltsön le Retail SDK-mintákat és referenciacsomagokat a GitHubból és a NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Nyissa meg a vezérlőegység-integrációs megoldást a címen **Dynamics365Commerce.Solutions\\ Fiskális integráció\\ CleanCash\\ CleanCash.sln**, és megépíteni.
+1. Telepítés CRT kiterjesztések:
 
-    1. A bővítmény CRT telepítője:
+    1. Találd meg CRT bővítmény telepítő:
 
-        - **Commerce Scale Unit:** A **CleanCash \\\\ ScaleUnit.CleanCash.Installer bin debug net461 mappában keresse meg a \\\\\\** **ScaleUnit.CleanCash.Installer** telepítőt.
-        - **Helyi CRT a Modern POS terminálon: A** **CleanCash \\\\ ModernPOS ModernPOS.CleanCash.Installer bin debug net461 mappában keresse meg a \\\\\\** **ModernPOS.CleanCash.Installer** telepítőjét.
+        - **Kereskedelmi mértékegység:** Ban,-ben **CleanCash\\ ScaleUnit\\ ScaleUnit.CleanCash.Installer\\ kuka\\ Debug\\ net461** mappát, keresse meg a **ScaleUnit.CleanCash.Installer** telepítő.
+        - **Helyi CRT a modern POS-on:** Ban,-ben **CleanCash\\ Modern POS\\ ModernPOS.CleanCash.Installer\\ kuka\\ Debug\\ net461** mappát, keresse meg a **ModernPOS.CleanCash.Installer** telepítő.
 
-    2. A kiterjesztés CRT telepítőjét a következő parancssorból indítja el:
+    2. Indítsa el a CRT kiterjesztés telepítője a parancssorból:
 
-        - **Commerce Scale Unit:**
+        - **Kereskedelmi mértékegység:**
 
             ```Console
             ScaleUnit.CleanCash.Installer.exe install --verbosity 0
             ```
 
-        - **Helyi CRT a Modern POS terminálon:**
+        - **Helyi CRT a modern POS-on:**
 
             ```Console
             ModernPOS.CleanCash.Installer.exe install --verbosity 0
@@ -205,8 +205,8 @@ A minta tesztelésére és kiterjesztésére fejlesztői környezet beállítás
 
 1. Hardverállomás-bővítmények telepítése:
 
-    1. A **CleanCash \\ HardwareStation \\ HardwareStation.CleanCash.Installer bin hibakeresési net461 mappában keresse meg \\ a \\\\** **HardwareStation.CleanCash.Installer** telepítőt.
-    1. A kiterjesztés telepítőjét a következő parancssorból indítja el:
+    1. Ban,-ben **CleanCash\\ HardwareStation\\ HardwareStation.CleanCash.Installer\\ kuka\\ Debug\\ net461** mappát, keresse meg a **HardwareStation.CleanCash.Installer** telepítő.
+    1. Indítsa el a bővítménytelepítőt a parancssorból:
 
         ```Console
         HardwareStation.CleanCash.Installer.exe install --verbosity 0
@@ -214,52 +214,52 @@ A minta tesztelésére és kiterjesztésére fejlesztői környezet beállítás
 
 #### <a name="production-environment"></a>Működési környezet
 
-Hajtsa végre a pénzügyi integrációs minta felépítési folyamatának beállításához szükséges lépéseket a felhőskálaegység és az önkiszolgáló rendszer telepíthető csomagjainak előállításához és kiadásához a pénzügyi integrációs [mintához](fiscal-integration-sample-build-pipeline.md). A CleanCash build-pipeline.yml sablon FILEML sablon a megoldástárház **YAML_Files** **\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions) csővezeték-mappájában található.
+Kövesse a lépéseket [Állítson be egy összeállítási folyamatot a fiskális integrációs mintához](fiscal-integration-sample-build-pipeline.md) a Cloud Scale Unit és az önkiszolgáló telepíthető csomagok létrehozása és kiadása a költségvetési integrációs mintához. A **CleanCash build-pipeline.yml** sablon YAML fájl megtalálható a **Csővezeték\\ YAML_Files** mappa a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions) adattár.
 
 ## <a name="design-of-the-extensions"></a>A bővítmények tervezése
 
-A Svédországra vonatkozó vezérlőegység-integrációs minta a pénzügyi integrációs funkciókon alapul, és [a](fiscal-integration-for-retail-channel.md) Retail SDK része. A minta a Solutions-tárház (például a **\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/)[release/9.33)](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash) src FiscalIntegration CleanCash mappájában található. A minta [egy pénzügyi dokumentumszolgáltatóból áll, amely a Commerce Hardverállomás kiterjesztése, és egy pénzügyi](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices)CRT csatlakoztató. További tudnivalók a Retail SDK használatáról: [A Retail SDK architektúrája](../dev-itpro/retail-sdk/retail-sdk-overview.md) és [Készítési folyamat beállítása független csomagkészítő SDK-hoz](../dev-itpro/build-pipeline.md).
+A Svédországra vonatkozó vezérlőegység-integrációs minta a [fiskális integrációs funkcionalitás](fiscal-integration-for-retail-channel.md) és a Retail SDK része. A minta a **src\\ Fiskális integráció\\ CleanCash** mappa a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattár (pl.[a minta kiadásban/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/CleanCash)). A minta [áll](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) egy fiskális dokumentumszolgáltató, amely a kiterjesztése CRT és egy fiskális csatlakozó, amely a Commerce Hardware Station kiterjesztése. A Kiskereskedelmi SDK használatáról a Retail SDK architektúrája [és](../dev-itpro/retail-sdk/retail-sdk-overview.md) build-folyamat beállítása a független csomagolású SDK-hoz [című témakörben talál](../dev-itpro/build-pipeline.md) további információt.
 
 > [!WARNING]
-> Az új független csomagolási és bővítési modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs [mintához](../dev-itpro/build-pipeline.md). A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat lásd az ellenőrzési egység integrációs mintavételével kapcsolatos, [Svédországra vonatkozó telepítési irányelvekben (legacy).](emea-swe-fi-sample-sdk.md) Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
+> Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői virtuális gépen az LCS-ben. További információkért lásd [Üzembe helyezési irányelvek a vezérlőegység-integrációs mintához Svédországban (örökölt)](emea-swe-fi-sample-sdk.md). A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
 
-### <a name="crt-extension-design"></a>CRT kiterjesztésterv
+### <a name="crt-extension-design"></a>CRT bővítmény kialakítása
 
-A kiterjesztés célja, amely egy pénzügyi bizonylat szolgáltatója, a szolgáltatásspecifikus dokumentumok generálása és az ellenőrző egység válaszának kezelnie.
-
-#### <a name="request-handler"></a>Kérelemkezelő
-
-A dokumentumszolgáltatóhoz egyetlen **DocumentProviderCleanCash** kérelemkezelő van. Ezzel a kezelővel lehet pénzügyi bizonylatokat létrehozni az ellenőrzési egységhez.
-
-Ez a kezelő az **INamedRequestHandler felületről** öröklődik. A HandlerName metódus felelős a kezelő nevének **visszaküldéséért**. A kezelő nevének meg kell egyeznie a Commerce Headquarters szolgáltatásban megadott csatlakoztató dokumentumszolgáltató nevével.
-
-Az csatlakoztató a következő kéréseket támogatja:
-
-- **GetFiscalDocumentDocumentProviderRequest – ez a kérés tartalmazza a létrehozandó** dokumentum adatait. Olyan szolgáltatásspecifikus dokumentumot ad vissza, amely regisztrálva kell lennie az ellenőrzési egységben.
-- **GetSupportedRegistrableEventsDocumentProviderRequest – ez a kérés a regisztrált események listáját adja** eredményül. Jelenleg az értékesítési és a könyvvizsgálati események támogatottak.
-
-#### <a name="configuration"></a>Konfiguráció
-
-A pénzügyi bizonylat szolgáltatójának konfigurációs fájlja a következő helyen található: **src \\ FiscalIntegration \\ CleanCash \\ CommerceRuntime \\ DocumentProvider.CleanCashSample \\ Configuration \\ DocumentProviderFiscalCleanCashSample.xml, a megoldások**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) tárházában. A fájl célja, hogy lehetővé tegye a dokumentumszolgáltató Commerce Headquarters rendszerből származó konfigurálásának beállításait. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
-
-### <a name="hardware-station-extension-design"></a>Hardverállomás bővítményének tervezése
-
-A kiterjesztés célja, amely pénzügyi csatlakoztató, az a cél, hogy kommunikáljon az ellenőrző egységgel. A HTTP protokollal küldheti el a kiterjesztés által az ellenőrzési egységnek CRT generált dokumentumokat. Kezeli az ellenőrzési egységtől kapott válaszokat is.
+A fiskális bizonylat-szolgáltató bővítmény célja szolgáltatás-specifikus dokumentumok előállítása és a vezérlőegység válaszainak kezelése.
 
 #### <a name="request-handler"></a>Kérelemkezelő
 
-A **CleanCashHandler kérelemkezelő a vezérlőegységhez történő kérések** kezelésének belépési pontja.
+Egyetlen van **DocumentProviderCleanCash** kéréskezelő a dokumentumszolgáltató számára. Ez a kezelő a vezérlőegység fiskális dokumentumainak előállítására szolgál.
 
-A kezelő az **INamedRequestHandler felületről** öröklődik. A HandlerName metódus felelős a kezelő nevének **visszaküldéséért**. A kezelő nevének meg kell egyeznie a Commerce Headquartersban megadott pénzügyi csatlakoztató nevével.
+Ezt a kezelőt a **INamedRequestHandler** felület. A **HandlerName** metódus felelős a kezelő nevének visszaadásáért. A kezelő nevének meg kell egyeznie a Kereskedelmi központban megadott összekötő dokumentumszolgáltató nevével.
 
-Az csatlakoztató a következő kéréseket támogatja:
+Az összekötő a következő kéréseket támogatja:
 
-- **SubmitDocumentFiscalDeviceRequest – ez a kérés dokumentumokat küld az ellenőrzési egységnek, és** választ ad vissza.
-- **IsReadyFiscalDeviceRequest – ez a kérés az ellenőrzési egység** állapotellenőrzésére használható.
-- **InitializeFiscalDeviceRequest – ez a kérés a** vezérlőegység inicializálására használatos.
+- **GetFiscalDocumentDocumentProviderRequest** – Ez a kérés információt tartalmaz arról, hogy milyen dokumentumot kell létrehozni. Egy szolgáltatás-specifikus dokumentumot ad vissza, amelyet regisztrálni kell a vezérlőegységben.
+- **GetSupportedRegistrableEventsDocumentProviderRequest** – Ez a kérés visszaadja az előfizetendő események listáját. Jelenleg értékesítési események és audit események támogatottak.
 
 #### <a name="configuration"></a>Konfiguráció
 
-A pénzügyi csatlakoztató konfigurációs fájlja a **megoldástárház \\ FiscalIntegration \\ CleanCash \\ HardwareStation \\ Connector.CleanCashSample \\ Configuration \\ ConnectorCleanCashSample.xml**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) fájljában található. A fájl célja, hogy engedélyezze a Commerce Headquarters alkalmazásból konfigurálható pénzügyi csatlakoztató beállításait. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
+A pénzügyi dokumentumszolgáltató konfigurációs fájlja az **src\\FiscalIntegration\\CleanCash\\CommerceRuntime\\DocumentProvider.CleanCashSample\\Configuration\\DocumentProviderFiscalCleanCashSample.xml** található a [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattárban. Ennek a fájlnak az a célja, hogy lehetővé tegye a dokumentumszolgáltató beállításait a Commerce központjában. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
+
+### <a name="hardware-station-extension-design"></a>Hardverállomás-bővítés kialakítása
+
+A fiskális összekötő bővítmény célja a vezérlőegységgel való kommunikáció. A HTTP protokoll használatával elküldi a CRT bővítmény által létrehozott dokumentumokat a vezérlőegységnek. Kezeli a vezérlőegységtől kapott válaszokat is.
+
+#### <a name="request-handler"></a>Kérelemkezelő
+
+A **CleanCashHandler** kérelemkezelő a vezérlőegységhez intézett kérések kezelésének belépési pontja.
+
+A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName** metódus felelős a kezelő nevének visszaadásáért. A kezelő nevének meg kell egyeznie a Kereskedelmi központban megadott pénzügyi összekötő nevével.
+
+Az összekötő a következő kéréseket támogatja:
+
+- **SubmitDocumentFiscalDeviceRequest** – Ez a kérés dokumentumokat küld a vezérlőegységnek, és választ ad vissza belőle.
+- **IsReadyFiscalDeviceRequest** – Ez a kérés a vezérlőegység állapotfelmérésére szolgál.
+- **InitializeFiscalDeviceRequest** – Ez a kérés a vezérlőegység inicializálására szolgál.
+
+#### <a name="configuration"></a>Konfiguráció
+
+A pénzügyi összekötő konfigurációs fájlja az **src\\FiscalIntegration\\CleanCash\\HardwareStation\\Connector.CleanCashSample\\Configuration\\ConnectorCleanCashSample.xml** helyen található a [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattárban. A fájl célja, hogy engedélyezze a pénzügyi összekötő beállításait a Commerce központjából. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

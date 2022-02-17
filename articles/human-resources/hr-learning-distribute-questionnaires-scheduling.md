@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2336cafe7e2c914c2592c91c888b1e0ae1bc608
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: 4885c11f0cb508edb8ebf3aef14748e819113264
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728676"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067402"
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Kérdőívek terjesztése ütemezés segítségével
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -28,17 +31,17 @@ A Kérdőív-ütemezés lehetővé teszi a kérdőívek tervezését és több v
 
 ## <a name="create-a-questionnaire-schedule"></a>Hozzon létre egy kérdőív-ütemezést
 
-1. Ugrás a Kérdőív **elosztása** > **·** > **kérdőív-ütemezésekhez**.
+1. Menj **Kérdőív** > **Terjeszteni** > **Kérdőívek ütemezése**.
 
 2. Kattintson az **Új** elemre.
 
-3. Az Ütemezés **·** mezőben adjon meg egy értéket.
+3. Ban,-ben **Ütemezés** mezőbe írjon be egy értéket.
 
 4. Írjon egy értéket a **Leírás** mezőbe.
-    * Az ütemezés névtelenre beállítása, ha a válaszokat a válaszhoz társított nevek nélkül **·** kell rögzíteni.  
+    * Állítsa be az ütemezést **Névtelen** ha a válaszokat a válaszhoz társított nevek nélkül kell rögzíteni.  
     * A névtelen eredmények engedélyezését először be kell állítani a HR-paraméterek között.  
 
-5. A **Típus** mezőben válassza ki a tervezés típusát.  Ebben a példában az Elégedettség **típust** használjuk.
+5. Ban,-ben **típus** mezőben válassza ki a tervezés típusát.  Ebben a példában a **Elégedettség** típus.
 
 6. Keresse meg és jelölje ki a kívánt rekordot a listán.
 
@@ -46,13 +49,13 @@ A Kérdőív-ütemezés lehetővé teszi a kérdőívek tervezését és több v
 
 8. Adja meg a dátumot a **Dátum** mezőben.
 
-9. Bontsa ki **az alkalmazotti önkiszolgáló e-mail** szakaszt.
+9. Bontsa ki a **E-mail az alkalmazotti önkiszolgáló számára** szakasz.
 
 10. Írjon be egy értéket a **Tárgy** mezőbe.
 
     * Példa: Kérdőív elérhető  
 
-11. A Szöveg mezőbe írja be az **·** e-mail törzsét. Ne feledje, a változó felhasználható értékek behelyettesítésére a rendszerben.
+11. Ban,-ben **Szöveg** mezőbe írja be az e-mail üzenet törzsét. Ne feledje, a változó felhasználható értékek behelyettesítésére a rendszerben.
 
     * Példa: Kedves %P%! Kérjük, jelentkezzen be az Alkalmazotti önkiszolgáló rendszerbe a munkaerő-egészségügyi kérdőív kitöltéséhez.  Contoso  
 
@@ -60,17 +63,17 @@ A Kérdőív-ütemezés lehetővé teszi a kérdőívek tervezését és több v
 
 ## <a name="use-the-setup-details-to-select-the-questionnaires-to-be-answered-as-well-as-any-queries-to-use-to-select-respondents"></a>A Beállítás részletei segítségével válassza ki a megválaszolandó kérdőívet, valamint a válaszadók kiválasztásához használt lekérdezést.
 
-1. Kattintson **a Beállítás részletei** lehetőségre.
+1. Kattintson **Beállítás részletei**.
 
 2. A listában válassza ki a kérdőívhez tartozó válaszadók megkereséséhez használni kívánt lekérdezést.
 
     * Példa: munkavállalók  
 
-3. Adott személyek kiválasztásához kattintson a Lekérdezés megtekintése vagy módosítása elemre, vagy módosítsa a lekérdezést, hogy megkeressen bizonyos **·** feltételeknek megfelelő személyeket.
+3. Kattintson **Lekérdezés megtekintése vagy módosítása** konkrét személyek kiválasztásához vagy a lekérdezés módosításához, hogy megtalálja azokat, akik megfelelnek bizonyos feltételeknek.
 
     * Vegye figyelembe, hogy az összes válaszadónak a rendszerben is felhasználónak kell lennie.  
 
-4. A listában jelölje meg a sort a Személy listában.
+4. A listában jelölje be a Személy sort.
 
 5. A **Feltétel** mezőben adjon meg vagy válasszon ki egy értéket.
 
@@ -80,17 +83,17 @@ A Kérdőív-ütemezés lehetővé teszi a kérdőívek tervezését és több v
 
 7. Kattintson az **OK** gombra.
 
-8. Kattintson **a Kérdőívek** fülre.
+8. Kattints a **Kérdőívek** lapon.
 
-9. Bontsa ki a fán az "Elégedettség felmérése" **kérdőívtípus** csomópontját.
+9. A fában bontsa ki a kérdőívtípus csomópontját **Elégedettségi felmérés**.
 
 10. A fastruktúrában jelölje be a „Munkaerő-egészségügyi vizsgálat” lehetőséget.
 
 11. Kattintson az **OK** gombra.
 
-12. Kattintson **a Tervezett válasz** munkamenetre.
+12. Kattintson **Tervezett válaszmenet**.
 
-    * Minden kiválasztott/lekérdezett felhasználóhoz létrejöttek a tervezett **·** válasz-munkamenetek.  
+    * Vegye figyelembe, hogy **Tervezett válaszmenetek** minden kiválasztott/lekérdezett felhasználóhoz létrejöttek.  
 
 13. Zárja be a lapot.
 
@@ -106,13 +109,13 @@ A Kérdőív-ütemezés lehetővé teszi a kérdőívek tervezését és több v
 
 1. Kattintson a **Funkciók** elemre.
 
-2. Kattintson az **E-mail küldése** gombra.
+2. Kattintson **Küldjön e-mailt**.
 
 3. Kattintson a **Mégse** gombra.
 
 ## <a name="use-planned-answer-sessions-to-monitor-who-needs-to-complete-the-questionnaire"></a>Használjon Tervezett válaszmunkameneteket annak megfigyelésére, hogy kinek kell kitöltenie a kérdőívet.
 
-1. Kattintson **a Tervezett válasz** munkamenetre.
+1. Kattintson **Tervezett válaszmenet**.
 
     * Törölje a fennmaradó tervezett munkamenet bármelyikét, amikor készen áll az ütemezett munka befejezésére.  
 
@@ -125,7 +128,7 @@ A Kérdőív-ütemezés lehetővé teszi a kérdőívek tervezését és több v
 ## <a name="end-the-schedule-when-all-respondents-have-completed-the-questionnaire-andor-all-remaining-planned-answer-sessions-have-been-deleted"></a>Ha az összes válaszadó kitöltötte a kérdőívet és/vagy az összes fennmaradó Tervezett válaszmunkamenet törlésre került, zárja le az ütemezést.
 
 1. Kattintson a **Funkciók** elemre.
-2. Kattintson a **Záró** gombra.
+2. Kattintson **Vége**.
 3. Kattintson az **OK** gombra.
 
 

@@ -13,18 +13,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: 32bf477bb42657b06f22f7677dcb580b38f0a55c
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
-ms.translationtype: HT
+ms.openlocfilehash: c2f7b660d364be6e62d484e67908201027190a8a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488054"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065101"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Vászonalapú alkalmazások beágyazása a következőből: Power Apps
 
 [!include [banner](../includes/banner.md)]
 
-A Microsoft Power Apps egy olyan szolgáltatás, amely a fejlesztők és a nem műszaki felhasználók számára is lehetővé teszi egyedi üzleti alkalmazások megalkotását mobileszközökre, táblagépekre és internetre, kód írása nélkül. A Finance and Operations alkalmazások támogatják a Power Apps szolgáltatással való integrációt. A vászonalapú alkalmazások, amelyeket Ön, a szervezete vagy a szélesebb ökoszisztéma által kifejlesztett alkalmazások beilleszthetők a Finance and Operations alkalmazásokba, hogy kiterjesszék a termék funkcionalitását. Például létrehozhat egy Power Apps vászonalapú alkalmazást egy Finance and Operations alkalmazás kiegészítésére egy másik rendszerből lekért információkkal.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+A Microsoft Power Apps egy olyan szolgáltatás, amely a fejlesztők és a nem műszaki felhasználók számára is lehetővé teszi egyedi üzleti alkalmazások megalkotását mobileszközökre, táblagépekre és internetre, kód írása nélkül. A Finance and Operations alkalmazások támogatják a Power Apps. Az Ön, szervezete vagy a tágabb ökoszisztéma által kifejlesztett vászonalkalmazások beágyazhatók a Finance and Operations alkalmazásokba a termék funkcionalitásának bővítése érdekében. Például létrehozhat egy vászonalkalmazást ebből Power Apps hogy kiegészítse a Finance and Operations alkalmazást egy másik rendszerről lekért információkkal.
 
 Ha többet szeretne megtudni a vászonalapú alkalmazások beágyazásáról, nézze meg a rövid [Vászonalapú alkalmazások beágyazása](https://www.youtube.com/watch?v=x3qyA1bH-NY) videót.
 
@@ -32,7 +35,7 @@ Ha többet szeretne megtudni a vászonalapú alkalmazások beágyazásáról, n�
 
 Mielőtt Power Apps-ból vászonalapú alkalmazást ágyazna be a kliensbe, meg kell találnia vagy létre kell hoznia egy alkalmazást a kívánt megjelenéssel vagy funkcionalitással. Ez a témakör nem tartalmazza az alkalmazások készítéséhez szükséges folyamat részletes leírását. Ha még nem járatos a Power Apps terén, akkor tekintse meg a [Power Apps-dokumentációt](/powerapps/).
 
-Háromféleképpen lehet beágyazni egy vászonalkalmazást a Finance and Operations alkalmazásba. Az Ön forgatókönyvéhez legjobban illeszkedő megközelítést alkalmazhatja. 
+Háromféleképpen ágyazhat be vászonalkalmazást a Finance and Operations alkalmazásba. Az Ön forgatókönyvéhez legjobban illeszkedő megközelítést alkalmazhatja. 
 
 - A vászonalkalmazás beágyazása a **Power Apps** gombba az oldal standard műveleti ablaktábláján.. Az ilyen módon hozzáadott alkalmazások elemekként jelennek meg a **Power Apps** menügombon, és az alkalmazások oldalablakokban nyílnak meg. 
 - A vászonalkalmazás beágyazása közvetlenül egy meglévő oldalra új lapként (pivot lap, gyorslap, lap vagy munkaterület szakasz).
@@ -65,7 +68,7 @@ A következő eljárás azt mutatja be, hogyan lehet beágyazni egy vászonalkal
 
 ### <a name="embedding-a-canvas-app-as-a-full-page-experience-from-the-dashboard"></a>Vászonalkalmazás beágyazása teljes oldalas élményként az irányítópultról
 
-Előfordulhat, hogy egy vászonalkalmazást az irányítópultról szeretne beágyazni, ha az alkalmazás nem kapcsolódik egy meglévő oldalhoz, vagy ha csak egy teljes oldalas élményként szeretné megjeleníteni az alkalmazást a Finance and Operations alkalmazáson belül.
+Érdemes lehet vászonalkalmazást beágyazni az irányítópultról, ha az alkalmazás nem kapcsolódik egy meglévő oldalhoz, vagy ha csak teljes oldalas élményként szeretné megjeleníteni az alkalmazást a Finance and Operations alkalmazásban.
 
 > [!NOTE]
 > Ahhoz, hogy ez a képesség elérhetővé váljon, a funkciókezelésben be kell kapcsolnia a **Teljes oldalas alkalmazások** funkciót. 
@@ -83,7 +86,7 @@ Amikor beágyaz egy vászonalkalmazást, a következő paramétereket kell beál
 
 - **Név** - Adja meg a beágyazott alkalmazást tartalmazó gomb vagy lap megjelenítendő szövegét. Gyakran előfordulhat, hogy ebben a mezőben meg kell ismételni az alkalmazás nevét.
 - **App ID** - Adja meg a beágyazni kívánt vászonalkalmazás globálisan egyedi azonosítóját (GUID). Az érték lekérdezéséhez keresse meg az alkalmazást a [make.powerapps.com](https://make.powerapps.com) oldalon, majd keresse meg az **Alkalmazás azonosítója** mezőt a **Részletek** alatt.
-- Az **alkalmazás bemeneti kontextusa** - opcionálisan kiválaszthatja azt a mezőt, amely tartalmazza az alkalmazásnak bemenetként átadni kívánt adatokat. Arról, hogy az alkalmazás hogyan férhet hozzá a Finance and Operations alkalmazások által küldött adatokhoz, lásd a [ Finance and Operations alkalmazások által küldött adatokat kihasználó alkalmazás készítése](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) című részt a témakör későbbi részében.
+- Az **alkalmazás bemeneti kontextusa** - opcionálisan kiválaszthatja azt a mezőt, amely tartalmazza az alkalmazásnak bemenetként átadni kívánt adatokat. Arról, hogy az alkalmazás hogyan férhet hozzá a Finance and Operations alkalmazásokból küldött adatokhoz, lásd a [Olyan alkalmazás készítése, amely felhasználja a Finance and Operations alkalmazásokból küldött adatokat](#building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps) részben ebben a témában.
 
     A 10.0.19-es verzió óta az aktuális jogalany is átadásra kerül a vászonalkalmazásnak kontextusként a **cmp** URL paraméteren keresztül. Ez a viselkedés nem lesz hatással a célvászonalkalmazáson, amíg az alkalmazás nem használja az információt.
 
@@ -104,15 +107,15 @@ Miután beágyazott egy vászonalkalmazást egy oldalra, és meggyőződött arr
     - Ha a **Mentett nézetek** funkció ki van kapcsolva, a rendszeradminisztrátor a **Személyre szabás** lapon keresztül a vászonalkalmazást tartalmazó személyre szabást adhat a megfelelő felhasználói csoportnak. Alternatívaként exportálhatja az oldal személyre szabott beállításait, majd elküldheti azokat egy vagy több felhasználónak. Ezután minden egyes felhasználó importálhatja a személyre szabást. A személyre szabási eszköztárban vannak gombok, amelyekkel exportálhatja és importálhatja a személyre szabott beállításokat.
 
 > [!NOTE]
-> Ha a vászonalapú alkalmazást külső felhasználókkal osztották meg, akkor ezek a felhasználók nem használhatják a beágyazott alkalmazást a Finance and Operations alkalmazásokon belül. Az alkalmazást azonban közvetlenül a Power Appsen belül elérhetik. A külső felhasználók azok a vendégek és felhasználók, akik nem tartoznak a Microsoft 365 Azure Directory-hoz ott, ahova telepítették a Finance and Operations alkalmazást.
+> Ha a vászonalkalmazást megosztották külső felhasználókkal, akkor ezek a felhasználók nem használhatják a beágyazott alkalmazást a Finance and Operations alkalmazásokon belül. Az alkalmazást azonban közvetlenül a Power Appsen belül elérhetik. A külső felhasználók közé tartoznak a vendégek és a nem tartozó felhasználók Microsoft 365 Azure Directory, ahol a Finance and Operations alkalmazás telepítve van.
 
 A termék személyre szabási funkcióival és a használatukkal kapcsolatos bővebb információért lásd: [A felhasználói élmény testreszabása](personalize-user-experience.md).
 
-## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>A Finance and Operations alkalmazásokból küldött adatokat használó vászonalapú alkalmazás építése
+## <a name="building-a-canvas-app-that-uses-data-that-is-sent-from-finance-and-operations-apps"></a>Olyan vászonalkalmazás készítése, amely a Finance and Operations alkalmazásokból küldött adatokat használja
 
-Amikor egy Finance and Operations alkalmazásba beágyazott vászonalapú alkalmazást hoz létre, akkor a folyamat egyik fontos része, hogy használja az adott Finance and Operations alkalmazásból származó bemeneti adatokat. A Power Apps fejlesztői élményből a Finance and Operations alkalmazás által átadott bemeneti adat a **Param(„EntityId”)** változó használatával érhető el. Továbbá a 10.0.19-es verziótól kezdve az aktuális jogi személy is át lesz adva a vászonalapú alkalmazásnak a **Param(„cmp”)** változóval. 
+Amikor olyan vászonalkalmazást készít, amely be lesz ágyazva egy Finance and Operations alkalmazásba, a folyamat egyik fontos része az adott Finance and Operations alkalmazás bemeneti adatainak felhasználása. Tól Power Apps fejlesztési tapasztalattal, a Finance and Operations alkalmazásból átadott bemeneti adatok a segítségével érhetők el **Paraméter("EntityId")** változó. Továbbá a 10.0.19-es verziótól kezdve az aktuális jogi személy is át lesz adva a vászonalapú alkalmazásnak a **Param(„cmp”)** változóval. 
 
-Például az alkalmazás OnStart függvényében a Finance and Operations alkalmazásokból származó bemeneti adatokat egy változóra állíthatja be:
+Például az alkalmazás OnStart funkciójában beállíthatja a Finance and Operations alkalmazások bemeneti adatait egy ehhez hasonló változóra:
 
 ``` Power Apps
 If(!IsBlank(Param("EntityId")), Set(FinOpsInput, Param("EntityId")), Set(FinOpsInput, ""));
@@ -122,7 +125,7 @@ If(!IsBlank(Param("cmp")), Set(FinOpsLegalEntity, Param("cmp")), Set(FinOpsLegal
 
 ## <a name="viewing-a-canvas-app"></a>Vászonalapú alkalmazás megtekintése
 
-Egy beágyazott alkalmazás megtekintéséhez egy lapon a Finance and Operations alkalmazásokban, ugorjon a beágyazott vászonalapú alkalmazás oldalára. Ne felejtse el, hogy az alkalmazásokat a szokásos Művelet ablaktábla **Power Apps** gombján keresztül érheti el. Másik lehetőségként megjelenhetnek közvetlenül egy oldalon új lap, gyorslap vagy lapát, illetve a munkaterület új szakasza formájában. Amikor a felhasználók először megpróbálnak betölteni egy alkalmazást egy oldalon, a rendszer meg fogja kérni őket, hogy jelentkezzenek be. Ez a lépés biztosítja, hogy a felhasználók megfelelő jogosultságokkal rendelkeznek az alkalmazás használatához.
+Ha egy beágyazott vászonalkalmazást szeretne megtekinteni a Finance and Operations alkalmazások egyik oldalán, egyszerűen lépjen egy olyan oldalra, amelyen beágyazott alkalmazás található. Ne felejtse el, hogy az alkalmazásokat a szokásos Művelet ablaktábla **Power Apps** gombján keresztül érheti el. Másik lehetőségként megjelenhetnek közvetlenül egy oldalon új lap, gyorslap vagy lapát, illetve a munkaterület új szakasza formájában. Amikor a felhasználók először megpróbálnak betölteni egy alkalmazást egy oldalon, a rendszer meg fogja kérni őket, hogy jelentkezzenek be. Ez a lépés biztosítja, hogy a felhasználók megfelelő jogosultságokkal rendelkeznek az alkalmazás használatához.
 
 ## <a name="editing-an-embedded-app"></a>Beágyazott alkalmazás szerkesztése
 

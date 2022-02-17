@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: d6a7b1b21816db43a92364584e15ec04b891c611
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
-ms.translationtype: HT
+ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487841"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065706"
 ---
 # <a name="saved-views"></a>Mentett nézetek
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 ## <a name="introduction"></a>Bevezetés
 
@@ -212,7 +215,7 @@ A mentett nézetekkel kapcsolatos ismert problémák listája a [Mentett nézete
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hogyan lehet engedélyezni a mentett nézeteket a saját környezetemben?
 
 > [!NOTE]
-> A **Mentett nézetek** funkció használatához engedélyeznie kell a Finance and Operations rendszerben a testreszabási rendszert. Ha a teljes környezetnél ki van kapcsolva a testreszabás, a nézeteket a rendszer akkor is letiltja, ha a lenti lépéseket elvégzi. 
+> A **Mentett nézetek** funkció megköveteli, hogy a Finance and Operations személyre szabott rendszere engedélyezve legyen. Ha a teljes környezetnél ki van kapcsolva a testreszabás, a nézeteket a rendszer akkor is letiltja, ha a lenti lépéseket elvégzi. 
 
 A **Mentett nézetek** funkciót bármely környezetben be- és kikapcsolhatja a Funkciókezelés segítségével. Ha be van kapcsolva, a mentett nézetek minden későbbi felhasználói munkamenetben engedélyezve lesznek.
 

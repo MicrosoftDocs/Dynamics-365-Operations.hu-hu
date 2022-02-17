@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 8265b6b2269822bcae6d573091d2994e25826d1a
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.openlocfilehash: dc71748a5081b90feb69ed0da936c42b4d0e572a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7729123"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070702"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>A kérdőívek megtekintése és az eredmények kiértékelése
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -31,7 +34,7 @@ Ez a témakör ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött k
 Ha a válaszadók kitöltötték a kérdőívet, megtekintheti, valamint kiértékelheti a kérdőív eredményét az alábbi módokon:
 
 -   **Befejezett válaszmunkamenetek** – A válaszadók által kitöltött kérdőívek részleteinek megtekintése, valamint a válaszok és elért pontok összesítésére szolgáló jelentés létrehozása.
--   **Eredmény csoportok** – A kérdőív eredménycsoportjainak és statisztikájának megtekintése. Eredménycsoport-statisztika generálható egy kérdőív egyetlen válasz-munkamenetére vagy az összes válasz-munkamenetre.
+-   **Eredmény csoportok** – A kérdőív eredménycsoportjainak és statisztikájának megtekintése. Az eredménycsoport statisztikái egy kérdőív egyetlen válaszmenetére vagy az összes válaszadásra is előállíthatók.
 -   **Kérdőív-statisztika** – A válaszadók bizonyos csoportjához tartozó statisztika kiszámítási feltételeinek megadása.
 
 Létrehozhat az eredmények megtekintéséhez személy, válaszmunkamenet vagy eredménycsoport alapján rendezett jelentéseket. Az alábbi jelentések érhetőek el a kitöltött kérdőívekhez:

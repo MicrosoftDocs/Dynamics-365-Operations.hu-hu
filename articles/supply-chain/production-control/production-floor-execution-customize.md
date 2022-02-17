@@ -1,6 +1,6 @@
 ---
 title: A termelési üzem végrehajtási felületének testreszabása
-description: Ez a témakör leírja, hogyan lehet kiterjeszteni az aktuális képernyőkat, illetve új képernyők és gombok létrehozása a termelési emelet végrehajtási felületére.
+description: Ez a témakör elmagyarázza, hogyan lehet kiterjeszteni a jelenlegi űrlapokat, illetve hogyan lehet új űrlapokat és gombokat létrehozni a termelési szint végrehajtási felületéhez.
 author: johanhoffmann
 ms.date: 11/08/2021
 ms.topic: article
@@ -12,52 +12,52 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-11-08
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 414fe5d6e16ad125bc2b9bb7ed427e5db5180ec9
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: 67fb381cbef6f1673afcaa834666b4a859bdf4e6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790974"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066546"
 ---
 # <a name="customize-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének testreszabása
 
 [!include [banner](../includes/banner.md)]
 
-A fejlesztők bővíthetnek az aktuális képernyőt, vagy létrehozhatják a saját képernyőiket és gombjaikat a termelési emelet végrehajtási felületére. Miután hozzáadta az új elemek kódját, a rendszergazdák vagy az üzletvezetők egyszerűen hozzáadhatják őket a felülethez a szabványos konfigurációvezérlők segítségével.
+A fejlesztők kiterjeszthetik a jelenlegi űrlapokat, vagy létrehozhatják saját űrlapjaikat és gombjaikat a termelési szint végrehajtási felületéhez. Miután hozzáadta ezekhez az új elemekhez a kódot, az adminisztrátorok vagy a műhelyvezetők a szabványos konfigurációs vezérlők segítségével könnyedén hozzáadhatják őket a felülethez.
 
-Íme néhány példa a lehetséges megoldásokból, ha új oszlopokra van szükség a fő képernyőn:
+Például itt van néhány lehetséges megoldás, ha új oszlopokra van szükség fő formában:
 
-- A képernyő `JmgProductionFloorExecutionMainGrid` kiterjesztése és a kívánt mezők hozzáadása.
-- Hozzon létre egy új képernyőt, és adja hozzá új fő nézetként (lap).
+- Hosszabbítsa meg a`JmgProductionFloorExecutionMainGrid` űrlapot, és adja hozzá a kívánt mezőket.
+- Hozzon létre egy új űrlapot, és adja hozzá új főnézetként (lapként).
 
 ## <a name="add-a-new-button-action"></a>Új gomb hozzáadása (művelet)
 
-Ha új gombot (műveletet) szeretne hozzáadni, a következő lépésekkel hozzon létre egy osztályt, amely megvalósítja az egyéni műveletet.
+Új gomb (művelet) hozzáadásához kövesse az alábbi lépéseket az egyéni műveletet megvalósító osztály létrehozásához.
 
-1. Új nevű osztály `<ExtensionPrefix>_JmgProductionFloorExecution<ActionName>Action` létrehozása, ahol:
+1. Hozzon létre egy új osztályt, amelynek neve`<ExtensionPrefix>_JmgProductionFloorExecution<ActionName>Action`, ahol:
 
-    - `<ExtensionPrefix>` Egyedi módon azonosítja a megoldást, jellemzően a vállalat neve alapján.
-    - `<ActionName>`  Ez egy egyedi név az osztály számára. Általában azonosítja a művelet fajtáját.
+    - `<ExtensionPrefix>` egyedileg azonosítja a megoldást, jellemzően a vállalat nevével.
+    - `<ActionName>` az osztály egyedi neve. Jellemzően a cselekvés típusát azonosítja.
 
-1. Az új osztálynak ki kell bővítenie az `JmgProductionFloorExecutionAction` osztályt.
-1. Minden szükséges metódus felülbírálása.
+1. Az új osztálynak ki kell terjesztenie a`JmgProductionFloorExecutionAction` osztály.
+1. Minden szükséges módszer felülírása.
 
-Például nézze meg a következő osztályok kódját:
+Példákért nézze meg a következő osztályok kódját:
 
-- `JmgProductionFloorExecutionBreakAction`– egy egyszerű művelet osztálya, amely nem szükséges rekordokhoz.
-- `JmgProductionFloorExecutionReportFeedbackAction`– olyan osztály, amely összetettebb funkciókat kínál.
+- `JmgProductionFloorExecutionBreakAction`– Egy osztály egy egyszerű művelethez, amelyhez nincs szükség rekordokra.
+- `JmgProductionFloorExecutionReportFeedbackAction`– Összetettebb funkcionalitást biztosító osztály.
 
-Ha végzett, az új gomb (művelet) automatikusan megjelenik a **Microsoft Tervező** Dynamics 365 Supply Chain Management lapjain. Itt Ön (vagy rendszergazda vagy az emeleti vezető) egyszerűen hozzáadhatja az elsődleges vagy másodlagos eszköztárhoz, akár csak a szokásos gombokat. Az útmutatást lásd [a Termelési üzem végrehajtási felületének megtervezése](production-floor-execution-tabs.md) útmutatóban.
+Ha végzett, az új gomb (művelet) automatikusan megjelenik a listában **Tervezési lapok** oldal a Microsoftban Dynamics 365 Supply Chain Management. Ott Ön (vagy egy adminisztrátor vagy az emeleti menedzser) könnyedén hozzáadhatja az elsődleges vagy másodlagos eszköztárhoz, ahogy a szabványos gombokat is. Az utasításokat lásd [Tervezze meg a termelési szint végrehajtási felületét](production-floor-execution-tabs.md).
 
-## <a name="add-a-new-main-view"></a>Új fő nézet hozzáadása
+## <a name="add-a-new-main-view"></a>Új főnézet hozzáadása
 
-1. Hozzon létre egy új képernyőt, amely tartalmazza a kívánt elemeket és funkciókat. Ne feledje, hogy ez a képernyő egy új képernyő, nem kiterjesztés. A képernyő `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>` neve, ahol:
+1. Hozzon létre egy új űrlapot, amely rendelkezik a kívánt elemekkel és funkciókkal. Vegye figyelembe, hogy ez az űrlap új űrlap, nem kiterjesztés. Nevezze el az űrlapot`<ExtensionPrefix>_JmgProductionFloorExecution<FormName>`, ahol:
 
-    - `<ExtensionPrefix>` Egyedi módon azonosítja a megoldást, jellemzően a vállalat neve alapján.
-    - `<FormName>` A <a0/<a0/<a2/aki a képernyő egyedi neve.
+    - `<ExtensionPrefix>` egyedileg azonosítja a megoldást, jellemzően a vállalat nevével.
+    - `<FormName>` az űrlap egyedi neve.
 
-1. Nevű menüelem `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>` létrehozása.
-1. Hozzon létre egy névvel kiegészített kiterjesztést, ahol a módszer kibővíthető az új menüelemnek a `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension``getMainMenuItemsList` listához való hozzáadásával. A következő kód egy példát mutat be.
+1. Hozzon létre egy menüelemet, amelynek neve `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>`.
+1. Hozzon létre egy nevű bővítményt`<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension`, hol a`getMainMenuItemsList` módszer kibővül az új menüpont hozzáadásával a listához. A következő kód példát mutat.
 
     ```xpp
     [ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
@@ -70,25 +70,25 @@ Ha végzett, az új gomb (művelet) automatikusan megjelenik a **Microsoft Terve
         }
     ```
 
-Ha végzett, az új fő nézet automatikusan megjelenik az Ellátásilánc-kezelés Lap Tervezés lapján, a Fő nézet **·** kombinált **·** mezőben. Itt Ön (vagy rendszergazda vagy emeleti vezető) egyszerűen hozzáadhatja az új vagy meglévő lapokhoz, ahogy a szokásos fő nézeteket is hozzáadhatja. Az útmutatást lásd [a Termelési üzem végrehajtási felületének megtervezése](production-floor-execution-tabs.md) útmutatóban.
+Ha végzett, az új fő nézet automatikusan megjelenik a listában **Fő nézet** kombinált doboz a **Tervezési lapok** oldalon a Supply Chain Management oldalon. Itt Ön (vagy egy adminisztrátor vagy az emeleti menedzser) könnyedén hozzáadhatja új vagy meglévő lapokhoz, ahogyan a szabványos fő nézeteket is. Az utasításokat lásd [Tervezze meg a termelési szint végrehajtási felületét](production-floor-execution-tabs.md).
 
-## <a name="add-a-details-view"></a>Részletes nézet hozzáadása
+## <a name="add-a-details-view"></a>Részletek nézet hozzáadása
 
-1. Hozzon létre egy új képernyőt, amely tartalmazza a kívánt elemeket és funkciókat. Ne feledje, hogy ez a képernyő új, nem bővítmény. A képernyő `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail` neve, ahol: 
+1. Hozzon létre egy új űrlapot, amely rendelkezik a kívánt elemekkel és funkciókkal. Vegye figyelembe, hogy ez az űrlap új, nem bővítmény. Nevezze el az űrlapot`<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail`, ahol: 
 
-    - `<ExtensionPrefix>` Egyedi módon azonosítja a megoldást, jellemzően a vállalat neve alapján.
-    - `<FormName>` A <a0/<a0/<a2/aki a képernyő egyedi neve.
+    - `<ExtensionPrefix>` egyedileg azonosítja a megoldást, jellemzően a vállalat nevével.
+    - `<FormName>` az űrlap egyedi neve.
 
-1. Nevű menüelem `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail` létrehozása.
-1. Hozzon létre egy névvel kiegészített kiterjesztést, ahol a módszer kibővíthető az új menüelemnek a `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension``getDetailsMenuItemList` listához való hozzáadásával.
+1. Hozzon létre egy menüelemet, amelynek neve `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail`.
+1. Hozzon létre egy nevű bővítményt`<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension`, hol a`getDetailsMenuItemList` módszer kibővül az új menüpont hozzáadásával a listához.
 
-Ha végzett, az új részletek nézet automatikusan megjelenik az Ellátásilánc-kezelés Lap Tervezés lapján, a Részletek nézet **·** kombinált **·** listában. Itt Ön (vagy rendszergazda vagy emeleti vezető) könnyen hozzáadhatja az új vagy meglévő lapokhoz, akár csak úgy, ahogyan a szokásos részletek nézetét is hozzáadhatja. Az útmutatást lásd [a Termelési üzem végrehajtási felületének megtervezése](production-floor-execution-tabs.md) útmutatóban.
+Ha végzett, az új részletes nézet automatikusan megjelenik a listában **Részletek nézet** kombinált doboz a **Tervezési lapok** oldalon a Supply Chain Management oldalon. Itt Ön (vagy egy adminisztrátor vagy az emeleti menedzser) egyszerűen hozzáadhatja új vagy meglévő lapokhoz, ugyanúgy, mint a szabványos részletes nézeteket. Az utasításokat lásd [Tervezze meg a termelési szint végrehajtási felületét](production-floor-execution-tabs.md).
 
-## <a name="add-a-numeric-keypad-to-a-form-or-dialog"></a>Numerikus billentyűzet hozzáadása képernyőkhez vagy párbeszédpanelhez
+## <a name="add-a-numeric-keypad-to-a-form-or-dialog"></a>Számbillentyűzet hozzáadása egy űrlaphoz vagy párbeszédpanelhez
 
-Az alábbi példa bemutatja, hogyan lehet numerikus billentyűzeteket hozzáadni a képernyőkhez.
+A következő példa bemutatja, hogyan lehet számbillentyűzeteket hozzáadni egy űrlaphoz.
 
-1. Az egyes képernyőket tartalmazó numerikus billentyűzetvezérlők számának meg kell egynie a képernyőn található numerikus billentyűzetek számával.
+1. Az egyes űrlapokon található számbillentyűzet-vezérlők számának meg kell egyeznie az adott űrlapon lévő numerikus billentyűzetek számával.
 
     ```xpp
     private JmgProductionFloorExecutionNumpadController   numpadController1;
@@ -96,7 +96,7 @@ Az alábbi példa bemutatja, hogyan lehet numerikus billentyűzeteket hozzáadni
     private JmgProductionFloorExecutionNumpadController   numpadController3;
     ```
 
-1. Állítsa be az egyes numerikus billentyűzetvezérlők viselkedését, és kapcsolja az egyes numerikus billentyűzetvezérlőket egy numerikus billentyűzet képernyőrészhez.
+1. Állítsa be az egyes számbillentyűzet-vezérlők viselkedését, és csatlakoztassa az egyes számbillentyűzet-vezérlőket egy számbillentyűzet-alkatrészhez.
 
     ```xpp
     /// <summary>
@@ -116,9 +116,9 @@ Az alábbi példa bemutatja, hogyan lehet numerikus billentyűzeteket hozzáadni
     }
     ```
 
-## <a name="use-a-numeric-keypad-as-a-pop-up-dialog"></a>Numerikus billentyűzet használata előugró párbeszédpanelként
+## <a name="use-a-numeric-keypad-as-a-pop-up-dialog"></a>Használjon számbillentyűzetet felugró párbeszédpanelként
 
-A következő példa egy, az előugró párbeszédpanelen használható numerikus billentyűzetvezérlő beállítását mutatja be.
+A következő példa bemutatja a számbillentyűzet-vezérlő beállításának egyik módját egy felugró párbeszédpanelhez.
 
 ```xpp
 private void setupNumpadController()
@@ -129,7 +129,7 @@ private void setupNumpadController()
 }
 ```
 
-A következő példa bemutatja az egyik módja a numerikus billentyűzet előugró párbeszédpanelének hívását.
+A következő példa bemutatja a számbillentyűzet felugró párbeszédablak meghívásának egyik módját.
 
 ```xpp
 Args args = new Args();

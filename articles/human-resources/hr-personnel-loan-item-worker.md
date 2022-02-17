@@ -13,36 +13,39 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b60439f5f7bb5509423219606d7b9bb2cf3c28a6
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 6356b50e0e3c337c88de86d271bc4438fdd451db
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771314"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070216"
 ---
 # <a name="loan-item-to-a-worker"></a>Dolgozónak kölcsönzött cikk
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-Ez az eljárás bemutatja, hogyan lehet kölcsönadni egy cikket a dolgozónak, és rögzíteni a dolgozó visszáruját. A dolgozók az Alkalmazott önkiszolgáló oldalukon keresztül **is kérhetik a kölcsönbe adott** cikkeket. A **művelet az USMF** bemutatóadat-vállalatot használta az eljárás létrehozásához.
+Ez az eljárás bemutatja, hogyan lehet kölcsönözni egy cikket egy dolgozónak, és rögzíteni kell a kölcsön cikk dolgozói általi visszaküldését. A dolgozók kölcsöncikkeket is igényelhetnek rajtuk keresztül **Alkalmazotti önkiszolgáló** oldalon. A **USMF** demóadat-társaságot használtak ennek az eljárásnak a létrehozásához.
 
 
-## <a name="loan-an-item-to-a-worker"></a>Cikk kölcsönzése egy dolgozónak
+## <a name="loan-an-item-to-a-worker"></a>Kölcsön adj kölcsönt egy munkásnak
 
-1. Ugrás a **Humán erőforrások dolgozók \>\> kölcsönbe adott \> cikkeit - Kölcsönbe adott berendezések**
+1. Menj **Emberi Erőforrások \> Munkások \> Kölcsön cikkek \> Kölcsönadott felszerelés**.
 2. Válassza az **Új** lehetőséget.
-3. A **Személy** mezőben adjon meg vagy válasszon ki egy értéket.
-4. A **Kölcsöncikk mezőben adjon meg vagy** válasszon ki egy értéket.
-5. A Tervezett visszáru mezőben adja meg azt a dátumot, amikor az alkalmazottnak vissza kell **·** adnia a kölcsöncikket.
+3. Ban,-ben **Személy** mezőbe írja be vagy válasszon értéket.
+4. Ban,-ben **Kölcsön tétel** mezőbe írja be vagy válasszon értéket.
+5. Ban,-ben **Tervezett visszatérés** mezőbe írja be azt a dátumot, amikor a munkavállalónak vissza kell küldenie a kölcsön cikkét.
 6. Válassza a **Mentés** lehetőséget.
 7. Zárja be a lapot.
 
 ## <a name="return-a-loan-item"></a>Kölcsöncikk visszaküldése
 
-1. Ugrás a **Humán erőforrások dolgozók \>\> kölcsönbe adott \> cikkeit - Kölcsönbe adott berendezések**
+1. Menj **Emberi Erőforrások \> Munkások \> Kölcsön cikkek \> Kölcsönadott felszerelés**.
 2. Válassza ki a **Szerkesztés** opciót.
-3. A Tényleges **·** visszáru mezőbe írjon be egy dátumot.
+3. Ban,-ben **Tényleges megtérülés** mezőbe írja be a dátumot.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

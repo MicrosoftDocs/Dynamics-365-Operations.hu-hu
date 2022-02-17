@@ -1,6 +1,6 @@
 ---
 title: Integrált adó
-description: Ez a témakör az adóügyi adatok integrációját ismerteti a Finance and Operations és a Dataverse között.
+description: Ez a témakör az adóadatok Finance and Operations és Dataverse közötti integrációját ismerteti.
 author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
@@ -9,18 +9,18 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: tfehr
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: d1e74bbbeba019ca48dd823b58251643e96edd0c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 532e6603b74ad0293d65684d2d6858ef31fbc496
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782210"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063187"
 ---
 # <a name="integrated-tax"></a>Integrált adó
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Az adóadatok beállítása határozza meg mind a közvetett adók (áfa, GST), mind az adóelőleg beállításait. Leírja az adószámítási szabályt, az adókulcsot, az adókönyvelés és az elszámolás részleteit, illetve további fogalmakat.
 
@@ -28,7 +28,7 @@ Az adóadatok beállítása határozza meg mind a közvetett adók (áfa, GST), 
 
 Az adóadatok tartalmazzák azokat a táblaleképezéseket, amelyek – az alábbi táblázatban látható módon – együttműködnek az adatok interakciója során.
 
-| Finance and Operations-alkalmazásoknak | Customer Engagement alkalmazások | Leírás |
+| Finance and Operations alkalmazások | Customer Engagement alkalmazások | Leírás |
 |-----------------------------|-----------------------------------|-------------|
 [Cikkáfacsoport](mapping-reference.md#196) | msdyn_taxitemgroups | |
 [Adóhatóságok](mapping-reference.md#193) | msdyn_taxauthorities | |

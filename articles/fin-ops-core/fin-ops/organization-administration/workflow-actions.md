@@ -14,16 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f5750ac5814525351e6688b0aa49eee3811f7785775a91f3394c1a481de8adf2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 2e546dc57692e31d4501984dafa21fbae23a48fe
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749364"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070933"
 ---
 # <a name="actions-in-workflow-approval-processes"></a>Jóváhagyási folyamatok műveletei
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a cikk ismerteti a munkafolyamat elfogadási folyamatának egyes résztvevői által vállalható műveleteket.
 

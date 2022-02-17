@@ -16,18 +16,18 @@ ms.search.industry: ''
 ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 31674b2be3deb52277cbf79e1e076da13bf94404
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 8dfba2d2dc2fdd4af136e3cb20061d794369011f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566359"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060945"
 ---
 # <a name="synchronize-inventory-level-information-from-supply-chain-management-to-field-service"></a>Készletszintű információk szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba 
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management készletszint-adatainak közvetlenül a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 
@@ -64,7 +64,7 @@ A Field Service megoldásban az integrációs megoldás készletnaplókat hoz l�
 
 A Supply Chain Management a készletszintek alapjaként szolgál. Tehát, ezért fontos az integráció beállítása a munkarendelések, az átvitelek és a kiigazítások esetében a Field Service megoldásból a Supply Chain Management megoldásba, ha a funkció használatban van a Field Service szolgáltatásban, a készletszintek szinkronizálásával együtt a Supply Chain Management megoldásból.
 
-Az olyan termékeket és raktárakat, ahol a készletszintek alapja a Supply Chain Management, a speciális lekérdezés és szűrés (Power Query) segítségével lehet vezérelni.
+Azok a termékek és raktárak, ahol a készletszinteket a Supply Chain Management segítségével kezelik, a Speciális lekérdezés és szűrés segítségével vezérelhetők (Power Query).
 
 > [!NOTE]
 > Megjegyzés: Lehetőség van több raktár létrehozására a Field Services megoldásban (ahol a **Külsőleg karbantartott = Nem**), majd a leképezésükre egy raktárba a Supply Chain Management megoldásban, a speciális lekérdezési és szűrési funkcióval. Ez olyan helyzetekben használt, amikor azt szeretnénk, hogy a Field Service kezelje a részletes készletszintet, és csak frissítéseket küldjön a Supply Chain Management megoldásba. Ebben az esetben a Field Service nem kap készletszintű frissítéseket a Supply Chain Management megoldásból. További információért lásd: [Készletátvitelek és szinkronizálása a Field Service alkalmazásból a Supply Chain Management alkalmazásba](/dynamics365/unified-operations/supply-chain/sales-marketing/synchronize-inventory-adjustments) és [A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel](/dynamics365/unified-operations/supply-chain/sales-marketing/field-service-work-order).

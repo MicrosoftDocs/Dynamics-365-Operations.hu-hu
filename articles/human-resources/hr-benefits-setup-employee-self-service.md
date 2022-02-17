@@ -1,5 +1,5 @@
 ---
-title: Az alkalmazott önkiszolgáló szolgáltatásának konfigurálása
+title: Alkalmazotti önkiszolgáló konfigurálása
 description: A Microsoft Dynamics 365 Human Resources alkalmazásban lehetősége van csempéket konfigurálni az Alkalmazotti önkiszolgáló rendszer felső szintű navigációjához.
 author: twheeloc
 ms.date: 12/06/2021
@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 1e0c59eb8db5a97405e87922cc65f3eb74bee48e
-ms.sourcegitcommit: b101c21f972fdad2667431f712222e040cd69d43
+ms.openlocfilehash: 83718856a864123d7941b21c078bcdb96a62cca8
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2021
-ms.locfileid: "7898440"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067579"
 ---
 # <a name="configure-employee-self-service"></a>Alkalmazotti önkiszolgálás konfigurálása
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -38,12 +41,12 @@ A Microsoft Dynamics 365 Human Resources rendszerben a felső szintű navigáci�
 
    | Mező | Leírás |
    | --- | --- |
-   | **Konstrukció típuskódja** | Az a tervtípus, amely akkor jelenik meg, amikor ez a csempe ki van jelölve az **Előnyök önkiszolgáló szolgáltatásban**. |
+   | **Konstrukció típuskódja** | A csempe kiválasztásakor megjelenő tervtípus **Önkiszolgálás előnyei**. |
    | **Csempe azonosítója** | A mozaik egyedi azonosítója. |
-   | **CSempecímke felirata** | A csempéhez a **Benefits önkiszolgáló szolgáltatásban megjelenő szöveg**. |
+   | **CSempecímke felirata** | A szöveg, amely a csempéhez fog megjelenni **Önkiszolgálás előnyei**. |
    | **Leírás** | A csempe leírása. |
    | **Csempeháttérkép** | A csempéhez használandó kép URL-címe (nem kötelező). |
-   | **Nyílt beiratkozás nyomon követése** | Ezzel a beállítással nyomon követheti a csomagtípus nyitott regisztrációs előrehaladását. Előfordulhat például, hogy olyan terveket hoz létre, ahol **a Terv típusa = Egyéb**. Ezek a konstrukciók választható konstrukciók lehetnek, amelyekhez nem szeretné nyomon követni a beléptetés előrehaladását. Ha nem választja ki ezt a tervtípust, az ilyen típusú terv figyelmen kívül marad a regisztráció előrehaladásának vagy a regisztráció befejezésének nyomon követésekor a **Regisztráció megnyitása** lapon. Ez a beállítás az összes időszakra és jogi személyre kiválasztott tervtípusra vonatkozik. |
+   | **Nyitott jelentkezés nyomon követése** | Válassza ezt a lehetőséget, ha nyomon szeretné követni az ehhez a tervtípushoz tartozó nyitott regisztráció előrehaladását. Előfordulhat például, hogy hol készített terveket **Terv típusa = Egyéb**. Ezek a konstrukciók választható konstrukciók lehetnek, amelyekhez nem szeretné nyomon követni a beléptetés előrehaladását. Ha nem választja ki ezt a tervtípust, a rendszer figyelmen kívül hagyja ezt a típusú csomagot a beiratkozás előrehaladásának vagy a regisztráció befejezésének nyomon követésekor.**Nyitott jelentkezés** lapon. Ez a beállítás az összes időszakra és jogi személyre kiválasztott tervtípusra vonatkozik. |
 
 4. Válassza a **Mentés** lehetőséget.
 
@@ -57,12 +60,12 @@ A Microsoft Dynamics 365 Human Resources rendszerben a felső szintű navigáci�
 
    | Mező | Leírás |
    | --- | --- |
-   | **Juttatás-jóváírás azonosítója** | A rugalmas hitelprogram-tervek, amelyek akkor jelennek meg, ha ez a csempe ki van jelölve a **Előnyök önkiszolgáló**. |
+   | **Juttatás-jóváírás azonosítója** | A rugalmas beszámítási programtervek, amelyek akkor jelennek meg, ha ez a csempe ki van választva **Önkiszolgálás előnyei**. |
    | **Csempe azonosítója** | A mozaik egyedi azonosítója. |
-   | **CSempecímke felirata** | A csempéhez a **Benefits önkiszolgáló szolgáltatásban megjelenő szöveg**. |
+   | **CSempecímke felirata** | A szöveg, amely a csempéhez fog megjelenni **Önkiszolgálás előnyei**. |
    | **Leírás** | A csempe leírása. |
    | **Csempeháttérkép** | A csempéhez használandó kép URL-címe (nem kötelező). |
-   | **Nyílt beiratkozás nyomon követése** | Ezzel a beállítással nyomon követheti a csomagtípus nyitott regisztrációs előrehaladását. Előfordulhat például, hogy olyan terveket hoz létre, ahol **a Terv típusa = Egyéb**. Ezek a konstrukciók választható konstrukciók lehetnek, amelyekhez nem szeretné nyomon követni a beléptetés előrehaladását. Ha nem választja ki ezt a tervtípust, az ilyen típusú terv figyelmen kívül marad a regisztráció előrehaladásának vagy a regisztráció befejezésének nyomon követésekor a **Regisztráció megnyitása** lapon. Ez a beállítás az összes időszakra és jogi személyre kiválasztott tervtípusra vonatkozik. |
+   | **Nyitott jelentkezés nyomon követése** | Válassza ezt a lehetőséget, ha nyomon szeretné követni az ehhez a tervtípushoz tartozó nyitott regisztráció előrehaladását. Előfordulhat például, hogy hol készített terveket **Terv típusa = Egyéb**. Ezek a konstrukciók választható konstrukciók lehetnek, amelyekhez nem szeretné nyomon követni a beléptetés előrehaladását. Ha nem választja ki ezt a tervtípust, a rendszer figyelmen kívül hagyja ezt a típusú csomagot a beiratkozás előrehaladásának vagy a regisztráció befejezésének nyomon követésekor.**Nyitott jelentkezés** lapon. Ez a beállítás az összes időszakra és jogi személyre kiválasztott tervtípusra vonatkozik. |
 
 4. Válassza a **Mentés** lehetőséget.
 

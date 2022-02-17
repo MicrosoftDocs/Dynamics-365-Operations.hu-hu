@@ -9,27 +9,27 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 69667f8b64c048f5957168d1af21a6c858bc0bad
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: df184decdfa900ccb5c2070575e55052b9dfc547
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782579"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062363"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Élő szinkronizálási problémák elhárítása
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ez a cikk a Finance and Operations és a Microsoft Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz. Pontosabban, olyan információkat tartalmaz, amelyek segítségével javíthatók az élő szinkronizálás problémái.
+
+Ez a témakör hibaelhárítási információkat tartalmaz a Finance and Operations alkalmazások és a kettős írási integrációhoz Microsoft Dataverse. Pontosabban, olyan információkat tartalmaz, amelyek segítségével javíthatók az élő szinkronizálás problémái.
 
 > [!IMPORTANT]
 > Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazdai szerepkört vagy az Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
 
 ## <a name="live-synchronization-shows-an-error-when-you-create-a-row"></a>Az élő szinkronizálás hibát jelez sor létrehozásakor
 
-A következő hibaüzenet jelenhet meg, amikor létrehoz egy sort a Finance and Operations alkalmazásban:
+A következő hibaüzenet jelenhet meg, amikor sort hoz létre egy Finance and Operations alkalmazásban:
 
 *\[{\\"hiba\\":{\\"kód\\":\\"0x80072560\\",\\"üzenet\\":\\„A felhasználó nem a szervezet tagja\\"}}\], A távoli kiszolgáló a következő hibát küldte vissza: (403) Tiltott.”}}".*
 
@@ -39,27 +39,27 @@ A hiba elhárításához kövesse a [Rendszerkövetelmények és előfeltételek
 
 **A hiba megtekintéséhez szükséges szerepkör:** Rendszergazda
 
-A következő hibaüzenet jelenhet meg, amikor adatot táblát próbál menteni a Finance and Operations alkalmazásban:
+A következő hibaüzenet jelenhet meg, amikor megpróbálja menteni a táblázat adatait egy Finance and Operations alkalmazásban:
 
 *A módosítások nem menthetők az adatbázisba. A munkaegység nem tudja véglegesíteni a tranzakciót. Nem lehet adatokat írni az entitás értékesítési mértékegységeibe. A UnitOfMeasureEntity írása hibaüzenettel megszakadt, nem lehet szinkronizálni az entitás értékesítési mértékegységeivel.*
 
-A hiba elhárítása érdekében gondoskodnia kell arról, hogy az előfeltételnek számító referenciaadatok mind a Finance and Operations alkalmazásban, mind a Dataverse szolgáltatásban létezzenek. Ha például egy vevői rekord egy adott vevőcsoporthoz tartozik, győződjön meg arról, hogy a vevő csoport rekordja létezik a Dataverse szolgáltatásban.
+A probléma megoldásához győződjön meg arról, hogy az előfeltétel referenciaadatok léteznek mind a Finance and Operations alkalmazásban, mind a Dataverse. Ha például egy vevői rekord egy adott vevőcsoporthoz tartozik, győződjön meg arról, hogy a vevő csoport rekordja létezik a Dataverse szolgáltatásban.
 
 Ha mindkét helyen szerepel az adat, és megerősítette, hogy a probléma nem az adatokkal kapcsolatos, kövesse ezeket a lépéseket.
 
-1. Nyissa meg a **DualWriteProjectConfigurationEntity** entitást az Excel-bővítmény használatával. A bővítmény használatához engedélyezze a tervezési módot a Finance and Operations Excel bővítményben, és adja hozzá a **DualWriteProjectConfigurationEntity** elemet egy munkalaphoz. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
+1. Nyissa meg a **DualWriteProjectConfigurationEntity** entitást az Excel-bővítmény használatával. A bővítmény használatához engedélyezze a tervezési módot a Finance and Operations Excel bővítményben, és adja hozzá **DualWriteProjectConfigurationEntity** egy munkalaphoz. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
 2. Válassza ki és törölje azokat a rekordokat, amelyek problémákat okozhatnak a kettős írásos leképezésben és a projektben. Két rekord lesz minden kettős írásos leképezéshez.
 3. Tegye közzé a módosításokat az Excel bővítmény segítségével. Ez a lépés azért fontos, mert törli a rekordokat az entitásból és a mögöttes táblákból.
 
-## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Olvasási vagy írási jogosultsági hibák adatok létrehozása során a Finance and Operations alkalmazásban
+## <a name="handle-read-or-write-privilege-errors-when-you-create-data-in-a-finance-and-operations-app"></a>Kezelje az olvasási vagy írási jogosultságokkal kapcsolatos hibákat, amikor adatokat hoz létre egy Finance and Operations alkalmazásban
 
-A "Hibás kérés" hibaüzenet jelenhet meg, amikor adatot hoz létre a Finance and Operations alkalmazásban.
+„Bad Request” hibaüzenet jelenhet meg, amikor adatokat hoz létre egy Finance and Operations alkalmazásban.
 
 ![Példa a Hibás kérés hibaüzenetére.](media/error_record_id_source.png)
 
 A hiba elhárításához a megfelelő biztonsági szerepkörnek a megfeleltetett Dynamics 365 Sales vagy Dynamics 365 Customer Service üzleti egység csapatához történő társításával engedélyeznie kell a hiányzó jogosultságot.
 
-1. A Finance and Operations alkalmazásban keresse meg azt az üzleti egységet, amely hozzá van rendelve az Adatintegrációs csatlakozókészletben.
+1. A Finance and Operations alkalmazásban keresse meg az adatintegrációs kapcsolatkészletben leképezett üzleti egységet.
 
     ![Szervezet leképezése.](media/mapped_business_unit.png)
 
@@ -77,7 +77,7 @@ A hiba elhárításához a megfelelő biztonsági szerepkörnek a megfeleltetett
 
 **A hiba megtekintéséhez szükséges szerepkör:** Rendszergazda
 
-A következő hibaüzenet jelenhet meg, amikor adatot hoz létre a Finance and Operations alkalmazásban:
+A következő hibaüzenet jelenhet meg, amikor adatokat hoz létre egy Finance and Operations alkalmazásban:
 
 *{"entityName":"CustCustomerV3Entity","executionStatus":2,"fieldResponses":\[\],"recordResponses":\[{"errorMessage":"**Nem sikerült adatcsomagot generálni az CustCustomerV3Entity entitáshoz**","logDateTime":"2019-08-27T18:51:52.5843124Z","verboseError":"Adatcsinag létrehozása sikertelen érvénytelen URI hibával: Az URI üres."}\],"isErrorCountUpdated":true}*
 
@@ -85,19 +85,19 @@ Ez a hibaüzenet jelenik meg az ügyfélkapcsolati alkalmazásában:
 
 > Váratlan hiba történt az ISV-kódból. (ErrorType = ClientError) Váratlan kivétel a bővítménytől (végrehajtás): Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PostCommitPlugin: System.Exception: nem sikerült feldolgozni az entitás fiókját (Egy kapcsolódási kísérlet nem sikerült, mert a kapcsolódó fél egy adott időt követően nem válaszolt helyesen, vagy a létrejött kapcsolat megszakadt, mert a csatlakoztatott állomás nem válaszolt.
 
-Ez a hiba akkor fordul, ha a Dataverse környezet helytelenül van alaphelyzetbe állítva, amikor adatokat próbál létrehozni a Finance and Operations alkalmazásban.
+Ez a hiba akkor fordul elő, ha a Dataverse környezet hibásan visszaáll, amikor megpróbál adatokat létrehozni a Finance and Operations alkalmazásban.
 
 > [!IMPORTANT]
 > Ha újra összekapcsolta a környezeteket, akkor az összes entitásleképezést le kell állítania, mielőtt folytatja a kockázatcsökkentés lépéseit.
 
-A probléma megoldásához a Dataverse és a Finance and Operations alkalmazásban egyaránt végre kell hajtani a szükséges lépéseket.
+A probléma megoldásához mindkét esetben végre kell hajtania a lépéseket Dataverse és a Finance and Operations alkalmazást.
 
-1. Kövesse az alábbi lépéseket a Finance and Operations alkalmazásban:
+1. A Finance and Operations alkalmazásban kövesse az alábbi lépéseket:
 
-    1. Nyissa meg a **DualWriteProjectConfigurationEntity** entitást az Excel-bővítmény használatával. A bővítmény használatához engedélyezze a tervezési módot a Finance and Operations Excel bővítményben, és adja hozzá a **DualWriteProjectConfigurationEntity** elemet egy munkalaphoz. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
+    1. Nyissa meg a **DualWriteProjectConfigurationEntity** entitást az Excel-bővítmény használatával. A bővítmény használatához engedélyezze a tervezési módot a Finance and Operations Excel bővítményben, és adja hozzá **DualWriteProjectConfigurationEntity** egy munkalaphoz. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
     2. Válassza ki és törölje azokat a rekordokat, amelyek problémákat okozhatnak a kettős írásos leképezésben és a projektben. Két rekord lesz minden kettős írásos leképezéshez.
     3. Tegye közzé a módosításokat az Excel bővítmény segítségével. Ez a lépés azért fontos, mert törli a rekordokat az entitásból és a mögöttes táblákból.
-    4. Ha a Finance and Operations vagy Dataverse környezetek összekapcsolása során szeretné megakadályozni a hibákat, győződjön meg arról, hogy nem marad kettős írásos konfiguráció.
+    4. A hibák elkerülése érdekében, amikor újra összekapcsolja a Finance and Operations vagy Dataverse környezetekben, ügyeljen arra, hogy ne maradjanak kettős írási konfigurációk.
 
 2. A Dataverse-ben kövesse az alábbi lépéseket:
 
@@ -108,12 +108,12 @@ A probléma megoldásához a Dataverse és a Finance and Operations alkalmazásb
     5. Válassza ki az **Eredmények** elemet a konfigurációk megtekintéséhez.
     6. Törölje az összes példányt.
 
-3. Kövesse az alábbi lépéseket a Finance and Operations alkalmazásban:
+3. A Finance and Operations alkalmazásban kövesse az alábbi lépéseket:
 
-    1. Nyissa meg a **DualWriteProjectConfigurationEntity** entitást az Excel-bővítmény használatával. A bővítmény használatához engedélyezze a tervezési módot a Finance and Operations Excel bővítményben, és adja hozzá a **DualWriteProjectConfigurationEntity** elemet egy munkalaphoz. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
+    1. Nyissa meg a **DualWriteProjectConfigurationEntity** entitást az Excel-bővítmény használatával. A bővítmény használatához engedélyezze a tervezési módot a Finance and Operations Excel bővítményben, és adja hozzá **DualWriteProjectConfigurationEntity** egy munkalaphoz. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
     2. Válassza ki és törölje azokat a rekordokat, amelyek problémákat okozhatnak a kettős írásos leképezésben és a projektben. Két rekord lesz minden kettős írásos leképezéshez.
     3. Tegye közzé a módosításokat az Excel bővítmény segítségével. Ez a lépés azért fontos, mert törli a rekordokat az entitásból és a mögöttes táblákból.
-    4. Ha a Finance and Operations vagy Dataverse környezetek összekapcsolása során szeretné megakadályozni a hibákat, győződjön meg arról, hogy nem marad kettős írásos konfiguráció.
+    4. A hibák elkerülése érdekében, amikor újra összekapcsolja a Finance and Operations vagy Dataverse környezetekben, ügyeljen arra, hogy ne maradjanak kettős írási konfigurációk.
 
 ## <a name="live-synchronization-error-after-you-do-a-full-database-copy"></a>Élő szinkronizálási hiba a teljes adatbázis-másolás után
 
@@ -189,9 +189,9 @@ while(qRun.next())
 }
 ```
 
-## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>A Finance and Operations alkalmazás adatai nem szinkronizálódnak a Dataverse-be
+## <a name="data-from-finance-and-operations-apps-isnt-synced-to-dataverse"></a>A Finance and Operations alkalmazásokból származó adatok nincsenek szinkronizálva ezzel Dataverse
 
-Az élő szinkronizálás során probléma merülhet fel, amikor az adatoknak csak egy része szinkronizálható a Finance and Operations alkalmazásból a Dataverse alkalmazásba, vagy egyetlen adat sem.
+Az élő szinkronizálás során olyan problémába ütközhet, hogy az adatoknak csak egy része kerül szinkronizálásra a Finance and Operations alkalmazásból a Dataverse, vagy az adatok egyáltalán nincsenek szinkronizálva.
 
 > [!NOTE]
 > A problémát a fejlesztés során kell kijavítani.
@@ -200,13 +200,13 @@ Mielőtt elkezdené kijavítani a problémát, ellenőrizze a következő előfe
 
 + Győződjön meg róla, hogy az egyéni módosítások egyetlen tranzakció-hatókörbe kerülnek.
 + Az üzleti események és a kettős írású keretrendszer nem kezeli a `doinsert()`, `doUpdate()` és `recordset()` műveleteket, illetve azokat a rekordokat, ahol a `skipBusinessEvents(true)` meg van jelölve. Ha a kód ezeken a funkciókon belül van, a rendszer nem indít kettős írást.
-+ A leképezett adatforráshoz üzleti eseményeket kell regisztrálni. Egyes adatforrások külső illesztéseket használhatnak, és előfordulhat, hogy a Finance and Operations alkalmazásban írásra használhatóként vannak megjelölve. Ezeket az adatforrásokat nem követi nyomon a rendszer.
++ A leképezett adatforráshoz üzleti eseményeket kell regisztrálni. Előfordulhat, hogy egyes adatforrások külső csatlakozást használnak, és csak olvashatóként vannak megjelölve a Finance and Operations alkalmazásokban. Ezeket az adatforrásokat nem követi nyomon a rendszer.
 + A módosítások csak akkor aktiválódnak, ha a leképezett mezőkben vannak. A nem leképezett mezőmódosítások nem váltják ki a kettős írást.
 + Ellenőrizze, hogy a szűrőértékelések érvényes eredményt adnak-e.
 
 ### <a name="troubleshooting-steps"></a>A hibaelhárítás lépései
 
-1. Tekintse át a kettős írású rendszergazdai lapon található mezőleképezéseket. Ha egy mező nincs a Finance and Operations alkalmazásból a Dataverse-be leképezve, akkor nem lesz nyomon követve. A következő példában a **Leírás** mezőt a rendszer a Dataverse alkalmazásból követi nyomon, de a Finance and Operations alkalmazásban nem. A program nem követi nyomon a Finance and Operations alkalmazásokon belüli mező módosításait.
+1. Tekintse át a kettős írású rendszergazdai lapon található mezőleképezéseket. Ha egy mező nincs hozzárendelve a Finance and Operations alkalmazásból a következőre Dataverse, nem lesz nyomon követve. Például a következő ábrán a **Leírás** a mezőt a rendszer követi Dataverse, de nem a Finance and Operations alkalmazásból. A Finance and Operations alkalmazásokon belüli mező módosításait a rendszer nem követi nyomon.
 
     ![Nyomon követéses mező.](media/live-sync-troubleshooting-1.png)
 
@@ -220,11 +220,11 @@ Mielőtt elkezdené kijavítani a problémát, ellenőrizze a következő előfe
 
 ### <a name="sample-scenario"></a>Mintaforgatókönyv
 
-A Finance and Operations alkalmazásokban frissítés áll rendelkezésre a kapcsolattartó-rekord címében, de a címváltozás nincs szinkronizálva a Dataverse-be. Ez az eset azért fordul elő, mert a **BusinessEventsDefinition** tábla egyetlen rekordja sem tartalmazza az érintett tábla és az entitás kombinációját. Pontosabban a **LogisticsPostalAddress** tábla nem az **smmContactpersonCDSV2Entity** entitás közvetlen adatforrása. Az **smmContactpersonCDSV2Entity** entitás adatforrása az **smmContactPersonV2Entity**, és az **smmContactPersonV2Entity** adatforrása pedig a **LogisticsPostalAddressBaseEntity**. A **LogisticsPostalAddress** tábla a **LogisticsPostalAddressBaseEntity** adatforrása.
+A Finance and Operations alkalmazásokban a kapcsolattartó rekord címe frissül, de a címmódosítás nincs szinkronizálva Dataverse. Ez az eset azért fordul elő, mert a **BusinessEventsDefinition** tábla egyetlen rekordja sem tartalmazza az érintett tábla és az entitás kombinációját. Pontosabban a **LogisticsPostalAddress** tábla nem az **smmContactpersonCDSV2Entity** entitás közvetlen adatforrása. Az **smmContactpersonCDSV2Entity** entitás adatforrása az **smmContactPersonV2Entity**, és az **smmContactPersonV2Entity** adatforrása pedig a **LogisticsPostalAddressBaseEntity**. A **LogisticsPostalAddress** tábla a **LogisticsPostalAddressBaseEntity** adatforrása.
 
-Hasonló helyzet fordulhat elő bizonyos nem szabványos mintázatokban is, például olyan esetekben, amikor az Finance and Operations alkalmazásokban módosított tábla nem kötődik az azt tartalmazó entitáshoz. Például az elsődleges címadatok számítása az **smmContactPersonCDSV2Entity** entitás alapján történt. A kettős írású keretrendszer megpróbálja meghatározni, hogy egy alapul szolgáló tábla módosítása hogyan van leképezve az entitásokra. Ez a megközelítés általában elegendő. Bizonyos esetekben azonban a kapcsolat olyan bonyolult, hogy Önnek pontosabb megközelítést kell alkalmaznia. Meg kell győződnie arról, hogy a kapcsolódó tábla **RecId** azonosítója közvetlenül elérhető-e az entitáshoz. Ezután adjon meg egy statikus metódust a tábla változásának figyelése érdekében.
+Hasonló helyzet fordulhat elő néhány nem szabványos mintában, például olyan esetekben, amikor a Finance and Operations alkalmazásokban módosítandó tábla nincs nyilvánvalóan az azt tartalmazó entitáshoz kötve. Például az elsődleges címadatok számítása az **smmContactPersonCDSV2Entity** entitás alapján történt. A kettős írású keretrendszer megpróbálja meghatározni, hogy egy alapul szolgáló tábla módosítása hogyan van leképezve az entitásokra. Ez a megközelítés általában elegendő. Bizonyos esetekben azonban a kapcsolat olyan bonyolult, hogy Önnek pontosabb megközelítést kell alkalmaznia. Meg kell győződnie arról, hogy a kapcsolódó tábla **RecId** azonosítója közvetlenül elérhető-e az entitáshoz. Ezután adjon meg egy statikus metódust a tábla változásának figyelése érdekében.
 
-Példaként tekintse át az **smmContactPersonCDSV2Entity:: getEntityDataSourceToFieldMapping()** metódust. A **CustCustomerV3entity** és a **VendVendorV2Entity módosítása megtörtént** a helyzet kezelése érdekében.
+Példaként tekintse át az **smmContactPersonCDSV2Entity::getEntityDataSourceToFieldMapping()** metódust. A **CustCustomerV3entity** és a **VendVendorV2Entity módosítása megtörtént** a helyzet kezelése érdekében.
 
 Egy hiba javításához kövesse az alábbi lépéseket.
 
@@ -250,19 +250,19 @@ Egy hiba javításához kövesse az alábbi lépéseket.
 5. Az **smmContactPersonCDSV2Entity** entitáson létrehozott összes kettős írású leképezés leállítása.
 6. Indítsa el a leképezést. Látnia kell egy új táblát (a példa szerint: **LogisticsPostalAddress**), amelyet a **RefTableName** oszlop segítségével kezdett el nyomon követni annak a sornak az esetében, ahol a **refentityname** érték megegyezik az **smmContactPersonCDSV2Entity** értékkel a **BusinessEventsDefinition** táblában.
 
-## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>Hiba olyan rekord létrehozásakor, amelyben több rekordot küld a Finance and Operations alkalmazás a Dataverse-be ugyanabba a kötegben
+## <a name="error-when-you-create-a-record-where-multiple-records-are-sent-from-a-finance-and-operations-app-to-dataverse-in-the-same-batch"></a>Hiba olyan rekord létrehozásakor, amelyre több rekordot küld egy Finance and Operations alkalmazás Dataverse ugyanabban a tételben
 
-Bármely tranzakciónál a Finance and Operations alkalmazás adatokat hoz létre egy kötegben, és elküldi kötegként a Dataverse-be. Ha két rekord ugyanannak a tranzakciónak a részeként jön létre, és egymásra hivatkoznak, akkor egy olyan hibaüzenet jelenik meg, amely hasonlít a Finance and Operations alkalmazásban a következő példához:
+A Finance and Operations alkalmazás minden tranzakcióhoz kötegben hoz létre adatokat, és kötegként küldi el a címre Dataverse. Ha két rekord ugyanannak a tranzakciónak a részeként jön létre, és ezek egymásra hivatkoznak, akkor a következő példához hasonló hibaüzenet jelenhet meg a Finance and Operations alkalmazásban:
 
 *Nem lehet adatokat írni az aaa_fundingsources entitásba. Nem lehet keresni az ebecsfs_contracts értéket {PC00...} értékekkel. Nem lehet keresni az aaa_fundingsources értéket {PC00...} értékekkel. Az aaa_fundingsources írása sikertelen volt a következő kivételre vonatkozó hibaüzenet miatt: A távoli kiszolgáló hibát küldött vissza: (400) Hibás kérelem.*
 
-A probléma megoldásához hozza létre az entitáskapcsolatokat a Finance and Operations alkalmazásban, ezzel jelezve, hogy a két entitás egymáshoz kapcsolódik, és a kapcsolódó rekordokat ugyanabban a tranzakcióban kezeli az alkalmazás.
+A probléma megoldásához hozzon létre entitáskapcsolatokat a Finance and Operations alkalmazásban, jelezve, hogy a két entitás kapcsolatban áll egymással, és a kapcsolódó rekordokat ugyanabban a tranzakcióban kezelik.
 
 ## <a name="enable-verbose-logging-of-error-messages"></a>Hibaüzenetek részletes naplózásának engedélyezése
 
-A Finance and Operations alkalmazás a Dataverse környezettel kapcsolatos hibákat is okozhat. Lehet, hogy a hibaüzenet nem tartalmazza az üzenet teljes szövegét vagy más fontos adatokat. Ha több információt szeretne kapni, engedélyezheti a részletes naplózást a **IsDebugMode** jelölő beállításával, amely a Finance and Operations alkalmazások összes projektkonfigurációjában a **DualWriteProjectConfigurationEntity** entitáson található.
+A Finance and Operations alkalmazásban olyan hibákat tapasztalhat, amelyek a következőhöz kapcsolódnak Dataverse környezet. Lehet, hogy a hibaüzenet nem tartalmazza az üzenet teljes szövegét vagy más fontos adatokat. További információkért engedélyezheti a részletes naplózást a beállításával **IsDebugMode** zászló, amely jelen van a **DualWriteProjectConfigurationEntity** entitás minden projektkonfigurációban a Finance and Operations alkalmazásokban.
 
-1. Nyissa meg a **DualWriteProjectConfigurationEntity** entitást az Excel-bővítmény használatával. A bővítmény használatához engedélyezze a tervezési módot a Finance and Operations Excel bővítményben, és adja hozzá a **DualWriteProjectConfigurationEntity** elemet egy munkalaphoz. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
+1. Nyissa meg a **DualWriteProjectConfigurationEntity** entitást az Excel-bővítmény használatával. A bővítmény használatához engedélyezze a tervezési módot a Finance and Operations Excel bővítményben, és adja hozzá **DualWriteProjectConfigurationEntity** egy munkalaphoz. További információért lásd: Az [entitás adatainak megtekintése és frissítése az Excel segítségével](../../office-integration/use-excel-add-in.md).
 2. Állítsa a projekt **IsDebugMode** jelölőjét **Igen** értékre.
 3. Futtassa a forgatókönyvet.
 4. A részletes naplók a **DualWriteErrorLog** táblában érhetők el. Ha a táblázatböngésző segítségével szeretne adatokat keresni, használja a következő URL-címet: `https://XXXaos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`
@@ -270,7 +270,7 @@ A Finance and Operations alkalmazás a Dataverse környezettel kapcsolatos hibá
 
 ## <a name="error-when-you-add-an-address-for-a-customer-or-contact"></a>Hiba a vevő vagy kapcsolattartó címének hozzáadásakor
 
-Amikor az Finance and Operations vagy Dataverse alkalmazásokhoz egy vevő vagy kapcsolattartó címét próbálja meg hozzáadni, a következő hibaüzenet jelenik meg:
+A következő hibaüzenet jelenhet meg, amikor megpróbál címet adni egy ügyfélhez vagy kapcsolattartóhoz a Finance and Operations alkalmazásban vagy Dataverse:
 
 *Nem lehet adatokat írni az msdyn_partypostaladdresses entitásba. A DirPartyPostalAddressLocationCDSEntity írása sikertelen volt a következő hibaüzenettel: A kérés BadRequest státuszkóddal és CDS hibakóddal sikertelen volt: 0x80040265 válaszüzenet: Hiba történt a beépülő modulban. Már létezik olyan rekord, amely rendelkezik a helyazonosító attribútumértékekkel. Az entitáskulcs helyazonosító kulcsához az attribútumok ezen halmazának egyedi értékeket kell tartalmaznia. Válassza ki az egyedi értékeket, majd próbálkozzon újra.*
 
@@ -290,7 +290,7 @@ A következő hibaüzenet jelenhet meg, amikor vevőt próbál hozzáadni a Data
 
 *"RecordError0":"Írási hiba történt a Vevő V3 entitásnál, ismeretlen kivétellel – Nem található félrekord a "Szervezet" típusú félhez}.*
 
-Amikor létrejön egy vevő a Dataverse alkalmazásban, új félszámot generál a rendszer. A hibaüzenet akkor jelenik meg, amikor az ügyfélrekord és a fél szinkronizálva van a Finance and Operations alkalmazásokkal, de már van olyan vevőrekord, amelynél más a félszám.
+Amikor létrejön egy vevő a Dataverse alkalmazásban, új félszámot generál a rendszer. A hibaüzenet akkor jelenik meg, ha az ügyfélrekord a féllel együtt szinkronizálva van a Finance and Operations alkalmazásokkal, de már van olyan ügyfélrekord, amely más félszámmal rendelkezik.
 
 A probléma megoldásához keresse meg a vevőt a félre vonatkozó kereséssel. Ha a vevő nem létezik, hozzon létre egy új vevőrekordot. Ha a vevő létezik, a meglévő féllel hozza létre az új vevőrekordot.
 
@@ -300,7 +300,7 @@ Amikor a Dataverse alkalmazáshoz egy új vevő, szállító vagy kapcsolattart�
 
 *A féltípus nem frissíthető "DirOrganization" típusról "DirPerson" típusra. A meglévő fél törlését és az új típussal történő beszúrásokat kell helyette végrehajtani.*
 
-A Dataverse alkalmazásban van egy számsorozat a **msdyn_party** táblában. Egy számla Dataverse alkalmazásban történő létrehozásakor új fél jön létre (például **Szervezet** típusú **Party-001**). Ezt az adatot a rendszer elküldi a Finance and Operations alkalmazásnak. Ha alaphelyzetbe állítja a Dataverse környezetet, vagy a Finance and Operations környezet másik Dataverse környezethez van kapcsolva, majd létrejön egy új kapcsolattartó-rekord a Dataverse alkalmazásban, új érték jön létre a félhez, amely a **Party-001** kifejezéssel kezdődik. A létrehozott félrekord most **Személy** típusú **Party-001** lesz. Az adatok szinkronizálása során a Finance and Operations alkalmazások az előző hibaüzenetet mutatják, mivel már létezik a **Szervezet** típusú **Party-001** félrekord.
+A Dataverse alkalmazásban van egy számsorozat a **msdyn_party** táblában. Egy számla Dataverse alkalmazásban történő létrehozásakor új fél jön létre (például **Szervezet** típusú **Party-001**). Ezek az adatok a Finance and Operations alkalmazásba kerülnek. Ha a Dataverse környezet visszaállításra kerül, vagy a Finance and Operations környezet egy másikhoz van kapcsolva Dataverse környezetben, majd új kapcsolatfelvételi rekord jön létre Dataverse, egy új pártérték, amely azzal kezdődik **Party-001** létrehozva. A létrehozott félrekord most **Személy** típusú **Party-001** lesz. Amikor ezeket az adatokat szinkronizálja, a Finance and Operations alkalmazások az előző hibaüzenetet jelenítik meg, mert fél rekord **Party-001** a **Szervezet** típus már létezik.
 
 A probléma megoldásához módosítsa a másik **msdyn_partynumber** tábla **msdyn_party** mezőjének automatikus számsorozatát a Dataverse-ben egy másik automatikus számsorozatra.
 

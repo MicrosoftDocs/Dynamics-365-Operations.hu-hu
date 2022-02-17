@@ -15,16 +15,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8bbecf85a13056225b0d35023d759456cade40fe10ca1978058abd8e47693ec
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: c0fefac5a7a2b299ba606a854824ee456c572487
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740908"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070009"
 ---
 # <a name="advanced-filtering-and-query-syntax"></a>Speciális szűrési és lekérdezési szintaxis
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 A témakör ismerteti a szűrési és lekérdezési beállításokat, amelyek elérhetők a Speciális szűrés/rendezés párbeszédpanelen vagy az **egyezések** operátor vagy a rács oszlop fejléce szűrők használata esetén.
 
@@ -119,9 +122,9 @@ A témakör ismerteti a szűrési és lekérdezési beállításokat, amelyek el
 <td>A két egymást követő dupla idézőjel (<strong>""</strong>) olyan sorokat keres, amelyeknek nincs értéke az aktuális oszlopban.</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operations lekérdezés</span>) (Finance and Operations zárójelek közti lekérdezés)</td>
+<td>(<span class="code">Finance and Operations lekérdezés</span>) (Finance and Operations lekérdezés zárójelben)</td>
 <td>A megadott lekérdezésnek megfelelő.</td>
-<td>Írjon be egy lekérdezést a zárójelek közötti SQL-utasításként a Finance and Operations lekérdezési nyelvével.</td>
+<td>Írjon be egy lekérdezést SQL utasításként a zárójelek közé a Finance and Operations lekérdezési nyelv használatával.</td>
   <td><strong><span class="code">((AccountNum LIKE "US *") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        példaként egy szűrő feltételének szintaxisára a gyökérszintű adatforrás mezőjéből, valamint egy másik adatforrásmezőből (az összes vevő laphoz)</td>
 </tr>

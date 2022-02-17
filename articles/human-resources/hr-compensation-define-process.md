@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 883948c6e3f7b205d7e0f1f2b6adef1173616dc1
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
-ms.translationtype: HT
+ms.openlocfilehash: 188a87f580c274e073710601ef306139f723c797
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431125"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071709"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Kompenzációs folyamat meghatározása és eredmények kiszámítása
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -40,13 +43,13 @@ A kompenzációs folyamatokkal határozhatók meg a fix is változó kompenzáci
     * A tranzakció aktivitási dátuma az a dátum, amikor az új kompenzációs díjaknak érvénybe kell lépniük. Számos vállalat néhány hónap eltéréssel dolgozik egy ciklus vége és az új kompenzációs díjak életbelépése között. Az extra időt az új kompenzáció feldolgozására és átvizsgálására használják.  
 8. A **Tranzakció aktivitási dátuma** mezőben adjon meg egy dátumot.
     * Az időpont szerinti dátumot használják a változtatható kompenzációs tervek, amelyek meghatározzák egy alkalmazott jutalomösszegét az adott időpont szerunti kompenzációs díjuk alapján.  
-    * Fix fizetés arányosított felvételi dátumát fix kompenzációs konstrukciók használják százalékos felvételi szabály esetén.  A ciklus kezdete és a fix fizetés arányosított felvételi dátuma között felvett alkalmazottak megkapják a kiszámított kompenzáció 100%-át az arányos százalék helyett.  
+    * A fix fizetés arányos bérbeadási dátuma a következő bérleti szabályt tartalmazó fix kompenzációs terveknél használatos **Százalék**. A ciklus kezdete és a fix fizetés arányosított felvételi dátuma között felvett alkalmazottak megkapják a kiszámított kompenzáció 100%-át az arányos százalék helyett.  
 9. A **Fix fizetés arányosított felvételi dátuma** mezőben adjon meg egy dátumot.
     * Az átvizsgálási határidő az a dátum, amikorra minden folyamateredményt át kell nézni, hogy belehessen tölteni őket egy alkalmazott kompenzációs rekordjába a tranzakció aktivitási dátuma előtt. Ez a mező csak tájékoztatásra szolgál.  
 10. Írjon be egy dátumot a **Felülvizsgálati határidő** mezőbe.
 11. Kattintson a **Mentés** gombra.
 
-## <a name="setup-the-compensation-plans-and-actions-for-a-compensation-process"></a>Kompenzációs konstrukciók és műveletek beállítása egy kompenzációs folyamathoz
+## <a name="set-up-the-compensation-plans-and-actions-for-a-compensation-process"></a>Állítsa be a kompenzációs folyamathoz szükséges kompenzációs terveket és intézkedéseket
 1. Kattintson a **Beállítások** elemre.
     * A **Beállítás** oldalt használva lehet kiválasztani, hogy melyik terv legyen feldolgozva a kompenzációs folyamat részeként, valamint hogy milyen műveleteket kell végrehajtani az egyes tervek szerint.  
 2. A **Terv** mezőben adjon meg vagy válasszon ki egy értéket.
@@ -56,7 +59,7 @@ A kompenzációs folyamatokkal határozhatók meg a fix is változó kompenzáci
 6. Kattintson a **Hozzáadás** parancsra.
 7. Válasszon ki egy **Érdem** típusú lehetőséget a **Művelet** mezőben.
     * Kompenzációs műveleteket is lehet "láncba kötni" az **Előző eredmény használata** mező segítségével, hogy a kijelölt művelet az alkalmazottak alapfizetését használja-e vagy az előző művelet eredményét kiindulási pontként ezen művelet kiszámításhoz.  
-8. A Előző eredmény használata mezőben válassza az **Igen** lehetőséget.
+8. Válassza ki **Igen** ban,-ben **Használja az előző eredményt** terület.
 9. Kattintson a **Hozzáadás** parancsra.
 10. A **Művelet** mezőben válasszon egy **Általánosl** típusú műveletet.
     * A különböző kompenzációs tevékenységtípusok különböző mezőket engedélyeznek. Egy Általános kompenzációs tevékenységtípushoz egy százalékos vagy egy összegszerű növekményt lehet definiálni.  
@@ -85,7 +88,7 @@ A kompenzációs folyamatokkal határozhatók meg a fix is változó kompenzáci
 1. Kattintson a **Folyamateredmények** megtekintése elemre.
 2. Kattintson az **Alkalmazotti eredmények** elemre.
 3. Keresse meg és jelölje ki a kívánt rekordot a listán.
-4. Bontsa ki a Fix kompenzáció szakaszt.
+4. Bontsa ki a **Fix kompenzáció** szakasz.
     * Bontsa ki a gyorslapokat a folyamatok eredményeinek megtekintéséhez. Ha egy kompenzációs művelethez meg lett jelölve a **Javaslatok engedélyezése**, akkor a **Javaslat** mezők engedélyezve lesznek az adott művelethez.  
 5. Keresse meg és jelölje ki a kívánt rekordot a listán.
     * Az eredményeket egyetlen alkalmazott esetében az **Eredmények megtekintése** gombra kattintva tekintheti meg.  

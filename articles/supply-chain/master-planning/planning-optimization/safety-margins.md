@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 52740246f745272f238ec3dcf8e53f7310e4b24271da4a5d6388a1b9c4706521
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774849"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074967"
 ---
 # <a name="safety-margins"></a>Biztonsági határok
 
@@ -61,9 +61,6 @@ Ne felejtse el, hogy a rendszer nem alkalmazza a bevételezési időtartalékot,
 
 ### <a name="reorder-margin"></a>Újrarendelési időtartalék
 
-> [!NOTE]
-> **Hamarosan:** Ez a funkció még nem támogatott a Tervezési optimalizálásban. A támogatásig minden olyan értéket, amelyet az **Újrarendelési időtartalék hozzáadva a cikkátfutási időhöz** mezőben adnak meg *0* (nulla) értékként van kezelve.
-
 A következő ábrán ki van emelve az újrarendelési időtartalék.
 
 ![Újrarendelési időtartalék.](media/safety-margins-3.png)
@@ -71,9 +68,6 @@ A következő ábrán ki van emelve az újrarendelési időtartalék.
 Az újrarendelési időtartalék a program az alaptervezés során az összes tervezett rendeléshez tartozó átfutási idő elé adja hozzá. Ennek megfelelően további időt biztosít az ellátási rendelés leadására. Ez a tartalék általában pufferként használatos az ellátási rendelések létrehozása során szükséges jóváhagyási folyamatok és egyéb belső folyamatok céljából. Az újrarendelési időtartalék az *ellátási rendelés dátuma* és a *kezdő dátum* közé lesz elhelyezve.
 
 ### <a name="issue-margin"></a>Kiadási időtartalék
-
-> [!NOTE]
-> **Hamarosan:** Ez a funkció még nem támogatott a Tervezési optimalizálásban. A támogatásig minden olyan értéket, amelyet az **Követelmény dátumából levont kiadási időtartalék** mezőben adnak meg *0* (nulla) értékként van kezelve.
 
 A következő ábrán ki van emelve az kiadási időtartalék.
 

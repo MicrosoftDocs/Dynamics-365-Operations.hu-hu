@@ -13,34 +13,37 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 93de4f9736c58448f181c14bc5456ad72d6fc519
-ms.sourcegitcommit: 1cc56643160bd3ad4e344d8926cd298012f3e024
+ms.openlocfilehash: 4f119805af275b5bcddd910325179c02ed44758e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2021
-ms.locfileid: "7731760"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065114"
 ---
 # <a name="create-a-mass-hire-project"></a>Tömeges felvételi projekt létrehozása
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
-Ez az eljárás végigvezeti a tömeges felvételi projekt beállítási folyamatán. Egy toborzó a tömeges felvételi projekt segítségével könnyedén létrehozhat több beosztást, majd felvehet több dolgozót ezekre a beosztásokra. Az eljárás megkezdéséhez menjen a Humán erőforrások toborzása **·** > **tömeges felvételi** > **projektekhez**. Ez az eljárás az USMF bemutatócéget használja.
+Ez az eljárás végigvezeti a tömeges felvételi projekt beállítási folyamatán. Egy toborzó a tömeges felvételi projekt segítségével könnyedén létrehozhat több beosztást, majd felvehet több dolgozót ezekre a beosztásokra. Az eljárás megkezdéséhez lépjen a következőre: **Emberi Erőforrások** > **Toborzás** > **Tömeges bérbeadási projektek**. Ez az eljárás az USMF bemutatócéget használja.
 
 1. Kattintson az **Új** elemre.
-2. A Tömeges **felvételi projekt** mezőbe írjon be egy értéket.
+2. Ban,-ben **Tömeges bérbeadási projekt** mezőbe írjon be egy értéket.
 3. Írjon egy értéket a **Leírás** mezőbe.
-4. Adjon meg egy dátumot a Projekt kezdete **·** mezőben.
-5. A Projekt **záró** mezőjébe írjon be egy dátumot.
-6. Kattintson **a Projekt megnyitása gombra**.
+4. Ban,-ben **Projekt kezdete** mezőbe írja be a dátumot.
+5. Ban,-ben **Projekt vége** mezőbe írja be a dátumot.
+6. Kattintson **Projekt megnyitása**.
 7. Kattintson az **Igen** gombra.
-8. Kattintson **a Beosztások létrehozása** gombra.
-9. A Mennyiség mezőbe írja be a létrehozni kívánt **·** beosztások számát.
-    * A kezdő dátum az új dolgozók **·** felvételének dátuma lesz.  
-    * A záró dátum az új dolgozók **·** felmondási dátuma lesz.  
-    * Adja meg, hogy az új dolgozók alkalmazottak **vagy** **alvállalkozók lesznek-e.**  
-10. A Feladat mezőben kattintson a legördülő gombra, és válassza ki azt a feladatot, **·** amelybe a beosztásokat létrehozza.
+8. Kattintson **Hozzon létre pozíciókat**.
+9. Ban,-ben **Mennyiség** mezőbe írja be a létrehozni kívánt pozíciók számát
+    * A kezdési dátum a **Bérelési dátum** az új dolgozók számára.  
+    * A Befejezés dátuma a **Befejezési időpont** az új dolgozók számára.  
+    * Adja meg, hogy az új dolgozók lesznek-e **Alkalmazottak** vagy **Vállalkozók**.  
+10. Ban,-ben **Munka** mezőben kattintson a legördülő gombra, hogy kiválassza azt a munkát, amelyhez pozíciókat szeretne létrehozni.
 11. Keresse meg és jelölje ki a kívánt rekordot a listán.
 12. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * Az alapértelmezett teljes munkaidős egyenérték a kiválasztott feladat alapján változik. Ez szükség szerint módosítható.  

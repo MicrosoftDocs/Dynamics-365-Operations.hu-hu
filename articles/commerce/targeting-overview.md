@@ -2,7 +2,7 @@
 title: Eszköz, piac és földrajzi hely megcélzása
 description: Ez a témakör leírja, hogyan hozhat létre, szerkeszthet és kezelhet célközönségeket és célpontokat a Microsoft Dynamics 365 Commerce webhelykészítőben az eszközre, piacra és földrajzi helyre vonatkozó információk felhasználásával.
 author: sushma-rao
-ms.date: 07/30/2021
+ms.date: 02/03/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
-ms.openlocfilehash: b17c394105d4bb878c8375989924d3c3da079c78
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 0c8ceb5e59c801e0d3dbc3a57e54c40fa8d967ac
+ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985137"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8090694"
 ---
 # <a name="device-market-and-geolocation-targeting"></a>Eszköz, piac és földrajzi hely megcélzása
 
@@ -96,6 +96,18 @@ Célközönség szerkesztéséhez válassza ki a **Célközönség** lapon a hoz
 
 > [!NOTE]
 > A célközönség egy webhelyszintű koncepció a Commerce webhelykészítőben. Ugyanazt a célközönséget több célpont között is megoszthatja.
+
+### <a name="rename-an-audience-in-site-builder"></a>Közönség átnevezése a Webhelykészítőben
+
+Ha át szeretne nevezni egy meglévő közönséget a Commerce webhelykészítőben, kövesse az alábbi lépéseket.
+
+1. A bal oldali navigációs ablaktáblán válassza a **Célcsoportok** lehetőséget.
+1. Válassza ki az átnevezni kívánt közönségszegmens nevét.
+1. Válassza ki **Szerkesztés** hogy elkezdje a közönség szerkesztését.
+1. A közönség tulajdonságai ablaktáblában válassza ki a toll szimbólumot a közönség neve mellett.
+1. Szükség szerint szerkessze a közönség nevét.
+1. Jelölje be a pipát a névváltoztatás megerősítéséhez.
+1. Válassza a **Szerkesztés befejezése** lehetőséget.
 
 ## <a name="targets"></a>Célok
 

@@ -2,7 +2,7 @@
 title: Többnyelvű jelentések tervezése elektronikus jelentésekben
 description: Ez a témakör azt mutatja be, hogyan lehet használni az elektronikus jelentések (ER) címkéit a többnyelvű jelentések tervezéséhez és létrehozásához.
 author: NickSelin
-ms.date: 09/03/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf02e8f90fb83acd8448339f411489851742af18
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
-ms.translationtype: MT
+ms.openlocfilehash: e5c6b28dc115719922e418cb7a6156032d994d39
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674429"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074942"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Többnyelvű jelentések tervezése elektronikus jelentésekben
 
@@ -28,9 +28,9 @@ ms.locfileid: "7674429"
 
 ## <a name="overview"></a>Áttekintés
 
-Üzleti felhasználóként az [elektronikus jelentési (ER)](general-electronic-reporting.md) keretrendszer a különböző országok/régiók jogi követelményeinek megfelelő formátumú, kötelezően létrehozandó elektronikus dokumentumok konfigurálását teszi lehetővé. Ha ezek a követelmények megkövetelik, hogy a kimenő dokumentumok a különböző országokban vagy régiókban különböző nyelveken jöjjenek létre, akkor konfigurálhat egy olyan egységes ER [formátumot](general-electronic-reporting.md#FormatComponentOutbound), amely nyelvfüggő erőforrásokat tartalmaz. Ily módon a formátumot újra felhasználhatja a különböző országok vagy régiók kimenő dokumentumainak létrehozásához. Előfordulhat, hogy a megfelelő vevők, szállítók, leányvállalatok vagy egyéb felek számára a különböző nyelvű kimenő dokumentumok előállításához egyetlen ER-formátumot szeretne használni.
+Üzleti felhasználóként az [elektronikus jelentési (ER)](general-electronic-reporting.md) keretrendszer a különböző országok/régiók jogi követelményeinek megfelelő formátumú, kötelezően létrehozandó elektronikus dokumentumok konfigurálását teszi lehetővé. Ha ezek a követelmények megkövetelik, hogy a kimenő dokumentumok a különböző országokban vagy régiókban különböző nyelveken jöjjenek létre, akkor konfigurálhat egy olyan egységes ER formátumot, amely nyelvfüggő erőforrásokat tartalmaz. Ily módon a formátumot újra felhasználhatja a különböző országok vagy régiók kimenő dokumentumainak létrehozásához. Előfordulhat, hogy a megfelelő vevők, szállítók, leányvállalatok vagy egyéb felek számára a különböző nyelvű kimenő dokumentumok előállításához egyetlen ER-formátumot szeretne használni.
 
-Az ER-adatmodelleket és a modell-hozzárendeléseket konfigurálhatja úgy, hogy a konfigurált alapformátumok adatforrásai határozzák meg azt az adatforgalmat, amely meghatározza, hogy milyen adatok kerülnek a létrejövő dokumentumokba. ER-konfigurációs [szolgáltatóként](general-electronic-reporting.md#Provider) [közzéteheti](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) a konfigurált [adatmodelleket](general-electronic-reporting.md#data-model-and-model-mapping-components), [modell-leképezéseket](general-electronic-reporting.md#data-model-and-model-mapping-components) és [formátumokat](general-electronic-reporting.md#FormatComponentOutbound) meghatározott kimenő dokumentumok létrehozásához egy ER-megoldás részeként. Azt is lehetővé teheti a vevők számára, hogy a közzétett ER-megoldást [feltöltsék](general-electronic-reporting-manage-configuration-lifecycle.md) , hogy használhatók és testreszabhatók legyenek. Ha úgy gondolja, hogy a vevők más nyelveket is beszélnek, akkor konfigurálhatja, hogy a program a nyelvfüggő erőforrásokat tartalmazza. Ily módon egy szerkeszthető ER-komponens tartalma a vevő felhasználó által preferált nyelvén jeleníthető meg a tervezés idejében.
+Az ER-adatmodelleket és a modell-hozzárendeléseket konfigurálhatja úgy, hogy a konfigurált alapformátumok adatforrásai határozzák meg azt az adatforgalmat, amely meghatározza, hogy milyen adatok kerülnek a létrejövő dokumentumokba. ER konfigurációként [szolgáltató](general-electronic-reporting.md#Provider), tudsz [közzé](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) konfigurálva [adatmodellek](general-electronic-reporting.md#data-model-and-model-mapping-components),[modellleképezések](general-electronic-reporting.md#data-model-and-model-mapping-components), valamint a formátumok az ER-megoldás összetevőiként meghatározott kimenő dokumentumok előállításához. Azt is lehetővé teheti a vevők számára, hogy a közzétett ER-megoldást [feltöltsék](general-electronic-reporting-manage-configuration-lifecycle.md) , hogy használhatók és testreszabhatók legyenek. Ha úgy gondolja, hogy a vevők más nyelveket is beszélnek, akkor konfigurálhatja, hogy a program a nyelvfüggő erőforrásokat tartalmazza. Ily módon egy szerkeszthető ER-komponens tartalma a vevő felhasználó által preferált nyelvén jeleníthető meg a tervezés idejében.
 
 A nyelvtől függő erőforrásokat beállíthatja ER-címkékként. Ezeket a címkéket akkor használhatja, ha a következő célokból konfigurálja az ER-komponenseket:
 
@@ -232,6 +232,19 @@ A jelen témakörben korábban ismertetett módon a **Címke** és **Leírás** 
 ## <a name="performance"></a><a name=performance></a>Teljesítmény
 
 Amikor az ER-formátum összetevőt a kívánt [nyelven](#language) jelentés előállítására konfigurálja, vagy olyan bejövő dokumentumot importál, ahol a tartalmat a preferált nyelv használja, javasoljuk, hogy engedélyezze **Az aktuális felhasználó preferált nyelvének gyorsítótárba helyezése ER futtatásokhoz** funkciót a [Funkciókezelés](../../fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületen. Ez a funkció javítja a teljesítményt, különösen olyan ER-formátumösszetevők esetén, amelyek több címkére hivatkoznak az ER-képletekben és -kötésekben, valamint számos [érvényesítési](general-electronic-reporting-formula-designer.md#TestFormula) szabályban a felhasználónak küldött üzeneteknek a kívánt nyelven történő generálása érdekében.
+
+Amikor módosítja egy ER konfigurációs verzió állapotát a következőről **Piszkozat** nak nek **Befejezve**, ha a konfigurációs verzió ER címkéket tartalmaz, akkor ezek a címkék az alkalmazás adatbázisában tárolódnak. A tárolási séma a fájl állapotától függ **Gyorsítsa fel az ER-címkék tárolását** funkció:
+
+- Ha a funkció nincs engedélyezve, az összes címkét a rendszer a következő helyen tárolja **LABELXML** területén a **MEGOLDÁSI VÁLTOZATTÁBLÁZAT** táblázat egyetlen XML-részletként.
+- Ha a funkció engedélyezve van, a program minden egyes nyelvéhez külön rekord jön létre **ERSOLUTIONVERSIONLABELSTABLE** asztal. A **TARTALOM** A táblázat mezője a nyelvenkénti címkéket tömörített XML-részletként tárolja.
+
+Javasoljuk, hogy engedélyezze a **Gyorsítsa fel az ER-címkék tárolását** funkció a **Funkciókezelés** munkaterület. Ez a szolgáltatás javítja a hálózati sávszélesség kihasználtságát és a rendszer általános teljesítményét, mivel a legtöbb esetben egyetlen nyelv ER-címkéit használjuk, amikor egyetlen ER-konfigurációval dolgozik.
+
+A kiválasztott tárolási séma alkalmazásához az összes ER-konfiguráció címkéinek a jelenlegi Finance-példányban való tartásához hajtsa végre a következő lépéseket.
+
+1. Menj **Szervezeti adminisztráció** > **Időszakos** > **Alkalmazza a kiválasztott címkék tárolási sémáját az összes ER-konfigurációhoz**.
+2. Válassza ki az **OK** lehetőséget.
+
 
 ## <a name="additional-resources"></a>További erőforrások
 

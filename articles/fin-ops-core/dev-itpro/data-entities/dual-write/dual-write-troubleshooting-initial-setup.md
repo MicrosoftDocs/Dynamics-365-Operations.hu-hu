@@ -9,33 +9,33 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c9bf5d9017579b4207e09769cff38361442e3938
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 9a70de253eff2a3273be4a31ab32757bb014328f
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781440"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061467"
 ---
 # <a name="troubleshoot-issues-during-initial-setup"></a>Problémák elhárítása a kezdeti beállításkor
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz. Ez a témakör pontosabban olyan információkat tartalmaz, amelyek segítségével kijavíthatja azokat a problémákat, amelyek a kettős írásos integráció kezdeti beállításakor merülhetnek fel.
+
+Ez a témakör hibaelhárítási információkat tartalmaz a Finance and Operations alkalmazások és a kettős írási integrációhoz Dataverse. Ez a témakör pontosabban olyan információkat tartalmaz, amelyek segítségével kijavíthatja azokat a problémákat, amelyek a kettős írásos integráció kezdeti beállításakor merülhetnek fel.
 
 > [!IMPORTANT]
 > Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazda szerepkört vagy Microsoft Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
 
-## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>Egy Finance and Operations alkalmazás nem kapcsolható a Dataverse szolgáltatáshoz
+## <a name="you-cant-link-a-finance-and-operations-app-to-dataverse"></a>A Finance and Operations alkalmazást nem kapcsolhatja össze Dataverse
 
-**Szükséges szerepkör a Kettős írás beállításához:** Rendszergazda a Finance and Operations alkalmazásokban és Dataverse alkalmazásban.
+**A kettős írás beállításához szükséges szerepkör:** Rendszergazda a Finance and Operations alkalmazásokban és a Dataverse.
 
 A **Hivatkozás beállítása a Dataverse szolgáltatáshoz** oldal hibáit általában hiányos beállítás vagy jogosultsági problémák okozzák. Győződjön meg arról, hogy a teljes állapot-ellenőrzés megfelelt-e a **Hivatkozás beállítása a Dataverse szolgáltatáshoz** oldalon, az alábbi ábrán látható módon. A kettős írás nem kapcsolható össze, hacsak a teljes állapot-ellenőrzés meg nem felelt.
 
 ![Sikeres állapot-ellenőrzés.](media/health_check.png)
 
-A Finance and Operations és Dataverse környezetek összekapcsolásához Azure AD bérlői rendszergazdai hitelesítő adatok szükségesek. A környezetek összekapcsolása után a felhasználók a saját fiókjaik hitelesítő adataival jelentkezhetnek be, és módosíthatják a meglévő táblák leképezését.
+Biztos van Azure AD bérlői adminisztrátori hitelesítő adatok a Finance and Operations és a Dataverse környezetek. A környezetek összekapcsolása után a felhasználók a saját fiókjaik hitelesítő adataival jelentkezhetnek be, és módosíthatják a meglévő táblák leképezését.
 
 ## <a name="find-the-limit-on-the-number-of-legal-tables-or-companies-that-can-be-linked-for-dual-write"></a>A kettős íráshoz összekapcsolható táblák vagy vállalatok számához tartozó korlát megkeresése
 
@@ -55,7 +55,7 @@ A kettős írásmód nem támogatja a több, azonos nevű jogi személyt/céget.
 
 Az ügyfél blokkolásának feloldásához távolítsa el a duplikált rekordokat a **cdm_company** táblából a Dataverse-ben. Továbbá, ha a **cdm_company** táblában üres nevű rekordok vannak, távolítsa el vagy javítsa ki ezeket a rekordokat.
 
-## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Hiba a Dual-write oldal megnyitásakor a Finance and Operations alkalmazásokban
+## <a name="error-when-opening-the-dual-write-page-in-finance-and-operations-apps"></a>Hiba történt a Kettős írás oldalának megnyitásakor a Finance and Operations alkalmazásokban
 
 A következő hibaüzenetet kaphatja, amikor megpróbálja összekapcsolni a Dataverse környezetet a kettős íráshoz:
 
@@ -70,22 +70,22 @@ Ez a hiba akkor jelentkezik, ha az alkalmazás jóváhagyásának lépése nem f
     `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
 
 + A hozzájáruláshoz válassza az **Elfogadom** lehetőséget. Ön hozzájárulását adja az alkalmazás telepítéséhez (a `id=33976c19-1db5-4c02-810e-c243db79efde` oldalon) a bérlőjénél.
-+ Ez az alkalmazás szükséges ahhoz, hogy a Dataverse kommunikálni tudjon a Finance and Operations alkalmazásokkal.
++ Ez az alkalmazás szükséges Dataverse kommunikálni a Finance and Operations alkalmazásokkal.
 
     ![Kezdeti szinkronizálási beállítási hibaelhárítás.](media/Initial-sync-setup-troubleshooting-1.png)
 
 > [!NOTE]
 > Ha ez nem működik, indítsa el az URL-t a Microsoft Edge privát módjában vagy a Chrome inkognitó módjában.
 
-## <a name="finance-and-operations-environment-is-not-discoverable"></a>A Finance and Operations környezet nem felderíthető
+## <a name="finance-and-operations-environment-is-not-discoverable"></a>A Finance and Operations környezet nem fedezhető fel
 
 A következő hibaüzenetet kaphatja:
 
-A *Finance and Operations apps környezet \*\*\*.cloudax.dynamics.com nem található.*
+*Finance and Operations alkalmazási környezet\*\*\* .cloudax.dynamics.com nem fedezhető fel.*
 
 Két dolog okozhat problémát azzal, hogy a környezet nem ismerhető fel:
 
 + A bejelentkezéshez használt felhasználó nem ugyanabban a bérlőben van, mint a Finance and Operations példány.
-+ Vannak olyan régi Finance and Operations példányok, amelyek Microsoft-hostingoltak, és amelyeknél probléma volt a felderítéssel. A hiba kijavításához frissítse a Finance and Operations példányt. A környezet minden frissítéssel felismerhetővé válik.
++ Vannak olyan örökölt Finance and Operations-példányok, amelyeket a Microsoft üzemeltetett, és amelyeknek felfedezési problémája volt. A probléma megoldásához frissítse a Finance and Operations példányt. A környezet minden frissítéssel felismerhetővé válik.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

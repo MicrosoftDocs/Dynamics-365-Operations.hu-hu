@@ -15,24 +15,24 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f74692ffe8afbdeea7519ac8bdfbbe54105b9ccee83031a9b1c223be78fc12e4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 9cce93aab902a8ca269cf22e1999716fe49f3ed8
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770408"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063004"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. február 18.)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ez a cikk a Dynamics 365 Human Resources szolgáltatásban található új vagy módosított funkciókat írja le. A változtatások a 8.1.2903-es buildszámra vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok az LCS támogatási számaira vonatkoznak referenciaképpen.
 
 ## <a name="platform-update-32"></a>32-as platformfrissítés 
 
-A 32-es platform-frissítés már elérhető. A további tudnivalókat lásd: [Újdonságok és módosítások a Finance and Operations-alkalmazások 32-as platformfrissítéséhez (2020. február)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+A 32-es platform-frissítés már elérhető. További információkért lásd [A Finance and Operations 32-es platformfrissítésének újdonságai vagy változásai (2020. február)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 ## <a name="search-values-are-remembered-when-changing-view-options-in-streamlined-employee-form-383833"></a>A program a keresési értékeket az egyszerűsített alkalmazotti űrlap nézetbeállításainak módosításakor emlékszik (383833).
 

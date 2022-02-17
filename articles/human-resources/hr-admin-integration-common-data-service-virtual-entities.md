@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9e26a2fb65564cb4a1d2f9ba4b0d621177207545
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
-ms.translationtype: HT
+ms.openlocfilehash: f7ffe522f0f17a21280e53728c6efc2823743733
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414664"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069146"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>A Dataverse virtuális tábláinak konfigurálása
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 A Dynamics 365 Human Resources egy virtuális adatforrás a következőben: Microsoft Dataverse. Teljes körű létrehozási, olvasási, frissítési és törlési (CRUD) műveletek végrehajtását teszi lehetővé a következőkből: Dataverse és Microsoft Power Platform. A virtuális táblák adatait a Dataverse tárolja, hanem az alkalmazás-adatbázis.
 
@@ -119,10 +122,10 @@ A következő lépésben a virtuális tábla adatforrásának a Power Apps körn
 
 4. A **Megoldás-állapotfelügyeleti központ** felületén válassza ki az alkalmazásoldal jobb felső sarkában található **Összetett keresés** ikont.
 
-5. Az **Összetett keresés** oldalon, az **Elem keresése** legördülő listán válassza ki a **Finance and Operations virtuális adatforrás konfigurációi** elemet.
+5. A **Speciális keresés** oldalon, a **Keres** legördülő listából válassza ki **Finance and Operations virtuális adatforrás konfigurációk**.
 
    > [!NOTE]
-   > Az előző beállítási lépés virtuális tábla alkalmazás telepítése néhány percig is eltarthat. Ha a **Finance and Operations virtuális adatforrás konfigurációi** nem érhetők el a listában, várjon egy percet, és frissítse a listát.
+   > Az előző beállítási lépés virtuális tábla alkalmazás telepítése néhány percig is eltarthat. Ha **Finance and Operations virtuális adatforrás konfigurációk** nem érhető el a listában, várjon egy percet, és frissítse a listát.
 
 6. Válassza az **Eredmények** lehetőséget.
 

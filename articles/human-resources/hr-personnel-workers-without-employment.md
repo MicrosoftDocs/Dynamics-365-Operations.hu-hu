@@ -1,6 +1,6 @@
 ---
 title: Foglalkoztatás nélküli dolgozók
-description: A jövőbeli, aktív vagy múltbeli foglalkoztatással nem bíró dolgozók a szervezetnél megjelennek a foglalkoztatás nélküli dolgozók oldalon.
+description: Azok a munkavállalók, akiknek nincs jövőbeli, aktív vagy múltbeli állása a szervezeténél, megjelennek az Alkalmazottak nélkül oldalon.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: ''
@@ -13,20 +13,23 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d282c0fac00d6bc410717dd156aef9ffce352c6d
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: d0b8fe7dd0818fa1c3cc4224e73035849f9dadfe
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771290"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070551"
 ---
 # <a name="workers-without-employment"></a>Foglalkoztatás nélküli dolgozók
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Azok a dolgozók, akiknek nincs jövőbeli, aktív vagy múltbeli munkaviszonya a szervezettel, megjelennek az alkalmazás nélküli dolgozók **·** oldalon. Az ilyen típusú dolgozók akkor is megjelenhetnek, ha olyan dolgozókat importál, akiknek nincs alkalmazotti rekordja, vagy ha a dolgozók foglalkoztatását törli a dolgozók munkavállalási **\> előzményein keresztül**.
+Azok a munkavállalók, akiknek nincs jövőbeli, aktív vagy történelmi munkaviszonyuk az Ön szervezeténél, megjelennek az oldalon **Munkavállalás nélkül dolgozók** oldalon. Az ilyen típusú munkavállalók akkor jelenhetnek meg, ha olyan munkavállalókat importál, akiknek nincs munkaügyi nyilvántartása, vagy ha törli egy munkavállaló foglalkoztatását a következőn keresztül: **Munkások \> Foglalkoztatási előzmények**.
 
-Alapértelmezés szerint az alkalmazás nélküli dolgozók lap a következő **·** szerepkörök számára érhető el:
+Alapértelmezés szerint a **Munkavállalás nélkül dolgozók** oldal a következő szerepkörök számára érhető el:
 
 - Emberi erőforrás asszisztens
 - Emberi erőforrás vezető
@@ -42,13 +45,13 @@ A **Munkanélküli dolgozók** listájáról törölheti a felsorolt személyeke
 
 2. A **Jogosultságok** lapon szűrje a **Jogosultságok** listáját a **Dolgozók karbantartása** céljából.
 
-   [![ Jogosultságok listájának szűrése.](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
+   [![Jogosultságok listájának szűrése.](./media/hr-personnel-workers-without-employment-filter.png)](./media/hr-personnel-workers-without-employment-filter.png)
 
 3. Válassza a **Hivatkozások** oszlopban a **Megjelenítendő menüelemek** elemet.
 
 4. A **Megjelenítendő menüelemek** közül válassza ki a **HcmWorkersWithoutEmployment** elemet.
 
-   [![ Kiválasztás (képernyő).](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
+   [![Kiválasztás (képernyő).](./media/hr-personnel-workers-without-employment-select.png)](./media/hr-personnel-workers-without-employment-select.png)
 
 5. A **Törlési** engedélyt módosítsa **Engedélyezre**.
 
@@ -56,6 +59,6 @@ A **Munkanélküli dolgozók** listájáról törölheti a felsorolt személyeke
 
 7. Válassza az **Összes közzététele** lehetőséget.
 
-   [![ Változások közzététele.](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
+   [![Változások közzététele.](./media/hr-personnel-workers-without-employment-publish.png)](./media/hr-personnel-workers-without-employment-publish.png)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

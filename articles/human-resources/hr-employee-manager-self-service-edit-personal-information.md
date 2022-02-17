@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bb827e17dcfc63031d0edcb5f447e70f03e8ac3c
-ms.sourcegitcommit: a8ac6d9b63eb67d14dd17a086ef4f1eccd7f9fc1
-ms.translationtype: HT
+ms.openlocfilehash: e798646263b9939445f49a3866532cd229c668cd
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "7431462"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071704"
 ---
 # <a name="edit-personal-information"></a>Személyes adatok szerkesztése
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -69,7 +72,7 @@ A **Globális címjegyzék paraméterei** oldalon beállított paraméterek hat�
     - Azonosító szám hozzáadásához válassza az **Új** lehetőséget. Szükség szerint töltse ki a mezőket, és válassza a **Mentés** parancsot.
     - Szám szerkesztéséhez válassza a **Szerkesztés** elemet. Szükség szerint szerkessze a mezőket, és válassza a **Mentés** parancsot.
 
-7. A kifizetési mód módosításához válassz a **Saját fizetési adatok** lapot. Ez a lap csak akkor érhető el, ha a fizetési módok engedélyezve vannak a **Human Resources paraméterei** képernyőn. A HR a következők engedélyezheti: **Banki levétel**, **Készpénz**, **Csekk**, **Elektronikus fizetés** vagy **Egyéb**. A HR letilthatja az elektronikus fizetések érvényesítését (az Egyesült Államokban használt bérlista esetében), valamint a bankszámla-és a regisztrációs szám ellenőrzését is.
+7. A fizetési módok módosításához válassza a lehetőséget **Fizetési adataim** lapon. Ez a lap csak akkor érhető el, ha a fizetési módok engedélyezve vannak a **Emberi erőforrás paraméterek** oldalon. A HR a következők engedélyezheti: **Banki levétel**, **Készpénz**, **Csekk**, **Elektronikus fizetés** vagy **Egyéb**. A HR letilthatja az elektronikus fizetések érvényesítését (az Egyesült Államokban használt bérlista esetében), valamint a bankszámla-és a regisztrációs szám ellenőrzését is.
 
 8. Ha módosítani szeretné a Human Resources alkalmazásban a profiljához megjelenítő képet, válassza a **Kép** lapot. A szervezet beállításaitól függően előfordulhat, hogy a képek jóváhagyásra lesznek küldve.
 

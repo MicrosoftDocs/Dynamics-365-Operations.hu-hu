@@ -1,6 +1,6 @@
 ---
 title: Vállalat fogalma a Dataverse szolgáltatásban
-description: Ez a témakör a vállalati adatok integrációját ismerteti a Finance and Operations és a Dataverse között.
+description: Ez a témakör az vállalatadatok integrációját ismerteti a Finance and Operations és a Dataverse között.
 author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
@@ -9,28 +9,28 @@ ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 25bd2cc0df4940f02313b3a61f69b2273e835639
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: 3657e41363ca6c1ce8eabfeaf3ba6da9b93f5e2a
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782085"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061026"
 ---
 # <a name="company-concept-in-dataverse"></a>Vállalat fogalma a Dataverse szolgáltatásban
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 
 A Finance and Operations alkalmazásban a *vállalat* koncepciója egyszerre jogi fogalom és üzleti fogalom. Mindemellett adatok biztonsági és láthatósági határa is. A felhasználók mindig egyetlen vállalat kontextusában dolgoznak, és az adatok nagy részét vállalat szerint van kezelve.
 
 A Dataverse nem rendelkezik ezzel egyenértékű koncepcióval. A legközelebbi koncepció a *részleg*, amely elsősorban biztonsági és láthatósági határ a felhasználói adatok számára. Ez a fogalom nem rendelkezik ugyanazokkal a jogi vagy üzleti vonatkozásokkal, mint a vállalat koncepciója.
 
-Mivel a részleg és a vállalat nem egyenértékű fogalmak, nem lehetséges egy-az-egyhez (1:1) leképzés kényszerítése hozzájuk a Dataverse integráció céljából. Mivel azonban a felhasználóknak alapértelmezés szerint meg kell tudniuk tekinteni ugyanazokat a sorokat az alkamazásban és a Dataverse megoldásokban, a Microsoft egy új táblát vezetett be a Dataverse megoldásban, amelynek neve cdm\_ Company. Ez a tábla egyenértékű a Vállalat táblával az alkalmazásban. Annak garantálására, hogy a sorok láthatósága alapértelmezetten megegyezzen az alkalmazás és a Dataverse között, a következő beállításokat javasoljuk a Dataverse adatai számára:
+Mivel a részleg és a vállalat nem egyenértékű fogalmak, nem lehetséges egy-az-egyhez (1:1) leképzés kényszerítése hozzájuk a Dataverse integráció céljából. Mivel azonban a felhasználóknak alapértelmezés szerint meg kell tudniuk tekinteni ugyanazokat a sorokat az alkamazásban és a Dataverse megoldásokban, a Microsoft egy új táblát vezetett be a Dataverse megoldásban, amelynek neve cdm\_Company. Ez a tábla egyenértékű a Vállalat táblával az alkalmazásban. Annak garantálására, hogy a sorok láthatósága alapértelmezetten megegyezzen az alkalmazás és a Dataverse között, a következő beállításokat javasoljuk a Dataverse adatai számára:
 
-+ Minden egyes kettős írási lehetőséget engedélyező Finance and Operations Vállalati sorhoz legyen létrehozva egy társított cdm\_ Company sor.
-+ Egy cdm\_ Company sor létrehozásakor és a kettős írás engedélyezésekor egy alapértelmezett részleg jön létre ugyanazzal a névvel. Bár a részleghez automatikusan létrejön egy alapértelmezett csoport, a részleg nincs használatban.
++ Minden egyes Finance and Operations Company sorhoz, amelynél engedélyezett a kettős írás, egy társított CD-lemez\_ Létrejön a cégsor.
++ Egy cdm\_Company sor létrehozásakor és a kettős írás engedélyezésekor egy alapértelmezett részleg jön létre ugyanazzal a névvel. Bár a részleghez automatikusan létrejön egy alapértelmezett csoport, a részleg nincs használatban.
 + Olyan különálló tulajdonoscsapat jön létre, amelynek neve azonos. Ez is hozzá van rendelve a részleghez.
 + Alapértelmezés szerint az alkalmazásban létrehozott, és a Dataverse szolgáltatásban duplán írt sorok tulajdonosa a hozzárendelt részleghez kapcsolódó „DW Owner” csoport.
 
@@ -43,23 +43,23 @@ Ezen konfigurációnak az következtében az USMF vállalathoz kapcsolódó mind
 + Az „Értékesítési menedzser” szerepkört a "„USMF Sales” csoport tagjaihoz rendelték.
 + Azok a felhasználók, akik rendelkeznek az „Értékesítési menedzser” szerepkörrel, hozzáférhetnek minden olyan partnersorhoz, amelyek ugyanannak a részlegnek a tagjai, amelynek ők is.
 + Az „USMF Sales” csapat s kapcsolva van az USMF üzleti egységhez, amely korábban említettünk.
-+ Ezért az „USMF Sales” csapat tagjai láthatnak a „USMF DW” felhasználói által birtokolt bármely olyan fiókot, amely a Finance and Operations USMF vállalati táblából származik.
++ Ezért az "USMF Sales" csapat tagjai láthatnak minden olyan fiókot, amely az "USMF DW" felhasználó tulajdonában van, és amely a Finance and Operations USMF Company táblázatából származott volna.
 
 ![Hogyan használhatók a csapatok.](media/dual-write-company-2.png)
 
 Ahogy az előző ábrán is látható, ez a 1:1 leképezés az üzleti egység, a vállalat és a csapat között csak egy kiindulási pont. Ebben a példában egy új „Európa” nevű részleg manuálisan lett létrehozva a Dataverse szolgáltatásban mint DEMF és ESMF szülője. Ez az új gyökérszintű részleg nem kapcsolódik kettős íráshoz. Ugyanakkor használható arra, hogy az „EUR Sales” csapat hozzáférhessen a partneradatokhoz a DEMF és az ESMF rekordokban is, azáltal, hogy az adatok láthatóságát **Szülő/gyermek részleg** értékre állítják a társított biztosági szerepkörben.
 
-Egy utolsó témában ismertetjük, hogyan határozza meg a lettős írás, hogy melyik tulajdonoshoz rendelje hozzá a sorokat. Ezt a viselkedés az **Alapértelmezett tulajdonoscsoport** oszlop szabályozza a cdm\_ Vállalat sorban. Ha egy cdm\_ Vállalat sorhoz a kettős írás engedélyezve van, egy beépülő modul automatikusan létrehozza a hozzárendelt üzleti egységet és a tulajdonos csoportot (ha még nem létezik), és beállítja az **Alapértelmezett tulajdonosi csapat** oszlopot. Az adminisztrátor megváltoztathatja ezt az oszlopot egy másik értékre. Azonban az adminisztrátor nem törölheti ezt az oszlopot, amíg a tábla engedélyezve van kettős íráshoz.
+Egy utolsó témában ismertetjük, hogyan határozza meg a lettős írás, hogy melyik tulajdonoshoz rendelje hozzá a sorokat. Ezt a viselkedés az **Alapértelmezett tulajdonoscsoport** oszlop szabályozza a cdm\_Vállalat sorban. Ha egy cdm\_Vállalat sorhoz a kettős írás engedélyezve van, egy beépülő modul automatikusan létrehozza a hozzárendelt üzleti egységet és a tulajdonos csoportot (ha még nem létezik), és beállítja az **Alapértelmezett tulajdonosi csapat** oszlopot. Az adminisztrátor megváltoztathatja ezt az oszlopot egy másik értékre. Azonban az adminisztrátor nem törölheti ezt az oszlopot, amíg a tábla engedélyezve van kettős íráshoz.
 
 > [!div class="mx-imgBorder"]
-![ Alapértelmezett tulajdonosi csoport oszlop.](media/dual-write-default-owning-team.jpg)
+![Alapértelmezett tulajdonosi csoport oszlop.](media/dual-write-default-owning-team.jpg)
 
 ## <a name="company-striping-and-bootstrapping"></a>Cég adatcsíkozása és rendszerindítás
 
-A Dataverse-integráció vállalati azonosító segítségével létre a vállalatok paritását az adatcsíkozáshoz. Amint az alábbi ábrán látható, minden vállalatspecifikus tábla ki lesz bővítve úgy, hogy egy több-az-egyhez (N:1) kapcsolata lesz a CDM\_ Company táblával.
+A Dataverse-integráció vállalati azonosító segítségével létre a vállalatok paritását az adatcsíkozáshoz. Amint az alábbi ábrán látható, minden vállalatspecifikus tábla ki lesz bővítve úgy, hogy egy több-az-egyhez (N:1) kapcsolata lesz a CDM\_Company táblával.
 
 > [!div class="mx-imgBorder"]
-![ N:1 kapcsolat a vállalatspecifikus tábla és a cdm_Company tábla között.](media/dual-write-bootstrapping.png)
+![N:1 kapcsolat a vállalatspecifikus tábla és a cdm_Company tábla között.](media/dual-write-bootstrapping.png)
 
 + A sorok esetében a vállalat hozzáadása és mentése után az érték írásvédett lesz. Ezért a felhasználóknak meg kell győződniük arról, hogy a megfelelő vállalatot választják ki.
 + Csak a vállalati adatokat tartalmazó sorok alkalmasak az alkalmazás és a Dataverse közötti kettős írásra.

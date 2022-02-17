@@ -1,6 +1,6 @@
 ---
 title: Toborzási folyamatok kezelése
-description: Ez a témakör azt a fogalmat írja le, amely szerint a toborzási folyamat lépéseit a toborzási folyamat során a toborzók nyomon követhetik.
+description: Ez a témakör egy olyan koncepciót ír le, amellyel a toborzók nyomon követhetik a toborzási folyamat lépéseit.
 author: andreabichsel
 ms.date: 01/10/2022
 ms.topic: article
@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c9a5e89e700858ed9e625fbdee630fa14ebea26e
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 7fa1d5201fcc52d49b9d954356f1ca39b7619cd2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7965064"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075475"
 ---
 # <a name="manage-recruiting-processes"></a>Toborzási folyamatok kezelése
 
-[!include [banner](../includes/banner.md)]
+> [!IMPORTANT]
+> Az ebben a témakörben említett funkciók jelenleg a pénzügyi infrastruktúra humánerőforrás-ügyfelei számára érhetők el.  
+
 
 Ez a témakör egy olyan koncepciót ismertet, amellyel a toborzók követhetik a toborzási folyamat lépéseit, köztük a nyitott beosztások meghirdetését és a pályázók felvételét, követhetik a pályázók és pályázatok adatait, pályázókat interjúztathatnak, és kiválaszthatak egy vagy több jelöltet a szervezet nyitott beosztásainak betöltésére.
 
@@ -42,7 +44,7 @@ A toborzási projektek lehetővé teszik a felvétellel foglalkozók számára e
 - Jelentkezési határidő
 - Becsült kezdő dátum
 
-A toborzási projekt tartalmazza az Alkalmazott önkiszolgáló oldalának álláshirdetési értékét a **nyitó** **álláshirdetés** hirdetésére. A nyitó érték csak akkor jeleníthető meg az alkalmazottak számára, ha a toborzási projekt állásdátummal rendelkezik, az alkalmazotti önkiszolgáló rendszer Megjelenítésének beállítása Igen, a Pályázat határideje mező jövőbeli dátumra van állítva, és a toborzási projekt Projekt **állapota** **·** **·** **·** **·** **Elindítva**. Az alábbi táblázat felsorolja toborzási projektek lehetséges állapotait és azok leírását.
+A toborzási projekt tartalmazza a **Álláshirdetés** érték, amelyet a **Alkalmazotti önkiszolgáló** oldal a megnyitó hirdetésére. A nyílás csak akkor mutatható meg az alkalmazottaknak, ha a toborzási projekt rendelkezik a **Álláshirdetés** érték, a **Megjelenítés az alkalmazottak önkiszolgálóján** mező értékre van állítva **Igen**, a **Jelentkezési határidő** mező egy jövőbeli dátumra van állítva, és a toborzási projekt rendelkezik a **Projekt állapota** értéke **Elindult**. Az alábbi táblázat felsorolja toborzási projektek lehetséges állapotait és azok leírását.
 
 | Állapot    | Értelmezés...                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -55,7 +57,7 @@ Recruiters is lehet rögzíteni a **Media** hirdetése a nyitó külső értéke
 
 ## <a name="applicants"></a>Pályázók
 
-A pályázó olyan személy, aki munkára pályázik a vállalatnál. A pályázók a szervezet összes jogi személye között meg vannak osztva. Ebből következően nagy mennyiségű adata van a kereséshez. Megadhat és karban tarthat személyes információkat, állásinterjú dátumokat és időpontokat, referenciákat, kompetenciákat és a pályázó kérvényeit. Ha létrehoz egy pályázói rekordot, egy személyes rekord jön létre a pályázószámára a globális címjegyzékben. Használhatja a **Jelentkező** lap frissítése a következő globális címjegyzék adatait a pályázók számára:
+A pályázó olyan személy, aki munkára pályázik a vállalatnál. A jelentkezők megosztva vannak a szervezetében lévő összes jogi személy között. Ezért a tehetségek nagy tárháza áll rendelkezésére, amelyekben kereshet. Megadhat és karban tarthat személyes információkat, állásinterjú dátumokat és időpontokat, referenciákat, kompetenciákat és a pályázó kérvényeit. Ha létrehoz egy pályázói rekordot, egy személyes rekord jön létre a pályázószámára a globális címjegyzékben. Használhatja a **Jelentkező** lap frissítése a következő globális címjegyzék adatait a pályázók számára:
 
 - Címadatok
 - Kapcsolattartási adatok
@@ -84,7 +86,7 @@ A pályázat állapota jelzi, hogy a pályázat hol áll a toborzási folyamatba
 
 ### <a name="correspondence-actions"></a>Levelezési tevékenységek
 
-A pályázat levelezési művelete határozza meg azt a dokumentumot vagy e-mail sablont, amely a pályázatot beküldött jelentkezővel való kommunikációra használ. A pályázati könyvjelzők megfeleltetési tevékenységhez társításával a Pályázók, Pályázó, Interjú és Toborzás projektoldalak értékeit használhatja a pályázókkal **folytatott** **·** **·** **·** **kommunikációban**. A levelezési műveletek pályázat-e-mail sablonjainak létrehozásával gyorsan elküldheti e-maileket azoknak a pályázóknak, akiknek jelentkezése az állapot és a levelezési **művelet** meghatározott kombinációját tartalmazza. Küldhet például visszaigazoló e-mailt minden olyan pályázatnak, amely Beérkezett állapotú és Megfeleltetés művelet **értéke** **·** **·** **Beérkezett**. Az e-mail elküldése után lehetőség van a pályázatok automatikus frissítésére.
+Egy pályázat levelezési művelete határozza meg azt a dokumentumot vagy e-mail-sablont, amelyet a kérelmet benyújtó pályázóval való kommunikációhoz használ. Társítással **alkalmazás könyvjelzői** a levelezési műveleteknél használhatja az értékeket a **Alkalmazás**, **·**, **·**, és **Toborzási projekt** oldalakat a jelentkezőkkel folytatott kommunikáció során. Alkotás által **alkalmazás e-mail sablonok** a levelezési műveleteknél gyorsan küldhet e-mailt azoknak a pályázóknak, akiknek a jelentkezése az állapot és a levelezési művelet meghatározott kombinációjával rendelkezik. Például küldhet egy megerősítő e-mailt minden olyan alkalmazásnak, amely rendelkezik a **Állapot** értéke **Megkapta** és a **Levelező akció** értéke **Megkapta**. Az e-mail elküldése után lehetősége van az alkalmazások állapotának automatikus frissítésére.
 
 ## <a name="application-routing"></a>Pályázat útválasztása
 

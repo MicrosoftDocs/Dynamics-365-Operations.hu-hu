@@ -2,7 +2,7 @@
 title: Hívásközpont-csatornák beállítása
 description: Ebben a témakörben a hívásközpontok folyamatrendeléseiről tájékozódhat a Dynamics 365 Commerce használatával.
 author: josaw1
-ms.date: 01/06/2020
+ms.date: 02/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 5f9afd1b67d6b164facc4dd15a8680866fe8c5b4e4b491d969cda6554eebb1de
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 64669c5bf71a4f1673f5ad2c46db7d3a2eaf2a97
+ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750648"
+ms.lasthandoff: 02/04/2022
+ms.locfileid: "8092432"
 ---
 # <a name="set-up-call-center-channels"></a>Hívásközponti csatornák beállítása
 
@@ -56,6 +56,9 @@ Ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van 
 Ezenkívül, ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, amikor a felhasználó az értékesítési rendeléseket létrehozza és sortétel beviteli módban van, a **Forrás** mező rendelkezésre áll a fő értékesítési rendelés fejlécében. A **Forrás** mező szolgál egy [katalógus forráskód](/dynamics365/unified-operations/retail/call-center-catalogs) rögzítésére a közvetlen marketing eladási forgatókönyvek esetén. Ez a kód ezután különleges árak vagy promóciók hajtóereje lehet.
 
 Akkor is, ha a **Rendeléskiegészítés engedélyezése** beállítás ki van kapcsolva, a felhasználók továbbra is alkalmazhatnak egy forráskódot egy értékesítési rendelésre. Azonban ehhez meg kell nyitni az értékesítési rendelés fejlécének részleteit a **Forrás** mező eléréséhez. Ez azt jelenti, hogy néhány további kattintással szükség. Ugyanez vonatkozik az olyan funkciókra, mint a szállítás befejeződött és a sürgős rendelések. Ezek a funkciók a hívásközpontban létrehozott összes rendeléshez elérhetők. Ugyanakkor, ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, a felhasználók megtekinthetik ezeknek a szolgáltatásoknak a konfigurációját az eladási fejlécben, amíg a sorbeviteli nézetben vannak. Nem kell megnyitniuk az értékesítési rendelés fejlécének részletes információit a megfelelő beállítások és mezők megkereséséhez.
+
+> [!NOTE]
+> Amikor az **Omni-channel Commerce megrendelések kifizetése** funkció engedélyezve van, a call center **Megrendelés befejezésének engedélyezése** gomb el lesz rejtve a központban a **Tábornok** Csatornád gyorslapja itt **Kiskereskedelem és kereskedelem \> Csatornák \> Call Centerek**.
 
 ### <a name="enable-direct-selling"></a>Közvetlen értékesítés engedélyezése
 

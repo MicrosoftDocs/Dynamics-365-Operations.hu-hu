@@ -1,5 +1,5 @@
 ---
-title: Vevői portál felhasználóinak létrehozása és kezelése (videofelvételt tartalmaz)
+title: Ügyfélportál-felhasználók létrehozása és kezelése (videót tartalmaz)
 description: Ez a témakör azt mutatja be, hogyan kell létrehozni az Ügyfélportál felhasználói fiókjait, és hogyan állíthatja be a rájuk vonatkozó engedélyeket.
 author: Henrikan
 ms.date: 07/31/2020
@@ -12,17 +12,17 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-04-22
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 20751a25a6dedb04806068780bc2f4e381bf79bc
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937453"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062490"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Ügyfélportál felhasználóinak létrehozása és kezelése
 
 [!include [banner](../includes/banner.md)]
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 A „gyári” implementációban nincs mód arra, hogy a felhasználók önállóan regisztrálhatják magukat a Ügyfélportál segítségével létrehozott webhelyeken. A bejelentkezéshez és a webhely használatához a felhasználókat az adminisztrátornak kell meghívnia. A Microsoft szándékosan zárolta a lehetőséget, hogy a felhasználók önállóan regisztrálhatják magukat.
 
@@ -33,7 +33,7 @@ Amikor a felhasználók magukat regisztrálják, a kapcsolattartói rekordok aut
 ## <a name="video"></a>Videó
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-A [Hívja meg a vevőket, hogy regisztráljanak és használják a portált](https://youtu.be/drGUYHX9QIQ) című videó (fent) szerepel a [Finance and Operations lejátszási listán,](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) amely elérhető a YouTube felületén.
+A [Hívja meg az ügyfeleket, hogy regisztráljanak, és használják ügyfélkapuját](https://youtu.be/drGUYHX9QIQ) videó (fent látható) szerepel a [Finance and Operations lejátszási lista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) elérhető YouTube.
 
 ## <a name="prerequisite-setup"></a>A beállítás előfeltételei
 

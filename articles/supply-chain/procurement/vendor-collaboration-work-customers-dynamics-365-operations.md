@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9ad7f116f979d571a5e34eee67beb7218a271522
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: f699b00ab7ea2d043e12824015c54439caf8e63c
+ms.sourcegitcommit: d58a891d9fe0aa0e6b2c20329250c8d74ffbee90
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777594"
+ms.lasthandoff: 01/24/2022
+ms.locfileid: "8022974"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Szállítói együttműködés a vevőkkel
 
@@ -78,7 +78,7 @@ Bizományosi készlet használatakor a szállító együttműködési felület s
 
 ## <a name="working-with-rfqs-in-the-vendor-bidding-workspace"></a>Ajánlatkérések kezelése a szállítói ajánlattételek munkaterületen
 
-A **Szállítói ajánlattételek** munkaterület lehetővé teszi, hogy megtekintse azokat az ajánlatkéréseket (RFQ-k), amelyek megválaszolására az Ön cégét meghívták. Válaszolni is tud az ajánlatkérésekre. 
+A **Szállítói ajánlattételek** munkaterület lehetővé teszi, hogy megtekintse azokat az ajánlatkéréseket (RFQ-k), amelyek megválaszolására az Ön cégét meghívták. Válaszolni is tud az ajánlatkérésekre.
 
 A munkaterület ezen kívül az összes megnyert és elvesztett ajánlatkérést is megmutatja. Ezenkívül, ha a rendszer az állami szektorra van beállítva, a munkaterület megjeleníti a nyilvánosan elérhető ajánlatkéréseket.
 
@@ -96,20 +96,28 @@ Nyissa meg a **szállítói ajánlattételek** munkaterületet a következő ada
 
 ### <a name="working-with-rfqs-that-are-publicly-available"></a>Nyilvánosan elérhető ajánlatkérések kezelése
 
-Az állami szektorban dolgozó emberek megtekinthetik azokat a nyitott és lejárt ajánlatkéréseket, amelyeket elérhetővé tettek a nyilvánosság számára.
+A közszférában dolgozók láthatják a nyilvánosság számára elérhetővé tett nyitott és lejárt ajánlatkéréseket.
 
 - Válassza ki a **Nyitott közzétett ajánlatkérések** hivatkozást, ha meg szeretné tekinteni a nyilvánosság számára elérhető nyitott ajánlatkérések listáját. Egy nyitott ajánlatkérés olyan ajánlatkérés, amely még nem járt le. A lejárati dátumot és időpontot az Ajánlatkérés fejlécében találhatja meg.
 
-    Ha önt ajánlani hívták, megtalálhatja ugyanazt az ajánlatkérést az **Új eladásiár-meghívások** oldalon. Bizonyos esetekben ön ajánlana egy nyitott ajánlatkérésen, de nem lett meghívva. Ebben az esetben lehet, hogy meg tudja hívni önmagát, feltéve, hogy a vevő engedélyezte az önmeghívást az Ajánlatkérési esetre.
+    Ha önt ajánlani hívták, megtalálhatja ugyanazt az ajánlatkérést az **Új eladásiár-meghívások** oldalon. Bizonyos esetekben ön ajánlana egy nyitott ajánlatkérésen, de nem lett meghívva. Ebben az esetben lehet, hogy meg tudja hívni önmagát, feltéve, hogy a vevő engedélyezte az önmeghívást az Ajánlatkérési esetre. 
 
-    Javítsa a **Közzétett ajánlatkérések megnyitása** elérhetőséget a **„Közzétett ajánlatkérések megnyitása” hivatkozás megjelenítése mozaikként** funkció bekapcsolásával. Ez a funkció egy mozaikká alakítja át a hivatkozást, és egy kiemelkedő helyre teszi át, hogy könnyen megtalálható legyen. (Az Ellátásilánc-kezelés 10.0.21-es verziója alapértelmezés szerint be van kapcsolva.)
+    A **Új ajánlattételi felhívások** oldal biztosíthat egy szűrőt, amellyel megtekintheti a nyitott ajánlatkéréseket, és azonosíthatja azokat, amelyek a jóváhagyott beszerzési kategóriáknak megfelelő sorokat tartalmaznak. A szűrő elérhetővé tételéhez be kell kapcsolnia a *Hagyja, hogy a szállítók beszerzési kategória szerint keressenek ajánlatkérést* funkciót a rendszerben. Az adminisztrátorok használhatják a **Funkciókezelés** munkaterületet, hogy ellenőrizze a funkció állapotát, és szükség esetén kapcsolja be. A funkció a következő módon jelenik meg:
+
+    - **Modul:** *Kötelezett számlák*
+    - **Funkció neve:** *Hagyja, hogy a szállítók beszerzési kategória szerint keressenek ajánlatkérést* <!-- KFM: I don't see this here, is this right? -->
+
+    Növelheti a hozzáférést a **Nyissa meg a közzétett árajánlatkéréseket** link bekapcsolásával *Jelenítse meg a „Közzétett ajánlatkérések megnyitása” hivatkozást csempeként* funkció. Ez a funkció a hivatkozást csempévé alakítja, és jól látható helyre mozgatja, így könnyen megtalálható. Az adminisztrátorok használhatják a **Funkciókezelés** munkaterületet, hogy ellenőrizze a funkció állapotát, és szükség esetén kapcsolja be. (A Supply Chain Management 10.0.21-es verziójától kezdve a szolgáltatás alapértelmezés szerint be van kapcsolva.) Ott a szolgáltatás a következőképpen szerepel:
+
+    - **Modul:** *Beszerzés és forrás*
+    - **Funkció neve:** *Jelenítse meg a „Közzétett ajánlatkérések megnyitása” hivatkozást csempeként*
 
 - Válassza ki a **Lezárt közzétett ajánlatkérések** hivatkozást, ha meg szeretné tekinteni a nyilvánosság számára elérhető lezárt ajánlatkérések listáját. A lezárt ajánlatkérés egy olyan ajánlatkérés, ami már lejárt. A lejárati dátumot és időpontot az Ajánlatkérés fejlécében találhatja meg.
 
     A lezárt Ajánlatkérés megjeleníti az összes szállítói ajánlatot a sorok szintjéig. ahogy az ajánlatokat odaítélik vagy elutasítják, ez az információ megjelenik a lezárt Ajánlatkérésben. Az ajánlatban szereplő mellékletek is elérhetők.
 
 > [!NOTE]
-> Ez a funkció csak akkor érhető el, ha az állami szektor konfiguráció be van kapcsolva.
+> Ez a funkció csak akkor érhető el, ha a nyilvános szektor konfigurációja be van kapcsolva.
 
 ### <a name="bidding"></a>Ajánlattétel
 

@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 26f8820fe707b8a2dff0dcc1a24884ef02e5616f
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: a49f35211f30cdb76104cc5be78f5b114320a228
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952496"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062650"
 ---
 # <a name="install-and-set-up-inventory-visibility"></a>Készletláthatóság telepítése és beállítása
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
+
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management készlet láthatósági kiegészítőjének telepítését ismerteti.
 
@@ -73,7 +73,7 @@ Miután regisztrált egy alkalmazást, és hozzáad egy ügyféltitkot a Azure A
 1. A Dataverse-ben válassza ki az **Alkalmazások** szakaszt a bal oldali navigációban, és ellenőrizze, hogy sikeresen telepítve van-e **Készlet láthatósága** Power Apps. Ha az **Alkalmazások** szakasz nem létezik, lépjen kapcsolatba a Készletláthatóság termékcsapattal az [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) címen.
 
 > [!TIP]
-> Javasoljuk, hogy csatlakozzon a Készlet láthatósági bővítmények felhasználócsoporthoz, ahol hasznos segédeket találhat, behasználhatja a legújabb frissítéseit, és bármilyen kérdést feladhat, amelyek a készlet láthatóságának használatával kapcsolatban előfordulhatnak. A csatlakozáshoz e-mailt küld a készlet láthatósági termékcsoportjának inventvisibilitysupp@microsoft.com, és adja meg [az](mailto:inventvisibilitysupp@microsoft.com) ellátásilánc-kezelési környezet azonosítóját.
+> Javasoljuk, hogy csatlakozzon az Inventory Visibility Add-in felhasználói csoporthoz, ahol hasznos útmutatókat találhat, megkaphatja legfrissebb frissítéseinket, és felteheti a készlet láthatóságának használatával kapcsolatos kérdéseit. A csatlakozáshoz kérjük, küldjön e-mailt a Készletláthatósági termékcsapatnak a következő címen: [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) és tartalmazza a Supply Chain Management környezetazonosítóját.
 
 > [!IMPORTANT]
 > Ha több LCS-környezete van, mindegyik környezethez hozzon létre egy másik Azure AD alkalmazást. Ha ugyanazt az alkalmazásazonosítót és bérlőazonosítót használja a készlet láthatósági bővítményének különböző környezetekben való telepítéséhez, jogkivonat-probléma fog előfordulni a régebbi környezetekben. Csak az utolsó telepített bővítmény lesz érvényes.

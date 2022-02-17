@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d1902e80313c5460ac38896bc2f46d83897e3a58
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
-ms.translationtype: HT
+ms.openlocfilehash: d1593206e8e22aed518ebca9bee0772c6620bec9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592665"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068792"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Az entitásadatok megtekintése és frissítése az Excel programmal 
 
@@ -28,7 +28,10 @@ ms.locfileid: "7592665"
 [!include [banner](../includes/banner.md)]
 
 
-Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Excel bővítményének segítségével. Az entitás adatainak megnyitásához kiindulhat az Excel vagy Finance and Operations alkalmazásokból.
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+
+Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Excel bővítményének segítségével. Az entitásadatok megnyitásához indulhat az Excel vagy a Finance and Operations alkalmazásból.
 
 Az entitásadatok megnyitásával az Excel programban gyorsan és egyszerűen tekintheti meg és szerkesztheti az adatokat az Excel beépülő moduljának segítségével. A bővítményhez Microsoft Excel 2016 vagy újabb verzió szükséges.
 
@@ -37,15 +40,15 @@ Az entitásadatok megnyitásával az Excel programban gyorsan és egyszerűen te
 
 További tudnivalókért az Excel-bővítmény használatáról, tekintse meg a rövid videót: [Excel-sablon létrehozása a fejléc- és sormintákhoz](https://youtu.be/RTicLb-6dbI).
 
-## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Az entitás adatainak megnyitása az Excel indításakor a Finance and Operations alkalmazásból
-1. A Finance and Operations alkalmazás lapján válassza a **Megnyitás Microsoft Office alkalmazásban** lehetőséget.
+## <a name="open-entity-data-in-excel-when-you-start-from-a-finance-and-operations-app"></a>Nyissa meg az entitásadatokat az Excelben, amikor egy Finance and Operations alkalmazásból indul
+1. A Finance and Operations alkalmazás egyik oldalán válassza a lehetőséget **Nyissa meg itt Microsoft Office**.
 
     Ha az oldal gyökér adatforrása (tábla) megegyezik bármelyik entitás gyökér adatforrásával, létrejönnek a lap alapértelmezett **Megnyitás az Excel programban** beállításai. A **Megnyitás az Excel programban** lehetőségek megtalálhatók a gyakran használt lapokon, például az **Összes szállító** és **Összes vevő** oldalon.
  
 2. Válassza az egyik **Megnyitás az Excel programban** lehetőséget, és nyissa meg a létrejövő munkafüzetet. Ez a munkafüzet kötési információkat tartalmaz az entitásra, egy mutatót a környezetre és egy mutatót az Excel-bővítményre.
 3. Az Excel programban válassza a **Szerkesztés engedélyezése** lehetőséget az Excel-bővítmény futtatásának engedélyezéséhez. Az Excel-bővítmény egy panelen fut az Excel ablak jobb oldalán.
 4. Ha az Excel beépülő modult első alkalommal futtatja, válassza az **Ez a bővítmény megbízható** lehetőséget.
-5. Ha a rendszer bejelentkezést kér, válassza a **Bejelentkezés** lehetőséget, majd a Finance and Operations alkalmazás bejelentkezéshez használt hitelesítő adatainak használatával jelentkezzen be. Az Excel beépülő modul a böngésző korábbi bejelentkezési kontextusát használva automatikusan bejelentkezik a rendszerbe, ha talál ilyet. (Az operációs rendszeren alapuló böngészővel kapcsolatos tudnivalókat lásd: [Az Office-bővítmények által használt böngészők](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) A bejelentkezés sikerességének biztosítása érdekében ellenőrizze a felhasználónevet az Excel-bővítmény jobb felső sarkában. 
+5. Ha a rendszer kéri, hogy jelentkezzen be, válassza a lehetőséget **Belépés**, majd jelentkezzen be ugyanazokkal a hitelesítő adatokkal, amelyeket a Finance and Operations alkalmazásba való bejelentkezéshez használt. Az Excel beépülő modul a böngésző korábbi bejelentkezési kontextusát használva automatikusan bejelentkezik a rendszerbe, ha talál ilyet. (Az operációs rendszeren alapuló böngészővel kapcsolatos tudnivalókat lásd: [Az Office-bővítmények által használt böngészők](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins.) A bejelentkezés sikerességének biztosítása érdekében ellenőrizze a felhasználónevet az Excel-bővítmény jobb felső sarkában. 
 
 Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne felejtse, hogy nincsenek adatok a munkafüzetben mindaddig, amíg be nem olvassa őket az Excel-bővítmény.
 
@@ -54,7 +57,7 @@ Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne f
 2. Az Office Áruházban keressen a **Dynamics** kulcsszóra, majd válassza a **Hozzáadás** lehetőséget a **Microsoft Dynamics Office-bővítmény** (az Excel-bővítmény) mellett.
 3. Ha az Excel beépülő modult első alkalommal futtatja, válassza az **Ez a bővítmény megbízható** lehetőséget az Excel-bővítmény futásának engedélyezéséhez. Az Excel-bővítmény egy panelen fut az Excel ablak jobb oldalán.
 4. Válassza a **Kiszolgáló adatainak hozzáadása** lehetőséget a **Beállítások** ablak megnyitásához.
-5. A böngészőben az URL-címet másolja ki a célként megadott Finance and Operations alkalmazás példányból, illessze be a **Kiszolgáló URL-címe** mezőben, és töröljön mindent az állomás neve után. Az eredményül kapott URL-címnek csak az állomásnévvel kell rendelkeznie.
+5. Böngészőjében másolja ki a megcélzott Finance and Operations alkalmazáspéldány URL-jét, és illessze be a **Szerver URL** mezőben, majd töröljön mindent a gazdagép neve után. Az eredményül kapott URL-címnek csak az állomásnévvel kell rendelkeznie.
 
     Ha például az URL-cím `https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage`, akkor a `https://xxx.dynamics.com` részen kívül töröljön mindent.
 
@@ -73,7 +76,7 @@ Az Excel-bővítmény automatikusan beolvassa a kijelölt entitás adatait. Ne f
 Miután az Excel-bővítmény beolvasta az entitásadatokat a munkafüzetbe, bármikor frissítheti az adatokat a **Frissítés** lehetőséget választva az Excel-bővítményben.
 
 ## <a name="edit-entity-data-in-excel"></a>Az Excel programban az entitás adatainak szerkesztése
-Az entitásadatokat igény szerint módosíthatja, és aztán újra közzéteheti őket a Finance and Operations alkalmazásokban a **Közzététel** elemre kattintva az Excel-bővítményben. Egy rekord módosításához a munkalapon jelöljön ki egy cellát, és változtassa meg a cella értékét. Új rekord hozzáadásához hajtsa végre az alábbi lépések valamelyikét:
+Igény szerint módosíthatja az entitásadatokat, majd a lehetőség kiválasztásával közzéteheti azokat a Finance and Operations alkalmazásokban **Közzététel** az Excel bővítményben. Egy rekord módosításához a munkalapon jelöljön ki egy cellát, és változtassa meg a cella értékét. Új rekord hozzáadásához hajtsa végre az alábbi lépések valamelyikét:
 
 - Kattintson bárhová az adatforrások táblázatában, majd az **Új** lehetőségre az Excel-bővítményben.
 - Kattintson az adatforrások táblázatának utolsó sorába, és nyomja le a Tab billentyűt mindaddig, amíg a kurzor ki nem lép a sor utolsó oszlopából, és új sor nem jön létre.

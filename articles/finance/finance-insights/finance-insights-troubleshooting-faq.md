@@ -2,7 +2,7 @@
 title: A Finance Insights beállítási problémáinak elhárítása
 description: Ez a témakör a Finance Insights funkciók használata során előforduló problémákat sorolja fel. Ezenkívül bemutatja a problémák megoldását is.
 author: panolte
-ms.date: 11/03/2021
+ms.date: 01/29/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: c1bbdbec2bc0273a73ffc13a4cce024543af5a13
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
-ms.translationtype: MT
+ms.openlocfilehash: f77cddfdab22bef8af7f62d49723e330c4f13261
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968836"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8064866"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>A Finance Insights beállítási problémáinak elhárítása
 
@@ -54,11 +54,11 @@ Az alábbi lépések szerint frissítheti az adatintegrációs projekteket a [Po
 1. Ha a Finance Insights előnézeti verzióját használja, távolítsa el a **Vevői kifizetési információk eredményei (CDS – Fin Ops)** sablonhoz társított DI projektet.
 2. Hajtsa végre az [Adatentregrátor projekt létrehozása](create-data-integrate-project.md) rész lépéseit. Használja a **ügyfelek fizetési információinak eredményei (CDS – Fin and Ops 10.0.17 vagy újabb)** sablont.
 
-## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>Tünet: Amikor a Vevői kifizetések előrejelzése beállítási lapon található hivatkozásokkal próbál meg megnyílni, miért jelenik meg a következő AI Builder hibaüzenet: "Sajnáljuk, de megszakadt a kapcsolat"?
+## <a name="symptom-when-i-try-to-open-ai-builder-by-using-the-links-on-the-customer-payment-predictions-setup-page-why-do-i-receive-the-following-error-message-sorry-theres-been-a-disconnect"></a>Tünet: Amikor megpróbálom kinyitni AI Builder az Ügyfél fizetési előrejelzései beállítási oldalon található hivatkozások használatával miért kapom a következő hibaüzenetet: "Sajnáljuk, megszakadt a kapcsolat"?
 
 ### <a name="resolution"></a>Megoldás
 
-Dynamics 365 Finance A felhasználónak felhasználói fiókkal kell lennie a környezetnek, és annak a felhasználói fióknak a Rendszer Microsoft Power Apps szabó szerepkörével kell lennie. A Microsoft Power Apps rendszergazda létrehozhatja a felhasználói fiókot, és hozzárendelheti a szerepkört. Ezután a megfelelő felhasználói fiók használatával <https://make.preview.powerapps.com/> bejelentkezhet, majd újra megpróbálkodhat a hivatkozásokkal.
+Dynamics 365 Finance a felhasználóknak rendelkezniük kell a Microsoft Power Apps felhasználói fiók a környezethez, és ennek a felhasználói fióknak rendelkeznie kell a Rendszer-testreszabó szerepkörrel. A Microsoft Power Apps rendszergazda létrehozhatja a felhasználói fiókot és hozzárendelheti a szerepkört. Ezután mehet a<https://make.preview.powerapps.com/>, jelentkezzen be a felhasználói fiókkal, és próbálja meg újra a hivatkozásokat.
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>Tünet: Miért nem mutat adatokat a Pénzforgalmi előrejelzés munkaterület Készpénzforgalmi-előrejelzés lapja?
 
@@ -70,25 +70,47 @@ Először állítsa be és engedélyezze a pénzforgalmi előrejelzési és a li
 
 Ezután győződjön meg arról, hogy a Finance Insights (**Készpénz- és bankkezelés \> Beállítások \> Finance Insights \> Pénzforgalmi előrejelzések**) funkció engedélyezve van, és hogy befejeződött az AI-modell képzése. Ha a képzés még nem fejeződött be, az **Előrejelzés most** lehetőséget választva elindítható a modell betanítási folyamata.
 
-## <a name="symptom-why-isnt-the-install-a-new-add-in-button-visible-in-microsoft-dynamics-lifecycle-services"></a>Tünet: Miért nem látható az Új bővítmény telepítése gomb a Microsoft Dynamics Lifecycle Services szolgáltatásban?
+## <a name="symptom-why-isnt-the-install-a-new-add-in-button-visible-in-microsoft-dynamics-lifecycle-services"></a>Tünet: Miért nem jelenik meg az Új bővítmény telepítése gomb itt?Microsoft Dynamics Életciklus-szolgáltatások?
 
 ### <a name="resolution"></a>Megoldás
 
-Először ellenőrizze, hogy a Környezetkezelő vagy a Projekttulajdonos szerepkör hozzá van-e rendelve **a** **·** **·** Microsoft Dynamics Lifecycle Services (LCS) Projekt biztonsági szerepkör mezőjében a bejelentkezett felhasználóhoz. Az új bővítmények telepítéséhez a projekt egyik biztonsági szerepköre szükséges.
+Először ellenőrizze, hogy a **Környezetvédelmi vezető** vagy **Projekt tulajdonos** szerepkör van hozzárendelve a bejelentkezett felhasználóhoz **Projekt biztonsági szerepkör** mező be Microsoft Dynamics Életciklus-szolgáltatások (LCS). Az új bővítmények telepítéséhez ezen projektbiztonsági szerepkörök valamelyikére van szükség.
 
-Ha a megfelelő projektbiztonsági szerepkör van hozzárendelve, lehet, hogy frissítenie kell a böngészőablakot, hogy az Új bővítmény telepítése gomb **látható** legyen.
+Ha a megfelelő projektbiztonsági szerepkör van hozzárendelve Önhöz, előfordulhat, hogy frissítenie kell a böngészőablakot, hogy láthassa a **Telepítsen új bővítményt** gomb.
 
-## <a name="symptom-the-finance-insights-add-in-doesnt-seem-to-be-installing-why-is-that"></a>Tünet: A Pénzügyi információk bővítmény nem úgy látszik, hogy telepítve van. Mi az?
+## <a name="symptom-the-finance-insights-add-in-doesnt-seem-to-be-installing-why-is-that"></a>Tünet: Úgy tűnik, hogy a Finance Insights bővítmény nem települ. Miert van az?
 
 ### <a name="resolution"></a>Megoldás
 
-A következő lépéseknek el kellett volna fejeződni.
+A következő lépéseket kellett volna végrehajtani.
 
-- Ellenőrizze, hogy rendelkezik-e rendszergazdai és rendszer szabó hozzáféréssel a **Power Portal admin center** **alkalmazásban**.
-- Ellenőrizze, hogy alkalmazta-e a bővítményt telepítő felhasználó egy vagy ezzel egyenértékű Dynamics 365 Finance licencet.
-- Győződjön meg róla, hogy a következő Azure AD alkalmazás regisztrálva van a következőben: Azure AD 
+- Ellenőrizze, hogy rendelkezik-e **Rendszergazda** és **Rendszer-testreszabó** elérheti a Power Portal adminisztrációs központjában.
+- Ellenőrizze, hogy a Dynamics 365 Finance vagy azzal egyenértékű licenc vonatkozik a bővítményt telepítő felhasználóra.
+- Ellenőrizze, hogy a következők Azure AD Az alkalmazás regisztrálva van Azure AD: 
 
   | Pályázat                  | Alkalmazás azonosítója           |
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP mikroszolgáltatások CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   
+## <a name="symptom-error-we-didnt-find-any-data-for-the-selected-filter-range-please-select-a-different-filter-range-and-try-again"></a>Tünet: Hiba: "Nem találtunk adatokat a kiválasztott szűrőtartományhoz. Kérjük, válasszon másik szűrőtartományt, és próbálja újra." 
+
+### <a name="resolution"></a>Megoldás
+
+Ellenőrizze az adatintegrátor beállítását, és ellenőrizze, hogy a várt módon működik-e, és frissíti-e az adatokat AI Builder vissza a pénzügyekhez.  
+További információkért lásd [Hozzon létre egy adatintegrációs projektet](../finance-insights/create-data-integrate-project.md).
+
+## <a name="symptom-customer-payment-prediction-training-failed-and-the-ai-builder-error-states-prediction-should-have-only-2-distinct-outcome-values-to-train-the-model-map-to-two-outcomes-and-retrain-training-report-issue-isnotminrequireddistinctnonnullvalues"></a>Tünet: Az ügyfél fizetési előrejelzési képzése meghiúsult, és a AI Builder hibaüzenet: "Az előrejelzésnek csak 2 különböző kimeneti értékkel kell rendelkeznie a modell betanításához. Térképezze fel a két eredményt, és képezze újra, "Képzési jelentés probléma: IsNotMinRequiredDistinctNonNullValues".
+
+### <a name="resolution"></a>Megoldás
+
+Ez a hiba azt jelzi, hogy nincs elegendő olyan előzménytranzakció az elmúlt évben, amely a következőben leírt kategóriákat képviselné **Időben**, **·**, és **Nagyon későn** kategóriákat. A hiba megoldásához állítsa be a **Nagyon későn** tranzakciós időszak. Ha beállítja a **Nagyon későn** a tranzakciós időszak nem javítja a hibát, **Ügyfél fizetési előrejelzései** nem a legjobb megoldás, mivel minden kategória adataira van szükség edzési célokra.
+
+Ha többet szeretne megtudni arról, hogyan állíthatja be a **Időben**, **·**, és **Nagyon későn** kategóriák, lásd [Ügyfélfizetési előrejelzések engedélyezése](../finance-insights/enable-cust-paymnt-prediction.md).
+
+## <a name="symptom-model-training-failed"></a>Tünet: A modellképzés sikertelen volt
+
+### <a name="resolution"></a>Megoldás
+
+A **Cash flow előrejelzés** A modellképzéshez több mint egy évre kiterjedő, 100-nál is több tranzakciót tartalmazó adatokra van szükség. Ezeknek a tranzakcióknak ki kell hatniuk a likviditási számlákra, amelyek szerepelnek a cash flow-előrejelzési beállításban.
+
+A **Ügyfél fizetési előrejelzései** az előrejelzések létrehozásához legalább 100 ügyfélszámla és fizetési tranzakció szükséges az elmúlt hat-kilenc hónapban.  

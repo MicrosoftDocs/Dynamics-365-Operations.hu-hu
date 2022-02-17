@@ -15,18 +15,21 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d58a42236b07bf177e09aee50a207ffdf2ed1435
-ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
+ms.openlocfilehash: 24ddd242185d736287f61ec250c631ab65e08c95
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7414714"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065041"
 ---
 # <a name="choose-a-data-integration-technology"></a>Adatintegrációs technológia kiválasztása
 
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ez a téma a Dynamics 365 Human Resources által kezelt adatokkal való integrációval kapcsolatos információkat tartalmazza. Leírja a különböző integrációs technológiákat, amelyek segítségével eldöntheti, hogy mely technológiáknak legmegfelelőbbek a szükségleteinek.
 
@@ -68,7 +71,7 @@ A Dataverse-táblák és a társított API-jaik jelentik a legjobb megoldást a 
 
 ### <a name="dmfdixf-entities"></a>DMF-/DIXF-entitások
 
-A Human Resources nagyrészt a Finance and Operations alkalmazásokkal azonos platformra épül, és egy [Adatkezelési keretrendszert (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json) biztosít. A DMF Adatimportálási és-exportálási keretrendszerként (DIXF) is ismert. A Human Resources a humánerőforrás-adatok importálására és exportálására használható adatentitások készletét biztosítja. Noha a Dataverse-táblák alkotják a Human Resources elsődleges adatintegrációs felületét, a DMF-entitások továbbra is hasznosak lehetnek bizonyos körülmények között, például a következő helyzetekben:
+A Human Resources, amely elsősorban a Finance and Operations alkalmazásokkal azonos platformra épül, a [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). A DMF Adatimportálási és-exportálási keretrendszerként (DIXF) is ismert. A Human Resources a humánerőforrás-adatok importálására és exportálására használható adatentitások készletét biztosítja. Noha a Dataverse-táblák alkotják a Human Resources elsődleges adatintegrációs felületét, a DMF-entitások továbbra is hasznosak lehetnek bizonyos körülmények között, például a következő helyzetekben:
 
 - A Dataverse-táblák még nem érhetők el.
 
@@ -111,7 +114,7 @@ A BYOD a jelentésekhez, az adatintegrációkhoz, az adategyesítésekhez, valam
 
 ### <a name="odata-enabled-entities"></a>OData-kompatibilis entitások
 
-A DMF-entitások többsége a Human Resources adatszolgáltatásán (OData) keresztül is elérhető. A [Finance and Operations OData szolgáltatáshoz](/dynamics365/unified-operations/dev-itpro/data-entities/odata) biztosított dokumentáció érvényes a Human Resources alkalmazásra, kivéve a saját OData által használt entitások létrehozásához.
+A DMF-entitások többsége a Human Resources adatszolgáltatásán (OData) keresztül is elérhető. Az előírt dokumentáció a [Finance and Operations OData szolgáltatás](/dynamics365/unified-operations/dev-itpro/data-entities/odata) az emberi erőforrásokra vonatkozik, kivéve a saját OData által kitett entitások létrehozását.
 
 Bár a Dataverse és a Dataverse által (a [Dynamics 365 Web API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8)) használatával) biztosított OData-megvalósítás a preferált a Human Resources adatszolgáltatással szemben, a Human Resources adatszolgáltatás jelenleg teljesebb entitáslefedettséget kínál a Human Resources-adatok számára.
 
@@ -129,7 +132,7 @@ A Data Integrator projektek megfelelőek a Dataverse kötegelt integrációkhoz.
 
 ### <a name="power-query"></a>Power Query
 
-A Data Integrator támogatást biztosít a [Power Query](/power-query/power-query-what-is-power-query) számára is (a [speciális lekérdezési funkcióján](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering) keresztül). A Power Query erőteljes, rugalmas adatszűrést és-átalakítást tesz lehetővé, többek között a kibővített M Formula nyelvet. A Power Query valószínűleg ismerős, ha már fejlesztett Power BI-jelentéseket.
+Adatintegrátor támogatja [Power Query](/power-query/power-query-what-is-power-query) azon keresztül [Speciális lekérdezés funkció](/powerapps/administrator/data-integrator#advanced-data-transformation-and-filtering). Power Query hatékony, rugalmas adatszűrést és -átalakítást biztosít, beleértve a gazdag M-formulanyelvet. Power Query valószínűleg ismerős lesz, ha fejlődött Power BI jelentéseket.
 
 ## <a name="deciding-on-an-integration-technology"></a>Az integrációs technológiára vonatkozó döntés
 

@@ -15,14 +15,17 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 10591abee7890d54d721c9324101a4b4bd0a74d2
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924820"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066440"
 ---
 # <a name="configure-and-manage-database-logging"></a>Adatbázis-naplózás konfigurálása és kezelése
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -93,8 +96,8 @@ Az adatbázis-naplókat egészben vagy egy részben törölheti a következő be
 Az adatbázis-tisztítás beállításához kövesse az alábbi lépéseket: 
 
 1. Nyissa meg a **Rendszeradminisztráció > Hivatkozások > Adatbázis-> Adatbázis-napló** elemet. Válassza ki a **Napló tisztítása** lehetőséget.
-2. A **Belefoglalandó Rekordok** csoportban válassza a **Szűrés lehetőséget**.
-3. Válassza ki azt a módszert, amely a törölni kívánt naplók kiválasztásához lesz. Adja meg az alábbi lehetőségek egyikét:
+2. Alatt **Felvételek** fejléc, válassza ki **Szűrő**.
+3. Válassza ki a törölni kívánt naplók kiválasztásának módját. Adja meg az alábbi lehetőségek egyikét:
 
    - Táblaazonosító (ID)
    - Napló típusa
