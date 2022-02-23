@@ -1,26 +1,29 @@
 ---
 title: Árszimuláció
 description: Ez a cikk az árajánlatokra vonatkozó árszimulációval kapcsolatban tartalmaz információt. Az árszimuláció segít felbecsülni a jövőbeni árajánlati folyamat alatti eladási árok csökkenését, még mielőtt meghatározni egy konkrét árat.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesQuotationPriceSimulation, SalesQuotationsTableLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a14e485d1e02247159e1d9eb1c5d81be37626216
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 18214ae3801b5fb0f927020041e997b7ea4f0df4
+ms.sourcegitcommit: b40d6ce45aeb07724fc41d1a41923970b007fbcf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580504"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4429820"
 ---
 # <a name="price-simulation"></a>Árszimuláció
 
@@ -32,7 +35,7 @@ Az ajánlatok árszimulációja új végösszeget vagy sor szintű összeget jel
 
 Az árszimuláció nem változtatja meg az árajánlatban szereplő árat. Ha az árszimulációt az egész árajánlatra alkalmazza, akkor azt egy speciális engedményként kell kezelni az árajánlat fejlécében. Ha az árszimulációt adott cikkekre alkalmazza, akkor azt egy speciális engedményként kell kezelni az árajánlat soraiban. A létrehozott ajánlati soron az egységenkénti eladási ár nem változik az árszimuláció futtatásakor. Ehelyett a program az ajánlati sor árengedményének megfelelő engedményszázalékot alkalmaz. Amikor alkalmazza az árszimulációt, az egységenkénti eladási ár és az engedményszázalék átkerül az ajánlati sorra vagy az ajánlat fejlécére.  
 
->[Megjegyzés:] Árszimuláció futtatásakor a program csak az aktuális értékesítési pénznemet használja a szimuláció létrehozásához. Amikor azonban megnézi az ajánlat végösszegeit, együtt látja a vállalati pénznemet és az értékesítési pénznemet.  
+>[Figyelem!] Árszimuláció futtatásakor a program csak az aktuális értékesítési pénznemet használja a szimuláció létrehozásához. Amikor azonban megnézi az ajánlat végösszegeit, együtt látja a vállalati pénznemet és az értékesítési pénznemet.  
 
 A kiegészítő cikkek, amelyeket hozzáad az árajánlat soraihoz sorkedvezményeket vagy többsoros kedvezményeket válthatnak ki. Továbbá kiválthatnak összengedményeket, amelyek megváltoztathatják pénzügyi árréseket és az árajánlat sorok árrés arányait és az egész engedményt.  
 
@@ -142,6 +145,3 @@ Az árszimuláció csak azt a sort érinti, amelyre alkalmazták, csökkentve a 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

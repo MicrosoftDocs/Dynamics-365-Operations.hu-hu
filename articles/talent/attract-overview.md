@@ -49,6 +49,3 @@ A pályázók e-mailt kapnak, amint hozzáadták őket egy álláshoz, amelyben 
 
 ## <a name="analytic-reports"></a>Analitikus jelentések
 A felvételi csoportok megtekinthetnek kulcsfontosságú, felvételi folyamatra vonatkozó mutatókat egy állásra, vagy az összes állásra vonatkozó összesített mutatókat az [analitikus jelentésekben az Attract szolgáltatásban](analytic-reports.md). Ez a funkció jelenleg [előzetes verzióban](access-preview-feature.md) használható a [Melyik Microsoft Dynamics 365 Talent – Attract-verzió](attract-comprehensive-hiring.md) ügyfelei számára.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

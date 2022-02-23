@@ -2,30 +2,35 @@
 title: Médiatár modul
 description: Ez a témakör a médiatár modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 08/02/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 328a56a6efbdd97c8dac32d65c65ad31953cdb4c3ce56ef818ebe8bf633f93a4
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 647387bafe8866cb1bee8c57675629af796f33e6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733197"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412958"
 ---
-# <a name="media-gallery-module"></a>Médiagaléria modul
+# <a name="media-gallery-module"></a>Médiatár modul
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a médiatár modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 A médiatár modulok egy vagy több képet jelenítenek meg a galéria nézetben. A médiatár modulok támogatják a miniatűr képek vízszintes (a kép alatti sorként) vagy függőleges (a kép melletti oszlopként) elrendezését is. A médiatár modulok olyan képességeket is biztosítanak, amelyek lehetővé teszik a képek nagyítását vagy teljes képernyős módban való megtekintését. A médiatár modulban történő megjelenítéshez egy képnek a Commerce webhelykészítő médiatárában kell lennie. Jelenleg a médiatár modulok csak képeket támogatnak.
 
@@ -41,7 +46,7 @@ Ugyanígy a médiatár modulja a képtár olyan oldalán is tárolhatja a teljes
 
 A következő ábrán szereplő példában egy médiatár modul segítségével tekinthetők meg a PDP-n található vásárlásmezőben lévő képek.
 
-![Példa egy termék részletei oldalon található vásárlásmezőre, amely a médiatár modul használatával hosztol termékképeket.](./media/ecommerce-pdp-buybox.PNG)
+![Példa egy termék részletei oldalon található vásárlásmezőre, amely a médiatár modul használatával hosztol termékképeket](./media/ecommerce-pdp-buybox.PNG)
 
 ## <a name="media-gallery-properties"></a>Médiatár tulajdonságok
 
@@ -49,25 +54,19 @@ A következő ábrán szereplő példában egy médiatár modul segítségével 
 |---------------|--------|-------------|
 | Képforrás | **Oldalkontextus** vagy **Termékazonosító** | Az alapértelmezett érték az **Oldalkontextus**. Ha az **Oldalkontextus** ki van jelölve, akkor a modul elvárja, hogy az oldalon adja meg a termékazonosító adatait. Ha a **Termékazonosító** kivan jelölve, akkor a kép termékazonosítóját meg kell adni a **Termékazonosító** tulajdonság értéknél. Ez a funkció a Commerce 10.0.12 verzióban érhető el. |
 | Termékazonosító | Egy termékazonosító | Ez a tulajdonság csak akkor használható, ha a **Kép erőforrása** tulajdonság értéke **Termékazonosító**. |
-| Kép nagyítása | **Szövegköz** vagy **Tároló** | Ez a tulajdonság lehetővé teszi a felhasználó számára a médiatár modulban a nagyítást. A kép egy szövegközi, vagy akár egy különálló tárolóban, a kép mellett is nagyítható. Ez a képesség a 10.0.12-es verzióban érhető el. |
-| Nagyítási tényező | Egy tizedesérték | Ez a tulajdonság a képek nagyításának nagyságrendi tényezőjét határozza meg. Ha például az értéket **2,5**-re állítjék, a képeket 2,5-szörösen nagyítják fel. |
-| Teljes képernyő | **Igaz** vagy **Hamis** | Ez a tulajdonság azt határozza meg, hogy a képeket meg lehet-e teljes képernyős módban jeleníteni. Teljes képernyős módban a képeket tovább is lehet nagyíthatani, ha a nagyítási képesség be van kapcsolva. Ez a képesség elérhető a Commerce alkalmazás 10.0.13-ös kiadásában. |
-| Nagyított képminőség | Az 1 és 100 közötti szám egy százalékot jelez, amelyet a kurzorral választhat ki | Ez a tulajdonság határozza meg a nagyított képek képminőségét. 100 százalékra is beállítható, hogy a nagyított képek mindig a legnagyobb felbontást használják. Ez a tulajdonság nem alkalmazható PNG-fájlokra, mert veszteségmentes formátumot használnak. Ez a képesség elérhető a Commerce alkalmazás 10.0.19-ös kiadástól. |
+| Kép nagyítása | **Szövegköz** vagy **Tároló** | Ez a tulajdonság lehetővé teszi a felhasználó számára a médiatár modulban a nagyítást. A kép egy szövegközi, vagy akár egy különálló tárolóban, a kép mellett is nagyítható. Ez a képesség a 10.0.12-es verzióban érhető el |
+| Nagyítás méretezése | Egy tizedesérték | Ez a tulajdonság a képek nagyításának nagyságrendi tényezőjét határozza meg. Ha például az értéket **2,5**-re állítjék, a képeket 2,5-szörösen nagyítják fel.|
+| Teljes képernyő | **Igaz** vagy **Hamis** | Ez a tulajdonság azt határozza meg, hogy a képeket meg lehet-e teljes képernyős módban jeleníteni. Teljes képernyős módban a képeket tovább is lehet nagyíthatani, ha a nagyítási képesség be van kapcsolva. Ez a funkció a Commerce 10.0.13 verzióban érhető el. |
 | Képek | Webhelykészítő médiatárból kiválasztott képek | A termékből való renderelésen kívül a képek a médiatár modulban is összeválogathatók. Ezeket a képeket a program hozzáfűzi az elérhető termékképekhez. Ez a funkció a Commerce 10.0.12 verzióban érhető el. |
 | Miniatűr tájolása | **Vízszintes** vagy **Függőleges** | Ez a tulajdonság azt határozza meg, hogy a miniatűrök képei függőleges vagy vízszintes csíkban jelenjenek-e meg. |
-| Alaptermék képének elrejtése a változónál | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, ha egy változó ki van választva, az alaptermék képei rejtve maradnak, hacsak a változónak nincsenek képei. Ez a tulajdonság nincs hatással a változókkal nem rendelkező termékekre. |
-| A média frissítése dimenzió kiválasztásakor | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, akkor a médiatárban lévő képek frissülnek, ha bármelyik dimenzió (például szín, stílus vagy méret) kiválasztásra kerül, és ha egy kép elérhető. Ez a tulajdonság segít leegyszerűsíteni a böngészést, mivel nem kell minden termékváltozat-dimenziót kiválasztani a megfelelő kép frissítéséhez. Ez a tulajdonság a **Speciális** lapon érhető el. |
-
-> [!IMPORTANT]
-> A **Média frissítése a dimenzió kiválasztásakor** tulajdonság a Commerce 10.0.21-es verziójától érhető el. Ehhez a Commerce modultárcsomag 9.31-es verziójának telepítése szükséges.
 
 A következő ábra egy olyan médiatár-modult mutat be, amelyben elérhetők a teljes képernyős és a nagyítási lehetőségek.
 
-![A példa egy olyan médiatár-modult mutat be, amelyben elérhetők a teljes képernyős és a nagyítási lehetőségek.](./media/ecommerce-media-zoom.png)
+![A példa egy olyan médiatár-modult mutat be, amelyben elérhetők a teljes képernyős és a nagyítási lehetőségek](./media/ecommerce-media-zoom.png)
 
 A következő ábra egy olyan médiatár-modult mutat be, amely válogatott képeket tartalmaz (azaz a meghatározott képek nem függnek a termékazonosítótól vagy az oldalkontextustól).
 
-![A példa egy olyan médiatár-modult mutat be, amely válogatott képeket tartalmaz.](./media/ecommerce-media-curated.PNG)
+![A példa egy olyan médiatár-modult mutat be, amely válogatott képeket tartalmaz](./media/ecommerce-media-curated.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-interakció
 
@@ -105,6 +104,3 @@ A következő lépésekkel lehet hozzáadni egy médiatár-modult egy marketing 
 [Tárolómodul](add-container-module.md)
 
 [Képek feltöltése](dam-upload-images.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

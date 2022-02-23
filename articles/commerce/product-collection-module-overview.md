@@ -2,29 +2,36 @@
 title: Termékgyűjtési modulok
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékgyűjtési moduljairól.
 author: v-chgri
-ms.date: 01/28/2021
-ms.topic: overview
+manager: annbe
+ms.date: 09/15/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984544"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412733"
 ---
-# <a name="product-collection-modules"></a>Termékgyűjtemény-modulok
+# <a name="product-collection-modules"></a>Termékgyűjtési modulok
+
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékgyűjtési moduljairól.
+
+## <a name="overview"></a>Áttekintés
 
 A termékfelfedezés elsődleges eszköz, amellyel a kiskereskedők az e-kereskedelmi weboldalakon keresztül együttműködhetnek vevőikkel. A termékgyűjtési modulok segítenek a kiskereskedőknek a vonzó vásárlási élmények létrehozásában, és intuitív vizuális kezelőfelületet létrehozásában, amely a termékgyűjtemények gyors összeállítására használható.
 
@@ -39,7 +46,7 @@ A termékgyűjtemények forrásai a következő négy típusba foglalhatók:
 
 A következő ábra bemutatja az e-kereskedelmi webhelyeken használt termékgyűjtemények különböző típusait.
 
-![Példa egy e-kereskedelmi webhely különböző típusú termékgyűjteményére.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Példa egy e-kereskedelmi webhely különböző típusú termékgyűjteményére](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Hasonló típusú termékek csoportjának megjelenítéséhez mindig a termékgyűjtési modulokat használja.
@@ -60,10 +67,6 @@ A következő táblázat leírja a Dynamics 365 Commerce különböző típusú 
 | Gyakran együtt vásárolt | Mesterséges intelligencia/gép tanulás | Ez a modul gépi tanulást használ a fogyasztói vásárlási mintáinak elemzésére és olyan cikkeket ajánl fel, amelyeket gyakran megvásárolnak az adott termékkel együtt. Ez a lista akkor jeleníti meg az aláírt felhasználó testreszabott eredményeit, ha a webhely szerzője ezt a lehetőséget választja. |
 | Szintén kedvelt           | Mesterséges intelligencia/gép tanulás | Ez a modul gépi tanulást használ a fogyasztói vásárlási mintáinak elemzésére és olyan cikkeket ajánl fel, amelyek egy adott termékhez kapcsolódnak. Ez a lista akkor jeleníti meg az aláírt felhasználó testreszabott eredményeit, ha a webhely szerzője ezt a lehetőséget választja. |
 | Önnek ajánljuk              | Mesterséges intelligencia/gép tanulás | Ez a modul gépi tanulást használ a bejelentkezett felhasználók vásárlási mintáinak elemzésére, és olyan személyre szabott javaslatokat biztosít, amelyek ezeken a vásárlási mintákon alapulnak. A vendégfelhasználó számára ez a lista összecsukott állapotban lesz. |
-
-## <a name="supported-modules"></a>Támogatott modulok 
-
-A termékgyűjtési modul támogatja a [gyorsnézet modult](quick-view-module.md), amellyel a felhasználók megtekinthetik a termékadatokat, és cikkeket adhatnak hozzá a kosárhoz egy termékgyűjtési oldalról.
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Termékgyűjtési modul hozzáadása egy kategórialaphoz
 
@@ -106,8 +109,3 @@ A következő táblázat felsorolja azokat a lista-típusokat, amelyek a **Term�
 [Vásárlásmező-modul](add-buy-box.md)
 
 [Termékajánlatok áttekintése](product-recommendations.md)
-
-[Gyorsnézeti modul](quick-view-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,32 +1,33 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources (2020. április 3.) szolgáltatásban
 description: Ez a cikk a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. április 3-i kiadásban.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 04/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-04-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0f5f52b2e6bf646f6dd53acfd2928682e84e78fb
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: 8f5d7ab996e0d27f763cd4c3c51e9a2c923d909b
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063568"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526786"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-3-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources (2020. április 3.) szolgáltatásban
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a cikk a Dynamics 365 Human Resources szolgáltatásban található új vagy módosított funkciókat írja le. A változtatások a 8.1.3111-es buildszámra vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok tájékoztatásként a Lifecycle Services (LCS) támogatási számaira vonatkoznak.
 
@@ -63,7 +64,7 @@ A következő entitások állnak rendelkezésre. Ha nem látja ezeket az entitá
  - Szabadság- és távolléti terv szintje V2
  - Szabadság- és távolléti terv V2
 
-## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>A Dataverse megoldás már elérhető a következő változtatásokkal:
+## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>A Common Data Service megoldás már elérhető a következő változtatásokkal:
 
 | Leírás | Visszajáró |
 | --- | --- |
@@ -75,18 +76,18 @@ A következő entitások állnak rendelkezésre. Ha nem látja ezeket az entitá
 | Új változó kompenzációs beállítási entitások | <ul><li>**Változó kompenzációs konstrukció típusa**</li><li>**Változó kompenzációs konstrukció**</li><li>**Kilépési szabályok**</li><li>**Változó kompenzációs konstrukció szintje**</li></ul> |
 | Új **Dolgozói naptár – foglalkoztatás** entitás | <ul><li>**Munkanaptár-entitás** hozzáadva</li></ul> |
 | Új **Bérlista szerinti beosztás részletei** entitás | <ul><li>**Bérlista szerinti beosztás** részletei</li></ul> |
-| Új **Beosztás** entitás | <ul><li>**Beosztás** hozzáadva</li></ul>Az új **Beosztás** entitást a Dataverse tartalmazza, de jelenleg a **Munkakör** vagy **Munka** entitások nem hivatkoznak rá. |
+| Új **Beosztás** entitás | <ul><li>**Beosztás** hozzáadva</li></ul>Az új **Beosztás** entitást a Common Data Service tartalmazza, de jelenleg a **Munkakör** vagy **Munka** entitások nem hivatkoznak rá. |
 
 > [!NOTE]
-> A beosztások és a foglalkoztatás pénzügyi dimenziói egyirányú integrációt biztosítanak a Human Resources és a Dataverse közötti frissítésekhez. A pénzügyi dimenziók frissítései jelenleg nem szinkronizálnak a Dataverse és a Human Resources között.
+> A beosztások és a foglalkoztatás pénzügyi dimenziói egyirányú integrációt biztosítanak a Human Resources és a Common Data Service közötti frissítésekhez. A pénzügyi dimenziók frissítései jelenleg nem szinkronizálnak a Common Data Service és a Human Resources között.
 
-Az elkövetkezendő hetekben ezek az entitásmódosítások minden környezetben elérhetők lesznek. A legújabb Dataverse megoldás manuális telepítése a Human Resourcesbe:
+Az elkövetkezendő hetekben ezek az entitásmódosítások minden környezetben elérhetők lesznek. A legújabb Common Data Service megoldás manuális telepítése a Human Resourcesbe:
 
 1.  Ugorjon a [Power Platform Adminisztrációs központba](https://admin.powerplatform.microsoft.com).
 
 2.  Válassza a **Környezetek** lehetőséget.
 
-3.  Keresse meg a frissíteni kívánt környezetet. A környezetnek meg kell egyeznie a **Környezet nevével** a **Dataverse információk** szakaszban a Human Resources **Névjegy** képernyőjén.
+3.  Keresse meg a frissíteni kívánt környezetet. A környezetnek meg kell egyeznie a **Környezet nevével** a **Common Data Service információk** szakaszban a Human Resources **Névjegy** képernyőjén.
 
 4.  A környezet adatainak megtekintéséhez válassza ki a környezetet.
 
@@ -133,8 +134,6 @@ Ha egy, a SharePoint-ban tárolt dokumentum előnézete nem működik, próbálj
 ## <a name="see-also"></a>Lásd még
 
 [Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

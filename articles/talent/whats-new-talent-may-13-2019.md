@@ -82,6 +82,3 @@ Előfordulhat, hogy a szervezetek okkódok beállítását kérik, bizonyos táv
 ### <a name="provide-a-leave-and-absence-transaction-list-for-hr"></a>Egy szabadság és a távolléti tranzakciólista átadása a HR-nek
 
 Az alkalmazotti szabadidő követésének képessége és a szabadidő kiszámításának ismerete azon túl. hogy segít a HR-nek alkalmazott kérdések megválaszolásában, pontos szabadságmegítéléseket biztosít a munkavállalóknak. A HR új betekintést kap a tranzakciókhoz (támogatások, könyvelések, kiigazítások és kérelmek) így a HR munkatársai láthatják a távollétegyenlegek okait.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

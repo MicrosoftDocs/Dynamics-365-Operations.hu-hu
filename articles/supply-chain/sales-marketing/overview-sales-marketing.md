@@ -2,26 +2,27 @@
 title: Értékesítés és marketing – áttekintés
 description: Az értékesítés és marketing segítségével beszerzése, tárolhatók és használhatók a különböző típusú adatokat az értékesítési folyamat. Ezt az adatot tartalmaz, az eredeti értékesítési kezdeményezés jövőbeli intézkedést és kiegészítő értékesítési.
 author: kfend
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "92303"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 92303
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 021ff1ff24e20516b7a8ac1ce206b76aa8e91a2a
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: f03db7f830d0b7efa4ba32b9e194a4e3a65266e8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982534"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429314"
 ---
 # <a name="sales-and-marketing-overview"></a>Értékesítés és marketing – áttekintés
 
@@ -29,20 +30,21 @@ ms.locfileid: "7982534"
 
 Az értékesítés és marketing segítségével beszerzése, tárolhatók és használhatók a különböző típusú adatokat az értékesítési folyamat. Ezt az adatot tartalmaz, az eredeti értékesítési kezdeményezés jövőbeli intézkedést és kiegészítő értékesítési.
 
-## <a name="marketing"></a>Marketing
+<a name="marketing"></a>Marketing
+---------
 
-Marketing kampányok és tevékenységek segítségével megtalálhatja a potenciális ügyfeleket, valamint kapcsolatokat építhet ki velük, így a kezdeti interakciók üzleti kapcsolatokká fejlődhetnek. A következő folyamatábra a marketinghez kapcsolódó üzleti folyamatokat ábrázolja. [![Marketinghez kapcsolódó üzleti folyamatok.](./media/marketing01.jpg)](./media/marketing01.jpg)
+Marketing kampányok és tevékenységek segítségével megtalálhatja a potenciális ügyfeleket, valamint kapcsolatokat építhet ki velük, így a kezdeti interakciók üzleti kapcsolatokká fejlődhetnek. A következő folyamatábra a marketinghez kapcsolódó üzleti folyamatokat ábrázolja. [![Marketinghez kapcsolódó üzleti folyamatok](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Kapcsolatok
 
-Az értékesítés és marketing folyamán a potenciális ügyfelekkel való kapcsolat kezdeti kialakítása számos módon lehetséges. Előfordulhat például, hogy egy kereskedelmi bemutatón talál rá a leendő vevőire, vagy az is lehetséges, hogy a vállalat által indított tömeges levélkampány után válnak a vevők érdeklődőkké. Nagyon fontos megérteni egy adott fél entitásváltozásainak folyamatát, amelynek végén az illető fél vevővé válik. Az alábbi ábra az entitáskapcsolatok alakulását mutatja egy potenciális vevő tényleges vevővé válása során. [![SalesandMarketing01.](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
+Az értékesítés és marketing folyamán a potenciális ügyfelekkel való kapcsolat kezdeti kialakítása számos módon lehetséges. Előfordulhat például, hogy egy kereskedelmi bemutatón talál rá a leendő vevőire, vagy az is lehetséges, hogy a vállalat által indított tömeges levélkampány után válnak a vevők érdeklődőkké. Nagyon fontos megérteni egy adott fél entitásváltozásainak folyamatát, amelynek végén az illető fél vevővé válik. Az alábbi ábra az entitáskapcsolatok alakulását mutatja egy potenciális vevő tényleges vevővé válása során. [![SalesandMarketing01](./media/salesandmarketing01.jpg)](./media/salesandmarketing01.jpg)
 
 ### <a name="campaigns"></a>Kampányok
 
 A kampányok az Ön által részvételre kiválasztott potenciális vevőkhöz, érdeklődőkhöz, lehetőségekhez, valamint vevőkhöz tartozó kapcsolatokat célozzák. A Supply Chain Management rendszerben a vevői potenciál maximalizálása érdekében többféle kampányt is létrehozhat, többek között telemarketing-, levél- és e-mail-kampányokat. A kampány előrehaladása során, pozitív visszajelzések beérkezése esetén megkezdheti az értékesítési folyamatot a pozitív választ adó ügyfelekkel.
 
 ## <a name="sales"></a>Értékesítés
-Az értékesítési funkció segítségével árajánlatokat, új és meglévő ügyfeleknek történő értéknövelt és párhuzamos értékesítéseket, továbbá értékesítési rendeléseket hozhat létre, valamint értékesítési számlákat készíthet a vevők számára. A következő folyamatábra az értékesítéshez kapcsolódó üzleti folyamatokat ábrázolja. [![Értékesítéshez kapcsolódó üzleti folyamatok.](./media/sales01.jpg)](./media/sales01.jpg)
+Az értékesítési funkció segítségével árajánlatokat, új és meglévő ügyfeleknek történő értéknövelt és párhuzamos értékesítéseket, továbbá értékesítési rendeléseket hozhat létre, valamint értékesítési számlákat készíthet a vevők számára. A következő folyamatábra az értékesítéshez kapcsolódó üzleti folyamatokat ábrázolja. [![Értékesítéshez kapcsolódó üzleti folyamatok](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Értékesítési ajánlatok
 
@@ -123,6 +125,3 @@ A pro forma számla olyan számla, amely a tényleges számla mennyiségének be
 #### <a name="blogs"></a>Blogok
 
 Az értékesítési folyamat áttekintése megtalálható ebben a posztban: [Az értékesítés működése a Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations) rendszerben.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

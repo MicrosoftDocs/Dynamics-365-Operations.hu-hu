@@ -2,30 +2,35 @@
 title: Dynamics 365 Commerce értékelési környezet konfigurálása
 description: Ez a témakör bemutatja, hogyan lehet konfigurálni egy Microsoft Dynamics 365 Commerce értékelési környezetet a létesítést követően.
 author: psimolin
-ms.date: 12/10/2021
+manager: annbe
+ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
-ms.translationtype: MT
+ms.openlocfilehash: 6a1ae960f0f530104af7bdea9a8fcb78b01571f5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913727"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412755"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet konfigurálása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan lehet konfigurálni egy Microsoft Dynamics 365 Commerce értékelési környezetet a létesítést követően.
+
+## <a name="overview"></a>Áttekintés
 
 A jelen témakörben ismertetett eljárásokat csak a Commerce értékelési környezet létesítését követően hajtsa végre. A Commerce értékelési környezetének létesítésével kapcsolatos információkért lásd: [Commerce értékelési környezet kiépítése](provisioning-guide.md).
 
@@ -39,7 +44,6 @@ Miután a Commerce értékelési környezet teljes körűen kiépítésre kerül
 1. A listából válassza ki a környezetét.
 1. Kattintson a jobb oldalon található környezeti információk **Bejelentkezés a környezetbe** elemére. Megnyílik a Commerce központ modul.
 1. Győződjön meg róla , hogy az **USRT** jogi személy van kiválasztva a jobb felső sarokban.
-2. Menjen a Commerce >, és ellenőrizze, hogy van-e **a** **ProductSearch.UseAzureSearch paraméter igaz beállítású** **bejegyzése**. Ha hiányzik ez a bejegyzés, hozzáadhatja ezt a bejegyzést, és teljes szinkronizálást futtathat **> az eCommerce webhelyhez társított** Commerce Scale egység számára.
 
 A Commerce központ alkalmazásban történő létesítés utáni tevékenységek során győződjön meg arról, hogy a **USRT** jogi személy mindig be van jelölve.
 
@@ -107,12 +111,6 @@ A feladatok engedélyezéséhez a Kereskedelemben kövesse az alábbi lépéseke
     1. A Művelet panel **Kötegelt feladat** lapján válassza az **Állapot módosítása** lehetőséget.
     1. Válassza a **Megszakítás**, majd az **OK** elemet.
 
-1. Ha a feladat állapota **Visszatartva, hajtsa végre a következő** lépéseket:
-
-    1. Válassza ki a rekordot.
-    1. A Művelet panel **Kötegelt feladat** lapján válassza az **Állapot módosítása** lehetőséget.
-    1. Válassza a **Várakozás** parancsot, majd válassza az **OK** elemet.
-
 Lehetőség van arra is, hogy a következő feladatokhoz egy (1) percet is be lehessen állítani az ismétlődési intervallumhoz:
 
 * Kiskereskedelmi rendelés e-mail értesítésének feldolgozása feladat
@@ -135,7 +133,7 @@ Ha teljes adatszinkronizálást szeretne futtatni a Kereskedelemben, kövesse az
 Teszttranzakciók végrehajtásához a weboldalon használhatja a következő teszt hitelkártyaadatokat:
 
 - **Kártyaszám:** 4111-1111-1111-1111
-- **Lejárat dátuma:** 10/30
+- **Lejárat dátuma:** 10/20
 - **Kártyaellenőrző kód (CVV):** 737
 
 > [!IMPORTANT]
@@ -146,9 +144,6 @@ Teszttranzakciók végrehajtásához a weboldalon használhatja a következő te
 A létesítési és a konfigurálási lépések befejezését követően készen áll arra, hogy elkezdje az értékelési környezet használatát. Használja a Commerce webhelyépítő eszköz URL-címét a szerzői élményhez lépéshez. Használja a Commerce webhelykezelő eszköz URL-címét a kiskereskedelmi ügyfél webhely élményhez lépéshez.
 
 A Commerce értékelési környezete nem kötelező funkcióinak konfigurálásához lásd: [Commerce értékelési környezete nem kötelező funkcióinak konfigurálása](cpe-optional-features.md).
-
-> [!NOTE]
-> A kereskedelmi értékelő környezetek egy előre feltöltött Azure Active Directory (Azure AD) üzleti-fogyasztói (B2C) bérlőt tartalmaznak bemutató célokra. A saját Azure AD B2C bérlő konfigurálása nem szükséges az értékelő környezetek esetében. Ha azonban az értékelő környezetet úgy konfigurálja, hogy a saját Azure AD B2C bérlőjét használja, kérjük, győződjön meg róla, hogy az Azure Portálon keresztül hozzáadja a ``https://login.commerce.dynamics.com/_msdyn365/authresp`` címet válasz URL-ként a Azure AD B2C alkalmazásban.
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -162,15 +157,10 @@ A Commerce értékelési környezete nem kötelező funkcióinak konfigurálás�
 
 [Dynamics 365 Commerce értékelési környezet GYIK](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portál](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webhely](https://aka.ms/Dynamics365CommerceWebsite)
-
-[B2C-bérlő beállítása a Commerce alkalmazásban](set-up-B2C-tenant.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -151,6 +151,3 @@ A frissített leképezéseknek a következő képek szerint kell kinézniük.
 ![Dolgozók a munkához feladat](./media/WorkerMapping.png)
 
 ![Nem mezőtranszformáció](./media/WorkerTransform.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

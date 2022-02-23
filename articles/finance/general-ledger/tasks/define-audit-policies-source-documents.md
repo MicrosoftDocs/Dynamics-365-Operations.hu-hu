@@ -2,9 +2,11 @@
 title: Naplózási házirendek meghatározása a forrásbizonylatok számára
 description: Ez a témakör bemutatja, hogyan állíthatók be és működtethetők könyvvizsgálati irányelvszabályok.
 author: panolte
+manager: AnnBe
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPage, SysPolicy, AuditPolicyRule, SysQueryForm, SysQueryFieldLookUp, AuditPolicyDateSelection, AuditPolicyAdditionalOption, BatchJob, CaseDetail
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0779589a3583909984e35014a2ec0e86455cd30a3833110556f095241e7172ca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e020a9e82ff18055e40e3e0ddc7bbed1068c886c
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722671"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021429"
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Naplózási házirendek meghatározása a forrásbizonylatok számára
 
@@ -39,9 +41,9 @@ Ez a témakör bemutatja, hogyan állíthatók be és működtethetők könyvviz
 11. Válassza az **Új** lehetőséget.
 12. Írjon be egy értéket a **Név** mezőbe.
 13. Bontsa ki az **Irányelv szervezetei** szakaszt.
-14. A fán válassza ki a **Contoso Entertainment System USA**, majd a **Hozzáadás** lehetőséget.
-15. A fán válassza ki a **Contoso Consulting USA**, majd a **Hozzáadás** lehetőséget.
-16. A fán válassza ki a **Contoso Retail USA**, majd a **Hozzáadás** lehetőséget.
+14. A fán válassza ki a **Contoso Szórakozás rendszer USA** majd a **Hozzáadás** lehetőséget.
+15. A fán válassza ki a **Contoso Consulting USA** majd a **Hozzáadás** lehetőséget.
+16. A fán válassza ki a **Contoso Retail USA** majd a **Hozzáadás** lehetőséget.
 17. Csukja be az **Irányelv szervezetei** szakaszt.
 18. Bontsa ki az **Irányelvszabályok** szakaszt.
 19. A listában keresse meg és válassza ki a korábban létrehozott Irányelvszabályt.
@@ -85,6 +87,3 @@ Ez a témakör bemutatja, hogyan állíthatók be és működtethetők könyvviz
 57. Bontsa ki a **Társítások** szakaszt.
 58. Keresse meg és jelölje ki a kívánt rekordot a listán.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

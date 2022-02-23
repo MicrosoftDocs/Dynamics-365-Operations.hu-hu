@@ -2,9 +2,11 @@
 title: A Modern POS (MPOS) és a Cloud POS közötti választás
 description: Ez a témakör bemutatja a Modern POS és a Cloud POS közötti alapvető eltéréseket. Emellett azokat a különböző tényezőket is ismerteti, amelyeket a Dynamics 365 Commerce megoldást telepítő kiskereskedőknek figyelembe kell venniük, hogy a legjobban választhassák meg a követelményeket.
 author: jblucher
+manager: AnnBe
 ms.date: 10/13/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -15,12 +17,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-10-12
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 3e2987351e327b5cca27a6ea992a0550cc21d028cecf4330d374768f13711829
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 330646da075e3fc8c0c3f7fe54b790ed42615395
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714759"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970103"
 ---
 # <a name="choose-between-modern-pos-mpos-and-cloud-pos"></a>A Modern POS (MPOS) és a Cloud POS közötti választás
 
@@ -57,7 +59,7 @@ Annak ellenére, hogy az MPOS és a CPOS nagyjából azonos, vannak fontos elté
 MPOS Windows, iOS vagy Android eszközön egy olyan alkalmazás, amelynek a csomagolása, telepítése és karbantartása az eszközön történik.
 
 - **Windows** – Az MPOS for Windows alkalmazás tartalmazza a teljes alkalmazáskódot és a beágyazott kiskereskedelmi futtatókörnyezetet (CRT). 
-- **iOS/Android** – Ezeken a rendszereken az alkalmazás a CPOS-alkalmazáskód üzemeltetőjeként viselkedik. Ez azt jelenti, hogy az alkalmazás kódja a CPOS kiszolgálóból származik a Microsoft Azure vagy a Commerce Scale Unit rendszerben. További tudnivalókért lásd: [Commerce Scale Unit áttekintése](dev-itpro/retail-store-system-begin.md).
+- **iOS/Android** – Ezeken a rendszereken az alkalmazás a CPOS-alkalmazáskód üzemeltetőjeként viselkedik. Ez azt jelenti, hogy az alkalmazás kódja a CPOS kiszolgálóból származik a Microsoft Azure vagy a Commerce Scale Unit rendszerben. További tudnivalókért lásd: [Commerce Scale Unit áttekintése](https://docs.microsoft.com/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin).
 
 #### <a name="cpos"></a>CPOS
 
@@ -79,11 +81,11 @@ A Commerce Scale Unit egy olyan összetevő, amely a CRT-t tárolja. A CRT tarta
 
 #### <a name="offline-mode"></a>Offline mód
 
-Az MPOS for Windows támogatja a kapcsolat nélküli módot. Kapcsolat nélküli módban a pénztár továbbra is képes az eladások feldolgozására, még akkor is, ha megszakadt a kapcsolata a Commerce Scale Unittal. A kapcsolat visszaállításakor szinkronizálható a csatorna-adatbázissal. Az MPOS a saját beágyazott CRT-példányát, valamint ideiglenesen saját helyi adatforrását (offline SQL Server adatbázis) használja. Az offline funkciókkal kapcsolatban további tudnivalókat lásd: [A POS pénztár kapcsolat nélküli üzemelése](pos-offline-functionality.md).
+Az MPOS for Windows támogatja a kapcsolat nélküli módot. Kapcsolat nélküli módban a pénztár továbbra is képes az eladások feldolgozására, még akkor is, ha megszakadt a kapcsolata a Commerce Scale Unittal. A kapcsolat visszaállításakor szinkronizálható a csatorna-adatbázissal. Az MPOS a saját beágyazott CRT-példányát, valamint ideiglenesen saját helyi adatforrását (offline SQL Server adatbázis) használja. Az offline funkciókkal kapcsolatban további tudnivalókat lásd: [A POS pénztár kapcsolat nélküli üzemelése](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-offline-functionality).
 
 ### <a name="pos-peripheralhardware-considerations"></a>Pénztár: periféria/hardver szempontok
 
-A kiskereskedőknek azt is figyelembe kell venniük, hogyan fér hozzá a pénztár az olyan eszközökhöz és perifériákhoz, mint a nyomtatók, a pénztárfiókok és a fizetési terminálok. Csak az MPOS for Windows támogatja a közvetlen kommunikációt ezekkel az eszközökkel. Az MPOS Windows Phone, iOS és Android eszközökhöz, valamint a Cloud POS hardverállomást igényel ezeknek az eszközöknek az eléréséhez. A hardverállomás hozzárendelhető egy pénztárgéphez, de az üzletben található pénztárgépek közösen is osztozhatnak rajta. A hardverállomásokkal kapcsolatos további tudnivalókért lásd: [Kiskereskedelmi hardverállomás konfigurálása és telepítése](retail-hardware-station-configuration-installation.md).
+A kiskereskedőknek azt is figyelembe kell venniük, hogyan fér hozzá a pénztár az olyan eszközökhöz és perifériákhoz, mint a nyomtatók, a pénztárfiókok és a fizetési terminálok. Csak az MPOS for Windows támogatja a közvetlen kommunikációt ezekkel az eszközökkel. Az MPOS Windows Phone, iOS és Android eszközökhöz, valamint a Cloud POS hardverállomást igényel ezeknek az eszközöknek az eléréséhez. A hardverállomás hozzárendelhető egy pénztárgéphez, de az üzletben található pénztárgépek közösen is osztozhatnak rajta. A hardverállomásokkal kapcsolatos további tudnivalókért lásd: [Kiskereskedelmi hardverállomás konfigurálása és telepítése](https://docs.microsoft.com/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation).
 
 ## <a name="implementation-considerations"></a>Kivitelezési szempontok
 
@@ -100,8 +102,5 @@ Az üzletekben való pénztártelepítés tervezésekor vegye figyelembe a köve
     Ez a két lehetőség nem zárja ki kölcsönösen egymást. A legmegbízhatóbb topológia érdekében a kiskereskedők telepíthetnek egy helyi RSSU-t az internetkapcsolat vagy az Azure rendelkezésre állásától való függőség csökkentése érdekében, továbbá telepíthetnek olyan pénztárgépeket, amelyeken engedélyezve van a kapcsolat nélküli mód arra az esetre, ha probléma lépne fel a helyi kiszolgálóval vagy a hálózattal.
 
 - **Hardvereszközök/perifériák** – A Retail POS rendszer egyik fontos szempontja az, hogy képes pénztárperifériák, például nyomtatók, pénztárfiókok és fizetési terminálok használatára. Annak ellenére, hogy a rendelkezésre álló pénztáropciók mindegyike képes perifériák használatára, csak az MPOS for Windows támogatja őket közvetlenül. A többi alkalmazáshoz egy vagy több hardverállomás szükség. Annak ellenére, hogy ez a megközelítés rugalmasságot nyújt, további összetevőket kell telepíteni, konfigurálni és karbantartani.
-- **Rendszerkövetelmények** – A pénztáralkalmazás rendszerkövetelményei eltérőek lehetnek. Ügyeljen a legfrissebb információk ellenőrzésére a kiválasztás elvégzése előtt. Például: a CPOS böngészőben fut, ezért operációs rendszerek szélesebb körét támogatja. A rendszerkövetelményekkel kapcsolatos további tudnivalókat lásd: [Felhőtelepítések rendszerkövetelményei](../fin-ops-core/fin-ops/get-started/system-requirements.md).
+- **Rendszerkövetelmények** – A pénztáralkalmazás rendszerkövetelményei eltérőek lehetnek. Ügyeljen a legfrissebb információk ellenőrzésére a kiválasztás elvégzése előtt. Például: a CPOS böngészőben fut, ezért operációs rendszerek szélesebb körét támogatja. A rendszerkövetelményekkel kapcsolatos további tudnivalókat lásd: [Felhőtelepítések rendszerkövetelményei](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/system-requirements).
 - **Telepítés és karbantartás** – A telepítési és karbantartási követelmények összetettsége változhat az alkalmazással és a telepítéssel kapcsolatos döntésektől függően. Például a felhő által szolgáltatott CPOS telepítéshez nem kell minden eszközön telepítést és frissítést végezni. Ezért ez a megközelítés jelentősen csökkenti a bonyolultságot és a költséget. Azonban ha telepíti az MPOS-t minden pénztárgépre, engedélyezi a kapcsolat nélküli módot, valamint megosztott hardverállomásokat is telepít, nagy mértékben növeli a kezelendő végpontok számát.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

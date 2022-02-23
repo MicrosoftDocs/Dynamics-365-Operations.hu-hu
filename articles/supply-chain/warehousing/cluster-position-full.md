@@ -2,23 +2,26 @@
 title: Fürtpozíció tele
 description: Ez a témakör a Fürtpozíció tele funkcióról nyújt tájékoztatást. Ez a funkció a munkamegszakítási szabályok szigorúbb végrehajtását teszi lehetővé a fürtkitárolás használata esetén, mivel nagyobb hibahatárt tesz lehetővé a tárolók és rakományok térfogatkorlátai tekintetében.
 author: Mirzaab
+manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: a23168b550bfa2bb6a51c8df5d0a558431c23ebb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 3610725815b35609ee98b69b367db2945bbf166a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574257"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429878"
 ---
 # <a name="cluster-position-full"></a>Fürtpozíció tele
 
@@ -211,7 +214,7 @@ Két munkaazonosítót kellett létrehozni, amelyek mindegyikében két kitárol
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Mobileszköz-folyamat végrehajtása – A termékre vonatkozó munka-visszaigazolás beállítása
 
-1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a Raktárkezelés mobilalkalmazásba.
+1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a raktár alkalmazásba.
 1. Menjen a **Kimenő \> Fürtkitárolás létrehozása** helyre.
 
     Megjelenik a **Feladat: Munka hozzárendelése a fürthöz** lap.
@@ -273,6 +276,3 @@ Ebben a helyzetben a fürt kitárolása kész, és a felhasználó azt az utasí
     Megjelenik a „Fürt befejezve” üzenet.
 
 Ezután az **Értékesítési kitárolás** menüelemmel kitárolhatja a fennmaradó mennyiséget. Ezután az **Értékesítési rakodása** menüelemmel mozgathatja a cikkeket az előkészítési helyről a rakodási helyre.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

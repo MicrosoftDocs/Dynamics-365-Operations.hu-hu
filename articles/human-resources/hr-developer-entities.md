@@ -1,13 +1,16 @@
 ---
-title: Dataverse-táblák
-description: A Microsoft Dynamics 365 Human Resources a Dataverse használatával biztosítja a bővíthetőségi és az integrációs eseteket.
+title: Common Data Service-entitások
+description: A Microsoft Dynamics 365 Human Resources a Common Data Service használatával biztosítja a bővíthetőségi és az integrációs eseteket.
 author: andreabichsel
-ms.date: 01/25/2021
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,30 +18,26 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 6774fad3543d80d04faacf5960c8037f1734f084
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 988fa0b6d39a49b973626a8a0abe83c546f42297
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066825"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4530006"
 ---
-# <a name="dataverse-tables"></a>Dataverse-táblák
+# <a name="common-data-service-entities"></a>Common Data Service-entitások
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
+A Microsoft Dynamics 365 Human Resources a Common Data Service használatával biztosítja a bővíthetőségi és az integrációs eseteket.
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+A Common Data Service eltávolításával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Mi a Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro).
 
-A Microsoft Dynamics 365 Human Resources a Dataverse használatával biztosítja a bővíthetőségi és az integrációs eseteket.
+A Human Resources rendszerhez a következő erőforrások állnak rendelkezésére a Common Data Service szolgáltatásban.
 
-> [!NOTE]
-> A Human Resources entitások Dataverse-tábláknak felelnek meg. A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
+## <a name="benefit-entities"></a>Juttatási egységek
 
-A következő, Human Resources-entitásokon alapuló Dataverse-táblák érhetők el.
-
-## <a name="benefit-tables"></a>Juttatási táblák
-
-| Név | Tábla |
+| Név | Entitás |
 | --- | --- |
 | Juttatás számítási gyakorisága | cdm_benefitcalculationfrequency |
 | Fizetési időszak juttatásszámítási gyakorisága | cdm_benefitcalculationfrequencypayperiod |
@@ -48,9 +47,9 @@ A következő, Human Resources-entitásokon alapuló Dataverse-táblák érhető
 | Juttatási terv | cdm_benefitplan (egyéni mezőtámogatáshoz nem engedélyezett) |
 | Juttatás típusa | cdm_benefittype |
 
-## <a name="business-process-tasks-tables"></a>Üzleti folyamat feladatok táblái
+## <a name="business-process-tasks-entities"></a>Üzleti folyamat feladatentitásai
 
-| Név | Tábla |
+| Név | Entitás |
 | --- | --- |
 | Üzletifolyamat-naptár | cdm_businessprocesscalendar |
 | Üzletifolyamat-csoport hozzárendelése | cdm_businessprocessgroupassignment |
@@ -59,11 +58,11 @@ A következő, Human Resources-entitásokon alapuló Dataverse-táblák érhető
 | Ellenőrzőlista-sablon fejléce | cdm_businessprocesstemplateheader |
 | Ellenőrzőlistasablon-feladat | cdm_businessprocesstemplatetask |
 
-## <a name="compensation-tables"></a>Kompenzációs táblák
+## <a name="compensation-entities"></a>Kompenzációs entitások
 
-| Név | Tábla |
+| Név | Entitás |
 | --- | --- |
-| Kompenzációs fix terv | cdm_compensationfixedplan |
+| Fix kompenzációs konstrukció | cdm_compensationfixedplan |
 | Kompenzációs rács | cdm_compensationgrid |
 | Kompenzációs szint | cdm_compensationlevel |
 | Kompenzáció – fizetés gyakorisága | cdm_compensationpayfrequency |
@@ -78,12 +77,12 @@ A következő, Human Resources-entitásokon alapuló Dataverse-táblák érhető
 | Átruházási szabály | cdm_vestingrule |
 | Dolgozói fix kompenzáció | cdm_workerfixedcompensation |
 
-## <a name="organization-tables"></a>Szervezeti táblák
+## <a name="organization-entities"></a>Szervezeti entitások
 
-| Név | Tábla |
+| Név | Entitás |
 | --- | --- |
-| Részleg | cdm_department |
-| Alkalmazás | cdm_employment |
+| Részleg  | cdm_department |
+| Foglalkoztatás | cdm_employment |
 | Cég | cdm_company |
 | Állás | cdm_job |
 | Beosztás funkciója | cdm_jobfunction |
@@ -96,23 +95,23 @@ A következő, Human Resources-entitásokon alapuló Dataverse-táblák érhető
 | Megszólítás | cdm_title |
 
 > [!NOTE]
-> A **Beosztás típusa**, **Beosztáshoz rendelt dolgozó** és **Foglalkoztatás** pénzügyi dimenziói egyirányú integrációt biztosítanak a Dataverse felé. A pénzügyi dimenziók frissítései jelenleg nem szinkronizálnak a Dataverse szolgáltatásból Human Resources alkalmazásba. 
+> A **Beosztás típusa**, **Beosztáshoz rendelt dolgozó** és **Foglalkoztatás** pénzügyi dimenziói egyirányú integrációt biztosítanak a Common Data Service felé. A pénzügyi dimenziók frissítései jelenleg nem szinkronizálnak a Common Data Service szolgáltatásból Human Resources alkalmazásba. 
 
-## <a name="leave-and-absence-tables"></a>Szabadság és távollét táblák
+## <a name="leave-and-absence-entities"></a>Szabadság- és távollétentitások
 
-| Név | Tábla |
+| Név | Entitás |
 | --- | --- |
 | Szabadsági banki tranzakció | cdm_leavebanktransaction |
-| Szabadságbejegyzés | cdm_leaveenrollment |
+| Szabadság regisztrációja | cdm_leaveenrollment |
 | Szabadságterv | cdm_leaveplan |
 | Szabadságkérelem | cdm_leaverequest |
 | Szabadságkérelem részletes adatai | cdm_leaverequestdetail |
 | Szabadság típusa | cdm_leavetype |
 | Szabadságtípus okkódja | cdm_leavetypereasoncode |
 
-## <a name="payroll-tables"></a>Bérlistatáblák
+## <a name="payroll-entities"></a>Bérlistaentitás
 
-| Név | Tábla |
+| Név | Entitás |
 | --- | --- |
 | Fizetési ciklus | cdm_paycycle |
 | Fizetési időszak | cdm_payperiod |
@@ -120,12 +119,12 @@ A következő, Human Resources-entitásokon alapuló Dataverse-táblák érhető
 | Bankszámla kifizetései | cdm_bankaccountdisbursement |
 | Adórégió | cdm_taxregion |
 
-## <a name="worker-tables"></a>Dolgozói táblák
+## <a name="worker-entities"></a>Dolgozói entitások
 
-| Név | Tábla |
+| Név | Entitás |
 | --- | --- |
 | Dolgozó | cdm_worker |
-| Dolgozói cím | cdm_workeraddress |
+| Dolgozó címe | cdm_workeraddress |
 | Dolgozói személyes adat | cdm_workerpersonaldetail |
 | Dolgozó személyazonosító száma | cdm_workerpersonidentificationnumber |
 | Dolgozó személyazonosító típusa | cdm_workerpersonidentificationtype |
@@ -136,22 +135,22 @@ A következő, Human Resources-entitásokon alapuló Dataverse-táblák érhető
 | Munkanaptár időintervalluma | cdm_workcalendartimeinterval (egyéni mezőtámogatáshoz nem engedélyezett) |
 | Dolgozói bankszámla | cdm_workerbankaccount |
 
-## <a name="worker-setup-tables"></a>Dolgozóbeállítási táblák
+## <a name="worker-setup-entities"></a>Dolgozó beállítási entitásai
 
-| Név | Tábla |
+| Név | Entitás |
 | --- | --- |
 | Veteránállapot | cdm_veteranstatus |
 | Etnikum | cdm_ethnicorigin |
 | Okkód | cdm_reasoncode |
-| Személyazonosító-kibocsátó hivatal | cdm_personidentificationissuingagency |
+| Személyazonosító kiállító hivatala | cdm_personidentificationissuingagency |
 
-## <a name="competency-tables"></a>Kompetenciatáblák
+## <a name="competency-entities"></a>Kompetenciaentitások
 
-| Név | Tábla |
+| Név | Entitás |
 | --- | --- |
 | Szakértelemtípus | cdm_skilltype |
 
-## <a name="table-relationship-models"></a>Táblakapcsolati modellek
+## <a name="entity-relationship-models"></a>Entitáskapcsolati modellek
 
 ### <a name="worker"></a>Dolgozó
 
@@ -159,32 +158,25 @@ A következő, Human Resources-entitásokon alapuló Dataverse-táblák érhető
 
 ### <a name="job-and-job-position"></a>Feladat és feladat beosztása
 
-![Feladat és feladat beosztása.](./media/HCMCommon-job-and-job-position-entity-diagram.png)
+![Feladat és feladat beosztása](./media/HCMCommon-job-and-job-position-entity-diagram.png)
 
-### <a name="benefits"></a>Juttatások
+### <a name="benefits"></a>Előnyök
 
-![Juttatások.](./media/HCMCommon-benefits-entity-diagram.png)
+![Előnyök](./media/HCMCommon-benefits-entity-diagram.png)
 
 ### <a name="compensation"></a>Kompenzáció
 
-![Kompenzáció.](./media/HCMCommon-compensation-entity-diagram.png)
+![Kompenzáció](./media/HCMCommon-compensation-entity-diagram.png)
 
-### <a name="leave"></a>Szabadság
+### <a name="leave"></a>Kilépés
 
-![Szabadság.](./media/HCMCommon-leave-entity-diagram.png)
+![Kilépés](./media/HCMCommon-leave-entity-diagram.png)
 
 ### <a name="work-calendar"></a>Munkanaptár
 
-![Munkanaptár.](./media/HCMCommon-work-calendar-entity-diagram.png)
+![Munkanaptár](./media/HCMCommon-work-calendar-entity-diagram.png)
 
 ## <a name="see-also"></a>Lásd még
 
-[Adatintegrációs technológia kiválasztása](hr-admin-integration-choose-technology.md)<br>
-[A Dataverse-integráció konfigurálása](hr-admin-integration-common-data-service.md)<br>
-[Dataverse virtuális táblák konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[A Human Resources számára elérhető virtuális táblák – GYIK](hr-admin-virtual-entity-faq.md)<br>
-[Mi az a Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)<br>
-[Terminológia frissítései](/powerapps/maker/data-platform/data-platform-intro#terminology-updates)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Válasszon ki egy adatintegrációs technológiát](hr-admin-integration-choose-technology.md)</br>
+[A Common Data Service-integráció konfigurálása](hr-admin-integration-common-data-service.md)

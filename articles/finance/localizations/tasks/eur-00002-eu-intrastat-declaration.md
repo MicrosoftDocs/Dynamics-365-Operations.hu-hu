@@ -2,23 +2,26 @@
 title: EUR 00002 Az EU Intrastat nyilatkozat létrehozása
 description: Ez az eljárás bemutatja azokat a lépéseket, amelyeket el kell végezni az Intrastat nyilatkozat elektronikus fájlformátumba történő exportálásához és egy Excel fájlformátum bevallási dokumentumainak áttekintéséhez.
 author: Anasyash
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, IntrastatParameters, IntrastatCommodityLookup, IntrastatCompressParameters, Intrastat, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 57d7fcfeed3b630b2fa1f8ada4e116c230ba5bf0d8a94deeb5f59b6514d8a3c3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e2aba5caaaf0fbee511e1a293b09fa8301bb6831
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760611"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408051"
 ---
 # <a name="eur-00002-generate-an-eu-intrastat-declaration"></a>EUR 00002 Az EU Intrastat nyilatkozat létrehozása
 
@@ -55,7 +58,7 @@ Ez az eljárás a DEMF bemutatócég segítségével lett létrehozva.
     * Adja meg a kerekítési pontosságot, például adja meg a „0,01” értéket.  
 7. Adjon meg egy számot Az összeg tizedesjegyeinek száma mezőben.
     * Adja meg például a „2” értéket.  
-8. Válasszon ki egy lehetőséget a Kerekítés 1 kg alatt mezőben.
+8. Válasszon ki egy lehetőséget a Kerekítés 1 kg alatt mezőben.
     * Válassza ki például a „Felkerekítés 1 kg-ra” lehetőséget.  
 9. A Kerekítési szabályok mezőben adjon meg egy számot.
     * Adja meg példáié az „1” a súly kerekítése az egész számhoz.  
@@ -111,6 +114,3 @@ Ez az eljárás a DEMF bemutatócég segítségével lett létrehozva.
     * Válassza ki például a „Feladások” lehetőséget.  
 27. Kattintson az OK gombra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

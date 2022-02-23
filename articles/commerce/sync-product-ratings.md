@@ -2,12 +2,15 @@
 title: 'A termék minősítések szinkronizálása a következőben: Dynamics 365 Commerce'
 description: Ez a témakör azt mutatja be, hogyan lehet szinkronizálni a termékminősítéseket a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3ceac78e6dbc6f83ed4968f76672367e79bdd968
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
-ms.translationtype: MT
+ms.openlocfilehash: dec87b548f3a218e1f833b752305f373e893b14c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7967950"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412929"
 ---
 # <a name="sync-product-ratings-in-dynamics-365-commerce"></a>A termék minősítések szinkronizálása a következőben: Dynamics 365 Commerce
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet szinkronizálni a termékminősítéseket a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 A termék minősítések többcsatornán helyen történő felhasználásához, például a pénztárnál (POS) és a hívásközpontokban a minősítési és az értékelés szolgáltatásból származó minősítéseket importálni kell a Commerce csatornaadatbázisába. Amikor a többcsatornás helyeken elérhetővé teszik a termék minősítését, azzal közvetett módon segítik a vásárlókat, hogy kapcsolatba lépjenek az értékesítőkkel.
 
@@ -57,7 +62,7 @@ Ha ellenőrizni szeretné, hogy létezik-e a **RetailProductRating** alfeladat, 
 
 A következő ábra egy példát mutat be az alfeladat részleteire a Commerce alkalmazásban.
 
-![A RetailProductRating alfeladat részletei.](media/rnr-hq-ratings-sub-job.png)
+![A RetailProductRating alfeladat részletei](media/rnr-hq-ratings-sub-job.png)
 
 > [!NOTE]
 > Ha nem találja a **RetailProductRating** alfeladatot, előfordulhat, hogy már futtatta a **Termékértékelések szinkronizálása** feladatot és az **1040 CDX** feladatot a Kereskedelmi tervezés és ütemezés inicializálásának megkezdése előtt. Ebben az esetben a **Teljes adatszinkronizálási** feladat futtatásához kövesse az alábbi lépéseket.
@@ -81,7 +86,7 @@ Ha a termékminősítéseket szeretne importálni a Commerce megoldásba a minő
 
 A következő ábra egy példát mutat be a kötegelt feladatok konfigurálására a Commerce alkalmazásban.
 
-![A termékminősítések konfigurációja kötegelt feladat konfigurálása.](media/rnr-hq-batchjob-recurrence.png)
+![A termékminősítések konfigurációja kötegelt feladat konfigurálása](media/rnr-hq-batchjob-recurrence.png)
 
 ## <a name="verify-that-the-batch-job-for-product-rating-synchronization-was-successful"></a>Annak megerősítése hogy a termékminősítések szinkronizálásának kötegelt feladata sikeres volt
 
@@ -93,7 +98,7 @@ Ha ellenőrizni szeretné, hogy a **Termékminősítések szinkronizálása** k�
 
 A következő ábra egy példát mutat be a kötegelt feladat részleteire a Commerce alkalmazásban amikor a kötegelt feladat két órás időközönkénti futtatásra van ütemezve.
 
-![Termékminősítések szinkronizálása kötegelt feladat részletei.](media/rnr-hq-batchjob-status-checking.png)
+![Termékminősítések szinkronizálása kötegelt feladat részletei](media/rnr-hq-batchjob-status-checking.png)
 
 ## <a name="make-product-ratings-available-at-the-pos"></a>A termék minősítések elérhetővé tétele a pénztárban
 
@@ -111,35 +116,22 @@ A termékértékelések bekapcsolásához a pénztárban hajtsa végre az alább
 
 A következő ábra egy példát mutat be a Commerce paraméterek konfigurálására, amellyel a termék minősítéseit lehet lehet bekapcsolni a pénztárban.
 
-![A termék minősítéséhez szükséges Commerce paraméterek konfigurálása a pénztárban.](media/rnr-hq-enable-ratings-in-pos.png)
+![A termék minősítéséhez szükséges Commerce paraméterek konfigurálása a pénztárban](media/rnr-hq-enable-ratings-in-pos.png)
 
 A következő ábrán egy példa látható a termékminősítésekre a pénztárban.
 
-![Termékminősítések a pénztárban.](media/rnr-pos-catalog-ratings.png)
+![Termékminősítések a pénztárban](media/rnr-pos-catalog-ratings.png)
 
 A következő ábrán egy példa látható a termékminősítésekre a hívásközponti csatornákban.
 
-![Termékminősítések egy hívásközpont-csatornában.](media/rnr-call-center-ratings.png)
+![Termékminősítések egy hívásközpont-csatornában](media/rnr-call-center-ratings.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Minősítések és értékelések áttekintése](ratings-reviews-overview.md)
 
-[A minősítések és értékelések használatának bekapcsolása](opt-in-ratings-reviews.md)
+[A minősítések és ellenőrzések használatának kiválasztása](opt-in-ratings-reviews.md)
 
 [Minősítések és értékelések kezelése](manage-reviews.md)
 
 [Minősítések és értékelések konfigurálása](configure-ratings-reviews.md)
-
-[A termék minősítések szinkronizálása](sync-product-ratings.md)
-
-[A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
-
-[Minősítések és felülvizsgálatok importálása és exportálása](import-export-reviews.md)
-
-[Szolgáltatás-szolgáltatás hitelesítés konfigurálása](service-to-service-auth.md)
-
-[Értékelések és vélemények GYIK](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

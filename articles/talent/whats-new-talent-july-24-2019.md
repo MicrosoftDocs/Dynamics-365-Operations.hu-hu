@@ -78,6 +78,3 @@ Egy új beállítással a vezetők mind a közvetlen beosztottak, mind a közvet
 Örömmel jelentjük be, hogy a kanadai és a délkelet-ázsiai régiók 2019. augusztus 1-től elérhetők lesznek a Talent szolgáltatásban. Ezzel a módosítással környezeteket hozhat létre a kanadai és ázsiai régiókban, és az összes Talent-adat a megadott helyeken belül marad. Létrehozhat egy környezetet ezekben az új régiókban azáltal, hogy kiválasztja a helyet az Új környezet párbeszédpanelen, és a környezet segítségével beállítja a Talentet az LCS-ben a következő alapján: [A Talent létesítése](https://docs.microsoft.com/dynamics365/unified-operations/talent/provisioning-talent).
 
 A más régiókból származó projektek adatainak a kanadai és ázsiai régiókba irányuló áttelepítése nem támogatott. Csak az új projekteket lehet telepíteni ezeknél az új, támogatott régióknál.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

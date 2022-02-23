@@ -2,23 +2,26 @@
 title: Munkasor adatai
 description: Ez a témakör a Munkasor adatai oldalról nyújt tájékoztatást, amely a rendszer egyes munkasorainak átfogó, csoportosítható és szűrhető listáját tartalmazza.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: f37d161bf3d27e15eaaf1230c05270f3769f9901
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
-ms.translationtype: MT
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778281"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429896"
 ---
 # <a name="work-line-details"></a>Munkasor adatai
 
@@ -28,7 +31,7 @@ A **Munkasor adatai** oldal a rendszer egyes munkasorainak átfogó, csoportosí
 
 ## <a name="turn-on-the-work-line-details-feature"></a>A munkasor adatai funkció bekapcsolása
 
-Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés lapon ellenőrizhetik a funkció állapotát, és szükség esetén engedélyezhetik vagy [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) letilthatják azt. Itt a funkció a következőként szerepel:
+A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Raktárkezelés*
 - **Szolgáltatás neve:** *Munkasor adatai*
@@ -125,6 +128,3 @@ Kitárolási munka létrehozásához kövesse az alábbi lépéseket.
 
 > [!IMPORTANT]
 > Ha a munkasor mennyiségének csak egy részét törli, akkor az elavult mennyiséget is el kell távolítania a terhelés sorból. Ellenkező esetben, hacsak a szállítási hiány nincs helyesen beállítva, a terhelési sor nem kaphat szállítási megerősítést.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

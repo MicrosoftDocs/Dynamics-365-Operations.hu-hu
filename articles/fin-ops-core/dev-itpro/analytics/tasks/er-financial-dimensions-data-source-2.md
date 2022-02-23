@@ -1,10 +1,12 @@
 ---
 title: ER Pénzügyi dimenziók használata adatforrásként (2. rész – Modell hozzárendelése)
-description: Ez a témakör azt ismerteti, hogyan kell konfigurálni egy Elektronikus jelentési (ER) modellt, amely a pénzügyi dimenziókat használja az ER-jelentések adatforrásaként. (2. rész)
+description: A következő lépések leírják, hogy egy rendszergazda vagy az elektronikus jelentések fejlesztője szerepkörhöz hozzárendelt felhasználó miként konfigurálhat egy elektronikusjelentés-modellt (ER-modell) a pénzügyi dimenzió használatához az ER-jelentések adatforrásaként.
 author: NickSelin
+manager: AnnBe
 ms.date: 05/27/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, ERExpressionDesignerFormula
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bc7c6bc299dd0af83db3b09b06276a210ecfada5
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 3214ddb1e077d889fb7b785bee2554b96c3907ed
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605405"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681685"
 ---
 # <a name="er-use-financial-dimensions-as-a-data-source-part-2---model-mapping"></a>ER Pénzügyi dimenziók használata adatforrásként (2. rész – Modell hozzárendelése)
 
@@ -56,14 +58,14 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 21. Válassza az Igen lehetőséget a Fő számla kérése mezőben.
     * A „Fő számla kérése” lehetőséget állítsa Igen értékre, ha engedélyezni szeretné a felhasználók számára a fő számla kiválasztását a dimenziók listájának részeként.   Ha a beállítása Nem, a fő számla nem lesz része a dimenziók listájának, és „A fő számla kötelező” beállítás engedélyezve van. Ha „A fő számla kötelező” beállítása Igen, a fő számla része lesz a dimenziók listájának, a felhasználói kiválasztástól függetlenül.  
 22. Kattintson az OK gombra.
-![A pénzügyi dimenziók részletes adatforrás-tulajdonságai kiúsznak.](../media/er-financial-dimensions-guides-model-mapping1.png)
+![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping1.png)
 23. A fastruktúrában válassza ki a következőt: „Dynamics 365 for Operations\Tábla rekordjai” csomópont.
 24. Kattintson a Gyökér hozzáadása gombra.
 25. A Név mezőbe írja be a „LedgerJournal” szöveget.
 26. Válassza az Igen lehetőséget a Lekérdezés kérése mezőben.
 27. Írja be a Tábla mezőbe a „LedgerJournalTable” szöveget.
 28. Kattintson az OK gombra.
-![Model-leképezés tervezőlapja, Táblarekordok adatforrás-típus.](../media/er-financial-dimensions-guides-model-mapping2.png)
+![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping2.png)
 
 ## <a name="map-data-model-elements-to-added-data-sources"></a>Adatmodell-elemek leképezése a hozzáadott adatforrásokra
 1. A fastruktúrában bontsa ki ezt: „Napló”.
@@ -94,7 +96,7 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 25. A fastruktúrában válassza ki a „LedgerJournal\<Kapcsolatok\LedgerJournalTrans\Account.Dimension(LedgerDimension.Dimension)\Fő számla és dimenziók” elemet.
 26. A fastruktúrában válassza ki ezt: „Napló\Tranzakció\Dimenzióadat”.
 27. Kattintson a Kötés gombra.
-!Modellleképezés tervezőlapja, Leképezés lap, Adatforrások fája.](../media/er-financial-dimensions-guides-model-mapping3.png)
+![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping3.png)
 28. A fastruktúrában válassza ki a „LedgerJournal\<Kapcsolatok\LedgerJournalTrans\Debit(AmountCurDebit)” elemet.
 29. A fastruktúrában válassza ki a „Napló\Tranzakció\Tartozik” elemet.
 30. Kattintson a Kötés gombra.
@@ -133,7 +135,7 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 63. Írja be a Company.'find()'.'name()' szöveget az expressionAsStringText mezőbe.
     * Company.'find()'.'name()'  
 64. Kattintson a Mentés gombra.
-![Elektronikus jelentéskészítés – modell-leképezés tervező oldal.](../media/er-financial-dimensions-guides-model-mapping4.png)
+![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping4.png)
 65. Zárja be a lapot.
 66. Kattintson a Mentés gombra.
 67. Zárja be a lapot.
@@ -144,7 +146,4 @@ A lépések végrehajtásához először hajtsa végre az „ER Pénzügyi dimen
 3. Kattintson az Állapot módosítása elemre.
 4. Kattintson a Befejezés gombra.
 5. Kattintson az OK gombra.
-![ER-konfigurációk oldal.](../media/er-financial-dimensions-guides-model-mapping5.png)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+![Elektronikus jelentéskészítés – modell-leképezés tervező oldal](../media/er-financial-dimensions-guides-model-mapping5.png)

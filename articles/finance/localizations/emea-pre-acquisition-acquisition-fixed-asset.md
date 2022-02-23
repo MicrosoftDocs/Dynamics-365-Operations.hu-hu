@@ -2,23 +2,26 @@
 title: Tárgyi eszköz beszerzés előtti műveleteinek feladása
 description: Ez a témakör bemutatja, hogyan állíthatja be és könyvelheti a tárgyi eszközök beszerzése előtti műveleteket.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 264704
 ms.search.region: Czech Republic, Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: aa7e1dd743790d494a4b80e656ce5732c81b08bfea4da70750cd92f67b8618f7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 26eaf0b1cfb504e241f2f171fb79cbe6aed794c9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752904"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408055"
 ---
 # <a name="post-the-pre-acquisition-of-a-fixed-asset"></a>Tárgyi eszköz beszerzés előtti műveleteinek feladása
 
@@ -46,9 +49,6 @@ Beszerzési előzmények feladása előtt meg kell adnia a következő beállít
 9.  Kattintson a **OK** gombra a **Beszerzés előtti javaslat** oldal bezárásához.
 10. A beszerzés előtti tranzakció feladásához kattintson a **Feladás** &gt; **Feladás** lehetőségre. A **Könyvek** oldalon a tárgyi eszköz állapota most elvileg **Beszerzett**.
 
-  > [!NOTE]
-  > A beszerzési/beszerzés-helyesbítési javaslat paramétereiben a beszerzés előtti tranzakciók kiválasztásának dátumáig beállíthatja a **Céldátum** mezőben a dátumot.
-  > Ez a funkció a 10.0.17-es és későbbi verziókban áll rendelkezésre.
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

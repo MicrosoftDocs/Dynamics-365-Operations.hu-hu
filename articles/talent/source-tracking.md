@@ -102,6 +102,3 @@ A felhasználói felület negatív befolyásolása elkerülésére nem szerkessz
 - **Egyéb**
 
 Ehelyett bővítheti a **TalentSource** enumeárciós értékeket más típusú adatforrások hozzáadásával.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

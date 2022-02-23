@@ -2,30 +2,35 @@
 title: Modulok használata
 description: Ez a témakör azt mutatja be, hogyan és mikor lehet a modulokat a Microsoft Dynamics 365 Commerce rendszerben használni.
 author: phinneyridge
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ce16aa98a37cd5dec60bcdbf86f59f74810da9755a6d3514bdd3e38a21afb748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 301eb6206fb9e02c3aa7d3c07cf368ba800a1ab9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728264"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412879"
 ---
 # <a name="work-with-modules"></a>Modulok használata
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan és mikor lehet a modulokat a Microsoft Dynamics 365 Commerce rendszerben használni.
+
+## <a name="overview"></a>Áttekintés
 
 A modulok olyan logikai építőelemek, amelyek megalkotják a lap struktúráját, és különböző céljaik és hatóköreik vannak. Egyes modulok magas szintű tárolók, és egyetlen céljuk a többi modul (származtatott modulok) megtartása és rendszerezése. A többi modul – például egy egyszerű képelhelyezési modul – kifejezetten konkrét célt szolgál. Más modulok, például a körhinta-modul, valahová a két kategória közé esnek.
 
@@ -53,7 +58,7 @@ Az általános, gyakran használt oldal- és tartalomszerkesztési tevékenység
 
 A következő ábra bemutatja, hogyan vannak a modulok a szülő tároló helyeire beágyazva.
 
-![Modulok beágyazása.](../commerce/media/basic-module-nesting.png)
+![Modulok beágyazása](../commerce/media/basic-module-nesting.png)
 
 ## <a name="add-or-remove-modules"></a>Modulok hozzáadása vagy eltávolítása
 
@@ -168,6 +173,3 @@ Egy tárolómodulnak egy lapon történő konfigurálásához kövesse az alább
 
 [A közzétételi csoportokkal végzett munka](publish-groups.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,41 +1,40 @@
 ---
 title: Teljesítménykezelés
-description: A teljesítménykezelési folyamat lehetővé teszi, hogy az alkalmazottak dokumentálhassák és vezetőjükkel megbeszélhessék teljesítményüket.
-author: twheeloc
-ms.date: 08/26/2021
-ms.topic: overview
+description: A teljesítménykezelési folyamat lehetővé teszi, hogy az alkalmazottak dokumentálhassák és vezetőjükkel megbeszélhessék teljesítményüket. Továbbá a vezetők később visszajelzést és útmutatást nyújthatnak az alkalmazottaknak.
+author: andreabichsel
+manager: AnnBe
+ms.date: 07/28/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
-ms.custom:
-- "221024"
-- intro-internal
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Talent
+ms.custom: 221024
 ms.assetid: d88e30ab-c6e9-4daf-b89d-f4386a299e22
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: fa4d90d568697526adeef52443a01c3251696bf4
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 7e2c7753da69f85307eccd22f6a315e9fd1e4bd6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984746"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418860"
 ---
-# <a name="performance-management"></a>Teljesítménymenedzsment
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="performance-management"></a>Teljesítménykezelés
 
 A teljesítménykezelési folyamat lehetővé teszi, hogy az alkalmazottak dokumentálhassák és vezetőjükkel megbeszélhessék teljesítményüket. Továbbá a vezetők később visszajelzést és útmutatást nyújthatnak az alkalmazottaknak.  
 
-Ahogyan az alábbi diagram is mutatja, három oldal áll rendelkezésére, amelyek a folyamat kezelésében használatosak:
+Ahogyan az alábbi diagram is mutatja, három oldal áll rendelkezésére, amelyek segítenek a folyamat kezelésében:
 
 -   Teljesítménynapló
 -   Célok
 -   Teljesítményértékelés
 
-A következő diagram bemutatja, hogyan kapcsolódnak a teljesítménykezelés elsődleges összetevői egymáshoz. [![Teljesítményfolyamat áttekintése.](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+A következő diagram bemutatja, hogyan kapcsolódnak a teljesítménykezelés elsődleges összetevői egymáshoz. [![Teljesítményfolyamat áttekintése](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Teljesítménynapló
 
@@ -43,7 +42,7 @@ Alkalmazottként az értékelés befejezése előtt gyakran gyűjtjük be az ada
 
 Két verziója van a teljesítménynaplónak: az alkalmazotti verzió, amely az **alkalmazotti önkiszolgáló rendszer** munkaterületén keresztül érhető el (**ESS**), valamint a vezetői verzió, amely a **vezetői önkiszolgáló rendszer** munkaterületén (**MSS**) érhető el. Az alkalmazottak maguknak is létrehozhatnak naplókat, és megoszthatók azokat a vezetőjükkel. A vezetők létrehozhatnak naplókat a csapatuknak, és megoszthatják azokat az alkalmazottaikkal. 
 
-Az **ESS** munkaterületéről való elérés esetén a **teljesítménynapló** oldalon megadhatja a következő információkat:
+Az **ESS** munkaterületéről való elérés esetén a **teljesítménynapló** oldalon rögzítheti a következő információkat:
 
 -   A tevékenység címe
 -   A tevékenység leírása, amely magában foglalja a tevékenységgel kapcsolatos részletes információkat
@@ -57,11 +56,11 @@ A teljesítménynaplót emellett külső webhelyhez is kapcsolhatja, ha tárolja
 
 ### <a name="send-feedback"></a>Visszajelzés küldése
 
-A teljesítménynapló egy kiegészítő funkciót is tartalmaz, melynek neve **Visszajelzés küldése**. Amikor rákattint a **Visszajelzés küldése** lehetőségre, válasszon ki egy alkalmazottat, és adjon visszajelzést e-mailben az adott alkalmazottról. Az üzenetet elküldi a rendszer a visszajelzést kapó alkalmazottnak, az alkalmazott vezetőjének, a visszajelzést küldő alkalmazottnak és az alkalmazott vezetőjének. Teljesítménynapló-bejegyzés jön létre minden olyan személyhez, akik megkapják a visszajelzést.
+A teljesítménynapló egy kiegészítő funkciót is tartalmaz, melynek neve Visszajelzés. Amikor rákattint a **Visszajelzés küldése** lehetőségre, válasszon ki egy alkalmazottat, és adjon visszajelzést e-mailben az adott alkalmazottról. Az üzenetet elküldi a rendszer a visszajelzést kapó alkalmazottnak, az alkalmazott vezetőjének, a visszajelzést küldő alkalmazottnak és az alkalmazott vezetőjének. Teljesítménynapló-bejegyzés jön létre minden olyan személyhez, akik megkapják a visszajelzést.
 
 ## <a name="goals"></a>Célok
 
-A **Teljesítménycélok** oldal révén könnyebben nyomon követheti a célokat, amelyeket a vezetője létrehozott Önnek. Tetszőleges számú célt hozhat létre, és ezen célok eltérő időszakokra és teljesítmény-ellenőrzésekre terjedhetnek ki. Emellett egyszerű vagy összetett célokat is létrehozhat, attól függően, hogy mennyi információt szeretne megadni a célról. Célok nem szükségesek a teljesítményellenőrzésekhez. 
+A **teljesítménycélok** oldal révén könnyebben nyomon követheti a célokat, amelyeket a vezetője létrehozott Önnek. Tetszőleges számú célt hozhat létre, és ezen célok eltérő időszakokra és teljesítmény-ellenőrzésekre terjedhetnek ki. Emellett egyszerű vagy összetett célokat is létrehozhat, attól függően, hogy mennyi információt szeretne megadni a célról. Célok nem szükségesek a teljesítményellenőrzésekhez. 
 
 Az alapvető céloknak tartalmaznia kell a következő adatokat:
 
@@ -76,7 +75,7 @@ Ha részletesebb utasításokkal rendelkezik egy célnál, akkor céltémakörö
 
 A célokhoz sokszor mérhető eredmények társulnak. A tényleges eredmények nyomon követése érdekében mértékeket adhat meg. Kiterjesztett cél esetén megjelölheti a mértéket a **Kiterjesztett cél** lehetőség segítségével. 
 
-A teljesítménynapló olyan tevékenységeket tartalmaz, amelyekből felettese további információt kap arról, hogy miként érte el a célját. Ha csatolt a célhoz teljesítménynaplót, akkor az megjelenik a cél **Tevékenységek** részén. Új teljesítménynaplót is hozzáadhat a **Teljesítménycélok** oldalról. A az adott teljesítménynapló automatikusan társítva lesz a célhoz. 
+A teljesítménynapló olyan tevékenységeket tartalmaz, amelyekből felettese további információt kap arról, hogy miként érte el a célját. Ha csatolt a célhoz teljesítménynaplót, akkor az megjelenik a cél **Tevékenységek** részén. Új teljesítménynaplót is hozzáadhat a **teljesítménycélok** oldalról. A az adott teljesítménynapló automatikusan társítva lesz a célhoz. 
 
 Ha dokumentumot – például teljesítésigazolást – szeretne csatolni a célhoz, ezt a **Teljesítménycélok** lap **Mellékletek** részénél teheti meg. Dokumentummegjelenítő is rendelkezésre áll, így gyorsan megtekintheti bármely csatolt dokumentum tartalmát. 
 
@@ -86,7 +85,7 @@ Sablont hozhat létre egy célból, majd a sablon segítségével új célokat h
 
 A teljesítményértékelések formálisabb neve a vitafórum. Most már elég rugalmasak a folyamatos visszajelzés, a fejlesztési tervek és a formálisabb értékelések támogatásához. Gyorsan létrehozhat kis megbeszéléseket két személy részére, például egy „one-on-one” megbeszélést, vagy összetettebb értékelést is készíthet, amely megfelel a vállalatánál érvényes értékelési folyamatnak. 
 
-A megbeszélések (például a „one-on-one”) egyszerű értékelések, és hozzájuk egy rövid név, a megbeszélés tartalmának hosszabb leírása, a megbeszélés dátuma, valamint a tárgyalt felülvizsgálati időszak szükséges. A vezetők láthatják annak a személynek a nevét is, aki számára az értékelés létrejön. 
+A megbeszélések (például a „one-on-one”) egyszerű értékelések, és hozzájuk egy rövid név, a megbeszélés tartalmának hosszabb leírása, valamint a megbeszélés dátuma szükséges. Az egyszerű értékelés ugyanazokat az adatokat tartalmazza, továbbá a megbeszélés tárgyát képező értékelési időszakot is. A vezetők láthatják annak a személynek a nevét is, aki számára az értékelés létrejön. 
 
 Részletesebb értékelések esetén lekérheti az aktív és a befejezett célokat, és megadhatja a rájuk vonatkozó megjegyzéseket is. Az értékelés megjeleníti a teljesítménynapló céllal kapcsolatos minden tevékenységét és mértékét. Az értékelés véglegesítését követően a mértékek pillanatképét tárolja a rendszer annak érdekében, hogy megmaradjanak az adott elemek előzményei az értékelés idejére vonatkozóan. 
 
@@ -94,7 +93,7 @@ Emellett a **Kompetenciák** szakasz segítségével megvitathatja, áttekinthet
 
 Új értékeléseket hozhat létre, amelyek az Ön által elkészített sablonokon alapulnak. Lehet például sablonja a „one-on-one” megbeszélésekhez, a fejlesztési tervekhez vagy az időszakos értékelésekhez is. Kiválaszthatja a sablont, amikor új értékelést hoz létre.
 
-Az ellenőrzések nyomtatásához nyomja meg az **Ellenőrzés nyomtatása** gombot. Ha nem látja a gombot az **Ellenőrzés** lapon, győződjön meg arról, hogy engedélyezte a szolgáltatást a **Funkciókezelés** munkaterületen. A funkciókezeléssel kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Az ellenőrzések nyomtatásához nyomja meg az **Ellenőrzés nyomtatása** gombot. Ha nem látja a gombot az **Ellenőrzés** lapon, győződjön meg arról, hogy engedélyezte a szolgáltatást a **Funkciókezelés** munkaterületen. A funkciókezeléssel kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 > [!NOTE]
 > A teljesítménykimutatásokat csak az Emberi erőforrásokban lehet kinyomtatni. A Dynamics 365 Finance alkalmazásban nem érhető el.
@@ -121,11 +120,11 @@ Minősítést alkalmazhat az értékelésben szereplő bármely célnál vagy ko
 
 ### <a name="sign-offs"></a>Láttamozások
 
-Az alkalmazott és/vagy a vezető az Ön által beállított értékelésparaméterek alapján jelenik meg. Az értékelések lehetnek kötelezők vagy opcionálisak. Az összes szükséges láttamozás elvégeztével az értékelés **Kész** állapotú lesz.
+Az alkalmazott és/vagy a vezető az Ön által beállított értékelésparaméterek alapján jelenik meg. Az értékelések lehetnek kötelezők vagy opcionálisak. Az összes szükséges láttamozás elvégeztével az értékelés Kész állapotú lesz.
 
 ### <a name="attachments"></a>Mellékletek
 
-Csatolhat egy dokumentumot egy értékeléshez az **Ellenőrzés** oldal **Mellékletek** részén. Dokumentummegjelenítő is rendelkezésre áll, így gyorsan megtekintheti bármely csatolt dokumentum tartalmát.
+Csatolhat egy dokumentumot egy értékeléshez az **Értékelések** oldal **Mellékletek** részén. Dokumentummegjelenítő is rendelkezésre áll, így gyorsan megtekintheti bármely csatolt dokumentum tartalmát.
 
 ## <a name="workflow-for-performance-management"></a>A teljesítménykezelés munkafolyamata
 
@@ -151,18 +150,16 @@ A dolgozóellenőrzési munkafolyamat két elemet tartalmaz:
 
 ## <a name="setup"></a>Beállítás
 
-Három lap segíthet Önnek, hogy beállíthasson olyan információkat, amelyek annak érdekében szükségesek, hogy elvégezhesse a teljesítményfolyamatot: a **Mértékek** lap, a **Teljesítménynapló forrástípusai** és a **Ellenőrzési típusok** lap.
+Három lap segíthet Önnek, hogy beállíthasson olyan információkat, amelyek annak érdekében szükségesek, hogy elvégezhesse a teljesítményfolyamatot: a **mértékek** lap, a **teljesítménynapló forrástípusai** lap és a **típusok áttekintése** lap.
 
 ### <a name="measurements"></a>Mértékek
 
-A **Mértékek** oldal lehetővé teszi azoknak a normál mértékeknek a létrehozását, amelyeket a **Teljesítménycélok** és az **Ellenőrzés** oldalak fognak használni. Létrehozhat olyan mértékeket, amelyek a dátumok, mennyiségek, összegek vagy százalékok, továbbá olyan mértékeket is, amelyeknek alapja a minősítési modell.
+A mértékek oldala lehetővé teszi azoknak a normál mértékeknek a létrehozását, amelyeket a **teljesítménycélok** és az **ellenőrzések** oldalai fognak használni. Létrehozhat olyan mértékeket, amelyek a dátumok, mennyiségek, összegek vagy százalékok, továbbá olyan mértékeket is, amelyeknek alapja a minősítési modell.
 
 ### <a name="performance-journal-source-types"></a>Teljesítménynapló forrástípusok
 
-A **Teljesítménynapló forrástípusai** leírják, hogy honnan származnak a teljesítménynaplók. Megtekintheti, hogy egy naplótétel alapértelmezés szerint csak a vezető által, csak az alkalmazott által vagy mind a vezető, mind az alkalmazott által tekinthető-e meg. Ezen a ponton a forrástípusok nem tilthatók le.
+A teljesítménynapló forrástípusai leírják, hogy honnan származnak a teljesítménynaplók. Megtekintheti, hogy egy naplótétel alapértelmezés szerint csak a vezető által, csak az alkalmazott által vagy mind a vezető, mind az alkalmazott által tekinthető-e meg. Ezen a ponton a forrástípusok nem tilthatók le.
 
 ### <a name="review-types"></a>Ellenőrzési típusok
 
-Az **Ellenőrzési típusok** szabályozzák egy ellenőrzés működését. Engedélyezi vagy letiltja a munkafolyamatot egy ellenőrzésnél. Ha az ellenőrzés nem használ munkafolyamatot, akkor definiálhatja azt az alapértelmezett állapotot, amelyet a rendszer a felülvizsgálat létrehozásakor használ. Meghatározhatja azt is, hogy az alkalmazott, a vezető vagy mindkettő szükséges-e az ellenőrzés láttamozáshoz.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+A teljesítmény-ellenőrzés típusai révén szabályozhatja egy ellenőrzés működését. Engedélyezi vagy letiltja a munkafolyamatot egy ellenőrzésnél. Ha az ellenőrzés nem használ munkafolyamatot, akkor definiálhatja azt az alapértelmezett állapotot, amelyet a rendszer a felülvizsgálat létrehozásakor használ. Meghatározhatja azt is, hogy az alkalmazott, a vezető vagy mindkettő szükséges-e az ellenőrzés láttamozáshoz.

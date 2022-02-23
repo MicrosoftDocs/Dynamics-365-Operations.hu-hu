@@ -1,10 +1,12 @@
 ---
 title: Beszerzési rendelések létrehozása
 description: A cikk ismerteti a beszerzési megrendelés kézi létrehozásának folyamatát és lehetőségeit.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 20b8e00316b45126b028b6d9812a455ef0e53f19
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 105d4022e1867f553fcae5e4ae9c0ed7ce4e912d
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575512"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022281"
 ---
 # <a name="create-purchase-orders"></a>Beszerzési rendelések létrehozása
 
@@ -65,7 +67,7 @@ Egyes esetekben érdemes felosztani a rendelt mennyiséget úgy, hogy a különb
 A költségeket automatikusan hozzá lehet adni a beszerzésirendelés-sorokhoz, amennyiben a szállítóhoz vagy a szállító költségcsoportjához, és a cikkhez vagy a cikk költségcsoportjához be van állítva az automatikus költségek opció. Azonban gyakoribb, hogy a költségeket manuálisan, a rendeléssor szintjén adják meg. Költség hozzáadásához nyissa meg a **Költségek kezelése** lapot a **Költségek kezelése** művelettel a **Pénzügyek** menüpontban, **Sorok** nézetben. A költségek hozzáadása közvetlenül a rendelési sor szintjén azért előnyös, mert így a költségeket készletköltségként lehet elszámolni. Költségkódok beállításához a számlatermék-költségekhez használja a **Cikk** tartozás opciót. Az ilyen típusú költségeket a rendelés megerősítése előtt a beszerzési rendelés fejlécéből a sorokhoz kell rendelni. Érdemes lehet például a költségeket az egyes sorokban szereplő mennyiség alapján hozzárendelni. A költségkategória is befolyásolja, hogyan kerülnek elszámolásra a költségek. A rögzített költségek például egy fix összeget adnak meg, a százalékköltségek pedig a rendeléssor nettó összege alapján százalékként kerülnek kiszámolásra. A beszerzési rendelések terhelésekhez rendelhetők, és a terhelésekben szerepelhet a szállítási költségekre vonatkozó becslés. Ez a költség a terhelésekből a beszerzésirendelés-sorokhoz rendelhető.
 
 ## <a name="purchase-order-actions"></a>Beszerzési rendelés műveletei
-A fejléc és a sorok beszerzési rendeléshez történő hozzáadása után gyakori, hogy további lépéseket kell végrehajtani a beszerzési rendelés megerősítése előtt. Mivel sok lehetőség áll rendelkezésre, érdemes lehet a [Műveletkeresés](../../fin-ops-core/fin-ops/get-started/action-search.md) opciót használni a megfelelő elem megtalálására a menüben.  
+A fejléc és a sorok beszerzési rendeléshez történő hozzáadása után gyakori, hogy további lépéseket kell végrehajtani a beszerzési rendelés megerősítése előtt. Mivel sok lehetőség áll rendelkezésre, érdemes lehet a [Műveletkeresés](../../fin-and-ops/get-started/action-search.md) opciót használni a megfelelő elem megtalálására a menüben.  
 
 A rendelésen a termékek konfigurálhatók úgy, hogy kiegészítő cikkeket tartalmazzanak. A kiegészítő cikkek olyan termékek, vagy más termékekkel együtt lehet vagy kell megvásárolni. A kiegészítő termékek költségmentesen hozzáadhatók, mint kísérő termékek, vagy eldöntheti, hogy hozzáadja-e őket a rendeléshez vagy sem. A kiegészítő elemeket minden hozzáadott rendelési sor után ellenőrizheti. Azonban a kiegészítő termékek ellenőrzése és hozzáadása kényelmesebb lehet a Kiegészítő termékek oldal használatával a **Műveletek oldalon**, ahol az összes rendeléssort egyszerre kezelheti.  
 
@@ -80,7 +82,8 @@ A beszerzési megrendelések konfigurálhatók úgy, hogy azok csak úgy legyene
 
 Előfordulhat, hogy egy adott beszerzési megrendelés végrehajtását késleltetni kell. Például előfordulhat, hogy egy termékre vagy szolgáltatásra vonatkozóan további információkra van szüksége, vagy engedélyeztetnie kell a kiadásokat. Egy rendelés számos módon visszatartható. Például várhat a rendelés megerősítésével. Ha a változáskezelés munkafolyamatot használja, akkor azt is megteheti, hogy nem adja le a rendelést engedélyezésre. Ha egy bizonyos szállító összes rendelését fel kell függesztenie, a szállítót **Felfüggesztve** jelöléssel láthatja el a szállítói alapadatoknál. Felmerülhetnek olyan körülmények, melyek megakadályozzák egy adott rendelés feldolgozását. A feldolgozást hátráltathatja például, ha a túllépte a hitelkeretet, vagy ha a szükséges költségvetési alapok nem állnak rendelkezésre.
 
-## <a name="additional-resources"></a>További erőforrások
+<a name="additional-resources"></a>További erőforrások
+--------
 
 [Beszerzési rendelések áttekintése](purchase-order-overview.md)
 
@@ -92,6 +95,3 @@ Előfordulhat, hogy egy adott beszerzési megrendelés végrehajtását késlelt
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

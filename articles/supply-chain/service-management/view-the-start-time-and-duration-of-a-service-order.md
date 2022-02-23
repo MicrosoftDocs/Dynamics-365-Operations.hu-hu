@@ -1,26 +1,29 @@
 ---
 title: Szervizrendelés kezdési időpontjának és tartamának megtekintése
 description: Megtekintheti, hogy mikor indították el a szervizrendelést, és várhatóan mikor fog befejeződni.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd3fe5847d795dafed453294ccc1058955127450
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f8ec7cbfea709c74b73a189c24da8978a501794d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567751"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429676"
 ---
 # <a name="view-the-start-time-and-duration-of-a-service-order"></a>Szervizrendelés kezdési időpontjának és tartamának megtekintése 
 
@@ -56,6 +59,3 @@ Azt is megjelenítheti, hogy mikor indították el és állították le a szervi
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

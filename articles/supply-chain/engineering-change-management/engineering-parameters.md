@@ -2,22 +2,25 @@
 title: Tervezési változáskezelés paraméterei
 description: Ez a témakör bemutatja, hogyan lehet mérnöki módosításkezelési funkciókat konfigurálni a Microsoft Dynamics 365 Supply Chain Management rendszerhez.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 106c3a79236bcb8112ecbd48e29f3f5f3148a867
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 0cf0e56a8aece98379aa0f181d7b7ff665767544
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581008"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4429971"
 ---
 # <a name="engineering-change-management-parameters"></a>Tervezési változáskezelés paraméterei
 
@@ -54,6 +57,3 @@ A következő táblázat felsorolja azokat a mezőket, amelyek elérhetők a **M
 | Súlyossági szabály | Válassza ki, hogyan legyen meghatározva egy mérnöki módosítási rendelés súlyossága. Válassza ki a *Manuális* beállítást, ha a felhasználónak be kell írnia egy értéket a **Súlyosság** mezőbe. Válassza a *Számítás* lehetőséget, ha azt szeretné, hogy a rendszer kiszámítsa a **Súlyosság** mező értékét, amikor a mérnöki módosítási rendelés művelet ablaktábláján kiválasztja a **Súlyosság számítása** lehetőséget. Ebben az esetben a rendszer a **Súlyossági szabálykészlet** oldalon megadott súlyossági szabályokat fogja használni. Válassza az *Automatikus számítás* lehetőséget, ha azt szeretné, hogy a program automatikusan kiszámítsa a **Súlyosság** mező értékét, és kitöltse a súlyossági szabályok alapján. |
 | Érintett termékek újbóli kiadása | Ez a mező akkor használható, ha a termékeket egy mérnöki módosítási rendelésen keresztül újra kiadják. Megadhatja, hogy az összes termék vagy csak az érintett termékek szerepeljenek-e javaslatként a **Kiadások** párbeszédpanelen. |
 | Kiadandó anyagjegyzékszintek | A kiadandó anyagjegyzék szintjének mélysége. Ha az anyagjegyzéknek több szintje van (azaz ha ez mélyebb), mint az itt megadott érték, akkor a program csak a megadott értéknek megfelelő szinteket adja ki. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

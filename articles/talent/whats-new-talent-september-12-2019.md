@@ -104,6 +104,3 @@ Ezzel a kiadással lehetővé válik az ellenőrzőlisták alkalmazása olyan al
 Ez a funkció jelenleg a sandbox környezetekben érhető el. A funkció bekapcsolásához navigáljon a **Rendszer-adminisztráció > Hivatkozások > Beállítás > Rendszerparaméterek > előnézeti funkciók** ponthoz. Válassza a **Továbbfejlesztett dolgozói képernyő és navigáció** lehetőséget. Ez minden felhasználó számára engedélyezi a változtatásokat. Ezt a beállítást bármikor ki lehet kapcsolni.
 
 További tájékoztatás: [Korszerű alkalmazotti belépés és navigálás](./streamlined-employee-entry.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

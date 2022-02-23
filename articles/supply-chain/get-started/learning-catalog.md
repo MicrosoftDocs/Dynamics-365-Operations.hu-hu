@@ -6,28 +6,30 @@ ms.topic: article
 ms.date: 07/23/2020
 ms.author: margoc
 ms.prod: ''
+ms.service: Dynamics365Operations
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 46302589ac5139ee6297aba26572225c0e392287
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: a3c9ae7f9347aedc9dfba669a788b93f339e9fe8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402520"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429351"
 ---
 # <a name="learning-catalog-for-dynamics-365-supply-chain-management"></a>Képzési katalógus – Dynamics 365 Supply Chain Management
 
 Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvényeket az Ön szerepéhez, a Dynamics 365 Supply Chain alkalmazások felhasználójaként.
 
-<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
 :::row:::
     :::column:::
-<!-- ![Universal Windows Platform (UWP).](images/platform-uwp.png)  -->  
+<!-- ![Universal Windows Platform (UWP)](images/platform-uwp.png)  -->  
 
     ### <a name="business-and-technical-decision-makers"></a>Üzleti és technikai döntéshozók
 
@@ -91,8 +93,6 @@ Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvé
     [Első lépések](learning-catalog-administrator.md#get-started)
 
     [Alapplatform ismerete](learning-catalog-administrator.md#core-platform-knowledge)
-
-    [Supply Chain Management](learning-catalog-administrator.md#scm)
 
     [Alapvető fejlesztés](learning-catalog-administrator.md#core-development)
 
@@ -187,6 +187,3 @@ Keresse meg a megfelelő online képzést, személyes workshopokat és rendezvé
 
     :::column-end:::
 :::row-end:::
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

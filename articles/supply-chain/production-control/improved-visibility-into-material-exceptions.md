@@ -2,24 +2,27 @@
 title: Betekintés az anyagkivételekbe
 description: Ez a témakör leírja, hogyan nyerhet jobb betekintést a nyersanyagkivételekbe a termelési rendelések és a kötegrendelések esetében.
 author: johanhoffmann
+manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage, WHSProdWaveTableManageBOMPool
+ms.search.form: JmgShopSupervisorWorkspace, WHSProdWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d3ea260535e76d7ac3d73d4bca930b7b4b2d22b2b2c076d4d1346785eaed85b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0c17997d9dd04559fb7022fe39bb2b961c1cfc4a
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6726801"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429865"
 ---
 # <a name="visibility-into-material-exceptions"></a>Betekintés az anyagkivételekbe
 
@@ -57,17 +60,10 @@ Amikor kiválasztja a csempét, megnyílik a **Kiadás raktárba** lap. Ezen a l
 
 Az anyagjegyzék- vagy receptúrasor a kiadásakor hozzáadódik egy új termelési hullámhoz vagy egy meglévő nyitott hullámhoz, a termelési hullám sablonjában konfiguráltaktól függően. A hullám sablonjának beállítása révén úgy is beállíthat egy hullámot, hogy automatikus legyen a feldolgozása, amikor egy anyagjegyzék- vagy receptúrasort kiadnak. A hullám feldolgozásakor létrejön a nyersanyag-kitárolási raktári munka. Ha a hullám sablonja úgy van beállítva, hogy a hullámokat a kiadás alkalmával nem kell feldolgozni, akkor a hullám feldolgozatlan állapotban marad. A **Figyelmet igénylő feldolgozatlan hullámok** csempe azoknak az anyagjegyzék- és receptúrasoroknak a számát jeleníti meg, amelyek feldolgozatlan hullámokkal lettek kiadva a raktárba, és olyan nyersanyagdátumuk van, amely korábbi vagy ugyanaz, mint a munkaterület dátuma. A sorokatat egy művelet-erőforrásnak is fel kell dolgoznia, amely a munkaterület szűrőjére vonatkozik.
 
-A csempe kijelölésekor megnyílik a **Minden termelési hullám** oldal. Ezt a lapot azoknak a nyitott hullámsoroknak a száma szűri, amelyek a csempe a feltételeinek megfelelő kiadott anyagjegyzék- és receptúrasorokból származó hullámsorokat tartalmaznak.
-
-### <a name="manually-maintain-production-waves"></a>Termelési hullámok manuális karbantartása
-
-A **Minden termelési hullám** oldalon a Művelet panel **Hullám** lapján található gombokkal lehet manuálisan **feldolgozni** és **kiadni** egy hullámot. A **Termelések karbantartása** beállítással megtekintheti és karbantarthatja a **Term DBJ-gyűjtő**-adatokat, amelyek a hullámfolyamat kezeléséhez használatosak.
+A csempe kijelölésekor megnyílik a **Minden termelési hullám** lap. Ezt a lapot azoknak a nyitott hullámsoroknak a száma szűri, amelyek a csempe a feltételeinek megfelelő kiadott anyagjegyzék- és receptúrasorokból származó hullámsorokat tartalmaznak. A **Minden termelési hullám** lapon manuálisan fel lehet dolgozni a hullámot.
 
 ## <a name="open-warehouse-work-needing-attention"></a>Figyelmet igénylő nyitott raktári munka
 
 A **Figyelmet igénylő nyitott raktári munka** csempe azoknak az anyagjegyzék- és receptúrasoroknak a számát jeleníti meg, amelyekhez feldolgozatlan munka tartozik, és olyan nyersanyagdátumuk van, amely korábbi vagy ugyanaz, mint a munkaterület dátuma. A sorokatat egy művelet-erőforrásnak is fel kell dolgoznia, amely a munkaterület szűrőjére vonatkozik.
 
 A csempe kijelölésekor megnyílik a **Minden munka** lap. Ezt a lapot azoknak a nyitott munkafejléceknek a száma szűri, amelyek a csempe a feltételeinek megfelelő kiadott anyagjegyzék- és receptúrasorokból származó munkasorokat tartalmaznak. A **Minden munka** lapon manuálisan fel lehet dolgozni a munkát.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

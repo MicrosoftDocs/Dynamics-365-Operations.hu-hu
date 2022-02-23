@@ -2,30 +2,35 @@
 title: Minősítések és értékelések konfigurálása
 description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni az e-kereskedelmi webhelyet a vevőértékelések megjelenítésére a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: e3f9ff4b0654ec5fa7548ac62e16ae64f44383e7
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
-ms.translationtype: MT
+ms.openlocfilehash: edd2082b5d2cafcb955f8e3c7762bcba523ac479
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968102"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412764"
 ---
 # <a name="configure-ratings-and-reviews"></a>Minősítések és értékelések konfigurálása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet konfigurálni az e-kereskedelmi webhelyet a vevőértékelések megjelenítésére a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 Az e-kereskedelmi webhelyek minősítései és értékelései segítik a vevőket a termékek beszerzési döntés előtt történő megismerésében, és megmutatják, hogy egyéb vevők mit gondolnak ezekről a termékekről. Az e-kereskedelmi webhelyek esetében a minősítések és értékelések a termékekkel kapcsolatos vevői visszajelzések összegyűjtésének mechanizmusai is egyben. 
 
@@ -44,7 +49,7 @@ Tegye a következőket a webhely konfigurálásához az értékelések és véle
 
 Az alábbi ábra azt mutatja, hogyan néz ki ez a konfiguráció a Dynamics 365 Commerce alkalmazásban.
 
-![Webhely konfigurálása értékelések és vélemények megjelenítésére.](media/rnr-eCommerce-site-appsettings.png)
+![Webhely konfigurálása értékelések és vélemények megjelenítésére](media/rnr-eCommerce-site-appsettings.png)
 
 ## <a name="link-a-product-rating-to-the-reviews-section-of-a-pdp"></a>Termékértékelés hivatkozása egy PDP Vélemények szakaszához.
 
@@ -58,7 +63,7 @@ Egy termékértékelésnek a PDP **Vélemények** szakaszához való társítás
 
 Az alábbi ábra azt mutatja, hogyan néz ki ez a konfiguráció a Dynamics 365 Commerce alkalmazásban.
 
-![Termékértékelés hivatkozása egy PDP Vélemények szakaszához.](media/rnr-eCommerce-buy-box-rating-summary.png)
+![Termékértékelés hivatkozása egy PDP Vélemények szakaszához](media/rnr-eCommerce-buy-box-rating-summary.png)
 
 ## <a name="configure-the-link-for-the-privacy-and-policy-page"></a>Az adatvédelem és irányelvek lap hivatkozásának konfigurálása
 
@@ -73,7 +78,7 @@ Az adatvédelem és irányelvek lap hivatkozásának konfigurálásához kövess
 
 Az alábbi ábra azt mutatja, hogyan néz ki ez a konfiguráció a Dynamics 365 Commerce alkalmazásban.
 
-![Az adatvédelem és irányelvek lap hivatkozásának konfigurálása.](media/rnr-eCommerce-rnr-privacy-policy-link.png)
+![Az adatvédelem és irányelvek lap hivatkozásának konfigurálása](media/rnr-eCommerce-rnr-privacy-policy-link.png)
 
 ## <a name="configure-ratings-and-reviews-modules-on-product-details-pages"></a>A Minősítések és értékelések modulok konfigurálása a termék részletes oldalain
 
@@ -87,17 +92,6 @@ A Minősítések és értékelések modulok a termék részletei oldalain tört�
 
 [Minősítések és értékelések kezelése](manage-reviews.md)
 
+[A Minősítések és értékelések modulok konfigurálása a termék részletes oldalain](ratings-reviews-modules.md)
+
 [A termék minősítések szinkronizálása a következőben: Dynamics 365 Retail](sync-product-ratings.md)
-
-[A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
-
-[Minősítések és felülvizsgálatok importálása és exportálása](import-export-reviews.md)
-
-[Szolgáltatás-szolgáltatás hitelesítés konfigurálása](service-to-service-auth.md)
-
-[Értékelések és vélemények GYIK](ratings-reviews-faq.md)
-
-[Minősítések és értékelések modulok](ratings-reviews-modules.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,31 +1,37 @@
 ---
-title: robots.txt fájlok kezelése
+title: Robots.txt fájlok kezelése
 description: Ez a témakör a robots. txt fájl kezelésének módját ismerteti a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: BrianShook
+manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2019-12-18
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: e1078de354a96cc50b7c1b79a864db5041ea5069df650670e65531faaeb32e0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ad87594b9c20d0c2b53e8d4e7c1170a78babe74b
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754392"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517452"
 ---
-# <a name="manage-robotstxt-files"></a>robots.txt fájlok kezelése
+# <a name="manage-robotstxt-files"></a>Robots.txt fájlok kezelése
+
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a robots. txt fájl kezelésének módját ismerteti a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 A robotkizárási szabvány, vagy a robots.txt egy olyan szabvány, amelyet a webhelyek a webrobotokkal való kommunikációra használnak. A webrobotokat utasítja a webhely minden olyan területével kapcsolatban, amit nem kell felkeresniük. A robotokat gyakran használják a keresőmotorok webhelyek indexeléséhez.
 
@@ -101,6 +107,3 @@ A robots.txt fájl törléséhez a Commerce alkalmazásban, kövesse az alábbi 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 
 [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

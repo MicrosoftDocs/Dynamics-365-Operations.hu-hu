@@ -1,10 +1,12 @@
 ---
 title: Eszköztípusok
 description: Ez a témakör bemutatja, hogyan lehet eszköztípusokat létrehozni az Eszközkezelés modulban. Leírja az eszköztípusokhoz kapcsolódó elemeket is.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectJobType, EntAssetObjectType, EntAssetObjectTypeDefaultSparePart, EntAssetObjectTypeDefaultSparePartApprove, EntAssetObjectTypeDefaultCreateCombinations, EntAssetObjectTypeDefault, EntAssetObjectTypeDefaultCopy
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fc1a8d98e9a8853e2e72bfcc7415ddb9a0a3b7758504621d6fccff00a08a36be
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 295840c12f89bc6c6a4d53023985259ac761d6b2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730371"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017417"
 ---
 # <a name="asset-types"></a>Eszköztípusok
 
@@ -45,9 +47,9 @@ Először be kell állítani a szükséges eszközök típusát. Ezután hozza l
 7. Válassza a **Mentés** lehetőséget.
 8. A **Karbantartási feladat-típusok** gyorslapon válassza ki azokat a karbantartásifeladat-típusokat amelyek az adott eszköztípushoz kapcsolódnak:
 
-    - A karbantartási feladattípus kiválasztásához válassza ki a **Fennmaradó feladattípusok** mezőben, majd kattintson a jobbra mutató nyílra ![Jobbra mutató nyíl.](media/29-setup-for-objects.png) , és mozgassa a **Kiválasztott feladattípusok** szakaszba.
-    - Az összes rendelkezésre álló karbantartási feladattípus kiválasztásához válassza az ![Összes átirányítása nyíl.](media/30-setup-for-objects.png) gombot. A program minden feladattípust a **A fennmaradó karbantartási feladattípusok** mezőből átvisz a **Kiválasztott karbantartási feladattípusok** mezőbe.
-    - A karbantartási feladattípus kiválasztásának törléséhez válassza ki a **Kiválasztott karbantartási feladattípusok** mezőben, majd kattintson a balra mutató nyílra ![Balra mutató nyíl.](media/31-setup-for-objects.png) , és mozgassa a **Fennmaradó karbantartási feladattípusok** mezőbe.
+    - A karbantartásifeladat-típus kiválasztásához válassza ki a **Karbantartási feladattípusok** mezőben, majd kattintson a jobbra mutató nyílra ![Jobbra mutató nyíl](media/29-setup-for-objects.png), és mozgassa a **Kiválasztott Karbantartási feladattípusok** szakaszba.
+    - Az összes rendelkezésre álló karbantartási feladattípus kiválasztásához válassza az ![Összes átirányítása nyíl](media/30-setup-for-objects.png) gombot. A program minden feladattípust a **A fennmaradó karbantartási feladattípusok** mezőből átvisz a **Kiválasztott karbantartási feladattípusok** mezőbe.
+    - A karbantartási feladattípusok kiválasztásának visszavonásához válassza ki a **Kiválasztott karbantartási feladattípusok** mezőben, majd kattintson a balra mutató nyílra ![Balra mutató nyíl](media/31-setup-for-objects.png), és mozgassa a **Fennmaradó karbantartási feladattípusok** szakaszba.
 
 9. Ezután kiválaszthatja azokat az számlálókat, amelyek az eszköztípushoz kapcsolódnak. Az **számlálók** gyorslapon végezze el a kívánt beállításokat a 8. lépésben a karbantartási feladattípusok leírt módszerekkel. Az számlálók beállításával kapcsolatos további információkat lásd: [Számlálók](counters.md).
 10. Ezután kiválaszthatja azokat az attribútumtípusokat, amelyek az eszköztípushoz kapcsolódnak. Az **Attribútumtípusok** gyorslapon végezze el a kívánt beállításokat a 8. lépésben a karbantartási feladattípusoknál leírt módszerekkel. Ezután az attribútumtípusok preferált sorrendjének létrehozásához válasszon ki egy attribútumtípust a **Kiválasztott attribútumtípusok** mezőből, majd a fel és a le nyílgombokkal helyezze át. Az attribútumtípusok sorrendje az ilyen eszköztípust használó eszközöknél jelenik meg. Az eszközattribútumokról bővebben lásd: [Karbantartási attribútumtípusok](../setup-for-functional-locations/specification-types.md).
@@ -94,6 +96,3 @@ A **Pótalkatrészek** lapon új pótalkatrészeket is létrehozhat a meglévő 
 
 Ha látni szeretné, hogy a kiválasztott sorban szereplő pótalkatrész használatban van-e bárhol az Eszközkezelésben (például eszközökkel és munkarendelésekkel kapcsolatban), válassza ki a **Cikket hol használják** elemet, amellyel megnyithatja a **Cikket hol használják** oldalt. 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

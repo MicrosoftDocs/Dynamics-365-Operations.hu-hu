@@ -1,10 +1,12 @@
 ---
 title: Toborzási folyamatok kezelése
-description: Ez a témakör egy olyan koncepciót ír le, amellyel a toborzók nyomon követhetik a toborzási folyamat lépéseit.
+description: Ez a cikk egy fogalom recruiters segítségével nyomon követheti a lépéseket a toborzási folyamatban, többek között a nyitott pozíciók hirdetése és a pályázók felvételéhez szükséges, pályázó és az alkalmazás nyomon követésére, kikérdezése pályázók és egy vagy több jelöltek ki kell töltenie a szervezeten belüli nyitott pozíciók kiválasztása.
 author: andreabichsel
-ms.date: 01/10/2022
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMApplication, HRMRecruitingTable
 audience: Application User
@@ -15,18 +17,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7fa1d5201fcc52d49b9d954356f1ca39b7619cd2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
-ms.translationtype: MT
+ms.openlocfilehash: 71e30a30aee5edcea2e24b326b0f263612b6b897
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075475"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798043"
 ---
 # <a name="manage-recruiting-processes"></a>Toborzási folyamatok kezelése
 
-> [!IMPORTANT]
-> Az ebben a témakörben említett funkciók jelenleg a pénzügyi infrastruktúra humánerőforrás-ügyfelei számára érhetők el.  
-
+[!include [banner](../includes/banner.md)]
 
 Ez a témakör egy olyan koncepciót ismertet, amellyel a toborzók követhetik a toborzási folyamat lépéseit, köztük a nyitott beosztások meghirdetését és a pályázók felvételét, követhetik a pályázók és pályázatok adatait, pályázókat interjúztathatnak, és kiválaszthatak egy vagy több jelöltet a szervezet nyitott beosztásainak betöltésére.
 
@@ -44,7 +44,7 @@ A toborzási projektek lehetővé teszik a felvétellel foglalkozók számára e
 - Jelentkezési határidő
 - Becsült kezdő dátum
 
-A toborzási projekt tartalmazza a **Álláshirdetés** érték, amelyet a **Alkalmazotti önkiszolgáló** oldal a megnyitó hirdetésére. A nyílás csak akkor mutatható meg az alkalmazottaknak, ha a toborzási projekt rendelkezik a **Álláshirdetés** érték, a **Megjelenítés az alkalmazottak önkiszolgálóján** mező értékre van állítva **Igen**, a **Jelentkezési határidő** mező egy jövőbeli dátumra van állítva, és a toborzási projekt rendelkezik a **Projekt állapota** értéke **Elindult**. Az alábbi táblázat felsorolja toborzási projektek lehetséges állapotait és azok leírását.
+A toborzási projektben a **Álláshirdetés** használja a **Alkalmazotti önkiszolgáló áruház** számára, hogy a nyitó. Meg szeretné jeleníteni a nyitó hozzá az alkalmazottakhoz, a toborzási projekt rendelkeznie kell egy **álláshirdetés**, a **megjelenítése az alkalmazotti önkiszolgáló szolgáltatás** mezőt be kell állítani az Igen, a **Jelentkezési határidő** egy jövőbeli dátumot kell megadni, és a toborzási projekt kell egy **projekt állapota** elindítva. Az alábbi táblázat felsorolja toborzási projektek lehetséges állapotait és azok leírását.
 
 | Állapot    | Értelmezés...                                                                         |
 |-----------|-----------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ Recruiters is lehet rögzíteni a **Media** hirdetése a nyitó külső értéke
 
 ## <a name="applicants"></a>Pályázók
 
-A pályázó olyan személy, aki munkára pályázik a vállalatnál. A jelentkezők megosztva vannak a szervezetében lévő összes jogi személy között. Ezért a tehetségek nagy tárháza áll rendelkezésére, amelyekben kereshet. Megadhat és karban tarthat személyes információkat, állásinterjú dátumokat és időpontokat, referenciákat, kompetenciákat és a pályázó kérvényeit. Ha létrehoz egy pályázói rekordot, egy személyes rekord jön létre a pályázószámára a globális címjegyzékben. Használhatja a **Jelentkező** lap frissítése a következő globális címjegyzék adatait a pályázók számára:
+A pályázó olyan személy, aki munkára pályázik a vállalatnál. A pályázók a szervezet összes jogi személye között megoszlanak, így Ön nagy kínálatban kereshet. Megadhat és karban tarthat személyes információkat, állásinterjú dátumokat és időpontokat, referenciákat, kompetenciákat és a pályázó kérvényeit. Ha létrehoz egy pályázói rekordot, egy személyes rekord jön létre a pályázószámára a globális címjegyzékben. Használhatja a **Jelentkező** lap frissítése a következő globális címjegyzék adatait a pályázók számára:
 
 - Címadatok
 - Kapcsolattartási adatok
@@ -86,7 +86,7 @@ A pályázat állapota jelzi, hogy a pályázat hol áll a toborzási folyamatba
 
 ### <a name="correspondence-actions"></a>Levelezési tevékenységek
 
-Egy pályázat levelezési művelete határozza meg azt a dokumentumot vagy e-mail-sablont, amelyet a kérelmet benyújtó pályázóval való kommunikációhoz használ. Társítással **alkalmazás könyvjelzői** a levelezési műveleteknél használhatja az értékeket a **Alkalmazás**, **·**, **·**, és **Toborzási projekt** oldalakat a jelentkezőkkel folytatott kommunikáció során. Alkotás által **alkalmazás e-mail sablonok** a levelezési műveleteknél gyorsan küldhet e-mailt azoknak a pályázóknak, akiknek a jelentkezése az állapot és a levelezési művelet meghatározott kombinációjával rendelkezik. Például küldhet egy megerősítő e-mailt minden olyan alkalmazásnak, amely rendelkezik a **Állapot** értéke **Megkapta** és a **Levelező akció** értéke **Megkapta**. Az e-mail elküldése után lehetősége van az alkalmazások állapotának automatikus frissítésére.
+Egy **Alkalmazás** kapcsolattartási művelet határozza meg, hogy a dokumentum vagy e-mail sablont használó kommunikálni a a pályázatot benyújtó jelentkező. A **Pályázat könyvjelzői** levelezési műveletekkel társíthatók, aminek köszönhetően a pályázókkal folytatott kommunikáció során felhasználhat értékeket a Pályázat, Pályázó, Interjú és Toborzás projektoldalakról. **Pályázat e-mail sablonjai** hozhatók létre a levelezési műveletekhez, és ezekkel gyorsa küldhetők e-mailek azon pályázók számára, akiknek bizonyos állapotú pályázatuk van folyamatban adott levelezési művelettel párosítva. Például visszaigazoló e-mailt küldhet az összes pályázónak, akiknél az **Állapot** Fogadva, és a **Kapcsolattartási művelet** Fogadva. Az e-mail elküldése után lehetősége van a pályázat állapotának automatikus frissítésére.
 
 ## <a name="application-routing"></a>Pályázat útválasztása
 
@@ -103,5 +103,3 @@ Ha egy pályázatot több alkalmazottnak is át kell néznie, akkor a folyamat k
 ## <a name="hiring-applicants"></a>Pályázók felvétele
 
 Használja a **alkalmazások** pályázó lapra. Pályázó felvételekor az alkalmazás rekord állapotú lesz, **alkalmazott** és az új dolgozói rekordot a kérelmező személy globáliscímjegyzék rekordja kapcsolódik. A globális címjegyzék adatait az új dolgozó rekord módosításai is megjelennek a pályázó rekordját. Így kevesebb adatot kell bevinni, ha az új dolgozó valaha a vállalaton belüli más munkakörre adna be pályázatot. Meglévő dolgozó felvételéhez új beosztásba kattintson a **Pozíció módosítása** elemre a **Pályázat állapota** legördülő listában, és az átviteli folyamat megkezdődik.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

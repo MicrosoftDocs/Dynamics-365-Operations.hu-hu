@@ -2,30 +2,36 @@
 title: Videólejátszó modul
 description: Ez a témakör a videólejátszó modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 07/08/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8d09797d24572a99cc8f5ed2d34b73eb7144af7a35661a929b6a571a20dfed04
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3cf7ead9a5340d5db37a87bdf131ba87681d5a82
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731719"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412817"
 ---
-# <a name="video-player-module"></a>Videólejátszó-modul
+# <a name="video-player-module"></a>Videólejátszó modul
+
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a videólejátszó modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 A videólejátszó modul a videólejátszás támogatására szolgál. A tartalmat bármilyen oldalra felveheti, feltéve, hogy a videotartalom feltöltése a tartalomkezelő rendszerben (CMS) történik. A videolejátszó modul támogatja az .mp4 média típusát.
 
@@ -43,16 +49,12 @@ A videólejátszó modul támogatja a másodlagos hangsávot is. Videó CMS-be v
 
 A következő kép egy kezdőoldalon használt videólejátszó modul egy példáját jeleníti meg.
 
-![Példa a videólejátszó modulra.](./media/ecommerce-videoplayer.PNG)
+![Példa a videólejátszó modulra](./media/ecommerce-videoplayer.PNG)
 
 ### <a name="video-player-module-properties"></a>Videólejátszó modul tulajdonságai
 
 | Tulajdonság neve         | Érték                               | Leírás |
 |-----------------------|-------------------------------------|-------------|
-| Fejléc               | Fejléc szövege és fejléc címkéje (**H1**, **H2**, **H3**, **H4**, **H5** vagy **H6**) | Alapértelmezés szerint a **H2** fejléccímke használatos a fejlécekhez, de a címke az akadálymentességi követelményeknek megfelelően módosítható. |
-| Rich Text             | Bekezdés szövege | A modul támogatja a rich text formátumú bekezdésszöveget. A rendszer támogat néhány alapvető rich text képességet támogat, például a hiperhivatkozásokat, valamint a félkövér, az aláhúzott és a dőlt szövegformázást. Ezeket a képességeket a modulra alkalmazott laptéma felülbírálhatja. |
-| Hivatkozás                  | Hivatkozás szövege, hivatkozás URL-címe, akadálymentes dinamikus webes alkalmazások (ARIA) címke és **Hivatkozás megnyitása új lapon** választó | A modul egy vagy több „cselekvésre való felhívás” hivatkozást támogat. Hivatkozás hozzáadásakor hivatkozásszöveg, URL és ARIA címke szükséges. Az ARIA-címkéknek az akadálymentességi követelmények kielégítése érdekében leíró jellegűnek kell lenniük. A hivatkozások beállíthatók úgy, hogy új lapon legyenek megnyitva. |
-| Alszöveg              | Fejléc, szöveg vagy hivatkozások | A videólejátszó modulhoz további környezet is hozzáadható, például egy szerző vagy egy tervező neve, illetve egy személyes blogra mutató hivatkozások. |
 | Automatikus lejátszás             | **Igaz** vagy **Hamis**               | Ha **Igaz** értékre van beállítva, akkor a program automatikusan lejátssza a videót. |
 | Elnémítás                  | **Igaz** vagy **Hamis**               | Ha **Igaz** értékre van beállítva, akkor a hang le van némítva. Ennél a lejátszónál az alapértelmezett érték **Hamis**. A Chrome böngészőben alapértelmezés szerint az automatikusan lejátszott videók némítva vannak, és a hang lejátszása csak akkor történik meg, ha a felhasználó manuálisan játssza le a videót. |
 | Ciklus                  | **Igaz** vagy **Hamis**               | Ha **Igaz** értékre van beállítva, akkor a program a videót ismétlődő hurokban játssza le. |
@@ -62,9 +64,6 @@ A következő kép egy kezdőoldalon használt videólejátszó modul egy péld�
 | Videolejátszó vezérlői | **Igaz** vagy **Hamis**               | Ha **Igaz** értékre van beállítva, akkor az összes videolejátszó-vezérlő látható. Ezek közé a vezérlőelemek közé tartozik a lejátszás és szünet gomb, a folyamatjelző és a feliratbeállítások. |
 | Plakátkép elrejtése     | **Igaz** vagy **Hamis**               | A videó poszterkerettel jelenhet meg. Ha a tulajdonság értéke **Igaz**, akkor a program elrejti a poszterkeretet. |
 | Maszk szintje            | **0** és **100** közötti szám | A stílus módosításához a videóra alkalmazott maszk. |
-
-> [!IMPORTANT]
-> A **Címsor**, a **Rich Text**, a **Hivatkozás** és az **Alszöveg** tulajdonságok a Dynamics 365 Commerce 10.0.20-as verziójában érhetők el.
 
 ## <a name="add-a-video-player-module-to-a-page"></a>Videólejátszó modul hozzáadása egy laphoz
 
@@ -107,6 +106,3 @@ A videólejátszó modul új oldalra való felvételéhez és a kötelező tulaj
 [Szövegterület-modul](add-content-rich-block.md)
 
 [Tartalomblokk modul](add-hero-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

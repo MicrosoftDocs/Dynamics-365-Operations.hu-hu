@@ -1,30 +1,29 @@
 ---
 title: Adatimportálási és -exportálási feladatok áttekintése
 description: Az Adatezelése munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat.
-author: peakerbl
-ms.date: 10/21/2021
-ms.topic: overview
+author: Sunil-Garg
+manager: AnnBe
+ms.date: 11/02/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 3af49d9355f37e0016f491ed37050f75bbc65d72
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071085"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684060"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Adatimportálási és -exportálási feladatok áttekintése
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Az **Adatkezelés** munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat. Alapértelmezés szerint az adatimportálási és -exportálási folyamat létrehoz egy előkészítési táblát az egyes entitásokhoz a céladatbázisban. Az előkészítési táblák segítségével ellenőrizhetők, megtisztíthatók és konvertálhatók az adatok a mozgatás előtt.
 
@@ -71,9 +70,6 @@ Ha kiválaszt egy entitást, ki kell választania az exportálandó vagy import�
 | XML                    | \-–                                      | XML-elem XML-attribútum |
 | Elválasztott, rögzített szélesség | Vessző, pontosvessző, tabulátor, függőleges sáv, kettőspont | \-–                     |
 
-> [!NOTE]
-> Fontos kiválasztani a helyes értéket a **Sorelválasztó**, az **Oszlopelválasztó** és a **Szövegminősítő** számára, ha a **Fájlformátum** beállítása **Tagolt**. Győződjön meg róla, hogy az adatok nem tartalmazzák elválasztóként vagy minősítőként használt karaktert, mivel ez hibákat okozhat az importálás és exportálás során.
-
 ### <a name="sequence-the-entities"></a>Az entitások sorozetba állítása
 Az entitások sorrendbe állíthatók egy adatsablonban, valamint az importálási és exportálási feladatokban. Ha egy több adatentitást tartalmazó feladatot futtat, meg kell győződnie arról, hogy az adatentitások megfelelően vannak sorrendbe állítva. Az entitásokat alapvetően úgy kell sorozatba állítani, hogy meg lehessen címezni a funkcionális függőségeket az entitások között. Ha az entitások között nincsenek funkcionális függőségek, párhuzamos importálásra vagy exportálásra lehet ütemezni őket.
 
@@ -112,7 +108,7 @@ Két leképezési nézet van: **Megfeleltetés megjelenítése**, amely az alap�
 
 A **Forrásmegfeleltetések előállítása** kiválasztásával lehet létrehozni az oldalon egy leképezést. A létrehozott leképezés ugyanúgy viselkedik, mint az automatikus leképezése. Ezért manuálisan kell leképezni az esetleges le nem képezett mezőket.
 
-![Adatleképezés.](./media/dixf-map.png)
+![Adatleképezés](./media/dixf-map.png)
 
 ## <a name="verify-the-security-for-your-import-or-export-job"></a>Az importálási vagy az exportálási feladat biztonságának ellenőrzése
 A hozzáférés az **Adatkezelés** munkaterülethez korlátozható, hogy a rendszergazdai jogokkal nem rendelkező felhasználók csak meghatározott adatfeladatokhoz férhessenek hozzá. Az adatfeladathoz való hozzáférés azt jelenti, hogy teljes a hozzáférés az adott feladat végrehajtási előzményeihez, és az előkészítési táblákhoz is van hozzáférés. Ezért az adatfeladatok létrehozásakor gondoskodnia kell a megfelelő hozzáférés-szabályozás meglétéről.
@@ -138,7 +134,7 @@ A feladat meghatározása után a feladat futtatható egyszer az **Importálás*
 ## <a name="validate-that-the-job-ran-as-expected"></a>Ellenőrizze, hogy a feladat megfelelően futott le
 A feladatelőzmények hibaelhárítási és vizsgálati célra rendelkezésre állnak mind az importálási, mint az exportálási feladatoknál. Az előzményfeladat-futtatások időtartományok szerint vannak rendezve.
 
-![Feladat előzménytartományai.](./media/dixf-job-history.md.png)
+![Feladat előzménytartományok](./media/dixf-job-history.md.png)
 
 Minden lefuttatott feladat megadja a következő adatokat:
 
@@ -167,7 +163,19 @@ Az adatok importálásának gyorsítása érdekében engedélyezheti egy fájl i
     - Az **Importálási küszöbérték rekordszáma** mezőben adja meg az importálás rekordjainak küszöbszámát. Ez határozza meg a szál által feldolgozandó rekordok számát. Ha egy fájl 10 000 rekorddal rendelkezik, akkor ha a rekordok száma 2500 és a feladat száma 4, akkor minden szál 2500 rekordot dolgoz fel.
     - Az **importálási feladat száma** mezőbe írja be az importálási feladatok darabszámát. Ez nem haladhatja meg a kötegelt feldolgozásra engedélyezett maximális kötegszálak számát a **Rendszerfelügyelet \> Kiszolgáló konfigurációja** pontban.
 
-## <a name="job-history-clean-up"></a>Feladatelőzmények tisztítása 
+## <a name="clean-up-the-staging-tables"></a>Az előkészítési táblák megtisztítása
+A 29-es platformfrissítéstől kezdődően ez a funkció elavult. Ezt lecseréli az alább ismertetett, munkaelőzmények tisztítási funkció új verziója.
+
+Az előkészítési táblák adattisztítását elvégezheti **Az előkészítési táblák megtisztítása** funkcióval az **Adatkezelés** munkaterületen. A következő beállítások segítségével választható ki, hogy mely rekordok törlődjenek melyik előkészítési táblából:
+
+- **Entitás** – Ha csak egy entitás van megadva, az entitás előkészítési táblájának minden rekordja törlődik. Ezt a lehetőséget akkor használja, ha minden adatot törölni akar az entitásra nézve, az összes adatprojektben és az összes feladatban.
+- **Feladatazonosító** – Ha csak a Feladatazonosító van megadva, a kiválasztott feladat összes entitásának összes rekordja törlődik a megfelelő előkészítési táblákból.
+- **Adatprojektek** – Ha csak egy adatprojekt van kiválasztva, a rendszer az összes entitás összes rekordját törli az összes feladatra nézve a kiválasztott adatprojektben.
+
+A lehetőségek kombinálásával tovább korlátozhatja a törölt rekordkészletet.
+
+## <a name="job-history-clean-up-available-in-platform-update-29-and-later"></a>A feladatelőzmények törlése (a 29-es patformfrissítéstől érhető el)
+
 Az adatkezelés során a feladatelőzmények törlési funkcióit kell használni a végrehajtási előzmények periodikus törlésének ütemezéséhez. Ez a funkció felváltja a korábbi előkészítési tábla törlése funkciót, amely most már elavult. A következő táblák lesznek törölve a törlési folyamat során.
 
 -   Minden előkészítési tábla
@@ -203,10 +211,16 @@ A tisztítási folyamat ütemezésekor a következő paramétereket kell megadni
 > [!NOTE]
 > Ha az előkészítési táblák rekordjait nem teljes mértékben tisztították meg, győződjön meg arról, hogy az tisztítási feladat futtatása ismétlődő ütemezésű. A fentieknek megfelelően a tisztítási művelet során a feladat csak annyi végrehajtási azonosítót tisztít meg, amennyi a megadott maximum órán belül lehetséges. Ha folytatni szeretné a fennmaradó előkészítési rekordok tisztítását, akkor a feladatnak rendszeresen futnia kell.
 
-## <a name="job-history-clean-up-and-archival"></a>Feladatelőzmények tisztítása és archiválása 
+## <a name="job-history-clean-up-and-archival-available-for-preview-in-platform-update-39-or-version-10015"></a>Feladatelőzmények törlése és archiválása (előzetes verzióként érhető el a 39-es platformfrissítésben vagy a 10.0.15 verzióban)
 A feladat előzmények törlése és archiválása funkció felülírja a karbantartás funkció korábbi verzióit. Ez a szakasz ezeket az új képességeket fogja elmagyarázni.
 
-A karbantartás funkció egyik fő változtatása a rendszer kötegelt munkájának használata a előzmények törlésére. A rendszer kötegelt jobjának használata lehetővé teszi a Finance and Operations alkalmazások számára, hogy a tisztító kötegelt feladatot automatikusan ütemezzék és futtassák, amint a rendszer készen áll. A kötegelt feladat manuális ütemezésére már nincs szükség. Ebben az alapértelmezett végrehajtási módban a kötegelt feladat éjféltől óránként indul, és a legutóbbi 7 nap végrehajtási előzményeit fogja megtartani. A program archiválja a kiürített előzményeket a jövőbeli visszakeresés céljából. A 10.0.20-as verziótól kezdve ez a funkció mindig be van kapcsolva.
+A karbantartás funkció egyik fő változtatása a rendszer kötegelt munkájának használata a előzmények törlésére. A rendszer kötegelt feladatának használata lehetővé teszi a Finance and Operations alkalmazások számára, hogy amikor a rendszer készen áll, automatikusan ütemezze és futtassa a karbantartási kötegelt feladatot. A kötegelt feladat manuális ütemezésére már nincs szükség. Ebben az alapértelmezett végrehajtási módban a kötegelt feladat éjféltől óránként indul, és a legutóbbi 7 nap végrehajtási előzményeit fogja megtartani. A program archiválja a kiürített előzményeket a jövőbeli visszakeresés céljából.
+
+> [!NOTE]
+> Mivel ez a funkció előzetes verziójú, a rendszer kötegelt feladata nem törli a végrehajtási előzményeket mindaddig, amíg az nincs engedélyezve a DMFEnableExecutionHistoryCleanupSystemJob tesztfeladattal. Ha a funkció egy későbbi verzióban általánosan elérhető lesz, akkor ez a tesztművelet nem kötelező, és, amikor a rendszer készen áll a kötegelt feladat megkezdi a törlést és archiválást, a fent ismertetett ütemezés szerint. 
+
+> [!NOTE]
+> A jövőbeli verziókban a karbantartási funkciók korábbi verziói el lesznek távolítva a Finance and Operations alkalmazásokból.
 
 A karbantartási folyamat második változása a törölt végrehajtási előzmények archiválása. A karbantartási feladat archiválja a törölt rekordokat a blob-tárolóba amelyet a DIXF használ a rendszeres integrációhoz. Az archivált fájl DIXF-csomagformátumú lesz, és 7 napig elérhető lesz a blobban, és ekkor azt le lehet tölteni. Az archivált fájl alapértelmezett megtartási időtartama 7 nap, ami legfeljebb 90 napra módosítható a paraméterekben.
 
@@ -229,6 +243,3 @@ Az archivált végrehajtási előzmények letöltéséhez nyissa meg az adatkeze
 -   DMFSTAGINGLOGDETAILS
 -   DMFSTAGINGVALIDATIONLOG
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,38 +1,39 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. február 18.)
 description: Ez a cikk a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. február 18-i kiadásban.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9cce93aab902a8ca269cf22e1999716fe49f3ed8
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: 002b1b8b86c4fb40f46c239669cd5dfead251bfe
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063004"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4526978"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. február 18.)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a cikk a Dynamics 365 Human Resources szolgáltatásban található új vagy módosított funkciókat írja le. A változtatások a 8.1.2903-es buildszámra vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok az LCS támogatási számaira vonatkoznak referenciaképpen.
 
 ## <a name="platform-update-32"></a>32-as platformfrissítés 
 
-A 32-es platform-frissítés már elérhető. További információkért lásd [A Finance and Operations 32-es platformfrissítésének újdonságai vagy változásai (2020. február)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+A 32-es platform-frissítés már elérhető. A további tudnivalókat lásd: [Újdonságok és módosítások a Finance and Operations-alkalmazások 32-as platformfrissítéséhez (2020. február)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32).
 
 ## <a name="search-values-are-remembered-when-changing-view-options-in-streamlined-employee-form-383833"></a>A program a keresési értékeket az egyszerűsített alkalmazotti űrlap nézetbeállításainak módosításakor emlékszik (383833).
 
@@ -42,17 +43,17 @@ Az új **Dolgozó** képernyő most emlékszik a keresési értékekre, amikor m
 
 A fix és változó kompenzációs kezelési csempék most a megfelelő rekordokat jelenítik meg az új **Dolgozó** képernyőn. Csak az egyszerűsített dolgozói űrlap előzetes funkciójára vonatkozik. Ezt az előnézeti funkciót engedélyezheti a **szolgáltatások kezelése** modulban. További információért lásd: [Funkciók kezelése](hr-admin-manage-features.md).
 
-## <a name="empty-status-field-for-some-leave-request-records-in-dataverse-414915"></a>Üres állapotmező látható a Dataverse szolgáltatás néhány távollétkérelmi rekordjánál (414915)
+## <a name="empty-status-field-for-some-leave-request-records-in-common-data-service-414915"></a>Üres állapotmező látható a Common Data Service szolgáltatás néhány távollétkérelmi rekordjánál (414915)
 
-A módosítással javul a Dataverse egyik hibája, amikor a távollétkérelem **Állapot** mezőjének beállítása **Felülvizsgálat**. Dataverse most az állapotot tükrözi.
+A módosítással javul a Common Data Service egyik hibája, amikor a távollétkérelem **Állapot** mezőjének beállítása **Felülvizsgálat**. Common Data Service most az állapotot tükrözi.
 
 ## <a name="skill-gap-analysis-only-possible-for-assigned-job-411390"></a>A szakértelem hiányelemzése csak hozzárendelt feladatnál lehetséges (411390)
 
 Most már végrehajthatja a Human Resources szolgáltatásban meghatározott bármely feladat szakértelmi hiányelemzését.
 
-## <a name="system-currency-doesnt-sync-from-dataverse-to-human-resources-in-new-environments-418011"></a>A rendszerpénznem nem szinkronizál a Dataverse szolgáltatásból a Human Resources szolgáltatásba új környezetekben (418011)
+## <a name="system-currency-doesnt-sync-from-common-data-service-to-human-resources-in-new-environments-418011"></a>A rendszerpénznem nem szinkronizál a Common Data Service szolgáltatásból a Human Resources szolgáltatásba új környezetekben (418011)
 
-A rendszerpénznem most már szinkronizálhat a Dataverse szolgáltatásból a Human Resources szolgáltatásba.
+A rendszerpénznem most már szinkronizálhat a Common Data Service szolgáltatásból a Human Resources szolgáltatásba.
 
 ## <a name="in-preview"></a>Előnézetben
 
@@ -62,9 +63,9 @@ A rendszerpénznem most már szinkronizálhat a Dataverse szolgáltatásból a H
 
 ## <a name="coming-soon"></a>Hamarosan
 
-### <a name="updated-dataverse-solution"></a>Dataverse megoldás frissítve
+### <a name="updated-common-data-service-solution"></a>Common Data Service megoldás frissítve
 
-Az új Dataverse megoldás hamarosan a következő változtatásokkal érhető el:
+Az új Common Data Service megoldás hamarosan a következő változtatásokkal érhető el:
 
 | Leírás | Visszajáró |
 | ----------------------------------------- | --- |
@@ -75,13 +76,11 @@ Az új Dataverse megoldás hamarosan a következő változtatásokkal érhető e
 | Új változó kompenzációs beállítási entitások | **Változó kompenzációs konstrukció típusa**</br>**Változó kompenzációs konstrukció**</br>**Kilépési szabályok**</br>**Változó kompenzációs konstrukció szintje** |
 | Új **Dolgozói naptár – foglalkoztatás** entitás | **Munkanaptár-entitás** hozzáadva |
 | Új **Bérlista szerinti beosztás részletei** entitás | **Bérlista szerinti beosztás** részletei |
-| Új **Beosztás** entitás | **Beosztás** hozzáadása Az új **Cím** entitást a Human Resources és a Dataverse közötti szinkronizálási folyamatában fog szerepelni. Kezdetben nem lesz hivatkozva a **Beosztás** vagy a **Feladat** entitásból. |
+| Új **Beosztás** entitás | **Beosztás** hozzáadása Az új **Cím** entitást a Human Resources és a Common Data Service közötti szinkronizálási folyamatában fog szerepelni. Kezdetben nem lesz hivatkozva a **Beosztás** vagy a **Feladat** entitásból. |
 
 ## <a name="see-also"></a>Lásd még
 
 [Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

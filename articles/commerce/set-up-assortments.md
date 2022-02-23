@@ -2,9 +2,11 @@
 title: Szortiment beállítása
 description: Ez a cikk leírja, hogy mi a szortiment, és elmagyarázza, hogyan kell beállítani a szortimenteket a Dynamics 365 Commerce programban.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailAssortmentDetails
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 31ec0079584832537431872fea61a07b58d31648cdac0f29a469bc977009622f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774485"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969826"
 ---
 # <a name="set-up-assortments"></a>Szortimentek beállítása
 
@@ -31,7 +33,7 @@ Ez a cikk leírja, hogy mi a szortiment, és elmagyarázza, hogyan kell beállí
 
 A választék olyan kapcsolódó termékek gyűjteménye, amelyeket egy kereskedelmi csatornához hozzárendelnek, például egy fizikai üzlethez vagy egy online áruházhoz. A kiskereskedelmi áruházban rendelkezésre álló termékek azonosítása. Szortiment termékkategóriák is tartozhat. A kijelölt kategóriához rendelt összes termék szerepel a szortimentben. A vállalatfüggő termékek és termékek meghatározott változatok szortiment is tartalmazhatnak. Szortiment beállításával rendelhet egyidejűleg több ezer terméket a kereskedelmi csatornáihoz, bármilyen kombinációban, amelyet az üzlet igényel. Tetszőleges számú termék szortimentek van szüksége, be lehet állítani. Megadhat egy vagy több szortimentet, és minden termék egy vagy több csatornához rendelhető hozzá. Például megadhatja egy szortiment, amelyek a termékek alapvető készletét tartalmazza. Az összes üzlet a szortimentet kapja. Egy másik szortiment csak nagy sporteseményekre berendezések tartalmazó majd határozza meg. A nagyobb üzletek a szortimentet kapja. A következő ábra bemutatja, hogyan rendelhetők a termékek szortimentekhez, és azok hogyan rendelhetők kereskedelmi csatornákhoz.
 
-![Szortiment terméksorai.](./media/assortments_relationship.gif)
+![Szortiment terméksorai](./media/assortments_relationship.gif)
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -52,6 +54,3 @@ Miután befejezte a előfeltételeket, hozzon létre egy szortimentet, és rende
 2. Válassza ki a csatornákat vagy azon legfelső szintű csatornacsoportokat, amelyekre a szortiment vonatkozik.
 3. A szortiment termékkategóriák, az egyes termékek vagy termékváltozatok hozzáadása. Egy adott kategóriára az összes termék is felvehet, vagy egy kiválasztott termék kizárhatja a kategóriából, amely a szortiment szerepel.
 4. Közzéteszi a szortimentet. Szortiment közzétételekor automatikusan elindul a szortimentek ütemezése. Ez a folyamat hoz létre a termékek listája. A folyamat befejezése után a termékek elérhetővé válnak azon csatornák számára, amelyhez a termékszortiment hozzá van rendelve. Ha a módosítások egy közzétett szortimentet érintenek, vagy olyan csatornákat, amelyekhez a szortiment hozzá van rendelve, akkor a szortimentet frissíteni kell. A szortiment módosításkor történő frissítése érdekében futtathatja a szortimentütemezőt kötegelt feladatként.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

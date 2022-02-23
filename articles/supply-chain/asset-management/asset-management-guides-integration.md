@@ -1,27 +1,28 @@
 ---
 title: A Dynamics 365 Supply Chain Management (Eszközkezelés) integrálása a Dynamics 365 Guides alkalmazással
 description: Ez a témakör azt mutatja be, hogyan lehet integrálni a Microsoft Dynamics 365 Supply Chain Management Eszközkezelő modulját a Dynamics 365 Guides alkalmazással annak érdekében, hogy kihasználhassa a vegyes valóság útmutatókat a mindennapos szolgáltatási és karbantartási feladatokban.
-author: johanhoffmann
+author: kamaybac
+manager: tfehr
 ms.date: 04/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: johanho
+ms.author: dabourq
 ms.search.validFrom: 2020-04-28
-ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 4132992eb5f4b42d43d9ff72cada616fe0573c2f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: f9ee7f1af8e88f56589c84bfaa063ea005aa353a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568255"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429347"
 ---
 # <a name="integrate-dynamics-365-supply-chain-management-asset-management-with-dynamics-365-guides"></a>A Dynamics 365 Supply Chain Management (Eszközkezelés) integrálása a Dynamics 365 Guides alkalmazással
-
-[!include [banner](../includes/banner.md)]
 
 Integrálhatja a Microsoft Dynamics 365 Supply Chain Management **Eszközkezelő modulját** a Dynamics 365 Guides alkalmazással annak érdekében, hogy kihasználhassa a vegyes valóság útmutatókat a mindennapos szolgáltatási és karbantartási feladatokban. Ha egy útmutató egy Eszközkezelési munkarendeléshez van társítva, akkor egy dolgozó, aki megnyitja a munkarendelés karbantartási ellenőrzőlistáját a Supply Chain Management (Dynamics 365) alkalmazásban, azt látja, hogy rendelkezésre áll egy útmutató. A dolgozó ezután megkeresheti és megnyithatja az útmutatót a Dynamics 365 Guides HoloLens alkalmazásban.
 
@@ -32,12 +33,12 @@ Mielőtt útmutatókat csatolhat a Eszközkezelési munkarendelésekhez, ezeket 
 - [A Dynamics 365 Supply Chain Management](../../fin-ops-core/fin-ops/index.md) 10.0.9 vagy újabb verziójának beállítása.
 - [A kettős írás funkció bekapcsolása a Supply Chain Management alkalmazásokhoz](../../fin-ops-core/dev-itpro/data-entities/dual-write/enable-dual-write.md).
 - [Tesztcsomag bekapcsolása](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#features-flighted-in-data-management-and-enabling-flighted-features) az **MRGuidesFeature** funkcióhoz. (Termelési környezetek esetében először egy támogatási jegyet kell elküldenie, hogy a bérlője bekerüljön a tesztelési csoportba.)
-- [Kapcsolja be a következő konfigurációs kulcsokat](/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) a **Licenckonfiguráció** oldalon:
+- [Kapcsolja be a következő konfigurációs kulcsokat](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/license-code-and-configuration-key-reference) a **Licenckonfiguráció** oldalon:
 
     - Eszközkezelés \> Eszközkezelés vegyes valóságban
     - Vegyes valóság \> Vegyes valóság útmutató
 
-- [A Dynamics 365 Guides](/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) 200.0.0.96 vagy újabb verziójának beállítása.
+- [A Dynamics 365 Guides](https://docs.microsoft.com/dynamics365/mixed-reality/guides/setup#step-2-create-a-common-data-service-environment-and-install-the-dynamics-365-guides-solution) 200.0.0.96 vagy újabb verziójának beállítása.
 
 ## <a name="use-dynamics-365-guides-with-asset-management"></a>A Dynamics 365 Guides használata az Eszközkezeléssel
 
@@ -49,8 +50,8 @@ Egy útmutató társításához a Eszközkezelés modulban egy karbantartás ell
 
 1. Hozzon létre egy útmutatót a Dynamics 365 Guides PC és HoloLens alkalmazásokkal. Ha szeretne többet megtudni útmutatók készítéséről, tekintse át az alábbi témaköröket:
 
-    - [A számítógépes alkalmazás használata útmutató létrehozásához](/dynamics365/mixed-reality/guides/pc-app-overview)
-    - [A hologramok elhelyezése a HoloLens alkalmazás segítségével](/dynamics365/mixed-reality/guides/hololens-app-overview)
+    - [A számítógépes alkalmazás használata útmutató létrehozásához](https://docs.microsoft.com/dynamics365/mixed-reality/guides/pc-app-overview)
+    - [A hologramok elhelyezése a HoloLens alkalmazás segítségével](https://docs.microsoft.com/dynamics365/mixed-reality/guides/hololens-app-overview)
 
 1. Az Supply Chain Management alkalmazásban [hozzon létre egy karbantartásiellenőrzőlista-sablont](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-checklist-template).
 1. A létrehozott útmutatót társítsa egy karbantartásiellenőrzőlista-sorhoz az új karbantartásiellenőrzőlista-sablonban:
@@ -58,38 +59,38 @@ Egy útmutató társításához a Eszközkezelés modulban egy karbantartás ell
     1. A **Karbantartásiellenőrzőlista-sorok** gyorslapon válassza ki azt a sort, amelyhez társítani szeretné az útmutatót.
     1. Válassza a **Társított útmutatók** gyorslap **Útmutató hozzáadása** elemét.
 
-        ![Útmutató társítása karbantartásiellenőrzőlista-sorhoz.](media/am-guides-integration-add-guide.png "Útmutató társítása karbantartásiellenőrzőlista-sorhoz")
+        ![Útmutató társítása karbantartásiellenőrzőlista-sorhoz](media/am-guides-integration-add-guide.png "Útmutató társítása karbantartásiellenőrzőlista-sorhoz")
 
     1. A **Név** mezőben válasszon ki egy segédvonalat, majd válassza a **Mentés** parancsot.
 
-        ![A Név mezőben válasszon egy útmutatót.](media/am-guides-integration-select-guide.png "A Név mezőben válasszon egy útmutatót")
+        ![A Név mezőben válasszon egy útmutatót](media/am-guides-integration-select-guide.png "A Név mezőben válasszon egy útmutatót")
 
 1. A karbantartásiellenőrzőlista-sablon társítása egy feladattípushoz:
 
     1. [Hozzon létre egy karbantartásifeladat-típust](setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md#create-a-maintenance-job-type), vagy válasszon egy meglévő karbantartásifeladat-típust.
     1. A Művelet ablaktáblán válassza a **Karbantartási feladattípus alapértelmezései** lehetőséget.
 
-        ![Karbantartási feladattípus alapértelmezések gomb.](media/am-guides-integration-job-defaults.png "Karbantartási feladattípus alapértelmezések gomb")
+        ![Karbantartási feladattípus alapértelmezések gomb](media/am-guides-integration-job-defaults.png "Karbantartási feladattípus alapértelmezések gomb")
 
     1. Hozzon létre egy sort, majd kattintson a **Mentés** lehetőségre.
 
-        ![Hozzon létre egy sort.](media/am-guides-integration-add-line.png "Egy sor létrehozása")
+        ![Egy sor létrehozása](media/am-guides-integration-add-line.png "Egy sor létrehozása")
 
     1. A Művelet panelen válassza a **Karbantartási ellenőrzőlista** elemet.
 
-        ![Karbantartási ellenőrzőlista gombja.](media/am-guides-integration-maintenance-checklist.png "Karbantartási ellenőrzőlista gombja")
+        ![Karbantartási ellenőrzőlista gombja](media/am-guides-integration-maintenance-checklist.png "Karbantartási ellenőrzőlista gombja")
 
     1. A **Karbantartásellenőrzőlista-sorok** gyorslapján vegyen fel egy sort, majd módosítsa a **Típus** mező értékét **Sablon** értékre.
 
-        ![A Típus érték módosítása.](media/am-guides-integration-checklist-lines.png "A Típus érték módosítása")
+        ![A Típus érték módosítása](media/am-guides-integration-checklist-lines.png "A Típus érték módosítása")
 
     1. Válassza ki a **Sor részletei** gyorslap **Sablon** mezőjében azt a sablont, amelyhez az útmutatót társította, majd válassza a **Mentés** parancsot.
 
-        ![Sablon kijelölése.](media/am-guides-integration-checklist-line-details.png "Sablon kijelölése")
+        ![Sablon kijelölése](media/am-guides-integration-checklist-line-details.png "Sablon kijelölése")
 
 1. [Hozzon létre egy munkarendelést](work-orders/manually-created-workorders.md#create-work-order), majd válassza ki azt a karbantartási feladattípust, amely az útmutatóhoz társított karbantartásiellenőrzőlista-sablont használja. A program automatikusan a munkarendeléshez rendeli az útmutatót.
 
-    ![Válassza ki a karbantartási feladat típusát.](media/am-guides-integration-create-work-order.png "Válassza ki a karbantartási feladat típusát")
+    ![Válassza ki a karbantartási feladat típusát](media/am-guides-integration-create-work-order.png "Válassza ki a karbantartási feladat típusát")
 
 1. A munkarendeléshez és a dolgozókhoz kapcsolódó útmutató megtekintése:
 
@@ -97,11 +98,11 @@ Egy útmutató társításához a Eszközkezelés modulban egy karbantartás ell
     1. Nyissa meg a munkarendeléshez tartozó [Karbantartási ellenőrzőlistát](asset-management-mobile-workspace.md#view-maintenance-checklist-on-a-work-order-job).
     1. Jelöljön ki egy ellenőrzőlista-sort a kapcsolódó útmutató megtekintéséhez.
 
-        ![Az ellenőrzőlista-sorhoz társított útmutató.](media/am-guides-integration-show-guide.png "Az ellenőrzőlista-sorhoz társított útmutató")
+        ![Az ellenőrzőlista-sorhoz társított útmutató](media/am-guides-integration-show-guide.png "Az ellenőrzőlista-sorhoz társított útmutató")
 
     1. Nyissa meg az útmutatót a HoloLens eszközön.
 
-        ![Az útmutató megnyitása a HoloLens eszközön.](media/am-guides-integration-hololens-select.png "Nyissa meg az útmutatót a HoloLens eszközön")
+        ![Az útmutatót megnyitása a HoloLens eszközön](media/am-guides-integration-hololens-select.png "Nyissa meg az útmutatót a HoloLens eszközön")
 
 > [!NOTE]
 > Az útmutatók közvetlenül is társíthatók egy munkarendelés vagy egy feladattípus karbantartási ellenőrzőlistájához.
@@ -113,6 +114,3 @@ Egy útmutató társításához a Eszközkezelés modulban egy karbantartás ell
 
 - [Kettős írás – áttekintés](../../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview.md)
 - [Eszközkezelés – áttekintés](index.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

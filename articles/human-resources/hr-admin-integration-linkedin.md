@@ -2,12 +2,15 @@
 title: Integráció a LinkedIn Talent Hub szolgáltatással
 description: Ez a témakör bemutatja, hogyan lehet beállítani a Microsoft Dynamics 365 Human Resources és a LinkedIn Talent Hub közötti integrációt.
 author: jaredha
+manager: tfehr
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fb75c391809f1ce5c7d48728a735f347ef1784ed
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: 6f70e3a6ccf9770c75334d355db5e9df9ee912dd
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441265"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527885"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integráció a LinkedIn Talent Hub szolgáltatással
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](includes/preview-feature.md)]
 
-> [!IMPORTANT]
-> Az ebben a témakörben leírt, a Dynamics 365 Human Resources és a LinkedIn Talent Hub közötti integráció 2021. december 31-én lesz visszavonva. Az integrációs szolgáltatás ezután az időpont után nem lesz elérhető. Az integrációs szolgáltatást még nem használó szervezetek a visszavonás előtt nem fogják tudni bevezetni a szolgáltatást.
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 A [LinkedIn Talent hub](https://business.linkedin.com/talent-solutions/talent-hub) egy pályázókövetési rendszer (applicant tracking system, ATS) platform. Ez lehetővé teszi a munkaerő sourcingját, kezelését és alkalmazását egyetlen helyen. A Microsoft Dynamics 365 Human Resources és a LinkedIn Talent hub integrálásával könnyedén létrehozhat alkalmazotti rekordokat a Human Resources alkalmazásban azok számára, akiket felvettek valamilyen beosztásra.
 
@@ -47,7 +49,7 @@ A rendszergazdának be kell fejeznie a beállítási feladatokat, hogy engedély
 
 5. A **Dynamics 365 Human Resources** lapon válassza ki a LinkedIn Talent Hub elemhez kapcsolandó környezetet, majd válassza a **Csatolás** lehetőséget.
 
-    ![LinkedIn Talent Hub előkészítés.](./media/hr-admin-integration-talent-hub-onboarding.jpg)
+    ![LinkedIn Talent Hub előkészítés](./media/hr-admin-integration-talent-hub-onboarding.jpg)
 
     > [!NOTE]
     > Csak olyan környezetekhez kapcsolódhat, amelyeknél a felhasználói fiók rendszergazdája hozzáférhet mind a Human Resources környezethez, mind a társított Power Apps-környezethez. Ha a Human Resources hivatkozáslapján nem szerepelnek környezetek, győződjön meg arról, hogy a bérlőn engedélyezve legyen a Human Resources környezet, valamint azt, hogy a hivatkozás lapra bejelentkezett felhasználó rendelkezzen rendszergazdai jogosultsággal mind a Human Resources környezethez, mind a Power Apps-környezethez.
@@ -90,7 +92,7 @@ Létre kell hozni egy alkalmazásfelhasználót a LinkedIn Talent Hub adapterhez
 
 6. A lista fölötti legördülő menü segítségével módosítsa az alapértelmezett **Engedélyezett felhasználók** nézetet erre: **Alkalmazásfelhasználók**.
 
-    ![Alkalmazásfelhasználók nézet.](./media/hr-admin-integration-power-apps-application-users.jpg)
+    ![Alkalmazásfelhasználók nézet](./media/hr-admin-integration-power-apps-application-users.jpg)
 
 7. Válassza ki az eszköztár **Új** gombját.
 
@@ -125,14 +127,14 @@ Miután elmentette és bezárta az új alkalmazásfelhasználót az előző szak
     - **Név**: adja meg a korábban létrehozott Power Apps biztonsági szerepkör nevét, például **LinkedIn Talent Hub HRIS Integráció**.
     - **Felhasználói azonosító**: válassza ki azt a felhasználót, akinek van engedélye a Személyzet kezelése szakasz adatainak írására.
 
-### <a name="create-the-table-in-dataverse"></a>Tábla létrehozása a Dataverse szolgáltatásban
+### <a name="create-the-entity-in-common-data-service"></a>Entitás létrehozása a Common Data Service szolgáltatásban
 
 > [!IMPORTANT]
-> A LinkedIn Talent Hub integrációja a Dataverse Human Resources számára létrehozott virtuális tábláitól függ. A beállítás előfeltétele a virtuális táblák konfigurálása. A virtuális táblák konfigurálásával kapcsolatos tudnivalókért lásd: [Dataverse virtuális táblák konfigurálása](./hr-admin-integration-common-data-service-virtual-entities.md).
+> A LinkedIn Talent Hub integrációja a Common Data Service Human Resources számára létrehozott virtuális entitásaitól függ. A beállítás előfeltétele, a virtuális entitásokat beállítása. A virtuális entitások konfigurálásával kapcsolatos tudnivalókért lásd: [Common Data Service virtuális entitások](https://docs.microsoft.com/dynamics365/human-resources/hr-admin-integration-common-data-service-virtual-entities).
 
-1. A HR-modulban nyissa meg a **Dataverse integrációja** oldalt.
+1. A HR-modulban nyissa meg a **Common Data Service (CDS) integrációja** oldalt.
 
-2. Válassza ki a **Virtuális táblák** lapot.
+2. Válassza ki a **Virtuális entitások** lapot.
 
 3. Az entitáslistájár zűrje az entitások címkéi szerint, hogy megtalálja a **LinkedIn exportált pályázóit**.
 
@@ -140,7 +142,7 @@ Miután elmentette és bezárta az új alkalmazásfelhasználót az előző szak
 
 ## <a name="exporting-candidate-records"></a>Jelöltrekordok exportálása
 
-A telepítés befejezése után a toborzók és az emberi erőforrások (HR) szakemberei a LinkedIn Talent hub **Exportálás a HRIS-be** funkcióját használhatják a LinkedIn Talent Hub programból a Human Resources felé átadott jelöltrekordok exportálására.
+A telepítés befejezése után a toborzók és az Emberi erőforrások (HR) szakemberei a LinkedIn Talent hub **Exportálás a HRIS-be** funkcióját használhatják a LinkedIn Talent Hub programból a Human Resources felé átadott jelöltrekordok exportálására.
 
 ### <a name="export-records-from-linkedin-talent-hub"></a>Rekordok exportálása a LinkedIn Talent Hub alkalmazásból
 
@@ -162,7 +164,7 @@ Miután a pályázó végigment a toborzási folyamaton, és már felvették, ex
     - A **Telephely** mezőbe írja be azt a telephelyet, ahol az alkalmazott alapvetően dolgozni fog.
     - Adja meg vagy ellenőrizze az alkalmazott e-mail-címét.
 
-![Exportálás a HRIS-be panel a LinkedIn Talent hub alkalmazásban.](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
+![Exportálás a HRIS-be ablaktábla a LinkedIn Talent hub alkalmazásban](./media/hr-admin-integration-linkedin-talent-hub-export.jpg)
 
 ## <a name="complete-onboarding-in-human-resources"></a>Előkészítés befejezése a Human Resources alkalmazásban
 
@@ -186,8 +188,5 @@ A program az alábbi adatokat importálja és viszi fel az új alkalmazotti reko
 
 ## <a name="see-also"></a>Lásd még
 
-[Dataverse virtuális táblák konfigurálása](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
-[Mi az a Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Common Data Service-virtuális entitások konfigurálása](./hr-admin-integration-common-data-service-virtual-entities.md)<br>
+[Mi az a Common Data Service?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)

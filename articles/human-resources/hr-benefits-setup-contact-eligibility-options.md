@@ -1,35 +1,33 @@
 ---
 title: A személyes kapcsolattartó jogosultsági beállításainak konfigurálása
-description: Ez a témakör a személyes kapcsolatok jogosultsági beállításainak konfigurálását ismerteti a Microsoft Dynamics 365 Human Resources rendszerben.
-author: twheeloc
-ms.date: 08/24/2021
+description: A Microsoft Dynamics 365 Human Resources rendszerben konfigurálhatja a személyes kapcsolattartók jogosultsági beállításait. A személyes kapcsolattartók lehetnek kedvezményezettek vagy függő felek.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ad9dc9d12bcc419c3925b0f78566d9f3eb0a1e35
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 68364b0cc1c579a3ee9813474c9d3f6e4df1c05d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070350"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418871"
 ---
 # <a name="configure-personal-contact-eligibility-options"></a>A személyes kapcsolattartó jogosultsági beállításainak konfigurálása
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Ez a témakör bemutatja, hogyan lehet konfigurálni a Microsoft Dynamics 365 Human Resources rendszer juttatásaiban használható személyes kapcsolattartók típusait. A személyes kapcsolattartók azok a személyek, akikre a terv fedezete vonatkozik (eltartottak), vagy akik a tervek kedvezményezettjei lesznek (kedvezményezettek). Az eltartottak általában házastársak vagy gyermekek. A kedvezményezettek házastársak, gyermekek, alapok vagy szülők lehet.
+Ez a cikk bemutatja, hogyan lehet konfigurálni a Microsoft Dynamics 365 Human Resources rendszer juttatásaiban használt személyes kapcsolattartók típusait. A személyes kapcsolattartók lehetnek kedvezményezettek vagy függő felek. 
 
 1. A **Juttatások kezelése** munkaterület **Beállítás** részén válassza a **Személyes kapcsolattartó jogosultsági beállításai** lehetőséget.
 
@@ -47,6 +45,3 @@ Ez a témakör bemutatja, hogyan lehet konfigurálni a Microsoft Dynamics 365 Hu
    | **Kor** | A juttatási konstrukció jogosult személyes kapcsolattartójának maximális életkora. Ez a mező csak akkor aktív, ha választ egy kapcsolatot. A rendszer összehasonlítja ezt az életkort a személyes kapcsolattartó számított életkorával. Számított életkor: (fedezeti dátum – személyes kapcsolattartó születési dátuma / 365). Ez a szám mindig egész szám. |
 
 4. Válassza a **Mentés** lehetőséget. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -51,6 +51,3 @@ A nyitott pozíciókat elehető legjobb alkalmas jelölt számára szeretné elj
 
 > [!NOTE]
 > A Microsoft és Attract vesz nem részt ezen értékek létrehozásában és kezelésében. Az Ön felelőssége naprakészen tartani azokat az Attract megoldásban, illetve az, hogy együttműködjön a Broadbeannel, hogy megoldja a hitelesítési adatokkal kapcsolatos esetleges problémákat.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

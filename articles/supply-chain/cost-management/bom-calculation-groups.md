@@ -2,26 +2,29 @@
 title: Anyagjegyzék-számítási csoportok
 description: Ez a cikk bemutatja az anyajegyzék (AJ) számítási csoportjait, valamint azok felállítását. Az AJ számítás futtatásához be kell állítania egy számítási csoportokat, majd ezeket hozzá kell rendelnie különböző cikkekhez, vagy be kell állítania egy alapértelmezett számítási csoportot. A számítási csoport számítási beállításai az alapértelmezett értékek az Anyagjegyzék-számítás oldalon az Anyajegyzék számításának ideje alatt.
 author: AndersGirke
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcGroup, BOMCalcTable, BOMCalcTrans, InventItemPrice
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 94063
 ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 098a2fc065f6ace992dba1b1ae78756d456eb73a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6e4f53401d604ce3c8308ed475a0b6147805cb78
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579856"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429724"
 ---
 # <a name="bom-calculations-groups"></a>Anyagjegyzék-számítási csoportok
 
@@ -95,6 +98,3 @@ A figyelmeztető üzenetek közötti eltérések alapján azonosíthat több AJ 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

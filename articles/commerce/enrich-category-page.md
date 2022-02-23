@@ -2,36 +2,42 @@
 title: Kategória céloldalának gazdagítása
 description: Ez a témakör a kategória oldalainak bővítésével foglalkozik Dynamics 365 Commerce.
 author: v-chgri
+manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5bb28c3b5fbb1133d32219b9c47dd1477ae2ac982ee035321dafd77c53dc910b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ca31ec7d2eee7d2b0c863506338341a870ff07ee
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771007"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412862"
 ---
-# <a name="enrich-a-category-landing-page"></a>Kategória céloldalának bővítése
+# <a name="enrich-a-category-landing-page"></a>Kategória céloldalának gazdagítása
+
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a kategória oldalainak bővítésével foglalkozik Dynamics 365 Commerce.
 
+## <a name="overview"></a>Áttekintés
+
 A Commerce egy alapértelmezett kategória-nyitólapot biztosít, amely a kategóriaadatok megjelenítésekor kerül felhasználásra. Az alapértelmezett kategórialap tartalmazza a szükséges elemeket, például a finomítókat, a kategorizált termékelhelyezést, a rendezési beállításokat, a választási lehetőségek összesítését és a laptördelési vezérlőelemeket. 
 
 Az alapértelmezett kategórialap használata helyett előfordulhat, hogy olyan „bővített” kategória-nyitólapot szeretne használni, amely több tartalmat és konkrétabb elemeket tartalmaz. A jellemző bővítéshez szükség lehet a kategória-specifikus marketinganyagok kategóriaoldalhoz. Ez a tartalom több keresztértékesítési célú keresztkategóriás termékelhelyezést, szerkesztői listákat, képeket, videókat és egyéb szöveget tartalmazhat. Vagy módosíthatja az alapértelmezett kategórialap, vagy meghatározható egy másik kategórialap egy adott kategóriához.
 
-![Bővített kategória-céloldal.](./media/CategoryLandingPages.png)
+![Bővített kategória-céloldal](./media/CategoryLandingPages.png)
 
 A Commerce webhelykészítőben a **Termékrk** lap a webhelyhez társított csatorna kategóriáinak listáját tartalmazza. Ha a **Bővített** állapot van kiválasztva egy kategórialap számára, akkor a kategórialap bővített. Ellenkező esetben az alapértelmezett kategórialap és tartalom kerül felhasználásra a kategóriához. A kategória nevére kattintva megtekintheti a kategória bővített és nem bővített kategórialapjait.
 
@@ -59,8 +65,3 @@ A kategórialap bővítéséhez tegye a következőket.
 [A termékoldal bővítése](enrich-product-page.md)
 
 [Oldaltartalom hozzáférhetőségének ellenőrzése](verify-accessibility.md)
-
-[Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján](create-dynamic-pages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,27 +1,30 @@
 ---
 title: Kalkulációk a termékkonfigurációs modellekhez - GYIK
 description: Ez a témakör leírja a termékkonfigurációs modellek számításait, és elmagyarázza a számítások megszorításokkal történő használatát.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PCConstraintEditor, PCProductConfigurationModelDetails, PCRuntimeConfigurator
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19191
 ms.assetid: 8993f9a1-d1c0-49f5-afd3-5e1077ded0fe
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9463fac363f6bb25c1bd2afebe5737e47aa8b3cf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f7fac3ec6df53dcc6e459f62f76d856a11d294b6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570801"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429184"
 ---
 # <a name="calculations-for-product-configuration-models-faq"></a>Kalkulációk a termékkonfigurációs modellekhez - GYIK
 
@@ -102,6 +105,3 @@ Az ellenőrzésben nem szerepelnek a számítások. Tesztelnie kell a termék ko
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

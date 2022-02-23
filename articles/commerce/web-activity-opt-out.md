@@ -2,29 +2,34 @@
 title: Webes tevékenység eseménygyűjteményről való leiratkozás
 description: Ez a témakör azt mutatja be, hogyan engedélyezheti a webhely látogatói számára, hogy leiratkozzanak a Microsoft Dynamics 365 Commerce webes tevékenység eseménygyűjteményről.
 author: aamiral
+manager: AnnBe
 ms.date: 05/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: sericks
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d71a184b541f243ccc23914ac2e7c663e5ba61be0a27cf8d41e368fe6a384b9f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4b0e48307527a8fea729d8dfdcdbc6337be0faf1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729830"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412881"
 ---
-# <a name="opt-out-of-web-activity-event-collection"></a>Webes esemény jellegű tevékenység gyűjtésének kikapcsolása
+# <a name="opt-out-of-web-activity-event-collection"></a>Webes tevékenység eseménygyűjteményről való leiratkozás
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan teheti lehetővé az ügyfeleinek a webes tevékenység eseménygyűjteményről való leiratkozást a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 A Dynamics 365 Commerce segítségével a webhely rendszergazdái elemezhetik az e-kereskedelmi webhelyeik felhasználóinak webes tevékenységét. Ily módon jobban megérthetik a webhelyeik használatát, és optimalizálni tudják a webhelyeket a továbbfejlesztett felhasználói élmény biztosítása és az üzleti célkitűzések kielégítése érdekében.
 
@@ -40,7 +45,7 @@ A Commerce-központ (HQ) Fiókkezelés részében a rendszergazdák elvégezheti
 1. A HQ-ügyfél részben, a **Minden ügyfél** oldalon keressen és válasszon ki egy vevőt.
 1. A vevői részletek oldalon, a **Kiskereskedelem** gyorslap **Adatvédelem** részében adja meg a **Ne kövesse a webes tevékenységet** beállításnak az **Igen** értéket.
 
-    ![Adatvédelmi beállítások.](media/Disablepersonalizationpart2.png)
+    ![Adatvédelmi beállítások](media/Disablepersonalizationpart2.png)
 
 1. Válassza a **Mentés** gombot, majd zárja be az oldalt.
 
@@ -51,6 +56,3 @@ A rendszergazdák megengedik a hitelesített felhasználók számára, hogy saj�
 ### <a name="custom-extensions"></a>Egyéni bővítmények
 
 A rendszergazdák saját bővítményeiket hozhatnak létre a felhasználók leiratkozási élményének kezeléséhez. További információk: [Retail Server API-k hívása](e-commerce-extensibility/call-retail-server-apis.md) és [Online csatorna bővíthetősége](e-commerce-extensibility/overview.md).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: Hely és termékdimenzió kombinálása
 description: Ez a témakör a helyi termékdimenziók kombinálásával kapcsolatban tartalmaz tájékoztatást. Ez a helyprofil funkció segít a helykezelés javításában, ha a termékváltozat vagy dimenziókkal rendelkező termékek kerülnek felhasználásra, például a divatiparban. Ez lehetővé teszi annak eldöntését, hogy a konfigurációk, színek, stílusok és méretek egy adott helyprofil esetében kombinálva vannak-e, illetve hogy csak az ilyen dimenziók egyikét vagy ezek kombinációját lehet ugyanazon a helyen elhelyezni.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 20085c51230d3ceca46c5119fecbc3cf3291ecd4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 73519f3fe79d3d7d917d3044255f735640b8ccfd
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578560"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429841"
 ---
 # <a name="location-product-dimension-mixing"></a>Hely és termékdimenzió kombinálása
 
@@ -204,9 +207,9 @@ Olyan beszerzési rendelést hoz létre, amelynek három sora van: két sor ugya
 
 1. Válassza a **Mentés** lehetőséget.
 
-### <a name="receive-purchase-order-lines-in-the-warehouse-management-mobile-app"></a>Beszerzési rendelési sorok fogadása a Raktárkezelés mobilalkalmazásban
+### <a name="receive-purchase-order-lines-in-the-warehouse-app"></a>Beszerzési rendelési sorok fogadása a raktározási alkalmazásban
 
-1. Jelentkezzen be a Raktárkezelés mobilalkalmazásba olyan felhasználóként, aki a *24*. raktárban engedélyezve van.
+1. Jelentkezzen be a raktározási alkalmazásba olyan felhasználóként, aki a *24*. raktárban engedélyezve van.
 1. Válassza ki a **Bejövő** menüt.
 1. Válassza ki a **Beszerzési rendelési sor bevételezése** lehetőséget.
 1. Válassza ki a **PONUM** mezőt, majd adja meg a beszerzési rendelés számát.
@@ -236,5 +239,3 @@ Olyan beszerzési rendelést hoz létre, amelynek három sora van: két sor ugya
 
 > [!TIP]
 > Ezt az esetet megismételheti, de ez alkalommal állítsa be a **Méret** - *Nem* értéket a **Termékdimenzió-kombinálás engedélyezése** gyorslapon, az *ÖMLESZTETT* **Helyprofilok** részen, hogy a cikkdimenziók egyikét se lehessen kombinálni. Ebben az esetben a beszerzési rendelés beérkezésekor a program az egyes termékváltozatokat új helyre helyezi.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

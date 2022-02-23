@@ -1,28 +1,28 @@
 ---
 title: Költségvetés-készítés kezdőlap
 description: Ez a témakör áttekinti a Microsoft Dynamics 365 Finance szolgáltatásban elérhető költségvetés-tervezési funkció összetevőit, a költségvetés-tervezési eszközöket, valamint a jelentéskészítési lehetőségeket.
-author: panolte
-ms.date: 04/29/2021
-ms.topic: overview
+author: ShylaThompson
+manager: AnnBe
+ms.date: 08/09/2017
+ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanningWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "106043"
-- intro-internal
+ms.custom: 106043
 ms.assetid: 702f692e-ad1c-4798-8d3e-c3cf8591d3fa
 ms.search.region: Global
-ms.author: panolte
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ad0d055702a3801bf9fe9ac3159eba7c297b6f0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: af006a94d29781473c164d108fb48ca7d00d169d
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983952"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962910"
 ---
 # <a name="budgeting-home-page"></a>Költségvetés-készítés – kezdőlap
 
@@ -30,15 +30,16 @@ ms.locfileid: "7983952"
 
 Ez a témakör áttekinti a költségvetés-tervezési funkció összetevőit, a költségvetés-tervezési eszközöket, valamint a jelentéskészítési lehetőségeket. 
 
-## <a name="components-of-budgeting-functionality"></a>A költségvetés-tervezési funkció összetevői
+<a name="components-of-budgeting-functionality"></a>A költségvetés-tervezési funkció összetevői
+-------------------------------------
 
 A vállalatok erőforrás-tervezési ciklusa általában tervezési, költségvetési és előrejelző tevékenységekből áll.
 
-[![A költségvetés-tervezési funkció összetevői.](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
+[![A költségvetés-tervezési funkció összetevői](./media/budgeting-functionality-components.jpg)](./media/budgeting-functionality-components.jpg)
 
 Mind a hosszú távú stratégiai tervezés, mind az éves költségvetés-tervezés folyamatait költségvetés-tervezési dokumentum segíti. A költségvetés-tervezési dokumentumok szorosan integrálódnak a Microsoft Excel alkalmazással. A felhasználók korlátlan számú monetáris és mennyiségi esetet konfigurálhatnak, és költségvetés-tervezési szervezeti hierarchiát is meghatározhatnak; a felülről lefelé, illetve az alulról fölfelé épülő költségvetés-tervezési módszereket egyaránt támogatja a rendszer. A költségvetés létrehozása és az alkalmazásban történő jóváhagyása után költségvetési tételjegyzék-bejegyzéssé konvertálhatja a költségvetési tervet. A költségvetési tételjegyzék-bejegyzésekkel karbantartható a költségvetés, és – költségvetési kódok segítségével – nyomon követhetők az összegek. A költségvetési tételjegyzék-bejegyzések segítségével felülvizsgálhatók az eredeti költségvetések, és áthozhatók az előző évi költségvetési összegek. A létrehozott költségvetés alapján a vállalat engedélyezheti a költségvetés-ellenőrzést. Az ellenőrzés szintje függ a szervezeti kultúrától és a szervezet érettségi szintjétől. Az alacsonyabb érettségi szintű szervezeteknél előfordulhat, hogy a költségvetést „adott állapotában” hagyják, és inkább reaktívan, mint proaktívan viselkednek, ha a költségvetés nem felel meg az elvárásoknak. Egyéb szervezeteknél előfordulhat olyan költségvetés-ellenőrzési irányelveket engedélyezhetnek, amelyek nem engedik a beszerzést a felhasználóknak, ha a költségvetési források nem érhetők el.
 
-A nagyon strukturált szervezetek olyan szervezeti kultúrát is kialakíthatnak, amelyben az alkalmazottak képzést kapnak a szervezeti célokról, és irányelveken keresztül valósítják meg ezeket a célokat (ilyen irányelv lehet például az „Online értekezletek esetleges használata utazás helyett”). Az alkalmazás olyan költségvetés-ellenőrzési keretrendszert is tartalmaz, amely lehetővé teszi a vállalat vezetésének, hogy válasszon a kemény szabályozás (amely megakadályozza a költségvetést túllépő feladásokat) és a puha szabályozás (amely figyelmezteti a felhasználókat, hogy túllépik az elérhető költségvetést, de ők eldönthetik, hogy hogyan cselekszenek) között. Végül pedig használhat gördülő előrejelzéseket is. A gördülő előrejelzés rendszeres összehasonlítás a költségvetés és a tényleges tételek között, és segítségével meghatározható, a cég milyen jól teljesíti a költségvetést. A gördülő előrejelzés trendek felfedezésére is szolgál. A Finance and Operations rendszerben a gördülő előrejelzések támogatása kezdeti tervezési tevékenységekként egy költségvetési tervezési dokumentumon keresztül történik. A gördülő előrejelzések elvégezhetőek a következő költségvetési tervezési ciklus tervezésével párhuzamosan.
+A nagyon strukturált szervezetek olyan szervezeti kultúrát is kialakíthatnak, amelyben az alkalmazottak képzést kapnak a szervezeti célokról, és irányelveken keresztül valósítják meg ezeket a célokat (ilyen irányelv lehet például az „Online értekezletek esetleges használata utazás helyett”). Az alkalmazás olyan költségvetés-ellenőrzési keretrendszert is tartalmaz, amely lehetővé teszi a vállalat vezetésének, hogy válasszon a kemény szabályozás (amely megakadályozza a költségvetést túllépő feladásokat) és a puha szabályozás (amely figyelmezteti a felhasználókat, hogy túllépik az elérhető költségvetést, de ők eldönthetik, hogy hogyan cselekszenek) között. Végül pedig használhat gördülő előrejelzéseket is. A gördülő előrejelzés rendszeres összehasonlítás a költségvetés és a tényleges tételek között, és segítségével meghatározható, a cég milyen jól teljesíti a költségvetést. A gördülő előrejelzés trendek felfedezésére is szolgál. A Finance and Operations szolgáltatásban a gördülő előrejelzések támogatása kezdeti tervezési tevékenységekként egy költségvetési tervezési dokumentumon keresztül történik. A gördülő előrejelzések elvégezhetőek a következő költségvetési tervezési ciklus tervezésével párhuzamosan.
 
 -   [Költségvetés-készítés áttekintése](basic-budgeting-overview-configuration.md)
 -   [Költségvetés-ellenőrzés áttekintése](budget-control-overview-configuration.md)
@@ -48,7 +49,7 @@ A nagyon strukturált szervezetek olyan szervezeti kultúrát is kialakíthatnak
 -   [Költségvetés-tervezési sablonok az Excel programhoz](budget-planning-excel-templates.md)
 
 ## <a name="budgeting-tools"></a>Költségvetés-készítési eszközök
-[![Költségvetés-készítési eszközök.](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
+[![Költségvetés-készítési eszközök](./media/budgeting-tools.jpg)](./media/budgeting-tools.jpg) 
 
 A főkönyvi költségvetésbe beépítve további tervezési és költségvetés-készítési eszközök érhetők el.
 
@@ -69,6 +70,3 @@ Meghatározhatja például, ki tervezi a költségvetést, mire vonatkozik a kö
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

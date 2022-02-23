@@ -1,32 +1,33 @@
 ---
 title: Példány eltávolítása
-description: Ez a témakör végigvezeti Önt a teszt vagy termelési környezet eltávolításán a Microsoft Dynamics 365 Human Resources számára.
-author: twheeloc
-ms.date: 08/11/2021
+description: Ez a cikk végigvezeti Önt a teszt- vagy éles környezet eltávolításán a Microsoft Dynamics 365 Human Resources esetében.
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e32058280d0cb1eab436bc25bd29bc3e39fabc92
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: 0a8eac74f0d840251ab56445dd5af4d19d3c0490
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393497"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418885"
 ---
 # <a name="remove-an-instance"></a>Példány eltávolítása
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Ez a téma a Microsoft Dynamics 365 Human Resources tesztmeghajtó vagy termelési környezet eltávolításának folyamatát ismerteti.
+Ez a cikk végigvezeti Önt a teszt- vagy éles környezet eltávolításán a Microsoft Dynamics 365 Human Resources esetében.
 
 ## <a name="remove-a-test-drive-environment"></a>Tesztkörnyezet eltávolítása
 
@@ -41,7 +42,7 @@ A meglévő tesztkörnyezetet el fogjuk távolítani. Az eltávolítása után r
 
 ## <a name="remove-a-production-environment"></a>Éles környezet eltávolítása
 
-Ez a téma feltételezi, hogy a Humán erőforrás-szolgáltatást felhőalapú megoldásszolgáltatón (CSP) vagy vállalati architektúra (EA) megállapodáson keresztül vásárolta meg. 
+Ez a cikk feltételezi, hogy a Human Resources rendszert felhőalapú szolgáltatón (CSP) keresztül vagy vállalati architektúra (EA) megállapodás részeként vásárolta. 
 
 Mivel egyetlen Human Resources-környezet van egyetlen Power Apps környezeten belül, két lehetőséget kell figyelembe venni. Az első lehetőség a teljes Power Apps környezet eltávolításával jár; a második lehetőség csak a Human Resources eltávolítását foglalja magában. Az első lehetőséget akkor érdemes használni, amikor a Power Apps környezetet kifejezetten a Human Resources létesítése céljából hozta létre, és csak most kezdi a végrehajtást, vagy nincs semmilyen megállapított integráció. A másik lehetőség csak akkor megfelelő, amikor jól beállított Power Apps környezete van multimédiás adatokkal, amelyeket a rendszer felhasznál a Power Apps és a Power Automate esetében.
 
@@ -80,10 +81,7 @@ A környezet helyreállítása:
 
 1. Kövesse a [Power Apps környzete visszaállítása](/power-platform/admin/recover-environment.md) részben található utasításokat.
 
-2. Az Emberi erőforrások környezet helyreállításához forduljon a támogatáshoz. További információért lásd a [Támogatás kérése](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) lehetőséget.
+2. Az Emberi erőforrások környezet helyreállításához forduljon a támogatáshoz. További információért lásd a [Támogatás kérése](hr-admin-troubleshooting-support.md) lehetőséget.
 
 > [!Warning]
 > A Power Apps környezeteket a törlést követően csak hét napig mentik. A környezetet a 7 napos időszakon belül kell helyreállítania.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

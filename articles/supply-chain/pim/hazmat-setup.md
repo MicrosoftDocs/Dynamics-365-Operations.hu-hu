@@ -1,33 +1,37 @@
 ---
 title: Veszélyes anyagok beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a cikkek veszélyes anyagokként történő osztályozásához szükséges adatokat. Ha olyan értékesítési rendelést hoz létre, amelyben veszélyes anyagként minősített cikkek szerepelnek, akkor a rendszer az értékesítési rendeléshez tartozó veszélyes anyag-dokumentációt létrehozza a szállításkor.
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 6923bd24fc8f9aad6e758603e3b20f7d5f2b8fde
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
-ms.translationtype: MT
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: b049559b64045e80a40afd99bac30a9cfe1d0580
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778009"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429703"
 ---
 # <a name="set-up-hazardous-materials"></a>Veszélyes anyagok beállítása
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A veszélyes anyagok funkció használatához először be kell állítani a cikkek veszélyes anyagokként való osztályozásához szükséges adatokat. Majd, ha olyan értékesítési rendelést hoz létre, amelyben veszélyes anyagként minősített cikkek szerepelnek, akkor a rendszer az értékesítési rendeléshez tartozó veszélyes anyag-dokumentációt létrehozza a szállításkor.
 
 ## <a name="turn-on-the-hazardous-materials-feature-for-your-system"></a>A veszélyes anyagok funkció bekapcsolása a rendszerben
 
-Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés lapon ellenőrizhetik a funkció állapotát, és szükség esetén engedélyezhetik vagy [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) letilthatják azt. Itt a funkció a következőként szerepel:
+A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
 - **Modul:** *Termékinformáció-kezelés*
 - **Szolgáltatás neve:** *Veszélyes anyagok termékinformációi és szállítási dokumentációja*
@@ -100,7 +104,7 @@ Az alábbi táblázat bemutatja az **Ország** gyorslapon rendelkezésre álló 
 |---|---|
 | Ország/régió | Jelölje ki az előíráshoz társítani kívánt országot/régiót. |
 
-## <a name="material-codes"></a><a name="hazmat-codes"></a> Anyagkódok
+## <a name="material-codes"></a><a name="hazmat-codes"></a>Anyagkódok
 
 Az anyagkódok olyan beállításokat határoznak meg, amelyek egy adott veszélyes összetevőhöz kötődnek, amely egy kiadott termékben jelen lehet. Minden anyagkód egy konkrét veszélyesanyag-előíráshoz tartozik, és definíciója meg kell feleljen annak az előírásnak. Amikor egy kibocsátott termékhez az **Anyagkód** mezővel egy anyagkódot alkalmaz, a program automatikusan a termékre alkalmazza az anyagkód összes veszélyesanyag-beállítását. Emiatt a kiadott termékek beállításának folyamata gyorsabb és kevesebb a hibalehetőség.
 
@@ -115,7 +119,7 @@ A veszélyes anyagok definícióinak kezeléséhez hajtsa végre az alábbi lép
 
 5. A lap többi mezőjének használatával hozza létre és állítsa be a kiválasztott rendelethez tartozó veszélyes anyagokat. A rendelkezésre álló mezők a veszélyes anyagokat tartalmazó mezők egy részhalmaza, amelyek elérhetők egyedi kiadott termékekhez. További információ: [Termékekben, megrendelésekben, szállítmányokban és rakományokban lévő veszélyes anyagok](hazmat-items.md).
 
-## <a name="hazardous-material-classification-groups"></a><a name="classification-groups"></a> Veszélyes anyagok osztályozási csoportjai
+## <a name="hazardous-material-classification-groups"></a><a name="classification-groups"></a>Veszélyes anyagok osztályozási csoportjai
 
 A veszélyes anyagok egyes osztályozási csoportjai olyan mezőértékek egy csoportját definiálják, amelyek egy sablont határoznak meg. Ezt a sablont később is használhatja, amikor egy kiadott cikkre vonatkozó veszélyes anyagok adatait állítja be.
 
@@ -135,7 +139,7 @@ A veszélyes anyagok osztályozási csoportjainak beállításához Válassza a 
 | Szállítási kategória kódja | [Szállítási kategória kód](#transport-category) társítása a csoporthoz. |
 | Szorzó | A kijelölt osztályra és a veszélyes anyagok felosztására vonatkozó veszélyes anyagok szorzója megadása a vonatkozó előírás alapján. Ez a szorzó a rakomány vagy szállítmány összes *veszélyesanyag-pontszámát* kiszámító képlet részeként használatos. A veszélyes anyagok pontszámaival és a szorzóval kapcsolatos további tudnivalókat lásd: [Anyagkezelés gyorslap](hazmat-items.md#material-management). |
 
-## <a name="hazardous-material-classes"></a><a name="classes"></a> Veszélyesanyag-osztályok
+## <a name="hazardous-material-classes"></a><a name="classes"></a>Veszélyesanyag-osztályok
 
 A veszélyesanyagok-osztályt általában azon osztályok listájára kell leképezni, amelyek az előírásban szerepelnek, amelyet teljesít. Például a CFR 49 Amerikai Egyesült államokbeli rendelet a „3. osztályba” sorolja a gyúlékony és éghető folyadékokat. Be lehet állítani azokat az osztályokat, amelyek a besorolni kívánt anyagokhoz szükségesek.
 
@@ -156,7 +160,7 @@ A veszélyesanyag-osztályok beállításához Válassza a **Termékinformáció
 | Osztály kódja | Az osztály azonosítására szolgáló kód megadása. Ezt a kódot definiálja a cikkhez. Ezt követően a rendszer a keresési listákban fogja használni, amikor veszélyesanyag-osztályt rendeli hozzá egy kiadott cikkhez. |
 | Leírás | Adja meg az osztály leírását. |
 
-## <a name="hazardous-material-divisions"></a><a name="divisions"></a> Veszélyesanyag-divíziók
+## <a name="hazardous-material-divisions"></a><a name="divisions"></a>Veszélyesanyag-divíziók
 
 A veszélyesanyag-divízió a veszélyesanyag-osztály egy részhalmaza. A veszélyes anyagokat tartalmazó összes termékhez társítani kell egy divíziót és egy osztályt.
 
@@ -178,7 +182,7 @@ A veszélyesanyag-divíziók beállításához válassza a **Termékinformáció
 | Leírás | Adja meg a divízió leírását. |
 | Osztály | A divízióhoz tartozó osztály megkeresése és társítása. |
 
-## <a name="hazardous-material-compatibility-groups"></a><a name="compatibility-groups"></a> Veszélyes anyagok kompatibilitási csoportjai
+## <a name="hazardous-material-compatibility-groups"></a><a name="compatibility-groups"></a>Veszélyes anyagok kompatibilitási csoportjai
 
 A veszélyes anyagok kompatibilitási csoportjai meghatározzák, hogy mely veszélyesanyag-osztályokat és divíziókat lehet együtt szállítani. Amikor a kezelők raktári rakományokat vagy szállítmányokat hoznak létre, akkor egy olyan kompatibilitási ellenőrzést futtathatnak, amely figyelmeztetést ad, ha a rakomány vagy a szállítmány olyan cikkeket tartalmaz, amelyek nem tartoznak ugyanahhoz a kompatibilitási csoporthoz.
 
@@ -220,7 +224,7 @@ A *Veszélyes anyagokra vonatkozó vészhelyzeti válasz* specifikáció azt jel
 
 A specifikáció értékeinek beállításához válassza a **Termékinformáció-kezelés \> Beállítások \> Veszélyes anyagok szállítási dokumentációja \> Veszélyes anyagokra vonatkozó vészhelyzeti válasz** lehetőséget. A **Veszélyes anyagokra vonatkozó vészhelyzeti válasz** oldalon tetszőleges számú értéket hozhat létre, és konfigurálhat mindegyikhez egy osztályozási kódot és egy rövid leírást.
 
-### <a name="hazardous-material-identification"></a><a name="identification"></a> Veszélyes anyag azonosítója
+### <a name="hazardous-material-identification"></a><a name="identification"></a>Veszélyes anyag azonosítója
 
 A *veszélyes anyagok azonosítása* specifikáció a veszélyes anyagok osztályát vagy jellegét azonosítja. Az érték általában az Egyesült Nemzetek (ENSZ) szabványon alapuló kód. Mindegyik osztályt egy kód és egy leírás azonosítja, és a szállítási módokhoz korlátozás állítható be. A gyúlékony cikkek vagy anyagok azonosításához például egy veszélyes anyag osztályt kell létrehoznia, amely az *FL* kódot használja, és a leírás *Gyúlékony*. Azt is meghatározhatja, hogy az osztályt nem szabad légi úton szállítani.
 
@@ -233,53 +237,50 @@ A specifikáció értékeinek beállításához válassza a **Termékinformáci�
 | Letiltás légi szállításról | Ennek a jelölőnégyzetnek a bejelölésével jelezheti, hogy a veszélyes anyagoknak ezt az osztályát nem szabad légi úton szállítani. |
 | Letiltás tengeri szállításról | Ennek a jelölőnégyzetnek a bejelölésével jelezheti, hogy a veszélyes anyagoknak ezt az osztályát nem szabad tengeren szállítani. |
 
-### <a name="hazardous-material-label"></a><a name="label"></a> Veszélyes anyag címkéje
+### <a name="hazardous-material-label"></a><a name="label"></a>Veszélyes anyag címkéje
 
 A *Veszélyesanyag-címke* specifikáció azonosítja azt a veszélyes árucikk-címkét, amelyet alkalmazni kell a kapcsolódó kiadott termékekhez. A címkék maguk leírják, hogyan kell kezelni a terméket. Például olyan termékkel rendelkezik, amely mérgező gázt tartalmaz. Ebben az esetben a mérgező gázt jelölő címke kódját kell beállítani. Az üzleti folyamatot úgy is létrehozhatja, hogy a termékek szállításakor ezt az értéket megkeresse.
 
 A specifikáció értékeinek beállításához válassza a **Termékinformáció-kezelés \> Beállítások \> Veszélyes anyagok szállítási dokumentációja \> Veszélyesanyag-címke** lehetőséget. A **Veszélyesanyag-címke** oldalon tetszőleges számú címkét hozhat létre, és konfigurálhat mindegyikhez egy azonosító kódot és egy rövid leírást.
 
-### <a name="hazardous-material-packing-descriptions"></a><a name="packing-description"></a> Veszélyes anyagok csomagolási leírásai
+### <a name="hazardous-material-packing-descriptions"></a><a name="packing-description"></a>Veszélyes anyagok csomagolási leírásai
 
 A *Veszélyes anyagok csomagolási leírásai* specifikáció határozza meg, hogyan kell egy veszélyes cikkeket csomagolni. Előfordulhat például, hogy egy bizonyos típusú acél dob vagy más speciális csomagolási típus szükséges.
 
 A specifikáció értékeinek beállításához válassza a **Termékinformáció-kezelés \> Beállítások \> Veszélyes anyagok szállítási dokumentációja \> Veszélyes anyagok csomagolási leírása** lehetőséget. A **Veszélyes anyagok csomagolási leírások** oldalon tetszőleges számú csomagolási leírást hozhat létre, és konfigurálhat mindegyikhez egy azonosító kódot és egy rövid leírást.
 
-### <a name="hazardous-material-packing-group"></a><a name="packing-group"></a> Veszélyes anyagok csomagolási csoportja
+### <a name="hazardous-material-packing-group"></a><a name="packing-group"></a>Veszélyes anyagok csomagolási csoportja
 
 A *Veszélyesanyag csomagolási csoportja* specifikáció azonosítja a veszélyes cikk csomagolási csoportját. A csomagolási csoport lehetővé teszi egy kód és a leírás meghatározását annak jelzésére, hogy hogyan kell a veszélyes anyagokat csomagolni a szállítás vagy szállítás során. A csomagolási csoport a **Cikkveszélyes anyagai** oldalon van hozzárendelve a cikkhez.
 
 A specifikáció értékeinek beállításához válassza a **Termékinformáció-kezelés \> Beállítások \> Veszélyes anyagok szállítási dokumentációja \> Veszélyes anyag csomagolási csoportja** lehetőséget. A **Veszélyesanyag csomagolási csoportja** oldalon tetszőleges számú csomagolási csoportot hozhat létre, és konfigurálhat mindegyikhez egy azonosító kódot és egy rövid leírást.
 
-### <a name="hazardous-material-packing-instruction"></a><a name="packing-instruction"></a> Veszélyes anyagok csomagolási utasítása
+### <a name="hazardous-material-packing-instruction"></a><a name="packing-instruction"></a>Veszélyes anyagok csomagolási utasítása
 
 A *Veszélyes anyag csomagolási utasítása* specifikáció azt a csomagolási utasítást azonosítja, amelyet követni kell, amikor egy adott veszélyes terméket légi szállításra készítenek össze.
 
 A specifikáció értékeinek beállításához válassza a **Termékinformáció-kezelés \> Beállítások \> Veszélyes anyagok szállítási dokumentációja \> Veszélyes anyag csomagolási utasítása** lehetőséget. A **Veszélyes anyag csomagolási utasítása** oldalon tetszőleges számú csomagolási utasításazonosítót hozhat létre, és konfigurálhat mindegyikhez egy azonosító kódot és egy rövid leírást.
 
-### <a name="hazardous-material-stowage"></a><a name="stowage"></a> Veszélyes anyag rakodása
+### <a name="hazardous-material-stowage"></a><a name="stowage"></a>Veszélyes anyag rakodása
 
 A *Veszélyes anyagok tárolása* specifikáció azt jelzi, hogy hogyan kell tárolni egy terméket egy hajón, amikor tengeri fuvarozással szállítják.
 
 A specifikáció értékeinek beállításához válassza a **Termékinformáció-kezelés \> Beállítások \> Veszélyes anyagok szállítási dokumentációja \> Veszélyes anyag tárolása** lehetőséget. A **Veszélyes anyag tárolása** oldalon tetszőleges számú tárolási azonosítót hozhat létre, és konfigurálhat mindegyikhez egy azonosító kódot és egy rövid leírást.
 
-### <a name="hazardous-material-transport-category"></a><a name="transport-category"></a> Veszélyes anyagok szállítási kategóriája
+### <a name="hazardous-material-transport-category"></a><a name="transport-category"></a>Veszélyes anyagok szállítási kategóriája
 
 A *Veszélyes anyag szállítási kategóriája* specifikáció általában a hasonló veszélyes termékek csoportosítására szolgál jelentéseken. Például a szállítási kategóriák a **Szállítmányösszesítés** jelentésében használatosak, amelyet a raktári szállítási rekordból lehet nyomtatni.
 
 A specifikáció értékeinek beállításához válassza a **Termékinformáció-kezelés \> Beállítások \> Veszélyes anyagok szállítási dokumentációja \> Veszélyes anyag szállítási kategóriája** lehetőséget. A **Veszélyes anyag szállítási kategóriája** oldalon tetszőleges számú szállítási kategóriát hozhat létre, és konfigurálhat mindegyikhez egy megjelenítendő nevet és egy rövid leírást.
 
-### <a name="hazardous-material-technical-name"></a><a name="technical-name"></a> Veszélyes anyag műszaki neve
+### <a name="hazardous-material-technical-name"></a><a name="technical-name"></a>Veszélyes anyag műszaki neve
 
 A *Veszélyes anyag műszaki neve* specifikációval létrehozható egy általánosan használt vagy belső vállalati név amely leírja az egyes anyagokat.
 
 A specifikáció értékeinek beállításához válassza a **Termékinformáció-kezelés \> Beállítások \> Veszélyes anyagok szállítási dokumentációja \> Veszélyes anyag műszaki neve** lehetőséget. A **Veszélyes anyag műszaki neve** oldalon tetszőleges számú műszaki nevet hozhat létre, és konfigurálhat mindegyikhez egy megjelenítendő nevet és egy rövid leírást.
 
-### <a name="hazardous-material-tunnel"></a><a name="tunnel"></a> Veszélyes anyag alagútja
+### <a name="hazardous-material-tunnel"></a><a name="tunnel"></a>Veszélyes anyag alagútja
 
 A *Veszélyes anyag alagút* specifikációja korlátozza, hogy milyen típusú alagutakon vihetők át a veszélyes anyagok a használandó alagutak típusának meghatározásával. Az alagútkategóriákat a veszélyes anyagok szállítására vonatkozó szabályok határozzák meg. Ez am specifikáció általában csak a közúti szállításra vonatkozik.
 
 A specifikáció értékeinek beállításához válassza a **Termékinformáció-kezelés \> Beállítások \> Veszélyes anyagok szállítási dokumentációja \> Veszélyesanyag-alagút** lehetőséget. A **Veszélyesanyag-alagút** oldalon tetszőleges számú alagútazonosítót hozhat létre, és konfigurálhat mindegyikhez egy azonosító kódot és egy rövid leírást.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

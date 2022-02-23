@@ -2,22 +2,25 @@
 title: Mérnöki változtatások kezelése funkció áttekintése
 description: Ez a témakör egy átfogó áttekintést tartalmaz, amely bemutatja a mérnöki változtatások kezelésével kapcsolatos munkát.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4c1c67559a8f2e9d0abb512f4231aea495d1957c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: b6270bbb6780786ed4535ca2987ed44448bd81ad
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573993"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4429978"
 ---
 # <a name="engineering-change-management-feature-walkthrough"></a>Mérnöki változtatások kezelése funkció áttekintése
 
@@ -57,7 +60,7 @@ Egy mérnöki szervezet rendelkezik a mérnöki adatokkal, és felelős a termé
     - **Mérnöki szervezet:** *DEMF*
     - **Szervezet neve:** *Contoso Entertainment System Germany*
 
-    ![Mérnöki szervezet hozzáadása.](media/engineering-org.png "Mérnöki szervezet hozzáadása")
+    ![Mérnöki szervezet hozzáadása](media/engineering-org.png "Mérnöki szervezet hozzáadása")
 
 ### <a name="set-up-the-version-product-dimension-group"></a>A verzió termékdimenziójához tartozó csoport beállítása
 
@@ -67,7 +70,7 @@ Egy mérnöki szervezet rendelkezik a mérnöki adatokkal, és felelős a termé
 1. A **Mentés** gombra kattintva mentheti az új dimenziót és a rakomány értékeit a **Termékdimenziók** gyorslapra.
 1. A **Termékdimenziók** gyorslapon adja meg a **Verzió** elemet aktív termékdimenzióként.
 
-    ![Termékdimenzió-csoport hozzáadása.](media/product-dimension-groups.png "Termékdimenzió-csoport hozzáadása")
+    ![Termékdimenzió-csoport hozzáadása](media/product-dimension-groups.png "Termékdimenzió-csoport hozzáadása")
 
 ### <a name="set-up-product-lifecycle-states"></a>Termékéletciklus állapotainak beállítása
 
@@ -82,7 +85,7 @@ Ahogy egy mérnöki termék végighalad az életciklusán, fontos, hogy tudja sz
 1. A **Mentés** gombra kattintva mentheti az új életciklus-állapotot és a rakomány értékeit a **Beágyazott üzleti folyamatok** gyorslapra.
 1. Az **Engedélyezett üzleti folyamatok** gyorslapon válassza ki azokat az üzleti folyamatokat, amelyeknek elérhetőknek kell lenniük. Ebben a példában az **Irányelv** mezőt hagyja *Engedélyezett* értékre állítva az összes üzleti folyamat számára.
 
-    ![Üzleti folyamatok engedélyezése az életciklus-állapotokhoz.](media/product-lifecycle-states-1.png "Üzleti folyamatok engedélyezése az életciklus-állapotokhoz")
+    ![Üzleti folyamatok engedélyezése az életciklus-állapotokhoz](media/product-lifecycle-states-1.png "Üzleti folyamatok engedélyezése az életciklus-állapotokhoz")
 
 1. Válassza az **Új** lehetőséget egy további életciklus-állapot hozzáadásához, majd állítsa be a következő értékeket hozzá:
 
@@ -92,7 +95,7 @@ Ahogy egy mérnöki termék végighalad az életciklusán, fontos, hogy tudja sz
 1. A **Mentés** gombra kattintva mentheti az új életciklus-állapotot és a rakomány értékeit a **Beágyazott üzleti folyamatok** gyorslapra.
 1. Az **Engedélyezett üzleti folyamatok** gyorslapon válassza ki azokat az üzleti folyamatokat, amelyeknek elérhetőknek kell lenniük. Ebben a példában az **Irányelv** mezőt állítsa *Engedélyezett figyelmeztetéssel* értékre az összes üzleti folyamat számára.
 
-    ![Üzleti folyamatok engedélyezése (figyelmeztetésekkel) az életciklus-állapotokhoz.](media/product-lifecycle-states-2.png "Üzleti folyamatok engedélyezése (figyelmeztetésekkel) az életciklus-állapotokhoz")
+    ![Üzleti folyamatok engedélyezése (figyelmeztetésekkel) az életciklus-állapotokhoz](media/product-lifecycle-states-2.png "Üzleti folyamatok engedélyezése (figyelmeztetésekkel) az életciklus-állapotokhoz")
 
 ### <a name="set-up-a-version-number-rule"></a>Verziószám-szabály beállítása
 
@@ -103,7 +106,7 @@ Ahogy egy mérnöki termék végighalad az életciklusán, fontos, hogy tudja sz
     - **Számszabály:** *Automatikus*
     - **Formátum:** *V-\#\#*
 
-    ![Termék verziószám-szabályának hozzáadása.](media/version-number-rule.png "Termék verziószám-szabályának hozzáadása")
+    ![Termék verziószám-szabályának hozzáadása](media/version-number-rule.png "Termék verziószám-szabályának hozzáadása")
 
 ### <a name="set-up-a-product-release-policy"></a>Termék kiadási házirendjének beállítása
 
@@ -135,7 +138,7 @@ Ahogy egy mérnöki termék végighalad az életciklusán, fontos, hogy tudja sz
     - **Útvonal-jóváhagyás másolása:** Jelölje be ezt a jelölőnégyzetet.
     - **Útvonal-aktiválás másolása:** Jelölje be ezt a jelölőnégyzetet.
 
-    ![Termék kiadási házirendjének hozzáadása.](media/product-release-policy.png "Termék kiadási házirendjének hozzáadása")
+    ![Termék kiadási házirendjének hozzáadása](media/product-release-policy.png "Termék kiadási házirendjének hozzáadása")
 
 ### <a name="set-up-an-engineering-product-category"></a>Mérnöki termékkategória beállítása 
 
@@ -160,7 +163,7 @@ A mérnöki termékkategóriák a mérnöki termékek (azaz a mérnöki változt
 1. A **Kiadási irányelv** gyorslapján adja meg a **Termék kiadási házirendje** mezőt az *Összetevők* értékkel.
 1. Válassza a **Mentés** lehetőséget.
 
-    ![Mérnöki termékkategória hozzáadása.](media/product-category-details.png "Mérnöki termékkategória hozzáadása")
+    ![Mérnöki termékkategória hozzáadása](media/product-category-details.png "Mérnöki termékkategória hozzáadása")
 
 ### <a name="set-up-product-acceptance-conditions"></a>A termék elfogadási feltételeinek beállítása
 
@@ -168,7 +171,7 @@ A mérnöki termékkategóriák a mérnöki termékek (azaz a mérnöki változt
 1. Lépjen a **Mérnöki változtatások kezelése &gt; Beállítás &gt; Mérnöki változtatások kezelésének paraméterei** lehetőségre.
 1. A **Kiadás szabályozása** lapon a **Termék elfogadása** szakaszban állítsa a **Termék elfogadása** mezőt *Manuális* értékre.
 
-    ![A termék elfogadási feltételeinek beállítása.](media/engineering-change-management-parameters.png "A termék elfogadási feltételeinek beállítása")
+    ![A termék elfogadási feltételeinek beállítása](media/engineering-change-management-parameters.png "A termék elfogadási feltételeinek beállítása")
 
 ## <a name="create-a-new-engineering-product"></a>Új mérnöki termék létrehozása
 
@@ -187,23 +190,23 @@ A mérnöki termék olyan termék, amelyet a mérnöki változtatások kezelése
     - **Termék száma:** *Z0001*
     - **Termék neve:** *Hangszórókészlet*
 
-    ![Mérnöki termék hozzáadása.](media/new-product-dialog.png "Mérnöki termék hozzáadása")
+    ![Mérnöki termék hozzáadása](media/new-product-dialog.png "Mérnöki termék hozzáadása")
 
     Ne felejtse el, hogy a **Verzió** mezőt a korábban beállított termékverziószám-szabály alapján automatikusan beállítja a rendszer.
 
 1. Válassza az **OK** gombot a termék létrehozásához és a párbeszédpanel bezárásához.
 1. A program megnyitja az új termék részletes lapját. Figyelje meg, hogy bizonyos mezők, például a **Tárolásidimenzió-csoport**, a **Nyomonkövetésidimenzió-csoport** és/vagy a **Cikkmodellcsoport** értékei már ki vannak töltve. Ezeket a mezőket automatikusan beállítja a program, mert a termék ki van adva a *DEMF* jogi személyben, és az *Összetevők* termékkiadási irányelvet használja, amely az *Összetevők* mérnöki termékkategóriához van társítva. Mivel korábban a *D0006* cikket sablonként használta egy sor beállítására a *DEMF* jogi személyhez, a kitöltött értékeit a program a *D0006* elemből veszi.
 
-    ![Megjelent termék részletei.](media/product-details.png "Megjelent termék részletei")
+    ![Megjelent termék részletei](media/product-details.png "Megjelent termék részletei")
 
 1. A művelet ablaktáblán, a **Mérnök** lapon, a **Mérnöki változtatások kezelése** csoportban válassza a **Mérnöki verziók** elemet a termék verzióinak megtekintéséhez.
 
-    ![Tervezési verziók.](media/engineering-versions-list.png "Tervezési verziók")
+    ![Tervezési verziók](media/engineering-versions-list.png "Tervezési verziók")
 
 1. A **Mérnöki verziók** lapon figyelje meg, hogy a termékhez csak egy verzió tartozik, és az aktív.
 1. A részletek megtekintéséhez válassza ki a verziót.
 
-    ![Mérnöki verzió részletei.](media/engineering-version-details.png "Mérnöki verzió részletei")
+    ![Mérnöki verzió részletei](media/engineering-version-details.png "Mérnöki verzió részletei")
 
 1. A **Mérnöki verzió** lapon, az **Anyagjegyzék** gyorslapon válassza az **Anyagjegyzék létrehozása** elemet.
 1. Az **Anyagjegyzék létrehozása** párbeszédpanelen adja meg a következő értékeket:
@@ -212,25 +215,25 @@ A mérnöki termék olyan termék, amelyet a mérnöki változtatások kezelése
     - **Név:** Hangszórókészlet
     - **Telephely:** 1
 
-    ![Anyagjegyzék létrehozása.](media/create-bom.png "BOM létrehozása")
+    ![BOM létrehozása](media/create-bom.png "BOM létrehozása")
 
 1. Válassza az **OK** gombot az anyagjegyzék hozzáadásához, és a párbeszédpanel bezárásához.
 1. Az **Anyagjegyzék** gyorslapon válassza ki az **Anyagjegyzék** lehetőséget.
 1. Az **Anyagjegyzékek** oldalon, az **Anyagjegyzék sorai** gyorslapon adjon hozzá három sort, egyet a következő cikkszámok mindegyikéhez: *D0001*, *D0003* és *D0006*.
 
-    ![Anyagjegyzéksorok hozzáadása.](media/bom.png "Anyagjegyzéksorok hozzáadása")
+    ![Anyagjegyzéksorok hozzáadása](media/bom.png "Anyagjegyzéksorok hozzáadása")
 
 1. Válassza a **Mentés** lehetőséget.
 1. Zárja be a lapot.
 1. A **Mérnöki verzió** lapon, az **Anyagjegyzék** gyorslapon válassza a **Jóváhagyás** elemet.
 1. A megjelenő párbeszédpanelen jelölje be az **OK** lehetőséget.
 
-    ![Anyagjegyzék jóváhagyása.](media/approve-dialog.png "Anyagjegyzék jóváhagyása")
+    ![Anyagjegyzék jóváhagyása](media/approve-dialog.png "Anyagjegyzék jóváhagyása")
 
 1. A **Mérnöki verzió** lapon, az **Anyagjegyzék** gyorslapon válassza az **Aktiválás** elemet.
 1. Figyelje meg, hogy az **Aktív** és **Jóváhagyott** jelölőnégyzetek be vannak jelölve az anyagjegyzékhez.
 
-    ![Aktív és jóváhagyott anyagjegyzék.](media/approved-bom.png "Aktív és jóváhagyott anyagjegyzék")
+    ![Aktív és jóváhagyott anyagjegyzék](media/approved-bom.png "Aktív és jóváhagyott anyagjegyzék")
 
 1. Zárja be a lapot.
 
@@ -244,25 +247,25 @@ A terméket most a mérnöki részleg tervezte. Ebben a példában a termék egy
 1. A művelet ablaktábla **Termék** lapjának **Karbantartás** csoportjában válassza ki a **Termékszerkezet kiadása** lehetőséget a **Termékek kiadása** varázsló megnyitásához.
 1. A **Mérnöki termékek kiválasztása kiadására** oldalon válassza a **Kiválasztás** jelölőnégyzetet a *Z0001* termék számára.
 
-    ![A kiadandó mérnöki termékek kiválasztása.](media/select-eng-product-to-release.png "A kiadandó mérnöki termékek kiválasztása")
+    ![A kiadandó mérnöki termékek kiválasztása](media/select-eng-product-to-release.png "A kiadandó mérnöki termékek kiválasztása")
 
 1. Válassza ki a **Kiadás részletei** lehetőséget.
 1. Megjelenik a **Termékkiadás részletei** lap, amelyen megtekintheti a kiadott termék részletes adatait, valamint a termék szerkezetét. Figyelje meg, hogy az **Anyagjegyzék küldése** értéke *Igen*-re van állítva. Ezért a program kiadja mind a *Z0001* terméket és annak minden gyermekét az anyagjegyzékből.
 
     A bal oldali ablakban bármelyik gyermeket kiválaszthatja a részletek áttekintéséhez. Ha bármely gyermekcikkhez tartozik anyagjegyzék, akkor azt is beállíthatja, hogy az adott gyermek anyagjegyzékét is kiadja.
 
-    ![A termék kiadásával kapcsolatos részletek megtekintése.](media/product-release-details.png "A termék kiadásával kapcsolatos részletek megtekintése")
+    ![A termék kiadásával kapcsolatos részletek megtekintése](media/product-release-details.png "A termék kiadásával kapcsolatos részletek megtekintése")
 
 1. Zárja be az oldalt a **Termékek kiadása** varázslóhoz való visszatéréshez.
 1. Válassza a **Következő** lehetőséget a **Kiadandó termékek kiválasztása** oldal megnyitásához. Ha bármilyen szabványos (nem mérnöki) terméket választott, akkor ezek ezen az oldalon jelennek meg. Ne feledje, hogy ha a **Termékszerkezet kiadása** kiválasztásával egy szabványos terméket ad ki, akkor az anyagjegyzék és az útvonal is ki lesz adva.
 
-    ![A kiadandó standard termékek kiválasztása.](media/select-std-product-to-release.png "A kiadandó standard termékek kiválasztása")
+    ![A kiadandó standard termékek kiválasztása](media/select-std-product-to-release.png "A kiadandó standard termékek kiválasztása")
 
 1. Válassza a **Következő** lehetőséget a **Kiadandó termékvariánsok kiválasztása** oldal megnyitásához. Ebben a példában nincsenek változatok.
 1. Válassza a **Következő** lehetőséget a **Vállalatok kiválasztása** oldal megnyitásához.
 1. Válassza ki azokat a vállalatokat, amelyeknek a terméket ki kell adni. A példa esetében válassza ki a **USMF** jelölőnégyzetét.
 
-    ![Azoknak a vállalatoknak a kiválasztása, amelyeknek ki kell adni a termékeket.](media/select-release-companies.png "Azoknak a vállalatoknak a kiválasztása, amelyeknek kiadnak")
+    ![Azoknak a vállalatoknak a kiválasztása, amelyeknek kiadnak](media/select-release-companies.png "Azoknak a vállalatoknak a kiválasztása, amelyeknek kiadnak")
 
 1. Válassza a **Következő** lehetőséget a **Kiválasztás megerősítése** oldal megnyitásához.
 1. Válassza a **Befejezés** lehetőséget.
@@ -280,7 +283,7 @@ A termék áttekintéséhez és a *USMF* vállalatban történő kiadásához k�
 
     A **Nyitott termékkiadások** oldal a *Z0001* terméket jeleníti meg, amely a *Függőben lévő elfogadás* állapottal rendelkezik.
 
-    ![Nyitott termékkiadások.](media/open-product-releases.png "Nyitott termékkiadások")
+    ![Nyitott termékkiadások](media/open-product-releases.png "Nyitott termékkiadások")
 
 1. Válassza ki a **Termékszám** oszlopát a **Termék kiadási részletei** oldal megnyitásához. Vegye figyelembe a következőket:
 
@@ -288,7 +291,7 @@ A termék áttekintéséhez és a *USMF* vállalatban történő kiadásához k�
     - A **Kiadás részletei** gyorslap a termékkel és a kiadott verzióval kapcsolatos adatokat jeleníti meg. Itt módosíthatja a beállításokat, például az érvényesség dátumait.
     - Az **Útvonal** gyorslap a termék útvonalát jeleníti meg. Ebben a példában azonban nem adott ki útvonalakat.
 
-    ![Termékkiadás részletei.](media/product-release-details-2.png "Termékkiadás részletei")
+    ![Termékkiadás részletei](media/product-release-details-2.png "Termékkiadás részletei")
 
 1. Ha befejezte az adatok áttekintését, akkor készen áll a termék elfogadására, és ily módon kiadni azt a *USMF* vállalatban. A Művelet ablaktáblán válassza ki a **Műveletek &gt; Elfogadás** lehetőséget.
 1. A termék most kiadásra kerül a *USMF* vállalatban. Kattintson a **Termékinformációk kezelése &gt; Termékek &gt; Kiadott termékek** lehetőségre. A *Z0001* cikket kell látnia.
@@ -304,7 +307,7 @@ A *USMF* vállalat törzsadatkezelőjének meg kell győződnie arról, hogy a t
 1. A műveleti ablaktáblán a **Termék** lapon az **Életciklus-állapot** csoportban válassza az **Életciklus-állapot módosítása** lehetőséget.
 1. Az **Életciklus-állapot módosítása** legördülő párbeszédpanelen állítsa be az **Állapot** mezőt a *Prototípus* elemre, majd kattintson az **OK** gombra.
 
-    ![Az életciklus-állapot módosítása.](media/change-lifecycle-state.png "Az életciklus-állapot módosítása")
+    ![Az életciklus-állapot módosítása](media/change-lifecycle-state.png "Az életciklus-állapot módosítása")
 
 ## <a name="add-the-engineering-product-to-a-sales-order"></a>Mérnöki termék hozzáadása egy értékesítési rendeléshez
 
@@ -318,7 +321,7 @@ A terméket most egy ügyfélnek lehet értékesíteni. A termék értékesíté
 
     Figyelmeztetés jelenik meg arról, hogy a cikk *Prototípus* állapottal rendelkezik. Mivel azonban az üzenet csak egy figyelmeztetés, az értékesítési rendelés létrehozása megtörtént.
 
-    ![Mérnöki termék értékesítési rendelése.](media/sales-order-eng-product.png "Mérnöki termék értékesítési rendelése")
+    ![Mérnöki termék értékesítési rendelése](media/sales-order-eng-product.png "Mérnöki termék értékesítési rendelése")
 
 ## <a name="request-changes-in-the-engineering-product"></a>A mérnöki termék módosításainak kérése
 
@@ -328,7 +331,7 @@ A termék egy vevőnek lett elküldve, de a vevő nem volt teljesen elégedett, 
 1. Keresse meg és nyissa meg a korábbi gyakorlatban létrehozott értékesítési rendelést.
 1. Az **Értékesítési rendelés** gyorslapon válassza ki a **Mérnöki változtatások kezelése &gt; Új mérnöki módosítási kérés** lehetőséget.
 
-    ![Mérnöki módosítás iránti kérelem létrehozása értékesítési rendelésből.](media/sales-order-eng-change-request.png "Mérnöki módosítás iránti kérelem létrehozása értékesítési rendelésből")
+    ![Mérnöki módosítás iránti kérelem létrehozása értékesítési rendelésből](media/sales-order-eng-change-request.png "Mérnöki módosítás iránti kérelem létrehozása értékesítési rendelésből")
 
 1. Töltse ki a mérnöki változtatás kérését a vevő visszajelzése alapján. Ebben a példában a következő értékeket állítsa be:
 
@@ -341,7 +344,7 @@ A termék egy vevőnek lett elküldve, de a vevő nem volt teljesen elégedett, 
 1. Az **Információk** gyorslapon válassza az **Új &gt; Megjegyzés** parancsot, ha egy megjegyzést szeretne hozzáadni a rácshoz.
 1. Az új megjegyzés **Leírás** mezőjében jelezze, hogy a *D0003* cikket törölni kell az anyagjegyzékből. Ha további adatokat kell megadnia a megjegyzéshez, akkor szöveget vihet be a **Megjegyzések** mezőbe.
 
-    ![Tervezési módosítási kérelem.](media/eng-change-request.png "Tervezési módosítási kérelem")
+    ![Tervezési módosítási kérelem](media/eng-change-request.png "Tervezési módosítási kérelem")
 
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 1. Figyelje meg, hogy a program automatikusan hozzáadta a cikket a **Termékek** gyorslaphoz, és a mérnöki változtatás kérésének forrását (az értékesítési rendelés) hozzáadta a **Forrás** gyorslaphoz.
@@ -370,31 +373,32 @@ A mérnök most áttekinti a vevőtől érkező kérést, és a termékhez módo
     - **Termék:** *Z0001*
     - **Hatás:** *Új verzió*
 
-    ![Mérnöki módosítási rendelés létrehozása.](media/eng-change-order.png "Mérnöki módosítási rendelés létrehozása")
+    ![Mérnöki módosítási rendelés létrehozása](media/eng-change-order.png "Mérnöki módosítási rendelés létrehozása")
 
 1. Figyelje meg, hogy mivel a **Hatás** mezőt az *Új verzió* értékre állította be, az **Új verzió** mező a **Termékrészletek** gyorslap **Termékrészletek** lapján megmutatja, hogy mi lesz az új verziószám (*V-02* ebben a példában).
 
-    ![Mérnöki módosítási rendelés termékrészletei.](media/eng-change-order-product-details.png "Mérnöki módosítási rendelés termékrészletei")
+    ![Mérnöki módosítási rendelés termékrészletei](media/eng-change-order-product-details.png "Mérnöki módosítási rendelés termékrészletei")
 
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 1. A **Termékrészletek** gyorslapon, az **Anyagjegyzék** lapon válassza a **Sorok** lehetőséget a *Z0001* termék *V-01* verziójához tartozó anyagjegyzék megnyitásához.
 
-    ![Mérnöki termék anyagjegyzéksorai.](media/eng-product-bom-lines.png "Mérnöki termék anyagjegyzéksorai")
+    ![Mérnöki termék anyagjegyzéksorai](media/eng-product-bom-lines.png "Mérnöki termék anyagjegyzéksorai")
 
 1. Válassza ki a *D0003* cikkszám sorát, majd a művelet ablaktáblán válassza a **Törlés** parancsot. A **Módosítás típusa** mező ehhez a sorhoz tartozó értéke *Törölt* értékre változik.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 
-    ![Módosított mérnöki termék anyagjegyzéksorai.](media/eng-product-bom-lines-modified.png "Módosított mérnöki termék anyagjegyzéksorai")
+    ![Módosított mérnöki termék anyagjegyzéksorai](media/eng-product-bom-lines-modified.png "Módosított mérnöki termék anyagjegyzéksorai")
 
 1. Zárja be az **Anyagjegyzéksor** oldalt a **Mérnöki módosítási rendelés** lapra.
 1. A **Termék részletei** gyorslap **Darabjegyzék** lapján figyelje meg, hogy a *Z0001* anyagjegyzék **Módosítás típusa** mezőjének értéke most *Megváltozott*.
 
-    ![Anyagjegyzéket tartalmazó mérnöki módosítási rendelés.](media/eng-change-order-changed-bom.png "Anyagjegyzéket tartalmazó mérnöki módosítási rendelés")
+    ![Anyagjegyzéket tartalmazó mérnöki módosítási rendelés](media/eng-change-order-changed-bom.png "Anyagjegyzéket tartalmazó mérnöki módosítási rendelés")
 
     A módosítások feldolgozása előtt jóvá kell hagyni a rendelést. A módosítások feldolgozásakor a rendszer frissíti a termékeket a mérnöki módosítási rendelésben szereplő módosításokkal. A példa esetében a mérnöki módosítási rendelést létrehozó személyt a jóváhagyóként határozták meg.
 
 1. A Művelet ablaktábla **Módosítási rendelés** lapjának **Állapot módosítása** csoportjában válassza a **Jóváhagyás** elemet.
 1. Válassza ki a **Feldolgozás** lehetőséget a termék adatainak frissítéséhez.
+1. Válassza a **Befejezés** gombot a módosítási rendelés befejezettként történő megjelöléséhez.
 
 ## <a name="release-the-changed-product"></a>A módosított termék kiadása
 
@@ -407,9 +411,3 @@ A termék most újra kiadható a *USMF* vállalatnak, majd elküldhető a vevőn
 1. Válassza ki azt a vállalatot, amelynek a termékeket ki kívánja adni.
 1. Válassza az **OK** gombot a **Kiadások** párbeszédpanel bezárásához és a visszatéréshez a módosítási rendeléshez.
 1. Válassza ki a művelet ablaktábla **Módosítási rendelés** lapján a **Termékkiadások** csoportban a **Feldolgozás** lehetőséget, hogy az érintett termékeket kiadja a kiválasztott vállalatoknak. Azt is megteheti, hogy a kiadási folyamat elindításához kijelöli **Termékszerkezet kiadása** lehetőséget.
-
-## <a name="complete-the-change-order"></a>A módosítási utasítás befejezése
-
-A módosítási utasítás befejezettként való megjelöléséhez, amely azt jelzi, hogy nincs további művelet, a műveleti ablaktáblán válassza a **Kész** lehetőséget.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

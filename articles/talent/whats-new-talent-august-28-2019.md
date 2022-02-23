@@ -90,6 +90,3 @@ További tájékoztatás: [Korszerű alkalmazotti belépés és navigálás](./s
 ### <a name="platform-update-29"></a>29-as platformfrissítés
 
 További információ a 29-es platformfrissítésről (Platform update 29): [Előzetes funkciók a Dynamics 365 for Finance and Operations platform update 29 verziójában (2019. október)](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-platform-update-29).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

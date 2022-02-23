@@ -2,29 +2,34 @@
 title: Feladatkezelés konfigurálása
 description: Ez a témakör azt mutatja be, hogyan kell konfigurálni a feladatkezelési szolgáltatást a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9a4775c2dba2b9aa8e671ab6c246000303b3a37e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730803"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412927"
 ---
 # <a name="configure-task-management"></a>Feladatkezelés konfigurálása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan kell konfigurálni a feladatkezelési szolgáltatást a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 Mielőtt a Dynamics 365 Commerce alkalmazásban vezetők és az alkalmazottak használhatják a Commerce feladatkezelési funkcióit, konfigurálni kell a feladatkezelést. A konfigurálás lépései között szerepelnek a vezetők és az alkalmazottak engedélyei, az engedélyek elosztása a pénztári (POS) kliensekhez, a pénztári értesítések beállítása, valamint a **Feladatok** csempéjének konfigurálása egy pénztári alkalmazás kezdőlapján.
 
@@ -44,7 +49,7 @@ A következő lépésekkel konfigurálhatja az üzletvezetők feladatkezelési e
 
 A következő ábra megmutatja, hogyan konfigurálhatja az üzletvezetők feladatkezelési engedélyeit.
 
-![Az üzletvezetők feladatkezelési engedélyeinek konfigurálása.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Az üzletvezetők feladatkezelési engedélyeinek konfigurálása](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Alkalmazottak engedélyeinek konfigurálása
 
@@ -78,7 +83,7 @@ A POS-értesítések konfigurálásához a feladatokhoz kövesse az alábbi lép
 
 A következő ábra a **Feladatkezelő** műveletet jeleníti meg a **Pénztári műveletek** lapon.
 
-![Feladatkezelő működése a POS-műveletek lapon.](media/HQ-POS-Tasks-Notifications.png)
+![Feladatkezelő működése a POS-műveletek lapon](media/HQ-POS-Tasks-Notifications.png)
 
 A POS-értesítések konfigurálásával kapcsolatos további tudnivalókat lásd: [Rendelési értesítések megjelenítése a pénztárnál (POS)](notifications-pos.md).
 
@@ -95,7 +100,7 @@ A **Feladatok** csempe konfigurálásához a Pénztáralkalmazás kezdőlapján 
 
 A következő ábra a pénztár kezdőlapján található **Feladatok** csempére mutat be egy példát.
 
-![A Feladatok mozaikja a pénztár kezdőlapján.](media/POS-home-screen-tasks-button-image.png)
+![A Feladatok mozaikja a pénztár kezdőlapján](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -106,6 +111,3 @@ A következő ábra a pénztár kezdőlapján található **Feladatok** csempér
 [Feladatlisták hozzárendelése áruházakhoz vagy alkalmazottakhoz](task-mgmt-assign-lists.md)
 
 [Feladatkezelés a pénztárban](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

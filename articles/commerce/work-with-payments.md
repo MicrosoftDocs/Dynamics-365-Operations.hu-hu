@@ -2,13 +2,16 @@
 title: Fizetési módok hívásközpontoknál
 description: Ez a témakör bemutatja a Dynamics 365 Commerce rendszer hívásközpontjaiban használható különböző fizetési módokat.
 author: josaw1
+manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRSalesTableOrderHistory, MCRCCAuthManagement
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b89daf41c8a14f5e03dc2a67c95e9d1fed2d5cab891ae65e20655c285b1f6ac2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e7636f5c664634c680edf2ff9d8bae5ebb9035af
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762572"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412877"
 ---
 # <a name="payment-methods-in-call-centers"></a>Fizetési módok hívásközpontoknál
 
@@ -50,6 +53,3 @@ A fizetési módokat meghatározásukkor a főkönyvhöz vagy bankszámlához ke
 A visszatérítés feldolgozásának eseteiben a hívásközpont olyan fizetési módokat is használ, amelyek a Kinnlevőségeknél vannak meghatározva. A fizetési módok konfigurálásához, kattintson a **Retail és Commerce** \> **Csatornabeállítások** \> **Hívásközpont beállítása** \> **Hívásközpont visszatérítési módok** elemre. El kell végeznie ezt a konfigurálást, a vevőknek szóló visszatérítési csekkek feldolgozásához. Például ha a vevő eredetileg kifizette a megrendelést készpénz vagy egy csekk segítségével, a felhasználó visszatérítési csekket akarhat küldeni a vevőnek a Kinnlevőségeken keresztül. Ebben az esetben a készpénz és a csekk fizetéstípusokat a hívásközpontban hozzá kell rendelni a megfelelő fizetési módokhoz a Kinnlevőségeknél annak a biztosítására, hogy a visszatérítés feldolgozása megfelelő legyen.
 
 Ezenkívül, ha a felhasználó visszárurendelést dolgoz fel a Commerce hívásközpont-felhasználóként, de nem tudja csatolni a visszaárut egy eredeti értékesítéshez, a **Visszatérés** fizetési módot kell megadni a hívásközponti paraméterei között. Ugorjon ide: **Retail és Commerce** \> **Csatorna beállítása** \> **Hívásközpont beállítása** \> **Hívásközponti paraméterek**, majd az **RMA/visszáru** lapon, a **Fizetési mód** mezőben, győződjön meg arról, hogy a fizetési mód meg van adva. A fizetési módszer az a fizetési módszer lesz, amely a visszatérítéseknél van alkalmazva. Általában vagy csekk, vagy vevői számla módként kerül meghatározásra.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

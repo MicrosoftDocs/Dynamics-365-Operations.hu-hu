@@ -1,26 +1,29 @@
 ---
 title: Retail értékesítési utalványok beállítása
-description: Ez a témakör az utalványokat tekinti át, és bemutatja, hogyan állíthatja be őket a Dynamics 365 Commerce alkalmazásban.
-author: josaw1
-ms.date: 10/05/2021
+description: Ez a témakör az utalványokat tekinti át, és bemutatja, hogyan állíthatja be őket.
+author: scott-tucker
+manager: AnnBe
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: josaw
+ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6a2ee38139f20b883bdfa5f0776951246f763f5f
-ms.sourcegitcommit: f699dbc21a06dbfb3fb299b789b428ea8d643868
+ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "7603123"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412791"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Retail értékesítési utalványok beállítása
 
@@ -38,10 +41,6 @@ Utalvány létrehozásához külön hozza létre az engedményt és az utalvány
 
 > [!NOTE]
 > Miután az utalványhoz egy engedményt kapcsolt, az engedményhez kapcsolódó több mező írásvédetté válik a Commerce rendszerben, mivel ezek az utalvány beállításaitól függnek. Idetartoznak az állapotjelző és a szokásos dátumtartományok mezői.
-> 
-> Az utalvány hívásközponti csatornában való használata esetén ki kell választania az **Újraszámítás** gombot **(Értékesítés lap > Számítás > Újraszámítás)** az utalványhoz társított engedmény alkalmazásához. Ez a további lépés egy későbbi verzióban törlődni fog.
-
-Ha egy utalványt alkalmaznia kell egy értékesítési tranzakcióra a pénztárnál, használhatja az **Utalványkódot** vagy az **Utalvány vonalkódját**. Az **Utalványkód** használata érdekében az **Utalványkód hozzáadása** műveletet be kell állítani a pénztár **Tranzakció** [képernyőelrendezésében](pos-screen-layouts.md). Válassza az **Utalványkód hozzáadása** lehetőséget, és adja meg az utalványkódot. Másik lehetőségként használja az **Utalvány vonalkódját**, olvassa be a vonalkódot, vagy adja meg a vonalkódot a **Tranzakció** képernyőn numerikus billentyűzet használatával.
 
 ### <a name="limited-use-coupons"></a>Korlátozottan használható utalványok
 
@@ -83,6 +82,3 @@ Az Utalvány funkció több különálló funkciót tartalmaz. A Commerce Headqu
 - **A HQ részben frissül, de a Commerce Scale Unit és a pénztár nem.** Egy HQ-frissítés során az utalvány- és engedménycsoportok lapjai frissülnek, és a kereskedelmi ármotor is frissül. Ha a kettő közül csak egy összetevő frissül, a Commerce alkalmazás egyes lapjai nem egyeznek meg az árszámítási adatokkal. Emiatt nem várt engedmények vagy a hibák fordulhatnk elő az engedményszámítások során.
 - **A HQ frissül, de a Commerce Scale Unit és a pénztár nem (N-1).** Mivel nem minden áruház frissíthető ugyanakkor, javasoljuk, hogy az áruházak frissítése előtt a HQ-t frissítse. Az N-1 forgatókönyvben az utalványokhoz kapcsolódó új funkció nem érhető el a még nem frissített üzletek esetében. Például az utalványfunkció „kizárás” sorokat vezet be. Ha kizárandó sorokat használ egy engedményen, ezeket a rendszer nem alkalmazza arra az áruházra, amelyen a korábbi verzió fut.
 - **A HQ nem frissül, de a Commerce Scale Unit és a pénztár igen (N+1).** Mivel a Commerce Scale Unit frissített ármotorja az árkalkulációk során kezelheti az örökölt engedménykódokat, a frissítésnek nem kellene funkcionális hatása legyen ebben a forgatókönyvben.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

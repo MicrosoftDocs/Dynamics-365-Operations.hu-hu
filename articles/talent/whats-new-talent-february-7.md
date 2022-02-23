@@ -58,6 +58,3 @@ Amikor frissíti a munkát egy beosztáshoz, a **Munkacsalád** az kiválasztott
 
 ### <a name="performance-improvements-when-rendering-workspaces"></a>Teljesítménynövelő fejlesztések a munkaterületek megjelenítésekor
 Munkaterületek analitika lapjai csak a lapok elérésekor töltenek be. A lap bal felső sarkában egy jelölő jelenik meg az első megjelenítés során.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

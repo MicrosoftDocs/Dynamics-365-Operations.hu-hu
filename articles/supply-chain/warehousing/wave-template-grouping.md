@@ -2,23 +2,26 @@
 title: Hullámsablon csoportosítása
 description: A hullámsablon csoportosítása lehetővé teszi a rendszer számára, hogy hullámsablon-beállítások használatával határozza meg, az Ön által megadott feltételek alapján, hogy hogyan kell megosztani a kiadott sorokat, és hozzárendelni azokat az új vagy meglévő hullámokhoz. Ez a funkció jól használható olyan raktárakban, ahol a hullámok meghatározott feltételek alapján jönnek létre, de a vezetők a kézi helyett az automatikus hullámlétrehozást részesítik előnyben.
 author: Mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTableListPage, WHSWaveTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: b265c0d5cb43e151386fe90e3a3dea414ec0aca6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: 9cbc0b6655de740628bcf3709d250ac02238038b
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579904"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429928"
 ---
 # <a name="wave-template-grouping"></a>Hullámsablon csoportosítása
 
@@ -198,6 +201,3 @@ A kezdés előtt készítse elő a hullámsablont a témakör korábbi [Hulláms
 1. Válassza ki a harmadik értékesítési rendelésből létrehozott hullám azonosítóját.
 1. A hullám részletei lap megnyitásához válassza a hullámazonosító hivatkozást.
 1. Figyelje meg, hogy a szállítmány hozzá van-e rendelve a **Hullámsorok** gyorslaphoz az első értékesítési rendeléshez tartozó szállítmánnyal együtt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

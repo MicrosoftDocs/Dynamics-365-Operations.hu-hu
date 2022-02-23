@@ -2,13 +2,16 @@
 title: Tervezési optimalizálás hibaelhárítása
 description: Ez a témakör azt mutatja be, hogyan lehet javítani a Tervezési optimalizálás használata során felmerülő problémákat.
 author: ChristianRytt
+manager: tfehr
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: bbf21abae60d4adee5a23a8405d14907b91724fa2cbf31c901bb46c589b2ea49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c3dd0bf262f65aac2359c05ff954bdfbd294353f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768095"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429298"
 ---
 # <a name="troubleshoot-planning-optimization"></a>Tervezési optimalizálás hibaelhárítása 
 
@@ -47,6 +50,12 @@ A Tervezés optimalizálás néhány területen eltér a beépített alaptervez�
 
 **Javítás**: Futtassa a Tervezési optimalizálás illeszkedési elemzését, majd elemezze az eredményeket a vonatkozó dokumentációval összevetve, hogy megértsék a hatásait. További tájékoztatás: [Tervezésoptimalizálás illeszkedési elemzése](planning-optimization-fit-analysis.md).
 
+## <a name="master-planning-doesnt-respect-the-coverage-time-fence"></a>Az alaptervezés nem veszi figyelembe a fedezeti időkorlátot
+
+Ezt a Tervezés optimalizálás egy függőben lévő funkciója okozza.
+
+**Javítás**: Mindaddig, amíg a függő funkció nem érhető el, szűrje vagy törölje a tervezett rendeléseket a fedezeti időkorláton kívüli ellátási javaslatok eltávolításához.
+
 ## <a name="cant-enable-planning-optimization"></a>A Tervezési optimalizálás nem engedélyezhető?
 
 A **Kapcsolat állapota** állapotnak **Csatlakoztatva** értékűnek kell lennie ahhoz, hogy a **Tervezési optimalizálás használata** beállításnak az **Igen** értéket adja meg. További tájékoztatás: [Első lépések a Tervezésoptimalizálással](get-started.md).
@@ -66,6 +75,3 @@ Ez a termelési rendelések támogatásának részeként tervezett függő funkc
 [Tervezési optimalizálás kezdő lépései](get-started.md)
 
 [Tervezési optimalizálás igazítási elemzése](planning-optimization-fit-analysis.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

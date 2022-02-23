@@ -2,27 +2,27 @@
 title: ER-formátum módosítása egyéni elektronikus dokumentum generálásához
 description: Ez a témakör azt mutatja be, hogyan lehet módosítani a Microsoft által biztosított elektronikus jelentéskészítési (ER) formátumot, hogy az egyedi elektronikus dokumentumot generáljon.
 author: NickSelin
+manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
+ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 47d8091e9199597857791f58f14587e2dea027e0
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: 20e7a32ac5f6ab21f89ed3c11c64458286864c9d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605230"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680170"
 ---
 # <a name="adjust-an-er-format-to-generate-a-custom-electronic-document"></a>ER-formátum módosítása egyéni elektronikus dokumentum generálásához
 
@@ -144,7 +144,7 @@ Ha a szabvány ER-konfigurációkat a Microsoft Dynamics 365 Finance jelenlegi p
 5. A **Verziók** gyorslapon válassza ki a kijelölt ER-formátumkonfiguráció **1.1**-es verzióját.
 6. Kattintson az **Importálás** lehetőségre a kiválasztott verzió Globális tárból a jelenlegi Finance and Operations példányba történő letöltéséhez.
 
-![Konfigurációk tárháza oldal.](./media/er-quick-start2-import-solution1.png)
+![Konfigurációk tárháza oldal](./media/er-quick-start2-import-solution1.png)
 
 > [!TIP]
 > Ha nem sikerül elérnie a [globális adattárat](er-download-configurations-global-repo.md), akkor lehetősége van ehelyett [letölteni konfigurációkat](download-electronic-reporting-configuration-lcs.md) a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
@@ -160,7 +160,7 @@ Ha a szabvány ER-konfigurációkat a Microsoft Dynamics 365 Finance jelenlegi p
     - **Kifizetési modell leképezés 1611** – Ez a konfiguráció tartalmazza a [modell-leképezés](general-electronic-reporting.md#data-model-and-model-mapping-components) összetevőt, amely leírja, hogy az adatmodell milyen módon van kitöltve az alkalmazási adatokkal futási időben.
     - **BACS (UK)** – Ez a konfiguráció tartalmazza az ER-összetevők [formátum](general-electronic-reporting.md#FormatComponentOutbound) és formátumleképezés ER-összetevőit. A formátum összetevő meghatározza a jelentés elrendezését. A formátumleképezési összetevő tartalmazza a modell-adatforrást, és meghatározza, hogy a jelentés elrendezését milyen módon kell kitölteni ennek az adatforrásnak a használatával futásidőben.
 
-![Konfigurációs lap a fában elérhető megadott ER-konfigurációkkal.](./media/er-quick-start2-imported-solution1.png)
+![Konfigurációk oldala](./media/er-quick-start2-imported-solution1.png)
 
 ## <a name="prepare-a-vendor-payment-for-processing"></a><a id="PrepareVendorPayment"></a>Szállítói fizetés előkészítése feldolgozásra
 
@@ -179,7 +179,7 @@ Hozzá kell adni banki információkat egy szállítói számlához, amelyre egy
     5. Az **IBAN** mezőben adja meg a **GB33BUKB20201555555555** értéket.
     6. Az **Útvonalszám** mezőben tartsa meg az <a id="DefineRoutingNumber"></a>**123456** alapértelmezett értéket.
 
-    ![Szállítói bankszámlák oldal.](./media/er-quick-start2-bank-account.png)
+    ![Szállítói bankszámlák oldal](./media/er-quick-start2-bank-account.png)
 
 4. Válassza a **Mentés** lehetőséget.
 5. Zárja be a lapot.
@@ -187,14 +187,14 @@ Hozzá kell adni banki információkat egy szállítói számlához, amelyre egy
 7. Ha szükséges, a szállítói részletek oldalon válassza a **Szerkesztés** parancsot az oldal szerkeszthetővé tételéhez.
 8. A **Fizetés** gyorslap **Bankszámla** mezőjében válassza ki a **GBP OPER** elemet.
 
-    ![Szállító részletei oldal.](./media/er-quick-start2-bank-account-reference.png)
+    ![Szállító részletei oldal](./media/er-quick-start2-bank-account-reference.png)
 
 9. Válassza a **Mentés** lehetőséget.
 10. Zárja be a lapot.
 
 ### <a name="enter-a-vendor-payment"></a><a id="EnterVendorPayment"></a>Szállítói kifizetés bevitele
 
-Új szállítói kifizetés megadásához a [fizetési javaslatot](../../../finance/accounts-payable/create-vendor-payments-payment-proposal.md) kell használnia.
+Új szállítói kifizetés megadásához a [fizetési javaslatot](https://docs.microsoft.com/dynamics365/finance/accounts-payable/create-vendor-payments-payment-proposal) kell használnia.
 
 1. Ugorjon a **Kötelezettségek** \> **Fizetések** \> **Szállítói kifizetés naplója** lehetőségre.
 2. A **Szállító kifizetési naplója** oldalon válassza az **Új** elemet.
@@ -204,11 +204,11 @@ Hozzá kell adni banki információkat egy szállítói számlához, amelyre egy
 6. A **Szállítói fizetési javaslat** párbeszédpanelen konfigurálja azokat a feltételeket, amelyek csak az **GB_SI_000001** szállítói számlához tartozó rekordok szűréséhez szükségesek, majd kattintson az **OK** gombra.
 7. Válassza ki a **00000007_Inv** számlához tartozó sort, majd válassza a **Kifizetés létrehozása** lehetőséget.
 
-    ![Szállítói fizetési javaslatok párbeszédpanel.](./media/er-quick-start2-payment-proposal.png)
+    ![Szállítói fizetési javaslatok párbeszédpanel](./media/er-quick-start2-payment-proposal.png)
 
 8. Győződjön meg róla, hogy a megadott fizetés az **Elektronikus** fizetési mód használatára van beállítva.
 
-    ![Szállítói kifizetések oldala.](./media/er-quick-start2-payment-line.png)
+    ![Szállítói kifizetések oldala](./media/er-quick-start2-payment-line.png)
 
 ## <a name="process-a-vendor-payment-by-using-the-standard-er-format"></a><a id="ProcessVendorPayment1"></a>Szállítói kifizetés feldolgozása a szabvány ER-formátum használatával
 
@@ -222,7 +222,7 @@ Az elektronikus fizetési módot úgy kell konfigurálni, hogy az az importált 
 4. Adja meg a **Fájlformátumok** gyorslap **Általános elektronikus export formátum** beállítását **Igen** értékre.
 5. Az **Exportálási formátum konfigurálása** mezőben válassza ki az **BACS (UK)** formátumkonfigurációt.
 
-    ![Fizetési módok – a szállítók számára az elektronikus fizetési módok beállítására használt lap, amely szabványos formátumban feldolgozza a szállítói kifizetéseket.](./media/er-quick-start2-method-of-payment1.png)
+    ![Fizetési módok - szállítók oldal](./media/er-quick-start2-method-of-payment1.png)
 
 6. Válassza a **Mentés** lehetőséget.
 
@@ -239,7 +239,7 @@ Az elektronikus fizetési módot úgy kell konfigurálni, hogy az az importált 
 5. Válassza ki az **OK** lehetőséget.
 6. Az **Elektronikus jelentések paraméterei** párbeszédpanelen állítsa a **Nyomtatási vezérlő jelentés** beállítását **Igen** értékre, majd válassza az **OK** gombot.
 
-    ![Elektronikus jelentés paraméterei – párbeszédoldal.](./media/er-quick-start2-payment-dialog1.png)
+    ![Elektronikus jelentés paraméterei – párbeszédoldal](./media/er-quick-start2-payment-dialog1.png)
 
     > [!NOTE]
     > A kifizetési fájlon kívül ellenőrzési jelentés is létrehozható.
@@ -251,7 +251,7 @@ Az elektronikus fizetési módot úgy kell konfigurálni, hogy az az importált 
 
         Figyelje meg, hogy a megadott ER-formátum [struktúrájával](#PositionRoutingNumber) összhangban a létrehozott fájl kifizetési sora a konfigurált bankszámlához [megadott](#DefineRoutingNumber) útválasztási számmal kezdődik.
 
-        ![Fizetési fájl TXT-formátumban.](./media/er-quick-start2-payment-file1.png)
+        ![Fizetési fájl TXT-formátum](./media/er-quick-start2-payment-file1.png)
 
 ## <a name="customize-the-standard-er-format"></a><a id="CustomizeProvidedFormat"></a>A szabvány ER-formátum testreszabása
 
@@ -267,13 +267,13 @@ Ebben az esetben a Litware, Inc. képviselőjeként létre kell hozni (származt
 4. Az **Új** mezőcsoportban válassza ki a **Származtatás innen: BACS (UK), Microsoft** lehetőséget.
 5. A **Név** mezőbe írja be a következőt: **BACS (UK egyéni)**.
 
-    ![Konfiguráció létrehozása legördülő párbeszédpanel.](./media/er-quick-start2-add-derived-format.png)
+    ![Konfiguráció létrehozása legördülő párbeszédpanel](./media/er-quick-start2-add-derived-format.png)
 
 6. Válassza a **Konfiguráció létrehozása** lehetőséget.
 
 A **BACS (UK egyéni)** ER-formátum konfigurációjának 1.1.1-es verziója jön létre. Ez a verzió **Piszkozat** [állapottal](general-electronic-reporting.md#component-versioning) rendelkezik, és szerkeszthető. Az egyéni ER-formátum jelenlegi tartalma megegyezik a Microsoft által biztosított formátum tartalmával.
 
-![Konfigurációk oldal a BACS (UK egyéni) ER-formátum konfigurációjának 1.1.1-es verziójával.](./media/er-quick-start2-derived-format-configuration1.png)
+![Konfigurációk oldala](./media/er-quick-start2-derived-format-configuration1.png)
 
 ### <a name="edit-a-custom-format"></a><a id="ConfigureDerivedFormat"></a>Egyéni formátum szerkesztése
 
@@ -293,7 +293,7 @@ Az egyéni formátumot úgy kell konfigurálni, hogy megfeleljen a bankspecifiku
 
 7. Válassza ki a **tranzakció** elemet.
 
-    ![Tranzakciós elem az ER-művelettervezőben.](./media/er-quick-start2-derived-format0.png)
+    ![Tranzakció elem az ER-művelettervezőben](./media/er-quick-start2-derived-format0.png)
 
     > [!NOTE]
     > A megadott jelentés úgy van beállítva, hogy <a id="PositionRoutingNumber"></a>minden kifizetési sor a banki regisztrációs útválasztási kezdődjön. Erre a célra a **vendBankRouteNum** formátumelem használatos. 
@@ -311,13 +311,13 @@ Az egyéni formátumot úgy kell konfigurálni, hogy megfeleljen a bankspecifiku
 9. Válassza ki a **vendBankSWIFT** elemet a formátumstruktúra fájában.
 10. Válassza **Mozgatás felfelé** lehetőséget a kiválasztott formátumelem egy szinttel feljebb helyezéséhez. Ismételje meg ezt a lépést addig, amíg a **vendBankSWIFT** elem a <a id="PositionSWIFTCode"></a>szülő **tranzakció** elem alatti első elem lesz.
 
-    ![VendBankSWIFT, mint a tranzakció alatti első elem az ER-művelettervezőben.](./media/er-quick-start2-derived-format1.png)
+    ![VendBankSWIFT, mint a tranzakció alatti első elem az ER-művelettervezőben](./media/er-quick-start2-derived-format1.png)
 
 11. Miközben a **vendBankSWIFT** még mindig ki van választva a szerkezeti fában, válassza ki a **Leképezés** lapot, majd bontsa ki a **modell** adatforrást.
 12. Bontsa ki a **model.Payment** \> **model.Payment.CreditorAgent** elemet, majd válassza a **model.Payment.CreditorAgent.BICFI** adatforrásmezőt. Ez az adatforrásmező kiteszi annak a szállítói banknak a SWIFT-kódját, amely a feldolgozott szállítói kifizetésben szereplő ügynöki szerepkörhöz van rendelve.
 13. Válassza a **Bind** elemet. A **vendBankSWIFT** formátumelem most a **model.Payment.CreditorAgent.BICFI** adatforrásmezőhöz van kötve, így a rendszer a létrejövő kifizetési fájlokban rögzíti a SWIFT-kódokat.
 
-    ![Az ER-művelettervező model.Payment.CreditorAgent.BICFI adatforrásmezőjéhez kötött vendBankSWIFT formátumelem.](./media/er-quick-start2-derived-format2.png)
+    ![Az ER-művelettervező model.Payment.CreditorAgent.BICFI adatforrásmezőjéhez kötött vendBankSWIFT formátumelem](./media/er-quick-start2-derived-format2.png)
 
 14. Válassza a **Mentés** lehetőséget.
 15. Zárja be a tervezőoldalt.
@@ -335,7 +335,7 @@ Ha egy ER-formátum piszkozat verzióját kívánja használni, ennek kifejezett
 5. A bal oldali ablak konfigurációs fáján válassza a **BACS (UK custom)** lehetőséget.
 6. Állítsa a **Piszkozat futtatása** beállítást **Igen** lehetőségre.
 
-    ![Piszkozat futtatása beállítás a Konfigurációk oldalon.](./media/er-quick-start2-derived-format-configuration2.png)
+    ![Piszkozat futtatása beállítás a Konfigurációk lapon](./media/er-quick-start2-derived-format-configuration2.png)
 
 ## <a name="process-a-vendor-payment-by-using-the-custom-er-format"></a><a id="ProcessVendorPayment2"></a>Szállítói kifizetés feldolgozása az egyéni ER-formátum használatával
 
@@ -349,7 +349,7 @@ Az elektronikus fizetési módot úgy kell konfigurálni, hogy a rendszer a szá
 4. Adja meg a **Fájlformátum** gyorslap **Általános elektronikus export formátum** beállítását **Igen** értékre.
 5. Az **Exportálási formátum konfigurálása** mezőben válassza ki az **BACS (UK egyéni)** formátumkonfigurációt.
 
-    ![Fizetési módok – a szállítók számára az elektronikus fizetési módok beállítására használt lap, amely egyéni formátumban feldolgozza a szállítói kifizetéseket.](./media/er-quick-start2-method-of-payment2.png)
+    ![Fizetési módok - szállítók oldal](./media/er-quick-start2-method-of-payment2.png)
 
 6. Válassza a **Mentés** lehetőséget.
 
@@ -378,7 +378,7 @@ Az elektronikus fizetési módot úgy kell konfigurálni, hogy a rendszer a szá
 
         Figyelje meg, hogy az egyéni ER-formátum struktúrájával összhangban a létrehozott fájl kifizetési sora most azzal a SWIFT-kóddal [kezdődik](#PositionSWIFTCode), amelyet azon szállító bankszámláján [rögzítettek](#DefineSWIFTCode), amelynek a kifizetését már feldolgozták.
 
-        ![A szállítói kifizetés feldolgozásához használt TXT formátumú kifizetési fájl](./media/er-quick-start2-payment-file2.png)
+        ![Fizetési fájl TXT-formátum](./media/er-quick-start2-payment-file2.png)
 
 ## <a name="import-new-versions-of-the-standard-er-format-configurations"></a><a id="ImportERSolution2"></a>A szabvány ER-formátumkonfigurációk új verzióinak importálása
 
@@ -395,7 +395,7 @@ Ha az ER-konfigurációk új verzióit szeretné hozzáadni az aktuális Finance
 5. A **Verziók** gyorslapon válassza ki a kijelölt ER-formátumkonfiguráció **3.3**-es verzióját.
 6. Kattintson az **Importálás** lehetőségre a kiválasztott verzió Globális tárból a jelenlegi Finance and Operations példányba történő letöltéséhez.
 
-![Konfigurációs tárházoldal, Verziók gyorslap, Importálás gomb.](./media/er-quick-start2-import-solution2.png)
+![Konfigurációk tárháza oldal](./media/er-quick-start2-import-solution2.png)
 
 > [!TIP]
 > Ha nem sikerül elérnie a [globális adattárat](er-download-configurations-global-repo.md), akkor lehetősége van ehelyett [letölteni konfigurációkat](download-electronic-reporting-configuration-lcs.md) a Lifecycle Services (LCS) szolgáltatásból.
@@ -410,7 +410,7 @@ Ha az ER-konfigurációk új verzióit szeretné hozzáadni az aktuális Finance
 6. A **Formátumtervező** oldalon bontsa ki a **BACSReportsFolder** formátumelemet.
 7.  Figyelje meg, hogy a 3.3-as verzió tartalmazza a **PaymentAdviceReport** formátumelemet, amely a szállítói kifizetések feldolgozásakor a kifizetési bizonylatokról szóló jelentés létrehozásához használatos.
 
-    ![PaymentAdviceReport formátumelem az ER-művelettervezőben.](./media/er-quick-start2-imported-solution2.png)
+    ![PaymentAdviceReport formátumelem az ER-művelettervezőben](./media/er-quick-start2-imported-solution2.png)
 
 8. Zárja be a tervezőoldalt.
 
@@ -436,14 +436,14 @@ A 3.3-as verziójú **BACS (UK)** formátum új funkcióinak a testreszabásába
 3. A **Verziók** gyorslapon válassza az **1.1.2** verziót, majd válassza az **Új alap** lehetőséget.
 4. Válassza az **Új alap** párbeszédpanelt **Cél verzió** mezőben, válassza az alapkonfiguráció **3.3** verzióját, és alkalmazza azt új alapként, valamint használja a konfiguráció frissítésére.
 
-    ![Új alap párbeszédpanel.](./media/er-quick-start2-rebase1.png)
+    ![Új alap párbeszédpanel](./media/er-quick-start2-rebase1.png)
 
 5. Válassza ki az **OK** lehetőséget.
 6. Figyelje meg, hogy a piszkozat verziójának száma **1.1.2**-ről **3.3.2**-re módosult az alapverzió változásainak megfelelően.
 
     A rendszer bizonyos ütközéseket észlelt az egyéni verzió és az új alapverzió egyesítésekor, mivel néhány formátummódosítást nem lehet automatikusan egyesíteni.
 
-    ![Új alapra helyezett konfiguráció ütközésekkel a Konfigurációk oldalon.](./media/er-quick-start2-rebase2.png)
+    ![Új alapra helyezett konfiguráció ütközésekkel a Konfigurációk oldalon](./media/er-quick-start2-rebase2.png)
 
     Ha ütközések merülnek fel, akkor azokat manuálisan kell megoldani a formátumtervező programban.
 
@@ -451,13 +451,13 @@ A 3.3-as verziójú **BACS (UK)** formátum új funkcióinak a testreszabásába
 8. Válassza a **Tervező** lehetőséget.
 9. A **Formátumtervező** lap **Részletek** gyorslapján jelöljön ki egy új alap ütközési rekordot, majd válassza az **Alapérték alkalmazása** lehetőséget.
 
-    ![Új alap ütközési rekord az ER-művelettervezőben.](./media/er-quick-start2-rebase3.png)
+    ![Új alap ütközési rekord az ER-művelettervezőben](./media/er-quick-start2-rebase3.png)
 
 10. Válassza a **Mentés** lehetőséget.
 
     Az új alap ütközési rekordnak ezután többé nem kellene megjelennie **Részletek** gyorslapon.
 
-    ![Feloldott ütközés az ER-művelettervezőben.](./media/er-quick-start2-rebase4.png)
+    ![Feloldott ütközés az ER-művelettervezőben](./media/er-quick-start2-rebase4.png)
 
     > [!NOTE]
     > Az ütközést úgy oldotta fel, hogy megerősítette, hogy az alapmodell 3. verzióját kell használni ebben az ER-formátumban.
@@ -465,7 +465,7 @@ A 3.3-as verziójú **BACS (UK)** formátum új funkcióinak a testreszabásába
 11. Bontsa ki a **BACSReportsFolder** \> **fájl** \> **tranzakciók** \> **tranzakció** elemet.
 12. A **Feltérképezés** lapon figyelje meg, hogy az egyéni ER-formátumának 3.3.2-es verziója tartalmazza mind a testreszabását (a **vendBankSWIFT** formátumelemet és annak kötését), valamint a Microsoft által biztosított alap ER-formátum 3.3-as verziójának új funkcionalitását (a **PaymentAdviceReport** formátumú elem a beágyazott elemekkel és a konfigurált kötésekkel együtt). Csak néhány egérkattintással adoptálta az új alapverzió módosításait, egyesítve azokat a testreszabásával.
 
-    ![Egyesített formátum az ER-művelettervezőben.](./media/er-quick-start2-rebase5.png)
+    ![Egyesített formátum az ER-művelettervezőben](./media/er-quick-start2-rebase5.png)
 
 13. Zárja be a tervezőoldalt.
 
@@ -490,7 +490,7 @@ A 3.3-as verziójú **BACS (UK)** formátum új funkcióinak a testreszabásába
     - Állítsa az **Ellenőrzési jelentés nyomtatása** opciót **Igen** értékre.
     - Állítsa az **Kifizetési bizonylat nyomtatása** opciót **Igen** értékre.
 
-    ![Elektronikus jelentések paramétereinek párbeszédablaka.](./media/er-quick-start2-payment-dialog2.png)
+    ![Elektronikus jelentés paraméterei – párbeszédablak](./media/er-quick-start2-payment-dialog2.png)
 
     > [!NOTE]
     > A kifizetési fájlon kívül már az ellenőrzési jelentés és a kifizetési bizonylat jelentés is létrehozható.
@@ -501,19 +501,16 @@ A 3.3-as verziójú **BACS (UK)** formátum új funkcióinak a testreszabásába
     - Az ellenőrzési jelentést Excel-formátumban
     - Az kifizetési bizonylat jelentést Excel-formátumban
 
-        ![Kifizetési bizonylat jelentés Excel-formátumban.](./media/er-quick-start2-payment-advice-report.png)
+        ![Kifizetési bizonylat jelentést Excel-formátumban](./media/er-quick-start2-payment-advice-report.png)
 
     - A fizetési fájl TXT-formátumban
 
         Figyelje meg, hogy a létrehozott fájl kifizetési sora azzal a SWIFT-kóddal kezdődik, amelyet azon szállító bankszámláján rögzítettek, amelynek a kifizetését már feldolgozták.
 
-        ![A új szállítói kifizetés új alapra helyezett ER formátummal történő feldolgozásához használt TXT formátumú kifizetési fájl.](./media/er-quick-start2-payment-file3.png)
+        ![Fizetési fájl TXT-formátum](./media/er-quick-start2-payment-file3.png)
 
 ## <a name="additional-resources"></a><a id="References"></a>További erőforrások
 
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 - [ER-konfigurációk letöltése a Lifecycle Services szolgáltatásból](download-electronic-reporting-configuration-lcs.md)
 - [ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából](er-download-configurations-global-repo.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

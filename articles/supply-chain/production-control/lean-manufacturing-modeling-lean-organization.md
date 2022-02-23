@@ -1,27 +1,30 @@
 ---
 title: Lean szervezeti modellezése
 description: A cikk a lean szervezet modellezésében szereplő kulcsokról nyújt tájékoztatást.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 09/24/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, KanbanFlowSelection, KanbanFlow
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 53141
 ms.assetid: 4f272f2f-ec2c-4b0d-a652-00a63b719b9e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f3958d21188163fe95e36ba4b8117ae8314b0fd1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 960ba8851810ff528581144ad863772f18f9fa79
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570201"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429743"
 ---
 # <a name="modeling-a-lean-organization"></a>Lean szervezeti modellezése
 
@@ -51,7 +54,7 @@ A jövőbeli állapotú érték a termelési folyamat verziójaként lehet model
 
 Az érték-előállítási folyamatot egy üzemi egységként lehet modellezni. Emiatt az érték-előállítási folyamatot a pénzügyi dimenziókban is lehet használni.
 
-További információ üzemi egységekről: [Üzemi egység létrehozása](../../fin-ops-core/fin-ops/organization-administration/tasks/create-operating-unit.md).
+További információ üzemi egységekről: [Üzemi egység létrehozása](../../fin-and-ops/organization-administration/tasks/create-operating-unit.md).
 
 ## <a name="costing-for-lean-manufacturing-based-on-the-production-flow"></a>A lean manufacturing költségszámítása a termelési folyamaton alapszik.
 A termelési folyamatra vonatkozó költségek időszakos konszolidációja korrigálja az érintett befejezetlen termelés számlát és lehetővé teszi a termelési folyamat által megadott termékek számára meghatározandó variánsokat.
@@ -64,6 +67,3 @@ A Lean manufacturing feldolgozásához a termelési folyamat és tevékenység m
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

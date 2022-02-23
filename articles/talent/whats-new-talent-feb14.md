@@ -52,6 +52,3 @@ Módosítás történt a „Felmondás oka” kód alapértelmezett feltűnteté
 
 ### <a name="new-entity-created-for-job-compensation-levels"></a>Új entitiás lett létrehozva a feladatkompenzációs szintekhez
 Új datamanagement framework (DMF) entitás lett létrehozva. Az entitás lehetőséget biztosít kompenzációs szintek, a piaci érték és felmérési adatok létrehozására és frissítésére a rendszerben definiált egyes munkákhoz.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,23 +2,26 @@
 title: Feladatkártya konfigurálása az eszközökhöz
 description: Ez a témakör a feladatkártya-eszköz konfigurálásához szükséges különböző beállításokat ismerteti.
 author: johanhoffmann
+manager: tfehr
 ms.date: 05/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationSetupTouch, JmgRegistrationTouchUserConfiguration
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-05-29
-ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: 0382e34664f20389c43e8dec4437f0078fa1f60a
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
-ms.translationtype: MT
+ms.dyn365.ops.version: Release 10.0.12
+ms.openlocfilehash: e072f99b0b0df75f1b9706362b429bbc4568473a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777740"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429587"
 ---
 # <a name="configure-job-card-for-devices"></a>Feladatkártya konfigurálása az eszközökhöz
 
@@ -34,21 +37,21 @@ Az ebben a témakörben leírt néhány beállítást engedélyeznie kell a rend
 
 A funkció elérhetővé tétele érdekében engedélyezze a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő szolgáltatásokat (sorrendben):
 
-1. A feladatkártya-eszközhöz hozzáadott készként jelentéshez szükséges tábla (az ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció alapértelmezés szerint be van kapcsolva.)
+1. A Feladatkártya eszközhöz hozzáadott, készként történő jelentéshez használt azonosítótábla
 1. Az azonosítótábla-szám automatikus létrehozásának engedélyezése, amikor a feladatkártya eszközében befejezettként jelentik
 
 ### <a name="print-label"></a>Címkenyomtatás
 
 A funkció elérhetővé tétele érdekében engedélyezze a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő szolgáltatásokat (sorrendben):
 
-1. A feladatkártya-eszközhöz hozzáadott készként jelentéshez szükséges tábla (az ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció alapértelmezés szerint be van kapcsolva.)
+1. A Feladatkártya eszközhöz hozzáadott, készként történő jelentéshez használt azonosítótábla
 1. Címke nyomtatása a Feladatkártya eszközéből
 
 ### <a name="allow-locking-of-touch-screen"></a>Az érintőképernyő zárolásának engedélyezése
 
-Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. Ha használni szeretné, ellenőrizze, hogy be van-e kapcsolva a következő funkció a [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) szolgáltatáskezelésben:
+A funkció elérhetővé tétele érdekében engedélyezze a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő funkciót:
 
-- A feladatkártya-eszköz és a feladatkártya-terminál zárolására alkalmas funkció az eszközök fertőtlenítése érdekében
+- (Előzetes verzió) A feladatkártya-eszköz és a feladatkártya-terminál zárolására alkalmas funkció az eszközök fertőtlenítése érdekében
 
 ## <a name="manage-your-device-configurations"></a>Eszközkonfigurációk kezelése
 
@@ -65,7 +68,7 @@ Az **Általános** gyorslap a kiválasztott eszközkonfigurációhoz rendelkezé
 
 - **Mennyisége jelentése távozáskori blokkoláskor** – Ezt állítsa **Igen** értékre megkérheti a dolgozókat, hogy adják meg a folyamatban lévő munkák visszajelzéseit a távozáskori blokkoláskor. Ha **Nem** értékre van állítva, akkor a dolgozók nem lesznek figyelmeztetve.
 - **Alkalmazott zárolása** – Ha ez a beállítás **Nem** értékre van állítva, akkor a rendszer egy regisztrációt (például új feladat regisztrációja) követően azonnal kijelentkeztet minden dolgozót, majd az eszköz visszatér a bejelentkezési lapra. Ha ez a beállítás **Igen** értékre van állítva , akkor minden dolgozó bejelentkezve marad a feladatkártya-eszközbe. Ugyanakkor a dolgozónak továbbra is lehetősége van a manuális kijelentkezésre ,hogy egy másik dolgozó bejelentkezhessen úgy, hogy az eszköz ugyanabban a rendszerfelhasználói fiókban marad. A fiókok típusairól a [Hozzárendelt felhasználók](#assigned-users) című témakörben olvashat bővebben.
-- **Vonalkódolvasó** - Állítsa ezt a beállítást **Igenre**, hogy a munkakártya-eszközön legyen egy olyan lehetőség, amely lehetővé teszi a dolgozók számára, hogy egy vonalkód beolvasásával regisztrálják egy új munka kezdetét.
+- **Vonalkód-olvasó** – Ezt a lehetőséget **Igen** értékre állítva lehetőséget biztosít a feladatkártya eszközön a felhasználóknak, hogy egy vonalkód beolvasásával regisztrálják egy feladat megkezdését.
 - **A regisztráció tényleges időpontjának használata** – Ezt a beállítást **Igen** értékre állíthatja, ha azt szeretné, hogy az egyes új regisztrációk időpontja a dolgozó által benyújtott regisztráció pontos időpontjával egyezzen meg. A **Nem** értékre állításával a bejelentkezési időt használhatja helyette. Ezt a beállítást általában **Igen** értékre kell állítani , ha engedélyezve van az **Alkalmazott zárolása** és/vagy az **Egy dolgozó** beállítás, aminek következtében a dolgozók általában hosszabb ideig bejelentkezve maradnak.
 - **Egyetlen dolgozó** – Állítsa ezt a beállítást **Igen** értékre ha csak egy dolgozó használja a feladatkártya-eszközt, ha ez a konfiguráció aktív. Ha ez a beállítás be van jelölve, akkor az **Alkalmazott zárolása** beállítás automatikusan **Igen** értékre van állítva. Ezenkívül ez a beállítás eltávolítja a dolgozónak a belépőkártya-azonosító (vagy hasonló) használatával történő bejelentkezésre vonatkozó követelményét (és képességét). Ehelyett a dolgozó a Supply Chain Management alkalmazásba egy olyan rendszerfelhasználói fiókkal jelentkezik be, amely egy *időregisztrált dolgozóhoz* van társítva (a *dolgozók* táblából), és dolgozóval egyidőben bejelentkezik a feladatkártya eszközbe.  A fiókok típusairól a [Hozzárendelt felhasználók](#assigned-users) című témakörben olvashat bővebben.
 - **Személyes szűrők beállításának engedélyezése a dolgozóknak** – Ezt a beállítást **Igen** értékre állítva a dolgozók szűrhetik az eszközön számukra megjelenített feladatokat. A dolgozó módosíthatja következő három szűrési feltétel bármely értékeit: **Termelési egység**, **Erőforráscsoport** és **Erőforrás**. Csak a kiválasztott szűrési feltételeknek megfelelő erőforrásokra ütemezett feladatok jelennek meg az eszközön. A feltételek bármelyikéhez vagy mindegyikéhez rendelhet hozzárendelhet alapértelmezett értékeket is, és azok akkor is alkalmazva lesznek, ha ez a beállítás nincs kiválasztva.
@@ -92,6 +95,3 @@ Azonban, ahogy korábban már említettük, amikor egy eszköz konfigurációjá
 ## <a name="additional-resources"></a>További erőforrások
 
 [Jelentés befejezettként a feladatkártya eszközből](report-finished-job-device.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

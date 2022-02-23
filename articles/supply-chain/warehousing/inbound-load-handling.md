@@ -1,38 +1,39 @@
 ---
 title: Beszerzési rendelések bejövő rakományának kezelése a raktárban
 description: Ez a témakör a beszerzési rendelések bejövő rakományának raktárkezelési folyamatát írja le.
-author: Mirzaab
+author: omulvad
+manager: tfehr
 ms.date: 03/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTable, WHSLoadPlanningListPage, WHSLoadPlanningWorkbench, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-03-21
-ms.dyn365.ops.version: 10.0.10
-ms.openlocfilehash: c2d7f140c0199b4b81a7b42220d5800d427be680
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.10
+ms.openlocfilehash: 41a05bcd0148d0a553cb50575cae47f48397ae9b
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577840"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429844"
 ---
 # <a name="warehouse-handling-of-inbound-loads-for-purchase-orders"></a>Beszerzési rendelések bejövő rakományának kezelése a raktárban
 
-[!include [banner](../includes/banner.md)]
-
 Ez a témakör a beszerzési rendelések bejövő rakományának raktárkezelési folyamatát írja le.
 
-Minden bejövő rakományhoz a rendszernek már tartalmaznia kell egy kapcsolódó értékesítési rendelést, és tartalmazhatja a kapcsolódó rakományspecifikációkat és/vagy szállítási tervet is. A bejövő terhelések létrehozásával és kezelésével kapcsolatos további tudnivalókat lásd: [Üzleti folyamat: bejövő rakományok szállítási tervezése](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
+Minden bejövő rakományhoz a rendszernek már tartalmaznia kell egy kapcsolódó értékesítési rendelést, és tartalmazhatja a kapcsolódó rakományspecifikációkat és/vagy szállítási tervet is. A bejövő terhelések létrehozásával és kezelésével kapcsolatos további tudnivalókat lásd: [Üzleti folyamat: bejövő rakományok szállítási tervezése](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
 ## <a name="overview-how-inbound-loads-are-created-registered-and-received"></a>Áttekintés: Bejövő rakományok létrehozása, regisztrálása és fogadása
 
 A következő ábra a beszerzésirendelési-mennyiséggel rendelkező bejövő rakományok kezelésének jellemző folyamatát mutatja, amikor azok a raktárba érkeznek.
 
-![A bejövő rakományok kezelési folyamata.](media/inbound-process.png "A bejövő rakományok kezelési folyamata")
+![A bejövő rakományok kezelési folyamata](media/inbound-process.png "A bejövő rakományok kezelési folyamata")
 
 1. **A szállító megerősíti a beszerzési rendelést.**
 
@@ -40,11 +41,11 @@ A következő ábra a beszerzésirendelési-mennyiséggel rendelkező bejövő r
 
 1. **A bejövő rakomány rekordja az érkezés és annak tartalma megtervezéséhez jön létre.**
 
-    A bejövő rakományrekord egy vagy több beszerzési rendelés szállítói szállítmányát jelöli. A rakomány várhatóan egy fizikai szállítási egységként (például teherautónyi) fog érkezni a raktárba. A bejövő rakományrekordot tervezési célokra használja a program, és lehetővé teszi, hogy a logisztikai koordinátor nyomon kövesse a haladását a szállítótól. A rendszer a rendelési sorok mennyiségeinek regisztrálására, valamint az előrehaladás raktári műveletekkel, például az bevételezés és az elraktározási munka történő kezelésére használja. A rakományokat automatikusan vagy manuálisan is létre lehet hozni, és egy beszerzési rendelésen vagy egy előzetes szállítási értesítőn (ASN) is alapulhatnak. További tájékoztatás: [Bejövő rakomány létrehozása és módosítása](/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
+    A bejövő rakományrekord egy vagy több beszerzési rendelés szállítói szállítmányát jelöli. A rakomány várhatóan egy fizikai szállítási egységként (például teherautónyi) fog érkezni a raktárba. A bejövő rakományrekordot tervezési célokra használja a program, és lehetővé teszi, hogy a logisztikai koordinátor nyomon kövesse a haladását a szállítótól. A rendszer a rendelési sorok mennyiségeinek regisztrálására, valamint az előrehaladás raktári műveletekkel, például az bevételezés és az elraktározási munka történő kezelésére használja. A rakományokat automatikusan vagy manuálisan is létre lehet hozni, és egy beszerzési rendelésen vagy egy előzetes szállítási értesítőn (ASN) is alapulhatnak. További tájékoztatás: [Bejövő rakomány létrehozása és módosítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/create-or-modify-an-inbound-load).
 
 1. **A szállító visszaigazolja a rakomány kiszállítását.**
 
-    Amikor a szállító feladja a rakományt, a fogadó raktár logisztikai koordinátora megerősíti a rakomány szállítását. Ha a fogadó vállalat a **Szállításkezelés** modult használja, akkor a bejövő szállítmány visszaigazolása kiváltja a bejövő rakományokhoz társított egyéb rakományelosztási folyamatokat. További tájékoztatás: [Rakomány jóváhagyása szállításra](/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
+    Amikor a szállító feladja a rakományt, a fogadó raktár logisztikai koordinátora megerősíti a rakomány szállítását. Ha a fogadó vállalat a **Szállításkezelés** modult használja, akkor a bejövő szállítmány visszaigazolása kiváltja a bejövő rakományokhoz társított egyéb rakományelosztási folyamatokat. További tájékoztatás: [Rakomány jóváhagyása szállításra](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/confirm-a-load-for-shipping).
 
 1. **A rakomány megérkezik a raktárba, és a dolgozók regisztrálják a mennyiségeket.**
 
@@ -66,7 +67,7 @@ Amikor egy bejövő rakomány először megérkezik a raktárba, a raktári dolg
 
 - **A mobileszköz betöltést támogató menüje**
 
-    A [Raktárkezelés mobilalkalmazás](../warehousing/install-configure-warehouse-management-app.md) mobileszközökhöz a következő munkalétrehozási folyamatokat támogatja:
+    A [raktári alkalmazás](install-configure-warehousing-app.md) mobileszközökhöz a következő munkalétrehozási folyamatokat támogatja:
 
     - Rakomány – cikk bevételezése
     - Rakomány – cikk bevételezése és eltárolása
@@ -129,7 +130,7 @@ Az alábbi táblázatban a **Terhelés túlbevételezése** mezőhöz rendelkez�
 | Érték | Leírás |
 |---|---|
 | Engedélyezés | A dolgozók regisztrálhatják azokat a mennyiségeket, amelyek meghaladják a fennmaradó nem regisztrált mennyiséget a kiválasztott rakományhoz, de csak akkor, ha a teljes regisztrált mennyiség nem haladja meg a rakományhoz társított beszerzésirendelés-sor mennyiségét (a túlszállítás százalék módosítását követően). |
-| Zárolás | <p>A dolgozók nem regisztrálhatják az olyan mennyiségek bevételezését, amelyek meghaladják a kiválasztott rakomány fennmaradó nem regisztrált mennyiségét (a túlszállítási százalékhoz igazítás után). Az a dolgozó, aki megpróbálja regisztrálni a nyugtákat, hibaüzenetet kap, és mindaddig nem tudja folytatni a munkát, amíg nem regisztrál olyan mennyiséget, amely nem nagyobb a fennmaradó nem regisztrált rakomány mennyiségénél.</p><p>Alapértelmezés szerint a program átmásolja a terhelési sor túlszállítási százalékértékét a kapcsolódó beszerzési rendelési sorból. Amikor a <b>Terhelés túlbevételezése</b> mező értéke <i>Zárolás</i>, a rendszer a túlszállítás százalékos értéke alapján számítja ki a terhelési sorhoz regisztrálható teljes mennyiséget. Ez az érték azonban a szükség esetén felülírható az egyes rakományokhoz. Ez a viselkedés akkor válik hasznossá, amikor olyan folyamatokat kap, amelyekben túlzott mennyiség, amely megfelel a túlszállítás százalékának aránytalanul van elosztva több rakomány között. Egy példaforgatókönyv:</p><ul><li>Több rakomány van egy beszerzésirendelés-sorhoz.</li><li>A beszerzési rendelés sorának túlszállítási százaléka több, mint 0 (nulla).</li><li>Mennyiségek lettek már regisztrálva van egy vagy több rakománnyal szemben a túlszállítási százalék figyelembe vétele nélkül.</li><li>A túlszállítási mennyiség a legutóbbi rakományhoz érkezik.</li></ul><p>Ebben a helyzetben egy mobileszköz csak akkor használható, ha az utolsó rakományhoz tartozó túlmennyiség regisztrálásához ha a raktári felügyelő a megfelelő terhelési sorhoz az alapértelmezett értékről olyan értékre növeli a túlszállítási százalékot, amely elég nagy ahhoz, hogy a teljes túlszállítás regisztrálható legyen a végső rakományhoz.</p> |
+| Zárolás | <p>A dolgozók nem regisztrálhatják az olyan mennyiségek bevételezését, amelyek meghaladják a kiválasztott rakomány fennmaradó nem regisztrált mennyiségét (a túlszállítási százalékhoz igazítás után). Az a dolgozó, aki megpróbálja regisztrálni a beérkezőket hibaüzenetet kap, és mindaddig nem fog tudni folytatni, amíg nem jegyez be olyan mennyiséget, amely nem egyezik meg vagy nem kevesebb a fennmaradó nem regisztrált rakomány mennyiségénél.</p><p>Alapértelmezés szerint a program átmásolja a terhelési sor túlszállítási százalékértékét a kapcsolódó beszerzési rendelési sorból. Amikor a <b>Terhelés túlbevételezése</b> mező értéke <i>Zárolás</i>, a rendszer a túlszállítás százalékos értéke alapján számítja ki a terhelési sorhoz regisztrálható teljes mennyiséget. Ez az érték azonban a szükség esetén felülírható az egyes rakományokhoz. Ez a viselkedés akkor válik hasznossá, amikor olyan folyamatokat kap, amelyekben túlzott mennyiség, amely megfelel a túlszállítás százalékának aránytalanul van elosztva több rakomány között. Egy példaforgatókönyv:</p><ul><li>Több rakomány van egy beszerzésirendelés-sorhoz.</li><li>A beszerzési rendelés sorának túlszállítási százaléka több, mint 0 (nulla).</li><li>Mennyiségek lettek már regisztrálva van egy vagy több rakománnyal szemben a túlszállítási százalék figyelembe vétele nélkül.</li><li>A túlszállítási mennyiség a legutóbbi rakományhoz érkezik.</li></ul><p>Ebben a helyzetben egy mobileszköz csak akkor használható, ha az utolsó rakományhoz tartozó túlmennyiség regisztrálásához ha a raktári felügyelő a megfelelő terhelési sorhoz az alapértelmezett értékről olyan értékre növeli a túlszállítási százalékot, amely elég nagy ahhoz, hogy a teljes túlszállítás regisztrálható legyen a végső rakományhoz.</p> |
 | Zárolás csak a lezárt rakományokhoz | A dolgozók túlfogadhatják a nyitott rakományokhoz tartozó rakománysor mennyiségeket, de olyan terhelésekhez nem, amelyek állapota _Fogadott_. |
 
 > [!NOTE]
@@ -205,7 +206,7 @@ A következő táblázat összefoglalja, hogy milyen hatásai vannak a **Több t
 | Több termékbevételezés engedélyezése rakományonként | Rakománymennyiség | Rakomány állapota | Jegyzet |
 |---|---|---|---|
 | Ha ez a mező nem érhető el (10.0.10 előtti verziók) | <p>A rakomány mennyisége úgy van beállítva, hogy az a regisztrált mennyiséggel egyenlő.</p><p>Ha a rakomány mennyisége 0 (nulla), ami azt jelenti, hogy nem történt regisztráció, akkor a program törli a rakománysort.</p><p>Ha nincs rakománysor a rakományhoz, akkor a rendszer törli a rakományt.</p> | _Bevételezve_ | Ha a rendelési sor regisztrált mennyiségéhez több rakomány is tartozik, akkor a rendszer csak annak a rakománynak az állapotát jeleníti meg, amelynek a feladása megtörtént és állapota _Fogadott_ értékre lett frissítve. |
-| Nem | <p>A rakomány mennyisége úgy van megadva, hogy az megegyezzen azzal a mennyiséggel, amely társítva van a rakományazonosítóhoz.</p><p>Ha nincs megadva rakományazonosító készlettranzakcióhoz esetében, a viselkedés megfelel a 10.0.10. verzió előtti verziók viselkedésének.</p> | _Bevételezve_ | |
+| Nincs | <p>A rakomány mennyisége úgy van megadva, hogy az megegyezzen azzal a mennyiséggel, amely társítva van a rakományazonosítóhoz.</p><p>Ha nincs megadva rakományazonosító készlettranzakcióhoz esetében, a viselkedés megfelel a 10.0.10. verzió előtti verziók viselkedésének.</p> | _Bevételezve_ | |
 | Igen | Nincs frissítés | _Beérkezett_, ha a teljes regisztrált rakománymennyiség nagyobb vagy egyenlő, mint a rakomány mennyisége | |
 | Igen | Nincs frissítés | _Szállítva_ vagy _Folyamatban_, ha a teljes regisztrált rakománymennyiség kisebb, mint a rakomány mennyisége | |
 
@@ -218,7 +219,7 @@ További regisztrált rakománymennyiségek termékbevételezés-feladásához e
 
 ### <a name="post-registered-quantities-from-the-purchase-order-page"></a>Regisztrált mennyiségek feladása a Beszerzési rendelés oldalról
 
-Ha regisztráció utáni mennyiségekhez szeretne nyugtát készíteni a **Beszerzési rendelés** oldalról, a felhasználónak végre kell hajtania a következő feladatokat, mielőtt kiválaszthatná a **Termékbevételezés** műveletet:
+Regisztrált mennyiségek termékbevételezés-feladásához a **Beszerzési rendelés** oldalról a felhasználó a következő feladatokat hajtja végre, mielőtt kiválasztja a **Termékbevételezés** műveletet:
 
 - A **Mennyiség** mezőt a **Paraméterek** szakaszban a **Beállítások** lapon _Regisztrált mennyiség_ értékre állítja.
 - A **Termékbevételezés** mezőbe beírja a feladás során szerepeltetett beszerzési rendelések számát.
@@ -285,7 +286,7 @@ Ha ezeket a forgatókönyveket a megadott mintaadatok és értékek alapján kí
 
 Mielőtt a raktári fogadó adminisztrátorok egy mobileszköz segítségével regisztrálhatnak egy rakományhoz kapcsolódó bejövő készletet, egy mobileszköz-menüelemet kell létrehozni erre a célra.
 
-Ebben a szakaszban egy mobileszköz menüelemet hoz létre, és hozzáadja azt egy meglévő menühöz. A raktári dolgozó ezt követően kiválaszthatja a menüelemet a Raktárkezelés mobilalkalmazásban.
+Ebben a szakaszban egy mobileszköz menüelemet hoz létre, és hozzáadja azt egy meglévő menühöz. A raktári dolgozó ezt követően kiválaszthatja a menüelemet a raktári alkalmazásban.
 
 1. Nyissa meg a **Raktárkezelés \> Beállítások \> Mobileszköz \> Mobileszköz menüelemei** lehetőséget és győződjön meg arról, hogy a mobileszköz menüje tartalmaz egy olyan menüelemet, amelynek beállításai a következők:
 
@@ -295,7 +296,7 @@ Ebben a szakaszban egy mobileszköz menüelemet hoz létre, és hozzáadja azt e
 
     Az összes többi beállítást az alapértelmezett értéken hagyhatja.
 
-    ![Mobileszköz menüelem-beállításai.](media/inbound-mobile-menu-items.png "Mobileszköz menüelem-beállításai")
+    ![Mobileszköz menüelem-beállításai](media/inbound-mobile-menu-items.png "Mobileszköz menüelem-beállításai")
 
     A mobileszköz-menüelemek beállításával kapcsolatos további tudnivalókat lásd: [Mobileszközök beállítása raktári munkához](configure-mobile-devices-warehouse.md).
 
@@ -330,7 +331,7 @@ Ebben az eljárásban manuálisan létrehoz egy beszerzési rendelést és egy k
     - A **Rakomány** gyorslapon a **Rakomány állapota** mező _Nyitott_ értékre van állítva.
     - A **Rakománysorok** szakaszban egyetlen olyan sor van, amelyben a **Mennyiség** mező értéke _10_, és a **Munka létrehozva mennyiség** mező értéke _0_ (nulla).
 
-    ![Rakomány részletei.](media/inbound-load-details.png "Rakomány részletei")
+    ![Rakomány részletei](media/inbound-load-details.png "Rakomány részletei")
 
 1. A műveleti ablaktábla **Szállítás és fogadás** lapján válassz a **Megerősítés \> Bejövő szállítmány** lehetőséget. Figyelje meg, hogy a **Rakomány állapota** _Szállított_ értékre változott.
 1. Jegyezze fel a **Rakományazonosító** értékét, hogy a következő eljárásban használhassa.
@@ -349,7 +350,7 @@ Amikor a rakomány megérkezik a raktárba, a fogadó adminisztrátor regisztrá
 
 1. Folytassa tovább a munkafolyamatot, hagyja üresen az összes többi mezőt, vagy állítsa be az alapértelmezett értékeket, amíg az eszköz tájékoztat arról, hogy a munka be van fejezve.
 
-A rakomány fogadása feladat befejeződött, és a fogadó adminisztrátor továbbléphet a következő feladatra. A raktári befogadó személyzet azonban egy idő után felülvizsgálja a rakomány rekordját, és látni fogja, hogy a bevételezett mennyiség kisebb, mint a várt mennyiség. Ezután a következő eljárást fogják végrehajtani a webes ügyfélprogrammal.
+A rakomány fogadása feladat befejeződött, és a fogadó adminisztrátor a következő feladatára léphet tovább. A raktári befogadó személyzet azonban egy idő után felülvizsgálja a rakomány rekordját, és látni fogja, hogy a bevételezett mennyiség kisebb, mint a várt mennyiség. Ezután a következő eljárást fogják végrehajtani a webes ügyfélprogrammal.
 
 1. Lépjen a **Raktárkezelés \> Rakományok \> Minden rakomány** elemhez.
 1. A listában keresse meg az imént fogadott rakományt. (Előfordulhat, hogy be kell jelölnie a **Lezártak megjelenítése** jelölőnégyzetet, hogy a _Szállítva_ állapotú bejövő rakományok is szerepeljenek.) Ezt követően a rakomány megnyitásához válassza ki a hivatkozást a **Rakomány azonosítója** oszlopban.
@@ -477,6 +478,3 @@ Ennél a forgatókönyvél a bevételezési ügyintéző bejövő mennyiséget r
     - **Mennyiség** – Adja meg a _7_ mennyiséget, vagyis azt a fennmaradó mennyiséget, amelyet a szállító jogosult szállítania teljes 12 db-os beszerzési mennyiség részeként (ahol 10 az eredeti rendelési mennyiség és 2 az engedélyezett túlszállítási mennyiség, ami 20%). Ne feledje, hogy 5 db már regisztrálva van az első rakományhoz.
 
 A második rakomány 7 darabbal frisítve lett mennyiséggel frissítette, és a termék bevételezhető-frissíthető ezen mennyiség alapján.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

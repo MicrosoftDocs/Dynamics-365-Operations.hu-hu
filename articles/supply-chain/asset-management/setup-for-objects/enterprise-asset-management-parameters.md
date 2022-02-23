@@ -1,10 +1,12 @@
 ---
 title: Az Eszközkezelés paraméterei
 description: Az Eszközkezelésben be kell állítani az eszközökkel, a munkarendelésekkel és a munkarendelések ütemezésével kapcsolatos általános paramétereket.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e1deef00f01d83bc809a004265c386ba9d300df5fa4a1be245812ed5632059f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751961"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020653"
 ---
 # <a name="asset-management-parameters"></a>Az Eszközkezelés paraméterei
 
@@ -99,11 +101,8 @@ Az alábbi listában leírt összes mező a kiszámított értékelési pontszá
 
 ## <a name="the-document-types-tab"></a>A Dokumentum típusok lap
 
-Válassza ki azokat a dokumentumtípusokat, amelyeket elérhetővé szeretne tenni a munkarendelési jelentéshez társított mellékletek nyomtatásához. Ehhez válassza a dokumentumtípust a **Rendelkezésre áll** szakaszban, majd az ![előre nyíl.](media/15-setup-for-objects.png) gombot. Ha el szeretné távolítani a kijelölt dokumentumtípust, válassza ki a **Kijelölve** szakaszban, és válassza a ![vissza nyíl](media/16-setup-for-objects.png) gombot.
+Válassza ki azokat a dokumentumtípusokat, amelyeket elérhetővé szeretne tenni a munkarendelési jelentéshez társított mellékletek nyomtatásához. Ehhez válassza a dokumentumtípust a **Rendelkezésre áll** szakaszban, majd az ![előre nyíl](media/15-setup-for-objects.png) gombot. Ha el szeretné távolítani a kijelölt dokumentumtípust, válassza ki a **Kijelölve** szakaszban, és válassza a ![vissza nyíl](media/16-setup-for-objects.png) gombot.
 
 ## <a name="the-number-sequences-tab"></a>A Számsorozatok lap
 
 Válassza ki a szükséges számsorozatot ebben a szakaszban. Az eszközökhöz két számsorozat használható: egy a manuálisan létrehozott eszközökhöz, egy pedig a függőben lévő eszközökkel létrehozottakhoz.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

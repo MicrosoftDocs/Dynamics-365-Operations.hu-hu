@@ -2,24 +2,26 @@
 title: Mobilalkalmazás kezdőoldala
 description: Ez a témakör bemutatja a Finance and Operations (Dynamics 365) mobilalkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 01/22/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom: intro-internal
+ms.custom: 272853
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
 ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4a9d6424e2d214624c148c0565c88ea4cf4ccf9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729708"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683458"
 ---
 # <a name="mobile-app-home-page"></a>Mobilalkalmazás kezdőoldala
 
@@ -27,7 +29,8 @@ ms.locfileid: "6729708"
 
 Ez a témakör bemutatja a **Finance and Operations (Dynamics 365)** mobilalkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában.
 
-## <a name="overview"></a>Áttekintés
+<a name="overview"></a>Áttekintés
+--------
 
 A mobilalkalmazás lehetővé teszi a szervezet számára, hogy üzleti folyamatait mobileszközökön is elérhetővé tegye. Miután a rendszergazda lehetővé teszi a mobil munkaterületeket a szervezetnél, a felhasználók bejelentkezhetnek az alkalmazásba, és azonnal elkezdhetik az üzleti folyamatok mobileszközökről történő futtatását. A mobilalkalmazás a következő olyan funkciókat tartalmazza, amelyek segíthetnek a hatékonyság növelésében:
 
@@ -39,7 +42,7 @@ A mobilalkalmazás lehetővé teszi a szervezet számára, hogy üzleti folyamat
 ## <a name="elements-of-the-mobile-app"></a>A mobilalkalmazás elemei
 A mobilalkalmazásban történő navigáció négy egyszerű részből áll: ezek az irányítópult, a munkaterület, az oldalak és a műveletek. 
 
-[![A mobilalkalmazás navigációs fogalmai.](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
+[![A mobilalkalmazás navigációs fogalmai](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
 
 1. Az alkalmazás indításakor az **irányítópultra** kerül.
 2. Az irányítópulton látható a közzétett **Munkaterületek** listája.
@@ -53,7 +56,7 @@ A mobilalkalmazásban történő navigáció négy egyszerű részből áll: eze
 ## <a name="implementation-process"></a>Megvalósítási folyamat
 A következő ábra a Microsoft által biztosított, valamint az egyéni mobil munkaterületek implementálásának folyamatát mutatja. 
 
-[![Mobilalkalmazások megvalósítási folyamata.](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
+[![Mobilalkalmazások megvalósítási folyamata](./media/Mobile-implementation-process-5.png)](./media/Mobile-implementation-process-5.png)
 
 Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalmaz, amelyek segítenek a Microsoft által biztosított, valamint az egyéni mobil munkaterületek implementálásában. Az első oszlopban szereplő számok az előzőekben bemutatott számozott lépéseknek felelnek meg.
 
@@ -90,8 +93,8 @@ Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalma
 <li><a href="../../../supply-chain/inventory/inventory-on-hand-mobile-workspace.md">Aktuális készlet mobil munkaterület</a></li>
 <li><a href="../../../supply-chain/sales-marketing/sales-orders-mobile-workspace.md">Értékesítési rendelések mobil munkaterületek</a></li>
 <li><a href="../../../supply-chain/procurement/vendor-collaboration-mobile-workspace.md">Szállítói együttműködési mobil munkaterület</a></li>
-<li><a href="/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace">Projektidő megadása mobil munkaterület</a></li>
-<li><a href="/dynamics365/project-operations/prod-exp/expense-management-mobile-workspace">Költségkezelési mobil munkaterület</a></li>
+<li><a href="../../../finance/project-management/project-time-entry-mobile-workspace.md">Projektidő megadása mobil munkaterület</a></li>
+<li><a href="../../../finance/expense-management/expense-management-mobile-workspace.md">Költségkezelési mobil munkaterület</a></li>
 
 </ul></td>
 </tr>
@@ -148,6 +151,3 @@ Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalma
 
 ## <a name="troubleshooting"></a>Hibaelhárítás
 [Mobil platform erőforrásai](platform/mobile-platform-home-page.md#troubleshooting-the-app)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

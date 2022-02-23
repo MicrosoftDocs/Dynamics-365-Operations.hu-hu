@@ -1,24 +1,27 @@
 ---
 title: Kifejezésmegszorítás hozzáadása a termékkonfigurációs modellhez
 description: Ez az eljárás bemutatja, hogyan lehet hozzáadni egy új megszorítási kifejezést egy termékkonfigurációs modellhez.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, SysClientPolymorphicCreateSelector, PCConstraintEditor, PCRuntimeConfiguratorValidate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77e8b991a2615a8f5d238acc4655f231edb6ca98
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: c43d7f768069c5ef201a2823a9aa626b38220073
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569649"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429532"
 ---
 # <a name="add-an-expression-constraint-to-a-product-configuration-model"></a>Kifejezésmegszorítás hozzáadása a termékkonfigurációs modellhez
 
@@ -26,28 +29,25 @@ ms.locfileid: "7569649"
 
 Ez az eljárás bemutatja, hogyan lehet hozzáadni egy új megszorítási kifejezést egy termékkonfigurációs modellhez. Azt mutatja, hogyan írható elő kötelezővé sarokvédelem alkalmazása a hangszórón, ha a felhasználó fém elülső rácsot választott. Az eljárás a Felső kategóriás hangszóró összetevőt használja az USMF bemutatócégben.
 
-## <a name="create-an-expression-constraint"></a>Kifejezésmegszorítás szerkesztője
 
-1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
+## <a name="create-an-expression-constraint"></a>Kifejezésmegszorítás szerkesztője
+1. Kattintson a Termékváltozat modelldefinícióra.
+2. Kattintson a Termékkonfigurációs modellek lehetőségre.
 3. Keresse meg és jelölje ki a kívánt rekordot a listán.
     * Ez a példa a felső kategóriás hangszóró modellt használja.  
-4. A listában válassza ki a kiválasztott sorból a hivatkozást.
-5. Bontsa ki **Megszorítások** szakaszt.
-6. Válassza a **Hozzáadás** lehetőséget.
-7. Válassza a **Létrehozása** lehetőséget.
-8. Írjon be egy értéket a **Név** mezőbe.
+4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+5. Bontsa ki Megszorítások szakaszt.
+6. Kattintson a Hozzáadás gombra.
+7. Kattintson a Létrehozás lehetőségre.
+8. Írjon be egy értéket a Név mezőbe.
 
 ## <a name="enter-expression"></a>Kifejezés megadása
-
-1. Válassza a **Kifejezés szerkesztése** lehetőséget.
+1. Kattintson a Kifejezés szerkesztése lehetőségre.
     * Ha a feladatrögzítésben feloldja a felhasználói felületet ebben a fázisban, akkor az IntelliSense és a szimbólumlista segítségével felépítheti a megszorítási kifejezést.  
-2. A **ConstraintBody** mezőben írja be „Implies [FrontGrill =="Metal", CornerProtection]”.
+2. A ConstraintBody mezőben írja be „Implies[FrontGrill =="Metal", CornerProtection] ”.
     * Ez a kifejezéslogika a következőt állítja: Ha az előlapi rács fém, akkor ki kell választani a sarokvédő lehetőséget.  
-3. A **Validálás** kiválasztása.
+3. Kattintson az Érvényesítés gombra.
     * Az érvényesítési funkció ellenőrzi a megszorítási kifejezést, és szintaktikai hibákat keres.  
-4. Válassza **Bezárás** lehetőséget.
-5. Válassza ki az **OK** lehetőséget.
+4. Kattintson a Bezárás gombra.
+5. Kattintson az OK gombra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

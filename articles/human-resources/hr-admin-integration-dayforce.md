@@ -1,35 +1,33 @@
 ---
 title: A Dayforce szolgáltatással való integráció konfigurálása
-description: Ez a témakör a Microsoft Dynamics 365 Human Resources és a Ceridian Dayforce közötti integrációhoz szükséges konfigurációs lépéseket ismerteti.
-author: twheeloc
-ms.date: 08/19/2021
+description: A Microsoft Dynamics 365 Human Resources és a Ceridian Dayforce között végbemenő integrálás több olyan konfigurációs lépésre támaszkodik, amelyeket ebben a cikkben ismertünk. A fizetési időszak feldolgozása előtt konfigurálnia kell az integrációt a Human Resources alkalmazásban és a Dayforce alkalmazásban is.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: PersonnelIntegrationConfiguration
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7e2043e75aa647e21f3e0816247dcf651be64730
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: c66ec772ea66732e042f50081f04a6569852f211
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067076"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418773"
 ---
 # <a name="configure-integration-with-dayforce"></a>A Dayforce szolgáltatással való integráció konfigurálása
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-A Microsoft Dynamics 365 Human Resources és Ceridian Dayforce integrálásához több konfigurációs lépést szükséges elvégezni, melyek ebben a témakörben vannak ismertetve. A fizetési időszak feldolgozása előtt konfigurálnia kell az integrációt a Human Resources alkalmazásban és a Dayforce alkalmazásban is.
+A Microsoft Dynamics 365 Human Resources és a Ceridian Dayforce között végbemenő integrálás több olyan konfigurációs lépésre támaszkodik, amelyeket ebben a cikkben ismertünk. A fizetési időszak feldolgozása előtt konfigurálnia kell az integrációt a Human Resources alkalmazásban és a Dayforce alkalmazásban is.
 
 Ha olyan szolgáltatást használ a fizetési időszak teljesítéséhez, mint a Dayforce, engedélyeznie kell az integrációt a Human Resources alkalmazásban. Az integrációhoz szükségesek bizonyos adatok a Human Resources alkalmazásból. Ezért ellenőriznie kell, hogy a Dayforce alkalmazáshoz hozzárendelt adatok olyan módon legyenek konfigurálva a Human Resources alkalmazásban, hogy az támogassa az integrációt. Az integráció a következő szélesebb adatkategóriákat használja:
 
@@ -38,7 +36,7 @@ Ha olyan szolgáltatást használ a fizetési időszak teljesítéséhez, mint a
 - Bérlistaadatok, mint kifizetési ciklus, fizetési időszakok és bevételkódok
 - Dolgozóadatok
 
-Ez a témakör ismerteti azokat a lépéseket, amelyeket az integráció engedélyezéséhez követnie kell, valamint az integrációhoz szükséges adattípusokat és konfigurációs részleteket.
+Ez a cikk leírja a lépéseket, amelyeket követni kell az integráció engedélyezéséhez. Azt is bemutatja, hogy milyen típusú adatok és konfiguráció szükséges az integrációhoz.
 
 ## <a name="enable-the-integration"></a>Engedélyezze az integrációt
 
@@ -53,10 +51,10 @@ A Human Resources alkalmazásban lévő integráció bekapcsolásához kövesse 
 
 Ha az integráció engedélyezve van, adatexport adatcsomagok és fájlok jönnek létre, valamint a gyakoriság is be van állítva. Igény szerint módosíthatja a gyakoriságot.
 
-Azure tárolási fiókokkal és Azure tárolási kapcsolati karakterláncokat kapcsolatos további információt az alábbi Azure-témakörökben találja:
+Az Azure tárolási fiókokkal és az Azure tárolási kapcsolati karakterláncokkal kapcsolatos további információkat az alábbi Azure-cikkben találja:
 
-- [Az Azure Storage-fiókokról](/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
-- [Azure Storage kapcsolati karakterláncok konfigurálása](/azure/storage/common/storage-configure-connection-string)
+- [Az Azure Storage-fiókokról](https://docs.microsoft.com/azure/storage/common/storage-create-storage-account?toc=%2fazure%2fstorage%2ffiles%2ftoc.json)
+- [Azure Storage kapcsolati karakterláncok konfigurálása](https://docs.microsoft.com/azure/storage/common/storage-configure-connection-string)
 
 ### <a name="technical-details-when-payroll-integration-is-enabled"></a>Technikai részletek a bérlista integrációjának engedélyezésekor
 
@@ -124,12 +122,12 @@ A Dayforce létrehozza a következő levonásokat, a juttatási tervben definiá
 | Csak hozzájárulás          | Egy alkalmazotti levonás jön létre.             |
 | Levonás és hozzájárulás | Alkalmazotti és a munkáltatói levonások jönnek létre. |
 
-A juttatási programok definiálásával és kezelésével kapcsolatosan további tájékoztatás a következő témakörökben talál:
+A juttatási programok meghatározásával és kezelésével kapcsolatos további tájékoztatást a következő cikkekben találja:
 
-- [Alkalmazotti juttatási program megvalósítása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
-- [Új juttatás létrehozása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
-- [Juttatásra való jogosultsági szabályok és irányelvek meghatározása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
-- [Dolgozók juttatásainak felvétele és eltávolítása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
+- [Alkalmazotti juttatási program végrehajtása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/deliver-employee-benefits-program)
+- [Új juttatás létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/create-new-benefit)
+- [Juttatásra való jogosultsági szabályok és irányelvek meghatározása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-benefit-eligibility-rules-policies)
+- [Dolgozók juttatásainak felvétele és eltávolítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-remove-benefits-workers)
 
 #### <a name="compensation"></a>Kompenzáció 
 
@@ -137,22 +135,22 @@ A kompenzációkezeléssel szabályozható az alapfizetés és a jutalmak kifize
 
 A Dayforce a kompenzációs adatok segítségével kiszámítja az alkalmazott óradíját vagy éves díját. Fix kompenzációs tervek és a fizetési díjalap átalakítások szükségesek. Az alkalmazottakat hozzá kell rendelni a fix kompenzációs tervhez.
 
-A következő témakörökben bővebben olvashat a kompenzációs tervekről:
+A következő cikkekben bővebben olvashat a kompenzációs tervekről:
 
-- [Fix kompenzációs konstrukciók létrehozása](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
-- [Változó kompenzációs konstrukciók létrehozása](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
-- [Munkabér-/kompenzációs struktúra és tervek kialakítása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
-- [Folyamatkompenzáció](/dynamics365/unified-operations/talent/process-compensation)
-- [Kompenzációs folyamat meghatározása és eredmények kiszámítása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
-- [Alkalmazottak felvétele fix kompenzációs konstrukcióba](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
-- [Alkalmazottak felvétele változó kompenzációs konstrukcióba](/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
+- [Fix kompenzációs konstrukciók létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
+- [Változó kompenzációs konstrukciók létrehozása](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+- [Munkabér-/kompenzációs struktúra és tervek kialakítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/develop-salary-compensation-structure-plan)
+- [Folyamatkompenzáció](https://docs.microsoft.com/dynamics365/unified-operations/talent/process-compensation)
+- [Kompenzációs folyamat meghatározása és eredmények kiszámítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-compensation-process-calculate-results)
+- [Alkalmazottak felvétele fix kompenzációs konstrukcióba](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-fixed-compensation-plan)
+- [Alkalmazottak felvétele változó kompenzációs konstrukcióba](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/enroll-employee-variable-compensation-plan)
 
 #### <a name="jobs"></a>Beosztások 
 
-A munkakör azon feladatok és felelősségek gyűjteménye, amelyek egy adott munkát végrehajtó személytől elvártak. További információ a következő témakörökben olvasható:
+A munkakör azon feladatok és felelősségek gyűjteménye, amelyek egy adott munkát végrehajtó személytől elvártak. További információért tekintse át az alábbi cikkeket:
 
-- [Feladat összetevőinek beállítása](/dynamics365/unified-operations/talent/create-job)
-- [Új feladatok meghatározása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
+- [Feladat összetevőinek beállítása](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-job)
+- [Új feladatok meghatározása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-jobs)
 
 ##### <a name="positions"></a>Beosztások
 
@@ -174,19 +172,19 @@ A következő adatokat és konfigurációkat szem előtt tartani beosztások be�
 
 A azonos osztály több beosztása társítva van az ugyanazon a feladathoz, azok össze lesznek vonva a Dayforce egyetlen pozíciójába.
 
-További információ a következő témakörökben olvasható:
+További információért tekintse át az alábbi cikkeket:
 
-- [Munkaerő szervezése részlegek, munkák és beosztások szerint](/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
-- [Beosztások beállítása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
+- [Munkaerő szervezése részlegek, feladatok és beosztások szerint](https://docs.microsoft.com/dynamics365/unified-operations/talent/departments-jobs-positions#positions)
+- [Beosztások beállítása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/set-up-positions)
 
 #### <a name="departments"></a>Osztályok
 
 A részleg egy működési egység, amely a szervezet egy kategóriáját vagy működési területét képviseli. Egy részleg a szervezet egy konkrét területen végzett tevékenységeiért felel (például értékesítés, könyvelés, emberi erőforrások). A részlegek segítségével hozhatók létre jelentések a működési területekről. A részlegeknek lehet eredménykimutatási felelőssége.
 
-További információ a következő témakörökben olvasható:
+További információért tekintse át az alábbi cikkeket:
 
-- [Részleg létrehozása és társítása a szervezeti hierarchiához](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
-- [Új részlegek meghatározása](/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
+- [Részleg létrehozása és társítása a szervezeti hierarchiához](https://docs.microsoft.com/dynamics365/unified-operations/talent/create-department-add-department-hierarchy)
+- [Új részlegek meghatározása](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/hr/tasks/define-new-departments)
 
 #### <a name="pay-cycles-and-pay-periods"></a>Fizetési ciklusok és fizetési időszakok
 
@@ -678,6 +676,3 @@ Az alkalmazottak útlevél adatokat is nyilatkozhatnak. Az információ a **Útl
 
 Az alkalmazottak több azonosítószámot is megadhatnak az **Útlevél** azonosítótípushoz. Azonban csak az aktuális aktív útlevélbejegyzés van integrálva a Dayforce-ba. Ha az összes útlevélbejegyzés lejárt, a legutóbb kiállított lesz integrálva a Dayforce-ba.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

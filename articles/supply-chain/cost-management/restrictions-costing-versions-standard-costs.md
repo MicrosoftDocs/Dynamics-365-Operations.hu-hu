@@ -2,9 +2,11 @@
 title: Az elszámolóárakkal kapcsolatos költségszámítási verziókra vonatkozó korlátozások
 description: Ez a témakör az elszámolóárakra vonatkozó költségszámítási verziókra érvényes korlátozásokat mutatja be.
 author: AndersGirke
+manager: tfehr
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
@@ -16,12 +18,12 @@ ms.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2028cdabde3d01de16050b38893ec9e42353ae542be7a0cd7362cf62e9315170
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5339c3c4a62b94a06cbffc200ed1e9b227d6b6af
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748787"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963788"
 ---
 #  <a name="restrictions-on-costing-versions-for-standard-costs"></a>Az elszámolóárakkal kapcsolatos költségszámítási verziókra vonatkozó korlátozások
 
@@ -39,7 +41,8 @@ A következő korlátozások segítenek biztosítani a szabványos költségszá
 
 Az elszámolóárakhoz tartozó cikk-költség adatokat át lehet másolni az elszámolóárakat vagy tervezett költségeket tartalmazó másik költségszámítási verzióba. A tervezett költségekre vonatkozó cikk-költség adatokat azonban olyan költségszámítási verzióba nem lehet másolni, amely elszámolóárakat tartalmaz, mert a témakörben feljebb ismertetett megkötések nem érvényesek a tervezett költségekre.
 
-## <a name="related-topics"></a>Kapcsolódó témakörök
+<a name="related-topics"></a>Kapcsolódó témakörök
+--------
 
 [Költségszámítási verziók áttekintése](costing-versions.md)
 
@@ -47,6 +50,3 @@ Az elszámolóárakhoz tartozó cikk-költség adatokat át lehet másolni az el
 
 [Felkészülés a gyártott cikkek elszámolóárának karbantartására](update-standard-costs-manufacturing-environment.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -94,6 +94,3 @@ Ez a módosítással az ismétlődések észleli a program, amikor névmezőket 
 A Finance and Operations 25-ös platformfrissítésével a felhasználók létrehozhatnak figyelmeztetési szabályokat, amely automatikusan értesítő e-maileket küldenek, a kapcsolattartóknak, ha egy esemény kezdeményezi azt.
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

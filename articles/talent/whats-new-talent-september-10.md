@@ -98,6 +98,3 @@ Ebben a verzióban számos további hibajavítás is található:
 - Alvállalkozó megbízásakor a **Kompenzálás** lapnak nem szabad elérhetőnek lennie a kérelem/művelet lapján.
 - A kérelem megszüntetési folyamata alatt nem folytathatja a műveletet addig, amíg az összes kötelező mező adatot tartalmaz.
 - Kijavítottuk a rendelés- és dátummegjelenítési problémákat a Személyzetkezelés analitikájában.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

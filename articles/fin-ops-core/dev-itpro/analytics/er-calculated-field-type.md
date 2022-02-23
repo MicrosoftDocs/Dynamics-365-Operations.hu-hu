@@ -2,9 +2,11 @@
 title: ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban
 description: Ez a témakör azt mutatja be, hogyan kell használni a Számított mezőtípust ER-adatforrásokhoz.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fbe06f2f4f0b9e738f27e87ae3ed5d10998ce949b854d088520837cef3ed9a9d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f21b323ddbf653bf8ca8dd1f879a6bdbddcdefc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740359"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681256"
 ---
 # <a name="support-parameterized-calls-of-er-data-sources-of-the-calculated-field-type"></a>ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban
 
@@ -86,7 +88,7 @@ Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállal
 
     A modell-leképezés ebben a konfigurációban implementálása az alap adatmodellt bármely ER formátumhoz, amely ehhez a modellhez lett készítve és a Finance and Operations által lett végrehajtva. Ennek eredményeképpen az **Adó** és **Gr** -adatforrások tartalma ER-formátumoknak, például absztrakt adatforrásoknak van kitéve.
 
-    ![Modell-hozzárendelés tervező lapja az Adó és Gr adatforrásokat jeleníti meg.](media/er-calculated-field-type-01.png)
+    ![Modell-hozzárendelés tervező lapja au Adó és Gr adatforrásokat jeleníti meg.](media/er-calculated-field-type-01.png)
 
 5.  Zárja be a **Modell-hozzárendelési tervező** lapot.
 6.  Zárja be a **Modell-hozzárendelés** lapot.
@@ -101,7 +103,7 @@ Ebben a példában létrehozzuk egy konfigurációt a Litware, Inc. mintavállal
     - Az adóbevallásban a következő adómértékeket megjeleníti: normál, csökkentett és nincs.
     - Minden adózási szinten több részletet mutat be, amelyek mindegyik szintjén különböző számú adat szerepel.
 
-    ![Formátumtervező oldal.](media/er-calculated-field-type-02.png)
+    ![Formátumtervező oldal](media/er-calculated-field-type-02.png)
 
 4. Válassza ki **Hozzárendelés** lehetőséget.
 5. Bontsa ki a **Modell**, **Adatok** és **Összegzés** elemeket. 
@@ -155,7 +157,7 @@ A megadott formátumot úgy javíthatja, hogy egy számított mezőt ad hozzá a
 
     Az egyetlen számított mezőhöz meghatározható paraméterek maximális száma 8.
 
-    ![Paraméter adatforráslistája.](media/er-calculated-field-type-05.png)
+    ![Paraméter adatforráslistája](media/er-calculated-field-type-05.png)
 
 5. Válassza ki az **OK** lehetőséget.
 
@@ -165,7 +167,7 @@ Ennek a paraméternek a hozzáadásával megadhatja azt a feltételt, amely a ki
 
    A konfigurált paraméter elérhető a számított mezőhöz tartozó adatforrásainak listáján. A konfigurált kifejezéshez úgy vehet fel paramétert, hogy az **Adatforrás hozzáadása** lehetőséget választja.
 
-   ![Adatforrásmezők.](media/er-calculated-field-type-06.png)
+   ![Adatforrásmezők](media/er-calculated-field-type-06.png)
 
 ### <a name="define-an-expression-for-adding-a-calculated-field"></a>Kifejezés definiálása számított mező hozzáadásához
 
@@ -181,7 +183,7 @@ Ennek a paraméternek a hozzáadásával megadhatja azt a feltételt, amely a ki
 
 5. Válassza a **Mentés** lehetőséget.
 
-    ![Adatforrás mező adatai.](media/er-calculated-field-type-07.png)
+    ![Adatforrás mező adatai](media/er-calculated-field-type-07.png)
 
 6. Zárja be a **Képlettervező** lapot.
 
@@ -191,7 +193,7 @@ Ennek a paraméternek a hozzáadásával megadhatja azt a feltételt, amely a ki
 
 A **Formátumtervező** lapon a **Szintek** konfigurált paraméterezett számított mező **Karakterlánc** argumentumot igényel.
 
-![Számított mezők szintjeinek kibontott listája.](media/er-calculated-field-type-08.png)
+![Számított mezők szintjeinek kibontott listája](media/er-calculated-field-type-08.png)
 
 ### <a name="use-the-configured-calculated-field-for-binding-format-elements"></a>A konfigurált számított mező használata formátumelemek kapcsolásához
 
@@ -220,7 +222,7 @@ A paraméterezett számított mezők ismétlődő meghívása nem támogatott.
 
 Kiválaszthatja a **Képlet szerkesztése** elemet, és módosíthatja a paraméterezett számított mező alapértelmezetten alkalmazott argumentumát a kiválasztott társításhoz. Ha hiányzik ez az argumentum, az futásidőben hibákat okozhat – a felhasználókat tájékoztatni kell erről a helyzetről, amikor az aktuális formátumot validálják.
 
-![Ellenőrzési figyelmeztetés értesítése.](media/er-calculated-field-type-10.png)
+![Ellenőrzési figyelmeztetés értesítése](media/er-calculated-field-type-10.png)
 
 ## <a name="configure-a-parameterized-calculated-field-to-return-a-record"></a>Rekordot visszaadó paraméterezett számított mező konfigurálása
 Ha egy paraméterezett számított mező rekordot ad vissza, akkor támogatnia kell a rekord egyedi mezőinek társítását formátumelemekhez. Ilyen esetekben nem lesz olyan szülő társítás amely argumentum értékét tartalmazza egy paraméterezett számított mező meghívására – ezt az értéket egyetlen rekord mezőjének társítása során kell meghatározni.
@@ -272,7 +274,7 @@ Ha egy paraméterezett számított mező rekordot ad vissza, akkor támogatnia k
 8. Válassza a **Képlet szerkesztése** elemet.
 9. A kifejezés módosítása a következőre: **Model.Data2.LevelRecord("None").aggregated.Base**.
 
-![Frissített kifejezés.](media/er-calculated-field-type-11.png)
+![Frissített kifejezés](media/er-calculated-field-type-11.png)
 
 ## <a name="remove-calculated-fields-that-are-not-used"></a>Nem használt számított mezők eltávolítása
 
@@ -340,6 +342,3 @@ Az **RCS** típushoz tartozó ER-tároló használatával importálhatja az átt
 - [Képletszerkesztő elektronikus jelentésekhez (ER)](general-electronic-reporting-formula-designer.md)
 - [Az ER megoldások teljesítményének javítása a paraméterek SZÁMÍTOTT MEZŐ-adatforrások hozzáadásával](er-calculated-field-ds-performance.md)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Vizuális ütemezés lean manufacturing céljára
 description: Ez a témakör a Kanbanütemezési tábláról nyújt tájékoztatást, amelyet a termelési tervező arra használhat, hogy ellenőrizze és optimalizálja a kanbanfeladatok termelési tervét.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoard, KanbanJobSchedulingListPage, LeanProductionFlowVisualization, KanbanBoardUnplannedJobs
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af5803793a4874ee73f943d0f059047458c37dc48b7d3276dadc8d8803599fb9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45a63ab0f5baadf6bef646224b3f0bf5327ee923
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764812"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429273"
 ---
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Vizuális ütemezés lean manufacturing céljára
 
@@ -47,8 +50,8 @@ Csak **Feldolgozás** típusú feladatokat ütemezhet. A kanbanfeladatot és ann
 ## <a name="kanban-schedule-board"></a>Kanbanütemező tábla
 A **Kanbanütemezési tábla** lap hét fő elemet tartalmaz a következő ábrán látható módon. 
 
-![Kanbanütemező tábla.](./media/kanban-schedule-board-1024x554.png)
-1.  Műveleti panel
+![Kanbanütemező tábla](./media/kanban-schedule-board-1024x554.png)
+1.  Műveleti ablaktábla
 2.  Mezők szűrése
 3.  Nem tervezett feladatok gomb
 4.  Időszak csomópontja
@@ -71,7 +74,7 @@ Javíthatja a Kanbanütemezési tábla által nyújtott áttekintést azzal, hog
 ## <a name="plan-unplanned-jobs"></a>Nem tervezett feladatok tervezése
 Nem tervezett kanbanfeladatokat ütemezhet a **Nem tervezett feladatok tervezése** párbeszédpanelből. A párbeszédpanel megnyitásához kattintson a **Nem tervezett feladatok** gombra, amely megjeleníti a nem tervezett feladatok aktuális számát. Másik lehetőségként kattintson a **Nem tervezett feladatok tervezése** lehetőségre a műveleti ablaktábla **Tábla** lapján. A párbeszédpanelen megjelenik a munkacella nem tervezett kanbanfeladatainak listája. Használhatja a **Szűrő** mezőt a rács minden mezőjének szűrésére. Például egy bizonyos termékre szűrheti a kanbanfeladatokat. Miután megkapja az ütemezni kívánt feladatok szűrt listáját, válassza ki azokat a listában, és kattintson az **OK** gombra. A feladatok ütemezésének automatikus tervezéséhez állítsa az **Automatikus tervezés** lehetőséget **Igen** értékre. Ebben az esetben a rendszer a feladatokat egy időszakra ütemezi azok esedékessége szerint. A feladatok időszakonként is ütemezhetők. Válasszon ki egy időszakot az **Időszak** mezőben. A következő ábrán egy példát láthat a **Nem tervezett feladatok tervezése** párbeszédpanelről. 
 
-![Nem tervezett feladatok tervezése párbeszédpanel.](./media/plan-unplanned-jobs-1024x564.png)
+![Nem tervezett feladatok tervezése párbeszédpanel](./media/plan-unplanned-jobs-1024x564.png)
 
 ## <a name="sequence-kanban-jobs-within-the-same-period"></a>Kanbanfeladatok sorrendbe helyezése ugyanazon időszakon belül
 Módosíthatja egy vagy több kijelölt feladat sorrendjét egy időszakon belül. Ez a lehetőség akkor lehet hasznos, ha az időszakon belül bizonyos feladatoknak prioritást szeretne adni. Másik lehetőségként sorrendben helyezheti az azonos termékattribútumokkal rendelkező feladatokat a feladat végrehajtásának optimalizálása érdekében. A sorrendet húzással történő áthelyezéssel, vagy a **Visszafelé** és az **Előre** menüpontok használatával is módosíthatja a **Tábla** műveleti ablaktábla lapján.
@@ -87,10 +90,8 @@ A Kanbanütemezési táblát a menüelem használatával a következő lapokon n
 -   **Termelési folyamat megjelenítése** lap
 
 
-## <a name="additional-resources"></a>További erőforrások
+<a name="additional-resources"></a>További erőforrások
+--------
 
 [Kanbanfeladat ütemezése lean manufacturing céljára](lean-manufacturing-kanban-job-scheduling.md)
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

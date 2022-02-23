@@ -2,9 +2,11 @@
 title: Képletszerkesztő elektronikus jelentésekhez (ER)
 description: A témakör tájékoztatást nyújt a képletszerkesztő használatának módjáról az elektronikus jelentésekben (ER).
 author: NickSelin
+manager: kfend
 ms.date: 12/05/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eec63fb1782c5afed0320eb841b6bfc92af31a691731ef6bac5d00ed442c0dcd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d96fe041fd0ffb292909c1e724068efebe0184b9
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777404"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682649"
 ---
 # <a name="formula-designer-in-electronic-reporting-er"></a>Képletszerkesztő elektronikus jelentésekhez (ER)
 
@@ -58,11 +60,11 @@ Az ER Képletszerkesztő segítségével meghatározhatja azokat a kifejezéseke
 
 Az alábbi ábra bemutatja az ilyen típusú kifejezés tervezését. Ebben a példában a kifejezés két tizedesjegy pontosságra kerekíti az **Intrastat.AmountMST** mezőjének – Intrastat tábla – értékét, majd visszaadja a kerekített értéket.
 
-[![Adatkötési kifejezés.](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
+[![Adatkötési kifejezés](./media/picture-expression-binding.jpg)](./media/picture-expression-binding.jpg)
 
 Az alábbi ábra bemutatja, hogyan használható az ilyen típusú kifejezés. Ebben a példában a tervezett kifejezés eredményének megadása a **Adóösszeg-jelentési** adatmodell **Transaction.InvoicedAmount** komponensének alapján történik.
 
-[![Használatban lévő adatkötési kifejezés.](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
+[![Használatban lévő adatkötési kifejezés](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
 Futásidőben a tervezett `ROUND (Intrastat.AmountMST, 2)` képlet az **AmountMST** mező értékét két tizedesjegy pontossággal kerekíti az Intrastat tábla minden egyes rekordjánál. Ezután a kerekített értéket beviszi az **Adóbevallás** adatmodell **Transaction.InvoicedAmount** összetevőjébe.
 
@@ -72,17 +74,17 @@ Az ER Képletszerkesztő segítségével meghatározhatja azokat a formátumokat
 
 Az alábbi ábra bemutatja az ilyen típusú átalakítás tervezését. Ebben a példában a **TrimmedString** átalakítás a *karakterlánc* adattípus bejövő adatait csonkolja a kezdő és záró szóközök eltávolításával. Ezután a csonkolt karakterláncot adja vissza.
 
-[![Átalakítás.](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
+[![Átalakítás](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
 Az alábbi ábra bemutatja, hogyan használható az ilyen típusú átalakítás. Ebben a példában számos formátum-összetevő küld szöveget kimenetként futásidóben a létrehozó elektronikus dokumentum számára. Ezen formátum-összetevők mindegyike név szerint hivatkozik a **TrimmedString** átalakításra.
 
-[![Használt átalakítás.](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
+[![Használt átalakítás](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
 
 Amikor a formátum azon összetevőit, mint például az előző példában a **partyName** összetevőt, amelyek hivatkoznak a **TrimmedString** átalakításra, ez az átalakítás kimenetként küldi el a létrehozó elektronikus dokumentum számára. Ez a szöveg nem tartalmazza a kezdő és záró szóközöket.
 
 Ha olyan formázással rendelkezik, amelyet egyénileg kell alkalmazni, akkor a formázás a megadott formátum-összetevő kötésének egyéni kifejezéseként jelenítheti meg. Az alábbi ábra bemutatja az ilyen típusú kifejezését. Ebben a példában a **partyType** formátum összetevő az adatforráshoz kötött azon kifejezésen keresztül, amely átalakítja a **Model.Company.RegistrationType** mezőjéből származó bejövő adatokat az adatforrásban a nagybetűs szöveghez. A kifejezés ezután ezt a szöveget az elektronikus dokumentum számára kimenetként küldi el.
 
-[![Formázás alkalmazása egyes összetevőkre.](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
+[![Formázás alkalmazása egyes összetevőkre](./media/picture-binding-with-formula.jpg)](./media/picture-binding-with-formula.jpg)
 
 ## <a name="process-flow-control"></a><a name="Validation"></a>Folyamatáramlat irányítás
 
@@ -98,7 +100,7 @@ A folyamatáramlat irányítás minden szabálya egyéni ellenőrzésként van t
 - Ha a tranzakció listája üres, az ellenőrzés megállítja a végrehajtási folyamatot és **HAMIS** értéket küld vissza.
 - Az ellenőrzés egy hibaüzenetet küld vissza, amely tartalmazza a felhasználó által előnyben részesített nyelven a SYS70894 címke szövegét.
 
-[![Ellenőrzés.](./media/picture-validation.jpg)](./media/picture-validation.jpg)
+[![Ellenőrzés](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
 Az ER képletszerkesztő segítségével generálhat egy fájlnevet a létrejövő elektronikus dokumentum számára, és kezelheti a fájl létrejöttének folyamatát. Az alábbi ábra bemutatja az ilyen típus folyamatáramlat-irányítás tervezését. Íme a konfiguráció magyarázata ebben a példában:
 
@@ -107,7 +109,7 @@ Az ER képletszerkesztő segítségével generálhat egy fájlnevet a létrejöv
 - Egy kifejezés a létrejövő elektronikus dokumentumokra vonatkozó fájlnevet ad vissza a fájlnév és a fájlnév-kiterjesztés összefűzésével. A második kötegre és minden további kötegre vonatkozóan a fájl neve tartalmazza a Kötegazonosítót utótagként.
 - Egy kifejezés lehetővé teszi ( **IGAZ** visszaküldése esetén) a fájl létrehozási folyamatát azon kötegekre vonatkozóan, amelyek legalább egy rekordot tartalmaznak.
 
-[![Folyamatáramlás irányítása.](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
+[![Folyamatáramlat irányítás](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
 
 ## <a name="document-content-control"></a><a name="Enabled"></a>Dokumentumtartalmak vezérlése
 
@@ -121,18 +123,18 @@ Az alábbi ábra ilyen típusú kifejezéseket mutat be. (Az **ISO20022-jóváí
 - A **PaymentNotes** összetevő a fizetési megjegyzések szövegének előállítására szolgál.
 - A **DelimitedSequence** összetevő az aktuális átutalás kiegyenlítéséhez használt vesszővel tagolt számlaszámokat állítja elő.
 
-[![PaymentNotes és DelimitedSequence összetevők.](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
+[![PaymentNotes és DelimitedSequence összetevők](./media/GER-FormulaEditor-ControlContent-1.png)](./media/GER-FormulaEditor-ControlContent-1.png)
 
 > [!NOTE]
 > A **PaymentNotes** és **DelimitedSequence** összetevők kérdőjellel vannak megjelölve. A kérdőjel azt jelzi, hogy az összetevő használata feltételes. Ebben az esetben az összetevők használata a következő kritériumokon alapul:
 >
 > - A **PaymentNotes** összetevőhöz meghatározott `@.PaymentsNotes <> ""` kifejezés lehetővé teszi (**IGAZ** érték visszaküldésével) az **Ustrd** XML-elemnek a fizetési megjegyzések szövegével való feltöltését, ha az aktuális átutalás esetében ez a szöveg nem üres.
 >
->    [![A PaymentNotes összetevő kifejezése.](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
+>    [![A PaymentNotes összetevő kifejezése](./media/GER-FormulaEditor-ControlContent-2.png)](./media/GER-FormulaEditor-ControlContent-2.png)
 >
 > - A **DelimitedSequence** összetevőhöz meghatározott `@.PaymentsNotes = ""` kifejezés lehetővé teszi (**IGAZ** érték visszaküldésével) az **Ustrd** XML-elemnek a feltöltését olyan számlaszámok vesszővel elválasztott listájával, amelyeket az aktuális átutalás kiegyenlítéséhez használnak amikor az átutalás fizetési megjegyzése üres.
 >
->    [![A DelimitedSequence összetevő kifejezése.](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
+>    [![A DelimitedSequence összetevő kifejezése](./media/GER-FormulaEditor-ControlContent-3.png)](./media/GER-FormulaEditor-ControlContent-3.png)
 > 
 > Ennek a beállításnak a alapján az összes adósi kifizetésre generált üzenet **Ustrd** XML-elem tartalmazni fogja a fizetési megjegyzések szövegét, vagy ha az ilyen szöveg üres, akkor a kifizetés kiegyenlítéséhez használt számlaszámok vesszővel tagolt listáját.
 
@@ -140,7 +142,7 @@ Az alábbi ábra ilyen típusú kifejezéseket mutat be. (Az **ISO20022-jóváí
 
 A **Képlettervező** lapon kattintson a **Teszt** elemre a konfigurált képlet működésének ellenőrzéséhez.
 
-[![Teszt kiválasztása a képlet ellenőrzéséhez.](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
+[![Teszt kiválasztása a képlet ellenőrzéséhez](./media/ER-FormulaTest-Start.png)](./media/ER-FormulaTest-Start.png)
 
 Ha a képletargumentumok értékei szükségesek, megnyithatja a **Tesztkifejezés** párbeszédpanelt a **Képlettervező** lapról. A legtöbb esetben ezeket az argumentumokat manuálisan kell definiálni, mert a konfigurált kötések nem futnak a tervezés során. A **Képlettervező** oldal **Teszteredmény** lapja megjeleníti a konfigurált képlet végrehajtásának eredményét.
 
@@ -148,20 +150,17 @@ A következő példa bemutatja, hogyan tesztelheti a külkereskedelmi tartomány
 
 A képlet tesztelésekor a **Tesztkifejezés** párbeszédpanel segítségével határozhatja meg az Intrastat-vámtarifakód teszteléshez használt értékét.
 
-[![A teszteléshez használatos Intrastat-vámtarifakód megadása.](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
+[![A teszteléshez használatos Intrastat-vámtarifakód megadása](./media/ER-FormulaTest-Start-EnterArguments.png)](./media/ER-FormulaTest-Start-EnterArguments.png)
 
 Az Intrastat-vámtarifakód megadása és az **OK** kiválasztása után a **Képlettervező** oldal **Teszteredmény** lapja a konfigurált képlet végrehajtásának eredményét jeleníti meg. Ezután kiértékelheti, hogy az eredmény elfogadható-e. Ha az eredmény nem elfogadható, akkor frissítheti a képletet, és újra tesztelheti.
 
-[![Teszteredmény.](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
+[![Teszteredmény](./media/ER-FormulaTest-Result.png)](./media/ER-FormulaTest-Result.png)
 
 Néhány képletet nem lehet a tervezés alatt tesztelni. Előfordulhat például, hogy egy képlet olyan adattípus-eredményt adott vissza, amely nem jelenik meg a **Teszteredmény** lapon. Ebben az esetben egy hibaüzenet jelenik meg, amely szerint a képletet nem lehet tesztelni.
 
-[![Hibaüzenet.](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
+[![Hibaüzenet](./media/ER-FormulaTest-Error.png)](./media/ER-FormulaTest-Error.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 - [Elektronikus jelentéskészítés képletének nyelve](er-formula-language.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

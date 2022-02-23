@@ -1,33 +1,31 @@
 ---
 title: Szabadság- és távolléti terv létrehozása
-description: Ez a témakör leírja, hogyan hozhat létre szabadsági terveket Dynamics 365 Human Resources különböző típusú szabadságokhoz.
-author: twheeloc
-ms.date: 10/28/2021
+description: A Dynamics 365 Human Resources szolgáltatásban szabadságterveket hozhat létre a különböző típusú szabadságokhoz.
+author: andreabichsel
+manager: AnnBe
+ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9267b4d4025ef0e5cec2d3e995785a6291c850e5
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: cb42860292c5e3e654917cf2f62b525993aa795a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070250"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418901"
 ---
 # <a name="create-a-leave-and-absence-plan"></a>Szabadság- és távolléti terv létrehozása
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Dynamics 365 Human Resources szolgáltatásban szabadság- és távolléti terveket definiálhat minden kínált szabadságtípushoz. A szabadság- és távolléti tervek különböző gyakorisággal könyvelhetők, például évente, havonta vagy félhavonta. A tervek meghatározhatók támogatásként is, ahol egyetlen könyvelés történik egy meghatározott dátumon. Létrehozhat például olyan tervet, amely évente mozgatható szabadságolást ad.
 
@@ -385,6 +383,3 @@ Előrejelzett egyenleg (30) = Könyvelési érték (10 × 1) + Aktuális egyenle
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
 - [Szabadság- és távolléttípusok konfigurálása](hr-leave-and-absence-types.md)
 - [Szabadság- és távolléti tervek elhatárolása](hr-leave-and-absence-accrue.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

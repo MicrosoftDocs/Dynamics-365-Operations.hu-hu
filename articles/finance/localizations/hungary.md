@@ -2,22 +2,26 @@
 title: Magyarország – áttekintés
 description: Ez a témakör a Microsoft Dynamics 365 Finance dokumentációforrásokra mutató hivatkozásokat tartalmaz Magyarországra vonatkozóan.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 09/04/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.search.region: Hungary
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 696ea7c93475531038dea13a8c141970eb4d060b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 811e13814c800cc559043e97d90a68a7f354fd8d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985953"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408039"
 ---
 # <a name="hungary-overview"></a>Magyarország – áttekintés
 
@@ -33,8 +37,4 @@ Ez a témakör dokumentációforrásokra mutató hivatkozásokat tartalmaz a Mag
 - [Adó-visszaigénylési dokumentumok](emea-hun-tax-reimbursement-docs.md)
 - [Év végi zárás](emea-cze-hun-year-end.md)
 - [Online számlázási rendszer](emea-hun-online-invoicing.md)
-- [Áfajelentések Magyarországról](emea-hun-sales-tax-reports.md)
 - [Halasztott áfa számításai](emea-hun-deferred-vat.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,34 +1,33 @@
 ---
 title: Kompenzációs konstrukciók
-description: Ez a témakör azt ismerteti, hogyan lehet használni a kompenzációkezelést a kompenzációs konstrukciók kezelésére és feldolgozására.
-author: twheeloc
-ms.date: 08/25/2021
-ms.topic: overview
+description: A kompenzációkért és juttatásokért felelős vezetők használhatják a Kompenzációkezelést a karbantartáshoz és a szervezet alkalmazottaira vonatkozó fix és változó kompenzáció feldolgozásához.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmCompensationLevel, HRCCompGrid, HRMCompFixedAction, HRMCompFixedBudget, HRMCompFixedPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
+ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7571f220780ca383f57338bb69505cc68a741877
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: b6dd163b0e956624eb57fa031b918a94609f9cfa
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066900"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418808"
 ---
 # <a name="compensation-plans"></a>Kompenzációs konstrukciók
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-A kompenzációkért és juttatásokért felelős vezetők használhatják a **Kompenzációkezelést** a karbantartáshoz és a szervezet alkalmazottaira vonatkozó fix és változó kompenzáció feldolgozásához.
+A kompenzációkért és juttatásokért felelős vezetők használhatják a Kompenzációkezelést a karbantartáshoz és a szervezet alkalmazottaira vonatkozó fix és változó kompenzáció feldolgozásához.
 
 ### <a name="introduction"></a>Bevezetés
 
@@ -45,7 +44,7 @@ Az alábbi táblázat felsorolja azokat a kompenzációs folyamatokat, amelyek a
 <thead>
 <tr class="header">
 <th>Összetevő</th>
-<th>További információ</th>
+<th>További információ...</th>
 </tr>
 </thead>
 <tbody>
@@ -91,10 +90,10 @@ Az alábbi táblázat felsorolja azokat a kompenzációs folyamatokat, amelyek a
 </tr>
 <tr class="even">
 <td>Ellenőrzőpont</td>
-<td>A vezérlőpont az alkalmazottaknak adandó ideális fizetést határozza meg, az adott kompenzációs szinten. A fokozatos konstrukciójú szerkezeteknél a vezérlőpontok általában a tartományok felezőpontjai. A sávos szerkezeteknél ritkán alkalmaznak vezérlőpontokat. A Fix kompenzáció tervek lapon megadhatja a **Fix kompenzációs konstrukció** vezérlőpontját.</td>
+<td>A vezérlőpont az alkalmazottaknak adandó ideális fizetést határozza meg, az adott kompenzációs szinten. A fokozatos konstrukciójú szerkezeteknél a vezérlőpontok általában a tartományok felezőpontjai. A sávos szerkezeteknél ritkán alkalmaznak vezérlőpontokat. A Fix kompenzáció tervek képernyőn megadhatja a fix kompenzációs terv vezérlőpontját.</td>
 </tr>
 <tr class="odd">
-<td>Feladatfunkciók</td>
+<td>Beosztások</td>
 <td>A beosztások segítségével osztályozhatók és szűrhetők az adott munkákhoz a kompenzációs tervek.</td>
 </tr>
 <tr class="even">
@@ -123,7 +122,8 @@ Az alábbi táblázat felsorolja azokat a kompenzációs folyamatokat, amelyek a
 ## <a name="process-events"></a>Feldolgozási események
 A feldolgozási esemény egy időszakra vonatkozóan az egyes fix és változó kompenzációs konstrukciókba sorolt alkalmazottak kompenzációit számítják ki. A feldolgozási események többször is futtathatók, például a számított kompenzációs eredmények tesztelése vagy frissítése céljából.
 
-## <a name="compensation-events"></a>Kompenzációs események
+<a name="compensation-events"></a>Kompenzációs események
+-------------------
 
 Minden feldolgozási esemény futtatásakor létrejön egy kompenzációs esemény.  A kompenzációs események tartalmazzák az egyes alkalmazottak feldolgozási folyamat során érintett kompenzációs folyamatait.  Ha a számítások helyesek, akkor betöltheti a kompenzációs eseményt a feldolgozási eseményben érintett alkalmazottak kompenzációs rekordjainak frissítéséhez.
 
@@ -132,6 +132,3 @@ Miután lefuttatta a feldolgozási eseményt javaslatot tehet az egyes alkalmazo
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

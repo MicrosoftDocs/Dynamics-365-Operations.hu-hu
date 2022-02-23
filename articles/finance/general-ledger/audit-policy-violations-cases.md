@@ -2,9 +2,11 @@
 title: A könyvvizsgálati irányelvmegsértések és esetek
 description: Ez a cikk bemutatja, hogyan jönnek létre a naplózási ügyek a naplózási irányelvszabályok megsértése által. Információkat tartalmaz továbbá arról, hogyan alkalmazzák a naplózási irányelvek a dokumentumok határidő-intervallum szerinti kiválasztását.
 author: panolte
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 057cb8afe0da5e0810a2d1c87f7cdbe73bc88b9819ca81631d889bfa1cc55e6c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ddd403bfe82b1a7d3c0c5999f89bde19f1bba5e8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758101"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022105"
 ---
 # <a name="audit-policy-violations-and-cases"></a>A könyvvizsgálati irányelvmegsértések és esetek
 
@@ -28,7 +30,8 @@ ms.locfileid: "6758101"
 
 Ez a cikk bemutatja, hogyan jönnek létre a naplózási ügyek a naplózási irányelvszabályok megsértése által. Információkat tartalmaz továbbá arról, hogyan alkalmazzák a naplózási irányelvek a dokumentumok határidő-intervallum szerinti kiválasztását.
 
-## <a name="how-audit-cases-are-generated"></a>Könyvvizsgálati esetek létrehozásának módja
+<a name="how-audit-cases-are-generated"></a>Könyvvizsgálati esetek létrehozásának módja
+-----------------------------
 
 Könyvelési irányelvek használatával azonosítani lehet a költségjelentéseket, a beszerzési rendeléseket és a szállítói számlákat, amelyek nem felelnek meg az irányelvszabályként meghatározott és konfigurált üzleti szabályoknak. 
 
@@ -57,6 +60,3 @@ További információ: [Könyvvizsgálati irányelvszabály](audit-policy-rules.
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

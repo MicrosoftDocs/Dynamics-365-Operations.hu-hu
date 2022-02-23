@@ -2,24 +2,27 @@
 title: Szortimentek kezelése (2016. november)
 description: Ez az eljárás bemutatja, hogy hogyan lehet egy új termékszortimentet létrehozni és közzétenni; az USRT bemutatócéget használja.
 author: jashanno
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, RetailCategoryAndProductWorkspace, RetailCategoryAndProductAssortment, RetailAssortmentDetails, RetailOperatingUnitPicker, EcoResCategorySingleLookup
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 91d5b7077b033514f699c0393ec151d82dae5bf2551546c7371cb934273310e9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: caac7baa7841eea85c2c47f938f75663a7f9255a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769295"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412901"
 ---
 # <a name="manage-assortments-november-2016"></a>Szortimentek kezelése (2016. november)
 
@@ -40,7 +43,7 @@ Ez az eljárás bemutatja, hogy hogyan lehet egy új termékszortimentet létreh
 6. Adjon meg egy dátumot a Lejárati dátum mezőben.
 7. Bontsa ki a Commerce csatornák szakaszt.
 8. Kattintson az Új sor hozzáadása lehetőségre.
-9. A fán válassza ki a 'Contoso Retail\Electronics\Boston' lehetőséget.
+9. A fastruktúrában válassza ki a következőt: „Contoso Retail\Elektronika\Boston”.
 10. Kattintson a Hozzáadás gombra.
 11. Kattintson az OK gombra.
 12. Bontsa ki a Termékek szakaszt.
@@ -52,6 +55,3 @@ Ez az eljárás bemutatja, hogy hogyan lehet egy új termékszortimentet létreh
 1. Kattintson a Közzététel parancsra.
 2. Kattintson az Igen gombra.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

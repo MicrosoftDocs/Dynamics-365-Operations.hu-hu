@@ -2,22 +2,24 @@
 title: Kimenő munkaterhelések megjelenítése
 description: Ez a témakör a kimenő számítási feladat vizualizációjával kapcsolatban tartalmaz információkat. A funkció segítségével a raktárkezelők és a felügyelők egyéni számítási feladatok diagramjait hozhatják létre, amelyek segítségével figyelemmel kísérhető az aktuális munka előrehaladása, és a fennmaradó mennyisége. A raktárkezelők több nézetet is létrehozhatnak, és szükség szerint beállíthatják az automatikus frissítést.
 author: Mirzaab
+manager: tfehr
 ms.date: 08/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-08-28
-ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 8416d43fe2b8b08e4d66434a1d95daa4b01a0fa4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.13
+ms.openlocfilehash: 2515a71297df7213f93a4c619f7eebf1c2411b39
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576160"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965552"
 ---
 # <a name="outbound-workload-visualization"></a>Kimenő munkaterhelések megjelenítése
 
@@ -60,7 +62,7 @@ Kimenő munkaterhelés-vizualizáció beállításához kövesse az alábbi lép
     - **Tartalmazott napok** – Adja meg a azon múltbéli napok számát, amelyekhez a diagramot létre kell hozni.
     - **Munkarendelés típusa** – Válassza ki a szűrni kívánt kimenő munkarendelés-típusokat.
 
-    ![Szűrők konfigurálása oldal.](media/work-viz-filters-1.png "Szűrők konfigurálása oldal")
+    ![Szűrők konfigurálása oldal](media/work-viz-filters-1.png "Szűrők konfigurálása oldal")
 
 1. Zárja be a **Szűrők konfigurálása** oldalt, hogy visszatérjen a **Kimenő munkaterhelés vizualizációi** lapra.
 
@@ -70,11 +72,11 @@ Kimenő munkaterhelés-vizualizáció beállításához kövesse az alábbi lép
     - **Utolsó frissítés** – Ez a mező azt a dátumot és időpontot jeleníti meg, amikor a diagramon szereplő adatokat utoljára frissítették.
     - **Becsült/tényleges idő** – Ha a munkanormák a rendszerben be vannak állítva, akkor a beállítás *Igen* értékre állításával megjelenítheti a diagram egyes oszlopainak felső részén a felhalmozott becsült kitárolási időket. Ha nem használ munkanormákat, akkor ez a beállítás nem érhető el.
 
-    ![Példa vizualizáció.](media/work-viz-chart.png "Példa vizualizáció")
+    ![Példa vizualizáció](media/work-viz-chart.png "Példa vizualizáció")
 
 1. A kapcsolódó munkasor részletes adatainak megtekintéséhez válassza ki a diagram egyik sorát.
 
-    ![Munkasor adatai.](media/work-viz-work-details.png "Munkasor adatai")
+    ![Munkasor adatai](media/work-viz-work-details.png "Munkasor adatai")
 
 ## <a name="example-outbound-workload-visualization-for-zones"></a>Példa: A zónákhoz tartozó kimenő munkaterhelés megjelenítése
 
@@ -92,9 +94,6 @@ Ebben a példában egy vizuális megjelenítést szeretne beállítani, amely az
 
 A következő ábra az eredményül kapott diagramot szemlélteti.
 
-![Zóna és munkaállapot vizualizációja.](media/work-viz-chart.png "Zóna és munkaállapot vizualizációja")
+![Zóna és munkaállapot vizualizációja](media/work-viz-chart.png "Zóna és munkaállapot vizualizációja")
 
 Ez a diagram két olyan zónát mutat be, amelyek a **SZINT** és az **ÖMLESZTETT** elnevezésekkel rendelkeznek, valamint az **Üres** nevű zónát. Az **Üres** zóna minden olyan munkasort jelöl, amely nem tagja egy zónának. A diagram mindig **Üres** állapottal jeleníti meg az összes nem kapcsolódó szűrt adatot, hogy a lehető legnagyobb láthatóságot biztosítsa. A **SZINT** zónában a diagram három lezárt sort és négy nyitott sort mutat be. Az **ÖMLESZTETT** zónában a diagram négy lezárt sort és egy nyitott sort, valamint 24 érvénytelenített sort mutat be. Végezetül a diagram nyolc olyan lezárt sort jelenít meg, amelyek nem részei egy zónának sem, ezért **Üres** állapottal szerepelnek.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

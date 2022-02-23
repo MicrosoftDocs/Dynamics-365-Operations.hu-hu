@@ -1,27 +1,30 @@
 ---
 title: Termékadat-entitások
 description: Ez a témakör a termékadatok importálásához és exportálásához használt különböző entitásokkal kapcsolatos információkat tartalmazza.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: benebotg
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2019-12-1
-ms.openlocfilehash: 2784e552d7984bbea9c74ad800c6305ab2a216e9
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 20d067effc6139084c5d89b5d4698e1adf2bbf9f
+ms.sourcegitcommit: e9776095b92d19f214cd6765bbe9bf111432a699
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567151"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "4429989"
 ---
 # <a name="product-data-entities"></a>Termékadat-entitások
 
@@ -41,12 +44,9 @@ Termékadatok importálásához és exportálásához az adatentitásokat kell h
 | Értékesíthető kiadott termékek | `EcoResSellableReleasedProductEntity` | Ez az entitás csak értékesíthető termékek exportálására szolgál. Az értékesíthető termékek olyan termékek, amelyek rendelkeznek az általuk megkövetelt információkkal annak érdekében, hogy azokat értékesítési rendelésekben használják. Ugyanazok a szabályok vonatkoznak, ha egy termék ellenőrizve van az **Érvényesítés** funkcióval a **Kiadott termékek** oldalon. |
 | Egyedi termékek kiadása V2 | `EcoResDistinctProductV2Entity` | Ez az entitás csak egyedi termékek exportálására szolgál. Ezek az egyedi termékek lehetnek termékek, termékaltípusok és termékváltozatok. |
 | Kiadott alaptermékek V2 | `EcoResProductMasterV2Entity` | Ez az entitás a megosztott alaptermékek importálásához és exportálásához használható. Az adatkezelés nem engedélyezett. |
-| Cikk – vonalkód | `EcoResProductBarcodeEntityV3` | Ez az entitás csak termékek és vonalkódok exportálására szolgál. Ez az entitás nem engedélyezi a változások követését, a frissítéseket vagy a törléseket. A vonalkódok változáskövetésének, frissítésének vagy törlésének használatához használja az **Elem - vonalkód társítási** entitást. |
-| Cikk–vonalkód társítás | `EcoResProductBarcodeAssociationEntity` | Ez az entitás csak termékek és vonalkódok exportálására szolgál. Ez lehetővé teszi a változások nyomon követését, frissítéseket, és törléseket. Az entitás használatához engedélyezni kell a *Cikk – vonalkód fejlesztések* funkciót a [szolgáltatáskezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Az entitáskulcsa az `AssociationID`, amely létrehozza a vonalkód és a termék közötti kapcsolatot. E kulcs támogatásának hozzáadásához a `InventitemBarcodeAssociation` táblázat a funkció bekapcsolásakor feltöltődik a meglévő tétel vonalkódadatokkal. A táblázat feltöltése kötegelt feladat segítségével történik, és ha a vonalkódtábla nagyszámú rekordot tartalmaz, a kötegelt feladat futtatása jelentős időt vehet igénybe. Ezért azt javasoljuk, hogy tervezze meg a szolgáltatás engedélyezését (és ezért futtassa a kötegelt feldolgozást) az üzletmenete szempontjából a legalkalmasabb időpontban. |
+| Cikk – vonalkód | `EcoResProductBarcodeEntityV3` | Ez az entitás csak termékek és vonalkódok exportálására szolgál. Ez az entitás nem engedélyezi a változások követését, a frissítéseket vagy a törléseket. A változások követésének, frissítéseknek vagy törléseknek vonalkódokon való használatához használja a **Cikk – vonalkód társítása** entitást. |
+| Cikk–vonalkód társítás | `EcoResProductBarcodeAssociationEntity` | Ez az entitás csak termékek és vonalkódok exportálására szolgál. Ez lehetővé teszi a változások nyomon követését, frissítéseket, és törléseket. Az entitás használatához engedélyezni kell a *Cikk – vonalkód fejlesztések* funkciót a [szolgáltatáskezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Entitáskulcsa az `AssociationID`, amely létrehozza a vonalkód és a termék közötti társítást. A kulcs támogatásának hozzáadásához a rendszer a szolgáltatás bekapcsolásakor feltölti a meglévő cikkvonalkód-adatokat az `InventitemBarcodeAssociation` táblába. A tábla feltöltése kötegelt feldolgozással történik, és ha a vonalkódtábla nagy számú rekorddal rendelkezik, a kötegelt feldolgozás futtatása jelentős időt vehet igénybe. Ezért azt javasoljuk, hogy tervezze meg a szolgáltatás engedélyezését (és ezért futtassa a kötegelt feldolgozást) az üzletmenete szempontjából a legalkalmasabb időpontban. |
 | Termékéletciklus állapotai | `EcoResProductLifecycleSateEntity` | Ez az entitás a termékhez rendelhető különböző termékéletciklus-állapotok importálására és exportálására szolgál. |
 
 > [!NOTE]
 > A **Kiadott termékek V2** adatentitással csak akkor importálhat termékeket a rendszerbe, ha már létrehozta a megosztott terméket. Ellenkező esetben, ha termékeket szeretne importálni a rendszerbe, a **Termék létrehozása** adatentitást kell használnia.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,29 @@
 title: Műszak és pénztárgépfiók kezelése
 description: Ez a témakör bemutatja, hogyan állíthatók be és használhatók a műszakok a Commerce pénztár (POS) esetében.
 author: jblucher
+manager: AnnBe
 ms.date: 05/10/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailHardwareProfile, RetailTerminalTable
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 105011
 ms.assetid: 49a0fcc9-d4db-45ad-8c4b-213ccaced82b
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 2ac42c92d38299c20bfcb293ac062aa9e4b1c628
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
-ms.translationtype: MT
+ms.openlocfilehash: 32b7be42509a2c857f1357eb64a6b488f9cd2269
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779744"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412936"
 ---
 # <a name="shift-and-cash-drawer-management"></a>Műszak és pénztárgépfiók kezelése
 
@@ -45,7 +48,7 @@ Hagyományosan ez az eset használt a leggyakrabban. Továbbra is széles körbe
 
 A „mozgó kassza„ műszaknál a műszak és a pénzfiók áthelyezhető egyik pénztárgépből a másikba. Annak ellenére, hogy egy pénztárgéphez csak egy aktív műszak tartozható pénzfiókonként, a műszak felfüggeszthető és később folytatható egy másik pénztárgépen.
 
-Például egy boltnak két pénztárgépe van. Mindkét pénztárgép meg van nyitva a nap elején, amikor a pénztáros új műszakot indít és megadja a nyitó összeget. Amikor az egyik pénztáros elkészült, hogy szünetet tartson, ez a pénztáros a műszakot felfüggeszti, és a kasszát eltávolítja a pénztárfiókból. Adott pénztárgép ekkor más a pénztárosok számára elérhetővé válik. A másik pénztáros is bejelentkezhet, és a pénztárgépen saját műszakot nyithat meg. Miután az első pénztáros szünete véget ért, a pénztáros a többi pénztárgép elérhetővé válása esetén folytathatja a műszakját. A „mozgó kassza” műszakokhoz nincs szükség speciális konfigurációra vagy engedélyre.
+Például egy boltnak két pénztárgépe van. Mindkét pénztárgép meg van nyitva a nap elején, amikor a pénztáros új műszakot indít és megadja a nyitó összeget. Amikor az egyik pénztáros elkészült, hogy szünetet tart, ez a pénztáros a műszakot felfüggeszti, és a kasszát eltávolítja a pénztárfiókból. Adott pénztárgép ekkor más a pénztárosok számára elérhetővé válik. A másik pénztáros is bejelentkezhet, és a pénztárgépen saját műszakot nyithat meg. Miután az első pénztáros szünete véget ért, a pénztáros a többi pénztárgép elérhetővé válása esetén folytathatja a műszakját. A „mozgó kassza” műszakokhoz nincs szükség speciális konfigurációra vagy engedélyre.
 
 ### <a name="single-user"></a>Egy felhasználó
 
@@ -154,7 +157,4 @@ Ugrás ide: **Retail és Commerce \> Csatornák \> Üzletek \> Minden üzlet \> 
 
 Ez a beállítás segítségével garantálható, hogy a háttérirodai kimutatások ugyanazokat a tranzakciókat tartalmazzák, mint a műszakok a pénztárban, és hogy az adatokat összegzése műszak szerint történik.
 
-Kimutatás és a záró módszerekkel kapcsolatos további tudnivalókat lásd: [Konfigurációk tárolása kiskereskedelmi kimutatásokhoz](/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Kimutatás és a záró módszerekkel kapcsolatos további tudnivalókat lásd: [Konfigurációk tárolása kiskereskedelmi kimutatásokhoz](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/store-configurations-retail-statements).

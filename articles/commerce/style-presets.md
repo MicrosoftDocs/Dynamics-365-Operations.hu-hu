@@ -2,30 +2,35 @@
 title: Előre beállított stílusok használata
 description: Ez a témakör az előre beállított oldalstílus-elrendezésekkel végzett munkát mutatja be a Microsoft Dynamics 365 Commerce oldalépítőben.
 author: phinneyridge
+manager: annbe
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 63e11b718a2b5221c722a11de3a8df6d9d0e3d6b
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
-ms.translationtype: MT
+ms.openlocfilehash: 250f2386cefee8bef45df66c4eef31b4e7fc2686
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964853"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412930"
 ---
 # <a name="work-with-style-presets"></a>Előre beállított stílusok használata
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör az előre beállított oldalstílus-elrendezésekkel végzett munkát mutatja be a Microsoft Dynamics 365 Commerce oldalépítőben.
+
+## <a name="overview"></a>Áttekintés
 
 A stílus-előbeállítás az összes szerzői stílusérték tárolt készlete, amelyek lefedik a webhely témáját. Felhasználható arra, hogy azonnal módosítsa a webhely megjelenését a webhelyépítőből. A stílus előre beállításával a Commerce webhelyépítő szerzői gyorsan módosíthatják, előnézhetik és aktiválhatják a stílus értékeit a saját webhelyükön anélkül, hogy az egymásra épülő stílusalapokat (CSS) kellene használni, vagy a témákat kellene telepíteni. A betűstílusok, a gombstílusok és a webhely színei a stílus-előbeállításokon keresztül kezelhető stílusváltozók tipikus példái.
 
@@ -116,11 +121,10 @@ Az előbeállítás stílusértékei a nyilvános webhely egészére vonatkozóa
 
 [Kedvencek ikon hozzáadása](add-favicon.md)
 
+[Üdvözlő üzenet hozzáadása](add-welcome-message.md)
+
 [Szerzői jogi értesítés hozzáadása](add-copyright-notice.md)
 
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
 
 [Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához](add-telemetry.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

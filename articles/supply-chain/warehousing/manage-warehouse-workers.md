@@ -1,34 +1,37 @@
 ---
 title: Raktári dolgozók kezelése
-description: Ez a cikk leírja, hogyan használható a Raktárkezelés mobilalkalmazás az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
+description: Ez a cikk leírja, hogyan használható a raktári alkalmazás az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
 author: perlynne
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage, WHSResetUserPassword
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2a3261571f7ba43a79ee42afd8cdfe9b69cb83c01de3e4b2b89d2b0aae668ea2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2156b5de6abc3751cae1822b3825acbbd0b9a712
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757518"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429835"
 ---
 # <a name="manage-warehouse-workers"></a>Raktári dolgozók kezelése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk leírja, hogyan használható a Raktárkezelés mobilalkalmazás az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
+Ez a cikk leírja, hogyan használható a raktári alkalmazás az alkalmazottak által a raktárakban elvégzett munka felügyeletére és irányítására.
 
-A funkció használatakor a raktárkezelésben minden, raktári dolgozó által elvégzett művelet *munka*. Az munkákat, mint a kitárolás, áthelyezés és az aktuális készlet leltározása, mobilkészülékek segítségével rögzítik. Mielőtt egy raktári dolgozó munkát végezhetne, társítani kell őt egy dolgozóval a Human resourcesban. Minden egyes **Dolgozó** fiókhoz több raktárimunka-felhasználó társítható. Ezek a munkafelhasználók dolgozhatnak különböző raktárakban, és különböző szintű hozzáféréssel rendelkezhetnek a különféle mobilkészülékmenükhöz. A raktárimunka-felhasználókra úgy lehet tekinteni, mint egy adott dolgozó többszörös bejelentkezéseire. Minden egyes munkafelhasználó rendelkezik egy alapértelmezett raktárral, és a menüelemek jelenítik meg a konkrét munkafolyamatokat, amelyek elérhetők az adott munkafelhasználó számára. 
+A funkció használatakor a raktárkezelésben minden, raktári dolgozó által elvégzett művelet *munka*. Az munkákat, mint a kitárolás, áthelyezés és az aktuális készlet leltározása, mobilkészülékek segítségével rögzítik. Mielőtt egy raktári dolgozó munkát végezhetne, társítani kell őt egy dolgozóval a humán erőforrásokban. Minden egyes **Dolgozó** fiókhoz több raktárimunka-felhasználó társítható. Ezek a munkafelhasználók dolgozhatnak különböző raktárakban, és különböző szintű hozzáféréssel rendelkezhetnek a különféle mobilkészülékmenükhöz. A raktárimunka-felhasználókra úgy lehet tekinteni, mint egy adott dolgozó többszörös bejelentkezéseire. Minden egyes munkafelhasználó rendelkezik egy alapértelmezett raktárral, és a menüelemek jelenítik meg a konkrét munkafolyamatokat, amelyek elérhetők az adott munkafelhasználó számára. 
 
 Egy új munka felhasználó létrehozásához a **Dolgozók** oldalon az **Általános** lapon a **Raktárak** szakaszban kattintson a **Dolgozó** lehetőségre. Meg kell adni egy felhasználói azonosítót, egy felhasználónevet, egy alapértelmezett raktárat és egy menünevet. Ez a menü akkor töltődik be, amikor a felhasználó bejelentkezik az a raktári mobileszközportálon, illetve lehetővé teszi a felhasználó számára elérhető menüelemek definiálását. 
 
@@ -54,6 +57,3 @@ A munkatételek feldolgozásához felhasznált idő elemzése segíthet javítan
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

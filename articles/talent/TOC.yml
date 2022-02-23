@@ -1,8 +1,6 @@
-- name: A Dynamics 365 Talent megszűnése
-  href: ../human-resources/hr-talent-retire.md?toc=/dynamics365/talent/toc.json
+- name: Dynamics 365 for Talent
+  href: talent-welcome.md
   items:
-    - name: Dynamics 365 Talent kezdőlapja
-      href: ./index.md
     - name: Első lépések
       items:
         - name: A Talent első lépései
@@ -153,7 +151,7 @@
         - name: Adatok exportálása az Attract és Onboard modulból
           href: attract-onboard-export-data.md
         - name: Vászonalapú alkalmazások beágyazása a Power Apps szolgáltatásból
-          href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
         - name: Támogatás kérése a Talent alkalmazáshoz
           href: talent-support.md
     - name: Személyzet felvétele a szervezetéhez az Attract alkalmazással

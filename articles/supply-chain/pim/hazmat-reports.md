@@ -1,27 +1,31 @@
 ---
 title: Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések
 description: Ez a témakör azt mutatja be, hogyan lehet a veszélyes anyagokhoz kapcsolódó különböző jelentésekkel dolgozni. Számos ilyen jelentés szükséges annak érdekében, hogy a szállítás és a tárolás során a különböző veszélyes anyagokra vonatkozó rendeletek követelményei teljesüljenek.
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: ca8c973d3322bd51bf519e83fb5a5c19d35c0bed
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 188c339ddf5f5c2488133924e9a0288f218f495c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568543"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429554"
 ---
 # <a name="hazardous-materials-inquiries-and-reports"></a>Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A Microsoft Dynamics 365 Supply Chain Management különböző jelentéseket tartalmaz, amelyek a veszélyes anyagokhoz kapcsolódnak. Számos ilyen jelentés szükséges annak érdekében, hogy a szállítás és a tárolás során a különböző veszélyes anyagokra vonatkozó rendeletek követelményei teljesüljenek.
 
@@ -29,7 +33,7 @@ Mindezek a jelentések – a **Multimodális veszélyes áruk** jelentés kivét
 
 A következő ábra azokat a tevékenységfolyamatokat jeleníti meg, amelyek akkor következnek be, amikor a rendszer a veszélyes anyagok jelentéseit hozza létre.
 
-![A veszélyes anyagok jelentéseihez kapcsolódó tevékenységek sorozata.](media/hazmat-report-sequence.png "A veszélyes anyagok jelentéseihez kapcsolódó tevékenységek sorozata")
+![A veszélyes anyagok jelentéseihez kapcsolódó tevékenységek sorozata](media/hazmat-report-sequence.png "A veszélyes anyagok jelentéseihez kapcsolódó tevékenységek sorozata")
 
 ## <a name="set-up-hazardous-materials-reporting"></a><a name="set-up"></a>Veszélyes anyagok jelentéseinek beállítása
 
@@ -106,6 +110,3 @@ Amikor a veszélyes anyagok funkció be van kapcsolva a rendszerben, a **fuvarle
 ## <a name="packing-list-report"></a>Csomagolási lista jelentése
 
 Amikor a veszélyes anyagok funkció be van kapcsolva a rendszerben, a csomagolási listák a cikkek szállítási nyomtatási szövegével kapcsolatos további információkat tartalmazzák. Ez a jelentés a szokásos módon érhető el a **Minden rakomány** oldalon.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

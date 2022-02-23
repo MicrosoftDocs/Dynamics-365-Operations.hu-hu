@@ -2,9 +2,11 @@
 title: Kísérlet állapotának áttekintése
 description: Ez a témakör azt mutatja be, hogy a Dynamics 365 Commerce rendszeren belüli kísérletezési életciklusban mi lehet egy adott kísérlet állapota.
 author: sushma-rao
+manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -15,12 +17,12 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: af19a1c2e6a3205cd76c9fe998d1c8268f9077661b96c43b9aa9733286bd32d9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5ae29fe5ac49d92c261c59d115664b50e87880a0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777524"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965103"
 ---
 # <a name="review-the-status-of-an-experiment"></a>Kísérlet állapotának áttekintése
 A kísérletek Dynamics 365 Commerce rendszerben való beállítása és futtatása számos lépést igényel. A kísérletezési életciklussal kapcsolatos tudnivalókért lásd: [Kísérletezés a Dynamics 365 Commerce rendszerben](experimentation-overview.md).
@@ -41,7 +43,4 @@ Hasonlóképpen a **Harmadik fél állapot** oszlopban a következő értékek j
 
 Az alábbi ábra a két állapotot mutatja be, valamint azt, hogy hogyan kapcsolódnak egymáshoz.
 
-[ ![Kísérletezés állapotai.](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[ ![Kísérletezés állapotai](./media/experimentation_statuses.svg) ](./media/experimentation_statuses.svg#lightbox)

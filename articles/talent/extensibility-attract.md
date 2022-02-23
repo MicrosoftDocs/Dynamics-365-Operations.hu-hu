@@ -91,6 +91,3 @@ A webes tartalom (iframe) tevékenység lehetővé teszi egy egyéni webes megol
 
 > [!NOTE]
 > A webes tartalom tevékenység csak az átfogó felvételi bővítménnyel érhető el.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,23 +2,34 @@
 title: Integrált helyek és raktárak
 description: Ez a témakör a hely- és raktáradatok integrációját ismerteti a Finance and Operations és a Dataverse között.
 author: t-benebo
+manager: AnnBe
 ms.date: 10/09/2019
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: benebotg
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: 66c5962933387831bbc3f17b9f29128ceaaf750b
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: d192343d78f9248e4d1232d6aee1a1f800383805
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063212"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679320"
 ---
-# <a name="integrated-sites-and-warehouses"></a>Integrált helyek és raktárak
+# <a name="integrated-sites-and-warehouses"></a>Integrált telephelyek és raktárak
 
 [!include [banner](../../includes/banner.md)]
+
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -28,9 +39,14 @@ Ez a témakör a hely- és raktáradatok integrációját ismerteti a Finance an
 
 A Dataverse integrációjával ezekkel elvekkel és a hozzájuk kapcsolódó adatokkal a következő táblázatban található Dataverse helyek és raktárak adattáblái használhatók.
 
-Finance and Operations alkalmazások | Customer Engagement alkalmazások     | Leírás
+Finance and Operations-alkalmazásoknak | Egyéb Dynamics 365 alkalmazások | Leírás
 --------------------------|---------------------------|---
-[Helyek](mapping-reference.md#156) | msdyn_operationalsites | |
-[Raktárak](mapping-reference.md#204) | msdyn_warehouses | |
+Webhelyek | msdyn_operationalsites | 
+Raktárak | msdyn_warehouses | 
 
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[!include [symbols](../../includes/dual-write-symbols.md)]
+
+[!include [operational sites](includes/InventOperationalSiteEntity-msdyn-operationalsite.md)]
+
+[!include [warehouses](includes/InventWarehouseEntity-msdyn-warehouse.md)]
+

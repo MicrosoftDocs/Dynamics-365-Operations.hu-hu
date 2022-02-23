@@ -1,33 +1,42 @@
 ---
-title: A Finance and Operations alkalmazások kettős írással kapcsolatos problémáinak elhárítása
-description: Ez a témakör hibaelhárítási információkat tartalmaz, amelyek segíthetnek a Finance and Operations alkalmazások kettős írási moduljával kapcsolatos problémák megoldásában.
+title: A(z) Finance and Operations alkalmazásokban lévő problémák elhárítása a kettős írás modullal
+description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítségével javíthatók a Finance and Operations-alkalmazások kettős írás modullal kapcsolatos problémái.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+manager: AnnBe
+ms.date: 03/16/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: 2241e7e6219f95115f55bc45a4d94550276e1e21
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061808"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683623"
 ---
-# <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>A Finance and Operations alkalmazások kettős írással kapcsolatos problémáinak elhárítása
+# <a name="troubleshoot-issues-with-the-dual-write-module-in-finance-and-operations-apps"></a>A(z) Finance and Operations alkalmazásokban lévő problémák elhárítása a kettős írás modullal
 
 [!include [banner](../../includes/banner.md)]
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-
-Ez a témakör hibaelhárítási információkat tartalmaz a Finance and Operations alkalmazások és a kettős írási integrációhoz Dataverse. Konkrétan olyan információkat nyújt, amelyek segíthetnek a következővel kapcsolatos problémák megoldásában **Kettős írás** modul a Finance and Operations alkalmazásokban.
+Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz. Pontosabban, ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítségével javíthatók a Finance and Operations-alkalmazások **kettős írás** modullal kapcsolatos problémái.
 
 > [!IMPORTANT]
 > Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazda szerepkört vagy Microsoft Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Nem töltheti be a kétírásos modult a Finance and Operations alkalmazásba
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>A kettős írás modul nem tölthető be egy Finance and Operations-alkalmazásban
 
 Ha nem tudja megnyitni a **Kettős írás** lapot a **Kettős írás** csempe kiválasztásával az **Adatkezelés** munkaterületen, az adatintegrációs szolgáltatás valószínűleg üzemen kívül van. Hozzon létre egy támogató jegyet az adatintegrációs szolgáltatás újraindításának kérelmezéséhez.
 
@@ -35,9 +44,10 @@ Ha nem tudja megnyitni a **Kettős írás** lapot a **Kettős írás** csempe ki
 
 **A hiba javításához szükséges hitelesítő adatok:** ugyanaz a felhasználó, aki a kettős írást telepítette.
 
-Előfordulhat, hogy a következő hibaüzenet jelenik meg, amikor új táblát próbál konfigurálni a kettős íráshoz. A kettős írási kapcsolatot beállító felhasználó hozhatja csak létre a leképezést.
+Előfordulhat, hogy a következő hibaüzenet jelenik meg, amikor új entitást próbál konfigurálni a kettős íráshoz. A kettős írási kapcsolatot beállító felhasználó hozhatja csak létre a leképezést.
 
-*A válasz állapotkódja nem sikert jelez: 401 (Nem engedélyezett).*
+*A válasz állapotkódja sikertelenséget jelez: 401 (Nem engedélyezett)*
+
 
 ## <a name="error-when-you-open-the-dual-write-user-interface"></a>Hiba a kettős írás felhasználói felületének megnyitásakor
 
@@ -49,17 +59,13 @@ A hiba elhárításához jelentkezzen be egy InPrivate-ablakon a Microsoft Edge-
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Hiba, amikor a környezetet összekapcsolja kettős íráshoz, vagy új táblaleképezést ad hozzá
 
-**A probléma megoldásához szükséges szerepkör:** Rendszergazda mind a Finance and Operations alkalmazásban, mind a Dataverse.
+**Szükséges szerepkör a hiba javításához:** Rendszergazda a Finance and Operations alkalmazásokban és Dataverse alkalmazásban.
 
 A következő hiba merülhet fel összekapcsoláskor vagy leképezések létrehozásakor:
 
-```dos
-Response status code does not indicate success: 403 (tokenexchange).
-Session ID: \<your session id\>
-Root activity ID: \<your root activity\> id
-```
+*A válasz állapotkódja sikertelenséget jelez: 403 (tokenexchange).<br> Munkamenet-azonosító: \<your session id\><br> Gyökérszintű tevékenységazonosító: \<your root activity id\>*
 
-Ez a hiba akkor fordulhat elő, ha nincs megfelelő jogosultsága a kettős írás összekapcsolásához vagy a leképezések létrehozásához. Ez a hiba akkor is előfordulhat, ha a Dataverse-környezet alaphelyzetbe állítása a kettős írás csatolásának felbontása nélkül történt. Bármely felhasználó, aki rendszergazdai szerepkörrel rendelkezik mind a Finance and Operations alkalmazásokban, mind Dataverse összekapcsolhatja a környezeteket. Csak a kettős írás kapcsolatot beállító felhasználó adhat hozzá új táblaleképezéseket. A telepítés után bármely rendszergazdai szerepkörrel rendelkező felhasználó nyomon követheti az állapotot, és szerkesztheti a leképezéseket.
+Ez a hiba akkor fordulhat elő, ha nincs megfelelő jogosultsága a kettős írás összekapcsolásához vagy a leképezések létrehozásához. Ez a hiba akkor is előfordulhat, ha a Dataverse-környezet alaphelyzetbe állítása a kettős írás csatolásának felbontása nélkül történt. Minden olyan felhasználó, aki rendszergazdai szerepkörrel rendelkezik a Finance and Operations alkalmazásokban és a Dataverse szolgáltatásban is, összekapcsolhatja a környezeteket. Csak a kettős írás kapcsolatot beállító felhasználó adhat hozzá új táblaleképezéseket. A telepítés után bármely rendszergazdai szerepkörrel rendelkező felhasználó nyomon követheti az állapotot, és szerkesztheti a leképezéseket.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Hiba a táblaleképezés leállításakor
 
@@ -71,29 +77,13 @@ Ez a hiba akkor fordul elő, ha a csatolt Dataverse-környezet nem érhető el.
 
 A hiba elhárításához hozzon létre egy jegyet az adatintegrációs csoporthoz. A hálózati nyomkövetést csatolja annak érdekében, hogy az adatintegrációs csoport megjelölje a leképezéseket a háttérben **nem futóként**.
 
-## <a name="errors-while-trying-to-start-a-table-mapping"></a>Hibák egy táblázat leképezésének elindítása közben
+## <a name="error-while-trying-to-start-an-table-mapping"></a>Hiba történt egy táblaleképezés indításának kísérlete közben
 
-### <a name="unable-to-complete-initial-data-sync"></a>Nem sikerült befejezni a kezdeti adatszinkronizálást
-
-Előfordulhat, hogy a következő hibaüzenetet kapja, amikor megpróbálja futtatni a kezdeti adatszinkronizálást:
+A következőhöz hasonlító hibaüzenet jelenhet meg, amikor a leképezés állapotát **Futás** értékre akarja állítani:
 
 *A kezdeti adatszinkronizálás nem hajtható végre. Hiba: kettős írási hiba – a beépülő modul regiszrtálása nem sikerült: Nem sikerült a kettős írási keresési metaadat létrehozása. Hiba objektumreferenciája nincs beállítva egy objektum példányára.*
 
-Ha megpróbálja a leképezés állapotát **Futó** állapotra állítani, a következő hibaüzenetet kaphatja. A javítás a hiba okától függ:
+A hiba javítása a hiba okának függvénye:
 
 + Ha a leképezés függő leképezésekkel rendelkezik, akkor győződjön meg róla, hogy engedélyezi az táblaleképezés függő leképezését.
-+ A leképezésből valószínűleg hiányzik a forrás- vagy céloszlopok. Ha hiányzik egy oszlop a Finance and Operations alkalmazásból, kövesse a szakaszban leírt lépéseket [Hiányzó táblázatoszlopok probléma a térképeken](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Ha hiányzik egy oszlop a Dataverse szolgáltatásból, kattintson a **Táblák frissítése** gombra a leképezésen, így az oszlopokat a rendszer automatikusan visszatölti a leképezésbe.
-
-### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Verzióillesztési hiba és a dual-write megoldások frissítése
-
-A következő hibaüzeneteket kaphatja, amikor megpróbálja futtatni a táblázat leképezéseit:
-
-+ *Ügyfélcsoportok (msdyn_customergroups): Kettős írási hiba - Dynamics 365 for Sales megoldás 'Dynamics365Company' verzióeltérés. Verzió: '2.0.2.10' Kötelező verzió: '2.0.133'*
-+ *Dynamics 365 for Sales megoldás 'Dynamics365FinanceExtended' verzióeltérés. Verzió: '1.0.0.0' Kötelező verzió: '2.0.227'*
-+ *Dynamics 365 for Sales megoldás 'Dynamics365FinanceAndOperationsCommon' verzióeltérés. Verzió: '1.0.0.0' Kötelező verzió: '2.0.133'*
-+ *Dynamics 365 for Sales megoldás 'CurrencyExchangeRates' verzióeltérés. Verzió: '1.0.0.0' Kötelező verzió: '2.0.133'*
-+ *Dynamics 365 for Sales megoldás 'Dynamics365SupplyChainExtended' verzióeltérés. Verzió: '1.0.0.0' Kötelező verzió: '2.0.227'*
-
-A problémák kijavításához frissítse a kettős írási megoldásokat a Dataverse-ben. Győződjön meg róla, hogy a legfrissebb megoldásra frissít, amely megfelel a kívánt megoldás verziójának.
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
++ A leképezésből valószínűleg hiányzik a forrás- vagy célmezők. Ha hiányzik egy mező a Finance and Operations alkalmazásban, akkor kövesse a következő szakasz lépéseit: [Hiányzó entitásmezők problémája leképezésekben](dual-write-troubleshooting-finops-upgrades.md#missing-entity-fields-issue-on-maps). Ha hiányzik egy mező a Dataverse szolgáltatásból, kattintson a **Táblák frissítése** gombra a leképezésen, így a mezőket a rendszer automatikusan visszatölti a leképezésbe.

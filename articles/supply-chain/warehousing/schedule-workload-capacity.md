@@ -1,25 +1,27 @@
 ---
 title: Ütemezés terhelési kapacitása
 description: Ez a témakör bemutatja, hogyan lehet beállítani és ütemezni a raktárban dolgozók vagy egy teljes raktár terhelési kapacitását.
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSWorkloadCapacity
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 269384
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f66eb1b2f35d19aba0f4f8f2804577a62ac14e79
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
-ms.translationtype: MT
+ms.openlocfilehash: 8db243949b2aeee0a8263276234d439652905449
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901946"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965577"
 ---
 # <a name="schedule-workload-capacity"></a>Ütemezés terhelési kapacitása
 
@@ -77,6 +79,3 @@ Ha ez az információ nincs megfelelően megadva, a rendszer üzenetet küld a *
 3. A **Rendelés típusa** mezőben válassza ki a **Tervezett és visszaigazolt**, **Tervezett** vagy **Visszaigazolt** annak a meghatározásához, hogy milyen típusú rendelések legyenek feltüntetve a jelentésben.
 4. Válassza ki a **Terhelés típusa** mezőben a terhelés típusát annak meghatározása érdekében, hogy a terhelési kapacitást mennyiség vagy súly esetében kell-e előre jelezni.
 5. Válassza ki a **Terhelési kapacitás** mezőben a terhelésikapacitás-beállítást.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

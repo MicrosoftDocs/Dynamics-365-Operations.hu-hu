@@ -2,22 +2,25 @@
 title: Betárolási fürtök
 description: A betárolási fürtökkel egyszerre több azonosítótábla felvételére is lehetőség van, majd a különböző helyeken történő betárolására. Rendkívül hasznosak lehetnek a kiskereskedelmi vállalatok számára, ahol az azonosítótábla általában nem teljes raklapnyi készletet jelentenek.
 author: Mirzaab
+manager: tfehr
 ms.date: 10/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-19
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: c3496d43fa3791f765abfb1eb25c45f1f21b972f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 6a330ddccbd17c92443232fc8488e36a59235773
+ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573009"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "4512330"
 ---
 # <a name="putaway-clusters"></a>Betárolási fürtök
 
@@ -228,7 +231,7 @@ Ez a forgatókönyv szimulálja a betárolási fürtök feldolgozását.
 
 #### <a name="receive-and-sort-the-inventory-into-a-cluster"></a>A készlet bevételezése és rendezése egy fürtbe
 
-1. Jelentkezzen be a Raktárkezelés mobilalkalmazásba olyan felhasználóként, aki a *61*. raktárban be van állítva.
+1. Jelentkezzen be a raktározási alkalmazásba olyan felhasználóként, aki a *61*. raktárban be van állítva.
 1. Válassza a főmenü **Kimenő** elemét.
 1. Válassza a **Bejövő** menü **Fürt bevételezése és rendezése** lehetőségét.
 1. A **Ponum** mezőben adja meg a beszerzési rendelés számát.
@@ -270,7 +273,7 @@ A fürtben lévő cikkek betárolása előtt le kell zárni a fürtöt.
 
 #### <a name="put-the-cluster-away"></a>Fürt betárolása
 
-1. Jelentkezzen be a Raktárkezelés mobilalkalmazásba olyan felhasználóként, aki a *61*. raktárban be van állítva.
+1. Jelentkezzen be a raktározási alkalmazásba olyan felhasználóként, aki a *61*. raktárban be van állítva.
 1. Válassza a főmenü **Kimenő** elemét.
 1. Válassza a **Bejövő** menü **Fürtbetárolás** elemét.
 1. Válassza ki a **Fürtazonosító** lehetőséget, majd adja meg a lezárt fürtnél korábban megadott fürtazonosítót.
@@ -284,7 +287,7 @@ A fürtben lévő cikkek betárolása előtt le kell zárni a fürtöt.
 
     A lépés felülbírálásához vagy átadásához a szokásos lehetőségek állnak rendelkezésre.
 
-    ![Fürtbetárolás: Betárolási oldal.](media/Cluster_putaway-Put.png "Fürtbetárolás: Betárolási oldal")
+    ![Fürtbetárolás: Betárolási oldal](media/Cluster_putaway-Put.png "Fürtbetárolás: Betárolási oldal")
 
 1. A fürt betárolásának jóváhagyásához kattintson az **OK** gombra.
 
@@ -293,6 +296,3 @@ A fürtben lévő cikkek betárolása előtt le kell zárni a fürtöt.
 ## <a name="notes-and-tips"></a>Megjegyzések és tippek
 
 Azokban az esetekben, amikor a fürt azonosítója egy beágyazott raklap számára egy szülő azonosítótábla lesz, a program automatikusan beírja a betárolási pozíciót, amikor a rendszer beolvassa a fürtazonosítót. Nem kell több azonosítótáblát beolvasni akkor sem, ha az azonosítótábla-létrehozás manuálisra van állítva.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

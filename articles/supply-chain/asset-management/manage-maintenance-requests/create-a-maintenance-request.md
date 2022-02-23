@@ -1,10 +1,12 @@
 ---
 title: Karbantartási kérések létrehozása
 description: Ez a témakör azt mutatja be, hogyan lehet a karbantartási kérést létrehozni az Eszközkezelés modulban.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRequestTableCreate
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 4b48a0504b79d2edf7815296312c7839052092e7d6773b7ebd5d38cbb59c9428
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f45378405d9ea06ae847d93b7eacd9badf6d7e00
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714980"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019178"
 ---
 # <a name="create-maintenance-requests"></a>Karbantartási kérések létrehozása
 
@@ -30,7 +32,7 @@ ms.locfileid: "6714980"
 
 A karbantartási kérések akkor használhatók, ha a karbantartás dolgozók vagy a termelési dolgozók felfedezik, hogy a felszerelés javítása szükséges, de a javítási feladat nem hajtható végre azonnal.
 
-**Példa:** Amikor a karbantartási dolgozó javítási munkát végez, észreveszi, hogy egy másik eszközt is szervizelni kell ugyanazon a helyen. Azonban a karbantartási dolgozónak nincs ideje vagy a pótalkatrészek szükségesek a javítási feladat végrehajtásához. Ezért létrehoz egy karbantartási kérést az eszközhöz, és megadja a probléma rövid leírását.
+**Példa:** Amíg a karbantartó dolgozó javítási munkát végez, rájön, hogy egy másik eszközt is szervizelni kell ugyanazon a helyszínen. Azonban a karbantartási dolgozónak nincs ideje vagy a pótalkatrészek szükségesek a javítási feladat végrehajtásához. Ezért létrehoz egy karbantartási kérelmet a tárgyi eszközhöz, és beírja a probléma rövid leírását.
 
 Az **Aktív karbantartási kérések** részben a **Kapcsolódó információk** ablaktáblán az **Összes eszköz** vagy **Összes eszköz** oldal jobb oldalán (**Eszközök kezelése** \> **Közös** \> **Eszközök** \> **Összes eszköz** vagy **Aktív eszközök**) láthatók a kijelölt eszközhöz csatolt karbantartási kérések.
 
@@ -52,7 +54,7 @@ Az **Aktív karbantartási kérések** részben a **Kapcsolódó információk**
 11. A **Megjegyzések** mezőbe írja be a szükséges további megjegyzéseket.
 12. Válassza ki az **OK** lehetőséget.
 
-![Karbantartási kérés létrehozása.](media/03-manage-maintenance-requests.png)
+![Karbantartási kérés létrehozása](media/03-manage-maintenance-requests.png)
 
 ## <a name="subsequent-processing-of-maintenance-requests"></a>Karbantartási kérések utólagos feldolgozása
 
@@ -67,10 +69,7 @@ A részleteket nézetben különböző információkat lehet frissíteni. Íme n
 - Válassza ki a karbantartási feladat típusát, és ha ez az információ releváns, akkor egy kapcsolódó karbantartási feladat változatát és a szakmát.
 - A **Földrajzi szélesség** és **Földrajzi hosszúság** mezőkben adja meg a földrajzi koordinátákat. A karbantartási kéréshez hozzáadott koordinátákat a program automatikusan átviszi a kapcsolódó munkarendelésbe. 
 
-![Karbantartási kérések frissítése.](media/04-manage-maintenance-requests.png)
+![Karbantartási kérések frissítése](media/04-manage-maintenance-requests.png)
 
 > [!NOTE]
 > Ha a karbantartási kérés létrehozásakor kiválaszt egy eszközt, akkor egy hiba adható hozzá a tárgyi eszközhöz. A karbantartási kérés létrehozása után, igény esetén több hibát is megadhat. Hibák hozzáadásához válassza ki az **Eszköz hibája** lehetőséget az **Összes karbantartási kérés** oldalon.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Kézi értékcsökkenés
 description: Ez a cikk az értékcsökkenés felhasználási módszeréről nyújt áttekintést.
-author: moaamer
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 13811
 ms.assetid: b0e837c9-515a-4aed-9060-5ec94f37edeb
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5b62bbdd5d745bc9d0745cc6fa6d6e8034a61e3
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
-ms.translationtype: MT
+ms.openlocfilehash: 228e6c94042942a26793eb0bebc1186dd4767e7f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674827"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969029"
 ---
 # <a name="manual-depreciation"></a>Kézi értékcsökkenés
 
@@ -30,11 +32,11 @@ Ez a cikk az értékcsökkenés felhasználási módszeréről nyújt áttekint�
 
 Amikor beállítja egy tárgyi eszköz értékesítési profilját és kijelöli a **Manuális** opciót a **Metódus** mezőben az **Értékcsökkenési profilok** lapon, akkor az értékcsökkenési profilhoz rendelt tárgyi eszközök értékcsökkenése az alapján a százalék alapján van meghatározva, amelyet megad az egyes időintervallumokhoz a naptári évben. Az időközök, amelyekhez százalékokat ad meg feladásra kerülnek azon értéknek megfelelően, amit az **Értékcsökkenési profilok** lap **Általános** gyorslapján az **Időszak-gyakoriság** mezőben meghatároz. Itt szerepelnek a kiválasztható értékek:
 
-- Évente
-- Havonta
-- Negyedévente
-- Féléves
-- Napi
+-   Évente
+-   Havonta
+-   Negyedévente
+-   Féléves
+-   Napi
 
 Miután kijelöli az időszak-gyakoriságot kattintson a **Kézi ütemezések** gombra és állítsa be a százalékokat az egyes feladási intervallumokhoz. A kézi ütemezések és a feladási intervallumok közösen meghatározzák az értékcsökkenés összegét, úgy ahogy az ebben a cikkben szereplő példák később bemutatják. A kézi értékcsökkenés mindig a beszerzési ár egy százalékaként számítandó. Kézi értékcsökkenés esetén az Ön által az értékcsökkenés intervallumaiban megadott százalékok összegének nem kell 100 százaléknak lennie. A kézi értékcsökkenés egy rugalmas értékcsökkenési mód, amely gyakran használatos rendkívüli értékcsökkenési profilok meghatározásához a **Könyvek** lapon, úgy mint egy nem periodikus értékcsökkenés különleges célokra (mint például adó).
 
@@ -73,6 +75,3 @@ Az intervallumokban megadott százalékoknak nem kell 100-at kiadniuk. Azonban �
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

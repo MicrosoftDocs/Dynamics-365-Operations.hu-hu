@@ -33,6 +33,3 @@ Minden héten új kiadás jelenik meg a Talent alkalmazáshoz. Ezen kiadásoka d
 
 A tartalomjegyzék továbbra is frissítve lesz minden héten, így később is megtalálja a Talent kiadásainak új funkcióit, illetve változásait.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

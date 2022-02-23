@@ -2,8 +2,11 @@
 title: SPLITLISTBYLIMIT ER-függvény
 description: A témakör tájékoztatást nyújt a SPLITLISTBYLIMIT Elektronikus jelentéskészítési (ER) függvény használatának módjáról.
 author: NickSelin
+manager: kfend
 ms.date: 12/12/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 52351c131480119ce9fb98a75307ebf6026cb12b9977e8b4236d3a24ef6a140e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1e6a4638cd32cb253261cc7fbaacb45b47f52c62
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744434"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683699"
 ---
 # <a name="splitlistbylimit-er-function"></a>SPLITLISTBYLIMIT ER-függvény
 
@@ -97,6 +100,3 @@ Az alábbi ábrán a módosított formátum futtatásának eredménye látható.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Lista függvények](er-functions-category-list.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

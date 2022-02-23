@@ -1,55 +1,50 @@
 ---
 title: Tömeges felvételi projekt létrehozása
 description: Ez az eljárás végigvezeti a tömeges felvételi projekt beállítási folyamatán.
-author: twheeloc
-ms.date: 10/28/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMMassHireProject,  HRMMassHireLineCreate, HcmJobLookup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4f119805af275b5bcddd910325179c02ed44758e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 8ddcfd531e7b5c76ac4b15cee54880f6868a73f1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065114"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418787"
 ---
 # <a name="create-a-mass-hire-project"></a>Tömeges felvételi projekt létrehozása
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Ez az eljárás végigvezeti a tömeges felvételi projekt beállítási folyamatán. Egy toborzó a tömeges felvételi projekt segítségével könnyedén létrehozhat több beosztást, majd felvehet több dolgozót ezekre a beosztásokra. Az eljárás megkezdéséhez ugorjon az Emberi erőforrások > Toborzás > Tömeges felvételi projektek lehetőségre. Ez az eljárás az USMF bemutatócéget használja.
 
-
-
-Ez az eljárás végigvezeti a tömeges felvételi projekt beállítási folyamatán. Egy toborzó a tömeges felvételi projekt segítségével könnyedén létrehozhat több beosztást, majd felvehet több dolgozót ezekre a beosztásokra. Az eljárás megkezdéséhez lépjen a következőre: **Emberi Erőforrások** > **Toborzás** > **Tömeges bérbeadási projektek**. Ez az eljárás az USMF bemutatócéget használja.
-
-1. Kattintson az **Új** elemre.
-2. Ban,-ben **Tömeges bérbeadási projekt** mezőbe írjon be egy értéket.
-3. Írjon egy értéket a **Leírás** mezőbe.
-4. Ban,-ben **Projekt kezdete** mezőbe írja be a dátumot.
-5. Ban,-ben **Projekt vége** mezőbe írja be a dátumot.
-6. Kattintson **Projekt megnyitása**.
-7. Kattintson az **Igen** gombra.
-8. Kattintson **Hozzon létre pozíciókat**.
-9. Ban,-ben **Mennyiség** mezőbe írja be a létrehozni kívánt pozíciók számát
-    * A kezdési dátum a **Bérelési dátum** az új dolgozók számára.  
-    * A Befejezés dátuma a **Befejezési időpont** az új dolgozók számára.  
-    * Adja meg, hogy az új dolgozók lesznek-e **Alkalmazottak** vagy **Vállalkozók**.  
-10. Ban,-ben **Munka** mezőben kattintson a legördülő gombra, hogy kiválassza azt a munkát, amelyhez pozíciókat szeretne létrehozni.
+1. Kattintson az Új lehetőségre.
+2. A Tömeges felvételi projekt mezőben adjon meg egy értéket.
+3. A Leírás mezőben adjon meg egy értéket.
+4. A Projekt kezdete mezőben adjon meg dátumot.
+5. A Projekt vége mezőben adjon meg dátumot.
+6. Kattintson a Projekt megnyitása lehetőségre.
+7. Kattintson az Igen gombra.
+8. Kattintson a beosztások létrehozása lehetőségre.
+9. A Mennyiség mezőbe írja be a létrehozni kívánt beosztások számát
+    * A kezdő dátum lesz az új dolgozók felvételi dátuma.  
+    * A záró dátum lesz az új dolgozók munkaviszony-megszüntetési dátuma.  
+    * Határozza meg, hogy az új dolgozók alkalmazottak vagy alvállalkozók lesznek.  
+10. A feladat mezőben kattintson a legördülő gombra, és válassza ki a feladatot, amelyhez beosztást kíván létrehozni.
 11. Keresse meg és jelölje ki a kívánt rekordot a listán.
 12. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * Az alapértelmezett teljes munkaidős egyenérték a kiválasztott feladat alapján változik. Ez szükség szerint módosítható.  
     * Kiválaszthatja a részleget is az új beosztásokhoz.  
-13. Kattintson az **OK** gombra.
+13. Kattintson az OK gombra.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,24 +1,27 @@
 ---
 title: Termékszám elnevezési rendszerének létrehozása előre definiált termékváltozatokhoz
 description: Ez a témakör bemutatja, hogyan állítható be termékszámozási rendszer előre definiált termékváltozatok számára, és hogyan rendelhető hozzá a megfelelő termékdimenzió-csoporthoz.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResNomenclature, EcoResProductDimensionGroup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5179dd54f22de11dc4c0f54113376f13b2f59c48
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6871765a450295a3f308ec7e706f1b126071585f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569577"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429514"
 ---
 # <a name="create-a-product-number-nomenclature-for-predefined-product-variants"></a>Termékszám elnevezési rendszerének létrehozása előre definiált termékváltozatokhoz
 
@@ -28,27 +31,26 @@ Ez a témakör bemutatja, hogyan állítható be termékszámozási rendszer el�
 
 
 ## <a name="create-a-product-number-nomenclature"></a>Termékszámozási rendszer létrehozása
-
-1. Ugorjon a **Termékinformációk kezelése \> Beállítás \> Termék elnevezési rendszere** lehetőségre.
-1. Válassza az **Új** lehetőséget.
-1. A **Név** mezőben adja meg az elnevezési rendszer nevét, amely segít azonosítani a cél termékdimenzió-csoportot, például `ColorSize`.
-1. Írjon egy értéket a **Leírás** mezőbe.
-1. Válassza a **Hozzáadás** lehetőséget.
-1. Válassza az **Alaptermék** számát.
-1. Válassza a **Hozzáadás** lehetőséget.
-1. Válassza a **Szöveges állandó** elemet.
-1. Írjon be egy értéket a **Szöveg** mezőbe.
-1. Válassza a **Hozzáadás** lehetőséget.
-1. Válassza ki a **Szín** elemet.
-1. Válassza a **Hozzáadás** lehetőséget.
-1. Válassza a **Szöveges állandó** elemet.
-1. Írjon be egy értéket a **Szöveg** mezőbe.
-1. Válassza a **Hozzáadás** lehetőséget.
-1. Válassza a **Méret** elemet.
-1. Zárja be a lapot.
+1. Válassza a **Termékváltozat modelldefiníciója** elemet.
+2. Válassza a **Termék elnevezési rendszere** elemet.
+3. Válassza az **Új** lehetőséget.
+4. A **Név** mezőben adja meg az elnevezési rendszer nevét, amely segít azonosítani a cél termékdimenzió-csoportot, például `ColorSize`.
+5. Írjon egy értéket a **Leírás** mezőbe.
+6. Válassza a **Hozzáadás** lehetőséget.
+7. Válassza az **Alaptermék** számát.
+8. Válassza a **Hozzáadás** lehetőséget.
+9. Válassza a **Szöveges állandó** elemet.
+10. Írjon be egy értéket a **Szöveg** mezőbe.
+11. Válassza a **Hozzáadás** lehetőséget.
+12. Válassza ki a **Szín** elemet.
+13. Válassza a **Hozzáadás** lehetőséget.
+14. Válassza a **Szöveges állandó** elemet.
+15. Írjon be egy értéket a **Szöveg** mezőbe.
+16. Válassza a **Hozzáadás** lehetőséget.
+17. Válassza a **Méret** elemet.
+18. Zárja be a lapot.
 
 ## <a name="assign-the-nomenclature-to-a-product-master"></a>Rendelje hozzá az elnevezési rendszert az alaptermékhez
-
 1. Válassza ki a **Termékdimenzió-csoportok** elemet.
 2. Válassza ki a **SizeCol termékdimenzió-csoport** elemet.
 3. Válassza ki a **Szerkesztés** opciót.
@@ -56,5 +58,3 @@ Ez a témakör bemutatja, hogyan állítható be termékszámozási rendszer el�
 5. A **Termékváltozat-számozási rendszer** mezőben adjon meg, vagy válasszon ki egy értéket.
 6. Zárja be a lapot.
 
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

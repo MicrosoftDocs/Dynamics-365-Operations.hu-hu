@@ -1,25 +1,28 @@
 ---
 title: Helyutasítás beállítása beszerzési rendelés eltárolásához
 description: Ez a témakör bemutatja, hogyan állíthat be egyszerű helyutasítást.
-author: Henrikan
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSInventFixedLocation
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6a363b452cbee539aeee62146f545b1f7c2eb842
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b07cd8af0fd619a71d3fe5188f41d0a0ed954f93
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576208"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429889"
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Helyutasítás beállítása beszerzési rendelés eltárolásához
 
@@ -83,6 +86,3 @@ Ez a témakör bemutatja, hogyan állíthat be egyszerű helyutasítást. A pél
 4. Adjon meg egy értéket a **Feltétel** mezőben.
 5. Válassza ki az **OK** lehetőséget. Az irányelvsorokat és a műveletek irányelveit mindaddig hozzáadhatja, amíg a raktárban minden lehetséges esetet belefoglal.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

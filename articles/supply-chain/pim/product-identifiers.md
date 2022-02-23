@@ -1,31 +1,34 @@
 ---
 title: Termékazonosítók
 description: Ez a témakör a különféle típusú termékazonosítókkal kapcsolatban tartalmaz tájékoztatást, és bemutatja, hogyan adhat hozzá termékazonosítókat a termékadataihoz.
-author: t-benebo
+author: cvocph
+manager: tfehr
 ms.date: 03/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductEntityIdentifierCode, EcoResProductListPage, EcoResProductDetailsExtended, EcoResProductVariantsPerCompany
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: benebotg
+ms.author: kamaybac
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 638b5c3b0c83f67f3d99331b6456efd1b8f5225a
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: c16818f1dc52c9e21130539213e7e8d1053fef1d
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063341"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4529186"
 ---
 # <a name="product-identifiers"></a>Termékazonosítók
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 [!include [banner](../includes/banner.md)]
 
@@ -39,9 +42,9 @@ A Dynamics 365 Supply Chain Management, rendszerben a termék elsődleges azonos
 
 Sok esetben a termékszámot eredetileg nem a Dynamics 365 Supply Chain Management rendszerben hozták létre. Ehelyett egy termékciklus-kezelő (PLM) vagy termékadatkezelő (PDM) rendszerben található termékhez kapcsolódik. Ebben az esetben adatentitások használhatók a termékek és a termékváltozatok importálására. Ezt követően a Supply Chain Management az összes műveletben a számokat fogja használni.
 
-A Supply Chain Management implementációjakor különös figyelmet kell fordítani a termékszámokkal kapcsolatos stratégiára. A jó számozási rendszer javítja a logisztikai folyamatokat, és segít elkerülni a hibákat. Egy jó termékazonosító általában legfeljebb 20 karakterből állhat, de általában azt javasoljuk, hogy 10-nél kevesebb karaktert használjon, és legfeljebb 5 osztályozó karaktert tartalmazzon. Keresési nevek segítségével gyors kereséseket engedélyezhet. A keresési név egy további név, amely egy termék osztályozását képviseli.
+A Supply Chain Management implementációjakor különös figyelmet kell fordítani a termékszámokkal kapcsolatos stratégiára. A jó számozási rendszer javítja a logisztikai folyamatokat, és segít elkerülni a hibákat. A jó termékazonosító legfeljebb 15 karaktert tartalmaz. Ideális esetben kevesebb, mint 10 karakter, és legfeljebb öt besoroló karaktert tartalmaz. Keresési nevek segítségével gyors kereséseket engedélyezhet. A keresési név egy további név, amely egy termék osztályozását képviseli.
 
-A Microsoft Dataverse használata során a Supply Chain Management termékszáma egyben a termék száma is a Microsoft Dataverse rendszerben. A termékváltozatok a Dataverse-be egyedi termékként szinkronizálódnak.
+A Common Data Service használata során a Supply Chain Management cikkszáma egyben a termék száma is a Common Data Service rendszerben. A termékváltozatok a Common Data Service-be külön termékként szinkronizálódnak.
 
 ## <a name="item-number-and-product-dimensions"></a>Cikkszám és termékdimenziók
 
@@ -87,7 +90,7 @@ A **Külső cikkleírások** lapon társítani lehet a vevő vagy szállító ci
 | Leírás | A vevő által a cikkhez társított név | A szállító által a cikkhez társított név |
 | Külső cikkszöveg | A vevő cikkleírása | A cikk szállítói leírása |
 
-Ha sok vevő vagy szállító használja ugyanazokatat a cikkszámokat (például beszerzési társulás vagy kereskedelmi csoport esetében), létrehozhat olyan vevői vagy szállítói csoportokat, amelyek egyszerűsítik a külső termékinformációk karbantartását.
+Ha sok vevő vagy szállító használja ugyanazokatat a cikkszámokat (például beszerzési társulás vagy egy kereskedelmi csoport esetében), létrehozhat olyan vevői vagy szállítói csoportokat, amelyek egyszerűsítik a külső termékinformációk karbantartását.
 
 - Vevőcsoportokhoz lépjen az **Értékesítés** &gt; **Beállítás** &gt; **Cikkek** &gt; **Külső cikkleírás** elemre a csoportok és a kapcsolódó cikkszámok létrehozásához és karbantartásához. Vevők társításához egy csoporthoz, kattintson a **Kinnlevőségek** &gt; **Vevők** &gt; **Minden vevő** elemre, majd az **Értékesítési rendelés alapértelmezései** gyorslapon adjon meg egy értéket a **Cikk - vevőcsoport** mezőben.
 - Szállítócsoportokhoz lépjen a **Beszerzés és forrás** &gt; **Beállítás** &gt; **Külső cikkleírási csoport** elemre a csoportok és a kapcsolódó cikkszámok létrehozásához és karbantartásához. Szállító társításához egy csoporthoz, kattintson a **Kötelezettségek** &gt; **Szállítók** &gt; **Minden szállító** elemre, majd az **Beszerzési rendelés alapértelmezései** gyorslapon adjon meg egy értéket a **Cikk - szállítócsoport** mezőben.
@@ -106,7 +109,7 @@ A vonalkódok karbantartásához a **Kiadott termékek** oldalon, a **Készletke
 
 Az e-kereskedelemben elengedhetetlen, hogy minden fél közös nyelvet beszéljen, és a termékekre közös azonosítókkal hivatkozzon. Emiatt egyes ágazatok a [GTIN](https://www.gs1.org/id-keys/gtin) rendszerre támaszkodnak: ez egy globális cikkszámrendszer, amelyet a GS1 gondoz.
 
-Azt ajánljuk, hogy a GTIN-t vonalkódként kezelje. Azonban a **Cikk – GTIN** oldalon is lehetőség van a karbantartására. Az oldal megnyitásához a **Kiadott termékek** oldalon, a **Készletkezelés** lapon, a **Raktár** csoportban, válassza a **GTIN-kódok** lehetőséget. A GTIN nyilvántartása nem globális számként történik. Ehelyett megőrzése jogi személyenként történik.
+Azt ajánljuk, hogy a GTIN-t vonalkódként kezelje. Azonban a **Cikk – GTIN** oldalon is lehetőség van a karbantartására. Az oldal megnyitásához a **Kiadott termékek** oldalon, a **Készletkezelés** lapon, a **Raktár** csoportban, válassza a **GTIN-kódok** lehetőséget. Vegye figyelembe, hogy a GTIN nyilvántartása nem globális számként történik. Ehelyett megőrzése jogi személyenként történik.
 
 A Supply Chain Management rendszerben a raktári műveletekben a csomagolási változatok meghatározása adott mértékegységek meghatározásával történik. Például egy cikk lehet darabokban, hatos kötegekben, 18-as tálcákban vagy teljes raklapon tárolva. Ezen csomagolási változatok mindegyikére adott mértékegység kerül meghatározásra. Mivel a GTIN jellemzően egy termék csomagolási egységéhez kapcsolódik, a **Cikk – GTIN** oldalon termékenként és mértékegységenként több GTIN kódot tarthat fenn. Ugyanakkor nem használhatja ugyanazt a GTIN kódot egynél több alkalommal adott jogi személy különböző cikkeihez vagy termékváltozataihoz.
 
@@ -124,12 +127,12 @@ Sajnos nincs olyan szabványos funkció, amely lehetővé teszi a termékek kere
 |-------------|--------------------|--------------------|----------|
 | Termékek V2 | Termékszám, termék keresési neve, termék neve, termékleírás | Termékszám, termék keresési neve, termék neve, termékleírás | Az entitás beállításaitól és a termékszám számsorozatától függően a termékszám automatikusan létrehozható az importálás során. |
 | Termékváltozatok | Termékszám, termék keresési neve, termék neve, termékleírás | Termékszám, termék keresési neve, termék neve, termékleírás | A terméknómenklatúra sablonjától függően a termékszám automatikusan létrehozható az importálás során. Azonban bármilyen egyedi termékszám importálható, és a termékszámnak nem kell a termékek elnevezési rendszerének sablonjának szerkezetét követnie. |
-| Termékfordítások | Terméknév, termékleírás | Terméknév, termékleírás | Ez az entitás felülír minden nyelvet. Ha egy jogi személy elsődleges nyelvének nevét vagy leírását felülírják, maga a termék neve és leírása is megváltozik. |
+| Termékfordítások | Terméknév, termékleírás | Terméknév, termékleírás | Ez az entitás felülír minden nyelvet. Ne feledje, hogy ha egy jogi személy elsődleges nyelvének nevét vagy leírását felülírják, maga a termék neve és leírása is megváltozik. |
 | Kiadott termék létrehozása V2 | Cikkszám, termékszáma, cikk keresési neve| Cikkszám, termékszám, cikk keresési neve, termék keresési neve, termék neve | Ez az entitás kihívást jelenthet, amikor új kiadott termékek létrehozása során számsorozatokat használnak. Mind a **Cikkszám** számsorozat, mind a **Termékszám** számsorozat hatással vannak. Azonban a **Cikkszám** számsor jogi személyenként érvényes,a **Termékszám** számsor pedig globális. Emiatt nem ajánlott, hogy a **Cikkszám** számsorozatot használja újonnan kiadott termékek telepítésekor. Természetesen ha az entitás meglévő termék kiadásához van használva, a termékszámot meg kell adni az entitásban. További információkhoz lásd a jelen témakör lásd „Termék- és cikkszámsorozatok” részét. |
 | Kiadott termékváltozatok | Cikkszám, termékdimenziók, termékszám | Termékszám, termék keresési neve, termék neve, termékleírás, termékdimenziók | A **Termékváltozatok** entitáshoz hasonlóan ez az entitás használható új termékek létrehozására, amelyek vagy követik a termékek elnevezési rendszerének sablonját, vagy saját termékszámokat használnak a változathoz. |
 | Vevőkhöz tartozó külső cikkleírás | Vevői cikkszám, vevői-cikk neve, vevő leírása, vevői számla | Vevői cikkszám, vevői-cikk neve, vevő leírása, vevői számla | A vevők egy csoportja (például egy vevőszövetség) egy csoportba vonható össze az **Külső cikkleírásokhoz tartozó vevőcsoportok** entitás segítségével. |
 | Szállítókhoz tartozó külső cikkleírás | Szállító cikkszáma, szállító cikkneve, szállító leírása, szállítói számla | Szállító cikkszáma, szállító cikkneve, szállító leírása, szállítói számla | A szállítói egy csoportja (például egy szállítói szövetség vagy iparági szervezet) egy csoportba vonható össze az **Külső cikkleírásokhoz tartozó szállítócsoportok** entitás segítségével. |
-| Cikkvonalkód | Vonalkód | Vonalkód | Importáláskor a célrendszerben meghatározott vonalkód-beállítást kell alkalmaznia. Az importált vonalkód-referenciák a vonalkód-beállítással összevetve lesznek érvényesítve, és el lesznek utasítva, ha a vonalkód nem egyezik meg a követelményekkel, amelyek a beállításokban vannak meghatározva. |
+| Cikkvonalkód | Vonalkód | Vonalkód | Vegye figyelembe, hogy importáláskor a célrendszerben meghatározott vonalkód-beállítást kell alkalmaznia. Az importált vonalkód-referenciák a vonalkód-beállítással összevetve lesznek érvényesítve, és el lesznek utasítva, ha a vonalkód nem egyezik meg a követelményekkel, amelyek a vonalkód-beállításokban vannak meghatározva. |
 | Külső kódok a kiadott termékekhez | Külső kód | Külső kód, külső kódosztályok, cikkszám | A külső kódok jogi személy szerint rendeződnek. Importáláshoz egy meghatározott kódosztályra kell hivatkoznia. Kódosztályok importálására használja a **Külső kódosztályok a kiadott termékekhez** entitást. |
 | A kiadott termékváltozatokhoz tartozó külső kódok | Külső kód | Külső kód, külső kódosztályok, cikkszám, termékdimenziók | A külső kódok jogi személy szerint rendeződnek. Importáláshoz egy meghatározott kódosztályra kell hivatkoznia. Kódosztályok importálására használja a **Külső kódosztályok a kiadott termékekhez** entitást. Ez az entitás a termékváltozatokra utal cikkszámát és termékdimenziók szerint. |
 | Kiadott termékváltozatok külső kódjai termékszám-azonosító alapján | Külső kód | Külső kód, külső kódosztályok, termékszám | A külső kódok jogi személy szerint rendeződnek. Importáláshoz egy meghatározott kódosztályra kell hivatkoznia. Kódosztályok importálására használja a **Külső kódosztályok a kiadott termékekhez** entitást. Ez az entitás a termékváltozatokra utal a változat termékszáma szerint. (A következő nagyobb kiadásból) |
@@ -158,13 +161,13 @@ Az alábbi táblázat az importálás és a kézi létrehozás eredményeinek á
 | Termékszám számsorozat | Cikkszám számsorozata | Cikkszám leképezése | Termékszám leképezése | Entitásimportálás eredménye | Manuális létrehozás eredménye | Összefoglalás |
 |--------------------------------|-----------------------------|----------------------------|-------------------------------|-------------------------|----------------------------|-----------|
 | Kézi = Nem | Kézi = Nem | Nincs megfeleltetés. | Nincs megfeleltetés. | A termékszámok a **Termékszám** számsorozatot használják. A cikkszámok a **Cikkszám** számsorozatot használják. | A termékszámok a **Termékszám** számsorozatot használják. A cikkszámok a **Cikkszám** számsorozatot használják. | Ezzel a konfigurációval a termékszámok követik a termékszám sorozatát, a cikkszámok pedig a cikkszám sorozatát. Ez a konfiguráció azonban nem fog működni, ha egynél több elem (sor) lesz importálva. |
-| Kézi = Nem | Kézi = Igen | Automatikus létrehozás | Nincs megfeleltetés. | Mind a termékszámok, mind a cikkszámok a **Cikkszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a termékszám számsorozatot követik. Ez az ajánlott módszer az ömlesztett termékek importálására a Kiadott termékek V2 adatentitással.<br><br>Csak akkor használhatja ezt a megközelítést elemek (többsoros) tömeges importálásakor, és amikor nem a felhasználói interfészen keresztül hoz létre cikkeket. Ha a tömeges importálásra és a termékeknek a felhasználói interfészen történő létrehozására is szüksége van, a táblázat következő sorában kell az eljárást használnia. Ha át szeretne térni a tömeges importálásról a felhasználói interfész használatára a termékek manuális importálásához és létrehozásához, manuálisan kell beállítania a **Következő szám** értékét a cikkszám számsorrendben, hogy megfeleljen a termékszám számsorrendjének **Következő szám** értékének. Ezután átválthat a táblázat következő sorában található megközelítésre. |
-| Kézi = Nem | Kézi = Igen | Nincs megfeleltetés. | Nincs megfeleltetés. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a termékszám számsorozatot használják. Ez a konfiguráció azonban nem fog működni, ha egynél több elem (sor) lesz importálva.<br><br>Ezt a megközelítést kell alkalmaznia, ha a termékeket az entitások használatával kell importálni (egyszerre csak egy sor importálható) és egyúttal termékeket kell létrehozni a felhasználói interfészen keresztül. |
+| Kézi = Nem | Kézi = Igen | Automatikus létrehozás | Nincs megfeleltetés. | Mind a termékszámok, mind a cikkszámok a **Cikkszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a termékszám számsorozatot követik. Ez az ajánlott módszer az ömlesztett termékek importálására a Kiadott termékek V2 adatentitással. |
+| Kézi = Nem | Kézi = Igen | Nincs megfeleltetés. | Nincs megfeleltetés. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a **Termékszám** számsorozatot használják. | Mind a termékszámok, mind a cikkszámok a termékszám számsorozatot használják. Ez a konfiguráció azonban nem fog működni, ha egynél több elem (sor) lesz importálva. |
 | Kézi = Igen | Nem alkalmazható | Nem alkalmazható | Automatikus létrehozás | A következő hibaüzenetet kapja: „Number sequence can't be detected.” (Számsorozatot nem lehet észlelni.) | A **Cikkszám** számsorozat alapján | Ez a beállítás nem támogatott az importáláshoz. |
 
 ## <a name="product-entity-identifier-export-all-product-identifiers"></a>Termékentitás-azonosító (az összes termék azonosítójának exportálása)
 
-A termékentitás-azonosítómodellt azért hozták létre, hogy a Dataverse 1.0 kiadását az összes azonosítóval létesíthessék, amelyeket egy termékre való hivatkozásként használnak. A feladat egyszerűsítése érdekében minden azonosító össze van gyűjtve egy globális azonosítótáblába, hogy egy modell szerint legyenek exportálhatók. Ne feledje, hogy a Dataverse ezen verziója nem használja a termékazonosítók modelljét. Emiatt a **Termékentitás Common Data Service azonosító entitás** entitás és ez a folyamat korlátozott gyakorlati haszonnal rendelkezik, és valószínűleg megváltozik a jövőben.
+A termékentitás-azonosítómodellt azért hozták létre, hogy a CDS 1.0 kiadását az összes azonosítóval létesíthessék, amelyeket egy termékre való hivatkozásként használnak. A feladat egyszerűsítése érdekében minden azonosító össze van gyűjtve egy globális azonosítótáblába, hogy egy modell szerint legyenek exportálhatók. Ne feledje, hogy a CDS ezen verziója nem használja a termékazonosítók modelljét. Emiatt a **Termékentitás Common Data Service azonosító entitás** entitás és ez a folyamat korlátozott gyakorlati haszonnal rendelkezik, és valószínűleg megváltozik a jövőben.
 
 A termékazonosító tábla globális tábla, amelyet a rendszer a fő jogi személy összes hivatkozási táblájából tölt fel adatokkal, egy ismétlődő kötegelt feladat futtatásával. Választania kell egy jogi személy és egy termékkategória-hierarchiát a globális alaptermék-hatókör meghatározásához. A globális termékazonosító tábla létrehozása olyan termékekre korlátozódik, amelyek kibocsátása a kiválasztott jogi személy számára történik, és a termékhierarchiába tartozó olyan termékekre, amelyek a **Common Data Service** szerepkörben ki vannak választva a termékkategóriák hierarchiájában.
 
@@ -172,11 +175,11 @@ Ez a folyamat azt feltételezi, hogy a termék alapadatainak karbantartása els�
 
 Tegye a következőket a környezet konfigurálásához.
 
-1. Válassza ki a kategóriahierarchiát a Dataverse-hez. A **Kategóriahierarchiához tartozó szerepkör társításai** oldalon, ha a hierarchia nincs társítva a **Common Data Service** szerepkörrel, létre kell hoznia egy új társítást. Válassza ki a **Common Data Service** szerepet, és ezután társítása azt a kategóriahierarchiát, amelyik azt a termékportfóliót képviseli, amelyet szinkronizálni kell a Dataverse-zel.
+1. Válassza ki a kategóriahierarchiát a CDS-hez. A **Kategóriahierarchiához tartozó szerepkör társításai** oldalon, ha a hierarchia nincs társítva a **Common Data Service** szerepkörrel, létre kell hoznia egy új társítást. Válassza ki a **Common Data Service** szerepet, és ezután társítása azt a kategóriahierarchiát, amelyik azt a termékportfóliót képviseli, amelyet szinkronizálni kell a CDS-sel.
 2. Válassza ki a jogi személyt a termék globális alapadataihoz. A **Termékinformáció-kezelési paraméterek** oldalon, a **Termékattribútumok** fülön válassza ki a fő vállalatot, ahol a termék- és cikkazonosítók karbantartása elsősorban történik.
 3. Adja meg az exportálandó azonosító kódtípusokat és kódokat. Lépjen a **Termékinformációk kezelése** &gt; **Beállítás** &gt; **Termékazonosító kódok** elemre. Az azonosítókód-típusok létrehozásához jelölje be a **Kódok generálása**. A kiválasztott jogi személyben található azonosítók mindegyik típusához kódtípus-bejegyzés jön létre.
 
-    A vonalkódoknál minden vonalkód-beállításhoz kódtípus jön létre. Külső kódok esetén minden külső kódosztályhoz kódtípus generálódik.
+    Vegye figyelembe, hogy a vonalkódoknál, minden vonalkód-beállításhoz kódtípus jön létre. Külső kódok esetén minden külső kódosztályhoz kódtípus generálódik.
 
     Most már karbantarthatja a kódtípusok listáját. A kódot, a nevet és a leírást bármikor módosíthatja. A kódtípusok is törölhetők. A törölt kódtípusok nem használhatók fel a globális termékentitás-azonosító táblázatok kitöltésére.
 
@@ -187,6 +190,3 @@ Most már használhatók a **Termékentitás Common Data Service azonosító ent
 ## <a name="related-topic"></a>Kapcsolódó témakör
 
 [Termékek és termékváltozatok keresése a rendelésbevitel során](search-products-product-variants.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

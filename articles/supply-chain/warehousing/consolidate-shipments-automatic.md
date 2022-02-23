@@ -1,26 +1,28 @@
 ---
-title: A raktárba az értékesítési rendelések automatikus kiadásával kiadott szállítmányok összesítése
+title: Szállítmányok konszolidálása a raktárba történő kiadáskor Értékesítési rendelések automatikus kiadása funkció használatával
 description: Ez a témakör olyan esetet mutat be, amikor több rendelést adnak ki a raktárba ugyanabban az automatizált raktárba történő kiadás időszakos eljárásában.
 author: GarmMSFT
+manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSFilterGroupTable, WHSShipmentConsolidation, WHSFilterGenerallyAvail
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 10c0b8b9478c8b31957cc08a1a827461c4621b8a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 376c7418b61c0192f9071a879b50b9ece7699894
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574281"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970356"
 ---
-# <a name="consolidate-shipments-released-to-the-warehouse-using-automatic-release-of-sales-orders"></a>A raktárba az értékesítési rendelések automatikus kiadásával kiadott szállítmányok összesítése
+# <a name="consolidate-shipments-when-they-are-released-to-the-warehouse-by-using-automatic-release-of-sales-orders"></a>Szállítmányok konszolidálása a raktárba történő kiadáskor Értékesítési rendelések automatikus kiadása funkció használatával
 
 [!include [banner](../includes/banner.md)]
 
@@ -315,6 +317,3 @@ Ha befejezte a munkát, akkor azt kell látnia, hogy négy szállítmány jött 
 
 - [Szállítmánykonszolidációs irányelvek](about-shipment-consolidation-policies.md)
 - [Szállítmánykonszolidációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,79 +1,78 @@
 ---
 title: Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával
-description: Ez a témakör egy olyan forgatókönyvet mutat be, hogy hogyan regisztrálhat cikkeket a cikkérkeztetési napló segítségével, ha a készletkezelési folyamatban speciális raktárkezelést használ.
-author: Mirzaab
-ms.date: 03/24/2021
+description: Ez az eljárás megmutatja, hogyan regisztrálhat cikkeket a cikkérkeztetési napló segítségével, ha a készletkezelési folyamatban speciális raktárkezelést használ.
+author: ShylaThompson
+manager: tfehr
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSJournalTable, WMSJournalCreate, WHSLicensePlate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e753897d1e21ffebbcbfac48abab4b0549c3553f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: ea8b5e03282aa21aa9dfa486b1deaced6af4601c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565255"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429666"
 ---
 # <a name="register-items-for-an-advanced-warehousing-enabled-item-using-an-item-arrival-journal"></a>Cikkek regisztrálása speciális raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör egy olyan forgatókönyvet mutat be, hogy hogyan regisztrálhat cikkeket a cikkérkeztetési napló segítségével, ha a készletkezelési folyamatban speciális raktárkezelést használ. Ezt általában egy bevételezési adminisztrátor végzi.
+Ez az eljárás megmutatja, hogyan regisztrálhat cikkeket a cikkérkeztetési napló segítségével, ha a készletkezelési folyamatban speciális raktárkezelést használ. Ezt általában egy bevételezési adminisztrátor végzi. 
 
-## <a name="enable-sample-data"></a>Mintaadatok engedélyezése
+Ezt a folyamatot az USMF bemutatócéggel vagy saját adataival is futtathatja. Az útmutató elkezdése előtt jóváhagyott beszerzési rendelésre van szüksége nyitott beszerzésirendelés-sorral. A sorban szereplő cikknek raktározottnak kell lennie, és nem használhat termékváltozatokat, és nem lehet nyomon követési dimenziója. A cikket egy raktárkezelési folyamatra képes tárolásidimenzió-csoporthoz kell hozzárendelni. A használt raktár számára engedélyezni kell a raktárkezelési folyamatot és a használt helynek azonosítótáblás szabályozásúnak kell lennie. Ha USMF-et használ, a beszerzési megrendeléshez használhatja a 1001-es vállalati számlát, az 51-es raktárat, és az M9200 számú cikket. 
 
-Ha a témakörben megadott mintarekordokat és értékeket használva szeretne végigmenni ezen a forgatókönyvön, olyan rendszert kell használnia, amelyben telepítve vannak a szabványos bemutatóadatok, és mielőtt hozzákezd, ki kell választania az *USMF* jogi személyt.
-
-Ehelyett a saját adatokból származó értékeket behelyettesítésével is dolgozhat, feltéve, hogy rendelkezésre állnak a következő adatok:
-
-- Rendelkeznie kell egy visszaigazolt beszerzési rendeléssel, amelyhez nyitott beszerzésirendelés-sor tartozik.
-- A sorban szereplő cikket raktárazni kell. Nem használhat termékváltozatokat, és nem használhat nyomon követési dimenziókat.
-- A cikket olyan tárolásidimenzió-csoporthoz kell társítani, amelynél engedélyezve van a raktárkezelési folyamat.
-- A használt raktár számára engedélyezni kell a raktárkezelési folyamatot és a használt helynek azonosítótáblás szabályozásúnak kell lennie.
-
-## <a name="create-an-item-arrival-journal-header-that-uses-warehouse-management"></a>Raktárkezelést használó cikkérkezési naplófejléc létrehozása
-
-A következő helyzet bemutatja, hogyan lehet létrehozni a raktárkezelést használó cikkérkezési naplófejléceket:
-
-1. Győződjön meg róla, hogy a rendszer olyan visszaigazolt beszerzési rendelést tartalmaz, amely megfelel az előző szakaszban meghatározott követelményeknek. Ez az eset az *USMF* vállalatra, az *1001*-es szállítói számlára és az *51*-es raktárra vonatkozó beszerzési rendelést használ, amelyben szerepel egy rendelési sor a *M9200* cikkszámhoz *10 PL* (10 raklap) mennyiség.
-1. Jegyezze fel a beszerzési rendelés számát, amit használni fog.
-1. Lépjen a **Készletgazdálkodás \> Naplóbejegyzések \> Cikkérkeztetés \> Cikkérkeztetés** menüpontra.
-1. A Művelet panelen válassza az **Új** lehetőséget.
-1. Megjelenik a **Raktárkezelési napló létrehozása** párbeszédpanel. A **Név** mezőben válassza ki a napló nevét.
-    - Az *USMF* mintaadatok használata esetén válassza az *WHS* lehetőséget.
-    - Ha saját adatait használja, akkor a választott naplóban a **Kitárolási hely ellenőrzése** beállítás értéke legyen *Nem*, a **Karanténkezelés** beállítása pedig *Nem* lehet.
-1. A **Hivatkozás** beállítása legyen *Beszerzési rendelés*.
-1. A **Számlaszám** értéke legyen *1001*.
-1. Állítsa be a **Szám** értékét azon beszerzési rendelés számára, amelyet meghatározott ehhez a gyakorlathoz.
-
-    ![Cikkbeérkezési napló.](../media/item-arrival-journal-header.png "Cikkbeérkezési napló")
-
-1. A naplófejléc létrehozásához kattintson az **OK** gombra.
-1. A **Naplósorok** szakaszban válassza a **Sor hozzáadása** lehetőséget, és írja be a következő adatokat:
-    - **Cikkszám** – értéke legyen *M9200*. A **Telephely**, a **Raktár** és a **Mennyiség** beállítása a 10 raklap (1000 ea.) készlettranzakció-adatai alapján történik.
-    - **Hely** – értéke *001*. Ez a hely nem követi az azonosítótáblákat.
-
-    ![Cikkérkeztetési naplósor.](../media/item-arrival-journal-line.png "Cikkérkeztetési naplósor")
-
-    > [!NOTE]
-    > A **Dátum** mező határozza meg, hogy mikor lesz a cikk elérhető mennyisége regisztrálva a készletbe.  
-    >
-    > Az **Adagazonosítót** kitölti a rendszer, ha egyedileg azonosítható a megadott adatok alapján. Ellenkező esetben manuálisan kell megadni. Ez a mező kötelező, egy adott forrásbizonylatsorhoz kapcsolja a regisztrációt.  
-
-1. A Művelet panelen válassza ki az **Ellenőrzés** lehetőséget. Ez ellenőrzi, hogy a napló feladásra kész. Ha az ellenőrzés sikertelen, a hibákat helyre kell állítani a napló feladása előtt.  
-1. Megjelenik a **Napló ellenőrzése** párbeszédpanel. Válassza ki az **OK** lehetőséget.
-1. Tekintse meg az üzenetsávot. Egy üzenet látható, amely arról tájékoztat, hogy a művelet befejeződött.  
-1. A műveleti ablaktáblán válassza ki a **Feladás** elemet.
-1. Megjelenik a **Napló feladása** párbeszédpanel. Válassza ki az **OK** lehetőséget.
-1. Tekintse meg az üzenetsávot. Itt üzenetek láthatók, amely arról tájékoztat, hogy a művelet befejeződött.
-1. Válassza a **Funkciók > Termékbevételezés** lehetőséget a műveleti ablaktáblán a beszerzésirendelés-sor frissítéséhez és a termékbevételezés feladásához.
+Jegyezze fel a beszerzési rendelés létrehozásakor a számot, valamint a cikkszámot és a helyet, amelyet a beszerzési rendelési sorhoz használt.
 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+## <a name="create-an-item-arrival-journal-header"></a>Cikkérkeztetési napló fejlécének létrehozása
+1. Ugorjon a Cikkérkeztetés pontra.
+2. Kattintson az Új lehetőségre.
+3. Írjon be egy értéket a Név mezőbe.
+    * Az USMF használata esetén beírhatja a „WHS” lehetőséget. Ha más adatokat használ, a kiválasztott naplót az alábbiak szerint kell beállítania: A Kitárolási hely ellenőrzése legyen a Nem beállításon, és a Karanténkezelés legyen a Nem beállításon.  
+4. Érték beírása a Szám mezőbe.
+5. Érték beírása a Telephely mezőbe.
+    * Válassza ki a helyet, amelyet a beszerzési rendelési sorhoz használt. Ez egy alapértelmezett értéket biztosít a napló minden sorához. Ha az 51-es raktárt használta USMF-hez, válassza az 5-ös helyet.  
+6. Érték beírása a Raktár mezőbe.
+    * Válasszon ki egy érvényes raktárat a kiválasztott helyhez. Ez egy alapértelmezett értéket biztosít a napló minden sorához. Ha az USMF-ben a példaértékeket használja, válassza az 51-et.  
+7. Írjon be egy értéket a Hely mezőbe.
+    * Válasszon ki egy érvényes helyet a kiválasztott raktárban. A helyhez hozzárendelt helyprofil kell, amelyet az azonosítótábla vezérel. Ez egy alapértelmezett értéket biztosít a napló minden sorához. Ha az USMF-ben a példaértékeket használja, válassza a Bulk-008-et.  
+8. Kattintson a jobb gombbal a legördülő lista nyilára az Azonosítótábla mezőben, és válassza a Részletek megtekintése lehetőséget.
+9. Kattintson az Új lehetőségre.
+10. Érték beírása az Azonosítótábla mezőbe.
+    * Jegyezze fel az értéket.  
+11. Kattintson a Mentés gombra.
+12. Zárja be a lapot.
+13. Érték beírása az Azonosítótábla mezőbe.
+    * Adja meg az újonnan létrehozott azonosítótábla értékét. Ez egy alapértelmezett értéket biztosít a napló minden sorához.  
+14. Kattintson az OK gombra.
+
+## <a name="add-a-line"></a>Sor hozzáadása
+1. Kattintson az Új sor hozzáadása lehetőségre.
+2. A cikkmezőbe írjon egy értéket.
+    * Adja meg a cikkszámot, amelyet a beszerzési rendelés sorban használt.  
+3. Adjon meg egy számot a Mennyiség mezőben.
+    * Adja meg a regisztrálandó mennyiséget.  
+    * A Dátum mező határozza meg, hogy mikor lesz a cikk elérhető mennyisége regisztrálva a készletbe.  
+    * Az Adagazonosítót kitölti a rendszer, ha egyedileg azonosítható a megadott adatok alapján. Ellenkező esetben manuálisan kell hozzáadni. Ez a mező kötelező, egy adott forrásbizonylatsorhoz kapcsolja a regisztrációt.  
+
+## <a name="complete-the-registration"></a>Véglegesítse a regisztrációt.
+1. Kattintson az Érvényesítés gombra.
+    * Ez ellenőrzi, hogy a napló feladásra kész. Ha az ellenőrzés sikertelen, a hibákat helyre kell állítani a napló feladása előtt.  
+2. Kattintson az OK gombra.
+    * Ha az OK gombra kattintott, ellenőrizze az üzenetet. Egy üzenet látható, amely arról tájékoztat, hogy a napló rendben van.  
+3. Kattintson a Feladás lehetőségre.
+4. Kattintson az OK gombra.
+    * Ha az OK gombra kattintott, ellenőrizze az üzenetsávot. Egy üzenet látható, amely arról tájékoztat, hogy a művelet befejeződött.  
+5. Zárja be a lapot.
+

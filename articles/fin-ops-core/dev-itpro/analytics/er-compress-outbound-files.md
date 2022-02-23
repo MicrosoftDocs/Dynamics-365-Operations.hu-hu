@@ -2,9 +2,11 @@
 title: Elektronikus jelentésekben létrehozott nagyméretű dokumentumok tömörítése
 description: Ez a témakör azt mutatja be, hogyan lehet tömöríteni olyan nagyméretű dokumentumokat, amelyeket Elektronikus jelentéskészítési (ER) formátumban hoztak létre.
 author: NickSelin
+manager: kfend
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: EROperationDesigner, ERFormatDestinationTable
 audience: Application User, IT Pro
@@ -15,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 7ef8f730f2e207a8fd28c2bf5167d14f57d6c607314bfc48d4358a59d3ef5c43
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 30de55f9e55911290750c148621fd3d4531686c2
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718599"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680854"
 ---
 # <a name="compress-large-documents-that-are-generated-in-electronic-reporting"></a>Elektronikus jelentésekben létrehozott nagyméretű dokumentumok tömörítése 
 
 [!include [banner](../includes/banner.md)]
 
-Az [Elektronikus jelentéskészítési (ER) keretrendszer](general-electronic-reporting.md) segítségével konfigurálhatja azt a megoldást, amely a tranzakciós adatokat a kimenő dokumentumok előállításához kérdezi le. Ez a létrehozott dokumentum elég nagy lehet. Ha ilyen típusú dokumentumot hoz létre, akkor azt az [Application Object Server (AOS)](../dev-tools/access-instances.md#location-of-packages-source-code-and-other-aos-configurations) kiszolgáló memóriájával tárolhatja. Valamikor le kell töltenie a dokumentumot a Microsoft Dynamics 365 Finance alkalmazásból. Jelenleg az ER-ben létrehozott dokumentum mérete legfeljebb 2 gigabájt (GB) lehet. Ezenkívül a Finance jelenleg 1 GB-ra [korlátozza](https://fix.lcs.dynamics.com/Issue/Details?kb=4569432&bugId=453907&dbType=3) a letöltött fájlok méretét. Éppen ezért konfigurálnia kell egy olyan ER-megoldást, amely csökkenti annak a valószínűségét, hogy túllépi ezeket a korlátozásokat, és hogy a **Adatfolyam túl hosszú volt** vagy **Az aritmetikai művelet kivétele során túlcsordulás vagy alulcsordulás következett be** kivételt kapjon.
+Az [Elektronikus jelentéskészítési (ER) keretrendszer](general-electronic-reporting.md) segítségével konfigurálhatja azt a megoldást, amely a tranzakciós adatokat a kimenő dokumentumok előállításához kérdezi le. Ez a létrehozott dokumentum elég nagy lehet. Ha ilyen típusú dokumentumot hoz létre, akkor azt az [Application Object Server (AOS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/dev-tools/access-instances#location-of-packages-source-code-and-other-aos-configurations) kiszolgáló memóriájával tárolhatja. Valamikor le kell töltenie a dokumentumot a Microsoft Dynamics 365 Finance alkalmazásból. Jelenleg az ER-ben létrehozott dokumentum mérete legfeljebb 2 gigabájt (GB) lehet. Ezenkívül a Finance jelenleg 1 GB-ra [korlátozza](https://fix.lcs.dynamics.com/Issue/Details?bugId=489291) a letöltött fájlok méretét. Éppen ezért konfigurálnia kell egy olyan ER-megoldást, amely csökkenti annak a valószínűségét, hogy túllépi ezeket a korlátozásokat, és hogy a **Adatfolyam túl hosszú volt** vagy **Az aritmetikai művelet kivétele során túlcsordulás vagy alulcsordulás következett be** kivételt kapjon.
 
 Ha konfigurál egy megoldást, akkor úgy állíthatja be a saját ER-formátumát a Műveletek tervezőben, hogy hozzáadja a **Mappa** egy gyökérelemét, és tömöríti a saját beágyazott elemei által előállított valamelyik tartalmat. A tömörítés „pont időben” működik, így a csúcs memóriahasználat, és a letöltendő fájl mérete csökkenthető.
 
@@ -55,7 +57,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, meg ke
 1. [Importált formátum futtatása](er-defer-xml-element.md#run-the-imported-format).
 2. Figyelje meg, hogy a létrejövő XML-formátumú dokumentum mérete 3 kilobájt (KB).
 
-    ![A tömörítetlen kimenő dokumentum előzetes verziója.](./media/er-compress-outbound-files1.png)
+    ![A tömörítetlen kimenő dokumentum előzetes verziója](./media/er-compress-outbound-files1.png)
 
 ### <a name="modify-the-format-to-compress-the-generated-output"></a>A létrehozott kimenet tömörítéséhez használandó formátum módosítása
 
@@ -80,7 +82,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, meg ke
     > [!NOTE] 
     > A zip-fájl által birtokolt XML-fájl tömörítési aránya 87 százalék. A tömörítési arány a tömörített adatoktól függ.
 
-    ![A tömörített kimenő dokumentum előzetes verziója.](./media/er-compress-outbound-files2.png)
+    ![A tömörített kimenő dokumentum előzetes verziója](./media/er-compress-outbound-files2.png)
 
 > [!NOTE]
 > Ha be van konfigurálva a kimeneti ER [cél](electronic-reporting-destinations.md) a kimenetet létrehozó formátumelemhez (ebben a példában a **Jelentés** elem), akkor kihagyják a kimenet tömörítését.
@@ -92,6 +94,3 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, meg ke
 [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 
 [Az XML-elemek végrehajtásának elhalasztása az ER-formátumokban](er-defer-xml-element.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

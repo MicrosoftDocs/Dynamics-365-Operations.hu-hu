@@ -1,10 +1,12 @@
 ---
 title: Munkarendelés életciklus-állapotai
 description: Ez a témakör a munkarendelés életciklus-állapotait mutatja be az Eszközkezelésben.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderLifecycleState, EntAssetWorkOrderLifecycleModel
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fa0980438ec629ef7ae6bf711d5ae87efca131e6ab86dfcaa1f17d953725147a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2a8052942ff97c9e8033d5915723e82c42f964c8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6768666"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021579"
 ---
 # <a name="work-order-lifecycle-states"></a>Munkarendelés életciklus-állapotai
 
@@ -35,7 +37,7 @@ A munkarendelésekhez szükséges munkarendelés életciklus-állapotait a megfe
 
 A következő táblázat leírja a lehetőségeket a **Munkarendelés életciklus-állapota** oldal **Általános** gyorslapjának **Munkarendelés** és **Ütemezés** szakaszaiban (**Eszközkezelés** \> **Beállítás** \> **Munkarendelések** \> **Életciklus-állapotok**).
 
-![Munkarendelés életciklus-állapota oldal.](media/09-setup-for-work-orders.png)
+![Munkarendelés életciklus-állapota oldal](media/09-setup-for-work-orders.png)
 
 | Beállítás neve                   | Leírás |
 |-------------------------------|-------------|
@@ -93,7 +95,7 @@ A következő táblázat leírja a lehetőségeket a **Munkarendelés életciklu
     - Ha a **karbantartás miatti üzemkimaradás** beállítása **igen** értékre van állítva annál az életciklus-állapotnál, amelyre a Munkarendelés frissítve van, akkor a karbantartás miatti üzemkimaradás ellenőrzése a munkarendeléshez kapcsolódó eszközön történik. Ha regisztrálták a karbantartás miatti üzemkimaradást, de nincs **Befejezve** regisztráció, akkor megjelenik egy üzenet, amikor a munkarendelést az adott életciklus-állapotra frissítik.
     - Ha a szokásos projektbeállításban nem szerepel az összes fázis, amelyre szükség van az Eszközkezelés beállításához, beállíthat felhasználó által meghatározott projektfázisokat a **Projektfázisok** lapon a **Projektvezetési és könyvelési paraméterek** oldalon. Az alábbi ábrán látható a **Projektvezetési és könyvelési paraméterek** oldal **Projektfázis** lapja.
 
-    ![Állítsa be a projektfokozatokat a különböző projekttípusokhoz oldal.](media/10-setup-for-work-orders.png)
+    ![Állítsa be a projektfokozatokat a különböző projekttípusokhoz oldal](media/10-setup-for-work-orders.png)
 
 > [!NOTE]
 > Ha az életciklus-állapot inaktív, amelyre frissíti a munkarendelést, a munkarendeléshez kapcsolódó, még közzé nem tett naplók automatikusan törlődnek. Ez a viselkedés segít a nem használt adatok automatikus tisztításának biztosításában. (Az életciklus-állapot inaktív, ha az **aktív** beállítás **nem** értékre van állítva a **Munkarendelés életciklus-állapota** lap **Általános** gyorslapján.)
@@ -111,7 +113,7 @@ A típusok használatának oka az, hogy ha egy típust például egy munkarendel
 
 A következő ábra a Munkarendelés-típusok, az életciklusmodellek és az életciklus-állapotok közötti kapcsolatot mutatja.
 
-![A Munkarendelés típusa lap és a Munkarendelés életciklusmodellek összehasonlítási oldal.](media/11-setup-for-work-orders.png)
+![A Munkarendelés típusa lap és a Munkarendelés életciklusmodellek összehasonlítási oldal](media/11-setup-for-work-orders.png)
 
 ## <a name="work-order-lifecycle-models"></a>Munkarendelés életciklusmodelljei
 
@@ -126,16 +128,13 @@ Miután létrehozta a munkarendelésekhez szükséges munkarendelési életciklu
 
 5. Az **Életciklus-állapotok** gyorslapon válassza ki azokat az életciklus-állapotokat, amelyeket fel kell venni az életciklus-modellbe:
 
-    - Ha életciklus-állapotot szeretne használni az életciklus-modellhez, válassza ki azt a **Hátralévő életciklus-állapotok** szakaszban, majd válassza a jobb nyílgombot ![Jobb nyíl.](media/12-setup-for-work-orders.png) elemet az áthelyezéshez az **Életciklus-állapotok kiválasztva** szakaszba.
+    - Az életciklus-modellben feltüntetendő életciklus-állapotot válassza ki a **Hátralevő életciklus-állapotok** szakaszban, majd a jobbra nyíl ![Jobbra nyíl](media/12-setup-for-work-orders.png) gombbal helyezze át a **Kijelölt életciklus-állapotok** szakaszba.
     - Ahhoz, hogy az összes elérhető életciklus-állapotot feltüntesse az életciklusmodellben, nyomja meg az **Összes elérhető fázis kiválasztása** ![Összes elérhető fázis kiválasztása](media/13-setup-for-work-orders.png) gombot. Az összes életciklus-állapot a **Kijelölt életciklus-állapotok** szakaszba kerül.
-    - Ha életciklus-állapotot szeretne eltávolítani az életciklus-modellből, válassza ki azt a **Kiválasztott életciklus-állapotok** szakaszban, majd válassza a bal nyílgombot ![Bal nyíl.](media/14-setup-for-work-orders.png) elemet az áthelyezéshez a **Fennmaradó életciklus-állapotok** szakaszba.
+    - Ha el kíván távolítani egy életciklus-állapotot az életciklus-modellből, válassza ki az adott állapotot a **Kijelölt életciklus-állapotok** szakaszban, majd a Balra nyíl ![Balra nyíl](media/14-setup-for-work-orders.png) gombbal helyezze át a **Hátralévő életciklus-állapotok** szakaszba.
 
 6. Válassza az **Életciklus-állapot frissítései** elemet, amellyel meghatározhatja a kijelölt életciklus-állapotot követő életciklus-állapotokat.
 7. A **Frissítések** gyorslap **Ütemezett állapot** mezőjében válassza ki azt az életciklus-állapotot, amelyet mindig ki kell választani olyan munkarendeléshez, amelyhez megtörtént a munkarendelés ütemezése, függetlenül a munkarendelés korábbi életciklus-állapotától.
 8. A **Nem ütemezett életciklus-állapot** mezőben válassza ki azt az életciklus-állapotot, amelyet mindig ki kell jelölni egy munkarendeléshez, ha a Munkarendelés ütemezése törlődik.
 9. Mentse el a munkarendelés életciklusmodelljét.
 
-![Munkarendelés életciklusmodelljei oldal.](media/15-setup-for-work-orders.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Munkarendelés életciklusmodelljei oldal](media/15-setup-for-work-orders.png)

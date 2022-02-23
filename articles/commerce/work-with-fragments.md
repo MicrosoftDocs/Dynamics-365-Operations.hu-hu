@@ -2,30 +2,35 @@
 title: Töredékek használata
 description: Ez a témakör azt mutatja be, miért, hogyan és mikor lehet a töredékeket a Microsoft Dynamics 365 Commerce rendszerben használni.
 author: phinneyridge
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 98cb1fba158ea99427d2068ca49b257cb5290de3
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
-ms.translationtype: MT
+ms.openlocfilehash: f1525610fb16edd5ff9ccefe0194f6f27b797b62
+ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090744"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4412990"
 ---
 # <a name="work-with-fragments"></a>Töredékek használata 
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, miért, hogyan és mikor lehet a töredékeket a Microsoft Dynamics 365 Commerce rendszerben használni.
+
+## <a name="overview"></a>Áttekintés
 
 A töredékek lehetővé teszik a modul-konfigurációk központosított szerkesztési élményének létrehozásár, amelyet a webhely minden területén újra fel lehet használni. Például a fejléceket, élőlábakat és szalagcímeket gyakran töredékként konfigurálják, mivel több oldal megosztva használja azokat. A töredékeket úgy képzelje el, mint kicsiny weboldalakat, amelyek a webhely egyéb oldalaiba illeszthetők be. A töredékek saját életciklussal rendelkeznek. Más szóval a létrehozásuk, hivatkozásuk, frissítése és törlése független entitásként történik a szerkesztőeszközökben.
 
@@ -62,7 +67,7 @@ Ha egy korábban konfigurált modult újra felhasználható töredékké szeretn
 1. A **Mentés töredékként** párbeszédpanelen adjon nevet a töredéknek.
 1. Az **OK** gombra kattintva mentheti a modulkonfigurációt olyan töredékként, amely más lapokhoz is hozzáadható.
 <!-- The following image shows how to save a module configuration as a fragment.-->
-<!--![A screen capture of how to save a module configuration as a fragment.](./media/save-as-fragment.png)-->
+<!--![A screen capture of how to save a module configuration as a fragment](./media/save-as-fragment.png)-->
 
 ### <a name="create-a-new-fragment"></a>Új töredék létrehozása
 
@@ -73,7 +78,7 @@ A következő lépésekkel hozhat létre új töredéket a Commerce webhelykész
 1. A modul típusának kiválasztása a töredékhez.
 
 <!-- The following image shows where to create a new fragment.-->
-<!-- ![A screen capture of where to create a new fragment.](./media/fragment-nav-menu.png)-->
+<!-- ![A screen capture of where to create a new fragment](./media/fragment-nav-menu.png)-->
 > [!TIP]
 > Egy általános tárolómodul-típus kiválasztásával a legrugalmasabban frissítheti és konfigurálhatja a töredéket később.
 
@@ -88,14 +93,14 @@ A következő lépésekkel adhat hozzá új töredéket egy oldalhoz a Commerce 
 1. A bal oldali vázlat ablaktáblán vagy közvetlenül a vizuális oldalkészítőben, válassza ki azt a tárolót vagy helyet, amelyhez hozzá szeretné adni a származtatott modulokat.
 1. Válassza ki a tároló vagy a hely neve melletti három pontot (**...**).  Másik lehetőségként, ha a vizuális oldalkészítőt használja, válassza ki a pluszjelet (**+**).  
 1. Válassza a **Töredék hozzáadása** lehetőséget.
-    <!-- ![A screen capture of how to add an existing fragment to a slot or container.](./media/add-fragment.png)-->
+    <!-- ![A screen capture of how to add an existing fragment to a slot or container](./media/add-fragment.png)-->
  
     > [!NOTE]
     > Ha a tároló vagy a bővítőhely nem támogatja az új származtatott modulokat, akkor a **Töredék hozzáadása** lehetőség nem érhető el.
     
 1. A **Töredék kiválasztása** párbeszédpanelen keressen meg és válasszon ki egy töredéket a hozzáadáshoz. Ha nincs elérhető töredék a listán, először létre kell hozni egy töredéket egy olyan modultípusból, amelyet a kiválasztott tároló vagy bővítőhely támogat.
 1. Válassza ki és adja hozzá a kívánt töredéket a tárolóhoz vagy helyhez a lapon.
-<!--    ![A screen capture of the fragment picker modal window.](./media/fragment-picker.png)-->
+<!--    ![A screen capture of the fragment picker modal window](./media/fragment-picker.png)-->
 
 > [!NOTE]
 > A tárolókban vagy bővítőhelyekben engedélyezett modulokat a lapsablonja vagy a modulok saját definíciói határozzák meg.
@@ -122,20 +127,6 @@ A következő lépésekkel szerkeszthet új töredéket a Commerce webhelykész�
 
 A töredékeket úgy is szerkesztheti, hogy kijelöli azt egy lapon, egy sablonban vagy egy szülő töredékben, majd a jobb oldali Tulajdonságok ablaktáblában kiválasztja a **Töredék szerkesztése** elemet.
 
-### <a name="rename-a-fragment"></a>Nevezze át a töredéket
-
-Ha át szeretne nevezni egy meglévő töredéket a webhelykészítőben, kövesse az alábbi lépéseket.
-
-1. A bal oldali navigációs panelen válassza a lehetőséget **Töredékek**.
-1. Válassza ki az átnevezni kívánt töredék nevét.
-1. Válassza ki **Szerkesztés** a töredék szerkesztésének megkezdéséhez. Vegye figyelembe, hogy nem szerkesztheti a töredéket, ha valaki más már szerkeszti a töredéket.
-1. A töredék tulajdonságai ablaktáblában válassza ki a töredék neve melletti toll szimbólumot.
-1. Szükség szerint szerkessze a töredék nevét.
-1. Jelölje be a pipát a névváltoztatás megerősítéséhez.
-1. Válassza a **Szerkesztés befejezése** lehetőséget.
-
-A töredéket a létrehozás után átnevezheti úgy, hogy szerkeszti, majd kiválasztja a toll szimbólumot a töredék neve mellett a tulajdonságpanelen.
-
 ## <a name="additional-resources"></a>További erőforrások
 
 [Sablonok és elrendezések áttekintése](templates-layouts-overview.md)
@@ -145,6 +136,3 @@ A töredéket a létrehozás után átnevezheti úgy, hogy szerkeszti, majd kiv�
 [Előre beállított elrendezések használata](work-with-layouts.md)
 
 [A közzétételi csoportokkal végzett munka](publish-groups.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

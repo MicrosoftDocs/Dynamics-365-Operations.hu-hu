@@ -1,35 +1,33 @@
 ---
 title: Feladat összetevőinek beállítása
-description: Ez a témakör azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben.
-author: twheeloc
-ms.date: 10/28/2021
+description: Ez a cikk azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
-ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
+ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.author: twheeloc
-ms.search.scope: Human Resources
+ms.author: anbichse
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources, Retail
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e2c9421646dacc5523f40b28b550881dc4b25dd
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 69759c0488563a904f6e80afacb1802611ab1930
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068159"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418839"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Feladat összetevőinek beállítása
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Ez a témakör azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben. 
+Ez a cikk azt ismerteti, milyen fogalmi elemek alkothatnak egy feladatot, és példákat ad arra, hogyan használhatja ezen elemeket a szervezetben. 
 
 Feladatok létrehozása előtt be kell állítania bizonyos referenciaadatokat. Létrehozhat olyan feladatot is, amelynek csak neve van. További információk - például beosztás - megadásával viszont alapértelmezett értékek biztosíthatók a feladathoz rendelt beosztások számára. Emellett a beírt adatok egy része használható kompenzációs konstrukciók szűréséhez konkrét feladatokhoz. Ha szeretne jogosultságot beállítani, amelyet felhasználhat bizonyos feladathoz tartozó kompenzációs konstrukciók szűrésére, úgy állítson be feladatbeosztásokat és feladattípusokat a feladatok beállítása előtt. Ha ezen alapértelmezett értékek elérhetők, időt takaríthat meg, amikor beosztások hozzáadását végzi a feladathoz. 
 
@@ -40,19 +38,14 @@ A létrehozni kívánt beosztásokhoz titulusokat is be kell állítania. A poz�
 
 Beosztások karbantartásához használja a **Beosztások** oldalt, amely a keresés funkció segítségével nyitható meg. A **Beosztások** oldalon írja be a beosztásokat, amelyeket használni tervez a feladatokhoz.
 
-## <a name="job-types"></a>Feladattípusok
+## <a name="job-types"></a>Beosztástípusok
 Beosztástípusok segítségével a hasonló feladatok kategóriákba sorolhatók. A beosztástípusok használata nem kötelező, azonban ha a későbbiekben a kompenzációkezelés jogosultsági szabályainak beállításakor szeretne beosztástípusokat használni, ezeket még a beosztások előtt kell beállítania. Beosztástípusok például teljes és részmunkaidős, illetve a munkabéres és az órabéres. A beosztástípusok karbantartásához használja a **Beosztástípusok** oldalt. A **Beosztástípusok** oldalon adja meg a beosztástípus nevét és rövid leírását. A **Mentességi állapot** mezőben a következő lehetőségek közül választhat annak jelzésére az ilyen beosztástípusú feladatoknál, hogy az Egyesült Államok munkajogi törvénye (FLSA, Fair Labor Standards Act) ezekre a feladatokra nem vonatkozik:
 
 -   **Mentes** – A beosztásokhoz az FLSA szerint túlórapénz nem jár.
 -   **Nem mentes** – A beosztásokhoz az FLSA szerint túlórapénz jár.
 -   **Nem alkalmazható** – Az FLSA hatálya erre nem terjed ki.
 
-## <a name="job-family"></a>Feladatcsalád
-A feladatcsalád a hasonló munkát igénylő feladatok olyan csoportja, amely hasonló képzettséget, szakértelmet, tudást és tapasztalatot igényel. A feladatcsaládok összekapcsolhatók a **Feladatok** oldal **Feladatosztályozás** gyorslapján és a **Minden pozíció** oldal **Általános** gyorslapján lévő feladatokkal. A feladatcsaládok lehetnek általánosak vagy specifikusak az üzleti és a jelentési követelményektől függően. Az általános feladatcsaládokra jó példa a **Szakképzett munka** és a **Szakképzettséget nem igénylő munka**. Néhány példa a konkrét feladatcsaládokra a **Könyvelés**, a **Gyártás** és az **Értékesítés**.
-
-A feladatcsaládok karbantartásához használja a **Feladatcsaládok** oldalt, amelyet a keresési funkció segítségével nyithat meg. A **Feladatcsalád** oldalon adjon meg egy egyedi nevet a családnak, és adja meg a feladatokhoz használni tervezett részletes leírást.
-
-## <a name="job-functions"></a>Feladatfunkciók
+## <a name="job-functions"></a>Beosztások
 A beosztási funkciók magas szintű funkcionális kategóriákat írnak le magas szintű feladatokat írnak elő. A beosztási funkciók használata nem kötelező, A beosztási funkciókat és beosztási típusokat együttesen felhasználva az egyes feladatokhoz hozzá lehet szűrni a kompenzációs konstrukciókat. A feladatfunkciók és feladattípusok kompenzációs konstrukciókhoz társítása az **Alkalmazhatósági szabályok** oldalon, alkalmazhatósági szabályok felállításával történik. Ezen túlmenően a kompenzációs konstrukcióhoz hozzá lehet csatolni a szintek azon csoportját, amelyek az alkalmazhatósági szabály által behatárolt, adott feladattípus/feladatfunkció kombinációra vonatkoznak. (Ezek a funkciók mind a fix, mind a változó kompenzációs konstrukcióra vonatkoznak.) A beosztásfunkciók használata nem kötelező, azonban ha a későbbiekben a kompenzációkezelés jogosultsági szabályainak beállításakor szeretne beosztásfunkciókat használni, ezeket még a beosztások előtt kell beállítania. Az alábbi táblázatban látható néhány példa munkaköri beosztásokra.
 
 | Munka           | Beosztás         |
@@ -61,14 +54,6 @@ A beosztási funkciók magas szintű funkcionális kategóriákat írnak le maga
 | Könyvelő    | Szakemberek        |
 
 A beosztási funkciók karbantartásához használja a **Beosztási funkciók** oldalt. A **Beosztási funkciók** oldalon adja meg a beosztási funkció azonosító kódját és rövid leírását.
-
-## <a name="compensation"></a>Kompenzáció
-Ha fix kompenzációs konstrukciót szeretne hozzárendelni egy olyan alkalmazotthoz, aki egy adott beosztásban van egy adott feladaton belül, kompenzációs szinteket kell beállítania a feladathoz. A **Kompenzációs szint** akkor használatos, ha a minimális, középponti és maximális összegeket egy kompenzációs struktúrában (kompenzációs rács) állítják be. Fix kompenzációs konstrukció létrehozása esetén a kompenzációs szerkezetet kell kiválasztani. A kompenzációs struktúra tartalmazza a kompenzációs szintet is. Amikor egy alkalmazotthoz fix kompenzációs konstrukciót választ, a kiválasztható kompenzációs szintek az alkalmazott beosztásához hozzárendelt feladattól függenek. A kompenzáció beállításával kapcsolatos további információkért lásd: [Kompenzációs konstrukciók](hr-compensation-overview.md).
-
-## <a name="job-skills"></a>Feladat – szakértelem
-A feladathoz tartozó szakértelem írja le a feladat végrehajtásához szükséges készségeket. A feladat minden szakértelmi eleméhez társítani kell a szakértelem szintjét. A szakértelem szintjeit a felhasználó határozza meg. Jelzik, hogy milyen szintű tudás vagy jártasság szükséges az szakterületen. A vállalatok beállíthatnak például numerikus, 1-től 5-ig terjedő szintrendszert, amelyben az **1** a kezdő, az **5** pedig a szakértő szintet jelzi. Másik lehetőségként a vállalatok beállíthatnak **Kezdő**, **Haladó** és **Szakértő** jelölésű szinteket is. A szakértelem szintjének beállítása után a szakértelem fontossága is beállítható. Ha például egy könyvelőnek alapos Microsoft Excel-ismeretekkel kell rendelkezni, létrehozható egy **Excel-ismeretek** szakértelem. A szakértelemszinthez ezután beállítható a **Haladó** érték, míg a fontossághoz a **Legfontosabb** szint.
-
-A feladathoz tartozó szakértelmek felhasználható a szakértelem hozzárendeléséhez. A szakértelem hozzárendelése összehasonlíthatja a feladathoz szükséges szakértelemkészletet a dolgozóhoz társított szakértelmi elemekkel. Ezután az egyező elemek alapján kiszámít egy százalékos értéket. A szakértelem-hozzárendelésről a [Szakértelem konfigurálása](hr-develop-skills.md) című témakörben olvashat bővebben. 
 
 ## <a name="job-tasks"></a>Munkaköri feladatok
 A munkaköri feladatok bemutatják az adott pozíciójú dolgozótól elvárt alapvető feladatokat. Ugyanazon munkaköri feladatok több munkához, valamint a munkaköri feladatokat használó munkákkal kapcsolatos beosztásokhoz is hozzáadhatók. Az alábbi táblázatban látható néhány példa munkaköri feladatokra.
@@ -101,7 +86,4 @@ A munkaköri feladatok karbantartásához használja a **Munkaköri feladatok** 
 Alkalmazzon hatásköröket azon a szerepkörök, folyamatok, termékek és műveletek megjelöléséhez, amelyekért a dolgozó egy adott beosztásban felelős. Például a „Könyvelő” nevű beosztáshoz tartozó hatáskörre példa lehet a „Pénzügyi jelentés az A termékkel kapcsolatban”. A hatáskörök karbantartására használja a **Hatáskörök** oldalt, amelyet a keresés funkció használatával találhat meg. A **Hatáskörök** oldalon adja meg a hatáskör nevét és leírását. A **Megjegyzés** mezőben igény szerint további információkat is megadhat. A megjegyzések anélkül frissülnek az adott feladathoz, hogy az itt Ön által megadott megjegyzések módosulnának.
 
 ## <a name="steps-for-creating-a-job"></a>A feladat létrehozásának lépései
-Lásd az [Új feladatok meghatározása](./hr-personnel-define-jobs.md) cikket az új feladat létrehozásának lépésről lépésre útmutatójához. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Lásd az [Új feladatok meghatározása](../fin-and-ops/hr/tasks/define-new-jobs.md) cikket az új feladat létrehozásának lépésről lépésre útmutatójához. 

@@ -2,23 +2,26 @@
 title: Mérnöki változatok és mérnöki termékkategóriák
 description: Ez a témakör a mérnöki verziók fogalmával kapcsolatban tartalmaz tájékoztatást. A mérnöki verziók gondoskodnak arról, hogy a termék különböző állapotai, valamint az adatok folyamatos és egyértelműek legyenek, és hogy megjeleníthetők legyenek a rendszerben.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgLookupDynastring, EngChgProductVersionNumberRule, EngChgEcmProductRoute, EngChgEcmRequestProducts, EngChgEcmProductRoute, EngChgEcmProductPreview,EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmProductCreate, EngChgEcmProductLookup, EngChgProductVersionPrCompany, ngChgProductTypeLookup, EngChgProductType, EngChgProductItemPart, EngChgProductItem, EngChgEcmCategory, EngChgEcmBomDesignerEditBom, EngChgEcmBomDesigner, EngChgEcmBOMCopyDialog
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 3eb5b5c4304b393008ecc5f5ff5a663295ed0d22
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572889"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4429965"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Mérnöki változatok és mérnöki termékkategóriák
 
@@ -48,8 +51,7 @@ A mérnöki termékek használatakor minden termék rendelkezik legalább egy m�
 - A terméket létrehozó és birtokló mérnöki vállalat (A mérnöki vállalatokkal és az operatív vállalatokkal kapcsolatos további tudnivalókat lásd a [Mérnöki vállalatok és az adatok tulajdonlásának szabályai](engineering-org-data-ownership-rules.md) részben.)
 - Kapcsolódó mérnöki dokumentumok, például összeállítási kézikönyv, felhasználói utasítások, képek és hivatkozások
 - A mérnöki attribútumok (További információ: [Mérnöki attribútumok és mérnöki attribútumok keresése](engineering-attributes-and-search.md).)
-- Anyagjegyzék tervezési termékekhez
-- Folyamatszerű gyártással előállított termékekhez használatos képletek
+- A mérnöki anyagjegyzékek
 - A mérnöki útvonalak
 
 Ezeket az adatokat egy meglévő verzión frissítheti, vagy létrehozhat egy új verziót egy *mérnöki módosítási rendelés* használatával. (További információ: [A mérnöki termékek módosításának kezelése](engineering-change-management.md).) Ha egy termék új verzióját hozza létre, a rendszer az összes műszaki szempontból releváns adatot átmásolja az adott új verzióra. Ezután módosíthatja az új verzió adatait. Ily módon nyomon követheti az egyes egymást követő verziók konkrét adatait. Az egymást követő mérnöki verziók közötti különbségek összehasonlításához vizsgálja meg a mérnöki módosítási rendelést, amely tartalmazza az összes változást jelző módosítástípusokat.
@@ -111,11 +113,9 @@ A mérnöki termékkategóriák kezeléséhez lépjen a **Mérnöki változtatá
 | Mező | Leírás |
 |---|---|
 | Terméktípus | Adja meg, hogy a kategória vonatkozik-e a termékekre vagy szolgáltatásokra. |
-| Termelés típusa | Ez a mező csak akkor látható, ha engedélyezte a [receptúrák változásának kezelését](manage-formula-changes.md). Válassza ki azt a termelési típust, amelyre ez a tervezési termékkategória vonatkozik:<ul><li>**Tervezési cikk** – ezzel a tervezési kategóriával a tervezési cikkek receptúráinak változásai kezelhetők. A tervezési cikkek receptúrákat használnak. Hasonlítanak a receptúrás cikkekhez, de csak társ- és melléktermékek előállításához használatosak, késztermékekéhez nem. A receptúrák a folyamatszerű gyártás során használatosak.</li><li>**Anyagjegyzék** – ezzel a tervezési kategóriával az olyan tervezési termékek kezelhetők, amelyek nem használnak receptúrát, és jellemzően (de nem feltétlenül) anyagjegyzékeket tartalmaznak.</li><li>**Receptúra** – ezzel a tervezési kategóriával a befejezett termékek receptúráinak változásai kezelhetők. Ezek a cikkek majd rendelkeznek receptúrával, anyagjegyzékkel viszont nem. A receptúrák a folyamatszerű gyártás során használatosak.</li></ul> |
-| Tényleges súly | Ez a beállítás csak akkor látható, ha engedélyezte a [receptúrák változásának kezelését](manage-formula-changes.md). Csak akkor érhető el, ha a **Termelés típusa** mező értéke *Tervezési cikk* vagy *Receptúra*. A beállításnál adja meg az *Igen* értéket, ha ezt a tervezési kategóriát a tényleges súly támogatását igénylő cikkek kezelésére szeretné használni. |
-| A tranzakciók verziójának nyomon követése | Válassza ki, hogy a termék verzióját minden tranzakcióra rá kell-e bélyegezni (logisztikai hatás). Ha például nyomon követi a verziót a tranzakciókban, minden értékesítési rendelés megmutatja, hogy a termék melyik verzióját értékesítették az adott értékesítési rendelésben. Ha nem követi nyomon a verziót a tranzakciókban, az értékesítési rendelések nem jelenítik meg, hogy melyik verziót értékesítették. Ehelyett mindig a legújabb verziót jelenítik meg.<ul><li>Ha ez a beállítás *Igen*, akkor a termék alapterméke létrejön, és a termék minden verziója a *verzió* termékdimenziót használó változat lesz. A **Termék altípusa** mező automatikusan *Alaptermék* értékre van állítva, és a **Termékdimenzió csoport** mezőben ki kell választania egy termékdimenzió csoportot, ahol a *verzió* dimenzió aktív. Csak azok a termékdimenzió-csoportok jelennek meg, ahol a *verzió* aktív dimenzió. Új termékdimenzió-csoportokat a **Szerkesztés** gombra (ceruza szimbólum) kattintva hozhat létre.</li><li>Ha ez a beállítás *Nem*, a *verzió* termékdimenzió nem lesz használva. Ezután kiválaszthatja, hogy más dimenziókat használó terméket vagy alapterméket szeretne-e létrehozni.</li></ul><p>Ezt a beállítást gyakran használják olyan termékeknél, amelyek költségkülönbséggel rendelkeznek a verziók között, vagy olyan termékeknél, amelyeknél eltérő feltételek vonatkoznak a vevőre. Ezért fontos jelezni, hogy melyik verziót használták az egyes tranzakciókban.</p> |
+| A tranzakciók verziójának nyomon követése | Válassza ki, hogy a termék verzióját minden tranzakcióra rá kell-e bélyegezni (logisztikai hatás). Ha például nyomon követi a verziót a tranzakciókban, minden értékesítési rendelés megmutatja, hogy a termék melyik verzióját értékesítették az adott értékesítési rendelésben. Ha nem követi nyomon a verziót a tranzakciókban, az értékesítési rendelések nem jelenítik meg, hogy melyik verziót értékesítették. Ehelyett mindig a legújabb verziót jelenítik meg.<ul><li>Ha ez a beállítás *Igen*, akkor a termék alapterméke létrejön, és a termék minden verziója a *verzió* termékdimenziót használó változat lesz. A **Termék altípusa** mező automatikusan *Alaptermék* értékre van állítva, és ki kell választania egy termékdimenziócsoportot, ahol a *verzió* dimenzió aktív. Csak azok a termékdimenzió-csoportok jelennek meg, ahol a *verzió* aktív dimenzió. Új termékdimenzió-csoportokat a **Szerkesztés** gombra (ceruza szimbólum) kattintva hozhat létre.</li><li>Ha ez a beállítás *Nem*, a *verzió* termékdimenzió nem lesz használva. Ezután kiválaszthatja, hogy más dimenziókat használó terméket vagy alapterméket szeretne-e létrehozni.</li></ul><p>Ezt a beállítást gyakran használják olyan termékeknél, amelyek költségkülönbséggel rendelkeznek a verziók között, vagy olyan termékeknél, amelyeknél eltérő feltételek vonatkoznak a vevőre. Ezért fontos jelezni, hogy melyik verziót használták az egyes tranzakciókban.</p> |
 | Termékaltípus | Válassza ki, hogy a kategóriában lesznek-e termékek vagy alaptermékek. Az alaptermékek esetében termékdimenziókat kell használni.
-| Termékdimenzió-csoport | A **Tranzakciók verzióinak nyomon követése** beállítás segít kiválasztani a termék dimenziócsoportját. Ha megadta, hogy nyomon szeretné követni a verziót a tranzakciókban, akkor megjelennek azok a termékdimenzió-csoportok, ahol a *verzió* dimenziót használják. Egyébként csak azok a termékdimenzió-csoportok jelennek meg, ahol a *verzió* dimenzió nincs használatban. |
+| Termékdimenzió-csoport | A **Tranzakciók verzióinak nyomon követése** beállítás segít kiválasztani a termék altípusát. Ha megadta, hogy nyomon szeretné követni a verziót a tranzakciókban, akkor megjelennek azok a termékdimenzió-csoportok, ahol a *verzió* dimenziót használják. Egyébként csak azok a termékdimenzió-csoportok jelennek meg, ahol a *verzió* dimenzió nincs használatban. |
 | Termékéletciklus-állapot létrehozáskor | Állítsa be az alapértelmezett termékéletciklus-állapotot, amellyel egy mérnöki terméknek az első létrehozásakor rendelkeznie kell. További információ: [Termékéletciklus-állapotok és tranzakciók](product-lifecycle-state-transactions.md). |
 | Verziószám szabálya | Válassza ki a kategóriára vonatkozó verziószámszabályt:<ul><li>**Manuális** – Minden új verzió verziószámát ön választja ki.</li><li>**Automatikus** – A rendszer a megadott formátum alapján állítja be a verziószámot. A formátum beállításakor használjon egy számjelet (\#) egy számjegye és bármely más karakter esetében egy állandó érték ábrázolására. Ha például a *V-\#\#* formátumot adja meg, az első verzió „V-01”, a második verzió „V-02” lesz, és így tovább.</li><li>**Lista** – A rendszer a következő számot a megadott egyéni értékek előre meghatározott listájából veszi át.</li></ul> |
 | Érvényesség kényszerítése | Adja meg, hogy a műszaki verziók érvényességi dátumainak összefüggőnek kell-e lenniük, vagy lehetnek hézagok és átfedések. Ez a beállítás befolyásolja, hogy hogyan használhatja az **Érvényesség kezdete** és az **Érvényesség vége** mezőket az egyes mérnöki verziókhoz, amelyekre a kategória érvényes.<ul><li>Ha ez a beállítás *Igen*, akkor minden verzióhoz meg kell adni egy **Érvényesség kezdete** értéket, és a verziók között sem átfedések, sem hézagok nem engedélyezettek. Az egyes mérnöki verziók dátumtartománya közvetlenül kapcsolódik az előző és a következő mérnöki verzióhoz, ha vannak ilyenek. Ebben a forgatókönyvben mindig a legújabb verziót használja a rendszer, a régebbi verziókat pedig már nem.</li><li>Ha ez a beállítás **Nem**, nincs korlátozás a mérnöki verziók érvényességi dátummezőire vonatkozóan, és az átfedések és a hézagok is megengedettek. Ebben a forgatókönyvben egyszerre több verzió is aktív lehet, és bármilyen aktív verzióval dolgozhat.</li></ul><p>Ez a beállítás a termékverzióhoz kapcsolódó anyagjegyzékekre és útvonalakra is hatással van. További információt a témakör [Anyagjegyzékek és útvonalak összekapcsolása a mérnöki verziókkal](#boms-routes) című szakaszában talál.</p> |
@@ -142,10 +142,7 @@ A rácshoz hozzáadott minden egyes sorhoz állítsa be a következő mezőket.
 
 ### <a name="readiness-policy-fasttab"></a>Készenléti házirend gyorslap
 
-A **Termékkészenléti házirend** mezőben válassza ki az ezen tervezési kategória alapján létrehozott termékekre alkalmazandó készenléti házirendet. További információ: [Termékkészenlét](product-readiness.md).
-
-> [!NOTE]
-> A **Termékkészenléti házirend** mező kissé eltérően működik, ha bekapcsolja a *Termék készenléti ellenőrzései* funkciót. (Ezzel a funkcióval a szokásos, \[nem tervezési\] termékekre vonatkozó vonatkozó készenléti házirendek alkalmazhatók.) További információ: [Készenléti házirendek hozzárendelése a szokásos és a tervezési termékekhez](product-readiness.md#assign-policy).
+A **Termékkészenléti házirend** mezőben választhatja ki az ebbe a kategóriába tartozó termékekre vonatkozó készenléti házirendet. További információ: [Termékkészenlét](product-readiness.md).
 
 ### <a name="release-policy-fasttab"></a>Kiadási házirend gyorslap
 
@@ -165,6 +162,3 @@ A mérnöki anyagjegyzékek és az útvonalak abból a mérnöki verzióból jö
 Olyan termékek esetében, ahol a *verzió* termékdimenzióját használja (a tranzakciókra gyakorolt logisztikai hatással együtt), a verzió hozzáadódik az anyagjegyzékekhez és az útvonalakhoz is. Ez a viselkedés segít megkülönböztetni az egymást követő verziók anyagjegyzékeit és útvonalait, függetlenül az **Érvényesség kikényszerítése** beállítástól.
 
 Olyan termékek esetében, ahol nem a *verzió* termékdimenzióját használja (a tranzakciókra gyakorolt logisztikai hatás nélkül), a verzió nem adódik hozzá az anyagjegyzékekhez vagy az útvonalakhoz. Ezért nem lesz különbség az egymást követő verziók anyagjegyzékei és útvonalai között. Ebben az esetben erősen ajánlott az **Érvényesség kikényszerítése** beállítás *Igen* értékre való beállítása. Ily módon megakadályozhatja, hogy a mérnöki verziók átfedésben legyenek, és aktiválhatja az újabb verzió anyagjegyzékét és útvonalát anélkül, hogy először inaktiválná az előző verzió anyagjegyzékét és útvonalát. Ha ebben az esetben az **Érvényesség kikényszerítése** beállítást *Igen* értékre állítja, a legújabb verzió aktiválása előtt manuálisan inaktiválnia kell a régebbi verziók anyagjegyzékeit és útvonalait.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

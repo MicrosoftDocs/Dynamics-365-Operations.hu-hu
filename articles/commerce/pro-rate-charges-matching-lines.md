@@ -2,13 +2,16 @@
 title: Fejlécdíjak arányosítása a megfelelő értékesítési sorokhoz
 description: Ez a témakör további képességeket mutat be a Commerce csatorna rendeléseihez kapcsolódó automatikus költéségek kiszámításához és alkalmazásához a haladó automatikus költségek funkcióval..
 author: hhaines
+manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0de29e1817840c172f9235f2ee48251c4878a0573d270a60fde5b42ba6f88d31
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 048885cac7a316e144b2df072da405d74096203f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774509"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412736"
 ---
 # <a name="prorate-header-charges-to-matching-sales-lines"></a>Fejlécdíjak arányosítása a megfelelő értékesítési sorokhoz
 
@@ -30,7 +33,7 @@ ms.locfileid: "6774509"
 
 Ez a témakör leírja a fejléc szintű automatikus díjak csoportosításához, illetve azok arányosításához a kereskedelmi értékesítési csatornákhoz funkciókat. Ez a funkció a Retail 10.0.1 verzióban a pénztárnál (POS) létrehozott tranzakciók érhető el és olyan értékesítésekhez, amelyek a Retail 10.0.2 verziójának hívásközpontjában lettek létrehozva.
 
-Ez a funkció csak akkor érhető el, ha a [speciális automatikus költségek](/dynamics365/unified-operations/retail/omni-auto-charges) szolgáltatás be van kapcsolva a **Commerce paraméterek** lap beállításával. Ezenkívül a továbbfejlesztett számítási módok az automatikus költségekhez csak a kereskedelmi értékesítési rendelésekhez rendelhetők hozzá, amelyeket kereskedelmi csatornákon keresztül hoztak létre (a POS egy hívásközpont és a Dynamics elektronikus kereskedelmi platform).
+Ez a funkció csak akkor érhető el, ha a [speciális automatikus költségek](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges) szolgáltatás be van kapcsolva a **Commerce paraméterek** lap beállításával. Ezenkívül a továbbfejlesztett számítási módok az automatikus költségekhez csak a kereskedelmi értékesítési rendelésekhez rendelhetők hozzá, amelyeket kereskedelmi csatornákon keresztül hoztak létre (a POS egy hívásközpont és a Dynamics elektronikus kereskedelmi platform).
 
 Ez az új funkció nagyobb rugalmasságot nyújt szervezeteknek úgy, hogy a fejlécszintű automatikus díjak kiszámítás megtörténik, és alkalmazva lesznek az értékesítési tranzakciókra.
 
@@ -38,7 +41,7 @@ Az alkalmazás 10.0.1 verziónál korábbi verzióiban, a fejlécszintű automat
 
 Például fejlécszintű automatikus díjak vannak meghatározva a **99**-es szállítási módhoz és a **11**-es szállítási módhoz. Egy értékesítési rendelés jön létre, és a **99**-es szállítási mód van megadva a rendelés fejlécében. Azonban egyes értékesítési sorok úgy vannak beállítva, hogy azok a **11**-es szállítási mód használatával lesznek szállítva. Ebben az esetben csak azon fejlécszintű díjak, amelyek a **99**-es szállítási módhoz vannak kapcsolva lesznek figyelembe véve és alkalmazva az értékesítési rendelésre vonatkozóan.
 
-A Commerce rendszerben a fejlécszintű díjak egy további funkcióval is rendelkeznek amely lehetővé teszi egy [többszintű költségkonfigurációs](/dynamics365/unified-operations/retail/configure-call-center-delivery) meghatározását, amely a rendelés értékén alapul. Például, ha a rendelés értéke $50,00 és $200,00 között van, lehet hogy egy szervezet a $5,00 szállítási költséget szeretne felszámolni. Azonban, ha a rendelés értéke $200,01 és $500,00 között van a szállítási költéség $4,00 lehet.
+A Commerce rendszerben a fejlécszintű díjak egy további funkcióval is rendelkeznek amely lehetővé teszi egy [többszintű költségkonfigurációs](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery) meghatározását, amely a rendelés értékén alapul. Például, ha a rendelés értéke $50,00 és $200,00 között van, lehet hogy egy szervezet a $5,00 szállítási költséget szeretne felszámolni. Azonban, ha a rendelés értéke $200,01 és $500,00 között van a szállítási költéség $4,00 lehet.
 
 Egyes szervezetek szeretnék kihasználni a többszintű díjkalkuláció előnyeit, amelyek elérhetők a fejlécszintű díjakkal. Azonban több szállítási módot tartalmazó esetekben, arról is gondoskodni szeretnének, hogy a számított költségek az illeszkedő szállítási módon alapulnak, amely meg van határozva az egyes értékesítési sorokon.
 
@@ -56,9 +59,9 @@ Ez a forgatókönyv ismerteti, amikor az **Arányosítása a megfelelő értéke
 
 Ebben az esetben a szervezet definiált fejlécszintű díjakat a **99**-es szállításimód-kapcsolathoz és a **11**-es szállításimód-kapcsolathoz. Nincsnek automatikus díjak konfigurálva a **21**-es szállítási módhoz..
 
-![Automatikus-díjak a 99-es szállítási módhoz, az illeszkedő sorok arányosítása ki van kapcsolva.](media/99_disabled.png)
+![Automatikus-díjak a 99-es szállítási módhoz, az illeszkedő sorok arányosítása ki van kapcsolva](media/99_disabled.png)
 
-![Automatikus-díjak a 11-es szállítási módhoz, az illeszkedő sorok arányosítása ki van kapcsolva.](media/11_disabled.png)
+![Automatikus-díjak a 11-es szállítási módhoz, az illeszkedő sorok arányosítása ki van kapcsolva](media/11_disabled.png)
 
 A hívásközpont egy értékesítési rendelést hoz létre, és a szállítási mód értéke **99**. Ehhez a rendelés öt cikket tartalmaz. Két rendelési sor van ugyanazon **99**-es szállítási mód használatára konfigurálva, két sor **11**-es szállítási mód használatára konfigurálva, és egy sor úgy van beállítva, hogy a **21**-es a szállítási módot használja, amint azt a következő a táblázatban látható.
 
@@ -72,15 +75,15 @@ A hívásközpont egy értékesítési rendelést hoz létre, és a szállítás
 
 Ebben au esetben a teljes rendelés értékelve van az automatikus díjak táblázatához képest a **99**-es szállítási módhoz. Az értékesítési sorok teljes összege szolgál az automatikus díjkonfiguráció illeszkedő szintjének meghatározására, és ez a díj fejlécszinten lesz alkalmazva. Ebben a példában a teljes rendelés $165,00, és a rendelés fejlécében a $15,00 szállítási költség vonatkozik. A **11**-es szállítási módhoz beállított automatikus díjakra rendszer sosem hivatkozik, és nem alkalmazza azokat.
 
-Ebben az esetben, ha a vevő visszaküld egyes cikkeket a rendelésből, és a [díjkód úgy van beállítva, hogy az vissza lesz térítve](/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), a teljes fejléc szintű díj rendszerszerűen lesz alkalmazva a visszatérítésre, akkor is, ha csak néhány cikk lestt visszaküldve.
+Ebben az esetben, ha a vevő visszaküld egyes cikkeket a rendelésből, és a [díjkód úgy van beállítva, hogy az vissza lesz térítve](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges#setup-and-configuration-2), a teljes fejléc szintű díj rendszerszerűen lesz alkalmazva a visszatérítésre, akkor is, ha csak néhány cikk lestt visszaküldve.
 
 ### <a name="scenario-2"></a>2. eset
 
 Ebben az esetben vannak fejlécszintű díjak konfigurálva a **99**-es szállításimód-kapcsolathoz és a **11**-es szállításimód-kapcsolathoz. Azonban az **Arányosítás a megfelelő értékesítési sorokhoz** beállítása **Igen** ezekhez az automatikus díjtáblázatokhoz.
 
-![Automatikus-díjak a 99-es szállítási módhoz, az illeszkedő sorok arányosítása be van kapcsolva.](media/99_enabled.png)
+![Automatikus-díjak a 99-es szállítási módhoz, az illeszkedő sorok arányosítása be van kapcsolva](media/99_enabled.png)
 
-![Automatikus-díjak a 11-es szállítási módhoz, az illeszkedő sorok arányosítása be van kapcsolva.](media/11_enabled.png)
+![Automatikus-díjak a 11-es szállítási módhoz, az illeszkedő sorok arányosítása be van kapcsolva](media/11_enabled.png)
 
 Ebben a példában ugyanazt az öt sort tartalmazó értékesítési rendelést használjuk. A rendelési fejlécben szereplő szállítási mód értéke **99**, de minden egyes cikkhez az értékesítési rendelésben a szállítási mód az alábbi táblázatban látható módon van konfigurálva.
 
@@ -130,9 +133,9 @@ Mivel az automatikus díjkonfiguráció úgy van beállítva, hogy arányosítso
     - Termék összértéke = $15
     - **Díj értéke = $0** (Nincsenek automatikus költségek konfigurálva vevő és a szállítási mód kombinációhoz.)
 
-    ![A Szállítási mód 11 díjai a kiemelt szinthez tartoznak.](media/step2mode11.png)
+    ![A Szállítási mód 11 díjai a kiemelt szinthez tartoznak](media/step2mode11.png)
 
-    ![A Szállítási mód 99 díjai a kiemelt szinthez tartoznak.](media/step2mode99.png)
+    ![A Szállítási mód 99 díjai a kiemelt szinthez tartoznak](media/step2mode99.png)
 
 3. A rendszer kiszámítja a díj értékét, amelyet minden sor esetében alkalmazni, az arányosítási logika alapján, amely figyelembe veszi a sor arányosított értékét a teljes termékértékhez képest.
 
@@ -163,7 +166,7 @@ Mivel az automatikus díjkonfiguráció úgy van beállítva, hogy arányosítso
 
 Ezért az ebben a példában a 81334 cikkhez $5,62 szállítási díj lesz hozzárendelve. Ezeket a költségeket a **Költségek karbantartása** lapon tekintheti meg az értékesítési sorhoz. Az alábbi ábra azt mutatja, hogyan néz ki ez az oldal 81334-es cikkhez.
 
-![Arányosított díjak a 81334-es cikk értékesítési sorához.](media/proratedlinecharge.png)
+![Arányosított díjak a 81334-es cikk értékesítési sorához](media/proratedlinecharge.png)
 
 Ezen számítási mód használatakor részleges visszáru esetén, ha a költségkód visszatéríthető, a díjnak csak a sorhoz hozzárendelt része lesz visszatérítve a cikk visszaküldése esetén.
 
@@ -172,6 +175,3 @@ Ezen számítási mód használatakor részleges visszáru esetén, ha a költs�
 [Többcsatornás speciális automatikus költségek](omni-auto-charges.md)
 
 [Automatikus költségek csatorna szerinti engedélyezése és konfigurálása](auto-charges-by-channel.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

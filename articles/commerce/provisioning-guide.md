@@ -2,9 +2,11 @@
 title: Dynamics 365 Commerce értékelési környezet kiépítése
 description: Ez a témakör bemutatja, hogyan lehet egy Microsoft Dynamics 365 Commerce értékelési környezetet létesíteni.
 author: psimolin
+manager: annbe
 ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8cda79a6be1aca7ad3826b9409e110524e6560e3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6777500"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969901"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet kiépítése
 
@@ -32,6 +34,8 @@ A művelet elkezdése előtt ajánljuk, hogy a jelen témakörben keressen egy r
 
 > [!NOTE]
 > A Commerce értékelési környezetek általában nem állnak rendelkezésre, és a partnerek és a vevők számára a kérelem alapján biztosítják. További információért lépjen kapcsolatba Microsoft-partnerének kapcsolattartójával.
+
+## <a name="overview"></a>Áttekintés
 
 A Commerce értékelési környezetének sikeres létrehozásához létre kell hoznia egy projektet, amely egy adott terméknévvel és típussal rendelkezik. A környezet és a Commerce Scale Unit (CSU) szintén rendelkezik bizonyos paraméterekkel, amelyeket későbbiekben, az e-kereskedelem létesítésekor használnia kell. Az ebben a témakörben szereplő útmutatás leírja a létesítéshez szükséges összes lépést és a használandó paramétereket.
 
@@ -76,7 +80,7 @@ Ezek az eljárások ismertetik a Commerce értékelési környezet kiépítésé
 
 ### <a name="add-the-azure-connector"></a>Azure-összekötő hozzáadása
 
-Az Azure összekötőnek az LCS-projekthez történő hozzáadásához kövesse az [Azure Resource Manager felvételi folyamat teljesítése](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md) lépéseit.
+Az Azure összekötőnek az LCS-projekthez történő hozzáadásához kövesse az [Azure Resource Manager felvételi folyamat teljesítése](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding) lépéseit.
 
 ### <a name="deploy-the-environment"></a>Környezet telepítése
 
@@ -90,16 +94,16 @@ Tegye a következőket a környezet telepítéséhez.
 1. Válassza ki az **Alkalmazás verziószáma** mezőben a legfrissebb verziót. Ha a legfrissebb verziótól különböző verziót kell kijelölni, akkor ne válasszon **10.0.14** előtti verziót.
 1. A **Platform verziószáma** mezőben használja a kiválasztott alkalmazás verziójának automatikusan kiválasztott platform verzióját. 
 
-    ![Válassza ki az alkalmazás- és a platformverziókat.](./media/project1.png)
+    ![Válassza ki az alkalmazás- és a platformverziókat](./media/project1.png)
 
 1. Válassza ki **Következő** lehetőséget.
 1. **Demó** kiválasztása környezeti topológiaként.
 
-    ![1. környezeti topológia kiválasztása.](./media/project2.png)
+    ![1. környezeti topológia kiválasztása](./media/project2.png)
 
 1. A **Környezet telepítése** oldalán adja meg a környezet nevét. A Speciális beállításokat ne módosítsa.
 
-    ![Környezet telepítése oldal.](./media/project4.png)
+    ![Környezet telepítése oldal](./media/project4.png)
 
 1. Szükség szerint állítsa be a virtuális gép méretét. (A következő virtuálisgép-raktározási egységet javasoljuk: \[SKU\] **D13 v2**.)
 1. Tekintse át az árképzési és licencelési feltételeket, majd jelölje be a jelölőnégyzetet annak jelzésére, hogy elfogadja azokat.
@@ -180,13 +184,10 @@ A Kereskedelem értékelési környezetének létesítési és konfigurálási f
 
 [Dynamics 365 Commerce értékelési környezet GYIK](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (felhő)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (felhő)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portál](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webhely](https://aka.ms/Dynamics365CommerceWebsite)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

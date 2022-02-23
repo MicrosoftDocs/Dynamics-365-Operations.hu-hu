@@ -48,6 +48,3 @@ Ha támogatást szeretne az Onboard önálló alkalmazással kapcsolatban, haszn
 | Egy hiba jelentése. | Válassza ki a lap jobb felső sarkában látható **Súgó** gombot (**?**), majd válassza a **Probléma jelentése** lehetőséget. Írja be a probléma leírását, és adjon meg egy e-mail-címet, ha követni szeretné a jelentett problémát. |
 | Segítség a Talent-licencekkel kapcsolatos kérdésekkel kapcsolatban. | Lépjen kapcsolatba a partnerével vagy a Microsoft értékesítési munkatárssal. |
 | Új szolgáltatások és funkciók kérése az Onboard szolgáltatáson belül. | Válassza a **Súgó** gombot (**?**), és válassz az **Ötletek** lehetőséget. Ellátogathat a [Dynamics 365 Talent: Onboard alkalmazással kapcsolatos ötletek](https://experience.dynamics.com/ideas/categories/?forum=569a7fb2-8327-e911-a95a-000d3a4f3883&forumName=Dynamics%20365%20for%20Talent%3A%20Onboard) helyre is a meglévő ötletek megtekintéséhez, kereséséhez vagy szavazásához, illetve új ötletek hozzáadásához. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

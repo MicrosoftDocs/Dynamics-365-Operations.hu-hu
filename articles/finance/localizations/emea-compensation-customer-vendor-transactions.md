@@ -2,24 +2,27 @@
 title: Vevői és szállítói kompenzáció beállítása
 description: Ez a témakör arról nyújt információkat, hogy miként futtathat kompenzációs folyamatot az olyan szállítói és vevőszámlák esetében, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van.
 author: mrolecki
+manager: AnnBe
 ms.date: 05/19/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 1691503
 ms.search.region: Hungary, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b0797ab7decbd559fb4356b3cf2b0acaab2019e672effdd82eca5f76ba6032d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9e9135e52356b5025a8018028825371b967531b1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712151"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408046"
 ---
 # <a name="set-up-customer-and-vendor-compensation"></a>Vevői és szállítói kompenzáció beállítása
 
@@ -91,6 +94,3 @@ Miután létrehozott egy kompenzációs ajánlatot egy naplónál, és az együt
 **K: Minden országban vagy régióban rendelkezésre áll a kompenzáció funkciója?**
 
 **V:** A kompenzáció funkció csak azoknál a jogi személyeknél áll rendelkezésre, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

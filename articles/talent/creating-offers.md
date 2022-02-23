@@ -153,6 +153,3 @@ Az ajánlatot bármikor vissza lehet vonni különböző okokkal.
 ## <a name="closing-an-offer"></a>Ajánlat lezárása 
 
 Az ajánlat elfogadása, elutasítása vagy visszavonása után úgy, hogy nincs további műveletekre szükség, az ajánlatot lezárhatja, hogy további módosításokat ne lehessen végezni az ajánlati csomagon.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

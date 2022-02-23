@@ -2,29 +2,32 @@
 title: Raktári alkalmazás eseményei
 description: Ez a témakör a raktári alkalmazáson belüli események feldolgozását mutatja be, melyet a raktári alkalmazás eseményüzeneteinek egy kötegelt feladat részeként való feldolgozására használhatnak.
 author: perlynne
+manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1e648b5db9405e749fbd24502f65f344d0549b0f13b48e98c38d1476866db01
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 210008c4a1366773f465c59b38eca30f11f0b38c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729986"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429379"
 ---
 # <a name="warehouse-app-event-processing"></a>Raktári alkalmazás eseményeinek feldolgozása
 
 [!include [banner](../includes/banner.md)]
 
-A Supply Chain Management modulban futtatott kötegelt feladatok felhasználhatják a Raktárkezelés mobilalkalmazás által kiadott feldolgozási eseményekhez küldött várólistához tartozó adatokat annak érdekében, hogy a jelzett eseményekre szükséges módon lehessen reagálni. Ez a funkció a dolgozók által, az alkalmazással végrehajtott bizonyos művelettípusokra válaszul megfelelő eseményeket adnak a várólistához. Ez történik például akkor, amikor a *Raktári alkalmazásból átmozgatási rendelések létrehozása és feldolgozása* funkciót használják, és az átmozgatási rendelés fejléce és sorai a háttérben jönnek létre és frissülnek, mialatt a rendszer a **Raktári alkalmazás eseményeinek feldolgozása** kötegelt feladatot futtatja.
+A Supply Chain Management modulban futtatott kötegelt feladatok felhasználhatják a raktári alkalmazás által kiadott feldolgozási eseményekhez küldött várólistához tartozó adatokat annak érdekében, hogy a jelzett eseményekre szükséges módon lehessen reagálni. Ez a funkció a dolgozók által, az alkalmazással végrehajtott bizonyos művelettípusokra válaszul megfelelő eseményeket adnak a várólistához. Ez történik például akkor, amikor a **Raktári alkalmazásból átmozgatási rendelések létrehozása és feldolgozása** funkciót használják, és az átmozgatási rendelés fejléce és sorai a háttérben jönnek létre és frissülnek, mialatt a rendszer a **Raktári alkalmazás eseményeinek feldolgozása** kötegelt feladatot futtatja.
 
 ## <a name="enable-the-process-warehouse-app-events-feature"></a>A Raktári alkalmazás eseményeinek feldolgozása funkció engedélyezése
 
@@ -48,11 +51,11 @@ A funkció használata előtt engedélyeznie kell a saját rendszerében. A rend
 
 ## <a name="query-warehouse-app-events"></a>A raktári alkalmazás eseményeinek lekérdezése
 
-A Raktárkezelés mobilalkalmazás által létrehozott esemény-várólistát és eseményüzeneteket a **Raktárkezelés \> Lekérdezések és jelentések \> Mobileszköznaplók \> Raktári alkalmazás eseményei** menüpontba lépve tekintheti meg.
+A raktári alkalmazás által létrehozott esemény-várólistát és eseményüzeneteket a **Raktárkezelés \> Lekérdezések és jelentések \> Mobileszköznaplók \> Raktári alkalmazás eseményei** menüpontba lépve tekintheti meg.
 
 ## <a name="the-standard-event-queue-process"></a>A szokásos esemény-várólista folyamata
 
-A raktári alkalmazás eseményeinek várólistája általában a következő folyamatban használható:
+A raktári alkalmazások eseményeinek várólistája általában a következő folyamatban használható:
 
 1. Egy esemény jelenik meg a várólistán egy eseményüzenettel. Az új üzenet kezdetben **Várakozó** eseményállapottal rendelkezik, amely azt jelenti, hogy a **Raktári alkalmazás eseményeinek feldolgozása** kötegelt feladat nem veszi fel és dolgozza fel ezt az üzenetet.
 1. Amint az üzenet **Várólistán** állapotra vált át, a **Raktári alkalmazás eseményeinek feldolgozása** kötegelt feladat felveszi és feldolgozza az eseményt.
@@ -75,6 +78,3 @@ Sikertelen raktári alkalmazáson belüli eseményüzenet alaphelyzetbe állít�
 1. Folytassa a munkát mindaddig, amíg az összes fontos üzenetet alaphelyzetbe nem állítja.
 
 A **Sikertelen** eseményüzenetet a **Raktári alkalmazás eseményüzenetei eszköztár** **Törlés** opciójával is el lehet távolítani.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

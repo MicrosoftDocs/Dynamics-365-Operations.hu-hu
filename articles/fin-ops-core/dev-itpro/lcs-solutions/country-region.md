@@ -1,32 +1,34 @@
 ---
 title: Globalizációs erőforrások
 description: Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország- és régióspecifikus funkciókról és ajánlatokról.
-author: kfend
-ms.date: 02/19/2021
+author: ShylaThompson
+manager: AnnBe
+ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: sericks
 ms.custom: 104173
 ms.search.region: Global
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8ee422b2bdc8b94c2a465d0e48f5da983a410674
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747515"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685053"
 ---
 # <a name="globalization-resources"></a>Globalizációs erőforrások
 
 ## <a name="local-and-regional-deployments"></a>Helyi és regionális telepítések
 Ha a kormányzati szabályozás előírja, hogy az adatokat a többi országtól/régiótól eltérően kell tárolni vagy karbantartani, előfordulhat, hogy az adott országban/régióban érvényes követelményeknek kell megfelelni a rendszer telepítésekor. Vegye figyelembe a következő erőforrásokat, amelyek fontosak lehetnek az Ön számára:
 
-[Finance and Operations-alkalmazások, amelyeket a 21Vianet működtet Kínában](../deployment/china-local-deployment.md)
+[Finance and Operations alkalmazások, amelyeket a 21Vianet működtet Kínában](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/deployment/china-local-deployment)
 
 ## <a name="localization-and-regulatory-features"></a>Honosítási és szabályozási funkciók
 
@@ -51,8 +53,9 @@ A következő erőforrások az ország- és régióspecifikus testreszabásokat 
 ### <a name="regulatory-updates-and-communication"></a>Jogszabályban előírt frissítések és közlemények
 A következő erőforrások a tervezett és új honosítási funkciókat ismertetik. 
 
-#### <a name="regulatory-updates"></a>Jogszabálykövetési frissítések
--   [Jogszabálykövetési frissítések](../../../finance/localizations/regulatory-updates.md)
+#### <a name="regulatory-updates"></a>Jogszabály-követési frissítések
+-   [Jogszabályban előírt frissítések](../../../finance/localizations/regulatory-updates.md)
+-   [Honosítási portál](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (hetente frissítve)
 -   [Megoldáskereső a Lifecycle Services (LCS) szolgáltatásban](../lifecycle-services/issue-search-lcs.md) (naponta frissítve)
 
 #### <a name="communication-and-alerts"></a>Közlemények és figyelmeztetések
@@ -60,7 +63,7 @@ A következő erőforrások a tervezett és új honosítási funkciókat ismerte
 -   [Figyelmeztetések elküldése az ország/régióspecifikus jogszabályban előírt funkciókkal kapcsolatban](submit-localization-alerts.md)
 
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365 programverzióra vonatkozó kiadási tervek
-A [Dynamics 365 programverzióra vonatkozó kiadási tervek](/business-applications-release-notes/) ismertetik a Dynamics 365 üzleti alkalmazások és az alkalmazásplatformok tervezett új és továbbfejlesztett képességeit. 
+A [Dynamics 365 programverzióra vonatkozó kiadási tervek](https://docs.microsoft.com/business-applications-release-notes/) ismertetik a Dynamics 365 üzleti alkalmazások és az alkalmazásplatformok tervezett új és továbbfejlesztett képességeit. 
 
 #### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations alkalmazások újdonságai
 Az [Új és módosult elemek szakasz a Finance and Operations kezdőlapján](../../fin-ops/get-started/whats-new-changed.md) felsorolja azokat a funkciókat, amelyek a Finance and Operations-alkalmazások meghatározott kiadásaiban szerepelnek.
@@ -130,6 +133,3 @@ További információkat a [Súgórendszer](../../fin-ops/get-started/help-overv
 
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

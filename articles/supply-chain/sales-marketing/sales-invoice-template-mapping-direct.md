@@ -1,27 +1,30 @@
 ---
 title: Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Supply Chain Management szolgáltatásból a Sales szolgáltatásba
 description: Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak a számlafejlécek és sorok közvetlen szinkronizálásához a Dynamics 365 Supply Chain Management és a Dynamics 365 Sales között.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: c2f988b4f170c027444ba7cf54a55e0bd846cedf
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 6cbc4d86ac41d90480428ec5439d1360c4d67137
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571641"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429393"
 ---
 # <a name="synchronize-sales-invoice-headers-and-lines-directly-from-finance-and-operations-to-sales"></a>Értékesítésszámla-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations Sales szolgáltatásba
 
@@ -33,7 +36,7 @@ Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelye
 
 A potenciális ügyfelek készpénzre váltása megoldás az adatszinkronizálás funkción keresztül szinkronizálja az adatokat Supply Chain Management és a Sales példányai között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákkal kapcsolatos adatok áramlását a Supply Chain Management és a Sales között. A következő ábra bemutatja a Supply Chain Management és a Sales közötti adatszinkronizálást.
 
-[![A potenciális ügyfelek készpénzre váltása adatfolyama.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![A potenciális ügyfelek készpénzre váltása adatfolyama](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 
@@ -116,17 +119,17 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 
 ### <a name="salesinvoiceheader"></a>SalesInvoiceHeader
 
-![Sablonleképezés a SalesInvoiceHeader adatintegrációjában.](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
+![Sablonleképezés az adatintegrátorban](./media/sales-invoice-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="salesinvoiceline"></a>SalesInvoiceLine
 
-![Sablonleképezés a SalesInvoiceLine adatintegrációjában.](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
+![Sablonleképezés az adatintegrátorban](./media/sales-invoice-direct-template-mapping-data-integrator-2.png)
 
 
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
-[Potenciális vevők készpénzre váltása](prospect-to-cash.md)
+[A potenciális vevők készpénzre váltása](prospect-to-cash.md)
 
 [A Supply Chain Management-ügyfelek közvetlen szinkronizálása a Sales-ügyfelekre](accounts-template-mapping-direct.md)
 
@@ -135,6 +138,3 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 [A Sales-kapcsolatok közvetlen szinkronizálása a Supply Chain Management-kapcsolatokra vagy -ügyfelekre](contacts-template-mapping-direct.md)
 
 [Értékesítési rendelés szinkronizálása közvetlenül a Sales szolgáltatás és a Supply Chain Management szolgáltatás között](sales-order-template-mapping-direct-two-ways.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

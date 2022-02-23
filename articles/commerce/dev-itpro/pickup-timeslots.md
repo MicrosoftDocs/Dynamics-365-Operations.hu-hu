@@ -2,9 +2,11 @@
 title: Vevői átvételi időközök létrehozása és frissítése
 description: Ez a témakör azt mutatja be, hogyan lehet a Commerce központban létrehozni, konfigurálni és frissíteni a vevői átvételi időközöket.
 author: anupamar-ms
+manager: AnnBe
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-ms.openlocfilehash: a9ee1356bfcaeee881c28cf0361b34b2c65acbc7a3b57347fa2581a8a935da42
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 125696e8f32c2452a572a2316f512779f399f5c4
+ms.sourcegitcommit: 8b4cb7b6ad4aab37566bcc91e426bd56db771416
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6713421"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "4828211"
 ---
 # <a name="create-and-update-time-slots-for-customer-pickup"></a>Vevői átvételi időközök létrehozása és frissítése
 
@@ -34,7 +36,7 @@ Az időköz funkció lehetővé teszi a kiskereskedők számára, hogy meghatár
 
 A következő ábra egy példát mutat be az e-kereskedelmi fizetés során az időköz kiválasztására.
 
-![Példa az időköz kiválasztására az e-kereskedelmi fizetés során.](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Példa az időköz kiválasztására az e-kereskedelmi fizetés során](../dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="time-slot-properties"></a>Időköz tulajdonságai
 
@@ -60,7 +62,7 @@ Az időköz a következő tulajdonságok használatával van definiálva:
 - **Aktív napok** – adja meg a hét azon napjait, amikor a felvételi időközök aktívak. Ez a tulajdonság azt teszi lehetővé, hogy a kiskereskedő határozza meg azokat a napokat, amikor a felvételi rendeléseket támogatni szeretné.
 - **Kiskereskedelmi csatornák** – adja meg a kiskereskedelmi csatornákat. Minden időközt egy vagy több kiskereskedelmi üzlethez kapcsolható. Az egyes üzletek nyitvatartási idejétől függően egy vagy több időközbejegyzést lehet létrehozni és társítani a csatornához. 
 
-<!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+<!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 Csatornánként csak egy időközsablon konfigurálható. Ilyen csatornák a fizikai üzlethelyiségek, a telefonos ügyfélszolgálatok, a mobileszközök és az elektronikus kereskedelmi webhelyek.
 
@@ -85,14 +87,14 @@ A Commerce központ időköz funkciójának konfigurálásához kövesse az alá
     > [!NOTE]
     > Több sablon is létrehozható, de egyetlen csatornához vagy üzlethez csak egy sablon tartozhat.
 
-    ![Rendelés felvételi idejének beállításai párbeszédpanel.](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
+    ![Rendelés felvételi idejének beállításai párbeszédpanel](../dev-itpro/media/Curbside_timeslot_Settings_Page.PNG)
 
 1. Amikor elkészült, válassza az **OK** elemet.
 1. Ha egy napon belül az időközök eltérnek, hozzon létre további bejegyzéseket a **Rendelés felvételi idejének beállításai** gyorslapon, hogy biztosítsa, a dátumok és időpontok ne legyenek átfedésben.
 1. A **kiskereskedelmi csatornák** gyorslapon válassza a **Hozzáadás** lehetőséget, hogy az időközsablont társítsa az üzletekhez vagy csatornákhoz, ahol használni fogja azokat.
 1. A **Szervezeti csomópontok kiválasztása** párbeszédpanelen a nyílgombok segítségével válassza ki azokat az üzleteket, régiókat és szervezeteket (vagy törölje azok kiválasztását), amelyekkel a sablont társítani szeretné.
 
-    <!-- ![HQ Timeslot overview.](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
+    <!-- ![HQ Timeslot overview](../dev-itpro/media/Curbside_timeslot_Settings_overview.PNG) -->
 
 1. Amikor elkészült, válassza az **OK** elemet.
 1. Az **Elosztási ütemezés** lapon, futtassa a **1070** és **1135** feladatokat az adatok szinkronizálásához a csatornával.
@@ -103,7 +105,7 @@ A pénztárnál, amikor egy rendelés vagy rendelési sor felvételre van meghat
 
 A következő ábra egy példát mutat be a pénztári rendelés során az időköz kiválasztására.
 
-![Példa egy pénztári rendelés időköz-kiválasztására.](../dev-itpro/media/Curbside_timeslot_POS.png)
+![Példa egy pénztári rendelés időköz-kiválasztására](../dev-itpro/media/Curbside_timeslot_POS.png)
 
 ## <a name="time-slot-selection-for-e-commerce-orders"></a>Időköz kiválasztása e-kereskedelmi rendelésekhez
 
@@ -114,17 +116,14 @@ Az időközök e-kereskedelmi rendelésekhez való kiválasztásával kapcsolato
 
 A következő ábra példát mutat be egy e-kereskedelmi rendelésre, amelynél a felvételi időköz ki van kiválasztva.
 
-![Példa egy e-kereskedelmi rendelésre, amelynél a felvételi időköz ki van kiválasztva.](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Példa egy e-kereskedelmi rendelésre, amelynél a felvételi időköz ki van kiválasztva](../dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="time-slot-selection-for-call-center-orders"></a>Időköz kiválasztása hívásközponti rendelésekhez
 
 A hívásközponti alkalmazásban a hívásközponti ügynökök kiválaszthatják az átvételi áruházat vagy helyet, valamint a dátumot és az időt is, amint azt az alábbi ábra is mutatja.
 
-![Példa hívásközponti rendelésre, amelynél a felvételi időköz ki van kiválasztva.](../dev-itpro/media/Curbside_timeslot_callcenter.png)
+![Példa hívásközponti rendelésre, amelynél a felvételi időköz ki van kiválasztva](../dev-itpro/media/Curbside_timeslot_callcenter.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Átvételi információ modul](../pickup-info-module.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[Átvételi információk modul](../pickup-info-module.md)

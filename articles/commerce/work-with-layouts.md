@@ -2,30 +2,36 @@
 title: Előre beállított elrendezések használata
 description: Ez a témakör az előre beállított elrendezésekkel végzett munkát mutatja be a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: phinneyridge
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 56ad992b6a9fd6fce09cadad70b8098acdc74ac0
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
-ms.translationtype: MT
+ms.openlocfilehash: f31dfa1fdbb3732610748abe4a9de851033f2b89
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090845"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412880"
 ---
 # <a name="work-with-preset-layouts"></a>Előre beállított elrendezések használata
+
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör az előre beállított elrendezésekkel végzett munkát mutatja be a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 Az ebben a témakörben leírt eljárások elvégzése előtt feltétlenül olvassa az [Előre beállított és egyéni elrendezések](templates-layouts-overview.md#preset-and-custom-layouts) című részt. Általános áttekintés: [Sablonok és elrendezések áttekintése](templates-layouts-overview.md).
 
@@ -78,7 +84,7 @@ Egy előre beállított elrendezés módosításához kövesse az alábbi lépé
 Ha meg szeretné adni vagy módosítani szeretné a témát az összes olyan származtatott oldal esetében, amely az előre beállított elrendezést használja, hajtsa végre az alábbi lépéseket.
 
 1. Válassza ki az oldaltároló modult az elrendezésszerkesztő bal oldali fastruktúrájában. (Ez a modul általában a második csomópont, és a neve **Alapértelmezett lap**.)
-1. Ban,-ben **Téma** a jobb oldali tulajdonságpanel mezőjében válasszon témát.
+1. Válasszon ki egy témát a jobb oldali tulajdonságok ablaktáblán a **Téma** mezőben.
 
 ## <a name="save-check-in-preview-and-publish-a-preset-layout"></a>Előre beállított elrendezés mentése, beadása, előnézete és közzététele
 
@@ -91,30 +97,15 @@ A módosítások előnézetéhez nyisson meg egy az előre beállított elrendez
 
 Miután megtekintette az előre beállított elrendezés módosításainak előnézetét, kövesse az alábbi lépések egyikét, és tegye közzé az elrendezést az élő webhelyen:
 
-1. Nyissa meg az **Elrendezések** elemet, válasszon ki egy elrendezést, majd válassza a **Közzététel** parancsot.
-1. Az elrendezésszerkesztő megnyitásához válassza ki az elrendezés nevét, majd válassza a **Közzététel** lehetőséget.
-1. Egy nem közzétett elrendezésre hivatkozó lap közzététele. A program automatikusan közzéteszi az elrendezést.
+* Nyissa meg az **Elrendezések** elemet, válasszon ki egy elrendezést, majd válassza a **Közzététel** parancsot.
+* Az elrendezésszerkesztő megnyitásához válassza ki az elrendezés nevét, majd válassza a **Közzététel** lehetőséget.
+* Egy nem közzétett elrendezésre hivatkozó lap közzététele. A program automatikusan közzéteszi az elrendezést.
 
 > [!WARNING]
 > Az előre beállított elrendezések több oldalról is hivatkozhatók. Egy előre beállított elrendezés közzététele esetén ügyeljen arra, hogy ez több oldal elrendezését is érintheti.
-
-## <a name="rename-a-preset-layout"></a>Nevezze át az előre beállított elrendezést
-
-Egy előre beállított elrendezés átnevezéséhez a Webhelykészítőben kövesse az alábbi lépéseket.
-
-1. A bal oldali navigációs panelen válassza a lehetőséget **Elrendezések**.
-1. Válassza ki az átnevezni kívánt elrendezés elrendezési nevét.
-1. Válassza ki **Szerkesztés** az elrendezés szerkesztésének megkezdéséhez.
-1. Az elrendezés tulajdonságai ablaktáblában válassza ki a toll szimbólumot az elrendezés neve mellett.
-1. Szükség szerint szerkessze az elrendezés nevét.
-1. Jelölje be a pipát a névváltoztatás megerősítéséhez.
-1. Válassza a **Szerkesztés befejezése** lehetőséget.
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Sablonok és elrendezések áttekintése](templates-layouts-overview.md)
 
 [Sablonok használata](work-with-templates.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

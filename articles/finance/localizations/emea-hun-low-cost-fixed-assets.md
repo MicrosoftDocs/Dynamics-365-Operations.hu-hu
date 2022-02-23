@@ -2,9 +2,11 @@
 title: Kis értékű tárgyi eszközök
 description: Ez a témakör a Magyarországon használt kis értékű tárgyi eszközökhöz tartalmaz információt.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 76b68eef1df5ec80684f7349df847cdd8f81e867e9dc460e3310b3f4955db66e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e090c604b867112c1da57d4a8d123603b7934f0f
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753467"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962749"
 ---
 # <a name="low-cost-fixed-assets"></a>Kis értékű tárgyi eszközök
 
@@ -48,6 +50,3 @@ Eszköz megszerzésekor egy beszerzési tranzakciót hoz létre a beszerzést me
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

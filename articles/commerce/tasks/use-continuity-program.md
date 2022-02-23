@@ -2,24 +2,27 @@
 title: Folytonos program használata
 description: Ez az eljárás a folytonos program révén történő értékesítés és a kapcsolódó vevői rendelések feldolgozását mutatja be.
 author: scott-tucker
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MCRCustomerService, MCRCustSearch, SalesTable, MCRContinuityCustInfo, MCRCustPaymLookup, CreditCardTokenization, CreditCardLookup, MCRSalesOrderRecap
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b8e3903aac99d32bbf4d065e6db1c3f3aab998c04d052d08338eb3f54ccc96f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2baf0127a35cc62952fd78daaf8204d35ec8d2b3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761538"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412891"
 ---
 # <a name="using-continuity-program"></a>Folytonos program használata
 
@@ -59,6 +62,3 @@ Ez az eljárás a folytonos program révén történő értékesítés és a kap
     * Adja meg az eljárás során korábban feljegyzett értékesítési rendelés számát. Ez minimálisra csökkenti az eljáráshoz szükséges feldolgozási időt. A Értékesítési rendelés mező kitöltése nem kötelező - bármely programhoz feldolgozható az összes megrendelés.  
 21. Kattintson az OK gombra.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

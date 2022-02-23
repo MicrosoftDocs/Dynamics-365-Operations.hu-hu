@@ -2,22 +2,25 @@
 title: Szortiment kezelése
 description: Ez a témakör bemutatja a Dynamics 365 Commerce szortimentkezelésének az alapfogalmait, és tartalmaz a megvalósítással kapcsolatos szempontokat a projekt számára.
 author: jblucher
+manager: AnnBe
 ms.date: 03/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
-ms.openlocfilehash: 1ff4929e8789748433f4e9386397431e174a85f81518d2e0a1d8f9ea68211fa6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e1b177989065740eef0bd917a7ce1e0a2c79088b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717771"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412788"
 ---
 # <a name="assortment-management"></a>Szortiment kezelése
 
@@ -49,13 +52,13 @@ Másik lehetőségként hozzáadhatja az 1. üzletet a 2. szortimenthez.
 
 Az olyan helyzetekben, ahol több csatorna osztozik ugyanazon a termékszortimenteken, a szortimentek konfigurálhatók a Commerce szortimentszervezeti hierarchia használatával. Ha ebből a hierarchiából ad hozzá csomópontokat, a csomópontban és a gyermek csomópontjaiban levő összes csatorna szerepelni fog.
 
-![Szervezeti hierarchia.](./media/Managing-assortments-figure4.png)
+![Szervezeti hierarchia](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Termékkategóriák
 
 Ehhez hasonlóan a termékoldalon is felvehet termékcsoportokat a termék-kategóriahierarchiák használatával. A szortimentek konfigurálását elvégezheti egy vagy több kategóriahierarchia-csomópont hozzáadásával. Ebben az esetben a szortiment tartalmazni fogja az összes terméket a kategória-csomópontból és gyermek csomópontjaiból.
 
-![Termékkategóriák.](./media/Managing-assortments-figure5.png)
+![Termékkategóriák](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Kizárt termékek vagy kategóriák
 
@@ -64,7 +67,7 @@ A termékek és kategóriák szortimentekhez adásán kívül a kihagyás beáll
 > [!NOTE]
 > Ha egy termék egyszerre ki van zárva és be van véve egy vagy szortimentbe/szortimentből meghatározás szerint, a termék mindig kizártként lesz figyelembe véve.
 
-![Kizárt termékek.](./media/Managing-assortments-figure6.png)
+![Kizárt termékek](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globális és kiadott termékek
 
@@ -104,6 +107,3 @@ A következő végrehajtási követelményeket figyelembe kell venni a szortimen
 - **Értékesítés és visszáru a szortimenteken kívül** – Ez a lehetőség segítséget nyújt a kiskereskedőknek a szortimentek hatékony kezeléséhez úgy, hogy a rendelkezésre álló termékeket az üzlet alapvető termékmixére korlátozzák. Ez a lehetőség azt is lehetővé teszi a kiskereskedők számára, hogy sikeresen kezeljék azokat a helyzeteket, amikor a termék véletlenül kimaradt egy szortimentből, vagy egy terméket a szortiment érvényességi dátumait kívül hoztak vissza.
 
 Ha egy termékadat nem szerepel a csatorna-adatbázisban, a pénztár valós idejű hívást intéz a központhoz, hogy lekérje a szükséges adatokat, és így megtörténhessen a termék értékesítése, visszavitele vagy elhelyezése egy vevői rendelésen. Az ezen a módon lekért termékinformációk csak az adott tranzakció hatóköre során érhetők el. A termék nincs hozzáadva a szortiment definíciójához. Ennek megfelelően a későbbi valós idejű hívások szükség szerint történnek meg.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

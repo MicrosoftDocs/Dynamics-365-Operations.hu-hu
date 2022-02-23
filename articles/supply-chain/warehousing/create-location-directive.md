@@ -2,9 +2,11 @@
 title: Helyutasítások kezelése
 description: Ez a témakör a helyutasítások működését ismerteti. A helyutasítások olyan a felhasználó által megadott szabályok, melyek segítik a kitárolási és betárolási helyek meghatározását a készletmozgatáshoz.
 author: Mirzaab
+manager: tfehr
 ms.date: 11/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSLocDirHint, WHSLocDirTableUOM, WHSLocDirFailure
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-11-13
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 77e3139f62ca73f461ff4a4b5114f5e7ba181d3b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: b1b3bafb24ff6eb0c42d901fac3b6668cedf39ef
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575243"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4963310"
 ---
 # <a name="work-with-location-directives"></a>Helyutasítások kezelése
 
@@ -44,14 +46,14 @@ Mielőtt helyutasítási műveletet hozhatna létre, követnie kell az alábbi l
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Raktár \> Raktárak** pontra.
 1. Raktár létrehozása.
 1. A **Raktár** gyorslapon állítsa a **Raktárkezelési folyamatok alkalmazása** opciót *Igen*-re.
-1. Helyek, helytípusok, helyprofilok és helyformátumok létrehozása. A további tudnivalókért lásd: [Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](./tasks/configure-locations-wms-enabled-warehouse.md).
-1. Helyek, zónák és zónacsoportok létrehozása. A további tudnivalókért lásd: [Raktár beállításai](../../commerce/channels-setup-warehouse.md) és [Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](./tasks/configure-locations-wms-enabled-warehouse.md).
+1. Helyek, helytípusok, helyprofilok és helyformátumok létrehozása. A további tudnivalókért lásd: [Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
+1. Helyek, zónák és zónacsoportok létrehozása. A további tudnivalókért lásd: [Raktár beállításai](https://docs.microsoft.com/dynamics365/commerce/channels-setup-warehouse) és [Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/tasks/configure-locations-wms-enabled-warehouse).
 
 ## <a name="work-order-types-for-location-directives"></a>A helyutasítások munkarendelés-típusai
 
 A helyutasításokhoz beállítható mezők közül sok minden munkarendelés-típusban közös. Más mezők azonban adott munkarendelés-típusokra jellemzőek.
 
-![A helyutasítások munkarendelés-típusai.](media/Location_Directives_Work_Order_Types.png "A helyutasítások munkarendelés-típusai")
+![A helyutasítások munkarendelés-típusai](media/Location_Directives_Work_Order_Types.png "A helyutasítások munkarendelés-típusai")
 
 > [!NOTE]
 > Két munkarendelés-típust, a *Visszavont munkát* és a *Ciklikus leltározást* csak a rendszer használja. A helyutasítások nem hozhatók létre ezekhez a munkarendelés-típusokhoz.
@@ -143,14 +145,14 @@ A **Helyutasítások** gyorslap mezői a listaablak **Munkarendelés típusa** m
 - **Utasításkód** – A munkasablon, illetve a feltöltési sablon társítása irányelv kódjának kiválasztása. Az **Utasításkód** lapján új kódokat hozhat létre, amelyeket a munkasablonok vagy feltöltési sablonok helyutasításokkal való összekötésére használhat. Az utasításkódokat arra is használhatja, hogy létrehozzon hivatkozásokat a munkasablonok és helyutasítások között (mint például a raktárajtó vagy a köztes hely).
 
     > [!TIP]
-    > Ha egy utasításkód meg van adva, amikor szükség van egy munka létrehozására, a rendszer nem fog helyutasításokat fog keresni a sorszám alapján. Ehelyett utasításkód szerint fog keresni. Ilyen módon pontosabban kezelheti a helyutasításokat, melyek a munkasablonok adott lépéseként használatosak, mint például az anyagok előkészítése az egyes lépésekhez.
+    > Ha egy utasításkód meg van adva, amikor szükség van egy munka létrehozására, a rendszer nem fog helyutasításokat fog keresni a sorszám alapján. Ehelyett utasításkód szerint fog keresni. Ilyen módon pontosabban kezelheti a helysablonokat, melyek a munkasablonok adott lépéseként használatosak, mint például az anyagok előkészítése az egyes lépésekhez.
 
 - **Több SKU** – Állítsa ezt a lehetőséget *Igen* értékre, a több termékváltozat (SKU) funkció használatához egy adott helyen. Például több termékváltozatot kell engedélyezni a raktárajtó helyhez. Ha több termékváltozatot engedélyez, a betárolási hely a várt módon meg lesz adva a munkában. A betárolási hely azonban csak egy többcikkes betárolást képes kezelni (ha a munka különböző termékváltozatokat tartalmaz, amelyeket ki és be kell tárolni). Nem lesz képes kezelni egy termékváltozatos betárolást. Ha ezt a beállítást *Nem* értékre állítja, a betárolási hely csak akkor lesz megadva, ha a betárolás csak termékváltozattal rendelkezik.
 
     > [!IMPORTANT]
     > Ahhoz, hogy többcikkes és egy termékváltozatú betárolások is végrehajthatók legyenek, két azonos szerkezetű és beállítású sort kell megadnia, de a **Több termékváltozat** beállítást *Igen* értékre kell állítania az egyik sorban, és *Nem* értékre a másiknál. Ezért a betárolási műveletekhez két azonos helyutasítás szükséges, még akkor is, ha nem kell különbséget tennie az egy vagy több termékváltozat között egy munkaazonosítón. Gyakran előfordul, hogy ha nem állítja be mindkét helyutasítást, a váratlan üzleti folyamatok helyszínei az alkalmazott helyutasításból származnak. Hasonló beállítást kell használnia a **Munkatípus** *kitárolással* rendelkező utasítások esetében, ha több termékváltozatot tartalmazó rendeléseket kell feldolgoznia.
 
-    Használja a **Több termékváltozat** beállítást olyan munkasorokhoz, amelyek több cikkszámot kezelnek. (A cikkszám üres lesz a munka részleteiben, és **Több** értékkel jelenik meg a Raktárkezelés mobilalkalmazás feldolgozási lapjain.)
+    Használja a **Több termékváltozat** beállítást olyan munkasorokhoz, amelyek több cikkszámot kezelnek. (A cikkszám üres lesz a munka részleteiben, és **Több** értékkel jelenik meg a raktári alkalmazás feldolgozási lapjain.)
 
     Egy tipikus példaforgatókönyvben egy munkasablon úgy van beállítva, hogy egynél több kitárolási/betárolási párja legyen. Ebben az esetben érdemes lehet megkeresni egy adott átmeneti helyet, amelyet a **Munka típusú** *Kitárolás* sorokhoz kíván használni.
 
@@ -169,7 +171,7 @@ A **Helyutasítások** gyorslap mezői a listaablak **Munkarendelés típusa** m
     > [!NOTE]
     > Ez a mező csak olyan kiválasztott munkarendelés-típusoknál érhető el, ahol a feltöltés megengedett. A teljes listát a [Munkarendelés-típusokra jellemző mezők](#fields-specific-types) című szakaszban találhatja.
 
-- **Intézkedési kód** – Ez a mező olyan helyutasításokhoz használatos, amelyek munkarendelés-típusa *Beszerzési rendelések*, *Késztermékek betárolása* vagy *Visszárurendelések*, és munkatípusa *Betárolás*. Segítségével irányítsa a folyamatot egy adott helyutasítás használatára, a dolgozó által a Raktárkezelés mobilalkalmazásban kiválasztott intézkedési kódtól függőben. A visszaküldött árukat például a készletbe való visszaküldés előtt átirányíthatja egy ellenőrzési helyre. Az intézkedési kód készletállapothoz kapcsolható. Ily módon a készlet állapotának módosítására használható a bevételezési folyamat részeként. Például van egy *QA* intézkedési kódja, amely a készlet állapotát *QA* értékre állítja. Ezután egy külön helyutasítással áthelyezheti a készletet egy karanténhelyre.
+- **Intézkedési kód** – Ez a mező olyan helyutasításokhoz használatos, amelyek munkarendelés-típusa *Beszerzési rendelések*, *Késztermékek betárolása* vagy *Visszárurendelések*, és munkatípusa *Betárolás*. Segítségével irányítsa a folyamatot egy adott helyutasítás használatára, a dolgozó által a raktáralkalmazásban kiválasztott intézkedési kódtól függőben. A visszaküldött árukat például a készletbe való visszaküldés előtt átirányíthatja egy ellenőrzési helyre. Az intézkedési kód készletállapothoz kapcsolható. Ily módon a készlet állapotának módosítására használható a bevételezési folyamat részeként. Például van egy *QA* intézkedési kódja, amely a készlet állapotát *QA* értékre állítja. Ezután egy külön helyutasítással áthelyezheti a készletet egy karanténhelyre.
 
     > [!NOTE]
     > Ez a mező csak olyan kiválasztott munkarendelés-típusoknál érhető el, ahol a feltöltés megengedett. A teljes listát a [Munkarendelés-típusokra jellemző mezők](#fields-specific-types) című szakaszban találhatja.
@@ -237,7 +239,7 @@ Több helyutasítási műveletet is megadhat minden sornak. Még egyszer, a soro
     - **Felkerekítés a teljes azonosítótáblára és FEFO-kötegre** – Ez a stratégia egyesíti a *FEFO-köteg lefoglalása* és a *Felkerekítés a teljes azonosítótáblára* stratégiák elemeit. Csak olyan köteg-engedélyezett cikkekre és helyutasításokra érvényes, amelyek munkatípusa *Kitárolás*. A sornak köteg-engedélyezettnek kell lennie a *FEFO-köteg foglalása* stratégia használatához, és a *Felkerekítés a teljes azonosítótáblára* stratégia csak a feltöltéshez használható. Ha ez a stratégia egy helyraktározási korláttal van konfigurálva, akkor a kijelölt betárolási munka helyének túlterhelését és a készletezési korlátok figyelmen kívül hagyását okozhatja.
     - **Felkerekítés a teljes azonosítótáblára** – Ez a stratégia felfelé kerekíti a készletmennyiséget, így az megegyezik az azonosítótábla mennyiségével, és ezt a mennyiséget a kitárolandó cikkekhez is hozzárendeli. Ezt a stratégiát csak a *Kitárolás* típus feltöltési helyutasításához használhatja. Ha ez a stratégia egy helyraktározási korláttal van konfigurálva, akkor a kijelölt betárolási munka helyének túlterhelését és a készletezési korlátok figyelmen kívül hagyását okozhatja.
     - **Azonosítótábla-vezérelt** – Használja ezt a stratégiát, amikor a raktár számára kiadja a rendelést a kitárolási és betárolási munka létrehozásához. Ezt a megközelítést több azonosítótáblára is alkalmazhatja. Ez a stratégia megpróbálja lefoglalni az átmozgatási rendelés soraihoz társított azonosítótáblát tartalmazó helyeket, és megpróbál kitárolási munkát létrehozni. Ha azonban ezeket a műveleteket nem lehet végrehajtani, de továbbra is létre szeretne hozni kitárolási munkát, akkor vissza kell lépnie egy másik helyutasítási műveletstratégiára. Az üzleti folyamat követelményeitől függően érdemes lehet a raktár egy másik területén is keresni.
-    - **Üres hely, amely nem rendelkezik bejövő munkával** – Ez a stratégia az üres helyek meghatározására használható. Egy hely üresnek tekinthető, ha nincsen fizikai készlete és nincs bejövő munkája. Ezt a stratégiát csak a *Betárolás* munkatípusú helyutasításokhoz használhatja.
+    - **Üres hely, amely nem rendelkezik bejövő munkával** – Ez a stratégia az üres helyek meghatározására használható. Egy hely üresnek tekinthető, ha nincsen fizikai készlete és nincs bejövő munkája. Ezt a stratégiát csak a *Kitárolás* munkatípusú helyutasításokhoz használhatja.
     - **FIFO-helykorosítás** – Az először be, először ki (FIFO) stratégiával mind a kötegelt nyomon követett cikkek, mind a nem kötegelt követett cikkek szállíthatók a készlet raktárba érkezésének dátuma alapján. Ez a funkció különösen a nem kötegelt nyomon követett készletekben hasznos, ahol nem található lejárati dátum a rendezéshez. A FIFO-stratégia megtalálja azt a helyet, amely a legrégebbi korosítási dátumot tartalmazza, és a kitárolást a korosítási dátum alapján osztja el.
     - **LIFO-helykorosítás** – Az utoljára be, utoljára ki (LIFO) stratégiával mind a kötegelt nyomon követett cikkek, mind a nem kötegelt követett cikkek szállíthatók a készlet raktárba érkezésének dátuma alapján. Ez a funkció különösen a nem kötegelt nyomon követett készletekben hasznos, ahol nem található lejárati dátum a rendezéshez. A LIFO-stratégia megtalálja azt a helyet, amely a legújabb korosítási dátumot tartalmazza, és a kitárolást a korosítási dátum alapján osztja el.
 
@@ -249,12 +251,9 @@ Ebben az esetben két helyutasítási műveletet kell megadni. A sorozat első m
 
 ## <a name="next-step"></a>Következő lépés
 
-Miután helyutasításokat hozott létre, összekapcsolhat minden utasításkódot egy munkasablon-kóddal a munkalétrehozáshoz. Bővebb információkért lásd: [Raktári munka ellenőrzése munkasablonok és helyutasítások használatával](./control-warehouse-location-directives.md).
+Miután helyutasításokat hozott létre, összekapcsolhat minden utasításkódot egy munkasablon-kóddal a munkalétrehozáshoz. Bővebb információkért lásd: [Raktári munka ellenőrzése munkasablonok és helyutasítások használatával](https://docs.microsoft.com/dynamics365/supply-chain/warehousing/control-warehouse-location-directives).
 
 ## <a name="additional-resources"></a>További erőforrások
 
 - Videó: [Raktárkezelési konfiguráció teljes részletességgel](https://community.dynamics.com/365/b/techtalks/posts/warehouse-management-configuration-deep-dive-october-14-2020)
 - Súgótémakör: [Raktári munka ellenőrzése munkasablonok és helyutasítások használatával](control-warehouse-location-directives.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

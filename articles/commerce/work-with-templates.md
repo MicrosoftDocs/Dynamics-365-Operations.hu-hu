@@ -2,30 +2,36 @@
 title: Sablonok használata
 description: Ez a témakör a sablonokkal végzett munkát mutatja be a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: phinneyridge
-ms.date: 02/03/2022
+manager: annbe
+ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: ab6ccfac96249b39cb007d9a9fce10475f0c7149
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
-ms.translationtype: MT
+ms.openlocfilehash: a3fc4259a76f6edcfaa0b8f6e08292477c6c0835
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090794"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412875"
 ---
 # <a name="work-with-templates"></a>Sablonok használata
+
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a sablonokkal végzett munkát mutatja be a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 Ahogyan a [Sablonok és elrendezések áttekintése](templates-layouts-overview.md) szakaszban azt már ismertettük, a sablonok határozzák meg, hogy milyen lehetőségek érhetők el a későbbi szerzők számára. A sablonok több okból is hasznosak a vállalati webfejlesztői csoport számára, és a jól strukturált sablonok a következő célok elérését segítik:
 
@@ -38,7 +44,7 @@ Ahogyan a [Sablonok és elrendezések áttekintése](templates-layouts-overview.
 - Az vállalti weboldalak márkaarculatának megtartása a jóváhagyott modulelrendezési és konfigurációs beállítások definiálásával.
 
     > [!TIP] 
-    > A sikeres e-kereskedelmi webhelyek ismerős, megismételhető és márkán belüli felhasználói élmény (UX) tervezési mintákat kínálnak az ügyfeleknek. A sablonok segítségével felügyelheti a webhely konzisztenciáját.
+    > A sikeres e-kereskedelmi webhelyeken a vevők ismerős, megismételhető és a márkának megfelelő felhasználói élménnyel (UX) és tervezési mintákkal találkoznak. A sablonok segítségével felügyelheti a webhely konzisztenciáját.
 
 - Tökéletesítheti a keresőmotor optimalizálási (SEO) pontszámokat azáltal, hogy megismételhető és programozott módon meghatározott oldaldefiníciókat és metaadatokat biztosít.
 
@@ -49,7 +55,7 @@ Ahogyan a [Sablonok és elrendezések áttekintése](templates-layouts-overview.
 
 A sablonok a sablonszerkesztővel módosíthatók.
 
-A sablonszerkesztő megnyitásához a Commerce webhelykészítőben kövesse az alábbi lépések egyikét:
+A sablonszerkesztő megnyitásához hajtsa végre a következő lépések valamelyikét:
 
 - A webhely navigációs ablakában válassza ki a **Sablonok** lehetőséget, majd válassza ki a módosítani kívánt sablont.
 - Egy meglévő lap lapszerkesztőjében válassza ki a felső csomópontot a bal oldali vázlatfában. Ezt követően a jobb oldali tulajdonságlapon válassza a **Sablon szerkesztése** elemet.
@@ -66,7 +72,7 @@ A bal oldali vázlatfa nézet a származtatott elrendezések és lapok számára
 
 ## <a name="create-a-new-template"></a>Új sablon létrehozása
 
-Ha új sablont szeretne létrehozni a Webhelykészítőben, kövesse az alábbi lépéseket.
+Új sablon létrehozásához kövesse az alábbi lépéseket.
 
 1. A webhely navigációs ablakában válassza ki a **Sablonok** lehetőséget a vizsgáló nézet megnyitásához
 1. Válassza az **Új sablon** lehetőséget.
@@ -85,7 +91,7 @@ A sablon most technikailag érvényes, elmenthető, bejelölhető és az új lap
 
 ## <a name="add-a-header-and-a-footer"></a>Fejléc és lábléc felvétele
 
-Ha webhelye már rendelkezik fejlécrészlettel, kövesse az alábbi lépéseket a webhelykészítőben fejléc és lábléc hozzáadásához a sablonhoz.
+Ha a webhelyhez már tartozik fejléctöredék, akkor az alábbi lépésekkel lehet fejlécet és láblécet hozzáadni egy sablonhoz.
 
 1. A fastruktúrában bontsa ki a **Szövegtörzs** helyet és származtatott lapmodulját.
 1. Válassza ki **Fejléc** helyet.
@@ -98,7 +104,7 @@ Ha a webhely még nem tartalmaz fejléctöredéket, akkor tekintse meg a [Töred
 
 ## <a name="change-the-template-theme"></a>A sablontéma módosítása
 
-A sablont használó összes oldal alapértelmezett témájának beállításához kövesse az alábbi lépéseket a webhelykészítőben.
+A sablont használó összes lap alapértelmezett témájának beállításához hajtsa végre az alábbi lépéseket.
 
 1. A bal oldali fastruktúrán bontsa ki a **Törzs** helyét.
 1. Válassza ki a **Törzs** helyen a lap tárolóját (például **Alapértelmezett lap**).
@@ -110,7 +116,7 @@ Alapértelmezés szerint az összes új lap a kiválasztott témát fogja haszn�
 
 A JavaScript-elemeket tartalmazó HTML **&lt;parancsfájlokat&gt;** is felvehet a sablonba. Ily módon alapértelmezett parancsfájl-viselkedéseket adhat meg a lapok HTML-fejléce, a szövegtörzs kezdete és a szövegtörzs vége számára.
 
-Ha szkriptet szeretne hozzáadni egy sablonhoz a Webhelykészítőben, kövesse az alábbi lépéseket.
+Parancs hozzáadásához a sablonhoz tegye a következőket:
 
 1. A bal oldali fastruktúrában válassza ki azt a helyet, amelyhez hozzá szeretné adni a **&lt;parancsfájl&gt;** elemét (például a HTML-fejléc, a törzs kezdete vagy a törzs vége).
 1. Válassza ki a helyhez tartozó három pont gombot, majd válassza a **Modul hozzáadása** elemet.
@@ -123,7 +129,7 @@ Ha szkriptet szeretne hozzáadni egy sablonhoz a Webhelykészítőben, kövesse 
 
 ## <a name="save-check-in-preview-and-publish-a-template"></a>Sablon mentése, beadása, előnézete és közzététele
 
-Ha menteni és bejelentkezni szeretne egy sablont a Webhelykészítőben, kövesse az alábbi lépéseket.
+Egy sablonként mentéséhez és beadásához kövesse az alábbi lépéseket.
 
 1. A sablonszerkesztő felső részén válassza a **Mentés** parancsot. A mentett módosítások nem érintik az alsóbb szintű lapokat mindaddig, amíg nincsenek beadva.
 1. Válassza a **Szerkesztés befejezése** lehetőséget. A módosítások most már felderíthetők az alsóbb szintű munkafolyamatok számára.
@@ -139,23 +145,8 @@ Miután megtekintette a sablon módosításainak előnézetét, kövesse az alá
 > [!WARNING]
 > Amikor a közzé lett téve egy sablon vagy más tartalomkezelő rendszer (CMS) elem, az az interneten felderíthető. Ne tegyen közzé dokumentumokat vagy eszközöket mindaddig, amíg készen nem áll azok nyilvánossá tételére. A mentett és beadott, de a nem közzétett dokumentumváltotok csak a hitelesített rendszerfelhasználók számára érhetők el.
 
-## <a name="rename-a-template"></a>Sablon átnevezése
-
-Ha át szeretne nevezni egy meglévő sablont a Webhelykészítőben, kövesse az alábbi lépéseket.
-
-1. A bal oldali navigációs panelen válassza a lehetőséget **Sablonok**.
-1. Válassza ki az átnevezni kívánt sablon sablonnevét.
-1. Válassza ki **Szerkesztés** a sablon szerkesztésének megkezdéséhez. Vegye figyelembe, hogy nem szerkesztheti a sablont, ha valaki más már szerkeszti a sablont.
-1. A sablon tulajdonságai panelen válassza ki a toll szimbólumot a sablon neve mellett.
-1. Szükség szerint szerkessze a sablon nevét.
-1. Jelölje be a pipát a névváltoztatás megerősítéséhez.
-1. Válassza a **Szerkesztés befejezése** lehetőséget.
-
 ## <a name="additional-resources"></a>További erőforrások
 
 [Sablonok és elrendezések áttekintése](templates-layouts-overview.md)
 
 [Előre beállított elrendezések használata](work-with-layouts.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,8 +2,11 @@
 title: NUMBERVALUE ER-függvény
 description: A témakör tájékoztatást nyújt a NUMBERVALUE Elektronikus jelentéskészítési (ER) függvény használatának módjáról.
 author: NickSelin
+manager: kfend
 ms.date: 12/05/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -14,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcb76310a53c86b68f18085e203d11f405b16946a25fe1be67e649f83335d1f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d3eec6dc5a472f366c9029456fe05cf1e431e1c5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733797"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4685979"
 ---
 # <a name="numbervalue-er-function"></a>NUMBERVALUE ER-függvény
 
@@ -60,6 +63,3 @@ A `NUMBERVALUE( "1 234,56", ",", " ")` az **1234,56** értéket adja vissza.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Típuskonverziós függvények](er-functions-category-type-conversion.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

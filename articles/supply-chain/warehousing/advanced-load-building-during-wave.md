@@ -2,23 +2,26 @@
 title: Speciális rakomány-összeállítás hullám közben
 description: Ez a témakör a speciális hullámrakomány-összeállítással kapcsolatban tartalmaz tájékoztatást, amely összeállítás a hullám-végrehajtás során automatikusan hozzárendeli a szállítmányokat a meglévő hullámokhoz. Ebből következően olyan releváns rakományokat hozhat létre, amelyek a rakománytervezés munkaterületének használata nélkül jelölik a teherautókat.
 author: mirzaab
+manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPostMethod,WHSWaveTemplateTable,WHSLoadMixGroup,WHSLoadBuildTemplate, WHSWaveTableListPage, TMSLoadBuildTemplateApply, TMSLoadBuildTemplates, TMSLoadBuildTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 08e44b4e37f28ec91eeb8e53930de5133607bd66
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.9
+ms.openlocfilehash: 7f51b3d65c8dd1e11296956c37ef9dfe568e5ec2
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574737"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654198"
 ---
 # <a name="advanced-load-building-during-wave"></a>Speciális rakomány-összeállítás hullám közben
 
@@ -247,6 +250,3 @@ Ez a példa azt mutatja be, hogy az ebben a témakörben korábban ismertetett b
 1. A most létrehozott értékesítési rendelésben az **Értékesítési rendelés sorai** gyorslapon válassza ki a **Sor hozzáadása** lehetőséget, ha másik sort szeretne hozzáadni.
 1. Ebben az új sorban állítsa be a **Cikkszám** mezőt *M9200* és a **Mennyiség** mezőt *1* értékre.
 1. A sorfoglaláshoz és a raktárba történő kiadáshoz ismételje meg a 6–9. sort. Mint korábban, a rendszer **új** szállítmányt hoz létre a hozzáadott sorhoz. Mivel azonban a tétel **CarAudio** elemcsoportból származik, **nem továbbítja a rakománykombinációs csoporthoz beállított megszorításokat**. Emiatt a rendszer **egy új rakományhoz adja hozzá**. Ha nem adott meg rakománykombinációs csoportot a rakomány-összeállítási sablonban, akkor ez a szállítmány hozzá lett adva az első rakományhoz.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Termékszerkezetek kiadása
 description: Ez a témakör azt mutatja be, hogyan lehet a teljes termékszerkezeteket a termékekkel és azok mérnöki verzióikkal együtt kiadni. Így biztosíthatja, hogy a mérnökileg releváns termékadatokat könnyen újra fel lehessen használni a különböző jogi személyekben.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductReleaseSiteBulkEdit, EngChgProductReleaseSendListPage, EngChgProductReleaseSendDetails,EngChgProductReleaseSelection,EngChgProductReleaseReceiveListPage, EngChgProductReleaseReceiveDetails, EngChgProductReleasePreviewPane, EngChgProductReleasePolicy, EngChgProductReleasePart, EngChgProductReleaseNote
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4dc1b073350044ef8afb765470ed14da88a70fdd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 971ff16b862a48581365523edc6b64052b29c380
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567487"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967231"
 ---
 # <a name="release-product-structures"></a>Termékszerkezetek kiadása
 
@@ -75,6 +77,8 @@ A termék elfogadásával kapcsolatos példát a következő témakörben talál
 
 Nem minden operatív vállalatnak van szüksége ugyanarra a termékadatokra. Általában a mérnöki termékeket előállító operatív vállalatok ANYAGJEGYZÉKET igényelnek, míg a mérnöki termékeket csak forgalmazó vállalatok nem igényelnek ANYAGJEGYZÉKET. A kiadási irányelvek segítségével lehet létrehozni a termékek kiadásához használt paramétereket.
 
+A mérnöki termékek esetében a kiadási irányelvet a mérnöki termékkategóriában rendelik hozzá, és a mező kötelező. A szabványos termékek esetében a program a hozzárendelt termékhez rendeli hozzá az irányelvet, és a mező nem kötelező.
+
 A mérnöki termékkategóriákkal kapcsolatos további tudnivalókat lásd: [Mérnöki verziók és a mérnöki termékkategóriák](engineering-versions-product-category.md).
 
 A kiadási folyamat során befolyásolhatja a beállításokat.
@@ -103,7 +107,6 @@ A termék kiadási irányelveivel való munkavégzéshez menjen a **Mérnöki v�
 | Mező | Leírás |
 |---|---|
 | Terméktípus | Válassza ki, hogy az irányelv a *Cikk* vagy a *Szolgáltatás* típusának termékeit érinti-e. A rekord mentése után a beállítás nem módosítható. |
-| Termelés típusa | Ez a mező csak akkor látható, ha engedélyezte a [receptúrák változásának kezelését](manage-formula-changes.md). Válassza ki azt a termelési típust, amelyre ez a kiadási házirend vonatkozik:<ul><li>**Társtermék** – ezzel a kiadási házirenddel kezelheti a társtermékeket. A társtermékek előállítása a folyamatszerű gyártás során történik; az ilyen termékeknek nincs verziószáma, és ezek nem tervezési termékek. A társtermékekre vonatkozó kiadási irányelvek segítségével gondoskodhat arról, hogy fontos beállításokat (például **Tárolásidimenzió-csoport** vagy **Nyomonkövetésidimenzió-csoport**) a kiadott termék sablonjával, még a vállalatnak való kiadás előtt állítsa be.</li><li>**Melléktermék** – ezzel a kiadási házirenddel kezelheti a melléktermékeket. A melléktermékek előállítása a folyamatszerű gyártás során történik; az ilyen termékeknek nincs verziószáma, és ezek nem tervezési termékek. A melléktermékekre vonatkozó kiadási irányelvek segítségével gondoskodhat arról, hogy fontos beállításokat (például **Tárolásidimenzió-csoport** vagy **Nyomonkövetésidimenzió-csoport**) a kiadott termék sablonjával, még a vállalatnak való kiadás előtt állítsa be.</li><li>**Nincs** – ezzel a házirendvel kezelheti az olyan normál termékeket, amelyeknek nincs verzószáma vagy amelyek nem tervezési termékek, illetve a társtermékeket és a melléktermékeket.</li><li>**Tervezési cikk** – ezzel a kiadási házirenddel kezelheti a folyamatszerű gyártással előállított tervezett cikkeket. A tervezési cikkek receptúrákat használnak. Hasonlítanak a receptúrás cikkekhez, de csak társ- és melléktermékek előállításához használatosak, késztermékekéhez nem.</li><li>**Anyagjegyzék** – ezzel a kiadási házirenddel az olyan tervezési termékek kezelhetők, amelyek nem használnak receptúrát, és jellemzően (de nem feltétlenül) anyagjegyzékeket tartalmaznak.</li><li>**Receptúra** – ezzel a kiadási házirenddel kezelheti a folyamatszerű gyártással előállított befejezett cikkeket. Ezek a cikkek majd rendelkeznek receptúrával, anyagjegyzékkel viszont nem.</li></ul> |
 | Sablonok alkalmazása | Válassza ki a következő lehetőségek egyikét, és adja meg, hogy a kiadási sablonokat milyen módon kell alkalmazni az irányelv használatakor:<ul><li>**Mindig** – A sablon kiadott terméket mindig kiadásokhoz kell használni. Ha ezt a lehetőséget választja, akkor a **Minden termék** gyorslap segítségével megadhatja az egyes vállalatokhoz használt sablont. Ha a **Minden termék** gyorslapon felsorolt vállalatok esetében nem ad meg sablont, akkor hibaüzenet jelenik meg az irányelv mentésekor.</li><li>**Nem kötelező** – Ha egy sablonban kiadott termék van megadva egy olyan vállalathoz, amely a **Minden termék** gyorslapon szerepel, akkor a program a vállalatnak történő kiadáskor fogja használni a sablont. Ellenkező esetben a program nem használ sablont. Ha ezt a lehetőséget választja, akkor mentheti az irányelvet, anélkül, hogy sablonokat rendelne minden vállalathoz. (Figyelmeztetés nem fog megjelenni.)</li><li>**Soha** – Semmilyen sablon kiadott terméket nem fognak használni a vállalatokhoz, amelyeknek kiad, még akkor sem, ha a sablon meg van adva a **Minden termék** gyorslapon. A sablon oszlopai nem lesznek elérhetők.</li></ul> |
 | Aktív | Ezzel a beállítással lehet karbantartani a kiadási irányelveket. Az összes használt kiadási irányelv esetében állítsa *Igen* értékre. *Nem* értékre állításával inaktívként jelölheti meg a kiadási irányelvet, ha nincsen használatban. Ne feledje, hogy nem lehet inaktiválni egy mérnöki termékkategória számára hozzárendelt kiadási irányelvet, és csak az inaktív kiadási irányelveket lehet törölni. |
 
@@ -156,6 +159,3 @@ Ez a viselkedés csak akkor érvényes, ha a termék közvetlenül van kiválasz
 Az X termék például a *Design kabinetek* terméktulajdonosi csoportjához vannak hozzárendelve. Az X termék az Y termék AJ része is, amely a *Design hangszórók* terméktulajdonosi csoportjához van hozzárendelve. Ha egy felhasználó a *Design hangszórók* terméktulajdonosi csoporttól kiadja az Y terméket és annak anyagjegyzékét, akkor az X termék az Y termékkel együtt fog megjelenni.
 
 További információ: [Terméktulajdonosok](product-owner.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

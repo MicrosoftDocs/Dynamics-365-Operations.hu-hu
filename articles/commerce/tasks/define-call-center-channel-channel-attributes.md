@@ -2,22 +2,25 @@
 title: Hívásközponti csatornák létrehozása és a csatornák attribútumainak meghatározása
 description: Ez az eljárás végigvezeti egy új csatorna létrehozásának, és a csatornaattribútumok megadásának lépésein.
 author: mugunthanm
+manager: AnnBe
 ms.date: 05/22/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 444ffddab3df2d937725b9e1f3145eaece3db12844f4fb464f06a82db366579d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a2f99029195a8b783f0d12990d4e8bab0bb348d7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716809"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412908"
 ---
 # <a name="create-call-center-channels-and-define-channel-attributes"></a>Hívásközponti csatornák létrehozása és a csatornák attribútumainak meghatározása
 
@@ -97,6 +100,3 @@ Ez az eljárás végigvezeti egy új kereskedelmi csatorna létrehozásának, é
 65. Kattintson a Mentés gombra.
 66. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

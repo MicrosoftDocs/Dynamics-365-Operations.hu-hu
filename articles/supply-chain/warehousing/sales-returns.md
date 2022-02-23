@@ -1,26 +1,29 @@
 ---
 title: Értékesítési visszáruk
 description: Ez a témakör a visszárurendelések folyamatáról nyújt tájékoztatást. Magában foglalja a vevői visszárura vonatkozó információkat, valamint azok hatását a költségszámításra és a készletek mennyiségére.
-author: Mirzaab
+author: omulvad
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnTable, ReturnTableListPagePreviewPane, ReturnTableReferences, SalesReturnExpiredOrdersPart, SalesReturnFindOrderFormPart
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cfcfd165b5f7b97d1ee88175b3f6c9d418c30c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fd194042303797fe41507065d0d7e4df28309cfb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565279"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429310"
 ---
 # <a name="sales-returns"></a>Értékesítési visszáruk
 
@@ -33,7 +36,7 @@ A vevők számos különböző ok miatt küldhetnek visszárut. Például lehet,
 ## <a name="return-order-process"></a>Visszárurendelés folyamata
 A következő ábrán áttekinthető a visszárufolyamat.  
 
-[![Visszárurendelés folyamata.](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![Visszárurendelés folyamata](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 Kétféle visszárufeldolgozás létezik: a fizikai visszáru és a csak jóváírás.
 
@@ -62,7 +65,7 @@ Anyagok engedély (RMA) visszáruk feldolgozása épül értékesítési rendel�
 ## <a name="create-a-return-order"></a>Visszárurendelés létrehozása
 A visszáru-rendelési folyamat elindul, amikor egy ügyfél a szervezet vissza a hibás vagy nem kívánt terméket és/vagy jóváírandó. Miután a szervezet elfogadta a return, a return visszáru rendelés ismertetését. A visszárurendelés tájékoztatási központjának, a visszaküldött termék belső feldolgozás válik. Az alábbi ábrán látható a visszáru rendelés létrehozása.  
 
-[![Visszárurendelés létrehozása.](./media/salesreturn02.png)](./media/salesreturn02.png)
+[![Visszárurendelés létrehozása](./media/salesreturn02.png)](./media/salesreturn02.png)
 
 ### <a name="create-a-return-order-header"></a>Új visszárurendelés létrehozása
 
@@ -177,7 +180,7 @@ Annak meghatározása, hogy milyen a térti áruk értékesítik, mellett intéz
 ## <a name="arrival-at-the-warehouse-for-inspection"></a>Érkezzen meg a raktárba ellenőrzésre
 Visszaküldött cikkeket készletre könyvelésével egy szállítólevélen fizikailag kap, mielőtt a cikkek beérkezésének regisztrációja és nem kötelező ellenőrzést kell lépnie. A következő ábrán áttekinthető az érkeztetési folyamat. Az alábbi részek minden lépés, amely az ábrán látható.  
 
-[![Érkeztetési folyamat.](./media/salesreturn03.png)](./media/salesreturn03.png)  
+[![Érkeztetési folyamat](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
 A folyamat számos egyéb változattal rendelkezik, melyek nem szerepelnek ebben a témakörben. Az alábbiakban látható néhány ilyen változat:
 
@@ -220,7 +223,7 @@ Helyettesítő termék kezelésének két módszere van:
 
 Az elülső csere során a csereeszköz a termék visszaküldése előtt szállítható az ügyfélnek. Ez a módszer akkor hasznos, ha például az elem egy olyan géprész, amelyet nem lehet eltávolítani, kivéve, ha pótalkatrész áll rendelkezésre a helyére, vagy csak azt szeretné, hogy az ügyfél a lehető leghamarabb megtalálja a cserealkatrészeket. Az előzetescsere-rendelés független értékesítési rendelés. A fejlécinformáció az ügyféltől inicializálódik, a sorinformáció pedig a visszáru-rendelésből inicializálódik. A csererendelést a visszárurendeléstől függetlenül szerkesztheti, feldolgozhatja és törölheti. Ha töröl egy csererendelést, kap egy üzenetet, hogy a rendelés helyettesítő rendelésként lett létrehozva. A következő ábrán az előzetes csere folyamata látható.  
 
-![Előzetes csere folyamata.](./media/SalesReturn04.png)
+![Előzetes csere folyamata](./media/SalesReturn04.png)
 
 A visszárurendelés hivatkozást tartalmaz a csererendelésre. Ha a hibás tétel visszaszolgáltatása előtt egy visszaállítási sorrendet hoz létre a visszatérési megrendeléshez, a hibás tétel visszaadását követően nem választhatja ki a helyreállítási kódokat.
 
@@ -228,7 +231,7 @@ A visszárurendelés hivatkozást tartalmaz a csererendelésre. Ha a hibás tét
 
 Ha az ügyfélnek szállított egy cserecikket, és használja a **csere és selejtezés** vagy **csere és jóváírás** a visszárurendelés intézkedési művelet használata a folyamat, amely az alábbi ábrán látható.  
 
-![Helyettesítő folyamatot egy intézkedéskód használatakor.](./media/SalesReturn05.png)
+![Helyettesítő folyamatot egy intézkedéskód használatakor](./media/SalesReturn05.png)
 
 A csereeszköz önálló értékesítési megrendeléssel, a helyettesítő értékesítési rendeléssel történik. Ez az értékesítési rendelés a visszáru-rendelés szállítólevelének létrehozásakor jön létre. A rendelés fejlécében a visszáru rendelés fejen a hivatkozott vevőtől származó adatokat használja. A sor adatgyűjtés megadott adatok alapján a **Helyettesítő cikk** oldalon. A **Helyettesítő cikk** lapot ki kell tölteni intézkedési műveleteket a word "csere." kezdetű sorok Azonban a mennyiség és a helyettesítő cikk azonosításával járó nem érvényesített vagy korlátozott. Ez a viselkedés lehetővé teszi, hogy olyan esetekben, ahol a vevő szeretné ugyanazt a cikket, de egy másik konfigurációt vagy méretét, valamint esetekben azt szeretné, ahol a vevők egy teljesen másik elemet. Alapértelmezés szerint egy azonos elemet meg a **Helyettesítő cikk** oldalon. Választhatja azonban egy másik elemet, feltéve, hogy a funkció be van állítva. 
 
@@ -268,7 +271,7 @@ Visszárurendelések hajtható végre a szervezeten belül a két vállalat köz
 
 Az alábbi ábra a minimális telepítés, szükség a két részt egy vállalatközi kapcsolatot, és kihasználják a vállalatközi kereskedelmi vállalat.  
 
-![Minimális beállítás.](./media/SalesReturn06.png)
+![Minimális beállítás](./media/SalesReturn06.png)
 
 A következő forgatókönyvben a CompBuy a vevő vállalat és a CompSell az eladó vállalat. Általában az eladó vállalat hajók áru a vásárló vállalatnak vagy, közvetlen kiszállítás szállítólevél esetekben közvetlenül a végső vevő számára. A CompBuy, a Vállalatközi szállító\_CompSell a meghatározás szerint egy vállalatközi végponthoz társított a vállalat CompSell. Ugyanakkor a CompBuy, a Vállalatközi szállító\_CompSell a meghatározás szerint egy vállalatközi végponthoz társított a vállalat CompBuy. A megfelelő intézkedéseket a házirend részletei és értékmegfeleltetések mindkét vállalat meg kell határozni. Egy vállalatközi, egyben a vállalatközi értékesítési rendelés, visszáru rendelés közvetlen kiszállítás szállítás esetén az eladó vállalat létrejön. A vállalatközi visszáru rendelés RMA-szám RMA számsorozat CompSell kell kivételezni, vagy az RMA-szám CompBuy az eredeti visszárurendelés rendelt átmásolható. Az RMA szám beállításait a **PurchaseRequisition** CompBuy a műveleti irányelv határozza meg ezeket a műveleteket. Ha az RMA-szám szinkronizálása, meg kell terveznie szám ütközés kockázatának csökkentése, ha a két vállalat használja ugyanazt a számsorozatot.
 
@@ -276,7 +279,7 @@ A következő forgatókönyvben a CompBuy a vevő vállalat és a CompSell az el
 
 Ebben az esetben a két vállalat a szervezethez, az alábbi ábrán látható módon.  
 
-![Egyszerű vállalatközi visszáruk.](./media/SalesReturn07.png)
+![Egyszerű vállalatközi visszáruk](./media/SalesReturn07.png)
 
 A rendelési lánc akkor jöhet létre, ha a vevő vállalatnál létrehoznak egy szállítói visszárurendelést, illetve amikor az eladó cégnél létrehoznak egy vevői visszárurendelést. Megfelelő rendelést hoz létre a megfelelő sorrendben a másik társasághoz, és meggyőződik arról, hogy a fej és sor-információt a szállítói visszáru rendelés tükrözi a beállításokat a vevő a visszáru rendelésben. A létrehozott visszáru rendelést vagy kihagyhatjuk vagy beszámíthatjuk a hivatkozás (**Értékesítési rendelés keresése**) egy meglévő vevő számlát. A csomagjegyzékek és számlák két rendelések dolgozhatók fel külön-külön. Például nem kell létrehozni a szállítói visszáru rendelés csomagjegyzékét a Vevői visszáru rendelés csomagjegyzékének elkészítése előtt.
 
@@ -284,7 +287,7 @@ A rendelési lánc akkor jöhet létre, ha a vevő vállalatnál létrehoznak eg
 
 Ebben az esetben állapítható meg, ha egy korábbi értékesítése a **a közvetlen szállítást** típus van-e töltve, és ha számlával szemben a vevő szerepel a vállalat kommunikáló az ügyféllel. Az alábbi ábrán a CompBuy vállalat korábban termékeket adott el és számlázott ki az Extern ügyfélnek. A termékek a vállalat CompSell közvetlenül a leszállították a vevőnek egy vállalatközi láncon keresztül.  
 
-![Közvetlen kiszállítás visszárui három fél között.](./media/SalesReturn08.png)
+![Közvetlen kiszállítás visszárui három fél között](./media/SalesReturn08.png)
 
 Ha Extern vevő vissza szeretné küldeni a termékeket, akkor visszárurendelés (RMA02) jön létre a vevő számára a CompBuy vállalatnál. A vállalatközi lánc létrehozásához a visszáru-rendelést közvetlen kiszállításra kell jelölni. Használata esetén a **található értékesítési rendelés** a vevői számla visszaállításához válasszon függvény létrejön egy vállalatközi lánc, amely a következő dokumentumokat:
 
@@ -306,7 +309,7 @@ Az alábbi példákban a visszáru-önköltségi ára ábrázolva **számlaenged
 
 A visszárurendelés nem hivatkozhat a vevői számla A visszárucikk létrejön. A **Jóváírás korrekciója** paraméter nincs kijelölve, ha létrejön a visszáru-rendelés számlája vagy jóváírása.  
 
-![Visszárurendelés nem hivatkozik a vevő számlára.](./media/SalesReturn09.png)  
+![Visszárurendelés nem hivatkozik a vevő számlára](./media/SalesReturn09.png)  
 
 >[Megjegyzés!] A cikkár fő része lesz az alapértelmezett érték a **Visszáru-önköltségi ár** paraméter. Az alapértelmezett ár készletkiadás alkalmával az önköltségi ár eltér. A tényezők ezért 3 veszteség keletkezett. Ezenkívül a visszáru rendelést az eladási rendelésen a vevőnek adott engedmény nem tartalmaz. Ezért a túlzott követel következik be.
 
@@ -314,7 +317,7 @@ A visszárurendelés nem hivatkozhat a vevői számla A visszárucikk létrejön
 
 2. példa megegyezik 1,. példa, de a **hitel javítás** paraméter meg van jelölve, ha a visszáru-rendelési számla jön létre.  
 
-![A jóváírás-korrekció kijelöltük a visszárurendelés.](./media/SalesReturn10.png)  
+![A jóváírás-korrekció kijelöltük a visszárurendelés ](./media/SalesReturn10.png)  
 
 >[Megjegyzés!] Negatív helyesbítés főkönyvi feladások kerülnek.
 
@@ -322,12 +325,9 @@ A visszárurendelés nem hivatkozhat a vevői számla A visszárucikk létrejön
 
 A visszáru-rendelési sor létrejön az **Értékesítési rendelés keresése** funkció használatával A **Hitel javítás** paraméter nincs bejelölve, a számla létrehozásakor.  
 
-![A visszáru-rendelési sor létrejön az eladási rendelés keresés funkció használatával.](./media/SalesReturn11.png)  
+![A visszáru-rendelési sor létrejön az eladási rendelés keresés funkció használatával ](./media/SalesReturn11.png)  
 
->[Megjegyzés!] Az **Engedmény** és a **Visszáru-önköltségi ár** mezők helyesen vannak beállítva. Ezért a vevői számla pontos sztornírozása következik be.
-
-
+>[Megjegyzés!] Az **Engedmény** és a **Visszáru-önköltségi** ár mezők helyesen vannak beállítva. Ezért a vevői számla pontos sztornírozása következik be.
 
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,40 +1,38 @@
 ---
-title: A kérdőívek megtekintése és az eredmények kiértékelése
-description: Ez a témakör ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait.
-author: twheeloc
-ms.date: 10/28/2021
+title: A kérdőívek eredményeinek megtekintése és kiértékelése
+description: Ez a cikk ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dc71748a5081b90feb69ed0da936c42b4d0e572a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: ceb21af75dca2756d8e07f315ddee0246554c854
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070702"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418909"
 ---
-# <a name="view-and-evaluate-the-results-of-questionnaires"></a>A kérdőívek megtekintése és az eredmények kiértékelése
+# <a name="view-and-evaluate-the-results-of-questionnaires"></a>A kérdőívek eredményeinek megtekintése és kiértékelése
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Ez a témakör ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait. 
+Ez a cikk ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött kérdőívek válaszait. 
 
 Ha a válaszadók kitöltötték a kérdőívet, megtekintheti, valamint kiértékelheti a kérdőív eredményét az alábbi módokon:
 
 -   **Befejezett válaszmunkamenetek** – A válaszadók által kitöltött kérdőívek részleteinek megtekintése, valamint a válaszok és elért pontok összesítésére szolgáló jelentés létrehozása.
--   **Eredmény csoportok** – A kérdőív eredménycsoportjainak és statisztikájának megtekintése. Az eredménycsoport statisztikái egy kérdőív egyetlen válaszmenetére vagy az összes válaszadásra is előállíthatók.
+-   **Eredmény csoportok** – A kérdőív eredménycsoportjainak és statisztikájának megtekintése. Az eredménycsoport statisztikája létrehozható a kérdőív egyetlen válaszmunkamenetéhez, illetve az összes válaszmunkamenethez.
 -   **Kérdőív-statisztika** – A válaszadók bizonyos csoportjához tartozó statisztika kiszámítási feltételeinek megadása.
 
 Létrehozhat az eredmények megtekintéséhez személy, válaszmunkamenet vagy eredménycsoport alapján rendezett jelentéseket. Az alábbi jelentések érhetőek el a kitöltött kérdőívekhez:
@@ -74,5 +72,3 @@ Használhat kérdőív statisztikákat a kitöltött kérdőívek eredményének
 -   Válassza ki, vagy ellenőrizze az eredmények kiértékelésének feltételeit, válaszadó vagy a kérdői jellemzője alapján. Például az **Irányítószám** kiválasztásával kiértékelheti a válaszadó helye és helyes válaszai közti korrelációt.
 
 A program menti a megadott beállításokat, így ezek az eredmények ismételt újraszámításakor felhasználhatók.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

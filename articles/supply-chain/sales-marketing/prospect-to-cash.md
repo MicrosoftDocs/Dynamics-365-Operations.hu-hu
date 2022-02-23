@@ -1,27 +1,30 @@
 ---
 title: A potenciális ügyfelek készpénzre váltása
 description: Ez a témakör a Potenciális vevő készpénzre váltása megoldásról a Dynamics 365 Supply Chain Management és a Dynamics 365 Sales között megoldásról nyújt áttekintést.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 04/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: b96f22d711ce5b34c2f8de5a86caf5f89dd3f337
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 55c39fac40498488519fcb539b3c3f7560a46b30
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7578992"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429446"
 ---
 # <a name="prospect-to-cash"></a>A potenciális vevők készpénzre váltása
 
@@ -79,6 +82,3 @@ A Potenciális ügyfelek készpénzre váltása megoldás használatához telep�
 
 - Dynamics 365 Sales, verzió: 1612 (8.2.1.207) (DB 8.2.1.207) online vagy későbbi verzió.
 - A potenciális ügyfelek készpénzre váltása megoldás Dynamics 365 Sales szolgáltatáshoz, 1.15.0.0 vagy későbbi verzió. A megoldás letölthető az AppSource felületéről. [Töltse le a Dynamics 365, potenciális vevő készpénzfizetési](https://appsource.microsoft.com/product/dynamics-365/mscrm.c7a48b40-eed3-4d67-93ba-f2364281feb3).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

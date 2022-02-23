@@ -2,28 +2,32 @@
 title: Tranzakciós e-mailek testreszabása kézbesítési mód szerint
 description: Ez a témakör azt ismerteti, hogy miként állíthat be egyéni e-mail sablonokat a Microsoft Dynamics 365 Commerce adott értesítési típusaihoz és kézbesítési módjaihoz.
 author: stuharg
+manager: annbe
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Commerce, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: d15e7c5c7050ad373cb45da72de59416e85a5f2034f7a11b007d497b2e2b98bd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: faf5fba70bf9297727464e6046806696ab725001
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749907"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594969"
 ---
 # <a name="customize-transactional-emails-by-mode-of-delivery"></a>Tranzakciós e-mailek testreszabása kézbesítési mód szerint
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör azt ismerteti, hogy miként állíthat be egyéni e-mail sablonokat a Microsoft Dynamics 365 Commerce adott értesítési típusaihoz és kézbesítési módjaihoz.
 
@@ -69,6 +73,3 @@ Ha a Commerce központban bizonyos kézbesítési módokhoz szeretne e-mail sabl
 [Hívásközponti rendelések létrehozása](tasks/create-call-center-orders.md)
 
 [Szállítási mód módosítása a pénztárban](pos-change-delivery-mode.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

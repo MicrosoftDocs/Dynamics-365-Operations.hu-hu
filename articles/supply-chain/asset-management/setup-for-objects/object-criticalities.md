@@ -1,10 +1,12 @@
 ---
 title: Eszközkritikusságok típusai
 description: Ez a témakör bemutatja az eszközkritikussági típusokat az Eszközkezelés modulban.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetCriticality, EntAssetObjectCriticality
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f9edf55c22375a66fda04ae7ff76d7a0a191140e5ffb3a377b9ac1a7ba604a8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9d2c5e8b6676abf03fe0d3de8b23f125713d6f2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776920"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021704"
 ---
 # <a name="asset-criticality-types"></a>Eszközkritikusságok típusai
 
@@ -40,7 +42,7 @@ A kritikusság beállításához először létre kell hozni a kritikusságtípu
 4. A **Név** mezőbe írja be a kritikussátípus nevét.
 5. A **Szorzó** mezőben adjon meg egy szorzót. A rendszer ezt a szorzót használja a munkarendelés-ütemezés számítása során, amellyel megállapítja a használandó kritikusságrekordot. (A rendszer mindig a legmagasabb szorzójú rekordot használja.) Ez a beállítás akkor releváns, ha – ahogy a következő ábrán látható – olyan kritikussági sorokat hoznak létre, amelyek kritikussági értéke megegyezik.
 
-    ![Kritikussági típusok oldal.](media/23-setup-for-objects.png)
+    ![Kritikussági típusok oldal](media/23-setup-for-objects.png)
 
 ## <a name="set-up-asset-criticalities"></a>Eszközkritikusságok beállítása
 
@@ -59,6 +61,3 @@ A kritikusság beállításához először létre kell hozni a kritikusságtípu
 - A program minden alkalommal újraszámolja a munkarendelésen szereplő kritikusságot, amikor a munkarendeléshez hozzáadnak vagy róla eltávolítanak egy munkarendelési sort.
 - Ha a munkarendelés számos munkarendelési feladatot tartalmaz, akkor a rendszer mindig a **Kritikusságtípus** oldal **Szorzó** mezője szerinti legmagasabb kritikusságút használja a munkarendelésen.
 - Általában az eszközök kritikussága idővel változhat. A kritikusságot új berendezések vásárlása, felújítások stb. befolyásolhatják. Javasoljuk az eszközkritikusságok rendszeres időközönkénti felülvizsgálatát (például évente egyszer vagy kétévente), hogy biztosítsa, hogy a kritikussági meghatározások megfelelnek az aktuális termelési beállításoknak.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

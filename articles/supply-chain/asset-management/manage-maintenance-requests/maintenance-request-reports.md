@@ -1,10 +1,12 @@
 ---
 title: Karbantartáskérési jelentések
 description: Ez a témakör azt mutatja be, hogyan lehet a karbantartási kérésekkel kapcsolatos jelentéseket létrehozni az Eszközkezelés modulban.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cd0d50bacd43fe66628fec94aead3a2406e8d4e62c1e2e6c3d31afa9073baa6a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9c93697921e6199587da6e3f3a116e55d4b079e8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6773609"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019604"
 ---
 # <a name="maintenance-request-reports"></a>Karbantartáskérési jelentések
 
@@ -41,7 +43,7 @@ A **Karbantartási kérés részletei** jelentés a karbantartási kérésekkel 
 
 A következő ábra egy példát mutat be a **Karbantartási kérés részletei** jelentésre.
 
-![Karbantartási kérés részletei jelentés.](media/09-manage-maintenance-requests.png)
+![Karbantartási kérés részletei jelentés](media/09-manage-maintenance-requests.png)
 
 ## <a name="create-a-maintenance-request-list-report"></a>Karbantartási kérés listája jelentés létrehozása
 
@@ -54,7 +56,4 @@ A **Karbantartási kérések listája** jelentés megjeleníti az azonos kérés
 
 A következő ábra egy példát mutat be a **Karbantartási kérések listája** jelentésre az összes aktív karbantartási kérés esetében.
 
-![Karbantartási kérés lista jelentései.](media/10-manage-maintenance-requests.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+![Karbantartási kérés lista jelentései](media/10-manage-maintenance-requests.png)

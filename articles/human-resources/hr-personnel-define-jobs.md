@@ -1,84 +1,73 @@
 ---
 title: Új feladatok meghatározása
 description: Ez a feladat új feladat létrehozását célozza.
-author: twheeloc
-ms.date: 11/03/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmJob, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0029745b85927d56c7bb281b327de6bf5c8cdf18
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 47a81d5c872b49b2395ed687855798fe04772b7e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067302"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418869"
 ---
 # <a name="define-new-jobs"></a>Új feladatok meghatározása
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
 Ez a feladat új feladat létrehozását célozza. Manuális bevitellel és sablon funkció használatával történő másolással történik. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. Ez a feladat az emberi erőforrások szakértőihez szól.
 
-1. Menj **Emberi Erőforrások \> Állások \> Állások**.
-2. Válassza az **Új** lehetőséget.
-3. Ban,-ben **Munka** mezőbe írjon be egy értéket.
-4. A **Leírás** mezőben adjon meg egy értéket.
-5. Válasszon egy, a feladathoz használt szokásos címet.
-
-    Ez a cím lesz alapértelmezett érték a munkához rendelt új pozícióknál.
-
+1. Ugorjon az Emberi erőforrások > Munkák > Munkák részhez.
+2. Kattintson az Új lehetőségre.
+3. Írjon be egy értéket a Munka mezőbe.
+4. A Leírás mezőben adjon meg egy értéket.
+5. Válasszon egy, a feladathoz használt szokásos címet. 
+    * A megadott cím lesz alapértelmezés szerinti munkához rendelt új beosztásokhoz.  
 6. Keresse meg és jelölje ki a kívánt rekordot a listán.
-7. A listában válassza ki a kiválasztott sorból a hivatkozást.
-8. Ban,-ben **A pozíciók maximális száma** csoport, válassza ki **Maximális pozíciók**.
+7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+8. A Beosztások maximális száma csoportban válassza ki a „Maximális beosztások” pontot.
 9. Írja be a beosztások maximális számát. 
+    * Beosztás-hozzárendelések nem lesznek megengedettek az itt megadott maximális érték felett.  
+10. Váltsa át a Leírás szakasz kibontását.
+11. A Megjegyzés mezőben adja meg a Munka rövid leírását.
+    * A leírás az itt meghatározott munkához rendelt minden beosztásra vonatkozik.  
+12. Váltsa át a Munkaosztályozás kibontását.
+13. Válassza ki a Humán erőforráson belül a szokásos jelentésekben használandó beosztásfunkciót.
+14. A kívánt rekord megkeresése és kijelölése a listán
+15. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+16. Válasszon ki egy Feladattípust a feladatok további osztályozásához a szervezeten belül. 
+    * Feladattípusok használhatók az Emberi erőforrások jelentésekben.  
+17. Keresse meg és jelölje ki a kívánt rekordot a listán.
+18. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+19. Váltsa át a Kompenzáció szakasz kibontását.
+20. Válassza ki a kompenzációs szintet.
+    * A kompenzációs szint meghatározza a Minimális és Maximális kompenzációt, amelyet egy alkalmazott kaphat a feladatért. Kompenzációs szabályok határozzák meg, hogy az alkalmazottak kompenzációja kívül eshet-e a tartományon.  
+21. Keresse meg és jelölje ki a kívánt rekordot a listán.
+22. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+23. Váltsa át a Képzettségek szakasz kibontását.
+    * Ne feledje, hogy a Szakértelem, a Végzettség és a Tanúsítványok gyorslap mezői üresek. Adatok beosztássablonból történő másolása után az ezekben a mezőkben szereplő adatok egy lépésben megadhatók.   
+24. Kattintson a Mentés gombra.
+25. Kattintson a Másolás innen pontra.
+26. Kattintson a Másolás sablonból pontra.
+27. A Munkasablon mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+28. A kívánt rekord megkeresése és kijelölése a listán
+29. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+30. Jelölje be a Megjegyzés lehetőséget.
+    * A kijelölt feladatba csak a kiválasztott cikkek lesznek bemásolva.    
+31. Kattintson az OK gombra.
+32. Váltsa át a Tanúsítványok szakasz kibontását.
+33. Váltsa át a Végzettségek szakasz kibontását
+34. Kattintson a Mentés gombra.
 
-    Ezt a számot meghaladó pozíció-hozzárendelések nem engedélyezettek.
-
-10. Ban,-ben **Leírás** részben, a **jegyzet** mezőbe írja be **Adja meg a munka szabványos leírását**.
-
-    Ez a leírás minden olyan pozícióra vonatkozik, amely az Ön által meghatározott munkához van hozzárendelve.
-
-11. Ban,-ben **Munkakör besorolása** szakaszban válasszon ki egy munkafunkciót, amelyet az Emberi erőforrások standard jelentéseiben használni fog.
-12. Keresse meg és jelölje ki a kívánt rekordot a listán.
-13. A listában válassza ki a kiválasztott sorból a hivatkozást.
-14. Ban,-ben **Munka típus** mezőben válasszon ki egy munkatípust a szervezeti munkák további osztályozásához.
-
-    Feladattípusok használhatók az Emberi erőforrások jelentésekben.
-
-15. Keresse meg és jelölje ki a kívánt rekordot a listán.
-16. A listában válassza ki a kiválasztott sorból a hivatkozást.
-17. Ban,-ben **Kártérítés** szakaszban válassza ki a kompenzációs szintet.
-
-    A kompenzációs szint meghatározza azt a minimális és maximális kompenzációt, amelyet a munkavállaló a munkáért kaphat. A kompenzációs szabályok határozzák meg, hogy a munkavállalók javadalmazása kívül eshet-e a tartományon.
-
-18. Keresse meg és jelölje ki a kívánt rekordot a listán.
-19. A listában válassza ki a kiválasztott sorból a hivatkozást.
-20. Ban,-ben **Készségek** szakaszban figyelje meg, hogy a mezők a **Készségek**, **·**, és **Tanúsítványok** A gyorslapok üresek. Miután kimásolta az információkat egy munkasablonból, ezekbe a mezőkbe egyetlen lépésben kerül sor.
-21. Válassza a **Mentés** lehetőséget.
-22. Válassza ki **Másolás innen**.
-23. Válassza ki **Másolás a sablonból**.
-24. Ban,-ben **Állás sablon** mezőben válassza ki a legördülő nyilat a keresés megnyitásához.
-25. Keresse meg és jelölje ki a kívánt rekordot a listán.
-26. A listában válassza ki a kiválasztott sorból a hivatkozást.
-27. Válaszd ki a **jegyzet** választási lehetőség.
-
-    Csak a kiválasztott elemek kerülnek a kiválasztott munkába.
-
-28. Válassza ki az **OK** lehetőséget.
-29. Bontsa ki a **Tanúsítványok** szakasz.
-30. Bontsa ki a **Oktatás** szakasz.
-31. Válassza a **Mentés** lehetőséget.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

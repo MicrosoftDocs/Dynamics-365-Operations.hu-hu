@@ -2,9 +2,11 @@
 title: Az ER megoldások teljesítményének javítása a paraméterek SZÁMÍTOTT MEZŐ-adatforrások hozzáadásával
 description: Ez a témakör azt mutatja be, hogyan lehet elősegíteni a Electroinic jelentéskészítés (ER) megoldások hatékonyságát a paraméterek SZÁMÍTOTT MEZŐ-adatforrások hozzáadásával.
 author: NickSelin
-ms.date: 04/23/2021
+manager: AnnBe
+ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +16,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5fada2fc0b35e22da18f5d6a0505df077d5ada4e0221031d63c316d8c705bc79
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 940b696a06fb46bcd0557f059327cd4340448137
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6753670"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681280"
 ---
 # <a name="improve-the-performance-of-er-solutions-by-adding-parameterized-calculated-field-data-sources"></a>Az ER megoldások teljesítményének javítása a paraméterek SZÁMÍTOTT MEZŐ-adatforrások hozzáadásával
 
@@ -56,7 +58,7 @@ Az első lépés az, hogy a minta ER-megoldást importálni kell a szállítói 
     2. A **Tallózás** gombbal válassza ki a megfelelő, XML-formátumú fájlt az ER-konfigurációhoz.
     3. Válassza ki az **OK** lehetőséget.
 
-![A Konfigurációk oldalon importált konfigurációk.](./media/er-calculated-field-ds-performance-imported-configurations.png)
+![A Konfigurációk oldalon importált konfigurációk](./media/er-calculated-field-ds-performance-imported-configurations.png)
 
 ## <a name="review-the-sample-er-solution"></a>A minta ER-megoldás áttekintése
 
@@ -76,7 +78,7 @@ Az első lépés az, hogy a minta ER-megoldást importálni kell a szállítói 
 
     A modell-leképezés ebben a konfigurációban implementálja az alap adatmodellt bármely ER formátumhoz, amely ehhez a modellhez lett készítve és a Finance által futtatva lett. Tehát a **Trans** adatforrás tartalma ER-formátumoknak, például absztrakt **modell** adatforrásoknak van kitéve.
 
-    ![Trans adatforrás a modell-leképezés tervező oldalán.](media/er-calculated-field-ds-performance-mapping-1.png)
+    ![Trans adatforrás a modell-leképezés tervező oldalán](media/er-calculated-field-ds-performance-mapping-1.png)
 
 4. Zárja be a **Modell-hozzárendelési tervező** lapot.
 5. Zárja be a **Modell hozzárendelése adatforráshoz** lapot.
@@ -90,7 +92,7 @@ Az első lépés az, hogy a minta ER-megoldást importálni kell a szállítói 
 
     Ez az ER-formátum úgy van kialakítva, hogy a szállítói tranzakciók jelentését XML-formátumban hozza létre.
 
-    ![Az adatforrások és a konfigurált kötések formátumelemeinek formázása a Formátumtervezés oldalon.](media/er-calculated-field-ds-performance-format.png)
+    ![Az adatforrások és a konfigurált kötések formátumelemeinek formázása a Formátumtervezés oldalon](media/er-calculated-field-ds-performance-format.png)
 
 5. Zárja be a **Formátumtervező** lapot.
 
@@ -103,7 +105,7 @@ Tegyük fel, hogy befejezte az ER-megoldás első verziójának tervezését. Ez
 1. Válassza a **DEMF** vállalatot.
 2. Hajtsa végre a következő lépéseket a [Teljesítmény-követés bekapcsolása](trace-execution-er-troubleshoot-perf.md#turn-on-the-er-performance-trace) alatt teljesítmény-nyomkövetés előállításához az ER-formátum futtatása során.
 
-    ![A Felhasználói paraméterek párbeszédablak.](media/er-calculated-field-ds-performance-format-user-parameters.png)
+    ![A Felhasználói paraméterek párbeszédablak](media/er-calculated-field-ds-performance-format-user-parameters.png)
 
 ### <a name="run-the-er-format"></a><a id="run-format"></a>Az ER-formátum futtatása
 
@@ -124,7 +126,7 @@ Az aktuális modell-hozzárendelés bizonyos adatforráselemeihez új informáci
 - Az adatforrás által az adatok lekérésére fordított tényleges idő
 - Ugyanez az időtartam a teljes modell-hozzárendelés lefuttatására fordított összes idő százalékaként kifejezve
 
-![Végrehajtási idő részletei a Modell-hozzárendelés tervező lapján.](./media/er-calculated-field-ds-performance-mapping-2.png)
+![Végrehajtási idő részletei a Modell-hozzárendelés tervező lapján](./media/er-calculated-field-ds-performance-mapping-2.png)
 
 A **Teljesítményadatok** rácsa azt jeleníti meg, hogy a **Trans** adatforrás egy alkalommal hívja meg a VendTrans táblát. A **\[265\]\[Q:265\]** érték a **Trans** adatforrásban azt jelzi, hogy az 265 szállítói tranzakciót beolvasták az alkalmazás táblából, és vissza lettek küldve az adatmodellhez.
 
@@ -137,7 +139,7 @@ A **Teljesítményadatok** rácsa azt is jelzi, hogy az aktuális modell-hozzár
 
 - A szállítói táblát mindegyik ismétlődő szállítói tranzakcióhoz meg kell hívni, még akkor is, ha a beolvasott tranzakciók csak öt szállítóhoz lettek feladva. A 530 hívásból 525 ismétlődő. A következő ábra mutatja az ismétlődő hívásokról kapott üzenetet (adatbázis-kérelmek).
 
-![Ismétlődő adatbázis-kérelmekkel kapcsolatos üzenet a Modell-hozzárendelési tervező oldalon.](./media/er-calculated-field-ds-performance-mapping-2a.png)
+![Ismétlődő adatbázis-kérelmekkel kapcsolatos üzenet a Modell-hozzárendelési tervező oldalon](./media/er-calculated-field-ds-performance-mapping-2a.png)
 
 A teljes modell-leképezés végrehajtási idejéből (kb. nyolc másodperc) több mint 80 százalék (kb. hat másodperc) telt el az értékek lehívásával a VendTable alkalmazástáblából. Ez a százalékos érték túl nagy az öt szállító két attribútumához képest, összehasonlítva a VendTrans-alkalmazás táblából származó adatok mennyiségével.
 
@@ -172,7 +174,7 @@ Hajtsa végre a következő lépéseket a gyorsítótárazás és a **Számítot
     3. A párbeszédpanel **Név** mezőjébe írja be a **Box** kifejezést.
     3. Válassza ki az **OK** lehetőséget.
 
-    ![A Box adatforrás a modell-leképezés tervező oldalán.](./media/er-calculated-field-ds-performance-mapping-3.png)
+    ![A Box adatforrás a modell-leképezés tervező oldalán](./media/er-calculated-field-ds-performance-mapping-3.png)
 
 6. Hajtsa végre a következő lépéseket a **Számított mező** típusú paraméterezett adatforrásának hozzáadásához:
 
@@ -208,7 +210,7 @@ Hajtsa végre a következő lépéseket a gyorsítótárazás és a **Számítot
 
 9. Válassza a **Mentés** lehetőséget.
 
-    ![A Vend adatforrás a Modell-leképezés tervező oldalán.](./media/er-calculated-field-ds-performance-mapping-4.png)
+    ![A Vend adatforrás a Modell-leképezés tervező oldalán](./media/er-calculated-field-ds-performance-mapping-4.png)
 
 10. Zárja be a **Modell-hozzárendelési tervező** lapot.
 11. Zárja be a **Modell-hozzárendelések** lapot.
@@ -232,11 +234,11 @@ Ismételje meg a jelen témakörben korábban ismertetett, [ER-formátum futtat�
 
 Megfigyelheti, hogy az Ön által a modell-hozzárendelésen végzett kiigazításokkal megszüntette az adatbázisba intézett ismétlődő lekérdezéseket. Az adott modellhozzárendeléshez tartozó, adatbázistáblákba és adatforrásokba küldött lehívások száma csökkent.
 
-![Híváslánc információk az 1. modell-leképezés tervező oldalán.](./media/er-calculated-field-ds-performance-mapping-5.png)
+![Híváslánc információk a Modell-leképezés tervező oldalán 1](./media/er-calculated-field-ds-performance-mapping-5.png)
 
 A teljes végrehajtási idő csökkent a 20-adára csökkent (mintegy 8 másodperc helyett mintegy 400 ezredmásodperc). Ezáltal a teljes ER-megoldás teljesítménye javult.
 
-![Híváslánc információk a 2. modell-leképezés tervező oldalán.](./media/er-calculated-field-ds-performance-mapping-5a.png)
+![Híváslánc információk a Modell-leképezés tervező oldalán 2](./media/er-calculated-field-ds-performance-mapping-5a.png)
 
 ## <a name="appendix-1-download-the-components-of-the-sample-microsoft-er-solution"></a><a name="appendix1"></a>1. függelék: A minta Microsoft ER megoldás komponenseinek letöltése
 
@@ -244,9 +246,9 @@ A következő fájlokat le kell töltenie, és helyben tárolnia.
 
 | Fájl                                        | Tartalom |
 |---------------------------------------------|---------|
-| Teljesítményjavítás modell.verzió.1     | [Minta ER-adatmodell konfigurációja](https://download.microsoft.com/download/4/6/f/46f0f3fa-782b-414a-8f7b-b6c64a388661/Performance_improvement_model.version.1.xml) |
-| Teljesítmény-javítás leképezés.verzió.1.1 | [Minta ER-adatmodell leképezési konfigurációja](https://download.microsoft.com/download/8/9/1/8913a763-afb8-4bf4-aaf1-95ad793ffc5a/Performance_improvement_mapping.version.1.1.xml) |
-| Teljesítmény-javítás formátum.verzió.1.1  | [Minta ER-formátum konfigurációja](https://download.microsoft.com/download/9/0/c/90c75963-bc78-4edc-9096-556bbe281f10/Performance_improvement_format.version.1.1.xml) |
+| Teljesítményjavítás modell.verzió.1     | [Minta ER-adatmodell konfigurációja](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Teljesítmény-javítás leképezés.verzió.1.1 | [Minta ER-adatmodell leképezési konfigurációja](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
+| Teljesítmény-javítás formátum.verzió.1.1  | [Minta ER-formátum konfigurációja](https://mbs.microsoft.com/customersource/Global/AX/downloads/hot-fixes/365optelecrepeg) |
 
 ## <a name="appendix-2-configure-the-er-framework"></a><a name="appendix2"></a>2. melléklet: Az ER-keretrendszer konfigurálása
 
@@ -298,6 +300,3 @@ További információért az ER-konfigurációszolgáltatókkal kapcsolatban tek
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 - [Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében](trace-execution-er-troubleshoot-perf.md)
 - [ER adatforrások paraméterezett hívásainak támogatása a Számított mezőtípusban](er-calculated-field-type.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

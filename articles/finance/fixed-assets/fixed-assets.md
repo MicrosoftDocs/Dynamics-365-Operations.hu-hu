@@ -1,38 +1,38 @@
 ---
 title: Tárgyi eszközök kezdőlap
-description: Ebben a témakörben olyan forrásokat talál, amelyek segítséget nyújtanak a Microsoft Dynamics 365 Finance Tárgyi eszközök funkciójának használatához.
-author: moaamer
+description: A tárgyi eszközök olyan értékkel rendelkező eszközök – például épületek, járművek, földek és felszerelések –, amelyek egy egyén vagy egy szervezet tulajdonában állnak.
+author: ShylaThompson
+manager: AnnBe
 ms.date: 08/31/2017
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "21481"
-- intro-internal
+ms.custom: 21481
 ms.assetid: d6bb2f19-73b9-43fa-8042-b530c75896bf
 ms.search.region: Global
-ms.author: moaamer
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c1a31273e16275750594ef8d9b99f9a4cd2222ef
-ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.openlocfilehash: cf6f0bc27121e6c1a0b4bba2ad1ca31909423c92
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/23/2021
-ms.locfileid: "7674851"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969077"
 ---
 # <a name="fixed-assets-home-page"></a>Tárgyi eszközök kezdőlap
 
 [!include [banner](../includes/banner.md)]
 
-Ebben a témakörben olyan forrásokat talál, amelyek segítséget nyújtanak a Microsoft Dynamics 365 Finance Tárgyi eszközök funkciójának használatához. A tárgyi eszközök egy magánszemély vagy szervezet által birtokolt értéktárgyak. Ezek az értéktárgyak lehetnek épületek, járművek, földterületek vagy felszerelések. 
+A tárgyi eszközök olyan értékkel rendelkező eszközök – például épületek, járművek, földek és felszerelések –, amelyek egy egyén vagy egy szervezet tulajdonában állnak. 
 
 A tárgyi eszközök beszerzési adatainak beállítása és rögzítése után lehetőség van az értékcsökkenésük elszámolására, valamint az értékcsökkenést meghatározó tőkésítési küszöb beállítására. Kiszámítható a tárgyi eszközök kiigazítása, végül elvégezhető az eszközök kivezetése. Ha a tárgyi eszközöket a főkönyvben tartja nyilván, akkor megtekintheti az összes tárgyi eszköz aktuális értékét. A tárgyi eszközök kezelésével kapcsolatos módszereknek meg kell felelniük a nemzetközi könyvelési szabványoknak, illetve az egyes országokban/régiókban érvényes könyvelési jogszabályoknak is. A követelmények a tárgyi eszközök beszerzési és kivezetési tranzakcióinak a rögzítésével, értékcsökkenésével, élettartamával, felértékelésével és leértékelésével kapcsolatos szabályokat tartalmazhatnak. A Tárgyi eszközök szolgáltatásban számos megtalálható e szabványok és szabályok közül.
 
-[![Üzleti folyamat.](./media/FA-process.PNG)](./media/FA-process.PNG)
+[![Üzleti folyamat](./media/FA-process.PNG)](./media/FA-process.PNG)
 
 
 
@@ -40,7 +40,7 @@ A tárgyi eszközök beszerzési adatainak beállítása és rögzítése után 
 
 #### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](/dynamics365/release-plans/) oldalára a tervezett új funkciók megtekintéséhez. 
+Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
 
 #### <a name="blogs"></a>Blogok
 
@@ -60,6 +60,3 @@ Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

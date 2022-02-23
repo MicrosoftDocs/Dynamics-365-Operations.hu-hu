@@ -2,9 +2,11 @@
 title: Címjegyzékek GYIK
 description: Ez a témakör a címjegyzékek kapcsolatos gyakori kérdésekre ad válaszokat.
 author: msftbrking
-ms.date: 02/03/2021
+manager: AnnBe
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartyCheckDuplicate, DirPartyTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d429639f52c745a737567419b6012884ab20d43d
-ms.sourcegitcommit: b294840b8e12aaa2775dd73b2ba9481ecc3d91d5
+ms.openlocfilehash: 922900b20b878dd8b479158d47a9f7792caa684d
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "7463622"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4796898"
 ---
 # <a name="address-books-faq"></a>Címjegyzékek GYIK
 
@@ -65,13 +67,3 @@ A felek rekordjait a globális címjegyzékben vagy a megfelelő entitáslapon a
 ## <a name="can-i-translate-address-information-for-party-records"></a>Le lehet fordítani a partnerrekordok címadatait?
 
 A címadatok fordítását be tudja úgy állítani, hogy az adatok az Ön felhasználói nyelvén (a rendszernyelven) jelenjenek meg a rendszerben, de más nyelven olyan dokumentumokban, mint például egy értékesítési rendelés. Az országok/régiók nevei, illetve címzési célok és névsorozatok kapcsán tud megadni fordításokat. Ha például az Ön rendszernyelve a dán, tud értékesítési rendelést hozni létre egy franciaországi vevő részére. Ebben az esetben a programban tudja dán nyelven megjeleníteni a vevőrekordot, a nyomtatott értékesítési rendelésen azonban franciául tüntetni fel a címadatokat. A fordítások beállításakor a listában szereplő minden cikkhez kell megadnia fordítást. Azok a cikkek, melyekhez nem ad meg fordítás, a rendszernyelven jelennek meg. Ha például az Ön rendszernyelve a dán, tud dokumentumot küldeni egy spanyolországi vevő részére. Ha nem adott meg spanyol (ESP) fordításokat a címadatok kapcsán, úgy ezek az adatok dán nyelven jelennek meg, mind a programban, mind a bizonylaton.
-
-## <a name="after-i-import-addresses-why-cant-i-edit-the-records"></a>A címek importálása után miért nem szerkeszthetők a rekordok?
-
-Címek importálásakor van egy **IsLocationOwner** nevű mező. Ez a mező jelzi, hogy a helyhez (címhez) társított fél a cím tulajdonosa-e. Ha a fél a cím tulajdonosa, akkor a cím szerkeszthető a globális címjegyzékben vagy az alaprekord oldalról (például vevő, szállító vagy dolgozó), ha az adott fél van használva. Ha nem a fél a cím tulajdonosa, akkor a rekord nem szerkeszthető. 
-
-Címek importálása esetén az **IsLocationOwner** mező értéke legyen **Igen**, ha azt szeretné, hogy a cím szerkeszthető legyen a társított fél használatával. Ha a mezőt helytelenül importálják, akkor a hely tulajdonosa frissíthető a globális címjegyzékben.
-
-Az importált cím tulajdonosának módosításával kapcsolatos további tudnivalókat lásd: [A helytulajdonosok kezelése](./global-address-book-location-owner.md).
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

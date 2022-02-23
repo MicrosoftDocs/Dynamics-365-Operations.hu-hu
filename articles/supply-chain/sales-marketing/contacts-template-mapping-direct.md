@@ -1,50 +1,53 @@
 ---
 title: A Sales-kapcsolatok közvetlen szinkronizálása a Supply Chain Management-kapcsolatokra vagy -ügyfelekre
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Sales Névjegy (Névjegyek) és Névjegy (Vevők) entitások közvetlenül a Dynamics 365 Supply Chain Management alkalmazásba történő szinkronizálására használatosak.
-author: Henrikan
+author: ChristianRytt
+manager: tfehr
 ms.date: 10/25/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 57a9c2a860e99855e841f0f4276ba2f92767c2b1
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: a252c3ecb12cb6a4dc429f35c8aeab6bd3914d03
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062515"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528949"
 ---
 # <a name="synchronize-contacts-directly-from-sales-to-contacts-or-customers-in-supply-chain-management"></a>A Sales-kapcsolatok közvetlen szinkronizálása a Supply Chain Management-kapcsolatokra vagy -ügyfelekre
 
 [!include [banner](../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 > [!NOTE]
-> A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Microsoft Dataverse for Apps szolgáltatásban](/powerapps/administrator/data-integrator).
+> A potenciális ügyfelek készpénzre váltása megoldás használata előtt meg kell ismernie az [Adatintegrálással a Common Data Service for Apps szolgáltatásban](https://docs.microsoft.com/powerapps/administrator/data-integrator).
 
-Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Sales Névjegy (Névjegyek) és Névjegy (Vevők) táblát közvetlenül a Dynamics 365 Supply Chain Management alkalmazásba történő szinkronizálására használatosak.
+Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Sales Névjegy (Névjegyek) és Névjegy (Vevők) entitások közvetlenül a Dynamics 365 Supply Chain Management alkalmazásba történő szinkronizálására használatosak.
 
 ## <a name="data-flow-in-prospect-to-cash"></a>A potenciális ügyfelek készpénzre váltása adatfolyama
 
 A potenciális ügyfelek készpénzre váltása megoldás az adatszinkronizálás funkción keresztül szinkronizálja az adatokat Supply Chain Management és a Sales példányai között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákkal kapcsolatos adatok áramlását a Supply Chain Management és a Sales között. A következő ábra bemutatja a Supply Chain Management és a Sales közötti adatszinkronizálást.
 
-[![A potenciális ügyfelek készpénzre váltása adatfolyama.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![A potenciális ügyfelek készpénzre váltása adatfolyama](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 
 A rendelkezésre álló sablonok megtekintéséhez nyissa meg a [PowerApps Admin Centert](https://preview.admin.powerapps.com/dataintegration). Válassza a **Projektek** lehetőséget, és ezután kattintson a jobb felső sarkában az **Új projekt** elemre a nyilvános sablonok kiválasztásához.
 
-A következő sablonokat és alapul szolgáló feladatokat használják a névjegy táblák szinkronizálásához a Sales és a Supply Chain Management között:
+A következő sablonokat és alapul szolgáló feladatokat használják a névjegyentitások szinkronizálásához a Sales és a Supply Chain Management között:
 
 - **A sablonok nevei az adatintegrációban**
 
@@ -62,8 +65,8 @@ A kapcsolattartó-szinkronizálás előtt szükséges a következő szinkronizá
 
 | Értékesítés    | Ellátásilánc-kezelés |
 |----------|------------------------|
-| Kapcsolattartók | Dataverse kapcsolattartók           |
-| Kapcsolattartók | Vevők V2           |
+| Névjegyek | CDS-kapcsolattartók           |
+| Névjegyek | Vevők V2           |
 
 ## <a name="entity-flow"></a>Entitás folyamata
 
@@ -76,13 +79,13 @@ A Sales kapcsolattartójából kapcsolattartó vagy vevő lehet a Supply Chain M
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Potenciális vevő értékesítési készpénzfizetési megoldáshoz
 
-Új **van aktív vevő** oszlopot adtak a kapcsolattartóval. Ebben az oszlopban értékesítési tevékenység kapcsolattartóit és értékesítési tevékenység nincs szegmensből megkülönböztetésére szolgál. A **van aktív vevő** értéke **Igen** csak a kapcsolattartók esetében, akikhez ajánlatok, rendelések vagy számlák köthetők. Csak ezek a kapcsolattartók szinkronizálódnak a Supply Chain Management alkalmazásba vevőként.
+Új **van aktív vevő** mezőt adtak a kapcsolattartóval. Ebben a mezőben értékesítési tevékenység kapcsolattartóit és értékesítési tevékenység nincs szegmensből megkülönböztetésére szolgál. A **van aktív vevő** értéke **Igen** csak a kapcsolattartók esetében, akikhez ajánlatok, rendelések vagy számlák köthetők. Csak ezek a kapcsolattartók szinkronizálódnak a Supply Chain Management alkalmazásba vevőként.
 
-Új **IsCompanyAnAccount** oszlopot adtak a kapcsolattartóval. Az oszlop segítségével adhatja meg, hogy a kapcsolattartó **Számla** típusú vállalathoz (szülő partner vagy kapcsolattartó) kapcsolódik-e. Ez az információ a Supply Chain Management alkalmazásban kapcsolattartóként szinkronizálandó kapcsolattartók azonosítására szolgál.
+Új **IsCompanyAnAccount** mezőt adtak a kapcsolattartóval. A mező segítségével adhatja meg, hogy a kapcsolattartó **Számla** típusú vállalathoz (szülő partner vagy kapcsolattartó) kapcsolódik-e. Ez az információ a Supply Chain Management alkalmazásban kapcsolattartóként szinkronizálandó kapcsolattartók azonosítására szolgál.
 
-Új **kapcsolattartó száma** oszlop hozzá lett adva a kapcsolattartó a természetes és egyedi kulcs az integráció biztosítása érdekében. Új kapcsolattartó létrehozásakor egy **kapcsolattartó száma** értéke automatikusan létrejön egy számsorozat alapján. Az érték áll **CON**, amelyet egy növekvő számsorozat és utótag hat karakterből követ. Íme, egy példa: **CON-01000-BVRCPS**
+Új **kapcsolattartó száma** mező hozzá lett adva a kapcsolattartó a természetes és egyedi kulcs az integráció biztosítása érdekében. Új kapcsolattartó létrehozásakor egy **kapcsolattartó száma** értéke automatikusan létrejön egy számsorozat alapján. Az érték áll **CON**, amelyet egy növekvő számsorozat és utótag hat karakterből követ. Íme, egy példa: **CON-01000-BVRCPS**
 
-A Sales integrációs megoldásának alkalmazásakor egy frissítési parancsprogram beállítja a **kapcsolattartó száma** oszlopot a meglévő kapcsolattartónál a korábban ismertetett számsorozat használatával. A frissítési parancsfájl beállítja a **van aktív vevő** oszlopot **Igen** értékre minden értékesítési tevékenységgel rendelkező kapcsolattartónál.
+A Sales integrációs megoldásának alkalmazásakor egy frissítési parancsprogram beállítja a **kapcsolattartó száma** mezőt a meglévő kapcsolattartónál a korábban ismertetett számsorozat használatával. A frissítési parancsfájl beállítja a **van aktív vevő** mezőt **Igen** értékre minden értékesítési tevékenységgel rendelkező kapcsolattartónál.
 
 ## <a name="in-supply-chain-management"></a>A Supply Chain Management alkalmazásban
 
@@ -92,7 +95,7 @@ Kapcsolattartók vannak megjelölt használatával a **IsContactPersonExternally
 
 ### <a name="contact-to-customer"></a>Kapcsolattartóból vevő
 
-- A **CustomerGroup** kötelező a Supply Chain Managementben. Szinkronizációs hibák elkerülésének elősegítése érdekében az alapértelmezett értéket adhat meg a hozzárendelésben. Az alapértelmezett érték akkor használatos, ha az oszlop üres, az értékesítési.
+- A **CustomerGroup** kötelező a Supply Chain Managementben. Szinkronizációs hibák elkerülésének elősegítése érdekében az alapértelmezett értéket adhat meg a hozzárendelésben. Az alapértelmezett érték akkor használatos, ha a mező üres, az értékesítési.
 
     Az alapértelmezett sablonérték **10**.
 
@@ -115,20 +118,20 @@ Kapcsolattartók vannak megjelölt használatával a **IsContactPersonExternally
 Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjelenítése. 
 
 > [!NOTE]
-> A leképezést mutatja, hogy melyik oszlopadatok szinkronizálódnak a Sales – Supply Chain Management irányban.
+> A leképezést mutatja, hogy melyik mezőadatok szinkronizálódnak a Sales – Supply Chain Management irányban.
 
-### <a name="contact-to-contact-example"></a>Kapcsolattartó a kapcsolattartóhoz – példa
+### <a name="contact-to-contact"></a>Kapcsolattartóból kapcsolattartó
 
-![Kapcsolattartó kapcsolattartóhoz sablonleképezés az adatintegrátorban.](./media/contacts-direct-template-mapping-data-integrator-1.png)
+![Sablonleképezés az adatintegrátorban](./media/contacts-direct-template-mapping-data-integrator-1.png)
 
-### <a name="contact-to-customer-example"></a>Kapcsolattartó az ügyfélhez – példa
+### <a name="contact-to-customer"></a>Kapcsolattartóból vevő
 
-![Kapcsolattartó ügyfélhez sablonleképezés az adatintegrátorban.](./media/contacts-direct-template-mapping-data-integrator-2.png)
+![Sablonleképezés az adatintegrátorban](./media/contacts-direct-template-mapping-data-integrator-2.png)
 
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
-[Potenciális vevők készpénzre váltása](prospect-to-cash.md)
+[A potenciális vevők készpénzre váltása](prospect-to-cash.md)
 
 [A Supply Chain Management-ügyfelek közvetlen szinkronizálása a Sales-ügyfelekre](accounts-template-mapping-direct.md)
 
@@ -139,6 +142,3 @@ Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjel
 [Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Supply Chain Management szolgáltatásból a Sales szolgáltatásba](sales-invoice-template-mapping-direct.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

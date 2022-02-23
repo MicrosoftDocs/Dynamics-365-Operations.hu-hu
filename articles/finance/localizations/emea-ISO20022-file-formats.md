@@ -1,24 +1,27 @@
 ---
 title: ISO20022 fájlok importálása
 description: Ez a témakör ismerteti az ISO-20022 camt.054 és pain.002 formátumú fizetési fájlok importálását a Microsoft Dynamics 365 Finance szolgáltatásba.
-author: anasyash
+author: neserovleo
+manager: AnnBe
 ms.date: 07/27/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
-ms.author: anasyash
+ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 19b9e90ac42c496931c2fc936a25ee3b1b16ce58
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.openlocfilehash: b809ba8d92772d8f3f416d4854d4af322e6f954a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592605"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408029"
 ---
 # <a name="import-iso20022-files"></a>ISO20022 fájlok importálása
 
@@ -114,7 +117,7 @@ Ha formátumkonfigurációt importál az LCS-rendszerből, a teljes konfiguráci
  - **Pain.002** – ezt a formátumot kell a Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használni a pain.002 fájlnak a szállítói kifizetések átvitele naplóba történő importálása érdekében
  - **Camt.054** – ezt a formátumot kell a Fizetési modell hozzárendelése az ISO20022 célhoz fizetési modellel együtt használni a camt.054 fájlnak a szállítói kifizetések átvitele naplóba történő importálása érdekében. Ugyanaz a formátumkonfiguráció fog szerepelni a vevői kifizetések importálása funkcióban, de a rendszer különböző hozzárendelést fog használni a Fizetési modell hozzárendelése az ISO20022 célhoz konfigurációban.
 
-Az elektronikus jelentéssel kapcsolatos további tudnivalókat lásd: [Elektronikus jelentések áttekintése](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
+Az elektronikus jelentéssel kapcsolatos további tudnivalókat lásd: [Elektronikus jelentések áttekintése](../../dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 - [Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
@@ -126,6 +129,3 @@ Az elektronikus jelentéssel kapcsolatos további tudnivalókat lásd: [Elektron
 - [Fizetési mód beállítása ISO20022-jóváírás átutalásához](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
 - [Fizetési mód beállítása ISO20022 beszedési megbízáshoz](./tasks/setup-method-payment-iso20022-direct-debit.md)
 - [Szállítók és szállítói bankszámlák beállítása ISO20022 típusú átutalásokhoz](./tasks/set-up-vendor-iso20022-credit-transfers.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

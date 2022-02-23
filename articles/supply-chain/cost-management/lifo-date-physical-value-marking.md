@@ -2,9 +2,11 @@
 title: LIFO dátum tényleges értékkel és jelöléssel
 description: A LIFO dátum készletmodell a LIFO-elv alapján működik. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat. Ha a dátum szerinti LIFO készletmodellben nincs bevételezés a kiadás előtt, akkor a kiadás az utána következő bármelyik bevételezéssel kiegyenlíthető. Ha ugyanazzal a dátummal több kiadás van, akkor az az utolsó kiadás, utolsó bevételezés sorrendben egyenlíthető ki.
 author: AndersGirke
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 51592
 ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: aevengir
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72e1dab8bbbb830619629d1fb62a89413d388a7f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: c2c06443532519ad5d6c36a6f4ed1f1c4d136664
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567559"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967633"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO dátum tényleges értékkel és jelöléssel
 
@@ -55,9 +57,7 @@ Ebben a példában a cikkmodellcsoport nem tartalmazza a tényleges értéket. A
 
 Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg frissített tranzakciók átlagának, azaz 15,00 USD összegnek felel meg. 
 
-A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás nincs bekapcsolva. 
-
-![LIFO dátum a Tényleges értékkel együtt beállítás nélkül.](./media/lifodatewithoutincludephysicalvalue.gif) 
+A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás nincs bekapcsolva. ![LIFO dátum a tényleges értékkel együtt](./media/lifodatewithoutincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 
@@ -92,9 +92,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 
 Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg frissített tranzakciók átlagának, azaz 20,00 USD összegnek felel meg. 
 
-A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. 
-
-![LIFO dátum a Tényleges értékkel együtt beállítással.](./media/lifodatewithincludephysicalvalue.gif) 
+A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. ![LIFO dátum a tényleges értékkel együtt](./media/lifodatewithincludephysicalvalue.gif) 
 
 **Jelmagyarázat**
 
@@ -140,7 +138,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 
 Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg. 
 
-A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a kiadások és bevételek közötti jelölés használva van. ![LIFO dátum jelöléssel.](./media/lifodatewithmarking.gif) 
+A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a kiadások és bevételek közötti jelölés használva van. ![LIFO dátum jelöléssel](./media/lifodatewithmarking.gif) 
 
 **Jelmagyarázat**
 
@@ -158,6 +156,3 @@ A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellne
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

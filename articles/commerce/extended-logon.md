@@ -1,27 +1,30 @@
 ---
 title: Kiterjesztett bejelentkezés funkció beállítása MPOS-hoz és Pénztár felhőhöz
 description: A témakör magába foglalja a Cloud POS és Retail Modern POS (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit.
-author: boycezhu
-ms.date: 09/07/2021
+author: rubencdelgado
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 92353
 ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: boycez
+ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: 79878e2ffbf219f77f378997c277ced8bb41598c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478671"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412818"
 ---
 # <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hez
 
@@ -59,13 +62,8 @@ A dolgozó kiterjesztett bejelentkezésének törléséhez keresse meg a dolgoz�
 
 ## <a name="extending-extended-logon"></a>Kiterjesztett bejelentkezés kiterjesztése
 
-A kiterjesztett bejelentkezés alapból csak öt lényeges karaktert enged meg használni egyedi azonosítóként. Ha például két olyan kártyát konfigurál, amelyek "1234567" és "1234578" azonosítóval rendelkeznek, akkor mindkettő "12345" értékű lesz. További karaktereket támogató kiterjesztést is fel lehet építeni. A részletes útmutatást itt talál: [Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hoz](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
-
 A bejelentkezés szolgáltatás kibővíthető, így pedig további beléptető szerkezetek is használhatóvá válnak (például: tenyér beolvasó). További részletek a Pénztár kiterjesztés dokumentációban találhatók.
 
 ## <a name="using-extended-logon"></a>Kiterjesztett bejelentkezés használata
 
 Amennyiben a kiterjesztett bejelentkezés konfigurációja megtörtént és a dolgozóhoz hozzá lett rendelve jelszó vagy mágnescsík, a dolgozónak csupán le kell húznia vagy beolvastatnia a kártyáját, míg a pénztár belépő oldala meg van jelenítve. Ha a jelszó is szükséges a bejelentkezéshez, a dolgozónak azt is szükséges beütnie..
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

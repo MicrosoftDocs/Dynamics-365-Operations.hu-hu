@@ -1,24 +1,26 @@
 ---
 title: Szállítókérés konfigurációi
 description: Ez a témakör azokat a mezőket jeleníti meg, amelyeket ki kell tölteni egy új szállítókérésben.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationConfig
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 1d34a9974da41b7abb40bb2cf046a15432c249eb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 987b9cefef395b3bf3e915f41232fe0daba213b9
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570297"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5021164"
 ---
 # <a name="vendor-request-configurations"></a>Szállítókérés konfigurációi
 [!include [banner](../includes/banner.md)]
@@ -51,6 +53,3 @@ Emellett megadhat egy megerősítő üzenetet is, amely akkor jelenik meg, amiko
 4.  Nyissa meg az **Országok/régiók** lapot, és válassza ki azt az országot/régiót, amelynél a konfigurációt használni kell.
 5.  Hajtsa végre a következő konfigurációt, és kövesse following the guidelines for the default configuration.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

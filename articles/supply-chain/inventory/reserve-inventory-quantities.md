@@ -1,26 +1,29 @@
 ---
 title: Tartalék készletmennyiségek
 description: Ez a témakör leírja a készlet lefoglalásával kapcsolatos különböző lehetőségeket.
-author: yufeihuang
+author: perlynne
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0cf6f14e30f84f48428b351287eb1c65915a14c1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ea7311ce34fec476ad9953e954a07a86acd13afc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571137"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429790"
 ---
 # <a name="reserve-inventory-quantities"></a>Tartalék készletmennyiségek
 
@@ -46,7 +49,7 @@ A készletfoglalási szabályok a **Cikkmodellcsoportok** lapon, a **Készlet- �
 
 A **Készletszabályok** szakasz tartalmazza a következő foglalási szabályokat.
 
-| &nbsp;                  | &nbsp;                                                                                                                                     |
+|                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Foglalási irányelvek**  | **Leírás**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | FIFO dátumvezérelt    | Ha bejelöli a **FIFO dátumvezérelt** lehetőséget, a készletfoglalást a FIFO elv szerint rendezési dátum vezérli. A kötegek lefoglalása a cikkek bevételezésének legkorábbi dátuma alapján történik az először beérkező, először kimenő elvnek (FIFO) megfelelően.                                                                                                                                                                                                                                                                       |
@@ -80,6 +83,3 @@ A **Készlet- és raktárkezelési paraméterek** lapon levő foglalásokhoz ké
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Készletfoglalási szabályok a Termelési paraméterek lapon
 
 A **Termelési paraméterek** **Általános** lapján levő **Foglalás** mező értéke határozza meg azt az alapértelmezett pontot a termelési folyamatban, amelyen a készletet le kell lefoglalni. Például a készletet a munka ütemezése során vagy a munka megkezdése után lehet lefoglalni.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

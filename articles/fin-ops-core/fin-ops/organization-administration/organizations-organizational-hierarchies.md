@@ -1,28 +1,28 @@
 ---
-title: Szervezetek és szervezeti hierarchiák áttekintése
-description: Szervezeti hierarchiák a vállalkozását alkotó szervezetek közötti kapcsolatotat jelölik.
+title: A szervezetek és a szervezeti hierarchiák áttekintése
+description: Egy szervezet olyan emberek csoportja, akik valamely üzleti folyamat végrehajtása vagy egy cél elérése érdekében együtt dologoznak Szervezeti hierarchiák a vállalkozását alkotó szervezetek közötti kapcsolatotat jelölik.
 author: sericks007
-ms.date: 01/03/2022
-ms.topic: overview
+manager: AnnBe
+ms.date: 07/25/2019
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMOperatingUnit,
 audience: Application User
 ms.reviewer: sericks
-ms.custom:
-- "17291"
-- intro-internal
+ms.custom: 17291
 ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8e8f2c2004582f42c3f464fedf9f3d049b5278f
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 368569f2cdd389b6fc99ddcf05f35cc9a750ec9e
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7991736"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797045"
 ---
 # <a name="organizations-and-organizational-hierarchies-overview"></a>A szervezetek és a szervezeti hierarchiák áttekintése
 
@@ -54,7 +54,7 @@ A működési egységek típusába a költséghelyek, az üzleti egységek, az �
 | Üzleti egység       | Félig autonóm, a stratégiai üzleti célkitűzések teljesítése érdekében létrehozott üzemi egység. | Olyabn ágazatok vagy terméksorozatokon alapuló pénzügyi jelentéseihez használják, amelyeket a szervezet jogi személyiségétől függetlenül nyújt. |
 | Érték-előállítási folyamat        | Egy vagy több termelési folyamatot szabályzó üzemi egység. | Gyakran használják a lean manufacturing tevékenységek és folyamatok ellenőrzésére, amelyek során a fogyasztóknak termékek adnak át vagy szolgáltatást nyújtanak. |
 | Részleg          | A szervezet egy kategóriáját vagy funkcionális részét képező üzleti egység egy adott feladatot, mint például az értékesítés vagy a könyvelés, látja el. | Működési területek jelentésére használt. A részlegnek lehet eredménykimutatási felelőssége, és állhat több költségcentrumból. |
-| Kiskereskedelmi csatorna      | Egy üzlet, egy online áruház vagy egy hívásközpont egysége, amely egy kockák és egy mozdárüzlet számára van ábrázolva. | Egy vagy több jogi személy egy vagy több üzletének vezetői és üzemi ellenőrzésére használják. |
+| Kereskedelmi csatorna      | Az üzemi egység lehet fizikailag létező bolt, online üzlet vagy online piactér. | Egy vagy több jogi személy egy vagy több üzletének vezetői és üzemi ellenőrzésére használják. |
 
 ### <a name="teams"></a>Csapatok
 
@@ -64,19 +64,6 @@ A csapat olyan szervezet, amely tagjainak közös a felelőssége, érdeklődés
 
 Hozzon létre szervezeti hierarchiát, hogy segítségével több nézőpontból vizsgálhassa válalatát és készíthessen jelentést róla. Például beállíthat egy hierarchiát a jogi személyek adózási, jogi, illetve kötelezően előírt jelentéseihez. Utána beállíthat egy másik hierarchiát olyan pénzügyi információkat tartalmazó jelentéshez, mely jogilag nem kötelező, de a belső jelentésekhez használható. Például létrehozhat egy beszerzési hierarchiát a beszerzési irányelvek, szabályok és üzleti folyamatok ellenőrzésére.
 
-> [!NOTE]
-> Miután egy üzemi egységet hozzáadtak egy hierarchiához, az üzemi egység nem törölhető. 
-
 Minden hierarchiához hozzá van rendelve egy cél. A hierarchia célja meghatározza a hierarchiában szerepeltethető szervezetek típusait. A cél azt is meghatározza, mely alkalmazás környezetben használható egy hierarchia.
 
 Egy hierarchiába tartozó szervezetek megoszthatják egymással a paramétereket, az irányelveket és a tranzakciókat. Egy szervezet örökölheti, de felül is írhatja a szülő szervezete paramétereit. Azonban megosztott mesteradatok, például a termékek és a címjegyzékek, a teljes szervezetre vonatkoznak, és nem írhatók felül az egyes szervezetek esetében. Szervezetek és hierarchiák létrehozása alapos tervezést igényel. További információért lásd: [Szervezeti hierarchia tervezése](plan-organizational-hierarchy.md).
-
-## <a name="additional-resources"></a>További erőforrások
-- [Szervezeti hierarchia megtervezése](plan-organizational-hierarchy.md)
-- [Szervezeti hierarchia létrehozása](tasks/create-organization-hierarchy.md)
-- [Jogi személy létrehozása](tasks/create-legal-entity.md)
-- [Üzemi egység létrehozása](tasks/create-operating-unit.md)
-
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,97 +1,95 @@
 ---
 title: Szövegcsonkolás elkerülése a pozícióhierarchián és exportálás Visio szolgáltatásba
-description: Ez a téma elmagyarázza, hogyan lehet a Microsoft Dynamics 365 Human Resources rendszerben a pozícióhierarchiában az egyének és pozíciók csonka nevének problémáját orvosolni.
-author: twheeloc
-ms.date: 08/19/2021
+description: Ez a cikk ismerteti azoknak a problémáknak a megoldását, ahol a magánszemélyek nevei és a beosztások csonkolva jelennek meg, amikor a vevő megtekinti a beosztáshierarchiát a Microsoft Dynamics 365 Human Resources szolgáltatásban. A szöveg csonkolt megjelenítése megnehezítheti a képernyőkép készítését vagy a hierarchia nyomtatását.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7b11bd0247634290c8dc43c2ae2291a485449627
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 02fb0098cc6f5a0b353e827653b1c8c96af2470c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068335"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418856"
 ---
-# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Szövegcsonkolás elkerülése a pozícióhierarchián és exportálás Visio szolgáltatásba
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+# <a name="avoid-text-truncation-on-the-position-hierarchy-and-export-to-visio"></a>Szövegcsonkolás elkerülése a pozícióhierarchiában és exportálás a Visio szolgáltatásba
 
 **Kibocsátás**
 
 Amikor a vevő megtekinti a beosztáshierarchiát a Microsoft Dynamics 365 Human Resources szolgáltatásban, a magánszemélyek nevei és a beosztások csonkolva jelennek meg. Ez megnehezítheti a képernyőkép készítését, vagy a hierarchia nyomtatását és terjesztését.
 
-![Beosztáshierarchia.](media/position-h.png)
+![Beosztáshierarchia](media/position-h.png)
 
 **Ok**
 
 Ez szándékosan van.
 
-**Megoldás**
+**Felbontás**
 
-Azonban a felhasználók nem egyszerűen válthat a szöveg méretét. Lehetőség van azonban exportálni a beosztáshierarchiát a Human Resources szolgáltatásból, majd importálni a Microsoft Visio alkalmazásba. A következő cikk a Microsoft Dynamics AX 2012-re vonatkozóan íródott, de a folyamat a Human Resources szolgáltatásra is érvényes: [Beosztáshierarchia exportálása a Microsoft Visio alkalmazásba](/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
+Azonban a felhasználók nem egyszerűen válthat a szöveg méretét. Lehetőség van azonban exportálni a beosztáshierarchiát a Human Resources szolgáltatásból, majd importálni a Microsoft Visio alkalmazásba. A következő cikk a Microsoft Dynamics AX 2012-re vonatkozóan íródott, de a folyamat a Human Resources szolgáltatásra is érvényes: [Beosztáshierarchia exportálása a Microsoft Visio alkalmazásba](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/export-a-position-hierarchy-to-microsoft-visio).
 
 Kövesse ezeket a lépéseket a Visio alkalmazásba való exportáláshoz.
 
 1. A Human Resources modulban nyissa meg **Beosztások** lista lapját.
 
-    Ha több információt szeretne felvenni a szervezeti struktúra diagramba, adjon hozzá mezőket a **Pozíciók** listához, hogy azok elérhetőek legyenek, amikor a **Szervezeti diagram varázslót** használja az eljárás későbbi részében.
+    Ha több információt szeretne szerepeltetni a szervezetistruktúra-diagramban, adjon mezőket a **Beosztások** listához, így ezek elérhetőek lesznek, amikor később használja a varázslót az eljárás során.
 
 2. A Művelet panelen válassza a **Megnyitás Microsoft Office programban** gombot, majd az **Exportálás Excel programba** rész alatt válassza a **Beosztások** lehetőséget. Vagy pedig nyomja meg a Ctrl+T billentyűkombinációt.
 
-    ![A Beosztások listaoldal exportálása az Excel programba.](media/org-admin.png)
+    ![A Beosztások listaoldal exportálása az Excel programba](media/org-admin.png)
 
 3. Mentse el az exportált Excel-fájlt.
 
-    ![Exportálás Excel-fájlba párbeszédablak.](media/export-excel.png)
+    ![Exportálás Excel-fájlba párbeszédablak](media/export-excel.png)
 
 4. A Visio alkalmazásban válassza a **Visio - Új létrehozása** lehetőséget, majd az **Üzleti** sablonkategóriát.
 
-    ![Új diagram.](media/new.png)
+    ![Új diagram](media/new.png)
 
 5. Válassza a **Szervezeti diagram varázsló** lehetőséget, majd a **Létrehozás** elemet.
 
-    ![Szervezeti diagram varázsló párbeszédablaka.](media/orgchart-wizard.png)
+    ![Szervezeti diagram varázsló párbeszédablak](media/orgchart-wizard.png)
 
 6. Válassza a **Fájlban vagy adatbázisban már tárolt információ** lehetőséget, majd kattintson a **Következő** gombra.
 
-    ![1. szervezeti diagram varázsló.](media/orgchart-wizard7.png)
+    ![Szervezeti diagram varázsló 1](media/orgchart-wizard7.png)
 
 7. Válasszon egy **szöveget, Org Plus- (\*.txt) vagy Excel-fájlt**, majd kattintson a **Következő** gombra.
 
-    ![2. szervezeti diagram varázsló.](media/orgchart-wizard3.png)
+    ![Szervezeti diagram varázsló 2](media/orgchart-wizard3.png)
 
 8. Tallózással keresse meg az exportált Excel-fájl, amely tartalmazza a beosztáshierarchiát, és nyomja meg **Következő** gombot.
 
-    ![3. szervezeti diagram varázsló.](media/orgchart-wizard2.png)
+    ![Szervezeti diagram varázsló 3](media/orgchart-wizard2.png)
 
 9. Állítsa a **Név** mezőt **Beosztás** értékre, a **Közvetlen felettes** mezőt **Felettes beosztás** értékre, majd nyomja meg a **Következő** gombot.
 
-    ![4. szervezeti diagram varázsló.](media/orgchart-wizard1.png)
+    ![Szervezeti diagram varázsló 4](media/orgchart-wizard1.png)
 
 10. Válassza ki a mezőket, amelyek minden csomóponton jelenjenek meg, és nyomja meg a **Következő** gombot.
 
-    ![5. szervezeti diagram varázsló.](media/orgchart-wizard5.png)
+    ![Szervezeti diagram varázsló 5](media/orgchart-wizard5.png)
 
 11. Adja hozzá a **Beosztás** oszlopot az **Adatmezők formázása** listához, majd kattintson a **Következő** gombra.
 
-    ![6. szervezeti diagram varázsló.](media/orgchart-wizard6.png)
+    ![Szervezeti diagram varázsló 6](media/orgchart-wizard6.png)
 
 12. A képek jelenleg nem érhető el. Emiatt a következő oldalon válassza a **Következő** gombot.
 13. Válassza a **A varázsló automatikusan bontsa a szervezeti diagramot oldalakra** lehetőséget.
 
-    ![7. szervezeti diagram varázsló.](media/orgchart-wizard4.png)
+    ![Szervezeti diagram varázsló 7](media/orgchart-wizard4.png)
 
 14. Válassza a **Befejezés** lehetőséget.
 
@@ -101,11 +99,8 @@ A Visio alkalmazásban létrehozott diagram minden vezetőt külön munkalapon j
 
 A diagramban való megjelenítésre kiválasztott mezők alapján az egyes csomópontok a megfelelő információt mutatják be, amikor a Visio-fájlt létrehozza.
 
-![Hierarchiadiagram.](media/hierarchy.png)
+![Hierarchiadiagram](media/hierarchy.png)
 
 **További lehetőség**
 
 A Human Resources modulban a **Személyek** munkaterületen is meg tudja jeleníteni a hierarchiához kapcsolódó információk egy részét.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

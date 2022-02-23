@@ -2,24 +2,27 @@
 title: Termékadatok oldalainak áttekintése
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékrészletek oldalairól (PDP-k).
 author: anupamar-ms
+manager: annbe
 ms.date: 01/23/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 48b4e5d66b86e0b1198bd6ff7ce1e7de33f8fde0
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: c53e74204fad2960dfba972a38c511df7d6672d8
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986201"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412967"
 ---
 # <a name="product-details-pages-overview"></a>Termékadatok oldalainak áttekintése
 
@@ -27,11 +30,13 @@ ms.locfileid: "7986201"
 
 Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékrészletek oldalairól (PDP-k).
 
+## <a name="overview"></a>Áttekintés
+
 A PDP részletes információt nyújt a termékről, és a vevők számára lehetővé teszi a termékopciók például a méret, a stílus és a szín kiválasztását. A PDP-nek meg kell jelenítenie az összes olyan termékre vonatkozó információt, amely a vevőnek a beszerzési döntés meghozatalához szükséges.
 
 A következő ábrán a PDP egy példája látható.
 
-![Példa a termék részleteit tartalmazó oldalra.](./media/pdp.PNG)
+![Példa a termék részleteit tartalmazó oldalra](./media/pdp.PNG)
 
 ## <a name="header-and-footer-modules"></a>Fejléc- és láblécmodulok
 
@@ -83,6 +88,3 @@ Ha egy adott termék esetében a marketingtartalom egyedi, akkor a PDP-hez bárm
 [Fiókkezelési oldalak áttekintése](quick-tour-account-management.md)
 
 [A termékoldal bővítése lap](enrich-product-page.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

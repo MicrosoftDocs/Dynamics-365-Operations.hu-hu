@@ -1,24 +1,27 @@
 ---
 title: Termékmodell-összetevők létrehozása
 description: A megszorításon alapuló termékkonfigurációs modellek építőelemként használják az összetevőket a termékmodell szerkezetének kialakításához.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCComponentList
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 938af6b7b027a11e0de9cbfa2c3206b52c4c5f84
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: f8b640d63776debbe12367439186a72b231d8ada
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570609"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429513"
 ---
 # <a name="create-product-model-components"></a>Termékmodell-összetevők létrehozása
 
@@ -26,14 +29,12 @@ ms.locfileid: "7570609"
 
 A megszorításon alapuló termékkonfigurációs modellek építőelemként használják az összetevőket a termékmodell szerkezetének kialakításához. Létre kell hozni az összetevőket, mielőtt a termékmodellt fel lehetne építeni. Ez az eljárás az USMF bemutatócéget használja.
 
-1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
-1. A Műveleti ablaktáblán kattintson a **Modell** elemre.
-1. **Összetevők** kiválasztása.
-1. Válassza az **Új** lehetőséget.
-1. Írjon be egy értéket a **Név** mezőbe.
-1. Írjon egy értéket a **Leírás** mezőbe.
-1. Zárja be a lapot.
+1. Kattintson a Termékváltozat modelldefinícióra.
+2. Kattintson a Termékkonfigurációs modellek lehetőségre.
+3. A Művelet panelen kattintson a Modell elemre.
+4. Kattintson az Összetevők elemre.
+5. Kattintson az Új lehetőségre.
+6. Írjon be egy értéket a Név mezőbe.
+7. A Leírás mezőben adjon meg egy értéket.
+8. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

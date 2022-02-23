@@ -2,30 +2,35 @@
 title: Rendelésmegerősítési modul
 description: Ez a témakör a rendelésmegerősítési modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket használni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
+manager: annbe
 ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6914f8c968b03c05a2311a31a4f391c828db5b8b35bc864504dad78f43b3623f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bf33ebf9c0c5136f40fcd7e1012988d186c4169b
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733846"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4413025"
 ---
 # <a name="order-confirmation-module"></a>Rendelésmegerősítési modul
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a rendelésmegerősítési modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket használni a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 A rendelési visszaigazolás modul a rendelés visszaigazolási részleteinek megjelenítésére szolgál a rendelés leadását követően. Megjeleníti a rendelés visszaigazolási azonosítóját, a rendelés kapcsolattartási adatait, valamint az egyéb rendelésre vonatkozó adatokat, például a beszerzett cikkeket, a fizetési adatokat, az átvételi beállításokat és a szállítási módot.
 
@@ -82,6 +87,3 @@ A rendelés visszaigazolás modul új oldalra való felvételéhez és a kötele
 [Átvételi információ modul](pickup-info-module.md)
 
 [Ajándékutalvány modul](add-giftcard.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

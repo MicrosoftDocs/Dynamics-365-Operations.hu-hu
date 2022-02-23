@@ -1,27 +1,30 @@
 ---
 title: Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor
 description: Ez a cikk bemutatja, hogyan zárhatja ki a kiugró értékeket az igény-előrejelzés számítására szolgáló előzményadatokból. A kiugró értékek kizárásával, javíthatja az előrejelzés pontosságát.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastParameters, ReqDemPlanOutlierQuerySetup, ReqDemPlanOutlierQueryPreview
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 72621
 ms.assetid: 88a964af-14eb-4c5c-945b-388e5908362c
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bc0826d3a0dd8ded19590867e9a8138bb772c89a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9dec963ed5abd6f77e82029a3ea5ba1a69d44e36
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568639"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429389"
 ---
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor
 
@@ -39,7 +42,8 @@ A kiugró értékek kizárásával javíthatja az előrejelzés pontosságát. E
 
 **Megjegyzés:** Létrehozhat egy lekérdezést, amely egy meglévő lekérdezésen alapul. Válassza ki azt a változót, amelyből másolni szeretne, és kattintson a **Másolás** elemre. A **Lekérdezés dátuma** mező azonosítja a verziót. Használhatja a lekérdezést úgy, ahogy van vagy rákattinthat a **Lekérdezés szerkesztése** gombra, hogy módosítsa a feltételeket. Az új lekérdezés neve és leírása tetszés szerint módosítható.
 
-## <a name="additional-resources"></a>További erőforrások
+<a name="additional-resources"></a>További erőforrások
+--------
 
 [Igény-előrejelzés áttekintése](introduction-demand-forecasting.md)
 
@@ -47,6 +51,3 @@ A kiugró értékek kizárásával javíthatja az előrejelzés pontosságát. E
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

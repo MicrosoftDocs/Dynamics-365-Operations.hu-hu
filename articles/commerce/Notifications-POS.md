@@ -2,66 +2,61 @@
 title: Rendelési értesítések megjelenítése a pénztárnál (POS)
 description: Ez a témakör ismerteti, hogyan lehet engedélyezni a rendelési értesítéseket a pénztárban és az értesítési keretrendszerben.
 author: ShalabhjainMSFT
-ms.date: 03/12/2021
+manager: AnnBe
+ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailOperations, RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7166afdb43c7e835170c5768a0767f2943222b19c00c7d0aaf067263845651f8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e663a5dca76d570217b7e02444689a2e2d312c41
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714138"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412771"
 ---
 # <a name="show-order-notifications-in-the-point-of-sale-pos"></a>Rendelési értesítések megjelenítése a pénztárnál (POS)
 
 [!include [banner](includes/banner.md)]
 
-Az üzlet alkalmazottai az üzletben különféle feladatokhoz rendelhetők hozzá, például a rendelések teljesítése, a készlet bevételezése vagy a leltár elvégzése. A pénztár (POS) ügyfél egyetlen alkalmazásban teszi lehetővé a munkatársak tájékoztatását ezekről a feladatokról. A pénztár értesítési keretrendszere segít azáltal, hogy a kiskereskedőknek szerepköralapú értesítések beállítását teszi lehetővé. A Dynamics 365 Retail alkalmazásban az 5. alkalmazásfrissítéssel kezdődően az értesítések csak pénztárműveleteknél állíthatók be.
+A modern kiskereskedelmi környezetben az üzlet munkatársai különböző feladatokat látnak el, például segítenek a vevőknek, beviszik a tranzakciókat, leltáraznak és rendeléseket fogadnak az üzletben. A pénztár (POS) ügyfél egyetlen alkalmazásban teszi lehetővé a munkatársak számára, hogy elvégezzék ezeket a feladatokat és még sok minden mást is. Mivel a nap folyamán különböző feladatokat kell végrehajtani, szükség lehet a munkatársak értesítésére, amikor valami figyelmet igényel. A pénztár értesítési keretrendszere segít azáltal, hogy a kiskereskedőknek szerepköralapú értesítések beállítását teszi lehetővé. A Dynamics 365 for Retail alkalmazás 5. alkalmazásfrissítésétől az értesítések csak pénztárműveleteknél állíthatók be.
 
-A rendszer a *rendelésteljesítési* műveletre vonatkozó értesítéseket is meg tudja jeleníteni, és a Commerce rendszer 10.0.18-as verziójától kezdve a *rendelés-visszahívási* művelethez is meg tud jeleníteni értesítéseket. Azonban mivel a keretrendszert bővíthetőnek tervezték, a fejlesztők képesek egy [értesítéskezelőt írni](dev-itpro/extend-pos-notification.md) minden művelethez, és a művelet értesítéseit megjeleníthetik a pénztárban.
 
-## <a name="enable-notifications-for-order-fulfillment-or-recall-order-operations"></a>A rendelésteljesítési vagy rendelés-visszahívási műveletek értesítéseinek engedélyezése
+Jelenleg a rendszer csak a rendelés teljesítése műveletekhez képes értesítéseket megjeleníteni. Azonban mivel a keretrendszert bővíthetőnek tervezték, a fejlesztők végül írni fognak tudni egy értesítéskezelőt minden művelethez, és a művelet értesítéseit megjeleníthetik a pénztárban.
 
-A rendelésteljesítési vagy rendelés-visszahívási műveletek értesítéseinek engedélyezéséhez hajtsa végre a következő lépéseket.
+## <a name="enable-notifications-for-order-fulfillment-operations"></a>A rendelésteljesítési műveletek értesítéseinek engedélyezése
 
-1. Lépjen a **Kiskereskedelem és kereskedelem \> Csatornabeállítás \> Pénztárbeállítás \> Pénztár \> Műveletek** lehetőségre.
-1. Keresse meg a **Rendelés teljesítése** műveletet vagy a **Rendelés visszahívása** műveletet, majd jelölje be az adott művelethez kapcsolódó **Értesítések engedélyezése** jelölőnégyzetet annak a megadásához, hogy az értesítési keretrendszer figyelje a kezelőt ehhez a művelethez. Ha a kezelő telepítve van, az ehhez a művelethez tartozó értesítések megjelennek a pénztárban.
-1. Nyissa meg a következőt: **Retail és Commerce \> Alkalmazottak \> Dolgozók**.
-1. Válassza a **Commerce** lapot, válasszon ki egy dolgozósort, majd válassza ki a **POS-engedélyek** lehetőséget. Válassza ki az **Értesítések** gyorslapot a kibontáshoz, majd adja hozzá azokat a műveleteket, amelyekhez értesítéseket engedélyezett. Ha egy dolgozó egyetlen értesítését konfigurálja, győződjön meg arról, hogy a **Rendelés megjelenítése** értéke **1** legyen. Ha egynél több műveletet konfigurál, a **Megjelenítési sorrend** beállításával jelezze, milyen sorrendben kell megjeleníteni az értesítéseket. 
+A rendelésteljesítési műveletek értesítéseinek engedélyezéséhez hajtsa végre a következő lépéseket:
 
-      Az értesítések csak az **Értesítések** gyorslapon hozzáadott műveletekhez kapcsolódóan jelennek meg. Csak akkor adhat hozzá műveleteket, ha az **Értesítések engedélyezése** jelölőnégyzet be van jelölve az ilyen műveletek esetében a **POS műveletek** oldalon. Ezenkívül a művelet értesítései csak akkor jelennek meg dolgozóknak, ha a művelet hozzá van adva a pénztárengedélyekhez az adott dolgozónál.
+1. Lépjen a **Kiskereskedelem és kereskedelem** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztár** &gt; **Műveletek** lehetőségre.
+2. Keresse meg a **Rendelés teljesítése** műveletet, és jelölje be az **Értesítések engedélyezése** jelölőnégyzetet annak a megadásához, hogy az értesítési keretrendszer figyelje a kezelőt ehhez a művelethez. Ha a kezelő telepítve van, az ehhez a művelethez tartozó értesítések megjelennek a pénztárban.
+3. Ugorjon a **Retail és Commerce** &gt; **Alkalmazottak** &gt; **Dolgozók** &gt; elemre a Commerce lapon, és nyissa meg a dolgozóhoz társított pénztárengedélyeket. Bontsa ki az **Értesítések** gyorslapot, adja hozzá a **Rendelés teljesítése** műveletet, és állítsa a **Megjelenítési sorrend** mezőt **1** értékre. Ha egynél több értesítés van beállítva, ezzel a mezővel történik az értesítések elrendezése. Az értesítések, amelyeknek kisebb a **Megjelenítési sorrend** értéke, az olyan értesítések felett jelennek meg, amelyeknek nagyobb az értesítési értéke. Azok az értesítések, amelyeknek a **Megjelenítési sorrend** értéke **1**, legfelül jelennek meg.
+
+    Csak azokhoz a műveletekhez jelennek meg értesítések, amelyeket hozzáadtak az **Értesítések** gyorslapon, és ott csak akkor vehet fel műveleteket, ha az **Értesítések engedélyezése** jelölőnégyzet be van jelölve ezekhez a műveletekhez a **Pénztárműveletek** oldalon. Ezenkívül a művelet értesítései csak akkor jelennek meg dolgozóknak, ha a művelet hozzá van adva a pénztárengedélyekhez az adott dolgozónál.
 
     > [!NOTE]
-    > Az értesítések a felhasználó szintjén felülbírálhatók. Ehhez nyissa meg a dolgozó rekordját, válassza ki a **POS-engedélyek** elemet, majd szerkessze a felhasználói értesítés-előfizetéseket.
+    > Az értesítések a felhasználó szintjén felülbírálhatók. Nyissa meg a dolgozó rekordját, válassza ki a **POS-engedélyek** elemet, majd szerkessze a felhasználói értesítés-előfizetéseket.
 
-1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**. Az **Értesítési időköz** mezőben adja meg, hogy milyen gyakran kell lekérni az értesítéseket. Egyes értesítéseknél a pénztárnak valós idejű hívást kell végrehajtania a háttérirodai alkalmazás felé. Ezek a hívások fogyasztják a háttérirodai alkalmazás számítási kapacitását. Emiatt az értesítési intervallum beállításakor vegye figyelembe mind az üzleti követelményeket, mind az irodai alkalmazás valós idejű hívásainak hatását. A **0** (nulla) érték kikapcsolja az értesítéseket.
-1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra. Válassza az **1060** (**személyzet**) ütemezést az értesítési előfizetési beállítások szinkronizálásához, és kattintson a **Futtatás most** elemre. Ezután szinkronizálja az engedélyintervallumot az **1070** (**csatornakonfiguráció**)ütemezés kiválasztásával, és kattintson a **Futtatás most** elemre.
+4. Ugorjon a következő elemre: **Retail és Commerce** &gt; **Csatorna beállítása** &gt; **Pénztárbeállítás** &gt; **Pénztárprofilok** &gt; **Funkcióprofilok**. Az **Értesítési időköz** mezőben adja meg, hogy milyen gyakran kell lekérni az értesítéseket. Egyes értesítéseknél a pénztárnak valós idejű hívást kell végrehajtania a háttérirodai alkalmazás felé. Ezek a hívások fogyasztják a háttérirodai alkalmazás számítási kapacitását. Emiatt az értesítési intervallum beállításakor vegye figyelembe mind az üzleti követelményeket, mind az irodai alkalmazás valós idejű hívásainak hatását. A **0** (nulla) érték kikapcsolja az értesítéseket.
+5. Ugorjon a **Kiskereskedelem és kereskedelem** &gt; **Kiskereskedelem és kereskedelem informatika** &gt; **Elosztási ütemezés** pontra. Válassza az **1060** (**személyzet**) ütemezést az értesítési előfizetési beállítások szinkronizálásához, és kattintson a **Futtatás most** elemre. Ezután szinkronizálja az engedélyintervallumot az **1070** (**csatornakonfiguráció**)ütemezés kiválasztásával, és kattintson a **Futtatás most** elemre.
 
 ## <a name="view-notifications-in-the-pos"></a>Értesítések megtekintése a pénztárban
 
-Miután befejezte az előző lépéseket, a dolgozók meg tudják tekinteni az értesítéseket a pénztárban. Az értesítés megtekintéséhez válassza a pénztár jobb felső sarkában található értesítés ikont. Megjelenik egy értesítési panel, amely megjeleníti a dolgozóhoz konfigurált műveletekkel kapcsolatos értesítéseket. 
+Miután befejezte az előző lépéseket, a dolgozók meg tudják tekinteni az értesítéseket a pénztárban. Az értesítés megtekintéséhez nyomja meg a pénztár jobb felső sarkában található értesítés ikont. Megjelenik az értesítési központ a rendelésteljesítési művelethez tartozó értesítésekkel. Az értesítési központnak a rendelésteljesítési műveletben a következő csoportokat kell megjelenítenie:
 
-A **rendelésteljesítési** műveletben az értesítési panelnek a következő csoportokat kell megjelenítenie:
+- **Átvétel az üzletben** – Ebben a csoportban azoknak a megrendeléseknek a száma jelenik meg, amelyeknél a szállítási mód az **Átvétel**, és az átvétel az aktuális üzlethez van ütemezve. Nyomja meg a számot a csoporton, hogy megnyissa a **Rendelés teljesítése** oldalt. Ebben az esetben az oldal szűrve lesz, hogy csak az aktuális boltból átvételre beállított, aktív rendeléseket jelenítse meg.
+- **Szállítás az üzletből** – Ebben a csoportban azoknak a megrendeléseknek a száma jelenik meg, amelyeknél a szállítási mód a **Szállítás**, és a szállítás az aktuális üzletből van ütemezve. Nyomja meg a számot a csoporton, hogy megnyissa a **Rendelés teljesítése** oldalt. Ebben az esetben az oldal szűrve lesz, hogy csak az aktuális boltból szállításra beállított, aktív rendeléseket jelenítse meg.
 
-- **Átvétel az üzletben** – Ebben a csoportban azon egyes rendelési sorok száma jelenik meg, amelyeknél az átvétel az aktuális üzlethez van ütemezve. Kiválaszthatja a csoportban lévő számot a **Rendelés teljesítése** művelet szűrővel történő megnyitásához, hogy csak azok az aktív rendelési sorok jelenjenek meg, amelyeket az aktuális üzletből történő felvételhez állítottak be.
-- **Szállítás üzletből** – ez a csoport a felhasználó aktuális üzletében konfigurált egyedi rendeléssorok számát jeleníti meg. Kiválaszthatja a csoportban lévő számot a **Rendelés teljesítése** művelet szűrt nézetének megnyitásához, hogy csak azok az aktív rendelési sorok jelenjenek meg, amelyeket az aktuális üzletből történő szállításhoz állítottak be.
-
-A **rendelés visszahívása** műveletben az értesítési panelnek a következő csoportokat kell megjelenítenie:
-
-- **Teljesítendő rendelések** – ez a csoport megjeleníti a felhasználó aktuális üzletének felvételi vagy szállítási teljesítése érdekében konfigurált rendelések számát. A csoportban látható szám kiválasztásával a **Rendelés visszahívása** műveletet szűrt nézettel nyithatja meg, amely csak azokat a nyitott rendeléseket jeleníti meg, amelyeket a felhasználó aktuális üzletének teljesítenie kell az üzletben való felvétel vagy az üzletből való szállítás forgatókönyvekhez.
-- **Átveendő megrendelések** – Ebben a csoportban azon rendelések száma jelenik meg, amelyeknél az átvétel az aktuális üzlethez van ütemezve. A csoportban látható szám kiválasztásával a **Rendelés visszahívása** műveletet szűrt nézettel nyithatja meg, amely csak azokat a nyitott rendeléseket jeleníti meg, amelyeket a felhasználó aktuális üzletének kell teljesítenie kell az üzletben való felvételhez.
-- **Szállítandó rendelések** – ez a csoport a felhasználó aktuális üzletéből szállítható rendelések számát mutatja. A csoportban látható szám kiválasztásával a **Rendelés visszahívása** műveletet szűrt nézettel nyithatja meg, amely csak azokat a nyitott rendeléseket jeleníti meg, amelyeket a felhasználó aktuális üzletének kell teljesítenie kell az üzletből való szállításhoz.
-
-A rendelésteljesítések és a rendelés-visszavonási értesítések esetében egyaránt amikor a folyamat új rendeléseket vesz át, az értesítési ikon megváltozik, hogy jelezze az új értesítéseket, és a megfelelő csoportok száma frissülni fog. Bár a csoportok rendszeres időközönként frissülnek, a pénztárfelhasználó kézzel is bármikor frissítheti a csoportokat a csoport melletti **Frissítés** gomb kiválasztásával. Végül, ha egy csoportnak új eleme van, amelyet az aktuális dolgozó még nem tekintett meg, a csoport égő szimbólumot jelenít meg az új tartalmat jelezve.
+Amikor új rendelések vannak teljesítésre az üzlethez társítva, az értesítési ikon megváltozik, hogy jelezze az új értesítéseket, és a megfelelő csoportok száma frissülni fog. Bár a csoportok rendszeres időközönként frissülnek, a pénztárfelhasználó kézzel is bármikor frissítheti a csoportokat, a csoport melletti **Frissítés** gomb kiválasztásával. Végül, ha egy csoportnak új eleme van, amelyet az aktuális dolgozó még nem tekintett meg, a csoport égő szimbólumot jelenít meg az új tartalmat jelezve.
 
 ## <a name="enable-live-content-on-pos-buttons"></a>Élő tartalom engedélyezése a pénztár gombjain
 
@@ -72,14 +67,13 @@ A pénztárgombok most már egy számlálót is megjeleníthetnek, amelynek a se
 
 A következő ábrán az élő tartalom beállítása látható a rácsgombtervezőben.
 
-![Élő tartalom beállítása a rácsgombtervezőben.](./media/ButtonGridDesigner.png "Élő tartalom beállítása a rácsgombtervezőben")
+![Élő tartalom beállítása a rácsgombtervezőben](./media/ButtonGridDesigner.png "Élő tartalom beállítása a rácsgombtervezőben")
 
 Ha meg szeretné jeleníteni az értesítések számát egy gombnyomással, gondoskodni kell arról, hogy a megfelelő képernyő-elrendezés frissítve legyen. A pénztár által használt képernyő-elrendezés meghatározásához jelölje be a **Beállítások** ikont a jobb felső sarokban, és jegyezze fel a **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása** adatokat. Most, az Edge böngésző használatával menjen a **Képernyőelrendezés** oldalra a rendszerben, keresse meg a fent azonosított **Képernyő-elrendezés azonosítója** és **Elrendezés felbontása** adatokat, majd jelölje be az **Élő tartalom engedélyezése** jelölőnégyzetet. Nyissa meg a **Retail és Commerce \> Retail és Commerce IT \> Elosztási ütemezés** menüpontot, és futtassa az 1090 (Pénztárgépek) feladatot az elrendezésmódosítások szinkronizálásához.
 
-![A pénztár által használt képernyő-elrendezés keresése.](./media/Choose_screen_layout.png "Képernyő-elrendezés keresése")
+
+![A pénztár által használt képernyő-elrendezés keresése](./media/Choose_screen_layout.png "Képernyő-elrendezés keresése")
 
 A következő ábra bemutatja a **Jobb felső** és a **Középen** kiválasztásának hatását a **Tartalom igazítása** mezőben, különböző méretű gombok esetében.
 
-![Élő tartalom a pénztár gombjain.](./media/ButtonsWithLiveContent.png "Élő tartalom a pénztár gombjain")
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![Élő tartalom a pénztár gombjain](./media/ButtonsWithLiveContent.png "Élő tartalom a pénztár gombjain")

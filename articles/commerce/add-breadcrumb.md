@@ -1,13 +1,16 @@
 ---
 title: Útkövetési modul
-description: Ez a témakör az útkövető modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör az útkövetési modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
+manager: annbe
 ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 2ba857ef7a796336bab3709817b5ba48fd3fa845667e4b9c40596cfe450290f6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ec9f5c72b03d9fd76055369e24491db5c7633cdf
+ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720012"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4517160"
 ---
 # <a name="breadcrumb-module"></a>Útkövetési modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör az útkövető modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör az útkövetési modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 Az útkövetési modulok másodlagos navigálás biztosítására szolgálnak a webhelyoldalakon. Általában a lap tetején láthatók, a fejléc alatt. Bár az útkövetési modulok bármilyen lapra hozzáadhatók, leggyakrabban a termékrészletek oldalakon (PDP-k) vannak használatban, a termékkategóriák hierarchiáját megjelenítéséhez, és gyors mozgást biztosítanak az oldalon. Az útkövetési modul egy „Visszatérés az eredményekhez" hivatkozás megjelenítésére is használható, amikor a felhasználók megnyitnak egy PDP-t a keresési vagy listaoldalon. Ily módon a felhasználók gyorsan visszatérhetnek a szűrt listaoldalukra a vásárlás folytatásához.
 
@@ -37,7 +42,7 @@ A termékkategóriák környezetét tartalmazó lapokon, például a PDP-k és a
 
 A következő kép egy olyan útkövető modult mutat be, amely a kategóriahierarchiát jeleníti meg egy PDP-n.
 
-![Példa egy útkövető modulra.](./media/ecommerce-breadcrumb.PNG)
+![Példa egy útkövető modulra](./media/ecommerce-breadcrumb.PNG)
 
 ## <a name="breadcrumb-module-settings"></a>Útkövetési modul beállításai
 
@@ -90,6 +95,3 @@ Egy útkövetési modul a PDP-re való felvételéhez és a kötelező tulajdons
 [Vásárlásmező-modul](add-buy-box.md)
 
 [SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

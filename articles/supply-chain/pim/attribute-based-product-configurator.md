@@ -1,27 +1,28 @@
 ---
 title: Attribútumalapú értékesítési árak a megszorításon alapuló termékkonfigurációhoz
 description: Ez a témakör leírja, hogyan lehet értékesítési ármodelleket felépíteni, ahol az eladási árak összetevőkön és attribútumokon alapulnak, nem pedig a fizikai anyagjegyzéken és az útvonalon.
-author: t-benebo
+author: sorenva
+manager: tfehr
 ms.date: 10/2/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: sorenand
 ms.search.validFrom: 2020-08-17
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e50b2d1e9ccf03a58e0ddf6d4ecfb34c6c504161
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: c0f9c1bb94b4dcc3c3c1e7656868ef6e6bd903db
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577456"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429183"
 ---
 # <a name="attribute-based-sales-prices-for-constraint-based-product-configuration"></a>Attribútumalapú értékesítési árak a megszorításon alapuló termékkonfigurációhoz
-
-[!include [banner](../includes/banner.md)]
 
 Ez a témakör leírja, hogyan lehet értékesítési ármodelleket felépíteni, ahol az eladási árak összetevőkön és attribútumokon alapulnak, nem pedig a fizikai anyagjegyzéken és az útvonalon. Minden egyes termékkonfigurációs modellhez több eladásiár-modellt lehet létrehozni.
 
@@ -35,7 +36,7 @@ Az alapértelmezett pénznem beállítása:
 1. Nyissa meg a **Megszorításon alapuló termékkonfigurációs modellek** lapot.
 1. Nyissa meg az **alapértelmezett pénznem** legördülő listát, és válassza ki a kívánt pénznemet.
 
-    ![A megszorításon alapuló termékkonfiguráció alapértelmezett pénznemének beállítása.](media/prod-config-currency.png "A megszorításon alapuló termékkonfiguráció alapértelmezett pénznemének beállítása")
+    ![A megszorításon alapuló termékkonfiguráció alapértelmezett pénznemének beállítása](media/prod-config-currency.png "A megszorításon alapuló termékkonfiguráció alapértelmezett pénznemének beállítása")
 
 1. Ha szeretné csatolni az összes rendelési vagy árajánlati sor árának részletezését tartalmazó Excel-fájlt, akkor az **Ármodell** szakaszban a **Csatolás** elemet állítsa *Igen*-re.
 
@@ -62,7 +63,7 @@ A következő példa egy 899,95 EUR értékű alapárat mutat be, amely a vevő 
 - Rózsafa dobozborítás esetén 119,95 eurót hozzá kell adni.
 - 12,95 euró hozzáadása, hangszóró-magasságegységenként.
 
-![Példa ármodellre.](media/prod-config-rules-example.png "Példa ármodellre")
+![Példa ármodellre](media/prod-config-rules-example.png "Példa ármodellre")
 
 ## <a name="add-support-for-multiple-currencies"></a>Több pénznem támogatásának hozzáadása
 
@@ -83,7 +84,7 @@ Explicit árak megadása más pénznemben:
 
 A következő példában az _EUR_ az alapértelmezett pénznem, az _USD_ pedig a „további pénznem”.
 
-![Példa több pénznemet tartalmazó modellre.](media/prod-config-rules-currency-example.png "Példa több pénznemet tartalmazó modellre")
+![Példa több pénznemet tartalmazó modellre](media/prod-config-rules-currency-example.png "Példa több pénznemet tartalmazó modellre")
 
 > [!NOTE]
 > Nem adható hozzá olyan kifejezésszabály, amely csak a nem alapértelmezett pénznemben érvényes. Ha olyan kifejezést szeretne létrehozni, amely csak az alapértelmezett pénznemtől eltérő pénznemre vonatkozik, akkor az alapértelmezett pénznem árkifejezését állítsa nullára. Ezt követően állítsa be a megfelelő kifejezést a nem alapértelmezett pénznemre.
@@ -95,11 +96,11 @@ Az eladási árak konfigurációs munkamenetben való működésének ellenőrz�
 - Az itt felajánlott konfigurációs beállításokkal válassza ki a termékopciókat, majd vizsgálja meg, hogyan hatnak az **Ár és szállítási dátum** feltüntetett értékeire.
 - Válassza **Az árbontás megtekintése** lehetőséget egy olyan Excel-dokumentum letöltéséhez, amely az ár számítási részleteit tartalmazza.
 
-![A termékmodell ellenőrzése.](media/prod-config-test.png "A termékmodell ellenőrzése")
+![A termékmodell ellenőrzése](media/prod-config-test.png "A termékmodell ellenőrzése")
 
 A letöltött táblázat az ár minden aktív elemét megjeleníti abszolút értékben és a teljes ár százalékában is. Ha beállította a **Csatolás** ármodellopciót a **Termékinformáció-kezelés paraméterei** lapon, , akkor ez az Excel-munkalap hozzákapcsolódik a rendeléshez vagy az ajánlati sorhoz.
 
-![Árbontást tartalmazó Excel-táblázat.](media/prod-config-excel-example.png "Árbontást tartalmazó Excel-táblázat")
+![Árbontást tartalmazó Excel-táblázat](media/prod-config-excel-example.png "Árbontást tartalmazó Excel-táblázat")
 
 ## <a name="set-up-selection-criteria-for-price-models"></a>Ármodellek kiválasztási kritériumainak beállítása
 
@@ -118,7 +119,7 @@ Ha az ármodelljei használatban vannak, akkor legalább egy kiválasztási krit
     - **Érvényesség kezdő dátuma** – Adja meg a lekérdezés első napját.
     - **Érvényesség vége** – Adja meg a lekérdezés utolsó napját.
 
-    ![Ármodellfeltételek.](media/prod-config-price-model-criteria.png "Ármodellfeltételek")
+    ![Ármodellfeltételek](media/prod-config-price-model-criteria.png "Ármodellfeltételek")
 
 1. Válassza ki a sort a meghatározni kívánt lekérdezéshez, majd válassza a **Szerkesztést** a **Művelet panelen**. Megnyílik a lekérdezéstervező párbeszédpanel. Úgy működik, mint a legtöbb lekérdezéstervező a Supply Chain Managementben. Használatával meghatározható, hogy milyen feltételek mellett kell alkalmazni a kiválasztott sor ármodelljét.
 
@@ -139,7 +140,4 @@ Az utolsó lépés az attribútumalapuló eladási árak megadása a termékmode
 1. Válassza ki a cél termékkonfigurációs modellt.
 1. A Művelet panelen nyissa meg a **Modell** lapot, és a **Termékmodell részletei** csoportban válassza a **Verziók** elemet.
 1. Megnyílik a **Verziók** lap. Az **Árképzési mód** beállítása legyen **Attribútumalapú**.
-    ![Az árképzési mód beállítása attribútumalapúra.](media/prod-config-versions.png "Az árképzési mód beállítása attribútumalapúra")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+    ![Az árképzési mód beállítása attribútumalapúra](media/prod-config-versions.png "Az árképzési mód beállítása attribútumalapúra")

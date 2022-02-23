@@ -1,35 +1,33 @@
 ---
 title: Kérdőívek
-description: Ez a témakör a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz.
-author: twheeloc
-ms.date: 10/28/2021
+description: Ez a cikk a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorParameters, KmWorkspace, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ad5f3572e7b4b0594ffce6abaddceac955d1c678
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: c96be3a46de6ed841331f36114132ca59c236ba2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069504"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418910"
 ---
 # <a name="questionnaires"></a>Kérdőívek
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Ez a témakör a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket. 
+Ez a cikk a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket. 
 
 A Microsoft Dynamics 365 Finance különböző funkcióival testre szabhatja a kérdőívet, hogy megfeleljen az Ön követelményeinek. Íme néhány példa a kérdőív használatához:
 
@@ -43,9 +41,6 @@ Az alábbi táblázatban találhatóak hivatkozások, a kérdőív fő feladatai
 
 | Témakör| Leírás|
 |------|------------|
-| [Kérdőívek tervezése](hr-learning-design-questionnaires.md) | Ez a témakör a kérdőív megtervezésével kapcsolatban nyújt információkat. A tervezési folyamat magában foglalja az előfeltételeket, a kérdéseket, a válaszokat, valamint ezek egyesítését kérdőív formába. |
-| [Kérdőívek terjesztése és ütemezése](hr-learning-distribute-questionnaires.md) | Ez a témakör tájékoztatást nyújt arról, hogyan lehet kérdőívet kiosztani a válaszadóknak, és hogyan kell kitölteni a kérdőíveket. |
-| [A kérdőív eredményeinek megtekintése és kiértékelése](hr-learning-evaluate-questionnaire-results.md) | Ez a témakör tájékoztatást nyújt a kitöltött kérdőívek eredményeinek megtekintéséről és értékeléséről. |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+| [Kérdőívek tervezése](hr-learning-design-questionnaires.md) | Ez a cikk a kérdőívek tervezésével kapcsolatban tartalmaz tájékoztatást. A tervezési folyamat magában foglalja az előfeltételeket, a kérdéseket, a válaszokat, valamint ezek egyesítését kérdőív formába. |
+| [Kérdőívek terjesztése és ütemezése](hr-learning-distribute-questionnaires.md) | Ez a cikk a kérdőívek válaszadóknak történő kiosztásáról, valamint a kérdőívek kitöltéséről szól. |
+| [A kérdőív eredményeinek megtekintése és kiértékelése](hr-learning-evaluate-questionnaire-results.md) | Ez a cikk a kitöltött kérdőívek eredményének megtekintéséről és kiértékeléséről szól. |

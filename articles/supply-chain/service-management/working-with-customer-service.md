@@ -1,26 +1,29 @@
 ---
 title: A vevőknek nyújtott szolgáltatások használata – áttekintés
 description: Az Ügyfélszolgálat modul a professzionális, szolgáltatás-központú vállalatokat és gyártási szolgáltató szervezeteket támogatja.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable, SMADispatchBoard
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 21ed2ceb6db06b04255803956c07ad3bcfa0e743
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 5d7e9b081d3b6453595e2f40af17c012da33ce02
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982459"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429674"
 ---
 # <a name="work-with-customer-service-overview"></a>A vevőknek nyújtott szolgáltatások használata – áttekintés
 
@@ -46,6 +49,3 @@ Ebben a szakaszban található témakörök az ügyfélszolgálati üzleti folya
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

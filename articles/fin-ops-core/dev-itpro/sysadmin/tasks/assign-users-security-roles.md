@@ -2,9 +2,11 @@
 title: Felhasználók hozzárendelése a biztonsági szerepkörökhöz
 description: A Finance and Operations alkalmazások eléréséhez hozzá kell rendelni a felhasználókat a biztonsági szerepkörökhöz.
 author: Peakerbl
+manager: AnnBe
 ms.date: 05/06/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecRolesEditUsers, SysSecAssignmentQueryLookup, SysQueryForm, SysSecRoleExcludeUsers
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6d65c4dafda63b7a54dd343652b0f4b498e064f4aee0fba43c34d40d73ac5062
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f78c24e8c2ffe5418ce119e19b7c0193f01f64b8
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6748336"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679864"
 ---
 # <a name="assign-users-to-security-roles"></a>Felhasználók hozzárendelése a biztonsági szerepkörökhöz
 
@@ -55,6 +57,3 @@ A biztonsági szerepkörökhöz manuálisan hozzárendelt felhasználókat a ren
 2. A fán válasszon ki egy szerepkört, és a **Szerepkörhöz rendelt felhasználók** menüben válassza ki a **Felhasználók manuális hozzárendelését/kizárását**.
 4. A **Felhasználók szerepkörhöz rendelése vagy kizárása onnan** helyen azok a felhasználók, akik nincsenek hozzárendelve a szerepkörhöz **Hozzárendelési mód** értéke **Nincs**. Jelöljön ki egy vagy több felhasználót, akit társítani kell a szerepkörhöz.
 5. A **Műveleti ablaktáblán** válassza a **Hozzárendelés szerepkörhöz** lehetőséget. A **Hozzárendelési módot** a program **Manuális** értékre frissíti, és a felhasználókhoz egy új szerepkör van hozzárendelve.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

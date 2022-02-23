@@ -1,10 +1,12 @@
 ---
 title: ER modell-leképezés kezelése külön ER-konfigurációkban
-description: Ez a témakör ismerteti az Elektronikus jelentés (ER) modell-leképezések kezelésének módját a különböző ER-konfigurációk között.
+description: A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörhöz rendelt felhasználó miként hozhat létre konfigurációszolgáltatót az Elektronikus jelentéshez (ER).
 author: NickSelin
+manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf4896bec7aa68cc6616756ef07c4db95e20a5cf7ebde3102f482cd5abad1420
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6776048"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684427"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>ER modell-leképezés kezelése külön ER-konfigurációkban
 
@@ -159,6 +161,3 @@ Mivel az ER-konfigurációk meg vannak osztva a vállalatok között, a feladat-
 7. Kattintson az OK gombra.
     * Ez a formátumkonfiguráció az alapértelmezett modell-hozzárendelési konfigurációt használja az elektronikus dokumentum létrehozásához (a létrehozott kimenet tartalmazza a vállalatkódot).  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

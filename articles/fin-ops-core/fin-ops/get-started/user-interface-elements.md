@@ -2,9 +2,11 @@
 title: A felhasználói felület elemei
 description: Ez a témakör az alkalmazásban használt felhasználói felület (UI) elemeit mutatja be.
 author: tlefor
+manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -12,17 +14,14 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 60e85841ec940ed65d73dc052848168be70301d6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 3e087a1abec9bf177bb831b9bbfa12895054ad07
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069323"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797938"
 ---
 # <a name="user-interface-elements"></a>A felhasználói felület elemei
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a témakör az alkalmazásban használt felhasználói felület (UI) elemeit mutatja be. Mielőtt a felhasználók navigálni tudnak a kezelőfelületen, fontos tudni a felületet alkotó elemek neveit és funkcióit.
 
@@ -87,6 +86,3 @@ Az *eszköztár* olyan eszközöket tartalmaz, mint például a mezők hozzáad�
 A *lista* rekordok gyűjteményének a neve, amelyeket át lehet görgetni. Ezeket a rekordokat átviheti az oldalra, ha kijelöli őket. Ez a művelet gyakran egy rácsot nyit meg.
 
 ![A következő kép példákat mutat be az eszköztárakra, rácsokra és listákra.](media/user-interface-08.png)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

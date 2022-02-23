@@ -1,26 +1,29 @@
 ---
 title: Szervizrendelések kombinálása
 description: Lehetőség van a szervizrendelések kombinálására
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5df9571cb1330489651a28462b747cacd7ac7e46
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 17fbed59b1fe7bec80f25f74451872efd61bed62
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580456"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429306"
 ---
 # <a name="combine-service-orders"></a>Szervizrendelések kombinálása   
 
@@ -41,14 +44,14 @@ Ha automatikusan hoz létre szervizrendeléssorokat a **Szolgáltatási szerződ
 
 Létrehoz egy szolgáltatási szerződést, amelynek kezdő dátuma 2017. 03. 31. A **Szervizrendelések kombinálása** mezőben válassza ki a **Szolgáltatási tárgy szerint** lehetőséget. Ezzel létrehozza a következő szolgáltatásiszerződés-sorokat:
 
-<table>
+<table style="width:100%;">
 <colgroup>
-<col />
-<col />
-<col />
-<col />
-<col />
-<col />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -110,6 +113,3 @@ A szolgáltatási szerződés soraira megadott időkeretek meghatározzák a sze
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

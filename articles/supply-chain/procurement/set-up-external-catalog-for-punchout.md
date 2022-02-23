@@ -1,10 +1,12 @@
 ---
 title: Külső katalógus beállítása a PunchOut e-beszerzés számára
 description: Ez a témakör egy külső katalógus PuncOut-katalógus használatát mutatja be, amelynek révén információt gyűjt egy szállítótól, hozzáadja egy igényléshez.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests, CatExternalCatalogConfiguration, CatCXMLCartLogList
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f1065c68723baa395bc06be6313e45a44661ea3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1f6e551f9d3d181674595e945bf1fb4c62a70ed5
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566912"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016377"
 ---
 # <a name="set-up-an-external-catalog-for-punchout-e-procurement"></a>Külső katalógus beállítása a PunchOut e-beszerzés számára
 
@@ -40,7 +42,7 @@ A külső katalógusnak lehetővé kell tennie, hogy a beszerzési igénylésbe 
 
 1. Beszerzési kategóriahierarchia beállítása. További információkért lásd: [Beszerzésikategória-hierarchiák irányelveinek beállítása](tasks/set-up-policies-procurement-category-hierarchies.md)
 2. Regisztrálja a szállítót a Supply Chain Management szolgáltatásban. Mielőtt beállíthatná a külső gyártó katalógusához szükséges konfigurációkat, be kell állítania a szállítót és a szállítói kapcsolattartót a Microsoft Dynamics 365 rendszerben. A külső katalógus szállítóját is hozzá kell adni a kiválasztott beszerzési kategóriához. A szállítók regisztrálásával kapcsolatos további tudnivalókat lásd: [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md). A szállítónak a beszerzési kategóriához való hozzárendelésével kapcsolatos további tudnivalókat lásd: [Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan](tasks/approve-vendors-specific-procurement-categories.md).
-3. Győződjön meg arról, hogy a mértékegységek és a szállító által használt pénznem be van beállítva. A mértékegység létrehozásával kapcsolatos további tudnivalókat lásd: [Mértékegységek kezelése](../pim/tasks/manage-unit-measure.md).
+3. Győződjön meg arról, hogy a mértékegységek és a szállító által használt pénznem be van beállítva. A mértékegység létrehozásával kapcsolatos további tudnivalókat lásd: [Mértékegység kezelése](../pim/tasks/manage-unit-measure.md).
 4. Állítsa be a külső szállítói katalógust a szállító külső katalógusának webhelye által előírt követelmények használatával. A feladattal kapcsolatos további tudnivalókról lásd: [A külső szállítói katalógus konfigurálása](#configure-the-external-vendor-catalog).
 5. Tesztelje a szállító külső katalógusának konfigurációit, hogy biztosítsa a beállítások érvényességét, valamint hogy hozzáférhet a szállítói külső katalógushoz. Használja a **Beállítások ellenőrzése** műveletet az ön által beállított beállításkérési üzenet ellenőrzéséhez. Az üzenet következményeként a szállítók külső katalóguswebhelyének meg kell nyílnia egy böngészőablakban. Az ellenőrzés során nem rendelhet cikkeket és szolgáltatásokat a szállítótól. Cikkek és szolgáltatások rendeléséhez egy beszerzési igénylésből kell hozzáférnie a szállítói katalógushoz.
 6. Aktiválja a külső katalógust a **Katalógus aktiválása** gombra kattintva a **Külső katalógusok** lapon. A külső katalógust aktiválni kell, mielőtt az alkalmazottak használni kezdenék. A külső katalógust bármikor inaktiválhatja.
@@ -110,5 +112,3 @@ A külső szállítói katalógus nem törölhető, ha egy terméket kért a kü
 
 - [Beszerzési cXML-fejlesztések](purchasing-cxml-enhancements.md)
 - [Külső katalógus használatának engedélyezése a PunchOut e-beszerzés számára](use-external-catalogs-for-punchout.md)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

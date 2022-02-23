@@ -2,9 +2,11 @@
 title: Egyéni tárhelyek meghatározása a létrehozott dokumentumoknak
 description: Ez a témakör ismerteti, hogyan bővítheti a dokumentumok tárolóhelyeinek listáját, amelyeket az elektronikus jelentési (ER) formátumok hoztak létre.
 author: NickSelin
+manager: AnnBe
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 362ac7f10cc61e26be89dfbae0e84745d42588a3
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594909"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680758"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Egyéni tárhelyek meghatározása a létrehozott dokumentumoknak
 
@@ -27,7 +29,7 @@ A alkalmazásprogramozási felület (API) az Elektronikus jelentéskészítéshe
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Telepít egy topológiát, amely támogatja a folyamatos buildet. A további tudnivalókért lásd: [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). A topológiához a következő szerepkörök egyikével kell rendelkezzen hozzáféréssel:
+Telepít egy topológiát, amely támogatja a folyamatos buildet. A további tudnivalókért lásd: [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation). A topológiához a következő szerepkörök egyikével kell rendelkezzen hozzáféréssel:
 
 - Elektronikus jelentések fejlesztője
 - Elektronikus jelentések funkcióival foglalkozó konzulens
@@ -41,7 +43,7 @@ A témakörben szereplő összes feladat elvégezhető az **USMF** vállalatnál
 
 Az egyéni tárolási helyhez hozzáadására szánt dokumentumok létrehozásához [importálja](er-download-configurations-global-repo.md) a **Tárgyieszköz-meghosszabbítás** ER formátumkonfigurációt az aktuális topológiába.
 
-![Konfigurációk tárháza oldal.](./media/er-custom-storage-generated-files-import-format.png)
+![Konfigurációk tárháza oldal](./media/er-custom-storage-generated-files-import-format.png)
 
 ## <a name="run-the-fixed-asset-roll-forward-report"></a>Jelentés tárgyi eszközök előregörgetéséről futtatása
 
@@ -52,7 +54,7 @@ Az egyéni tárolási helyhez hozzáadására szánt dokumentumok létrehozásá
 5. A **Formátumleképezés** mezőben válassza a **Tárgyi eszköz előregörgetés** lehetőséget.
 6. Válassza ki az **OK** lehetőséget.
 
-![Futásidejű párbeszédpanel a Tárgyi eszköz előregörgetése jelentéshez.](./media/er-custom-storage-generated-files-runtime-dialog.png)
+![Futásidejű párbeszédpanel a Tárgyi eszköz előregörgetése jelentéshez](./media/er-custom-storage-generated-files-runtime-dialog.png)
 
 A Microsoft Excel alkalmazásban tekintse át a létrehozott és letölthető kimenő dokumentumot. Ez a viselkedés az [alapértelmezett viselkedés](electronic-reporting-destinations.md#default-behavior) egy olyan ER-formátumnál, amelyhez nincsenek [célhelyek](electronic-reporting-destinations.md) konfigurálva, és amely interaktív módban fut.
 
@@ -255,7 +257,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Módosítsa a meglévő `AssetRollForwardService` osztályt, és írja meg kódot az egyéni cél-gyár beállításához a jelentésfuttatóhoz. Figyelje meg, hogy egy egyéni cél-gyár létrehozásakor az alkalmazás által vezérelt paraméter, amely meghatároz egy célmappát át lesz adva. Ily módon a célmappa a létrejövő fájlok tárolásához használatos.
 
     > [!NOTE] 
-    > Győződjön meg róla, hogy a megadott mappa (**c:\\0**, ebben a példában) szerepel az AOS szolgáltatást futtató kiszolgáló helyi fájlrendszerében. Ellenkező esetben egy [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) kivétel fog megjelenni futásidőben.
+    > Győződjön meg róla, hogy a megadott mappa (**c:\\0**, ebben a példában) szerepel az AOS szolgáltatást futtató kiszolgáló helyi fájlrendszerében. Ellenkező esetben egy [DirectoryNotFoundException](https://docs.microsoft.com/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) kivétel fog megjelenni futásidőben.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;
@@ -339,6 +341,3 @@ class AssetRollForwardService extends SysOperationServiceBase
 
 - [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 - [Bővíthetőség kezdőlap](../extensibility/extensibility-home-page.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

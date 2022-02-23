@@ -86,6 +86,3 @@ A heti kiadásban a cím adatai szinkronizálva vannak a Common Data Service szo
 ### <a name="print-performance-reviews"></a>Teljesítményértékelések nyomtatása
 
 Lásd [Teljesítményértékelések nyomtatása](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-talent/print-performance-reviews) a Dynamics 365: 2019 release wave 2 tervben.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

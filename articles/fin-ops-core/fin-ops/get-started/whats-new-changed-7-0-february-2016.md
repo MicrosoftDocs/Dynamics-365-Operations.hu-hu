@@ -2,9 +2,11 @@
 title: Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
 description: Ez a cikk a Microsoft Dynamics AX 7.0 aktuális verziójában található új vagy módosított szolgáltatásokat írja le. Ez a 2016 februárjában megjelent verzió tartalmazza mind a platform, mind pedig a pályázat szolgáltatásait.
 author: sericks007
+manager: AnnBe
 ms.date: 10/23/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcc69cbf418131d0b1747f1c904de3188d7ba84216cb3145607b45553263244c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3c1b63ba623eb1699938476825a77fd40d838142
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757219"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797219"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
 
@@ -732,7 +734,7 @@ A Kiskereskedelmi kiszolgáló és adatkezelés lehetővé teszi a vevők és v�
 </tr>
 <tr>
 <td>Adatok áthelyezése Microsoft Dynamics AX back-office és a csatornák között a Commerce Data Exchange használatával.</td>
-<td>A Commerce Data Exchange olyan rendszer, amely átviszi az adatokat a Microsoft Dynamics AX és a kiskereskedelmi csatornák között, például online áruházak és a fizikai üzletek között. További tájékoztatást a következő témakörben talál: <a href="/dynamicsax-2012/appuser-itpro/commerce-data-exchange">Commerce Data Exchange [AX 2012]</a>.</td>
+<td>A Commerce Data Exchange olyan rendszer, amely átviszi az adatokat a Microsoft Dynamics AX és a kiskereskedelmi csatornák között, például online áruházak és a fizikai üzletek között. További tájékoztatást a következő témakörben talál: <a href="https://technet.microsoft.com/library/dn741440.aspx">Commerce Data Exchange [AX 2012]</a>.</td>
 <td>A Microsoft Dynamics AX 2012 CU8-cal funkcionális paritás áll rendelkezésre. Azonban vegye figyelembe a következőket:
 <ul>
 <li>Commerce Data Exchange funkciót újra kialakították a felhő számára.</li>
@@ -1031,6 +1033,3 @@ Van egy továbbfejlesztett „kevés támogatást igénylő” ügyfélösszetev
 [Új vagy módosult elemek Finance and Operations kezdőlapján](whats-new-changed.md)
 
 [Új feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

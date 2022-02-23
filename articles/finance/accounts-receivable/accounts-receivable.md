@@ -1,28 +1,29 @@
 ---
 title: Kinnlevőségek kezdőlap
 description: A Kinnlevőségek szakasz a vevői számlák és a beérkező kifizetések nyilvántartására szolgál.
-author: roschlom
+author: ShylaThompson
+manager: AnnBe
 ms.date: 08/18/2017
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustomerInvoiceWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.custom:
-- "20671"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 20671
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 946a4e3cab6549af8b6c07248b6889e3b610f27f
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 69d2d320434baab21fb7e7c57ce1f043e4946d69
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726942"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459127"
 ---
 # <a name="accounts-receivable-home-page"></a>Kinnlevőségek kezdőlap
 
@@ -35,51 +36,67 @@ Vevői számlákat értékesítési rendelések vagy szállítólevelek alapján
 
 **Üzleti folyamatok**
 
-[![Üzleti folyamat.](./media/AR-process.PNG)](./media/AR-process.PNG)
+[![Üzleti folyamat](./media/AR-process.PNG)](./media/AR-process.PNG)
 
 ## <a name="set-up-accounts-receivable"></a>A Kinnlevőségek beállítása
 
 Kövesse nyomon a Kinnlevőségek funkcióval a vevői számlákat és a vevőktől érkező fizetéseket. Lehetőség van vevőcsoportok, vevők, feladási profilok, kamatlevelek, fizetési felszólítások, jutalékok, és vevőkre vonatkozó paraméterek, költségek, szállítások és célok, váltók és a Kinnlevőségek funkcióval kapcsolatos információk beállítására. 
 
-- [Könyvelési felosztások és analitikusnapló-bejegyzések szabadszöveges számlákhoz](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
-- [Vevői feladási profilok](customer-posting-profiles.md)
-- [Hitelkártya beállítása, engedélyezése és rögzítése](credit-card-authorizations.md)
-- [Vevői számla létrehozása](configure-customer-invoices.md)
-- [Ismétlődő számlák beállítása és feldolgozása](set-up-process-recurring-invoices.md)
-- [Szabadszöveges számla javítása](correct-free-text-invoice.md)
-- [Váltók beállítása](set-up-bills-exchange.md)
-- [Kamatlábak beállítása kamatkódhoz](set-up-interest-rates-interest-code.md)
-- [Kamatdíjak elengedése, visszaállítása vagy sztornírozása](waive-reinstate-reverse-interest-fees.md)
-- [SEPA beszedési megbízás – áttekintés](sepa-direct-debit-overview.md)
-- [SEPA beszedési megbízás beállítása](sepa-direct-debit-mandate.md)
-- [Kinnlevőségek modul bezárása](close-accounts-receivable.md)
-    
+:::row:::
+    :::column:::
+        - [Könyvelési felosztások és analitikusnapló-bejegyzések szabadszöveges számlákhoz](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+        - [Vevői feladási profilok](customer-posting-profiles.md)
+        - [Hitelkártya beállítása, engedélyezése és rögzítése](credit-card-authorizations.md)
+        - [Vevői számla létrehozása](configure-customer-invoices.md)
+        - [Ismétlődő számlák beállítása és feldolgozása](set-up-process-recurring-invoices.md)
+        - [Szabadszöveges számla javítása](correct-free-text-invoice.md)
+    :::column-end:::
+    :::column:::
+        - [Váltók beállítása](set-up-bills-exchange.md)
+        - [Kamatlábak beállítása kamatkódhoz](set-up-interest-rates-interest-code.md)
+        - [Kamatdíjak elengedése, visszaállítása vagy sztornírozása](waive-reinstate-reverse-interest-fees.md)
+        - [SEPA beszedési megbízás – áttekintés](sepa-direct-debit-overview.md)
+        - [SEPA beszedési megbízás beállítása](sepa-direct-debit-mandate.md)
+        - [Kinnlevőségek modul bezárása](close-accounts-receivable.md)
+    :::column-end:::
+:::row-end:::
+
+
 ## <a name="set-up-credit-and-collections"></a>Követelések és beszedések beállítása
 
 A kinnlevőségek kezelésével kapcsolatos adatokat egyetlen központi nézetből, a Beszedések oldalon kezelheti. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a beszedések kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a Vevők oldalon.
 
-- [Követelések és beszedések a Kinnlevőségek modulban](collections-credit-accounts-receivable.md)
-- [A Kinnlevőségek és a Követelések és beszedések konfigurálása](accounts-receivables-set-up-overview.md)
-- [Követelések és beszedések beállítása](set-up-collections.md)
+[Követelések és beszedések a Kinnlevőségek modulban](collections-credit-accounts-receivable.md)
+
+[A Kinnlevőségek és a Követelések és beszedések konfigurálása](accounts-receivables-set-up-overview.md)
+
+[Követelések és beszedések beállítása](set-up-collections.md)
 
 ## <a name="set-up-payments-and-settlements"></a>Kifizetések és kiegyenlítések beállítása
 
 Fogadjon különböző módokon vevői kifizetéseket, például váltó, készpénz, csekk, hitelkártya vagy elektronikus fizetés használatával. 
 
-- [Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
-- [A Kinnlevőségek modul központosított kifizetései](centralized-payments-accounts-receivable.md)
-- [Részleges vevői fizetés kiegyenlítése az engedmény dátuma előtt, végleges fizetés az engedmény dátumát követően](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-- [Részleges vevői kifizetés rendezése az engedmény dátuma előtt, a végső fizetés az engedmény bevezetésének dátuma után történik](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
-- [Részleges vevői kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](settle-partial-customer-payment-discounts-credit-notes.md)
-- [Részleges vevői kifizetés egy részének rendezése, amely több engedményes időszakkal rendelkezik](settle-partial-customer-payment-multiple-discount-periods.md)
-- [Visszatérítés vevőknek](reimburse-customers.md)
-- [Vevői kifizetések részösszegre](customer-payments-partial-amount.md)
-   
+:::row:::
+    :::column:::
+        - [Több, eltérő engedményes időszakokhoz tartozó számla kiegyenlítése egyetlen vevői kifizetéssel](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+        - [A Kinnlevőségek modul központosított kifizetései](centralized-payments-accounts-receivable.md)
+        - [Részleges vevői fizetés kiegyenlítése az engedmény dátuma előtt, végleges fizetés az engedmény dátumát követően](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
+        - [Részleges vevői kifizetés rendezése az engedmény dátuma előtt, a végső fizetés az engedmény bevezetésének dátuma után történik](settle-partial-customer-payment-before-discount-or-final-payment-after.md)
+    :::column-end:::
+    :::column:::
+        - [Részleges vevői kifizetés rendezése, amely szállítói jóváírásokra vonatkozó engedménnyel rendelkezik](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [Részleges vevői kifizetés egy részének rendezése, amely több engedményes időszakkal rendelkezik](settle-partial-customer-payment-multiple-discount-periods.md)
+        - [Visszatérítés vevőknek](reimburse-customers.md)
+        - [Vevői kifizetések részösszegre](customer-payments-partial-amount.md)
+    :::column-end:::
+:::row-end:::
+
+
 ### <a name="additional-resources"></a>További erőforrások
 
 #### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Lépjen a [Microsoft Dynamics 365 Ütemterv](/dynamics365/release-plans/) oldalára a tervezett új funkciók megtekintéséhez. 
+Lépjen a [Microsoft Dynamics 365 Ütemterv](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
 
 #### <a name="blogs"></a>Blogok
 
@@ -100,6 +117,3 @@ Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,25 +1,29 @@
 ---
 title: Szolgáltatási szerződések áttekintése
-description: Ez a témakör a szolgáltatási szerződések működésével kapcsolatban nyújt áttekintést.
-author: kamaybac
+description: A szolgáltatásiszerződés-csoportok jól hasznosíthatók a szolgáltatási szerződések rendezésére és szűrésére.
+author: ShylaThompson
+manager: tfehr
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementGroup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: abc82cab3543ab64379207443654e1a57cde964a
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 51b51640a09f78ed613994e2ade755c8ad831ea9
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983719"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429608"
 ---
 # <a name="service-agreements-overview"></a>Szolgáltatási szerződések áttekintése
 
@@ -31,13 +35,10 @@ A **Szolgáltatáskezelési paraméterek** lap **Szolgáltatásiszerződés-csop
 
 ## <a name="example"></a>Példa
 
-- Csoportosíthatja szolgáltatási szerződéseit a kínált szolgáltatás szintje szerint.
-- Három szerződéscsoport van a vállalatnál: arany, ezüst és bronz.
-- Új szervizfiókvezetőt alkalmaztak a vállalatánál. A szervizvezető feladata, hogy foglalkozzon minden ügyféllel az arany fokozatú szerződések csoportjában. A szerződések rekordjait az arany fokozatú szerződéscsoport segítségével kiszűrheti a többi szerződés közül, és beállíthatja, hogy ezeknél az új ügyfélkapcsolati vezető legyen a felelős személy.
+-  Csoportosíthatja szolgáltatási szerződéseit a kínált szolgáltatás szintje szerint. 
+-  Három szerződéscsoport van a vállalatnál: arany, ezüst és bronz.
+-  Új szervizfiókvezetőt alkalmaztak a vállalatánál. A szervizvezető feladata, hogy foglalkozzon minden ügyféllel az arany fokozatú szerződések csoportjában. A szerződések rekordjait az arany fokozatú szerződéscsoport segítségével kiszűrheti a többi szerződés közül, és beállíthatja, hogy ezeknél az új ügyfélkapcsolati vezető legyen a felelős személy.
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Szolgáltatásiszerződés-csoportok létrehozása](create-service-agreement-groups.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

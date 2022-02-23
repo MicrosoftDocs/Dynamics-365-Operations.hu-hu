@@ -2,24 +2,27 @@
 title: EU értékesítési lista jelentése
 description: Ez a cikk az Európai Uniós (EU) értékesítési listáiról nyújt tájékoztatást.
 author: EvgenyPopovMBS
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.custom: 12811
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 33a17461038d3e81d3f3a827e52c9cfd781a5874d45c262ee9006564fb3d489d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780344"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408034"
 ---
 # <a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentés
 
@@ -27,7 +30,8 @@ ms.locfileid: "6780344"
 
 Ez a cikk az Európai Uniós (EU) értékesítési listáiról nyújt tájékoztatást.
 
-## <a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentése
+<a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentése
+-----------------------
 
 A szállítónak, aki Közösségen belül biztosít terméket vagy szolgáltatásokat olyan cégeknek, amiket az Európai Unióban (EU) hoztak létre, kötelessége benyújtani egy Közösségen belüli termék kiszállításáról szóló nyilatkozatot (EU értékesítési lista vagy ESL). Általában az ESL-t ben kell nyújtani az adóhatóságoknak, legkésőbb az ESL-t lefedő naptári időszakot követő hónap utolsó napjáig. A szállítónak fel kell tüntetnie az ESL-ben az általános forgalmi adó (áfa) azonosító számát és ügyfelenként külön az alábbi információkat:
 
@@ -156,6 +160,3 @@ Amikor befejezte az adott időszakra kiterjedő jelentési folyamatot (például
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

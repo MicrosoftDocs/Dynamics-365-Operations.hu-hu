@@ -1,24 +1,27 @@
 ---
 title: Vevői munkafolyamat
 description: Ez a témakör a vevői munkafolyamattal kapcsolatban tartalmaz információkat. A munkafolyamat segítségével módosíthat a vevőre vonatkozó specifikus mezőket, és jóváhagyásra küldheti ezeket a módosításokat, mielőtt hozzáadásra kerülnének a vevőhöz.
-author: abruer
+author: mikefalkner
+manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c74f18997b390d70b5012199fab1adc9734994f4
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 5998a492e12cb93aeec029c6e56f811f8b90055a
+ms.sourcegitcommit: e544c51a68ad5daf748c0e877bdbde094ad40bd2
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753826"
+ms.lasthandoff: 11/03/2020
+ms.locfileid: "4459195"
 ---
 # <a name="customer-workflow"></a>Vevői munkafolyamat
 
@@ -58,6 +61,3 @@ Amennyiben legalább egy javasolt módosítással rendelkezik, két további men
     Az oldalon látható állapot a következőre változik: **Jóváhagyásra váró módosítások**.
 
 A munkafolyamat az alkalmazás szokásos munkafolyamata. A jóváhagyót a rendszer a **Vevő** oldalra irányítja, ahol áttekintheti a **Javasolt módosítások** oldalon található módosításokat, majd a munkafolyamat jóváhagyásához kiválaszthatja a **Munkafolyamat \> Jóváhagyás** lehetőséget. Miután minden jóváhagyás befejeződött, a mezők a javasolt értékekre frissülnek.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

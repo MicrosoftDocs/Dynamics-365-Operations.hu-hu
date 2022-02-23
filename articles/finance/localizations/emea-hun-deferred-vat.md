@@ -2,9 +2,11 @@
 title: Halasztott áfa számítása
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a halasztott áfaszámításokat és a magyarországi áfafeladáshoz.
 author: anasyash
+manager: AnnBe
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 7ade77d582bab5dfe64df410e546a5336de26fb0b99e6bb488652f061662cd06
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 72e8e809876d83174e1da32686bb1a7bca9cc006
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744286"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018639"
 ---
 # <a name="deferred-sales-tax-calculations"></a>Halasztott áfa számítása
 
@@ -60,6 +62,3 @@ A halasztott áfa feladása a főkönyvi számlákra vonatkozóan is megadható.
 
 - **Halasztott áfa fizetendő** – Válassza ki a kijelölt főkönyvi feladási csoport halasztott áfaszámláját vagy adószámláját.
 - **Halasztott áfa visszaigényelhető** – Válassza ki a kijelölt főkönyvi feladási csoport halasztott áfaszámláját vagy adószámláját.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

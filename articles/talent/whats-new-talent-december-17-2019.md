@@ -56,6 +56,3 @@ Az e heti változtatások kijavítanak egy hibát, amely miatt a naptári napoka
 ### <a name="current-balance-report-in-leave-pbi-doubles-employee-balance-385581"></a>Az aktuális egyenleg jelentése a szabadság PBI-ben megduplázza az alkalmazottak egyenlegét (385581)
 
 Ez a változtatás javítja az aktuális egyenleg jelentését ebben a forgatókönyvben.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

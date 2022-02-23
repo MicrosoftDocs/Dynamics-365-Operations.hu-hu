@@ -85,6 +85,3 @@ Több oka is lehet annak, hogy miért nem látja azokat az Attract funkciókat, 
 
 - Munkatársa az Átfogó felvételi bővítménnyel kiegészített Attract szolgáltatás próbaverzióját vagy licencét használja, míg Ön az Attract alapverzióját.
 - Ön az Átfogó felvételi bővítménnyel kiegészített Attract szolgáltatással rendelkezik, de még nem rendelte hozzá a megfelelő szerepköröket az összes funkció használatához. További tudnivalókért tekintse át a [Biztonság és szerepkörök kezelése az Attract alkalmazásban](security-attract.md) részt.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

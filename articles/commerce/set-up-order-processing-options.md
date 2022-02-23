@@ -2,13 +2,16 @@
 title: Hívásközpont-csatornák beállítása
 description: Ebben a témakörben a hívásközpontok folyamatrendeléseiről tájékozódhat a Dynamics 365 Commerce használatával.
 author: josaw1
-ms.date: 02/04/2022
+manager: AnnBe
+ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCROrderParameters, MCRSalesTableOrderHistory, SalesOrderProcessingWorkspace
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 64669c5bf71a4f1673f5ad2c46db7d3a2eaf2a97
-ms.sourcegitcommit: 39f1455215e0363cd1449bbc6bdff489097f9ded
-ms.translationtype: MT
+ms.openlocfilehash: 28954eab857a06da3978ca362081dfc3c525354d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8092432"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412938"
 ---
 # <a name="set-up-call-center-channels"></a>Hívásközponti csatornák beállítása
 
@@ -37,7 +40,7 @@ A hívásközpont funkcióinak használatához a felhasználókat hozzá kell cs
 
 A hívásközponti csatornákhoz egy e-mail értesítési profilt is be lehet állítani. A profil határozza meg a hívásközponti csatornán keresztül rendeléseket leadó vevőknek történő e-mail-küldéskor használt e-mail-sablonok halmazát. Az e-mail-eseményindítók rendszereseményekre konfigurálhatók, például rendelés benyújtása vagy rendelés szállítása.
 
-Az értékesítések helyes, hívásközponti csatornán keresztüli feldolgozása előtt ki kell javítani a [fizetési módokat](/dynamics365/unified-operations/retail/work-with-payments), és a szállítási módot meg kell adni a csatornához.
+Az értékesítések helyes, hívásközponti csatornán keresztüli feldolgozása előtt ki kell javítani a [fizetési módokat](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-payments), és a szállítási módot meg kell adni a csatornához.
 
 A hívásközponti csatornák szintjén be lehet állítani a többi alapértelmezett értékeket, amelyek azokhoz a pénzügyi dimenziókhoz kapcsolódnak, amelyek a csatorna által létrehozott rendelésekhez kapcsolandók.
 
@@ -47,18 +50,15 @@ Három beállításnak egy hívásközpont konfigurációjában jelentős hatás
 
 ### <a name="enable-order-completion"></a>Rendeléskiegészítés engedélyezése
 
-A **Rendeléskiegészítés engedélyezése** hívásközponti csatorna beállításnak jelentős hatással van a csatornába bekerülő értékesítési rendelések rendelési folyamat feldolgozására. Ha ez a beállítás be van kapcsolva, minden értékesítési rendelésnek át kell esnie ellenőrzési szabályok készletén, mielőtt megerősítést kapnának. A szabályok futtatása a **Befejezés** gomb kiválasztásával történik, amely szerepel a műveleti ablakban az értékesítési rendelés oldalon. Értékesítési rendelések létrehozásakor, ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, át kell esniük a rendelés befejezése folyamaton. Ez a folyamat megköveteli a kifizetés és a fizetés-ellenőrzési logika rögzítését. A fizetés kikényszerítése mellett a rendelés beküldése folyamat kiválthatja a [csalásellenőrzést](/dynamics365/unified-operations/retail/set-up-fraud-alerts), amelyet a rendszerben konfigurálhat. A fizetési vagy csalásellenőrzéseken sikertelen megrendelések várakoztatásra kerülnek, és nem adhatók ki további feldolgozásra (például kitárolás vagy szállítás), a várakoztatást okozó probléma megoldásáig.
+A **Rendeléskiegészítés engedélyezése** hívásközponti csatorna beállításnak jelentős hatással van a csatornába bekerülő értékesítési rendelések rendelési folyamat feldolgozására. Ha ez a beállítás be van kapcsolva, minden értékesítési rendelésnek át kell esnie ellenőrzési szabályok készletén, mielőtt megerősítést kapnának. A szabályok futtatása a **Befejezés** gomb kiválasztásával történik, amely szerepel a műveleti ablakban az értékesítési rendelés oldalon. Értékesítési rendelések létrehozásakor, ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, át kell esniük a rendelés befejezése folyamaton. Ez a folyamat megköveteli a kifizetés és a fizetés-ellenőrzési logika rögzítését. A fizetés kikényszerítése mellett a rendelés beküldése folyamat kiválthatja a [csalásellenőrzést](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts), amelyet a rendszerben konfigurálhat. A fizetési vagy csalásellenőrzéseken sikertelen megrendelések várakoztatásra kerülnek, és nem adhatók ki további feldolgozásra (például kitárolás vagy szállítás), a várakoztatást okozó probléma megoldásáig.
 
-Ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van a hívásközponti csatornán, ha sorban szereplő cikkek vannak egy értékesítési rendelésben megadva, és a csatorna felhasználója megpróbál zárni, vagy az értékesítési rendelés képernyőt elhagyni anélkül, hogy először kiválasztja a **Befejezés** lehetőséget, a rendszer kikényszeríti a rendeléskiegészítést az értékesítésirendelés-összegzés lap megnyitásával és annak a megkövetelésével, hogy a felhasználó megfelelően küldje be az űrlapot. Ha a rendelés megfelelően nem küldhető a fizetéssel együtt, a felhasználó használhatja a [rendelés visszatartva](/dynamics365/unified-operations/retail/work-with-order-holds) funkciót a rendelés várakoztatottra állításához. Ha a felhasználó megpróbálja érvényteleníteni a rendelést, megfelelően kell érvénytelenítenie vagy az érvénytelenítés, vagy a törlés funkcióval, attól függően, amit lehetővé teszi a felhasználó biztonsága.
+Ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van a hívásközponti csatornán, ha sorban szereplő cikkek vannak egy értékesítési rendelésben megadva, és a csatorna felhasználója megpróbál zárni, vagy az értékesítési rendelés képernyőt elhagyni anélkül, hogy először kiválasztja a **Befejezés** lehetőséget, a rendszer kikényszeríti a rendeléskiegészítést az értékesítésirendelés-összegzés lap megnyitásával és annak a megkövetelésével, hogy a felhasználó megfelelően küldje be az űrlapot. Ha a rendelés megfelelően nem küldhető a fizetéssel együtt, a felhasználó használhatja a [rendelés visszatartva](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) funkciót a rendelés várakoztatottra állításához. Ha a felhasználó megpróbálja érvényteleníteni a rendelést, megfelelően kell érvénytelenítenie vagy az érvénytelenítés, vagy a törlés funkcióval, attól függően, amit lehetővé teszi a felhasználó biztonsága.
 
 Ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van a hívásközponti csatornán, a **Fizetési állapot** mezőt a rendszer nyomon követi a rendelésen. A rendszer kiszámítja a **Fizetési állapot** értékét, amikor benyújtják az értékesítési rendelést. A rendszer csak a jóváhagyott kifizetési állapotú rendeléseket engedi végighaladni a további rendelésfeldolgozási lépéseken, például a kitárolás és a szállítás lépésén. Ha a kifizetéseket elutasítja a rendszer, a **ne dolgozza fel** jelző engedélyezve lesz a részletes rendelésállapotnál, és ez várakozó állapotba helyezi a rendelést a fizetési probléma megoldásáig.
 
-Ezenkívül, ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, amikor a felhasználó az értékesítési rendeléseket létrehozza és sortétel beviteli módban van, a **Forrás** mező rendelkezésre áll a fő értékesítési rendelés fejlécében. A **Forrás** mező szolgál egy [katalógus forráskód](/dynamics365/unified-operations/retail/call-center-catalogs) rögzítésére a közvetlen marketing eladási forgatókönyvek esetén. Ez a kód ezután különleges árak vagy promóciók hajtóereje lehet.
+Ezenkívül, ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, amikor a felhasználó az értékesítési rendeléseket létrehozza és sortétel beviteli módban van, a **Forrás** mező rendelkezésre áll a fő értékesítési rendelés fejlécében. A **Forrás** mező szolgál egy [katalógus forráskód](https://docs.microsoft.com/dynamics365/unified-operations/retail/call-center-catalogs) rögzítésére a közvetlen marketing eladási forgatókönyvek esetén. Ez a kód ezután különleges árak vagy promóciók hajtóereje lehet.
 
 Akkor is, ha a **Rendeléskiegészítés engedélyezése** beállítás ki van kapcsolva, a felhasználók továbbra is alkalmazhatnak egy forráskódot egy értékesítési rendelésre. Azonban ehhez meg kell nyitni az értékesítési rendelés fejlécének részleteit a **Forrás** mező eléréséhez. Ez azt jelenti, hogy néhány további kattintással szükség. Ugyanez vonatkozik az olyan funkciókra, mint a szállítás befejeződött és a sürgős rendelések. Ezek a funkciók a hívásközpontban létrehozott összes rendeléshez elérhetők. Ugyanakkor, ha a **Rendeléskiegészítés engedélyezése** beállítás engedélyezve van, a felhasználók megtekinthetik ezeknek a szolgáltatásoknak a konfigurációját az eladási fejlécben, amíg a sorbeviteli nézetben vannak. Nem kell megnyitniuk az értékesítési rendelés fejlécének részletes információit a megfelelő beállítások és mezők megkereséséhez.
-
-> [!NOTE]
-> Amikor az **Omni-channel Commerce megrendelések kifizetése** funkció engedélyezve van, a call center **Megrendelés befejezésének engedélyezése** gomb el lesz rejtve a központban a **Tábornok** Csatornád gyorslapja itt **Kiskereskedelem és kereskedelem \> Csatornák \> Call Centerek**.
 
 ### <a name="enable-direct-selling"></a>Közvetlen értékesítés engedélyezése
 
@@ -84,6 +84,3 @@ A hívásközponti csatornák konfigurálása és a csatorna felhasználóinak m
 > [!NOTE]
 > A hívásközpont funkciójának használatához engedélyezni kell a **Több célhely** konfigurációs kulcsát. Ez a konfigurációs kulcs megtalálható a **Kereskedelem konfiguráció** kulcsai között a **Rendszerfelügyelet**\> **Beállítás** \> **Licenckonfiguráció** alatt. Ez a hívásközpont funkciók miatt szükséges, amelyek az értékesítésirendelés-sor szintjén konfigurált kézbesítési cím alapján különböző érvényesítéseket hajtanak végre. 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,27 +1,27 @@
 ---
 title: A dokumentumnyomtatás áttekintése
 description: Az alkalmazásban a dokumentumok nyomtathatók helyi nyomtató vagy a hálózathoz csatlakoztatott eszköz használatával. A cikk a dokumentumok nyomtatási módjainak áttekintését nyújtja.
-author: RichdiMSFT
+author: TJVass
+manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: IT Pro, Application User
 ms.reviewer: kfend
-ms.custom:
-- "69161"
-- intro-internal
+ms.custom: 69161
 ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8b9105ef39e411ac33043f1941d4e1dd32b758e5
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: b1d64a2efeade5e9ba24f4dfe61c861f5a4cbad4
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984908"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680096"
 ---
 # <a name="document-printing-overview"></a>A dokumentumnyomtatás áttekintése
 
@@ -71,9 +71,6 @@ Az ügyfélalapú megoldással a vevők kezelhetik a nyomtatási igények mért�
 
 A következő ábra bemutatja az alapvető összetevőket, amelyek segítik a hálózati nyomtatási műveletek támogatását.
 
-[![service-components-for-network-printing\_2016.](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
+[![service-components-for-network-printing\_2016](./media/service-components-for-network-printing_2016.png)](./media/service-components-for-network-printing_2016.png)
 
 Vegye figyelembe, hogy egyetlen nyomtatót több dokumentumot útválasztás ügynökhöz is lehet regisztrálni. A nyomtatóbeállítások feloldásához az üzemeltetett szolgáltatás a hálózati elérési utat használja, amely egyedileg azonosítja az összes hálózati nyomtatót. Emiatt akkor is, ha a nyomtató több ügyféllel van regisztrálva, egyetlen kiválasztható elemként jelenik meg az alkalmazásokban rendelkezésre álló nyomtatók listáján.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

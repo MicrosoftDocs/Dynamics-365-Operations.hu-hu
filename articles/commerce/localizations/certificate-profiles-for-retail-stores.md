@@ -2,9 +2,11 @@
 title: A kiskereskedelmi üzletek felhasználó által megadott tanúsítványprofiljai
 description: Ez a témakör a tanúsítványok kiskereskedelmi üzletekben való használatáról nyújt áttekintést.
 author: josaw
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9cb82a6d6336bb69fe818fb33e04ad621382b383055b24a4e79eee5ddff217ac
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 81fa3770a137471e3d7f8cab3c7d7f37febe64fa
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719930"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018868"
 ---
 # <a name="user-defined-certificate-profiles-for-retail-stores"></a>A kiskereskedelmi üzletek felhasználó által megadott tanúsítványprofiljai
 
@@ -79,7 +81,7 @@ Ha új sort ad hozzá a **Tanúsítványprofil beállításai** laphoz, követke
 - **Key Vault tanúsítvány** – A mezőt akkor kell megadni, ha a **Hely típusa** mezőt a **Key Vault** értékre állítja. Segítségével megadhatja a Key Vault tanúsítvány titkos kódját.
 
     > [!NOTE]
-    > Mielőtt Key Vault tanúsítványt használna tanúsítványprofilokban, feltétlenül töltsön fel egy tanúsítványt a kulcstartó tárolójába, és kövesse az [Azure Key Vault ügyfél beállítása](../../finance/localizations/setting-up-azure-key-vault-client.md) utasításait.
+    > Mielőtt Key Vault tanúsítványt használna tanúsítványprofilokban, feltétlenül töltsön fel egy tanúsítványt a kulcstartó tárolójába, és kövesse az [Azure Key Vault ügyfél beállítása](https://docs.microsoft.com/dynamics365/finance/localizations/setting-up-azure-key-vault-client) utasításait.
 
 - **Üzlet neve** – Ez a mező nem kötelező, és csak akkor érhető el, ha a **Hely típusa** mező értéke **Helyi tanúsítvány**. Itt megadhat egy alapértelmezett üzletnevet, amelyet a helyi tanúsítványok keresésénél használni kell.
 - **Üzlet helye** – Ez a mező nem kötelező, és csak akkor érhető el, ha a **Hely típusa** mező értéke **Helyi tanúsítvány**. Itt megadhat egy alapértelmezett üzlethelyet, amelyet a helyi tanúsítványok keresésénél lehet használni.
@@ -119,6 +121,3 @@ Ha a tanúsítvány új verziója kerül bevezetésre, de azt nem lehet minden �
 
 > [!NOTE]
 > A Commerce Runtime-ban először a tanúsítvány új verzióját hívja meg a rendszer. Ha a tanúsítvány még nincs frissítve egy adott üzletben vagy egy konkrét terminálon, akkor a rendszer a korábbi verziót fogja behívni.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

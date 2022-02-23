@@ -1,31 +1,36 @@
 ---
 title: Kosármodul
-description: Ez a témakör ismerteti a kosármodulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez a Microsoft Dynamics 365 Commerce segítségével.
+description: Ez a témakör a kosármodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 12/15/2020
+manager: annbe
+ms.date: 10/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f2db61cf23c217365274297c6e9878a4eb5679f8d9502cb70484372ae43f6b18
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 33db06ecfa2a8fa93cde3c4f1b31d6b30bfd0c34
+ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716884"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "4413019"
 ---
 # <a name="cart-module"></a>Kosármodul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör ismerteti a kosármodulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez a Microsoft Dynamics 365 Commerce segítségével.
+Ez a témakör a kosármodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 A kosármodullal megjeleníthetők a kosárba tett cikkek, mielőtt az ügyfél a pénztárra lép. A modul a rendelés összegzését is megjeleníti, és lehetővé teszi, hogy a vevő hozzáadja vagy eltávolítsa a promóciós kódokat.
 
@@ -35,11 +40,11 @@ A kosár modul a kosár azonosítója alapján jeleníti meg az adatokat, ami a 
 
 A következő kép a Fabrikam webhelyen használt kosároldal egy példáját jeleníti meg.
 
-![Példa a Fabrikam webhelyén lévő kosármodulra.](./media/cart2.PNG)
+![Példa egy gyár webhelyén lévő kosármodulra](./media/cart2.PNG)
 
 A következő kép a Fabrikam webhelyen használt kosároldal egy példáját jeleníti meg. Ebben a példában egy sortételre kezelési díjat számolnak fel.
 
-![Példa arra, amikor egy sortételre kezelési díjat számolnak fel.](./media/ecommerce-handling-fee.png)
+![Példa arra, amikor egy sortételre kezelési díjat számolnak fel](./media/ecommerce-handling-fee.png)
 
 ## <a name="cart-module-properties-and-slots"></a>A kosármodul tulajdonságai és helyei
 
@@ -48,7 +53,6 @@ A következő kép a Fabrikam webhelyen használt kosároldal egy példáját je
 | Fejléc | A fejléc szövege és a fejléc címkéje (**H1**, **H2**, **H3**, **H4**, **H5** vagy **H6**) | A kosarának olyan címsor, mint például a "Bevásárlótáska" vagy a "Kosárban található termékek." |
 | A nincs készleten állapottal kapcsolatos hibák megjelenítése | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, a kosár oldal a készlettel kapcsolatos hibákat fog jelezni. Azt ajánljuk Önnek, hogy állítsa ezt a tulajdonságot **igaz**-ra, ha a készlet ellenőrzés engedélyezve van az oldalon. |
 | Szállítási költségek megjelenítések sorcikkeknél | **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz** értékre van állítva, akkor a kosár sortételei megmutatják a szállítás költségeit, amennyiben ez az információ elérhető. Ez a funkció nem támogatott a Fabrikam témában, mert a felhasználók a csak szállítást választják a fizetési folyamaton belül. Azonban ez a funkció más munkafolyamatokban is bekapcsolható, ha az alkalmazható az adott munkafolyamatban. |
-| Elérhető promóciók megjelenítése| **Igaz** vagy **Hamis** | Ha ez a tulajdonság **Igaz**, a kosár a kosárban található cikkek alapján megjeleníti a rendelkezésre álló promóciókat. Ez a képesség a Dynamics 365 Commerce 10.0.16 kiadásban érhető el. |
 
 ## <a name="modules-that-can-be-used-in-a-cart-module"></a>A kosármodulban használható modulok
 
@@ -113,6 +117,3 @@ A kosármodul új oldalra való felvételéhez és a kötelező tulajdonságok b
 [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](calculated-inventory-retail-channels.md)
 
 [Online funkcióprofil létrehozása](online-functionality-profile.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

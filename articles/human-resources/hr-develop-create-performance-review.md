@@ -1,31 +1,29 @@
 ---
 title: Teljesítményértékelések létrehozása
 description: Ez a témakör ismerteti, hogyan hozható létre teljesítmény-áttekintés, és ismerteti az áttekintés egyes szakaszainak célját.
-author: twheeloc
-ms.date: 08/26/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 05/05/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EssWorkspace, HcmDiscussionNewDialog, HcmDiscussion, HcmDiscussionChangeSettings, HcmDiscussionAddGoalDialog, HcmTopicCreate, HcmMeasurementDetailDialog, HcmPerfJournalAdd, HcmEmployeeDevelopmentWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9c3ab4e769008bd8b401967e454aa6402f013773
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 99825dd580d617bb47b4f0ece784afbf6573ae8a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066950"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418843"
 ---
 # <a name="create-performance-reviews"></a>Teljesítményértékelések létrehozása
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 Ez a témakör ismerteti, hogyan hozható létre teljesítmény-áttekintés, és ismerteti az áttekintés egyes szakaszainak célját. Az eljárás a USMF bemutatócég segítségével lett létrehozva.
@@ -68,18 +66,15 @@ Ez a témakör ismerteti, hogyan hozható létre teljesítmény-áttekintés, é
 30. Válassza a **Minősítések** lapot.  
 
     - A **Minősítés részletei** gyorslapon az alkalmazottak saját maguk értékelhetik magukat, és a vezető értékelheti az alkalmazottat. Súlyok használata esetén a pontszámok súlyozásának értékét a program automatikusan kiszámítja.  
-    - A szakasz megtekintéséhez engedélyezze az alkalmazottminősítések megjelenítésének paraméterbeállítását az **Emberi erőforrások megosztott paraméterei** oldalon.  
+    - Ennek a szakasznak a megtekintéséhez engedélyezze az alkalmazotti minősítések megjelenítésének paraméterbeállításait.  
 
-31. Válassza a **Láttamozások** lapot. Ha az ellenőrzés munkafolyamatot alkalmaz, a láttamozások csak a munkafolyamat befejeződése után jelennek meg. Nincs munkafolyamat használva, úgy mind a munkavállaló, mind a vezető egyaránt szerepelnek itt. A **Szükséges** jelölőnégyzet a **Láttamozásokhoz** be van jelölve az ellenőrzési típus beállításainak alapján.  
+31. Válassza a **Láttamozások** lapot. Ha az ellenőrzés munkafolyamatot alkalmaz, a láttamozások csak a munkafolyamat befejeződése után jelennek meg. Nincs munkafolyamat használva, úgy mind a munkavállaló, mind a vezető egyaránt szerepelnek itt. A szükséges jelölőnégyzet be van jelölve az ellenőrzési típus beállításainak alapján.  
 32. Válassza ki az **Általános** fület.
 
     - A teljesítési időszak létrehozza az alapértelmezett kezdési és befejezési dátumot. E dátumok szerkeszthetők.  
-    - Az állapotok szabályozzák az ellenőrzés elérhetőségét. A **Még el nem kezdett** állapotnál mindenki szerkesztheti az ellenőrzést. A **Folyamatban** állapotnál csak az alkalmazott tekintheti meg és szerkesztheti az ellenőrzést. Az **Ellenőrzésre kész** állapotnál csak a vezető tekintheti meg és szerkesztheti az ellenőrzést. **A végleges ellenőrzés** állapot lehetővé teszi, hogy az alkalmazott és a vezető is megtekintse és szerkessze a véleményt, ha az ellenőrzés típusában be van jelölve a **Szerkesztés engedélyezése a végleges véleményben** beállítás. A **Kész** és **Visszavonva** állapotok csak olvashatóvá teszik az ellenőrzést. Ha egy felülvizsgálat **Elutasított** és vissza lesz küldve az alkalmazottnak, akkor az alkalmazott és a vezető is módosíthatja a szükséges módosításokat, hogy az alkalmazott újra beküldhesse.
+    - Az állapotok szabályozzák az ellenőrzés elérhetőségét. A **Még el nem kezdett** állapotnál mindenki szerkesztheti az ellenőrzést. A **Folyamatban** állapotnál csak az alkalmazott tekintheti meg és szerkesztheti az ellenőrzést. Az **Ellenőrzésre kész** állapotnál csak a vezető tekintheti meg és szerkesztheti az ellenőrzést. A **Végleges ellenőrzés** állapotnál az alkalmazott és a vezető egyaránt megtekinthetik az ellenőrzést, és szerkeszthetik is, ha ez be van állítva az ellenőrzés típusában. A **Kész** és **Visszavonva** állapotok csak olvashatóvá teszik az ellenőrzést. Ha egy felülvizsgálat **Elutasított** és vissza lesz küldve az alkalmazottnak, akkor az alkalmazott és a vezető is módosíthatja a szükséges módosításokat, hogy az alkalmazott újra beküldhesse.
 
 33. Az **Áttekintés** mezőben adjon meg egy értéket.
 34. Válasza a **Felülvizsgálat** lapot. Ahogy az ellenőrzés végighalad az állapotokon, mind az alkalmazott, mind a vezető adhat hozzá megjegyzéseket az egyes célokhoz és kompetenciákhoz.  
 35. Válassza ki a **Láttamozások** lapot. A dolgozó és a vezető láttamozhatja a felülvizsgálatot. Ha minden szükséges láttamozás kész, az állapot átáll **Befejezett** értékre, és többé nem végezhető módosítás.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

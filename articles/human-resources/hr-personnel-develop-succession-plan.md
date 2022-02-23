@@ -1,63 +1,62 @@
 ---
 title: Utódlási terv kialakítása
-description: A szervezet növekedésével el kell kezdenie az utánpótlás-tervezést.
-author: twheeloc
-ms.date: 10/28/2021
+description: Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előfordulhat, hogy olyan embert keres, aki hasonló szakértelemmel rendelkezik, mint egy másik személy.
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adcb7387b9ac21a88c1ee047d1b9573708a14abb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: e9334bb8a594d19aa82167cfa11a9522bbba4bea
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068869"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418785"
 ---
-# <a name="develop-a-succession-plan"></a>Utódlási terv kialakítása
+# <a name="develop-succession-plan"></a>Utódlási terv kialakítása
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előfordulhat, hogy olyan embert keres, aki hasonló szakértelemmel rendelkezik, mint egy másik személy.  Szakértelem-feltérképezés segítségével elemezheti a meglévő alkalmazottait és a pályázókat, hogy ellenőrizze, egyeznek-e valamelyik értékelt alkalmazott szakértelemkészletével. Ez az eljárás az USMF bemutatócéget használja.
 
-A szervezet növekedésével el kell kezdenie az utánpótlás-tervezést. Az utánpótlás-tervezés során általában olyan embert keres, aki hasonló szakértelemmel rendelkezik, mint egy másik személy. A szakértelem feltérképezése segítségével elemezheti a meglévő alkalmazottait és a pályázókat, hogy ellenőrizze, egyeznek-e valamelyik értékelt alkalmazott szakértelemkészletével. Ez az eljárás az USMF bemutatócéget használja.
-
-1. Lépjen az **Emberi erőforrások > Szakértelem > Szakértelem elemzése > Szakértelem-feltérképezési profilok** lehetőségre.
-2. Válassza az **Új** lehetőséget.
-3. A **Szakértelem feltérképezése** mezőben adjon meg egy nevet a szakértelem feltérképezéséhez. Példa: Alkalmazott.
-4. Írjon egy értéket a **Leírás** mezőbe.
-5. Adja meg a dátumot a **Dátum** mezőben.
-6. Válassza a **Profil beolvasása** lehetőséget.
-7. Válassza a **Személy** lehetőséget.
-8. A **Személy** mezőben adjon meg egy nevet vagy válasszon a legördülő listából.
-9. Válassza ki az **OK** lehetőséget.
-10. Bontsa ki a **Tanúsítványok** FastTab a készségleképezésben szereplő tanúsítványok megtekintéséhez vagy szerkesztéséhez.
-11. Bontsa ki a **Készségek** FastTab a bevonni kívánt készségek megtekintéséhez vagy szerkesztéséhez.
-12. A listában jelölje meg az első sort. Például: könyvelés.
-13. Jelölje be a **Választható** jelölőnégyzetet.
-14. A **Fontosság** mezőben válasszonki egy lehetőséget. Ha egy szakértelmet opcionális cikként jelöl meg, ki kell választania a szakértelem fontosságának szintjét.  
+1. Ugrás az Emberi erőforrások > Szakértelem > Szakértelem elemzése > Szakértelem-feltérképezési profilok lehetőségre.
+2. Kattintson az Új lehetőségre.
+3. A szakértelem-feltérképezéshez adjon meg egy nevet a Szakértelem feltérképezése mezőben.  Példa: Alkalmazott.
+4. A Leírás mezőben adjon meg egy értéket.
+5. Adja meg a dátumot a Dátum mezőben.
+6. Kattintson a Profil beolvasására.
+7. Kattintson a Személy parancsra.
+8. A Személy mezőben adjon meg egy nevet, vagy válasszon a legördülő listából.  Példa: Cassie Hicks.
+9. Kattintson az OK gombra.
+10. Bontsa ki a tanúsítványok gyorsfület, így láthatja vagy szerkesztheti a szakértelem-feltérképezésben szereplő tanúsítványokat.
+11. Bontsa ki a Szakértelmek gyorslapot a belefoglalandó Szakértelmek megjelenítéséhez és szerkesztéséhez.
+12. A listában jelölje meg az első sort.  Például: könyvelés
+13. Kattintson az Opcionális jelölőnégyzetre.
+14. Egy lehetőség kiválasztása Fontosság mezőben.
+    * Ha egy szakértelmet opcionális cikként jelöl meg, ki kell választania a szakértelem fontosságának szintjét.  
 15. Jelölje ki az 2. sort a listában.
-16. Jelölje be a **Választható** jelölőnégyzetet.
-17. A **Fontosság** mezőben válasszonki egy lehetőséget.
+16. Kattintson az Opcionális jelölőnégyzetre.
+17. Egy lehetőség kiválasztása Fontosság mezőben.
 18. Jelölje ki az 3. sort a listában.
-19. Jelölje be a **Választható** jelölőnégyzetet.
-20. A **Fontosság** mezőben válasszonki egy lehetőséget.
+19. Kattintson az Opcionális jelölőnégyzetre.
+20. Egy lehetőség kiválasztása Fontosság mezőben.
 21. Jelölje ki az 4. sort a listában.
-22. Jelölje be a **Választható** jelölőnégyzetet.
-23. A **Fontosság** mezőben válasszonki egy lehetőséget.
-24. Bontsa ki a **Oktatás** FastTab a készségleképezésbe bevonandó oktatási kompetenciák megtekintéséhez vagy szerkesztéséhez.
-25. Válassza a **Végrehajtás** lehetőséget.
-26. Válassza ki az **OK** lehetőséget.
-27. Válassza az **Eredmény** lehetőséget.
-28. Válassza a **Jelentés** lehetőséget. A jelentés a legjobb találatokat legfelül mutatja. Megtekintheti, hogy van-e hiányelem felsorolva. A hiány a szakértelem-feltérképezési szint és a személy szakértelmének szintje közötti különbség.  
+22. Kattintson az Opcionális jelölőnégyzetre.
+23. Egy lehetőség kiválasztása Fontosság mezőben.
+24. A szakértelem-feltérképezésbe belekerülő végzettség kompetenciák megtekintéséhez és szerkesztéséhez bontsa ki a Végzettségek gyorslapot.
+25. Kattintson a végrehajtásra.
+26. Kattintson az OK gombra.
+27. Kattintson az Eredményre.
+28. Kattintson a Jelentésre.
+    * A jelentés a legjobb találatokat felül mutatja.  Megtekintheti, hogy van-e hiányelem felsorolva.  Ez az elem az eltérést jelzi a szakértelem feltérképezésén felsorolt szint és a személy szakértelmének szintje között.  
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

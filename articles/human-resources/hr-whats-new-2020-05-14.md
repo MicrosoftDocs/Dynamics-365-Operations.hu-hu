@@ -1,42 +1,43 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. május 14.)
 description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. május 14-i kiadásban.
-author: andreabichsel
+author: Darinkramer
+manager: AnnBe
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: cb4693f3c856e7abcc39cbd658183d01ec98a066
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: 76ca497cc7fabf737c8a0ee71363f22fd4201ea8
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063747"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4528497"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. május 14.)
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 Ez a témakör a Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le. A változtatások a 8.1.3244-es buildszámra vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok tájékoztatásként a Lifecycle Services (LCS) támogatási számaira vonatkoznak.
 
 ## <a name="platform-changes"></a>Platformok módosításai
 
-Ez a heti kiadás tartalmazza a platform változásait. További információkért lásd [Platformfrissítések a Finance and Operations alkalmazások 10.0.10-es verziójához (2020. május)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Ez a kiadás hibajavításokat és a mentett nézetek módosításait tartalmazza.
+Ez a heti kiadás tartalmazza a platform változásait. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.10 verziójához (2020. május)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Ez a kiadás hibajavításokat és a mentett nézetek módosításait tartalmazza.
  
-## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Biztosítja, hogy a Dataverse választási listák megfelelnek a Szabadság felsorolásainak (436343)
+## <a name="ensure-common-data-service-picklists-are-consistent-with-leave-enums-436343"></a>Biztosítja, hogy a Common Data Service választási listák megfelelnek a Szabadság felsorolásainak (436343)
 
-A Dataverse választási listák most már megfelelnek a Szabadság felsorolásainak.
+A Common Data Service választási listák most már megfelelnek a Szabadság felsorolásainak.
 
 ## <a name="allow-users-to-configure-leave-request-workflow-based-on-the-request-amount-300044"></a>A felhasználók számára lehetővé teszi a szabadságkérelmi folyamat kérelem mennyisége alapján történő konfigurálását (300044).
 
@@ -74,7 +75,7 @@ Ez a módosítás kijavít egy hibát, amikor egy szabadságtervhez két szabads
 
 Ezzel a módosítással a Kezdeti lépések banner olyan felhasználók esetében rejtett, akik nem rendszergazdák vagy az adatkezelési rendszergazdák. 
 
-## <a name="the-dataverse-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>A Dataverse Dolgozó címe entitás dátum és idő tekintetében eltérően működik a Human Resources érvényességi dátumaitól (425071)
+## <a name="the-common-data-service-worker-address-entity-works-differently-in-terms-of-date-time-effective-dates-in-human-resources-425071"></a>A Common Data Service Dolgozó címe entitás dátum és idő tekintetében eltérően működik a Human Resources érvényességi dátumaitól (425071)
 
 Ez a módosítás a címadatokat a címek dátumai alapján bizonyos helyzetekben egymáshoz igazítja.
 
@@ -115,8 +116,6 @@ Megadhatja, hogy az átviteli szabadságtípust az átviteli egyenlegekhez, ahov
 ## <a name="see-also"></a>Lásd még
 
 [Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

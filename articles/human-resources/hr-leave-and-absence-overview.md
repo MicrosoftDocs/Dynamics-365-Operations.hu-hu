@@ -1,32 +1,31 @@
 ---
 title: Szabadság és távollét áttekintése
-description: A Dynamics 365 Human Resources rendszerben a szabadság és távollét munkaterülete rugalmas keretet biztosít az új szabadságkonstrukciók létrehozásához.
-author: twheeloc
-ms.date: 10/28/2021
-ms.topic: overview
+description: A Dynamics 365 Human Resources rendszerben a szabadság és távollét munkaterülete rugalmas keretet biztosít az új szabadságkonstrukciók létrehozásához. Emellett munkafolyamatokat is biztosít a kérelmek és az alkalmazottak intuitív önkiszolgáló rendszere számára, hogy szabadságot kérhessenek.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/01/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
+ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 344b4bba144a311530ce7be3b4bc230ce9cf8d1a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: ea58c3a08e74eea1ab51aa19a5a28445a9bcbb04
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069021"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418906"
 ---
 # <a name="leave-and-absence-overview"></a>Szabadság és távollét áttekintése
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Dynamics 365 Human Resources segítségével kiváló szabadságjuttatásokat biztosíthat a dolgozók számára. A **Szabadság és távollét** munkaterület rugalmas keretet biztosít az új szabadságkonstrukciók létrehozásához. Emellett munkafolyamatokat is biztosít a kérelmek és az alkalmazottak intuitív önkiszolgáló rendszere számára, hogy szabadságot kérhessenek. Az elemzés segítséget nyújt a szervezet számára a szabadságegyenlegek és a szabadságtervek használatának méréséhez és figyeléséhez.
 
@@ -36,8 +35,7 @@ Mielőtt létrehozza a szabadságterveket az alkalmazottak számára, végre kel
 
 - [Szabadság- és távollétparaméterek konfigurálása](hr-leave-and-absence-parameters.md)
 - [Munkaidőnaptár létrehozása](hr-leave-and-absence-working-time-calendar.md)
-- [Szabadságkérelmezési munkafolyamat létrehozása](hr-leave-and-absence-workflow.md)
-- [A Távollétkezelő szerepkör konfigurálása](hr-configure-absence-manager.md)
+- [Szabadságkérelem munkafolyamat létrehozása](hr-leave-and-absence-workflow.md)
 
 ## <a name="create-and-manage-leave-plans"></a>Szabadságtervek létrehozása és kezelése
 
@@ -53,10 +51,6 @@ Mielőtt létrehozza a szabadságterveket a dolgozók számára, létre kell hoz
 
 Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen az alkalmazottak elküldhetik a szabadságra vonatkozó kérelmeiket, Ön pedig kezelheti a kérelmeket.
 
-- [Távollét kérelmezése](hr-employee-self-service-request-time-off.md)
-- [Szabadság- és távollétkérelmek kezelése](hr-employee-self-service-manage-requests.md)
-- [Távollétkezelő szerepkör konfigurálása](hr-configure-absence-manager.md)
+[Szabadságkérelem](hr-employee-self-service-request-time-off.md)
+[Szabadság- és távollétkérelmek kezelése](hr-employee-self-service-manage-requests.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

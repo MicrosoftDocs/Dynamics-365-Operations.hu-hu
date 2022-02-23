@@ -1,10 +1,12 @@
 ---
 title: Adja meg a bérlista nyitó egyenlegeit
-description: A témakör a nyitó egyenlegek bevitelének lépéseit ismerteti a kereseti kódok, levonások, juttatások és adók esetében.
+description: A témakör a nyitó egyenlegek bevitelének lépéseit ismerteti a kereseti kódok, levonások, juttatások és adók esetében. Ez az információ értékes a partnerek számára az adatok áttelepítéséhez vagy átviteléhez egy új Bérlista rendszerbe egy másik rendszerből.
 author: andreabichsel
+manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: anbichse
@@ -14,14 +16,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0a5529e3268727dce022daebb853e50710e5bde84811014febe30e80afee9ed6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8443bc5c63a90d80757ab4b7507502497c2aaa69
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721876"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797784"
 ---
-# <a name="enter-payroll-beginning-balances"></a>Bérlista nyitó egyenlegeinek megadása
+# <a name="enter-payroll-beginning-balances"></a>Adja meg a bérlista nyitó egyenlegeit
 
 [!include [banner](../../includes/banner.md)]
 
@@ -164,6 +166,3 @@ Lehetőség van a tranzakciók sztornírozására és ismételt bevitelére. A t
 2. Kattintson az **Igen** lehetőségre, amikor a következő üzenet: „Ha sztornírozza ezt a fizetési kimutatást, sztornírozó fizetési kimutatás kerül létrehozásra ezen fizetési kimutatás ellentételezésére. Egyik fizetési kimutatás sem szerkeszthető. Kívánja sztornírozni ezt a fizetési kimutatást?" jelenik meg. 
 
 A fizetési kimutatás sztornírozása után új fizetési kimutatást hozhat létre a munkavállaló számára a korábban létrehozott bevételi kimutatásból. Győződjön meg róla, hogy az új fizetési kimutatás létrehozása előtt kijavította a bevételi kimutatáson szereplő hibás sorokat, majd hozzon létre új fizetési kimutatásokat a helyes összegekkel. 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

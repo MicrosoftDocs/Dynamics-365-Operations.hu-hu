@@ -2,26 +2,26 @@
 title: Mozgóátlag tartalék költségsorrend
 description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management tartalék költségsorrendjéről tartalmaz tájékoztatást a mozgóátlagok számításához.
 author: AndersGirke
+manager: tfehr
 ms.date: 03/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2020-03-25
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: d91b3b4b8d49e59aa03d62f4dd101b5a1ec18c41
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 541b7ecca5c1c36999f573d6d0f2dc0c9e901631
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568207"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967583"
 ---
 # <a name="moving-average-fallback-cost-sequence"></a>Mozgóátlag tartalék költségsorrend
-
-[!include [banner](../includes/banner.md)]
 
 A készlet költségének kiszámítására használt egyik módszer a _mozgóátlag_. Az egyes készletcikkekhez legfeljebb három költségérték tartozhat:
 
@@ -44,7 +44,4 @@ Az mozgóátlag-számítások költségsorozatának kiválasztásához hajtsa v�
     - **Aktív költség – Utolsó kiadás**
     - **Aktív költség – Cikkár** – A vállalatok teljesítménnyel kapcsolatos problémákat tapasztalhatnak, ha olyan üzleti folyamatokat alkalmaznak, amelyeknél a készlet rendszeres időközönként negatívba megy át, és ezzel egyidejűleg a tranzakciók mennyisége is magas. Ez a beállítás segít enyhíteni a teljesítménnyel kapcsolatos problémákat.
 
-![Készletkönyvelési paraméterek.](media/inventory-accounting-parameters.png "Készletkönyvelési paraméterek")
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+![Készletkönyvelési paraméterek](media/inventory-accounting-parameters.png "Készletkönyvelési paraméterek")

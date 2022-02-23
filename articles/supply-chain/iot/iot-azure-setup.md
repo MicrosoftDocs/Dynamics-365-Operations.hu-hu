@@ -1,25 +1,28 @@
 ---
 title: A IoT Intelligencia Azure-erőforrásainak beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet létrehozni és konfigurálni a Microsoft Azure-erőforrásokat, amelyekre az IoT Intelligencia alkalmazáshoz szükség van.
-author: tonyafehr
+author: robinarh
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: tfehr
+ms.reviewer: ''
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d50458be9196206978a8d146ecd5b8c2a0a1fa8c
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
-ms.translationtype: MT
+ms.openlocfilehash: 1277d2ab8bb1f2925874f7469250e164f6bde62d
+ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782847"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429832"
 ---
 # <a name="set-up-azure-resources-for-iot-intelligence"></a>A IoT Intelligencia Azure-erőforrásainak beállítása
 
@@ -159,6 +162,3 @@ A Redis-gyorsítótár kapcsolati karakterláncához tartozó titkos kód menté
 > Minden alkalommal, amikor frissít egy kapcsolati karakterláncot, frissítenie kell a titkos értékeket is.
 
 Most befejezte a szükséges Azure-erőforrások létesítését. A következő lépés az [IoT Intelligencia beépülő modul telepítése a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban](iot-lcs-setup.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

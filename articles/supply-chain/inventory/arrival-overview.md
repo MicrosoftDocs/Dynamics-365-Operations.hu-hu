@@ -1,29 +1,30 @@
 ---
 title: Beérkezés áttekintése
 description: Ez a témakör a Beérkezés áttekintése funkcióival kapcsolatban tartalmaz tájékoztatást. A funkció része a Beérkezés áttekintése lap, és minden, várhatóan beérkező cikk áttekintését nyújtja.
-author: yufeihuang
+author: perlynne
+manager: tfehr
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "274363"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 1248156ba9081fe4afbffd480b45cf9326d14a6c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 30859292f8ec481f018fe0c5a5ca4ca11c246d4c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567439"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429592"
 ---
 # <a name="arrival-overview"></a>Beérkezés áttekintése
 
@@ -36,7 +37,7 @@ A **Beérkezés áttekintése** lap az összes várhatóan bejövő cikkek átte
 ## <a name="business-scenario"></a>Üzleti eset
 Fontolja meg a következő példát a bevételezési folyamatokban.
 
-[![Üzleti eset.](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
+[![Üzleti eset](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Sanyi, a bevételezési adminisztrátor az iránt érdeklődik, hogy milyen beérkező cikkekre számítson az aktuális napon. A **Beérkezés áttekintése** lapon Sanyi áttekintést kaphat az aktuális feladatokról, valamint megtekintheti a mennyiségek, a térfogat, a súly, a különféle típusú rendelések stb. durva becslését is. Később a szállítás megérkezik az egyik érkeztetési területre, és Sanyi kap egy szállítási listát. A **Beérkezés áttekintése** lapon Sanyi a következő feladatokat végezheti el:
 
@@ -68,7 +69,7 @@ Az érkeztetési naplók automatikus létrehozásához a **Beérkezés áttekint
 
 -   Új napló létrehozásakor meg kell adnia egy naplónevet.
 
-[![A napló nevének megadása.](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
+[![A napló nevének megadása](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
 -   Ha értékeket ad meg a **Raktár** és a **Hely** mezőkben, ezeket az értékeket a rendszer alkalmazza a naplósorokban. Ha nem ad meg értéket, a rendszer a készlettranzakciókban megadott dimenzióértékeket használja.
 
@@ -120,6 +121,3 @@ Ha minden áru regisztrálása megtörtént, a raktárvezető vagy a beszerzési
 
 ## <a name="summary"></a>Összegzés
 A **Beérkezés áttekintése** lap áttekintést ad a raktárvezetőnek és a raktári dolgozóknak a bejövő feldolgozás részeként elvárt munkáról. A lapot a cikk érkeztetési folyamatának elindítására is használhatja, ezzel biztosítva a cikkek raktárba érkezésük első bejegyzésétől számított nyomon követését.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

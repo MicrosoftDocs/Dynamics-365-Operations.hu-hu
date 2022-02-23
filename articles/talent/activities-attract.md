@@ -91,6 +91,3 @@ A felvételi folyamat sablonjához szükséges az Ajánlattal kapcsolatos tevék
 > Az integrált Offer Management alkalmazás csak az Átfogó felvételi bővítménnyel érhető el. További információ: [A Microsoft Dynamics 365 Talent – Attract melyik verziója](./attract-comprehensive-hiring.md)?
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

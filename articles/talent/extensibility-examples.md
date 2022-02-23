@@ -79,6 +79,3 @@ A **Referral alkalmazás** letöltéséhez látogasson le a [Dynamics 365 Talent
 
 [A Microsoft Power Platform](https://docs.microsoft.com/power-platform/admin/admin-documentation)</br>
 [Alkalmazás bérlők és környezetek közötti áttelepítése](https://docs.microsoft.com/power-platform/admin/environment-and-tenant-migration)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

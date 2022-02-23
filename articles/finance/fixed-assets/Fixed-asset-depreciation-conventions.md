@@ -1,10 +1,12 @@
 ---
 title: Tárgyi eszközök értékcsökkenésére vonatkozó szabályok
 description: Ez a témakör a tárgyi eszközök értékcsökkenésére vonatkozó szabályokat írja le.
-author: moaamer
+author: saraschi2
+manager: AnnBe
 ms.date: 09/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetDepreciationProfile
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: roschlom
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 823f8826e297a01c3658ceb8e82e6f9902d7a359
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
-ms.translationtype: MT
+ms.openlocfilehash: bd0153b5d735e1d565b67db6c66c854ff738509c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883412"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4969203"
 ---
 # <a name="fixed-asset-depreciation-conventions"></a>Tárgyi eszközök értékcsökkenésére vonatkozó szabályok
 
@@ -40,6 +42,3 @@ A értékcsökkenési szabályok hozzárendelhetők tárgyieszköz-csoport köny
 | Hónap közepe (hó 15-e) | Ahhoz, hogy kiszámítsa az értékcsökkenési leírást az eszköz aktiválásának évében, szorozza meg a teljes éves értékcsökkenést egy törttel. A tört számlálója (felső szám) azon teljes hónapok száma, amelyekben az eszköz aktív az év során, plusz 1/2 (vagy 0,5). A nevező (alsó szám) 12. Ha az elszámolási időszak vége előtt vezeti ki az eszközt, használja ugyanezt a módszert a kivezetési évre vonatkozó értékcsökkenési leírás kiszámításához. |
 | Félév (évkezdet) | Az év első felében <strong>aktivált</strong> eszközök értékcsökkenése az év (teljes év) első napján indul. Az év második felében <strong>aktivált</strong> eszközök értékcsökkenése az év középső napján indul. |
 | Félév (következő év)     | Az év első felében <strong>aktivált</strong> eszközök értékcsökkenése az év (teljes év) első napján indul. Az év második felében <strong>aktivált</strong> eszközök értékcsökkenése a következő év első napján indul. Az év első felében kivont eszközök az előző év utolsó napján minősülnek kivontnak értékcsökkenés szempontjából. A folyó évre vonatkozó értékcsökkenést vissza kell vonni vagy ki kell igazítani. Az év második felében kivont eszközök a kivonás évének utolsó napján számítanak kivontnak értékcsökkenési szempontból. |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

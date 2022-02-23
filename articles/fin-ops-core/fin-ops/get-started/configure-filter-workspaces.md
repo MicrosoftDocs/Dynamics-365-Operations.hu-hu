@@ -2,9 +2,11 @@
 title: Munkaterületek konfigurálása és szűrése
 description: Ez a cikk a munkaterületek konfigurálásáról és szűréséről nyújt áttekintést.
 author: jasongre
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace, HcmBenefitWorkspace, BudgetPlanningWorkspace, BusinessProcessGenericWorkspace, RetailCatalogManagementWorkspace, RetailCategoryAndProductWorkspace, RetailChannelManagementWorkspace, HcmCompensationWorkspace, CAMCostAccountingLedgerAdminWorkspace, CostAdminWorkspace, CostAnalysisWorkspace, CAMCostControlWorkspace, CustomerCollectionManagerWorkspace, CustomerInvoiceWorkspace, CustPaymentWorkspace, DataManagementWorkspace, DataValidationWorkspace, ERWorkspace, LedgerPeriodCloseProjectWorkspace, AssetWorkspace, GeneralJournalEntryWorkspace, VendVendorPortalInvoiceWorkspace, BudgetTrackingWorkspace, ReqCreatePlanWorkspace, BusinessProcessGenericOwnerWorkspace, SelfHealingWorkspace, WHSOutboundWorkMonitoringWorkspace, WHSWavePlanningWorkspace, PayrollWorkspace, HcmWorkforceWorkspace, RetailDiscountPricingWorkspace, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, EcoResProductVariantMaintainWorkspace, JmgShopSupervisorWorkspace, ProjProjectManagementWorkspace, VendVendorPortalWorkspace, PurchOrderMaintainWorkspace, PurchOrderProcessReceiptsWorkspace, HcmRecruitmentWorkspace, EcoResProductMaintainWorkspace, FMClerkWorkspace, OpResLifecycleManagementWorkspace, RetailITWorkspace, RetailChannelOperationsWorkspace, RetailStoreManagementWorkspace, SalesOrderProcessingWorkspace, SalesReturnWorkspace, SystemAdministrationWorkspaceForm, VendVendorRequestForQuotationsWorkspace, VendVendorProfileManagementWorkspace, VendInvoiceWorkspace, VendPaymentWorkspace
 audience: Application User
@@ -15,19 +17,16 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e96b61457f222836d50a75ed15305c3c1267600c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 10f7e790fdab3866958af1fa131d25735f69a58c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068734"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798451"
 ---
 # <a name="configure-and-filter-workspaces"></a>Munkaterületek konfigurálása és szűrése
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a cikk a munkaterületek konfigurálásáról és szűréséről nyújt áttekintést.
 
@@ -35,11 +34,11 @@ Ez a cikk a munkaterületek konfigurálásáról és szűréséről nyújt átte
 
 Teljes munkaterületre vonatkozó beállítások módosításával megváltoztathatja bizonyos munkaterületek megjelenését és viselkedését. Konfigurálható munkaterületek esetén a Művelet panel tartalmaz egy olyan gombot, amellyel az ott megjelenő leírás szerint megváltoztatható a konfiguráció. Például az alábbi példában a megfelelő gomb neve: **Munkaterület konfigurálása**.
 
-[![Munkaterületek konfigurálása és szűrése.](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
+[![Munkaterületek konfigurálása és szűrése](./media/configure-and-filter-workspaces.png)](./media/configure-and-filter-workspaces.png)
 
 Amikor rákattint a gombra, megjelenik egy párbeszédpanel, ahol módosíthatja a munkaterület előre megadott beállításait. A párbeszédpanelen látható beállítási lehetőségek munkaterületenként változnak, az adott munkaterületen elérhető vezérlőktől és üzleti adatoktól függenek.
 
-[![Munkaterület konfigurálása.](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
+[![Munkaterület konfigurálása](./media/configure-my-workspace.png)](./media/configure-my-workspace.png)
 
 ## <a name="filtering-a-workspace"></a>Egy munkaterület szűrése
 
@@ -49,11 +48,11 @@ Sok munkaterületen szűrhető az ott megjelenő tartalom. Az elérhető vezérl
 
 Lehetősége van az egész munkaterület szűrésére egy munkaterület szintű szűrő segítségével. A munkaterület szintű szűrő a munkaterület bal felső sarkában jelenik meg. Ha kiválaszt egy konkrét értéket a legördülő menüből, a munkaterületen lévő tartalom a kiválasztott érték szerinti szűrés alapján rendeződik át.
 
-[![Munkaterület szűrése.](./media/workspace-filter.png)](./media/workspace-filter.png)
+[![Munkaterület szűrése](./media/workspace-filter.png)](./media/workspace-filter.png)
 
 Kattintással megnyílik a szűrő; ezután több lehetőség közül választhat.
 
-[![Kibontott munkaterületszűrő.](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
+[![Kibontott munkaterületszűrő](./media/workspace-filter-expanded.png)](./media/workspace-filter-expanded.png)
 
 Válasszon ki egy lehetőséget, amely alapján szűrni kívánja a munkaterületet.
 
@@ -61,9 +60,6 @@ Válasszon ki egy lehetőséget, amely alapján szűrni kívánja a munkaterüle
 
 Ha a munkaterület szakaszai rendelkeznek saját szűrővel, az egyes szakaszok külön-külön is szűrhetők. A következő ábra a szabadszöveges mező típusú szűrőre mutat példát (a szűrő az a mező, amely a „Szűrő” szöveget tartalmazza).
 
-[![Munkaterületszakasz-szűrők.](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
+[![Munkaterületszakasz-szűrők](./media/workspace-section-filters.png)](./media/workspace-section-filters.png)
 
 Ahogyan a munkaterület szintű szűrőnél, itt is válassza ki vagy adja meg azt az értékét, amely alapján a szakasz tartalmát szűkíteni kívánja.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

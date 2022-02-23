@@ -62,6 +62,3 @@ Ezzel a frissítéssel azok az alkalmazottak, akiknek megszűnt a munkaviszonyuk
 
 - **Probléma**:Egy új csatolmány hozzáadásakor egy dolgozóhoz az **Új** és **Szerkesztés** gombok szürkén jelennek meg. 
 - **Megoldás:** A melléklet lap megnyitása, előtt ellenőrizze, hogy az adatterületek a **Dolgozó** lapon le vannak-e zárva. Ha a ténymezők be vannak zárva, amikor a **Dolgozó** lap be van töltve, akkor a mellékletek gombjai engedélyezettek. (Ezt a problémát kijavítjuk a következő platformfrissítéssel.)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

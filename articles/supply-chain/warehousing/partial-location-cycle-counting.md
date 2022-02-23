@@ -2,13 +2,16 @@
 title: Helyek részleges ciklikus leltározása
 description: A ciklikus leltározási tervek vezérlik a tényleges leltározási tevékenységeket. Kérhető az, hogy csak bizonyos termékek és termékváltozatok leltározása történjen meg a hely összes aktuális készlete helyett.
 author: perlynne
+manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable, WHSRFMenuItemCycleCount, WHSCycleCountPlanListPage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9f06b39f3c2d2f5a0bdfef1da9395c71686ed46968a1143305b5a10787f7e85f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a541818a72f5c24db8784071f447c83a2aa4edfd
+ms.sourcegitcommit: 95f90ac3f248716abdab16d5de6ccbf059616e4b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778434"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4666746"
 ---
 # <a name="partial-location-cycle-counting"></a>Helyek részleges ciklikus leltározása
 
@@ -46,7 +49,7 @@ A részleges ciklikus leltározási munka feldolgozása előtt minimális követ
 Részleges ciklikus leltározási folyamat esetében az **Utolsó ciklikus leltár** dátuma/időpontja nem lesz frissítve a helyhez, még akkor sem, ha az adott helyen található összes cikket leltározni kell. A részleges ciklikus leltározás nem veszi figyelembe a **Ciklikus leltárok közötti idő** paramétert a **Ciklikus leltározási tervek** oldalon. A részleges ciklikus leltározás nem támogatja a több cikk egyidejű leltározását ugyanazon a helyen. A részleges ciklikus leltározási funkció a **Ciklikus leltározási terv végrehajtása** futtatásakor ugyanaz a hely többször is számolva lehet egy cikkhez. A helyzet elkerüléséhez adjon meg a szűrőket a **Helyek kiválasztása** mezőben.
 
 > [!NOTE]
-> A Raktárkezelés mobilalkalmazás nem biztosítja az **Azonosítótábla vagy cikk hozzáadása** gombot a részleges ciklikus leltározási folyamat használatakor.
+> A raktári alkalmazás nem biztosítja az **Azonosítótábla vagy cikk hozzáadása** gombot a részleges ciklikus leltározási folyamat használatakor.
 
 ## <a name="example"></a>Példa
 
@@ -59,6 +62,3 @@ Ebben a példában csak az A0001 cikkszámot kell leltározni a 61-es raktárban
 ## <a name="additional-resources"></a>További erőforrások
 
 [Ciklikus leltározás](cycle-counting.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

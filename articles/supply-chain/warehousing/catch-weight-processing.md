@@ -2,27 +2,31 @@
 title: A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
 description: A témakör azt ismerteti, hogy a munkasablonok és helyutasítások segítségével meghatározhatja, hogy hol és hogyan lehet munkavégzést végezni a raktárban.
 author: perlynne
+manager: tfehr
 ms.date: 08/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench, WHSCatchWeightTagRegistration, WHSCatchWeightTagFullDimDiscrepancies, WHSCatchWeightTagChangeWeightDropDownDialog, WHSCatchWeightLinkWorkLineTagDropDownDialog
+ms.search.form: WHSCatchWeightTag, WHSCatchWeightItemHandlingPolicy, TMSLoadBuildWorkbench
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-1-31
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 830e05db47e2e2d3bb5970869bc395cfa73ad603
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
-ms.translationtype: MT
+ms.openlocfilehash: 710446db7746ed3cd3fb9754caeaa15fd2f76641
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087370"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429879"
 ---
 # <a name="catch-weight-product-processing-with-warehouse-management"></a>A tényleges súllyal rendelkező termék feldolgozása a raktárkezelésben
 
 [!include [banner](../includes/banner.md)]
+
 
 ## <a name="feature-exposure"></a>Funkció kitettsége
 
@@ -40,7 +44,7 @@ Mielőtt a terméket a Raktárkezelésben használhatja, bizonyos alapvető term
 - Állítson be egy egység szekvenciacsoportot, ahol a tényleges súly egysége a legkisebb raktározási egységként (SKU) van meghatározva.
 - Állítson be egy tényleges súllyal rendelkező cikkek kezelésére vonatkozó irányelvet.
 
-További tudnivalókért lásd: [Tényleges súly alapú cikkek beállítása és karbantartása](/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
+További tudnivalókért lásd: [Tényleges súly alapú cikkek beállítása és karbantartása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/setting-up-and-maintaining-catch-weight-items).
 
 ## <a name="transaction-adjustments"></a>Tranzakció kiigazításai
 
@@ -49,7 +53,7 @@ Mivel a készlet súlya a raktárba kerüléskor eltérhet a súlytól, amivel a
 > [!NOTE]
 > A mobileszköz-tevékenység csak akkor indítja el a tranzakciók kiigazítását, ha a cikk tényleges súllyal rendelkező cikkekre vonatkozó kezelési irányelvének Kimenő súlyeltérési módszere **Súlyeltérés engedélyezése**.
 
-### <a name="example-1"></a>1. példa
+**1. példa**
 
 A **Jelentés készként** termelési folyamat során az azonosítótábla beviteli súlya, amely nyolc doboz tényleges súllyal rendelkező terméket tartalmaz, 80,1 kg-ként lesz rögzítve. Az azonosítótáblát ezután a késztermékek területen tárolják el, és a raktározási időszak alatt a súly egy része elvész.
 
@@ -57,7 +61,7 @@ Később, egy értékesítési rendelés kitárolási folyamata részeként az a
 
 Ebben az esetben a rendszer automatikusan kiigazítja a különbséget a hiányzó 0,3 kg-ra egy tranzakció feladásával.
 
-### <a name="example-2"></a>2. példa
+**2. példa**
 
 A meghatározás alapján egy termék be van állítva, hogy a **Doboz** ténylegessúly-egység esetén a minimális súly 8 kg-t és a maximális súlyt 12 kg-t toleráljon.
 
@@ -103,7 +107,7 @@ Ezen kívül, ha a cikket címke alapján nyomon követik, akkor létezik egy **
 **Ténylegessúly-címke követése használata esetén** a címkét mindig létre kell hozni minden ténylegessúly-egységhez ami beérkezik, és minden címkét mindig súllyal kell társítani.
 
 Például **Doboz** a tényleges súly egysége, és kap egy raklapot nyolc dobozzal. Ebben az esetben nyolc egyedi tényleges súly címkét létre kell hozni, és a súlyt minden címkéhez társítva kell lennie. A bejövő tényleges súly címkétől függően vagy összes nyolc doboz tömege rögzíthető, és az átlagos tömeg minden dobozra leosztható, vagy egyedi tömegek rögzíthetők az egyes dobozokra.
-A **Meglévő ténylegessúly-címkék használata, ha a termelési rendeléseket készként jelentik** funkció használatakor a mobileszköz menüelemen keresztül engedélyezett folyamattal, a készletet a rendszer a meglévő ténylegessúly-címke adatai alapján frissíti. Ennek eredményeképpen a Raktárkezelés mobilalkalmazás nem kéri a ténylegessúly-címke adatainak rögzítését a termelési készként jelentés művelet részeként.
+A **Meglévő ténylegessúly-címkék használata, ha a termelési rendeléseket készként jelentik** funkció használatakor a mobileszköz menüelemen keresztül engedélyezett folyamattal, a készletet a rendszer a meglévő ténylegessúly-címke adatai alapján frissíti. Ennek eredményeképpen a raktáralkalmazás nem kéri a ténylegessúly-címke adatainak rögzítését a termelési készként jelentés művelet részeként.
 
 **Ha a tényleges súly címke nyomon követését nem alkalmazzák**, a súly rögzíthető az egyes dimenziókészletekre (például az egyes azonosítótáblákra és nyomon követési dimenzióra). Másik lehetőségként a súly rögzíthető az összesített szint alapján, például mint öt azonosítótábla (raklap).
 
@@ -138,6 +142,7 @@ Nem minden munkafolyamat támogatja a tényleges súllyal renelkező termékek f
 - A tényleges súllyal rendelkező termékek, amelyeknél a változatok engedélyezettek, nem használhatók együtt a mértékegység-változatok átalakítására vonatkozó funkcióval.
 - Tényleges súllyal rendelkező termékek nem jelölhetők meg kereskedelmi „termékcsomagként”.
 - Tényleges súllyal rendelkező termékek csak olyan egységszekvencia-csoporttal használhatók, amelynek az tényleges súly anyagkezelési egységei vannak és amelynek a tényleges súly egysége, a legkisebb sorozat.
+- A tényleges súllyal rendelkező termékek esetén a készletegységek csak akkor konvertálhatók tényleges súly egységre, ha az átalakítás által létrehozott névleges mennyiség több mint 1.
 - A tényleges súllyal rendelkező termékek vonalkódjainak beállítása nem támogatja a változó súly beállítását.
 
 ### <a name="order-processing"></a>Rendelés feldolgozása
@@ -190,11 +195,7 @@ Nem minden munkafolyamat támogatja a tényleges súllyal renelkező termékek f
 
 ### <a name="catch-weight-tags"></a>Ténylegessúly-címkék
 
-A ténylegessúly-címkét létrehozhatja Raktárkezelés mobilalkalmazás folyamattal, a **Raktárkezelés > Lekérdezések és jelentések > Ténylegessúly-címke** menüpontból manuálisan a képernyőn vagy adatentitás-folyamat segítségével. Ha egy ténylegessúly-címkét társítanak egy bejövő forrásbizonylatsorral, például beszerzési rendelési sorral, a címke nyilvántartásba kerül. Ha a sor a kimenő feldolgozáshoz használatos, akkor a rendszer a címkét szállítottként frissíti. Az összes korábbi ténylegessúlycímke-regisztrációs eseményt megtekintheti a **Ténylegessúlycímke-regisztráció** lehetőséggel a **Ténylegessúly-címke** oldalon.
-
-A **Rögzített súly címkéjének módosítása** beállítással manuálisan frissítheti a ténylegessúly-címke súlyértékét. Ne feledje, hogy az aktuális készlet súlya nem módosul a manuális folyamat részeként, de a **Aktuális eltérések a ténylegessúly-címkével jelült cikkek esetében** lehetőség segítségével könnyedén megkeresheti az aktuálisan aktív ténylegessúly-címkék és az aktuális készlet közötti eltéréseket.
-
-További kézi beállítások a **Címke regisztrálása** egy forrásdokumentum-sorba, és a **Munka regisztrálása** meglévő raktári munkával szemben.
+A ténylegessúly-címkét létrehozhatja raktáralkalmazási folyamattal, manuálisan a képernyőn vagy adatentitás-folyamat segítségével. Ha egy ténylegessúly-címkét társítanak egy bejövő forrásbizonylatsorral, például beszerzési rendelési sorral, a címke nyilvántartásba kerül. Ha a sor a kimenő feldolgozáshoz használatos, akkor a rendszer a címkét szállítottként frissíti.
 
 A tényleges súllyal rendelkező termékekre jelenleg érvényes korlátozások mellegg a címkézett tényleges súllyal rendelkező termékekre aktuálisan más korlátozások is érvényesek.
 
@@ -209,6 +210,3 @@ A tényleges súllyal rendelkező termékekre jelenleg érvényes korlátozások
 
 > [!NOTE]
 > Az előző információk a ténylegessúly-címkékről csak akkor érvényesek, ha a tényleges súllyal rendelkező termék olyan ténylegessúly-címke dimenziókövetési metódussal rendelkezik, amely teljes körűen nyomon követett (azaz ha a **Ténylegessúly-címke dimenziójának követési módja** paraméter a ténylegesssúly-cikk kezelési irányelvében a következő beállítású: **Termékdimenziók, a nyomon követési dimenziók és az összes tárolási dimenzió**). Ha a ténylegessúly-cikk csak részlegesen címke által nyomon követett (azaz ha a **Ténylegessúly-címke dimenziójának követési módja** paraméter a ténlyegessúly-cikk kezelési irányelvében **Termékdimenziók, nyomon követési dimenziók és készletállapot** beállítású), akkor további korlátozások érvényesek. Mivel a láthatóság elveszik ebben az esetben a címke és a készlet között, bizonyos további esetek nem támogatottak.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

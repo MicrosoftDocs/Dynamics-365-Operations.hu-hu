@@ -1,14 +1,17 @@
 ---
 title: Többcsatornás speciális automatikus költségek
-description: Ez a témakör a Commerce csatorna rendeléseihez kapcsolódó egyéb rendelési költségek automatikus költségfunkciók használatával való kezelésére vonatkozó lehetőségeket írja le.
+description: Ez a témakör a Commerce csatorna rendeléseihez kapcsolódó kiegészítő rendelési költségek automatikus költségfunkciók használatával való kezelésére vonatkozó lehetőségeket írja le.
 author: hhaines
+manager: annbe
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ef6396ec66a0f96ba97b176c46bf70d83a080883cf496312398f14dce3ad9758
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2d463bf01659aeb6599023ce46da0c604f8eeff0
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743431"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4413012"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Többcsatornás speciális automatikus költségek
 
@@ -29,9 +32,9 @@ ms.locfileid: "6743431"
 
 Ez a témakör tájékoztatást nyújt a speciális automatikus költségek funkció konfigurációjáról és telepítéséről, amely rendelkezésre áll a Dynamics 365 for Retail 10.0 verziójában.
 
-Ha a speciális automatikus költségek funkciók engedélyezve vannak, akkor az összes támogatott Commerce-csatornában (pénztár (POS), hívásközpont, és az interneten keresztül) kihasználhatja az [automatikus költségek](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációk előnyeit, amelyeket a fejléc- és sorszintű kapcsolódó költségekre vonatkozóan meghatároztak az ERP-alkalmazásban.
+Ha a speciális automatikus költségek funkciók engedélyezve vannak, akkor az összes támogatott Commerce-csatornában (pénztár (POS), hívásközpont, és az interneten keresztül) kihasználhatja az [automatikus költségek](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációk előnyeit, amelyeket a fejléc- és sorszintű kapcsolódó költségekre vonatkozóan meghatároztak az ERP-alkalmazásban.
 
-A Retail 10.0 verzió előtti kiadásokban az [automatikus költség](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációi csak az elektronikus kereskedelmi és a hívásközponti csatornákban létrehozott rendelések számára hozzáférhetők. A 10.0 és a későbbi verziókban a pénztár által létrehozott rendelések is használhatják az automatikus költségek konfigurációit. Ezzel a módszerrel a extra vegyes költségek szisztematikusan hozzáadhatók az értékesítési tranzakciókhoz.
+A Retail 10.0 verzió előtti kiadásokban az [automatikus költség](https://docs.microsoft.com/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) konfigurációi csak az elektronikus kereskedelmi és a hívásközponti csatornákban létrehozott rendelések számára hozzáférhetők. A 10.0 és a későbbi verziókban a pénztár által létrehozott rendelések is kihasználhatják az automatikus költségek konfigurációit. Ezzel a módszerrel a további vegyes költségek szisztematikusan hozzáadhatók az értékesítési tranzakciókhoz.
 
 A 10.0-s verzió előtti kiadások használata esetén a pénztárfelhasználót a rendszer felkéri arra, hogy manuálisan adja meg a szállítási díjat egy „összes szállítása” vagy „kiválasztottak szállítása” pénztártranzakció létrehozása során. Míg az alkalmazás vegyes költségekre vonatkozó lehetőségei a költségek rendelésben való leírásával kapcsolatban használhatók, ezek nem nyújtanak szisztematikus számítást – a számítás a felhasználó által beírt adatokon alapul a költségek értékek meghatározásakor. A költségeket csak egyszeri „szállítással” kapcsolatos költségkóddal lehet hozzáadni, és a létrehozás után nem lehet egyszerűen szerkeszteni és módosítani őket a pénztárban.
 
@@ -39,21 +42,21 @@ Szállítási költségek hozzáadására a kézi beavatkozások használata tov
 
 A speciális automatikus költségek funkcióval a POS-felhasználó számításokat végezhet bármely meghatározott vegyes költséggel az automatikus költségek beállítási táblái alapján. Ezenkívül a felhasználók képesek lesznek további költségek és díjak korlátlan számok hozzáadására vagy szerkesztésére bármelyik pénztári értékesítési tranzakcióhoz fejléc- vagy sorszinten (átvétel és fizetés helyben vagy vevői rendelés esetén).
 
-## <a name="enable-advanced-auto-charges"></a>Speciális automatikus költségek engedélyezése
+## <a name="enabling-advanced-auto-charges"></a>Speciális automatikus költségek engedélyezése
 
 A **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce paraméterek** oldalon lépjen a **Vevői rendelések** lapra. A **Költségek** gyorslapon állítsa a **Speciális automatikus költségek használata** beállítást **Igen** értékre.
 
-![Speciális automatikus költségek paraméter.](media/advancedchargesparameter.png)
+![Speciális automatikus költségek paraméter](media/advancedchargesparameter.png)
 
 Ha a speciális automatikus költségek engedélyezve vannak, a felhasználókat már nem szólítja fel a rendszer, hogy manuálisan adja meg a POS terminálon a szállítási költséget összes szállítása vagy kiválasztottak szállítása típusú vevői rendelés létrehozásakor. A pénztár rendelési költségeket a rendszer szisztematikusan kiszámítja és hozzáadja a pénztártranzakcióhoz (ha megtalálható a megfelelő automatikus költségek tábla, amely megfelel a létrehozott rendelés feltételének). A felhasználók hozzáadhatnak vagy karbantarthatnak fejléc- vagy sorszintű költségeket manuálisan az újonnan hozzáadott pénztárműveleteken keresztül, amelyeket hozzá lehet adni a pénztár képernyő-elrendezésekhez.
 
 Ha speciális automatikus költségek engedélyezve vannak, a meglévő **Commerce-paraméterek**, amelyek a **Szállítási költségek kódja** és **Szállítási költségek visszatérítése** pontokhoz tartoznak, nem használatosak. Ezek a paraméterek csak akkor érvényesek, ha a **Speciális automatikus költségek használata** paraméter értéke **Nem**.
 
-Mielőtt engedélyezi ezt a funkciót, győződjön meg róla, hogy tesztelte és képezte az alkalmazottakat, mivel az engedélyezett funkció megváltoztatja a szállítási és egyéb költségek kiszámításának és a pénztár értékesítési rendeléseinek hozzáadásának folyamatát. Ellenőrizze, hogy megérti a folyamat hatását a tranzakciók létrehozására a pénztárból. Hívásközpontból származó és e-kereskedelmi rendelések esetén a speciális automatikus költségek engedélyezésének hatása minimális. Hívásközpont és az elektronikus kereskedelmi alkalmazások továbbra is ugyanúgy viselkednek majd, ahogy korábban tették az automatikus költségekre vonatkozó táblákhoz kapcsolódó extra rendelési díjak kiszámításához. Hívásközpont csatorna felhasználói továbbra is manuálisan szerkeszthetik a rendszer által kiszámított automatikus költségeket a fejléc vagy sorok szintjén, vagy manuális hozzáadhatnak a további vegyes költségeket a fejléc vagy sorok szintjén.
+Mielőtt engedélyezi ezt a funkciót, győződjön meg róla, hogy tesztelte és képezte az alkalmazottakat, mivel az engedélyezett funkció megváltoztatja a szállítási és egyéb költségek kiszámításának és a pénztár értékesítési rendeléseinek hozzáadásának folyamatát. Ellenőrizze, hogy megérti a folyamat hatását a tranzakciók létrehozására a pénztárból. Hívásközpontból származó és e-kereskedelmi rendelések esetén a speciális automatikus költségek engedélyezésének hatása minimális. Hívásközpont és az elektronikus kereskedelmi alkalmazások továbbra is ugyanúgy viselkednek majd, ahogy korábban tették az automatikus költségekre vonatkozó táblákhoz kapcsolódó további rendelési díjak kiszámításához. Hívásközpont csatorna felhasználói továbbra is manuálisan szerkeszthetik a rendszer által kiszámított automatikus költségeket a fejléc vagy sorok szintjén, vagy manuális hozzáadhatnak a további vegyes költségeket a fejléc vagy sorok szintjén.
 
-## <a name="add-pos-operations"></a>Pénztárműveletek hozzádása
+## <a name="additional-pos-operations"></a>További pénztárműveletek
 
-Ahhoz, hogy a speciális automatikus költségek megfelelően működjenek a pénztáralkalmazás környezetében, új pénztárműveleteket adtunk hozzá. Ezeket a műveleteket hozzá kell adnia a [Pénztár képernyő-elrendezései](/dynamics365/unified-operations/retail/pos-screen-layouts) részhez, és telepítenie kell a pénztár eszközeihez a speciális automatikus költségek telepítésével együtt. Ha ezek a műveletek hozzáadása nem történik meg, a felhasználók nem tudják majd kezelni vagy karbantartani a vegyes költségeket a pénztártranzakciókon, és nem lesz lehetőségük kiigazítani vagy módosítani a rendszer által számított, automatikus költségek konfiguráción alapuló költségértékeket. Legalább ajánlott, hogy telepítse a **Költségek kezelése** műveletet a pénztár elrendezéséhez.
+Ahhoz, hogy a speciális automatikus költségek megfelelően működjenek a pénztáralkalmazás környezetében, új pénztárműveleteket adtunk hozzá. Ezeket a műveleteket hozzá kell adnia a [Pénztár képernyő-elrendezései](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) részhez, és telepítenie kell a pénztár eszközeihez a speciális automatikus költségek telepítésével együtt. Ha ezek a műveletek hozzáadása nem történik meg, a felhasználók nem tudják majd kezelni vagy karbantartani a vegyes költségeket a pénztártranzakciókon, és nem lesz lehetőségük kiigazítani vagy módosítani a rendszer által számított, automatikus költségek konfiguráción alapuló költségértékeket. Legalább ajánlott, hogy telepítse a **Költségek kezelése** műveletet a pénztár elrendezéséhez.
 
 Az új műveletek alább láthatók.
 
@@ -74,7 +77,7 @@ Ebben a szakaszban használati eseteket mutatunk be, amellyel jobban megértheti
 
 #### <a name="use-case-scenario"></a>Használati eset forgatókönyve
 
-A kiskereskedő szeretne automatikusan költségeket hozzáadni a szállításhoz a bármely Commerce-csatornában létrehozott tranzakciók esetén, ahol a termékeket el kell szállítani a vevőhöz. A kiskereskedő kínál két szállítási módot: földi és légi. Ha a vevő a Földi szállítást választja és a rendelés értéke kisebb, mint 100 USD, a kiskereskedő 10 USD fuvardíjat akar a vevőre terhelni. Ha a rendelés értéke több mint 100 USD, és a vevő a földi szállítás mellet dönt, a vevőnek nem számolnak fel extra szállítási díjakat. Ha a vevő légi módot választ az összes megrendeléshez, összértékétől függetlenül, 20 USD szállítási díjat kell felszámítani.
+A kiskereskedő szeretne automatikusan költségeket hozzáadni a szállításhoz a bármely Commerce-csatornában létrehozott tranzakciók esetén, ahol a termékeket el kell szállítani a vevőhöz. A kiskereskedő kínál két szállítási módot: földi és légi. Ha a vevő a Földi szállítást választja és a rendelés értéke kisebb, mint 100 USD, a kiskereskedő 10 USD fuvardíjat akar a vevőre terhelni. Ha a rendelés értéke több mint 100 USD, és a vevő a földi szállítás mellet dönt, a vevőnek nem számolnak fel további szállítási díjakat. Ha a vevő légi módot választ az összes megrendeléshez, összértékétől függetlenül, 20 USD szállítási díjat kell felszámítani.
 
 #### <a name="setup-and-configuration"></a>Beállítás és konfigurálás
 
@@ -86,7 +89,7 @@ Két különböző fejléc szintű automatikus költséget konfiguráljon. Áll�
 
 A földi szállítási költségekhez az **Automatikus költségek** oldal sorokat tartalmazó szakaszában határozza meg a költséget 10 USD-nak, amelyeket a 0,01 és 100 dollár közti rendelésekhez alkalmaz. Hozzon létre egy másik költségek sort, ahol jelzi, hogy a 100,01 USD feletti rendeléseknek nincs költsége.
 
-![Példa két automatikus költség táblára.](media/headerchargesexample.png)
+![Példa két automatikus költség táblára](media/headerchargesexample.png)
 
 A légi szállítási költségekhez az Automatikus költségek képernyő sorokat tartalmazó szakaszában határozza meg a költséget 20 USD-nak, amelyeket mindent rendeléshez alkalmaz (0,01 és 9 999 999 USD közti érték esetén).
 
@@ -106,7 +109,7 @@ A hívásközpont helyzeteinél a felhasználó rendelkezik hatalommal a száll�
 
 #### <a name="use-case-scenario"></a>Használati eset forgatókönyve 
 
-A kiskereskedő szeretne hozzáadni egy extra díjat a vevőnek a beállítási díjakra, amikor a vevő egy bizonyos típusú számítógépet szerez be. Ezen a számítógépen további nem választható beállítási műveletre van szükség, amelyet a kiskereskedő hajt végre a vevőnek. A kiskereskedő tájékoztatta vevőket, hogy ezért a beállításért járulékos díj lesz. A kiskereskedő a díjjal kapcsolatos költségeket a termék eladási árától külön kívánja kezelni pénzügyi jelentési célok miatt. Ezen számítógép bármely csatornán való megvásárlásakor a vevőnek 19,99 USD beállítási díjat kell fizetnie.
+A kiskereskedő szeretne hozzáadni egy további díjat a vevőnek a beállítási díjakra, amikor a vevő egy bizonyos típusú számítógépet szerez be. Ezen a számítógépen további nem választható beállítási műveletre van szükség, amelyet a kiskereskedő hajt végre a vevőnek. A kiskereskedő tájékoztatta vevőket, hogy ezért a beállításért járulékos díj lesz. A kiskereskedő a díjjal kapcsolatos költségeket a termék eladási árától külön kívánja kezelni pénzügyi jelentési célok miatt. Ezen számítógép bármely csatornán való megvásárlásakor a vevőnek 19,99 USD beállítási díjat kell fizetnie.
 
 #### <a name="setup-and-configuration"></a>Beállítás és konfigurálás
 
@@ -116,7 +119,7 @@ Ugorjon a **Kinnlevőségek \> Költségek beállítása \> Automatikus költsé
 
 Állítsa a **Szint** legördülő menüt **Sor** értékre, és hozzon létre egy új automatikus költségek rekordot az összes vevőre és az adott termékre vagy termékcsoportra vonatkozóan, ahol a beállítási díjakat kell fizetnie.
 
-![Példa egy sor szintű automatikus költség táblára.](media/linechargesexample.png)
+![Példa egy sor szintű automatikus költség táblára](media/linechargesexample.png)
 
 Küldje el a díjakat a Commerce Scale Unit/csatorna-adatbázishoz, hogy a pénztár használhassa őket a **1040 elosztási ütemezés** feladat futtatásával.
 
@@ -136,13 +139,13 @@ A kiskereskedő kivételt tett a jellemző folyamatokban, amikor termékek speci
 
 Győződjön meg róla, hogy az ebben az esetben használandó költségkód megfelelően van beállítva: nyissa meg a **Kinnlevőségek \> Költségek beállítása \> Költségek** lapot az esethez megfelelő költségkód meghatározásához.
 
-![Költségek példa.](media/chargesexample.png)
+![Költségek példa](media/chargesexample.png)
 
 Ha a költséget „szállításhoz” kapcsolódó költségként kell figyelembe venni, szállítási engedmény vagy promóció céljából, a költségkód **Szállítási költség** beállítását állítsa **Igen** értékre. Ha ezt a költséget jogosult a pénztáralkalmazásban a rendszer egy visszáru-tranzakció feldolgozása során szisztematikusan visszatéríteni, állítsa a **Visszatéríthető** beállítást **Igen** értékre. A **Visszatéríthető** jelző csak akkor alkalmazható, amikor a **Speciális automatikus költségek használata** paraméter értéke **Igen**.
 
 Küldje el a díjakat a Commerce Scale Unit/csatorna-adatbázishoz, hogy a pénztár használhassa őket a **1040 elosztási ütemezés** feladat futtatásával.
 
-A **Fejlécdíj hozzáadása** műveletet meg kell adni a [POS képernyő-elrendezés](/dynamics365/unified-operations/retail/pos-screen-layouts) részben úgy, hogy a felhasználó számára a pénztárból elérhető gomb lehívható ez a művelet (141-es művelet). A képernyő-elrendezés módosításait meg kell osztani a csatornán, valamint az elosztási ütemezés funkción.
+A **Fejlécdíj hozzáadása** műveletet meg kell adni a [POS képernyő-elrendezés](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) részben úgy, hogy a felhasználó számára a pénztárból elérhető gomb lehívható ez a művelet (141-es művelet). A képernyő-elrendezés módosításait meg kell osztani a csatornán, valamint az elosztási ütemezés funkción.
 
 #### <a name="sales-processing-of-manual-header-charges"></a>Manuális fejlécköltségek értékesítési feldolgozása
 
@@ -164,11 +167,11 @@ Ha a költséget „szállításhoz” kapcsolódó költségként kell figyelem
 
 Küldje el a díjakat a Commerce Scale Unit/csatorna-adatbázishoz, hogy a pénztár használhassa őket a **1040 elosztási ütemezés** feladat futtatásával.
 
-A **Sorköltség hozzáadása** műveletet meg kell adni a [POS képernyő-elrendezés](/dynamics365/unified-operations/retail/pos-screen-layouts) részben úgy, hogy a felhasználó számára a pénztárból elérhető gomb lehívható ez a művelet (140-es művelet). A képernyő-elrendezés módosításait meg kell osztani a csatornán, valamint az elosztási ütemezés funkción.
+A **Sorköltség hozzáadása** műveletet meg kell adni a [POS képernyő-elrendezés](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) részben úgy, hogy a felhasználó számára a pénztárból elérhető gomb lehívható ez a művelet (140-es művelet). A képernyő-elrendezés módosításait meg kell osztani a csatornán, valamint az elosztási ütemezés funkción.
 
 #### <a name="sales-processing-of-the-manual-line-charge"></a>Manuális sorköltségek értékesítési feldolgozása
 
-A forgatókönyv végrehajtásához a pénztár alkalmazásban a pénztár felhasználónak létre kell hoznia szokásos módon az értékesítési tranzakciót, a termékek és egyéb konfigurációk hozzáadásával az értékesítéshez. A fizetés begyűjtése előtt a felhasználónak ki kell választania a meghatározott sort a pénztárcikkek megjelenített listájából, amire a költségek vonatkoznak, és végre kell hajtania a **Sorköltség hozzáadása** műveletet. A felhasználót a program kéri, hogy válassza ki a költségkódot, és adja meg a költségek értékét. Ha a felhasználó befejezi a folyamatot, a költség hozzákapcsolódik a sorhoz, és hozzáadódik az értékesítési rendeléshez sor szintű költségként. A felhasználó szükség esetén megismételheti a folyamatot, és a tranzakció további cikkének sorához is hozzáadhat sorköltségeket.
+A forgatókönyv végrehajtásához a pénztár alkalmazásban a pénztár felhasználónak létre kell hoznia szokásos módon az értékesítési tranzakciót, a termékek és egyéb konfigurációk hozzáadásával az értékesítéshez. A fizetés begyűjtése előtt a felhasználónak ki kell választania a meghatározott sort a pénztárcikkek megjelenített listájából, amire a költségek vonatkoznak, és végre kell hajtania a **Sorköltség hozzáadása** műveletet. A felhasználót a program kéri, hogy válassza ki a költségkódot, és adja meg a költségek értékét. Ha a felhasználó befejezi a folyamatot, a költség hozzákapcsolódik a sorhoz, és hozzáadódik az értékesítési rendeléshez sor szintű költségként. A felhasználó szükség esetén megismételheti a folyamatot, és a tranzakció többi cikkének sorához is hozzáadhat sorköltségeket.
 
 Ugyanezt az eljárást lehet alkalmazni a hívásközpontban a „költségek karbantartása” funkcióval, amely a **Pénzügyek** legördülő menü alatt található az **Értékesítésirendelés-sorok** szakaszban az **Értékesítési rendelés** lapon. A beállítás kiválasztásának hatására megnyílik a **Költségek karbantartása** lap, amelyen a felhasználó hozzáadhat egy új sorspecifikus költséget a tranzakcióhoz.
 
@@ -176,7 +179,7 @@ Ugyanezt az eljárást lehet alkalmazni a hívásközpontban a „költségek ka
 
 ### <a name="editing-charges-on-a-pos-sales-transaction"></a>Költségek szerkesztése a pénztár értékesítési tranzakcióin
 
-A **Költségek kezelése** műveletet (142) hozzá kell adni a [POS képernyő-elrendezés](/dynamics365/unified-operations/retail/pos-screen-layouts) részhez, így a felhasználó megtekintheti és módosíthatja, vagy felülbírálhatja a rendszer által kiszámított vagy manuálisan létrehozott fejléc vagy sor szintű költségeket. Ha nem adják hozzá a műveletet, a felhasználók nem tudják módosítani a költségek értékét a pénztártranzakción, és nem tudják majd megtekinteni a költségek részleteit, például a költséghez kapcsolt költségkód típusát.
+A **Költségek kezelése** műveletet (142) hozzá kell adni a [POS képernyő-elrendezés](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts) részhez, így a felhasználó megtekintheti és módosíthatja, vagy felülbírálhatja a rendszer által kiszámított vagy manuálisan létrehozott fejléc vagy sor szintű költségeket. Ha nem adják hozzá a műveletet, a felhasználók nem tudják módosítani a költségek értékét a pénztártranzakción, és nem tudják majd megtekinteni a költségek részleteit, például a költséghez kapcsolt költségkód típusát.
 
 A **Költségek kezelése** lapon a pénztárban a felhasználó megtekintheti a fejléc és a sor szintű költségek részleteit. A felhasználó használhatja az ezen a lapon elérhető **Szerkesztés** funkciót, amellyel módosíthatja a meghatározott költségsorban felszámított összeget. Amikor egy költségsort manuálisan felülbíráltak, a rendszer nem számítja újra szisztematikusan, kivéve, ha a felhasználó elindítja a **Költségek újraszámolása** műveletet.
 
@@ -197,7 +200,7 @@ A költségeket nem térítik vissza szisztematikusan a Commerce szolgáltatásb
 A következő nyugtaelemeket hozzáadta a rendszer a nyugta sorához és láblécéhez a speciális automatikus költségek funkció támogatásához.
 
 - **Sor szállítási költségei** – Ez a sorszintű elem az olyan specifikus költségkódok összefoglalására használatos, amelyeket az értékesítési sorra alkalmaztak. Itt csak az olyan költségkódok jelennek meg, amelyet **Szállítási** költségként jelöltek meg a **Költségkód** oldalon.
-- **Sor egyéb költségei** – Ez a sorszintű elem az olyan nem szállításspecifikus költségkódok összefoglalására használatos, amelyeket az értékesítési sorra alkalmaztak. A **Sor egyéb költségei** a költségkódok, ahol a **Szállítás** jelző a **Költségkód** lapon nincs engedélyezve.
+- **Sor egyéb költségei** – Ez a sorszintű elem az olyan nem szállításspecifikus költségkódok összefoglalására használatos, amelyeket az értékesítési sorra alkalmaztak. Ezek azok a költségkódok, ahol a **Szállítási** jelző a **Költségkód** lapon nincs engedélyezve.
 - **Megrendelés szállítási költségeinek részletei** – Ez a láblécszintű elem megjeleníti a rendelésre alkalmazott költségkódok leírásait, amelyeket **Szállítási** költségként jelöltek meg a **Költségkód** beállító oldalon.
 - **Rendelés szállítási költségei** – Ezzel a lábléc szintű elemmel a szállítással kapcsolatos költségek dollárértékét jeleníti meg.
 - **Megrendelés egyéb költségeinek részletei** – Ez a láblécszintű elem megjeleníti a rendelésre alkalmazott költségkódok leírásait, amelyeket nem szállítással kapcsolatos költségként jelöltek meg.
@@ -219,6 +222,3 @@ Ha felhasználó manuálisan felülírja a számított költségeket vagy manuá
 
 [Fejlécköltségek arányosítása az egyező értékesítési sorokhoz](pro-rate-charges-matching-lines.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,12 @@
 ---
 title: Eszközök létrehozása beszerzési rendelések alapján
 description: Ez a témakör bemutatja, hogyan hozhat létre olyan eszközelemeket tartalmazó listát, amelyet az Eszközmenedzsment területén a karbantartási feladatokhoz használt eszközök létrehozásának alapjául használhat fel.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetObjectItem, EntAssetPendingAssets
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5068712a7ea1e0d940d4a05a411fb3e1b6f6d9bb9be924d5375b16676561ea1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 83419fa5c6b6aee0b321c526565c3518deaf4bd0
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754107"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016984"
 ---
 # <a name="create-assets-based-on-purchase-orders"></a>Eszközök létrehozása beszerzési rendelések alapján
 
@@ -67,6 +69,3 @@ A függőben lévő eszközök ellenőrzéséhez futtathat egy **Függőben lév
 3. Beállíthatja, hogy a feladat kötegelt feladatként fusson, például naponta egyszer.
 
 **Figyelmeztetés:** Ha az adatok módosulnak egy beszerzési rendelésen *miután* létrehozott egy eszközt kapcsolódó cikk alapján, ezek a módosítások nem jelennek meg az eszköznél.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

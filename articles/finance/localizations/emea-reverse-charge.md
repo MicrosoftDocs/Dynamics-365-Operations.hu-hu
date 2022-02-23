@@ -2,22 +2,25 @@
 title: Fordított költségmechanizmus az adó/GST sémához
 description: A cikk azt tekinti át, hogyan állítható be fordított áfa az európai országokhoz, Szaúd-Arábiához és Szingapúrhoz.
 author: epodkolz
+manager: AnnBe
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Saudi Arabia, Spain, Sweden, United Kingdom, Singapore, Bahrain, Kuwait, Oman, Qatar
 ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 326a74d0f962cf0455033b04950ded7ca26bfc77
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 247bc64bf0b90a641ead8a21971a6043691762fa
+ms.sourcegitcommit: f12ce34cc08cf1fa205c67f48669ea9a6566b526
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7594719"
+ms.lasthandoff: 11/13/2020
+ms.locfileid: "4515051"
 ---
 # <a name="reverse-charge-mechanism-for-vatgst-scheme"></a>Fordított költségmechanizmus az adó/GST sémához
 
@@ -45,6 +48,7 @@ A következő beállításokat kell elvégeznie a fordított áfa alkalmazásáh
 Javasoljuk, hogy külön áfakódokat használjon az értékesítési és beszerzési műveleteknél.
 
 <table>
+<body>
 <tr>
 <td><strong>Áfakód az értékesítésekre vonatkozóan</strong></td>
 <td>Hozzon létre áfakódot a fordított áfa fizetésének műveleteihez (<strong>Adó</strong> &gt; <strong>Közvetett adók</strong> &gt; <strong>Áfa</strong> &gt; <strong>Áfakódok</strong>).
@@ -61,6 +65,7 @@ Ezt a negatív áfakódot egy cikkáfacsoporthoz rendelje hozzá, majd ebbe a ci
 <p>További információért lásd a következő szakaszt: &quot;Áfacsoportok és cikkáfacsoportok beállítása&quot;.</p>
 </td>
 </tr>
+</tbody>
 </table>
 
 ## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a><a name="sales-tax-item-sales-tax-groups"></a>Adócsoportok és cikkáfacsoportok beállítása
@@ -119,7 +124,7 @@ Ha fordított áfát tartalmazó beszerzési számlát ad fel, akkor két áfatr
 
 A következő képernyőképen egy tranzakciónál a **Visszaigényelhető áfa** irány, a másik tranzakciónál pedig a **Fizetendő áfa** irány szerepel. 
 
-![Elszámolt áfa.](media/apac-sau-posted-sales-tax.png)
+![Elszámolt áfa](media/apac-sau-posted-sales-tax.png)
 
 ## <a name="enable-reverse-charge-mechanism-for-vatgst-scheme-feature"></a><a name="enable-reverse-charge"></a>Fordított költségmechanizmus engedélyezése áfa/GST-sémához funkció
 A **Funkciók kezelése** munkaterületre keresse meg a funkciót, és válassza az **Engedélyezés** lehetőséget.
@@ -132,6 +137,3 @@ A szolgáltatás beállításához kapcsolódó következő oldalak és menüele
  - **Külkereskedelmi paraméterek** (**Adó** > **Beállítás** > **Áfa** > **Külkereskedelem** > **Külkereskedelmi paraméterek**). Lásd: [Ország- és régiótulajdonságok beállítása](#Set-up-Country/region-properties).
 
 A **Fordított költség** jelölőnégyzet az **Áfacsoport** és a **Feladott áfa** oldalakon lesz elérhető. További információt a következő szakaszokban talál: [Áfacsoportok és cikkáfacsoportok beállítása](#sales-tax-item-sales-tax-groups), [Fordított áfa értékesítési számlánál](#reverse-charge-sale)és a [Fordított áfa beszerzési számlánál](#reverse-charge-purchase) című szakaszban.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

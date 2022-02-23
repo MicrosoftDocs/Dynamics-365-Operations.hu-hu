@@ -2,24 +2,27 @@
 title: Láblécmodul
 description: Ez a témakör a láblécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket létrehozni a Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
+manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 0fdf183afe0df71e43a05b65fba06126f75f85b981b78afc4a543fb9310c6906
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 42a71ea9498461febca80952acc3158517918332
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719986"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412842"
 ---
 # <a name="footer-module"></a>Láblécmodul  
 
@@ -27,11 +30,13 @@ ms.locfileid: "6719986"
 
 Ez a témakör a láblécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 
+## <a name="overview"></a>Áttekintés
+
 A láblécmodul egy speciális tároló, amely a láblécben megjelenő modulok tárolására szolgál. Például a webhely különböző lapjaira mutató hivatkozásokat is tartalmazhat, mint például a **Kapcsolat** és **Áruházi szabályzat** lapokra.
 
 A következő kép egy webhelyoldalon használt láblécmodul egy példáját jeleníti meg.
 
-![Példa egy láblécmodulra.](./media/ecommerce-footer.PNG)
+![Példa egy lábléc modulra](./media/ecommerce-footer.PNG)
 
 ## <a name="footer-module-properties"></a>Láblécmodul tulajdonságai 
 
@@ -82,6 +87,3 @@ Ha hozzáadja a töredéket a lapsablonokhoz, akkor segít biztosítani azt, hog
 [Fejlécmodul](author-header-module.md)
 
 [Láblécmodul](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

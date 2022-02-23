@@ -1,10 +1,12 @@
 ---
 title: Karbantartási körök
 description: Ez a témakör az Eszközkezelés karbantartási köreit ismerteti.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetRoundTable
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: dc0d8ec546e7455187a87ac124c5e56a93f5bafd2270bf275af950991fc4b87e
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a3a64593a2155d35e78b0d854c7367fa65d1c5c8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740719"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018546"
 ---
 # <a name="maintenance-rounds"></a>Karbantartási körök
 
@@ -114,6 +116,3 @@ Az alábbi két illusztráció egy ütemezési feladatot mutat be a **Karbantart
 - A **Futtatás a háttérben** gyorslapon beállítható kötegelt feladat a körök szabályos időközönként történő ütemezéséhez.  
 - Ha egy kör több munkarendelési gyűjtőben is szerepel (lásd: [Munkarendelés-gyűjtők](../work-orders/work-order-pools.md)), akkor minden gyűjtőhöz egy rekord jelenik meg a **Nyitott karbantartási ütemezési csoportok** részen. Ez a munkarendelés-gyűjtők szűrési beállításainak optimalizálására szolgál.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

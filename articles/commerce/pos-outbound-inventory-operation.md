@@ -2,13 +2,16 @@
 title: Kimenő készletművelet a pénztárban
 description: Ez a témakör a pénztár (POS) kimenő készletműveletének képességeit írja le.
 author: hhaines
+manager: annbe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,14 +19,14 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 3641e1974ffc277a690ca8b8d15399ac883b0132
-ms.sourcegitcommit: 89906aa2f18f16e622fd280433c8fc9fe74d2aec
+ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7581137"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412748"
 ---
-# <a name="outbound-inventory-operation-in-pos"></a>Kimenő készletműveletek a pénztárban
+# <a name="outbound-inventory-operation-in-pos"></a>Kimenő készletművelet a pénztárban
 
 [!include [banner](includes/banner.md)]
 
@@ -71,7 +74,7 @@ A létrehozott kötegelt feladatok felhasználhatók a meghiúsult vagy időtúl
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Előfeltétel: Kimenő művelet hozzáadása a pénztár képernyő-elrendezéséhez
 
-Mielőtt a szervezet használhatja a kimenő műveletek funkciókat, konfigurálnia kell a **Kimenő művelet** pénztárműveletet agy vagy több [Pénztári képernyőelrendezésen](/dynamics365/unified-operations/retail/pos-screen-layouts). Az új művelet termelési környezetben történő üzembe helyezése előtt mindenképpen alaposan tesztelje, és tanítsa meg a felhasználókat a használatára.
+Mielőtt a szervezet használhatja a kimenő műveletek funkciókat, konfigurálnia kell a **Kimenő művelet** pénztárműveletet agy vagy több [Pénztári képernyőelrendezésen](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Az új művelet termelési környezetben történő üzembe helyezése előtt mindenképpen alaposan tesztelje, és tanítsa meg a felhasználókat a használatára.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -116,7 +119,7 @@ A **Teljes rendelési lista** nézetben manuálisan kiválaszthat a listából e
 
 ### <a name="over-delivery-shipping-validations"></a>Túlszállítással kapcsolatos szállítási ellenőrzések
 
-Az ellenőrzések a bizonylatsor teljesítési folyamata során történnek meg. Ezek a túlszállításra vonatkozó ellenőrzéseket is tartalmazzák. Ha egy felhasználó több készletet próbál meg szállítani, mint amennyit megrendelt egy átviteli rendelésen, de a túlszállítás nincs beállítva, vagy a szállított mennyiség meghaladja a beszerzési átviteli sorához beállított túlszállítási tűréshatárt, akkor a felhasználó hibaüzenetet kap, és a felesleges mennyiséget nem lehet szállítani.
+Az ellenőrzések a bizonylatsor bevételezési folyamata során történnek meg. Ezek a túlszállításra vonatkozó ellenőrzéseket is tartalmazzák. Ha egy felhasználó több készletet próbál meg bevételezni, mint amennyit megrendelt egy beszerzési rendelésen, de a túlszállítás nincs beállítva, vagy a bevételezett mennyiség meghaladja a beszerzési rendelés sorához beállított túlszállítási tűréshatárt, akkor a felhasználó hibaüzenetet kap, és a felesleges mennyiséget nem lehet fogadni.
 
 ### <a name="underdelivery-close-lines"></a>Alulszállítási lezárási sorok
 
@@ -190,6 +193,3 @@ A teljesen leszállított átmozgatási rendeléseket a **Kimenő művelet** dok
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Bejövő készletműveletek a pénztárban](pos-inbound-inventory-operation.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

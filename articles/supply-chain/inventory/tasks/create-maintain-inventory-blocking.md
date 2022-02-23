@@ -1,60 +1,54 @@
 ---
 title: Készletzárolás létrehozása és karbantartása
-description: Ez az témakör azt mutatja be, hogyan használhat készletzárolást, amellyel megelőzheti a fizikai, aktuális készletek lefoglalását más kimenő forrásbizonylatokkal.
-author: yufeihuang
-ms.date: 03/23/2021
+description: Ez az eljárás azt mutatja, hogyan előzheti meg a fizikai, aktuális készletek lefoglalását más kimenő forrásbizonylatokkal a készletzárolás segítségével.
+author: perlynne
+manager: tfehr
+ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventBlocking, InventItemIdLookupSimple, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bad7d4e5794dc543bd750912ef0d3e4460e611b1
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 12c6e047e15aaab157e6de70f4a09f500af2965f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572841"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429784"
 ---
 # <a name="create-and-maintain-an-inventory-blocking"></a>Készletzárolás létrehozása és karbantartása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az témakör azt mutatja be, hogyan használhat készletzárolást, amellyel megelőzheti a fizikai, aktuális készletek lefoglalását más kimenő forrásbizonylatokkal. A témakörben szereplő eljárások megkezdése előtt rendelkeznie kell egy olyan cikkel, amelyhez fizikai, aktuális készlet elérhető.
+Ez az eljárás azt mutatja, hogyan előzheti meg a fizikai, aktuális készletek lefoglalását más kimenő forrásbizonylatokkal a készletzárolás segítségével. Ezt az eljárást az USMF bemutató vállalatban is futtathatja a megjelenített példákat használva. Az eljárás megkezdése előtt rendelkeznie kell egy fizikai, aktuális készletű cikkel.
 
-## <a name="block-inventory"></a>Készletzárolás
 
-A következő lépésekkel lehet készletzárolási rekordot létrehozni a készlet zárolása érdekében.
-
-1. Ugorjon a **Készletkezelés \> Időszakos feladatok \> Készletzárolás** lehetőségre.
-1. A Műveleti ablaktáblán kattintson az **Új** elemre.
-1. Az új zárolási rekord fejlécében állítsa a **Cikkszám** mezőt a blokkolni kívánt cikkre, és adjon meg egy leírást.
-1. Az **Általános** gyorslapon a **Mennyiség** mezőben adja meg a zárolni kívánt cikkek számát.
-1. A **Készletdimenziók** gyorslapon adja meg azt a telephelyet és raktárt, ahol a blokkolni kívánt cikkek jelenleg találhatók.
-1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
+## <a name="create-an-inventory-blocking"></a>Készletzárolás létrehozása
+1. A **Navigációs ablaktáblán** lépjen a **Modulok > Készletgazdálkodás > Időszakos feladatok > Minőségkezelés > Készletzárolás** részre.
+2. Kattintson az **Új** elemre.
+3. A **Cikkszám** mezőben kattintson a legördülő gombra a keresés megnyitásához.
+4. A listából válassza ki a használni kívánt cikket. Válasszon ki egy blokkolni kívánt cikkszámot fizikai aktuális készlettel. Az USMF használata esetén választhatja a „M9201” cikket.  
+5. Adjon meg egy számot a **Mennyiség** mezőben. Az M9201 használata esetén kevesebb, mint 200-at kell választania.
+6. Bontsa ki a **Készletdimenziók** gyorslapot.
+7. A **Raktár** mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
+8. Keresse meg és jelölje ki a kívánt rekordot a listán. Az M9201 használata esetén kiválaszthatja az 51. raktárat.  
+9. Kattintson a **Mentés** gombra.
 
 ## <a name="update-the-conditions-of-the-inventory-blocking"></a>Készletzárolás feltételeinek frissítése
+1. Írjon be egy számot az **Általános** gyorslap **Mennyiség** mezőjébe. Frissítse a készletmennyiség mezőt, hogy megfeleljen a blokkolni kívánt mennyiségnek.  
+2. Adjon meg egy dátumot a **Várható dátum** mezőben. A várható dátum megadásával érdemes jelezni, hogy a blokkolt készlet a tervek szerint mikor foglalható újra. Ha a Várt bevételezések lehetőség van kiválasztva a készletzároláshoz, mint ahogy az alapértelmezett esetben a blokkolás létrehozásakor történik, ez a dátum jelenik meg a várható tranzakción.  
+3. Kattintson a **Mentés** gombra.
 
-A következő lépésekkel frissítheti a készletzárolási rekordokat.
+## <a name="remove-the-inventory-blocking"></a>Készletzárolás megszüntetése
+1. A **Műveleti panelen** kattintson a **Törlés** elemre.
+2. Kattintson az **Igen** gombra.
+3. Zárja be a lapot.
 
-1. Ugorjon a **Készletkezelés \> Időszakos feladatok \> Készletzárolás** lehetőségre.
-1. A lista ablaktáblán válassza ki a releváns zárolási rekordot.
-1. Szerkessze a rekordot szükség szerint. Például a **Várható dátum** mező értékének módosításával érdemes jelezni, hogy a zárolt készlet a tervek szerint mikor foglalható újra. Ha a **Várt bevételezések** beállítás van kiválasztva, a dátum megjelenik a várható tranzakcióban. (A **Várt bevételezések** beállítását alapértelmezés szerint a zárolási rekord manuális létrehozása esetén választja ki a program.)
-1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
-
-## <a name="unblock-inventory"></a>Készletzárolás feloldása
-
-A következő lépésekkel lehet készletzárolási rekordot eltávolítani a készlet zárolásának feloldása érdekében.
-
-1. Ugorjon a **Készletkezelés \> Időszakos feladatok \> Készletzárolás** lehetőségre.
-1. A lista ablaktáblán válassza ki a releváns zárolási rekordot.
-1. A Műveletpanelen válassza ezután a **Törlés** elemet.
-1. A rendszer felszólítja, hogy erősítse meg a műveletet. A folytatáshoz kattintson az **Igen** gombra.
-1. Zárja be a lapot.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

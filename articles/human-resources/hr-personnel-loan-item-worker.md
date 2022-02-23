@@ -1,51 +1,46 @@
 ---
 title: Dolgozónak kölcsönzött cikk
 description: Ez az eljárás bemutatja, hogyan adhat kölcsön egy cikket egy dolgozónak, és miként rögzítheti a cikk visszaérkezését.
-author: twheeloc
-ms.date: 11/03/2021
+author: andreabichsel
+manager: AnnBe
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmPersonLoan, HcmPersonLookup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6356b50e0e3c337c88de86d271bc4438fdd451db
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: e9a80f5ebca69d1dc6c286367edfe81f21a7bc9e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070216"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418838"
 ---
 # <a name="loan-item-to-a-worker"></a>Dolgozónak kölcsönzött cikk
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
+Ez az eljárás bemutatja, hogyan adhat kölcsön egy cikket egy dolgozónak, és miként rögzítheti a cikk visszaérkezését. A dolgozók kérhetik is a cikk kölcsönzését az Alkalmazotti önkiszolgáló rendszer lapjain keresztül. Ez az eljárás az USMF bemutatócéget használja.
 
 
-Ez az eljárás bemutatja, hogyan lehet kölcsönözni egy cikket egy dolgozónak, és rögzíteni kell a kölcsön cikk dolgozói általi visszaküldését. A dolgozók kölcsöncikkeket is igényelhetnek rajtuk keresztül **Alkalmazotti önkiszolgáló** oldalon. A **USMF** demóadat-társaságot használtak ennek az eljárásnak a létrehozásához.
-
-
-## <a name="loan-an-item-to-a-worker"></a>Kölcsön adj kölcsönt egy munkásnak
-
-1. Menj **Emberi Erőforrások \> Munkások \> Kölcsön cikkek \> Kölcsönadott felszerelés**.
-2. Válassza az **Új** lehetőséget.
-3. Ban,-ben **Személy** mezőbe írja be vagy válasszon értéket.
-4. Ban,-ben **Kölcsön tétel** mezőbe írja be vagy válasszon értéket.
-5. Ban,-ben **Tervezett visszatérés** mezőbe írja be azt a dátumot, amikor a munkavállalónak vissza kell küldenie a kölcsön cikkét.
-6. Válassza a **Mentés** lehetőséget.
+## <a name="loan-item-to-a-worker"></a>Dolgozónak kölcsönzött cikk
+1. Ugorjon az Emberi erőforrások > Dolgozók > Kölcsöncikkek > Kölcsönbe adott berendezések lehetőségre.
+2. Kattintson az Új lehetőségre.
+3. A Személy mezőben adjon meg vagy válasszon ki egy értéket.
+4. A Kölcsöncikk mezőben adjon meg vagy válasszon ki egy értéket.
+5. A Tervezett visszakerülés mezőbe írja be a dátumot, ameddigre az alkalmazottnak vissza kell küldenie a kölcsöncikket.
+6. Kattintson a Mentés gombra.
 7. Zárja be a lapot.
 
 ## <a name="return-a-loan-item"></a>Kölcsöncikk visszaküldése
+1. Ugorjon az Emberi erőforrások > Dolgozók > Kölcsöncikkek > Kölcsönbe adott berendezések lehetőségre.
+2. Kattintson a Szerkesztés lehetőségre.
+3. A Tényleges visszakerülés mezőben adja meg a dátumot.
 
-1. Menj **Emberi Erőforrások \> Munkások \> Kölcsön cikkek \> Kölcsönadott felszerelés**.
-2. Válassza ki a **Szerkesztés** opciót.
-3. Ban,-ben **Tényleges megtérülés** mezőbe írja be a dátumot.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

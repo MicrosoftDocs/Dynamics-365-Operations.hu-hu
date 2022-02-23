@@ -1,10 +1,12 @@
 ---
 title: Karbantartás miatti üzemkimaradási tevékenységek
 description: Ez a témakör ismerteti, ahogy a karbantartás miatti üzemkimaradás révén áttekintést kaphat az adott eszközökre vonatkozó, adott időszak során esedékes karbantartási feladatok végrehajtásához szükséges kapacitásról.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/27/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetMaintenanceStopCopy, EntAssetMaintenanceStopObject, EntAssetObjectProductionStop, EntAssetProductionStopType, EntAssetMaintenanceStop
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0e6168033afb97c6f4f1b8466801a6f16332df82a039927ec1b45e03aa3694b8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 986b2ae4cf7f7819caaf35e009fd4735f35e6928
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6727918"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017953"
 ---
 # <a name="maintenance-downtime-activities"></a>Karbantartás miatti üzemkimaradási tevékenységek
 
@@ -94,6 +96,3 @@ A lenti ábra a **Karbantartás miatti üzemkimaradási tevékenységek** részl
 - A karbantartás miatti üzemkimaradási tevékenységek között átmásolhatja az eszközöket. A **Minden karbantartás miatti üzemkimaradási tevékenység** részen kattintson a **Karbantartás miatti üzemkimaradási tevékenységek másolása** gombra, majd válassza ki a megfelelő értékeket a **Karbantartás miatti üzemkimaradási tevékenységből** és a **Karbantartás miatti üzemkimaradási tevékenységbe** mezőben, és kattintson az **OK** gombra.
 - A **Minden karbantartás miatti üzemkimaradási tevékenység** részen kattintson a **Karbantartási ütemezés sorai** vagy az **Aktív munkarendelések** gombra a kapcsolódó listák megnyitásához, illetve a kiválasztott karbantartás miatti üzemkimaradási tevékenységhez kapcsolódó sorok megtekintéséhez.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

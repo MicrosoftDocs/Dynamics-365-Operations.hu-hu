@@ -2,12 +2,15 @@
 title: Szabadságkérelem elküldése munkafolyamathoz
 description: A Microsoft Dynamics 365 Human Resources alkalmazásban a MyLeaveRequests submit () alkalmazásprogramozási felületet (API) használhatja a szabadságkérelmek elküldésére a munkafolyamatba.
 author: andreabichsel
+manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f9ca716f37b90e22983b2dddc2c426a2b4e251ec
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 7552a4c921dc4a88034b5d2c87d5a9b47d699ae3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067504"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418780"
 ---
 # <a name="submit-a-leave-request-to-workflow"></a>Szabadságkérelem elküldése munkafolyamathoz
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Microsoft Dynamics 365 Human Resources alkalmazásban a MyLeaveRequests submit () alkalmazásprogramozási felületet (API) használhatja a szabadságkérelmek elküldésére a munkafolyamatba. Ez az API műveletként használható a MyLeaveRequests OData entitáson.
 
@@ -110,5 +108,3 @@ A küldési API hívásának részeként a Human Resources elvégzi az üzleti l
 
 - [MyLeaveRequests áttekintése](hr-developer-api-myleaverequests-overview.md)
 - [Hitelesítés](hr-developer-api-authentication.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

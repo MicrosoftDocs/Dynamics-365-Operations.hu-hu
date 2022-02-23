@@ -1,26 +1,29 @@
 ---
 title: Intézkedési kódok beállítása
 description: Az intézkedéskódok beállításával adhatja meg, hogyan kell feldolgozni egy vevő által visszaküldött cikket.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnDispositionCode
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 973d270d186244904a8390b700aa2ee1fc84cbbc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 16f0ddb9ad956367adc66a952bd8d12551da56a5
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576280"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429197"
 ---
 # <a name="set-up-disposition-codes"></a>Intézkedési kódok beállítása 
 
@@ -31,9 +34,9 @@ Az intézkedéskódok beállításával adhatja meg, hogyan kell feldolgozni egy
 
 Okkód beállításával segíthet megmagyarázni, miért került sor egy cikk visszaküldésére. Az okkódokkal kapcsolatos további tudnivalókat lásd: [Visszaadási okkódok beállítása](set-up-return-reason-code.md).
 
-1.  Lépjen az **Értékesítés és marketing** \> **Beállítás** \> **Értékesítési rendelések** \> **Visszaadás** \> **Intézkedési kódok** lehetőségre.
+1.  Kattintson az **Értékesítés és marketing** \> **Beállítás** \> **Értékesítési rendelések** \> **Visszaadás** \> **Intézkedési kódok**.
 
-2.  Válassza ki az **Új** lehetőséget egy új intézkedési kód létrehozásához.
+2.  Kattintson az **Új** elemre, vagy nyomja le a CTRL+N billentyűkombinációt egy új intézkedéskód létrehozásához.
 
 3.  Adjon meg egy egyedi, jellemző nevet, válasszon ki egy műveletet, majd adja meg az intézkedéskód leírását.
 
@@ -54,6 +57,3 @@ Okkód beállításával segíthet megmagyarázni, miért került sor egy cikk v
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

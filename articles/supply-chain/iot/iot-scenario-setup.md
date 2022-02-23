@@ -1,25 +1,28 @@
 ---
 title: Forgatókönyv beállítása IoT Intelligencia esetén
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a IoT-intelligencia forgatókönyveit a Microsoft Dynamics 365 Supply Chain Management alkalmazásban.
-author: tonyafehr
+author: robinarh
+manager: tfehr
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b8e8c65cebe64f86dcf158668e8a4f5600c158a1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
-ms.translationtype: MT
+ms.openlocfilehash: d1deaa2130b63272da39a42315c6a1bc4b7ccb8a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782427"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429768"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Forgatókönyv beállítása IoT Intelligencia esetén
 
@@ -42,7 +45,7 @@ A **Berendezés üzemkimaradása** forgatókönyv a következő függőségekkel
 A forgatókönyv konfigurálásához tegye a következőket.
 
 1. Jelentkezzen be a Supply Chain Management alkalmazásba.
-2. Engedélyezze az IoT Intelligencia funkció jelzőjét. További tájékoztatás: [Funkciókezelés – áttekintés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+2. Engedélyezze az IoT Intelligencia funkció jelzőjét. További tájékoztatás: [Funkciókezelés – áttekintés](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 3. Konfigurálja a mutatókat. További információ: [Mutatók konfigurálása](iot-metrics-setup.md#configure-metrics).
 4. Nyissa meg a **Gyártásvezérlés \> Beállítások \> IoT-intelligencia \> Forgatókönyvek kezelése** lehetőséget.
 6. A beállítási varázsló megnyitásához Kattintson a **Konfigurálás** lehetőségre a **Berendezés üzemkimaradása** csempe alatt.
@@ -140,6 +143,3 @@ Kövesse az alábbi lépéseket a forgatókönyv letiltásához.
 2. A eset mozaikján válassza a **Konfigurálás** elemet.
 3. Válassza a **Következő** lehetőséget a varázsló utolsó oldalára lépéshez.
 4. Állítsa be a lehetőséget a forgatókönyv letiltásához.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

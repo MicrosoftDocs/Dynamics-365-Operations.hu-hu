@@ -1,26 +1,29 @@
 ---
 title: Szervizfeladat-kapcsolatok létrehozása
 description: A szervizfeladatok társítani lehet a szolgáltatási szerződésekhez vagy szervizrendelésekhez, annak leírásához, hogy milyen szervizfeladatokat kell elvégezni a szerződéhez vagy a rendeléshez.
-author: kamaybac
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b13309816af6984e77f828e827ecffe6266b3ede
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1e50b4322c65097ab4f8aba9c36e4d5e6cc4c01b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7576544"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429641"
 ---
 # <a name="create-service-task-relations"></a>Szervizfeladat-kapcsolatok létrehozása    
 
@@ -30,13 +33,13 @@ A szervizfeladatok társítani lehet a szolgáltatási szerződésekhez vagy sze
 
 ## <a name="create-a-relation-with-a-service-agreement"></a>Kapcsolat létrehozása szolgáltatási szerződéssel
 
-1.  Lépjen a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.
+1.  Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre.
 
 2.  Válasszon ki egy meglévő szolgáltatási szerződést, vagy hozzon létre egy új szolgáltatási szerződést.
 
-3.  A műveleti panelen válassza a **Szervizfeladatok** gombot.
+3.  A műveleti panelen kattintson a **Szervizfeladatok** gombra.
 
-4.  A **Szervizfeladatok** képernyőn válassza az **Új** lehetőséget egy új sort létrehozásához, majd válassza ki a **Szervizfeladat** listáról azt a szervizfeladatot, amelyet csatolni kíván a szolgáltatási szerződéshez.
+4.  A **Szervizfeladatok** képernyőn nyomja meg a CTRL+N billentyűkombinációt egy új sort létrehozásához, majd válassza ki a **Szervizfeladat** listáról azt a szervizfeladatot, amelyet csatolni kíván a szolgáltatási szerződéshez.
 
 5.  Írja be az esetleges belső vagy külső leírásokat a **Leírás** lapon található szabadszöveges mezőkbe.
 
@@ -48,13 +51,13 @@ A szolgáltatási szerződéshez kapcsolt szervizfeladatok elérhetők minden ol
 
 ## <a name="create-a-relation-with-a-service-order"></a>Kapcsolat létrehozása szervizrendeléssel
 
-1.  Lépjen ide: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
 
 2.  Válasszon ki egy meglévő szervizrendelést, vagy hozzon létre egy új szervizrendelést.
 
-3.  A műveleti panelen válassza a **Szervizfeladatok** gombot.
+3.  A műveleti panelen kattintson a **Szervizfeladatok** gombra.
 
-4.  A **Szervizfeladatok** űrlapról válassza az **Új** lehetőséget egy új sort létrehozásához, majd válassza ki a **Szervizfeladat** listáról azokat a szervizfeladatokat, amelyet csatolni kíván a szolgáltatási utasításhoz.
+4.  A **Szervizfeladatok** képernyőn nyomja meg a CTRL+N billentyűkombinációt egy új sort létrehozásához, majd válassza ki a **Szervizfeladat** listáról azokat a szervizfeladatokat, amelyeket csatolni kíván a szervizrendeléshez.
 
 5.  Írja be az esetleges belső vagy külső leírásokat a **Leírás** lapon található szabadszöveges mezőkbe.
 
@@ -72,6 +75,3 @@ A szervizrendelésen létrehozott szervizfeladat-kapcsolatok az adott szervizren
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

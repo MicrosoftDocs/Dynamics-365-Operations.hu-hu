@@ -2,23 +2,26 @@
 title: Feltöltés a hely kapacitása alapján
 description: Ez a témakör a hely kapacitásainak feltöltésével kapcsolatban tartalmaz tájékoztatást. Ez a funkció lehetővé tesz minden olyan feltöltési munkát, amely a nap létrehozásához szükséges, illetve a feltöltési munka elérhetőségét kezeli annak érdekében, hogy a kitárolási hely ne fogyjon ki a készletből, és ne haladja meg a kapacitást sem.
 author: mirzaab
+manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSLocationLimit
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 6ff9f133010ec4370a99c585259aece4e279f801
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
-ms.translationtype: MT
+ms.dyn365.ops.version: Release 10.0.7
+ms.openlocfilehash: 8e9ae16fea892d1d6b6a6b5d06137576623e7f5b
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778207"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429908"
 ---
 # <a name="replenishment-over-location-capacity"></a>Feltöltés a hely kapacitása alapján
 
@@ -32,7 +35,7 @@ Ez a funkció több feltöltési munka létrehozását teszi lehetővé, mint am
 
 A funkció elérhetővé tétele érdekében kapcsolja be a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő szolgáltatásokat (ebben a sorrendben):
 
-1. Szervezeti szintű munkazárolás (az ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció kötelező, ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni.)
+1. Szervezeti szintű munkazárolás
 1. Feltöltés a hely kapacitása alapján
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>A funkció beállítása a példaforgatókönyvhöz
@@ -239,7 +242,7 @@ A készleten lévő mennyiségtől függően a létrehozott munkamennyiségek ki
 
 #### <a name="on-hand-inventory-license-plate-id"></a>Aktuális készlet-azonosítótábla azonosítója
 
-Később ebben a forgatókönyvben a Raktárkezelés mobilalkalmazást (vagy egy emulátort) fog használni, ahol be kell azonosítania az azonosítótáblát, hogy befejezhesse a kitárolási és feltöltési forgatókönyveket.
+Később ebben a forgatókönyvben a raktári alkalmazást (vagy egy emulátort) fog használni, ahol be kell azonosítania az azonosítótáblát, hogy befejezhesse a kitárolási és feltöltési forgatókönyveket.
 
 A későbbiekben szükséges azonosítótábla-azonosítók megtalálásához, kövesse az alábbi lépéseket.
 
@@ -264,7 +267,7 @@ A raktárhely feltöltését az első két munkaazonosítónál fogja végrehajt
 
 #### <a name="replenishment"></a>Feltöltés
 
-1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a Raktárkezelés mobilalkalmazásba. (Írja be a felhasználói azonosítóhoz a *61*-et, a jelszóhoz pedig az *1*-et.)
+1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a raktár alkalmazásba. (Írja be a felhasználói azonosítóhoz a *61*-et, a jelszóhoz pedig az *1*-et.)
 1. Lépjen a **Készlet \> Feltöltés** lehetőségre.
 
     A program megkérdezi, hogy befejezi-e az első feltöltési munkát. Megjelenik a kiválasztható cikkszám, mennyiség, és hely.
@@ -294,7 +297,7 @@ Addig, amíg a raktárból elég készletet ki nem tárolnak ahhoz, hogy a mobil
 
 Mielőtt befejezhetné a hátralévő feltöltési munkafeladatot, a kitárolási helyen a készletek olyan szintre kell csökkennie, hogy a hátralévő feltöltési munka feloldhatóvá váljon. Más szóval a raktárban lévő aktuális készlet mennyiségének és a feltöltési mennyiségnek az összege nem haladhatja meg a **Túlcsordulási mennyiség** értékét. Ha ez az összeg kevesebb, mint a túlcsorduló mennyiség, akkor feloldódik a hátralévő feltöltési munka.
 
-1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a Raktárkezelés mobilalkalmazásba. (Írja be a felhasználói azonosítóhoz a *61*-et, a jelszóhoz pedig az *1*-et.)
+1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a raktár alkalmazásba. (Írja be a felhasználói azonosítóhoz a *61*-et, a jelszóhoz pedig az *1*-et.)
 1. Lépjen a **Kimenő \> Értékesítési kitárolás** lehetőségre.
 1. Adja meg az 1. értékesítési rendelés első munkaazonosítóját.
 
@@ -405,6 +408,3 @@ Most már kitárolhatja a 2. értékesítési rendelést. A zárolás feloldása
 - Szükség szerint manuálisan is felülbírálhatja az egyes munkafejlécekhez tartozó feltöltési munka elérhetőségét a **Munkarészletek** lapon.
 - Amikor a rendszer beállítja a feltöltési munka elérhetőségét, minden olyan készletet figyelembe veszi, amely már a helyen van a munka befejezése előtt
 - Minden értékesítési rendelés munka egy adott feltöltési munkához kapcsolódik. Nincs kapcsolódó értékesítési munka elérhetőségi funkció.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

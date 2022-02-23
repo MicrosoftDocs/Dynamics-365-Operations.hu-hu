@@ -1,10 +1,12 @@
 ---
 title: Kölcsönzött eszközök
 description: Ez a témakör bemutatja, hogyan eszközök kölcsönadását regisztrálni az Eszközkezelés modulban.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObjectLoanReturn, EntAssetObjectLoanInfoPart
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 65809d9be39372412d5d6b419f7356fe2c9668a1a01ede32ef52cbd66753e6d7
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 355e3d3e0e952db14a03810145528f9701804ca2
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6752850"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022332"
 ---
 # <a name="asset-loans"></a>Kölcsönzött eszközök
 
@@ -44,7 +46,7 @@ Ha a vállalat a javítási vagy karbantartási feladatokhoz a belső helyekről
 
 Ha meg szeretné tekinteni az összes olyan eszköz listáját, amelyet más helyekre vagy vevőknek kölcsönzött akkor válassza az **Eszközkezelés** \> **Közös** \> **Kölcsönzött eszköz** \> **Összes kölcsönzött eszköz** lehetőséget. Ha egy eszköz esetében be van jelölve a **Befejezve** jelölőnégyzet, akkor a program a vállalatnak visszaküldöttként regisztrálja az eszközt.
 
-![Karbantartási kérések kezelése.](media/06-manage-maintenance-requests.png)
+![Karbantartási kérések kezelése](media/06-manage-maintenance-requests.png)
 
 Az **Aktív eszköz kölcsönzése** lapon megtekintheti az összes olyan eszköz listáját, amely még nincs visszaküldve a vállalatnak.
 
@@ -55,6 +57,3 @@ Az **Aktív eszköz kölcsönzése** lapon megtekintheti az összes olyan eszkö
 3. A **Visszaadva** mezőben adja meg dátumot és az időt.
 4. Válassza ki az **OK** lehetőséget.
 5. Frissítse az **Aktív eszköz kölcsönzése** listaoldalt és figyelje meg, hogy az eszköz kölcsönzése már nem jelenik meg a listában.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

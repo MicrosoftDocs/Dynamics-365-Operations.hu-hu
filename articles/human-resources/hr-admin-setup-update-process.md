@@ -2,12 +2,15 @@
 title: Rendelés frissítése
 description: A Microsoft Dynamics 365 Human Resources teljes mértékben „szoftver szolgáltatásként” (SaaS) elven működik, amely folyamatos, érintés nélküli szolgáltatásfrissítéseket és platformmódosításokat tartalmaz.
 author: andreabichsel
+manager: AnnBe
 ms.date: 09/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,18 +18,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-27
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2af1f710ca010041bd684bca8ecfa6f20ac30d46
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: d841a026f589d774ec5ada3ac9adcc84dde9aee1
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063110"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527807"
 ---
 # <a name="update-process"></a>Rendelés frissítése
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 A Microsoft Dynamics 365 Human Resources teljes mértékben „szoftver szolgáltatásként” (SaaS) elven működik, amely folyamatos, érintés nélküli szolgáltatásfrissítéseket tartalmaz. Ezek a frissítések olyan alkalmazás-és platformmódosításokat tartalmaznak, amelyek kritikus fontosságú javításokat biztosítanak a szolgáltatáshoz, többek között szabályozói frissítéseket.
 
@@ -38,11 +39,11 @@ A frissítések rendszeres ütemben jelennek meg minden környezethez. A Human R
 
 A Human Resources szolgáltatás frissítései automatikusan alkalmazva vannak az összes környezetre. A Human Resources szolgáltatáshoz kétféle kiadást biztosítunk:
 
-- **Szolgáltatásfrissítések**: Hibajavításokat és új funkciókat tartalmazó frissítések kéthetente jelennek meg. A kiadott szolgáltatásfrissítések tartalmazzák a megfelelő platformfrissítéseket is. A platformfrissítéseinek kiadásainak ütemezésével kapcsolatos tájékoztatást lásd: [3. táblázat: Platformkiadások](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md#table-3-platform-releases). A kétheti frissítések egy szakaszos, globális bevezetés keretében jelennek meg a régiókban. A kétheti frissítésekkel kapcsolatos további tudnivalókat lásd: [Újdonságok és változások: Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Szolgáltatásfrissítések**: Hibajavításokat és új funkciókat tartalmazó frissítések kéthetente jelennek meg. A kiadott szolgáltatásfrissítések tartalmazzák a megfelelő platformfrissítéseket is. A platformfrissítéseinek kiadásainak ütemezésével kapcsolatos tájékoztatást lásd: [3. táblázat: Platformkiadások](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy#table-3-platform-releases). A kétheti frissítések egy szakaszos, globális bevezetés keretében jelennek meg a régiókban. A kétheti frissítésekkel kapcsolatos további tudnivalókat lásd: [Újdonságok és változások: Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
     Ha nincs eltérő értesítés, az összes támogatott adatközpont kéthetente frissül. A kéthetes frissítések között az Egyesült Államok, Ausztrália, Európa, az Egyesült Királyság, Ázsia és Kanada régiói szerepelnek. 
 
-- A **Dataverse megoldás frissítései**: Ezek frissítések kb. hat hetente jelennek meg, szükség szerint. Új entitásokat tartalmaz, valamint a Dataverse meglévő entitásainak módosításait. Ezek a frissítések ugyanazon régiókba irányulnak, mint a kétheti frissítések, és kb. hat hetet vesz igénybe, hogy az összes adatközpontban megtörténjen a replikálásuk. A megoldások frissítései követhetik a kétheti szolgáltatásfrissítéseket, de nem feltétlenül.
+- A **Common Data Service megoldás frissítései**: Ezek frissítések kb. hat hetente jelennek meg, szükség szerint. Új entitásokat tartalmaz, valamint a Common Data Service meglévő entitásainak módosításait. Ezek a frissítések ugyanazon régiókba irányulnak, mint a kétheti frissítések, és kb. hat hetet vesz igénybe, hogy az összes adatközpontban megtörténjen a replikálásuk. A megoldások frissítései követhetik a kétheti szolgáltatásfrissítéseket, de nem feltétlenül.
 
 > [!NOTE]
 > A megoldásfrissítések az összes adatközpontban elérhetők a kiadásuk után. Ha nem szeretné megvárni a frissítések automatikus replikálását, manuálisan is alkalmazhatja azokat bármilyen környezetben, bármelyik adatközpontban.
@@ -55,14 +56,14 @@ Szükség esetén a Human Resources szolgáltatás a következő típusú javít
 
 A kiadások felülvizsgálata, tesztelése és ellenőrzése belső környezetben történik. A buildek jóváhagyása után következik a termelési környezetben történő felhasználásuk.
 
-## <a name="release-cadence-exceptions-in-2021"></a>Kiadási ütemezést érintő kivételek 2021-ban
+## <a name="release-cadence-exceptions-in-2020"></a>Kiadási ütemezést érintő kivételek 2020-ban
 
-A munkaszüneti napok figyelembe vételéhez a 2021. novemberi és decemberi kiadások ütemezése a következő:
+A munkaszüneti napok figyelembe vételéhez a 2020. novemberi és decemberi kiadások ütemezése a következő:
 
-- Novemberi kiadás: november 1. – november 14.
-- Decemberi kiadás: November 29. – December 12.
+- Novemberi kiadás: november 2. – november 13.
+- Decemberi kiadás: November 30. – December 11.
  
-A kéthetes kiadási ütemezés a szokásos módon fog folytatódni 2022. január 10-én.
+A kéthetes kiadási ütemezés a szokásos módon fog folytatódni 2021. január 11-én.
 
 ## <a name="communications"></a>Tájékoztatás
 
@@ -70,11 +71,11 @@ A következő helyeken tudhatja meg, hogy milyen munkák vannak folyamatban a Hu
 
 - [Dynamics 365 Human Resources ütemterv](https://dynamics.microsoft.com/roadmap/human-resources/)
 
-- [Dynamics 365 programverzióra vonatkozó kiadási tervek](/dynamics365/release-plans/)
+- [Dynamics 365 programverzióra vonatkozó kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/)
 
 - [Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban](hr-admin-whats-new.md)
 
-- [Megoldáskereső a Lifecycle Servicesben (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs.md) (csak a platformmal kapcsolatos hibák esetében)
+- [Megoldáskereső a Lifecycle Servicesben (LCS)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/issue-search-lcs) (csak a platformmal kapcsolatos hibák esetében)
 
 - [Human Resources blog](https://community.dynamics.com/365/talent/b/dynamics365fortalent)
 
@@ -82,7 +83,7 @@ A következő helyeken tudhatja meg, hogy milyen munkák vannak folyamatban a Hu
 
 ## <a name="preview-features-in-a-sandbox-environment"></a>Előzetes funkciók tesztkörnyezetben
 
-Az előzetes funkciókat tesztkörnyezetben ellenőrizheti, mielőtt engedélyezné azokat a termelési környezetben. Az új funkciók engedélyezésével kapcsolatos további tudnivalókat lásd: [Funkciókezelés áttekintése](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Az előzetes funkciókat tesztkörnyezetben ellenőrizheti, mielőtt engedélyezné azokat a termelési környezetben. Az új funkciók engedélyezésével kapcsolatos további tudnivalókat lásd: [Funkciókezelés áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
 
 Minden új funkció megmarad előzetes verzióban legalább 30 napig, és általában 30-60 napig. A főbb funkciók általában az előzetes időszakot követően minden év októberében és áprilisában érhetők el. Amint az új funkciókat a Funkciókezelés munkaterületen látja, be lehet kapcsolni őket. Előfordulhat, hogy egyes funkciók alapértelmezés szerint be vannak kapcsolva.
 
@@ -100,10 +101,7 @@ Az előzetes funkciók tesztelésekor vagy az új képességek kipróbálásakor
 
 ## <a name="see-also"></a>Lásd még
 
-[Dynamics 365 és Power Platform programverzióra vonatkozó kiadási tervek](/dynamics365/release-plans)</br>
+[Dynamics 365 és Power Platform programverzióra vonatkozó kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans)</br>
 [Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A szoftver életciklusára vonatkozó irányelv](../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)
+[A szoftver életciklusára vonatkozó irányelv](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

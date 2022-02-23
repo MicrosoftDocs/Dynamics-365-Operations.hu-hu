@@ -2,12 +2,15 @@
 title: Minősítések és értékelések kezelése
 description: Ez a témakör azt mutatja be, hogyan kezelheti az értékeléseket és véleményeket a Microsoft Dynamics 365 Commerce webhelykészítőjében.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,12 +18,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1aefa6eb93ef251778a48ba972d87e0cd5930bf0
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
-ms.translationtype: MT
+ms.openlocfilehash: 3fc88bc5a5868dce7c0539bf3f0ddc5b751e7b75
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968227"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412884"
 ---
 # <a name="manage-ratings-and-reviews"></a>Minősítések és értékelések kezelése
 
@@ -28,11 +31,13 @@ ms.locfileid: "7968227"
 
 Ez a témakör azt mutatja be, hogyan kezelheti az értékeléseket és véleményeket a Microsoft Dynamics 365 Commerce webhelykészítőjében.
 
+## <a name="overview"></a>Áttekintés
+
 A Dynamics 365 Commerce a Microsoft Azure kognitív szolgáltatását használja a szöveg automatikus moderálására a profán szavak kivonásával. Ezenkívül a moderátorok a Dynamics 365 Commerce webhelykészítő segítségével a következő manuális feladatokat hajthatják végre:
 
 - Értékelések moderálása válaszadással vagy eltávolításukkal.
 - Vevői értékelések törlése a vevő kérésére.
-- Minősítések és értékelése tömeges importálása egy Microsoft Power BI sablonba, hogy elemezhetők legyenek a minősítések és a vélemények trendjei.
+- Minősítések és értékelése tömeges importálása egy Microsoft Power BI sablonba hogy elemezhetők legyenek a minősítések és a vélemények trendjei.
 
 ## <a name="read-a-review"></a>Értékelés elolvasása 
 
@@ -43,7 +48,7 @@ Ha a Commerce webhelykészítőben egy értékelést szeretne elolvasni, akkor a
 
 A további szűrők használatával időszak, minősítés, csatorna vagy probléma állapota szerint korlátozhatja (levett, megválaszolt vagy jelentett) az értékeléseket.
 
-![Moderálás kezdőoldala.](media/rnr-moderation-home.png) 
+![Moderálás kezdőoldala](media/rnr-moderation-home.png) 
 
 ## <a name="respond-to-a-review"></a>Értékelés megválaszolása 
 
@@ -57,7 +62,7 @@ Ha a Commerce webhelykészítőben egy értékelésre szeretne válaszolni, akko
 1. Adja meg a válasz szövegét, valamint azt a nevet, amelyet meg kell jeleníteni a válaszadó számára. Az alapértelmezett válaszadó neve **Moderátor.**
 1. Amikor elkészült, válassza a **Válasz feladása** elemet.
 
-![Válaszolás értékelésre.](media/rnr-moderation-response.png) 
+![Válaszolás értékelésre](media/rnr-moderation-response.png) 
 
 ## <a name="take-down-a-review"></a>Egy értékelés levétele 
 
@@ -80,7 +85,7 @@ A Commerce webhelykészítő vevői adatainak megkereséséhez és törléséhez
 1. Ha a vevőnek van valamilyen értékelési tevékenysége (például a beküldött értékelések, szavazás más vásárlói értékelések hasznosságával kapcsolatosan vagy megjegyzések egy másik vásárló értékelésére), az eredmények megjelennek. Mindegyik tételhez tartozik egy **Törlés** gomb.
 1. Minden egyes törlendő elemhez válassza ki a **Törlés** gombot. Amikor a program megerősítést kér, válassza az **Igen** lehetőséget. 
     
-![Ügyféladatok törlése.](media/rnr-moderation-delete-reviews.png) 
+![Ügyféladatok törlése](media/rnr-moderation-delete-reviews.png) 
 
 > [!NOTE]
 > - Az adatok teljes eltávolítására rendszerből akár 7 napot is igénybe vehet. A moderátoroknak tájékoztatniuk kell a vevőket erről a késésről.
@@ -104,37 +109,26 @@ A Commerce webhelykészítőben az értékelések és vélemények trendjeinek m
 1. Nyissa meg a **Kezdőlap \> Értékelések \> Jelentéskészítés** elemet.
 1. A sablon letöltéséhez válassza ki a **PowerBI-sablont**.
 
-    ![Töltse le a Power BI sablont.](media/rnr-moderation-reports.png) 
+    ![Töltse le a Power BI sablont](media/rnr-moderation-reports.png) 
 
 1. Nyissa meg a letöltött sablont a Power BI alkalmazás segítségével. Zárja be a megjelenő **Webtartalomhoz való hozzáférés** párbeszédpanelt, majd zárja be a megjelenő „Frissítési” hibaüzenetet.
 1. Menjen a **Kezdőlapra**, válassza a **Lekérdezések szerkesztése** lehetőséget, majd válassza az **Adatforrás-beállítások** elemet.
 1. Az **Adatforrás beállításai** párbeszédpanelen jelölje be a **Forrás módosítása** lehetőséget.
 1. Az **URL-cím** mezőbe írja be az előző eljárásban letöltött értékelés adatainak elérési útját (például **c:\\reviews\\ReviewsData.csv**).
 
-    ![A Vesszővel tagolt értékek párbeszédpanel URL-mezője.](media/rnr-powerbi-datasource-settings.png) 
+    ![A Vesszővel tagolt értékek párbeszédpanel URL-mezője](media/rnr-powerbi-datasource-settings.png) 
 
 1. Válassza a **OK** lehetőséget, majd kattintson az **Módosítások** alkalmazása gombra. Az adatforrásra módosításainak alkalmazása eltart egy-két percig.
 1. Válassza ki a **Trendek lapot** a minősítések és a vélemények trendjeinek megtekintéséhez.
 
-    ![Minősítések és értékelések trendjei.](media/rnr-powerbi-dashboard-template.png) 
+    ![Minősítések és értékelések trendjei](media/rnr-powerbi-dashboard-template.png) 
     
 ## <a name="additional-resources"></a>További erőforrások
 
 [Minősítések és értékelések áttekintése](ratings-reviews-overview.md)
 
-[A minősítések és értékelések használatának bekapcsolása](opt-in-ratings-reviews.md)
+[A minősítések és ellenőrzések használatának kiválasztása](opt-in-ratings-reviews.md)
 
 [Minősítések és értékelések konfigurálása](configure-ratings-reviews.md)
 
 [A termék minősítések szinkronizálása a következőben: Dynamics 365 Retail](sync-product-ratings.md)
-
-[A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
-
-[Minősítések és felülvizsgálatok importálása és exportálása](import-export-reviews.md)
-
-[Szolgáltatás-szolgáltatás hitelesítés konfigurálása](service-to-service-auth.md)
-
-[Értékelések és vélemények GYIK](ratings-reviews-faq.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

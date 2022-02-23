@@ -2,9 +2,11 @@
 title: Jóváhagyási lépések konfigurálása munkafolyamatban
 description: Ez a témakör bemutatja, hogyan kell konfigurálni a jóváhagyási lépés tulajdonságait.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 08/23/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 84ff82dcb9f4ce930b4f1122790f7989c56fac35
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 09f32833d914c05a1830e2bba36ebe4c66a8a52c
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070777"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797096"
 ---
 # <a name="configure-approval-steps-in-a-workflow"></a>Jóváhagyási lépések konfigurálása munkafolyamatban
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a témakör bemutatja, hogyan kell konfigurálni a jóváhagyási lépés tulajdonságait.
 
@@ -159,7 +158,7 @@ Végezze el ezeket a lépéseket azon személyek meghatározásához, akiket jó
 
     - **Egyedi jóváhagyó** – A dokumentumhoz kapcsolódó műveletet az elsőként válaszoló személy határozza meg. Például, Balázs egy 15 000 USA-dolláros költségjelentést küldött el. A költségjelentés jelenleg Zsuzsannához, Jankához és Vilmoshoz van hozzárendelve. Ha elsőként Zsuzsanna válaszol a dokumentumra, az általa végzett művelet érvényes a dokumentumra. Ha Zsuzsanna visszautasítja a dokumentumot, akkor a visszautasított dokumentum visszakerül Balázshoz. Ha Zsuzsanna jóváhagyja a dokumentumot, akkor a dokumentum Annához kerül jóváhagyásra.
 
-        ![Jóváhagyási folyamattal rendelkező munkafolyamat.](./media/workflow_multipleusersinstep.gif)
+        ![Jóváhagyási folyamattal rendelkező munkafolyamat](./media/workflow_multipleusersinstep.gif)
 
     - **A jóváhagyók többsége** – A dokumentumhoz rendelt művelet meg van határozva, ha a jóváhagyók többsége válaszol. Például, Balázs egy 15 000 USA-dolláros költségjelentést küldött el. A költségjelentés jelenleg Zsuzsannához, Jankához és Vilmoshoz van hozzárendelve. Ha Zsuzsanna és Janka az első két választ adó jóváhagyó, a rendszer hozzárendeli az általuk végzett műveletet a dokumentumhoz.
 
@@ -277,6 +276,3 @@ Ha egy felhasználó nem hajtja végre a dokumentum műveletét a megadott idő 
 
 5. Ismételje meg a 3 – 4. lépést minden egyes olyan felhasználóra vonatkozóan, akiket hozzá kell adni az eszkalációs útvonalhoz. A felhasználók sorrendje módosítható.
 6. Ha az eszkalációs útvonalban szereplő felhasználók nem válaszolnak a megadott időn belül, a rendszer automatikusan végrehajtja a dokumentumot. A rendszer által végzett művelet meghatározásához, válassza ki a **Művelet** sort, majd a **Művelet lezárása** fülön válasszon ki egy műveletet.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

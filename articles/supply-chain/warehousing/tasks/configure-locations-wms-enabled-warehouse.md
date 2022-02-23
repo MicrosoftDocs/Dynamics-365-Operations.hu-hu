@@ -2,24 +2,27 @@
 title: Helyek konfigurálása WMS szolgáltatással rendelkező raktárban
 description: Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis raktár (a speciális raktárkezelési folyamatokat alkalmazó raktár) helyének beállításait.
 author: perlynne
+manager: tfehr
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocationFormat, WHSLocationType, WHSLocationProfile, WHSParameters, WHSZoneGroup, WHSZone, WHSLocationBuild, WHSLocation, WHSPackSizeCategory, WHSLocationLimit, WHSInventFixedLocation, WMSLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b5273a388b30a41b75bd76c92fa4b9ff05c8f8d6
-ms.sourcegitcommit: db80edbe0c32e3a5f22aae6154781f3ff8a2ab2a
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 31f016c4c8b8b08139836336ac38196fbd1fba6f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "7599348"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429385"
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Helyek konfigurálása WMS szolgáltatással rendelkező raktárban
 
@@ -33,7 +36,7 @@ Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis rakt
 2. Kattintson az **Új** elemre.
 3. Érték beírása a **Raktár** mezőbe.
 4. Írjon be egy értéket a **Név** mezőbe.
-5. A **Hely** mezőben válasszon ki vagy írjon be egy létező helyértéket.
+5. Adjon meg egy értéket a **Telephely** mezőben.
 6. Bontsa ki a **Raktár** szakaszt.
 7. Állítsa **A raktárkezelési folyamatok felhasználói hibanaplója opcióját** erre: Igen. Ezzel a beállítással lehetővé válik a speciális raktározási folyamatok futtatása a raktármunkák és mobileszközök segítségével.
 8. Zárja be a lapot.
@@ -172,6 +175,3 @@ Ez az útmutató bemutatja, hogyan konfigurálhatja az új WMS-kompatibilis rakt
 6. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 7. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

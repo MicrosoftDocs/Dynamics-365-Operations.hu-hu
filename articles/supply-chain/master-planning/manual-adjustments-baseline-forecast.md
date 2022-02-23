@@ -1,10 +1,12 @@
 ---
 title: A kiinduló előrejelzés manuális kiigazítása
 description: Ez a témakör bemutatja, hogyan végezhet a manuális kiigazítást egy kiinduló előrejelzésen és hogyan tekintheti meg az előrejelzés részleteit.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 01/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d8a29e93b252c5d4ec68dfcd9ffe2f63ac1b6af2
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
-ms.translationtype: MT
+ms.openlocfilehash: afdcbb98c96b2a685f64a16886b9a064ed13c2c0
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778033"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4967030"
 ---
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>A kiinduló előrejelzés manuális kiigazítása
 
@@ -34,7 +36,7 @@ Manuális kiigazítások elvégzése előtt fontos tisztázni néhány, különf
 ## <a name="grid-on-the-adjusted-demand-forecast-page"></a>A Módosított igény-előrejelzés oldalon lévő rács
 A **Módosított igény-előrejelzés** oldal tartalmaz egy rácsot, amelynek szerkezete a következő:
 
--   Az első oszlopban azok a cikkek, cikkfelosztási kulcsok, vállalatok, stb. jelennek meg, amelyekre vonatkozóan az előrejelzést generálták. Az oldal alcíme a rácsban megjelenített aktuális előrejelzési dimenziókat írja le. Ha például az oldal alcíme **Vállalat / Hely / Cikkfelosztási kulcs**, és a rács egyik sorának fejléce **USMF / 1 / D\_ _Alloc**, akkor az a sor az USMF vállalatra, 1. helyre és **D\_ _Alloc** cikkfelosztási kulcsra vonatkozó előrejelzést mutatja.
+-   Az első oszlopban azok a cikkek, cikkfelosztási kulcsok, vállalatok, stb. jelennek meg, amelyekre vonatkozóan az előrejelzést generálták. Az oldal alcíme a rácsban megjelenített aktuális előrejelzési dimenziókat írja le. Ha például az oldal alcíme **Vállalat / Hely / Cikkfelosztási kulcs**, és a rács egyik sorának fejléce **USMF / 1 / D\__Alloc**, akkor az a sor az USMF vállalatra, 1. helyre és **D\__Alloc** cikkfelosztási kulcsra vonatkozó előrejelzést mutatja.
 -   A további oszlopok azokat az előrejelzési időszakokat jelölik, amelyekre az előrejelzést generálták. Az egyes oszlopfejlécek az adott oszlopban megjelenített előrejelzési időszak első napját adják meg.
 -   A cellákban lévő értékek mutatják az előrejelzést, amely egyetlen cikkre, cikkfelosztási kulcsra, stb. és az adott előrejelzési időszakra vonatkozik.
 
@@ -67,13 +69,14 @@ Az **Igény-előrejelzés részletei** oldalon az alábbi adatok jelennek meg gr
 
 **Megjegyzések:**
 
--   Ha a Szolgáltatáskezelés segítségével engedélyezi az **Előrejelzési modellek kiválasztása az igény-előrejelzés részleteiben** lehetőséget, akkor kiválaszthatja a korábbi előrejelzésbe belefoglalni kívánt előrejelzési modelleket az **Igény-előrejelzés részletei** lapon. (Az Ellátásilánc-kezelés 10.0.21-es verziója alapértelmezés szerint be van kapcsolva.)
+-   Ha a Szolgáltatáskezelés segítségével engedélyezi az **Előrejelzési modellek kiválasztása az igény-előrejelzés részleteiben** lehetőséget, akkor kiválaszthatja a korábbi előrejelzésbe belefoglalni kívánt előrejelzési modelleket az **Igény-előrejelzés részletei** lapon.
 -   Az oldal **Előrejelzés** szakaszában megjelenő megbízhatósági intervallum a megbízhatósági intervallum alsó és felső határértéke közti különbséget mutatja meg. Az alsó és felső határértékek megtekintéséhez vigye az egérmutatót az **Igényelőzmények és előrejelzés grafikusan** szakasz diagramja fölé.
 -   Amennyiben az Igény-előrejelzés a Microsoft Azure gépi tanulás szolgáltatást használja, lehetősége van megadni azt a százalékos megbízhatósági szintet, amellyel a generált előrejelzésnek rendelkeznie kell. A megbízhatósági intervallum olyan értékek tartományból áll, amelyek az igény-előrejelzés jó becslését adják. A 95%-os megbízhatósági szint azt jelenti, hogy 5% a kockázata annak, hogy az igény-előrejelzés eredménye a megbízhatósági intervallum tartományán kívül esik.
 
 Az előrejelzés manuális kiigazításait az **Igény-előrejelzés részletei** oldalon is elvégezheti, az **Előrejelzés** szakasz **Előrejelzés** sorában lévő értékek megváltoztatásával.
 
-## <a name="additional-resources"></a>További erőforrások
+<a name="additional-resources"></a>További erőforrások
+--------
 
 [Előrejelzés pontosságának követése](monitor-forecast-accuracy.md)
 
@@ -81,6 +84,3 @@ Az előrejelzés manuális kiigazításait az **Igény-előrejelzés részletei*
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

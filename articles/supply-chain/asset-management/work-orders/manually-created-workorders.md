@@ -1,10 +1,12 @@
 ---
 title: Manuálisan létrehozott munkarendelések
 description: Ez a cikk azt mutatja be, hogyan lehet manuálisan munkarendeléseket létrehozni az Eszközkezelés modulban.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderTableCreateRelated, EntAssetWorkOrderTableCreate, EntAssetWorkOrderTableCopy
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: a755fa579d929056296c5512f976d15c4808c336b6688b891a4712051e15e9a1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8c787dbc9889139df76b9b102deb18fce567e382
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6750100"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017868"
 ---
 # <a name="manually-created-work-orders"></a>Manuálisan létrehozott munkarendelések
 
@@ -163,6 +165,3 @@ Az alábbi ábra a **Munkarendelés létrehozása** párbeszédpanel egy példá
 >[!NOTE]
 >Ha a munkarendeléseket automatikusan szeretné létrehozni, ütemezheti a karbantartási terv feladatait, vagy beállíthatja az „Automatikus létrehozású” [karbantartási terveket](../preventive-and-reactive-maintenance/maintenance-plans.md) vagy [karbantartási köröket](../preventive-and-reactive-maintenance/maintenance-rounds.md) az eszközhöz. A karbantartási kérések, amelyek az **Összes karbantartási ütemezés** listaoldalról vannak létrehozva a kiválasztott karbantartási feladattípusokkal hozza létre a program.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

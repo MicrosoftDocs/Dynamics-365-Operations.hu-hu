@@ -2,12 +2,15 @@
 title: iFrame modul
 description: Ez a témakör az iFrame modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 11/04/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
-ms.translationtype: MT
+ms.openlocfilehash: 4afd8f60938c99d1981be1625ef28f91d9e4bb4c
+ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754014"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "4665396"
 ---
 # <a name="iframe-module"></a>iFrame modul
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör az iFrame modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 Az iFrame modul egy iFrame (szövegközi keretet), amely külső tartalmat tárol a webhelyen. Felhasználható például YouTube-videó vagy PDF-megjelenítő tárolására bármilyen webhelyen. 
 
@@ -37,7 +42,7 @@ Az iFrame modulhoz cél URL-cím szükséges. Ezt követően egy HTML **iFrame**
 
 A következő kép példákat mutat be azokról az iFrame modulokról, amelyek külső videókat mutatnak be meg a webhely oldalain.
 
-![Példa a külső videókat bemutató iFrame modulokról.](./media/ecommerce-iframe.PNG)
+![Példa a külső videókat bemutató iFrame modulokról](./media/ecommerce-iframe.PNG)
 
 ## <a name="iframe-module-properties"></a>iFrame modul tulajdonságai
 
@@ -66,15 +71,9 @@ Ha fel szeretne venni egy iFrame modult egy oldalra egy külső videó bemutatá
 1. Szükség szerint egyéb tulajdonságokat is megadhat, például **Fejlécet** és **Magasságot**.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Menjen a webhely marketing oldalára. Látnia kell, hogy a videó át lett renderelve az iFrame modulba.
-
-> [!NOTE]
-> Mivel a keretmodul külső tartalmat is lehetővé tesz, a webhely házirendnek gondoskodnia kell arról, hogy a keretmodulon belül tárolt tartalom ne sérti meg a tartalomkorlátozási házirendet az adott piacon. Ha a keretmodult használó lapon tartalom-megsértés történik, akkor a webhely szerzője eltávolíthatja a keretmodult, ha megnyitja az oldalt a webhelyszerkesztőben, kiválasztja a Modul eltávolítása gombra a keretmodulban, majd menti és újra közzéteszi az **·** oldalt.
-
+ 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Modultár áttekintése](starter-kit-overview.md)
+[Modulkönyvtár – áttekintés](starter-kit-overview.md)
 
 [Tartalomra vonatkozó biztonsági irányelv (CSP) kezelése](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

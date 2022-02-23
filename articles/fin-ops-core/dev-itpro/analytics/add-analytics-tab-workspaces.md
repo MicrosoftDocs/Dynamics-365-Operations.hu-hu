@@ -1,23 +1,25 @@
 ---
 title: Analitika hozzáadása munkaterületekhez Power BI Embedded használatával
 description: Ez a témakör bemutatja, hogy miként ágyazható be egy Power BI jelentés egy munkaterület Elemzés lapjára.
-author: RichdiMSFT
+author: tjvass
+manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: ed562dca621acea24efa3f157f695257cb919cdda577cf9ae6dd0b0c942e1b70
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 53c9d6343422f64aed74ce436bafd2c8b2ce1c3e
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760152"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4680936"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analitika hozzáadása munkaterületekhez Power BI Embedded használatával
 
@@ -27,11 +29,11 @@ ms.locfileid: "6760152"
 > Ez a funkció támogatott a Finance and Operations alkalmazásban (7.2-es vagy újabb verzió).
 
 ## <a name="introduction"></a>Bevezetés
-Ez a témakör bemutatja, hogy miként ágyazható be egy Microsoft Power BI-jelentés egy munkaterület **Elemzés** lapjára. Például az itt megadott ajánlott kiterjed a **foglalási kezelési** a flottában-kezelés alkalmazást az analitikus munkaterület beágyazása a munkaterület egy **analitika** lapon.
+Ez a témakör bemutatja, hogy miként ágyazható be egy Microsoft Power BI jelentés egy munkaterület **Elemzés** lapjára. Például az itt megadott ajánlott kiterjed a **foglalási kezelési** a flottában-kezelés alkalmazást az analitikus munkaterület beágyazása a munkaterület egy **analitika** lapon.
 
 ## <a name="prerequisites"></a>Előfeltételek
 + A fejlesztői környezet 8-as vagy újabb Platform frissítés futó való hozzáférést.
-+ Analitikai jelentés (.pbix fájl), amelyet a Microsoft Microsoft Power BI Desktop használatával hoztak létre, és amelynek adatmodellje az entitástár adatbázisból származik.
++ Analitikai jelentés (.pbix fájl), amely Microsoft Power BI Desktop használatával lett létrehozva, és, amelynek adatmodellje az entitástár adatbázisból származik.
 
 ## <a name="overview"></a>Áttekintés
 Alkalmazás meglévő munkaterülethez kiterjesztése, vagy saját új munkaterület bevezetésének, beágyazott elemző nézetek segítségével az üzleti adatokban osztályon és interaktív nézetei szállítani. A folyamat hozzáadása egy analitikai munkaterület lap négy lépés tartozik.
@@ -54,11 +56,11 @@ Kövesse ezeket a lépéseket a .pbix fájl Visual Studio projekt műtermékkén
 3. Az a **új elem hozzáadása** párbeszédpanel **műveletek műtermékek**, jelölje be a **erőforrás** sablon.
 4. Írjon be egy nevet, amely veszi figyelembe a jelentés X ++ metaadatokban hivatkozik, és kattintson a **hozzáadása**.
 
-    ![Új elem párbeszédpanelen hozzáadása.](media/analytical-workspace-add.png)
+    ![Új elem párbeszédpanelen hozzáadása](media/analytical-workspace-add.png)
 
 5. Keresse meg a .pbix fájlt, amely tartalmazza az elemzési jelentés, és kattintson a **nyitott**.
 
-    ![Válassza ki az erőforrást párbeszédpanel.](media/analytical-workspace-select-resource.png)
+    ![Válassza ki az erőforrás párbeszédpanel jelenik meg](media/analytical-workspace-select-resource.png)
 
 Dynamics 365 erőforrásként felvett .pbix fájl, hogy a jelentések beágyazása munkaterületek, és közvetlen kapcsolatokat menüelemek vehet fel.
 
@@ -67,7 +69,7 @@ Ebben a példában ajánlott kiterjed a **foglalási kezelése** munkaterület h
 
 A következő ábra azt mutatja, hogy a **FMClerkWorkspace** képernyő hogyan néz ki a a Microsoft Visual Studio-tervezőben.
 
-![Az FMClerkWorkspace űrlap változtatások előtt.](media/analytical-workspace-definition-before.png)
+![A képernyőn FMClerkWorkspace változtatások előtt](media/analytical-workspace-definition-before.png)
 
 Kövesse az alábbi lépéseket képernyő definíció kiterjeszteni az **foglalási kezelési** munkaterület.
 
@@ -92,7 +94,7 @@ Kövesse az alábbi lépéseket képernyő definíció kiterjeszteni az **foglal
 
 A következő ábra mutatja, hogy a terv néz módosítások alkalmazása után.
 
-![Az FMClerkWorkspace változtatások után.](media/analytical-workspace-definition-after.png)
+![Módosítások után FMClerkWorkspace](media/analytical-workspace-definition-after.png)
 
 Most, hogy a munkaterület jelentés beágyazása használt űrlap-vezérlőelemek felvett tulajdonságaként méretét, hogy így alkalmazkodik az elrendezés kell megadni. Alapértelmezés szerint mind **szűrők ablak** lap és a **lap** oldal a jelentésen látható lesz. Ezeket a vezérlőelemeket a jelentés a cél fogyasztó megfelelő láthatóságát azonban módosítható.
 
@@ -142,7 +144,7 @@ Kövesse az alábbi lépéseket, amely inicializálja a jelentésmegjelenítő v
 
 Üzleti logika inicializálja a jelentésmegjelenítő vezérlőben beágyazott felvételét a feladat már befejeződött. A következő ábra mutatja, hogy a munkaterület néz módosítások alkalmazása után.
 
-![A munkaterületbe beágyazott jelentés.](media/analytical-workspace-final.png)
+![A munkaterület ágyazott jelentés](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > A meglévő működési nézet alatt az oldalcím a munkaterület lapok használatával hozzáfér.
@@ -173,6 +175,3 @@ public static void initializeReportControl(
 | showFilterPane   | Logikai érték, amely azt jelzi, hogy megjelenjen (**true**) vagy rejtve maradjon (**false**) a szűrés ablaktáblája.     |
 | showNavPane      | Logikai érték, amely azt jelzi, hogy megjelenjen (**true**) vagy rejtve maradjon (**false**) a navigációs ablaktábla. |
 | defaultFilters   | A Power BI jelentés alapértelmezett szűrői.                                                                 |
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

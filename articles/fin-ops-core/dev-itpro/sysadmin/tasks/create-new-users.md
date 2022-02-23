@@ -2,9 +2,11 @@
 title: Új felhasználók létrehozása
 description: A felhasználók a szervezet olyan belső alkalmazottai vagy külső vevői és szállítói, akiknek hozzáféréssel kell rendelkezniük a rendszerhez a munkájuk elvégzéséhez.
 author: peakerbl
+manager: AnnBe
 ms.date: 01/12/2021
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysUserManagement, SysDataAreaSelectLookup, SysSecUserAddRoles, SysUserMSODSUserImport
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 480d181e8abb3af5a7406efd13c8bd9961a7490a
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: ca062ddd49f1c206c503fb6160ed436fe2d6f7e9
+ms.sourcegitcommit: 9e27a097b7eb3c8f2df66011ccc597ad18bc5445
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595386"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "4878657"
 ---
 # <a name="create-new-users"></a>Új felhasználók létrehozása
 
@@ -29,10 +31,10 @@ A Finance and Operations alkalmazások eléréséhez először hozzá kell adni 
 A Finance and Operations alkalmazások vásárlásával és licencelésével kapcsolatos tudnivalókért lásd: [Microsoft Dynamics 365 licencelési útmutató](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 ## <a name="assign-a-license-to-a-user"></a>Licenc hozzárendelése egy felhasználóhoz
-A rendszeradminisztrátorok [rendelhetnek hozzá licenceket a felhasználókhoz](/office365/admin/subscriptions-and-billing/assign-licenses-to-users) a [Microsoft 365 felügyeleti központban](/office365/admin/admin-overview/about-the-admin-center).
+A rendszeradminisztrátorok [rendelhetnek hozzá licenceket a felhasználókhoz](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide) a [Microsoft 365 felügyeleti központban](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center?view=o365-worldwide).
 
 ## <a name="add-an-external-user-in-azure-ad-and-assign-a-license"></a>Külső felhasználó hozzáadása az Azure AD megoldásban, és egy licenc hozzárendelése 
-A külső felhasználóknak meg kell jelenniük a bérlőkönyvtárban (Azure Active Directory (Azure AD)), hogy licenceket kaphassanak. Ezeket a külső felhasználókat hozzá kell adni a bérlőhöz az Azure AD felületen vendég felhasználóként, majd hozzájuk rendelni a megfelelő licenceket. A Finance and Operations alkalmazásoktól az a követelmény, hogy a vendégfelhasználó vállalatának használnia kell az Azure AD megoldást. További tájékoztatás: [Azure Active Directory B2B együttműködő felhasználók hozzáadása az Azure Portal webhelyen](/azure/active-directory/b2b/add-users-administrator).
+A külső felhasználóknak meg kell jelenniük a bérlőkönyvtárban (Azure Active Directory (Azure AD)), hogy licenceket kaphassanak. Ezeket a külső felhasználókat hozzá kell adni a bérlőhöz az Azure AD felületen vendég felhasználóként, majd hozzájuk rendelni a megfelelő licenceket. A Finance and Operations alkalmazásoktól az a követelmény, hogy a vendégfelhasználó vállalatának használnia kell az Azure AD megoldást. További tájékoztatás: [Azure Active Directory B2B együttműködő felhasználók hozzáadása az Azure Portal webhelyen](https://docs.microsoft.com/azure/active-directory/b2b/add-users-administrator).
 
 ## <a name="import-new-users-from-azure-ad"></a>Új felhasználók importálása az Azure AD-szolgáltatásból 
 1. Ugrás a **Rendszerfelügyelet** \> **Felhasználók** \> **Felhasználók** elemre.
@@ -57,7 +59,7 @@ A külső felhasználóknak meg kell jelenniük a bérlőkönyvtárban (Azure Ac
 7. A **Vállalat** mezőben válassza ki a felhasználó alapértelmezett indítási vállalatát. 
 8. Válassza a **Mentés** lehetőséget.
 
-A rendszer a felhasználói rekord mentésekor [Microsoft Graph](/graph/overview) hívás alapján frissíti az identitásszolgáltatót és a telemetriai azonosítót. A telemetriai azonosító a felhasználó alapja a felhasználó objektumazonosítója/biztonsági azonosítója az Azure AD megoldásban.
+A rendszer a felhasználói rekord mentésekor [Microsoft Graph](https://docs.microsoft.com/graph/overview) hívás alapján frissíti az identitásszolgáltatót és a telemetriai azonosítót. A telemetriai azonosító a felhasználó alapja a felhasználó objektumazonosítója/biztonsági azonosítója az Azure AD megoldásban.
 
 > [!NOTE]
 > Miután hozzáadta a felhasználót, a szerepköröket és szervezeteket hozzá kell rendelnie a megfelelő módon. További információ [Felhasználók hozzárendelése biztonsági szerepkörökhöz](assign-users-security-roles.md). Feltételesen előfordulhat, hogy a felhasználót egy **Személyhez** kell társítani, és frissíteni kell a **Felhasználói beállításokat**, például a nyelvet.
@@ -79,6 +81,3 @@ Felhasználói azonosító módosítása csak akkor változtathat meg, ha átnev
 A B2B-felhasználók implementálásához a további beállításokat itt találja: [B2B-felhasználók exportálása az Azure AD megoldásba](../implement-b2b.md).
 
 Az előre konfigurált rendszerfiókokkal kapcsolatos tudnivalókat lásd: [Előre konfigurált rendszerfiókok](../pre-configured-system-accounts.md)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

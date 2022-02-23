@@ -80,6 +80,3 @@ Ha tud állásokat közzétenni a LinkedIn rendszerbe, tekintse meg a következ�
 [Jelöltek felkutatása a LinkedIn Recruiter segítségével](./attract-linkedin-recruiter.md)
 
 [A LinkedIn integrációjának hibaelhárítása](./attract-troubleshoot-linkedin.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

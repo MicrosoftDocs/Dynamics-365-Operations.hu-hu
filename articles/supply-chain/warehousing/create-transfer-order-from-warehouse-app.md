@@ -1,32 +1,35 @@
 ---
 title: Átmozgatási rendelések létrehozása a raktári alkalmazásból
-description: Ez a témakör azt részletezi, hogyan lehet átmozgatási rendeléseket létrehozni és feldolgozni a Raktárkezelés mobilalkalmazásból
+description: Ez a témakör azt részletezi, hogyan lehet átmozgatási rendeléseket létrehozni és feldolgozni a raktári alkalmazás funkcióból
 author: perlynne
+manager: tfehr
 ms.date: 09/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSMobileDeviceQueueEvent
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 4ceedd8b42383dc1334f472ba754ac3e18261b9d
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
-ms.translationtype: MT
+ms.openlocfilehash: c30b0e74053480a08f84f4d7579021084ded5799
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7777815"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429301"
 ---
 # <a name="create-transfer-orders-from-the-warehouse-app"></a>Átmozgatási rendelések létrehozása a raktári alkalmazásból
 
 [!include [banner](../includes/banner.md)]
 
-Ez a funkció lehetővé teszi a raktári dolgozók számára, hogy közvetlenül a Raktárkezelés mobilalkalmazásból hozzanak létre és dolgozzanak fel átmozgatási rendeléseket. A dolgozók azzal kezdik, hogy kiválasztják a célraktárat, majd az alkalmazás segítségével egy vagy több azonosítótáblát beolvasnak, hogy azonosítótáblát adhassanak hozzá az átmozgatási rendeléshez. Ha a raktári dolgozó kiválasztja a **Rendelés teljesítése** elemet, akkor egy kötegelt feladat létrehozza a szükséges átmozgatási rendelést és a rendelési sorokat az adott azonosítótáblákhoz regisztrált aktuális készlet alapján.
+Ez a funkció lehetővé teszi a raktári dolgozók számára, hogy közvetlenül a raktári alkalmazásból hozzanak létre és dolgozzanak fel átmozgatási rendeléseket. A raktári dolgozók azzal kezdik, hogy kiválasztják a célraktárat, majd az alkalmazás segítségével egy vagy több azonosítótáblát beolvasnak, hogy azonosítótáblát adhassanak hozzá az átmozgatási rendeléshez. Ha a raktári dolgozó kiválasztja a **Rendelés teljesítése** elemet, akkor egy kötegelt feladat létrehozza a szükséges átmozgatási rendelést és a rendelési sorokat az adott azonosítótáblákhoz regisztrált aktuális készlet alapján.
 
-## <a name="enable-the-create-transfer-orders-from-the-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a> Átmozgatási rendelések létrehozásának engedélyezése raktári alkalmazásból
+## <a name="enable-the-create-transfer-orders-from-warehouse-app-feature"></a><a name="enable-create-transfer-order-from-warehouse-app"></a>Átmozgatási rendelések létrehozásának engedélyezése raktári alkalmazásból
 
 A funkció használatba vétele előtt engedélyeznie kell a funkciót és annak előfeltételeit a rendszerben. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) oldalt a funkció állapotának ellenőrzéséhez, és szükség esetén engedélyezéséhez.
 
@@ -36,11 +39,11 @@ A funkció használatba vétele előtt engedélyeznie kell a funkciót és annak
 1. Ezután engedélyezze az *Átmozgatási rendelések létrehozása a raktári alkalmazásból* funkciót, amely a következőként szerepel a listában:
     - **Modul:** Raktárkezelés
     - **Funkció neve** – Átmozgatási rendelések létrehozása és feldolgozása raktári alkalmazásból
-1. Ha szeretné automatizálni a kimenő szállítmányok feldolgozását, engedélyeznie kell a [Kimenő szállítmányok jóváhagyása kötegelt feladatokból](confirm-outbound-shipments-from-batch-jobs.md) funkciót. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés lapon ellenőrizhetik a funkció állapotát, és szükség esetén engedélyezhetik vagy [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) letilthatják azt. Itt a funkció a következőként szerepel:
+1. Ha szeretné automatizálni a kimenő szállítmányok feldolgozását, engedélyeznie kell a [Kimenő szállítmányok jóváhagyása kötegelt feladatokból](confirm-outbound-shipments-from-batch-jobs.md) funkciót. A funkció a következőként szerepel:
     - **Modul:** Raktárkezelés
     - **Funkció neve** – Kimenő szállítmányok jóváhagyása a kötegelt feladatokból
 
-## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a> Mobileszköz-menüelem beállítása átmozgatási rendelések létrehozásához
+## <a name="set-up-a-mobile-device-menu-item-to-create-transfer-orders"></a><a name="setup-warehouse-app-menu"></a>Mobileszköz-menüelem beállítása átmozgatási rendelések létrehozásához
 
 Az alábbiakban általános útmutatás található az átmozgatási rendelés létrehozásához szükséges mobileszköz-menüelemek beállításáról. Attól függően, hogy a vállalat igényei szerint milyen automatizálási szintet kell beállítani, amikor a felhasználók az üzemben átmozgatási rendeléseket hoznak létre, különféle konfigurációk lesznek engedélyezve. Az ebben a dokumentumban szereplő eset egy ilyen konfigurációt mutat be.
 
@@ -48,8 +51,8 @@ Az alábbiakban általános útmutatás található az átmozgatási rendelés l
 1. Új menüelem hozzáadásához válassza az **Új** elemet. Ezt követően végezze el a következő beállításokat a kezdéshez:
 
     - **Menüelem neve** – Adja meg a menüelem nevét a Supply Chain Management számára.
-    - **Cím** – Rendeljen hozzá egy menünevet, ahogy a Raktárkezelés mobilalkalmazásban dolgozók számára kell megjelennie.
-    - **Mód** – Állítsa *Közvetett* értékre (ez a menüelem nem hoz létre munkát).
+    - **Cím** – Rendeljen hozzá egy menünevet, ahogy a raktári alkalmazásban dolgozók számára kell megjelennie.
+    - **Mód** – Állítsa *Közvetett* értékre (ez a raktári alkalmazás nem hoz létre munkát).
     - **Tevékenységkód** – Állítsa *Átmozgatási rendelés létrehozása az azonosítótáblákból* értékre, lehetővé téve a raktári dolgozók számára, hogy egy vagy több beolvasott azonosítótábla alapján hozzanak létre átmozgatási rendelést.
 
 1. Az **Átmozgatási rendelés sorlétrehozási irányelv** beállításával irányíthatja, hogy az átmozgatási rendeléssorok milyen módon jöjjenek létre ezzel a menüelemmel. A sorok létrehozása és frissítése a beolvasott azonosítótáblához regisztrált aktuális készlet alapján történik. Válasszon a következő értékek közül:
@@ -72,7 +75,7 @@ Az alábbiakban általános útmutatás található az átmozgatási rendelés l
 
 ## <a name="create-a-transfer-order-based-on-license-plates"></a>Átmozgatási rendelés létrehozása azonosítótábla alapján
 
-A Raktárkezelés mobilalkalmazás egyszerű eljárással hoz létre átmozgatási rendeléseket az azonosítótábla alapján. Ehhez a dolgozónak a következőket kell tennie a Raktárkezelés mobilalkalmazás segítségével:
+A raktári alkalmazás egyszerű eljárással hoz létre átmozgatási rendeléseket az azonosítótábla alapján. Ehhez a dolgozónak a következőket kell tennie a raktári alkalmazás segítségével:
 
 1. Hozzon létre egy átmozgatási rendelést, és határozza meg a célraktárt.
 1. Határozza meg az összes szállítandó azonosítótáblát.
@@ -95,7 +98,7 @@ Az átmozgatási rendelés létrehozásának mobileszköz-menüelemekben törté
 
 Ön kiskereskedő, és több azonosítótáblája van, amelyek több elemet tartalmaznak, és ezek mindegyike az egyik raktárának adott helyén található (*51-es raktár*). Szeretné engedélyezni azt a folyamatot, amely lehetővé teszi, hogy a dolgozók átmozgatási rendelést hozzanak létre egy másik raktárba (*61-es raktár*), a beolvasott azonosítótáblák egy csoportjára. Automatikusan kiszállítja illetve frissíti az átmozgatási rendelést, amint a megrendelés utolsó azonosítótábláját is felismerte a rendszer.
 
-![Példa automatizált átmozgatási rendelés feldolgozására.](media/create-transfer-order-from-app-example.png "Példa automatizált átmozgatási rendelés feldolgozására")
+![Példa automatizált átmozgatási rendelés feldolgozására](media/create-transfer-order-from-app-example.png "Példa automatizált átmozgatási rendelés feldolgozására")
 
 ### <a name="create-a-mobile-device-menu-item-for-creating-transfer-orders"></a>Mobileszköz-menüelem létrehozása átmozgatási rendelések létrehozásához
 
@@ -254,11 +257,11 @@ Adjon hozzá ténylegesen rendelkezésre álló mennyiségeket a következő ér
 
 Az említett példában két **Raktári alkalmazási esemény** (*Átmozgatási rendelés létrehozása* és az *Átmozgatási rendelés teljesítése*) került alkalmazásra.
 
-### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a> Raktári alkalmazás eseményeinek lekérdezése
+### <a name="inquire-the-warehouse-app-events"></a><a name="#inquire-the-warehouse-app-events"></a>Raktári alkalmazás eseményeinek lekérdezése
 
-A Raktárkezelés mobilalkalmazás által létrehozott esemény-várólistát és eseményüzeneteket a **Raktárkezelés \> Lekérdezések és jelentések \> Mobileszköznaplók \> Raktári alkalmazás eseményei** menüpontba lépve tekintheti meg.
+A raktári alkalmazás által létrehozott esemény-várólistát és eseményüzeneteket a **Raktárkezelés \> Lekérdezések és jelentések \> Mobileszköznaplók \> Raktári alkalmazás eseményei** menüpontba lépve tekintheti meg.
 
-Az *Átmozgatási rendelés létrehozása* esemény üzenetei *Várakozás* állapotba kerülnek, ami azt jelenti, hogy a **Raktáralkalmazás-események feldolgozása** kötegelt feladata nem veszi és nem dolgozza fel az esemény üzeneteit. Amint az eseményüzenetek állapota *Várólistára* változik, a kötegelt feladat feldolgozza az eseményeket. Ez az *Átmozgatási rendelés teljesítése* létrehozásakor történik meg (amikor a dolgozó megnyomja a **Rendelés teljesítése** gombot a Raktárkezelés mobilalkalmazásban). Az *Átmozgatási rendelés létrehozása* során az üzenetek feldolgozása megtörtént, az állapot *Befejeződött* vagy *Sikertelen* értékre frissül. Amikor az *Átmozgatási rendelés teljesítése* állapot *Befejeződött* értékre frissül, a program törli a várólistából az összes kapcsolódó eseményt.
+Az *Átmozgatási rendelés létrehozása* esemény üzenetei *Várakozás* állapotba kerülnek, ami azt jelenti, hogy a **Raktáralkalmazás-események feldolgozása** kötegelt feladata nem veszi és nem dolgozza fel az esemény üzeneteit. Amint az eseményüzenetek állapota *Várólistára* változik, a kötegelt feladat feldolgozza az eseményeket. Ez az *Átmozgatási rendelés teljesítése* létrehozásakor történik meg (amikor a dolgozó megnyomja a **Rendelés teljesítése** gombot a raktári alkalmazásban). Az *Átmozgatási rendelés létrehozása* során az üzenetek feldolgozása megtörtént, az állapot *Befejeződött* vagy *Sikertelen* értékre frissül. Amikor az *Átmozgatási rendelés teljesítése* állapot *Befejeződött* értékre frissül, a program törli a várólistából az összes kapcsolódó eseményt.
 
 Mivel az átmozgatási rendelés adatainak létrehozásához szükséges **Raktári alkalmazási eseményeket** a kötegelt feladat nem dolgozza fel az előtt, hogy az üzenetek státusza *Várólistára* módosul, a kért átmozgatási rendelési számokat az **Azonosító** mezőben kell megkeresni. Az **Azonosító** mező a **Raktári alkalmazási esemény** lap fejlécében található.
 
@@ -274,11 +277,11 @@ A további tudnivalókat lásd: [Raktári alkalmazás eseményeinek feldolgozás
 
 Ebben az esetben a következő történt:
 
-1. Ön a Raktárkezelés mobilalkalmazás használatával kiválasztott egy menüelemet, amely az **Átmozgatási rendelés létrehozása azonosítótábla alapján** tevékenységkódot használja.
+1. Ön a raktári alkalmazás használatával kiválasztott egy menüelemet, amely az **Átmozgatási rendelés létrehozása azonosítótábla alapján** tevékenységkódot használja.
 1. Az alkalmazás kérte, hogy az átmozgatási rendeléshez válassza ki a célraktárt. A forrás raktár mindig az, amelynél Ön aktuálisan dolgozóként van bejelentkezve.
 1. A célraktár kiválasztásakor a rendszer lefoglalt egy azonosító számot a közelgő átmozgatási rendelés számára (a rendszerben definiált átmozgatási rendelésszámsorrend alapján), de még nem hozta létre az átmozgatási rendelést.
 1. Amikor Ön beolvasta az *LP10* azonosítótáblát, amely az új raktárba áttárolandó aktuális készletet tartalmazza, egy **Raktári alkalmazásesemény** lett hozzáadva a későbbiekben feldolgozandó események várólistájához. A raktári esemény tartalmazott beolvasással kapcsolatos adatokat, például a tervezett átmozgatási rendelésszámot.
-1. A Raktárkezelés mobilalkalmazásban, ha a **Rendelés teljesítése** gomb be van jelölve, létrejön egy új raktári alkalmazási esemény, az **Átmozgatási rendelés teljesítése**, valamint a kapcsolódó meglévő esemény, az **Átmozgatási rendelés létrehozása** állapota módosul **Várólistára**.
+1. A raktári alkalmazásban, ha a **Rendelés teljesítése** gomb be van jelölve, létrejön egy új raktári alkalmazási esemény, az **Átmozgatási rendelés teljesítése**, valamint a kapcsolódó meglévő esemény, az **Átmozgatási rendelés létrehozása** állapota módosul **Várólistára**.
 1. A háttérben a **Raktáralkalmazás-események feldolgozásának kötegelt feladata** felvette a **Várólista** eseményt, és összegyűjtötte a beolvasott azonosítótáblával kapcsolatos aktuális készletet. Az aktuális készlet alapján létrejön a tényleges átmozgatási rendelés rekordja és a kapcsolódó sorok. A feladat az átmozgatási rendelés **Kimenő szállítások irányelvei** mezőjét is kitöltötte a *Kiadás és szállítás megerősítéséhez* beállított értékkel, és összekapcsolta az azonosítótáblát az **Azonosítótábla-vezérelt** stratégia soraival.
 1. Az átmozgatási rendeléssor **Kimenő szállítások irányelvei** mezőjének értéke alapján az **Átmozgatási rendelések automatikus kiadása kötegelt feladat** lekérdezésének eredménye az, hogy az átmozgatási rendelés kiadásra kerül a szállítási raktárba. Az alkalmazott **Hullámsablon**, **Munkasablon** és a **Helyutasítások** beállítása miatt a munka automatikus folyamatainak eredményeképpen a **Rakomány állapota** *Berakodva* értékre frissült.
 1. A rendszer végrehajtja a rakomány **Kimenő szállítmányok feldolgozása kötegelt feladatát**, és ekkor megtörténik az átmozgatási rendelés kiszállítása és az előzetes kiszállítási értesítés (ASN) létrehozása.
@@ -292,13 +295,13 @@ Ebben az esetben a következő történt:
 
 Engedélyezni kell az *Átmozgatási rendelések létrehozása és feldolgozása raktári alkalmazásból* elemet. További információért lásd: [Átmozgatási rendelések létrehozásának engedélyezése raktári alkalmazásból](#enable-create-transfer-order-from-warehouse-app).
 
-### <a name="warehouse-management-mobile-app-processes"></a>A Raktárkezelés mobilalkalmazás folyamatai
+### <a name="warehouse-app-processes"></a>Raktári alkalmazás folyamatai
 
 #### <a name="why-cant-i-see-the-menu-button-complete-order"></a>Miért nem látom a „Rendelés teljesítése” menügombot?
 
 Az átmozgatási rendeléshez legalább egy azonosítótáblát hozzá kell rendelni.
 
-#### <a name="can-several-warehouse-management-mobile-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Ugyanazon átmozgatási rendeléshez egyszerre a Raktárkezelés mobilalkalmazás több felhasználója is hozzáadhat azonosítótáblát?
+#### <a name="can-several-warehouse-app-users-add-license-plates-to-the-same-transfer-order-at-the-same-time"></a>Ugyanazon átmozgatási rendeléshez egyszerre több raktárialkalmazás-felhasználó is hozzáadhat azonosítótáblát?
 
 Igen, több raktári dolgozó is beolvashat azonosítótáblát ugyanazon átmozgatási rendelésbe.
 
@@ -310,11 +313,11 @@ Nem, egy azonosítótábla csak egy átmozgatási rendeléshez adható hozzá.
 
 Nem, több azonosítótábla már nem adható hozzá olyan átmozgatási rendeléshez, amely **Átmozgatási rendelés teljesítése** raktári alkalmazási eseménnyel rendelkezik.
 
-#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-management-mobile-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Hogyan lehet megtalálni a Raktárkezelés mobilalkalmazásban az „Átmozgatási rendelés kiválasztása” gombbal használható meglévő átmozgatási rendeléseket, ha a rendelés még nincs létrehozva a háttérrendszerben?
+#### <a name="how-can-i-find-existing-transfer-orders-to-be-used-via-the-select-transfer-order-button-in-the-warehouse-app-if-the-order-has-not-yet-been-created-in-the-backend-system"></a>Hogyan lehet megtalálni a raktári alkalmazásban az „Átmozgatási rendelés kiválasztása” gombbal használható meglévő átmozgatási rendeléseket, ha a rendelés még nincs létrehozva a háttérrendszerben?
 
 Jelenleg nem lehet átmozgatási rendeléseket keresni az alkalmazásban, de az átmozgatási rendelésszámok a **Raktári alkalmazás eseményei** lapon megtalálhatók. A további tudnivalókat lásd: [Raktári alkalmazás eseményeinek lekérdezése](#inquire-the-warehouse-app-events).
 
-#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-management-mobile-app"></a>Kiválaszthatom-e manuálisan a használandó átmozgatási rendelésszámot a Raktárkezelés mobilalkalmazásból?
+#### <a name="can-i-manually-select-the-transfer-order-number-to-be-used-from-the-warehouse-app"></a>Kiválaszthatom-e manuálisan a használandó átmozgatási rendelésszámot a raktári alkalmazásból?
 
 Csak a számsorozatokon keresztül automatikusan létrehozott átmozgatási rendelésszámokat támogatja a rendszer.
 
@@ -330,6 +333,4 @@ Az átmozgatási rendelések létrehozása a **Szállítási dátum ellenőrzés
 
 #### <a name="can-i-use-a-license-plate-having-physical-negative-inventory-on-hand"></a>Használhatok negatív tényleges aktuális készlettel rendelkező azonosítótáblát?
 
-A funkció csak pozitív fizikai aktuális készletmennyiségeket támogat az azonosítótábla szintjén, de negatív fizikai aktuális készletmennyiségek is lehetnek a magasabb raktárban és készletállapot-szinteken, amikor az áthelyezési rendelésekhez társítják az azonosítótáblákat.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+A funkció csak pozitív tényleges aktuális mennyiségeket támogat. Győződjön meg róla, hogy a raktárkészlet pozitív tényleges aktuális mennyiség, és ellenőrizze a készletállapotot, mielőtt az azonosítótáblát egy átmozgatási rendeléshez társítja.

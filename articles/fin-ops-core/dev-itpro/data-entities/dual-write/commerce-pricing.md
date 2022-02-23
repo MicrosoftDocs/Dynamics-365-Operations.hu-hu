@@ -2,19 +2,28 @@
 title: A Dynamics 365 Commerce díjszabási motor használata a Dynamics 365 Sales alkalmazással
 description: Ez a témakör azt mutatja be, hogyan kell használni a Microsoft Dynamics 365 Commerce árképzési motorját értékesítési árajánlatok a Dynamics 365 Sales alkalmazásból.
 author: ShalabhjainMSFT
+manager: AnnBe
 ms.date: 11/19/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: v-chgri
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: shajain
-ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: c3f1527e5f37bebba57661ca86b1a3aae7e62da0
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.dyn365.ops.version: ''
+ms.search.validFrom: 2020-11-03
+ms.openlocfilehash: fad5c21d75db62b85efe803f1667dd3f9164a5fc
+ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416755"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "4594918"
 ---
 # <a name="use-the-dynamics-365-commerce-pricing-engine-with-dynamics-365-sales"></a>A Dynamics 365 Commerce díjszabási motor használata a Dynamics 365 Sales alkalmazással
 
@@ -24,7 +33,7 @@ Ez a témakör azt mutatja be, hogyan kell használni a Microsoft Dynamics 365 C
 
 Az Dynamics 365 Commerce árképzési motor a legtöbb cég és ügyfél közötti (B2C) árképzési forgatókönyveket támogatja, így például az üzlet szintjének árképzését, a tagságon alapuló és a hűségprogramon alapuló árképzést, a kombinációs engedményeket, a mennyiségi kedvezményeket és a küszöbérték-kedvezményeket. Az árképzési motor összetett szabályokat használ egy adott árajánlat vagy rendelés legjobb árának megállapításához.
 
-Ha [kettős írást](./dual-write-overview.md) használ , akkor három lehetősége van az árképzési szükségletek kielégítésére. Használhatja azt az árképzést, ami a Dynamics 365 Sales árlistáin alapul, a Dynamics 365 Supply Chain Management árképzési motorját vagy a Dynamics 365 Commerce árképzési motorját. Ezek közül a lehetőségek közül a Commerce árképzési motorja a legalkalmasabb a B2C esetekhez.
+Ha [kettős írást](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-overview) használ , akkor három lehetősége van az árképzési szükségletek kielégítésére. Használhatja azt az árképzést, ami a Dynamics 365 Sales árlistáin alapul, a Dynamics 365 Supply Chain Management árképzési motorját vagy a Dynamics 365 Commerce árképzési motorját. Ezek közül a lehetőségek közül a Commerce árképzési motorja a legalkalmasabb a B2C esetekhez.
 
 ## <a name="use-the-commerce-pricing-engine-in-sales"></a>A Commerce árképzási motorjának használata a Sales alkalmazásban
 
@@ -35,7 +44,7 @@ Amikor a felhasználók árajánlatot kezdeményeznek a Sales alkalmazásban, a 
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-- Ahhoz, hogy a Commerce árképzési motort a Salesben használhassa, el kell végeznie a [Potenciális vevők készpénzre váltása a kettős írás szolgáltatásban](./dual-write-prospect-to-cash.md) lépéseit.
+- Ahhoz, hogy a Commerce árképzési motort a Salesben használhassa, el kell végeznie a [Potenciális vevők készpénzre váltása a kettős írás szolgáltatásban](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/) lépéseit.
 - A következő lépések végrehajtásával ki kell kapcsolni a kereskedelmi megállapodás értékelését kézi bevitelhez:
 
     1. A Commerce környezetében **Kinnlevőségek \> Beállítások \> Kinnlevőségek paraméterei** pontra.
@@ -43,7 +52,4 @@ Amikor a felhasználók árajánlatot kezdeményeznek a Sales alkalmazásban, a 
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Potenciális vevők készpénzre váltása kettős írásban](./dual-write-prospect-to-cash.md)
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+[Potenciális vevők készpénzre váltása kettős írásban](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-prospect-to-cash/)

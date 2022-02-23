@@ -1,33 +1,36 @@
 ---
-title: Darabkitárolás megerősítése
-description: A darabkitárolás lehetővé teszi, hogy minden egyes készletet mobileszközön végzett kitárolási vagy leltározási munka segítségével hagyjon jóvá.
+title: Darab kitárolásának megerősítése
+description: Ez a témakör leírja, hogyan állíthatja be és alkalmazhatja a darabkitárolás megerősítését mobileszközről.
 author: Mirzaab
+manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFAutoConfirm, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a925685b80c635cf036f19748e16d415953ed5fdda7b81498baeade35ccbfcab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed63245066799d7d8f14362ab6c9193c0cda7c4a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766002"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429397"
 ---
-# <a name="piece-picking-confirmation"></a>Darabkitárolás megerősítése
+# <a name="piece-picking-confirmation"></a>Darab kitárolásának megerősítése
 
 [!include [banner](../includes/banner.md)]
 
 A darabkitárolás lehetővé teszi, hogy minden egyes készletet mobileszközön végzett kitárolási vagy leltározási munka segítségével hagyjon jóvá. A kitároláshoz megersítheti a feldolgozandó munka mennyiségét a kitárolni kívánt mennyiségére vonatkoztatva. Leltározási munka esetén beolvashatja a leltározandó készletet, és nyomon követheti a teljes mennyiséget.
 
-Darabkitárolás engedélyezésekor a program automatikusan kijelöli a termék megerősítése lehetőséget. Munkatípusú kitárolás esetén beállíthatja a maximális darabszámot. Ez lehetővé teszi a munka során kötelezően megerősítendő darabok maximumának beállítását. A maximális mennyiség a feldolgozás alatt álló aktuális munkaegységen alapul. A leltározási munkatípus esetében nincs maximum.
+Darabkitárolás engedélyezésekor a program automatikusan kijelöli a termék megerősítése lehetőséget. Munkatípusú kitárolás esetén maximális darabszám van meghatározva. Ez lehetővé teszi a munka során kötelezően megerősítendő darabok maximumának beállítását. A maximális mennyiség a feldolgozás alatt álló aktuális munkaegységen alapul. A leltározási munkatípus esetében nincs maximum.
 
 A beolvasott vonalkódhoz társított mennyiséget és mértékegységet is használhatja. Ez működik a bejövő folyamatok esetén, beleértve a vegyes azonosítótáblák bevételezését, a beszerzési rendelési cikket, az átmozgatási rendelési cikket és a rakománycikket. Működik a darabkitárolás esetén is, ahol a vonalkód beolvasása hozzáadja a mennyiséget a megerősített darabok számához, a konvertálás pedig a vonalkódon levő mértékegység és a munkaegység között történik. Ha a vonalkódon levő mértékegység leltározása során megerősítést nyer, hogy a mennyiség engedélyezve van a szekvenciacsoport leltározásához, a mennyiséget a rendszer hozzáadja a teljes számhoz.
 
@@ -48,6 +51,3 @@ A következő lehetőségek közül választhat, ha a munka típusa kitárolás 
 | Darab kitárolásának megerősítése | Elérhető kitárolási és leltározási munkatípusok esetében. A termék megerősítése automatikusan be van jelölve. Lehetővé teszi, hogy a mobileszközről erősítse meg a készlet minden elemét. |
 |  Darabok maximális száma  |                   Elérhető kitárolási munkához, ha a darabkitárolás megerősítése engedélyezve van. Beállítja a megerősítendő darabszám maximális értékét.                   |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

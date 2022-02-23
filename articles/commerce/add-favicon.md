@@ -2,30 +2,35 @@
 title: Kedvencek ikon hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet egy kedvencek ikont hozzáadni a webhelyhez.
 author: bicyclingfool
+manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 080ef4da7313bd6b9d91e616f576b3ff774509d9
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
-ms.translationtype: MT
+ms.openlocfilehash: 262e478d426fd913130b21a3434331c7d27b54b2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964732"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412796"
 ---
 # <a name="add-a-favicon"></a>Kedvencek ikon hozzáadása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet egy kedvencek ikont hozzáadni a webhelyhez.
+
+## <a name="overview"></a>Áttekintés
 
 A kedvencek ikon egy kis grafikai fájl, amely a webböngésző lapján, a címsorban, a böngészési előzményekben, a könyvjelzők vagy a Kedvencek között jelenik meg sok más hely mellett. Javasoljuk, hogy adjon kedvencek ikont webhelyéhez, mert ezzel a saját márkáját képviseli és megerősíti, valamint segít megkülönböztetni a webhelyet a vevők által látogatott egyéb helyektől.
 
@@ -61,7 +66,7 @@ A töredék létrehozásához, amely metacímkét tartalmaz a kedvenc ikonjához
 1. Az **Új töredék** párbeszédpanelen válassza ki **Metacímkék** lehetőséget azon modulként, melyen a töredék alapszik.
 1. Írja be a töredék nevét, majd kattintson az **OK** gombra.
 1. A töredék hierarchiafájában válassza ki az **Alapértelmezett metacímkék** gyermekét.
-1. A jobb oldali panelen a **Metacímkék** területen válassza a **Hozzáadás** lehetőséget, majd adja meg a kedvencek ikonhoz korábban létrehozott HTML-karakterláncot. 
+1. A jobb oldali panelen a **Metacímkék** területen válassza a **Hozzáadás** lehetőséget, majd adja meg a kedvencek ikonhoz korábban létrehozott HTML-karakterláncot. 
 1. Válassza a **Szerkesztés befejezése** parancsot, majd a **Közzététel** elemet a töredék közzétételhez.
 
 ## <a name="add-the-metatag-fragment-to-the-html-head-section-of-your-pages"></a>A metacímke töredékének hozzáadása az oldalak HTML-fejléc szakaszához
@@ -86,12 +91,11 @@ Ha megtekinti azon lapok előnézetét, amelyek azon a sablonon alapulnak, amely
 
 [A CSS felülíró fájljainak használata](css-override-files.md)
 
+[Üdvözlő üzenet hozzáadása](add-welcome-message.md)
+
 [Szerzői jogi értesítés hozzáadása](add-copyright-notice.md)
 
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
 
 [Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához](add-telemetry.md)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

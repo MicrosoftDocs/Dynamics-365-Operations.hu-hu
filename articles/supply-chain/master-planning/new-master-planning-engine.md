@@ -2,13 +2,16 @@
 title: Áttelepítés az alaptervezéshez használatos Tervezési optimalizálásra
 description: Ez a témakör az új beépített tervezési motorral, a tervezési optimalizálással és a meglévő motorból történő átállítással kapcsolatban tartalmaz tájékoztatást.
 author: ChristianRytt
+manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: ''
 ms.author: crytt
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8d3edeefca2e2194a8d5484afbfabf2091da4a1c1538d238351a5d389177ccfd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 94e5668da45c524ed9ab9eef10b40d0fb5336a65
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728579"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4645996"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Áttelepítés az alaptervezéshez használatos Tervezési optimalizálásra
 
@@ -63,12 +66,8 @@ Jelenleg a Tervezési optimalizálás áttelepítési kivételei csak akkor rele
 
 A szükséges szolgáltatások elérhetővé válása után a Microsoft türelmi időszakot ad meg, amíg a kivétel lejár. A környezet adminisztrátorát tájékoztatni kell a szükséges szolgáltatások elérhetővé válásakor és a türelmi időszak indulásakor.
 
-Az alábbi folyamatábra összefoglalja a témakörben található információkat, így gyorsan ki tudja találni, hogy kivételt kér-e. Ha kivételt kell kérnie, töltse ki és küldje el a [Tervezési optimalizálás áttelepítése és kivétel kérdőívet](https://go.microsoft.com/fwlink/?linkid=2144962).
-
-![Kivétel folyamatábra.](media/exception-diagram.png "Kivétel folyamatábra")
-
 > [!NOTE]
-> Kivételt csak olyan bérlők esetében lehet kérelmezni, akik jelenleg tartalmaznak vagy tartalmazni fognak éles környezetet, olyan bérlők esetén nem, akik csak tesztkörnyezetben vannak. Ha egy szolgáltatott infrastruktúra (IaaS) elvű tesztkörnyezetében le kell tiltania a Tervezési optimalizálás kivételi hibáját, futtassa a [tesztkörnyezetekben](#faq-sandbox) nyújtott SQL-lekérdezést.
+> Csak termelési környezetek esetében kérhet kivételt, tesztkörnyezetek esetében nem. Ha egy szolgáltatott infrastruktúra (IaaS) elvű tesztkörnyezetében le kell tiltania a Tervezési optimalizálás kivételi hibáját, futtassa a [tesztkörnyezetekben](#faq-sandbox) nyújtott SQL-lekérdezést.
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 
@@ -117,6 +116,3 @@ Az alaptervezés futtatásakor a következő hibaüzenet jelenik meg a 10.0.16-o
 > Töltse ki a következő kérdőívet a kezdéshez, illetve a szükséges, kérelmezzen kivételt a Tervezési optimalizálásra való átállítás alól.
 
 **Válasz:** Nem, az alaptervezés nem zárolt. Az alaptervezés futtatása sikeresen befejeződött, és az eredményt a megszokott módon lehet használni. Ha azonban a jövőbeli alaptervezés során nem szeretné látni ezt a hibaüzenetet, akkor vagy azonnal át kell telepítenie a rendszerét a Tervezési optimalizálásra, vagy kivételt kell kérnie a hibaüzenetben szereplő hivatkozás használatával.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

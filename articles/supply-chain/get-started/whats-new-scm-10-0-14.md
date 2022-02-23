@@ -2,24 +2,27 @@
 title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management szolgáltatásban – 10.0.14. (2020. október)
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.14 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
+manager: tfehr
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fc9b8d9b6c3ef2980e7b676e6c85e3372db8cdd601f25a2b696106991ae40a59
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 584ea00c64df5e31d47e40aa32d7b266ff842de6
+ms.sourcegitcommit: 4e55bd178e315dfa132ec77fe705d68c68460b44
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739083"
+ms.lasthandoff: 10/19/2020
+ms.locfileid: "4429955"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10014-november-2020"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.14 alkalmazásban (2020. november)
 
@@ -33,7 +36,7 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.14 változa
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a verzió tartalmaz egy frissített platformot és általános fejlesztéseket, de nem tartalmaz a Supply Chain Management alkalmazással kapcsolatos új funkciókat. Az érkező funkciókkal kapcsolatos további tudnivalókat lásd a [Kiadási tervek](/dynamics365/release-plans/) webhely.
+Ez a verzió tartalmaz egy frissített platformot és általános fejlesztéseket, de nem tartalmaz a Supply Chain Management alkalmazással kapcsolatos új funkciókat. Az érkező funkciókkal kapcsolatos további tudnivalókat lásd a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhely.
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -49,7 +52,7 @@ Ha további tájékoztatást szeretne kapni a 10.0.14 részét képező frissít
 
 Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre?
 
-Lásd: [Dynamics 365: 2020-as 2. frissítési hullám tervét](/dynamics365-release-plan/2020wave2/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
+Lásd: [Dynamics 365: 2020-as 2. frissítési hullám tervét](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 
@@ -61,6 +64,3 @@ A [Dynamics 365 Supply Chain Management eltávolított vagy elavult szolgáltat�
 Mielőtt a termékből eltávolítunk egy szolgáltatást, egy eltávolítással kapcsolatos értesítést teszünk közzé a [Dynamics 365 Supply Chain Management eltávolított vagy elavult funkciói](removed-deprecated-features-scm-updates.md) témakörben 12 hónappal az eltávolítás előtt.
 
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

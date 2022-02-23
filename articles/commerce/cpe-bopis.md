@@ -1,25 +1,28 @@
 ---
 title: BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben
-description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni „online vásárlás, átvétel az áruházban” "(BOPIS) folyamatot a Microsoft Dynamics 365 Commerce-környezetben a kiépítés után.
-author: BrianShook
+description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni „online vásárlás, átvétel az áruházban” "(BOPIS) folyamatot a Microsoft Dynamics 365 Commerce értékelési környezetben a kiépítés után.
+author: rubendel
+manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
+ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2020-04-20
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1e0aabec196aa1ffd2e4d2f2691c03cf11326ee8
-ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
-ms.translationtype: MT
+ms.openlocfilehash: 62dabaa2610341cc8ad8e85812a317ac3123fcb1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7779794"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412759"
 ---
 # <a name="configure-bopis-in-a-dynamics-365-commerce-evaluation-environment"></a>BOPIS konfigurálása Dynamics 365 Commerce értékelési környezetben
 
@@ -29,7 +32,7 @@ Ez a témakör azt mutatja be, hogyan lehet konfigurálni „online vásárlás,
 
 ## <a name="prerequisite"></a>Előfeltételek
 
-A jelen témakörben ismertetett eljárásokat csak a Commerce értékelési környezet létesítését és konfigurálását követően hajtsa végre. A környezet kiépítésével és konfigurálásával kapcsolatban lásd [Dynamics 365 Commerce értékelési környezet kiépítése](provisioning-guide.md) és [Dynamics 365 Commerce értékelési környezet konfigurálása](./cpe-post-provisioning.md) című részeket.
+A jelen témakörben ismertetett eljárásokat csak a Commerce értékelési környezet létesítését és konfigurálását követően hajtsa végre. A környezet kiépítésével és konfigurálásával kapcsolatban lásd [Dynamics 365 Commerce értékelési környezet kiépítése](provisioning-guide.md) és [Dynamics 365 Commerce értékelési környezet konfigurálása](https://docs.microsoft.com/dynamics365/commerce/cpe-post-provisioning) című részeket.
 
 Miután kiépítette és konfigurálta a Commerce környezetet végponttól végpontig, ezzel a témakörrel engedélyezheti a BOPIS eseteket.
 
@@ -37,7 +40,7 @@ Miután kiépítette és konfigurálta a Commerce környezetet végponttól vég
 
 ### <a name="configure-modern-pos"></a>Modern POS konfigurálása
 
-A hitelkártyás fizetést tartalmazó BOPIS esetekhez hardverállomás szükséges. A hardverállomás be van építve a Windows és Android klienseken futó Modern POS-programokba. Ha Cloud POS vagy Modern POS szolgáltatást használ iOS rendszeren, a pénztár (POS) klient párosítani kell egy megosztott hardverállomással. Ez a témakör azt mutatja be, hogyan lehet konfigurálni a BOPIS-t Windows és Android klienseken. A megosztott hardverállomás beállításával kapcsolatos további tudnivalókért lásd: [Retail hardverállomás konfigurálása és telepítése](./retail-hardware-station-configuration-installation.md).
+A hitelkártyás fizetést tartalmazó BOPIS esetekhez hardverállomás szükséges. A hardverállomás be van építve a Windows és Android klienseken futó Modern POS-programokba. Ha Cloud POS vagy Modern POS szolgáltatást használ iOS rendszeren, a pénztár (POS) klient párosítani kell egy megosztott hardverállomással. Ez a témakör azt mutatja be, hogyan lehet konfigurálni a BOPIS-t Windows és Android klienseken. A megosztott hardverállomás beállításával kapcsolatos további tudnivalókért lásd: [Retail hardverállomás konfigurálása és telepítése](https://docs.microsoft.com/dynamics365/commerce/retail-hardware-station-configuration-installation).
 
 1. Ugorjon a **Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Pénztár beállítása \> Pénztárgépek** pontra.
 2. Válassza ki a **SANFRAN-5** pénztárgépet, majd a **Szerkesztés** lehetőséget.
@@ -54,7 +57,7 @@ A hitelkártyás fizetést tartalmazó BOPIS esetekhez hardverállomás szüksé
 4. Válassza a **Letöltés**, majd a **Retail Modern POS** elemet. 
 5. Amikor a **ModernPOSSetup.exe** fájl letöltése befejeződött, válassza a **Fájl megnyitása** lehetőséget.
 
-    ![Fájl megnyitása.](./dev-itpro/media/PAYMENTS/openfile.png)
+    ![Fájl megnyitása](./dev-itpro/media/PAYMENTS/openfile.png)
 
 6. Válassza a **Következő** elemet a telepítési folyamat végrehajtásához. Ha a telepítés befejeződött, válassza a **Bezárás** elemet.
 
@@ -87,7 +90,7 @@ A hitelkártyás fizetést tartalmazó BOPIS esetekhez hardverállomás szüksé
 
 ### <a name="create-a-storefront-order-for-in-store-pickup"></a>Üzleti megrendelés létrehozása üzletbeli felvételhez
 
-1. Nyissa meg az [E-kereskedelem indítása](./provisioning-guide.md#initialize-e-commerce) lépésben a környezet konfigurációja során megadott URL-címet.
+1. Nyissa meg az [E-kereskedelem indítása](https://docs.microsoft.com/dynamics365/commerce/provisioning-guide#initialize-e-commerce) lépésben a környezet konfigurációja során megadott URL-címet.
 2. Válasszon egy cikket, majd válassza a **Hozzáadás a kosárhoz** lehetőséget.
 3. A bevásárlótáska oldalon válassza az utoljára hozzáadott rendelési sorhoz tartozó **Cikk felvétele** lehetőséget.
 4. Az **Üzlet kiválasztása** párbeszédablakban adja meg a **San Francisco** értéket, majd válassza a **Keresés** gombot.
@@ -112,7 +115,7 @@ A hitelkártyás fizetést tartalmazó BOPIS esetekhez hardverállomás szüksé
 
 ### <a name="synchronize-online-orders-to-the-back-office"></a>Online rendelések szinkronizálása a háttérirodával
 
-Az online rendelések szinkronizálásának módjával kapcsolatos információkért lásd: [Online értékesítések és kifizetések feladása](./tasks/posting-online-sales-payments.md).
+Az online rendelések szinkronizálásának módjával kapcsolatos információkért lásd: [Online értékesítések és kifizetések feladása](https://docs.microsoft.com/dynamics365/commerce/tasks/posting-online-sales-payments).
 
 ### <a name="pick-up-an-order-in-the-store"></a>Megrendelés felvéle az üzletben
 
@@ -148,19 +151,16 @@ Minden általános probléma esetén első lépésként mindig tekintse át a Mo
 
 [Dynamics 365 Commerce értékelési környezet GYIK](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portál](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webhely](https://aka.ms/Dynamics365CommerceWebsite)
 
-[Adyen fizetési összekötő](./dev-itpro/adyen-connector.md?tabs=8-1-3)
+[Adyen fizetési összekötő](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
 
-[Online fizetési eszközök mentése az Adyen összekötővel](./dev-itpro/adyen-connector-listpi.md)
+[Online fizetési eszközök mentése az Adyen összekötővel](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector-listpi)
 
-[Többcsatornás fizetések áttekintése](./omni-channel-payments.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Többcsatornás fizetések áttekintése](https://docs.microsoft.com/dynamics365/commerce/omni-channel-payments)

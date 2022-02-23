@@ -2,9 +2,11 @@
 title: Commerce előlegszámlák (Kelet-Európa)
 description: Ez a témakör bemutatja az előzetes értesítések beállítását a Commerce megoldásban Kelet-Európa esetében.
 author: epopov
+manager: annbe
 ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -13,12 +15,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 4433dfad61aacb41aba9cf233515460410c7260304e8e3d690b015b193ffe774
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d27eec5ad2ec12d1f2e617fc3e182e2bbefa39a9
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718689"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017244"
 ---
 # <a name="advance-invoices-for-commerce-for-eastern-europe"></a>Commerce előlegszámlák (Kelet-Európa)
 
@@ -30,7 +32,7 @@ Lengyelország, Magyarország és Csehország számára egy vevőtől Point of S
 
 Az értékesítési rendelés számlájának feladásakor a végső dokumentumnak tartalmaznia kell az előlegszámlát, és bármely előleget meg kell jelölni.
 
-Értékesítési rendelések készítéskor a Kinnlevőségekből, manuálisan generálnia kell előlegszámlákat az itt ismertetettek szerint: [Előlegszámlák Kelet-Európa számára](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Ha értékesítési rendeléseket POS útján generál, a rendszer létrehozza és feladja az előlegszámlákat.
+Értékesítési rendelések készítéskor a Kinnlevőségekből, manuálisan generálnia kell előlegszámlákat az itt ismertetettek szerint: [Előlegszámlák Kelet-Európa számára](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Ha értékesítési rendeléseket POS útján generál, a rendszer létrehozza és feladja az előlegszámlákat.
 
 ## <a name="supported-scenarios"></a>Támogatott esetek
 
@@ -85,6 +87,3 @@ Kövesse az alábbi lépéseket ahhoz, hogy a Windows-nyomtatón, amely a hardve
 
 4. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra.
 5. Válassza ki az **1090** munkát és kattintson a **Futtatás most** lehetőségre.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

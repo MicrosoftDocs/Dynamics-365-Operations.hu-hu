@@ -2,28 +2,29 @@
 title: Átalakítás elszámolóárra – áttekintés
 description: Ezen cikk tájékoztatást nyújt arról, hogy hogyan lehet beállítani és futtatni az elszámolóár-átalakítást. Miután elvégezte az elszámolóárra való átalakítás előfeltételeit végre kell hajtania a felsorolt lépéseket.
 author: AndersGirke
+manager: tfehr
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostingVersion, InventStdCostConv
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "78212"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 78212
 ms.assetid: d601d9d5-1de3-4868-aff4-534dca01d624
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9796449bee4361b2b871af10d30341c2f0760ab1
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: e9874d3b44a687a60ea1fd26889af3d1b644f86a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982689"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429598"
 ---
 # <a name="standard-cost-conversion-overview"></a>Átalakítás elszámolóárra – áttekintés
 
@@ -94,12 +95,10 @@ A **Különbözetelemzési kimutatás** jelentés segítségével elemezheti az 
 -   Vizsgálja meg a visszadátumozott készletmozgásokat. A **Készletérték** jelentés segítségével megtekintheti az átalakítás után megadott visszadátumozott készletmozgásokat. A „Jelentés kezdő és záró dátumának meg kell fellelnie az átmenet kezdési dátumának és az átalakítást megelőző nap dátumának. A jelentés kiválasztási feltételeinek az átalakított cikkeket kell eredményül adnia. A jelentés megjeleníti azokat a készletmozgásokat, amelyeket az elszámolóárnál hoztak létre az átmeneti időszak során.
 
 
-## <a name="additional-resources"></a>További erőforrások
+<a name="additional-resources"></a>További erőforrások
+--------
 
 [Az elszámolóárra való átalakítás előfeltételei](prerequisites-standard-cost-conversion.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

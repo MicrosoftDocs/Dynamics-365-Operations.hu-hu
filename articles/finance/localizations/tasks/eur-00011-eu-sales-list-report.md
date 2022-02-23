@@ -2,23 +2,26 @@
 title: EUR-00011 EU értékesítési lista jelentés létrehozása.
 description: Ezzel az eljárás végigvezeti az EU értékesítési lista jelentésének létrehozásán.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  EUSalesList, EUSalesListSelection, SysQueryForm, SysLookup
 audience: Application User
 ms.reviewer: kfend
+ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1247f8268387b9084350883a3f56ff6e61bdb4d1b05aedfe4e886ccf97c166b9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 37f1a6e3bf39e16702d1367a325134ec84369945
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758772"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4408020"
 ---
 # <a name="eur-00011-generate-the-eu-sales-list-report"></a>EUR-00011 EU értékesítési lista jelentés létrehozása.
 
@@ -98,6 +101,3 @@ Ez az eljárás könyvelőknek szól.
 7. Kattintson az OK gombra.
 8. A Kiválasztása mezőben válassza a „Lezárt” lehetőséget.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -157,6 +157,3 @@ Kövesse az alábbi lépéseket egy állás létrehozásához.
 
 13. Ha aktiválni szeretné az állást, kattintson az **Aktiválás** parancsra.
 14. Az állás feladásához menjen a **Feladások** lehetőséghez, majd válassza ki a **Feladás most** lehetőséget a Talent Careers vagy a LinkedIn alatt.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

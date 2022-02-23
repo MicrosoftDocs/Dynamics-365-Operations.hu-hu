@@ -1,25 +1,27 @@
 ---
 title: Szállítói együttműködési mobil munkaterület
 description: Ez a témakör a Szállítói együttműködés mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület segítséget nyújt a szállítóinak a nekik jóváhagyásra elküldött beszerzési rendelések naprakészen tartásában. Emellett az új és módosított beszerzési rendelések és a kapcsolattartók adatait is megtekinthetik.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
-ms.author: henrikan
+ms.author: riluan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: efbd0afb0d84f76058b75126af200a9b10197559
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5cd8a2b2db7147aca6bdc29ba15d99a619ddb4f8
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577024"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5020836"
 ---
 # <a name="vendor-collaboration-mobile-workspace"></a>Szállítói együttműködési mobil munkaterület
 
@@ -57,7 +59,7 @@ A **Szállítói együttműködés** mobil munkaterület lehetővé teszi egy sz
 Az előfeltételek eltérnek a Microsoft Dynamics 365 szervezeténél megvalósított verziója szerint.
 
 ### <a name="prerequisites-if-you-use-supply-chain-management"></a>Előfeltételek a Supply Chain Management használatakor
-Amennyiben szervezete telepítette a Supply Chain Management rendszert, a rendszergazdának közzé kell tennie az **Szállítói együttműködés** mobil munkaterületet. Utasításokért lásd: [Mobil munkaterület közzététele](../../fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace.md).
+Amennyiben szervezete telepítette a Supply Chain Management rendszert, a rendszergazdának közzé kell tennie az **Szállítói együttműködés** mobil munkaterületet. Utasításokért lásd: [Mobil munkaterület közzététele](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Előfeltételek a Microsoft Dynamics 365 for Operations 1611-es verzió és Platform update 3 vagy újabb használatakor
 Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-es verziójánnak 3. vagy újabb Platformfrissítését, a rendszergazdának végre kell hajtania a következő előfeltételeket. 
@@ -77,7 +79,7 @@ Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-
 <td>A KB 3216943 egy bináris frissítés, amely a 3. platformfrissítés használata esetén szükséges. A KB végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket.
 <ol>
 <li>Töltse le a KB 3216943 csomagot a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.</li>
-<li>Telepítse a bináris frissítést, amely telepíthető csomagként jelenik meg. A telepíthető csomag alkalmazásával kapcsolatos tudnivalókat lásd: <a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Telepíthető csomag alkalmazása</a>.</li>
+<li>Telepítse a bináris frissítést, amely telepíthető csomagként jelenik meg. A telepíthető csomag alkalmazásával kapcsolatos tudnivalókat lásd: <a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Telepíthető csomag alkalmazása</a>.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -85,14 +87,14 @@ Amennyiben szervezete telepítette a Microsoft Dynamics 365 for Operations 1611-
 <td>Rendszergazda</td>
 <td>A KB 4013633 egy X++-frissítés vagy metaadat-gyorsjavítás, amely tartalmazza az <strong>Aktuális készlet</strong> mobil munkaterületet. A KB 4013633 végrehajtásához a rendszergazdának követnie kell az alábbi lépéseket.
 <ol>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs">A metaadatok gyorsjavítás letöltése az LCS-ről</a>.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Telepítse a metaadatok gyorsjavítását</a>.</li><li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/create-apply-deployable-package">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza a <strong>SCMMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
-<li><a href="/dynamics365/fin-ops-core/dev-itpro/deployment/apply-deployable-package-system">Alkalmazza telepíthető csomagot</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/download-hotfix-lcs.md">A metaadatok gyorsjavítás letöltése az LCS-ről</a>.</li>
+<li><a href="../../dev-itpro/migration-upgrade/install-metadata-hotfix-package.md">Telepítse a metaadatok gyorsjavítását</a>.</li><li><a href="../../dev-itpro/deployment/create-apply-deployable-package.md">Hozzon létre egy telepíthető csomagot</a>, amely tartalmazza a <strong>SCMMobile</strong> modellt, majd töltse fel a telepíthető csomagot az LCS-be.</li>
+<li><a href="../../dev-itpro/deployment/apply-deployable-package-system.md">Alkalmazza telepíthető csomagot</a>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>A <strong>Szállítói együttműködés</strong> munkaterületet közzé kell tenni.</td><td>Rendszergazda</td>
-<td>Lásd: <a href="/dynamics365/fin-ops-core/dev-itpro/mobile-apps/publish-mobile-workspace">Mobil munkaterület közzététele</a>.</td>
+<td>Lásd: <a href="../../dev-itpro/mobile-apps/publish-mobile-workspace.md">Mobil munkaterület közzététele</a>.</td>
 </tr>
 <tr class="even">
 <td>A szállítói felhasználónak hozzáférést kell biztosítania a szállítói együttműködési webes felületéhez a webes ügyfélen, és létre kell hoznia egy szállítói együttműködő felhasználót.</td><td>Beszerzési szakértők és a rendszergazda</td>
@@ -120,12 +122,12 @@ A Finance and Operations mobilalkalmazás letöltése és telepítése:
 4.  Az első bejelentkezéskor a rendszer kéri a felhasználónevet és jelszót. Adja meg a hitelesítési adatait.
 5.  A bejelentkezést követően megjelennek a vállalata rendelkezésre álló munkaterületek. Vegye figyelembe, hogy ha a rendszergazda később teszi közzé az új munkaterületet, akkor Önnek frissítenie kell a mobil munkaterületek listáját.
 
-    [![Frissítés húzással.](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
+    [![Lekérés frissítéshez](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Szállítói együttműködési mobil munkaterület használata
 Ha bejelöli a **Szállítói együttműködés** munkaterületet, megjelennek a következő lehetőségek.
 
-![Szállítói együttműködési mobil munkaterület.](./media/vendor-collaboration-mobile-app.png)
+![Szállítói együttműködési mobil munkaterület](./media/vendor-collaboration-mobile-app.png)
 
 A **Szállítói együttműködési** munkaterület a következő lapokat tartalmazza.
 
@@ -167,6 +169,3 @@ A rendelési soron végrehajtott összes módosítás megjelenik. A feltöltött
 
 ### <a name="open-confirmed-orders"></a>Visszaigazolt rendelések megnyitása
 Amikor a beszerzési rendelést megerősíti a vevő (ami azt jelenti, hogy a beszerzési rendelés **Megerősített** állapotra vált), megjelenik a nyitott és megerősített rendelésben. Mindaddig, amíg nincs regisztrálva fogadottként a vevő által, a listában marad.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

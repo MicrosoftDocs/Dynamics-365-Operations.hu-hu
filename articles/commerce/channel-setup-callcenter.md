@@ -2,26 +2,29 @@
 title: Hívásközpont csatorna beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet egy új hívásközpont csatornát létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: samjarawan
+manager: annbe
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3b21d5e57058fee5bb77beb6731c18967ed11cacc1925e44d2f7d8cdb26d7bcb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
+ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744534"
+ms.lasthandoff: 10/24/2020
+ms.locfileid: "4413014"
 ---
-# <a name="set-up-a-call-center-channel"></a>Hívásközponti csatorna beállítása
+# <a name="set-up-a-call-center-channel"></a>Hívásközpont csatorna beállítása
 
 
 [!include [banner](includes/banner.md)]
@@ -54,11 +57,11 @@ A Dynamics 365 Commerce szolgáltatásban a hívásközpont egyfajta kereskedelm
 
 A következő kép bemutatja egy új hívásközpont csatorna létrehozását.
 
-![Új hívásközponti csatorna.](media/channel-setup-callcenter-1.png)
+![Új hívásközponti csatorna](media/channel-setup-callcenter-1.png)
 
 A következő kép egy példát mutat a hívásközpont csatornára.
 
-![Hívásközponti csatorna – példa.](media/channel-setup-callcenter-2.png)
+![Hívásközponti csatorna – példa](media/channel-setup-callcenter-2.png)
 
 ## <a name="additional-channel-setup"></a>További csatornák beállítása
 
@@ -66,7 +69,7 @@ A hívásközpont csatorna beállításához szükséges további feladatok köz
 
 A következő képen láthatók a **Szállítási módok** és a **Fizetési módok** beállított lehetőségei a **Beállítás** lapon.
 
-![További hívásközpont-csatorna-beállítási műveletek.](media/channel-setup-callcenter-3.png)
+![További hívásközpont-csatorna-beállítási műveletek](media/channel-setup-callcenter-3.png)
 
 ### <a name="set-up-payment-methods"></a>Fizetési módok beállítása
 
@@ -81,7 +84,7 @@ A fizetési módok beállításához a csatornán támogatott valamennyi fizeté
 
 A következő kép egy példát mutat a készpénzfizetési módra.
 
-![Fizetési módok – példa.](media/channel-setup-callcenter-payments.png)
+![Fizetési módok – példa](media/channel-setup-callcenter-payments.png)
 
 ### <a name="set-up-modes-of-delivery"></a>Szállítási módok beállítása
 
@@ -97,7 +100,7 @@ Ha módosítani szeretné vagy hozzáadna egy szállítási módot, amelyet a h�
 
 A következő kép egy példát mutat a szállítási módra.
 
-![Szállítási módok beállítása.](media/channel-setup-retail-7.png)
+![Szállítási módok beállítása](media/channel-setup-retail-7.png)
 
 ### <a name="set-up-channel-users"></a>Csatornafelhasználók beállítása
 
@@ -133,6 +136,3 @@ Egy árcsoport beállításához hajtsa végre a következő műveleteket.
 [Csalással kapcsolatos figyelmeztetések beállítása és használata](set-up-fraud-alerts.md)
 
 [Folytonossági programok beállítása hívásközpontok számára](set-up-continuity-program.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

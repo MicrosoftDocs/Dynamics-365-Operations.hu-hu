@@ -1,27 +1,30 @@
 ---
 title: Alapértelmezett rendelési beállítások dimenziókhoz és termékváltozatokhoz
 description: Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét.
-author: johanhoffmann
+author: t-benebo
+manager: tfehr
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: benebotg
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 419e2b3b6bc5636aa75cf3ecc26e32ad22260a7e
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
-ms.translationtype: MT
+ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778107"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429811"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások
 
@@ -115,9 +118,9 @@ Bármely aktív termékdimenzióhoz vagy aktív cikkdimenziók kombinációjáho
 
 Tételezzük fel a következő termékpéldát:
 
-| Tétel                                                | Érték                                   |
+|                                                     |                                         |
 |-----------------------------------------------------|-----------------------------------------|
-| **Terméknév**                                    | Fotoelektromos érzékelő                    |
+| **Termék neve**                                    | Fotoelektromos érzékelő                    |
 | **Cikkszám**                                     | XW56                                    |
 | **Konfiguráció** (a fény típusának modellezéséhez használatos) | C1 látható piros fény, C2 infravörös fény |
 | **Verzió** | V1, V2, V3                              |
@@ -188,7 +191,7 @@ A szigorú ellenőrzés az **Alapértelmezett rendelési beállítások** lapjá
 
 ### <a name="enable-the-strict-validation-option"></a>A szigorú ellenőrzési beállítás engedélyezése
 
-Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés lapon ellenőrizhetik a funkció állapotát, és szükség esetén engedélyezhetik vagy [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) letilthatják azt. Itt a funkció a következőként szerepel:
+A szigorú ellenőrzési lehetőség használata előtt engedélyeznie kell a saját rendszerében. A rendszergazdák használhatják a [Funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) oldalt a funkció állapotának ellenőrzéséhez, és szükség esetén engedélyezéséhez. Itt a funkció a következőként szerepel:
 
 - **Modul** - *Termékinformáció-kezelés*
 - **Funkciónév** - *Szigorú ellenőrzés az alapértelmezett rendelési mennyiségeknél*
@@ -201,6 +204,3 @@ Az ellenőrzési lehetőség beállításához:
 1. Az **Általános** lapon állítsa az **Alapértelmezett rendelési mennyiségek ellenőrzése** lehetőséget a következő értékek valamelyikére:
     - **Szigorú** – Akkor válassza ezt a lehetőséget, ha azt szeretné, hogy az összes **Szokásos rendelési mennyiség** értékei a **Több** többszörösei legyenek minden egyes Gyorslapon (**Beszerzési rendelés**, **Készlet** és **Értékesítési rendelés**).
     - **Szokásos** – Akkor válassza ezt a lehetőséget, ha a szokásos ellenőrzést szeretné használni (amely ugyanúgy működik, mint amikor ez a funkció nincs engedélyezve).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

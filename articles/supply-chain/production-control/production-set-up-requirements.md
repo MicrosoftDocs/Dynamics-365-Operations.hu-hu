@@ -2,13 +2,16 @@
 title: A termelésbeállítás követelményei
 description: Ez a cikk tájékoztatást ad a beállítási követelményekről a Gyártásvezérlés használatba vétele előtt.
 author: johanhoffmann
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdParameters, RouteOpr, RouteOprTable, WorkCalendarTable, WorkTimeTable, WrkCtrTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 55561
 ms.assetid: 1953059f-478d-4706-b461-25b89ace5fc3
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bfde8b40927ceaa216878d58ef72c5d91e9ebe01
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
-ms.translationtype: MT
+ms.openlocfilehash: 0513392fe066e02f0789bcfadb0ee676559cb223
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968796"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429270"
 ---
 # <a name="production-setup-requirements"></a>A termelésbeállítás követelményei
 
@@ -39,7 +42,7 @@ Az egyéb modulokban található információkat be kell állítania, mielőtt d
 -   A cikkcsoportok meghatározása.
 -   A cikkcsoportok főkönyvi számláinak beállítása.
 -   A készletcikk-táblázat beállítása a készletgazdálkodásban.
--   Anyagjegyzékek és anyagjegyzék-verziók létrehozása a Termékinformáció-kezelésben.
+-   Anyagjegyzékek (AJ) és az anyagjegyzék-verziók létrehozása a készletgazdálkodásban.
 
 ## <a name="required-calendar-and-resource-setup"></a>Kötelező naptár- és erőforrás beállítás
 Mielőtt használja a gyártásvezérlést nyissa meg a szervezeti adminisztrációt és hozzon létre és határozzon meg egy naptárat és műveleti erőforrásokat a következő sorrendben:
@@ -78,6 +81,3 @@ Ha útvonalakkal dolgozik, a műveleteket minden beállított termelési útvona
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

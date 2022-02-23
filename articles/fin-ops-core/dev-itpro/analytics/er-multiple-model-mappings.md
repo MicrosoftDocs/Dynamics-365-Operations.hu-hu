@@ -2,9 +2,11 @@
 title: Egyetlen modellgyökérhez tartozó több származtatott leképezés kezelése
 description: Ez a témakör bemutatja, hogyan lehet kezelni az egy modellgyökérhez konfigurált több származtatott leképezést.
 author: NickSelin
+manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERModelMappingTable
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10363371713bd5a882b41900249e7061afc577ba6473fdb3356a822c8e48f8f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3116fe98f499637b3bc7f243ed1b5094853caa7e
+ms.sourcegitcommit: 7cfe8931dd454e811a691f5118a4ecae7ba4b478
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743287"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "4826109"
 ---
 # <a name="manage-several-derived-mappings-for-a-single-model-root"></a>Egyetlen modellgyökérhez tartozó több származtatott leképezés kezelése
 
@@ -55,7 +57,7 @@ Ha a szabvány ER-konfigurációkat a Finance jelenlegi példányához szeretné
 2. A **Lokalizációs konfigurációk** oldalon, a **Konfigurációk** szakaszban, válassza ki a **Jelentéskészítési konfiguráció** csempét.
 3. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában bontsa ki a **Számlamodell** elemet.
 
-    ![A Konfigurációk oldalon importált konfigurációk áttekintése.](./media/er-multiple-model-mappings-image1.png)
+    ![A Konfigurációk oldalon importált konfigurációk áttekintése](./media/er-multiple-model-mappings-image1.png)
 
 4. Tekintse át a **Szabadszöveges számla (Excel)** formátumot:
 
@@ -66,7 +68,7 @@ Ha a szabvány ER-konfigurációkat a Finance jelenlegi példányához szeretné
     
        Az aktuális ER-formátum a **Számlamodell** **InvoiceCustomer** gyökérdefiníciójának használatára van beállítva. Amikor ezt a formátumot futtatja, és a **Modell** adatforrást hívja a rendszer, az **InvoiceCustomer** gyökérdefinícióhoz beállított modell-leképezést használja a rendszer az alkalmazásadatok eléréséhez és az adatmodell kitöltéséhez.
 
-        ![A modell-adatforrás áttekintése az Űrlaptervező oldalon.](./media/er-multiple-model-mappings-image2.png)
+        ![A modell-adatforrás áttekintése az Űrlaptervező oldalon](./media/er-multiple-model-mappings-image2.png)
 
     6. Zárja be a **Formátumtervező** lapot.
 
@@ -79,7 +81,7 @@ Ha a szabvány ER-konfigurációkat a Finance jelenlegi példányához szeretné
         + A **Vevői számla** modell-leképezés a **Számlamodell** **InvoiceCustomer** gyökérdefiníciójához van konfigurálva. Ezért a **Szabadszöveges számla (Excel)** ER-formátum futtatásakor ki lehet választani az erre az ER-konfigurációra vonatkozó **Vevői számla** modell-leképezést az alkalmazásadatok eléréséhez és az adatmodell kitöltéséhez.
         + A **Projektszámla** modell-leképezés a **Számlamodell** **InvoiceProject** gyökérdefiníciójához van konfigurálva. Ezért a **Projektszámla (Excel)** ER-formátum futtatásakor ki lehet választani az erre az ER-konfigurációra vonatkozó **Projektszámla** modell-leképezést az alkalmazásadatok eléréséhez és az adatmodell kitöltéséhez.
 
-        ![A Modell leképezése adatforráshoz oldalon található Számlamodell-leképezés.](./media/er-multiple-model-mappings-image3.png)
+        ![A Modell leképezése adatforráshoz oldalon található Számlamodell-leképezés](./media/er-multiple-model-mappings-image3.png)
 
     4. Zárja be a **Modell hozzárendelése adatforráshoz** lapot.
     5. A **Verziók** gyorslapon válassza a **Törlés** lehetőséget az ER-konfiguráció 240.175-ös vagy annál újabb verziói mindegyikének törléséhez.
@@ -90,7 +92,7 @@ Ha a szabvány ER-konfigurációkat a Finance jelenlegi példányához szeretné
     2. A Műveleti ablaktáblán kattintson a **Tervező** elemre.
     3. A **Modell hozzárendelése adatforráshoz** oldalon figyelje meg, hogy az aktuális ER-modell-leképezési konfiguráció tartalmazza az **InvoiceProject** modell-leképezést, és hogy ez a modell-leképezés a **Számlamodell** **InvoiceProject** gyökérdefiníciójára van konfigurálva. A **Projektszámla (Excel)** ER-formátum futtatásakor válassza ki az erre az ER-konfigurációra vonatkozó **InvoiceProject** modell-leképezést az alkalmazásadatok eléréséhez és az adatmodell kitöltéséhez.
 
-        ![A Modell leképezése adatforráshoz oldalon található Projektszámlamodell-leképezés.](./media/er-multiple-model-mappings-image4.png)
+        ![A Modell leképezése adatforráshoz oldalon található Projektszámlamodell-leképezés](./media/er-multiple-model-mappings-image4.png)
 
     4. Zárja be a **Modell hozzárendelése adatforráshoz** lapot.
     5. A **Verziók** gyorslapon válassza a **Törlés** lehetőséget az ER-konfiguráció 226.35-ös vagy annál újabb verziói mindegyikének törléséhez.
@@ -115,7 +117,7 @@ Ez a szakasz bemutatja a Microsoft által biztosított modellleképezések [test
 
 7. A Művelet panelen válassza a **Tervező** lehetőséget a konfiguráció modell-leképezésének ellenőrzéshez.
 
-    ![A Modell leképezése adatforráshoz oldalon található számlamodell-leképezések ellenőrzése.](./media/er-multiple-model-mappings-image5.png)
+    ![A Modell leképezése adatforráshoz oldalon található számlamodell-leképezések ellenőrzése](./media/er-multiple-model-mappings-image5.png)
 
     > [!TIP]
     > A tervezőben megnyithatja ennek az ER-konfigurációnak bármely ER-modell-leképezési összetevőjét, hogy konfigurálja az egyéni logikát. A további tudnivalókat lásd: [A modell-leképezési konfiguráció testreszabása](er-quick-start3-customize-report.md#customize-the-model-mapping-configuration).
@@ -126,7 +128,7 @@ Most már rendelkezik **Számlamodell-leképezés** és **Számlamodell-leképez
  
 > Egynél több modell-leképezés létezik a konfigurációkban (\<configuration names separated by commas\>) található „\<model name\> (\<root descriptor\>)” adatmodellhez. Állítsa be az egyik konfigurációt alapértelmezettként.
 
-![A formátum megnyitása szerkesztésre a Konfigurációk oldalon.](./media/er-multiple-model-mappings-image6.gif)
+![A formátum megnyitása szerkesztésre a Konfigurációk lapon](./media/er-multiple-model-mappings-image6.gif)
 
 ### <a name="customize-the-project-invoice-model-mapping-rdp-configuration"></a>A Projektszámlamodell-leképezés (RDP) konfiguráció testreszabása
 
@@ -138,7 +140,7 @@ Most már rendelkezik **Számlamodell-leképezés** és **Számlamodell-leképez
 6. A konfigurációs fában jelenleg kiválasztott **Projektszámlamodell-leképezés (Litware)** konfiguráció esetében állítsa a **Vázlat futtatása** beállítást **Igen** értékre.
 7. A Művelet panelen válassza a **Tervező** lehetőséget a konfiguráció modell-leképezésének ellenőrzéshez.
 
-    ![A Modell leképezése adatforráshoz oldalon található személyre szabott projektszámlamodell-leképezések ellenőrzése.](./media/er-multiple-model-mappings-image7.png)
+    ![A Modell leképezése adatforráshoz oldalon található személyre szabott projektszámlamodell-leképezések ellenőrzése](./media/er-multiple-model-mappings-image7.png)
 
 8. Zárja be a **Modell hozzárendelése adatforráshoz** lapot.
 
@@ -149,7 +151,7 @@ Most már rendelkezik **Számlamodell-leképezés**, **Projektszámlamodell-lek�
 1. A **Konfigurációk** oldalon, a bal oldali panelen található konfigurációk fájában válassza a **Számlamodell-leképezés (Litware)** elemet.
 2. Állítsa az **Alapértelmezett a modell-hozzárendeléshez** beállítást **Igen** értékre.
 
-    ![A modell-leképezés beállítása alapértelmezett modell-leképezésként a Konfigurációk oldalon.](./media/er-multiple-model-mappings-image8.png)
+    ![A modell-leképezés beállítása alapértelmezett modell-leképezésként a Konfigurációk lapon](./media/er-multiple-model-mappings-image8.png)
 
     Emiatt a beállítás miatt a **Vevői számla másolata** modell-leképezés kerül használatram amikor a **Szabadszöveges számla (Excel)** modellt futtatja, illetve annak szerkesztése vagy ellenőrzése esetén. A **Számlamodell-leképezés** konfiguráció **Vevői számla** modell-leképezését a rendszer figyelmen kívül hagyja.
 
@@ -167,7 +169,7 @@ Most már rendelkezik **Számlamodell-leképezés**, **Projektszámlamodell-lek�
 5. A **Modell leképezése adatforráshoz** oldalon válassza a **Szerkesztés** lehetőséget a lap szükség szerinti szerkeszthetővé tételéhez.
 6. Válassza ki a **Projektszámla másolata** modell-leképezést, majd jelölje be hozzá a **Törölve** jelölőnégyzetet.
 
-    ![A modell-leképezés beállítása virtuálisan töröltként a Modell leképezése adatforráshoz oldalon.](./media/er-multiple-model-mappings-image9.png)
+    ![A modell-leképezés beállítása virtuálisan töröltként a Modell leképezése adatforráshoz oldalon](./media/er-multiple-model-mappings-image9.png)
 
     E beállítás miatt a rendszer úgy kezeli a **Számlamodell-leképezés (Litware)** konfigurációt, mintha nem rendelkezne modell-leképezéssel az **InvoiceProject** gyökérdefinícióhoz. Alapértelmezés szerint a rendszer az **InvoiceProject másolat** modell-leképezést adja ki. Alapértelmezésként az ezt a modell-leképezést tartalmazó **Projektszámlamodell-leképezés (Litware)** kerül alapértelmezet konfigurációként megjelölésre. Mivel ez az alapértelmezett beállítás, magasabb prioritást élvez, mint a **Projektszámlamodell-leképezés (RDP)** konfigurációból származó **InvoiceProject** modell-leképezés.
 
@@ -180,6 +182,3 @@ A **Projektszámlamodell-leképezés (Litware)** konfiguráció **InvoiceProject
 - [ER modell-leképezés kezelése külön ER-konfigurációkban](./tasks/er-manage-model-mapping-configurations-july-2017.md)
 - [Országkörnyezet-függő ER-modell-leképezések konfigurálása](er-country-dependent-model-mapping.md)
 - [Elektronikus jelentéstételi keretrendszer API-módosításai](er-apis-app10-0-11.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

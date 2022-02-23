@@ -2,9 +2,11 @@
 title: Áfajelentések Magyarországról
 description: Ez a témakör az áfabevallásra vonatkozó információkkal és a tételes áfakimutatás-jelentésekkel kapcsolatos információkat tartalmazza
 author: anasyash
+manager: tfehr
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -13,12 +15,12 @@ ms.search.region: Hungary
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 07f0a658a3b44a554ffe7a2d1fb37c6670fa0459eef394dfefc2c854e7867480
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 27ce1105079a0a849bf2962c8e11847fa3c4dc0a
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774228"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4962716"
 ---
 # <a name="sales-tax-reports-for-hungary"></a>Áfajelentések Magyarországról
 
@@ -62,7 +64,7 @@ Ez a jelentés az egyes partnerekre vonatkozóan is tartalmazza ugyanazokat az i
 1. Nyissa meg **Adó** \> **Időszakos feladatok** \> **Áfajelentés** lehetőséget.
 2. Az **Áfajelentés** lap felső részén állítsa be a **Dátum** és **Kiegyenlítési időszak** mezőket. A rács az áfajelentéshez rendelkezésre álló kiegyenlítési időszakokat jeleníti meg.
 
-    ![Áfabevallási oldal.](media/HU-sales-tax-reports-1.png)
+    ![Áfabevallási oldal](media/HU-sales-tax-reports-1.png)
 
 3. Válassza ki a kívánt kiegyenlítési időszak sorát, majd válassza a **Jelentés létrehozása** lehetőséget.
 4. Az **Áfabevallásra vonatkozó információk** párbeszédpanelen a következő mezőket állítsa be.
@@ -211,6 +213,3 @@ A **Tételes áfakimutatás** jelentés a következő adatokat tartalmazza:
 
 Ebben a táblában a 102-es sor tartalmazza az értékesítési rendelést, a 103-as sor az értékesítési rendelés jóváírását, a 105-ös sor pedig két szállítói számlát.
 A többi szakasz az egyes partnerekre vonatkozóan is tartalmazza ugyanazokat az információkat, valamint az egyes cikkek számláinak listáját.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

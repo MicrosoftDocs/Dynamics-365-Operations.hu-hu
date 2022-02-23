@@ -143,6 +143,3 @@ A frissített leképezéseknek az alábbiak szerint kell kinézniük.
 
 ![Nem mezőtranszformáció](./media/WorkerTransform.png)
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

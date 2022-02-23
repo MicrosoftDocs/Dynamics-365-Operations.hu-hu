@@ -1,35 +1,33 @@
 ---
 title: Dolgozók juttatásainak felvétele és eltávolítása
-description: Ez az eljárás bemutatja, hogyan lehet egyetlen munkavállalót egy vagy több juttatásra, valamint több munkavállalót egy juttatásra beíratni.
-author: twheeloc
-ms.date: 08/23/2021
+description: Ez az eljárás bemutatja, hogyan lehet egyetlen dolgozót besorolni egy vagy több juttatáshoz, valamint több dolgozó egyetlen juttatáshoz.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmWorker, HcmWorkerEnrollment, HcmBenefitByEligibilityLookup, HcmMassBenefitEnrollment, HcmBenefitLookup, HcmMassBenefitEnrollmentResults, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: 1b99db1e480ea4a53d2bda609eb08105509d95f4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 36fd724ff27cbb646f3f8a35ca1b30dc86a5afe4
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065376"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418768"
 ---
 # <a name="enroll-and-remove-benefits-from-workers"></a>Dolgozók juttatásainak felvétele és eltávolítása
 
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
-
-Ez az eljárás bemutatja, hogyan lehet egyetlen munkavállalót egy vagy több juttatásra, valamint több munkavállalót egy juttatásra beíratni. Ez az eljárás az USMF bemutatócéget használja.
+Ez az eljárás bemutatja, hogyan lehet egyetlen dolgozót besorolni egy vagy több juttatáshoz, valamint több dolgozó egyetlen juttatáshoz. Ez az eljárás az USMF bemutatócéget használja.
 
 
 ## <a name="enroll-a-single-worker-in-benefits"></a>Egyetlen munkavállaló felvétele juttatási programba
@@ -60,6 +58,3 @@ Ez az eljárás bemutatja, hogyan lehet egyetlen munkavállalót egy vagy több 
 14. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 15. Ezen az oldalon megtekinthető, hogy mely alkalmazottakat lettek besorolva a juttatáshoz, illetve azokat is, akik nem lettek besorolva.
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

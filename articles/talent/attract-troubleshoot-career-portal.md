@@ -72,5 +72,3 @@ Rendelje hozzá a Talent felhasználói szerepkört a Talent kapcsolati csapatho
 
    1. Jelentkezzen be a karrierportálra egy új böngészőablakból.
    2. Pályázzon állásra a karrierportálról. 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

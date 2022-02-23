@@ -1,10 +1,12 @@
 ---
 title: Beszerzési szerződések
 description: A cikk beszerzési szerződésekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési szerződést olyan megállapodás, amely egy szevezetet arra kötelez, hogy több beszerzési rendelés használatával egy adott mennyiségnek vagy összegnek megfelelő terméket vásároljon. Ezen kötelezettségvállalás ellenében a vevő különleges árakat és engedményeket kaphat.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4911bd891c081892e52bda4bcc87984b3fb189b2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570489"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5017187"
 ---
 # <a name="purchase-agreements"></a>Beszerzési szerződések
 
@@ -102,13 +104,12 @@ Ha vállalatközi beszerzési rendelést hoz létre, amely az egyik jogi személ
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Beszerzési szerződés pénzügyi dimenziói
 Pénzügyi dimenziókat átmásolhat beszerzési szerződések fejlécébe vagy egyedi soraiba is. Ha módosítja a dimenziókat a szerződés-fejlécben, vagy szerződéssorokban, akkor a módosítás nem lesz hatással egy kiadott rendelésre sem, de hatással lesz az új rendelésekre.
 
-## <a name="additional-resources"></a>További erőforrások
+<a name="additional-resources"></a>További erőforrások
+--------
 
-- [Beszerzési szerződés létrehozása](tasks/create-purchase-agreement.md)
-- [Beszerzési megállapodás alkalmazása beszerzési rendelés létrehozásakor](tasks/create-purchase-release-order-purchase-agreement.md)
+[Beszerzési szerződés létrehozása](tasks/create-purchase-agreement.md)
+
+[Beszerzésirendelés-kiadás létrehozása beszerzési szerződésből](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

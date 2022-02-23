@@ -2,9 +2,11 @@
 title: Kiterjesztett garancia létrehozása és konfigurálása
 description: Ez a témakör a kiterjesztett garanciával foglalkozik, és bemutatja, hogy hogyan lehet ezeket létrehozni és konfigurálni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: sijoshi
+manager: annbe
 ms.date: 06/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -15,14 +17,14 @@ ms.search.industry: ''
 ms.author: sijoshi
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 772dc1fdda7c34448ffa946237f717e657df6d83d8fda9336049e79d19ed1af0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 411895763cc282766b5a668208f20c72496059cd
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745380"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965116"
 ---
-# <a name="create-and-configure-extended-warranties"></a>Kiterjesztett garanciák létrehozása és konfigurálása
+# <a name="create-and-configure-extended-warranties"></a>Kiterjesztett garancia létrehozása és konfigurálása
 
 [!include [banner](includes/banner.md)]
 
@@ -81,7 +83,7 @@ A garanciacikk létrehozásához a Commerce rendszerben hajtsa végre az alábbi
 
     Ha például két éves a garancia van, akkor az **Időegység** mezőt **Év(ek)** értékre, míg az **Időtartam** mezőt **2** értékre állítsa. Azt is megteheti, hogy az **Időegység** mezőt **Hónap(ok)** értékre állítja, és az **Időtartam** mezőt **24** értékre állítja , ahogy az a következő ábrán látható.
 
-    ![Egy garanciacikk termékazonosító lapja.](./media/ew-time-properties.png)
+    ![Egy garanciacikk termékazonosító lapja](./media/ew-time-properties.png)
 
 1. A garanciacikk mentéséhez válassza a **Mentés** parancsot.
 1. A garanciatermék kiadása a vállalatnak, hogy el lehessen azt adni. További információért lásd: [Kiskereskedelmi termékek beállítása](set-up-retail-products.md).
@@ -94,7 +96,7 @@ A garanciacikk létrehozásához a Commerce rendszerben hajtsa végre az alábbi
 
     A következő ábra például azt mutatja, hogy az **Ártartomány alapja** mező **Alapár** értékre van állítva , az **Alsó határ** mező értéke 500 dollár, és a **Felső határ** mező értéke 1000 dollár.
     
-    ![Egy garanciacikk kiadott-termékazonosító lapja.](./media/ew-release-product-details.png)
+    ![Egy garanciacikk kiadott-termékazonosító lapja](./media/ew-release-product-details.png)
 
 1. A garanciacikk hozzárendelése a csatornához, ahol az értékesítés történik. További információ: [Szortimentek beállítása](set-up-assortments.md).
 
@@ -161,11 +163,11 @@ Két pénztárművelet teszi lehetővé, hogy az értékesítési munkatársak v
 
 A következő ábra példát mutat be egy POS terminál lapjára, amelyen egy üzenet azt kérdezi, hogy hozzá szeretne-e adni egy garanciacikket az aktuálisan vásárolt garanciára jogosult cikkhez.
 
-![Példa egy garanciacikk hozzáadásával kapcsolatos üzenetre az aktuális vásárláshoz.](./media/ew-sell-warranty.png)
+![Példa egy garanciacikk hozzáadásával kapcsolatos üzenetre az aktuális vásárláshoz](./media/ew-sell-warranty.png)
 
 A következő ábra egy példát mutat be arra a funkcióra, amelyben garanciacikket lehet hozzáadni egy korábban vásárolt garanciára jogosult cikkhez.
 
-![Példa arra a funkcióra, amellyel garanciacikket adhat hozzá egy korábban értékesített garanciára jogosult cikkhez.](./media/ew-add-warranty-existing.png)
+![Példa arra a funkcióra, amellyel garanciacikket adhat hozzá egy korábban értékesített garanciára jogosult cikkhez](./media/ew-add-warranty-existing.png)
 
 ## <a name="process-warranty-transactions"></a>Garanciatranzakciók feldolgozása
 
@@ -236,6 +238,3 @@ A garancia egy olyan szolgáltatás, amely egy konkrét, egyedi termékekre vona
 [Szortimentek beállítása](set-up-assortments.md)
 
 [Számsorozatok áttekintése](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

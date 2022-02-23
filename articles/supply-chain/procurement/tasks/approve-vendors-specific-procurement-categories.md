@@ -1,24 +1,26 @@
 ---
 title: Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan
 description: Ez a témakör azt mutatja be, hogyan lehet jóváhagyni a Dynamics 365 Supply Chain Management megoldásban szállítókat az egyes beszerzési kategóriákhoz.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 07/30/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, DirPartyEcoResCategory, EcoResCategorySingleLookup, ProcCategoryHierarchyManagement
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a885ba924137c56583db9f81b34db9a20f33bc4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 159d918a4dd3b6502bc8ab411d0353545eb4fcba
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569433"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5016349"
 ---
 # <a name="approve-vendors-for-specific-procurement-categories"></a>Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan
 
@@ -41,6 +43,3 @@ Ez a témakör azt mutatja be, hogyan lehet jóváhagyni a Dynamics 365 Supply C
 13. Válassza a **Nem** lehetőséget a **Szállítók öröklése szülőkategóriától:** mezőben.
 14. Válassza az **Igen** lehetőséget a **Szállítók öröklése szülőkategóriától:** mezőben.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

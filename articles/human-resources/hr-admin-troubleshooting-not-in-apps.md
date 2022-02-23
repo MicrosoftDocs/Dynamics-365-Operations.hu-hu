@@ -1,34 +1,32 @@
 ---
 title: A Human Resources szolgáltatás nem jelenik meg a Microsoft Dynamics 365 alkalmazásai között
-description: Ez a téma elmagyarázza, mi a teendő, ha a Microsoft Dynamics 365 Human Resources nem szerepel a Microsoft Dynamics 365 alkalmazások között.
-author: twheeloc
-ms.date: 08/19/2021
+description: Ez a cikk bemutatja, mi a teendő, ha a vevő nem látja a Microsoft Dynamics 365 Human Resources alkalmazást a Microsoft Dynamics 365 alkalmazások között.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4bdbe6c4065a8266fd30a3b093743ded91524f6a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: cbf47b4673e1c97965bba7728e5669b7639c4d56
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069680"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418828"
 ---
-# <a name="human-resources-app-doesnt-appear-in-microsoft-dynamics-365-apps"></a>A humánerőforrás alkalmazás nem jelenik meg a Microsoft Dynamics 365 alkalmazások között
+# <a name="human-resources-doesnt-appear-in-microsoft-dynamics-365-apps"></a>A Human Resources szolgáltatás nem jelenik meg a Microsoft Dynamics 365 alkalmazásai között
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-**Probléma**
+**Kibocsátás**
 
 A vevő nem látja a Dynamics 365 Human Resources alkalmazást a Microsoft Dynamics 365-alkalmazások között.
 
@@ -42,11 +40,11 @@ A felhasználót hozzá kell adni a környezet Környezetkészítő szerepköré
 
 3. A **Biztonság** lapon a **Környezeti szerepkörök** lapon válassza a **Környezetkészítő** lehetőséget.
 
-    ![Környezeti szerepkörök lap.](media/environment-roles.png)
+    ![Környezeti szerepkörök lap](media/environment-roles.png)
 
 4. A **Felhasználók** lapon adja hozzá a felhasználót vagy a szervezetet.
 
-    ![Felhasználók lap.](media/environment-maker.png)
+    ![Felhasználók lap](media/environment-maker.png)
 
 5. Válassza a **Mentés** lehetőséget.
 
@@ -54,9 +52,6 @@ A felhasználót hozzá kell adni a környezet Környezetkészítő szerepköré
 
 7. Válassza a **Szinkronizálás** elemet a felhasználói alkalmazások frissítéséhez.
 
-    ![Szinkronizálás gomb.](media/get-more.png)
+    ![Szinkronizálás gomb](media/get-more.png)
 
     A szinkronizálás befejezése után a Human Resources szolgáltatás megjelenik a kezdőlapon.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

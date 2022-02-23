@@ -1,10 +1,12 @@
 ---
 title: Beszerzési rendelések jóváhagyása és megerősítése
 description: Ez a témakör ismerteti azokat az állapotokat, amiken keresztül megy a beszerzési rendelés létrehozás után, valamint a változáskezelés hatásait a beszerzési rendelésre.
-author: Henrikan
+author: RichardLuan
+manager: tfehr
 ms.date: 04/02/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchOrderInReview, PurchOrderApproved, PurchOrderInDraft, PurchOrderAssignedToMe, VendPurchOrderJournalListPage, PurchTableWorkflowDropDialog, VendPurchOrderJournal
 audience: Application User
@@ -13,15 +15,15 @@ ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: henrikan
+ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ae625950e62b2bf5ec092ccda414ee306c62d79
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: MT
+ms.openlocfilehash: eafce0be07ae21e5bc2db2cf5bb694a9d71a6269
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570537"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018445"
 ---
 # <a name="approve-and-confirm-purchase-orders"></a>Beszerzési rendelések jóváhagyása és megerősítése
 
@@ -41,8 +43,8 @@ Ha a változáskezelés engedélyezve van, a beszerzési rendelések 6 jóváhag
 | Jóváhagyási állapot | Leírás                                                                      | Változtatás kérése engedélyezve |
 |-----------------|----------------------------------------------------------------------------------|---------------------------|
 | Vázlat           | A beszerzési rendelés még csak vázlat, illetve nem lett benyújtva jóváhagyásra a beszerzési rendelés munkafolyamatában.     | Nem                        |
-| Ellenőrzés alatt       | A beszerzési rendelés el lett küldve jóváhagyásra a beszerzési rendelés munkafolyamatában. Jóváhagyásra vár.       | Nem                        |
-| Elutasítva        | A beszerzési rendelés el lett utasítva a jóváhagyási folyamat során.                                 | Nem                        |
+| Ellenőrzés alatt       | A beszerzési rendelés el lett küldve jóváhagyásra a beszerzési rendelés munkafolyamatában. Jóváhagyásra vár.       | Szám                        |
+| Elutasítva        | A beszerzési rendelés el lett utasítva a jóváhagyási folyamat során.                                 | Szám                        |
 | Engedélyezve        | A beszerzési rendelés jóvá lett hagyva.                                                             | Igen                       |
 | Visszaigazolva       | A beszerzési rendelés megerősítve. A beszerzési rendelés nem erősíthető meg, amíg jóvá nem hagyták.        | Igen                       |
 | Véglegesítve       | A beszerzési rendelés véglegesítve lett. Pénzügyileg lezárult, és már nem módosítható. | Nem                        |
@@ -83,7 +85,8 @@ Ha érvényteleníteni szeretné vonni a beszerzésirendelés-sorban szereplő t
 
 Ha egy beszerzési rendelés változáskezelés alatt van, akkor bármilyen változtatást, például a rendelés érvénytelenítését vagy a szállítás fennmaradó részét be kell nyújtani a munkafolyamat-rendszernek, és jóvá kell hagyni a folyamat befejezése előtt, és a készlettranzakciók frissíthetők érvénytelenítettre.
 
-## <a name="additional-resources"></a>További erőforrások
+<a name="additional-resources"></a>További erőforrások
+--------
 
 [Beszerzési rendelések áttekintése](purchase-order-overview.md)
 
@@ -95,6 +98,3 @@ Ha egy beszerzési rendelés változáskezelés alatt van, akkor bármilyen vál
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

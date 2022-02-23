@@ -2,151 +2,37 @@
 title: E-mail-sablonok létrehozása a tranzakciók eseményeihez
 description: Ez a témakör azt mutatja be, hogyan lehet létrehozni, feltölteni és konfigurálni a Microsoft Dynamics 365 Commerce tranzakciós eseményeihez tartozó e-mail-sablonokat.
 author: bicyclingfool
-ms.date: 12/10/2021
+manager: annbe
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4fd46ea161fb4441d94a9e7c7f7ffbfb245eb873
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
-ms.translationtype: MT
+ms.openlocfilehash: ea484bfc1e9b293c53d7293c50630c4955000131
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919501"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412774"
 ---
-# <a name="create-email-templates-for-transactional-events"></a>E-mail-sablonok létrehozása tranzakciós eseményekhez
+# <a name="create-email-templates-for-transactional-events"></a>E-mail-sablonok létrehozása a tranzakciók eseményeihez
 
 [!include [banner](includes/banner.md)]
 
-
 Ez a témakör azt mutatja be, hogyan lehet létrehozni, feltölteni és konfigurálni a Microsoft Dynamics 365 Commerce tranzakciós eseményeihez tartozó e-mail-sablonokat.
 
-A Dynamics 365 Commerce gyári megoldást kínál olyan e-mailek küldésére, amelyek figyelmeztetik az ügyfeleket a tranzakciós eseményekre. E-maileket lehet például küldeni a rendelés leadásakor, ha a rendelés készen áll a felvételre, vagy már leszállították. Ez a témakör a tranzakciós e-mailek küldésére használt e-mail-sablonok létrehozásához, feltöltéséhez és beállításához szükséges lépéseket mutatja be.
+## <a name="overview"></a>Áttekintés
 
-## <a name="notification-types"></a>Értesítési típusok
-
-Az értesítések konfigurálhatók arra, hogy értesítsék a vevőket e-mailben, ha a rendelés és a vevő életciklusának részeként bizonyos események történnek. Az értesítések konfigurálásához egy Commerce e-mail értesítési profil létrehozásával egy e-mail sablont kell leképeznie az értesítési típusra. További információt az e-mailes értesítési profilok beállításáról az [E-mailes értékesítési profil beállítása](email-notification-profiles.md) című témakörben talál.
-
-A Dynamics 365 Commerce következő értesítéstípusokat támogatja.
-
-### <a name="order-created"></a>Rendelés létrehozva
-
-A *rendelés létrehozva* értesítési típus akkor jelenik meg, amikor a Commerce Headquarters alkalmazásban új értékesítési rendelést hoznak létre.
-
-> [!NOTE]
-> A rendelés létrehozott értesítési típusa indul el Készpénzzel fizetett, azonnal átvett tranzakciókra, amelyek a pénztári terminálon következnek be. Ebben az esetben egy e-mailben küldött és/vagy nyomtatott nyugta jön létre helyette. A további tudnivalókat lásd: [E-mail nyugták küldése a Modern pénztárból (MPOS)](email-receipts.md).
-
-### <a name="order-confirmed"></a>Rendelés visszaigazolva
-
-A *rendelés megerősítve* értesítési típus akkor jelenik meg, amikor a Commerce központban rendelés-visszaigazolási dokumentumot hoznak létre egy értékesítési rendeléshez.
-
-### <a name="picking-completed"></a>Kitárolás befejezve
-
-A *kitárolás befejezve* értesítési típus akkor jelenik meg, ha egy rendelés kitárolási listája készként van megjelölve a Commerce központban.
-
-> [!NOTE]
-> A kitárolás befejezve értesítési típus nem aktiválódik, ha egy cikk kitárolásként van megjelölve egy POS terminálon.
-
-### <a name="packing-completed"></a>Csomagolás befejezve
-
-A *csomagolás befejezve* értesítési típus akkor jelenik meg, ha egy rendeléshez szállítólevél dokumentum jön létre Commerce központban egy POS terminálnál.
-
-A csomagolás befejeződött értesítéstípus a következő további e-mail helyőrzőket támogatja, hogy megkönnyítse a "rendelés felvételre kész" és rendeléskeresés funkciókat a tranzakciós e-mailekből.
-
-| Helyőrző neve    | Alkalmazás célja |
-| ------------------- | ------- |
-| `pickupstorename`     | Annak az üzletnek a neve, ahol a rendelés felvételre elérhető. |
-| `pickupstoreaddress`  | Annak az üzletnek a címe, ahol a rendelés felvételre elérhető. |
-| `pickupstorehourfrom` | A felvételi üzlet nyitási ideje. |
-| `pickupstorehourto`   | A felvételi üzlet zárásának időpontja. |
-| `pickupchannelid`     | A felvételi üzlet üzletcsatorna-azonosítója. |
-| `packingslipid`      | A rendelés csomagjegyzékének azonosítója, amely fel lesz véve. |
-| `confirmationid`      | A rendelés megerősítésének azonosítója, amely fel lesz véve. (Ezt az azonosítót nevezik csatornahivatkozás-azonosítónak.) |
-
-A vevői bejelentkezési és rendeléskeresési szolgáltatásokkal kapcsolatos további tudnivalókat lásd: [A földrajzi hely észlelés és az átirányítás beállítása](geo-detection-redirection.md) és [Rendelés keresésének engedélyezése vendég pénztárak részére](order-lookup-guest.md).
-
-### <a name="order-ready-for-pickup"></a>Átvételre kész rendelés
-
-A *rendelés felvételre kész* eseménytípus akkor indul, amikor egy rendelés csomagoltként van megjelölve, és a szállítás módja **Vevői felvétel** értékre van állítva egy vagy több rendelési sorban.
-
-> [!NOTE]
-> A felvételre kész rendelés értesítési típus avultatva lett a csomagolás befejezve értesítéstípus következtében. Ezt az értesítési típust a szállítási mód szabja testre.
-
-### <a name="order-shipped"></a>Rendelés leszállítva
-
-A *rendelés leszállítva* értesítési típusa akkor indul, ha a rendeléshez nem üzletben történő átvétel van számlázva.
-
-> [!NOTE]
-> A rendelés leszállítva értesítési típus avultatva lett a rendelés szállítva értesítéstípus következtében. Ezt az értesítési típust a szállítási mód szabja testre.
-
-### <a name="order-invoiced"></a>Rendelés számlázva
-
-A *rendelés számlázva* értesítési típus akkor jelenik meg, amikor egy rendelést számláznak a pénztárban vagy a Commerce központban.
-
-### <a name="issue-gift-card"></a>Ajándékutalvány kibocsátása
-
-Az *Ajándékutalvány kibocsátása* értesítéstípus akkor jelenik meg, amikor egy ajándékutalvány típusú terméket tartalmazó értékesítési rendelést számláznak.
-
-> [!NOTE]
-> A rendszer elküldi az ajándékutalvány kibocsátása e-mailt az ajándékutalvány címzettjének. Az ajándékutalvány címzettje a Commerce központ alkalmazásában van megadva, a **Csomagolás** lapon a **Sor részletei** alatt. Manuálisan vagy programozva is meg lehet adni.
-
-Az ajándékutalvány kibocsátása értesítési típus a következő további helyőrzőket támogatja.
-
-| Helyőrző neve      | Alkalmazás célja |
-| --------------------- | ------- |
-| `giftcardnumber`        | Az ajándékutalvány száma az ajándékutalvány-típus termékei esetében. |
-| `giftcardbalance`       | Az ajándékutalvány egyenlege az ajándékutalvány-típus termékei esetében. |
-| `giftcardmessage`       | Az ajándékutalvány üzenete az ajándékutalvány-típus termékei esetében. |
-| `giftcardpin`         | Az ajándékutalvány személyes azonosító száma (PIN) az ajándékutalvány-típus termékei esetében. (Ez a helyőrző a külső ajándékutalvány-kártyákra vonatkozik.) |
-| `giftcardexpiration`    | Az ajándékutalvány lejárati dátuma az ajándékutalvány-típus termékei esetében. (Ez a helyőrző a külső ajándékutalvány-kártyákra vonatkozik.) |
-| `giftcardrecipientname` | Az ajándékutalvány címzettjének neve az ajándékutalvány-típus termékei esetében. |
-| `giftcardbuyername`     | Az ajándékutalvány vásárlójának neve az ajándékutalvány-típus termékei esetében. |
-
-Az ajándékutalványokkal kapcsolatos további tudnivalókat lásd: [E-kereskedelmi digitális ajándékkártyák](digital-gift-cards.md) és [Külső ajándékutalványok támogatása](dev-itpro/gift-card.md).
-
-### <a name="order-cancellation"></a>Rendelés érvénytelenítése
-
-A *rendelés törölve* értesítési típus akkor jelenik meg, amikor egy rendelést törölnek a pénztárban vagy a Commerce központban.
-
-### <a name="customer-created"></a>Vevő létrehozva
-
-Az *ügyfél létrehozva* értesítési típus akkor jelenik meg, amikor a Commerce központ alkalmazásban új ügyfélentitást hoznak létre.
-
-### <a name="b2b-prospect-approved"></a>B2B potenciális vevő jóváhagyva
-
-A *B2B potenciális vevő jóváhagyva* értesítési típus akkor jelenik meg, ha egy potenciális vevő onboarding kérését jóváhagyják a Commerce központban. A B2B potenciális vevők jóváhagyásáról vagy elutasításáról a [Rendszergazda felhasználó beállítása új üzleti partnerhez](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner) rész tartalmaz további tájékoztatást. 
-
-A B2B potenciális vevő jóváhagyva értesítési típus a következő további helyőrzőket támogatja.
-
-| Helyőrző neve | Alkalmazás célja                                                      |
-| ---------------- | ------------------------------------------------------------ |
-| `firstname`       | A B2B potenciális vevőnek az alkalmazásban megadott keresztneve. |
-| `lastname`         | A B2B potenciális vevőnek az alkalmazásban megadott vezetékneve. |
-| `company`          | A jelentkező vállalatának az alkalmazásban megadott neve. |
-| `email`            | A potenciális vevőnek az alkalmazásban megadott e-mail-címe.   |
-| `zipcode`          | A potenciális vevő elsődleges címének postai irányítószáma. |
-| `comments`         | A potenciális vevő által az alkalmazásban megadott megjegyzés. |
-| `storename`        | Annak a csatornának a neve, amelyben a potenciális vevő létrejött. |
-| `storeurl`         | Alapértelmezés szerint üres. A helyőrző csak akkor használható, ha egyéni bővítményt hoznak létre. |
-
-### <a name="b2b-prospect-rejected"></a>B2B potenciális vevő elutasítva
-
-A *B2B potenciális vevő elutasítva* értesítési típus akkor jelenik meg, ha egy potenciális vevő onboarding kérését elutasítják a Commerce központban. A B2B potenciális vevők jóváhagyásáról vagy elutasításáról a [Rendszergazda felhasználó beállítása új üzleti partnerhez](b2b/manage-b2b-users.md#set-up-the-administrator-user-for-a-new-business-partner) rész tartalmaz további tájékoztatást. 
-
-A B2B potenciális vevő elutasítva értesítési típus a következő további helyőrzőket támogatja.
-
-| Helyőrző neve | Alkalmazás célja                                                      |
-| ---------------- | ------------------------------------------------------------ |
-| `firstname`        | A B2B potenciális vevőnek az alkalmazásban megadott keresztneve. |
-| `lastname`         | A B2B potenciális vevőnek az alkalmazásban megadott vezetékneve. |
-| `company`          | A jelentkező vállalatának az alkalmazásban megadott neve. |
+A(z) Dynamics 365 Commerce olyan e-mailek küldését teszi lehetővé, amelyek figyelmeztetik a vevőket a tranzakciós eseményekről (például egy megrendelés leadásáról, ha egy rendelés felvehető, vagy a rendelést leszállították). Ez a témakör a tranzakciós e-mailek küldésére használt e-mail-sablonok létrehozásához, feltöltéséhez és beállításához szükséges lépéseket mutatja be.
 
 ## <a name="create-an-email-template"></a>E-mail sablon létrehozása
 
@@ -154,15 +40,15 @@ Mielőtt egy konkrét tranzakciós eseményt hozzárendel egy e-mail-sablonhoz, 
 
 E-mail-sablon létrehozásához kövesse az alábbi lépéseket.
 
-1. A Commerce-központban válassza a Szervezet e-mail sablonjai elemet , amely a **Kiskereskedelem és kereskedelem \> Központ beállítása \> Szervezeti e-mail-sablonok** vagy **Szervezeti adminisztráció \> Beállítások \> Szervezeti e-mail-sablonok** helyen található.
+1. A Commerce-központban válassza a **Szervezet e-mail sablonjai** elemet , amely a **Kiskereskedelem és kereskedelem \> Központ beállítása \> Szervezeti e-mail sablonok** vagy **Szervezeti adminisztráció \> Beállítások \> Szervezeti e-mail-sablonok** helyen található.
 1. Válassza az **Új** lehetőséget.
 1. Az **Általános** lehetőség alatt állítsa be a következő mezőket:
 
-    - **E-mail azonosító** – Az e-mail azonosító a sablon egyedi azonosítója. Ez az az érték, amely akkor jelenik meg, amikor kiválaszt egy eseményhez leképezni kívánt sablont.
+    - **E-mail-azonosító** Az e-mail-azonosító egy sablon egyedi azonosítója, és az az érték, amely akkor jelenik meg, amikor kijelöl egy sablont az eseményhez való hozzárendeléshez.
     - **E-mail leírása** – Ezt a nem kötelező mezőt a sablon leírásának megadására használhatja. A megadott érték csak a Kereskedelmi központban jelenik meg.
     - **Feladó neve** – Az Ön által megadott név jelenik meg a legtöbb levelezőkliens „kezdő” mezőjében.
     - **Feladó e-mail-címe** – Adja meg az e-mail-címet, amelyet a sablon használatával küldött e-mailekhez kell használni.
-    - **Alapértelmezett nyelvkód** – Ez a mező adja meg az alapértelmezettként elküldött e-mailek lokalizált változatát, ha a sablont hivatkozó csatorna nem határoz meg nyelvet.
+    - **Alapértelmezett nyelvkód** – Ez a mező adja meg az alapértelmezettként elküldött e-mailek lokalizált változatát, ha a sablont hivatkozó csatorna nem szolgáltat nyelvet.
 
 1. Az **E-mail-üzenet tartalma** alatt válassza az **Új** lehetőséget.
 1. A **Nyelv** mezőbe írja be az e-mail-sablon nyelvét. Később több nyelvet és lokalizát sablont is hozzáadhat.
@@ -174,7 +60,7 @@ E-mail-sablon létrehozásához kövesse az alábbi lépéseket.
 Az e-mail-üzenet törzse HTML-ben szerkesztett. Bármilyen elrendezést, stílust és védjegyezést használhat, amit a HTML és a szövegközti stíluslapok (CSS) lehetővé tesznek. A képek akkor is használhatók, ha egy nyilvánosan elérhető webes végponton tárolja azokat. Kép hozzáadásához írja be a kép URL-címét az **src**-attribútumba, ami a HTML **&lt;img&gt;**-címkéjébe tartozik.
 
 > [!NOTE]
-> Az e-mail kliensek olyan elrendezési és stílusbeli korlátozásokat írnak elő, amelyekhez HTML-kiigazítás szükséges, és CSS amit az üzenet törzséhez használhat. Javasoljuk, hogy ismerkedjen meg a HTML létrehozásának legjobb gyakorlataival, amelyeket a legnépszerűbb e-mail kliensek támogatnak.
+> Az e-mail kliensek olyan elrendezési és stílusbeli korlátozásokat írnak elő, amelyekhez HTML-kiigazítás szükséges, és CSS amit az üzenet törzséhez használhat. Azt ajánljuk, hogy ismerkedjen meg a legjobb megoldásokkal, amelyek a legnépszerűbb levelezőprogramok által támogatott HTML-létrehozási eljárásokat jelentik.
 
 ## <a name="add-placeholders-to-the-email-message-body"></a>Helyőrzők hozzáadása az e-mail-üzenet törzséhez
 
@@ -193,78 +79,65 @@ Az e-mailek tartalmazhatnak olyan helyőrzőket, amelyeket a rendszer az e-mail 
 
 A következő helyőrzők az értékesítési rendelés szintjén megadott adatokat kérdezik le és jelenítik meg (szemben az értékesítési sor szintjével).
 
-| Helyőrző neve     | Alkalmazás célja                                                      |
-| -------------------- | ------------------------------------------------------------ |
-| `customername`         | A rendelést küldő vevő neve.               |
-| `customeraddress`      | A vevő címe.                                 |
-| `customeremailaddress` | A vevő által a pénztárnál megadott e-mail-cím.     |
-| `salesid`              | A rendelés értékesítési azonosítója.                                   |
-| `orderconfirmationid`  | A megrendelés létrehozásakor generált keresztcsatornás azonosító.   |
-| `channelid`            | Annak a kiskereskedelmi vagy online csatornának az azonosítója, amelyen keresztül a megrendelés leadásra került. |
-| `deliveryname`         | A szállítási címhez megadott név.         |
-| `deliveryaddress`      | A kiszállított rendelések szállítási címe.                     |
-| `deliverydate`         | A kiszállítás dátuma.                                           |
-| `shipdate`             | A szállítás dátuma.                                               |
-| `modeofdelivery`       | A rendelés szállítási módja.                              |
-| `ordernetamount`       | A rendelés teljes összege, mínusz a teljes adó.         |
-| `discount`            | A rendelés teljes engedménye.                            |
-| `charges`              | A rendelés teljes költsége.                             |
-| `tax`                  | A rendelést terhelő teljes adó.                                 |
-| `total`                | A rendelés teljes összege.                              |
-| `storename`            | Az üzlet neve, ahonnan a rendelést a vevő küldte.            |
-| `storeaddress`         | A rendelést küldő üzlet címe.              |
-| `storeopenfrom`        | A rendelést küldő üzlet nyitvatartási ideje.         |
-| `storeopento`          | A rendelést küldő üzlet zárási ideje.         |
-| `pickupstorename`      | Az üzlet neve, ahol a rendelést felveszik.\*   |
-| `pickupstoreaddress`   | Az üzlet címe, ahol a rendelést felveszik.\* |
-| `pickupopenstorefrom`  | Az üzlet nyitvatartási ideje, ahol a rendelést felveszik.\* |
-| `pickupopenstoreto`    | Az üzlet zárási ideje, ahol a rendelést felveszik.\* |
-| `pickupchannelid`     | A felvételi típusú szállítási módhoz megadott áruház csatornaazonosítója.\* |
-| `packingslipid`        | Annak a szállítólevélnek az azonosítója, amelyet a rendelés sorainak csomagolásakor generáltak.\* |
-
-\* Ezek a helyőrző elemek csak akkor adnak vissza adatokat, ha a **Rendelés átvételre kész** értesítés típushoz használják őket. 
+| Helyőrző neve    | Helyőrző értéke                                                |
+|---------------------|------------------------------------------------------------------|
+| customername        | A rendelést küldő vevő neve.                   |
+| salesId             | A rendelés értékesítési azonosítója.                                       |
+| deliveryaddress     | A kiszállított rendelések szállítási címe.                         |
+| customeraddress     | A vevő címe.                                     |
+| deliverydate        | A kiszállítás dátuma.                                               |
+| shipdate            | A szállítás dátuma.                                                   |
+| modeofdelivery      | A rendelés szállítási módja.                                  |
+| KÖLTSÉGEK             | A rendelés teljes költsége.                                 |
+| adó                 | A rendelést terhelő teljes adó.                                     |
+| összesen               | A rendelés teljes összege.                                  |
+| ordernetamount      | A rendelés teljes összege, mínusz a teljes adó.             |
+| engedmény            | A rendelés teljes engedménye.                                |
+| StoreName           | Az üzlet neve, ahonnan a rendelést a vevő küldte.                |
+| storeaddress        | A rendelést küldő üzlet címe.                  |
+| storeopenfrom       | A rendelést küldő üzlet nyitvatartási ideje.             |
+| storeopento         | A rendelést küldő üzlet zárási ideje.             |
+| pickupstorename     | Az üzlet neve, ahol a rendelést felveszik.         |
+| pickupstoreaddress  | Az üzlet címe, ahol a rendelést felveszik.      |
+| pickupopenstorefrom | Az üzlet nyitvatartási ideje, ahol a rendelést felveszik. |
+| pickupopenstoreto   | Az üzlet zárási ideje, ahol a rendelést felveszik. |
 
 ### <a name="order-line-placeholders-sales-line-level"></a>Rendelési sor helyőrzői (értékesítési sor szintje)
 
 A következő helyőrzők az értékesítési rendelés egyes termékeinek (sorainak) adatait kérdezik le és jelenítik meg.
 
-| Helyőrző neve               | Alkalmazás célja |
+| Helyőrző neve               | Helyőrző értéke |
 |--------------------------------|-------------------|
-| `productid`                      | <p>A termék azonosítója. Ez az azonosító figyelembe veszi a változatokat.</p><p><strong>Megjegyzés</strong>: Ezt a helyőrzőt már nem használják a `lineproductrecid` helyett.</p> |
-| `lineproductrecid`               | A termék azonosítója. Ez az azonosító figyelembe veszi a változatokat. Egyedileg azonosít egy tételt a változat szintjén. |
-| `lineitemid`                     | A termék termékszintű azonosítója. (Ez az azonosító nem veszi figyelembe a változatokat.) |
-| `lineproductvariantid`           | A termékváltozat azonosítója. |
-| `lineproductname`                | A termék neve. |
-| `lineproductdescription`         | A termék leírása. |
-| `linequantity`                   | A sorhoz rendelt egységek száma, valamint a mértékegység (például **db** vagy **pár**). |
-| `lineunit`                       | A sor mértékegysége. |
-| `linequantity_withoutunit`       | A sorhoz rendelt egységek száma a mértékegység nélkül. |
-| `linequantitypicked`             | A **PickOrder** esemény használatakor a kiválasztott egységek száma. Ellenkező esetben **0** (nulla). |
-| `linequantitypicked_withoutunit` | A **PickOrder** esemény használatakor a kiválasztott egységek száma a mértékegység nélkül. Ellenkező esetben **0** (nulla). |
-| `linequantitypacked`             | Amikor a **PackOrder** és a **Rendelés készen áll a felvételre** eseményeket használja, a csomagolt egységek száma. Ellenkező esetben **0** (nulla). |
-| `linequantitypacked_withoutuom`  | Amikor a **PackOrder** és a **Rendelés készen áll a felvételre** eseményeket használja, a csomagolt egységek száma a mértékegység nélkül. Ellenkező esetben **0** (nulla). |
-| `linequantityshipped`            | Mindig **0** kivéve bizonyos események alkalmazásakor a következő sorban leírtak szerint. |
-| `linequantityshipped_withoutuom` | A **ShipOrder** esemény használatakor a kiválasztott egységek száma a mértékegység nélkül. Ellenkező esetben **0** (nulla). |
-| `lineprice`                      | Az adott egység ára. |
-| `linenetamount`                  | A sor ára az egységek és az engedmények számának alkalmazása után. |
-| `linediscount`                   | Az adott egységhez tartozó engedmény. |
-| `lineshipdate`                   | A sor szállítási dátuma. |
-| `linedeliverydate`               | A sor kiszállítási dátuma. |
-| `linedeliverymode`               | A sor kiszállítási módja. |
-| `linedeliveryaddress`            | A sor kiszállítási címe. |
-| `linepickupdate`                 | A vevő által megadott átvételi dátum egy átvételi módot használó megrendelések esetében. |
-| `linepickuptimeslot`             | A vevő által megadott átvételi időintervallum egy átvételi módot használó megrendelések esetében. |
-| `giftcardnumber`                 | Az ajándékutalvány száma az ajándékutalvány-típus termékei esetében. |
-| `giftcardbalance`                | Az ajándékutalvány egyenlege az ajándékutalvány-típus termékei esetében. |
-| `giftcardmessage`                | Az ajándékutalvány üzenete az ajándékutalvány-típus termékei esetében. |
-| `giftcardpin`                    | Az ajándékutalvány PIN-kódja az ajándékutalvány-típus termékei esetében. (Ez a helyőrző a külső ajándékutalvány-kártyákra vonatkozik.) |
-| `giftcardexpiration`             | Az ajándékutalvány lejárati dátuma az ajándékutalvány-típus termékei esetében. (Ez a helyőrző a külső ajándékutalvány-kártyákra vonatkozik.) |
-| `giftcardrecipientname`          | Az ajándékutalvány címzettjének neve az ajándékutalvány-típus termékei esetében. |
-| `giftcardbuyername`              | Az ajándékutalvány vásárlójának neve az ajándékutalvány-típus termékei esetében. |
+| productid                      | A sor termékazonosítója. |
+| lineproductname                | A termék neve. |
+| lineproductdescription         | A termék leírása. |
+| linequantity                   | A sorhoz rendelt egységek száma, valamint a mértékegység (például **db** vagy **pár**). |
+| lineunit                       | A sor mértékegysége. |
+| linequantity_withoutunit       | A sorhoz rendelt egységek száma a mértékegység nélkül. |
+| linequantitypicked             | A **PickOrder** esemény használatakor a kiválasztott egységek száma. Ellenkező esetben **0** (nulla). |
+| linequantitypicked_withoutunit | A **PickOrder** esemény használatakor a kiválasztott egységek száma a mértékegység nélkül. Ellenkező esetben **0** (nulla). |
+| linequantitypacked             | Amikor a **PackOrder** és a **Rendelés készen áll a felvételre** eseményeket használja, a csomagolt egységek száma. Ellenkező esetben **0** (nulla). |
+| linequantitypacked_withoutuom  | Amikor a **PackOrder** és a **Rendelés készen áll a felvételre** eseményeket használja, a csomagolt egységek száma a mértékegység nélkül. Ellenkező esetben **0** (nulla). |
+| linequantityshipped            | Mindig **0** kivéve bizonyos események alkalmazásakor a következő sorban leírtak szerint. |
+| linequantityshipped_withoutuom | A **ShipOrder** esemény használatakor a kiválasztott egységek száma a mértékegység nélkül. Ellenkező esetben **0** (nulla). |
+| lineprice                      | Az adott egység ára. |
+| linenetamount                  | A sor ára az egységek és az engedmények számának alkalmazása után. |
+| linediscount                   | Az adott egységhez tartozó engedmény. |
+| lineshipdate                   | A sor szállítási dátuma. |
+| linedeliverydate               | A sor kiszállítási dátuma. |
+| linedeliverymode               | A sor kiszállítási módja. |
+| linedeliveryaddress            | A sor kiszállítási címe. |
+| giftcardnumber                 | Az ajándékutalvány száma az ajándékutalvány-típus termékei esetében. |
+| giftcardbalance                | Az ajándékutalvány egyenlege az ajándékutalvány-típus termékei esetében. |
+| giftcardmessage                | Az ajándékutalvány üzenete az ajándékutalvány-típus termékei esetében. |
+| giftcardpin                    | Az ajándékutalvány személyes azonosító száma (PIN) az ajándékutalvány-típus termékei esetében. (Ez a helyőrző a külső ajándékutalvány-kártyákra vonatkozik.) |
+| giftcardexpiration             | Az ajándékutalvány lejárati dátuma az ajándékutalvány-típus termékei esetében. (Ez a helyőrző a külső ajándékutalvány-kártyákra vonatkozik.) |
+| giftcardrecipientname          | Az ajándékutalvány címzettjének neve az ajándékutalvány-típus termékei esetében. |
+| giftcardbuyername              | Az ajándékutalvány vásárlójának neve az ajándékutalvány-típus termékei esetében. |
 
 ### <a name="format-of-order-line-placeholders-in-the-email-message-body"></a>Rendelési sor helyőrzőinek formátuma az e-mail üzenet törzsében
 
-Amikor az e-mail-üzenet törzsében létrehozza az egyes rendeléssorok HTML-jét, vegye körbe az ismétlődő HTML-blokkokat és a sorra vonatkozó helyőrzőkkel. A helyőrzők HTML-megjegyzéscímkékben vannak.
+Amikor az e-mail-üzenet törzsében létrehozza az egyes rendeléssorok HTML-jét, vegye körbe az ismétlődő HTML-blokkokat és a sorra vonatkozó helyőrzőket a HTML-megjegyzések címkéibe ágyazott különböző helyőrzőkkel.
 
 ```html
 <!--%tablebegin.salesline%-->
@@ -297,8 +170,11 @@ Amikor az e-mail-üzenet törzsében létrehozza az egyes rendeléssorok HTML-j�
 
 A kiskereskedelmi pénztárnál (POS) vásárló vevőknek e-mailben elküldhető a nyugtájuk. Az e-mailben küldendő nyugta sablonjának létrehozási lépései általában megegyeznek a más tranzakciós események sablonjainak létrehozási lépéseivel. A következő változtatások azonban kötelezőek:
 
-- A nyugta szövegét a **%message%** helyőrzővel lehet beilleszteni az e-mailbe. Ha biztosítani szeretné, hogy a nyugta törzse helyesen legyen megjelenítve, akkor a **%message%** helyőrzőt vegye körbe HTML **&lt;pre&gt;** és **&lt;/pre&gt;** címkékkel.
-- A **%receiptid%** helyőrző a nyugtaazonosítónak megfelelő QR-kód vagy vonalkód megjelenítésekor használható. (A QR-kódokat és a vonalkódokat egy külső szolgáltatás generálja dinamikusan és biztosítja.) Ha további tájékoztatást szeretne kapni arról, hogyan jeleníthet meg QR-kódot vagy vonalkódot egy e-mailben küldött nyugtán, lásd: [QR-kód vagy vonalkód hozzáadása a tranzakciós és bevételezési e-mailekhez](add-qr-code-barcode-email.md).
+- Az e-mail-sablon e-mail-azonosítójának **emailRecpt** értéknek kell lennie.
+- A nyugta szövegét a **%message%** helyőrzővel kell beilleszteni az e-mailbe. Ha biztosítani szeretné, hogy a nyugta törzse helyesen legyen megjelenítve, akkor a **%message%** helyőrzőt vegye körbe HTML **&lt;pre&gt;** és **&lt;/pre&gt;** címkékkel.
+- Az e-mail fejlécének és élőlábának HTML-jében lévő sortörések HTML **&lt;br /&gt;** címkékre alakulnak, így a nyugta törzse helyesen jelenik meg. Ha meg szeretné szüntetni a nyugták e-mailjeiben a nem kívánt függőleges helyet, távolítsa el a sortöréseket a HTML-fájl bármely olyan helyéről, ahol nem szükséges a függőleges hely.
+
+Az e-mail-nyugták konfigurálásával kapcsolatos további tudnivalókat lásd: [E-mail-nyugták beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts).
 
 ## <a name="upload-the-email-html"></a>Az e-mail-HTML feltöltése
 
@@ -324,9 +200,6 @@ A(z) Dynamics 365 Commerce e-mailjeinek konfigurálásával kapcsolatos további
 
 [E-mail konfigurálása és küldése](../fin-ops-core/fin-ops/organization-administration/configure-email.md)
 
-[E-mail nyugták beállítása](/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
+[E-mail nyugták beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-email-receipts)
 
 [E-mailes nyugták küldése a Modern POS szolgáltatásból ](email-receipts.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

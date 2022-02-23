@@ -2,9 +2,11 @@
 title: Rendszer által irányított fürtkitárolás
 description: Ez a témakör áttekintést nyújt a rendszer által fürtkitárolásról a Microsoft Dynamics 365 Supply Chain Management alkalmazásban.
 author: Mirzaab
+manager: tfehr
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkCluster, WHSClusterProfile
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2019-12-31
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 3c474705e5260f4be62bc59d8d1d84a1ba597b6f96eafd8f673cc110285fc597
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fa737f61bfd5bd71ba6d76e75e57c8e2d682cda3
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772352"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965677"
 ---
 # <a name="system-directed-cluster-picking"></a>Rendszer által irányított fürtkitárolás
 
@@ -204,6 +206,3 @@ A rendszer által irányított fürtkitárolás beállítása előtt alkalmas ki
 1. A mobileszköz utolsó lépés az, hogy a fürtöt a végleges helyre **Betároljuk**. Válassza ki az **OK** lehetőséget
     - Ha a betárolási művelet meg van erősítve, a fürt bezáródik és felbontásra kerül, a fürtprofilban lévő **Fürt felbontása ennél** mezőben beállított érték alapján. A munkaazonosítók szintén lezárásra kerülnek.
 1. A mobileszközön a „Fürt befejezve” üzenet jelenik meg.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

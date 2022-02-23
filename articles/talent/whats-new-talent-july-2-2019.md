@@ -55,6 +55,3 @@ A kiadás a Dynamics 365 Talent: Onboard apró hibáinak javításait is tartalm
 ## <a name="changes-in-core-hr"></a>A Core HR módosításai
 
 A kiadás a Dynamics 365 Talent: Core HR apró hibáinak javításait is tartalmazza.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

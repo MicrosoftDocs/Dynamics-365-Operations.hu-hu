@@ -2,9 +2,11 @@
 title: URl megnyitása a pénztárban
 description: Ez a témakör áttekintést nyújt a Dynamics 365 Commerce termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
 author: AamirAllaq
+manager: AnnBe
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -15,18 +17,18 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 0e02a08e5afd15fd9622495fd77f4dc01b85786bcffc222b5c979c82a59a6aab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e4ccb8e03d63a7bd1ab2d118d86633a8c6324d43
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714114"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965452"
 ---
 # <a name="open-url-in-pos"></a>URL megnyitása a pénztárban
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör leírja, hogyan konfigurálható egy gomb a Dynamics 365 Commerce pénztárban (POS) egy URL megnyitására. Ez a funkció nem igényli a kód testreszabását, és nem-fejlesztői szereppel rendelkező személy által konfigurálható. 
+Ez a témakör leírja, hogyan konfigurálható egy gomb a Retail pénztárban (POS) egy URL megnyitására. Ez a funkció nem igényli a kód testreszabását, és nem-fejlesztői szereppel rendelkező személy által konfigurálható. 
 
 Ez a funkció lehetővé teszi a pénztárban található gombok konfigurálását a gombrácstervező segítségével egy URL megnyitására. Jelenleg ez az alábbi konfigurációkban támogatott:
 
@@ -46,15 +48,15 @@ A webes URL pénztáron belül való megnyitása jelenleg csak a Modern POS on W
 
 Ez a funkció lehetővé teszi, hogy meghatározzon olyan nem webes URL-ket, amelyek natív alkalmazást nyitnak meg. Például megadhat olyan URL-protokollokat, mint a MailTo, SIP, IM, vagy MSTEAMS, amelyeket a fogadó eszközön a megfelelő natív alkalmazással lehet kezelni. A funkció engedélyezéséhez az URL-t konfigurálnia kell úgy, hogy a **Megnyitás új lapon** beállítás ki van választva.
 
-- Windows rendszert futtató számítógépekkel kapcsolatban tekintse át az [Exportálás vagy Importálás alapértelmezett alkalmazástársításai](/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) lehetőséget az alapértelmezett protokolltársítások kiválasztásához, ha a Telepítési lemezképek karbantartása és kezelése (DISM) rendszer használatával állítja be számítógépét.
-- Ha MDM-et használ, mint például Intune-t a Windows számítógépei kezeléséhez, tekintse át az [Irányelv CSP - ApplicationDefaults](/windows/client-management/mdm/policy-csp-applicationdefaults) részt.
-- Ha Ön fejlesztő, aki egyedi webhelyet épít, tekintse át az [Alapértelmezett alkalmazás indítása URI-hoz](/windows/uwp/launch-resume/launch-default-app) részt.
+- Windows rendszert futtató számítógépekkel kapcsolatban tekintse át az [Exportálás vagy Importálás alapértelmezett alkalmazástársításai](https://docs.microsoft.com/windows-hardware/manufacture/desktop/export-or-import-default-application-associations) lehetőséget az alapértelmezett protokolltársítások kiválasztásához, ha a Telepítési lemezképek karbantartása és kezelése (DISM) rendszer használatával állítja be számítógépét.
+- Ha MDM-et használ, mint például Intune-t a Windows számítógépei kezeléséhez, tekintse át az [Irányelv CSP - ApplicationDefaults](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationdefaults) részt.
+- Ha Ön fejlesztő, aki egyedi webhelyet épít, tekintse át az [Alapértelmezett alkalmazás indítása URI-hoz](https://docs.microsoft.com/windows/uwp/launch-resume/launch-default-app) részt.
 
 ## <a name="open-a-native-app-seamlessly"></a>Natív alkalmazás zökkenőmentes megnyitása
 
 A Windows, iOS és Android rendszerek lehetővé teszi az alkalmazások zökkenőmentesebb megnyitását, az alkalmazás-protokoll társítás alapján. Ha az alkalmazás még nincs beállítva, hogy kezelni tudja a webes böngészőből való megnyitást, akkor előfordulhat, hogy szüksége van egy fejlesztőre, aki ezt konfigurálja.
 
-- Windows esetén tekintse át az: [Alkalmazások engedélyezése alkalmazás URI-kezelőket használó webhelyeknek](/windows/uwp/launch-resume/web-to-app-linking) részt.
+- Windows esetén tekintse át az: [Alkalmazások engedélyezése alkalmazás URI-kezelőket használó webhelyeknek](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking) részt.
 - iOS esetén tekintse át az: [Univerzális hivatkozások fejlesztőknek](https://developer.apple.com/ios/universal-links/)részt.
 - Az Android esetén tekintse át [Az Android alkalmazáshivatkozások kezelése](https://developer.android.com/training/app-links/) részt.
 
@@ -80,6 +82,3 @@ Egy URL cím pénztárban való megnyitásának beállításához kövesse az al
 5. Műveletként válassza az **URL megnyitása** elemet.
 6. Adja meg az URL-t, amelyet használni szeretne.
 7. Állítsa be, hogy az URL-cím megnyitása új ablakban szeretné-e.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

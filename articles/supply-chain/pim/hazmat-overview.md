@@ -1,33 +1,37 @@
 ---
 title: Veszélyes anyagok áttekintése
 description: Ez a témakör áttekintést nyújt azokról a szolgáltatásokról, amelyek a termékadatok kezelése és a raktárkezelés során a veszélyes anyagok kezelésével és feldolgozásával kapcsolatosak.
-author: t-benebo
+author: dasani-madipalli
+manager: tfehr
 ms.date: 06/10/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: damadipa
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.dyn365.ops.version: Release 10.0.11
+ms.openlocfilehash: 34c0a19308bb5159faa9a4ab06bf65e58da0deb1
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986276"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429271"
 ---
 # <a name="hazardous-materials-overview"></a>Veszélyes anyagok áttekintése
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A szállítási és szállítmányozási előírásoknak való megfelelés érdekében azokat a szervezeteket, amelyeknek a veszélyes áruknak minősülő anyagokat szállítanak, további dokumentációt kell készíteniük a szállítmányokhoz. A veszélyes anyagok funkcióval a vevők a kiadott cikkekre vonatkozó adatokat tárolhatnak. Ezt az információt ezután felhasználhatja a szállítási dokumentáció előkészítésére. A veszélyes árukat szállító szervezetnek rendelkezniük kell saját folyamatokkal és eljárásokkal a szállítási folyamat kezeléséhez. A Microsoft Dynamics 365 Supply Chain Management csak egy eszköz, amely segítséget nyújt a szükséges dokumentumok előállításában.
 
 A következő ábra a veszélyes anyagok funkció beállításához és használatához szükséges lépéseket mutatja be.
 
-![A veszélyes anyagok funkció beállítása és használata.](media/hazmat-overview.png "A veszélyes anyagok funkció beállítása és használata")
+![A veszélyes anyagok funkció beállítása és használata](media/hazmat-overview.png "A veszélyes anyagok funkció beállítása és használata")
 
 A veszélyes anyagok funkció a Termékinformációk kezelésénél van beállítva, és olyan dokumentumokat biztosít, amelyek a Raktárkezelésen keresztül nyomtathatók. Ennek megfelelően túlnyomórészt a következő két fő területen tekinti át, állítja be és használja ennek a szolgáltatásnak a funkcióit:
 
@@ -58,6 +62,3 @@ A veszélyes anyagokra vonatkozó előírások és értékek beállításával, 
 ## <a name="warehouse-management"></a>Raktárkezelés
 
 Amikor szállítmányt készít a Raktárkezelés modulban, számos új jelentést nyomtathat, amelyek a Termékinformációk kezelése modulban beállított adatokat használják. A rendelkezésre álló jelentésekről és azok használatáról a [Veszélyes anyagokkal kapcsolatos lekérdezések és jelentések](hazmat-reports.md) című témakörben olvashat bővebben.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

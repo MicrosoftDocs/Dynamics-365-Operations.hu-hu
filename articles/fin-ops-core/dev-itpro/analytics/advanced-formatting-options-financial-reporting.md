@@ -1,10 +1,12 @@
 ---
 title: Speciális formázási beállítások a pénzügyi jelentésben
-description: Ez a témakör leírja a speciális formázási funkciókat, többek között a szűrőket, a korlátozásokat, a nem nyomtatási sorokat és a feltételes utasításokat a számításokban.
-author: panolte
+description: Pénzügyi jelentésről készült jelentés létrehozásakor további formázási funkciók érhetők el, többek között a dimenziók szűrői, oszlopok és jelentési egységek korlátozásai, a nem nyomtatható sorok és a számításokban szereplő IF/THEN/ELSE kimutatások.
+author: ryansandness
+manager: AnnBe
 ms.date: 04/26/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: e15869fdd598aeec7ef616f6d54593c7551cb906ab53763a64f4202473bcd926
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3508099dfa3c6671da8dddc9061f737a97e825ce
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6760126"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4683163"
 ---
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Speciális formázási beállítások a pénzügyi jelentésben
 
@@ -281,10 +283,10 @@ A jelentési fában egy számítás egyetlen jelentési egységére való korlá
 > [!NOTE]
 > Ennek a funkciónak a használatához jelentési fának társítva kell lennie a sordefinícióval.
 
-A számítási sor vonatkozhat egy számítási sorra vagy egy pénzügyi adatsorra. A számítást a rendszer rögzíti a sordefiníció **Kapcsolódó képletek/Sorok/Egységek** cellájába és a pénzügyi adat típusú korlátozásba. A számításnak feltételes számítást kell használnia, amely **IF \@Unit** szerkezettel kezdődik. Példa: IF @Unit(SALES) THEN @100 ELSE 0 Ez a számítás a jelentés minden oszlopának a 100. sorában szereplő összegre vonatkozik, de csak az ÉRTÉKESÍTÉSI (SALES) egység számára. Ha több egységnek is ÉRTÉKESÍTÉS (SALES) a neve, az összeg minden ilyen egységben megjelenik. Ezenkívül a 100. sor lehet pénzügyi adatokat tartalmazó sor, és meg lehet adni, hogy ne legyen nyomtatható. Ebben az esetben az összeget a rendszer nem jeleníti meg a fa összes egységében. Az összeget a jelentés egyetlen oszlopára is korlátozhatja, például a H oszlopra, úgy, hogy oszlopkorlátozást használ, melynek segítségével az érték a jelentésnek csak ebben az oszlopában lesz kinyomtatva. Felvehet **OR** kombinációkat is az **IF** kimutatásban. Példa: **IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100**. A következő módokon lehet megadni az egységet a számítási típus korlátozásában:
+A számítási sor vonatkozhat egy számítási sorra vagy egy pénzügyi adatsorra. A számítást a rendszer rögzíti a sordefiníció **Kapcsolódó képletek/Sorok/Egységek** cellájába és a pénzügyi adat típusú korlátozásba. A számításnak feltételes számítást kell használnia, amely **IF @Unit** szerkezettel kezdődik. Példa: IF @Unit(SALES) THEN @100 ELSE 0 Ez a számítás a jelentés minden oszlopának a 100. sorában szereplő összegre vonatkozik, de csak az ÉRTÉKESÍTÉSI (SALES) egység számára. Ha több egységnek is ÉRTÉKESÍTÉS (SALES) a neve, az összeg minden ilyen egységben megjelenik. Ezenkívül a 100. sor lehet pénzügyi adatokat tartalmazó sor, és meg lehet adni, hogy ne legyen nyomtatható. Ebben az esetben az összeget a rendszer nem jeleníti meg a fa összes egységében. Az összeget a jelentés egyetlen oszlopára is korlátozhatja, például a H oszlopra, úgy, hogy oszlopkorlátozást használ, melynek segítségével az érték a jelentésnek csak ebben az oszlopában lesz kinyomtatva. Felvehet **OR** kombinációkat is az **IF** kimutatásban. Példa: IF @Unit(SALES) OR @Unit(SALESWEST), THEN 5 ELSE @100 A számítási típus korlátozásában a következő módokon adhat meg egységet:
 
-- Egységnév megadása a megfelelő egységek szerepeltetéséhez Például az **IF \@Unit(SALES)** lehetővé teszi, hogy minden ÉRTÉKESÍTÉS (SALES) nevű egységre vonatkozzon a számítás, akkor is, ha több ÉRTÉKESÍTÉSI (SALES) egység szerepel a jelentési fában.
-- Ha a számítást a cégen belül csak bizonyos egységekre kívánja korlátozni, adja meg a cég és az egység nevét. Például adja meg az **IF @Unit (ACME:SALES)** kódot, ha a számítást az ACME vállalaton belül az ÉRTÉKESÍTÉSI (SALES) egységekre szeretné korlátozni.
+- Egységnév megadása a megfelelő egységek szerepeltetéséhez Például az **IF @Unit(SALES)** lehetővé teszi, hogy minden ÉRTÉKESÍTÉS (SALES) nevű egységre vonatkozzon a számítás, akkor is, ha több ÉRTÉKESÍTÉSI (SALES) egység szerepel a jelentési fában.
+- Ha a számítást a cégen belül csak bizonyos egységekre kívánja korlátozni, adja meg a cég és az egység nevét. Például adja meg az **IF @Unit(ACME:SALES**) kódot, ha a számítást az ACME vállalaton belül az ÉRTÉKESÍTÉSI (SALES) egységekre szeretné korlátozni.
 - Adja meg a teljes hierarchiakódot a jelentési fából, hogy egy meghatározott egységre korlátozza a számítást. Például adja meg az **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)** kódot.
 
 > [!NOTE]
@@ -294,7 +296,7 @@ A számítási sor vonatkozhat egy számítási sorra vagy egy pénzügyi adatso
 
 1. A Report Designer eszközben kattintson a **Sordefiníciók** lehetőségre, majd nyissa meg a módosítani kívánt sordefiníciót.
 2. Kattintson duplán a **Formátumkód** cellára, majd válassza ki a **CAL** lehetőséget.
-3. Kattintson a **Kapcsolódó képletek/Sorok/Egységek** cellára, és adjon meg egy feltételes számítást, amely egy **IF \@Unit** szerkezettel kezdődik.
+3. Kattintson a **Kapcsolódó képletek/Sorok/Egységek** cellára, és adjon meg egy feltételes számítást, amely egy **IF @Unit** szerkezettel kezdődik.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE utasítások az oszlopdefinícióban
 
@@ -308,5 +310,3 @@ Az **IF/THEN/ELSE** állítás lehetővé teszi, hogy bármely számítás bárm
 Jelentéseket tervezhet dimenzióértékek használatával, amelyekben „és” jel (&) szerepel.
 
 Bármely **Kapcsolás pénzügyi dimenziókhoz** mezőn belül megadhat olyan értéket, mint például az **Eredmény (P&L)**. A dimenzióérték mindkét oldalán szereplő egyszeres idézőjelek ('') azt jelzik, hogy szövekonstans értéket használ, például az „és” (&) jelet.
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,13 +2,16 @@
 title: Biztonsági határok
 description: Ez a témakör azt mutatja be, hogyan használhatók a biztonsági időtartalékok a Microsoft Dynamics 365 Supply Chain Management Tervezési optimalizálás bővítményében.
 author: ChristianRytt
+manager: tfehr
 ms.date: 09/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-9-14
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7eb5128f3a337bd728cfe8e6d8d3deb0b6b5ef88
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
-ms.translationtype: MT
+ms.openlocfilehash: 8ab5f1c3cdfa990a73951ddc5a7469644954d5c2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074967"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429391"
 ---
 # <a name="safety-margins"></a>Biztonsági határok
 
@@ -41,7 +44,7 @@ Háromféle biztonsági időtartalék van:
 
 A következő ábra bemutatja a biztonsági időtartalékok időbeli hatályát.
 
-![Biztonsági határok.](media/safety-margins-1.png)
+![Biztonsági határok](media/safety-margins-1.png)
 
 Minden időtartalék napokban van meghatározva. Az alapértelmezett érték a *0* (nulla), ami azt jelzi, hogy nincs időtartalék alkalmazva. Ha több időtartalékot hoz létre, ezek mind hozzá lesznek adva a teljes időhöz az ellátási *rendelési dátum* és az igény *követelménydátuma* között. Például a beállításnak nincs átfutási ideje, és mindhárom időtartalék-típus egy napra van állítva. Ebben az esetben az ellátási rendelés dátuma és a szükségleti követelmény dátuma között három nap lesz, így ha a rendelési dátum július 1. a követelmény dátuma július 4.
 
@@ -51,7 +54,7 @@ A bevételezési időtartalék a három biztonsági időtartalékból valószín
 
 A következő ábrán ki van emelve e bevételezési időtartalék.
 
-![Bevételezési időtartalék.](media/safety-margins-2.png)
+![Bevételezési időtartalék](media/safety-margins-2.png)
 
 A bevételezési időtartalék általában pufferként használatos, hogy legyen elegendő idő a raktári regisztrációhoz vagy más időigényes folyamatokhoz, amelyek nincsenek rögzítve az általános átfutási időhöz a rendszerben. A beszerzések esetében az egyik előny az, hogy a beszerzési rendelés *szállítási dátuma* ennek megfelelően áthelyeződik. Ha az átfutási időt növeli a biztonsági időtartalék használata helyett, akkor a szállítónak továbbra is az utolsó pillanatban szükséges szállítania.
 
@@ -61,17 +64,23 @@ Ne felejtse el, hogy a rendszer nem alkalmazza a bevételezési időtartalékot,
 
 ### <a name="reorder-margin"></a>Újrarendelési időtartalék
 
+> [!NOTE]
+> **Hamarosan:** Ez a funkció még nem támogatott a Tervezési optimalizálásban. A támogatásig minden olyan értéket, amelyet az **Újrarendelési időtartalék hozzáadva a cikkátfutási időhöz** mezőben adnak meg *0* (nulla) értékként van kezelve.
+
 A következő ábrán ki van emelve az újrarendelési időtartalék.
 
-![Újrarendelési időtartalék.](media/safety-margins-3.png)
+![Újrarendelési időtartalék](media/safety-margins-3.png)
 
 Az újrarendelési időtartalék a program az alaptervezés során az összes tervezett rendeléshez tartozó átfutási idő elé adja hozzá. Ennek megfelelően további időt biztosít az ellátási rendelés leadására. Ez a tartalék általában pufferként használatos az ellátási rendelések létrehozása során szükséges jóváhagyási folyamatok és egyéb belső folyamatok céljából. Az újrarendelési időtartalék az *ellátási rendelés dátuma* és a *kezdő dátum* közé lesz elhelyezve.
 
 ### <a name="issue-margin"></a>Kiadási időtartalék
 
+> [!NOTE]
+> **Hamarosan:** Ez a funkció még nem támogatott a Tervezési optimalizálásban. A támogatásig minden olyan értéket, amelyet az **Követelmény dátumából levont kiadási időtartalék** mezőben adnak meg *0* (nulla) értékként van kezelve.
+
 A következő ábrán ki van emelve az kiadási időtartalék.
 
-![Kiadási időtartalék.](media/safety-margins-4.png)
+![Kiadási időtartalék](media/safety-margins-4.png)
 
 A kiadási időtartalék a mestertervezés során le lesz vonva az igény követelménydátumából. Segít abban, hogy ideje legyen a bejövő igény szerinti rendelésekre reagálni és leszállítani azokat. Ez az időtartalék általában pufferként használatos idő biztosításához szállításhoz és a kapcsolódó kimenő raktári folyamatokhoz.
 
@@ -81,7 +90,7 @@ Figyelje meg, hogy a kiadási időtartalék alkalmazása esetén a kapcsolódó 
 
 ### <a name="turn-on-safety-margins-in-feature-management"></a>A biztonsági időtartalékok bekapcsolása a Funkciókezelés modulban
 
-Mielőtt használhatná ezt a funkciót a Tervezési optimalizálásában, be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [Funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
+Mielőtt használhatná ezt a funkciót a Tervezési optimalizálásában, be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [Funkciókezelés](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
 
 - **Modul:** _Alaptervezés modul_
 - **Funkció neve:** _Időtartalékok tervezési optimalizáláshoz_
@@ -159,7 +168,7 @@ A következő ábra bemutatja azt a mátrixot, amely összegzi a biztonsági id�
 - **Raktár (WH):** sárga
 - **Szállító (V):** kék
 
-[![Naptár-beállítás áttekintése – mátrix.](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
+[![Naptár-beállítás áttekintése – mátrix](media/safety-margins-calendar-matrix.png)](media/safety-margins-calendar-matrix-high.png)
 
 ## <a name="calculating-delays"></a>Késések számítása
 
@@ -167,13 +176,10 @@ A biztonsági időtartalékok mindhárom típusa számításba van véve, amikor
 
 Például egy cikkek átfutási ideje egy nap és a bevételezési időtartalék három nap. Ehhez a tételhez egy értékesítési rendelés ma szükséges. Ebben az esetben a késés kiszámítása: *átfutási idő* + *bevételezési időtartalék* = négy nap. Ha tehát a mai dátum augusztus 14, akkor a négy nap késés augusztus 18-ára helyezi a szállítást. A következő ábrán ez a példa látható.
 
-![Késésszámítási példa.](media/safety-margins-delays.png)
+![Késésszámítási példa](media/safety-margins-delays.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Tervezési optimalizálás kezdő lépései](get-started.md)
 
 [Tervezési optimalizálás igazítási elemzése](planning-optimization-fit-analysis.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

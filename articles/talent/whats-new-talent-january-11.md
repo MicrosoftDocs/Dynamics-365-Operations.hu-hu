@@ -67,6 +67,3 @@ Ha az **Alkalmazotti önkiszolgáló rendszer** munkaterület van beállítva ke
 
 ### <a name="termination-reason-code-updates-position-assignment-record"></a>Felmondás okkódja frissíti beosztás-hozzárendelés rekordját
 A felmondási okkódja frissíti a beosztási hozzárendelést, amikor megszűnik a munkaviszony és befejeződik a beosztás. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

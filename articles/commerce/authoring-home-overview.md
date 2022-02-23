@@ -1,31 +1,37 @@
 ---
-title: Szerkesztési oldal áttekintése
-description: Ez a témakör a Microsoft Dynamics 365 Commerce szerkesztési lapjával kapcsolatban nyújt áttekintést.
+title: Szerkesztési lap – áttekintés
+description: Ez a témakör a Microsoft Dynamics 365 Commerce szerkesztői lapjával kapcsolatban nyújt áttekintést.
 author: brendans
+manager: annbe
 ms.date: 10/31/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application USer
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 68487c899edccaeff9c339d746d21b1d27b498aa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 95908c3a8b6c5231f2f5b283fa05f07c4e91b5d7
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984621"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412841"
 ---
-# <a name="authoring-page-overview"></a>Szerkesztési oldal áttekintése
+# <a name="authoring-page-overview"></a>Szerkesztési lap – áttekintés
 
   
  [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce szerkesztési lapjával kapcsolatban nyújt áttekintést.
+Ez a témakör a Microsoft Dynamics 365 Commerce szerkesztői lapjával kapcsolatban nyújt áttekintést.
+
+## <a name="overview"></a>Áttekintés
 
 Webhelyeket lehet létrehozni a különböző üzleti szükségletek támogatásához. Képviselhetnek egy egész vállalatot, a vállalat egyetlen csatornáját vagy egy adott hallgatóságot vagy célközönséget célozhatnak meg. Előfordulhat például, hogy egy ruházati gyártónak van egy olyan webhelye, amely a tulajdonában lévő összes márkát bemutatja. Ugyanezen a ruházati gyártónál előfordulhat, hogy egy külön webhely van a márkák mindegyikéhez, valamint webhelyek olyan köre, amely luxusdivattal, túradivattal és gyermekdivattal foglalkozik.
 
@@ -39,7 +45,7 @@ A szerkesztési lap jelenleg a következő szakaszokból áll.
 
 A következő ábrán a szerkesztési lap látható.
 
-![Dynamics 365 Commerce szerkesztési oldal.](../commerce/media/authoring_tools_01.png)
+![Dynamics 365 Commerce szerkesztési lap](../commerce/media/authoring_tools_01.png)
 
 ## <a name="use-the-home-button-to-select-a-tool"></a>Használja a Kezdőlap gombot egy eszköz kiválasztásához
 
@@ -116,6 +122,3 @@ Miután betöltötte a szerkesztési eszközt, kiválaszthatja a **Kezdőlap** l
 [A webhely keresőmotor-optimalizálási (SEO) szempontjai](search-engine-optimization-considerations.md)
 
 [Tartalomra vonatkozó biztonsági házirend (CSP) kezelése](manage-csp.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

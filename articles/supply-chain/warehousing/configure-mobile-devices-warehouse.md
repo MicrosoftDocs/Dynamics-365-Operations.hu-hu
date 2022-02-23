@@ -1,26 +1,29 @@
 ---
 title: Mobileszközök beállítása raktári munkához
 description: Ez a témakör bemutatja, hogyan kell konfigurálni azokat a menüpontokat, amelyeket a raktári dolgozók használnak a mobileszközökön végzendő munkához.
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 03/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 29941
 ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d9e0f27839d9e6330cc8a11874a5cb1786daf8dc
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
-ms.translationtype: MT
+ms.openlocfilehash: 8bb256514175166621847a5d40c16b9b749b1ddc
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902179"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429883"
 ---
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Mobileszközök beállítása raktári munkához
 
@@ -41,7 +44,6 @@ Menüelem létrehozásához tevékenységhez vagy lekérdezéshez állítsa a **
 > A menüelemhez kiválasztott módtól, és attól függően, hogy a menüelem használatos-e meglévő munkához, további mezők lehetnek elérhetők a menüelemhez. A mezőkijelölésekkel kapcsolatos további tudnivalókért lásd a jelen témakör „Kiegészítő menüpont-lehetőségek” című szakaszát.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Menüelemek konfigurációja tevékenységekhez és lekérdezésekhez
-
 Ha a **Mód** mezőjének értéke egy menüelemnél **Közvetett** opcióra van állítva, létrehozhat egy általános tevékenység vagy lekérdezés elvégzéséhez való menüelemet, amely nem hoz létre a munkát. Például ezek közé tartozik az azonosító táblák címkéinek újranyomtatása és az egy helyen található cikkekre vonatkozó lekérdezések. A következő táblázat az elérhető lehetőségeket sorolja fel:
 
 | Lehetőség | Leírás |
@@ -63,11 +65,12 @@ Ha a **Mód** mezőjének értéke egy menüelemnél **Közvetett** opcióra van
 | Készpénz-számsorozat gyorsítótárának kiürítése | Törölje a sorozatszámokat a gyorsítótárból. Ezt a tevékenységet általában rendszergazda végzi gyorsítótárazási problémák megoldásához, mobileszközök használata esetén. |
 | Köteg intézkedésének módosítása | Engedélyezze, hogy a dolgozó megadhassa a köteg intézkedéskódját egy cikkhez és köteghez. Ez a választás frissíti az intézkedési kódot, amely a köteghez meg van adva. |
 | Nyitott munkalista megjelenítése | Egy adott felhasználó számára elérhető munka listájának megjelenítése. A felhasználó kiválaszthatja az elvégzendő munkát, és a rendszer átirányítja a munkához. Ennek a listának a megtekintése táblagép eszközön ajánlott, 7 hüvelyk vagy annál nagyobb méretű kijelzőn. Ha bejelöli ezt a lehetőséget, a **Lekérdezés szerkesztése** és a **Mezőlista** menüelemek elérhetővé válnak. A **Lekérdezés szerkesztése** oldalon feltételeket állíthat be a listában megjelenő munkához.. A **Mezőlista** lapon megadhatja, hogy milyen mezők jelenjenek meg a munkalistán. Például csökkentheti a látható mezők számát, hogy a felhasználó számára gyorsabbá tegye a legmegfelelőbb munkatétel kiválasztását. Az **Általános** gyorslapon, a **Rekord oldalanként** mezőben bejelölheti, hogy oldalanként hány munka rekordot szeretne megjeleníteni. Ha a **Felhasználók engedélyezése a munka tranzakciótípusonkénti szűrésére** opció ki van választva, a felhasználó látni fog egy **Munka szűrése** vezérlőelemet a munkalistában, amely lehetővé teszi a tranzakciótípus szerinti szűrést. A felhasználók csak azokat a munkákat fogják látni a munkalistában, amelyekhez rendelkeznek hozzáféréssel. Ellenőrizze, hogy a felhasználóknak van-e engedélyük egy vagy több felhasználó által irányított menüelemekhez, amelyek támogatják a meghatározott munkaosztály-típusokat, amelyekhez hozzá kell, hogy férjenek. Az engedélyek akkor kerülnek ellenőrzésre, amikor egy felhasználó megkísérli a munka végrehajtását a listából.|
-| Átmozgatási rendelés létrehozása azonosítótáblákból | Lehetővé teszi a raktári dolgozók számára, hogy közvetlenül a Raktárkezelés mobilalkalmazásból hozzanak létre és dolgozzanak fel átmozgatási rendeléseket. A raktári dolgozók azzal kezdik, hogy kiválasztják a célraktárat, majd az alkalmazás segítségével egy vagy több azonosítótáblát beolvasnak. Ha a raktári dolgozó kiválasztja a **Rendelés teljesítése** elemet, akkor egy kötegelt feladat létrehozza a szükséges átmozgatási rendelést és a rendelési sorokat az adott azonosítótáblákhoz regisztrált aktuális készlet alapján. További információért lásd: [Átmozgatási rendelések létrehozása raktári alkalmazásból](create-transfer-order-from-warehouse-app.md).
+| Átmozgatási rendelés létrehozása azonosítótáblákból | Ez a funkció lehetővé teszi a raktári dolgozók számára, hogy közvetlenül a raktári alkalmazásból hozzanak létre és dolgozzanak fel átmozgatási rendeléseket. A raktári dolgozók azzal kezdik, hogy kiválasztják a célraktárat, majd az alkalmazás segítségével egy vagy több azonosítótáblát beolvasnak. Ha a raktári dolgozó kiválasztja a **Rendelés teljesítése** elemet, akkor egy kötegelt feladat létrehozza a szükséges átmozgatási rendelést és a rendelési sorokat az adott azonosítótáblákhoz regisztrált aktuális készlet alapján. További információért lásd: [Átmozgatási rendelések létrehozása raktári alkalmazásból](create-transfer-order-from-warehouse-app.md).
+
 
 ## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Menüelemek konfigurációja munka létrehozásához egy másik dolgozónak vagy folyamatnak
-
 Létrehozhat egy menüelemet, amely egy másik dolgozónak hoz létre munkát egy kezdeti művelet végrehajtása után a mobileszközön. Például amikor egy dolgozó mobileszközzel bevételez egy cikket, betárolási munka jön létre egy további dolgozó számára. Munkát létrehozó menüelem beállításához a **Mobileszköz menü elemei** oldalon, a **Mód** mezőben válassza ki **Munka** lehetőséget. A következő táblázatban a **Munka-létrehozási folyamat** mező opciói munkarendelés-típus szerint vannak rendezve.
+
 
 <table>
 <tbody>
@@ -232,7 +235,7 @@ A menüelemek raktári munka létrehozására történő beállításán kívül
 </tr>
 <tr class="even">
 <td>Felhasználócsoportosítás</td>
-<td>A dolgozó manuálisan csoportosítja a munkát. Ez az opció például akkor hasznos, ha egy dolgozó egyszerre több cikket tárol ki egy helyen. Miután a dolgozó végzett az összes szükséges cikk kiválasztásával, tárolhatja a cikkeket.</td>
+<td>A dolgozó manuálisan csoportosítja a munkát. Ez az opció például akkor hasznos, ha egy dolgozó egyszerre több cikket tárol ki egy helyen. Miután a dolgozó végzett az összes kívánt cikk kitárolásával, betárolhatja azokat.</td>
 </tr>
 <tr class="odd">
 <td>Rendszercsoportosítás</td>
@@ -249,7 +252,7 @@ A menüelemek raktári munka létrehozására történő beállításán kívül
 <li><strong>Ellenőrizve, felhasználó által irányítva mező</strong> – Válassza ki azt a mezőt, amelyet a dolgozó beolvas a munka csoportosításához.</li>
 <li><strong>Ellenőrizve, felhasználó által irányítva</strong> – Adja meg a szöveget, amely tájékoztatja a dolgozót, hogy mit olvasson be, amikor a rendszer csoportosítja kitárolási munkát.</li>
 </ul>
-Ez például akkor hasznos, ha például több raklap van előkészítve egy rakodáshoz. Ha bejelöli a <strong>LoadId</strong> lehetőséget az <strong>Ellenőrizve, felhasználó által irányítva</strong> mezőben, a dolgozó tárolhatja a rakományhoz társított bármelyik raklapot. Ha a dolgozó olyan cikket vizsgál meg, amely nincs társítva a rakományhoz, hibaüzenet jelenik meg.</td>
+Ez például akkor hasznos, ha például több raklap van előkészítve egy rakodáshoz. Ha bejelöli a <strong>LoadId</strong> lehetőséget az <strong>Ellenőrizve, felhasználó által irányítva</strong> mezőben, a dolgozó tárolhatja a rakományhoz társított bármelyik raklapot. Ha a dolgozó olyan cikket jelenít meg, amely nincs társítva a rakományhoz, hibaüzenet jelenik meg.</td>
 </tr>
 <tr class="odd">
 <td>Fürt kitárolása</td>
@@ -368,7 +371,7 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 <td>Adja meg, hogy a dolgozó egy helyen a legrégebbi köteget válassza-e ki először. Az alábbi lehetőségek közül választhat:
 <ul>
 <li><strong>Nincs</strong> – A dolgozó bármilyen köteget kiválaszthat a helyen. A dolgozó nem kap üzenetet.</li>
-<li><strong>Figyelmeztetés</strong> – A dolgozó bármilyen köteget kiválaszthat a helyen, de figyelmeztető üzenetet kap, ha nem a legrégebbi köteget választja ki.</li>
+<li><strong>Figyelmeztetés</strong> – A dolgozó bármilyen köteget kiválaszthat a helyen, de figyelmeztető üzenetet kap, ha az nem a legrégebbi köteg.</li>
 <li><strong>Kötelező</strong> – A dolgozó a legrégebbi köteget kell, hogy kiválassza a helyen. A dolgozó hibaüzenetet kap, ha a köteg nem legrégebbi köteg. <strong>Megjegyzés:</strong> Ez az opció csak akkor fontos, ha a <strong>Kötegszám</strong> alacsonyabb mint a <strong>Hely</strong> abban a foglalási hierarchiában, amelyhez a cikk tartozik.</li>
 </ul></td>
 </tr>
@@ -386,7 +389,7 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 </tr>
 <tr class="even">
 <td>Alapértelmezett adatok használata</td>
-<td>Ezzel a lehetőséggel engedélyezheti az <strong>Alapadatok</strong> gombot a Művelet ablakban, ahol kiválaszthatja a dolgozó napi munkájához szükséges adatokat megjelenítő mezőket. Ez a lehetőség például akkor hasznos, ha egy dolgozó a kitárolási cikkeket gyakran ugyanarról a helyről veszi fel. Kiválaszthatja a <strong>Forráshely</strong> mezőt a hely alapértelmezés szerinti megjelenítéséhez.</td>
+<td>Válassza ki ezt a lehetőséget az <strong>Alapadatok</strong> gomb engedélyezéséhez a Műveleti ablakban, ahol kiválaszthatja a dolgozó napi munkájához szükséges adatokat megjelenítő mezőket. Ez a lehetőség például akkor hasznos, ha egy dolgozó a kitárolási cikkeket gyakran ugyanarról a helyről veszi fel. Kiválaszthatja a <strong>Forráshely</strong> mezőt a hely alapértelmezés szerinti megjelenítéséhez.</td>
 </tr>
 <tr class="odd">
 <td>Ellenőrizve, felhasználó által irányítva mező</td>
@@ -407,7 +410,6 @@ Az alábbi táblázatban található ezeknek a beállításoknak az ismertetése
 </table>
 
 ## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>A termék, a hely vagy a mennyiség megerősítésének megkövetelése a dolgozóktól a cikkek kitárolásakor
-
 Beállíthatja a munkák visszaigazolását úgy, hogy azok megköveteljék a dolgozóktól egy mobileszköz használatát a hely vagy a mennyiség regisztrációjához a raktárban való munkavégzés közben. A Munkamegerősítés segíti annak biztosítását, hogy a dolgozó a megfelelő helyen legyen, és a megfelelő cikkmennyiséget kezelje. Engedélyezheti a Supply Chain Management számára dolgozó regisztrációjának automatikus megerősítését is. Ha engedélyezi az automatikus megerősítést, nem tudja a hely vagy a mennyiség visszaigazolását is igényelni. A Munkamegerősítések a termékekre és a termékváltozatokra is vonatkoznak. Valamint lehetősége van a visszaigazolások regisztrálására vonalkód beolvasásával is. Termékek és a termékváltozatok megerősítéséhez meg kell adnia egy azonosítót a termékhez vagy a termékváltozathoz. Ez az azonosító lehet a termék azonosítója, a keresési termékazonosító, a külső azonosító, a GTIN vagy a vonalkód. Miután megadta az azonosítót vagy beolvasta a vonalkódot, a mobileszközön a termékváltozat dimenziói megjelennek. 
 
 A következő táblázat leírja a különféle munkatípusokat, amelyekkel használhatja a munka-visszaigazolásokat.
@@ -427,13 +429,13 @@ A következő táblázat leírja a különféle munkatípusokat, amelyekkel hasz
 > [!NOTE]
 > A termék visszaigazolása csak kitárolási és betárolási típusú munkáknál követelhető meg.
 
-## <a name="additional-resources"></a>További erőforrások
+<a name="additional-resources"></a>További erőforrások
+--------
 
-- [Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez](tasks/set-up-mobile-device-menu.md)
-- [Mobileszköz-menüelem beállítása a bevételezett elemek regisztrálásához](tasks/set-up-mobile-device-menu-item-register-received-items.md)
-- [Készletállapotok](../inventory/inventory-statuses.md)
+[Mobileszköz menüelemének beállítása beszerzési rendelés típusú munka befejezéséhez](tasks/set-up-mobile-device-menu.md)
+
+[Mobileszköz-menüelem beállítása a bevételezett elemek regisztrálásához](tasks/set-up-mobile-device-menu-item-register-received-items.md)
+
+[Készletállapotok](../inventory/inventory-statuses.md)
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

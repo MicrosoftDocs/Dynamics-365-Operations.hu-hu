@@ -1,24 +1,26 @@
 ---
 title: Figyelmeztetési szabályok létrehozása
-description: Ez a témakör a riasztásokkal kapcsolatos információkat ismerteti, és bemutatja, hogyan hozhat létre riasztási szabályt.
-author: RichdiMSFT
+description: Ez a témakör a figyelmeztetések kapcsolatban tartalmaz tájékoztatást, és ismerteti, hogyan kell létrehozni egy figyelmeztetésszabályt, hogy értesítést kapjon például az olyan eseményekről, mint az elérkező dátumok vagy bizonyos módosítások.
+author: tjvass
+manager: AnnBe
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 597785e65f127794ca84fe3053a664f717b056bd7374e0396732d4bcf59a743c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3721416ce720167a6f78e26583de84af9c8d086b
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736198"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798427"
 ---
 # <a name="create-alert-rules"></a>Figyelmeztetési szabályok létrehozása
 
@@ -100,8 +102,3 @@ Nem hozhatók létre figyelmeztetések az űrlapok egyes másodlagos adatforrás
     ```
 2. Hozzon létre figyelmeztetést a SysTableBrowser űrlapról.
 
-### <a name="change-based-alerts-do-not-work-for-batch-status-changes"></a>A Módosításalapú figyelmeztetések funkció nem működik kötegelt állapotváltozások esetén
-A Módosításalapú figyelmeztetések funkció nem működik kötegelt állapotváltozások esetén, mert a teljesítmény miatt ki van kapcsolva. Ehelyett be kell állítania a **Kötegelt figyelmeztetések** funkciót. A további tudnivalókat lásd a [Figyelmeztetések beállítása továbbfejlesztett kötegelt képernyők számára](../../dev-itpro/sysadmin/alerts.md#set-up-alerts-for-batch-enhanced-forms) pontban.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

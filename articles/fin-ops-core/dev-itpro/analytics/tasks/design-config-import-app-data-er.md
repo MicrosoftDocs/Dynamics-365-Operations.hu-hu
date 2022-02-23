@@ -2,9 +2,11 @@
 title: ER-konfigurációk tervezése bejövő dokumentumok elemzésére
 description: Ez az eljárás egy bejövő elektronikus dokumentumot elemző elektronikus jelentési (ER) konfigurációk megtervezését mutatja be.
 author: NickSelin
+manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8068850ee143540ff9f3b6222485d3ecd2a2a82020063f34cfd7b5a69826eda3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 446a4676ad00c93d691d3048408c32d7ad373d2d
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6756381"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4682093"
 ---
 # <a name="design-er-configurations-to-parse-incoming-documents"></a>ER-konfigurációk tervezése bejövő dokumentumok elemzésére
 
@@ -111,6 +113,3 @@ A létrehozott modell-leképezést tesztelési célokból kell futtatni, hogy me
     * Válassza a Tallózás gombot, és válassza ki a Response4.xml fájlt.
 16. Válassza ki az OK lehetőséget.
     * Tekintse át a létrehozott kimenetet. A választípust a rendszer már megfelelően ismerte fel a Response1.xml fájllal egyenlőként.
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

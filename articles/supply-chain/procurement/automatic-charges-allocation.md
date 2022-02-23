@@ -1,23 +1,26 @@
 ---
 title: A kiadások automatikus felosztása
 description: A Microsoft Dynamics 365 Supply Chain Management költség funkciójával automatikusan lefoglalhatók a beszerzési rendelések vagy értékesítési rendelések költségei.
-author: Henrikan
-ms.date: 09/30/2021
+author: dasani-madipalli
+manager: tfehr
+ms.date: 10/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: henrikan
+ms.author: damadipa
 ms.search.validFrom: 2020-10-01
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 6032539e57961998e7130e9cb6578248aaa2843e
-ms.sourcegitcommit: 49f29aaa553eb105ddd5d9b42529f15b8e64007e
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 818affc7591577b69309928eb9b0e71130884cec
+ms.sourcegitcommit: 66ecc6cb36ef4f723c77e09d6a33f9c42f8fa392
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "7592540"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429818"
 ---
 # <a name="automatic-allocation-of-charges"></a>A kiadások automatikus felosztása
 
@@ -26,16 +29,6 @@ ms.locfileid: "7592540"
 A kezelt ügyfél vagy az értékesített cikk alapján előfordulhat, hogy specifikus kiegészítő költségeket szeretne alkalmazni. A Microsoft Dynamics 365 Supply Chain Management *költség* funkciójával automatikusan lefoglalhatók a beszerzési rendelések vagy értékesítési rendelések költségei.
 
 Az automatikus költségek, a továbbiakban automatikus költségek, automatikusan alkalmazásra kerülnek, ha létrehoz egy értékesítési rendelést vagy beszerzési rendelést. Az automatikus költségeket definiálhatja adott szállítókhoz, ügyfelekhez, szállítócsoportokhoz, vagy cikkcsoportokhoz. Megadhat automatikus költségeket, amelyek minden szállítóra, vevőre vagy cikkre vonatkoznak.
-
-## <a name="set-up-parameters"></a>Paraméterek beállítása
-
-A **Beszerzés és forrásparaméterek** oldalon néhány olyan beállítás is van, amelyek különösen fontosak, amikor automatikusan szeretné hozzárendelni a költségeket. Ennek a beállításnak a befejezéséhez kövesse az alábbi lépéseket.
-
-1. Nyissa meg a **Beszerzés és forrás \> Beállítás \> Beszerzés és forrás paraméterei** pontot.
-1. Nyissa meg az **Árak** lapot.
-1. Az **Árak** gyorslapon tegye a következő beállításokat:
-    - **Automatikus költségek megkeresése a fejléchez** – Megadja, hogy a költségeket automatikusan hozzá kell-e rendelni a beszerzési rendelési fejlécek között. Állítsa *Igen* beállításra a költségek automatikus elosztásának használatára.
-    - **Automatikus költségek megkeresése a sorhoz** – Megadja, hogy a költségeket automatikusan hozzá kell-e rendelni a beszerzési rendelési sorok között. Állítsa *Igen* beállításra a költségek automatikus elosztásának használatára.
 
 ## <a name="set-up-charges-codes"></a>Állítsa be a költségkódokat
 
@@ -154,7 +147,7 @@ Miután beállította a költségkódokat, hajtsa végre az alábbi lépéseket 
     - **Telephely** és **raktár** – adja meg a helyet és a raktárat, ha a költséget csak meghatározott telephelyre és raktárra kell alkalmazni.
     - **Megtartás** - Válassza ki ezt a jelölőnégyzetet, a költségtranzakciók számlázás befejezése utáni megtartására úgy, hogy a költség minden alkalommal alkalmazásra kerüljön, ha új számlát hoz létre a kijelölt vevői számlára.
 
-1. **Csak értékesítési rendelések esetében:** Ha a többszintű költséget szeretné kiszámítani, akkor lásd: [az értékesítési rendelések többszintű költsége](/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders).
+1. **Csak értékesítési rendelések esetében:** Ha a többszintű költséget szeretné kiszámítani, akkor lásd: [az értékesítési rendelések többszintű költsége](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/about-tiered-charges-on-sales-orders).
 
 ## <a name="allocate-charges-from-the-header-to-a-line"></a>Költség felosztása a fejlécből egy sorba
 
@@ -184,6 +177,3 @@ A következő eljárás bemutatja, hogy hogyan lehet a fejléc-szintű költség
         > A **felosztásból kizárandó sorok kiválasztása** rács használata esetén ügyeljen arra, hogy a rács nyitva maradjon a **felosztás** kiválasztásáig. Ha bezárja a rácsot, mielőtt kiválasztja a **felosztást**, akkor a rácsban megadott beállítások elvesznek. Ezért a rendszer a korábban meghatározott feltételek alapján osztja fel a költséget.
 
 1. Az **Felosztás** gombra kattintva alkalmazza a beállításokat, és zárja be a párbeszédpanelt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

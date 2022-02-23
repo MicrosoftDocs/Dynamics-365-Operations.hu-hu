@@ -1,27 +1,30 @@
 ---
 title: Útvonalak és műveletek
 description: Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcsolatban.
-author: johanhoffmann
+author: sorenva
+manager: tfehr
 ms.date: 03/18/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable, ProdRouteJob, ProdRouteTrans, ProdRouteOverview, ProdRouteJobOverview, ProdRouteJobListPagePreviewPane, RouteTable, RouteVersionFeasibility, ProdRouteJobCurrent, RouteGroup, RouteProductionOrder, EngChgCaseRouteTablePart, EcoResProductProdTypeFormulaNoActiveRouteFormPart,
-ms.author: johanho
+ms.author: sorenand
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab825227e7cd8848dbad58c58f5c6d7afc338f9c
-ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
-ms.translationtype: MT
+ms.openlocfilehash: adf890f5305f4e6a62c2d7527ff3b593ed61eff3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7891953"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429329"
 ---
 # <a name="routes-and-operations"></a>Útvonalak és műveletek
 
@@ -29,7 +32,8 @@ ms.locfileid: "7891953"
 
 Ez a témakör információkat nyújt az útvonalakkal és a műveletekkel kapcsolatban. Az útvonal határozza meg egy termék vagy termékváltozat előállításának folyamatát. Leírja az termelési folyamat minden egyes lépését (műveletét), valamint meghatározza a lépések végrehajtásának sorrendjét is. Az útvonal minden egyes lépés esetében meghatározza a szükséges üzemi erőforrásokat, beállítási időt és futtatási időt, továbbá azt, hogy miként kell számítani a költséget.
 
-## <a name="overview"></a>Áttekintés
+<a name="overview"></a>Áttekintés
+--------
 
 Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék vagy termékváltozat előállításához szükségesek. Az útvonal minden egyes műveletnél meghatározza azt is, hogy milyen üzemi erőforrások szükségesek, mennyi idő kell a művelet beállítására és végrehajtására továbbá azt is, hogy miként kell kiszámítani a költséget. Azonos útvonallal több termék is előállítható, de meghatározhat egyedi útvonalat is minden egyes termékhez vagy termékváltozathoz. Akár egyetlen termékhez is létrehozhat több útvonalat. Ebben az esetben az útvonal olyan tényezők alapján váltakozik, mint például az előállítandó mennyiség. Az útvonal meghatározása a Supply Chain Management szolgáltatásban négy olyan különálló elemből áll, amelyek együttesen leírják a termelési folyamatot:
 
@@ -45,7 +49,7 @@ Az útvonal leírja azoknak a műveleteknek a sorrendjét, amelyek egy termék v
 
 Az egyszerű útvonalak szekvenciálisak, és az útvonal csak egy kezdőponttal rendelkezik.  
 
-[![Egyszerű útvonal.](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
+[![Egyszerű útvonal](./media/routes-and-operations-1-simple-route.png)](./media/routes-and-operations-1-simple-route.png)  
 
 Ha csak az egyszerű útvonalakat engedélyezi a Gyártásvezérlési paramétereknél, akkor a Supply Chain Management automatikusan generálja a műveletszámokat (10, 20, 30 és így tovább) az útvonal meghatározásakor.
 
@@ -53,7 +57,7 @@ Ha csak az egyszerű útvonalakat engedélyezi a Gyártásvezérlési paraméter
 
 Ha engedélyezi az összetettebb útvonalhálózatokat a Gyártásvezérlési paramétereknél, akkor olyan útvonalakat is megadhat, amelyek több kezdőponttal rendelkeznek, illetve olyan műveleteket is, amelyek párhuzamosan futhatnak.  
 
-[![Útvonalhálózat.](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
+[![Útvonalhálózat](./media/routes-and-operations-2-route-network.png)](./media/routes-and-operations-2-route-network.png)  
 
 > [!NOTE]
 > - Minden egyes művelethez csak egy következő művelet tartozhat, és a teljes útvonalnak egyetlen művelettel kell befejeződnie.
@@ -64,7 +68,7 @@ Ha engedélyezi az összetettebb útvonalhálózatokat a Gyártásvezérlési pa
 
 Néha több, különböző tulajdonságokkal rendelkező üzemi erőforrás kombinációja szükséges egy művelet elvégzéséhez. Egy összeszerelési művelethez például szükség lehet egy gépre, egy szerszámra, továbbá minden két géphez egy dolgozóra, aki felügyeli a működését. Ez a példa párhuzamos műveletek segítségével modellezhető, ahol egy művelet ki van jelölve elsődleges műveletként, a többi pedig másodlagosként.  
 
-[![Elsődleges és másodlagos műveleteket tartalmazó útvonal.](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
+[![Elsődleges és másodlagos műveleteket tartalmazó útvonal](./media/routes-and-operations-3-parallel-operations.png)](./media/routes-and-operations-3-parallel-operations.png)  
 
 Az elsődleges művelet általában a szűk keresztmetszetű erőforrást jelöli ki, és megszabja a másodlagos műveletek futtatási idejét. Azonban az olyan ütemezés során, amely véges kapacitást foglal magába, a mind az elsődleges műveletre, mind a másodlagos műveletekre ütemezett erőforrásoknak egyidejűleg elérhetőnek kell lenniük, illetve szabad kapacitással kell rendelkezniük.  
 
@@ -78,7 +82,7 @@ Ahhoz, hogy egy útvonal használható legyen a tervezési vagy termelési folya
 
 Minden útvonal külön jóváhagyott vagy jóvá nem hagyott lehet. Vegye figyelembe azonban, hogy jóvá nem hagyott útvonalak esetén az összes kapcsolódó útvonalverzió szintén jóvá nem hagyott. A Gyártásvezérlési paramétereknél megadhatja, hogy megszüntethető-e az útvonalak jóváhagyása, illetve, hogy a jóváhagyott útvonalak módosíthatók-e.  
 
-Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalat ki hagyta jóvá, akkor elektronikus aláírásokat kell használni az útvonalak jóváhagyásakor. A felhasználóknak ezt követően meg kell erősíteniük személyazonosságukat egy [elektronikus aláírás](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) segítségével.
+Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalat ki hagyta jóvá, akkor elektronikus aláírásokat kell használni az útvonalak jóváhagyásakor. A felhasználóknak ezt követően meg kell erősíteniük személyazonosságukat egy [elektronikus aláírás](../../fin-and-ops/organization-administration/electronic-signature-overview.md) segítségével.
 
 ## <a name="operations"></a>Operations
 A művelet a termelési folyamat egy lépése. Minden egyes művelethez tartozik egy azonosító és egy egyszerű leírás. A következő táblázatok egy műhely jellemző műveleteit mutatják be.
@@ -184,7 +188,7 @@ Amikor aktivál egy útvonalverziót, akkor kijelöli azt alapértelmezett útvo
 
 ### <a name="electronic-signatures"></a>Elektronikus aláírások
 
-Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalverziót ki hagyta jóvá, akkor elektronikus aláírásokat kell használni ezeknél a feladatoknál. Az útvonalverziókat jóváhagyó és aktiváló felhasználóknak ezt követően igazolniuk kell személyazonosságukat egy [elektronikus aláírás](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md) segítségével.
+Ha naplót kell vezetnie, amely rögzíti, hogy melyik útvonalverziót ki hagyta jóvá, akkor elektronikus aláírásokat kell használni ezeknél a feladatoknál. Az útvonalverziókat jóváhagyó és aktiváló felhasználóknak ezt követően igazolniuk kell személyazonosságukat egy [elektronikus aláírás](../../fin-and-ops/organization-administration/electronic-signature-overview.md) segítségével.
 
 ### <a name="product-change-that-uses-case-management"></a>Termékmódosítás, amely esetkezelést használ.
 
@@ -223,7 +227,7 @@ Ez a módszer használata esetén a **műveleti kapcsolatok** oldal lesz az els�
 Ha nem ad meg üzemi erőforrást vagy erőforráscsoportot egy művelet erőforrásigényének részeként, az alkalmazott erőforrások különböző sebességgel működhetnek. Emiatt az egy-egy művelet feldolgozásához szükséges idő változó lehet. A probléma megoldásához használhatja a műveleti kapcsolat **Képlet** mezőjét, ahol megadhatja a feldolgozási idő kiszámításának módját. Az alábbi lehetőségek közül választhat:
 
 - **Szabványos** – (Alapértelmezett beállítás) A számítás csak a műveleti kapcsolat mezőit használja, és megszorozza a megadott futási időt a rendelés mennyiségével.
-- **Kapacitás** – A számítás magába foglalja a **Kapacitás** mezőt az üzemi erőforrásból. Ezért az idő erőforrásfüggő. Az üzemi erőforrásnál megadott érték óránkénti kapacitás. A **Feldolgozási időt** úgy számítja ki a rendszer, hogy a **Rendelési mennyiséget** a **Kapacitással** elosztja. A kapacitás értéke nem egy bizonyos mértékegységre jellemző, ezért nem konvertálható a Kapacitásegység mező alapján, amely csak egy leíró mező, amely nem használatos **számításokban**.
+- **Kapacitás** – A számítás magába foglalja a **Kapacitás** mezőt az üzemi erőforrásból. Ezért az idő erőforrásfüggő. Az üzemi erőforrásnál megadott érték óránkénti kapacitás. A **Feldolgozási időt** úgy számítja ki a rendszer, hogy a **Rendelési mennyiséget** a **Kapacitással** elosztja.
 - **Köteg** – A kötegkapacitás kiszámítása a műveleti kapcsolat adatainak felhasználásával történik. Ezt követően a rendelt mennyiség alapján kiszámítható a kötegek száma, és így a feldolgozási idő is.
 - **Erőforrásköteg** – Ez a lehetőség gyakorlatilag megegyezik a **Köteg** beállítással. A számítás azonban magába foglalja a **Kötegkapacitás** mezőt a műveletek erőforrás mezőből. Ezért az idő erőforrásfüggő.
 
@@ -252,10 +256,7 @@ Ezért, ha az Aktiválás van kiválasztva az Átfedéshez a többi beállítás
 
 - [Erőforrás-képességek](resource-capabilities.md)
 
-- [Az elektronikus aláírás áttekintése](../../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md)
+- [Az elektronikus aláírás áttekintése](../../fin-and-ops/organization-administration/electronic-signature-overview.md)
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

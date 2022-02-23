@@ -1,10 +1,12 @@
 ---
 title: Munkarendelés jelentése
 description: Ez a témakör bemutatja a munkarendelési jelentéseket az Eszközkezelés modulban.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3686629af4116df6fc7ea530216ec0d12ecd60bab8f7150e0d2a3917bc12adaf
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 93544f0459641c5e72ec6a0af10f0db9718ad799
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6780246"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5022358"
 ---
 # <a name="work-order-report"></a>Munkarendelés jelentése
 
@@ -48,6 +50,3 @@ A következő ábra példát mutat be a beállítás alapján létrejövő munka
 
 ![2. ábra](media/21-work-orders.png)
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

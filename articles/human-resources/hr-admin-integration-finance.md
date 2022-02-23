@@ -1,39 +1,37 @@
 ---
-title: A Finance szolgáltatással való integráció konfigurálása
-description: Ez a téma a Dynamics 365 Human Resources és a Dynamics 365 Finance közötti integrációt írja le.
-author: twheeloc
-ms.date: 08/19/2021
+title: Integráció konfigurálása a Finance alkalmazással
+description: Ez a cikk leírja a Dynamics 365 Human Resources és a Dynamics 365 Finance rendszerekben rendelkezésre álló funkciókat az integrációhoz.
+author: andreabichsel
+manager: AnnBe
+ms.date: 03/26/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a2c5dd0ce97f33f5f8b65c801fbc15dfc65e8d4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 3b4d6369ab567879e23e1f132265aaff45c8ce47
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065016"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527915"
 ---
 # <a name="configure-integration-with-finance"></a>A Finance szolgáltatással való integráció konfigurálása
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+A Dynamics 365 Human Resources integrációjához Dynamics 365 Finance megoldással használhatja A Human Resources to Finance integrációs folyamat sablont az [Adatintegrátorban](https://docs.microsoft.com/powerapps/administrator/data-integrator). A Human Resources to Finance sablon lehetővé teszi a feladatok, beosztások és dolgozók adatáramlását. A sablon lehetővé teszi, hogy az adatok a Human Resources alkalmazásból a Finance alkalmazásba áramoljanak de nem teszik lehetővé a Finance alkalmazásból a Human Resources alkalmazásba az áramlást.
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
-
-A Dynamics 365 Human Resources integrációjához Dynamics 365 Finance megoldással használhatja A Human Resources to Finance integrációs folyamat sablont az [Adatintegrátorban](/powerapps/administrator/data-integrator). A Human Resources to Finance sablon lehetővé teszi a feladatok, beosztások és dolgozók adatáramlását. A sablon lehetővé teszi, hogy az adatok a Human Resources alkalmazásból a Finance alkalmazásba áramoljanak de nem teszik lehetővé a Finance alkalmazásból a Human Resources alkalmazásba az áramlást.
-
-![A Human Resources to Finance integrációs folyamata.](./media/hr-admin-integration-finance-flow.png)
+![A Human Resources to Finance integrációs folyamata](./media/hr-admin-integration-finance-flow.png)
 
 A Human Resources to Finance megoldás a következő adatszinkronizálási típusokat tartalmazza:
 
@@ -46,7 +44,7 @@ A Human Resources to Finance megoldás a következő adatszinkronizálási típu
 
 A Human Resources és a Finance következő verziói szükségesek az integrációs megoldáshoz: 
 
-- Dynamics 365 Human Resources, helye: Dataverse
+- Dynamics 365 Human Resources, helye: Common Data Service
 - A Dynamics 365 Finance 7.2 vagy újabb verziója
 
 ## <a name="template-and-tasks"></a>Sablon és feladatok
@@ -57,7 +55,7 @@ A Human Resources – Finance sablon elérése.
 
 2. Válassza ki a **Projektek** lehetőséget, majd válassza az **Új projekt** lehetőséget jobb felső sarokban. Minden olyan jogi személyhez hozzon létre egy új projektet, amelyet integrálni kíván a Finance alkalmazásba.
 
-3. Válassza ki a **Human Resources (Human Resources – Dataverse – Finance)** a rekordok szinkronizálásához a Human Resources irányából a Finance irányába.
+3. Válassza ki a **Human Resources (Human Resources – Common Data Service – Finance)** a rekordok szinkronizálásához a Human Resources irányából a Finance irányába.
 
 A sablon a következő mögöttes tevékenységek használatával szinkronizál a Human Resources-rekordokat a Finance alkalmazásba.
 
@@ -83,14 +81,14 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 ### <a name="job-functions-to-compensation-job-function"></a>A beosztás funkciójától a kompenzációs beosztási funkciókig
 
-| Dataverse-tábla (forrás) | Finance-entitás (cél) |
+| Common Data Service-entitás (forrás) | Finance-entitás (cél) |
 |-------------------------------------|---------------------------------------------|
 | cdm_name (cdm_Job   funkció neve)  | JOBFUNCTIONID   (JOBFUNCTIONID)            |
 | cdm_description   (cdm_description) | LEÍRÁS   (LEÍRÁS)                 |
 
 ### <a name="departments-to-operating-unit"></a>Részlegek az üzemi egységhez
 
-| Dataverse-tábla (forrás)           | Finance-entitás (cél) |
+| Common Data Service-entitás (forrás)           | Finance-entitás (cél) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                           | NÉV (NÉV)                                 |
 | cdm_departmentnumber   (cdm_departmentnumber) | OPERATINGUNITNUMBER   (OPERATINGUNITNUMBER) |
@@ -99,7 +97,7 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 ### <a name="job-types-to-compensation-job-type"></a>Feladattípusok a kompenzációs feladattípushoz
 
-| Dataverse-tábla (forrás)   | Finance-entitás (cél) |
+| Common Data Service-entitás (forrás)   | Finance-entitás (cél) |
 |---------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                   | JOBTYPEID   (JOBTYPEID)                     |
 | cdm_description   (cdm_description)   | LEÍRÁS   (LEÍRÁS)                 |
@@ -107,7 +105,7 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 ### <a name="jobs-to-jobs"></a>Feladatok a feladatokhoz
 
-| Dataverse-tábla (forrás)                           | Finance-entitás (cél)           |
+| Common Data Service-entitás (forrás)                           | Finance-entitás (cél)           |
 |---------------------------------------------------------------|-------------------------------------------------------|
 | cdm_name (cdm_name)                                           | JOBID (JOBID)                                         |
 | cdm_maximumnumberofpositions   (cdm_maximumnumberofpositions) | MAXIMUMNUMBEROFPOSITIONS   (MAXIMUMNUMBEROFPOSITIONS) |
@@ -117,7 +115,7 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 ### <a name="jobs-to-job-detail"></a>Feladatok a Feladat részleteihez
 
-| Dataverse-tábla (forrás)                             | Finance-entitás (cél) |
+| Common Data Service-entitás (forrás)                             | Finance-entitás (cél) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                                             | JOBID (JOBID)                               |
 | cdm_jobtypeid. cdm_name   (Feladattípus (feladattípus neve))             | JOBTYPEID   (JOBTYPEID)                     |
@@ -128,7 +126,7 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 ### <a name="position-types-to-position-type"></a>Beosztási típusok a Beosztási típushoz
 
-| Dataverse-tábla (forrás)       | Finance-entitás (cél) |
+| Common Data Service-entitás (forrás)       | Finance-entitás (cél) |
 |-------------------------------------------|---------------------------------------------|
 | cdm_name (cdm_name)                       | POSITIONTYPEID   (POSITIONTYPEID)           |
 | cdm_description   (cdm_description)       | LEÍRÁS   (LEÍRÁS)                 |
@@ -136,13 +134,13 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 ### <a name="job-positions-to-base-position"></a>Feladatbeosztások az Alapbeosztásokhoz
 
-| Dataverse-tábla (forrás)           | Finance-entitás (cél) |
+| Common Data Service-entitás (forrás)           | Finance-entitás (cél) |
 |-----------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Feladatbeosztás száma) | POSITIONID (POSITIONID)                      |
 
 ### <a name="job-positions-to-position-details"></a>Feladatbeosztások a Beosztásrészletekhez
 
-| Dataverse-tábla (forrás)              | Finance-entitás (cél)       |
+| Common Data Service-entitás (forrás)              | Finance-entitás (cél)       |
 |--------------------------------------------------------------------------|---------------------------------------------------|
 | cdm_jobpositionnumber  (Feladatbeosztás száma)                            | POSITIONID (POSITIONID)                             |
 | cdm_jobid.cdm_name   (Feladat neve)                                        | JOBID (JOBID)                                    |
@@ -156,7 +154,7 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 ### <a name="job-positions-to-position-durations"></a>Feladatbeosztások a Beosztásidőtartamokhoz
 
-| Dataverse-tábla (forrás)             | Finance-entitás (cél) |
+| Common Data Service-entitás (forrás)             | Finance-entitás (cél) |
 |-------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Feladatbeosztás száma)   | POSITIONID (POSITIONID)                      |
 | Számított   aktiválás (számított aktiválás) | VALIDFROM (VALIDFROM)                        |
@@ -164,7 +162,7 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 ### <a name="job-positions-to-position-hierarchies"></a>Feladatbeosztások a Beosztási hierarchiákhoz
 
-| Dataverse-tábla (forrás)        | Finance-entitás (cél) |
+| Common Data Service-entitás (forrás)        | Finance-entitás (cél) |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------|
 | cdm_jobpositionnumber   (Feladatbeosztás száma)                                                 | POSITIONID(POSITIONID)                      |
 | cdm_parentjobpositionid.cdmjobpositionnumber   (cdm_parentjobpositionid.cdmjobpositionnumber) | PARENTPOSITIONID (PARENTPOSITIONID)         |
@@ -174,7 +172,7 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 
 ### <a name="workers-to-worker"></a>Dolgozók a Dolgozóhoz
-| Dataverse-tábla (forrás)           | Finance-entitás (cél)       |
+| Common Data Service-entitás (forrás)           | Finance-entitás (cél)       |
 |-----------------------------------------------|---------------------------------------------------|
 | cdm_birthdate   (cdm_birthdate)               | SZÜLETÉSI DÁTUM   (SZÜLETÉSI DÁTUM)                           |
 | cdm_gender   (cdm_gender)                     | NEM (NEM)                                   |
@@ -193,7 +191,7 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 ### <a name="employments-to-employment"></a>Foglalkoztatások a Foglalkoztatáshoz
 
-| Dataverse-tábla (forrás)                             | Finance-entitás (cél) |
+| Common Data Service-entitás (forrás)                             | Finance-entitás (cél) |
 |-----------------------------------------------------------------|---------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | FOGLALKOZTATÁS KEZDŐ DÁTUMA   (FOGLALKOZTATÁS KEZDŐ DÁTUMA) |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | FOGLALKOZTATÁS BEFEJEZŐ DÁTUMA   (FOGLALKOZTATÁS BEFEJEZŐ DÁTUMA)     |
@@ -203,7 +201,7 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 ### <a name="employments-to-employment-detail"></a>Foglalkoztatások a Foglalkoztatás részleteihez
 
-| Dataverse-tábla (forrás)                             | Finance-entitás (cél)   |
+| Common Data Service-entitás (forrás)                             | Finance-entitás (cél)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_employmentstartdate   (cdm_employmentstartdate)             | FOGLALKOZTATÁS KEZDŐ DÁTUMA   (FOGLALKOZTATÁS KEZDŐ DÁTUMA)   |
 | cdm_employmentenddate   (cdm_employmentenddate)                 | FOGLALKOZTATÁS BEFEJEZŐ DÁTUMA   (FOGLALKOZTATÁS BEFEJEZŐ DÁTUMA)       |
@@ -221,16 +219,16 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 ### <a name="position-worker-assignment-to-position-worker-assignments"></a>Dolgozó beosztáshoz való hozzárendelése a Dolgozó beosztáshoz való hozzárendeléseihez
 
-| Dataverse-tábla (forrás)                             | Finance-entitás (cél)   |
+| Common Data Service-entitás (forrás)                             | Finance-entitás (cél)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | SZEMÉLYZETI SZÁM   (SZEMÉLYZETI SZÁM)           |
 | cdm_jobpositionnumber   (Feladatbeosztás száma)                   | BEOSZTÁSAZONOSÍTÓ(BEOSZTÁSAZONOSÍTÓ)                        |
 | cdm_validfrom   (Érvényesség kezdete)                                    | ÉRVÉNYESSÉG KEZDETE   (ÉRVÉNYESSÉG KEZDETE)                       |
-| cdm_validto (Érvényesség vége)                                        | VALIDTO (VALIDTO)                             |
+| cdm_validto (Érvényesség vége)                                        | ÉRVÉNYESSÉG VÉGE (ÉRVÉNYESSÉG VÉGE)                             |
 
 ### <a name="worker-addresses-to-worker-postal-address-v2"></a>Dolgozói címek a Dolgozó postai címéhez V2
 
-| Dataverse-tábla (forrás)                             | Finance-entitás (cél)   |
+| Common Data Service-entitás (forrás)                             | Finance-entitás (cél)   |
 |-----------------------------------------------------------------|-----------------------------------------------|
 | cdm_workerid.cdm_workernumber   (cdm_workerid.cdm_workernumber) | SZEMÉLYZETI SZÁM   (SZEMÉLYZETI SZÁM)           |
 | cdm_addresstype   (cdm_addresstype)                             | CÍM-HELYSZEREPKÖRÖK   (CÍM-HELYSZEREPKÖRÖK) |
@@ -250,12 +248,10 @@ A Human Resources és a Finance közötti integráció megkísérli a rekordok e
 
 Probléma merülhet fel olyan **Dolgozó** esetén, amely a **Személyzeti szám** használatával hozza létre az egyezést, illetve a **Beosztásokat**. A feladatok nem használnak számsorozatokat. Ennek eredményeképpen, ha ugyanaz a feladatazonosító a Human Resources alkalmazásban és a Finance modulban is szerepel, a Human Resources-adatok felülírják a Dynamics 365 Finance rendszer adatait. 
 
-Ha meg szeretné akadályozni az ismétlődő azonosítókkal kapcsolatos problémákat, adjon hozzá egy előtagot a [számsorozathoz](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json), vagy állítson be egy kezdő számot a számsorozathoz, amely túllépi a másik rendszer tartományát. 
+Ha meg szeretné akadályozni az ismétlődő azonosítókkal kapcsolatos problémákat, adjon hozzá egy előtagot a [számsorozathoz](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/talent/toc.json), vagy állítson be egy kezdő számot a számsorozathoz, amely túllépi a másik rendszer tartományát. 
 
 A dolgozó címében használt helyazonosító nem része számsorozatnak. A dolgozói cím Human Resources alkalmazásból a Finance alkalmazásba való integrálása során ha a dolgozói cím már létezik a Finance modulban, akkor ismétlődő címrekord jön létre. 
 
 Az alábbi ábrán látható egy példa az Adatintegrátorban való sablonleképezésre. 
 
-![Sablon-hozzárendelés.](./media/IntegrationMapping.png)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![Sablonleképezés](./media/IntegrationMapping.png)

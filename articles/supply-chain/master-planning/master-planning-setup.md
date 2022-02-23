@@ -1,14 +1,17 @@
 ---
 title: Alaptervezés beállítása
 description: Ez a témakör az alaptervezés beállításához használt különböző fontos stratégiákat és paramétereket ismerteti.
-author: ChristianRytt
+author: t-benebo
+manager: tfehr
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -16,12 +19,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 6d33fd53dd088ae4c6b4680d2604f783a3e1a5a0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a74d2987eac7409b5f576a52eccc37cf29566c7b
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580720"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429332"
 ---
 # <a name="set-up-master-planning"></a>Alaptervezés beállítása
 
@@ -106,11 +109,11 @@ Minden terv esetében az **Alaptervek** lap **Általános** gyorslapján  (**Ala
 
 ### <a name="operations-scheduling"></a>Műveletek ütemezése
 
-A műveletek ütemezését arra használhatja, hogy általános időbeli becslést készítsen a termelési folyamatról. A műveletütemezés nem biztosítja az útvonalhoz tartalmazó termelési műveletek feladatokká való lebontását. A műveletütemezéssel kapcsolatos további tudnivalókat lásd: [Műveletütemezés](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
+A műveletek ütemezését arra használhatja, hogy általános időbeli becslést készítsen a termelési folyamatról. A műveletütemezés nem biztosítja az útvonalhoz tartalmazó termelési műveletek feladatokká való lebontását. A műveletütemezéssel kapcsolatos további tudnivalókat lásd: [Műveletütemezés](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling).
 
 ### <a name="job-scheduling"></a>Feladatütemezés
 
-A feladatütemezés részletesebb ütemezési módszer, amely feladatokra bontja az egyes műveleteket. A feladatütemezés információkat tartalmaz a kapacitásról. Általában az üzemben végrehajtott egyes feladatok ütemezésére használják, rendszerint azonnal vagy rövid távú jelleggel. A feladatütemezéssel kapcsolatos további tudnivalókat lásd: [Feladatütemezés](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+A feladatütemezés részletesebb ütemezési módszer, amely feladatokra bontja az egyes műveleteket. A feladatütemezés információkat tartalmaz a kapacitásról. Általában az üzemben végrehajtott egyes feladatok ütemezésére használják, rendszerint azonnal vagy rövid távú jelleggel. A feladatütemezéssel kapcsolatos további tudnivalókat lásd: [Feladatütemezés](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="time-fences-in-days"></a>Időkorlát napokban
 
@@ -158,7 +161,7 @@ A műveletkérő üzenetek olyan változtatásokat javasolnak, amelyek a meglév
 
 A **Műveletkérő üzenet** beállítás **Igen** értékre állításával felülbírálhatja az alapütemezés során a cikkhez definiált műveletkérő üzenet időkorlátját. Ebben az esetben adja meg a napok számát, ami alatt az alapütemezésnek műveletkérő üzeneteket kell létrehoznia az igényekhez. A műveletkérő üzenet időkorlátjának kiszámítása a jelenlegi dátumtól kezdődik.
 
-A műveletkérő üzenetekkel kapcsolatos további tudnivalókat lásd: [Műveletkérő üzenetek:](/dynamics365/unified-operations/supply-chain/master-planning/action-messages)műveletkérő üzenetek.
+A műveletkérő üzenetekkel kapcsolatos további tudnivalókat lásd: [Műveletkérő üzenetek:](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/action-messages)műveletkérő üzenetek.
 
 > [!NOTE]
 > A műveletkérő üzenetek számítása hosszabb üzemidőt okoz az alaptervezésben. Ha a műveletkérő üzenetek elemzése és alkalmazása nem rendszeresen történik (naponta, hetente és így tovább), fontolja meg a számítás kikapcsolását az Alaptervezés futtatása során. A számítás kikapcsolásához az **Alaptervek** oldalon állítsa a **Műveletkérő üzenet** időkorlátját **0-ra** (nulla) az éppen futtatott alapterv esetében. Győződjön meg arról is, hogy a **műveletkérő üzenet** beállítás minden fedezeti csoport esetében ki van kapcsolva.
@@ -223,7 +226,4 @@ A dinamikus negatív napok figyelembe veszik a cikk átfutási idejét és az Ö
 
 A rendszer csak az ezen időkorláton belül tervezett beszerzési rendeléseket használja, és az időkorláton kívül hoz létre új tervezett rendelést. A dinamikus negatív napok előnye, hogy magában foglalja az adott termék átfutási idejét, lehetővé teszi a meglévő rendelések újrafelhasználását, és kiküszöböli az átfutási idő okozta késések miatt új tervezett rendelések létrehozását. 
 
-További tájékoztatásért lásd: [Negatív napok és dinamikus negatív napok](/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+További tájékoztatásért lásd: [Negatív napok és dinamikus negatív napok](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/more-about-dynamic-negative-days).

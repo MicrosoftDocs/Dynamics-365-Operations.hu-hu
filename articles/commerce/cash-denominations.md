@@ -2,9 +2,11 @@
 title: Készpénzcímletek konfigurálása a pénztár (POS) számára
 description: A háttérirodában meghatározható a pénztárosok, értékesítési munkatársak és a vezetők által az üzletben levő POS modulban használandó bankjegyek és érmék készpénzcímlete.
 author: jblucher
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
@@ -16,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ff4eb5bc7c5e2c0192a5349219301b26e479ac6be978eb05063b68f348b4e55
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e3a5f9a73bdee50e3e7c68125144c3b43305efa8
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743458"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4961559"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>Készpénzcímletek konfigurálása a pénztár (POS) számára
 
@@ -33,7 +35,7 @@ A háttérirodában meghatározható a pénztárosok, értékesítési munkatár
 
 A címletek üzletenként állíthatók be a **Beállítás** \> **Készpénzelszámolás** lehetőségnél az üzlet tulajdonságainak oldalán.
 
-![Készpénzelszámolás beállítás.](./media/image1-denomination.png)
+![Készpénzelszámolás beállítás](./media/image1-denomination.png)
 
 Címlet meghatározása:
 
@@ -41,7 +43,7 @@ Címlet meghatározása:
 1. Adja meg a típust (érme vagy bankjegy).
 1. Adja meg az összeget (érték).
 
-![Készpénzelszámolás címletek szerint oldal.](./media/image2-denomination.png)
+![Készpénzelszámolás címletek szerint oldal](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>A funkcióprofil konfigurálása
 
@@ -49,6 +51,3 @@ A POS-ben készpénzzel történő fizetés esetén a felhasználó a bankjegyc�
 
 - **Nagyobb vagy egyenlő az esedékes összeggel** – alapértelmezés szerint a POS csak azokat az esedékes összegnél nagyobb címleteket jeleníti meg, amelyek lehetővé teszik az egyetlen mozdulattal elvégezhető fizetést. Például, ha az esedékes összeg 7,50 dollár, a POS a következő címleteket jelenítené meg: $10, $20, $50 és $100. A fenti összegek bármelyikének megérintése automatikusan kifizeti az értékesítést ehhez az összeghez. A $1 és $5 címletek nem jelennek meg, mivel ezek az összegek kisebbek az esedékes összegnél.
 - **Minden címlet** – Jelölje be ezt a lehetőséget, hogy minden címletet megjelenítsen a POS rendszerben, függetlenül az esedékes összeg mértékétől. Ez azt jelenti, hogy a felhasználó az esedékes összeget eléréséhez címletkombinációkat használhat. Például ha az esedékes összeg 25,00 dollár, a felhasználó választhatja a $20 és $5 címletet az értékesítés befejezéséhez.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

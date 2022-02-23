@@ -2,29 +2,34 @@
 title: Feladatlisták hozzárendelése áruházakhoz vagy alkalmazottakhoz
 description: Ez a témakör bemutatja, hogy hogyan lehet feladatlistákat hozzárendelni az üzletekhez vagy munkavállalókhoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 18f13fb1754b2740b8447a67f09320651b0ca4003c6f46c6d4668e5159ae1a2d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 82cec9861b759037f40315fb2e6f36002a0ac059
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730827"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412928"
 ---
 # <a name="assign-task-lists-to-stores-or-employees"></a>Feladatlisták hozzárendelése áruházakhoz vagy alkalmazottakhoz
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör bemutatja, hogy hogyan lehet feladatlistákat hozzárendelni az üzletekhez vagy munkavállalókhoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 A Feladatkezelés a Dynamics 365 Commerce alkalmazásban lehetővé teszi egy feladatlista hozzárendelését több üzlethez vagy alkalmazotthoz, illetve üzletekhez és alkalmazottak kombinációjához is. Például egy 20 üzletet kezelő területi vezető a **Felkészülés az ünnepi időszakra** feladatlistáját mind a 20 üzlethez társítani szeretné.
 
@@ -45,7 +50,7 @@ A Feladatlista hozzárendelési folyamatának megkezdéséhez hajtsa végre az a
 
 A következő ábra egy példát mutat be az üzletek megtalálására és kiválasztására a **Folyamat indítása** párbeszédpanelen.
 
-![Üzletek keresése és kiválasztása a Folyamat indítása párbeszédpanelen.](media/HQ-Assign-Tasks-Lists.png)
+![Üzletek keresése és kiválasztása a Folyamat indítása párbeszédpanelen](media/HQ-Assign-Tasks-Lists.png)
 
 ## <a name="assign-task-lists-on-a-recurring-basis"></a>Feladatlisták társítása ismétlődő alapon
 
@@ -62,7 +67,7 @@ A kiskereskedőnek néha ismétlődő feladatai is vannak, például a „Csüt�
 
 A következő ábra egy példát mutat be a gyakorisági feltételek megadására az **Ismétlődés definiálása** párbeszédpanelen.
 
-![Gyakorisági feltételek megadása az Ismétlődés definiálása párbeszédpanelen.](media/HQ-Assign-Tasks-Lists-Recurrently.png)
+![Gyakorisági feltételek megadása az Ismétlődés definiálása párbeszédpanelen](media/HQ-Assign-Tasks-Lists-Recurrently.png)
 
 ## <a name="track-task-list-status"></a>A feladatlista állapotának nyomon követése
 
@@ -87,6 +92,3 @@ Ha nyomon szeretné követni a az összes önhöz rendelt feladat feladatlista �
 [Feladatlisták létrehozása és feladatok hozzáadása](task-mgmt-create-lists.md)
 
 [Feladatkezelés a pénztárban](task-mgmt-POS.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

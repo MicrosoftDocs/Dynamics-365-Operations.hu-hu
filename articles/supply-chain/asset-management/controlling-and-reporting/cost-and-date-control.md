@@ -1,10 +1,12 @@
 ---
 title: Költség- és dátumellenőrzés
 description: Ez a cikk az Eszközkezelés költség és dátum kontroll funkcióját ismerteti.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetBICostControlWorkspace, EntAssetWorkOrderDateControl, EntAssetWorkOrderForecastCostInfoPart, EntAssetMaintenanceCostTrans, EntAssetWorkOrderDateControlCalcDialog, EntAssetCostControl, EntAssetCostObjectCalendar, EntAssetWorkOrderCostInfoPart
 audience: Application User
@@ -12,21 +14,23 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 826e0aab8c717bb951d80aff61b2d72dad802189706f720c48e72c8a1c393ead
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1de12233ff296f77ba9984fa8d957d4c2bc90b3f
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731913"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5019075"
 ---
 # <a name="cost-and-date-control"></a>Költség- és dátumellenőrzés
 
 [!include [banner](../../includes/banner.md)]
 
-Az eszközkezelésben kiszámíthatja a költségeket, és így áttekintést kaphat a tényleges költségekről a költségvetésben meghatározott költségekkel szemben az eszközökön, munkavégzési helyszínekn vagy munkarendeléseken. A tényleges költségek a feladott tranzakciókon alapulnak.
+ 
+
+Az eszközkezelésben kiszámíthatja a költségeket, és így áttekintést kaphat a tényleges költségekről a költségvetésben meghatározott költségekkel szemben az eszközökön, munkavégzési helyszínekn vagy munkarendeléseken. A tényleges költségek a feladott tranzakciókon alapulnak. 
 
 Ha a munkarendelések tényleges kezdési és befejezési dátumaival szeretné összehasonlítani az ütemezett kezdési és befejezési dátumokat, akkor dátumszámítást is végezhet.
 
@@ -44,8 +48,8 @@ Az eszközökre, munkavégzési helyszínekre és munkarendelésekre vonatkozó 
 
 5. A **Szint** mezőben megadhatja, hogy a költségellenőrzési sorok milyen részletesen jelenítsék meg a munkavégzési helyszíneket. 
 
-    Ha például az „1” értéket adja meg a mezőben, és többszintű struktúrát használ a munkavégzési helyszínek hierarchiájához, akkor a munkavégzési helyszínekhez tartozó költségellenőrzési sorok a legfelső szinten jelennek meg, így a sorban szereplő órák hozzáadhatók az alacsonyabb szinten található munkavégzési helyszínekből.
-
+    Ha például az „1” értéket adja meg a mezőben, és többszintű struktúrát használ a munkavégzési helyszínek hierarchiájához, akkor a munkavégzési helyszínekhez tartozó költségellenőrzési sorok a legfelső szinten jelennek meg, így a sorban szereplő órák hozzáadhatók az alacsonyabb szinten található munkavégzési helyszínekből. 
+    
     Ha a „0” értéket adja meg a **Szint** mezőben, akkor részletes eredmény jelenik meg, amely az költségellenőrzés minden sorát megjeleníti az összes olyan munkavégzési helyszín szintnél, amelyhez a sor kapcsolódik.
 
 6. Ha a számításban szerepeltetni szeretné ezt az oszlopot, válassza az „Igen” beállítást a **Nyitott vállalt költség megjelenítése** gombbal.
@@ -58,11 +62,11 @@ Az eszközökre, munkavégzési helyszínekre és munkarendelésekre vonatkozó 
 
     Az alábbi ábrán az **Eszközköltség ellenőrzése** párbeszédpanel egyik példája látható.
 
-    ![Eszköz költségének ellenőrzése párbeszédpanel.](media/01-controlling-and-reporting.png)
+    ![Eszköz költségének ellenőrzése párbeszédpanel](media/01-controlling-and-reporting.png)
 
 10. Az **Eszközköltségek ellenőrzése** lapon a **Csoportosítási szempont...** műveleti ablaktáblacsoportjaiban kattintson a megfelelő gombokra a költségszámításhoz kívánt részletességi szintjének a megjelenítéséhez. A kiválasztott **Csoportosítási szempont…** ablaktáblacsoport gombjai ki vannak emelve. A gombra kattintva aktiválhatja vagy inaktiválhatja a funkciót.
 
-## <a name="example-of-calculation-results-in-asset-cost-control"></a>Példa számítási eredmények az eszköz költségének ellenőrzéséhez
+## <a name="example"></a>Példa
 
 Az alábbi képernyőfotón az **Eszközköltség kontrollja** számítási eredmény egyik példája látható.
 
@@ -71,9 +75,10 @@ Az alábbi képernyőfotón az **Eszközköltség kontrollja** számítási ered
 - A **Nyitott vállalt költség** mező a megrendelt vagy bevételezett, de még ki nem fizetett cikkek, órák vagy szolgáltatások kifizetésére vonatkozó kötelezettségeket mutatja. 
 - Miután minden felhasználási regisztráció fel van adva, a kapcsolódó költségek a **Tényleges költség** mezőben szerepelnek.
 
-![Példa számítási eredmények az Eszköz költségének ellenőrzéséhez.](media/02-controlling-and-reporting.png)
+![Példa számítási eredmények az Eszköz költségének ellenőrzéséhez](media/02-controlling-and-reporting.png)
 
 A költség számításának másik módja az, ha többszörös kiválasztással kiválasztja az eszközöket az **Összes eszköz** vagy **Aktív eszközök** pontban. Ezután kattintson a **Költségellenőrzés** gombra az **Általános** lapon. Az **Eszközköltség ellenőrzése** párbeszédpanelen a program automatikusan beilleszti a kiválasztott eszközöket az **Eszköz** mezőbe a **Belefoglalandó rekordok** gyorslapon. Kattintson az **OK** gombra, és megjelenik a kiválasztott eszközökre vonatkozó költségszámítás. Ugyanez az eljárás hajtható végre az **Összes munkavégzési helyszín** vagy **Aktív munkavégzési helyszínek** pontban található munkavégzési helyszíneknél, valamint a munkarendeléseknél az **Összes munkarendelés** vagy **Aktív munkarendelések** pontban.
+
 
 ## <a name="work-order-date-control"></a>Munkarendelési dátum ellenőrzése
 
@@ -91,7 +96,7 @@ Ezen a lapon áttekintést kaphat a munkarendelések várható kezdő és befeje
 
 6. Kattintson a **Csoportosítási szempont...** gombokra a költségszámításhoz kívánt részletességi szintjének a megjelenítéséhez. A kiválasztott **Csoportosítási szempont…** ablaktáblacsoport gombjai ki vannak emelve. A gombra kattintva aktiválhatja vagy inaktiválhatja a funkciót.
 
-## <a name="example-of-calculation-results-in-work-order-date-control"></a>Példa számítási eredmények a munkarendelés dátumának ellenőrzéséhez
+## <a name="example"></a>Példa
 
 Az alábbi képernyőfotón a **Munkarendelés dátumkontrollja** számítási eredmény egyik példája látható.
 
@@ -99,9 +104,6 @@ Az alábbi képernyőfotón a **Munkarendelés dátumkontrollja** számítási e
 - Az **Átlagos záró késleltetés** mező a munkarendelés tervezett záró dátuma és a tényleges záró dátum közötti különbséget jeleníti meg napokban. Ha például a tényleges záró dátum három nappal az ütemezett kezdési dátum után volt, akkor ebben a mezőben a „3” jelenik meg.  
 - Az **Előfordulások** mező mutatja, hogy hányszor fordulnak elő eltérések az ütemezett és a tényleges kezdési dátumra nézve, valamint az ütemezett és a tényleges befejezési dátumra nézve a munkarendelésen.
 
-![Példa számítási eredmények a Munkarendelés dátumának ellenőrzéséhez.](media/03-controlling-and-reporting.png)
+![Példa számítási eredmények a Munkarendelés dátumának ellenőrzéséhez](media/03-controlling-and-reporting.png)
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

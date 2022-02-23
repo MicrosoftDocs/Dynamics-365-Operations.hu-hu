@@ -2,13 +2,16 @@
 title: Engedmények megjelenítése a pénztárban
 description: Ez a témakör azt mutatja be, hogy a Microsoft Dynamics 365 Commerce hogyan segíti az értékesítési munkatársak számára megismerni a promóciókkal kapcsolatos tudnivalókat, valamint azt, hogy hogyan használhatók fel a keresztértékesítéshez és a felülértékesítéshez.
 author: ShalabhjainMSFT
+manager: AnnBe
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-ms.openlocfilehash: 9e3fa5030cb684c01153d255ca2bd34d9be7dc9945f0c7ec26985cf74540b73d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7531e250580019a1e9892d22fc7761770227c61f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731667"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412866"
 ---
 # <a name="show-discounts-in-pos"></a>Engedmények megjelenítése a pénztárban
 
@@ -33,7 +36,7 @@ A promóciók fontos szerepet játszanak a vásárlási döntéseket meghozó ve
 
 A Commerce egy "„Összes engedmény megtekintése” nevű műveletet tartalmaz. Ez a művelet az üzletben éppen elérhető összes engedményt jeleníti meg. Az „Összes engedmény megtekintése” művelet leképezhető a pénztár (POS) egyik gombjára, és ezt a gombot fel lehet venni **Üdvözlő** oldalra vagy a **Tranzakció** lapra. A következő ábra a megnyitott **Összes kedvezmény** oldalt szemlélteti.
 
-![Minden kedvezmény oldal.](./media/View_all_discounts.png "Minden kedvezmény oldal")
+![Minden kedvezmény oldal](./media/View_all_discounts.png "Minden kedvezmény oldal")
 
 A kedvezmények megjelenítéséhez a rendszer minden olyan engedményt megkeres, amely megfelel a következő feltételek valamelyikének:
 
@@ -61,11 +64,8 @@ A következő illusztrációk mutatják be azt a logikát, amely meghatározza, 
 
 A következő ábra bemutatja azt a logikát, amely akkor használatos, ha az engedmény vezérlőjének beállítása **Legjobb ár és kombináció a prioritáson belül, ne legyen kombinálás prioritások között**.
 
-![A Legjobb ár és kombináció a prioritáson belül, ne legyen kombinálás a prioritások között logikája.](./media/Model_1.png "A Legjobb ár és kombináció a prioritáson belül, ne legyen kombinálás prioritások között logikája").
+![A Legjobb ár és kombináció a prioritáson belül, ne legyen kombinálás prioritások között logikája](./media/Model_1.png "A Legjobb ár és kombináció a prioritáson belül, ne legyen kombinálás prioritások között logikája").
 
 A következő ábra bemutatja azt a logikát, amely akkor használatos, ha az engedmény vezérlőjének beállítása **Csak a legjobb ár prioritáson belül, mindig legyen kombinálás prioritások között**.
 
-![A Csak a legjobb ár prioritáson belül, mindig legyen kombinálás a prioritások között logikája.](./media/Model_2.png "A Csak a legjobb ár prioritáson belül, mindig legyen kombinálás prioritások között logikája").
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+![A Csak a legjobb ár prioritáson belül, mindig legyen kombinálás prioritások között logikája](./media/Model_2.png "A Csak a legjobb ár prioritáson belül, mindig legyen kombinálás prioritások között logikája").

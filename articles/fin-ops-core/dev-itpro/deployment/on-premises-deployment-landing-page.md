@@ -2,26 +2,26 @@
 title: Helyszíni telepítés kezdőlapja
 description: Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat.
 author: sericks007
-ms.date: 07/01/2021
+manager: AnnBe
+ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-ms.custom:
-- "55651"
-- intro-internal
+ms.custom: 55651
 ms.assetid: ''
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 93ed4e81db18cd02c097ff188003569e7bb391c511fd93fcab0961c14029dc96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 54d236b7bca3e4529d5fff3ef71a2679b785a1a5
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712568"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4679344"
 ---
 # <a name="on-premises-deployment-home-page"></a>Helyszíni telepítés kezdőlapja
 
@@ -33,21 +33,18 @@ Telepíthet Dynamics 365 Finance  + Operations (helyi) alkalmazást. Amikor egy 
 - [Helyszíni telepítés áttekintése](on-premises-overview.md)
 - [Helyszíni telepítések tervezése és előkészítése](plan-onprem-deployment.md)
 - [Helyszíni telepítések rendszerkövetelményei](../../fin-ops/get-started/system-requirements-on-prem.md)
-- [Microsoft Dynamics 365 Finance + Műveletek (on-premises) támogatott szoftver](onprem-compatibility.md)
 - [Hardverméretezési követelmények helyszíni környezetekben](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [A Finance + Operations (on-premises) megvásárlása](../../fin-ops/get-started/purchase-on-premises.md)
 - [Felhőalapú és helyszíni szolgáltatások összehasonlítása](../../fin-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Felvétel
 - [Helyszíni projektek beállítása a Lifecycle Services (LCS) szolgáltatásban](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Helyszíni környezetek telepítése és üzemeltetése (Platform update 41-es és újabb verziókon)](setup-deploy-on-premises-pu41.md)
-- [Helyszíni környezetek beállítása és telepítése (Platformfrissítés 12–40-es verziókon)](setup-deploy-on-premises-pu12.md)
+- [Helyszíni környezetek telepítése és üzemeltetése (Platform update 12-es és újabb verziókon)](setup-deploy-on-premises-pu12.md)
 - [Hálózati nyomtatók helyszíni környezetben történő telepítése](../analytics/install-network-printer-onprem.md)
 - [Az SQL Server Reporting Services konfigurálása on-premises telepítésekhez](../analytics/configure-ssrs-on-premises.md)
 - [Egyéni modellek fejlesztése és telepítése helyszíni környezetekhez](develop-deploy-custom-models-on-premises.md)
 
 ## <a name="work-in-your-on-premises-deployment"></a>Munka az on-premises telepítésen
-- [Az SQL Server Reporting Services (SSRS) csomópontok magas rendelkezésre állásának konfigurálása](onprem-SSRSHA.md)
 - [A dokumentumkezelés konfigurálása](../../fin-ops/organization-administration/configure-document-management.md)
 - [Elektronikus jelentéskészítési (ER) konfigurációk importálása](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Dokumentumok létrehozása, közzététele és nyomtatása helyszíni telepítéseknél](../analytics/printing-capabilities-on-premises.md)
@@ -59,10 +56,10 @@ Telepíthet Dynamics 365 Finance  + Operations (helyi) alkalmazást. Amikor egy 
 - [Ugyanazon AD FS-példány újrahasznosítása több környezet esetén](onprem-reuseadfs.md)
 
 ## <a name="commerce"></a>Kereskedelem
-- [A helyszíni telepítéseknél rendelkezésre álló kereskedelmi lehetőségek](../../../commerce/retail-onprem.md)
+- [A helyszíni telepítéseknél rendelkezésre álló kereskedelmi lehetőségek](../../../retail/retail-onprem.md)
 - [A Retail csatorna összetevőinek helyszíni környezetben való telepítési lépései](deploy-retail-onprem.md)
-- [Az Modern POS (MPOS) konfigurálása, telepítése és aktiválása](../../../commerce/retail-modern-pos-device-activation.md)
-- [A Commerce Scale Unit konfigurálása és telepítése](../../../commerce/dev-itpro/retail-store-scale-unit-configuration-installation.md)
+- [Az Modern POS (MPOS) konfigurálása, telepítése és aktiválása](../../../retail/retail-modern-pos-device-activation.md)
+- [A Commerce Scale Unit konfigurálása és telepítése](../../../retail/dev-itpro/retail-store-scale-unit-configuration-installation.md)
 
 ## <a name="upgrade"></a>Frissítés
 - [Helyi frissítési folyamaz helyszíni környezetekben](../migration-upgrade/on-prem-upgrade.md)
@@ -75,6 +72,3 @@ Telepíthet Dynamics 365 Finance  + Operations (helyi) alkalmazást. Amikor egy 
 - [Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásnál](../migration-upgrade/deprecated-features.md)
 - [A szoftver életciklusára vonatkozó irányelv és a helyszíni kiadások](../migration-upgrade/on-prem-version-update-policy.md)
  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,33 +1,31 @@
 ---
 title: Adatbázis-naplózás konfigurálása és kezelése
 description: Nyomon követheti a táblák és a mezők módosításait az Dynamics 365 Human Resources adatbázisnaplózás funkciójával.
-author: twheeloc
-ms.date: 12/15/2021
+author: Darinkramer
+manager: AnnBe
+ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: jaredha
+ms.author: dkrame
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3cbe4c105b14935db6803e4bded0d891c564fb81
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 3dc4658a0a13af95978c66f5aab882902f754a2d
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066440"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418848"
 ---
 # <a name="configure-and-manage-database-logging"></a>Adatbázis-naplózás konfigurálása és kezelése
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Nyomon követheti a táblák és a mezők módosításait az Dynamics 365 Human Resources adatbázisnaplózás funkciójával. Ez a témakör ismerteti, hogyan végezheti el a következőket:
 
@@ -68,22 +66,7 @@ A teljesítmény javítása érdekében a teljes táblák naplózása helyett cs
 Az **Adatbázis-változások naplózása** varázsló használatával állíthatja be az adatbázis naplózását. A varázslóval rugalmasan beállíthatja a táblák és a mezők naplózását.
 
 1. Nyissa meg a **Rendszeradminisztráció > Hivatkozások > Adatbázis-> Adatbázis-napló beállítása** elemet. Válassza az **Új** parancsot a **Adatbázis-változások naplózása** varázsló elindításához.
-2. Válassza ki **Következő** lehetőséget. 
-3. A varázsló **Táblák és mezők** lapján jelölje ki azokat a táblákat és mezőket, amelyeken engedélyezni szeretné az adatbázis naplózását, és válassza a **Tovább** gombot.
-
-   > [!Note]
-   > Az adatbázis naplózása nem érhető el a Human Resources adatbázisának minden táblája esetén. A lista alatti **Összes tábla megjelenítése** lehetőség választásával kibontja a táblák és mezők listáját, hogy minden olyan adatbázistábla látható legyen, amelyekhez az adatbázisnaplózás elérhető, de ez az adatbázistáblák teljes listájának részhalmaza lesz.
-
-4. A varázsló **Módosítás típusai** lapján jelölje ki azokat az adatműveleteket, amelyekben nyomon szeretné követni az egyes táblák és mezők módosításait, majd válassza a **Tovább** gombot. Az alábbi táblázatban található a naplózáshoz elérhető adatműveletek leírása.
-5. Tekintse át a módosításokat a **Befejezés** lapon, és válassza a **Befejezés** lehetőséget.
-
-| Művelet | Leírás |
-| -- | -- |
-| Új tranzakciók nyomon követése | Napló létrehozása a táblában létrehozott új rekordokhoz. |
-| Módosítás | Napló létrehozása a táblarekordok frissítéséhez, illetve a tábla egyes kiválasztott mezőinek frissítéséhez. Ha a táblához választ naplófrissítést, akkor minden alkalommal létrejön egy naplórekord, amikor a tábla bármely mezőjében frissítés történik. Ha azt választja, hogy bizonyos mezők frissítéseit naplózza, akkor egy naplórekord csak akkor jön létre, amikor a táblarekordok ezen mezőiben frissítés történik. |
-| Eltávolítás | Napló létrehozása a táblából törölt rekordokhoz. |
-| Kulcs átnevezése | Naplórekord létrehozása táblakulcs átnevezése után. |
-
+2. Hajtsa végre a varázsló lépéseit.
 
 ## <a name="clean-up-database-logs"></a>Adatbázisnaplók karbantartása
 
@@ -96,14 +79,11 @@ Az adatbázis-naplókat egészben vagy egy részben törölheti a következő be
 Az adatbázis-tisztítás beállításához kövesse az alábbi lépéseket: 
 
 1. Nyissa meg a **Rendszeradminisztráció > Hivatkozások > Adatbázis-> Adatbázis-napló** elemet. Válassza ki a **Napló tisztítása** lehetőséget.
-2. Alatt **Felvételek** fejléc, válassza ki **Szűrő**.
-3. Válassza ki a törölni kívánt naplók kiválasztásának módját. Adja meg az alábbi lehetőségek egyikét:
+
+2. Válassza ki a törölni kívánt naplók kiválasztására szolgáló módszert a következő lehetőségek egyikének megadásával:
 
    - Táblaazonosító (ID)
    - Napló típusa
    - Létrehozás dátuma és időpontja
 
-4. Az **Adatbázis-napló tisztítása** lapon megadhatja, hogy mikor fusson a naplókarbantartási feladat. Alapértelmezés szerint az adatbázisnaplók 30 napig érhetők el.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+3. Az **Adatbázis-napló tisztítása** lapon megadhatja, hogy mikor fusson a naplókarbantartási feladat. Alapértelmezés szerint az adatbázisnaplók 30 napig érhetők el.

@@ -1,26 +1,29 @@
 ---
 title: Készletkötegek egyesítése
 description: Ez a cikk a két vagy több készletköteg egyesített köteggé történő összevonásáról nyújt tájékoztatást.
-author: yufeihuang
+author: pjacobse
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
-ms.author: yufeihuang
+ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 83c7fa6bf596510c3b902c12433cc55842ebe0b4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: fa571fb7392f6f7154f7f1bfd908e11e1bebd3a6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571905"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429688"
 ---
 # <a name="merge-inventory-batches"></a>Készletkötegek egyesítése
 
@@ -137,6 +140,3 @@ Jóváhagyhatja a kötegegyesítés készletnaplóját **Az összes kötegegyes�
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Miután egyesítettem a tényleges súllyal rendelkező cikkeket, miért nem látszik a tényleges súly adat a készletnaplóban?
 Ugyanúgy egyesítheti a tényleges súllyal rendelkező cikkek kötegeit, mint minden más cikket. Azonban a tényleges súly adaton nem jelennek meg a készletnaplóban. Ajánlatos a tényleges súly adatok ellenőrzése a kötegegyesítés készletnaplóba történő átvitele előtt.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

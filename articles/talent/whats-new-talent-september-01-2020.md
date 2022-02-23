@@ -44,5 +44,3 @@ Ez a kiadás a következő változásokat tartalmazza az LinkedIn Recruiter inte
 - A böngészőtámogatás frissítései (a LinkedIn már nem támogatja Internet Explorer 11-et 2020. július 1-től)
 
 További információ: [Jelöltek felkutatása a LinkedIn Recruiter használatával az Attract szolgáltatásban](attract-linkedin-recruiter.md).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

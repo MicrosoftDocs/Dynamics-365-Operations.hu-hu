@@ -1,24 +1,27 @@
 ---
 title: Konfigurációs szabályok létrehozása
 description: Ez az eljárás olyan konfigurációs szabályokat hoz létre, amelyeket a dimenzión alapuló konfigurációkhoz használhat fel az anyagjegyzék bizonyos kombinációinak betartására vagy megakadályozására.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMTable, BOMConfigRule, ConfigItemIdLookup
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b1b0bcf126f8b438f13ec7cc3537dfe1dab8c275
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 6bc0af4d95e9430d0b5c8b7fc9a4ade076802044
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569601"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429522"
 ---
 # <a name="create-configuration-rules"></a>Konfigurációs szabályok létrehozása
 
@@ -52,6 +55,3 @@ Ez az eljárás olyan konfigurációs szabályokat hoz létre, amelyeket a dimen
     * Válassza ki azt a cikkszámot, amelyet a megadott módszertől függően kijelöl vagy eltávolít.  
 18. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

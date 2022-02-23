@@ -66,6 +66,3 @@ A Szabadság és távollét kezelése a következő funkciókkal rendelkezik:
 - **Távolléti kérelmek beadása.**
 
     Az alkalmazottak távolléti kérelmeket nyújthatnak be a rendelkezésre álló órák számához képest. A kérelmek egyszerű egynapos kérelmek vagy több napos kérelmek lehetnek, amelyek többféle szabadság- és távolléti típust tartalmaznak. Ha a munkafolyamat nincs engedélyezve, a rendszer automatikusan jóváhagyja a kéréseket. Ha munkafolyamat engedélyezve van, a jóváhagyás lehet automatikus vagy be lehet állítani egy láttamozást a munkafolyamat-konfigurációjától függően.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

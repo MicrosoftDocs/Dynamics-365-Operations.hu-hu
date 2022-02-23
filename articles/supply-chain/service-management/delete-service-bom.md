@@ -1,39 +1,46 @@
 ---
-title: Szolgáltatási darabjegyzék törlése
-description: Ez a témakör azt az eljárást mutatja be, amivel törölni lehet a szolgáltatási anyagjegyzékeket.
-author: kamaybac
+title: Szolgáltatási anyagjegyzék törlése
+description: A szervizrendelések egy szerviztechnikus látogatását jelzik a vevő telephelyén, egy adott napon.
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectRelation
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f0b1ea4bd8c035db39763b3c1da9ccfc14030c24
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 744f78f2dd088e50c91e1f7ef0e6f68b176f9618
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569071"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429436"
 ---
-# <a name="delete-a-service-bom"></a>Szolgáltatási darabjegyzék törlése
+# <a name="delete-a-service-bom"></a>Szolgáltatási anyagjegyzék törlése 
 
 [!include [banner](../includes/banner.md)]
 
-1. Lépjen a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre. Jelölje ki azt a szolgáltatási szerződést, amelyből szolgáltatási anyagjegyzéket (BOM) szeretne törölni.
-1. A **Műveleti panelen** válassza a **Szolgáltatási tárgyak** lehetőséget.
-1. A **Szolgáltatás tárgyai** képernyőn válassza ki azt a szolgáltatási tárgyat, amelyből szolgáltatási anyagjegyzéket (BOM) szeretne törölni. Válassza a **Funkciók** lehetőséget, majd válassza a **Szolgáltatási AJ törlése** parancsot.
-1. Válassza ki az **Igen** lehetőséget.
+
+1.  Kattintson a **Szolgáltatáskezelés** \> **Közös** \> **Szolgáltatási szerződések** \> **Szolgáltatási szerződések** lehetőségre. Jelölje ki azt a szolgáltatási szerződést, amelyből szolgáltatási anyagjegyzéket (BOM) szeretne törölni.
+
+2.  A **Műveleti panelen** kattintson a **Szolgáltatás tárgyai** lehetőségre.
+
+3.  A **Szolgáltatás tárgyai** képernyőn válassza ki azt a szolgáltatási tárgyat, amelyből szolgáltatási anyagjegyzéket (BOM) szeretne törölni. Kattintson a **Funkciók** lehetőségre, majd válassza a **Szolgáltatási AJ törlése** parancsot.
+
+4.  Kattintson az **Igen** gombra.
 
 
 > [!NOTE]
-> Amennyiben nem határozott meg sablonanyagjegyzéket, a szolgáltatási anyagjegyzék a **Sablonanyagjegyzékek** oldalon törölhető. Ha viszont már meghatározott egy sablonanyagjegyzéket, a szolgáltatási anyagjegyzék ezzel a módszerrel nem törölhető.
+> <P>Amennyiben nem határozott meg sablonanyagjegyzéket, a szolgáltatási anyagjegyzék a <STRONG>Sablonanyagjegyzékek</STRONG> képernyőn törölhető. Ha viszont már meghatározott egy sablonanyagjegyzéket, a szolgáltatási anyagjegyzék ezzel a módszerrel nem törölhető.</P>
 
 
 
@@ -46,6 +53,3 @@ ms.locfileid: "7569071"
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

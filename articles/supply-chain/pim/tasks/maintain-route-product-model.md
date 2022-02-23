@@ -1,24 +1,26 @@
 ---
 title: Termékmodell útvonalának karbantartása
 description: Ezen eljárás futtatásához szükség van egy már létező termékkonfigurációs modellre.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails, PCRouteOperationDetails, WrkCtrCapabilityLookUp
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88df8b867ac7f354417add0462e7999747333451
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 90ea3f65284cc97906002015c715d9f071202bdb
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577264"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966830"
 ---
 # <a name="maintain-route-for-a-product-model"></a>Termékmodell útvonalának karbantartása
 
@@ -26,44 +28,41 @@ ms.locfileid: "7577264"
 
 Ezen eljárás futtatásához szükség van egy már létező termékkonfigurációs modellre. Ez az eljárás az USMF bemutatócég felső kategóriás hangszóró modelljét használva vezeti Önt végig a folyamaton.
 
-## <a name="add-a-route-operation"></a>Útvonalművelet hozzáadása
 
-1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
-1. Keresse meg és jelölje ki a kívánt rekordot a listán.
+## <a name="add-a-route-operation"></a>Útvonalművelet hozzáadása
+1. Kattintson a Termékváltozat modelldefinícióra.
+2. Kattintson a Termékkonfigurációs modellek lehetőségre.
+3. Keresse meg és jelölje ki a kívánt rekordot a listán.
     * Válassza ki a Felső kategóriás modellt ehhez a gyakorlathoz.  
-1. A listában válassza ki a kiválasztott sorból a hivatkozást.
-1. Bontsa ki az **Útvonalműveletek** szakaszt.
-1. Válassza a **Hozzáadás** lehetőséget.
-1. Írjon be egy értéket a **Név** mezőbe.
-1. Írjon egy értéket a **Leírás** mezőbe.
-1. Válassza a **Mentés** lehetőséget.
+4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
+5. Bontsa ki az Útvonalműveletek szakaszt.
+6. Kattintson a Hozzáadás gombra.
+7. Írjon be egy értéket a Név mezőbe.
+8. A Leírás mezőben adjon meg egy értéket.
+9. Kattintson a Mentés gombra.
 
 ## <a name="enter-route-operation-details"></a>Útvonalművelet részleteinek megadása
-
-1. **Útvonalművelet részleteinek** kiválasztása.
-1. A **Műveletek** mezőben adjon meg vagy válasszon ki egy értéket.
-1. A **Műveletszám** mezőben adjon meg egy számot.
+1. Kattintson az Útvonalműveleti részletek lehetőségre.
+2. A Műveletek mezőben adjon meg vagy válasszon ki egy értéket.
+3. A Műv. Szám mezőben adjon meg egy számot.
     * A műveleti számok határozzák meg az útvonalsorrendet.  
     * Egy útvonalművelet egyes tulajdonságainak lehet statikus értékük, vagy hozzá lehet rendelni őket egy attribútumhoz. Az attribútumhoz rendelés következtében az érték a konfiguráció része lesz.  
-1. Az **Útvonalcsoport** mezőben adjon meg, vagy válasszon ki egy értéket.
+4. Az Útvonalcsoport mezőben adjon meg, vagy válasszon ki egy értéket.
     * Az útvonalcsoport határozza meg az alapvető viselkedést a költségszámítási, a felhasználás és beállítás esetében.  
-1. Válassza ki a **Beállítás** fület.
-1. Válassza ki az **Időpontok** fület.
-1. A **Folyamat menny.** mezőben adjon meg egy számot.
+5. Kattintson a Beállítás fülre.
+6. Kattintson az Idők fülre.
+7. A Folyamat menny. mezőben adjon meg egy számot.
     * Határozza meg, hogy mennyi lesz feldolgozva egy művelet során.  
-1. Az **Órák/idő** mezőben adjon meg egy számot.
+8. Az Órák/idő mezőben adjon meg egy számot.
     * Adja meg az időarányt.  
-1. Jelölje be a **Beállít** jelölőnégyzetet.
-1. Adjon meg egy számot a **Futási idő** mezőben.
+9. Jelölje be a Beállít jelölőnégyzetet.
+10. Adjon meg egy számot a Futási idő mezőben.
     * Határozza meg a feldolgozási időt a megadott mennyiséghez.  
-1. Válassza ki az **Erőforrás-követelmények** fület.
-1. Válassza a **Hozzáadás** lehetőséget.
-1. A listában jelölje meg a kiválasztott sort.
-1. A **Követelmény típusa** mezőben válasszon ki egy lehetőséget.
+11. Kattintson az Erőforrás-követelmények fülre.
+12. Kattintson a Hozzáadás gombra.
+13. A listában jelölje meg a kiválasztott sort.
+14. A Követelmény típusa mezőben válasszon ki egy lehetőséget.
     * Döntse el, hogy akar-e megadni konkrét erőforrásokat vagy adottságokat, amelyeket fel kell dolgozniuk.  
-1. A **Követelmény** mezőben adjon meg vagy válasszon ki egy értéket.
-1. Válassza ki az **OK** lehetőséget.
+15. A Követelmény mezőben adjon meg vagy válasszon ki egy értéket.
+16. Kattintson az OK gombra.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

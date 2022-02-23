@@ -2,12 +2,15 @@
 title: Hitelesítés
 description: Ez a cikk áttekintést nyújt arról, hogyan lehet hitelesítést végrehajtani a Microsoft Dynamics 365 Human Resources adatainak alkalmazásprogramozási felületén (API).
 author: andreabichsel
+manager: AnnBe
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3396f0ae6d089f43c39f318dc9d92a88a7db3d7c
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: a0509ce99205d49d516e180203ffb65a1dc09a7c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070868"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418782"
 ---
 # <a name="authentication"></a>Hitelesítés
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Ez a cikk áttekintést nyújt arról, hogyan lehet hitelesítést végrehajtani a Microsoft Dynamics 365 Human Resources adatainak alkalmazásprogramozási felületén (API).
 
@@ -84,13 +82,13 @@ GET https://{cluster}.hr.talent.dynamics.com/namespaces/{namespace_guid}/data/Jo
         - Webalkalmazások esetében az alkalmazás alap URL-címét adja meg. Például a `http://localhost:31544` lehet a helyi számítógépen futó webalkalmazás URL-címe. A felhasználók ezután ezt az URL-címet használhatják a webes ügyfél alkalmazásába való bejelentkezéshez.
         - A nyilvános ügyfelek esetében adja meg azt az URI-t, amelyet az Azure AD a tokenválaszok visszaküldésére használ. Adjon meg az alkalmazásra jellemző értéket, például: `myapp://auth`.
 
-        A webalkalmazásokhoz és a natív alkalmazásokhoz kapcsolódó példákat a [Microsoft Identity platform (korábban Azure Active Directory fejlesztőknek) webhelyén található útmutatók tartalmazzák](/azure/active-directory/develop/#quickstarts).
+        A webalkalmazásokhoz és a natív alkalmazásokhoz kapcsolódó példákat a [Microsoft Identity platform (korábban Azure Active Directory fejlesztőknek) webhelyén található útmutatók tartalmazzák](https://docs.microsoft.com/azure/active-directory/develop/#quickstarts).
 
 5. Az **API-engedélyek** területen válassza az **Engedély hozzáadása** lehetőséget. Ezután a **Szervezet által használt API-k** lapon keresse meg a **Dynamics 365 Human Resources** alkalmazást, majd adja hozzá a **user\_impersonation** engedélyt az alkalmazáshoz. A Human Resources esetében az alkalmazás azonosítója: f9be0c49-aa22-4ec6-911a-c5da515226ff. Ezzel az azonosítóval biztosítható a megfelelő alkalmazás kiválasztása.
 
 6. Válassza a **Regisztrálás** lehetőséget.
 
-   [![Új alkalmazás regisztrálása az Azure portálon.](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
+   [![Új alkalmazás regisztrálása az Azure portálon](media/api-new-app-registration-expanded.png)](media/api-new-app-registration-expanded.png#lightbox)
 
 Az Azure AD egyedi alkalmazásazonosítót (ügyfélazonosítót) rendel hozzá az alkalmazásához, majd megjeleníti az alkalmazás **Áttekintés** lapját. Ha további funkciókat szeretne hozzáadni az alkalmazáshoz, további konfigurációs beállításokat is megadhat, például a márkajelzések, a tanúsítványok és titkos kódok beállításait.
 
@@ -187,6 +185,3 @@ namespace TalentODataPoC
 ```
 
 Miután beolvasta a hozzáférési tokent, akkor a tokent az engedélyezési fejlécben kell átadnia tulajdonosi tokenként az adat-API számára elküldött minden kérés esetében a fent leírtak szerint.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

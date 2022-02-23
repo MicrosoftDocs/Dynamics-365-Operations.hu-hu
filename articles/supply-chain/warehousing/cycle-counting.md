@@ -1,26 +1,29 @@
 ---
 title: Ciklikus leltározás
 description: Ez a cikk leírja, hogyan használhatja a ciklikus leltározást a raktározási megoldással, amely a Raktárkezelésben érhető el. A cikk nem vonatkozik a raktározási megoldásra, amely a Készletkezelés modulból érhető el.
-author: Mirzaab
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage, SalesShipmentDeviation, WHSRFMenuItemCycleCount, WHSWorkLineCycleCount
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: adaed1d5a4f1ac62df35bcc1497610ce0f44043c
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
-ms.translationtype: MT
+ms.openlocfilehash: 17b8504b2aecbe375fe178eac76da9c30c9b12bd
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902221"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429857"
 ---
 # <a name="cycle-counting"></a>Ciklikus leltározás
 
@@ -34,7 +37,7 @@ A ciklikus leltározás egy olyan raktározási folyamat, amelyet az aktuális k
 2.  **A ciklikus leltár feldolgozása** – Miután létrehozott egy ciklikus leltározási munkát, a raktárhelyen található cikkek számlálásával végezheti el a ciklikus leltározási munkát, majd mobileszközén rögzítheti az eredményt a Dynamics 365 Supply Chain Management rendszerbe. Ciklikus leltározási munka létrehozása nélkül is megszámlálhatja a raktározási helyen található cikkeket. Ennek a folyamatnak *eseti ciklikus leltározás* a neve.
 3.  **A ciklikus leltárérték különbségeinek feloldása** – Azok a cikkek, amelyek számlált értékeiben a ciklikus leltár után eltérés mutatkozik, **Ellenőrzése függőben** munkaállapotúvá válnak az **Összes munka** oldalon. Ezeket a különbségek feloldhatja a **Ciklikus leltározási munka ellenőrzése függőben** oldalon.
 
-Az alábbi ábra a ciklikus leltározás folyamatát mutatja be. ![Ciklikus leltározás folyamata.](./media/performcyclecountinginawarehouselocation.jpg)
+Az alábbi ábra a ciklikus leltározás folyamatát mutatja be. ![Ciklikus leltározás végrehajtása azonnal](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>A ciklikus leltározás előfeltételei
 Az alábbi táblázat bemutatja a ciklikus leltár megkezdése előtt biztosítandó előfeltételeket.
@@ -137,6 +140,3 @@ A számolt érték eltéréseit módosíthatja, majd elfogadhatja a számolt ér
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

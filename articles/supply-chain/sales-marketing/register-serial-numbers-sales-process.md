@@ -1,27 +1,30 @@
 ---
 title: Szerializált cikkek használata
 description: Ez a témakör bemutatja, hogy hogyan regisztrálhatja a sorozatszámokat a szállítólevélen vagy a számlákon az értékesítési folyamat során. Ez a funkció akkor hasznos, ha a vállalat szolgáltatási és garanciális célokra akar sorozatszámokat rögzíteni, de nem kell a sorozatszámokat fenntartaniuk a készletben a bevételezéstől a kiadásig.
-author: Henrikan
+author: omulvad
+manager: tfehr
 ms.date: 10/31/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResTrackingDimensionGroup, InventTrackingRegisterTrans, SalesEditLines, SalesTable, InventSerial
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations, Retail
 ms.custom: 28931
 ms.assetid: 5d39630f-607e-492b-8c1e-790ca53effa0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 62e53ec57a8d5c5c922f580219e4bde5338d0707
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 989dcca499f6d27ae9680f184978d5500397fa57
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571689"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429445"
 ---
 # <a name="working-with-serialized-items"></a>Szerializált cikkek használata
 
@@ -39,7 +42,7 @@ Engedélyeznie kell a sorozatszámokat az értékesítési folyamathoz az **Ért
 Egy értékesítési rendeléshez a sorozatszámokat regisztrálhatja a szállítólevélen vagy a számlán. Amikor egy számlát készít elő egy sorozatszámmal ellátott cikkhez, amit egy szállítólevéllel szállítottak le választhat a szállítólevélen és a számlán szereplő sorozatszámok közül. A regisztrált sorozatszámok száma nem haladhatja meg a leszállított cikkek mennyiségét. Részleges számla létrehozásakor, kiválaszthat kevesebb sorozatszámmal ellátott cikket mint amennyi a szállítólevélen regisztrálva lett. Ha a csomagjegyzék vagy számla nyomtatásához a sorozatszámok regisztrált jelennek meg.
 
 ## <a name="can-i-enter-serial-numbers-by-scanning-them-or-do-i-have-to-type-them"></a>Beírhatom a sorozatszámokat beolvasással, vagy gépelnem kell őket?
-Beolvashatja vagy gépelheti is a sorozatszámokat. Beolvasó használata esetén a beolvasási mód határozza meg, hogy a sorozatszámok hozzáadódnak vagy eltávolítódnak a sorozatszámok listájához/listájából a számlán vagy szállítólevélen. Ha szeretne sorozatszámokat beolvasni például egy kézi vonalkódolvasó használatával, konfigurálja az olvasót, hogy küldjön egy Enter vagy TAB parancsot a sorozatszám után. Ez a parancs jelzi az adatfolyam végét. Ellenkező esetben meg kell nyomnia az Enter vagy TAB gombot a billentyűzeten minden egyes sorozatszám beolvasása után.
+Beolvashatja vagy gépelheti is a sorozatszámokat. Beolvasó használata esetén a beolvasási mód határozza meg, hogy a sorozatszámok hozzáadódnak vagy eltávolítódnak a sorozatszámok listájához/listájából a számlán vagy szállítólevélen. Ha szeretne sorozatszámokat beolvasni például egy kézi vonalkód olvasó használatával konfigurálja az olvasót, hogy küldjön egy Enter vagy TAB parancsot a sorozatszám után. Ez a parancs jelzi az adatfolyam végét. Ellenkező esetben meg kell nyomnia az Enter vagy TAB gombot a billentyűzeten minden egyes sorozatszám beolvasása után.
 
 ## <a name="if-i-enable-serial-numbers-for-the-sales-process-do-i-have-to-register-all-serial-numbers-for-all-items"></a>Ha engedélyezem a sorozatszámokat az értékesítési folyamathoz, akkor minden cikkemhez kell sorozatszámot regisztrálnom?
 A termékhez rendelt nyomon követési dimenziócsoport beállítása meghatározza, hogy kötelező-e sorozatszámokat regisztrálni minden cikkhez a szállítólevélen vagy számlán. Amikor engedélyezi a sorozatszámokat az értékesítési folyamathoz a **Sorozatszám ellenőrzés** opció automatikusan kiválasztásra kerül. Ezután regisztrálnia kell egy sorozatszámot, vagy regisztrálhat üres regisztrációt egy olvashatatlan számhoz, minden cikkhez a szállítólevélen vagy számlán. Ha nem kíván sorozatszámot igényelni minden termékhez akkor jelölje ki az **Üres kiadás megengedett** opciót abban a nyomon követési dimenziócsoportban, ami a cikkhez van rendelve. Ezután regisztrálhat kevesebb sorozatszámot, mint a leszállított cikkek mennyisége. Ha több sorozatszámot regisztrál, mint a leszállítandó cikkek mennyisége, akkor képtelen lesz feladni a szállítólevelet vagy számlát.
@@ -52,8 +55,8 @@ Ha sorozatszámot nem lehet olvasni vagy beolvasni, akkor lehetősége van, hogy
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Ki tudom javítani vagy meg tudom változtatni a sorozatszámokat, amiket egy értékesítési megrendeléshez regisztráltam?
 Igen, sorozatszámok helyesbíthetők, ha a következő feltételek teljesülnek:
--   **Számlák** – Módosíthatja a még nem számlázott cikkek sorozatszámát. Ezután a szállítólevél szintén frissítésre kerül. Azonban, ha egy értékesítési rendelés sor helyesbítésre került negatív mennyiség regisztrálásával nem tudja megváltoztatni a sorozatszámokat az értékesítési rendelés sorhoz.
--   **Szállítólevelek** – Nem lehetséges olyan szállítólevél-sor részleges javítása, amely sorozatszámmal ellátott cikkeket tartalmat. A teljes mennyiség, a sor sztornírozni kell. Ha egy szállítólevél érvénytelenítve vagy javítva lett nem kell újra regisztrálnia a megváltozott sorozatszámot amikor új szállítólevelet készít ugyanazokhoz a sorozatszámmal ellátott cikkekhez. A regisztrált fogja használni.
+-   **Számlák** – Módosíthatja a még nem számlázott cikkek sorozatszámát. Ezután a szállítólevél szintén frissítésre kerül. Azonban, ha egy értékesítési rendelés sor helyesbítésre került negatív mennyiség regisztrálásával nem tudja megváltoztatni a sorozatszámokat az értékesítési rendelés sorhoz.
+-   **Szállítólevelek** –Nem lehetséges olyan szállítólevél-sor részleges javítása, amely sorozatszámmal ellátott cikkeket tartalmat. A teljes mennyiség, a sor sztornírozni kell. Ha egy szállítólevél érvénytelenítve vagy javítva lett nem kell újra regisztrálnia a megváltozott sorozatszámot amikor új szállítólevelet készít ugyanazokhoz a sorozatszámmal ellátott cikkekhez. A regisztrált fogja használni.
 
 ## <a name="can-i-view-the-serial-numbers-that-were-shipped-together-with-a-specific-packing-slip-or-that-were-included-on-an-invoice"></a>Megtekinthetem a sorozatszámokat, amelyek közösen lettek leszállítva egy konkrét szállítólevéllel, vagy egy számla tartalmazta őket?
 Igen, futtassa a lekérdezést a csomagjegyzék jegy naplósor vagy a számlát tartalmazó naplósor sorszámának a dokumentumban szereplő listáját tekintheti meg.
@@ -66,7 +69,7 @@ Nem, az értékesítési folyamat során nincs lehetősége sorozatszám regiszt
 
 ## <a name="can-i-register-serial-numbers-at-the-retail-pos"></a>Van lehetőségem a kiskereskedelmi POS-nál regisztrálni a sorozatszámokat?
 
-Igen, a kiskereskedelmi pénztár (POS) arra utasítja a felhasználót, hogy adjon meg egy sorozatszámot, amikor a felhasználó elad egy cikket, ami egy nyomon követési dimenziócsoporthoz van rendelve, ami úgy van beállítva, hogy használjon sorozatszámokat az értékesítési folyamatban.
+Igen, a kiskereskedelmi pénztár (POS) arra utasítja a felhasználót, hogy adjon meg egy sorozatszámot, amikor a felhasználó elad egy cikket ami egy nyomon követési dimenziócsoporthoz van rendelve, ami úgy van beállítva, hogy használjon sorozatszámokat az értékesítési folyamatban.
 
 ## <a name="what-security-roles-are-required-in-order-to-register-serial-numbers-during-the-sales-process"></a>Milyen biztonsági szerepkörökre van szükség, hogy sorozatszámokat regisztráljunk az értékesítési folyamat során?
 Ez a funkció minden olyan szerep számára elérhető, amely jogosult a szállítólevelek és számlák kezelésére. Az alábbi feladatok engedélyezik a dolgozók számára a sorozatszámok korrekcióját és üres bejegyzések létrehozását az olvashatatlan vagy beolvashatatlan sorozatszámok esetén:
@@ -77,6 +80,3 @@ Ez a funkció minden olyan szerep számára elérhető, amely jogosult a száll�
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -141,6 +141,3 @@ A meglévő sablon frissítéséhez, kövesse az alábbi lépéseket.
     9. A **Leképezési feladat** oldalon, jelölje be az új oszlopot egy másik leképezés forrásaként a HIERARCHYTYPENAME elemhez.
 
         [![Hozzárendelés](./media/CDS-Mapping5.png)](./media/CDS-Mapping5.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

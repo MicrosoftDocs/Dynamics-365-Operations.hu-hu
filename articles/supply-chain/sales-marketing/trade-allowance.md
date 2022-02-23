@@ -2,23 +2,26 @@
 title: Promóciós engedmények kezelése
 description: Ez a témakör leírja a promóciós engedmények kezelését a Dynamics 365 Supply Chain Management megoldásban.
 author: t-benebo
+manager: tfehr
 ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTable, MCRRoyaltyVendTrans, PdsCustRebateGroup, PdsRebateAgreement, TAMCopyTradePromotions, TAMDeduction, TAMDeductionCreate, TAMDeductionDenyReason, TAMDeductionParmDeny, TAMDeductionParmMassUpdate, TAMDeductionParmMatch, TAMDeductionParmSplit, TAMDeductionParmWriteOff, TAMDeductionType, TAMDeductionWriteOffReason, TAMFundManagement, TAMFundUsage, TAMListPage, TAMMarketingObjective, TAMMerchEventType, TAMOneTimePromotion, TAMPromoCompareGraph, TAMPromoStatistic, TAMPromotionAnalysisSummary, TAMPromotionParameters, TAMPromotionPeriod, TAMTemplateListPage, TAMTradePromotionAnalysis, TAMTradePromotions, TAMWhatIfPromotionAnalysis
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 15c003109814d9b4dc2857910e69754e5927ec11138d215056be64424998bf00
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771275"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429474"
 ---
 # <a name="trade-allowance-management"></a>Promóciós engedmények kezelése
 
@@ -59,7 +62,7 @@ Egy kereskedelmi kedvezményszerződés olyan ösztönzési program, ahol teljes
 
 A kereskedelmi kedvezményszerződésekre allokált pénzalapokat a **Pénzalapok** oldalon rögzítik. A **Pénzalapok** oldal megnyitásához válassza a **Értékesítés és marketing** \> **Kereskedelmi kedvezmények** \> **Pénzalapok** \> **Pénzalapok** lehetőséget.
 
-![Pénzalapok lap.](./media/trade-allowance-management-funds-page.png "Pénzalapok lap")
+![Pénzalapok lap](./media/trade-allowance-management-funds-page.png "Pénzalapok lap")
 
 A **Pénzalapok** oldalon megtekintheti a promóciós pénzalapok részleteit.
 
@@ -75,7 +78,7 @@ Miután a pénzalap meghatározása megtörtént, a promóciótervezés követke
 
 A kereskedelmi kedvezményszerződések a **Kereskedelmi kedvezményszerződések** oldalon kerülnek rögzítésre. A **Kereskedelmi kedvezményszerződések** oldalt az **Értékesítés és marketing** \> **Kereskedelmi kedvezmények** \> **Kereskedelmi kedvezményszerződések** útvonalon tudja megnyitni.
 
-![Promóciósengedmény-megállapodások oldal.](./media/trade-allowance-management-agreements-page.png "Promóciósengedmény-megállapodások oldal")
+![Promóciósengedmény-megállapodások oldal](./media/trade-allowance-management-agreements-page.png "Promóciósengedmény-megállapodások oldal")
 
 #### <a name="header"></a>Fejléc
 
@@ -103,7 +106,7 @@ Az **Árusítási események** lap megmutatja az adott szerződés által fedeze
 
 Az árusítási esemény kiválasztása után válassza az **Összegek** lapot az esemény részleteinek megtekintéséhez.
 
-![Promóciós engedményekre vonatkozó megállapodási sorok.](./media/trade-allowance-management-agreements-lines.png "Promóciós engedményekre vonatkozó megállapodási sorok")
+![Promóciós engedményekre vonatkozó megállapodási sorok](./media/trade-allowance-management-agreements-lines.png "Promóciós engedményekre vonatkozó megállapodási sorok")
 
 A **Kereskedelmi kedvezmény** sorok szakaszban megadhatja a mennyiségi vagy összegtartományt, amelyet a vevőnek el kell érnie definíció alapján a jutalmak megszerzéséhez.
 
@@ -197,6 +200,3 @@ A promóció különböző teljesítmény-mérőszámainak részletesebb analiti
 
 A promóció különböző teljesítmény-mérőszámainak részletesebb analitikai áttekintése érdekében használja az Elemzés nézetet. Az Elemzés nézetet az **Értékesítés és marketing** \> **Kereskedelmi kedvezmények** \> **Kereskedelmi kedvezményszerződések** lehetőségre kattintva érheti el. A Műveletpanelen kattintson az **Elemzés** elemre. 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

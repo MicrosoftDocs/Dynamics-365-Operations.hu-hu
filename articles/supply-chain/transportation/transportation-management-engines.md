@@ -1,26 +1,29 @@
 ---
 title: Szállításkezelő kalkulátorok
 description: A szállításkezelő programok határozzák meg azt a logikát, amit a Szállításkezelő a szállítási díjak előállítására és feldolgozására használ.
-author: Henrikan
+author: MarkusFogelberg
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine, TMSFreightBillTypeAssignment, TMSZoneMaster, TMSEngineParameters
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
-ms.author: henrikan
+ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bce886b8029b3a00c6572642d339efa9dcad4267
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580120"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429887"
 ---
 # <a name="transportation-management-engines"></a>Szállításkezelő kalkulátorok
 
@@ -43,7 +46,8 @@ A következő táblázat az elérhető szállításkezelő kalkulátorokat mutat
 | **Fuvarlevél típusa**            | Szabványosítja a fuvarszámlát és a fuvarlevél sorait, ezenkívül a fuvarlevél automatikus egyeztetésére is használható.                                                                                                                                                                                                                |
 
 
-## <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Mely kalkulátorokat kell konfigurálni egy szállítmány díjának kiszámításához?
+<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Mely kalkulátorokat kell konfigurálni egy szállítmány díjának kiszámításához?
+---------------------------------------------------
 
 Egy adott szállító szállítmányainak díjazásához több szállításkezelő kalkulátort kell konfigurálnia. A **Díjkalkulátor** kötelező, de a **Díjkalkulátor** támogatásához más szállításkezelő kalkulátorra is szükség lehet. Például a **Díjkalkulátor** segítségével rákereshet adatokra a **Távolságkalkulátor** részből a forrás és a cél közötti távolságon alapuló tarifa kiszámításához.
 
@@ -61,7 +65,8 @@ Az inicializációs adatok beállításához a legtöbb esetben elég a szállí
 |  <em>MileageEngineCode</em>  |                       Az adatbázisban a távolságkalkulátor rekordját azonosító távolságkalkulátor-kód.                        |
 | <em>ApportionmentEngine</em> |                        Az általános kalkulátor kódja, amely beazonosítja az arányosító kalkulátort az adatbázisban.                        |
 
-## <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hogyan használják a szállításkezelő kalkulátorok a metaadatokat?
+<a name="how-is-metadata-used-in-transportation-management-engines"></a>Hogyan használják a szállításkezelő kalkulátorok a metaadatokat?
+----------------------------------------------------------
 
 A Supply Chain Management részben meghatározott adatokat használó szállításkezelő kalkulátorok más adatsémákat használhatnak. A szállításkezelő rendszer lehetővé teszi, hogy különböző szállításkezelő kalkulátorok ugyanazokat az általános, tényleges adatbázistáblákat használhassák. Annak érdekében, hogy a futási idő alatti kalkulátoradatok értelmezése megfelelő legyen, az adatbázis tábláihoz metaadatokat határozhat meg. Ezzel csökkenthetők egy új szállításkezelő kalkulátor felépítésének költségei, mivel az Operations rendszerben nincs szükség további tábla- és képernyőstruktúrákra.
 
@@ -84,7 +89,7 @@ A szállításkezelő kalkulátorok metaadatai a különböző kalkulátortípus
 | **Zónakalkulátor**                                | A metaadatokat közvetlenül a zóna alapadatainál kell beállítani.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Szállításiidő-kalkulátor** és **Távolságkalkulátor** | A metaadatokat közvetlenül olvassa be a távolságkalkulátor konfigurációs beállítási képernyőjéről.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Metaadat-példa egy díjkalkulátor esetében** A szállításkezelő kalkulátor számára azonosítani kell a kiindulási címet, a célállamot és a célországot vagy a célrégiót, valamint a szállítás kezdő- és végpontját. A fenti követelmények használatával a metaadatok a következő táblázat adataihoz hasonlóan néznének ki. A táblázat arról is tájékoztat, hogy milyen típusú bemenő adatokra van szükség.
+  **Metaadat-példa egy díjkalkulátor esetében** A szállításkezelő kalkulátor számára azonosítani kell a kiindulási címet, a célállamot és a célországot vagy a célrégiót, valamint a szállítás kezdő- és végpontját. A fenti követelmények használatával a metaadatok a következő táblázat adataihoz hasonlóan néznének ki. A táblázat arról is tájékoztat, hogy milyen típusú bemenő adatokra van szükség.
 -   Határozza meg ezeket az információkat a **Szállításkezelés** &gt; **Beállítás** pontnál a **Díjalap típusa** lapon.
 
 | Szekvencia | Név                          | Mezőtípus | Adattípus | Keresés típusa    | Kötelező |
@@ -92,14 +97,5 @@ A szállításkezelő kalkulátorok metaadatai a különböző kalkulátortípus
 | 1        | Kiindulási irányítószám            | Hozzárendelés | Karakterlánc    | Irányítószám    | Kijelölve  |
 | 2        | Célállam             | Hozzárendelés | Karakterlánc    | Állami          |           |
 | 3        | Kezdőállomás irányítószáma | Hozzárendelés | Karakterlánc    | Irányítószám    | Kijelölve  |
-| 4        | Célállomás irányítószáma   | Hozzárendelés | Karakterlánc    | Irányítószám    | Kiválasztott  |
-| 5        | Célország           | Hozzárendelés | Sztring    | Ország/régió |           |
-
-### <a name="whitepaper"></a>Tanulmány
-
-További tudnivalókért töltse le a következő (az AX 2012 támogatásához készült, de még a Dynamics 365 Supply Chain Management esetében is érvényes) tanulmányt
-
-- [Szállításkezelési motorok](https://download.microsoft.com/download/e/0/9/e0957665-c12f-43c7-94c0-611cc49d7d61/TransportationManagementEnginesInAX.pdf)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]
+| 4        | Célállomás irányítószáma   | Hozzárendelés | Karakterlánc    | Irányítószám    | Kijelölve  |
+| 5        | Célország           | Hozzárendelés | Karakterlánc    | Ország/régió |           |

@@ -2,12 +2,15 @@
 title: Távollétkérelem
 description: Távollétkérelem küldése.
 author: andreabichsel
+manager: AnnBe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: ESSLeaveofAbsenceRequestEntry, EssWorkspace
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -15,19 +18,14 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2d58e84637dac584b080bd0fa30f7ab6214c26db
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 1f50e45a9acaf5295b40648ea5701885ae0ea844
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070275"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418923"
 ---
 # <a name="request-a-leave-of-absence"></a>Távollétkérelem
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Távollétre vonatkozó kérelmet küldhet, és megtekintheti a szabadságkérelmek állapotát a Dynamics 365 Human Resources alkalmazásban.
 
@@ -52,13 +50,6 @@ Távollétre vonatkozó kérelmet küldhet, és megtekintheti a szabadságkérel
 
 2. A távollétkérelmeinek megtekintéséhez válassza a **Távollét megtekintése** lehetőséget.
 
-## <a name="importing-leave-requests-from-other-systems-or-older-systems"></a>Szabadságkérések importálása más rendszerekből vagy régebbi rendszerekből
-
-Szabadságkérelmek importálásához egy másik rendszerből végig kell mennie a szokásos munkafolyamaton, hogy létrehozza a megfelelő szabadságtranzakciókat. Arra is lehetőség van, hogy szabadságbanki tranzakciókat és a szabadságkérelmeket befejezett állapotban importálja. Ne feledje, hogy a szabadságbanki tranzakciók nem jön létre automatikusan, ha csak a szabadságkéréseket importálja.
-
 ## <a name="see-also"></a>Lásd még
 
 [Szabadság felfüggesztése](hr-leave-and-absence-suspend-leave.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

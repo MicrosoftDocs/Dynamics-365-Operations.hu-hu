@@ -2,13 +2,16 @@
 title: Átfedő kedvezmények optimális kombinációjának meghatározása
 description: Átfedő kedvezmények esetén meg kell határozni az egymást átfedő kedvezmények azon kombinációját, amely a legalacsonyabb tranzakciós végösszeget vagy a legnagyobb összes engedményt eredményezi. Ha az engedmény összege a vásárolt termékek ára szerint változik, például a kiskereskedelmben gyakori „1 vásárlása esetén 1 X százalék engedmény” esetén ez a folyamat kombinatorikai optimalizálási problémává válik.
 author: kfend
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount,
 audience: Application User, IT Pro
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: 89643
 ms.assetid: 09843c9a-3e19-4e4a-a8ce-80650f2095f9
 ms.search.region: global
@@ -16,12 +19,12 @@ ms.search.industry: Retail
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 69475643a522a89ca4b58cf0ad1cc1f2db6325ff1d3f11830bf5f813290d6240
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 565722da65cbb711acedb5acf7de4edfbd615314
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733917"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412874"
 ---
 # <a name="determine-the-optimal-combination-of-overlapping-discounts"></a>Átfedő kedvezmények optimális kombinációjának meghatározása
 
@@ -39,11 +42,11 @@ Korlátlan számban hozhat létre engedményeket közös csoportba sorolt termé
 
 Ebben a példában két termékre van szükség az egyes kedvezmények elnyerése érdekében, és a kedvezmények nem kombinálhatók. A példában szereplő engedmények **Legjobb ár** típusú engedmények. Mindkét termék mindkét engedményre jogosult. Az alábbiakban látható a két engedmény.
 
-![Példa a két Legkedvezőbb árengedményre.](./media/overlapping-discount-combo-01.jpg)
+![Példa a két Legkedvezőbb árengedményre](./media/overlapping-discount-combo-01.jpg)
 
 Bármely két termékre e két engedmény közül a jobb a nagyobb termék árától függ. Ha mindkét termék ára azonos vagy közel azonos, az 1. engedmény a jobb. Ha az egyik termék ára jelentősen kisebb, mint a másik termék ára, a 2. engedmény a jobb. Íme a két engedmény egymással szembeni értékelésére szolgáló matematikai szabály.
 
-![A kedvezmények értékelési szabálya.](./media/overlapping-discount-combo-02.jpg)
+![A kedvezmények értékelési szabálya](./media/overlapping-discount-combo-02.jpg)
 
 > [!NOTE]
 > Ha az 1. termék ára megegyezik a 2. termék árának kétharmadval, a két engedmény egyenlő. Ebben a példában az 1. engedménynél a tényleges engedmény százaléka változik a néhány százalék (amikor a két termék ára messze esik egymástól) és a legfeljebb 25% között (amikor a két termék ára azonos). A tényleges engedmény százaléka a 2. engedmény esetén fix. Mindig 20 százalék. Mivel az 1. engedmény tényleges százaléka olyan tartományba esik, amely több vagy kevesebb is lehet, mint a 2. engedmény, az, hogy melyik a legjobb kedvezmény, a két diszkontálandó termék árától függ. Ebben a példában a számítás gyorsan befejeződött, mert csak két engedményt alkalmaztunk mindössze két termékre. Csak két lehetséges kombináció létezik: az 1. engedmény egy alkalmazása vagy a 2. engedmény egy alkalmazása. Nincsenek kiszámítandó permutációk. Minden engedmény értéke kiszámításra kerül mindkét termék használatával, és a rendszer a legjobb kedvezményt használja.
@@ -57,11 +60,11 @@ Ezután négy terméket fogunk használni és ugyanazon két engedményt. Mind a
 
 A táblák olvasásához vegyen egy terméket egy sorból és egy terméket egy oszlopból. Például az 1. engedmény táblájában két 20 USD-s terméket kombinálva 10 USD kedvezményt kapunk. A 2. engedmény táblájában a 15 USD-s és az 5 USD-s terméket kombinálva 4 USD kedvezményt kapunk.
 
-![Példa, amely négy terméket használ ugyanarra a két engedményre.](./media/overlapping-discount-combo-03.jpg)
+![Példa, amely négy terméket használ ugyanarra a két engedményre](./media/overlapping-discount-combo-03.jpg)
 
 Először megkeressük a legnagyobb engedményt, amely valamelyik engedmény használatával két termékre csak elérhető. A két tábla a két termék összes kombinációjához mutatja az engedmény összegét. A táblák árnyékolt részekkel képviselik azokat az eseteket, amikor egy termék önmagával lenne párosítva, ami nem lehetséges, illetve a fordított párosításokat, amelyeknél ugyanazt az engedményösszeget kapjuk, tehát ezek figyelmen kívül hagyhatók. A táblákat megnézve látható, hogy az 1. engedmény a két 20 USD-s tételre a legnagyobb kedvezmény, aminél egyik engedményt a négy termék bármelyikére alkalmazva sem kapunk nagyobbat. (Ezt az engedményt az első tábla zölddel emeli ki.) Így csak a 15 USD-s és az 5 USD-s termék marad. Ha ismét megnézzük a két táblát, láthatja, hogy e két termékre vonatkozóan az 1. engedmény 2,50 USD kedvezményt ad, a 2. engedmény pedig 4 USD kedvezményt. Ezért a 2. engedményt választjuk. A teljes engedmény 14 USD. E gondolatmenet egyszerűbb megjelenítéséhez az alábbiakban két további táblát talál, amelyek minden lehetséges kéttermékes kombinációra megmutatják a tényleges engedmény százalékát mind az 1. engedménynél, mind a 2. engedménynél. Csak a kombinációk listájának fele látható, mivel e két engedménynél nem számít a sorrend, amelyben a két terméket beleszámítjuk az engedménybe. A legmagasabb tényleges engedmény (25 százalék) ki van emelve zölddel, a legalacsonyabb tényleges engedmény (10 százalék) pedig pirossal.
 
-![A két termék kombinációinak tényleges engedménye százalékban mindkét engedmény esetében.](./media/overlapping-discount-combo-04.jpg)
+![A két termék kombinációinak tényleges engedménye százalékban mindkét engedmény esetében](./media/overlapping-discount-combo-04.jpg)
 
 > [!NOTE]
 > Amikor az árak változnak, és két vagy több engedmény verseng egymással, csak úgy lehet garantálni a kedvezmények optimális kombinációjának biztosítását, hogy mindkét engedményt kiértékeljük és összehasonlítjuk.
@@ -70,7 +73,7 @@ Először megkeressük a legnagyobb engedményt, amely valamelyik engedmény has
 
 Ez a szakasz az előzőekben látott példát folytatja. További termékeket és egy másik engedményt adunk hozzá, és megnézzük, hány kombinációt kell kiszámítani és összevetni. Az alábbi táblázat mutatja a lehetséges engedménykombinációk számát, ahogy a termékmennyiség növekszik. A tábla azt mutatja, mi történik, ha két egymást átfedő kedvezmény van jelen, miként az előző példában, illetve ha egymást átfedő kedvezmény van jelen. A lehetséges engedménykombinációk száma, amit értékelni kell, gyorsan meghaladja azt a mértéket, amit akár egy a gyors számítógép is képes elég gyorsan kiszámítani és összehasonlíthatani ahhoz, hogy az kiskereskedelmi tranzakcióknál elfogadható legyen.
 
-![A lehetséges engedménykombinációk száma, ahogy a termékmennyiség növekszik.](./media/overlapping-discount-combo-05.jpg)
+![A lehetséges engedménykombinációk száma, ahogy a termékmennyiség növekszik](./media/overlapping-discount-combo-05.jpg)
 
 Amikor még nagyobb mennyiségeket vagy több egymást átfedő engedményt alkalmazunk, a lehetséges engedménykombinációk száma hamarosan eléri a milliós nagyságrendet, és a kiértékelésükhöz és a legjobb kiválasztásához szükséges idő hamarosan észrevehetővé válik. Az ármotorban optimalizálást végeztünk a kiértékelendő kombinációk teljes számának csökkentésére. Azonban mivel az átfedő kedvezmények és a tranzakcióban részt vevő mennyiségek száma nem korlátozott, mindig sok kombinációt kell kiértékelni, valahányszor egymást átfedő kedvezményekkel számolunk. A marginálisérték-rangsorolás erre a problémára kínál megoldást.
 
@@ -78,9 +81,6 @@ Amikor még nagyobb mennyiségeket vagy több egymást átfedő engedményt alka
 
 Az exponenciálisan növekvő számú, kiértékelendő kombináció problémájának megoldása érdekében létezik egy optimalizálás, amely minden termékcsoportnál, amelyre két vagy több engedmény alkalmazható, az értéket minden engedménynél megosztott termékenként számítja ki. Ezt az értéket a megosztott termékek kedvezménye **marginális értékének** hívjuk. A marginális érték a kedvezmény értékének azon termékenkénti átlagos növekedése, amelyet akkor kapunk, ha a megosztott termékeket minden engedménybe belefoglaljuk. A marginális értéket úgy számítjuk ki, hogy vesszük az összengedmény összegét (DTotal), kivonjuk belőle a megosztott termékek nélküli engedmény összegét (DMinus\\ Megosztott), és ez a különbséget elosztjuk a megosztott termékek (ProductsShared) számával.
 
-![A marginális érték számításának képlete.](./media/overlapping-discount-combo-06.jpg)
+![A marginális érték számításának képlete](./media/overlapping-discount-combo-06.jpg)
 
 Miután a megosztott termékcsoport minden egyes kedvezményének marginális értékét kiszámítottuk, az összes kedvezményt sorrendben alkalmazzuk a megosztott termékekre a legmagasabb marginális értéktől a legalacsonyabbig. Ennél a módszernél nem hasonlítjuk össze az összes fennmaradó engedménylehetőséget, valahányszor alkalmaztuk egy kedvezmény egy példányát. Ehelyett az egymást átfedő kedvezményeket egyszer összehasonlítjuk, majd pedig sorrendben alkalmazzuk. További összehasonlításokra nem kerül sor. A küszöbérték, amelynél a rendszer a marginálisérték-módszerre vált, a **Kereskedelmi paraméterek** oldal **Engedmény** lapján állítható be. Az összengedmény kiszámítására felhasznált elfogadható idő hossza kiskereskedelmi iparáganként változik. Az idő általában viszont a tized ezredmásodpercek és az egy másodperc közti tartományba esik.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

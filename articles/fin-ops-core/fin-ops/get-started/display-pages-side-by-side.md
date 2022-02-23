@@ -2,9 +2,11 @@
 title: Oldalak párhuzamos megjelenítése a Megnyitás új ablakban funkció használatával
 description: Ez a cikk azt ismerteti, hogy miként jeleníthetők meg az oldalak egymás mellett.
 author: aneesmsft
+manager: AnnBe
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a4c8086d511892f8965dfefca2789742a006f63f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 35ade352edf31fe895a9b9118a8ad7d5fe6c0bde
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068059"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798403"
 ---
 # <a name="show-pages-side-by-side-using-the-open-in-new-window-feature"></a>Oldalak párhuzamos megjelenítése a Megnyitás új ablakban funkció használatával
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a cikk azt ismerteti, hogy miként jeleníthetők meg az oldalak egymás mellett.
 
@@ -49,6 +48,3 @@ A **Megnyitás új ablakban** funkció használata előtt a böngészőjében en
 A **Megnyitás új ablakban** funkció csak akkor elérhető, ha több, mint egy oldal van megnyitva az ablakban. A felugró ablakok is automatikusan bezárulnak, ha nincs több megnyitható lap (ha az ablak utolsó lapját is bezárta). A rendszer bezárja a megnyitott lapokat is, ha Ön az alkalmazás egy másik részére navigál. Ezért ha van egy megnyitott felugró ablak, és Ön az alkalmazáson belül egy másik területre navigál, a felugró ablak automatikusan bezárul, mert az ablakon belüli lapokat a rendszer automatikusan bezárta.
 
 Az előugró ablak felső sora arról a vállalatról tartalmaz információt, amiben a lap meg lett nyitva, és csak olvasható. A felugró ablakok támaszkodnak még a fő böngészőablakra. Ha a fő ablak bezárásra kerül, vagy frissítve lesz, az összes felugró ablak csak olvasható állapotba kerül. Ha ez történik, ezután is megtekintheti az információkat ezekben az ablakokban, de nem lesz képes módosítani azokat.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

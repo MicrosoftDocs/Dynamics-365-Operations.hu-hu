@@ -1,10 +1,12 @@
 ---
 title: ER - adatmodell leképezése a kiválasztott adatforrásokra
-description: Ez a témakör azt mutatja be, hogyan lehet leképezni egy Elektronikus jelentéskészítési (ER) adatmodellt a kiválasztott Microsoft Dynamics 365 Finance-adatforrásokra.
+description: A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörű felhasználó miként képezhet le egy Elektronikus jelentés (ER) adatmodellt a kiválasztott Microsoft Dynamics 365 Finance adatforrásokra.
 author: NickSelin
+manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 60c20f6616d406bdd1ccdf42ac62eb4c1c5d27040f32469fa6dd370c41830450
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d2d09370b0e08897799d40c41c20c21b58e885dc
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775976"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4684307"
 ---
 # <a name="er-map-data-model-to-selected-data-sources"></a>ER - adatmodell leképezése a kiválasztott adatforrásokra
 
@@ -144,6 +146,3 @@ A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jele
 5. Válassza ki az aktuális konfiguráció teljesített verzióját.
     * Fontos, hogy a létrehozott konfiguráció teljesített 1-es verzióként lesz mentve.  
 
-
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

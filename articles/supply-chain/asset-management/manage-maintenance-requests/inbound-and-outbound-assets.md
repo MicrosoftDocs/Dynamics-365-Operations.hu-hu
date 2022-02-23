@@ -1,10 +1,12 @@
 ---
 title: Bejövő és kimenő eszközök
 description: Ez a cikk a bejövő és kimenő eszközök Eszközök kezelése szolgáltatásban való regisztrálását ismerteti.
-author: johanhoffmann
+author: josaw1
+manager: tfehr
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetOutboundObjectsListPage, EntAssetOutboundObjectsDeliver, EntAssetInboundObjectsListPage, EntAssetInboundObjectsRecieve
 audience: Application User
@@ -12,15 +14,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: johanho
+ms.author: riluan
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0bd3127df1b583acc6841c3e115d3beceabcab2756098e567b2269c1dcc94004
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e6dfadf6824c6a3df7be9b3b6f3d9f5dd2749e34
+ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759623"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "5018071"
 ---
 # <a name="inbound-and-outbound-assets"></a>Bejövő és kimenő eszközök
 
@@ -42,7 +44,7 @@ Az Eszközök kezelése beállítása határozza meg, hogy használhatók-e bej�
 3. Válassza a **Karbantartási kérés állapotának frissítése** lehetőséget.
 4. Válassza a **Bejövő** (vagy a bejövő eszközökhöz létrehozott másik életciklus-állapotot), majd az **OK** lehetőséget.
 
-![Eszközök regisztrálása bejövőként.](media/07-manage-maintenance-requests.png)
+![Eszközök regisztrálása bejövőként](media/07-manage-maintenance-requests.png)
 
 ## <a name="register-inbound-assets-as-received"></a>Bejövő eszközök regisztrálása fogadottként
 
@@ -51,7 +53,7 @@ Az Eszközök kezelése beállítása határozza meg, hogy használhatók-e bej�
 3. Válassza ki a **Tárgyi eszközök fogadása** lehetőséget.
 4. A **Fogadott** mezőben adja meg a dátumot és az időpontot. Majd kattintson az **OK** lehetőségre. A rekord eltűnik a **Bejövő eszközök** listaoldalról.
 
-![Bejövő eszközök regisztrálása fogadottként.](media/08-manage-maintenance-requests.png)
+![Bejövő eszközök regisztrálása fogadottként](media/08-manage-maintenance-requests.png)
 
 ## <a name="register-assets-as-outbound"></a>Eszközök regisztrálása kimenőként
 
@@ -68,6 +70,3 @@ A karbantartási vagy javítási feladat befejezése után regisztrálhatja az e
 2. Válassza ki az eszközt vagy a karbantartási kérést.
 3. Válassza ki az **Eszközök kézbesítése** lehetőséget.
 4. A **Kézbesítve** mezőben adja meg a dátumot és az időpontot. Majd kattintson az **OK** lehetőségre. A rekord eltűnik a **Kimenő eszközök** listaoldalról.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

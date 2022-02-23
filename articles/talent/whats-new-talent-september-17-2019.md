@@ -59,6 +59,3 @@ Ebben a kiadásban a feladatcsalád mező hozzáadásra került a feladatrészle
 Ez a funkció jelenleg a sandbox környezetekben érhető el. A funkció bekapcsolásához navigáljon a **Rendszer-adminisztráció > Hivatkozások > Beállítás > Rendszerparaméterek > előnézeti funkciók** ponthoz. Válassza a **Továbbfejlesztett dolgozói képernyő és navigáció** lehetőséget. Ez minden felhasználó számára engedélyezi a változtatásokat. Ezt a beállítást bármikor ki lehet kapcsolni.
 
 További tájékoztatás: [Korszerű alkalmazotti belépés és navigálás](./streamlined-employee-entry.md). Ha meg szeretné tekinteni a változásokat, tekintse meg a következő videót: [Dynamics 365 for Talent 2019. második kiadási hullám áttekintése](https://aka.ms/ROGT19RW2ROV).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

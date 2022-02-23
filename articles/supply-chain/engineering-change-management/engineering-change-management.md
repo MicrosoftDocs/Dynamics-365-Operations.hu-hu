@@ -2,23 +2,26 @@
 title: A mérnöki termékek módosításának kezelése
 description: Ez a témakör a mérnöki változtatás kezeléséről nyújt tájékoztatást. A mérnöki változtatás kezelése strukturált folyamatokat biztosít a mérnöki termékek változásainak kezeléséhez, a javaslattételtől, a kéréstől és a módosítások végrehajtásától kezdve a módosítások áttekintésén és jóváhagyásán, valamint a meglévő tranzakciókra gyakorolt hatásuk felmérésén át, azok nyomon követéséig.
 author: t-benebo
+manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgEcmRequestSelection,EngChgEcmRequestProducts,EngChgEcmRequestPriorityChart,EngChgEcmRequestListPage,EngChgEcmRequestFilteredPart,EngChgEcmRequestDetails,EngChgEcmReason,EngChgEcmProjTableInformation,EngChgEcmProductRoute,EngChgEcmProductRelease,EngChgEcmProductPreview, EngChgEcmWhereUsed, EngChgEcmInventTrans,EngChgEcmHeaderSelection,EngChgEcmHeaderPreviewPart,EngChgEcmHeaderFilteredPart,EngChgEcmHeaderDetails, EngChgCaseWhereUsedAnalysis, EngChgCaseValidatorMessage
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: f362aef527272781464d5c1a17f0a382cfb8cacc
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.15
+ms.openlocfilehash: 314563e083434832ee04d9c19deb17cec221ae02
+ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568135"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "4429975"
 ---
 # <a name="manage-changes-to-engineering-products"></a>A mérnöki termékek módosításának kezelése
 
@@ -92,13 +95,9 @@ Ez a lista csak tájékoztatásra szolgál. Ezért tetszőleges mennyiségű kap
 
 A **Forrás** gyorslap segítségével nyomon követheti a módosítási kérelem kezdőpontját. Ez például akkor lehet hasznos, ha látni szeretné, hogy a módosítás iránti kérelem egy értékesítési rendelésből jött-e létre, ki hozta létre, és melyik vállalatban jött létre.
 
-### <a name="evaluate-the-business-impact-of-a-change-request-and-send-notifications"></a>A módosítási kérelmek és az értesítésküldések üzleti hatásának kiértékelése
+### <a name="evaluate-the-business-impact-of-a-change-request"></a>Módosítási kérelem üzleti hatásának kiértékelése
 
-A módosítás iránti kérelem felülvizsgálatakor lehetőség van a függőségek megkeresésére. Ily módon mérhető a kért módosítás hatása a nyitott tranzakciókra, például az értékesítési rendelésekre, a termelési rendelésekre és az aktuális készletre. A módosítási kérelmek áttekintése során értesítést küldhet a kapcsolódó rendelések különböző típusainak teljesítéséért felelős személyeknek.
-
-#### <a name="review-affected-transactions-block-selected-transactions-and-send-notifications"></a>Az érintett tranzakciók áttekintése, a kijelölt tranzakciók blokkolása és értesítések küldése
-
-Az érintett tranzakciók áttekintéséhez, a kijelölt tranzakciók blokkolásához és az értesítések küldéséhez hajtsa végre az alábbi lépéseket.
+A módosítás iránti kérelem felülvizsgálatakor lehetőség van a függőségek megkeresésére. Ily módon mérhető a kért módosítás hatása a nyitott tranzakciókra, például az értékesítési rendelésekre, a termelési rendelésekre és az aktuális készletre.
 
 1. Lépjen a **Mérnöki változtatások kezelése \> Általános \> Mérnöki változtatások kezelése \> Mérnöki változtatási kérelmek** lehetőségre.
 1. Nyisson meg egy meglévő módosítási kérést, vagy új módosítási kérés létrehozásához válassza az **Új** parancsot a műveleti ablaktáblán.
@@ -107,36 +106,7 @@ Az érintett tranzakciók áttekintéséhez, a kijelölt tranzakciók blokkolás
     - **Keresés** – az összes nyitott tranzakciót megvizsgálja, majd megnyitja az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanelt, amely felsorolja azokat a tranzakciókat, amelyekre a módosítás hatással lesz.
     - **Előző keresés megtekintése** – megnyitja az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanelt, amely felsorolja az előző keresés eredményét. (Az új keresés nem történt meg.)
 
-1. Az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanelen lévő lapokon adott típusba tartozó érintett tranzakciók listája látható (**Értékesítési rendelések**, **Beszerzési rendelések**, **Termelési rendelések**, **Készlet**, stb.). Minden lapon látható, hogy hány érintett tranzakció tartozik az adott típusba. A megfelelő lista megtekintéséhez lépjen egy lapra.
-1. A listán lévő tranzakció használatához jelölje ki az elemet, majd válassza ki az eszköztáron a következő gombok valamelyikét:
-
-    - **Tranzakció megtekintése** – a kiválasztott tranzakciórekord megnyitása.
-    - **Rendelés zárolása** – ez a gomb csak az **Értékesítési rendelések** lapon érhető el. A gombbal zárolhatja a kijelölt értékesítési rendelést.
-    - **Sor zárolása** – ez a gomb csak a **Beszerzési rendelések** lapon érhető el. A gombbal zárolhatja a beszerzési rendelés kijelölt sorát.
-    - **Felelős értesítése** – ez a gomb csak az **Értékesítési rendelések** lapon érhető el. A használatával értesítést küldhet a kiválasztott értékesítési rendelésnél felelősként beállított felhasználónak. További információt arról, hogy ki és hogyan láthatja az értesítéseket, a [Tranzakciókhoz tartozó módosítási értesítések áttekintése és feldolgozása](#review-notifications) című témakörben talál.
-    - **Megrendelő értesítése** – ez a gomb csak az **Beszerzési rendelések** lapon érhető el. A használatával értesítést küldhet a kiválasztott beszerzési rendelésnél beállított megrendelőnek. További információt arról, hogy ki és hogyan láthatja az értesítéseket, a [Tranzakciókhoz tartozó módosítási értesítések áttekintése és feldolgozása](#review-notifications) című témakörben talál.
-    - **Termelés értesítése** – ez a gomb csak a **Termelési rendelések** lapon érhető el. Az értékesítési és a beszerzési rendelésektől eltérően a termelési rendelések esetében nincsen egyetlen olyan felhasználó, aki be lenne állítva a teljes rendeléshez felelősként. Ehelyett általában a különböző felügyelők vagy tervezők tulajdonában van egy adott hely vagy a termelés adott része (például konkrét erőforrások vagy erőforráscsoportok). Ennek megfelelően a gombra kattintás után minden olyan felhasználó, aki felelős a kiválasztott termelési rendeléshez kapcsolódó valamelyik erőforrásért, értesítést kap a módosításról. További információt arról, hogy ki és hogyan láthatja az értesítéseket, a [Tranzakciókhoz tartozó módosítási értesítések áttekintése és feldolgozása](#review-notifications) című témakörben talál.
-    - **Készítő értesítése** – ez a gomb csak az **Beszerzési igénylés** lapon érhető el. A használatával értesítést küldhet a kiválasztott beszerzési igénylésnél beállított készítőnek. További információt arról, hogy ki és hogyan láthatja az értesítéseket, a [Tranzakciókhoz tartozó módosítási értesítések áttekintése és feldolgozása](#review-notifications) című témakörben talál.
-    - **Értékesítési felelős értesítése** – ez a gomb csak az **Árajánlatok** lapon érhető el. A használatával értesítést küldhet a kiválasztott értékesítési rendelésnél felelősként beállított felhasználónak. További információt arról, hogy ki és hogyan láthatja az értesítéseket, a [Tranzakciókhoz tartozó módosítási értesítések áttekintése és feldolgozása](#review-notifications) című témakörben talál.
-    - **Selejt** – ez a gomb csak a **Készlet** lapon érhető el. A használatával a kiválasztott készletet selejtezheti le.
-    - **Előzmények megtekintése** – a kijelölt tranzakcióval kapcsolatos műveletek előzményeinek megnyitása az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanelen. (Az előzményekben például látható, hogy az értesítések el lettek-e küldve, vagy a tranzakciók zárolva lettek-e.) 
-    - **Az összes tranzakció megjelenítése** – az összes tranzakciót (nem csak a nyitottakat) tartalmazó lista megnyitása.
-
-> [!IMPORTANT]
-> A **Termelés értesítése** gomb csak akkor érhető el, ha a *Tervezési értesítések termeléshez* funkció be van kapcsolva a rendszerben. További utasításokat a [Tervezési változtatáskezelés – áttekintés](product-engineering-overview.md) részben talál.
-
-#### <a name="review-and-process-change-notifications-for-transactions"></a><a name="review-notifications"></a>A tranzakciók értesítéseinek áttekintése és feldolgozása
-
-A kapott módosítási értesítéseket a következőképpen olvashatja át és dolgozhatja fel:
-
-- A termelési rendelések kivételével az olyan módosítási értesítések, amelyek esetében Ön a felelős, a Műveletközpontban jelennek meg. A navigációs sáv jobb oldalán található **Üzenetek megjelenítése** gomb (harang szimbólum) jelzi, ha Műveletközpontban Önnek szóló üzenet látható. Az **Üzenetek megjelenítése** gombbal nyithatja meg a Műveletközpontot az üzenetek megtekintéséhez.
-- Az összes olyan termelési rendelés, amelyhez tervezési értesítés lett kiküldve, a **Termelési rendelések \> Termelési rendelések \> Minden termelési rendelés** részen tekinthető meg. A Műveleti panel **Termelési rendelés** lapján lévő **Tervezési módosítási kérelem** csoportban válassza a **Tervezési értesítések** elemet a **Tervezési értesítések** oldal megnyitásához.
-- Termelési rendelések esetén kiválaszthatja, hogy csak az Ön által kezelt termelési erőforrásokra vonatkozó módosítási értesítéseket szeretné-e áttekinteni. A Műveleti panel **Termelési szint kezelése** munkaterületén lévő **Munkaterület konfigurálása** lehetőség kiválasztásával úgy szűrheti az oldalt, hogy csak az Ön által kezelt termelési egységekre, csoportokra és/vagy erőforrásokra vonatkozó adatok jelenjenek meg. Az **Összegzés** szakaszban lévő **Módosított termékekkel rendelkező termelési rendelések** csempén látható a megadott szűrőbeállításoknak megfelelő értesítések száma. A csempe kiválasztásával megnyithatja a **Tervezési értesítések** lapot, amelyen megtekintheti a szűrő feltételeinek megfelelő tranzakciók teljes listáját.
-
-A termelési rendelés értesítéseinek **Tervezési értesítések** oldalon történő áttekintése során követheti a kapcsolódó változási vagy termelési rendelésekre mutató hivatkozásokat. Ehhez válassza ki az oszlop értékeit vagy a kapcsolódó parancsokat a Művelet panelen. Miután befejezte a módosítások kiértékelét, és miután igény szerint visszavonta vagy módosította a termelési rendeléseket, az értesítéseket megjelölheti megoldottként. Válassza ki az értesítést, majd a Művelet panelen válassza a **Megoldás** lehetőséget. Az értesítést az összes felhasználó nézetéből eltávolítja a rendszer.
-
-> [!IMPORTANT]
-> A termelési rendelésekre vonatkozó értesítések küldésének lehetősége megköveteli, hogy a *Tervezési értesítések termeléshez* funkció be legyen kapcsolva a rendszerben. További utasításokat a [Tervezési változtatáskezelés – áttekintés](product-engineering-overview.md) részben talál.
+1. Ha a módosítást igénylő kiadás kritikus, akkor zárolhatja a nyitott tranzakciókat, vagy az **Üzleti hatások a nyitott tranzakciókra** párbeszédpanel eszközsávjának gombjaival értesítheti a felelős felhasználót.
 
 ### <a name="create-a-change-order-from-a-change-request"></a>Módosítási rendelés létrehozása módosítási kérelemből
 
@@ -172,14 +142,13 @@ A módosítás iránti kérelem megtekintése közben a művelet ablaktáblán, 
 
 Amint az a [Mérnöki vállalatok és az adatok tulajdonlásának szabályai](engineering-org-data-ownership-rules.md) részben bemutatásra került, a módosítható termékadatok attól függően változnak, hogy milyen típusú jogi személyben dolgozik (egy mérnöki vállalat vagy egy üzemeltető vállalat). Az adattulajdonlási szabályok a mérnöki módosítási rendelésekre is vonatkoznak. Ennek megfelelően attól függően, hogy milyen jogi személyben hoz létre a mérnöki módosítási rendelés, különböző típusú változtatásokat lehet végrehajtani. Íme néhány példa:
 
-- A *mérnöki vállalatok* mérnöki módosítási rendelései esetében alapvető változtatásokat lehet végezni a mérnöki adatokon. Létrehozhat például új termékverziókat, módosíthatja a termék szerkezetét az anyagjegyzéken keresztül, valamint módosíthatja a mérnöki attribútumok értékeit. Minden érintett terméknél válassza a következő értékek egyikét a **Hatás** mezőben:
+- A **mérnöki vállalatok** mérnöki módosítási rendelései esetében alapvető változtatásokat lehet végezni a mérnöki adatokon. Létrehozhat például új termékverziókat, módosíthatja a termék szerkezetét az anyagjegyzéken keresztül, valamint módosíthatja a mérnöki attribútumok értékeit. Minden érintett terméknél válassza a következő értékek egyikét a **Hatás** mezőben:
 
     - **Nincs** – a létező termék verziójának frissítése (verzión belüli frissítés).
     - **Új verzió** – hozzon létre egy új verziót, amely a kiválasztott termékverzión alapul.
-    - **Új termék** – hozzon létre egy teljesen új terméket, amely a kiválasztott termékverzión alapul.
-    - **Új változat** – hozzon létre egy új változatot, amely a kiválasztott termékverzión alapul. Az anyagjegyzékre és útvonalra vonatkozó adatok át lesznek másolva.
+    - **Új termék** – hozzon létre egy teljesen új terméket vagy termékváltozatot, amely a kiválasztott termékverzión alapul.
 
-- Egy *operatív vállalat* mérnöki módosítási rendeléseihez módosíthatja a termék logisztikai adatait. Bővítheti például a meglévő anyagjegyzéket a beszerzés, a helyi útvonalak és a helyi anyagjegyzékek hozzáadásával, valamint az anyagjegyzéket akár úgy is bővítheti, hogy új anyagjegyzék-sorokat ad hozzá a helyi csomagolási anyagok, kenőanyagok vagy a helyi nyelvű utasítások számára. Az operatív vállalat felhasználói által végzett bővítések megmaradnak, amikor a mérnöki vállalat új frissítéseket küld. További tájékoztatás: [Mérnöki vállalatok és az adatok tulajdonlásának szabályai](engineering-org-data-ownership-rules.md).
+- Egy **operatív vállalat** mérnöki módosítási rendeléseihez módosíthatja a termék logisztikai adatait. Bővítheti például a meglévő anyagjegyzéket a beszerzés, a helyi útvonalak és a helyi anyagjegyzékek hozzáadásával, valamint az anyagjegyzéket akár úgy is bővítheti, hogy új anyagjegyzék-sorokat ad hozzá a helyi csomagolási anyagok, kenőanyagok vagy a helyi nyelvű utasítások számára. Az operatív vállalat felhasználói által végzett bővítések megmaradnak, amikor a mérnöki vállalat új frissítéseket küld. További tájékoztatás: [Mérnöki vállalatok és az adatok tulajdonlásának szabályai](engineering-org-data-ownership-rules.md).
 
     Amikor a mérnöki rendeléseket a mérnöki vállalatban dolgozzák fel, a termékeket csak a mérnöki vállalatnál lehet létrehozni és/vagy frissíteni. Ha tehát a termék alapadatainak frissítésére is szükség van, akkor a termékeket az operatív vállalatok számára is ki kell adnia.
 
@@ -216,6 +185,3 @@ A mérnöki módosítási rendelések legtöbb mezője ugyanaz, mint a kiadott t
 | Környezet-, egészség- és munkavédelem | Adja meg, hogy a módosításra vonatkozó környezet-, egészség- és munkavédelmi szabályok érvényesek-e. Ilyen esetben a megfelelő szabályokat is kiválaszthatja. |
 
 A módosítási információk az érintett termékek között másolhatók a **Módosítás adatainak karbantartása és másolása** gomb segítségével.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

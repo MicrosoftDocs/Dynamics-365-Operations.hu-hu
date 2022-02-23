@@ -2,23 +2,27 @@
 title: Megfelelőség áttekintése
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce alkalmazással rendelkezésére álló megfelelőségi útmutatásról, amely segít biztosítani a vállalat webhelyének megfelelőségét.
 author: BrianShook
+manager: annbe
 ms.date: 01/08/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 3d90bbce5949468966d995710cdad69484aa90c9
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 45d96317f5b6ef956647bfc511e80533e2c34bca
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983292"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412861"
 ---
 # <a name="compliance-overview"></a>Megfelelőség áttekintése
 
@@ -42,6 +46,3 @@ Ha többet szeretne megtudni a Microsoft által használt alapelvekről, keresse
 [Adatvédelmi irányelv oldalának hozzáadása](add-privacy-page.md)
 
 [Nyomon követett tartalmi változásokhoz társított felhasználói azonosítók kicserélése](replace-IDs-tracked-changes.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

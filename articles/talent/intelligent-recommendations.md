@@ -56,6 +56,3 @@ A javaslatok kártyaként jelennek meg a **Potenciális jelöltek** lapon minden
 > Ha nemrég kezdte el használni az Attract megoldást, várjon, amíg legalább 10 vagy több pályázók, akik teljes profillal vagy önéletrajzzal rendelkezik rendelkezésre áll, mielőtt elkezdené használni ezt a képességet.
 
 Az elfogult ajánlások elkerülése érdekében, az Attract csak szakértelmeket, képesítéseket és egyéb kulcsszavakat keres a jelentkezői profilokban, amelyek megfelelnek az állás leírásának. Ezenkívül Attract a személyes azonosító adatokat eltávolítja a jelölt profilok kiértékelése előtt.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

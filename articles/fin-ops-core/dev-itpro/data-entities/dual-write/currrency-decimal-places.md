@@ -2,25 +2,34 @@
 title: Pénznem-adattípus áttelepítése kettős írás esetén
 description: Ez a témakör azt mutatja be, hogyan lehet módosítani azoknak a tizedesjegyeknek a számát, amelyeket a kettős írás támogat a pénznemhez.
 author: RamaKrishnamoorthy
-ms.date: 12/08/2021
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
+ms.prod: ''
+ms.service: dynamics-ax-applications
+ms.technology: ''
+ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
+ms.custom: ''
+ms.assetid: ''
 ms.search.region: global
+ms.search.industry: ''
 ms.author: ramasri
+ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-04-06
-ms.openlocfilehash: e9dc3e6c5fbec9636370b64a9bbdcf8a5834d332
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: 5d39bf28dba951a1483412d967c8c6fc6dbcc610
+ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061836"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "4744375"
 ---
 # <a name="currency-data-type-migration-for-dual-write"></a>Pénznem-adattípus áttelepítése kettős írás esetén
 
 [!include [banner](../../includes/banner.md)]
 
-
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 A pénznemneknél legfeljebb 10 értékű tizedesjegyszám-növelés használható. Az alapértelmezett korlát négy tizedesjegy. A tizedesjegyek számának növelésével megakadályozhatja, hogy az adatvesztést szenvedjen, amikor a kettős írással szinkronizálja az adatokat. A tizedeshelyek számának növekedése egy választható változás. A végrehajtásához segítséget kell kérnie a Microsofttól.
 
@@ -29,7 +38,7 @@ A tizedesjegyek számának módosítási folyamata két lépésből áll:
 1. Áttelepítés kérése a Microsofttól.
 2. A tizedes jegyek számának csökkentése a Dataverse megoldásban.
 
-A Finance and Operations alkalmazás és Dataverse ugyanannyi tizedesjegyet kell támogatnia a pénznemekben. Ellenkező esetben adatvesztés fordulhat elő, ha ez az információ szinkronizálva van az alkalmazások között. Az áttelepítési folyamat újrakonfigurálja a pénznem- és árfolyamértékek tárolásának módját, de az adatok nem módosulnak. Az áttelepítés befejeződése után a pénznemkód és az árképzés tizedesjegyei száma növelhető, és a felhasználó által megadott és megtekintett adatok több tizedesjegy pontossággal is rendelkezhetnek.
+Az Finance and Operations alkalmazásnak és a Dataverse megoldásnak a pénznemben azonos számú tizedesjegyet kell támogatnia. Ellenkező esetben adatvesztés fordulhat elő, ha ez az információ szinkronizálva van az alkalmazások között. Az áttelepítési folyamat újrakonfigurálja a pénznem- és árfolyamértékek tárolásának módját, de az adatok nem módosulnak. Az áttelepítés befejeződése után a pénznemkód és az árképzés tizedesjegyei száma növelhető, és a felhasználó által megadott és megtekintett adatok több tizedesjegy pontossággal is rendelkezhetnek.
 
 A migráció nem kötelező. Ha több tizedesjegyet támogatása hasznos lehet Önnek, ajánlott fontolóra venni a migrációt. Azoknak a szervezeteknek, amelyeknek nem szükséges négy tizedesjegynél pontosabb érték, nem kell áttelepíteniük.
 
@@ -37,7 +46,7 @@ A migráció nem kötelező. Ha több tizedesjegyet támogatása hasznos lehet �
 
 A meglévő pénznemoszlopok esetében a Dataverse nem támogat négy tizedesjegynél többet. Ezért az áttelepítési folyamat során a program átmásolja az adatbázis új belső oszlopaiba a pénznemek értékeit. Ez a folyamat addig történik folyamatosan, amíg az összes adatot át nem telepítik. A belső működést tekintve, az áttelepítés végén az új tárolási típusok felülírják a régi tárolási típusokat, de az adatértékek változatlanok. A pénznem oszlop így már legfeljebb 10 tizedesjegyet képes támogatni. Az áttelepítési folyamat alatt a Dataverse megszakítás nélkül használható.
 
-Ugyanekkor az árfolyamok úgy módosulnak, hogy legfeljebb 12 tizedesjegyet támogassanak az aktuális 10-es határ helyett. Erre a módosításra azért van szükség, hogy a tizedesjegyek száma azonos legyen a Finance and Operations alkalmazásban és a Dataverse.
+Ugyanekkor az árfolyamok úgy módosulnak, hogy legfeljebb 12 tizedesjegyet támogassanak az aktuális 10-es határ helyett. Ennek a módosításnak meg kell lennie, hogy a tizedesjegyek száma megegyezzeb mind a Finance and Operations alkalmazásban, mind a Dataverse megoldásban.
 
 Az áttelepítés nem változtatja meg az adatokat. A pénznem és az árfolyam oszlop átalakítását követően az adminisztrátor beállíthatja, hogy a rendszer legfeljebb 10 tizedesjegyet használjon a pénznem oszlopoknak, az egyes tranzakciós pénznemek és árképzések tizedesjegyszámának megadásával.
 
@@ -75,28 +84,14 @@ Vannak bizonyos limitációk:
 
 Az áttelepítés befejeződése után az adminisztrátorok meghatározhatják a pénznem pontosságát. Nyissa meg a **Beállítások \> Adminisztráció** elemet, és válassza a **Rendszerbeállítások** elemet. Ezt követően az **Általános** lapon módosítsa a **Pénznem pontosságának beállítása, amely az árképzéshez használt a rendszer egészében** beállítás értékét, ahogyan az a következő ábrán látható.
 
-![Pénznem rendszerbeállításai.](media/currency-system-settings.png)
+![Pénznem rendszerbeállításai](media/currency-system-settings.png)
 
 ### <a name="business-management-currencies"></a>Üzleti menedzsment: Pénznemek
 
 Ha azt szeretné, hogy az adott pénznemre vonatkozó pontossági érték eltérjen az árképzéshez használt pénznem pontosságától, akkor ez módosítható. Nyissa meg a **Beállítások \> Üzleti menedzsment** lehetőséget, válassza ki a **Pénznemek** elemet, majd válassza ki a módosítani kívánt pénznemet. Ezt követően állítsa be a **Pénznem pontossága** oszlopot a kívánt tizedesjegyek számával, ahogy az a következő ábrán látható.
 
-![Adott területi beállításhoz tartozó pénznemek beállításai.](media/specific-currency.png)
+![Adott területi beállításhoz tartozó pénznemek beállításai](media/specific-currency.png)
 
-### <a name="tables-currency-column"></a>Táblázatok: Pénznem oszlop
+### <a name="tables-currency-column"></a>táblák: Pénznem oszlop
 
 A megadott pénznem oszlopokhoz konfigurálható tizedesjegyek száma legfeljebb négy lehet.
-
-### <a name="default-currency-decimal-precision"></a>Alapértelmezett pénznem tizedes pontossága
-Az alapértelmezett pénznem decimális pontosságának várható viselkedését áttelepítési és nem-áttelepítési forgatókönyvek esetén a következő táblázat tartalmazza. 
-
-| Létrehozás dátuma  | Pénznem tizedes mező    | Meglévő szervezet (A pénznem mező nincs migrálva) | Meglévő szervezet (Pénznem mező migrálva) | Új szervezet létrehozta a 9.2.21062.00134 bejegyzést |
-|---------------------------------------------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------|------------------------------------------------|
-| 9.2.21111.00146 build előtt létrehozott pénznemmező  |     |  |       |
-|    | Maximális pontosság látható a felhasználói felületen   | 4 számjegy    | 10 számjegy    | N.a.    |
-| | Maximális pontosság látható az adatbázisban és a DB lekérdezési eredmények felhasználói felületén         | 4 számjegy   | 10 számjegy   | N.a.    |
-| 9.2.21111.00146 build után létrehozott pénznemmező |    |  |     |   |
-|   | Maximális decimális pontosság látható a felhasználói felületen     | 4 számjegy   | 10 számjegy   | 10 számjegy     |
-|          | Maximális decimális pontosság látható az adatbázisban és a DB lekérdezési eredmények felhasználói felületén | 10 számjegy. Azonban csak a 4-nek van jelentősége, ha minden nulla a 4 tizedesjegyen túl van. Ez lehetővé teszi a szervezet egyszerűbb és gyorsabb áttelepítését, ha szükséges. | 10 számjegy      | 10 számjegy     |
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

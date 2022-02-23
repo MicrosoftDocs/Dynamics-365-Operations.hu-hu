@@ -1,13 +1,16 @@
 ---
 title: A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz
 description: Ez a témakör bemutatja az áruházi tranzakciók folyamatos, apránkénti rendelés-létrehozási folyamatát a Microsoft Dynamics 365 Commerce alkalmazásban.
-author: analpert
-ms.date: 01/11/2021
+author: josaw1
+manager: AnnBe
+ms.date: 09/04/2020
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -15,53 +18,40 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 67b66cd4bf2a77f3ab7f33f691156e38cc13770a
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 79f99b9b401de3e3bcca6ec5a13a3b4f7bad6f8c
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7964629"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459182"
 ---
 # <a name="trickle-feed-based-order-creation-for-retail-store-transactions"></a>A rendelések folyamatos, apránkénti létrehozása a kiskereskedelmi áruház tranzakcióihoz
 
 [!include [banner](includes/banner.md)]
 
-Javasoljuk, hogy a Microsoft Dynamics 365 Commerce 10.0.5-ös és újabb verziókban minden kimutatásfeladási folyamatot a kimutatások apránkénti feladása folyamatokba vigyen át. Jelentős teljesítmény- és üzleti előnyök társulnak az apránkénti funkcionalitáshoz. Az értékesítési tranzakciók feldolgozása a nap folyamán történik. A fizetőeszköz- és készpénzkezelési tranzakciókat a nap végén kell feldolgozni a pénzügyi kimutatásban. Az apránkénti feldolgozás funkció az értékesítési rendelések, számlák és kifizetések folyamatos feldolgozását teszi lehetővé. Ebből következően a készlet, bevétel és kifizetések közel valós időben frissíthetők és elszámolhatók.
+A Dynamics 365 Retail 10.0.4-es és korábbi verzióiban a kimutatások feladása nap végi műveletnek tekinthető, ahol az összes tranzakciót a nap végén számolják el a könyvekben. A nagy méretű tranzakciókat ezután korlátozott idő alatt kell feldolgozni, amely bizonyos esetekben terhelési és zárolási, valamint kimutatásfeladási hibákat okozhat. A kiskereskedők emellett nap közben nem tudják elszámolni bevételeiket és kifizetéseiket a könyvelésben.
 
-## <a name="use-trickle-feed-based-posting"></a>A folyamatos, apránkénti feladás használata
+A rendelések folyamatos, apránkénti létrehozásának köszönhetően, amelyet a Retail 10.0.5-ös verziójában vezettünk be, a rendszer napközben folyamatosan feldolgozza a tranzakciókat, és csak a fizetőeszközök pénzügyi egyeztetése és az egyéb készpénzkezelési tranzakciók feldolgozása történik a nap végén. A funkció a nap folyamán felosztja az értékesítési rendelések, számlák és fizetések létrehozásának terhét, így jobb észlelt teljesítményt képes nyújtani, és lehetővé teszi a könyvelésben a bevételek és kifizetések szinte valós idejű elszámolását. 
 
-> [!IMPORTANT]
-> Mielőtt engedélyezné a folyamatos apránkéti feladást, gondoskodnia kell arról, hogy ne legyennek számított és fel nem adott kimutatások. A funkció engedélyezése előtt minden kimutatást adjon fel. A nyitott kimutatásokat az **Üzlet pénzügyi adatai** munkaterületén ellenőrizheti.
 
-Ha engedélyezni szeretné a kiskereskedelmi tranzakciók folyamatos, apránkénti feladását, engedélyezze a **Kiskereskedelmi kimutatások – folyamatos, apránkénti feldolgozás** funkciót a **Funkciókezelés** munkaterületen. A kimutatások két típusra lesznek felosztva: tranzakciós kimutatásokra és pénzügyi kimutatásokra.
+## <a name="how-to-use-trickle-feed-based-posting"></a>A folyamatos, apránkénti feladás használata
+  
+1. Ha engedélyezni szeretné a kiskereskedelmi tranzakciók folyamatos, apránkénti feladását, engedélyezze a **Kiskereskedelmi kimutatások – folyamatos, apránkénti feldolgozás** nevű funkciót a Funkciókezelés segítségével.
 
-### <a name="transactional-statements"></a>Tranzakciós kimutatások
+    > [!IMPORTANT]
+    > A funkció engedélyezése előtt győződjön meg arról, hogy nincsenek feladásra váró, függőben lévő kimutatások.
 
-A tranzakciós kimutatások feldolgozásának gyakran kell futniuk a nap során, így a bizonylatok létrehozása akkor történik, amikor a tranzakciókat a rendszer felölti a Commerce központjába. A **P-feladat** futtatásakor a tranzakciók az üzletekből a Commerce központba töltődnek fel. Az **Üzleti tranzakciók ellenőrzése** feladatot is futtatnia kell a tranzakciók ellenőrzéséhez, hogy a tranzakciós kimutatás felvegye azokat.
+2. A rendszer a jelenlegi kimutatási bizonylatot két típusra osztja: tranzakciós kimutatásra és pénzügyi kimutatásra.
 
-A következő feladatokat nagy gyakorisággal való futtatására ütemezze:
+      - A tranzakciós kimutatásban szerepel majd az összes fel nem adott és ellenőrzött tranzakció, és ez a kimutatás az Ön által megadott sorrendben hozza létre az értékesítési rendeléseket, értékesítési számlákat, fizetési és engedménynaplókat, valamint bevétel-költség tranzakciókat. Ezt a folyamatot úgy állítsa be, hogy sűrű gyakorisággal fusson, így a bizonylatok létrehozása akkor történik, amikor a tranzakciókat a rendszer a P-feladattal feltölti a Headquarters felületére. Mivel a tranzakciós kimutatás már létrehozza az értékesítési rendeléseket és értékesítési számlákat is, nincs szükség a **Készlet feladása** kötegelt feladat konfigurálására. Természetesen továbbra is használhatja az esetleges specifikus üzleti követelmények teljesítéséhez.  
+      
+     - A pénzügyi kimutatás terv szerint a nap végén jön létre, és csak a **Műszak** zárási módszert támogatja. Ez a kimutatás csak a pénzügyi egyeztetésre használható, és csak a különböző fizetőeszközök számított összege és tranzakciós összege közti összegeltérésekről készít naplókat, valamint a további készpénzkezelési tranzakciók naplóit hozza létre.   
 
-- A tranzakciós kimutatás kiszámításához futtassa a **Tranzakciós kimutatások kötegelt kiszámítása** feladatot (**Retail és Commerce \> Retail és Commerce IT \> Pénztárfeladás \> Tranzakciós kimutatások kötegelt kiszámítása**). Ez a feladat felveszi az összes fel nem adott és ellenőrzött tranzakciót, és hozzáadja azokat egy új tranzakciós kimutatáshoz.
-- A tranzakciós kimutatások kötegelt feladásához futtassa a **Tranzakciós kimutatások kötegelt feladása** feladatot (**Retail és Commerce \> Retail és Commerce IT \> Pénztárfeladás \> Tranzakciós kimutatások kötegelt feladása**). Ez a feladat futtatja a feladási folyamatot, és a hibákat nem tartalmazó, feladatlan kimutatásokhoz értékesítési rendeléseket, értékesítési számlákat, fizetési naplókat, engedménynaplókat és bevétel-költség tranzakciókat hoz létre. 
+3. A tranzakciós kimutatás kiszámításához lépjen a **Retail és Commerce > Retail és Commerce IT > Pénztárfeladás > Tranzakciós kimutatások kötegelt kiszámítása** lehetőségre. A tranzakciós kimutatások kötegelt feladásához lépjen a **Retail és Commerce > Retail és Commerce IT > Pénztárfeladás > Tranzakciós kimutatások kötegelt feladása** lehetőségre.
 
-### <a name="financial-statements"></a>Pénzügyi kimutatások
+4. A pénzügyi kimutatás kiszámításához lépjen a **Retail és Commerce > Retail és Commerce IT > Pénztárfeladás > Pénzügyi kimutatások kötegelt kiszámítása** lehetőségre. A pénzügyi kimutatások kötegelt feladásához lépjen a **Retail és Commerce > Retail és Commerce IT > Pénztárfeladás > Pénzügyi kimutatások kötegelt feladása** lehetőségre.
 
-A pénzügyi kimutatás feldolgozása nap végi folyamatként esedékes. Az ilyen típusú kimutatásfeldolgozás csak a **Műszak** zárása módot támogatja, és csak lezárt műszakokat vesz fel. A kimutatások csak a pénzügyi egyeztetésre korlátozódnak. Csak a különböző fizetőeszközök számított összege és tranzakciós összege közti összegeltérésekről készít naplókat, valamint a további készpénzkezelési tranzakciók naplóit hozza létre.
+> [!NOTE]
+> Az új funkcióban már nincsenek jelen a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT > Pénztárfeladás > Kimutatások kötegelt kiszámítása** és a **Kiskereskedelem és kereskedelem > Kiskereskedelem és kereskedelem IT > Pénztárfeladás > Kimutatások kötegelt feladása** menüpontok.
 
-A pénzügyi kimutatások a következő tranzakciók áttekintését is lehetővé teszik: fizetőeszköz-nyilatkozati tranzakciók, fizetési tranzakciók, banki fizetőeszköz-tranzakciók és széfes fizetési tranzakciók. A fizetőeszköz részletei lap csak akkor látható, ha pénzügyi kimutatás van kiválasztva.
-
-![A feladott kimutatások képernyő fizetési részletei szakaszát csak akkor megjelenítő kép, ha ki van választva a pénzügyi kimutatás.](./media/Trickle-feed-posted-statements-transaction-view.png)
-
-A következő pénzügyi kimutatási feladatok kezdő és záró időpontjának ütemezése a nap várható vége alapján:
-
-- A pénzügyi kimutatás kiszámításához futtassa a **Pénzügyi kimutatások kötegelt kiszámítása** feladatot (**Retail és Commerce \> Retail és Commerce IT \> Pénztárfeladás \> Pénzügyi kimutatások kötegelt kiszámítása**). Ez a feladat összegyűjti az összes fel nem adott pénzügyi tranzakciót, és hozzáadja azokat egy új pénzügyi kimutatáshoz.
-- A pénzügyi kimutatások kötegelt feladásához futtassa a **Pénzügyi kimutatások kötegelt feladása** feladatot (**Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem IT \> Pénztárfeladás \> Pénzügyi kimutatások kötegelt feladása**).
-
-### <a name="manually-create-statements"></a>Kimutatások manuális létrehozása
-
-Manuálisan is létre lehet hozni a tranzakciós és pénzügyi kimutatástípusokat. 
-
-1. Nyissa meg a **Kiskereskedelem és kereskedelem \> Csatornák \> Áruházak** pontot, és kattintson a **Kimutatások** lehetőségre. 
-2. Válassza az **Új** lehetőséget, majd válassza ki a létrehozni kívánt kimutatás típusát. A **Kimutatások** oldalon a kiválasztott kimutatástípus szempontjából releváns adatok jelennek meg és a **Kimutatáscsoport** alatt pedig a kapcsolódó műveletek jelennek meg.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Másik lehetőségként manuálisan is létre lehet hozni a tranzakciós és pénzügyi kimutatások típusait. Nyissa meg a **Kiskereskedelem és kereskedelem > Csatornák > Áruházak** pontot, és kattintson a **Kimutatások** lehetőségre. Kattintson az **Új** elemre, majd válassza ki a létrehozni kívánt kimutatás típusát. A **Kimutatások** mezőiben és az oldal **Kimutatáscsoport** részében található műveletek között a kiválasztott kimutatástípus szempontjából releváns adatok és műveletek jelennek meg.

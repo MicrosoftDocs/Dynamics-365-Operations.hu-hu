@@ -1,10 +1,12 @@
 ---
-title: Konfigurálja a Súgót a Finance and Operations alkalmazásokhoz
-description: Ez a témakör néhány Microsoft Dynamics 365 alkalmazáshoz tartalmaz tájékoztatást a Súgó rendszer összetevőiről.
+title: A Finance and Operations alkalmazások súgóélményének konfigurálása
+description: Ez a témakör néhány Microsoft Dynamics 365 alkalmazáshoz tartalmaz tájékoztatást a Súgó rendszer összetevőiről. Bemutatja az alkalmazások csatlakoztatásának módját, valamint az egyéni súgó létrehozási folyamatának összegzését.
 author: margoc
-ms.date: 08/11/2021
+manager: AnnBe
+ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
@@ -15,34 +17,31 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bac06e258a96bb50bb6de7957e3e5ed07e966127
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: d000c3f801d382921a027c8ee259fd44ac5cdc80
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071008"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798280"
 ---
-# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>Konfigurálja a Súgót a Finance and Operations alkalmazásokhoz
+# <a name="configure-the-help-experience-for-finance-and-operations-apps"></a>A Finance and Operations alkalmazások súgóélményének konfigurálása
 
 [!include [banner](../includes/banner.md)]
 
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
-
-Ebben a témakörben áttekintést talál a Finance and Operations alkalmazások súgórendszerének összetevőiről, mint például a Microsoft.Dynamics 365 Finance,Dynamics 365 Supply Chain Management,Dynamics 365 Commerce, és Dynamics 365 Human Resources. A témakör emellett bemutatja az összetevők csatlakoztatásának módját, valamint az egyéni súgó létrehozási folyamatának összegzését.
+Ebben a témakörben egy áttekintést talál a Finance and Operations alkalmazások súgórendszerének összetevőiről, például a Microsoft Dynamics 365 Finance, a Dynamics 365 Supply Chain Management, a Dynamics 365 Commerce és a Dynamics 365 Human Resources. A témakör emellett bemutatja az összetevők csatlakoztatásának módját, valamint az egyéni súgó létrehozási folyamatának összegzését.
 
 ## <a name="help-architecture"></a>Súgó-architektúra
 
-A Finance and Operations alkalmazások koncepcionális áttekintéseket és egyéb témákat tartalmaznak, amelyeket közzétesznek a [Microsoft Dynamics 365 dokumentáció](/dynamics365/) webhely. Ez a tartalom később a termék **Súgó** paneljéből érthető el. A következő ábrán a súgórendszer részei láthatók.
+A Finance and Operations alkalmazások fogalmi áttekintéseket és egyéb témaköröket tartalmaznak, amelyek a [https://docs.microsoft.com/dynamics365](/dynamics365/) webhelyen vannak közzétéve. Ez a tartalom később a termék **Súgó** paneljéből érthető el. A következő ábrán a súgórendszer részei láthatók.
 
-[![Súgóarchitektúra.](./media/help-architecture.png)](./media/help-architecture.png)
+[![Súgó-architektúra](./media/help-architecture.png)](./media/help-architecture.png)
 
 A terméken belüli súgórendszer a docs.microsoft.com webhelyről és egyéb kapcsolódó webhelyekről olvas be cikkeket. Ezenkívül a Microsoft Dynamics Lifecycle Services (LCS) Üzletifolyamat-modellező (BPM) alkalmazásában tárolt feladat-útmutatókat is beolvas.
 
 ## <a name="adding-task-guides"></a>Feladat-útmutatók hozzáadása
 
 > [!NOTE]
-> A **Feladat-útmutatók** lap jelenleg nem érhető el az Human Resources vagy a Commerce alkalmazásban. <!--We are currently working to enable this functionality in a future release.--> A Human Resources Első lépések részének feladat-útmutatói azonban továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárási Súgó a [Microsoft Dynamics 365 dokumentáció](/dynamics365/) webhelyről is elérhető, mind a Human Resources, mind a Commerce számára.
+> A **Feladat-útmutatók** lap jelenleg nem érhető el az Human Resources vagy a Commerce alkalmazásban. <!--We are currently working to enable this functionality in a future release.--> A Human Resources Első lépések részének feladat-útmutatói azonban továbbra is rendelkezésre állnak az alapvető funkciók ismertetéséhez. Az eljárási Súgó a [https://docs.microsoft.com/dynamics365](/dynamics365/) webhelyről is elérhető, mind a Human Resources, mind a Commerce számára.
 
 A **Rendszerparaméterek** oldalon a rendszeradminisztrátorok konfigurálhatják egy megvalósítás releváns feladat-útmutató könyvtáraihoz való hozzáférést.
 
@@ -50,20 +49,20 @@ A **Rendszerparaméterek** oldalon a rendszeradminisztrátorok konfigurálhatjá
 > - A Súgó konfigurálásához be kell lépnie egy ugyanattól a bérlőtől származó fiókba, amiben az alkalmazás is telepítve van.
 > - Helyi virtuális merevlemezen (VHD) futó alkalmazáspéldánnyal nem lehet csatlakozni az LCS könyvtárhoz.
 
-[![Rendszerparaméterek űrlap – súgó beállításai.](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
+[![Rendszerparaméterek űrlap – súgó beállításai](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png)
 
 A megoldás feladat-útmutatóinak konfigurálásához kövesse az alábbi lépéseket a **Rendszerparaméterek** oldalon.
 
 > [!IMPORTANT]
 > Amikor első alkalommal nyitja meg a **Súgó** lapot, kapcsolódnia kell a Lifecycle Services szolgáltatáshoz. Ügyeljen arra, hogy az űrlap közepén levő hivatkozásra kattintson, várja meg a kapcsolatot, zárja be a párbeszédpanelt, majd kattintson az **OK** gombra a **Rendszerparaméterek** oldal eléréséhez.
 >
-> [![Kapcsolódás az LCS szolgáltatáshoz](./media/connect-to-lcs-crop-1024x365.png "Csatlakozás az LCS-hez.")](./media/connect-to-lcs-crop.png)
+> [![Kapcsolódás az LCS szolgáltatáshoz](./media/connect-to-lcs-crop-1024x365.png "Kapcsolódás az LCS szolgáltatáshoz")](./media/connect-to-lcs-crop.png)
 
 1. A csatlakozáshoz válassza ki a Lifecycle Services-projektet.
 2. Válassza ki a BPM könyvtárakat (a kiválasztott projekten belül) amelyekből szeretné előhívni a rögzítéseket.
 3. Adja meg a BPM könyvtárak megjelenítési sorrendjét. A megjelenítési sorrend meghatározza a sorrendet, amelyben a feladatrögzítések megjelennek a **Súgó** ablakban.
 
-Miután elvégezte ezeket a lépéseket, megnyithatja a **Segítség** ablaktáblát, és válassza ki a **Feladat útmutatók** lapon. Mostantól megjelennek a Finance and Operations alkalmazásokban éppen megtekintett oldalra vonatkozó feladat-útmutatók. Amennyiben nem találhatók feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést.
+Miután végrehajtotta ezeket a lépéseket, nyissa meg a **Súgó** ablakot, és kattintson a **Feladat-útmutatók** lapra. Ekkor megjelennek a Finance and Operations-alkalmazások aktuális oldalához kapcsolódó feladat-útmutatók. Amennyiben nem találhatók feladat-útmutatók, kulcsszavak beírásával módosíthatja a keresést.
 
 ### <a name="showing-translated-task-guides"></a>Lefordított feladat-útmutatók megjelenítése
 
@@ -87,7 +86,7 @@ Ha partnerként hozzájárul egy könyvtárral egy vállalati tár kialakítás�
 
 ### <a name="connect-a-custom-help-site"></a>Egyéni súgóoldal csatlakoztatása
 
-A Finance and Operations alkalmazásokat ritkán használják készenléti formájukban. Helyette a megoldást testreszabják, és kiterjesztik, hogy megfeleljen a szervezet igényeihez. A Súgó élményét testreszabhatja és ki is bővítheti. Lehetőség van például egyéni súgó hozzáadására a terméken belüli **Súgó** panelen.
+A Finance and Operations alkalmazások ritkán használatosak a gyári állapotukban. Helyette a megoldást testreszabják, és kiterjesztik, hogy megfeleljen a szervezet igényeihez. A Súgó élményét testreszabhatja és ki is bővítheti. Lehetőség van például egyéni súgó hozzáadására a terméken belüli **Súgó** panelen.
 
 A Microsoft egy eszközkészletet biztosít egyéni súgók telepítéséhez és csatlakoztatásához a **Súgó** panelen. A **Súgó** panelhez kapcsolt egyéni súgótartalom beállításával kapcsolatos tudnivalókat lásd: [Egyéni Súgó – áttekintés](../../dev-itpro/help/custom-help-overview.md).
 
@@ -100,6 +99,3 @@ Ha együtt szeretne működni a Microsofttal a Súgó testreszabásához szüks�
 [Feladatrögzítő erőforrásai](../../dev-itpro/user-interface/task-recorder.md)  
 [Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével](../../dev-itpro/user-interface/task-recorder-training-docs.md)  
 [Egyéni súgó GitHub-tárház](https://github.com/microsoft/dynamics356f-o-custom-help)  
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

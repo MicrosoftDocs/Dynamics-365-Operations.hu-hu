@@ -1,25 +1,28 @@
 ---
 title: Naptárak és alaptervezés
 description: Ez a témakör áttekintést nyújt az ellátási lánc naptárakkal, illetve az alaptervezésre vonatkozó hatásukkal kapcsolatosan.
-author: ChristianRytt
+author: t-benebo
+manager: tfehr
 ms.date: 08/19/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f424a2a050f917be2f0823c35ee2a47b4dd5cd0a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2c32957b0bd234ed14e6333a36a46c6a83ec2e91
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7568615"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429541"
 ---
 # <a name="calendars-and-master-planning"></a>Naptárak és alaptervezés
 
@@ -90,7 +93,7 @@ Ha szeretné megadni a dátumokat, amikor a vevő fogad szállításokat, rendel
 
 Ne feledje, ügyfelenként csak egy naptár hozzárendelése lehetséges. Ha az ügyfél egyes különböző címeihez szeretne hozzárendelni naptárat, létrehozhat címenként egy ügyfelet, majd hozzárendelhet saját naptárát. 
 
-A kért átvételi dátumot az értékesítésirendelési-sorokban befolyásolja az ügyfél naptára és a szállítási dátum kezelési módja. A legkorábbi szállítási dátum kiszámításával kapcsolatosan itt talál további információkat: [Rendelési ígéretek.](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
+A kért átvételi dátumot az értékesítésirendelési-sorokban befolyásolja az ügyfél naptára és a szállítási dátum kezelési módja. A legkorábbi szállítási dátum kiszámításával kapcsolatosan itt talál további információkat: [Rendelési ígéretek.](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations).
 
 ### <a name="shipping-calendar-for-a-legal-entity"></a>Szállítási naptár jogi személyhez
 Ha jelezni szeretné a dátumokat, amelyeken a jogi személy árut tud szállítani, beállíthat egy szállítási naptárat a **Szervezet felügyelete > Szervezetek > Jogi személyek** helyen. Válassza ki a jogi személyt és adja hozzá a naptárat a **Külkereskedelem és logisztika** lapon a **Szállítási naptár** mezőben. A szállítási naptárat a jogi személyhez tartozó összes raktári naptár alapértelmezéseinek forrása lesz. 
@@ -140,6 +143,3 @@ A fedezeti csoport naptárakkal kapcsolatosan fontos, hogy felülbíráló visel
 
 ### <a name="updating-scm-related-calendars"></a>SCM-hez kapcsolódó naptárak frissítése
 Ugyan fontos, hogy minden megfelelő naptár a megfelelő helyhez legyen hozzárendelve (szállító, vevői, raktár, szállítási mód vagy fedezeti csoport), a frissítésük ugyanolyan fontos, hogy tükrözzék a módosításokat. A rendszer a termelési, átmozgatási, beszerzési és értékesítési rendelések dátumait a hozzárendelt naptárak kombinációja alapján határozza meg. A legjobb megoldás tisztázni, ki felelős a megfelelő területek naptárainak hozzárendeléséért és frissítésért. Leállás vagy a munkanapok bármilyen egyéb szokatlan változása esetén fontos ennek megfelelően a naptárak frissítése. Minden feladatot, amely naptárakra támaszkodik például az alaptervezés és a termelés ütemezése, a naptárak frissítésekor újra kell futtatni. 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

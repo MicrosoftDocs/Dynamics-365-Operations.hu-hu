@@ -1,36 +1,35 @@
 ---
-title: Adminisztráció áttekintése
-description: Ez a témakör a Dynamics 365 Human Resources beállításához, kezeléséhez és hibaelhárításához szükséges súgó témakörök és egyéb források listáját tartalmazza.
-author: twheeloc
-ms.date: 08/11/2021
-ms.topic: overview
+title: Áttekintés
+description: Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer beállításában, kezelésében és problémaelhárításában.
+author: andreabichsel
+manager: AnnBe
+ms.date: 02/03/2020
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
+ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a403390132443f29f12e11914b7a0f08faffa973
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 8008a7e78bb1d1568a79fab436194a04d1ff683c
+ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068409"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "4527861"
 ---
-# <a name="administration-overview"></a>Adminisztráció áttekintése
+# <a name="overview"></a>Áttekintés
 
+[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-
-
-Ez a témakör a Dynamics 365 Human Resources beállításához, kezeléséhez és hibaelhárításához szükséges súgó témakörök és egyéb források listáját tartalmazza.
+Ez a rendszergazdai útmutató segít a Dynamics 365 Human Resources rendszer beállításában, kezelésében és problémaelhárításában.
 
 - [Rendszerkövetelmények](hr-admin-system-requirements.md)
 
@@ -42,15 +41,15 @@ Ez a témakör a Dynamics 365 Human Resources beállításához, kezeléséhez �
 
 - Adatintegráció beállítása
   - [Válasszon ki egy adatintegrációs technológiát](hr-admin-integration-choose-technology.md)
-  - [A Dataverse-integráció konfigurálása](hr-admin-integration-common-data-service.md)
+  - [A Common Data Service-integráció konfigurálása](hr-admin-integration-common-data-service.md)
   - [A Finance szolgáltatással való integráció konfigurálása](hr-admin-integration-finance.md)
   - [A Dayforce szolgáltatással való integráció konfigurálása](hr-admin-integration-dayforce.md)
   - [Ismétlődő adatexportálási alkalmazás létrehozása](hr-admin-integration-recurring-data-export.md)
   - Integráció az Office-szal
-    - [Office-integrációs oktatóanyag](../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Entitás adatainak frissítése az Excel alkalmazásban](../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Az Excel programban történő megnyitási élmények létrehozása](../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
-    - [Office-integráció – hibaelhárítás](../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json)
+    - [Office-integrációs oktatóanyag](../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Entitás adatainak frissítése az Excel alkalmazásban](../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Az Excel programban történő megnyitási élmények létrehozása](../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json)
+    - [Office-integráció – hibaelhárítás](../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json)
 
 - [Szolgáltatások kezelése](hr-admin-manage-features.md)
 
@@ -85,7 +84,7 @@ Ez a témakör a Dynamics 365 Human Resources beállításához, kezeléséhez �
   - [Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével](../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/human-resources/toc.json)
 
 - Emberi erőforrások – hibaelhárítás
-  - [Támogatás kérése](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md)
+  - [Támogatás kérése](hr-admin-troubleshooting-support.md)
   - [Teljesítmény optimalizálása automatikus tisztítási feladatokkal](hr-admin-troubleshooting-batch-history.md)
   - [Az elemzési jelentések nincsenek frissítve](hr-admin-troubleshooting-analytic-reports.md)
   - [Nem lehet környezetet létrehozni a Power Apps felügyeleti központjában](hr-admin-troubleshooting-power-apps.md)
@@ -94,23 +93,12 @@ Ez a témakör a Dynamics 365 Human Resources beállításához, kezeléséhez �
   - [Kompenzációs folyamat futtatása](hr-admin-troubleshooting-compensation.md)
   - [Feladat útmutatójának mentése az LCS-be](hr-admin-troubleshooting-task-guide.md)
   - [Hozzáférés privát címekhez biztonsági szerepkörnek megfelelően](hr-admin-troubleshooting-private-addresses.md)
-  - [Az Emberi erőforrások nem jelenik meg a Dynamics 365 alkalmazásokban](hr-admin-troubleshooting-not-in-apps.md)
+  - [A Human Resources alkalmazás nem jelenik meg a Dynamics 365 alkalmazásai között](hr-admin-troubleshooting-not-in-apps.md)
   - [Jelentési funkciók](hr-admin-troubleshooting-reporting.md)
   - [Integrációval kapcsolatos GYIK](hr-admin-troubleshooting-integration.md)
 
-## <a name="additional-resources"></a>További erőforrások
-
-### <a name="elearning-courses"></a>eLearning-tanfolyamok
-Az online tanfolyamokkal és tréningekkel kapcsolatban tekintse meg a következőt: [Dynamics 365 Human Resources a Microsoft Learn szolgáltatásban](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
-
-### <a name="videos"></a>Videók
-
-Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.
-
 ## <a name="see-also"></a>Lásd még
 
-- [Újdonságok és változások a Human Resources szolgáltatásban](hr-admin-whats-new.md)
-- [Fejlesztői iránymutatás](hr-developer-overview.md)
+- [Új vagy módosult elemek a Human Resources alkalmazásban](hr-admin-whats-new.md)
+- [Fejlesztői útmutató](hr-developer-overview.md)
 - [Felhasználói útmutató](hr-hrpro-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

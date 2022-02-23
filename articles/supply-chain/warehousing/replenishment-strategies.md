@@ -2,22 +2,25 @@
 title: Feltöltési stratégiák
 description: Ez a témakör a feltöltési stratégiákról tartalmaz tájékoztatást, és bemutatja, hogyan lehet használni a Feltöltési stratégia mezőt a hullám igényfeltöltési sablon soraiban a feltöltés mód kiválasztásához.
 author: mirzaab
+manager: tfehr
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-29
-ms.dyn365.ops.version: 10.0.16
-ms.openlocfilehash: bd2ddbfeef454f2759ca09d8d763bada36a1fc83
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.16
+ms.openlocfilehash: 45b3b1a4d2e92a52ee69c17865634a6578181ac7
+ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574161"
+ms.lasthandoff: 11/25/2020
+ms.locfileid: "4646133"
 ---
 # <a name="replenishment-strategies"></a>Feltöltési stratégiák
 
@@ -45,7 +48,7 @@ A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A ren
 
 A sablonok eléréséhez menjen a: **Raktárkezelés \> Beállítás \> Feltöltés \> Feltöltési sablonok** lehetőségre. Az **Áttekintés** részben válassza ki vagy hozzon létre egy olyan hullám igényfeltöltési sablont, amelynél a **Feltöltési típus** mező a *Hullámigény* lehetőségre van állítva. Ezt követően állítsa be a feltöltési sablon sorait a **Feltöltési sablon részletei** szakaszba. A **Feltöltési stratégia** mezőben válassza ki a használni kívánt feltöltési stratégiát mindegyik sorhoz.
 
-![Feltöltési sablonok oldal.](media/ReplenTempWaveDmdMaxLocCap.png "Feltöltési sablonok oldal")
+![Feltöltési sablonok oldal](media/ReplenTempWaveDmdMaxLocCap.png "Feltöltési sablonok oldal")
 
 Ha a **Feltöltési stratégia** oszlop nem jelenik meg a **Feltöltési sablon részletei** szakasz rácsában, győződjön meg arról, hogy a funkció be van kapcsolva, és a kijelölt feltöltési sablonnak a feltöltési típusa *Hullámigény*.
 
@@ -112,6 +115,3 @@ Az eredmények a munka létrehozásakor rendelkezésre álló információktól 
 [![2. példa](media/ReplenTemp_example_2.png "2. példa")](media/ReplenTemp_example_2_large.png)
 
 Ahhoz, hogy a maximális mennyiséget eljuttathassa a feltöltési helyekre, a **Felosztás engedélyezése** lehetőséget *Igen* értékre a helyutasításoknál a feltöltési kitároláshoz.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

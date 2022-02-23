@@ -1,25 +1,28 @@
 ---
 title: Termelési folyamatmodellek meghatározása
 description: A termelési folyamatmodellek írják le, hogyan kell kiszámítani és karban tartani a lean manufacturing munkacelláinak kapacitását.
-author: johanhoffmann
+author: cvocph
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlowModel
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6fb12be6f744cee8af3a845d6b278d1f1462ec5d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: 511c466d6019cb182c9ada0b02172b8eeb3725e6
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579136"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429219"
 ---
 # <a name="define-production-flow-models"></a>Termelési folyamatmodellek meghatározása
 
@@ -43,6 +46,3 @@ A termelési folyamatmodellek írják le, hogyan kell kiszámítani és karban t
 8. Egy lehetőség kiválasztása a Kapacitáshiányra való reagálás mezőben.
     * A lehetőségek a következők: Elhalasztás – Az ütemezési esemény teljes igényének elhalasztása a következő elérhető termelési napon, rendelkezésre álló kapacitással. Érvénytelenítés – Az ütemezési esemény automatikus tervezésének befejezése és a kapcsolódó feladatok nem tervezettként hagyása.   Hozzáadás a kért naphoz – A kért feladatok megtervezése a kért időszakban. Ez a cella túlterhelése az adott napra, és megkövetel egy tervező által végzett vizsgálatot és kézi beavatkozást.   Rendelkezésre álló időszakokra elosztás – Elosztja az ütemezési esemény különböző feladatait az összes rendelkezésre álló termelési napra, az első elérhető naptól kezdődően. A minimális elosztási mennyiség a kanbanfeladat-mennyiség. A felosztás hozzárendeli a minimális tervezési mennyiséget (kanbanmennyiség) minden naphoz, amely elegendő elérhető teljesítménnyel rendelkezik.  
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

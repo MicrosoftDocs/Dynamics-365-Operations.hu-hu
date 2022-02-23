@@ -1,27 +1,30 @@
 ---
 title: Előrejelzés csökkentési kulcsok
 description: Ez a témakör az csökkentési kulcs beállítását bemutató példákat tartalmaz. Tartalmaz információkat a különböző csökkentési kulcs beállításokról és azok eredményéről. A csökkentési kulcsot használhatja az előrejelzési követelmények csökkentésének módjának meghatározásához.
-author: ChristianRytt
+author: roxanadiaconu
+manager: tfehr
 ms.date: 04/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqPlanSched, ReqReduceKeyDefaultDataWizard, ReqReduceKey
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19251
 ms.assetid: aa9e0dfb-6052-4a2e-9378-89507c02fdf2
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cbed77fd1abc0e4ae26e2b9ddcc01d3f4a84889f
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 1fc2b63bfdec1c663027cb4e551589a705c2164e
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570825"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429390"
 ---
 # <a name="forecast-reduction-keys"></a>Előrejelzés csökkentési kulcsok
 
@@ -86,18 +89,7 @@ Ebben az eseteben, ha előrejelzési ütemezést január 1-jén futtatja, az ig�
 
 ### <a name="transactions--reduction-key"></a>Tranzakciók – csökkentési kulcs
 
-Ha az **Előrejelzési követelmények csökkentésére használt módszert** a *Tranzakciók – csökkentési kulcs* értékre állítja, az előrejelzési követelmények a minősített igénytranzakciókkal csökkennek, amelyek a csökkentési kulcs által megadott időszakok során következnek be.
-
-A minősített igényt a **Fedezeti csoportok** oldal **Előrejelzés csökkentése a következővel:** mezője határozza meg. Ha az **Előrejelzés csökkentése a következővel:** mező értékét *Rendelések* értékre állítja, csak az értékesítésirendelés-tranzakciók számítanak minősített igénynek. Ha az *Összes tranzakció* érték van beállítva, bármely nem vállalatközi kiadású készlettranzakció minősített igénynek számít. Ha vállalatközi értékesítési rendeléseket is minősített igényként kell tekinteni, állítsa a **Vállalatközi rendelések szerepeltetése** beállítást *Igen* értékre.
-
-Az előrejelzés csökkentése a csökkentési kulcs időszakának első (legkorábbi) igény-előrejelzési rekordjával kezdődik. Ha a minősített készlettranzakciók mennyisége nagyobb, mint az ugyanabban a csökkentési kulcs időszakában szereplő igény-előrejelzési sorok mennyisége, a készlettranzakciók mennyiségének egyenlegét használja a rendszer az előző időszak igény-előrejelzési mennyiségének csökkentésére (amennyiben van fel nem használt előrejelzés).
-
-Ha az előző csökkentési kulcs időszakában nem marad fel nem használt előrejelzés, akkor a készlettranzakciók mennyiségének egyenlegét használja a rendszer a következő hónap előrejelzési mennyiségének csökkentésére (amennyiben van nem felhasznált előrejelzés).
-
-A csökkentésikulcs-sorok **Százalék** mezőjének értéke nem használatos, ha az **Előrejelzési követelmények csökkentésére szolgáló metodológia** mező értékének beállítása *Tranzakciók - csökkentési kulcs*. A csökkentési kulcs időszakát csak a dátumok határozzák meg.
-
-> [!NOTE]
-> A program minden olyan előrejelzést figyelmen kívül hagy, amely a mai napon vagy azelőtt lett feladva, és nem lesz használva tervezett rendelések létrehozásához. Ha például a hónapra vonatkozó igény-előrejelzés január 1-jén jön létre, és január 2-án igény-előrejelzést tartalmazó alaptervezést futtat, a számítás figyelmen kívül hagyja a január 1-jei dátummal létrehozott igény-előrejelzési sort.
+Ha a **Tranzakciók – csökkentési kulcs** lehetőséget választja, az előrejelzési követelmények azon tranzakciók mértékével csökkennek, amelyek a csökkentési kulcs által definiált időszakokra vonatkoznak.
 
 #### <a name="example-transactions--reduction-key"></a>Példa: Tranzakciók – csökkentési kulcs
 
@@ -207,7 +199,7 @@ Tehát a következő tervezett rendelések jönnek létre.
 Az előrejelzési csökkentési kulcs a **Tranzakciók - csökkentési kulcs** és **Százalék-csökkentési kulcs** metodológiákban van használva az előrejelzési követelmények csökkentéséhez. Kövesse az alábbi lépéseket csökkentési kulcs létrehozásához és beállításához.
 
 1. Manjen az **Alaptervezés \> Beállítás \> Fedezet \> Csökkentési kulcsok** menübe.
-2. Válassza ki az **Új** lehetőséget egy csökkentési kulcs létrehozásához.
+2. Válassza az **Új** lehetőséget, vagy nyomja le a **Ctrl + N** billentyűkombinációt csökkentési kulcs létrehozásához.
 3. A **csökkentési kulcs** mezőben írjon be az előre jelzett csökkentési kulcs egyedi azonosítóját. Majd a **Név** mezőben adjon meg egy nevet. 
 4. Adja meg az időszakokat és a csökkentési kulcs százalékát az egyes időszakokhoz:
 
@@ -235,6 +227,3 @@ Ha bejelöli a **Tranzakciók - csökkentési kulcs** vagy **Tranzakciók - dina
 ## <a name="additional-resources"></a>További erőforrások
 
 [Alaptervek áttekintése](master-plans.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

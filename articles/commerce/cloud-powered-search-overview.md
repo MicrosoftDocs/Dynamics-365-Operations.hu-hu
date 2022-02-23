@@ -2,29 +2,36 @@
 title: Felhőalapú keresés – áttekintés
 description: Ez a témakör áttekintést nyújt a felhőalapú keresésről a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: ashishmsft
+manager: annbe
 ms.date: 06/29/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
+ms.search.scope: Operations, Retail, Core
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: eb34780d5bdd41a128fff543fe0f1ef73cfead8b
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 00a3de2515cea341f7529b8cb6cb2caae5e33d22
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983669"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412739"
 ---
 # <a name="cloud-powered-search-overview"></a>Felhőalapú keresés – áttekintés
+
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör áttekintést nyújt a felhőalapú keresésről a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 A termék felderíthetővé tételével biztosíthatja, hogy a vevők gyorsan és egyszerűen megtalálják a termékeket a kategóriák böngészésével, kereséssel és szűréssel. A kiskereskedők a termékfelderítésre elsődleges eszközként tekintenek az ügyfélinterakciókhoz összes kereskedelmi csatornán.
 
@@ -40,7 +47,7 @@ A keresés relevanciája és teljesítménye kulcsfontosságú tényező a több
 
 A következő ábra a jellemző böngészési és keresési funkciók egy példáját mutatja be.
 
-![Keresés céloldala.](./media/SearchLanding.png)
+![Keresés céloldala](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>A jellemzőalapú navigáció és a választási lehetőségek összegzése 
 
@@ -50,7 +57,7 @@ A jellemzőalapú navigáció segítségével különböző finomítók állíth
 
 A következő ábra egy példát mutat be, ahol a jellemzőalapú navigálás kerül felhasználásra egy keresésben.
 
-![Választási lehetőségek összegzése.](./media/ChoiceSummary.png)
+![Választási lehetőségek összegzése](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Modern automatikus ajánlások
 
@@ -60,7 +67,7 @@ Dynamics 365 Commerce támogatja a kulcsszavas egyeztetések működését is a 
 
 A következő ábra egy példát mutat be, ahol a modern automatikus javaslat van használatban.
 
-![Modern automatikus ajánlások.](./media/ImmersiveAutoSuggestUX.png)
+![modern automatikus ajánlások](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Rendezés
 
@@ -68,13 +75,10 @@ A Dynamics 365 Commerce továbbfejlesztett rendezésével a vevők rendezhetnek,
 
 >[!NOTE]
 >Ezek a felhőalapú keresési funkciók a 10.0.8 verziótól érhetők el. Ellenőrizze, hogy a **Kereskedelmi paraméterek > Konfigurációs paraméterek** között van-e egy bejegyzés a következőhöz: „ProductSearch. UseAzureSearch 'igaz' értékre állítva”. 
-![A felhőalapú keresés konfigurációs paraméterei.](./media/CloudPoweredSearchConfigurationParameters.png)
+![A felhőalapú keresés konfigurációs paraméterei](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Az alapértelmezett kategória-céloldal és keresési találatoldal áttekintése](category-search-page-overview.md)
+[Alapértelmezett kategória-céloldal és keresési találatoldal áttekintése](category-search-page-overview.md)
 
 [SEO-metaadatok kezelése](manage-seo-metadata.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

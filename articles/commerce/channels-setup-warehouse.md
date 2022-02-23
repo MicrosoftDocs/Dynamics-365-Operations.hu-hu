@@ -2,30 +2,36 @@
 title: Raktár beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a raktárakat új csatornával való használathoz a Microsoft Dynamics 365 Commerce szolgáltatásban.
 author: samjarawan
+manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6987263bfa83582f465e3b47c4f7b9d96cf087c814a1e002afd289852346975b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6da72ae612f0520965a2b11a21123d4642303ac3
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734019"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412854"
 ---
 # <a name="warehouse-set-up"></a>Raktár beállítása
+
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet beállítani a raktárakat új csatornával való használathoz a Microsoft Dynamics 365 Commerce szolgáltatásban.
+
+## <a name="overview"></a>Áttekintés
 
 Minden egyes Commerce-csatornához hozzá kell rendelni egy konfigurált raktárat. A következő eljárások a Commerce csatorna raktárának beállításához szükséges minimális konfigurációját nyújtják. A raktár beállításaival kapcsolatos további tudnivalókat lásd a [Raktárkezelés – áttekintés](../supply-chain/warehousing/warehouse-management-overview.md?toc=/dynamics365/commerce/toc.json) című témakörben.
 
@@ -45,7 +51,7 @@ A raktári webhely konfigurálásához kövesse az alábbi lépéseket.
 
 A következő kép egy példát mutat a raktárwebhelyre.
 
-![Példa: raktárwebhely.](media/warehouse-site.png)
+![Példa: raktárwebhely](media/warehouse-site.png)
 
 ## <a name="set-up-a-warehouse"></a>Raktár beállítása
 
@@ -98,7 +104,7 @@ A szokásos, sérült és visszaküldött készlet raktári készlethelyének be
     
 A következő képen a San Francisco raktár készlethely beállítása látható.
 
-![Példa raktári hely beállítására.](media/warehouse-inventory-locations.png)
+![Példa raktári hely beállítására](media/warehouse-inventory-locations.png)
     
 ## <a name="complete-warehouse-setup"></a>Teljes raktári beállítás
 
@@ -121,7 +127,7 @@ Ennek a raktárbeállításnak a befejezéséhez kövesse az alábbi lépéseket
 
 A következő kép a konfigurált raktár adatait jeleníti meg.
 
-![Példa konfigurált raktárra.](media/warehouse-sample.png)
+![Példa konfigurált raktárra](media/warehouse-sample.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -141,6 +147,3 @@ A következő kép a konfigurált raktár adatait jeleníti meg.
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

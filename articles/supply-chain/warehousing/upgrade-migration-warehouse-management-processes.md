@@ -2,9 +2,11 @@
 title: Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Supply Chain Management szolgáltatásra
 description: Ez a témakör áttekintést nyújt a termékek és a raktárkezelés áttelepítési beállításairól.
 author: perlynne
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocationWHSProcessEnablement, WHSLocationProfile, InventTableStorageDimensionGroupChange, InventUpdateBlockedItem, WHSParameters, WHSReservationHierarchy, WHSUOMSeqGroupTable
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ac8c0d8781e5146186fbf71ce619f90ca3556ccefefe7e974efded7e0eb86dd
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 45d9809d4bbf1b5a68c3f799ce5d51f9709d276b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6775435"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4970281"
 ---
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-supply-chain-management"></a>Raktárkezelés frissítése a Microsoft Dynamics AX 2012-ről a Supply Chain Management szolgáltatásra 
 
@@ -66,7 +68,7 @@ Mielőtt használhatná a kiadott termékeket a **Raktárkezelés** modulban, a 
 1.  Hozzon létre legalább egy új helyprofilt.
 2.  Kattintson a **Raktárkezelés** &gt; **Beállítás** &gt; **Raktárkezelési folyamatok engedélyezése** &gt; **Raktár beállításának engedélyezése** lehetőségre.
 3.  A **Raktárbeállítások engedélyezése** oldalon adja hozzá az engedélyezni kívánt raktárakat. Ezt a lépést közvetlenül az oldalon vagy a Microsoft Office-integráció használatával teheti meg.
-4.  Társítson helyprofilt az összes helyhez. Ezt a lépést könnyen megteheti a Microsoft Office-integráció használatával közvetlenül az oldalon. Exportálhatja és importálhatja az adatokat, vagy használhatja az adatentitások feldolgozását az [Adatkezelés](../../fin-ops-core/dev-itpro/data-entities/data-entities.md) lehetőségben.
+4.  Társítson helyprofilt az összes helyhez. Ezt a lépést könnyen megteheti a Microsoft Office-integráció használatával közvetlenül az oldalon. Exportálhatja és importálhatja az adatokat, vagy használhatja az adatentitások feldolgozását az [Adatkezelés](../../dev-itpro/data-entities/data-entities.md) lehetőségben.
 5.  Ellenőrizze a módosításokat. Az ellenőrzési folyamat részeként az adatok integritását különböző ellenőrzések révén vizsgálja a rendszer. A nagyobb frissítési folyamat részeként hibák fordulhatnak elő, amelyeket esetleg a forrásvégrehajtásban kell módosítani. Ebben az esetben egy további adatfrissítésre lesz szükség.
 6.  Dolgozza fel a módosításokat.
 
@@ -77,9 +79,6 @@ Mielőtt használhatná a kiadott termékeket a **Raktárkezelés** modulban, a 
 3.  A **Foglalási hierarchia** lapon határozzon meg egy új foglalási hierarchiát a cikk tárolási és nyomon követési dimenziócsoportjai alapján.
 4.  Hozzon létre egy vagy több egységszekvencia-csoportot, amelyek ugyanazokat a mértékegységeket tartalmazzák, amelyeket a cikk készletegységében használnak.
 5.  Kattintson a **Raktárkezelés** &gt; **Beállítás** &gt; **Raktárkezelési folyamatok engedélyezése** &gt; **Tárolási dimenziócsoportok módosítása cikkekhez** lehetőségre.
-6.  A **Tárolási dimenziócsoport módosítása cikkekhez** lapon adja hozzá a cikkszámokat, a tárolási dimenziócsoportokat és az egységszekvencia-csoportokat. Ezt a lépést közvetlenül az oldalon végezheti el a Microsoft Office-integráció használatával vagy az adatentitás folyamat segítségével az [Adatkezelés lehetőségben](../../fin-ops-core/dev-itpro/data-entities/data-entities.md).
+6.  A **Tárolási dimenziócsoport módosítása cikkekhez** lapon adja hozzá a cikkszámokat, a tárolási dimenziócsoportokat és az egységszekvencia-csoportokat. Ezt a lépést közvetlenül az oldalon végezheti el a Microsoft Office-integráció használatával vagy az adatentitás folyamat segítségével az [Adatkezelés lehetőségben](../../dev-itpro/data-entities/data-entities.md).
 7.  Ellenőrizze a módosításokat. Az ellenőrzési folyamat részeként az adatok integritását különböző ellenőrzések révén vizsgálja a rendszer. A nagyobb frissítési folyamat részeként hibák fordulhatnak elő, amelyeket esetleg a forrásvégrehajtásban kell módosítani. Ebben az esetben egy további adatfrissítésre lesz szükség.
 8.  Dolgozza fel a módosításokat. A készletdimenziók frissítése eltarthat egy ideig. A kötegelt feladatok segítségével figyelemmel követheti a folyamat állapotát.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

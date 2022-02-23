@@ -1,35 +1,39 @@
 ---
-title: Kanbanátviteli tábla támogatása vonalkódolvasókhoz
-description: A Kanbanátviteli tábla támogatja a widget vonalkódolvasóról történő beolvasást a kanban munkák kiválasztásához, indításához, befejezéséhez és kiürítéséhez.
-author: johanhoffmann
+title: Kanban átviteli tábla támogatás vonalkódolvasókhoz
+description: A Kanban átviteli tábla támogatja vezérlő vonalkód leolvasó szkenner bemenetét, így annak segítségével kiválaszthatja, elindíthatja, teljesítheti és kiürítheti a kanban feladatot.
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: 19391
 ms.assetid: a426f645-d59b-4c98-8d78-eba8d64a562e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b18aad4dcdbf8c2d18960ae306556c3ea679d622
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: MT
+ms.openlocfilehash: 1bd6f1bdd847f74cee7d3594d19b72454063c0cb
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566811"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429745"
 ---
-# <a name="kanban-transfer-board-support-for-bar-code-scanners"></a>Kanbanátviteli tábla támogatása vonalkódolvasókhoz
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban átviteli tábla támogatás vonalkódolvasókhoz
 
 [!include [banner](../includes/banner.md)]
 
-A Kanbanátviteli tábla támogatja a widget vonalkódolvasóról történő beolvasást a kanban munkák kiválasztásához, indításához, befejezéséhez és kiürítéséhez.
+A Kanban átviteli tábla támogatja vezérlő vonalkód leolvasó szkenner bemenetét, így annak segítségével kiválaszthatja, elindíthatja, teljesítheti és kiürítheti a kanban feladatot.
 
-## <a name="registration-modes"></a>Regisztrációs módok
+<a name="registration-modes"></a>Regisztrációs módok
+------------------
 
 A **Leolvasó regisztrálása** gyorslapon kiválaszthatja a regisztrációs módot, amely irányítja a műveletet, ha beolvassa a kanbankártya számát vagy manuálisan írja be a számot a Kanbankártya száma mezőbe.
 
@@ -40,10 +44,11 @@ A **Leolvasó regisztrálása** gyorslapon kiválaszthatja a regisztrációs mó
 | Üres                 | A kanbankártya által üresként hivatkozott anyagkezelési egység regisztrálása.              |
 | Kijelölés                | Kanbankártya számának regisztrálása és a hivatkozott feladat automatikus kiválasztása a kanbanfeladatok listájában. |
 
- 
-## <a name="registration-mode-select"></a>Regisztrációs mód kiválasztása
+ 
+Regisztrációs mód kiválasztása
+------------------------
 
-Amikor vonalkódolvasó segítségével választ ki egy feladatot, a kanban tábla megjelenítési módja megváltozik. Ebben a módban a következő feltételek érvényesek:
+Amikor vonalkódolvasó segítségével választ ki egy feladatot, a kanban tábla megjelenítési módja megváltozik. Ebben a módban a következő feltételek érvényesek:
 
 -   Csak a beolvasott kanbanfeladat jelenik meg.
 -   A kiválasztott feladat részletei megjelennek a **Részletek** gyorslapon.
@@ -90,7 +95,7 @@ Az eseménykanbanoknál a kijelölt feladatok és a rögzített feladatok állap
 <td>Igen</td>
 <td>Igen</td>
 <td>Igen</td>
-<td>Nem</td>
+<td>Szám</td>
 <td>Igen</td>
 </tr>
 <tr class="even">
@@ -100,61 +105,61 @@ Az eseménykanbanoknál a kijelölt feladatok és a rögzített feladatok állap
 <li>A rögzített feladat nincs Befejezve.</li>
 </ul></td>
 <td>Igen</td>
-<td>Nem</td>
+<td>Szám</td>
 <td>Igen</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
 </tr>
 <tr class="odd">
 <td>Áthelyezés</td>
 <td>Folyamatban</td>
 <td>Igen</td>
-<td>Nem</td>
+<td>Szám</td>
 <td>Igen</td>
 <td>Igen</td>
-<td>Nem</td>
-<td>Nem</td>
+<td>Szám</td>
+<td>Szám</td>
 </tr>
 <tr class="even">
 <td>Áthelyezés</td>
 <td>Befejeződött</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
 <td>Igen</td>
-<td>Nem</td>
+<td>Szám</td>
 </tr>
 <tr class="odd">
 <td>Átvitel vagy folyamat</td>
 <td>Üres</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
 </tr>
 <tr class="even">
 <td>Átvitel vagy folyamat</td>
 <td>A kanbankártya nem található</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
 </tr>
 <tr class="odd">
 <td>Átvitel vagy folyamat</td>
 <td>A kanbankártya megtalálható, de nincs hozzárendelve kanbanhoz</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
 </tr>
 <tr class="even">
 <td>Feldolgozás</td>
@@ -163,22 +168,22 @@ Az eseménykanbanoknál a kijelölt feladatok és a rögzített feladatok állap
 <li>Előkészítve</li>
 <li>Folyamatban</li>
 </ul></td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
 </tr>
 <tr class="odd">
 <td>Feldolgozás</td>
 <td>Befejeződött</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
-<td>Nem</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
+<td>Szám</td>
 </tr>
 </tbody>
 </table>
@@ -187,6 +192,3 @@ Az eseménykanbanoknál a kijelölt feladatok és a rögzített feladatok állap
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

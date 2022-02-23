@@ -1,13 +1,16 @@
 ---
-title: Számlakezelési oldalak és modulok
+title: Fiókkezelési lapok és modulok
 description: Ez a témakör a fiókkezelési lapokkal és modulokkal foglalkozik a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: v-chgri
-ms.date: 03/17/2021
+manager: annbe
+ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -15,18 +18,20 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 5b26f9f83ad368a7e0fbc0ffe1263a8fec86f99b8a66ee6c4a28d5e061efbc21
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b0f963bcf65ae622522fe52fd59996c6ec0ecf17
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716250"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412782"
 ---
-# <a name="account-management-pages-and-modules"></a>Számlakezelési oldalak és modulok
+# <a name="account-management-pages-and-modules"></a>Fiókkezelési lapok és modulok
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a fiókkezelési lapokkal és modulokkal foglalkozik a Microsoft Dynamics 365 Commerce alkalmazásban.
+
+## <a name="overview"></a>Áttekintés
 
 A fiókkezelési lapok egy csoportjára vonatkozik, amelyek a felhasználói fiókkal kapcsolatos információk kezelésére szolgálnak a Dynamics 365 Commerce alkalmazásban. A fiókkezelési lapok közé tartozik a fiókkezelés nyitólapja, a felhasználói profil lapja, a felhasználói cím lapja, a rendeléselőzmények lapja, a rendelés részleteinek lapja, a hűségprogram lapja és a kívánságlista lapja.
 
@@ -49,9 +54,9 @@ A rendeléselőzmények lap a rendeléselőzmények modulban jeleníti meg a fel
 
 A rendelés részletei lap részletes adatokat tartalmaz minden rendelésről, és elérhető a rendeléselőzmények lapról. A rendelés részletei modult használja, amely az értékesítési azonosító vagy a tranzakció azonosítója segítségével kéri le a rendelés részleteit.
 
-### <a name="my-profile-page"></a>Saját profillap
+### <a name="user-profile-page"></a>Felhasználói profil lap
 
-A Saját profil oldal a fiókprofil modul segítségével mutatja a felhasználó fiókprofil-adatait. Az oldalon megjelenik a felhasználó fiókjához társított e-mail-cím, valamint a fiókhoz megadott beállítások. Egyéni ügyfélattribútumok beállítása esetén a „További információk” szakasz is megjeleníti ezeket az attribútumokat. A felhasználók szerkeszthetik nevüket, preferenciáikat vagy további adataikat (ha vannak ilyenek).
+A felhasználói profil lap a felhasználói fiók adatait jeleníti meg, például a felhasználó nevét és e-mail-címét. A felhasználói profil adatait és a felhasználói profilok szerkesztési modulját használja. Annak ellenére, hogy az e-mail-cím nem távolítható el, lehetőség van a szerkesztésére. A felhasználói profiloldal megjeleníti a felhasználói beállításokat is, amelyek lehetővé teszik, hogy a felhasználó fel- vagy leiratkozzon bizonyos szolgáltatásokról, mint a testreszabás vagy a javaslatok listája. 
 
 ### <a name="user-address-page"></a>Felhasználó címe lap
 
@@ -84,6 +89,3 @@ A hűségprogramhoz való csatlakozáshoz létre lehet hozni egy marketinges lap
 [Fejlécmodul](author-header-module.md)
 
 [Láblécmodul](author-footer-module.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

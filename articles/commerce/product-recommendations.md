@@ -2,25 +2,29 @@
 title: Termékajánlatok áttekintése
 description: Ez a témakör a rendezési termékjavaslatok ismertetését tartalmazza. A termékjavaslatoknak köszönhetően a vevők egyszerűen és gyorsan megtalálják azokat a termékeket, amelyeket szeretnének, és még olyanokat is, amelyek eredetileg nem szándékoznak megvásárolni.
 author: Moonma
+manager: AnnBe
 ms.date: 05/26/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
+ms.search.scope: Retail, Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: moonma
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7824de50a65370ef4f2f23b9c8e926f9bec2fcc3
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 5aa7db8e53906f9e1416b912fe2c3b70d5430258
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982119"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412735"
 ---
 # <a name="product-recommendations-overview"></a>Termékajánlatok áttekintése
 
@@ -31,9 +35,6 @@ A Microsoft Dynamics 365 Commerce a termékjavaslatok megjelenítésére haszná
 A termékjavaslatok révén a vevők egyszerűen és gyorsan megtalálják azokat a termékeket, amelyeket szeretnének, és mindeközben jó élményben van részük. A kereszt- és felülértékesítések arra is használhatók, hogy a vásárlók olyan termékeket is találjanak, amelyeket eredetileg nem is szándékoztak megvásárolni. Amikor a termékek felfedezésével kapcsolatos támogatáshoz használják a javaslatokat, több konverziós lehetőséget is kialakíthatnak, és ezek elősegítik az értékesítési bevételek növelését, valamint javíthatják a vevői elégedettséget és a visszatartást.
 
 Az e-kereskedelemben a termékjavaslatokat a Microsoft Recommendations gép tanulási technológiái támogatják.
-
-Ez a szolgáltatás egy Dynamics 365 Commerce-bővítmény. További tájékoztatásért töltse le a legújabb [Microsoft Dynamics 365-ös licencelési útmutatót](https://go.microsoft.com/fwlink/?LinkId=866544).
-
 
 ## <a name="recommendation-service"></a>Ajánlási szolgáltatás
 
@@ -87,6 +88,3 @@ A következő táblázat leírja, hogy milyen automatizált termék-javaslatok �
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,35 +1,33 @@
 ---
-title: Módosítások arányának feldolgozása
-description: Ez a téma elmagyarázza, hogyan kell feldolgozni a juttatási mértékek módosítását a Microsoft Dynamics 365 Human Resources rendszerben.
-author: twheeloc
-ms.date: 08/23/2021
+title: Mértékváltozások feldolgozása
+description: A juttatási mérték változásainak feldolgozása a Microsoft Dynamics 365 Human Resources rendszerben, ha egy új vagy meglévő juttatási terv módosult a jogosultsági szabály beállításaiban.
+author: andreabichsel
+manager: AnnBe
+ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart, BenefitRate, BenefitEligibilityProcessResultViewer
 audience: Application User
+ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5e0dfbdde8ee950a0341fffb1e268fff05434953
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: da42ef6ea91b95903316e35b551b222b8ff3b946
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070375"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418824"
 ---
-# <a name="process-rate-changes"></a>Módosítások arányának feldolgozása
+# <a name="process-rate-changes"></a>Mértékváltozások feldolgozása
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-Ez a témakör elmagyarázza, hogyan kell feldolgozni a Microsoft Dynamics 365 Human Resources rendszerben a juttatási díjak módosítását, amikor egy új vagy meglévő juttatási terv jogosultsági szabályainak beállításai megváltoznak. Ha új jogosultsági szabályt létre, majd hozzárendeli a tervhez, akkor a rendszer újból lefuttatja az ellenőrzést arra vonatkozóan, hogy a dolgozó jogosult-e a tervre az új jogosultsági lehetőségek alapján. 
+A juttatási mérték változásainak feldolgozása a Microsoft Dynamics 365 Human Resources rendszerben, ha egy új vagy meglévő juttatási terv módosult a jogosultsági szabály beállításaiban. Ha új jogosultsági szabályt létre, majd hozzárendeli a tervhez, akkor a rendszer újból lefuttatja az ellenőrzést arra vonatkozóan, hogy a dolgozó jogosult-e a tervre az új jogosultsági lehetőségek alapján. 
 
 1. A **Juttatások kezelése** munkaterületen, amely a **Feldolgozás** menüpontban található, válassza a **Mértékváltozásra vonatkozó frissítés feldolgozása** lehetőséget.
 
@@ -50,6 +48,3 @@ Ez a témakör elmagyarázza, hogyan kell feldolgozni a Microsoft Dynamics 365 H
    4. Válassza ki az **OK** lehetőséget. A folyamat a megadott paraméterekkel fog futni.
 
 4. Válassza ki az **OK** lehetőséget.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

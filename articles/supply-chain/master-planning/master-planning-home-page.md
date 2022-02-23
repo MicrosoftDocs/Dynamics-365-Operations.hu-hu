@@ -1,46 +1,49 @@
 ---
 title: Alaptervezés kezdőlap
 description: Az Alaptervezés lehetővé teszi a vállalat számára, hogy meghatározza a jövőbeli szükséges nyersanyag- és kapacitásigényt a vállalati célok teljesítéséhez.
-author: ChristianRytt
+author: ShylaThompson
+manager: tfehr
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
+ms.search.scope: Core, Operations
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dd25fdd1549fb2fddff57dc2d9cf8762cfd6823
-ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.openlocfilehash: 7ec7203506d7fa3e71211bd1547dc8474f5d17dc
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "7416527"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429395"
 ---
 # <a name="master-planning-home-page"></a>Alaptervezés kezdőlap
 
 [!include [banner](../includes/banner.md)]
 
-Lényegét tekintve az Alaptervezés lehetővé teszi a vállalat számára, hogy meghatározza a jövőbeli szükséges nyersanyag- és kapacitásigényt a vállalati célok teljesítéséhez. Az Alaptervezés értékeli a következőket:
+Lényegét tekintve az Alaptervezés lehetővé teszi a vállalat számára, hogy meghatározza a jövőbeli szükséges nyersanyag- és kapacitásigényt a vállalati célok teljesítéséhez. Az Alaptervezés értékeli a következőket: 
 
-- Milyen nyersanyagok és kapacitások érhetők el most?
-- Milyen nyersanyagok és kapacitások szükségesek a termelés végrehajtásához? Például mit kell előállítani, beszerezni, átmozgatni vagy biztonsági készletként fenntartani, mielőtt teljesíthető lenne a termelés.
+-  Milyen nyersanyagok és kapacitások érhetők el most? 
+-  Milyen nyersanyagok és kapacitások szükségesek a termelés végrehajtásához? Például mit kell előállítani, beszerezni, átmozgatni vagy biztonsági készletként fenntartani, mielőtt teljesíthető lenne a termelés.
 
 Az Alaptervezés az információk alapján kiszámítja a követelményeket és létrehozza a tervezett megrendeléseket.
 
 A három fő tervezési folyamat a következő:
 
-- **Alaptervezés** – az alapterv kiszámítja a nettó követelményeket. Tényleges aktuális rendeléseken alapul, és lehetővé teszi a vállalatoknak a készlet feltöltésének szabályozását rövid távú, napi alapon. Egy másik kifejezés ugyanerre a *Nettó szükségleti terv*. További informáciért lásd: [Alaptervek áttekintése](master-plans.md).
+-  **Alaptervezés** – az alapterv kiszámítja a nettó követelményeket. Tényleges aktuális rendeléseken alapul, és lehetővé teszi a vállalatoknak a készlet feltöltésének szabályozását rövid távú, napi alapon. Egy másik kifejezés ugyanerre a *Nettó szükségleti terv*. További informáciért lásd: [Alaptervek áttekintése](master-plans.md). 
 
-- **Előrejelzési tervezés** – az előrejelzési ütemezés a bruttó követelményeket számítja ki. Jövőbeli projekciókon (vagy előrejelzéseken) alapul, és lehetővé teszi a vállalatoknak az anyagok és a kapacitás hosszú távú tervezését. A további tudnivalókat lásd: [Igény-előrejelzés áttekintése](introduction-demand-forecasting.md).
+-  **Előrejelzési tervezés** – az előrejelzési ütemezés a bruttó követelményeket számítja ki. Jövőbeli projekciókon (vagy előrejelzéseken) alapul, és lehetővé teszi a vállalatoknak az anyagok és a kapacitás hosszú távú tervezését. A további tudnivalókat lásd: [Igény-előrejelzés áttekintése](introduction-demand-forecasting.md). 
 
-- **Vállalatközi alaptervezés** – a vállalatközi alapterv kiszámítja a nettó követelményeket a jogi személyeket lefedve. Az igényeket és az ellátást köti össze a vállalatok között, és nem csak a rövid távú, megerősített igényt és ellátást, hanem a hosszú távú, tervezett (még meg nem erősítése) igényt és ellátást is. További információkért lásd: [Vállalatközi tervezés](planning-optimization/Intercompany-planning.md).
+-  **Vállalatközi alaptervezés** – a vállalatközi alapterv kiszámítja a nettó követelményeket a jogi személyeket lefedve. Az igényeket és az ellátást köti össze a vállalatok között, és nem csak a rövid távú, megerősített igényt és ellátást, hanem a hosszú távú, tervezett (még meg nem erősítése) igényt és ellátást is. További tudnivalókért lásd: [Vállalatközi alaptervezés](https://mbspartner.microsoft.com/AX/CourseOverview/1276) (eLearning) (CustomerSource-fiókot igényel). 
 
 A vállalatok módosíthatják a terv eredményét. Futtathatják az újragenerálást, a nettó változtatást vagy mindkettőt. Az újragenerálási tervek valamennyi követelményt frissítik, miközben a nettó változási tervek csak az olyan új követelményekkel rendelkező cikkek tervét frissítik, amelyek az utolsó ütemezés futtatása óta érkeztek.
 
@@ -50,7 +53,7 @@ Az alapütemezési tervek általában rövid távúak, az időtartamuk egy hét 
 
 A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, amelyek az Alaptervezés modul keretét alkotják. Kattintson a hivatkozásra a [Gyorshivatkozások](#quick-links) szakaszban a modul használatának elsajátításához.
 
-[![Az alaptervezés tanulási térképe.](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
+[![Az alaptervezés tanulási térképe](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Gyorshivatkozások
 
@@ -61,30 +64,25 @@ A következő tanulási térkép fontos fogalmakat és feladatokat mutat be, ame
 - [Vállalatközi terv létrehozása](./tasks/create-intercompany-plan.md)
 - [Igény-előrejelzés áttekintése](introduction-demand-forecasting.md)
 - [Előrejelzés csökkentési kulcsok](reduction-keys.md)
-
+                                  
 ## <a name="additional-resources"></a>További erőforrások
 
 ### <a name="roadmaps"></a>Ütemtervek
-
 Keresse fel a [Microsoft Dynamics365 ütemterv](https://roadmap.dynamics.com/) oldalt a már kiadott új funkciók és a kidolgozás alatt álló új szolgáltatások megtekintése érdekében.
 
 ### <a name="blogs"></a>Blogok
-
-A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](/archive/blogs/axmfg/) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található az alaptervezésről és az egyéb megoldásokról.
+A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm) számos vélemény, hír és egyéb információ található az alaptervezésről és az egyéb megoldásokról.
 
 ### <a name="task-guides"></a>Feladat-útmutatók
-
 További súgó áll rendelkezésére feladat útmutatókon belül. A feladat-útmutatók eléréséhez kattintson bármelyik lapon a **Súgó** gombra.
 
 ### <a name="webinars"></a>Webináriumok
-
 [Azure gépi tanulás használata az igény-előrejelzéshez](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
 ### <a name="tech-conference-recordings"></a>Technikaikonferencia-felvételek
+-  [Az igény-előrejelzési funkció kiterjesztése](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Alaptervezés – tippek és trükkök a hibajavítási teljesítményért](https://youtu.be/7v8BPmEs9Dg)
+-  [Segítség! Lassú az MPR!](https://youtu.be/RLXybx20B5o)
 
-- [Az igény-előrejelzési funkció kiterjesztése](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-- [Alaptervezés – tippek és trükkök a hibajavítási teljesítményért](https://youtu.be/7v8BPmEs9Dg)
-- [MRP teljesítményhangolás](https://youtu.be/RLXybx20B5o)
 
 
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -209,6 +209,3 @@ Az ajánlatkészítési folyamatnak számos olyan része van, amelyet egy Attrac
 
 
 Az ajánlat-létrehozási folyamattal kapcsolatos további tudnivalókért tekintse meg az [Ajánlatok létrehozása, jóváhagyása és aláírása](./creating-offers.md) című részt.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

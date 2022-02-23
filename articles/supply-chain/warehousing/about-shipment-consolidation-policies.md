@@ -2,27 +2,28 @@
 title: Szállítmánykonszolidációs irányelvek
 description: Ez a témakör áttekintést nyújt azokról a funkciókról, amelyekkel rugalmasan konfigurálhatók a szállítmánykonszolidációs irányelvek.
 author: GarmMSFT
+manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench, WHSShipConsolidationError, WHSShipConsolidationSetShipment, WHSShipConsolidationPolicySelect, WHSShipPlanningListPage, TMSCarrierGroup, WHSShipConsolidationTemplate, WHSShipConsolidationTemplateApply, WHSShipConsolidationTemplateCreate
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: 11ee4beefed02425d4650de3e896e608d3d00ef5
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: f895b13b2e11d4cb341f80b3cfeb40ed998ccfc4
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577960"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654220"
 ---
 # <a name="shipment-consolidation-policies"></a>Szállítmánykonszolidációs irányelvek
-
-[!include [banner](../includes/banner.md)]
 
 A szállítmánykonszolidációs irányelveket használó szállítmánykonszolidációs folyamat lehetővé teszi az automatizált szállítmánykonszolidálást a raktárba történő automatikus és manuális kiadáskor. A funkció bevezetése előtt rendelkezésre álló automatikus konszolidáció véglegesen kódolt mezőket tartalmazott, és a raktárhoz beállított **Szállítmány konszolidálása a raktárnak való kiadáskor** mezőn alapult.
 
@@ -134,6 +135,3 @@ A következő táblázat összegzi a szállítmánykonszolidálás működését
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Szállítmánykonszolidációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

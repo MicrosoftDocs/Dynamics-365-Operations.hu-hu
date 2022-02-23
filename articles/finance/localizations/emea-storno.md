@@ -2,9 +2,11 @@
 title: Sztornókönyvelés
 description: A sztornókönyvelés az eredeti naplószámla-bejegyzések sztornírozási gyakorlata negatív számok segítségével.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -13,12 +15,12 @@ ms.search.region: Czech Republic, Germany, Hungary, Latvia, Lithuania, Poland, R
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c8bea5d5ec8069e78f3ed5e7d1d6a74ee28ce2dea1891ad71e410d4c309a79c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 9ee59d879a0500b5addfd9540f35cd818d7126c5
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764212"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4968321"
 ---
 # <a name="storno-accounting"></a>Sztornókönyvelés
 
@@ -119,7 +121,7 @@ A Finance különlegesen kezeli a negatív naplóösszegeket. Általános napló
 <tbody>
 <tr class="row-2">
 <td class="column-1"> Tartozik</td>
-<td class="column-2">Nem</td>
+<td class="column-2">Nincs</td>
 <td class="column-3">&gt;0.</td>
 <td class="column-4" align="right">Összeg</td>
 <td class="column-5" align="right">Összeg</td>
@@ -129,7 +131,7 @@ A Finance különlegesen kezeli a negatív naplóösszegeket. Általános napló
 </tr>
 <tr class="row-3">
 <td class="column-1"> Jóváírás</td>
-<td class="column-2">Nem</td>
+<td class="column-2">Nincs</td>
 <td class="column-3">&lt;0.</td>
 <td class="column-4" align="right">-Összeg</td>
 <td class="column-5" align="right">Összeg</td>
@@ -162,11 +164,8 @@ A Finance különlegesen kezeli a negatív naplóösszegeket. Általános napló
 
 Testreszabhatja a sztornírozás megjelenítését űrlapokban, rácsokban, oszlopokban és mezőkben. Például kikapcsolhatja az előjel megjelenítését vagy módosíthatja a negatív összegek kitöltését. Használhatja a **Javítás** mezőt minden képernyőbeállítással, ha a **Javítás** mezőben szerepel az "Igen", akkor egy sztornóbejegyzés.
 
-![Naplóösszegekben bejegyzés sztornírozása.](./media/journal-storno.png)
+![Naplóösszegekben bejegyzés sztornírozása](./media/journal-storno.png)
 
 ## <a name="how-documents-create-storno"></a>Sztornírozási dokumentumok létrehozása
 Egyes dokumentumokban lehetséges az érvénytelenítési tranzakciók létrehozása. Például a főkönyvi, a fizetendő számlák és a követelésekre vonatkozó deviza átértékelés megszünteti a nem realizált nyereséget és veszteséget. További részletek: [Főkönyvi devizaátértékelés](../general-ledger/foreign-currency-revaluation-general-ledger.md) vagy [A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései](../cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md). Az érvénytelenítési tranzakció létrehozása után új tranzakciók jönnek létre a nem realizált nyereséggel és veszteséggel. Érvénytelenítési tranzakciók is létrejöhetnek a készlethez. További információ: [Készletzárás](../../supply-chain/cost-management/inventory-close.md). Vannak olyan dokumentumok, amelyek lehetővé teszik a korábban feladott dokumentum visszavonása. Például a felhasználó hozhat létre jóváírást ad fel, hogy egy korábban létrehozott számla érvénytelenítése. A dokumentumok meghatározott paramétereket használnak a fordított vagy sztornótranzakciók létrehozásához. Például a devizaátértékelés fordított vagy sztornótranzakciót hozhat létre a főkönyv javítási paramétere alapján. A vevői jóváírást hoz létre a fordított vagy számlák Kinnlevőségek jóváírás javítás paramétertől függő sztornótranzakciók.
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

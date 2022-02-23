@@ -102,6 +102,3 @@ Ha **Visszajelzési résztvevők átvétele a toborzócsapattól** mezőt kijel�
 Az interjútevékenység egy nem kötelező tevékenység három összetevővel: **Jelölt rendelkezésre állásának kérése**, **Ütemezés** és **Visszajelzés**. Használja az állássablon interjú tevékenységét, ha szeretné szerepeltetni a folyamatban az összes jelölt rendelkezésre állásának kérését, ütemezést és visszajelzést, ahelyett, hogy egyenként használná őket.
 
 Az interjúztatandó pályázók befoglalásához vagy korlátozásához , válasszon ki egy értéket a **Kit interjúztat** mezőben. A lehetőségek a következők **valamennyi pályázó**, **Külső jelentkezők** és **Belső pályázók**. Például, ha szeretné, az interjúk az első körben a belső pályázókat kihagyni, állítsa be a **Kit interjúztat** mező értékét **Külső jelentkezőkre**.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

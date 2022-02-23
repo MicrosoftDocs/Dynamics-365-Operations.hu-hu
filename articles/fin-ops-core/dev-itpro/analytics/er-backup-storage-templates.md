@@ -2,9 +2,11 @@
 title: ER-sablonok biztonságimentés-tárhelye
 description: Ez a témakör azt mutatja be, hogyan lehet használni az elektronikus jelentések (ER) biztonságimentés-tárhelyét a sablonok helyreállításához.
 author: NickSelin
+manager: AnnBe
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable
 audience: Application User, Developer, IT Pro
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b5de8b9dc06cf10bda1932d5f4ee4484cdae591564fdcd5dd28c5036b82abc66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 136a81e661590d7af879e816c1142de85fb72e06
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767877"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681400"
 ---
 # <a name="backup-storage-of-er-templates"></a>ER-sablonok biztonságimentés-tárhelye
 
@@ -65,19 +67,19 @@ A **Hibás sablonok visszaállítási eljárásának automatikus kötegelt futta
 > [!NOTE]
 > Ez a paraméter az alkalmazás felhasználójaként van definiálva vállalatspecifikusan naplózott.
 
-![ER-konfigurációk oldal.](./media/GER-BackupTemplates-1.png)
+![ER-konfigurációk oldal](./media/GER-BackupTemplates-1.png)
 
 A következő ábra egy példát mutat be az üzenetre, amely akkor jelenik meg, amikor a **Hibás sablonok visszaállítási eljárásának automatikus kötegelt futtatása** paraméter értéke **Be**.
 
-![Szállítói kifizetési napló oldal.](./media/GER-BackupTemplates-2.png)
+![Szállítói kifizetési napló oldal](./media/GER-BackupTemplates-2.png)
 
 A következő ábra bemutatja a **Hibás sablonok visszaállítása a belső adatbázis-biztonsági mentéséből** kötegfolyamatot a **Kötegelt feladat** oldalon.
 
-![Kötegelt feladat oldal.](./media/GER-BackupTemplates-3.png)
+![Kötegelt feladat oldal](./media/GER-BackupTemplates-3.png)
 
 A **Hibás sablonok visszaállítása a belső adatbázis-biztonsági mentéséből** végrehajtási naplója tartalmazza azokat a sablonokat, amelyek a biztonsági mentés tárolóhelyéről az elsődleges tárolóhelyre lettek visszaállítva.
 
-![Kötegelt feladatok előzményoldala.](./media/GER-BackupTemplates-4.png)
+![Kötegelt feladatok előzményoldala](./media/GER-BackupTemplates-4.png)
 
 Alapértelmezésként a folyamat automatikusan létrehozza az ER formátumúkonfigurációban tárolt sablonok biztonsági másolatait. Ha le szeretné állítani a sablonok biztonsági másolatát, állítsa be **Sablonok biztonsági másolatai elkészítésének leállítása** elemet **Igen** értékre a **Mellékletek fülön** az **Elektronikus jelentéskészítés paraméterei** oldalon. Ezt a lapot megnyithatja az **Elektronikus jelentéskészítés** munkaterületről.
 
@@ -85,7 +87,7 @@ Ha a **Sablonok biztonsági másolatai elkészítésének leállítása** elem *
 
 Ha frissítette a környezetet a Finance and Operations 10.0.5 (október 2019) verzióra, és egy olyan új környezetbe kíván áttérni, amely futtatható ER formátumkonfigurációkat tartalmaz válassza ki a **Biztonsági mentés táhelyének kitöltése** lehetőséget az **Elektronikus jelentéskészítési paraméterek** oldalon még az áttelepítés előtt. Ez a gomb elindítja az összes elérhető sablon biztonsági másolatainak elkészítésének folyamatát, így a sablonokat a biztonsági mentési tárolóhelyen tárolja.
 
-![Elektronikus jelentéskészítés paraméterei lap.](./media/GER-BackupTemplates-5.png)
+![Elektronikus jelentéskészítés paraméterei lap](./media/GER-BackupTemplates-5.png)
 
 ## <a name="manual-recovery"></a>Manuális helyreállítás
 
@@ -100,6 +102,3 @@ A Finance and Operations 10.0.5 verziójában az ER sablonok biztonságimentés 
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 
 [Az elektronikus jelentéskészítési (ER) keretrendszer konfigurálása](electronic-reporting-er-configure-parameters.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

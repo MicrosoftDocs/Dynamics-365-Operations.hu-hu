@@ -1,30 +1,34 @@
 ---
 title: Szervizrendelések
-description: Ez a témakör a szolgáltatási szerződések használatával kapcsolatban nyújt áttekintést.
-author: kamaybac
+description: A szervizrendelések egy szerviztechnikus látogatását jelzik a vevő telephelyén, egy adott napon.
+author: ShylaThompson
+manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8dc88d445e1331e1532cb3b7385cda39c4f22e80
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 3b049b166edf2b5a318a4b1af85e7f74cfe433f2
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566119"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429203"
 ---
-# <a name="service-orders"></a>Szervizrendelések
+# <a name="service-orders"></a>Szervizrendelések   
 
 [!include [banner](../includes/banner.md)]
+
 
 A szervizrendelések egy szerviztechnikus látogatását jelzik a vevő telephelyén, egy adott napon. Minden szervizrendelés egy vagy több sorból áll. A szolgáltatásrendelési sorok a szerviztechnikus által elvégzendő munkaórákat, valamint kapcsolódó cikkeket, költségeket és díjakat tartalmaznak.
 
@@ -38,19 +42,19 @@ Szervizrendeléseket egyesével is készíthet úgy, hogy nem rendeli hozzá ők
 
 
 > [!NOTE]
-> Szervizrendelések létrehozásához, amelyek nem kapcsolódnak egy szolgáltatási szerződéshez, be kell jelölnie az **Engedélyezés szolgáltatási szerződés nélkül** jelölőnégyzetet a **Szolgáltatás kezelésének paraméterei** oldalon.
+> <P>Szervizrendelések létrehozásához, amelyek nem kapcsolódnak egy szolgáltatási szerződéshez, be kell jelölnie az <STRONG>Engedélyezés szolgáltatási szerződés nélkül</STRONG> jelölőnégyzetet a <STRONG>Szolgáltatás kezelésének paraméterei</STRONG> képernyőn.</P>
 
-### <a name="scenario"></a>Forgatókönyv
+**Eset**
 
 A következő helyzet szintén olyan, amikor célszerű létrehozni egy szervizrendelést, amelyik nincs egy szolgáltatási szerződéshez rendelve.
 
-A vállalat diszpécsere sürgős szervizhívást kap egy lifthez. Nincs idő szolgáltatási szerződés és egy projekt létrehozására a szolgáltatáshoz. Emiatt a diszpécser közvetlenül hoz létre egy szervizrendelést a **Szervizrendelések** oldalon, a szervizrendelést csatolja egy meglévő projekthez, és szervizrendelési sorokat hoz létre. Az operátor emellett létrehoz egy feladat- és tárgykapcsolatot egy meglévő szervizrendeléssel, hogy olyan munkát rögzítsen, ami nem kapcsolódik a szolgáltatási szerződéshez. További tudnivalókért lásd: [Szervizrendelések létrehozása manuálisan](create-service-orders-manually.md) és [Szervizfeladat-kapcsolatok létrehozása](create-service-task-relations.md).
+A vállalat diszpécsere sürgős szervizhívást kap egy lifthez. Nincs idő szolgáltatási szerződés és egy projekt létrehozására a szolgáltatáshoz. Emiatt a diszpécser közvetlenül hoz létre egy szervizrendelést a **Szervizrendelések** képernyőn, a szervizrendelést csatolja egy meglévő projekthez, és szervizrendelési sorokat hoz létre. Az operátor emellett létrehoz egy feladat- és tárgykapcsolatot egy meglévő szervizrendeléssel, hogy olyan munkát rögzítsen, ami nem kapcsolódik a szolgáltatási szerződéshez. További tudnivalókért lásd: [Szervizrendelések létrehozása manuálisan](create-service-orders-manually.md) és [Szervizfeladat-kapcsolatok létrehozása](create-service-task-relations.md).
 
 ## <a name="monitor-the-progress-of-service-orders"></a>A szervizrendelés előrehaladásának megfigyelése
 
 Egy értékesítési rendelésen nyomon követéséhez a különböző csapatokon és munkafolyamatokon keresztül, beállíthat fokozatokat és okkódokat a szervizrendelésekhez. A következő műveleteket határozhatja meg az egyes fokozatokra vonatkozóan: További tájékoztatásért lásd: [Okkódok létrehozása](create-reason-codes.md).
 
-### <a name="example"></a>Példa
+**Példa**
 
 Szervizrendelést a diszpécser jóváhagyja. A diszpécser frissíti a szervizrendelés fokozatát és megad egy megfelelő okkódot. Az okkód szerint a szervizrendelés át lett adva a technikusnak. A szerviztechnikus a vevő telephelyére megy, és elvégzi a szolgáltatást.
 
@@ -58,7 +62,7 @@ Szervizrendelést a diszpécser jóváhagyja. A diszpécser frissíti a szervizr
 
 Megadhatja, hogy mely készletcikkek szükségesek a szervizrendelésekhez. A szervizrendelésnek azonban projekthez társítva kell lennie. Szervizrendelések cikkszükségleteinek feldolgozása projekten keresztül történik. 
 
-### <a name="example"></a>Példa
+**Példa**
 
 A szolgáltatási szerződésből létrehozott szervizrendeléseket ezután feldolgozza a diszpécser. Az első szervizrendelésen észreveszi, hogy a technikusnak fontos cserealkatrészre van szüksége, ami nincs az aktuális készletben. Ezért a diszépcser létrehoz egy cikkszükségletet közvetlenül a szervizrendelésből, ami a cserealkatrészre vonatkozik.
 
@@ -72,7 +76,7 @@ A január hónapra generált szervizrendelések egyike lejár, mivel a munkát t
 
 ## <a name="post-from-projects"></a>Feladás projektekből
 
-A hetek utolsó napján a diszpécsernek minden projekthez csatolt szervizrendelést fel kell adnia. Emiatt a diszpécser megkeresi a megfelelő projektet a **Projektek** oldal, és feladja a szervizrendeléseket, amelyek már befejeződtek. További információkkal kapcsolatban lásd: [Szervizrendelések feladása (osztályképernyő)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
+A hetek utolsó napján a diszpécsernek minden projekthez csatolt szervizrendelést fel kell adnia. Emiatt a diszpécser megkeresi a megfelelő projektet a **Projektek** képernyő, és feladja a szervizrendeléseket, amelyek már befejeződtek. További információkkal kapcsolatban lásd: [Szervizrendelések feladása (osztályképernyő)](https://technet.microsoft.com/library/aa574685\(v=ax.60\)).
 
 ## <a name="delete-service-orders"></a>Szervizrendelések törlése
 
@@ -85,6 +89,3 @@ Az év második felében az egyik vevő úgy dönt, hogy a szervizlátogatások 
   
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

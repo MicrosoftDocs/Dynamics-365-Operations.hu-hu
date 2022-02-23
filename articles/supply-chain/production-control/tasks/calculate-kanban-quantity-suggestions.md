@@ -1,24 +1,27 @@
 ---
 title: Kanbanmennyiség-javaslatok kiszámítása
 description: Ez a folyamat a kanbanméret és -mennyiség egy adott kanbanszabályhoz történő optimalizálására irányul a kanbanmennyiség-számítás használatával.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 18d2a8dd2a8c132873744ba890ca6b1eb1fd34b6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: aa6a01d8f918c45aaa454e5234f80c312d7a5061
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570130"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429247"
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a>Kanbanmennyiség-javaslatok kiszámítása
 
@@ -82,6 +85,3 @@ Ez a folyamat a kanbanméret és -mennyiség egy adott kanbanszabályhoz törté
     * Ne feledje, hogy ez a rögzített 4-es kanbanmennyiség a kanbanmennyiség-számításból.  
 5. Kattintson a ListPanel fülre.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,25 +1,27 @@
 ---
 title: Rendelésteljesítés az üzletben
 description: Ez a témakör az üzletben való rendelésteljesítésről nyújt áttekintést.
-author: BrianShook
+author: rubencdelgado
+manager: AnnBe
 ms.date: 10/30/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: brshoo
+ms.author: rubendel
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 36ce908e81639fbb836d33ff3e84976c395b1473
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: fa568926ccdde4620294915679cd094adbd1e833
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983342"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4965402"
 ---
 # <a name="store-order-fulfillment"></a>Rendelésteljesítés az üzletben
 
@@ -33,7 +35,7 @@ A rendelés teljesítése művelet a pénztárban egységes munkaterületet bizt
 
 ## <a name="access-unified-order-fulfillment-in-the-point-of-sale"></a>Hozzáférés az egyesített rendelésteljesítéshez a pénztárban
 
-A rendelésteljesítés, [Művelet azonosítója 928](pos-operations.md), használható az üzletben való rendelésteljesítés munkaterület elérésére a pénztárban.
+A rendelésteljesítés, [Művelet azonosítója 928](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-operations), használható az üzletben való rendelésteljesítés munkaterület elérésére a pénztárban.
 
 A rendelés teljesítése művelet gyárilag nem rendelkezik saját engedéllyel, de a jövőben felhasználók fel tudják használni a **Rendelés beolvasásának engedélyezése** engedélyt a művelet meghívásához a pénztárban.
 
@@ -93,7 +95,7 @@ Egy rendelés elfogadása után a sorok kijelölhetők, és megjelölhetők a **
 
 A kitárolási listák kinyomtathatók a pénztárnál a kitárolási folyamatot végrehajtó dolgozók támogatása céljából. A nyomtatott kitárolási listát magával viheti a kitárolást végző dolgozó, és a termékek kitárolásakor a dolgozó manuálisan jelölheti meg őket kitároltként a kitárolási listán.
 
-A kitárolási lista formátumának konfigurálása a Commerce alkalmazásban történik, és hozzá van adva a nyugtaprofilhoz. A nyugtaprofilok beállításával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](receipt-templates-printing.md).
+A kitárolási lista formátumának konfigurálása a Commerce alkalmazásban történik, és hozzá van adva a nyugtaprofilhoz. A nyugtaprofilok beállításával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 Ha sorok vannak kijelölve, és a kitárolási listát kinyomtatták ezekhez a sorokhoz, a sorok automatikusan frissülnek a **Kitárolás** állapotra.
 
@@ -119,7 +121,7 @@ A rendeléssorok bármikor csomagolhatók, miután a rendelési sor el lett foga
 - **Eredmény állapot:** Csomagolt vagy részben csomagolt
 - **Eredmény háttérirodai állapot:** Kiszállítva vagy részben kiszállítva
 
-Ez a művelet a sorokat megjelöli csomagolt vagy részben csomagolt állapotúként, és kinyomtatja a szállítólevelet. Szállítólevél nyomtatható az együtt csomagolt termékek ellenőrzéséhez. A szállítólevél formátumának konfigurálása a Commerce alkalmazásban történik, és hozzá van adva a nyugtaprofilhoz. A nyugtaprofilok beállításával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](receipt-templates-printing.md).
+Ez a művelet a sorokat megjelöli csomagolt vagy részben csomagolt állapotúként, és kinyomtatja a szállítólevelet. Szállítólevél nyomtatható az együtt csomagolt termékek ellenőrzéséhez. A szállítólevél formátumának konfigurálása a Commerce alkalmazásban történik, és hozzá van adva a nyugtaprofilhoz. A nyugtaprofilok beállításával kapcsolatos további tudnivalókat lásd: [Nyugta minták és nyomtatás](https://docs.microsoft.com/dynamics365/unified-operations/retail/receipt-templates-printing).
 
 **Művelet: Megjelölés csomagoltként**
 
@@ -215,6 +217,3 @@ A rendelésteljesítés a pénztárban magában foglalja a szűrés lehetőség�
 - Létrehozás dátuma
 - Szállítási időpont
 - Kézhezvételi dátum
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

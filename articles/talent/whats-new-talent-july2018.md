@@ -57,6 +57,3 @@ Címek ki lettek bővítve frissítésben. A mező immár 65 karakteres. Ez a m�
 ## <a name="benefit-enrollment-status-report"></a>Juttatásban való részesítés állapotjelentés
 
 Beléptetés jelentéskészítés juttatásokban részesítéshez, mely segítségével könnyen átlátni, hogy hol vannak az alkalmazottak a nyitott részesítési folyamatban. Megtudhatja, hogy hány alkalmazott esetében fejeződött be, van folyamatban vagy nem kezdődött el a folyamat. Ezenkívül gyorsan megtekinthet bármely hibát a felvételi folyamatban és a munkavállalói beküldések teljes naplóját. Ezért könnyen ellenőrizheti és auditálhatja az alkalmazotti beküldéseket.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,9 +2,11 @@
 title: Fizetési regisztráció alapján
 description: Ez a témakör bemutatja, hogyan van kiszámítva a fizetés a dolgozói regisztrációk alapján.
 author: johanhoffmann
+manager: tfehr
 ms.date: 03/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgCalcApproveWeekView, JmgProdStatusListPagePayrollCostDetails, JmgPayCountTable, JmgPayStatConfig, JmgOvertimeSlize, JmgPayAgreementOverride, JmgPayCountSum, JmgPayAdjustSetup, JmgPayAdjustCostType, JmgPayEmployee, JmgMESBreak, JmgPayAddTable, JmgPayAddTransSelectTransId, JmgPayrollCostDetailsPart, jmgProdStatusListPagePayrollCosts, JmgPayrollCostPart, JmgPayEvents, JmgTermRegPayStatSetup, JmgPayStatGroup, JmgPayAddTrans, JmgPayStatTrans
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: 58ff2629c2894e85ca5529df5f995ffa5273de67e1c22564f5f9911ea86fbd95
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 98ca6f7713b2f605a49a97d391fb8485bea78c4b
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715722"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4966380"
 ---
 # <a name="pay-based-on-registrations"></a>Fizetési regisztráció alapján
 
@@ -39,7 +41,7 @@ Ez a témakör részletesen bemutatja, hogyan van kiszámítva a fizetés a dolg
 
 ## <a name="the-use-of-flex-time"></a>A rugalmas idő használata
 
-A rugalmas munkaidő-időszakok beállítása a Munkaidő és jelenlét funkció Időprofiljaiban történik. Két rugalmasidőprofil-típus van: **Rugalmasidő-többlet** és **Rugalmasidő-hiány**. Ha egy dolgozó rugalmasidő-többlet időszakban regisztrál időt, a dolgozó rugalmasidő-egyenlege nő a ledolgozott órák számával. A dolgozó nem kap kompenzációt a rugalmasidő-többlet időszakban ledolgozott órákért. A dolgozó azonban távozhat a Rugalmasidő-hiány időszakok alatt, amiért a rugalmasidő-egyenlegéből kap majd kompenzációt. Emiatt a rugalmasidő időszakokban a távollétet szabadidőnek tekinti a rendszer.
+A rugalmas munkaidő-időszakok beállítása a Munkaidő és jelenlét funkció Időprofiljaiban történik. Két rugalmasidőprofil-típus van: **Rugalmasidő-többlet** és **Rugalmasidő-hiány**. Ha egy dolgozó rugalmasidő-többlet időszakban regisztrál időt, a dolgozó rugalmasidő-egyenlege nő a ledolgozott órák számával. A dolgozó nem kap kompenzációt a rugalmasidő-többlet időszakban ledolgozott órákért. A dolgozó azonban távozhat Rugalmasidő-hiány időszakok alatt, amiért a rugalmasidő-egyenlegéből kap majd kompenzációt. Emiatt a rugalmasidő időszakokban a távollétet szabadidőnek tekinti a rendszer.
 
 ## <a name="scenarios-based-on-flex-periods"></a>Rugalmasidő időszakokon alapuló esetek
 
@@ -89,7 +91,7 @@ Az időt a rendszer az érkezéskori blokkolás és a távozáskori blokkolás k
 
 #### <a name="calculation-of-pay-time"></a>Fizetett idő kiszámítása
 
-A fizetett idő az az idő, amelyre a dolgozónak fizetés jár. Ebben az esetben az a dolgozó 8,25 órát van munkában (**Idő**). Azonban a **Fizetett idő** 8,50 órának adódik, mert a dolgozó fizetésre jogosult a rugalmasidő-hiány időszakban a távozáskori blokkolás után. A fizetett idő megfelel a tervezett munkaóráknak, mivel a rugalmasidő-többlet idejét a dolgozó rugalmasidő-számlájához adjuk hozzá, nem a fizetett időhöz. A rugalmasidő-hiány időszak alatt a távolléti időt kompenzáljuk a fizetett idővel, és levonjuk a dolgozó rugalmasidő-fiókjából.
+A fizetett idő az az idő, amelyre a dolgozónak fizetés jár. Ebben az esetben az a dolgozó 8,25 órát van munkában (**Idő**). Azonban a **Fizetett idő** 8,50 órának adódik, mert a dolgozó fizetésre jogosult a Rugalmasidő-hiány időszakban a távozáskori blokkolás után. A fizetett idő megfelel a tervezett munkaóráknak, mivel a rugalmasidő-többlet idejét a dolgozó rugalmasidő-számlájához adjuk hozzá, nem a fizetett időhöz. A rugalmasidő-hiány időszak alatt a távolléti időt kompenzáljuk a fizetett idővel, és levonjuk a dolgozó rugalmasidő-fiókjából.
 
 | Idő              | Regisztráció típusa | Fizetett idő (óra)      |
 |-------------------|-------------------|-----------------------|
@@ -120,7 +122,7 @@ A rugalmasidő-profil szerint a 06:00 DE és 07:00 DE közötti idő rugalmasid�
 
 #### <a name="calculation-of-flex-"></a>Rugalmasidő-hiány kiszámítása
 
-Mivel a dolgozó dolgozik a rugalmasidő-időszak alatt, a rugalmasidő számítására nem kerül sor. Rugalmasidő-hiány számítására csak akkor kerül sor, ha a dolgozó távol van a rugalmasidő-időszak alatt. Fizetési szempontból, ha a dolgozó dolgozik a rugalmasidő-hiány időszakban, a normál munkaidőre meghatározott fizetést kapja. Ha a dolgozó távol van a rugalmasidő-hiány időszakban, a 45 perc levonásra kerül a rugalmasidő-egyenlegéből.
+Mivel a dolgozó dolgozik a rugalmasidő-időszak alatt, a rugalmasidő számítására nem kerül sor. Rugalmasidő-hiány számítására csak akkor kerül sor, ha a dolgozó távol van a rugalmasidő-időszak alatt. Fizetési szempontból ha a dolgozó a rugalmasidő-időszak alatt dolgozik, a normál munkaidőre meghatározott fizetést kapja. Ha a dolgozó a Rugalmasidő-hiány időszak van távol, a 45 perc levonásra kerül a rugalmasidő-egyenlegéből.
 
 #### <a name="calculation-of-time"></a>Idő kiszámítása
 
@@ -168,9 +170,9 @@ Annak a beállításához, hogy a rendszer egyértelműen megkülönböztesse a 
 
 A **Számítási paraméterek** oldalon válassza **Túlóra** lehetőséget a profilspecifikáció típusaként, és állítsa a **Fizetett idő** lehetőséget **Nem** értékre, az itt leírt módon.
 
-| Reg. meghatározása | Profilspecifikáció típusa | Számítás   | Beállítás | Fizetve         | Beállítás |
+| Reg. meghatározása | Profilspecifikáció típusa | Számítás   |     | Fizetve         |     |
 |--------------------|----------------------------|---------------|-----|--------------|-----|
-| Munkaidő       | Túlóra                   | Szokásos idő | Igen | Fizetett idő     | Nem  |
+| Munkaidő       | Túlóra                   | Szokásos idő | Igen | Fizetett idő     | Nincs  |
 |                    |                            | Fizetett idő      | Igen | Fizetett túlóra | Igen |
 
 A számítási paraméterek beállítása után a következő fizetési tételek jönnek létre.
@@ -466,11 +468,11 @@ A következő forgatókönyvek azokat a jóváhagyásra váró fizetési tétele
 
 ### <a name="scenario-1-the-worker-clocks-in-later-than-planned"></a>1. eset: A dolgozó érkezéskor a tervezettnél később blokkol
 
-A dolgozó 08:30 órakor blokkol be. Mivel a tervezett érkezéskori blokkolás ideje 07:00 DE, 1,50 órát késett a munkából. Mivel az 1.50 óra távolléti időnek számít, a dolgozót a rendszer távolléti kód kiválasztására kéri. A dolgozó 15:30 órakor hagyja el a munkahelyét, és egyben ez a tervezett kiblokkolás ideje is. Az alkalmazotti regisztrációk számítása és jóváhagyása során a távollét-regisztráció, valamint a dolgozó által az érkezéskori blokkolásakor kiválasztott távolléti kód, jelenik meg a 07:00 óra és 08:30 óra közötti időszakra.
+A dolgozó 08:30 órakor blokkol be. Mivel tervezett érkezéskori blokkolásának ideje 07:00 DE, 1,50 órát késett a munkából. Mivel az 1.50 óra távolléti időnek számít, a dolgozót a rendszer távolléti kód kiválasztására kéri. A dolgozó 15:30 órakor hagyja el a munkahelyét, és egyben ez a tervezett kiblokkolás ideje is. Az alkalmazotti regisztrációk számítása és jóváhagyása során a távollét-regisztráció, valamint a dolgozó által az érkezéskori blokkolásakor kiválasztott távolléti kód, jelenik meg a 07:00 óra és 08:30 óra közötti időszakra.
 
-Az időprofilban konfigurálhatja az **Érkezéskori blokkolás** regisztrációs típust úgy, legyen tűréshatár arra az esetre, ha a dolgozók késnek a munkából. Ha például 5-öt állít be tűréshatárnak, a dolgozótól csak akkor kér távolléti kódot a rendszer, ha az érkezéskori blokkolást 07:05 DE után végzi el.
+Az időprofilban konfigurálhatja az **Érkezéskori blokkolás** regisztrációs típust úgy, legyen tűréshatár arra az esetre, ha a dolgozók késnek a munkából. Például ha tűréshatárnak 5-öt állít be, a dolgozótól a rendszer csak akkor kér távolléti kódot, ha érkezéskori blokkolását 07:05 DE után végzi el.
 
-Mivel a dolgozónak ebben az esetben nincs alapos oka a munkából való késésre, kiválasztja a szabálytalan távolléthez tartozó távolléti kódot. A távolléti kód akkor érvényes a szabálytalan távollétre, ha engedélyezve van a túlóra levonásának beállítása a távolléti csoportra, amelyhez a távolléti kód tartozik. A beállítás megadásához válassza ki a **Munkaidő és jelenlét** &gt; **Beállítás** &gt; **Csoportok** &gt; **Távolléti csoportok** elemet, majd jelölje be a **Túlóra levonása** jelölőnégyzetet.
+Ebben az esetben, mivel a dolgozónak nincs alapos oka a munkából való késésre, kiválasztja a szabálytalan távolléthez tartozó távolléti kódot. A távolléti kód akkor érvényes a szabálytalan távollétre, ha engedélyezve van a túlóra levonásának beállítása a távolléti csoportra, amelyhez a távolléti kód tartozik. A beállítás megadásához válassza ki a **Munkaidő és jelenlét** &gt; **Beállítás** &gt; **Csoportok** &gt; **Távolléti csoportok** elemet, majd jelölje be a **Túlóra levonása** jelölőnégyzetet.
 
 Itt látható, az adott napra vonatkozóan hogyan jelennek meg a dolgozói regisztrációk a **Jóváhagyás** lapon számítás után.
 
@@ -526,7 +528,7 @@ Itt látható az eredményül kapott fizetési tétel a regisztrációk átvitel
 
 ### <a name="scenario-4-the-worker-clocks-in-late-and-clocks-out-after-the-planned-clock-out-time-during-an-overtime-period"></a>4. eset: A dolgozó késve blokkol érkezéskor, és távozáskor a tervezett blokkolás ideje előtt blokkol, túlóra időszakban
 
-A dolgozó 09:30 DE órakor blokkol be, majd ezután, a késedelmes jelenlét kompenzációjaként, túlórázik, és 05:00 DU órakor blokkol ki. Mivel a dolgozó későn érkezett be, és ezt hosszabb ideig tartó munkával kompenzálta, a vállalat nem akar a dolgozónak túlóradíjat fizetni azon órákért, amelyeket a tervezett 03:30 DU-i távozáskori blokkolás és a 05:00 DU-i tényleges távozáskori blokkolás között dolgozott, még akkor sem, ha ez az időintervallum az időprofilban túlóraként van meghatározva.
+A dolgozó 09:30 órakor blokkol be, majd ezután, a késedelmes jelenlét kompenzációjaként, túlórázik, és 17:00 órakor blokkol ki. Mivel a dolgozó későn érkezett be, és ezt hosszabb ideig tartó munkával kompenzálta, a vállalat nem akar a dolgozónak túlóradíjat fizetni azon órákért, amelyeket a tervezett 03:30 DU-i távozáskori blokkolás és a 05:00 DU-kori tényleges távozáskori blokkolás dolgozott, még akkor sem, ha ez az időintervallum az időprofilban túlóraként van meghatározva.
 
 Az eset kezeléséhez a távolléti kód be lehet állítani arra, hogy csökkentse a túlórákat bármilyen szabálytalan távolléttel, amellyel a dolgozó rendelkezik ugyanazon a napon. Válassza ki a **Munkaidő és jelenlét** &gt; **Beállítás** &gt; **Csoportok** &gt; **Távolléti csoportok** elemet, majd a **Túlóra levonása** jelölőnégyzet bejelölésével állítsa be a túlóra levonását a szabálytalan távollét óráiból.
 
@@ -548,7 +550,7 @@ Ha a **Túlóra levonása** jelölőnégyzet be van jelölve a kijelölt távoll
 
 Itt 1,5 óra szabálytalan távollét, 07:00 DE és 09:30 DE között, vonandó le a 2,0 óra túlórából 03:30 DU és 05:30 DU között. A regisztráció eredménye 1,5 óra normál munkaidő és 0,5 túlóra.
 
-Ezzel szemben ha a **Túlóra levonása** jelölőnégyzet nincs bejelölve a kijelölt távolléti kódhoz, a túlórabér annak ellenére garantált a dolgozónak, hogy késett és szabálytalanul volt távol. Ebben az esetben a következő fizetési tételek jönnek létre a regisztrációk átvitele után.
+Ezzel szemben ha a **Túlóra levonása** jelölőnégyzet nincs bejelölve a kijelölt távolléti kódhoz, a túlórabér garantált a dolgozónak annak ellenére, hogy késett és szabálytalanul volt távol. Ebben az esetben a következő fizetési tételek jönnek létre a regisztrációk átvitele után.
 
 | Munkabér típusa     | Kifizetés típusa | Fizetési egységek | Árfolyam |
 |---------------|----------|-----------|------|
@@ -559,7 +561,7 @@ Ezzel szemben ha a **Túlóra levonása** jelölőnégyzet nincs bejelölve a ki
 
 A következő példa bemutatja, hogy egy dolgozó rugalmasidő-fiókja hogyan csökkenthető a távolléti időszak konvertálásával egy rugalmasidő-időszakra.
 
-A dolgozó 07:00 órakor blokkol be, és 13:00 órakor blokkol ki. A dolgozónak olyan szerződése van, hogy ha ezeket az órákat levonja a rugalmasidő-számláról, akkor a hétvégére hazamehet. Amikor a dolgozó távozáskori blokkolást végez 01:00 DU órakor, a rendszer arra kéri, hogy válasszon ki egy távolléti kódot, mert a távollét a munkanap fennmaradó részére nem tervezett rugalmasidő-hiány időszakban van. A munkanap fennmaradó részének rugalmasidő-hiány időszakká alakításához a dolgozó kiválaszthat egy távolléti kódot, amely azért lett beállítva, hogy csökkentse a rugalmasidő-számlát.
+A dolgozó 07:00 órakor blokkol be, és 13:00 órakor blokkol ki. Olyan megállapodást között a művezetőjével, hogy hazamehet a hétvégre, ha ezeket az órákat levonja a rugalmasidő-számlájáról. Amikor a dolgozó távozáskori blokkolást végez 13:00 órakor, a rendszer arra kéri, hogy válasszon ki egy távolléti kódot, mert a távollét időtartama a munkanap fennmaradó részére nem tervezett rugalmasidő-hiány időszakban van. A munkanap fennmaradó részének rugalmasidő-hiány időszakká alakításához a dolgozó kiválaszthat egy távolléti kódot, amely azért van beállítva, hogy csökkentse a rugalmasidő-fiókot.
 
 A munkanapon távollétet regisztráló dolgozók rugalmasóra-egyenlegének csökkentéséhez válassza a **Munkaidő és jelenlét** &gt; **Beállítás** &gt; **Csoportok** &gt; **Távollétcsoportok** elemet, és jelölje be a **Rugalmas idő csökkentése** jelölőnégyzetet.
 
@@ -596,6 +598,3 @@ Ha a dolgozó munkanapon nem jelenik meg munkaidőben, és nincs tervezett távo
 - Távollét automatikus beillesztése
 
 Amikor egy olyan dolgozó esetében számítják ki a napi regisztrációkat, akinél engedélyezve vannak a rugalmas órák, a **Rugalmasidő-hiány automatikus beillesztése** mezőben megadott távolléti kód lesz alapértelmezett távolléti kódként használva. Ha a dolgozónál a rugalmas órák nem engedélyezettek, a **Távollét automatikus beillesztése** mezőben megadott távolléti kód kerül használatra. Ha egy vállalatnál olyan dolgozók is találhatók, akiknél engedélyezettek a rugalmas órák, és olyanok is,a kiknél a rugalmas órák nem engedélyezettek, mindkét paramétert be kell állítani.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

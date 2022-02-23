@@ -2,24 +2,27 @@
 title: A Dynamics 365 Supply Chain Management 10.0.11új és módosult elemei (2020. június)
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.11 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
+manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: 10.0.11
-ms.openlocfilehash: 76a28b9285bb8edfaaee7f9bc3cb4f03deb7a731abb55624394278d72398c748
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 52090645b0bb00399a88926c0b48a3cee8fcd114
+ms.sourcegitcommit: f27f5d07c040bdca1bcd616f5d3f2320d3b3337e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723527"
+ms.lasthandoff: 10/15/2020
+ms.locfileid: "4429825"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10011-july-2020"></a>A Dynamics 365 Supply Chain Management 10.0.11 új vagy módosult elemei (2020. július)
 
@@ -33,19 +36,19 @@ Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.11 új vagy
 
 ## <a name="features-included-in-this-release"></a>A verzióban található funkciók
 
-Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat és videókat mutatnak be. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
+Ez a kiadás a következő funkciókat tartalmazza: A funkciók címei további információkra mutatnaka a [Kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/) webhelyen. A további hivatkozások az adott funkcióhoz jelenleg elérhető további dokumentációkat és videókat mutatnak be. Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Funkciók kezelése](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) alatt.
 
-- [Aktuális készlet jelentésének tárolása](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
+- [Aktuális készlet jelentésének tárolása](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage)
 
-- [Azonosítótábla fogadásával kapcsolatos fejlesztések a raktári mobilalkalmazásban](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - További információ: [Azonosítótábla-bevételezés a Raktárkezelés mobilalkalmazás használatával](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
+- [Azonosítótábla fogadásával kapcsolatos fejlesztések a raktári mobilalkalmazásban](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/license-plate-receiving-enhancements-warehousing-mobile-app)<br> - További információ: [Azonosítótábla-bevételezés a raktári alkalmazás használatával](../warehousing/warehousing-mobile-device-app-license-plate-receiving.md).
 
-- [Sorok foglalásának fejlesztései a kötegszám foglalása képernyőhöz](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - További információért lásd az [Azonos köteg foglalása az értékesítési rendeléshez](../sales-marketing/reserve-same-batch-sales-order.md) pontot.
+- [Sorok foglalásának fejlesztései a kötegszám foglalása képernyőhöz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/line-reservation-enhancements-batch-number-reservation-form)<br> - További információért lásd az [Azonos köteg foglalása az értékesítési rendeléshez](../sales-marketing/reserve-same-batch-sales-order.md) pontot.
 
-- [Új adatentitások a termelési területhez](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
+- [Új adatentitások a termelési területhez](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/new-data-entities-manufacturing-area)
 
-- [Rakománymennyiségek túlbevételezése](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - További információ: [Beszerzési rendelések bejövő rakományának kezelése a raktárban](../warehousing/inbound-load-handling.md).
+- [Rakománymennyiségek túlbevételezése](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - További információ: [Beszerzési rendelések bejövő rakományának kezelése a raktárban](../warehousing/inbound-load-handling.md).
 
-- [Készként történő jelentés a feladatkártya-eszközből származó kötegszámokhoz](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - További információ: [Jelentés befejezettként a feladatkártya eszközből](../production-control/report-finished-job-device.md).
+- [Készként történő jelentés a feladatkártya-eszközből származó kötegszámokhoz](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/report-as-finished-batch-numbers-job-card-device)<br> - További információ: [Jelentés befejezettként a feladatkártya eszközből](../production-control/report-finished-job-device.md).
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -61,7 +64,7 @@ Ha további tájékoztatást szeretne kapni a 10.0.11 részét képező frissít
 
 Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre?
 
-Lásd: [Dynamics 365: 2020-as 1. frissítési hullám tervét](/dynamics365-release-plan/2020wave1/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
+Lásd: [Dynamics 365: 2020-as 1. frissítési hullám tervét](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/index). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 
@@ -73,6 +76,3 @@ A [Dynamics 365 Supply Chain Management eltávolított vagy elavult szolgáltat�
 Mielőtt a termékből eltávolítunk egy szolgáltatást, egy eltávolítással kapcsolatos értesítést teszünk közzé a [Dynamics 365 Supply Chain Management eltávolított vagy elavult funkciói](removed-deprecated-features-scm-updates.md) témakörben 12 hónappal az eltávolítás előtt.
 
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

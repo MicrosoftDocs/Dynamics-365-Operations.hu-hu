@@ -2,9 +2,11 @@
 title: Párhuzamos ágak konfigurálása munkafolyamatban
 description: A párhuzamos ág beállításához végezze el a következő eljárásokat a munkafolyamat-szerkesztőben.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -14,19 +16,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e7dac62abe080ac362abc3456a7760bbd3f790fd
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 9d23e981526fd17a3cb856fffcc39e76cf24da68
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066493"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797701"
 ---
 # <a name="configure-parallel-branches-in-a-workflow"></a>Párhuzamos ágak konfigurálása munkafolyamatban
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 A párhuzamos ág beállításához végezze el a következő eljárásokat a munkafolyamat-szerkesztőben.
 
@@ -51,6 +50,3 @@ Végezze el a következő lépéseket a párhuzamos ág elemeinek megtervezésé
 ## <a name="additional-resources"></a>További erőforrások
 
 [Munkafolyamatok létrehozása – áttekintés](create-workflow.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

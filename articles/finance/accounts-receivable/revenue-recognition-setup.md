@@ -2,23 +2,26 @@
 title: A bevételelszámolás beállítása
 description: Ez a cikk a bevételmegjelenítés beállítási lehetőségeit és a beállítások hatását mutatja be.
 author: kweekley
-ms.date: 11/24/2021
+manager: aolson
+ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 73acfc92777b8fe07b89bea782e13213d38000cd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867220"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4459154"
 ---
 # <a name="revenue-recognition-setup"></a>A bevételelszámolás beállítása
 [!include [banner](../includes/banner.md)]
@@ -26,11 +29,9 @@ ms.locfileid: "7867220"
 A programba új **Bevételmegjelenítés** modul került, amelyben minden szükséges beállításhoz tartozik menüelem. Ez a cikk a beállítási lehetőségeket és a beállítások hatását mutatja be.
 
 > [!NOTE]
-> A „Bevétel megjelenítése” funkció mostantól alapértelmezés szerint engedélyezve van a Funkciókezelésben. Ha az Ön szervezete nem használja ezt a funkciót, a **Funkciókezelés** munkaterületen bármikor kikapcsolhatja.
->
-> A bevételelszámolási funkció, beleértve a csomagfunkciót is, nem támogatott a Commerce-csatornákon (e-kereskedelem, pénztár és hívásközpont). A bevételelszámolási funkció számára konfigurált tételeket nem szabad hozzáadni a Commerce-csatornákon létrehozott rendelésekhez vagy tranzakciókhoz.
+> A „Bevétel elszámolása” funkció nem kapcsolható be a Funkciókezelés helyen. Jelenleg konfigurációs kulcsok használatával kapcsolhatja be.
 
-A **Bevételelszámolás** modulban a következő beállítások érhetők el:
+A **Bevétel elszámolása** modulban a következő beállítások adhatók meg:
 
 - Bevételmegjelenítési naplók
 - A bevételmegjelenítés paraméterei
@@ -40,16 +41,12 @@ A **Bevételelszámolás** modulban a következő beállítások érhetők el:
     - Cikkcsoportok és kiadott termékek
     - A bevételütemezés meghatározása
     - A bevételi ár meghatározása
-    - Készletbeállítás
 
-        - A bevételütemezés meghatározása
-        - A bevételi ár meghatározása
+        - Feladási profilok
+        - Csomagok
 
-    - Feladási profilok
-    - Csomagok
-
-        - A csomagok összetevői
-        - Csomagolt cikk
+    - A csomagok összetevői
+    - Csomagolt cikk
 
 - Projekt beállítása
 
@@ -61,7 +58,7 @@ Az első: miután az összes szerződéses kötelezettség teljesül, és sor ke
 
 A második eset akkor fordul elő, amikor napló jön létre az újbóli felosztást követően. Újbóli felosztás akkor történik, amikor az értékesítési rendelés egy sorát hozzáadják egy korábban számlázott értékesítési rendeléshez, vagy amikor olyan új értékesítési rendelés jön létre, amely az eredeti szerződés részét képező sort tartalmaz. Ha egy számlát feladtak az értékesítési rendelés új sorának a hozzáadása előtt, a feladott vevői számlához helyesbítő könyvelési tételt kell létrehozni.
 
-A naplót a **Naplónevek** oldalon (**Bevételmegjelenítés \> Beállítás \> Naplónevek**) lehet beállítani. A napló típusaként a **Bevételmegjelenítést** kell megadni. 
+A naplót a **Naplónevek** oldalon (**Bevételmegjelenítés \> Beállítás \> Naplónevek**) lehet beállítani. A napló típusaként a **Bevételmegjelenítést** kell megadni. A bevételmegjelenítési naplóval kiválaszthatja a feladás céljaként használandó feladási réteget.
 
 ## <a name="parameters-for-revenue-recognition"></a>A bevételmegjelenítés paraméterei
 
@@ -76,7 +73,7 @@ A bevételelszámolás beállításai a **Főkönyvi paraméterek** oldal (**Bev
     - Ha a **Nem** értéket adja meg, korlátozhatja a helyesbítő tranzakció főkönyvbe történő feladását. Ha a beállítás értéke **Nem**, akkor nem jönnek létre további dokumentumokat a Kinnlevőségek modulban a belső számviteli korrekcióhoz. A számla kifizetésekor az elszámolási folyamat a régi könyvelési bejegyzést használja fel a készpénzfizetési engedmények, illetve a realizált nyereségek vagy veszteségek feladásához.
     - Ha a beállításhoz az **Igen** értéket adja meg, a Kinnlevőségek modulban automatikusan létrejön egy sztornírozási dokumentum és egy új számla a helyesbítő tranzakcióhoz. Mivel ez a javítás belső könyvelési korrekció, a program nem küldi el és nem továbbítja a vevőnek az új dokumentumokat. A sztornírozási dokumentumot az eredeti számlára egyenlíti ki a program, és a vevő az új, helyesbített számlát fizeti ki. Ne feledje, hogy mindhárom dokumentum megjelenik a jelentésekben, például a vevői kivonatban.
 
-[![Beállítási adatok.](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
+[![Beállítási adatok](./media/revenue-recognition-setup-info.png)](./media/revenue-recognition-setup-info.png)
 
 ## <a name="revenue-schedules"></a>Bevételek ütemezései
 
@@ -86,7 +83,7 @@ Ha a bevétel megjelenítése mérföldkövek szerint történik, a megjelenít�
 
 A bevételek a **Bevételek ütemezései** lapon (**Bevételmegjelenítés \> Beállítás \> Bevételek ütemezései**) ütemezhetők.
 
-[![Bevételek ütemezései.](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
+[![Bevételek ütemezései](./media/revenue-recognition-revenue-schedules.png)](./media/revenue-recognition-revenue-schedules.png)
 
 Adjon meg leíró értéket a **Bevétel ütemezése** és a **Leírás** mezőben. A program a következő további beállításokat használja a bevételi ütemezés számla feladásakor történő létrehozásához.
 
@@ -95,27 +92,20 @@ Adjon meg leíró értéket a **Bevétel ütemezése** és a **Leírás** mezőb
 - **Automatikus szerződési feltételek** – Jelölje be ezt a jelölőnégyzetet, ha automatikusan szeretné beállítani a szerződés kezdő és záró dátumát. A dátumokat csak a **Támogatási szerződés feladása** bevételi típusú kiadott termékekhez állítja be automatikusan a rendszer. A szerződés kezdő dátumát a program automatikusan az értékesítési rendelés sorának a kért szállítási dátumára állítja, a szerződés záró dátumát pedig automatikusan annyi hónappal vagy előfordulással a kezdő dátum után, amennyi meg van adva a bevételi ütemezés beállításában. Az értékesítési rendelés sorában szereplő termék jótállása például egy év. Az alapértelmezett bevételi ütemezés **12M** (12 hónap), az **Automatikus szerződési feltételek** jelölőnégyzet pedig be van jelölve ehhez a bevételi ütemezéshez. Ha az értékesítési rendelés sorában a kért szállítási dátum 2019. december 16., a szerződés alapértelmezett kezdő dátuma 2019. december 16. lesz, az alapértelmezett záró dátuma pedig 2020. december 15.
 - **Megjelenítés alapja** – A megjelenítés alapja határozza meg a bevételi ár előfordulások közötti felosztását.
 
-    - **Havi, napok szerint** – Az összeg felosztása az egyes naptári hónapok tényleges napjai alapján történik.
+    - **Havi, dátum szerint** – Az összeg felosztása az egyes hónapok tényleges napjai alapján történik.
     - **Havi** – Az összeg felosztása az előfordulásokban meghatározott hónapok között egyenlően történik.
     - **Előfordulások** – Az összeg egyenlően oszlik el az előfordulások között, de ha a **Tényleges indítási dátumot** választja ki megjelenítési szabályként, akkor egy további időszakra is kiterjedhet.
-    - **Pénzügyi időszak, napok szerint** – Az összeg felosztása az egyes pénzügyi időszakok tényleges napjai alapján történik. 
 
-    A **Havi, napok szerint** és a **Pénzügyi időszak, napok szerint** beállítás ugyanazt az eredményt adja, ha a pénzügyi időszakok megegyeznek a naptári hónapokkal. Az egyetlen kivétel, ha a Megjelenítési szabály beállításnál a **Hónap/időszak vége** beállítást választja, és a **Szerződés kezdő dátuma** és a **Záró dátum** mezőket üresen hagyják az értékesítési rendelés soránál.
-
-- **Megjelenítési szabály** – A megjelenítési szabály határozza meg a számla bevételi ütemezésének dátumait.
+- **Megjelenítési szabály** – A megjelenítési szabály határozza meg a számla bevételi ütemezésének alapértelmezett dátumait.
 
     - **Tényleges indítási dátum** – Az ütemezés vagy a szerződés kezdő dátuma (a támogatási szerződés \[PCs\] cikkeinek feladásához), vagy a számla dátuma (az alapvető és a nem alapvető cikkek esetében) alapján jön létre.
-    - **Hónap/időszak első napja** – Az első ütemezési sor dátuma a szerződés kezdő dátuma (vagy a számla dátuma). A program azonban az összes további ütemezési sort a hónap vagy a pénzügyi időszak első napjához hozza létre.
+    - **Hó elseje** – Az első ütemezési sor dátuma a szerződés kezdő dátuma (vagy a számla dátuma). A program azonban az összes további ütemezési sort a hónap elsejéhez hozza létre.
     - **Felosztás a hónap közepén** – Az ütemezés első sorának dátuma a számla dátumától függ. Ha a számla feladása a hónap első és tizenötödik napja közé esik, a bevétel ütemezése a hónap első napja alapján jön létre. Ha a számla feladása a hónap tizenhatodik napjára vagy később esik, a bevétel ütemezése a következő hónap első napja alapján jön létre.
+    - **Következő hónap elseje** – Az ütemezés dátuma a következő hónap első napja.
 
-        A **Felosztás a hónap közepén** beállítás nem választható ki, ha a megjelenítési beállításnál a **Pénzügyi időszak, napok szerint** értéket választotta.
+Az általános időszakok és az egyes időszakokban megjelenített százalékos értékek megtekintéséhez kattintson a **Bevételütemezés részletei** gombra. A **Megjelenítés százalékos értéke** alapértelmezés szerint egyenlően oszlik el az időszakok között. Ha a megjelenítés alapja **Havi** vagy **Előfordulások**, akkor a megjelenítés százalékos értéke módosítható. A megjelenítés százalékos értékének módosításakor figyelmeztető üzenetet kap arról, hogy a teljes érték nem 100 százalék. Ha megjelenik az üzenet, folytathatja a sorok szerkesztését. A lap bezárása előtt viszont a teljes százalékos értéknek 100-nak kell lennie.
 
-    - **Következő hónap/időszak első napja** – Az ütemezés kezdő dátuma a következő hónap vagy pénzügyi időszak első napja.
-    - **Hónap/időszak vége** – Az első ütemezési sor dátuma a szerződés kezdő dátuma (vagy a számla dátuma). A program azonban az összes további ütemezési sort a hónap vagy a pénzügyi időszak utolsó napjához hozza létre. 
-
-Az általános időszakok és az egyes időszakokban megjelenített százalékos értékek megtekintéséhez kattintson a **Bevételütemezés részletei** gombra. A **Megjelenítés százalékos értéke** alapértelmezés szerint egyenlően oszlik el az időszakok között. Ha a megjelenítés alapja **Havi**, akkor a megjelenítés százalékos értéke módosítható. A megjelenítés százalékos értékének módosításakor figyelmeztető üzenetet kap arról, hogy a teljes érték nem 100 százalék. Ha megjelenik ez az üzenet, folytathatja a sorok szerkesztését. A lap bezárása előtt viszont a teljes százalékos értéknek 100-nak kell lennie.
-
-[![Bevételütemezés részletei.](./media/revenue-schedule-details-2nd-scrn.png)](./media/revenue-schedule-details-2nd-scrn.png)
+[![Bevételütemezés részletei](./media/revenue-recognition-revenue-schedule-details.png)](./media/revenue-recognition-revenue-schedule-details.png)
 
 ## <a name="inventory-setup"></a>Készletbeállítás
 
@@ -150,7 +140,7 @@ A cikkcsoportok és a kiadott termékek a medián ár használatával vagy az en
 
 Miután megadta a kiadott termék beállításait, manuálisan kell megadnia a bevételi árat a forgalmi érték árának vagy a medián árnak (ha medián árat használ) a **Bevételi árak** oldalon (lépjen a **Bevételmegjelenítés \> Beállítás \> Készletbeállítás \> Kiadott termékek** részre, majd a műveleti ablaktábla **Eladás** lapjának **Bevételmegjelenítés** csoportjában válassza a **Bevételi árak lehetőséget**) való megadásával.
 
-[![Bevételi árak.](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
+[![Bevételi árak](./media/revenue-recognition-revenue-prices.png)](./media/revenue-recognition-revenue-prices.png)
 
 Az ezen az oldalon manuálisan meghatározott bevételi ár határozza meg az egyes értékesítési rendelések bevételi árának megadott feltételek alapján történő felosztását. A rendszer minden feltételt egyeztet az értékesítési rendelés sorával, és így határozza meg, hogy milyen bevételi árat kell használnia a felosztás során.
 
@@ -192,7 +182,7 @@ Amikor csomagolt cikket állít be, két mezőt kell kitöltenie a **Kiadott ter
 
 Ezután az összetevőket hozzá kell rendelni a csomag/anyagjegyzék szülőcikkéhez az **Anyagjegyzék-verziók** oldalon (lépjen a **Bevételmegjelenítés \> Beállítás \> Készlet- és termékbeállítás \> Kiadott termékek** részre, és a műveleti panel **Mérnöki feladatok** lapjának **Anyagjegyzék** csoportjában válassza ki az **Anyagjegyzék-verziók** lehetőséget). További részletek az anyagjegyzékek beállítási dokumentációjában találhatók.
 
-[![Kiadott termékek, anyagjegyzék ütemezései.](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
+[![Kiadott termékek, anyagjegyzék ütemezései](./media/revenue-recognition-bom-scheduleds.jpg)](./media/revenue-recognition-bom-scheduleds.jpg)
 
 Ha a csomag szülőcikkét és a csomag összetevőit beállítja felosztáshoz, akkor a program – a bevételhez való hozzájárulás százalékos értéke alapján – felosztja a csomag bevételi árát az összetevők között.
 
@@ -202,6 +192,3 @@ A bevételmegjelenítés idő- és anyagelszámolású projektből létrehozott 
 
 - **Halasztott számla bevétele** (a **Bevételi számlák** részen) – Adja meg annak a bevételi árnak a fő számláját, amely a halasztott bevételhez (és nem a bevételhez) végez feladást. Ha az értékesítési rendelés sorához tartozik bevételi ütemezés, akkor a program elhalasztja a bevételi árat.
 - **Halasztott költség** (a **Költségszámlák** részen) – Adja meg az eladott áruk beszerzési értékéhez tartozó fő számlát, amely az eladott áruk halasztott beszerzési értékére végez feladást, ha a bevétel is el lett halasztva.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

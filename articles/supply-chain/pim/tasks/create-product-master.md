@@ -1,24 +1,27 @@
 ---
 title: Alaptermék létrehozása
 description: Hozzon létre egy alapterméket az előre megadott változatokhoz.
-author: t-benebo
+author: ShylaThompson
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductCreate, EcoResProductDetails, EcoResProductInventoryDimensionGroups
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: benebotg
+ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e76c367d4aa6c08332371374a26dd6fdbbdb4eb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Version 7.0.0
+ms.openlocfilehash: fdb30b46a0e5a6d4fac997588dd47148f2664c03
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577336"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429516"
 ---
 # <a name="create-a-product-master"></a>Alaptermék létrehozása
 
@@ -58,6 +61,3 @@ Hozzon létre egy alapterméket az előre megadott változatokhoz. Ez az eljár�
 10. Kattintson a **Mentés** gombra.
 11. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

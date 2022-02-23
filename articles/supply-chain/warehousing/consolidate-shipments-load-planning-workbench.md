@@ -1,26 +1,29 @@
 ---
-title: A raktárba a rakománytervezési munkaterületről kiadott szállítmányok összesítése
+title: Szállítmányok konszolidálása a Kiadás a raktárba lehetőség használatával a Rakománytervező munkaterület oldalról
 description: Ez a témakör egy olyan esetet mutat be, amikor több rendelést adnak ki a raktárba ugyanabban a rakományban, amelyeket a rendszer automatikusan szállítmányokká konszolidál.
 author: GarmMSFT
+manager: tfehr
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSShipConsolidationPolicy, WHSShipConsolidationWorkbench
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: mirzaab
+ms.author: kamaybac
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: 10.0.3
-ms.openlocfilehash: b724b3f040a1b277d99dd067525dfda2b47ca73b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2f1dd5c743664e638c043b600ae7b0f6bce5ddcd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577888"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429282"
 ---
-# <a name="consolidate-shipments-by-releasing-to-warehouse-from-the-load-planning-workbench"></a>A raktárba a rakománytervezési munkaterületről kiadott szállítmányok összesítése
+# <a name="consolidate-shipments-by-using-release-to-warehouse-from-the-load-planning-workbench"></a>Szállítmányok konszolidálása a Kiadás a raktárba lehetőség használatával a Rakománytervező munkaterület oldalról
 
 [!include [banner](../includes/banner.md)]
 
@@ -258,6 +261,3 @@ Négy szállítmányt kellett létrehozni:
 
 - [Szállítmánykonszolidációs irányelvek](about-shipment-consolidation-policies.md)
 - [Szállítmánykonszolidációs irányelvek konfigurálása](configure-shipment-consolidation-policies.md)
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

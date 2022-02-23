@@ -2,28 +2,29 @@
 title: Feltöltés áttekintése
 description: A témakör ismerteti a Raktárkezelési funkciót használó raktárok számára elérhető feltöltési stratégiákat.
 author: Mirzaab
+manager: tfehr
 ms.date: 02/19/2020
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSReplenishmentTemplates, WHSReplenishmentTemplates, WHSInventFixedLocation, WHSRequestType
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "90043"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 90043
 ms.assetid: 49fa97eb-8e10-49a5-9261-1e393159f178
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7681294c1c05f1ca93330c948fc454b6460cb41c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 1fc7ae950ed32a75b8767d764c1b77193c454381
+ms.sourcegitcommit: d9bffbeae2ba14f06294dd275383077d4d65c4fa
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985784"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "4654124"
 ---
 # <a name="replenishment-overview"></a>Feltöltés áttekintése
 
@@ -78,6 +79,3 @@ Ahelyett, hogy a felosztási folyamat végén összegezné az igényeket és vé
 |   Helyutasítások   |                                                       Helyutasítások szükségesek a munka olyan helyekre való irányításához, ahol feltöltés szükséges és ahol a készlet forrása van.                                                        |
 |     Munkasablonok      |                                                   Munkasablonok szükségesek a <strong>Feltöltés</strong> típusához, feltöltési munka létrehozásához, így a készlet a kívánt helyre mozgatható.                                                    |
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

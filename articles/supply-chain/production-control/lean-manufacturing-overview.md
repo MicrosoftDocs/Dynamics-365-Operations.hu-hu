@@ -1,29 +1,30 @@
 ---
 title: Lean manufacturing (áttekintés)
 description: A cikk a Dynamics 365 Supply Chain Management lean manufacturing funkcióinak áttekintését és leírását nyújtja.
-author: johanhoffmann
+author: ChristianRytt
+manager: tfehr
 ms.date: 06/20/2017
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow, Kanban, KanbanQuantityOverview, KanbanAssignCard, KanbanCirculatingCards, KanbanRules, WHSKanbanWaveTableManagePickingListPool
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom:
-- "19371"
-- intro-internal
+ms.search.scope: Core, Operations
+ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: johanho
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e0c8b5ec4d4a391773e32a61a321c28868678baa
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 63a9856035088642254fd43d14cb324a89bc19d6
+ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985936"
+ms.lasthandoff: 10/16/2020
+ms.locfileid: "4429864"
 ---
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing (áttekintés)
 
@@ -50,7 +51,7 @@ Hozzon létre egy lean manufacruring alapítványt a gyártási és logisztikai 
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Kanbanok használata szükség követelmények jelzéséhez
 A húzó rendszer csak szükség esetén termel. Ez az eljárás csökkenti a felesleges készleteket és a szállítás átfutási idejét. Használhat kanbanokat tervezéshez, követéshez és folyamat követelményekhez amelyek termelési folyamatokon alapulnak. Kanban keretrendszer létrehozásához hozzon létre kanbanszabályokat, amelyek meghatározzák mikor jönnek létre kanbanok és hogyan teljesülnek a követelmények. Kétféle kanbanszabályt lehet létrehozni. A gyártási szabályok folyamat kanbanfeladatokat hoznak létre, a kanbanszabályok visszavonása pedig transzfer kanbanfeladatokat hoz létre. A következő feltöltési stratégiákat lehet beállítani:
--   **Fix mennyiség** a kanbanszabályok rögzített számú anyagkezelési egységre vonatkoznak, amely azt jelenti, hogy az aktív kanbanok száma állandó. Amikor egy kanbanból származó összes terméket felhasználnak, és a kezelési egységeket kézzel kiürítik, létrejön egy azonos típusú új kanban. Ha rögzített mennyiségű kanbanszabályt hoz létre, kiszámíthatja az optimális kanbanmennyiségeket és a használt termékmennyiségeket. A számítás figyelembe veszi a számla-előrejelzést, tényleges igényt a nyitott rendelésekből, cikkek feltöltésének átfutási idejét és a korábbi igényeket.
+-   **Fix mennyiség** a kanbanszabályok rögzített számú anyagkezelési egységre vonatkoznak, amely azt jelenti, hogy az aktív kanbanok száma állandó. Amikor egy kanbanból származó összes terméket felhasználnak, és a kezelési egységeket kézzel kiürítik, létrejön egy azonos típusú új kanban. Ha rögzített mennyiségű kanbanszabályt hoz létre, kiszámíthatja az optimális kanbanmennyiségeket és a használt termékmennyiségeket. A számítás figyelembe veszi a számla-előrejelzést, tényleges igényt a nyitott rendelésekből, cikkek feltöltésének átfutási idejét és a korábbi igényeket.
 -   **Ütemezett** Kanbanszabályok az alaptervezet által számított igényeket teljesítik. Az alaptervezet tervezett kanbanokat hoz létre, amelyek kanbanként lehet megerősíteni.
 -   **Esemény** Kanbanszabályok azon igények teljesítésére, melyeket az értékesítési rendelés vonalak, a gyártási anyagjegyzék vonalak vagy a minimális készlet beállítások tartalmaznak. Ha eseménykanbanok jönnek létre, akkor forrás szükségletekhez kerülnek rögzítésre.
 
@@ -66,7 +67,7 @@ A lean manufacturing segítségével látható a termelési és logisztikai tev�
 Az alábbi lista leírja a specializált kanbantáblákat:
 -   Kanban feladat ütemezése – áttekintése nyújt a kanbanfeladatokhoz. A tábla a kanbanfeladatokat és az állapotukat jeleníti meg egy vagy több munkacellában. A feladatok a tervezési időszakok (napok vagy hetek) szerint vannak listázva, amit a termelési folyamatmodellben határoztak meg. A tábla az egyes tervezési időszakra vonatkozó fogyasztást is megjeleníti, így nyomon követheti az ütemezett terhelést. Megváltoztathatja a kanbanfeladatok állapotát, újraütemezhet kanbanfeladatokat eltérő tervezési időszakokhoz és végrehajthat egyéb feladatokat.
 -   Kanbantábla az átviteli feladatokhoz – Ez a tábla az aktuális átviteli feladatokról nyújt áttekintést. Frissíthet és regisztrálhat kitárolási listákat, elindíthat és befejezhet transzferfeladatokat és végrehajthat egyéb feladatokat.
--   Kanbantábla feldolgozási feladathoz – Ez a tábla a normális termelési folyamat támogatásához lett tervezve, áttekintést nyújt az aktuális helyzethez egy vagy több munkacellában. Erről a tábláról a kanbanok priorizálhatók, kitárolhatók és gyárthatók. A táblát úgy is tervezték, hogy támogassa a vonalkódolvasást a kanbanok jelentésére.
+-   Kanbantábla feldolgozási feladathoz – Ez a tábla a normális termelési folyamat támogatásához lett tervezve, áttekintést nyújt az aktuális helyzethez egy vagy több munkacellában. Erről a tábláról a kanbanok priorizálhatók, kitárolhatók és gyárthatók. Továbbá a tábla segíti a vonalkód beolvasását kanbanok jelentéséhez.
 
 ## <a name="kanban-jobs-and-integration-with-supply-chain-management-processes"></a>Kanban-feladatok és integráció a Supply Chain Management folyamataival
 A Kanbanfeladatok teljes mértékben integráltak a jelenlegi készlettranzakciós folyamatokkal a Supply Chain Management rendszerben.
@@ -82,6 +83,3 @@ Továbbá a Lean manufacturing támogatja a beszerzési és számlázási folyam
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

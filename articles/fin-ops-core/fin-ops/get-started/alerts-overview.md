@@ -1,24 +1,26 @@
 ---
-title: Figyelmeztetések áttekintése (videofelvételt tartalmaz)
+title: Figyelmeztetések áttekintése
 description: Ez a témakör általános tájékoztatást tartalmaz a figyelmeztetésekkel kapcsolatban. A figyelmeztetések használatával lehet információkat nyerni a munkanap során nyomon követni kívánt eseményekről.
-author: RichdiMSFT
+author: tjvass
+manager: AnnBe
 ms.date: 09/04/2019
-ms.topic: overview
+ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: richdi
+ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: c3332bdf7f2edb693c95a4d5a6f95906e14c0a42
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 473f53d230d7272ba0fcf78bd05d7020635a870f
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984968"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4798582"
 ---
 # <a name="alerts-overview"></a>Figyelmeztetések áttekintése
 
@@ -77,7 +79,7 @@ A figyelmeztetési szabályok öt összetevőből állnak:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-A [Figyelmeztetések használata szűrt adatok figyeléséhez](https://youtu.be/ZYKMcv6kl9s) video (fent látható) része a [Finance and Operations lejátszási listának](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), amely a YouTube oldalon érhető el.
+A [Figyelmeztetések használata szűrt adatok figyeléséhez](https://youtu.be/ZYKMcv6kl9s) videó (fent látható) része a [Finance and Operations lejátszási listának](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), amely a YouTube oldalon érhető el.
 
 ### <a name="alert-rule-options"></a>Riasztási szabály beállításai
 
@@ -86,6 +88,3 @@ A [Figyelmeztetések használata szűrt adatok figyeléséhez](https://youtu.be/
 A [Figyelmeztetési szabályok beállításai](https://youtu.be/cpzimwOjicM) videó (fent látható) szerepel a [Finance and Operations lejátszási listában](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), amely YouTube oldalon érhető el.
 
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

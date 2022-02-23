@@ -157,6 +157,3 @@ A jelöltek azok a személyek akik hozzá lettek adva a tehetségállományhoz, 
 |-----------------------------|----------------------------------|----------------------------------|-------------|
 | Profil – jelöltek adatai | Létrehozás, olvasás, frissítés és törlés | Létrehozás, olvasás, frissítés és törlés | Nincs hozzáférés   |
 | Bizonylatok                   | Létrehozás, olvasás, frissítés és törlés | Létrehozás, olvasás, frissítés és törlés | Nincs hozzáférés   |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

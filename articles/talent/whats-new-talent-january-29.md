@@ -41,6 +41,3 @@ A nem naptári év szerinti szabadságtervek esetében a **Kivett** kártya megj
 
 ### <a name="worker-hire-actions-are-stuck-in-workflow-complete-state"></a>Dolgozói felvételi műveletek elakadnak a "Munkafolyamat befejeződött" állapotban.
 Módosítások történtek azon hiba javítása érdekében, ahol néhány munkafolyamat a „Munkafolyamat befejeződött” állapottal fejeződött be. Az munkafolyamatok most átkerülnek a „Befejeződött” állapotba, amikor a munkafolyamat befejeződik. Az összes munkafolyamat befejezve állapotú munkafolyamat hibaállapotba kerül, hogy lehetséges legyen a frissítés vagy eltávolítás. 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

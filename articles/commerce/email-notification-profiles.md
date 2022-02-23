@@ -1,33 +1,39 @@
 ---
 title: E-mail-értesítési profil beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet egy e-mailes értesítést létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
-author: bicyclingfool
-ms.date: 02/02/2022
+author: samjarawan
+manager: annbe
+ms.date: 03/31/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
+ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: stuharg
+ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 7a7d796a173a6f9dfcd62e1f73e078cac614145e
-ms.sourcegitcommit: 2aca3a95d42403c7f5d80dcd5e3ee958dca5c894
+ms.openlocfilehash: c0ab56c15a37313d0a88b1174d5bcf51d391dcec
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2022
-ms.locfileid: "8087867"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4412775"
 ---
 # <a name="set-up-an-email-notification-profile"></a>E-mail-értesítési profil beállítása
+
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet egy e-mailes értesítést létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 
-Amikor csatornákat hoz létre, létrehozhat egy e-mail-értesítési profilt. Az e-mailes értesítési profil meghatározza az értékesítési tranzakciók eseményeit (például a rendelés létrehozása, a csomagolt rendelés és a rendelés számlázott eseményei), amelyekről értesítést küld ügyfeleinek. 
+## <a name="overview"></a>Áttekintés
+
+A csatornák létrehozása előtt be kell állítani egy profilt, amely gondoskodik arról, hogy az e-mailek értesítései különböző eseményekhez, például a rendelések létrehozásához, a rendelés szállítási állapotához és a fizetési hibákhoz lehessenek elküldve.
 
 Az e-mail konfigurálásával kapcsolatos további tudnivalókat lásd: [E-mail konfigurálása és küldése](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -43,7 +49,7 @@ E-mail értesítési profil létrehozásához hajtsa végre az alábbi lépések
 
 ### <a name="create-an-email-template"></a>E-mail sablon létrehozása
 
-Mielőtt engedélyezhetne egy e-mail értesítéstípust, létre kell hoznia egy szervezeti e-mail sablont a Commerce központjában minden egyes támogatni kívánt értesítéstípushoz. Ez a sablon minden támogatott nyelvhez meghatározza az e-mail tárgyát, feladóját, alapértelmezett nyelvét és törzsét.
+Mielőtt e-mailes értesítést lehetne létrehozni, létre kell hoznia egy szervezeti e-mail-sablont, amely tartalmazza a feladók e-mailes adatait és az e-mail-sablont.
 
 E-mail-sablon létrehozásához kövesse az alábbi lépéseket.
 
@@ -53,15 +59,13 @@ E-mail-sablon létrehozásához kövesse az alábbi lépéseket.
 1. A **Küldő név** mezőben adja meg a küldő nevét.
 1. Adjon meg egy releváns leírást az **E-mail leírása** mezőben.
 1. A **Feladó e-mail címe** mezőbe írja be a feladók e-mail címét.
-1. Az **Általános** szakaszban válassza ki az e-mail-sablon alapértelmezett nyelvét. A rendszer az alapértelmezett nyelvet használja, ha a megadott nyelven nem létezik honosított sablon.
+1. Az **Általános** részben töltse ki az esetleges opcionális adatokat (például az e-mail prioritását).
 1. Bontsa ki az **E-mail üzenet tartalma** szakaszt, és válassza az **Új** parancsot a sablon tartalmának létrehozásához. Minden tartalmi elemhez válassza ki a nyelvet, és adja meg az e-mail tárgysorát. Ha az e-mail törzset fog tartalmazni, győződjön meg arról, hogy be van jelölve a **Törzs létezik** jelölőnégyzet.
 1. A műveleti ablaktáblán válassza ki az **E-mail üzenet** elemet az e-mail szövegtörzssablon megadásához.
 
 A következő képen látható néhány példa az e-mail-sablon beállításaira.
 
-![E-mail-sablon beállításai.](media/email-template.png)
-
-Az e-mail sablonok létrehozásával kapcsolatos további információkért lásd: [Hozzon létre e-mail sablonokat a tranzakciós eseményekhez](email-templates-transactions.md). 
+![E-mail-sablon beállításai](media/email-template.png)
 
 ### <a name="create-an-email-event"></a>E-mail esemény létrehozása
 
@@ -76,14 +80,12 @@ E-mail-esemény létrehozásához kövesse az alábbi lépéseket.
 
 A következő képen látható néhány példa az eseményértesítés beállításaira.
 
-![Esemény értesítési beállításai.](media/email-notification-profile.png)
-
-> [!NOTE]
-> Az ügyfél által létrehozott értesítéstípushoz testreszabást kell végrehajtani, mielőtt e-mail értesítést küldhetnénk.
+![Esemény értesítési beállításai](media/email-notification-profile.png)
 
 ### <a name="next-steps"></a>További lépések
 
 E-mailek küldése előtt konfigurálnia kell a kimenő levelek szolgáltatását, és be kell állítania egy kötegelt feladatot. További információ: [E-mailek konfigurálása és küldése](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
+
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -94,6 +96,3 @@ E-mailek küldése előtt konfigurálnia kell a kimenő levelek szolgáltatásá
 [Csatornák beállításának előfeltételei](channels-prerequisites.md)
 
 [Szervezetek és szervezeti hierarchiák áttekintése](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

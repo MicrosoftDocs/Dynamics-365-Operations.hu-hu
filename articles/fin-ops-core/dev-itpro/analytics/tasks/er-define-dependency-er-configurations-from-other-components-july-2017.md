@@ -1,10 +1,12 @@
 ---
-title: Az ER-konfigurációk függőségének meghatározása más összetevőknél
-description: Ez a témakör bemutatja, hogyan lehet Elektronikus jelentéskészítési (ER) konfigurációt tervezni, és megadni az egyéb szoftverösszetevőktől való függőségét.
+title: ER-konfigurációk függőségének meghatározása más összetevőkhöz
+description: A lépések végrehajtásához végre kell hajtania a feladat-úmutató lépéseit, az ER model-leképezési konfigurációk kezelését, és hozzáféréssel kell rendelkeznie a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatáshoz.
 author: NickSelin
-ms.date: 07/23/2021
+manager: AnnBe
+ms.date: 06/23/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -12,14 +14,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2901092938dae5ae14480716eeeb2b0386848332e91ad388ce5d34437f8492ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 77783d629afc9abf30cdc48534fbb26eba5f8811
+ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717594"
+ms.lasthandoff: 12/05/2020
+ms.locfileid: "4681973"
 ---
-# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>Az ER-konfigurációk függőségének meghatározása más összetevőknél
+# <a name="define-the-dependency-of-er-configurations-on-other-components"></a>ER-konfigurációk függőségének meghatározása más összetevőkhöz
 
 [!include [banner](../../includes/banner.md)]
 
@@ -44,7 +46,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 5. Kattintson az Új lehetőségre.
 6. Válassza a Termék előfeltételeként szükséges összetevő lehetőséget.
 7. Válassza a Microsoft Dynamics 365 for Operations (1611) lehetőséget.
-8. A Verzió mezőbe írja be a következő értéket: [7.1.1541.3036,8).
+8. A Verzió mezőbe írja be a következő értéket: '[7.1.1541.3036,8).
     * [7.1.1541.3036,8)  
     * A beírt függőségeket a rendszer akkor értékeli ki, amikor ezt a beállítást letölti valamely ER-tárházból. A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve. Amennyiben korábban letöltötték, a kitöltését a Finance and Operations alkalmazásban kell elvégezni, amelynek verziója kötelezően 7.1.1541.3036 vagy újabb verzió, de nem haladhatja meg a 8-as főverziót.   
 9. Kattintson a Mentés gombra.
@@ -57,7 +59,7 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
 16. Kattintson az Új lehetőségre.
 17. Válassza a Termék előfeltételeként szükséges összetevő lehetőséget.
 18. Válassza ki a Microsoft Dynamics AX 7.0 RTW verziót.
-19. A Verzió mezőbe írja be a következő értéket: [7.0.1265.3015,7.1).
+19. A Verzió mezőbe írja be a következő értéket: '[7.0.1265.3015,7.1).
     * [7.0.1265.3015,7.1)  
     * A függőségeket a rendszer akkor értékeli ki, amikor a beállítást letölti valamely ER-tárházból. A rendszer ezt a konfigurációs verziót tölti le az ER-tárházból, ha a Minta adatmodell konfiguráció 1-es verziója már fennáll, vagy korábban le volt töltve. Amennyiben korábban letöltötték, a kitöltését a Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition programban kell elvégezni, amelynek verziója kötelezően 7.0.1265.3015 vagy újabb verzió, de nem haladhatja meg a 1-as alverziót.   
 20. Kattintson a Mentés gombra.
@@ -137,9 +139,3 @@ A rendszer törli a létrehozott konfigurációkat, és visszatölti őket az LC
 26. A fastruktúrában bontsa ki a „Minta adatmodell” elemet.
     * Vegye figyelembe, hogy a Mintaleképezés modell-leképezési konfigurációt a rendszer a kijelölt adatmodell-konfigurációval együtt letöltötte. A két fájl letöltése együtt történik, mivel a Mintaleképezés meghatározása a kiválasztott adatmodell végrehajtása, és mivel az alkalmazásra vonatkozik. A „Mintaleképezés (másodlagos)” konfiguráció még nincs letöltve, mivel nem teljesült a kívánt alkalmazásverzióhoz kapcsolódó feltétel.   
     * Ha bejelentkezik a Finance and Operations programba, regisztrálja ugyanazt a szolgáltatót, belép ugyanabba az LCS-projektbe, és letölti ugyanazt az adatmodell-konfigurációt, a „Mintaleképezés (másodlagos)” konfigurációt tölti le, mivel a „Mintaleképezés” konfigurációt átugorja a rendszer.  
-
-## <a name="additional-resources"></a>További erőforrások
-
-[Elektronikus jelentéskészítési (ER) konfigurációk életciklusainak kezelése](../general-electronic-reporting-manage-configuration-lifecycle.md)
-
-[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

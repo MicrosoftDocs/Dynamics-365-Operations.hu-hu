@@ -1,46 +1,44 @@
 ---
-title: Változó kompenzációs konstrukciók létrehozása
-description: A témakör ismerteti az összetevőket, amelyeket be kell állítani, mielőtt használhatna változó kompenzációt, és bejegyezhetne egy alkalmazottat a változó kompenzációs tervbe.
-author: twheeloc
-ms.date: 08/24/2021
+title: Változó kompenzációs tervek létrehozása
+description: A változó kompenzáció teszi ki egy alkalmazott az alapon felüli kifizetéseit, például a bónuszokat vagy a készlet díjakat. A cikk ismerteti az összetevőket, amelyeket be kell állítani, mielőtt használhatna változó kompenzációt és bejegyezhetne egy alkalmazottat a változó kompenzációs tervbe.
+author: andreabichsel
+manager: AnnBe
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HCMCompEligibility, HcmJobFunction, HcmWorker, HRMCompPerfPlan, HcmCompensationWorkspace
 audience: Application User
-ms.search.scope: Human Resources
+ms.reviewer: anbichse
+ms.search.scope: Core, Operations, Human Resources
 ms.custom: 16011
 ms.assetid: fc3a394e-9ac6-4f8c-9162-dc16ec22720f
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: anbichse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 18347527517d6d051213fbe13caca54ed9214111
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 85e64c4186c7782391a3db6dc4deb3fab0ea9f4f
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066850"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4418791"
 ---
 # <a name="create-variable-compensation-plans"></a>Változó kompenzációs tervek létrehozása
 
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
-A változó kompenzáció teszi ki egy alkalmazott az alapon felüli kifizetéseit, például a bónuszokat vagy a készlet díjakat. A témakör ismerteti, hogyan lehet beállítani az összetevőket, amelyek szükségesek, mielőtt használhatna változó kompenzációt, és bejegyezhetne egy alkalmazottat a változó kompenzációs tervbe.
+A változó kompenzáció teszi ki egy alkalmazott az alapon felüli kifizetéseit, például a bónuszokat vagy a készlet díjakat. A cikk ismerteti az összetevőket, amelyeket be kell állítani, mielőtt használhatna változó kompenzációt és bejegyezhetne egy alkalmazottat a változó kompenzációs tervbe.
 
 Az alkalmazottaknak járó változó kompenzációs összegek számítása számos tényező alapján történhet, például az alkalmazott teljesítménye, kompenzációs szintje és a részleg teljesítménye alapján.
 
 ## <a name="variable-compensation-components"></a>Változó kompenzációs elemei
 ### <a name="create-compensation-types"></a>Kompenzációs típusok létrehozása
 
-A **Változó kompenzációtípusok** szükséges elemek. A **Változó kompenzációtípusokkal** megadhatja, hogy szervezete milyen változó kompenzációt díjaz. Továbbá ezek segítségével meghatározhatja, hogy a kompenzáció készpénzben vagy nem pénzügyi formában történjen, például a készletből.
+A **Változó kompenzációtípusok** szükséges elemek. A Változó kompenzációtípusokkal megadhatja, hogy szervezete milyen változó kompenzációt díjaz. Továbbá ezek segítségével meghatározhatja, hogy a kompenzáció készpénzben vagy nem pénzügyi formában történjen, például a készletből.
 
 ### <a name="describe-vesting-rules"></a>Átruházási szabályok leírása
 
-Ha van rá igény a vállalatok megadhatnak **Átruházási szabályokat**. Az **Átruházási szabályok** leírják, hogy a változó jutalmakat időben hogyan kell felosztani. Például az átruházási szabály megszabhatja, hogy az alkalmazott a teljes jutalmának 25 százalékát kaphatja meg minden évben, a következő négy évben. Az átruházási szabályok csak tájékoztató jellegűek.
+Ha van rá igény a vállalatok megadhatnak **átruházási szabályokat**. Az átruházási szabályok leírják, hogy a változó jutalmakat időben hogyan kell felosztani. Például az átruházási szabály megszabhatja, hogy az alkalmazott a teljes jutalmának 25 százalékát kaphatja meg minden évben, a következő négy évben. Az átruházási szabályok csak tájékoztató jellegűek.
 
 ## <a name="variable-compensation-plans"></a>Változó kompenzációs konstrukciók
 A **változó kompenzációterv** tartalmazza a szabályokat, számítási módszereket és az alapértelmezett adatokat a listázott alkalmazottak változó kompenzációjának számításához. Ha változó kompenzációtervet hoz létre, akkor meg kell adnia a változó kompenzáció típusát. A változó kompenzáció típusa meghatározza, hogy a rendszer egy pénzösszeget vagy egy egységszámot ad meg jutalomként. A számítási módszert is meg kell adni:
@@ -50,24 +48,24 @@ A **változó kompenzációterv** tartalmazza a szabályokat, számítási móds
 
 A változó jutalom összege alapulhat az alkalmazott rendszeres fizetésének bizonyos százalékán vagy adott egységeken.
 
--   Válassza ki az **Alap százaléka** lehetőséget az alapértelmezett százalék magadásához és határozza meg, hogy a fix fizetés vagy az alkalmazottak kompenzációs szintjeinek kontrollpontja legyen az alap. A kompenzációs szint alapja az alkalmazott munkája. A kompenzációs szerkezetből az egyik referenciapont beállítható kontrollpontnak a fix kompenzációs terven. A rendszer a kompenzációs szintet használja majd az alkalmazottak munkaköréből és egyezteti azt az alkalmazott fix kompenzációs tervben listázott kontrollpontokkal, így keresve a kontrollpont-mennyiséget az alkalmazott kompenzációs szintjéhez. Ezután a kontrollpont-mennyiséget használja a program - az alkalmazott fix fizetése helyett - a jutalom alapjának.
+-   Válassza ki az **Alap százaléka** lehetőséget az alapértelmezett százalék magadásához és határozza meg, hogy a fix fizetés vagy az alkalmazottak kompenzációs szintjeinek kontrollpontja legyen az alap. A kompenzációs szint alapja az alkalmazott munkája. A kompenzációs szerkezetből az egyik referenciapont beállítható kontrollpontnak a fix kompenzációs terven. A rendszer a kompenzációs szintet használja az alkalmazottak munkaköréből és egyezteti azt az alkalmazott fix kompenzációs tervben listázott kontrollpontokkal, így keresve a kontrollpont-mennyiséget az alkalmazott kompenzációs szintjéhez. Ezután a kontrollpont-mennyiséget használja a program - az alkalmazott fix fizetése helyett - a jutalom alapjának.
 -   Válassza az **Egységek száma** lehetőséget egy alapértelmezett egységszám, az egyes egységek értékének és az egységérték pénzemének megadásához, ha a kompenzációs terv nem készpénz alapú (például 200 készletegység, amelyek 40 USD értékűek) vagy adja meg csak az egységek számát a kompenzációs tervben ha a kompenzációs terv készpénz alapú. Készpénzes jutalomnál az alkalmazott adott számú egységet kap a rögzített kompenzációs tervben rögzített pénznemben (például 500 egységet 1 USD értékben). Az egy-egy kapcsolat ellenőrzése használható annak ellenőrzésére, hogy az egységek száma között és az egységérték között egy-egy közötti hozzárendelés van-e. Amikor létrehoz egy változó kompenzációs tervet egy készpénzalapú tervhez az egységek számának használatával, akkor ez a lehetőség automatikusan **Igen** értéket kap, és az egységérték **1,0000** lesz.
 
-A **Felvételi szabály** határozza meg, hogy minden alkalmazott ugyanazt a fizetésemelést kapja-e, függetlenül felvételük dátumától (**Felvételi szabály** = **Nincs**), vagy az alkalmazottak a jutalom bizonyos százalékát kapják, alkalmazásuk időtartamának függvényében (**Felvételi szabály** = **Százalék**). 
+A **Felvételi szabály** beállításai segítségével megadhatja, hogy minden alkalmazott ugyanazt a fizetésemelést kapja-e, függetlenül felvételük dátumától (**Felvételi szabály** = **Nincs**), vagy az alkalmazottak a jutalom bizonyos százalékát kapják, alkalmazásuk időtartamának függvényében (**Felvételi szabály** = **Százalék**). 
 
-Az **Emelés** beállítja egy alkalmazott jutalmának az alkalmazotti részleg által mért teljesítmény alapján. A teljesítménymutatók megadhatók az egyes részlegek számára, a **Részlegek** oldalon, a **Kapcsolódó űrlapok** &gt; **Kompenzáció** &gt; **Teljesítmény** pont alatt. Az adott részlegen dolgozók jutalma függ a **A cél elért százaléka** mező értékétől, amelyik a részleg teljesítményét tükrözi:
+Az **Emelés** lehetővé teszi egy alkalmazott jutalmának megadását az alkalmazotti részleg által mért teljesítmény alapján. A teljesítménymutatók megadhatók az egyes részlegek számára, a **Részlegek** oldalon, a **Kapcsolódó űrlapok** &gt; **Kompenzáció** &gt; **Teljesítmény** pont alatt. Az adott részlegen dolgozók jutalma függ a **A cél elért százaléka** mező értékétől, amelyik a részleg teljesítményét tükrözi:
 
 -   Ha az osztály teljesítménye 100 százalék, az alkalmazottak jutalma az adott részlegben függ a **Kifizetés 100%-nál** mezőben megadott értéktől.
 -   Ha a részleg teljesítménye nagyobb, mint 100 százalék, akkor a rendszer a **1% a cél felett** mezőben lévő értéket adja hozzá a **Kifizetés 100% esetén** mezőhöz, amíg a **Legmagasabb megengedett kifizetés** mező értékét eléri.
 -   Ha a részleg teljesítménye kisebb, mint 100 százalék, akkor a rendszer az **1% a cél felett** mezőben lévő értéket kivonja a **Kifizetés 100% esetén** mezőből, amíg a **Legalacsonyabb megengedett kifizetés** mező értékét eléri.
 
-Beállíthat **Toleranciaszinteket** a küszöbérték százalékoknál, így egy figyelmeztető üzenet jelenik meg, ha az emelés miatt a százalék átlépi a küszöbértéket. 
+Beállíthat **toleranciaszinteket** a küszöbérték százalékoknál, így egy figyelmeztető üzenet jelenik meg, ha az emelés miatt a százalék átlépi a küszöbértéket. 
 
-Alapértelmezetten az alkalmazott pozíciójához rendelt részleg van beállítva a munkavállalói jutalmakhoz. Ugyanakkor néhány alkalmazott számára a jutalom több részleg teljesítményétől is függhet. Ebben az esetben a különböző részlegek és az egyes részlegek jutalmainak százaléka, amelyet az egyes részlegek teljesítményhez rendeltek, állíthatók be az alkalmazott változó kompenzációs bejegyzésében. További információért tekintse meg a „Változó kompenzációs bejegyzés” szakaszt lentebb. 
+Alapértelmezetten a rendszer megkeresi az alkalmazott pozíciójához rendelt részleget. Ugyanakkor néhány alkalmazott számára a jutalom több részleg teljesítményétől is függhet. Ebben az esetben a különböző részlegek és az egyes részlegek jutalmainak százaléka, amelyet az egyes részlegek teljesítményhez rendeltek, állíthatók be az alkalmazott változó kompenzációs bejegyzésében. További információért tekintse meg a „Változó kompenzációs bejegyzés” szakaszt lentebb. 
 
 Emelés csak a **Teljesítménybérezés** kiválasztásakor használatos, amikor a kompenzációs feldolgozás futtatásakor. 
 
-A **Felülbírálási szintek** lap lehetővé teszi az alapértelmezett jutalom százalékának vagy az egységek számának felülírását, amit az alkalmazott kompenzációs szintje alapján számítottak. Ha a **Felülbírálások engedélyezése szintekhez** értéke **Igen** azoknak az alkalmazottaknak, akik részesei a változó kompenzációs tervnek, akkor a rendszer veszi az alkalmazott beosztásának szintjét, és utána összehasonlítja a felülírási szintek táblázattal, hogy meghatározza a százalékot vagy az egységek számát ahhoz a szinthez. Ha a szint nem található a felülírási szintek táblázatban, akkor az **Általános** lap alapértelmezett százaléka vagy egységszáma kerül felhasználásra. A százalék és az egységszám szintén felülírható az alkalmazottak listáján a változó kompenzációs tervben.
+A **Felülbírálási szintek** lap lehetővé teszi az alapértelmezett jutalom százalékának vagy az egységek számának felülírását, amit az alkalmazott kompenzációs szintje alapján számítottak. Ha a **Felülbírálások engedélyezése szintekhez** értéke **Igen** azoknak az alkalmazottaknak, akik részesei a változó kompenzációs tervnek, akkor a rendszer veszi az alkalmazott beosztásának szintjét, és utána megkeresi a felülírási szintek táblázatban, hogy meghatározza a százalékot vagy az egységek számát ahhoz a szinthez. Ha a szint nem található a felülírási szintek táblázatban, akkor az **Általános** lap alapértelmezett százaléka vagy egységszáma kerül felhasználásra. A százalék és az egységszám szintén felülírható az alkalmazottak listáján a változó kompenzációs tervben.
 
 ## <a name="variable-compensation-enrollment"></a>Változó kompenzációs tagság
 ### <a name="determine-who-is-eligible-for-the-plan"></a>A konstrukcióra jogosultak meghatározása
@@ -101,6 +99,3 @@ A **Szervezeti felülbírálások** az alkalmazott jutalmának alapját képezik
 
 
 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

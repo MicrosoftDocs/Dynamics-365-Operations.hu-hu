@@ -2,9 +2,11 @@
 title: Munkafolyamat GYIK
 description: Ez a témakör a munkafolyamat-rendszerrel kapcsolatos gyakori kérdéseket tartalmazza.
 author: ChrisGarty
+manager: AnnBe
 ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -12,19 +14,16 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fe11942ca41dd8c0ca23d94006569c50a4501a52
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 58aa4a6d313a78e88c2858637d6de167895ec534
+ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065580"
+ms.lasthandoff: 12/19/2020
+ms.locfileid: "4797391"
 ---
 # <a name="workflow-faq"></a>Munkafolyamat GYIK
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a témakör a munkafolyamat-rendszerrel kapcsolatos gyakori kérdéseket tartalmazza.
 
@@ -48,9 +47,9 @@ Az alábbiakban az értesítésre szolgáló figyelmeztetések munkafolyamatokho
     - Egy jövőbeli frissítésben bevezetjük a Műveleti központ üzenetét, így a felhasználóhoz egy munkafolyamat munkatételét lehet hozzárendelni. 
 - Értesítések hozzáadása a munkafolyamatokhoz
     - A Műveleti központ üzeneteivel adott felhasználók is megcélozhatók, például az X++ munkafolyamatból létrehozott üzenetekkel.
-    - [A munkafolyamatok üzleti eseményekkel rendelkeznek](../../dev-itpro/business-events/business-events-workflow.md), amelyekkel a vevő a kívánt értesítést használható folyamatokat aktiválhatja.   
+    - [A munkafolyamatok üzleti eseményekkel rendelkeznek](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow), amelyekkel a vevő a kívánt értesítést használható folyamatokat aktiválhatja.   
 
-Ha a felhasználó nem a megfelelő értesítést kapja a Műveleti központból, amikor hozzárendelik a munkafolyamat egyik munkatételét, a [Munkafolyamat üzleti eseményeinek](../../dev-itpro/business-events/business-events-workflow.md) Microsoft Power Automate szolgáltatással való használatával további vagy más értesítések válhatnak elérhetővé.
+Összefoglalva, ha a felhasználó nem a megfelelő értesítést kapja a Műveleti központból, amikor hozzárendelik a munkafolyamat egyik munkatételét, a [Munkafolyamat üzleti eseményeinek](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/business-events/business-events-workflow) Microsoft Power Automate szolgáltatással való használatával további vagy más értesítések válhatnak elérhetővé.
 
 ## <a name="why-is-workflow-editor-not-able-to-start-under-ad-fs"></a>Miért nem lehet elindítani a munkafolyamat-szerkesztőt az AD FS alatt?
 Ha az Active Directory összevonási szolgáltatások (AD FS) alatt egy frissített környezetben fut, előfordulhat, hogy a munkafolyamat-szerkesztő nem működik megfelelően. Ha igen, győződjön meg arról, hogy a „https://dynamicsaxworkfloweditor/” URL hozzá van adva a **Microsoft Dynamics 365 for Operations Helyszíni - Munkafolyamat - Natív alkalmazás** tulajdonsághoz az ADFS beállításaiban.
@@ -60,6 +59,3 @@ A **Munkafolyamat-elemek száma kötegenként** értéke a **Munkafolyamat param
 
 ## <a name="what-is-the-workflow-enhanced-error-feature"></a>Mi a munkafolyamat kibővített hiba funkció?
 A 10.0.13 verzió munkafolyamat kibővített hiba szolgáltatása hibakódokat ad hozzá a különböző munkafolyamat-hibák megkülönböztetéséhez. A jelentett hibaüzenetek többnyire hasonlóak kisebb eltérésekkel az egyértelműség kedvéért.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
