@@ -1,39 +1,33 @@
 ---
 title: E-mail-értesítési profil beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet egy e-mailes értesítést létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
-author: samjarawan
-manager: annbe
-ms.date: 03/31/2020
+author: bicyclingfool
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: samjar
+ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: c0ab56c15a37313d0a88b1174d5bcf51d391dcec
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 9f7adffd67e8198d16e4f7ed4fc4aadf59071b1d
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412775"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109631"
 ---
 # <a name="set-up-an-email-notification-profile"></a>E-mail-értesítési profil beállítása
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet egy e-mailes értesítést létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 
-## <a name="overview"></a>Áttekintés
-
-A csatornák létrehozása előtt be kell állítani egy profilt, amely gondoskodik arról, hogy az e-mailek értesítései különböző eseményekhez, például a rendelések létrehozásához, a rendelés szállítási állapotához és a fizetési hibákhoz lehessenek elküldve.
+Amikor csatornákat hoz létre, létrehozhat egy e-mail-értesítési profilt. Az e-mail értesítési profil határozza meg az értékesítési tranzakció eseményeit (például a rendelés létrejöttét, a rendelésre csomagolt és a rendelés számlázott eseményeit), amelyekről értesítéseket fog küldeni a vevőknek. 
 
 Az e-mail konfigurálásával kapcsolatos további tudnivalókat lásd: [E-mail konfigurálása és küldése](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
 
@@ -49,7 +43,7 @@ E-mail értesítési profil létrehozásához hajtsa végre az alábbi lépések
 
 ### <a name="create-an-email-template"></a>E-mail sablon létrehozása
 
-Mielőtt e-mailes értesítést lehetne létrehozni, létre kell hoznia egy szervezeti e-mail-sablont, amely tartalmazza a feladók e-mailes adatait és az e-mail-sablont.
+Az e-mail értesítési típus engedélyezése előtt létre kell hoznia egy szervezeti e-mail sablont a Commerce Headquarters minden olyan értesítéstípusához, amely támogatott. Ez a sablon minden támogatott nyelvhez meghatározza az e-mail tárgyát, a feladót, az alapértelmezett nyelvet és az e-mail szöveg törzsét.
 
 E-mail-sablon létrehozásához kövesse az alábbi lépéseket.
 
@@ -59,13 +53,15 @@ E-mail-sablon létrehozásához kövesse az alábbi lépéseket.
 1. A **Küldő név** mezőben adja meg a küldő nevét.
 1. Adjon meg egy releváns leírást az **E-mail leírása** mezőben.
 1. A **Feladó e-mail címe** mezőbe írja be a feladók e-mail címét.
-1. Az **Általános** részben töltse ki az esetleges opcionális adatokat (például az e-mail prioritását).
+1. Az **Általános** szakaszban válassza ki az e-mail-sablon alapértelmezett nyelvét. A rendszer az alapértelmezett nyelvet használja, ha a megadott nyelven nem létezik honosított sablon.
 1. Bontsa ki az **E-mail üzenet tartalma** szakaszt, és válassza az **Új** parancsot a sablon tartalmának létrehozásához. Minden tartalmi elemhez válassza ki a nyelvet, és adja meg az e-mail tárgysorát. Ha az e-mail törzset fog tartalmazni, győződjön meg arról, hogy be van jelölve a **Törzs létezik** jelölőnégyzet.
 1. A műveleti ablaktáblán válassza ki az **E-mail üzenet** elemet az e-mail szövegtörzssablon megadásához.
 
 A következő képen látható néhány példa az e-mail-sablon beállításaira.
 
-![E-mail-sablon beállításai](media/email-template.png)
+![E-mail-sablon beállításai.](media/email-template.png)
+
+Az e-mail sablonok létrehozásával kapcsolatos további tudnivalókat [lásd: E-mail sablonok létrehozása a tranzakciós eseményekhez](email-templates-transactions.md). 
 
 ### <a name="create-an-email-event"></a>E-mail esemény létrehozása
 
@@ -80,12 +76,27 @@ E-mail-esemény létrehozásához kövesse az alábbi lépéseket.
 
 A következő képen látható néhány példa az eseményértesítés beállításaira.
 
-![Esemény értesítési beállításai](media/email-notification-profile.png)
+![Esemény értesítési beállításai.](media/email-notification-profile.png)
+
+> [!NOTE]
+> Az ügyfél által létrehozott értesítési típushoz testre kell szabni az e-mailben küldött értesítéseket.
+
+### <a name="schedule-a-recurring-email-notification-process-job"></a>Ismétlődő e-mail értesítési folyamat feladatának ütemezése
+
+Az e-mail értesítések elküldését úgy küldheti el, **hogy fut a Kiskereskedelmi rendelés feldolgozása e-mail értesítési** feladat.
+
+Ha még **nem** tette meg, állítsa be a Kiskereskedelmi rendelés feldolgozása e-mail értesítési feladatot a Commerce Headquarters szolgáltatásban.
+
+1. Menjen a **Retail and Commerce \> Retail and Commerce IT \> e-mail címére és az értesítésküldési értesítésbe \>**.
+1. A Kiskereskedelmi rendelés **feldolgozása e-mail értesítési** párbeszédpanelen válassza az Ismétlődés **lehetőséget**.
+1. Az Ismétlődés **definiálása** párbeszédpanelen válassza a Nincs **záró dátum lehetőséget**.
+1. Az Ismétlődési **szabály területen válassza** a Percek **lehetőséget**, majd **állítsa** **a Számlálás mezőt 1-re.** Ezek a beállítások biztosítják, hogy az e-mail értesítések feldolgozása a lehető leggyorsabb legyen.
+1. Az **OK gombra** való visszatéréshez térjen **vissza a Kiskereskedelmi rendelés feldolgozása e-mail értesítési párbeszédpanelre**.
+1. A **feladat beállításának befejezéséhez kattintson az OK** gombra.
 
 ### <a name="next-steps"></a>További lépések
 
 E-mailek küldése előtt konfigurálnia kell a kimenő levelek szolgáltatását, és be kell állítania egy kötegelt feladatot. További információ: [E-mailek konfigurálása és küldése](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
-
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -96,3 +107,6 @@ E-mailek küldése előtt konfigurálnia kell a kimenő levelek szolgáltatásá
 [Csatornák beállításának előfeltételei](channels-prerequisites.md)
 
 [Szervezetek és szervezeti hierarchiák áttekintése](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

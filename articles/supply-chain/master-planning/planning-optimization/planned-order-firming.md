@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: a709528b04e82c32f644073f79513b7ef11bb6bf
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 7e3a86e2aa0e7182f7f9e853b9e8667e677a8ad6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920723"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102713"
 ---
 # <a name="firm-planned-orders"></a>Biztosra tervezett rendelések
 
@@ -35,17 +35,15 @@ Ez a témakör részletesen ismerteti az egyes módszereket.
 
 A legtöbb tervezett rendelési funkció a Microsoft Dynamics 365 Supply Chain Management minden olyan standard telepítésében elérhető, amely Tervezési optimalizálást használ. A témakörben leírt funkciókat azonban csak akkor lehet használni, ha be vannak kapcsolva a Funkciókezelésben.
 
-### <a name="enable-parallelized-firming-of-planned-orders"></a>Tervezett rendelések párhuzamos megerősítésének engedélyezése
+### <a name="turn-parallelized-firming-of-planned-orders-on-or-off"></a>Tervezett rendelések párhuzamos meg- és kikapcsolása
 
-A párhuzamos megerősítés segít felgyorsítni a megerősítés folyamatot a több szálon keresztüli párhuzamosítás révén. Ez a megközelítés akkor lehet hasznos, ha sok tervezett rendelés meg van erősítve.
-
-Ha ezt a funkciót elérhetővé szeretné tenni a rendszerben, menjen a [Funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) elemre, és kapcsolja be a *Tervezett rendelések párhuzamos megerősítése* funkciót. (Az Ellátásilánc-kezelés 10.0.21-es verziója alapértelmezés szerint be van kapcsolva.)
+A párhuzamos megerősítés segít felgyorsítni a megerősítés folyamatot a több szálon keresztüli párhuzamosítás révén. Ez a megközelítés akkor lehet hasznos, ha sok tervezett rendelés meg van erősítve. Ennek a funkciónak a *használatához* be kell kapcsolva lennie a rendszer tervezett rendeléseket párhuzamos megrendelő funkciónak. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, [akkor ezt a funkciót a Funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)*funkcióval* kapcsolhatja be és kapcsolhatja ki, és a tervezett rendelések párhuzamos meg lehet erősítő szolgáltatását keresi.
 
 ### <a name="enable-planned-order-firming-with-filtering"></a>Tervezett rendelésmegerősítés engedélyezése szűréssel
 
 A tervezett rendelésmegerősítés szűréssel lehetővé teszi, hogy logikai feltételt határozzon meg a megerősíteni kívánt tervezett rendelések kiválasztásához. Megtekintheti azt is, hogy mely tervezett rendelések lettek kiválasztva, a háttérben futtathatja a folyamatot, és/vagy ütemezheti kötegelt feladatként.
 
-Ha ezt a funkciót elérhetővé szeretné tenni a rendszerben, menjen a [Funkciókezelés](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) elemre, és kapcsolja be a *Tervezett rendelésmegerősítés szűréssel* funkciót.
+Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy *kapcsolhatják*[be és kapcsolják ki ezt a funkciót, hogy a Funkciókezelés munkaterületén keresi a Tervezett rendelés- és szűrési funkciót](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="enable-auto-firming-for-planning-optimization"></a>Automatikus megerősítés engedélyezése a tervezési optimalizáláshoz
 

@@ -1,27 +1,24 @@
 ---
 title: Alaptervezés futtatásának megfigyelése
 description: Ez a témakör azt mutatja be, hogy a termeléstervező hogyan látja azt, hogy éppen folyamatban van-e az alaptervezés futtatása.
-author: josaw1
-manager: tfehr
+author: ChristianRytt
 ms.date: 11/04/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, SysQueryForm, InventItemIdLookupSimple, ReqLog, ReqProcessTaskTrace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 045b82af6f65b22e1c683f8de47a6df282711e6a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4db1173b35cd196ab39fae3cac3754439fab84d0
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429294"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103163"
 ---
 # <a name="monitor-a-master-planning-run"></a>Alaptervezés futtatásának megfigyelése
 
@@ -31,12 +28,11 @@ ms.locfileid: "4429294"
 
 Az **Alaptervezési folyamat megtekintése** lapon megtekintheti a múltbeli Alaptervezés futtatások adatait Gantt-diagramként. Ez a funkció segít megérteni az Alaptervezés különböző fázisaiban töltött időt. Egy aktuális aktív tervezési feladathoz az **Alaptervezési folyamat megtekintése** lapon nyomon követheti az előrehaladást, és megtekintheti a becsült hátralévő időt.
 
-### <a name="turn-on-and-use-the-master-plan-progress-visualization-feature"></a>Az alaptervezés folyamatmegjelenítési funkciójának bekapcsolása és használata
+### <a name="turn-the-master-plan-progress-visualization-feature-on-or-off"></a>A Főterv előrehaladási vizualizációs funkciójának be- és kikapcsolása
 
-A funkció használatához kövesse az alábbi lépéseket.
+Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha a 10.0.25-ösnél régebbi verziót futtatja, akkor a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha megkeresik a *Főtervezési folyamat vizualizációs* funkcióját a [Funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületen.
 
-1. A **funkciókezelés** munkaterületen az **új** lapon válassza ki a listában az **Alaptervezés folyamatmegjelenítése** elemet. Ha a funkció nem jelenik meg az **új** lapon, akkor keresse a **nem engedélyezett és** az **Összes** lapon.
-1. Válassza az **Engedélyezés most** lehetőséget. Azt is megteheti, hogy az **ütemezés** elemet választja, majd azt az időpontot, amikor be kívánja kapcsolni a szolgáltatást.
+### <a name="use-the-master-plan-progress-visualization-feature"></a>A főterv előrehaladásának vizualizációs szolgáltatásának használata
 
 Az **Alaptervezés folyamatmegjelenítése** lap a múltbeli tervezési feladatok és az aktív tervezési feladatok megjelenítésére is képes. 
 
@@ -127,3 +123,6 @@ A szín csak a Gantt-diagram legalacsonyabb szintjén jelenik meg. Az **összes 
 1. A rácsban válassza ki azt a sort, amelyben a **Mező** mezője a **Cikkszám** értékre van állítva.
 1. A **Feltétel** mezőben adjon meg egy értéket.
 1. Válassza ki az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

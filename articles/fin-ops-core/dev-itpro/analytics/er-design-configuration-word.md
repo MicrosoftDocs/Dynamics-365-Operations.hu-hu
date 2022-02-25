@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: 98d28c39b2923afecc851299a07aa3b93ef2edce
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 27e9e977193f9ff5c8188b780e8de955742c4ebe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867294"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323875"
 ---
 # <a name="design-a-new-er-configuration-to-generate-reports-in-word-format"></a>Új ER-konfiguráció tervezése Word-formátumú jelentések generálásához
 
@@ -28,7 +28,7 @@ Ahhoz, hogy Microsoft Word-dokumentumként hozzon létre jelentéseket, meg kell
 
 ![Mintasablon az asztali Word alkalmazásban használható ellenőrző jelentéshez.](./media/er-design-configuration-word-image1.png)
 
-Ha Word-dokumentumot kíván használni Word formátumú jelentések sablonjaként, egy új [Elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) [megoldást](er-quick-start1-new-solution.md) is konfigurálhat. Ennek a megoldásnak egy ER [konfigurációt](general-electronic-reporting.md#Configuration) kell tartalmaznia egy ER [formátum](general-electronic-reporting.md#FormatComponentOutbound) összetevővel.
+Ha Word-dokumentumot kíván használni Word formátumú jelentések sablonjaként, egy új [Elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) [megoldást](er-quick-start1-new-solution.md) is konfigurálhat. Ennek a megoldásnak egy ER-formátumösszetevőt [tartalmazó](general-electronic-reporting.md#Configuration) ER-konfigurációt kell tartalmaznia.
 
 > [!NOTE]
 > Amikor új ER-formátumkonfigurációt hoz létre jelentések Word-formátumban való előállításához, vagy a **Word** formátumtípust kell kiválasztania a **Konfiguráció létrehozása** legördülő párbeszédpanelen, vagy üresen kell hagynia a **Formátumtípus** mezőt.

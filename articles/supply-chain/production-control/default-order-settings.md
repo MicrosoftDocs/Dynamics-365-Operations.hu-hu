@@ -1,30 +1,27 @@
 ---
 title: Alapértelmezett rendelési beállítások dimenziókhoz és termékváltozatokhoz
 description: Az alapértelmezett rendelési beállítások határozzák meg azt a helyet és raktárt, ahol a cikkek beszerzése és tárolása történik, illetve azt a minimális, maximális, többszörös és szokásos mennyiséget, amely felhasználásra kerül a kereskedéshez vagy a készletgazdálkodáshoz, valamint az átfutási időket, a leállító jelzőket és a rendelési ígéret módszerét.
-author: t-benebo
-manager: tfehr
+author: johanhoffmann
 ms.date: 09/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventItemOrderSetup, InventItemIdLookupByDefaultOrderSetting, EcoResProductReleasedStoppedAllChartPart, UnitTestPartitions
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 223084
 ms.assetid: fbfbcd7b-dc75-44ab-bffc-8bad576804a4
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: benebotg
+ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: c3aa800c1a996a062bcb737afa23f00a9e52bb48
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429811"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102763"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások
 
@@ -118,9 +115,9 @@ Bármely aktív termékdimenzióhoz vagy aktív cikkdimenziók kombinációjáho
 
 Tételezzük fel a következő termékpéldát:
 
-|                                                     |                                         |
+| Tétel                                                | Érték                                   |
 |-----------------------------------------------------|-----------------------------------------|
-| **Termék neve**                                    | Fotoelektromos érzékelő                    |
+| **Terméknév**                                    | Fotoelektromos érzékelő                    |
 | **Cikkszám**                                     | XW56                                    |
 | **Konfiguráció** (a fény típusának modellezéséhez használatos) | C1 látható piros fény, C2 infravörös fény |
 | **Verzió** | V1, V2, V3                              |
@@ -189,12 +186,9 @@ Megadhatja, hogy milyen szigorú legyen a rendszer a termékkel kapcsolatos **Al
 
 A szigorú ellenőrzés az **Alapértelmezett rendelési beállítások** lapjának **Beszerzési rendelés**, **Készlet** és **Értékesítési rendelés** gyorslapján megadott **Szokásos rendelési mennyiség** értékeire vonatkozik. Minden gyorslap saját **Több** beállítással rendelkezik, amely az adott gyorslaphoz megadott **Szokásos rendelési mennyiség** érték érvényesítésére szolgál.
 
-### <a name="enable-the-strict-validation-option"></a>A szigorú ellenőrzési beállítás engedélyezése
+### <a name="turn-the-strict-validation-option-on-or-off"></a>A szigorú ellenőrzési beállítás be- és kikapcsolása
 
-A szigorú ellenőrzési lehetőség használata előtt engedélyeznie kell a saját rendszerében. A rendszergazdák használhatják a [Funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) oldalt a funkció állapotának ellenőrzéséhez, és szükség esetén engedélyezéséhez. Itt a funkció a következőként szerepel:
-
-- **Modul** - *Termékinformáció-kezelés*
-- **Funkciónév** - *Szigorú ellenőrzés az alapértelmezett rendelési mennyiségeknél*
+A szigorú érvényesség-ellenőrzéshez *be kell kapcsolva lennie a rendszernek az alapértelmezett rendelési mennyiségek* szigorú ellenőrzése funkciónak. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, akkor ezt a funkciót a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)*funkcióval kapcsolhatja be és kapcsolhatja ki úgy,* hogy az alapértelmezett rendelési mennyiségek szigorú ellenőrzése funkciót keresi.
 
 ### <a name="set-the-validation-option"></a>Az ellenőrzési lehetőség beállítása
 
@@ -204,3 +198,6 @@ Az ellenőrzési lehetőség beállításához:
 1. Az **Általános** lapon állítsa az **Alapértelmezett rendelési mennyiségek ellenőrzése** lehetőséget a következő értékek valamelyikére:
     - **Szigorú** – Akkor válassza ezt a lehetőséget, ha azt szeretné, hogy az összes **Szokásos rendelési mennyiség** értékei a **Több** többszörösei legyenek minden egyes Gyorslapon (**Beszerzési rendelés**, **Készlet** és **Értékesítési rendelés**).
     - **Szokásos** – Akkor válassza ezt a lehetőséget, ha a szokásos ellenőrzést szeretné használni (amely ugyanúgy működik, mint amikor ez a funkció nincs engedélyezve).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

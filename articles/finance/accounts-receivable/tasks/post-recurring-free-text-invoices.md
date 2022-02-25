@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0389db98c00f8ad98a9cf919a21110c31206949199f06328782d25e9c415b315
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 3d30dd5ba29ee34784921047627642644c0c4ab2
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762163"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182479"
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Ismétlődő szabadszöveges számlák generálása és feladása
 
@@ -30,17 +30,17 @@ Az ismétlődő számlákkal rendszeresen számlákat állíthat ki a vevőknek 
 ## <a name="generate-recurring-invoices"></a>Ismétlődő számlák létrehozása
 
 ## <a name="post-recurring-invoices"></a>Ismétlődő számlák feladása
-1. Ugrás a Kinnlevőségek > Számlák > Ismétlődő számlák > Ismétlődő számlák feladása pontra.
+1. Az ismétlődő **számlák felad > az ismétlődő > számlákról > a Kinnlevőségek között**.
     * Ezen az oldalon megtekintheti és kinyomtathatja a létrehozott ismétlődő számlákat.  
 2. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * Válassza ki az ismétlődő számlacsoportot.  
-3. Kattintson az Összegek lehetőségre.
+3. Kattintson az **Összegre** lehetőségre.
     * Ellenőrizze az ismétlődő számlacsoportok összegeit.  
-4. Kattintson a Bezárás gombra.
-    * Az alábbi sorok mindegyike egy ismétlődő szabadszöveges számla. A szabadszöveges számla részleteinek megtekintéséhez válasszon ki egy sort, és kattintson a „Részletek” gombra.  
-5. Kattintson az Érvényesítés gombra.
+4. Kattintson a **Bezárás** gombra.
+    * Az alábbi sorok mindegyike egy ismétlődő szabadszöveges számla. Kijelölhet egy sort, és a Részletek **gombra** kattintva megtekintheti a szabadszöveges számla adatait.  
+5. Kattintson az **Érvényesítés** gombra.
     * Ellenőrizze, hogy a kiválasztott számlákban nincs hiba, de ne adja fel a számlákat.  
-6. Kattintson a Feladás lehetőségre.
+6. Kattintson a **Bejegyzés** lehetőségre.
     * Adja fel a kiválasztott számlákat.  
 
 

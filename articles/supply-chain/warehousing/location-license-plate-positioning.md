@@ -2,26 +2,23 @@
 title: Hely és azonosítótábla pozicionálása
 description: Az azonosítótábla elhelyezésével megtekintheti, hogy hol található az azonosítótábla egy több raklapos helyen, például olyan helyen, amely dupla mélységű raklapállványt használ.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlate, WHSLocationProfile, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 7b0ebfb965e5a8f1bfe1857a9642d998dac2faf3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: f87723ebd6684efba8464a7d64c7e1ea99f194eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429840"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102789"
 ---
 # <a name="location-license-plate-positioning"></a>Hely és azonosítótábla pozicionálása
 
@@ -33,12 +30,9 @@ A szolgáltatás sorozatszámot ad minden olyan azonosítótáblához, amely tá
 
 Ez a témakör azt mutatja be, hogyan lehet beállítani és használni a szolgáltatást.
 
-## <a name="turn-on-the-location-license-plate-positioning-feature"></a>A helyazonosító tábla elhelyezési funkciójának bekapcsolása
+## <a name="turn-the-location-license-plate-positioning-feature-on-or-off"></a>A Hely– tábla pozicioning funkció be- és kikapcsolása
 
-Az azonosítótábla-elhelyezés használata előtt a funkciót be kall kapcsolni a rendszerében. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
-
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Helyazonosító tábla elhelyezése*
+Az ebben a témakörben leírt funkciók használatához a rendszernek *be* kell kapcsolva lennie a Helytábla-pozicion lehetőségnek. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a Funkciókezelés munkaterületén keresi meg a Hely helytábla pozicionozási funkcióját.
 
 ## <a name="example-scenario"></a>Példaforgatókönyv
 
@@ -91,7 +85,7 @@ A funkciót minden olyan hely helyprofiljában be kell kapcsolni, ahol használa
 1. Miközben az **Azonosítótábla** továbbra is be van jelölve, válassza a **Táblaillesztés hozzáadása** lehetőséget.
 1. A megjelenő táblák listáján, a **Kapcsolat** oszlopban válassza ki a **Helyazonosító tábla elhelyezése (Azonosítótábla)** lehetőséget. Ezután válassza a **Kiválasztás** lehetőséget **Helyazonosító tábla elhelyezése** elem hozzáadásához a **Készletdimenziók** táblaillesztéshez.
 
-    ![Táblaillesztések](media/LpTableJoin.png "Táblaillesztések")
+    ![Táblaillesztések.](media/LpTableJoin.png "Táblaillesztések")
 
 1. Az **OK** lehetőséget kiválasztva erősítse meg a frissített összekapcsolt táblákat, és zárja be a lekérdezésszerkesztőt.
 1. A **Helyutasítások műveletei** gyorslapon válassza ismét a **Lekérdezés szerkesztése** lehetőséget a lekérdezésszerkesztő ismételt megnyitásához.
@@ -103,7 +97,7 @@ A funkciót minden olyan hely helyprofiljában be kell kapcsolni, ahol használa
     - **Mező:** *LP pozíció*
     - **Feltételek:** *1*
 
-    ![Új tartomány](media/LpPositionCriteria.png "Új tartomány")
+    ![Új tartomány.](media/LpPositionCriteria.png "Új tartomány")
 
 1. Az **OK** gombra kattintva erősítse meg a változtatásokat, és zárja be a lekérdezésszerkesztőt.
 
@@ -278,6 +272,9 @@ Most, hogy a *Helyazonosító tábla elhelyezése* funkció be van állítva, é
 1. A **Munkaazonosító/azonosítótábla azonosítójának beolvasása** oldalon válassza ki az **Azonosító** mezőt, majd adja meg az értékesítési sor munkaazonosítóját.
 1. Figyelje meg, hogy a kitárolási munka az *A0002* cikknek a *01A01R1S2B* helyről való kitárolására utasítja. Ez az utasítás akkor jelenik meg, ha az *A0002* cikk olyan azonosítótáblán van, amely az adott helyen az *1*. pozícióban szerepel.
 
-    ![1. pozíció helye](media/LocationLicensePlatePositioning.png "1. pozíció helye")
+    ![1. pozíció helye.](media/LocationLicensePlatePositioning.png "1. pozíció helye")
 
 1. Adja meg a helyhez létrehozott azonosítótábla-azonosítót, majd kövesse a figyelmeztetéseket az értékesítési rendelés kitárolásához.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

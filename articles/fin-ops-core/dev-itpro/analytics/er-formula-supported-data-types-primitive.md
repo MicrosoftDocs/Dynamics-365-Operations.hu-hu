@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72c372a4d9b6af337731ff0bbd750b3b58f27bb79cb3813a0b5e4f79707d9f5c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 96fdf33f4cc5f22015c00c57858bd438e6465764
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730607"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323640"
 ---
 # <a name="supported-primitive-data-types-for-electronic-reporting-formulas"></a>Támogatott egyszerű adattípusok az elektronikus jelentési képletekben
 
@@ -101,7 +101,7 @@ Az összehasonlítási [operátorok](er-formula-language.md#Operators) az egyetl
 
 ## <a name="enumeration"></a><a name="enumeration"></a>Felsorolás
 
-A *felsorolás* egyszerű adattípus szöveges konstansok listája. Az alkalmazás [forráskódja](../dev-ref/xpp-data-primitive.md#enum) által meghatározott felsorolásokat használhatja. A saját enumerációkat az ER [adatmodellben](general-electronic-reporting.md#data-model-and-model-mapping-components) és az ER [formátum](general-electronic-reporting.md#FormatComponentOutbound) összetevőkben is bevezetheti.
+A *felsorolás* egyszerű adattípus szöveges konstansok listája. Az alkalmazás [forráskódja](../dev-ref/xpp-data-primitive.md#enum) által meghatározott felsorolásokat használhatja. A saját enumerációkat az ER adatmodellben és az ER formátum összetevőkben is bevezetheti.
 
 Az alkalmazás *enumerációja* bármely ER modellleképezés és ER-formátum kifejezésében használható.
 

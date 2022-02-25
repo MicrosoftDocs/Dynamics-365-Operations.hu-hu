@@ -1,12 +1,10 @@
 ---
 title: Beszerzési szerződések
 description: A cikk beszerzési szerződésekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési szerződést olyan megállapodás, amely egy szevezetet arra kötelez, hogy több beszerzési rendelés használatával egy adott mennyiségnek vagy összegnek megfelelő terméket vásároljon. Ezen kötelezettségvállalás ellenében a vevő különleges árakat és engedményeket kaphat.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AgreementClassification, AgreementLine, AgreementLinePrompt, PurchAgreement, PurchAgreementCreate, PurchAgreementGenerateReleaseOrder, PurchAgreementHistory, PurchAgreementInvoiceJournal, PurchLine, AgreementLines
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11634
 ms.assetid: 8ac20adf-7412-4929-be8c-aaedf23a76ad
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9cd3c18129724cc67560aee7bf9fc0e5dcd2ebc3
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: d8084ebed80a509d543053867bb1f4d483b3f8eb
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017187"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103738"
 ---
 # <a name="purchase-agreements"></a>Beszerzési szerződések
 
@@ -43,10 +41,7 @@ Ha meg szeretné akadályozni a beszerzési szerződés felhasználását és me
 A beszerzési szerződés osztályozásában azonosíthatja az elsődleges és a másodlagos felelős dolgozót. Ezeket az értékeket az eredményül kapott beszerzési szerződés örökli. Nem kell a felelős dolgozókat hozzáadnia a beszerzési szerződéshez, és azokat közvetlenül, eseti alapon módosíthatja a beszerzési szerződésen. Nem adhat meg másodlagos felelős dolgozót elsődleges felelős dolgozó nélkül, de nem kell rendelkeznie másodlagos felelős dolgozóval. Nem adhatja meg ugyanazt a dolgozót, mint az elsődleges, mind a másodlagos felelős dolgozóként.
 
 > [!IMPORTANT]
-> A felelős fél funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
-> 
-> - **Modul:** *Beszerzés és forrás*
-> - **Funkció neve:** *Beszerzési szerződésért felelős fél*
+> A felelős fél szolgáltatás használatához be kell kapcsolva lennie a rendszerben. A 10.0.25-ös ellátásilánc-kezelésnek ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy kapcsolhatják *be* és kapcsolják ki ezt a funkciót, hogy a szolgáltatáskezelés munkaterületén a beszerzési szerződésért felelős fél szolgáltatását [keresi](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="commitment-types"></a>Kötelezettségtípusok
 A beszerzési szerződés minden sora egy-egy kötelezettségvállalás bizonyos vásárlásra. A kötelezettségvállalás kielégítésére több különböző beszerzési rendelés sorait is használhatja. A kötelezettségeknek négy típusa van:
@@ -104,12 +99,13 @@ Ha vállalatközi beszerzési rendelést hoz létre, amely az egyik jogi személ
 ## <a name="financial-dimensions-on-purchase-agreements"></a>Beszerzési szerződés pénzügyi dimenziói
 Pénzügyi dimenziókat átmásolhat beszerzési szerződések fejlécébe vagy egyedi soraiba is. Ha módosítja a dimenziókat a szerződés-fejlécben, vagy szerződéssorokban, akkor a módosítás nem lesz hatással egy kiadott rendelésre sem, de hatással lesz az új rendelésekre.
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
-[Beszerzési szerződés létrehozása](tasks/create-purchase-agreement.md)
-
-[Beszerzésirendelés-kiadás létrehozása beszerzési szerződésből](tasks/create-purchase-release-order-purchase-agreement.md)
+- [Beszerzési szerződés létrehozása](tasks/create-purchase-agreement.md)
+- [Beszerzési megállapodás alkalmazása beszerzési rendelés létrehozásakor](tasks/create-purchase-release-order-purchase-agreement.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

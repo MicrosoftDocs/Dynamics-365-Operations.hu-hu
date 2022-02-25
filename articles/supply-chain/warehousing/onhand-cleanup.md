@@ -2,11 +2,9 @@
 title: Raktárkezelés készleten lévő bejegyzéseinek karbantartási feladata
 description: Ez a témakör bemutatja az aktuális készlet bejegyzések karbantartási feladatát, amely a kapcsolódó, de szükségtelen rekordok azonosításával és törlésével segít a rendszer teljesítményének növelésében.
 author: perlynne
-manager: tfehr
 ms.date: 04/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm
 audience: Application User
@@ -14,15 +12,17 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-04-03
-ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: f045b9686bbdfcf3e82f5158f0fd28860354b7d7
-ms.sourcegitcommit: b6686265314499056690538eaa95ca51cff7c720
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.12
+ms.openlocfilehash: b2bdfb7fa0c9c4d9e1f630a41357dc405f0082bc
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5014483"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103863"
 ---
 # <a name="warehouse-management-on-hand-entries-cleanup-job"></a>Raktárkezelés készleten lévő bejegyzéseinek karbantartási feladata
+
+[!include [banner](../includes/banner.md)]
 
 Az aktuális készlet kiszámításához használt lekérdezések teljesítményére hatással van az érintett táblák rekordjainak száma. A teljesítmény javítása érdekében az egyik mód az, hogy csökkentse azoknak a rekordoknak a számát, amelyeket az adatbázisnak figyelembe kell vennie.
 
@@ -58,7 +58,7 @@ A karbantartási feladat által biztosított teljesítményjavulásnak azonban k
 
 ## <a name="make-the-maximum-execution-time-setting-available"></a><a name="max-execution-time"></a>A Maximális végrehajtási idő beállítás elérhetővé tétele
 
-Alapértelmezésben a **Maximális végrehajtási idő** beállítás nem érhető el. Ha használni szeretné, akkor a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) használatával be kell kapcsolnia a kapcsolódó funkciót a rendszerében. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+A **maximális végrehajtási idő** beállítása csak *akkor érhető el, ha be van kapcsolva a maximális végrehajtási idő a raktárkezelésben az elérhető tételek tisztítási feladatára*. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy *kapcsolhatják*[be](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és kapcsolják ki ezt a funkciót, hogy a Szolgáltatáskezelési munkaterületen keresi meg a maximális végrehajtási időt a raktárkezelésben lévő tételek törlése funkciónál.
 
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Raktárkezelés készleten lévő bejegyzései karbantartási feladatának maximális végrehajtási ideje*
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

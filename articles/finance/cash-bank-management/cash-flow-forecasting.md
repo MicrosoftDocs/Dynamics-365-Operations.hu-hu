@@ -1,31 +1,29 @@
 ---
 title: Pénzforgalmi előrejelzés
 description: Ez a témakör a pénzforgalmi előrejelzések folyamatáról nyújt áttekintést. Azt is elmagyarázza, hogy miként integrálódnak a pénzforgalm előrejelzések a rendszer más moduljaival.
-author: saraschi2
-manager: AnnBe
-ms.date: 08/03/2020
+author: panolte
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCovParameters
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 64d33212600a75900febbd6ec308e4bf5d4f16b7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
-ms.translationtype: HT
+ms.openlocfilehash: 5a46946ff2c3569dab0ce8b53b3cddcf18318cbf
+ms.sourcegitcommit: 465c84eb5cdc211692e2ae09b45d1400f9a315ee
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645769"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8314720"
 ---
 # <a name="cash-flow-forecasting"></a>Pénzforgalmi előrejelzés
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A készpénzforgalom-előrejelzési eszközökkel elemezheti a közelgő pénzforgalmi és devizakövetelményeket, és így megbecsülheti a vállalat jövőbeli készpénzigényét. A készpénzforgalom előrejelzésének lekéréséhez a következő feladatokat kell végrehajtania:
 
@@ -39,6 +37,7 @@ Miután végrehajtotta ezeket a feladatokat, kiszámíthatja és elemezheti a k�
 A pénzforgalmi jelentések integrálhatók a főkönyvvel, a kötelezettségekkel, a kintlevőségekkel, a költségvetéssel és a készletkezeléssel. Az előrejelzési folyamat a rendszerbe bevitt tranzakciós információkat használja, és a számítási folyamat előrejelzi az egyes tranzakciók várható pénzforgalmi hatását. A következő tranzakciótípusokat veszi figyelembe a rendszer a készpénzforgalom kiszámítása során:
 
 - **Értékesítési rendelések** – A még nem számlázott értékesítési rendelések, valamint a fizikai vagy pénzügyi teljesítésű értékesítések.
+- **Szabadszöveges számlák** – azok a szabadszöveges számlák, amelyek még nincsenek feladva, és amelyek pénzügyi értékesítést eredményeznek. 
 - **Beszerzési rendelések** – A még nem számlázott beszerzési rendelések, valamint a fizikai vagy pénzügyi teljesítésű beszerzések.
 - **Kinnlevőségek** – Nyitott vevői tranzakciók (eddig kifizetetlen számlák).
 - **Kötelezettségek** – Nyitott szállítói tranzakciók (eddig kifizetetlen számlák).
@@ -46,8 +45,9 @@ A pénzforgalmi jelentések integrálhatók a főkönyvvel, a kötelezettségekk
 - **Költségvetési tételjegyzék-bejegyzések** – Olyan költségvetési tételjegyzék-bejegyzések, amelyek ki lettek választva a pénzforgalmi előrejelzésekhez.
 - **Igény-előrejelzések** – A készlet-előrejelzési modell azon sorai, amelyek ki lettek választva a készpénzforgalmi előrejelzésekhez.
 - **Ellátási előrejelzések** – A készlet-előrejelzési modell azon sorai, amelyek ki lettek választva a készpénzforgalmi előrejelzésekhez.
-
-Bár nincs közvetlen integráció a projektmenedzseléssel és a könyveléssel, a projekttranzakciók többféleképpen is szerepelhetnek a pénzforgalmi előrejelzésben. A feladott projektszámlákat az előrejelzés tartalmazza a nyitott vevői tranzakciók részeként. A projekt által kezdeményezett értékesítési rendelések és beszerzési rendelések az előrejelzésben nyitott rendelésként szerepelnek a rendszerbe való beírásuk után. Projektelőrejelzéseket át is lehet vinni egy főkönyvi költségvetésmodellbe. Ez a főkönyvi költségvetési modell a költségvetési nyilvántartási bejegyzések részeként szerepel a pénzforgalmi előrejelzésben.
+- **Külső adatforrás** – a pénzforgalmi előrejelzésekbe táblázatsablonokkal bevitt vagy importált külső adatok.
+- **Projekt-előrejelzések** – Projektvezetés és könyvelés előrejelzések az előrejelzési modell használatával.
+- **Pénzforgalom - adóhatósági kifizetések** – előre jelzett adóhatósági kifizetési összegek és időzítés, amelyek pénzügyi kifizetéseket eredményeznek. A pénzforgalmi adóhatósági kifizetések engedélyezése
 
 ## <a name="configuration"></a>Konfiguráció
 
@@ -87,16 +87,36 @@ Felülírhatja a **Likviditási számla** mező értékét az adott vevői felad
 
 ### <a name="budgeting"></a>Költségvetés készítése
 
-A pénzforgalmi előrejelzésekben költségvetési modellekből készített költségvetéseket is szerepeltethet. A **Pénzforgalmi előrejelzés beállítása** oldalon, a **Főkönyv** lapon, válassza ki azokat a fő számlákat, melyeket szerepeltetni kíván az előrejelzésben. Alapértelmezés szerint az új költségkeret-bejegyzések szerepelnek az előrejelzésekben, miután a költségvetési modellt bekapcsolta a pénzforgalmi előrejelzéseknél. A pénzforgalmi előrejelzésbe való bekerülés felülírható az egyes költségvetési tételjegyzék-bejegyzéseken.
+A pénzforgalmi előrejelzésekben költségvetési modellekből készített költségvetéseket is szerepeltethet. A **Pénzforgalmi előrejelzés beállítása** oldalon, a **Költségvetés-készítés** lapon, válassza ki azokat a fő számlákat, melyeket szerepeltetni kíván az előrejelzésben. Alapértelmezés szerint az új költségkeret-bejegyzések szerepelnek az előrejelzésekben, miután a költségvetési modellt bekapcsolta a pénzforgalmi előrejelzéseknél.
+
+A költségvetési tételjegyzék-rekordok személyre szabás révén, külön-külön is szerepeltetheti a pénzforgalmi előrejelzésben. Amikor hozzáadja a "Felvétel a pénzforgalmi előrejelzésekbe" oszlopot a **Költségvetési tételjegyzék-bejegyzés** laphoz, a rendszer felülírja a **Pénzforgalmi előrejelzés beállítása** lapon található beállításokat, hogy az előrejelzésben egy különálló költségvetési tételjegyzék-bejegyzés szerepeljen.
+
 
 ### <a name="inventory-management"></a>Készletgazdálkodás
 
 A készletkínálati és -keresleti előrejelzések szerepeltethetők a pénzforgalmi előrejelzésekben. A **Pénzforgalmi előrejelzés beállítása** oldalon, a **Készletgazdálkodás** lapon, válassza ki azt az előrejelzési modellt, amelyet szerepeltetni kíván a pénzforgalmi előrejelzésben. A pénzforgalmi előrejelzésbe való bekerülés felülírható az egyes kínálati és keresleti előrejelzési soroknál.
 
 ### <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>A Pénzforgalmi előrejelzés dimenzióinak beállítása
-A **Pénzforgalmi előrejelzés beállítása** lap egy új lapján beállíthatja, hogy milyen pénzügyi dimenziókat kell használni a **Pénzforgalmi előrejelzés** munkaterületen végzett szűréshez. Ez a lap csak akkor jelenik meg, ha engedélyezve van a Pénzforgalmi előrejelzések funkció. 
+A **Cash folyamat** előrejelzési beállításának új lapja segítségével lehet szabályozni, hogy mely pénzügyi dimenziókat használja a rendszer a **Cash folyamat**  előrejelzési munkaterében szűrésre. Ez a lap csak akkor jelenik meg, ha engedélyezve van a Pénzforgalmi előrejelzések funkció.
 
 A **Dimenziók** fülön válassza ki a szűréshez használni kívánt dimenziók listáját, és a nyilakkal helyezze át őket a jobb oldali oszlopba. A pénzforgalmi előrejelzések adatainak szűréséhez csak két dimenzió választható ki. 
+
+### <a name="setting-up-external-source"></a>Külső forrás beállítása
+A pénzügyi információk konfigurálása után a külső adatok beírhatók vagy importálhatók a pénzforgalmi előrejelzésekbe. A külső adatok bevitele vagy importálása előtt be kell állítani a külső adatforrásokat. A Külső forrás **lapon** állítsa be a külső pénzforgalmi kategóriákat. A kategória lehet kimenő **vagy** bejövő **·**. **Feladási** típusként a likviditást kell kiválasztani. A Jogi személyek **beállításai rácsban** válassza ki a jogi személyeket és a megfelelő fő számlákat, amelyekre a külső pénzforgalmi kategóriák vonatkoznak.
+
+További információ a pénzforgalmi előrejelzések [külső adatainál található](../../finance/finance-insights/external-data-in-cash-flow.md). 
+
+### <a name="project-management-and-accounting"></a>Projektvezetés és könyvelés
+
+A 10.0.17-es verzióban egy új funkció lehetővé teszi az integrációt a Projektvezetés és könyveléssel és a cash flow előrejelzéssel. A **Funkciókezelés** munkaterületen kapcsolja be a **Pénzforgalmi projektelőrejelzés** funkciót, amely tartalmazza az előre jelzett költségeket és bevételeket a pénzforgalmi előrejelzésben. A **Pénzforgalmi előrejelzés beállítása** lapon a **Projektvezetés és könyvelés** oldalon válassza ki azokat a projekttípusokat és tranzakciótípusokat, amelyeknek szerepelniük kell a pénzforgalmi előrejelzésben. Ezután válassza ki a projekt-előrejelzési modellt. A csökkentési típusú almodell működik a legjobban. AKövetelések beállításában megadott likviditási számlákat kell alapértelmezett likviditási számlákként használni. Ezért a pénzforgalmi előrejelzés beállításakor nem kell alapértelmezett likviditási számlákat megadnia. Költségvetési modell is használható, de csak egy típus választható ki a Projektkezelés és -könyvelés **Pénzforgalmi előrejelzés beállítása** lapján. Az előrejelzési modell nyújtja a legnagyobb rugalmasságot a Projektvezetés és könyvelés, illetve a Project Operations használata esetén.
+
+Miután a Pénzforgalmi projektelőrejelzé funkció be van kapcsolva, a pénzforgalmi előrejelzés megtekinthető minden projekthez a **Minden projekt** oldalon. A Művelet panelen a **Tervezés** lapon, az **Előrejelzés** csoportban, kattintson a **Pénzforgalmi előrejelzés** elemre. A **Pénzforgalmi áttekintés** munkaterületeken (lásd a [Jelentés](#reporting) szakaszt később ebben a témakörben), a Projekt előrejelzés tranzakciótípus mutatja a beáramlások (projekt előrejelzett bevétele) és a kiáramlásokat (projekt előrejelzett költségei). Az összegek csak akkor szerepeltethetők, ha a **Projektfázis** mező a **Pénzforgalmi áttekintés** munkaterületeken **Feldolgozás alatt** értékre van állítva.
+
+A projekttranzakciók továbbra is többféleképpen szerepelnek a pénzforgalmi előrejelzésben, függetlenül attól, hogy be van-e kapcsolva a **Pénzforgalmi projektelőrejelzés** funkció. A feladott projektszámlákat az előrejelzés tartalmazza a nyitott vevői tranzakciók részeként. A projekt által kezdeményezett értékesítési rendelések és beszerzési rendelések az előrejelzésben nyitott rendelésként szerepelnek a rendszerbe való beírásuk után. Projektelőrejelzéseket át is lehet vinni egy főkönyvi költségvetésmodellbe. Ez a főkönyvi költségvetési modell a költségvetési nyilvántartási bejegyzések részeként szerepel a pénzforgalmi előrejelzésben. Ha bekapcsolta a **Pénzforgalmi projekt előrejelzés** funkciót, ne vigye át a projekt-előrejelzéseket főkönyvi költségvetési modellbe, mert ez a művelet a projekt-előrejelzések kétszeri számítását fogja okozni.
+
+### <a name="sales-tax-authority-payments"></a>Adóhatóság kifizetése 
+
+A pénzforgalmi adóhatóság kifizetései szolgáltatás előrejelzése az áfakifizetések pénzforgalomra gyakorolt hatásával kapcsolatban. Kifizetetlen áfatranzakciókat, adókifizetési időszakokat és adózási időszak fizetési feltételeket használ a pénzforgalmi kifizetések dátumának és összegének előrejelzésére. 
 
 ### <a name="calculation"></a>Számítás
 
@@ -140,7 +160,7 @@ Megtekintheti a pénzforgalmi előrejelzések elemzéseit a rendszer pénzneméb
 
 Megtekintheti a pénzforgalmi előrejelzések elemzéseit a vállalat által meghatározott pénznemben a **Készpénzáttekintés – jelenlegi vállalat** munkaterületen. Az elemzésekhez használt könyvelési pénznem meghatározása a **Főkönyv** oldalon történik. Ez a munkaterület áttekintést nyújt a pénzforgalmi előrejelzésről és a bankszámla-egyenlegekről a jelenlegi vállalat vonatkozásában. A készpénzbeáramlás és -kiáramlás áttekintése áttekintést nyújt a jövőbeli pénzmozgásokról és egyenlegekről a könyvelés pénznemében, valamint részletes információkat tartalmaz az előrejelzett tranzakciókra vonatkozóan. Az előrejelzett pénznem egyenlegeit is megjelenítheti.
 
-Ha további információt szeretne a pénzforgalmi előrejelzések elemzéséről, tekintse meg a [Készpénzáttekintés Power BI tartalom](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-overview-power-bi-content) témakört.
+Ha további információt szeretne a pénzforgalmi előrejelzések elemzéséről, lásd: [Készpénzáttekintés Power BI tartalom](Cash-Overview-Power-BI-content.md).
 
 Ezenkívül a következő oldalakon megtekintheti a pénzforgalmi előrejelzési adatokat az adott fiókokhoz, rendelésekhez és cikkekhez:
 
@@ -150,3 +170,6 @@ Ezenkívül a következő oldalakon megtekintheti a pénzforgalmi előrejelzési
 - **Ellátási előrejelzés**: A **Pénzforgalmi előrejelzések** lehetőségre kattintva megtekintheti a kiválasztott cikk ellátási előrejelzéséhez társított jövőbeni pénzforgalmait.
 - **Igény-előrejelzés**: A **Pénzforgalmi előrejelzések** lehetőségre kattintva megtekintheti a kiválasztott cikk igény-előrejelzéséhez társított jövőbeni pénzforgalmait.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

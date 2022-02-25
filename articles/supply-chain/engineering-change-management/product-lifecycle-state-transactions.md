@@ -2,26 +2,23 @@
 title: A termék életciklusának állapotai és tranzakciói
 description: Ez a témakör bemutatja, hogy ahogy egy mérnöki termék végighalad az életciklusán, hogyan tudja szabályozni, hogy az egyes életciklus-állapotokhoz melyik tranzakciók engedélyezettek.
 author: t-benebo
-manager: tfehr
-ms.date: 09/28/2020
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgEcoResProductLifecycleStateChange
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 69ee39479424c1b629388c18e8bfefd023036d22
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
+ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429970"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8322744"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>A termék életciklusának állapotai és tranzakciói
 
@@ -76,3 +73,33 @@ A következő mezők érhetők el az **Engedélyezett üzleti folyamatok** gyors
 | Házirend | Válasszon az alábbi értékek közül annak szabályozásához, hogy az aktuális folyamat engedélyezve legyen-e az ilyen életciklus-állapotú termékek esetében, és ha igen, hogyan:<ul><li>**Engedélyezett** – Az üzleti folyamat engedélyezett.</li><li>**Tiltott** – A folyamat nem engedélyezett. Ha egy felhasználó ilyen életciklus-állapotú terméken próbálja használni a folyamatot, a rendszer blokkolja a kísérletet, és helyette hibaüzenetet jelenít meg. Előfordulhat például, hogy letiltja az életciklus végén járó termékek vásárlását.</li><li>**Figyelmeztetéssel engedélyezve** – A folyamat engedélyezett, de figyelmeztetés jelenik meg. Előfordulhat például, hogy egy prototípus terméket szeretne elhelyezni egy termelési rendelésre, amelyet a Kutatási és Fejlesztési részleg hoz létre. Más szervezeti egységeknek azonban tisztában kell lenniük azzal, hogy még nem termelhetik a terméket.</li></ul> |
 
 Ha további életciklusállapot-szabályokat ad hozzá testreszabásként, ezeket a szabályokat a felhasználói felületen (UI) tekintheti meg, ha a felső ablaktáblában a **Folyamatok frissítése** lehetőséget választja. A **Folyamatok frissítése** gomb csak rendszergazdák számára érhető el.
+
+## <a name="lifecycle-states-for-released-products-and-product-variants"></a>A kiadott termékek és termékváltozatok életciklus-állapotai
+
+Egy olyan termék esetében, amelynek változatai (alaptermék és változatai) vannak, a termék (alaptermék) életciklus-állapottal rendelkezik, és mindegyik változat eltérő életciklus-állapotú lehet.
+
+Bizonyos folyamatok esetében, ha a változat vagy a termék blokkolva van, akkor a folyamat is blokkolva lesz. Pontosabban annak meghatározására, hogy egy folyamat blokkolva van-e, a rendszer a következő ellenőrzéseket hajtja végre:
+
+- Mérnöki vezérlésű termékek esetében:
+  - Ha az aktuális mérnöki verzió blokkolva van, akkor blokkolja a folyamatot.
+  - Ha a változat blokkolva van, akkor blokkolja a folyamatot.
+  - Ha a kiadott termék blokkolva van, akkor blokkolja a folyamatot.
+- Standard termékek esetében:
+  - Ha a változat blokkolva van, akkor blokkolja a folyamatot.
+  - Ha a kiadott termék blokkolva van, akkor blokkolja a folyamatot.
+
+Tegyük fel például, hogy csak egy adott termék (póló) egy változatát (pirosát) szeretné eladni, és egyelőre blokkolni szeretné az összes többi változat értékesítését. Ezt a következő beállítással valósíthatja meg:
+
+- Rendelje hozzá a terméket egy életciklus-állapothoz, amely lehetővé teszi a folyamatot. Például rendelje hozzá a pólóterméket az *Értékesíthető* életciklus-állapothoz, amely lehetővé teszi az *Értékesítési rendelés* üzleti folyamatot.
+- Rendelje hozzá az értékesíthető változatot egy életciklus-állapothoz, amely lehetővé teszi a folyamatot. Például rendelje hozzá a piros változatot is az *Értékesíthető* életciklus állapothoz.
+- Az összes többi változathoz egy másik életciklus-állapotot kell hozzárendelni, ahol a folyamat blokkolva van. Például rendelje hozzá a fehér változatot (és az összes többi változatot) a *Nem értékesíthető* életciklus állapothoz, ami blokkolja az *Értékesítési rendelés* üzleti folyamatát.
+
+## <a name="default-product-lifecycle-states"></a>A termékek életciklusának alapértelmezett állama
+
+A műszaki verziók alapértelmezett életciklus-állapotát a műszaki kategória adja meg. Új mérnöki verzió létrehozása esetén az állam lesz az alapérték, az új termék első verziójával együtt.
+
+Új termék vagy mérnöki termék létrehozása esetén az alapértelmezett életciklusállapotot is be lehet állítani, ha a sablonban megadhatja a termékhez rendelt kiadási irányelvből kiadott terméket.
+
+Ebben az esetben új mérnöki termék létrehozása esetén a termék életciklusa a verziótól eltérő állapotban lehet.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

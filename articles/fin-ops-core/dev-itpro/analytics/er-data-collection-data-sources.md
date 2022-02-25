@@ -15,20 +15,20 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: AX 10.0.16
-ms.openlocfilehash: f001734baf9aee59f0a61d21ca5a99af0c55b56f
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
-ms.translationtype: HT
+ms.openlocfilehash: 185fb9a33cb4cc655dfdf640b4c239d617426c64
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413598"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323901"
 ---
 # <a name="use-data-collection-data-sources-in-electronic-reporting-formats"></a>Adatgyűjtési adatforrások használata elektronikus jelentési formátumokban
 
 [!include [banner](../includes/banner.md)]
 
-Az [Elektronikus jelentéskészítés (ER)](general-electronic-reporting.md) keretrendszer Műveletek tervezője segítségével konfigurálhatja az ER-megoldás [formátumkomponensét](general-electronic-reporting.md#FormatComponentOutbound), amelyet különböző formátumú kimenő dokumentumok generálására használnak. A konfigurált formátumkomponens hierarchikus szerkezete különböző típusú formátumelemekből áll. Ezek a formátumelemek a létrejövő dokumentumok kitöltéséhez használhatók a szükséges információval, futásidőben. Alapértelmezés szerint egy ER-formátum futtatásakor a formátumelemek ugyanabban a sorrendben futnak le, ahogyan a formátumhierarchiában szerepelnek: egyenként, felülről lefelé.
+Az Elektronikus jelentéskészítési [(ER)](general-electronic-reporting.md) keretrendszer Művelettervezője segítségével konfigurálhatja egy ER-megoldás formátumösszetevőjét, amely a kimenő dokumentumok különböző formátumokban történő előállítására használható. A konfigurált formátumkomponens hierarchikus szerkezete különböző típusú formátumelemekből áll. Ezek a formátumelemek a létrejövő dokumentumok kitöltéséhez használhatók a szükséges információval, futásidőben. Alapértelmezés szerint egy ER-formátum futtatásakor a formátumelemek ugyanabban a sorrendben futnak le, ahogyan a formátumhierarchiában szerepelnek: egyenként, felülről lefelé.
 
-Amikor az ER egy kötést tartalmazó formátumelemet futtat, a kötés képlete fut le, és a formátumelem hozzáadja az értéket a generált dokumentumhoz. A kötés például átadhatja egy [adatmodell-mező](general-electronic-reporting.md#data-model-and-model-mapping-components) értékét egy formátumelemnek. A DATA COLLECTION adatforrást úgy konfigurálhatja, hogy futásidőben összegyűjtse az adatmodell mezőinek értékeit, értékösszegzést végezzen, és egy generált dokumentumot töltsön fel az összegyűjtött értékekkel. Ha ezt a megközelítést szeretné használni, módosítsa a kezdeti kötést úgy, hogy a konfigurált DATA COLLECTION adatforrást használja az adatmodell mező értékének átadására egy formátumelemhez. Az értékek DATA COLLECTION adatforráson keresztül történő továbbításával összegyűjtheti a szükséges adatokat a további felhasználás céljából.
+Amikor az ER egy kötést tartalmazó formátumelemet futtat, a kötés képlete fut le, és a formátumelem hozzáadja az értéket a generált dokumentumhoz. A kötés például átadhatja egy adatmodell-mező értékét egy formátumelemnek. A DATA COLLECTION adatforrást úgy konfigurálhatja, hogy futásidőben összegyűjtse az adatmodell mezőinek értékeit, értékösszegzést végezzen, és egy generált dokumentumot töltsön fel az összegyűjtött értékekkel. Ha ezt a megközelítést szeretné használni, módosítsa a kezdeti kötést úgy, hogy a konfigurált DATA COLLECTION adatforrást használja az adatmodell mező értékének átadására egy formátumelemhez. Az értékek DATA COLLECTION adatforráson keresztül történő továbbításával összegyűjtheti a szükséges adatokat a további felhasználás céljából.
 
 A DATA COLLECTION adatforrás konfigurálásakor adja meg az adatforrásban kezelendő értéktípust. Az értékek gyűjtéséhez jelenleg a következő [adattípusok](er-formula-supported-data-types-primitive.md) támogatottak:
 

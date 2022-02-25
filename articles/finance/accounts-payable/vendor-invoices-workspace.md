@@ -2,24 +2,24 @@
 title: Szállítói számla automatizálási munkaterülete
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a szállítói számlákkal kapcsolatos munkaterületet, valamint bemutatja a Microsoft Power BI szolgáltatáson keresztül elérhető adatokat.
 author: abruer
-ms.date: 09/28/2020
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: dde77a19fae9af8f40af8b14259a29db80f4a80cf8be75233a463d6fec2dac46
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722719"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182579"
 ---
 # <a name="vendor-invoice-automation-workspace"></a>Szállítói számla automatizálási munkaterülete
 
@@ -60,14 +60,14 @@ Amikor a **Szállítói számla automatizálása** funkciót bekapcsolta, a munk
 
 A **Saját munka** nézet **Függőben levő számlák összegzése** mozaikja áttekintést ad a szállítói számlák állapotáról. Láthatók a még fel nem adott naplók és a várakoztatott számlák. Ezenkívül az alábbi négy csempe tartozik a Szállítói számla automatizálása funkcióhoz:
 
-- Manuális bevételezés egyeztetése szükséges
-- Egyeztetés ellenőrzése sikertelen
-- A munkafolyamatba nem beküldött számlák
-- Nem importált számlák
+- **Manuális bevételezés egyeztetése szükséges**
+- **Egyeztetés ellenőrzése sikertelen**
+- **A munkafolyamatba nem beküldött számlák**
+- **Nem importált számlák**
 
-(A négy csempe meglétéhez a Szállítói számla automatizálása funkciót be kell kapcsolni a Funkciókezelés részben.)
+(Ehhez a négy kötelező funkcióhoz be kell kapcsolva lennie a Szállítói számla automatizálása funkciónak. **Funkciókezelés**.)
 
-A **Szállítói számlák helyreállítása** lap használatához a funkciót be kell kapcsolni a Kötelezettségek paraméterei részben. Nyissa meg a **Kötelezettségek \> Kötelezettségek paraméterei** részt, majd a **Számla** lapon állítsa a **Szállítói számla helyreállításának engedélyezése** beállítást **Igen** értékre.
+A Szállítói számlák **helyreállítása** csempe használatához be kell állítani a funkciót a **Kötelezettségek paraméterei között**. Nyissa meg a **Kötelezettségek \> Kötelezettségek paraméterei** részt, majd a **Számla** lapon állítsa a **Szállítói számla helyreállításának engedélyezése** beállítást **Igen** értékre.
 
 Amikor a funkció be van kapcsolva, a munkaterületen három csempe együtt szerepel a munkaterület **Naplók** nevű szakaszában. A csempék címei: **Naplók**, **Naplók – Hozzám rendelve** és **Számlagyűjtő**. 
 

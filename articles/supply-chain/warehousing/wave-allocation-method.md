@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 541e6c42ae1fa7d803b5becc1b52e34860777594
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: 527bd24d7f2e9a05f6e617c222005186520f9968
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920598"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103788"
 ---
 # <a name="wave-allocation"></a>Hullámfelosztás
 
@@ -67,7 +67,7 @@ Párhuzamos feldolgozás beállítása:
 
 ## <a name="enable-or-disable-parallelization-across-all-legal-entities"></a>Párhuzamosítás engedélyezése vagy letiltása az összes jogi személy esetén
 
-Azt javasoljuk, hogy állítsa be az `allocateWave` módszert, hogy párhuzamosan fusson az összes jogi személy között, mert ez segít a hullámfeldolgozás teljesítményének javításában. A Supply Chain Management 10.0.17-es verizójától kezdve a *Hullámpárhuzamosítás a Hullámfelosztás metódushoz* funkció apértelmezetten engedélyezve van az új és frissített telepítésekhez, és később nem kapcsolható ki. A funkció engedélyezése után a következő történik:
+Azt javasoljuk, hogy állítsa be az `allocateWave` módszert, hogy párhuzamosan fusson az összes jogi személy között, mert ez segít a hullámfeldolgozás teljesítményének javításában. Az Ellátásilánc-kezelés 10.0.17-es *verziójától* kezdve a Hullám felosztása metódus hullám-párhuzamosítás funkció alapértelmezés szerint minden új és frissített telepítésnél be van kapcsolva, és nem lehet újra kikapcsolni. A funkció engedélyezése után a következő történik:
 
 - Az `allocateWave` metódus frissül, és ezután szerepel benne a feladatkonfiguráció beállítása, amellyel használhatja a **Hullámfeldolgozási metódus** oldalát arra, hogy meghatározza az egyszerre futtatni kívánt feladatok száma, a párhuzamos folyamatok számával egyenlő. Ennek eredményeképp a hullámfelosztási lépésre felhasznált idő (ami általában a teljes feldolgozási idő 30–60%-a), nagyjából a feladatok számával egyenlő mennyiséggel csökken. Azt is kiválaszthatja, hogy melyik köteg lesz hozzárendelve a feladatok feldolgozásához. Fontos megjegyezni, hogy az összes jogi személy úgy lesz konfigurálva, hogy a hullámokat kötegben dolgozza fel. Az olyan raktáraknál, amelyeknél már konfigurálva van a hullámok kötegelt feldolgozása, és az olyan raktáraknál, ahol az `allocateWave` metódus párhuzamos használata van konfigurálva, a rendszer megtartja a meglévő konfigurációt.
 - Alapértelmezés szerint az összes új jogi személy úgy van konfigurálva, hogy a hullámokat kötegben dolgozza fel. Minden új raktár esetén, ahol a **Raktárkezelési folyamatok** beállítás engedélyezve van, az `allocateWave` alapértelmezés szerint párhuzamos futtatásra lesz konfigurálva.

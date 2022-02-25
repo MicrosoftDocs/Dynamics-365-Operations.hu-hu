@@ -2,27 +2,24 @@
 title: EU értékesítési lista jelentése
 description: Ez a cikk az Európai Uniós (EU) értékesítési listáiról nyújt tájékoztatást.
 author: EvgenyPopovMBS
-manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EUSalesList
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 12811
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 68cbd8d3495f8c10c57fa0751fabb03a6946c7dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: af49817667999dd02a96a7a9bd5bb966be652d35
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408034"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323476"
 ---
 # <a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentés
 
@@ -30,8 +27,7 @@ ms.locfileid: "4408034"
 
 Ez a cikk az Európai Uniós (EU) értékesítési listáiról nyújt tájékoztatást.
 
-<a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentése
------------------------
+## <a name="eu-sales-list-reporting"></a>EU értékesítési lista jelentése
 
 A szállítónak, aki Közösségen belül biztosít terméket vagy szolgáltatásokat olyan cégeknek, amiket az Európai Unióban (EU) hoztak létre, kötelessége benyújtani egy Közösségen belüli termék kiszállításáról szóló nyilatkozatot (EU értékesítési lista vagy ESL). Általában az ESL-t ben kell nyújtani az adóhatóságoknak, legkésőbb az ESL-t lefedő naptári időszakot követő hónap utolsó napjáig. A szállítónak fel kell tüntetnie az ESL-ben az általános forgalmi adó (áfa) azonosító számát és ügyfelenként külön az alábbi információkat:
 
@@ -72,13 +68,19 @@ Az alábbi táblázat bemutatja a munka megkezdése előtt biztosítandó előfe
 <td>Állítsa be az adómentesség azonosítási paramétereit az <strong>Országos/területi paraméterek</strong> lapon (kattintson az <strong>Adó</strong> &gt; <strong>Beállítások</strong> &gt; <strong>Áfa</strong> &gt; <strong>Országos/területi paraméterek</strong> elemre). Minden külön országban/régióban tartózkodó ügyfélhez hozzon létre egy rekordot az oldalon, és adja meg a következő információkkal:
 <ul>
 <li><strong>Ország/régió</strong> – Válasszon ki egy országot/területet egy adómentességi azonosítóval.</li>
-<li><strong>Forgalmi adó</strong> – Adja meg a kiválasztott ország/régió adómentességi azonosító számát (az adómentességi szám előtagja).</li>
+<li><strong>Áfa </strong> – adja meg a kiválasztott ország/régió adómentességi azonosító számát (azaz az áfaszámot vagy az adómentességi szám előtagját).</li>
 <li><strong>Adómentességi szám ellenőrzése</strong> –Jelölje be ezt a jelölőnégyzetet a kiválasztott ország/régió adómentességi azonosítójának ellenőrzéséhez.</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Beállítás: </strong>Adómentességi számok</td>
-<td>Hozzon létre adómentességi számokat az ügyfeleinek az <strong>Adómentességi számok</strong> lapon (kattintson az <strong>Adó</strong> &gt; <strong>Beállítás</strong> &gt; <strong>Áfa</strong> &gt; <strong>Adómentességi számok</strong> elemre). Minden egyes adómentességi számhoz hozzon létre egy rekordot az oldalon, és adja meg a következő adatokat:
+<td><strong>Beállítás:</strong> Áfaregisztrációs számok</td>
+<td>Hozzon létre áfaregisztrációs számokat az Ellenoldalakhoz az Összes vevő lapon (<strong>ugrás: Értékesítés és marketing</strong><strong></strong>&gt;<strong></strong>&gt; - Vevők: Minden vevő, válasszon ki egy vevőrekordot, majd válassza <strong></strong><strong></strong>&gt; ki a Vevők regisztrációs azonosítóit) vagy <strong>a Szállítók</strong> lapot (<strong></strong><strong></strong>&gt;<strong></strong>&gt; kattintson a Beszerzés és forrás szállítók lapra, válasszon ki egy szállítórekordot,<strong></strong><strong></strong> majd válassza ki a Szállítókat.&gt;<strong>Regisztrációs adatok</strong>). Hozzon <strong>létre egy</strong><strong></strong> rekordot a Regisztrációs azonosító gyorslap Általános lapján, és adja meg a következő adatokat:
+<ul>
+<li><strong>Regisztráció típusa</strong> – válassza ki a megfelelő <strong></strong> országához/régiójához tartozó áfaazonosító-regisztrációs kategóriához rendelt regisztrációtípust.</li>
+<li><strong>Regisztrációs szám</strong> – a megfelelő áfaregisztrációs számának beírása.</li>
+<li><strong>Hatályos</strong> – válassza ki az áfaregisztrációs szám használati időszakának kezdő beállítását.</li>
+</ul>  
+Azt is be lehet állítva, hogy az <strong>Adószámok lapon létrehozhatja a megfelelő felek áfaregisztrációs számát (</strong><strong></strong>&gt;<strong></strong>&gt;<strong></strong>&gt; kattintson az Adóbeállítás – Áfaszámok pontra).<strong></strong> Minden egyes adómentességi számhoz hozzon létre egy rekordot az oldalon, és adja meg a következő adatokat:
 <ul>
 <li><strong>Ország/régió </strong>– Válassza ki az ügyfél adónyilvántartásának országát/régióját.</li>
 <li><strong>Adómentességi szám</strong> – Adja meg az ügyfél adómentességi számát.</li>
@@ -87,7 +89,7 @@ Az alábbi táblázat bemutatja a munka megkezdése előtt biztosítandó előfe
 </tr>
 <tr class="even">
 <td><strong>Beállítás: </strong>Az ügyfelek adónyilvántartása</td>
-<td>Az ügyfelek adónyilvántartási adatainak beállításához nyissa meg az <strong>Összes vevő</strong> oldalt (kattintson az <strong>Értékesítés és marketing</strong> &gt; <strong>Vevők</strong> &gt; <strong>Összes vevő</strong> elemre, majd válasszon ki egy vevőrekordot, és kattintson a <strong>Beállítások</strong> &gt; <strong>Nézetváltás</strong> &gt; <strong>Részletek nézet</strong> elemre), vagy nyissa meg a <strong>Szállítók</strong> oldalt (kattintson a <strong>Beszerzések és források</strong> &gt; <strong>Szállítók</strong> &gt; <strong>Szállítók</strong> fülre, majd válasszon ki egy szállítói rekordot, és kattintson a <strong>Beállítások</strong> &gt; <strong>Nézetváltás</strong> &gt; <strong>Részletek nézet</strong> fülre). A <strong>Számlázás és szállítás</strong> gyorslapon, az <strong>Adómentességi szám</strong> mezőben válassza ki az adószámot.</td>
+<td>Az ügyfelek adónyilvántartási adatainak beállításához nyissa meg az <strong>Összes vevő</strong> oldalt (kattintson az <strong>Értékesítés és marketing</strong> &gt; <strong>Vevők</strong> &gt; <strong>Összes vevő</strong> elemre, majd válasszon ki egy vevőrekordot, és kattintson a <strong>Beállítások</strong> &gt; <strong>Nézetváltás</strong> &gt; <strong>Részletek nézet</strong> elemre), vagy nyissa meg a <strong>Szállítók</strong> oldalt (kattintson a <strong>Beszerzések és források</strong> &gt; <strong>Szállítók</strong> &gt; <strong>Szállítók</strong> fülre, majd válasszon ki egy szállítói rekordot, és kattintson a <strong>Beállítások</strong> &gt; <strong>Nézetváltás</strong> &gt; <strong>Részletek nézet</strong> fülre). Válassza ki <strong>az</strong><strong></strong> áfaregisztrációs számot a Számla- és szállítás gyorskódok területén az Adószám mezőben.</td>
 </tr>
 <tr class="odd">
 <td><strong>Beállítás: </strong>Forgalmi adó beállítása</td>
@@ -160,3 +162,6 @@ Amikor befejezte az adott időszakra kiterjedő jelentési folyamatot (például
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

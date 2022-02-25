@@ -2,15 +2,12 @@
 title: A minősítések és ellenőrzések használatának kiválasztása
 description: Ez a témakör azt mutatja be, hogyan lehet a Microsoft Dynamics 365 Commerce webhelyen beleegyezni az értékelések és vélemények használatába.
 author: gvrmohanreddy
-manager: annbe
-ms.date: 01/30/2020
+ms.date: 02/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cbdb69202ebec19f4442041cfb1f99857da36d2e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 19c3e8b32654f7c4b7803c547e9d5692f9fc461b
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412870"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8311929"
 ---
-# <a name="opt-in-to-use-ratings-and-reviews"></a>A minősítések és ellenőrzések használatának kiválasztása
+# <a name="opt-in-to-use-ratings-and-reviews"></a>A minősítések és értékelések használatának bekapcsolása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet a Microsoft Dynamics 365 Commerce webhelyen beleegyezni az értékelések és vélemények használatába.
-
-## <a name="overview"></a>Áttekintés
 
 Az értékelések és a vélemények megoldása egy omnicsatornás megoldás, amelyet a Dynamics 365 Commerce megoldásban a Microsoft Dynamics Lifecycle Services (LCS) segítségével tehet elérhetővé. Az LCS egy olyan felügyeleti portál, amelyet a kiskereskedők a környezeteik kezelésére használhatnak a telepítéstől egészen a megszüntetésig.
 
@@ -44,9 +39,9 @@ A következő lépések végrehajtásával választhatja ki azt, hogy használni
 1. Kövesse az [Új e-commerce webhely telepítése](deploy-ecommerce-site.md) szakasz lépéseit.
 1. Amikor még az LCS-ben van nyissa meg a **Retail-telepítés beállítása \> Egyéb beállítások** lehetőséget.
 1. Állítsa be az **Értékelések és vélemények szolgáltatás engedélyezése** értékét **Igen** beállításra.
-1. Az **AAD biztonsági csoport értékelések és vélemények moderátora (biztonsági csoport-objektumazonosító)** mezőbe írja be annak a Microsoft Azure Active Directory (Azure AD) biztonsági csoportnak az azonosítóját, amely tartalmazza az értékelések és vélemények moderátorait.
+1. **Az AAD biztonsági csoportban, amely minősítéseket és áttekintő moderátorokat** használ, adja meg a Microsoft Azure Active Directory biztonsági csoportjának azonosítóját,Azure AD amely a minősítéseket és a moderőket is tartalmazza.
 
-    ![A minősítések és ellenőrzések használatának bekapcsolása](media/LCS_RnR_Preference.png)
+    ![A minősítések és értékelések használatának bekapcsolása.](media/LCS_RnR_Preference_2.png)
 
 1. Az e-commerce inicializálási folyamat végrehajtása.
 
@@ -63,4 +58,13 @@ A következő lépések végrehajtásával választhatja ki azt, hogy használni
 
 [A termék minősítések szinkronizálása a következőben: Dynamics 365 Commerce](sync-product-ratings.md)
 
+[A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
 
+[Értékelések és véleményezések importálása és exportálása](import-export-reviews.md)
+
+[Szolgáltatás a szolgáltatáshoz típusú hitelesítés konfigurálása](service-to-service-auth.md)
+
+[Értékelések és vélemények GYIK](ratings-reviews-faq.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

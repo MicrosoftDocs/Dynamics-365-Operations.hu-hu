@@ -2,24 +2,24 @@
 title: Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugtasorok egyeztetése
 description: Ez a témakör a szállítói számlák munkafolyamat-rendszerbe történő elküldését és a feladott terméknyugta sorainak a szállítói számlák soraival való automatikus egyeztetését ismerteti.
 author: abruer
-ms.date: 09/08/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-09-08
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: fd7ec9f4f30c444fd6442c9a2f1333fcaba4246520de3997f3bb9064a8ee16e1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 0962ea2bfa28deb3e86620c364feffd209cfc38e
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6736970"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109943"
 ---
 # <a name="submit-invoices-to-the-workflow-system-and-match-product-receipt-lines"></a>Számlák elküldése a munkafolyamat-rendszerbe és a terméknyugtasorok egyeztetése
 
@@ -29,7 +29,7 @@ Ez a témakör a szállítói számlák munkafolyamat-rendszerbe történő elk�
 
 ## <a name="submitting-imported-vendor-invoices-to-the-workflow-system-and-matching-posted-product-receipt-lines-to-pending-vendor-invoice-lines"></a>Az importált szállítói számlák munkafolyamat-rendszerbe történő beküldése és a feladott terméknyugta sorainak egyeztetése a függőben lévő szállítói számlák soraival.
 
-Az érintés nélküli, Kötelezettségeken belüli számlázási folyamat részeként a rendszer automatikusan elküldhet importált számlákat a munkafolyamat-rendszerbe. Az importált számláknak a munkafolyamat-rendszerbe történő elküldésének folyamatát a **Kötelezettségek paraméterei** oldal **Szállítói számla automatizálása** fülén konfigurálhatja (**Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei**). A munkafolyamatba való beküldés folyamata a háttérben történik, az Ön által megadott gyakorisággal (óránként vagy naponta).
+A nem érintőképernyős kötelezettségek számlázási folyamatának részeként az importált számlát automatikusan el lehet nyújtani a munkafolyamat-rendszernek. Az importált számláknak a munkafolyamat-rendszerbe történő elküldésének folyamatát a **Kötelezettségek paraméterei** oldal **Szállítói számla automatizálása** fülén konfigurálhatja (**Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei**). A munkafolyamatba való beküldés folyamata a háttérben történik, az Ön által megadott gyakorisággal (óránként vagy naponta).
 
 Amikor a számlákat automatikusan küldi el a munkafolyamat-rendszerbe, akkor a folyamatnak egy importált számlával kell kezdődnie. Ha azt szeretné, hogy a számla manuális beavatkozás nélkül is feldolgozható legyen az elejétől a végéig, akkor a munkafolyamat-konfigurációban szerepelnie kell egy automatikus feladási feladatnak. A vételi megbízásokhoz (PO-k) kapcsolódó számlák, valamint a nem PO-beszerzési kategóriát és nem raktározott sorokat tartalmazó számlák automatikusan elküldhetők a munkafolyamat-rendszerbe. A manuálisan bevitt számlákat manuálisan kell elküldeni a munkafolyamat-rendszerbe.
 
@@ -37,11 +37,11 @@ A munkafolyamatban a **Beküldte** elemhez megadott érték az a felhasználói 
 
 ## <a name="matching-posted-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>A terméknyugták sorainak egyeztetése olyan számlasorokkal, amelyekhez háromirányú egyeztetési irányelv tartozik
 
-Az érintés nélküli, kötelezettségeken belüli számlázási folyamat részeként a rendszer automatikusan egyezteti a feladott terméknyugtákat a számlasorokkal. Ehhez a feladathoz egy háromirányú egyeztetési irányelvet kell definiálni. Ez a funkció akkor érhető el, ha a **Szállítói számla automatizálása** funkció engedélyezett a **Funkciókezelés** oldalon.
+A nem érintőképernyős kötelezettségek számlázási folyamatának részeként a feladott termékbevételezéseket automatikusan lehet megfeleltetni a számlasornak. Ehhez a feladathoz egy háromirányú egyeztetési irányelvet kell definiálni. Ez a funkció akkor érhető el, ha a **Szállítói számla automatizálása** funkció engedélyezett a **Funkciókezelés** oldalon.
 
 Az egyeztetési folyamat addig fog futni, amíg az egyeztetett terméknyugták mennyisége nem egyezik meg a számla szerinti mennyiséggel. Ha azonban egy számlasorhoz több termékbevételezés is van, a teljes mennyiségi egyeztetés eléréséhez többször is futtatnia kell a folyamatot. Kiválaszthatja, hogy hány alkalommal próbálja meg a rendszer egyeztetni a terméknyugtákat egy adott számlasorral, mielőtt a folyamatot sikertelenként lezárná. A folyamat a háttérben fog futni, óránként vagy naponta. 
 
-Az automatizált egyeztetési folyamat futtatható a számlák munkafolyamat-rendszerbe történő elküldéséhez kapcsolódó eljárás részeként. Azt is megteheti, hogy önálló folyamatként futtatja. A terméknyugták egyeztetések a számlasorokkal folyamat beállításait a **Kötelezettségek paraméterei** oldal **Szállítói számla automatizálása** fülén konfigurálhatja (**Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei**).
+Az automatizált egyeztetési folyamat futtatható a számlák munkafolyamat-rendszerbe történő elküldéséhez kapcsolódó eljárás részeként. Egy másik lehetőségként önálló folyamatként is futtatható. A terméknyugták egyeztetések a számlasorokkal folyamat beállításait a **Kötelezettségek paraméterei** oldal **Szállítói számla automatizálása** fülén konfigurálhatja (**Kötelezettségek \> Beállítás \> Kötelezettségek paraméterei**).
 
 Azon háromirányú egyeztetési irányelvet tartalmazó számlasorok, amelyeknél az egyeztetett nyugta mennyisége kisebb, mint a számlamennyiség, az automatikus terméknyugtákkal való egyeztetési folyamatba kerülnek.
 

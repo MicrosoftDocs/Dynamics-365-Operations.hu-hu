@@ -2,7 +2,7 @@
 title: Az online rendelések adói helytelenül vannak kiszámítva
 description: Ez a témakör olyan hibaelhárítási útmutatást tartalmaz, amely segítséget jelenthet az online rendelések adójának helytelen kiszámítása vagy az értékesítési sorban beállított áfacsoport helytelen beállítása esetén.
 author: Reza-Assadi
-ms.date: 03/11/2021
+ms.date: 02/16/2022
 ms.topic: Troubleshooting
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: e51ae789dad2c7b5118be2cf8a88f4e4090a8c74c8259b4eaaddad1a134af80a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 0e4361b436cc78eccaff29dfa2927d342e26072d
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715260"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8312031"
 ---
 # <a name="taxes-on-online-orders-are-incorrectly-calculated"></a>Az online rendelések adói helytelenül vannak kiszámítva
 
@@ -32,7 +32,18 @@ Ez a témakör olyan hibaelhárítási útmutatást tartalmaz, amely segítsége
 
 Az e-kereskedelmi rendelések leadása esetén a program helytelenül számítja ki az adót, vagy helytelenül van beállítva az értékesítési sorban beállított áfacsoport.
 
-## <a name="resolution"></a>Felbontás
+## <a name="resolution"></a>Megoldás
+
+### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Általános áfacsoportok konfigurálása a Commerce központi felületén
+
+Az általános áfacsoportok Commerce központi felületén történő konfigurálásához kövesse az alábbi lépéseket.
+
+1. Ugorjon az **Adó \> Közvetett adók \> Áfa \> Áfakódcsoportok** pontra.
+1. A bal oldali navigációs ablakban válassza ki a konfigurálni kívánt adócsoportot.
+1. A **Kiskereskedelmi célalapú adó** gyorslapon konfigurálja az áfacsoport adóit.
+
+> [!NOTE]
+> Olyan szállítás esetén, amely nem tartalmaz áfás adót, amelyet a vevő címe határoz meg, a sor szállítási címe és az adócsoporthoz beállított célon alapuló adók határozzák meg az áfacsoportot. További információ: [Online áruházak adóinak beállítása cél alapján](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination) című témakörben olvashat.
 
 ### <a name="configure-the-sales-tax-for-a-retail-store-in-commerce-headquarters"></a>Kiskereskedelmi áruház áfájának konfigurálása a Commerce központi felületén
 
@@ -57,17 +68,6 @@ Egy ügyfél címéhez kapcsolódó áfa konfigurálásához a Commerce központ
 
 > [!NOTE]
 > Olyan szállítások esetén, amelyek a vevő címéhez kapcsolódóan áfát tartalmaznak, a sor szállítási címe határozza meg a sor áfacsoportját. Ha a vevő olyan létező címre szállít, amelyhez már konfigurált áfacsoport tartozik, a rendszer a meglévő áfacsoportot használja. A címek alapértelmezés szerint létrehozáskor nem rendelkeznek áfacsoporttal.
-
-### <a name="configure-general-sales-tax-groups-in-commerce-headquarters"></a>Általános áfacsoportok konfigurálása a Commerce központi felületén
-
-Az általános áfacsoportok Commerce központi felületén történő konfigurálásához kövesse az alábbi lépéseket.
-
-1. Ugorjon az **Adó \> Közvetett adók \> Áfa \> Áfakódcsoportok** pontra.
-1. A bal oldali navigációs részben válassza ki a konfigurálni kívánt áfacsoportot.
-1. A **Kiskereskedelmi célalapú adó** gyorslapon konfigurálja az áfacsoport adóit.
-
-> [!NOTE]
-> Olyan szállítások esetén, amelyek nem tartalmaznak áfát a vevő címében, a sor szállítási címe és az áfacsoporthoz beállított célalapú adók határozzák meg az áfacsoportot. További információ: [Online áruházak adóinak beállítása cél alapján](/dynamicsax-2012/appuser-itpro/set-up-taxes-for-online-stores-based-on-destination) című témakörben olvashat.
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -2,7 +2,7 @@
 title: Az adatpiac alaphelyzetbe állítása – GYIK
 description: Ez a témakör az adatpiac alaphelyzetbe állításával kapcsolatos néhány gyakran ismételt kérdésre ad választ.
 author: jinniew
-ms.date: 07/16/2021
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: e5a40342306eb9888b456a865ab2220dccfe65f8ccecc67bf8fc16f907e06977
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767755"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119512"
 ---
 # <a name="data-mart-resets-faq"></a>Az adatpiac alaphelyzetbe állítása – GYIK
 
@@ -35,8 +35,9 @@ Annak érdekében, hogy a rendszer ne szúrjon be régi adatokat, az adatpiac vi
 
 Ha a következők közül egy vagy több érvényes, akkor a szervezete számára hasznos lehet az adatpiac alaphelyzetbe állítása:
 
-- Az alkalmazás-adatbázis vissza lett állítva.
-- Támogatási jegyet nyitott meg, és egy ügyfélszolgálati szakértő arra utasítja, hogy állítsa vissza az adatpiacot egy hibaelhárítási lépés részeként.
+- **Az alkalmazás-adatbázis vissza lett ásva.**
+- **Egy támogatási jegy megnyitása** - egy támogatási szakember arra utasított, hogy állítsa vissza az adatpiacot egy hibaelhárítási lépés részeként.
+- **Elavult rekordok nagy** százaléka – az elavult rekordok önmagukban nem feltétlenül igazolják az adatpiac alaphelyzetbe állítását. Az elavult adatok nagy százalékával csökkenhet a jelentés generálása és integrációja, és további helyfelhasználást eredményez az adatbázis számára. Javasoljuk, hogy egy datamart alaphelyzetbe állítása távolítsa el az elavult adatokat, ha az adatpiacon 80%-nál több elavult adat van.
  
 > [!NOTE]
 > Az adatpiac alaphelyzetbe állításának folyamatát befolyásolja az adatbázis főkönyvi és költségvetési tranzakcióinak száma. Attól függően, hogy hány tranzakció van a rendszerben, az adatpiac alaphelyzetbe állítása akár 15 perc alatt is befejeződhet, illetve akár négy óráig is eltarthat. Ha azonban az alaphelyzetbe állítás négy óránál tovább tart, akkor javasoljuk, hogy forduljon a támogatáshoz.
@@ -45,13 +46,12 @@ Ha a következők közül egy vagy több érvényes, akkor a szervezete számár
 
 Az alábbi körülmények között nem ajánljuk az adatpiac alaphelyzetbe állítását:
 
-- Adatszinkronizálással kapcsolatos teljesítményproblémákat tapasztal.
+- Adatintegrációs teljesítményproblémák vannak.
 - A következő okok valamelyike miatt ismétlődik az alaphelyzetbe állítás:
 
-    - **Hiányzó adatok** – ha azt veszi észre, hogy adatok hiányoznak, nyisson támogatási jegyet a Microsofttal, hogy ellenőrizze a jelentés formátumát és az esetleges szinkronizálási problémákat.
+    - **Hiányzó vagy nem várt adatok** a jelentésben – ha az adatok hiányát észleli, nyisson meg egy támogatási jegyet a Microsofttal, hogy áttekintse a jelentés formátumát és az esetleges adatszinkronizálási problémákat.
     - **Elakadt integrációs állapot**
-    - **Elavult rekordok** – Az elavult rekordok önmagukban nem feltétlenül igazolják az adatpiac alaphelyzetbe állítását. Ha nagy adatkészlet van beállítva, az alaphelyzetbe állítási folyamat futása időt vesz igénybe, de nem valószínű, hogy ez javulást eredményez.
-
+   
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Ha alaphelyzetbe állítom az adatpiacot, elvesznek a már megtervezett jelentések?
 
 Nem. A jelentések olyan SQL-táblákban vannak tárolva, amelyekre nincs hatással az adatpiac alaphelyzetbe állítása. Ha aggódik a megtervezett jelentések elvesztése miatt, biztonsági másolatot készíthet a megőrizni kívánt tervekről. A tervek biztonsági mentéséhez nyissa meg a Report Designert, és lépjen a **Vállalat \> Vállalatok \> Építőelemek \> Exportálás** részre.

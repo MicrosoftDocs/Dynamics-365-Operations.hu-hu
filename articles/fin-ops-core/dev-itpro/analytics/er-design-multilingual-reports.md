@@ -2,11 +2,9 @@
 title: Többnyelvű jelentések tervezése elektronikus jelentésekben
 description: Ez a témakör azt mutatja be, hogyan lehet használni az elektronikus jelentések (ER) címkéit a többnyelvű jelentések tervezéséhez és létrehozásához.
 author: NickSelin
-manager: AnnBe
-ms.date: 09/14/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7934f36877247460ec843201a08d4670456889f9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: eab17635494657740fe46364bde0773dae5b9e4b
+ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679702"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8313691"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Többnyelvű jelentések tervezése elektronikus jelentésekben
 
@@ -30,9 +28,9 @@ ms.locfileid: "4679702"
 
 ## <a name="overview"></a>Áttekintés
 
-Üzleti felhasználóként az [elektronikus jelentési (ER)](general-electronic-reporting.md) keretrendszer a különböző országok/régiók jogi követelményeinek megfelelő formátumú, kötelezően létrehozandó elektronikus dokumentumok konfigurálását teszi lehetővé. Ha ezek a követelmények megkövetelik, hogy a kimenő dokumentumok a különböző országokban vagy régiókban különböző nyelveken jöjjenek létre, akkor konfigurálhat egy olyan egységes ER [formátumot](general-electronic-reporting.md#FormatComponentOutbound), amely nyelvfüggő erőforrásokat tartalmaz. Ily módon a formátumot újra felhasználhatja a különböző országok vagy régiók kimenő dokumentumainak létrehozásához. Előfordulhat, hogy a megfelelő vevők, szállítók, leányvállalatok vagy egyéb felek számára a különböző nyelvű kimenő dokumentumok előállításához egyetlen ER-formátumot szeretne használni.
+Üzleti felhasználóként az [elektronikus jelentési (ER)](general-electronic-reporting.md) keretrendszer a különböző országok/régiók jogi követelményeinek megfelelő formátumú, kötelezően létrehozandó elektronikus dokumentumok konfigurálását teszi lehetővé. Ha ezek a követelmények megkövetelik, hogy a kimenő dokumentumok a különböző országokban vagy régiókban különböző nyelveken jöjjenek létre, akkor konfigurálhat egy olyan egységes ER formátumot, amely nyelvfüggő erőforrásokat tartalmaz. Ily módon a formátumot újra felhasználhatja a különböző országok vagy régiók kimenő dokumentumainak létrehozásához. Előfordulhat, hogy a megfelelő vevők, szállítók, leányvállalatok vagy egyéb felek számára a különböző nyelvű kimenő dokumentumok előállításához egyetlen ER-formátumot szeretne használni.
 
-Az ER-adatmodelleket és a modell-hozzárendeléseket konfigurálhatja úgy, hogy a konfigurált alapformátumok adatforrásai határozzák meg azt az adatforgalmat, amely meghatározza, hogy milyen adatok kerülnek a létrejövő dokumentumokba. ER-konfigurációs [szolgáltatóként](general-electronic-reporting.md#Provider) [közzéteheti](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) a konfigurált [adatmodelleket](general-electronic-reporting.md#data-model-and-model-mapping-components), [modell-leképezéseket](general-electronic-reporting.md#data-model-and-model-mapping-components) és [formátumokat](general-electronic-reporting.md#FormatComponentOutbound) meghatározott kimenő dokumentumok létrehozásához egy ER-megoldás részeként. Azt is lehetővé teheti a vevők számára, hogy a közzétett ER-megoldást [feltöltsék](general-electronic-reporting-manage-configuration-lifecycle.md) , hogy használhatók és testreszabhatók legyenek. Ha úgy gondolja, hogy a vevők más nyelveket is beszélnek, akkor konfigurálhatja, hogy a program a nyelvfüggő erőforrásokat tartalmazza. Ily módon egy szerkeszthető ER-komponens tartalma a vevő felhasználó által preferált nyelvén jeleníthető meg a tervezés idejében.
+Az ER-adatmodelleket és a modell-hozzárendeléseket konfigurálhatja úgy, hogy a konfigurált alapformátumok adatforrásai határozzák meg azt az adatforgalmat, amely meghatározza, hogy milyen adatok kerülnek a létrejövő dokumentumokba. Az ER konfigurációs [szolgáltatóként](general-electronic-reporting.md#Provider) konfigurált adatmodelleket, [modellleképezéseket](tasks/er-upload-configuration-into-lifecycle-services.md#upload-a-configuration-into-lcs) és formátumokat az ER-megoldás összetevőjeként közzé lehet tenni meghatározott kimenő dokumentumok generálása érdekében. Azt is lehetővé teheti a vevők számára, hogy a közzétett ER-megoldást [feltöltsék](general-electronic-reporting-manage-configuration-lifecycle.md) , hogy használhatók és testreszabhatók legyenek. Ha úgy gondolja, hogy a vevők más nyelveket is beszélnek, akkor konfigurálhatja, hogy a program a nyelvfüggő erőforrásokat tartalmazza. Ily módon egy szerkeszthető ER-komponens tartalma a vevő felhasználó által preferált nyelvén jeleníthető meg a tervezés idejében.
 
 A nyelvtől függő erőforrásokat beállíthatja ER-címkékként. Ezeket a címkéket akkor használhatja, ha a következő célokból konfigurálja az ER-komponenseket:
 
@@ -56,11 +54,11 @@ Ha egy ER-adatmodellt, egy ER-modell-hozzárendelést vagy egy ER-formátumot ho
 
 A következő ábra azt mutatja be, hogy hogyan történik ez a fordítás egy szerkeszthető ER-adatmodellben. Ebben a példában a **Leírás** attribútumát a **PurchaseOrder** mezőnek a szerkeszthető **Számlamodellhez** kapcsolódóan a program lefordítja az osztrák német (de-at) és Japán (ja) nyelvekre.
 
-![Egy ER-címke fordításának megadása az ER-adatmodelltervezőben](./media/er-multilingual-labels-refer.png)
+![Egy ER-címke fordításának megadása az ER-adatmodelltervezőben.](./media/er-multilingual-labels-refer.png)
 
 Csak a szerkeszthető ER-összetevőkben található címkét lehet lefordítani. Ha például bejelöli az **Fordítás** lehetőséget egy ER-alapmodell-hozzárendelési adatforrás címkeattribútumához, és ezután egy olyan ER-címkét választ ki, amely a szülő ER-adatmodellben található, akkor a címke tartalma jelenik meg, de ez nem módosítható. Ezekben az esetekben a **Lefordított szöveg** mező nem érhető el, ahogy az a következő ábrán látható.
 
-![Egy ER-címke megadott fordításának felülvizsgálata az ER-adatmodell-leképezés-tervezőben](./media/er-multilingual-labels-refer-mapping.png)
+![Egy ER-címke megadott fordításának felülvizsgálata az ER-adatmodell-leképezés-tervezőben.](./media/er-multilingual-labels-refer-mapping.png)
 
 > [!NOTE]
 > A tervezők nem tudják törölni azt a címkét, amely szerkeszthető ER-összetevőben szerepel.
@@ -73,19 +71,19 @@ Az ER-címkék több lefordítható ER-összetevő attribútumban is szerepelhet
 
 Ha beállít egy ER-adatmodellt, akkor felveheti a szükséges ER-címkéket a számára. A modellelem **Címke** és **Leírás** attribútumai, a modell összes mezője, valamint az egyes <a id="LinkModelEnum"></a>modellek számbavételi értéke egy olyan ER-címkéhez kapcsolható, amely hozzáadódik az ER-adatmodellhez.
 
-![A Leírás attribútum fordításának megadása az ER-adatmodell-tervezőben](./media/er-multilingual-labels-refer.png)
+![A Leírás attribútum fordításának megadása az ER-adatmodell-tervezőben.](./media/er-multilingual-labels-refer.png)
 
 Ha ilyen módon konfigurálnak egy ER-adatmodellt, akkor a program a tartalmat az ER-adatmodell-tervező felhasználó számára a felhasználó által preferált nyelven jeleníti meg. A modell karbantartása ezért egyszerűsített. A következő ábrák azt mutatják be, hogy hogyan működik ez a funkció azon felhasználók számára, akik DE-AT és JA beállítással rendelkeznek preferált nyelvükön.
 
-![Az ER-adatbázismodell-tervező kinézete olyan felhasználóhoz, akinek a preferált nyelve a DE-AT](./media/er-multilingual-labels-refer-de.png)
+![Az ER-adatbázismodell-tervező kinézete olyan felhasználóhoz, akinek a preferált nyelve a DE-AT.](./media/er-multilingual-labels-refer-de.png)
 
-![Az ER-adatbázismodell-tervező kinézete olyan felhasználóhoz, akinek a preferált nyelve a JA](./media/er-multilingual-labels-refer-ja.png)
+![Az ER-adatbázismodell-tervező kinézete olyan felhasználóhoz, akinek a preferált nyelve a JA.](./media/er-multilingual-labels-refer-ja.png)
 
 ### <a name="model-mapping-component"></a>Modell-leképezési összetevő
 
 Mivel az ER-modell-leképezés egy ER-adatmodellen alapul, a hivatkozott adatmodell-elemek címkéi a felhasználó preferált nyelvén jelennek meg a modell-leképezés tervezőjében. A következő ábra azt mutatja be, hogyan történik a **PurchaseOrder** mező jelentésének leírása a szerkeszthető modell hozzárendelésében a megadott adatmodellhez hozzáadott **Leírás** attribútum címkéjének használatával. Figyelje meg, hogy ez a címke a felhasználó preferált nyelvén jelenik meg (ebben a példában ez a DE-AT).
 
-![Az ER-modell-leképezéstervező kinézete olyan felhasználóhoz, akinek a preferált nyelve a DE-AT](./media/er-multilingual-labels-show-mapping.png)
+![Az ER-modell-leképezéstervező kinézete olyan felhasználóhoz, akinek a preferált nyelve a DE-AT.](./media/er-multilingual-labels-show-mapping.png)
 
 Amikor a **Címke** attribútuma a **Felhasználó bemeneti paramétere** adatforrásnak egy ER-címkéhez van beállítva, akkor az ehhez az adatforráshoz tartozó paraméter mező a felhasználói párbeszédpanelen érhető el futásidőben, a felhasználók számára a preferált nyelven.
 
@@ -102,11 +100,11 @@ Mivel az ER-formátum egy ER-adatmodellen alapul, az adatmodell-elemek hivatkozo
 
 Amikor a **Címke** attribútuma a **Felhasználó bemeneti paramétere** adatforrásnak egy ER-címkéhez van beállítva, akkor a paraméterhez tartozó mező a felhasználói párbeszédpanelen futásidőben a felhasználó számára kérésként jelenik meg. A következő ábrák azt mutatják be, hogyan lehet a **Címke** attribútumát a **Felhasználói bemeneti paraméter** adatforrásának a tervezés ideje alatt egy ER-címkéhez kapcsolni, hogy a felhasználók a különböző, a felhasználó által preferált nyelveken kapjanak kérést a paraméterre (az Egyesült Államokbeli angol (en-US) és a DE-AT jelenik meg itt) futásidőben.
 
-![Egy felhasználói bemeneti paraméter attribútumainak fordítása az ER műveleti tervezőben](./media/er-multilingual-labels-refer-format.png)
+![Egy felhasználói bemeneti paraméter attribútumainak fordítása az ER műveleti tervezőben.](./media/er-multilingual-labels-refer-format.png)
 
-![Az EN-US felhasználó által preferált nyelvhez tartozó ER-szállítói kifizetés feldolgozásának végrehajtása futásidőben](./media/er-multilingual-labels-show-runtime-en.png)
+![Az EN-US felhasználó által preferált nyelvhez tartozó ER-szállítói kifizetés feldolgozásának végrehajtása futásidőben.](./media/er-multilingual-labels-show-runtime-en.png)
 
-![A DE-AT felhasználó által preferált nyelvhez tartozó ER-szállítói kifizetés feldolgozásának végrehajtása futásidőben](./media/er-multilingual-labels-show-runtime-de.png)
+![A DE-AT felhasználó által preferált nyelvhez tartozó ER-szállítói kifizetés feldolgozásának végrehajtása futásidőben.](./media/er-multilingual-labels-show-runtime-de.png)
 
 ### <a name="expressions"></a>Kifejezések
 
@@ -118,7 +116,7 @@ Ha egy rendszer (alkalmazás) címkére hivatkozik, használja az **@"X"** szint
 
 ![ER-kifejezés konfigurálása, amely hivatkozásokat tartalmaz egy alkalmazáscímkére az ER-formulatervezőben.](./media/er-multilingual-labels-expression2.png)
 
-#### <a name="model-mapping"></a>Modell hozzárendelése
+#### <a name="model-mapping"></a>Modell leképezése
 
 Egy ER-modellhozzárendelés kifejezését címkék használatával lehet konfigurálni. Ha ezt a hozzárendelést a kimenő dokumentumok előállításához futtatott ER-formátum hívja meg, akkor a végrehajtás környezete nyelvi kódot tartalmaz. A beállított kifejezés címkéjén a program kitölti azt a címkét, amely az adott környezet nyelvéhez be van állítva.
 
@@ -128,7 +126,7 @@ Ha egy hivatkozott címkén nem szerepel fordítás a modell-hozzárendelést me
 
 Egy ER-formátum ER-kifejezését címkék használatával lehet konfigurálni. Ha ezt a hozzárendelést a kimenő dokumentumok előállításához hívja meg, akkor a végrehajtás környezete nyelvi kódot tartalmaz. A beállított kifejezés címkéjén a program kitölti azt a címkét, amely az adott környezet nyelvéhez be van állítva.
 
-![A szerkeszthető ER-kifejezés ER-címkéjének fordításának elkészítése az ER-formátumtervezőben](./media/er-multilingual-labels-refer-in-expression.png)
+![A szerkeszthető ER-kifejezés ER-címkéjének fordításának elkészítése az ER-formátumtervezőben.](./media/er-multilingual-labels-refer-in-expression.png)
 
 ![Olyan adatkötési minta, amely egy ER-címkére hivatkozik az ER műveleti tervezőben.](./media/er-multilingual-labels-refer-in-binding.png)
 
@@ -155,11 +153,36 @@ Az ER különböző módszereket támogat a létrejövő jelentések nyelvének 
 - **Felhasználói preferencia** – Jelentés készítése a felhasználó által preferált nyelven.
 - **Explicit módon definiálva** – Jelentés készítése a tervezés ideje alatt megadott nyelven.
 
-    ![Adja meg az ER műveleti tervezőben a tervezésidőben megadott t nyelvet, amely a létrejövő jelentés nyelve lesz](./media/er-multilingual-labels-language-context-fixed.png)
+    ![Adja meg az ER műveleti tervezőben a tervezésidőben megadott t nyelvet, amely a létrejövő jelentés nyelve lesz.](./media/er-multilingual-labels-language-context-fixed.png)
 
 - **Futásidőben definiálva** – Jelentés készítése a futásidőben megadott nyelven. Ha ezt az értéket választja, a **Nyelv** mezőben konfiguráljon egy olyan ER-kifejezést, amely a nyelvhez tartozó nyelvi kódot adja vissza, például a megfelelő vevő nyelvét.
 
-    ![Adja meg az ER műveleti tervezőben a futásidőben megadott nyelvet, amely a létrejövő jelentés nyelve lesz](./media/er-multilingual-labels-language-context-runtime.png)
+    ![Adja meg az ER műveleti tervezőben a futásidőben megadott nyelvet, amely a létrejövő jelentés nyelve lesz.](./media/er-multilingual-labels-language-context-runtime.png)
+
+## <a name="culture-specific-formatting"></a>Kultúra-specifikus formázás
+
+Az ER különböző módszereket támogat a létrejövő jelentések kultúrájának meghatározására. Ebből következően a helyes kultúraspecifikus formátum használható dátum-, idő- és numerikus értékekhez. ER-formátum tervezésekor a **Kulturális preferenciák** mező **Formátum** fülén a következő értékek közül választhat a **Közös\\Fájl**, **Excel\\Fájl**, **PDF\\fájl**, vagy **PDF\\Összevonás** típushoz:
+
+- **Felhasználói preferencia** – Az értékek formázása a felhasználó által előnyben részesített kulturális környezetnek megfelelően. Ezt a kultúrát a **Felhasználói beállítások** lap **Preferenciák** fülének **Dátum-, idő- és számformátum** mezőjében lehet meghatározni.
+
+    ![A felhasználó előnyben részesített kultúrájának meghatározása az ER művelettervezőben generált jelentés kultúrájaként.](./media/er-multilingual-labels-culture-context-user-preferred.png)
+
+- **Expliciten meghatározva** – Az értékek formázása a tervezéskor megadott kultúrának megfelelően.
+
+    ![A tervezési idő alatt meghatározott kultúra meghatározása az ER művelettervezőben generált jelentés kultúrájaként.](./media/er-multilingual-labels-culture-context-fixed.png)
+
+- **Futási idő alatt meghatározva** – Az értékek formázása a futási idő alatt megadott kultúrának megfelelően. Ha ezt az értéket választja, a **Dátum-, idő- és számformátum** mezőjében a **Leképezés** fülön konfigurálnia kell egy olyan ER-kifejezést, amely visszaadja a kultúrához tartozó kultúrakódot, például az adott vevő kultúráját.
+
+    ![A futási idő alatt meghatározott kultúra meghatározása az ER művelettervezőben generált jelentés kultúrájaként.](./media/er-multilingual-labels-culture-context-runtime.png)
+
+> [!NOTE]
+> Előfordulhat, hogy egy olyan ER-összetevő, amely egy adott kultúrában van meghatározva, szöveges érték kitöltésére beállított gyermek ER-összetevőket tartalmazhat. Alapértelmezés szerint a szülőösszetevő kultúrája ezen összetevők értékeit formázza. A következő beépített ER-funkciókat az összetevők kötéseinek konfigurálásához használhatja, és alkalmazhat egy alternatív kultúrát az érték formázásához:
+>
+> - [DATEFORMAT](er-functions-datetime-dateformat.md#syntax-2)
+> - [DATETIMEFORMAT](er-functions-datetime-datetimeformat.md#syntax-2)
+> - [NUMBERFORMAT](er-functions-text-numberformat.md#syntax-2)
+>
+> A 10.0.20-as és újabb verziókban a **Közös\\Fájl** és **Excel\\Fájl** típusok formátum-összetevőinek területi beállítását az előállított dokumentumok [PDF-formátumba](electronic-reporting-destinations.md#OutputConversionToPDF) konvertálása során használja a program.
 
 ## <a name="translation"></a>Átszámítás
 
@@ -173,7 +196,7 @@ Ha hozzáad egy ER-címkét a **Szöveg fordítása** [ablaktáblában](#TextTra
 
 Egy ER-összetevő konfigurációját azon az ER-konfiguráció piszkozat verzióban végezze el, amelyben a szerkeszthető ER-összetevő található.
 
-![A konfiguráció piszkozat állapotához való hozzáférést ajánló ER-konfigurációk lapja](./media/er-multilingual-labels-configurations.png)
+![A konfiguráció piszkozat állapotához való hozzáférést ajánló ER-konfigurációk lapja.](./media/er-multilingual-labels-configurations.png)
 
 A témakör korábbi részében ismertetett módon egy szerkeszthető ER-összetevőhöz hozzáadhatja a kötelező ER-címkéket. Ily módon meghatározhatja az ER-címkék szövegét az EN-USA nyelven. Ezután a beépített ER-funkcióval exportálhatja az ER-összetevő címkéit. Válassza ki azt a piszkozat verzióját az ER-konfigurációnak, amely a szerkeszthető ER-összetevőt tartalmazza, majd válassza ki az **Átváltás \> Címkék exportálása** elemet.
 
@@ -181,7 +204,7 @@ A témakör korábbi részében ismertetett módon egy szerkeszthető ER-összet
 
 Exportálni lehet az összes címkét vagy az egyes nyelvek címkéit, amelyeket az exportálás kezdetén megadott. A címkéket az XML-fájlokat tartalmazó zip-fájlként exportálja a program. Minden XML-fájl tartalmaz egyetlen nyelvet.
 
-![A DE-AT nyelvhez tartozó ER-címkéket tartalmazó exportált fájlok mintája](./media/er-multilingual-labels-in-xml.png)
+![A DE-AT nyelvhez tartozó ER-címkéket tartalmazó exportált fájlok mintája.](./media/er-multilingual-labels-in-xml.png)
 
 Ez a formátum a címkék külső fordítási szolgáltatások, például a [Dynamics 365 Translation Service](../lifecycle-services/translation-service-overview.md) által a címkék automatikus fordításához használatosak. A lefordított címkék beolvasása alkalmával visszaimportálhatja őket egy olyan ER-konfigurációhoz, amely a címkék saját összetevőit tartalmazza. Válassza ki azt a piszkozat verzióját az ER-konfigurációnak, amely a szerkeszthető ER-összetevőt tartalmazza, majd válassza ki az **Átváltás \> Címkék betöltése** elemet.
 
@@ -206,7 +229,27 @@ A jelen témakörben korábban ismertetett módon a **Címke** és **Leírás** 
 - A **Címke** attribútumaihoz kapcsolt ER-címke értékét a visszaküldött rekord **Címke** mezőjében tárolja a program.
 - A **Leírás** attribútumaihoz kapcsolt ER-címke értékét a visszaküldött rekord **Leírás** mezőjében tárolja a program.
 
+## <a name="performance"></a><a name=performance></a>Teljesítmény
+
+Amikor az ER-formátum összetevőt a kívánt [nyelven](#language) jelentés előállítására konfigurálja, vagy olyan bejövő dokumentumot importál, ahol a tartalmat a preferált nyelv használja, javasoljuk, hogy engedélyezze **Az aktuális felhasználó preferált nyelvének gyorsítótárba helyezése ER futtatásokhoz** funkciót a [Funkciókezelés](../../fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületen. Ez a funkció javítja a teljesítményt, különösen olyan ER-formátumösszetevők esetén, amelyek több címkére hivatkoznak az ER-képletekben és -kötésekben, valamint számos [érvényesítési](general-electronic-reporting-formula-designer.md#TestFormula) szabályban a felhasználónak küldött üzeneteknek a kívánt nyelven történő generálása érdekében.
+
+Ha vázlatról készre módosítja egy **ER** **konfigurációs** verzió állapotát, és a konfigurációs verzió ER-címkéket tartalmaz, akkor ezeket a címkéket az alkalmazás adatbázisában tárolja a rendszer. A tárolási séma az ER címkéket **tároló** funkció állapotától függ:
+
+- Ha a funkció nincs engedélyezve, **akkor a program az ERSOLUTIONVERSIONTABLE** tábla LABELXML **mezőjében** egyetlen XML-részletként tárolja az összes címkét.
+- Ha a funkció engedélyezve van, az **ERSOLUTIONVERSIONLABELSTABLE táblában minden nyelvhez külön rekord jön** létre. A **tábla TARTALOM** mezője a címkéket nyelv szerint tömörített XML-kódként tárolja.
+
+Javasoljuk, hogy engedélyezze az ER címkék **gyorsított tárolási funkcióját** a Funkciókezelés munkaterületén **.** Ezzel a funkcióval javítható a hálózati sávszélesség kihasználtsága és a teljes rendszerteljesítmény, mivel a legtöbb esetben csak az egy nyelvű ER címkék használatosak egyetlen ER-konfiguráció használata esetén.
+
+A kiválasztott tárolási sémának a currenet Pénzügy példányán található összes ER-konfiguráció címkéinek tárolására való alkalmazásához kövesse az alábbi lépéseket.
+
+1. Menjen a **Szervezet felügyeletePeriodicApply** > **elemhez** > **a kiválasztott címkéket, amelyek az összes ER-konfiguráció sémáját tják**.
+2. Válassza ki az **OK** lehetőséget.
+
+
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
-- [Az elektronikus jelentéskészítés funkciói](er-formula-language.md#functions)
+- [Az elektronikus jelentéskészítés funkciói](er-formula-language.md#Functions)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

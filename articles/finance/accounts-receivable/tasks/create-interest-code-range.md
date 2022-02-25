@@ -2,51 +2,51 @@
 title: Kamatkód létrehozása tartománnyal
 description: A kamatkódokat be lehet úgy állítani, hogy különböző kamatösszegeket számoljon egy értéktartomány alapján.
 author: ShivamPandey-msft
-ms.date: 08/29/2018
+ms.date: 02/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: Interest, CustInterestRange
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b20870ade99dd48e72c8aa63f563bc51dc93bd9601d309c474af93cee6eddedb
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: d77fc88f606f4e690583fbcda79f628a35f14f6a
+ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771848"
+ms.lasthandoff: 02/14/2022
+ms.locfileid: "8119474"
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Kamatkód létrehozása tartománnyal
 
 [!include [banner](../../includes/banner.md)]
 A kamatkódokat be lehet úgy állítani, hogy különböző kamatösszegeket számoljon egy értéktartomány alapján. Ez az eljárás bemutatja, hogyan adhat hozzá egy kamatkódot, illetve ahhoz egy tartományt.
 
-1. Ugorjon a Követel és beszedések > Kamat > Kamatkódok beállítása pontra.
-2. Kattintson az Új lehetőségre.
-3. A Kamtkód mezőbe írja be a kamatkód nevét.
-4. A Leírás mezőben adja meg a kamatkód leírását.
-5. Hónap kiválasztása.
-6. Bontsa ki a Bevételek szakaszt.
-7. Bontsa ki a Bevételek pénznemenként szakaszt.
-8. A Főkönyvi feladószámla mezőben adja meg a kívánt értékeket.
-9. Válassza ki a „Hónapok” lehetőséget a Kamat tartomány alapján mezőben.
-10. Kattintson a Hozzáadás gombra.
-11. A Leírás mezőben adja meg a pénznem és a tartomány leírását.
-12. Kattintson a Mentés gombra.
-13. Kattintson az Tartományok elemre.
-14. Kattintson az Új lehetőségre.
-15. Adja meg a Kezdő értéknek a 0-t, majd adja meg a havi kamatszázalékot, amely alapján számítva lesz a kamat. Ezen példa esetében ez 1,5.
-16. Kattintson az Új elemre.
+1. Ugrás a Kamat **> és beszedési > Kamatkódok beállítása**.
+2. Kattintson az **Új** elemre.
+3. A Kamatkód **mezőbe** írja be a kamatkód nevét.
+4. A Leírás **mezőbe** írja be a kamatkód leírását.
+5. Válassza ki a **hónapot**.
+6. Bontsa ki **a Bevételek szakaszt**.
+7. Bontsa ki **a Bevétel pénznem szerint szakaszt**.
+8. Adja meg **a kívánt** értékeket a Főkönyvi feladási számla mezőben.
+9. A Kamat **tartomány szerint mezőben** válassza a "Hónapok" lehetőséget.
+10. Kattintson a **Hozzáadás** parancsra.
+11. A Leírás **mezőbe** írja be a pénznem és a tartomány leírását.
+12. Kattintson a **Mentés** gombra.
+13. Kattintson a Tartományok **gombra**.
+14. Kattintson az **Új** elemre.
+15. Adja meg **a 0 értéket** a From értékként, majd adja meg a kamatszámításhoz használt havontai kamat százalékos értékét. Ezen példa esetében ez 1,5.
+16. Kattintson az **Új** elemre.
 17. Adja meg a következő kezdőértéknek adja meg a 4-et, ez az első hónap, amelyben új kamatösszeget fog számolni.
 18. Adja meg a havi kamatszázalékot, amelyet a kamat kiszámítására használ a 4. hónaptól kezdődően. Ebben a példában ez 2,0.
-19. Kattintson az Új elemre.
+19. Kattintson az **Új** elemre.
 20. Adja meg a következő kezdőértéknek adja meg a 7-et, ez a következő hónap, amelyben új kamatösszeget fog számolni.
 21. Adja meg a havi kamatszázalékot, amelyet a kamat kiszámítására használ a 7. hónaptól kezdődően. Ebben a példában ez 2,5.
-22. Kattintson a Bezár gombra a beállítás befejezéséhez.
+22. A beállítás **befejezéséhez** kattintson a Bezárás gombra.
 
 
 

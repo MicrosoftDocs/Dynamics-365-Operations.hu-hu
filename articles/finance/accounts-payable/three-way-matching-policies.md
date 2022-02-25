@@ -2,25 +2,25 @@
 title: Háromirányú egyeztetési irányelvek
 description: Ez a témakör a háromirányú egyeztetésről nyújt tájékoztatást.
 author: abruer
-ms.date: 10/26/2017
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d33a8cb001f1cd2f79c2a174710af90af423b9b3abc66eb80aa4811953ea4a14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: cffdc06216ce8ab1bfb79265f265bec1aee334c5
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722839"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109993"
 ---
 # <a name="three-way-matching-policies"></a>Háromirányú egyeztetési irányelvek
 
@@ -42,10 +42,10 @@ Az ebben a példában szereplő számlaegyeztetési irányelvek segítik a köve
 
 ### <a name="prerequisites"></a>Előfeltételek
 
--   Ken az egyeztetési irányelvet háromirányúra rendelte el a jogi személyek esetében.
--   Ken a Fejléc állapotának automatikus frissítése gombot a jogi személyeknél Igenre állítja.
--   Ken kiválasztja az Árösszeg egyeztetések mezőt és a jogi személyeknél a százalékot 15%-ra állítja, mint elfogadott százalék.
--   Ken az eszközöknél az egyeztetési irányelvet az 1500 – CNC Milicron Gépezetnél háromirányú egyeztetésre állítja be. Ez egy eszköz melyen gyártáshoz használnak a Fabrikamnál. Az ehhez a cikkhez tartozó számlák beszerzési rendeléssorokkal vannak egyeztetve az áraknál és termék bevételezésekkel a mennyiségeknél.
+-   A "Egyeztetési **irányelv"** a jogi személy szintjén háromszintű **egyeztetést állít be**.
+-   A "Ve" beállítás **a fejlécegyeztetés automatikus frissítése állapotát** Igen beállításra állítja **a jogi személynél**.
+-   A "Kedvezmény" beállítás **·** **a** jogi személy Teljes árak egyeztetése mezőjét Százalék értékre állítja, és 15%-**ot ad meg tűrésszázalékként.**
+-   Az egyeztetési házirendet a 1500-as cikk (CNC Milicron Machine **) cikk szintjén a háromrészes egyeztetésre állítja be**. Ez egy eszköz melyen gyártáshoz használnak a Fabrikamnál. Az ehhez a cikkhez tartozó számlák beszerzési rendeléssorokkal vannak egyeztetve az áraknál és termék bevételezésekkel a mennyiségeknél.
 -   Tony öt CNC Milicron Gépezetre nyújt be igényt. Alicia (aki beszerzési rendelésekkel dolgozik a Fabrikamnál) beszerzési rendelést ad ki egy Contoso nevű jogi személynek, hogy beszerezze az eszközöket.
 
     | Cikkszám                 | Mennyiség | Egységár | Nettó összeg | Költségkód        | Költségek értéke |
@@ -65,7 +65,7 @@ Az ebben a példában szereplő számlaegyeztetési irányelvek segítik a köve
 
 A Contosotól kapott papíralapú számla a következő információkat tartalmazza.
 
-| Tétel                        | Mennyiség | Egységár | Nettó összeg |
+| Cikk                        | Mennyiség | Egységár | Nettó összeg |
 |-----------------------------|----------|------------|------------|
 | 1500 – CNC Milicron Gépezet. | 5        | 8,100.00   | 40,500.00  |
 | Szállítás és kezelés       |          |            | 4,000.00   |
@@ -91,11 +91,11 @@ Az ebben a példában szereplő számlaegyeztetési irányelvek segítik a köve
 
 ### <a name="prerequisites"></a>Előfeltételek
 
--   Ken az egyeztetési irányelvet kétirányúra rendelte el a jogi személyek esetében.
--   Ken kiválasztja az Árösszeg egyeztetések mezőt és a jogi személyeknél a százalékot 10%-ra állítja, mint elfogadott százalék.
+-   A "Egyeztetési **irányelv"** a jogi személy szintjén a **"Kétes egyeztetés" beállítású**.
+-   A "Kedvezmény" beállítás **·** **a** jogi személy Teljes árak egyeztetése mezőjét a Százalék értékre állítja, **a tűrésszázalékot pedig 10%-** **ban adja meg.**
 -   Ken az egységnyi ár toleranciát minden eszköznél 2 %-ra állítja be.
--   Cassie a PH2500 – Computer (cikk) és a Contoso (szállító) kombinációjának egyeztetési irányelvét háromirányúra állítja.
--   Alicia, a Fabrikam Malajziai részlegének beszerzési rendelési adminisztrátora, három cikkre ad le beszerzési rendelést a Contosonál. Ezt mutatja a következő táblázat. Mikor létrehozza a beszerzési rendelést, megemeli az egyeztetési irányelvet a vezeték nélküli egér esetében kétirányú egyeztetésről háromirányúra.
+-   Az Egyeztetési **irányelv a** PH2500 **cikkre és szállítóra vonatkozó egyeztetési házirendet a cikk-/szállítókombináció szintjén állítja be háromszintű egyeztetésre a Contoso számítógép és szállító számára**.
+-   Alicia, a Fabrikam Malajziai részlegének beszerzési rendelési adminisztrátora, három cikkre ad le beszerzési rendelést a Contosonál. Ezt mutatja a következő táblázat. Amikor létrehozza a beszerzési rendelést, felülbírálja azt az egyeztetési házirendet, **amely** szerint az egér háromes sorrendű lesz a kétes mód egyeztetése helyett.
 
     | Cikkszám           | Mennyiség | Egységár | Nettó összeg | Egyeztetési irányelv (alapértelmezett bejegyzés) | Egyeztetési irányelv (a beszerzési rendelési soron) |
     |-----------------------|----------|------------|------------|---------------------------------|----------------------------------------------|
@@ -114,7 +114,7 @@ Az ebben a példában szereplő számlaegyeztetési irányelvek segítik a köve
 
 A Contosotól kapott papíralapú számla a következő információkat tartalmazza.
 
-| Tétel                  | Mennyiség | Egységár | Nettó összeg |
+| Cikk                  | Mennyiség | Egységár | Nettó összeg |
 |-----------------------|----------|------------|------------|
 | PH2500 – Számítógép     | 2        | 2,500.00   | 5,000.00   |
 | MM01 – Vezeték nélküli egér | 2        | 41.00      | 82.00      |
@@ -134,7 +134,7 @@ Vegye figyelembe az alábbiakat:
 -   Az MM01 – Számítógép sorában a termék bevételezés mennyiség egyezése oszlopban megjelent egy figyelmeztető ikon, mivel a számlasor nincs egyeztetve a termék bevételezéssel. Az Egységár egyezés oszlopban megjelent egy figyelmeztető ikon, mert a 2%-os nettó egységár határ túl lett lépve.
 -   Az USB meghajtó sorban a termék bevételezés mennyiség egyezése oszlop üres, mivel a kétirányú egyeztetés nem felel meg a számlasor és a termék bevételezés mennységeinek.
 
-Amennyiben engedély szükséges a számlaegyezési eltérések közzétételére a számlákon, az Egyezés eltérés közzétételének engedélyezése gombot kell kiválasztani a Számlaegyezési adatok oldalon, mielőtt a számla közzétehetővé válna ár- és mennyiségegyezési hibákkal is. Amennyiben nincs szükség jóváhagyásra és nem jelenik meg hibaüzenet, a számlázási folyamat folytatható.
+Ha a számlaegyeztetési eltérésekkel feladott számlákhoz jóváhagyás szükséges, **·** **ki** kell választani az egyeztetési eltérésekkel való feladás jóváhagyását, mielőtt a számlát fel lehet adni áregyeztetési hibákkal és mennyiségegyeztetési hibákkal. Amennyiben nincs szükség jóváhagyásra és nem jelenik meg hibaüzenet, a számlázási folyamat folytatható.
 
 
 További tudnivalókért lásd: [Kötelezettségek számlaegyeztete – áttekintés](accounts-payable-invoice-matching.md).

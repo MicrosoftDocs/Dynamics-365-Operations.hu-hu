@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 560b62183f9c0c45c872998373a90dc9dc0ebbb3
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 5d06f05ca27ed8fe58a9a24fcde8c0082662b866
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571713"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103112"
 ---
 # <a name="category-requests-from-vendors"></a>Szállítók kategóriakérései
 
@@ -26,11 +26,11 @@ A szállítók a kategóriakérési folyamat során új beszerzési kategóriák
 
 A kategóriakéréseket a szállítók kezdeményezik a **Szállítói adatok** munkaterületén. Ezután elküldik őket ellenőrzésre és jóváhagyásra az ügynökségnek. A jóváhagyott kategóriákat a rendszer hozzáadja a szállító számlájához tartozó beszerzési kategóriák listájához.
 
-## <a name="turn-on-the-feature-in-your-system"></a>A funkció bekapcsolása a rendszerben
+## <a name="turn-the-category-requests-from-vendors-feature-on-or-off"></a>A kategóriakérések be- és kikapcsolása a szállítóktól
 
-Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciót, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) pontba, és kapcsolja be a *Beszerzési kategóriák igénylésének engedélyezése szállítók számára szállítói együttműködés által* funkciót.
+Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy *kapcsolhatnak*[be](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és kapcsolhatnak ki, hogy a Szolgáltatáskezelési munkaterület szállítói együttműködési funkciójával keresi meg, hogy a szállítók alkalmazhatják-e a beszerzési kategóriákat.
 
-A funkció bekapcsolása után továbbra is hozzáadhat manuálisan is beszerzési kategóriákat a szállítói számlákhoz. További információk: [Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan](tasks/approve-vendors-specific-procurement-categories.md).
+Ha ez a funkció be van kapcsolva, akkor is manuálisan hozzá lehet adni beszerzési kategóriákat a szállítói számlákhoz. További információk: [Szállítók jóváhagyása konkrét beszerzési kategóriákra vonatkozóan](tasks/approve-vendors-specific-procurement-categories.md).
 
 ## <a name="vendor-collaboration-requirements"></a>Szállítói együttműködés követelményei
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: e24bceac9457212ecaafda876d19ba62df049371
-ms.sourcegitcommit: 2113678369f47944f8725ca656f461fa159f87f6
-ms.translationtype: HT
+ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2021
-ms.locfileid: "7471836"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103638"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Változatok létrehozása tervezési termékekhez
 
@@ -23,15 +23,9 @@ ms.locfileid: "7471836"
 
 Ez a témakör azt ismerteti, hogyan lehet változatokat létrehozni tervezési termékekhez.
 
-## <a name="turn-on-variant-generation-for-engineering-products"></a>Változatgenerálás bekapcsolása tervezési termékekhez
+## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>Változatok generálása mérnöki termékeknél be- és kikapcsolása
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
-
-- **Modul:** *Tervezési változáskezelés*
-- **Funkciónév:** *Változatgenerálás tervezési termékekhez*
-
-> [!IMPORTANT]
-> A *Változatgenerálás tervezési termékekhez* funkció csak a *Tervezési változáskezelés* konfigurációs kulcs engedélyezése után lesz látható a rendszerben. További utasításokat a [Tervezési változtatáskezelés – áttekintés](product-engineering-overview.md) részben talál.
+Az ebben a *témakörben* *leírt* funkciókhoz a mérnöki termékekhez szükséges, hogy mind a Mérnöki változáskezelés, mind a Változatok generálása be legyen kapcsolva a rendszerben. A szolgáltatások be- és kikapcsolásáról a Géptervezési változáskezelés áttekintése című témakörben [olvashat](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Tervezési termék egy vagy több új változatának létrehozása
 

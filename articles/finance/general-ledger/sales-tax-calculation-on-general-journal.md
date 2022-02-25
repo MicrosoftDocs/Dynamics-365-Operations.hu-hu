@@ -2,7 +2,7 @@
 title: Áfa számítása az általános naplósorokhoz
 description: Ez a témakör azt mutatja be, hogy hogyan történik az ÁFA számítása a főkönyvi naplósorokban a különböző típusú számlákhoz (szállító, vevő, főkönyv és projekt).
 author: EricWangChen
-ms.date: 04/22/2021
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 654917705400e0aecc7240e12f68d578827f6ad2
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
-ms.translationtype: HT
+ms.openlocfilehash: 684b38a4940ff00978201334d1db0cef87b79b35
+ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488311"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8311954"
 ---
 # <a name="sales-tax-calculation-on-general-journal-lines"></a>Áfa számítása az általános naplósorokhoz
 [!include [banner](../includes/banner.md)]
@@ -77,19 +77,9 @@ A következő ábra grafikusan illusztrálja a szabályt.
 
 ### <a name="account-type-is-customer"></a>Számla típusa ügyfél
 
-Ha egy bizonylat olyan naplósorral rendelkezik, amelyben a számlatípus a **Ügyfél**, akkor a bizonylat minden naplója ugyanarra az adózási irányra vonatkozik. A következő pontok a lehetséges adóügyi irányokat mutatják az ügyfél számlái esetében.
+Ha egy bizonylatnak olyan naplósora van **, ahol a számlatípus Vevő**, akkor a bizonylat minden naplósora ugyanazt az adóirányt alkalmazza. 
 
-• Ha az áfakód adómentes, akkor a forgalmi adó iránya adómentes vásárlás.
-
-• Ha az áfakód közösségen belüli áfa, akkor a forgalmi adó iránya visszaigényelhető áfa.
-
-• Ha az áfakód fordított áfa, akkor a forgalmi adó iránya visszaigényelhető áfa.
-
-Ellenkező esetben az áfa iránya a fizetendő áfa.
-
-A következő ábra grafikusan illusztrálja a szabályt.
-
-![Az ügyfélhez tartozó számlák adózási irányának lehetőségei.](media/Sales-Tax-Direction-Customer.jpg)
+Ha az áfakód adómentes, akkor az áfa iránya adómentes értékesítés. Ellenkező esetben az áfa iránya a fizetendő áfa.
 
 ### <a name="account-type-is-ledger"></a>Számla típusa Főkönyv
 

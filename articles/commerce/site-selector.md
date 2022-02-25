@@ -1,16 +1,13 @@
 ---
-title: Oldalválasztó modul
-description: Ez a témakör az oldalválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+title: Webhelyválasztó modul
+description: Ez a témakör leírja a webhelyválasztó modult, és bemutatja, hogyan lehet a webhely lapjaihoz hozzáadni Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-manager: annbe
-ms.date: 10/20/2020
+ms.date: 02/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,42 +15,42 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: b4e5f715efcac7f883df99508d282db904be0d80
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
-ms.translationtype: HT
+ms.openlocfilehash: 381163fdd6180a76def2e1bfb733f597b611c517
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665223"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109706"
 ---
-# <a name="site-selector-module"></a>Oldalválasztó modul
+# <a name="site-picker-module"></a>Webhelyválasztó modul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör az oldalválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+Ez a témakör leírja a webhelyválasztó modult, és bemutatja, hogyan lehet a webhely lapjaihoz hozzáadni Microsoft Dynamics 365 Commerce.
 
-## <a name="overview"></a>Áttekintés
+Ha egy vállalatnak különböző webhelyei vannak a különböző piacokon, régiókban és nyelvi területeken, a felhasználóknak egyszerű lehetőséget kell kapniuk a helyek közötti váltásra, hogy kiválaszthassák a preferált vásárlási oldalt. Ennek az esetnek az alkalmazással a webhelyválasztó modul lehetővé teszi a felhasználók számára a több telephelyen keresztüli böngészést.
 
-Ha egy vállalatnak különböző webhelyei vannak a különböző piacokon, régiókban és nyelvi területeken, a felhasználóknak egyszerű lehetőséget kell kapniuk a helyek közötti váltásra, hogy kiválaszthassák a preferált vásárlási oldalt. Ennek biztosítása érdekében az oldalválasztó modul lehetővé teszi a felhasználók számára a különböző webhelyek böngészését.
-
-Az oldalválasztó modult be kell állítani azoknak a webhelyeknek (piacoknak, régióknak vagy nyelvi területeknek) a listájára, amelyeket a webhely felhasználói megtekinthetnek.
+A webhelyválasztó modulban konfigurálni kell azokat a helyeket (piacokat, régiókat vagy helyeket), amelyek között a felhasználók böngészni tudnak.
 
 > [!NOTE]
-> Az oldalválasztó modul a Dynamics 365 Commerce 10.0.14-es verziójában érhető el.
+> A webhelyválasztó modul a Dynamics 365 Commerce 10.0.14-es verzióban érhető el.
 
-Az alábbi ábra a webhely fejlécében található oldalválasztó modult mutatja be.
+A következő ábra egy olyan helyválasztó modulra mutat be, amely megjelenik egy olyan helyválasztó modulra, amely megjelenik a webhely oldalának fejlécében.
 
-![Példa oldalválasztó modulra a webhely fejlécében](./media/ecommerce-sitepicker.PNG)
+![Példa a webhelyválasztó modulra a webhelyoldal fejlécében.](./media/ecommerce-sitepicker.PNG)
 
-## <a name="site-selector-module-properties"></a>Az oldalválasztó modul tulajdonságai
+## <a name="site-picker-module-properties"></a>Webhelyválasztó modul tulajdonságai
 
 | Tulajdonság neve | Érték                 | Leírás |
 |---------------|-----------------------|-------------|
-| Fejléc       | Szöveg                  | A modul címe. |
+| Címsor       | Szöveg                  | A modul címe. |
 | Webhelybeállítások  | Név, kép, URL      | Ez a tulajdonság megad egy nevet, egy hivatkozást a webhely kezdőlapjára, valamint egy opcionális képet a modulban található minden oldal számára. A kép lehet egy zászó, vagy a piac, régió vagy nyelvi terület egyéb ábrázolása. |
 
-## <a name="add-a-site-selector-module-to-a-page"></a>Oldalválasztó modul hozzáadása a laphoz
+## <a name="add-a-site-picker-module-to-a-page"></a>Webhelyválasztó modul hozzáadása egy laphoz
 
-Az oldalválasztó modul az oldalválasztó helyen adható hozzá a [Fejlécmodulhoz](author-header-module.md). A hozzáadása után megadhatja a modul fejlécét és az oldal beállításait.
+A webhelyválasztó modul hozzáadható **a fejlécmodul Webhelyválasztó-réséhez**[...](author-header-module.md). A helyválasztó modul hozzáadása után megadhatja a modul fejlécét és a hely beállításait. A fejlécmodul általában egy fejlécrészletben található, amely egy hely e-commerce lapjai között megosztható. A következő példában a **helyválasztó** modul hozzá lett adva egy **HeaderContainer nevű fejlécrészletben szereplő fejlécmodul Webhelyválasztó-réséhez**.
+
+![Példa a helyválasztó modulra fejlécrészletben.](./media/ecommerce-sitepicker-2.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -64,3 +61,6 @@ Az oldalválasztó modul az oldalválasztó helyen adható hozzá a [Fejlécmodu
 [Útkövetési modul](add-breadcrumb.md)
 
 [Navigációs menü modul](nav-menu-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

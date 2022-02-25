@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-05-17
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 6b8d663fa9743fae83654ed9938b4131e0fa08b9
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.openlocfilehash: a687c26cacc0dbdaf0091b2d26277864553ca1bf
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902192"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103313"
 ---
 # <a name="assign-step-icons-and-titles-for-the-warehouse-management-mobile-app"></a>Lépésikonok és -címek hozzárendelése a Warehouse Management mobilalkalmazáshoz
 
@@ -27,12 +27,9 @@ A következő ábrákon az látható, hogyan jelennek meg a lépésikonok és -c
 
 ![Példa lépésikonra és lépéscímre a Warehouse Management mobilalkalmazásban.](media/step-icon-example.png "Példa lépésikonra és lépéscímre a Warehouse Management mobilalkalmazásban")
 
-## <a name="turn-on-this-feature-in-your-system"></a>A funkció bekapcsolása a rendszerben
+## <a name="turn-this-feature-on-or-off"></a>A funkció be- és kikapcsolása
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításait a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
-
-- **Modul:** *Raktárkezelés*
-- **Funkciónév:** *Felhasználói beállítások, ikonok és lépéscímek az új raktári alkalmazáshoz*
+Az ebben a témakörben *leírt funkciók használatához a rendszer számára be kell kapcsolva lennie az új raktári alkalmazás felhasználói beállításainak,* ikonjainak és lépéscímének. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
 
 ## <a name="standard-step-ids-classes-and-icons"></a>Szabványos lépések azonosítói, osztályai és ikonjai
 

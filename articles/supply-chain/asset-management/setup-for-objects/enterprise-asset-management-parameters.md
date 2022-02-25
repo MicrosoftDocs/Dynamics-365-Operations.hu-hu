@@ -1,12 +1,10 @@
 ---
 title: Az Eszközkezelés paraméterei
 description: Az Eszközkezelésben be kell állítani az eszközökkel, a munkarendelésekkel és a munkarendelések ütemezésével kapcsolatos általános paramétereket.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 02/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetParameters
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5e4b76ba90ab03cd35e72eff8acc89f780659fa5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: 1659fd3b4c173ffe09f245631309d329bba5b1bd
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020653"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105489"
 ---
 # <a name="asset-management-parameters"></a>Az Eszközkezelés paraméterei
 
@@ -51,7 +49,7 @@ A **Munkarendelések lap** a következő beállításokat tartalmazza:
 - Az **Alapértelmezett munkarendelési típus** határozza meg a munkarendelés létrehozásakor használt normál beállításokat.  
 - A **Megelőző munkarendelés típusa** határozza meg a munkarendelések karbantartási tervekből történő létrehozásakor használt munkarendelési típust. Ha üresen hagyja a mezőrt a rendszer az **Alapértelmezett munkarendelési típus** mezőben megadott munkarendelési típust használja.  
 - A **Kapcsolódó munkarendelési maszk** mezőben határozható meg az egy munkarendeléssel összekapcsolható munkarendelések maximális száma. Példa: a ## értékkel maximálisan 99 összekapcsolt munkarendelés hozható létre. Ha az itt leírt módon határoz meg egy maszkot, a társított munkarendelések számozása a következő mintát követi: [annak a munkarendelésnek az azonosítója, amelyhez társítva van egy munkarendelés]-01, -02, -03, stb. Ha nem definiál maszkot ebben a mezőben, akkor a társított munkarendelés a sorban következő munkarendelési azonosítót kapja.  
-- Ha automatikusan át szeretné másolni a munkarendeléseken regisztrált hibákat az összekapcsolt karbantartási kérésekhez, válassza a **Hibák másolása** váltógomb **Igen** beállítását. 
+- Válassza **az Igen** **lehetőséget a Hibák másolása beállításhoz**, ha automatikusan szeretné átmásolni a karbantartási kérések során regisztrált hibákat a kapcsolódó munkarendelésekbe. 
 - A **Szint** mezőben határozhatja meg a munkavégzési helyszín azon szintjét, amelyet a rendszer automatikusan beszúr egy munkarendeléshez, ha minden összekapcsolt munkarendelési feladat ugyanarra a munkavégzési helyszínre utal. Ha nem az összes munkarendelési feladat van a meghatározott szint ugyanazon munkavégzési helyszínéhez kapcsolva, a **Munkavégzési helyszín** mező üresen marad a munkarendeléshez. Példa: ha az „1” számot írja be a mezőbe, az lesz a felső szint a munkavégzési helyszín struktúrájában. Ha a „0” számot írja be a mezőbe, akkor nem határozza meg konkrétan a munkavégzési helyszín szintjét, csak azt, hogy egy munkarendelés összes munkarendelési feladatát ugyanahhoz a munkavégzési helyszínhez kell kapcsolni, hogy az adott munkavégzési helyszínt hozzá lehessen adni a munkarendeléshez.  
 - A munkarendelésekhez tartozó felhasználás feladásakor használt naplókat az **Általános** gyorslap **Óra**, **Cikk** és **Költség** mezőjében lehet kiválasztani.  
 - A **Termék forrásnyelve** mezőben válassza ki, hogy melyik nyelvet szeretné használni az Eszközkezelés jelentéseiben lévő terméknevekhez. Kiválaszthatja a vállalati számlához beállított nyelvet, vagy a pillanatnyilag bejelentkezett felhasználóhoz beállított nyelvet.  
@@ -101,8 +99,11 @@ Az alábbi listában leírt összes mező a kiszámított értékelési pontszá
 
 ## <a name="the-document-types-tab"></a>A Dokumentum típusok lap
 
-Válassza ki azokat a dokumentumtípusokat, amelyeket elérhetővé szeretne tenni a munkarendelési jelentéshez társított mellékletek nyomtatásához. Ehhez válassza a dokumentumtípust a **Rendelkezésre áll** szakaszban, majd az ![előre nyíl](media/15-setup-for-objects.png) gombot. Ha el szeretné távolítani a kijelölt dokumentumtípust, válassza ki a **Kijelölve** szakaszban, és válassza a ![vissza nyíl](media/16-setup-for-objects.png) gombot.
+Válassza ki azokat a dokumentumtípusokat, amelyeket elérhetővé szeretne tenni a munkarendelési jelentéshez társított mellékletek nyomtatásához. Ehhez válassza a dokumentumtípust a **Rendelkezésre áll** szakaszban, majd az ![előre nyíl.](media/15-setup-for-objects.png) gombot. Ha el szeretné távolítani a kijelölt dokumentumtípust, válassza ki a **Kijelölve** szakaszban, és válassza a ![vissza nyíl](media/16-setup-for-objects.png) gombot.
 
 ## <a name="the-number-sequences-tab"></a>A Számsorozatok lap
 
 Válassza ki a szükséges számsorozatot ebben a szakaszban. Az eszközökhöz két számsorozat használható: egy a manuálisan létrehozott eszközökhöz, egy pedig a függőben lévő eszközökkel létrehozottakhoz.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

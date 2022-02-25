@@ -1,12 +1,10 @@
 ---
 title: E-mail ER céltípusa
-description: Ez a témakör elmagyarázza, hogyan lehet beállítani egy e-mail célhelyet a kimenő dokumentumok létrehozásához konfigurált elektronikus jelentési (ER) formátumú fájlok MAPPA vagy FÁJL összetevőihez.
+description: Ez a témakör bemutatja, hogyan kell konfigurálni egy e-mail-célt az Elektronikus jelentéskészítési (ER) formátumok egyes MAPPA vagy FÁJL összetevőihez.
 author: NickSelin
-manager: AnnBe
-ms.date: 12/03/2020
+ms.date: 08/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: c6242ecb44a206aacc0e1b1b3c4f588eadd18882
-ms.sourcegitcommit: 53174ed4e7cc4e1ba07cdfc39207e7296ef87c1f
-ms.translationtype: HT
+ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "4690126"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8324008"
 ---
 # <a name="email-er-destination-type"></a>E-mail ER céltípusa
 
@@ -44,28 +42,59 @@ Több **Mappa** vagy **Fájl** is [csoportosítható](#grouping) együtt, majd a
 
 Az összetevők több csoportja konfigurálható egyetlen ER formátumkonfigurációhoz. Ily módon egy e-mail célhelyet állíthat be az összetevők minden csoportjához és minden összetevőhöz egy e-mail célhelyet.
 
+## <a name="enable-an-email-destination"></a>E-mail céljának engedélyezése
+
+Egy vagy több kimeneti fájl e-mailben történő elküldéséhez kövesse az alábbi lépéseket.
+
+1. Az **Elektronikus jelentéskészítés célja** lapon, a **Fájl célja** gyorslapon válasszon ki egy komponenst vagy komponenscsoportot a rácsban.
+2. Válassza a **Beállítások** lehetőséget, majd a **Célbeállítások** párbeszédpanelen az **E-mail** lapon az **Engedélyezve** opciót állítsa **Igen**-re.
+
+[![Az Engedélyezve beállítás Igen értékre állítása egy e-mail célhelyhez.](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+
 ## <a name="configure-an-email-destination"></a>Egy e-mail-célhely konfigurálása
 
-Kimeneti fájl vagy több kimeneti fájl e-mailben történő küldéséhez az **Elektronikus jelentéskészítés célja** lap **Fájl célhelye** gyorslapján a rácsban válassza ki az összetevőt vagy az összetevők csoportját, majd válassza ki a **Beállításokat**. A megjelenő **Célhely beállításai** párbeszédpanel **E-mail** lapján az **Engedélyezve** beállítást állítsa **Igen** értékre. Ezután megadhatja e-mail címzettjeit, és szerkesztheti a tárgyát és szövegét. Beállíthat állandó szöveget az e-mail tárgyaként és szövegeként, illetve használhat ER-[képleteket](er-formula-language.md) az e-mail szövegének dinamikus létrehozására.
+### <a name="email-content"></a>E-mail tartalma
 
-Elektronikus jelentéstételhez e-mail-címeket két módon konfigurálhat. A konfiguráció ugyanúgy fejezhető be, mint a Nyomtatás kezelése funkció. Ezenfelül e-mail-címet megoldhat úgy is, hogy képlettel közvetlenül hivatkozik az ER-konfigurációra.
+Szerkesztheti az e-mail üzenet tárgyát és szövegét.
 
-[![Az Engedélyezve beállítás Igen értékre állítása egy e-mail célhelyhez](./media/ER_Destinations-EnableSingleDestination.png)](./media/ER_Destinations-EnableSingleDestination.png)
+A **Tárgy** mezőbe írja be az e-mail tárgyának szövegét, amely a futáskor generált elektronikus üzenet tárgymezőjében jelenjen meg. A **Törzs** mezőbe írja be az e-mail szövegét, amely az elektronikus üzenet törzs mezőjében jelenik meg. Beállíthat állandó szöveget az e-mail tárgyához és törzséhez, vagy [ER-képletekkel](er-formula-language.md) dinamikusan létrehozhatja az e-mail szövegét futásidőben. A konfigurált képletnek [String](er-formula-supported-data-types-primitive.md#string) típusú értéket kell visszaadnia.
+
+Az e-mail törzse az e-mail klienstől függően TEXT vagy HTML formátumban készül. Bármilyen elrendezést, stílust és védjegyezést használhat, amit a HTML és a szövegközti stíluslapok (CSS) lehetővé tesznek.
+
+> [!NOTE]
+> Az e-mail kliensek olyan elrendezési és stílusbeli korlátozásokat írnak elő, amelyekhez HTML-kiigazítás szükséges, és CSS amit az üzenet törzséhez használhat. Javasoljuk, hogy ismerkedjen meg a HTML létrehozásának legjobb gyakorlataival, amelyeket a legnépszerűbb e-mail kliensek támogatnak.
+>
+> A megfelelő kódolást használja a kocsivissza megvalósításához, a törzs formázásától függően. További információért lásd a [String](er-formula-supported-data-types-primitive.md#string) adattípus definícióját.
+
+### <a name="email-addresses"></a>E-mail címek
+
+Megadhatja az e-mail feladóját és az e-mail címzettjeit. Alapértelmezés szerint az e-maileket az aktuális felhasználó nevében küldi a rendszer. Más e-mail feladó megadásához a **Feladó** mezőt kell beállítania.
+
+> [!NOTE]
+> Amikor be van állítva egy e-mail célja, a **Feladó** mező csak a `ERFormatDestinationSenderEmailConfigure`, **A feladó e-mail címének beállítása ER formátumú célállomásokhoz** biztonsági jogosultsággal rendelkező felhasználók számára látható.
+>
+> Amikor egy e-mail céljának módosítását kínálja fel a rendszer [futási időben](electronic-reporting-destinations.md#security-considerations), a **From** mező csak a `ERFormatDestinationSenderEmailMaintain`, **A feladó e-mail címének fenntartása az ER formátumú célhoz** biztonsági jogosultsággal rendelkező felhasználók számára látható.
+>
+> Ha a **Feladó** mezőt az aktuális felhasználóétól eltérő e-mail cím használatára konfigurálja, akkor a **Küldés mint** vagy a **Küldés más nevében** engedélyt előzetesen helyesen kell [beállítani](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group). Ellenkező esetben a következő kivételt dobja a rendszer futás közben: „Nem lehet e-mailt küldeni \<from email account\> feladóval a(z) \<current user account\> fiókból, kérjük ellenőrizze a(z) \<from email account\> fiók »Send as« engedélyeit.”
+
+A **Feladó** mezőt úgy is beállíthatja, hogy egynél több e-mail címet adjon vissza. Ebben az esetben a lista első címét lesz e-mail feladójának címe.
+
+Az e-mail címzettek megadásához konfigurálnia kell a **Címzett** és a **Cc** (opcionális) mezőket.
+
+Elektronikus jelentéstételhez e-mail-címeket két módon konfigurálhat. A konfiguráció ugyanúgy végezhető el, mint a Nyomtatás kezelése funkció esetben. Ezenfelül e-mail-címet feloldhat úgy is, hogy képlettel közvetlenül hivatkozik az ER-konfigurációra.
 
 ## <a name="email-address-types"></a>E-mail-címek típusai
 
-Ha a **Cél beállításai** párbeszédpanel **Címzett** vagy **Másolatot kap** mezője mellett a **Szerkesztés** lehetőséget választja , megjelenik az **E-mail címzettje** párbeszédpanel. Válassza a **Hozzáadás** lehetőséget, majd válassza ki a használandó e-mail-cím típusát. A jelenleg támogatott e-mail-típusok a **Konfigurációs e-mail** és a **Nyomtatás kezelése e-mail**.
+Ha a **Szerkesztés** lehetőséget választja a **Feladó**, a **Címzett** vagy a **Cc** mező mellett a **Célbeállítások** párbeszédpanelen, akkor megjelenik a megfelelő **Email feladó**, **Email címzett** vagy **Email cc** párbeszédpanel. Itt beállíthatja az e-mail feladóját és az e-mail címzettjeit. Válassza a **Hozzáadás** lehetőséget, majd válassza ki a használandó e-mail-cím típusát. A jelenleg támogatott e-mail-típusok a **Konfigurációs e-mail** és a **Nyomtatás kezelése e-mail**.
 
-[![Az e-mail cím típusának kiválasztása](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
+[![Az e-mail-cím típusának kiválasztása.](./media/ER_Destinations-EmailSelectAddressType.png)](./media/ER_Destinations-EmailSelectAddressType.png)
 
 ### <a name="print-management-email"></a>Kezelési e-mail nyomtatása
 
-Ha e-mail cím típusaként a **Nyomtatás kezelése e-mail** lehetőséget választja , a következő mezők beállításával megadhatja a rögzített E-mail címeket az **E-mail címzettje** párbeszédpanelen:
+Ha e-mail címtípusként a **Nyomtatáskezelési e-mail** lehetőséget választja, a következő mezők beállításával fix e-mail címeket adhat meg az **E-mail feladója**, az **E-mail címzettje** vagy az **E-mail cc** párbeszédpanelen:
 
 - Az **E-mail forrása** mezőben válassza a **Nincs** lehetőséget.
 - A **További e-mail-címek „;”-el elválasztva** mezőben adja meg a rögzített e-mail-címeket.
-
-![Fix e-mail-cím konfigurálása](./media/er_destinations-emailfixedaddress.png)
 
 Azt is megteheti, hogy az e-mail címeket annak a félnek a kapcsolattartási adataiból szerzik be, akinek kimenő dokumentumot hoz létre. Nem rögzített email-cím használatához az **E-mail forrása** mezőben válassza ki a fájl címzettjének [szerepkörét](../../fin-ops/organization-administration/overview-global-address-book.md#party-roles). A következő szerepkörök támogatottak:
 
@@ -78,6 +107,7 @@ Azt is megteheti, hogy az e-mail címeket annak a félnek a kapcsolattartási ad
 - Pályázó
 - Potenciális szállító
 - Tiltott szállító
+- Jogi személy
 
 Ha például a szállítói kifizetések feldolgozására használt ER formátumhoz szeretne e-mail célt konfigurálni, válassza ki a **Szállító** szerepkört.
 
@@ -88,11 +118,9 @@ Miután kiválasztotta a kívánt szerepkört, válassza a **Kapcsolás** gombot
 
 A **Képlettervező** lap **Képlet** mezőjébe írja be a támogatott szerepkörhöz tartozó dokumentumspecifikus hivatkozást. A hivatkozás beírása helyett az **Adatforrás** ablaktáblában keresse meg és válassza ki azt az adatforrás-csomópontot, amely a konfigurált szerepkör számláját jelöli, majd válassza az **Adatforrás hozzáadása lehetőséget** a képlet frissítéséhez. Ha például a szállítói kifizetések feldolgozására használt **ISO 20022 átutalás** konfigurációhoz az e-mail célhelyet konfigurálja , akkor a szállítói számlát képviselő csomópont a következő: `'$PaymentsForCoveringLetter'.Creditor.Identification.SourceID`.
 
-![E-mail-forrásfiók konfigurálása](./media/er_destinations-emaildefineaddresssource.gif)
+![E-mail-forrásfiók konfigurálása.](./media/er_destinations-emaildefineaddresssource.gif)
 
 Ha a konfigurált szerepkör számlaszáma egyedi az egész Microsoft Dynamics 365 Finance egész példányra vonatkozóan, akkor a **E-mail címzettje** párbeszédpanel **E-mail forrásának vállalata** mezője nem maradhat üresen.
-
-![Üres E-mail forrásának vállalata mező](./media/er_destinations-emaildefineaddresssourceformula.png)
 
 Olyan helyzet is előfordulhat, amikor a [Globális címjegyzékben](../../fin-ops/organization-administration/overview-global-address-book.md) különböző feleket különböző vállalatokban ([jogi személyek](../../fin-ops/organization-administration/organizations-organizational-hierarchies.md#legal-entities)) regisztráltak, olyan módon hogy minden felhasználó ugyanazt a számlaszámot használja a konfigurált szerepkör kitöltéséhez. Ebben az esetben a konfigurált szerepkör számlaszáma nem egyedi a teljes Finance példány esetében. Ennélfogva egy fél explicit kiválasztása esetén nem adható meg csak számlaszám. Meg kell adnia azt a vállalatot is, amelynél a fél regisztrálva van a konfigurált szerepkör kitöltéséhez. Válassza a **Kapcsolás** gombot (lánc szimbólum) az **E-mail címzettje** párbeszédpanel **E-mail forrás vállalata** mezőjét a [Képlettervező lap](general-electronic-reporting-formula-designer.md) megnyitásához. Ezután ezen a lapon konfigurálhatja azt a képletet, amely a program futási idején a megfelelő forrást tartalmazó vállalat kódját adja vissza.
 
@@ -110,13 +138,11 @@ Ha meg szeretné adni, hogy milyen típusú e-mail címeket kell használni fut�
 > [!NOTE]
 > Ha a **Cél** mezőben a célok vannak kiválasztva és az **Elsődleges kapcsolattartó** beállítás is **Igen** értékre van beállítva, akkor a program minden olyan e-mailt használ futásidőben, amely megfelel legalább egy konfigurált feltételnek.
 
-![E-mail-forrás tulajdonságfiók konfigurálása](./media/er_destinations-emaildefineaddresssourceattributes.png)
-
 ### <a name="configuration-email"></a>Konfigurációs e-mail
 
-Válassza a **Konfigurációs e-mail** e-mail-cím típust, ha a használt konfigurációnak van egy csomópontja az adatforrásokban, amely egyetlen e-mail címet vagy több, pontosvesszővel (;) elválasztott e-mail címet ad vissza. A képlettervezőben [adatforrások](general-electronic-reporting.md#FormatComponentOutbound) és [függvények](er-formula-language.md#functions) segítségével pontosan formázott e-mail címet vagy pontosvesszővel elválasztott e-mail címeket használhat. Ha például az **ISO 20022 átutalás** konfigurációt használja, akkor az a csomópont, amely a szállító elsődleges e-mail címét jelöli a szállító elérhetőségi adataiból, amelynek a kísérőlevelet el kell küldeni, a `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Válassza a **Konfigurációs e-mail** e-mail-cím típust, ha a használt konfigurációnak van egy csomópontja az adatforrásokban, amely egyetlen e-mail címet vagy több, pontosvesszővel (;) elválasztott e-mail címet ad vissza. A képlettervező adatforrásai [és](er-formula-language.md#Functions) funkciói segítségével lehet helyesen formázott e-mail címet, illetve pontosvesszővel elválasztott, megfelelő formátumú e-mail címeket kapni. Ha például az **ISO 20022 átutalás** konfigurációt használja, akkor az a csomópont, amely a szállító elsődleges e-mail címét jelöli a szállító elérhetőségi adataiból, amelynek a kísérőlevelet el kell küldeni, a `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
-[![E-mail-cím forrásának konfigurálása](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
+[![E-mail-cím forrásának konfigurálása.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
 ## <a name="group-format-components"></a><a id="grouping"></a>Csoportformátum-összetevők
 
@@ -134,14 +160,17 @@ A formátumösszetevők csoportjának felbontásához a **Fájl célja** gyorsla
 
 A következő ábra egy olyan ER-formátum szerkezetét mutatja be, amely úgy lett beállítva, hogy egy fizetési felszólítást és megfelelő vevői számlákat tartalmazó, PDF formátumú tömörített kimenő fájlt készítsen.
 
-[![Kimenő dokumentumokat létrehozó ER-formátum szerkezete](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
+[![Kimenő dokumentumokat létrehozó ER-formátum szerkezete.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
 A következő ábra az egyes összetevők csoportosításának és az új csoport **E-mail** céljának engedélyezésének folyamatát mutatja be, hogy a rendszer a megfelelő vevői számlákkal együtt fizetési felszólítást küldjön e-mail mellékletként, ahogy az ebben a fejezetben be lett mutatva.
 
-[![Az egyes összetevők csoportosítása és az E-mail cél engedélyezése](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
+[![Az egyes összetevők csoportosítása és az E-mail cél engedélyezése.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 - [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 - [Képletszerkesztő elektronikus jelentésekhez (ER)](general-electronic-reporting-formula-designer.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

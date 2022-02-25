@@ -2,30 +2,28 @@
 title: Dokumentumirányítás elrendezés azonosítótábla-címkékhez
 description: Ez a témakör azt mutatja be, hogyan lehet használni a formázási metódusokat értékek nyomtatásához a címkékre.
 author: perlynne
-manager: tfehr
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLicensePlateLabel, WHSLicensePlateLabelBuildConfig, WHSLicensePlateLabel, WHSDocumentRoutingLayout
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2012-04-01
-ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: 8c96aef5d66ed8f8c44d74eee9b60f0a7d38a46d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.10
+ms.openlocfilehash: 9055e4c6e35099b7769faa6fc83f71523f2e64fd
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429855"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103890"
 ---
 # <a name="document-routing-layout-for-license-plate-labels"></a>Dokumentumirányítás elrendezés azonosítótábla-címkékhez
 
 [!include [banner](../includes/banner.md)]
+
 
 A dokumentumirányítási elrendezés határozza meg az azonosítótábla-címkék elrendezését, valamint a rájuk nyomtatandó adatokat. A nyomtatási műveletek aktiválási pontjait a mobileszköz menüelemeiben és a munkasablonok modulban állíthatja be.
 
@@ -53,6 +51,10 @@ A kinyomtatni kívánt értékek megtekintéséhez nyissa meg a **Raktárkezelé
 
 Számos széles körben elérhető címke-létrehozási eszköz segít a szöveg formázásában a címkék elrendezéséhez. Számos ilyen eszköz támogatja a `$FieldName$` formátumot. Mindemellett a Microsoft Dynamics 365 Supply Chain Management speciális formázási logikát használ a dokumentumirányítási elrendezés mező-hozzárendelésének részeként.
 
+## <a name="turn-on-this-feature-for-your-system"></a>A funkció bekapcsolása a rendszerhez
+
+Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a kapcsolja be az *Engedélyezett azonosítótáblacímke-elrendezések* funkciót. (Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni.)
+
 ## <a name="custom-number-formats"></a>Egyéni számformátumok
 
 Testreszabhatja a numerikus mezőértékek formátumát, amely a következő formátumú kódokkal van kinyomtatva.
@@ -71,7 +73,7 @@ A következő példák azt mutatják be, hogyan lehet testreszabni a munkamennyi
 - Ha azt szeretné, hogy a program mindig négy számjegyet jelenítse meg (nullák használatával helyőrzőként), használja `$Qty:0000$` értéket. Ha például a mennyiség 10, akkor a címkén „0010” jelenik meg.
 - Ha mindig két tizedesjegyet kíván megjeleníteni, használja a `$Qty:0.00$` értéket. Ha például a mennyiség 10, akkor a címkén „10.00” jelenik meg.
 
-A rendelkezésre álló számformátum-karakterláncok teljes listája az [Egyéni numerikus formátumú karakterláncok](https://docs.microsoft.com/dotnet/standard/base-types/custom-numeric-format-strings) című témakörben olvasható.
+A rendelkezésre álló számformátum-karakterláncok teljes listája az [Egyéni numerikus formátumú karakterláncok](/dotnet/standard/base-types/custom-numeric-format-strings) című témakörben olvasható.
 
 ## <a name="custom-string-formats"></a>Egyéni karakterlánc-formátumok
 
@@ -93,7 +95,7 @@ $PrintedDate:dd-MM-yyyy$
 
 Ebben a példában a 2020. április 30-i dátum „30-04-2020” értékkel lesz nyomtatva.
 
-A rendelkezésre álló dátum-/időformátumok teljes listája az [Egyéni dátum- és időformátum karakterláncok](https://docs.microsoft.com/dotnet/standard/base-types/custom-date-and-time-format-strings) című témakörben olvasható.
+A rendelkezésre álló dátum-/időformátumok teljes listája az [Egyéni dátum- és időformátum karakterláncok](/dotnet/standard/base-types/custom-date-and-time-format-strings) című témakörben olvasható.
 
 ## <a name="print-individual-lines-from-multiline-data"></a>Különálló sorok nyomtatása a többsoros adatokból
 
@@ -136,3 +138,6 @@ $DisplayListOfItemsNumbers()[1]$
 ## <a name="more-information-about-how-to-print-labels"></a>A címkenyomtatással kapcsolatos további információk
 
 A címkék beállításával és nyomtatásával kapcsolatos további tudnivalókat lásd az [Azonosítótábla-címke nyomtatásának engedélyezése](tasks/license-plate-label-printing.md) című témakört.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

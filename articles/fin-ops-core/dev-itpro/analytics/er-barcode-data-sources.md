@@ -2,11 +2,9 @@
 title: Vonalkód-adatforrások használata vonalkód-képek létrehozásához
 description: Ez a témakör bemutatja, hogy hogyan lehet vonalkód-adatforrásokat használni vonalkód-képek létrehozásához.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: 3fb754267de1120bc3c086d49cb7c63028183bda
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681424"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323952"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Vonalkód-adatforrások használata vonalkód-képek létrehozásához
 
 [!include[banner](../includes/banner.md)]
 
-Az [elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) keretrendszer olyan [ER-formátum összetevők](general-electronic-reporting.md#FormatComponentOutbound) tervezéséhez használható, amelyek futtathatók szükséges elektronikus és nyomtatható kimenő dokumentumok előállításához. A kimenő dokumentumok Microsoft Office formátumba történő előállításához meg kell adni a jelentés elrendezését egy Microsoft Excel dokumentummal vagy egy Microsoft Word dokumentummal a jelentés sablonjaként. Az [ER-műveleti tervező ](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) segítségével egy Excel- vagy Word-dokumentumot csatolhat egy ER-formátumhoz. A csatolt sablonban a következő névvel ellátott elemek vannak társítva a konfigurált formátum-összetevő elemeihez:
+Az Elektronikus jelentési [(ER)](general-electronic-reporting.md) keretrendszer használatával ER-formátumösszetevők tervezhetők, amelyek futtatásával a szükséges elektronikus és nyomtatható kimenő dokumentumok generálhatók. A kimenő dokumentumok Microsoft Office formátumba történő előállításához meg kell adni a jelentés elrendezését egy Microsoft Excel dokumentummal vagy egy Microsoft Word dokumentummal a jelentés sablonjaként. Az [ER-műveleti tervező ](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) segítségével egy Excel- vagy Word-dokumentumot csatolhat egy ER-formátumhoz. A csatolt sablonban a következő névvel ellátott elemek vannak társítva a konfigurált formátum-összetevő elemeihez:
 
 - Tartalmi vezérlőelemek a Word programban
 - Névvel ellátott lapok, tartományok, cellák, alakzatok és képek az Excel programban
@@ -39,7 +37,7 @@ Az ER most már támogatja a **Vonalkód** adatforrástípust. Ebből következ�
 
 A következő helyőrzők használhatók a jelentéskészítő sablonokban a vonalkódképek megadásához:
 
-- [Kép](https://docs.microsoft.com/office/client-developer/word/content-controls-in-word) tartalmi vezérlőelem a Word programhoz
+- [Kép](/office/client-developer/word/content-controls-in-word) tartalmi vezérlőelem a Word programhoz
 - [Kép](https://support.office.com/article/insert-pictures-3c51edf4-22e1-460a-b372-9329a8724344) objektum az Excel programban
 
 A **Vonalkód** típusú adatforrás használatával a következő formátumokban lehet vonalkódokat generálni:
@@ -118,21 +116,21 @@ Ha még nem végezte el a példát a következő témakörben: [Beágyazott kép
 
 | Tartalom leírása         | Fájlnév                   |
 |-----------------------------|-----------------------------|
-| ER-adatmodell konfigurációja | Model for cheques.xml       |
-| ER-formátum konfigurációja     | Cheques printing format.xml |
+| ER-adatmodell konfigurációja | [Model for cheques.xml](https://download.microsoft.com/download/6/e/a/6ea166fd-1382-4fdb-8dcb-0f13379f9c8e/Modelforcheques.xml)      |
+| ER-formátum konfigurációja     | [Cheques printing format.xml](https://download.microsoft.com/download/1/7/c/17c301e3-c4ee-4886-ae75-440fcc002c8c/Chequesprintingformat.xml) |
 
 Ezenkívül töltse le a következő Excel-fájlt, amely tartalmazza a megadott ER-megoldás módosított sablonját.
 
 | Tartalom leírása | Fájlnév                 |
 |---------------------|---------------------------|
-| Jelentéssablon     | Check template Excel.xlsx |
+| Jelentéssablon     | [Check template Excel.xlsx](https://download.microsoft.com/download/3/b/d/3bd3b944-da8f-43b4-8533-3c1292a4c3ef/CheckTemplateExcel.xlsx) |
 
 ### <a name="activate-a-configuration-provider"></a><a name="ExampleProvider"></a>Konfigurációszolgáltató aktiválása
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 2. Győződjön meg róla, hogy a **Honosítási konfigurációk** lap **Konfigurációs szolgáltatók** szakaszában a **Litware, Inc.** [konfigurációs szolgáltatója](general-electronic-reporting.md#Provider) szerepel a listán, és aktívként van megjelölve. Ha nem szerepel a listán, vagy ha nem aktívként van megjelölve, hajtsa végre a [Konfigurációs szolgáltató létrehozása és megjelölje aktív](tasks/er-configuration-provider-mark-it-active-2016-11.md) témakör lépéseit.
 
-![Mintavállalat beállítása aktívként a Lokalizációs konfigurációk oldalon](./media/er-barcode-data-source-active-provider.png)
+![Mintavállalat beállítása aktívként a Lokalizációs konfigurációk oldalon.](./media/er-barcode-data-source-active-provider.png)
 
 ### <a name="import-the-provided-er-solution"></a><a name="ExampleImportSolution"></a>A nyújtott ER-megoldás importálása
 
@@ -162,14 +160,14 @@ Ezenkívül töltse le a következő Excel-fájlt, amely tartalmazza a megadott 
 7. A Művelet ablaktáblán válassza ki a **Nyomtatási tesz** elemet.
 8. A párbeszédpanelen állítsa az **Átruházható csekkformátum** beállítását **Igen** értékre, majd kattintson az **OK** gombra.
 
-    ![Elrendezés ellenőrzése – teszt párbeszédpanel nyomtatása](./media/er-barcode-data-source-check-layout.png)
+    ![Elrendezés ellenőrzése – teszt párbeszédpanel nyomtatása.](./media/er-barcode-data-source-check-layout.png)
 
 ### <a name="review-the-generated-payment-check"></a><a name="ExampleReviewGeneratedCheque"></a>A létrehozott kifizetés csekk ellenőrzése
 
 - A létrejövő csekk megnyitása az Excel programban.
 2. Tekintse át a létrehozott csekket.
 
-    ![A létrejött fizetési csekk az Excel programban](./media/er-barcode-data-source-cheque1.png)
+    ![A létrejött fizetési csekk az Excel programban.](./media/er-barcode-data-source-cheque1.png)
 
 ### <a name="modify-the-format-of-the-provided-er-solution"></a><a name="ExampleModifyFormat"></a>A megadott ER-megoldás formátumának módosítása
 
@@ -177,7 +175,7 @@ Ezenkívül töltse le a következő Excel-fájlt, amely tartalmazza a megadott 
 
 Az Excel asztali alkalmazással megnyithatja a korábban importált **Cheque template Excel.xlsx** fájlt. Figyelje meg, hogy ez a sablon különbözik a fizetési csekk előállításához használt sablontól a megadott ER-megoldásban. Ezenkívül tartalmaz egy **AmountBarcode** elemet a vonalkódképhez.
 
-![AmountBarcode elem az Excel-sablonban](./media/er-barcode-data-source-cheque2.png)
+![AmountBarcode elem az Excel-sablonban.](./media/er-barcode-data-source-cheque2.png)
 
 Most módosítania kell az ER-megoldást, majd [újra alkalmaznia kell](modify-electronic-reporting-format-reapply-excel-template.md) a módosított sablont.
 
@@ -188,7 +186,7 @@ Most módosítania kell az ER-megoldást, majd [újra alkalmaznia kell](modify-e
 5. Az ER műveleti tervezőben válassza ki az oldal jobb oldalán található **Leképezés** lapot, majd a bal oldali formátum ablaktáblán válassza a **Kibontás/összecsukás** parancsot.
 6. Figyelje meg, hogy minden cellaformázás-elem kötődik a megfelelő adatforrásokhoz.
 
-    ![A cellaformázás elemek kötése az ER műveletek tervezője adatforrásaihoz](./media/er-barcode-data-source-cells-bound.png)
+    ![A cellaformázás elemek kötése az ER műveletek tervezője adatforrásaihoz.](./media/er-barcode-data-source-cells-bound.png)
 
 7. Válassza ki a **Formátum** lapot az oldal jobb oldalán.
 8. A műveleti ablaktáblán válassza ki a három pontot (**...**), majd válassza az **Importálás** elemet.
@@ -197,7 +195,7 @@ Most módosítania kell az ER-megoldást, majd [újra alkalmaznia kell](modify-e
 11. Válassza ki az oldal jobb oldalán található **Leképezés** lapot, majd a bal oldali formátum ablaktáblán válassza a **Kibontás/összecsukás** parancsot.
 12. Figyelje meg, hogy az **AmountBarcode** cellaelem hozzá van rendelve a formátumhoz. Ez az elem ahhoz az **AmountBarcode** elemhez van társítva, amely a módosított Excel-sablonhoz a vonalkód-kép helyőrzőként lett hozzáadva.
 
-    ![Az AmountBarcode cellaelem hozzáadva a formátumhoz az ER műveletek tervezőjében](./media/er-barcode-data-source-cell-added.png)
+    ![Az AmountBarcode cellaelem hozzáadva a formátumhoz az ER műveletek tervezőjében.](./media/er-barcode-data-source-cell-added.png)
 
 #### <a name="add-a-new-barcode-data-source"></a><a name="ExampleModifyFormatAddDataSource"></a>Új vonalkód adatforrás hozzáadása
 
@@ -206,14 +204,14 @@ Ezután **Vonalkód** típusú új adatforrást kell hozzáadnia.
 1. Ezután az ER műveleti tervezőben, a **Leképezés** lapon, amely az oldal jobb oldalán található, válassza ki az adatforrás **nyomtatását**.
 2. Válassza a **Hozzáadás** parancsot, majd a **Funkciók** csoportban válassza ki a **Vonalkód** adatforrástípust.
 
-    ![A vonalkód adatforrástípus kiválasztása](./media/er-barcode-data-source-add.png)
+    ![A vonalkód adatforrástípusának kiválasztása.](./media/er-barcode-data-source-add.png)
 
 3. A párbeszédpanel **Név** mezőjébe írja be a **vonalkód** kifejezést.
 4. A **Vonalkód formátuma** elemnél válassza a **Code 128** lehetőséget.
 5. Írja be a **500** értéket a **Szélesség** mezőbe.
 6. Válassza ki az **OK** lehetőséget.
 
-    ![Adatforrás-tulajdonságok párbeszédpanel](./media/er-barcode-data-source-add2.png)
+    ![Adatforrás-tulajdonságok párbeszédpanel.](./media/er-barcode-data-source-add2.png)
 
 #### <a name="bind-a-new-format-element"></a><a name="ExampleModifyFormatBindFormatElement"></a>Új formátumelem kötése
 
@@ -224,7 +222,7 @@ Ezután az új formátum elemet kötelező hozzákötni az imént hozzáadott ad
 3. A Műveleti ablaktáblán kattintson a **Részletek megjelenítése** elemre.
 4. Figyelje meg, hogy mivel a **Vonalkód** adatforrás egy olyan funkcióként jelenik meg a kötésben, amely egyetlen paramétert tartalmaz, a kötött formátumú elem neve automatikusan a paraméter argumentumaként szerepel.
 
-    ![A vonalkód adatforrás adatai az ER műveleti tervezőben](./media/er-barcode-data-source-bind1.png)
+    ![A vonalkód adatforrás adatai az ER-műveleti tervezőben.](./media/er-barcode-data-source-bind1.png)
 
 5. A kötés módosításához válassza a **Receptúra szerkesztése** parancsot.
 
@@ -234,7 +232,7 @@ Ezután az új formátum elemet kötelező hozzákötni az imént hozzáadott ad
 7. Válassza a **Mentés** lehetőséget, majd zárja be az [ER receptúratervezőt](general-electronic-reporting-formula-designer.md).
 8. Figyelje meg, hogy a kötés módosult.
 
-    ![Helyesbített kötés az ER műveleti tervezőben](./media/er-barcode-data-source-bind2.png)
+    ![Helyesbített kötés az ER-műveleti tervezőben.](./media/er-barcode-data-source-bind2.png)
 
 9. Válassza a **Mentés** lehetőséget, majd zárja be az ER műveleti tervezőt.
 
@@ -279,7 +277,7 @@ A kijelölt formátum piszkozata használatra elérhető megjelölést kap a kiv
 6. Válassza ki az **OK** lehetőséget.
 7. Tekintse át a létrehozott csekket. Figyelje meg, hogy a rendszer vonalkódot hoz létre, amely kódolja a csekk fizetendő összegét.
 
-    ![Vonalkódos fizetési csekk létrehozása az Excel alkalmazásban](./media/er-barcode-data-source-cheque3.png)
+    ![Vonalkódos fizetési csekk létrehozása az Excel alkalmazásban.](./media/er-barcode-data-source-cheque3.png)
 
 > [!IMPORTANT]
 > Kivétel akkor történik, ha a **Vonalkód** adatforrás argumentuma nem felel meg a vonalkód-formátumára vonatkozó megfelelő követelményeknek. Ha például a **Vonalkód** adatforrás egy [EAN-8](https://wikipedia.org/wiki/EAN-8) vonalkódot hoz létre a megadott szöveghez, akkor a program kivételt eredményez, ha a szöveg hossza meghaladja a 7 karaktert.
@@ -290,7 +288,7 @@ A [Nyomtatható FTI-űrlapok generálása](er-generate-printable-fti-forms.md#fi
 
 Ha azonban a **Vonalkód** adatforrást használja a vonalkódok létrehozásához, akkor az ilyen vonalkódok renderelése nem függ semmilyen betűtípustól. Ezért a vonalkódokat tartalmazó dokumentumokat egyszerűen konvertálhatja PDF-formátumba. A következő ábra egy olyan generált fizetési csekk előnézetét jeleníti meg, amely PDF-fájllá lett [konvertálva](electronic-reporting-destinations.md#OutputConversionToPDF) a konfigurált ER [cél](electronic-reporting-destinations.md) beállításai alapján.
 
-![A kifizetési csekk PDF-fájljának előnézete](./media/er-barcode-data-source-cheque4.png)
+![A kifizetési csekk PDF-fájljának előnézete.](./media/er-barcode-data-source-cheque4.png)
 
 ## <a name="limitations"></a>Korlátozások
 
@@ -303,3 +301,6 @@ Ha azonban a **Vonalkód** adatforrást használja a vonalkódok létrehozásáh
 - [Elektronikus jelentéskészítés céljai](electronic-reporting-destinations.md)
 - [Elektronikus jelentéskészítés képletének nyelve](er-formula-language.md)
 - [NUMBERFORMAT függvény](er-functions-text-numberformat.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

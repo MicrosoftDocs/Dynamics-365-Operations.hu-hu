@@ -1,24 +1,24 @@
 ---
 title: Hátralék kiegyenlítése
 description: Egy kiegyenlítési tevékenységből maradt összeget úgy egyenlíthet ki, hogy azt a főkönyvi számlához rendeli.
-author: roschlom
-ms.date: 10/16/2018
+author: twheeloc
+ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-12-01
 ms.dyn365.ops.version: 8.1.3
-ms.openlocfilehash: 216c5c1d7db72e5f5071f2cd03656df538a64e72
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 881b46774d3ca6a9b91d4dc06babb30c8677183a
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754096"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182404"
 ---
 # <a name="settle-remainder"></a>Hátralék kiegyenlítése
 
@@ -27,13 +27,13 @@ ms.locfileid: "7754096"
 Egy kiegyenlítési tevékenységből maradt összeget úgy egyenlíthet ki, hogy azt a főkönyvi számlához vagy egy másik ügyfélhez rendeli. A fennmaradó összegeket kiegyenlítheti amikor egy naplóba vezetett összegeket egyenlít ki, vagy amikor csak nyitott tranzakciókat egyenlít ki.
 
 ## <a name="setting-up-defaults"></a>Alapértelmezések beállítása 
-A Hátralék kiegyenlítése funkciót engedélyeznie kell, és meg kell adnia az alapértelmezett beállításokat, mielőtt a Hátralék kiegyenlítése funkciót használná
+A Fennmaradó összeget **csak** **akkor lehet használni, ha engedélyezi a Fennmaradó összeget, és be kell állítania az alapértelmezett beállításokat**.
 
 1)  Kattintson a **Kinnlevőségek > Paraméterek > Kiegyenlítések** vagy **Kötelezettségek > Paraméterek > Kiegyenlítések** lehetőségre
-2)  Válassza ki a **Kiegyenlítés** lapot, majd kattintson a **Hátralék kiegyenlítésének engedélyezése** lehetőségre.
+2)  Válassza a Kiegyenlítés **lapot**, és kattintson a Fennmaradó kiegyenlítésének **engedélyezése elemre**.
 3)  Az **Alapértelmezett okkód** helyen válassza ki az alapértelmezett okkódot. Az okkódoknak már be kell lennie állítva **Kinnlevőségek > Beállítás > Vevői leírási okkódok** vagy **Kötelezettségek > Beállítás > Vevői leírási okkódok** helyen. A **Hátralékszámlák alapértelmezett kiegyenlítése** alapértelmezetten ahhoz a számlához lesz rendelve, amelyik a leírási okkódhoz van rendelve.
 3)  Frissítse a **Hátralékszámlák alapértelmezett kiegyenlítése** elemet szükség szerint.
-4)  Az Alapértelmezett naplónév mezőben válassza ki azt a kifizetési naplót, amely akkor használatos, ha csak nyitott tranzakciókkal szeretne kifizetési **·** naplót létrehozni. A fennmaradó hátralék kiegyenlítése funkció engedélyezése esetén hozzá kell adnia egy alapértelmezett naplónevet.
+4)  Az Alapértelmezett **naplónév mezőben** válassza ki azt a kifizetési naplót, amely akkor használatos, ha csak nyitott tranzakciókkal szeretne kifizetési naplót létrehozni. A fennmaradó hátralék kiegyenlítése funkció engedélyezése esetén hozzá kell adnia egy alapértelmezett naplónevet.
 
 ## <a name="settle-remainder-from-a-journal"></a>Hátralék kiegyenlítése naplóból
 Ha nem engedélyezi a **Hátralék kiegyenlítése** funkciót, akkor is bevihet egy tranzakciót a naplóba, és kiegyenlíthet ezzel szemben tranzakciókat, ahogy korábban is. Amikor rákattint az **OK** gombra, a nyitott egyenleg a számlán a pénzfizetés összegével csökken. Ha pénzösszeg nem egyenlíti ki teljesen a számlát, a számla nyitott a fennmaradó összeg egy későbbi időpontban történő kiegyenlítéséig.
@@ -58,8 +58,8 @@ A hátralékot akkor is kiegyenlítheti, amikor nyitott tranzakciókat egyenlít
 
 A hátralék kiegyenlítéséhez tegye a következőket:
 
-1)  A **Kiegyenlítés** oldalon jelölje meg a számlákat vagy tranzakciókat, amelyeket ki szeretne egyenlíteni
-2)  Kattintson a **Hátralék kiegyenlítése** elemre
+1)  A **Kiegyenlítés** oldalon jelölje meg a számlákat vagy tranzakciókat, amelyeket ki szeretne egyenlíteni.
+2)  Kattintson a Fennmaradói **egyenlítés gombra**.
 3)  A párbeszédpanelen jelenik meg, a főkönyvi számla ellenében kiegyenlítendő összeggel, a hátralék kiegyenlítéséhez használt dátummal, az alapértelmezett okkóddal a paraméterekhez és az alapértelmezett számlával a paraméterekből. 
 4)  Ha meg szeretné változtatni az alapértelmezett okot válasszon egy új kiegyenlítési okot. A kiegyenlítési számla módosítva lesz az okkódhoz társított számlára.
 5)  Ha módosítani szeretné a **kiegyenlítési számlát**, szerkessze a kiegyenlítési számlát.

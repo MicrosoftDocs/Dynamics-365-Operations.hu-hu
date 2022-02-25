@@ -2,11 +2,9 @@
 title: Műveletfüggő ER-célok konfigurálása
 description: Ez a témakör elmagyarázza, hogyan lehet beállítani műveletfüggő célhelyeket a kimenő dokumentumok létrehozásához konfigurált elektronikus jelentési (ER) formátumú fájlok MAPPA vagy FÁJL összetevőihez.
 author: NickSelin
-manager: AnnBe
 ms.date: 02/09/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ea7543fddef085cfd1e92edf0b1dabf6d0aac38a
-ms.sourcegitcommit: 5264aaec3723c40a219e4d2867afe1ba9cc5f2a2
-ms.translationtype: HT
+ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5153639"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323979"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Műveletfüggő ER-célok konfigurálása
 
 [!include [banner](../includes/banner.md)]
 
-Beállíthat [célhelyeket](electronic-reporting-destinations.md) minden kimeneti összetevőjéhez (mappa vagy fájl) az [elektronikus jelentési (ER)](general-electronic-reporting.md) [formátum](general-electronic-reporting.md#FormatComponentOutbound) [konfigurációknak](general-electronic-reporting.md#Configuration), amelyek kimenő dokumentumok létrehozásához használtak. Azok a felhasználók, akik ilyen típusú ER-formátumot futtatnak, és megfelelő hozzáférési jogokkal rendelkeznek, futásidőben módosíthatják a konfigurált cél beállításait is.
+A kimenő dokumentumok [generálása](electronic-reporting-destinations.md) során használt elektronikus jelentési formátumkonfigurációk minden kimeneti összetevőjére (mappára vagy fájlra) [...](general-electronic-reporting.md)[beállíthatja](general-electronic-reporting.md#Configuration) a célokat. Azok a felhasználók, akik ilyen típusú ER-formátumot futtatnak, és megfelelő hozzáférési jogokkal rendelkeznek, futásidőben módosíthatják a konfigurált cél beállításait is.
 
 A Microsoft Dynamics 365 Finance **10.0.17-es és újabb verzióiban** az ER-formátum futtatható egy olyan műveletkód [üzembe helyezése](er-apis-app10-0-17.md) által, amelyet a felhasználó az adott ER-formátum futtatásával hajt végre. Például a **Kinnlevőségek** modul Nyomtatáskezelési beállításainál választhat olyan ER-formátumot, amely konkrét üzleti dokumentumot, például szabadszöveges számlát generál. Ezután a számla előnézeti képe megtekinthető a **Nézet** lehetőséggel, illetve a **Nyomtatás** gombbal elküldheti egy nyomtatóra. Ha futásidőben felhasználói művelet van átállítva a futó ER-formátumhoz, eltérő ER-célokat lehet beállítani a különböző felhasználói műveletekhez. Ez a témakör leírja, hogyan kell konfigurálni az ER-célokat az ilyen típusú ER-formátumhoz.
 
@@ -62,7 +60,7 @@ Ha a **Bármely** dokumentumtípust választja, a **Nyomtatáskezelési művelet
     - Ha futásidőben meg van adva a **Küldés** műveletet, a rendszer az **E-mail** ER-célt alkalmazza.
     - Ha futásidőben meg van adva a **Nyomtatás** műveletet, a rendszer a **Nyomtató** ER-célt alkalmazza.
 
-A **Szabadszöveges számla (Excel)** ER-formátum használatával például a feladott [szabadszöveges számlát](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) nyomtathatja ki. A generált dokumentumok útvonalának eléréséhez konfigurálnia kell az ER-célokat ehhez az ER-formátumhoz. Például előfordulhat, hogy konfigurálnia kell ezeket az ER-célokat, hogy a következő műveleteket hajtsa végre egy generált dokumentumon:
+A **Szabadszöveges számla (Excel)** ER-formátum használatával például a feladott [szabadszöveges számlát](../../../finance/accounts-receivable/create-free-text-invoice-new.md) nyomtathatja ki. A generált dokumentumok útvonalának eléréséhez konfigurálnia kell az ER-célokat ehhez az ER-formátumhoz. Például előfordulhat, hogy konfigurálnia kell ezeket az ER-célokat, hogy a következő műveleteket hajtsa végre egy generált dokumentumon:
 
 - A dokumentum archiválása, ha az ER-formátum fut, de nincs megadott műveletkódot (például a dokumentum elektronikus továbbítása esetén).
 - A dokumentum előnézete a böngészőben, amikor a felhasználó végrehajtja a **Megtekintés** műveletet.
@@ -75,7 +73,7 @@ A következő ábra bemutatja, hogy hogyan lehet elérni ezt a konfigurált ER-c
 
 A következő ábra bemutatja, hogy hogyan lehet elérni ugyanazon alternatív módon konfigurált ER-célokat egyedi célrekordok készleteként, amikor minden rekordot egy adott célhoz konfigurálnak:
 
-![Elektronikus jelentési céloldal, amely műveletfüggő célbeállításokkal rendelkezik egy ER-formátumhoz, ha minden célrekord konfigurálva van egy célhoz](./media/er-destination-action-dependent-01a.png)
+![Elektronikus jelentési céloldal, amely műveletfüggő célbeállításokkal rendelkezik egy ER-formátumhoz, ha minden célrekord konfigurálva van egy célhoz.](./media/er-destination-action-dependent-01a.png)
 
 > [!NOTE]
 > Ha a futó ER-formátumhoz meg van adva egy műveletkódot, de az adott műveletkódhoz nincsenek beállítva célok, a program az [alapértelmezett](electronic-reporting-destinations.md#default-behavior) célviselkedést alkalmazza.
@@ -84,9 +82,9 @@ A következő ábra bemutatja, hogy hogyan lehet elérni ugyanazon alternatív m
 
 Ha ER-formátumot futtat, és olyan felhasználók létesítenek felhasználói műveleteket, akik rendelkeznek a megfelelő [engedélyekkel](electronic-reporting-destinations.md#security-considerations) a konfigurált célbeállítások futásidőben való módosításához, megjelenik egy párbeszédpanel, amely lehetőséget ad a konfigurált célbeállítások módosítására. Ez a párbeszédpanel nem kötelező, és megjelenésének módja attól függ, hogy az ER-keretrendszer hogyan valósítja meg az ER-formátumot. Ha megjelenik ez a párbeszédpanel, a mezőben található ER-célok a megadott felhasználói műveletnek megfelelően lesznek engedélyezve.
 
-A következő ábra az **Elektronikus jelentési formátum célokat** bemutató párbeszédpanel egy példáját mutatja be, amely a szabadszöveges számla [feladása](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new) esetén jelenik meg, és a **Szabadszöveges számla (Excel)** ER-formátumának futtatásával generálja ezt a dokumentumot, ha a **Nyomtató** művelet létesítve van, és az ER-célok erre a formátumra vannak konfigurálva, amint az ebben a témakörben korábban látható.
+A következő ábra az **Elektronikus jelentési formátum célokat** bemutató párbeszédpanel egy példáját mutatja be, amely a szabadszöveges számla [feladása](../../../finance/accounts-receivable/create-free-text-invoice-new.md) esetén jelenik meg, és a **Szabadszöveges számla (Excel)** ER-formátumának futtatásával generálja ezt a dokumentumot, ha a **Nyomtató** művelet létesítve van, és az ER-célok erre a formátumra vannak konfigurálva, amint az ebben a témakörben korábban látható.
 
-![Párbeszédpanel, amely lehetőséget ad a kezdetben konfigurált ER-célok megváltoztatására a futó ER-formátumhoz](./media/er-destination-action-dependent-02.gif)
+![Párbeszédpanel, amely lehetőséget ad a kezdetben konfigurált ER-célok megváltoztatására a futó ER-formátumhoz.](./media/er-destination-action-dependent-02.gif)
 
 > [!NOTE]
 > Ha az ER-célokat a futó ER-formátum több összetevőjéhez konfigurálta, akkor a rendszer az ER-formátum minden konfigurált összetevőjét külön fel fog kínálni egy opciót.
@@ -117,7 +115,6 @@ Az üzleti dokumentumok következő listáját a következő funkció vezérli: 
 - Beszerzési rendelés beszerzési értesítője
 - Értékesítési rendelés  visszaigazolása
 - Kollekciók fizetésre felszólítás
-- Vevő számlakivonata
 - Kamatlevél
 - Szállítói kifizetési bizonylat
 - Ajánlatkérés
@@ -129,3 +126,6 @@ Az üzleti dokumentumok következő listáját a következő funkció vezérli: 
 [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 
 [Elektronikus jelentési keretrendszer API módosításai az Application update 10.0.17 számára](er-apis-app10-0-17.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

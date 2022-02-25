@@ -2,26 +2,23 @@
 title: Munkagyűjtő módosítása a munkán
 description: Ez a témakör azt mutatja be, hogy hogyan lehet módosítani a Munkagyűjtő módosítása gombot a munkaelemekhez a meglévő munka munkagyűjtőjének módosításához.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPool,WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 344918b77334f9aca11f799f8c031047ad229ee0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 9255b7d2eaf030592207b557b3b6567a1a5bda98
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429556"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102863"
 ---
 # <a name="change-work-pool-on-work"></a>Munkagyűjtő módosítása a munkán
 
@@ -31,12 +28,9 @@ Munkagyűjtők segítségével a munkát csoportokba rendezheti. Például létr
 
 A *Munka munkagyűjtőjének módosítása* funkció hozzáadja a **Munkagyűjtő módosítása** gombot a munkaelemek műveleti ablaktáblájához. Így a raktárkezelők egyszerűen módosíthatják a meglévő munka munkagyűjtőjét. Ez a funkció lehetővé teszi a vezetők gyors reagálását a raktári üzem szintjén, és javítja a változó helyzetekhez való alkalmazkodás képességét, valamint a munka másik munkagyűjtőbe történő áthelyezését.
 
-## <a name="turn-on-the-change-work-pool-on-work-feature"></a>A Munkagyűjtő módosítása a munkán funkció bekapcsolása
+## <a name="turn-the-change-work-pool-on-work-feature-on-or-off"></a>A Munkakészlet módosítása munka szolgáltatás be- és kikapcsolása
 
-Mielőtt elkezdené a funkció beállítását vagy használatát, győződjön meg arról, hogy az elérhető a rendszerben. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
-
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Munkagyűjtő módosítása a munkán*
+A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatja ezt a funkciót, ha a Szolgáltatáskezelési munkaterület Munkakészlet módosítása szolgáltatását keresi.
 
 ## <a name="set-up-the-change-work-pool-on-work-feature"></a>A Munkagyűjtő módosítása a munkán funkció beállítása
 
@@ -149,3 +143,6 @@ A **munkarészletek** lapon megtekintheti a létrehozott munkát, és kezelheti 
 > Ha megjelenik a **Munkagyűjtő módosítása** párbeszédpanel, előfordulhat, hogy a **Munkagyűjtő-azonosító** mező alapértelmezés szerint üres. Ha a mező üres, ha az **OK** gombra kattint a módosítások alkalmazásához, akkor a munkagyűjtőt teljes egészében eltávolítja a program a munkából.
 >
 > A munkagyűjtők váltásán kívül ezzel az eljárással munkagyűjtőt adhat hozzá a munkaelemekhez, amelyek nem rendelkeznek eggyel, vagy egy munkagyűjtőt távolíthat el az összes olyan munkaelemből, amely rendelkezik egy értékkel.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

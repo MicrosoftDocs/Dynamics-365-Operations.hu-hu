@@ -2,7 +2,7 @@
 title: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
 description: Ebből a témakörből megtudhatja, hogyan vehet fel adatmezőket az X++ bővítmények használatával az adóintegrációban.
 author: qire
-ms.date: 04/20/2021
+ms.date: 02/17/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 8bdd56ebdd50c1eae98094725a01bf9c5ec52bb4e689eb282f80631810a65725
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
+ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6721658"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323575"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Adatmezők hozzáadása az adóintegrációhoz bővítmény használatával
 
@@ -353,15 +353,77 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
 }
 ```
 
-Ebben a kódban a `_destination` a burkoló objektum, amely a közzétételi kérés létrehozásához használható, és a `_source` a `TaxIntegrationLineObject` objektum. 
+Ebben a kódban a `_destination` a burkoló objektum, amely a közzétételi kérés létrehozásához használható, és a `_source` a `TaxIntegrationLineObject` objektum.
 
 > [!NOTE]
-> * Adja meg a kérelem űrlapon használt kulcsot, mint `private const str`.
-> * Állítsa be a mezőt a `copyToTaxableDocumentLineWrapperFromTaxIntegrationLineObjectByLine` metódusban a `SetField` metódus használatával. A második paraméter adattípusának `string` típusúnak kell lennie: Ha az adattípus nem, `string` konvertálja azt `string` típusúra.
+> Definiálja a kérési képernyőn **személyes konstként használt kulcsot**. A karakterláncnak pontosan meg kell egy lennie a témakörben hozzáadott mértéknévvel ([Adatmezők hozzáadása az adókonfigurációkban)](tax-service-add-data-fields-tax-configurations.md).
+> Állítsa be a **mezőt a copyToTaxableDocumentLineWrafromTaxIntegrationLineObjectByLine metódusban** **a SetField metódus** használatával. A második paraméter adattípusának karakterláncnak kell **lennie**. Ha az adattípus nem **karakterlánc**, konvertálja.
+> Ha bővített X++ **felsorolásos** típust ad meg, jegyezze fel az érték, a címke és a név közötti különbséget.
+> 
+>   - A felsorolás értéke egész szám.
+>   - A felsorolás címkéje a preferált nyelvek között eltérő lehet. Ne használja az **enum2Str karakterlánc** típust.
+>   - A felsorolás neve ajánlott, mert rögzített. **Az enum2Symbol** segítségével konvertálható a felsorolás a nevére. Az adókonfigurációban hozzáadott felsorolási értéknek pontosan meg kell egy lennie a felsorolás nevével.
+
+## <a name="model-dependency"></a>Modellfüggőség
+
+A projekt sikeres felépítéséhez adja hozzá a következő hivatkozási modelleket a modellfüggőségekhez:
+
+- ApplicationPlatform
+- ApplicationSuite
+- Adóbevallási motor
+- Dimenziók pénzügyi dimenzió használata esetén
+- A kódban hivatkozott egyéb szükséges modellek
+
+## <a name="validation"></a>Ellenőrzés
+
+Az előző lépések befejezése után ellenőrizheti a változtatásokat.
+
+1. A Pénzügyben menjen a Kötelezettségek **lapra**, **és adja hozzá az URL-címhez a &debug=vsCconfirmExit%2>** gombra. Például. https://usnconeboxax1aos.cloud.onebox.dynamics.com/?cmp=DEMF&mi=PurchTableListPage&debug=vs%2CconfirmExit& A végső **&** döntés alapvető fontosságú.
+2. Nyissa meg **a Beszerzési rendelés lapot**, és a beszerzési rendelés létrehozásához **válassza az Új** lehetőséget.
+3. Állítsa be az testreszabott mező értékét, majd válassza az Áfa **értéket**. **A TaxServiceTuubleshootingLog** előtaggal együtt automatikusan letölt egy hibakeresési fájlt. Ez a fájl az adószámítási szolgáltatásba feladott tranzakcióadatokat tartalmazza. 
+4. Ellenőrizze, hogy az adószolgáltatás számításának **bemeneti JSON** szakaszában adva van-e meg az testreszabott mező, és helyes-e az értéke. Ha az érték nem megfelelő, ellenőrizze duplán a dokumentum lépéseit.
+
+Fájl – példa:
+
+```
+===Tax service calculation input JSON:===
+{
+  "TaxableDocument": {
+    "Header": [
+      {
+        "Lines": [
+          {
+            "Line Type": "Normal",
+            "Item Code": "",
+            "Item Type": "Item",
+            "Quantity": 0.0,
+            "Amount": 1000.0,
+            "Currency": "EUR",
+            "Transaction Date": "2022-1-26T00:00:00",
+            ...
+            /// The new fields added at line level
+            "Cost Center": "003",
+            "Project": "Proj-123"
+          }
+        ],
+        "Amount include tax": true,
+        "Business Process": "Journal",
+        "Currency": "",
+        "Vendor Account": "DE-001",
+        "Vendor Invoice Account": "DE-001",
+        ...
+        // The new fields added at header level, no new fields in this example
+        ...
+      }
+    ]
+  },
+}
+...
+```
 
 ## <a name="appendix"></a>Melléklet
 
-Ez a függelék a pénzügyi dimenziók (**Költségközpont** és **Projekt**) sorszintű integrálásához szükséges teljes mintakódot mutatja.
+Ez a melléklet mutatja a teljes mintakódot a pénzügyi dimenziók, **·** **a költségközpont és a projekt** integrálásához a sor szintjén.
 
 ### <a name="taxintegrationlineobject_extensionxpp"></a>TaxIntegrationLineObject_Extension.xpp
 

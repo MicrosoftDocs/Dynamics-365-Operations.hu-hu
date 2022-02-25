@@ -2,11 +2,9 @@
 title: Egy végrehajtott ER formátum hibakeresési adatforrásai az adatfolyam elemzéséhez és átalakításához
 description: Ez a témakör azt mutatja be, hogyan lehet hibakeresést végezni egy végrehajtott ER-formátum adatforrásaiból, hogy jobban megérthesse a konfigurált adatáramlást és átalakítást.
 author: NickSelin
-manager: AnnBe
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 3a486800f37dda7829aeeaa56a30285a92a61b9d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680782"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323761"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Egy végrehajtott ER formátum hibakeresési adatforrásai az adatfolyam elemzéséhez és átalakításához
 
@@ -30,7 +28,7 @@ ms.locfileid: "4680782"
 
 [!include[banner](../includes/preview-banner.md)]
 
-Amikor egy elektronikus jelentéskészítési (ER) megoldást [konfigurál](tasks/er-format-configuration-2016-11.md) kimenő dokumentumok létrehozásához meghatározhatja azt a módszert, amellyel a rendszer adatokat kérhet le az alkalmazásból, majd a létrehozott kimeneti fájlba illesztheti őket. Ha hatékonyabbá szeretné tenni az ER-megoldás életciklus-támogatását, a megoldásnak egy ER [adatmodellből](general-electronic-reporting.md#DataModelComponent) és annak [leképezési](general-electronic-reporting.md#ModelMappingComponent) összetevőiből kell állnia , valamint egy ER [formátumból](general-electronic-reporting.md#FormatComponentOutbound) és annak leképezési összetevőiből, így a modell-leképezés alkalmazásspecifikus legyen, míg a többi komponens alkalmazásól független maradjon. Emiatt ER számos összetevő [hatással lehet](general-electronic-reporting.md#FormatComponentOutbound) az adatok beviteli folyamatára a létrejövő kimenetben.
+Amikor egy elektronikus jelentéskészítési (ER) megoldást [konfigurál](tasks/er-format-configuration-2016-11.md) kimenő dokumentumok létrehozásához meghatározhatja azt a módszert, amellyel a rendszer adatokat kérhet le az alkalmazásból, majd a létrehozott kimeneti fájlba illesztheti őket. Az ER-megoldás életciklus-támogatása érdekében a megoldásnak egy ER-adatmodellből és hozzárendelési összetevőiből, valamint egy ER-formátumból, valamint megfeleltetési összetevőkből kell állnia, hogy a modellleképezés alkalmazásspecifikus legyen, míg más összetevők alkalmazásspecifikusak maradnak. Emiatt ER számos összetevő hatással lehet az adatok beviteli folyamatára a létrejövő kimenetben.
 
 Előfordulhat, hogy a létrejövő kimenet adatai eltérően jelennek meg az alkalmazás adatbázisában szereplő ugyanezen adatoktól. Ezekben az esetekben meg kell határozni, hogy melyik ER-összetevő felelős az adatok átalakításáért. Az ER-adatforrás-hibakereső funkció jelentősen csökkenti a vizsgálathoz szükséges időt és költségeket. Az ER-formátum végrehajtását félbeszakíthatja, és megnyithatja az adatforrás-hibakereső felületét. Itt böngészhet az elérhető adatforrások között, és kiválaszthat egy egyedi adatforrást a végrehajtáshoz. Ez a manuális végrehajtás egy ER-formátum tényleges futtatásakor szimulálja az adatforrás végrehajtását. Az eredmény olyan oldalon jelenik meg, ahol elemezni lehet a kapott adatokat.
 
@@ -66,7 +64,7 @@ A következő ER-formátum beállítások nem érhetők el az adatforrások hiba
 
 1. A szállítói kifizetések feldolgozásához kövesse a témakör [3. függelékének](#appendix3) lépéseit.
 
-    ![Szállítói kifizetések feldolgozása folyamatban](./media/er-data-debugger-process-payment.png)
+    ![Szállítói kifizetések feldolgozása folyamatban.](./media/er-data-debugger-process-payment.png)
 
 2. Töltse le és mentse a zip-fájlt a helyi számítógépére.
 3. Bontsa ki az **ISO20022 Credit transfer.xml** fizetési fájlt a zip-fájlból.
@@ -74,7 +72,7 @@ A következő ER-formátum beállítások nem érhetők el az adatforrások hiba
 
     A fizetési fájlban a szállító bankszámlájának nemzetközi bankszámlaszám-kódja (IBAN) nem tartalmaz szóközöket. Ennek megfelelően különbözik a **Bankszámlák** lapon [megadott](#enteredIBANcode) értéktől.
 
-    ![IBAN-kód szóközök nélkül](./media/er-data-debugger-payment-file.png)
+    ![IBAN-kód szóközök nélkül.](./media/er-data-debugger-payment-file.png)
 
     Az ER adatforrás-hibakeresővel megtudhatja, hogy a rendszer melyik összetevőjét használja az IBAN-kód szóközeinek törlésére.
 
@@ -87,14 +85,14 @@ A következő ER-formátum beállítások nem érhetők el az adatforrások hiba
     > [!NOTE]
     > Ez a paraméter a felhasználó- és a vállalatspecifikus.
 
-    ![A Felhasználói paraméterek párbeszédablak](./media/er-data-debugger-user-parameters.png)
+    ![A Felhasználói paraméterek párbeszédablak.](./media/er-data-debugger-user-parameters.png)
 
 ## <a name="process-a-vendor-payment-for-debugging"></a>Szállítói fizetés feldolgozása hibakereséshez
 
 1. A szállítói kifizetések feldolgozásához kövesse a témakör [3. függelékének](#appendix3) lépéseit.
 2. Az üzenetablakban válassza az **Igen** lehetőséget annak megerősítéséhez, hogy szeretné megszakítani a szállítói kifizetések feldolgozását, és ehelyett elindítani az adatforrás hibakeresését az **Adatforrások hibakeresése** oldalon.
 
-    ![Megerősítő üzenet mezője](./media/er-data-debugger-start-debugging.png)
+    ![Megerősítő üzenet mezője.](./media/er-data-debugger-start-debugging.png)
 
 ## <a name="debug-data-sources-that-are-used-in-payment-processing"></a>A fizetés feldolgozásakor használt adatforrások hibakeresése
 
@@ -117,7 +115,7 @@ A következő ER-formátum beállítások nem érhetők el az adatforrások hiba
 
 7. Válassza az **Összes kibontása** elemet.
 
-    ![Az IBAN-mező értéke a modell-leképezésben](./media/er-data-debugger-debugging-model-mapping.png)
+    ![Az IBAN-mező értéke a modell-leképezésben.](./media/er-data-debugger-debugging-model-mapping.png)
 
     Látható, hogy a modell-leképezés nem felelős a levágott szóközökért, mivel a szállítói bankszámlához visszaküldött IBAN-kód szóközöket tartalmaz. Ennek megfelelően folytatnia kell az adatforrás hibakeresését.
 
@@ -132,7 +130,7 @@ A következő ER-formátum beállítások nem érhetők el az adatforrások hiba
 7. Válassza ki az **Érték beolvasása** lehetőséget.
 8. Válassza az **Összes kibontása** elemet.
 
-    ![Az IBAN-mező értéke a formátumleképezésben](./media/er-data-debugger-debugging-format-mapping.png)
+    ![Az IBAN-mező értéke a formátumleképezésben.](./media/er-data-debugger-debugging-format-mapping.png)
 
     Látható, hogy a formátumleképezés adatforrásai nem felelősek a levágott szóközökért, mivel a szállítói bankszámlához visszaküldött IBAN-kód szóközöket tartalmaz. Ennek megfelelően folytatnia kell az adatforrás hibakeresését.
 
@@ -144,7 +142,7 @@ A következő ER-formátum beállítások nem érhetők el az adatforrások hiba
 4. A formátumelemek kibontásával válassza ki az **ISO20022CTReports** \> **XMLHeader** \> **Document** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** elemeket, majd válassz az **Érték lekérése** lehetőséget.
 5. Válassza az **Összes kibontása** elemet.
 
-    ![Az IBAN-mező értéke a formátumban](./media/er-data-debugger-debugging-format.png)
+    ![Az IBAN-mező értéke a formátumban.](./media/er-data-debugger-debugging-format.png)
 
    Látható, hogy a formátumkapcsolás nem felelős a levágott szóközökért, mivel a szállítói bankszámlához visszaküldött IBAN-kód szóközöket tartalmaz. Ennélfogva a **BankIBAN** elem úgy van beállítva, hogy olyan formátumátalakítást használjon, amely törli a szóközöket.
 
@@ -156,13 +154,13 @@ A következő ER-formátum beállítások nem érhetők el az adatforrások hiba
 2. A **Konfigurációk** lapon válassza ki a **Kifizetési modell** \> **ISO20022 jóváírás-átutalás** lehetőséget.
 3. Válassza ki a **Tervezőt**, majd az elemelek kibontásával válassza ki a **Dokumentum** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** lehetőséget.
 
-    ![A BankIBAN elem a Formátumtervező oldalon](./media/er-data-debugger-referred-transformation.png)
+    ![A BankIBAN elem a Formátumtervező oldalon.](./media/er-data-debugger-referred-transformation.png)
 
     Amint látható, a **BankIBAN** elem úgy van beállítva, hogy a **nem alfanumerikus elemek eltávolítása** átalakítást használja.
 
 4. Válassza ki az **Átalakítások** lapot.
 
-    ![A BankIBAN elem Átalakítások lapja](./media/er-data-debugger-transformation.png)
+    ![A BankIBAN elem Átalakítások lapja.](./media/er-data-debugger-transformation.png)
 
     Amint látható, a **nem alfanumerikus elemek eltávolítása** van beállítva, hogy olyan kifejezést használjon, amely eltávolítja a szóközöket a megadott karaktersorozatból.
 
@@ -170,7 +168,7 @@ A következő ER-formátum beállítások nem érhetők el az adatforrások hiba
 
 Ha olyan vázlatverziót konfigurál az ER-formátumból, amely közvetlenül a Művelettervezőből futtatható, akkor az adatforrás-hibakeresőt a Műveleti ablaktáblán a **Hibakeresés indítása** elem kiválasztásával érheti el.
 
-![Hibakeresés indítása gomb a Formátumtervező oldalán](./media/er-data-debugger-run-from-designer.png)
+![Hibakeresés indítása gomb a Formátumtervező oldalán.](./media/er-data-debugger-run-from-designer.png)
 
 A szerkesztés alatt álló ER formátum leképezési és fomrátum komponensei érhetők el a hibakereséshez.
 
@@ -178,7 +176,7 @@ A szerkesztés alatt álló ER formátum leképezési és fomrátum komponensei 
 
 Ha olyan ER modell-leképezést konfigurál, amely a **Modell-leképezés** oldalról futtatható akkor az adatforrás-hibakeresőt a Műveleti ablaktáblán a **Hibakeresés indítása** elem kiválasztásával érheti el.
 
-![Hibakeresés indítása gomb a Modell-leképezés-tervező oldalán](./media/er-data-debugger-run-from-designer-mapping.png)
+![Hibakeresés indítása gomb a Modell-leképezés-tervező oldalán.](./media/er-data-debugger-run-from-designer-mapping.png)
 
 A szerkesztés alatt álló ER-leképezés modell-leképezési összetevője elérhető a hibakereséshez.
 
@@ -188,18 +186,18 @@ A szerkesztés alatt álló ER-leképezés modell-leképezési összetevője el�
 
 Ha ER-megoldást szeretne használni egy elektronikus fizetési fájl generálásához egy feldolgozás alatt álló szállítói kifizetéshez akkor [letöltheti](download-electronic-reporting-configuration-lcs.md) az **ISO20022 átutalás** ER fizetési formátumot, amely a Microsoft Dynamics Lifecycle Services (LCS) megosztott Közös eszközök könyvtárából vagy a Globális adattárból tölthető le.
 
-![Az ER fizetési formátum importálása a Konfigurációk tárháza oldalon](./media/er-data-debugger-import-from-repo.png)
+![Az ER fizetési formátum importálása a Konfigurációk tárháza oldalon.](./media/er-data-debugger-import-from-repo.png)
 
 A kiválasztott ER-formátumon kívül a következő [konfigurációkat](general-electronic-reporting.md#Configuration) automatikusan importálni kell a Microsoft Dynamics 365 Finance példányba az **ISO20022-átutalás** ER-megoldás részeként:
 
-- **Fizetési modell** [ER adatmodellkonfiguráció](general-electronic-reporting.md#DataModelComponent)
-- **ISO20022 átutalás** [ER formátumkonfiguráció](general-electronic-reporting.md#FormatComponentOutbound)
-- **Fizetési modell hozzárendelése 1611** [ER modell leképezésének konfigurációja](general-electronic-reporting.md#ModelMappingComponent)
+- **Fizetési modell** ER adatmodell-konfigurációja
+- **ISO20022 Jóváírás ER formátumának** konfigurálása
+- **Fizetési modell hozzárendelése 1611** ER modell leképezésének konfigurációja
 - **Fizetési modell hozzárendelése célhelyhez ISO20022** ER modell leképezésének konfigurációja
 
 Ezeket a konfigurációkat az ER keretrendszer **Konfiguráció** lapján lehet megtekinteni (**Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**).
 
-![A Konfigurációk oldalon importált konfigurációk](./media/er-data-debugger-configurations.png)
+![A Konfigurációk oldalon importált konfigurációk.](./media/er-data-debugger-configurations.png)
 
 Ha a konfigurációs fából hiányzik a korábban felsorolt konfigurációk valamelyike, akkoe manuálisan le kell tölteni őket a LCS megosztott eszköz könyvtárából, ugyan úgy, ahogy letöltötte az **ISO20022 átutalás** ER fizetési formátumot.
 
@@ -215,7 +213,7 @@ Ha a konfigurációs fából hiányzik a korábban felsorolt konfigurációk val
 
     Figyelje meg, hogy az adatmodell **Fizetések** mezője a **\$notSentTransactions** adatforráshoz van kapcsolva, amely a feldolgozás alatt álló szállítói kifizetési sorok listáját adja vissza.
 
-    ![Kifizetések mező a Modell-leképezés tervező lapján](./media/er-data-debugger-model-mapping.png)
+    ![Kifizetések mező a Modell-leképezés tervező lapján.](./media/er-data-debugger-model-mapping.png)
 
 #### <a name="review-the-format-mapping"></a>A formátumleképezés áttekintése
 
@@ -226,7 +224,7 @@ Ha a konfigurációs fából hiányzik a korábban felsorolt konfigurációk val
 
     Figyelje meg, hogy a **Dokumentum** \> **CstmrCdtTrfInitn** \> **PmtInf** eleme a **ISO20022CTReports** \> **XMLHeader** fájlnak a **\$PaymentByDebtor** adatforráshoz van kapcsolva, amely úgy van konfigurálva, hogy az adatmodell **Fizetések** mezőjének rekordjait csoportosítsa.
 
-    ![A PmtInf elem a Formátumtervező oldalon](./media/er-data-debugger-format-mapping.png)
+    ![A PmtInf elem a Formátumtervező oldalon.](./media/er-data-debugger-format-mapping.png)
 
 #### <a name="review-the-format"></a>A formátum áttekintése
 
@@ -236,7 +234,7 @@ Ha a konfigurációs fából hiányzik a korábban felsorolt konfigurációk val
 
     Figyelje meg, hogy a **Dokumentum** \> **CstmrCdtTrfInitn** \> **PmtInf** \> **CdtTrfTxInf** \> **CdtrAcct** \> **Id** \> **IBAN** \> **BankIBAN** alatt található formátumelem úgy van konfigurálva, hogy megadja a szállítói számla IBAN-kódját a fizetési fájlba.
 
-    ![A BankIBAN elem a Formátumtervező oldalon](./media/er-data-debugger-format.png)
+    ![BankIBAN formátumelem a Formátumtervező oldalon.](./media/er-data-debugger-format.png)
 
 ## <a name="appendix-2-configure-accounts-payable"></a><a name="appendix2"></a>2. melléklet: Kötelezettségek konfigurálása
 
@@ -247,7 +245,7 @@ Ha a konfigurációs fából hiányzik a korábban felsorolt konfigurációk val
 3. Az **Azonosítás** gyorslap **IBAN** mezőjébe, <a name="enteredIBANcode"></a>írja be a **GB33 BUKB 2020 1555 5555 55** értéket.
 4. Válassza a **Mentés** lehetőséget.
 
-![IBAN mező beállítva a Szállítói bankszámlák lapon](./media/er-data-debugger-iban.png)
+![IBAN mező beállítva a Szállítói bankszámlák lapon.](./media/er-data-debugger-iban.png)
 
 ### <a name="set-up-a-method-of-payment"></a>Egy fizetési mód beállítása
 
@@ -257,7 +255,7 @@ Ha a konfigurációs fából hiányzik a korábban felsorolt konfigurációk val
 4. Az **Exportálási formátum konfigurálása** mezőben válassza ki az **ISO20022-átutalás** ER-formátumot.
 5. Válassza a **Mentés** lehetőséget.
 
-![Fájlformátum beállításai a Fizetési módok lapon](./media/er-data-debugger-payment-method.png)
+![Fájlformátum beállításai a Fizetési módok lapon.](./media/er-data-debugger-payment-method.png)
 
 ### <a name="add-a-vendor-payment"></a>Szállítói kifizetés hozzáadása
 
@@ -269,7 +267,7 @@ Ha a konfigurációs fából hiányzik a korábban felsorolt konfigurációk val
 6. A **Fizetési mód** mezőben válassza a **SEPA CT** lehetőséget.
 7. Válassza a **Mentés** lehetőséget.
 
-![A szállítói kifizetés hozzáadva a Szállítói fizetések lapon](./media/er-data-debugger-payment-journal.png)
+![A szállítói kifizetés hozzáadva a Szállítói fizetések lapon.](./media/er-data-debugger-payment-journal.png)
 
 ## <a name="appendix-3-process-a-vendor-payment"></a><a name="appendix3"></a>3. melléklet: Egy szállítói fizetés feldolgozása
 
@@ -281,3 +279,6 @@ Ha a konfigurációs fából hiányzik a korábban felsorolt konfigurációk val
 6. A **Bankszámla** mezőben válassza a **DEMF OPER** lehetőséget.
 7. A **Kifizetések létrehozása** párbeszédpanelen válassza az **OK** lehetőséget.
 8. Az **Elektronikus jelentési paraméterek** párbeszédablakban válassza az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

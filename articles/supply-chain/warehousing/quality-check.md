@@ -2,26 +2,23 @@
 title: Minőség-ellenőrzés
 description: Ez a témakör a minőségellenőrzés funkcióról nyújt tájékoztatást. Ez a funkció lehetővé teszi a raktári dolgozók számára, hogy minőséggel kapcsolatos villámellenőrzést végezzenek, miközben átveszik a cikkeket a bejövő dokkoló területen.
 author: mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSQualityCheckTemplate, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSQualityCheckResult
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: dfb71f74732d65409003c4f6f74145442a1efa3f
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 0848eeb2ad073915ad90d2fd2a4a91f0f420c0ab
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429916"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103288"
 ---
 # <a name="quality-check"></a>Minőség-ellenőrzés
 
@@ -42,12 +39,9 @@ Amikor ezt a funkciót használja, a következő módon történik az érkezés 
 
 Ezt a folyamatot úgy is be lehet állítani, hogy az összes beolvasott rendszámtábla rögtön a minőségellenőrzési helyre kerüljön át.
 
-## <a name="turn-on-the-quality-check-feature"></a>A Minőségellenőrzési funkció bekapcsolása
+## <a name="turn-the-quality-check-feature-on-or-off"></a>A Minőség-ellenőrzés szolgáltatás be- és kikapcsolása
 
-A funkció használata előtt be kell kapcsolnia a saját rendszerében a *Minőségellenőrzés* funkciót. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
-
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Minőségellenőrzés*
+Az ebben a témakörben leírt *funkciók* használatához be kell kapcsolva lennie a rendszer minőségellenőrzési funkciónak. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterület Minőségellenőrzés szolgáltatását keresi.
 
 ## <a name="set-up-the-feature-for-the-example-scenario"></a>A funkció beállítása a példaforgatókönyvhöz
 
@@ -302,7 +296,7 @@ A beszerzési rendelés létrehozása után a program a **Beszerzési rendelési
 
 #### <a name="receive-pallet-1"></a>1. raklap fogadása
 
-1. Jelentkezzen be az *51*-es raktár felhasználójaként a raktár alkalmazásba. (Írja be a felhasználói azonosítóhoz a *51*-et, a jelszóhoz pedig az *1*-et.)
+1. Jelentkezzen be az *51*-es raktárban lévő felhasználóként a Raktárkezelés mobilalkalmazásba. (Írja be a felhasználói azonosítóhoz a *51*-et, a jelszóhoz pedig az *1*-et.)
 1. Menjen a **Bejövő \> Beszerzési rendelési sor bevételezése** lehetőségre.
 1. A **PONUM** mezőbe adja meg a beszerzési rendelés számát.
 1. Erősítse meg újra a beszerzési rendelés számát.
@@ -313,7 +307,7 @@ A beszerzési rendelés létrehozása után a program a **Beszerzési rendelési
 
     A megjelenő **Minőségellenőrzés** lap nem tartalmaz bejegyzési mezőket. Csak a megerősítés (pipa) gombot alul, és a Menü gombot (**≡**) felül. (A Menü gombot néha hamburgernek vagy a hamburger gombnak is nevezik.) A minőségellenőrzési folyamat meggyorsításához – amikor a raklap átmegy a minőségellenőrzésen – a felhasználónak csak meg kell erősítenie a **Minőségellenőrzés** lapot.
 
-    ![Minőségellenőrzés lap](media/quality-check.png "Minőségellenőrzés lap")
+    ![Minőségellenőrzés lap.](media/quality-check.png "Minőségellenőrzés lap")
 
 1. Válassza ki a megerősítés gombot, ha az 1. sorban lévő 1. raklap átment a minőségellenőrzésen.
 
@@ -397,3 +391,6 @@ Ennél a forgatókönyvnél a 3. raklapot el fogja fogadni a program.
 1. Válassza ki a lap tetején látható Menü gombot (**≡**), majd válassza a **Mégsem** lehetőséget a menühöz való visszatéréshez.
 
 Most már bezárhatja a mobilalkalmazást.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

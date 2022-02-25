@@ -2,25 +2,25 @@
 title: Szállítóiszámla-dátumok
 description: Ez a témakör a szállítói számlákon megjelenő dátumokat írja le. Bemutatja azt is, hogyan lehet úgy beállítani a rendszert, hogy az automatikusan korrigálja a feladási dátumot.
 author: sunfzam
-ms.date: 08/30/2021
+ms.date: 2/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2021-08-30
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: a066f828b47f297b8ad520b9eb0f4f311d49b111
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: 064a125d448ebb3511db2d9b1f4228380805dc44
+ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647892"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8105463"
 ---
 # <a name="vendor-invoice-dates"></a>Szállítóiszámla-dátumok
 
@@ -50,6 +50,9 @@ A következő lépések segítségével engedélyezheti a rendszer számára a s
     - **Mindig módosítsa a feladási dátumot a rendszerdátumra** – a rendszer automatikusan a rendszerdátumra módosítja a feladási dátumot a feladás során.
     - **A feladási dátum módosítása a rendszerdátumra, ha a feladási dátum értéke lezárt vagy várakoztatott** – A rendszer a feladás során a rendszerdátumra módosítja a feladási dátumot, de csak akkor, ha a feladási dátumnak megfelelő időszak állapota **Lezárva** vagy **Fel van függesztve**.
     - **A feladási dátum módosítása az új időszak első napjára, ha a feladási dátum értéke lezárt vagy várakoztatott.** – A rendszer a feladás során az új időszak első napjára módosítja a feladási dátumot, de csak akkor, ha a feladási dátumnak megfelelő időszak állapota **Lezárva** vagy **Fel van függesztve**.
+
+> [!NOTE]
+> Ha az automatikusan módosított új feladási dátum új pénzügyi évben van, akkor a számla feladási dátuma nem frissül. A felhasználó hibaüzenetet kap: "A pénzügyi év megváltozott. Ellenőrizze, majd adja meg újra a feladási dátumot." A feladáshoz frissíteni kell a számla új pénzügyi évének dátumát.
 
 ## <a name="impact-of-posting-date-changes"></a>A feladási dátumváltozások hatása
 

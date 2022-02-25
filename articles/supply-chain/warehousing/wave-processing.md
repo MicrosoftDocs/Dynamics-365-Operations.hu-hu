@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-03-08
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4b7c01a21dcbe7543332439ee6fd371b426851f4
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: b89a13e72816bbf140986bd5450d037cf2510753
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579928"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103513"
 ---
 # <a name="wave-creation-and-processing"></a>Hullám létrehozása és feldolgozása
 
@@ -190,9 +190,9 @@ Szükség esetén megszakíthat egy feldolgozott hullámot. Egy létrehozott hul
 
 A **Hullám kötegelt feladatához tartozó részletek** oldalon vizsgálja meg a bármely hullámhoz társított kötegelt feladatokat és kapcsolódó feladatokat. Ez különösen akkor hasznos, ha egy sikertelen hullám hibaelhárítását végzi. A funkció nélkül általánosságban csak rendszergazdáknak van hozzáférésük a kötegelt feladat részleteihez. A **Hullám kötegelt feladatához tartozó részletek** oldal elérhetővé tehető nem rendszergazda felhasználók számára, és írásvédett megtekintési jogosultságot biztosít a kötegelt feladatokhoz és kapcsolódó feladatokhoz.
 
-### <a name="enable-the-wave-batch-job-details-page"></a>A Hullám kötegelt feladatához tartozó részletek oldal engedélyezése
+### <a name="turn-the-wave-batch-job-details-page-on-or-off"></a>A Hullám kötegelt feladat részletei lap be- és kikapcsolása
 
-Ha a rendszer még nem tartalmazza a **Hullám kötegelt feladatához tartozó részletek** oldalt, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) oldalra, és kapcsolja be a *Hullám kötegelt feladatához tartozó részletek* funkciót.
+Az Ellátásilánc-kezelés 10.0.25-ös **verziója szerint a Hullám** kötegelt feladat részletei lap alapértelmezés szerint be van kapcsolva. A rendszergazdák úgy kapcsolhatják *be* és kapcsolják ki ezt a funkciót, hogy a Szolgáltatáskezelési munkaterület Hullám kötegelt feladat részletei szolgáltatását [keresi](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ### <a name="use-the-wave-batch-job-details-page"></a>A Hullám kötegelt feladatához tartozó részletek oldal használata
 

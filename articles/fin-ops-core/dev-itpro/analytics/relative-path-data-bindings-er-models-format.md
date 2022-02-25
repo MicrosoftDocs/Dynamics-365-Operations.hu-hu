@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 686600e857c7b5aab74d80b7bc31c6bbaaf8d2336d57ff5839752d0ff33def84
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: af3a646e24976d50f83d8564e3006fc2c50d8e2a
+ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741680"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8313567"
 ---
 # <a name="use-a-relative-path-in-data-bindings-of-er-models-and-formats"></a>Relatív elérési út használata az ER-modellek és -formátumok adatkötéseiben
 
@@ -26,8 +26,8 @@ ms.locfileid: "6741680"
 
 Az elektronikus jelentéskészítési (ER) eszköz használatakor a felhasználók definiálhatják az elektronikus formátum struktúráját, majd leírhatják, hogy hogyan kell feltölteni ezeket a struktúrákat az alkalmazás adatainak és algoritmusainak használatával. További információ: [Elektronikus jelentéskészítési (ER) konfigurációk létrehozása](electronic-reporting-configuration.md). Ha meg szeretné adni a Finance and Operations adatainak a lekéréséhez és az adatok elektronikus dokumentumok előállításához használt adatáramlást, akkor a következőket kell tennie:
 
-- A konfigurált adatforrásokat össze kell kötni a megtervezett tartományalapú [adatmodell](general-electronic-reporting.md#data-model-and-model-mapping-components) elemeivel. A modell szerkezete és a kiválasztott adatforrások összetett hierarchikus szerkezet részei lehetnek. Emiatt a végső kötések elég nagyok lehetnek, és számos különböző típusú elemből állhatnak (például kapcsolatok, táblák, módszerek). A kötések nehezebben olvashatóvá válhatnak, és elég bonyolult lehet az áttekintésük és a megértésük (különösen a nem tulajdonosok számára). 
-- A formátum-összetevőkkel rendelkező adatmodellelemek kötésével meghatározhatja, hogy milyen adatok kerüljenek az adatmodellből a létrejövő [formátum](general-electronic-reporting.md#FormatComponentOutbound) kimenetébe.
+- A konfigurált adatforrásokat össze kell kötni a megtervezett tartományalapú adatmodell elemeivel. A modell szerkezete és a kiválasztott adatforrások összetett hierarchikus szerkezet részei lehetnek. Emiatt a végső kötések elég nagyok lehetnek, és számos különböző típusú elemből állhatnak (például kapcsolatok, táblák, módszerek). A kötések nehezebben olvashatóvá válhatnak, és elég bonyolult lehet az áttekintésük és a megértésük (különösen a nem tulajdonosok számára). 
+- A formátum-összetevőkkel rendelkező adatmodellelemek kötésével meghatározhatja, hogy milyen adatok kerüljenek az adatmodellből a létrejövő formátum kimenetébe.
 
 Az elektronikus jelentéskészítési leképezések tervezőinek használhatóságát javítja a [relatív elérési út](er-formula-language.md#relative-path) funkció megjelentetése. A relatív elérési út ábrázolási beállítása alapértelmezés szerint be van kapcsolva az alkalmazás összes olyan új példányához, amelynél engedélyezve van az elektronikus jelentéskészítési környezet (Microsoft Dynamics 365 Finance 365 for Finance and operations, Microsoft Regulatory Configuration Service). Bevezettük a relatív elérési út paramétert, hogy a felhasználók a teljes elérési utat tudják használni az elektronikus jelentéskészítési kötések megjelenítésével végzett munka során.
 

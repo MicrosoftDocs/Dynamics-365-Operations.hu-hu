@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 72b97b2f7091883e445b2e8474ca140217bda004b0c4d8988411b9ed4209e254
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758264"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323665"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Támogatott összetett adattípusok az elektronikus jelentési képletekben
 
@@ -27,7 +27,7 @@ A témakör tájékoztatást nyújt az [Elektronikus jelentéskészítésben (ER
 
 Az *osztály* adattípus egy nyilvános alkalmazásosztályra vonatkozik. Az ER-ben egy olyan [*rekordként*](#record) van ábrázolva, amely külön mezőt tartalmaz a hivatkozott osztály összes nyilvános metódusa számára. Ha a metódus hívása paraméterezett, meg kell adnia a metódus hívásához konfigurált ER-kifejezésben a megfelelő típusú szükséges argumentumokat is.
 
-Az ER [leképezésekben](general-electronic-reporting.md#data-model-and-model-mapping-components) és a [formátum](general-electronic-reporting.md#FormatComponentOutbound) összetevőkben hozzáadhatja az adatforrásként megjelenő **Osztály** adatforrást, amely *osztály* típus értéket ad eredményül. Ez az adatforrás az osztály nyilvános metódusait teszi elérhetővé, amelyek futásidőben hívhatóak.
+Az ER-leképezésekben és a formátumösszetevőkben **hozzáadhatja** az *adatforrásként megjelenő, osztálytípusnak megfelelő értéket eredményül adó Osztály adatforrást*. Ez az adatforrás az osztály nyilvános metódusait teszi elérhetővé, amelyek futásidőben hívhatóak.
 
 > [!NOTE]
 > Csak értékeket visszaadó metódusok hívhatóak meg ER-kifejezésekből.

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 268ee58583306bdd99e5d5cd5bb436a328a5648b
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 7312ab2491814e7cd266e39820f0e87e79dd84e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860483"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103563"
 ---
 # <a name="global-inventory-accounting-home-page"></a>Global Inventory Accounting kezdőlap
 
@@ -42,12 +42,11 @@ A szabályok készletkönyvelési irányelvek gyűjteménye, amelyek egy vagy t�
 
 A Global Inventory Accounting jelenleg a következő Azure földrajzi régiókban érhető el:
 
-- Egyesült Államok
+- Amerikai Egyesült Államok
 - Európa
 - Egyesült Királyság
 - Ausztrália
 - Kanada
-- Dél-Amerika
 
 Ha egy másik földrajzi régióból kísérli meg telepíteni a bővítményt, akkor a Microsoft Dynamics Lifecycle Services (LCS) egy üzenetet jelenít meg, hogy a földrajzi helye nem támogatott. A Global Inventory Accounting nem támogatja a Supply Chain Management helyszíni üzemelő példányát.
 

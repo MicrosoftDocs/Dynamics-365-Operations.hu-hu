@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-28
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 54962b48dee05b2cd62fd3ea8814e4c965ba7818
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: HT
+ms.openlocfilehash: 812dd30e0e444bc310fc81edd16958e0c0747885
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069379"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103413"
 ---
 # <a name="install-and-connect-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás telepítése és csatlakoztatása
 
@@ -39,12 +39,9 @@ A Raktárkezelés mobilalkalmazás Windows és Google Android operációs rendsz
 - Windows 10 (Univerzális Windows-platform \[UWP\]) 2018. októberi frissítés, 1809 (10.0.17763-as build) vagy újabb
 - Android 4.4 vagy újabb
 
-## <a name="turn-on-the-feature"></a>A funkció bekapcsolása
+## <a name="turn-warehouse-management-mobile-app-features-or-or-off-in-supply-chain-management"></a>A Raktárkezelés mobilalkalmazás funkcióinak és kikapcsolása az Ellátásilánc-kezelés eszközben
 
-Az alkalmazás használata előtt egy kapcsolódó funkciót be kell kapcsolnia saját rendszerében. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
-
-- **Modul:** *Raktárkezelés*
-- **Funkciónév:** *Felhasználói beállítások, ikonok és lépéscímek az új raktári alkalmazáshoz*
+A Raktárkezelés mobilalkalmazás *használatához be kell kapcsolva lennie a rendszerben az új raktári alkalmazás felhasználói beállításainak,* ikonjainak és lépéscímének. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
 
 ## <a name="get-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás beszerzése
 
@@ -144,9 +141,9 @@ A tanúsítványok felhasználhatók titkos kódokként az alkalmazás azonossá
 
 A tanúsítványt helyileg elérhetővé kell tenni minden olyan eszközön, amelyen a Raktárkezelés mobilalkalmazást futtatja. A Intune által vezérelt eszközök tanúsítványainak kezelésével kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Tanúsítványok használata hitelesítéshez a Microsoft Intune szolgáltatásban](/mem/intune/protect/certificates-configure).
 
-## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>Konfigurálja a Warehouse Management mobilalkalmazást felhő- és peremléptékű egységekhez
+## <a name="configure-the-warehouse-management-mobile-app-for-cloud-and-edge-scale-units"></a>A Warehouse Management mobilalkalmazás konfigurálása felhőalapú és peremhálózat-léptékű egységekhez
 
-Néhány további lépésre van szükség, ha azt tervezi, hogy a Warehouse Management mobilalkalmazást felhőben vagy szélső léptékű egységben futtatja. Az utasításokat lásd [Konfigurálja a Warehouse Management mobilalkalmazást felhő- és peremléptékű egységekhez](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
+További lépések szükségesek, ha azt tervezi, hogy a Raktárkezelés mobilalkalmazást egy felhőhöz vagy peremhálózati egységhez futtatja. Az utasításokat lásd [a Raktárkezelés mobilalkalmazás konfigurálása a felhő- és szélskálaegységekhez](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md).
 
 ## <a name="configure-the-application-by-importing-connection-settings"></a>Az alkalmazás konfigurálása a kapcsolati beállítások importálásával
 
@@ -310,6 +307,6 @@ Ha egy eszköz elveszett vagy a biztonsága sérült, el kell távolítania az e
 
 - [Mobileszköz felhasználói beállításai](mobile-device-user-settings.md)
 - [Lépésikonok és címek hozzárendelése a Warehouse Management mobilalkalmazáshoz](step-icons-titles.md)
-- [Konfigurálja a Warehouse Management mobilalkalmazást felhő- és peremléptékű egységekhez](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
+- [A Warehouse Management mobilalkalmazás konfigurálása felhőalapú és peremhálózat-léptékű egységekhez](../cloud-edge/cloud-edge-workload-setup-warehouse-app.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

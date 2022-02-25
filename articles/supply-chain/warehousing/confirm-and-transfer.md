@@ -2,26 +2,23 @@
 title: Megerősítés és áthelyezés
 description: Ez a témakör azt mutatja be, hogyan kell használni a Megerősítés és áthelyezés funkciót, amely lehetővé teszi a felhasználók számára a rakományok szállítását, mielőtt elvégzik a rakományhoz társított összes munkát.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadTemplate,WHSWorkTemplateTable,WHSLoadPlanningWorkbench
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6104e457a62f340951c187d0f2dbe48b0dffdf7f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: 7b487684980f60112d9af6bea02672f7e919c834
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429285"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103589"
 ---
 # <a name="confirm-and-transfer"></a>Megerősítés és áthelyezés
 
@@ -48,20 +45,17 @@ Csak olyan rakományok oszthatók fel, amelyek megfelelnek az összes következ�
 
 - Egy vagy több rakománysor már kitárolt mennyiséget tartalmaz.
 - A rakomány állapota kisebb, mint a betöltött.
-- Nincs rakománysoradat. (Ez az adat az azonosítótábla-konszolidáción keresztül jön létre az előkészítési helyen, és a *Megerősítés és áthelyezés* funkció nem támogatja az azonosítótábla-konszolidációt.)
-- Jelenleg nem vár készlet csomagolásra a csomagolás helyén. (A *Megerősítés és áthelyezés* funkció nem támogatja azt a készletet, amely már ki van adva a csomagolási állomásnak, de még nincs bepakolva.)
+- Nincs rakománysoradat. (Ez az adat az azonosítótábla-konszolidáción keresztül jön létre az előkészítési helyen, és a Megerősítés és áthelyezés funkció nem támogatja az azonosítótábla-konszolidációt.)
+- Jelenleg nem vár készlet csomagolásra a csomagolás helyén. (A *Megerősítés és átvitel* szolgáltatás nem támogatja a csomaghelyre kitárolt, de még nem csomagolt készletet, hacsak a csomagolt tárolókat az előkészítő helyekre nem helyezik a berakodási munka létrejöttével.)
 
 > [!NOTE]
 > Ez a funkció eltér a szállítási raktárfunkciótól, amelyet olyan raktárakban kell használni, amelyek nem tervezhetnek és nem hozhatnak létre rakományokat a kitárolás előtt, de a kitárolás után betölti a rendelkezésre álló szállítási helyet.
 >
 > A *Megerősítés és áthelyezés* funkció olyan helyzetekben használható, amikor a rakományt általában előre megtervezik és létrehozzák, de ha kivételek történnek, amikor a rakomány nem fér el a rendelkezésre álló szállítóeszközben (például teherautóban).
 
-## <a name="turn-on-confirm-and-transfer"></a>A megerősítés és áthelyezés bekapcsolása
+## <a name="turn-the-confirm-and-transfer-feature-on-or-off"></a>A megerősítési és átviteli funkció be- és kikapcsolása
 
-A *Megerősítés és áthelyezés* funkciót használata előtt be kell kapcsolni a rendszerben. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
-
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Megerősítés és áthelyezés*
+Az ebben a témakörben leírt *funkciók* használatához a rendszernek be kell kapcsolva lennie a Megerősítés és átvitel szolgáltatásnak. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák a Funkciókezelés munkaterület Megerősítés és átvitel szolgáltatásának keresésével be- vagy kikapcsolhatja ezt a funkciót.
 
 ## <a name="set-up-confirm-and-transfer"></a>A megerősítés és áthelyezés beállítása
 
@@ -230,3 +224,6 @@ Azt is megerősítheti, hogy a tranzakciók kapcsolatai a következő módon let
 - A **Mennyiség megosztása új rakományhoz** beállítás akkor is működik, ha a fennmaradó munkafejlécek egy része *Folyamatban* állapotú. Ennek megfelelően még akkor is használhatja a funkciót, ha a dolgozók már futtatják a kitárolási rendeléseket.
 - Ha be van jelölve a **Nem teljesített mennyiség érvénytelenítése**, miközben a fennmaradó munka állapota *Nyitott* vagy *Folyamatban*, a következő hibaüzenet jelenik meg: „Nem lehet érvényteleníteni a rakomány fennmaradó mennyiségét. A rakománnyal munkavégzés zajlik.”
 - Ha bejelöli a **Nem teljesített mennyiség érvénytelenítése** lehetőséget, ha nincs fennmaradó munka, de a rakomány nem kiadott sorokat tartalmaz, akkor a következő hibaüzenet jelenik meg: „A rakomány szállítása nem erősíthető meg, mert a cikkmennyiség meghaladja a szállítás alatti rakomány megadott arányát.” A hiba elkerüléséhez beállíthatja a **Szállítás alatt** százalékos arányát a kiadatlan rakományok sorában 100 százalékra. A kiadatlan sorok nem kerülnek át az új rakományba, de az aktuális rakományt a rendszer szállítás alattiként megerősíti. Ebben az esetben nem fogja tudni újra kiadni az eredeti rendelést. Ezért ezt Önnek másképp kell majd kezelnie.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

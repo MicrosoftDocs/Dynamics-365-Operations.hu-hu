@@ -2,23 +2,23 @@
 title: A Kötelezettségekre vonatkozó számlaegyeztetés-ellenőrzés beállítása
 description: Ez a cikk a kötelezettségek számlaegyeztetésének hitelesítésbeállítását ismerteti.
 author: abruer
-ms.date: 06/26/2019
+ms.date: 02/14/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendParameters
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 017b0197563b9d7fd03f5fc927353be8d16586090f467cff792016431e0fafad
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 602666df4cf015791398939a3067a2cae85a12eb
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722863"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182555"
 ---
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>A Kötelezettségekre vonatkozó számlaegyeztetés-ellenőrzés beállítása
 
@@ -54,7 +54,7 @@ Négy típusú egyeztetési ellenőrzés használható.
 12. A **Beszerzési ár teljes tűréshatára** mezőben adjon meg egy összeget a könyvelési pénznemben. Ez a mező csak akkor érhető el, ha a **Teljes árak egyeztetése** mező értéke **Összeg** vagy **Százalék és összeg**.
 13. A **Teljes ár egyeztetését jelző ikon megjelenítése** mezőben adja meg, hogy jelenjen-e meg egy ikon, ha a számlaegyeztetési eltérés meghaladja a tűréshatárt. Választhat, hogy ikon, ha pozitív eltérés meghaladja a tűréshatárt, vagy ha a pozitív vagy negatív eltérés meghaladja a tűréshatára.
 Ha például a tűréshatára értéke 5 százalék, és a beszerzési rendelésen megadott teljes számlaösszeghez 10,00. Ezért áregyeztetési ikon jelenik meg a számlán a számla teljes összege meghaladja a 10,50. Amennyiben a **Nagyobb vagy kisebb a tűréshatárnál** beállítást választja, akkor is megjelenik az ikon, ha a számla sorában a teljes ár kisebb, mint 9,50.
-13. Adja meg a Költségek egyeztetése beállítást.
+13. A költségegyeztetés **beállítása**
 14. A tényleges költségek és a várható költségek beszerzési rendelés adatai alapján történő egyeztetéséhez jelölje be a **Költségegyeztetés** jelölőnégyzetet.
 
 ## <a name="set-up-unit-price-tolerance-percentages"></a>Egységár-tűréshatár százalékos értékének beállítása
@@ -75,7 +75,7 @@ A  alapértelmezés szerint megengedi a negatív áreltéréseket. Negatív árk
 
 ## <a name="set-up-matching-policy-override"></a>Egyeztetési irányelv felülbírálásának beállítása
 
-A Beszerzési rendelés képernyő Egyeztetési irányelv mezőjének alapértelmezett bejegyzése a **Kötelezettségek > Beállítás > Számlaegyeztetés beállítása > Egyeztetési irányelv** részen adható meg. Ez a beállítás nem kötelező. Ezen a képernyőn beállíthatja a cikkekhez, a szállítókhoz és a cikk és szállító kombinációjához használandó két- és háromirányú egyeztetést. Ezekkel a bejegyzésekkel részletesebben határozhatók meg az egyeztetési irányelvek, mint a jogi személyre vonatkozó, a **Kötelezettségek paraméterei** lapon megadott egyeztetési irányelvvel. Az alapértelmezett jogi személy soregyeztetési irányelve csak azokra a tételekre és szállítókra nem vonatkozik, amelyekhez ehhez a lapon eltérő soregyeztetési irányelvet határoztak meg.
+Menjen a **Kötelezettségek > beállítási > Számlaegyeztetés beállítása > Egyeztetési** **irányelv, ha meg kell határoznia a Beszerzési rendelés oldal sorai egyeztetési irányelv** **mezőjének alapértelmezett** bejegyzését. Ez a beállítás nem kötelező. Ezen a lapon beállíthatja a cikkek, szállítók, illetve cikk- és szállítókombinációk oda-vissza egyeztetését. Ezekkel a bejegyzésekkel részletesebben határozhatók meg az egyeztetési irányelvek, mint a jogi személyre vonatkozó, a **Kötelezettségek paraméterei** lapon megadott egyeztetési irányelvvel. Az alapértelmezett jogi személy soregyeztetési irányelve csak azokra a tételekre és szállítókra nem vonatkozik, amelyekhez ehhez a lapon eltérő soregyeztetési irányelvet határoztak meg.
 
 Ezen a lapon válassza ki az **Egyeztetési irányelv szintje** beállítást. Az a hierarchiaszint, amelynél felül kell bírálni a vállalat soregyeztetési irányelvét.
 

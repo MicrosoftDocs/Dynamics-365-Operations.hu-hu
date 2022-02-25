@@ -2,22 +2,22 @@
 title: Hitelkezelés beállítása
 description: Ez a témakör a Hitelkezeléshez szükséges beállításokat írja le.
 author: JodiChristiansen
-ms.date: 09/04/2019
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 9b9e756b678786d2c5a8c5bb9e890ce988090c09
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 6977789b039c3e77e6d697e32bf4cac69c35a901
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753668"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182443"
 ---
 # <a name="credit-management-setup"></a>Hitelkezelés beállítása 
 
@@ -39,7 +39,7 @@ Ha a rendelésben szereplő fizetési feltételek nem egyeznek meg a vevő alap�
 
 Ha a fizetési feltételek rangsora aktív, és a rendelésen szereplő fizetési feltételek magasabb rangúak a vevő alapértelmezett fizetési feltételeinél, az értékesítési rendelések várakoztatott állapotba kerülnek.
 
-A fizetési feltételek rangsorát a **Követelések és beszedések \> Beállítások \> Hitelkeret beállítása \> Fizetési feltételek rangsorolása** lapon állíthatja be.  
+A fizetési feltételek rangsorolásának beállításához a Jóváírások **és beszedési \> beállítások beállításának \>\> rangsorolási fizetési feltételei gombra kell állítani**.  
 
 ### <a name="ranking-settlement-discounts"></a>Kiegyenlítési kedvezmények rangsorolása
 
@@ -47,7 +47,7 @@ Ha a rendelésben készpénzfizetési engedmény nem egyez meg a vevő alapérte
 
 Ha a készpénzfizetési engedmények rangsora aktív, és ha a rendelésen szereplő készpénzfizetési engedmény magasabb rangú a vevő alapértelmezett készpénzfizetési engedményénél, az értékesítési rendelés várakoztatott állapotba kerül.
 
-A fizetési feltételek rangsorát a **Követelések és beszedések \> Beállítások \> Hitelkeret beállítása \> Kiegyenlítési engedmények rangsorolása** lapon állíthatja be.  
+A fizetési feltételek rangsorát a **Követelések és beszedések \> Beállítások \> Hitelkeret beállítása \>Kiegyenlítési engedmények rangsorolása** lapon állíthatja be.  
 
 ## <a name="reasons"></a>Okok
 
@@ -86,7 +86,7 @@ A számlaállapotokat a **Számlaállapotok** oldalon (**Követelések és besze
 
 ## <a name="scoring-groups"></a>Pontozási csoportok
 
-A pontozási csoportok beállításával meghatározhatja a kockázati tényezőket, valamint a rájuk vonatkozó mérési feltételeket. Amikor egy vevőre vonatkozó információt egy pontozási csoportra alkalmaznak, minden kockázati tényezőhöz egy pontszám számítása történik, és ez a vevőnek a kockázati csoportokba történő betárolására szolgál. A kockázati csoport felhasználható a hitelképesség azonosítására és az automatikus hitelkeretek kiszámítására is.
+A pontozási csoportokat **be** lehet állítani a kockázattényezők és a mértékük mérésére használt feltételek meghatározására. Amikor egy vevőre vonatkozó információt egy pontozási csoportra alkalmaznak, minden kockázati tényezőhöz egy pontszám számítása történik, és ez a vevőnek a kockázati csoportokba történő betárolására szolgál. A kockázati csoport felhasználható a hitelképesség azonosítására és az automatikus hitelkeretek kiszámítására is.
 
 A pontozási csoportokat a **Pontozási csoportok** lapon hozhatja létre (**Követelések és beszedések \> Beállítások \> Hitelkezelés beállítása \> Kockázat \> Pontozási csoportok**).
 
