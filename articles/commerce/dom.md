@@ -2,15 +2,12 @@
 title: Felosztott rendeléskezelés (DOM)
 description: Ez a témakör a Dynamics 365 Commerce elosztott rendeléskezelés (DOM) funkcióját részletezi.
 author: josaw1
-manager: AnnBe
-ms.date: 05/22/2020
+ms.date: 02/08/2022
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,26 +15,26 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3a83bd6e997110d107bac836abf237f99db78d99
-ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
+ms.openlocfilehash: f19fbe2a9f768a91c495a6a4bcb0e475adb867ae
+ms.sourcegitcommit: 8bea5a0c232ac31dcafddfcc0d715c496d8dd445
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4459192"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102009"
 ---
 # <a name="distributed-order-management-dom"></a>Felosztott rendeléskezelés (DOM)
 
 [!include [banner](includes/banner.md)]
 
-A kereskedelmi műveletek új paradigmájában a kiskereskedők törekszenek arra, hogy személyre szabott ügyfélkapcsolatokat, többcsatornás élményeket és gördülékeny interakciókat nyújthassanak. Mivel számos választási lehetőségük van, a fogyasztók ott vásárolnak, ahol a legkellemesebb élményben lesz részük. Sok esetben már nem az árak és a termékek a legfontosabb döntési tényezők a fogyasztók szemében.
+Ez a témakör a Microsoft Dynamics 365 Commerce elosztott rendeléskezelés (DOM) funkcióját részletezi.
 
-A vevői élmény javítása érdekében a kiskereskedőknek biztosítaniuk kell a készletük átláthatóságát valós időben, minden csatornán keresztül. Ha egyetlen, átfogó nézetet biztosít a készlethez, azzal optimalizálhatja a rendelések teljesítését, felosztását és terjesztését. Ezért az elosztott rendeléskezelési (DOM) rendszer bevezetése és alkalmazása egyre elengedhetetlenebbé válik a kiskereskedők számára.
+A DOM olyan többcsatornás rendelésteljesítés-optimalizálási megoldás, amely segít maximalizálni a rendelések teljesítését az ellátásilánc-hálózatokban. A DOM segítségével biztosíthatja, hogy a termékeket a megfelelő mennyiségben, a megfelelő forrásból és a megfelelő időben szállítsák a vevőknek. Ezen kívül a DOM használatával maximalizálhatja a nyereséget, minimálisra lehet csökkentheti a költségeket, és teljesítheti a szolgáltatásszintű követelményeket.
 
-A DOM optimalizálja a rendelések teljesítését még a rendszerek és folyamatok bonyolult rendszerén keresztül is. A rendszer a teljes szervezeten keresztül egyetlen, globális készletnézetre támaszkodik a rendelések intelligens kezelése érdekében, így ezeket pontosan lehet teljesíteni, ráadásul sokkal költséghatékonyabb módon. A DOM javítja a kiskereskedő ellátási láncának hatékonyságát, és így segít a kiskereskedőnek a vevői igények megfelelőbb kielégítésében.
+A DOM vegyes egészértékű programozást (MIP) és prediktív elemzési modelleket használ az optimalizálások kötegszintű és az egyes rendelések szintjén történő végrehajtásához. Ez a lehetőség lehetővé teszi a kiskereskedők számára, hogy meghatározott szabályokkal kiigazítsák az egymással ütköző rendelésteljesítési igényeket. Egy olyan modern ellátási hálózatban, ahol a termékteljesítés több csatornán keresztül is érkezhet, a szervezeteknek gyorsan kell tudniuk alkalmazkodni a rendelések változásához, a szállító elérhetőségével kapcsolatos problémákhoz és a kiugró igényekhez. A DOM segítségével maximalizálhatja a rendelések teljesítését, és megtalálhatja a megfelelő termékszállítási forrásokat az üzleti korlátozások és célkitűzések (például ha költségcsökkentés miatt a legközelebbi forrásból kell teljesíteni a rendelést) alapján. A DOM a termékteljesítési források és a szállítási célok közötti távolság, az optimalizálási célkitűzésekként meghatározott költségtényezők, valamint a korlátozásokként meghatározott szabályok (például készletezés a teljesítési csomópontokon) felhasználásával optimalizálja a rendelések teljesítését. A DOM több profil meghatározását is lehetővé teszi, amelyek az üzleti vagy felhasználói szegmens típusától függően különböző optimalizálási stratégiákat kínálnak a vállalkozások számára. 
 
 A következő ábra bemutatja egy értékesítési rendelés teljes életútját a DOM rendszerben.
 
-![Értékesítési rendelés életciklusa a DOM környezetében](./media/flow.png "Értékesítési rendelés életciklusa a DOM környezetében")
+![Értékesítési rendelés életciklusa a DOM környezetében.](./media/flow.png "Értékesítési rendelés életciklusa a DOM környezetében")
 
 ## <a name="set-up-dom"></a>DOM beállítása
 
@@ -50,7 +47,9 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
     - **Bing Térképek-használat megerősítése a DOM-hoz** – Állítsa a beállítást **Igen** értékre.
 
         > [!NOTE]
-        > Ezt a beállítást csak akkor állíthatja **Igen** értékre, ha a **Megosztott kereskedelmi paraméterek** oldal **Bing Térképek** lapján a **Bing Térképek engedélyezése** beállítás (**Kiskereskedelem és kereskedelem \> Központ beállítása \> Paraméterek \> Megosztott kereskedelmi paraméterek**) értéke is **Igen** értékre van állítva, valamint a **Bing Térképek-kulcs** mezőben érvényes kulcsot adtak meg.
+        > Ezt a beállítást csak akkor állíthatja az **Igen** értékre, ha a **Megosztott kereskedelmi paraméterek** oldal **Bing Térképek** lapján a **Bing Térképek engedélyezése** beállítás (**Kiskereskedelem és kereskedelem \> Központ beállítása \> Paraméterek \> Megosztott kereskedelmi paraméterek**) értéke is az **Igen** értékre van állítva, valamint a **Bing Térképek-kulcs** mezőben érvényes kulcsot adtak meg.
+        >
+        > A [Bing Térképek fejlesztői központ](https://www.bingmapsportal.com/) portál segítségével bizonyos tartományokra korlátozhatja a hozzáférést a Bing Térképek API-kulcsokhoz. Ezzel a funkcióval az ügyfelek meghatározhatják azoknak a hivatkozóérték- vagy IP-címtartományokat a szigorú készletét, amelyek alapján a rendszer hitelesíti a kulcsot. Az engedélyezési listáról származó kérelmeket a rendszer a szokásos módon dolgozza fel, míg a listán kívülről érkező kérelmek esetében „hozzáférés megtagadva” választ ad. A tartományt védő biztonsági beállítások használata az API-kulcsnál opcionális, és a nem módosított kulcsok is működni fognak. A kulcshoz tartozó engedélyezési lista független a többi kulcstól, így külön szabályokat hozhat létre az egyes kulcsokhoz. A Felosztott rendeléskezelés nem támogatja a tartományra hivatkozó tulajdonságok beállítását.
 
     - **Megőrzési időszak (nap)** – Adja meg, hogy a DOM-futtatások által létrehozott teljesítési terveket a rendszer milyen hosszan őrizze meg. A **DOM teljesítési adatok törlése feladatbeállítás** kötegelt feladat minden olyan teljesítési tervet törölni fog, amely régebbi, mint az itt megadott napok száma.
     - **Elutasítási időszak (napokban)** – Adja meg, mennyi időnek kell eltelnie, mielőtt egy elutasított rendelési sort ugyanahhoz a helyhez lehetne rendelni.
@@ -59,18 +58,18 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
 
     - **Maximális automatikus teljesítési próbálkozások száma** – Adja meg, hogy a DOM-motor hányszor próbálkozzon egy rendelési sor adott helyhez való közvetítésével. Ha a DOM-motor nem tudja a rendelés sort az adott helyhez közvetíteni a meghatározott számú próbálkozás során, akkor kivételként jelöli meg a rendelési sort. A jövőbeli futások során a rendszer kihagyja majd a sort egészen addig, amíg az állapotát manuálisan vissza nem állítják.
     - **Helyi üzlet régiójának hatósugara** – Adjon meg egy értéket. A mező segítségével megállapíthatja, hogy a helyeket a rendszerek hogyan csoportosítja és értelmezi egyenlőként a távolság tekintetében. Például ha a bevitt érték **100**, akkor a rendszer minden üzletet vagy elosztási központot, amely a teljesítési cím 100 mérföldes körzetében található, egyenlőként fog kezelni a távolság tekintetében.
-    - **Feloldás típusa** – Válasszon ki egy értéket. A kereskedelmi szolgáltatásban két feloldási típus áll rendelkezésre: a **Termelési feloldás** és az **Egyszerűsített feloldás**. Az összes, DOM-ot futtató berendezés esetében (ide értendő az összes szerver, amely a DOMBatch csoportba tartozik) a **Termelési feloldás** lehetőséget kell kiválasztani. A Termelési feloldáshoz egy speciális licenckulcsra van szükség, amely alapértelmezett módon a termelési környezetekben licencelt és telepített. A nem termelési környezetekben a licenckulcsot manuálisan kell telepíteni. A licenckulcs manuális telepítéséhez kövesse az alábbi lépéseket:
+    - **Feloldás típusa** – Válasszon ki egy értéket. A kereskedelmi szolgáltatásban két feloldási típus áll rendelkezésre: a **Termelési feloldás** és az **Egyszerűsített feloldás**. Az összes, DOM-ot futtató berendezés esetében (ide értendő az összes szerver, amely a DOMBatch csoportba tartozik) a **Termelési feloldás** lehetőséget kell kiválasztani. A Termelési feloldáshoz egy speciális licenckulcsra van szükség, amely alapértelmezett módon a termelési környezetekben licencelt és telepített. Az újabb, kettes vagy magasabb szintű környezetben már engedélyezve van a Production Solver. A nem termelési környezetekben a licenckulcsot manuálisan kell telepíteni. A licenckulcs manuális telepítéséhez kövesse az alábbi lépéseket:
 
         1. A Microsoft Dynamics Lifecycle Services szolgáltatásban nyissa meg a Közös eszközök tárát, az eszköz típusaként válassza ki a **Modell** lehetőséget, majd töltse le a **DOM-licenc** fájlt.
-        2. Indítsa el a Microsoft Internet Information Services (IIS)-kezelő szolgáltatást, jobb gombbal kattintson az **AOSService weboldal** lehetőségre, majd válassza a **Felfedezés** elemet. Ekkor az **\<AOS service root\>\\webroot** helyen megnyílik egy Windows Explorer-ablak. Jegyezze fel az \<AOS Service root\> elérési útvonalát, mert a következő lépésnél szüksége lesz rá.
-        3. Másolja a konfigurációs fájlt az **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** könyvtárába.
-        4. Lépjen a Headquarters kliensre, és nyissa meg a **DOM-paraméterek** oldalt. A **Feloldás** lapon található **Feloldás típusa** mezőben válassza a **Termelési feloldás** lehetőséget, és erősítse meg, hogy nem jelentek meg hibaüzenetek.
+        1. Indítsa el a Microsoft Internet Information Services (IIS)-kezelő szolgáltatást, jobb gombbal kattintson az **AOSService weboldal** lehetőségre, majd válassza a **Felfedezés** elemet. Ekkor az **\<AOS service root\>\\webroot** helyen megnyílik egy Windows Explorer-ablak. Jegyezze fel az \<AOS Service root\> elérési útvonalát, mert a következő lépésnél szüksége lesz rá.
+        1. Másolja a konfigurációs fájlt az **\<AOS Service root\>\\PackagesLocalDirectory\\DOM\\bin** könyvtárába.
+        1. Lépjen a Headquarters kliensre, és nyissa meg a **DOM-paraméterek** oldalt. A **Feloldás** lapon található **Feloldás típusa** mezőben válassza a **Termelési feloldás** lehetőséget, és erősítse meg, hogy nem jelentek meg hibaüzenetek.
 
         > [!NOTE]
         > Az Egyszerűsített feloldás azért áll rendelkezésre, hogy a kiskereskedőknek lehetőségük legyen a DOM funkció kipróbálására anélkül, hogy a speciális licencet telepíteniük kellene. A szervezeteknek nem javasolt az Egyszerűsített feloldás használata termelési környezetekben.
         >
-        > Bár az Egyszerűsített feloldás ugyanolyan képességekkel rendelkezik, mint a Termelési feloldás, különböző korlátai vannak, például a teljesítményben (az egy futás során kezelt rendelések és rendelési sorok száma) és az eredmények konvergenciája (bizonyos esetekben a rendelések kötegével nem a legjobb eredményt lehet elérni).
-     
+        > A Termelési feloldás javítja a teljesítményt (például az egy futás során kezelhető rendelések és rendelési sorok számát) és az eredmények konvergenciáját (bizonyos esetekben nem biztos, hogy a kötegelt rendeléssel lehet a legjobb eredményt elérni). Egyes szabályok, például a **Részleges rendelés** és a **Helyszínek maximális száma** szabály megkövetelik a Termelési feloldás használatát.
+
 6. Lépjen vissza a **Kiskereskedelem és kereskedelem \> Felosztott rendeléskezelés \> Beállítás \> DOM-paraméterek** lehetőségre.
 7. A **Számsorozatok** lapon rendelje hozzá a szükséges számsorozatokat a különböző DOM-entitásokhoz.
 
@@ -83,7 +82,7 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
     2. Válassza az **Új** lehetőséget, és adja meg az új csoport nevét és leírását.
     3. Válassza a **Mentés** lehetőséget.
     4. Ha egyetlen helyet szeretne a csoporthoz hozzáadni, válassza a **Sor hozzáadása** elemet. Továbbá a **Sorok hozzáadása** elemmel egyszerre több helyet is hozzáadhat.
-    
+
     > [!NOTE]
     > A 10.0.12-es és újabb Commerce verzióban a **„Szállítás” vagy „Felvétel” helyszíneinek meghatározásához** engedélyezni kell a **Funkciókezelés** munkaterületen a Teljesítési csoportot.
     >
@@ -95,47 +94,22 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
 
 9. A szabályok definiálásához ugorjon a **Retail and Commerce \> Felosztott rendeléskezelés \> Beállítás \> Szabályok kezelése** lehetőségre. Jelenleg a következő DOM-szabályok támogatottak:
 
-    - **Minimumkészlet szabálya** – Ez a szabálytípus lehetővé teszi a szervezetnek, hogy elkülönítsék egy termék bizonyos mennyiségét rendelésteljesítéstől eltérő célra. Például előfordulhat, hogy a szervezet nem szeretné, hogy a DOM a teljes készletet figyelembe vegye a rendelésteljesítéshez, ami az üzletben található. Ehelyett szeretnék a készlet egy részét a besétáló vásárlók számára fenntartani. Ilyen típusú szabály használatakor meghatározhatja az adott termékkategóriára, egy egyéni termékre vagy termékváltozatra vonatkozó minimum fenntartandó készlet mennyiségét helyekre vagy helyek csoportjára lebontva.
-    - **Teljesítés helye prioritási szabály** – Ezzel a szabálytípussal a szervezetek meghatározhatják a helyek hierarchiáját, amelynek megfelelő prioritást vesz a DOM-motor figyelembe, amikor a meghatározott termék teljesítési helyét igyekszik beazonosítani. A prioritások érvényes tartománya 1 és 10 közötti, ahol 1 a legmagasabb, 10 pedig a legalacsonyabb prioritást jelzi. A magasabb prioritással rendelkező helyeket a rendszer előbb veszi figyelembe, mint az alacsonyabb prioritással rendelkezőket. Ha a szabályt szigorú korlátként határozza meg, a rendeléseket csak a meghatározott prioritással rendelkező helyekre közvetíti a rendszer.
-    - **Részleges rendelés szabály** – Ez a szabály azt teszi lehetővé, hogy a szervezetek meghatározzák, hogy egy rendelést vagy rendelési sort lehetséges-e csak részlegesen teljesíteni. A következő paraméterek állnak rendelkezésre:
-
-        - **Részleges rendelések teljesítése?** – Ha ezt a beállítást **Igen** értékre állítja, a DOM képes arra, hogy a rendelési sorban található mennyiségnek csak egy részét teljesíti. A részleges teljesítés a rendelési sor felosztásával valósítható meg.
-        - **Részleges sorok teljesítése?** – Ha ezt a beállítást **Igen** értékre állítja, a DOM képes arra, hogy a rendelési sorok mennyiségnek csak egy részét teljesíti. A részleges teljesítés a rendelési sor felosztásával valósítható meg.
-        - **Rendelés teljesítése csak egy helyről** – Ha ezt a beállítást **Igen** értékre állítja, a DOM gondoskodik arról, hogy egy rendelés minden sorát csak egyetlen helyről teljesítse.
-
-
-        Az alábbi táblázat bemutatja, mi történik akkor, ha ezeknek a paramétereknek a kombinációja kerül meghatározásra.
-
-        | Kombináció száma | Részleges rendelések teljesítése | Részleges sorok teljesítése | Rendelés teljesítése csak egy helyről | Leírás |
-        |------|------------------------|-----------------------|--------------------------------------|-------------|
-        | 1    | Igen                    | Igen                   | Igen                                  | Az adott DOM-futáspéldányban a rendelés néhány sora teljesíthető, valamint az egyes soroknál is lehetséges a részleges teljesítés, azonban minden sort ugyanarról a helyről kell teljesíteni. (Ez a kombináció jelenleg nem támogatott.) |
-        | 2    | Igen                    | Nem                    | Igen                                  | Az adott DOM-futáspéldányban a rendelés néhány sora teljesíthető, de az egyes soroknál nem lehetséges a részleges teljesítés, és minden teljesített sor ugyanarról a helyről kell, hogy származzon. (Ez a kombináció jelenleg nem támogatott.) |
-        | 3    | Igen                    | Igen                   | Nem                                   | Az adott DOM-futáspéldányban a rendelés néhány sora teljesíthető, és az egyes soroknál lehetséges a részleges teljesítés, valamint minden sort lehet egynél több helyről is teljesíteni. |
-        | 4\*  | Nem                     | Nem alkalmazható        | Nem                                   | Minden teljesítési sort teljesíteni kell, az egyes sorokat nem lehet részlegesen teljesíteni, és minden sort lehet különböző helyekről teljesíteni. |
-        | 5\*  | Nem                     | Nem alkalmazható        | Igen                                  | Minden teljesítési sort teljesíteni kell, az egyes sorokat nem lehet részlegesen teljesíteni, és az összes rendelési sort egy helyről lehet csak teljesíteni. |
-        | 6\*  | Nem                     | Nem alkalmazható        | Nem                                   | Ez a kombináció a 4. kombinációhoz hasonlóan működik, mivel a **Részleges sorok teljesítése** beállítást nem lehet **Igen** értékre állítani, ha a **Részleges rendelések teljesítése** beállítása **Nem** értékre van állítva. |
-        | 7\*  | Nem                     | Nem alkalmazható        | Igen                                  | Ez a kombináció a 5. kombinációhoz hasonlóan működik, mivel a **Részleges sorok teljesítése** beállítást nem lehet **Igen** értékre állítani, ha a **Részleges rendelések teljesítése** beállítása **Nem** értékre van állítva. |
-        | 8    | Igen                    | Nem                    | Nem                                   | Az adott DOM-futáspéldányban a rendelés néhány sora teljesíthető, de az egyes soroknál nem lehetséges a részleges teljesítés, és a különböző rendelési sorokat egynél több helyről is lehet teljesíteni. |
-        | 9\*  | Nem                     | Nem alkalmazható        | Igen                                  | Mindegyik rendelési sort teljesíteni kell, valamint az összes rendelési sort egy helyről kell teljesíteni. |
-
-        \* Ha a **Részleges rendelések teljesítése** beállítás **Nem** értékre van állítva, a **Részleges sorok teljesítése** beállításokat mindig **Nem** értékűnek kell tekinteni, attól függetlenül, hogy valójában mire vannak állítva.
-
-        > [!NOTE]
-        > A Retail 10.0.5-ös verziójában a **Rendelés teljesítése csak egy helyről** paraméter **Maximum teljesítési helyek** paraméterre módosult. Annak beállítása helyett, hogy a rendelést csak egy helyről, vagy a lehetséges összes helyről lehessen teljesíteni, mostantól a felhasználók megadhatják, hogy a teljesítést a helyek megadott csoportjából (legfeljebb 5 hely) lehet teljesíteni, vagy a lehetséges összes helyről. Ez több rugalmasságot biztosít a rendelésteljesítés helyeinek számát illetően.
-
-   - **Offline teljesítési hely szabály** – Ez a szabály lehetővé teszi a szervezeteknek, hogy egy helyet vagy helycsoportot offline vagy nem elérhető jelzéssel lássanak el, így a rendelések nem rendelhetők hozzá teljesítésre az adott helyhez.
-    - **Maximum elutasítások szabály** – Ezzel a szabállyal a szervezetek meghatározhatnak egy elutasítási küszöbértéket. Amikor a rendszer eléri a küszöbértéket, a DOM processzor kivételként megjelöli a rendelést vagy rendelési sort, és kizárja a további feldolgozásból.
+    - **Minimumkészlet szabálya** – Ez a szabálytípus lehetővé teszi a szervezetnek, hogy elkülönítsék egy termék bizonyos mennyiségét rendelésteljesítéstől eltérő célra. Például előfordulhat, hogy a szervezet nem szeretné, hogy a DOM a teljes készletet figyelembe vegye a rendelésteljesítéshez, ami az üzletben található. Ehelyett szeretnék a készlet egy részét a besétáló vásárlók számára fenntartani. Ilyen típusú szabály használatakor meghatározhatja az adott termékkategóriára, egy egyéni termékre vagy termékváltozatra vonatkozó minimum fenntartandó készlet mennyiségét helyekre vagy helyek csoportjára lebontva. A minimális készletet is meghatározhat kiegészítő kategóriahierarchia segítségével. Ha egy termék több kategóriába is esik, akkor az egyik kiegészítő kategória lesz a legnagyobb fontosságú minden olyan szabály esetén, amelyben kategóriákat lehet használni.
+    - **Teljesítés helye prioritási szabály** – Ezzel a szabálytípussal a szervezetek meghatározhatják a helyek hierarchiáját, amelynek megfelelő prioritást vesz a DOM-motor figyelembe, amikor a meghatározott termék teljesítési helyét igyekszik beazonosítani. A prioritások érvényes tartománya 1 és 10 közötti, ahol 1 a legmagasabb, 10 pedig a legalacsonyabb prioritást jelzi. A magasabb prioritással rendelkező helyeket a rendszer előbb veszi figyelembe, mint az alacsonyabb prioritással rendelkezőket. Ha a szabályt szigorú korlátként határozza meg, a rendeléseket csak a meghatározott prioritással rendelkező helyekre közvetíti a rendszer. A DOM előnyben részesíti azokat a szállítási rendeléseket, amely egyetlen helyről érkeznek. Ezért ha egy egész rendelés és annak sorai nem érhetők el egy 1-es prioritású helyről, akkor a DOM egy olyan helyről próbálja teljesíteni a rendelést, amely 2-es prioritással rendelkezik.
+    - **Részleges rendelés szabály** – A Retail version 10.0.5-ös verziójában a **Rendelés teljesítése csak egy helyről** paraméter **Maximum teljesítési helyek** paraméterre módosult. A régi paraméter lehetővé teszi a felhasználók számára annak konfigurálását, hogy a rendelések csak egyetlen helyről vagy a lehető legtöbb helyről legyenek teljesítve. Az új paraméter lehetővé teszi a felhasználók számára annak megadását, hogy a teljesítés adott helyek (legfeljebb öt) meghatározott halmazából vagy a lehető legtöbb helyről történjen. Az egy helyről történő teljesítés kivételével minden más lehetőségnél a DOM felosztja a sort, mivel a rendelés feldolgozása sorok szerint történik. Ez a szabály csak a Termelési feloldás segítségével működik.
+    - **Offline teljesítési hely szabály** – Ez a szabály lehetővé teszi a szervezeteknek, hogy egy helyet vagy helycsoportot offline vagy a DOM számára nem elérhető jelzéssel lássanak el, így a rendelések nem rendelhetők hozzá teljesítésre az adott helyhez.
+    - **Maximum elutasítások szabály** – Ezzel a szabállyal a szervezetek meghatározhatnak egy elutasítási küszöbértéket. Amikor a rendszer eléri a küszöbértéket, a DOM processzor kivételként megjelöli a rendelést vagy rendelési sort, és kizárja a további feldolgozásból. A teljesítmény biztosítása érdekében a DOM nem nézi meg az összes elutasítási előzményt. 
 
         Miután a rendelési sorokat egy helyhez rendelte a rendszer, a hely elutasíthatja a hozzárendelt rendelési sort, mivel bizonyos okok miatt előfordulhat, hogy nem képes teljesíteni a rendelést. Az elutasított sorokat a rendszer kivételként jelöli meg, és visszakerülnek az állományba, hogy a következő futáskor ismét feldolgozásra kerüljenek. A következő futás során a DOM megpróbálja az elutasított sort egy másik helyhez rendelni. Az új helynek szintén lehetősége van a hozzárendelt rendelési sor elutasítására. A hozzárendelési és elutasítási ciklus akár többször is lejátszódhat. Amikor az elutasítások száma eléri a meghatározott küszöbértéket, a DOM állandó kivételként jelöli meg az adott rendelési sort, és többé nem tárolja ki a sort hozzárendelésre. A DOM csak akkor veszi figyelembe ismét hozzárendelésre a sort, ha egy felhasználó manuálisan módosítja a rendelési sor állapotát.
 
-   - **Maximum távolság szabály** – Ez a szabály lehetővé teszi, hogy a szervezet meghatározza a hely vagy helycsoport maximális távolságát a rendelés teljesítéséhez. Ha egymást fedő maximum távolsági szabályokat határoztak meg egy helyre vonatkozóan, akkor a DOM az adott helyhez megadott legalacsonyabb maximum távolságot alkalmazza majd.
-    - **Rendelések maximális számának szabálya** – Ezzel a szabállyal a szervezetek meghatározhatják a rendelések maximális számát, amelyet egy hely vagy helycsoport feldolgozhat egy naptári nap során. Ha adott helyhez vagy helycsoporthoz egy nap folyamán már hozzárendelték a rendelések maximális számát, akkor a DOM a nap további részében már nem rendel a helyhez több rendelést.
+    - **Maximum távolság szabály** – Ez a szabály lehetővé teszi, hogy a szervezet meghatározza a hely vagy helycsoport maximális távolságát a rendelés teljesítéséhez. Ha egymást fedő maximum távolsági szabályokat határoztak meg egy helyre vonatkozóan, akkor a DOM az adott helyhez megadott legalacsonyabb maximum távolságot alkalmazza majd.
+    - **Rendelések maximális számának szabálya** – Ezzel a szabállyal a szervezetek meghatározhatják a rendelések maximális számát, amelyet egy hely vagy helycsoport feldolgozhat. Az optimalizálási folyamat során a rendszer figyelembe veszi az ilyen helyekről még ki nem szállított rendeléseket. Ez az ellenőrzés a profilokon átívelően történik. Ezért ha a rendelések egymást fedő maximum száma több profilra vonatkozóan van meghatározva ugyanahhoz a helyhez, akkor a rendszer figyelembe veszi az összes profilban definiált rendelések maximális számát. 
 
-   Az alábbiakban felsoroltunk néhány olyan közös attribútumot, amelyet a korábban felsorolt szabálytípusra meg lehet határozni:
+    Az alábbiakban felsoroltunk néhány olyan közös attribútumot, amelyet a korábban felsorolt szabálytípusra meg lehet határozni:
 
-   - **Kezdő dátum** és **Záró dátum** – Minden szabályt el lehet látni érvényességi dátummal, ha kitölti ezeket a mezőket.
-   - **Letiltott** – Csak azokat a szabályokat veszi figyelembe a DOM a futások során, amelyeknél ez a beállítás **Nem** értékkel rendelkezik.
-   - **Szigorú korlát** – Egy szabályt lehet szigorú vagy nem szigorú korlátként megadni. Minden DOM-futás két iteráción megy át. Az első iteráció során minden szabályt szigorú korlátként kezel a rendszer, függetlenül a mező beállításától. Azaz a rendszer minden szabályt alkalmaz. Ez alól az egyetlen kivétel a **Hely prioritása** szabály. A második iteráció során a nem szigorú korlátként megadott szabályokat a rendszer eltávolítja, és azok a rendelések vagy rendelési sorok is hozzárendelésre kerülnek, amelyeket az összes szabály alkalmazásakor nem sikerült helyhez hozzárendelni.
+    - **Kezdő dátum** és **Záró dátum** – Ezekkel a mezőkkel érvényességi dátummal láthat el minden szabályt.
+    - **Letiltott** – Csak azokat a szabályokat veszi figyelembe a DOM a futások során, amelyeknél ez a beállítás **Nem** értékkel rendelkezik.
+    - **Szigorú korlát** – Egy szabályt lehet szigorú vagy nem szigorú korlátként megadni. Minden DOM-futás két iteráción megy át. Az első iteráció során minden szabályt szigorú korlátként kezel a rendszer, függetlenül a mező beállításától. Azaz a rendszer minden szabályt alkalmaz. Ez alól az egyetlen kivétel a **Hely prioritása** szabály. A második iteráció során a nem szigorú korlátként megadott szabályokat a rendszer eltávolítja, és azok a rendelések vagy rendelési sorok is hozzárendelésre kerülnek, amelyeket az összes szabály alkalmazásakor nem sikerült helyhez hozzárendelni.
 
 10. A teljesítési profilokat a rendszer szabályok, jogi személyek, értékesítésirendelés-források és kiszállítási módok gyűjteményének csoportosítására használja. Minden DOM-futás egy meghatározott teljesítési profilhoz tartozik. Így a szervezetek meghatározhatnak és lefuttathatnak szabályok egy sorozatát jogi személyek egy csoportjára, olyan rendeléseken, amelyek specifikus értékesítésirendelés-forrásokkal vagy szállítási módokkal rendelkeznek. Ezért tehát amennyiben különböző szabálycsoportokat kell lefuttatni a különböző értékesítésirendelés-források vagy kiszállítási módok esetén, a teljesítési profilokat ennek megfelelően lehet megadni. A teljesítési profilok beállításához kövesse az alábbi lépéseket:  
 
@@ -145,15 +119,15 @@ A következő ábra bemutatja egy értékesítési rendelés teljes életútját
     4. Állítsa be az **Eredmények automatikus alkalmazása** lehetőséget. Ha ezt a beállítást **Igen** értékre állítja, akkor a profilhoz tartozó DOM-futás eredményeit a rendszer automatikusan alkalmazza az értékesítési rendelés soraira. Ha **Nem** értékre állítja, akkor az eredményeket csak a teljesítési tervben tudja megtekinteni. Ezeket a rendszer nem alkalmazza az értékesítési rendelés soraira.
     5. Ha szeretné, hogy a Felosztott rendeléskezelés-profil minden olyan rendeléshez lefusson, amelyek az összes értékesítési rendelésforrással rendelkeznek, ideértve azokat is, amelyeknél az értékesítési rendelés forrása nem meghatározott, állítsa a **Üres értékesítési forrással rendelkező rendelések feldolgozása** beállítást **Igen** értékre. Ha profilt csak néhány típusú értékesítésirendelés-forrás esetén szeretné futtatni, akkor azokat a később leírt módon a **Értékesítési források** oldalon teheti meg.
 
-    > [!NOTE]
-    > A 10.0.12-es és újabb Commerce verzióban a **Teljesítési csoport Teljesítési profilhoz való hozzárendelését** engedélyeznie kell a **Funkciókezelés** munkaterületen. 
-    >
-    > Ez a funkció egy olyan új konfigurációt ad a **Teljesítési profil** oldalhoz, amely egyetlen teljesítési csoporthoz kapcsolható. 
-    >
-    > Ha kiválasztja a teljesítési csoportot, akkor az adott teljesítési profil Felosztott rendeléskezelés szabályai fognak hatékonyan futni a megfelelési csoportban lévő „szállítási” raktárakkal szemben. 
-    > 
-    > Ennek a funkciónak a hatékony használatához győződjön meg arról, hogy létezik egy olyan teljesítési csoport, amely tartalmazza az összes szállítási raktárat, majd társítsa a teljesítési csoportot a teljesítési profilhoz.
-    
+        > [!NOTE]
+        > A 10.0.12 kiadású és újabb Commerce verzióban a **Teljesítési csoport Teljesítési profilhoz való hozzárendelése** funkciót engedélyeznie kell a **Funkciókezelés** munkaterületen. Ezzel a funkcióval listát lehet adni azokról a raktárakról, amelyekre a DOM-nak figyelembe kell vennie akkor, amikor az optimalizálás teljesítési profillal fut. Ha nincs megadva ez a raktárlista, a DOM a profilban meghatározott jogi entitások összes raktárát figyelembe veszi.
+        >
+        > Ez a funkció egy olyan új konfigurációt ad a **Teljesítési profil** oldalhoz, amely egyetlen teljesítési csoporthoz kapcsolható. 
+        >
+        > Ha kiválasztja a teljesítési csoportot, akkor az adott teljesítési profil Felosztott rendeléskezelés szabályai fognak hatékonyan futni a megfelelési csoportban lévő „szállítási” raktárakkal szemben. 
+        > 
+        > Ennek a funkciónak a hatékony használatához győződjön meg arról, hogy létezik egy olyan teljesítési csoport, amely tartalmazza az összes szállítási raktárat, majd társítsa a teljesítési csoportot a teljesítési profilhoz.
+
     6. A **Jogi személyek** gyorslapon válassza a **Hozzáadás** lehetőséget, majd válasszon ki egy jogi személyt.
     7. A **Szabályok** gyorslapon válassza a **Hozzáadás** elemet, majd válassza ki a szabályt, amelyet a profilhoz szeretne kapcsolni.
     8. Ismételje az előző két lépést mindaddig, amíg az összes szükséges szabályt nem társította a profilhoz.
@@ -196,9 +170,13 @@ A feldolgozás időpontjában a DOM az alábbiak szerint veszi majd figyelembe a
 
 - Olyan rendelések, amelyek nem várakoztatott állapotúak.
 
-Miután a DOM alkalmazta a szabályokat, a készletkorlátokat és az optimalizációt, kiválasztja a vevő szállítási címéhez legközelebbi helyet.
+Miután a DOM alkalmazta a szabályokat, a készletkorlátokat és az optimalizációt, kiválasztja a vevő szállítási címéhez legközelebbi helyet. A DOM a **Szállítás** típus címeit földrajzi szélességi és hosszúsági értékekre alakítja át. Ezt követően az értékesítési rendelésen szereplő szállítási címet is földrajzi szélességi és hosszúsági értékekké alakítja, valamint frissíti a cím földrajzi szélességi és hosszúsági értékeit későbbi használatra. A DOM a Bing Térképek rendszerétől függ a pontos földrajzi szélességi és hosszúsági értékek meghatározásánál az utca és házszám, a város és az irányítószám alapján.
 
-![Értékesítési rendelés feltételei](./media/ordercriteria.png "Értékesítési rendelés feltételei")
+A DOM a Bing Térképek API-t használja a légi és szárazföldi úttávolság kiszámítására, a beállításoktól függően. Ezután ezek az adatok alapján határozzák meg a szállítási költséget. Az optimalizálási modell priorizálja a teljes rendelés egy helyről történő teljesítését. Még ha a rendelés egy része ugyanabban a városban vagy irányítószámon is elérhető, a modellt úgy optimalizálták, hogy csökkentse a szállítmányok számát. 
+
+A DOM a rendelkezésre álló készletet a V2 raktári entitások aktuális készletének megtekintésével keresi meg. A DOM minden kötegfuttatás során kötegekre bontja a rendeléseket, a profilban meghatározott feladatok **DOM-feldolgozó** paraméterértékétől függően. Ennek a paraméternek az alapértelmezett értéke **2000**. Ha például 10 000 rendelési sor optimalizálása történik egy futtatás során, és a **DOM-feldolgozó** paraméter értéke az alapértelmezés szerinti **2000**, akkor a DOM öt köteget hoz létre, amelyeket egyszerre dolgoz fel. A teljesítési terveket ezután az optimalizálóból lehet megkapni és alkalmazni a soron. Ha a rendeléssort két hely között kell felosztani, akkor a DOM gondoskodik arról, hogy az árak és az adók megfelelően el legyenek osztva a sorok között.
+
+![Értékesítési rendelés feltételei.](./media/ordercriteria.png "Értékesítési rendelés feltételei")
 
 ## <a name="results-of-dom-runs"></a>DOM-futások eredményei
 
@@ -221,6 +199,7 @@ Az összes létrehozott teljesítési terv megtekintéséhez kövesse az alábbi
 ## <a name="order-line-actions-and-statuses"></a>Rendelési sorok műveletei és állapotai
 
 A következő leírásban a rendelési sor beállításait ismerheti meg. A rendelési sor megnyitásához lépjen a **Kiskereskedelem és kereskedelem \> Vevők \> Minden értékesítési rendelés** elemre.
+
 - Ha az értékesítési rendelési sor **Általános** lapján a **Kizárás a DOM-feldolgozásból** beállítást **Igen** értékre állította, a rendelés vagy a rendelési sor kizárásra kerül a DOM-feldolgozásból.
 - Az értékesítési rendelési sor **Általános** lapján található **DOM állapot** mezőt az alábbi értékek egyikére állíthatja:
 
@@ -250,5 +229,11 @@ Amikor lefut egy DOM-feldolgozás, teljesítési tervek jönnek létre. Idővel 
 Alább olyan dolgokat gyűjtöttünk össze, amelyet érdemes a DOM funkció használata során figyelembe vennie:
 
 - Jelenleg a DOM csak olyan rendeléseket tekint át, amelyeket kereskedelmi csatornákból hoztak létre. Az értékesítési rendeléseket a rendszer akkor azonosítja értékesítési rendelésként, ha a **Kereskedelmi értékesítés** beállítás **Igen** értékre van állítva.
-- A Microsoft még nem tesztelte a DOM-ot speciális raktárkezelési funkciókkal. A vevőknek és partnereknek óvatosnak kell lenniük, amikor annak megállapítására törekszenek, hogy a DOM kompatibilis-e a számukra releváns speciális raktárkezelési lehetőségekkel és folyamatokkal.
-- A DOM csak a kereskedelmi felhőalapú verziójában elérhető. A helyszíni telepítésű verziókban nem támogatott.
+- A Microsoft még nem tesztelte a DOM-ot speciális raktárkezelési funkciókkal. Így tehát a vevőknek és partnereknek óvatosnak kell lenniük, amikor annak megállapítására törekszenek, hogy a DOM kompatibilis-e a számukra releváns speciális raktárkezelési lehetőségekkel és folyamatokkal. A speciális raktárkészlet-nyilvántartás lehetővé teszi a konfigurálható dimenziókat, például a készlet állapotát, amely nem ad pontos képet a rendelkezésre álló készletről. A DOM kiterjeszthető módszert biztosít az elérhető készletek beállításához a speciális raktárkészlet-nyilvántartást használó megvalósítások esetén. Felhasználható a készletállapot és egyéb dimenziók testreszabott értékeivel való munkához.
+
+    A DOM kiterjeszthetősége korlátozott, mert az optimalizálás az előre felépített MIP-modellben történik, amely figyelembe veszi az optimalizálást és a korlátozásait. Már több kiterjeszthető pont is elérhető a készlet beállításához és a feldolgozás utáni optimalizáláshoz. A DOM-profilok értékesítési eredet és szállítási mód szerint eltérőek lehetnek. Az értékesítési rendelés eredetét a rendelési folyamat során lehet beállítani, és ezek az értékek alapján különböző optimalizálási stratégiákat lehet alkalmazni. A DOM olyan egyéni kötegelt feladatok létrehozását is támogatja, amelyek bemenetként a DOM-feldolgozó feladatot is átvehetik, és lehetővé teszik, hogy a profil paraméterként legyen átadva. Így a különböző üzleti forgatókönyvek támogatása érdekében az egyik optimalizálás a másik után futtatható.
+
+- A DOM csak a Commerce felhőalapú verziójában elérhető. A helyszíni telepítésű verziókban nem támogatott.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

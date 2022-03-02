@@ -2,13 +2,41 @@
   items:
     - name: Dynamics 365 Supply Chain Management
       items:
-        - name: Dynamics 365 Supply Chain Management kezdőlapja
+        - name: A Dynamics 365 Supply Chain Management kezdőlapja
           href: index.md
+        - name: Újdonságok és változások
+          items:
+            - name: Újdonságok és változások a Finance and Operations alkalmazásaiban
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
+            - name: A Supply Chain Management újdonságai és változásai
+              items:
+                - name: Újdonságok és változások a Supply Chain Management kezdőlapján
+                  href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.25 (2022. április)
+                  href: get-started/whats-new-scm-10-0-25.md
+                - name: Supply Chain Management 10.0.24 (2022. február)
+                  href: get-started/whats-new-scm-10-0-24.md
+                - name: Supply Chain Management 10.0.23 (2022. január)
+                  href: get-started/whats-new-scm-10-0-23.md
+            - name: Eltávolított vagy elavult funkciók
+              items:
+                - name: Eltávolított vagy elavult funkciók a kezdőlapon
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
+                  href: get-started/removed-deprecated-features-scm-updates.md
+                - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Az AX 2012 elhalasztott funkciói
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
+            - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
         - name: Első lépések
           items:
+            - name: Szolgáltatásleírás
+              href: ../fin-ops-core/fin-ops/get-started/service-description.md?toc=/dynamics365/supply-chain/toc.json
             - name: Vásárlás előtti teendők
               href: ../fin-ops-core/fin-ops/get-started/before-you-buy.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Regisztrálás az előfizetések előnézetére
+            - name: Regisztrálás az előzetes előfizetésekre
               href: ../fin-ops-core/dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/dynamics365/supply-chain/toc.json
             - name: Egyverziós szolgáltatásfrissítések
               items:
@@ -60,34 +88,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Raktárkezelés konfigurálása helyszíni telepítések esetében
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-                - name: 'Finance and Operations alkalmazások, amelyeket a 21Vianet működtet Kínában'
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and Operations alkalmazások Franciaországban
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Új vagy módosult elemek
-              items:
-                - name: Új vagy módosult elemek a Finance and Operations alkalmazásokban
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
-                - name: A Supply Chain Management kezelésének új vagy módosított adatai
-                  items:
-                    - name: Újdonságok és változások a Supply Chain Management kezdőlapján
-                      href: get-started/whats-new-home-page.md
-                    - name: Supply Chain Management 10.0.16 (2021. február)
-                      href: get-started/whats-new-scm-10-0-16.md
-                    - name: Supply Chain Management 10.0.15 (2021. január)
-                      href: get-started/whats-new-scm-10-0-15.md
-                    - name: Supply Chain Management 10.0.14 (2020. november)
-                      href: get-started/whats-new-scm-10-0-14.md
-                - name: Eltávolított vagy elavult funkciók
-                  items:
-                    - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
-                      href: get-started/removed-deprecated-features-scm-updates.md
-                    - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
-                      href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Az AX 2012 elhalasztott funkciói
-                  href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/supply-chain/toc.json
-                - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
-                  href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dokumentum-erőforrások
               items:
                 - name: Súgórendszer
@@ -104,8 +104,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Videók
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Fogalomtár
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/supply-chain/toc.json
             - name: Képzési katalógus
               items:
                 - name: Tanulási katalógus kezdőlapja
@@ -154,12 +152,16 @@
                   href: ../fin-ops-core/fin-ops/get-started/personalize-user-experience.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Mentett nézetek
                   href: ../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json
+                - name: A Supply Chain Management standard mentett nézetei
+                  href: get-started/saved-views-scm.md
                 - name: Rácsfunkciók
                   href: ../fin-ops-core/fin-ops/get-started/grid-capabilities.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Egyéni mezők létrehozása és használata
                   href: ../fin-ops-core/fin-ops/get-started/user-defined-fields.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Vászonalapú alkalmazások beágyazása a Power Apps szolgáltatásból
                   href: ../fin-ops-core/fin-ops/get-started/embed-power-apps.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Harmadik fél alkalmazásainak beágyazása
+                  href: ../fin-ops-core/fin-ops/get-started/embed-website.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Információk megtalálása keresésekkel
                   href: ../fin-ops-core/fin-ops/get-started/use-lookups-to-find-information.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Munkamenet dátumának módosítása
@@ -172,10 +174,10 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Finance and OperationsAlkalmazások architektúrája
+                - name: A Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Microsoft FastTrack for Finance and Operations
-                  href: ../fin-ops-core/fin-ops/get-started/fasttrack-dynamics-365-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Microsoft FastTrack
+                  href: /dynamics365/fasttrack/
                 - name: Megvalósítási projekt előkészítése
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/onboard.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Környezet tervezése
@@ -196,12 +198,92 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/supply-chain/toc.json
                 - name: LCS végrehajtási projektek áthelyezése helyszíni verzióból a felhőbe
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Több LCS-projekt és gyártási környezet egyetlen Azure AD-bérlőnél
+                - name: Több LCS-projekt és működési környezet egyetlen Azure AD-bérlőnél
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
         - name: Globalizáció
           items:
             - name: Globalizációs erőforrások
               href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Globalizációs szolgáltatások
+              items:
+                - name: Globalizációs szolgáltatások áttekintése
+                  href: ../finance/localizations/globalization-services-overview.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Regulatory Configuration Service (RCS)
+                  items:
+                    - name: Regulatory configuration service (RCS) áttekintése
+                      href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Regulatory Configuration Service (RCS) - Globalizációs jellemzők
+                      href: ../finance/localizations/rcs-globalization-feature.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 'Hozzon létre ER-konfigurációkat a Regulatory configuration service (RCS) szolgáltatásban, és töltse fel őket a globális adattárba'
+                      href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Regulatory Configuration Service (RCS) – Lifecycle Services-tárhely elavulása
+                      href: ../finance/localizations/rcs-lcs-repo-dep-faq.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-konfigurációk letöltése a Supply Chain Managementbe
+                      items:
+                        - name: Konfigurációk letöltése az RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk importálása RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Globális adattár (GR)
+                      items:
+                        - name: Konfigurációk importálása GR-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Az ER-konfigurációk frissített verzióinak importálása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk feltöltése a GR-be
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/fsupply-chain/toc.json
+                        - name: Konfigurációk megosztása a GR-ben
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk megszüntetése az RCS Globális adattárban
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Elektronikus számlázás
+                  items:
+                    - name: Elektronikus számlázás áttekintése
+                      href: ../finance/localizations/e-invoicing-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Elektronikus számlázás adminisztrációs összetevői
+                      href: ../finance/localizations/e-invoicing-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
+                      href: ../finance/localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Elektronikus számlák kiállítása a Finance és a Supply Chain Management szolgáltatásban
+                      href: ../finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Azure-tárfiók és Key Vault létrehozása
+                      href: ../finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Felhasználáskezelési irányítópult
+                      href: ../finance/localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Első lépések
+                      items:
+                        - name: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
+                          href: ../finance/localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Első lépések az elektronikus számlázás használata során
+                          href: ../finance/localizations/e-invoicing-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Első lépések a Brazíliára vonatkozó elektronikus számlázás használata során
+                          href: ../finance/localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázás használata során
+                          href: ../finance/localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
+                          href: ../finance/localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Az elektronikus számlázás beállítása
+                          href: ../finance/localizations/e-invoicing-setup.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Elektronikus számlázás – GYIK
+                      href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Áfaszámítás
+                  items:
+                    - name: Adószámítás áttekintése
+                      href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Az adószámítás első lépései
+                      href: ../finance/localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Adófunkció támogatása átmozgatási rendelésekhez
+                      href: ../finance/localizations/tasks/Tax-feature-support-for-transfer-order.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Adatmezők hozzáadása adókonfigurációkhoz
+                      href: ../finance/localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
+                      href: ../finance/localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Több adószám
+                      href: ../finance/localizations/emea-multiple-vat-registration-numbers.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Alapadat-lekérdezés környezetének beállítása
+                      href: ../finance/localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/supply-chain/toc.json
             - name: Jogszabálykövetési frissítések
               href: ../finance/localizations/regulatory-updates.md?toc=/dynamics365/supply-chain/toc.json
             - name: India
@@ -216,14 +298,24 @@
                   items:
                     - name: Szállítótól úton lévő áruk
                       href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
-        - name: Felhő és peremhálózat
+        - name: Elosztott hibrid topológia
           items:
-            - name: Felhőalapú és peremhálózat-léptékű egységek gyártási és raktárkezelési munkaterhelésekhez
+            - name: Egységek méretezése osztott hibrid topológiában
               href: cloud-edge/cloud-edge-landing-page.md
+            - name: Peremhálózati skálázási egységek telepítése egyedi hardverre LBD segítségével
+              href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
             - name: Gyártási végrehajtás munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
               href: cloud-edge/cloud-edge-workload-manufacturing.md
             - name: Raktérkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
               href: cloud-edge/cloud-edge-workload-warehousing.md
+            - name: A Warehouse Management mobilalkalmazás konfigurálása felhőalapú és peremhálózat-léptékű egységekhez
+              href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
+            - name: Raktári rendelések felhőalapú és peremhálózati skálázási egységekből
+              href: cloud-edge/cloud-edge-warehouse-order.md
+            - name: Raktárkészlet helyesbítése
+              href: cloud-edge/cloud-edge-warehouse-inventory-adjustment.md
+            - name: Üzenetfeldolgozó üzenetei
+              href: cloud-edge/cloud-edge-message-processor-messages.md
         - name: Eszközkezelés
           items:
             - name: Eszközkezelés – áttekintés
@@ -289,13 +381,11 @@
                   href: asset-management/objects/object-timeline.md
                 - name: Eszköznézet
                   href: asset-management/objects/object-view.md
-                - name: Eszköz attribútumának áttekintése
+                - name: Eszközattribútum áttekintése
                   href: asset-management/objects/object-specification-overview.md
             - name: Beállítások karbantartási kérésekhez
               items:
-                - name: Karbantartási kérések
-                  href: asset-management/setup-for-maintenance-requests/requests.md
-                - name: Karbantartási kérések életciklus-állapotai
+                - name: Karbantartási kérés életciklus-állapotai
                   href: asset-management/setup-for-maintenance-requests/request-stages.md
                 - name: Karbantartási kérések típusai
                   href: asset-management/setup-for-maintenance-requests/request-types.md
@@ -317,7 +407,7 @@
                   href: asset-management/manage-maintenance-requests/maintenance-request-reports.md
             - name: Munkarendelések beállítása
               items:
-                - name: 'Karbantartásifeladat-típusok kategóriái és karbantartásifeladat-típusok, karbantartásifeladat-típusok változatai, karbantartási szakmák és karbantartási ellenőrző listák'
+                - name: 'Karbantartási feladattípusok, kategóriák, változatok, szakágak és ellenőrzőlisták'
                   href: asset-management/setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md
                 - name: Munkarendelés életciklus-állapotai
                   href: asset-management/setup-for-work-orders/work-order-lifecycle-states.md
@@ -363,6 +453,8 @@
               items:
                 - name: 'Előrejelzések, munkarendelések és projektek'
                   href: asset-management/integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md
+                - name: Vevői eszközök karbantartásának számlázása
+                  href: asset-management/integration-to-project-management-and-accounting/customer-billing.md
             - name: Eszközkezelés integrálása tárgyi eszközökkel
               href: asset-management/integration-to-fixed-assets/fixed-asset-integration.md
             - name: Megelőző és reaktív karbantartás
@@ -431,7 +523,7 @@
                   href: asset-management/controlling-and-reporting/work-hour-control.md
                 - name: Hibás eszköz költségkontrollja
                   href: asset-management/controlling-and-reporting/asset-fault-cost-control.md
-                - name: Eszköz hibaelemzése
+                - name: Eszköz hibájának elemzése
                   href: asset-management/controlling-and-reporting/asset-fault-analysis.md
                 - name: Eszköz KPI-k
                   href: asset-management/controlling-and-reporting/asset-kpis.md
@@ -439,10 +531,14 @@
                   href: asset-management/controlling-and-reporting/item-where-used.md
                 - name: Karbantartás állapota
                   href: asset-management/controlling-and-reporting/maintenance-status.md
+            - name: Eszközkezelés a mobilalkalmazásból
+              items:
+                - name: Az eszközkezelési mobil munkaterület beállítása
+                  href: asset-management/set-up-asset-management-mobile.md
+                - name: Az eszközkezelési mobil munkaterület használata
+                  href: asset-management/asset-management-mobile-workspace.md
             - name: Eszközkezelés integrálása a Dynamics 365 Guides szolgáltatással
               href: asset-management/asset-management-guides-integration.md
-            - name: Eszközkezelési mobil munkaterület
-              href: asset-management/asset-management-mobile-workspace.md
         - name: Adatkezelés
           items:
             - name: Célentitások
@@ -463,7 +559,7 @@
               href: ../finance/general-ledger/CFO-workspace.md?toc=/dynamics365/supply-chain/toc.json
             - name: Számlastruktúrák létrehozása
               href: ../finance/general-ledger/tasks/create-account-structures.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Költségvetés áttekintése
+            - name: Költségvetés-készítés áttekintése
               href: ../finance/budgeting/basic-budgeting-overview-configuration.md?toc=/dynamics365/supply-chain/toc.json
             - name: Dimenziók létrehozása és dimenziótagok importálása
               href: ../finance/cost-accounting/cost-dimension.md?toc=/dynamics365/supply-chain/toc.json
@@ -519,13 +615,27 @@
               href: ../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/dynamics365/supply-chain/toc.json
             - name: Tartalomcsomag használata a Microsoft Power BI segítségével végzett jelentéskészítéshez
               href: ../fin-ops-core/dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Költségellenőrzési munkaterület alkalmazása Finance and Operations mobilalkalmazásban
+            - name: Költségellenőrzési munkaterület alkalmazása a Finance and Operations mobilalkalmazásban
               href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+        - name: Globális készletkönyvelés
+          items:
+            - name: Globális készletkönyvelés kezdőlapja
+              href: global-inventory-accounting/global-inventory-accounting-home.md
+            - name: A globális készletkönyvelés első lépései
+              href: global-inventory-accounting/get-started-with-gia.md
+            - name: A globális készletkönyvelés által támogatott üzleti dokumentumok
+              href: global-inventory-accounting/business-documents-supported.md
+            - name: A Power BI engedélyezése a globális készletkönyveléshez
+              href: global-inventory-accounting/enable-power-bi-for-gia.md
+            - name: Szabályok
+              href: global-inventory-accounting/conventions.md
+            - name: Globális készletkönyvelési főkönyv
+              href: global-inventory-accounting/global-inventory-accounting-ledger.md
         - name: Költségkezelés
           items:
-            - name: "Költségkezelés\_kezdőlapja"
+            - name: Költségkezelés kezdőlapja
               href: cost-management/cost-management-home-page.md
-            - name: Az elszámolóköltségek előfeltételei
+            - name: Az elszámolóárak előfeltételei
               items:
                 - name: Az elszámolóár előfeltételeinek áttekintése
                   href: cost-management/prerequisites-standard-costs.md
@@ -599,8 +709,10 @@
                   href: cost-management/inventory-close.md
                 - name: Az aktuális készlet költségértékeinek korrekciója
                   href: cost-management/adjust-hand-inventory-cost-values.md
-                - name: Készletérték-tárolási jelentés
+                - name: Készletérték-jelentések
                   href: cost-management/inventory-value-report-storage.md
+                - name: Készletérték-jelentés – példák és logika
+                  href: cost-management/inventory-value-report-examples.md
                 - name: Készletkorosítási jelentés tárolása
                   href: cost-management/inventory-aging-report-storage.md
                 - name: Készletkorosítási jelentés – példák és logika
@@ -641,8 +753,6 @@
                   href: cost-management/amortize-constant-costs-manufactured-item.md
             - name: Költségkezelési Power BI-tartalmi csomag
               href: ../fin-ops-core/dev-itpro/analytics/cost-management-content-pack.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Költségkezelés – hibaelhárítás
-              href: cost-management/troubleshoot-costmanagement.md
         - name: Jelentéskészítés és Power BI-integrációk
           items:
             - name: Jelentéskészítés és elemzések a Power BI szolgáltatással
@@ -725,7 +835,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/model-aggregate-data.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Pénzügyi dimenziók hozzáadása összesítő mértékekhez
                   href: ../fin-ops-core/dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Elemzési jelentések létrehozása a Power BI Desktop használatával
+                - name: Elemzési jelentések létrehozása a PowerBI Desktop használatával
                   href: ../fin-ops-core/dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Elemzések hozzáadása munkaterületekhez Power BI Embedded használatával
                   href: ../fin-ops-core/dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/dynamics365/supply-chain/toc.json
@@ -751,17 +861,19 @@
               items:
                 - name: Konfigurációk létrehozása
                   href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Az Elektronikus jelentéskészítés megoldás összetevőinek előkészítése
+                - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Az Elektronikus jelentéskészítéskészítés megoldás összetevőinek előkészítése
                   items:
                     - name: Tartományspecifikus adatmodell kialakítása
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Alkalmazásspecifikus metaadatok előkészítése
                       items:
-                        - name: (ER) RCS-ben felhasználandó alkalmazás-metaadatok előkészítése
+                        - name: RCS-ben felhasználandó ER-alkalmazás-metaadatok előkészítése
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/prepare-application-metadata-rcs.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: (RCS) Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával
+                        - name: Alkalmazás-metaadatokhoz való hozzáférésaz RCS-ben ER-konfiguráció használatával
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-er-configuration.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: (RCS) Alkalmazás-metaadatokhoz való hozzáférés összekapcsolt alkalmazások használatával
+                        - name: Alkalmazás-metaadatokhoz való hozzáférés az RCS-ben összekapcsolt alkalmazások használatával
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/access-application-metadata-using-connected-applications.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Modell-leképezések meghatározása és adatforrások kiválasztása
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/dynamics365/supply-chain/toc.json
@@ -773,13 +885,13 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Az előkészített ER-megoldás tesztelése a célalkalmazásban
                       items:
-                        - name: (ER) Konfigurációk importálása RCS-ből
+                        - name: Konfigurációk importálása RCS-ből
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Elektronikus dokumentumok létrehozása kifizetésekhez formátumkonfiguráció használatával
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/dynamics365/supply-chain/toc.json
                     - name: A formátum frissítése a formátum új alapverziójának elfogadásával
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Képletszerkesztők az Elektronikus jelentéskészítésben
+            - name: Képletszerkesztők az ER-ben
               items:
                 - name: Képletszerkesztő
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/dynamics365/supply-chain/toc.json
@@ -789,8 +901,20 @@
               items:
                 - name: Képlet nyelve
                   href: ../fin-ops-core/dev-itpro/analytics/er-formula-language.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Az ER-képletek által támogatott adattípusok
+                  items:
+                    - name: Primitív adattípusok
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-primitive.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Összetett adattípusok
+                      href: ../fin-ops-core/dev-itpro/analytics/er-formula-supported-data-types-composite.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Függvények
                   items:
+                    - name: Tároló
+                      items:
+                        - name: Tárolófüggvények
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-container.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Base64StringToContainer
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Dátum és idő
                       items:
                         - name: Dátum- és időfüggvények
@@ -821,6 +945,10 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessionnow.md?toc=/dynamics365/supply-chain/toc.json
                         - name: SessionToday
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Today
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/supply-chain/toc.json
                     - name: List
                       items:
                         - name: Listafüggvények
@@ -847,6 +975,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-isempty.md?toc=/dynamics365/supply-chain/toc.json
                         - name: List
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-list.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ListDistinct
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listdistinct.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ListJoin
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listjoin.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ListOfFields
@@ -855,7 +985,7 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?toc=/dynamics365/supply-chain/toc.json
                         - name: OrderBy
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?toc=/dynamics365/supply-chain/toc.json
-                        - name: Sztornírozás
+                        - name: Reverse
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Felosztás
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-split.md?toc=/dynamics365/supply-chain/toc.json
@@ -875,14 +1005,22 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-and.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Case
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-case.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Contains
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-contains.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: EndsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-endswith.md?toc=/dynamics365/supply-chain/toc.json
                         - name: If
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-if.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Not
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-not.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Or
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-or.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: StartsWith
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-startswith.md?toc=/dynamics365/supply-chain/toc.json
                         - name: ValueIn
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valuein.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ValueInLarge
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-logical-valueinlarge.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Matematikai
                       items:
                         - name: Matematikai függvények
@@ -978,7 +1116,7 @@
                         - name: CurCredRef
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-curcredref.md?toc=/dynamics365/supply-chain/toc.json
                         - name: FA_Balance
-                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365/supply-chain/toc.json
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fabalance.md?toc=/dynamics365supply-chain/toc.json
                         - name: FA_Sum
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-other-fasum.md?toc=/dynamics365/supply-chain/toc.json
                         - name: GetCurrentCompany
@@ -1007,6 +1145,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-numbervalue.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Típus: Value'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-conversion-value.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Tároló: Base64StringToContainer'
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-container-base64stringtocontainer.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Dátum és idő: DateTimeValue'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-datetimevalue.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Dátum- és idő: DateToDateTime'
@@ -1031,79 +1171,49 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-qrcode.md?toc=/dynamics365/supply-chain/toc.json
                         - name: 'Szöveg: Text'
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-text.md?toc=/dynamics365/supply-chain/toc.json
-            - name: ER modell-leképezés kezelése külön ER-konfigurációkban
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Adatmodell-definíciók kiválasztása formátumok létrehozásakor
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Továbbfejlesztési szűrési lehetőségek a konfigurációk globális tárházban való keresése esetén
-              href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Jelentések generálása tartalom nyers XML-kódként való hozzáadásával
-              href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
-            - name: (ER) Több vállalatot érintő adatforrások az elektronikus jelentéskészítésben
-              href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-            - name: ER-formátumok tervezése kimenő elektronikus dokumentumok különböző formátumokban történő létrehozásához
+            - name: ER-formátumok tervezése kimenő dokumentumok különböző formátumokban történő létrehozásához
               items:
-                - name: (ER) Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                - name: (ER) Konfigurációk tervezése Word-formátumú jelentések generálásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
-                - name: A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
-                  href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Képek és alakzatok beágyazása
-              items:
-                - name: (ER) Beágyazott képek és alakzatok az Ön által generált dokumentumokban
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Példa képek és alakzatok beágyazására
+                - name: Konfigurációk tervezése a kimenő dokumentumok Excel-formátumban történő létrehozásához
                   items:
-                    - name: 'Konfigurációk tervezése jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'Konfigurációk felülvizsgálata jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: 'Jelentések készítése Office-formátumokban, amelyekben beágyazott képek szerepelnek'
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Elektronikus jelentések formátumának módosítása Excel-sablonok újbóli alkalmazásával
-              href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Az ER-konfigurációk függőségének meghatározása más összetevőknél
-              href: ../fin-ops-core/dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/dynamics365/supply-chain/toc.json
-            - name: ER-megoldás tervezése pénzügyi dimenziók használatára
-              items:
-                - name: Adatmodellek tervezése pénzügyi dimenziók adatforrásként történő használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Modellek feltérképezése pénzügyi dimenziók adatforrásként történő használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Jelentések tervezése pénzügyi dimenziók adatforrásként történő használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: A pénzügyi dimenziókat adatforrásként használó jelentések futtatása
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Leltározás és összegzés a létrehozott kimenetből származó adatok használatával történő végrehajtására alkalmas ER-formátumok tervezése
-              items:
-                - name: Formátumok létrehozása leltározás és összegzés végrehajtásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátum konfigurálása leltározás és összegzés végrehajtásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Számítások használata a számlálás és összegzés kimenetének generálásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátumok futtatása leltározás és összegzés végrehajtásához
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
-              items:
-                - name: Formátumok tervezése oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátumok futtatása oszlopok Excel-jelentésekhez történő dinamikus hozzáadásához vízszintesen bővíthető tartományokként
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Dokumentumkezelési fájlok használata formátumkimenetekben
-              items:
-                - name: Adatmodellek előkészítése dokumentumkezelési fájlok használatához ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Adatmodellek kiterjesztése dokumentumkezelési fájlok használatához ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátumok létrehozása dokumentumkezelési fájlok használatára ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátumok futtatása dokumentumkezelési fájlok használatára ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Formátumok módosítása és futtatása dokumentumkezelési fájlok használatára ER-kimenetekben
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Alkalmazásadatok frissítése Elektronikus jelentéskészítés segítségével
+                    - name: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Példa a jelentések OPENXML-formátumban történő létrehozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER (Elektronikus jelentés) formátum módosítása Excel-sablonok újbóli alkalmazásával
+                      href: ../fin-ops-core/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Oszlopok dinamikus hozzáadása Excel-jelentésekhez vízszintesen bővíthető tartományokként
+                      items:
+                        - name: 'Tervezzen formátumokat, hogy dinamikusan tudjon hozzáadni oszlopokat az Excel-jelentésekhez'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Futtasson formátumokat, hogy dinamikusan tudjon hozzáadni oszlopokat az Excel-jelentésekhez'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurációk tervezése Word-formátumú jelentések generálásához
+                  items:
+                    - name: Új ER-konfiguráció tervezése Word formátumú jelentések generálásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-konfigurációk újrafelhasználása Excel-sablonok segítségével Word formátumú jelentések generálásához
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: A Word tartalomvezérlőinek elrejtése a létrehozott jelentésekben
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-configuration-word-suppress-controls.md?toc=/dynamics365/supply-chain/toc.json
+                - name: A PDF-sablonokat kitöltő konfigurációk megtervezése
+                  href: ../fin-ops-core/dev-itpro/analytics/er-fillable-pdf.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Képek és alakzatok beágyazása
+                  items:
+                    - name: Beágyazott képek és formák az Ön által generált dokumentumokban
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Példa képek és alakzatok beágyazására
+                      items:
+                        - name: 'Konfigurációk tervezése jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Konfigurációk felülvizsgálata jelentések készítéséhez Office-formátumokban, amelyben beágyazott képek szerepelnek'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: 'Jelentések készítése Office-formátumokban, amelyekben beágyazott képek szerepelnek'
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
+                  href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Anyagjegyzék-karakterek elrejtése a létrehozott fájlokban
+                  href: ../fin-ops-core/dev-itpro/analytics/er-suppress-bom-characters.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Alkalmazásadatok frissítése ER használatával
               items:
                 - name: Elektronikus dokumentumok generálása és alkalmazásadatok frissítése
                   href: ../fin-ops-core/dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/dynamics365/supply-chain/toc.json
@@ -1125,6 +1235,8 @@
                   items:
                     - name: Konfigurációk létrehozása adatok külső XML-fájlból történő importálásához
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Importálás manuálisan kiválasztott fájlokból kötegelt módban
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/supply-chain/toc.json
                 - name: SharePoint felületén tárolt fájlokból származó adatok kötegelt módban történő importálásának konfigurálása
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Fájlok importálása XML-formátumban
@@ -1133,52 +1245,150 @@
                       href: ../fin-ops-core/dev-itpro/analytics/rcs-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
                     - name: ER-formátumok konfigurálása XML-formátumú fájlok opcionális attribútumokkal való importálásához
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/import-files-xml-format-optional-attributes.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Generált XML-fájlok felosztása méret és tartalommennyiség alapján
-              href: ../fin-ops-core/dev-itpro/analytics/er-split-files.md?toc=/dynamics365/supply-chain/toc.json
-            - name: A Számított mező típusának ER-adatforrásaihoz tartozó paraméteres hívások támogatása
-              href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
             - name: Konfigurációs életciklus
               items:
                 - name: Konfigurációk életciklusának kezelése
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurációk feltöltése a Lifecycle Services szolgáltatásba
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurációk importálása a Lifecycle Services szolgáltatásból
-                  href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurációk letöltése a Lifecycle Services szolgáltatásból
-                  href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Konfigurációk importálása
-                  href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                - name: ER-konfigurációk letöltése az RCS-tárházból
+                - name: Lifecycle Services (LCS)
                   items:
-                    - name: Konfigurációk letöltése az ER-tárházból az RCS-típusból
-                      href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Konfigurációk importálása RCS-ből
-                      href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurációk feltöltése az LCS-be
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurációk importálása LCS-ből
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurációk letöltése az LCS-ből
+                      href: ../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurációk importálása (LBD)
+                      href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Regulatory Configuration Service (RCS)
+                  items:
+                    - name: Regulatory configuration service (RCS) áttekintése
+                      href: ../finance/localizations/rcs-overview.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-konfigurációk letöltése a Supply Chain Managementbe
+                      items:
+                        - name: Konfigurációk letöltése az RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk importálása RCS-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Globális adattár (GR)
+                      items:
+                        - name: Konfigurációk importálása GR-ből
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Az ER-konfigurációk frissített verzióinak importálása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-download-updated-versions-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Továbbfejlesztett szűrés a konfigurációk GR-ben való kereséséhez
+                          href: ../finance/localizations/enhanced-filtering-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk feltöltése a GR-be
+                          href: ../finance/localizations/rcs-global-repo-upload.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk megosztása a GR-ben
+                          href: ../finance/localizations/rcs-global-repo-share-configuration.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Konfigurációk megszüntetése az RCS Globális adattárban
+                          href: ../finance/localizations/discontinuing-configurations-rcs-global-repo.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Rövid útmutatók
+              items:
+                - name: ER-formátum beállítása egyéni elektronikus dokumentum generálásához
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Új ER-megoldás tervezése egyéni jelentés nyomtatásához
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start1-new-solution.md?toc=/dynamics365/supply-chain/toc.json
+                - name: ER-megoldás beállítása egyéni elektronikus dokumentum generálásához
+                  href: ../fin-ops-core/dev-itpro/analytics/er-quick-start3-customize-report.md?toc=/dynamics365/supply-chain/toc.json
             - name: Oktatóanyagok
               items:
-                - name: Az ÖSSZEKAPCSOLÁS használata az adatforrások esetében a több alkalmazástáblából származó adatok megszerzéséhez
-                  href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Ország környezetfüggő ER-modell-leképezések konfigurálása
-                  href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
-                - name: ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Az ER-formátum paramétereinek beállítása jogi személyenként
-                  href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Az ER-formátumelemek végrehajtásának elhalasztása
+                - name: Az adatforrások használatának megismerése
                   items:
-                    - name: Szekvenciaelem végrehajtásának elhalasztása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Egy XML-elem végrehajtásának elhalasztása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Elektronikus jelentéskészítési megoldások használata a Finance and Operations modulban
+                    - name: Több tábla adatainak lekérése az ÖSSZEKAPCSOLÁS paranccsal
+                      href: ../fin-ops-core/dev-itpro/analytics/er-join-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Tartalom hozzáadása feldolgozatlan XML használatával
+                      href: ../fin-ops-core/dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: A KISZÁMÍTOTT MEZŐ típusú adatforrásokhoz tartozó paraméteres hívások támogatása
+                      items:
+                        - name: A felhasználói élmény javítása és a használhatóság karbantartása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-type.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Adathozzáférési teljesítmény javítása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-calculated-field-ds-performance.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Vállalatközi ER-adatforrások
+                      href: ../fin-ops-core/dev-itpro/analytics/er-cross-company-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: PÉNZÜGYI DIMENZIÓADATOK típusú adatforrások használata
+                      items:
+                        - name: Tervezési adatmodellek
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Modellek leképezése pénzügyi dimenziók használatához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Jelentések tervezése
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Jelentések futtatása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: A létrehozott kimenet adatforrásként való használata leltározás és összegzés végrehajtásához
+                      items:
+                        - name: Formátumok létrehozása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Formátum konfigurálása leltározás és összegzés végrehajtásához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Leltározás és összegzés kimenetének generálása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Formátumok futtatása leltározás és összegzés végrehajtásához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: DOKUMENTUMOK kapcsolatainak használata a Dokumentumkezelés fájljaihoz való hozzáféréshez
+                      items:
+                        - name: Adatmodellek előkészítése
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Adatmodellek kiterjesztése Dokumentumkezelési fájlok használatához
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Formátumok létrehozása
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Formátumok futtatása Dokumentumkezelési fájlok használatára
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Formátumok módosítása és futtatása Dokumentumkezelési fájlok használatára
+                          href: ../fin-ops-core/dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Használja a VONALKÓD lehetőséget a vonalkódképek létrehozásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-barcode-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Konfigurálja a KERESÉSI adatforrásokat az ER-alkalmazásspecifikus paraméterek használatára
+                      href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ADATGYŰJTÉS adatforrások használata ER-formátumokban
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Adatforrásokban történő hibakeresés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Modell-hozzárendelések konfigurálása
+                  items:
+                    - name: Országkörnyezet-függő ER-modell leképezések konfigurálása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-modell leképezés kezelése külön ER-konfigurációkban
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Több származtatott leképezés kezelése egy modellgyökérnél
+                      href: ../fin-ops-core/dev-itpro/analytics/er-multiple-model-mappings.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Formátumok konfigurálása
+                  items:
+                    - name: Modelldefiníciók kiválasztása formátumok létrehozásakor
+                      href: ../fin-ops-core/dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-configure-format.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Az ER-formátum paramétereinek beállítása jogi személyenként
+                      href: ../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Az ER-formátumelemek végrehajtásának elhalasztása
+                      items:
+                        - name: Szekvenciaelem végrehajtásának elhalasztása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-sequence-element.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: XML-elem végrehajtásának elhalasztása
+                          href: ../fin-ops-core/dev-itpro/analytics/er-defer-xml-element.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Többnyelvű jelentések tervezése
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Nagyméretű kimenő dokumentumok tömörítése
+                      href: ../fin-ops-core/dev-itpro/analytics/er-compress-outbound-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Konfigurált ER-összetevők vizsgálata
+                  href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Adatkötések relatív elérési útja
+                  href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/supply-chain/toc.json
+            - name: ER-megoldások használata a Supply Chain Management szolgáltatásban
               items:
                 - name: Keretrendszer konfigurálása
                   items:
-                    - name: Az elektronikus jelentéskészítési keretrendszer konfigurálása
+                    - name: Az Elektronikus jelentéskészítési keretrendszer konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Elektronikus jelentéskészítési sablonok biztonsági mentése és helyreállítása
-                      href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Elektronikus jelentéskészítéskészítési sablonok biztonsági mentése és helyreállítása
+                      items:
+                        - name: ER-sablonok biztonságimentés-tárhelye
+                          href: ../fin-ops-core/dev-itpro/analytics/er-backup-storage-templates.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: ER-áttelepítéshez tartozó adattisztítás
+                          href: ../fin-ops-core/dev-itpro/analytics/er-migration-cleanup.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Konfigurációszolgáltatók létrehozása és megjelölése aktívként
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Célok
@@ -1201,40 +1411,76 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-destination-type-screen.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Célok konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Műveletfüggő célok konfigurálása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Nyomtatáskezelési rekord-specifikus ER-célpontok konfigurálása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Egy ER-formátumra mutató hivatkozás beállítása
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Létrehozott jelentések automatikus ellenőrzése
                   items:
                     - name: A létrehozott jelentés eredményeinek nyomon követése és összehasonlításuk a kiindulási értékekkel
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: A létrehozott ER-jelentések eredmények nyomon követésében és a kiindulási értékekkel való összehasonlításukban végzett fejlesztések
+                    - name: A létrehozott ER-jelentéseredmények nyomon követésének fejlesztése a kiindulási értékekkel való összehasonlításuk érdekében
                       href: ../fin-ops-core/dev-itpro/analytics/er-trace-reports-compare-baseline-replace.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Elektronikus jelentéskészítéssel folytatott tesztelés automatizálása
+                    - name: Tesztelés automatizálása ER segítségével
                       href: ../fin-ops-core/dev-itpro/analytics/er-automate-testing.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Üzleti folyamatok automatizálása Elektronikus jelentéskészítési konfigurációk segítségével
                   items:
-                    - name: Elektronikus jelentéskészítés konfigurálása az adatok Power BI szolgáltatásba való lehívásához
+                    - name: ER konfigurálása az adatok Power BI szolgáltatásba való lehívásához
                       href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Nyomtatható szabadszöveges számla (FTI) űrlapok létrehozása
                       href: ../fin-ops-core/dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
-                  href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Üzleti dokumentumok kezelése
+                - name: Hatékony ER-megoldások tervezése
                   items:
-                    - name: Üzletidokumentum-kezelés – áttekintés
+                    - name: Az ER-formátumok végrehajtásának nyomon követése a teljesítménnyel kapcsolatos problémák elhárítása érdekében
+                      href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Az ER-konfigurációk teljesítményproblémáinak elhárítása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Üzleti dokumentumok kezelése (BDM)
+                  items:
+                    - name: BDM áttekintése
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Új dokumentum-felhasználói felület az üzleti Dokumentumkezelés modulban
+                    - name: Új dokumentum felhasználói felülete a BDM-ben
                       href: ../fin-ops-core/dev-itpro/analytics/er-business-document-management-new-template-ui.md?toc=/dynamics365/supply-chain/toc.json
-                    - name: Új mezők hozzáadása üzletidokumentum-sablonhoz a Microsoft Excel programban
-                      href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Elektronikus jelentéskészítési keretrendszer API
+                    - name: Üzleti dokumentumsablonok szerkesztése a BDM-ben
+                      items:
+                        - name: Új mezők hozzáadása üzletidokumentum-sablonhoz a Microsoft Excel programban
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-add-field-to-excel-template.md?toc=/dynamics365/supply-chain/toc.json
+                        - name: Üzleti dokumentumsablon szerkezetének frissítése
+                          href: ../fin-ops-core/dev-itpro/analytics/er-bdm-update-structure.md?toc=/dynamics365/supply-chain/toc.json
+            - name: Elektronikus jelentéskészítéskészítési keretrendszer API
               items:
-                - name: Elektronikus jelentéskészítési funkciók listájának kibővítése
+                - name: Beépített funkciók listájának kibővítése
                   href: ../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Elektronikus jelentési keretrendszer API módosításai az Application update 7.3 számára
-                  href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                - name: API-változások
+                  items:
+                    - name: 7.3-as alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app73.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 10.0.11-es alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-11.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 10.0.17-es alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-17.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 10.0.19-es alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-19.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 10.0.21-es alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 10.0.23-as alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: 10.0.25-ös alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
-                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+                  items:
+                    - name: 'Feliratkozás egy eseményre, hogy választ kérjen a feliratkozáskezelőtől'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-documents.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: ER-cél létrehozásának delegálása egyéni célgyárba
+                      href: ../fin-ops-core/dev-itpro/analytics/er-custom-storage-generated-files.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Egyéni célhely megvalósítása a létrehozott dokumentumoknak
+                  href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-destination.md?toc=/dynamics365/supply-chain/toc.json
+                - name: A USER INPUT PARAMETER típusú adatforrásértékek kezdeményezése forráskódból
+                  href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/supply-chain/toc.json
+                - name: 'A kód módosítása, hogy a felhasználók számára lehetővé tegye a névre szóló ER-célpontok konfigurálását és használatát'
+                  href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
         - name: Készletgazdálkodás
           items:
             - name: Készletgazdálkodás áttekintése
@@ -1247,24 +1493,46 @@
                   href: inventory/tasks/set-up-item-arrival-overview-profile.md
             - name: Minőségkezelés
               items:
-                - name: Minőségkezelés áttekintése
-                  href: inventory/enable-quality-management.md
-                - name: Minőségkezelési folyamatok
+                - name: Minőség- és szabálytalanságkezelés áttekintése
                   href: inventory/quality-management-processes.md
-                - name: Raktári folyamatok minőségkezelése
-                  href: inventory/quality-management-for-warehouses-processes.md
-                - name: Szabálytalanság kezelése
-                  href: inventory/enable-nonconformance-management.md
-                - name: Kezelés feltételeinek beállítása
-                  href: inventory/tasks/set-up-prerequisites-nonconformance-management.md
-                - name: Szabálytalanság létrehozása és feldolgozása
-                  href: inventory/tasks/create-process-non-conformance.md
-                - name: Karanténutasítások
-                  href: inventory/quarantine-orders.md
-                - name: Minőségi rendelések beállítása
-                  href: inventory/tasks/set-up-quality-orders.md
+                - name: Minőség- és szabálytalanságkezelés engedélyezése és konfigurálása
+                  items:
+                    - name: Minőség- és szabálytalanságkezelés engedélyezése
+                      href: inventory/enable-quality-management.md
+                    - name: Minőségkezelési tesztműszerek
+                      href: inventory/quality-test-instruments.md
+                    - name: Minőségkezelési tesztek
+                      href: inventory/quality-tests.md
+                    - name: Minőségkezelési tesztváltozók
+                      href: inventory/quality-test-variables.md
+                    - name: Minőségkezelési tesztcsoportok
+                      href: inventory/quality-test-groups.md
+                    - name: Minőségkezelési cikkcsoportok
+                      href: inventory/quality-groups.md
+                    - name: Minőségkezelési cikkmintavétel
+                      href: inventory/quality-item-sampling.md
+                    - name: Minőségi társítások
+                      href: inventory/quality-associations.md
+                    - name: Szabálytalanságok jóváhagyásáért felelős dolgozók
+                      href: inventory/quality-responsible-workers.md
+                    - name: Szabálytalansági problématípusok
+                      href: inventory/quality-problem-types.md
+                    - name: Szabálytalansági karanténzónák
+                      href: inventory/quality-quarantine-zones.md
+                    - name: Szabálytalansági diagnosztikatípusok
+                      href: inventory/quality-diagnostic-types.md
+                    - name: Szabálytalansági műveletek
+                      href: inventory/quality-operations.md
+                    - name: Szabálytalansági művelet költségei
+                      href: inventory/quality-charges.md
+                - name: Minőségi rendelések használata
+                  href: inventory/quality-orders.md
                 - name: Áru minőségének ellenőrzése
                   href: inventory/tasks/inspect-quality-goods.md
+                - name: Szabálytalanság létrehozása és feldolgozása
+                  href: inventory/tasks/create-process-non-conformance.md
+                - name: Karanténutasítások használata
+                  href: inventory/quarantine-orders.md
                 - name: Készletzárolás
                   href: inventory/inventory-blocking.md
                 - name: Készletzárolás létrehozása és karbantartása
@@ -1337,13 +1605,29 @@
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként
                   href: cost-management/track-running-average-cost-per-inventory-dimension.md
-            - name: Készletláthatósági bővítmény
-              href: inventory/inventory-visibility.md
+            - name: Készlettranzakciók archiválása
+              href: inventory/archive-inventory-transactions.md
+            - name: Készletláthatóság bővítménye
+              items:
+                - name: Készletláthatóság bővítményének áttekintése
+                  href: inventory/inventory-visibility.md
+                - name: Készletláthatóság telepítése és beállítása
+                  href: inventory/inventory-visibility-setup.md
+                - name: Készletláthatóság konfigurálása
+                  href: inventory/inventory-visibility-configuration.md
+                - name: Használja a készletláthatóság alkalmazást
+                  href: inventory/inventory-visibility-power-platform.md
+                - name: Készletláthatóság-foglalások
+                  href: inventory/inventory-visibility-reservations.md
+                - name: Készletláthatóság nyilvános API-jai
+                  href: inventory/inventory-visibility-api.md
+                - name: Készletláthatósággal kapcsolatos tanácsok
+                  href: inventory/inventory-visibility-tips.md
         - name: IoT-intelligencia
           items:
-            - name: IoT-intelligencia kezdőlapja
+            - name: Az IoT-intelligencia kezdőlapja
               href: iot/iot-intelligence-home-page.md
-            - name: Azure erőforrások beállítása
+            - name: Azure-erőforrások beállítása
               href: iot/iot-azure-setup.md
             - name: Az IoT-központhoz tartozó üzenetséma-formátumok
               href: iot/iot-schema-format.md
@@ -1365,37 +1649,69 @@
               items:
                 - name: Tervezési optimalizálás áttekintése
                   href: master-planning/planning-optimization/planning-optimization-overview.md
-                - name: Tervezési optimalizálás kezdő lépései
+                - name: A Tervezési optimalizálás kezdő lépései
                   href: master-planning/planning-optimization/get-started.md
-                - name: Tervezési optimalizálás igazítási elemzése
+                - name: Tervezési optimalizálás kiadási folyamat és kiadási előzmények
+                  href: master-planning/planning-optimization/release-process.md
+                - name: A Tervezési optimalizálás igazítási elemzése
                   href: master-planning/planning-optimization/planning-optimization-fit-analysis.md
+                - name: A beépített alaptervezés és a tervezési optimalizálás közötti különbségek
+                  href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
+                - name: A Tervezési optimalizálás által nem használt paraméterek
+                  href: master-planning/planning-optimization/not-used-parameters.md
+                - name: Készletütemezés
+                  href: master-planning/supply-schedule.md
                 - name: Szűrők alkalmazása egy tervre
                   href: master-planning/planning-optimization/plan-filters.md
                 - name: Alaptervezés igény-előrejelzéssel
                   href: master-planning/planning-optimization/demand-forecast.md
                 - name: Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
                   href: master-planning/planning-optimization/purchase-trade-agreement.md
+                - name: A Tervezési optimalizálás által használt dátum- és időparaméterek
+                  href: master-planning/planning-optimization/date-time-used.md
                 - name: Biztonsági határok
                   href: master-planning/planning-optimization/safety-margins.md
+                - name: Késés tűréshatára (negatív napok)
+                  href: master-planning/planning-optimization/delay-tolerance.md
+                - name: Beszerzési igénylések
+                  href: master-planning/planning-optimization/purchase-requisitions.md
+                - name: Termeléstervezés
+                  href: master-planning/planning-optimization/production-planning.md
+                - name: Ütemezés végtelen kapacitással
+                  href: master-planning/planning-optimization/infinite-capacity-planning.md
+                - name: Ütemezés képességen alapuló erőforrás kiválasztásával
+                  href: master-planning/planning-optimization/capability-based-scheduling.md
+                - name: Prioritásokon alapuló tervezés
+                  href: master-planning/planning-optimization/priority-based-planning.md
                 - name: Készletjelölés tervezési optimalizálással
                   href: master-planning/planning-optimization/marking.md
                 - name: Vállalatközi tervezés
                   href: master-planning/planning-optimization/Intercompany-planning.md
                 - name: Bizonyos termékéletciklus-állapotokkal rendelkező termékek kizárása
                   href: master-planning/planning-optimization/product-lifecycle-state.md
+                - name: Feltöltési módok és mennyiség módosítása
+                  href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
+                - name: Fedezeti időkorlátok
+                  href: master-planning/planning-optimization/coverage-time-fence.md
+                - name: Nettó követelmények és igénykövetési információ a Tervezési optimalizálással
+                  href: master-planning/planning-optimization/net-requirements.md
                 - name: Tervezett rendelések jóváhagyása
                   href: master-planning/planning-optimization/approved-planned-order.md
-                - name: Automatikus megerősítés a tervezési optimalizálással
-                  href: master-planning/planning-optimization/planning-optimization-auto-firming.md
+                - name: Biztosra tervezett rendelések
+                  href: master-planning/planning-optimization/planned-order-firming.md
+                - name: Tervezett rendelések egyszerűsítve
+                  href: master-planning/planning-optimization/planned-orders-simplified.md
                 - name: Tervezés negatív tényleges készleten lévő mennyiségekkel
                   href: master-planning/planning-optimization/negative-on-hand.md
                 - name: Tervelőzmények és tervezési naplók megtekintése
                   href: master-planning/planning-optimization/plan-history-logs.md
                 - name: Tervezési feladat visszavonása
                   href: master-planning/planning-optimization/cancel-planning-job.md
+                - name: Műveletkérő üzenetek
+                  href: master-planning/action-messages.md
                 - name: Tervezési optimalizálás hibaelhárítása
                   href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
-                - name: Tervezési optimalizálás – bővíthetőség
+                - name: Tervezési optimalizálás bővíthetősége
                   href: master-planning/planning-optimization/extensibility.md
             - name: Alaptervek
               items:
@@ -1417,14 +1733,14 @@
                   href: master-planning/maintain-planned-orders.md
                 - name: Biztonsági készlet teljesítése cikkek számára
                   href: master-planning/safety-stock-replenishment.md
+                - name: A biztonsági készlet napló használata a cikkek minimális fedezetének frissítésére
+                  href: master-planning/safety-stock-journal.md
                 - name: Késések
                   href: master-planning/delays.md
                 - name: Alaptervezési feladat visszavonása
                   href: master-planning/cancel-master-planning-job.md
                 - name: Nyomkövetés használata az alábontáshoz
                   href: master-planning/trace-explosion.md
-                - name: Műveletkérő üzenetek
-                  href: master-planning/action-messages.md
                 - name: Alaptervezés futtatásának megfigyelése
                   href: master-planning/tasks/monitor-master-planning-run.md
                 - name: Egy telephelyhez tartozó ütemezés létrehozása
@@ -1433,6 +1749,8 @@
                   href: master-planning/tasks/create-plan-site.md
                 - name: Naptárak és alaptervezés
                   href: master-planning/supply-chain-calendars-master-planning.md
+                - name: Oldja meg a „Nem található elegendő kapacitás" ütemezései motorhibát
+                  href: master-planning/not-enough-capacity-error-resolution.md
                 - name: Az alaptervezés teljesítményének javítása
                   href: master-planning/master-planning-performance.md
                 - name: Ütemezési motor teljesítményének javítása
@@ -1459,34 +1777,40 @@
                   href: master-planning/tasks/create-intercompany-plan.md
                 - name: Kimenő tervezett vállalatközi igény megtekintése
                   href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-                - name: Együttműködés a belső ellátási lánc vevőivel
-                  href: master-planning/tasks/collaborate-internal-supply-chain-customers.md
-            - name: Igény-előrejelzés
+                - name: Nettó követelmények és igénykövetési információ a beépített fő tervezéssel
+                  href: master-planning/net-requirements-built-in-master-planning.md
+            - name: Előrejelzés
               items:
-                - name: Igény-előrejelzés áttekintése
-                  href: master-planning/introduction-demand-forecasting.md
-                - name: Igény-előrejelzés beállítása
-                  href: master-planning/demand-forecasting-setup.md
-                - name: Előzményadatok importálása az igény-előrejelzésekhez
-                  href: master-planning/import-historical-data.md
-                - name: Statisztikai kiinduló előrejelzés létrehozása
-                  href: master-planning/generate-statistical-baseline-forecast.md
-                - name: Manuális kiigazítás a kiinduló előrejelzésen
-                  href: master-planning/manual-adjustments-baseline-forecast.md
-                - name: Módosított előrejelzés engedélyezése
-                  href: master-planning/authorize-adjusted-forecast.md
-                - name: Előrejelzés pontosságának követése
-                  href: master-planning/monitor-forecast-accuracy.md
-                - name: Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor
-                  href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
-                - name: Csökkentési kulcsok
-                  href: master-planning/reduction-keys.md
-                - name: Kiinduló előrejelzés létrehozása
-                  href: master-planning/tasks/create-baseline-forecast.md
-                - name: Igény-előrejelzés manuális módosítása
-                  href: master-planning/tasks/modify-demand-forecast-manually.md
-            - name: Alaptervezés – hibaelhárítás
-              href: master-planning/troubleshoot-masterplanning.md
+                - name: Igény- és ellátási előrejelzés
+                  items:
+                    - name: Készlet-előrejelzések
+                      href: master-planning/inventory-forecast.md
+                    - name: 'Útmutató: Igény-előrejelzés manuális módosítása'
+                      href: master-planning/tasks/modify-demand-forecast-manually.md
+                - name: Igény-előrejelzés
+                  items:
+                    - name: Igény-előrejelzés áttekintése
+                      href: master-planning/introduction-demand-forecasting.md
+                    - name: Igény-előrejelzés beállítása
+                      href: master-planning/demand-forecasting-setup.md
+                    - name: Statisztikai kiinduló előrejelzés létrehozása
+                      href: master-planning/generate-statistical-baseline-forecast.md
+                    - name: Manuális kiigazítás a kiinduló előrejelzésen
+                      href: master-planning/manual-adjustments-baseline-forecast.md
+                    - name: Módosított előrejelzés engedélyezése
+                      href: master-planning/authorize-adjusted-forecast.md
+                    - name: Előzményadatok importálása az igény-előrejelzésekhez
+                      href: master-planning/import-historical-data.md
+                    - name: Kiugró értékek eltávolítása a tranzakciók előzményadataiból igény-előrejelzés számításakor
+                      href: master-planning/remove-historical-outliers-calculating-demand-forecast.md
+                    - name: Előrejelzés pontosságának követése
+                      href: master-planning/monitor-forecast-accuracy.md
+                    - name: 'Útmutató: Kiinduló előrejelzés létrehozása'
+                      href: master-planning/tasks/create-baseline-forecast.md
+                - name: Alaptervezés előrejelzéssel
+                  items:
+                    - name: Előrejelzés-csökkentési kulcsok
+                      href: master-planning/reduction-keys.md
         - name: Mobilalkalmazás
           items:
             - name: Mobilalkalmazás kezdőoldala
@@ -1502,7 +1826,7 @@
                 - name: Költségkontroll
                   href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Költséggazdálkodás
-                  href: ../finance/expense-management/expense-management-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Aktuális készlet
                   href: inventory/inventory-on-hand-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Számlajóváhagyások
@@ -1510,11 +1834,11 @@
                 - name: Saját csapat
                   href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Project-mobilalkalmazások áttekintése
-                  href: ../finance/project-management/project-mobile-application-overview.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Projekt időbejegyzése
-                  href: ../finance/project-management/project-time-entry-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Project Timesheet
-                  href: ../finance/project-management/project-timesheet.md?toc=/dynamics365/supply-chain/toc.json
+                  href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fsupply-chain%2ftoc.json
                 - name: Beszerzési rendelés jóváhagyása
                   href: procurement/purchase-order-mobile-workspace.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Értékesítési rendelések
@@ -1531,7 +1855,7 @@
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/supply-chain/toc.json
             - name: Entitásadatok megnyitása Excelben és frissítésük az Excel-bővítmény segítségével
               href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Az Excel programban történő megnyitási élmények létrehozása
+            - name: Megnyitás az Excelben típusú felületek GYIK
               href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/supply-chain/toc.json
             - name: Sablonok hozzáadása a Sorok megnyitása az Excelben menühöz
               href: ../fin-ops-core/dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/dynamics365/supply-chain/toc.json
@@ -1577,6 +1901,8 @@
                   href: ../fin-ops-core/fin-ops/organization-administration/plan-configuration-global-address-book-additional-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Globális címjegyzék konfigurálása
                   href: ../fin-ops-core/fin-ops/organization-administration/tasks/configure-global-address-book.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Címbeállítás
+                  href: ../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Címjegyzékek GYIK
                   href: ../fin-ops-core/fin-ops/organization-administration/qa-address-books.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Címjegyzékek konfigurálása
@@ -1605,6 +1931,8 @@
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Jóváhagyási lépések konfigurálása
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: Kiadásellenőrök konfigurálása
+                      href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Manuális döntések konfigurálása
                       href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Feltételes döntések konfigurálása
@@ -1687,8 +2015,6 @@
               href: procurement/procurement-sourcing-overview.md
             - name: Beszerzésekkel és forrásokkal kapcsolatos munkafolyamat
               href: procurement/procurement-sourcing-workflows.md
-            - name: Beszerzésekkel és forrásokkal kapcsolatos munkafolyamatok hibajavítása
-              href: procurement/troubleshoot-procurementworkflows.md
             - name: Beszerzési katalógusok
               items:
                 - name: Beszerzési katalógusok áttekintése
@@ -1709,6 +2035,8 @@
                   href: procurement/request-quotations.md
                 - name: Ajánlatkérés létrehozása
                   href: procurement/tasks/create-request-quotation.md
+                - name: Lezárt ajánlattétel ajánlatkéréshez
+                  href: procurement/sealed-bidding.md
                 - name: 'Olyan igénylés létrehozása, amely ajánlatkérést használ'
                   href: procurement/tasks/create-requisition-uses-rfq.md
                 - name: Pontozási mód létrehozása az ajánlatkérésekhez
@@ -1727,10 +2055,12 @@
                   href: procurement/purchase-order-approval-confirmation.md
                 - name: Beszerzési rendelés jóváhagyásához használt mobil munkaterület
                   href: procurement/purchase-order-mobile-workspace.md
+                - name: Vállalatközi beszerzési rendelés létrehozása és számlázása belső használatra
+                  href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                - name: Vállalatközi rendelések áreltéréseinek ellenőrzése
+                  href: sales-marketing/intercompany-check-price-discrepancies.md
                 - name: Az áruk bevételezésének rögzítése a beszerzési rendelésen
-                  href: ../supply-chain/procurement/tasks/record-receipt-goods-purchase-order.md
-                - name: Beszerzési rendelések hibajavítása
-                  href: procurement/troubleshoot-purchaseorders.md
+                  href: procurement/tasks/record-receipt-goods-purchase-order.md
             - name: Beszerzési rendelés létrehozása
               items:
                 - name: Beszerzési rendelések manuális létrehozása
@@ -1741,9 +2071,7 @@
                   href: procurement/tasks/create-purchase-order-delivery-schedule.md
                 - name: Beszerzési rendelés létrehozása egyszeri szállítóhoz
                   href: procurement/tasks/create-purchase-order-one-time-supplier.md
-                - name: Beszerzésirendelés-kiadás létrehozása új beszerzési rendelés létrehozásakor
-                  href: procurement/tasks/create-purchase-release-order-creating-purchase-order.md
-                - name: Beszerzésirendelés-kiadás létrehozása beszerzési szerződésből
+                - name: Beszerzési megállapodás alkalmazása beszerzési rendelés létrehozásakor
                   href: procurement/tasks/create-purchase-release-order-purchase-agreement.md
                 - name: Beszerzési visszárurendelés létrehozása
                   href: procurement/tasks/create-purchase-return-order.md
@@ -1763,8 +2091,6 @@
                   href: procurement/automatic-charges-allocation.md
                 - name: Szállítói visszatérítések
                   href: procurement/vendor-rebates.md
-                - name: 'Árak, engedmények, szerződések és visszatérítések hibajavítása'
-                  href: procurement/troubleshooting-pricediscountagreements.md
             - name: Beszerzési irányelvek
               items:
                 - name: Beszerzési irányelvek áttekintése
@@ -1779,8 +2105,6 @@
                   href: procurement/product-receipt-against-purchase-orders.md
                 - name: Szállítói számlák áttekintése
                   href: ../finance/accounts-payable/vendor-invoices-overview.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Termékbevételezések és számlázás hibajavítása
-                  href: procurement/troubleshooting-productreceiptinvoicing.md
             - name: Szállítókezelés és együttműködés
               items:
                 - name: Szállítói együttműködés beállítása és karbantartása
@@ -1801,8 +2125,14 @@
                   href: procurement/vendor-onboarding.md
                 - name: A külső szállítókkal történő szállítói együttműködés
                   href: procurement/vendor-collaboration-work-external-vendors.md
+                - name: Szállítói minősítés karbantartása
+                  href: ../finance/public-sector/manage-vendor-certification.md
+                - name: Kategóriakérelmek szállítóktól
+                  href: procurement/category-requests-from-vendors.md
                 - name: Szállítói együttműködés a vevőkkel
                   href: procurement/vendor-collaboration-work-customers-dynamics-365-operations.md
+                - name: Szállító bankszámlaadatainak karbantartása
+                  href: ../finance/accounts-payable/maintain-vendor-bank-info.md
                 - name: Szállítói katalógusok importálása
                   href: procurement/vendor-catalogs-import.md
                 - name: Külső katalógus beállítása a PunchOut e-beszerzés számára
@@ -1825,11 +2155,13 @@
               items:
                 - name: Projekt erőforrásadatainak beállítása
                   href: procurement/tasks/set-up-project-resource-information.md
-                - name: Projektköltségvetések elküldése és jóváhagyása
+                - name: Projekt-költségvetési munkafolyamat létrehozása és elküldése
                   href: procurement/tasks/submit-approve-project-budget.md
                 - name: Projekt-költségvetési verziók elküldése és jóváhagyása
                   href: procurement/tasks/submit-approve-project-budget-revision.md
-        - name: Termékinformáció-kezelés
+            - name: Beszerzési GYIK
+              href: procurement/procurement-faq.md
+        - name: Termékinformációk kezelése
           items:
             - name: Termékadatok áttekintése
               href: pim/product-information.md
@@ -1853,6 +2185,8 @@
                   href: pim/tasks/create-product-master.md
                 - name: Az előre meghatározott termékváltozatok létrehozása
                   href: pim/tasks/create-predefined-product-variants.md
+                - name: Mértékegységek kezelése
+                  href: pim/tasks/manage-unit-measure.md
                 - name: Mértékegység-átváltás termékváltozatonként
                   href: pim/uom-conversion-per-product-variant.md
                 - name: Kiadott termék létrehozása egyetlen vállalat részére
@@ -1909,6 +2243,8 @@
                   href: production-control/bom-designer-functionality.md
                 - name: A Képletszerkesztő használata
                   href: production-control/formula-designer.md
+                - name: A gyártásban használt anyagok alapértelmezett foglalási elvének felülbírálása
+                  href: production-control/override-default-reservation-principle.md
                 - name: Változattermék hozzáadása beszerzési rendelésekhez változatsúlyokkal
                   href: pim/tasks/add-variant-products-purchase-order-variant-weights.md
                 - name: Értékesítési rendelés létrehozása konfigurálható termékhez
@@ -1919,8 +2255,6 @@
                   href: pim/tasks/set-up-attribute-based-pricing-configurable-products.md
                 - name: Darabjegyzék-számítások
                   href: cost-management/bom-calculations.md
-                - name: Termékinformációk – hibaelhárítás
-                  href: pim/troubleshooting-productinformation.md
             - name: Termékkonfiguráció
               items:
                 - name: Termékkonfiguráció áttekintése
@@ -1951,6 +2285,8 @@
                   items:
                     - name: Termékkonfigurációs modell beállítása
                       href: pim/set-up-maintain-product-configuration-model.md
+                    - name: Termékkonfigurációs modell számításai
+                      href: pim/config-model-calculations.md
                     - name: Számítás a termékkonfigurációs modellhez GYIK
                       href: pim/calculate-product-configuration-models.md
                     - name: Konfigurációs szabály
@@ -1981,8 +2317,8 @@
                       href: pim/tasks/approve-product-configuration-model.md
                     - name: Termékmodellekhez szükséges adatok továbbítása
                       href: pim/tasks/transfer-data-product-models.md
-                - name: A termékkonfiguráló hibaelhárítása
-                  href: pim/troubleshooting-productconfigurator.md
+            - name: Termékinformáció-kezelési GYIK
+              href: pim/product-information-faq.md
         - name: Tervezési változáskezelés
           items:
             - name: Tervezési változáskezelés áttekintése
@@ -2001,6 +2337,10 @@
               href: engineering-change-management/engineering-attributes-and-search.md
             - name: Tervezési verziók és tervezési termékkategóriák
               href: engineering-change-management/engineering-versions-product-category.md
+            - name: Receptúrák és összetevők változásainak kezelése
+              href: engineering-change-management/manage-formula-changes.md
+            - name: Változáskezelés engedélyezése meglévő termékek esetében
+              href: engineering-change-management/change-management-existing-products.md
             - name: Termékéletciklus-állapot és tranzakciók
               href: engineering-change-management/product-lifecycle-state-transactions.md
             - name: Tervezési termékek változásainak kezelése
@@ -2009,6 +2349,10 @@
               href: engineering-change-management/product-readiness.md
             - name: Kiadási termékszerkezet
               href: engineering-change-management/release-product-structure.md
+            - name: Változatok létrehozása mérnöki termékekhez
+              href: engineering-change-management/engineering-variants.md
+            - name: Tervezési változáskezeléssel kapcsolatos gyakran ismételt kérdések
+              href: engineering-change-management/change-management-faq.md
         - name: Gyártásvezérlés
           items:
             - name: Termelési folyamat áttekintése
@@ -2017,6 +2361,12 @@
               href: production-control/mixed-mode-plan.md
             - name: Alvállalkozói munka kezelése a termelésben
               href: production-control/manage-subcontract-work-production.md
+            - name: Egyesített számsorozat a feladatazonosítók esetén
+              href: production-control/unified-job-ids.md
+            - name: Folyamatautomatizációs folyamatok kezdeményezése minőségi rendelések létrehozása érdekében
+              href: production-control/process-automation-quality-orders.md
+            - name: Integráció külső gyártásvégrehajtási rendszerekkel
+              href: production-control/mes-integration.md
             - name: Árucikkgyártás
               items:
                 - name: Termelési alapadatok karbantartása
@@ -2027,12 +2377,12 @@
                       href: production-control/bill-of-material-bom.md
                     - name: Anyagjegyzék-tervező funkció
                       href: production-control/bom-designer-functionality.md
+                    - name: A gyártásban használt anyagok alapértelmezett foglalási elvének felülbírálása
+                      href: production-control/override-default-reservation-principle.md
                     - name: Látszólagos cikkek
                       href: production-control/phantom-items.md
                     - name: Darabjegyzék-számítások
                       href: cost-management/bom-calculations.md
-                    - name: Mértékegység kezelése
-                      href: pim/tasks/manage-unit-measure.md
                     - name: Termelési paraméterek a Gyártásvégrehajtásban
                       href: production-control/production-parameters-manufacturing-execution.md
                     - name: Üzemi erőforrások
@@ -2097,16 +2447,6 @@
                       href: production-control/release-production-orders.md
                     - name: Termelési rendelések jelentése befejezettként
                       href: production-control/report-production-orders-as-finished.md
-                    - name: A termelési üzem végrehajtási felületének beállítása és használata
-                      items:
-                        - name: A termelési üzem végrehajtási felületének konfigurálása
-                          href: production-control/production-floor-execution-configure.md
-                        - name: A termelési üzem végrehajtási felületének tervezése
-                          href: production-control/production-floor-execution-tabs.md
-                        - name: A termelési üzem végrehajtási felületének futtatására szolgáló eszköz beállítása
-                          href: production-control/production-floor-execution-setup.md
-                        - name: A termelési üzem végrehajtási felületének használata dolgozók számára
-                          href: production-control/production-floor-execution-use.md
                     - name: Feladatkártya konfigurálása az eszközökhöz
                       href: production-control/config-job-card-device.md
                     - name: Jelentés befejezettként a feladatkártya-eszközből
@@ -2145,7 +2485,7 @@
                       href: production-control/tasks/worker-mobile-job-device.md
                 - name: Pénzügyi termelési adatok kezelése
                   items:
-                    - name: Idők hozzárendelése egy feladatköteg feladataihoz
+                    - name: Idők hozzárendelése egy feladatcsomag feladataihoz
                       href: production-control/allocate-time-jobs-job-bundle.md
                     - name: Anyagfelhasználás kiszámítása
                       href: production-control/consumption.md
@@ -2161,8 +2501,6 @@
                       href: production-control/absence-registration-in-time-and-attendance.md
                     - name: Rugalmasidő-csoportok
                       href: production-control/time-attendance-flex-groups.md
-                - name: Elkülönített gyártás – hibaelhárítás
-                  href: production-control/troubleshoot-discretemanufacturing.md
             - name: Lean manufacturing (lean gyártás)
               items:
                 - name: Lean manufacturing (áttekintés)
@@ -2309,14 +2647,52 @@
                       href: production-control/time-attendance-registrations.md
                 - name: Pénzügyi termelési adatok kezelése
                   items:
-                    - name: Idők hozzárendelése egy feladatköteg feladataihoz
+                    - name: Idők hozzárendelése egy feladatcsomag feladataihoz
                       href: production-control/allocate-time-jobs-job-bundle.md
                     - name: Anyagfelhasználás kiszámítása
                       href: production-control/consumption.md
                     - name: Termelés feladása
                       href: cost-management/production-posting.md
-                - name: Folyamatszerű gyártás – hibaelhárítás
-                  href: production-control/troubleshoot-processmanufacturing.md
+            - name: A termelési üzem végrehajtási felületének beállítása és használata
+              items:
+                - name: A termelési üzem végrehajtási felületének konfigurálása
+                  href: production-control/production-floor-execution-configure.md
+                - name: A termelési üzem végrehajtási felületének tervezése
+                  href: production-control/production-floor-execution-tabs.md
+                - name: A termelési üzem végrehajtási felületének futtatására szolgáló eszköz beállítása
+                  href: production-control/production-floor-execution-setup.md
+                - name: A termelési üzem végrehajtási felületének használata dolgozók számára
+                  href: production-control/production-floor-execution-use.md
+                - name: A termelési üzem végrehajtási felületének kialakítása
+                  href: production-control/production-floor-execution-styles.md
+                - name: A termelési üzem végrehajtási felületének testreszabása
+                  href: production-control/production-floor-execution-customize.md
+        - name: Visszatérítés-kezelés
+          items:
+            - name: Visszatérítés-kezelő modul áttekintése
+              href: rebate-management/rebate-management-overview.md
+            - name: A visszatérítés-kezelő moduljának beállítása és konfigurálása
+              items:
+                - name: Kapcsolja be a visszatérítéskezelő modult a rendszeréhez
+                  href: rebate-management/rebate-management-enable.md
+                - name: Visszatérítés-kezelés paraméterei
+                  href: rebate-management/rebate-management-parameters.md
+                - name: Visszatérítés-kezelési ajánlatok munkafolyamatai
+                  href: rebate-management/rebate-management-workflows.md
+                - name: Visszatérítés-csökkentési elvek
+                  href: rebate-management/rebate-reduction-principle.md
+                - name: Visszatérítési állapotok
+                  href: rebate-management/rebate-statuses.md
+                - name: Visszatérítés-kezelési csoportok
+                  href: rebate-management/rebate-management-groups.md
+                - name: Visszatérítés-kezelés feladási beállítása
+                  href: rebate-management/rebate-management-posting.md
+            - name: Visszatérítés-kezelési ajánlatok
+              href: rebate-management/rebate-management-deals.md
+            - name: 'Visszatérítések feldolgozása, felülvizsgálata és feladása'
+              href: rebate-management/process-review-post.md
+            - name: Levonások kezelése a levonás workbench-en
+              href: rebate-management/deduction-workbench.md
         - name: Értékesítés és marketing
           items:
             - name: Értékesítés és marketing – áttekintés
@@ -2355,8 +2731,8 @@
                   href: sales-marketing/tasks/manage-order-holds.md
                 - name: Értékesítési rendelések megerősítése
                   href: sales-marketing/tasks/confirm-sales-orders.md
-                - name: Értékesítési rendelések hibajavítása
-                  href: sales-marketing/troubleshooting-sales.md
+                - name: Értékesítési rendelés - GYIK
+                  href: sales-marketing/sales-orders-faq.md
             - name: Értékesítési szerződések
               items:
                 - name: Értékesítési szerződések áttekintése
@@ -2379,8 +2755,62 @@
                   href: sales-marketing/tasks/mass-sales-quotations.md
                 - name: Értékesítési ajánlatok létrehozása és szerkesztése
                   href: sales-marketing/tasks/create-edit-sales-quotations.md
-                - name: Értékesítési ajánlatok hibajavítása
-                  href: sales-marketing/troubleshooting-salesquotation.md
+            - name: Vállalatközi kereskedelem
+              items:
+                - name: Vállalatközi kereskedelem beállítása
+                  items:
+                    - name: Vállalatközi kereskedelem beállítása
+                      href: sales-marketing/intercompany-trade-set-up.md
+                    - name: Vállalatközi paraméterek
+                      href: sales-marketing/intercompany-parameters.md
+                    - name: 'Szállítók, vevők, és cikkek beállítása vállalatközi kereskedelemhez'
+                      href: sales-marketing/intercompany-set-up-vendors-customers-items.md
+                    - name: Vállalatközi rendelések költségeinek beállítása
+                      href: sales-marketing/intercompany-set-up-charges.md
+                    - name: Paraméterek beállítása vállalatközi rendelés feladásához
+                      href: sales-marketing/intercompany-set-up-parameters-to-post-order.md
+                - name: Vállalatközi adatok szinkronizálása
+                  items:
+                    - name: Vállalatközi árak és engedmények szinkronizálása
+                      href: sales-marketing/intercompany-sync-prices-discounts.md
+                    - name: Vállalatközi költségek szinkronizálása
+                      href: sales-marketing/intercompany-sync-charges.md
+                    - name: Vállalatközi ügyféladatok szinkronizálása
+                      href: sales-marketing/intercompany-synch-customer-information.md
+                    - name: Vállalatközi intézkedési kódok szinkronizálása
+                      href: sales-marketing/intercompany-synchronize-disposition-codes.md
+                - name: Vállalatközi értékesítési rendelések és számlák
+                  items:
+                    - name: Vállalatközi beszerzés és vevői rendelések létrehozása több vállalatban
+                      href: sales-marketing/intercompany-orders-in-several-companies.md
+                    - name: Vállalatközi rendelések és visszárurendelések
+                      href: sales-marketing/intercompany-orders-and-return-orders.md
+                    - name: Vállalatközi értékesítési rendelés létrehozása belső használatra
+                      href: sales-marketing/intercompany-sales-order-for-internal-use.md
+                    - name: Létrehoz egy eredeti értékesítési rendelés egy külső vevő számára
+                      href: sales-marketing/intercompany-sales-order-for-external-customer.md
+                    - name: Vállalatközi foglalások
+                      href: sales-marketing/intercompany-reservations.md
+                    - name: Eredeti vállalatközi értékesítési rendelés módosítása vagy törlése
+                      href: sales-marketing/intercompany-change-delete-original-sales-order.md
+                    - name: Vállalatközi rendelések módosítása
+                      href: sales-marketing/intercompany-change-orders.md
+                    - name: Vállalatközi köteg- és sorozatszámok
+                      href: sales-marketing/intercompany-batch-serial-numbers.md
+                    - name: Vállalatközi szállítólevelek
+                      href: sales-marketing/intercompany-packing-slips.md
+                    - name: A vállalatközi értékesítési ügyfélszámlák kifizetéseinek automatikus regisztrációja
+                      href: sales-marketing/intercompany-register-customer-payments-automatically.md
+                - name: Vállalatközi beszerzési rendelések
+                  items:
+                    - name: Vállalatközi beszerzési rendelés létrehozása és számlázása belső használatra
+                      href: sales-marketing/intercompany-purchase-order-for-internal-use.md
+                    - name: Vállalatközi rendelések áreltéréseinek ellenőrzése
+                      href: sales-marketing/intercompany-check-price-discrepancies.md
+                - name: Vállalatközi pénznem átváltása
+                  href: sales-marketing/intercompany-currency-conversions.md
+                - name: Vállalatközi alapütemezés
+                  href: sales-marketing/intercompany-master-scheduling.md
             - name: Visszáruk
               items:
                 - name: Értékesítési visszáruk
@@ -2405,6 +2835,8 @@
               href: sales-marketing/trade-allowance.md
             - name: Új kereskedelmi szerződés létrehozása
               href: sales-marketing/tasks/create-new-trade-agreement.md
+            - name: Értékesítési előzmények adattisztítási teljesítményének javításai
+              href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
         - name: Szolgáltatáskezelés
           items:
             - name: Szolgáltatáskezelés áttekintése
@@ -2689,6 +3121,10 @@
               href: transportation/tasks/load-template.md
             - name: Díjazási profilok
               href: transportation/tasks/setup-a-rating-profile.md
+            - name: LTL osztályok
+              href: transportation/ltl-class.md
+            - name: NMFC-kódok
+              href: transportation/nmfc-codes.md
             - name: Szállítmányozói üzemanyag-mutató beállítása
               href: transportation/tasks/set-up-carrier-fuel-index.md
             - name: Szállítási ajánlat beállítása
@@ -2707,6 +3143,58 @@
               href: transportation/tasks/set-up-shipping-carriers.md
             - name: Egy cikkre vonatkozó szállítási megszorítások beállítása
               href: transportation/tasks/set-up-transportation-constraints-item.md
+        - name: Partraszállási költség
+          items:
+            - name: Partraszállási költség modulja – áttekintés
+              href: landed-cost/landed-cost-overview.md
+            - name: A partraszállási költség és a szállításkezelés összehasonlítása
+              href: landed-cost/landed-cost-vs-tms.md
+            - name: A partraszállási költség moduljának beállítása és konfigurálása
+              items:
+                - name: Kapcsolja be a partraszállási költség modult a rendszeréhez
+                  href: landed-cost/landed-cost-enable.md
+                - name: Partraszállási költség paraméterei
+                  href: landed-cost/landed-cost-parameters.md
+                - name: A partraszállási költség beszerzési és erőforrásszerzési paraméterei
+                  href: landed-cost/landed-cost-procurement-parameters.md
+                - name: Utazási állapot beállítása
+                  href: landed-cost/voyage-status-setup.md
+                - name: Konténer beállítása
+                  href: landed-cost/shipping-container-setup.md
+                - name: Szállítási adatok beállítása
+                  href: landed-cost/delivery-information-setup.md
+                - name: Több részből álló utazás beállítása
+                  href: landed-cost/multi-leg-journey-setup.md
+                - name: Szállítási adatok beállítása
+                  href: landed-cost/shipping-information-setup.md
+                - name: Költségszámítási paraméterértékek beállítása
+                  href: landed-cost/costing-parameters-setup.md
+                - name: A főkönyv alapértelmezett leírásai
+                  href: landed-cost/defult-descriptions.md
+            - name: A partraszállási költséghez hozzáadott szállítói beállítások
+              href: landed-cost/vendors-landed-cost-settings.md
+            - name: 'Utazások, tárolók és ívek használata'
+              items:
+                - name: Utazások kezelése
+                  href: landed-cost/manage-voyages.md
+                - name: Konténerek kezelése
+                  href: landed-cost/manage-shipping-containers.md
+                - name: Ívek kezelése
+                  href: landed-cost/manage-folios.md
+            - name: Bejövő utazások és konténeres utazások nyomon követése
+              href: landed-cost/inbound-tracking.md
+            - name: A partraszállási költségek becslése és kezelése
+              href: landed-cost/estimate-manage-landed-costs.md
+            - name: Szállítás közbeni feldolgozás
+              href: landed-cost/in-transit-processing.md
+            - name: Várton túli/aluli tranzakciók feldolgozása
+              href: landed-cost/over-under-transactions.md
+            - name: Betárolás frissítéskövetése
+              href: landed-cost/update-tracking-putaway.md
+            - name: Partraszállási költséggel kapcsolatos lekérdezések
+              href: landed-cost/landed-cost-inquiries.md
+            - name: Partraszállási költséggel kapcsolatos jelentések
+              href: landed-cost/landed-cost-reports.md
         - name: Raktárkezelés
           items:
             - name: Raktárkezelés áttekintése
@@ -2719,6 +3207,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: 'Cikkek regisztrálása alapvető raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával'
                   href: warehousing/tasks/register-items-basic-warehousing.md
+                - name: Bejövő ASN-ek importálása a V2 adatentitáson keresztül
+                  href: warehousing/import-asn-v2-data-entity.md
                 - name: Termékek áttárolása a fogadó raktárból az üzletekbe
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Helyutasítás beállítása beszerzési rendelés eltárolásához
@@ -2729,26 +3219,22 @@
                   href: warehousing/location-product-dimension-mixing.md
                 - name: Betárolási fürtök
                   href: warehousing/putaway-clusters.md
+                - name: Raktári folyamatok minőségkezelése
+                  href: inventory/quality-management-for-warehouses-processes.md
                 - name: Minőség-ellenőrzés
                   href: warehousing/quality-check.md
-                - name: Bejövő raktári műveletek – hibaelhárítás
-                  href: warehousing/troubleshoot-warehouse-inbound.md
             - name: Kimenő raktári műveletek
               items:
-                - name: Foglalások a raktárkezelési modulban
-                  items:
-                    - name: Rugalmas raktárszintű dimenzió foglalási irányelv
-                      href: warehousing/flexible-warehouse-level-dimension-reservation.md
-                    - name: Foglalások a raktárkezelési modulban – hibaelhárítás
-                      href: warehousing/troubleshoot-warehouse-reservations.md
+                - name: Rugalmas raktárszintű dimenzió foglalási irányelv
+                  href: warehousing/flexible-warehouse-level-dimension-reservation.md
+                - name: Kiadás raktárba
+                  href: warehousing/release-to-warehouse-process.md
                 - name: Részleges kiadás és részleges szállítmány
                   items:
                     - name: Szállítási rakomány részleges szállítása
                       href: warehousing/partial-shipping-of-transport-loads.md
                     - name: Részlegesen foglalt átmozgatási rendelések kötegelt kiadása
                       href: warehousing/batch-release-of-partially-reserved-transfer-orders.md
-                    - name: Részleges kiadások és részleges szállítmányok – hibaelhárítás
-                      href: warehousing/troubleshoot-warehouse-partial-release-shipment.md
                 - name: Kitárolás és csomagolás
                   items:
                     - name: Fürtkitárolás beállítása
@@ -2757,8 +3243,10 @@
                       href: warehousing/cluster-position-full.md
                     - name: Rendszer által irányított fürtkitárolás
                       href: warehousing/system-directed-cluster-pick.md
-                    - name: Tárolóra bontás beállítása
-                      href: warehousing/tasks/set-up-containerization.md
+                    - name: Értékesítési és áttárolási rendeléseknek az előírtnál nagyobb kitárolt mennyisége
+                      href: warehousing/over-picking-for-sales-and-transfer-orders.md
+                    - name: Különböző dimenziók beállítása csomagoláshoz és a tároláshoz
+                      href: warehousing/packing-vs-storage-dimensions.md
                     - name: Köteg és azonosítótábla megerősítése
                       href: warehousing/batch-and-license-plate-confirmation.md
                     - name: Azonosítótábla-címke nyomtatásának engedélyezése
@@ -2783,14 +3271,14 @@
                       href: warehousing/warehouse-slotting.md
                     - name: Helyutasítás – készletkitárolás korosítása
                       href: warehousing/location-directive-inventory-picking-aging.md
+                    - name: Horgonyzás
+                      href: warehousing/anchoring.md
                     - name: Kimenő rendezés
                       href: warehousing/outbound-sorting.md
                     - name: Falhoz helyez – üzletbe helyez
                       href: warehousing/put-to-wall-put-to-store.md
                     - name: Kimenő munkaterhelések megjelenítése
                       href: warehousing/outbound-workload-visualization.md
-                    - name: Kitárolás és csomagolás – hibaelhárítás
-                      href: warehousing/troubleshoot-warehouse-picking-packing.md
                 - name: Feltöltés
                   items:
                     - name: Feltöltés áttekintése
@@ -2807,42 +3295,38 @@
                       href: warehousing/replenishment-strategies.md
                     - name: Feltöltés a hely kapacitása alapján
                       href: warehousing/replenishment-over-location-capacity.md
-                    - name: Raktárfeltöltés – hibaelhárítás
-                      href: warehousing/troubleshoot-warehouse-replenishment.md
                 - name: Rakományok összeállítása és szállítása
                   items:
                     - name: Megerősítés és áthelyezés
                       href: warehousing/confirm-and-transfer.md
-                    - name: Kimenő szállítmányok megerősítése kötegelt feladatokból
+                    - name: Kimenő szállítmányok jóváhagyása kötegelt feladatokból
                       href: warehousing/confirm-outbound-shipments-from-batch-jobs.md
                     - name: Speciális rakomány-összeállítás hullám közben
                       href: warehousing/advanced-load-building-during-wave.md
                     - name: Raktárba kiadás szabálya
                       href: warehousing/release-to-warehouse-rule.md
-                    - name: Hullámsablon csoportosítása
-                      href: warehousing/wave-template-grouping.md
-                    - name: Hullámcímkék újranyomtatása és érvénytelenítése
-                      href: warehousing/reprint-and-void-wave-labels.md
-                    - name: Rakományok összeállítása és szállítása – hibaelhárítás
-                      href: warehousing/troubleshoot-warehouse-loads-shipments.md
+                    - name: Kis csomagok szállítása
+                      href: warehousing/small-parcel-shipping.md
                 - name: Szállítmánykonszolidációs irányelvek
                   items:
                     - name: Szállítmánykonszolidációs irányelvek
                       href: warehousing/about-shipment-consolidation-policies.md
                     - name: Szállítmánykonszolidációs irányelvek konfigurálása
                       href: warehousing/configure-shipment-consolidation-policies.md
-                    - name: '1. eset – Szállítmányok konszolidálása, amikor kiadják őket a raktárba az értékesítési rendelések automatikus kiadásával'
+                    - name: 1. eset – A raktárba kiadott szállítmányok konszolidálása az értékesítési rendelések automatikus kiadásával
                       href: warehousing/consolidate-shipments-automatic.md
-                    - name: '2. eset – Szállítmányok konszolidálása, amikor a szállítmány-konszolidációs irányelvet felülírják a Raktárba kiadás oldalról'
+                    - name: '2. eset – Szállítmányok konszolidálása, amikor a szállítmány-konszolidációs irányelvet felülírják'
                       href: warehousing/consolidate-shipments-release-to-warehouse-override.md
-                    - name: 3. eset – Szállítmányok konszolidálása a rakománytervezés munkaterületről a Raktárba kiadás használatával
+                    - name: 3. eset – Szállítmányok konszolidálása a rakománytervezés munkaterületről a Raktárba való kiadásával
                       href: warehousing/consolidate-shipments-load-planning-workbench.md
                     - name: 4. eset – Szállítmányok konszolidálása a szállítmány konszolidációs munkaterület használatával
                       href: warehousing/consolidate-shipments-manual-workbench.md
-                    - name: 5. eset – Szállítmányok kézi konszolidálása a szállítmányok konszolidációs oldalának használatával
+                    - name: 5. eset – Szállítmányok manuális konszolidálása a szállítmányok konszolidációs oldalának használatával
                       href: warehousing/consolidate-shipments-manual-form.md
-                - name: Kimenő raktári műveletek – hibaelhárítás
-                  href: warehousing/troubleshoot-warehouse-outbound.md
+                - name: Hullám létrehozása és feldolgozása
+                  href: warehousing/wave-processing.md
+                - name: Hullámcímkék újranyomtatása és érvénytelenítése
+                  href: warehousing/reprint-and-void-wave-labels.md
             - name: Teljes raktárra vonatkozó műveletek
               items:
                 - name: Raktári munkairányelvek
@@ -2857,6 +3341,8 @@
                       href: warehousing/manage-warehouse-workers.md
                     - name: Raktári munka halasztott feldolgozása
                       href: warehousing/deferred-put.md
+                    - name: Manuális készletmozgási művelet halasztott feldolgozása
+                      href: warehousing/deferred-processing-manual-inventory-movement.md
                 - name: Áttárolás
                   items:
                     - name: Termelési rendelések áttárolása kiszállítási területekbe
@@ -2879,6 +3365,8 @@
                       href: warehousing/partial-location-cycle-counting.md
                     - name: Részleges ciklikus leltározásos helyfolyamat meghatározása
                       href: warehousing/tasks/define-partial-location-cycle-counting-process.md
+                    - name: Ciklikus leltározás – példa forgatókönyvek
+                      href: warehousing/cycle-counting-scenarios.md
                     - name: Raktárkezelés – készleten lévő elemek törlési feladata
                       href: warehousing/onhand-cleanup.md
                     - name: Készletnaplók
@@ -2899,10 +3387,66 @@
                       href: warehousing/change-work-pool-on-work.md
                     - name: Cikk-konszolidáció – hely kihasználtsága
                       href: warehousing/item-consolidation-location-utilization.md
-                    - name: Raktári munka – hibaelhárítás
-                      href: warehousing/troubleshoot-warehouse-work.md
                     - name: Felosztott munka
                       href: warehousing/work-split.md
+                    - name: Anyagkezelési berendezések kezelői felülete (MHAX)
+                      href: warehousing/mhax.md
+            - name: A raktáralkalmazás
+              items:
+                - name: 'Mobileszközök telepítése, beállítása és használata'
+                  items:
+                    - name: A Warehouse Management mobilalkalmazás újdonságai vagy változásai
+                      href: warehousing/whats-new-wma.md
+                    - name: A Warehouse Management mobilalkalmazás telepítése és csatlakoztatása
+                      href: warehousing/install-configure-warehouse-management-app.md
+                    - name: A raktározási alkalmazás telepítése és csatlakoztatása
+                      href: warehousing/install-configure-warehousing-app.md
+                    - name: Mobil vonalkód-támogatás
+                      href: warehousing/mobile-barcode-support.md
+                    - name: Vonalkódok beolvasása a Warehouse Management mobilalkalmazás kamerája segítségével
+                      href: warehousing/scan-bar-codes-using-a-camera.md
+                - name: Mobileszközök mezőinek és menüinek beállítása
+                  items:
+                    - name: A Warehouse Management mobilalkalmazás mezőinek konfigurálása
+                      href: warehousing/configure-app-field-names-priorities-warehouse.md
+                    - name: Mobileszközök beállítása raktári munkához
+                      href: warehousing/configure-mobile-devices-warehouse.md
+                    - name: A Warehouse Management mobilalkalmazás lépéscímeinek és utasításainak testreszabása
+                      href: warehousing/mobile-app-titles-instructions.md
+                    - name: Előléptetett mezők konfigurálása a mobileszközön használt lépésekhez
+                      href: warehousing/warehouse-app-promoted-fields.md
+                    - name: Elterelések konfigurálása a mobileszközök menüelemeinek lépéseihez
+                      href: warehousing/warehouse-app-detours.md
+                    - name: Azonosítótábla-bevételezés a Warehouse Management mobilalkalmazás használatával
+                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
+                    - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
+                      href: warehousing/tasks/set-up-mobile-device-menu.md
+                    - name: Mobileszköz-menüelem beállítása a bevételezett elemek regisztrálásához
+                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
+                    - name: Mobileszköz-menüelem beállítása kitárolási sor áttekintésének biztosításához
+                      href: warehousing/pick-line-overview.md
+                    - name: Menüelem létrehozása mobileszközhöz azonosítótábla-konszolidáláshoz
+                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
+                    - name: Vegyes azonosítótábla fogadása a mobileszközön
+                      href: warehousing/mixed-license-plate-receiving.md
+                    - name: Raktáron belüli régebbi kötegek megjelenítésének konfigurálása mobileszközön
+                      href: warehousing/display-older-batches-within-warehouses.md
+                    - name: Legrégebbi köteg kitárolása mobileszközön
+                      href: warehousing/pick-oldest-batch.md
+                - name: Globális mobileszköz-paraméterek
+                  href: warehousing/mobile-device-parameters.md
+                - name: Mobileszköz felhasználói fiókjai
+                  href: warehousing/mobile-device-work-users.md
+                - name: Mobileszköz felhasználói beállításai
+                  href: warehousing/mobile-device-user-settings.md
+                - name: Raktári alkalmazás eseményeinek feldolgozása
+                  href: warehousing/warehouse-app-events.md
+                - name: Raktári mobilfolyamatok kiterjesztése
+                  items:
+                    - name: Folyamatútmutató-keretrendszer
+                      href: warehousing/process-guide-framework.md
+                    - name: Lépésikonok és -címek hozzárendelése
+                      href: warehousing/step-icons-titles.md
             - name: Raktár beállítása
               items:
                 - name: Raktár konfigurálása
@@ -2915,14 +3459,36 @@
                       href: warehousing/control-warehouse-location-directives.md
                     - name: Munka helyutasításokkal
                       href: warehousing/create-location-directive.md
+                    - name: Termékszűrők konfigurálása a raktári tranzakciókhoz
+                      href: warehousing/filters-and-filter-codes.md
                     - name: Hely rakodási korlátai
                       href: warehousing/location-stocking-limits.md
-                    - name: Hullámlépéskódok
-                      href: warehousing/wave-step-codes.md
-                    - name: A hullámfeldolgozás konfigurálása
-                      href: warehousing/tasks/configure-wave-processing.md
-                    - name: Hullámcímke-nyomtatás beállítása és használata
-                      href: warehousing/configure-wave-label-printing.md
+                    - name: Hullám létrehozása és feldolgozása
+                      items:
+                        - name: A hullámfeldolgozási példa konfigurálása
+                          href: warehousing/tasks/configure-wave-processing.md
+                        - name: Raktári paraméterek hullámfeldolgozáshoz
+                          href: warehousing/wave-warehouse-parameters.md
+                        - name: Hullámsablonok
+                          href: warehousing/wave-templates.md
+                        - name: Hullámlépéskódok
+                          href: warehousing/wave-step-codes.md
+                        - name: Hullámsablon csoportosítása
+                          href: warehousing/wave-template-grouping.md
+                        - name: Hullámfelosztás
+                          href: warehousing/wave-allocation-method.md
+                        - name: Munka létrehozásának ütemezése a hullám során
+                          href: warehousing/configure-wave-schedule-work-creation.md
+                        - name: Hullámvégrehajtási értesítések
+                          href: warehousing/wave-execution-notifications.md
+                        - name: Hullámcímke nyomtatása
+                          href: warehousing/configure-wave-label-printing.md
+                        - name: Hullámcímke-nyomtatás ütemezése hullám közben
+                          href: warehousing/configure-task-based-wave-label-printing.md
+                        - name: Tárolóra bontás
+                          href: warehousing/wave-containerization.md
+                        - name: Tároló csomagolási stratégiái
+                          href: warehousing/container-packing-strategy-overview.md
                     - name: Szállítmányok automatikus frissítése
                       href: warehousing/auto-update-shipment.md
                     - name: Helyprofil létrehozása
@@ -2947,52 +3513,14 @@
                       href: warehousing/system-group-on-open-work-list.md
                     - name: Dokumentumirányítási elrendezés azonosítótábla-címkékhez
                       href: warehousing/document-routing-layout-for-license-plates.md
-                    - name: Mobil vonalkód-támogatás
-                      href: warehousing/mobile-barcode-support.md
+                    - name: GS1-vonalkódok és QR-kódok
+                      href: warehousing/gs1-barcodes.md
                     - name: Raktár beállítása átmozgatási rendelésekhez
                       href: warehousing/transfer-orders-warehouse.md
-                    - name: Raktár konfigurálása – hibaelhárítás
-                      href: warehousing/troubleshoot-warehouse-configuration.md
-                - name: A raktározási alkalmazás telepítése és konfigurálása
-                  items:
-                    - name: A raktározási alkalmazás telepítése és csatlakoztatása
-                      href: warehousing/install-configure-warehousing-app.md
-                    - name: Vonalkódok beolvasása a raktári alkalmazás kamerája segítségével
-                      href: warehousing/scan-bar-codes-using-a-camera.md
-                    - name: Mezőnevek konfigurálása raktározási alkalmazásban
-                      href: warehousing/configure-app-field-names-priorities-warehouse.md
-                    - name: Mobileszközök beállítása raktári munkához
-                      href: warehousing/configure-mobile-devices-warehouse.md
-                    - name: Raktározási alkalmazás eseményeinek feldolgozása
-                      href: warehousing/warehouse-app-events.md
-                    - name: Azonosítótábla-bevételezés a raktározási alkalmazás használatával
-                      href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
-                    - name: Mobileszköz-menüelem beállítása a beszerzési rendelés munkájának befejezéséhez
-                      href: warehousing/tasks/set-up-mobile-device-menu.md
-                    - name: Mobileszköz-menüelem beállítása a bevételezett elemek regisztrálásához
-                      href: warehousing/tasks/set-up-mobile-device-menu-item-register-received-items.md
-                    - name: Mobileszköz-menüelem beállítása kitárolási sor áttekintésének biztosításához
-                      href: warehousing/pick-line-overview.md
-                    - name: Menüelem létrehozása mobileszközhöz azonosítótábla-konszolidáláshoz
-                      href: warehousing/tasks/create-mobile-device-license-plate-consolidation.md
-                    - name: Vegyes azonosítótábla fogadása a mobileszközön
-                      href: warehousing/mixed-license-plate-receiving.md
-                    - name: Raktáron belüli régebbi kötegek megjelenítésének konfigurálása mobileszközön
-                      href: warehousing/display-older-batches-within-warehouses.md
-                    - name: Legrégebbi köteg kitárolása mobileszközön
-                      href: warehousing/pick-oldest-batch.md
-                    - name: Folyamatútmutató-keretrendszer
-                      href: warehousing/process-guide-framework.md
-                    - name: Raktári alkalmazás kapcsolódási hibáinak hibaelhárítása
-                      href: warehousing/troubleshoot-warehouse-app-connection.md
                 - name: Frissítés és áttelepítés
                   items:
-                    - name: A raktárkezelési folyamatok frissítése Microsoft Dynamics AX 2012-ről Finance and Operations szolgáltatásra
+                    - name: A raktárkezelési folyamatok frissítése Microsoft Dynamics AX 2012 szolgáltatásról Finance and Operations szolgáltatásra
                       href: warehousing/upgrade-migration-warehouse-management-processes.md
-                    - name: Speciális raktárkezelésre való frissítés és áttelepítés – hibaelhárítás
-                      href: warehousing/troubleshoot-warehouse-upgrade-migration.md
-                - name: Raktárbeállítás – hibaelhárítás
-                  href: warehousing/troubleshoot-warehouse-setup.md
         - name: Supply Chain Management fejlesztése
           items:
             - name: Gantt-vezérlő – fejlesztési útmutató
@@ -3001,9 +3529,397 @@
               href: transportation/create-new-transportation-management-engine.md?toc=/dynamics365/supply-chain/toc.json
             - name: Készleten lévő tényleges adatentitások kiterjesztése
               href: inventory/extend-on-hand-entities.md
-    - name: Finance and Operations-alkalmazások fejlesztése és adminisztrációja
+        - name: Hibaelhárítás
+          items:
+            - name: Költségkezelés
+              items:
+                - name: Készletkorosítási jelentés eltérései
+                  href: troubleshooting/costing/aging-report-discrepancies.md
+                - name: Figyelmeztetések vagy hibák a főkönyvi időszak állapotának készletzárás nélküli módosításával kapcsolatban
+                  href: troubleshooting/costing/change-ledger-period-without-closing.md
+                - name: A készletérték/korosítási jelentések és a tárolási verzióik közötti működési hézagok
+                  href: troubleshooting/costing/function-gaps-storage-reports.md
+                - name: 'Frissítési ütközés történik, ha a készletellenőrző módszer a standard ár vagy mozgóátlag'
+                  href: troubleshooting/costing/update-conflict-standard-moving.md
+                - name: Mezőbeállítások hiányoznak a cikkmodellcsoportok másik jogi személybe történő másolása során
+                  href: troubleshooting/costing/copying-item-model-groups.md
+                - name: A Közvetett költségek a folyamatban jelentésben törölt termelési rendelések szerepelnek
+                  href: troubleshooting/costing/indirect-costs-in-pr.md
+                - name: Nulla összegű beszerzési elhatárolás lett feladva nulla értékű termékbevételezéshez
+                  href: troubleshooting/costing/posting-to-purchase.md
+                - name: A ténylegesen bevételezett beszerzési rendelések nem jelennek meg a készletzárási jelentésben
+                  href: troubleshooting/costing/purchase-orders-rece.md
+                - name: Nem található Kezdő dátum a Cikkár oldal Aktív árak lapján
+                  href: troubleshooting/costing/there-is-no-from-dat.md
+            - name: Készletgazdálkodás
+              items:
+                - name: Nem található a "Munkafolyamat" legördülő párbeszédpanel a készletnaplókhoz.
+                  href: troubleshooting/inventory/cant-find-workflow-dropdown.md
+                - name: 'A készletnapló munkafolyamata soha nem fejeződik be, és a napló nem dolgozható fel.'
+                  href: troubleshooting/inventory/cant-post-inventory-journal.md
+                - name: 'A készletnaplója zárolva van, és a munkafolyamat kötegelt feladata nem működik.'
+                  href: troubleshooting/inventory/inventory-journal-locked-workflow.md
+                - name: Az egység- és egységmennyiség nem működnek megfelelően a készletnaplóban.
+                  href: troubleshooting/inventory/journal-unit-quantity-incorrect.md
+                - name: 'A készletnapló munkafolyamat-feltételei naplószinten érvényesek, nem sorszinten.'
+                  href: troubleshooting/inventory/journal-workflow-conditions.md
+                - name: Az Aktuális készlet listaoldal szűrőablaka nem a vártnak megfelelően működik.
+                  href: troubleshooting/inventory/on-hand-filter-unexpected.md
+                - name: A készlet tartó egységben legfeljebb 0 tizedesjegy lehet.
+                  href: troubleshooting/inventory/sku-max-decimals-zero.md
+                - name: Több készlettranzakció egyes kötegszámokhoz „Tényleges frissítés esetén” nélkül
+                  href: troubleshooting/inventory/multiple-inventory-t.md
+                - name: Jelentés készként való visszavonása váratlan nyitott tranzakciót okoz
+                  href: troubleshooting/inventory/reverse-report-as-fi.md
+                - name: A kitárolási lista jelentése nem mutatja a naplóhoz csatolt új jegyzeteket
+                  href: troubleshooting/inventory/unable-to-print-the.md
+                - name: 'Az elindított karanténrendelésen lévő mennyiség nem frissül, ha a rendelés fel van osztva'
+                  href: troubleshooting/inventory/quantity-on-a-start.md
+                - name: Az Utolsó tesztelés dátuma mező nem frissül több minőségi rendelés létrehozásakor
+                  href: troubleshooting/inventory/the-field-last-test.md
+                - name: Ténylegessúly-mennyiség felosztása során a nominális mennyiség helyett a minimumot használják
+                  href: troubleshooting/inventory/while-splitting-the.md
+            - name: Alaptervezés
+              items:
+                - name: 'Ha több rendelést kezel, a rendszer nem talál egy tervezett rendelést'
+                  href: troubleshooting/planning/planned-order-not-exist.md
+                - name: Az anyagjegyzék alábontása másképpen viselkedik a megerősített és a becsült termelési rendeléseknél
+                  href: troubleshooting/planning/bom-explosion-works-differently.md
+                - name: 'A késleltetés érték nem frissül, amikor átütemez egy tervezett rendelést'
+                  href: troubleshooting/planning/delay-value-not-updated.md
+                - name: A tervezett rendelések frissítése hosszú időt vesz igénybe
+                  href: troubleshooting/planning/planned-order-long-update.md
+                - name: A tervezett rendelések a termelési rendelésekkel együtt létrehozott készleten vannak.
+                  href: troubleshooting/planning/planned-orders-in-stock-items.md
+                - name: A termelésütemezés nem veszi figyelembe a biztonsági időtartalékokat.
+                  href: troubleshooting/planning/prod-schedule-safety-margins.md
+                - name: 'Az alaptervezés nagyobb ütemezést tervez, mint a rendelkezésre álló kapacitás.'
+                  href: troubleshooting/planning/respect-capacity-limitations.md
+                - name: Nem található elegendő kapacitás.
+                  href: troubleshooting/planning/not-enough-capacity-error.md
+                - name: Hiba jelenik meg a beépített alaptervezési motor futtatásakor
+                  href: troubleshooting/planning/deprecated-master-planning-error.md
+                - name: A cikkhez nem tartozhat anyagjegyzék vagy képlet
+                  href: troubleshooting/planning/item-cannot-have-bom-formula.md
+                - name: Az alapterv paraméterei nem léteznek
+                  href: troubleshooting/planning/no-parameters-for-master-plan.md
+                - name: A tervezett termelési rendelést megerősítés előtt ütemezni kell
+                  href: troubleshooting/planning/planned-order-must-be-scheduled.md
+                - name: A terméket várakoztatják tranzakciók esetén
+                  href: troubleshooting/planning/product-is-on-hold.md
+                - name: A választott receptúraszám nincs jóváhagyva kötegrendeléshez.
+                  href: troubleshooting/planning/selected-formula-not-approved.md
+                - name: A szállítókód nincs engedélyezve egy adott termékhez és dátumhoz
+                  href: troubleshooting/planning/vendor-code-not-authorized.md
+                - name: A tervezett rendelések megerősítésénél nincs megadva szállító
+                  href: troubleshooting/planning/vendor-not-specified.md
+                - name: 'A közvetlenül származtatott, megerősített megrendeléseket egy felülvizsgálat alatt álló munkafolyamat dolgozza fel'
+                  href: troubleshooting/planning/firmed-directly-deri.md
+                - name: Az alaptervezés cikkei nem szűrhetők a vonatkozó fedezetcsoport-értékeik szerint
+                  href: troubleshooting/planning/master-planning-batc.md
+                - name: Az alaptervezés fantomtermékekhez hoz létre tervezett rendeléseket
+                  href: troubleshooting/planning/planned-orders-are-g.md
+                - name: 'Tervezett beszerzési rendelés jön létre, amikor egy beszerzés negatív napokon belül található'
+                  href: troubleshooting/planning/planning-optimisatio.md
+                - name: Az előre jelzett egységköltség nem frissíthető az igény-előrejelzési rekordok importálása során
+                  href: troubleshooting/planning/unable-to-upload-the.md
+                - name: Nem távolítható el a raktári igény-előrejelzési dimenzió az előrejelzési sorokból
+                  href: troubleshooting/planning/warehouse-removal-fr.md
+                - name: 'Menteni kell a cikkfedezeti beállításokat akkor is, ha nem eszközölt változtatásokat'
+                  href: troubleshooting/planning/when-importing-to-th.md
+            - name: Beszerzés
+              items:
+                - name: Beszerzésirendelés-sor adateltérései
+                  href: troubleshooting/procurement/purchase-order-line-data-issues.md
+                - name: Egy vagy több könyvelési felosztás túl- vagy alulosztott
+                  href: troubleshooting/procurement/accounting-over-under-distributed.md
+                - name: Csak teljesen kiosztott sorok száma esetén lehet befejezni a beszerzési rendelési műveletet.
+                  href: troubleshooting/procurement/action-requires-full-distribution.md
+                - name: Jóváhagyott szállító esetén a hatálybalépés dátuma nem változtatható meg.
+                  href: troubleshooting/procurement/approved-vendor-effective-date.md
+                - name: A visszavont beszerzési rendelések a munkaterület vázlatlistájában jelennek meg.
+                  href: troubleshooting/procurement/canceled-po-in-draft-list.md
+                - name: A tranzakciók felfüggesztett főkönyvi számlára is feladhatóak.
+                  href: troubleshooting/procurement/canceled-receipts-posted.md
+                - name: A szállítási maradvány törlése a beszerzési rendelést Visszaigazolt állapotba mozgatja át.
+                  href: troubleshooting/procurement/change-management-canceled-remainder.md
+                - name: Egyetlen beszerzési rendelésbe nem tud több terméknyugtát egyesíteni
+                  href: troubleshooting/procurement/consolidate-multiple-receipts.md
+                - name: Az alapértelmezett adócsoport és a készpénzfizetési engedmény nem a számlaszám alapján van kitöltve.
+                  href: troubleshooting/procurement/default-tax-group-and-discount.md
+                - name: A szállítási név nincs szinkronizálva a beszerzési rendelés szállítási címének módosítása után.
+                  href: troubleshooting/procurement/delivery-name-isnt-synced.md
+                - name: Kivétel történik a szállítói számla feladása közben.
+                  href: troubleshooting/procurement/invocation-target-exception.md
+                - name: Az importált beszerzési rendelések helytelen sorszámokat mutatnak.
+                  href: troubleshooting/procurement/line-number-increments.md
+                - name: A beszerzési megállapodás maximális korlátja nem érvényes egy beszerzési igénylésen.
+                  href: troubleshooting/procurement/max-limit-on-requisition.md
+                - name: '"Objektumhivatkozás nincs beállítva" hiba a beszerzési rendelés megerősítése során.'
+                  href: troubleshooting/procurement/object-reference-not-set.md
+                - name: A könyvelési felosztások túl- vagy alulosztottak.
+                  href: troubleshooting/procurement/over-under-distribution.md
+                - name: Nem adhatja hozzá az Áregység mezőt a Beszerzési megállapodás laphoz.
+                  href: troubleshooting/procurement/personalize-purchase-agreement-price.md
+                - name: A beszerzési rendelések nem tükrözik a jogi személy nyelvi beállításait.
+                  href: troubleshooting/procurement/po-language.md
+                - name: A beszerzési rendelés nyugtája nem tartalmaz minden költséget
+                  href: troubleshooting/procurement/po-receipt-missing-charges.md
+                - name: A beszerzési rendeléseken szereplő egységárak számítása nem a mértékegység-átváltás alapján történik
+                  href: troubleshooting/procurement/po-unit-prices-not-calculated.md
+                - name: A Feladás főkönyvi költségszámlára beállítás nincs bekapcsolva
+                  href: troubleshooting/procurement/post-setting-turned-off.md
+                - name: 'Hiba egy beszerzési rendelés módosítást követő, a munkafolyamatba történő ismételt elküldése során'
+                  href: troubleshooting/procurement/resubmit-po-after-change.md
+                - name: Kereskedelmi megállapodás pénznemátváltási problémái
+                  href: troubleshooting/procurement/trade-agreement-currencies.md
+                - name: A kereskedelmi megállapodás feltételei nem vonatkoznak az importált rendeléssorokra.
+                  href: troubleshooting/procurement/trade-agreement-not-applied.md
+                - name: A kereskedelmi megállapodásokat elutasított ajánlatkérésből is létre lehet hozni
+                  href: troubleshooting/procurement/trade-agreements-from-rejected-rfq.md
+                - name: A szállítói visszatérítés nem halmozódik a számlák alapján
+                  href: troubleshooting/procurement/vendor-rebate-not-cumulated.md
+                - name: 'A rendszer akkor is felhasználja a termékbevételezési bizonylatszámot, ha nem generál bizonylatot.'
+                  href: troubleshooting/procurement/voucher-number-consumed.md
+                - name: Vevő által értékesített értékesítési rendelést nem lehet számlázni
+                  href: troubleshooting/procurement/not-able-to-invoice-.md
+                - name: Nem adható hozzá sor a beszerzési igényléshez módosítás kérése után
+                  href: troubleshooting/procurement/purchase-requisition.md
+            - name: Termékinformációk kezelése
+              items:
+                - name: Kiadott terméket nem lehet törölni
+                  href: troubleshooting/products/cant-delete-released-prod.md
+                - name: A termékkonfigurációs modellek kiszámításakor az egész számok kerekítése hibás.
+                  href: troubleshooting/products/integers-incorrectly-rounded.md
+                - name: 'A cikk szövegét felülírja a rendszer, ha egy termék be van állítva egy értékesítési rendelés sorához.'
+                  href: troubleshooting/products/text-overwritten-configured-item.md
+                - name: Nem alkalmazható sablon kiadott termék létrehozásához
+                  href: troubleshooting/products/apply-template-in-re.md
+                - name: Nem importálható egy cikk a Kiadott termékek V2 entitás használatával
+                  href: troubleshooting/products/cannot-import-with-r.md
+                - name: A beszerzési rendelésben nem jelenik meg a lefordított termékszöveg
+                  href: troubleshooting/products/when-the-customer-ad.md
+            - name: Gyártásvezérlés
+              items:
+                - name: Visszavezetéses költségelszámolás számítási hiba készletzáráskor
+                  href: troubleshooting/production/backflush-costing-calculation-error.md
+                - name: Termelési rendelés nem fejezhető be Anyagjegyzék consumptionCost értékhiba miatt
+                  href: troubleshooting/production/bom-consumption-cost-error.md
+                - name: Új termelési rendelés létrehozásakor nem lehet anyagjegyzéket és útvonalat beszúrni.
+                  href: troubleshooting/production/cant-insert-bom-route-number.md
+                - name: 'Az előző folyamatban lévő feladatok befejeződnek, amikor az utolsó feladatnál részmennyiséget jelent le.'
+                  href: troubleshooting/production/in-progress-jobs-ended.md
+                - name: Termelési rendelés kiadásakor az RM cikk nem foglalható le teljesen.
+                  href: troubleshooting/production/item-rm-not-reserved.md
+                - name: 'A készként jelentés frissítése sikertelen, hiányzó mennyiség hibával'
+                  href: troubleshooting/production/missing-report-finished-quantity.md
+                - name: Hiba a Készre jelentés napló feladás a során
+                  href: troubleshooting/production/posting-report-as-.md
+                - name: Hiba a termelési rendelés készként jelentett állapotról Befejezett állapotra való módosításakor.
+                  href: troubleshooting/production/production-order-status-error.md
+                - name: A termelési rendelések nem jelennek meg a Jelölés oldalon
+                  href: troubleshooting/production/production-orders-marking-page.md
+                - name: Az erőforrásnév nem frissül a dolgozó nevének a címjegyzékben történt módosítása után.
+                  href: troubleshooting/production/resource-name-not-updated.md
+                - name: Összes jó mennyiség hiba amikor megpróbálja befejezni a termelési rendelést
+                  href: troubleshooting/production/total-good-quantity-order-error.md
+                - name: A késztermékek sorozatszámai nem követhetők a felhasznált áruk sorozatszámai alapján.
+                  href: troubleshooting/production/trace-finished-goods-consumed-goods.md
+                - name: 'Nem lehet lefoglalni vagy kiadni a munkát, mert jelenleg folyamatok vannak használatban.'
+                  href: troubleshooting/production/warehouse-management-processes-used.md
+                - name: A rendszer nem veszi figyelembe az ürítési elv beállításait a DBJ sorain
+                  href: troubleshooting/production/flushing-principle-n.md
+                - name: A kötegszám törlődik az új adagazonosító kiválasztásakor
+                  href: troubleshooting/production/when-customer-is-try.md
+                - name: A rendszer nem veszi figyelembe a késői kiválasztást a termelési rendelések kötegelt feladattal való alaphelyzetbe állításával
+                  href: troubleshooting/production/late-selection-is-no.md
+                - name: 'A felhasználók visszavonhatják olyan termékek anyagsorainak kitárolását, amelyeket készként jelöltek'
+                  href: troubleshooting/production/raw-material-lines-a.md
+                - name: Hiba a Készre jelentés napló feladás a során
+                  href: troubleshooting/production/posting-report-as-.md
+                - name: A kitárolási lista naplójában szereplő raktár nem frissül a DBJ során
+                  href: troubleshooting/production/the-warehouse-in-pic.md
+            - name: Visszatérítés-kezelés
+              items:
+                - name: Sikertelen a vevői visszatérítések összesítése cikkvisszatérítési csoportok használatával
+                  href: troubleshooting/rebates/cumulating-customer-.md
+            - name: Értékesítés és marketing
+              items:
+                - name: Értékesítésfrissítések előzményadat-tisztítási feladata sikertelen vagy teljesítményproblémákat tapasztalt
+                  href: troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md
+                - name: Egy csomagolt cikk nem támogatott a vállalatközi folyamatban
+                  href: troubleshooting/sales/bundle-item-intercompany-process.md
+                - name: Nem tud érvényteleníteni egy értékesítési rendeléshez kapcsolódó vállalatközi beszerzési rendelést
+                  href: troubleshooting/sales/cancel-intercompany-purchase-order.md
+                - name: Rendelés törlésekor a foglalások nem távolíthatók el.
+                  href: troubleshooting/sales/cancel-order-reservations-not-removed.md
+                - name: 'Ha két kereskedelmi megállapodás van egymást átfedő dátumokkal, akkor a program mindig ugyanazt választja ki'
+                  href: troubleshooting/sales/same-trade-agreement-selected.md
+                - name: Az értékesítési ajánlat sorában szereplő szolgáltatási cikk értékesítési mennyisége nem változtatható
+                  href: troubleshooting/sales/service-item-sales-quantity.md
+                - name: 'Az adóinformációk nem frissülnek, ha megváltozik az értékesítési rendelés fejlécén a hely.'
+                  href: troubleshooting/sales/tax-information-not-updated.md
+                - name: A mennyiség nem csökkenthető értékesítési rendelés érvénytelenítésekor
+                  href: troubleshooting/sales/quantity-cannot-be-reduced.md
+                - name: 'A rendszergazdák nem tudják törölni a rendelés várakoztatását, mert nem rendelkeznek megfelelő jogosultsággal'
+                  href: troubleshooting/sales/system-administrator.md
+            - name: Szállításkezelés
+              items:
+                - name: Csak egyeztetési okokból adhatja hozzá a fő számlát jóváírási számlaként
+                  href: troubleshooting/transportation/reconciliation-reaso.md
+            - name: Raktárkezelés
+              items:
+                - name: Warehouse mobile app
+                  items:
+                    - name: Nem található a tanúsítvány elérési útjához tartozó megbízhatósági kapcsolatok alapja az alkalmazáskapcsolat beállításakor
+                      href: troubleshooting/warehousing/certification-path-app-connection-error.md
+                    - name: Nem található a tanúsítvány elérési útjának megbízhatósági fixpontja a WMS-be történő frissítéskor és migráláskor
+                      href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+                - name: Feldolgozási problémák fordulnak elő a skálázási egység szerinti raktári terhelés telepítése után
+                  href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
+                - name: A kötegszám automatikus foglalási kérésekor még a rendelkezésre álló készlet is megjelenik
+                  href: troubleshooting/warehousing/auto-reservation-prompt-shown.md
+                - name: Befejezetlen feltöltési munka miatt nem oldható fel a kitárolási munka zárolása.
+                  href: troubleshooting/warehousing/blocked-unfinished-replenishment-work.md
+                - name: 'Nem tudja törölni a szállítólevelet, miután ki lett adva egy értékesítési rendelésből'
+                  href: troubleshooting/warehousing/cancel-posted-packing-slip.md
+                - name: 'Nem lehet áthelyezni az azonosítótáblát, ha a sorozatszámhoz Üres kiadás és Üres bevételezés van engedélyezve.'
+                  href: troubleshooting/warehousing/cant-move-license-plate.md
+                - name: 'Nem tudja áthelyezni a készletet olyan helyre, amely azonosítótábla-vezérelt.'
+                  href: troubleshooting/warehousing/cant-reduce-picked-quantities.md
+                - name: A fürtprofil nem található.
+                  href: troubleshooting/warehousing/cluster-profile-not-found-error.md
+                - name: A szállítólevél javítása nem feldolgozható.
+                  href: troubleshooting/warehousing/delivery-note-correction.md
+                - name: Hiba a szállítmány megerősítésekor egy sorozatgyártású cikk átszállítási rendelésének létrehozása után.
+                  href: troubleshooting/warehousing/dimension-location-left-blank.md
+                - name: A közvetlen kiszállítás nem feldolgozható a WMS engedélyezett raktár számára
+                  href: troubleshooting/warehousing/direct-delivery-wms-enabled-warehouse.md
+                - name: A készlettípusok vegyesek a kikötőkezelési profilok használatakor
+                  href: troubleshooting/warehousing/dock-management-inventory-mixing.md
+                - name: A több termékváltozat opció nem értékeli ki a több helyszínre vonatkozó irányelvi műveleteket
+                  href: troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md
+                - name: 'A kitárolási munka nem jön létre azonnal, amikor a kimenő rakomány ki van adva.'
+                  href: troubleshooting/warehousing/generate-work-immediately-load-release.md
+                - name: Érvénytelen azonosítótábla hiba az azonosítótábla azonosítójának a mobilalkalmazásban történő beolvasása közben.
+                  href: troubleshooting/warehousing/invalid-license-plate.md
+                - name: Készlettulajdonos nem engedélyezett mozgások feldolgozásakor a raktári alkalmazásban
+                  href: troubleshooting/warehousing/inventory-owner-not-allowed.md
+                - name: 'A rendszer nem tudja frissíteni a készletmennyiséget, mert nincs elég tranzakció'
+                  href: troubleshooting/warehousing/inventory-quantity-insufficient-transactions.md
+                - name: A Munkatípus oszlopban nem választható ki a készlet állapotának változása
+                  href: troubleshooting/warehousing/inventory-status-change-work-type.md
+                - name: Érvénytelen azonosítótábla vagy hely hiba a mobilalkalmazásban történő beolvasás közben
+                  href: troubleshooting/warehousing/license-plate-location-invalid.md
+                - name: Az azonosítótábla mennyisége nem érvényes bejövő rendelések regisztrálása esetén
+                  href: troubleshooting/warehousing/license-plate-quantity-not-valid.md
+                - name: Azonosítótábla meghatározási hiba átrendelési rendelés szállításának megerősítésekor
+                  href: troubleshooting/warehousing/license-plate-specified-location.md
+                - name: A sorok egyike már rakományban van.
+                  href: troubleshooting/warehousing/line-already-on-load.md
+                - name: Rakomány súly hiba és frissítés megszakítva a helyszínek közötti munka feldolgozásakor
+                  href: troubleshooting/warehousing/load-weight-positive-numbers.md
+                - name: 'A vegyes azonosítótábla-fogadás nem működik semmilyen intézkedési kódnál, csak a Jóváírásnál.'
+                  href: troubleshooting/warehousing/mixed-license-plate-receiving.md
+                - name: Csak rendszergazdai szerepkör használható a mobileszköz alkalmazás emulátor elérésére.
+                  href: troubleshooting/warehousing/mobile-app-emulator-administrator.md
+                - name: Problémák az alapszintű raktározásból a speciális raktározásba való áthelyezés során
+                  href: troubleshooting/warehousing/move-basic-to-advanced-warehousing.md
+                - name: Nincs elég munka a fürthöz rendszer által irányított fürt kitárolása esetén
+                  href: troubleshooting/warehousing/not-enough-work-for-cluster.md
+                - name: A rendelés állapota Részlegesen kiadott marad az értékesítési rendelés számlázása után is
+                  href: troubleshooting/warehousing/order-status-partially-released.md
+                - name: A Warehouse Management mobilalkalmazás nem használható részleges kitárolásra.
+                  href: troubleshooting/warehousing/partial-picking-warehouse-app.md
+                - name: Készletállapot-változás engedélyezése részleges mennyiségi munkához
+                  href: troubleshooting/warehousing/partial-quantity-inventory-status.md
+                - name: Szállítólevél vagy csomagolási tartalom nyomtatása raktár vagy hely szerint
+                  href: troubleshooting/warehousing/print-documents-by-warehouse.md
+                - name: 'A mennyiség nem érvényes, ha egy helyen több azonosítótáblával folyik kitárolási munka'
+                  href: troubleshooting/warehousing/quantity-invalid-multiple-license-plates.md
+                - name: A mennyiség több köteges osztott kitárolás végrehajtásakor nem érvényes.
+                  href: troubleshooting/warehousing/quantity-invalid-split-pick.md
+                - name: Nem adhat ki újra részlegesen kiszállított rakományt a raktárba.
+                  href: troubleshooting/warehousing/rerelease-partially-shipped-load.md
+                - name: 'A rendszer nem tud foglalni, mert az elérhető készlet 0,00'
+                  href: troubleshooting/warehousing/reservations-0-inventory-available.md
+                - name: Érvénytelen készletdimenziók miatt nem hozható létre rakománysor visszáru értékesítési rendeléshez.
+                  href: troubleshooting/warehousing/return-order-invalid-dimensions.md
+                - name: Az értékesítési rendelést nem lehetett kiadni kimenő raktári műveletekkel.
+                  href: troubleshooting/warehousing/sales-order-not-released.md
+                - name: 'A rakomány szállítása visszaigazolt, de a sorok nincsenek feladva'
+                  href: troubleshooting/warehousing/shipment-confirmed-no-posting.md
+                - name: Az időközökre bontási sablonok nem veszik figyelembe az aktuális készletet a köteg fölötti cikkekhez.
+                  href: troubleshooting/warehousing/slotting-templates-inventory-batch-above.md
+                - name: Köteg fölötti foglalási hierarchiával nem lehet részleges mennyiségre vonatkozó rakományt kiadni.
+                  href: troubleshooting/warehousing/specify-dimensions-above-location.md
+                - name: A visszaigazolatlan beszerzési rendelések a termékbevételezések frissítésének futtatása után visszaigazoltak
+                  href: troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md
+                - name: Egy értékesítési rendelés sorában nem lehet készletfoglalást visszavonni
+                  href: troubleshooting/warehousing/unreserve-inventory-sales-line.md
+                - name: 'Nem erősítheti meg a szállítmányt, mert az ügyfél várakoztatott'
+                  href: troubleshooting/warehousing/customer-is-on-hold.md
+                - name: 'Nem erősítheti meg a szállítmányt, mert a rakománysorok mennyisége nulla'
+                  href: troubleshooting/warehousing/load-line-quantity-is-zero.md
+                - name: 'A rakománysor nem frissíthető, mert a kiadott mennyiség negatív lenne.'
+                  href: troubleshooting/warehousing/released-qty-cannot-be-negative.md
+                - name: A törölt terméknyugták nem frissítik a tranzakciók állapotát regisztráltra
+                  href: troubleshooting/warehousing/canceled-product-receipts.md
+                - name: A tényleges frissített mennyiség tizedesre kerekítése helytelen
+                  href: troubleshooting/warehousing/decimal-rounding-of-quantity.md
+                - name: A tényleges fennmaradó mennyiség az egységben nem lehet nulla
+                  href: troubleshooting/warehousing/physical-remaining-q.md
+                - name: A kitárolt mennyiség nem elegendő a szállítólevél létrehozása során
+                  href: troubleshooting/warehousing/picked-quantity-is-n.md
+                - name: A mennyiség meghaladja a szállítási többlet százalékos mennyiségét a szállítólevél létrehozása során
+                  href: troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md
+                - name: A frissíteni próbált mennyiség meghaladja a bevételezett/szállított mennyiséget
+                  href: troubleshooting/warehousing/quantity-exceeds-rec-del.md
+                - name: A mennyiség meghaladja a szállítási hiány százalékos mennyiségét a szállítólevél létrehozása során
+                  href: troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md
+                - name: Hiba merül fel a hely kiválasztásakor a kitárolási lista regisztrációja során
+                  href: troubleshooting/warehousing/error-cannot-update.md
+                - name: A csomagolóállomáson nem jelennek meg a termékekkel kapcsolatos megjegyzések
+                  href: troubleshooting/warehousing/packing-station-not-.md
+                - name: 'A helyprofil tiltja a negatív készletet, de a negatív tényleges készlet megengedett'
+                  href: troubleshooting/warehousing/location-profile-set.md
+                - name: Az egyetlen bizonylaton található több munkafejléc esetén csak egy címke kerül nyomtatásra
+                  href: troubleshooting/warehousing/when-receipting-prod.md
+                - name: 'Nem erősítheti meg a szállítmányt, mert probléma adódott a naptárral'
+                  href: troubleshooting/warehousing/load-has-active-appo.md
+                - name: Nem erősítheti meg a szállítmányt hiányos vagy nem teljes munka miatt
+                  href: troubleshooting/warehousing/open-or-no-work-exis.md
+                - name: 'Nem erősítheti meg a szállítmányt, mert egyes cikkeket nem tároltak ki'
+                  href: troubleshooting/warehousing/picked-quantity-is-not-on-final.md
+                - name: 'Nem erősítheti meg a szállítmányt, mert a mennyiség nulla'
+                  href: troubleshooting/warehousing/picked-quantity-is-zero.md
+                - name: 'Nem erősíthető meg a szállítmány, mert a mennyiség meghaladja a túlszállítási százalékot'
+                  href: troubleshooting/warehousing/quantity-exceeds-ove.md
+                - name: 'Nem erősíthető meg a szállítmány, mert a mennyiség meghaladja az alulszállítási százalékot'
+                  href: troubleshooting/warehousing/quantity-exceeds-und.md
+                - name: Az utolsó lezárt munkasornak betárolásnak kell lennie
+                  href: troubleshooting/warehousing/the-last-closed-work.md
+                - name: A rakománysorok mennyiségi mezői nem felelnek meg a rakomány mennyiségi mezőinek
+                  href: troubleshooting/warehousing/the-weight-fields-on.md
+                - name: A hullám nem törölhető
+                  href: troubleshooting/warehousing/wave-is-not-eligible.md
+                - name: A súly csak pozitív érték lehet
+                  href: troubleshooting/warehousing/weight-must-be-posit.md
+                - name: 'A munka nem törölhető, mert zárolva van'
+                  href: troubleshooting/warehousing/work-cannot-be-canceled-blocked.md
+                - name: A munka nem törölhető az állapot miatt
+                  href: troubleshooting/warehousing/work-cannot-be-canceled-status.md
+                - name: A munka nincs zárolva
+                  href: troubleshooting/warehousing/work-is-not-blocked.md
+                - name: A munka zárolva marad
+                  href: troubleshooting/warehousing/work-remains-blocked.md
+                - name: Felhasználóhoz rendelt munkát nem lehet érvényteleníteni
+                  href: troubleshooting/warehousing/you-cannot-cancel-wo.md
+    - name: Pénzügyi és műveleti alkalmazások fejlesztése és felügyelete
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Finance
       href: ../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md
