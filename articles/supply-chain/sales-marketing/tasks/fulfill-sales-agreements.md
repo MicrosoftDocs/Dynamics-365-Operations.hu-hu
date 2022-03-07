@@ -2,26 +2,23 @@
 title: Értékesítési szerződések teljesítése
 description: Ez az eljárás bemutatja, hogyan lehet teljesíteni egy értékesítési szerződés értékesítési rendelések hozzárendelésével.
 author: omulvad
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesAgreementListPage, SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesTableListPage, SalesTable, AgreementLine, SalesCreateOrder,  SalesEditLines, SalesAgreementHistory
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d3a35c7140b886f931df48e583b1582201b6547
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 42d6349d4527d43c227fbac7e96c4e037fe575f8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429320"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824822"
 ---
 # <a name="fulfill-sales-agreements"></a>Értékesítési szerződések teljesítése
 
@@ -90,3 +87,6 @@ Ez az eljárás bemutatja, hogyan lehet teljesíteni egy értékesítési szerz�
 23. Kattintson a Csatolt értékesítési szerződés lehetőségre.
 24. Kattintson a Teljesítés fülre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

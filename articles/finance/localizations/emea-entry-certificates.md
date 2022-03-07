@@ -2,11 +2,9 @@
 title: EU-s beérkezési igazolás
 description: Ez a cikk az európai uniós (EU) beérkezési igazolásokról nyújt tájékoztatást.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f91317f327852bc44a8c88887c18b69f6ec020e8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5bf074f54448dd10f190263c09e731c4f4b7a61c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962777"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839774"
 ---
 # <a name="eu-entry-certificates"></a>EU beérkezési igazolások
 
@@ -125,3 +123,6 @@ Ha nincs hozzáférése a feladat végrehajtásához használt lapokhoz, akkor f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

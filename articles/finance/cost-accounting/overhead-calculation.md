@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 60bce611ae1f6ed5d63860793cd5d1da3c421a9e
-ms.sourcegitcommit: e3290eb58ae569a59d6ae2e6922e7d8be8f1980f
+ms.openlocfilehash: 98fd0b4a18b02ed58034ec6e22763ed7c66f567f5c9eeeed124996757470c419
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "7551804"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766289"
 ---
 # <a name="overhead-calculation"></a>Járulékos költség számítása
 
@@ -1328,12 +1328,83 @@ Az alábbi táblázat azt az eredményt mutatja, amikor a Csomagolási szolgált
 ## <a name="conclusion"></a>Következtetés
 A pénzügyi könyvelésnél egy 10 000,00 értékű költséget adnak fel az elektromos áram költségéről egy üres költséghely-azonosítóhoz. Így a költségkönyvelők tudni fogják, hogy ezt a költséget fel kell osztani. A költségkönyvelésnél a költségek szervezeti szintek és egységek felé irányulnak az alkalmazott szabályok és irányelvek alapján. Minden költséghez olyan felosztási bázis társul, amely a költségek felosztása szempontjából a legjobb értékelést nyújtja.
 
-Költségösszetevő | Költségobjektum<br>CC099 | Költségobjektum<br>CC001 | Költségobjektum<br>CC002 | Költségobjektum<br>CC003 | Költségobjektum<br>CC004 | Költségobjektum<br>Proj 1 | Költségobjektum<br>Proj 2 | Költségobjektum<br>Term. 1 | Költségobjektum<br>Term. 2 | Összesen
----|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:
-10001 Villamos energia | 0,00 | 0,00 | 0,00 | 0,00 |  | 30.00 | 10,00 | 7,770.57 | 2,189.43 | 10,000.00 |
-Nem besorolt | 0,00 |  |  |  |  |  |  |  |  |  |
-Fix költség | 0,00 | 0,00 | 0,00 | 0,00 | 0,00 |  |  | 776.36 | 223.64 | 1,000.00 |
-Változó költség | 000 | 0,00 | 0,00 | 0,00 | 0,00 | 30.00 | 1000 | 6,994.21 | 1,965.79 | 9,000.00 |
+<table>
+<thead>
+<tr>
+<th colspan="2" rowspan="2">Költségösszetevő</th>
+<th colspan="9">Költségobjektum</th>
+<th rowspan="2">Összesen</th>
+</tr>
+<tr>
+<th>CC099</th>
+<th>CC001</th>
+<th>CC002</th>
+<th>CC003</th>
+<th>CC004</th>
+<th>Proj 1</th>
+<th>Proj 2</th>
+<th>Term. 1</th>
+<th>Term. 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="2">10001 Villamos energia</td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"><strong>0,00</strong></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"><strong>30,00</strong></td>
+<td style="text-align: right;"><strong>10,00</strong></td>
+<td style="text-align: right;"><strong>7.770,57</strong></td>
+<td style="text-align: right;"><strong>2.189,43</strong></td>
+<td style="text-align: right;"><strong>10.000,00</strong></td>
+</tr>
+<tr>
+<td></td>
+<td style="text-align: left;">Nem besorolt</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Fix költség</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">776.36</td>
+<td style="text-align: right;">223.64</td>
+<td style="text-align: right;"><strong>1.000,00</strong></td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;">Változó költség</td>
+<td style="text-align: right;">000</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">0,00</td>
+<td style="text-align: right;">30.00</td>
+<td style="text-align: right;">1000</td>
+<td style="text-align: right;">6,994.21</td>
+<td style="text-align: right;">1,965.79</td>
+<td style="text-align: right;"><strong>9.000,00</strong></td>
+</tr>
+</tbody>
+</table>
 
 > [!NOTE]
 > Ez a témakör azt mutatja meg, hogy egy elsődleges költségelem, az 10001 villamosenergia hogyan irányul a költségelemekhez. Emiatt ez a járulékos költség a szervezet legalsó szintjéig fel van osztva. Más szóval a legalsó szintű költségobjektumok viselik a költséget. Ha a költségobjektumok közötti költség vizuális áramlását szeretné megtekinteni, a költségösszesítési házirend szabályaival megjelenítheti a költség áramlását. A további tudnivalókat lásd: [Költségösszesítéssel kapcsolatos irányelv és járulékos költség számítása](cost-rollup.md).

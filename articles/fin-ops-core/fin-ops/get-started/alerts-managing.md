@@ -1,25 +1,23 @@
 ---
 title: Figyelmeztetések kötegelt feldolgozása
 description: Ez a témakör általános tájékoztatást tartalmaz a figyelmeztetések kötegelt feldolgozásával kapcsolatban.
-author: tjvass
-manager: AnnBe
-ms.date: 09/10/2010
+author: RichdiMSFT
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: d57586cb18c581e4a462d93a64a88310e251a7af
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
-ms.translationtype: HT
+ms.openlocfilehash: 0ec2a9bd925ccd7dc7c6a8251629bf565ece2268
+ms.sourcegitcommit: 259ba130450d8a6d93a65685c22c7eb411982c92
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798589"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "7416429"
 ---
 # <a name="batch-processing-of-alerts"></a>Figyelmeztetések kötegelt feldolgozása
 
@@ -82,3 +80,6 @@ Ha kötegelt feldolgozáshoz időkeretet állít be, figyelmeztetés küldésér
 
 1. Lépjen a **Rendszerfelügyelet** &gt; **Időszakos feladatok** &gt; **Figyelmeztetések** &gt; **Határidőn alapuló figyelmeztetések** elemre.
 2. A **Határidőn alapuló figyelmeztetések** párbeszédpanelen írja be a megfelelő adatokat.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

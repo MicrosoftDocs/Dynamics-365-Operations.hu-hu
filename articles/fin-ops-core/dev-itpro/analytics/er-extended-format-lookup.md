@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: 2b69ba1b3b27f447b58cf98b1140a481b01b735a
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
-ms.translationtype: MT
+ms.openlocfilehash: 395282eb267e7e356fca6087f99c6f193741ac9d
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324138"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605157"
 ---
 # <a name="allow-users-to-set-up-an-er-format-reference-inquiring-a-format-from-the-global-repository"></a>A felhasználók számára a Globális tárházban tárolt formátumot lekérő formátumreferencia beállításának engedélyezése
 
 [!include [banner](../includes/banner.md)]
 
-Az Elektronikus [jelentési](general-electronic-reporting.md) (ER) keretrendszer használatával lehet beállítani a kimenő dokumentumok formátumait, a különböző országok/régiók jogi követelményeinek megfelelően. Az ER-keretrendszerrel ezenfelül konfigurálhatja a bejövő dokumentumok elemzésének formátumát, és a dokumentumokból származó adatokat hozzáfűzheti az alkalmazás adataihoz, vagy frissítheti azokat. Mindegyik formátum használható a Dynamics 365 Finance példányában a bejövő vagy kimenő üzleti dokumentumok bizonyos üzleti folyamatok részeként történő kezeléséhez.
+Az [Elektronikus jelentéstételi](general-electronic-reporting.md) (ER) keretrendszer segítségével a különböző országok/régiók jogi követelményeinek megfelelően konfigurálható az elektronikus dokumentumok [formátuma](general-electronic-reporting.md#FormatComponentOutbound). Az ER-keretrendszerrel ezenfelül konfigurálhatja a bejövő dokumentumok elemzésének [formátumát](general-electronic-reporting.md#FormatComponentInbound), és a dokumentumokból származó adatokat hozzáfűzheti az alkalmazás adataihoz, vagy frissítheti azokat. Mindegyik formátum használható a Dynamics 365 Finance példányában a bejövő vagy kimenő üzleti dokumentumok bizonyos üzleti folyamatok részeként történő kezeléséhez.
 
 Általában meg kell adnia, hogy egy bizonyos üzleti folyamatban milyen ER formátumot kell használni. Ehhez válasszon ki egy adott ER-formátumot a keresési mezőben, amely az üzleti folyamatspecifikus paraméterek részeként be van állítva. Ezeket a keresési mezőket általában az ER-keretrendszer megfelelő API-ja segítségével valósítják meg. További tudnivalókért láss: [ER-keretrendszer API – a formátumleképezési keresés megjelenítéséhez szükséges kód](er-apis-app73.md#code-to-display-a-format-mapping-lookup).
 

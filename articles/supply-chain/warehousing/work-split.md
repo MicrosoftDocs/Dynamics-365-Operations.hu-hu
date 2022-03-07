@@ -2,11 +2,9 @@
 title: Felosztott munka
 description: Ez a témakör a munkafelosztási funkcióval kapcsolatban tartalmaz információkat. Ez a funkció lehetővé teszi, hogy a nagy munkarendeléseket több kisebb munkarendelésre ossza fel, amelyeket azután több raktári dolgozóhoz rendelhet. Ily módon ugyanazt a munkát egyszerre több raktári dolgozó is kiválaszthatja.
 author: mirzaab
-manager: tfehr
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,15 +12,17 @@ ms.search.region: Global
 ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 8a530f3887c3c66295177d480a8c486dd0984153
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: e3f14dd25a60f8d185f0e58a0612a322c5175ab2
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965527"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579880"
 ---
 # <a name="work-split"></a>Felosztott munka
+
+[!include [banner](../includes/banner.md)]
 
 A munkafelosztás lehetővé teszi, hogy a nagy munkaazonosítókat (azaz több soros munkarendeléseket) több kisebb munkarendelésazonosítóra ossza fel, amelyeket azután több raktári dolgozóhoz rendelhet. Ily módon ugyanazt a munkátlétrehozási számot egyszerre több raktári dolgozó is kiválaszthatja.
 
@@ -53,7 +53,7 @@ A *Munkafelosztás* funkció a következő két gombot adja hozzá a **Munka ré
 - **Munkafelosztás** – Ossza fel a munkaazonosítót több kisebb munkaazonosítóra, amelyet különböző dolgozók feldolgozhatnak.
 - **Munkafelosztási munkamenet megszakítása** – A munkafelosztási munkamenet megszakítása és a munka feldolgozásra való elérhetővé tétele.
 
-![Munkafelosztás és Munkafelosztási munkamenet megszakítási gombok](media/Work_split_buttons.png "Munkafelosztás és Munkafelosztási munkamenet megszakítási gombok")
+![Munkafelosztás és Munkafelosztási munkamenet megszakítási gombok.](media/Work_split_buttons.png "Munkafelosztás és Munkafelosztási munkamenet megszakítási gombok")
 
 > [!IMPORTANT]
 > A **Munkafelosztás** gomb nem érhető el, ha az alábbi feltételek bármelyike teljesül:
@@ -69,7 +69,7 @@ A *Munkafelosztás* funkció a következő két gombot adja hozzá a **Munka ré
 >
 > - A munkát jelenleg egy másik felhasználó osztja fel. Ha megpróbálja megnyitni a felosztási lapot egy másik felhasználó által már felosztott munkához, a következő hibaüzenet jelenik meg: „A(z) \#\#\#\# azonosítójú munkát jelenleg felosztják. Próbálja meg újra néhány perc múlva. Ha továbbra is ezt az üzenetet kapja, forduljon a feletteséhez.”
 
-Egy új munkazárolási ok, a *Munkafelosztás* azt jelzi, hogy a munkaazonosító éppen felosztási folyamatban van. A **Munkafelosztás** lapon és a raktári alkalmazásban is megjelenik, ha a felhasználó megpróbálja futtatni a munkát. Zárolási okok esetén a Munkaazonosítóban lévő **Zárolt hullám** mező neve a **Zárolt** értékre változik.
+Egy új munkazárolási ok, a *Munkafelosztás* azt jelzi, hogy a munkaazonosító éppen felosztási folyamatban van. A **Munkafelosztás** lapon és a Raktárkezelés mobilalkalmazásban is megjelenik, ha a felhasználó megpróbálja futtatni a munkát. Zárolási okok esetén a Munkaazonosítóban lévő **Zárolt hullám** mező neve a **Zárolt** értékre változik.
 
 ## <a name="initiate-a-work-split"></a>Munkafelosztás kezdeményezése
 
@@ -96,7 +96,7 @@ A munka felosztásához kövesse az alábbi lépéseket.
 
     Az aktuális munka **Munkazárolási ok** mezője a *Munkafelosztás* értékre lesz állítva, és a munka zárolva lesz.
 
-    ![Zárolás oka](media/Blocking_reason.png "Zárolás oka")
+    ![Zárolás oka.](media/Blocking_reason.png "Zárolás oka")
 
 1. Jelölje ki azokat a sorokat, amelyeket el szeretne távolítani az aktuális munkaazonosítóból, és hozzá szeretné adni egy új munkaazonosítóhoz. A következő események zajlanak le:
 
@@ -147,10 +147,13 @@ A *Munkafelosztás* befejezéséhez el kell távolítani a felosztási munka zá
 
 A *Munkafelosztás* zárolási okának eltávolítása után a munka futtatható a mobileszközön, feltéve, hogy a **Zárolt** állapot *Nem* értékre van állítva a munkaazonosítón.
 
-## <a name="user-blocking-on-the-warehouse-app"></a>Felhasználó zárolása a raktáralkalmazásban
+## <a name="user-blocking-on-the-warehouse-management-mobile-app"></a>Felhasználó letiltása a Raktárkezelés mobilalkalmazásban
 
-Ha megpróbálja használni a raktári alkalmazást a kitárolási munka felosztott munkával való összevetéséhez, a következő hibaüzenet jelenik meg: „A(z) \#\#\#\# azonosítójú munkát jelenleg felosztják.” Ha ez az üzenet jelenik meg, válassza a **Mégse** gombot. Ezután folytathatja más munka feldolgozását.
+Ha megpróbálja használni a Raktárkezelés mobilalkalmazást a kitárolási munka felosztott munkával való összevetéséhez, a következő hibaüzenet jelenik meg: „A(z) \#\#\#\# azonosítójú munkát jelenleg felosztják.” Ha ez az üzenet jelenik meg, válassza a **Mégse** gombot. Ezután folytathatja más munka feldolgozását.
 
 ## <a name="other-blocked-operations"></a>Egyéb zárolt műveletek
 
 A munkasorokat, a munkakészlet-tranzakciókat vagy a felosztott munkához kapcsolódó feltöltési hivatkozásokat módosító műveletek sikertelenek lesznek, és a következő hibaüzenet jelenik meg: „A(z) \#\#\#\# azonosítóval végzett munka jelenleg felosztás alatt áll."
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

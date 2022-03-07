@@ -2,33 +2,30 @@
 title: Értékesítési rendelések bevételelszámolása
 description: Ez a témakör az értékesítési rendelések és számlák bevételének elkönyveléséhez szükséges alapvető funkciókat ismerteti. A bevételkönyvelés az értékesítési rendelés és az értékesítési rendelésből létrehozott megfelelő számla esetében érhető el.
 author: kweekley
-manager: aolson
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 6e2eafc6785aaf9bc7421bc80c90fa4a7f98a2d4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1807e00f5f93bf9359da710af7c9a1f6de652e7ae78cf9604351af969b057b11
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752225"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Értékesítési rendelések bevételelszámolása
 
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> A Bevételelszámolás funkció nem kapcsolható be a Funkciókezelés segítségével. Jelenleg konfigurációs kulcsok használatával kapcsolhatja be.
+> A bevételelszámolási funkció nem kapcsolható be a Funkciókezelés lehetőségen keresztül. Jelenleg konfigurációs kulcsok használatával kapcsolhatja be.
 
 Ez a témakör az értékesítési rendelések és számlák bevételének elkönyveléséhez szükséges alapvető funkciókat ismerteti. A bevételkönyvelés az adott értékesítési rendelés és az értékesítési rendelésből létrehozott megfelelő számla esetében érhető el. Az értékesítési rendelés idő- és anyagelszámolású projekttel is létrehozható.
 
@@ -39,7 +36,7 @@ Ez a témakör az értékesítési rendelések és számlák bevételének elkö
 
 A programban a következő értékesítési rendelés megadására kerül sor, amely három olyan cikket tartalmaz, amelyeket bevételkönyveléshez állítottak be.
 
-[![Értékesítési rendelés megadása](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
+[![Értékesítési rendelés megadása.](./media/revenue-recognition-so-basic-sales-order-header.png)](./media/revenue-recognition-so-basic-sales-order-header.png)
 
 A bevétel-könyveléshez két fogalom tartozik:
 
@@ -50,7 +47,7 @@ A bevétel-könyveléshez két fogalom tartozik:
 
     Az S0008 második cikk egy olyan szolgáltatási tétel, amely szerződéskötés utáni támogatási (PCS-) tételként jelenik meg. A folyamatos mérnöki szolgáltatásokat tizenkét hónapos időszakra biztosítják a vevőnek. Ennek megfelelően alapértelmezés szerint egy **12M** bevételi ütemezést rendelnek hozzá a termékhez. Mivel ez a cikk PCS-termék, meg kell határozni a szerződés kezdő és záró dátumát. Alapértelmezés szerint a szerződés kezdő és záró dátuma a Cikk részletes adatai – Beállítás lapon található. A bevétel ütemezése esetén a **12M**-hez tartozó beállítást úgy kell definiálni, hogy a szerződési feltételeket automatikusan kitöltse a rendszer a következő ábra szerint.
 
-    [![Bevételek ütemezései](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
+    [![Bevételek ütemezései.](./media/revenue-recognition-so-basic-revenue-schedules.png)](./media/revenue-recognition-so-basic-revenue-schedules.png)
 
     Az S0012 harmadik cikk hardver, és a rendszer nem rendel hozzá alapértelmezés szerint bevételi ütemezést. A program a hardver utáni bevételt akkor könyveli el, amikor a cikk ki van számlázva.
 
@@ -58,7 +55,7 @@ A bevétel-könyveléshez két fogalom tartozik:
 
 A bevételi ár és a bevételi ütemezés további részleteinek megtekintéséhez használja az értékesítési rendelés műveleti ablaktábláján található **Kezelés** lap **Bevételkönyvelés** csoportjának gombjait. Mivel a(z) értékesítési rendelés ezen a ponton nem lett visszaigazolva, a bevételkönyveléshez használt gombok nem érhetők el. Ezek a gombok az értékesítési rendelés teljesítési szakaszainak előrehaladtával elérhetővé vagy inaktívvá válnak.
 
-[![Értékesítési rendelés fejléce](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
+[![Értékesítési rendelés fejléce.](./media/revenue-recognition-so-basic-sales-order-header-02.png)](./media/revenue-recognition-so-basic-sales-order-header-02.png)
 
 Az első három gomb a bevételkönyvelés értékesítési rendelési beállításaiban szereplő cikkek bevételi árának részletes adatait tartalmazza.
 
@@ -73,11 +70,11 @@ Az utolsó két gomb az értékesítési rendelésen szereplő cikkek bevételi 
 
 A következő példa azt szemlélteti, hogy sor került a bevételi ár felosztására, amikor az értékesítési rendelést visszaigazolták. Vegye figyelembe, hogy annak ellenére, hogy a bevételi árak eltérően vannak felosztva, a **Könyvelendő bevétel** mezőben szereplő teljes összegnek meg kell egyeznie a vevőnek számlázott értékesítésirendelés-sorok összegével. Például az értékesítésirendelés-sorok összege (adó nélkül) 1499 USA-dollár. Ennek megfelelően a **Könyvelendő bevétel** mezőben szereplő értékek összegének is 1499 USA-dollárnak kell lennie.
 
-[![Bevételi ár felosztása](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
+[![Bevételi ár felosztása.](./media/revenue-recognition-so-basic-revenue-price-allocation.png)](./media/revenue-recognition-so-basic-revenue-price-allocation.png)
 
 A program a várható bevételkönyvelési ütemezést is létrehozza. A bevétel ütemezése a **Könyvelendő bevétel** értékét elhalasztandó összegként használja fel. Az S0001 cikk 321,21 USA-dollár helyett 300-at halaszt el, míg az S0008 cikk 160,61 USA-dollárt a 100 helyett. Az S0012 cikk nem jelenik meg a várt ütemezésben, mert a bevételt nem halasztották el. Feladás esetén az S0012 cikk 1017,18 USA-dollárt ad fel közvetlenül a bevételi főkönyvi számlára.
 
-[![Elvárt bevételkönyvelési ütemezés](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)
+[![Elvárt bevételkönyvelési ütemezés.](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)](./media/revenue-recognition-so-basic-expected-rev-rec-schedule.png)
 
 ## <a name="create-the-packing-slip"></a>Szállítólevél létrehozása
 
@@ -87,14 +84,17 @@ Következő lépésként létrehozható a szállítólevél az értékesítési 
 
 Az utolsó lépés az értékesítési rendelés kiszámlázása. Ha megtekinti a számla bizonylatát, akkor látni fogja, hogy az S0001 és az S0008 cikkek bevételét elhalasztották (321,21 + 160,61 USA-dollár = 481,82 USA-dollár), és az S0012 cikk fennmaradó összegét feladták a bevételhez (1017,18). Ezek az értékek összesen 1499 USA-dollárt tesznek ki, amely megegyezik az értékesítési rendelés sorainak összegével.
 
-[![Bizonylattranzakciók](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
+[![Bizonylattranzakciók.](./media/revenue-recognition-so-voucher-transactions.png)](./media/revenue-recognition-so-voucher-transactions.png)
 
 A számla létrehozása után a **Bevételi ár felosztása**, **Az ár újrafelosztása új rendelési sorokba** és a **Bevételkönyvelési ütemezés** gombok a bevételkönyvelés esetében elérhetővé válnak, azonban a **Bevételi ár felosztásának frissítése** és az **Elvárt bevételkönyvelési ütemezés** gombok inaktívak maradnak.
 
-[![Elérhető bevételkönyvelés gombjának elérhetősége](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
+[![Elérhető bevételkönyvelés gombjának elérhetősége.](./media/revenue-recognition-so-basic-after-invoice-buttons.png)](./media/revenue-recognition-so-basic-after-invoice-buttons.png)
 
 A **Bevételi ár felosztása** gomb továbbra is elérhető, így megtekintheti a bevételi ár kiszámított értékét. Ha nem módosult az értékesítési rendelés a megerősítést követően, a számla feladása nem fogja módosítani a **Könyvelendő bevétel** mezőben lévő kiszámított összeget.
 
 A program eltávolítja a várható bevételkönyvelési ütemezést és a végleges bevételkönyvelési ütemezésre cseréli. A program minden értékesítésirendelés-sor esetében karbantartja a bevételi ütemezés adatait, és a szerződéses kötelezettségek teljesítése során közzéteszi az elhalasztott bevételt a tényleges bevételhez képest.
 
-[![Végleges bevételkönyvelési ütemezés](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+[![Végleges bevételkönyvelési ütemezés.](./media/revenue-recognition-so-revenue-recognition-schedule.png)](./media/revenue-recognition-so-revenue-recognition-schedule.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

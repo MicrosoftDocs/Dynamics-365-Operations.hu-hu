@@ -1,31 +1,33 @@
 ---
 title: A szabadságok vásárlásával és eladásával kapcsolatos irányelvek kezelése
 description: Engedélyezheti az alkalmazottaknak, hogy vásárolják és eladják a szabadságukat a Dynamics 365 Human Resources alkalmazásban.
-author: andreabichsel
-manager: AnnBe
-ms.date: 08/20/2020
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeaveBuySellPolicy, LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 55d29c42cc1b2d69517e2fcd458ee6a1bdf5277f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 1fe7ce7eafdec175e3395a6ac37b33cb2bb8dbda
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418903"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066675"
 ---
 # <a name="manage-buy-and-sell-leave-policies"></a>Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Engedélyezheti az alkalmazottaknak, hogy szabadságot vegyenek és adjanak el egy szabadságvásárlási és eladási irányelv létrehozásával. Ezeket a szabályokat konfigurálhatja úgy, hogy munkafolyamatot használjon jóváhagyásra, beállítsa a maximális összegeket és mértékeket, valamint megadhatja a beszerzési és eladási árat. 
 
@@ -80,3 +82,6 @@ Engedélyezheti az alkalmazottaknak, hogy szabadságot vegyenek és adjanak el e
 [Szabadság- és távolléti tervek elhatárolása](hr-leave-and-absence-accrue.md)</br>
 [Szabadság vásárlása és eladása](hr-employee-self-service-buy-sell-leave.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

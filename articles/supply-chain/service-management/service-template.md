@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a8a92d67afe5fd427d1bc272c59e459cb1547d22
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ade35eee21585aed2f542f4c977788aa3fe8804b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429199"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5256135"
 ---
 # <a name="service-templates"></a>Szolgáltatási sablonok
 
@@ -58,3 +57,6 @@ Ha a sablonokat a használatuknak megfelelő név szerinti csoportokba rendezte,
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Szolgáltatási sablonok sorainak másolása](copy-service-template-lines.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

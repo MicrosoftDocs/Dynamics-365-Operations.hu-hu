@@ -1,23 +1,26 @@
 ---
 title: Vevői hitelcsoportok
 description: Ez a témakör a vevői hitelcsoportokkal kapcsolatban tartalmaz információkat.
-author: JodiChristiansen
+author: mikefalkner
+manager: AnnBe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c8a007dcaaa9e10ab36dd3a7d0f80dd49b8e4d63
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
-ms.translationtype: MT
+ms.openlocfilehash: 1ddf41d88d085b102a7d69eeeff0ec463d8b4137
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753850"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443942"
 ---
 # <a name="customer-credit-groups"></a>Vevői hitelcsoportok
 
@@ -36,6 +39,3 @@ Beállíthat vevői hitelcsoportokat a **Vevői hitelcsoportok** oldalon (**Hite
 Miután befejezte a vevői hitelcsoport beállítását, vevőket adhat hozzá azok jogi személyének és vevői számlaazonosítójának meghatározásával. Amikor új vevőt ad hozzá egy vevői hitelcsoporthoz, a rendszer az összes jogi személy között ugyanarra a vevői számlára keres, és a felkéri, hogy adja hozzá a vevői hitelcsoporthoz.
 
 A **Korosított egyenlegek** menü használatával megtekintheti a vevői hitelcsoportban szereplő összes számlaügyfél korosítási egyenlegének adatait. A **Korosítási egyenleg** lap a korosított egyenlegek összegzését jeleníti meg a számlaügyfél-fiókokhoz.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

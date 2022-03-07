@@ -1,26 +1,23 @@
 ---
 title: Elavult termékváltozatok keresése
 description: Ez az eljárás bemutatja, hogyan lehet megkeresni az elavult kiadott termékeket vagy termékváltozatokat, és hogyan lehet termékéletciklus-állapotot társítani az elavult termékekhez.
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 12/05/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b5efd1d471559d320102cd81e4be1ba8c1858f45
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 13db6620575b4c97b3f8079ac94f5231a2fd9c1b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429372"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577240"
 ---
 # <a name="find-obsolete-product-variants"></a>Elavult termékváltozatok keresése 
 
@@ -73,3 +70,6 @@ Ez az eljárás bemutatja, hogyan lehet megkeresni az elavult kiadott termékeke
 
 8. Keresse meg és jelölje ki a kívánt rekordot a listán.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

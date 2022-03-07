@@ -2,35 +2,30 @@
 title: Tárolómodul
 description: Ez a témakör a tárolómodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 9bb2c7d56184d009492b4aa839a3546160ad342f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 752d0ddc6f666a5d96a2593c8c246a82dc7e1de2fd4bd2356a275222d7abec29
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412798"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715440"
 ---
 # <a name="container-module"></a>Tárolómodul
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a tárolómodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A tárolómodul egy modul, amely a többi modult tárolja. A tárolómodul elsődleges célja, hogy a számára beállított tulajdonságokon keresztül meghatározza a benne tárolt modulok elrendezését. Ezek a modulok például egymás mellett kétoszlopos, háromoszlopos, négyoszlopos vagy hatoszlopos elrendezésében jelenhetnek meg. A tárolók szélességére korlátozódhatnak, vagy kitölthetik a képernyőt. Minden tárolómodulhoz hozzáadhat egy fejlécet is.
 
@@ -47,7 +42,7 @@ A tárolómoduloknak három típusa támogatott: tároló, tároló 2 hellyel é
 
 A következő kép egy olyan tároló modult mutat be, amely a Commerce webhelykészítő egy körhinta modulját tartalmazza. Ebben a példában a tároló modul **Szélesség** tulajdonsága **Képernyő kitöltése** értékre van állítva.
 
-![Példa egy tárolómodulra](./media/ecommerce-container.PNG)
+![Példa egy tárolómodulra.](./media/ecommerce-container.PNG)
 
 ## <a name="container-module-properties"></a>Tárolómodul tulajdonságai
 
@@ -142,3 +137,6 @@ A tárolómodul új oldalra való felvételéhez és a kötelező tulajdonságok
 [Fejlécmodul](author-header-module.md)
 
 [Láblécmodul](author-footer-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

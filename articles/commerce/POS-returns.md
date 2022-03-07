@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 4a0d5efe043d72f936a15ec9a8ead9987fdb22b891a5a3ae94f95aa5ea7a6e67
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 496c4fe5230a599acf60fac39e51c43db372f92c
+ms.sourcegitcommit: 927574c77f4883d906e5c7bddf0af9b717e492bf
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715530"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "6129812"
 ---
 # <a name="create-returns-in-pos"></a>Visszatérítések létrehozása a pénztárban
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör azt ismerteti, hogyan lehet visszatérítéseket kezdeményezni a készpénzben fizetett, azonnal átvett tranzakciókhoz vagy vevői rendelésekhez a Microsoft Dynamics 365 Commerce pénztár (POS) alkalmazásban.
 
@@ -47,7 +48,7 @@ Ha a keresési feltételeknek megfelelő tranzakció vagy rendelés található,
 
 A POS a visszárutermékek listájában szereplő minden rendelési sorban megjeleníti az eredeti beszerzési mennyiség és a korábban feldolgozott visszárumennyiségek adatait. A felhasználó által a rendeléssorhoz megadott visszárumennyiség nem lehet kisebb, mint a **Visszáruként elérhető** mező értéke.
 
-![Visszaküldendő termékek lap.](media/returnslist.png)
+![Visszaküldendő termékek lap](media/returnslist.png)
 
 Ha a visszáru feldolgozása során a felhasználó rendelkezik a fizikai termékkel, és a termékhez vonalkód is van, akkor a felhasználó beolvashatja a vonalkódot a visszáru regisztrálásához. A vonalkódok minden beolvasása egy cikkel növeli a visszahozott mennyiséget. Ha azonban a vonalkód címkéje tartalmaz beágyazott mennyiséget, ez a mennyiség lesz megadva a **Visszaküldés most** mezőben.
 
@@ -96,13 +97,6 @@ Ha a csatornaoldali információk valamilyen okból nem naprakészek, és az off
 
 > [!NOTE]
 > Ha be van az **Egyesített visszaküldés-feldolgozási élmény a pénztárban** funkció elérhetővé válnak a szerializált termék-visszaküldések érvényesítését támogató új választható funkciók. A további tudnivalókat lásd a [Sorozatszámmal szabályozott termékek visszaküldése a pénztárban (POS)](POS-serial-returns.md) részben.
-
-## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>A megfelelő adószámítás engedélyezése a részleges mennyiséggel történő visszáru esetében
-
-Ez a funkció biztosítja, hogy amikor egy rendelés visszáruja több számla igénybevételével történik, akkor az adók végső soron megegyezzenek az eredetileg felszámolt adó összegével.
-1.  Nyissa meg a **Funkciókezelés** munkaterületet, és keresse meg a következőt: **A megfelelő adószámítás engedélyezése a részleges mennyiséggel történő visszáru esetében**.
-2.  Válassza az **A megfelelő adószámítás engedélyezése a részleges mennyiséggel történő visszáru esetében** elemet, és kattintson az **Engedélyezés** lehetőségre.
-
 
 ## <a name="additional-resources"></a>További erőforrások
 

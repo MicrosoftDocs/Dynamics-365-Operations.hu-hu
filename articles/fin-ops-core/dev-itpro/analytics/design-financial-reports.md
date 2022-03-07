@@ -2,6 +2,7 @@
 title: Pénzügyi jelentések megtekintése és tervezése
 description: Ebben a cikkben gyakorlatokat talál, amelyek bemutatják a pénzügyi jelentések megtekintését és létrehozását a Microsoft Dynamics 365 Finance rendszerben.
 author: jcart1106
+manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
@@ -15,12 +16,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c13169ab05dd506f75b2c9d28f05fcf4471f5a7c8f0a563c974bc38949993295
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 97ecc4daa05f4cbc10266d00366bf69e063af2ff
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6724443"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564866"
 ---
 # <a name="view-and-design-financial-reports"></a>Pénzügyi jelentések megtekintése és tervezése
 
@@ -151,7 +152,7 @@ Ebben a gyakorlatban meglévő alapértelmezett jelentést fog módosítani. Fel
 4. Válassza a **Fájl** &gt; **Mentés másként** elemet, és adja a jelentésnek a **Mérleg és bevétel-kimutatás egymás mellett** nevet.
 5. Módosítsa az alapévet a következőre: 2012.
 6. Kattintson a **Szervezeti hiearchiák** legördítő nyílra, és válassza a Jelentési fa lehetőséget.
-7. Kattintson a Fa legördülő nyílra, és válassza a **Contoso Holdings** lehetőséget.
+7. Kattintson a **Contoso Holdings** legördítő nyílra, és válassza a Jelentési fa lehetőséget.
 8. A változtatások mentése és a varázsló bezárása. Ha szükséges, az összes jelentés egység kiválasztása A jelentés létrehozásának és megnyitásának befejeződése után böngészhet a jelentésben.
 9. Válassza ki a **Jelentés beállítások** opciót.
 10. Válassza ki a **Dimenzió szűrő hozzáadása** opciót és válassza a **Részleg** lehetőséget.

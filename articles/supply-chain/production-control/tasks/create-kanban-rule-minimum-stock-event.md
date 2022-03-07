@@ -2,27 +2,24 @@
 title: Kanbanszabály létrehozása minimális készletesemény használatával
 description: Ez az eljárás az olyan beállításokra irányul, amelyek a minimális készletesemény segítségével történő kanbanszabály létrehozásához szükségesek, annak érdekében, hogy az adott termékek mindig elérhetőek legyenek az adott helyeken.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b295000e132b8551045520df1af55a37673f131d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 598af59a1b30cfeb5c25c89d95e1a60e6707c899
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429239"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829090"
 ---
 # <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Kanbanszabály létrehozása minimális készletesemény használatával
 
@@ -68,3 +65,6 @@ Ez az eljárás az olyan beállításokra irányul, amelyek a minimális készle
 5. Bontsa ki a Kanbanok szakaszt.
     * Jegyezze meg, hogy a rendszer a kanbant a szükséges anyagok 12-es raktárba történő átvitel lebonyolítására hozta létre.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

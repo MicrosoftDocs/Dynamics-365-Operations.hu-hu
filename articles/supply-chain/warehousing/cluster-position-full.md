@@ -2,9 +2,11 @@
 title: Fürtpozíció tele
 description: Ez a témakör a Fürtpozíció tele funkcióról nyújt tájékoztatást. Ez a funkció a munkamegszakítási szabályok szigorúbb végrehajtását teszi lehetővé a fürtkitárolás használata esetén, mivel nagyobb hibahatárt tesz lehetővé a tárolók és rakományok térfogatkorlátai tekintetében.
 author: Mirzaab
+manager: tfehr
 ms.date: 08/25/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSClusterProfile
 audience: Application User
@@ -12,13 +14,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 459c8fce892d9437c7466458b7e53743c71da38f
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
-ms.translationtype: MT
+ms.dyn365.ops.version: Release 10.0.8
+ms.openlocfilehash: b6a7cad070377de58d21a8eb91ee3e1ffaf1c660
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102827"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233007"
 ---
 # <a name="cluster-position-full"></a>Fürtpozíció tele
 
@@ -28,9 +30,12 @@ A *Fürtpozíció tele* funkció a munkamegszakítási szabályok szigorúbb vé
 
 Ez a funkció bevezeti a **Megtelt** gomb futtatásának lehetőségét a fürt egyik munkaegységén. A régebbi verziókban ez a lehetőség csak a szokásos rendeléskitároláskor volt elérhető, na fürtkitároláshoz nem. Ez a funkció azonban különbözik a szokásos **Megtelt** gombtól, amely a hátralévő munkát érvényteleníti. Nem javasolja, hogy a felhasználó adjon hozzá egy másik tárolót ugyanahhoz a fürthöz, és nem hoz létre automatikusan új munkát.
 
-## <a name="turn-the-cluster-position-full-feature-on-or-off"></a>A Fürtpozíció teljes szolgáltatásának be- és kikapcsolása
+## <a name="turn-on-the-cluster-position-full-feature"></a>A Fürtpozíció tele funkció bekapcsolása
 
-A témakörben ismertetett funkciók használatához a *fürtpozíció teljes* funkcióját be kell kapcsolni a rendszerhez. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha a 10.0.25-ösnél régebbi verziót futtatja, akkor a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a *Szolgáltatáskezelési* munkaterület fürtpozíciójának teljes [funkcióját](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) keresik.
+A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+
+- **Modul:** *Raktárkezelés*
+- **Funkció neve:** *Fürtpozíció tele*
 
 ## <a name="setup"></a>Beállítás
 
@@ -208,7 +213,7 @@ Két munkaazonosítót kellett létrehozni, amelyek mindegyikében két kitárol
 
 ### <a name="mobile-device-flow-execution--work-confirmation-setup-for-the-product"></a>Mobileszköz-folyamat végrehajtása – A termékre vonatkozó munka-visszaigazolás beállítása
 
-1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a Raktárkezelés mobilalkalmazásba.
+1. Jelentkezzen be az *61*-es raktárban lévő felhasználóként a raktár alkalmazásba.
 1. Menjen a **Kimenő \> Fürtkitárolás létrehozása** helyre.
 
     Megjelenik a **Feladat: Munka hozzárendelése a fürthöz** lap.

@@ -2,11 +2,9 @@
 title: Az ER-konfigurációk frissített verzióinak importálása
 description: Ez a témakör azt mutatja be, hogyan lehet importálni az elektronikus jelentéskészítési (ER) konfigurációk frissített verzióit a konfigurációs szolgáltatás globális tárából.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 897663998c6c95ff6d7172de2abc4d4dd6ec5f12
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: 712bccbd48775cadc069ef5e8a04f9aae3c9f223137bcd394ff1815a720393b5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734888"
 ---
 # <a name="import-updated-versions-of-er-configurations"></a>Az ER-konfigurációk frissített verzióinak importálása
 
@@ -30,7 +28,7 @@ ms.locfileid: "4679510"
 
 Az elektronikus jelentéskészítési (ER) [adattárak](general-electronic-reporting.md#Repository) az [ER-konfigurációk](general-electronic-reporting.md#Configuration) megosztására szolgálnak. Az ER-konfigurációkat különböző adattárakból [importálhatja](download-electronic-reporting-configuration-lcs.md) a Microsoft Dynamics 365 Finance-példányába. Az ER-konfigurációk importálásakor a [konfigurációszolgáltatók](general-electronic-reporting.md#Provider) közzétehetik új [verziók](general-electronic-reporting.md#component-versioning) adattárait, így azok megoszthatók.
 
-Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk frissített verzióit a konfigurációs szolgáltatás globális tárából. A további tudnivalókat lásd: [Microsoft Dynamics 365 for Finance and Operations - Regulatory services, konfigurációs szolgáltatás](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk frissített verzióit a konfigurációs szolgáltatás globális tárából. A további tudnivalókat lásd: [Microsoft Dynamics 365 for Finance and Operations - Regulatory services, konfigurációs szolgáltatás](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="review-the-available-updated-versions"></a>A rendelkezésre álló frissített verziók áttekintése
 
@@ -43,11 +41,11 @@ Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk fr
 2. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 3. A **Honosítási konfigurációk** oldalon, a **Kapcsolódó hivatkozások** szakaszban, válassza a **Konfigurációk verziófrissítéseinek importálása** elemet.
 
-    ![Honosítási konfigurációk oldala](./media/er-download-updated-versions-global-repo1.png)
+    ![Lokalizációs konfigurációk oldala.](./media/er-download-updated-versions-global-repo1.png)
 
 4. Az **Elektronikus jelentéskészítési konfigurációk verziófrissítéseinek importálása** párbeszédpanel **Futtatási mód** mezőjében válassza a **Csak rendelkezésre álló frissítések megjelenítése** lehetőséget. Majd kattintson az **OK** lehetőségre. 
 
-    ![A Futtatási mód mező Csak rendelkezésre álló frissítések megjelenítése beállítással](./media/er-download-updated-versions-global-repo2.png)
+    ![A Futtatási mód mező Csak rendelkezésre álló frissítések megjelenítése beállítással.](./media/er-download-updated-versions-global-repo2.png)
 
 5. Tekintse át a kapott üzeneteket. Ezek az üzenetek a következő információkat tartalmazzák az aktuális Finance-példányban található ER-konfigurációkról, valamint a globális adattár tartalmának összehasonlításáról:
 
@@ -74,14 +72,14 @@ Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk fr
 4. Az **Elektronikus jelentéskészítési konfigurációk verziófrissítéseinek importálása** párbeszédpanel **Futtatási mód** mezőjében válassza a **Legújabb frissítések importálása** lehetőséget, ha a globális adattárból az ER-konfigurációk legfrissebb verzióit szeretné importálni az aktuális Finance-példányba.
 5. Ha ütemezni szeretne egy kötegelt feladatot az importáláshoz, a **Futtatás a háttérben** gyorslapon állítsa a **Kötegelt feldolgozás** beállítást **Igen** értékre. Ha időnként meg szeretné ismételni az importálást, konfigurálja a szükséges ismétlődést.
 
-    ![Futtatási mód mező a Legújabb frissítések importálása beállítással](./media/er-download-updated-versions-global-repo5.png)
+    ![Futtatási mód mező a Legújabb frissítések importálása beállítással.](./media/er-download-updated-versions-global-repo5.png)
 
 6. Válassza ki az **OK** lehetőséget.
 7. A következő lépések egyikével megtudhatja, hogy mely konfigurációverziók importálása történt meg:
 
     - Ha az importálást interaktívan futtatja a kötegelt feladat használata helyett, tekintse át a kapott üzeneteket.
 
-        ![Interaktív importálás futtatása közben kapott üzenetek](./media/er-download-updated-versions-global-repo6.png)
+        ![Interaktív importálás futtatása közben kapott üzenetek.](./media/er-download-updated-versions-global-repo6.png)
 
     - Ha kötegelt módban futtatja az importálást, hajtsa végre a következő lépéseket:
 
@@ -89,7 +87,7 @@ Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk fr
         2. Keresse meg és jelölje ki az **Elektronikus jelentéskészítési konfigurációk verziófrissítéseinek importálása** feladatot, majd a művelet ablaktáblán a **Kötegelt feladat** lapon válassza a **Kötegelt feladat előzményei** lehetőséget a feladatok előzményeinek megtekintéséhez.
         3. A **Kötegelt feladat előzményei** oldalon válassza a **Napló** lehetőséget. Ezután a megjelenő üzenetben válassza ki az **Üzenet részletei** hivatkozást a feladat naplójának megtekintéséhez.
 
-        ![Feladat naplója](./media/er-download-updated-versions-global-repo7.png)
+        ![Feladat naplója.](./media/er-download-updated-versions-global-repo7.png)
 
 > [!IMPORTANT]
 > A program nem javasolja ismétlődő kötegeltfeladat-ütemezést az ER-konfigurációk frissített verzióinak közvetlenül a globális adattárból a működési környezetbe való importálásához, mert az importált verziók azonnal használhatók. Ehelyett ennek a módszernek a segítségével egy tesztkörnyezetbe telepítse az ER-konfigurációk verzióit. Ezeket azután a tesztkörnyezetében lehet értékelni, mielőtt termelési környezetbe telepítené őket.
@@ -98,3 +96,6 @@ Ez a témakör azt mutatja be, hogyan lehet importálni az ER-konfigurációk fr
 
 - [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 - [ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

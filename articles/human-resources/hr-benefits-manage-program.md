@@ -1,39 +1,41 @@
 ---
 title: Juttatási program meghatározása és kezelése
-description: Az emberi erőforrások számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a cikk a juttatások beállításával és kezelésével kapcsolatban tartalmaz tájékoztatást.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: Az emberi erőforrások számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a témakör a juttatások beállításával és kezelésével kapcsolatban tartalmaz tájékoztatást.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HcmBenefitEligibilityDetail, HcmBenefitSelection, SysPolicyListPage, SysPolicySourceDocumentRuleType, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 15681
 ms.assetid: 6aee97ac-29f7-4b3c-8aa1-c65810de3090
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: a7fe99d4982b8f35871b15e8049c39eb806e315c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 1f2bfa901aa299a091194978ee95ff0e69f2cdbf
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418813"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065351"
 ---
 # <a name="define-and-manage-a-benefits-program"></a>Juttatási program meghatározása és kezelése
 
-A Human Resources számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a cikk a juttatások beállításával és kezelésével kapcsolatos tájékoztatást tartalmaz.
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+A Human Resources számos olyan eszközt biztosít, amelyek segítségével beállíthatja és karbantarthatja a szervezet által a dolgozóknak biztosított juttatásokat, levonásokat és dolgozói kompenzációs terveket. Ez a témakör a juttatások beállításával és kezelésével kapcsolatban tartalmaz tájékoztatást.
 
 ## <a name="benefit-setup"></a>Juttatási beállítás
 
 Mielőtt a dolgozókhoz juttatásokat rendelhetne, az adott juttatási elemeket létre kell hoznia. Ezek az elemek hasonló juttatási terveket kombinálnak és olyan alapértelmezett beállításokat tartalmaznak, mint a levonási díjak és a könyvelési részletek. Ezen beállítások közül sokat később is módosíthat, ha a dolgozók juttatásban részesülnek. Az egyes juttatási tervekhez egy szervezet több bejegyzési lehetőséget is biztosíthat, vagy a dolgozó is lemondhat egy tervben lévő juttatásról. 
 
-[![Juttatási folyamatábra](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
+[![Juttatási folyamatábra.](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
 ## <a name="benefit-elements"></a>Juttatás elemei
 
@@ -45,7 +47,7 @@ Mielőtt elkezdené a juttatások létrehozását és a dolgozók hozzáadását
 
 Az egyes juttatási típusok, például látszerészeti vagy fogorvosi juttatás esetén a szervezet egy vagy több tervet is ajánlhat dolgozóinak. Az egyes tervekhez a szervezet különböző beállításokat is biztosíthat. A dolgozók például vásárolhatnak kiegészítő életbiztosítási csomagot éves bérük egyszeres, kétszeres vagy háromszoros mértékének megfelelően. A terv és annak minden beállítási kombinációja olyan juttatás lesz, amelyet a dolgozó kiválaszthat. 
 
-[![juttatási kép](./media/benefit-pic.png)](./media/benefit-pic.png)
+[![juttatási kép.](./media/benefit-pic.png)](./media/benefit-pic.png)
 
 ## <a name="eligibility"></a>Jogosultság
 A munkáltató által ajánlott különböző típusú juttatásokra való megfelelőség számos tényezőtől függ. Ha egy juttatást hoz létre a Dynamics 365 Human Resources rendszerben, meghatározhatja a megfelelőségi feltételeket az adott juttatáshoz. 
@@ -64,3 +66,6 @@ Előfordulhat, hogy egy szervezet visszavonja az egyik juttatását. Ebben az es
 A juttatások tömeges bővítése funkció hasonlóan működik: ha a tervezetthez képest tovább szeretne egy juttatást biztosítani, egyszerre bővítheti annak lejárati dátumát és módosíthatja az adott juttatásban részesülő dolgozókat.
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

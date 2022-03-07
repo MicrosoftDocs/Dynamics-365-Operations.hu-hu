@@ -2,16 +2,13 @@
 title: Személyre szabott termékajánlatok engedélyezése
 description: Ez a témakör bemutatja, hogyan készíthet személyre szabott termékajánlatokat az ügyfelei számára a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: bebeale
-manager: AnnBe
 ms.date: 08/18/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,20 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 8a61ef0720839d371701f2f0a1fdec7e85a5feb7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b6d68d62636b5750cdcdca3f8ccbe155dc249b72
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412833"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6352300"
 ---
 # <a name="enable-personalized-recommendations"></a>Személyre szabott ajánlatok engedélyezése
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan készíthet személyre szabott termékajánlatokat az ügyfelei számára a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A Dynamics 365 Commerce programban a kiskereskedők a személyre szabott termékajánlatokat (más néven személyre szabásokat) tehetnek elérhetővé. Ily módon a személyre szabott ajánlások belefoglalhatók az online felhasználói élménybe és a pénztárba (POS). Ha be van kapcsolva a személyre szabási funkció, akkor a rendszer társíthatja a felhasználó beszerzési és termékinformációit az egyéni ajánlások előállításához.
 
@@ -55,7 +50,7 @@ Ha be szeretné kapcsolni a személyre szabást, hajtsa végre az alábbi lépé
 1. Válassza ki a **Testreszabott termékajánlatok** funkciót.
 1. A **Testreszabott termékajánlatok** tulajdonságok ablaktáblán válassza az **Engedélyezés most** lehetőséget.
 
-![Személyre szabás bekapcsolása](./media/FeatureManagement_Personalized.PNG)
+![Személyre szabás bekapcsolása.](./media/FeatureManagement_Personalized.PNG)
 
 > [!NOTE]
 > A személyre szabás bekapcsolásakor a személyre szabott termékajánlási lista létrehozásának folyamata elindul. Előfordulhat, hogy egy napra is szükség lehet, amíg a listák elérhetővé és láthatóvá válnak online és a pénztárnál.
@@ -78,7 +73,7 @@ Mielőtt az „Önnek ajánljuk” lista megjelenne bármilyen e-Commerce oldalo
 
 A következő ábra egy „Önnek ajánljuk” lista példáját jeleníti meg egy online áruház oldalon.
 
-![Online „Önnek ajánljuk” lista](./media/picksforyou.png)
+![Online „Önnek ajánljuk” lista.](./media/picksforyou.png)
 
 ### <a name="recommended-for-customer-lists-at-the-pos"></a>„Vásárlónak ajánlott” listák a pénztárnál
 
@@ -86,7 +81,7 @@ Az ügyfélkör-kezelési élmény javítása érdekében a kiskereskedők szem�
 
 A következő ábra egy „Vásárlónak ajánlott” lista példáját jeleníti meg POS terminálon.
 
-![„Vásárlónak ajánlott” lista a pénztárnál](./media/picksonpos.png)
+![„Vásárlónak ajánlott” lista a pénztárnál.](./media/picksonpos.png)
 
 ## <a name="apply-personalization-to-existing-recommendation-lists"></a>Személyre szabás alkalmazása a meglévő ajánlatok listáira
 
@@ -94,7 +89,7 @@ A kiskereskedők személyre szabhatják a meglévő ajánlási listákat, péld�
 
 Például egy bejelentkezett felhasználó már megvásárolta a fekete órát és a barna munkabakancsot, amely a „Népszerű - alapértelmezett” listában jelenik meg a következő ábrán. Ennélfogva a felhasználó ezen termékek helyett új termékeket fog látni a „Népszerű - személyre szabott” listában látható módon.
 
-![Személyre szabás alkalmazása](./media/applypersonalization.png)
+![Személyre szabás alkalmazása.](./media/applypersonalization.png)
 
 Személyre szabás alkalmazásához egy meglévő ajánlati listára a Commerce webhelykészítőjében, kövesse az alábbi lépéseket.
 
@@ -104,7 +99,7 @@ Személyre szabás alkalmazásához egy meglévő ajánlati listára a Commerce 
 1. A **Terméklista-konfiguráció kiválasztása** párbeszédpanelen, a **Típus** alatt vélassza ki a típust.
 1. Válassza ki a **Személyre szabás alkalmazása** jelölőnégyzetet, majd válassza az **OK** lehetőséget.
 
-    ![Személyre szabás alkalmazása egy népszerű listára](./media/ApplyPersonalizationToTrending.PNG)
+    ![Személyre szabás alkalmazása egy népszerű listára.](./media/ApplyPersonalizationToTrending.PNG)
 
 1. Mentse az oldalt, fejezze be a szerkesztését, majd tegye közzé. Az oldal közzététele után a bejelentkezett felhasználók személyre szabott népszerű listákat láthatnak.
 
@@ -131,3 +126,6 @@ Személyre szabás alkalmazásához egy meglévő ajánlati listára a Commerce 
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

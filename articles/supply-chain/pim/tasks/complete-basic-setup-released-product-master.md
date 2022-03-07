@@ -1,27 +1,24 @@
 ---
 title: Kiadott alaptermék alapbeállításának kitöltése
 description: Ez az témakör bemutatja, hogyan kell elvégezni azt a minimális beállítást, amely szükséges ahhoz, hogy az alapterméket használni lehessen az Anyagjegyzék-verziókban.
-author: ShylaThompson
-manager: tfehr
+author: t-benebo
 ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroups, InventItemOrderSetup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8ac4ceeb3e21ab089eb16565bb6e38c7eb44be80
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a1ec567892c09968fe80c3a075d656185aceb4e5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429529"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568495"
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a>Kiadott alaptermék alapbeállításának kitöltése
 
@@ -53,3 +50,6 @@ Ez a harmadik eljárás a nyolcból, amely a dimenzión alapuló konfiguráció-
 20. Zárja be a lapot.
 21. Zárja be a **Kiadott termék részletei** képernyőt.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

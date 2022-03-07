@@ -2,28 +2,25 @@
 title: Szervizrendelések automatikus létrehozása
 description: A szervizrendelések a szolgáltatási szerződések alapján hozhatók létre a szolgáltatási szerződés érvényességi időtartamán belül.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 08fb7363ab87fd6a7f3d38406e72b1f542dc2c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0b864aee332c82bc6b6845e7f9e425cfef377033
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429697"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824630"
 ---
 # <a name="automatically-create-service-orders"></a>Szervizrendelések automatikus létrehozása 
 
@@ -59,3 +56,6 @@ A szolgáltatási szerződés 2012. január 1-től 2012. december 31-ig tart. A 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

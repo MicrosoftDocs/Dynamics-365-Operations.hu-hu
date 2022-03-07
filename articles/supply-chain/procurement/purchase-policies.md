@@ -1,12 +1,10 @@
 ---
 title: A beszerzési irányelvek áttekintése
 description: Ez a cikk a beszerzési irányelvekkel kapcsolatos információkról nyújt tájékoztatást. A beszerzési irányelv az igénylési folyamatot szabályozó szabályok gyűjteménye. A beszerzési irányelvek lehetővé teszik a beszerzési rendszergazdáknak a beszerzési stratégia megvalósítását a szervezet stratégiai beszerzési követelményihez igazodó irányelv struktúrájának létrehozásával.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage, PurchReqControlRule, RequisitionReplenishCatAccessPolicyRule, PurchReApprovalPolicyRule, RequisitionReplenishControlRule, PurchReqControlRFQRule
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 11614
 ms.assetid: 729a304d-0f3f-4ccb-bd5b-46ee0976c57f
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: def842116e0c6c57d407cb4fb30a26a9e17d9a2c
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: e89e8b4860bbafe4bd47d62d2feb7d197f233d24
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022206"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102782"
 ---
 # <a name="purchasing-policies-overview"></a>A beszerzési irányelvek áttekintése
 
@@ -57,13 +55,13 @@ Ha egy, a 2222-es jogi személyhez tartozó alkalmazott hoz létre beszerzési i
 Az előző példában az összes beszerzési szabály meghatározása egyetlen szervezeti hierarchiában, a Vállalatok szervezeti hierarchiában történt. Egy összetett szervezet azonban több szervezeti hierarchiára is definiálhat irányelveket.  
 
 
-A Contoso egy nagyvállalat, amelyben az igénylési folyamat kézben tartásához összetett beszerzési szabályokra van szükség. A Contoso két különböző szervezeti hierarchiára vonatkozóan ad meg szabályokat: Részleg és Globális beszerzés ellenőrzése.  
+A Contoso egy olyan nagyvállalat, amelyben az igénylési folyamat kézben tartásához összetett beszerzési szabályokra van szükség. A Contoso két különböző szervezeti hierarchiára vonatkozóan ad meg szabályokat: Részleg és Globális beszerzés ellenőrzése.  
 
 Az 123 irányelv az Egyesült Királyságbeli értékesítés – Értékesítési osztályra vonatkozó Részleg szervezeti hierarchiára érvényes. Az 123 irányelvben szereplő, beszerzési igénylést ellenőrző szabály előírja, hogy minimális rendelési mennyiségre vonatkozó korlátozásokat kell bevezetni. Ebben a szabályban a **Minimális rendelési mennyiségre vonatkozó korlátozások érvényesítése** beállítás ki van választva.  
 
 A 456 irányelv az Értékesítési- és marketingosztályra vonatkozó Globális beszerzés ellenőrzése szervezeti hierarchiára érvényes. Az 456 irányelvben szereplő, beszerzési igénylést ellenőrző szabály nem írja elő, hogy minimális rendelési mennyiségre vonatkozó korlátozásokat kell bevezetni. Ebben a szabályban a **Minimális rendelési mennyiségre vonatkozó korlátozások érvényesítése** beállítás nincs kiválasztva.  
 
-Sam a Contonso Egyesült királyságbeli irodájában, az Egyesült Királyságbeli értékesítés – Értékesítési osztályon dolgozik. Az osztályára érvényesek mind a Részleg, mind a Globális beszerzés ellenőrzése szervezeti hierarchiákra vonatkozó irányelvek. Amikor Sam beszerzési igénylést hoz létre, a rendszernek el kell döntenie, hogy melyik irányelvet alkalmazza. A rendszergazda úgy állítja be a beszerzési irányelvek paramétereit, hogy a beszerzési irányelvek alkalmazása a következő elsőbbségi sorrend szerint történjen:
+Sam a Contoso egyesült királyságbeli irodájában, az „Egyesült Királyság, értékesítés – Értékesítési osztályon” dolgozik. Az osztályára érvényesek mind a Részleg, mind a Globális beszerzés ellenőrzése szervezeti hierarchiákra vonatkozó irányelvek. Amikor Sam beszerzési igénylést hoz létre, a rendszernek el kell döntenie, hogy melyik irányelvet alkalmazza. A rendszergazda úgy állítja be a beszerzési irányelvek paramétereit, hogy a beszerzési irányelvek alkalmazása a következő elsőbbségi sorrend szerint történjen:
 
 1.  Globális beszerzés ellenőrzése
 2.  Részleg
@@ -150,3 +148,6 @@ A beszerzési rendelés létrehozására és igényösszesítésre vonatkozó sz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

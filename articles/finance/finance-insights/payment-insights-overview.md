@@ -2,33 +2,31 @@
 title: Vevői fizetési előrejelzések (előzetes verzió)
 description: Ez a témakör a fizetési előrejelzések képességét ismerteti, amelyek segíthetnek jobban megérteni a vevők tipikus fizetési gyakorlatait. Ez a funkció segíthet azonosítani azokat a körülményeket, amelyek a begyűjtési folyamatok az eredeti kezdésnél korábbi megkezdését okozhatják..
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/26/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: b321fdc185e175d9fe2673c9f1e16486efd8e798
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: 25542e72e620e5273a9cd215d5b6cd2f89a2f364
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645673"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638368"
 ---
 # <a name="customer-payment-predictions-preview"></a>Vevői fizetési előrejelzések (előzetes verzió)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör a fizetési előrejelzések képességét ismerteti, amelyek segíthetnek jobban megérteni a vevők tipikus fizetési gyakorlatait. Ez a funkció segíthet azonosítani azokat a körülményeket, amelyek a begyűjtések folyamatainak az eredeti kezdésnél korábbi megkezdését okozhatják..
 
@@ -56,11 +54,11 @@ Minden nyitott számlához a funkció három kifizetési valószínűséget rend
 
 A szolgáltatás a várható kifizetések összesített nézetét is tartalmazza.
 
-[![Kifizetési előrejelzések összesített nézete](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
+[![Kifizetési előrejelzések összesített nézete.](./media/graphic-payment-reports.png)](./media/graphic-payment-reports.png)
 
 Minden számlához hozzárendeli a rendszer az időben való fizetés valószínűségét. Azoknál a számláknál, amelyeknél az időben való fizetés valószínűsége 50%-nál alacsonyabb, akkor a rendszer a számlát piros körrel jelöli meg, amellyel jelzi, hogy ezekre a számlákra a pénzbehajtó fokozott figyelme szükséges.
 
-[![Kifizetési valószínűségek listája](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
+[![Kifizetési valószínűségek listája.](./media/customer-pymnt-probability-list.png)](./media/customer-pymnt-probability-list.png)
 
 A Vevői kifizetési előrejelzések funkció kontextus szerinti adatokat is tartalmaz az előrejelzés elmagyarázása érdekében. Ezek az adatok a legjelentősebb tényezőket tartalmazzák, amelyek befolyásolják az előrejelzést, a vevővel folytatott üzleti állapotot, valamint a vevő múltbeli fizetési magatartásának részleteit.
 
@@ -74,8 +72,6 @@ A múltban általában nehéz mesterséges intelligencia-(AI) megoldást fejlesz
 
 A Finance Insights nyilvános előzetes verzió az Amerikai Egyesült Államokban, Európában és az Egyesült Királyságban is elérhető telepítéshez. A Microsoft fokozatosan adja hozzá a további régiók támogatását.
 
-A nyilvános előzetes verziójú funkciók csak 2. szintű tesztkörnyezetekben kell bekapcsolni. A tesztkörnyezetben létrehozott telepítési és AI-modellek lehet, hogy nem telepíthetők át éles környezetbe. További információ: [A Microsoft Dynamics 365 előzetes verziók kiegészítő használati feltételei](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/public-preview-terms).
+A nyilvános előzetes verziójú funkciók csak 2. szintű tesztkörnyezetekben kell bekapcsolni. A tesztkörnyezetben létrehozott telepítési és AI-modellek lehet, hogy nem telepíthetők át éles környezetbe. További információ: [A Microsoft Dynamics 365 előzetes verziók kiegészítő használati feltételei](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
 
-## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
-
-Az előzetes verziók (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmazhatnak, mint a Dynamics 365 Finance and Operations szolgáltatás (2) és nem vonatkozik a szolgáltatásiszint-szerződés (SLA) ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,26 +2,25 @@
 title: Jelentéskészítés elemzések a Power BI kezdőlapjával
 description: Ebből a témakörből olyan erőforrásokat érhet el, amelyek további információkat tartalmaznak az elérhető üzletiintelligencia- és jelentéskészítési eszközökről.
 author: sericks007
+manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "27681"
-- intro-internal
+ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1a1c0ee254a5300cfc84eb434e4785b6eceacf0375b983b33991445443957a33
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 644cf8ea39da872962e44a38294af88d1dfa809e
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712736"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5559869"
 ---
 # <a name="reporting-and-analytics-with-power-bi-home-page"></a>Jelentéskészítés elemzések a Power BI kezdőlapjával
 
@@ -39,7 +38,7 @@ A munkaterületek olyan multimédiás infografikákat és vizuális elemeket has
 
 A felhasználók az oldalon található vizuális elemekre kattintva vagy azokat megérintve kezelhetik az adatokat. Láthatják az okot és a hatást, illetve elvégezhetnek egyszerű what-if műveleteket a munkaterület elhagyása nélkül. A látványos, interaktív vizuális elemeknek köszönhetően a felhasználók élvezettel ismerhetik meg az adatokkal és fedezhetik fel a rejtett trendeket.
 
-![Power BI-példa egy munkaterületen.](./media/Power-BI-in-D365-Workspace.png)
+![Power BI-példa egy munkaterületen](./media/Power-BI-in-D365-Workspace.png)
 
 További információk a következő témakörökben találhatók:
 
@@ -52,7 +51,7 @@ További információk a következő témakörökben találhatók:
 ## <a name="business-documents-and-printing"></a>Üzleti dokumentumok és nyomtatás
 A jelentéskészítési megoldásokat gyakran használják üzleti tranzakciók részleteinek rögzítésére és kommunikálására. A jelentéskészítési megoldásoknak ezért képeseknek kell lenniük az üzleti adatok fizikai reprodukálására a meglévő eszközöket például hálózati nyomtatókat használva. Az üzleti dokumentumok közé tartoznak például az értékesítési számlák, a vevői kivonatok és a csekkek.
 
-[![Példa üzleti dokumentumokra.](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
+[![Példa üzleti dokumentumokra](./media/image-of-business-documents-1024x632.png)](./media/image-of-business-documents.png)
 
 További információk a következő témakörökben találhatók:
 
@@ -63,7 +62,7 @@ További információk a következő témakörökben találhatók:
 ## <a name="electronic-reporting"></a>Elektronikus jelentéskészítés
 Az Elektronikus jelentéskészítés (ER) egy olyan eszköz, amellyel úgy konfigurálhatók az elektronikus dokumentumformátumok, hogy megfeleljenek a különböző országok/régiók jogi követelményeinek. Az elektronikus jelentéskészítés alkalmazási területei közé tartozik a pénzügyi ellenőrzés, az adó bejelentése és az elektronikus számlázás.
 
-[![Elektronikus jelentéskészítési példa.](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
+[![Elektronikus jelentéskészítési példa](./media/electronic-reporting-example.png)](./media/electronic-reporting-example.png)
 
 További információk a következő témakörökben találhatók:
 
@@ -74,7 +73,7 @@ További információk a következő témakörökben találhatók:
 ## <a name="financial-reporting"></a>Pénzügyi jelentéskészítés
 Olyan szabványos pénzügyi jelentések állnak rendelkezésre, amelyek az alapértelmezett főszámla-kategóriákat használják. A jelentéstervező segítségével hagyományos pénzügyi kimutatásokat – például eredménykimutatásokat és mérlegeket – hozhat létre vagy módosíthat. Az eredmények ezután megoszthatja szervezete többi tagjával is. A pénzügyi jelentéskészítési példák között találhatók a mérlegek, a pénzmozgások és a főkönyvi kivonat évek szerinti összegzése.
 
-[![Pénzügyi jelentéskészítési példa.](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
+[![Pénzügyi jelentéskészítési példa](./media/financial-reporting-example.png)](./media/financial-reporting-example.png)
 
 További információk a következő témakörökben találhatók:
 

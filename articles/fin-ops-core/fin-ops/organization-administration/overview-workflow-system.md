@@ -2,30 +2,33 @@
 title: A munkafolyamat-rendszer áttekintése
 description: Ez a témakör bemutatja a munkafolyamat rendszert.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 56381
+ms.custom:
+- "56381"
+- intro-internal
 ms.assetid: 20b78595-e1d9-439a-ae1c-a776a3438919
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 660e01618eea66bc611dd51818694d36993ba9ea
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
-ms.translationtype: HT
+ms.openlocfilehash: 70776ba0a0461998d2c1f62ba05b55cd4307a0f7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796996"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067933"
 ---
 # <a name="workflow-system-overview"></a>A munkafolyamat-rendszer áttekintése
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a témakör bemutatja a munkafolyamat rendszert.
 
@@ -41,7 +44,7 @@ A munkafolyamat olyan rendszer, amely az Application Object Server (AOS) kiszolg
 
 A munkafolyamat egy üzleti folyamatot jelent. Azt határozza meg, hogyan halad vagy mozog egy dokumentum a rendszeren keresztül annak jelzésével, hogy kinek a feladata a feladat végrehajtása, a döntéshozatal, illetve a dokumentum jóváhagyása. Az alábbi illusztráció szemlélteti a költségjelentések munkafolyamatát.
 
-![Munkafolyamat felhasználókhoz rendelt elemekkel](./media/workflow_user.gif)
+![Munkafolyamat felhasználókhoz rendelt elemekkel.](./media/workflow_user.gif)
 
 A munkafolyamat könnyebb megértésének érdekében tegyük fel, hogy Balázs benyújt egy 7000 dolláros költségjelentést. Ebben az esetben Ivánnak ellenőriznie kell a számlákat, amelyeket Sam irányított hozzá. Ezt követően Ferencnek és Zsuzsannának jóvá kell hagynia a költségjelentést. Ezután tegyük fel, hogy Sam benyújt egy újabb költségjelentést, ezúttal 11 000 dollárról. Ebben az esetben Ivánnak ellenőriznie kell a nyugtákat, majd Ferencnek, Zsuzsannának és Annának is jóvá kell hagynia a költségjelentést.
 
@@ -71,3 +74,6 @@ A munkafolyamat-rendszer használata számos előnnyel jár a szervezeténél:
 + [Párhuzamos ágak konfigurálása munkafolyamatban](configure-parallel-branch-workflow.md)
 + [Sortétel munkafolyamatainak konfigurálása](configure-line-item-workflow.md)
 + [Munkafolyamat GYIK](workflow-FAQ.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

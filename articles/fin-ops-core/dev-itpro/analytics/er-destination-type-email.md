@@ -2,7 +2,7 @@
 title: E-mail ER céltípusa
 description: Ez a témakör bemutatja, hogyan kell konfigurálni egy e-mail-célt az Elektronikus jelentéskészítési (ER) formátumok egyes MAPPA vagy FÁJL összetevőihez.
 author: NickSelin
-ms.date: 08/03/2021
+ms.date: 07/27/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 2248b8a35b076eb778a50bbbc67d083380ceee62
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
-ms.translationtype: MT
+ms.openlocfilehash: 46817197f3b0938fb325b2b3ebefbee41b5e4583092e521e6a8dae70d78b0970
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324008"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6769319"
 ---
 # <a name="email-er-destination-type"></a>E-mail ER céltípusa
 
@@ -53,29 +53,16 @@ Egy vagy több kimeneti fájl e-mailben történő elküldéséhez kövesse az a
 
 ## <a name="configure-an-email-destination"></a>Egy e-mail-célhely konfigurálása
 
-### <a name="email-content"></a>E-mail tartalma
+Megadhatja az e-mail feladóját és címzettjeit, valamint szerkesztheti az e-mail üzenet tárgyát és szövegét. Beállíthat állandó szöveget az e-mail tárgyához és szövegtörzséhez, vagy használhatja az ER-[képleteket](er-formula-language.md) az e-mail szövegek dinamikus létrehozásához.
 
-Szerkesztheti az e-mail üzenet tárgyát és szövegét.
-
-A **Tárgy** mezőbe írja be az e-mail tárgyának szövegét, amely a futáskor generált elektronikus üzenet tárgymezőjében jelenjen meg. A **Törzs** mezőbe írja be az e-mail szövegét, amely az elektronikus üzenet törzs mezőjében jelenik meg. Beállíthat állandó szöveget az e-mail tárgyához és törzséhez, vagy [ER-képletekkel](er-formula-language.md) dinamikusan létrehozhatja az e-mail szövegét futásidőben. A konfigurált képletnek [String](er-formula-supported-data-types-primitive.md#string) típusú értéket kell visszaadnia.
-
-Az e-mail törzse az e-mail klienstől függően TEXT vagy HTML formátumban készül. Bármilyen elrendezést, stílust és védjegyezést használhat, amit a HTML és a szövegközti stíluslapok (CSS) lehetővé tesznek.
-
-> [!NOTE]
-> Az e-mail kliensek olyan elrendezési és stílusbeli korlátozásokat írnak elő, amelyekhez HTML-kiigazítás szükséges, és CSS amit az üzenet törzséhez használhat. Javasoljuk, hogy ismerkedjen meg a HTML létrehozásának legjobb gyakorlataival, amelyeket a legnépszerűbb e-mail kliensek támogatnak.
->
-> A megfelelő kódolást használja a kocsivissza megvalósításához, a törzs formázásától függően. További információért lásd a [String](er-formula-supported-data-types-primitive.md#string) adattípus definícióját.
-
-### <a name="email-addresses"></a>E-mail címek
-
-Megadhatja az e-mail feladóját és az e-mail címzettjeit. Alapértelmezés szerint az e-maileket az aktuális felhasználó nevében küldi a rendszer. Más e-mail feladó megadásához a **Feladó** mezőt kell beállítania.
+Alapértelmezés szerint a rendszer az aktuális felhasználó nevében küld e-mailt. Más e-mail feladó megadásához a **Feladó** mezőt kell beállítania.
 
 > [!NOTE]
 > Amikor be van állítva egy e-mail célja, a **Feladó** mező csak a `ERFormatDestinationSenderEmailConfigure`, **A feladó e-mail címének beállítása ER formátumú célállomásokhoz** biztonsági jogosultsággal rendelkező felhasználók számára látható.
 >
 > Amikor egy e-mail céljának módosítását kínálja fel a rendszer [futási időben](electronic-reporting-destinations.md#security-considerations), a **From** mező csak a `ERFormatDestinationSenderEmailMaintain`, **A feladó e-mail címének fenntartása az ER formátumú célhoz** biztonsági jogosultsággal rendelkező felhasználók számára látható.
 >
-> Ha a **Feladó** mezőt az aktuális felhasználóétól eltérő e-mail cím használatára konfigurálja, akkor a **Küldés mint** vagy a **Küldés más nevében** engedélyt előzetesen helyesen kell [beállítani](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group). Ellenkező esetben a következő kivételt dobja a rendszer futás közben: „Nem lehet e-mailt küldeni \<from email account\> feladóval a(z) \<current user account\> fiókból, kérjük ellenőrizze a(z) \<from email account\> fiók »Send as« engedélyeit.”
+> Ha a **Feladó** mezőt az aktuális felhasználóétól eltérő e-mail cím használatára konfigurálja, akkor a **Küldés mint** vagy a **Küldés más nevében** engedélyt előzetesen helyesen kell [beállítani](/microsoft-365/solutions/allow-members-to-send-as-or-send-on-behalf-of-group?view=o365-worldwide). Ellenkező esetben a következő kivételt dobja a rendszer futás közben: „Nem lehet e-mailt küldeni \<from email account\> feladóval a(z) \<current user account\> fiókból, kérjük ellenőrizze a(z) \<from email account\> fiók »Send as« engedélyeit.”
 
 A **Feladó** mezőt úgy is beállíthatja, hogy egynél több e-mail címet adjon vissza. Ebben az esetben a lista első címét lesz e-mail feladójának címe.
 
@@ -140,7 +127,7 @@ Ha meg szeretné adni, hogy milyen típusú e-mail címeket kell használni fut�
 
 ### <a name="configuration-email"></a>Konfigurációs e-mail
 
-Válassza a **Konfigurációs e-mail** e-mail-cím típust, ha a használt konfigurációnak van egy csomópontja az adatforrásokban, amely egyetlen e-mail címet vagy több, pontosvesszővel (;) elválasztott e-mail címet ad vissza. A képlettervező adatforrásai [és](er-formula-language.md#Functions) funkciói segítségével lehet helyesen formázott e-mail címet, illetve pontosvesszővel elválasztott, megfelelő formátumú e-mail címeket kapni. Ha például az **ISO 20022 átutalás** konfigurációt használja, akkor az a csomópont, amely a szállító elsődleges e-mail címét jelöli a szállító elérhetőségi adataiból, amelynek a kísérőlevelet el kell küldeni, a `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Válassza a **Konfigurációs e-mail** e-mail-cím típust, ha a használt konfigurációnak van egy csomópontja az adatforrásokban, amely egyetlen e-mail címet vagy több, pontosvesszővel (;) elválasztott e-mail címet ad vissza. A képlettervezőben [adatforrások](general-electronic-reporting.md#FormatComponentOutbound) és [függvények](er-formula-language.md#Functions) segítségével pontosan formázott e-mail címet vagy pontosvesszővel elválasztott e-mail címeket használhat. Ha például az **ISO 20022 átutalás** konfigurációt használja, akkor az a csomópont, amely a szállító elsődleges e-mail címét jelöli a szállító elérhetőségi adataiból, amelynek a kísérőlevelet el kell küldeni, a `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
 [![E-mail-cím forrásának konfigurálása.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 

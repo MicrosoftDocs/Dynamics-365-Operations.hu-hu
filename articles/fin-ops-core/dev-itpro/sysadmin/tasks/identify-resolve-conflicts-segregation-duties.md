@@ -2,11 +2,9 @@
 title: Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása
 description: Ez a cikk a feladatkörök szétválasztásával kapcsolatos ütközések azonosítását és feloldását ismerteti.
 author: peakerbl
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysSecSegregationOfDutiesConflict, SysSecSegregationOfDutiesRule
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: deff97c7728db91089d3ea834d15de738da500fa
-ms.sourcegitcommit: 316200579dd5b04ad76f276a2ed6b0f55fa8c812
-ms.translationtype: HT
+ms.openlocfilehash: 0638699c0e569bbe67024a87d6c55729642557cb085ee899aa98aa0022b12840
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "4826368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748312"
 ---
 # <a name="identify-and-resolve-conflicts-in-segregation-of-duties"></a>Feladatkörök szétválasztásával kapcsolatos ütközések azonosítása és feloldása
 
@@ -59,3 +57,6 @@ Felhasználók szerepkörökhöz rendelésekor a feladatkörök szétválasztás
 
 > [!NOTE]
 > Ha ugyanannak a felhasználónak több ütközése van, jelölje ki a felhasználói rekordot, és értékelje ki a hozzárendelt szerepköröket a **Felhasználók** oldalon. Az ütközés elkerülése érdekében a szabályok hozzáadása vagy módosítása után ellenőrizze őket.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

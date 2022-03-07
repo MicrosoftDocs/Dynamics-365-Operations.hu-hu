@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 86f0964b6d929d0434a8bf04aaefc173bee21c6f
-ms.sourcegitcommit: d77e902b1ab436e5ff3e78c496f5a70ef38e737c
+ms.openlocfilehash: 48391a3160c42fdc94be9e7e62024e9e193b94dc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "4412986"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5216675"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>Állapotellenőrzés pénztárperifériákhoz és -szolgáltatásokhoz
 
@@ -83,3 +82,6 @@ Egyéni állapotfelmérő ellenőrzések is létrehozhatók olyan eszközök tes
 ## <a name="related-articles"></a>Kapcsolódó cikkek
 
 [A Modern POS (MPOS) eseményindítói és nyomtatása](dev-itpro/pos-trigger-printing.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

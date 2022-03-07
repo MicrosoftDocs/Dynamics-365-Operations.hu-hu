@@ -1,30 +1,27 @@
 ---
 title: A termékéletciklus-állapot áttekintése
 description: A termékéletciklus állapota egy kiadott termék vagy termékváltozat életciklus-állapotát dokumentálja.
-author: cvocph
-manager: tfehr
+author: t-benebo
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductLifecycleState, EcoResReleasedProductLifecycleStateChanges
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 51a6b19e84f368bf72b664e120f262ddcf7c7611
-ms.sourcegitcommit: 5f21cfde36c43887ec209bba4a12b830a1746fcf
+ms.openlocfilehash: ae9e8201caac259e9e8ddd618fe0220933e31658
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429977"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578248"
 ---
 # <a name="product-lifecycle-state-overview"></a>A termékéletciklus-állapot áttekintése
 
@@ -109,3 +106,6 @@ Használja a következő feltételeket a kiadott termékek vagy termékváltozat
 - [Termékéletciklus-állapot hozzárendelése kiadott termékhez](tasks/product-lifecycle-state-released-product.md)
 - [Az elavult termékváltozatok megkeresése, és egy termékéletciklus-állapot hozzárendelése](tasks/obsolete-product-variants.md)
 - [Termékéletciklus-állapot létrehozása a termékek kizárásához az alaptervezésből](tasks/exclude-products-master-planning.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

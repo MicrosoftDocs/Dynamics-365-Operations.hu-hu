@@ -1,7 +1,7 @@
 ---
 title: A szabálytalanságok diagnosztikai típusai
 description: Ez a témakör azt ismerteti, hogyan lehet a szabálytalanságokkal használható diagnosztikai típusokat használni és létrehozni.
-author: yufeihuang
+author: rachel-profitt
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: yufeihuang
+ms.author: raprofit
 ms.search.validFrom: 2020-06-17
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: edaa3a8b5c6446f039f33589166d832dcd9d0b9a
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: b7a5c593f1d9e8f7a77f693f6e652e9355a985fb
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7580936"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6022276"
 ---
 # <a name="diagnostic-types-for-nonconformances"></a>A szabálytalanságok diagnosztikai típusai
 

@@ -1,12 +1,10 @@
 ---
 title: beszerzési igénylési munkafolyamat
 description: A munkafolyamat folyamata végigviszi a beszerzési igénylést az ellenőrzési folyamaton a kiinduló Tervezet állapottól a végső Jóváhagyva állapotig . A beszerzési igénylés ellenőrzésre való elküldésekor, elindul a munkafolyamat. A beszerzési igénylés jóváhagyása után, a beszerzési igénylés soraiban létrehozható egy beszerzési rendelés, amely elküldésre kerül a szállítónak, a rendelés teljesítése céljából.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6069e2ab93e1ce4299669850bdae37e82b17428
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: 66305688d1613b9882d3778a81886728df934931
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021980"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569457"
 ---
 # <a name="purchase-requisition-workflow"></a>beszerzési igénylési munkafolyamat
 
@@ -53,7 +51,7 @@ A következő ábra bemutatja, hogy egy beszerzési igénylés hogyan halad kere
 -   **Beszerző ügynök** – A felhasználó, aki beszerzési felülvizsgálatot hajt végre, és jóváhagyhatja a dokumentumot.
 -   **A kérelmező felettese** – A felhasználó, aki vezetői felülvizsgálatot hajt végre, és jóváhagyhatja a dokumentumot.
 
-![Beszerzési igénylési munkafolyamat ellenőrzésének folyamata](./media/purchreqworkflowoverview_submission.gif)  
+![Beszerzési igénylési munkafolyamat ellenőrzésének folyamata.](./media/purchreqworkflowoverview_submission.gif)  
 Ebben a példában, a beszerzési igénylés munkafolyamata a következő lépéseket tartalmazza:
 
 1.  A készítő benyújt egy beszerzési igénylést ellenőrzésre.
@@ -76,7 +74,7 @@ A következő szerepkörök szerepelnek a munkafolyamatban ebben a példában:
 -   **Részlegvezető** – A felhasználó, aki kiadási felülvizsgálatot hajt végre, és jóváhagyhatja a dokumentumot.
 -   **Csoportvezető** – A felhasználó, aki aláírás-felhatalmazási felülvizsgálatot hajt végre, és jóváhagyhatja a dokumentumot.
 
-![Beszerzési igénylési sor munkafolyamat ellenőrzésének folyamata](./media/purchreqlineworkflowoverview.gif)  
+![Beszerzési igénylési sor munkafolyamat ellenőrzésének folyamata.](./media/purchreqlineworkflowoverview.gif)  
 Ebben a példában, a beszerzési igénylés sorainak munkafolyamata a következő lépéseket tartalmazza:
 
 1.  A készítő benyújt egy beszerzési igénylést ellenőrzésre. Minden sor ahhoz az ellenőrhöz kerül, aki részére az a munkafolyamat folyamatában konfigurálásra kerül.
@@ -107,8 +105,7 @@ Kiadásellenőröket a **Beszerzési igénylési kiadásellenőrök** oldalon tu
 
 A valamely munkafolyamatban beállított kiadásellenőrök használatához be kell állítania a **Résztvevő típusa** lehetőséget **Kiadások résztvevői** értékre kell állítania az érintett munkafolyamat összetevőre vonatkozó **Hozzárendelési** jellemzők között.
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Felhasználási igénylés létrehozása](tasks/create-requisition-consumption.md)
 
@@ -120,3 +117,6 @@ A valamely munkafolyamatban beállított kiadásellenőrök használatához be k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

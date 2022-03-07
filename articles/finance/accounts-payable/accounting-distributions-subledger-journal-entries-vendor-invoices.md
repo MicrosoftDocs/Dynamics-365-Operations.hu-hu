@@ -1,26 +1,28 @@
 ---
 title: Könyvelési felosztások és naplóbejegyzések szállítói számlákhoz
 description: A könyvelési felosztások használatával lehet meghatározni, hogy hogyan lesz az összeg elszámolva, például hogyan lesznek könyvelve a kiadások, adó és költségek a szállítói számlán. Minden összegnek, amelyet könyvelni kell, amikor a szállítói számla naplózva van egy vagy több könyvelési felosztása van.
-author: sunfzam
-ms.date: 02/18/2022
+author: abruer
+manager: AnnBe
+ms.date: 08/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendEditInvoice
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.custom: 26891
 ms.assetid: 93dc608a-b5b4-4ec3-83c2-618e3d80a583
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fecdafe8765121d6d54389a70e6c2e497a03611a
-ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
-ms.translationtype: MT
+ms.openlocfilehash: da15f27c7fef6367eacc83271419b633c0cbb245
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "8325968"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5012288"
 ---
 # <a name="accounting-distributions-and-journal-entries-for-vendor-invoices"></a>Könyvelési felosztások és naplóbejegyzések szállítói számlákhoz
 
@@ -28,7 +30,8 @@ ms.locfileid: "8325968"
 
 A könyvelési felosztások használatával lehet meghatározni, hogy hogyan lesz az összeg elszámolva, például hogyan lesznek könyvelve a kiadások, adó és költségek a szállítói számlán. Minden összegnek, amelyet könyvelni kell, amikor a szállítói számla naplózva van egy vagy több könyvelési felosztása van. 
 
-## <a name="accounting-distributions"></a>Könyvelési felosztások 
+<a name="accounting-distributions"></a>Könyvelési felosztások 
+-------------------------
 
 A következő gombokat használhatja a Szállítói számla oldalon a szállítói számlán szereplő minden összeg könyvelési felosztásának megtekintéséhez és lehetséges módosításához.
 -   **Összegek felosztása** – Egy bizonyos sorhoz és alsorokhoz, például az adókhoz és díjakhoz tartozó könyvelési felosztások megtekintése és módosítása. Megtekintheti és módosíthatja a könyvelési felosztásokat az alárendelt sorra vonatkozóan a Forgalmi adó tranzakciók vagy a Költségtranzakciók lapon is.
@@ -62,7 +65,7 @@ Szállítói számla bevitelekor minden összeg felosztása a következőképpen
 <td>Raktározott termék</td>
 <td><ol>
 <li>Könyvelési felosztások a beszerzési rendelési sorhoz.</li>
-<li>A **Fő számla mező**, amikor a Feladás lapon be van jelölve a Termék beszerzési **kiadása** beállítás.</li>
+<li>A Fő számla mezője, a Feladás lap termékre vonatkozó Beszerzési kiadás lehetőségének kijelölésekor.</li>
 </ol></td>
 <td><ol>
 <li>Ha a számlasor beszerzési rendelés-sorra hivatkozik, használja a könyvelési felosztást a beszerzési rendelési sorhoz.</li>
@@ -73,35 +76,35 @@ Szállítói számla bevitelekor minden összeg felosztása a következőképpen
 <td>Beszerzési kategória vagy termék, amelyet nem tartanak készleten</td>
 <td><ol>
 <li>A könyvelési felosztás a beszerzési rendelési sorhoz, ha a szállítói számlasor hivatkozik a beszerzési rendelési sorra.</li>
-<li>A **Fő számla mező**, amikor a Kiadás beszerzési kiadása beállítás van kiválasztva a Feladás **lapon**.</li>
+<li>A Fő számla mezője, a Feladás lap kiadásra vonatkozó Beszerzési kiadás lehetőségének kijelölésekor.</li>
 </ol></td>
 <td><ol>
 <li>Ha a számlasor beszerzési rendelés-sorra hivatkozik, használja a könyvelési felosztást a beszerzési rendelési sorhoz.</li>
 <li>Ha a fő számla felosztási számla, akkor használja az alapértelmezett értéket a felosztási számla meghatározásából.</li>
 <li>Alapértelmezett pénzügyi dimenzió értékeinek használata a szállítói számlán.</li>
 <li>Használja a pénzügyi dimenzió értéket a szállítói számlasorból.</li>
-<li>A fő számla alapértelmezett pénzügyi dimenzióértékének használata a Számlatükre **lapon**.</li>
+<li>Használja az alapértelmezett pénzügyi dimenzió értékeket a fő számláról a Számlatükör oldalon.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Tárgyi eszköz</td>
 <td><ol>
 <li>A könyvelési felosztás a beszerzési rendelési sorhoz, ha a szállítói számlasor hivatkozik a beszerzési rendelési sorra.</li>
-<li>Ha **a Beszerzés** beállítás **van** **megjelölve** a Szállítói számla lap Tranzakciótípus mezőjében, **a Fő számla** **·** **mezőben, amikor a Beszerzés beállítást választja a Tárgyi eszköz feladási profilja** lapon.</li>
-<li>Ha **a Tranzakciótípus** **mezőben** a Beszerzés helyesbítése beállítás van megjelölve, **·** **·** **akkor a Fő számla mezőben, amikor a Tárgyi eszköz feladási profilja lapon be van jelölve a Beszerzés helyesbítése** beállítás.</li>
+<li>Ha a Beszerzés ki van jelölve a Tranzakció típusa mező a Szállítói számla képernyőn, ha a Fő számla mező, amikor a Tárgyi eszköz feladási profilok lapján a Beszerzés van kiválasztva.</li>
+<li>Ha a Beszerzés módosítás ki van jelölve a Tranzakció típusa mezőben, a Fő számla mező, amikor a Tárgyi eszköz feladási profilok lapján a Beszerzés módosítás van kiválasztva.</li>
 </ol></td>
 <td><ol>
 <li>Használja a könyvelési felosztást a beszerzési rendelési sorra, ha a számlasor hivatkozik a beszerzési rendelési sorra.</li>
 <li>Használja a pénzügyi dimenzió értéket a szállítói számlasorból.</li>
-<li>A fő számla alapértelmezett pénzügyi dimenzióértékének használata a Számlatükre **lapon**.</li>
+<li>Használja az alapértelmezett pénzügyi dimenzió értékeket a fő számláról a Számlatükör oldalon.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>A szállítói számlasoron meghatározott projekt</td>
 <td><ol>
 <li>Könyvelési felosztás a beszerzési rendelési sorra, ha a számlasor hivatkozik a beszerzési rendelési sorra.</li>
-<li>Ha az Egyenleg beállítás van **megjelölve a Projektcsoportok lap Költség feladása -** **cikk** mezőjében, **·** **·** **a Fő számla mezőben, amikor a Költség beállítási lapon a Költség beállítás van megjelölve.** **·**</li>
-<li>Ha **az Eredmény** **beállítás van megjelölve a Projektcsoportok lap Költség feladása -** **cikk** mezőjében, **·** **akkor a Fő számla mezőben, amikor a Költség - cikk beállítás van** **kiválasztva a Főkönyvi feladás beállítása lapon.**</li>
+<li>Ha az Egyenleg van megadva a Költségek feladásánál - cikkmező a Projektcsoportok lapon, a Fő számlák mezője, amikor a Költség van megadva a Főkönyvi feladás beállítása oldalon.</li>
+<li>Ha az Eredmény van megadva a Költségek feladásánál - cikkmező a Projektcsoportok lapon, a Fő számlák mezője, amikor a Költség - cikk van megadva a Főkönyvi feladás beállítása oldalon.</li>
 </ol></td>
 <td><ol>
 <li>Ha a számlasor beszerzési rendelés-sorra hivatkozik, használja a könyvelési felosztást a beszerzési rendelési sorhoz.</li>
@@ -111,18 +114,18 @@ Szállítói számla bevitelekor minden összeg felosztása a következőképpen
 <td>Sorengedmény</td>
 <td><ol>
 <li>Könyvelési felosztás a beszerzési rendelési sorra, ha a számlasor hivatkozik a beszerzési rendelési sorra.</li>
-<li>A **Fő számla mező**, ha **az** engedmény ki van választva a Feladás **lapon**.</li>
+<li>A Fő számlák mezője, amikor Feladás lapján az Engedmény van kijelölve.</li>
 <li>Ha a fő számla az engedményhez nincs meghatározva a feladási profilon, a beszerzési rendelési soron a kiterjesztett ár könyvelési felosztását kell megtekinteni.</li>
 </ol></td>
 <td><ol>
 <li>Ha a számlasor hivatkozik a beszerzési rendelés-sorra, használja a könyvelési felosztást a beszerzési rendelési sorhoz.</li>
 <li>Használja a pénzügyi dimenziókat a kiterjesztett árhoz tartozó könyvelési felosztásokból a szállítói számlán.</li>
 <li>Használja a pénzügyi dimenzió értékeket a szállítói számlasorhoz.</li>
-<li>A fő számla alapértelmezett pénzügyi dimenzióértékének használata a Számlatükre **lapon**.</li>
+<li>Használja az alapértelmezett pénzügyi dimenzió értékeket a fő számláról a Számlatükör oldalon.</li>
 </ol></td>
 </tr>
 <tr class="even">
-<td>A beszerzési rendelési sor **Ár** és engedmény lapján megadott beszerzési költség</td>
+<td>Beszerzési költség, amely megjelenik a beszerzési rendelési sor Ár és engedmény lapján</td>
 <td><ol>
 <li>Könyvelési felosztás a beszerzési rendelési sorra, ha a számlasor hivatkozik a beszerzési rendelési sorra.</li>
 <li>A kiterjesztett ár könyvelési felosztása a beszerzési rendelési soron.</li>
@@ -136,21 +139,21 @@ Szállítói számla bevitelekor minden összeg felosztása a következőképpen
 <td>Sorköltség</td>
 <td><ol>
 <li>Könyvelési felosztás a beszerzési rendelési sorra, ha a számlasor hivatkozik a beszerzési rendelési sorra.</li>
-<li>Ha **a** Költségkód **lap Tartozik típus** **mezőjében** a Főkönyvi számla beállítás van megjelölve, **·** **a Költségkód lap Tartozik számla mezője.**</li>
-<li>Ha **a Költségkód** **lap Terheléstípus mezőjében** **a** Cikk beállítást választotta, a beszerzési rendelés sorának kiterjesztett árára vonatkozó könyvelési felosztás.</li>
-<li>Ha **a Költségkód lap Tartozik típus** **mezőjében** a Vevő/**szállító** beállítás van megjelölve, **·** **akkor a Költségkód lap Követel számla mezője.**</li>
+<li>Ha a Főkönyvi számla van megadva a terhelési Típus mezőben a Költségek kód képernyőn, a terhelési Számla mező a Költségkód oldalon.</li>
+<li>Ha a Cikk van kiválasztva a tartozási Típus mezőben a Költségkód képernyőn, a könyvelési felosztás a kiterjesztett árra a beszerzési rendeléssoron.</li>
+<li>Ha a Vevő/szállító van megadva a terhelési Típus mezőben a Költségek kód képernyőn, a követelési Számla mező a Költségkód oldalon.</li>
 </ol></td>
 <td><ol>
 <li>Ha a számlasor beszerzési rendelés-sorra hivatkozik, használja a könyvelési felosztást a beszerzési rendelési sorhoz.</li>
 <li>Használja a pénzügyi dimenziókat a kiterjesztett árhoz tartozó könyvelési felosztásokból a szállítói számlán.</li>
 <li>Használja a pénzügyi dimenzió értéket a szállítói számlasorból.</li>
-<li>A fő számla alapértelmezett pénzügyi dimenzióértékének használata a Számlatükre **lapon**.</li>
+<li>Használja az alapértelmezett pénzügyi dimenzió értékeket a fő számláról a Számlatükör oldalon.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Adó, a következő feltétellel:
 <ul>
-<li>A Főkönyvi **paraméterek lapon be van jelölve az Amerikai Egyesült Államok adózási szabályainak alkalmazása** beállítás.</li>
+<li>Az Egyesült Államok adózási szabályainak alkalmazása lehetőség beállítása van kiválasztva a Főkönyvi paraméterek lapon.</li>
 </ul></td>
 <td><ol>
 <li>Könyvelési felosztás a beszerzési rendelési sorra, ha a számlasor hivatkozik a beszerzési rendelési sorra.</li>
@@ -165,68 +168,69 @@ Szállítói számla bevitelekor minden összeg felosztása a következőképpen
 <tr class="odd">
 <td>Adó, a következő feltételekkel:
 <ul>
-<li>A Főkönyvi paraméterek lapon törölve van az Amerikai Egyesült **Államok adózási szabályainak alkalmazása** beállítás.</li>
-<li>Az **áfacsoporthoz** használt áfa mező üresen van az Áfacsoportok **lapon**.</li>
+<li>Az Egyesült Államok adózási szabályainak alkalmazása lehetőség ki van törölve a Főkönyvi paraméterek lapon.</li>
+<li>Az Importadó mező az áfacsoportnál bejelölve, a Forgalmiadó-csoportok lapon.</li>
 </ul></td>
 <td><ol>
-<li>Ha vissza lehet állítani az adóösszeget, **·** **akkor** a Főkönyvi feladási csoportok lapon található Visszakövetelés mezője használható.</li>
+<li>Visszaigényelhető adó esetén a Visszaigényelhető áfa mező a Főkönyvi feladási csoportok lapon.</li>
 <li>Ha az adó összege nem visszatéríthető, a kiterjesztett ár vagy a könyvelési felosztás a költséghez.</li>
 </ol></td>
 <td><ol>
 <li>Ha a számlasor beszerzési rendelés-sorra hivatkozik, használja a könyvelési felosztást a beszerzési rendelési sorhoz.</li>
 <li>Használja a pénzügyi dimenziókat a kiterjesztett árból vagy a költséghez tartozó könyvelési felosztásokból a szállítói számlasoron.</li>
 <li>Használja a pénzügyi dimenzió értéket a szállítói számlasorból.</li>
-<li>A fő számla alapértelmezett pénzügyi dimenzióértékének használata a Számlatükre **lapon**.</li>
+<li>Használja az alapértelmezett pénzügyi dimenzió értékeket a fő számláról a Számlatükör oldalon.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Adó, a következő feltételekkel:
 <ul>
-<li>A Főkönyvi paraméterek lapon törölve van az Amerikai Egyesült **Államok adózási szabályainak alkalmazása** beállítás.</li>
-<li>Az **áfacsoporthoz** használt áfa mező be van jelölve az Áfacsoportok **lapon**.</li>
+<li>Az Egyesült Államok adózási szabályainak alkalmazása lehetőség ki van törölve a Főkönyvi paraméterek lapon.</li>
+<li>Az Importadó mező az áfacsoportnál be van jelölve a Forgalmiadó-csoportok lapon.</li>
 </ul></td>
 <td><ol>
-<li>Ha vissza lehet állítani az adóösszeget, **·** **akkor** a Főkönyvi feladási csoportok lapon található Visszakövetelés mezője használható.</li>
-<li>Ha az adóösszeg nem állítható vissza, akkor **a Főkönyvi feladási csoportok oldal Áfaköltség** **használata mezője használható**.</li>
+<li>Visszaigényelhető adó esetén a Visszaigényelhető áfa mező a Főkönyvi feladási csoportok lapon.</li>
+<li>Ha az adó nem igényelhető vissza, az Importadó költsége mező így néz ki a Főkönyvi feladási csoportok lapon.</li>
 </ol></td>
 <td><ol>
 <li>Ha a számlasor beszerzési rendelés-sorra hivatkozik, használja a könyvelési felosztást a beszerzési rendelési sorhoz.</li>
 <li>Használja a pénzügyi dimenziókat a kiterjesztett árból vagy a költséghez tartozó könyvelési felosztásokból a szállítói számlasoron.</li>
 <li>Használja a pénzügyi dimenzió értéket a szállítói számlasorból.</li>
-<li>A fő számla alapértelmezett pénzügyi dimenzióértékének használata a Számlatükre **lapon**.</li>
+<li>Használja az alapértelmezett pénzügyi dimenzió értékeket a fő számláról a Számlatükör oldalon.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Fejlécdíj</td>
 <td><ol>
-<li>Ha **a Főkönyvi** számla a **Költségek kódlap** Tartozik típus **mezőjében** van kiválasztva, akkor a **Költségek kódlap** Tartozik számla **mezője**.</li>
-<li>Ha **a Vevő/szállító** a **Költségek kódlap** Tartozik típus **mezőjében** van kiválasztva, akkor a **Költségek kódlap** Hitelszámla **mezője**.</li>
+<li>Ha a Főkönyvi számla van megadva a terhelési Típus mezőben a Költségek kód képernyőn, a terhelési Számla mező a Költségkód oldalon.</li>
+<li>Ha a Vevő/szállító van megadva a terhelési Típus mezőben a Költségek kód képernyőn, a követelési Számla mező a Költségkód oldalon.</li>
 </ol></td>
 <td><ol>
 <li>Ha a számlasor beszerzési rendelés-sorra hivatkozik, használja a könyvelési felosztást a beszerzési rendelési sorhoz.</li>
 <li>Ha a fő számla felosztási számla, akkor használja az alapértelmezett értéket a felosztási számla meghatározásából.</li>
 <li>Használja a pénzügyi dimenzió alapértelmezett sablon értékeket a szállítói számla fejlécéből.</li>
 <li>Használja a pénzügyi dimenzió értéket a szállítói számlasorból.</li>
-<li>A fő számla alapértelmezett pénzügyi dimenzióértékének használata a Számlatükre **lapon**.</li>
+<li>Használja az alapértelmezett pénzügyi dimenzió értékeket a fő számláról a Számlatükör oldalon.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Fejléc-engedmény</td>
 <td><ol>
-<li>Az **Automatikus tranzakciók számlái lap Szállítói számlaengedmény feladási típusának** **Fő számla** mezője **·**.</li>
+<li>A Fő számla mezője a Szállítói számla engedményének feladási típusához a Számlák automatikus tranzakciókhoz lapon.</li>
 </ol></td>
 <td><ol>
 <li>Ha a számlasor beszerzési rendelés-sorra hivatkozik, használja a könyvelési felosztást a beszerzési rendelési sorhoz.</li>
 <li>Használja a pénzügyi dimenziókat a kiterjesztett árhoz tartozó könyvelési felosztásokból a szállítói számlán.</li>
 <li>Használja a pénzügyi dimenzió értéket a szállítói számlasorból.</li>
-<li>A fő számla alapértelmezett pénzügyi dimenzióértékének használata a Számlatükre **lapon**.</li>
+<li>Használja az alapértelmezett pénzügyi dimenzió értékeket a fő számláról a Számlatükör oldalon.</li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
 
-## <a name="distributing-taxes"></a>Adók elosztása
+<a name="distributing-taxes"></a>Adó elosztása
+------------------
 
 Az adókra vonatkozó könyvelési felosztások nem hozhatók létre, amíg az adókat ki nem számítja. Forgalmi adó kiszámításához fejezzen be egyet a következő feladatok közül a Szállítói számla lapon:
 -   Számla végösszegének megtekintése.
@@ -245,6 +249,3 @@ Ha az analitikus napló bejegyzése helytelen, amikor megtekinti azt a szállít
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1bd5485727761ac5ab13d44ab0598c5768324e6e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: cbb498b972949b24c70a13ab9e0a7da83079085b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429677"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259554"
 ---
 # <a name="view-stage-reason-codes"></a>Állapot okkódjainak megjelenítése 
 
@@ -45,3 +44,6 @@ Megtekintheti és módosíthatja a fokozati okok listáját egy szervizrendelés
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

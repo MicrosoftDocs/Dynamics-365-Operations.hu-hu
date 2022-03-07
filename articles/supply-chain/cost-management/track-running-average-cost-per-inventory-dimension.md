@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: InventOnhandItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 75053
 ms.assetid: 68cc00f4-0f7a-4a7d-be90-8f2e0d0563d3
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c380b7749a55cd151655def372cf91585c263b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b2bf04a42edf09c35e81742b1c60db8944eba2ac
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429593"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252870"
 ---
 # <a name="track-running-average-cost-per-inventory-dimension"></a>Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként
 
@@ -56,3 +55,6 @@ A GW raktárhoz és az AAA adaghoz a mozgóátlagon alapuló önköltségi ár 1
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,30 +1,27 @@
 ---
-title: Tartományok a Dynamics 365 Commerce-alkalmazásban
+title: Tartományok a Dynamics 365 Commerce szolgáltatásban
 description: Ez a témakör azt mutatja be, hogyan kezelhetők a tartományok a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: BrShoo
-manager: AnnBe
-ms.date: 09/03/2020
+ms.date: 03/17/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: cb2b003168d32d05387bd45796d313736b11a41f
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
+ms.openlocfilehash: fb010f5cb70668913b937b73ba05144f0b99549a
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517355"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6356830"
 ---
-# <a name="domains-in-dynamics-365-commerce"></a>Tartományok a Dynamics 365 Commerce-alkalmazásban
+# <a name="domains-in-dynamics-365-commerce"></a>Tartományok a Dynamics 365 Commerce szolgáltatásban
 
 [!include [banner](includes/banner.md)]
 
@@ -41,7 +38,7 @@ Egy e-kereskedelmi rendszernek a [Microsoft Dynamics Lifecycle Services (LCS)](h
 
 A következő ábra a LCS e-kereskedelmi létesítési képernyőt mutatja, ahol a **Támogatott állomásnevek** mező ki van emelve. 
 
-![LCS e-kereskedelmi létesítési képernyőn a **Támogatott állomásnevek** mező kijelölve](./media/Domains_ProvisioningeCommerceScreen.png)
+![Az LCS e-kereskedelmi létesítési képernyőn a **Támogatott állomásnevek** mező kijelölve.](./media/Domains_ProvisioningeCommerceScreen_publish.png)
 
 Szolgáltatási kérelmeket úgy is létrehozhat, hogy további tartományokat adjon hozzá egy környezethez, ha az üzembe helyezés már megtörtént. Szolgáltatási kérelem létrehozásához az LCS-ben a környezeten belül válassza a **Támogatás \> Támogatási problémák** lehetőséget, majd válassza a **Probléma beküldése** elemet.
 
@@ -59,7 +56,7 @@ Amikor először állít be webhelyet a webhelykészítőben megjelenik a **Webh
 
 A következő ábra egy „default” nevű helyhez tartozó **Webhely beállítása** párbeszédpanelt jeleníti meg, amikor a webhelyet első alkalommal nyitja meg a webhelykészítőben.
 
-![**Webhely beállítása** párbeszédpanel](./media/Domains_SetupyoursiteScreen.png)
+![**Webhely beállítása** párbeszédpanel.](./media/Domains_SetupyoursiteScreen.png)
 
 A **Tartomány kiválasztása** mező segítségével hozzárendelheti a webhely által biztosított támogatott állomásnevek egyikét az LCS-ben a weboldalhoz a webhelykészítőben.
 
@@ -82,11 +79,11 @@ Miután a webhely egy elérési úttal be van állítva, a webhelyhez tartozó o
 
 A következő ábra az **Új URL-cím** párbeszédpanelét jeleníti meg a webhelykészítőben, ahol ki van emelve egy példa URL-cím. 
 
-![**Új URL-cím** párbeszédpanel a webhelykészítőben](./media/Domains_PageSetup2a.png)
+![**Új URL-cím** párbeszédpanel a webhelykészítőben.](./media/Domains_PageSetup2a.png)
 
 A következő ábra az **URL-címek** oldalt jeleníti meg a webhelykészítőben, ahol ki van emelve egy példa URL-cím a listában.
 
-![Felhasználói folyamatbeállítás futtatása az irányelvben most](./media/Domains_URLsInSiteBuilder2a.png)
+![Felhasználói folyamatbeállítás futtatása az irányelvben most.](./media/Domains_URLsInSiteBuilder2a.png)
 
 ## <a name="domains-in-site-builder"></a>A webhelykészítő tartományai
 
@@ -154,13 +151,13 @@ A Commerce rendszerbeli Azure Front Door példány nem támogatja a apex-tartom�
 
   [Új e-kereskedelmi bérlő telepítése](deploy-ecommerce-site.md)
 
-  [Online áruház csatornájának beállítása](online-stores.md)
+  [Online áruház csatornájának beállítása](./channel-setup-online.md)
 
   [E-kereskedelmi webhely létrehozása](create-ecommerce-site.md)
 
   [Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
-  [Robots.txt fájlok kezelése](manage-robots-txt-files.md)
+  [robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
   [URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
 
@@ -173,3 +170,6 @@ A Commerce rendszerbeli Azure Front Door példány nem támogatja a apex-tartom�
   [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
 
   [Helyalapú áruházészlelés engedélyezése](enable-store-detection.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

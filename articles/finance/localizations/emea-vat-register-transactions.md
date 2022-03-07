@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: RegisterVAT_W, TaxTable
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 270434
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 8c489a1ffcc63cf1f486c2d6b58599ae2b2c6cf2
-ms.sourcegitcommit: 102c1e998a591a295307c588dfe523cfa750d43c
+ms.openlocfilehash: 71f0a348c41bdc1abc792fcb58ce95ec211ce982
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665492"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5224622"
 ---
 # <a name="vat-register-transactions-for-eastern-europe"></a>Áfatételjegyzék-tranzakciók (Kelet-európa)
 
@@ -34,3 +33,6 @@ Az Észtország, Litvánia, Csehország, Magyarország, Lettország és Lengyelo
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

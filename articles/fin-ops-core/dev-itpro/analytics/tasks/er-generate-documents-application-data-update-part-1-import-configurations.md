@@ -2,11 +2,9 @@
 title: Konfigurációk importálása alkalmazásadatokkal rendelkező dokumentumok létrehozásához
 description: A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/02/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1f919d953c3aa0c8d16366167a12e52d35f32cdf
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: 08ab90d6f53dbb9eabeea3c2cf020792e8957c7b71ed27fc491008fcad114c72
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684619"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727485"
 ---
 # <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Konfigurációk importálása alkalmazásadatokkal rendelkező dokumentumok létrehozásához
 
@@ -75,3 +73,6 @@ Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jel
     * Tekintse át az Intrastat-jelentés elkészítéséhez használt formátum szerkezetét. Megjegyzés: úgy van tervezve, hogy létrehozzon egy XML-fájlt az adatok feltöltésével az adatmodellből, amelynek az alapja „A kimenő dokumentumok” gyökérelem. Győződjön meg arról, hogy a létrehozott fájl neve meg van-e adva a felhasználói párbeszédpanel űrlapon (erre az „fn” adatforrás szolgál).   
 30. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

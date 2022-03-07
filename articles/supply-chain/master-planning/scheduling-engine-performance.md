@@ -2,29 +2,26 @@
 title: Az ütemezési motor teljesítményének javítása
 description: Ez a témakör az ütemezési motorral és a teljesítmény javításával kapcsolatban nyújt tájékoztatást.
 author: ChristianRytt
-manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19311
 ms.assetid: 5ffb1486-2e08-4cdc-bd34-b47ae795ef0f
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1c1b940754021956998fe27ba16020d4b16aedf1
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
-ms.translationtype: HT
+ms.openlocfilehash: 2495339f25469af705cff841f090c5df95b4d996
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429831"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578440"
 ---
 # <a name="improve-scheduling-engine-performance"></a>Az ütemezési motor teljesítményének javítása
 
@@ -69,11 +66,11 @@ Például gondolja át a következő táblázatban és képen látható útvonal
 | 10 | Másodlagos&nbsp;1 | | | | 1 | 20 |
 | 20 | Elsődleges | | 3.00 | 1.00 | 3 | 0 |
 
-![Példaútvonal-diagram](media/scheduling-engine-route.png "Példaútvonal-diagram")
+![Példaútvonal-diagram.](media/scheduling-engine-route.png "Példaútvonal-diagram")
 
 A program ezt a motornak történő elküldésekor nyolc feladatra osztja fel, amint az a következő ábrán látható (válassza ki a képet a nagyításhoz).
 
-[![Motorfeladatok ütemezése](media/scheduling-engine-jobs.png "Ütemezési motor feladatok")](media/scheduling-engine-jobs-large.png)
+[![Motorfeladatok ütemezése](media/scheduling-engine-jobs.png "Motoros munkák ütemezése.")](media/scheduling-engine-jobs-large.png)
 
 A két feladat közötti normál kapcsolat `FinishStart`, amely azt jelenti, hogy egy feladat befejezési időpontjának meg kell előznie egy másik feladat kezdési időpontját. Mivel a beállítást ugyanannak az erőforrásnak kell elvégeznie, amely a folyamatot később végrehajtja, a kettő között `OnSameResource` megszorítások vannak. A 10 elsődleges és másodlagos műveletéhez tartozó feladatok között van `StartStart` és `FinishFinish` hivatkozás van, ami azt jelenti, hogy a feladatoknak ugyanakkor kell kezdődniük és befejeződniük, és `NotOnSameResource` megszorítások is vannak, amelyek megakadályozzák, hogy az elsődleges és a másodlagos erőforrás azonos legyen.
 
@@ -329,3 +326,6 @@ Az **Optimalizálási próbálkozások időtúllépése** határozza meg, hogy l
 
 > [!NOTE]
 > Az időtúllépésekhez beállított értékek a kiadott termelési rendeléseknek és a tervezett rendeléseknek az MRP részeként történő ütemezésére egyaránt vonatkozni fognak. Ennek eredményeként, nagyon magas értékek beállítása, sok tervezett termelési rendelést tartalmazó tervre történő futtatás esetén jelentősen növeli az MRP futásidejét.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

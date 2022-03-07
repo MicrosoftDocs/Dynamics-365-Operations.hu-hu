@@ -2,11 +2,9 @@
 title: Szállítási mód módosítása a pénztárban
 description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni és használni a szállítási mód módosítása műveletet a pénztárban.
 author: hhainesms
-manager: annbe
 ms.date: 03/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: ''
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 6bfe27a7b4a768da00c67e307a0bd7e57b333d11
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: ef778763b26954057b83df3e963e34008819fd208a55d55e07075853ffce8b35
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965427"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714040"
 ---
 # <a name="change-mode-of-delivery-in-pos"></a>Szállítási mód módosítása a pénztárban
 
@@ -33,7 +31,7 @@ A Dynamics 365 Commerce 10.0.10 és a későbbi verziókban **Szállítási mód
 
 A szállítási mód módosítása funkció a pénztári tranzakcióban egy vagy több szállítmányhoz konfigurált értékesítési sor szállítási módjának módosítását teszi lehetővé. A Commerce korábbi verzióiban végig kellett mennie a teljes **Össze szállítása** vagy **Kijelölt szállítása** konfigurációs folyamatokon ha a szállítási módot módosítani szerette volna egy olyan meglévő sorban, amely már be van állítva a szállításhoz. Ez a folyamat időigényes volt, és a sorhoz tartozó szállítási dátumok véletlen módosítását eredményezhette. Az új funkciók alternatív módszert biztosítanak a szállítási mód hatékony frissítésére az értékesítési sorokban.
 
-Ha további tájékoztatást szeretne arról, hogyan lehet hozzáadni egy műveletet a pénztári gombrács egy gombjához, tekintse meg a [Képernyő-elrendezések a pénztár (POS) számára](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) című cikket.
+Ha további tájékoztatást szeretne arról, hogyan lehet hozzáadni egy műveletet a pénztári gombrács egy gombjához, tekintse meg a [Képernyő-elrendezések a pénztár (POS) számára](pos-screen-layouts.md) című cikket.
 
 Ha ez a funkció a pénztárban be van állítva, és a **Szállításimód módosítása** lehetőséget választja, akkor egy lista jelenik meg, amely lehetővé teszi, hogy kiválassza azoknak a tranzakcióknak a sorait, amelyekhez a szállítási módot módosítani szeretné. Egy vagy az összes is kiválaszthatja, illetve módosítás nélkül kiléphet. A korábban szállítmányként konfigurált értékesítési sorok azok a sorok a listában, amelyeket módosíthat. Ha módosítani kívánja a felvételi vagy a kiszállítási sorokat akkor az **Összes szállítása** vagy a **Kijelöltek szállítása** műveleteket kell használnia. Ha viszont a szállítmányként kijelölt sort egy felvételi vagy kiszállításra szeretné módosítani, akkor az **Összes felvétele**, a **Kijelöltek felvétele**, **Összes kiszállítása** vagy **Kijelöltek kiszállítása** műveleteket kell választania.
 
@@ -46,3 +44,6 @@ Miután kiválasztotta az új szállítási módot, megjelenik a tranzakció lap
 [Hívásközponti rendelések létrehozása](tasks/create-call-center-orders.md)
 
 [Tranzakciós e-mailek testreszabása szállítási mód szerint](customize-email-delivery-mode.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

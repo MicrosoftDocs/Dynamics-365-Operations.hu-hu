@@ -1,12 +1,10 @@
 ---
 title: Formátum módosítása alkalmazásadatokkal rendelkező dokumentumok létrehozásához
-description: 'Az eljárás lépéseinek elvégzéséhez először hajtsa végre az „ER – Dokumentumok létrehozása alkalmazásadat-frissítéssel (3. rész: Modell és hozzárendelés módosítása)” eljárást.'
+description: Ez a témakör egy elektronikus dokumentumot létrehozó és alkalmazásadatokat frissítő jelentéskészítési konfigurációk megtervezését mutatja be.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7dfa8fcb3525876da66659fe3bd8bbe3b81a37a3
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: 312a49fc524cc7359d2c1815597214656df11c018034da384d30bfb9d9efee4b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752411"
 ---
 # <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Formátum módosítása alkalmazásadatokkal rendelkező dokumentumok létrehozásához
 
@@ -149,3 +147,6 @@ Az eljárás lépései az elektronikus dokumentumot létrehozó elektronikus jel
 46. Zárja be a lapot.
 47. Zárja be a lapot.
 48. Zárja be a lapot.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

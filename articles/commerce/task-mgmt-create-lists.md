@@ -2,35 +2,30 @@
 title: Feladatlisták létrehozása és feladatok hozzáadása
 description: Ez a témakör bemutatja, hogy hogyan lehet feladatlistákat létrehozni, és feladatokat adni azokhoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 02/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 1cab31784db9f3242dce20e98762088436a5a8f8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 2e6bd69435ee8fe58dbbf66eb0c5eee3d2ec09ee1998ef0218cdef643522c5bf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756525"
 ---
 # <a name="create-task-lists-and-add-tasks"></a>Feladatlisták létrehozása és feladatok hozzáadása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör bemutatja, hogy hogyan lehet feladatlistákat létrehozni, és feladatokat adni azokhoz a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A *feladat* egy meghatározott munkát vagy egy műveletet határoz meg, amelyet valakinek el kell végeznie a megadott esedékességi dátumig vagy azt megelőzően. A Dynamics 365 Commerce alkalmazásban egy feladathoz a kapcsolattartóval kapcsolatos részletes utasítások és információk is tartozhatnak. Tartalmazhat a háttérben történő irodai műveletekre, pénztári (POS) műveletekre vagy a webhelyoldalakra mutató hivatkozásokat is, amelyek segítségével javíthatja a termelékenységet, és egy kontextust adhat meg, hogy a feladat tulajdonosa hatékonyan végezhesse el a feladatot.
 
@@ -75,7 +70,7 @@ A feladatok létrehozása közben feladathoz kapcsolódó hivatkozások hozzáad
 
 A következő ábra a **Feladatok szerkesztése** párbeszédpanel feladathivatkozások beállítását mutatja be.
 
-![A feladathivatkozások kiválasztása a feladat szerkesztése párbeszédpanelen](media/HQ-POS-Tasks-Linking.png)
+![A feladathivatkozások kiválasztása a feladat szerkesztése párbeszédpanelen.](media/HQ-POS-Tasks-Linking.png)
 
 ### <a name="configure-a-pos-operation-so-that-it-can-be-linked-to-a-task"></a>A pénztári művelet konfigurálása egy feladathoz való csatolás céljából
 
@@ -93,3 +88,6 @@ A pénztári művelet konfigurálásához egy feladathoz való csatolás céljá
 [Feladatlisták hozzárendelése áruházakhoz vagy alkalmazottakhoz](task-mgmt-assign-lists.md)
 
 [Feladatkezelés a pénztárban](task-mgmt-POS.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

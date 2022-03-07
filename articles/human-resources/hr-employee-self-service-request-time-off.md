@@ -2,15 +2,12 @@
 title: Szabadság kérése
 description: Szabadság kérése a Dynamics 365 Human Resources rendszerben.
 author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b034f3bac7264ff96100396cbb45e5b869765ce8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f8fead1105412e5fe967a19632e1875058f4026c722140eaed056c5412c6558f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418920"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6756100"
 ---
 # <a name="request-time-off"></a>Szabadság kérése
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Dynamics 365 Human Resources rendszerben elküldheti a szabadságra vonatkozó kéréseit, megtekintheti a szabadságának és a távollétének egyenlegét, valamint ellenőrizheti a szabadságra vonatkozó kérések állapotát.
 
@@ -43,9 +42,11 @@ A Dynamics 365 Human Resources rendszerben elküldheti a szabadságra vonatkozó
 
 6. Ha elkészült, válassza a **Küldés** elemet a kérés elküldéséhez. Ellenkező esetben válassza a **Mentés vázlatként** elemet.
 
+Azok az alkalmazottak, akik új szabadságkérelmet nyújtanak be különböző szabadságtípusokat választanak ki a szabadságkérelem létrehozásához. Az egy szabadságkérés részeként kiválasztott összes szabadságtípushoz azonban ugyanazt a szabadságegységet kell választani. Az alkalmazottak megtekinthetik a szabadságegységet az egyes szabadságtípusokhoz a **Távollét kérelmezése** űrlapon.
+
 ## <a name="add-an-attachment-to-an-existing-request"></a>Melléklet hozzáadása egy meglévő kéréshez
 
-Ha egy már létező szabadságkérést frissít, hozzáadhat egy mellékletet. Egy adott dátumhoz tartozó összes vonatkozó kérelmet is megtekintheti. 
+Ha egy már létező szabadságkérést frissít, hozzáadhat egy mellékletet. Egy adott dátumhoz tartozó összes vonatkozó kérelmet is megtekintheti.
 
 ## <a name="view-leave-balances"></a>Szabadságegyenlegek megjelenítése
 
@@ -59,6 +60,21 @@ Ha egy már létező szabadságkérést frissít, hozzáadhat egy mellékletet. 
 
 2. A jóváhagyott szabadságkérelmek megtekintéséhez válassza a **Jóváhagyott szabadság** lehetőséget. A függőben lévő szabadságkérelmek megtekintéséhez válassza a **Szabadságkérelmek** lehetőséget.
 
+## <a name="cancel-time-off-requests"></a>Szabadságkérelmek törlése
+
+1. Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Szabadság megtekintése** lehetőséget a **Szabadságegyenlegek** csempén.
+
+2. A **Szabadság** űrlapon válasszon ki egy vagy több törölni kívánt szabadságot.
+
+3. Kattintson a **Törlés** gombra.
+
+4. A **Törlés részletei** ablakban adjon meg egy megjegyzést, majd válassza a **Küldés** lehetőséget.
+
+   ![Szabadságkérelem törlése.](media/hr-leave-and-absence-cancel.png)
+
 ## <a name="see-also"></a>Lásd még
 
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

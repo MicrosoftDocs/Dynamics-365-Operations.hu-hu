@@ -1,34 +1,33 @@
 ---
 title: Értékesítési rendelés szinkronizálása közvetlenül a Sales szolgáltatás és a Supply Chain Management szolgáltatás között
 description: Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak az értékesítési rendelések közvetlen szinkronizálásához a Dynamics 365 Sales és a Dynamics 365 Supply Chain Management között.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: 3eaa25f0befcff448250ba2cce8e568fa4a4c707
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: eb41a21395a5d115b779e6b1ef71e9eb1176e28e
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429712"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061518"
 ---
 # <a name="synchronization-of-sales-orders-directly-between-sales-and-supply-chain-management"></a>Értékesítési rendelés szinkronizálása közvetlenül a Sales szolgáltatás és a Supply Chain Management szolgáltatás között
 
 [!include [banner](../includes/banner.md)]
+
+
 
 Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelyeket használnak az értékesítési rendelések közvetlen szinkronizálásához a Dynamics 365 Sales és a Dynamics 365 Supply Chain Management között.
 
@@ -36,7 +35,7 @@ Ez a témakör a sablonokat és alapul szolgáló feladatokat mutatja be, amelye
 
 A potenciális ügyfelek készpénzre váltása megoldás az adatszinkronizálás funkción keresztül szinkronizálja az adatokat Supply Chain Management és a Sales példányai között. Az Adatintegrációs szolgáltatásban rendelkezésre álló A potenciális ügyfelek készpénzre váltása sablonok lehetővé teszik a termék-, ügyfél-, kapcsolatfelvételi és eladási számlákra vonatkozó adatok áramlását a Supply Chain Management és a Sales között. A következő ábra bemutatja a Supply Chain Management és a Sales közötti adatszinkronizálást.
 
-[![A potenciális ügyfelek készpénzre váltása adatfolyama](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
+[![A potenciális ügyfelek készpénzre váltása adatfolyama.](./media/prospect-to-cash-data-flow.png)](./media/prospect-to-cash-data-flow.png)
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 
@@ -64,8 +63,8 @@ A következő szinkronizálási feladatok kötelezőek, mielőtt az értékesít
 
 | Ellátásilánc-kezelés  | Értékesítés             |
 |-------------------------|-------------------|
-| CDS értékesítésirendelés-fejlécek | SalesOrders       |
-| CDS értékesítési rendelés sorai   | SalesOrderDetails |
+| Dataverse értékesítési rendelési fejlécek | SalesOrders       |
+| Dataverse értékesítési rendelés sorai   | SalesOrderDetails |
 
 ## <a name="entity-flow"></a>Entitás folyamata
 
@@ -75,7 +74,7 @@ Nem kell rendeléseket létrehoznia a Sales-ben. Ehelyett új értékesítési r
 
 A Supply Chain Management szolgáltatásban a sablonokban lévő szűrők garantálják, hogy csak a vonatkozó értékesítési rendelések szerepelnek a szinkronizálásban:
 
-- A Sales szolgáltatásból származó értékesítési ajánlatban szereplő értékesítési és számlázási vevőnek is szerepelnie kell a szinkronizálásban. A Supply Chain Management szolgáltatásban az **OrderingCustomerIsExternallyMaintained** és az **InvoiceCustomerIsExternallyMaintained** mezők az értékesítési rendelések adatentitásokból való szűrésére szolgálnak.
+- A Sales szolgáltatásból származó értékesítési ajánlatban szereplő értékesítési és számlázási vevőnek is szerepelnie kell a szinkronizálásban. A Supply Chain Management szolgáltatásban az **OrderingCustomerIsExternallyMaintained** és az **InvoiceCustomerIsExternallyMaintained** oszlopok az értékesítési rendelések adattáblákból való szűrésére szolgálnak.
 - Az Értékesítési rendelést a Supply Chain Management szolgáltatásban jóvá kell hagyni. Csak a megerősített értékesítési rendelések vagy magasabb, például **Szállított** vagy **Számlázott** feldolgozási állapotú értékesítési rendelések szinkronizálódnak a Sales szolgáltatásba.
 - Értékesítési rendelés létrehozása vagy módosítása után a Supply Chain Management szolgáltatásban végre kell hajtani az **Eladási összegek számítása** kötegelt feladatot. Csak a kiszámított eladási összeggel rendelkező értékesítési rendelések szinkronizálása történik meg a Sales szolgáltatásba.
 
@@ -103,10 +102,10 @@ Amikor egy értékesítésirendelés-sor szinkronizálódik a Sales szolgáltat�
 
 ## <a name="prospect-to-cash-solution-for-sales"></a>Potenciális vevő értékesítési készpénzfizetési megoldáshoz
 
-Új mezők kerülnek hozzáadásra a **Rendelés** entitáshoz, és megjelennek a lapon:
+Új oszlopok kerülnek hozzáadásra a **Rendelés** táblához, és megjelennek a lapon:
 
 - **Külsőleg karbantartva** – beállítása **Igen**, ha a megrendelés a Supply Chain Management szolgáltatásból érkezik.
-- **Feldolgozás állapota** – a mező a rendelés feldolgozottsági állapotát mutatja a Supply Chain Management szolgáltatásban. A következő értékek állnak rendelkezésre:
+- **Feldolgozás állapota** – az oszlop a rendelés feldolgozottsági állapotát mutatja a Supply Chain Management szolgáltatásban. A következő értékek állnak rendelkezésre:
 
     - **Vázlat** – A megrendelés kezdeti állapota, amikor egy rendelést hoz létre a Sales-ben. A Sales szolgáltatásban csak az ilyen feldolgozási állapotú rendelések szerkeszthetők.
     - **Aktív** – Az állapot, miután a rendelést aktiválták a Sales szolgáltatásban az **Aktiválás** gombbal.
@@ -141,7 +140,7 @@ Az értékesítési rendelés állapota **Aktív** marad annak biztosítására,
 - Lépjen a **Beállítások** &gt; **Adminisztráció** &gt; **Rendszerbeállítások** &gt; **Értékesítés** pontra, és győződjön meg róla, hogy a következő beállításokat használja:
 
     - A **Rendszer díjazási számítási rendszerének használata** beállítás értéke **Igen**.
-    - Az **Engedményszámítási módszer** mező értéke a **Sortétel**.
+    - Az **Engedményszámítási módszer** oszlop értéke a **Sortétel**.
 
 ### <a name="setup-in-supply-chain-management"></a>Beállítások a Supply Chain Management rendszerben
 
@@ -151,10 +150,10 @@ Ha a munkarendelés integrációját is használja, akkor be kell állítania az
 
 1. Válassza az **Értékesítés és marketing** \> **Beállítás** \> **Értékesítési rendelések** \> **Értékesítési forrás** lehetőséget.
 2. Válassza az **Új** elemet új értékesítési forrás létrehozásához.
-3. Az **Értékesítési forrás** mezőbe írjon be egy nevet az értékesítés eredetének, például **SalesOrder**.
-4. A **Leírás** mezőben adjon meg egy leírást, például **Értékesítési munkarendelés**.
+3. Az **Értékesítési forrás** oszlopba írjon be egy nevet az értékesítés eredetének, például **SalesOrder**.
+4. A **Leírás** oszlopba adjon meg egy leírást, például **Értékesítési munkarendelés**.
 5. Jelölje be az **Eredettípus hozzárendelése** négyzetet.
-6. Állítsa az **Értékesítési forrás típusa** mezőt **Értékesítésirendelés-integráció** értékre.
+6. Állítsa az **Értékesítési forrás típusa** oszlopot **Értékesítésirendelés-integráció** értékre.
 7. Válassza a **Mentés** lehetőséget.
 
 ### <a name="setup-in-the-sales-orders-sales-to-supply-chain-management---direct-data-integration-project"></a>Beállítás Értékesítési rendeléseknél (Sales – Supply Chain Management) – Közvetlen adatintegrációs projekt
@@ -181,29 +180,32 @@ Ha a munkarendelés integrációját is használja, akkor be kell állítania az
 ## <a name="template-mapping-in-data-integration"></a>Sablonleképezés az adatintegrátorban
 
 > [!NOTE]
-> A **fizetési feltételek**, **feltételek áruszállítási**, **szállítási feltételek**, **szállítási mód**, és **szállítási mód** mezők nem találhatók meg a alapértelmezett-leképezései. Ezek a mezők megfeleltetéséhez be kell állítania egy adott szervezetek között szinkronizált entitás adatainak értékmegfeleltetések.
+> A **Fizetési feltételek**, **Feltételek áruszállítási**, **Szállítási feltételek**, **Szállítási mód**, és **Szállítási mód** oszlopok nem találhatók meg a alapértelmezett-leképezései. Ezen oszlopok megfeleltetéséhez be kell állítania egy értékmegfeleltetést, amely az adott szervezetek adataira specifikus, amelyek között a tábla szinkronizálódik.
 
 Az alábbi ábrákon sablon hozzárendelést például adatok integrátor megjelenítése.
 
 > [!NOTE]
-> A leképezést mutatja, hogy melyik mezőadatok szinkronizálódnak a Sales – Supply Chain Management irányban, illetve melyek fordítva.
+> A leképezést mutatja, hogy melyik oszlopadatok szinkronizálódnak a Sales – Supply Chain Management irányban, illetve melyek fordítva.
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderheader"></a>Értékesítési rendelések (Supply Chain Management – Sales) – közvetlen: OrderHeader
 
-[![Sablonleképezés az adatintegrátorban](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
+[![Sablonleképezés adatintegrációban, Értékesítési rendelések (Supply Chain Management – Sales) – Közvetlen: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-1.png)](./media/sales-order-direct-template-mapping-data-integrator-1.png)
 
 ### <a name="sales-orders-supply-chain-management-to-sales---direct-orderline"></a>Értékesítési rendelések (Supply Chain Management – Sales) – közvetlen: OrderLine
 
-[![Sablonleképezés az adatintegrátorban](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
+[![Sablonleképezés adatintegrációban, Értékesítési rendelések (Supply Chain Management – Sales) – Közvetlen: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-2.png)](./media/sales-order-direct-template-mapping-data-integrator-2.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderheader"></a>Értékesítési rendelések (Sales – Supply Chain Management) – közvetlen: OrderHeader
 
-[![Sablonleképezés az adatintegrátorban](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
+[![Sablonleképezés adatintegrációban, Értékesítési rendelések (Sales – Supply Chain Management) – Közvetlen: OrderHeader.](./media/sales-order-direct-template-mapping-data-integrator-3.png)](./media/sales-order-direct-template-mapping-data-integrator-3.png)
 
 ### <a name="sales-orders-sales-to-supply-chain-management---direct-orderline"></a>Értékesítési rendelések (Sales – Supply Chain Management) – közvetlen: OrderLine
 
-[![Sablonleképezés az adatintegrátorban](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
+[![Sablonleképezés adatintegrációban, Értékesítési rendelések (Sales – Supply Chain Management) – Közvetlen: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
-[A potenciális ügyfelek készpénzre váltása](prospect-to-cash.md)
+[Potenciális vevők készpénzre váltása](prospect-to-cash.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

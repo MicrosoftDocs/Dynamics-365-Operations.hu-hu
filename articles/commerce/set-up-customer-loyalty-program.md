@@ -2,29 +2,28 @@
 title: Hűség áttekintése
 description: Ez a témakör leírja a hűséggel kapcsolatos képességeket a Dynamics 365 Commerce programban és a kapcsolódó beállítási lépéseket, amelyekkel a kereskedők könnyen elindíthatják hűségprogramjukat.
 author: scott-tucker
-manager: AnnBe
 ms.date: 07/21/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: 16201
+ms.custom:
+- "16201"
+- intro-internal
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 119046ee2b783e6a4b868fff2b1d7a1b59966e7b
-ms.sourcegitcommit: 092ef6a45f515b38be2a4481abdbe7518a636f85
-ms.translationtype: HT
+ms.openlocfilehash: 57512bbd735e26ba31e00518ca8179f2d9b14bc4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4412987"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985162"
 ---
 # <a name="loyalty-overview"></a>Hűség áttekintése
 
@@ -44,7 +43,7 @@ A hűségprogram beállíthatja, hogy a következőket tartalmazza:
 
 Néhány összetevőt be kell állítania ahhoz, hogy a Commerce hűségprogram funkcióját engedélyezhesse. A következő ábra bemutatja a hűségprogram összetevőit és azok egymással való kapcsolódását.
 
-![Hűségbeállítás folyamata](./media/loyaltyprocess.gif "Hűségelemek és azok kapcsolata egymással")
+![Hűségbeállítás folyamata.](./media/loyaltyprocess.gif "Hűségelemek és azok kapcsolata egymással")
 
 ## <a name="loyalty-components"></a>Hűségelemek beállítása
 
@@ -83,15 +82,15 @@ A következő táblázat leírja a folyamatok, amelyeket el kell végezni a hűs
     > [!NOTE]
     > A hűségprogram belül a kereseti szabályok kiegészítő jellegűek. Például ha olyan szabályt hoz létre, amely szerint az arany szintű tagok minden egyes amerikai dollár után 10 pontot kapnak, és létrehoz egy szabályt, amely szerint a „veterán” fiók 5 pont jutalomban részesül minden egyes amerikai dollár, egy veterán, aki tagja is arany szintnek is 15 pontot pontot kap egy dollár után, mivel a vevő mindkét sorra jogosult.. Azonban ha veterán vevő nem volt arany szint tagja, akkor 5 pontot kapna minden egyes dollár után. A csatornák változásainak érvényesítéséhez, futtassa a **Hűségprogramok feldolgozása** és az **1050** (hűségadatok) feladatokat.
     
-    ![Keresetek fiók alapján](./media/Affiliation-based-earning.png "Keresetek fiók alapján")
+    ![Keresetek fiók alapján.](./media/Affiliation-based-earning.png "Keresetek fiók alapján")
 
 - A kiskereskedők sokszor speciális árakat alkalmaznak vevők adott csoportja számára, akikre nem szeretnék alkalmazni a hűségprogramot. Például nagykereskedők vagy munkavállalók, akik speciális árképzésben részesülnek, de hűségpontokat nem kapnak. Gyakran a „fiókok” szolgálnak arra, hogy az ilyen vevőcsoportok speciális árképzésben részesüljenek. Bizonyos vevőcsoportok kizárásához a hűségpontok megkereséséből a kiskereskedő egy vagy több fiókot is megadhat a hűségprogram **Kizárt fiókok** részében. Ezzel a módszerrel kizárt fiókokhoz tartozó vevők már meglévő hűséges tagok, így nem kapnak hűségpontokat a vásárlásaik után. A csatornák változásainak érvényesítéséhez, futtassa a **Hűségprogramok feldolgozása** és az **1050** (hűségadatok) feladatokat.
 
-    ![Kizárt fiókok](./media/Excluded-affiliations.png "Fiókok kizárása hűségpontok szerzéséből")
+    ![Kizárt fiókok.](./media/Excluded-affiliations.png "Fiókok kizárása hűségpontok szerzéséből")
     
 - A pénztár lehetővé teszi a kiskereskedők számára, hogy rugalmas módon vagy fizikai hűségkártyákat használjanak,vagy automatikus hűségkártyaszámokat hozzanak létre. Ahhoz, hogy a hűségkártyák generálása engedélyezve legyen az üzletekben, kapcsolja be a **Hűségkártyaszám létrehozása** lehetőséget az üzlethez társított funkcióprofilban. Online csatornák esetében a kiskereskedők használható a hűségkártyák kiadásához a vevőknek az IssueLoyaltyCard API-t használhatják. Kiskereskedők vagy megadhatnak hűségkártyaszámot az API-nak a hűségkártya létrehozásához vagy a rendszer a Commerce programban beállított hűségkártya-számsorozatot használja. Azonban ha nincs a számsorozat, és a kiskereskedő nem biztosít az API hívása közben a hűségkártyaszámot, egy hibaüzenet jelenik meg.
 
-    ![Hűségkártya létrehozása](./media/Generate-loyalty-card.png "Törzsvásárlói kártya számának automatikus létrehozása")
+    ![Hűségkártya létrehozása.](./media/Generate-loyalty-card.png "Törzsvásárlói kártya számának automatikus létrehozása")
 
 - Megszerzett és beváltott hűségpontokat most már menteni lehet mindegyik tranzakciónál és értékesítési rendeléshez az értékesítési sorral szemben, hogy ugyanaz az összeg legyen visszatéríthető vagy visszavehető a teljes vagy részleges visszaküldés esetén. Ezenkívül a pontok láthatósága az értékesítési sor szintjén a hívásközponti felhasználóknak, lehetőséget biztosít azzal kapcsolatos kérések megválaszolására, hogy az egyes sorokhoz kapcsolódóan hány pont került megszerzésre vagy beváltásra. Ezen módosítás előtt hűségpontok mindig újra kiszámításra kerültek visszaküldés esetén, ennek eredménye eltérő összeg volt az eredetihez képest, a ha keresési vagy beváltási szabályok megváltoztak, illetve a hívásközpont felhasználói sem látták a pontok részletezését. A pontok a **Kártyatranzakciók** alatt tekinthetők meg az egyes hűségkártyák képernyőjén. Ahhoz, hogy ezt a funkciót engedélyezze, kapcsolja be a **Hűségpontok feladása értékesítési soronként** konfigurációt a **Megosztott Commerce paraméterek** \> **Általános** lapon.
 
@@ -102,33 +101,33 @@ A következő táblázat leírja a folyamatok, amelyeket el kell végezni a hűs
 
 Ezenkívül kiskereskedők meghatározhatnak maximális hűségesprogram jutalompont határértéket hűségkártyánként. Ez a mező használatával lehet a hűségesprogram-csalások hatását csökkenteni. Ha elérte a maximális jutalom pontokat, a felhasználó nem szerezhet több pontot. A kereskedő dönthet úgy, hogy az ilyen kártyákat mindaddig letiltja, amíg a potenciális csalást kiviszgálják. Ha kiskereskedő csalást állapít meg, a kiskereskedő blokkolhatja a hűségkártyát a vevő számára, de meg is jelölheti a vevőt zároltként. Ehhez állítsa a **Vevő letiltása hűségprogramba való regisztráció esetén** tulajdonságot **Igen** értékre az **Összes vevő** alatt a **Commerce** gyorslapon. A zárolt vevők nem kaphatnak hűségkártyát bármelyik csatornán keresztül sem.
 
-   ![Hűségpontok átruházása és a maximális megszerzett pont](./media/Vesting-and-maximum-reward-points.png "Hűségpontok átruházásának és a maximális megszerzett pontoknak a definiálása")
+   ![Hűségpontok átruházása és a maximális megszerzett pont.](./media/Vesting-and-maximum-reward-points.png "Hűségpontok átruházásának és a maximális megszerzett pontoknak a definiálása")
 
 - A fiókok használhatók speciális árképzés és engedmények nyújtására, de van néhány fiókok, amelyeket a kiskereskedők nem szeretnék, hogy ügyfeleik lássanak. Például a „Sokat költő vásárló” fiókot előfordulhat, hogy nem fogadnának jól bizonyos vevők. Ezenkívül vannak fiókokok, amelyeket nem kezelnhetnek az az üzletnek, például az alkalmazottak, mert nem szeretné, hogy a pénztárosok eldönthessék, hogy ki alkalmazott, így alkalmazotti alapú engedményeket adjanak. A kiskereskedők most kiválaszthatják a fiókokat, amelyeket el kell rejteni a csatornákon. Az **Elrejtés a csatornákban** módon megjelölt fiókokat nem lehet megtekinteni, hozzáadni vagy eltávolítani a pénztárban. Azonban a fiókhoz társított árképzés és engedmények továbbra is alkalmazva lesznek a termékekre.
 
-    ![Fiókok elrejtése](./media/Hide-affiliations.png "A csatornákban lévő fiókok elrejtése")
+    ![Fiókok elrejtése.](./media/Hide-affiliations.png "A csatornákban lévő fiókok elrejtése")
     
 - A Hívásközpont felhasználók mostantól több könnyen megkereshetnek ügyfeleket a hűségkártya-adatok használatával, és megkereshetik a vevő, hűségkártya és hűségkártya kártya tranzakciók lapjait a **Ügyfélszolgálat** oldalon.
 
-    ![Ügyfélszolgálat](./media/Customer-service.png "Hűségadatok keresése a vevőhöz")
+    ![Ügyfélszolgálat.](./media/Customer-service.png "Hűségadatok keresése a vevőhöz")
     
 - A hűségkártya sérülése esetén cserekártya kell hozható létre, és a meglévő pontok átvihetők az új kártyára. Ebben a verzióban a cserekártya-folyamat egyszerűbbé vált. Mindemellett a vásárlók elajándékozhatják hűségpontjaikat vagy azok egy részét barátaiknak és családjuknak Pontok átmozgatáskor pontkiigazítási bejegyzések készülnek minden hűségkártyához. A cserekártya és egyenlegátvitel funkciók a **Hűségkártyák** oldalon érhetők el.
 
-    ![Csere és pontok átvitele](./media/Replace-and-transfer-points.png "Törzsvásárlói kártya vagy átmozgatási egyenleg pótlása")
+    ![Csere és pontok átvitele.](./media/Replace-and-transfer-points.png "Törzsvásárlói kártya vagy átmozgatási egyenleg pótlása")
     
 - Előfordulhat, hogy a kiskereskedők szeretnék rögzíteni egy adott csatorna hatékonyságát hogy egy hűségprogramba vegyenek fel vásárlókat. A hűségkártyák belépési forrása mostantól tárolva van, így a kiskereskedők jelentéseket futtathatnak ezeken az adatokon. A jogosultságok forrás automatikusan rögzítve van az összes a kiadott hűségkártyához a MPOS/CPOS vagy elektronikus kereskedelmi csatornákból. A back-office alkalmazásból kiadott hűségkártyák esetében a hívásközpont kiválaszthatja a megfelelő csatornát.
 - A korábbi kiadásokban kiskereskedők az MPOS/CPOS rendszert használhatták a hűségpontok beváltásához a vevők számára az üzletben. Azonban azon kiadásokban a hűségpontok egyenlege hűségpontokban jelenik meg, így a pénztáros sikerült nem tekinthette meg a pénznemérték összegét, amely az aktuális tranzakció felé alkalmazható. A pénztáros a pontokat át kellett váltsa pénznembe mielőtt lehetséges lett volna a fizetés hűségpontokban. A jelenlegi verzióban sorok hozzáadása után a tranzakcióhoz a pénztáros láthatja, hogy mekkora összeget fedeznek a hűségpontok a jelenlegi tranzakcióból amely megkönnyíti hűségpontok vagy azok egy részének beváltását a tranzakcióhoz. Ezenkívül a pénztáros megtekintheti a következő 30 napban lejáró pontokat, így felülértékesítésre vagy keresztértékesítésre van lehetősége, hogy a vásárló elköltse a pontokat a tranzakció során..
 
-    ![Hűségpontok egyenlegével fedezett pontok](./media/Points-covered-by-loyalty-balance.png "Hűségpontokkal fedezett egyenleg megjelenítése")
+    ![Hűségpontok egyenlegével fedezett pontok.](./media/Points-covered-by-loyalty-balance.png "Hűségpontokkal fedezett egyenleg megjelenítése")
 
-    ![Lejáró pontok](./media/Expiring-points.png "Lejáró pontok megtekintése")
+    ![Lejáró pontok.](./media/Expiring-points.png "Lejáró pontok megtekintése")
 
 - A 8.1.3, kiadásban engedélyeztük a „fizetés hűséggel” beállítást a hívásközpont csatornán. A beállítás engedélyezéséhez hozzon létre hűségkártya fizetőeszköz-típust és társítsa a hívásközponttal. 
 
     > [!NOTE]
     > Mivel a hűségalapú kifizetések mint kártyás fizetésként vannak beállítva, ki kell válasszon egy kártyát a **Kártyabeállítások** oldalon. 
 
-    ![Hűségkártya beállítása](./media/LoyaltyCardSetup.png "Hűségkártya beállítása")
+    ![Hűségkártya beállítása.](./media/LoyaltyCardSetup.png "Hűségkártya beállítása")
 
     Ezen beállítást követően a vevők beválthatják hűségpontjaikat a hívásközpontban. Ezenkívül tovább javítjuk az ügyfélélményt a „Hűségpontokkal fedezett összeg” megjelenítésével hogy a hívásközpont felhasználóinak ne kelljen egy másik képernyőre ugorniuk a hűségpontok egyenlegének megtekintéséhez.
 
@@ -145,9 +144,12 @@ Ezenkívül kiskereskedők meghatározhatnak maximális hűségesprogram jutalom
     > Jelenleg a rendszer megköveteli a felhasználóktól, hogy állítsanak be egy számsorozatot az "egyéb tevékenységtípusokhoz", de ez nem lesz szükséges lépés a jövőbeli kiadásokban. Számsorozat beállításához kattintson a **Megosztott Commerce paraméterek** \> **Számsorozatok** lehetőségre, és válasszon ki egy számsorozatot a **Hűséghez kapcsolódó egyéb tevékenységtípus azonosítója** elemhez.
 
 - Jó ügyfélszolgálat és a vevők kérdéseinek hatékony megoldásához fontos,hogy a pénztárosok hozzáférjenek a teljes ügyfélprofilhoz. A 10.0 kiadásában és a kapcsolódó hűségkártya programot és a hűségkártya-előzmények részletei láthatók lesznek a POS-ben a pénztárosok számára.
-- Ingyenes vagy kedvezményes szállítás egyike az online vásárlásra motiváló tényezőknek. Ahhoz, hogy a szállítás promóciók beállítását tegyük lehetővé a kiskereskedők számára, a 10.0 kiadásban egy új promóciótípust vezetünk be, amelynek neve „Szállítási küszöbérték kedvezmény” ahol a kereskedő meghatározhat küszöbértékeket, melyek teljesülése esetén az ügyfél jogosulttá válik kedvezményes vagy ingyenes szállításra. Ha például költsön 35 dollárt ingyenes „két napos szállításért” vagy „ingyenes két napos szállítás” minden hűségkártyás ügyfél számára. Ez a funkció az új Speciális automatikus költségek képességre épül. Tekintse át a [Speciális automatikus költségek dokumentációját](https://docs.microsoft.com/dynamics365/unified-operations/retail/omni-auto-charges). Ezeket a speciális automatikus költségeket engedélyezni kell a szállítási promóció működéséhez. Ezek a **Vevői rendelések** lapon a **Commerce paraméterek** oldalon engedélyezhetők, és kapcsolja be a „Speciális automatikus díjak használata” konfigurációt. Mindemellett, mivel a kiskereskedő többféle díjat állíthat be, például a kezelési vagy a telepítési díjakat, a kiskereskedő meg kell adja hogy melyik költség minősül a szállítási költségnek. A szállítási engedmények csak a szállítási költségekre lesznek alkalmazva. Egy díj megadásához szállítási költségként menjen a **Költségkódok** képernyőre a **Retail és Commerce** \> **Retail és Commerce informatika** \> **Csatorna beállítása** \> **Költségek** helyen, és kapcsolja be a „Szállítási költség” jelölőnégyzetet a kívánt költségekhez. Most megnyithatja a **Szállítási küszöbérték szerinti engedmény** képernyőt, és beállíthatja az engedményt.
+- Ingyenes vagy kedvezményes szállítás egyike az online vásárlásra motiváló tényezőknek. Ahhoz, hogy a szállítás promóciók beállítását tegyük lehetővé a kiskereskedők számára, a 10.0 kiadásban egy új promóciótípust vezetünk be, amelynek neve „Szállítási küszöbérték kedvezmény” ahol a kereskedő meghatározhat küszöbértékeket, melyek teljesülése esetén az ügyfél jogosulttá válik kedvezményes vagy ingyenes szállításra. Ha például költsön 35 dollárt ingyenes „két napos szállításért” vagy „ingyenes két napos szállítás” minden hűségkártyás ügyfél számára. Ez a funkció az új Speciális automatikus költségek képességre épül. Tekintse át a [Speciális automatikus költségek dokumentációját](/dynamics365/unified-operations/retail/omni-auto-charges). Ezeket a speciális automatikus költségeket engedélyezni kell a szállítási promóció működéséhez. Ezek a **Vevői rendelések** lapon a **Commerce paraméterek** oldalon engedélyezhetők, és kapcsolja be a „Speciális automatikus díjak használata” konfigurációt. Mindemellett, mivel a kiskereskedő többféle díjat állíthat be, például a kezelési vagy a telepítési díjakat, a kiskereskedő meg kell adja hogy melyik költség minősül a szállítási költségnek. A szállítási engedmények csak a szállítási költségekre lesznek alkalmazva. Egy díj megadásához szállítási költségként menjen a **Költségkódok** képernyőre a **Retail és Commerce** \> **Retail és Commerce informatika** \> **Csatorna beállítása** \> **Költségek** helyen, és kapcsolja be a „Szállítási költség” jelölőnégyzetet a kívánt költségekhez. Most megnyithatja a **Szállítási küszöbérték szerinti engedmény** képernyőt, és beállíthatja az engedményt.
 
     A termékengedményekhez hasonlóan ez az engedmény tiszteletben tartja az összes meglévő szokásos engedményképességet így ezek az engedmények korlátozhatók csak az utalványokra, így csak a utalványok rendelkező vevőket illetik meg ezek az engedmények. Ezek az engedmények támaszkodnak az Árcsoportok képességre az ilyen engedményekre való jogosultságának meghatározásához. Például a kiskereskedő kiválaszthatja, hogy csak az online csatornákon futtatja ezeket a promóciókat, és/vagy csak bizonyos ügyfélcsatornákon keresztül, például hűségkártyás vevők esetében. Miután a rendelési sorokat a megadott szállítási móddal elérik a megállapított küszöbértéket, akkor a szállítási engedmény alkalmazva lesz, és csökkenti a szállítási díjat, az engedmény beállítása alapján. 
 
     > [!NOTE]
     > Egyéb időszakos kedvezményekkel, például a mennyiségi, egyszerű, kombinációs küszöbérzék kedvezményekkel szemben a szállítási engedmény nem hoz létre engedménysorokat, a szállítási díjat hozzáfűzi a a költség leírásához.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

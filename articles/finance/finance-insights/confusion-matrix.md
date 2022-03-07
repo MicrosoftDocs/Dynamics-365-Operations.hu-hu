@@ -2,28 +2,25 @@
 title: Gépi tanulási modellek eredményei (előzetes verzió)
 description: Ez a témakör a zavartság-mátrixokat, az osztályzási problémákat és a gépi tanulási (ML) modellek pontosságát tárgyalja. Az a cél, hogy jobban megértsék az ML előrejelzési eredményeinek pontosságát.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 06/05/2020
+ms.date: 06/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-07-14
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6a1620c33ee1e23a79ef5413afebdee332aa82b6
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: fe652c32df9417f0f716242a24a26eabd1a16f65
+ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645017"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "6193540"
 ---
 # <a name="results-of-machine-learning-models-preview"></a>Gépi tanulási modellek eredményei (előzetes verzió)
 
@@ -37,7 +34,7 @@ Miután a felügyelt ML-es problémát az előzményadatok egy csoportján képe
 
 Például az a cél, hogy valamilyen fizikai és viselkedési tulajdonság alapján megjósolja, hogy egy adott állat éppen kutya vagy macska. Ha van egy tesztadathalmaz, ami 30 kutyát és 20 macskát tartalmaz, akkor a zavartság-mátrix a következő illusztrációra hasonlíthat.
 
-[![Példa a fajok előrejelzésére](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+![Példa a fajok előrejelzésére](media/species-prediction-matrix.png)
 
 A zöld cellákban szereplő számok helyes előrejelzéseket jelentenek. Amint látható, a modell a tényleges macskák számánál magasabb százalékban jósolt helyesen macskákat. A modell teljes pontossága könnyen kiszámítható. Ebben az esetben 42 ÷ 50 vagy 0,84.
 
@@ -47,7 +44,7 @@ A zavartság-mátrixra vonatkozó legtöbb vitát a bináris osztályozók hatá
 
 Ezután fontolóra vesszük egy olyan finanszírozási eset osztályozási problémáját, amelynek három szakasza van. A modell azt jelzi, hogy a vevői számlát időben, késve vagy nagyon későn fizetik ki. Például a 100 tesztszámlából 50 kerül kifizetésre időben, 35 későn, 15 pedig nagyon későn. Ebben az esetben előfordulhat, hogy egy modell zavartság-mátrixot hoz létre, amely a következő illusztrációhoz hasonlít.
 
-[![1. modell](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png) 1. modell
+![1. modell](media/payment-prediction-matrix.png)]
 
 A zavartság-mátrix jóval több adatot tartalmaz, mint egy egyszerű pontossági metrika. Ezt azonban aránylag könnyű megérteni. A zavartság-mátrix azt jelzi, hogy van-e olyan kiegyensúlyozott adathalmaz, amelyben a kimeneti osztályok hasonló számokkal rendelkeznek. A többosztályos forgatókönyv azt jelzi, hogy milyen messze van az előrejelzés, ha a kimeneti osztályok sorban vannak, mint a vevői kifizetésekkel kapcsolatos előző példában.
 
@@ -58,7 +55,7 @@ Mivel a pontosság egy könnyű metrika, így jó kiindulási pont, amellyel elm
 
 Alaposabb megértés érdekében azonban több, a pontossághoz kapcsolódó kihívást kell megfigyelni. A metrika hasznossága a probléma környezetén múlik. A modell teljesítményével kapcsolatban gyakran felmerülő kérdés: „Mennyire jó a modell?” Erre a kérdésre azonban nem feltétlenül egyszerű a válasz. Vegye figyelembe a következő zavartság-mátrixot (2. modell).
 
-[![Fizetési előrejelzési példa nagyobb mintával](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![Fizetési előrejelzési példa nagyobb mintával](media/payment-prediction-matrix-2.png)
 
 Egy gyors számítás azt jelzi, hogy a modell pontossága (70 + 10 + 3) ÷ 100 vagy 0,83. A felszínen ez az eredmény jobbnak tűnik, mint az előző többosztályos modell (1. modell) eredménye, amelynek pontossága 0,73. De jobb-e?
 
@@ -66,8 +63,8 @@ A kérdés elkezdéséhez a naiv becslés pontosságát kell figyelembe venni. A
 
 Egy másik szempontot is érdemes megjegyezni. Gondoljon egy olyan forgatókönyvre, amikor egy orvosi tesztet használnak egy páciens betegségének kimutatására. Ez a probléma egy bináris besorolási probléma, ahol a pozitív eredmény azt jelzi, hogy a páciens beteg. Ebben a forgatókönyvben a következő hibák hatásait kell megfontolni:
 
-- Hamis pozitív, amikor a teszt azt mutatja, hogy a páciens beteg, de valójában nem is az
-- Hamis negatív, amikor a teszt azt mutatja, hogy a páciens nem beteg, de valójában az
+- Hamis pozitív, amikor a teszt azt mutatja, hogy a páciens beteg, de valójában nem is az.
+- Hamis negatív, amikor a teszt azt mutatja, hogy a páciens nem beteg, de valójában az.
 
 Nyilvánvalóan egy típusú hiba sem kívánatos, de melyik a rosszabb? Ez ismét a helyzettől függ. Abban az esetben, ha egy életveszélyes betegség gyors kezelést igényel, a hamis negatívok minimalizálása (remélhetőleg további teszteket is elvégeznek) élvez prioritást. Más, kevésbé kritikus helyzetek esetén a modell létrehozói csökkenthetik a hamis pozitív értéket. Egy észszerű következtetés szerint a modell minőségi meghatározásához több információra van szükség, mint a pontossági metrika.
 
@@ -103,7 +100,7 @@ Az F1-mérték ötvözi a precizitást és a visszahívást. Az eredmény a két
 
 Nézzünk meg egy konkrét példát. Ez a témakör korábban egy olyan modellt mutatott be, amely azt jelezte előre, hogy egy állat kutya vagy macska-e. A program itt ismétli meg az ábrát.
 
-[![Példa a fajok előrejelzésére](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
+[![Példa a fajok előrejelzésére (ismétlés)](./media/species-prediction-matrix.png)](./media/species-prediction-matrix.png)
 
 Ezek az eredmények, ha a „kutya” a pozitív válasz.
 
@@ -115,11 +112,11 @@ Amint látható, az F1 érték a pontosság és a visszahívás értékei közö
 
 Bár az F1 pontosságát nem könnyű megérteni, árnyaltságot ad az alapszintű pontossági számnak. Ezenkívül segíthet a kiegyenlítetlen adathalmazok esetében is, ahogy azt a következő beszélgetés is mutatja.
 
-Ennek a témakörnek a [Modell pontossága](#classify-machine-learning-accuracy) szakasza a következő két zavartság-mátrixhoz hasonlít. Annak ellenére, hogy az első modellnél alacsonyabb a pontosság, hasznosabb modellnek tekintették, mivel nagyobb javulást mutatott, mint a határidős fizetés alapértelmezett becslése.
+Ennek a témakörnek a [Modell pontossága](#model-accuracy) szakasza a következő két zavartság-mátrixhoz hasonlít. Annak ellenére, hogy az első modellnél alacsonyabb a pontosság, hasznosabb modellnek tekintették, mivel nagyobb javulást mutatott, mint a határidős fizetés alapértelmezett becslése.
 
-[![Fizetés előrejelzése és a tényleges példa](./media/payment-prediction-matrix.png)](payment-prediction-matrix.png)
+![Fizetés előrejelzése és a tényleges példa](media/payment-prediction-matrix.png)
 
-[![Fizetési előrejelzési példa nagyobb mintával](./media/payment-prediction-matrix-2.png)](payment-prediction-matrix-2.png)
+![Fizetési előrejelzési példa nagyobb mintával (ismétlés)](media/payment-prediction-matrix-2.png)
 
 Lássuk, hogyan lehet összehasonlítani ezt a két modellt az F1-es pontszám használatakor. Az F1-es pontszám a pontosság és az egyes állapotok visszahívása, az F1-es makroszámítás pedig az F1-es pontszám átlagát határozza meg az egyes állapotokban az F1-es pontszám átfogó meghatározásához. Más F1-es változatok is léteznek, de érdekesebb a makroverzió megfontolása, alapul véve mindhárom állapotban megadott egyenlő mértékű odafigyelést.
 
@@ -132,7 +129,7 @@ A számítások egyszerűsítése érdekében a mintatömböket úgy építetté
 
 A számítás működésével kapcsolatos további részleteket a sklearn.metrics osztályozási jelentés az 1. modellhez részben talál. A három „Időben”, „Későn” és „Nagyon későn” állapotot az 1., 2. és 3. címkével ellátott sorok jelölik. A makró átlaga csak az „f1-pontszám” oszlop átlaga.
 
-|           | pontosság | visszahívás   | f1-pontszám |
+| &nbsp;    | pontosság | visszahívás   | f1-pontszám |
 |-----------|-----------|----------|----------|
 | **1**     | 0.83      | 0.80     | 0.82     |
 | **2**     | 0.68      | 0.71     | 0.69     |
@@ -140,5 +137,4 @@ A számítás működésével kapcsolatos további részleteket a sklearn.metric
 
 Ezek az eredmények azt mutatják, hogy a két modellhez közel azonos F1-es makrópontossági pontszám tartozik. Ebben és sok más esetben az F1 pontossága jobban jelzi a modell képességeit. A pontosság érdekében az eredmények értelmezése megköveteli, hogy a modellben figyelembe vegyék a legfontosabb tényezőt.
 
-#### <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
-Az előzetes verziók (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmazhatnak, mint a Dynamics 365 Finance and Operations szolgáltatás (2) és nem vonatkozik a szolgáltatásiszint-szerződés (SLA) ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

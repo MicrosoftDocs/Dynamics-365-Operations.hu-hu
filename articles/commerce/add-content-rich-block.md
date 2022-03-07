@@ -2,35 +2,30 @@
 title: Szövegblokk modul
 description: Ez a témakör a szövegblokkmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c6527ad00e74fa105f3873036eb56557b98b05aa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 9068c35eaeee68f97d81d168983d7281da09491cb0afd70cb8196010ce771b0d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412797"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6723311"
 ---
-# <a name="text-block-module"></a>Szövegblokk modul
+# <a name="text-block-module"></a>Szövegterület-modul
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a szövegblokkmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A szövegblokkmodul egy olyan modul, amely szöveges tartalom hozzáadására használatos. Ez a tartalom lehet tájékoztató vagy promóciós.
 
@@ -47,7 +42,7 @@ A szövegblokkmodulokat a következő módokon lehet használni:
 
 A következő kép egy kezdőoldalon használt szövegblokk modul egy példáját jeleníti meg.
 
-![Példa egy szövegblokk modulra](./media/ecommerce-textblock.PNG)
+![Példa egy szövegterület-modulra.](./media/ecommerce-textblock.PNG)
 
 ## <a name="text-block-module-properties"></a>Szövegblokk modul tulajdonságai
 
@@ -89,3 +84,6 @@ A szövegblokkmodul új oldalra való felvételéhez és a kötelező tulajdons�
 
 [Videólejátszó modul](add-video-player.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

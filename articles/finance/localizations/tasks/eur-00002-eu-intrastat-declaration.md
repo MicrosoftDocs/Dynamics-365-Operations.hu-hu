@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport, IntrastatParameters, IntrastatCommodityLookup, IntrastatCompressParameters, Intrastat, SysQueryForm
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: anasyash
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e2aba5caaaf0fbee511e1a293b09fa8301bb6831
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f42f7dbb22300f31b10ece9a44a563c8d438b50b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408051"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5228030"
 ---
 # <a name="eur-00002-generate-an-eu-intrastat-declaration"></a>EUR 00002 Az EU Intrastat nyilatkozat létrehozása
 
@@ -58,7 +57,7 @@ Ez az eljárás a DEMF bemutatócég segítségével lett létrehozva.
     * Adja meg a kerekítési pontosságot, például adja meg a „0,01” értéket.  
 7. Adjon meg egy számot Az összeg tizedesjegyeinek száma mezőben.
     * Adja meg például a „2” értéket.  
-8. Válasszon ki egy lehetőséget a Kerekítés 1 kg alatt mezőben.
+8. Válasszon ki egy lehetőséget a Kerekítés 1 kg alatt mezőben.
     * Válassza ki például a „Felkerekítés 1 kg-ra” lehetőséget.  
 9. A Kerekítési szabályok mezőben adjon meg egy számot.
     * Adja meg példáié az „1” a súly kerekítése az egész számhoz.  
@@ -114,3 +113,6 @@ Ez az eljárás a DEMF bemutatócég segítségével lett létrehozva.
     * Válassza ki például a „Feladások” lehetőséget.  
 27. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

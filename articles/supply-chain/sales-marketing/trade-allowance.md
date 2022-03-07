@@ -2,26 +2,23 @@
 title: Promóciós engedmények kezelése
 description: Ez a témakör leírja a promóciós engedmények kezelését a Dynamics 365 Supply Chain Management megoldásban.
 author: t-benebo
-manager: tfehr
 ms.date: 08/17/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: MCRBrokerClaims, MCRBrokerWriteOffReasonPrompt, MCRRoyaltyVendTable, MCRRoyaltyVendTrans, PdsCustRebateGroup, PdsRebateAgreement, TAMCopyTradePromotions, TAMDeduction, TAMDeductionCreate, TAMDeductionDenyReason, TAMDeductionParmDeny, TAMDeductionParmMassUpdate, TAMDeductionParmMatch, TAMDeductionParmSplit, TAMDeductionParmWriteOff, TAMDeductionType, TAMDeductionWriteOffReason, TAMFundManagement, TAMFundUsage, TAMListPage, TAMMarketingObjective, TAMMerchEventType, TAMOneTimePromotion, TAMPromoCompareGraph, TAMPromoStatistic, TAMPromotionAnalysisSummary, TAMPromotionParameters, TAMPromotionPeriod, TAMTemplateListPage, TAMTradePromotionAnalysis, TAMTradePromotions, TAMWhatIfPromotionAnalysis
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 13b665427a4caf206e0a3b3aca6b04c1529b9206
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 51b734e6a94ffdfabb218a19986f1bec65b839e7
+ms.sourcegitcommit: 0cc89dd42c1924ca0ec735c6566bc56b39cc5f7d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429474"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "6102806"
 ---
 # <a name="trade-allowance-management"></a>Promóciós engedmények kezelése
 
@@ -200,3 +197,6 @@ A promóció különböző teljesítmény-mérőszámainak részletesebb analiti
 
 A promóció különböző teljesítmény-mérőszámainak részletesebb analitikai áttekintése érdekében használja az Elemzés nézetet. Az Elemzés nézetet az **Értékesítés és marketing** \> **Kereskedelmi kedvezmények** \> **Kereskedelmi kedvezményszerződések** lehetőségre kattintva érheti el. A Műveletpanelen kattintson az **Elemzés** elemre. 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

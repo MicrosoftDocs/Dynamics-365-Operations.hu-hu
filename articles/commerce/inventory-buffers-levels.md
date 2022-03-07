@@ -2,33 +2,28 @@
 title: A készletpufferek és a készlet szintjeinek konfigurálása
 description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni a készletpuffereket és a készlet szintjét, amelyek meghatározzák a Microsoft Dynamics 365 Commerce webhelyein a készlet elérhetőségével kapcsolatos üzenetküldést.
 author: boycezhu
-manager: annbe
 ms.date: 06/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
 ms.search.region: global
 ms.author: boycez
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.12
-ms.openlocfilehash: ef58dbb756c7bed3924010cb33eff27af66cd0bd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 842389811169f785235de7ac7d9a49ab903f99ddf7d43f139aba0873a2577d72
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412890"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727533"
 ---
-# <a name="configure-inventory-buffers-and-inventory-levels"></a>A készletpufferek és a készlet szintjeinek konfigurálása
+# <a name="configure-inventory-buffers-and-inventory-levels"></a>Készletpufferek és készletszintek konfigurálása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet konfigurálni a készletpuffereket és a készlet szintjét, amelyek meghatározzák a Microsoft Dynamics 365 Commerce webhelyein a készletek elérhetőségével kapcsolatos üzenetküldést.
-
-## <a name="overview"></a>Áttekintés
 
 A Dynamics 365 Commerce központ készletadatokat és különféle csatornákat tartalmaz, mint a pénztár (POS) alkalmazások, az e-Commerce üzletek és más, a készletet aszinkron módon küldő és lehívó egyéni integrált alkalmazások. Ennélfogva a Commerce központ aktuális készlet lapján, a POS felhasználói felületen (UI) és az e-Commerce készletelérhetőségi API-kon keresztül kapott elérhető készletértékek nem mindig 100%-osan pontosak valós időben.
 
@@ -149,3 +144,6 @@ A termékelérhetőségi API-k válaszának konfigurálásához kövesse az alá
 [Készlet beállításainak alkalmazása](inventory-settings.md)
 
 [Kiskereskedelmi csatornák készletelérhetőségének kiszámítása](calculated-inventory-retail-channels.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

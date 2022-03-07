@@ -2,30 +2,29 @@
 title: Áttekintés
 description: A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az Emberi erőforrások beállításáról, az alkalmazottak kompenzációjának és juttatásának beállításáról, valamint a munkaerő kezeléséről.
 author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: EssWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
-ms.custom: 7521
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 32a7ca7c74b3f84519145d26c6e0461f546dbee3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c4ebbdaa3aa95de0253a70b63ce100b8dbb3b0a822d472cb8acedf4421fa6061
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418917"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762986"
 ---
 # <a name="overview"></a>Áttekintés
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az Emberi erőforrások beállításáról, az alkalmazottak kompenzációjának és juttatásának beállításáról, valamint a munkaerő kezeléséről.
 
@@ -33,7 +32,7 @@ A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az 
 
 [A Human Resources paramétereinek konfigurálása](hr-setup-parameters.md)</br>
 [Megosztott emberierőforrás-paraméterek karbantartása](hr-setup-shared-parameters.md)</br>
-[Emberi erőforrásokkal kapcsolatos munkafolyamatok beállítása](hr-setup-workflows.md)</br>
+[Emberi erőforrásokkal kapcsolatos munkafolyamatok beállítása](./hr-workflow-manage-employee-information.md)</br>
 [Dátum és Idő mezők ismertetése](hr-setup-date-time-fields.md)</br>
 
 ## <a name="configure-organization-settings"></a>Szervezeti beállítások konfigurálása
@@ -60,7 +59,6 @@ A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az 
 [Beosztás jelentési kapcsolatainak módosítása](hr-personnel-modify-reporting-relationships-position.md)</br>
 [Dolgozói adatok megadása](hr-personnel-enter-worker-information.md)</br>
 [Cikkek kölcsönzése dolgozóknak](hr-personnel-loan-item-worker.md)</br>
-[Projekt időnyilvántartásainak megadása](hr-personnel-enter-project-timesheets.md)</br>
 [Tömeges felvételi projektek](hr-personnel-mass-hire-projects.md)</br>
 [Beosztások beállítása](hr-personnel-set-up-positions.md)</br>
 [Sérülések és megbetegedések adatainak beállítása](hr-personnel-set-up-injury-illness-information.md)</br>
@@ -102,8 +100,9 @@ A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az 
 [Elhatárolt szabadság- és távolléti tervek](hr-leave-and-absence-accrue.md)</br>
 [A szabadság és távollét elemzésének megtekintése](hr-leave-and-absence-analytics.md)</br>
 [Szabadság- és távollétkérelmek kezelése](hr-employee-self-service-manage-requests.md)</br>
-[Szabadság kérelmezése](hr-employee-self-service-request-time-off.md)</br>
-[Csoportos és vállalati naptárak megtekintése](hr-employee-self-service-calendar.md)</br>
+[Távollét kérelmezése](hr-employee-self-service-request-time-off.md)</br>
+[Csapat és vállalati naptárak megtekintése](hr-employee-self-service-calendar.md)</br>
+[A Távollétkezelő szerepkör konfigurálása](hr-configure-absence-manager.md)</br>
 
 ## <a name="develop-employees"></a>Alkalmazottak fejlesztése
 
@@ -128,3 +127,6 @@ A Dynamics 365 Human Resources felhasználói útmutató útmutatást nyújt az 
 
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

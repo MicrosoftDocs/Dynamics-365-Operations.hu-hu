@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f023ddd8d6f9350702f687763b53b057baa9aed8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 05111ab53e8bf19bb25869155284cdc9d6ea3b2a
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429470"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5242277"
 ---
 # <a name="subscription-workflow-overview"></a>Előfizetési munkafolyamat áttekintése 
 
@@ -57,3 +56,6 @@ A vevő előfizetéseiből minden hónap végén egy havi bevétel lekönyvelhet
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

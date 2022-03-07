@@ -2,11 +2,9 @@
 title: Termelési rendelés költségelemzése
 description: Ez a cikk a befejezett és az aktuális termelési rendelésekhez tartozó elvégezhető költségelemzéssel kapcsolatban tartalmaz tájékoztatást. Az Árkalkuláció lap vagy a Költségbecslés és kalkulációk jelentés használatával elemezheti a becsült költségeket és a tényleges költségeket. A becsült és tényleges költségekkel (és mennyiségekkel) kapcsolatos információkat tekinthet meg minden összetevő cikknél, az útvonalműveletnél, és a közvetett költségnél.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostTrans, ProdCalcTrans, ProdTableJour, ProdTableListPage, ProdSetupHistoricalCost
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0858e0e9ed0f09a47954274a05f6da1a2537c4a3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 1b0690a683cdefaeb5e441d3e2ea467a680a8fc1dd0905b6a94fd72bcbf36e1e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967283"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734259"
 ---
 # <a name="production-order-cost-analysis"></a>Termelési rendelés költségelemzése
 
@@ -43,7 +41,7 @@ A különbözetek a jelentett termelési tevékenységek és a termelési cikkre
 
 A következő ábra bemutatja a négyféle különbözetet, amelyek a termelési rendelés tényleges költségei, illetve a cikk költségrekordján belüli számított költségek között fellépő eltéréseket okozzák a termelési rendelés befejezésekor. 
 
-![A termelési rendelés eltéréseit okozó különbözetek](./media/control.jpg) 
+![A termelési rendelés eltéréseit okozó különbözetek.](./media/control.jpg) 
 
 A **Különbözet** lapon vagy a **Termelési különbözet** jelentésben elemezheti a termelési különbözeteket. A megjelenítési beállítások használatával a részletes különbözetek cikkenként, üzemi erőforrásonként vagy költségcsoportonként jeleníthetők meg. A készletparaméterekben szereplő költség-alábontási szabály határozza meg, hogy a különbözetek nyomon-követése költségcsoportok szerint történik-e. Használhatja még az **egyszeres**, **többszörös**, és **teljes** megjelenítési beállításokat az összesített különbözetek megjelenítéséhez. A részletes különbözetekről szóló információk a segítségére lehetnek a különbözetek okának megértésében. Az eltérések előrejelzéséhez a termelési rendelés befejezése előtt elemezze a **Költségbecslés és kalkulációk** jelentésben található részletes információkat.
 
@@ -57,10 +55,12 @@ Különálló jelentések nyújtanak információt az egyes tranzakciótípusokk
 -   **Feldolgozás alatt lévő késztermékek**– Ez a jelentés felsorolja az aktuális termelési rendeléseket és a készként jelentett tranzakciókat egy adott tranzakciódátumra vonatkozóan.
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [A termelési különbözetek gyakori okai](common-sources-of-production-variances.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,28 +2,25 @@
 title: Anyagfelhasználás regisztrálása mobileszköz segítségével
 description: Ez a témakör olyan munkafolyamatot ír le, amely lehetővé teszi a nyersanyag-felhasználás regisztrálását a termelésben egy kézi eszköz használatával.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1706093
 ms.assetid: 75ee68e0-4b9f-4f4d-b286-f498e0eb73fa
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 67fbb8eebb637a96638c574373441213c66e9ddc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 1aeb527255358ecafafcb64185cb9dcb31243d499c533f9c9390d79658534e3c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429799"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777863"
 ---
 # <a name="register-material-consumption-using-a-mobile-device"></a>Anyagfelhasználás regisztrálása mobileszköz segítségével
 
@@ -31,17 +28,16 @@ ms.locfileid: "4429799"
 
 Ez a témakör olyan munkafolyamatot ír le, amely lehetővé teszi a nyersanyag-felhasználás regisztrálását a termelésben egy kézi eszköz használatával.
 
-<a name="introduction"></a>Bevezetés
-------------
+## <a name="introduction"></a>Bevezetés
 
-A munkafolyamat akkor releváns, ha az anyag nyomon követhetősége szigorú követelmény. Ebben az esetben az anyagok nyomonkövethetőségének megőrzése érdekében jelenteni kell a fogyasztás pontos időtartamát és mennyiségét. Ez a folyamat ellentétben áll az előzetes vagy utólagos kiürítési műveletekkel, ahol eltolás van a regisztrálás időpontja és a tényleges felhasználás időpontja között. Ez a magyarázata annak, hogy miért nem használható az automatikus felhasználási stratégia bizonyos anyagok nyomonkövethetőségi követelményeire. Nézzünk egy egyszerű forgatókönyvet, amely azt ismerteti, hogyan állítsunk be úgy egy munkafolyamat, hogy lehetővé tegyük a nyersanyag-felhasználás termelés során történő regisztrálását egy kézi eszközzel. [![munkafolyamat beállítása nyersanyag-felhasználás kézi eszközzel történő rögzítéséhez](./media/scenario3.png)](./media/scenario3.png)
+A munkafolyamat akkor releváns, ha az anyag nyomon követhetősége szigorú követelmény. Ebben az esetben az anyagok nyomonkövethetőségének megőrzése érdekében jelenteni kell a fogyasztás pontos időtartamát és mennyiségét. Ez a folyamat ellentétben áll az előzetes vagy utólagos kiürítési műveletekkel, ahol eltolás van a regisztrálás időpontja és a tényleges felhasználás időpontja között. Ez a magyarázata annak, hogy miért nem használható az automatikus felhasználási stratégia bizonyos anyagok nyomonkövethetőségi követelményeire. Nézzünk egy egyszerű forgatókönyvet, amely azt ismerteti, hogyan állítsunk be úgy egy munkafolyamatot, hogy lehetővé tegyük a nyersanyag-felhasználás termelés során történő regisztrálását egy kézi eszközzel. [![munkafolyamat beállítása nyersanyag-felhasználás kézi eszközzel történő rögzítéséhez.](./media/scenario3.png)](./media/scenario3.png)
 
 ### <a name="scenario-details"></a>Forgatókönyv részletei
 
 Egy folyamatos gyártási folyamat (5) az RM-100 köteg szerint nyilvántartott nyersanyagot használja fel. Az anyag a Bulk-001 (1) helyen aktuálisan megtalálható a PL-1 azonosítótáblán két köteggel (B1 és B2), mindkettő mennyisége 100 kg. A raktári munkát (2) kiadják és feldolgozzák az RM-100 esetében, a Bulk-001-ból az anyagot kitárolják a PIL-01 termelési bemeneti helyre (3), amely nem azonosítótáblás szabályozásúként van definiálva van. A gépkezelő leméri az anyagot a termelési bemeneti helyről (3), és regisztrálja a tömeget és a ténylegesen felhasznált kötegszámot (4). A termelési bemeneti helyről az anyag egy részét meghatározott időközönként manuálisan adják hozzá a termelési folyamathoz. Amikor a gépkezelő anyagot ad hozzá, az anyagot mérlegen le kell mérni, valamint regisztrálni kell a kötegszámot.
 
-## <a name="set-up-theworkflow-to-register-consumption-using-a-handheld-device"></a>Állítsa be a munkafolyamatot a felhasználás kézi eszközzel történő regisztrálásához
-Hozzon létre készterméket (FG-100) olyan anyagjegyzékkel, amely az RM-100 köteg szerint nyilvántartott nyersanyagot tartalmazza. Adjon hozzá két RM-100 köteget (B1 és B2) 100-as mennyiségben a helyhez. Bulk-001 az azonosítótáblán: PL-1. Az anyagjegyzék RM-100 anyagjegyzéksorában levő kiürítési elv értéke **Kézi**. Állítsa a termelés alapértelmezett bemeneti helyét PIL-01 értékre. Ezt úgy teheti meg, ha ezt a helyet választja alapértelmezett termelési bemeneti helynek az 51-es raktárban.
+## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Állítsa be a munkafolyamatot a felhasználás kézi eszközzel történő regisztrálásához
+Hozzon létre készterméket (FG-100) olyan anyagjegyzékkel, amely az RM-100 köteg szerint nyilvántartott nyersanyagot tartalmazza. Adjon hozzá két RM-100 köteget (B1 és B2) 100-as mennyiségben a helyhez: Bulk-001 az azonosítótáblán: PL-1. Az anyagjegyzék RM-100 anyagjegyzéksorában levő kiürítési elv értéke **Kézi**. Állítsa a termelés alapértelmezett bemeneti helyét PIL-01 értékre. Ezt úgy teheti meg, ha ezt a helyet választja alapértelmezett termelési bemeneti helynek az 51-es raktárban.
 
 1.  Új mobileszköz-menüpont létrehozása: 
 
@@ -56,7 +52,7 @@ Hozzon létre készterméket (FG-100) olyan anyagjegyzékkel, amely az RM-100 k
 -    **Cikkszám** – FG-100 
 -    **Telephely** – 5 
 -    **Raktár** – 51 
--    **Mennyiség** – 150
+-    **Mennyiség** – 150
 
 A termelési rendelés **Becsült** és **Engedélyezett** értékeket kap, és létrejön a raktárkezelési munka.
 
@@ -66,15 +62,15 @@ Ez az anyagot az ömlesztett tárolóhelyről a PIL-01 termelési bemeneti helyr
 
 5.  Indítsa el a termelési rendelést az ügyfélből vagy a kézi eszközről a **Termelés indítása** menüpont használatával.
 
-A termelési rendelés elindítása után regisztrálhatja a nyersanyag-felhasználását a munkafolyamat segítségével a kézi eszközön. Kezdjük azzal, hogy a B1 köteghez 25 kg felhasználást regisztrálunk.
+A termelési rendelés elindítása után regisztrálhatja a nyersanyag-felhasználását a munkafolyamat segítségével a kézi eszközön. Kezdjük azzal, hogy a B1 köteghez 11 kg felhasználást regisztrálunk.
 
-6.  Válassza ki az  **Anyag regisztrálása** **Felhasználás** menüelemet a kézi eszközhöz, és írja be a következő adatokat: 
+6.  Válassza ki az **Anyag regisztrálása** **Felhasználás** menüelemet a kézi eszközhöz, és írja be a következő adatokat: 
 
 -    A termelési rendelés száma. 
 -    Az anyagfelhasználás helye, ebben az esetben: PIL-01. 
 -    Cikkszám: RM-100. 
 -    Kötegszám: B1. 
--    Mennyiség: 25.
+-    Mennyiség: 11.
 
 7.  Válassza ki az **OK** lehetőséget.
 
@@ -92,3 +88,6 @@ A regisztrálás befejezése után válassza a **Kész** lehetőséget a napló
 -   Az anyag túlfogyasztása engedélyezett. Például ha a becsült mennyiségű felhasználandó anyagmennyiség 100 kg, akkor a túlfogyasztás mennyisége például 105 kg lehet.
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

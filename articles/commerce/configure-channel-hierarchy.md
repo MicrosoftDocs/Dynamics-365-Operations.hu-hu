@@ -2,27 +2,24 @@
 title: Csatorna konfigurálása csatorna navigációs hierarchiájának használatára
 description: Ez a témakör azt mutatja be, hogyan lehet konfigurálni egy csatornát a csatorna navigációs hierarchiájának használatára a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 7b5041d35d310125c314ab2cb77d3cc40cdb7113
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 3cf29bd423a2475b77e9076024b4da6864a31065da81de49f1b9a0f639243f1d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713992"
 ---
 # <a name="configure-a-channel-to-use-a-channel-navigation-hierarchy"></a>Csatorna konfigurálása csatorna navigációs hierarchiájának használatára
 
@@ -48,7 +45,7 @@ Egy csatorna navigációs hierarchia használatára vonatkozó konfigurálásáh
 
 A következő kép bemutatja egy csatorna konfigurálását csatorna navigációs hierarchia használatára.
 
-![Példa csatorna konfigurálására](media/configure-channel-hierarchy-1.png)
+![Példa csatorna konfigurálására.](media/configure-channel-hierarchy-1.png)
 
 ## <a name="set-attribute-metadata"></a>Attribútum-metaadatok beállítása
 
@@ -64,7 +61,7 @@ Az attribútum-metaadatok beállításához hajtsa végre az alábbi lépéseket
 
 A következő képen látható csatorna termékattribútumok halmazának példája, amelyek konfigurálva vannak egy csatornakategória-csomóponton.
 
-![Csatorna attribútumok egy csatornakategória-csomóponton](media/configure-channel-hierarchy-2.png)
+![Csatornaattribútumok egy csatornakategória-csomóponton.](media/configure-channel-hierarchy-2.png)
 
 ## <a name="publish-changes"></a>Változások közzététele
 
@@ -77,10 +74,13 @@ A változatások közzétételéhez kövesse az alábbi lépéseket.
 
 A következő képen a csatornák frissítéseinek közzétételének módja látható.
 
-![Csatornafrissítések közzététele](media/configure-channel-hierarchy-3.png)
+![Csatornafrissítések közzététele.](media/configure-channel-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Csatorna navigációs hierarchiájának létrehozása](create-channel-hierarchy.md)
 
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

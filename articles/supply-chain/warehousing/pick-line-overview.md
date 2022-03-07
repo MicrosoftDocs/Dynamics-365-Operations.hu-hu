@@ -2,34 +2,31 @@
 title: Mobileszköz-menüelem beállítása a kitárolási sor áttekintésének biztosításához
 description: Ez a témakör azt mutatja be, hogyan lehet meghatározni, hogy az összes munkasor listája mikor jelenik meg a raktári dolgozók számára, akik mobileszközön dolgoznak fel raktári munkát. Ez a lehetőség olyan raktári dolgozók számára hasznos, akik gyakran igényelnek áttekintést a kivételezési sorokról egy munkarendelésben, hogy optimalizálni tudják a kitárolási sorozatot.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 09/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+ms.custom: intro-internal
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2020-09-03
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 3a2c8a69a2c64214a38a654042ea2f62575e7f52
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bec9c779399b252277c7688d4bdaf9794c050c18925eebaec0a8c0ffe2b3df28
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429399"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763891"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-provide-a-pick-line-overview"></a>Mobileszköz-menüelem beállítása a kitárolási sor áttekintésének biztosításához
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet beállítani a kitárolási munka feldolgozásához használt mobileszköz-menüelemeket, amelyek a kitárolási munka feldolgozásához használatosak. A kitárolási sor áttekintése a raktári dolgozók számára lehetővé teszi az aktuális feladathoz kapcsolódó összes munkasor listájának megtekintését és a kiválasztást abból. Ez a funkció segítséget nyújt a dolgozóknak a kitárolási folyamat optimalizálásában. A szolgáltatás olyan beállításokat tartalmaz, amelyek a szokásos **Kihagyás** gombot cserélik le, hogy a dolgozók rögzített sorrendben, egyenként haladjanak végig a sorokon. (Ugyanakkor a gomb használatának lehetősége továbbra is elérhető.)
 
-Az adminisztrátorok egyenként állíthatják be az egyes menüelemeket annak meghatározására, hogy a raktári alkalmazás milyen módon jeleníti meg a kitárolási sor áttekintését.
+Az adminisztrátorok egyenként állíthatják be az egyes menüelemeket annak meghatározására, hogy a Raktárkezelés mobilalkalmazás milyen módon jeleníti meg a kitárolási sor áttekintését.
 
 ## <a name="turn-on-the-work-pick-line-overview-feature"></a>A Munkakitárolási-sor áttekintése funkció bekapcsolása
 
@@ -53,19 +50,22 @@ Mobileszköz-menüelem beállításához a kitárolási sor áttekintésének bi
 
 1. Az **Általános** gyorslapon konfigurálja a szolgáltatást úgy, hogy a **Munkasorok listájának megjelenítése** mezőt a következő értékek valamelyikére állítja:
 
-    - **Csak kérés alapján jelenik meg** – A dolgozók választhatják a kitárolási sor listája megjelenítését ha az **Ugrás a következőre** gombot választják a raktári alkalmazásban.
-    - **Megjelenítés minden kitárolás kezdetén** – A dolgozók minden alkalommal látják a listát, amikor egy kitárolási sort kezdenek vagy fejeznek be. A listát újra megtekinthetik, ha kiválasztják az **Ugrás a következőre** gombot a raktári alkalmazásban.
-    - **Megjelenítés csak az első kitárolás kezdetén**: A dolgozók a listát minden új kitárolási munka indításakor látják, de az egyes sorok után nem. A listát újra megtekinthetik, ha kiválasztják az **Ugrás a következőre** gombot a raktári alkalmazásban.
-    - **Soha ne jelenítse meg** – A szokásos **Kihagyás** gomb látható a raktári alkalmazásban, és a munkasorok listájának megjelenítése ki van kapcsolva. A **Kihagyás** gombbal a dolgozók egy rögzített sorrendben válthatnak a sorok között. A listán tetszőleges számú alkalommal is végighaladhatnak, amíg az összes sort fel nem dolgozzák.
+    - **Csak kérés alapján jelenik meg** – A dolgozók választhatják a kitárolási sor listája megjelenítését ha az **Ugrás a következőre** gombot választják a Raktárkezelés mobilalkalmazásban.
+    - **Megjelenítés minden kitárolás kezdetén** – A dolgozók minden alkalommal látják a listát, amikor egy kitárolási sort kezdenek vagy fejeznek be. A listát újra megtekinthetik, ha kiválasztják az **Ugrás a következőre** gombot a Raktárkezelés mobilalkalmazásban.
+    - **Megjelenítés csak az első kitárolás kezdetén**: A dolgozók a listát minden új kitárolási munka indításakor látják, de az egyes sorok után nem. A listát újra megtekinthetik, ha kiválasztják az **Ugrás a következőre** gombot a Raktárkezelés mobilalkalmazásban.
+    - **Soha ne jelenítse meg** – A szokásos **Kihagyás** gomb látható a Raktárkezelés mobilalkalmazásban, és a munkasorok listájának megjelenítése ki van kapcsolva. A **Kihagyás** gombbal a dolgozók egy rögzített sorrendben válthatnak a sorok között. A listán tetszőleges számú alkalommal is végighaladhatnak, amíg az összes sort fel nem dolgozzák.
 
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 
     Ha a **Munkasorok listájának megjelenítése** mezőt bármilyen a *Soha ne jelenítse meg* értéktől eltérő a Műveleti panel **Mezőlista** gombja elérhetővé válik.
 
 1. A Műveleti ablaktáblán válassza ki a **Mezőlista** lehetőséget.
-1. A **Mezőlista** lapon konfigurálja azokat az adatokat, amelyeket a raktári alkalmazás a lista minden sorához megjelenít.
+1. A **Mezőlista** lapon konfigurálja azokat az adatokat, amelyeket a Raktárkezelés mobilalkalmazás a lista minden sorához megjelenít.
 
     - Az **Elsődleges vezérlés** mező értéke mindig *LineNum*. Ennek megfelelően a lista minden sora egy sorszámmal kezdődik.
     - A többi **Megjelenített mező** mezővel legfeljebb hét további megjeleníthető mezőt adhat hozzá igény szerint. Mindegyik **Megjelenített mező** mezőben válassza ki a munkasor mező nevét. Ekkor minden sor megjelenít egy értéket a mezőben. Az értékek az itt kiválasztott sorrendben jelennek meg. Ha nem szükséges mind a hét érték, akkor üresen hagyhat egyes **Megjelenítendő mező** mezőket.
 
 1. A művelet ablaktáblán válassza a **Mentés** elemet., majd zárja be a **Mezőlista** oldalt.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

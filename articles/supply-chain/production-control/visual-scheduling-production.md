@@ -2,16 +2,13 @@
 title: Munkaütemezés Gantt-diagram segítségével
 description: A gyártástervezők Gantt-diagramok segítségével szabályozhatják és optimalizálhatják a termelési terveket.
 author: johanhoffmann
-manager: tfehr
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage, GanttColorTable, GanttReqExplosionColor, GanttReqExplosionSetup, GanttTable, GanttTimescaleSetup, GanttWrkCtr, GanttWrkCtrColor, GanttWrkCtrJobInfo, GanttWrkCtrLoadResources, GanttWrkCtrMoveJob, GanttWrkCtrSetup, GanttWrkCtrView
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e194f379d118ee174095229d38ba5b0a679f49ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 97fc3c6bd096854b5aa72980dd2bd6f3a8a1ef9e
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429618"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6353420"
 ---
 # <a name="gantt-chart-for-job-scheduling"></a>Munkaütemezés Gantt-diagram segítségével
 
@@ -48,10 +45,10 @@ A Gantt-diagram két különböző nézetben nyitható meg – ezek a **Rendelé
 
 ## <a name="order-view"></a>Rendelés nézet
 
-[![Rendelés nézet](./media/orderview.png)](./media/orderview.png)
+[![Rendelés nézet.](./media/orderview.png)](./media/orderview.png)
 
 ## <a name="resource-view"></a>Erőforrás nézet
-[![Erőforrás nézet](./media/resview.png)](./media/resview.png)
+[![Erőforrás nézet.](./media/resview.png)](./media/resview.png)
 
 ## <a name="activities"></a>Tevékenységek
 A tevékenységek sávok formájában jelennek meg, és ütemezett kezdési és befejezési időpontba szerveződnek egy időskálarácson, így a sávok hossza arányos a tevékenység befejezéséhez szükséges idővel. A tevékenységek egy időskálának megfelelően jelennek meg. Beállíthatja az időskálát a menüben, ahol kiválaszthatja a kezdő és záródátumot és az időegységet, például órákat vagy napokat. Az időskála beállításával meghatározhatja a fókuszt olyan időintervallumra, amelyben a tevékenységeket szeretné kezelni. 
@@ -105,25 +102,25 @@ Nincs lehetőség a Gantt-diagram megadott időintervallumán kívül eső felad
 
 A tevékenységhálózatban, például az azonos termelési rendeléshez tartozó feladatok esetében használhatja az **Előző feladatok ütemezése** funkciót a hálózatban található kijelölt feladathoz képest előző feladat ütemezésére. A következő példában a kijelölt tevékenység a kijelölt feladat. Az ábra a korábbi feladat ütemezése előtti és a korábbi feladat ütemezése utáni állapotot mutatja. 
 
-[![Előző feladat ütemezése](./media/schprevjob3.png)](./media/schprevjob3.png)
+[![Előző feladat ütemezése.](./media/schprevjob3.png)](./media/schprevjob3.png)
 
 ### <a name="schedule-next-jobs"></a>Következő feladatok ütemezése
 
 Használhatja a **Következő feladatok ütemezése** funkciót a tevékenységi hálózaton a kijelölt feladathoz képest a következő feladatok ütemezésére. A következő példában a kijelölt tevékenység a kijelölt feladat. Az ábra a következő feladat ütemezése előtti és a következő feladat ütemezése utáni állapotot mutatja. 
 
-[![Következő feladat ütemezése](./media/schnxtjob.png)](./media/schnxtjob.png)
+[![Következő feladat ütemezése.](./media/schnxtjob.png)](./media/schnxtjob.png)
 
 ### <a name="schedule-around-job"></a>Feladatokhoz alkalmazkodó ütemezés
 
 Használhatja a **Feladatokhoz alkalmazkodó ütemezés** funkciót a tevékenységi hálózaton a következő feladat és a kijelölt feladathoz képest az előző feladat ütemezésére. A következő példában a kijelölt tevékenység a kijelölt feladat. Az ábra a feladat ütemezése előtti és a feladat ütemezése utáni állapotot mutatja. 
 
-[![Feladatokhoz alkalmazkodó ütemezés](./media/scharoundjob1.png)](./media/scharoundjob1.png)
+[![Feladatokhoz alkalmazkodó ütemezés.](./media/scharoundjob1.png)](./media/scharoundjob1.png)
 
 ### <a name="arrange-jobs"></a>Munkák elrendezése
 
 Az **Elrendezés** funkcióval a kiválasztott tevékenységeket ugyanazon az erőforráson rendezheti el. Ezek a tevékenységek ugyanazon tevékenységi hálózatba is tartozhatnak, de akár különböző hálózatok részei is lehetnek. Ha az Elrendezési funkciót használja, a kiválasztott tevékenységek közötti időhiányok megszűnnek. Ezen funkció segítségével optimalizálhatja az erőforrások kapacitásának kihasználtságát. Az ábra a feladat ütemezése előtti és a feladat ütemezése utáni állapotot mutatja. 
 
-[![Feladat elrendezése](./media/arrangejobs1.png)](./media/arrangejobs1.png)
+[![Feladat elrendezése.](./media/arrangejobs1.png)](./media/arrangejobs1.png)
 
 ### <a name="reassign-activities-from-one-resource-to-another"></a>Tevékenységek ismételt hozzárendelése egyik erőforrásról a másikra
 
@@ -158,5 +155,8 @@ A Gantt-diagram a következő lapokról is megnyitható.
 ## <a name="additional-resources"></a>További erőforrások  
 [Vizuális ütemezés a Gantt-diagrammal a termelési és kötegrendelésekhez (videó)](https://youtu.be/BtbuShkGj4I)
 
-[Vizuális ütemezés a termeléshez (demó parancsfájl)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
+[Vizuális ütemezés a termeléshez (demó parancsfájl)](/dynamics/s-e/)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

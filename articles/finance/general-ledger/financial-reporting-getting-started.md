@@ -2,28 +2,25 @@
 title: Pénzügyi jelentéskészítés – áttekintés
 description: Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 Finance pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési képességeket.
 author: aprilolson
-manager: AnnBe
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88436b4a5d6be4172e15fa4a9dadc34696417fb9
-ms.sourcegitcommit: eec96c64f44d1b4877d49ee15665a774019d42d7
+ms.openlocfilehash: 4de7f7f5f501024b7698736ded80405b9291cb58
+ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672444"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "5897036"
 ---
 # <a name="get-started-with-financial-reporting"></a>Financial Reporting – első lépések 
 
@@ -48,6 +45,8 @@ Ha pénzügyi jelentést szeretne létrehozni és generálni egy jogi személy s
 -   Ledger
 -   Számlatükör
 -   Pénznem
+-   Tranzakció feladása legalább egy számlára
+-   A Fő számla elem a **Főkönyv > Főkönyv beállítása > Financial Reporting beállítása** elem Kijelölve oszlopában van felsorolva.
 
 ## <a name="granting-security-access-to-financial-reporting"></a>Biztonsági hozzáférés biztosítása a Financial Reporting szolgáltatáshoz
 A pénzügyi jelentéskészítő funkciók azon felhasználók számára érhetők el, amelyek megfelelő jogosultságokkal és kiadott feladatokkal rendelkeznek a biztonsági szerepkörüknek megfelelően. Az alábbi szakaszok tartalmazzák ezen jogosultságok és feladatkörök listáját, valamint a kapcsolódó szerepköröket.
@@ -149,8 +148,8 @@ A jelentéskészítő megnyitásakor problémák merülhetnek fel néhány gyako
 * Az Internet Explorer szolgáltatásban válassza ki a **Beállítások** elemet, majd válassza az **Internetbeállítások** lehetőséget. Válassza a **Biztonság** fület. Válassza ki a megbízható helyeket. A zóna Biztonsági szint feliratú területen módosítsa a beállítást **Közepesen alacsony** értékre.
 * Tiltsa le az előugró ablakok blokkolását a böngészőjében.
 * A Microsoft .NET-keretrendszer 4.6.2 vagy újabb telepítéséhez munkaállomások szükségesek. A Microsoft .NET Framework ezen verziója a [Microsoft letöltőközpontból](https://www.microsoft.com/download/details.aspx?id=53345) tölthető le és telepíthető.
-* Chrome böngésző használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a Chrome böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban. A Chrome ClickOnce kiterjesztéssel kapcsolatos további tudnivalókat lásd: [Felhőtelepítések rendszerkövetelményei](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/system-requirements).
-* Ha a Microsoft Edget Chrome böngészővel használja, akkor nem kell ClickOnce-kiterjesztést telepítenie az Edge Chromium számára. Azonban engedélyeznie kell a ClickOnce lehetőséget a jelentéstervező kliens letöltéséhez. Ha a böngészőt inkognitó módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az inkognitó módban.
+* Chrome böngésző használata esetén, telepítenie kell a ClickOnce kiterjesztést a jelentéstervező kliens letöltéséhez. Ha a Chrome böngészőt incognito módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az incognito módban. A Chrome ClickOnce kiterjesztéssel kapcsolatos további tudnivalókat lásd: [Felhőtelepítések rendszerkövetelményei](../../fin-ops-core/fin-ops/get-started/system-requirements.md).
+* Ha a Microsoft Edge-t Chrome böngészővel használja, akkor nem kell ClickOnce-kiterjesztést telepítenie az Edge Chromium számára. Azonban engedélyeznie kell a ClickOnce lehetőséget a jelentéstervező kliens letöltéséhez. Ha a böngészőt inkognitó módban futtatja, győződjön meg arról, a ClickOnce kiterjesztés engedélyezve van-e az inkognitó módban.
      1. Új böngésző megnyitása a Microsoft Edge-ben.
      2. Adja az **edge://flags** parancsot, és válassza az **Enter** billentyűt.
      3. Keresse meg a **ClickOnce támogatás** beállítást, vagy használja ezt a közvetlen hivatkozást: **edge://flags/#edge-click-once**.
@@ -173,3 +172,6 @@ A jelentéskészítő megnyitásakor problémák merülhetnek fel néhány gyako
 ## <a name="additional-resources"></a>További erőforrások
 - [Pénzügyi jelentések megtekintése](view-financial-reports.md)
 - [Jelentési fa definíciója a pénzügyi jelentésekben](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

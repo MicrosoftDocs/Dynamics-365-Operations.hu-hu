@@ -2,15 +2,12 @@
 title: Jövőbeli életesemények konfigurálása
 description: 'A jövőbeli életesemények ütemezése a következőben végezhető el: Dynamics 365 Human Resources.'
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitFutureLifeEvents, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 78c65faa4ae0f428184700a912998e9dded026c5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: d52e91e7b050027485b3536f40f6ad80afd90de8
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418805"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6056732"
 ---
 # <a name="configure-future-life-events"></a>Jövőbeli életesemények konfigurálása
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A jövőbeli életesemények ütemezése a következőben végezhető el: Dynamics 365 Human Resources.
 
@@ -46,3 +45,6 @@ A jövőbeli életesemények ütemezése a következőben végezhető el: Dynami
    | Vonal | A jövőbeli életesemény sorának száma. |
 
 4. Válassza a **Mentés** lehetőséget. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,39 +1,30 @@
 ---
-title: A(z) Finance and Operations alkalmazások frissítésével kapcsolatos problémák elhárítása
-description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítségével javíthatók a Finance and Operations-alkalmazások frissítésével kapcsolatos problémák.
+title: A Finance and Operations alkalmazások frissítéseivel kapcsolatos problémák elhárítása
+description: Ez a témakör hibaelhárítási információkat tartalmaz, amelyek segíthetnek a Finance and Operations alkalmazások frissítésével kapcsolatos problémák megoldásában.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
-ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: c76b35ed3af766f42484a118a4a0407d969b5240
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.search.validFrom: 2020-01-06
+ms.openlocfilehash: c7c036ef44b0470c9b3f8087e7b5b1e16dde1b34
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683599"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062825"
 ---
-# <a name="troubleshoot-issues-related-to-upgrades-of-finance-and-operations-apps"></a>A(z) Finance and Operations alkalmazások frissítésével kapcsolatos problémák elhárítása
+# <a name="troubleshoot-issues-from-upgrades-of-finance-and-operations-apps"></a>A Finance and Operations alkalmazások frissítéseivel kapcsolatos problémák elhárítása
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
-Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos információkat tartalmaz. Pontosabban ez a témakör olyan információkat tartalmaz, amelyek segítségével javíthatók a Finance and Operations-alkalmazások frissítésével kapcsolatos problémák.
+
+Ez a témakör hibaelhárítási információkat tartalmaz a Finance and Operations alkalmazások és a kettős írási integrációhoz Dataverse. Konkrétan olyan információkat nyújt, amelyek segíthetnek a Finance and Operations alkalmazások frissítésével kapcsolatos problémák megoldásában.
 
 > [!IMPORTANT]
 > Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazda szerepkört vagy Microsoft Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
@@ -42,7 +33,7 @@ Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kett�
 
 **A hiba megtekintéséhez szükséges szerepkör:** Rendszergazda
 
-Előfordulhat, hogy egy hibaüzenet jelenik meg, amely a következő példához hasonlít, amikor megpróbálja használni a **DualWriteProjectConfiguration** entitást egy Finance and Operations-alkalmazás frissítésekor a Platform update 30 verzióra.
+A következő példához hasonló hibaüzenet jelenhet meg, amikor megpróbálja használni a **DualWriteProjectConfiguration** táblázat a Finance and Operations alkalmazás frissítéséhez a 30-as platformfrissítésre.
 
 ```console
 Infolog diagnostic message: 'Cannot select a row in Dual write project sync (DualWriteProjectConfiguration). The SQL database has issued an error.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Object Server Database Synchronizer: ' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: '[Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ISDELETE'.' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'SELECT T1.PROJECTNAME,T1.EXTERNALENTITYNAME,T1.INTERNALENTITYNAME,T1.EXTERNALENVIRONMENTURL,T1.STATUS,T1.ENABLEBATCHLOOKUP,T1.PARTITIONMAP,T1.QUERYFILTEREXPRESSION,T1.INTEGRATIONKEY,T1.ISDELETE,T1.ISDEBUGMODE,T1.RECVERSION,T1.PARTITION,T1.RECID FROM DUALWRITEPROJECTCONFIGURATION T1 WHERE (PARTITION=5637144576)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'session 1043 (Admin)' on category 'Error'. 10/28/2019 15:18:20: Infolog diagnostic message: 'Stack trace: Call to TTSCOMMIT without first calling TTSBEGIN.' on category 'Error'.
@@ -52,7 +43,7 @@ Microsoft.Dynamics.AX.Framework.Database.TableSyncException: Custom action threw
 
 Egy hiba javításához kövesse az alábbi lépéseket.
 
-1. Jelentkezzen be a Finance and Operations alkalmazáshoz tartozó virtuális gépre (VM).
+1. Jelentkezzen be a virtuális gépbe (VM) a Finance and Operations alkalmazáshoz.
 2. Nyissa meg Visual Studio alkalmazást adminisztrátorként, és nyissa meg az alkalmazásobjektum-fát (AOT).
 3. Keresse meg a **DualWriteProjectConfiguration** elemet.
 4. Az alkalmazásobjektum-fában kattintson a jobb gombbal a **DualWriteProjectConfiguration** elemre, majd válassza a **Hozzáadás új projekthez** parancsot. Az **ok** gombra kattintva hozza létre az alapértelmezett beállításokat használó új projektet.
@@ -62,7 +53,7 @@ Egy hiba javításához kövesse az alábbi lépéseket.
 8. A teljes adatbázis-szinkronizálás végrehajtásához válassza a **Szinkronizálás** parancsot.
 9. A teljes adatbázis-szinkronizálás sikeres végrehajtása után futtassa újra az adatbázis-szinkronizálási lépést a Microsoft Dynamics Lifecycle Services (LCS) modulban, és szükség szerint használja a manuális frissítési parancsfájlokat, hogy folytathassa a frissítést.
 
-## <a name="missing-entity-fields-issue-on-maps"></a>Hiányzó entitásmezők problémája a leképezésekben
+## <a name="missing-table-columns-issue-on-maps"></a>Hiányzó táblaoszlop-probléma a leképezésekben
 
 **A hiba megtekintéséhez szükséges szerepkör:** Rendszergazda
 
@@ -70,24 +61,27 @@ A **Kettős írás** oldalon a következő példához hasonló hibaüzenet jelen
 
 *Hiányzó forrásmező mező (\<field name\>) a sémában.*
 
-![Példa a hiányzó forrásmező hibaüzenetére](media/error_missing_field.png)
+![Példa a hiányzó forrásoszlop hibaüzenetére.](media/error_missing_field.png)
 
-A hiba javításához kövesse az alábbi lépéseket, és győződjön meg arról, hogy a mezők szerepelnek az entitásban.
+A hiba javításához kövesse az alábbi lépéseket, és győződjön meg arról, hogy az oszlopok szerepelnek a táblában.
 
-1. Jelentkezzen be a Finance and Operations alkalmazáshoz tartozó virtuális gépre.
-2. Lépjen a **Munkaterületek \> Adatkezelés** pontra, válassza a **Keretrendszer paraméterei** csmepét, majd az **Táblabeállítások** lapon válassza az **Entitáslista frissítése** parancsot a táblák frissítéséhez.
-3. Lépjen a **Munkaterületek \> Adatkezelés** részre, válassza az **Adatáblák** lapot, és ellenőrizze, hogy az entitás szerepel a listában. Ha az entitás nem szerepel a listában, jelentkezzen be a Finance and Operations alkalmazás virtuális gépére, és győződjön meg róla, hogy az entitás elérhető.
-4. Nyissa meg az **Táblaleképezés** oldalt a Finance and Operations alkalmazás **Kettős írás** oldalán.
-5. Az táblaleképezések mezőinek automatikus kitöltéséhez válassza az **Entitáslista frissítése** elemet.
+1. Jelentkezzen be a virtuális gépbe a Finance and Operations alkalmazáshoz.
+2. Lépjen a **Munkaterületek \> Adatkezelés** pontra, válassza a **Keretrendszer paraméterei** csmepét, majd az **Táblabeállítások** lapon válassza a **Táblalista frissítése** parancsot a táblák frissítéséhez.
+3. Lépjen a **Munkaterületek \> Adatkezelés** részre, válassza az **Adatáblák** lapot, és ellenőrizze, hogy a tábla szerepel a listában. Ha a táblázat nem szerepel a listában, jelentkezzen be a Finance and Operations alkalmazás virtuális gépébe, és győződjön meg arról, hogy a táblázat elérhető.
+4. Nyissa meg a **Táblázat leképezés** oldal a **Kettős írás** oldalon a Finance and Operations alkalmazásban.
+5. Az táblaleképezések oszlopainak automatikus kitöltéséhez válassza a **Táblalista frissítése** elemet.
 
 Ha a hiba továbbra sincs kijavítva, hajtsa végre az alábbi lépéseket.
 
 > [!IMPORTANT]
-> Ezekkel a lépésekkel egy entitás törlési folyamatát hajthatja végre, majd hozzáadhatja újra. A problémák elkerüléséhez ügyeljen arra, hogy a lépéseket pontosan kövesse.
+> Ezekkel a lépésekkel egy tábla törlési folyamatát hajthatja végre, majd hozzáadhatja újra. A problémák elkerüléséhez ügyeljen arra, hogy a lépéseket pontosan kövesse.
 
-1. A Finance and Operations alkalmazásban nyissa meg a **Munkaterületek \> Adatkezelés** pontot, és válassza az **Adatáblák** csempét.
-2. Keresse meg azt az entitást, amelynek hiányzik az attribútuma. Kattintson a **Cél-hozzárendelés módosítása** elemre az eszköztárban.
+1. A Finance and Operations alkalmazásban lépjen a következőre: **Munkaterületek \> Adatkezelés**, és válassza ki a lehetőséget **Adattáblák** csempe.
+2. Keresse meg azt a táblát, amelynek hiányzik az attribútuma. Kattintson a **Cél-hozzárendelés módosítása** elemre az eszköztárban.
 3. Az **Előkészítés hozzárendelése a célhoz** panelen kattintson a **Leképezés létrehozása** elemre.
-4. Nyissa meg az **Táblaleképezés** oldalt a Finance and Operations alkalmazás **Kettős írás** oldalán.
+4. Nyissa meg a **Táblázat leképezés** oldal a **Kettős írás** oldalon a Finance and Operations alkalmazásban.
 5. Ha az attribútum nincs automatikusan kitöltve a leképezésen, vegye fel kézzel az **Attribútum hozzáadása** gombra kattintva, majd kattintson a **Mentés** gombra. 
 6. Válassza ki a leképezést, és kattintson a **Futtatás** lehetőségre.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

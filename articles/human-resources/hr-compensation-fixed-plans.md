@@ -1,33 +1,35 @@
 ---
 title: Fix kompenzációs konstrukciók létrehozása
-description: A fix kompenzáció egy alkalmazott rendszeres bruttó bérét jelenti. A cikk ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+description: A témakör ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable, HcmCompensationWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 06f4a335adfc1e6f438589613efec02f92bfd756
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 46dbc167a76782cfa8a72da8ce8bed2ce29e4dc6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418866"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070325"
 ---
 # <a name="create-a-fixed-compensation-plans"></a>Fix kompenzációs konstrukciók létrehozása
 
-A fix kompenzáció egy alkalmazott rendszeres bruttó bérét jelenti. A cikk ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+A fix kompenzáció egy alkalmazott rendszeres bruttó bérét jelenti. A témakör ismerteti az összetevőket, amelyeket be kell állítani, mielőtt létrehozna egy fix kompenzációs tervet és bejegyezné az alkalmazottakat.
 
 A fix kompenzációs összegek az alkalmazottak számára számíthatók ki, a teljesítmény, a régió és az előirányzott fizetésemelések alapján. Dynamics 365 Human Resources támogatja a lépés, az osztály és a sáv szerinti kompenzációtípust.
 
@@ -42,7 +44,7 @@ A **Hivatkozási pontok** a rács azon oszlopai, amelyek meghatározzák az egye
 
 ### <a name="compensation-grids"></a>Kompenzációs rácsok
 
-Miután beállította a szinteket és a hivatkozási pontokat, ezek kombinálásával egy **kompenzációs rácsot** hozhat létre. A **Kompenzációs rácsok** oldalon adja meg a ráccsal kapcsolatos információkat. Például adja meg, hogy a rácsot mire kívánja használni, milyen típusú konstrukcióval lesz alkalmazva, és hogy a rácsban milyen hivatkozási pontokra vagy oszlopokra van szükség. Miután befejezte az információk megadását, kattintson a **Kompenzációs struktúra** lehetőségre, hogy szinteket és összegeket adhasson hozzá a rácshoz. 
+Miután beállította a szinteket és a hivatkozási pontokat, ezek kombinálásával egy **Kompenzációs rácsot** hozhat létre. A **Kompenzációs rácsok** oldalon adja meg a ráccsal kapcsolatos információkat. Például adja meg, hogy a rácsot mire kívánja használni, milyen típusú konstrukcióval lesz alkalmazva, és hogy a rácsban milyen hivatkozási pontokra vagy oszlopokra van szükség. Miután befejezte az információk megadását, kattintson a **Kompenzációs struktúra** lehetőségre, hogy szinteket és összegeket adhasson hozzá a rácshoz. 
 
 **Tipp:** Használja a **Tömeges módosítások** funkciót a kompenzációs struktúra kezdeti összegeinek megadásához, majd százalékos vagy összeg szerinti növekményekkel módosítsa az értékeket szintek és hivatkozási pontok szerint.
 
@@ -61,9 +63,9 @@ A **Tartomány-kihasználtsági mátrix** akkor hasznos, ha azt szeretné, hogy 
 
 A fix kompenzációs konstrukció alapjainak meghatározása után beállíthatja a kompenzációs struktúrát a konstrukcióhoz. Kattintson a **Kompenzáció beállítása** lehetőségre. Megnyílik egy párbeszédpaneles csúszka, amely segítségével három lehetőség közül választhat:
 
--   Új kompenzációs rács létrehozása egy hivatkozásipont-beállítás kijelölésével, és egy rácsnév megadása.
--   Új kompenzációs rács létrehozása egy meglévő, kiindulási pontként is használható rács másolatának létrehozásával.
--   Egy meglévő, korábban már definiált kompenzációs rács használata. Minden kompenzációs konstrukció, amely ugyanazt a rácsot alkalmazza, frissítéseket kap, ha módosul a rács.
+-   **Új kompenzációs mátrix létrehozása** egy hivatkozásipont-beállítás kijelölésével, és egy rácsnév megadása.
+-   **Új kompenzációs mátrix létrehozása** egy meglévő, kiindulási pontként is használható rács másolatának létrehozásával.
+-   Egy meglévő, **Korábban már definiált kompenzációs mártix** használata. Minden kompenzációs konstrukció, amely ugyanazt a rácsot alkalmazza, frissítéseket kap, ha módosul a rács.
 
 Egy lehetőség kiválasztása után megnyílik a **Kompenzációs struktúra** lap, ahol módosíthatja az új vagy a meglévő kompenzációs rácsot.
 
@@ -74,7 +76,7 @@ Ha készen áll az alkalmazottak beléptetésére egy fix kompenzációs tervbe,
 
 **Megjegyzés:** A jogosultsági szabályok meghatározzák a fix és a változó kompenzációs tervhez való jogosultságot. 
 
-A jogosultsági szabályok bizonyos mezőket használnak a Munka, Beosztás és Alkalmazotti rekordokból, hogy meghatározható legyen egy alkalmazott jogosult-e a kompenzációs tervre.
+A jogosultsági szabályok bizonyos mezőket használnak a **Munka**, **Beosztás** és **Alkalmazott** rekordokból, hogy meghatározható legyen egy alkalmazott jogosult-e a kompenzációs tervre.
 
 -   A **Munka** lapon az alkalmazhatósági szabály a következő mezőket veszi figyelembe:
     -   A **Munka** mező
@@ -86,7 +88,7 @@ Az alkalmazhatósági szabály figyelembe veszi az alkalmazotthoz rendelt szaksz
 
 ### <a name="define-fixed-compensation-actions"></a>Fix kompenzációs műveletek meghatározása
 
-A **Fix kompenzációs műveletek** egy alkalmazott fix kompenzációjának beállítására vagy módosítására használhatók. A fix kompenzációs műveletek lehetővé teszik, hogy a Kompenzáció- és juttatáskezelő által elvégezhető műveletekhez egy jól felismerhető nevet adhasson meg. A különböző művelettípusok mögött speciális logika van, így azok egy adott időpontban használhatók. 
+A **Fix kompenzációs műveletek** egy alkalmazott fix kompenzációjának beállítására vagy módosítására használhatók. A fix kompenzációs műveletek lehetővé teszik, hogy a kompenzáció- és juttatáskezelő által elvégezhető műveletekhez egy jól felismerhető nevet adhasson meg. A különböző művelettípusok mögött speciális logika van, így azok egy adott időpontban használhatók. 
 
 Például ha egy alkalmazotthoz fix kompenzációt állít be, csak **Felvételi/Újrafelvétel** típusú műveletek alkalmazhatók. Ebben az esetben érdemes három különböző műveletet létrehozni a **Felvétel/Újrafelvétel** típushoz, **Felvétel**, **Újrafelvétel**, és **Átvétel** néven. Ezt követően részletesebben is leírhatja, hogy az alkalmazotthoz tartozó fix kompenzáció miért lett hozzáadva vagy módosítva.
 
@@ -94,7 +96,10 @@ Például ha egy alkalmazotthoz fix kompenzációt állít be, csak **Felvételi
 
 Az alkalmazott most már hozzárendelhető egy fix kompenzációs konstrukcióhoz. Nyissa meg az **Alkalmazottak** oldalt, majd válassza ki a kompenzációs konstrukcióhoz hozzáadandó alkalmazottat. A műveleti ablakon kattintson a **Kompenzáció** &gt; **Fix konstrukció** lehetőségre. Most létrehozhat egy fix kompenzációs műveletet ehhez az alkalmazotthoz. 
 
-**Megjegyzés:** A kompenzációs konstrukció mező csak azokat a terveket tartalmazza, amelyre az alkalmazott jogosult az egyes tervekhez beállított alkalmazhatósági szabályok alapján. Ha egy tervhez nincs alkalmazhatósági szabály beállítva,egyetlen alkalmazott sem lesz jogosult az adott tervre. 
+**Megjegyzés:** A **Kompenzációs konstrukció** mező csak azokat a terveket tartalmazza, amelyre az alkalmazott jogosult az egyes tervekhez beállított alkalmazhatósági szabályok alapján. Ha egy tervhez nincs alkalmazhatósági szabály beállítva,egyetlen alkalmazott sem lesz jogosult az adott tervre. 
 
-A rendszer ellenőrzi, hogy az osztály vagy sáv típusú kompenzációs tervhez megadott kompenzációs összeg a minimális és maximális hivatkozási pont között van az alkalmazott munkájához megadott kompenzációs szint alapján. Amennyiben a kompenzációs összeg a megengedett határokon kívül esik, egy figyelmeztetés vagy egy hibaüzenet jelenik meg a fix kompenzációs konstrukcióhoz megadott tűréshatár függvényében.
+Ellenőrizve van, hogy az osztály vagy sáv típusú kompenzációs tervhez megadott kompenzációs összeg a minimális és maximális hivatkozási pont között van az alkalmazott munkájához megadott kompenzációs szint alapján. Amennyiben a kompenzációs összeg a megengedett határokon kívül esik, egy figyelmeztetés vagy egy hibaüzenet jelenik meg a fix kompenzációs konstrukcióhoz megadott tűréshatár függvényében.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

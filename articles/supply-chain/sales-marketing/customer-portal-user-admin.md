@@ -1,30 +1,28 @@
 ---
-title: Ügyfélportál felhasználóinak létrehozása és kezelése
+title: Ügyfélportál-felhasználók létrehozása és kezelése (videót tartalmaz)
 description: Ez a témakör azt mutatja be, hogyan kell létrehozni az Ügyfélportál felhasználói fiókjait, és hogyan állíthatja be a rájuk vonatkozó engedélyeket.
-author: dasani-madipalli
-manager: tfehr
+author: Henrikan
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: e2001d5c0b17ecadf4cb42529d9beb4b3b81805a
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 4615182e6c3341a376e8e55a1417480e3e3f5ea7
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528293"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062490"
 ---
 # <a name="create-and-manage-customer-portal-users"></a>Ügyfélportál felhasználóinak létrehozása és kezelése
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 
 A „gyári” implementációban nincs mód arra, hogy a felhasználók önállóan regisztrálhatják magukat a Ügyfélportál segítségével létrehozott webhelyeken. A bejelentkezéshez és a webhely használatához a felhasználókat az adminisztrátornak kell meghívnia. A Microsoft szándékosan zárolta a lehetőséget, hogy a felhasználók önállóan regisztrálhatják magukat.
 
@@ -35,40 +33,40 @@ Amikor a felhasználók magukat regisztrálják, a kapcsolattartói rekordok aut
 ## <a name="video"></a>Videó
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
 
-A [Hívja meg a vevőket, hogy regisztráljanak és használják a portált](https://youtu.be/drGUYHX9QIQ) című videó (fent) szerepel a [Finance and Operations lejátszási listán,](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) amely elérhető a YouTube felületén.
+A [Hívja meg az ügyfeleket, hogy regisztráljanak, és használják ügyfélkapuját](https://youtu.be/drGUYHX9QIQ) videó (fent látható) szerepel a [Finance and Operations lejátszási lista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) elérhető YouTube.
 
 ## <a name="prerequisite-setup"></a>A beállítás előfeltételei
 
-A Power Apps portálokon található kapcsolattartók rekordokként vannak tárolva a Common Data Service **Kapcsolattartók** entitásában. A kettős írás ezt követően szükség szerint szinkronizálja ezeket a rekordokat a Microsoft Dynamics 365 Supply Chain Management alkalmazásba.
+A Power Apps portálokon található kapcsolattartók rekordokként vannak tárolva a Microsoft Dataverse **Kapcsolattartók** táblában. A kettős írás ezt követően szükség szerint szinkronizálja ezeket a rekordokat a Microsoft Dynamics 365 Supply Chain Management alkalmazásba.
 
-![A Ügyfélportál kapcsolattartóinak rendszerdiagramja](media/customer-portal-contacts.png "A Ügyfélportál kapcsolattartóinak rendszerdiagramja")
+![A Ügyfélportál kapcsolattartóinak rendszerdiagramja.](media/customer-portal-contacts.png "A Ügyfélportál kapcsolattartóinak rendszerdiagramja")
 
-Új vevők meghívásának megkezdése előtt győződjön meg arról, hogy a **Kapcsolattartó** entitások megfeleltetése engedélyezve van a kettős írásban.
+Új vevők meghívásának megkezdése előtt győződjön meg arról, hogy a **Kapcsolattartó** táblák megfeleltetése engedélyezve van a kettős írásban.
 
 ## <a name="the-invitation-process"></a>A meghívás folyamata
 
-Ha meg szeretne hívni egy meglévő kapcsolattartót a Ügyfélportálra webhelyére, kövesse a [Kapcsolattartók meghívása a portáljára](https://docs.microsoft.com/powerapps/maker/portals/configure/invite-contacts) rész lépéseit a Power Apps portálok dokumentációjában.
+Ha meg szeretne hívni egy meglévő kapcsolattartót a Ügyfélportálra webhelyére, kövesse a [Kapcsolattartók meghívása a portáljára](/powerapps/maker/portals/configure/invite-contacts) rész lépéseit a Power Apps portálok dokumentációjában.
 
-Mielőtt meghívja a vevőt, hogy csatlakozzon a Ügyfélportálra győződjön meg arról, hogy a vevő [kapcsolattartói rekordja](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) elérhető, és be van állítva a következő módon:
+Mielőtt meghívja a vevőt, hogy csatlakozzon a Ügyfélportálra győződjön meg arról, hogy a vevő [kapcsolattartói rekordja](/powerapps/maker/portals/configure/configure-contacts) elérhető, és be van állítva a következő módon:
 
 1. Állítsa be a **Vállalat** mezőt arra a jogi személyre, amelyhez az ügyfelet hozzá szeretné rendelni a Supply Chain Management alkalmazásban.
 2. Állítsa be a **Számlaszám** mezőt arra a számlaszámra amelyhez az ügyfelet hozzá szeretné rendelni a Supply Chain Management alkalmazásban.
 
 Miután létrehozta a kapcsolattartót az látható lesz a Supply Chain Management modulban.
 
-A további tudnivalókat lásd: [A portálon használható kapcsolattartó konfigurálása](https://docs.microsoft.com/powerapps/maker/portals/configure/configure-contacts) részt a Power Apps portálok dokumentációjában.
+A további tudnivalókat lásd: [A portálon használható kapcsolattartó konfigurálása](/powerapps/maker/portals/configure/configure-contacts) részt a Power Apps portálok dokumentációjában.
 
-## <a name="out-of-box-web-roles-and-entity-permissions"></a>Gyári webes szerepkörök és entitásengedélyek
+## <a name="out-of-box-web-roles-and-table-permissions"></a>Gyári webes szerepkörök és táblaengedélyek
 
-A Power Apps portálok felhasználói szerepköreit a [webes szerepkörök](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) és az [entitásengedélyek](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) határozzák meg. A Ügyfélportál néhány szerepkört kínál már gyári állapotban is. Új szerepköröket hozhat létre, és módosíthatja vagy törölheti a meglévő szerepköröket.
+A Power Apps portálok felhasználói szerepköreit a [webes szerepkörök](/powerapps/maker/portals/configure/create-web-roles) és az [táblaengedélyek](/powerapps/maker/portals/configure/assign-entity-permissions) határozzák meg. A Ügyfélportál néhány szerepkört kínál már gyári állapotban is. Új szerepköröket hozhat létre, és módosíthatja vagy törölheti a meglévő szerepköröket.
 
 ### <a name="out-of-box-web-roles"></a>Gyári webes szerepkörök
 
 Ez a szakasz a Ügyfélportál szolgáltatással szállított webes szerepköröket írja le.
 
-A gyári felhasználói szerepkörök módosításával kapcsolatos további tudnivalókat lásd: [Webes szerepkörök létrehozása a portálokhoz](https://docs.microsoft.com/powerapps/maker/portals/configure/create-web-roles) és [Rekordalapú biztonság hozzáadása entitásengedélyek használatával a portálokhoz](https://docs.microsoft.com/powerapps/maker/portals/configure/assign-entity-permissions) a Power Apps dokumentációjában.
+A gyári felhasználói szerepkörök módosításával kapcsolatos további tudnivalókat lásd: [Webes szerepkörök létrehozása a portálokhoz](/powerapps/maker/portals/configure/create-web-roles) és [Rekordalapú biztonság hozzáadása táblaengedélyek használatával a portálokhoz](/powerapps/maker/portals/configure/assign-entity-permissions) a Power Apps dokumentációjában.
 
-#### <a name="administrator"></a>Adminisztrátor
+#### <a name="administrator"></a>Rendszergazda
 
 A rendszergazda felügyeli és tartja karban a webhelyet. Ez a személy építi ki és állítja be az Ügyfélportált. A rendszergazda karbantartja a portált informatikai és biztonsági szempontokból, és gondoskodik arról, hogy minden simán fusson. Előfordulhat, hogy a rendszergazda testreszabhatja és/vagy módosíthatja a portált új funkciók hozzáadásával, új szerepkörök létrehozásával stb.
 
@@ -90,9 +88,12 @@ A következő táblázat bemutatja, hogy a rendszerben mely értékesítési ren
 
 | Értékesítési rendelés | Adminisztrátor | X&nbsp;ügyfél ügyfélképviselője | Jogosult felhasználó: Jane | Jogosult felhasználó: Sam | Nem felhatalmazott felhasználó: May |
 |---|---|---|---|---|---|
-| X&nbsp;ügyfél megrendelő:&nbsp;Jane | Igen | Igen | Igen | Nincs | Nincs |
-| X&nbsp;ügyfél megrendelő:&nbsp;Sam | Igen | Igen | Nincs | Igen | Nincs |
-| Y&nbsp;ügyfél Megrendelő:&nbsp;May | Igen | Nincs | Nincs | Nincs | Nincs |
+| X&nbsp;ügyfél megrendelő:&nbsp;Jane | Igen | Igen | Igen | Nem | Nem |
+| X&nbsp;ügyfél megrendelő:&nbsp;Sam | Igen | Igen | Nem | Igen | Nem |
+| Y&nbsp;ügyfél Megrendelő:&nbsp;May | Igen | Nem | Nem | Nem | Nem |
 
 > [!NOTE]
 > Annak ellenére, hogy mind a Sam, mind a Jane olyan kapcsolattartó, aki az X ügyfélnek dolgozik, csak azokat a rendeléseket láthatja, amelyekhez ők maguk adtak le, és semmi mást. Annak ellenére, hogy Maynek van egy rendelése a rendszerben, az Ügyfélportálon nem láthatja ezt a rendelést mivel ő egy nem felhatalmazott felhasználó. (Ezenkívül a rendelést egy az Ügyfélportáltól eltérő csatornán adta le.)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

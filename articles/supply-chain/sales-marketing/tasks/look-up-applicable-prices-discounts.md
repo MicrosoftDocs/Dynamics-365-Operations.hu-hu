@@ -1,26 +1,23 @@
 ---
 title: Alkalmazandó árak és engedmények keresése
 description: Ez az eljárás bemutatja, hogyan lehet árat és/vagy az engedményt találni egy termékhez, amely jelenleg érvényes egy meghatározott vevőre, értékesítési rendelés létrehozása nélkül.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 11/10/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2cfdbda55c2f83ee2b470cab8a5e4f9ce728b852
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: c80ae00e1bcbc4498ec4705195c3208170cee1b1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429319"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578920"
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Alkalmazandó árak és engedmények keresése
 
@@ -60,3 +57,6 @@ Ellenőrizze, hogy a Vevői számla mező az US-001 vevőszámot tartalmazza-e.
     * A T0012 termékhez két sorkedvezmény-megállapodás tartozik, 5 százalék engedményt adva egy rendelési sor mennyiséghez 1-től 10-re, illetve 10 felett rendelési mennyiségre vonatkozóan 7 százalékos engedményt. Vegye figyelembe, hogy az engedmények egy termékcsoportra vonatkoznak, ebben a példában a 01 csoportkódra, amelynek a T0012 termék tagja.  
 4. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

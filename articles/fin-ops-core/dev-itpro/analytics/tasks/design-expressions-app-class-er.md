@@ -1,12 +1,11 @@
 ---
 title: ER-kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)
-description: Ez az útmutató azzal kapcsolatban tartalmaz tájékoztatást, hogy hogyan használhatja fel újra a meglévő alkalmazáslogikát az elektronikus jelentéskészítési (ER-) konfigurációkban az ER-kifejezések alkalmazásosztályainak szükséges metódusainak lehívásával.
+description: Ez a témakör leírja, hogy hogyan használhatja fel újra a meglévő alkalmazáslogikát az elektronikus jelentéskészítési konfigurációkban az alkalmazásosztályok szükséges metódusainak lehívásával.
 author: NickSelin
 manager: AnnBe
 ms.date: 12/12/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d79d1a4e86731a62de4896a489a13f624ce159f
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 11b4d185703731d8491ad10bdeedea40ce811f5d
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4682021"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5564094"
 ---
 # <a name="design-er-expressions-to-call-application-class-methods"></a>ER-kifejezések tervezése az alkalmazásosztályú metódusok meghívására (ER)
 
@@ -157,3 +156,6 @@ Tesztelési célokra hajtsa végre a letöltött SampleIncomingMessage.txt fájl
 2. Kattintson az OK gombra.
     * Tekintse át az XML-formátumú kimenetet, amely azokat az adatokat jelöli, amelyeket a kiválasztott fájlból importált, és az adatmodellbe portolt a rendszer. Vegye figyelembe, hogy az importált TXT-fájlnak csak 3 sora került feldolgozásra. A rendszer kihagyta a 4. sorban található érvénytelen IBAN-kódot, és hibaüzenetet hagyott az információs naplóban.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

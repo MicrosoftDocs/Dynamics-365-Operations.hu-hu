@@ -2,26 +2,23 @@
 title: EUR-00018 Áfa-egyeztetési jelentés
 description: Ez az eljárás bemutatja, hogyan készíthető el az izlandi és norvég jogalanyok számára rendelkezésre álló Adóegyeztetési jelentés.
 author: v-oloski
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MainAccountLookup
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 496c4841d36174be3e65b0a4fc9a3a331662637f
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 936f769914e57129e057a2e7602fecd401245e01c354bf7185caf24349fd58a5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408041"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774201"
 ---
 # <a name="eur-00018-vat-reconciliation-report"></a>EUR-00018 Áfa-egyeztetési jelentés
 
@@ -41,3 +38,6 @@ Ez az eljárás bemutatja, hogyan készíthető el az izlandi és norvég jogala
 6. Válassza az Igen lehetőséget a Részletek megjelenítése mezőben.
 7. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

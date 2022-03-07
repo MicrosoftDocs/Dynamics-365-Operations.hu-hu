@@ -2,7 +2,7 @@
 title: A termék életciklusának állapotai és tranzakciói
 description: Ez a témakör bemutatja, hogy ahogy egy mérnöki termék végighalad az életciklusán, hogyan tudja szabályozni, hogy az egyes életciklus-állapotokhoz melyik tranzakciók engedélyezettek.
 author: t-benebo
-ms.date: 02/17/2022
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 1e9b8a9f25edfa654a57e0ab4071cd93c8033d85
-ms.sourcegitcommit: d375ef4138e898621416754c40770d8ccca4d271
-ms.translationtype: MT
+ms.openlocfilehash: 12f95feda887b5f1284624e5f072b498a78d00e1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8322744"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574641"
 ---
 # <a name="product-lifecycle-states-and-transactions"></a>A termék életciklusának állapotai és tranzakciói
 
@@ -93,13 +93,5 @@ Tegyük fel például, hogy csak egy adott termék (póló) egy változatát (pi
 - Rendelje hozzá a terméket egy életciklus-állapothoz, amely lehetővé teszi a folyamatot. Például rendelje hozzá a pólóterméket az *Értékesíthető* életciklus-állapothoz, amely lehetővé teszi az *Értékesítési rendelés* üzleti folyamatot.
 - Rendelje hozzá az értékesíthető változatot egy életciklus-állapothoz, amely lehetővé teszi a folyamatot. Például rendelje hozzá a piros változatot is az *Értékesíthető* életciklus állapothoz.
 - Az összes többi változathoz egy másik életciklus-állapotot kell hozzárendelni, ahol a folyamat blokkolva van. Például rendelje hozzá a fehér változatot (és az összes többi változatot) a *Nem értékesíthető* életciklus állapothoz, ami blokkolja az *Értékesítési rendelés* üzleti folyamatát.
-
-## <a name="default-product-lifecycle-states"></a>A termékek életciklusának alapértelmezett állama
-
-A műszaki verziók alapértelmezett életciklus-állapotát a műszaki kategória adja meg. Új mérnöki verzió létrehozása esetén az állam lesz az alapérték, az új termék első verziójával együtt.
-
-Új termék vagy mérnöki termék létrehozása esetén az alapértelmezett életciklusállapotot is be lehet állítani, ha a sablonban megadhatja a termékhez rendelt kiadási irányelvből kiadott terméket.
-
-Ebben az esetben új mérnöki termék létrehozása esetén a termék életciklusa a verziótól eltérő állapotban lehet.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

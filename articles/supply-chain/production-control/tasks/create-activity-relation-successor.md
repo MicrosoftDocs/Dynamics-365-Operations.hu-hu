@@ -2,27 +2,24 @@
 title: Tevékenységkapcsolat létrehozása – Követő
 description: Lean termelési folyamat esetén a tevékenységek folyamata tevékenységkapcsolatokon keresztül kerül dokumentálásra.
 author: cvocph
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LeanProductionFlow, PlanActivity, PlanActivityRelationNew, PlanActivityLookup, DefaultDashboard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 91e1535ab6b53ad60394967d0377606a0cd27d01
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e46dda12d4ad2b23ee86d240e6cdd8a1d46f1838
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429243"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5829234"
 ---
 # <a name="create-activity-relation---successor"></a>Tevékenységkapcsolat létrehozása – Követő
 
@@ -66,3 +63,6 @@ Előfeltételek:
 12. Zárja be a lapot.
 13. Frissítse a lapot..
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

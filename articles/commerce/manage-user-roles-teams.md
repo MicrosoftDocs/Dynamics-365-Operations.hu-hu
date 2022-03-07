@@ -2,9 +2,11 @@
 title: Felhasználói szerepkörök kezelése a Microsoft Teams alkalmazásban
 description: Ez a témakör a Microsoft Dynamics 365 Commerce felhasználói szerepek kezelésének módját ismerteti a Microsoft Teams alkalmazásban.
 author: gvrmohanreddy
+manager: annbe
 ms.date: 03/31/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -13,16 +15,17 @@ ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-01-15
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: b76e831641d6fcef02ce14a99d63654f657fddf6087f80bbaf044f485026d635
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 73ae905b848588898f4a1c6e973bcd3a952c7dc1
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747417"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5842677"
 ---
 # <a name="manage-user-roles-in-microsoft-teams"></a>Felhasználói szerepkörök kezelése a Microsoft Teams alkalmazásban
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Commerce felhasználói szerepek kezelésének módját ismerteti a Microsoft Teams alkalmazásban.
 
@@ -30,9 +33,9 @@ Amikor csapatot hoz létre a Teams minden üzletéhez vagy csatornájához, lét
 
 Az alábbi ábra a csapattagok listáját és a Microsoft Teams felügyeleti központban található felhasználói szerepköreiket mutatja be.
 
-![Csapattagok és felhasználói szerepkörök a Microsoft Teams felügyeleti központban.](media/d365-commerce-teams-integration-user-roles.png)
+![Csapattagok és felhasználói szerepkörök a Microsoft Teams felügyeleti központban](media/d365-commerce-teams-integration-user-roles.png)
 
-A további tudnivalókat lásd: [Csoporttulajdonosok és -tagok hozzárendelése a Microsoft Teams alkalmazásban](/microsoftteams/assign-roles-permissions).
+A további tudnivalókat lásd: [Csoporttulajdonosok és -tagok hozzárendelése a Microsoft Teams alkalmazásban](https://docs.microsoft.com/microsoftteams/assign-roles-permissions).
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: dca0aba081321dff5ae061ebe4bddcae0e42bc54
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
-ms.translationtype: MT
+ms.openlocfilehash: 419e2b3b6bc5636aa75cf3ecc26e32ad22260a7e
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102763"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778107"
 ---
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Dimenziókra és termékváltozatokra vonatkozó alapértelmezett rendelésbeállítások
 
@@ -186,9 +186,12 @@ Megadhatja, hogy milyen szigorú legyen a rendszer a termékkel kapcsolatos **Al
 
 A szigorú ellenőrzés az **Alapértelmezett rendelési beállítások** lapjának **Beszerzési rendelés**, **Készlet** és **Értékesítési rendelés** gyorslapján megadott **Szokásos rendelési mennyiség** értékeire vonatkozik. Minden gyorslap saját **Több** beállítással rendelkezik, amely az adott gyorslaphoz megadott **Szokásos rendelési mennyiség** érték érvényesítésére szolgál.
 
-### <a name="turn-the-strict-validation-option-on-or-off"></a>A szigorú ellenőrzési beállítás be- és kikapcsolása
+### <a name="enable-the-strict-validation-option"></a>A szigorú ellenőrzési beállítás engedélyezése
 
-A szigorú érvényesség-ellenőrzéshez *be kell kapcsolva lennie a rendszernek az alapértelmezett rendelési mennyiségek* szigorú ellenőrzése funkciónak. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, akkor ezt a funkciót a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)*funkcióval kapcsolhatja be és kapcsolhatja ki úgy,* hogy az alapértelmezett rendelési mennyiségek szigorú ellenőrzése funkciót keresi.
+Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés lapon ellenőrizhetik a funkció állapotát, és szükség esetén engedélyezhetik vagy [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) letilthatják azt. Itt a funkció a következőként szerepel:
+
+- **Modul** - *Termékinformáció-kezelés*
+- **Funkciónév** - *Szigorú ellenőrzés az alapértelmezett rendelési mennyiségeknél*
 
 ### <a name="set-the-validation-option"></a>Az ellenőrzési lehetőség beállítása
 

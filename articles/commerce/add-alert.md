@@ -2,15 +2,12 @@
 title: Promóciós szalagcím modul
 description: Ez a témakör a promóciós szalagcím modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d9debd16b18300d090bde1862a16920d8e9185eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: f781ed22852cb2108850e7dc6762aa6a9ba0db97574cb0dcc7959f8926e47a08
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718780"
 ---
 # <a name="promo-banner-module"></a>Promóciós szalagcím modul
 
@@ -31,15 +28,13 @@ ms.locfileid: "4412777"
 
 Ez a témakör a promóciós szalagcím modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 
-## <a name="overview"></a>Áttekintés
-
 A promóciós szalagcím modulok a lapokon található belső tájékoztató üzenetek megjelenítésére szolgál. Az e-kereskedelmi webhely összes lapján megjelenő, egész webhelyen elérhető promóciókat lehet a használatukkal megjeleníteni. 
 
 A promóciós szalagcím modulok szöveges üzenetet és egy hivatkozást támogatnak. Ha egy promóciós banner modulhoz több üzenetet ad, akkor egy olyan forgótár-szalagcím lesz, amely segítségével az ügyfelek végigpörgethetik az összes üzenetet. 
 
 A promóciós szalagcím modulokat a tartalomkezelő rendszer (CMS) adatai vezérlik, és bármilyen lapra elhelyezhetők.
 
-## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Az e-kereskedelmi promóciós szalagcím használatára példa
+## <a name="usage-examples-of-promo-banners-in-e-commerce"></a>Példa az e-kereskedelmi promóciós szalagcím használatára
 
 A webhely fejlécében a promóciós szalagcímeket a webhely egészére kiterjedő promóciók és üzenetek megjelenítésére lehet használni, ahogy az alábbi példákban is.
 
@@ -51,7 +46,7 @@ A webhely fejlécében a promóciós szalagcímeket a webhely egészére kiterje
 
 A következő kép egy promóciós bannert mutat be.
 
-![Példa egy promóciós banner modulra](./media/ecommerce-Promobanner.PNG)
+![Példa egy promóciósbanner-modulra.](./media/ecommerce-Promobanner.PNG)
 
 ## <a name="promo-banner-module-properties"></a>Promóciós szalagcím modul tulajdonságai
 
@@ -63,7 +58,11 @@ A következő kép egy promóciós bannert mutat be.
 | Elvetés engedélyezése             | **Igaz** vagy **Hamis**              | Ha az érték **Igaz**, akkor az ügyfelek elvetheti a figyelmeztetést. |
 | Forgótár-váltó megjelenítése     | **Igaz** vagy **Hamis**              | Olyan érték, amely azt jelzi, hogy a körhintaváltók megjelenjenek-e, így a vevők több manuálisan váltogathatnak több szalagcímelem között. |
 | Szöveg igazítása            | **Jobb**, **Bal** vagy **Közép** | A promóciós szalagcím modul szövegének igazítása. |
-| Hivatkozás                      | Egy URL-cím                              | Az opcionális hivatkozás URL-címe. |
+| Összekapcsolás                      | Egy URL-cím                              | Az opcionális hivatkozás URL-címe. |
+|Szöveg igazítása             | **Jobb**, **Bal** vagy **Közép** | Ez a tulajdonság témabővítményként áll rendelkezésre az Adventure Works témához. Lehetővé teszi a felhasználó számára a szöveg igazítását a promóciós bannerben. |
+
+> [!IMPORTANT]
+> Az Adventure Works téma a Dynamics 365 Commerce 10.0.20-as kiadásában érhető el.
 
 ## <a name="add-a-promo-banner-module-to-a-page"></a>Promóciós szalagcím modul hozzáadása a laphoz 
 
@@ -84,7 +83,6 @@ A promóciós szalagcím modul új oldalra való felvételéhez és a kötelező
 > [!NOTE]
 > A promóciós szalagcím általában a lap fejlécének vagy egy alfejlécének helyén használatos.
 
-
 ## <a name="additional-resources"></a>További erőforrások
 
 [Modulkönyvtár – áttekintés](starter-kit-overview.md)
@@ -96,3 +94,6 @@ A promóciós szalagcím modul új oldalra való felvételéhez és a kötelező
 [Tartalomblokk-modul](add-hero-module.md)
 
 [Videólejátszó modul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

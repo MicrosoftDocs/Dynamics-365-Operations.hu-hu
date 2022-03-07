@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3f14b95a71397bf5879c97654620e1d4c22a1149
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 6dc3d21c4e7afc579e908ac770edef7b211abdfc
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016678"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244111"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket
 
@@ -106,3 +106,6 @@ Az ajánlatot szállítóként vagy beszerzési szakemberként is beviheti. Tov�
 ## <a name="view-the-purchase-order-that-is-generated"></a>A létrejött beszerzési rendelés megtekintése
 
 A Műveleti ablaktábla **Általános** lapján válassza a **Beszerzési rendelés** menüpontot. Itt megjelenő oldalon látható az ajánlat elfogadásakor létrehozott beszerzési rendelés.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

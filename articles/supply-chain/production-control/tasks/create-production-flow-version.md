@@ -1,27 +1,24 @@
 ---
 title: Termelési folyamat verziójának létrehozása
 description: Ez az eljárás a termelési folyamat új verziójának létrehozását foglalja össze.
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d513e6898827de9a3fb1ed59006b817fb9006019
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 5b72d6162edd0ae6ccbfdcfe3e63ecff30528454
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429234"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569260"
 ---
 # <a name="create-a-production-flow-version"></a>Termelési folyamat verziójának létrehozása
 
@@ -64,3 +61,6 @@ Ez az eljárás a termelési folyamat új verziójának létrehozását foglalja
     * Adja meg az Időszak a tényleges ciklusidőhöz napjainak a számát. A tényleges ciklusidő időszaka a feladatok által összesített napok száma a tényleges perctől visszafelé, a tényleges ciklusidő kiszámításához. Az érték bármikor módosítható, és azt csak a tényleges ciklusidők kiszámításához használjuk.  
 13. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

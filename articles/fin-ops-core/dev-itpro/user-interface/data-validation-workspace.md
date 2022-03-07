@@ -2,29 +2,28 @@
 title: Adatellenőrzési ellenőrzőlista munkaterülete
 description: Az Adatellenőrzési ellenőrzőlista munkaterülete lehetővé teszi az adatok ellenőrzésének folyamatát a vállalatok, a területek és az emberek között.
 author: bking
+manager: AnnBe
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DataValidationWorkspace
 audience: Application User
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.assetid: ''
 ms.search.region: Global
 ms.author: bking
-ms.openlocfilehash: fef3130f06cbb1d8afdbae93bdc55b47be3480b3
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 4e50d4c94c0b8468a80ad214a21c8f5e0dedae71
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070827"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5092331"
 ---
 # <a name="data-validation-checklist-workspace"></a>Adatellenőrzési ellenőrzőlista munkaterülete
 
 [!include [banner](../includes/banner.md)]
-
-
-[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a témakör betekintést nyújt az **Adatellenőrzési ellenőrzőlista munkaterületébe** és az ehhez társított beállításokba.
 
@@ -57,6 +56,3 @@ Az **Adat-ellenőrzési ellenőrzőlista** munkaterület használata előtt konf
 Használhat logikai feladatterületeket a szervezeten belül, csoportos ellenőrzési feladatokhoz. Például a Kötelezettségek, Kinnlevőségek vagy a Főkönyv használható feladatterületként.
 
 A **Menüpont neve** menüelem a feladathoz van rendelve és segítségével közvetlenül a társított oldalara lehet ugrani a feladathivatkozásról a munkaterületen. Például ahhoz, hogy egy adatellenőrzési feladat fusson, a kötelezettségekhez tartozó **Kötelezettségek korosítása** jelentés összekapcsolható a **Kötelezettségek korosítási jelentése** oldallal.
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

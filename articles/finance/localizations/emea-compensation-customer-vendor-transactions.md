@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: CustTable, CustVendCompensation, VendTable, CustTrans, VendTrans
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 1691503
 ms.search.region: Hungary, Poland
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e9135e52356b5025a8018028825371b967531b1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 63fe1d081a80efa0fc794bf2f223d59019f6f908
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408046"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5236313"
 ---
 # <a name="set-up-customer-and-vendor-compensation"></a>Vevői és szállítói kompenzáció beállítása
 
@@ -94,3 +93,6 @@ Miután létrehozott egy kompenzációs ajánlatot egy naplónál, és az együt
 **K: Minden országban vagy régióban rendelkezésre áll a kompenzáció funkciója?**
 
 **V:** A kompenzáció funkció csak azoknál a jogi személyeknél áll rendelkezésre, amelyeknek elsődleges címe Magyarországon vagy Lengyelországban van.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

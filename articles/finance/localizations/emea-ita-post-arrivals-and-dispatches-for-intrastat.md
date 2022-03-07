@@ -11,7 +11,7 @@ ms.author: v-aosipov
 ms.search.validFrom: ''
 ms.openlocfilehash: f7bd1811fd0e580a6b6655244c689268915d320e
 ms.sourcegitcommit: 72a82e9aeabbdecf57e1aee72975c63eba75143a
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/24/2021
 ms.locfileid: "7414787"

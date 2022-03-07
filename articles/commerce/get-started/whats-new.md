@@ -10,18 +10,17 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: ec4750d712c82ae909b0d4d7f52cc9f7f44d0875
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 690e73bfe24be3ba3cf6d25b361b2afb0938d02f
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412950"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206204"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Új és módosult elemek a Dynamics 365 Retail szolgáltatásban
 
@@ -45,3 +44,6 @@ Ez az oldal olyan forrásokat mutat be, amelyek segítenek megismerni a Microsof
 | Dynamics 365 for Retail - 7.3.2.5 | 7,3,21971,64091 | június 2018. | [KB 4342134 Microsoft Dynamics 365 for Retail: verzió 7.3.2.5 - BugFix-csomag 1\*](https://fix.lcs.dynamics.com/Issue/Details?kb=4342134&bugId=225730&qc=f3e2816c3b1434965bc738285fb40f4ad33661bdd853b799dca4c610608640af) |
 
 \* A hivatkozás egy tudásbáziscikkre (KB) mutat. A tudásbáziscikk megtekintéséhez be kell jelentkeznie a Lifecycle Services (LCS) szolgáltatásba.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

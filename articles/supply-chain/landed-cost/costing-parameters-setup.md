@@ -2,9 +2,11 @@
 title: Költségszámítási paraméterértékek beállítása
 description: A Partraszállítási költség modul beállításakor több közös értékkészletet is meghatározhat, amelyek akkor érhetők el, ha az alkalmazás más részében kiválasztja a költségszámítási paraméterértékek meghatározott típusait. Ez a témakör azt ismerteti, hogy miként kell ezeket az értékkészleteket beállítani.
 author: sherry-zheng
+manager: tfehr
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ITMCostTypeTable, ITMCostTypeGroup, ITMCostTransferGroup, ITMCostTemplateTable, ITMVolumetricDivisorTable
 audience: Application User
@@ -13,17 +15,18 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1bcce7af0a15add63f1d9c3b32563de0ab6698bd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 51c3360afc48f4f9143118ee6139803b95e5df28
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577648"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500478"
 ---
 # <a name="costing-parameter-values-setup"></a>Költségszámítási paraméterértékek beállítása
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 A **Partraszállítási költség** modul beállításakor értékenként több közös értékkészletet és kapcsolódó beállítást is meghatározhat. Ezek az értékek ezután akkor lesznek elérhetők, ha az alkalmazás más részében kiválasztja a költségszámítási paraméterértékek meghatározott típusait. Ez a témakör azt ismerteti, hogy miként kell ezeket az értékkészleteket beállítani.
 

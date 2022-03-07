@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: cabeln
 ms.search.validFrom: 2021-04-13
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: ef81ef7ad726ebe0cc6a0acd58cb68d07e222a42
-ms.sourcegitcommit: 0d14c4a1e6cf533dd20463f1a84eae8f6d88f71b
-ms.translationtype: MT
+ms.openlocfilehash: 593331a3f1073edb6a50c9bfc66e0723d222832a
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119187"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065764"
 ---
 # <a name="scale-units-in-a-distributed-hybrid-topology"></a>Skálázási egységek elosztott hibridtopológiában
 
@@ -52,11 +52,11 @@ Konfigurálhatja a központi környezetet és a felhőbeli skálázási egysége
 
 ### <a name="dedicated-warehouse-management-workload-capabilities-in-a-scale-unit"></a>Dedikált raktárkezelési számítási feladatok képességei egy skálázási egységben
 
-A raktárkezelési terhelés lehetővé teszi a raktári műveletek átméretzását és futtatását olyan környezetben, ahol különálló karbantartási ablakok vannak használatban. A raktárkezelési terhelés támogatja a legtöbb nagyvállalati raktárkezelési folyamatot. További információk: [Raktárkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](cloud-edge-workload-warehousing.md).
+A raktárfelügyeleti munkaterhelés az első elosztott munkaterhelés a méretezési egységek számára, amelyeket általános elérhetőségre bocsátanak ki. Lehetővé teszi a raktári műveletek méretezését és rugalmas környezetben való futtatását elszigetelt karbantartási ablakok használatával. A raktárkezelési munkaterhelés támogatja a legtöbb vállalati hub raktárkezelési folyamatot. További információk: [Raktárkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](cloud-edge-workload-warehousing.md).
 
 ### <a name="dedicated-manufacturing-execution-workload-capabilities-in-a-scale-unit"></a>Dedikált gyártási végrehajtási számítási feladatok képességei egy skálázási egységben
 
-A gyártási terhelés a következő lehetőségeket biztosítja:
+A gyártási munkaterhelés a következő képességeket biztosítja:
 
 - A gépkezelők és az üzemirányítók hozzáférhetnek az üzemeltetési termelési tervhez.
 - A gépkezelők diszkrét és folyamatgyártási feladatok futtatásával naprakészen tarthatják a tervet.
@@ -182,58 +182,36 @@ A Microsoft áttekinti a kérést, és a regisztrációs űrlapon megadott címr
 
 A felvétel befejezése után a port használatával konfigurálhatja a skálázási egységeket és a munkaterheléseket.
 
-### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a> A mérlegegységek és terhelések kezelése az Egységkezelő portál segítségével
+### <a name="manage-scale-units-and-workloads-by-using-the-scale-unit-manager-portal"></a><a name="scale-unit-manager-portal"></a> A méretezési egységeket és a munkaterheléseket a Scale Unit Manager portálon keresztül kezelheti
 
 Nyissa meg a [Skálázásiegység-kezelő portált](https://aka.ms/SCMSUM), és jelentkezzen be a bérlői fiókjával. A **Skálázási egységek konfigurálása** lapon hozzáadhat egy központi környezetet, ha az még nem szerepel a listán. Ezután kiválaszthatja a központot, amelyet a skálázási egységekkel és a számítási feladatokkal konfigurálni kíván.
 
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Mérlegegység-kezelő portál, Mértékegységek konfigurálása lap.":::
+:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale Unit Manager portál, Méretezési egységek konfigurálása oldal.":::
 
 Ha egy vagy több, az előfizetésben elérhető skálázási egységet szeretne hozzáadni, válassza a **Skálázási egységek hozzáadása** lehetőséget.
 
 A **Definiált számítási feladatok** lapon a **Számítási feladatok létrehozása** gombbal hozzáadhat egy raktárkezelési számítási feladatot az egyik skálázási egységhez. Minden számítási feladathoz meg kell adnia a számítási feladatok tulajdonában lévő folyamatok kontextusát. A raktárkezelési munkaterhelések esetében a kontextus egy adott hely és jogi személy adott raktára.
 
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Terhelések párbeszédpanel definiálása":::
+:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Munkaterhelések párbeszédpanel meghatározása.":::
 
-#### <a name="manage-workloads"></a><a name="manage-workloads"></a> Terhelések kezelése
+#### <a name="manage-workloads"></a>Munkaterhelések kezelése
 
-Ha egy vagy több terhelés engedélyezve van, **a** Terhelések kezelése funkcióval kezdeményezheti és kezelheti az alábbi táblázatban felsorolt folyamatokat.
+Ha egy vagy több munkaterhelés engedélyezett, használja a **Munkaterhelések kezelése** lehetőség a következő táblázatban felsorolt folyamatok kezdeményezésére és kezelésére.
 
 | Feldolgozás | Leírás |
 |---|---|
-| Skálaegység-kommunikáció szüneteltetése | Szünetelteti a központ és a mérlegegység közötti t csővezeték-üzeneteket. Ezzel a folyamattal leállíthatja a kommunikációt, és leállíthatja az adattárat a központ és a mérlegegységek között. Ezt a folyamatot előbb kell futtatnia, mielőtt futtat egy ellátásilánc-kezelési szervizműveletet a központon vagy a mérlegegységen, de ez más esetekben is használható. |
-| Skálaegység-kommunikáció folytatása | A központ és a mérlegegység közötti csővezeték-üzenetek folytatása. Lehet, hogy ezt a folyamatot kell használnia, például miután vagy a központon, vagy a mérlegegységen futtatta az ellátásilánc-kezeléshez szükséges szervizműveletet. |
-| Terhelések frissítése | Új funkciók szinkronizálása a központ és az egység terhelése között. Lehet, hogy ezt a folyamatot kell használnia, például amikor a szervizelés miatt módosítani kellett az adatcsere lekérdezéseit, és/vagy új táblákat vagy mezőket adott hozzá a terheléshez. |
-| Terhelések átvitele egy mérlegegységbe | A központon futó terhelés ütemezése egy mérlegegységbe való mozgatása érdekében. Ennek a folyamatnak a futtatásakor az adatok szinkronizálása meg fog változni, és mind a központ, mind a mérlegegység úgy lesz beállítva, hogy megváltoztassa a terhelés tulajdonosát. |
-| Mérlegegység átvitele a központba | Olyan terhelés ütemezése, amely jelenleg egy mérlegegységen fut a központba való mozgatása érdekében. Ennek a folyamatnak a futtatásakor az adatok szinkronizálása meg fog változni, és mind a központ, mind a mérlegegység úgy lesz beállítva, hogy megváltoztassa a terhelés tulajdonosát.
-| Rendkívüli váltás központra | <p>Azonnal át kell utalni egy meglévő terhelést a központba. *Ez a folyamat csak a központ aktuálisan elérhető adatainak tulajdonosát fogja megváltoztatni.*</p><p><strong>Figyelmeztetés:</strong> Ez a folyamat adatvesztést okozhat az nem szinkronizált adatok miatt, illetve az üzleti feldolgozás sikertelenségében. Ezért csak olyan olyan 4000 forintos adatokat szabad használni, ahol az üzleti folyamatokat fel kell használni a központon, mivel a mérlegegységben olyan kimaradás van, amely nem enyhíthető időn belül.</p> |
-| Elosztott topológia elosztása | A mérlegegység-telepítés eltávolítása, és csak a központon való futtatás a terhelés feldolgozása nélkül. |
+| A skálaegység kommunikációjának szüneteltetése | Szüneteltesse a csővezeték üzeneteit a hub és a skálaegység között. Ez a folyamat leállítja a kommunikációt, és lemeríti az adatvezetéket a hub és a mérlegegységek között. Ezt a folyamatot le kell futtatnia, mielőtt a Supply Chain Management szolgáltatási műveletet futtatná akár a hubon, akár a mérlegegységen, de más helyzetekben is használhatja. |
+| A skálaegység kommunikációjának folytatása | Folytassa a folyamatüzeneteket a hub és a skálaegység között. Előfordulhat, hogy ezt a folyamatot kell alkalmaznia, például miután futtatott egy Supply Chain Management szolgáltatási műveletet a hubon vagy a mérlegegységen. |
+| Munkaterhelések frissítése | Szinkronizálja az új funkciókat a hub és a skálaegység munkaterhelései között. Előfordulhat, hogy ezt a folyamatot kell alkalmaznia, például akkor, ha a szervizelés hatására megváltoztak az adatcsere-lekérdezések, és/vagy új táblákat vagy mezőket adott hozzá a munkaterheléshez. |
+| Munkaterhelések átvitele egy mérlegegységre | Ütemezze be a hubon jelenleg futó munkaterhelést, hogy áthelyezze egy méretezési egységbe. A folyamat futtatásakor az adatok szinkronizálása megtörténik, és mind a hub, mind a méretezési egység be lesz állítva a munkaterhelés tulajdonjogának megváltoztatására. |
+| Helyezze át a mérleg egységet a kerékagyra | Ütemezze be a jelenleg egy méretezési egységen futó munkaterhelést a hubra való áthelyezésre. A folyamat futtatásakor az adatok szinkronizálása megtörténik, és mind a hub, mind a méretezési egység be lesz állítva a munkaterhelés tulajdonjogának megváltoztatására.
+| Vészhelyzeti átállás a központba | <p>Azonnal helyezzen át egy meglévő munkaterhelést a hubra. *Ez a folyamat csak a hubon jelenleg elérhető adatok tulajdonjogát módosítja.*</p><p><strong>Figyelem:</strong> Ez a folyamat adatvesztést okozhat a nem szinkronizált adatoknál, és meghiúsulhat az üzleti feldolgozásban. Ezért csak vészhelyzetekben szabad használni, amikor az üzleti folyamatokat a hub-on kell feldolgozni, mert a mérlegegységben olyan leállás van, amelyet ésszerű időn belül nem lehet enyhíteni.</p> |
+| Leszerelés elosztott topológia | Távolítsa el a méretezési egység központi telepítését, és csak a hubon futtassa, munkaterhelés-feldolgozás nélkül. |
 
 :::image type="content" source="media/sum-manage-workloads.png" alt-text="Skálázásiegység- és számításifeladat-kezelési élmény.":::
 
 > [!TIP]
-> Idővel további növekményes fejlesztések lesznek hozzáadva a Scale Unit Manager tapasztalatokhoz, így egyszerűbbé teszik az életciklus-kezelési műveleteket. A jelenlegi változattal kapcsolatos különleges képességek egy olyan, a hajóra vonatkozó útmutatóban dokumentáltak, amely elérhető az ellátásilánc-kezelés elosztott topológiája részére való továbbirányítás folyamatában lévő vevők számára. <!-- KFM: Add a link to the handbook when it is published -->
-
-## <a name="feature-management-considerations-for-workloads"></a>A szolgáltatáskezeléssel kapcsolatos szempontok a terhelésekkel kapcsolatban
-
-Ez a szakasz bemutatja azokat a fontos szempontokat, amelyekre figyelembe kell venni a terhelések telepítése, a szolgáltatások hozzáadása, illetve az elosztott topológia telepítésében található funkciók eltávolítása. Számos helyzet befolyásolhatja, hogy a [módosítások](#manage-workloads) elvégzését követően kell-e terhelésfrissítést futtatnia. Ezt általában akkor kell megtennie, amikor frissíti vagy hozzáadja az új adatcsere-lekérdezéseket, és/vagy amikor új táblákat vagy mezőket ad hozzá egy korábban telepített terheléshez.
-
-### <a name="mandatory-features-for-installing-a-workload"></a>A terhelés telepítésének kötelező szolgáltatásai
-
-Terhelés telepítésekor a telepítési folyamat egy terhelésdefiníciót hoz létre, amely a két telepítés közötti adatszinkronizálás során használt adattáblák adatait tartalmazza. A rendszer automatikusan kezeli a terhelésdefiníció létrehozását a Funkciókezelésben jelenleg [engedélyezett funkciók alapján](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). Az alábbi táblázat felsorolja azokat a funkciókat, amelyeken engedélyezni kell a raktár vagy a gyártási terhelés futtatásához szükséges terhelésdefiníciókat.
-
-| Kötelező funkció | Munkaterhelés |
-|---|---|
-| GUID-azonosítók automatikus hozzárendelése a WHS-felhasználók létrehozásához | Raktár |
-| Szervezeti szintű munkazárolás | Raktár |
-| Szállítmányhullám-címke részletei | Raktár |
-| Skálázási egység támogatása a raktári alkalmazás munkalistáihoz | Raktár |
-| Termelési üzem végrehajtása | Gyártás |
-
-Ha egy terhelést a [mérlegegység-telepítési eszközökkel telepít az egy dobozos fejlesztői környezetekhez vagy a mérlegegység-kezelő](https://github.com/microsoft/SCMScaleUnitDevTools)[portálhoz](https://sum.dynamics.com), minden kötelező szolgáltatást automatikusan engedélyez a rendszer. Ha azonban olyan kézi teszttelepítést ad meg, amelyből hiányzik egy vagy több kötelező funkció, a terhelés telepítése sikertelen lesz, és egy üzenet jelenik meg, amely felsorolja a hiányzó funkciókat. Ezt követően manuálisan kell engedélyeznie ezeket a szolgáltatásokat, és újra kell telepítenie a terhelést.
-
-### <a name="enabling-or-disabling-features-that-have-data-synchronization-dependencies"></a>Az adatszinkronizálási függőségekkel kapcsolatos funkciók engedélyezése vagy letiltása
-
-A központ és a mérlegegységei között szinkronizált adatok kiválasztását befolyásoló funkciók szintén hatással vannak a terhelés meghatározásának a létrehozási folyamatára. Emiatt a terhelés telepítése előtt engedélyezni kell ezeket a funkciókat. Ha a terhelés futtatása közben engedélyezi ezt a szolgáltatástípust, a szolgáltatás engedélyezése után újra létre kell hoznia a [terhelés](#manage-workloads)-definíciót egy terhelésfrissítés futtatásával. Hasonlóképpen, ha a terhelés futtatása közben letilt egy olyan funkciót, amely adatszinkronizálási függőségeket tartalmaz, akkor egy terhelésfrissítés futtatásával el kell távolítania a megfelelő adatszinkronizálási adatokat a [terhelésdefinícióból](#manage-workloads).
+> Idővel további növekményes fejlesztések lesznek hozzáadva a Scale Unit Manager tapasztalatokhoz, így egyszerűbbé teszik az életciklus-kezelési műveleteket. A jelenlegi kiadással kapcsolatos különleges képességek a felvételre vonatkozó útmutatóban találhatók meg, ami elérhető a Supply Chain Management osztott, hibrid topológiáját felvevő vevők számára. <!-- KFM: Add a link to the handbook when it is published -->
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

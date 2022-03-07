@@ -2,16 +2,13 @@
 title: Feladatrögzítő és Súgó a Retail Modern POS (MPOS) rendszerhez és a Cloud POS-hez
 description: Ez a témakör azt mutatja be, hogyan használható a Feladatrögzítő a Retail Modern POS és a felhőalapú POS környezetekben.
 author: mugunthanm
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 1205393
 ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0ab8456d81fbe2dca495b65b932395572242a25c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: aedf18ef8b3d7266f3e5c7acd676241f9ec8b900f061f5363cd8d581062e83ed
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412923"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730755"
 ---
 # <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Feladatrögzítő és Súgó a Retail Modern POS (MPOS) rendszerhez és a Cloud POS-hez
 
@@ -34,7 +31,7 @@ Ez a témakör azt mutatja be, hogyan használható a Feladatrögzítő a Retail
 
 ## <a name="overview"></a>Áttekintés
 
-A Retail Modern POS és a felhőalapú POS felületén elérhető Feladatrögzítő egy olyan új megoldás, melynek megalkotásakor a gyors reakció igényét tartottuk szem előtt. Rugalmas alkalmazásprogramozási felületet (API-t) biztosít a bővítés érdekében, illetve zökkenőmentes integrációt kínál az üzleti folyamatokat rögzítő ügyfelek számára. Ezenkívül a Feladatrögzítőnek a Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) Üzletifolyamat-modellező eszközével való integrációja is megvalósult. A felhasználók ezért továbbra is multimédiás diagramokat készíthetnek az üzleti folyamatokról a felvételek segítségével, és ez alapján elemezhetik, illetve tervezhetik az alkalmazásaikat.
+A Retail Modern POS és a Cloud POS felületén elérhető Feladatrögzítő egy olyan új megoldás, melynek megalkotásakor a gyors reakció igényét tartottuk szem előtt. Rugalmas alkalmazásprogramozási felületet (API-t) biztosít a bővítés érdekében, illetve zökkenőmentes integrációt kínál az üzleti folyamatokat rögzítő ügyfelek számára. Ezenkívül a Feladatrögzítőnek a Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) Üzletifolyamat-modellező eszközével való integrációja is megvalósult. A felhasználók ezért továbbra is multimédiás diagramokat készíthetnek az üzleti folyamatokról a felvételek segítségével, és ez alapján elemezhetik, illetve tervezhetik az alkalmazásaikat.
 
 ## <a name="architecture"></a>Felépítés
 
@@ -58,14 +55,14 @@ Kövesse ezeket a lépéseket, ha új felvételt szeretne létrehozni a Feladatr
 1. Indítsa el a Retail Modern POS vagy a felhőalapú POS rendszert, és jelentkezzen be.
 2. A **Beállítások** oldalon, a **Feladatrögzítő** szakaszban kattintson a **Feladatrögzítő megnyitása** lehetőségre. Megjelenik a **Feladatrögzítő** ablaktábla. Ha a **Bezárás** gombra (**X**) kattint a jobb felső sarokban, azzal bezárhatja a **Feladatrögzítő** táblát, mielőtt elkezdene egy új felvételt. A tábla újbóli megnyitásához ismételje meg a 2. lépést.
 
-    [![Feladatrögzítő tábla](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
+    [![Feladatrögzítő tábla.](./media/newrecording-1024x450.jpg)](./media/newrecording.jpg)
 
 3. Adja meg a felvétel nevét és leírását, majd kattintson az **Indítás** gombra. Amikor rákattint az **Indítás** gombra, elindul a rögzítési munkamenet.
 
     > [!NOTE]
     > Ha a **Bezárás** gombra (**X**) kattint a jobb felső sarokban, miközben a felvétel folyamatban van, akkor a **Feladatrögzítés** tábla bezáródik, ám a felvételi munkamenet nem marad abba. A Feladatrögzítő tábla újbóli megnyitásához kattintson a **Súgó** gombra (kérdőjel) a képernyő tetején.
     >
-    > [![Kérdőjel](./media/help.jpg)](./media/help.jpg)
+    > [![Kérdőjel.](./media/help.jpg)](./media/help.jpg)
 
 4. Amikor rákattint a **Start** lehetőségre, a Feladatrögzítő rögzítés módba lép. A **Feladatrögzítő** ablaktábla olyan információkat és vezérlőket jelenít meg, amelyek kapcsolódnak a rögzítési folyamathoz.
 5. Hajtsa végre azokat a műveleteket, amelyeket végre szeretne hajtani a Retail Modern POS vagy a felhőalapú POS kezelőfelületén.
@@ -75,7 +72,7 @@ Kövesse ezeket a lépéseket, ha új felvételt szeretne létrehozni a Feladatr
 
 A rögzítési munkamenet befejezésekor több lehetőség is megjelenik a felvétel letöltésére.
 
-[![Letöltési beállítások](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
+[![Letöltési beállítások.](./media/downlaod-options.jpg)](./media/downlaod-options.jpg)
 
 ### <a name="save-to-this-pc"></a>Mentés erre a PC-re
 
@@ -91,7 +88,7 @@ A nyers felvételt tartalmazó fájl hasznos a fejlesztési feladatokhoz, péld�
 
 ## <a name="recording-controls"></a>Rögzítési vezérlőelemek
 
-[![Rögzítési vezérlőelemek](./media/controls.jpg)](./media/controls.jpg)
+[![Rögzítési vezérlőelemek.](./media/controls.jpg)](./media/controls.jpg)
 
 ### <a name="stop"></a>Leállítás
 
@@ -120,29 +117,32 @@ Megadhatja a csoportosított lépések készletének első és utolsó elemét a
 
 A megjegyzés olyan további szöveg, amelyet hozzáadhat egy lépéshez a rögzítés során. Például a jegyzetek segítségével további környezetet vagy utasításokat biztosíthat a felhasználónak. Megjegyzéseket a lépések előtt vagy után adhat meg. Úgy adhat megjegyzést a lépésekhez, hogy rákattint a **Szerkesztés** gombra (ceruza szimbólum) a lépéstől jobbra.
 
-[![Szerkesztés gomb egy lépésnél](./media/annotate.jpg)](./media/annotate.jpg)
+[![Szerkesztés gomb egy lépésnél.](./media/annotate.jpg)](./media/annotate.jpg)
 
 ### <a name="texts-and-notes"></a>Szövegek és megjegyzések
 
 A **Szövegek** és **Megjegyzések** mezők segítségével olyan szöveget adhat meg, amelyiket egy lépéshez társíthat egy Feladat-útmutatóban.
 
-[![Szöveg és Megjegyzések mezők](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
+[![Szöveg és Megjegyzések mezők.](./media/annotatesteps.jpg)](./media/annotatesteps.jpg)
 
 #### <a name="text"></a>Szöveg
 
 A **Szöveg** mezőben beírt szöveg a lépés szövege *felett* jelenik meg a Feladat-útmutatóban. Ez a hely olyan szöveg számára megfelelő, amelyiket a felhasználónak a lépés végrehajtása előtt kell elolvasnia.
 
-#### <a name="notes"></a>Megjegyzések
+#### <a name="notes"></a>Jegyzetek
 
 A **Megjegyzések** mezőben beírt szöveg a lépés szövege *alatt* jelenik meg a Feladat-útmutatóban. A megjegyzés szövegének elolvasásához a felhasználónak ki kell bontania a lépés szövegét az előugró ablakban. Ez a hely megfelelő további anyagok vagy egyéb olyan információ elolvasásához, amely hasznos lehet a felhasználó számára, de a felhasználó számára ez nem kötelező a művelet végrehajtásához.
 
 ## <a name="help-in-retail-modern-pos-and-cloud-pos"></a>A Retail Modern POS és a Cloud POS súgója
 
-A saját feladatrögzítéseinek a Retail Modern POS és a felhőalapú POS Súgó ablakaiban való megjelenítéséhez annak érdekében, hogy ezáltal szövegként megtekinthetőek legyenek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása](../fin-and-ops/get-started/help-connect.md). A Retail Modern POS és a felhőalapú POS Súgó valós időben keres az LCS-ben. Az összes olyan BPM könyvtárban keres, amelyet kijelöltek a Commerce Súgó rendszerparaméterei között, és megjeleníti a releváns találatokat. A **Súgó** menü eléréséhez kattintson a **Súgó** gombra (kérdőjel) a képernyő tetején, majd írja be a folyamata nevét a keresőmezőbe, és nyomja le a Keresés gombot.
+A saját feladatrögzítéseinek a Retail Modern POS és a felhőalapú POS Súgó ablakaiban való megjelenítéséhez annak érdekében, hogy ezáltal szövegként megtekinthetőek legyenek, a feladatrögzítést a saját BPM-tárába kell mentenie, majd ezután a súgórendszer paramétereit be kell állítania, hogy azok a BPM-tárára mutassanak. További tájékoztatást a következő témakörben talál: [Súgórendszer csatlakoztatása](../fin-ops-core/fin-ops/get-started/help-connect.md). A Retail Modern POS és a felhőalapú POS Súgó valós időben keres az LCS-ben. Az összes olyan BPM könyvtárban keres, amelyet kijelöltek a Commerce Súgó rendszerparaméterei között, és megjeleníti a releváns találatokat. A **Súgó** menü eléréséhez kattintson a **Súgó** gombra (kérdőjel) a képernyő tetején, majd írja be a folyamata nevét a keresőmezőbe, és nyomja le a Keresés gombot.
 
-[![Súgó gomb](./media/help.jpg)](./media/help.jpg)
+[![Súgó gomb.](./media/help.jpg)](./media/help.jpg)
 
 Amikor rákattint egy Feladat-útmutatóra a keresési találatok között, vagy megtekintheti a lépéseket súgótémakörként, vagy exportálhatja őket Word-dokumentumba.
 
 > [!NOTE]
 > A Retail Modern POS és a Cloud POS Súgója nem hozza fel a feladat-útmutatókat a képernyő vagy a végzett művelet alapján. A keresőmezőbe be kell írnia a folyamat nevét, majd kattintson a **Keresés** lehetőségre.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

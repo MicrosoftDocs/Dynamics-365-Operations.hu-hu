@@ -1,27 +1,24 @@
 ---
 title: Eladási ár kiválasztási feltételeinek létrehozása
 description: Ez az eljárás bemutatja, hogyan hozhat létre eladási ár kiválasztási feltételeket az attribútumalapú eladásiár-modellekhez.
-author: ShylaThompson
-manager: tfehr
+author: t-benebo
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelSelectionCriteria, SysQueryForm, SysQueryTableLookUp, SysQueryFieldLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4ae444008e550d808a02d55dad02cc1b52874f0d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ed7083f289948033782f74dd9ed1b3c2d2a73aea
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429509"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568447"
 ---
 # <a name="create-sales-price-selection-criteria"></a>Eladási ár kiválasztási feltételeinek létrehozása
 
@@ -29,28 +26,31 @@ ms.locfileid: "4429509"
 
 Ez az eljárás bemutatja, hogyan hozhat létre eladási ár kiválasztási feltételeket az attribútumalapú eladásiár-modellekhez. Az eljáráshoz előfeltétel, hogy legyen legalább egy elérhető eladásiár-modell. Ebben a példában a hangszóró megoldás eladásiár-modelljének ármodelljét használjuk a USMF bemutatócég esetében. Ezt az eljárást általában a termékmenedzser használja.
 
-
 ## <a name="add-a-new-criterion-for-an-existing-sales-price-model"></a>Új feltétel hozzáadása a meglévő eladásiár-modellhez
-1. Kattintson a Termékváltozat modelldefinícióra.
-2. Kattintson a Termékkonfigurációs modellek lehetőségre.
-3. A listában jelölje ki a hangszóró megoldás termékmodelljének a sorát, de ne kattintson a modell nevének hivatkozására.
-4. A Művelet panelen kattintson a Modell elemre.
-5. Kattintson az Ármodellfeltételek lehetőségre.
-6. Kattintson az Új elemre.
-7. A Név mezőbe írja be a „10. vásárlócsoport” szöveget.
+
+1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
+1. A listában jelölje ki a hangszóró megoldás termékmodelljének a sorát, de ne kattintson rá a modell nevének hivatkozására.
+1. A Műveleti ablaktáblán kattintson a **Modell** elemre.
+1. Válassza ki az **Ármodellfeltételek** lehetőséget.
+1. Válassza az **Új** lehetőséget.
+1. A **Név** mezőbe írja be a „10. vásárlócsoport” szöveget.
     * Az ármodellfeltétel nevének a használata segít azonosítani az alapul szolgáló kiválasztási feltételeket.  
-8. Az Ármodell mezőben adjon meg vagy válasszon ki egy értéket.
-9. A Rendeléstípus mezőben válassza ki az Értékesítési rendelés elemet.
+1. Az **Ármodell** mezőben adjon meg vagy válasszon ki egy értéket.
+1. A **Rendeléstípus** mezőben válassza ki az *Értékesítési rendelés* elemet.
     * A rendelés típusa határozza meg, hogy az adatbázis mely mezői állnak rendelkezésre a kiválasztási lekérdezéshez.  
-10. Adja meg a dátumot az Érvényesség kezdete mezőben.
-11. Az Érvényesség vége mezőben adjon meg egy dátumot.
-12. Kattintson a Mentés gombra.
+1. Adja meg a dátumot az **Érvényesség kezdete** mezőben.
+1. Az **Érvényesség vége** mezőben adjon meg egy dátumot.
+1. Válassza a **Mentés** lehetőséget.
 
 ## <a name="create-the-query-for-the-selection-criteria"></a>A lekérdezés létrehozása a kiválasztási feltételekhez
-1. Kattintson a Szerkesztés lehetőségre.
-2. Válasszon ki vevőket a Tábla mezőben. 
-3. A Mező mezőben válassza ki a Vevőcsoportot.
-    * Ebben a példában egy bizonyos vevőcsoportot fogunk használni kiválasztási feltételnek.  
-4. A Feltétel mezőben válassza ki a 10. vevőcsoportot. 
-5. Kattintson az OK gombra.
 
+1. Válassza ki a **Szerkesztés** opciót.
+2. Válasszon ki **Vevőket** a *Tábla* mezőben.
+3. A **Mező** mezőben válassza ki a *Vevőcsoportot*.
+    * Ebben a példában egy bizonyos vevőcsoportot fogunk használni kiválasztási feltételnek.  
+4. A **Feltétel** mezőben válassza ki a *10. vevőcsoportot*.
+5. Válassza ki az **OK** lehetőséget.
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

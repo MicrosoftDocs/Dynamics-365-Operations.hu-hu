@@ -2,27 +2,24 @@
 title: Fejlécmodul
 description: Ez a témakör a fejlécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet oldalfejléceket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-manager: annbe
-ms.date: 10/20/2020
+ms.date: 07/08/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 52069af5ca2211473d4a096ad850b5be1290bba1
-ms.sourcegitcommit: eee3523be26369aecdb36c0143a6ee3dab4b7966
-ms.translationtype: HT
+ms.openlocfilehash: afdc12230ebad3d5db59c384b2f1066d2c7929339f282ed4880ff967b1fd2d8b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "4412997"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712790"
 ---
 # <a name="header-module"></a>Fejlécmodul
 
@@ -30,15 +27,13 @@ ms.locfileid: "4412997"
 
 Ez a témakör a fejlécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet oldalfejléceket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 
-## <a name="overview"></a>Áttekintés
-
 A Dynamics 365 Commerce alkalmazásban egy oldalfejléc oldaltöredékként van konfigurálva, amely tartalmazza a fejléc, promóciós banner és cookie-hozzájárulás modulokat. 
 
 A fejlécmodul tartalmaz egy webhelyemblémát, a navigációs hierarchiára mutató hivatkozásokat, a webhely egyéb oldalaira mutató hivatkozásokat, egy kosárikon modult, egy kívánságlista szimbólumot, bejelentkezési beállításokat és a keresési sávot. A program automatikusan optimalizálja a fejlécmodult arra az eszközre, amelyről a webhelyet megtekintik (azaz egy asztali eszközre vagy egy mobileszközre). Egy mobileszköz esetében például a navigációs sáv össze van csukva egy **Menü** gombba (amelyet néha *hamburger menünek* neveznek).
 
 A következő kép egy kezdőoldalon használt címsormodul egy példáját jeleníti meg.
 
-![Példa egy címsor modulra](./media/ecommerce-header.png)
+![Példa egy címsormodulra.](./media/ecommerce-header.png)
 
 ## <a name="properties-of-a-header-module"></a>Fejlécmodul tulajdonságai
 
@@ -63,9 +58,16 @@ A következő modulban használható a fejlécmodulban:
 - **Üzletválasztó** – az üzletválasztó modul szerepelhet a fejléc modul üzletválasztó helyén. Lehetővé teszi, hogy a felhasználók böngésszenek és megtalálják a közeli üzleteket. A felhasználók megadhatnak egy preferált üzletet is. Ez az üzlet a fejlécben jelenik meg. Amikor az üzletválasztó modul szerepel a fejléc modulban, a **mód** tulajdonsága beállítása legyen **üzletek keresése**. További információ: [Üzletválasztó modul](store-selector.md).
 
 > [!NOTE]
-> - A kosárikon modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.11-es kiadásában érhető el.
-> - A telephely-választó modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.14-es kiadásában érhető el.
-> - Az üzletválasztó modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.15-es kiadásában érhető el.
+> - A kosárikon modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.11-es verziójában érhető el.
+> - A webhelyválasztó modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.14-es verziójában érhető el.
+> - Az üzletválasztó modul használatának támogatása a fejlécmodulban a Dynamics 365 Commerce 10.0.15-ös verziójában érhető el.
+
+## <a name="header-module-in-the-adventure-works-theme"></a>A fejlécmodul a Adventure Works témában
+
+Az Adventure Works témában a fejlécmodul támogatja a **Mobileembléma** tulajdonságot. Ez a tulajdonság lehetővé teszi egy embléma megadását a mobil nézetablakok számára. A **Mobilembléma** tulajdonság moduldefiníciós bővítményként áll rendelkezésre.
+
+> [!IMPORTANT]
+> Az Adventure Works téma a Dynamics 365 Commerce 10.0.20-as kiadásában érhető el.
 
 ## <a name="create-a-header-fragment-for-a-page"></a>Fejléctöredék létrehozása egy oldalhoz
 
@@ -119,3 +121,6 @@ Ha azt szeretné, hogy minden lapon megjelenjen a fejléc, hajtsa végre az alá
 [Telephelyválasztó modul](site-selector.md)
 
 [Üzletválasztó modul](store-selector.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

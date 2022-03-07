@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1eca3112b95bc7d1a049f101fc1d461272a63aa
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: cec4f644af4a087464635d9a7ca825eb354747eb
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022256"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5259962"
 ---
 # <a name="asset-manufacturers-and-models"></a>Eszközgyártók és modellek
 
@@ -59,3 +59,6 @@ Ez a témakör azt mutatja be, hogyan lehet eszközgyártókat és kapcsolódó 
 2. Az **Eszköz** oszlopban válassza ki az eszköz hivatkozását. Megjelenik a **Részletek** oldal.
 3. Válassza ki a **Szerkesztés** opciót.
 4. Az **Általános** gyorslapon válassza ki a **Gyártó** és **Modell** mezők értékeit.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: Csatorna navigációs hierarchiájának létrehozása
 description: Ez a témakör azt mutatja be, hogyan lehet csatornanavigációs hierarchiát létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: samjarawan
-manager: annbe
-ms.date: 01/27/2020
+ms.date: 04/27/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e83860667f142adcc85cd8542d521e18f16dbc2c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: d522838bdddf6cda6d7e451b27183f733e3de53df865d49cdadf846cf99cc953
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749955"
 ---
 # <a name="create-a-channel-navigation-hierarchy"></a>Csatorna navigációs hierarchiájának létrehozása
 
@@ -52,7 +49,7 @@ Csatorna navigációs hierarchiájának létrehozásához kövesse az alábbi l�
 
 A következő képen egy gyökércsomópont példája látható.
 
-![Minta gyökércsomópont](media/create-channel-hierarchy-1.png)
+![Minta gyökércsomópont.](media/create-channel-hierarchy-1.png)
 
 ## <a name="create-navigation-category-nodes"></a>Navigációskategória-csomópontok létrehozása
 
@@ -68,7 +65,7 @@ További navigációskategória-csomópontok létrehozásához a csatornán szer
 
 A következő kép egy példát mutat be egy elkészített csatorna navigációs hierarchiára.
 
-![Minta csatornahierarchia](media/create-channel-hierarchy-2.png)
+![Minta csatornahierarchia.](media/create-channel-hierarchy-2.png)
 
 ## <a name="add-products-to-category-nodes"></a>Termékek hozzáadása a kategóriacsomópontokhoz
 
@@ -80,11 +77,11 @@ Termékek hozzáadásához a kategóriacsomópontokhoz hajtsa végre az alábbi 
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
 
 > [!NOTE]
-> A termékeket a csatorna navigációs hierarchiáján belül egy csomóponthoz való hozzáadása, nem elegendő ahhoz, hogy a termékek egy kiválasztott csatornán megjelenjenek, a termékeket hozzá kell társítani egy termékhez is.
+> A termékeket a csatorna navigációs hierarchiáján belül egy csomóponthoz való hozzáadása, nem elegendő ahhoz, hogy a termékek egy kiválasztott csatornán megjelenjenek, a termékeket hozzá kell társítani egy csatornához is. A szortimentekkel kapcsolatos további tudnivalókért lásd: [Szortimentek kezelése](assortments.md).
 
 A következő képen egy csomópont példája láható, hozzáadott termékekkel.
 
-![Termékek hozzáadva egy kategóriacsomóponthoz](media/create-channel-hierarchy-3.png)
+![Termékek hozzáadva egy kategóriacsomóponthoz.](media/create-channel-hierarchy-3.png)
 
 ## <a name="add-product-attribute-groups-to-category-nodes"></a>Termékattribútumok-csoportok hozzáadása a kategóriacsomópontjokhoz
 
@@ -100,10 +97,13 @@ A következő lépésekkel lehet hozzáadni egy attribútumcsoportot egy kategó
 
 A következő képen egy csomópontminta láható, hozzáadott termékattribútum-csoportokkal.
 
-![Termékattribútum-csoportok egy csomóponton](media/create-channel-hierarchy-4.png)
+![Termékattribútum-csoportok egy csomóponton.](media/create-channel-hierarchy-4.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szortimentek beállítása](set-up-assortments.md)
 
 [Attribútumok és attribútumcsoportok kezelése](attribute-attributegroups-lifecycle.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

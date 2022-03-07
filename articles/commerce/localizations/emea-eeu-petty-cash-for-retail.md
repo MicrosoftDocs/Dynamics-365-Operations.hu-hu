@@ -2,11 +2,9 @@
 title: Commerce pénztárkezelés (Kelet-Európa)
 description: Ez a témakör leírja, hogyan lehet beállítani és használni a készpénzkezelő funkciókat a Commerce esetében Kelet-Európában.
 author: epopov
-manager: annbe
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 91a3e35c973405f3b0eefb42d83847f5dd3fc60c
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: 7a4c2e404b42a10a8d5f8b57135c56ae479a9efc3f5a8cef30831d02a3e53fe6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719912"
 ---
 # <a name="petty-cash-management-for-commerce-for-eastern-europe"></a>Commerce pénztárkezelés (Kelet-Európa)
 
@@ -28,7 +26,7 @@ ms.locfileid: "5017229"
 
 A cikk közép-kelet-európai kereskedelemi iparághoz alkalmazkodó lokalizálásokról tartalmaz információkat.
 
-A kelet-európai könyvelési előírásoknak megfelelően beállíthat műveleteket készpénzes számlákhoz a nyugták, készpénzdokumentumok és készpénzjelentések folyamatainak automatizálása érdekében. További információ: [(EEUR) Paraméterek beállítása a készpénzkezeléshez](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
+A kelet-európai könyvelési előírásoknak megfelelően beállíthat műveleteket készpénzes számlákhoz a nyugták, készpénzdokumentumok és készpénzjelentések folyamatainak automatizálása érdekében. További információ: [(EEUR) Paraméterek beállítása a készpénzkezeléshez](/dynamicsax-2012/appuser-itpro/eeur-set-up-parameters-for-cash-management).
 
 A kiskereskedők fogadhat különböző típusú fizetés ellenében a termékek és szolgáltatások, amelyek értékesítik. A leggyakrabban használt képernyő Fizetési ugyan a készpénz kiskereskedők is bevételezhető fizetési bizonylatok, kártyák és csekkek formájában. Kiskereskedelmi Pénztár (POS) készpénz, a hitelkártya-bizonylatokat és egyéb kifizetések feldolgozása egy készpénz keresztül.
 
@@ -38,7 +36,7 @@ A következőket teheti a készpénz-kezeléssel a Commerce megoldásban:
 - Pénztárnaplók segítségével készpénztranzakciók feladása, a vevői kifizetések, amely a retail POS érkeznek.
 - Egy kivonatsor-tranzakciók összevonása, a kimutatás feladásakor. Csökkentett csepp összesítését, banki csepp, Bizonylattranzakciók, eltávolíthatja fizetési tranzakciók, váltópénz adatbeviteli tranzakciókról, bevételi tranzakciók, Projektköltség-tranzakciókhoz, a vevői kifizetések, értékesítési tranzakciók, és visszáru-tranzakciók.
 
-Az összes kerül sor, a POS terminálon tranzakcióit a főkönyvi napló segítségével. Készpénz-kifizetési naplók, a vevői kifizetési naplók és a főkönyvi naplók segítségével létrehozása és a kimutatások feladása. További információ: [Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása](https://docs.microsoft.com/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
+Az összes kerül sor, a POS terminálon tranzakcióit a főkönyvi napló segítségével. Készpénz-kifizetési naplók, a vevői kifizetési naplók és a főkönyvi naplók segítségével létrehozása és a kimutatások feladása. További információ: [Kiskereskedelmi üzlet kimutatásainak létrehozása, kiszámítása és feladása](/dynamics365/unified-operations/retail/tasks/create-calculate-post-statement-retail-store).
 
 A **Feladott kimutatások** oldalon, a műveleti ablak, a következőket teheti:
 
@@ -49,7 +47,7 @@ A **Feladott kimutatások** oldalon, a műveleti ablak, a következőket teheti:
 
 A pénzgazdálkodás használata előtt a következő műveletet kell beállítania:
 
-- Fizetéstípus beállítása minden olyan fizetési módhoz, amelyet a kiskereskedő elfogad a **Fizetéstípusok** képernyőn. Különféle fizetési módokat használhat a költségtranzakciók feladásához a POS esetében. A fizetés módokkal kapcsolatos további tudnivalókat lásd: [Fizetési módok](https://docs.microsoft.com/dynamics365/unified-operations/retail/payment-methods).
+- Fizetéstípus beállítása minden olyan fizetési módhoz, amelyet a kiskereskedő elfogad a **Fizetéstípusok** képernyőn. Különféle fizetési módokat használhat a költségtranzakciók feladásához a POS esetében. A fizetés módokkal kapcsolatos további tudnivalókat lásd: [Fizetési módok](/dynamics365/unified-operations/retail/payment-methods).
 - Paraméterek beállítása a készpénzes folyamatokhoz.
 - Készpénzes fizetés fizetési mód beállítása az üzletekben.
 
@@ -92,3 +90,6 @@ A következő eljárással készpénzes fizetés fizetési mód beállítása az
 
 > [!NOTE]
 > Ellenszámlát kell beállítani a fizetőeszköz készpénzes fizetés fizetési mód és a fizetőeszköz eltávolítása vagy váltópénz-bejegyzés üzlet fizetési módhoz. Ez a fizetőeszköz eltávolítása vagy váltópénz-bejegyzés tranzakciókhoz ellensúlyozott főkönyvi tételeket hoz létre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

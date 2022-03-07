@@ -11,7 +11,7 @@ ms.author: boycez
 ms.search.validFrom: 2017-06-20
 ms.openlocfilehash: 8c4264c3a4c71e6aab0e1ef8d7d8cfffad065a46
 ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 09/15/2021
 ms.locfileid: "7488363"

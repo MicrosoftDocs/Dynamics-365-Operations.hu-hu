@@ -1,30 +1,29 @@
 ---
 title: Állami szektor – kezdőlap
-description: A Microsoft Dynamics 365 Finance olyan üzleti folyamatok kezelését teszi lehetővé, amelyek mind az állami, mind a privát szektorban gyakoriak (például a költségvetés-készítéssel, a beszerzéssel, vagy a kötelezettségekkel és kinnlevőségekkel kapcsolatos feladatok).
-author: ShylaThompson
-manager: AnnBe
+description: A Dynamics 365 Finance az állami szektorban gyakran használt üzleti folyamatokat. Ezen folyamatok között költségvetés-tervezési, beszerzési, kötelezettség- és kinnlévőségkezelési feladatok egyaránt találhatók.
+author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysConfiguration
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 20691
+ms.custom:
+- "20691"
+- intro-internal
 ms.assetid: 391a6899-7011-40bc-b54b-5665b06bcecb
 ms.search.region: Global
 ms.search.industry: Public sector
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f4a3722cf286909c83b5154137c86508929a2691
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f59522ab857445d69012f4cfdfade47c40189266
+ms.sourcegitcommit: 52a6b038d42ab28092bb942c61f5196330db3a7b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459140"
+ms.lasthandoff: 11/17/2021
+ms.locfileid: "7817741"
 ---
 # <a name="public-sector-home-page"></a>Állami szektor – kezdőlap
 
@@ -60,17 +59,18 @@ Az **Állami szektor** konfigurációs kulcs engedélyezi azokat az oldalakat é
 ## <a name="how-does-the-public-sector-configuration-key-relate-to-other-configuration-keys"></a>Milyen kapcsolatban áll az Állami szektor konfigurációs kulcsa a többi konfigurációs kulccsal?
 Az alábbi táblázatban arról talál információt, hogy ez a konfigurációs kulcs milyen kapcsolatban áll a többi konfigurációs kulccsal.
 
-|            |                                                                                                                                                                                                                     |
+|   **Részletek**         |              **Leírás**                                                                                                                                                                                        |
 |------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Részletek** | **Leírás**                                                                                                                                                                                                     |
 | Szülőkulcs | Egyik sem                                                                                                                                                                                                                |
 | Gyermekkulcs | **Speciális főkönyvi bejegyzés** konfigurációs kulcs (AdvancedLedgerEntry) **Állami szektor 1099G** konfigurációs kulcs (Tax1099G) **Állami szektor 1099S** konfigurációs kulcs (Tax1099S) **Francia jogszabályok** konfigurációs kulcs |
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Az Állami szektor funkció tervezése](plan-public-sector-functionality.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

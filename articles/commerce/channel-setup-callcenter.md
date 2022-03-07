@@ -10,21 +10,20 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 3f8c47c00b920dae01213d1d241ac8ee6a18d4e3
-ms.sourcegitcommit: 4c6d31f3ebd88212d3d1497a4bba9c64c5300444
+ms.openlocfilehash: 878774c8e5485211525e7e7b63973173f6874b26
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "4413014"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218369"
 ---
-# <a name="set-up-a-call-center-channel"></a>Hívásközpont csatorna beállítása
+# <a name="set-up-a-call-center-channel"></a>Hívásközponti csatorna beállítása
 
 
 [!include [banner](includes/banner.md)]
@@ -136,3 +135,6 @@ Egy árcsoport beállításához hajtsa végre a következő műveleteket.
 [Csalással kapcsolatos figyelmeztetések beállítása és használata](set-up-fraud-alerts.md)
 
 [Folytonossági programok beállítása hívásközpontok számára](set-up-continuity-program.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

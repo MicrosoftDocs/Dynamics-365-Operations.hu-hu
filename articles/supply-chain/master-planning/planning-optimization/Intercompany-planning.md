@@ -2,16 +2,13 @@
 title: Vállalatközi tervezés
 description: Ez a témakör bemutatja a vállalatközi tervezést, és bemutatja, hogyan kell konfigurálni a vállalatközi tervezést a Microsoft Dynamics 365 Supply Chain Management Tervezési optimalizálás megoldásával.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 25c80ce27498131c6eb92174ab14a592bfa9915a
-ms.sourcegitcommit: fe21a3a98dcf6fe4eb9351941493f2c0443d8696
-ms.translationtype: HT
+ms.openlocfilehash: 2bf69a5d0d6e070374277e2d82d5fbf6eb4b8704895ffe31aa7e2d2d3546bb16
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "4672188"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777911"
 ---
 # <a name="intercompany-planning"></a>Vállalatközi tervezés
 
@@ -48,8 +45,8 @@ Ha egy alaptervből futtatja az alaptervezést, amely tartalmazza a tervezett le
 
 A vállalatközi tervezés használatához a következő módon kell felkészíteni a rendszert:
 
-1. A releváns termékeket minden érintett vállalatnál ki kell adni. További tudnivalókért lásd: [Vállalatközi kereskedelem konfigurálása és használata itt: Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) a Microsoft Learn rendszerében.
-1. A lefelé irányuló igényt a felsőbb vállalattal vállalatközi kapcsolattal rendelkező szállítótól érkező beszerzéseknek és a vevő megfelelő alapértelmezett készletdimenzióinak (hely és raktár) kell fedezniük. További tudnivalókért lásd: [Vállalatközi kereskedelem konfigurálása és használata itt: Dynamics 365 Supply Chain Management ](https://docs.microsoft.com/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) a Microsoft Learn rendszerében.
+1. A releváns termékeket minden érintett vállalatnál ki kell adni. További tudnivalókért lásd: [Vállalatközi kereskedelem konfigurálása és használata itt: Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) Microsoft Learn a rendszerében.
+1. A lefelé irányuló igényt a felsőbb vállalattal vállalatközi kapcsolattal rendelkező szállítótól érkező beszerzéseknek és a vevő megfelelő alapértelmezett készletdimenzióinak (hely és raktár) kell fedezniük. További tudnivalókért lásd: [Vállalatközi kereskedelem konfigurálása és használata itt: Dynamics 365 Supply Chain Management](/learn/modules/configure-use-intercompany-trade-dyn365-supply-chain-mgmt/) Microsoft Learn a rendszerében.
 1. A felsőbb szintű vállalat alaptervének tartalmaznia kell a tervezett lefelé irányuló igényt, és meg kell adni az érintett vállalatot és alaptervet a lefelé irányuló tervekben.
 
 ## <a name="include-planned-downstream-demand"></a>Tervezett alsóbb rétegbeli igény figyelembevétele
@@ -79,7 +76,7 @@ Ehhez a példához egy tervezett termelési rendelés jön létre a USMF vállal
 
 A következő ábra azt mutatja be, hogyan jelenhet meg ez a példa a tervezett termelési rendelés **Többszintű igénykövetés** oldalán.
 
-![Vállalatközi példa, amely két vállalatot érint](media/IntercompanyPlanning1.png)
+![Vállalatközi példa, amely két vállalatot érint.](media/IntercompanyPlanning1.png)
 
 ### <a name="intercompany-example-that-involves-three-companies"></a>Vállalatközi példa, amely három vállalatot érint
 
@@ -87,4 +84,7 @@ Ehhez a példához egy tervezett beszerzési rendelés jön létre a USMF válla
 
 A következő ábra azt mutatja be, hogyan jelenhet meg ez a példa a tervezett termelési rendelés **Többszintű igénykövetés** oldalán.
 
-![Vállalatközi példa, amely három vállalatot érint](media/IntercompanyPlanning2.png)
+![Vállalatközi példa, amely három vállalatot érint.](media/IntercompanyPlanning2.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

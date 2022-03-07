@@ -2,15 +2,12 @@
 title: Szabadság felfüggesztése
 description: Felfüggesztheti az alkalmazottak szabadságát a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SuspendLeave, LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a65eed44de41ae35bf241166ee22dd280ce5d7a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f9e60a7736bffbaad00905fffafe4c4565dc2257
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418902"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6056636"
 ---
 # <a name="suspend-leave"></a>Szabadság felfüggesztése
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Felfüggesztheti egy alkalmazottak szabadságát, hogy leállítsa a szabadság-elhatárolások feldolgozását a kiválasztott szabadságtípusokhoz. 
 
@@ -49,3 +48,6 @@ Ha az elhatárolások feldolgozása az alkalmazott szabadságának felfüggeszt�
 - [Szabadság- és távolléttípusok konfigurálása](hr-leave-and-absence-types.md)
 - [Szabadság- és távolléti tervek elhatárolása](hr-leave-and-absence-accrue.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

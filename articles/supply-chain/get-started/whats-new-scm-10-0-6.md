@@ -1,28 +1,25 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.6 alkalmazásban (2019. november)
 description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.6 új vagy módosított szolgáltatásait írja le.
-author: josaw1
-manager: tfehr
+author: kamaybac
 ms.date: 10/28/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: josaw
+ms.author: kamaybac
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 9ee25036488d2f7f24c1691d36239f3f34caf0cb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 87bcda25b89135e052a5a883b816ea0bb430479a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429567"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568903"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-1006-november-2019"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.6 alkalmazásban (2019. november)
 
@@ -59,7 +56,7 @@ A Microsoft Dynamics 365 Supply Chain Management 10.0.6 a 30-as platform frissí
 ### <a name="dynamics-365-2019-release-wave-2-plan"></a>Dynamics 365: 2019-es 2. hullám tervei
 Kíváncsi a bármelyik üzleti alkalmazásával vagy platformjával kapcsolatos, közelgő és a közelmúltban bevezetett lehetőségekre?
 
-Nézze meg a [Dynamics 365:2019 2es frissítési hullám tervét](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
+Lásd: [Dynamics 365: 2019-as 2. frissítési hullám tervét](/dynamics365-release-plan/2019wave2/). A részleteket minden apró információmorzsáig bezárólag egyetlen dokumentumban rögzítettük, amelyet felhasználhat a tervezés során.
 
 ### <a name="removed-and-deprecated-supply-chain-management-features"></a>Eltávolított és elavult Supply Chain Management szolgáltatások
 
@@ -71,3 +68,6 @@ A [Dynamics 365 Supply Chain Management eltávolított vagy elavult szolgáltat�
 Mielőtt a termékből eltávolítunk egy szolgáltatást, egy eltávolítással kapcsolatos értesítést teszünk közzé a [Dynamics 365 Supply Chain Management eltávolított vagy elavult funkciói](removed-deprecated-features-scm-updates.md) témakörben 12 hónappal az eltávolítás előtt.
 
 Olyan módosítások esetén, amelyek csak a fordítási időt érintik, de binárisan kompatibilisek a tesztkörnyezettel és a termelési környezettel, az elavulási idő 12 hónapnál rövidebb lesz. Ezek általában olyan funkcionális frissítések, amelyeket a fordítón kell elvégezni.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

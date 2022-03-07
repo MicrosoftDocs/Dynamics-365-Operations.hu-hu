@@ -2,27 +2,24 @@
 title: Az értékesítési esemény kanbanszabályának létrehozása
 description: Ez az eljárás egy olyan kanbanszabály létrehozásához szükséges beállításokkal foglalkozik, amely az értékesítési rendelés létrehozásakor aktiválódik.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1759adea6db8120078e2f32bff79178545c2328a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9325bbb8d28587baeb60cdf1fc37121c236f1a10
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429231"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828922"
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Az értékesítési esemény kanbanszabályának létrehozása
 
@@ -74,3 +71,6 @@ Ez az eljárás egy olyan kanbanszabály létrehozásához szükséges beállít
 2. Az igénykövetési fa megtekintése lehetőségre.
     * Figyelje meg, hogy a kanban mennyisége azonos az értékesítési sor létrehozásakor. Azt is láthatja, hogy az L0050 termeléséhez anyagi kiadásokra van szükség. Ez az eljárás utolsó lépése.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

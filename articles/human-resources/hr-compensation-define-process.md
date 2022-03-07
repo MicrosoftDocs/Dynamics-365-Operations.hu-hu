@@ -2,7 +2,7 @@
 title: Kompenzációs folyamat meghatározása és eredmények kiszámítása
 description: A kompenzációs folyamatokkal határozhatók meg a fix is változó kompenzációs konstrukciókba besorolt alkalmazottak új kompenzációs összegei és jutalmai.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,19 +11,21 @@ ms.technology: ''
 ms.search.form: HRMCompProcess, HRMCompProcessLine, HRMCompEvent, HRMCompEventEmpl, HcmCompensationWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 254eb4f83cc734e43920b912e81c7a9230ca82dd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 3564e7807ed81684d51de3185cea9b4f35f38d8b
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418877"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468275"
 ---
 # <a name="define-compensation-process-and-calculate-results"></a>Kompenzációs folyamat meghatározása és eredmények kiszámítása
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A kompenzációs folyamatokkal határozhatók meg a fix is változó kompenzációs konstrukciókba besorolt alkalmazottak új kompenzációs összegei és jutalmai. A Kompenzációs folyamatok többször is futtathatók többször „mi lenne ha” elemzés elvégzéséhez, hogy az összes módosítás és beállítások helyessége ellenőrizve legyen. Ez az eljárással egy kompenzációs folyamatot hoz létre, futtatja a folyamatot létrehozása, majd megtekinti az eredményeket. Ez az eljárás az USMF bemutatócéget használja.
 
@@ -100,3 +102,6 @@ A kompenzációs folyamatokkal határozhatók meg a fix is változó kompenzáci
 10. Kattintson a Jóváhagyás lehetőségre.
     * A rekordot a jóváhagyása után be lehet tölteni az alkalmazott hivatalos kompenzációs rekordjába. Az új kompenzáció a kompenzációs folyamathoz beállított tranzakciós dátummal lép érvénybe.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

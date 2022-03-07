@@ -2,28 +2,25 @@
 title: Csererendelés létrehozása egy cikkre vonatkozóan
 description: A cserecikkrendeléseket általában a visszajuttatott termék kivizsgálása után hozzák létre.
 author: josaw1
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReturnTableListPage, ReturnReplaceItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63c175d12cac91648cb57a3f41d1769e81d57af
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 57bbb8eb638b990914dc00f9700ff0c1925c48852862b02e09f3f26415d3e347
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429710"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6745502"
 ---
 # <a name="create-an-item-replacement-order"></a>Csererendelés létrehozása egy cikkre vonatkozóan 
 
@@ -68,3 +65,6 @@ A cserecikkrendeléseket általában a visszajuttatott termék kivizsgálása ut
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

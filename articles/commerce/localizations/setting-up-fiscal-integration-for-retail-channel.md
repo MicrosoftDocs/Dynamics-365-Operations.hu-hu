@@ -2,11 +2,9 @@
 title: A Commerce csatornák pénzügyi integrálásának beállítása
 description: Ez a témakör bemutatja, hogyan állíthatja be a pénzügyi integráció funkciót a Commerce csatornákhoz.
 author: josaw
-manager: annbe
 ms.date: 02/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-11-1
 ms.dyn365.ops.version: 8.1.1
-ms.openlocfilehash: 889340c13d150ce8e3ad49a08b3d7f0c25a4b77a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: bc87972b1cd2e04d31a3d48132cd1de42353698d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017893"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801917"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>A Commerce csatornák pénzügyi integrálásának beállítása
 
@@ -62,7 +60,7 @@ Mielőtt a pénzügyi integráció funkciót használná, konfigurálja a követ
 
     A pénzügyi csatlakozó felelős a kommunikációért a pénzügyi eszközzel vagy szolgáltatással. Például egy pénzügyi csatlakozó elküldhet egy XML-formátumban létrehozott pénzügyi nyugtát, amelyet egy pénzügyi dokumentumszolgáltató hozott létre egy pénzügyi nyomtatónak. Pénzügyi integráció összetevőinek kapcsolatos további tudnivalókat lásd: [Pénzügyi regisztráció folyamata és pénzügyi integrációs minták pénzügyi eszközökhöz](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices).
 
-    1. A **Pénzügyi összekötők** oldalon (**Retail and Commerce\> Csatorna beállítása \> Pénzügyi integráció \> Pénzügyi összekötők**) töltsön fel egy XML-konfigurációt minden eszközhöz vagy szolgáltatáshoz, amelyet pénzügyi integrációs célokra tervez használni.
+    1. A **Pénzügyi összekötők** oldalon (**Retail és Commerce\> Csatorna beállítása \> Pénzügyi integráció \> Pénzügyi összekötők**) töltsön fel egy XML-konfigurációt minden eszközhöz vagy szolgáltatáshoz, amelyet pénzügyi integrációs célokra tervez használni.
 
         > [!TIP]
         > A **Nézet** kiválasztásával, meg lehet tekinteni minden funkcionális és technikai profilt, amelyek az aktuális pénzügyi csatlakozóhoz kapcsolódnak.
@@ -225,3 +223,6 @@ Az halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezés�
     1. A frissítendő elrendezés kiválasztása.
     2. Adja hozzá az új gombot, és és állítsa a **Pénzügyi regisztrációs folyamat befejezése** gombtulajdonságot.
     3. Az **Elosztási ütemezés** lapon, futtassa a **1090** feladatot a módosításai átviteléhez a csatorna-adatbázisba.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

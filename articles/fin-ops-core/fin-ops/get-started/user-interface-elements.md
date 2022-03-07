@@ -2,11 +2,9 @@
 title: A felhasználói felület elemei
 description: Ez a témakör az alkalmazásban használt felhasználói felület (UI) elemeit mutatja be.
 author: tlefor
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 3e087a1abec9bf177bb831b9bbfa12895054ad07
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 71767e733dd6ac9d11e8757abf0b12dcf2a7a441
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797938"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6348605"
 ---
 # <a name="user-interface-elements"></a>A felhasználói felület elemei
 
@@ -86,3 +84,6 @@ Az *eszköztár* olyan eszközöket tartalmaz, mint például a mezők hozzáad�
 A *lista* rekordok gyűjteményének a neve, amelyeket át lehet görgetni. Ezeket a rekordokat átviheti az oldalra, ha kijelöli őket. Ez a művelet gyakran egy rácsot nyit meg.
 
 ![A következő kép példákat mutat be az eszköztárakra, rácsokra és listákra.](media/user-interface-08.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

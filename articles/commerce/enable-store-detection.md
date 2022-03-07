@@ -2,36 +2,30 @@
 title: Helyalapú áruházészlelés engedélyezése
 description: Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a hely alapú üzletészlelést a Dynamics 365 Commerce-webhely számára.
 author: brianshook
-manager: annbe
 ms.date: 07/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: f87d29a8cffb70e4dea211cea7538e5e4c85295c
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
-ms.translationtype: HT
+ms.openlocfilehash: 98aa781a42b1c82cc00c8a680007b7200e9c7413fb8e3a67b0c723ff62c1d8e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749876"
 ---
 # <a name="enable-location-based-store-detection"></a>Helyalapú áruházészlelés engedélyezése
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet bekapcsolni a hely alapú üzletészlelést a Dynamics 365 Commerce-webhely számára.
-
-## <a name="overview"></a>Áttekintés
 
 A Commerce szolgáltatás helyalapú áruházészlelés funkciója segítségével az ügyfeleknek a helyük alapján biztosíthat releváns webhelytartalmat. Ha a helyalapú áruházészlelés be van kapcsolva, a Commerce megjelenítési szolgáltatása a vevő webböngészőjének IP-címéből származó ország-/régiókódot használja, hogy a vevőt a legjobb földrajzi webhely-konfigurációhoz irányítsa.
 
@@ -58,7 +52,7 @@ Ha be szeretné kapcsolni a helyalapú áruházészlelést a Commerce szolgálta
 
 [Dynamics 365 Commerce webhely társítása online csatornával](associate-site-online-store.md)
 
-[Robots.txt fájlok kezelése](manage-robots-txt-files.md)
+[robots.txt fájlok kezelése](manage-robots-txt-files.md)
 
 [URL-átirányítások tömeges feltöltése](upload-bulk-redirects.md)
 
@@ -69,3 +63,6 @@ Ha be szeretné kapcsolni a helyalapú áruházészlelést a Commerce szolgálta
 [Több B2C-bérlő konfigurálása egy Commerce környezetben](configure-multi-B2C-tenants.md)
 
 [Tartalomkézbesítési hálózat (CDN) támogatásának hozzáadása](add-cdn-support.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

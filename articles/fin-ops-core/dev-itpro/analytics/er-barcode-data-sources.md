@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-ms.openlocfilehash: a5a396080d8b5dd4c2ed9a0eb15c1286e8799ebf
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
-ms.translationtype: MT
+ms.openlocfilehash: 72c79c37ca5b5f98637ba5069e25465bb1391306
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323952"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7343263"
 ---
 # <a name="use-barcode-data-sources-to-generate-bar-code-images"></a>Vonalkód-adatforrások használata vonalkód-képek létrehozásához
 
 [!include[banner](../includes/banner.md)]
 
-Az Elektronikus jelentési [(ER)](general-electronic-reporting.md) keretrendszer használatával ER-formátumösszetevők tervezhetők, amelyek futtatásával a szükséges elektronikus és nyomtatható kimenő dokumentumok generálhatók. A kimenő dokumentumok Microsoft Office formátumba történő előállításához meg kell adni a jelentés elrendezését egy Microsoft Excel dokumentummal vagy egy Microsoft Word dokumentummal a jelentés sablonjaként. Az [ER-műveleti tervező ](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) segítségével egy Excel- vagy Word-dokumentumot csatolhat egy ER-formátumhoz. A csatolt sablonban a következő névvel ellátott elemek vannak társítva a konfigurált formátum-összetevő elemeihez:
+Az [elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) keretrendszer olyan [ER-formátum összetevők](general-electronic-reporting.md#FormatComponentOutbound) tervezéséhez használható, amelyek futtathatók szükséges elektronikus és nyomtatható kimenő dokumentumok előállításához. A kimenő dokumentumok Microsoft Office formátumba történő előállításához meg kell adni a jelentés elrendezését egy Microsoft Excel dokumentummal vagy egy Microsoft Word dokumentummal a jelentés sablonjaként. Az [ER-műveleti tervező ](general-electronic-reporting.md#building-a-format-that-uses-a-data-model-as-a-base) segítségével egy Excel- vagy Word-dokumentumot csatolhat egy ER-formátumhoz. A csatolt sablonban a következő névvel ellátott elemek vannak társítva a konfigurált formátum-összetevő elemeihez:
 
 - Tartalmi vezérlőelemek a Word programban
 - Névvel ellátott lapok, tartományok, cellák, alakzatok és képek az Excel programban

@@ -1,12 +1,10 @@
 ---
 title: Munkarendelési projekt beállítása
 description: Ez a témakör a munkarendelés projektbeállítását mutatja be az Eszközkezelésben.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjectSetup
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 031e61549474745360ac00f9a66bef7a9dbaaf96
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: bb897ca0a7e9c45ee55244189bb1b487fbddf0714ad3ea0cac26eb7bac36a07f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021554"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754083"
 ---
 # <a name="work-order-project-setup"></a>Munkarendelési projekt beállítása
 
@@ -71,7 +69,7 @@ A beállítás lehetővé teszi a teljes integrációt a **Projektvezetés és k
 
     Alapértelmezés szerint a kezdési dátum az a dátum, amikor a munkarendelési projektet hozzáadja az oldalhoz. A rendszer az **Érvényesség kezdete** mezővel vezérli, amely alapértelmezés szerint rejtett. Az **Érvényesség kezdete** mező megjelenítéséhez válassza a **Megtekintés** \> **Összes** elemet. Ezt követően az **Érvényesség kezdete** mezőt a **Befejezési dátum** mezővel együtt használhatja a munkarendelési projekt korlátozott időtartamú érvényességének beállításához.
 
-    ![Munkarendelési projekt beállítási oldala](media/17-setup-for-work-orders.png)
+    ![Munkarendelési projekt beállítási oldala.](media/17-setup-for-work-orders.png)
 
 6. A **Projektcsoport** lapon válassza a **Hozzáadás** lehetőséget.
 7. A **Munkarendelés típusa** mezőben válasszon ki egy munkarendelés-típust.
@@ -79,9 +77,12 @@ A beállítás lehetővé teszi a teljes integrációt a **Projektvezetés és k
 9. A **Projektcsoport** mezőben válassza ki azt a projektcsoportot, amelynek a Munkarendelés-típushoz kell kapcsolódnia. Például egy **Megelőző karbantartás** nevű munkarendelés-típust valószínűleg a **Megel. karb.** vagy **Belső** nevű projektcsoporthoz társítják. Alternatív megoldásként az olyan munkarendelésekhez használt **Befektetés** munkarendelés-típus, amelyek befektetésekhez és tárgyi eszközökhöz kapcsolódnak, társítható egy **Befektet** vagy **Befektetés** projektcsoporthoz.
 10. Válassza a **Mentés** lehetőséget.
 
-![Munkarendelések projekt beállítási lapja, Munkarendelés hozzáadása](media/18-setup-for-work-orders.png)
+![Munkarendelések projekt beállítási lapja, Munkarendelés hozzáadása.](media/18-setup-for-work-orders.png)
 
 > [!NOTE]
 > Minden alkalommal, amikor munkarendelési sort hoz létre, az Eszközkezelés megkeresi azt a projektcsoportot, amely kapcsolódik a munkarendelési feladat projektjéhez. A Keresés az ebben a témakörben ismertetett beállításon alapul. Minden projektcsoport tartalmaz egy kapcsolódó projekttípust. Az **Idő- és anyageszámolás** vagy **Rögzített ár** projekttípussal rendelkező projektcsoportok csak olyan eszközök esetén érvényesek, amelyek kapcsolódnak a vevői számlához.
 >
 > A fölérendelt projektek és projektcsoportok esetén, amikor a rendszer kiválasztja az elérhető munkarendelési projektet vagy projektcsoportot, a kiválasztás az előző eljárás használatával létrehozott rekordok alapján történik. Az Eszközkezelés végigfut a munkarendelési projekthez kapcsolódó rekordokon, lehetséges egyezést keresve. Mindig a leginkább meghatározott kombinációt ellenőrzi először. Más szóval a munkarendelés fölérendelt projektjéhez az Eszközkezelés modul először az **Eszköz** mezővel való lehetséges egyezést ellenőrzi. Ha nem talál egyezést, akkor az **Eszköztípus** mezővel való egyezést ellenőrzi. Ha nem talál egyezést, akkor a **Munkavégzési helyszín** mezővel való egyezést ellenőrzi, és így tovább. Ahogy az a **Munkarendelési projektbeállítás** oldal elrendezésében is látható, ez a viselkedésmód azt jelenti, hogy a legspecifikusabb kombináció megkereséséhez az Eszközkezelés minden egyes rekordot jobbról balra ellenőriz egyezést keresve. Ha nem talál egyezést, akkor az alapértelmezett rekord, amelyben csak a projekt azonosítója van kiválasztva, lesz használva A kapcsolódó projektcsoport megkeresésének folyamata hasonló. Az Eszközkezelés először az **Eszköz** mezővel való lehetséges egyezést ellenőrzi, majd az **Eszköztípus** mezővel, majd a **Munkarendelés-típus** mezővel. Ha nem talál egyezést, akkor az alapértelmezett rekord, amelyben csak a projektcsoport van kiválasztva, lesz használva.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

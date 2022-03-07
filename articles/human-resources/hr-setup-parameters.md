@@ -1,52 +1,152 @@
 ---
 title: A Human Resources paramétereinek konfigurálása
-description: A Human Resources egyes paramétereinek beállításait közösen használják a vállalatok, azonban vannak olyan paraméter-beállítások, amelyek vállalatonként különböznek. Ez a cikk ismerteti a vállalat-specifikus HR paraméterek beállítását.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+description: Ez a témakör ismerteti a vállalat-specifikus paraméterek beállítását a Dynamics 365 Human Resources alkalmazásban.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: bac50c5f302797e28df2bc792893c8a682899a93
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
+ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418793"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7771435"
 ---
 # <a name="configure-human-resources-parameters"></a>A Human Resources paramétereinek konfigurálása
 
-Az egyes emberi erőforrások (HR) paraméterek beállítása megosztott a vállalatok között, azonban vannak olyan paraméter beállítások, amelyek vállalatonként különböznek. Ez a cikk ismerteti a vállalat-specifikus HR paraméterek beállítását.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Az Emberi erőforrások (HR) paraméterek beállítása két oldalon történik. A vállalatok között megosztott paraméterekhez az **Emberi erőforrások megosztott paraméterei** oldal használatos. A vállalatspecifikus (más szóval, a beállítások csak egy vállalatra vonatkoznak) paraméterekhez az **Emberierőforrás-paraméterek** oldal használatos. Az **Emberierőforrás-paraméterek** oldalon a beállítások 6 lapra vannak szétosztva.
+A Human Resources egyes paramétereinek beállításait közösen használják a vállalatok, azonban vannak olyan paraméter-beállítások, amelyek vállalatonként különböznek. Ez a témakör ismerteti a vállalat-specifikus Human Resources paraméterek beállítását.
 
--   Általános
--   Toborzás - ez nem része a Dynamics 365 Human Resources rendszernek
--   Kompenzáció
--   Számsorozatok
--   Családi okokból történő és a betegszabadságról szóló amerikai törvény (FMLA)
--   Alkalmazotti önkiszolgáló rendszer
+A Human Resources paraméterek beállítása két oldalon történik. A vállalatok között megosztott paraméterekhez az **Emberi erőforrások megosztott paraméterei** oldal használatos. A vállalatspecifikus (más szóval, a beállítások csak egy vállalatra vonatkoznak) paraméterekhez az **Emberierőforrás-paraméterek** oldal használatos.
 
-Minden lap egyetlen vállalatra vonatkozóan tartalmaz információkat. Az **Általános** lapon található beállítások határozzák meg a távolléttel, sérüléssel, betegséggel és új munkaerővel kapcsolatos információk megjelenését. Az ezen a lapon található beállítások meghatároznak néhány alapértelmezett tételt is, amelyek a munkavégzés során jelennek meg. Ez a lap lehetővé teszi a nyitott távolléti tranzakciókhoz használandó szín kiválasztását, jelentésekhez alkalmazott stíluslap megadását, a tanfolyamok és a távollét-regisztráció közötti integráció engedélyezését, és az integráció ellenőrzésre használni kívánt távolléti kód kiválasztását. Azt is megadhatja, hogy a sérülés- és betegségesetügyeket milyen hosszan kell megőrizni, illetve megadhatja az alapértelmezett azonosítószámot, amely egy új dolgozó felvételekor megjelenik. 
+![Lépjen a Humar Resources paramétereihez.](./media/hr-employee-self-service-human-resources-parameters.png)
 
-A **Munkaerő-felvétel** lapon található beállítások határozzák meg a pályázók felé irányuló automatikus levelezés által használt dokumentumtípusokat, illetve a kéretlen pályázatok (olyan pályázatok, amelyek nem egy konkrét munkaerő-felvételi projekthez tartoznak) esetében alkalmazott munkaerő-felvételi projektet. A munkaerő-felvételi projekt korosításához definiált időszak határozza meg a **Munkaerő-felvétel kezelése** munkaterületen található **Korosítási projektek** csempe által tartalmazott munkaerő-felvételi projekteket. A pályázati határidőre vonatkozó figyelmeztetéshez definiált időszak használatos a **Munkaerő-felvétel** munkaterületen a **Közelgő jelentkezési határidő** csempében található, a pályázati határidejükhöz közelítő munkaerő-felvételi projektek megjelenítéséhez. 
+Az **Emberierőforrás-paraméterek** oldalon a beállítások 6 lapra vannak szétosztva.
 
-A **Kompenzáció** lap meghatározza, hogy a felhasználóknak meg kell-e erősíteniük, hogy menteni szeretnék-e a rögzített vagy változó kompenzációs terv adatait. Ha bejelöli a **Mentésellenőrzés engedélyezése** jelölőnégyzetet, , minden alkalommal, amikor a felhasználók bezárnak egy kompenzációval kapcsolatos oldalt, megjelenik egy üzenet, amely megkérdezi, hogy akarják-e menteni a bejegyzést. A kompenzációkezelés egyes oldalai nem teszik lehetővé adatok törlését felhasználók számára. Tehát az által, hogy megerősítést kér a felhasználóktól az adatok mentésével kapcsolatban, képes lehet korlátozni az elmentett, de a későbbiekben nem törölhető adatok mennyiségét. Ha a **Mentésellenőrzés engedélyezése** jelölőnégyzet nincs bejelölve, a bejegyzések mentése mindig azonnal megtörténik, esetleg még az előtt, hogy a felhasználó készen állna. Ha teljesítménymenedzsmentet alkalmaz, akkor a **Kompenzáció** lapon kiválaszthat egy osztályozási modellt, amelyet a teljesítmény osztályozáskor az alkalmazott kompenzációs konstrukciókhoz rendelt modell helyett használhat. 
+- **Általános**
+- **Toborzás** (ez a lap nem része a Dynamics 365 Human Resources rendszernek)
+- **Kompenzáció**
+- **Számsorozatok**
+- **FMLA**
+- **Alkalmazotti önkiszolgáló rendszer**
+- **Vezetői önkiszolgáló rendszer**
+- **Juttatáskezelés**
+- **Szabadság és távollét**
+- **Fizetési módok**
 
-### <a name="previously-released-functionality"></a>Korábban kiadott funkciók
+Minden lap egyetlen vállalatra vonatkozóan tartalmaz információkat.
 
-A **Számsorozat** lapon található beállítások határozzák meg a sorozatokat, amelyek a rendszer az azonosítók automatikus hozzárendelésekor használ az emberi erőforrások tételeihez (például pályázatok, távolléti regisztrációk, kompenzációs folyamatok eredményei, esetszámok, tanfolyamok és tanfolyami napirendek). A számsorozat-hivatkozások és -kódok karbantartásához használja a **Számsorozatok** listaoldalt (kattintson a **Szervezet felügyelete** &gt; **Számsorozatok** &gt; **Számsorozatok** lehetőségre).
+## <a name="general"></a>Általános
+
+Az **Általános** lapon található beállítások határozzák meg a távolléttel, sérüléssel, betegséggel és új munkaerővel kapcsolatos információk megjelenését. Az ezen a lapon található beállítások meghatároznak néhány alapértelmezett tételt is, amelyek a munkavégzés során jelennek meg. Ez a lap a következőt teszi lehetővé:
+
+- A nyitott távolléti tranzakcióra alkalmazni kívánt szín megadása.
+- A jelentésekhez használt stíluslap megadása.
+- Tanfolyamok és távolléti regisztrációk közötti integráció engedélyezése.
+- Az integráció szabályozásához használt távolléti kód kiválasztása.
+- Adja meg, mennyi ideig kell megőrizni a sérüléssel és betegséggel kapcsolatos eseményeket.
+- Adja meg az új dolgozó felvétele esetén megjelenő alapértelmezett azonosítószámot.
+- Adja meg a szolgáltatási évek kiszámításához használt dátumot. 
+
+![Általános fül.](./media/hr-setup-parameters-general.png)
+
+## <a name="recruitment"></a>Munkaerő-felvétel
+
+A **Toborzás** lapon megadott beállítások határozzák meg azokat a dokumentumtípusokat, amelyek a pályázóknak automatikusan küldött levelezéshez használatosak. Jelezheti a kéretlen pályázatokhoz használt toborzási projektet is.
+
+A Toborzási projekt korosítási beállításában meghatározott időszak határozza meg, hogy mely toborzási projektek szerepelnek a Toborzáskezelés munkaterület Korosítási projektek **·** csempe **·** **·** területén. A jelentkezési határidő figyelmeztetéséhez megadott időszak használatával lehet látni a Toborzás munkaterületen a jelentkezési határidő felé közeledő toborzási **·** **·** projekteket.
+
+A toborzásról a [Jelöltek toborzása](hr-personnel-recruit.md) oldalon található részletes tájékoztatás.
+
+## <a name="compensation"></a>Kompenzáció
+
+A Dynamics 365 Finance alkalmazásban a **Kompenzáció** lap meghatározza, hogy a felhasználóknak meg kell-e erősíteniük, hogy menteni szeretnék-e a rögzített vagy változó kompenzációs terv adatait. Ha bejelöli a **Mentésellenőrzés engedélyezése** lehetőséget, amikor a felhasználók bezárnak egy kompenzációval kapcsolatos oldalt, megjelenik egy üzenet, amely megkérdezi, hogy akarják-e menteni a bejegyzést. A Kompenzációkezelés egyes oldalai nem teszik lehetővé adatok törlését felhasználók számára. Az által, hogy megerősítést kér a felhasználóktól az adatok mentésével kapcsolatban, képes lehet korlátozni az elmentett, de a későbbiekben nem törölhető adatok mennyiségét. Ha törli a **Mentésellenőrzés engedélyezése** jelölőnégyzetet, a bejegyzések mentése azonnal megtörténik, esetleg még az előtt, hogy a felhasználó készen állna. Ha Teljesítménymenedzsmentet alkalmaz, akkor a **Kompenzáció** lapon kiválaszthat egy osztályozási modellt, amelyet a teljesítmény osztályozáskor az alkalmazott kompenzációs konstrukciókhoz rendelt modell helyett használhat.
+
+A Human Resources alkalmazásban a **Kompenzáció** lapon kiválaszthatja, hogy korlátozza-e a hozzáférést a kompenzációs konstrukciókhoz, és beállít-e alapértelmezett pénznemet.
+
+A kompenzációval kapcsolatos további információkért lásd: [Kompenzációs konstrukciók áttekintése](hr-compensation-overview.md).
+
+![Kompenzáció lap.](./media/hr-setup-parameters-compensation.png)
+
+## <a name="number-sequences"></a>Számsorozatok
+
+A **Számsorozat** lap beállításai határozzák meg, hogy milyen sorrendben rendeljenek automatikusan értékeket a Human Resources alkalmazásban található cikkekhez, például:
+
+- Pályázatok
+- Távollét-regisztrációk
+- Kompenzációs folyamat eredményei
+- Esetszámok
+- Tanfolyamok
+- Tanfolyami napirendek
+
+A számsorozat-hivatkozások és -kódok karbantartásához használja a **Számsorozatok** listaoldalt (válassza a **Szervezet felügyelete > Számsorozatok > Számsorozatok** lehetőséget).
+
+További információkért lásd: [Számsorozatok áttekintése](../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 > [!NOTE]
-> A ledolgozott órák száma nem haladhatja meg az 1250-et, és a munkaviszony nem lehet hosszabb 12 hónapnál. Ezek a maximális értékek az Egyesült Államok szövetségi törvényének megfelelőek. Végül az **Alkalmazotti önkiszolgáló rendszer** lapon található beállítások határozzák meg az információkat, amelyeket a vezetők megadhatnak az alkalmazottaik nevében.
+> A ledolgozott órák száma nem haladhatja meg az 1250-et, és a munkaviszony nem lehet hosszabb 12 hónapnál. Ezek a maximális értékek az Egyesült Államok szövetségi törvényének megfelelőek.
+
+![Számsorozatok lap.](./media/hr-setup-parameters-number-sequences.png)
+
+## <a name="fmla"></a>FMLA
+
+Az FMLA lapon lehet beállítani az FMLA-alkalmazhatósági követelmények és az FMLA-jogosultsági órák beállítását. További tájékoztatás: [Szabadság és távolléti paraméterek konfigurálása](hr-leave-and-absence-parameters.md).
+
+![FMLA lap.](./media/hr-setup-parameters-fmla.png)
+
+## <a name="employee-self-service"></a>Alkalmazotti önkiszolgáló rendszer
+
+Az Alkalmazott – önkiszolgáló szolgáltatás lapon megadott beállítások befolyásolják, hogy hogyan jelenik meg **·** az **·** alkalmazotti önkiszolgáló rendszer az alkalmazottaknak. Ezen a lapon a következő feladatokat lehet elvégezni:
+
+- Adja meg az Alkalmazott önkiszolgáló **munkaterületének** nevét.
+- Adja meg, hogy a vezető mely adatokat adhatja meg az alkalmazottak számára
+- Hasznos hivatkozások hozzáadása az alkalmazottak számára
+- Az alkalmazottak korlátozása az üzleti kapcsolattartók részleteinek hozzáadása és szerkesztése tekintetében. A további tudnivalókat lásd: [Személyes adatok szerkesztésének korlátozása](hr-employee-self-service-restrict-editing.md).
+
+Az alkalmazotti önkiszolgáló rendszer beállításának további tudnivalókat lásd az Alkalmazott és a **·** Vezető [önkiszolgáló rendszer](hr-employee-manager-self-service-overview.md) áttekintésében.
+
+![Alkalmazotti önkiszolgáló rendszer lap.](./media/hr-setup-parameters-employee-self-service.png)
+
+## <a name="manager-self-service"></a>Vezetői önkiszolgáló rendszer
+
+A Vezetői önkiszolgáló lapon **megadott beállítások** azt befolyásolják, hogy milyen vezetők látnak a **Vezető önkiszolgáló szolgáltatásban.** Ezen a lapon a következő beállításokat lehet beállítani:
+
+- A lejáró rekordok tartománya
+- A vezetők által a lejáró rekordokban látható információk
+- Azt jelzi, hogy a vezetők megtekinthetnek-e nyitott pozíciókat a kiterjesztett jelentésekhez
+- A kilépő dolgozók nézete
+- Hasznos hivatkozások a vezetőknek
+
+A vezetői önkiszolgáló rendszer beállításának további **tudnivalókat lásd: Alkalmazott és vezető**[önkiszolgáló szolgáltatás –](hr-employee-manager-self-service-overview.md) áttekintés.
+
+![Vezetői önkiszolgáló rendszer lap.](./media/hr-setup-parameters-manager-self-service.png)
+
+## <a name="benefits-management"></a>Juttatáskezelés
+
+A Juttatások kezelése lapon beállíthatja a Juttatások kezelése **·** e-mailben megadott beállításait. A Juttatások kezelése beállítási és használatával kapcsolatos további tudnivalókat lásd a [Juttatások kezelése](hr-benefits-management-overview.md) témakörben.
+
+![Juttatáskezelés lap.](./media/hr-setup-parameters-benefits-management.png)
+
+## <a name="leave-and-absence"></a>Szabadság és távollét
+
+A Szabadság és távollét beállításával és használatával kapcsolatos további tudnivalókat lásd: [Szabadság és a távollét áttekintése](hr-leave-and-absence-overview.md).
+
+## <a name="payment-methods"></a>Fizetési módok
+
+A **Fizetési módok** lapon kiválaszthatja a szervezet által támogatott fizetési módokat. A kompenzáció konfigurálásával kapcsolatos további információkért lásd: [Kompenzációs konstrukciók áttekintése](hr-compensation-overview.md).
+
+![Fizetési módok lap.](./media/hr-setup-parameters-payment-methods.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

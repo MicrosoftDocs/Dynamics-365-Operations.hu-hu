@@ -1,29 +1,26 @@
 ---
 title: Szállítmányok automatikus frissítései
 description: Ez a témakör áttekintést nyújt azokról a funkciókról, amelyekhez automatikus frissítést biztosítanak a szállítmányok számára.
-author: josaw1
-manager: tfehr
+author: Mirzaab
 ms.date: 11/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWaveTemplateTable,SalesTableListPage,SalesTable,WHSWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7fa2684340f5ce45b99ff9aee9937071f936b81a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 3402a4c90299cf52e489e85ed55aff9762796545
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429316"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580096"
 ---
 # <a name="shipment-auto-updates"></a>Szállítmányok automatikus frissítései
 
@@ -140,3 +137,6 @@ A hullám feldolgozásra kerül, és létrehoz egy munkát a rakománysorokban f
 Ha egy szállítmány **Hullámba sorolt** vagy magasabb állapotú, akkor az értékesítésirendelés-sorban szereplő mennyiség frissítése nem tükröződik a szállítmányhoz kapcsolódó rakománysorral szemben. A rakománysorban szereplő mennyiség változását közvetlenül a rakománysorban kell végrehajtani.
 
 Az ellenőrzés a rakománysorhoz létrehozott munka és a foglalás után történik. Az értékesítésirendelés-sorban történő mennyiségcsökkenés ezt követően ellenőrizve lesz a munkasor foglalásához képest.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

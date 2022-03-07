@@ -1,16 +1,13 @@
 ---
-title: Szolgáltatások kezelése
+title: Funkciók kezelése Human Resources rendszerben
 description: Útmutató a Dynamics 365 Human Resources rendszerében található új szolgáltatások be- és kikapcsolásához.
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: FeatureManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,20 +15,22 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9176e9519c3bf65ef7a4f1b5ae43dbeb411750f5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9454125428a0bb9b8d60d8e1733f7e56144d4a3e
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418889"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6058536"
 ---
-# <a name="manage-features"></a>Szolgáltatások kezelése
+# <a name="manage-features-in-human-resources"></a>Funkciók kezelése Human Resources rendszerben
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Microsoft Dynamics 365 Human Resources lehetőségeit folyamatosan bővítjük, és szeretnénk, hogy az ügyfelek a lehető leghamarabb használhassák az új funkciókat. Előnézeti funkciókat biztosítunk, amelyek már majdnem készen állnak arra, hogy általánosan elérhetőek legyenek, illetve kiterjedt tesztelésen mentek át. Az általánosan elérhető kibocsátás előtt egy utolsó visszajelzési és ellenőrzési kört végzünk az ügyfelekkel.
 
-A Human Resources alkalmazásban található új funkciókkal kapcsolatos információkért lásd: [A Human Resources újdonságai](hr-admin-whats-new.md), illetve a [Dynamics 365 és a Power Platform kiadási tervei](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1).
+A Human Resources alkalmazásban található új funkciókkal kapcsolatos információkért lásd: [A Human Resources újdonságai](hr-admin-whats-new.md), illetve a [Dynamics 365 és a Power Platform kiadási tervei](/dynamics365/release-plans/?panel=products1#pivot=products).
 
-A **Funkció-kezelés** munkaterülete az egyes kiadásokban kiadott funkciók listáját tartalmazza. Alapértelmezés szerint az új szolgáltatások ki vannak kapcsolva. A munkaterületen bekapcsolhatja a szolgáltatásokat, és megtekintheti a rájuk vonatkozó dokumentációt. A funkciókezeléssel kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+A **Funkció-kezelés** munkaterülete az egyes kiadásokban kiadott funkciók listáját tartalmazza. Alapértelmezés szerint az új szolgáltatások ki vannak kapcsolva. A munkaterületen bekapcsolhatja a szolgáltatásokat, és megtekintheti a rájuk vonatkozó dokumentációt. A funkciókezeléssel kapcsolatos további tudnivalókat lásd [Funkciókezelés áttekintése](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 Minden új funkció megmarad előzetes verzióban legalább 30 napig, és általában 30-60 napig. A főbb funkciók általában az előzetes időszakot követően minden év októberében és áprilisában érhetők el. Amint az új funkciókat a **Funkciókezelés** munkaterületen látja, be lehet kapcsolni őket. Előfordulhat, hogy egyes funkciók alapértelmezés szerint be vannak kapcsolva.
 
@@ -93,4 +92,6 @@ Ne adjon meg személyes adatokat (azaz az Önt bármilyen módon azonosítani k�
 ## <a name="see-also"></a>Lásd még
 
 - [A Human Resources újdonságai](hr-admin-whats-new.md)
-- [A Dynamics 365 és a Power Platform programverzióra vonatkozó kiadási tervek](https://docs.microsoft.com/dynamics365/release-plans/#pivot=products&panel=products1)
+- [A Dynamics 365 és a Power Platform programverzióra vonatkozó kiadási tervek](/dynamics365/release-plans/?panel=products1#pivot=products)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

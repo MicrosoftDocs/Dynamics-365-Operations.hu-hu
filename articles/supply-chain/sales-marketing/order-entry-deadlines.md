@@ -1,29 +1,26 @@
 ---
 title: Rendelésbeviteli határidők
 description: A cikk a rendelésbevitel határidőiről tartalmaz információkat. A rendelésbeviteli határidő, egy lezárási idő, amely meghatározza, hogy a vevői rendelés úgy lesz-e kezelve (és teljesítve), mintha az aktuális napon lett volna befogadva, vagy a következőn.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventOrderEntryDeadlineGroup, InventOrderEntryDeadlineParameters, InventOrderEntryDeadlineTable, MCRAutoTaxRules
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 7151
 ms.assetid: bbc4f9a2-df4b-4d92-9f18-25282a85541f
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5f7d4a99166af112abe26220a700fcf4be79223b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 71748cb05346f7a31f51baebb86b9accc11c8478
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429349"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580528"
 ---
 # <a name="order-entry-deadlines"></a>Rendelésbeviteli határidők
 
@@ -102,10 +99,12 @@ A következő táblázatban az A és a B hely rendelésbeviteli határidői lát
 
 **Megjegyzés:** Ha a nyári óraátállítás van érvényben, a rendelésbeviteli határidők aszerint módosulnak.
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Szállítási ütemezések](delivery-schedules.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

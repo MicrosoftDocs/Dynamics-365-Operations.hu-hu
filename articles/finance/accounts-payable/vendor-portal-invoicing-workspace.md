@@ -2,31 +2,31 @@
 title: Szállítói együttműködési számlázás munkaterület
 description: Ez a témakör bemutatja, hogyan tekintheti meg a szállítói számlákat, és hogyan küldheti be a számlákat a szállítói együttműködési számlázás munkaterületen.
 author: abruer
-ms.date: 02/15/2022
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendInvoiceWorkspace
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 1d9415b7118efb06099b775f68ce7ca9fb6673ed
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
-ms.translationtype: MT
+ms.openlocfilehash: 972edcafb415e272c224b6cce8878769de503b9a278c7de3d003327d5e0c451e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182629"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722743"
 ---
 # <a name="vendor-collaboration-invoicing-workspace"></a>Szállítói együttműködési számlázás munkaterület
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan **lehet megtekinteni a szállítói számlákat, és hogyan lehet számlákat benyújtani a szállítói együttműködési számlázási munkaterületről**.
+Ez a témakör bemutatja, hogyan tekintheti meg a szállítói számlákat, és hogyan küldheti be a számlákat a szállítói együttműködési számlázás munkaterületen.
 
 A **Szállítói együttműködési számlázás** munkaterület a szállítói számla adatainak megtekintésére, és a számlák rendszerbe küldésére használható a munkafolyamat-lehetőségeinek használatával.
 
@@ -45,11 +45,11 @@ Kattintson egy csempére, és megnyílik a **Számlalisták** lap szűrt nézete
 
 ### <a name="tabular-lists"></a>Táblázatos listák
 
-A Tabular **listák** szakaszban a számlázás állapota az összegző jelentéshez hasonlóan le lesz bontva: **·** **Vázlat** és Elküldve, **Jóváhagyott MOT listák.** Amíg a Vázlat **állapotban** van, a számlát el lehet nyújtani a munkafolyamatba, vagy törölni lehet. Az utolsó táblázatos lista a számlák keresésére szolgáló beállítás. A gyorsabb keresés érdekében lehetőség van a keresés közbeni szűrésre.
+A **táblázatos listák** szakaszban a számlázás állapotának bontása megegyezik az összesítés csempékével: Vázlat és Elküldött, jóváhagyással még nem rendelkező listák. Vázlat állapotban a számlát be lehet küldeni a munkafolyamatba, vagy törölni lehet. Az utolsó táblázatos lista a számlák keresésére szolgáló beállítás. A gyorsabb keresés érdekében lehetőség van a keresés közbeni szűrésre.
 
 ### <a name="all-vendor-invoices-list-page"></a>Az összes szállítói számla listaoldal
 
-Minden feladott és feladatlan szállítói számla megtekinthető a **Szállítói együttműködési számlák** listaoldalon. A listaoldal segítségével a számlák fizetési állapota jeleníthető meg. A kifizetési állapotok közé **tartozik a** fel nem fizetett, **a kifizetetlen**, **a részlegesen fizetett** és a **teljesen kifizetett állapot**.
+Minden feladott és feladatlan szállítói számla megtekinthető a **Szállítói együttműködési számlák** listaoldalon. A listaoldal segítségével a számlák fizetési állapota jeleníthető meg. A kifizetés állapota lehet Feladatlan, Kifizetetlen, Részben fizetve és Teljesen kifizetve.
 Új számla létrehozása beszerzési rendelés alapján
 
 Létrehozhat egy új szállítói számlát a következő kiválasztásával: **Új** a **Szállítói együttműködési számlázás** munkaterületen. A beszerzési rendelés számát és számlaszámát a szállítónak kell megadnia. Alapértelmezés szerint a szállító beszerzési rendelésének összes sora meg fog jelenni az új számlán. A mennyiség- és költségadatokat a szállítói számla munkafolyamatba küldése előtt lehet szerkeszteni. A számlához a beküldése előtt fájlokat, megjegyzéseket, képeket és URL-címeket csatolhat.

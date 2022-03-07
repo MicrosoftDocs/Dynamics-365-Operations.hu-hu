@@ -1,29 +1,26 @@
 ---
 title: A szolgáltatási szerződéshez csatolt projektek
 description: Az idő típusú projekteket kivéve bármilyen típusú projekthez csatolhat szolgáltatási szerződéseket.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0c0a1ebd51830766332929792ddc0256ab15f5b2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 9781eb582b0efb395ec3c994b923651672587de5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429692"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578728"
 ---
 # <a name="project-attached-to-service-agreement"></a>A szolgáltatási szerződéshez csatolt projektek 
 
@@ -37,3 +34,6 @@ Minden szervizrendelési-tranzakciót a szolgáltatási szerződéshez csatolt p
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

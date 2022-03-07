@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bcb340b21e06b294a40784bf3a1da71b0daf7655
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 0cb182242a42443d5894b864523fc5f5fea9c5b1
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429896"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5245106"
 ---
 # <a name="work-line-details"></a>Munkasor adatai
 
@@ -128,3 +127,6 @@ Kitárolási munka létrehozásához kövesse az alábbi lépéseket.
 
 > [!IMPORTANT]
 > Ha a munkasor mennyiségének csak egy részét törli, akkor az elavult mennyiséget is el kell távolítania a terhelés sorból. Ellenkező esetben, hacsak a szállítási hiány nincs helyesen beállítva, a terhelési sor nem kaphat szállítási megerősítést.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

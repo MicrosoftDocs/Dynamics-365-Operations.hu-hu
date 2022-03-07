@@ -2,25 +2,28 @@
 title: Lízingfeladási típusok
 description: Ez a témakör az eszközlízing-tranzakciókhoz használt feladási típusokat ismerteti.
 author: moaamer
-ms.date: 04/12/2021
+manager: Ann Beebe
+ms.date: 10/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: AssetLeasePostingAccounts
+ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 721463000c05eb1774335ccce1af39468c2aed9f179e5e88d8725f4d265d6870
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ceb4fbeb4dbf2f535e05a9d46c84169435d2803b
+ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718247"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "4444187"
 ---
 # <a name="lease-posting-types"></a>Lízingfeladási típusok
 
@@ -89,6 +92,15 @@ A számla a ROU-eszköz elleneszköz-számlájához van társítva. Ezen a szám
 **Terhelés:** XXX értékcsökkenési költség<br>
 **Jóváírás:** XXX halmozott értékcsökkenés
 
+## <a name="retained-earnings"></a>Mérleg szerinti eredmény
+
+A számlához társított visszatartott keresetek. Ezt a számlát megterhelik vagy jóváírják egy átmeneti helyesbítési naplóbejegyzésben a teljes visszamenőleges módszerrel vagy az A kumulatív felzárkózási lehetőség módszerrel. Az eredeti ROU-eszköz és a lízingkötelezettség közötti különbözetet a halmozott értékcsökkenésre könyvelték el. Ritka esetekben a fenntartott bevételeket a lízing módosítása is érintheti, ha a lízing besorolása finanszírozásról működésire változik, hogy a ROU-eszközt felfelé vagy lefelé írja, hogy az egyenlő legyen a lízingkötelezettséggel.
+
+**Példa naplóbejegyzések:** Átmeneti kiigazítás (teljes visszamenőleges vagy kumulatív felzárkózási lehetőség A módszer)<br>
+**Terhelés:** XXX lízingkötelezettség<br>
+**Jóváírás:** XXX lízingeszköz<br>
+**Jóváírás:** XXX fenntartott bevételek
+
 ## <a name="variable-payment"></a>Változó fizetés
 
 A számla olyan változó lízingfizetésekhez kapcsolódik, amelyeket az ASC 842, ASC 840 és IAS 17 lízingek indexátértékelése alapján állítanak elő. A lízingfizetési ütemezésben a változó fizetések a **Változó fizetés** oszlopban szerepelnek. Ez a számla terhelt, ha számlát hoz létre egy változó kifizetést tartalmazó fizetési ütemezési sorral szemben.
@@ -142,6 +154,3 @@ Az egyes költségtípusokhoz kiválasztott számla terhelve van, amikor az adot
 
 > [!NOTE]
 > Az ellenszámla a végrehajtási költségfizetési ütemezés soraiban a lízing szintjén van kiválasztva. Ez az ellenszámla társítható a szállítóhoz vagy egy főkönyvi számlához.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,25 +2,28 @@
 title: Vevői kifizetések részösszegre
 description: Bizonyos esetekben a vevő kisebb összeget fizet ki, mint a számlán szereplő összeg. Ez a cikk az ilyen helyzetek megoldásait taglalja. Az Ön számára elérhető beállítások az ön üzleti igényeitől és konfigurációitól függenek.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPaymEntry
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.custom: 13011
 ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2b4a930f7bb070d3105eff3978774bfd8a3ffbfd2b8eb77097028411da619c64
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a74803d3adf71ef1495ec5b42753d0988cea4133
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769035"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443841"
 ---
 # <a name="customer-payments-for-a-partial-amount"></a>Vevői kifizetések részösszegre
 
@@ -28,7 +31,8 @@ ms.locfileid: "6769035"
 
 Bizonyos esetekben a vevő kisebb összeget fizet ki, mint a számlán szereplő összeg. Ez a cikk az ilyen helyzetek megoldásait taglalja. Az Ön számára elérhető beállítások az ön üzleti igényeitől és konfigurációitól függenek.
 
-## <a name="partial-payment-with-no-discount"></a>Részleges kifizetés engedmény nélkül
+<a name="partial-payment-with-no-discount"></a>Részleges kifizetés engedmény nélkül
+--------------------------------
 
 Egy vevő olyankor kínálhat részletes fizetést, ha nem rendelkezik elegendő készpénzzel a számlat teljes kifizetéséhez, vagy ha vita áll fenn a számla egyik cikkével kapcsolatban. Ebben a helyzetben a számla részlegesen is kiegyenlíthető egy kifizetéssel. A számla továbbra nyitott marad, és egyenleget mutat.
 
@@ -56,6 +60,3 @@ A vevők részleges kifizetést is végezhetnek, amelynél a fennmaradó összeg
 
 
 További információkért lásd: [Vevői kifizetések letétele](tasks/deposit-customer-payments.md).
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

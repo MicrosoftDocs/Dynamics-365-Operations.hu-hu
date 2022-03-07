@@ -2,11 +2,9 @@
 title: Áfajelentések Magyarországról
 description: Ez a témakör az áfabevallásra vonatkozó információkkal és a tételes áfakimutatás-jelentésekkel kapcsolatos információkat tartalmazza
 author: anasyash
-manager: tfehr
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.region: Hungary
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 27ce1105079a0a849bf2962c8e11847fa3c4dc0a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 5ffe6ee54e7503b58046c9123878247147a10407
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962716"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815009"
 ---
 # <a name="sales-tax-reports-for-hungary"></a>Áfajelentések Magyarországról
 
@@ -213,3 +211,6 @@ A **Tételes áfakimutatás** jelentés a következő adatokat tartalmazza:
 
 Ebben a táblában a 102-es sor tartalmazza az értékesítési rendelést, a 103-as sor az értékesítési rendelés jóváírását, a 105-ös sor pedig két szállítói számlát.
 A többi szakasz az egyes partnerekre vonatkozóan is tartalmazza ugyanazokat az információkat, valamint az egyes cikkek számláinak listáját.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

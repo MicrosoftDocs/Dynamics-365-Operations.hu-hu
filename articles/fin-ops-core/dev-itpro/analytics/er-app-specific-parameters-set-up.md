@@ -2,11 +2,9 @@
 title: Az ER-formátum paramétereinek beállítása jogi személyenként
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy Elektronikus jelentéskészítési (ER) formátum paramétereit jogi személyenként.
 author: NickSelin
-manager: AnnBe
 ms.date: 10/29/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionTable, EROperationDesigner, ERLookupDesigner, ERComponentLookupStructureEditing
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: b51a7ae8587a3cbb65efc4af574929efcbc8fbf8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4003208a1f02db134bbec1ecf90c1cdd2973e67f
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681472"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751154"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Az ER-formátum paramétereinek beállítása jogi személyenként
 
@@ -260,3 +258,6 @@ Az előző példában az ER keretrendszer használatával hozzáfért egy ER for
 [Képletszerkesztő az Elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md)
 
 [ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára](er-app-specific-parameters-configure-format.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

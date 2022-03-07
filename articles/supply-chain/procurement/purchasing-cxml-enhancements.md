@@ -1,27 +1,24 @@
 ---
 title: Beszerzési cXML fejlesztései
 description: A Beszerzési cXML-fejlesztések funkció a meglévő külső katalógus funkcióra, a PunchOut-funkcióra épül, amely a beszerzési igénylésekhez használatos.
-author: dasani-madipalli
-manager: tfehr
+author: Henrikan
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-08-03
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: d7184f14ab67d646451c8c2b1313336d47e59316
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 2942b141eb3a5b83fb39b0de721bae60c074e01c
+ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429949"
+ms.lasthandoff: 12/08/2021
+ms.locfileid: "7900705"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Beszerzési cXML fejlesztései
 
@@ -31,7 +28,7 @@ A _Beszerzési cXML-fejlesztések_ funkció a [meglévő külső katalógus funk
 
 ## <a name="turn-on-the-purchasing-cxml-enhancements-feature"></a>A beszerzési cXML-fejlesztések funkció bekapcsolása
 
-A funkció bekapcsolásához nyissa meg a **[Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** lapot, és keressen rá a *Beszerzési cXML fejlesztései* kifejezésre. Válassza ki a bekapcsolni kívánt funkciót, majd a részletek ablaktáblán válassza az **Engedélyezés most** lehetőséget a bekapcsolásához.
+A funkció bekapcsolásához nyissa meg a **[Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** lapot, és keressen rá a *Beszerzési cXML fejlesztései* kifejezésre. Válassza ki a bekapcsolni kívánt funkciót, majd a részletek ablaktáblán válassza az **Engedélyezés most** lehetőséget a bekapcsolásához. (Az Ellátásilánc-kezelés 10.0.21-es verziója alapértelmezés szerint be van kapcsolva.)
 
 A funkció bekapcsolását követően konfigurálnia kell a beállításokat a következő három területen:
 
@@ -41,7 +38,7 @@ A funkció bekapcsolását követően konfigurálnia kell a beállításokat a k
 
 A következő ábra összefoglalja ezt a konfigurációt.
 
-![A cXML-funkciók beállítására szolgáló területek](media/cxml-settings-areas.png "A cXML-funkciók beállítására szolgáló területek")
+![A cXML-funkciók beállítására szolgáló területek.](media/cxml-settings-areas.png "A cXML-funkciók beállítására szolgáló területek")
 
 Ezenkívül be kell állítania a [Beszerzési rendelési kérelem kötegelt feladatot](#po-batch). Ez a kötegelt feladat a visszaigazolt beszerzési rendelések küldéséhez használatos.
 
@@ -49,7 +46,7 @@ Ezenkívül be kell állítania a [Beszerzési rendelési kérelem kötegelt fel
 
 A **cXML-paraméterek** oldal használatával elvégezhet néhány globális beállítást, amelyek a beszerzési rendelések küldésének funkcionalitására vonatkoznak.
 
-![cXML-paraméterek oldal](media/cxml-parameters.png "cXML-paraméterek oldal")
+![cXML-paraméterek oldal.](media/cxml-parameters.png "cXML-paraméterek oldal")
 
 Nyissa meg a **Beszerzési és forrás \> Beállítások \> cXML-kezelése \> cXML-paraméterek** menüpontot, és állítsa be a következő paramétereket:
 
@@ -70,7 +67,7 @@ Minden alkalommal, amikor megerősít egy beszerzési rendelést, amelynél a **
 - Ha azt szeretné beállítani, hogy a szállító automatikusan cXML-t használjon az igénylésből létrehozott összes új beszerzési rendeléshez, nyissa meg a **Beszerzés és forrás \> Szállítók \> Összes szállító** lehetőséget , majd válasszon ki, vagy hozzon létre egy szállítót a részletek lapjának megnyitásához. Ezt követően a **Beszerzési rendelés alapértelmezései** gyorslapján állítsa a **Beszerzési rendelés küldése cXML-en keresztül** lehetőséget _Igen_ értékre. Ha a cXML a nem **igénylésből** létrejövő új beszerzési rendelésekhez is automatikusan használni kell , akkor az **ENABLEMANUALPO** rendelési tulajdonságot is _Igaz_ értékre kell állítani a kapcsolódó külső katalógus esetében, a témakör [A rendelés tulajdonságainak beállítása](#set-order-properties) című későbbi részében leírtak szerint.
 - Az egyes beszerzési rendelések esetében nyissa meg a **Beszerzési és forrás \> Beszerzési rendelések \> Összes beszerzési rendelés** lehetőséget, és válassza ki vagy hozzon létre egy beszerzési rendelést a részletek lapjának megnyitásához. Váltson át a **Fejléc** nézetre, majd a **Beállítás** gyorslapon a **Beszerzési rendelés küldése cXML-en keresztül** beállítást kötelezőre.
 
-![Szállítói beszerzési rendelések alapértelmezett beállításai](media/cxml-order-defaults.png "Szállítói beszerzési rendelések alapértelmezett beállításai")
+![Szállítói beszerzési rendelések alapértelmezett beállításai.](media/cxml-order-defaults.png "Szállítói beszerzési rendelések alapértelmezett beállításai")
 
 ## <a name="set-up-an-external-catalog-to-use-cxml"></a><a name="external-catalog-setup"></a>Külső szállítói katalógus beállítása cXML használatára
 
@@ -79,7 +76,7 @@ A **Külső katalógusok** lapon mindegyik katalógushoz be lehet állítani a P
 > [!NOTE]
 > Amikor egy cXML keresztül küldendő beszerzési rendelést erősít meg, a rendszer megkeresi a beszerzési rendeléshez társított szállítót, majd megkeresi az adott szállítóhoz társított első aktív külső katalógust. A rendszer ezután a külső katalógus beállításait használja a beszerzési rendelés elküldéséhez. Ha több külső katalógus van beállítva, akkor a rendszer csak az első megtalált külső katalógust használja, amely a beszerzési rendelésen szereplő szállító alapján. Ezért azt ajánljuk, hogy csak egy külső katalógust hozzon létre mindegyik szállítóhoz.
 
-![Külső katalógus beállításai](media/cxml-supplier-catalog.png "Külső katalógus beállításai")
+![Külső katalógus beállításai.](media/cxml-supplier-catalog.png "Külső katalógus beállításai")
 
 ### <a name="set-the-punchout-protocol-type"></a>A PunchOut-protokoll típusának megadása
 
@@ -144,13 +141,13 @@ Ha befejezte az összes tulajdonság beállítását és a külső katalógus eg
 
 Amint azt a [Rendelés tulajdonságainak beállítása](#set-order-properties) szakasz említi , ha azt szeretné, hogy a leszállított cXML tartalmazza a megfelelő beszerzési rendeléshez és/vagy szállítói rekordhoz csatolt megjegyzések szövegét, akkor a külső katalógus beállításaiban a **POCOMMENTS** és/vagy a **VENDCOMMENTS** tulajdonságot is _IGAZ_ értékre állíthatja. Ez a szakasz részletesen bemutatja, hogy a rendszer hogyan választja és dolgozza fel ezeket a mellékleteket, ha használja őket.
 
-A rendszer által keresett megjegyzések típusának beállításához nyissa meg a **Beszerzés és forrás \> Beállítás \> Képernyők a \> Képernyőbeállítások** lehetőséget. Ezután a **Beszerzési rendelés** lapon állítsa be a **Belefoglalandó dokumentumtípus** mezőt arra a megjegyzéstípusra, amelynek hozzáadását lehetővé szeretné tenni. Csak szöveget tartalmazó megjegyzések szerepelnek, a dokumentumok mellékletei nem.
+A rendszer által keres majd jegyzetek típusának beállításához keresse meg a Beszerzés és forrás – Beállítás képernyő **\>\>\> beállítását**. Ezután a **Beszerzési rendelés** lapon állítsa be a **Belefoglalandó dokumentumtípus** mezőt arra a megjegyzéstípusra, amelynek hozzáadását lehetővé szeretné tenni. Csak szöveget tartalmazó megjegyzések szerepelnek, a dokumentumok mellékletei nem.
 
-![Képernyőbeállítás lap](media/cxml-form-setup.png "Képernyőbeállítás lap")
+![Képernyőbeállítás lap.](media/cxml-form-setup.png "Képernyőbeállítás lap")
 
 A mellékletek csak akkor lesznek társítva a beszerzési rendeléshez, ha a **Típus** mező értéke a **Belefoglalandó dokumentumtípus** mezőben kiválasztott értékre van állítva , és ha a **Korlátozás** mező a _Külső_ értékre van állítva. Egy beszerzési rendelés mellékleteinek létrehozásához, megtekintéséhez vagy szerkesztéséhez nyissa meg a **Beszerzés és forrás \> Összes beszerzési rendelés** menüpontot, válasszon ki vagy hozzon létre egy beszerzési rendelést, majd válassza ki a **Mellékletek** gombot (gemkapocs szimbólum) a jobb felső sarokban.
 
-![Csatolt melléklet, amely be van állítva a szállítónak való elküldésre](media/cxml-note-to-vendor.png "Csatolt melléklet, amely be van állítva a szállítónak való elküldésre")
+![Csatolt melléklet, amely be van állítva a szállítónak való elküldésre.](media/cxml-note-to-vendor.png "Csatolt melléklet, amely be van állítva a szállítónak való elküldésre")
 
 ## <a name="view-the-cxml-cart-message-log-for-external-catalog-punchout"></a><a name="message-log"></a>A cXML-kosárüzenetek naplójának megtekintése a külső katalógus PunchOut-hoz
 
@@ -158,7 +155,7 @@ Ha a egy külső katalógushoz a **PunchOut-protokoltípus** értékét _cXML_ �
 
 Ha meg szeretné nyitni a külső katalógus naplóját, válassza ki a megfelelő katalógust, majd a művelet ablaktáblán válassza ki a **cXML kosár-üzenetek naplója** lehetőséget. A **cXML-kosár üzenetnapló** lap felsorolja a visszaküldött kossarakat, a kosarakhoz kapcsolódó XML-t, és a sorokat, amelyek a kapcsolódó beszerzési rendelésen lettek létrehozva.
 
-![cXML kosár üzenet-napló lapja](media/cxml-cart-message-log.png "cXML kosár üzenet-napló lapja")
+![cXML kosár üzenet-napló lapja.](media/cxml-cart-message-log.png "cXML kosár üzenet-napló lapja")
 
 ## <a name="set-the-extrinsic-elements-for-external-catalog-punchout"></a>A külső katalógus PunchOut külső elemeinek megadása
 
@@ -181,21 +178,21 @@ A külső összetevők külső katalógusba történő felvételéhez hajtsa vé
         - **Utónévtnév** – A külső katalógushoz hozzáférő felhasználóhoz társított kapcsolattartó utónevét használja.
         - **Telefonszám** – A külső katalógushoz hozzáférő felhasználóhoz társított kapcsolattartó elsődleges telefonszámát használja.
 
-![Külső elem beállításai](media/cxml-extrinsics.png "Külső elem beállításai")
+![Külső elem beállításai.](media/cxml-extrinsics.png "Külső elem beállításai")
 
 A felhasználó vagy adminisztrátor nem fogja látni a külső elemeket, mert nincsenek hozzáadva, amíg a felhasználó nem végzi el a PunchOut műveletet. A program automatikusan beszúrja a **BuyerCookie** és a **BrowserFromPost** elemek közé a cXML-beállítási üzenetbe. Ezért nem kell manuálisan beállítania azokat az XML-fájlban, amikor beállítja a külső katalógust.
 
-![Az XML-hez hozzáadott külső elemek](media/cxml-extrinsics-xml.png "Az XML-hez hozzáadott külső elemek")
+![Az XML-hez hozzáadott külső elemek.](media/cxml-extrinsics-xml.png "Az XML-hez hozzáadott külső elemek")
 
 ## <a name="create-and-process-a-purchase-order"></a><a name="create-po"></a>Beszerzési rendelés létrehozása és feldolgozása
 
 Ha egy szállítóhoz beszerzési rendelést hoz létre, akkor a szállítótól örökli a **Beszerzési rendelés küldése cXML-en keresztül** beállítást. A beállítás azonban a beszerzési rendelés **Fejléc** nézetének **Beállítás** gyorslapján továbbra is elérhető, így később szükség szerint módosítható.
 
-![A cXML használatára beállított beszerzési rendelés](media/cxml-purchase-order.png "A cXML használatára beállított beszerzési rendelés")
+![A cXML használatára beállított beszerzési rendelés.](media/cxml-purchase-order.png "A cXML használatára beállított beszerzési rendelés")
 
 Amikor beszerzési rendelést hoz létre egy PunchOut-folyamatból származó beszerzési igénylésből, akkor az összes szükséges soradatot kitölti a rendszer. Ezután a beszerzési rendelés sorait manuálisan is hozzáadhatja, illetve más beszerzési rendelésekből másolhatja. Győződjön meg róla, hogy az összes szükséges mezőt beállítsa. Ezek a kötelező mezők tartalmazzák a külső hivatkozási számot, amely a cXML-üzenetben használt szállítói szám.
 
-![Példa külső hivatkozási számra](media/cxml-line-details.png "Példa külső hivatkozási számra")
+![Példa külső hivatkozási számra.](media/cxml-line-details.png "Példa külső hivatkozási számra")
 
 Ha befejezte a beszerzési rendelés összes adatának kitöltését, mindenképpen erősítse meg azt. A program csak a beszerzési rendelés visszaigazolása esetén küld üzenetet. Egy beszerzési rendelés megerősítéséhez a Műveleti ablaktáblán, a **Beszerzés** lapon a **Műveletek** csoportban kattintson a **Megerősítés** elemre a beszerzési rendelés megerősítéséhez. 
 
@@ -203,17 +200,17 @@ A beszerzési rendelés visszaigazolása után a visszaigazolás állapotát a *
 
 Minden beszerzési rendeléshez tartozhat több visszaigazolás is. Minden visszaigazolást növekményes számmal kell jelölni. A következő ábrán a beszerzési rendelés száma *00000275*, és a visszaigazolásé *00000275-1*. Ez a sorszámozás az Supply Chain Management funkciókat tükrözi, ahol a beszerzési rendelés módosításait, és ennek megfelelően a szállító számára küldendő cXML-üzenet típusát a megerősítés alapján lehet azonosítani. Ahogy az ábra mutatja, hogy a **Beszerzési rendelés visszaigazolása** lap tartalmazza a **Rendelés küldési állapota** és a **Rendelési kérelem szállítói állapota** mezőket is. Ha további tájékoztatást szeretne kapni a lapon megjelenő különböző állapotértékekről, tekintse meg a témakör későbbi, [Beszerzési rendelési kérelmek figyelése](#monitor-po-requests) című szakaszát.
 
-![Beszerzési rendelések visszaigazolása lap](media/cxml-po-confirmations.png "Beszerzési rendelések visszaigazolása lap")
+![Beszerzési rendelések visszaigazolása lap.](media/cxml-po-confirmations.png "Beszerzési rendelések visszaigazolása lap")
 
 A dokumentummal kapcsolatos további információk megtekintéséhez válassza ki a rács fölötti a **Beszerzési rendelési kérelem** elemet.
 
 A **beszerzési rendelési kérelem** lap két rácsot tartalmaz. A lap felső részén lévő rácsnak egy rekordja van mindegyik küldésre megjelölt beszerzési rendeléshez. Előfordulhat, hogy a lap alsó részén található **Beszerzési rendelési kérelmek előzményei** lap rácsa több rekordot tartalmaz a kiválasztott beszerzési rendeléshez, hogy jelezze az egyes visszaigazolások állapotát. A következő ábra azt mutatja a 00000275 beszerzési rendelést a felső rácsban és a 00000275-1 dokumentumot **Beszerzési rendelési kérelmek előzményei** lap rácsában.
 
-![Beszerzési rendelési kérelem lap](media/cxml-po-request.png "Beszerzési rendelési kérelem lap")
+![Beszerzési rendelési kérelem lap.](media/cxml-po-request.png "Beszerzési rendelési kérelem lap")
 
 Ha a kötegelt feladat be van állítva, és fut, akkor a program elküldi a dokumentumot. A dokumentum elküldését követően megtekintheti az állapot változását. A következő ábrán a **Rendelés küldési állapota** mező _Elküldve_ értékre van állítva. A **rendelési kérelem szállítójának állapota** mező értéke _Nyugtázva_, így jelezve, hogy a szállító megkapta a dokumentumot, és képes volt olvasni és tárolni a rendszerben. A **Beszerzési rendelés előzményei** lap rácsa a dokumentum elküldésének időpontját jeleníti meg. Ha további tájékoztatást szeretne kapni a lapon megjelenő különböző állapotértékekről, tekintse meg a [Beszerzési rendelési kérelmek figyelése](#monitor-po-requests) című szakaszt.
 
-![Állapotüzenetek a beszerzési rendelési kérelem lapon](media/cxml-po-request-2.png "Állapotüzenetek a beszerzési rendelési kérelem lapon")
+![Állapotüzenetek a beszerzési rendelési kérelem lapon.](media/cxml-po-request-2.png "Állapotüzenetek a beszerzési rendelési kérelem lapon")
 
 ## <a name="schedule-the-purchase-order-request-batch-job"></a><a name="po-batch"></a>A beszerzési rendelési kérelem kötegelt feladatának ütemezése
 
@@ -229,7 +226,7 @@ A folyamat megkeresi a *Várakozik* állapotú beszerzési rendelési kérelmeke
 
 Amikor a cXML keresztül küldendő rendeléseket visszaigazolják, azok _Várakozik_ állapotba kerülnek. Amint azt a [Beszerzési rendelés létrehozása és feldolgozása](#create-po) című szakaszban már ismertettük, a **Beszerzési rendelési kérelem** lapon megtekintheti a beszerzési rendelés állapotát. Minden beszerzési rendelési kérelem több állapotból eggyel rendelkezhet, attól függően, hogy milyen paramétereket és adatokat tartalmaz. Ez a szakasz a különböző állapottípusokat és azok lehetséges értékeit írja le. Ezek az információk a problémák kezelését és a beszerzési rendelések állapotának megértését segítik.
 
-![Beszerzési rendelés állapota a beszerzési rendelési kérelem lapon](media/cxml-monitor-po-request.png "Beszerzési rendelés állapota a beszerzési rendelési kérelem lapon")
+![Beszerzési rendelés állapota a beszerzési rendelési kérelem lapon.](media/cxml-monitor-po-request.png "Beszerzési rendelés állapota a beszerzési rendelési kérelem lapon")
 
 A **Beszerzési rendelési kérelem** lap felső részén lévő rács a következő állapotokat jelenítheti meg:
 
@@ -265,15 +262,18 @@ A **Beszerzési rendelési kérelmek előzményei** rácsa a **Beszerzési rende
 
 A beszerzési rendelési kérelem üzenet XML-jének megtekintéséhez válassza a **Beszerzési rendelési kérelem** lap alján látható **XML-szöveg kérése** lapot. Az ezen a lapon található információk a teszt vagy a hibaellenőrzés során hasznosak lehetnek. Az adatok könnyebb olvashatósága érdekében formázott üzenetként tekinthető meg. Másolja a lap tartalmát egy szövegfájlba, majd tekintse meg egy XML-szerkesztőben.
 
-![XML-szöveg kérése lap](media/cxml-request-xml-text.png "XML-szöveg kérése lap")
+![XML-szöveg kérése lap.](media/cxml-request-xml-text.png "XML-szöveg kérése lap")
 
 ### <a name="view-the-details-of-the-vendor-response"></a>A szállítói válasz részleteinek megtekintése
 
 Ha meg szeretné tekinteni a szállító visszaigazolásának vagy a hibaüzenetnek a tartalmát, válassza ki a **Válasz XML** lapot a **Beszerzési rendelési kérelem** lapjának alján.
 
-![Válasz XML lap](media/cxml-response-xml.png "Válasz XML lap")
+![Válasz XML lap.](media/cxml-response-xml.png "Válasz XML lap")
 
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Külső katalógus beállítása a PunchOut e-beszerzés számára](set-up-external-catalog-for-punchout.md)
 - [Külső katalógus használatának engedélyezése a PunchOut e-beszerzés számára](use-external-catalogs-for-punchout.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

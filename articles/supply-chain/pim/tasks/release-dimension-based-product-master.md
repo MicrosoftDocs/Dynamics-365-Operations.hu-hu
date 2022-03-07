@@ -2,26 +2,23 @@
 title: Dimenzión alapuló alaptermék kibocsátása
 description: Ez az eljárás bemutatja, hogyan lehet kiadni egy, a dimenzión alapuló konfigurációkhoz használandó alapterméket.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductListPage, EcoResProductRelease
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: cd207d202c24ced9e29bdfc7386fb6464a838a0e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 0b93c95a5433b9d70eebe0ac43348cba83399b14
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429369"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833233"
 ---
 # <a name="release-a-dimension-based-product-master"></a>Dimenzión alapuló alaptermék kibocsátása
 
@@ -41,3 +38,6 @@ Ez az eljárás bemutatja, hogyan lehet kiadni egy, a dimenzión alapuló konfig
 7. Kattintson a Tovább gombra.
 8. Kattintson a Finish gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

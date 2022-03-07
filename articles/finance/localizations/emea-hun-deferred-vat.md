@@ -16,12 +16,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 72e8e809876d83174e1da32686bb1a7bca9cc006
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 315527adae91bd92fddc01c20cb7d148b22d4b5e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018639"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5204720"
 ---
 # <a name="deferred-sales-tax-calculations"></a>Halasztott áfa számítása
 
@@ -62,3 +62,6 @@ A halasztott áfa feladása a főkönyvi számlákra vonatkozóan is megadható.
 
 - **Halasztott áfa fizetendő** – Válassza ki a kijelölt főkönyvi feladási csoport halasztott áfaszámláját vagy adószámláját.
 - **Halasztott áfa visszaigényelhető** – Válassza ki a kijelölt főkönyvi feladási csoport halasztott áfaszámláját vagy adószámláját.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

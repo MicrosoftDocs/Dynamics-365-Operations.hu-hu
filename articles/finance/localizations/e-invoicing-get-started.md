@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
+ms.custom:
+- "97423"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ba9f6ca08af0647f4519726894b1c9dfcc9cce24
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: ebef9cf97f7a91e0a2fd45f5e0e0fc620070b42a
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983871"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779694"
 ---
 # <a name="get-started-with-electronic-invoicing"></a>Első lépések az elektronikus számlázási használata során
 
@@ -56,9 +58,9 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 Az országtól vagy régiótól függően az Elektronikus számlázási funkció specifikus konfigurálást igényelhet. 
 
 > [!NOTE]
-> Ha Finnország esetében engedélyezi az elektronikus számlázás funkciót, akkor a keresések alkalmazásspecifikus paraméterei nem támogatottak. A probléma megoldásához tekintse át az Elektronikus jelentés modulban az értékesítési számla és a projekt **számlaformátumának** konfigurációit. Manuálisan állítsa be a számított mezőt $PaymentMethodSubstitution hozzárendeléshez, majd kötnie kell azt a mezőt az értékesítési számla és a projekt számlaformátuma **Alapján** **aPaymentMeansCode** mezőhöz.
+> Ha Finnország esetében engedélyezi az elektronikus számlázás funkciót, akkor a keresések alkalmazásspecifikus paraméterei nem támogatottak. A probléma megoldásához tekintse át az Elektronikus jelentés modulban az értékesítési számla és a projekt **·** számlaformátumának konfigurációit. Manuálisan állítsa be a számított mezőt $PaymentMethodSubstitution hozzárendeléshez, majd kötnie kell azt a mezőt az értékesítési számla és a projekt számlaformátuma **·** Alapján **aPaymentMeansCode** mezőhöz.
 >
-> Ha engedélyezi az Elektronikus számlázás funkciót Olaszország számára, akkor a keresések alkalmazásspecifikus paraméterei nem támogatottak. A probléma megoldásához állítsa be kézzel az Elektronikus jelentés modulban a számított mezőt $NaturaReverseCharge **·** **hozzárendeléséhez**.
+> Ha engedélyezi az Elektronikus számlázás funkciót Olaszország számára, akkor a keresések alkalmazásspecifikus paraméterei nem támogatottak. A probléma megoldásához állítsa be kézzel az Elektronikus jelentés modulban a számított mezőt $NaturaReverseCharge **·** **·** hozzárendeléséhez.
 >
 > A más helyekkel kapcsolatos konkrét lépéseket lásd az adott ország vagy régió számára elérhető "Első lépések" dokumentációban.
 
@@ -251,7 +253,7 @@ Az adott lépésekről az adott ország vagy régió számára elérhető Első 
 3. Válasszon ki egy dokumentumot a rácsban, majd válassza az **Elektronikus dokumentum** \> **letöltése** fájlt. A program az elektronikus dokumentumfájlt tartalmazó archívumot javasolja letöltéshez.
 
 > [!NOTE]
-> Fájlok letöltése előtt be kell kapcsolva lennie az Exportálás eredménye lehetőségnek az RCS elektronikus számlázási funkcióbeállításában található kapcsolódó **művelet** esetében.
+> Fájlok letöltése előtt be kell kapcsolva lennie az Exportálás eredménye lehetőségnek az RCS elektronikus számlázási funkcióbeállításában található kapcsolódó **·** művelet esetében.
 
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 

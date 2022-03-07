@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e0c836d4a0be47b753d74dc9d6d40ea7d9197176
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
-ms.translationtype: MT
+ms.openlocfilehash: 93adc5b91667fdcd5969439994170fe7d28258fc9f5762d1262d8e72862c4f5f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323979"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762248"
 ---
 # <a name="configure-action-dependent-er-destinations"></a>Műveletfüggő ER-célok konfigurálása
 
 [!include [banner](../includes/banner.md)]
 
-A kimenő dokumentumok [generálása](electronic-reporting-destinations.md) során használt elektronikus jelentési formátumkonfigurációk minden kimeneti összetevőjére (mappára vagy fájlra) [...](general-electronic-reporting.md)[beállíthatja](general-electronic-reporting.md#Configuration) a célokat. Azok a felhasználók, akik ilyen típusú ER-formátumot futtatnak, és megfelelő hozzáférési jogokkal rendelkeznek, futásidőben módosíthatják a konfigurált cél beállításait is.
+Beállíthat [célhelyeket](electronic-reporting-destinations.md) minden kimeneti összetevőjéhez (mappa vagy fájl) az [elektronikus jelentési (ER)](general-electronic-reporting.md) [formátum](general-electronic-reporting.md#FormatComponentOutbound) [konfigurációknak](general-electronic-reporting.md#Configuration), amelyek kimenő dokumentumok létrehozásához használtak. Azok a felhasználók, akik ilyen típusú ER-formátumot futtatnak, és megfelelő hozzáférési jogokkal rendelkeznek, futásidőben módosíthatják a konfigurált cél beállításait is.
 
 A Microsoft Dynamics 365 Finance **10.0.17-es és újabb verzióiban** az ER-formátum futtatható egy olyan műveletkód [üzembe helyezése](er-apis-app10-0-17.md) által, amelyet a felhasználó az adott ER-formátum futtatásával hajt végre. Például a **Kinnlevőségek** modul Nyomtatáskezelési beállításainál választhat olyan ER-formátumot, amely konkrét üzleti dokumentumot, például szabadszöveges számlát generál. Ezután a számla előnézeti képe megtekinthető a **Nézet** lehetőséggel, illetve a **Nyomtatás** gombbal elküldheti egy nyomtatóra. Ha futásidőben felhasználói művelet van átállítva a futó ER-formátumhoz, eltérő ER-célokat lehet beállítani a különböző felhasználói műveletekhez. Ez a témakör leírja, hogyan kell konfigurálni az ER-célokat az ilyen típusú ER-formátumhoz.
 
@@ -115,6 +115,7 @@ Az üzleti dokumentumok következő listáját a következő funkció vezérli: 
 - Beszerzési rendelés beszerzési értesítője
 - Értékesítési rendelés  visszaigazolása
 - Kollekciók fizetésre felszólítás
+- Vevő számlakivonata
 - Kamatlevél
 - Szállítói kifizetési bizonylat
 - Ajánlatkérés

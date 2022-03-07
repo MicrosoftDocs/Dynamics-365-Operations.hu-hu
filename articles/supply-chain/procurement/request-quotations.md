@@ -1,28 +1,28 @@
 ---
 title: Ajánlatkérések (RFQ-k) áttekintése
 description: Ez a témakör áttekintést nyújt az ajánlatkérésekről (RFQ-król). Egy szervezet akkor ad ki ajánlatkérést (RFQ-t), amikor cikkeket és szolgáltatásokat szeretne beszerezni, és ehhez egymással versenyző különböző szállítóktól kér ajánlatokat.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 10/05/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage, BOMExpandPurchRFQ, PurchRFQReplyFollowupItem, PurchRFQCaseVend, PurchRFQReplyFollowup, PurchRFQCaseAmendmentInfo, PurchRFQReplyFollowupCase, PurchRFQReplyStatus, PurchRFQCaseReplyFields, PurchRFQAddQuestionnaire, PurchRFQAmendmentWizard, PurchRFQReplyTableStatus, PurchRFQReplyTableListPage, PurchRFQCancelWizard
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2154
+ms.custom:
+- "2154"
+- intro-internal
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b3338e1837496605ce94a54eb57a32b1b83145b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: 7338897feb2c3a28350d366f26eecc56f8eeb3fb
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016931"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983392"
 ---
 # <a name="requests-for-quotation-rfqs-overview"></a>Ajánlatkérések (RFQ-k) áttekintése
 
@@ -39,13 +39,13 @@ Az ajánlatkérés folyamata a következő feladatokból áll:
 
 A következő ábrán látható az ajánlatkérési folyamat.
 
-[![RFQ-folyamat](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
+[![RFQ-folyamat.](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)
 
 Ajánlatkérési esetet tervezett rendelésekből, beszerzési igénylésből és manuális bevitelből is létrehozhat. Az ajánlatkérési eset az az alapdokumentum, amelynek segítségével ajánlatkérést küld az egyes szállítóknak.
 
 Miután előkészítette az ajánlatkérési esetet és hozzáadta a szállítókat, válassza a **Küldés** (**Küldés és közzététel** az állami szektor esetében) lehetőséget az ajánlatkérési esetnél. Ajánlatkérési napló jön létre minden egyes olyan szállítóra vonatkozóan, amelyek számára elküldte az ajánlatkérést. A Küldés művelet nyomtatási beállításait módosítva megadhatja, hogy a rendszer külön jelentést nyomtasson minden szállítóhoz az archívumba, vagy a jelentést e-mailben küldje a szállítók e-mail-címére. Ezenkívül az egyes szállítók ajánlatkérési naplóját olyan napló létrehozására is felhasználhatja, amelyet később elküldhet vagy újraküldhet a szállítónak. A Küldés műveletet úgy is beállíthatja, hogy a rendszer a szállító által kitölthető válaszlapot is generáljon.
 
-Ez a témakör az ajénlatkérések kezelését foglalja össze arra az esetre, amikor a szállítói együttműködés nincs használatban. Ha a rendszer be van állítva szállítói együttműködéshez a szállítók közvetlenül vihetnek be ajánlatokat a Supply Chain Management rendszerbe. További tudnivalók: [Szállítói együttműködés a vevőkkel](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) és [A külső szállítókkal történő szállítói együttműködés](vendor-collaboration-work-external-vendors.md).
+Ez a témakör az ajénlatkérések kezelését foglalja össze arra az esetre, amikor a szállítói együttműködés nincs használatban. Ha a rendszer be van állítva szállítói együttműködéshez a szállítók közvetlenül vihetnek be ajánlatokat a Supply Chain Management rendszerbe. További tudnivalók: [Szállítói együttműködés a vevőkkel](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations) és [A külső szállítókkal történő szállítói együttműködés](vendor-collaboration-work-external-vendors.md).
 
 Ha módosítania kell az ajánlatkérést, miután elküldte azt, újra elküldheti az ajánlatkérést a szállítóknak, ha elkészült a két módosítási művelettel: ezek a Létrehozás és a Véglegesítés.
 
@@ -80,19 +80,19 @@ A szállítóknak elküldött e-mailes értesítés sablonját a **Beszerzési �
 - %Ajánlat visszaküldésének oka%
 - %Módosítás oka%
 - %A módosítást készítette%
-- %Vállalat%
+- %Company%
 - %RFQ case name%
 - %Expiry Date Time%
 - %Date%
 
-Az %Ajánlat visszaküldésének oka% és %Módosítás oka% tokeneket a rendszer olyan szöveggel helyettesíti, amelyet a beszerző adhat meg a **Módosítás** varázslóban elvégzett módosítások befejezésével. Az %A módosítást készítette% és %Vállalat% tokeneket a rendszer automatikusan az árajánlatkérés alapján tölti ki. A %Date% token helyére az aktuális dátum kerül.
+Az %Ajánlat visszaküldésének oka% és a %Módosítás oka% tokent a rendszer olyan szöveggel helyettesíti, amelyet a beszerző adhat meg a **Módosítás** varázslóban elvégzett módosítások befejezésével. Az %A módosítást készítette% és %Company% tokeneket a rendszer automatikusan az árajánlatkérés alapján tölti ki. A %Date% token helyére az aktuális dátum kerül.
 
 Ha vissza szeretne vonni egy ajánlatkérést az elküldés után, ezt az ajánlatkérési esetben teheti meg. A visszavonáshoz egy e-mail sablon szükséges, amellyel elküldheti az érvénytelenítési értesítést a szállítói kapcsolattartóknak. A sablont ki kell jelölni a **Beszerzési és forrásparaméterek** lapon. A létrehozott sablon az alábbi helyettesítő tokeneket tartalmazhatja:
 
 - %Reason for cancellation%
 - %RFQ case%
 - %RFQ cancelled by%
-- %Vállalat%
+- %Company%
 - %RFQ case name%
 - %Date%
 
@@ -167,7 +167,7 @@ Ha a módosítási folyamatot úgy állítja be, hogy szigorúbb legyen, akkor a
 
 A kevésbé korlátozó módosítási folyamat konfigurálása esetén a már elküldött ajánlatkérési eset mezőinek módosítása előtt nem szükséges a **Létrehozás** lehetőséget kiválasztani a módosításhoz. Azonban manuálisan hozzá kell adnia egy módosítási megjegyzést az ajánlatkéréshez, és újra be kell küldenie az esetet. Ne feledje, hogy ez a módszer csak akkor használható, ha egyik válasz (ajánlat) sem módosult. Ha megadott egy választ, és az **Beérkezett** állapotú, akkor a **Küldés** gomb nem érhető el. Ebben az esetben ki kell választania a **Létrehozás**, majd a **Véglegesítés** elemet, ahogyan az a korlátozóbb folyamatban elvárt. A válasz ekkor visszaáll, és megjeleníti az ajánlatkérési eset módosításait.
 
-Ha a szállítók a szállítói együttműködési felületet használják az ajánlatok beadására, mindig a módosítási folyamatot kell használnia ahhoz, hogy értesítse a szállítókat az ajánlatkérési esetben bekövetkezett változásokról. Ez a folyamat segít megelőzni azt a helyzetet, amikor a szállítók lejárt ajánlatkérési ügyben tesznek ajánlatot, miközben az ajánlatuk folyamatban van. Az új szállítói együttműködéssel kapcsolatos további tudnivalókat lásd: [A szállítói együttműködés a külső szállítókkal való együttműködésre történő használata](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
+Ha a szállítók a szállítói együttműködési felületet használják az ajánlatok beadására, mindig a módosítási folyamatot kell használnia ahhoz, hogy értesítse a szállítókat az ajánlatkérési esetben bekövetkezett változásokról. Ez a folyamat segít megelőzni azt a helyzetet, amikor a szállítók lejárt ajánlatkérési ügyben tesznek ajánlatot, miközben az ajánlatuk folyamatban van. Az új szállítói együttműködéssel kapcsolatos további tudnivalókat lásd: [A szállítói együttműködés a külső szállítókkal való együttműködésre történő használata](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors).
 
 Ha szeretne meghívni további szállítókat is az ajánlatkérésre, és nem hajtott végre módosítást az ajánlatkérési eseten, akkor használhatja a **Küldés** gombot. Az Ön által felvett szállítók megjelennek a **Küldés** lapon, és megkapják az e-mailes meghívót.
 
@@ -246,3 +246,6 @@ Az alábbi példában látható a legmagasabb és legalacsonyabb állapot az aj�
 | Az ajánlatok fogadása (vagy legalább egy sor) |                          Fogadott                           |                           Elfogadva                           |                    Fogadott                    |                    Elfogadva                     |                   Fogadott                   |                   Elfogadva                    |
 |           Az összes többi ajánlat elutasítása.           |                          Elutasítva                           |                           Elfogadva                           |                    Elutasítva                    |                    Elfogadva                     |                   Elutasítva                   |                   Elfogadva                    |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

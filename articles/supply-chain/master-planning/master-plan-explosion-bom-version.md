@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqTransExplosion
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 19211
 ms.assetid: fe08c2e6-9cc5-4e34-bbb2-cd07843403b5
 ms.search.region: Global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 482c036294f525be5db1dc6efefe76a9ba5b3ce5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 617d9c3f05f2db30ec075a07b54c4827e668c20e
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429755"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220848"
 ---
 # <a name="explosion-of-a-bom-version"></a>Anyagjegyzék-verzió alábontása
 
@@ -48,3 +47,6 @@ A következő ábra mutatja az alaptervezési igényalábontás folyamatát. ![A
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

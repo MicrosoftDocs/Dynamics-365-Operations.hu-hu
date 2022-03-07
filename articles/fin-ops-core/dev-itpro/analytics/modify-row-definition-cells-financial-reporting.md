@@ -2,11 +2,9 @@
 title: Sordefiniáló cellák módosítása
 description: A témakör ismerteti azokat az információkat, amelyek szükségesek egy pénzügyi jelentés sordefiníciójához tartozó cellákban, és bemutatja ezen információk megadását.
 author: ShylaThompson
-manager: AnnBe
-ms.date: 02/11/2019
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 92d03f08fc5e34402f10068ed770b1f724cfd3a8
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: 80df992ce14577ba78587648f8af2c35b382a589
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685859"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344885"
 ---
 # <a name="modify-row-definition-cells"></a>Sordefiniáló cellák módosítása
 
@@ -176,7 +174,7 @@ A sordefiníció **Formátum Kódja** oszlopában, a **DES**, **LFT**, **RGT**, 
 
 A következő példában, a felhasználó szeretné megakadályozni, hogy a jelentésének az **Összes Készpénz** sorában, a fejléc és az aláhúzások nyomtatásra kerüljenek, mivel nem volt tevékenység a készpénzszámlák egyikén sem. Ezért, a 220-ik sorban (amely, ahogy azt a **---** formátumkód jelzi, egy formázási sor), a **Kapcsolódó Képletek/Sorok/Egységek** cellába beír **250**-et, ami az elrejteni kívánt összegsor sorkódja.
 
-[![RelatedRowsRowDefinition](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
+[![RelatedRowsRowDefinition.](./media/relatedrowsrowdefinition-1024x144.png)](./media/relatedrowsrowdefinition.png)
 
 ## <a name="select-the-base-row-for-a-column-calculation"></a>Oszlop számítás alap sorának kiválasztása
 A relációs jelentésekben, egy vagy több alap sort is hozzárendelhet sordefinícióban, a **CBR** (alap sor módosítása) formátumkód használatával. Az alap sorra ebben az esetben az oszlopdefinícióban található számítás hivatkozik. Íme néhány általános példa CBR számításokra:
@@ -401,7 +399,7 @@ A **Hivatkozás a Pénzügyi Dimenziókhoz** cella azokra a pénzügyi adatokra 
 2. Kattintson duplán egy cellára a **Kapcsolás a pénzügyi dimenziókhoz** oszlopban.
 3. A **Dimenziók** párbeszédpanelen kattintson duplán egy cellára a dimenzió neve alatt.
 4. A dimenzióhoz a párbeszédpanelen, válassza az **Egyéni vagy tartomány**-t.
-5. A **Kezdő érték** mezőben adja meg a kezdő dimenziót, vagy kattintson a ![Tallózás](media/browse.gif "Tallózás") elemre, így kereshet a rendelkezésre álló dimenziók között. Dimenziók tartományának megadásához adja meg az utolsó dimenziót az **Idáig** mezőben.
+5. A **Kezdő** mezőben adja meg a kezdő dimenziót, vagy kattintson a ![Tallózás.](media/browse.gif "Tallózás") elemre a rendelkezésre álló dimenziók kereséséhez. Dimenziók tartományának megadásához adja meg az utolsó dimenziót az **Idáig** mezőben.
 6. Kattintson az **OK** gombra, a dimenziók párbeszédpaneljának bezárásához. A **Dimenziók** párbeszédpanel a frissített dimenziókészletet vagy tartományt jeleníti meg.
 7. Kattintson az **OK** gombra hogy bezárja a **Dimenziók** párbeszédpanelt.
 
@@ -478,7 +476,7 @@ Az alábbi táblázat bemutatja a **Dimenziók** párbeszédpanelben megjelenő 
 
 | Cikk                | Leírás |
 |---------------------|-------------|
-| Egyéni vagy tartományi | A **Kezdő érték** mezőben adja meg egy számla nevét, vagy kattintson a **Tallózás** gombra ![Tallózás](media/browse.gif "Tallózás"), ha tallózással szeretné megkeresni a számlát. Tartomány kiválasztásához, adjon meg, vagy keressen egy értéket a **Záró érték** mezőben. |
+| Egyéni vagy tartományi | A **Kezdő érték** mezőben adja meg egy számla nevét, vagy kattintson a **Tallózás** gombra ![Tallózás.](media/browse.gif "Tallózás") , ha tallózással szeretné megkeresni a számlát. Tartomány kiválasztásához, adjon meg, vagy keressen egy értéket a **Záró érték** mezőben. |
 | Dimenzióérték Beállítása | A **Név** mezőbe írja be a dimenzióérték-készlet nevét. Készlet létrehozásához, módosításához, másolásához, vagy törléséhez, kattintson a **Dimenziókészletek Értékének Kezelése** gombra. A **Képlet** mezőben a sordefinícióban az ehhez a dimenzióérték-készlethez tartozó **Hivatkozás a pénzügyi dimenziókhoz** cella képlete töltődik be. |
 | Számlák összesítése   | A **Név** mezőbe írja be vagy tallózással keresse meg az összesítő számlákra vonatkozó dimenziót. A Jelentésdefinícióban, a **Képlet** mező, a számlaösszesítő **Hivatkozás Pénzügyi Dimenziókra** cellájában szereplő képlettel van kitöltve. |
 
@@ -529,3 +527,6 @@ A dimenzióérték-készlet dimenzióértékeket elnevezett csoportja. Egy dimen
 ## <a name="additional-resources"></a>További erőforrások
 
 [Pénzügyi jelentéskészítés](financial-reporting-intro.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

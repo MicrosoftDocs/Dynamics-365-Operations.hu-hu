@@ -2,11 +2,9 @@
 title: Problémák elhárítása a kezdeti szinkronizációkor
 description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítségével javíthatók a kezdeti szinkronizálás során fellépő problémák.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: a2f0e0cbf0f8710dc020a48506775fa28df9c2d2
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 0fe319f4c8edd54700b2b32ef80539a8d0ff793aa815cef3813af4c63fd1b0d3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744637"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736374"
 ---
 # <a name="troubleshoot-issues-during-initial-synchronization"></a>Problémák elhárítása a kezdeti szinkronizációkor
 
@@ -40,7 +38,7 @@ Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kett�
 
 Miután engedélyezte a leképezési sablonokat, a leképezések állapotának **Fut** állapotnak kell lennie. Ha az állapot **Nem fut**, akkor hiba történt a kezdeti szinkronizálás során. A hibák megtekintéséhez válassza a **Kettős írás** oldal **Kezdeti szinkronizálás adatai** lapját.
 
-![Hiba a kezdeti szinkronizálás részletek lapján](media/initial_sync_status.png)
+![Hiba a kezdeti szinkronizálás részletek lapján.](media/initial_sync_status.png)
 
 ## <a name="you-cant-complete-initial-synchronization-400-bad-request"></a>A kezdeti szinkronizálás nem hajtható végre: 400 hibás kérelem
 
@@ -87,7 +85,7 @@ Egy hiba javításához kövesse az alábbi lépéseket.
 1. Bejelentkezés a Finance and Operations alkalmazásba.
 2. Az **Azure Active Directory-alkalmazások** oldalon törölje a **DtAppID** klienst, majd adja hozzá újra.
 
-![DtAppID-ügyfél a Azure AD alkalmazások listáján](media/aad_applications.png)
+![DtAppID-ügyfél a Azure AD alkalmazások listáján.](media/aad_applications.png)
 
 ## <a name="self-reference-or-circular-reference-failures-during-initial-synchronization"></a>Önmagára mutató hivatkozással vagy körkörös hivatkozással kapcsolatos hibák a kezdeti szinkronizálás során
 
@@ -117,11 +115,11 @@ Ha a szállítói táblának a **PrimaryContactPersonId** és az **InvoiceVendor
     2. Keressen rá a **primarycontactperson** elemre a **PrimaryContactPersonId** forrásoszlop megkereséséhez.
     3. Válassza a **Műveletek**, majd a **Törlés** lehetőséget.
 
-        ![A PrimaryContactPersonId oszlop törlése](media/vend_selfref3.png)
+        ![A PrimaryContactPersonId oszlop törlése.](media/vend_selfref3.png)
 
     4. Az **InvoiceVendorAccountNumber** oszlop törléséhez ismételje meg ezeket a lépéseket.
 
-        ![Az InvoiceVendorAccountNumber oszlop törlése](media/vend-selfref4.png)
+        ![Az InvoiceVendorAccountNumber oszlop törlése.](media/vend-selfref4.png)
 
     5. Mentse a leképezésen végrehajtott módosításokat.
 
@@ -131,11 +129,11 @@ Ha a szállítói táblának a **PrimaryContactPersonId** és az **InvoiceVendor
     2. Válassza ki a **Szállítók V2** táblát.
     3. A műveleti ablaktáblán válassza a **Beállítások**, majd a **Változáskövetés** elemet.
 
-        ![A módosítás nyomon követése beállítás kiválasztása](media/selfref_options.png)
+        ![A módosítás nyomon követése beállítás kiválasztása.](media/selfref_options.png)
 
     4. Kattintson a **Változáskövetés tiltása** lehetőségre.
 
-        ![Kattintás a Változáskövetés tiltása lehetőségre](media/selfref_tracking.png)
+        ![Kattintás a Változáskövetés tiltása lehetőségre.](media/selfref_tracking.png)
 
 3. Futtassa a **Szállítók v2 (msdyn\_vendors)** hozzárendelésének kezdeti szinkronizálását. A kezdeti szinkronizálásnak hiba nélkül kell lefutnia.
 4. Futtassa a **CDS kapcsolattartók V2 (kapcsolattartók)** hozzárendelésének kezdeti szinkronizálását. Akkor kell szinkronizálnia ezt a leképezést, ha szinkronizálni szeretné az elsődleges kapcsolattartó oszlopot a szállítók táblában, mert a kapcsolattartók sorainak kezdeti szinkronizálását is el kell végezni.
@@ -164,11 +162,11 @@ Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceA
     2. Keressen rá a **contactperson** elemre a **ContactPersonID** forrásoszlop megkereséséhez.
     3. Válassza a **Műveletek**, majd a **Törlés** lehetőséget.
 
-        ![A ContactPersonID oszlop törlése](media/cust_selfref3.png)
+        ![A ContactPersonID oszlop törlése.](media/cust_selfref3.png)
 
     4. Az **InvoiceAccount** oszlop törléséhez ismételje meg ezeket a lépéseket.
 
-        ![A InvoiceAccount oszlop törlése](media/cust_selfref4.png)
+        ![A InvoiceAccount oszlop törlése.](media/cust_selfref4.png)
 
     5. Mentse a leképezésen végrehajtott módosításokat.
 
@@ -178,11 +176,11 @@ Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceA
     2. Válassza ki az **Ügyfelek V3** táblát.
     3. A műveleti ablaktáblán válassza a **Beállítások**, majd a **Változáskövetés** elemet.
 
-        ![A módosítás nyomon követése beállítás kiválasztása](media/selfref_options.png)
+        ![A módosítás nyomon követése beállítás kiválasztása.](media/selfref_options.png)
 
     4. Kattintson a **Változáskövetés tiltása** lehetőségre.
 
-        ![Kattintás a Változáskövetés tiltása lehetőségre](media/selfref_tracking.png)
+        ![Kattintás a Változáskövetés tiltása lehetőségre.](media/selfref_tracking.png)
 
 3. Futtassa le az **Ügyfelek V3 (Partnerek)** hozzárendelésének kezdeti szinkronizálását. A kezdeti szinkronizálásnak hiba nélkül kell lefutnia.
 4. Futtassa a **CDS kapcsolattartók V2 (kapcsolattartók)** hozzárendelésének kezdeti szinkronizálását.
@@ -194,11 +192,11 @@ Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceA
 6. Futtassa le az **Ügyfelek V3 (Partnerek)** hozzárendelésének kezdeti szinkronizálását ismét. Mivel a változások követése ki van kapcsolva, szinkronizálva lesznek az **InvoiceAccount** és a **ContactPersonId** adatai a Finance and Operations alkalmazásból a Dataverse-szolgáltatásba.
 7. Ha szinkronizálni szeretné az **InvoiceAccount** és a **ContactPersonId** adatait a Dataverse-szolgáltatásból a Finance and Operations alkalmazásba, akkor egy adatintegrációs projektet kell használnia.
 
-    1. A Power Apps felületén hozzon létre egy adatintegrációs projektet az **Sales.Account** és a **Finance and Operations apps.Customers V3** táblák között. Az adatok irányának a következőnek kell lennie: Dataverse – Finance and Operations alkalmazás. Mivel az **InvoiceAccount** egy új attribútum a kettős írás funkcióban, érdemes lehet kihagyni kezdeti szinkronizálást ehhez az attribútumhoz. További információkért tekintse át az [Adatok integrálása a Dataverse-szolgáltatásba](https://docs.microsoft.com/power-platform/admin/data-integrator) című részt.
+    1. A Power Apps felületén hozzon létre egy adatintegrációs projektet az **Sales.Account** és a **Finance and Operations apps.Customers V3** táblák között. Az adatok irányának a következőnek kell lennie: Dataverse – Finance and Operations alkalmazás. Mivel az **InvoiceAccount** egy új attribútum a kettős írás funkcióban, érdemes lehet kihagyni kezdeti szinkronizálást ehhez az attribútumhoz. További információkért tekintse át az [Adatok integrálása a Dataverse-szolgáltatásba](/power-platform/admin/data-integrator) című részt.
 
         A következő képen egy olyan projekt látható, amely frissíti a **CustomerAccount** és a **ContactPersonId** entitásokat.
 
-        ![Adatintegrációs projekt a CustomerAccount és a ContactPersonId frissítéséhez](media/cust_selfref6.png)
+        ![Adatintegrációs projekt a CustomerAccount és a ContactPersonId frissítéséhez.](media/cust_selfref6.png)
 
     2. Adja meg a vállalat feltételeit a szűrőben a Dataverse oldalán, hogy csak a szűrőfeltételeknek megfelelő sorok legyenek frissítve a Finance and Operations alkalmazásban. Szűrő hozzáadásához kattintson a szűrő ikonra. Ezután a **Lekérdezés szerkesztése** párbeszédpanelen hozzáadhat egy olyan szűrőlekérdezést, mint az **\_msdyn\_company\_value eq '\<guid\>'**. 
 
@@ -206,8 +204,11 @@ Ha az ügyféltábla bármelyik sorának a **ContactPersonId** és az **InvoiceA
 
         Ha nem ír be szűrő lekérdezést az **\_msdyn\_company\_value** elemhez, az összes sor szinkronizálva lesz.
 
-        ![Szűrő lekérdezés hozzáadása](media/cust_selfref7.png)
+        ![Szűrő lekérdezés hozzáadása.](media/cust_selfref7.png)
 
     A sorok kezdeti szinkronizálása most befejeződött.
 
 8. Engedélyezze újra Finance and Operations alkalmazásban az **Ügyfelek V3** tábla változáskövetését.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

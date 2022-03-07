@@ -1,29 +1,26 @@
 ---
 title: Dedikált fizetési terminálok és utasítások a nyomtatónak és a pénztárgépfióknak
 description: Ez a témakör a dedikált kifizetési terminálok biztosításának képességével kapcsolatban tartalmaz tájékoztatást, és felkéri a felhasználót egy pénztárgépfiók és egy nyugtanyomtató kiválasztására.
-author: rubendel
-manager: AnnBe
+author: BrianShook
 ms.date: 05/20/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Operations, Retail
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 03cb68ede82668523e6970d33df676738e65fd83
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: b955e55271471ac43ff4c2b217c6448b30536e06
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412888"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779770"
 ---
 # <a name="dedicated-payment-terminals-and-prompts-for-a-printer-and-cash-drawer"></a>Dedikált fizetési terminálok és utasítások a nyomtatónak és a pénztárgépfióknak
 
@@ -53,13 +50,13 @@ Az ebben a témakörben ismertetett funkciókat a Modern POS for Windows és a M
 
 Ez a funkció támogatja a hálózatban engedélyezett fizetési terminálokat és a nyugtanyomtatókat. A pénztárgépfiókok támogatásához csatlakoztassa a pénztárgépfiókot a hálózatra engedélyezett nyugtanyomtatóhoz a d/k porton keresztül.
 
-Ehhez a funkcióhoz azonnal használható támogatást biztosít a [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Előfordulhat azonban, hogy a fizetések esetében Commerce szoftverfejlesztői készlet (SDK) egyéb fizetési összekötőket támogat. A támogatott nyugtanyomtatók közé tartoznak a Star Micronics és az Epson hálózatkompatibilis nyugtanyomtatói.
+Ehhez a funkcióhoz azonnal használható támogatást biztosít a [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](./dev-itpro/adyen-connector.md?tabs=8-1-3). Előfordulhat azonban, hogy a fizetések esetében Commerce szoftverfejlesztői készlet (SDK) egyéb fizetési összekötőket támogat. A támogatott nyugtanyomtatók közé tartoznak a Star Micronics és az Epson hálózatkompatibilis nyugtanyomtatói.
 
 Ha be szeretné állítani a Star Micronics nyugtanyomtatókat, használja a Star Micronics nyomtató segédprogramot az eszköz konfigurálásához, hogy a hálózaton keresztül is használható legyen. Ez a segédprogram biztosítja az eszköz IP-címét is.
 
 Az Epson nyugtanyomtatóinak beállításához használja az Epson ePOS-Print segédprogramot az eszköz hálózati protokollok használatára történő beállításához.
 
-A hálózati perifériák beállításával kapcsolatos további tudnivalókat lásd: [Hálózati perifériák támogatása – áttekintés](https://go.microsoft.com/fwlink/?linkid=2129965).
+A hálózati perifériák beállításával kapcsolatos további tudnivalókat lásd: [Hálózati perifériák támogatása – áttekintés](./dev-itpro/network-peripherals.md).
 
 ## <a name="set-up-a-dedicated-payment-terminal-and-a-prompt-for-a-printer-and-cash-drawer"></a>Dedikált fizetési terminál beállítása és felkérés a nyomtató és a pénztárgépfiók kiválasztására
 
@@ -78,9 +75,9 @@ A pénztárgéphez társított hardverprofil beállításához hajtsa végre az 
 
     | Eszköz | Típus | Eszköznév | További részletek |
     |---|---|---|---|
-    | Nyomtató | Tartalék | *Bármely* | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Nyugtaprofil azonosítója** elemnek azonosnak kell lennie a csatorna szintjén a hardverállomáshoz hozzárendelt hardverprofilban megadott hálózati nyomtató **Nyugtaprofil azonosítója** elemmel. |
-    | Pénztárfiók | Tartalék | *Bármely* | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Megosztott műszak használata** lehetőséget állítsa **Igen** értékre. |
-    | EFT szolgáltatás | Adyen | Nem alkalmazható | Az azonnal használható Adyen összekötő beállításával kapcsolatos további információkért lásd: [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3). Más fizetési összekötők is támogathatók a [Commerce szoftverfejlesztői készlet (SDK) fizetésekhez](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/end-to-end-payment-extension) használatával. |
+    | Nyomtató | Hálózat | *Bármely* | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Nyugtaprofil azonosítója** elemnek azonosnak kell lennie a csatorna szintjén a hardverállomáshoz hozzárendelt hardverprofilban megadott hálózati nyomtató **Nyugtaprofil azonosítója** elemmel. |
+    | Pénztárfiók | Hálózat | *Bármely* | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Megosztott műszak használata** lehetőséget állítsa **Igen** értékre. |
+    | EFT szolgáltatás | Adyen | Nem alkalmazható | Az azonnal használható Adyen összekötő beállításával kapcsolatos további információkért lásd: [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](./dev-itpro/adyen-connector.md?tabs=8-1-3). Más fizetési összekötők is támogathatók a [Commerce szoftverfejlesztői készlet (SDK) fizetésekhez](./dev-itpro/end-to-end-payment-extension.md) használatával. |
     | PIN-billentyűzet | Hálózat | **MicrosoftAdyenDeviceV001** | Egyik sem. |
 
 5. A Dynamics 365 Commerce alkalmazásban keresse meg a **Pénztárgépek** elemet.
@@ -88,7 +85,7 @@ A pénztárgéphez társított hardverprofil beállításához hajtsa végre az 
 7. Rendelje hozzá az imént létrehozott hardverprofilt a pénztárgéphez, amelynek dedikált fizetési terminált kell használnia. A pénztárgéphez rendelt eszköznek vagy a Modern POS for Windows alkalmazást vagy a Modern POS for Android alkalmazást kell használnia.
 8. Válassza a **Mentés** lehetőséget.
 9. A Művelet panel **Pénztárgépek** lapján válassza az **IP-címek konfigurálása** menüpontot.
-10. A **PIN-billentyűzet** gyorslapon adja meg a fizetési terminál IP-címét. A fizetési terminál IP-címének Adyen összekötővel történő lekérésével kapcsolatos tudnivalókért lásd: [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3).
+10. A **PIN-billentyűzet** gyorslapon adja meg a fizetési terminál IP-címét. A fizetési terminál IP-címének Adyen összekötővel történő lekérésével kapcsolatos tudnivalókért lásd: [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](./dev-itpro/adyen-connector.md?tabs=8-1-3).
 11. Válassza a **Mentés** lehetőséget.
 
 #### <a name="set-up-a-hardware-profile-for-the-receipt-printer-and-cash-drawer"></a>A nyugtanyomtató és a pénztárgépfiók hardverprofiljának beállítása
@@ -103,7 +100,7 @@ A hálózati nyugtanyomtató és a pénztárgépfiók csoportosítására haszn�
     | Eszköz | Típus | Leírás | További részletek |
     |---|---|---|---|
     | Nyomtató | Hálózat | **Epson** vagy **Star** | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Nyugtaprofil azonosítója** elemnek azonosnak kell lennie a pénztárgéphez hozzárendelt hardverprofilban megadott nyomtató **Nyugtaprofil azonosítója** elemmel. |
-    | Pénztárfiók | Hálózat | **Epson** vagy **Star** | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Megosztott műszak használata** lehetőséget állítsa **Igen** értékre. |
+    | Pénztárfiók | Tartalék | **Epson** vagy **Star** | Az eszköznév megkülönbözteti a kis- és nagybetűket. A **Megosztott műszak használata** lehetőséget állítsa **Igen** értékre. |
 
 5. Válassza a **Mentés** lehetőséget.
 
@@ -151,6 +148,9 @@ Az üzlet alkalmazottainak egy tranzakcióhoz csak egy alkalommal kell kiválasz
 
 ## <a name="related-articles"></a>Kapcsolódó cikkek
 
-- [POS Hybrid alkalmazás beállítása Android és iOS rendszerre](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/hybridApp)
-- [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/adyen-connector?tabs=8-1-3)
-- [Hálózati perifériák támogatása – áttekintés](https://go.microsoft.com/fwlink/?linkid=2129965)
+- [POS Hybrid alkalmazás beállítása Android és iOS rendszerre](./dev-itpro/hybridapp.md)
+- [Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz](./dev-itpro/adyen-connector.md?tabs=8-1-3)
+- [Hálózati perifériák támogatása – áttekintés](./dev-itpro/network-peripherals.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

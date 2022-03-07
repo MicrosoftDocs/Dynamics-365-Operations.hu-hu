@@ -1,28 +1,25 @@
 ---
 title: Munkaosztály létrehozása
 description: Ez az eljárás bemutatja, hogyan állíthat be egy munkaosztályt.
-author: ShylaThompson
-manager: tfehr
+author: Mirzaab
 ms.date: 11/14/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkClass
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ed9b72d891df4d40213d4854da6b09bd9876effa
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
-ms.translationtype: HT
+ms.openlocfilehash: 3c2a99771bc10f12f20fca1689b8786f3de8b316
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429876"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572313"
 ---
 # <a name="create-a-work-class"></a>Munkaosztály létrehozása
 
@@ -40,3 +37,6 @@ Ez az eljárás bemutatja, hogyan állíthat be egy munkaosztályt. A munkaoszt�
     * Ha kiválaszt egy helytípust, azzal korlátozza a cikkek elhelyezését a kitárolás után. Akkor használja ezt a beállítást, ha egy helyutasítás a hely feloldására tesz kísérletet, vagy ha egy raktári dolgozó manuálisan biztosítja a mobileszköz-menüpont helyét.  
 8. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

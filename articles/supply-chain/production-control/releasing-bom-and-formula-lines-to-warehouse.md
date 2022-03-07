@@ -2,27 +2,24 @@
 title: Az anyagjegyzék- és receptúrasorok kiadása a raktárba
 description: Ez a témakör ismerteti a nyersanyag kiadásának folyamatát az anyagjegyzéksorok és receptúrasorok kiadásához a raktárba.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysOperationTemplateForm, ProdParmReleaseToWarehouse, WHSReleaseToWarehouseProdBOM
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: bf2beef30ba1cf6877325e686b76de5dc8d3ba55
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
-ms.translationtype: HT
+ms.openlocfilehash: c9956290ce8f90f04bc144d710ad35b5a0243e3898a8f3e75692b1a9da506149
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429863"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731223"
 ---
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Az anyagjegyzék- és receptúrasorok kiadása a raktárba
 
@@ -64,7 +61,7 @@ Az **Anyagjegyzék- és receptúrasorok automatikus kiadása** kötegelt feladat
 
 A következő ábrán egy olyan termelési rendelés látható, amelyhez két munka tartozik, 10 és 20, amelyek lefedik az összeállítást és a csomagolást a termelési rendeléshez. Mindegyik feladat bizonyos anyagmennyiség felhasználására van beállítva. Az ábrán a kiadási időkorlátja, amelyet a zöld nyíl jelez az idő sora alatt, megegyezik a **(LessThanDate())** feltételnél megadott napok számával. A **(LessThanDate(2))** például azt jelzi, hogy a feladatnak csak két napos időkorláton belül kell kiadatlan mennyiségeket keresnie.
 
-![Példa egy termelési rendelésre, amelyhez két kötegelt feladat tartozik](media/bach-job-setup.PNG)
+![Példa egy termelési rendelésre, amelyhez két kötegelt feladat tartozik.](media/bach-job-setup.PNG)
 
 ## <a name="releasing-material-per-operation-number-or-in-proportion-to-the-amount-of-finished-goods"></a>Anyagok kiadása műveletszám szerint, vagy a késztermékek mennyiségének arányában
 
@@ -81,7 +78,7 @@ Az anyag kiadását meghatározó műveletek szabályozására használja a **Ki
 
 A következő ábrán egy termelési rendelés látható, amelyhez két művelet tartozik, 10 és 20. Ebben a példában, ha a kiadást a 10-es műveletre korlátozza, csak az M9203 anyag kiadása történik meg.
 
-![Példa anyag kiadására műveletszám szerint](media/two-operations.PNG)
+![Példa anyag kiadására műveletszám szerint.](media/two-operations.PNG)
 
 Ha gyors áttekintést szeretne arról, hogyan lehet kiadni a késztermékek arányában anyagokat, nézze meg ezt a rövid -YouTube-videót [a termelési rendelés kiadási folyamatának fejlesztéseiről](https://www.youtube.com/watch?v=Rm3ojAz6Zu0).
 
@@ -98,3 +95,6 @@ Nyersanyagok kiadhatók késztermékek részleges mennyiségéhez vagy meghatár
     A rendelkezésre álló egységek a késztermék egység-szekvenciacsoportazonosítójában vannak meghatározva.
 
     Egy készterméknek például a következő egységátváltással rendelkezik a font (lbs.) és a raklap (PL) között: 1 PL = 100 lbs. Termelési rendelés létrehozásához 10 000 lbs. késztermékhez kiadhatja a nyersanyagokat annyi raklaphoz, amennyit gyártani tervez. Válassza a **PL** lehetőséget egységként, majd adjon meg egy megfelelő számot a **Mennyiség** mezőben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,27 +1,24 @@
 ---
 title: Egy helyhez tartozó ütemezés létrehozása
 description: Ez az eljárás bemutatja az egy helyhez tartozó, még el nem indított termelési rendelések ütemezését.
-author: ShylaThompson
-manager: tfehr
+author: ChristianRytt
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdTableListPage, ProdSchedule, ProdRouteJob
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d9059080fcd77a5317ce4226de6aad38b0066500
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 146531217f7f596a5cb98e271b0356ffeb3d5547
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429537"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567247"
 ---
 # <a name="create-a-schedule-for-a-site"></a>Egy helyhez tartozó ütemezés létrehozása
 
@@ -56,3 +53,6 @@ Ez az eljárás bemutatja az egy helyhez tartozó, még el nem indított termel�
 4. Kattintson az Anyagok elemre.
     * Ezen a lapon megtekintheti a becsült anyagfelhasználást a termelési rendelésben és az aktuális rendelkezésre álló készletben szereplő műveletekre vonatkozóan.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

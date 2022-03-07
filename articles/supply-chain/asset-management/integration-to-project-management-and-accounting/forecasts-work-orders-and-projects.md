@@ -1,12 +1,10 @@
 ---
 title: Előrejelzések, munkarendelések és projektek
 description: Ez a témakör az előrejelzések és munkarendelések integrációját mutatja be az Eszközkezelés projektmenedzsment és könyvelés moduljában
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderProjCostInfoPart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: f062b5463b54e9bcf32ed6f17263811c4bb24138
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 86474d22f7a1426ed1c8f61c346ac7a6f67173f2
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021024"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6345428"
 ---
 # <a name="forecasts-work-orders-and-projects"></a>Előrejelzések, munkarendelések és projektek
 
@@ -100,3 +98,6 @@ A következő ábra az **Eszközkezelés** modulban létrehozott különböző p
 
 ![6. ábra](media/06-integration-to-pma.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

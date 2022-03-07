@@ -2,16 +2,13 @@
 title: Hívásközpont rendeléseinek várakoztatása - beállítás és használat
 description: Ez a témakör a várakoztatott rendelések használatát ismerteti a Dynamics 365 Commerce rendszerben.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRHoldCodeTable, MCRSalesTableOrderHistory, MCRHoldCodeTrans, MCROrderEventSetup, MCROrderEventTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 79132
 ms.assetid: 7c00dc35-73e5-400a-8587-22f37ddfc0e0
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b11dd48ac629910a82b4d5bfdf9889809b0d829d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: f474b5936f2ae154ad54185becd91865642e8efe3cf10e7dcdbb650c6c833b21
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762596"
 ---
 # <a name="configure-and-work-with-call-center-order-holds"></a>Hívásközpont rendeléseinek várakoztatása – konfigurálás és használat
 
@@ -56,7 +53,7 @@ Miután a várakoztatási adatokat bevitték és mentették, a felhasználó bez
 
 Ha a **Rendeléskiegészítés engedélyezése** megjelölés be van kapcsolva a hívásközponti csatornában, nem kell kifizetést alkalmazni egy rendeléshez, amely várakoztatott állapotban van. Ezzel szemben a nem várakoztatott értékesítési rendelések esetében a felhasználók nem hagyhatják az értékesítési rendelés beviteli lapját üresen mindaddig, amíg nem kerül sor fizetés alkalmazására. Természetesen a fizetés el kell végezni, mielőtt a rendelés várakoztatása fel lesz oldva.
 
-A hívásközpont felhasználói ezenkívül a valamilyen okból gyanús rendeléseket manuálisan is várakoztathatják csalás miatt. A rendelések automatikusan is várakoztathatók, amikor egyezést mutatnak az aktív csalási feltételekkel és szabályokkal. További tájékoztatás az ilyen típusú rendelés várakoztatásának kapcsolatban itt található [csalásellenőrzési figyelmeztetések beállítása](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-fraud-alerts).
+A hívásközpont felhasználói ezenkívül a valamilyen okból gyanús rendeléseket manuálisan is várakoztathatják csalás miatt. A rendelések automatikusan is várakoztathatók, amikor egyezést mutatnak az aktív csalási feltételekkel és szabályokkal. További tájékoztatás az ilyen típusú rendelés várakoztatásának kapcsolatban itt található [csalásellenőrzési figyelmeztetések beállítása](/dynamics365/unified-operations/retail/set-up-fraud-alerts).
 
 ## <a name="viewing-and-managing-orders-that-are-on-hold"></a>Várakoztatott rendelések megtekintése és kezelése
 
@@ -103,3 +100,6 @@ Ha felhasználók törölni akarják a várakoztatást, de további módosítás
 ## <a name="reporting-options"></a>Jelentési funkciók
 
 Ahhoz, hogy jelentést készítsen a várakoztatott rendelésekről a dátumtartomány, várakoztatási kód vagy egyéb kapcsolódó feltételek alapján, lépjen ide: **Retail és Commerce**\>**Lekérdezések és jelentések**\>**Hívásközponti jelentések**\>**Rendelésvárakoztatási jelentések**.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

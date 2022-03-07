@@ -2,11 +2,9 @@
 title: A IoT Intelligencia beépülő modul telepítése az LCS-ben
 description: Ez a témakör bemutatja, hogyan telepítheti az IoT Intelligencia beépülő modult a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban.
 author: robinarh
-manager: tfehr
 ms.date: 07/07/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: rhaertle
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: d55ca1975589699cbce03dcc7bf81e0762738d24
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 2d1cc9a7535be05a3e466c27e53047d694cf0160
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963485"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5826443"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>A IoT Intelligencia beépülő modul telepítése az LCS-ben
 
@@ -55,3 +53,6 @@ Az LCS-beállítás befejeződött. A következő lépés a [forgatókönyvek be
 2. Az LCS-ben lépjen a Supply Chain Management környezet részleteihez.
 3. Görgessen le a **Környezeti bővítmények** szakaszhoz.
 4. Válassza az **Eltávolítás** lehetőséget az IoT Intelligencia beépülő modul esetén.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

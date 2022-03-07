@@ -2,11 +2,9 @@
 title: Weblap URL-jének létrehozása
 description: Ez a témakör egy lap URL-címének a webhelyén történő létrehozásával kapcsolatos alapfogalmakat és eljárásokat ismerteti.
 author: bicyclingfool
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,21 +14,18 @@ ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 062a49df93e442dbe402ac9a78244c966958aaa2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 923723ce6e3f92c5186cd8a562a6e3fee3fdf70dfe8db29c86192cb1db515b1a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965253"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717723"
 ---
 # <a name="create-a-page-url"></a>Weblap URL-jének létrehozása
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör egy lap URL-címének a webhelyén történő létrehozásával kapcsolatos alapfogalmakat és eljárásokat ismerteti.
-
-## <a name="overview"></a>Áttekintés
 
 A webhely egy lapjára mutató teljes vagy abszolút URL-cím különböző részekből áll. Például a `https://www.contoso.com/en-us/contactus` URL-cím a következő részekből áll:
 
@@ -106,3 +101,6 @@ Az URL-címnek egy eltérő URL-címre való átirányításához kövesse az al
 [A tartománynév konfigurálása](configure-your-domain-name.md)
 
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

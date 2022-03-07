@@ -2,16 +2,13 @@
 title: Cikkárak tárhelyének összehasonlítása jelentés
 description: Útmutató a Cikkárak tárhelyének összehasonlítása jelentés létrehozásához, majd az eredmény böngészéséhez és/vagy exportálásához.
 author: AndersGirke
-manager: tfehr
 ms.date: 01/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, InventItemPriceCompareStorage, InventItemPriceCompareStorageDetailsChart, InventItemPriceCompareStorageDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: aevengir
 ms.search.validFrom: 2020-03-01
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 73e43a685f390fd718028de6add0370dfcd6cf3b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 7ef1537ea037f4738e9dea9f5f293e815c09a193f817dd6cb55e3f0719ffaeb4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429718"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744202"
 ---
 # <a name="compare-item-prices-storage-report"></a>Cikkárak tárhelyének összehasonlítása jelentés
 
@@ -121,3 +118,6 @@ A következő példa bemutatja, hogyan lehet exportálni egy **Cikkárak tárhel
 1. Megjelenik a **Végrehajtási összesítés** lap, amelyen megtekintheti az exportálási feladat állapotát, valamint az exportált entitások listáját. Válassza a **Cikkárak összehasonlítása** entitást az **Entitás feldolgozási állapota** terület listájából, majd válassza a **Fájl letöltése** elemet az adott entitásból exportált adatok letöltéséhez.
 
 Ha további tájékoztatást szeretne arról, hogyan lehet az adatkezelést az adatok exportálására használni, akkor lásd: [Adatimportálási és-exportálási feladatok – áttekintés](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

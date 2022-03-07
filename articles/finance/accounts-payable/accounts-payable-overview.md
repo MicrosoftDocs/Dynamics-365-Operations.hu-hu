@@ -1,6 +1,6 @@
 ---
 title: Kötelezettségek konfigurálása – áttekintés
-description: Ez a témakör a Kötelezettségek alapvető és választható funkcióinak beállítására használt lapokat ismerteti. Azokat a beállítási lépéseket is bemutatja, amelyeket a Kötelezettségek beállításának elkezdése előtt kell elvégezni.
+description: Ez a cikk azoknak az oldalaknak a leírását tartalmazza, amelyek használatával beállíthatók a Kötelezettségek modul alapvető, illetve választható funkciói. Azokat a beállítási lépéseket is bemutatja, amelyeket a Kötelezettségek beállításának elkezdése előtt kell elvégezni.
 author: abruer
 ms.date: 07/25/2019
 ms.topic: overview
@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable, DeliveryReason, DeliveryTerms, DestinationCode
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
 ms.custom:
 - "24671"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6cbc800d7ae4d566fddb111b7ee9d67234e3cf8c
-ms.sourcegitcommit: 43d0555c17a0643c9e5ba3bc2da3ce5f80754642
-ms.translationtype: MT
+ms.openlocfilehash: 4981f317697998298ba0c1ea84d50698f135474f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/18/2022
-ms.locfileid: "8325994"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984880"
 ---
 # <a name="configure-accounts-payable-overview"></a>Kötelezettségek konfigurálása – áttekintés
 
@@ -36,19 +36,19 @@ Mielőtt beállítja a Kötelezettségeket el kell végezni az alábbiakat:
 
 -   A Főkönyvben:
     -   Ha kifizetési naplókat szeretne használni, állítsa be azokat a pénzügyben.
-    -   Ha árfolyam-korrekciókat is futtatni tervez, **állítsa** be a pénznemkódokat a Pénznemek lapon, **állítsa** be az árfolyamtípusokat az Árfolyamtípusok lapon, **és állítsa be az árfolyamokat a Pénznemek** lapon.
+    -   Ha árfolyam-korrekciókat szeretne futtatni, akkor adja meg a pénznemkódokat a Pénznemek oldalon, adja meg az árfolyamtípust az Árfolyamtípus oldalon és adja meg a pénznem árfolyamokat a Pénznem árfolyamok oldalon.
 -   A Készpénz és bank kezelés szakaszban beállíthatja a kifizetési módokkal használandó bankszámlákat.
 
 ## <a name="setup-pages-for-accounts-payable"></a>A Kötelezettségek modul beállítási oldalai
 
 A következő oldalak segítségével minden egyes jogi személyeknél beállíthatja a Kötelezettségek modul alapvető funkcióit. Az oldalak a javasolt beállítási sorrendben vannak felsorolva. A beállítás egyszerűsítése érdekében az első létrehozott rekordból sablonokat hozhat létre. A sablonban az értékek általában több mezőben találhatók, hogy láthatók legyenek a tulajdonságok, amelyeket a szervezet alkalmazni kíván egy adott szállító típushoz.
-1.  A Fizetési **feltételek** lapon határozza meg az értékesítési rendelésekhez, beszerzési rendelésekhez, vevőkhöz és szállítókhoz hozzárendelt fizetési feltételeket, amelyek meghatározzák a számla esedékességeit. További információkért lásd: [Szállítói kifizetési díjak meghatározása](tasks/define-vendor-payment-fees.md).
-2.  A Fizetési **módok – szállítók lapon** hozza létre és tarthatja karban a szervezet szállítóit kifizető adatokat.
-3.  A Szállítói **csoportok** lapon hozhatja létre és tarthatja karban a szállítócsoportok olyan csoportjait, amelyeknél a feladás, a kiegyenlítés és a fizetés, a jelentés és az előrejelzés fontos paramétereik vannak.
-4.  A Szállítói feladási **profilok** lapon adja meg, hogyan adja fel a rendszer a szállítói tranzakciókat a főkönyvbe.
-5.  **A Kötelezettségek** paraméterei lapon állítsa be az olyan alapértelmezett beállításokat, amelyeket akkor alkalmaz a program, ha konkrétabb beállítás nincs megadva, a különböző funkciók paramétereit, valamint a Kötelezettségek különböző számsorozatokat.
-6.  A képernyőbeállítási **lapon** definiálja a szállítókhoz kapcsolódó különféle dokumentumok formátumát, valamint azt, hogy a szervezet nyomon kövesse a szállítóktól való bevételezéseket, és adja meg a szállítóknak történő fizetés folyamatának okát.
-7.  A Szállítók **lapon hozhatja** létre és tarthatja karban a szállítói számlákat, valamint az adóhatóságokat, amelyek számára a szervezet bevallja az áfáit.
+1.  A Fizetési feltételek oldalon adja meg a fizetés feltételeit, amelyeket értékesítési rendelésekhez, beszerzési rendelésekhez, vevőkhöz és szállítókhoz kíván hozzárendelni és amelyek meghatározzák a számlák határidejét. További információkért lásd: [Szállítói kifizetési díjak meghatározása](tasks/define-vendor-payment-fees.md).
+2.  A Fizetési módok – szállítók oldalon hozzon létre és frissítse az információkat, hogyan fizet a szervezet a beszállítóknak.
+3.  A Szállítói csoportok oldalon hozzon létre és frissítse az információkat a szállítókkal kapcsolatban, akik fontos paraméterekkel rendelkeznek feladással, kiegyenlítéssel, fizetéssel és előrejelzéssel kapcsolatban.
+4.  A Szállítói feladási profilok oldalon adja meg hogyan kerüljenek postázásra a szállítói tranzakciók a főkönyvbe.
+5.  A Kötelezettség paraméterek oldalon adjon meg alapértelmezett beállításokat amelyek alkalmazhatók, ha egy specifikusabb eset nincs meghatározva, paraméterek különböző funkciókhoz, és különböző számsorok Kötelezettségekhez.
+6.  Az Űrlap beállítása oldalon adja meg a különböző dokumentumok formátumát, amelyek kapcsolódnak a szállítóhoz és amelyet a szervezet használ a szállítói bevételezések követéséhez és adjon meg okokat a fizetési folyamatnál a szállítóknak.
+7.  A Szállítók oldalon hozzon létre és frissítse a szállítói számlákat, továbbá az adóhatóságokat amelyek áfabevallásra kötelezik a szervezetet.
 
 ## <a name="optional-setup-pages-for-accounts-payable"></a>A Kötelezettségek modul opcionális beállítási oldalai
 Az alapvető funkciók mellett a Kötelezettségeknek egyéb funkcióit is megadhatja.
@@ -56,61 +56,61 @@ Az alapvető funkciók mellett a Kötelezettségeknek egyéb funkcióit is megad
 A következő beállítási oldalak funkciók szerint vannak csoportosítva.
 
 **Irányelvek**
--   A Szállítói **számla irányelvlapon** állítsa be a szállítói számla irányelveit.
+-   A Szállítói számla irányelvek oldalon adja meg a szállítói számla irányelveket.
 
 **Számlaegyeztetés**
 
--   A Számlaösszegek **tűréshatárai** lapon állítsa be a számlaösszegek tűréshatárát.
--   Az Egyeztetési **irányelv** oldalon állítsa be a oda-vissza megfeleltetési irányelveket.
--   Az Ártűréshatárok **lapon** állítsa be az egységárak tűréshatárát.
--   Az ártűréshatár **szerint a cikkek árcsoportja** lapon állítsa be a cikkárak tűrési csoportjait.
--   Az ártűréshatár **szerint szállítócsoportok** lapon állítsa be a szállítói árak tűrési csoportjait.
--   A Költségek **tűréshatára** lapon állítsa be a költségek tűrési tűréshatárát.
+-   A Számlaösszegek tűréshatárai oldalon adja meg a számlaösszegek toleranciáit.
+-   Az Egyeztetési irányelv oldalon adja meg a kétirányú és háromirányú egyeztetési irányelveket.
+-   Az Ár tűréshatárok oldalon adja meg az egységárak toleranciáit.
+-   A Cikkárak toleranciacsoportok oldalon adjon meg toleranciacsoportokat a cikkárakhoz.
+-   A Szállítói árak toleranciacsoportok oldalon adjon meg toleranciacsoportokat a szállítói árakhoz.
+-   A Díj tűréshatárok oldalon adja meg a díjak toleranciáit.
 
 **Munkafolyamat**
 
--   A Kötelezettségek **munkafolyamatok lapon** állítsa be a napló-jóváhagyások és a beszerzési igénylések munkafolyamat-konfigurációit.
+-   A Kötelezettségek munkafolyamatai oldalon adjon meg munkafolyamat konfigurációkat naplójóváhagyásokhoz és beszerzési igénylésekhez.
 
 **Okok**
 
--   A Szállítói **okok** lapon állítsa be az okkódokat.
+-   A Szállítói okok oldalon adjon meg okkódokat.
 
 **Költségek**
 
--   A Költségek kódja **lapon** állítsa be a beszerzési rendelésekben használt költségek kódjait.
--   A Szállítói **költségcsoport** lapon hozza létre és tarthatja karban a szállítók költségcsoportját.
--   A Cikk-költségcsoportok **lapon** hozza létre és tarthatja karban a cikkek költségcsoportját.
--   Az Automatikus **költségek** lapon határozza meg a rendelésekhez automatikusan hozzárendelt költségeket.
+-   A Költségkódok oldalon adjon meg kódokat a költségekhez, amelyeket a beszerzési rendelésben használ.
+-   A Szállító költségcsoportja oldalon hozzon létre és frissítse a szállítók költségcsoportjait.
+-   A Cikk-költésgcsoportok oldalon hozza létre és frissítse a cikkek költségcsoportjait.
+-   Az Automatikus díjak oldalon adja meg a költségeket amelyek automatikusan a rendelésekhez adódnak.
 
 **Kiegészítő cikkek**
 
--   A Kiegészítő cikkcsoportok **– Szállító** lapon hozza létre és tarthatja karban a szállítókhoz tartozó kiegészítő cikkcsoportokat.
--   A Kiegészítő cikkcsoportok **– Készlet lapon** hozza létre és tarthatja karban a cikkekhez tartozó kiegészítő cikkcsoportokat.
+-   A Kiegészítő cikkcsoportok – Szállító oldalon hozza létre és frissítse a szállítók kiegészítő cikkcsoportjait.
+-   A Kiegészítő cikkcsoportok – Készlet oldalonhozza létre és frissítse a cikkek kiegészítő cikkcsoportjait.
 
 **Kiosztás**
 
--   A Szállítási **feltételek lapon** a cikkek eladótól a vevőhöz történő átvitelére vonatkozó feltételeket hozhat létre és tarthatja karban.
--   A Szállítási **módok lapon** hozhatja létre és tarthatja karban a rendelés eladótól a vevőhöz történő szállítása során használt szállítási módokat.
--   A Célkódok **lapon** hozza létre és tartsa karban a szállítási célok azonosítóit és leírásait.
+-   A Szállítás feltételei oldalon hozza létre és frissítse egy cikktranszfer feltételeit az eladótól a vevőhöz.
+-   A Szállítási módok oldalon hozza létre és frissítse a szállítási módok amelyek akkor használatosak amikor egy rendelést az eladótól a vevőnek szállítanak.
+-   A Célkódok oldalon hozza létre és frissítse az azonosítókhoz és a szállítási célok leírásához.
 
 **Képernyők**
 
--   A Képernyő megjegyzései **lapon** hozza létre a különböző lapokon megjelenő szabványos szöveget.
--   A képernyőrendezési **paraméterek** lapon állítsa be az igénylések, bevételezési listák, csomagjegyzékek és számlák rendezési sorrendjét.
--   A Nyomtatáskezelés **beállítása** lapon állítsa be a lapok eredeti és másolati példányának nyomtatáskezelési adatait.
+-   Az Adatlap megjegyzései oldalon hozza létre a szabványos szöveget, ami megjelenik az egyes oldalakon.
+-   A Képernyő-elrendezés paraméterei oldalon hozzon létre elrendezést igénylésekhez, bevételezési listákhoz, szállítólevelekhez és számlákhoz.
+-   A Nyomatatáskezelési oldalon adjon meg nyomtatáskezelési információkat az eredeti és másolt oldalakhoz.
 
 **Kifizetések**
 
--   A Készpénzfizetési **engedmények** lapon lehet beállítani és kezelni a készpénzfizetési engedmények megszerzésének feltételeit. A készpénzfizetési engedmények kódjai a szállítókhoz kapcsolódnak, és a beszerzési rendelésekre vonatkoznak.
--   A Fizetés **ütemezése** lapon állítsa be a fizetési ütemezéseket, amelyek a szállítóknak történő részletfizetések kezelésére használatosak.
--   A Fizetési **napok** lapon határozza meg a határidők kiszámításához használt fizetési napokat, és adja meg a fizetési napokat a hét vagy a hónap egy adott napjára.
--   A Kifizetési **díj lapon** hozza létre és tartsa karban a szállítókhoz társított kifizetési díjakat.
--   A Fizetési **utasítások lapon** hozza létre és tartsa karban a fizetési utasításokat.
+-   A Készpénzfizetési engedmény oldalon adja meg és kezelje a készpénzfizetési engedmények megadásával kapcsolatos feltételeket. A készpénzfizetési engedmények kódjai a szállítókhoz kapcsolódnak, és a beszerzési rendelésekre vonatkoznak.
+-   A Fizetési ütemezések oldalon adjon meg fizetési ütemezéseket, amelyeket a szállítóknak történő részletfizetések kezeléséhez használ.
+-   A Fizetési napok oldalon adja meg a fizetési napokat, amelyeket a határidők számításához használ, és adja meg a hét vagy hónap sepcifikus fizetési napjait.
+-   A Fizetési díj oldalonhozza létre és frissítse a szállítókhoz társított fizetési díjakat.
+-   A Fizetési rendelkezés oldalon hozza létre és frissítse a fizetési rendelkezéseket.
 
 **Statisztika**
 
--   A Korosítási **időszak definíciója** lapon állítsa be a felhasználó által definiált intervallumokat, amelyek a szállítói számlák esedékességi eloszlását elemzik.
--   Hozza létre **a** szállítókhoz rendelt üzletágkódokat az Üzletág lapon.
+-   A Korosítási időszak definíciók oldalon adja meg a felhasználó által megadott intervallumokat amelyek a szállítói számlák elosztásának esedékességéhez használatosak.
+-   Az Üzletág oldalon hozzon létre üzletágkódokat (LOB) amelyek szállítókhoz rendelhetők.
 
 **Adó 1099**
 
@@ -119,28 +119,32 @@ A következő beállítási oldalak funkciók szerint vannak csoportosítva.
 ## <a name="optional-setup-for-other-modules"></a>**Opcionális beállítások egyéb modulokhoz**
 **Szervezeti adminisztráció**
 
--   A Számsorozatok **lapon** állítsa be a számlaszámok számsorozatcsoportját.
+-   A Számsorozatok oldalon adjon meg szám-szekvenciacsoportokat számlaszámokhoz.
 -   A következő oldalakon címeket kell beállítani:
-    -   **Címbeállítás**
-    -   **NAF-kódok**
-    -   **Irányítószámok importálása**
+    -   Címbeállítás
+    -   NAF-kódok
+    -   Irányítószámok importálása
 
 **Főkönyv**
 
--   A Pénzügyi **dimenziók** lapon állítsa be a pénzügyi dimenziókat.
+-   A Pénzügyi dimenziók oldalon adjon meg pénzügyi dimenziókat.
 -   Az alábbi oldalakon adjon meg adóinformációkat:
-    -   **Áfakódok**
-    -   **Áfacsoportok**
-    -   **Cikkáfacsoportok**
-    -   **Számlacsoport**
-    -   **Áfamentességi kódok**
-    -   **Áfailletékességek**
-    -   **Adóhatóságok**
-    -   **Áfakiegyenlítési időszakok**
+    -   Áfakódok
+    -   Áfacsoportok
+    -   Cikkáfacsoportok
+    -   Számlacsoport
+    -   Áfamentességi kódok
+    -   Áfailletékességek
+    -   Adóhatóságok
+    -   Áfakiegyenlítési időszakok
 
 **Készpénz- és bankkezelés**
 
--   A Kifizetés célkódok **lapján** állítsa be a **Központi Bank célkódját**.
+-   A Fizetés célkódok oldalon adja meg a Központi bank célkódját.
+
+
+
+
 
 
 

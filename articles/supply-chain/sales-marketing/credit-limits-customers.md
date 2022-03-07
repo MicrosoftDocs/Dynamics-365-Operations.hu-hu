@@ -2,26 +2,23 @@
 title: Hitelkeretet a vevőknek
 description: Ez a cikk a Dynamics 365 Supply Chain Management rendszer hitelkereteinek működéséről nyújt tájékoztatást.
 author: omulvad
-manager: tfehr
 ms.date: 09/15/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e98203f03f10b3a7c530cb91211df2af025710dc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6aede26fb7d371806624742792ded5be23ad0e51
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429614"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908084"
 ---
 # <a name="credit-limits-for-customers"></a>Hitelkeretet a vevőknek
 
@@ -93,7 +90,7 @@ Használja a **Kinnlevőségek paraméterei** képernyőt az összehasonlítand�
 
 **Hol használja fel a rendszer a vevő fennmaradó hitelkeretével kapcsolatos adatokat?**
 
-A vevő egyenlegével és a fennmaradó hitel összegével kapcsolatos információk kiszámítása és tárolása a korosítási pillanatkép létrehozásakor történik meg, és a **Beszedések** képernyőn jelenik meg. Az összegek, amelyek megjelennek a **Beszedések** képernyőn, nem tartalmazzák feltétlenül az összes tranzakciós tevékenységet, amíg létre nem jön egy új korosítási pillanatkép. További tudnivalókért lásd: [Beszedések és követelések a Kinnlevőségek modulban](https://technet.microsoft.com/library/hh209221.aspx).
+A vevő egyenlegével és a fennmaradó hitel összegével kapcsolatos információk kiszámítása és tárolása a korosítási pillanatkép létrehozásakor történik meg, és a **Beszedések** képernyőn jelenik meg. Az összegek, amelyek megjelennek a **Beszedések** képernyőn, nem tartalmazzák feltétlenül az összes tranzakciós tevékenységet, amíg létre nem jön egy új korosítási pillanatkép. További tudnivalókért lásd: [Beszedések és követelések a Kinnlevőségek modulban](/dynamicsax-2012/appuser-itpro/collections-and-credit-in-accounts-receivable).
 
 A kijelölt dokumentumoktól függően a vevő egyenlegével és a fennmaradó hitel összegével kapcsolatos információk kiszámítása az értékesítési rendelés, a szállítólevél és a vevői számla frissítésekor történik meg. Ha az éppen használt dokumentum összege a hitelkeret túllépését okozna, egy üzenet jelenik meg.
 
@@ -138,3 +135,6 @@ Néha előfordulhat, hogy manuálisan kell ellenőrizni a vevő hitelkeretét. P
 1.  Kattintson ide: **Értékesítés és marketing** \> **Közös** \> **Értékesítési rendelések** \> **Minden értékesítési rendelés**. Kattintson duplán egy értékesítési rendelésre.
 
 2.  Az **Értékesítési rendelés** képernyőn, a Művelet ablakban, a **Kezelés** lapon, kattintson a **Hitelkeretének ellenőrzése** elemre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

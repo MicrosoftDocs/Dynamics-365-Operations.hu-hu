@@ -2,11 +2,9 @@
 title: Az értékesítési rendelés állapotoszlopaihoz tartozó leképezés beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani az értékesítési rendelés állapotoszlopait a kettős íráshoz.
 author: dasani-madipalli
-manager: tonyafehr
 ms.date: 06/25/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: damadipa
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: cc70501d231390ea15104d508a36300a1b2cd44c
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 9afa64df73aa17e7a15a0ee4f4529ac74bcd3c67
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744299"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750714"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Az értékesítési rendelés állapotoszlopaihoz tartozó leképezés beállítása
 
@@ -150,3 +148,6 @@ Az **isIntegrationUser** attribútum engedélyezéséhez kövesse az alábbi lé
     ![Az integrációs felhasználói mód oszlop értékének módosítása Igen értékre](media/sales-map-user-mode-yes.png)
 
 Az értékesítési rendeléseket már le vannak képezve.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

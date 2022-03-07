@@ -2,7 +2,7 @@
 title: Pénzügyi jelentések létrehozása
 description: Ez a témakör általános tájékoztatást tartalmaz a pénzügyi jelentések létrehozásával kapcsolatban.
 author: jinniew
-ms.date: 02/08/2022
+ms.date: 03/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 00a860089265800ca1a0058f222d5e85c360501c
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
-ms.translationtype: MT
+ms.openlocfilehash: c6cde37124d4a3337bca2a9b445af5fdfd87f453
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119527"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750010"
 ---
 # <a name="generate-financial-reports"></a>Pénzügyi jelentések létrehozása
 
@@ -28,27 +28,14 @@ ms.locfileid: "8119527"
 
 Ez a témakör általános tájékoztatást tartalmaz a pénzügyi jelentések létrehozásával kapcsolatban.
 
-Jelentés létrehozásához nyissa meg a jelentésdefiníciót, és válassza a Jelentés létrehozása lehetőséget az **eszköztáron**. Megnyílik **a Jelentési** sor állapota lap, amely a jelentés várólistán való helyét jelzi.
+A jelentés létrehozásához nyissa meg a jelentésdefiníciót, majd kattintson a **Létrehozás** gombra az eszköztárban. Az ekkor megnyíló **Jelentés-várólista állapota** oldal mutatja a jelentés helyét a várólistában. Alapértelmezés szerint a létrehozott jelentés a Webes megjelenítőben nyílik meg.
 
-A jelentés generálása során előfordulhat, **hogy a jelentési várólista következő állapotjelzői láthatók a jelentési várólista állapota** lapon.
-
-| Állapot          | Állami | Leírás|
-|-----------------|--------|--------------------|
-| Várakozási sor        | Ideiglenes |A jelentésdefiníciót a rendszer ellenőrzi, mielőtt a jelentést a generáló várólistába kerül.                    |
-| Feldolgozási sorban          | Ideiglenes | A jelentés beírja a jelentés-generálási várólistát, és várakozás a feldolgozásra.                      |
-| Feldolgozás alatt      | Ideiglenes | Ez az állapot általában a **Várakozási** sor állapot után következik, és általában végleges állapotra áll át, **amikor** a feldolgozás befejeződött.       |
-| Utófeldolgozás | Ideiglenes | Ez az állapot a **Feldolgozás** állapot után következik, és jelzi, hogy a program össze gyűjti a jelentés adatait, de végrehajtottak műveleteket, például számítást és összesítést.            |
-| Érvénytelenítés      | Ideiglenes | A jelentés a felhasználó kérése szerint érvénytelenül törlődik. Ez az állapot a felhasználó által kért érvénytelenítésből áll, amely várólistára **kerül** vagy feldolgozás **állapotban** van. A rendszer Megszakítva **állapotba** próbálja tenni a jelentést, hacsak a rendszer nem túl távol van, és egy másik állapotban kell véglegesítenie azt. |
-| Megszakadt        | Végleges | A jelentés feldolgozása befejeződött, de egy felhasználó által kért leállítás miatt nem fejeződött be.            |
-| Kész       | Végleges | A jelentés használatra kész.                      |
-| Sikertelen          | Végleges | A jelentés feldolgozása befejeződött, de nem sikerült, és nem lehet használni. |
-
-Alapértelmezés szerint a létrehozott jelentés a Webes megjelenítőben nyílik meg. A jelentések generálása során a következő lehetőségek közül választhat:
+A jelentések generálása során a következő lehetőségek közül választhat:
 
 - Állítson be egy ütemezést jelentés vagy jelentéscsoport automatikus létrehozásához
 - Győződjön meg arról, hogy a jelentésből nem hiányoznak számlák vagy adatok, és ellenőrizze a jelentés pontosságát
 
-Jelentés generálása esetén a program a jelentésdefiníciók lapjain megadott beállításokat használja.
+Jelentés készítésekor az Ön által a Jelentésdefiníció lapon megadott beállításokat használatosak.
 
 ## <a name="generate-a-financial-report"></a>Pénzügyi jelentés elkészítése
 
@@ -74,9 +61,9 @@ A jelentéscsoportok funkció hatékony mód arra, hogy egyszerre több jelenté
 4. Mentse a jelentéscsoportot.
 
 ## <a name="schedule-report-generation"></a>A jelentések létrehozásának ütemezése
-Számos vállalat az üzleti céljainak megfelelő alapvető jelentéskészletet használ, és meghatározott időközönként futtatja a készletben lévő jelentéseket. Lehetősége van egy jelentés rendszeres (például napi, heti, havi vagy évi) létrehozásának beütemezésére. Ezt megadhatja egy jelentésre vonatkozóan, vagy egy több vállalatot tartalmazó teljes jelentéscsoportra vonatkozóan is. Meg kell adnia az összes meghatározott vállalat, például a jelentésfa-definícióban szereplő összes vállalat hitelesítő adatait. Ha a hitelesítő adatok nem érvényesek, a jelentés csak az Ön számára hozzáférhető adatokat jeleníti meg, például azt a vállalatot, amelybe az adott időpontban bejelentkezett. A kimeneti információ leolvasása elsőként a jelentéscsoportból, ezt követően pedig az egyes jelentésekből történik.
+Számos vállalat az üzleti céljainak megfelelő alapvető jelentéskészletet használ, és meghatározott időközönként futtatja a készletben lévő jelentéseket. Lehetősége van egy jelentés rendszeres (például napi, heti, havi vagy évi) létrehozásának beütemezésére. Ezt megadhatja egy jelentésre vonatkozóan, vagy egy több vállalatot tartalmazó teljes jelentéscsoportra vonatkozóan is. Meg kell adnia az összes meghatározott vállalat, például a jelentésfa-definícióban szereplő összes vállalat hitelesítő adatait. Amennyiben a hitelesítő adatok nem érvényesek, a jelentés csak azokat az adatokat jeleníti meg, amelyekhez hozzáférési engedéllyel rendelkezik, például csak azt a vállalatot, amelyhez abban az időpontban be van jelentkezve. A kimeneti információ leolvasása elsőként a jelentéscsoportból, ezt követően pedig az egyes jelentésekből történik.
 
-A jelentési ütemezések létrehozása és mentése után megjelennek a navigációs ablakban, a Jelentési ütemezések alatt. A jelentések rendszerezéséhez mappákat hozhat létre. Ha az ütemezésben szereplő egyik jelentés nem futtatható, a többi jelentés futtatása folytatódni fog.
+Jelentésütemezések létrehozásakor és mentésekor azok a navigációs ablaktáblában jelennek meg, a Jelentésütemezések alatt. A jelentések rendszerezéséhez mappákat hozhat létre. Ha az ütemezésben szereplő egyik jelentés nem futtatható, a többi jelentés futtatása folytatódni fog.
 
 > [!IMPORTANT]
 > A jelentésütemezések létrehozásához, módosításához és törléséhez tervezői vagy rendszergazdai szerepkörrel kell rendelkeznie. Jelentés futtatásakor a annak a felhasználónak a hitelesítő adatait használja a rendszer a jelentés létrehozásához, aki az ütemezést készítette.
@@ -112,13 +99,13 @@ Jelentésütemezést csak a jelentésütemezés tulajdonosa vagy egy rendszergaz
 
 1. A Jelentéstervező navigációs ablakában kattintson a **Jelentésütemezések** lehetőségre.
 2. Válassza ki a törölni kívánt jelentésütemezést, majd kattintson a **Törlés** gombra, vagy nyomja meg a **Delete** billentyűt.
-3. A törlés megerősítésének párbeszédpanelén kattintson az **Igen** gombra, hogy véglegesen törölje a jelentésütemezést. Ha nincs engedélye az ütemezés törlésére, egy üzenet jelenik meg, és a jelentés nem törlődik.
+3. A törlés megerősítésének párbeszédpanelén kattintson az **Igen** gombra, hogy véglegesen törölje a jelentésütemezést. Ha az ütemezés törléséhez nem rendelkezik engedéllyel, egy üzenet jelenik meg és a jelentés nem törlődik.
 
 ### <a name="credentials-and-report-schedules"></a>Hitelesítő adatok és jelentésütemezések
 
 Amennyiben nem adja meg a jelentésekben szereplő összes vállalathoz szükséges hitelesítő adatokat, a jelentésütemezés mentésekor a következő üzenet jelenik meg: „Meg kell adnia az ebben a jelentésütemezésben szereplő vállalatokra vonatkozó hitelesítési adatokat. Kattintson az Engedélyek gombra a hitelesítő adatok megadásához.”
 
-Például egy felhasználó bejelentkezik az A vállalatba a felhasználónevének és a jelszavának megadásával. A felhasználó létrehoz egy ütemezést egy olyan jelentéshez, amely több vállalattól való adatgyűjtésre használ egy jelentési fa definíciót. A jelentésütemezés mentésekor a rendszer figyelmezteti a felhasználót, hogy adja meg a jelentésfa-definícióban meghatározott egyéb vállalatokhoz szükséges hitelesítő adatokat. A hitelesítő adatok lejárata után a jelentés ütemezésében érintett jelentések csak a hitelesítő adatok frissítése után jönnek létre. Megjelenik egy üzenet a jelentés-várólistán, jelezve, hogy az engedélyeket frissíteni kell. A jelentésütemezés sikertelen lesz, amennyiben a következő esetek közül bármelyik teljesül (mivel ezekhez hitelesítő adatok szükségesek):
+Például egy felhasználó bejelentkezik az A vállalatba a felhasználónevének és a jelszavának megadásával. A felhasználó létrehoz egy ütemezést egy olyan jelentéshez, amely több vállalattól való adatgyűjtésre használ egy jelentési fa definíciót. A jelentésütemezés mentésekor a rendszer figyelmezteti a felhasználót, hogy adja meg a jelentésfa-definícióban meghatározott egyéb vállalatokhoz szükséges hitelesítő adatokat. A hitelesítő adatok lejárta esetén a program nem hozza létre az érintett jelentéseket a jelentésütemezésben, amíg a hitelesítési adatok frissítése meg nem történik. Megjelenik egy üzenet a jelentés-várólistán, jelezve, hogy az engedélyeket frissíteni kell. A jelentésütemezés sikertelen lesz, amennyiben a következő esetek közül bármelyik teljesül (mivel ezekhez hitelesítő adatok szükségesek):
 
 - Új vállalatot adtak hozzá egy egyedi jelentés jelentési fájához.
 - Módosult egy jelentés egy jelentéscsoportban.
@@ -129,12 +116,12 @@ A folytatáshoz kattintson az **Engedélyek** gombra a **Jelentés ütemezése**
 ## <a name="missing-account-analysis-feature"></a>Hiányzó számlák elemzése funkció
 Rákereshet egy építőelem-csoport minden sordefiníciójában, jelentésifa-definíciójában és jelentésdefiníciójában az esetleges hiányzó pénzügyi számlákra és dimenziókra. Akkor hasznos, ha rövid idő alatt több számla vagy építőelem létrehozását vagy frissítését hajtja végre, és ellenőrizni akarja, hogy a jelentéseiben minden új információ szerepel.
 
-A hiányzó számlákat a sordefiníció vagy jelentési fa definíciójának legalacsonyabb és legmagasabb értékei határozzák meg, majd megjeleníti azoknak a számláknak a listáját, amelyek nem a sordefinícióban vagy a jelentési fa definíciójában vannak, hanem a pénzügyi adatokban. Ha egy hiányzó számla nagyobb vagy kisebb, mint a sordefinícióban szereplő érték, akkor a számla nem szerepel a hiányzó számlák listájában.
+A sordefiníció vagy jelentési-fa definíció legalacsonyabb és legmagasabb értékeinek használatával meghatározza a hiányzó számlákat, majd megjeleníti a sordefinícióban vagy jelentési-fa definícióban nem szereplő, de a pénzügyi adatokban megtalálható számlák listáját. Ha egy hiányzó számla nagyobb vagy kisebb a sordefinícióban szereplő értékeknél, akkor az a számla nem lesz feltüntetve a hiányzó számlák listáján.
 
 > [!TIP]
 > Érvényesítési célból ezt a folyamatot mindig érdemes lefuttatni havi jelentések előállítása előtt, illetve új építőelemek létrehozásakor.
 
-Értéktartományokat tartalmazó jelentésekből kevésbé valószínű, hogy hiányzik számla. Amikor lehetséges, az épületblokkban található tartományok használatával lehet az új számlákat a létrehozáskor szerepeletni. Ha valamely jelentésdefiníció a @ANY vállalatra van beállítva, akkor bejelentkezhet egy adott vállalatba, és lefuttathatja a hiányzó számlák elemzését arra a vállalatra.
+Értéktartományokat tartalmazó jelentésekből kevésbé valószínű, hogy hiányzik számla. Amikor csak lehetséges, újonnan létrehozott számlák szerepeltetéséhez használjon tartományokat az építőelemben. Ha valamely jelentésdefiníció a @ANY vállalatra van beállítva, akkor bejelentkezhet egy adott vállalatba, és lefuttathatja a hiányzó számlák elemzését arra a vállalatra.
 
 > [!NOTE]
 > Ha új vállalat hozzáadására került sor, hozzá kell adnia azt a meglévő jelentések jelentési fáihoz, különben a vállalat nem fog szerepelni a hiányzó számla elemzésben.
@@ -147,8 +134,8 @@ A hiányzó számlákat a sordefiníció vagy jelentési fa definíciójának le
 4. A **Csoportosítás alapja:** mezőben válasszon ki egy lehetőséget az eredmények rendezéséhez. Az eredmények rendezhetők az érintett építőelem szerint, illetve dimenzió- és értékkészlet szerint.
 5. Tekintse át a megjelenített eredményeket. Amikor kiválaszt egy elemet a felső ablaktáblában, az alsó ablaktáblában további információ jelenik meg a kivételről. Láthatók például a kapcsolódó dimenziók, értékek és jelentések.
 6. Az érintett elem megnyitásához kattintson a listaablakon megjelenített társított ikonra, vagy kattintson a jobb egérgombbal az elemre és válassza a **Megnyitás** lehetőséget. Több elem kijelöléséhez tartsa lenyomva a **Ctrl** billentyűt, miközben az alsó ablakban kiválasztja az elemeket.
-7. Ha olyan értékeket, épületblokkokat vagy jelentéseket ad vissza, amelyek nem szerepelnek az elemzésben, **kattintson** a jobb gombbal a cikkre, és válassza a Kihagyás lehetőséget, **vagy** jelölje be a Cikk kizárása jelölőnégyzetet a cikk listából való eltávolításához. A kizárt cikkek nem szerepelnek a lista frissítéseknél. Több elem kijelöléséhez tartsa lenyomva a **Ctrl** billentyűt, miközben az alsó ablakban kiválasztja az elemeket. Az összes elem megtekintéséhez, beleértve azokat az eredményeket is, amelyeket korábban kizárt az elemzésből, jelölje be a **Kizárt építőelemek és értékek megjelenítése** jelölőnégyzetet, majd kattintson a **Frissítés** gombra.
-8. Válassza **a Frissítés** lehetőséget a már megott kivételek frissítéshez. Kattintson az **Igen** gombra az összes eredményre vonatkozó teljes frissítés végrehajtásához, vagy kattintson a **Nem** gombra a kiválasztott elemekre vonatkozó részleges frissítés végrehajtásához.
+7. Ha bármilyen, analízisben szerepeltetni nem kívánt értéket, építőelemet vagy jelentést kap vissza, az elem listából való eltávolításához kattintson a jobb egérgombbal az elemre és válassza a **Kizárás** lehetőséget, vagy jelölje be a **Kizárás** jelölőnégyzetet az elem mellett. A kizárt elemek a lista frissítése után már nem szerepelnek. Több elem kijelöléséhez tartsa lenyomva a **Ctrl** billentyűt, miközben az alsó ablakban kiválasztja az elemeket. Az összes elem megtekintéséhez, beleértve azokat az eredményeket is, amelyeket korábban kizárt az elemzésből, jelölje be a **Kizárt építőelemek és értékek megjelenítése** jelölőnégyzetet, majd kattintson a **Frissítés** gombra.
+8. Kattintson a **Frissítés** gombra a kiválasztott elemek frissítéséhez. Kattintson az **Igen** gombra az összes eredményre vonatkozó teljes frissítés végrehajtásához, vagy kattintson a **Nem** gombra a kiválasztott elemekre vonatkozó részleges frissítés végrehajtásához.
 
     > [!NOTE]
     > A program automatikusan frissíti a képernyőt megnyitáskor, kivéve ha az meg volt nyitva az utolsó 15 percben.

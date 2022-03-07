@@ -1,26 +1,24 @@
 ---
 title: Német Intrastat
 description: Ez a témakör a németországi Intrastat-jelentéskészítéssel kapcsolatban tartalmaz tájékoztatást.
-author: anasyash
-ms.date: 09/09/2021
+author: andosip
+ms.date: 08/2/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: v-aosipov
 ms.search.validFrom: ''
-ms.openlocfilehash: 50c412fdfd7118843d285cbb70e8e44847c9d4a5
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: e1dbf0997417f9f1ad313e6a7b3c2c9cfae41efc6b1cfda60a5500ae0af94709
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759843"
 ---
 # <a name="german-intrastat"></a>Német Intrastat
 
-[!include [banner](../includes/banner.md)]
-
-Az **Intrastat** oldalon információkat generálhat és jelenthet az Európai Unió országaival folytatott kereskedelemről. A német Intrastat nyilatkozat tartalmazza a jelentéskészítéshez szükséges árukereskedelmi adatokat. A jelentés formátuma a német hatóságok által a [6.2-es bevallások benyújtása, az INSTAT/XML formátumban](https://www-idev.destatis.de/idev/doc/intra_en/hilfe6_2.html) oldalon található előírások szerint van formázva.
+Az **Intrastat** oldalon információkat generálhat és jelenthet az Európai Unió országaival folytatott kereskedelemről. A német Intrastat nyilatkozat tartalmazza a jelentéskészítéshez szükséges árukereskedelmi adatokat.
 
 Az alábbi táblázat a német Intrastat-nyilatkozatban szereplő mezőket mutatja be.
 
@@ -73,16 +71,15 @@ Az alábbi táblázat a német Intrastat-nyilatkozatban szereplő mezőket mutat
     3. A **Jelentésformátum-hozzárendelés** mezőben válassza az **Intrastat jelentés** lehetőséget.
     4. Az **Árucikk-kódok hierarchiája** gyorslapon a **Kategóriahierarchia** mezőben válassza az **Intrastat** lehetőséget.
     5. A **Tranzakciókód** mezőben válassza ki a vagyonátruházáshoz létrehozott tranzakciókódot. Ezt a kódot olyan tranzakciókra kell használni, amelyek tényleges vagy tervezett vagyonátruházást eredményeznek (pénzügyi vagy egyéb) ellenszolgáltatás ellenében. Javításra is használható.
-    6. A **Jóváírási megjegyzés** mezőben válassza ki az áruk visszaküldésének tranzakciós kódját.
-    7. A **Dolgozó** mezőben válassza ki az Intrastat-jelentés kapcsolattartóját. Másik lehetőségként a **Kapcsolattartó** lapon adja meg vagy válassza ki az értékeket a **Név**, **Telefon**, **Fax**, **E-mail** és **Internetcím** mezőben. Ezek a mezők szerepelnek a jelentésben.
-    8. A **Hatóság** mezőben válassza ki az Intrastatáhatóságot.
-    9. Válassza az **Adó** > **Közvetett adók** > **Értékesítési adó** > **Értékesítési adóhatóságok** menüpontot, és adja meg az előző lépésben kiválasztott Intrastat-hatósághoz a következő adatokat:
+    6. A **Jóváírási megjegyzés** mezőben válassza ki az áruk visszaküldésének tranzakciós kódját. Ezt a kódot az eredetileg a tranzakció kódja alatt rögzített áruk visszaküldésére használja a tranzakciót követően.
+    7. A **Hatóság** mezőben válassza ki az Intrastatáhatóságot.
+    8. Válassza az **Adó** > **Közvetett adók** > **Értékesítési adó** > **Értékesítési adóhatóságok** menüpontot, és adja meg az előző lépésben kiválasztott Intrastat-hatósághoz a következő adatokat:
 
        - Hatóság azonosítója
        - Cím
        - Kapcsolattartó adatai
 
-    10. Az **Ország/régió tulajdonságai** lapon az **Ország/régió** mezőben sorolja fel azokat az országokat vagy régiókat, amelyekkel a vállalata üzleti kapcsolatban áll. Minden egyes ország vagy régió esetében az **Ország/régió típusa** mezőben válassza az **EU** lehetőséget, hogy az ország vagy régió megjelenjen az Intrastat-jelentésben.
+    9. Az **Ország/régió tulajdonságai** lapon az **Ország/régió** mezőben sorolja fel azokat az országokat vagy régiókat, amelyekkel a vállalata üzleti kapcsolatban áll. Minden egyes ország vagy régió esetében az **Ország/régió típusa** mezőben válassza az **EU** lehetőséget, hogy az ország vagy régió megjelenjen az Intrastat-jelentésben.
 
 4. Regionális kódok beállítása.
 

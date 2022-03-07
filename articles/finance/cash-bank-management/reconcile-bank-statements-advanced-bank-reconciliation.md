@@ -2,11 +2,9 @@
 title: Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával
 description: A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 Finance rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti.
 author: saraschi2
-manager: AnnBe
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 92c04a47b134584280736f4d3d2fa401d2a2a9b7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: fbfa999d2aaa4b6dad711bb57916a68fb37c57d9add09092783ad3a8d6450c1f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714448"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával
 
@@ -30,8 +28,7 @@ ms.locfileid: "4969428"
 
 A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Dynamics 365 Finance rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti.  
 
-<a name="import-an-electronic-bank-statement"></a>Az elektronikus banki kivonat importálása
------------------------------------
+## <a name="import-an-electronic-bank-statement"></a>Az elektronikus banki kivonat importálása
 
 A banki kivonatok importálása az **Importnyilatkozat** használatával a **Banki kivonatok** oldalon. A banki kivonaton a bankszámla a bankszámla adatainál beállított értékek kombinációja alapján azonosított. Ezek az értékek magukba foglalják a bank nevét, a bankszámla számot, az útvonalszámot, a Society for Worldwide Interbank Financial Telecommunication (SWIFT) kódot és az International Bank Account Number (IBAN) kódot. 
 
@@ -95,3 +92,6 @@ Az egyeztetés munkalapon **Új** értékkel jelölt Banki kivonat tranzakciók 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

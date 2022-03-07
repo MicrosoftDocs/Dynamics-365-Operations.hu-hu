@@ -1,12 +1,10 @@
 ---
 title: Felelős karbantartási dolgozók
 description: Ez a témakör azt mutatja be, hogyan lehet felelős karbantartási dolgozókat beállítani az Eszközkezelés modulban.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 07/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkerResponsible
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 137ed393f28131262584d5a2ae414092b124ea0e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: a1330aa04a57809ff34dcca9791f8fb0a93c8d71
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021955"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5808448"
 ---
 # <a name="responsible-maintenance-workers"></a>Felelős karbantartási dolgozók
 
@@ -53,3 +51,6 @@ A felelős karbantartási dolgozók beállítása előtt be kell állítania a k
 A következő ábra a **Felelős karbantartási dolgozók** oldalt szemlélteti.
 
 ![Felelős karbantartási dolgozók oldal](media/08-setup-for-requests.png)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

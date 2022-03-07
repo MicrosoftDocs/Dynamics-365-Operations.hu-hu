@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 4887cde3e4243ae7a4da6402782e69e780ae20331ed80df63ba1239ef5187e41
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: af19a3abd78d543d82f7a8d017e2dc413115a6d8
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769271"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6018434"
 ---
 # <a name="save-for-my-next-payment-option-doesnt-appear"></a>A Mentés a következő fizetéshez lehetőség nem jelenik meg
 
@@ -34,9 +34,9 @@ Az e-kereskedelmi pénztároldalon a **Mentés a következő fizetéshez** lehet
 
 A következő illusztráció egy olyan pénztároldalt mutat be, amely tartalmazza a **Mentés a következő fizetéshez** jelölőnégyzetet.
 
-![A Mentés a következő fizetéshez jelölőnégyzet a Fizetés modulban.](media/payment-module-save-payment.jpg)
+![A Mentés a következő fizetéshez jelölőnégyzet a Fizetés modulban](media/payment-module-save-payment.jpg)
 
-## <a name="resolution"></a>Megoldás
+## <a name="resolution"></a>Felbontás
 
 ### <a name="verify-that-the-dynamics-365-payment-connector-for-adyen-is-correctly-configured-in-commerce-headquarters"></a>Győződjön meg arról, hogy a Dynamics 365 fizetési összekötő az Adyen szolgáltatáshoz helyesen van-e konfigurálva a Commerce központi felületén
 
@@ -46,7 +46,7 @@ Annak ellenőrzésére, hogy a Dynamics 365 fizetési összekötő az Adyen szol
 1. Válassza ki az online áruházat.
 1. A **Fizetési számlák** gyorslapon győződjön meg arról, hogy a **Fizetési információ mentésének engedélyezése az e-kereskedelemben** mező értéke **Igaz** legyen.
 
-![Fizetési információ mentésének engedélyezése az e-kereskedelemben a Commerce központi felületén.](media/payment-connector-save-payment.jpg)
+![Fizetési információ mentésének engedélyezése az e-kereskedelemben a Commerce központi felületén](media/payment-connector-save-payment.jpg)
 
 ## <a name="additional-resources"></a>További erőforrások
 

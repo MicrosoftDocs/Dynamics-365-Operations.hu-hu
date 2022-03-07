@@ -2,27 +2,24 @@
 title: Önkiszolgálás hardverállomás letöltéséhez
 description: Ez az eljárás végigveszi, hogyan tölthet le egy előre definiált hardverállomást.
 author: jashanno
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailStoreTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a4ad389a18d2b6d79ef9fb25da810323927e5f04
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 6779b63c3bd5ccb41d82fe79ac51e212813a79fe
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412899"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801867"
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a>Önkiszolgálás hardverállomás letöltéséhez
 
@@ -37,3 +34,6 @@ Ez az eljárás végigveszi, hogyan tölthet le egy előre definiált hardverál
 5. Keresse meg és jelölje ki a kívánt rekordot a listán.
 6. Kattintson a Letöltés lehetőségre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

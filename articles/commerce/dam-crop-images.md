@@ -2,15 +2,12 @@
 title: Képek körülvágása
 description: Ez a témakör azt mutatja be, hogyan vághat körül képeket a Microsoft Dynamics 365 Commerce webhelykészítőben.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a8f52c22a57d465ce1c2bedac6e8f13db3e856c0
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
-ms.translationtype: HT
+ms.openlocfilehash: cb6049a1d98b7286658403b15a071f6f1389f725a9a7a146aab55d43796be60b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594478"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744510"
 ---
 # <a name="crop-images"></a>Képek körülvágása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan vághat körül képeket a Microsoft Dynamics 365 Commerce webhelykészítőben.
-
-## <a name="overview"></a>Áttekintés
 
 A Commerce webhelykészítő médiatára segítségével képeket vághat körül, hogy optimalizálja őket különböző modultípusokhoz és nézetportokhoz.
 
@@ -66,3 +61,6 @@ Az egyéni körülvágás befejezése után a képmódosítások szinte azonnal 
 [Képfókuszpontok testreszabása](dam-custom-focal-point.md)
 
 [Statikus fájlok feltöltése és kiszolgálása](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

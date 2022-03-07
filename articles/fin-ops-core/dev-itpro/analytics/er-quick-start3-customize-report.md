@@ -2,6 +2,7 @@
 title: Elektronikus jelentéskészítési konfigurációk testreszabása elektronikus bizonylat előállításához
 description: Ez a témakör azt mutatja be, hogyan lehet testreszabni a Microsoft által biztosított elektronikus jelentéskészítési (ER) konfigurációkat, amelyekkel egyedi elektronikus dokumentumok generálhatók.
 author: NickSelin
+manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
@@ -9,20 +10,18 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom:
-- "220314"
-- intro-internal
+ms.custom: 220314
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
-ms.translationtype: MT
+ms.openlocfilehash: 2a0cc308e2e3c7f42295a6170c4f709a835c5c84
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324087"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5566126"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Elektronikus jelentéskészítési konfigurációk testreszabása elektronikus bizonylat előállításához
 
@@ -108,7 +107,7 @@ Ha a szabvány ER-konfigurációkat a Finance jelenlegi példányához szeretné
 5. Válassza ki a **Verziók** gyorslap **11.2.2.** verzióját.
 6. Válassza az **Importálás** lehetőséget a kiválasztott verzióglobális adattárból történő letöltéséhez.
 
-![Konfigurációk tárháza oldal.](./media/er-quick-start3-import-solution1.png)
+![Konfigurációk tárháza oldal](./media/er-quick-start3-import-solution1.png)
 
 > [!TIP]
 > Ha nem sikerül elérnie a [globális adattárat](er-download-configurations-global-repo.md), akkor lehetősége van ehelyett [letölteni konfigurációkat](download-electronic-reporting-configuration-lcs.md) a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
@@ -120,9 +119,9 @@ Ha a szabvány ER-konfigurációkat a Finance jelenlegi példányához szeretné
 3. A **Konfigurációk** lapon bontsa ki a **Konfigurációs összetevők** gyorslapot.
 4. A bal oldali konfigurációs fában bontsa ki a **számla modell** elemet, majd bontsa ki a **UBL értékesítési számla** lehetőséget.
 
-Figyelje meg, hogy a kiválasztott **Peppol értékesítési számla** ER-formátumon kívül más szükséges ER-konfigurációk importálása is megtörtént. Mivel az ER-konfigurációk új verziói folyamatosan megjelennek a globális tárházban és az LCS-ben, hogy a megfelelő megoldások megfeleljenek az új követelményeknek, a szükséges adatmodellkonfigurációnak és ennek modell-leképezési konfigurációinak legújabb verziói importálásra kerültek.
+Figyelje meg, hogy a kiválasztott **Peppol értékesítési számla** ER-formátumon kívül más szükséges ER-konfigurációk importálása is megtörtént. Mivel az ER-konfigurációk új verziói folyamatosan megjelennek a globális tárházban és az LCS-ben, hogy a megfelelő megoldások megfeleljenek az új követelményeknek, a szükséges [adatmodell](general-electronic-reporting.md#data-model-and-model-mapping-components)konfigurációnak és ennek [modell-leképezési](general-electronic-reporting.md#data-model-and-model-mapping-components) konfigurációinak legújabb verziói importálásra kerültek.
 
-![Konfigurációs oldal.](./media/er-quick-start3-imported-solution1a.png)
+![Konfigurációk oldala](./media/er-quick-start3-imported-solution1a.png)
 
 Ha szimulálni szeretné, hogy milyen állapotban lennének az ER-konfigurációk az aktuális Finance példányban, ha importálta volna a **Peppol értékesítési számla** ER-formátum **11.2.2** verzióját a múltban (például 2019. augusztus 7-én), kövesse az alábbi lépéseket.
 
@@ -133,32 +132,32 @@ Ezután győződjön meg arról, hogy a konfigurációs fában a következő ER-
 
 - **Számlamodell** az ER-adatmodell konfigurációját (eredetileg a **Ügyfélszámla modellje** néven):
 
-    - A 11-es verzió tartalmazza az adatmodell ER-összetevő 10-es verzióját, amely a számlázó üzleti tartomány adatstruktúráját jelzi. Ezt az ER-konfigurációt importálták a **Peppol értékesítési számla** ER-formátum elődjeként, amelyet importálásra kijelöltek.
+    - A 11-es verzió tartalmazza az [adatmodell](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-összetevő 10-es verzióját, amely a számlázó üzleti tartomány adatstruktúráját jelzi. Ezt az ER-konfigurációt importálták a **Peppol értékesítési számla** ER-formátum elődjeként, amelyet importálásra kijelöltek.
     - Az 50-es verzió tartalmazza az adatmodell ER-összetevő 31-es verzióját. Ezt az ER-konfigurációt a rendszer a **Számlamodell-leképezés** ER-modell-leképezési konfiguráció 2019. augusztus 7-ei verziója elődjeként importálta.
 
-    ![A számlamodell ER-adatmodell konfigurációja a Konfigurációk oldalon.](./media/er-quick-start3-imported-solution1b1.png)
+    ![A számlamodell ER-adatmodell konfigurációja a Konfigurációk oldalon](./media/er-quick-start3-imported-solution1b1.png)
 
     > [!TIP]
     > Ha nem látja ezt az adatmodell 50-es verzióját, nyissa meg a globális tárházat, és importálja a **Számlamodell-leképezés** ER-konfiguráció 50.19-es verzióját.
 
 - **Számlamodell-leképezés** az ER-amodell-leképezési konfigurációját (eredetileg a **Ügyfélszámla modell-leképezése** néven):
 
-    - Az 50.19-es verzió importálása a **Számlamodell** ER-adatmodell-konfiguráció 50-es verziójának legújabb megvalósításaként történt. A program két modell-leképezés ER-összetevőt tartalmaz, amely leírja, hogy az adatmodell milyen módon van kitöltve a futásidejű alkalmazási adatokkal.
+    - Az 50.19-es verzió importálása a **Számlamodell** ER-adatmodell-konfiguráció 50-es verziójának legújabb megvalósításaként történt. A program két [modell-leképezés](general-electronic-reporting.md#data-model-and-model-mapping-components) ER-összetevőt tartalmaz, amely leírja, hogy az adatmodell milyen módon van kitöltve a futásidejű alkalmazási adatokkal.
 
-    ![A számlamodell-leképezés ER-adatmodell-leképezési konfigurációja a Konfigurációk oldalon.](./media/er-quick-start3-imported-solution1b2.png)
+    ![A számlamodell-leképezés ER-adatmodell-leképezési konfigurációja a Konfigurációk oldalon](./media/er-quick-start3-imported-solution1b2.png)
 
     > [!TIP]
     > Ha nem látja ezt a modell-leképezés 50.19-es verzióját, nyissa meg a globális tárházat, és importálja a **Számlamodell-leképezés** ER-konfiguráció 50.19-es verzióját.
 
 - **UBL értékesítési számla** ER-formátumkonfigurációja:
 
-    - A 11.2-es verzió tartalmazza a formátum és formátumleképezés ER-összetevőit. A formátum összetevő meghatározza a jelentés elrendezését. A formátumleképezési összetevő tartalmazza a modell-adatforrást, és meghatározza, hogy a jelentés elrendezését milyen módon kell kitölteni ennek az adatforrásnak a használatával futásidőben. Ezt az ER-formátumot a rendszer úgy konfigurálta, hogy e-számlákat Universal Business Language (UBL) formátumban hozzon létre. Ezt importálták a **Peppol értékesítési számla** ER-formátum fölérendelt elemeként, amelyet importálásra kijelöltek.
+    - A 11.2-es verzió tartalmazza a [formátum](general-electronic-reporting.md#FormatComponentOutbound) és formátumleképezés ER-összetevőit. A formátum összetevő meghatározza a jelentés elrendezését. A formátumleképezési összetevő tartalmazza a modell-adatforrást, és meghatározza, hogy a jelentés elrendezését milyen módon kell kitölteni ennek az adatforrásnak a használatával futásidőben. Ezt az ER-formátumot a rendszer úgy konfigurálta, hogy e-számlákat Universal Business Language (UBL) formátumban hozzon létre. Ezt importálták a **Peppol értékesítési számla** ER-formátum fölérendelt elemeként, amelyet importálásra kijelöltek.
 
 - **Peppol értékesítési számla** ER-formátumkonfigurációja:
 
     - A 11.2.2-es verzió tartalmazza a formátum és formátum-leképezés ER-összetevőit, amelyeket konfiguráltak az e-számlák Pan-European Public Procurement OnLine (PEPPOL) formátumban való létrehozására.
 
-    ![A Peppol értékesítési számla ER-formátumkonfigurációja a Konfigurációk oldalon.](./media/er-quick-start3-imported-solution1b3.png)
+    ![A Peppol értékesítési számla ER-formátumkonfigurációja a Konfigurációk oldalon](./media/er-quick-start3-imported-solution1b3.png)
 
 ## <a name="configure-the-accounts-receivable-parameters"></a><a name="ConfigureAR1"></a>A Kinnlevőségek paraméterei konfigurálása
 
@@ -166,7 +165,7 @@ Ezután győződjön meg arról, hogy a konfigurációs fában a következő ER-
 2. Az **elektronikus dokumentumok** lapon az **elektronikus jelentéskészítés** gyorslapján, az **értékesítési és Szabadszöveges számla** mezőben válassza ki a **Peppol értékesítési számlát**.
 3. Válassza a **Mentés** lehetőséget.
 
-![A Kinnlevőségek paraméterei lap elektronikus dokumentumok lapja.](./media/er-quick-start3-configure-ar1.png)
+![A Kinnlevőségek paraméterei lap elektronikus dokumentumok lapja](./media/er-quick-start3-configure-ar1.png)
 
 ## <a name="configure-the-legal-entity-parameters"></a><a name="ConfigureLE"></a>A jogi személy paramétereinek konfigurálása
 
@@ -218,7 +217,7 @@ Most már használhatja azokat a szabványos ER-konfigurációkat, amelyeket a s
 
 5. Válassza a **Mentés** lehetőséget.
 
-![Szabadszöveges számla oldal.](./media/er-quick-start3-add-invoice.png)
+![Szabadszöveges számla oldal](./media/er-quick-start3-add-invoice.png)
 
 További tájékoztatás: [Szabadszöveges számla létrehozása](../../../finance/accounts-receivable/create-free-text-invoice-new.md).
 
@@ -228,14 +227,14 @@ További tájékoztatás: [Szabadszöveges számla létrehozása](../../../finan
 2. A **Szabadszöveges számla** lapon válassza a művelet ablaktábla **Feladás** elemét.
 3. A **Szabadszöveges számla feladása** párbeszédpanelen kattintson az **OK** gombra.
 
-![Szabadszöveges számla részletei oldal.](./media/er-quick-start3-post-invoice.png)
+![Szabadszöveges számla részletei oldal](./media/er-quick-start3-post-invoice.png)
 
 ### <a name="send-a-posted-invoice"></a>Feladott számla küldése
 
 1. Válassza a következőt **Kinnlevőségek** \> **Számlák** \> **Kizárólag szabadszöveges számlák**.
 2. Válassza ki a **Szabadszöveges számla** lapot a művelet ablaktábláján, a **dokumentum** csoportban válassza a **Küldés** \> **Eredeti**.
 
-    ![Az eredeti számla előnézetének megtekintése.](./media/er-quick-start3-send-invoice.png)
+    ![Az eredeti számla előnézetének megtekintése](./media/er-quick-start3-send-invoice.png)
 
 3. Zárja be a **Szabadszöveges számla** képernyőt.
 
@@ -245,12 +244,12 @@ További tájékoztatás: [Szabadszöveges számla létrehozása](../../../finan
 2. Az **elektronikus jelentéskészítési feladatok** lapon válassza ki azt a kezdeti rekordot, amelynél a feladatnak leírása **eInvoice XML-fájl elküldése**.
 3. Válassza ki a **Fájlok megjelenítése** elemet a létrejövő fájlok listájának eléréséhez.
 
-    ![Elektronikus jelentéskészítési feladatai oldal.](./media/er-quick-start3-jobs-list.png)
+    ![Elektronikus jelentéskészítési feladatai oldal](./media/er-quick-start3-jobs-list.png)
 
 4. Válassza a **Megnyitás** elemet az imént létrehozott e-számla XML-fájl letöltéséhez.
 5. Az e-számla XML-fájljának elemzése. Figyelje meg, hogy az ügyfél adózási sémáját jelenleg a **schemeID** és **schemeAgencyID** XML attribútumok jelzik. Azt is észreveheti, hogy a **cbc:CustomizationID** XML-elem jelenleg a következő szöveget tartalmazza: `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0`.
 
-    ![A létrejövő e-számla XML-fájljának előnézete.](./media/er-quick-start3-e-invoice1.png)
+    ![A létrejövő e-számla XML-fájljának előnézete](./media/er-quick-start3-e-invoice1.png)
 
 ## <a name="add-a-custom-database-field"></a><a name="AddCustomField"></a>Egyéni adatbázismező hozzáadása
 
@@ -282,7 +281,7 @@ A Testreszabás végrehajtásához hajtsa végre az alábbi lépéseket.
 12. A megjelenő üzenetablakban válassza az **Igen** lehetőséget, ha meg szeretné erősíteni az új **FederalTaxID** mezőbejegyzés létrehozását a **Ügyfelek** táblához.
 13. Válassza ki a **Beszúrás** lehetőséget a <a name="insert_custom_field"></a>**FederalTaxID\_Custom** mező jelenlegi oldalhoz való hozzáadásához.
 
-    ![Összes ügyfél oldal.](./media/er-quick-start3-create-new-field.gif)
+    ![Összes ügyfél oldal](./media/er-quick-start3-create-new-field.gif)
 
 14. Zárja be az **összes ügyfél** lapot.
 
@@ -312,7 +311,7 @@ Az elektronikus jelentéskészítési funkcionális tanácsadó szerepkörében 
 
 Ezután az ER-adatmodell-tervező használatával szerkesztheti a **Számlamodell (Litware)** ER-konfiguráció 50.1-es verzióját **Piszkozat** [állapotban](general-electronic-reporting.md#component-versioning).
 
-![Az ER-konfiguráció 50.1-es verziója a Konfigurációk oldalon.](./media/er-quick-start3-added-custom-model.png)
+![Az ER-konfiguráció 50.1.-es verziója a Konfigurációk oldalon](./media/er-quick-start3-added-custom-model.png)
 
 #### <a name="configure-a-custom-data-model"></a>Egyéni adatmodell konfigurálása
 
@@ -328,7 +327,7 @@ A Szövetségi adóazonosító kód értékének megadásához egy új mező hoz
 8. A **elemtípus** mezőben fogadja el az alapértelmezett értéket, a **karakterláncot**.
 9. Válassza a **Hozzáadás** parancsot, majd válassza a **Mentés** elemet.
 
-    ![Adatmodell-tervező oldal.](./media/er-quick-start3-add-data-model-field.png)
+    ![Adatmodell-tervező oldal](./media/er-quick-start3-add-data-model-field.png)
 
     > [!NOTE]
     > A **címke** és a **Leírás** mező az új mező célját írja le. Ezeket a mezőket több nyelven is kitöltheti. További tudnivalókért lásd: [Többnyelvű jelentések tervezése elektronikus jelentéskészítésben (ER)](er-design-multilingual-reports.md).
@@ -345,7 +344,7 @@ Be kell [fejeznie](general-electronic-reporting.md#component-versioning) a munk�
 
 Az 50.1-es verzió állapota a **Piszkozat** értékről a **Befejezett** értékre módosul , és a verzió írásvédett lesz. Az új, szerkeszthető verzió (50.2) **Piszkozat** állapottal kerül hozzáadásra. Ennek a verziónak a használatával további változtatásokat hajthat végre a saját egyéni ER-adatmodell-konfigurációban.
 
-![A 50.1-es verzió befejezve a Konfigurációk oldalon.](./media/er-quick-start3-completed-custom-model1.png)
+![A 50.1 verzió a konfigurációk oldalon fejeződött be](./media/er-quick-start3-completed-custom-model1.png)
 
 ### <a name="customize-the-model-mapping-configuration"></a>A modell-leképezési konfiguráció testreszabása
 
@@ -365,7 +364,7 @@ Az elektronikus jelentéskészítési fejlesztő szerepkörében felhasználók�
 
 7. Az új ER-konfiguráció hozzáadásához válassza a **Konfiguráció létrehozása** elemet.
 
-![Az egyéni modell-leképezési konfiguráció hozzáadása a Konfigurációk oldalon.](./media/er-quick-start3-adding-custom-mapping.png)
+![Az egyéni modell-leképezési konfiguráció hozzáadása a Konfigurációk oldalon](./media/er-quick-start3-adding-custom-mapping.png)
 
 #### <a name="configure-a-custom-model-mapping"></a>Egyéni modell-leképezés konfigurálása
 
@@ -376,7 +375,7 @@ Módosítania kell az egyéni modell hozzárendelését, és meg kell adnia, hog
 3. A Műveleti ablaktáblán kattintson a **Tervező** elemre.
 4. A **Modell leképezése adatforráshoz** oldalon válassza a **Ügyfélszámla** leképezést.
 
-    ![Modell hozzárendelése adatforráshoz lap.](./media/er-quick-start3-select-customer-mapping.png)
+    ![Modell hozzárendelése adatforráshoz lap](./media/er-quick-start3-select-customer-mapping.png)
 
 5. Válassza a **Tervező** lehetőséget.
 6. A **Modell-leképezéstervező** oldal **Adatforrások** panelén bontsa ki a **CustInvoiceJour** adatforrást, amely a **CustInvoiceJour** alkalmazástáblát jelzi.
@@ -386,7 +385,7 @@ Módosítania kell az egyéni modell hozzárendelését, és meg kell adnia, hog
 10. Az **adatmodell** ablaktáblán bontsa ki a **vevők adatait (vevő)** elemet, és válassza ki a **FederalTaxID\_Litware** adatmodell mezőt.
 11. Válassza a **Bind** elemet.
 
-    ![Modell-leképezés tervező oldal.](./media/er-quick-start3-customize-model-mapping.gif)
+    ![Modell-leképezés tervező oldal](./media/er-quick-start3-customize-model-mapping.gif)
 
 12. Válassza a **Mentés** lehetőséget.
 13. Zárja be a **Modell-hozzárendelési tervező** lapot.
@@ -402,7 +401,7 @@ Az egyéni ER-modell-hozzárendelési konfiguráció 50.19.1-es verziójával v�
 
 Az 50.19.1-es verzió állapota a **Piszkozat** értékről a **Befejezett** értékre módosul , és a verzió írásvédett lesz. Az új, szerkeszthető verzió (50.19.2) **Piszkozat** állapottal kerül hozzáadásra. Ennek a verziónak a használatával további változtatásokat hajthat végre a saját egyéni ER-modell-leképezési konfigurációban.
 
-![A 50.19.1-es verzió befejezve a Konfigurációk oldalon.](./media/er-quick-start3-completed-custom-mapping1.png)
+![A 50.19.1 verzió a konfigurációk oldalon fejeződött be](./media/er-quick-start3-completed-custom-mapping1.png)
 
 > [!NOTE]
 > A támogatott konfigurációs [életciklus](general-electronic-reporting-manage-configuration-lifecycle.md) nem fedi le az adatbázis-módosítások életciklusát. Ha az aktuális Finance példány **Számlamodell-leképezés (Litware)** konfiguráció 50.19.1 verzióját exportálja, és szeretne egy másik példányt importálni, ami nem tartalmazza az egyéni **FederalTaxID\_Custom** mezőt a **CustTable** táblában, kivétel történik. A kivétel azt határozza meg, hogy az importált ER konfiguráció nem kompatibilis a célként megadott Finance példány metaadataival.
@@ -426,11 +425,11 @@ Az elektronikus jelentéskészítési funkcionális tanácsadó szerepkörében 
 7. Az **Adatmodell** mezőben válassza ki a **InvoiceCustomer** gyökérdefiníciót.
 8. Az új ER-konfiguráció hozzáadásához válassza a **Konfiguráció létrehozása** elemet.
 
-![Az egyéni formátumkonfiguráció hozzáadása a Konfigurációk oldalon.](./media/er-quick-start3-adding-custom-format.png)
+![Az egyéni formátumkonfiguráció hozzáadása a Konfigurációk oldalon](./media/er-quick-start3-adding-custom-format.png)
 
 Ezután az ER-művelettervező használatával szerkesztheti a **Peppol értékesítési számla (Litware)** ER-konfiguráció 11.2.2.1-es verzióját **Piszkozat** [állapotban](general-electronic-reporting.md#component-versioning).
 
-![Az ER-konfiguráció 11.2.2.1-es verziója a Konfigurációk oldalon.](./media/er-quick-start3-added-custom-format.png)
+![Az ER-konfiguráció 11.2.2.1.-es verziója a Konfigurációk oldalon](./media/er-quick-start3-added-custom-format.png)
 
 #### <a name="configure-a-custom-format"></a>Egyéni formátum konfigurálása
 
@@ -446,7 +445,7 @@ Az egyéni formátumot úgy kell módosítani, hogy egy új fájlformátumot ad 
 8. A formátumfában az **XMLHeader** \> **Számla** \> **cac:AccountingCustomerParty** \> **cac:Party** \> **cac:PartyTaxScheme** \> **cac:TaxScheme** \> **cbc:ID** részben válassza a **FederalTaxID** elemet.
 9. Válassza a **Feljebb** lehetőséget.
 
-![Új formátumelem a Formátumtervező oldalon.](./media/er-quick-start3-customized-format.png)
+![Új formátumelem a Formátumtervező oldalon](./media/er-quick-start3-customized-format.png)
 
 #### <a name="configure-a-custom-format-mapping"></a>Egyéni formátumleképezés konfigurálása
 
@@ -454,7 +453,7 @@ Az egyéni formátumot úgy kell módosítani, hogy egy új fájlformátumot ad 
 2. Bontsa ki a **számla** területen a **vevői adatok (vevő)** elemet, és válassza ki a **FederalTaxID\_Litware** elemet.
 3. Válassza a **Bind** elemet.
 
-    ![Formátumtervező oldal.](./media/er-quick-start3-customized-format-mapping.png)
+    ![Formátumtervező oldal](./media/er-quick-start3-customized-format-mapping.png)
 
 4. Válassza ki a **Modell** típus **Számla** adatforrást, majd válassza a **Szerkesztés** parancsot.
 5. Válassza ki a **verzió** mezőben az Egyéni adatmodell **1**-es verzióját, majd kattintson az **OK** gombra.
@@ -471,7 +470,7 @@ Az egyéni ER-formátum-konfiguráció 11.2.2.1-es verziójával végzett munká
 
 Az 11.2.2.1-es verzió állapota a **Piszkozat** értékről a **Befejezett** értékre módosul , és a verzió írásvédett lesz. Az új, szerkeszthető verzió (11.2.2.2) **Piszkozat** állapottal kerül hozzáadásra. Ennek a verziónak a használatával további változtatásokat hajthat végre a saját egyéni ER-formátumkonfigurációjában.
 
-![A 11.2.2.1-es verzió befejezve a Konfigurációk oldalon.](./media/er-quick-start3-completed-custom-format1.png)
+![A 11.2.2.1 verzió a konfigurációk oldalon fejeződött be](./media/er-quick-start3-completed-custom-format1.png)
 
 ## <a name="configure-the-accounts-receivable-parameters-to-start-to-use-custom-er-configurations"></a><a name="ConfigureAR2"></a>Kinnlevőségek paraméterek konfigurálása az egyéni ER-konfigurációk használatbavételéhez.
 
@@ -479,7 +478,7 @@ Az 11.2.2.1-es verzió állapota a **Piszkozat** értékről a **Befejezett** é
 2. Az **elektronikus dokumentumok** lapon az **elektronikus jelentéskészítés** gyorslapján, az **értékesítési és Szabadszöveges számla** mezőben válassza ki a **Peppol értékesítési számla (Litware)** elemet.
 3. Válassza a **Mentés** lehetőséget.
 
-![A Kinnlevőségek paraméterei lap elektronikus dokumentumok lapja, elektronikus jelentéskészítés gyorslap.](./media/er-quick-start3-configure-ar2.png)
+![A Kinnlevőségek paraméterei lap elektronikus dokumentumok lapja, elektronikus jelentéskészítés gyorslap](./media/er-quick-start3-configure-ar2.png)
 
 ## <a name="update-a-customer-record-by-adding-a-federal-tax-identification-code"></a><a name="ConfigureCustomer2"></a>Vevői rekord frissítése a Szövetségi adóazonosító kód hozzáadásával
 
@@ -488,7 +487,7 @@ Az 11.2.2.1-es verzió állapota a **Piszkozat** értékről a **Befejezett** é
 3. Írja be az **általános** gyorslapon a **Szövetségi adóazonosító** mezőbe a következőt: **LITWARE-6789**.
 4. Válassza a **Mentés** lehetőséget.
 
-    ![DE-014 ügyfél adatai oldal.](./media/er-quick-start3-added-tax-id-value.png)
+    ![DE-014 ügyfél adatai oldal](./media/er-quick-start3-added-tax-id-value.png)
 
 5. Zárja be az **összes ügyfél** lapot.
 
@@ -509,7 +508,7 @@ Az 11.2.2.1-es verzió állapota a **Piszkozat** értékről a **Befejezett** é
 4. Válassza a **Megnyitás** elemet az imént létrehozott e-számla XML-fájl letöltéséhez.
 5. Az e-számla XML-fájljának elemzése. Figyelje meg, hogy a testreszabással összhangban a vevői adózási séma tartalmazza az egyéni **FederalTaxID** XML-attribútumot a **schemeID** és a **schemeAgencyID** XML-attribútumokon kívül. Ennek az új XML-attribútumnak az értékét a **LITWARE-6789** Szövetségi adóazonosító határozza meg, amelyet a program számlázott vevőhöz rögzített.
 
-    ![A létrejövő e-számla XML-fájljának előnézete a testreszabásokkal.](./media/er-quick-start3-e-invoice2.png)
+    ![A létrejövő e-számla XML-fájljának előnézete a testreszabásokkal](./media/er-quick-start3-e-invoice2.png)
 
 ## <a name="import-the-latest-versions-of-standard-er-configurations"></a><a name="ImportERConfigurations2"></a>A szabvány ER-konfigurációk legutóbbi verzióinak importálása
 
@@ -522,7 +521,7 @@ Ha azt szeretné, hogy a Finance példány alapértelmezett ER-konfigurációi [
 5. A **Verziók** gyorslapon válassza ki a kijelölt ER- formátumkonfiguráció **32.6.7**-es verzióját, amely a PEPPOL BIS 3 formátumú vevői elektronikus számlák támogatására lett kiadva. További tájékoztatás: [KB4490320](https://support.microsoft.com/help/4490320/an-update-for-european-union-to-support-export-of-customers-electronic).
 6. Kattintson az **Importálás** lehetőségre a kiválasztott verzió Globális tárból a jelenlegi Finance and Operations példányba történő letöltéséhez.
 
-![A 32.6.7-es verzió kiválasztva a konfigurációs tárház lapon.](./media/er-quick-start3-import-solution2.png)
+![A konfigurációs tárház lapon kiválasztott verzió 32.6.7](./media/er-quick-start3-import-solution2.png)
 
 Ha további tájékoztatást szeretne arról, hogyan lehet automatizálni ezt a folyamatot, akkor olvassa el [az ER-konfigurációk frissített verzióinak importálása](er-download-updated-versions-global-repo.md) című témakört.
 
@@ -543,13 +542,13 @@ Győződjön meg arról, hogy a konfigurációs fában a következő ER-konfigur
 
     - A 206-os (vagy újabb) verzió tartalmazza az adatmodell ER-összetevő 24-es (vagy újabb) verzióját, amely a számlázó üzleti tartomány adatstruktúráját jelzi. Ezt az ER-konfigurációt a rendszer a legújabb elérhető **Számlamodell-leképezés** ER-modell-leképezési konfiguráció elődjeként importálta.
 
-    ![A 206-os verzió befejeződött a Konfigurációk oldalon.](./media/er-quick-start3-imported-solution2b1.png)
+    ![A 206-os verzió a konfigurációk oldalon fejeződött be](./media/er-quick-start3-imported-solution2b1.png)
 
 - **Számlamodell-leképezés** ER -modell-leképezési konfiguráció:
 
     - Az 206.132-es (vagy újabb) verzió importálása a **Számlamodell** ER-adatmodell-konfiguráció 206-es verziójának legújabb megvalósításaként történt. A program számos modell-leképezés ER-összetevőt tartalmaz, amely leírja, hogy az adatmodell milyen módon van kitöltve a futásidejű alkalmazási adatokkal.
 
-    ![A 206.132-es verzió befejeződött a Konfigurációk oldalon.](./media/er-quick-start3-imported-solution2b2.png)
+    ![A 206.132-os verzió a konfigurációk oldalon fejeződött be](./media/er-quick-start3-imported-solution2b2.png)
 
 - **UBL értékesítési számla** ER-formátumkonfigurációja:
 
@@ -559,7 +558,7 @@ Győződjön meg arról, hogy a konfigurációs fában a következő ER-konfigur
 
     - A 32.6.7-es verzió tartalmazza a formátum és formátum-leképezés ER-összetevőit, amelyeket konfiguráltak az e-számlák PEPPOL formátumban való létrehozására.
 
-    ![A 32.6.7-es verzió befejeződött a Konfigurációk oldalon.](./media/er-quick-start3-imported-solution2b3.png)
+    ![A 32.6.7-os verzió a konfigurációk oldalon fejeződött be](./media/er-quick-start3-imported-solution2b3.png)
 
 ## <a name="adopt-the-changes-to-the-new-standard-er-configurations-in-your-custom-er-configurations"></a><a name="RebaseCustomERConfigurations"></a>A standard ER-konfigurációk új verzióira vonatkozó módosítások elfogadása az egyéni ER-konfigurációkban
 
@@ -579,7 +578,7 @@ Győződjön meg arról, hogy a konfigurációs fában a következő ER-konfigur
 
 Az 206.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** értékre módosul , és a verzió írásvédett lesz. Az új, szerkeszthető verzió (206.3) **Piszkozat** állapottal kerül hozzáadásra. Ennek a verziónak a használatával további változtatásokat hajthat végre a saját egyéni ER-adatmodell-konfigurációban.
 
-![A 206.2-es verzió befejezve a Konfigurációk oldalon.](./media/er-quick-start3-completed-custom-model2.png)
+![A 206.2 verzió a konfigurációk oldalon fejeződött be](./media/er-quick-start3-completed-custom-model2.png)
 
 ### <a name="adopt-your-custom-er-model-mapping"></a>Egyéni ER-modell-leképezés elfogadása
 
@@ -592,12 +591,12 @@ Az 206.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** ért�
 
     Észreveheti, hogy a rendszer bizonyos új alap ütközéseket észlelt. Most manuálisan kell megoldania ezeket az ütközéseket.
 
-    ![Ütközési üzenet új alapja a Konfigurációk oldalon.](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
+    ![Ütközési üzenet új alapja a konfigurációk oldalon](./media/er-quick-start3-rebase-conflicts-model-mapping1.png)
 
 5. A műveleti ablaktáblán válassza a **tervező** elemet, majd a hozzárendelések listáján válassza ki a **Vevői számlát**.
 6. Minden egyes új alap ütközésnél válassza a **saját érték megtartása** beállítást, mert minden említett összetevőnél meg kell őriznie az egyéni adatmodell verziószámát.
 
-    ![Az új alappal kapcsolatos ütközések a Modell-leképezés tervezési oldalán.](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
+    ![Az új alap ütközések a modell-leképezés tervező oldalán](./media/er-quick-start3-rebase-conflicts-model-mapping2.png)
 
 7. Válassza a **Mentés** lehetőséget, majd zárja be a **Modell-leképezés tervező** oldalt.
 8. A hozzárendelések listáján válassza ki a **projektszámlát**.
@@ -611,7 +610,7 @@ Az 206.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** ért�
 
 Az 206.132.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** értékre módosul , és a verzió írásvédett lesz. Az új, szerkeszthető verzió (206.132.3) **Piszkozat** állapottal kerül hozzáadásra. Ennek a verziónak a használatával további változtatásokat hajthat végre a saját egyéni ER-modell-leképezési konfigurációban.
 
-![A 206.132.2-es verzió befejezve a Konfigurációk oldalon.](./media/er-quick-start3-completed-custom-mapping2.png)
+![A 206.132.2 verzió a konfigurációk oldalon fejeződött be](./media/er-quick-start3-completed-custom-mapping2.png)
 
 ### <a name="adopt-your-custom-er-format"></a>Egyéni ER-formátum elfogadása
 
@@ -639,7 +638,7 @@ Az 206.132.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** �
 
 Az 32.6.7.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** értékre módosul , és a verzió írásvédett lesz. Az új, szerkeszthető verzió (32.6.7.3) **Piszkozat** állapottal kerül hozzáadásra. Ennek a verziónak a használatával további változtatásokat hajthat végre a saját egyéni ER-formátumkonfigurációjában.
 
-![A 32.6.7.2-es verzió befejezve a Konfigurációk oldalon.](./media/er-quick-start3-completed-custom-format2.png)
+![A 32.6.7.2 verzió a konfigurációk oldalon fejeződött be](./media/er-quick-start3-completed-custom-format2.png)
 
 ## <a name="process-a-customer-invoice-by-using-new-versions-of-the-custom-er-configurations"></a><a name="ProcessInvoice3"></a>Vevői számla feldolgozása az egyéni ER-konfigurációk új verziói segítségével
 
@@ -662,15 +661,15 @@ Az 32.6.7.2-es verzió állapota a **Piszkozat** értékről a **Befejezett** é
 4. Válassza a **Megnyitás** elemet az imént létrehozott e-számla XML-fájl letöltéséhez.
 5. Az e-számla XML-fájljának elemzése. Figyelje meg, hogy a testreszabással összhangban a vevői adózási séma tartalmazza az egyéni **FederalTaxID** XML-attribútumot a **schemeID** és a **schemeAgencyID** XML-attribútumokon kívül. Ezenkívül mivel az alap **UBL értékesítési számla** formátum új verziójának módosításai egyesítve lettek a testreszabással, a **cbc:CustomizationID** XML-elem szövege módosult `urn:www.cenbii.eu:transaction:biicoretrdm010:ver1.0:# urn:www.peppol.eu:bis:peppol5a:ver1.0` értékről `urn:cen.eu:en16931:2017#compliant#urn:fdc:peppol.eu:2017:poacc:billing:3.0` értékre.
 
-    ![A létrejövő e-számla XML-fájljának előnézete a testreszabásokkal.](./media/er-quick-start3-e-invoice3.png)
+    ![A létrejövő e-számla XML-fájljának előnézete a testreszabásokkal](./media/er-quick-start3-e-invoice3.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Elektronikus jelentések áttekintése](general-electronic-reporting.md)
 - [ER-konfigurációk letöltése a Lifecycle Services szolgáltatásból](download-electronic-reporting-configuration-lcs.md)
 - [ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából](er-download-configurations-global-repo.md)
-- [Szabadszöveges számla létrehozása](../../../finance/accounts-receivable/create-free-text-invoice-new.md)
-- [Egyéni mezők létrehozása és használata](../../fin-ops/get-started/user-defined-fields.md)
+- [Szabadszöveges számla létrehozása](https://docs.microsoft.com/dynamics365/finance/accounts-receivable/create-free-text-invoice-new)
+- [Egyéni mezők létrehozása és használata](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

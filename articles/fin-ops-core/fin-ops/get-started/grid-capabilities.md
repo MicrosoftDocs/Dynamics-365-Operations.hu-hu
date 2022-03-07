@@ -2,11 +2,9 @@
 title: Rács funkciói
 description: Ez a témakör ismerteti a rács vezérlőelem számos erőteljes funkcióját. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
-manager: AnnBe
-ms.date: 11/17/2020
+ms.date: 08/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
@@ -15,17 +13,17 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: fb30cdded33f90bb472c8abdb70875077b1dd985
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
+ms.openlocfilehash: 9bdefeedf8bbbe60f3f76d234f9b393cc8e5dbe8ede7e320e00d0b8e20dbbf73
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693774"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6775242"
 ---
-# <a name="grid-capabilities"></a>Rács funkciói
+# <a name="grid-capabilities"></a>Rácsfunkciók
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
+
 
 Az új rács vezérlőelem számos hasznos és erőteljes funkciót tartalmaz, amelyek a felhasználó hatékonyságának növelésére, az adatokkal kapcsolatos érdekesebb nézetek kialakítására és az adatokkal kapcsolatos jelentőségteljes rálátás megszerzésére használhatók. Ez a cikk a következő funkciókat mutatja be: 
 
@@ -33,7 +31,7 @@ Az új rács vezérlőelem számos hasznos és erőteljes funkciót tartalmaz, a
 -  A rendszer előtt történő gépelés
 -  Matematikai kifejezések kiértékelése 
 -  Táblázatos adatok csoportosítása (külön lehet engedélyezni az **(Előzetes verzió) Csoportosítás rácsokban** szolgáltatással)
--  Rögzített rendszeroszlopok
+-  Oszlopok rögzítése
 
 ## <a name="calculating-totals"></a>Teljes összegek számítása
 A Finance and Operations alkalmazásokban a felhasználók a számokat tartalmazó oszlopok alján látható összesítéseket megtekinthetik a rácsokban. Ezeket az összegeket a rács alján látható lábléc szakasz mutatja. 
@@ -45,10 +43,10 @@ A Finance and Operations alkalmazásokban minden egyes táblázatos rács alján
 - Végösszegek a konfigurált numerikus oszlopok alján
 - Az adathalmazban lévő sorok száma összesen 
 
-Alapértelmezetten ez a lábléc rejtett, de egyszerűen be lehet kapcsolni. A rács láblécének megjelenítéséhez kattintson a jobb gombbal a rács egy oszlopának fejlécére, és válassza ki a **Lábléc megjelenítése** lehetőséget. Miután egy adott rácsnál bekapcsolta a láblécet, a rendszer emlékezni fog a beállításra mindaddig, amíg a felhasználó úgy nem dönt, hogy elrejti a láblécet. Ez úgy végezhető el, hogy a jobb gombbal rákattint egy oszlop fejlécére, és kiválasztja a **Lábléc elrejtése** lehetőséget.  Ne feledje, hogy egy jövőbeli frissítésben a **Lábléc megjelenítése/elrejtése** műveletet valószínűleg áthelyezzük. 
+Alapértelmezetten ez a lábléc rejtett, de be lehet kapcsolni. A rács láblécének megjelenítéséhez kattintson a jobb gombbal a rács egy oszlopának fejlécére, és válassza ki a **Lábléc megjelenítése** lehetőséget. Miután bekapcsolta egy adott rács láblécét, erre a beállításra a rendszer addig fog emlékezni, amíg a felhasználó el nem rejti a láblécet. A lábléc elrejtéséhez kattintson a jobb gombbal az oszlopfejlécre, és válassza a **Lábléc elrejtése** lehetőséget.  (Egy jövőbeli frissítésben a **Lábléc megjelenítése/elrejtése** műveletet valószínűleg áthelyezzük egy másik helyre.) 
 
 ### <a name="specifying-columns-with-totals"></a>Összesítéssel ellátott oszlopok megadása
-Jelenleg alapértelmezetten egy oszlop sem jeleníti meg az összegeket. Ezt a rács oszlopai szélességének beállításához hasonlóan egyszeri beállítási tevékenységnek tekintjük. Miután megadta, hogy szeretné egy oszlop összegeit megtekinteni, a rendszer a lap legközelebbi meglátogatásakor emlékezni fog a beállításra.  
+Alapértelmezés szerint egyetlen oszlop sem mutatja az összegeket. Ezt a rács oszlopai szélességének beállításához hasonlóan egyszeri beállítási tevékenységnek tekintjük. Miután megadta, hogy szeretné egy oszlop összegeit megtekinteni, a rendszer a lap legközelebbi meglátogatásakor emlékezni fog a beállításra.  
 
 Egy oszlopot kétféleképpen lehet az összegek megjelenítésére konfigurálni: 
 
@@ -122,15 +120,21 @@ A rács első oszlopának felső részén található jelölőnégyzet bejelöl�
 ### <a name="hiding-column-names"></a>Oszlopok neveinek elrejtése
 Az adatok csoportosításakor az alapértelmezett viselkedés a csoportfej sorában az oszlop nevének megjelenítése. A verzió 10.0.14/Platform Update 38-es verziójától kezdve elhagyhatja az oszlop nevét a csoportfej soraiban, ha kiválasztja a **Rácsbeállítások** > **Csoportoszlop nevének elrejtése** lehetőséget.
 
-## <a name="pinned-system-columns"></a>Rögzített rendszeroszlopok
-Az új rács sorkiválasztás oszlopát és sorállapot oszlopát a rács bal szélső részén rögzítjük vagy fagyasztjuk. Ezért ha ezek az oszlopok egy rácsban szerepelnek, akkor mindig láthatók lesznek a felhasználó számára, attól függetlenül, hogy a rács vízszintes görgetése milyen helyzetben van.   
+## <a name="freezing-columns"></a>Oszlopok rögzítése
+A rács egyes oszlopai elég fontosak lehetnek kontextus tekintetében ahhoz, hogy nem szeretné, hogy kigörgethetők legyenek a nézetből. Ehelyett azt szeretné, hogy az oszlopokban lévő értékek mindig láthatók legyenek. A 10.0.17-es verzióban a **Rács oszlopainak rögzítése** funkció biztosítja ezt a rugalmasságot a felhasználók számára. 
+
+Oszlop rögzítéséhez kattintson a jobb gombbal az oszlop fejlécére, majd válassza az **Oszlop rögzítése** lehetőséget. Amikor először végrehajtka ezt a lépést, a kiválasztott oszlop lesz az első oszlop, és többé nem lesz kigörgethető a nézetből. Az ezt követő rögzített oszlopok mindegyike az utolsóként rögzített oszlop jobb oldalához lesz hozzáadva. A Rögzített oszlopok újrarendezéséhez a szokásos Áthelyezés funkciót használhatja. A rögzített oszlopok azonban nem helyezhetők át úgy, hogy a rögzítetlen oszlopok között jelenjenek meg. Hasonlóképp, a nem rögzített oszlopok nem helyezhetők át úgy, hogy a rögzített oszlopok között jelenjenek meg.
+
+Oszlop rögzítésének feloldásához kattintson a jobb gombbal a rögzített oszlop fejlécére, majd válassza az **Oszlop rögzítésének feloldása** lehetőséget. 
+
+Ne feledje, hogy az új rács sorkiválasztási és sorállapot-oszlopait mindig rögzíti a rendszer az első két oszlopban. Ezért ha ezek az oszlopok egy rácsban szerepelnek, akkor mindig láthatók lesznek a felhasználó számára, attól függetlenül, hogy a rács vízszintes görgetése milyen helyzetben van. Ezt a két oszlopot nem lehet átrendezni.
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 ### <a name="how-do-i-enable-the-new-grid-control-in-my-environment"></a>Hogyan engedélyezhető az új rácsvezérlő a saját környezetemben? 
 
 **10.0.9 / 33-as platformfrissítés vagy újabb**
 
-A **Új rácsvezérlő** funkció elérhető közvetlenül a Funkciókezelésben bármilyen környezetben. A többi nyilvános előnézeti funkcióhoz hasonlóan a funkció engedélyezése termelési környezetben a [Kiegészítő felhasználási szerződés](https://go.microsoft.com/fwlink/?linkid=2105274) hatálya alá tartozik.  
+A **Új rácsvezérlő** funkció elérhető közvetlenül a Funkciókezelésben bármilyen környezetben. A többi nyilvános előnézeti funkcióhoz hasonlóan a funkció engedélyezése termelési környezetben a [Kiegészítő felhasználási szerződés](public-preview-terms.md) hatálya alá tartozik.  
 
 **10.0.8 / 32-es platformfrissítés és 10.0.7 / 31-es platformfrissítés**
 
@@ -155,11 +159,18 @@ Ha a szervezet egy olyan oldalt észlel, amelyen problémák lépnek fel az új 
 
 Ezt az API-t a 2021 októberi kiadásig kell figyelembe venni, amikor az új rácsvezérlő használata kötelezővé válik. Ha bármilyen probléma az API használatát igényli jelentse azokat a Microsoftnak.
 
+### <a name="forcing-a-page-to-use-the-new-grid-after-previously-opting-out-the-grid"></a>Új rács használatának kikényszerítése egy laphoz a rács korábbi elutasítását követően
+Ha az új rács használatát egy adott oldalra vonatkozóan elutasította, akkor az alapproblémák megoldása után később érdemes lehet újra engedélyeznie az új rácsot. Ehhez egyszerűen el kell távolítania a következő hívását: `forceLegacyGrid()`. A módosítás csak akkor lép hatályba, ha az alábbiak valamelyike bekövetkezik:
+
+- **Környezet újratelepítése**: Amikor egy környezetet frissítenek és újratelepítenek, az új rácsból (FormControlReactGridState) elutasított lapokat tároló táblázat automatikusan törlődik.
+
+- **Tábla kézi törlése**: Fejlesztési forgatókönyvek esetén SQL segítségével törölni kell a FormControlReactGridState táblát, majd újra kell indítani az AOS-t. Ez a műveletkombináció visszaállítja az új rácshálót elutasító lapok gyorsítótárazását.  
+
 ## <a name="developer-size-to-available-width-columns"></a>[Fejlesztői] Oszlopok rendelkezésre álló szélességre méretezése
 Ha egy fejlesztő beállítja a **WidthMode** tulajdonságot **SizeToAvailable** értékre az új rácsban található oszlopokhoz, akkor ezek az oszlopok kezdetben ugyanolyan szélességgel rendelkeznek, mintha a tulajdonság **SizeToContent** értékre lenne állítva. A rácson belül azonban képesek kiszélesedni, hogy kihasználják az extra elérhető helyet. Ha a tulajdonság több oszlopnál **SizeToAvailable** értékre van állítva, akkor az egyes oszlopok a rácson belül a további rendelkezésre álló szélességet osztják fel. Ha viszont a felhasználó manuálisan átméretezi az egyik oszlopot, akkor az oszlop statikus lesz. Ezen a szélességen marad, és a rendszer nem nyúlik tovább, hogy kihasználja az extra elérhető szélességet.  
 
 ## <a name="known-issues"></a>Ismert problémák
-Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tárolja, miközben a funkció egy előzetes állapotban van.  
+Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tartalmazza.  
 
 ### <a name="open-issues"></a>Nyitott problémák
 -  Az **Új rácsvezérlő** funkció engedélyezése után néhány oldal továbbra is a meglévő rácsvezérlőt fogja használni. Ez a következő helyzetekben fog történni:  
@@ -170,27 +181,51 @@ Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tárolja, mi
     Amikor egy felhasználó először találkozik egy ilyen helyzettel, egy üzenet jelenik meg az oldal frissítésével kapcsolatban. Az üzenet megjelenése után az oldal a következő termékfrissítési verzióig továbbra is a meglévő rácsot használja az összes felhasználó számára. A jövőbeli frissítéshez figyelembe kell venni ezeket a forgatókönyveket, hogy az új rács használható legyen.    
     
 -  [KB 4582758] A rekordok elmosódottak, ha a nagyítást 100-ról bármely más százalékra módosítja
-    
+-  [KB 4592012] Váratlan ügyfélhiba történik az IE11 alkalmazásban több sor Excel programból történő beillesztésekor
+    -  A Microsoft keres javítást ehhez a problémához
+
+### <a name="fixed-as-part-of-10016"></a>10.0.16 részeként javítva
+
+-  [KB 4598335] A többsoros karakterlánc-vezérlők nem vezsik figyelembe a DisplayHeights tulajdonságot a listákban/kártyákban 
+-  [KB 4591891] A számlajavaslat sorai eltűnnek a sorok jelölésének megszüntetésekor
+-  [KB 4592104] A „Probléma javítása” gombra kattintva és az ellenőrzési probléma kijavítása nélkül továbblépve nem lehet szerkeszteni a rekordokat
+-  [KB 4594449] A dátumválasztón belül hiányzik a „Soha” és a „Törlés” gomb 
+-  [KB 4594448] Az új rács másképp kezeli az időbevitelt
+-  [KB 4600059] Váratlan ügyfélhiba történt az e-mailes leszabályozáskor
+-  [KB 4574584] A költségmelléklet előnézete nem érhető el, ha az egérmutatót a nyugta ikon fölé helyezi
+
 ### <a name="fixed-as-part-of-10015"></a>10.0.15 részeként javítva    
 
+-  (Minőségi frissítés) [KB 4594444] Nem várt ügyfélhiba a szegmentált bejegyzésvezérlő előnézetében
 -  [KB 4582723] A megjelenítési beállítások nem jelennek meg, ha az űrlap életciklusában később próbálja meg
+-  [KB 4591988] Problémák egy értéknek a ReferenceGroup keresésből billentyűzet használatával való kiválasztásakor
+-  [KB 4588958] A Regression Suite Automation Tool (RSAT) teszt hibávan meghiúsul: TypeError: Nem olvasható „text” tulajdonság nem definiált
+-  [KB 4591970] Váratlan ügyfélhiba történt az Excel programból közvetlenül a rácsra kattintás után történő beillesztéskor
+-  [KB 4591904] Az adatváltozások mentése nem történik meg, ha egy vezérlőelem szerkesztése után a felhasználó azonnal rákattintott egy másik vezérlőelemre, és megnyitotta a keresését
+-  [KB 4584752] Váratlan ügyfélhiba a Projektszámla javaslatok lapján
+-  [KB 4584540] Nem lehet elhagyni a rácsot, miután egyetlen sort beillesztett egy naplósorba
+-  [KB 4591908] Új sor létrehozásakor a fókusz abban az oszlopban marad, amelyben tartózkodott
 
 ### <a name="fixed-as-part-of-10014"></a>10.0.14 részeként javítva
 
 -  (Minőségi frissítés) [KB 4584752] Váratlan ügyfélhiba a Projektszámla javaslatok lapján
+-  [KB 4583880] A Regression Suite Automation Tool (RSAT) tesztek sikertelenek az OpenLookup műveletben a „Nem olvasható tulajdonság RowIndex nem definiált” művelettel
+-  [KB 4583847] Váratlan ügyfélhiba a keresések közötti navigáláskor
 
 ### <a name="fixed-as-part-of-10013"></a>10.0.13 részeként javítva
 
--  (Minőségi frissítés) [KB 4583880] Regression Suite Automation Tool (RSAT) tesztek sikertelenek az OpenLookup műveletben a „Nem olvasható tulajdonság RowIndex nem definiált” művelettel
+-  (Minőségi frissítés) [KB 4584752] Váratlan ügyfélhiba a Projektszámla javaslatok lapján
+-  (Minőségi frissítés) [KB 4583880] A Regression Suite Automation Tool (RSAT) tesztek sikertelenek az OpenLookup műveletben a „Nem olvasható tulajdonság RowIndex nem definiált” művelettel
 -  (Minőségi frissítés) [KB 4583847] Váratlan ügyfélhiba a keresések közötti navigáláskor 
--  (Minőségi frissítés) [Bug 471777] Nem lehet kiválasztani a rácsban a mezőket a mobilalkalmazás szerkesztéséhez vagy létrehozásához
+-  (Minőségi frissítés) [471777. hiba] Nem lehet kiválasztani a rácsban a mezőket a mobilalkalmazás szerkesztéséhez vagy létrehozásához
+-  [KB 4582727] A rács lefagy, miután felhasználó egy párbeszédpanelt kap a több mennyiséggel rendelkező cikkek miatt
 -  [474851. hiba] A hivatkozási csoport vezérlőinek hivatkozásai nem használhatók 
 -  [474848. hiba] A rácsokkal rendelkező továbbfejlesztett előnézetek nem jelennek meg
 -  [KB 4582726] A RotateSign tulajdonság nem kerül betartására  
 -  [470173. hiba] Az inaktív sorokban található jelölőnégyzetek akkor jelennek meg, ha a cellában a térközre rákattintanak
 -  [474848. hiba] A rácsokkal rendelkező továbbfejlesztett előnézetek nem jelennek meg
 -  [474851. hiba] A hivatkozási csoport vezérlőinek hivatkozásai nem használhatók 
--  [471777. hiba] Nem lehet kiválasztani a rácsban a mezőket a mobilalkalmazás szerkesztéséhez vagy létrehozásához
+-  [Bug 471777] Nem lehet kiválasztani a rácsban a mezőket a mobilalkalmazás szerkesztéséhez vagy létrehozásához
 -  [KB 4569441] Többoszlopos kártyáklistákkal, képek eszköztippeivel és megjelenítési beállításokkal kapcsolatos problémák merültek fel néhány mezőben
 -  [KB 4575279] Nem törlődik ki az összes megjelölt sor az Általános naplóból
 -  [KB 4575233] A megjelenítési beállítások nem állíthatók vissza másik sorra ugrás után
@@ -224,8 +259,8 @@ Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tárolja, mi
 - [KB 4562646] Néha nem lehet a rácson kívülre kattintani, miután több sort választott ki a rácsból.
 - [KB 4562647] A fókusz a **Közzététel** párbeszédpanel első vezérlőelemére van állítva, miután új sort adott hozzá a biztonsági szerepkörök rácsához.
 - [KB 4563310] A továbbfejlesztett előnézet nem záródik be egy sor módosítása után.
-- [KB 4563313] "Váratlan ügyfélhiba" történik az Internet Explorer-ben, amikor egy érték van kiválasztva a keresésben.
-- [KB 4564557] A keresések és a legördülő menük nem nyithatók meg az Internet Explorer-ben
+- [KB 4563313] "Váratlan ügyfélhiba" történik az Internet Explorerben, amikor egy érték van kiválasztva a keresésben.
+- [KB 4564557] A keresések és a legördülő menük nem nyithatók meg az Internet Explorerben
 - [KB 4563324] A Navigálás nem működik a **Személyzetkezelés** munkaterület megnyitása után.
 
 ### <a name="fixed-as-part-of-10011"></a>10.0.11 részeként javítva
@@ -263,3 +298,6 @@ Ez a szakasz az új rácsvezérlő ismert problémáinak listáját tárolja, mi
 ### <a name="quality-update-for-1009platform-update-33"></a>Minőségi frissítés a 10.0.9./Platform update 33-hoz
 
 - [KB 4550367] Az időértékek formátuma nem megfelelő.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

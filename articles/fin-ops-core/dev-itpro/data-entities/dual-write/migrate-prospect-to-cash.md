@@ -2,11 +2,9 @@
 title: Potenciális vevők készpénzre váltási adatainak áttelepítése a Data Integrator szolgáltatásból kettős írásba
 description: Ez a témakör bemutatja a Potenciális vevők készpénzre váltási adatainak áttelepítését a Data Integrator szolgáltatásból kettős írásba.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2021-01-04
-ms.openlocfilehash: f1478f0246e7f1ff8bd72232cbaf4c2034cf4edb
-ms.sourcegitcommit: 6af7b37b1c8950ad706e684cc13a79e662985b34
+ms.openlocfilehash: 46f869265e589ad8e0c94a839df70e54fe781c5a4e7f992e6534e883b21801ae
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "4959846"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733123"
 ---
 # <a name="migrate-prospect-to-cash-data-from-data-integrator-to-dual-write"></a>Potenciális vevők készpénzre váltási adatainak áttelepítése a Data Integrator szolgáltatásból kettős írásba
 
@@ -98,3 +96,6 @@ Mivel a **Termékek** táblában szereplő adatok egy irányba való áramlásra
 ## <a name="quote-and-quote-product-tables"></a>Árajánlat és az Ajánlat terméke táblák
 
 Az **Árajánlat** táblában kövesse a témakör korábbi, [Rendeléstábla](#order-table) szakaszának utasításait. Az **Ajánlat terméke** táblában kövesse a témakör korábbi, [Termékek rendelése tábla](#order-products-table) szakaszának utasításait.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

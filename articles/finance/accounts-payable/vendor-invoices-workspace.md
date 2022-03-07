@@ -1,27 +1,30 @@
 ---
-title: Szállítói számla automatizálási munkaterülete
+title: Szállítói számla bevitele munkaterület
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani a szállítói számlákkal kapcsolatos munkaterületet, valamint bemutatja a Microsoft Power BI szolgáltatáson keresztül elérhető adatokat.
 author: abruer
-ms.date: 02/14/2022
+manager: AnnBe
+ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.assetid: ''
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2020-09-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: f28cc5f63df2f0d8a4c8cae407f7166aa4fa03db
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
-ms.translationtype: MT
+ms.openlocfilehash: a4ba676d9b6df69cf0a91862bcc4d2837b7cb69e
+ms.sourcegitcommit: 0efa93f11847a2b75d13cd0a49e716c76130ec44
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182579"
+ms.lasthandoff: 10/14/2020
+ms.locfileid: "4444137"
 ---
-# <a name="vendor-invoice-automation-workspace"></a>Szállítói számla automatizálási munkaterülete
+# <a name="vendor-invoice-entry-workspace"></a>Szállítói számla bevitele munkaterület
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -30,11 +33,11 @@ Ez a témakör azt mutatja be, hogyan lehet beállítani a szállítói számlá
 
 ## <a name="overview"></a>Áttekintés
 
-A **Szállítói számla automatizálása** munkaterület a szállítói számlák feldolgozásához kapcsolódó információkat jeleníti meg. Tartalmaz egy **Saját munka** és egy **Elemzés – az összes vállalat** nézetet. A **Saját munka** nézet összesítő lapokat, szállítói tranzakciórácsokat és a kapcsolódó szállítói adatokat jeleníti meg. Az **Elemzés - az összes vállalat** lap a Power BI lehetőségeit kihasználva a szállítói számlákkal kapcsolatos vizualizációkat jelenít meg.
+A **Szállítói számla bevitele** munkaterület a szállítói számlák feldolgozásához kapcsolódó információkat jeleníti meg. Tartalmaz egy **Saját munka** és egy **Elemzés – az összes vállalat** nézetet. A **Saját munka** nézet összesítő lapokat, szállítói tranzakciórácsokat és a kapcsolódó szállítói adatokat jeleníti meg. Az **Elemzés - az összes vállalat** lap a Power BI lehetőségeit kihasználva a szállítói számlákkal kapcsolatos vizualizációkat jelenít meg.
 
 ## <a name="set-up-the-workspace-to-show-power-bi-content"></a>A munkaterület beállítása a Power BI-tartalom megjelenítésére
 
-Ezt a beállítást végre kell hajtania, mielőtt a Power BI a **Szállítói számla automatizálása** munkaterületen megjeleníthetné az adatokat.
+Ezt a beállítást végre kell hajtania, mielőtt a Power BI a **Szállítói számla bevitele** munkaterületen megjeleníthetné az adatokat.
 
 1. A **Funkciókezelés** munkaterületen szűrje a listát, és keresse meg a **Szállítói számla automatizálása** funkciót.
 3. Válassza az **Engedélyezés most** lehetőséget.
@@ -54,20 +57,20 @@ Ha meg szeretné tekinteni a munkaterületen megjelenő adatokat, rendelkeznie k
 
 ### <a name="company-selection"></a>Vállalat választása
 
-Amikor a **Szállítói számla automatizálása** funkciót bekapcsolta, a munkaterület felső részén megjelenik egy **Vállalat** mező. A **Vállalat** mezőben kiválasztott érték a munkaterületen megjelenített összes adatot érinti. Alapértelmezetten a nézet annak a vállalatnak az adatait jeleníti meg, amelyikbe bejelentkezett. Ha egy másik vállalatot választ ki a **Vállalat** mezőben, akkor a munkaterületen megjelenítheti a vállalat adatait. Ezután kiválaszthat egy csempét a munkaterületen, ha a kiválasztott vállalat kapcsolódó lapjára lépjen.
+Amikor a **Szállítói számlák automatizálása** funkciót bekapcsolta, a munkaterület felső részén megjelenik egy **Vállalat** mező. A **Vállalat** mezőben kiválasztott érték a munkaterületen megjelenített összes adatot érinti. Alapértelmezetten a nézet annak a vállalatnak az adatait jeleníti meg, amelyikbe bejelentkezett. Ha egy másik vállalatot választ ki a **Vállalat** mezőben, akkor a munkaterületen megjelenítheti a vállalat adatait. Ezután kiválaszthat egy csempét a munkaterületen, ha a kiválasztott vállalat kapcsolódó lapjára lépjen.
 
 ### <a name="summary-tiles"></a>Összesítő csempék
 
 A **Saját munka** nézet **Függőben levő számlák összegzése** mozaikja áttekintést ad a szállítói számlák állapotáról. Láthatók a még fel nem adott naplók és a várakoztatott számlák. Ezenkívül az alábbi négy csempe tartozik a Szállítói számla automatizálása funkcióhoz:
 
-- **Manuális bevételezés egyeztetése szükséges**
-- **Egyeztetés ellenőrzése sikertelen**
-- **A munkafolyamatba nem beküldött számlák**
-- **Nem importált számlák**
+- Manuális bevételezés egyeztetése szükséges
+- Egyeztetés ellenőrzése sikertelen
+- A munkafolyamatba nem beküldött számlák
+- Nem importált számlák
 
-(Ehhez a négy kötelező funkcióhoz be kell kapcsolva lennie a Szállítói számla automatizálása funkciónak. **Funkciókezelés**.)
+(A négy csempe meglétéhez a Szállítói számla automatizálása funkciót be kell kapcsolni a Funkciókezelés részben.)
 
-A Szállítói számlák **helyreállítása** csempe használatához be kell állítani a funkciót a **Kötelezettségek paraméterei között**. Nyissa meg a **Kötelezettségek \> Kötelezettségek paraméterei** részt, majd a **Számla** lapon állítsa a **Szállítói számla helyreállításának engedélyezése** beállítást **Igen** értékre.
+A **Szállítói számlák helyreállítása** lap használatához a funkciót be kell kapcsolni a Kötelezettségek paraméterei részben. Nyissa meg a **Kötelezettségek \> Kötelezettségek paraméterei** részt, majd a **Számla** lapon állítsa a **Szállítói számla helyreállításának engedélyezése** beállítást **Igen** értékre.
 
 Amikor a funkció be van kapcsolva, a munkaterületen három csempe együtt szerepel a munkaterület **Naplók** nevű szakaszában. A csempék címei: **Naplók**, **Naplók – Hozzám rendelve** és **Számlagyűjtő**. 
 
@@ -114,6 +117,3 @@ Az alábbi táblázat mutatja be az egyes jelentésoldalakon rendelkezésre áll
 | Sikertelenül importált számlák | <ul><li>Sikertelenül importált számlák</li><li>A vállalat által sikertelenül importált számlák</li></ul> |
 | Az automaizálás meghibásodásának okai | <ul><li>Sikertelen számlázások</li><li>Vállalat sikertelen számlázásai</li><li>Szállítói csoport sikertelen számlázásai</li></ul> |
 | Munkafolyamat állapota                | <ul><li>Számlák a munkafolyamatban</li><li>Szállítói számlázási munkafolyamat-példányok</li><li>Hozzárendelés jóváhagyónként</li><li>Szállítói számla-munkafolyamat vállalatonként</li><li>Átlagos napok a munkafolyamatban a jóváhagyó szerint</li></ul> |
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

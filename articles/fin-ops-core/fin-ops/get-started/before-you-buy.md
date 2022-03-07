@@ -2,11 +2,9 @@
 title: Vásárlás előtti teendők
 description: Lépésenkénti útmutatás, ha a Dynamics 365 Finance, Dynamics 365 Supply Chain Management vagy Dynamics 365 Commerce beszerzését fontolgatja.
 author: ShellyBakke
-manager: AnnBe
 ms.date: 11/23/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: ea741e3d4b3a6ce93a30c9d8c8adc7c91b513871
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 648a793b15df5597c0c4c6f2f972e28bb0ce79a5
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798549"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5750914"
 ---
 # <a name="before-you-buy"></a>Vásárlás előtti teendők
 
@@ -93,3 +91,6 @@ A Microsoft FastTrack for Dynamics 365 az ügyfelek sikerességére koncentrál�
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Ha a Dynamics AX 2012-ről frissít, illetve az AX 2009-ről tér át
 
 Ha Ön olyan ügyfél, aki a Microsoft Dynamics AX 2012-ről frissít, illetve a Microsoft Dynamics AX 2009-ről telepít át, akkor lehet, hogy hosszabb próbaidőszakot is igénybe vehet. További információ: <daxcf@microsoft.com>.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

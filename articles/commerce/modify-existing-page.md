@@ -2,36 +2,30 @@
 title: Meglévő webhelyoldal módosítása
 description: Ez a témakör azt mutatja be, hogyan lehet módosítani egy létező webhelyoldalt a Microsoft Dynamics 365 Commerce megoldásban.
 author: psimolin
-manager: annbe
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8ca23dcf568cb0df6934f0d6201e4aafba5f9ba1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 0039489c266840e5341f2e322fa7783216ac9bb3ebcecff840f591beec9f79c4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412942"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751543"
 ---
 # <a name="modify-an-existing-site-page"></a>Meglévő webhelyoldal módosítása
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet módosítani egy létező webhelyoldalt a Microsoft Dynamics 365 Commerce megoldásban.
-
-## <a name="overview"></a>Áttekintés
 
 Amikor módosítania kell egy lapot, az első lépés az, hogy megnyitja az oldalszerkesztőben. Nyissa meg azt a webhelyet, amely az oldalt tartalmazza majd az oldalak listáján keresse meg a kívánt oldalt. Ha nem találja az oldalt, akkor használhatja a szerkesztőeszköz bővített keresés funkcióját. Írja be az oldal pontos nevét, vagy írja be az első néhány betűjét, majd egy csillagot (\*). Megjelenik a lapok szűrt listája. Ez a lista a kívánt lap megtalálására használhatja. Miután megtalálta a megfelelő lapot, válassza ki a lap nevét, hogy megnyissa azt a lapszerkesztőben.
 
@@ -87,3 +81,8 @@ A következő példa bemutatja, hogyan lehet módosítani a kezdőlap videolejá
 [Kategória céloldalának bővítése](enrich-category-page.md)
 
 [Oldaltartalom hozzáférhetőségének ellenőrzése](verify-accessibility.md)
+
+[Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján](create-dynamic-pages.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

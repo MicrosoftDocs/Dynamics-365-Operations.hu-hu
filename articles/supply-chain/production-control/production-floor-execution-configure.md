@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 30f36ccf967c47d6a034c00544d45cdfdc3d1907
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
-ms.translationtype: MT
+ms.openlocfilehash: f852779d43beb3a43c6921a25d393ee00dff96d1
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103388"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7777961"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -31,7 +31,7 @@ Amikor megnyitja a termelési üzem végrehajtási felületét, a program automa
 - A vállalati csarnokban lévő eszköznél az alkalmazottak beblokkolnak, mikor megjönnek, és a nap végén távozáskor kiblokkolnak.
 - Az üzemi szinten an egy gép, amelyen a gépkezelők rögzítik egy munka megkezdésének és befejezésének idejét. Ezenfelül szüneteket és közvetett tevékenységeket is rögzítenek.
 
-Ez a témakör a telephelyen használt eszközök üzemenenkénti végrehajtási felületének konfigurálásához használható különféle lehetőségeket ismerteti.
+Ez a témakör a feladatkártya-eszközök konfigurálásához szükséges különböző beállításokat ismerteti.
 
 ## <a name="turn-on-the-production-floor-execution-interface-and-its-related-optional-features"></a>A termelési üzem végrehajtási felületének és a kapcsolódó választható funkcióinak bekapcsolása
 
@@ -39,65 +39,67 @@ A termelési üzem végrehajtási felületét, valamint a jelen témakörben le�
 
 ### <a name="the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felülete
 
-Ez a témakörben ismertetett elsődleges funkció, amely előfeltétele a fejezetben említett összes többi funkciónak. A 10.0.25-ös ellátásilánc-kezelésben kötelező megadni, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a Szolgáltatáskezelés munkaterületÉn a Termelésirányítás végrehajtási szolgáltatását keresi.
+Ez a témakörben leírt elsődleges funkció. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint alapértelmezés szerint be van kapcsolva. Hozzáadja a termelési üzem végrehajtási felületét a rendszeréhez. Az engedélyezéséhez kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- Termelési üzem végrehajtása
 
 ### <a name="generate-license-plates"></a>Azonosítótáblák előállítása
 
 Ezek a funkciók elérhetővé teszik az azonosítótábla funkciót a termelési üzem végrehajtási felületéhez. Ha használni szeretné őket, kapcsolja be a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő szolgáltatásokat (ebben a sorrendben):
 
-1. *A Feladatkártya eszközhöz hozzáadott, készként történő jelentéshez használt azonosítótábla*<br>(Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció kötelező.)
-1. *Az azonosítótábla-szám automatikus létrehozásának engedélyezése, amikor a feladatkártya eszközében befejezettként jelentik*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció kötelező.)
+1. A feladatkártya-eszközhöz hozzáadott készként jelentéshez szükséges tábla (az ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció alapértelmezés szerint be van kapcsolva.)
+1. Az azonosítótábla-szám automatikus létrehozásának engedélyezése, amikor a feladatkártya eszközében befejezettként jelentik
 
 ### <a name="print-labels"></a>Címkék nyomtatása
 
 Ezek a funkciók elérhetővé teszik a címkenyomtatás funkciót a termelési üzem végrehajtási felületéhez. Ha használni szeretné őket, kapcsolja be a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő szolgáltatásokat (ebben a sorrendben):
 
-1. *A Feladatkártya eszközhöz hozzáadott, készként történő jelentéshez használt azonosítótábla*<br>(Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció kötelező.)
-1. *Címke nyomtatása a Feladatkártya eszközéből*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója szerint ez a funkció kötelező.)
+1. A feladatkártya-eszközhöz hozzáadott készként jelentéshez szükséges tábla (az ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció alapértelmezés szerint be van kapcsolva.)
+1. Címke nyomtatása a Feladatkártya eszközéből
 
 ### <a name="allow-locking-the-touch-screen"></a>Az érintőképernyő zárolásának engedélyezése
 
-Ez a funkció lehetővé teszi, hogy a dolgozók zárolják a érintőképernyőt, és így ki tudja imítani.
+Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. Egy gombot ad hozzá a termelési emelet végrehajtási felületére, amely lehetővé teszi a dolgozók számára az érintőképernyő sanitizálását. Ha használni szeretné, ellenőrizze, hogy be van-e kapcsolva a következő funkció a [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) szolgáltatáskezelésben:
 
-Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *·*[akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák a feladatkártya-eszköz és a feladatkártya terminálok zárolására szolgáló funkció keresésével kapcsolják be és kapcsolják ki ezt a funkciót, hogy a szolgáltatáskezelés munkaterületén ki- és bekapcsolható legyen a szolgáltatás.
+- A feladatkártya-eszköz és a feladatkártya-terminál zárolására alkalmas funkció az eszközök fertőtlenítése érdekében
 
 ### <a name="asset-management-functionality-for-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületére vonatkozó eszközkezelési funkció
 
 Ez a funkció egy eszközkezelési lapot ad hozzá a termelési üzem végrehajtási felületéhez. A dolgozók ezen a lapon kiválaszthatják azt az eszközt, amely a feladatlista kiválasztott szűrője alatt álló gépi erőforráshoz kapcsolódik. A kijelölt gépi eszköznél a dolgozó megtekintheti az eszköz állapotát és a számlálóértékek alapján, legfeljebb négy kijelölt számláló esetén. Ha használni szeretné ezt a funkciót, kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *A termelési üzem végrehajtási felületére vonatkozó eszközkezelési funkció*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója alapértelmezés szerint be van kapcsolva.)
+- A termelési üzem végrehajtási felületére vonatkozó eszközkezelési funkció
 
 ### <a name="enable-job-search"></a>A feladatkeresés engedélyezése
 
 Ezzel a funkcióval keresőmezőt adhat a feladatok listájához. A dolgozók a feladatazonosító megadásával rákereshetnek egy adott feladatra, vagy a rendelés azonosítójának megadásával megkereshetik egy adott rendelés összes feladatát. A dolgozók a billentyűzettel írhatják be vagy vonalkód beolvasásával adhatják meg az azonosítót. Ha használni szeretné, kapcsolja be a következő funkciót a [funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *Feladatkeresés a gyártóüzem végrehajtási interfészén*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója alapértelmezés szerint be van kapcsolva.)
+- Feladatkeresés a gyártóüzem végrehajtási interfészén
 
 ### <a name="enable-reporting-on-co-products-and-by-products"></a>Társ- és melléktermékek jelentésének engedélyezése
 
 Ez a funkció lehetővé teszi a dolgozók számára a gyártóterületi végrehajtási felület használatát a kötegelt rendelések előrehaladásának jelentéséhez. Ez a jelentésfunkció jelentéseket tartalmaz a társtermékekről és melléktermékekről. A funkció használatához kapcsolja be a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő funkciót:
 
-- *Jelentés a termelési üzem végrehajtási felületéről származó társ- és melléktermékekről*
+- Jelentés a termelési üzem végrehajtási felületéről származó társ- és melléktermékekről
 
 ## <a name="work-with-production-floor-execution-configurations"></a>A termelési üzem végrehajtási konfiguációinak használata
 
-A termelés-végrehajtási konfigurációk létrehozásához és karbantartásához **kattintson a Gyártásvezérlés \>\> beállítása – Gyártás-végrehajtási \> konfigurálás a termelési emelet létrehozására**. A **Termelési üzem végrehajtásának konfigurálása** lapon látható a meglévő konfigurációk listája. Ezen az oldalon az alábbi műveleteket végezheti:
+Az eszközök konfigurációinak létrehozásához és karbantartásához nyissa meg a **Termelési vezérlő \> Beállítások \> Gyártásvégrehajtás \> Termelési üzem végrehajtásának konfigurálása** elemet. A **Termelési üzem végrehajtásának konfigurálása** lapon látható a meglévő konfigurációk listája. Ezen az oldalon az alábbi műveleteket végezheti:
 
 - Kiválaszthatja bal oldali oszlopban felsorolt termelésiüzem-konfigurációk bármelyikét, hogy megtekintse és szerkessze azt.
-- Ha új **konfigurációt szeretne** hozzáadni a listához, válassza az Új lehetőséget a munkaablakban. Adjon meg egy nevet a **Konfiguráció** mezőben, amely lehetővé teszi az új konfiguráció azonosítását. A beírott névnek egyedinek kell lennie minden konfigurációban, és később nem lesz lehetőség a szerkesztésére.
+- Új eszközkonfiguráció hozzáadásához listához a műveleti ablaktáblán válassza az **Új** lehetőséget. Adjon meg egy nevet a **Konfiguráció** mezőben, amely lehetővé teszi az új konfiguráció azonosítását. Az itt megadott névnek egyedinek kell lennie az összes eszköz-konfiguráció között, és később már nem szerkeszthető.
 
-Ezután állítsa be a kiválasztott konfiguráció különféle beállításait. Az alábbi mezők állnak rendelkezésre:
+Ezután konfigurálja a különböző beállításokat a kiválasztott eszköz konfigurációjában. Az alábbi mezők állnak rendelkezésre:
 
 - **Csak érkezéskori és távozáskori blokkolás** – állítsa ezt a lehetőséget az *Igen* értékre, hogy olyan egyszerűsített inferfészt hozzon létre, amely csak érkezéskori és távozáskori blokkolási funkciót biztosít. Ez letiltja az oldal beállításainak többségét is. A beállítás engedélyezése előtt el kell távolítania minden sort a **Lapkijelölés** gyorslapról.
 - **Keresés engedélyezése** – ha a feladatlistánál szeretne keresési mezőt szerepeltetni, adja meg az *Igen* értéket a beállításnál. A dolgozók a feladatazonosító megadásával rákereshetnek egy adott feladatra, vagy a rendelés azonosítójának megadásával megkereshetik egy adott rendelés összes feladatát. A dolgozók a billentyűzettel írhatják be vagy vonalkód beolvasásával adhatják meg az azonosítót.
 - **Mennyisége jelentése távozáskori blokkoláskor** – Ezt állítsa *Igen* értékre, és megkérheti a dolgozókat, hogy adjanak visszajelzést a folyamatban lévő munkákról a távozáskori blokkoláskor. Ha *Nem* értékre van állítva, akkor a dolgozókat nem figyelmezteti a rendszer.
-- **Alkalmazott zárolása** – Ha a beállítás értéke *Nem*, akkor a program közvetlenül a regisztráció után (például új feladat) kilépteti a dolgozókat. A felület ezután visszatér a bejelentkezési oldalra. Ha ez a beállítás *Igen*, a dolgozók bejelentkezve maradnak a termelési emelet végrehajtási felületére. A dolgozó azonban manuálisan kijelentkezhet, így egy másik dolgozó bejelentkezhet, miközben a termelés-végrehajtási felület ugyanannak a rendszerfióknak a használatával fut. A fiókok típusairól a [Hozzárendelt felhasználók](config-job-card-device.md#assigned-users) című témakörben olvashat bővebben.
+- **Alkalmazott zárolása** – Ha a beállítás értéke *Nem*, akkor a program közvetlenül a regisztráció után (például új feladat) kilépteti a dolgozókat. Az eszköz visszatér a bejelentkezési oldalra. Ha a beállítás értéke *Igen*, akkor a dolgozók bejelentkezve maradnak a feladatkártya-eszközbe. Előfordulhat azonban, hogy egy dolgozó manuálisan kijelentkezik annak érdekében, hogy egy másik dolgozó jelentkezzen be, miközben a feladatkártya-eszköz továbbra is ugyanazon a rendszerszintű felhasználói fiókon fut. A fiókok típusairól a [Hozzárendelt felhasználók](config-job-card-device.md#assigned-users) című témakörben olvashat bővebben.
 - **A regisztráció tényleges időpontjának használata** – Ezt a beállítást *Igen* értékre állíthatja, ha azt szeretné, hogy az egyes új regisztrációk időpontja megegyezzen a dolgozó által benyújtott regisztráció pontos időpontjával. Ha a beállítás értéke *Nem*, akkor a bejelentkezési időt használja a rendszer. Ezt a beállítást általában *Igen* értékre kell állítani, ha *Igen* értékre állította az **Alkalmazott zárolása** és/vagy az **Egy dolgozó** beállítást, aminek következtében a dolgozók általában hosszabb ideig bejelentkezve maradnak.
-- **Egy dolgozó** – Igen beállítással *beállíthatja* ezt a beállítást, ha csak egy dolgozó használja a termelési emelet mindegyik végrehajtási felületét, ahol ez a konfiguráció aktív. Ha a beállítás értéke *Igen* akkor az **Alkalmazott zárolása** beállítás automatikusan *Igen* értékre lesz állítva. Ezenkívül ez a beállítás eltávolítja a dolgozónak a belépőkártya-azonosító (vagy hasonló) használatával történő bejelentkezésre vonatkozó követelményét (és képességét). Ehelyett a dolgozó egy olyan rendszerfiók használatával jelentkezik be a Microsoft Dynamics 365 Supply Chain Management rendszerbe, amely egy (a dolgozók táblája által regisztrált) dolgozóhoz van kapcsolva, és ugyanakkor bejelentkezik *a* *termelési* emelet végrehajtási felületére, mint az adott dolgozó.
-- **Engedélyezi az** érintőképernyő zárolását – *A* beállítás Igen beállításával engedélyezheti a dolgozóknak, hogy zárolják a termelési emelet végrehajtási felületének képernyőjét, és így el tudják tásítani a felületet. Ha ez a beállítás *Igen*, a bejelentkezési laphoz hozzáadódik a **zárolási** képernyő a sanizáláshoz. Amikor egy dolgozó kiválasztja ezt a gombot, az érintőképernyő ideiglenesen zárolódik a véletlen bevitel elkerülésének céljára. Ezenfelül megjelenik egy időzítő. A dolgozó ezután biztonságosan megtisztíthatja a készüléket és a képernyőt. Amikor a visszaszámlálás befejeződött, az érintőképernyő automatikusan feloldódik.
+- **Egyetlen dolgozó** – Állítsa ezt a beállítást *Igen* értékre ha csak egy dolgozó használja a feladatkártya-eszközt, ha ez a konfiguráció aktív. Ha a beállítás értéke *Igen* akkor az **Alkalmazott zárolása** beállítás automatikusan *Igen* értékre lesz állítva. Ezenkívül ez a beállítás eltávolítja a dolgozónak a belépőkártya-azonosító (vagy hasonló) használatával történő bejelentkezésre vonatkozó követelményét (és képességét). Ehelyett a dolgozó a Microsoft Dynamics 365 Supply Chain Management alkalmazásba egy olyan rendszerfelhasználói fiókkal jelentkezik be, amely egy *időregisztrált dolgozóhoz* van társítva (a *dolgozók* táblából), és dolgozóval egy időben bejelentkezik a feladatkártya eszközbe.
+- **Az érintőképernyő zárolásának engedélyezése** – Ezt a beállítást *Igen* értékre engedélyezheti a dolgozók számára, hogy zárolják a feladatkártya-eszköz érintőképernyőjét, hogy fertőtleníthessék azt. Ha a beállítás értéke *Igen*, akkor a rendszer hozzáad egy **Fertőtlenítési célú zárolási képernyőt** az eszköz bejelentkezési lapjához. Amikor egy dolgozó kiválasztja ezt a gombot, az érintőképernyő ideiglenesen zárolódik a véletlen bevitel elkerülésének céljára. Ezenfelül megjelenik egy időzítő. A dolgozó ezután biztonságosan megtisztíthatja a készüléket és a képernyőt. Amikor a visszaszámlálás befejeződött, az érintőképernyő automatikusan feloldódik.
 - **Képernyő zárolásának időtartama** – Ha a **Képernyő zárolásának engedélyezése** beállítást *Igen* értékre állították akkor ezzel a beállítással adja meg, hogy hány másodpercig kell zárolni az érintőképernyőt a fertőtlenítéshez. Az időtartamnak 5 és 120 másodperc között kell lennie.
-- **Előállít** egy táblát – *a* beállítás Igen beállítással minden alkalommal új tábla generálható, amikor egy dolgozó a termelési emelet végrehajtási felületét használja a készként jelentésre. Az azonosítótábla a **Raktárkezelési paraméterek** lapon beállított számsorozatból jön létre. Ha a beállítás értéke *Nem*, akkor a dolgozóknak a készként való jelentéskor meg kell határozniuk egy meglévő azonosítótáblát.
-- **Címke nyomtatása** – a beállítás Igen *beállítással* nyomtatható meg az tábla címkéje, amikor egy dolgozó a termelés emeletének végrehajtási felületét használja a készként jelentéshez. A címke konfigurációja a dokumentumirányításban van beállítva, a [Dokumentumirányítási elrendezés azonosítótábla-címkékhez](../warehousing/document-routing-layout-for-license-plates.md) részben leírtak szerint.
+- **Azonosítótábla előállítása** – Ezt a lehetőséget *Igen* értékre állítsa új azonosítótábla előállításához minden alkalommal, amikor a dolgozó a feladatkártya eszközt készre jelentéshez használja. Az azonosítótábla a **Raktárkezelési paraméterek** lapon beállított számsorozatból jön létre. Ha a beállítás értéke *Nem*, akkor a dolgozóknak a készként való jelentéskor meg kell határozniuk egy meglévő azonosítótáblát.
+- **Címke nyomtatása** – Ez a lehetőséget állítsa *Igen* értékre egy azonosítótábla-címke nyomtatásához, amikor a dolgozó a feladatkártya eszközt használja készre jelentéshez. A címke konfigurációja a dokumentumirányításban van beállítva, a [Dokumentumirányítási elrendezés azonosítótábla-címkékhez](../warehousing/document-routing-layout-for-license-plates.md) részben leírtak szerint.
 - **Lap kiválasztása** – A szakasz beállításaival kiválaszthatja, hogy mely lapok jelenjenek meg a termelési üzem végrehajtási felületén, amikor az aktuális konfiguráció aktív. A tetszőleges számú lapot tervezhet meg, és szükség szerint hozzáadhatja és elrendezheti őket. A lapok tervezésével és az itt megadott beállításokkal kapcsolatos további tudnivalókat lásd: [A termelési üzem végrehajtási felületének tervezése](production-floor-execution-tabs.md).
 
 ## <a name="clean-up-job-configurations"></a>Feladatkonfigurációk megtisztítása

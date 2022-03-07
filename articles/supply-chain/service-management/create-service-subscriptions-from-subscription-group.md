@@ -11,32 +11,31 @@ ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f37acb8a931e6120ff8269df4dc4fec5c0535ce1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 777dfa2078adf31d651003f1075203c9b016ab1a
+ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429611"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5470714"
 ---
 # <a name="create-service-subscriptions-from-a-subscription-group"></a>Szolgáltatási előfizetés létrehozása előfizetési csoportból 
 
 [!include [banner](../includes/banner.md)]
 
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés**\>**Beállítás**\>**Szolgáltatási előfizetések**\>**Előfizetési csoportok**.
+1.  Válassza: **Szolgáltatáskezelés** \> **Beállítás** \> **Szolgáltatási előfizetések** \> **Előfizetési csoportok**.
 
 2.  Előfizetési csoport kiválasztása.
 
-3.  Kattintson a **Szolgáltatási előfizetések** gombra.
+3.  Válassza a **Szolgáltatási előfizetések** gombra.
 
-4.  Új előfizetés létrehozásához nyomja le a CTRL+N billentyűkombinációt. Az előfizetési csoport mezője megjeleníti az előfizetési csoport adatait az **Előfizetés** képernyőn.
+4.  Válassza ki az **Új** lehetőséget egy új előfizetés létrehozásához. Az előfizetési csoport mezője megjeleníti az előfizetési csoport adatait az **Előfizetés** képernyőn.
 
 5.  Írja be az adatokat a többi mezőbe.
 
@@ -45,3 +44,6 @@ ms.locfileid: "4429611"
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

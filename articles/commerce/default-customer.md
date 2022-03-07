@@ -2,36 +2,30 @@
 title: Alapértelmezett vevő létrehozása
 description: Ez a témakör azt mutatja be, hogyan lehet a Microsoft Dynamics 365 Commerce megoldásban egy csatorna létrehozásakor használandó alapértelmezett vevőt létrehozni.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: ba1d10a897f349703737068d772423f7d0292944
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: ff9e5665ffd82982e09f63e34b30ae6937666231855587ad2f27c5231ead8419
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412776"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720959"
 ---
 # <a name="create-a-default-customer"></a>Alapértelmezett vevő létrehozása
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet a Microsoft Dynamics 365 Commerce megoldásban egy csatorna létrehozásakor használandó alapértelmezett vevőt létrehozni.
-
-## <a name="overview"></a>Áttekintés
 
 Csatorna létrehozásakor meg kell adni egy alapértelmezett vevőt. Az alapértelmezett vevő egyszerűen létrehozható a vevőcsoport és a vevői címjegyzék létrehozása után.
 
@@ -53,7 +47,7 @@ Ha még nem léteznek vevőcsoportok, létrehozhat egyet. A példák lehetnek a 
 
 A következő kép több konfigurált vevői csoportot mutat be.
 
-![Vevőcsoportok](media/customer-groups.png)
+![Vevőcsoportok.](media/customer-groups.png)
 
 ## <a name="create-a-customer-address-book"></a>Új ügyfélcímjegyzék létrehozása
 
@@ -69,7 +63,7 @@ A vevőnek címjegyzékhez kell tartoznia. Ha még nincs létrehozva, akkor lét
 
 A következő kép egy példát mutat a címjegyzékre.
 
-![Címjegyzék](media/address-book.png)
+![Címjegyzék.](media/address-book.png)
 
 ## <a name="create-a-default-customer"></a>Alapértelmezett vevő létrehozása
 
@@ -92,11 +86,11 @@ Alapértelmezett ügyfél létrehozásához tegye a következőket.
 
 A következő kép egy példát mutat az ügyféllétrehozásra.
 
-![Alapértelmezett vevő létrehozása](media/default-customer-creation.png)
+![Alapértelmezett vevő létrehozása.](media/default-customer-creation.png)
 
 A következő kép egy alapértelmezett vevői konfigurációt mutat be.
 
-![Vevői mintakonfiguráció](media/default-customer-configuration1.png)
+![Vevői mintakonfiguráció.](media/default-customer-configuration1.png)
 
 A vevő részletek képernyőjén található alapértelmezett értékek többsége maradhat, de a két értéket módosítani kell.
 
@@ -106,10 +100,13 @@ A vevő részletek képernyőjén található alapértelmezett értékek többs�
 
 A következő kép egy példát mutat az ügyfélkonfigurációra.
 
-![Példa ügyfélkonfiguráció](media/default-customer-configuration2.png)
+![Példa ügyfélkonfiguráció.](media/default-customer-configuration2.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Csatornák áttekintése](channels-overview.md)
 
-[Csatornák beállításának előfeltételei](channels-prerequisites.md)
+[Csatorna beállításainak előfeltételei](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

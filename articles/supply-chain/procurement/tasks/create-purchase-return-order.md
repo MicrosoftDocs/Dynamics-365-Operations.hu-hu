@@ -1,26 +1,24 @@
 ---
 title: Beszerzési visszárurendelés létrehozása
 description: Ez az eljárás bemutatja, hogyan hozzon létre beszerzési visszárurendelést a Jóváírás művelettel, hogy átmásolja a sorokat a szállítói számla dokumentumából egy új Beszerzési rendelésbe.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder, PurchCopying, InventMarking, PurchEditLines
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10b3e695ffcd44909be4781eac5d4eaeef199b03
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ea0d227966b69063993acf14e68cd069681357f1
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017059"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569409"
 ---
 # <a name="create-a-purchase-return-order"></a>Beszerzési visszárurendelés létrehozása
 
@@ -67,3 +65,6 @@ Ez az eljárás bemutatja, hogyan hozzon létre beszerzési visszárurendelést 
 4. Írjon be egy értéket a **Termékbevételezés** mezőbe. Ezzel a mezővel lehet megadni olyan hivatkozást, ami egy bizonylatként lesz használva a termék bevételezési naplójához.  
 5. Kattintson az **OK** gombra. Az áruk most már szállítottként szerepelnek a beszerzési visszáru rendelésen és egy termékbevételezési napló lett létrehozva. Használhatja a Termék-bevételezési műveletet, hogy áttekintse a beszerzési rendeléshez létrehozott naplókat, és láthatja, hogy mi érkezett vagy lett visszaszállítva és mikor.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

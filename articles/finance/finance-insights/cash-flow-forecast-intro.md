@@ -1,34 +1,32 @@
 ---
-title: Pénzforgalmi előrejelzés (előzetes verzió)
+title: Pénzforgalmi előrejelzés
 description: Ez a témakör a Pénzforgalmi előrejelzési képességet mutatja be.
 author: ShivamPandey-msft
-manager: AnnBe
-ms.date: 05/19/2020
+ms.date: 07/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 14151
+ms.custom:
+- "14151"
+- intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f97b8fc0896f0f7b95bf5609f94367b3a8230ca7
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: ad568fcd126ad3dc9e5ff269cc3bc99b218e822a
+ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645248"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "7386613"
 ---
-# <a name="cash-flow-forecast-preview"></a>Pénzforgalmi előrejelzés (előzetes verzió)
+# <a name="cash-flow-forecast"></a>Pénzforgalmi előrejelzés
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A pénzforgalom kritikus fontosságú minden üzleti tevékenységhez. Még a nyereséges vállalatok is szembesülnek a fizetésképtelenséggel, ha nem tartják fenn a pénzforgalmat, amivel meg tudnak felelni az azonnali igényeknek. A pénzforgalmi előrejelzések pénzforgalmi előrejelzési képessége segít a vállalatoknak a pénzforgalmi egyenleg hatékony nyomon követésében és kezelésében. Ez a funkció a gépi tanulást használja a vállalatok számára, hogy a korábbinál pontosabban előrejelzést nyújtson a pénzforgalomhoz. Ezenkívül segítséget nyújt a menedzsereknek a lehetőségek optimalizálása érdekében, hogy az aktuális készpénzpozíció kontextusában optimalizálják a lehetőségeket. 
 
@@ -66,5 +64,4 @@ A **Pénzforgalmi előrejelzés beállítása** lap egy új lapján beállíthat
 
 A **Dimenziók** fülön válassza ki a szűréshez használni kívánt dimenziók listáját, és a nyilakkal helyezze át őket a jobb oldali oszlopba. A pénzforgalmi előrejelzések adatainak szűréséhez csak két dimenzió választható ki. 
 
-#### <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
-Az előzetes verziók (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmazhatnak, mint a Dynamics 365 Finance and Operations szolgáltatás (2) és nem vonatkozik a szolgáltatásiszint-szerződés (SLA) ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

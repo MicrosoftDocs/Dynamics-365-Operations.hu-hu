@@ -1,12 +1,10 @@
 ---
 title: Együttműködés a szállítókkal a Szállítói portálon keresztül
 description: Ez a témakör bemutatja, hogy a megbízott beszerzők hogyan tudják a Szállítói portált a külső szállítókkal való együttműködésre használni a beszerzési rendelés visszaigazolási folyamata alatt. Az itt olvasható információk csak a Dynamics AX 2016. februári és 2016. májusi verzióira vonatkoznak.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchVendorPortalRequests
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4aece4fd621be803abe5011e40785f6a3301924f
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: 6e691d0e2e4260e75b70e22d94486afdb779871f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019103"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568064"
 ---
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Együttműködés a szállítókkal a Szállítói portálon keresztül
 
@@ -94,12 +92,14 @@ Az alábbi táblázat szemlélteti azokat az állapot- és verzióváltozásokat
 |                           Küldje el a beszerzési rendelés új verzióját a Szállító portálra.                            |                                                                                                                                                                    Az új verzió regisztrálva lesz a Szállítói portálon, és az állapota <strong>Külső ellenőrzés alatt</strong> állapotra módosul.                                                                                                                                                                     |
 |                                A szállító jóváhagyja a beszerzési rendelés új verzióját.                                 |                                                                                                                                                     Az állapot vagy automatikusan változik <strong>Visszaigazolva</strong> állapotra, vagy akkor, amikor megkapja a szállító válaszát, és megerősíti a beszerzési rendelést.                                                                                                                                                     |
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Felhasználói biztonság a szállítói portálon](configure-security-vendor-portal-users.md)
 
-[Szállítói együttműködés számlázási munkaterülete](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md)
+[Szállítói együttműködés számlázási munkaterülete](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

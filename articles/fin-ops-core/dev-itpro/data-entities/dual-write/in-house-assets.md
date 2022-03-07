@@ -1,78 +1,45 @@
 ---
-title: Házon belüli eszközök szervizeléshez
-description: Ez a témakör azt mutatja be, hogyan használható a Microsoft Dynamics 365 Field Service szolgáltatás a vevői eszközök és a belső eszközök szervizelésére.
+title: Házon belüli eszközök szervizelése
+description: Ez a témakör azt ismerteti, hogyan használhatja a Microsoft Dynamics 365 Field Service szolgáltatást mind a vevői, mind a saját eszközökben.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 01/27/2020
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: global
-ms.search.industry: ''
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-27
-ms.openlocfilehash: ebc9c1fbb7c0738af13b2a16aafeeb03fa6aaed0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 0700025288bda1b2c67cc3ff26dc2e737216a5f8f5265464c6c62d9cb890b580
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684005"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742310"
 ---
-# <a name="in-house-assets-for-servicing"></a>Házon belüli eszközök szervizeléshez
+# <a name="in-house-assets-for-servicing"></a>Házon belüli eszközök szervizelése
 
 [!include [banner](../../includes/banner.md)]
 
-
-
 A Microsoft Dynamics 365 Field Service a vevői eszközök szervizelésére szolgál. A Dynamics 365 Supply Chain Management tárgyieszköz kezelője belső eszközök karbantartása céljából van kialakítva. Ennek a két alkalmazásnak az integrációja lehetővé teszi a Field Service szolgáltatás használatát a vevői tárgyi eszközök és a belső tárgyi eszközök szervizelésére. A tárgyi eszközöket a funkcionális hely vagy hierarchia alapján is osztályozhatja, és részletes szinten nyomon követheti a szervizelést.
 
-További információ:[A Dynamics 365 Field Service és a Supply Chain Management integrációja](https://docs.microsoft.com/dynamics365/field-service/supply-chain-field-service-integration).
+További információ:[A Dynamics 365 Field Service és a Supply Chain Management integrációja](/dynamics365/field-service/supply-chain-field-service-integration).
 
 ## <a name="templates"></a>Sablonok
 
 A saját tárgyi eszközök tartalmazza azokat a központi táblaleképezéseket, amelyek – az alábbi táblázatban látható módon – együttműködnek az adatok interakciója során.
 
-| Finance and Operations-alkalmazásoknak | Modellvezérelt alkalmazások a Dynamics 365-ben | Leírás |
+| Finance and Operations alkalmazások | Customer Engagement alkalmazások | Leírás |
 |-----------------------------|-----------------------------------|-------------|
-| Tárgyieszközkezelés eszközéletciklus modelljei | msdyn\_assetlifecyclemodels | |
-| Tárgyieszközkezelés eszközéletciklus állapotai | msdyn\_assetlifecyclestates | |
-| Tárgyieszköz-kezelő eszközök | msdyn\_customerassets | |
-| Tárgyieszköz-kezelő eszköztípusok | msdyn\_customerassetcategories | |
-| Eszközkezelés munkavégési helyszín életciklusmodellek | msdyn\_functionallocationlifecyclemodels | |
-| Eszközkezelés munkavégési helyszín életciklusállapotok | msdyn\_functionallocationlifecyclestates | |
-| Tárgyieszköz-kezelés munkavégzési helyszínek | msdyn\_functionallocations | |
-| Tárgyieszköz-kezelés munkavégzési helyszíntípusok | msdyn\_functionallocationtypes | |
-| Tárgyieszközök gyártói | msdyn\_manufacturers | |
-| Tárgyieszköz-kezelési modellek | msdyn\_models | |
-| Tárgyeszköz-kezelés garancia | msdyn\_warranties | |
+[Tárgyieszközkezelés eszközéletciklus modelljei](mapping-reference.md#119) | msdyn_assetlifecyclemodels | |
+[Tárgyieszközkezelés eszközéletciklus állapotai](mapping-reference.md#120) | msdyn_assetlifecyclestates | |
+[Tárgyieszköz-kezelő eszköztípusok](mapping-reference.md#124) | msdyn_customerassetcategories | |
+[Tárgyieszköz-kezelő eszközök](mapping-reference.md#125) | msdyn_customerassets | |
+[Eszközkezelés munkavégési helyszín életciklusmodellek](mapping-reference.md#134) | msdyn_functionallocationlifecyclemodels | |
+[Eszközkezelés munkavégési helyszín életciklusállapotok](mapping-reference.md#135) | msdyn_functionallocationlifecyclestates | |
+[Tárgyieszköz-kezelés munkavégzési helyszíntípusok](mapping-reference.md#137) | msdyn_functionallocationtypes | |
+[Tárgyieszköz-kezelés munkavégzési helyszínek](mapping-reference.md#136) | msdyn_functionallocations | |
+[Tárgyieszközök gyártói](mapping-reference.md#153) | msdyn_manufacturers | |
+[Tárgyieszköz-kezelési modellek](mapping-reference.md#154) | msdyn_models | |
+[Tárgyeszköz-kezelés garancia](mapping-reference.md#209) | msdyn_warranties | |
 
-[!include [symbols](../../includes/dual-write-symbols.md)]
-
-[!include [lifecycle models](includes/AssetManagementAssetLifecycleModels-msdyn-assetlifecyclemodels.md)]
-
-[!include [lifecycle states](includes/AssetManagementAssetLifecycleStates-msdyn-assetlifecyclestates.md)]
-
-[!include [assets](includes/AssetManagementAssets-msdyn-customerassets.md)]
-
-[!include [asset types](includes/AssetManagementAssetTypes-msdyn-customerassetcategories.md)]
-
-[!include [functional location lifecycle models](includes/AssetManagementFunctionalLocationLifecycleModels-msdyn-functionallocationlifecyclemodels.md)]
-
-[!include [functional location lifecycle states](includes/AssetManagementFunctionalLocationLifecycleStates-msdyn-functionallocationlifecyclestates.md)]
-
-[!include [functional locations](includes/AssetManagementFunctionalLocations-msdyn-functionallocations.md)]
-
-[!include [functional location types](includes/AssetManagementFunctionalLocationTypes-msdyn-functionallocationtypes.md)]
-
-[!include [manufacturers](includes/AssetManagementManufacturers-msdyn-manufacturers.md)]
-
-[!include [models](includes/AssetManagementModels-msdyn-models.md)]
-
-[!include [warranty](includes/AssetManagementWarranty-msdyn-warranties.md)]
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

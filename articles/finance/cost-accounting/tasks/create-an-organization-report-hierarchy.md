@@ -2,11 +2,9 @@
 title: Szervezeti jelentési hierarchia létrehozása
 description: Ezzel az eljárással a szervezet jelentéseihez szükséges jelentéshierarchiát hozhatja létre.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 51cd97ac2b78035224db543e3bcc5d606a16ffde
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 727a77b5a3a64bd4b679103e24d8c4c384a113e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969403"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5815740"
 ---
 # <a name="create-an-organization-report-hierarchy"></a>Szervezeti jelentési hierarchia létrehozása
 
@@ -94,3 +92,6 @@ Ezzel az eljárással a szervezet jelentéseihez szükséges jelentéshierarchi�
     * Válassza ki a csomópontnak megfelelő dimenziótagot.  
 59. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

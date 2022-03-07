@@ -3,35 +3,32 @@ title: Termékgyűjtési modulok
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékgyűjtési moduljairól.
 author: v-chgri
 manager: annbe
-ms.date: 09/15/2020
+ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2d19cac142b870d8ecc677665443602b0a8837d2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4bae9ca722c2b6e776abb0e1da9694edc8afadf8
+ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412733"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "5097103"
 ---
 # <a name="product-collection-modules"></a>Termékgyűjtési modulok
 
-
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékgyűjtési moduljairól.
-
-## <a name="overview"></a>Áttekintés
 
 A termékfelfedezés elsődleges eszköz, amellyel a kiskereskedők az e-kereskedelmi weboldalakon keresztül együttműködhetnek vevőikkel. A termékgyűjtési modulok segítenek a kiskereskedőknek a vonzó vásárlási élmények létrehozásában, és intuitív vizuális kezelőfelületet létrehozásában, amely a termékgyűjtemények gyors összeállítására használható.
 
@@ -67,6 +64,10 @@ A következő táblázat leírja a Dynamics 365 Commerce különböző típusú 
 | Gyakran együtt vásárolt | Mesterséges intelligencia/gép tanulás | Ez a modul gépi tanulást használ a fogyasztói vásárlási mintáinak elemzésére és olyan cikkeket ajánl fel, amelyeket gyakran megvásárolnak az adott termékkel együtt. Ez a lista akkor jeleníti meg az aláírt felhasználó testreszabott eredményeit, ha a webhely szerzője ezt a lehetőséget választja. |
 | Szintén kedvelt           | Mesterséges intelligencia/gép tanulás | Ez a modul gépi tanulást használ a fogyasztói vásárlási mintáinak elemzésére és olyan cikkeket ajánl fel, amelyek egy adott termékhez kapcsolódnak. Ez a lista akkor jeleníti meg az aláírt felhasználó testreszabott eredményeit, ha a webhely szerzője ezt a lehetőséget választja. |
 | Önnek ajánljuk              | Mesterséges intelligencia/gép tanulás | Ez a modul gépi tanulást használ a bejelentkezett felhasználók vásárlási mintáinak elemzésére, és olyan személyre szabott javaslatokat biztosít, amelyek ezeken a vásárlási mintákon alapulnak. A vendégfelhasználó számára ez a lista összecsukott állapotban lesz. |
+
+## <a name="supported-modules"></a>Támogatott modulok 
+
+A termékgyűjtési modul támogatja a [gyorsnézet modult](quick-view-module.md), amellyel a felhasználók megtekinthetik a termékadatokat, és cikkeket adhatnak hozzá a kosárhoz egy termékgyűjtési oldalról.
 
 ## <a name="add-a-product-collection-module-to-a-category-page"></a>Termékgyűjtési modul hozzáadása egy kategórialaphoz
 
@@ -109,3 +110,5 @@ A következő táblázat felsorolja azokat a lista-típusokat, amelyek a **Term�
 [Vásárlásmező-modul](add-buy-box.md)
 
 [Termékajánlatok áttekintése](product-recommendations.md)
+
+[Gyorsnézeti modul](quick-view-module.md)

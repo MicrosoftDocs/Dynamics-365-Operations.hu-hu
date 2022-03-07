@@ -2,27 +2,24 @@
 title: Új kanbanszabály létrehozása egy meglévő kanbanszabály másolásával
 description: Ez az eljárás egy létező kanbanszabály másolatának létrehozásával foglalkozik.
 author: ChristianRytt
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate, InventItemIdLookupSimple
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 84a0093d95c2f7084c7a0ed17f8b2f86d654b5d7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b5a53e87e1c5981f26169184bec84afe38d1576a742157db092b66f253e41d8b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429238"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757567"
 ---
 # <a name="create-a-new-kanban-rule-by-duplicating-an-existing-kanban-rule"></a>Új kanbanszabály létrehozása egy meglévő kanbanszabály másolásával
 
@@ -44,3 +41,6 @@ Ez az eljárás egy létező kanbanszabály másolatának létrehozásával fogl
 3. Kattintson az OK gombra.
     * Vegye figyelembe, hogy a 000017 kanbanszabályról létrejön egy másolat.    
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

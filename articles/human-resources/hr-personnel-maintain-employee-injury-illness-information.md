@@ -1,29 +1,31 @@
 ---
 title: Dolgozói sérülések és megbetegedések adatainak karbantartása
-description: Javasoljuk, hogy először a „Sérülés és betegség beállítása” feladat-útmutatót fejezze be, mivel annak néhány beállítási adatait itt használjuk.
-author: andreabichsel
-manager: AnnBe
-ms.date: 08/29/2018
+description: Ez a feladat leírja, hogyan hozhat létre sérülést vagy betegséget.
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 367834e7e02d2061732f46d8e697044e7c49b884
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 06307331db4d420e99de21c0eb0b3cf1c233f0d5
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418815"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066650"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Dolgozói sérülések és megbetegedések adatainak karbantartása
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -31,65 +33,54 @@ Javasoljuk, hogy először a „Sérülés és betegség beállítása” felada
 
 
 
-Ez a feladatrögzítés tartalmazza a sérülésre vagy betegségre vonatkozó alapvető lépéseket. A sérülés vagy a betegség részletes adatainak nyomon követése mellett az eset állapotát is nyomon követi.  Az eset alapértelmezés szerint a „Nyitott” állapotú.  A képernyő tetején az „Eset állapota” menüelemből kezelheti az állapotokat.
+Ez a feladatrögzítés leírja a sérülés- vagy betegségeset létrehozásának alapvető lépéseit. A sérülés vagy betegség részletein kívül az eset állapotát is nyomon követik. Alapértelmezés szerint az esetek állapota: **Nyisd ki**. Az állapotot a gombbal kezelheti **Az ügy állapota** menüpontot az oldal tetején.
 
-1. Ugorjon az Emberi erőforrások > Dolgozók > Sérülés és betegség > Sérülés vagy betegség pontra.
-2. Kattintson az Új lehetőségre.
-3. Az Eset leírása mezőbe írjon egy értéket.
-    * Példa: Csuklósérülés  
-4. A Dolgozó mezőben adjon meg vagy válasszon ki egy értéket.
-    * Példa: Ahmed Barnett  
-5. Az Esemény dátuma és időpontja mezőben adjon meg egy dátumot és időpontot.
-    * Példa: 2016. 01. 20. 10:00  
-6. Írjon be vagy válasszon ki egy értéket a sérülés vagy betegség típusa mezőbe.
-    * Példa: törés  
-7. A Testrész mezőben adjon meg vagy válasszon ki egy értéket.
-    * Példa: csukló  
-8. Az Eredmény mezőben adjon meg vagy válasszon ki egy értéket.
-    * Példa: terápiával  
-9. A Jelentés dátuma és időpontja mezőben adjon meg egy dátumot és időpontot.
-    * A jelentett dátumnak és mezőnek későbbinek kell lennie a baleset dátumánál és időpontjánál.  
-10. Az Esetet jelentő személy mezőbe írjon be vagy válasszon ki egy értéket.
-    * Ez lehet az alkalmazott, vagy a baleset egy másik tanúja.  Példa: Ahmed Barnett  
-11. Bontsa ki a Baleset szakaszt.
-12. A Baleset helye mezőbe írjon be értéket.
-    * Példa: raktár  
-13. A Munkavégzés helyszínén mezőben válassza az Igen lehetőséget.
-    * Ha az esemény a munkavégzés helyén történt, válassza az igen lehetőséget.  
-14. A Munka elkezdésének dátuma és időpontja mezőben adjon meg egy dátumot és időpontot.
-    * Adja meg azt a dátumot és időpontot, amikor az érintett személy elkezdte a munkát, még a baleset előtt.  
-15. Az Alkalmazott munkaköre vagy feladata mezőbe írjon be egy értéket.
-    * Adja meg a feladatot vagy műveletet, amelynek elvégzése során a baleset bekövetkezett.  Példa: Rakodódobozok.  
-16. Írjon be egy értéket a Baleset oka mezőbe.
-    * Adja meg a baleset okát.  Példa: Csúszás nedves padlón  
-17. A Súlyosság szintje mezőben adjon meg vagy válasszon ki egy értéket.
-18. A Végrehajtandó művelet mezőbe írjon be egy értéket.
-    * Példa: Kiömlések azonnali tisztítása  
-19. A Munkától távol töltött napok várható száma mezőben adjon meg egy számot.
-    * Adja meg, hogy a személynek várhatóan hány napot kell a munkától távol töltenie.  Amikor az egyén visszatér a munkába, frissítse a „Munkától távol töltött napok” mezőt a ténylegesen távol töltött napok számával.  
-20. Bontsa ki a sérülés vagy betegség költségei szakasz t.
-21. Kattintson a Hozzáadás gombra.
-22. Adja meg a dátumot a Dátum mezőben.
-23. A Költség típusa mezőben adjon meg vagy válasszon ki egy értéket.
-    * Példa: Kezelés: Megadhat egy összeget is, és alátámasztó dokumentumokat is csatolhat számlához, például a számlákat vagy az orvos megjegyzéseit.  
-24. Kattintson a Hozzáadás gombra.
-25. Adja meg a dátumot a Dátum mezőben.
-26. A Költség típusa mezőben adjon meg vagy válasszon ki egy értéket.
-    * Példa: Orvos  
-27. Bontsa ki a sérülés vagy betegség kezelése költségei szakasz t.
-28. Kattintson a Hozzáadás gombra.
-29. A Kezelés dátuma mezőben adjon meg egy dátumot és időpontot.
-30. A Kezelés típusa mezőben adjon meg vagy válasszon ki egy értéket.
-    * Példa: sín  
-31. Vagy a sürgősségi kórházi ellátás szakaszt beállítását változtassa az Igen értékre.
-32. Írjon be egy értéket a Kezelési megjegyzések mezőbe.
-    * Példa: Sín két hétre  
-33. Írjon be egy értéket az Orvos neve mezőbe.
-    * Példa: Dr. Anderson  
-34. A Kezelési intézmény és hely mezőben adjon meg egy értéket.
-    * Példa: Elm utcai Sürgősségi ügyelet  
-35. Írjon be egy értéket a Kezelés részletei mezőbe.
-    * Példa: A röntgen megerősítette a törést, sínt kell felhelyezni  
-36. Kattintson a Mentés gombra.
-    * Az eset állapotát bármikor frissítheti.  Állítsa az eset állapotát a Folyamatban lévő értékre, ha a sérülés vagy a betegség feldolgozása folyamatban van.  Miután lezárta az eseményt, csak a költségek, a kezelés és a balesettel kapcsolatos adatok hozzáadására vagy eltávolítására van lehetősége.  Az egyéb adatok módosításához nyissa meg újra az esethez.  
+1. Menj **Emberi Erőforrások \> Munkások \> Sérülés és betegség \> Sérülések vagy betegségek**.
+2. Válassza az **Új** lehetőséget.
+3. Ban,-ben **Esetleírás** mezőbe írjon be egy értéket (pl.**Csukló sérülés**).
+4. Ban,-ben **Munkás** mezőbe írjon be vagy válasszon egy értéket (például **Ana Bowman**).
+5. Ban,-ben **Az esemény dátuma és ideje** mezőben adjon meg egy dátumot és időt (például 2016. január 20. 10:00).
+6. Ban,-ben **Sérülés vagy betegség típusa** mezőbe írjon be vagy válasszon egy értéket (például **Törés**).
+7. Ban,-ben **Testrész** mezőbe írjon be vagy válasszon egy értéket (például **Csukló**).
+8. Ban,-ben **Az eredmény típusa** mezőbe írjon be vagy válasszon egy értéket (például **Terápia**).
+9. Ban,-ben **Jelentett dátum és idő** mezőbe írja be a dátumot és az időt.
 
+    A jelentés dátumának és időpontjának későbbinek kell lennie, mint az esemény dátuma és időpontja.
+
+10. Ban,-ben **Az esetet bejelentő személy** mezőbe írjon be vagy válasszon egy értéket (például **Ana Bowman**).
+
+    A megadott személy lehet a munkavállaló vagy az esemény egy másik szemtanúja.
+
+11. Ban,-ben **Incidens** részben, a **Ahol az incidens történt** mezőbe írjon be egy értéket (például **Raktár**).
+12. Ban,-ben **Munkahelyiségben** mezőben válassza ki **Igen** ha az esemény a munkaterületen történt.
+13. Ban,-ben **A munka megkezdésének dátuma és időpontja** mezőben adja meg azt a dátumot és időpontot, amikor az érintett személy az incidens bekövetkezte előtt dolgozni kezdett.
+14. Ban,-ben **Alkalmazotti munkakör vagy feladat** mezőbe írja be azt a munkát vagy feladatot, amelyet a munkavállaló végzett az esemény bekövetkeztekor (például **Dobozok betöltése**). 
+15. Ban,-ben **Az esemény oka** mezőbe írja be az incidens okát (például **Megcsúszott a nedves padlón**).
+16. Ban,-ben **Súlyossági szint** mezőbe írja be vagy válasszon értéket.
+17. Ban,-ben **Intézkedéseket kell hozni** mezőbe írjon be egy értéket (pl.**A kiömlött anyagot azonnal takarítsa fel**).
+18. Ban,-ben **Várhatóan távoli napok a munkától** mezőbe írja be, hogy az egyénnek várhatóan hány napja van távol a munkától.
+
+    Miután az egyén visszatért dolgozni, frissítse a **Napok távol a munkától** mezőbe, amelyen az adott személy távol töltött napjainak tényleges száma látható.
+
+19. Ban,-ben **Sérülés vagy betegség költségei** szakaszban válassza ki **Hozzáadás**.
+20. Adja meg a dátumot a **Dátum** mezőben.
+21. Ban,-ben **Költségtípus** mezőbe írjon be vagy válasszon egy értéket (például **Terápia**).
+
+    Ezenkívül megadhat egy összeget, és csatolhat bármilyen igazoló dokumentumot a költséghez (például számlák vagy orvosi feljegyzések).
+
+22. Válassza a **Hozzáadás** lehetőséget.
+23. Adja meg a dátumot a **Dátum** mezőben.
+24. Ban,-ben **Költségtípus** mezőbe írjon be vagy válasszon egy értéket (például **Orvos**).
+25. Ban,-ben **Sérülések vagy betegségek kezelése** szakaszban válassza ki **Hozzáadás**.
+26. Ban,-ben **A kezelés dátuma** mezőbe írja be a dátumot és az időt.
+27. Ban,-ben **A kezelés típusa** mezőbe írjon be vagy válasszon egy értéket (például **sín**).
+28. Opcionális: Állítsa be a **Sürgősségi kórházi látogatás** szakaszhoz **Igen**.
+29. Ban,-ben **Kezelési megjegyzések** mezőbe írjon be egy értéket (pl.**Sín 2 hétig**).
+30. Ban,-ben **Orvos neve** mezőbe írjon be egy értéket (pl.**Dr. Anderson**).
+31. A Kezelő létesítmény és **hely** mezőbe adjon meg egy értéket (például **Elm St. Emergency**).
+32. **A Kezelés részletei** mezőben adjon meg egy értéket (például **a röntgen megerősíti a törést, sín kopását**).
+33. Válassza a **Mentés** lehetőséget.
+
+Az eset állapotát bármikor frissítheti. Ha a sérülés vagy betegség feldolgozása folyamatban van, állítsa az állapotot Folyamatban **állásra**. Az incidens lezárása után csak az incidenshez kapcsolódó költségeket, kezeléseket vagy beadványokat adhat hozzá vagy távolíthat el. Más információk módosításához újra meg kell nyitnia a tokot.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

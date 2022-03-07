@@ -1,31 +1,27 @@
 ---
 title: Termékekben, megrendelésekben, szállítmányokban és rakományokban lévő veszélyes anyagok
 description: Ez a témakör azt mutatja be, hogyan kell megadni a kiadott termékekhez tartozó veszélyes anyagok jellemzőit, a veszélyes cikkekre vonatkozó készlet korlátozását, valamint a veszélyes anyagok értékesítési rendelésbe, szállítmányba vagy rakományba történő felvételének módját.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 06/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: d3573aa5f8f986fa4fbf1c9ea8b322a1256aee36
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 64d31cd86045ff28aa007666a3877271eecf0106
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429715"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570705"
 ---
 # <a name="hazardous-materials-in-products-orders-shipments-and-loads"></a>Termékekben, megrendelésekben, szállítmányokban és rakományokban lévő veszélyes anyagok
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan kell megadni a kiadott termékekhez tartozó veszélyes anyagok jellemzőit, a veszélyes cikkekre vonatkozó készlet korlátozását, valamint a veszélyes anyagok értékesítési rendelésbe, szállítmányba vagy rakományba történő felvételének módját.
 
@@ -221,3 +217,6 @@ A kompatibilitási ellenőrzés futtatásához kövesse az alábbi lépéseket.
 1. A műveleti ablakban a **Rakományok** lapon a **Műveletek** csoportban válassza a **Kompatibilitás ellenőrzése** lehetőséget.
 
 Egy üzenet jelenik meg, amely tájékoztat az ellenőrzés eredményeiről.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

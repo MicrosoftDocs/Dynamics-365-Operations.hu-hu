@@ -2,27 +2,24 @@
 title: " Kategória-árazási szabályok kereskedelmi megállapodások létrehozásához"
 description: Ez az eljárás bemutatja, hogyan hozhat létre eladási árra vonatkozó kereskedelmi megállapodásokat egy kategória-árazási szabály használatával.
 author: scott-tucker
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, RetailDiscountPricingWorkspace, RetailPricingDiscountCategoryPriceRule, RetailCategoryPriceRule, EcoResCategorySingleLookup, RetailCategoryPriceWizard, PriceDiscAdm, PriceDiscAdmTable
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 21b1986aa36aab23f50a5af434435f9e93318e45
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 23d020cf8b7a8d829c655567d07bf46ebd07e277
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412920"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795189"
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a> Kategória-árazási szabályok kereskedelmi megállapodások létrehozásához
 
@@ -59,3 +56,6 @@ Ez az eljárás bemutatja, hogyan hozhat létre eladási árra vonatkozó keresk
 24. Kattintson a Kategória árszabályai fülre.
     * Ebben a listában megjelennek a csatornaspecifikus Kategória-árazási szabályok.  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

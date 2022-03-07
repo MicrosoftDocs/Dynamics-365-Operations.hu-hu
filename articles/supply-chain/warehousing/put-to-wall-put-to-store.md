@@ -2,26 +2,23 @@
 title: Falhoz helyez – üzletbe helyez
 description: Ez a témakör Falhoz helyez – üzletbe helyez funkciót ismerteti. Ez a funkció lehetővé teszi olyan esetek kezelését, amikor konfigurálható feltételek alapján kell konszolidálni egy termékeket egy előrecsomagolt előkészítő területre. Segít csökkenteni a kitárolási időt, mivel ez lehetővé teszi a kitárolást egyetlen cél azonosítótáblára, és a fürtök kitárolásánál több betárolási pozíciót is alkalmazhat.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationType, WHSLocationProfile, WHSLocation, WHSPackProfile, WHSWaveStepCode, WHSOutboundSortTemplate, WHSPostMethod, WHSWaveTemplateTable, WHSLocDirTable, WHSWorkClass, WHSWorkTemplateTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 12501b90e4b31ec11e3c59784ace9fd9a8b7d934
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 372bb556ec1207096a8ff3c7df8bac9b7011b5c4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429853"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574137"
 ---
 # <a name="put-to-wall---put-to-store"></a>Falhoz helyez – üzletbe helyez
 
@@ -525,7 +522,7 @@ Most, hogy az összes készletet áthelyezték a rendezési helyre, azt a helyes
 
 Ha a rendezési pozíciókat manuálisan kell lezárni, akkor a **Rendezési pozíció automatikus lezárása** beállítást *Nem* értékre kell beállítani , és a zárást végre kell hajtani, mielőtt az árukészletet át lehetne helyezni a raktárajtó területére. A pozíciók a különböző módokon zárhatók le:
 
-- A raktári alkalmazáson keresztül:
+- A Raktárkezelés mobilalkalmazáson keresztül:
 
     - A felhasználó beolvashatja a pozícióban lévő cikkek valamelyikét, majd a beosztást lezárhatja a **Lezárás** lehetőséggel.
     - Ha a felhasználó egy már rendezett tárolót olvas be, akkor egy hibaüzenet jelenik meg. Ugyanakkor a felhasználó továbbra is folytathatja a beosztás lezárását.
@@ -541,3 +538,6 @@ Ha a rendezési pozíciókat manuálisan kell lezárni, akkor a **Rendezési poz
 
 > [!IMPORTANT]
 > Miután a mozgatási munka létrejött a rendezési helyről, nem szabad érvényteleníteni a munkát. Ellenkező esetben a pozíciót és a konténereket törli a rendszerből, és nem lesznek elérhetők további feldolgozásra. A készletet is eltávolítja a program.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

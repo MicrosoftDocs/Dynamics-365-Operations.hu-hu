@@ -1,26 +1,24 @@
 ---
 title: Figyelmeztetések áttekintése
 description: Ez a témakör általános tájékoztatást tartalmaz a figyelmeztetésekkel kapcsolatban. A figyelmeztetések használatával lehet információkat nyerni a munkanap során nyomon követni kívánt eseményekről.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 473f53d230d7272ba0fcf78bd05d7020635a870f
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 5a92d84a5e8eaa2477d90df5065c0941d90dad5a
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798582"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749852"
 ---
 # <a name="alerts-overview"></a>Figyelmeztetések áttekintése
 
@@ -88,3 +86,6 @@ A [Figyelmeztetések használata szűrt adatok figyeléséhez](https://youtu.be/
 A [Figyelmeztetési szabályok beállításai](https://youtu.be/cpzimwOjicM) videó (fent látható) szerepel a [Finance and Operations lejátszási listában](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), amely YouTube oldalon érhető el.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

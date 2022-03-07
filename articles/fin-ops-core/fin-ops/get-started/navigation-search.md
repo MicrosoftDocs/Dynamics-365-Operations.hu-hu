@@ -2,11 +2,9 @@
 title: Navigációs keresés
 description: Ez a témakör bemutatja, hogyan használja a keresési funkciót, hogy el lehessen érni a lapokat.
 author: aneesmsft
-manager: AnnBe
-ms.date: 04/27/2017
+ms.date: 08/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 43fa263bcbb6f5a6465af59ffb744aa865d66239
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
-ms.translationtype: HT
+ms.openlocfilehash: 9e689bef43930dbe364baefaa9f4d0231394ff4f
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4799101"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069984"
 ---
 # <a name="navigation-search"></a>Navigációs keresés
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a témakör bemutatja, hogyan használja a keresési funkciót, hogy el lehessen érni a lapokat.
 
@@ -36,7 +37,7 @@ A funkció használatához kattintson a **Keresés** ikonra a **Keresés** doboz
 > [!NOTE]
 > A **Keresés** doboz segít a lapok megtalálásában és a navigálásban. Azonban nem nyújt segítséget adatok és műveletek megtalálásához.
 
-[![keresőmező](media/navigation-search.png "Keresőmező")
+![keresőmezőben.](media/navigation-search.png "Keresőmező")
 
 ## <a name="quickly-navigate-to-a-particular-page"></a>Gyors navigáció adott oldalhoz
 
@@ -62,3 +63,6 @@ A keresési eredmények lista 10 cikkre van korlátozva. Ha az eredmények köz�
 ## <a name="development"></a>Fejlesztés
 
 Fejlesztői szempontból a navigációs keresés funkcionalitását egyszerű javítani, mivel virtuálisan nincs késleltetés a menüelemek telepítése és a keresési eredményekben való megjelenítése között. Mindaddig, amíg a menüelemek a navigációs ablakhoz vagy az irányítópulthoz vannak kapcsolva, automatikusan kereshetőek lesznek.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

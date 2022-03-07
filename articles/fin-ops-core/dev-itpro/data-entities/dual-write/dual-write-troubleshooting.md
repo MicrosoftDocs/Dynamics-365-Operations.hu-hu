@@ -2,11 +2,9 @@
 title: Általános hibaelhárítás
 description: Ez a cikk a Finance and Operations és a Dataverse alkalmazások közötti kettős írású adatintegrációk során felmerülő hibák elhárításával kapcsolatos általános információkat tartalmaz.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: b01ef3da908739d17f2a03398ae56f35191e8db6
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 779cc80d4cb510e79885919f1c705824ab6ad58b3e2fe1bab7bbec0511d08951
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744541"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736302"
 ---
 # <a name="general-troubleshooting"></a>Általános hibaelhárítás
 
@@ -46,16 +44,16 @@ A Package Deployer eszköz telepítését követően telepítse a megoldást tar
 
 1. Töltse le a legújabb megoldáscsomag-fájlt a Yammer.com oldalról. A csomag zip-fájljának letöltése után kattintson rá jobb gombbal, és válassza a **Tulajdonságok** elemet. Válassza ki a **Zárolás feloldása** jelölőnégyzetet, majd válassza az **Alkalmazás** lehetőséget. Ha nem látja a **Zárolás feloldása** jelölőnégyzetet, akkor a zip-fájl zárolása már fel van oldva, és kihagyhatja ezt a lépést.
 
-    ![Tulajdonságok párbeszédpanel](media/unblock_option.png)
+    ![Tulajdonságok párbeszédpanel.](media/unblock_option.png)
 
 2. Csomagolja ki a csomag zip-fájlját, és másolja az összes fájlt a **Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438** mappába.
 
-    ![A Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 mappa tartalma](media/extract_package.png)
+    ![A Dynamics365FinanceAndOperationsCommon.PackageDeployer.2.0.438 mappa tartalma.](media/extract_package.png)
 
 3. Illessze be az összes másolt fájlt a Package Deployer eszköz **Eszközök** mappájába. 
 4. Futtassa a **PackageDeployer.exe** fájlt a Dataverse-környezet kiválasztásához és a megoldások telepítéséhez.
 
-    ![Az Eszközök mappa tartalma](media/paste_copied_files.png)
+    ![Az Eszközök mappa tartalma.](media/paste_copied_files.png)
 
 ## <a name="enable-and-view-the-plug-in-trace-log-in-dataverse-to-view-error-details"></a><a id="enable-view-trace"></a>A beépülő modul nyomkövetési naplójának engedélyezése és megtekintése a Dataverse szolgáltatásban a hiba részleteinek megtekintéséhez
 
@@ -63,14 +61,14 @@ A Package Deployer eszköz telepítését követően telepítse a megoldást tar
 
 Ha be szeretné kapcsolni a nyomkövetési naplót, hajtsa végre az alábbi lépéseket.
 
-1. Jelentkezzen be az a modellel vezérelt alkalmazásba a Dynamics 365-ben, nyissa meg a **Beállítások** lapot, majd a **Rendszer** területen válassza a **Felügyelet** elemet.
+1. Jelentkezzen be az ügyfélkapcsolati alkalmazásba, nyissa meg a **Beállítások** lapot, majd a **Rendszer** területen válassza a **Felügyelet** elemet.
 2. A **Felügyelet** oldalon válassza az **Rendszerbeállítások** lehetőséget.
 3. A **Testreszabás** lap **Beépülő modul és egyéni munkafolyamat tevékenységének nyomon követése** oszlopában válassza az **Összes** lehetőséget, ha engedélyezni szeretné a beépülő modul nyomkövetési naplóját. Ha csak a kivételek bekövetkezésekor szeretné naplózni a nyomkövetési naplókat, akkor válassza ehelyett a **Kivétel** elemet.
 
 
 Ha meg szeretné tekinteni a nyomkövetési naplót, hajtsa végre az alábbi lépéseket.
 
-1. Jelentkezzen be az a modellel vezérelt alkalmazásba a Dynamics 365-ben, nyissa meg a **Beállítások** lapot, majd a **Testreszabások** területen válassza a **Beépülő modul nyomkövetési naplója** elemet.
+1. Jelentkezzen be az ügyfélkapcsolati alkalmazásba, nyissa meg a **Beállítások** lapot, majd a **Testreszabások** területen válassza a **Beépülő modul nyomkövetési naplója** elemet.
 2. Keresse meg azokat a nyomkövetési naplókat, ahol a **Típus neve** oszlop értéke **Microsoft.Dynamics.Integrator.DualWriteRuntime.Plugins.PreCommmitPlugin**.
 3. A teljes napló megjelenítéséhez kattintson duplán egy elemre, majd a **Végrehajtás** gyorslapján tekintse át az **Üzenetblokk** szövegét.
 
@@ -122,3 +120,6 @@ Az **Adatok** űrlapbeállítás újbóli engedélyezéséhez kövesse az alább
 2. Keresse meg az **Adatok** űrlapot az űrlapok csomópont alatt. 
 3. Válassza ki az **Adatok** űrlapot, és kattintson a **Biztonsági szerepkörök engedélyezése** pontra. 
 4. Módosítsa a biztonsági beállítást: **Megjelenítés mindenkinek**.
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

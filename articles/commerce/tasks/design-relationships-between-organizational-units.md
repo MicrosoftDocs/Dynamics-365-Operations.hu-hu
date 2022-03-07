@@ -2,27 +2,24 @@
 title: " A szervezeti egységek közötti kapcsolatok megtervezése"
 description: Ez az eljárás végigvezeti azon a folyamaton, hogyan kell a szervezeti egységek közötti kapcsolatot megtervezni.
 author: mugunthanm
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner, OMNodeSelection,  HierarchyPublishAndCloseForm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c6502a05d3cc53d8031b9f8e365454556513c3c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: bd358b72978b2115bd53d95d3ab7a89d0639f0fc9088073fbf891de21cda14df
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759237"
 ---
 # <a name="design-the-relationships-between-organizational-units"></a> A szervezeti egységek közötti kapcsolatok megtervezése
 
@@ -63,3 +60,6 @@ Ez az eljárás végigvezeti azon a folyamaton, hogyan kell a szervezeti egység
 29. Kattintson a Közzététel parancsra.
 30. Kattintson a Bezárás gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

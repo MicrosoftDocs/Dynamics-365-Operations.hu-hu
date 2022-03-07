@@ -1,10 +1,12 @@
 ---
 title: Konszolidációsszámla-csoportok és további konszolidációs számlák
-description: Ez a témakör a konszolidációsszámla-csoportokkal és a további konszolidációs számlákkal kapcsolatban tartalmaz tájékoztatást, és bemutatja azok alkalmazását.
-author: panolte
+description: Ez a témakör konszolidációsszámla-csoportokról és további konszolidációs számlákról nyújt tájékoztatást, és elmagyarázza, hogyan történik ezek használata a Microsoft Dynamics 365 Finance rendszerben.
+author: aprilolson
+manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerConsolidateAccountGroup
 audience: Application User
@@ -12,25 +14,26 @@ ms.reviewer: roschlom
 ms.custom: 265544
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
-ms.author: roschlom
+ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 489f5417b6044e02d4711a03a17d6c19031cc2ee
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
-ms.translationtype: MT
+ms.openlocfilehash: 0f89ffda27ff29e03bb517dfb6e7bfebee716027
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883387"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5210241"
 ---
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konszolidációs csoportok és további konszolidációs számlák
+# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Konszolidációsszámla-csoportok és további konszolidációs számlák
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a konszolidációsszámla-csoportokkal és a további konszolidációs számlákkal kapcsolatban tartalmaz tájékoztatást, és bemutatja azok alkalmazását.
+Ez a témakör konszolidációsszámla-csoportokról és további konszolidációs számlákról nyújt tájékoztatást, és elmagyarázza, hogyan történik ezek használata a Microsoft Dynamics 365 Finance rendszerben.
 
-## <a name="consolidation-account-groups"></a>Konszolidációsszámla-csoportok
+<a name="consolidation-account-groups"></a>Konszolidációsszámla-csoportok
+----------------------------
 
-Konszolidációsszámla-csoportok segítségével számlacsoportokat hozhat létre, amelyeket adatok összesítéséhez használhat. A konszolidációsszámla-csoportok jellemzően egy kormányzati felhatalmazáson áteső számlatükret képviselnek. A konszolidációsszámla-csoportok olyan csoportokhoz is leképezheti a számlákat, amelyet a vállalat központi vállalata határoz meg. A konszolidációsszámla-csoportok a **Konszolidáció** modul **Beállítások** területén találhatók. Új csoport hozzáadásakor meg kell adnia a számlacsoport egyedi azonosítóját és nevét.
+Konszolidációsszámla-csoportok segítségével számlacsoportokat hozhat létre, amelyeket adatok összesítéséhez használhat. Leggyakrabban a konszolidációsszámla-csoport egy kormányzati megbízáson alapuló számlatükröt jelent, vagy a vállalat központja által meghatározott számlákat rendel egy csoporthoz. A konszolidációsszámla-csoportok a **Konszolidáció** modul **Beállítások** területén találhatók. Amikor hozzáad egy új csoportot, adja meg a számlacsoport egyedi azonosítóját és egy nevet.
 
 ## <a name="additional-consolidation-accounts"></a>További konszolidációs számlák
 További konszolidációs számlák segítségével egy már meglévő számlatükörben található számla egy konszolidációsszámla-csoporthoz rendelhető hozzá. Ezután meghatározhatja a konszolidációs számla értékét és nevét. 

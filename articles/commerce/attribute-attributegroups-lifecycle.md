@@ -2,16 +2,13 @@
 title: Attribútumok és attribútumcsoportok kezelése
 description: Ez a témakör azt írja le, hogyan lehet attribútumok segítségével egy terméket és a jellemzőit leírni a felhasználó által definiált mezőkben.
 author: ashishmsft
-manager: AnnBe
 ms.date: 04/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: EcoResCategoryAttribute, EcoResProductEntityAttributeTableFieldAssociation, EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResAttributeType, EcoResAttributeValue, EcoResCategoryAttributeGroup, EcoResCategoryFriendlyName
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
-ms.openlocfilehash: b5d0e92196f98fb707b1c424a6ae237f4dc9545c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: b3960f0877bdf68dd2f511ad283961b2a92db6a60078e84be55f071a00eae927
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412843"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6727654"
 ---
 # <a name="manage-attributes-and-attribute-groups"></a>Attribútumok és attribútumcsoportok kezelése
 
@@ -46,7 +43,7 @@ Például egy tipikus televízió terméknek a következő attribútumai lehetne
 |            | Kompozit bemenetek         | 0–10                        | 2             |
 |            | Komponens bemenetek         | 0–10                        | 1             |
 | LCD        | 3D Ready                 | Igen vagy Nem                   | Igen           |
-|            | 3D Enabled               | Igen vagy Nem                   | Nincs            |
+|            | 3D Enabled               | Igen vagy Nem                   | Nem            |
 | Plazma     | Min. üzemhőmérséklet      | 32–110 fok              | 32            |
 |            | Max. üzemhőmérséklet        | 32–110 fok              | 100           |
 | Projektoros | Képcsőgarancia | 6, 12 vagy 18 hónap         | 12            |
@@ -73,7 +70,7 @@ Az attribútumok az *attribútumtípusokon* alapulnak. Az attribútumtípus az a
     - Egy attribútumtípust nevezzen el így: **Lencsealakzat**, és adja meg a következő értéket: **Ovális**, **Szögletes** és **Négyszög**.
     - A másik attribútumtípust nevezze el így: **Napszemüvegmárka**, és adja meg a következő értéket: **Ray ban**, **Aviator** és **Oakley**.
 
-![Attribútumtípusok](media/AttributeType.png)
+![Attribútumtípusok.](media/AttributeType.png)
 
 ### <a name="set-up-an-attribute"></a>Attribútum beállítása
 
@@ -82,7 +79,7 @@ Az attribútumok az *attribútumtípusokon* alapulnak. Az attribútumtípus az a
 3. Hozzon létre egy **Lencsék** nevű attribútum.
 4. Állítsa az **Attribútumtípus** mezőt **Lencsealakzat** értékre.
 
-![Attribútumok](media/Attribute.png)
+![Attribútumok.](media/Attribute.png)
 
 ## <a name="attribute-metadata"></a>Attribútum metaadatai
 
@@ -104,7 +101,7 @@ Az alábbiak a további attribútummetaadat-beállítások az **Attribútumok** 
 
 Ezek a beállítások eredetileg az online kirakat keresési funkciójának javítására szolgáltak. Bár a Commerce nem tartalmazza az online kirakatot alapértelmezetten, része az eCommerce Publishing szoftverfejlesztői készlet (SDK). Felhasználók használhatják az SDK-t termékek elhelyezésére tetszés szerinti keresési indexben. Annak ellenére, hogy a termékadatokat importálják, a vevőknek továbbra is meg kell tudniuk különböztetni a kereshető adatokat, a lekérdezhető adatokat és így tovább. Így össze lehet állítani egy optimális indexet annak a biztosítására, hogy csak azok az attribútumok lesznek indexelve, amelyeket *véleményük szerint* indexelni kell.
 
-A fennmaradó lehetőségek céljával kapcsolatos további tudnivalókat lásd: [A SharePoint Server 2013 keresési sémájának áttekintése](https://technet.microsoft.com/library/jj219669.aspx).
+A fennmaradó lehetőségek céljával kapcsolatos további tudnivalókat lásd: [A SharePoint Server 2013 keresési sémájának áttekintése](/SharePoint/search/search-schema-overview).
 
 ## <a name="filter-settings-for-attributes"></a>Attribútumok szűrési beállításai
 
@@ -145,7 +142,7 @@ Az attribútumok a definiálásuk után attribútumcsoportokhoz rendelhetők. A 
 
 Ezenfelül beállíthat alapértelmezett értékeket az attribútumokhoz, amelyek szerepelnek egy attribútumcsoportban. Például szín attribútum hozzáadása egy attribútumcsoporthoz, és a **kék** kiválasztása alapértelmezett attribútumértékeként. Ebben az esetben, amikor az attribútumcsoport hozzáadják egy termékekhez, amelyik az egyik attribútumként a színt is tartalmazza, a **kék** jelenik meg a termék alapértelmezett színeként.
 
-![Attribútumcsoportok](media/AttributeGroup.png)
+![Attribútumcsoportok.](media/AttributeGroup.png)
 
 ### <a name="create-an-attribute-group"></a>Attribútumcsoport létrehozása
 
@@ -158,7 +155,7 @@ Ezenfelül beállíthat alapértelmezett értékeket az attribútumokhoz, amelye
 
 Egy vagy több attribútumcsoport társítható a kategória-csomópontokkal a következő típusú kategóriahierarchiákban: kereskedelmi termékek hierarchiája, csatornák navigációs kategóriahierarchiája és kiegészítő termékek kategóriahierarchiája. Ezután, a kategorizálást követően, a termékek öröklik az attribútumcsoportba tartozó attribútumokat.
 
-![Termékek hierarchiája – Termékattribútum-csoportok](media/AGRetailProdHierarchy.PNG)
+![Termékek hierarchiája – Termékattribútum-csoportok.](media/AGRetailProdHierarchy.PNG)
 
 Kövesse az alábbi lépéseket attribútumcsoportok hozzárendeléséhez kategóriákhoz a kereskedelmi termékek hierarchiájában.
 
@@ -203,7 +200,7 @@ Egy vagy több attribútumcsoport társítható egy vagy több üzlethez a üzle
     3. Válassza ki a **Divatáru kiegészítők** kategória-csomópontot, válassza ki a **Divatnapszemüvegek** kategóriát, majd a **Csatorna termékattribútumok** gyorslapon jelölje be az **Attribútum befoglalása** lehetőséget minden attribútumra.
     4. Válassza ki a **Férfiruházat** kategória-csomópontot, válassza ki a **Nadrágok** kategóriát, majd a **Csatorna termékattribútumok** gyorslapon jelölje be az **Attribútum befoglalása** lehetőséget minden attribútumra.
 
-![Csatornakategóriák és termékattribútumok – Attribútumcsoportok](media/CCPAttrGrp.png)
+![Csatornakategóriák és termékattribútumok – attribútumcsoportok.](media/CCPAttrGrp.png)
 
 ## <a name="overriding-attribute-values"></a>Attribútumértékek felülbírálása
 
@@ -217,7 +214,7 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
 4. Jelölje be a kívánt terméket a rácsban. Ezután a műveleti ablaktáblán a **Termék** lapon a **Beállítás** csoportban válassza a **Termékattribútumok** lehetőséget.
 5. Jelöljön ki egy attribútumot a bal oldali ablakban, és frissítse az értékét a jobb oldali ablakban.
 
-![Termékadatok lap – Termékattribútum-csoportok](media/ProdDetailsProdAttrValues.png)
+![Termékadatok lap – termékattribútum-csoportok.](media/ProdDetailsProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-catalog"></a>A termékek attribútumértékeinek felülbírálása a katalógusban
 
@@ -236,7 +233,7 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
     > [!NOTE]
     > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása történik, azok minden termékre vonatkoznak.
 
-![Katalógus-termékattribútum csoportok](media/CatalogProdAttrValues.png)
+![Katalógus termékattribútum-csoportjai.](media/CatalogProdAttrValues.png)
 
 ### <a name="override-the-attribute-values-of-products-in-a-channel"></a>A termékek attribútumértékeinek felülbírálása egy csatornában
 
@@ -257,3 +254,6 @@ Az attribútumok alapértelmezett értéke felülírható az egyedi termékek es
 
     > [!NOTE]
     > Ha a megosztott termékhez tartozó média és a megosztott termékattribútumok létrehozása történik, azok minden termékre vonatkoznak.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,10 +1,32 @@
 - name: Dynamics 365 Human Resources
-  href: hr-welcome.md
+  href: ./index.md
   items:
     - name: Újdonságok
       items:
         - name: Újdonságok és változások a Human Resources szolgáltatásban
           href: hr-admin-whats-new.md
+        - name: 2021. július 12.
+          href: hr-whats-new-2021-07-12.md
+        - name: 2021. június 22.
+          href: hr-whats-new-2021-06-22.md
+        - name: 2021. május 20.
+          href: hr-whats-new-2021-05-20.md
+        - name: 2021. május 3.
+          href: hr-whats-new-2021-05-03.md
+        - name: 2021. április 19.
+          href: hr-whats-new-2021-04-19.md
+        - name: 2021. április 5.
+          href: hr-whats-new-2021-04-05.md
+        - name: 2021. március 22.
+          href: hr-whats-new-2021-03-22.md
+        - name: 2021. március 8.
+          href: hr-whats-new-2021-03-08.md
+        - name: 2021. február 22.
+          href: hr-whats-new-2021-02-22.md
+        - name: 2021. január 28.
+          href: hr-whats-new-2021-01-28.md
+        - name: 2021. január 21.
+          href: hr-whats-new-2021-01-21.md
         - name: 2020. december 2.
           href: hr-whats-new-2020-12-02.md
         - name: 2020. október 22.
@@ -79,12 +101,16 @@
           items:
             - name: Adatintegrációs technológia kiválasztása
               href: hr-admin-integration-choose-technology.md
-            - name: Common Data Service-integráció konfigurálása
+            - name: Szabályozás – GYIK
+              href: hr-admin-integration-throttling-faq.md
+            - name: Dataverse-integráció konfigurálása
               href: hr-admin-integration-common-data-service.md
-            - name: Common Data Service-entitások
+            - name: Dataverse-táblák
               href: hr-developer-entities.md
-            - name: Common Data Service-virtuális entitások konfigurálása
+            - name: A Dataverse virtuális tábláinak konfigurálása
               href: hr-admin-integration-common-data-service-virtual-entities.md
+            - name: Human Resources – virtuális táblák – GYIK
+              href: hr-admin-virtual-entity-faq.md
             - name: A Finance szolgáltatással való integráció konfigurálása
               href: hr-admin-integration-finance.md
             - name: A Dayforce szolgáltatással való integráció konfigurálása
@@ -96,91 +122,91 @@
             - name: Integráció az Office-szal
               items:
                 - name: Office-integrációs oktatóanyag
-                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Entitás adatainak frissítése az Excel alkalmazásban
-                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/human-resources/toc.json
-                - name: Az Excel programban történő megnyitási élmények létrehozása
-                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
+                - name: Az Excel programban történő megnyitási gyakorlat létrehozása
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Office-integráció – hibaelhárítás
-                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Adatkezelés konfigurálása
           items:
             - name: Adatkezelési keretrendszer áttekintése
-              href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Adatentitások
               items:
                 - name: Adatentitások áttekintése
-                  href: ../dev-itpro/data-entities/data-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Konfigurációs adatprojektek
-                  href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-projects.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Konfigurációs adatok másolása vállalatok vagy jogi személyek között
                   items:
                     - name: Konfigurációs adatok másolása – áttekintés
-                      href: ../dev-itpro/data-entities/copy-configuration.md?toc=/dynamics365/human-resources/toc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/copy-configuration.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                     - name: Konfigurációs adatcsomagok
-                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                     - name: Konfigurációs adatcsomagok (csak 2017. júliusi kiadás esetén)
-                      href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                      href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Konfigurációs adatsablonok
-                  href: ../dev-itpro/data-entities/configuration-data-templates.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Entitás változásainak nyomon követése
-                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Normál adatentitásokkal kapcsolatos információk keresése
-                  href: ../dev-itpro/data-entities/data-entities-report.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-entities-report.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Adatsablonok több munkalappal
-                  href: ../dev-itpro/data-entities/excel-template-multiple.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/excel-template-multiple.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Változáskövetés engedélyezése az entitások esetében
-                  href: ../dev-itpro/data-entities/entity-change-track.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/entity-change-track.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Konfigurációs kulcsok és adatentitások
-                  href: ../dev-itpro/data-entities/config-key-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/config-key-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Konfigurációs adatcsomagok
-                  href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/configuration-data-packages.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Adatimportálási és -exportálási feladatok
               items:
                 - name: Adatimportálási és -exportálási feladatok áttekintése
-                  href: ../dev-itpro/data-entities/data-import-export-job.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Bevált gyakorlat a kuponok Általános napló entitással történő importálásához
-                  href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Fejlesztés adatentitásokhoz
               items:
                 - name: Tervezési elvek és gyakorlati tanácsok az adatentitásokhoz
-                  href: ../dev-itpro/dev-tools/design-best-practices.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/dev-tools/design-best-practices.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Új adatentitások létrehozása
-                  href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/build-consuming-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Adatentitás-tulajdonságok
-                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Számítási oszlopok és virtuális mezők létrehozása
-                  href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Vállalatközi viselkedés
-                  href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/cross-company-behavior.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Ország-/régiókódok kezelése
-                  href: ../dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/countryregion-codes-configuration-keys.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Öröklődési minták
-                  href: ../dev-itpro/data-entities/support-super-type-sub-type.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/support-super-type-sub-type.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Adatokentitás-varázsló szabályai
-                  href: ../dev-itpro/data-entities/data-entity-wizard-rules.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/data-entity-wizard-rules.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Metaadat-tulajdonságok
-                  href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: 'Hitelesítések, alapértékek és leképezéssel nem rendelkező mezők'
-                  href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Biztonság és adatentitások
-                  href: ../dev-itpro/data-entities/security-data-entities.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/security-data-entities.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: Harmadik fél szolgáltatásának tesztelésére szolgáló segédprogramok használata
-                  href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/data-entities/third-party-service-test.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
                 - name: 'Csak olvasható entitások létrehozása, amelyek elérhetővé teszik a pénzügyi dimenziókat'
-                  href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/dynamics365/human-resources/toc.json
+                  href: ../fin-ops-core/dev-itpro/financial/read-only-entity-financial.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Saját adatbázis használata
-              href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/export-entities-to-your-own-database.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: BYOD kötegelt feladatok optimalizálása
               href: hr-admin-integration-byod-batch-jobs.md
             - name: Automatizált entitástár-frissítés
-              href: ../dev-itpro/analytics/automated-entity-store-refresh.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/analytics/automated-entity-store-refresh.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Adatfeladat automatizálása
-              href: ../dev-itpro/data-entities/data-task-automation.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Adatellenőrzési ellenőrzőlista munkaterülete
-              href: ../dev-itpro/user-interface/data-validation-workspace.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/user-interface/data-validation-workspace.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
             - name: Adatkezelési hibaleírások
-              href: ../dev-itpro/data-entities/dm-error-descriptions.md?toc=/dynamics365/human-resources/toc.json
+              href: ../fin-ops-core/dev-itpro/data-entities/dm-error-descriptions.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json
         - name: Szolgáltatások kezelése
           href: hr-admin-manage-features.md
         - name: Adatbázis-naplózás konfigurálása és kezelése
@@ -231,6 +257,8 @@
           href: hr-admin-go-live-prepare.md
         - name: Éles indítás GYIK
           href: hr-admin-go-live-faq.md
+        - name: Human Resources infrastruktúra-egyesítési GYIK
+          href: hr-infrastructure-merge-faq.md
         - name: Dokumentum-erőforrások
           items:
             - name: Súgórendszer
@@ -253,6 +281,8 @@
               href: hr-admin-troubleshooting-batch-jobs.md
             - name: Teljesítmény optimalizálása automatikus tisztítási feladatokkal
               href: hr-admin-troubleshooting-batch-history.md
+            - name: Beragadt kötegelt feladatok alaphelyzetbe állítása
+              href: hr-admin-troubleshooting-batch-execution.md
             - name: Az elemzési jelentések nincsenek frissítve
               href: hr-admin-troubleshooting-analytic-reports.md
             - name: Nem lehet környezetet létrehozni a Power Apps felügyeleti központjában
@@ -277,9 +307,9 @@
       items:
         - name: Áttekintés
           href: hr-developer-overview.md
-        - name: Bővítés a Power Apps és Power Automate szolgáltatásokkal
+        - name: Bővítés a Power Apps és a Power Automate szolgáltatásokkal
           href: hr-developer-power-apps.md
-        - name: Common Data Service entitások
+        - name: Dataverse-táblák
           href: hr-developer-entities.md
         - name: Egyéni mezők
           href: hr-developer-custom-fields.md
@@ -287,8 +317,10 @@
           items:
             - name: Adatintegrációs technológia kiválasztása
               href: hr-admin-integration-choose-technology.md
-            - name: Common Data Service-integráció konfigurálása
+            - name: Dataverse-integráció konfigurálása
               href: hr-admin-integration-common-data-service.md
+            - name: A Dataverse virtuális tábláinak konfigurálása
+              href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: A Finance szolgáltatással való integráció konfigurálása
               href: hr-admin-integration-finance.md
             - name: A Dayforce szolgáltatással való integráció konfigurálása
@@ -298,13 +330,19 @@
             - name: Integráció az Office-szal
               items:
                 - name: Office-integrációs oktatóanyag
-                  href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-tutorial.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
                 - name: Entitás adatainak frissítése az Excel alkalmazásban
-                  href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/dynamics365/unified-operations/talent/toc.json
-                - name: Az Excel programban történő megnyitási élmények létrehozása
-                  href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../fin-ops-core/dev-itpro/office-integration/use-excel-add-in.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
+                - name: Az Excel programban történő megnyitási gyakorlat létrehozása
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-edit-excel.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
                 - name: Office-integráció – hibaelhárítás
-                  href: ../dev-itpro/office-integration/office-integration-troubleshooting.md?toc=/dynamics365/unified-operations/talent/toc.json
+                  href: ../fin-ops-core/dev-itpro/office-integration/office-integration-troubleshooting.md?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json
+        - name: Fejlesztés hibakeresése a virtuális Dataverse-táblákkal
+          items:
+            - name: Virtuális Dataverse-táblák lekérdezéseinek optimalizálása
+              href: hr-developer-optimize-virtual-table-queries.md
+            - name: Human Resources – virtuális táblák – GYIK
+              href: hr-admin-virtual-entity-faq.md
         - name: Entitás API referenciája
           items:
             - name: Hitelesítés
@@ -317,6 +355,134 @@
                       href: hr-developer-api-myleaverequests-overview.md
                     - name: Szabadságkérelem elküldése munkafolyamathoz
                       href: hr-developer-api-myleaverequests-submit.md
+        - name: ATS-integrációs API
+          items:
+            - name: Bevezetés
+              href: hr-admin-integration-ats-api-introduction.md
+            - name: Kiszolgálók közötti hitelesítés az ATS-integrációhoz
+              href: hr-admin-integration-ats-api-s2s-auth.md
+            - name: Toborzási kérelem és kapcsolódó entitások
+              items:
+                - name: Toborzási kérelem
+                  href: hr-admin-integration-ats-api-recruiting-request.md
+                - name: Toborzási kérelem – végzettség
+                  href: hr-admin-integration-ats-api-recruiting-request-education.md
+                - name: Toborzási kérelem – hely
+                  href: hr-admin-integration-ats-api-recruiting-request-location.md
+                - name: Toborzási kérelem – beosztás
+                  href: hr-admin-integration-ats-api-recruiting-request-position.md
+                - name: Toborzási kérelem – készség
+                  href: hr-admin-integration-ats-api-recruiting-request-skill.md
+                - name: Példalekérdezés a toborzási kérelmekhez
+                  href: hr-admin-integration-ats-api-recruiting-request-example-query.md
+            - name: Toborzási kérelem – beállításkészletek
+              items:
+                - name: Munka mentességi állapota
+                  href: hr-admin-integration-ats-api-job-exempt-status.md
+                - name: Toborzási kérelem – beosztás állapota
+                  href: hr-admin-integration-ats-api-recruiting-request-position-status.md
+                - name: Toborzási kérelem – állapot
+                  href: hr-admin-integration-ats-api-recruiting-request-status.md
+                - name: Jogszabályban előírt munkakategória
+                  href: hr-admin-integration-ats-api-regulatory-job-category.md
+            - name: Felveendő jelentkező és kapcsolódó entitások
+              items:
+                - name: Felveendő jelentkező
+                  href: hr-admin-integration-ats-api-candidate-to-hire.md
+                - name: Tanúsítvány típusa
+                  href: hr-admin-integration-ats-api-certificate-type.md
+                - name: Fél kapcsolattartója
+                  href: hr-admin-integration-ats-api-party-contact.md
+                - name: Személy
+                  href: hr-admin-integration-ats-api-person.md
+                - name: Személy – cím
+                  href: hr-admin-integration-ats-api-person-address.md
+                - name: Személy – tanúsítvány
+                  href: hr-admin-integration-ats-api-person-certificate.md
+                - name: Személy – végzettség
+                  href: hr-admin-integration-ats-api-person-education.md
+                - name: Személy – azonosítószám
+                  href: hr-admin-integration-ats-api-person-identification-number.md
+                - name: Személy – szakmai tapasztalat
+                  href: hr-admin-integration-ats-api-person-professional-experience.md
+                - name: Személy szűrési adatai
+                  href: hr-admin-integration-ats-api-person-screening.md
+                - name: Személy – készség
+                  href: hr-admin-integration-ats-api-person-skill.md
+                - name: Minősítési szint
+                  href: hr-admin-integration-ats-api-rating-level.md
+                - name: Szűréstípusok
+                  href: hr-admin-integration-ats-api-screening-types.md
+                - name: Példalekérdezés a felveendő jelentkezőhöz
+                  href: hr-admin-integration-ats-api-candidate-to-hire-example-query.md
+            - name: Jelölt – beállításkészletek
+              items:
+                - name: Pályázó integrációs eredménye
+                  href: hr-admin-integration-ats-api-applicant-integration-result.md
+                - name: Üres Igen Nem
+                  href: hr-admin-integration-ats-api-blank-yes-no.md
+                - name: Végrehajtás állapota
+                  href: hr-admin-integration-ats-api-completion-status.md
+                - name: Kapcsolattartó típusa
+                  href: hr-admin-integration-ats-api-contact-type.md
+                - name: Végzettség – tanulmányi pontszám alapja
+                  href: hr-admin-integration-ats-api-education-credit-basis.md
+                - name: Nem
+                  href: hr-admin-integration-ats-api-gender.md
+                - name: Családi állapot
+                  href: hr-admin-integration-ats-api-marital-status.md
+                - name: Év hónapjai
+                  href: hr-admin-integration-ats-api-months-of-year.md
+                - name: Nem Igen
+                  href: hr-admin-integration-ats-api-no-yes.md
+                - name: Időszakegység
+                  href: hr-admin-integration-ats-api-period-unit.md
+                - name: Szűrési gyakoriság
+                  href: hr-admin-integration-ats-api-screening-frequency.md
+                - name: Szűrési gyakoriság létrehozásának forrása
+                  href: hr-admin-integration-ats-api-screening-frequency-generate-from.md
+                - name: Szakértelemszint típusa
+                  href: hr-admin-integration-ats-api-skill-level-type.md
+        - name: Bérlista-integrációs API
+          items:
+            - name: Bevezetés
+              href: hr-admin-integration-payroll-api-introduction.md
+            - name: Bérlistaentitások létrehozása és áttekintése
+              href: hr-admin-integration-payroll-api-generate-review-entities.md
+            - name: Bérlista-integráció paraméterei
+              href: hr-admin-integration-payroll-api-parameters.md
+            - name: Bérlistaentitás
+              items:
+                - name: Bárlista alkalmazottja
+                  href: hr-admin-integration-payroll-api-payroll-employee.md
+                - name: Bérlista dolgozói címe
+                  href: hr-admin-integration-payroll-api-payroll-worker-address.md
+                - name: Fix kompenzációs konstrukció bérlistája
+                  href: hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md
+                - name: Változó kompenzációs konstrukció bérlistája
+                  href: hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md
+                - name: Bérlista szerinti beosztás
+                  href: hr-admin-integration-payroll-api-payroll-position.md
+                - name: Bérlista szerinti beosztás feladata
+                  href: hr-admin-integration-payroll-api-payroll-position-job.md
+            - name: Szabadsághoz és távolléthez kapcsolódó entitások
+              items:
+                - name: Szabadság egyenlege
+                  href: hr-admin-integration-payroll-api-leave-balance.md
+                - name: Szabadság típusa
+                  href: hr-admin-integration-payroll-api-leave-type.md
+                - name: Szabadságkérelem
+                  href: hr-admin-integration-payroll-api-leave-request.md
+            - name: Lehetőségkészletek
+              items:
+                - name: Nem
+                  href: hr-admin-integration-payroll-api-gender.md
+                - name: Nem Igen
+                  href: hr-admin-integration-payroll-api-no-yes.md
+                - name: Jutalom típusa
+                  href: hr-admin-integration-payroll-api-award-type.md
+                - name: Folyamat típusa
+                  href: hr-admin-integration-payroll-api-process-type.md
     - name: Használati útmutató
       items:
         - name: Áttekintés
@@ -439,12 +605,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/alerts-managing.md?toc=/dynamics365/human-resources/toc.json
                 - name: Ügyfél figyelmeztetési értesítései e-mailben
                   href: ../fin-ops-core/fin-ops/get-started/alert-email-notifications.md?toc=/dynamics365/human-resources/toc.json
-            - name: Elektronikus aláírások
-              items:
-                - name: Az elektronikus aláírások áttekintése
-                  href: ../fin-ops-core/fin-ops/organization-administration/electronic-signature-overview.md?toc=/dynamics365/human-resources/toc.json
-                - name: Elektronikus aláírások beállítása
-                  href: ../fin-ops-core/fin-ops/organization-administration/tasks/set-up-electronic-signatures.md?toc=/dynamics365/human-resources/toc.json
             - name: Esetkezelés
               items:
                 - name: Esetkezelés – áttekintés
@@ -463,12 +623,14 @@
               href: ../fin-ops-core/fin-ops/organization-administration/configure-document-management.md?toc=/dynamics365/human-resources/toc.json
             - name: E-mail konfigurálása és küldése
               href: ../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/human-resources/toc.json
-            - name: Dátum/időadatok és időzónák
+            - name: Dátum-/időadatok és időzónák
               href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/human-resources/toc.json
         - name: Személyzet kezelése
           items:
             - name: Munkaerő-szervezés
               href: hr-personnel-departments-jobs-positions.md
+            - name: Munkaerő-kezelési munkaterület
+              href: hr-personnel-personnel-management-workspace.md
             - name: Feladat összetevőinek beállítása
               href: hr-personnel-jobs.md
             - name: Részlegek meghatározása
@@ -477,6 +639,8 @@
               href: hr-personnel-add-department-hierarchy.md
             - name: Feladatok meghatározása
               href: hr-personnel-define-jobs.md
+            - name: Beosztások
+              href: hr-personnel-positions.md
             - name: Munkaidőnaptár létrehozása
               href: hr-personnel-create-working-time-calendar.md
             - name: Jelöltek toborzása
@@ -491,6 +655,8 @@
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Dolgozói adatok megadása
               href: hr-personnel-enter-worker-information.md
+            - name: Foglalkoztatás nélküli dolgozók
+              href: hr-personnel-workers-without-employment.md
             - name: Cikkek kölcsönzése dolgozóknak
               href: hr-personnel-loan-item-worker.md
             - name: Kölcsöncikkek létrehozása
@@ -529,12 +695,16 @@
               href: hr-compensation-define-process.md
             - name: Kompenzációs konstrukciók feldolgozása
               href: hr-compensation-process.md
+            - name: Alkalmazott megjelölése fizetésre készként
+              href: hr-compensation-payroll.md
         - name: Juttatások kezelése
           items:
             - name: Juttatáskezelés
               items:
                 - name: Juttatáskezelés áttekintése
                   href: hr-benefits-management-overview.md
+                - name: Juttatáskezelési munkaterület
+                  href: hr-benefits-management-workspace.md
                 - name: A juttatáskezelés konfigurálása
                   items:
                     - name: Juttatáskezelési paraméterek konfigurálása vállalatonként
@@ -551,7 +721,7 @@
                       href: hr-benefits-setup-payment-frequencies.md
                     - name: Életesemények típusának konfigurálása
                       href: hr-benefits-setup-life-event-types.md
-                    - name: Költségvetési terv típusai
+                    - name: Tervtípus áttekintése
                       href: hr-benefits-setup-plan-types.md
                     - name: Okkódok beállítása
                       href: hr-benefits-setup-reason-codes.md
@@ -591,6 +761,8 @@
                       href: hr-benefits-process-life-event-eligibility.md
                     - name: Módosítások arányának feldolgozása
                       href: hr-benefits-process-rate-changes.md
+                - name: ACA-jelentés
+                  href: hr-benefits-management-aca-reports.md
             - name: Juttatási program meghatározása és kezelése
               href: hr-benefits-manage-program.md
             - name: Juttatásra vonatkozó jogosultsággal kapcsolatos irányelvek
@@ -641,6 +813,8 @@
               href: hr-employee-self-service-request-time-off.md
             - name: Csapat és vállalati naptárak megtekintése
               href: hr-employee-self-service-calendar.md
+            - name: Távollétkezelő szerepkör konfigurálása
+              href: hr-configure-absence-manager.md
             - name: Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése
               href: hr-leave-and-absence-manage-buy-and-sell-leave-policies.md
             - name: Szabadság vásárlási és eladási munkafolyamatok létrehozása
@@ -653,8 +827,14 @@
           items:
             - name: Teljesítménykezelés – áttekintés
               href: hr-develop-performance-management-overview.md
-            - name: Munkaerő-készségek összehangolása
-              href: hr-develop-skills.md
+            - name: Szakértelem
+              items:
+                - name: Szakértelem konfigurálása
+                  href: hr-develop-skills.md
+                - name: Szakértelem beírása
+                  href: hr-develop-enter-skills.md
+                - name: Szakértelembeli feltérképezése
+                  href: hr-develop-map-skills.md
             - name: Hozzáadás a teljesítménynaplóhoz
               href: hr-develop-add-performance-journal.md
             - name: Cél létrehozása
@@ -691,5 +871,73 @@
               href: hr-employee-manager-self-service-custom-links.md
             - name: Alkalmazotti önkiszolgáló munkaterület nevének módosítása
               href: hr-employee-self-service-workspace-name.md
-            - name: Személyes információk szerkesztése
+            - name: Személyes adatok szerkesztése
               href: hr-employee-manager-self-service-edit-personal-information.md
+            - name: A személyes adatok szerkesztésének korlátozása
+              href: hr-employee-self-service-restrict-editing.md
+        - name: A munkafolyamat-rendszer használata
+          items:
+            - name: A munkafolyamat-rendszer áttekintése
+              href: ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json
+            - name: A munkafolyamat-rendszer felépítése
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-system-architecture.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat-elemek
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-elements.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat-műveletek
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-actions.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamatok létrehozása
+              items:
+                - name: Munkafolyamatok létrehozása – áttekintés
+                  href: ../fin-ops-core/fin-ops/organization-administration/create-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Munkafolyamat-tulajdonságok konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-workflow-properties.md?toc=/dynamics365/human-resources/toc.json
+                - name: Manuális feladatok konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Automatizált feladatok konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-automated-task-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Jóváhagyási folyamatok konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-process-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Jóváhagyási lépések konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-approval-step-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Kiadásellenőrök konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-expenditure-reviewers.md?toc=/dynamics365/human-resources/toc.json
+                - name: Manuális döntések konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-manual-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Feltételes döntések konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-conditional-decision-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Párhuzamos tevékenységek konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-activity-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Párhuzamos ágak konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-parallel-branch-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Sortétel munkafolyamatainak konfigurálása
+                  href: ../fin-ops-core/fin-ops/organization-administration/configure-line-item-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: A munkafolyamat-üzenetet feldolgozó kötegelt feladat konfigurálása kritikusként
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-batch-job-critical.md?toc=/dynamics365/human-resources/toc.json
+            - name: Egy munkafolyamat munkatételeinek delegálása
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/delegate-work-items-workflow.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat-előzmények megtekintése
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/view-workflow-history.md?toc=/dynamics365/human-resources/toc.json
+            - name: A rendszer konfigurálása munkafolyamattal kapcsolatos e-mailek küldéséhez a felhasználóknak
+              href: ../fin-ops-core/fin-ops/organization-administration/tasks/users-receive-workflow-related-email-messages.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat-típusok
+              items:
+                - name: Munkafolyamat-típus létrehozása
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Munkafolyamat-típus ellenőrzőlistája
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-checklist.md?toc=/dynamics365/human-resources/toc.json
+                - name: Munkafolyamat-kategória létrehozása
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-category.md?toc=/dynamics365/human-resources/toc.json
+                - name: Lekérdezés létrehozása munkafolyamat-típushoz
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-query.md?toc=/dynamics365/human-resources/toc.json
+                - name: Új munkafolyamat-típus létrehozása
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-create-new.md?toc=/dynamics365/human-resources/toc.json
+                - name: Munkafolyamat-dokumentumosztály létrehozása
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-document-create.md?toc=/dynamics365/human-resources/toc.json
+                - name: Egy SubmitToWorkflow osztály létrehozása
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-submit-to-workflow.md?toc=/dynamics365/human-resources/toc.json
+                - name: Munkafolyamat-dokumentumosztály társítása munkafolyamat-típushoz
+                  href: ../fin-ops-core/fin-ops/organization-administration/workflow-type-associate-document.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat-típusok jelentése
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-types-report.md?toc=/dynamics365/human-resources/toc.json
+            - name: Munkafolyamat GYIK
+              href: ../fin-ops-core/fin-ops/organization-administration/workflow-FAQ.md?toc=/dynamics365/human-resources/toc.json

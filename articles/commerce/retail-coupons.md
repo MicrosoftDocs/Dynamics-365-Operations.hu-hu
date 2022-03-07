@@ -2,28 +2,25 @@
 title: Retail értékesítési utalványok beállítása
 description: Ez a témakör az utalványokat tekinti át, és bemutatja, hogyan állíthatja be őket.
 author: scott-tucker
-manager: AnnBe
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailCoupon, RetailParameters, RetailSharedParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: a07bed244152327047efd68cfacb329a722c0049
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9d8b9977d733c87566249bcb9658b80c4350c17d
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412791"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5792025"
 ---
 # <a name="set-up-coupons-for-retail-sales"></a>Retail értékesítési utalványok beállítása
 
@@ -82,3 +79,6 @@ Az Utalvány funkció több különálló funkciót tartalmaz. A Commerce Headqu
 - **A HQ részben frissül, de a Commerce Scale Unit és a pénztár nem.** Egy HQ-frissítés során az utalvány- és engedménycsoportok lapjai frissülnek, és a kereskedelmi ármotor is frissül. Ha a kettő közül csak egy összetevő frissül, a Commerce alkalmazás egyes lapjai nem egyeznek meg az árszámítási adatokkal. Emiatt nem várt engedmények vagy a hibák fordulhatnk elő az engedményszámítások során.
 - **A HQ frissül, de a Commerce Scale Unit és a pénztár nem (N-1).** Mivel nem minden áruház frissíthető ugyanakkor, javasoljuk, hogy az áruházak frissítése előtt a HQ-t frissítse. Az N-1 forgatókönyvben az utalványokhoz kapcsolódó új funkció nem érhető el a még nem frissített üzletek esetében. Például az utalványfunkció „kizárás” sorokat vezet be. Ha kizárandó sorokat használ egy engedményen, ezeket a rendszer nem alkalmazza arra az áruházra, amelyen a korábbi verzió fut.
 - **A HQ nem frissül, de a Commerce Scale Unit és a pénztár igen (N+1).** Mivel a Commerce Scale Unit frissített ármotorja az árkalkulációk során kezelheti az örökölt engedménykódokat, a frissítésnek nem kellene funkcionális hatása legyen ebben a forgatókönyvben.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,27 +2,24 @@
 title: Átvételi információ modul
 description: Ez a témakör az átvételi információk modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni a fizetési oldalakhoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-manager: annbe
 ms.date: 11/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 61b97d72b6a397737c10476cd6c02764e60f10b1
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
-ms.translationtype: HT
+ms.openlocfilehash: 52015fb973642bfc6f45901e7c1a265f0ccfc415b1324bc62ef77a5fc72550bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665348"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764561"
 ---
 # <a name="pickup-information-module"></a>Átvételi információ modul
 
@@ -43,7 +40,7 @@ Ha több cikket választ ki több üzletben történő felvételhez, a felvétel
 
 A következő ábra egy példát mutat be az idősáv kiválasztására a felvételi információs modulon keresztül a pénztár oldalon.
 
-![Példa egy átvételi információk modulra egy fizetési oldalon](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
+![Példa egy átvételi információk modulra egy fizetési oldalon.](./dev-itpro/media/Curbside_timeslot_eCommerce.PNG)
 
 ## <a name="module-properties"></a>Modul tulajdonságai
 
@@ -59,7 +56,7 @@ Az átvételi információk modulnak a pénztár laphoz való hozzáadásával �
 
 A következő ábra egy e-kereskedelmi fizetési oldalt mutat be, amely időközöket tartalmaz a sorelemek átvételéhez.
 
-![Egy e-kereskedelmi fizetési oldal példája, amely időközöket tartalmaz a sorelemek átvételéhez](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
+![Egy e-kereskedelmi fizetési oldal példája, amely időközöket tartalmaz a sorelemek átvételéhez.](./dev-itpro/media/Curbside_timeslot_eCommerce_checkoutsummary.PNG)
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -70,3 +67,6 @@ A következő ábra egy e-kereskedelmi fizetési oldalt mutat be, amely időköz
 [Rendelésmegerősítési modul](order-confirmation-module.md)
 
 [Rendelési részletek modul](account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

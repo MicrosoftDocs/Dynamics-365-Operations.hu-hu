@@ -1,27 +1,25 @@
 ---
 title: Készletleltár-folyamatok meghatározása
 description: Ez az témakör bemutatja az alapvető leltározási folyamatokon a leltárcsoport és a leltárnapló létrehozásával.
-author: MarkusFogelberg
-manager: tfehr
+author: yufeihuang
 ms.date: 07/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCountGroup, InventJournalName, InventParameters, EcoResProductDetailsExtended, InventItemLocation, InventLocationIdLookup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3c8550e539a1b3299d89ec2b13550a13e284d807
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ee47b04ba7ec9f3d74230b7a41b1c295eaea9313
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4961372"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580840"
 ---
 # <a name="define-inventory-counting-processes"></a>Készletleltár-folyamatok meghatározása
 
@@ -84,3 +82,6 @@ Ez az témakör bemutatja az alapvető leltározási folyamatokon a leltárcsopo
 5. A **Raktárcsoport** mezőjének legördülő menüjében válassza ki a leltározási csoportot. Kiválaszthat egy adott leltárcsoportot, amely vonatkozik a kiválasztott raktár adott cikkére. Ha abban a raktárban leltár történik, ez a leltározási irányelv felülírja az általános leltározási irányelvet a cikkre.  
 6. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

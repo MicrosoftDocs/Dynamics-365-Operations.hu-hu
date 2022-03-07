@@ -8,18 +8,19 @@ ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: d4529af21d9673512889b17aeb1e7fbd49969cdc
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 641273dd3ae189853326bf7af7ceb06d48465b5c
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966279"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500550"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Eszköz beállítása a termelési üzem végrehajtási felületének futtatására
 
@@ -79,3 +80,6 @@ Az alábbi ábra felső részén látható a kezelőfelület alapértelmezett me
 Alapértelmezetten a termelési üzem végrehajtási felület automatikusan kijelentkezik, ha azt nem használják 12 órán keresztül. Ezután a Supply Chain Management egy felhasználójának ismét be kell jelentkeznie. Az időtúllépési korlát azonban akár 90 nap hosszúságra is kiterjeszthető.
 
 Az időtúllépési korlát meghosszabbításához jelentkezzen be a Supply Chain Management alkalamzásba, majd nyissa meg a **Rendszerfelügyelet \> Felhasználók \> Munkamenet meghosszabbítása** lehetőséget. Adja meg azt az Supply Chain Management felhasználói fiókot, amely az eszközbe történő bejelentkezéshez használatos, valamint azt, hogy hány órán át maradjon a munkamenet aktív.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

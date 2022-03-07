@@ -2,11 +2,9 @@
 title: Statisztikai dimenziótagok és statisztikaimérték-szolgáltató sablonok
 description: Ez a témakör a statisztikai dimenziótagokról és a statisztikaimérték-szolgáltató sablonokról nyújt tájékoztatást. A statisztikai dimenziótagok felosztási alapként használhatók olyan irányelvekben, mint a költségfelosztás és a költségfoglalás. Használhatók a nem pénzügyi költségfelhasználás bejelentésére is.
 author: AndersGirke
-manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: roschlom
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 79e8bf0714871ffd342bb6053153e6e4d0f5c668
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: c79451a5145a6e419ae0e332c67f06ca2df65996f959333a508dbf62dbf435ff
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969453"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767647"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Statisztikai dimenziótagok és statisztikaimérték-szolgáltató sablonok
 
@@ -162,7 +160,7 @@ A statisztikai mértékét adatforrásának feldolgozása után a Költségköny
 
 **Statisztikai bejegyzések**
 
-| Költségobjektum |    | Könyvelési dátum | Statisztikai dimenziótag |  Leírás        | Nagyság |
+| Költségobjektum |  Leírás  | Könyvelési dátum | Statisztikai dimenziótag |  Leírás        | Nagyság |
 |-------------|----|-----------------|------------------------------|---------------------|-----------|
 | CC001       | HR | 2017/01/31      | Teljes munkaidős alkalmazottak                         | Teljes munkaidős alkalmazottak | 1.00      |
 | CC002       | FI | 2017/01/31      | Teljes munkaidős alkalmazottak                         | Teljes munkaidős alkalmazottak | 2.00      |
@@ -328,7 +326,7 @@ Lépjen a **Költségkönyvelési főkönyv** \> **Tényleges verzió** \> **Kez
 
 **Statisztikai bejegyzések**
 
-| Költségobjektum |    | Könyvelési dátum | Statisztikai dimenziótag |      Leírás                   | Nagyság  |
+| Költségobjektum | Leírás | Könyvelési dátum | Statisztikai dimenziótag |      Leírás                   | Nagyság  |
 |-------------|----|-----------------|------------------------------|-------------------------|------------|
 | CC001       | HR | 2017/01/31      | Villamos energia                  | Áramfogyasztás | 2,450.00   |
 | CC002       | FI | 2017/01/31      | Villamos energia                  | Áramfogyasztás | 4,100.00   |
@@ -336,12 +334,15 @@ Lépjen a **Költségkönyvelési főkönyv** \> **Tényleges verzió** \> **Kez
 
 Ha a Villamos energia előre definiált dimenziótagjának felosztási alapja felosztási alapként van hozzárendelve egy költségfelosztási szabályhoz, a költséget a következő felosztási tényező segítségével osztja el a rendszer.
 
-| Költségobjektum |    | Nagyság | Felosztási tényező          |
-|-------------|----|-----------|----------------------------|
-| CC001       | HR | 2,450.00  | (2,450 ÷ 21,550) x Összeg  |
-| CC002       | FI | 4,100.00  | (4,100 ÷ 21,550) x Összeg  |
-| CC003       | Készletátadás | 15,000.00 | (15,000 ÷ 21,550) x Összeg |
+| Költségobjektum | Leírás   | Nagyság | Felosztási tényező          |
+|-------------|---------------|-----------|----------------------------|
+| CC001       | HR            | 2,450.00  | (2,450 ÷ 21,550) x Összeg  |
+| CC002       | FI            | 4,100.00  | (4,100 ÷ 21,550) x Összeg  |
+| CC003       | Készletátadás            | 15,000.00 | (15,000 ÷ 21,550) x Összeg |
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Felosztás alapjai](allocation-bases.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

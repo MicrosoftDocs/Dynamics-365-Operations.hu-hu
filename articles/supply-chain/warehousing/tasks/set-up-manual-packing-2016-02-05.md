@@ -2,27 +2,24 @@
 title: A kézi csomagolás beállítása (2016. február és 2016. május)
 description: A csomagolási folyamat lehetővé teszi az érvényesítést és a termékek tárolókba történő csomagolását.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocationProfile, WHSParameters, WHSContainerType, WHSPackProfile, WHSCloseContainerProfile, InventLocationIdLookup, UnitOfMeasureLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 67e1e99b479752a027c60a878c57bd35d4219981
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 44067dedab189d1d7b008ad4e620a3cc652dbc48b5771900df972020096d1a40
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780894"
 ---
 # <a name="set-up-manual-packing-february-2016--may-2016"></a>A kézi csomagolás beállítása (2016. február és 2016. május)
 
@@ -95,3 +92,6 @@ A csomagolási folyamat lehetővé teszi az érvényesítést és a termékek t�
 8. A Súlyegység mezőben adjon meg, vagy válasszon ki egy értéket.
 9. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

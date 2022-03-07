@@ -2,11 +2,9 @@
 title: ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából
 description: Ez a témakör azt mutatja be, hogyan lehet letölteni az elektronikus jelentéskészítési (ER) konfigurációkat a konfigurációs szolgáltatás globális tárából.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace, ERSolutionRepositoryTable
 audience: Application User, IT Pro
@@ -17,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: a96e78a64fe0559ae5f3bfddabf3fe1cad8a3dcb
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: 32eb5206fadefbd024f2dd2af888d166c81b950f
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679558"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605331"
 ---
 # <a name="download-er-configurations-from-the-global-repository-of-configuration-service"></a>ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelentéskészítési (ER) konfigurációkat](general-electronic-reporting.md#Configuration) a konfigurációs szolgáltatás globális tárából. A további tudnivalókat lásd: [Microsoft Dynamics 365 for Finance and Operations - Regulatory services, konfigurációs szolgáltatás](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
+Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelentéskészítési (ER) konfigurációkat](general-electronic-reporting.md#Configuration) a konfigurációs szolgáltatás globális tárából. A további tudnivalókat lásd: [Microsoft Dynamics 365 for Finance and Operations - Regulatory services, konfigurációs szolgáltatás](/business-applications-release-notes/october18/dynamics365-finance-operations/regulatory-service-configuration).
 
 ## <a name="open-configurations-repository"></a>Konfigurációs tár megnyitása
 
@@ -42,7 +40,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 3. Jelölje be a **Microsoft** lapot a **Konfigurációs szolgáltatók** részben.
 3. Kattintson a **Tárak** lehetőségre a **Microsoft** lapon.
 
-    ![Elektronikus jelentések munkaterülete](./media/er-download-configurations-global-repo-er-workspace.png)
+    ![Elektronikus jelentések munkaterülete.](./media/er-download-configurations-global-repo-er-workspace.png)
 
 4. A **Konfigurációs tárak** lapon lévő rácson jelölje ki a **Globális** meglévő tárházát. Ha a tárház nem jelenik meg a rácson, tegye a következőket:
 
@@ -54,7 +52,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 
 5. Kattintson a **Megnyitás** lehetőségre a kijelölt tárház ER-konfigurációk listájának megtekintéséhez.
 
-    ![Konfigurációs tárak oldal](./media/er-download-configurations-global-repo-repositories-list.png)
+    ![Konfigurációs tárak oldal.](./media/er-download-configurations-global-repo-repositories-list.png)
 
 ## <a name="import-a-single-configuration"></a>Egyetlen konfiguráció importálása
 
@@ -65,7 +63,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
     > [!NOTE]
     > Az **Importálás** gomb nem érhető el azon ER konfigurációs verziókhoz, amelyek már szerepelnek az aktuális Finance-példányban.
 
-    ![Konfigurációk tárháza oldal](./media/er-download-configurations-global-repo-repository-content.png)
+    ![Konfigurációs tárház lap, Konfigurációk gyorslap.](./media/er-download-configurations-global-repo-repository-content.png)
 
 ## <a name="import-filtered-configurations"></a>Szűrt konfigurációk importálása
 
@@ -79,7 +77,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 4. Válassza a **Konfigurációk** gyorslap **Importálás** parancsát a szűrt konfigurációknak a globális tárból a jelenlegi példányra történő letöltéséhez.
 5. Válassza a **Konfigurációk** gyorslap **Szűrő alaphelyzetbe állítása** parancsát a megadott kiválasztási feltételek törléséhez.
 
-    ![Konfigurációk tárháza oldal](./media/er-download-configurations-global-repo-filtered-configurations.png)
+    ![Konfigurációs tárházoldal, Verziók gyorslap, Importálás gomb.](./media/er-download-configurations-global-repo-filtered-configurations.png)
 
 > [!NOTE]
 > Az ER beállításoktól függ a konfigurációk érvényesítése azok importálását követően. Előfordulhat, hogy bármilyen észlelt ellentmondásos problémáról értesítést kap. Ezeket a problémákat meg kell oldania az importált konfiguráció verziójának használata előtt. További információkért nézze meg a jelen témakörrel kapcsolatos erőforrások listáját.
@@ -90,3 +88,6 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 ## <a name="additional-resources"></a>További erőforrások
 
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

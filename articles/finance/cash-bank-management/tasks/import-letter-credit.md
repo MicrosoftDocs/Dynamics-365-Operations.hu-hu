@@ -2,9 +2,11 @@
 title: Akkreditív importálása
 description: Ez az eljárás bemutatja egy akkreditív importálásának folyamatát.
 author: kweekley
+manager: AnnBe
 ms.date: 02/28/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable, VendBankAccounts, PurchTable, PurchCreateOrder, InventItemIdLookupPurchase, BankLCImport,  PurchEditLines, VendEditInvoice, SrsReportViewerForm, LedgerJournalTable, LedgerJournalTransVendPaym, VendOpenTrans, SysQueryForm, BankAccountTableLookUp
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c6119a8b52eece5935bf05d0f2300feeb8d4e90b08f26e949870f491bc9254e8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 76dedb12eef0f8282f04f680cab51a8ccf3e8221
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743121"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "5009543"
 ---
 # <a name="import-letter-of-credit"></a>Akkreditív importálása
 
@@ -128,8 +130,7 @@ Ez az eljárás az USMF bemutatócéget használja.
 12. Zárja be a lapot.
 13. Zárja be a lapot.
 
-## <a name="verify-import-letter-of-credit-status-and-printing"></a>Ellenőrizze az Importakkreditív állapotát és a nyomtatást
-
+## <a name="verify-import-letter-of-credit-status"></a>Ellenőrizze az Importakkreditív állapotát.
 1. Ugorjon a Készpénz- és bankkezelés > Akkreditívek > Importakkreditív és importbeszedvény pontra.
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
 3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
@@ -183,6 +184,3 @@ Ez az eljárás az USMF bemutatócéget használja.
     * Győződjön meg róla, hogy a jelentés felsorolja a tranzakciókat a Banki okmány számával, a Hitelmegállapodás határértékével, a felhasznált összeggel és a hitel egyenlegének összegével együtt.  
 8. Zárja be a lapot.
 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

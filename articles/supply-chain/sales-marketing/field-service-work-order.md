@@ -1,30 +1,27 @@
 ---
 title: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel
 description: Ez a témakör azokat a sablonokat és kapcsolódó feladatokat mutatja be, melyek a Supply Chain Management munkarendelések a Field Service vevői rendelésekre történő szinkronizálásához szükségesek.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 04/09/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: d8051e21c731213e2d74ab6eeb80c239ca9932e6
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: c54f5eaec1ae453ba9e55ef54d47c8591276ec89
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528923"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568375"
 ---
 # <a name="synchronize-work-orders-in-field-service-to-sales-orders-in-supply-chain-management"></a>A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Supply Chain Management értékesítési rendeléseivel
 
@@ -34,7 +31,7 @@ ms.locfileid: "4528923"
 
 Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Field Service munkarendeléseinek a Dynamics 365 Supply Chain Management szolgáltatásban található értékesítési rendelésekkel történő szinkronizálására használatosak.
 
-[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/field-service-integration.png)](./media/field-service-integration.png)
+[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/field-service-integration.png)](./media/field-service-integration.png)
 
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
@@ -62,13 +59,13 @@ A következő szinkronizálási feladatok kötelezőek, mielőtt az értékesít
 
 | **Field Service** | **Ellátásilánc-kezelés** |
 |-------------------------|-------------------------|
-| msdyn_workorders        | CDS értékesítésirendelés-fejlécek |
-| msdyn_workorderservices | CDS értékesítési rendelés sorai   |
-| msdyn_workorderproducts | CDS értékesítési rendelés sorai   |
+| msdyn_workorders        | Dataverse értékesítési rendelési fejlécek |
+| msdyn_workorderservices | Dataverse értékesítési rendelés sorai   |
+| msdyn_workorderproducts | Dataverse értékesítési rendelés sorai   |
 
 ## <a name="entity-flow"></a>Entitás folyamata
 
-A munkarendelések létrejönnek a Field Service szolgáltatásban. Ha a munkarendelések csak külsőleg karbantartott termékeket tartalmaznak, és ha a **Munkarendelés állapota** érték nem **Nyitott – nincs beütemezve** és **Lezárt – visszavonva**, úgy a munkarendelések a Supply Chain Management szolgáltatásba szinkronizálhatók a Common Data Service adatintegrációs projekten keresztül. A munkarendelések frissítései értékesítési rendelésként szinkronizálódnak a Supply Chain Management szolgáltatásba. Ezek a frissítések tartalmazzák a származási típusra és állapotra vonatkozó információkat.
+A munkarendelések létrejönnek a Field Service szolgáltatásban. Ha a munkarendelések csak külsőleg karbantartott termékeket tartalmaznak, és ha a **Munkarendelés állapota** érték nem **Nyitott – nincs beütemezve** és **Lezárt – visszavonva**, úgy a munkarendelések a Supply Chain Management szolgáltatásba szinkronizálhatók a Microsoft Dataverse adatintegrációs projekten keresztül. A munkarendelések frissítései értékesítési rendelésként szinkronizálódnak a Supply Chain Management szolgáltatásba. Ezek a frissítések tartalmazzák a származási típusra és állapotra vonatkozó információkat.
 
 ## <a name="estimated-versus-used"></a>Becsült, illetve felhasznált
 
@@ -91,21 +88,21 @@ Az alábbi táblázat áttekintést ad a terméksorok különböző kombináció
 | Rendszer állapota <br>(Field Service) | Sor állapota <br>(Field Service) | Felosztott <br>(Field Service) |Szinkronizált érték <br>(Supply Chain Management) |
 |--------------------|-------------|-----------|---------------------------------|
 | Nyitott – beütemezve   | Becsült   | Igen       | Becsült                       |
-| Nyitott – beütemezve   | Becsült   | Nincs        | Felhasználva                            |
+| Nyitott – beütemezve   | Becsült   | Nem        | Felhasználva                            |
 | Nyitott – beütemezve   | Felhasználva        | Igen       | Felhasználva                            |
-| Nyitott – beütemezve   | Felhasználva        | Nincs        | Felhasználva                            |
+| Nyitott – beütemezve   | Felhasználva        | Nem        | Felhasználva                            |
 | Nyitott – folyamatban | Becsült   | Igen       | Becsült                       |
-| Nyitott – folyamatban | Becsült   | Nincs        | Felhasználva                            |
+| Nyitott – folyamatban | Becsült   | Nem        | Felhasználva                            |
 | Nyitott – folyamatban | Felhasználva        | Igen       | Felhasználva                            |
-| Nyitott – folyamatban | Felhasználva        | Nincs        | Felhasználva                            |
+| Nyitott – folyamatban | Felhasználva        | Nem        | Felhasználva                            |
 | Nyitott – befejezve   | Becsült   | Igen       | Becsült                       |
-| Nyitott – befejezve   | Becsült   | Nincs        | Felhasználva                            |
+| Nyitott – befejezve   | Becsült   | Nem        | Felhasználva                            |
 | Nyitott – befejezve   | Felhasználva        | Igen       | Felhasználva                            |
-| Nyitott – befejezve   | Felhasználva        | Nincs        | Felhasználva                            |
+| Nyitott – befejezve   | Felhasználva        | Nem        | Felhasználva                            |
 | Lezárva – feladva    | Becsült   | Igen       | Felhasználva                            |
-| Lezárva – feladva    | Becsült   | Nincs        | Felhasználva                            |
+| Lezárva – feladva    | Becsült   | Nem        | Felhasználva                            |
 | Lezárva – feladva    | Felhasználva        | Igen       | Felhasználva                            |
-| Lezárva – feladva    | Felhasználva        | Nincs        | Felhasználva                            |
+| Lezárva – feladva    | Felhasználva        | Nem        | Felhasználva                            |
 
 Az alábbi táblázat áttekintést ad a szolgáltatási sorok különböző kombinációiról.
 
@@ -248,28 +245,31 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 
 Szűrő: (msdyn_systemstatus ne 690970005) and (msdyn_systemstatus ne 690970000) és (msdynce_hasexternallymaintainedproductsonly eq true)
 
-[![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+[![Sablonleképezés a munkarendelések és az értékesítési rendelések közötti adatintegrációban (Field Service – Supply Chain Management): WorkOrderHeader.](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineestimate"></a>Munkarendelések Értékesítési rendelésekké (Field Service – Supply Chain Management): WorkOrderServiceLineEstimate
 
 Szűrő: (msdynce_headersystemstatus ne 690970005) and (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és (msdyn_linestatus eq 690970000) és (msdynce_headersystemstatus ne 690970004)
 
-[![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+[![Sablonleképezés a munkarendelések és az értékesítési rendelések közötti adatintegrációban (Field Service – Supply Chain Management): WorkOrderServiceLineEstimate.](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderservicelineused"></a>Munkarendelések Értékesítési rendelésekké (Field Service – Supply Chain Management): WorkOrderServiceLineUsed
 
 Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és ((msdyn_linestatus eq 690970001) vagy (msdynce_headersystemstatus eq 690970004))
 
-[![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+[![Sablonleképezés a munkarendelések és az értékesítési rendelések közötti adatintegrációban (Field Service – Supply Chain Management): WorkOrderServiceLineUsed.](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineestimate"></a>Munkarendelések Értékesítési rendelésekké (Field Service – Supply Chain Management): WorkOrderProductLineEstimate
 
 Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és (msdyn_linestatus eq 690970000) és (msdynce_headersystemstatus ne 690970004) és (msdyn_allocated eq true)
 
-[![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+[![Sablonleképezés a munkarendelések és az értékesítési rendelések közötti adatintegrációban (Field Service – Supply Chain Management): WorkOrderProductLineEstimate.](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
 
 ### <a name="work-orders-to-sales-orders-field-service-to-supply-chain-management-workorderproductlineused"></a>Munkarendelések Értékesítési rendelésekké (Field Service – Supply Chain Management): WorkOrderProductLineUsed
 
 Szűrő: (msdynce_headersystemstatus ne 690970005) és (msdynce_headersystemstatus ne 690970000) és (msdynce_orderhasexternalmaintainedproductsonly eq true) és ((msdyn_linestatus eq 690970001) vagy (msdynce_headersystemstatus eq 690970004) vagy (msdyn_allocated ne true))
 
-[![Sablonleképezés az adatintegrátorban](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+[![Sablonleképezés a munkarendelések és az értékesítési rendelések közötti adatintegrációban (Field Service – Supply Chain Management): WorkOrderProductLineUsed.](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

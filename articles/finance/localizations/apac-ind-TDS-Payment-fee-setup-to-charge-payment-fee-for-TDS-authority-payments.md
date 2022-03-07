@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: 1c17a00a9c62627e37533b43c38d94d57b00d1eb6c6b55de197dcd6d00d02db6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b52331bb1c7a1bc2c764008112f3df9cc0385995
+ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712195"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "6023313"
 ---
 # <a name="set-up-payment-fees-for-tds-authority-payments"></a>Kifizetési díj beállítása TDS-hatósági fizetésekhez
 
@@ -31,7 +31,7 @@ Ez a témakör elmagyarázza, hogyan lehet beállítani a forrásnál levont ad�
 
 1. Ugrás a **Kötelezettségek \> Kifizetés beállítása \> Fizetési díj** elemre.
 
-    [![Kifizetési díj oldal.](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
+    [![Kifizetési díj oldal](./media/apac-ind-TDS-28.png)](./media/apac-ind-TDS-28.png)
 
 2. Válassza az **Új** lehetőséget, hozzon létre egy kifizetési díjat, majd adja meg a szükséges adatokat.
 3. A **Díj típusa** mezőben válassza ki a kifizetési díj típusát.
@@ -46,7 +46,7 @@ Ez a témakör elmagyarázza, hogyan lehet beállítani a forrásnál levont ad�
 5. Adja meg az egyéb szükséges adatokat.
 6. A Műveletablakban válassza a **Fizetési díj beállítása** beállítást a **Fizetési díj beállítása** oldal megnyitásához, ahol beállíthatja a fizetési díjakat a bankok különböző kombinációihoz, a fizetési módokhoz, a fizetési előírásokhoz, a pénznemekhez és a dátumintervallumokhoz.
 
-    [![Kifizetési díj beállítása oldal.](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
+    [![Kifizetési díj beállítása oldal](./media/apac-ind-TDS-21.png)](./media/apac-ind-TDS-21.png)
 
 7. Adja meg a **Csoportosítások** mező **Áttekintés** lapján, hogy mely bankokhoz állítja be a kifizetési díjat:
 
@@ -64,7 +64,7 @@ Ez a témakör elmagyarázza, hogyan lehet beállítani a forrásnál levont ad�
 15. A **Díj pénzneme** mezőben pontosítsa a díj pénznemének kódját.
 16. Válassza az **Általános** lapot a kiválasztott bankszámla részleteinek megtekintéséhez vagy módosításához.
 
-    [![Általános fül.](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
+    [![Általános fül](./media/apac-ind-TDS-22.png)](./media/apac-ind-TDS-22.png)
 
 16. A **Minimális** mezőben adja meg azt a minimális tranzakcióösszeget, amely aktiválja a díjat.
 17. A **Maximális** mezőben adja meg azt a maximális tranzakcióösszeget, amely aktiválja a díjat.
@@ -74,7 +74,7 @@ Ez a témakör elmagyarázza, hogyan lehet beállítani a forrásnál levont ad�
 21. A **Cikkáfacsoport** mezőben válassza ki a cikkáfa összegének kiszámításához használt áfacsoportot.
 22. Válassza ki az **Intervallum** lapot. 
 
-    [![Intervallum lap.](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
+    [![Intervallum lap](./media/apac-ind-TDS-23.png)](./media/apac-ind-TDS-23.png)
 
 23. A **Napok** mezőben adja meg a kifizetés feladási dátuma (engedményezés dátuma) és a kötelezvény határideje között eltelt napok számát.
 24. A **Százalék/Összeg** mezőben adja meg, hogy százalék vagy meghatározott összeg-e a meghatározás.

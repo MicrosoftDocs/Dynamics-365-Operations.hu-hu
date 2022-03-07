@@ -2,27 +2,24 @@
 title: Mértékegység-átváltás termékváltozatonként
 description: Ez a témakör bemutatja, hogyan lehet mértékegység-átváltásokat beállítani a termékváltozatokon. Egy példát is tartalmaz a beállításra.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: UnitOfMeasureConversion
 ROBOTS: noindex, nofollow
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-04-01
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 71d35d47a703f0931ba3b4ab5df21c7199c7ea5b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: b9ad41395055d9f63aae8ffa869e0613be330051390955599a95a30869a145dc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6713638"
 ---
 # <a name="unit-of-measure-conversion-per-product-variant"></a>Mértékegység-átváltás termékváltozatonként
 
@@ -59,7 +56,7 @@ A következő lépésekkel konfigurálhat egy alapterméket, amely támogatja a 
     - **Termék** – Ha ezt az értéket választja, akkor beállíthatja a mértékegység-átváltást az alaptermékhez. Ez a mértékegység-átváltás tartalékként fog szerepelni az összes olyan termékváltozathoz, amelynél nincs beállítva mértékegység-átváltás.
     - **Termékváltozat** – Ha ezt az értéket választja, akkor beállíthatja a mértékegység-átváltást egy adott termékváltozathoz. Válassza ki a változatot a **Termékváltozat** mező segítségével.
 
-    ![![Új mértékegység-átváltás hozzáadása](media/uom-new-conversion.png "Új mértékegység-átváltás hozzáadása")](media/uom-new-conversion.png "Adding a new unit conversion")
+    ![Új mértékegység-átváltás hozzáadása.](media/uom-new-conversion.png "Új mértékegység-átváltás hozzáadása")
 
 1. A mértékegység-átváltás beállításához használja az egyéb megadott mezőket.
 1. Az új mértékegység-átalakítás mentéséhez kattintson az **OK** gombra.
@@ -106,4 +103,7 @@ Az egységek átváltásának Excel programba történő exportálásához vála
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Mértékegység kezelése](tasks/manage-unit-measure.md)
+[Mértékegységek kezelése](tasks/manage-unit-measure.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

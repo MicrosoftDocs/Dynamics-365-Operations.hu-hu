@@ -1,29 +1,28 @@
 ---
 title: Készpénz- és bankkezelési kezdőlap
 description: A Készpénz- és bankkezelés modul segítségével karbantarthatók a jogi személy bankszámlái, valamint a hozzájuk társított pénzügyi eszközök.
-author: panolte
-manager: AnnBe
+author: roschlom
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 21941
+ms.custom:
+- "21941"
+- intro-internal
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
-ms.author: panolte
+ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88d7f70084d035354d199be95b5c55ce7afff7b7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: de37cc3df673a672a091ffe90ca543fae77bc9d5
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459187"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883694"
 ---
 # <a name="cash-and-bank-management-home-page"></a>Készpénz- és bankkezelési kezdőlap
 
@@ -35,7 +34,7 @@ Ide tartoznak a letéti jegyek, a csekkek, a váltók és a kötelezvények. Ugy
 
 **Üzleti folyamatok**
 
-[![Üzleti folyamat](./media/Cash-process.PNG)](./media/Cash-process.PNG)
+[![Üzleti folyamat.](./media/Cash-process.PNG)](./media/Cash-process.PNG)
 
 -   [Készpénzfizetési engedmények](cash-discounts.md)
 -   [Kiegyenlítés – áttekintés](settlement-overview.md)
@@ -86,7 +85,7 @@ Ide tartoznak a letéti jegyek, a csekkek, a váltók és a kötelezvények. Ugy
 
 #### <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
-Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](https://go.microsoft.com/fwlink/?linkid=2010158) oldalára a tervezett új funkciók megtekintéséhez. 
+Lépjen a [Microsoft Dynamics 365 programverzióra vonatkozó kiadási tervek](/dynamics365/release-plans/) oldalára a tervezett új funkciók megtekintéséhez. 
 
 #### <a name="blogs"></a>Blogok
 
@@ -100,3 +99,6 @@ A Finance szolgáltatásban – feladat-útmutatók formájában – további se
 #### <a name="videos"></a>Videók
 
 Tekintse meg az útmutató-videókat, amelyek a [Microsoft Dynamics 365 YouTube csatornáján](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ) láthatók.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

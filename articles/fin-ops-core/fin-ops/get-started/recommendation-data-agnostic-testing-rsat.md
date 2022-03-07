@@ -2,11 +2,9 @@
 title: Adatagnosztikus tesztelés a Regression Suite Automation Tool használatával
 description: Ez a témakör az adatagnosztikus tesztelésre vonatkozó ajánlásokat tárgyalja a Regression Suite Automation Tool segítségével.
 author: kfend
-manager: AnnBe
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2019-09-11
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2398bcbf0d148932e62ebe90aa8016acf0c79c28
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
-ms.translationtype: HT
+ms.openlocfilehash: d9a5bce1cc56dfdf66b2ce58c2e740b7c4b3bdfc7f4e75396fe5dc7cb931b6d0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763410"
 ---
 # <a name="data-agnostic-testing-using-the-regression-suite-automation-tool"></a>Adatagnosztikus tesztelés a Regression Suite Automation Tool használatával
 
@@ -32,7 +30,7 @@ Noha egy ERP-alkalmazás működési ellenőrzése nem lehet teljes mértékben 
 - ATL-keretrendszer
 - Regression Suite Automation Tool (RSAT)
 
-[![Tesztbesorolási piramis](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
+[![Tesztbesorolási piramis.](./media/rsat-data-agnostic-testing-01.PNG)](./media/rsat-data-agnostic-testing-01.PNG)
 
 ## <a name="overview"></a>Áttekintés
 -   **SysTest keretrendszer** – A SysTest keretrendszer megbízható a fajlagos tesztek elvégzéséhez. Mivel az egységtesztek általában egy módszer vagy funkció tesztelésére szolgálnak, mindig adatagnosztikusnak kell lenniük, és csak a teszt részeként megadott bemeneti adatoktól függhetnek.
@@ -44,8 +42,11 @@ Noha egy ERP-alkalmazás működési ellenőrzése nem lehet teljes mértékben 
     - o írja be az egyedi azonosítókat, például a számlaszámot, a számsorozaton keresztül vagy a következő Microsoft Excel funkciókkal: =TEXT(NOW(),"yyyymmddhhmm"). Ez a funkció percenként ad egyedi számot, amely lehetővé teszi, hogy nyomon követhesse a művelet megtörténtét. Ez használható olyan változóknál, mint a termékbizonylat-számok és a szállítói számlák száma. Ez a teszt továbbra is ugyanazokon az adatbázisokon dolgozik újra és újra, anélkül, hogy helyreállításra lenne szüksége.
     - Mindig állítsuk be a környezet **szerkesztési módját** **Olvasás** vagy **Szerkesztés** értékre az első tesztként, mert az alapértelmezett beállítás **Automatikus**. Az **Automatikus** lehetőségek mindig az előző beállítást használja, és nem megbízható teszteket okozhat. 
  
-    [![Beállítások lap, Teljesítmény lap](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
+    [![Beállítások lap, Teljesítmény lap.](./media/rsat-data-agnostic-testing-02.PNG)](./media/rsat-data-agnostic-testing-02.PNG)
  
     - Érvényesítést csak az adott tranzakcióra vonatkozó szűrés után végezzen, az általános érvényesítés helyett. A rekordok számának megadásához például tranzakció számára vagy a tranzakció dátumára szűrjön, hogy az ellenőrzés kizárja az összes többi tranzakciót. 
     - Ha bejelöli a vevői egyenleget vagy a költségvetés-ellenőrzést, először mentse az értéket, majd adja hozzá a tranzakció értékét, hogy a várt eredményt érvényesítse a fix várt érték ellenőrzése helyett. 
  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

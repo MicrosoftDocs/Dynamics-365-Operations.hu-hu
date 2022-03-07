@@ -2,26 +2,23 @@
 title: Cikk-konszolidáció – hely kihasználtsága
 description: Ez a témakör olyan funkcióról tartalmaz információkat, amely megkönnyítik a raktárvezetők számára hogy megtekintsék és szűrje a raktáraknak a raktáron belüli térfogat-kihasználását. A menedzserek kiválaszthatnak helyeket, és a cikkek konszolidálásához közvetlenül a cikk-összesítés lapon hozhatnak létre készletmozgatási munkát, és így jobban ki tudják használni a raktári helyet.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSPhysDimUOM, WHSMovementType, WHSItemConsolidationForm, WHSRFMenu, WHSRFMenuItem
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 6a328b20c1cfb2fc376ab4656c64cf585a5aa015
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 892190ea7bad34dfd308796b93a1828e0e8e11b9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429843"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835571"
 ---
 # <a name="item-consolidation---location-utilization"></a>Cikk-konszolidáció – hely kihasználtsága
 
@@ -150,7 +147,7 @@ Ez a szakasz bemutatja, hogyan kell előkészíteni a rendszert a cikk-konszolid
 
 ## <a name="example-scenario"></a>Példaforgatókönyv
 
-A következő eset egy mobileszköz raktári alkalmazásával végez készlet *korrigálást* a raktárban lévő két helyre.
+A következő eset egy mobileszköz Raktárkezelés mobilalkalmazásával végez készlet *korrigálást* a raktárban lévő két helyre.
 
 ### <a name="add-inventory-to-locations"></a>Készlet hozzáadása helyekhez
 
@@ -208,3 +205,6 @@ A következő eset egy mobileszköz raktári alkalmazásával végez készlet *k
 
     > [!NOTE]
    > A rendszer minden lépéshez létrehoz egy munkaazonosítót, amelyet végre kell hajtani. Ha olyan helyet ad meg, amely már tartalmaz készletet, csak egy munkaazonosító jön létre. Ha új helyet ad meg, akkor két munkaazonosító jön létre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

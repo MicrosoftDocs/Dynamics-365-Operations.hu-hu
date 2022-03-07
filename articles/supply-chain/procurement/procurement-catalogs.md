@@ -1,28 +1,28 @@
 ---
 title: Beszerzési katalógusok áttekintése
 description: Ez a cikk magas szinten leírja, hogy a beszerzési szakemberek hogyan állíthatnak be és tarthatnak fenn beszerzési katalógusokat. A beszerzési katalógusok határozzák meg a cikkeket és szolgáltatásokat, amelyeket a vállalati alkalmazottak megrendelhetnek belső használat céljából.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, CatDisplayProductRelationAdd
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2214
+ms.custom:
+- "2214"
+- intro-internal
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fcbe55adfc834b6170ca4c2a242d6bff5264ac8a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: efe0541859822b4c6404f2833ae38e07b79dd634
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019779"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984295"
 ---
 # <a name="procurement-catalogs-overview"></a>Beszerzési katalógusok áttekintése
 
@@ -68,10 +68,12 @@ A frissítéseket automatikusan vagy manuálisan teszik közzé, attól függőe
 -   **Mindkét** – Ha a katalógus tartalmaz, megadhat egy alapértelmezett típusának módosítása termékkategóriák **statikus**, akkor kézzel kell frissíteni ezekbe a kategóriákba frissítésekor. Ha a katalógus olyan termékkategóriákat tartalmaz, amelyeknek az alapértelmezett frissítési típusa **Dinamikus**, automatikusan frissül, amennyiben megváltoznak.
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Beszerzési kategóriák hierarchiájának beállítása](tasks/set-up-procurement-category-hierarchy.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

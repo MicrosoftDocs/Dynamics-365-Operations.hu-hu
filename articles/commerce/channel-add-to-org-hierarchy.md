@@ -2,27 +2,24 @@
 title: Csatorna hozzáadása a szervezeti hierarchiához
 description: Ez a témakör azt mutatja be, hogyan lehet egy csatornát hozzáadni egy szervezeti hierarchiához a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 701c90e8e28b4419422cddde698e9c9862a588a2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 64d9c649212eca4dc703e5b80fdf2c3c6a57a61745fc440b0650d7796a4d06e3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412825"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720983"
 ---
 # <a name="add-a-channel-to-an-organizational-hierarchy"></a>Csatorna hozzáadása a szervezeti hierarchiához
 
@@ -47,7 +44,7 @@ Hierarchia kiválasztásához kövesse az alábbi lépéseket.
 
 A következő kép a szervezeti hierarchia részletes adatait jeleníti meg a kiválasztott hierarchiában.
 
-![Szervezeti hierarchia részletes adatai a kiválasztott hierarchiában](media/channel-add-to-org-hierarchy-1.png)
+![Szervezeti hierarchia részletes adatai a kiválasztott hierarchiában.](media/channel-add-to-org-hierarchy-1.png)
 
 ## <a name="add-a-channel-to-a-hierachy-node"></a>Csatorna hozzáadása egy hierarchia-csomóponthoz
 
@@ -61,17 +58,17 @@ Csatorna hozzáadásához egy hierarchia-csomóponthoz tegye a következőket.
 
 A következő képen látható a hierarchia-csomóponthoz hozzáadni kívánt csatorna kiválasztása.
 
-![Csatorna kiválasztása a hierarchia-csomóponthoz való hozzáadásra](media/channel-add-to-org-hierarchy-2.png)
+![Csatorna kiválasztása a hierarchia-csomóponthoz való hozzáadásra.](media/channel-add-to-org-hierarchy-2.png)
 
 A következő kép egy olyan hierarchiát mutat, amelyben különböző csatornák kerültek hozzáadásra.
 
-![Hierarchia különböző hozzáadott csatornákkal](media/channel-add-to-org-hierarchy-3.png)
+![Hierarchia különböző hozzáadott csatornákkal.](media/channel-add-to-org-hierarchy-3.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Csatornák áttekintése](channels-overview.md)
 
-[Csatornák beállításának előfeltételei](channels-prerequisites.md)
+[Csatorna beállításainak előfeltételei](channels-prerequisites.md)
 
 [Szervezetek és szervezeti hierarchiák áttekintése](../fin-ops-core/fin-ops/organization-administration/organizations-organizational-hierarchies.md?toc=/dynamics365/commerce/toc.json)
 
@@ -82,3 +79,6 @@ A következő kép egy olyan hierarchiát mutat, amelyben különböző csatorn�
 [Kiskereskedelmi csatorna beállítása](channel-setup-retail.md)
     
 [Online csatorna beállítása](channel-setup-online.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fd4da57c3849095909226db53c23b3c25301acdc
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: a69fd8b7d81700a62ae96d679372b1d6c8a70bbf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021322"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5253206"
 ---
 # <a name="multi-level-assets"></a>Többszintű eszközök
 
@@ -61,3 +61,6 @@ Ha egy eszköz kapcsolódó aleszközökkel rendelkezik, akkor azt csak akkor t�
 
 > [!NOTE]
 > Ha ezzel az eljárással nem lehet törölni egy eszközt, egy másik módszer a törlés kezelésére, hogy egy eszközéletciklus-állapotot állítson be erre a célra. Beállíthat például egy **Selejtezett** vagy **Törölt** életciklus-állapotot az **Eszköz életciklus-állapotai** oldalon.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

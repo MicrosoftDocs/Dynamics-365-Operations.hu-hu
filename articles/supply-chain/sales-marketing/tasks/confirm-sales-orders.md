@@ -1,27 +1,24 @@
 ---
 title: Értékesítési rendelések megerősítése
 description: Ez az eljárás bemutatja, hogyan kell az értékesítési rendeléseket megerősíteni.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesTable, SalesEditLines,  SrsReportViewerForm, CustConfirmJournal, SysQueryForm, SysQueryFieldLookUp, SysLookup, SalesParmIdLookup, SalesUnconfirmedOrdersPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d6476271689feaaa00e44f98f17ac34976c46644
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 30396c121b67d1b7095a175d85399ed664f68557
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429326"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572505"
 ---
 # <a name="confirm-sales-orders"></a>Értékesítési rendelések megerősítése
 
@@ -64,3 +61,6 @@ Ez az eljárás bemutatja, hogyan kell az értékesítési rendeléseket megerő
 11. Kattintson az **OK** gombra.
 12. Kattintson az **OK** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

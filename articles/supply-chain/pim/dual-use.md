@@ -1,27 +1,24 @@
 ---
 title: Kettős felhasználású áruk
 description: Ez a témakör azt mutatja be, hogyan lehet nyomon követni a kettős felhasználású árukként azonosított termékeket, tárolni az összes érintett termék és célország esetében a tanúsítványok számait, valamint kinyomtatni a megfelelő számlákra, szállítólevelekre és/vagy értékesítési rendelésekre vonatkozó érvényes tanúsítványok számát.
-author: dasani-madipalli
-manager: tfehr
+author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: COODualUseCerts, COORules, COODualUseCountries
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-07-15
-ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 8f2b738fd87219be383b103eaf5fafeb971fc702
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.9
+ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429717"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570753"
 ---
 # <a name="dual-use-goods"></a>Kettős felhasználású áruk
 
@@ -108,3 +105,6 @@ A **kettős felhasználású tanúsítványok** lapon állíthatja be és kezelh
     | Nyomtatás számlára | Jelölje be ezt a jelölőnégyzetet, ha a megadott dátumtartomány során a megadott országnak címzett számlákra rá szeretné nyomtatni a tanúsítvány számát. |
     | Nyomtatás szállítólevélre | Jelölje be ezt a jelölőnégyzetet, ha a megadott dátumtartomány során a megadott országnak címzett szállítólevelekre rá szeretné nyomtatni a tanúsítvány számát. |
     | Nyomtatás az értékesítési rendelésre | Jelölje be ezt a jelölőnégyzetet, ha a megadott dátumtartomány során a megadott országnak címzett értékesítési rendelésekre rá szeretné nyomtatni a tanúsítvány számát. |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

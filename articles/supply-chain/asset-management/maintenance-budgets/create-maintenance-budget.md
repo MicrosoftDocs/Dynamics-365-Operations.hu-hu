@@ -1,12 +1,10 @@
 ---
 title: Karbantartási költségvetések létrehozása
 description: Ez a témakör azt mutatja be, hogyan lehet a karbantartási költségvetést létrehozni az Eszközkezelés modulban.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetBudgetLineAdjust, EntAssetBudget, EntAssetBudgetRecalc, EntAssetBudgetCopy, EntAssetBudgetLine, EntAssetBudgetCreate, EntAssetBudgetApprove, EntAssetBudgetCalculateActualCost
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 602a00060c1e56285d9954981d019bececaf90fd
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: a375eb7c208479615b2d5e7cf78168ffd7ac8b16c52c85a7ef5a41aa69c947d5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020989"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776944"
 ---
 # <a name="create-maintenance-budgets"></a>Karbantartási költségvetések létrehozása
 
@@ -52,9 +50,12 @@ A karbantartási költségvetések alapját az Eszközkezeléshez használt köl
     > [!NOTE]
     > A karbantartási költségvetés jóváhagyása után nem lehet újraszámolni vagy módosítani a kapcsolódó sorokat a **Karbantartás költségvetési sorok** lapon, hacsak nem törli a jóváhagyást. A karbantartási költségvetés jóváhagyásának visszavonásához jelölje ki a **Karbantartási költségvetések** lapon, majd válassza a **Jóváhagyás** parancsot. Ezután kattintson a **Költségvetési jóváhagyása** párbeszédpanelen az **OK** gombra.
 
-![Karbantartási költségvetések](media/01-maintenance-budgets.png)
+![Karbantartási költségkeretek.](media/01-maintenance-budgets.png)
 
 Új karbantartási költségvetés egy meglévő költségvetés másolásával is létrehozhat. A **Karbantartási költségvetések** lapon válassza ki a másolandó költségvetést, majd válassza a **Másolás** parancsot. Ez a megközelítés akkor lehet hasznos, ha például egy hónapra már létrehoztak egy költségvetést, és át szeretné másolni más hónapokra.
 
 > [!NOTE]
 > A karbantartási költségvetés csak a karbantartási ütemezés sorai alapján számítja ki a költségvetési költségeket. Ha ugyanarra az időszakra vonatkozóan szeretné kiszámítani a tényleges költségeket, akkor ezt az **Eszközköltség ellenőrzése** lapon teheti meg. 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

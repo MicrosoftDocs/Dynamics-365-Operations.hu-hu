@@ -1,12 +1,10 @@
 ---
 title: Eszközök telepítése munkavégzési helyszínekre
 description: Ez a cikk azt ismerteti, hogyan telepíthetők eszközök a munkavégzési helyszínekre az Eszközök kezelése szolgáltatásban.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationObjectChange, EntAssetFunctionalLocationObjectInstall, EntAssetFunctionalLocationObject
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5ea67e2392d8e25a2a5f3cb7e1ff5032322f2c48
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 818c7eb86851047fa333fd4df11c8c7534c2a06b
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022030"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839703"
 ---
 # <a name="install-assets-on-functional-locations"></a>Eszközök telepítése munkavégzési helyszínekre
 
@@ -82,3 +80,6 @@ Ha a beállítási adatok elérhetők, létrehozhatja az eszközöket.
 1. Az **Összes munkavégzési helyszín** oldalon ellenőrizze, hogy az a munkavégzési helyszín, amelyen automatikusan létre szeretné hozni az eszközt, az erre a célra létrehozott típusba tartozik-e.
 2. Válassza ki a munkavégzési helyszínt a listában.
 3. Válassza ki a **Munkavégzési helyszín állapotának frissítése** lehetőséget, majd az erre a célra létrehozott életciklus-állapotot. Egy eszköz automatikusan települ a munkavégzési helyszínen. Az eszköz neve megegyezik majd a munkavégzési helyszínével.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: 175 százalékos degresszív értékcsökkenés
-description: Ez a témakör áttekintést nyújt az értékcsökkenés 175 százalékos delegáló módszerével kapcsolatban.
-author: moaamer
+description: Ez a témakör a 175 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
+author: saraschi2
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: ''
@@ -12,21 +12,21 @@ ms.reviewer: roschlom
 ms.custom: 13911
 ms.assetid: cc5d001f-bcfe-4602-9ec1-9e265e9fd188
 ms.search.region: Global
-ms.author: moaamer
+ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 99bd47192d389c373b29a98f5344e1e0c1ab04e6
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
-ms.translationtype: MT
+ms.openlocfilehash: f0747c34a4b28340227209adadf367f672deb1ab
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883263"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5827146"
 ---
 # <a name="175-percent-reducing-balance-depreciation"></a>175 százalékos degresszív értékcsökkenés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör áttekintést nyújt az értékcsökkenés 175 százalékos delegáló módszerével kapcsolatban.
+Ez a témakör a 175 százalékos degresszív értékcsökkenési módszerről nyújt áttekintést.
 
 Amikor beállít egy tárgyieszköz-értékcsökkenési profilt és kijelöli a **175% degresszív** értéket a **Mód** mezőben az **Értékcsökkenési profilok** lapon, akkor a tárgyi eszközök, amelyek az értékcsökkenési profilokhoz vannak rendelve értékcsökkenése ugyanazzal százalékos értékkel lesz egyenlő, ami az egyes értékcsökkenési időszakoknál szerepel. 
 

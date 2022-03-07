@@ -1,56 +1,59 @@
 ---
 title: Juttatási jogosultság feldolgozása
 description: Ez az eljárással bemutatja, hogyan működik a juttatásjogosultsági folyamat.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+author: twheeloc
+ms.date: 11/03/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysPolicySourceDocumentRuleType, SysPolicyListPage, SysPolicy, HcmBenefitEligibilityPolicy, HcmBenefit, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: d23dcf4a16979b14ddf58b54e812f21e6698dfc7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 16a866cb35aacb3b6bece0d6adde6bb5978bd4fc
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418769"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066018"
 ---
 # <a name="benefit-eligibility-process"></a>Juttatási jogosultság feldolgozása
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
 Ez az eljárással bemutatja, hogyan működik a juttatásjogosultsági folyamat. A folyamat befejeztével megtekintheti az eredményt. Ez az eljárás az USMF bemutatócéget használja.
 
-1. Ugorjon az Emberi erőforrások > Juttatások > Juttatások pontra.
+1. Menj **Emberi Erőforrások \> Előnyök \> Előnyök**.
 2. Keresse meg és jelölje ki a kívánt rekordot a listán.
-3. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-4. Kattintson a Szerkesztés lehetőségre.
-5. Az Alkalmazhatóság mezőben válassza ki a „Szabályalapú” lehetőséget.
-6. A Szabály típusa mezőben válassza ki a juttatási irányelvszabály, amelyet alkalmazni szeretne a juttatásra.
-7. A Műveleti ablaktáblán kattintson a Juttatás lehetőségre.
-8. A Jogosultsági esemény létrehozása gombra kattintva megnyithatja a legördülő párbeszédablakot.
-9. Írjon be egy értéket az Esemény típusa mezőbe.
-10. Írjon egy értéket a „Leírás” mezőbe.
-11. Válasszon a „Felvétel megnyitása” lehetőséget az Eseménytípus mezőben.
-12. A Fedezet kezdő dátuma mezőben adjon meg egy dátumot és időpontot.
-13. A Felvétel kezdő dátuma mezőben adjon meg egy dátumot és időpontot.
-14. Adjon meg egy számot a Napok a felvétekig mezőben.
-15. Kattintson az esemény létrehozása elemre.
-16. Kattintson a Hozzáadás elemre a Dolgozók gyorslapon.
-17. A Mutatás típus szerint mezőben válassza a „Dolgozók” lehetőséget.
-18. A Mutatás jogi személy szerint mezben válassza az „Aktuális Jogi személy” lehetőséget.
+3. A listában válassza ki a kiválasztott sorból a hivatkozást.
+4. Válassza ki a **Szerkesztés** opciót.
+5. Ban,-ben **Jogosultság** mezőben válassza ki **Szabály alapú**.
+6. Ban,-ben **Szabály típusa** mezőben válassza ki a juttatásra alkalmazni kívánt juttatási szabályzatot.
+7. A Műveleti ablakban válassza a lehetőséget **Haszon**.
+8. Válassza ki **Jogosultsági esemény létrehozása**.
+9. A legördülő párbeszédpanelen a **Esemény** mezőbe írjon be egy értéket.
+10. A **Leírás** mezőben adjon meg egy értéket.
+11. Ban,-ben **Esemény típus** mezőben válassza ki **Nyitott jelentkezés**.
+12. Ban,-ben **A fedezet kezdő dátuma** mezőbe írja be a dátumot és az időt.
+13. Ban,-ben **A jelentkezési időszak kezdő dátuma** mezőbe írja be a dátumot és az időt.
+14. Ban,-ben **Napok a beiratkozásig** mezőbe írjon be egy számot.
+15. Válassza ki **Esemény létrehozása**.
+16. A **Munkások** FastTab, válassza ki **Hozzáadás**.
+17. Ban,-ben **Megjelenítés típus szerint** mezőben válassza ki **Alkalmazottak**.
+18. Ban,-ben **Megjelenítés jogi személy szerint** mezőben válassza ki **Jelenlegi jogi személy**.
 19. A listában jelölje meg az összes sort, vagy törölje a jelölésüket.
-20. Kattintson az OK gombra.
-21. Kattintson a Folyamat gombra.
-22. Kattintson az OK gombra.
+20. Válassza ki az **OK** lehetőséget.
+21. Válassza ki **Folyamat**.
+22. Válassza ki az **OK** lehetőséget.
 23. Frissítse a lapot..
-24. Kattintson az Eredmények mutatása elemre.
-25. Nyissa meg az Állapot oszlopszűrőt.
-26. Rendezés ábécérendben
+24. Válassza ki **Eredmények mutatása**.
+25. Nyissa meg a **Állapot** oszlopszűrő.
+26. Rendezze az oszlopot A-tól Z-ig.
 
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

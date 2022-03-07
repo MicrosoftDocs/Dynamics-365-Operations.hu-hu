@@ -1,12 +1,10 @@
 ---
 title: Beszerzésekkel és forrásokkal kapcsolatos munkafolyamatok
 description: Egyes szervezetekben szükséges, hogy a beszerzési igényléseket és beszerzési rendeléseket jóváhagyja egy olyan felhasználó, aki más, mint a tranzakciót rögzítő felhasználó. A jóváhagyási folyamat beállításához munkafolyamatot hozhat létre.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowTableListPageRnr
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2074
 ms.assetid: e54a1d59-b9fb-421b-821d-01f32878aa9b
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af614b7f29144d02a853ef15b008f2a21d3d3aa5
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 126e9969f312ff7f6a6c64b733708754e7659214
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019754"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5909231"
 ---
 # <a name="procurement-and-sourcing-workflows"></a>Beszerzésekkel és forrásokkal kapcsolatos munkafolyamatok
 
@@ -49,7 +47,7 @@ A következő munkafolyamat-típusok elérhetőek a Beszerzés és forrás modul
 | Szállítói hozzáadás alkalmazás-munkafolyamata | Ellenőrzési és jóváhagyási munkafolyamatok létrehozása új szállítók hozzáadásához a szállítói kérelmeken keresztül. |
 
 > [!IMPORTANT]
-> Új munkafolyamat hozzáadásakor a következő elavult munkafolyamatok is megjelenhetnek a **Munkafolyamat létrehozása** párbeszédpanelen. Ezek a korábban a [Dynamics AX 2012](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows) szolgáltatásban elérhető *bevételezés megerősítése* funkcióhoz kapcsolódtak, amelyek mostanra elavultak. Ezek a munkafolyamatok jelenleg nem támogatottak.
+> Új munkafolyamat hozzáadásakor a következő elavult munkafolyamatok is megjelenhetnek a **Munkafolyamat létrehozása** párbeszédpanelen. Ezek a korábban a [Dynamics AX 2012](/dynamicsax-2012/appuser-itpro/set-up-procurement-and-sourcing-workflows) szolgáltatásban elérhető *bevételezés megerősítése* funkcióhoz kapcsolódtak, amelyek mostanra elavultak. Ezek a munkafolyamatok jelenleg nem támogatottak.
 > 
 > - Szállítási határidőkkel kapcsolatos értesítési munkafolyamat
 > - A számla megérkezéséről értesítő munkafolyamat
@@ -79,3 +77,6 @@ Jóváhagyási lépéseket rendelhet a következő résztvevőcsoportokhoz.
 - [Üzleti folyamatok munkafolyamatainak meghatározása beszerzési igénylések számára](https://www.microsoft.com/download/details.aspx?id=101821)
 - [Beszerzési igénylési munkafolyamat](purchase-requisitions-workflow.md)
 - [Szállítók felvétele](vendor-onboarding.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Dátum szerinti súlyozott átlag
 description: A dátum szerinti súlyozott átlag elvű készletmodell a súlyozott átlag elven alapul, amelyben a készletből történő kiadásokat a készletzárási időszak egyes napjain a készletbe bevételezett cikkek átlagos értékével súlyozzák.
 author: AndersGirke
-manager: tfehr
 ms.date: 10/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5df497a8590c6d60a5f0bc39469cf048c3448572
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 56a6462d948abe3d96efa97b59c91dcf987b56c131970d6a1a57f8752a70b213
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4963738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719647"
 ---
 # <a name="weighted-average-date"></a>Dátum szerinti súlyozott átlag
 
@@ -41,7 +39,7 @@ Súlyozott átlag = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 +
 
 A készlet zárása során a számítás minden nap lefut a zárási időszak alatt, ahogy az alábbi ábrán is látható. 
 
-![Dátummal súlyozott átlagos napi számítási modell](./media/weightedaveragedatedailycalculationmodel.gif) 
+![Dátummal súlyozott átlagos napi számítási modell.](./media/weightedaveragedatedailycalculationmodel.gif) 
 
 A készletkiadásokat hagyó készlettranzakciók, például az értékesítési rendelések, készletnaplók, beszerzési jóváírások és termelési rendelések a feladás dátumakor becsült átlagos önköltségi áron kerülnek be a rendszerbe. Ezt a becsült önköltségi árat más néven mozgóátlagon alapuló önköltségi árnak is nevezik. A készletzárás napján a rendszer elemzi az előző időszak, előző napok és az adott nap készlettranzakcióit. Az elemzéssel meghatározható hogy az alábbiak közül melyik zárási elv használata szükséges:
 
@@ -74,7 +72,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 -   2b. Pénzügyi kiadás készletről, 2 mennyiséggel, egyenként 10,00 USD áron.
 -   3. A közvetlen elszámolási módszer alkalmazásával készletzárás történik a pénzügyi készlet bevételezés elszámolására a pénzügyi készletkiadással szemben.
 
-![Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a Tényleges értékkel együtt beállítás nélkül](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
+![Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a Tényleges értékkel együtt beállítás nélkül.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Az ábra jelmagyarázata:**
 
@@ -128,7 +126,7 @@ A rendszer előállítja és feladja az összesített készletmozgási tranzakci
 
 Az alábbi ábrán ez a tranzakciósorozat, és a súlyozott átlag készletmodell használatának hatása látható, továbbá az összesített tartozáskiegyenlítés elv a **Tényleges értékkel együtt** lehetőség nélkül. 
 
-![Dátummal súlyozott átlagot alkalmazó összesített elszámolás a Tényleges értékkel együtt beállítás nélkül](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+![Dátummal súlyozott átlagot alkalmazó összesített elszámolás a Tényleges értékkel együtt beállítás nélkül.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Az ábra jelmagyarázata**
 
@@ -177,7 +175,7 @@ Kiadási tranzakciót a tranzakció feladása előtt jelölhet hozzá egy nyugt�
 
 Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg. A következő ábrán a tranzakciók sorozata látható, és a súlyozott átlag dátumon alapuló készletmodell és jelölés folyamatra gyakorolt hatását ábrázolja.
 
-![Dátummal súlyozott átlag jelöléssel](./media/weightedaveragedatewithmarking.gif) 
+![Dátummal súlyozott átlag jelöléssel.](./media/weightedaveragedatewithmarking.gif) 
 
 **Az ábra jelmagyarázata:**
 
@@ -195,3 +193,6 @@ Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

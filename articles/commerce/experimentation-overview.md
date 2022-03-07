@@ -2,28 +2,24 @@
 title: Kísérletezés a Dynamics 365 Commerce rendszerben
 description: A kísérletezés lehetővé teszi az oldal-elrendezések és tartalmak létrehozását, szerkesztését és kezelését a webhelykészítőben. A kísérletezés teljes körű támogatása biztosított az e-commerce oldalakhoz és az oldalon belül található entitásokhoz.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 85eb7a661cc66c42699797cca4fa6820941de7c0
-ms.sourcegitcommit: cd83f2bc0e52e13071ad306e07e4c255fc65cb03
-ms.translationtype: HT
+ms.openlocfilehash: 292a8934e735c76389e36603a708fd2a1bbf7691
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "4413001"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986541"
 ---
 # <a name="experimentation-in-dynamics-365-commerce"></a>Kísérletezés a Dynamics 365 Commerce szolgáltatásban
 A Dynamics 365 Commerce szolgáltatáson belüli kísérletezést az e-kereskedelmi oldalak hatékonyságával kapcsolatos hipotézisek igazolására, valamint adatokra alapozott döntések meghozatalára alkalmazhatja. A Commerce támogatja az oldalakon, modulokon és töredékeken végzendő A/B tesztelést, valamint lehetővé teszi a webhellyel összefüggésben javasolt változtatások hatásának felmérését.
@@ -42,7 +38,7 @@ A Commerce webhelykészítőben oldal- és tartalomkezeléseket hozhat létre, s
 ## <a name="experimentation-lifecycle"></a>A kísérletezés életciklusa
 A kísérletek beállítása, változatok létrehozása és a kísérletek lefolytatása egy ismétlődő folyamatot alkot. A következő ábra a kísérletezés életciklusát mutatja be a Commerce modulban és a harmadik fél szolgáltatásokban. 
 
-[ ![A kísérletezés életciklusa](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
+[ ![A kísérletezés életciklusa.](./media/experimentation_lifecycle.svg) ](./media/experimentation_lifecycle.svg#lightbox)
 
 A kísérletezési folyamat egyes lépéseivel kapcsolatos további tudnivalókat lásd a következő témakörökben.
 - [Hipotézis meghatározása és mérőszámok megadása egy kísérlethez](experimentation-identify.md)
@@ -57,3 +53,6 @@ A kísérletezési folyamat egyes lépéseivel kapcsolatos további tudnivalóka
 
 ## <a name="next-step"></a>Következő lépés
 [Hipotézis meghatározása és sikerességi mérőszámok megadása egy kísérlethez](experimentation-identify.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Preferált karbantartási dolgozók beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet előnyben részesített karbantartási dolgozókat beállítani az Eszközkezelés modulban.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkerPreferred
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ab36d9fde0cc6e864f21f9ebd09834f5098c1913
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: 511d875baed029df9083da36baf6c48ca4b7abf866ae569038b554bf594473c8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021404"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734427"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Preferált karbantartási dolgozók beállítása
 
@@ -67,3 +65,6 @@ Beállíthat *felelős* karbantartási dolgozókat is, akiket ki lehet választa
 
 A munkarendelés ütemezése során a program különböző pontszámokat számít ki annak meghatározására, hogy melyik dolgozók kapják a munkarendeléshez kapcsolódó feladatokat (ezeket a pontszámokat az **Eszközkezelés paraméterei** > **Munkarendelés ütemezése** hivatkozásra kattintva tekintheti meg). Ha a munkarendelés ütemezése során több preferált karbantartási dolgozó vagy felelős karbantartási dolgozó kap ugyanakkora pontszámot, akkor a rendszer véletlenszerűen választ. Ellenkező mindig a legmagasabb pontszámú dolgozó lesz hozzárendelve a munkarendeléshez.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

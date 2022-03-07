@@ -2,15 +2,12 @@
 title: Példány másolása
 description: A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatással átmásolhat egy Microsoft Dynamics 365 Human Resources-adatbázist egy védőfalkörnyezetbe.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,16 +15,18 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 40ca0a4d9733fc2a163daa4ea1c27a3bfae6d3bf
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
-ms.translationtype: HT
+ms.openlocfilehash: 22aa33135535d543eb8fe437821cab7a4865d6df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4527837"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060831"
 ---
 # <a name="copy-an-instance"></a>Példány másolása
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 A Microsoft Dynamics Lifecycle Services (LCS) szolgáltatással átmásolhat egy Microsoft Dynamics 365 Human Resources-adatbázist egy védőfalkörnyezetbe. Ha van másik tesztkörnyezete, akkor abból a környezetből is másolható az adatbázis a célként kiválasztott tesztkörnyezetbe.
 
@@ -39,9 +38,9 @@ Egy példány másolásához tartsa szem előtt a következő tanácsokat:
 
 - A célkörnyezetben rendszergazdának kell lennie ahhoz, hogy a példány másolása után bejelentkezhessen.
 
-- A Human Resources adatbázisának másolása során nem másolja át a Microsoft Power Apps környezetben található elemeket (alkalmazásokat vagy adatokat). A Power Apps-környezet elemeinek másolásával kapcsolatos tudnivalókat lásd: [Környezet másolása](https://docs.microsoft.com/power-platform/admin/copy-environment). A felülírni kívánt Power Apps -könyezetnek védőfalkörnyezetnek kell lennie. A Power Apps éles környezet védőfalkörnyezetbe történő módosításához globális bérlői rendszergazdának kell lennie. A Power Apps-környezet módosításával kapcsolatos további tudnivalókat lásd: [Példány váltása](https://docs.microsoft.com/dynamics365/admin/switch-instance).
+- A Human Resources adatbázisának másolása során nem másolja át a Microsoft Power Apps környezetben található elemeket (alkalmazásokat vagy adatokat). A Power Apps-környezet elemeinek másolásával kapcsolatos tudnivalókat lásd: [Környezet másolása](/power-platform/admin/copy-environment). A felülírni kívánt Power Apps -könyezetnek védőfalkörnyezetnek kell lennie. A Power Apps éles környezet védőfalkörnyezetbe történő módosításához globális bérlői rendszergazdának kell lennie. A Power Apps-környezet módosításával kapcsolatos további tudnivalókat lásd: [Példány váltása](/dynamics365/admin/switch-instance).
 
-- Ha példányát egy tesztkörnyezetbe másolja , és szeretné integrálni a tesztkörnyezetét a Common Data Service szolgáltatással, akkor újra kell alkalmaznia az egyéni mezőket a Common Data Service-entitásokra. Lásd: [Egyéni mezők alkalmazása a Common Data Service-szolgáltatásra](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
+- Ha példányát egy tesztkörnyezetbe másolja , és szeretné integrálni a tesztkörnyezetét a Dataverse szolgáltatással, akkor újra kell alkalmaznia az egyéni mezőket a Dataverse-táblákra. Lásd: [Egyéni mezők alkalmazása a Dataverse-szolgáltatásra](hr-admin-setup-copy-instance.md?apply-custom-fields-to-common-data-service).
 
 ## <a name="effects-of-copying-a-human-resources-database"></a>A Human Resources-adatbázis másolásának hatásai
 
@@ -53,9 +52,9 @@ A Human Resources-adatbázis másolásakor a következő események történnek:
 
 - A Microsoft Azure Blob-tárolóban lévő dokumentumok nem kerülnek át egyik környezetből a másikba. Ennek megfelelően a rendszer nem másolja a csatolt dokumentumokat és sablonokat, és a forráskörnyezetben maradnak.
 
-- Az összes felhasználó elérhetetlen lesz a rendszergazdai felhasználó és az egyéb belső szolgáltatási felhasználói fiókok kivételével. A Rendszergazda felhasználó törölheti vagy álcázhatja az adatokat, mielőtt a többi felhasználó visszakerül a rendszerbe.
+- A "Rendszergazda" biztonsági szerepkörrel rendelkező felhasználók és más belső szolgáltatási felhasználói fiókok kivételével egyik felhasználó sem lesz elérhető. A Rendszergazda felhasználó törölheti vagy álcázhatja az adatokat, mielőtt a többi felhasználó visszakerül a rendszerbe.
 
-- A Rendszergazda felhasználónak végre kell hajtania a szükséges konfigurációs változtatásokat, például az integrációs végpontok újracsatlakoztatását meghatározott szolgáltatásokhoz vagy URL-címekhez.
+- A "Rendszergazda" biztonsági szerepkörrel rendelkező felhasználóknak el kell végezniük a szükséges konfigurációs módosításokat, például az integrációs végpontok újrakapcsolását bizonyos szolgáltatásokhoz vagy URL-címekhez.
 
 ## <a name="copy-the-human-resources-database"></a>Human Resources-adatbázis másolása
 
@@ -72,15 +71,15 @@ A feladat végrehajtásához először másolja a példányt, majd jelentkezzen 
 
 4. A **Példány másolása** munkaablakban válassza ki azt a példányt, amelyet felül szeretne írni, majd válassza a **Másolás** parancsot. Várjon, amíg a **Másolás állapota** mező értéke **Kész** értékre módosul.
 
-   ![[Felülírandó példány kiválasztása](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
+   ![[Válassza ki a felülírandó példányt.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
 5. Válassza ki a **Power Platform** lehetőséget, majd jelentkezzen be a Microsoft Power Platform Admin Centerbe.
 
-   ![[Válassza a Power Platform lehetőséget](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
+   ![[Válassza ki Power Platform .](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Válassza ki a másolni kívánt Power Apps-környezetet, majd válassza a **Másolás** parancsot.
 
-7. A másolási folyamat befejezése után jelentkezzen be a célpéldányba, és engedélyezze a Common Data Service-integrációt. További tudnivalókért és utasításokért lásd: [A Common Data Service-integráció konfigurálása](https://docs.microsoft.com/dynamics365/talent/hr-common-data-service-integration).
+7. A másolási folyamat befejezése után jelentkezzen be a célpéldányba, és engedélyezze a Dataverse-integrációt. További tudnivalókért és utasításokért lásd: [A Dataverse-integráció konfigurálása](./hr-admin-integration-common-data-service.md).
 
 ## <a name="data-elements-and-statuses"></a>Adatelemek és állapotok
 
@@ -112,7 +111,7 @@ Néhány elemet nem másolt át a program, mert környezetspecifikusak. Ilyenek 
 
 Ezenkívül a következő állapotok módosulnak egy példány másolásakor:
 
-- A rendszergazda kivételével minden felhasználó **Letiltva** állapotban van.
+- A "Rendszergazda" biztonsági szerepkörrel rendelkező felhasználók kivételével minden felhasználó **Letiltott** állapotra van beállítva.
 
 - Minden kötegelt feladat – kivéve néhány rendszerfeladatot – **Visszatartás** értékre van állítva.
 
@@ -122,11 +121,11 @@ A cél védőfalkörnyezetében található összes felhasználót, többek köz
 
 A cél-védőfalkörnyezet minden nem rendszergazdai felhasználója le van tiltva, megakadályozva a nem kívánt bejelentkezéseket a védőfalkörnyezetben. Ha szükséges, a rendszergazdák újra engedélyezhetik a felhasználókat.
 
-## <a name="apply-custom-fields-to-common-data-service"></a>Egyéni mezők alkalmazása a Common Data Service-szolgáltatásra
+## <a name="apply-custom-fields-to-dataverse"></a>Egyéni mezők alkalmazása a Dataverse-szolgáltatásra
 
-Ha példányát egy tesztkörnyezetbe másolja , és szeretné integrálni a tesztkörnyezetét a Common Data Service szolgáltatással, akkor újra kell alkalmaznia az egyéni mezőket a Common Data Service-entitásokra.
+Ha példányát egy tesztkörnyezetbe másolja , és szeretné integrálni a tesztkörnyezetét a Dataverse szolgáltatással, akkor újra kell alkalmaznia az egyéni mezőket a Dataverse-táblákra.
 
-Az Common Data Service-entitásokon közzétett egyéni mezők esetében hajtsa végre a következő lépéseket:
+A Dataverse-táblákon közzétett egyéni mezők esetében hajtsa végre a következő lépéseket:
 
 1. Nyissa meg az egyéni mezőt, és válassza a **Szerkesztés** elemet.
 
@@ -140,9 +139,9 @@ Az Common Data Service-entitásokon közzétett egyéni mezők esetében hajtsa 
 
 6. Válassza ismét a **Módosítások alkalmazása** lehetőséget.
 
-A kijelölés törlése, változtatások alkalmazása, kijelölés újra, és változtatások ismételt alkalmazása arra utasítja a sémát, hogy frissítsen a Common Data Service-szolgáltatásban, hogy tartalmazza az egyéni mezőket.
+A kijelölés törlése, változtatások alkalmazása, kijelölés újra, és változtatások ismételt alkalmazása arra utasítja a sémát, hogy frissítsen a Dataverse-szolgáltatásban, hogy tartalmazza az egyéni mezőket.
 
-További információkért az egyéni mezőkről lásd: [Egyéni mezők létrehozása és felhasználása](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/get-started/user-defined-fields).
+További információkért az egyéni mezőkről lásd: [Egyéni mezők létrehozása és felhasználása](../fin-ops-core/fin-ops/get-started/user-defined-fields.md).
 
 ## <a name="see-also"></a>Lásd még
 
@@ -150,3 +149,6 @@ További információkért az egyéni mezőkről lásd: [Egyéni mezők létreho
 [Példány eltávolítása](hr-admin-setup-remove-instance.md)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

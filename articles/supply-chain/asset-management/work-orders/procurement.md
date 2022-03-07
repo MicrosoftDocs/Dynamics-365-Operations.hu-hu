@@ -1,12 +1,10 @@
 ---
 title: Beszerzés
 description: Ez a témakör az Eszközkezelésben történő beszerzést ismerteti.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderPurchaseListPagePreviewPane, EntAssetWorkOrderPurchaseListPage, EntAssetWorkOrderPurchaseLineAmountInfoPart, EntAssetWorkOrderPurchReqListPage
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fce60f6ac2ac0dabe1c0ecd804a1dec1e7e373a2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: 2b5e160beb4743db2530b91020f21b686d84237b17cfa7ff7f0cc1da97695d08
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020204"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743650"
 ---
 # <a name="procurement"></a>Beszerzés
 
@@ -99,3 +97,6 @@ A lenti ábra egy példát mutat a **Beszerzési rendelés** oldalára, amelynek
 
 Hasonlóan, a beszerzési igénylési sorhoz kapcsolódó tevékenység számának megtekintéséhez vagy megadásához válassza ki a beszerzési rendelés rekordját a **Beszerzési rendelés igénylése** listaoldalon, majd a **Beszerzési rendelés** oszlopában válassza ki a beszerzési rendelés hivatkozását. A **Tevékenység száma** mező a **Sor részletei** gyorslap **Projekt** lapján található.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

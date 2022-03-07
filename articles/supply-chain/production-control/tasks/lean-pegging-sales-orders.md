@@ -1,28 +1,25 @@
 ---
 title: Lean igénykövetés az értékelési rendelésekből
 description: Ez az eljárás arra irányul, hogy ellenőrizze az igénykövetési fát egy olyan értékesítési sorból, ahol a cikk létrehozása kanbanokkal történik.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, LeanPeggingTree
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e429fef6101f611d7a2c1b5323d6fe1e39d1cdd3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8eca21f8bd988ca352c07e839295b3edd9669929
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429485"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580624"
 ---
 # <a name="lean-pegging-from-sales-orders"></a>Lean igénykövetés az értékelési rendelésekből
 
@@ -57,3 +54,6 @@ Ez az eljárás arra irányul, hogy ellenőrizze az igénykövetési fát egy ol
 5. A fán válassza ki a következőt: „Értékesítési sor: 000832\Kanban: 000558\Kiadás: L0001\Kanban: 000559”.
     * A második kanbanhoz tartozó feladat szintén tervezett, mivel az egész igénykövetési fa tervezett. Figyelje meg, hogy a kanbanfeladat állapota megváltozott: Nem tervezett helyett Tervezett lett.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

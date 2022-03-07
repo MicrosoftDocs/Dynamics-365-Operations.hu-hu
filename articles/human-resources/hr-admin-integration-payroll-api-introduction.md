@@ -7,34 +7,31 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.custom: intro-internal
+ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4c71d31d7045c73097b81671793181a29dcac3b5
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: e6d8a1cb9619a863184460a74e472af3f06934b6
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064941"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6058560"
 ---
 # <a name="payroll-integration-api-introduction"></a>Bérlista-integrációs API bemutatása
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Ez a dokumentum a Dynamics 365 Human Resources bérszámfejtés integrációs API-ját írja le. Az API leegyszerűsített integrációt tesz lehetővé a Human Resources és a partneri bérlistarendszerek között. Az integrált tapasztalat a Human Resourcesban az alkalmazotti profillal, a fizetéssel és a levonással, valamint a hozzájárulási adatokkal kezdődik. Amikor alkalmazottat szerződtet, és beviszi a szükséges profilt és fizetési adatokat a Human Resourcesba, a bérszámfejtő rendszer ezeket az adatokat a bérlista feldolgozásához használja. A program az alkalmazottra vonatkozó frissítéseket vagy fizetési adatokat későbbi fizetési futtatás során is lekéri használatra.
 
-[![Bérlista-integrációs folyamat.](media/hr-admin-integration-payroll-api-introduction-flow.png)](media/hr-admin-integration-payroll-api-introduction-flow-2.png#lightbox)
+![Bérlista-integrációs folyamat](media/hr-admin-integration-payroll-api-introduction-flow.png)
 
 Az integráció engedélyezéséhez a Human Resources alkalmazás a következő összetevőket tartalmazza:
 
-- [Az alkalmazott fizetésre készként való megjelöléséhez használható funkció.](hr-compensation-payroll.md)
-- Integrációs API, amely az új funkciókat megnyitja az alkalmazások integrálása előtt.
+- Az alkalmazott fizetésre készként való megjelöléséhez használható funkció
+- Integrációs API, amely megnyitja az alkalmazások integrálásának új funkcióját
 
 ## <a name="microsoft-dataverse"></a>Microsoft Dataverse
 
@@ -63,7 +60,7 @@ Az API virtuális tábláinak létrehozásáról lásd: [Dataverse virtuális t�
 
 A következő ábra az API-n belüli kapcsolatokat illusztrálja. Különböző típusok idegen kulcsokkal rendelkeznek egyéb, itt nem ábrázolt, a Human Resources rendszerben már létező entitásokhoz kapcsolódóan. Ez a dokumentum a bérszámfejtési integrációs helyzetekre jellemző entitásokkal kapcsolatban tartalmaz tájékoztatást. A Human Resources rendszer Dataverse webes API-jában azonban számos más entitás is releváns lehet az integráció szempontjából. Ezen entitások közül néhányra az idegenkulcs-kapcsolatok vagy navigációs tulajdonságok hivatkoznak.
 
-[![Bérszámfejtés-integráció az API adatmodell használatával.](media/hr-admin-payroll-api-data-model.png)](media/hr-admin-payroll-api-data-model.png#lightbox)
+![Bérszámfejtés-integráció az API adatmodell használatával](media/hr-admin-payroll-api-data-model.png)
 
 ## <a name="payroll-employee-and-related-entities"></a>Bérszámfejtési alkalmazott és kapcsolódó entitások
 
@@ -71,8 +68,7 @@ Entitások:
 
 - [Bárlista alkalmazottja](hr-admin-integration-payroll-api-payroll-employee.md)
 - [Bérlista dolgozói címe](hr-admin-integration-payroll-api-payroll-worker-address.md)
-- [Fix kompenzációs konstrukció bérlistája](hr-admin-integration-payroll-api-payroll-fixed-compensation-plan.md)
-- [Változó kompenzációs konstrukció bérlistája](hr-admin-integration-payroll-api-payroll-variable-compensation-plan.md)
+- [Fix kompenzációs konstrukció bérlistája](hr-admin-integration-ats-api-recruiting-request-education.md)
 - [Bérlista szerinti beosztás feladata](hr-admin-integration-payroll-api-payroll-position-job.md)
 - [Bérlista szerinti beosztás](hr-admin-integration-payroll-api-payroll-position.md)
 

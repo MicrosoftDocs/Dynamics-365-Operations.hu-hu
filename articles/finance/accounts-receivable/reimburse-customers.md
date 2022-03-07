@@ -2,28 +2,25 @@
 title: Visszatérítés vevőknek
 description: Ez a cikk ismerteti a vásárlók egy csoportját érintő visszatérítési tranzakciók létrehozásának folyamatát. Ha a vevőnek követel egyenlege van, visszatéríthet a vevőnek az egyenleg összegéért.
 author: JodiChristiansen
-manager: AnnBe
 ms.date: 09/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14191
 ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65ee884fb22c1a38e2d3022085fed7e3e6077d1f
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
-ms.translationtype: HT
+ms.openlocfilehash: 0c313c03c6f3504f132a836eb6a67207e5f3c5636d43124c5f16d13992b9b604
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4644537"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6770761"
 ---
 # <a name="reimburse-customers"></a>Visszatérítés vevőknek
 
@@ -49,3 +46,6 @@ A visszatérítési tranzakciók létrehozásakor a szállítói számla a köve
 
 5. A létrehozott visszatérítési tranzakciók megtekintéséhez használja a **Visszatérítési** jelentést (**Kinnlevőségek \> Lekérdezések és jelentések \> Visszatérítési jelentés**).
 6. A kötelezettségekben hozzon létre kifizetést a szállítói számlákhoz, amelyek a bevételezési folyamat során jöttek létre. A szállítók kifizetéséről a [Szállítói kifizetések áttekintése](../accounts-payable/Vendor-payments-workspace.md) című témakörben olvashat.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 02aee8c6ec3b2720c2fcbb17f15791d88d688a34
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
-ms.translationtype: MT
+ms.openlocfilehash: ba8f20e7b4ca6579016fa60d0bbf69f7b4e9c7d3
+ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323761"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "7605361"
 ---
 # <a name="debug-data-sources-of-an-executed-er-format-to-analyze-data-flow-and-transformation"></a>Egy végrehajtott ER formátum hibakeresési adatforrásai az adatfolyam elemzéséhez és átalakításához
 
@@ -28,7 +28,7 @@ ms.locfileid: "8323761"
 
 [!include[banner](../includes/preview-banner.md)]
 
-Amikor egy elektronikus jelentéskészítési (ER) megoldást [konfigurál](tasks/er-format-configuration-2016-11.md) kimenő dokumentumok létrehozásához meghatározhatja azt a módszert, amellyel a rendszer adatokat kérhet le az alkalmazásból, majd a létrehozott kimeneti fájlba illesztheti őket. Az ER-megoldás életciklus-támogatása érdekében a megoldásnak egy ER-adatmodellből és hozzárendelési összetevőiből, valamint egy ER-formátumból, valamint megfeleltetési összetevőkből kell állnia, hogy a modellleképezés alkalmazásspecifikus legyen, míg más összetevők alkalmazásspecifikusak maradnak. Emiatt ER számos összetevő hatással lehet az adatok beviteli folyamatára a létrejövő kimenetben.
+Amikor egy elektronikus jelentéskészítési (ER) megoldást [konfigurál](tasks/er-format-configuration-2016-11.md) kimenő dokumentumok létrehozásához meghatározhatja azt a módszert, amellyel a rendszer adatokat kérhet le az alkalmazásból, majd a létrehozott kimeneti fájlba illesztheti őket. Ha hatékonyabbá szeretné tenni az ER-megoldás életciklus-támogatását, a megoldásnak egy ER [adatmodellből](general-electronic-reporting.md#DataModelComponent) és annak [leképezési](general-electronic-reporting.md#ModelMappingComponent) összetevőiből kell állnia , valamint egy ER [formátumból](general-electronic-reporting.md#FormatComponentOutbound) és annak leképezési összetevőiből, így a modell-leképezés alkalmazásspecifikus legyen, míg a többi komponens alkalmazásól független maradjon. Emiatt ER számos összetevő [hatással lehet](general-electronic-reporting.md#FormatComponentOutbound) az adatok beviteli folyamatára a létrejövő kimenetben.
 
 Előfordulhat, hogy a létrejövő kimenet adatai eltérően jelennek meg az alkalmazás adatbázisában szereplő ugyanezen adatoktól. Ezekben az esetekben meg kell határozni, hogy melyik ER-összetevő felelős az adatok átalakításáért. Az ER-adatforrás-hibakereső funkció jelentősen csökkenti a vizsgálathoz szükséges időt és költségeket. Az ER-formátum végrehajtását félbeszakíthatja, és megnyithatja az adatforrás-hibakereső felületét. Itt böngészhet az elérhető adatforrások között, és kiválaszthat egy egyedi adatforrást a végrehajtáshoz. Ez a manuális végrehajtás egy ER-formátum tényleges futtatásakor szimulálja az adatforrás végrehajtását. Az eredmény olyan oldalon jelenik meg, ahol elemezni lehet a kapott adatokat.
 
@@ -190,9 +190,9 @@ Ha ER-megoldást szeretne használni egy elektronikus fizetési fájl generálá
 
 A kiválasztott ER-formátumon kívül a következő [konfigurációkat](general-electronic-reporting.md#Configuration) automatikusan importálni kell a Microsoft Dynamics 365 Finance példányba az **ISO20022-átutalás** ER-megoldás részeként:
 
-- **Fizetési modell** ER adatmodell-konfigurációja
-- **ISO20022 Jóváírás ER formátumának** konfigurálása
-- **Fizetési modell hozzárendelése 1611** ER modell leképezésének konfigurációja
+- **Fizetési modell** [ER adatmodellkonfiguráció](general-electronic-reporting.md#DataModelComponent)
+- **ISO20022 átutalás** [ER formátumkonfiguráció](general-electronic-reporting.md#FormatComponentOutbound)
+- **Fizetési modell hozzárendelése 1611** [ER modell leképezésének konfigurációja](general-electronic-reporting.md#ModelMappingComponent)
 - **Fizetési modell hozzárendelése célhelyhez ISO20022** ER modell leképezésének konfigurációja
 
 Ezeket a konfigurációkat az ER keretrendszer **Konfiguráció** lapján lehet megtekinteni (**Szervezeti adminisztráció** \> **Elektronikus jelentéskészítés** \> **Konfigurációk**).

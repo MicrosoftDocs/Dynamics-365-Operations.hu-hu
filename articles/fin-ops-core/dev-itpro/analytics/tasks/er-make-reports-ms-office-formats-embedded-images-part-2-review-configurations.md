@@ -1,12 +1,10 @@
 ---
 title: Konfigurációk megújítása jelentések készítéséhez Office formátumban, beágyazott képekkel
-description: 'A lépések végrehajtásához először végre kell hajtani az „ER – Jelentések létrehozása Microsoft Office-formátumokban, beágyazott képekkel (1. rész: Paraméterek beállítása)” feladat-útmutató lépéseit.'
+description: Ez a témakör azt mutatja be, hogyan tervezhetők jelentéskészítési konfigurációk beágyazott képeket tartalmazó elektronikus dokumentumok létrehozására. (1. rész – Paraméterek beállítása).
 author: NickSelin
-manager: AnnBe
 ms.date: 06/13/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8c41ff1ba99411b97ea2b5d9f31bdee7c7701315
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: de815b363daa9135b50a2f5c9c4ac19e87b6b7ee
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684355"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5751582"
 ---
 # <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Konfigurációk megújítása jelentések készítéséhez Office formátumban, beágyazott képekkel
 
@@ -91,3 +89,6 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
     * Az előre nyomtatott csekk űrlapon megjelenő néhány címke szerepelni fog a jelentésben, amikor létrehozzák tesztelési célra. Azonban ezeket a címkéket a rendszer nem nyomtatja ki a tényleges nyomtatás közben, mert az előre nyomtatott űrlap már tartalmazza őket.  
 15. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

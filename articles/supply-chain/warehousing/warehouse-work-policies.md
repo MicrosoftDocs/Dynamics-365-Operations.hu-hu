@@ -2,34 +2,31 @@
 title: Munkairányelvek
 description: Ez a témakör ismerteti a munkával kapcsolatos irányelvek beállítását.
 author: perlynne
-manager: tfehr
 ms.date: 07/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkPolicy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-07-31
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 08c04caeace7b8ced40915ace1561d817426cba3
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 1d4ee3f1bffaf00c20758f6a3f399451d3122291
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429929"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571161"
 ---
 # <a name="work-policies"></a>Munkairányelvek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani a rendszert és a raktári alkalmazást úgy, hogy támogassák a munkairányelveket. Ez a funkció a beszerzési vagy átmozgatási rendelések fogadása, illetve a termelési folyamatok befejezése esetén a készlet gyors regisztrálására használható, eltárolási munka létrehozása nélkül. Ez a témakör általános tájékoztatást tartalmaz. Az azonosítótábla-beszerzéssel kapcsolatos részletes információk: [Azonosítótábla-bevételezés a raktári alkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md).
+Ez a témakör azt mutatja be, hogyan lehet beállítani a rendszert és a Raktárkezelés mobilalkalmazást úgy, hogy támogassák a munkairányelveket. Ez a funkció a beszerzési vagy átmozgatási rendelések fogadása, illetve a termelési folyamatok befejezése esetén a készlet gyors regisztrálására használható, eltárolási munka létrehozása nélkül. Ez a témakör általános tájékoztatást tartalmaz. Az azonosítótábla-beszerzéssel kapcsolatos részletes információk: [Azonosítótábla-bevételezés a Raktárkezelés mobilalkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md).
 
-A munkairányelvek azt vezérlik, hogy a gyártott cikk készként jelentésekor vagy a raktári alkalmazásba történő bevételezéskor történik-e a raktári munka létrehozása. Minden munkairányelvet úgy állíthat be, hogy meghatározza a feltételeket: a munkarendelés-típusokat és folyamatokat, a készlet helyét és a termékeket (ha van). Például egy beszerzési rendelést az *A0001* terméknél el kell fogadni a *RECV* helyen a *24*-es raktárban. Később a termék egy másik folyamatban lesz felhasználva a *RECV* helyen. Ebben az esetben munkairányelvet állíthat be, amellyel megakadályozhatja, hogy az eltárolási munka létrejöjjön, amikor egy dolgozó jelenti a beérkezett *A0001* terméket a *RECV* helyen.
+A munkairányelvek azt vezérlik, hogy a gyártott cikk készként jelentésekor vagy a Raktárkezelés mobilalkalmazásba történő bevételezéskor történik-e a raktári munka létrehozása. Minden munkairányelvet úgy állíthat be, hogy meghatározza a feltételeket: a munkarendelés-típusokat és folyamatokat, a készlet helyét és a termékeket (ha van). Például egy beszerzési rendelést az *A0001* terméknél el kell fogadni a *RECV* helyen a *24*-es raktárban. Később a termék egy másik folyamatban lesz felhasználva a *RECV* helyen. Ebben az esetben munkairányelvet állíthat be, amellyel megakadályozhatja, hogy az eltárolási munka létrejöjjön, amikor egy dolgozó jelenti a beérkezett *A0001* terméket a *RECV* helyen.
 
 > [!NOTE]
 > - Ahhoz, hogy egy munkairányelv aktív legyen, legalább egy helyet meg kell határozni a **Munkairányelvek** lap **Készlethelyek** gyorslapján. 
@@ -203,7 +200,7 @@ A beszerzési rendelés fogadva, de nincs hozzárendelve munka. Az aktuális ké
 
 A következő példában két termelési rendelés szerepel: a *PRD-001* és a *PRD-002*. A *PRD-001* termelési rendeléshez egy *Összeszerelés* nevű művelet tartozik, ahol az *SC1* termék a jelentés szerint elkészült leszállításra a *001* helyre. A *PRD-002* termelési rendeléshez egy *Festés* nevű művelet tartozik, ami felhasználja az *SC1* terméket a *001* helyről. A *PRD-002* termelési rendelés *RM1* nyersanyagot is felhasznál a *001* helyről. A Nyersanyag *RM1* tárolása a *BULK-001* raktári helyszínen történik, és kitárolásra kerül a *001* helyre a nyersanyag-kitárolási raktári munka segítségével. A kitárolási munka akkor jön létre, amikor a *PRD-002* termelés kiadásra kerül.
 
-[![Raktári munkairányelvek](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
+[![Raktári munkairányelvek.](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png)
 
 Amikor raktári munkairányelv konfigurálását tervezi ehhez az esethez, vegye figyelembe a következő információkat:
 
@@ -298,6 +295,9 @@ Amikor a termelési rendelést készként jelentik, a rendszer nem hoz létre mu
 
 A mobileszköz-menüelemek beállításával kapcsolatos további tudnivalókat lásd: [Mobileszközök beállítása raktári munkához](configure-mobile-devices-warehouse.md).
 
-Az azonosítótábla-beszerzéssel és a munkairányelvekkel kapcsolatos részletes információk: [Azonosítótábla-bevételezés a raktári alkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md).
+Az azonosítótábla-beszerzéssel és a munkairányelvekkel kapcsolatos részletes információk: [Azonosítótábla-bevételezés a Raktárkezelés mobilalkalmazás használatával](warehousing-mobile-device-app-license-plate-receiving.md).
 
 További információ a bejövő rakományok kezeléséről: [Beszerzési rendelések bejövő rakományának kezelése a raktárban](inbound-load-handling.md).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,36 +2,30 @@
 title: Jogi személyek létrehozása
 description: Ez a témakör azt mutatja be, hogyan lehet jogi személyeket létrehozni a Microsoft Dynamics 365 Commerce szolgáltatásban, amelyet a csatornák létrehozása előtt létre kell hozni és be kell állítani.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 28cbcc42505f1dc90c420adc812735841541c8e0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: bc5f097a7f941dfa05f4011d9be5caffbb7f01b5f6e67cd7535ef3d1b13f59fe
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412826"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6740431"
 ---
 # <a name="create-legal-entities"></a>Jogi személyek létrehozása
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet jogi személyeket létrehozni a Microsoft Dynamics 365 Commerce szolgáltatásban, amelyet a csatornák létrehozása előtt létre kell hozni és be kell állítani.
-
-## <a name="overview"></a>Áttekintés
 
 A jogi személy olyan szervezet, amely bejegyzett vagy törvényben szabályozott jogi struktúrával rendelkezik. A jogi személyek törvényes szerződéseket köthetnek, teljesítményükről pedig tájékoztató beszámolókat kell készíteniük.
 
@@ -50,7 +44,7 @@ Csatorna létrehozásakor meg kell adnia, hogy melyik jogi személy tartozik a c
 1. Az **Ország/régió** mezőben adjon meg vagy válasszon ki egy értéket.
 1. Válassza ki az **OK** lehetőséget. 
 
-   ![Jogi személy létrehozása](media/legal-entities.png)
+   ![Jogi személy létrehozása.](media/legal-entities.png)
 
 1. Az **Általános** szakaszban adja meg a következő általános információkat a jogi személyről: 
    1. Szükség esetén írja be a keresési nevet. A keresési név olyan másodlagos név, amelynek használatával elvégezheti a keresést a jogi személyre vonatkozóan. 
@@ -73,7 +67,7 @@ Csatorna létrehozásakor meg kell adnia, hogy melyik jogi személy tartozik a c
 
 A következő kép egy példa jogi személy részleteit mutatja.
 
-![Jogi személy általános szakasza](media/legal-entities-general.png)
+![Jogi személy általános szakasza.](media/legal-entities-general.png)
    
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -86,3 +80,6 @@ A következő kép egy példa jogi személy részleteit mutatja.
 [Csatornák áttekintése](channels-overview.md)
 
 [Csatornák beállításának előfeltételei](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Számlastruktúrák létrehozása
-description: Ez az útmutató bemutatja a számlastruktúra létrehozásának folyamatát.
+description: Ez az eljárás végigvezet egy fiókstruktúra létrehozásán.
 author: aprilolson
-manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure, DimensionCreateAccountStructure, DimensionHierarchyAddLevel, DimensionHierarchyConstraintActivate
 audience: Application User
@@ -15,18 +13,18 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4a8df7d7d9c4555bf46ac1cc3f71695837b1369b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: e9ba43e243df4ba4b7c0eb6188629686206ff09b
+ms.sourcegitcommit: 03f53980a4bc67b73ac2be76a3b3e7331d0db705
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968580"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "7394539"
 ---
 # <a name="create-account-structures"></a>Számlastruktúrák létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az útmutató bemutatja a számlastruktúra létrehozásának folyamatát. A lépés a USMF bemutató vállalati adatait használja.
+Ez az eljárás végigvezet egy fiókstruktúra létrehozásán. A lépés a USMF bemutató vállalati adatait használja.
 
 1. Ugrás a következő útvonalra: **Navigációs ablaktábla > Modulok > Főkönyv > Számlatükör > Struktúrák > Számlastruktúrák konfigurálása**.
 2. Az **Művelet ablaktáblán** kattintson az **Új** elemre a legördülő párbeszédpanel megnyitásához.
@@ -60,3 +58,6 @@ Ez az útmutató bemutatja a számlastruktúra létrehozásának folyamatát. A 
 29. A **Művelet panelen** kattintson az **Aktiválás** elemre.
 30. Kattintson az **Aktiválás** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

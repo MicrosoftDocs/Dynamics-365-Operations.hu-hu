@@ -2,16 +2,13 @@
 title: Feltöltés visszavonási kanbanokkal
 description: Ez a témakör a visszavonási kanban használatát írja le gyártási tevékenységek anyagfeltöltéséhez.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanBoardTransferJob, KanbanFlow, KanbanRules, WHSKanbanWaveTable, WHSKanbanWaveTableListPage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0caa0020083138f702e4a1fda457b7075a9c87e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
-ms.translationtype: HT
+ms.openlocfilehash: b90e4699c440d0dd753cd16ff17cf958507e7872138a7f2c2c84f645f713d3db
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742584"
 ---
 # <a name="replenishment-with-withdrawal-kanbans"></a>Feltöltés visszavonási kanbanokkal
 
@@ -33,7 +30,6 @@ ms.locfileid: "4429834"
 Ez a témakör a visszavonási kanban használatát írja le gyártási tevékenységek anyagfeltöltéséhez.
 
 ## <a name="workflow-for-material-replenishment-that-uses-the-withdrawal-kanban"></a>Az visszavonási kanbant használó anyagfeltöltési munkafolyamat
--------------------------------------------------------------------
 
 A visszavonási kanban használatával egy cikk kanbanja mozgatható az anyag felhasználását megvalósító raktárak és termelési helyek között. A visszavonási kanban az anyagfeltöltés lekéréses alapú megoldását támogatja, amelynél lekérési jel szükséges egy adott igény ellátásának kiváltására. 
 
@@ -76,7 +72,7 @@ Ha a raktárak és a termelési bemeneti hely közötti távolság kicsi, haték
 
 A következő forgatókönyv esetében a visszavonási kanban átviteli tevékenysége úgy van konfigurálva, hogy ugyanannak a raktárnak a két helye között végezzen átmozgatást. A visszavonási kanban átviteli tevékenysége úgy van beállítva, hogy automatikusan befejeződjön. 
 
-[![Az átmozgatási tevékenység automatikusan befejeződik a kanban kitárolási munkájának feldolgozásakor](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
+[![Az átmozgatási tevékenység automatikusan befejeződik a kanban kitárolási munkájának feldolgozásakor.](./media/transfer-activities-when-processing-kanban-picking.png)](./media/transfer-activities-when-processing-kanban-picking.png)
 
 1.  A nyersanyag és a termelés raktára megosztott
 2.  Raktárhelyek a nyersanyagnaknak
@@ -87,3 +83,6 @@ A következő forgatókönyv esetében a visszavonási kanban átviteli tevéken
 
 Miután a termelés bemeneti helyén megtörtént a kanban felhasználása, a rendszer üresként jelenti a kanbant, és a rendszer új kanbant ad hozzá a folyamathoz. A kanban létrehozásakor a rendszer hullámsort ad a kanban hullámához. A kanbanhullám feldolgozása után létrejön a kanbankitárolási raktár munka. A raktári dolgozó feldolgozza a kanbankitárolási munkát, és a munka vezérli ahhoz, hogy kitárolja a kanbant a raktári helyen. Amikor az érintett raktári dolgozó megerősíti a kitárolást, a kanban automatikusan befejezett állapotra áll, és a raktári dolgozó utasítást kap az anyag elhelyezésére a termelés bemeneti helyén.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

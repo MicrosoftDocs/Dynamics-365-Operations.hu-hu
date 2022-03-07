@@ -1,94 +1,118 @@
 ---
-title: Kiskereskedelmi csatornák készletelérhetőségének számítása
-description: Ez a témakör azt mutatja be, hogy milyen lehetőségek érhetők el az üzlet és az online csatornák aktuális készletének megjelenítéséhez.
+title: Kiskereskedelmi csatornák készletelérhetőségének kiszámítása
+description: Ez a témakör azt mutatja be, hogyan használhatja a Microsoft Dynamics 365 Commerce szolgáltatást a termékek becsült aktuális elérhetőségét az online és üzleti csatornán.
 author: hhainesms
-manager: annbe
-ms.date: 08/13/2020
+ms.date: 04/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: de4ee98198f441b8f42a8a55aa5ff1015f485234
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: fdf6df7e393bcc401e770bd1b8afcaedcadc2660
+ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412849"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "5937434"
 ---
-# <a name="calculate-inventory-availability-for-retail-channels"></a>Kiskereskedelmi csatornák készletelérhetőségének számítása
+# <a name="calculate-inventory-availability-for-retail-channels"></a>Kiskereskedelmi csatornák készletelérhetőségének kiszámítása
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan használhatja a Microsoft Dynamics 365 Commerce szolgáltatást a termékek becsült aktuális elérhetőségét az online és üzleti csatornán.
 
-## <a name="accuracy-of-calculation"></a>Számítás pontossága
+## <a name="accuracy-of-inventory-availability"></a>Készlet rendelkezésre állásának pontossága
 
-A Commerce több kiszolgálót és adatbázist használ a méretezhetőség és a teljesítmény biztosítására. Ezért fontos, hogy megértse, hogy a pénztár (POS) alkalmazáson keresztül biztosított elérhető készletértékek, az e-kereskedelmi készletelérhetőségi alkalmazásfejlesztői felületek (API-k) és a Kereskedelmi központ aktuális készletre vonatkozó oldalai valós időben nem mindig 100%-os pontosságúak. Ha a termékekhez az online vagy áruházi csatornában létrehozott tranzakciókat még nem szinkronizálták a Kereskedelmi központ kiszolgálójával és adatbázisával, a Kereskedelmi központ aktuális készletre vonatkozó oldalai lehet, hogy nem pontos valós idejű készletértékeket jelenít meg az adott termékekhez. Ha úgy konfigurálta a vállalatot, hogy a Kereskedelmi központ vagy más integrált alkalmazások felhasználói áruházi vagy online raktárban található készletet értékesíthetnek, fogadhatnak, visszaküldhetnek vagy bármilyen módon módosíthatnak, a pénztár vagy az online csatorna lehet, hogy nem rendelkezik minden adattal, ami a cikkek pontos valós idejű készlet megjelenítéséhez szükséges.
+A Commerce több kiszolgálót és adatbázist használ a méretezhetőség és a teljesítmény biztosítására. Ezért fontos, hogy megértse, hogy a pénztár (POS) alkalmazáson keresztül biztosított elérhető készletértékek, az e-kereskedelmi készletelérhetőségi alkalmazásfejlesztői felületek (API-k) és a Kereskedelmi központ aktuális készletre vonatkozó oldalai valós időben nem mindig 100%-os pontosságúak. Ha a termékekhez az online vagy áruházi csatornában létrehozott tranzakciókat még nem szinkronizálták a központtal, a központ aktuális készletre vonatkozó oldalai lehet, hogy nem pontos valós idejű készletértékeket jelenít meg az adott termékekhez. Ha úgy konfigurálta a vállalatot, hogy a központ vagy más integrált alkalmazások felhasználói áruházi vagy online raktárban található készletet értékesíthetnek, fogadhatnak, visszaküldhetnek vagy bármilyen módon módosíthatnak, a pénztár vagy az online csatorna lehet, hogy nem rendelkezik minden adattal, ami a cikkek pontos valós idejű értékének megjelenítéséhez szükséges.
 
-Ez a témakör azokat az adatszinkronizálási folyamatokat mutatja be, amelyek rendszeres futtatásával korlátozható az adatok késleltetése az alkalmazások vagy csatornák között. Fontos azonban, hogy megértse, hogy az üzemeltetési nap során megadott összes rendelkezésre álló adatot becsült értéknek tekinti a rendszer. Ezért ha megpróbálja összehasonlítani azokat az aktuális készlet-adatokat, amelyeket az alkalmazás tényleges fizikai készletként ad meg a polcokon, vagy ha megpróbálja összehasonlítani a pénztárban rendszernél megjelenített aktuális értékeket azon aktuális adatokkal, amelyek ugyanarra a raktárra vonatkoznak a Kereskedelmi központban, az értékek eltérhetnek. Az üzemeltetési nap során ez a különbség várható, és nem tekinthető problémának. Ha ellenőrizni szeretné az adatokat, és biztosítani szeretné, hogy a készletelérhetőségi API-kban és a Kereskedelmi központban megadott értékek megegyeznek az áruház vagy raktár polcain található tényleges fizikai egységekkel, akkor ezt akkor végezheti el leghatékonyabban, amikor az adott napon befejeződtek a csatornaműveletek, és az összes tranzakció megfelelően szinkronizálódott a Kereskedelmi központ és a csatorna között.
+Fontos, hogy megértse, hogy az üzemeltetési nap során megadott összes rendelkezésre álló adatot becsült értéknek tekinti a rendszer. Ezért ha megpróbálja összehasonlítani azokat az aktuális készlet-adatokat, amelyeket az alkalmazás tényleges fizikai készletként ad meg a polcokon, vagy ha megpróbálja összehasonlítani a pénztárban rendszernél megjelenített aktuális értékeket azon aktuális adatokkal, amelyek ugyanarra a raktárra vonatkoznak a központban, az értékek eltérhetnek. Az üzemeltetési nap során ez a különbség várható, és nem tekinthető problémának. Ha ellenőrizni szeretné az adatokat, és biztosítani szeretné, hogy a pénztárban, az API-kban és a központban megadott értékek megegyeznek az áruház vagy raktár polcain található tényleges fizikai egységekkel, akkor ezt akkor végezheti el leghatékonyabban, amikor az adott napon befejeződtek a csatornaműveletek, és az összes tranzakció megfelelően szinkronizálódott a központ és a csatornák között.
 
-## <a name="use-inventory-lookup-apis-for-e-commerce-inventory-availability-requests"></a>Készletkeresési API-k használata e-kereskedelmi készletelérhetőséggel kapcsolatos kérésekhez
+## <a name="channel-side-inventory-calculation"></a>Csatornaoldali készletszámítás
 
-A következő API-k használhatók a termék készletelérhetőségének megjelenítésére, amikor a vevők egy e-kereskedelmi webhelyen vásárolnak.
+A csatornaoldali készletszámítás olyan mechanizmus, amely kiindulási alapként a Kereskedelmi központ utolsó ismert csatornakészlet-adatait veszi figyelembe, majd beleszámítja azokat a további, csatornaoldalon bekövetkezett készletváltozásokat, amelyek nem szerepelnek a kiindulási alapban, és ennek segítségével számítható ki az aktuális készlet szinte valós idejű becsült értéke. 
 
-- **GetEstimatedAvailability** – Használja ezt az API-t, hogy lekérhesse a készlet rendelkezésre állását egy cikkre az eCommerce csatorna raktárában vagy raktáraiban, amik össze vannak kapcsolva az e-Commerce csatorna teljesítése szintjével. Ez az API egy adott keresési területen vagy sugárban található raktárakban is használható, a hosszúsági és a szélességi adatok alapján.
-- **GetEstimatedProductWarehouseAvailability** – ezt az API-t használva egy adott raktárból származó cikk készletét kérheti le. Például használhatja a készletelérhetőség megjelenítésére olyan esetekben, amelyben rendelésfelvétel szerepel.
+A csatornaoldali készletszámítási logikában jelenleg a következő készletváltozások vannak figyelembe véve:
 
-> [!NOTE]
-> Ezek az API-k helyettesítik a **GetProductAvailabilities** és **GetAvailableInventoryNearby** API-kat a Dynamics 365 Retail 10.0.7-es és korábbi verzióiban.
+- Az üzletben készpénzzel kifizetett és azonnal átvett rendelésekkel értékesített készlet
+- Üzletben vagy online csatornán keresztül, vevői rendelések által értékesített készlet
+- Az üzletnek visszaküldött készlet
+- Az üzlet raktárából teljesített (kitárolt, csomagolt, szállított) készlet
 
-Mindkét API az adatokat a Commerce kiszolgálóról kéri le, és becslést nyújt egy termék vagy termékváltozat és egy raktár egyedi kombinációjára vonatkozó tényleges készletről. Bár más, a Commerce-kiszolgálón elérhető API-k közvetlenül a Kereskedelmi központból is lekérhetik a termékek tényleges készletmennyiségeit, nem javasoljuk ezek e-kereskedelmi környezetben való használatát a lehetséges teljesítményproblémák miatt, és a gyakori kérések Kereskedelmi központ-kiszolgálókra tett kapcsolt hatása miatt. Ezenkívül ha a tényleges készletet a Commerce kiszolgálón keresztül számítják, akkor a számítások nagyobb valószínűséggel tartalmaznak olyan készletet, amelyeket közelmúltbéli e-kereskedelmi tranzakciókban értékesítettek, és még nem szinkronizálódtak a Kereskedelmi központtal. Bár előfordulhat, hogy a Kereskedelmi központ nem rendelkezik a tranzakciókkal kapcsolatos adatokkal, a Commerce kiszolgáló és a csatorna adatbázisa igen. Emiatt az adatokat figyelembe veszik, és segítséget nyújthatnak a termék rendelkezésre álló készletének pontosabb becsléséhez.
+A csatornaoldali készletszámítás alkalmazásához előfeltételként a csatorna-adatbázisoknak el kell küldeni egy időszakos pillanatképet a központból származó, a **Termék elérhetősége** feladat által létrehozott adatokról. A pillanatkép a központ azon adatait jeleníti meg, amelyek a termék vagy a termék változatának és a raktárnak egy meghatározott kombinációját jelentik. Ez csak azokat a készlettranzakciókat tartalmazza, amelyek feldolgozása és feladása a központban a pillanatkép készítésekor történt meg, és elképzelhető, hogy valós időben nem 100%-os pontosságú a felosztott kiszolgálókon történő folyamatos értékesítési feldolgozás miatt.
 
-### <a name="get-started-with-e-commerce-calculated-inventory-availability"></a>Az e-kereskedelmi számított készlet elérhetőségének megismerése
+- Ha a készletet egy üzlet egyik termékeként adták el készpénzzel fizetett, azonnal átvett vagy aszinkron ügyfélmegrendelési értékesítés során a pénztáralkalmazásban, a központ nem rendelkezik majd információval azonnal az értékesítés kapcsolódó készletprobléma-tranzakciójáról. A központ az ilyen típusú üzleti értékesítések során eladott készletekkel kapcsolatban csak azután kap információt, miután a P-feladat feltöltötte a kapcsolódó tranzakciót az üzlet csatorna-adatbázisából a központba, és a kapcsolódó értékesítési rendelések létrejönnek kimutatásfeladás vagy folyamatos apránkénti közzétételi folyamatok során. A rendelések központban történő létrehozási folyamata létrehozza a kapcsolódó készlettranzakciókat. 
+- Az e-kereskedelmi csatorna megrendelései esetén a központ csak azután rendelkezik információkkal a készlettranzakciókról, miután a tranzakciókat elküldték a központba a P-feladaton keresztül, és a rendelések szinkronizálási folyamata befejeződött.
 
-Mielőtt használja a korábban említett két API-t, engedélyeznie kell az **Optimalizált termékelérhetőségi számítás** funkciót a **Funkciókezelés** munkaterület segítségével, a Commerce Headquartersben.
-
-Mielőtt az API-k kiszámolhatnák egy cikk készletelérhetőségének legjobb becslését, először fel kell dolgozni a Kereskedelmi központ készletelérhetőségre vonatkozó időszakos pillanatképét, és elküldeni az e-kereskedelem Commerce Scale Unit modulja által használt csatorna-adatbázishoz. A pillanatkép a Kereskedelmi központ azon adatait jeleníti meg, amelyek a termék vagy a termék változatának és a raktárnak egy meghatározott kombinációját jelentik. Itt szerepelhetnek készletmódosítások vagy -mozgatások, amelyeket készletbevételezések, szállítmányok vagy más olyan folyamatok okoztak, amelyeket a Kereskedelmi központban hajtottak végre, és az e-kereskedelmi csatorna csak a szinkronizálási folyamat révén tud róla.
-
-A **Termékelérhetőség** feladat által létrehozott adatbázis-pillanatkép csak az olyan készlettranzakciókat számítja ki, amelyeket a pillanatkép készítésekor a Kereskedelmi központban feldolgoztak és feladtak. Ha a készletet egy üzletraktár egyik termékeként adták el készpénzzel fizetett, azonnal átvett vagy aszinkron ügyfélmegrendelési értékesítés során a pénztáralkalmazásban, a Kereskedelmi központ nem rendelkezik majd azonnal az értékesítés kapcsolódó készletprobléma-tranzakciójáról. Az ilyen típusú üzleti értékesítések során eladott készletekkel kapcsolatban csak azután kap információt, miután a P-feladat feltöltötte a kapcsolódó tranzakciót az üzlet csatorna-adatbázisából a Kereskedelmi központba, és a kapcsolódó értékesítési rendelés létrejön kimutatásfeladás vagy folyamatos apránkénti közzétételi folyamatok során. A rendelésnek a Kereskedelmi központban történő létrehozási folyamata létrehozza a kapcsolódó készlettranzakciókat. Az e-kereskedelmi csatorna megrendelései esetén a Kereskedelmi központ csak azután rendelkezik információkkal a készlettranzakciókról, miután a tranzakciókat elküldték a Kereskedelmi központba a P-feladaton keresztül, és a rendelések szinkronizálási folyamata befejeződött. Ezért fontos, hogy megértse, hogy a **Termékelérhetőség** feladatban megadott készlet-pillanatkép értéke nem biztos, hogy 100%-ban pontos valós időben a felosztott kiszolgálókon történő folyamatos értékesítésfeldolgozás miatt.
-
-Ha a Kereskedelmi központ alkalmazásban szeretné pillanatképet készíteni a készletről, hajtsa végre az alábbi lépéseket.
+Ha a központ alkalmazásban szeretné pillanatképet készíteni a készletről, hajtsa végre az alábbi lépéseket.
 
 1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem IT \> Termékek és készlet \> Termékelérhetőség** lehetőségre.
 1. Válassza az **OK** gombot a **Termékelérhetőség** feladat futtatásához. Ez a feladat ütemezhető úgy is, hogy egy kötegben fusson.
 
-A **Termékelérhetőség** feladat futásának befejeződése után a rögzített adatokat közzé kell tenni az e-kereskedelmi csatorna-adatbázisokba, hogy a legújabb Kereskedelmi központ-készletpillanatképet figyelembe vehessék a becsült tényleges készlet számításakor.
+A **Termék elérhetősége** feladat futásának befejeződése után a rögzített adatokat közzé kell tenni az e-kereskedelmi csatorna-adatbázisokba, hogy a legújabb központból származó készletpillanatképet figyelembe vehessék a becsült tényleges készlet csatornaoldali számításakor.
+
+A központból származó pillanatképadatoknak a csatorna-adatbázisokba való szinkronizálásához kövesse ezeket a lépéseket.
 
 1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra.
-1. Futtassa az **1130** (**Termékelérhetőség**) feladatot a pillanatkép-adatok szinkronizálásához, amelyeket a **Termékelérhetőség** feladat hozott létre a Kereskedelmi központból a csatorna-adatbázisaiba.
+1. Futtassa az **1130** (**Termékelérhetőség**) feladatot a pillanatkép-adatok szinkronizálásához, amelyeket a **Termékelérhetőség** feladat hozott létre a központból a csatorna-adatbázisaiba.
 
-Amikor a készlet rendelkezésre állása a **GetEstimatedAvailabilty** vagy a **ProductWarehouseInventoryAvailabilities** API-kból lekérhető, egy számítás kerül futtatásra, hogy megpróbálja a legpontosabban megbecsülni a termékből rendelkezésre álló készletet. A számítás bármely olyan e-kereskedelmi vevői rendelésre hivatkozik, amelyek a csatorna-adatbázisban találhatók, de nem szerepelnek az 1130 feladat által biztosított pillanatképadatok között. Ezt a logikát követi a rendszer a legutóbbi feldolgozott készlettranzakció Kereskedelmi központból való nyomon követésével, és a csatorna-adatbázis tranzakciójával való összehasonlításával. Alapértéket ad a csatornaoldali számítási logikához, így a további készletmozgásokat, amelyek az e-kereskedelmi csatorna-adatábis vevői rendelkéseivel kapcsolatos értékesítési tranzakcióknál történtek, a rendszer figyelembe veszi az API által biztosított becsült készletértékben.
+## <a name="inventory-availability-apis-for-e-commerce"></a>Raktárelérhetőségi API-k az e-kereskedelemhez
 
-A csatornaoldali számítási logika becsült ténylegesen elérhető értéket ad vissza, valamint egy teljesen elérhető értéket a kért termékre és raktárra vonatkozóan. Az értékek kívánság szerint megjelenhetnek az e-kereskedelmi webhelyen, vagy felhasználhatók az e-kereskedelmi webhely egyéb üzleti logikájának kiváltására. Megjelenítheti például a "elfogyott" üzenetet, nem pedig a tényleges aktuális készletet, amelyet az API átadott.
+A Commerce a következő, e-kereskedelmi esetekben használt API-k számára biztosítja a termékkészlet rendelkezésre állásának lekérdezését:
 
-A csatornaoldali e-kereskedelmi API-k által a becsült készletértékhez használt számítási logika a készlet értékelésére csak az olyan vevői rendelések alapján képes, amelyeket létrehoztak a csatorna-adatbázisban, de még nem szinkronizálták és adták fel a Kereskedelmi központba. Ha a csatorna-adatbázis készpénzzel fizetett és azonnal átvett értékesítésre vonatkozóan is tartalmaz tranzakciós adatokat az üzletspecifikus raktárnál, a készpénzzel fizetett és azonnal átvett értékesítéseket a rendszer nem számítja bele a csatornaoldali e-kereskedelmi számításnál ezeknél a raktáraknál.
+- **GetEstimatedAvailability** - Ezzel az API-val lekérdezhető egy termék vagy termékváltozat készlete az online csatorna raktárában vagy raktáraiban, amelyek az online csatorna teljesítési csoportjához kapcsolódnak.
+- **GetEstimatedProductWarehouseAvailability** – Ezzel az API-val lekérhető egy termék vagy termékváltozat készlete egy megadott raktárból.
 
-## <a name="configure-the-inventory-lookup-operation-in-the-pos-channel"></a>Készletkeresési művelet konfigurálása a pénztárcsatornában
+> [!NOTE]
+> Ezek az API-k helyettesítik a **GetProductAvailabilities** és **GetAvailableInventoryNearby** API-kat a Commerce 10.0.7-es és korábbi verzióiban.
 
-A Retail 10.0.9-es és korábbi verzióiban a pénztár **Készletkeresés** művelete valós idejű Kereskedelmi központba irányuló szolgáltatáshívást használt a kiválasztott termék készletinformációinak lekéréséhez, mind a felhasználó aktuális üzletéhez, mint bármely más, a teljesítési csoporthoz az üzlet csatornakonfigurációjának részeként konfigurált üzletekhez. A Commerce 10.0.10 és újabb verzióiban kikapcsolhatja a Kereskedelmi központba irányuló valós idejű szolgáltatáshívásokat. Ehelyett használhatja a Commerce kiszolgálón a csatornaoldali számítást a tényleges készlet megállapításához, amely ténylegesen elérhető az üzlet és más helyek számára, amelyeket meghatároztak a teljesítési csoportban. Ez a csatorna által számított készletkonfiguráció olyan helyeknél is hasznos, ahol az internetkapcsolat nem megbízható, mert nem kell online lennie a készletkeresések fogadásához a Kereskedelmi központból.
+Mindkét API belsőleg használja a csatornaoldali számítási logikát, és visszaadja a kért termékre és raktárra vonatkozó becsült **elérhető aktuális** mennyiséget, **elérhető teljes** mennyiséget, **mértékegységet** és **készletszintet**. A visszaadott értékek kívánság szerint megjelenhetnek az e-kereskedelmi webhelyen, vagy felhasználhatók az e-kereskedelmi webhely egyéb üzleti logikájának kiváltására. Meg lehet akadályozni például a „nincs készleten” készletszinttel rendelkező termékek megvásárlását.
 
-Amikor a csatornaoldali számítást helyesen konfigurálták és kezelték, megbízhatóbb becslést biztosíthat az aktuális üzletkészletről, mivel a Kereskedelmi csatorna-adatbázisban található tranzakciós adatokat használ, amelyről a Kereskedelmi központ még lehet, hogy nem tud. Ha például a pénztár készletkereséseire vonatkozó meglévő valós idejű szolgáltatáshívást használja, a Kereskedelmi központ valószínűleg még nem rendelkezik az információval a termékkel éppen történt készpénzzel fizetett és azonnal átvett értékesítésről. Így a Kereskedelmi központ által az adott termékre vonatkozóan visszadatott tényleges készlet értéke valószínűleg meghaladja az üzlet aktuális tényleges készletét egy egységgel. Ha viszont a csatornaoldali számítást használja, akkor a készpénzzel fizetett és azonnal átvett értékesítést a rendszer beleszámítja a számításba, és levonja a megjelenő tényleges értékből. Annak ellenére, hogy a csatornaoldali számítás és a valós idejű szolgáltatáshívások által biztosított értékek is csak a tényleges készlet becslését jelentik, a csatornaoldali számítás által adott érték nagyobb valószínűséggel pontos az aktuális üzletre nézve.
+Bár más, a Commerce-ben elérhető API-k közvetlenül a központból is lekérhetik a termékek tényleges készletmennyiségeit, nem javasoljuk ezek e-kereskedelmi környezetben való használatát a lehetséges teljesítményproblémák miatt, és a gyakori kérések központi kiszolgálókra tett kapcsolt hatása miatt. Ezenkívül a csatornaoldali számítás során a két fent említett API pontosabb becslést nyújthat a termékek elérhetőségével kapcsolatban, figyelembe véve a csatornákban létrehozott tranzakciókat, amelyek még nem ismertek a központ számára.
 
-### <a name="get-started-with-pos-channel-side-calculated-inventory-availability"></a>A pénztár csatornaoldali számított készlet elérhetőségének megismerése
+A két API-használatához engedélyeznie kell az **Optimalizált termékelérhetőségi számítás** funkciót a **Funkciókezelés** munkaterület segítségével, a központban. Ha az online és üzleti csatornák ugyanazt a teljesítési raktárt használják, akkor a **Továbbfejlesztett e-kereskedelmi csatornaoldali készletszámítási logika** funkciót is engedélyeznie kell, hogy a csatornaoldali számítási logika szerepeljen a két API-ban, amellyel figyelembe vehetők a nem feladott tranzakciók (készpénzzel fizetett, azonnal átvett, vevői rendelések, visszáruk), amelyeket az üzlet csatornájában hoztak létre. A funkciók engedélyezése után le kell futtatnia az **1070**-es (**Csatornakonfiguráció**) feladatot.
 
-Hogy használhassa a  csatornaoldali számítási logikát és kikapcsolhassa valós idejű szolgáltatáshívásokat készletkeresésekhez a POS alkalmazásból, először engedélyeznie kell az **Optimalizált termékelérhetőségi számítás** funkciót a **Funkciókezelés** munkaterületen a Commerce Headquartersben. A funkció engedélyezésén kívül módosítania kell a **funkció profilját**.
+A következő lépések szerint adhatja meg, hogyan adja vissza a termékmennyiséget az API kimenete.
 
-A **Funkcióprofil** módosításához az alábbi lépéseket hajtsa végre:
+1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce paraméterek** menüpontra.
+1. Válassza a **Készlet** lapot, majd a **Készlet elérhetősége API-k az e-kereskedelemhez** gyorslapon konfigurálja a **Mennyiség az API kimenetáben** beállítás értékét.
+1. Futtassa az **1070** (**Csatornakonfiguráció**) feladatot a legújabb beállítások csatornákkal való szinkronizálásához.
+
+A **Mennyiség az API kimenetében** beállítás három lehetőséget kínál:
+
+- **Visszadott készletmennyiség** - A kért termék elérhető tényleges és elérhető teljes mennyiségét adja vissza a rendszer az API kimenetében.
+- **Visszaadott készletmennyiség mínusz készletpuffer** – Az API kimenetében visszaadott mennyiség, amelyet a készletpuffer értékének levonásával korrigáltak. További információért a készletpufferrel kapcsolatban lásd: [Készletpufferek és készletszintek konfigurálása](inventory-buffers-levels.md).
+- **Nincs visszaadott készletmennyiség** – Az API kimenete csak a készletszintet adja vissza. További információért a készletszintekkel kapcsolatban lásd: [Készletpufferek és készletszintek konfigurálása](inventory-buffers-levels.md).
+
+A `QuantityUnitTypeValue` API-paraméter használatával lehet megadni, hogy milyen egységtípusban adja vissza az API a mennyiséget. Ez a paraméter támogatja a **készletegység** (alapértelmezett), a **beszerzési egység** és az **értékesítési egység** beállításait. A rendszer a visszaadott mennyiséget a központ megfelelő mértékegységének meghatározott pontosságára kerekíteni.
+
+A **GetEstimatedAvailability** API a következő bemeneti paramétereket kínálja fel a különböző lekérdezési helyzetek támogatása érdekében:
+
+- `DefaultWarehouseOnly`– Ezzel a paraméterrel az online csatorna alapértelmezett raktárában lekérdezhető egy termék készlete. 
+- `FilterByChannelFulfillmentGroup`és `SearchArea` – ennek a két paraméternek a használatával lehet lekérdezni egy termék készletét egy adott keresési terület minden felvételi helyéről a `longitude`, a `latitude` és a `radius` értéke alapján. 
+- `FilterByChannelFulfillmentGroup`és `DeliveryModeTypeFilterValue` – ennek a két paraméternek a használatával lehet lekérdezni egy termék készletét olyan megadott raktárakból, amelyek az online csatorna teljesítési csoportjához vannak kapcsolva, és úgy vannak konfigurálva, hogy támogassanak bizonyos szállítási módokat. A `DeliveryModeTypeFilterValue` paraméter támogatja az **összes** (alapértelmezett), **szállítás** és **átvétel** beállítást. Például olyan helyzetekben, amikor egy online rendelés több szállítási raktárból is teljesíthető, e két paraméter használatával lekérdezhető egy termék készletének elérhetősége az összes ilyen szállítási raktárból. Ebben az esetben az API visszaadja a termék aktuális mennyiségét és készletszintjét az egyes szállítási raktárakban, valamint az összesített mennyiségét és összesített készletszintet a lekérdezés hatókörében szereplő összes szállítási raktárból.
+ 
+A Commerce vásárlásmező, áruházválasztó, kívánságlista, kosár és kosárikon moduljai a fentiek szerint használják fel az API-kat és a paramétereket a készletszinttel kapcsolatos üzenetek megjelenítéséhez az e-kereskedelmi webhelyen. A Commerce-webhelykészítő különféle készletbeállításokat biztosít az árusítás és a beszerzés viselkedésének szabályozásához. További információk: [Készletbeállítások alkalmazása](inventory-settings.md).
+
+## <a name="pos-inventory-lookup-with-channel-side-calculation"></a>Pénztár készletkeresése csatornaoldali számítással
+
+A Commerce 10.0.9-es és korábbi kiadásaiban a pénztár **Készletkeresés** művelete valós idejű központba irányuló szolgáltatáshívást használt a kiválasztott termék készletinformációinak lekéréséhez, mind a felhasználó aktuális üzletéhez, mint bármely más, a teljesítési csoporthoz az üzlet csatornakonfigurációjának részeként konfigurált üzletekhez. A Commerce 10.0.10-es és újabb kiadásaiban kikapcsolhatja a központba irányuló valós idejű szolgáltatáshívásokat, és ehelyett csatornaoldali számítást használhat a Commerce kiszolgálón az aktuális, ténylegesen elérhető készlet megállapításához az üzletre és bármely olyan helyre vonatkozóan, amely meg van határozva a teljesítési csoportban. Ez a csatorna által számított készletkonfiguráció olyan helyeknél is hasznos, ahol az internetkapcsolat nem megbízható, mert nem kell online lennie a készletkeresések fogadásához a központból.
+
+Amikor a csatornaoldali számítást helyesen konfigurálták és kezelték, megbízhatóbb becslést biztosíthat az aktuális üzletkészletről, mivel a Kereskedelmi csatorna-adatbázisban található tranzakciós adatokat használ, amelyről a központ még lehet, hogy nem tud. Ha például a pénztár készletkereséseire vonatkozó meglévő valós idejű szolgáltatáshívást használja, a központ valószínűleg még nem rendelkezik az információval a termékkel éppen történt készpénzzel fizetett és azonnal átvett értékesítésről. Így a központ által az adott termékre vonatkozóan visszadatott tényleges készlet értéke valószínűleg meghaladja az üzlet aktuális tényleges készletét egy egységgel. Ha viszont a csatornaoldali számítást használja, akkor a készpénzzel fizetett és azonnal átvett értékesítést a rendszer beleszámítja a számításba, és levonja a megjelenő tényleges értékből. Annak ellenére, hogy a csatornaoldali számítás és a valós idejű szolgáltatáshívások által biztosított értékek is csak a tényleges készlet becslését jelentik, a csatornaoldali számítás által adott érték nagyobb valószínűséggel pontos az aktuális üzletre nézve.
+
+Ha úgy szeretné konfigurálni a pénztár **Készletkeresés** műveletét a központban, hogy a csatornaoldali számítási logikát használja, és kikapcsolja a valós idejű szolgáltatáshívást, kövesse ezeket a lépéseket.
 
 1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**.
 1. Válasszon funkcióprofilt.
-1. A **Funkciók** gyorslap **Készletelérhetőségi számítás** szakaszában módpsítsa a **Készletelérhetőségi számítás módja** mező értékét **Valós idejű szolgáltatásról** **Csatornára**. Alapértelmezés szerint az összes funkcióprofil valós idejű szolgáltatási hívásokat használ. Ennek megfelelően módosítania kell ennek a mezőnek az értékét, ha csatornaoldali számítási logikát szeretne használni. A módosítás hatással van minden olyan kiskereskedelmi üzletre, amely a kiválasztott funkcióprofilhoz van társítva.
+1. A **Funkciók** gyorslap **Készletelérhetőségi számítás** szakaszában módpsítsa a **Készletelérhetőségi számítás módja** értékét **Valós idejű szolgáltatásról** **Csatornára**. Alapértelmezés szerint az összes funkcióprofil valós idejű szolgáltatási hívásokat használ. Módosítania kell ennek a mezőnek az értékét, ha csatornaoldali számítási logikát szeretne használni. A módosítás hatással van minden olyan kiskereskedelmi üzletre, amely a kiválasztott funkcióprofilhoz van társítva.
 
-Ezután a következő lépések végrehajtásával szinkronizálni kell a csatornán végzett módosításokat az elosztási ütemezési folyamaton keresztül:
+Ezután a következő lépések végrehajtásával szinkronizálni kell a csatornákon végzett módosításokat az elosztási ütemezési folyamaton keresztül a központban.
 
 1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem informatika \> Elosztási ütemezés** pontra.
 1. Futtassa a **1070** (**csatornakonfiguráció**) feladatot.
@@ -103,14 +127,16 @@ A készlet lehető legjobb becslésének biztosításához fontos, hogy a követ
 
 - **P-feladat** – a P-feladat a **felosztási ütemezések** oldalon található, és gyakran kell futtatni. Ez a feladat az e-kereskedelmi rendeléseket, a pénztár által létrehozott aszinkron vevői rendeléseket, és a csatorna-adatbázisokból létrehozott készpénzzel fizetett és azonnal átvett rendeléseket átviszi a a Kereskedelmi központ rendszerbe, amelyek itt tovább feldolgozhatók. Amíg ez az adat szinkronizálva van a csatornáról a a Kereskedelmi központ rendszerbe, a Kereskedelmi központ nem tartalmaz adatokat a raktárak azon termékeihez, amelyek az adott tranzakciókból erednek.
 - **Rendelések szinkronizálása** – ez a feladat a Kereskedelmi központ nyers tranzakciós adatait dolgozza fel, amelyekkel a P-feladat a Kereskedelmi központ értékesítési rendeléseibe az e-kereskedelmi és az aszinkron vevői rendelési tranzakciókat biztosítja és átalakítja. A feladat feldolgozása és az értékesítési rendelések létrehozása előtt nem jönnek létre készlettranzakciók. Ennélfogva a Kereskedelmi központ aktuális készlete nem veszi figyelembe a tranzakciókat.
-- **Tranzakciós kimutatások számítása kötegben** – az üzletben létrejövő készpénzzel fizetett és azonnal átvett tranzakciók esetében a folyamatos, apránkénti feladás folyamata biztosítja, hogy a rendszer az értékesítéshez kapcsolódó készletet hatékonyan frissítse. A készpénzzel fizetett, azonnal átvett rendelésekhez tartozó készlettranzakciók leghatékonyabb feldolgozásához győződjön meg arról, hogy a rendszer a [folyamatos apránkénti feladás](https://docs.microsoft.com/dynamics365/commerce/trickle-feed) használatára van beállítva.
+- **Tranzakciós kimutatások számítása kötegben** – az üzletben létrejövő készpénzzel fizetett és azonnal átvett tranzakciók esetében a folyamatos, apránkénti feladás folyamata biztosítja, hogy a rendszer az értékesítéshez kapcsolódó készletet hatékonyan frissítse. A készpénzzel fizetett, azonnal átvett rendelésekhez tartozó készlettranzakciók leghatékonyabb feldolgozásához győződjön meg arról, hogy a rendszer a [folyamatos apránkénti feladás](./trickle-feed.md) használatára van beállítva.
 - **Tranzakciós kimutatások feladása kötegben** – ez a feladat is szükséges a folyamatos, apránkénti feladáshoz. Ez a **Tranzakciós kimutatások kötegelt kiszámítása** feladatot követi. Ez a feladat rendszeresen feladja a kiszámított kimutatásokat, hogy a Kereskedelmi központban jöjjenek létre a készpénzzel fizetett, azonnal átvett értékesítéshez tartozó értékesítési rendelések, és a Kereskedelmi központ így pontosabban mutassa az üzlet készletét.
 - **Termék elérhetősége** – ez a feladat létrehozza a Kereskedelmi központ-készletből származó készlet pillanatfelvételét.
 - **1130 (termék elérhetősége)** – Ez a feladat az **elosztási ütemezések** oldalon található, és a **termék elérhetősége** feladatát követően azonnal futtatható. Ez a feladat szállítja a készlet-pillanatfelvétel adatait a Kereskedelmi központ rendszerből a csatorna-adatbázisba.
 
-Javasolt, hogy ne futtassa túl gyakran ezeket a kötegelt feladatokat (néhány percenként). A gyakori futtatás túlterheli a Commerce Headquarters (HQ)-t, és jelentős mértékben hatással van a teljesítményre. Általánosan jó gyakorlat a termék elérhetőségének futtatása és 1130 munka végeztetése órabéren, és a P-feladat rendelések szinkronizálásának ütemezése, és a folyamatos, apránkénti feladású munkák azonos, vagy ennél is nagyobb gyakoriságú végeztetése.
-
 > [!NOTE]
-> Teljesítménnyel kapcsolatos okokból, amikor a csatornaoldali készletelérhetőségi számításokkal hoznak létre egy készletelérhetőségi kérést az e-kereskedelmi API-k vagy az új pénztári cstornaoldali készletlogika használatával, a számítás gyorsítótárat használt annak meghatározására, hogy elég idő telt-e el, hogy igazolható legyen a számítási logika újbóli futtatása. Az alapértelmezett gyorsítótár értéke 60 másodperc. Például bekapcsolta az üzlet csatorna-oldali számítását, és megtekintette egy termék tényleges készletét a **készletkeresés** oldalán. Ha a termék egy egységét értékesítik, akkor a **készletkeresés** lapja nem jeleníti meg a csökkentett készletet mindaddig, amíg a gyorsítótár ki nem ürül. Miután a felhasználó feladta a tranzakciókat a pénztárban, várnia kell 60 másodpercig, mielőtt ellenőrizheti, hogy a tényleges készlet csökkent.
+> - Bevált gyakorlat a **Termék elérhetősége** és **1130** feladatok futtatása óránként, és ugyanilyen vagy magasabb gyakorisággal javasolt a P-feladat ütemezése, rendelések szinkronizálása és a feladáshoz kapcsolódó feladatok folyamatos, apránkénti feldolgozása.
+> - Teljesítménnyel kapcsolatos okokból, amikor a csatornaoldali készletelérhetőségi számításokkal hoznak létre egy készletelérhetőségi kérést az e-kereskedelmi API-k vagy a pénztári csatornaoldali készletlogika használatával, a számítás gyorsítótárat használt annak meghatározására, hogy elég idő telt-e el, hogy igazolható legyen a számítási logika újbóli futtatása. Az alapértelmezett gyorsítótár értéke 60 másodperc. Például bekapcsolta az üzlet csatorna-oldali számítását, és megtekintette egy termék tényleges készletét a **készletkeresés** oldalán. Ha a termék egy egységét értékesítik, akkor a **készletkeresés** lapja nem jeleníti meg a csökkentett készletet mindaddig, amíg a gyorsítótár ki nem ürül. Miután a felhasználó feladta a tranzakciókat a pénztárban, várnia kell 60 másodpercig, mielőtt ellenőrizheti, hogy a tényleges készlet csökkent.
 
 Ha az üzleti helyzethez kisebb gyorsítótárazási idő szükséges, forduljon a terméktámogatási szolgálat képviselőjéhez.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

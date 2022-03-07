@@ -2,28 +2,25 @@
 title: Minősítések és értékelések áttekintése
 description: Ez a témakör a Microsoft Dynamics 365 Commerce minősítéseit és értékeléseit mutatja be.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 1248ce660d765ddade1df7d79786202235019990
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8b8d8e838b3c42f7dd02ce4adabcb1f412a3834006ad913e8f40191da751c08d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412964"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765241"
 ---
 # <a name="ratings-and-reviews-overview"></a>Minősítések és értékelések áttekintése
 
@@ -42,7 +39,7 @@ A Dynamics 365 Commerce minősítések és értékelések funkciója egy többcs
 
 A következő ábra bemutatja, hogyan működik a Dynamics 365 Commerce minősítések és a vélemények megoldása.
 
-![Értékelések és vélemények a Dynamics 365 for Commerce megoldásban](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
+![Értékelések és vélemények a Dynamics 365 for Commerce megoldásban.](media/Dynamics-365-Commerce-Ratings-and-Reviews-Overview.jpg)
 
 Az értékelések és vélemények a Dynamics 365 Commerce megoldásban az Azure Cognitive Services szolgáltatásokat kínálja, a sértő szavak automatikus szűrésére 40 nyelven. Mivel az emberi jóváhagyás nem szükséges, a moderálási költségeket csökkenti a program. A rendszer olyan moderátori eszközöket is kínál, amelyek a vevői aggályok, visszajelzések és levételi kérelmek megválaszolására, valamint a felhasználóktól érkező adatkérések megválaszolására is használhatók.
 
@@ -59,3 +56,6 @@ Az értékelések és vélemények megoldás egy üzleti intelligencia (BI) sabl
 [Minősítések és értékelések konfigurálása](configure-ratings-reviews.md)
 
 [A termék minősítések szinkronizálása a következőben: Dynamics 365 Commerce](sync-product-ratings.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

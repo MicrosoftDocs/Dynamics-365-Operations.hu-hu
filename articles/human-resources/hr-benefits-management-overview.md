@@ -2,15 +2,12 @@
 title: Juttatáskezelés áttekintése
 description: A juttatáskezelés funkció áttekintése a Dynamics 365 Human Resources alkalmazásban. Az alkalmazottak számára kiterjesztett juttatási lehetőségeket kínálhat könnyen használható online felületen.
 author: andreabichsel
-manager: AnnBe
-ms.date: 09/17/2020
+ms.date: 04/21/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e2e8fcdd0b6124b459c4dc073e2929418d18bcc5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1b6ace2ce83c668e83ec1b433f8062148a6dfaf4
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418814"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6059064"
 ---
 # <a name="benefits-management-overview"></a>Juttatáskezelés – áttekintés
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A versenyképesség megőrzéséhez juttatások széles választékát kell nyújtania, hogy felkeltse a legjobb alkalmazottak figyelmét, és meg is tudja tartani őket. A szokásos juttatások, például az orvosi és a fogászati biztosítás mellett kiterjesztett szolgáltatásokat is kínálhat, például bevezetési támogatást, rekreációs programokat és ruházati pótlékokat. A Microsoft Dynamics 365 Human Resources juttatáskezelés funkciója rugalmas megoldást kínál, amely a juttatási lehetőségek széles választékát támogatja. A Human Resources szolgáltatás tartalmaz egy egyszerűen használható alkalmazotti felületet is, amelyen bemutathatja az ajánlatait.
 
@@ -40,6 +39,10 @@ A versenyképesség megőrzéséhez juttatások széles választékát kell nyú
 - A minősített életesemények feldolgozása támogatja a jövőbeli életeseményeket.
 
 Ha szeretne hozzáférni a bemutató adatokhoz, újra kell telepítenie a tesztkörnyezetét.
+
+>[!NOTE]
+>Most már testre szabhatja a Juttatások kezelése űrlapot. A juttatási tervek **Fedezeti beállítás** űrlapjához mostantól a fedezeti díjakkal kapcsolatos egyéni mezőket is hozzáadhatja. További információkért az egyéni mezők felhasználásáról lásd: [Egyéni mezők](hr-developer-custom-fields.md).
+>![Juttatások kezelésében egyéni mezők](media/hr-benefits-management-custom-fields.png)
 
 ## <a name="enable-benefits-management"></a>Juttatáskezelés engedélyezése
 
@@ -97,3 +100,6 @@ Néhány módosítását fel kell dolgoznia, hogy aktiválja azokat.
 - [Élettartam-eseményekre vonatkozó jogosultságok feldolgozása](hr-benefits-process-life-event-eligibility.md)
 - [Mértékmódosítás feldolgozása](hr-benefits-process-rate-changes.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

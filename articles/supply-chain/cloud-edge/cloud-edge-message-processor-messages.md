@@ -16,12 +16,12 @@ ms.search.industry: SCM
 ms.author: perlynne
 ms.search.validFrom: 2021-04-21
 ms.dyn365.ops.version: 10.0.19
-ms.openlocfilehash: 68db4c6561f2cc3fcfd64b49da59a4cc164685f2
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 76a3cc316da322c7997072c00780f2fc133bfd2a02274b1e53f5cd06cfb1277e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748859"
 ---
 # <a name="message-processor-messages"></a>Üzenetfeldolgozó üzenetei
 
@@ -29,7 +29,7 @@ ms.locfileid: "8069429"
 
 Az üzenetfeldolgozó üzenetei a felhő- és peremalapú skálázási egységek futtatásakor használatosak a [gyártási munkaterhelések](cloud-edge-workload-manufacturing.md) és a [raktárkezelési munkaterhelések](cloud-edge-workload-warehousing.md) során.
 
-A hub és a scale unit telepítési környezetek nagy mennyiségű adatot cserélnek, hogy szinkronban maradjanak. A kicserélt adatok egy része további logikát vált ki a *üzenetfeldolgozó*. Az üzenetfeldolgozó által feldolgozott üzeneteket a címen tekintheti meg **Rendszerfelügyelet > Üzenetfeldolgozó > Üzenetfeldolgozó üzenetek**.
+Nagy mennyiségű adatcsere történik a központ és a skálázási egységek telepítési környezete között, hogy azok szinkronban legyenek, de az *üzenetfeldolgozó* ezek közül csak néhány adatcserét fog feldolgozni. Az üzenetfeldolgozó által feldolgozott üzeneteket a **Rendszerfelügyelet > Üzenetfeldolgozó > Üzenetfeldolgozó üzenetei** között lehet megtekinteni.
 
 ## <a name="message-grid-columns-and-filters"></a>Üzenetrács oszlopai és szűrői
 
@@ -44,7 +44,7 @@ Az **Üzenetfeldolgozó üzenetei** oldal tetején található mezők segítség
   - *Feldolgozási sorban* – az üzenetfeldolgozó készen áll az üzenet feldolgozására.
   - *Feldolgozva* – az üzenetfeldolgozó sikeresen elvégezte az üzenet feldolgozását.
   - *Megszakítva* – az üzenet feldolgozása megtörtént, de a feldolgozás nem sikerült.
-- **Üzenet tartalma** – Ezzel a szűrővel az üzenet tartalmának teljes szöveges keresését lehet végrehajtani. (Az üzenet tartalma nem jelenik meg a rácsban.) A szűrő a különleges szimbólumokat (például „-”) szóközként kezeli, és az összes szóközkaraktert logikai VAGY operátorként kezeli. Ez azt jelenti például, hogy ha egy „USMF-123456” értékkel megegyező `journalid` értéket keres, a rendszer minden "USMF" vagy "123456" szövege tartalmazó üzenetet megtalál, amely valószínűleg hosszú lista. Így jobb, ha csak a "123456" ot adja meg, mivel ez konkrétabb eredményeket ad vissza.
+- **Üzenet tartalma** – Ezzel a szűrővel az üzenet tartalmának teljes szöveges keresését lehet végrehajtani. (Az üzenet tartalma nem jelenik meg a rácsban.) A szűrő a különleges szimbólumokat (például „-”) szóközként kezeli, és az összes szóközkaraktert logikai VAGY operátorként kezeli. T=Ez azt jelenti például, hogy ha egy „USMF-123456” értékkel megegyező `journalid` értéket keres, a rendszer minden "USMF" vagy "123456" szövege tartalmazó üzenetet megtalál, amely valószínűleg hosszú lista. Így jobb, ha csak a "123456" ot adja meg, mivel ez konkrétabb eredményeket ad vissza.
 
 ## <a name="example-message-type-request-inventory-adjustment-financial-update"></a>Példa üzenettípusra: Készletkorrekció pénzügyi frissítésének kérése
 
@@ -65,7 +65,7 @@ A **Napló** lap eszköztára a következő gombokat tartalmazza:
 
 ## <a name="message-processor-batch-job"></a>Üzenetfeldolgozó kötegelt feladata
 
-Az elosztott hibridtopológia skálázási egységekkel való futtatásakor a rendszer automatikusan elindítja az *Üzenetfeldolgozó* kötegelt feladatot, amikor új üzenetet hoznak létre feldolgozásra, így ezt a feladatot nem kell manuálisan ütemezni.
+Felhő- és peremhálózati telepítés futtatásakor a rendszer automatikusan elindítja az *Üzenetfeldolgozó* kötegelt feladatot, amikor új üzenetet hoznak létre feldolgozásra, így ezt a feladatot nem kell manuálisan ütemezni.
 
 Ha szükséges, a kötegelt feladathoz hozzáférhet a **Rendszerfelügyelet > Üzenetfeldolgozó > Üzenetfeldolgozó** pontban.
 

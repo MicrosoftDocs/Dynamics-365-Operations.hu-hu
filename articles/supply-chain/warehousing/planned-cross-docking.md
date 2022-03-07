@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: fb598b3ac7dd72e8c500f0c2eaf07462009c67f7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 722b004e607cb2e6b7de292d92b67b18c2024696
+ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4970306"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "5556266"
 ---
 # <a name="planned-cross-docking"></a>Tervezett áttárolás
 
@@ -37,12 +37,12 @@ A bejövő rendelés bevételezése idején az áttárolási beállítás automa
 > [!NOTE]
 > A készlettranzakciók **nem** frissülnek, ha az áttárolási munka érvénytelenítve van, még akkor sem, ha a raktárkezelési paraméterekben be van kapcsolva a beállítás ehhez a tulajdonsághoz.
 
-## <a name="turn-on-the-planned-cross-docking-feature"></a>A tervezett áttárolási funkció bekapcsolása
+## <a name="turn-on-the-planned-cross-docking-features"></a>A tervezett áttárolási funkciók bekapcsolása
 
-A speciális tervezett áttárolás használata előtt be kell kapcsolni azt a rendszerben. A rendszergazdák használhatják a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
+Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a következő sorrendben kapcsolja be a következő funkciókat:
 
-- **Modul:** *Raktárkezelés*
-- **Funkció neve:** *Tervezett áttárolás*
+1. *Tervezett áttárolás*
+2. *Áttárolási sablonok helyutasításokkal*
 
 ## <a name="setup"></a>Beállítás
 
@@ -89,6 +89,10 @@ A tervezett áttárolás a rakományok feladási módjaként történik. A funkc
     - **Újraérvényesítés készlet fogadásakor:** *Nem*
 
         Ez a beállítás határozza meg, hogy a készletet a bevételezés során újra kell-e érvényesíteni. Ha ez a beállítás *Igen* értékre van állítva, akkor mind a maximális idő ablak, mind a lejárati napok tartománya be van jelölve.
+
+    - **Utasításkód** Hagyja üresen ezt a mezőt
+
+        Ez a beállítás lehetővé teszi, hogy a rendszer helyadatokat használjon, hogy meghatározza az áttárolási készlet ideális helyét, amelybe áttárolási készletet lehet áthelyezni. Ezt úgy állíthatja be, hogy az egyes áttárolási sablonokhoz egy-egy műveletkódot rendel hozzá. Minden egyes műveletkód egyedi helyutasítási műveletet azonosít.
 
     - **Ellenőrzési időablak:** *Igen*
 
@@ -315,3 +319,6 @@ Jelenleg mindkét munkaazonosítónak ugyanaz a cél azonosítótáblája. A kö
 A következő ábra bemutatja, hogy hogyan jelenhet meg a teljesített áttárolási munka a Microsoft Dynamics 365 Supply Chain Management rendszerben.
 
 ![Áttárolási munka befejezve](media/PlannedCrossDockingWork.png "Áttárolási munka befejezve")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

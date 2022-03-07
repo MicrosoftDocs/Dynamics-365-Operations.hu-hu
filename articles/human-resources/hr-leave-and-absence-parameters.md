@@ -2,15 +2,12 @@
 title: Szabadság- és távollétparaméterek konfigurálása
 description: Emberi erőforrások paramétereinek meghatározása a szabadsághoz és a távolléthez a Dynamics 365 Human Resources alkalmazásban.
 author: andreabichsel
-manager: tfehr
 ms.date: 11/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e1b2de94f9d9ac1ada16b6ef0e7628edbc9d683f
-ms.sourcegitcommit: ffb5998e611b83c2e4f98323f39e3e8f6419c652
+ms.openlocfilehash: c3a3f4a8a1fa0b5dbc4869f81f091cc66437e978
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/02/2020
-ms.locfileid: "4418939"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6056852"
 ---
 # <a name="configure-leave-and-absence-parameters"></a>Szabadság- és távollétparaméterek konfigurálása
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Mielőtt beállítaná a szabadság- és a távollétterveket a Dynamics 365 Human Resources alkalmazásban, célszerű ellenőrizni az összes kapcsolódó emberierőforrás-paraméter beállítását, többek között a következőket:
 
@@ -92,3 +91,6 @@ Mielőtt beállítaná a szabadság- és a távollétterveket a Dynamics 365 Hum
 ## <a name="see-also"></a>Lásd még
 
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

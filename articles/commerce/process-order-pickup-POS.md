@@ -12,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 598b155e1aa71cc7a23d1003331900604fb3de515381fd9c9987ed39bd9cbd2a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b5c17a65a54ae88118bc5ecaa25cdadb67861129
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6741062"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5802767"
 ---
 # <a name="process-customer-order-pickups-in-pos"></a>Vevői rendelésfelvételek feldolgozása a pénztárban
 
@@ -32,7 +32,7 @@ Ha üzleti felhasználó, az átvételt a **Rendelés visszahívása** művelett
 
 Ha a kiválasztott rendelés vagy rendeléssorok nincsenek az adott üzletben való átvételre konfigurálva, vagy ha a rendelést már teljes mértékben átvették, az **Átvétel** művelet nem érhető el.
 
-![Átvételi művelet.](media/pickupoperation.png)
+![Átvételi művelet](media/pickupoperation.png)
 
 A Microsoft Dynamics 365 Commerce 10.0.17-es és újabb verzióiban a Commerce központi felületén a Funkciókezelés segítségével bekapcsolható a **Továbbfejlesztett felhasználói felület a rendelésfeldolgozás átvételéhez a pénztárban** funkció. Ha ez a funkció ki van kapcsolva, a felhasználók nem választhatnak ki átvételi mennyiséget. Alapértelmezés szerint a sorhoz rendelt teljes mennyiség az átvételre kiválasztott mennyiség. Ez problémás lehet, mert előfordulhat, hogy a felhasználók elfelejtik kiválasztani az átvenni kívánt cikkeket, amikor a rendelés teljesítésével elvégzik az átvételt.
 
@@ -40,13 +40,13 @@ A **Továbbfejlesztett felhasználói felület a rendelésfeldolgozás átvétel
 
 Ha a **Továbbfejlesztett felhasználói felület a rendelésfeldolgozás átvételéhez a pénztárban** funkció be van kapcsolva, és az **Átvétel** műveletet választja, megjelenik az **Átvétel** párbeszédpanel. Itt kiválaszthatja az átveendő cikkeket és mennyiségeket. Alapértelmezés szerint minden olyan készleten tartott megrendelt mennyiség, amely kitárolt vagy csomagolt állapotban van, átvehető. Alapértelmezés szerint ez a mennyiség van beállítva átvételi mennyiségként. A megadott mennyiség módosítható, feltéve, hogy a mennyiség nem 0 (nulla), és nem haladja meg a kijelölt sor teljes nyitott (azaz nem számlázott) mennyiségét.
 
-![Átvétel párbeszédpanel.](media/pickupselect.png)
+![Átvétel párbeszédpanel](media/pickupselect.png)
 
 Miután kiválasztotta az átvenni kívánt mennyiségeket, majd kiválasztotta az **Átvétel** lehetőséget, megjelenik a tranzakcióoldal. Ha a [többcsatornás fizetések](omni-channel-payments.md) funkció be van kapcsolva, és előre engedélyezett hitelkártyás fizetések vannak rögzítve, alkalmaznia kell a kifizetést.
 
 A tranzakcióoldalon a rendszer kiszámítja az esedékes összegeket úgy, hogy kiszámítja a kiválasztott átveendő cikkek esedékes összegét, majd kivonja a korábban alkalmazott betéteket és engedélyezett hitelkártyás kifizetéseket. A fizetést fel kell feldolgoznia az átvételi tranzakció befejezéséhez. Ha a tranzakcióoldal [képernyő-elrendezése](pos-screen-layouts.md) úgy van beállítva, hogy tartalmazza a **Tranzakció befejezése** műveletet, és nincs esedékes összeg, fizetési mód kiválasztása nélkül is befejezheti a tranzakciót. Ha a **Tranzakció befejezése** művelet nem érhető el, az **Összegek** ablakban kiválasztható a **0,00 USD esedékes összeg** hivatkozása, hogy a tranzakció befejeződjön, és ne kell kiválasztani fizetési módot.
 
-![Vevői rendelés átvételi tranzakciójának tranzakciós oldala.](media/pickupcart.png)
+![Vevői rendelés átvételi tranzakciójának tranzakciós oldala](media/pickupcart.png)
 
 ## <a name="changing-pickup-lines-or-quantities"></a>Átvlteli sorok vagy mennyiségek módosítása
 
@@ -54,7 +54,7 @@ Ha az átvételre kiválasztott cikkek kiválasztása után módosítania kell a
 
 Ha a **Továbbfejlesztett felhasználói felület a rendelésfeldolgozás átvételéhez a pénztárban** funkció be van kapcsolva, a szervezetek hozzáadhatnak egy gombot az **Átvételi sorok módosítása** művelethez a tranzakcióoldal képernyő-elrendezéséhez. Miután létrehozott egy átvételi tranzakciós kosarat a pénztárban és kiválasztotta a cikkeket, akkor választhatja az **Átvételi sorok módosítása** lehetőséget, ha módosítania kell az átvételi cikkeket, de nem szeretné érvényteleníteni a teljes tranzakciót. A megjelenő **Átvételi sorok módosítása** párbeszédpanelen módosíthatja az átvételi cikkeket és mennyiségeket. Ezt követően a rendszer frissíti a tranzakciós kosarat, hogy tükrözze a módosításokat.
 
-![Átvételi cikkek módosítása párbeszédpanel.](media/pickupchange.png)
+![Átvételi cikkek módosítása párbeszédpanel](media/pickupchange.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

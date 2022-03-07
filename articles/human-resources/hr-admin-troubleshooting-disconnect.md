@@ -1,30 +1,32 @@
 ---
-title: Az ügyfél kapcsolata megszakad
-description: Ez a cikk bemutatja, hogy mi a teendő, ha a vevő kapcsolata megszakad a saját környezetével, és nem tudja, ennek mi az oka.
-author: andreabichsel
-manager: AnnBe
-ms.date: 02/03/2020
+title: Kliens kapcsolata megszakad
+description: Ez a téma elmagyarázza, hogy mi a teendő, ha az ügyfél nem kapcsolódik a környezethez.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 2088706baf8735fa371960955a2ffc3240ccac76
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
-ms.translationtype: HT
+ms.openlocfilehash: b15c5db19f1b07e3d469986ac700138ecb1d1525
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4418935"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071135"
 ---
-# <a name="client-disconnects"></a>Az ügyfél kapcsolata megszakad
+# <a name="client-disconnects"></a>Kliens kapcsolata megszakad
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Környezet részletes adatai** 
 
@@ -52,3 +54,6 @@ A felhasználók kapcsolata a Microsoft Dynamics 365 Human Resources megoldássa
 Győződjön meg arról, hogy egyszerre az adott típusú böngészőben csak egy környezetet nyisson meg. A felhasználók több munkamenetet is megnyithatnak ugyanabban a környezetben (azaz egy böngészőben több lapot).
 
 A felhasználóknak, akik egyszerre két környezet között szeretnének mozogni, minden egyes környezetet különböző típusú böngészőben kell megnyitniuk. (Például A felhasználó megnyithatja az 1. környezetet Chrome-ban, és a 2. környezetet Microsoft Edge-ben.)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

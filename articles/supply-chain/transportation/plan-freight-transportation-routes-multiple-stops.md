@@ -2,28 +2,25 @@
 title: Többmegállós szállítási útvonal tervezése
 description: Ez a cikk a Dynamics 365 Supply Chain Management szállítási útvonalak tervezéséhez használt különböző elemeit ismerteti.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate, TMSRouteSchedule, TMSRouteRateDetail
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 90013
 ms.assetid: 50d6f58c-f1c8-4321-9e83-8445cec57a85
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04346363070fff4dc3110a620c3d9bc9b1016d1e
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: c7c52adcd93bf90f99329a2eeb8519e01e5893f3
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429913"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810558"
 ---
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Többmegállós szállítási útvonal tervezése
 
@@ -53,3 +50,6 @@ A Rakomány-összeállítási munkaterület rakományjavaslat készítésekor ve
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

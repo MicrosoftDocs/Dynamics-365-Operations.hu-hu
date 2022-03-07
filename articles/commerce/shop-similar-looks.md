@@ -2,16 +2,13 @@
 title: Engedélyezze a "hasonló megvásárlása" javaslatlistákat
 description: Ez a témakör azt mutatja be, hogyan lehet engedélyezni a "hasonló megjelenésű" javaslatlistákat a Microsoft Dynamics 365 Commerce szolgáltatásnál.
 author: bebeale
-manager: AnnBe
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,20 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: da957850072e233a41a042d5857f81ddbf178f7a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 06b5721c423330b8840bb546bdb144c3189c25bb
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412935"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5795381"
 ---
-# <a name="enable-shop-similar-looks-recommendations"></a>Engedélyezze a "hasonló megvásárlása" javaslatlistákat
+# <a name="enable-shop-similar-looks-recommendations"></a>„Hasonló szettek vásárlása” javaslatok engedélyezése
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet engedélyezni a "hasonló megjelenésű" javaslatlistákat a Microsoft Dynamics 365 Commerce szolgáltatásnál.
-
-## <a name="overview"></a>Áttekintés
 
 A "hasonló megvásárlása" javaslatlista funkció a Dynamics 365 Commerce által mesterséges intelligenciát és gépi tanulást (AI-ML) alkalmaz, hogy a vizuálisan hasonló termékeket a vevők számára ajánlani tudja. A "hasonló megvásárlása" javaslatok elérhetők a Commerce összes kiskereskedelmi csatornáján, ezzel a kiskereskedők növelhetik a vevők elégedettségét azzal, hogy könnyebben megtalálják azt, amit akarnak.
 
@@ -116,3 +111,6 @@ A következő ábra bemutatja a **Hasonló megvásárlása link engedélyezése*
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

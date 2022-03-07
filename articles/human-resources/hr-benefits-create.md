@@ -2,7 +2,7 @@
 title: Új juttatás létrehozása
 description: A feladat bemutatja, hogyan hozhat létre juttatási elemeket, amelyeket az új juttatás létrehozása során használni fog.
 author: andreabichsel
-manager: AnnBe
+manager: tfehr
 ms.date: 02/03/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,19 +11,21 @@ ms.technology: ''
 ms.search.form: HcmBenefitElementSetup, HcmBenefit, HcmBenefitNewBenefit, HcmBenefitPlanLookup, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Version 7.0.0, Human Resources
-ms.openlocfilehash: f9618e62e33655bfc1a0653cb767abe0094d1e79
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 857fb7d6860d050fb0be50f2559e3998dacad458
+ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418807"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "5468011"
 ---
 # <a name="create-a-new-benefit"></a>Új juttatás létrehozása
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A feladat bemutatja, hogyan hozhat létre juttatási elemeket, amelyeket az új juttatás létrehozása során használni fog. A feladat létrehozásához az USMF bemutató vállalatot használtuk példaként. A feladat a Kompenzációkért és juttatásokért felelős vezetőnek szól.
 
@@ -53,3 +55,6 @@ A feladat bemutatja, hogyan hozhat létre juttatási elemeket, amelyeket az új 
 6. Az Érvényesség mezőben adjon meg dátumot és időt.
 7. Kattintson a Juttatás létrehozása hivatkozásra.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

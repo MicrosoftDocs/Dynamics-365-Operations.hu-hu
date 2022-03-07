@@ -11,17 +11,17 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: fcbace2bd28a843fca8aa2f4f998c08f238c29d6
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061001"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920298"
 ---
 # <a name="configure-inventory-visibility"></a>Készletláthatóság konfigurálása
 
 [!include [banner](../includes/banner.md)]
-
+[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
 Ez a témakör a Készlet láthatósága alkalmazás használatával a Készlet láthatósága bővítmény konfigurálását ismerteti a Power Apps rendszerben.
 
@@ -58,10 +58,10 @@ A konfiguráció befejezése után mindenképpen válassza ki a **Konfiguráció
 
 ## <a name="data-source-configuration"></a>Adatforrás konfiguráció
 
-Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Példa adatforrásnevek közé tartozik`fno` (ami azt jelenti "Dynamics 365 Finance és Műveletek alkalmazások") és`pos` (ami "értékesítési pontot" jelent). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
+Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen adatforrásnév például a `fno` (ami a "Dynamics 365 Finance and Operations alkalmazások" rövidítése) és a `pos` (ami a "point of sale" rövidítése). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
 
 > [!NOTE]
-> A`fno` az adatforrás az ellátási lánc menedzsment számára van fenntartva. Ha a készlet láthatósági bővítménye integrálva van egy Supply Chain Management környezetbe, javasoljuk, hogy ne törölje a következőhöz kapcsolódó konfigurációkat:`fno` az adatforrásban.
+> Az `fno` adatforrás le van foglalva az Ellátásilánc-kezeléshez. Ha a készlet láthatósági bővítménye integrálva van egy ellátásilánc-kezelési környezettel, javasoljuk, hogy ne törölje az adatforráshoz kapcsolódó `fno` konfigurációkat.
 
 Adatforrás hozzáadásához kövesse az alábbi lépéseket.
 
@@ -273,17 +273,17 @@ A `MyCustomAvailableforReservation` kimeneti értéke az egyéni mérések szám
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Partíciókonfiguráció
 
-Jelenleg a partíció konfigurációja két alapdimenzióból áll (`SiteId` és`LocationId`), amelyek jelzik az adatok elosztásának módját. Az ugyanazon partíció alatt végzett műveletek nagyobb teljesítményt biztosítanak alacsonyabb költségek mellett. A következő táblázat a készlet láthatósági bővítmény által biztosított alapértelmezett partíciókonfigurációt mutatja be.
+Jelenleg a partíció-konfiguráció két alapdimenzióból (és ) áll, amelyek az adatok `SiteId``LocationId` elosztását jelzik. Az ugyanazon a partíción található műveletek magasabb teljesítményt és alacsonyabb költségű műveleteket is tudnak szállítani. A következő táblázat bemutatja a készlet láthatósági bővítménye által biztosít alapértelmezett partíció-konfigurációt.
 
 | Alapdimenzió | Hierarchia |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-A megoldás alapértelmezés szerint tartalmazza ezt a partíciókonfigurációt. Ebből kifolyólag, *nem kell magadnak meghatároznod*.
+A megoldás alapértelmezés szerint tartalmazza ezt a partíciókonfigurációt. Nem *kell tehát saját magának meghatároznia*.
 
 > [!IMPORTANT]
-> Ne szabja testre az alapértelmezett partíciókonfigurációt. Ha törli vagy módosítja, valószínűleg váratlan hibát okoz.
+> Ne szabja testre az alapértelmezett partíciókonfigurációt. Ha törli vagy módosítja, akkor valószínűleg váratlan hibát fog okozhatni.
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Termékindex-hierarchia konfigurációja
 

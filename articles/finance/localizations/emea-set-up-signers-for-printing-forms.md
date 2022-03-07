@@ -2,26 +2,23 @@
 title: Aláírók beállítása nyomtatási űrlapokhoz
 description: A Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország, Lengyelország és Oroszország területén működő jogalanyok esetén beállíthat aláírókat és beosztásokat a dokumentumokat, például számlákat és készpénzutalványokat nyomtató szállítók és vevők számára.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 263464
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 64868aa08201fa3df99cd86fa6ef5231a9347151
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: e5e80699f3ac2faaf947e0ce93e9408e3d0811265ec70d41c2a8b93e0f0d358a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408053"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717453"
 ---
 # <a name="set-up-signers-for-print-forms"></a>Aláírók beállítása nyomtatási űrlapokhoz
 
@@ -29,8 +26,7 @@ ms.locfileid: "4408053"
 
 A Cseh Köztársaság, Észtország, Magyarország, Litvánia, Lettország, Lengyelország és Oroszország területén működő jogalanyok esetén beállíthat aláírókat és beosztásokat a dokumentumokat, például számlákat és készpénzutalványokat nyomtató szállítók és vevők számára.
 
-<a name="set-up-default-values"></a>Alapértelmezett értékek beállítása
----------------------
+## <a name="set-up-default-values"></a>Alapértelmezett értékek beállítása
 
 Aláírók megadásához egy vállalat által kinyomtatott dokumentumokhoz használja a **Tisztviselők** oldalt. Beállíthat aláírókat és a beosztásaikat mind a vállalat, mind a vevők vagy szállítók számára, a dokumentum típusától függően. Az alábbi táblázat ismerteti a **Tisztviselők** oldalon elérhető lapokat.
 
@@ -165,3 +161,6 @@ A Hivatalnokok funkció az előre definiált alapértelmezett aláírókat a Hiv
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

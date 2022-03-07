@@ -2,16 +2,13 @@
 title: Alaptervezés az igény-előrejelzésekkel
 description: Ez a témakör azt mutatja be, hogyan lehet szerepeltetni a Tervezési optimalizálással történő alaptervezés során az igény-előrejelzéseket.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
+ms.search.form: ReqPlanSched, ReqGroup, ReqReduceKey, ForecastModel
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 8b47aee41494394a32ffc0ea0c42a512e5051532
-ms.sourcegitcommit: b86576e1114e4125eba8c144d40c068025f670fc
-ms.translationtype: HT
+ms.openlocfilehash: cbac68b79b2a10f05e0e442d4f0aa716e5a04634
+ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4666722"
+ms.lasthandoff: 11/29/2021
+ms.locfileid: "7867247"
 ---
 # <a name="master-planning-with-demand-forecasts"></a>Alaptervezés az igény-előrejelzésekkel
 
@@ -89,9 +86,9 @@ Ha előrejelzés vesz fel egy alaptervbe, kiválaszthatja az előrejelzési köv
 
 Alapterv beépítéséhez az alaptervbe, és az előrejelzési követelmények csökkentése érdekében használt módszer kiválasztásához válassza az **Alaptervezés \> Beállítás \> Tervek \> Alaptervek** lehetőséget. Az **Előrejelzési modell** mezőben válasszon egy előrejelzési modellt. A **Előrejelzési követelmények csökkentésére szolgáló metodológia** mezőben válasszon egy metodológiát. Ehhez a következő lehetőségek állnak rendelkezésre:
 
-- None
+- Egyik sem
 - Százalék – csökkentési kulcs
-- Tranzakciók – csökkentési kulcs (még nem támogatott a Tervezési optimalizálásban)
+- Tranzakciók – csökkentési kulcs
 - Tranzakciók – dinamikus időszak
 
 A következő részekben további információkat találhat minden egyes lehetőségről.
@@ -140,32 +137,85 @@ Ebben az eseteben, ha előrejelzési ütemezést január 1-jén futtatja, az ig�
 
 #### <a name="transactions--reduction-key"></a>Tranzakciók – csökkentési kulcs
 
-Ha a **Tranzakciók – csökkentési kulcs** lehetőséget választja, az előrejelzési követelmények azon tranzakciók mértékével csökkennek, amelyek a csökkentési kulcs által definiált időszakokra vonatkoznak.
+Ha az **Előrejelzési követelmények csökkentésére használt módszert** a *Tranzakciók – csökkentési kulcs* értékre állítja, az előrejelzési követelmények a minősített igénytranzakciókkal csökkennek, amelyek a csökkentési kulcs által megadott időszakok során következnek be.
+
+A minősített igényt a **Fedezeti csoportok** oldal **Előrejelzés csökkentése a következővel:** mezője határozza meg. Ha az **Előrejelzés csökkentése a következővel:** mező értékét *Rendelések* értékre állítja, csak az értékesítésirendelés-tranzakciók számítanak minősített igénynek. Ha az *Összes tranzakció* érték van beállítva, bármely nem vállalatközi kiadású készlettranzakció minősített igénynek számít. Ha vállalatközi értékesítési rendeléseket is minősített igényként kell tekinteni, állítsa a **Vállalatközi rendelések szerepeltetése** beállítást *Igen* értékre.
+
+Az előrejelzés csökkentése a csökkentési kulcs időszakának első (legkorábbi) igény-előrejelzési rekordjával kezdődik. Ha a minősített készlettranzakciók mennyisége nagyobb, mint az ugyanabban a csökkentési kulcs időszakában szereplő igény-előrejelzési sorok mennyisége, a készlettranzakciók mennyiségének egyenlegét használja a rendszer az előző időszak igény-előrejelzési mennyiségének csökkentésére (amennyiben van fel nem használt előrejelzés).
+
+Ha az előző csökkentési kulcs időszakában nem marad fel nem használt előrejelzés, akkor a készlettranzakciók mennyiségének egyenlegét használja a rendszer a következő hónap előrejelzési mennyiségének csökkentésére (amennyiben van nem felhasznált előrejelzés).
+
+A csökkentésikulcs-sorok **Százalék** mezőjének értéke nem használatos, ha az **Előrejelzési követelmények csökkentésére szolgáló metodológia** mező értékének beállítása *Tranzakciók - csökkentési kulcs*. A csökkentési kulcs időszakát csak a dátumok határozzák meg.
+
+> [!NOTE]
+> A program minden olyan előrejelzést figyelmen kívül hagy, amely a mai napon vagy azelőtt lett feladva, és nem lesz használva tervezett rendelések létrehozásához. Ha például a hónapra vonatkozó igény-előrejelzés január 1-jén jön létre, és január 2-án igény-előrejelzést tartalmazó alaptervezést futtat, a számítás figyelmen kívül hagyja a január 1-jei dátummal létrehozott igény-előrejelzési sort.
 
 ##### <a name="example-transactions--reduction-key"></a>Példa: Tranzakciók – csökkentési kulcs
 
 Csökkentési kulcs az előrejelzési követelmények csökkentése a százalékok és az időszakok alapján történik, amelyeket a csökkentési kulcs definiál.
 
-Ebben a példában az **Alaptervek** oldalon, az **Előrejelzési követelmények csökkentésére szolgáló metodológia** mezőben kiválasztja a **Százalék - csökkentési kulcs** lehetőséget.
+[![Tényleges rendelések és előrejelzések az alaptervezés futtatása előtt.](media/forecast-reduction-keys-1-small.png)](media/forecast-reduction-keys-1.png)
 
-A következő értékesítési rendelések léteznek január 1-én.
+Ebben a példában az *Alaptervek* oldalon, az **Előrejelzési követelmények csökkentésére szolgáló metodológia** mezőben kiválasztja a **Százalék - csökkentési kulcs** lehetőséget.
 
-| Hónap    | Rendelt darabszám |
-|----------|--------------------------|
-| Január  | 956                      |
-| Február | 1,176                    |
-| Március    | 451                      |
-| Április    | 119                      |
+A következő igény-előrejelzési sorok léteznek április 1-jén.
 
-Ugyanazt a havi 1000 darabos értékesítési előrejelzést alkalmazva, mint az előző példában az alábbi mennyiségi követelések kerülnek az alaptervbe.
+| Dátum     | Előrejelzett darabszám |
+|----------|-----------------------------|
+| április 5.  | 100                         |
+| április 12. | 100                         |
+| április 19. | 100                         |
+| április 26. | 100                         |
+| május 3.    | 100                         |
+| május 10.   | 100                         |
+| május 17.   | 100                         |
 
-| Hónap                | Szükséges darabszám |
-|----------------------|---------------------------|
-| Január              | 44                        |
-| Február             | 0                         |
-| Március                | 549                       |
-| Április                | 881                       |
-| május – december | 1000                     |
+A következő értékesítésirendelés-sorok léteznek áprilisban.
+
+| Dátum     | Igényelt darabszám |
+|----------|----------------------------|
+| április 27. | 240                        |
+
+[![Az áprilisi rendelések alapján létrehozott tervezett ellátás.](media/forecast-reduction-keys-2-small.png)](media/forecast-reduction-keys-2.png)
+
+A következő mennyiségi követelések kerülnek át az alaptervbe, amikor az alaptervezés április 1-jén fut. Amint látható, az áprilisi előrejelzési tranzakciók egy sorozatban 240-es igénymennyiséggel csökkentek, az első ilyen tranzakciótól kezdve.
+
+| Dátum     | Szükséges darabszám |
+|----------|---------------------------|
+| április 5.  | 0                         |
+| április 12. | 0                         |
+| április 19. | 60                        |
+| április 26. | 100                       |
+| április 27. | 240                       |
+| május 3.    | 100                       |
+| május 10.   | 100                       |
+| május 17.   | 100                       |
+
+Most tegyük fel, hogy az új rendeléseket májusban importálták.
+
+A következő értékesítésirendelés-sorok léteznek májusban.
+
+| Dátum   | Igényelt darabszám |
+|--------|----------------------------|
+| május 4.  | 80                         |
+| május 11. | 130                        |
+
+[![Az áprilisi és májusi rendelések alapján létrehozott tervezett ellátás.](media/forecast-reduction-keys-3-small.png)](media/forecast-reduction-keys-3.png)
+
+A következő mennyiségi követelések kerülnek át az alaptervbe, amikor az alaptervezés április 1-jén fut. Amint látható, az áprilisi előrejelzési tranzakciók egy sorozatban 240-es igénymennyiséggel csökkentek, az első ilyen tranzakciótól kezdve. A májusi előrejelzési tranzakciók összege azonban 210-zel csökkent, a májusi első igény-előrejelzési tranzakciótól kezdve. Az időszakonkénti összegek azonban megmaradtak (áprilisban 400, májusban pedig 300).
+
+| Dátum     | Szükséges darabszám |
+|----------|---------------------------|
+| április 5.  | 0                         |
+| április 12. | 0                         |
+| április 19. | 60                        |
+| április 26. | 100                       |
+| április 27. | 240                       |
+| május 3.    | 0                         |
+| május 4.    | 80                        |
+| május 10.   | 0                         |
+| május 11.   | 130                       |
+| május 17.   | 90                        |
 
 #### <a name="transactions--dynamic-period"></a>Tranzakciók – dinamikus időszak
 
@@ -250,7 +300,7 @@ Tehát a következő tervezett rendelések jönnek létre.
 Az előrejelzési csökkentési kulcs a **Tranzakciók - csökkentési kulcs** és **Százalék-csökkentési kulcs** metodológiákban van használva az előrejelzési követelmények csökkentéséhez. Kövesse az alábbi lépéseket csökkentési kulcs létrehozásához és beállításához.
 
 1. Manjen az **Alaptervezés \> Beállítás \> Fedezet \> Csökkentési kulcsok** menübe.
-2. Válassza az **Új** lehetőséget, vagy nyomja le a **Ctrl + N** billentyűkombinációt csökkentési kulcs létrehozásához.
+2. Válassza ki az **Új** lehetőséget egy csökkentési kulcs létrehozásához.
 3. A **csökkentési kulcs** mezőben írjon be az előre jelzett csökkentési kulcs egyedi azonosítóját. Majd a **Név** mezőben adjon meg egy nevet. 
 4. Adja meg az időszakokat és a csökkentési kulcs százalékát az egyes időszakokhoz:
 
@@ -266,11 +316,78 @@ Előre jelzett csökkentési kulcsot a cikk fedezeti csoportjához kell hozzáre
 2. Az **Egyéb** gyorslapon, a **Csökkentési kulcs** mezőben, válassza ki a csökkentési kulcsot, amelyet a fedezeti csoporthoz rendel. A csökkentési kulcs ezután a cikkfedezeti csoporthoz tartozó összes cikkre vonatkozik.
 3. A csökkentési kulcs használatához előrejelzés-csökkentés számításához az alapütemezésben meg kell adnia ezt a beállítást az előrejelzési terv és az alapütemezés beállításánál. Lépjen az alábbiak közül valamelyik helyre:
 
-    - Alaptervezés \> Beállítás \> Tervek \> Előrejelzési tervek
-    - Alaptervezés \> Beállítás \> Tervek \> Alapütemezések
+    - **Alaptervezés \> Beállítás \> Tervek \> Előrejelzési tervek**
+    - **Alaptervezés \> Beállítás \> Tervek \> Alapütemezések**
 
 4. Az **Előrejelzési tervek** vagy **Alaptervek** oldalon az **Általános** gyorslapon, az **Előrejelzési követelmények csökkentésére szolgáló metodológia** mezőben válassza a **Százalék - csökkentési kulcs** vagy **Tranzakciók - csökkentési kulcs** lehetőséget.
 
 ### <a name="reduce-a-forecast-by-transactions"></a>Előrejelzés csökkentése tranzakciókkal
 
 Ha bejelöli a **Tranzakciók - csökkentési kulcs** vagy **Tranzakciók - dinamikus időszak** az előrejelzési követelmények csökkentésének módszereként, megadhatja a tranzakciók az előrejelzés csökkentéséhez. A **Fedezeti csoportok** oldalon, az **Egyéb** gyorslapon, akkor az **Előrejelzés csökkentése ennyivel:** mezőben válassza ki az **Összes tranzakció**, ha az összes tranzakció csökkentse az előrejelzést, vagy a **Rendelések** lehetőséget, ha csak az értékesítési rendelések csökkentsék az előrejelzést.
+
+## <a name="forecast-models-and-submodels"></a>Előrejelzési modellek és almodellek
+
+Ez a szakasz bemutatja, hogyan lehet előrejelzési modelleket létrehozni, és hogyan lehet több előrejelzési modellt kombinálni almodellek beállításával.
+
+Az *előrejelzési modellek* egy-egy adott előrejelzést megneveznek és azonosítanak. Az előrejelzési modell létrehozása után előrejelzési sorokat adhat hozzá. Ha több cikkhez szeretne előrejelzési sorokat hozzáadni, használja az **Igény-előrejelzési sorok** oldalt. Ha egy adott cikkhez szeretne előrejelzési sorokat hozzáadni, használja a **Kiadott termékek** oldalt.
+
+Az előrejelzési modellek más előrejelzési modellekből származó előrejelzéseket is tartalmazhatnak. Ez az eredmény úgy érhető el, hogy egy szülő előrejelzési modell *részmodelljeiként* további előrejelzési modelleket ad hozzá. A szülő előrejelzési modell almodelljeként való hozzáadása előtt létre kell hoznia mindegyik vonatkozó modellt.
+
+Az eredményül kapott struktúra hatékony lehetőséget nyújt az előrejelzések szabályozására, mivel lehetővé teszi, hogy egyesítse (összesítse) a bevitt adatokat több egyedi előrejelzésből. Ezért tervezési szempontból könnyen kombinálhatja a szimulációk előrejelzéseit. Be lehet állítani például egy olyan szimulációt, amely egy normál előrejelzés és egy tavaszi promóció előrejelzésének kombinációján alapul.
+
+### <a name="submodel-levels"></a>Almodellszintek
+
+Nincs korlátozva a szülő előrejelzési modellhez hozzáadható almodellek száma. A szerkezet azonban csak egy szint mélységű lehet. Más szóval olyan előrejelzési modellnek, amely egy másik előrejelzési modell almodellje, nem lehet saját almodellje. Amikor almodelleket ad hozzá egy előrejelzési modellhez, a rendszer ellenőrzi, hogy az előrejelzési modell már egy másik előrejelzési modell almodellje-e.
+
+Ha az alaptervezés olyan almodellel rendelkezik, amely saját almodellekkel rendelkezik, hibaüzenet jelenik meg.
+
+#### <a name="submodel-levels-example"></a>Almodellszintek példája
+
+A B előrejelzési modell az A előrejelzési modell almodellje. Ebből következően a B előrejelzési modellnek nem lehet saját almodellja. Ha almodellt próbál hozzáadni a B előrejelzési modellhez, a következő hibaüzenet jelenik meg: „A B előrejelzési modell az A modell almodellje.”
+
+### <a name="aggregating-forecasts-across-forecast-models"></a>Előrejelzések összesítése az előrejelzési modellek között
+
+Az ugyanazon a napon előforduló előrejelzési sorokat a rendszer összesíti az előrejelzési modell és az almodelljei között.
+
+#### <a name="aggregation-example"></a>Példa összesítésre
+
+A B és C előrejelzési modellek az A előrejelzési modell almodelljei.
+
+- Az A előrejelzési modellben június 15-én 2 darabos igény-előrejelzés szerepel.
+- A B előrejelzési modellben június 15-én 3 darabos igény-előrejelzés szerepel.
+- A C előrejelzési modellben június 15-én 4 darabos igény-előrejelzés szerepel.
+
+A kapott igény-előrejelzés egyetlen 9 darabos (2 + 3 + 4) igény lesz a június 15-i időszakra.
+
+> [!NOTE]
+> Az előrejelzési részmodellek mindegyike saját paramétereket alkalmaz, nem a szülő előrejelzési modell paramétereit.
+
+### <a name="create-a-forecast-model"></a>Előrejelzési modell létrehozása
+
+Előrejelzési modell létrehozásához kövesse az alábbi lépéseket.
+
+1. Lépjen az **Alaptervezés \> Beállítása \> Igény-előrejelzés \> Előrejelzési modellek** részre.
+1. A Műveleti ablaktáblán kattintson az **Új** elemre.
+1. Állítsa be a következő mezőket az új előrejelzési modellhez:
+
+    - **Modell** – A modell egyedi azonosítójának megadása.
+    - **Név** – Írja be a modell leíró nevét.
+    - **Leállítva** – Általában *Nem* beállításra kell beállítani ezt a beállítást. Csak akkor állítsa *Igen* beállításra, ha meg szeretné akadályozni a modellhez rendelt összes előrejelzési sor szerkesztését.
+
+    > [!NOTE]
+    > A **Pénzforgalom előrejelzéseinek tartalmazása** mező és a **Projekt** gyorslap mezői nem kapcsolódnak az alaptervezéshez. Ezeket figyelmen kívül hagyhatja ebben a környezetben. Ezeket csak akkor kell figyelembe venni, ha a **Projektvezetés és könyvelés** modul előrejelzéseivel dolgozik.
+
+### <a name="assign-submodels-to-a-forecast-model"></a>Almodellek hozzárendelése egy előrejelzési modellhez
+
+Almodellek hozzárendeléséhez egy előrejelzési modellhez, kövesse az alábbi lépéseket.
+
+1. Lépjen a **Készletgazdálkodás \> Beállítás \> Előrejelzés \> Előrejelzési modellek** elemre.
+1. A listapanelen jelölje ki azt az előrejelzési modellt, amelyhez almodellt szeretne beállítani.
+1. Az **Almodell** gyorslapon válassza a **Hozzáadás** lehetőséget sor hozzáadásához a rácshoz.
+1. Az új sorban állítsa be a következő mezőket:
+
+    - **Almodell** – Az almodellként hozzáadni kívánt előrejelzési modell kiválasztása. Ennek az előrejelzési modellnek már léteznie kell, és nem lehet saját almodellja.
+    - **Név** – Írja be a részmodell leíró nevét. Ez a név jelezheti például az almodell és a szülő előrejelzési modell viszonyát.
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -2,11 +2,9 @@
 title: Költségvetési terv típusai
 description: A konstrukciótípus a Microsoft Dynamics 365 Human Resources alkalmazásban a meghatározott típusú juttatások magas szintű csoportosítása. Minden konstrukciótípusnak van egy terv konstrukciótípus-kódja, amely meghatározza a konstrukció típusának szabályait.
 author: andreabichsel
-manager: AnnBe
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
@@ -18,14 +16,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 88a6d89bf98ea145bbb6a4eb8f4e052e5f4088e5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 70eae24e48a0541c445deead2dba8bc2716b4be5
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418873"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801071"
 ---
 # <a name="create-plan-types"></a>Költségvetési terv típusai
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A konstrukciótípus a Microsoft Dynamics 365 Human Resources alkalmazásban a meghatározott típusú juttatások magas szintű csoportosítása. Minden konstrukciótípusnak van egy terv konstrukciótípus-kódja, amely meghatározza a konstrukció típusának szabályait. Például az Alapélettartam konstrukciótípushoz az Élettartam konstrukciótípus-kód szükséges, mivel ez egyfajta életbiztosítási konstrukció, amelyeknek meg kell felelniük az Élettartam konstrukciótípus-kódhoz meghatározott szabályoknak. Egy másik konstrukciótípus lehet a Kiegészítő élettartam, szintén az Élettartam konstrukciótípus-kóddal.
 
@@ -63,3 +63,6 @@ A konstrukciótípus meghatározhatja a fedezeti beállításokat. A fedezeti be
    | **Jelentéskészítési időtartam** | Megadja az életeseménnyel kapcsolatos jelentéskészítés időtartamát napokban. **Megjegyzés**: Ha nem ad meg összeget, akkor a rendszer nulla értékre állítja a jelentési ablakot, és nem dolgozza fel az élettartam-eseményt. |
 
 5. Válassza a **Mentés** lehetőséget. 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

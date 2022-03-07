@@ -1,37 +1,31 @@
 ---
 title: Kimutatásfeladás funkcionalitás továbbfejlesztései
 description: Ez a témakör leírja a kimutatásfeladási funkción végrehajtott javításokat.
-author: josaw1
-manager: AnnBe
-ms.date: 05/14/2019
+author: analpert
+ms.date: 01/31/2022
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: anpurush
+ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 68abef8f28c04a4f6f88e638c8abf944d06a32c4
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412933"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087603"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Kimutatásfeladás funkcionalitás továbbfejlesztései
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör leírja a kimutatásfeladási funkción végrehajtott javítások első készletét. Ezek a fejlesztések érhetők el a Microsoft Dynamics 365 for Finance and Operations 7.3.2 verziójában.
 
 ## <a name="activation"></a>Aktiválás
 
-Alapértelmezés szerint a Finance and Operations 7.3.2 telepítése során a program be van állítva az örökölt szolgáltatási kivonat feladásához. A továbbfejlesztett kimutatásfeladási funkció engedélyezéséhez engedélyezni kell a konfigurációs kulcsot.
+Alapértelmezés szerint a Finance and Operations 7.3.2 telepítés során a program be van állítva az örökölt szolgáltatással kivonat feladásához. A továbbfejlesztett kimutatásfeladási funkció engedélyezéséhez engedélyezni kell a konfigurációs kulcsot.
 
 - Ugorjon ide: **Rendszerfelügyelet** \> **Beállítás** \> **Licenckonfiguráció**, a **Retail és Commerce** csomópont alatt törölje a jelet a **Kimutatások (korábbi verzió)** jelölőnégyzetből, és jelölje be a **Kimutatások** négyzetet.
 
@@ -56,12 +50,24 @@ A kimutatásfeladási funkció javításának részeként három új paramétert
 
 - **Számlálás letiltása szükséges** – Ha ez a beállítás **Igen**, a kimutatás feladására használt eljárás tovább folytatódik akkor is, ha a kimutatáson a számolt összeg és a tranzakciós összeg közötti különbség túl van azon a küszöbértéken, amely meg van határozva az áruházak **Kimutatás** gyorslapján.
 
+> [!NOTE]
+> A Commerce 10.0.14-es verziójának kiadásától kezdve, amikor a **Kiskereskedelmi nyilatkozatok – Csomagolás** funkció engedélyezve van, a **Leltár feladása** A kötegelt munka már nem alkalmazható, és nem futtatható.
+
 Ezenkívül a következő paraméterek kerültek be a **Kötegelt feldolgozás** gyorslapra a **Feladás lapra** a **Commerce paraméterek** oldalon: 
 
 - **Párhuzamos kimutatásfeladások maximális száma** – Ez a mező a kötegelt feladatok számát határozza meg, amelyek több nyilatkozat feladása esetén használatosak. 
 - **Szálak maximális száma a rendelésfeladáshoz kimutatásonként** – Ez a mező a kimutatás feladására szolgáló kötegelt feladat által az egyes kimutatások értékesítési rendeléseinek létrehozásához és számlázásához használt szálak maximális számát jelzi. A kimutatásfeladási folyamat által használt szálak teljes számát a program úgy számítja ki, hogy ezen paraméter értékét megszorozza a **Párhuzamos kivonatfeladások maximális száma** értékével. A paraméter értékének beállítása túl magasra negatív hatással lehet a kimutatásfeladási folyamatának teljesítményére.
-- **Összesítésben szereplő maximális tranzakciós sorok** – Ez a mező azt határozza meg, hogy hány tranzakciós sor fog szerepelni egy összesített tranzakcióban, mielőtt újat hoz létre. Az összesített tranzakciók a különböző összesítési feltételek, például a vevő, az üzleti dátum vagy a pénzügyi dimenziók alapján jönnek létre. Fontos megjegyezni, hogy az egyetlen tranzakció sorait a rendszer nem osztja szét különböző összesített tranzakciók között. Ez azt jelenti, hogy egy összesített tranzakció sorainak száma valamivel több vagy kevesebb lehet olyan tényezők alapján mint egyedi termékek.
+- **Összesítésben szereplő maximális tranzakciós sorok** – Ez a mező azt határozza meg, hogy hány tranzakciós sor fog szerepelni egy összesített tranzakcióban, mielőtt újat hoz létre. Az összesített tranzakciók a különböző összesítési feltételek, például a vevő, az üzleti dátum vagy a pénzügyi dimenziók alapján jönnek létre. Fontos megjegyezni, hogy az egyetlen tranzakció sorait a rendszer nem osztja szét különböző összesített tranzakciók között. Ez azt jelenti, hogy előfordulhat, hogy egy összesített tranzakcióban a sorok száma valamivel magasabb vagy alacsonyabb olyan tényezők alapján, mint például a különböző termékek száma.
 - **Üzleti tranzakciók ellenőrzéséhez szükséges szálak maximális száma** – A szálak maximális száma, amelyek a tranzakció ellenőrzéséhez fel lesznek használva. A tranzakciók érvényesítése olyan szükséges lépés, amelyet el kell végezni azelőtt, hogy a tranzakciókat be lehessen húzni a kimutatásba. Emellett szükség van egy **Ajándékutalvány-termék** meghatározására az **Ajándékutalvány** gyorslapján a **Feladás** lapnak a **Kereskedelmi paraméterek** lapon. Ezt definiálni kell akkor is, ha a szervezet nem használ ajándékutalványokat.
+
+Az alábbi táblázat felsorolja az előző paraméterek ajánlott értékeit. Ezeket az értékeket tesztelni kell, és a telepítési konfigurációhoz és a rendelkezésre álló infrastruktúrához kell igazítani. Az ajánlott értékek bármilyen növelése hátrányosan befolyásolhatja a többi kötegelt feldolgozást, ezért azt érvényesíteni kell.
+
+| Paraméter | Ajánlott érték | Részletek |
+|-----------|-------------------|---------|
+| Párhuzamos kivonatfeladások maximális száma | <p>Állítsa be ezt a paramétert a parancsot futtató kötegelt csoport számára elérhető kötegelt feladatok számára **Nyilatkozat** munka.</p><p>**Általános szabály:** Szorozza meg az Application Object Server (AOS) virtuális kiszolgálók számát az AOS virtuális kiszolgálónként elérhető kötegelt feladatok számával.</p> | Ez a paraméter nem alkalmazható, ha a **Kiskereskedelmi nyilatkozatok – Csomagolás** funkció engedélyezve van. |
+| Rendelés feldolgozásához használt szálak maximális száma kimutatásonként | Kezdje el az értékek tesztelését itt **4**. Általában az érték nem haladhatja meg **8**. | Ez a paraméter határozza meg az értékesítési rendelések létrehozásához és feladásához használt szálak számát. Azt jelenti, hogy hány szál áll rendelkezésre nyilatkozatonként. |
+| Egy aggregációban szereplő tranzakciós sorok maximális száma | Kezdje el az értékek tesztelését itt **1000**. A központ konfigurációjától függően a kisebb megrendelések előnyösebbek lehetnek a teljesítmény szempontjából. | Ez a paraméter határozza meg, hogy hány sor kerüljön bele az egyes értékesítési rendelésekbe a kimutatás feladása során. Miután elérte ezt a számot, a sorok új sorrendbe kerülnek felosztásra. Bár az értékesítési sorok száma nem lesz pontos, mivel a felosztás az értékesítési rendelés szintjén történik, közel lesz a beállított számhoz. Ez a paraméter értékesítési rendelések generálására szolgál olyan kiskereskedelmi tranzakciókhoz, amelyekhez nem tartozik megnevezett vevő. |
+| Üzleti tranzakciók ellenőrzéséhez szükséges szálak maximális száma | Javasoljuk, hogy állítsa be ezt a paramétert **4**, és csak akkor növeli, ha nem ér el elfogadható teljesítményt. A folyamat által használt szálak száma nem haladhatja meg a kötegelt szerver számára elérhető processzorok számát. Ha túl sok szálat rendel hozzá, az befolyásolhatja a többi kötegelt feldolgozást. | Ez a paraméter azt szabályozza, hogy egy adott üzletben hány tranzakciót lehet egyszerre érvényesíteni. |
 
 > [!NOTE]
 > Minden beállítás és paraméter, amely kapcsolódik a kimutatásfeladásokhoz, és meg van határozva a kiskereskedelmi áruházak és a **Kereskedelmi paraméterek** oldalon, alkalmazható a továbbfejlesztett kimutatásfeladási funkcióra.
@@ -119,9 +125,17 @@ A kimutatás különféle műveleteken megy át (például, létrehozás, szám�
 
 ### <a name="aggregated-transactions"></a>Összesített tranzakciók
 
-A feladási folyamat során az értékesítési tranzakciók a konfiguráció alapján vannak összesítve. Az összesített tranzakciókat a rendszer tárolja, és értékesítési rendelések létrehozásához használja. Minden összesített tranzakció egy megfelelő értékesítési rendelést hoz létre a rendszerben. Megtekintheti az összesített tranzakciókat a következő segítségével: **Összesített tranzakciók** gomb a **Végrehajtás részletei** csoportjában a kimutatásnak.
+A könyvelési folyamat során a készpénzes átvételi tranzakciókat a rendszer vásárlónként és termékenként összesíti. Ezért csökken a létrehozott értékesítési rendelések és sorok száma. Az összesített tranzakciókat a rendszer tárolja, és értékesítési rendelések létrehozására szolgál. Minden összesített tranzakció egy megfelelő értékesítési rendelést hoz létre a rendszerben. 
 
-Az **Értékesítési rendelés részletei** összesített tranzakció lap a következő információkat jeleníti meg:
+Ha egy kimutatás nincs teljesen feladva, megtekintheti az összesített tranzakciókat a kimutatásban. A Műveleti ablakban a **Nyilatkozat** lapon, a **A végrehajtás részletei** csoport, válassza ki **Összesített tranzakciók**.
+
+![Összesített tranzakciók gomb egy olyan kimutatáshoz, amely nincs teljesen feladva.](media/aggregated-transactions.png)
+
+A feladott kivonatok esetében megtekintheti az összesített tranzakciókat a **Közzétett nyilatkozatok** oldalon. A Műveleti ablakban válassza ki a lehetőséget **Érdeklődések**, majd válassza ki **Összesített tranzakciók**.
+
+![Összesített tranzakciók parancs a feladott kimutatásokhoz.](media/aggregated-transactions-posted-statements.png)
+
+A **Az értékesítési rendelés részletei** Egy összesített tranzakció FastTab a következő információkat jeleníti meg:
 
 - **Rekordazonosító** – Az összesített tranzakció azonosítója.
 - **Kimutatás száma** – A kimutatás, amelyhez az összesített tranzakció tartozik.
@@ -130,17 +144,33 @@ Az **Értékesítési rendelés részletei** összesített tranzakció lap a kö
 - **Összesített sorok száma** – Az összesített tranzakciónál és az értékesítési rendelésnél a sorok száma összesen.
 - **Állapot** – Az összesített tranzakció utolsó állapota.
 - **Számlaazonosító** – Az összesített tranzakció az értékesítési rendelésének számlázása esetén az értékesítési számla azonosítója. Ha ez a mező üres, akkor az értékesítési rendelés számláját még nem adták fel.
+- **Hibakód** – Ez a mező akkor van beállítva, ha az összesítés hibaállapotban van.
+- **Hiba üzenet** – Ez a mező akkor van beállítva, ha az összesítés hibaállapotban van. Részleteket mutat be arról, hogy mi okozta a folyamat sikertelenségét. A hibakódban található információk segítségével kijavíthatja a problémát, majd manuálisan indíthatja újra a folyamatot. A feloldás típusától függően előfordulhat, hogy az összesített értékesítéseket törölni kell, és új kimutatáson kell feldolgozni.
 
-Egy összesített tranzakció **Tranzakció részletei** lapja az összes tranzakciót jeleníti meg, amelyeket behívott a rendszer az összesített tranzakcióba. Az összesített tranzakció összesített sorai megjelenítik a tranzakciók minden összesített rekordját. Az összesített sorok részleteket is megjelenítenek, például cikk, változat, mennyiség, ár, nettó összeg, egység és raktár. Alapvetően egy értékesítésirendelés-sor egy összesített sornak felel meg.
+![Az összesített tranzakció értékesítési rendelés részletei gyorslapján található mezők.](media/aggregated-transactions-error-message-view.png)
 
-Az **Összesített tranzakciók** lapon letöltheti egy adott összesített tranzakció XML-jét az **Értékesítési rendelés XML exportálása** gomb használatával. Az XML segítségével hibakeresheti a problémákat, amelyek az értékesítési rendelés létrehozására és feladására vonatkoznak. Csak töltse le az XML-fájlt, töltse fel egy tesztkörnyezetbe, és végezze el a hibakeresést a tesztkörnyezetben. Az összesített tranzakciók XML-kódjának letöltése funkció nem használható a feladott kimutatásoknál.
+A **Tranzakció részletek** Az összesített tranzakció gyorslapja az összesített tranzakcióba bevont összes tranzakciót mutatja. Az összesített tranzakció összesített sorai megjelenítik a tranzakciók minden összesített rekordját. Az összesített sorok részleteket is megjelenítenek, például cikk, változat, mennyiség, ár, nettó összeg, egység és raktár. Alapvetően egy értékesítésirendelés-sor egy összesített sornak felel meg.
 
-Az összesített tranzakció nézet a következő előnyökkel jár:
+![Tranzakció részletei Összesített tranzakció gyorslapja.](media/aggregated-transactions-sales-details.png)
+
+Egyes helyzetekben előfordulhat, hogy az összesített tranzakciók nem tudják feladni az összevont értékesítési rendelést. Ezekben a helyzetekben egy hibakód lesz társítva az utasítás állapotához. Ha csak a hibás összesített tranzakciókat szeretné megtekinteni, engedélyezheti a **Csak a hibákat jelenítse meg** szűrheti az összesített tranzakciók nézetben a jelölőnégyzet bejelölésével. A szűrő engedélyezésével az eredményeket az összesített tranzakciókra korlátozza, amelyek megoldást igénylő hibákat tartalmaznak. A hibák kijavításával kapcsolatos információkért lásd: [Szerkessze és auditálja az online rendeléseket és az aszinkron ügyfélrendelési tranzakciókat](edit-order-trans.md).
+
+![A Csak a hibák megjelenítése szűrő jelölőnégyzete az összesített tranzakciók nézetben.](media/aggregated-transactions-failure-view.png)
+
+A **Összesített tranzakciók** oldalon töltheti le az XML-t egy adott összesített tranzakcióhoz, ha kiválasztja **Összesített adatok exportálása**. Bármely XML-formázóban megtekintheti az XML-t, hogy megtekinthesse az értékesítési rendelések létrehozásával és feladásával kapcsolatos tényleges adatok részleteit. Az összesített tranzakciók XML-kódjának letöltése funkció nem használható a feladott kimutatásoknál.
+
+![Összesített adatok exportálása gomb az Összesített tranzakciók oldalon.](media/aggregated-transactions-export.png)
+
+Abban az esetben, ha a hibát nem tudja kijavítani az értékesítési rendelés adatainak vagy az értékesítési rendelést alátámasztó adatoknak a javításával, egy **Ügyfélrendelés törlése** gomb elérhető. Megrendelés törléséhez válassza ki a sikertelen összesített tranzakciót, majd válassza ki **Ügyfélrendelés törlése**. Mind az összesített tranzakció, mind a megfelelő értékesítési rendelés törlődik. Mostantól áttekintheti a tranzakciókat a szerkesztés és ellenőrzés funkció használatával. Alternatív megoldásként újra feldolgozhatók egy új nyilatkozattal. Az összes hiba kijavítása után folytathatja a kivonat feladását a vonatkozó utasításhoz tartozó post utasítás függvény futtatásával.
+
+![Ügyfélrendelés törlése gomb az összesített tranzakciók nézetben.](media/aggregated-transactions-delete-cust-order.png)
+
+Az összesített tranzakciók nézete a következő előnyöket nyújtja:
 
 - A felhasználók rálátást kapnak az értékesítési rendelés létrehozása során nem sikerült összesített tranzakciókhoz, és az értékesítési rendelések sikertelen számlázásaihoz.
 - A felhasználók rálátást kapnak, hogy hogyan vannak összesítve a tranzakciók.
 - A felhasználó teljes auditnaplóval rendelkezik, a tranzakcióktól az értékesítési rendelésekig és az értékesítési számlákig. Az auditnapló nem áll rendelkezésre az örökölt kimutatásfeladási szolgáltatásban.
-- Az összesített XML-fájl megkönnyíti az értékesítési rendelés létrehozása és számlázása során felmerült problémák azonosítását.
+- Az összesített XML-fájl megkönnyíti a problémák azonosítását az értékesítési rendelések létrehozása és a számlázás során.
 
 ### <a name="journal-vouchers"></a>Naplóbizonylatok
 
@@ -174,3 +204,6 @@ A kimutatásfeladási funkción egyéb, a felasználó által látható, hátté
 
     - Menjen a **Retail és Commerce** \> **Központ beállítása** \> **Paraméterek** \> **Kiskereskedelmi paraméterek** lehetőségre. Ezután a **Feladás** lapon, a **Készletmódosítás** gyorslapon, a **Részletességi szint** mezőben válassza ki az **Összegzés** lehetőséget.
     - Menjen a **Retail és Commerce** \> **Központ beállítása** \> **Paraméterek** \> **Kiskereskedelmi paraméterek** lehetőségre. Ezután a **Feladási** lapon, az **Összesítés** gyorslapon állítsa a **Bizonylattranzakciók** lehetőséget **Igen** beállításra.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

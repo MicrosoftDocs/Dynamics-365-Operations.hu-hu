@@ -2,11 +2,9 @@
 title: Élő szinkronizálási problémák elhárítása
 description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítségével javíthatók az élő szinkronizálás problémái.
 author: RamaKrishnamoorthy
-manager: AnnBe
 ms.date: 03/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -18,12 +16,12 @@ ms.search.industry: ''
 ms.author: ramasri
 ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 59c8bd80b167cdfaa7a65e469f4dc7ebf8f50844
-ms.sourcegitcommit: 7e1be696894731e1c58074d9b5e9c5b3acf7e52a
+ms.openlocfilehash: 1c0dfebb3ef442f67d8489d7aed00305c02cf410
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "4744613"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5748897"
 ---
 # <a name="troubleshoot-live-synchronization-issues"></a>Élő szinkronizálási problémák elhárítása
 
@@ -127,3 +125,6 @@ Egy hiba javításához kövesse az alábbi lépéseket.
 
 3. Ügyeljen arra, hogy az **externalenvironmentURL** oszlop helyes Dataverse vagy alkalmazás URL-címmel rendelkezzen. Törölje a megfelelő Dataverse URL-címre mutató ismétlődő sorokat. Törölje a megfelelő sorokat a DUALWRITEPROJECTFIELDCONFIGURATION és DUALWRITEPROJECTCONFIGURATION táblákból.
 4. Állítsa le az táblák hozzárendelését, majd indítsa újra
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

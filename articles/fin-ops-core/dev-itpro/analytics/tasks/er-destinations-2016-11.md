@@ -2,11 +2,9 @@
 title: ER - Célok konfigurálása
 description: Ez az eljárás bemutatja, hogy hogyan lehet a különböző helyeket beállítani és használnia az Elektronikus jelentés (ER) kimeneti összetevőire, például egy mappára vagy egy fájlra vonatkozóan.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERFormatDestinationTable, SysLookupPicklist, ERFormatDestinationSettings, ERFormatDestinationEmailSettings, ERExpressionDesignerFormula, SRSPrintDestinationTokens
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0073033454c7d3054496fe4c38cdb3cff71d8755
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 78dbcb73b47223ba1fe2ea35ef7c7af09a98d5c2
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681877"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754962"
 ---
 # <a name="er-configure-destinations"></a>ER - Célok konfigurálása
 
@@ -60,3 +58,6 @@ Ezen példa formátuma az ISO20022 Jóváírás átvitele, de bármilyen formát
 21. Írjon be egy értéket a Tárgy mezőbe.
 22. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

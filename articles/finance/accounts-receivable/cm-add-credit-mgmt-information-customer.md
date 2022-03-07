@@ -1,7 +1,7 @@
 ---
 title: Hitelkezelési információk hozzáadása ügyfelek számára
 description: Ez a témakör azt mutatja be, hogyan lehet hozzáadni az ügyfelekhez a hitelkezelési adatokat.
-author: JodiChristiansen
+author: mikefalkner
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3c8584c33b4f77b6d1f5a4dc0d62208b76b3ffa3
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
-ms.translationtype: MT
+ms.openlocfilehash: dc734775e0ffe0388763d788a6eba90c1449ed1c
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753970"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820593"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Hitelkezelési információk hozzáadása ügyfelek számára
 
@@ -86,7 +86,7 @@ A biztosítási kötvényeket és a garanciákat az **Összes ügyfél** oldalon
     - Az irányelv értéke (B) 50 000.
     - A **Hitelkeret frissítése** százaléka (C) 50,00.
     
-    Ebben az esetben a tényleges hitelkeret 125 000 (= A + \[ B × C\]).
+    Ebben az esetben a tényleges hitelkeret 125 000 (= A + \[B × C\]).
 
 11. Jelölje be a **Kitettségben szerepel** jelölőnégyzetet, amellyel csökkentheti a hitelkeret-számításokban használt hitelkeretet az irányelv teljes értékével. Ha ez a jelölőnégyzet be van jelölve, akkor a **Hitelkeret frissítése** százalék megadásakor kiszámított értéket a rendszer nem használja a hitelkeret-számításokban.
 
@@ -96,9 +96,9 @@ A biztosítási kötvényeket és a garanciákat az **Összes ügyfél** oldalon
     - Az irányelv értéke (B) 50 000.
     - A **Hitelkeret frissítése** százaléka (C) 50,00.
 
-    Ebben az esetben a tényleges hitelkeret 125 000 (= A + \[ B × C\]).
+    Ebben az esetben a tényleges hitelkeret 125 000 (= A + \[B × C\]).
     
-    Ha azonban bejelöli a **Kitettségben szerepel** jelölőnégyzetet, akkor a **Hitelkeret frissítése** 50 000-es értéke (=100 000 50%-a) törlődik, a kitettség értéke pedig 75 000 (= A + \[ B × C\] – B).
+    Ha azonban bejelöli a **Kitettségben szerepel** jelölőnégyzetet, akkor a **Hitelkeret frissítése** 50 000-es értéke (=100 000 50%-a) törlődik, a kitettség értéke pedig 75 000 (= A + \[B × C\] – B).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

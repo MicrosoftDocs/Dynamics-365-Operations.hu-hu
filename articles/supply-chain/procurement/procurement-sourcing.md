@@ -1,28 +1,27 @@
 ---
 title: Beszerzési és forrásparaméterek kezdőlapja
 description: Ez a témakör a Beszerzés és forrás modulhoz elérhető súgótémaköröket és egyéb erőforrásokat sorolja fel.
-author: mkirknel
-manager: tfehr
+author: Henrikan
 ms.date: 09/27/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: 50651
+ms.custom:
+- "50651"
+- intro-internal
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d38490e9155106d09c432fd965c95ad45f707b41
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 54ddaee1fd820435c245f3946ae1cc91209b12d4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429800"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565495"
 ---
 # <a name="procurement-and-sourcing-home-page"></a>Beszerzési és forrásparaméterek kezdőlapja
 
@@ -79,19 +78,18 @@ A Beszerzés és forrás modul lefedi az összes lépést a termék- és szolgá
 -   [Beszerzési rendelés létrehozása egyszeri szállítóhoz](tasks/create-purchase-order-one-time-supplier.md)
 -   [Szállítási ütemezéssel ellátott beszerzési rendelés létrehozása](tasks/create-purchase-order-delivery-schedule.md)
 -   [Beszerzési visszárurendelés létrehozása](tasks/create-purchase-return-order.md)
--   [Beszerzésirendelés-kiadás létrehozása beszerzési szerződésből](tasks/create-purchase-release-order-purchase-agreement.md)
--   [Beszerzésirendelés-kiadás létrehozása új beszerzési rendelés létrehozásakor](tasks/create-purchase-release-order-creating-purchase-order.md)
--   [Bizományosi feltöltési rendelés létrehozása](../inventory/tasks/create-consignment-replenishment-order.md)
+-   [Beszerzési megállapodás alkalmazása beszerzési rendelés létrehozásakor](tasks/create-purchase-release-order-purchase-agreement.md)
+-   [Új bizományosi feltöltési rendelés létrehozása](../inventory/tasks/create-consignment-replenishment-order.md)
 
 ## <a name="prices-and-discounts"></a>Árak és engedmények
 -   [Beszerzési szerződések](purchase-agreements.md)
 -   [Beszerzési szerződés létrehozása](tasks/create-purchase-agreement.md)
--   [Szállítói visszatérítések](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (útmutató)
+-   [Szállítói visszatérítések](/dynamics/s-e/) (útmutató)
 
 ## <a name="product-receipt-and-invoicing"></a>A termék bevételezése és számlázása
 -   [Beszerzési rendelés - termékbevételezés](product-receipt-against-purchase-orders.md)
--   [Szállítói számlák áttekintése](../../financials/accounts-payable/vendor-invoices-overview.md)
--   [Szállítói feladási profilok](../../financials/accounts-payable/vendor-posting-profiles.md)
+-   [Szállítói számlák áttekintése](../../finance/accounts-payable/vendor-invoices-overview.md)
+-   [Szállítói feladási profilok](../../finance/accounts-payable/vendor-posting-profiles.md)
 
 ## <a name="procurement-and-sourcing-workflows"></a>Beszerzésekkel és forrásokkal kapcsolatos munkafolyamatok
 -   [A Beszerzés és forrás modul áttekintése](procurement-sourcing-overview.md)
@@ -104,3 +102,6 @@ A Beszerzés és forrás modul lefedi az összes lépést a termék- és szolgá
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

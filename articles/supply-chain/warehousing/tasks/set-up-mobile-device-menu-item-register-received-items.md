@@ -2,27 +2,24 @@
 title: Mobileszköz-menüelem beállítása a bevételezett elemek regisztrálásához
 description: Ez a témakör a mobileszköz menüpontja beállítását ismerteti.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFMenuItem, WHSRFMenu, WHSRFDefaultData
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f636a1f3d598a069c3922160eedbe05b68bc91eb
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: d9dc74d51dae4af21679ed71b68286ca29ff6201977242490fb749364a223f64
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764668"
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Mobileszköz-menüelem beállítása a bevételezett elemek regisztrálásához
 
@@ -60,3 +57,6 @@ Ezt az útmutatót használhatja az USMF bemutatócégen. Ezt az eljárást a ra
 6. Válassza a **Mentés** lehetőséget.
 7. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

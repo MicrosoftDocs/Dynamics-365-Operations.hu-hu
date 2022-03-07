@@ -2,11 +2,9 @@
 title: Formátumok módosítása Excel-sablonok újbóli alkalmazásával
 description: Az alábbi lépések végrehajtásához először hajtsa végre az „ER-konfiguráció létrehozása az OPENXML formátumban létrejövő jelentésekre vonatkozóan” eljárás lépéseit.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c5b1bc5f227a0944c513dee2c12a5042decde872
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 24eb64679b458d14e30dc5b4365c7305d71cfc4c
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684235"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5754890"
 ---
 # <a name="modify-formats-by-reapplying-excel-templates"></a>Formátumok módosítása Excel-sablonok újbóli alkalmazásával
 
@@ -83,3 +81,6 @@ Ez az eljárás azt ismerteti, hogyan módosíthatja egy elektronikus jelentési
 ## <a name="use-the-modified-draft-version-of-the-er-format-for-payment-journal-processing"></a>Az ER-formátum módosított piszkozatverziójának használata a fizetési napló feldolgozásához
 
 Tekintse át a létrehozott munkalapot, beleértve a fizetési sorok új adatát, a fizetési dátumot.  
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d776ad4eda623f55a69d81eefd0e88842d9da401
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722767"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5841237"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Számlaautomatizálás beolvasott dokumentumokhoz
 
@@ -34,7 +34,7 @@ A számlaautomatizálás lehetővé tesz egy szabványos felületet, amely elfog
 
 Az alábbi illusztráció olyan mintaintegrációs forgatókönyvet mutat be, amelyben a Contoso egy OCR-szolgáltatóval társult a beszállítói számlák feldolgozása tekintetében. A Contoso szállítói a szolgáltatónak e-mailben küldik el a számlákat. Az OCR-feldolgozással a szolgáltató számlametaadatokat (fejlécek és/vagy sorok) és a számla egy beolvasott képét hozza létre. Egy integrációs réteg átalakítja ezeket a műtermékeket úgy, hogy felhasználhatók legyenek.
 
-![Mintaintegrációs forgatókönyv.](media/vendor_invoice_automation_01.png)
+![Mintaintegrációs forgatókönyv](media/vendor_invoice_automation_01.png)
 
 Az előző forgatókönyv számos változata lehetséges, ha számlaintegrációra van szükség. Az adatok áttelepítése egy másik olyan eset, ahol ez a felület használható számlák és melléklet létrehozásához.
 
@@ -92,7 +92,7 @@ Olyan esetekben, amikor szállítói számlák integráción keresztül kerülne
 
 A számlázási kivételeket tartalmazó új listaoldal itt érhető el: **Kötelezettségek** > **Számlák** > **Importálási hibák** > **Szállítói számlák, amelyeknek sikertelen volt az importálása**. Ez a lap a Szállítói számla fejlécének adatentitásában szereplő előkészítési tábla szállítói számla fejlécrekordjait jeleníti meg. Ne feledje, hogy ugyanazokat a rekordokat az **Adatkezelés** munkaterületről is megtekintheti. A kivételek kezelése funkció által nyújtott funkciókat az **Adatkezelés** munkaterületről is elvégezheti. A kivételkezelési szolgáltatás egy funkcionális felhasználóra lett optimalizálva, ami megkönnyíti a használatát.
 
-![Kivételek listájának oldala.](media/vendor_invoice_automation_02.png)
+![Kivételek listájának oldala](media/vendor_invoice_automation_02.png)
 
 Ez a listaoldal a következő mezőket tartalmazza, amelyek a csatornán keresztül érkeznek:
 
@@ -136,7 +136,7 @@ A kivételek listaoldal támogatja azokat a szabványos biztonsági beállítás
 + Felhasználónként
 + Jogi személy szerint
 
-![Felhasználói szerepkör és jogi személy által biztosított importálási feladat.](media/vendor_invoice_automation_04.png)
+![Felhasználói szerepkör és jogi személy által biztosított importálási feladat](media/vendor_invoice_automation_04.png)
 
 Ha a számlaimportálási feladathoz a biztonság van beállítva, a kivételek listaoldal tiszteletben tartja ezeket a beállításokat. A felhasználók csak azokat a kivételrekordokat látják, amelyeket ez a beállítás lehetővé tesz a számukra.
 

@@ -2,11 +2,8 @@
 title: A szöveges kategóriába tartozó ER-függvények listája
 description: A témakör tájékoztatást nyújt az Elektronikus jelentéskészítésben (ER) támogatott szövegfüggvényekről.
 author: NickSelin
-manager: kfend
-ms.date: 04/02/2020
-ms.topic: article
+ms.date: 09/09/2021
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 228620afc81e154eced572f3b6024d6836d00d66
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4686027"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075500"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>A szöveges kategóriába tartozó ER-függvények listája
 
@@ -35,15 +32,17 @@ Az Elektronikus jelentéskészítés (ER) szövegfüggvényei a *Karakterlánc* 
 | Funkció | Leírás |
 |----------|-------------|
 | [Char](er-functions-text-char.md) | Ez a függvény olyan *Karakterlánc* értéket ad eredményül, amely egyetlen karaktert mutat be, amelyre a megadott Unicode szám hivatkozik. |
-| [Összefűzés](er-functions-text-concatenate.md) | Ez a függvény az összes megadott karakterláncot *Karakterlánc* értékként adja vissza, miután egy karakterláncba lettek egyesítve. |
+| [Összefűzés](er-functions-text-concatenate.md) | Ez a függvény az összes megadott karakterláncot *Sztring* értékként adja vissza, miután egy karakterláncba lettek egyesítve. |
 | [Formátum](er-functions-text-format.md) | Ez a függvény a megadott karakterláncot egy *Karakterlánc* értékként adja vissza, miután az **%N** minden előfordulását az *N*. argumentummal helyettesítve formázza. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Ez a függvény egy adott *Felsorolás* értéket keres a megadott felsorolási adatforrásban a *Karakterlánc* értékként megadott felsorolási név használatával. Ha a *Felsorolás* értéke megtalálható, a függvény azt visszaadja. |
+| [GetLabelText](er-functions-text-getlabeltext.md) | Ez a függvény egy adott címkét keres az a *[Húr](er-formula-supported-data-types-primitive.md#string)* érték, amely a megadott címke fordítását jelenti a megadott nyelven. |
 | [GuidValue](er-functions-text-guidvalue.md) | Ez a függvény a megadott *Karakterlánc* típusú bemenetet *GUID* típusú adatelemmé konvertálja. |
 | [JsonValue](er-functions-text-jsonvalue.md) | Ez a funkció elemzi az adatokat a megadott elérési úton elérhető JavaScript Object Notation (JSON) formátumban, a megadott azonosítón alapuló skaláris érték kibontásához. Ezután *Karakterlánc* értékként adja vissza a kivont skaláris értéket. |
 | [Balra](er-functions-text-left.md) | Ez a függvény olyan *Karakterlánc* értéket ad vissza, amely megadott számú karaktert mutat a megadott karakterlánc kezdete után. |
 | [Len](er-functions-text-len.md) | Ez a függvény olyan *Egész* értéket ad vissza, amely a karakterek számát mutatja a megadott karakterláncban. |
 | [Lower](er-functions-text-lower.md) | Ez a függvény *Karakterlánc* értékként adja vissza a megadott karakterláncot, miután a program kisbetűssé alakította. |
-| [Mid](er-functions-text-mid.md) | Ez a függvény olyan *Karakterlánc* értéket ad vissza, amely megadott számú karaktert mutat a megadott karakterlánc adott pozíciójától kiindulva. |
+| [Mid](er-functions-text-mid.md) | Ez a függvény olyan *[Sztring](er-formula-supported-data-types-primitive.md#string)* értéket ad vissza, amely megadott számú karaktert mutat a megadott karakterlánc adott pozíciójától kiindulva. |
+| [NewGUID](er-functions-text-newguid.md) | Ez a függvény egy újonnan létrehozott *[GUID](er-formula-supported-data-types-primitive.md#guid)* értéket ad eredményül. |
 | [NumberFormat](er-functions-text-numberformat.md) | Ez a függvény egy *Karakterlánc* értéket ad eredményül, amely a megadott számot mutatja a megadott formátumban és egy opcionálisan meghatározott területi beállításokban. |
 | [NumeralsToText](er-functions-text-numeralstotext.md) | Ez a függvény *Karakterlánc* értékként adja vissza a megadott számot, miután kiírta (azaz szöveges karakterlánccá konvertálta) a megadott nyelven. |
 | [PadLeft](er-functions-text-padleft.md) | Ez a funkció egy adott hosszúságú *Karakterlánc* értéket ad vissza, amelyben a megadott karakterlánc eleje egy vagy több megadott karakterrel van kitöltve. |
@@ -62,3 +61,6 @@ Az Elektronikus jelentéskészítés (ER) szövegfüggvényei a *Karakterlánc* 
 [Képletszerkesztő az Elektronikus jelentéskészítésben](general-electronic-reporting-formula-designer.md)
 
 [Elektronikus jelentéskészítés képletének nyelve](er-formula-language.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -13,17 +13,14 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7af08e2d21bc1d806a62065e6c527b2f2de28c18
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
-ms.translationtype: MT
+ms.openlocfilehash: 2031fcedc978a198a244908951679d6f70e9cb90
+ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069732"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "6314402"
 ---
 # <a name="process-type"></a>Folyamat típusa
-
-
-[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -33,7 +30,7 @@ Ez a témakör bemutatja a Igen Nem lehetőség beállítását a Dynamics 365 H
 
 Fizikai név: mshr_hrmCompProcessType
 
-Ez a felsorolás a Humán erőforrások virtuális entitásokban lévő folyamattípus beállításkészletét adja meg.
+Ez a felsorolás beállításkészletet biztosít a Human Resources virtuális entitásainak folyamattípusához.
 
 | Érték | Címke | Leírás |
 | --- | --- | --- |

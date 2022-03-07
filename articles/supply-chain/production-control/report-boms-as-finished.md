@@ -2,16 +2,13 @@
 title: Anyagjegyzékek jelentése befejezettként
 description: Ez a cikk az anyagjegyzékek befejezettként való jelentéséről tartalmaz információkat.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMReportFinish, BOMReportFinishMax, BOMSetupReportFinish
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53251
 ms.assetid: 510d05a3-0073-438d-b0c4-b6a6df1882ea
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c68ff6fdb77cb8de23b6b803b0300c6daa0fd106
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: ff88622c2cbbdcff6130fb8c500ea12a1e454ecb5f33834bc0a69718038c9e89
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429810"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766583"
 ---
 # <a name="report-boms-as-finished"></a>Anyagjegyzékek jelentése befejezettként
 
@@ -89,3 +86,6 @@ Ebben az esetben a két aktuálisan készleten lévő COMP cikkszám figyelembe 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,25 +1,22 @@
 ---
 title: Hullámcímkék újranyomtatása és érvénytelenítése
 description: Ez a témakör azt mutatja be, hogyan lehet érvényteleníteni és újranyomtatni a meglévő hullám-címkéket.
-author: GarmMSFT
-manager: PJacobse
+author: perlynne
 ms.date: 07/09/2020
 ms.topic: article
-ms.service: dynamics-ax-applications
 ms.search.form: WHSWaveLabel, WHSWaveLabelTemplate, WHSWaveLabelLayoutRow, WHSWaveTableListPage, WHSWorkException, WHSMobileDisplayWaveLabelListLookup, WHSWaveLabelLayout, WHSWaveLabelType, WHSWaveLabelTemplateGroup
 audience: Application User
-ms.reviewer: PJacobse
-ms.search.scope: Core, Operations
+ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2020-07-09
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 0efa9400a3bf29e4e0dd56d9138cf8c3825556c7
-ms.sourcegitcommit: a26e4963d40796da21ce6581cfb2f4d9db4f6776
-ms.translationtype: HT
+ms.openlocfilehash: 052c6632d1c6c6b1f357d4066ca8b419698cae62
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "4429961"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572337"
 ---
 # <a name="reprint-and-void-wave-labels"></a>Hullámcímkék újranyomtatása és érvénytelenítése
 
@@ -218,3 +215,9 @@ Munkakivételek vezérlik a rövid kitárolás viselkedését. Munkakivétel be�
 1. Válassza ki a **Rövid kitárolás** lehetőséget.
 1. Válassza ki az ehhez a forgatókönyvhöz létrehozott munkakivételi kódot.
 1. Ha bejelölte a megfelelő kivételt, elérhetővé válik az **Érvénytelenítés és az újranyomtatás** jelölőnégyzet. Jelölje be ezt a jelölőnégyzetet, és hagyja jóvá. A megerősítést követően a program újraszámítja a **Címke-összeállítás azonosító** mező által meghatározott címketekercs-sorozatot a módosult munkasormennyiség alapján. Majd újranyomtatja a megadott nyomtatón.
+
+## <a name="additional-resources"></a>További erőforrások
+
+- [Hullámcímke nyomtatása](configure-wave-label-printing.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
