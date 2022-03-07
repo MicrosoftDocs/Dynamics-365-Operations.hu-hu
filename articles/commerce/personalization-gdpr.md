@@ -2,16 +2,13 @@
 title: Leiratkozás a személyre szabott ajánlatokról
 description: Ez a témakör azt mutatja be, hogyan teheti lehetővé az ügyfeleinek a személyre szabott ajánlatok fogadásáról való leiratkozást a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: bebeale
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: ''
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,20 +16,18 @@ ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 6a64b45e1326673dd84c3c705491c9c100cdd069
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: f634e39fe8ca7ffecfd1952933cb82e1bfe7d5a8eec28a61e1d78d21847f95f6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772937"
 ---
-# <a name="opt-out-of-personalized-recommendations"></a>Leiratkozás a személyre szabott ajánlatokról
+# <a name="opt-out-of-personalized-recommendations"></a>Személyre szabott ajánlatok kikapcsolása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan teheti lehetővé az ügyfeleinek a személyre szabott ajánlatok fogadásáról való leiratkozást a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A fiók létrehozása során az új vásárlók számára automatikusan be van állítva a személyre szabott ajánlatok fogadására. A Dynamics 365 Commerce azonban többféle módszert kínál a kereskedőknek, amellyel felhasználóik számára lehetővé tehetik az ezen ajánlások fogadásáról való leiratkozást és a személyes adatok feldolgozásának korlátozását. A személyre szabott ajánlások fogadásáról leiratkozott hitelesített felhasználóknak esetében azonnal leáll a személyre szabott listák megelenítése. Ezenkívül a személyre szabáshoz gyűjtött összes személyes adat el lesz távolítva a személyre szabott ajánlások modelljeiből.
 
@@ -49,11 +44,11 @@ A Commerce háttérrendszer Fiókkezelés részében a kereskedők elvégezhetik
 1. A háttérrendszer kezdőoldaláról keressen rá az **összes vevőre**.
 1. Keressen meg és válasszon ki egy vevőt, majd válassza ki a **Kiskereskedelem** gyorslapot.
 
-    ![Kiskereskedelem gyorslap](./media/Disablepersonalizationpart1.png)
+    ![Kiskereskedelem gyorslap.](./media/Disablepersonalizationpart1.png)
 
 1. Az **Adatvédelem** alatt állítsa a **Személyre szabás letiltása** beállítást **Igen** értékre.
 
-    ![Adatvédelmi beállítások](./media/Disablepersonalizationpart2.png)
+    ![Adatvédelmi beállítások.](./media/Disablepersonalizationpart2.png)
 
 1. Válassza a **Mentés** gombot, és zárja be az oldalt.
 
@@ -104,3 +99,6 @@ A következő példa azt mutatja be, hogyan hajthatja végre egy kiskereskedő e
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

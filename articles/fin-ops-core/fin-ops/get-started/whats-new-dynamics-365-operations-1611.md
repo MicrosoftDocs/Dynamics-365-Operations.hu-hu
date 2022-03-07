@@ -2,11 +2,9 @@
 title: Új vagy módosult elemek a Dynamics 365 for Operations 1611-es verziójában (2016. november)
 description: Ez a témakör a Dynamics 365 for Operations 1611 verziójában található új vagy módosított szolgáltatásokat írja le.
 author: sericks007
-manager: AnnBe
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0b5856ef83ff1e101896eefbbe022e70ad954219
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
-ms.translationtype: HT
+ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4797195"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752808"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Új vagy módosult elemek a Dynamics 365 for Operations 1611-es verziójában (2016. november)
 
@@ -498,7 +496,7 @@ Ez a témakör a Dynamics 365 for Operations 1611 verziójában található új 
 <li>ISO20022 beszedési megbízási fizetési formátum Olaszország esetében</li>
 <li>RIBA gyűjtemény átutalási formátum Olaszország esetében</li>
 <li>Belföldi adótranzakció-jelentés Olaszország esetében</li>
-<li>Tiltólista-jelentés Olaszország esetében</li>
+<li>Olaszországi blocklistás jelentés</li>
 <li>Modello770 jelentés Olaszország esetében</li>
 <li>Éves adóügyi kommunikációs jelentés Olaszország esetében</li>
 </ul>
@@ -945,3 +943,6 @@ A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asz
 ## <a name="additional-resources"></a>További erőforrások
 
 [Új vagy módosult elemek Finance and Operations kezdőlapján](whats-new-changed.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

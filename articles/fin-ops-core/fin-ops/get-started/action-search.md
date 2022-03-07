@@ -2,11 +2,9 @@
 title: Műveletkeresés
 description: Ez a cikk a művelet keresési funkciót ismerteti. A műveletkeresés segít megkeresni és adott lapon lefuttatni műveleteket.
 author: jasongre
-manager: AnnBe
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -16,16 +14,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dd9962451e8b72677e1a006dd9c1b8b8b268c93e
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
-ms.translationtype: HT
+ms.openlocfilehash: 6277c37ac43b8cc05c8b53da5ca0a1909f58c4f9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798647"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070034"
 ---
 # <a name="action-search"></a>Műveletkeresés
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a cikk a művelet keresési funkciót ismerteti. A műveletkeresés segít megkeresni és adott lapon lefuttatni műveleteket.
 
@@ -33,7 +34,7 @@ Ez a cikk a művelet keresési funkciót ismerteti. A műveletkeresés segít me
 
 Az oldalakon az utasítások elsősorban a műveletpaneleken láthatók, egyrészt az oldal tetején megjelenő normál műveletpanelen, és az oldal különböző szakaszaiban megjelenő eszköztárakon. A korábbi verziókban a billentyűtippek szolgáltatás lehetővé tette a műveletpanel bármely gombjának gyors elérését az Alt billentyű, majd egy betűsorozat lenyomásával.
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png)
+[![keyTipsAX6.](./media/keytipsax6.png)](./media/keytipsax6.png)
 
 A műveletkeresés funkció a billentyűparancs-tippeket helyettesíti, amelyek már nem érhetők el. Ez az új funkció lehetővé teszi, hogy gyorsan megkeressen és működtessen egy gombot bármelyik látható műveleti ablaktáblán.
 
@@ -47,7 +48,7 @@ A műveletkeresési funkció használatához kövesse az alábbi lépéseket.
 
 A gomb futtatása után a fókusz visszakerül az utolsó pozícióra az oldalon, így tovább dolgozhat.
 
-[![műveletkeresési mező](./media/action-search-field.png)](./media/action-search-field.png)
+[![műveletkeresési mező.](./media/action-search-field.png)](./media/action-search-field.png)
 
 A Ctrl+/ vagy az Alt+Q billentyűkombinációkkal is elindíthatja a műveletkeresést. Nyomja le a billentyűparancsot ismét, hogy visszatérjen a fókusz az utolsó pozícióra az oldalon.
 
@@ -63,11 +64,11 @@ Gyakran a gomb helyét és környezetét is ismernünk kell ahhoz, hogy teljesen
 
 Például beírta, hogy **össz** a **műveletkeresés** mezőbe, és most az eredménylistát nézi. Az első tétel az **Összesen** nevű gombnál ki van emelve. A gomb **Értékesítési rendelés** &gt; **Nézet** elérési útja is látható. Az elérési út **Értékesítési rendelés** része felel meg az **Értékesítési rendelés** lapnak a Művelet ablakban, és az elérési út **Megtekintés** része felel meg a **Megtekintés** csoportnak a lapon. Hasonlóan az elérési útja az **Összengedmény** gombnak (**Értékesítés**&gt;**Számítás**) ad tájékoztatást arról, hogy ez a gomb a **Számítás** csoportban az **Értékesítés** lapon található a Művelet ablakban. Tehát ez az információ segít megérteni, pontosan melyik gomb aktiválódik a műveletkeresés hatására (ha az eredménylistában az adott gombot választja).
 
-[![műveletkeresési mező adatokkal](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
+[![műveletkeresési mező adatokkal.](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png)
 
 Az előző példában a műveletkeresési funkció az oldal tetején található normál Műveleti ablaktáblából mutatott eredményeket. A műveletkeresés azonban az oldal más területein található, látható eszköztárakból is jelenít meg eredményeket. Például az **Aktuális készlet** gombot keresi, amely az **Értékesítési rendelés sorai** gyorslapon található. Ebben az esetben az eredménylistában látható gombelérési út (**Értékesítési rendelés sorai** &gt; **Készlet** &gt; **Nézet**) arról tájékoztat, hogy ez a gomb a **Készlet** menügomb **Nézet** fejlécében található az **Értékesítési rendelés sorai** gyorslapon.
 
-[![aktuális készlet](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
+[![aktuális készlet.](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
 > [!NOTE]
 > Vannak olyan gombok, amelyek nem jelennek meg a művelet keresésében. Ilyenek többek között legördülő párbeszédpanelek gombjai és a segédűrlapok gombjai. 
@@ -75,3 +76,6 @@ Az előző példában a műveletkeresési funkció az oldal tetején található
 ## <a name="action-search-vs-navigation-search"></a>Műveletkeresés és navigációs keresés
 
 A műveletkereséssel műveletek kereshetők meg és futtathatók egy oldalon. Emellett van egy másik keresési funkció is, amellyel oldalak kereshetők és nyithatók meg. Ezen funkcióval kapcsolatos további információk a [Navigációs keresés](navigation-search.md) cikkben találhatók.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

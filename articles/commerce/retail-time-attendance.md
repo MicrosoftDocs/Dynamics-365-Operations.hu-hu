@@ -2,16 +2,13 @@
 title: A munkaidő és a jelenlét-nyilvántartás kezelése a Retail alkalmazásban
 description: Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhatja a kiskereskedelmi munkaidő- és jelenlét-nyilvántartás kezelését a Dynamics 365 Commerce rendszerben.
 author: aamirallaqaband
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: JMGParameters
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: cca5e3232450e75f931a621b278c134129fc745c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 68aafc9f397333d88644bb1870bb4e65da32c265decb10e6ac420be99c1e2c4e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412980"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762668"
 ---
 # <a name="time-and-attendance-management-in-retail"></a>A munkaidő és a jelenlét-nyilvántartás kezelése a Retail alkalmazásban
 
@@ -41,9 +38,9 @@ Ez a témakör ismerteti az olyan helyzeteket, amelyek kezeléséhez használhat
 
 ### <a name="plan-worker-schedules"></a>Tervezze meg a dolgozói beosztásokat
 
-- Alkalmazzon profilokat a munkatervező segítségével. További információ: [Profil alkalmazása a munkatervezővel](https://technet.microsoft.com/library/aa551234.aspx).
+- Alkalmazzon profilokat a munkatervező segítségével. További információ: [Profil alkalmazása a munkatervezővel](/dynamicsax-2012/appuser-itpro/apply-profiles-using-work-planner).
 
-A konfiguráció lépéseivel kapcsolatos további információért, lásd: [Munkaidő és jelenlét beállítása](https://technet.microsoft.com/library/aa496971.aspx).
+A konfiguráció lépéseivel kapcsolatos további információért, lásd: [Munkaidő és jelenlét beállítása](/dynamicsax-2012/appuser-itpro/setting-up-time-and-attendance).
 
 ### <a name="commerce-specific-configuration"></a>Kereskedelemspecifikus konfigurálás
 
@@ -100,7 +97,7 @@ A konfiguráció lépéseivel kapcsolatos további információért, lásd: [Mun
         </tbody>
         </table>
 
-        [![Blokkolóóra állapotai](./media/timeclockstates.png)](./media/timeclockstates.png)
+        [![Blokkolóóra állapotai.](./media/timeclockstates.png)](./media/timeclockstates.png)
 
 - Tekintse meg a konfigurációs üzenetet és igazolja, hogy a pillanatnyi tevékenység idő korrekt.
 - Napló:
@@ -138,4 +135,7 @@ A Commerce felhasználója követi a munkafolyamatot, hogy kiszámolja, jóváha
 - Szállítmány kicsekkolás
 - Távollét regisztrálása
 
-Az Idő és jelenlét regisztrációkkal kapcsolatos további tudnivalókat lásd: [Feldolgozási idő és jelenlét nyilvántartása](https://technet.microsoft.com/library/aa573180.aspx).
+Az Idő és jelenlét regisztrációkkal kapcsolatos további tudnivalókat lásd: [Feldolgozási idő és jelenlét nyilvántartása](/dynamicsax-2012/appuser-itpro/process-time-and-attendance-registrations).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

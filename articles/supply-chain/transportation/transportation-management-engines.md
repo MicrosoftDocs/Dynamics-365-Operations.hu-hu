@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine, TMSFreightBillTypeAssignment, TMSZoneMaster, TMSEngineParameters
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ab6667ac02ca55eeb093fa5854a962ac4357aaac
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: aed20a4dc554db5d4c9bfe10992accc6ec719147
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429887"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233463"
 ---
 # <a name="transportation-management-engines"></a>Szállításkezelő kalkulátorok
 
@@ -89,7 +88,7 @@ A szállításkezelő kalkulátorok metaadatai a különböző kalkulátortípus
 | **Zónakalkulátor**                                | A metaadatokat közvetlenül a zóna alapadatainál kell beállítani.                                                                                                                                                                                                                                                                                                                                                                                                          |
 | **Szállításiidő-kalkulátor** és **Távolságkalkulátor** | A metaadatokat közvetlenül olvassa be a távolságkalkulátor konfigurációs beállítási képernyőjéről.                                                                                                                                                                                                                                                                                                                                                                                  |
 
-  **Metaadat-példa egy díjkalkulátor esetében** A szállításkezelő kalkulátor számára azonosítani kell a kiindulási címet, a célállamot és a célországot vagy a célrégiót, valamint a szállítás kezdő- és végpontját. A fenti követelmények használatával a metaadatok a következő táblázat adataihoz hasonlóan néznének ki. A táblázat arról is tájékoztat, hogy milyen típusú bemenő adatokra van szükség.
+  **Metaadat-példa egy díjkalkulátor esetében** A szállításkezelő kalkulátor számára azonosítani kell a kiindulási címet, a célállamot és a célországot vagy a célrégiót, valamint a szállítás kezdő- és végpontját. A fenti követelmények használatával a metaadatok a következő táblázat adataihoz hasonlóan néznének ki. A táblázat arról is tájékoztat, hogy milyen típusú bemenő adatokra van szükség.
 -   Határozza meg ezeket az információkat a **Szállításkezelés** &gt; **Beállítás** pontnál a **Díjalap típusa** lapon.
 
 | Szekvencia | Név                          | Mezőtípus | Adattípus | Keresés típusa    | Kötelező |
@@ -99,3 +98,6 @@ A szállításkezelő kalkulátorok metaadatai a különböző kalkulátortípus
 | 3        | Kezdőállomás irányítószáma | Hozzárendelés | Karakterlánc    | Irányítószám    | Kijelölve  |
 | 4        | Célállomás irányítószáma   | Hozzárendelés | Karakterlánc    | Irányítószám    | Kijelölve  |
 | 5        | Célország           | Hozzárendelés | Karakterlánc    | Ország/régió |           |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

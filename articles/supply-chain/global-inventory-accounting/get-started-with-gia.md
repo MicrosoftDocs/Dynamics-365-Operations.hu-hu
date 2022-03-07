@@ -6,23 +6,21 @@ ms.date: 06/18/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2021-06-18
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: f5b3c013996253de75cd85c4bcfc52ed159e8f9d
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
-ms.translationtype: MT
+ms.openlocfilehash: 59f9db309312bbbc88b4fa47c12c4c02f09e7c6d
+ms.sourcegitcommit: cbbb35c71ab4ff1ae08fa4f7cc97019b207246be
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860508"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "6301698"
 ---
 # <a name="get-started-with-global-inventory-accounting"></a>Első lépések a Global Inventory Accounting szolgáltatással
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 A Global Inventory Accounting szolgáltatás segítségével több készlet könyveléseit végezheti el a beállított Global Inventory Accounting főkönyvben. Minden Global Inventory Accounting főkönyvhöz egy *szabályt* társít. Egy szabály a következő típusú könyvelési irányelvek gyűjteményét jelenti:
 
@@ -43,7 +41,7 @@ A Global Inventory Accounting jelenleg nem támogatja a Supply Chain Management 
 > [!IMPORTANT]
 > A Global Inventory Accounting csak akkor használható, ha engedélyezve van az LCS-szolgáltatásban engedélyezett, nagy rendelkezésre állású környezet (nem OneBox környezet). Ezenkívül a Supply Chain Management 10.0.19-es vagy újabb verziójának is futnia kell.
 
-A Global Inventory Accounting nyilvános előnézetére való regisztrációhoz küldje el e-mailben az LCS-környezetazonosítót a [Global Inventory Accounting csoportnak](mailto:GlobalInvAccount@microsoft.com). Ha jóváhagyta a programot, a csoport egy követő e-mailt küld, amely tartalmaz egy Global Inventory Accounting bétakulcsot és a szolgáltatási végpontokat. Miután megkapja a béta kulcsot, [telepítheti a bővítményt](#install).
+A Global Inventory Accounting nyilvános előnézetére való regisztrációhoz küldje el e-mailben az LCS-környezetazonosítót a [Global Inventory Accounting csoportnak](mailto:GlobalInventoryAccounting@service.microsoft.com). Ha jóváhagyta a programot, a csoport egy követő e-mailt küld, amely tartalmaz egy Global Inventory Accounting bétakulcsot és a szolgáltatási végpontokat. Miután megkapja a béta kulcsot, [telepítheti a bővítményt](#install).
 
 ## <a name="licensing"></a>Licenckezelés
 
@@ -61,9 +59,9 @@ A bővítmények funkcióit a következő lépések segítségével kell Microso
 1. A **Power Platform környezetének** beállítása párbeszédpanelen jelölje be a jelölőnégyzetet, majd válassza a **Beállítás** lehetőséget. A beállítás általában 60 és 90 perc közötti időt vesz igénybe.
 1. A Microsoft Power Platform környezet beállítása után az oldal megjeleníti a környezet nevét. Ezenkívül az **Power Platform Integráció** szakasz a "Power Platform környezet beállítása kész" utasítást is megjeleníti. A Global Inventory Accountinghoz nem szükséges kétírásos alkalmazás.
 
-További információkért lásd: [Engedélyezés a környezet üzemelő példánya után](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
+További információkért lásd: [Beállítás a környezet üzemelő példánya után](../../fin-ops-core/dev-itpro/power-platform/overview.md#set-up-after-environment-deployment).
 
-### <a name="set-up-dataverse"></a>Dataverse beállítása
+### <a name="set-up-dataverse"></a>Dataverse Beállítása
 
 A következő lépések szerint adja hozzá a Global Inventory Accounting szolgáltatási elveket a Dataverse beállítása előtt.
 

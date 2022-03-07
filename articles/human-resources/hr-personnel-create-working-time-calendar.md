@@ -2,28 +2,28 @@
 title: Naptárak létrehozása és munkaidők generálása
 description: A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását. Ez a cikk bemutatja, hogyan definiálhat egy munkanaptárat egy munkaidősablon alapján.
 author: andreabichsel
-manager: AnnBe
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OpResLifeCycleManagementWorkspace, WorkCalendarTable, WorkCalendarDate, HcmPersonnelManagementWorkspace, WrkCtrGroupDateCalendar, WrkCtrDateCalendar
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: f5c630297a8962d1bb383110881b2acdc872b9cd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f28e11613cb9e10b258e1c373890505fb6e71d29
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418775"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5804913"
 ---
 # <a name="create-calendars-and-generate-working-times"></a>Naptárak létrehozása és munkaidők generálása
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -43,3 +43,6 @@ A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását
 12. Válassza ki az **OK** lehetőséget.
 13. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

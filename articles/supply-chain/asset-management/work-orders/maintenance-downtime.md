@@ -1,12 +1,10 @@
 ---
 title: Karbantartás miatti üzemkimaradás munkarendelések esetén
 description: Ez a témakör leírja, hogy a karbantartás miatti üzemkimaradás regisztrációkat a munkarendelésen kiválasztott eszközre vonatkozóan hogyan lehet létrehozni.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 53487a0173453ef7a8f5ea818672d999fe71cb65
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: 38c47a47fdf64c1d3601f6f3f7b84bf128823ec2ceb0c50e586822f6bdb97906
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020911"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753372"
 ---
 # <a name="maintenance-downtime-for-work-orders"></a>Karbantartás miatti üzemkimaradás munkarendelések esetén
 
@@ -88,3 +86,6 @@ Kattintson a **Vállalati eszközkezelés** > **Lekérdezések** > **Karbantart�
 >[!NOTE]
 >Az **Eszközkezelés** modulban használt összes naptár a szervezeti felügyelet **Szervezeti adminisztráció** > **Beállítás** > **Naptárak** > **Naptárak** helyen van beállítva.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,29 +1,26 @@
 ---
 title: Szolgáltatási tárgyak áttekintése
-description: A szolgáltatási tárgyak a vevő azon eszközei és termékei, amelyhez szolgáltatást lehet elvégezni.
-author: ShylaThompson
-manager: tfehr
+description: Ez a témakör a szolgáltatási objektumok használatával kapcsolatban nyújt áttekintést.
+author: kamaybac
 ms.date: 07/25/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 29d2cf6a496fed8d9932d5c6d49f4560d7eabbbb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 9cf5e146bb7eab4df5807c6a55f773bfb31a4c5e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429205"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571377"
 ---
 # <a name="service-objects-overview"></a>Szolgáltatási tárgyak áttekintése
 
@@ -47,3 +44,6 @@ Az A vállalat pénzügyi nyilvántartást kezel több kisebb vállalat számár
 
 [Szolgáltatási objektumok létrehozása](create-service-objects.md)
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

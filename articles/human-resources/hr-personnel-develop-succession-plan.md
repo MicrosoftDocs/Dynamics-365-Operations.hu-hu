@@ -1,62 +1,61 @@
 ---
 title: Utódlási terv kialakítása
-description: Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előfordulhat, hogy olyan embert keres, aki hasonló szakértelemmel rendelkezik, mint egy másik személy.
+description: A szervezet növekedésével el kell kezdenie az utánpótlás-tervezést.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: HcmSkillMapping, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e9334bb8a594d19aa82167cfa11a9522bbba4bea
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: c2c82280feed911537b5803fb55626eaaa1019b4
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418785"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803537"
 ---
-# <a name="develop-succession-plan"></a>Utódlási terv kialakítása
+# <a name="develop-a-succession-plan"></a>Utódlási terv kialakítása
 
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+A szervezet növekedésével el kell kezdenie az utánpótlás-tervezést. Az utánpótlás-tervezés során általában olyan embert keres, aki hasonló szakértelemmel rendelkezik, mint egy másik személy. A szakértelem feltérképezése segítségével elemezheti a meglévő alkalmazottait és a pályázókat, hogy ellenőrizze, egyeznek-e valamelyik értékelt alkalmazott szakértelemkészletével. Ez az eljárás az USMF bemutatócéget használja.
 
-Ha a szervezet növekedésével Ön utánpótlás-tervezés mellett dönt, előfordulhat, hogy olyan embert keres, aki hasonló szakértelemmel rendelkezik, mint egy másik személy.  Szakértelem-feltérképezés segítségével elemezheti a meglévő alkalmazottait és a pályázókat, hogy ellenőrizze, egyeznek-e valamelyik értékelt alkalmazott szakértelemkészletével. Ez az eljárás az USMF bemutatócéget használja.
-
-1. Ugrás az Emberi erőforrások > Szakértelem > Szakértelem elemzése > Szakértelem-feltérképezési profilok lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. A szakértelem-feltérképezéshez adjon meg egy nevet a Szakértelem feltérképezése mezőben.  Példa: Alkalmazott.
-4. A Leírás mezőben adjon meg egy értéket.
-5. Adja meg a dátumot a Dátum mezőben.
-6. Kattintson a Profil beolvasására.
-7. Kattintson a Személy parancsra.
-8. A Személy mezőben adjon meg egy nevet, vagy válasszon a legördülő listából.  Példa: Cassie Hicks.
-9. Kattintson az OK gombra.
-10. Bontsa ki a tanúsítványok gyorsfület, így láthatja vagy szerkesztheti a szakértelem-feltérképezésben szereplő tanúsítványokat.
-11. Bontsa ki a Szakértelmek gyorslapot a belefoglalandó Szakértelmek megjelenítéséhez és szerkesztéséhez.
-12. A listában jelölje meg az első sort.  Például: könyvelés
-13. Kattintson az Opcionális jelölőnégyzetre.
-14. Egy lehetőség kiválasztása Fontosság mezőben.
-    * Ha egy szakértelmet opcionális cikként jelöl meg, ki kell választania a szakértelem fontosságának szintjét.  
+1. Lépjen az **Emberi erőforrások > Szakértelem > Szakértelem elemzése > Szakértelem-feltérképezési profilok** lehetőségre.
+2. Válassza az **Új** lehetőséget.
+3. A **Szakértelem feltérképezése** mezőben adjon meg egy nevet a szakértelem feltérképezéséhez. Példa: Alkalmazott.
+4. Írjon egy értéket a **Leírás** mezőbe.
+5. Adja meg a dátumot a **Dátum** mezőben.
+6. Válassza a **Profil beolvasása** lehetőséget.
+7. Válassza a **Személy** lehetőséget.
+8. A **Személy** mezőben adjon meg egy nevet vagy válasszon a legördülő listából.
+9. Válassza ki az **OK** lehetőséget.
+10. Bontsa ki a **Tanúsítványok** gyorslapot, így láthatja vagy szerkesztheti a szakértelem-feltérképezésben szereplő tanúsítványokat.
+11. Bontsa ki a **Szakértelmek** gyorslapot a belefoglalandó szakértelmek megjelenítéséhez és szerkesztéséhez.
+12. A listában jelölje meg az első sort. Például: könyvelés.
+13. Jelölje be a **Választható** jelölőnégyzetet.
+14. A **Fontosság** mezőben válasszonki egy lehetőséget. Ha egy szakértelmet opcionális cikként jelöl meg, ki kell választania a szakértelem fontosságának szintjét.  
 15. Jelölje ki az 2. sort a listában.
-16. Kattintson az Opcionális jelölőnégyzetre.
-17. Egy lehetőség kiválasztása Fontosság mezőben.
+16. Jelölje be a **Választható** jelölőnégyzetet.
+17. A **Fontosság** mezőben válasszonki egy lehetőséget.
 18. Jelölje ki az 3. sort a listában.
-19. Kattintson az Opcionális jelölőnégyzetre.
-20. Egy lehetőség kiválasztása Fontosság mezőben.
+19. Jelölje be a **Választható** jelölőnégyzetet.
+20. A **Fontosság** mezőben válasszonki egy lehetőséget.
 21. Jelölje ki az 4. sort a listában.
-22. Kattintson az Opcionális jelölőnégyzetre.
+22. Jelölje be a **Választható** jelölőnégyzetet.
 23. Egy lehetőség kiválasztása Fontosság mezőben.
-24. A szakértelem-feltérképezésbe belekerülő végzettség kompetenciák megtekintéséhez és szerkesztéséhez bontsa ki a Végzettségek gyorslapot.
-25. Kattintson a végrehajtásra.
-26. Kattintson az OK gombra.
-27. Kattintson az Eredményre.
-28. Kattintson a Jelentésre.
-    * A jelentés a legjobb találatokat felül mutatja.  Megtekintheti, hogy van-e hiányelem felsorolva.  Ez az elem az eltérést jelzi a szakértelem feltérképezésén felsorolt szint és a személy szakértelmének szintje között.  
+24. A szakértelem-feltérképezésbe belekerülő végzettség kompetenciák megtekintéséhez és szerkesztéséhez bontsa ki a **Végzettségek** gyorslapot.
+25. Válassza a **Végrehajtás** lehetőséget.
+26. Válassza ki az **OK** lehetőséget.
+27. Válassza az **Eredmény** lehetőséget.
+28. Válassza a **Jelentés** lehetőséget. A jelentés a legjobb találatokat legfelül mutatja. Megtekintheti, hogy van-e hiányelem felsorolva. A hiány a szakértelem-feltérképezési szint és a személy szakértelmének szintje közötti különbség.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

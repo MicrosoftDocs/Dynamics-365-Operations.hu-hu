@@ -5,6 +5,7 @@ author: sherry-zheng
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -12,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: ba745048d1d9f28300f03ed0bc98142d80aa5a26
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: bb5ecaa237eed2a1902c965fd42b31cc1708a4e2
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7569817"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833857"
 ---
 # <a name="landed-cost-vs-transportation-management"></a>Partraszállítási költség és Szállításkezelés
 
@@ -50,8 +51,8 @@ A TMS és a Partraszállítási költség nem osztja meg a hivatkozási adatokat
 
 A következő jelentések nem működnek a Partraszállítási költség által biztosított átszállítási funkcióval:
 
-- [Úton lévő vállalatközi áruk összesen jelentés](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
-- [Úton lévő vállalatközi áruk összesen jelentés](/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Úton lévő vállalatközi áruk összesen jelentés](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
+- [Úton lévő vállalatközi áruk összesen jelentés](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/intercompany-goods-in-transit-totals-report-intercompanygoodsintransittotals)
 
 Ezek a jelentések feltételezik, hogy az áru a szállítólevél kiállítása után azonnal szállításra kerülnek, illetve az átszállításból való bevételezéskor a készletbe kerülnek. Az úton lévő áruk feldolgozása azonban nem így történik. Ezért ha az úton lévő árukat és a vállalatközi funkciókat együtt használja, mindkét jelentés eredményei helytelenek lesznek.
 

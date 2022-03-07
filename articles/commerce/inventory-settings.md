@@ -2,15 +2,12 @@
 title: Készlet beállításainak alkalmazása
 description: Ez a témakör a készlet beállításaival foglalkozik, és leírja, hogy hogyan kell alkalmazni azokat a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-manager: annbe
-ms.date: 09/15/2020
+ms.date: 10/15/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: dfa8b2bdc03e3698feda26932db757421097140d
-ms.sourcegitcommit: 4bf5ae2f2f144a28e431ed574c7e8438dc5935de
-ms.translationtype: HT
+ms.openlocfilehash: 4ba3e67cf9c72b9a9606528c02f9e57d19a74c1f
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "4517064"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647584"
 ---
-# <a name="apply-inventory-settings"></a>Készlet beállításainak alkalmazása
+# <a name="apply-inventory-settings"></a>Készletbeállítások alkalmazása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a készlet beállításaival foglalkozik, és leírja, hogy hogyan kell alkalmazni azokat a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A készlet beállításai határozzák meg, hogy ellenőrizni kell-e a készletet, mielőtt termékek kerülnek a kosárba. Meghatározzák a készlettel kapcsolatos értékesítési üzeneteket is, például a "Készleten" és a "Már csak néhány maradt". Ez a beállítás gondoskodik arról, hogy a termék nem vásárolható meg, ha elfogyott.
 
@@ -44,12 +39,22 @@ A Commerce webhelykészítőben egy termékhez vagy egy kategóriához lehet def
 
 ## <a name="inventory-settings"></a>Készletbeállítások
 
-A Commerce alkalmazásban a készletbeállítások a **Webhelybeállítások \> Bővítmények \> Készletkezelés** alatt adhatók meg a webhelykészítőben. Négy készletbeállítás van, amelyek közül az egyik elavult:
+A Commerce alkalmazásban a készletbeállítások a **Webhelybeállítások \> Bővítmények \> Készletkezelés** alatt adhatók meg a webhelykészítőben. Hat készletbeállítás van, amelyek közül az egyik elavult:
 
 - **Készletellenőrzés engedélyezése az alkalmazásban** – Ez a beállítás bekapcsolja a termékkészlet ellenőrzését. A vásárlás mező, a kosár és az átvétel az üzletben modul is ellenőrzi a termék készletét, és lehetővé teszi a terméknek a kosárba történő felvételét, ha a készlet elérhető.
 - **Készletszint alapja** – Ez a beállítás határozza meg a készletszint számításának módját. A rendelkezésre álló értékek a **Teljes rendelkezésre álló**, a **Rendelkezésre álló tényleges** és az **Elfogyott küszöbérték**. A Commerce webhelykészítőben minden termékhez ás kategóriához lehet definiálni a készletküszöbértéket és -tartományokat. A készlet API-k termékkészlet-információkat adnak vissza mind a **Teljes rendelkezésre álló** tulajdonság, mind a **Rendelkezésre álló tényleges** tulajdonság esetében. A kiskereskedő dönti el, hogy a **Teljes rendelkezésre álló** vagy a **Rendelkezésre álló tényleges** érték kerüljön felhasználásra a készletszám és a vonatkozó raktáron és elfogyott állapotok megállapításához.
 
     A **Készletszint alapja** beállítás **Elfogyott küszöbérték** értéke egy régi (örökölt), elavult érték. Ha ki van választva, akkor a leltározás a **Teljes rendelkezésre álló** érték eredményei alapján történik, de a küszöbértéket a későbbiekben meghatározott **Elfogyott küszöbérték** numerikus beállítása határozza meg. Ez a küszöbérték-beállítás minden termékre vonatkozik az e-kereskedelmi webhelyen. Ha a készlet nem éri el a küszöbértéket, akkor a termék elfogyottnak minősül. Ellenkező esetben raktáron levőnek kell tekinteni. Az **Elfogyott küszöbérték** érték képességei korlátozottak, ezért a használata nem ajánlott a 10.0.12-es és későbbi verziókban.
+
+- **Több raktár készletszintje** – Ez a beállítás lehetővé teszi a készletszint kiszámítását az alapértelmezett raktárhoz vagy több raktárhoz. Az **Egyedi raktár alapján** lehetőség az alapértelmezett raktár alapján számítja ki a készletszinteket. Másik lehetőségként az e-kereskedelmi webhely több raktárra is mutathat, hogy megkönnyítse a teljesítést. Ebben az esetben a készlet rendelkezésre állásának jelzésére a **Szállítási és kitárazási raktárak összesítése alapján** beállítás használható. Ha például egy vevő vásárol egy cikket, és a szállítási módként a „szállítás” lehetőséget választja, akkor a cikk a teljesítési csoport bármelyik raktárába szállítható, amelynek van rendelkezésre álló készlete. A termék részleteit tartalmazó oldal (PDP) a szállításhoz egy „Készleten” üzenetet fog küldeni, ha a teljesítő csoportban bármelyik rendelkezésre álló szállító raktárnak van készlete. 
+
+    > [!IMPORTANT] 
+    > A **Több raktár készletszintje** beállítás a Commerce 10.0.19-es verziójától érhető el. Ha a Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az utasításokat lásd itt: [SDK- és modultár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
+
+- **Terméklistaoldalak készletbeállításai** – Ez a beállítás meghatározza, hogy hogyan jelennek meg a nem készleten található termékek a terméklistákban, amelyeket a termékgyűjtemény és keresési előzmények modulok hoztak létre. Az elérhető értékek: **Megjelenítés sorrendben más termékekkel**, **A nem készleten lévő termékek elrejtése** és **Nem készleten lévő termékek megjelenítése a lista végén**. A beállítás csak akkor használható, ha előbb konfigurál néhány előfeltételül szolgáló beállítást a Commerce Headquarters szolgáltatásban. A további tudnivalókat lásd a [Készletérzékenység engedélyezése a keresési eredmények modulban](search-result-module.md#enable-inventory-awareness-for-the-search-results-module).
+
+    > [!IMPORTANT] 
+    > A **Termékbeállítások terméklistaoldalakhoz** beállítás a Commerce 10.0.20-es verziójától érhető el. Ha a Commerce egy korábbi verziójáról frissít, akkor manuálisan kell frissítenie az appsettings.json fájlt. Az utasításokat lásd itt: [SDK- és modultár-frissítések](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
 - **Készlettartományok** – Ez a beállítás határozza meg a készlettartományokat, amelyekhez üzenetek kerülnek megjelenítésre a helyi modulok esetében. Csak akkor alkalmazható, ha a **Teljes rendelkezésre álló** érték vagy a **Rendelkezésre álló tényleges** érték van kiválasztva a **Készletszint alapja** számára. A rendelkezésre álló értékek a **Mind**, az **Alacsony és elfogyott**, valamint az **Elfogyott**.
 
@@ -66,21 +71,21 @@ A Commerce alkalmazásban a készletbeállítások a **Webhelybeállítások \> 
 
 A vásárlásmező, kívánságlista, üzletválasztó, kosár és kosárikon modulok készletbeállításokat használnak a készlettartományok és az üzenetek megjelenítéséhez.
 
-A következő képen a termék részleteit tartalmazó oldal (PDP) egy példája látható, amely egy raktáron lévő ("elérhető") üzenetet jelenít meg.
+A következő példában az alábbi ábra, PDP jelenít meg egy készleten („Elérhető”) üzenetet.
 
 ![Egy olyan PDP-modul példája, amely tartalmaz egy készleten üzenetet.](./media/pdp-InStock.png)
 
-A következő képen a termék részleteit tartalmazó oldal (PDP) egy példája látható, amely egy „Elfogyott” üzenetet jelenít meg.
+A következő példában az alábbi ábra, PDP jelenít meg egy „Elfogyott” üzenetet.
 
 ![Egy olyan PDP-modul példája, amely tartalmaz egy elfogyott üzenetet.](./media/pdp-outofstock.png)
 
-A következő képen a kosár egy példája látható, amely egy raktáron („Elérhető”) üzenetet jelenít meg.
+A következő példában az alábbi ábra, kosár jelenít meg egy készleten („Elérhető”) üzenetet.
 
 ![Egy olyan kosármodul példája, amely tartalmaz egy készleten üzenetet.](./media/cart-instock.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Modulkönyvtár – áttekintés](starter-kit-overview.md)
+[Modultár áttekintése](starter-kit-overview.md)
 
 [Készletpufferek és készletszintek konfigurálása](inventory-buffers-levels.md)
 
@@ -93,3 +98,6 @@ A következő képen a kosár egy példája látható, amely egy raktáron („E
 [Üzletválasztó modul](store-selector.md)
 
 [SDK- és modulkönyvtár-frissítések](e-commerce-extensibility/sdk-updates.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

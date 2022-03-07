@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7c50affa05b8df53d31660854f4d1ead6aeff820
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 508226a3b5693b123af639cf6f130be07811c3c2
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429788"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5209515"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Bizományosi készlet tulajdonosának módosítása gyártási igény alapján
 
@@ -55,3 +54,6 @@ Ez az eljárás bemutatja, hogyan módosítható a bizományosi készlet tulajdo
 2. Kattintson az OK gombra.
 3. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

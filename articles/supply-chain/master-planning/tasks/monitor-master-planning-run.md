@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4db1173b35cd196ab39fae3cac3754439fab84d0
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
-ms.translationtype: MT
+ms.openlocfilehash: dfd1906200038c27e63f9434bba27e7146f4c80c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103163"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575608"
 ---
 # <a name="monitor-a-master-planning-run"></a>Alaptervezés futtatásának megfigyelése
 
@@ -28,11 +28,12 @@ ms.locfileid: "8103163"
 
 Az **Alaptervezési folyamat megtekintése** lapon megtekintheti a múltbeli Alaptervezés futtatások adatait Gantt-diagramként. Ez a funkció segít megérteni az Alaptervezés különböző fázisaiban töltött időt. Egy aktuális aktív tervezési feladathoz az **Alaptervezési folyamat megtekintése** lapon nyomon követheti az előrehaladást, és megtekintheti a becsült hátralévő időt.
 
-### <a name="turn-the-master-plan-progress-visualization-feature-on-or-off"></a>A Főterv előrehaladási vizualizációs funkciójának be- és kikapcsolása
+### <a name="turn-on-and-use-the-master-plan-progress-visualization-feature"></a>Az alaptervezés folyamatmegjelenítési funkciójának bekapcsolása és használata
 
-Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha a 10.0.25-ösnél régebbi verziót futtatja, akkor a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha megkeresik a *Főtervezési folyamat vizualizációs* funkcióját a [Funkciókezelési](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületen.
+A funkció használatához kövesse az alábbi lépéseket.
 
-### <a name="use-the-master-plan-progress-visualization-feature"></a>A főterv előrehaladásának vizualizációs szolgáltatásának használata
+1. A **funkciókezelés** munkaterületen az **új** lapon válassza ki a listában az **Alaptervezés folyamatmegjelenítése** elemet. Ha a funkció nem jelenik meg az **új** lapon, akkor keresse a **nem engedélyezett és** az **Összes** lapon.
+1. Válassza az **Engedélyezés most** lehetőséget. Azt is megteheti, hogy az **ütemezés** elemet választja, majd azt az időpontot, amikor be kívánja kapcsolni a szolgáltatást.
 
 Az **Alaptervezés folyamatmegjelenítése** lap a múltbeli tervezési feladatok és az aktív tervezési feladatok megjelenítésére is képes. 
 

@@ -1,10 +1,12 @@
 ---
 title: Főkönyvi felosztási szabályok
 description: Ez a cikk a főkönyvi felosztási szabályokkal kapcsolatos információkat tartalmaz. Leírja az ezen felosztási szabályok különböző összetevőit, és a hozzájuk használható felosztási módszereket.
-author: kweekley
+author: ShylaThompson
+manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerAllocation, LedgerAllocationBasisRule, LedgerAllocationRequest, LedgerAllocationRule
 audience: Application User
@@ -12,21 +14,21 @@ ms.reviewer: roschlom
 ms.custom: 15402
 ms.assetid: 8147e148-7c11-45ef-95c6-f9889a875b54
 ms.search.region: Global
-ms.author: kweekley
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 718640390cd1d4c6c2e9fb1d6bdeba21b515be4a
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
-ms.translationtype: MT
+ms.openlocfilehash: 8006221c36abcc24893741458d2cf6b25a6010e6
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7726871"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4988752"
 ---
 # <a name="ledger-allocation-rules"></a>Főkönyvi felosztási szabályok
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a főkönyvi felosztási szabályokkal kapcsolatos információkat tartalmaz. Leírja az ezen felosztási szabályok különböző összetevőit, és a hozzájuk használható felosztási módszereket.
+Ez a cikk a főkönyvi felosztási szabályokkal kapcsolatos információkat tartalmaz. Leírja az ezen felosztási szabályok különböző összetevőit, és a hozzájuk használható felosztási módszereket.
 
 Főkönyvi felosztási szabályok segítségével automatikusan kiszámítsa és a felosztási naplók és főkönyvi egyenlegek vagy rögzített összegek felosztásának számlabejegyzések létrehozása. Felosztási módszert is lehet, változó vagy állandó. Az alábbi felosztási módok Főkönyvi felosztási szabályok használható:
 
@@ -48,6 +50,3 @@ Minden felosztási szabály négy elsődleges összetevőből áll: általános,
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

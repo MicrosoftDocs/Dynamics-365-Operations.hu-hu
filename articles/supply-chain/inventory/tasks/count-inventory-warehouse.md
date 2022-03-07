@@ -2,27 +2,24 @@
 title: Készlet számlálása egy raktárban
 description: Ez a témakör leírja azt a folyamatot amellyel létrehozható és feladható egy készletleltározási napló a raktárban egy adott helyen található konkrét cikk leltározásához.
 author: MarkusFogelberg
-manager: tfehr
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalCount, InventJournalCreate, HcmWorkerLookUp, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 34013783bab79d80f1dac9a7806042608635e617
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 24b8bc2daff2d7df6279c76f4d9a0e83244c7988
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429785"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5834049"
 ---
 # <a name="count-inventory-in-a-warehouse"></a>Készlet számlálása egy raktárban
 
@@ -56,3 +53,6 @@ Ez a témakör leírja azt a folyamatot amellyel létrehozható és feladható e
 1. Válassza a **Készlet** lehetőséget.
 2. Válassza a **Tranzakciók** lehetőséget. Itt láthatók a kapcsolódó tranzakciók, amelyek a készletleltározási napló feladásakor jönnek létre.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

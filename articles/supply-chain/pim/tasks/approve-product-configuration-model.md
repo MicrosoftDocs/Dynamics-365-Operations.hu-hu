@@ -1,27 +1,24 @@
 ---
 title: Termékkonfigurációs modell jóváhagyása
 description: Ezen eljárás futtatásához szükség van legalább egy elérhető termékkonfigurációs modellre.
-author: ShylaThompson
-manager: tfehr
+author: t-benebo
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCProductModelVersion, PCApproveProductModelVersion, HcmWorkerLookUp
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 440ffbdf1db22ac25971922d80a5569a340ba81c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 2aefc1a26158fd23af7330bfff7a6ac0e8f3e347
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429530"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578176"
 ---
 # <a name="approve-a-product-configuration-model"></a>Termékkonfigurációs modell jóváhagyása
 
@@ -29,23 +26,25 @@ ms.locfileid: "4429530"
 
 Ezen eljárás futtatásához szükség van legalább egy elérhető termékkonfigurációs modellre. Ezen eljárás az USMF bemutatócég felső kategóriás hangszóró modelljét használja. Fontos megjegyezni, hogy a modell már jóvá van hagyva, de az eljárás végigvezeti a teljes folyamaton.
 
-1. Kattintson a Termékváltozat modelldefinícióra.
-2. Kattintson a Termékkonfigurációs modellek lehetőségre.
-3. Keresse meg és jelölje ki a kívánt rekordot a listán.
+1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán.
     * Válassza ki a Felső kategóriás modellt ehhez az eljáráshoz.  
-4. Kattintson a Verziókra.
-5. Kattintson az Új lehetőségre.
-6. A Termékszám mezőben adjon meg, vagy válasszon ki egy értéket.
+1. Válassza a **Verziók** lehetőséget.
+1. Válassza az **Új** lehetőséget.
+1. A **Termékszám** mezőben adjon meg, vagy válasszon ki egy értéket.
     * A termékre mutató hivatkozás a termékkonfigurációs modell egy verziójának felel meg. Ez a lista csak olyan alaptermékeket jelenít meg, amelyek a megszorításon alapuló konfigurációs technológiát alkalmazzák.  
-7. Adjon meg egy dátumot a Kezdő dátum mezőben.
+1. Adjon meg egy dátumot a **Kezdő dátum** mezőben.
     * Válassza ki, hogy mikor lesz elérhető a termékmodell-verzió.  
-8. Adja meg a dátumot a „Záró dátum” mezőben.
+1. Adjon meg egy dátumot a **Záró dátum** mezőben.
     * Válassza ki a záró dátumot, amikor a termékmodell-verzió lejár, vagy válassza a Soha lehetőséget.  
-9. A Jóváhagyás gombra kattintva megnyithatja a legördülő párbeszédablakot.
-10. A Jóváhagyó mezőben adjon meg vagy válasszon ki egy értéket.
+1. A **Jóváhagyás** gombra kattintva megnyithatja a legördülő párbeszédablakot.
+1. A **Jóváhagyó** mezőben adjon meg vagy válasszon ki egy értéket.
     * Válassza ki a termékmodellek műveletekben történő használatának jóváhagyásáért felelős személyt.  
-11. Kattintson az OK gombra.
-12. Válassza ki valamelyik lehetőséget az Árazási mód mezőben.
+1. Válassza ki az **OK** lehetőséget.
+1. Válassza ki valamelyik lehetőséget az **Árazási mód** mezőben.
     * Aktiválja a termékmodell-verziót. Egyszerre csak egy termék lehet aktív egy termékmodell esetében.  
-13. Zárja be a lapot.
+1. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

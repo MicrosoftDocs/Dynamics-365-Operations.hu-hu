@@ -1,28 +1,25 @@
 ---
 title: Jelentéskészítés egy mobil feladatvégző eszközön elért haladásról
 description: Ez az eljárással megmutatja, hogyan indíthat termelési feladatot és jelentheti az előrehaladását a feladateszköz-regisztrációs űrlapon.
-author: ShylaThompson
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgRegistrationTouch, JmgRegistrationTouchUserConfiguration, JmgRegistrationTouchStart, JmgRegistrationTouchReportFeedback, JmgRegistrationTouchAssignedJobs, JmgRegistrationTouchBreak, JmgRegistrationTouchLeave, JmgRegistrationTouchIndirectActivity, JmgDialogForm, JmgRegistrationTouchReportProgress, JmgFeedbackWizard, JmgJobBundleProdFeedback
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 34067902f05546b5c420feca633f77f16033ed2c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 4f919a23fa3008356746dfd5b33b2835c8cf3de9
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429502"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566527"
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a>Jelentéskészítés egy mobil feladatvégző eszközön elért haladásról
 
@@ -65,3 +62,6 @@ Ezen eljárás futtatásához rendszergazdai vagy gépkezelői szerepkört kell 
 29. Kattintson az OK gombra.
 30. Válasszon egy okot, hogy miért jelentkezik ki korán.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

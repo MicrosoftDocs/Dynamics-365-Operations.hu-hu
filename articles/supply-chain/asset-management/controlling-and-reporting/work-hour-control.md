@@ -11,18 +11,19 @@ ms.technology: ''
 ms.search.form: EntAssetHourControl
 audience: Application User
 ms.reviewer: kamaybac
+ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: mkirknel
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: cc4382d72e032fdfad05f2077ffe8e41e64c6a55
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 0d2f4e86b5dec84d4a24db6a4f9f9f16f6a765bd
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5018471"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4429412"
 ---
 # <a name="work-hour-control"></a>Munkaóra-ellenőrzés
 

@@ -2,27 +2,24 @@
 title: Kulcsrakész jelentések generálása és futtatása
 description: Használja ezt a feladatútmutatót kulcsrakész jelentések futtatásához a Központban a Commerce-ben található különböző munkaterületekről és Lekérdezésekből és Értékesítési jelentésekből.
 author: ashishmsft
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailCategoryAndProductWorkspace, RetailOrgHierarchyTreeLookup, SrsReportViewerForm
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d148fa36a116860af8c44043d90759b8a2d76fb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 27dc29109693c06913c8107e27e79a48cf2c9db7146ff3a5919305366641af3d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412893"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6774461"
 ---
 # <a name="generate-and-run-out-of-box-reports"></a>Kulcsrakész jelentések generálása és futtatása
 
@@ -33,13 +30,13 @@ Használja ezt a feladatútmutatót kulcsrakész jelentések futtatásához a K�
 A bemutató adatsor típusa, melyet a vállalat használt az útmutató készítéséhez, az USRT. Ez a felvétel a Rendszeradminisztrátor szerepkör számára készült.
 
 ## <a name="launch-reports-from-workspaces"></a>Indítsa el a jelentéseket a munkaterületekről
-1. Ugorjon a Retail and Commerce > Termékek és kategóriák > Kategóriák és termékmenedzsment lehetőségre.
+1. Ugorjon a Retail és Commerce > Termékek és kategóriák > Kategóriák és termékmenedzsment lehetőségre.
 2. Kattintson a nyílra a Jelentések szakasz kibontásához vagy összecsukásához.
 3. Kattintson a Vezető termékek jelentései lehetőségre.
 4. Adjon meg egy dátumot a Kezdő dátum mezőben.
 5. Adja meg a dátumot a „Záró dátum” mezőben.
 6. A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-7. A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\Central\Houston” lehetőséget.
+7. A fán válassza ki a 'Contoso Retail\Contoso Retail USA\Central\Houston' lehetőséget.
     * Ez megmutatja az alapértelmezett szervezeti hierarchiát a Commerce jelentési célja esetében.   Ugorjon a Szervezet felügyelete > Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a Commerce jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop. A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy az Áruházak régiók szerint az alapértelmezett szervezeti hierarchia a jelentési célra.     
 8. Kattintson az OK gombra.
 9. Válasszon ki egy lehetősége a Nézet mezőben.
@@ -51,7 +48,7 @@ A bemutató adatsor típusa, melyet a vállalat használt az útmutató készít
 2. Adjon meg egy dátumot a Kezdő dátum mezőben.
 3. Adja meg a dátumot a „Záró dátum” mezőben.
 4. A Csatorna mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-5. A fanézetben válassza ki a „Contoso Retail\Contoso Retail USA\West\Seattle” lehetőséget.
+5. A fán válassza a 'Contoso Retail\Contoso Retail USA\West\Seattle' lehetőséget.
     * Ez megmutatja az alapértelmezett szervezeti hierarchiát a Commerce jelentési célja esetében. Ugorjon a Szervezet felügyelete > Szervezetek > Szervezeti hierarchia céljai lehetőségre és válassza ki a Commerce jelentést, majd a Hozzárendelt hierarchiák alatt ellenőrizze a hierarchia nevét, amelyhez be van jelölve az Alapértelmezett oszlop. A (feladatrögzítéshez használt) bemutatóadatok részeként észre fogja venni, hogy az Áruházak régiók szerint az alapértelmezett szervezeti hierarchia a jelentési célra.     
 6. Kattintson az OK gombra.
 7. Kattintson az OK gombra.
@@ -64,3 +61,6 @@ A bemutató adatsor típusa, melyet a vállalat használt az útmutató készít
 5. Kattintson az Exportálás elemre.
 6. Kattintson a PDF elemre.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

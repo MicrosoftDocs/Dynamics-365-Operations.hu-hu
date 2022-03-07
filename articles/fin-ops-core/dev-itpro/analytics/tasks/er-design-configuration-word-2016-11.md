@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: de8286c7612cd588b28cf4667340374906962dde
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
-ms.translationtype: MT
+ms.openlocfilehash: 4d4eb4fd4ea32db5aa19e9d2b1300818b3aaf6fc
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324062"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594984"
 ---
 # <a name="reuse-er-configurations-with-excel-templates-to-generate-reports-in-word-format"></a>ER-konfigurációk újrafelhasználása Excel-sablonokkal Word-formátumú jelentések generálásához
 
 [!include [banner](../../includes/banner.md)]
 
-A dokumentumokként történő jelentéskészítéshez Microsoft Word konfigurálhat [egy](../er-design-configuration-word.md)[új elektronikus jelentési (ER) formátumot](../general-electronic-reporting.md). Arra is lehetőség van, hogy egy eredetileg Excel-munkafüzetként generált jelentéseket készítő ER-formátumot újrafelhasználjon. Ebben az esetben az Excel-sablont Word-sablonra kell cserélnie.
+A jelentések Microsoft Word dokumentumokként történő létrehozásához [konfigurálhat](../er-design-configuration-word.md) egy új [elektronikus jelentéskészítési (ER)](../general-electronic-reporting.md) [formátumot](../general-electronic-reporting.md#FormatComponentOutbound). Arra is lehetőség van, hogy egy eredetileg Excel-munkafüzetként generált jelentéseket készítő ER-formátumot újrafelhasználjon. Ebben az esetben az Excel-sablont Word-sablonra kell cserélnie.
 
 A következő eljárások bemutatják, hogyan konfigurálhat egy ER-formátumot a Rendszergazda szerepkör vagy az Elektronikus jelentések fejlesztője szerepkör egy felhasználója úgy, hogy a jelentések Word-fájlként való generálása során egy jelentések Excel-fájlként való generálására tervezett ER-formátumot használ fel újra.
 

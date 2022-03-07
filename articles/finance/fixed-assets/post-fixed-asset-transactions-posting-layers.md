@@ -2,28 +2,25 @@
 title: Tárgyieszköz-tranzakciók feladása a feladási rétegekbe
 description: Ez a cikk a tárgyi-eszköztranzakciók feladási réteg funkciójába nyújt betekintést.
 author: moaamer
-manager: AnnBe
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetBookTable, LedgerJournalTransAsset
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 3001
 ms.assetid: 7dabde57-0843-47c3-85ef-f36b6f472e30
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a80e4d1a081b5bd8c58238b0f154f8fbdc660ccb
-ms.sourcegitcommit: f80819c67c0a7475315fc68ce1cb568831e2c0e7
+ms.openlocfilehash: 0d1c66df39c9712a5d4d26ba4eaa1ce079719c31
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "4493672"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832994"
 ---
 # <a name="post-fixed-asset-transactions-to-posting-layers"></a>Tárgyieszköz-tranzakciók feladása a feladási rétegekbe
 
@@ -49,3 +46,6 @@ A további tudnivalókat lásd [Származtatott könyvek](derived-books.md) és [
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,19 +2,19 @@
 title: A Finance and Operations-alkalmazások szolgáltatásleírása
 description: Ez a témakör a Finance and Operations-alkalmazások szolgáltatásleírását tartalmazza.
 author: tomhig
-ms.date: 01/05/2022
+ms.date: 09/29/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 85f82a863f0bde4c0414760fa2477651242538f2
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
-ms.translationtype: MT
+ms.openlocfilehash: a1547f0cc6c6f705cd0e2ff6e5be751cb97b946a
+ms.sourcegitcommit: 79d19924ed736c9210fa9ae4e0d4c41c53c27eb5
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952366"
+ms.lasthandoff: 09/30/2021
+ms.locfileid: "7581816"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások szolgáltatásleírása
 
@@ -50,10 +50,10 @@ A Finance and Operations-alkalmazások működési modellje a szolgáltatás tel
 
 ### <a name="customer-activities"></a>Ügyféltevékenységek
 
-Az ügyfelek a Dynamics 365 implementáció útmutatóját, a keretrendszert, valamint [a](/dynamics365/fasttrack/)[...](https://community.dynamics.com/365/dynamics-365-fasttrack/p/dynamics365implementationguide)[Success by Design](/dynamics365/fasttrack/success-by-design-overview)[Lifecycle Services rendszernek a megoldás megvalósításához rendelkezésre álló eszközöket és gyakorlati sablonokat követik, partnerüknek és Microsoft FastTrackjüknek](../../dev-itpro/lifecycle-services/lcs.md) megfelelően. Gyakori tevékenységek a következők:
+Az ügyfelek együttműködnek a partnereikkel és a [Microsoft FastTrackkel](/dynamics365/fasttrack/) a [Success by Design](/dynamics365/fasttrack/success-by-design-overview) keretrendszert követve, és a [Lifecycle Services](../../dev-itpro/lifecycle-services/lcs.md) rendszerben biztosított eszközök és bevált gyakorlati minták segítségével valósítják meg a megoldást. Gyakori tevékenységek a következők:
 
 - Felhasználói identitás és biztonságkezelés
-- Üzleti folyamatok meghatározása, kialakítása és működtetása
+- Üzleti folyamatok meghatározása, kialakítása és üzemeltetése
 - Bővítmények meghatározása, fejlesztése, tesztelése és működtetése
 - Nem termelési telepítések figyelése és kezelése
 - Alkalmazásfrissítések kezelése és bővítmények érvényesítése
@@ -66,7 +66,7 @@ A Microsoft kezeli a Finance and Operations szolgáltatást az ügyfelek teszt- 
 **Infrastruktúra-kezelés**
 - Biztonság és elkülönítés
 - Operációs rendszerek és virtualizálás
-- Kiszolgálók, tárolás és hálózat
+- Kiszolgálók, tárterület és hálózatépítés
 - Adatközpont áramellátása, hálózatépítés, hűtés
 
 **Alkalmazásplatform-kezelés**
@@ -117,7 +117,7 @@ A Finance and Operations-alkalmazásokat világszerte számos Azure-régió szol
 ### <a name="countryregion-specific-considerations"></a>Ország- vagy régióspecifikus szempontok
 
 - A szabályozott iparágban vagy kereskedelmi szervezetben található olyan vevőknek, akik entitásokkal rendelkeznek Franciaországban, és helyi adattárolási helyre van szükségük, tekintsék át: [Finance and Operations Franciaországban](../../dev-itpro/deployment/france-local-deployment.md).
-- A kínai műveletekkel működő vevőknek át kell vizsgálniuk az Azure kínai forgatókönyvet, és a [kínai](/azure/china/) [Finance and Operations 21Vianet által működtetett könyveket kell](../../dev-itpro/deployment/china-local-deployment.md) működtetni.
+- Az ügyfelek, akik Kínában folytatnak üzletet, tekintsék át: [Finance and Operations amelyet a 21Vianet működtet Kínában](../../dev-itpro/deployment/china-local-deployment.md).
 - Az Oroszországban üzletet folytató ügyfelek tekintsék át: [Oroszorszégi személyesadat-honosítással kapcsolatos törvény](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### <a name="general-data-protection-regulation-gdpr"></a>Általános adatvédelmi rendelet (GDPR)
@@ -314,7 +314,7 @@ A Microsoft vészhelyreállítási terveit és eljárásait rendszeresen ellenő
 | A Microsoft másodlagos környezetet biztosít az Azure párosított adatforrásában az elsődleges termelési példány telepítésekor. A további tudnivalókat lásd: [Üzletmenet-folytonosság és vészhelyreállítás (BCDR): Azure párosított régiók](/azure/best-practices-availability-paired-regions). | None |
 | A Microsoft engedélyezi az Azure SQL- és Azure Blob Storage földrajzi redundanciáját az elsődleges termelési példány telepítésekor. | None |
 | A Microsoft engedélyezi az automatikus biztonsági mentést az Azure SQL-adatbázisokon. | None |
-| <p>Ha üzemkimaradás történik, a Microsoft meghatározza, hogy a vevő esetén el kell-e végezni a feladatátvételt, és hogy adatvesztés történik-e. A vevők a kiesés jellegétől és időzítésétől függően legfeljebb 15 percnyi adatvesztést tapasztalnak. | Adatvesztés esetén előfordulhat, hogy a vevőnek írásban alá kell írnia a feladatátvétel kiváltása érdekében. |
+| <p>Ha üzemkimaradás történik, a Microsoft meghatározza, hogy a vevő esetén el kell-e végezni a feladatátvételt, és hogy adatvesztés történik-e. Az adatvesztés akár 5 másodperc is lehet. A további tudnivalókat lásd: [az Azure SQL-adatbázis földrajzi visszaállítása](https://azure.microsoft.com/blog/azure-sql-database-geo-restore).</p><p>Adatvesztés esetén a Microsoft kéri az ügyfél aláírását a feladatátvételhez.</p> | Adatvesztés esetén előfordulhat, hogy a vevőnek írásban alá kell írnia a regisztrációt, hogy a feladatátvételt kiváltsa. |
 | A feladatátvételi folyamat esetén a megfelelő szolgáltatás korlátozott módban működik. A frissítés karbantartása nem indítható el feladatátvételi módban. | Az ügyfél nem kérhet csomagtelepítést vagy más rendszeres karbantartási kérést feladatátvételi módban. |
 | Amikor az adatközpont működésbe lép, a Microsoft visszatér az elsődleges Azure-régió termelési példányához. A normál műveletek folytatódnak. | Előfordulhat, hogy az ügyfélnek vissza kell jelentkeznie a termelési példányra az elsődleges Azure-régióban. |
 
@@ -356,7 +356,6 @@ A Microsoft elkötelezett a szolgáltatás havonta 99,9 százalékos elérhetős
 - **[Licencelési útmutató](https://www.microsoft.com/licensing/docs/view/Microsoft-Dynamics-365)** – Ebben az útmutatóban további tudnivalókat olvashat a Dynamics 365 licencelésével kapcsolatban.
 - **[Ügyféltámogatás](https://dynamics.microsoft.com/support/)** – Iparágvezető támogatást nyújt a Dynamics 365-alkalmazásokhoz.
 - **[Dynamics Lifecycle Services](https://lcs.dynamics.com/)** – Itt kezelheti az alkalmazása életciklusát, és áttérhet tervezhető, megismételhető, jó minőségű megvalósításokra.
-- **[Dynamics 365 implementációs útmutató – a Dynamics 365-ös implementációs útmutató időkorrektív elveket tartalmaz, és általános útmutatást ad a mérnöknek, a buildnek, a tesztelésnek és a](https://aka.ms/D365ImplementationGuideFlip)** Success by Design Dynamics 365-alapú megoldásoknak.
 
 ## <a name="definitions"></a>Definíciók
 
@@ -429,10 +428,6 @@ A SLA a Microsoft online szolgáltatásaira vonatkozik. További információké
 ### <a name="service-update"></a>Szolgáltatásfrissítés
 
 A Microsoft a Finance and Operations-környezeteket a szolgáltatásfrissítések révén, rendszeres időközönként szervizeli. Az ügyfelek az üzleti igényeiknek megfelelően saját szolgáltatásfrissítési naptárat állíthatnak be. További információk: [Egyverziós szolgáltatásfrissítések](../../dev-itpro/lifecycle-services/oneversion-overview.md).
-
-### <a name="success-by-design"></a>[Success by Design](/dynamics365/fasttrack/success-by-design-overview)
-
-Ez a keretrendszer a kritikus szakaszokban végzett végrehajtáson keresztül módszeres végigvezeti a megvalósítást, hogy garantálható legyen a Dynamics 365-ös megoldás optimális architektúrája, biztonsága, teljesítménye és felhasználói élménye.
 
 ### <a name="user"></a>Felhasználó
 

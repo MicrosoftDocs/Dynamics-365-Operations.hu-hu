@@ -1,28 +1,28 @@
 ---
 title: Beszerzési igénylések áttekintése
 description: Ez a témakör a beszerzési igénylési munkafolyamatot, valamint a beszerzési igénylés különböző állapotait írja le.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 11/02/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage, PurchReqConsolidationPartByVendor, PurchReqConsolidationLineDetail, PurchReqConsolidationCreate, PurchReqConsolidationBulkEdit, PurchReqConsolidationAddLine
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 2174
+ms.custom:
+- "2174"
+- intro-internal
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 189debe46ea28808cf3081a7d8f49686298e8c8e
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: acd0deebe79e29bd1beb32ea21cd179f5bf12c43
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020079"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982902"
 ---
 # <a name="purchase-requisition-overview"></a>Beszerzési igénylések áttekintése
 
@@ -49,7 +49,7 @@ Konfigurálhatja a beszerzési igénylés munkafolyamatot, hogy egyetlen dokumen
 
 Az alábbi diagrammon a beszerzési igénylés állapotai és a beszerzési igénylések sorai láthatók, amint áthaladnak a munkafolyamaton.  
 
-[![A beszerzési igénylési sor fejléce és sorok állapota](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![A beszerzési igénylési sor fejléce és sorok állapota.](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>A beszerzési igénylési sor fejléce és sorok állapotainak kapcsolatai
 
@@ -181,7 +181,7 @@ Olyan beszerzési igénylés létrehozásakor, beszerzési rendelésnél, amelye
 
 Az igényösszesítési eljárás akkor indul el, amikor a munkafolyamatban a beszerzési igénylés jóváhagyásra kerül és ha a költségvetés-ellenőrzés a szervezethez lett konfigurálva a költségvetési tartalékok és az előzetes kötelezettségvállalások rögzítésénél. A következő ábrán az igényösszesítés folyamata látható.  
 
-[![Folyamatáramlat igényösszesítéshez](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
+[![Folyamatáramlat igényösszesítéshez.](./media/demand-consolidation.gif)](./media/demand-consolidation.gif)  
 
 A jóváhagyott beszerzési igénylési sorok konszolidálásához tegye a következőket:
 
@@ -192,8 +192,7 @@ A jóváhagyott beszerzési igénylési sorok konszolidálásához tegye a köve
 5.  Hozzon létre beszerzési rendeléseket az összesített igényléssorokhoz vagy beszerzési igényléssorokhoz egy összevonási lehetőségben.
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Felhasználási igénylés létrehozása](tasks/create-requisition-consumption.md)
 
@@ -201,3 +200,6 @@ A jóváhagyott beszerzési igénylési sorok konszolidálásához tegye a köve
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

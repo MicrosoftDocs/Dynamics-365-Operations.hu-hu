@@ -1,12 +1,10 @@
 ---
 title: ER Számláláshoz és összegzéshez használt formátum konfigurálása (4. rész – Formátum futtatása)
-description: Az alábbi útmutató azt ismerteti, hogy a rendszergazda vagy elektronikus jelentésfejlesztői szerepkörhöz hozzárendelt felhasználó hogyan konfigurálhat egy elektronikus jelentési (ER) formátumot számlálás és összegzés céljára a már létrehozott szöveges kimeneti adatok alapján.
+description: Ez a témakör azt ismerteti, hogyan kell konfigurálni az Elektronikus jelentéskészítési formátumokat a már létrehozott szövegkimenet adatai alapján. (4. rész)
 author: NickSelin
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, IntrastatParameters, Intrastat, InventItemIdLookupSimple, IntrastatCommodityLookup, ERFormatMappingRunLogTable, DocuView
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8f37fc3c611e9c5328f4d99be8c7c63ab59b2f08
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: 5202f8be275df08142c9848a2381fe5bc2ed7289a1f1fe1f8e6d349e38c2b14d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684643"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753598"
 ---
 # <a name="er-configure-format-to-do-counting-and-summing-part-4---run-format"></a>ER Számláláshoz és összegzéshez használt formátum konfigurálása (4. rész – Formátum futtatása)
 
@@ -103,3 +101,6 @@ Az eljárás egy olyan szolgáltatáshoz tartozik, amely a Dynamics 365 for Oper
 21. Kattintson a Megnyitás gombra.
     * Tekintse át a létrehozott XML-fájlt, amely tartalmazza a kijelölt konfiguráció végrehajtása során gyűjtött számlálási és összegzési adatokat.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

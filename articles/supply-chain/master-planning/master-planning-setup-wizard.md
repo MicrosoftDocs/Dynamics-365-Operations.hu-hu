@@ -1,17 +1,14 @@
 ---
-title: Alaptervezés-beállítási varázsló
-description: Ez a témakör az alaptervezés beállításához használt különböző fontos stratégiákat és paramétereket ismerteti.
-author: t-benebo
-manager: tfehr
+title: Alaptervezés beállítási varázsló (videofelvételt tartalmaz)
+description: Ez a témakör azt ismerteti, hogyan lehet futtatni az alaptervezés telepítővarázslóját az alaptervezés beállításához.
+author: ChristianRytt
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,14 +16,14 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: b38009cbfdd5444c6643c5c0159a1aa475aaa3ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 453184a3fed567b3a09e5e45e7f904bcf855dd6d
+ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429648"
+ms.lasthandoff: 12/18/2021
+ms.locfileid: "7937633"
 ---
-# <a name="master-planning-setup-wizard"></a>Alaptervezés-beállítási varázsló
+# <a name="master-planning-setup-wizard"></a>Alaptervezés-beállítás varázslója
 
 [!include [banner](../includes/banner.md)]
 
@@ -48,13 +45,13 @@ A varázsló első oldala a vállalat egyedi igényeire kérdez rá. Az ezekre a
 
 Ha a szálak kiszámított száma meghaladja a rendelkezésre álló szálak számát, akkor a rendszer az egyes vevőkhöz rendelkezésre álló szálak számát 75%-ra korlátozza. (A rendelkezésre álló szálak száma az egyes vevőknél lesz meghatározva.)
 
-További információért tekintse meg a [Szálak száma](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads) részt.
+További információért tekintse meg a [Szálak száma](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-threads) részt.
 
 ### <a name="bundle-size"></a>Csomag mérete
 
 A csomagméret értékét **1**-re állítja a rendszer. Ez az érték gyakran a legjobb érték, mivel segít az Alaptervezés teljesítményének javításában.
 
-További információ: [A segítő feladatcsomagban található feladatok száma](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
+További információ: [A segítő feladatcsomagban található feladatok száma](/dynamics365/unified-operations/supply-chain/master-planning/master-planning-performance#number-of-tasks-in-helper-task-bundle).
 
 ### <a name="firming-bundle-size"></a>Megerősítő csomagméret
 
@@ -67,7 +64,7 @@ Csomagszámítás = (Tervezett rendelések száma × (Megerősítési időkorlá
 
 A gyorsítótár értékét **Maximum**-ra állítja a rendszer. Ez az érték gyakran a legjobb érték, mivel segít az Alaptervezés teljesítményének javításában.
 
-További információ: [Idők hozzárendelése egy feladatköteg feladataihoz](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
+További információ: [Idők hozzárendelése egy feladatköteg feladataihoz](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle).
 
 ### <a name="manufacturing-setup"></a>Gyártási beállítás
 
@@ -91,7 +88,7 @@ Az oldal további kérdései és válaszai ugyanezt a sémát követik:
 - **Igen, az adott alaptervben való meghatározás szerint** – Az **Előrejelzési terv (időkorlát)** beállítás **Igen** értékre lesz állítva. A beírt napok számát fogja használni a rendszer, és felülírja a fedezeti csoportokban beállított értékeket.
 - **Igen, a fedezeti csoportban való meghatározás szerint** – Az **Előrejelzési terv (időkorlát)** beállítás **Nem** értékre lesz állítva.
 
-További információ: [Feladatütemezés](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+További információ: [Feladatütemezés](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="scheduling-options"></a>Ütemezési beállítások
 
@@ -102,7 +99,7 @@ Az adott oldalon az első kérdésre adott válasza („Szeretné a műveleteket
 - **Igen** – A program a feladatütemezést használja.
 - **Nem** – A program a műveletütemezést használja.
 
-További információk: [Műveletütemezés](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) és [Feladatütemezés](https://docs.microsoft.com/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
+További információk: [Műveletütemezés](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling) és [Feladatütemezés](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling).
 
 ## <a name="updates-of-demand-and-supply"></a>Az igény és ellátás frissítései
 
@@ -209,3 +206,6 @@ A varázslóban a Contoso Retailer vállalathoz a következő értékeket adták
     - **Válasz:** „Igen, az alaptervben meghatározottak szerint.” **1 napot** kell beírni.
 
     A Contoso az üzletei jóváhagyott igénylései segítségével hoz létre tervezett beszerzési rendeléseket az üzletek feltöltése érdekében. Mivel az Alaptervezés minden nap fut, az előző nap igénylései szerepelni fognak a tervezésben.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

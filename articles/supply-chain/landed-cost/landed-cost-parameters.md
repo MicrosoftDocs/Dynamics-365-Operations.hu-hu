@@ -1,6 +1,6 @@
 ---
 title: Partraszállítási költség paramétereinek beállítása
-description: Ez a témakör az általános információk és konfigurációs beállítások beállítását ismerteti, amelyeket a leszállított költségek modulban a könyvelés, az állapotfrissítések, a számsorozatok és a viselkedés tekintetében használnak.
+description: Ez a témakör azt ismerteti, hogyan lehet általános információkat és konfigurációs beállításokat magadni, amelyek a Partraszállítási költség modulban használatosak feladásra, állapotfrissítésre, számsorozatokhoz és viselkedésekhez.
 author: sherry-zheng
 ms.date: 12/07/2020
 ms.topic: article
@@ -13,13 +13,13 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 834a8cc5b50e02afb1ecf7f53d2c4fa661764219
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 138ef5b3fc210a6a717200d0c41422ea901373c1dfbf1a53cd558603c11277ea
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7571785"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747985"
 ---
 # <a name="landed-cost-parameters-setup"></a>Partraszállítási költség paramétereinek beállítása
 

@@ -2,15 +2,12 @@
 title: Jogosultsági szabályok és beállítások konfigurálása
 description: A Microsoft Dynamics 365 Human Resources szolgáltatás juttatáskezelésében megadhatja a jogosultsági szabályokat és beállításokat.
 author: andreabichsel
-manager: AnnBe
-ms.date: 04/06/2020
+ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
@@ -18,14 +15,16 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 70054acafc3aec35fd985c0ca81e928519ddd0a3
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418802"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351657"
 ---
 # <a name="configure-eligibility-rules-and-options"></a>Jogosultsági szabályok és beállítások konfigurálása
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Miután konfigurálta a szükséges paramétereket a Microsoft Dynamics 365 Human Resources juttatáskezeléséhez, létrehozhat a juttatási konstrukciókhoz rendelhető jogosultsági szabályokat, csomagokat, időszakokat és programokat.
 
@@ -39,7 +38,7 @@ A nyitott jelentkezés során az alkalmazottak választhatnak juttatási konstru
 
 2. Jogosultsági szabály létrehozásához a **Jogosultsági szabályok** lapon válassza az **Új** lehetőséget. A jogosultsági szabályokhoz társított konstrukciók megtekintéséhez válassza a **Csatolt konstrukciók** elemet.
 
-3. Adjon meg értékeket a következő mezőkben:
+3. Adjon meg értékeket a következő mezőkben.
 
    | Mező | Leírás |
    | --- | --- |
@@ -57,9 +56,9 @@ A nyitott jelentkezés során az alkalmazottak választhatnak juttatási konstru
    | **Regisztrációs időszak** | Az az időszak, amikor az új dolgozói belépés engedélyezve van. Ha ezt a paraméterekben is beállítja, akkor a paraméterek beállítása felülbírálja ezt a beállítást. |
    | **Korábbi foglalkoztatási állapot használata** | Megadja, hogy az alkalmazott korábbi foglalkoztatási státuszát kell-e használni a juttatás jogosultsági szabályának részeként. Megadhat például egy jogosultsági szabályt, amely felold egy fedezeti várakozási időszakot minden olyan alkalmazott számára, aki az **Elbocsátott** állapotról egy **Alkalmazott** állapotba került az előző munkaviszonyától számított 90 napon belül. |
 
-4. A **További feltételek** területen válassza ki a következő beállításokat, és adja meg a szükséges adatokat:
+4. A **További feltételek** területen válassza ki a következő beállításokat, és adja meg a szükséges adatokat.
 
-   | Lehetőség | Leírás |
+   | Beállítás | Leírás |
    | --- | --- |
    | **Jogosult életkor** | Meghatározza a jogosultsági szabály teljesítéséhez szükséges életkortartományt vagy -tartományokat. |
    | **Jogosult részleg** | Megadja, hogy az alkalmazottnak milyen részlegben vagy részlegekben kell lennie ahhoz, hogy eleget tegyen a jogosultsági szabálynak. |
@@ -76,7 +75,7 @@ A nyitott jelentkezés során az alkalmazottak választhatnak juttatási konstru
    | **Jogosult szakszervezet** | Megadja a jogosultsági szabálynak eleget tevő szakszervezeti tagságot. Például: Forklift Drivers of America. </br></br>Ha szakszervezeti alapú jogosultsági szabályt alkalmaz, a dolgozó szakszervezeti rekordjában szerepelnie kell a záró dátumnak. Nem hagyhatja üresen. |
    | **Jogosult irányítószám** | Megadja a jogosultsági szabálynak eleget tevő irányítószámokat. Például, 58104 elem. |
 
-5. A **További részletek** területen a következő további részleteket tekintheti meg:
+5. A **További részletek** területen a következő további részleteket tekintheti meg.
 
    | Mező | Leírás |
    | --- | --- |
@@ -87,6 +86,72 @@ A nyitott jelentkezés során az alkalmazottak választhatnak juttatási konstru
 
 6. Válassza a **Mentés** lehetőséget.
 
+## <a name="using-custom-fields-in-eligibility-rules"></a>Egyéni mezők használata a jogosultsági szabályokban
+
+A további adatok nyomon követésére [egyéni mezőket](hr-developer-custom-fields.md) lehet létrehozni a Human Resourceson belül. Ezek a mezők közvetlenül hozzáadhatók a felhasználói felülethez, és egy oszlopot dinamikusan hozzá lehet adni az alapul szolgáló táblához.  
+
+A jogosultsági folyamathban használhatók egyéni mezők. A jogosultsági szabályok egy vagy több egyéni mezőérték használatával határozhatják meg az alkalmazottak jogosultságát.  Ha egyéni mezőt szeretne hozzáadni egy meglévő szabályhoz, vagy ha új szabályt szeretne létrehozni, lépjen a **Juttatáskezelés > Hivatkozások > Beállítás > Jogosultsági szabályok > Egyéni mező jogosultsága** részre. Ezen az oldalon létrehozhat olyan szabályt, amely egy vagy több egyéni mezőt használ, és a jogosultság meghatározásához értékeket definiálhat az egyes egyéni mezőkhöz.
+
+A következő táblák támogatják a jogosultsági feldolgozásban használható egyéni mezőket:
+
+- Dolgozó (HcmWorker)  
+- Feladat (HcmJob)  
+- Beosztás (HcmPosition)  
+- Beosztás részletei (HcmPositionDetail)  
+- Beosztáshoz rendelt dolgozó  
+- Foglalkoztatás (HcmEmployment)  
+- Foglalkoztatás részletei (HcmEmploymentDetails)  
+- Feladat részletei (HcmJobDetails)  
+
+A következő egyéni mezőtípusok támogatottak a jogosultsági feldolgozásban:
+
+- Szöveg  
+- Értéklista  
+- Szám  
+- Decimális  
+- Jelölőnégyzet  
+
+Az alábbi táblázatban az egyéni mezők jogosultsági űrlapmezőjének adatai láthatók.
+
+| Mező  | Leírás |
+|--------|-------------|
+| Név | Az éppen létrehozott feltételek neve. |
+| Tábla neve | A jogosultsági szabályhoz használt egyéni mezőt tartalmazó tábla neve. |
+| Mezőnév | A jogosultsági szabályhoz használandó mező. |
+| Operátor típusa | Az egyéni mező jogosultsági konfigurációjában használt operátor megjelenítése. |
+| Érték | Az egyéni mező jogosultsági konfigurációjában használt érték megjelenítése. |
+
+## <a name="eligibility-logic"></a>Jogosultsági logika
+
+Az alábbi szakaszok a juttatásokra való jogosultság feldolgozását ismertetik.
+
+### <a name="rules-assigned-to-a-plan"></a>Tervhez hozzárendelt szabályok 
+Ha egy juttatási tervhez több jogosultsági szabály van hozzárendelve, akkor egy adott alkalmazottnak legalább egy szabályt teljesítenie kell ahhoz, hogy regisztrálni lehessen a juttatási tervbe.  A következő példában az alkalmazottnak vagy a **Feladattípus**, vagy az **Aktív alkalmazottak** szabálynak meg kell felelnie.
+
+![Az alkalmazottnak vagy a Feladattípus, vagy az Aktív alkalmazottak szabálynak meg kell felelnie.](media/RulesAssignedToAPlan.png)
+ 
+### <a name="criteria-within-an-eligibility-rule"></a>Jogosultsági szabályon belüli feltételek 
+A szabályokon belül definiálni lehet a szabályt alkotó feltételeket. A fenti példában a **Feladattípus** szabály feltételei láthatók, ahol a Feladattípus = Igazgatók. Ebből következően az alkalmazottnak igazgatónak kell lennie ahhoz, hogy jogosult legyen. Ez olyan szabály, amelyben csak egy feltétel van a szabályon belül.
+
+Több feltétellel rendelkező szabályt is meg lehet határozni. Ha egy jogosultsági szabályon belül több feltételt is meghatároz, akkor az alkalmazottnak a szabályon belüli összes feltételnek meg kell felelnie ahhoz, hogy részt vehessen a juttatási tervben. 
+
+A fenti **Aktív alkalmazottak** szabályban például a következő feltételek vannak: Ahhoz, hogy az alkalmazott az **Aktív alkalmazottak** szabály alapján jogosult lehessen, az alkalmazottat az USMF jogi személynek kell alkalmaznia, *és* teljes munkaidős alkalmazottnak kell lennie.  
+
+![Jogosultsági szabályon belüli feltételek.](media/CriteriaWithinAnEligibilityRule.png) 
+ 
+### <a name="multiple-conditions-within-criteria"></a>Több feltétel a feltételeken belül
+
+A szabályok tovább bonthatóak, hogy egyetlen feltételen belül több feltételt használjanak. Az alkalmazott akkor lesz jogosult, ha legalább egy feltételnek megfelel. A fenti példa alapján az **Aktív alkalmazottak** szabály tovább tágítható, hogy a részmunkaidős alkalmazottak is szerepeljenek benne. Ez azt jelenti, hogy az alkalmazottnak az USMF alkalmazottjának *és* teljes vagy részmunkaidős alkalmazottnak kell lennie.  
+
+![Több feltétel a feltételeken belül.](media/MultipleConditionsWithinCriteria.png) 
+ 
+### <a name="eligibility-conditions-within-a-custom-field-criterion"></a>Jogosultsági feltételek egy egyéni mező feltételén belül 
+A fentiekhez hasonlóan, az egyéni mezők hasonlóan használhatók a jogosultsági szabályok létrehozása és a munka során. Előfordulhat például, hogy az internetre vonatkozó visszatérítést szeretne nyújtani a fargói és koppenhágai, otthonról dolgozó alkalmazottaknak, mivel az internetköltségek magasabbak ezeken a helyeken. Ehhez két egyéni mezőt kell létrehoznia: **Iroda helye** (választólista) és **Munkavégzés otthonról** (jelölőnégyzet). Ezután hozzon létre egy **WFH-alkalmazottak** nevű szabályt. A szabályhoz tartozó feltétel az, hogy az **Iroda helye = Fargo** vagy **Koppenhága** *és* a **Munkavégzés otthonról = Igen**.
+
+Az egyéni jogosultsági szabályokat a következő képen látható módon kell beállítani. 
+
+![Jogosultsági feltételek egy egyéni mező feltételén belül.](media/EligibilityConditionsWithinACustomFieldCriterion.png) 
+ 
 ## <a name="configure-bundles"></a>Csomagok konfigurálása
 
 A csomagok a kapcsolódó juttatási konstrukciók csoportjai. A juttatáscsomagokat azon juttatási konstrukciók csoportosítására használhatja, amelyeket az alkalmazottaknak ki kell választaniuk ahhoz, hogy beléphessenek azokba a juttatási konstrukciókba, amelyek más juttatási konstrukciókba való belépéstől függnek. Csomagot például a következő esetben használhat:
@@ -99,11 +164,11 @@ A csomagok a kapcsolódó juttatási konstrukciók csoportjai. A juttatáscsomag
 
 2. Csomag létrehozásához a **Csomagok** lapon válassza az **Új** elemet. A csomaghoz társított konstrukciók megtekintéséhez válassza a **Csatolt konstrukciók** elemet.
 
-3. Adjon meg értékeket a következő mezőkben:
+3. Adjon meg értékeket a következő mezőkben.
 
    | Mező | Leírás |
    | --- | --- |
-   | **Csomag** | A csomag egyedi azonosítója. |
+   | **Köteg** | A csomag egyedi azonosítója. |
    | **Leírás** | A csomag leírása. |
    | **Fő** | Azt jelzi, hogy a csomagban lévő egyik konstrukciót alapkonstrukcióként kell megjelölni. Az alapkonstrukciót ki kell választani a csomag részeként a nyitott belépés során, a juttatások adminisztrátora csak ezután erősítheti meg az alkalmazottak juttatásokra vonatkozó választásait. |
    | **Érvényesség kezdő dátuma és időpontja** | A csomag aktívvá válásának dátuma és ideje. |
@@ -119,7 +184,7 @@ Az időszakok határozzák meg, hogy a juttatások mikor lépnek érvénybe, és
 
 2. Időszak létrehozásához az **Időszakok** lapon válassza az **Új** elemet. Ha olyan folyamatot szeretne futtatni, amely az összes érvényes aktív juttatási konstrukciót csatolja a juttatási időszakhoz, válassza a **Konstrukció csatolása** lehetőséget. A csomaghoz társított konstrukciók megtekintéséhez válassza a **Csatolt konstrukciók** elemet. 
 
-3. Adjon meg értékeket a következő mezőkben:
+3. Adjon meg értékeket a következő mezőkben.
 
    | Mező | Leírás |
    | --- | --- |
@@ -141,7 +206,7 @@ A rugalmas jóváírási programokkal az alkalmazottakat előre meghatározott s
 
 2. Az **Időszakok** lapon válassza a **Rugalmas jóváírási programok** lehetőséget.
 
-3. Válassza ki az alkalmazni kívánt rugalmas jóváírási programot. A mező a következő adatokat tartalmazza:
+3. Válassza ki az alkalmazni kívánt rugalmas jóváírási programot. A mező a következő adatokat tartalmazza.
 
    | Mező | Leírás |
    | --- | --- |
@@ -163,7 +228,7 @@ A programok olyan juttatási konstrukciók csoportjai, amelyek közös jogosults
 
 2. Program létrehozásához a **Programok** lapon válassza az **Új** elemet. Ha kivételt szeretne tenni olyan alkalmazottak esetében, akik nem felelnek meg a jogosultsági szabályok követelményeinek, válassza a **Jogosultsági szabály felülbírálása** lehetőséget. A programhoz társított konstrukciók megtekintéséhez válassza a **Csatolt konstrukciók** elemet.
 
-3. Adjon meg értékeket a következő mezőkben:
+3. Adjon meg értékeket a következő mezőkben.
 
    | Mező | Leírás |
    | --- | --- |
@@ -176,3 +241,6 @@ A programok olyan juttatási konstrukciók csoportjai, amelyek közös jogosults
    | **Jogosultsági szabályok** | Válassza ki a juttatási programra alkalmazandó jogosultsági szabályokat. A jogosultsági szabályokat a **Jogosultsági szabályok** lapon határozhatja meg. |
    
 4. Válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

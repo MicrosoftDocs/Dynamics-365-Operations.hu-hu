@@ -2,16 +2,13 @@
 title: Nyugtaszámok visszaállítása
 description: Ez a témakör azt mutatja be, hogyan lehet alaphelyzetbe állítani a különböző műveletekhez használt nyugtaszámokat (például a pénzügyi évet vagy naptári évet).
 author: ShalabhjainMSFT
-manager: AnnBe
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-Commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail, Commerce
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail, Commerce
 ms.author: asharchw
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-ms.openlocfilehash: 31ba82ac5e032734e00f2aee12339bc85a53550b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 855c39f15db6de8fac1f0cd4667eec485c70542b9aebde0d7085e2703f4609bb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412794"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6733869"
 ---
 # <a name="reset-receipt-numbers"></a>Nyugta számainak visszaállítása 
 
@@ -58,7 +55,7 @@ Ha be szeretné kapcsolni a visszaállítást, hajtsa végre az alábbi lépése
 1. A **Nyugtatípus visszaállítása** mezőben válassza ki az **Egy alkalommal** vagy **Évente** lehetőséget.
 1. Válassza ki az **OK** lehetőséget.
 
-![Nyugta alaphelyzetbe állítási dátumának kiválasztása](media/Enable_receipt_reset.png "Nyugta alaphelyzetbe állítási dátumának kiválasztása")
+![Nyugta alaphelyzetbe állítási dátumának kiválasztása.](media/Enable_receipt_reset.png "Nyugta alaphelyzetbe állítási dátumának kiválasztása")
 
 Miután kiválasztott egy dátumot, megjelenik a **Következő nyugta-visszaállítási dátum** oszlopban. A visszaállítási dátum az összes nyugtatranzakció-típusra érvényes. Ennélfogva a nyugta számsorozata alaphelyzetbe kerül az összes nyugtatípus esetében.
 
@@ -68,3 +65,6 @@ A jövőbeli visszaállítási dátumok törléséhez használja a **Visszaáll�
 
 > [!NOTE]
 > A kiválasztott Alapbeállítási dátumtól és a nyugta formátumtól függően lehet, hogy ismétlődő nyugta-szám van. Annak ellenére, hogy a pénztárrendszer képes kezelni ezeket a helyzeteket, növeli a visszáru feldolgozásához szükséges időt, mivel az értékesítési munkatársaknak választaniuk kell a duplikált nyugták között. Az adattisztítással kapcsolatos egyéb komplikációk akkor is előfordulhatnak, ha az ismétlődő nyugták nem tervezett következmények voltak. Ezért azt ajánljuk, hogy dinamikus dátumú karaktereket (például **ddd**, **MM**, **DD** és **YY**) használjon, hogy megakadályozza az ismétlődő nyugtaszámok visszaállítását.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

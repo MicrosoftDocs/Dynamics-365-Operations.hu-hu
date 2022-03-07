@@ -2,29 +2,26 @@
 title: Költségszámítási táblázatok
 description: A költségszámítási táblázat beállításakor két célt kell szem előtt tartani. Az első cél az áruk költségeinek megjelenítésére használt formátum meghatározása a gyártott cikkekre vagy termelési rendelésre vonatkozóan. A formázott megjelenítés neve költségszámítási táblázat. A második cél a közvetett költségek számításához használt alap meghatározása. A költségszámítási táblázat a költségcsoport funkcióra építve jeleníti meg az adatokat, és a költségcsoportokat a közvetett költség számítási képleteiben is felhasználja. Ebben a cikkben a költségszámítási táblázat beállításának két célkitűzése van leírva.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostSheetDesigner, CostSheetCalculationFactor
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 53201
 ms.assetid: e7d72b43-3892-49ae-8821-9eede3f4d24a
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0f83c18bb8700e274bcf8cb369a7436a17450bf7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 28597fde8257c6b6518fd52a636354cf2b64b658
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429804"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579808"
 ---
 # <a name="costing-sheets"></a>Költségszámítási táblázatok
 
@@ -50,3 +47,6 @@ A költségszámítási táblázat részeként jelenik meg a **Tételköltség k
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

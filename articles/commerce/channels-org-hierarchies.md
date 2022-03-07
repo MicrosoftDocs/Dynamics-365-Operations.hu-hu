@@ -2,36 +2,30 @@
 title: Szervezeti hierarchiák létrehozása
 description: Ez a témakör a szervezeti hierarchia beállítását írja le a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 29d4b686cbb66715196fca06e4642fbb8a337ace
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: ce0732f32a9a80fc5b0ede7ae9f1c1ab9a68a89b2fb0b1821cb5df123ca5ca4a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412823"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746016"
 ---
 # <a name="set-up-organization-hierarchies"></a>Szervezeti hierarchiák létrehozása
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a szervezeti hierarchia beállítását írja le a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A csatornák létrehozása előtt győződjön meg arról, hogy be van állítva a szervezeti hierarchiák.
 
@@ -60,7 +54,7 @@ A szervezeti hierarchia létrehozásához kövesse az alábbi lépéseket.
 
 A következő kép egy fiktív "Adventure Works" üzletcsoport számára létrehozott példa szervezeti hierarchiát mutat be.
 
-![Szervezeti hierarchia - példa](media/organizational-hierarchies.png)
+![Szervezeti hierarchia – példa.](media/organizational-hierarchies.png)
 
 ### <a name="add-organizations-to-a-hierarchy"></a>Szervezetek felvétele a hierarchiába
 
@@ -73,7 +67,7 @@ A szervezetek hierarchiához való hozzáadásához kövesse az alábbi lépése
 
 A következő kép azt jeleníti meg, hogy milyen jogi személy van hozzáadva a hierarchia gyökerében, négy költséghely hozzáadásával a "Áruház", "Kifutó", "online" és a "Hívásközpont" csatornákhoz. Ezután a különböző kiskereskedelmi, hívásközponti és online csatornák mindegyikhez hozzáadhatók.
 
-![Hierarchiatervező - példa](media/hierarchy-designer.png)
+![Hierarchiatervező – példa.](media/hierarchy-designer.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
@@ -88,3 +82,6 @@ A következő kép azt jeleníti meg, hogy milyen jogi személy van hozzáadva a
 [Csatornák áttekintése](channels-overview.md)
 
 [Csatornák beállításának előfeltételei](channels-prerequisites.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

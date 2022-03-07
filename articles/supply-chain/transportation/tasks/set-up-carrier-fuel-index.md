@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: TMSFuelIndexRegion,TMSCarrierFuelIndexTable,TMSFuelIndex
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12ade30b63454dfd997aa47a62cde21b066140fa
-ms.sourcegitcommit: fe7ac653efcb1ac6318083f482394b96ed82b4c7
+ms.openlocfilehash: 09dc948e673bb8be49ac81e5ad2b20bc6c62b286
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429984"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233655"
 ---
 # <a name="set-up-a-carrier-fuel-index"></a>Szállítmányozói üzemanyag-mutató beállítása
 
@@ -67,3 +66,6 @@ Ez az útmutató bemutatja, hogyan hozhat létre üzemanyag-mutató régiót, ü
 12. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 13. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -18,12 +18,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 32edf6534716236706847556a14b951f18ef40ae
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: d61addbc4eac691351c2d8cac013c9d94bd900e9
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969826"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5264600"
 ---
 # <a name="set-up-assortments"></a>Szortimentek beállítása
 
@@ -54,3 +54,6 @@ Miután befejezte a előfeltételeket, hozzon létre egy szortimentet, és rende
 2. Válassza ki a csatornákat vagy azon legfelső szintű csatornacsoportokat, amelyekre a szortiment vonatkozik.
 3. A szortiment termékkategóriák, az egyes termékek vagy termékváltozatok hozzáadása. Egy adott kategóriára az összes termék is felvehet, vagy egy kiválasztott termék kizárhatja a kategóriából, amely a szortiment szerepel.
 4. Közzéteszi a szortimentet. Szortiment közzétételekor automatikusan elindul a szortimentek ütemezése. Ez a folyamat hoz létre a termékek listája. A folyamat befejezése után a termékek elérhetővé válnak azon csatornák számára, amelyhez a termékszortiment hozzá van rendelve. Ha a módosítások egy közzétett szortimentet érintenek, vagy olyan csatornákat, amelyekhez a szortiment hozzá van rendelve, akkor a szortimentet frissíteni kell. A szortiment módosításkor történő frissítése érdekében futtathatja a szortimentütemezőt kötegelt feladatként.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

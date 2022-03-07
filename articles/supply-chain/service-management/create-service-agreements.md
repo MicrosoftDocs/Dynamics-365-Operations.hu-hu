@@ -1,12 +1,10 @@
 ---
 title: Szolgáltatási szerződések létrehozása
 description: Ez a témakör ismerteti a Szolgáltatáskezelés és a Projektvezetés és könyvelés modulok funkcióinak használatát a szolgáltatási szerződések létrehozásánál.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ef5ca8cc9c80581b9f7ef69bd8c4403d3d0296e8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: c9a5d580b0bb146bf5d445823b37f607e507f7eb
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965965"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569143"
 ---
 # <a name="create-service-agreements"></a>Szolgáltatási szerződések létrehozása
 
@@ -33,8 +31,8 @@ Ez a témakör ismerteti a Szolgáltatáskezelés és a Projektvezetés és kön
 ## <a name="create-a-service-agreement-from-service-management"></a>Szolgáltatási szerződés létrehozása a Szolgáltatáskezelésből
 
 1. Lépjen a **Szolgáltatáskezelés** ponthoz.
-2. Kattintson a **Szolgáltatási szerződések** lehetőségre egy új szolgáltatásiszerződés-sor létrehozásához a lap fejlécében. 
-3. Kattintson az **Új** elemre. Adjon meg egy leírást, válasszon egy hivatkozást a projekthez a **Projektazonosító** mezőben, és töltse ki a szolgáltatási szerződés többi mezőjét és sorát. Kattintson a **Mentés** gombra.
+2. Válassza a **Szolgáltatási szerződések** lehetőséget egy új szolgáltatásiszerződés-sor létrehozásához a lap fejlécében. 
+3. Válassza az **Új** lehetőséget. Adjon meg egy leírást, válasszon egy hivatkozást a projekthez a **Projektazonosító** mezőben, és töltse ki a szolgáltatási szerződés többi mezőjét és sorát. Válassza a **Mentés** lehetőséget.
 4. A **Kapcsolatok** lapon válassza **A szolgáltatás tárgyai** vagy a **Szervizfeladatok** elemet a szolgáltatásiobjektum-kapcsolatok vagy a szervizfeladat-kapcsolatok létrehozásához. A szolgáltatások kapcsol tárgyai és a kapcsolt szervizfeladatok hozzárendelhetők a szolgáltatási szerződés soraihoz.
 5. Alap alsó részén a sablonból, másik szolgáltatási szerződésből történő másolással vagy a sorok kézi megadásával hozzon létre szolgáltatásiszerződés-sorokat.
 
@@ -45,14 +43,14 @@ Ez a témakör ismerteti a Szolgáltatáskezelés és a Projektvezetés és kön
 
 1. A **Szolgáltatási szerződések** lapon adjon meg egy szolgáltatásiszerződés-sort a sorrácsban. 
 2. Írja be a megfelelő adatokat a szolgáltatásiszerződés-sorba. 
-3. Mentse a sort a **CTRL+S** billentyűkombináció lenyomásával, és zárja be a lapot.
+3. Válassza a **Mentés** lehetőséget a sor mentéséhez, és zárja be a lapot.
 
 ## <a name="create-a-service-agreement-from-project"></a>Szolgáltatási szerződések létrehozása a Projekt modulból
 
-1. Kattintson a **Projektvezetés és könyvelés** elemre.
-2. Kattintson a **Minden projekt** lehetőségre.
+1. Válassza a **Projektvezetés és könyvelés** elemet.
+2. Az **Összes projekt** elemet válassza.
 3. Válassza ki a projektet a listából.
-4. A **Művelet panelen** kattintson a **Kezelés** elemre. Az **Új** műveletcsoportban kattintson a **Szolgáltatás** lehetőségre, és válassza ki a **Szolgáltatási szerződés** pontot.
+4. A **Műveleti ablaktáblán** válassza a **Kezelés** lehetőséget. Az **Új** műveletcsoportban válassza a **Szolgáltatás** lehetőséget, és válassza ki a **Szolgáltatási szerződés** pontot.
 5. Kövesse a jelen témakör korábbi, **Szolgáltatási szerződések létrehozása** című szakaszában található utasításokat a projektreferencia megadásához.
 
 
@@ -61,3 +59,6 @@ Ez a témakör ismerteti a Szolgáltatáskezelés és a Projektvezetés és kön
 [Szolgáltatási szerződések kialakítása és megkötése – áttekintés](service-agreements.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

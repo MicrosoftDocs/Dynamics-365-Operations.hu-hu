@@ -2,16 +2,13 @@
 title: Ármódosítások és engedmények
 description: Ez a cikk ármódosításokkal és engedményekkel kapcsolatban tartalmaz tájékoztatást a Dynamics 365 Commerce rendszerben.
 author: scott-tucker
-manager: AnnBe
-ms.date: 11/16/2020
+ms.date: 06/11/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailParameters, RetailPeriodicDiscount
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 15891
 ms.assetid: bab5adf3-ddf0-4c22-a2eb-b4d25b88de99
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0c2adaa5cd935d5b593bfbb3215d3466fcafab7b
-ms.sourcegitcommit: 1d74636bf9db5fb33e998322899504b709b4f89f
-ms.translationtype: HT
+ms.openlocfilehash: 96a695df250cda514b7bd8b9716c0f03fb2bfd28d3af4daedaf1335c3099fbb6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "4584315"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748498"
 ---
 # <a name="price-adjustments-and-discounts"></a>Ármódosítások és engedmények
 
@@ -51,3 +48,13 @@ Számos típusú engedmény érhető el:
 - **Szállítási engedmény** – Olyan engedmény, amely akkor kerül alkalmazásra, ha a tranzakció összege meghaladja a megadott összeget, és a rendelésen egy adott szállítási mód (például kétnapos szállítás vagy egynapos szállítás) kerül alkalmazásra.
 
 Az ármódosításokat és az engedményeket konkrét árcsoportokhoz is hozzárendelheti. Az árcsoportok ezután társíthatók csatornákhoz, katalógusokhoz, fiókokhoz és hűségprogramokhoz.
+
+> [!NOTE]
+> A kombinációs engedménynek és a küszöbérték-engedménynek vannak „Kedvezményre nem jogosult termékek számolása” és „Kedvezményre nem jogosult termékek számolása a küszöbbel szemben” tulajdonságaik. Ha ezek a tulajdonságok engedélyezve vannak, akkor lehet olyan cikk esetében is lehetséges érvényesíteni a tranzakciót, amelyik nem jogosult az engedményre, de a nem jogosult cikk nem kap engedményt. 
+> 
+> Ha például két sorból – A és B – áll a kombinációs engedmény, ahol a vevőnek 10%-os kedvezményt kell kapnia mindkét cikkből, de az A cikknél be van jelölve az "Összes engedmény megakadályozása" konfiguráció, akkor ez általában megakadályozza, hogy az A cikk beleszámítson az engedménybe. Ha viszont engedélyezve van a „Kedvezményre nem jogosult termékek számolása” tulajdonság, az "A" cikk felhasználható a kombinációs engedményre való jogosultságra, de a 10% engedmény csak a B cikkre lesz érvényes. Hasonló logika vonatkozik a küszöbérték-engedményre is. 
+>
+> A "Kedvezményre nem jogosult termékek számolása a küszöbbel szemben" tulajdonság azonban további képességeket is képes alkalmazni a kombinációs engedmények "Kedvezményre nem jogosult termékek számolása" tulajdonsághoz képest. Ha engedélyezve van a küszöbérték-engedmény, és van olyan cikk, amelynek van olyan engedménye, amely megakadályozza, hogy a cikk más engedményeket kapjon, akkor az adott cikkért fizetett ár megfelelő lesz a küszöbértéknek, de ez a cikk nem fog kapni további engedményt.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

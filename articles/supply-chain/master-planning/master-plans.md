@@ -2,16 +2,13 @@
 title: Az alaptervek áttekintése
 description: A vállalat napi munkaműveleteinek támogatásához, a különböző figyelni kívánt tervezési stratégiák szimulálásához és vállalati (például a belső teljesítménnyel és a vevői elégedettséggel kapcsolatos) alapszabályok megvalósításához használjon különféle alapterveket.
 author: roxanadiaconu
-manager: tfehr
 ms.date: 05/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqParameters, ReqPlanSched
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 7911
 ms.assetid: a116b7de-3d6d-4321-87ba-5a5d99c2f64e
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 70a5b8f0c7e4857aa2904003b458bf6d02b72064
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 4506e081258bf125a329830032972b35191aca72
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429751"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5833377"
 ---
 # <a name="master-plans-overview"></a>Az alaptervek áttekintése
 
@@ -57,3 +54,6 @@ Beállíthatja, hogy a kezdő dinamikus terv az alaptervezés minden futtatása 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

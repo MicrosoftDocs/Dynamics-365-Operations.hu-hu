@@ -1,12 +1,10 @@
 ---
 title: Célentitások
 description: Ez a témakör azt mutatja be, hogyan lehet áttekintést megtekinteni a célentitásokkal kapcsolatban az Eszközkezelésben.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 09/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: eb22c5b604f9bc7aacad014385b036e78d9110e6
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3b9fd32d539a8f2e038f571910314889f92e3fd9
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017212"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5838634"
 ---
 # <a name="target-entities"></a>Célentitások
 
@@ -52,3 +50,6 @@ Az **Adatkezelés** munkaterületen áttekintést kaphat a célentitásokról, k
 
     ![3. ábra](media/03-data-management.png)
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

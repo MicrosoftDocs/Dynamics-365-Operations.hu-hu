@@ -2,35 +2,34 @@
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. október 6.)
 description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. október 6-i kiadásban.
 author: jcart1106
-manager: tfehr
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 036b43d8730b52bddc93c0fc3b47d9d62649e898
-ms.sourcegitcommit: 2190be6c205d7d9e43bdb99b9190cc0112f9f093
-ms.translationtype: HT
+ms.openlocfilehash: ac64218e48d2713b91af1541f94083aef3f815a2
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5152173"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062979"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-6-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. október 6.)
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 Ez a témakör a Dynamics 365 Human Resources új, módosított vagy nemsokára várható szolgáltatásait írja le. A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
-További tájékoztatás az új szolgáltatásokról és a nyilvános megjelenési dátumokról: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
+További tájékoztatás az új szolgáltatásokról és a nyilvános megjelenési dátumokról: [A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>Ebben a verzióban
 
@@ -42,7 +41,7 @@ Az alábbi funkció általában a következő verzióval lesz elérhető.
 
 | Funkció | Kiadási terv | Dokumentáció |
 | --- | --- | --- |
-| További betekintés a szabadságnaptárakba | [További betekintés biztosítása a szabadságnaptár nézetekbe](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-leave-calendar-views) | [Csapat- és vállalati naptár megtekintése](hr-employee-self-service-calendar.md) |
+| További betekintés a szabadságnaptárakba | [További betekintés biztosítása a szabadságnaptár nézetekbe](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/provide-additional-insight-leave-calendar-views) | [Csapat- és vállalati naptár megtekintése](hr-employee-self-service-calendar.md) |
 
 ### <a name="bug-fixes"></a>Hibajavítások
 
@@ -70,9 +69,9 @@ Az alábbi új funkciók előzetes verzióban érhetők el. A funkciók be- vagy
 
 | Funkció | Kiadási terv | Dokumentáció |
 | --- | --- | --- |
-| Human Resources alkalmazás a Microsoft Teams alkalmazásban | [Alkalmazott szabadsági és távolléti élménye a Microsoft Teams rendszerben](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources alkalmazás a Teamsben](https://go.microsoft.com/fwlink/?linkid=2127841)<br>[Szabadságkérelmek kezelése a Teamsben](hr-teams-leave-app.md) |
-| Továbbfejlesztett munkafolyamat-kérelmek és -jóváhagyások | [Szervezeti és személyzeti felügyeleti munkafolyamat-tapasztalatok továbbfejlesztései](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurációs beállítás a hozzám rendelt munkaelemek lista pozicionálásához](https://docs.microsoft.com/dynamics365/human-resources/hr-whats-new-2020-09-03#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
-| A Dataverse for Human Resources számára elérhető virtuális entitások | [Alapvető Dynamics 365 Human Resources-adatok kibontása a Dataverse szolgáltatásban](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Dataverse-virtuális entitások konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md) |
+| Human Resources alkalmazás a Microsoft Teams alkalmazásban | [Alkalmazott szabadsági és távolléti élménye a Microsoft Teams rendszerben](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) | [Human Resources alkalmazás a Teamsben](./hr-admin-teams-leave-app.md)<br>[Szabadságkérelmek kezelése a Teamsben](hr-teams-leave-app.md) |
+| Továbbfejlesztett munkafolyamat-kérelmek és -jóváhagyások | [Szervezeti és személyzeti felügyeleti munkafolyamat-tapasztalatok továbbfejlesztései](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Konfigurációs beállítás a hozzám rendelt munkaelemek lista pozicionálásához](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
+| A Dataverse for Human Resources számára elérhető virtuális entitások | [Alapvető Dynamics 365 Human Resources-adatok kibontása a Dataverse szolgáltatásban](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/expand-dynamics-365-human-resources-core-data-common-data-service) | [Dataverse-virtuális entitások konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md) |
 
 ## <a name="coming-soon"></a>Hamarosan
 
@@ -82,13 +81,16 @@ A következő új funkciókat jövőbeli kiadásokra ütemeztük:
 
 - **Juttatáskezelési okkódok**: A juttatáskezelés okkódjai hamarosan kombinálva lesznek a Human Resources meglévő okkódjaival. Ha a Juttatások kezelése modulban több, mint 15 karakterből álló okkódok szerepelnek, akkor az Juttatások kezelése **Okkódok** űrlapján az okkódot maximum 15 karakter hosszúra kell módosítania. Miután frissítette a nevet, az okkód a Személyzetkezelés modul meglévő okkódok képernyőjén fog megjelenni. Ez a változtatás a jövőben elérhető lesz, és nem fogja befolyásolni a meglévő funkciókat.
 
-- **Egyéni hivatkozások a vezetői önkiszolgáló rendszerben**: a vezetők támogatásának céljára a vezetői önkiszolgáló szolgáltatás képességei bővülnek. Lehetővé tesszük, hogy egyéni hivatkozásokat adjon hozzá a **Saját csoport** lapon. Ez a funkció hasonló az Alkalmazotti önkiszolgáló **Saját adatok** lapján található egyéni hivatkozások szolgáltatáshoz. További tájékoztatás: [Egyéni hivatkozások a vezetői önkiszolgáló szolgáltatásban](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
+- **Egyéni hivatkozások a vezetői önkiszolgáló rendszerben**: a vezetők támogatásának céljára a vezetői önkiszolgáló szolgáltatás képességei bővülnek. Lehetővé tesszük, hogy egyéni hivatkozásokat adjon hozzá a **Saját csoport** lapon. Ez a funkció hasonló az Alkalmazotti önkiszolgáló **Saját adatok** lapján található egyéni hivatkozások szolgáltatáshoz. További tájékoztatás: [Egyéni hivatkozások a vezetői önkiszolgáló szolgáltatásban](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/custom-links-manager-self-service).
 
-A tervezett szolgáltatások és az ütemezett kiadások teljes listája az alábbi témakörben olvasható: [A Dynamics 365 Human Resources 2019. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
+A tervezett szolgáltatások és az ütemezett kiadások teljes listája az alábbi témakörben olvasható: [A Dynamics 365 Human Resources 2019. második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/).
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Újdonságok vagy változások a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Kölcsönzött eszközök
 description: Ez a témakör bemutatja, hogyan eszközök kölcsönadását regisztrálni az Eszközkezelés modulban.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetObjectLoanSend, EntAssetObjectLoanListPage, EntAssetObjectLoanReturn, EntAssetObjectLoanInfoPart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 355e3d3e0e952db14a03810145528f9701804ca2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 712f3e7cdfb8d521ae2afb59d90bc5102da53cb7
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5022332"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5813387"
 ---
 # <a name="asset-loans"></a>Kölcsönzött eszközök
 
@@ -57,3 +55,6 @@ Az **Aktív eszköz kölcsönzése** lapon megtekintheti az összes olyan eszkö
 3. A **Visszaadva** mezőben adja meg dátumot és az időt.
 4. Válassza ki az **OK** lehetőséget.
 5. Frissítse az **Aktív eszköz kölcsönzése** listaoldalt és figyelje meg, hogy az eszköz kölcsönzése már nem jelenik meg a listában.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

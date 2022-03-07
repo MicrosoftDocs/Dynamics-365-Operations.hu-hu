@@ -2,30 +2,27 @@
 title: A termelési üzem végrehajtási felületének tervezése
 description: Ez a témakör azt mutatja be, hogyan lehet megtervezni az egyes konfigurációk felhasználói felületének tartalmát.
 author: johanhoffmann
-manager: tfehr
 ms.date: 12/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
+ms.search.form: JmgProductionFloorExecutionConfiguration, JmgProductionFloorExecutionConfigurationTab
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: Release 10.0.16
-ms.openlocfilehash: 81c5c83128bb81523dee6ede549eece7b0d80e30
-ms.sourcegitcommit: d9d1ddce6a334ade8b32b5ea3ac4c1e1a8f72715
+ms.openlocfilehash: 5bf8ce93d2c804325305672d79b633210a790cf0
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "4664272"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6347662"
 ---
 # <a name="design-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének tervezése
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A felhasználói felület tartalmát a termelési üzem végrehajtási felülete által használt minden konfigurációhoz megtervezheti. Előfordulhat például, hogy egy munkacellában dolgozóknak meg kell tudniuk nyitni a termelési üzemben a feladatra vonatkozó utasításokat, míg egy másik munkacellában nem szükségesek az utasítások. Ebben az esetben két konfigurációt kell létrehozni, egyet egy gombbal a dokumentumok mellékleteinek megnyitásához és egyet a gomb nélkül.
 
@@ -35,7 +32,7 @@ A **Termelési üzem végrehajtásának konfigurálása** lapon létrehozhatja �
 
 Mindegyik lap négy részre van osztva, ahogy az a következő ábrán látható.
 
-![Lap elrendezése](media/pfe-tab-layout.png "Lap elrendezése")
+![Lap elrendezése.](media/pfe-tab-layout.png "Lap elrendezése")
 
 A következő elemek jelennek meg az ábrán:
 
@@ -46,18 +43,18 @@ A következő elemek jelennek meg az ábrán:
 
 Új lap létrehozásához és konfigurálásához kövesse ezeket a lépéseket:
 
-1. Ugrás a **Gyártásvezérlés &gt; Beállítás &gt; Gyártási végrehajtás** részre.
+1. Lépjen a **Gyártásvezérlés \> Beállítás \> Gyártásvégrehajtás \> termelési üzem végrehajtásának konfigurálása** részre.
 
 1. Válassza a **Lapok tervezése** elemet a műveleti panelen a **Lapok tervezése** oldal megnyitásához.
 
-    ![A Lapok tervezése oldal](media/pfe-design-tabs.png "A Lapok tervezése oldal")
+    ![A Lapok tervezése oldal.](media/pfe-design-tabs.png "A Lapok tervezése oldal")
 
 1. A Művelet panelen válassza az **Új** lehetőséget.
 
 1. Végezze el a következő beállításokat a lap fejlécében:
 
     - **Lap neve** – adja meg a lap nevét.
-    - **Fő nézet** -válasszon a két előre meghatározott munkalista (*aktív feladatok* vagy *összes feladat*) között.
+    - **Fő nézet** – Válasszon a két előre meghatározott munkalista (*Aktív feladatok*, *Összes feladat* vagy *Saját gép*) között.
     - **Részletes nézet** – válassza ki az üres értéket vagy a **feladat adatait**. Ha az üres értéket választja, akkor a lapon nem jelenik meg részletes nézet. Ha a **Feladat adatait** választja, akkor a részletes nézet a főnézetben a feladatlistában kiválasztott feladat részletes leírását tartalmazza.
 
 1. Az **Elsődleges eszköztár** szakaszban válassza ki, hogy mely gombokat kell elérhetővé tenni az elsődleges eszköztáron. A **Választható műveletek** oszlop felsorolja az összes olyan gombot, amelyet fel lehet venni. A **Kiválasztott műveletek** oszlopai az aktuális konfigurációban szereplő összes gomb listáját jelenítik meg. Az oszlopok között látható gombokkal lehet áthelyezni a kiválasztott elemeket a szükséges oszlopok között. A **Kiválasztott műveletek** oszlop melletti fel és le gombbal lehet szabályozni, hogy milyen sorrendben jelenjenek meg a gombok a felhasználói felületen.
@@ -68,9 +65,9 @@ A következő elemek jelennek meg az ábrán:
 
 Miután megtervezte az összes szükséges lapot, hozzárendelheti őket egy konfigurációhoz.
 
-1. Lépjen a **Gyártásvezérlés &gt; Beállítás &gt; Termelési üzem végrehajtásának konfigurálása** részre.
+1. Lépjen a **Gyártásvezérlés \> Beállítás \> Gyártásvégrehajtás \> termelési üzem végrehajtásának konfigurálása** részre.
 
-    ![Termelési üzem végrehajtásának konfigurálása](media/pfe-config-prod-floor-execution.png "Termelési üzem végrehajtásának konfigurálása")
+    ![Termelési üzem végrehajtásának konfigurálása.](media/pfe-config-prod-floor-execution.png "Termelési üzem végrehajtásának konfigurálása")
 
 1. A **Lapválasztás** gyorslapon válassza a **Hozzáadás** lehetőséget.
 
@@ -79,3 +76,6 @@ Miután megtervezte az összes szükséges lapot, hozzárendelheti őket egy kon
 1. Szükség esetén folytassa a további lapok hozzáadását.
 
 1. Az eszköztáron található **Mozgatás felfelé** és **Mozgatás lefelé** gombokkal igény szerint átrendezheti a lapokat. A lapok balról jobbra haladva jelennek meg a fenti képernyőképen látható sorrendben (a felső lap a bal oldalon látható).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

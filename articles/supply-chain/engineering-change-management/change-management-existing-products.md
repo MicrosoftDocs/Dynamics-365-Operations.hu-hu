@@ -2,34 +2,40 @@
 title: Változáskezelés engedélyezése meglévő termékek esetében
 description: Ez a témakör azt mutatja be, hogyan lehet engedélyezni a változáskezelést a meglévő termékeknél. Azokat az eseteket is leírja, amelyekben a változáskezelés engedélyezése korlátozott.
 author: t-benebo
+manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-05-02
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e356ef8339f8f71965bf9313e14fed3d0810152d
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
-ms.translationtype: MT
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 8b9f34f5980937da62610d9668a95816ba6054ef
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8103613"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500862"
 ---
 # <a name="enable-change-management-on-existing-products"></a>Változáskezelés engedélyezése meglévő termékek esetében
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet engedélyezni a változáskezelést a meglévő termékeknél. Azokat az eseteket is leírja, amelyekben a változáskezelés engedélyezése korlátozott.
 
 Ha engedélyezi egy meglévő termék változáskezelését, létrehozhatja az adott termék verzióit, és nyomon követheti az egész élettartamán keresztül végrehajtott módosításokat. Ebből következően a módosítási utasítások segítségével nyomon követheti a változásokat. A változáskezelés engedélyezéséhez a megfelelő termékeket *tervezési cikkekké* (más néven tervezési termékekké) kell alakítania. A tervezési termékek olyan termékek, amelyek verziószámozva vannak, és változáskezeléssel kezelik őket. A varázsló végigvezeti az átalakítási folyamaton.
 
-## <a name="turn-this-feature-on-or-off"></a>A funkció be- és kikapcsolása
+## <a name="turn-on-the-feature-in-your-system"></a>A funkció bekapcsolása a rendszerben
 
-Az ebben a témakörben ismertetett funkciók megkövetelik, hogy mind a Mérnöki változáskezelés, *mind* *a Változáskezelés engedélyezése meglévő termékek* szolgáltatásain be legyen kapcsolva a rendszerhez. A szolgáltatások be- és kikapcsolásáról a Géptervezési változáskezelés áttekintése című témakörben [olvashat](product-engineering-overview.md).
+A képesség használatához az alábbi feladatokat kell elvégeznie:
+
+1. Engedélyezze a Tervezési változáskezelés funkciót és a konfigurációs kulcsát a [Tervezési változáskezelés áttekintése](product-engineering-overview.md) részben leírtak szerint.
+1. Kapcsolja be a *Változáskezelés engedélyezése meglévő termékek esetében* funkciót a funkciókezelésben. További tájékoztatás: [Funkciókezelés – áttekintés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## <a name="restrictions-and-limitations"></a>Korlátozások és korlátok
 
@@ -44,9 +50,7 @@ Ezért ha egyedi terméke van, akkor csak olyan mérnöki termékre lehet módos
 
 Minden tervezési termékhez hozzá kell rendelni egy *tervezési termékkategóriát*. Ezt a hozzárendelést akkor végezheti el, amikor futtatja az **Átalakítás tervezési termékké** varázslót futtatja. Létezniük kell tervezési termékkategóriáknak az összes releváns standard termékhez, *mielőtt* átalakíthatná azokat a termékeket.
 
-A tervezési termékkategória alapot biztosít a tervezési termékek létrehozásához, és az alapértelmezett értékek és irányelvek halmazát hozza létre. A tervezési attribútumokat és azok alapértelmezett értékeit (a tervezés kategóriában meghatározottak szerint) a kapott tervezési termékre is alkalmazza a rendszer. Az attribútumértékeket szerkesztheti, és/vagy szükség esetén további tervezési attribútumokat adhat hozzá az eredményül kapott termékhez.
-
-A tervezési kategóriának meg kell felelnie a terméknek, amelyhez hozzárendeli. Például a terméktípusnak és a dimenziócsoportnak meg kell egyeznie a termékkel és a termék tervezési termékkategóriájával is. A további tudnivalókat lásd: [Mérnöki verziók és a mérnöki termékkategóriák](engineering-versions-product-category.md).
+A tervezési termékkategória alapot biztosít a tervezési termékek létrehozásához, és az alapértelmezett értékek és irányelvek halmazát hozza létre. A tervezési kategóriának meg kell felelnie a terméknek, amelyhez hozzárendeli. Például a terméktípusnak és a dimenziócsoportnak meg kell egyeznie a termékkel és a termék tervezési termékkategóriájával is. A további tudnivalókat lásd: [Mérnöki verziók és a mérnöki termékkategóriák](engineering-versions-product-category.md).
 
 > [!IMPORTANT]
 > Az **Átalakítás mérnöki termékké** varázsló a terméket csak olyan tervezési termékké képes alakítani, ahol a verziót nem követik nyomon a tranzakciókban. Ezért a meglévő termékek átalakítása céljából létrehozott tervezési termékkategóriák esetén a **Verziókövetés a tranzakciókban** beállítást *Nem* értékre kell állítani.

@@ -2,26 +2,23 @@
 title: EUR-00015 Adószám beállítása
 description: Ez az eljárás végigvezeti az áfaazonosító regisztrációs előfeltételein, például egy regisztrációs típus beállításán és a hozzárendelésén egy nyilvántartási kategóriához.
 author: v-oloski
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5bf6fe6926a7cc1aecb1f0a2bb7f3c47cc8828e8
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 0980a286c187f789e8ee53aa213a53da9791c4fb91a1e25b5c4b3daf586ea082
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752080"
 ---
 # <a name="eur-00015-set-up-vat-id"></a>EUR-00015 Adószám beállítása
 
@@ -61,3 +58,6 @@ Ez az információ minden európai országra/régióra vonatkozik. Ezt a feladat
     * Rendelje hozzá a létrehozott regisztrációs típust egy előre megadott nyilvántartási kategóriához.  
 22. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

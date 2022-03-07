@@ -2,11 +2,9 @@
 title: Alapértelmezett termékéletciklus-állapot létrehozása
 description: Ez az eljárás egy alapértelmezett termékéletciklus-állapot létrehozását mutatja be, valamint azt is, hogyan lehet társítani az alapértelmezett állapotot a kiadott termékekhez.
 author: cvocph
-manager: tfehr
 ms.date: 12/05/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 16f604d5e06859b15c6f610e7a5c822ef2089ea3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: b62d47f52da7f9e18bce401578a5e2a629ac5eb8
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966905"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5818133"
 ---
 # <a name="create-a-default-product-lifecycle-state"></a>Alapértelmezett termékéletciklus-állapot létrehozása
 
@@ -61,3 +59,6 @@ Ez az eljárás egy alapértelmezett termékéletciklus-állapot létrehozását
 > [!NOTE]
 > Tegyük fel, hogy beállította az aktív állapotot, és most kiválaszthatja az aktív állapotot, engedélyezve a termék használatát az alaptervezésben és az anyagjegyzékszintű számításban. Ennek természetesen csak akkor van értelme, ha a konzisztens tervezéshez szükséges összes termékrészlet meg van határozva.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

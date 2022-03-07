@@ -2,11 +2,9 @@
 title: Új mezők hozzáadása üzleti dokumentum-sablonhoz a Microsoft Excel szolgáltatásban
 description: Ez a témakör azt mutatja be, hogyan lehet új mezőket felvenni egy üzleti dokumentumsablonba a Microsoft Excel programban az üzleti dokumentumkezelő funkció segítségével.
 author: NickSelin
-manager: AnnBe
 ms.date: 11/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 audience: Application User, Developer, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-10-01
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: fcfbcb021b192cef75d59b0db1796e994f3dc27d
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: af9f3dd81b0681579c14e0afb8281706e8aa534d
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681376"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6351794"
 ---
 # <a name="add-new-fields-to-a-business-document-template-in-microsoft-excel"></a>Új mezők hozzáadása üzleti dokumentum-sablonhoz a Microsoft Excel szolgáltatásban
 
@@ -52,23 +50,23 @@ A megoldás **Szabadszöveges számla (Excel)** ER formátumkonfigurációja Exc
 
 Az ER-konfigurációk importálásának módjával kapcsolatos további tudnivalókat lásd: [Elektronikus jelentéskészítési konfigurációk életciklusainak kezelése](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![LCS Közös eszközök tára oldal](./media/BDM-AddFldExcel-LCS.png)
+![LCS Közös eszközök tára oldal.](./media/BDM-AddFldExcel-LCS.png)
 
 ### <a name="edit-the-er-solution-template"></a>Az ER megoldássablon szerkesztése
 
 1.  Az **Üzleti dokumentum kezelése** munkaterületre való hozzáféréssel rendelkező felhasználóként jelentkezzen be.
 2.  Nyissa meg az **Üzletidokumentum-kezelés** munkaterületet.
 
-    ![Üzletidokumentum-kezelés munkaterület](./media/BDM-AddFldExcel-Workspace.png)
+    ![Üzletidokumentum-kezelés munkaterület.](./media/BDM-AddFldExcel-Workspace.png)
 
 3.  A rácsban válassza ki a **Szabadszöveges számla (Excel)** sablonját.
 4.  A jobb oldali ablakban válassza ki az **új sablon** elemet a kiválasztott sablonon alapuló új sablon létrehozásához.
-5.  A **Cím** mezőbe írja be: **Szabadszöveges számla (Excel) Contoso** az új sablon címeként.
+5.  A **Cím** mezőbe írja be a **Szabadszöveges számla (Excel) Contoso** kifejezést az új sablon címeként.
 6.  A szerkesztési folyamat kezdetének jóváhagyásához kattintson az **OK** gombra.
 
 Megjelenik a BDM sablonszerkesztő lap. A kiválasztott sablont a Microsoft 365 segítségével online szerkesztheti a beágyazott vezérlőben.
 
-![BDM-sablonszerkesztő lapja](./media/BDM-AddFldExcel-EditableTemplate.png)
+![BDM-sablonszerkesztő lapja.](./media/BDM-AddFldExcel-EditableTemplate.png)
 
 ### <a name="add-the-label-for-a-new-field-to-the-template"></a>Új mező címkéjének hozzáadása a sablonhoz
 
@@ -81,7 +79,7 @@ Megjelenik a BDM sablonszerkesztő lap. A kiválasztott sablont a Microsoft 365 
 4.  Az egyesített **E8:F8** cellában adja meg: **URL**.
 5.  Válassza ki az **E7:F7** egyesített cellát, válassza a **Formátummásolót**, majd válassza az egyesített **E8:F8** cellát, hogy ugyanúgy formázza, mint az egyesített **E7:F7** cellát.
 
-    ![Új mező címkét hozzáadott a sablonhoz](./media/BDM-AddFldExcel-EditableTemplate3.png)
+    ![Új mező címkét hozzáadott a sablonhoz.](./media/BDM-AddFldExcel-EditableTemplate3.png)
 
 ### <a name="format-the-template-to-reserve-space-for-a-new-field"></a>A sablon formázása egy új mező számára fenntartott hellyel
 
@@ -89,13 +87,13 @@ Megjelenik a BDM sablonszerkesztő lap. A kiválasztott sablont a Microsoft 365 
 2.  Az Excel menüszalag **Kezdőlap** lapján jelölje be az **Egyesítés és középre igazítás** lehetőséget a kiválasztott cellák egyesítéséhez az új egyesített **G8:H8** cellába.
 3.  Válassza ki az **G7:H7** egyesített cellát, válassza a **Formátummásolót**, majd válassza az egyesített **G8:H8** cellát, hogy ugyanúgy formázza, mint az egyesített **G7:H7** cellát.
 
-    ![Az új mező számára fenntartott hely](./media/BDM-AddFldExcel-EditableTemplate4.png)
+    ![Az új mező számára fenntartott hely.](./media/BDM-AddFldExcel-EditableTemplate4.png)
 
 4.  A **név** mezőben válassza ki: **CompanyInfo**.
 
     Az aktuális Excel-sablon **CompanyInfo**-tartománya minden olyan mezőt tartalmaz, amely a létrejövő Jelentés fejlécének kitöltéséhez használatos az aktuális vállalat, mint eladó fél adataival.
 
-    ![Kijelölt CompanyInfo-tartomány](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
+    ![Kijelölt CompanyInfo-tartomány.](./media/BDM-AddFldExcel-SelectCompanyInfoRange.png)
 
 ### <a name="add-a-new-field-to-the-template"></a>Új mező hozzáadása a sablonhoz
 
@@ -105,7 +103,7 @@ Megjelenik a BDM sablonszerkesztő lap. A kiválasztott sablont a Microsoft 365 
     > [!NOTE]
     > Módosítania kell a sablonnak azt a szakaszát, amelyet új mezőként szeretne használni. Ezt a módosítást már elvégezte az egyesített cella formázásával: **G8:H8**.
 
-    ![Új mező hozzáadása a sablonhoz](./media/BDM-AddFldExcel-AddCell.png)
+    ![Új mező hozzáadása a sablonhoz.](./media/BDM-AddFldExcel-AddCell.png)
 
 3.  Az **Excel\Cella** kiválasztásával új mezőt adhat hozzá a sablonban szereplő cellaként.
 
@@ -116,11 +114,11 @@ Megjelenik a BDM sablonszerkesztő lap. A kiválasztott sablont a Microsoft 365 
 4.  Az **Excel-tartomány** mezőbe írja be: **CompanyURL_Value**.
 5.  Válassza ki az **OK** lehetőséget.
 
-    ![A sablon struktúrájához hozzáadva a CompanyURL_Value mező](./media/BDM-AddFldExcel-EditableTemplate5.png)
+    ![A sablon struktúrájához hozzáadva a CompanyURL_Value mező.](./media/BDM-AddFldExcel-EditableTemplate5.png)
 
 6.  A **Sablon szerkezete** ablaktáblán válassza a három pont gombot (...), majd válassza a **kötések megjelenítése** lehetőséget.
 
-    ![Kiválasztott kötések megjelenítése](./media/BDM-AddFldExcel-ShowBindings.png)
+    ![Kiválasztott kötések megjelenítése.](./media/BDM-AddFldExcel-ShowBindings.png)
 
     A **sablon szerkezete** ablaktábla most megjeleníti azokat az adatforrásokat, amelyek elérhetők a mögöttes ER formátumában.
 
@@ -128,21 +126,21 @@ Megjelenik a BDM sablonszerkesztő lap. A kiválasztott sablont a Microsoft 365 
 8.  A **Sablon szerkezete** **Adatforrások** szakaszában bontsa ki a **Modell \> InvoiceBase \> CompanyInfo** elemet.
 9.  A **CompanyInfo** területen válassza ki a **WebsiteURI** elemet.
 
-    ![A WebsiteURI elem kiválasztva](./media/BDM-AddFldExcel-BindURL.png)
+    ![A WebsiteURI elem kiválasztva.](./media/BDM-AddFldExcel-BindURL.png)
 
 10. Válassza a **Bind** elemet.
 11. Válassza a **Sablon szerkezete** ablaktáblában a **Mentés** elemet, majd zárja be a BDM-sablon szerkesztő lapját.
 
 Az **üzleti Dokumentumkezelés** munkaterületen a **Sablon** lap jobb oldali ablaktáblájában látható a frissített sablon. A rácsban figyelje meg, hogy a szerkesztett sablon **állapot** mezője **Tervezet** állapotra módosult, és a **módosítás** mező már nem üres. Ezek a módosítások azt jelentik, hogy a sablon szerkesztésének folyamata elindult.
 
-![Szerkesztett sablon az üzleti Dokumentumkezelés munkaterületen](./media/BDM-AddFldExcel-Workspace2.png)
+![Szerkesztett sablon az üzleti Dokumentumkezelés munkaterületen.](./media/BDM-AddFldExcel-Workspace2.png)
 
 ## <a name="review-company-settings"></a>Vállalati beállítások felülvizsgálata
 
 1.  Nyissa meg a következőt: **Szervezeti adminisztráció \> Szervezetek \> Jogi személyek**.
 2.  A **kapcsolattartási adatok** gyorslapon győződjön meg arról, hogy a vállalat URL-címe meg van adva.
 
-![A jogi személyek oldalon megadott vállalati URL-cím](./media/BDM-AddFldExcel-CompanyInfo.png)
+![A jogi személyek oldalon megadott vállalati URL-cím.](./media/BDM-AddFldExcel-CompanyInfo.png)
 
 ## <a name="generate-business-documents-to-test-the-updated-template"></a>Üzleti dokumentumok létrehozása a frissített sablon teszteléséhez
 
@@ -150,15 +148,15 @@ Az **üzleti Dokumentumkezelés** munkaterületen a **Sablon** lap jobb oldali a
 2.  Válassza ki az **FTI-00000002** számlát, majd válassza a **Nyomtatáskezelő** parancsot.
 3.  A bal oldali ablaktáblán bontsa ki a **Modul – Kinnlevőségek \> dokumentumok \> szabadszöveges számla** elemet.
 4.  A **Szabadszöveges számla** részben válassza az **Eredeti dokumentum** szintet a feldolgozáshoz szükséges számlahatókör megadásához.
-5.  A jobb oldali ablakban a **jelentés formátuma** mezőben válassza ki a **Szabadszöveges számla (Excel) contoso** sablonját a megadott dokumentum szintjén.
+5.  A jobb oldali ablakban a **Jelentés formátuma** mezőben válassza ki a **Szabadszöveges számla (Excel) Contoso** sablont a megadott dokumentum szintjéhez.
 
-    ![A Szabadszöveges számla (Excel) contoso sablon kiválasztva](./media/BDM-AddFldExcel-PrintMngtSetting.png)
+    ![A Szabadszöveges számla (Excel) Contoso sablon kiválasztva.](./media/BDM-AddFldExcel-PrintMngtSetting.png)
 
 6.  Az **Esc** gombbal zárja be az aktuális lapot.
 7.  Válassza a **Nyomtatás \> Kiválasztott** elemet.
 8.  Töltse le a létrejövő dokumentumot, és nyissa meg az Excel alkalmazásban.
 
-    ![Szabadszöveges számla Excelben](./media/BDM-AddFldExcel-PreviewReport.png)
+    ![Szabadszöveges számla Excelben.](./media/BDM-AddFldExcel-PreviewReport.png)
 
 A módosított sablon a szabadszöveges számlajelentés generálására szolgál a kiválasztott tételhez. Annak elemzéséhez, hogy milyen hatással vannak a sablonon végzett módosításai erre a jelentésre, futtassa ezt a jelentést azonnal egy alkalmazás-munkamenetben, közvetlenül azután, hogy módosította egy alkalmazásmunkamenetben.
 
@@ -169,3 +167,6 @@ A módosított sablon a szabadszöveges számlajelentés generálására szolgá
 [Üzletidokumentum-kezelés – áttekintés](er-business-document-management.md)
 
 [Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése](tasks/er-design-reports-openxml-2016-11.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

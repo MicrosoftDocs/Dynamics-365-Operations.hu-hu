@@ -2,28 +2,27 @@
 title: Kérdőív eredményeinek elemzése
 description: A kérdőív-statisztikák felhasználhatók a demográfiai adatokon alapuló átlagok, összesítések és százalékok kiszámítására.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMQuestionnaireStatistics, KMQuestionnaireStatisticsLine, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0b8e4fd5d9fabd35de067ab61c1e64156ce4f0ec
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 135d74d70023fbe1f52b292c09733e77baa14003
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418918"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6052913"
 ---
 # <a name="analyzing-questionnaire-results"></a>Kérdőív eredményeinek elemzése
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -69,3 +68,6 @@ A kérdőív-statisztikák felhasználhatók a demográfiai adatokon alapuló á
 2. Kattintson az Eredményre.
 3. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

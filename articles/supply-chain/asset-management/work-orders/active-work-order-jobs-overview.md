@@ -1,28 +1,25 @@
 ---
 title: Aktív munkarendelés-karbantartási feladatok – áttekintés
 description: Ez a témakör az Eszközkezelés modul aktív munkarendelés-karbantartási feladatairól ad áttekintést.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 10/15/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 81e5611cd1491ee0c119f049e992afb4b6299991
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: fdfbce3315d98fdb2bd7b980a3281f69fc821376
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5019479"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982561"
 ---
 # <a name="active-work-order-maintenance-jobs-overview"></a>Aktív munkarendelés-karbantartási feladatok – áttekintés
 
@@ -42,3 +39,6 @@ Az alábbi ábra az **Aktív munkarendelés beszerzés munkák** listaoldal egy 
 
 Az **Aktív munkarendelés-karbantartási feladatok** listaoldal gombjainak rövid leírását lásd: [Bevezető a munkarendelésekhez](../work-orders/introduction-to-work-orders.md), ahol ugyanazokat a gombokat írják le.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

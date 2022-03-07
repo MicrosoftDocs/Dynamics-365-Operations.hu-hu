@@ -1,12 +1,10 @@
 ---
 title: Költségkönyvelés elemzése Power BI-tartalom
-description: Ez a témakör a Költségkönyvelési elemzés Power BI-tartalom modul tartalmát ismerteti. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
+description: Ez a témakör a Költségkönyvelési elemzés Power BI-tartalom modul tartalmát ismerteti.
 author: AndersGirke
-manager: AnnBe
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, IT Pro
 ms.reviewer: kfend
@@ -16,14 +14,14 @@ ms.search.region: Global
 ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c15995edb5d65a00207fdb425447779d3a17d993
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: d3b8832e5a5612fd0311811f43454689d5b274c36404b4fb92b710411d45e573
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683871"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747369"
 ---
-# <a name="cost-accounting-analysis-power-bi-content"></a>Költségkönyvelés elemzése Power BI-tartalom
+# <a name="cost-accounting-analysis-power-bi-content"></a>Költségkönyvelés elemzése – Power BI-tartalom
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,7 +40,7 @@ A Költségkönyveléssel kapcsolatos további tudnivalókért lásd: [Költség
 A Költségkönyvelésben hozzáférési szintű biztonság beállításával és ezt a Power BI sorszintű biztonságával kombinálva az összes költségobjektum-tulajdonos számára hozzáférést biztosíthat a **Költségkönyvelési elemzés** Power BI-tartalomhoz. Így a képi megjelenítések összes adatának szűrése a Költségkönyvelésben vezérelt hozzáférési szint alapján történik. További információ a hozzáférési szintű biztonságról és a sorszintű biztonságról: [Biztonság beállítása a Power BI-tartalmú költségkönyvelés elemzéséhez](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
-A **Költségkönyvelési elemzés** Power BI-tartalom a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközök könyvtárban található. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
+A **Költségkönyvelési elemzés** Power BI-tartalom a Microsoft Dynamics Lifecycle Services (LCS) megosztott eszközök könyvtárban található. A tartalom letöltésére és szervezeténél való megvalósítására vonatkozó további információért lásd: [Power BI-tartalom az LCS megoldásban a Microsofttól és a partnerektől](/archive/blogs/dynamicsaxbi/power-bi-content-from-microsoft-and-your-partners).
 
 Mindenképp töltse le azt a **Költségkönyvelési elemzés** tartalmat, amelyik a Microsoft Dynamics 365 Ön által használt verziójához készült.
 
@@ -123,3 +121,6 @@ A következő fő dimenziók szolgálnak szűrőként az összesítő mértékek
 | Pénzügyi naptárak                   | Naptár, Naptár leírása                                                                                       |
 | Pénzügyi évek                       | Naptári év                                                                                                        |
 | Pénzügyi időszakok                     | Naptári év időszak                                                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

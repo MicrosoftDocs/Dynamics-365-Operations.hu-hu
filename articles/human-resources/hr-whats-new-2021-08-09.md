@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-08-09
 ms.dyn365.ops.version: Human Resources
 ms.openlocfilehash: 0f515b614aedce3d58994bf21104ada25702a71e
 ms.sourcegitcommit: fc19ee0aba2a6174fef305d151f1eb23ca6c0346
-ms.translationtype: HT
+ms.translationtype: MT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 08/13/2021
 ms.locfileid: "7385700"

@@ -1,26 +1,23 @@
 ---
 title: Alvállalkozásba adás
 description: Ez a témakör segítségével létrehozhat egy bemutatót az alvállalkozói a gyártáshoz a Dynamics 365 Supply Chain Management alkalmazásban.
-author: christophernread
-manager: tfehr
+author: johanhoffmann
 ms.date: 09/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: ''
 ms.search.region: Global
-ms.author: josaw
+ms.author: johanho
 ms.search.validFrom: 2018-09-30
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 1cc1040393d843f39ca8c741a7c51435c7169c00
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 4c4ef554406c727cc410f8dca5f41264be01060b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429254"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579352"
 ---
 # <a name="subcontracting"></a>Alvállalkozásba adás
 
@@ -42,7 +39,7 @@ A HQUS jogi személy felső kategóriás hangszórókat gyárt. A gyártási fol
 
 A következő ábrán a három művelet és az általuk igényelt anyagok láthatóak.
 
-![Az előzetes összeállítás, bevonás, elsimítás műveletek és az általuk felhasználandó anyagok](./media/subcontract01_operations-materials.png)
+![Az előzetes összeállítás, bevonás, elsimítás műveletek és az általuk felhasználandó anyagok.](./media/subcontract01_operations-materials.png)
 
 ## <a name="setup"></a>Beállítás
 
@@ -55,41 +52,41 @@ Ez az eljárás végigvezeti Önt a kiadott D8100 termék, a "Bevont kabinet" be
 1. Válassza ki a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** opciót a **Kiadott termék részletei** oldal megnyitásához.
 2. A gyors szűrő mezőjébe írja be a **D8100** kódot a meglévő kiadott termék megtalálásához.
 
-    ![A D8100 kiadott termék szűrése a kiadott termék részletei oldalon](./media/subcontract02_filtering-released-products.png)
+    ![A D8100 kiadott termék szűrése a kiadott termék részletei oldalon.](./media/subcontract02_filtering-released-products.png)
 
 3. A műveleti ablakon, a **Mérnök** lapon válassza ki az **Útvonal** opciót az **Útvonal** oldal megnyitásához.
 
     Az **Útvonal** oldal megjeleníti a kiadott D8100 termék nyolc útvonalverzióját. A nyolc útvonalverzió négy-négy útvonalra van osztva az 1-es hely és az 5-ös hely között. A 000400 útvonal a költségszámításhoz használható, a 00041 útvonal a bevonási művelethez mint belső művelet használható, és a 00042 útvonal a bevonási művelethez mint külső művelet használható.
 
-    ![Nyolc útvonalverzió az útvonal oldalon](./media/subcontract03_route-page.png)
+    ![Nyolc útvonalverzió az útvonal oldalon.](./media/subcontract03_route-page.png)
 
 4. A felső ablakban, a **verziók** rácsban, jelölje be a **00042** útvonalverziót az **5-ös** helyhez.
 5. Az alsó ablakban ,az **áttekintés** fülön, jelölje be a **20-as** (**Cbnt CtSc**) műveletet a rácsban.
 
-    ![A 20-as művelet kiválasztva az 5-ös hely 00042 útvonalverzióhoz](./media/subcontract04_route-version-operation.png)
+    ![A 20-as művelet kiválasztva az 5-ös hely 00042 útvonalverzióhoz.](./media/subcontract04_route-version-operation.png)
 
 6. Válassza ki az **Általános** fület.
 
     Figyelje meg, hogy az **útvonaltípus** mező értéke **szállító**. Ez az érték jelzi, hogy a 20-as (Cbnt CtSc) művelet egy alvállalkozói művelet.
 
-    ![Az útvonaltípus mező értéke szállító az általános fülön](./media/subcontract05_general-tab.png)
+    ![Az útvonaltípus mező értéke szállító az általános fülön.](./media/subcontract05_general-tab.png)
 
 7. Válassza ki az **Erőforrás-követelmények** fület.
 
     A képességek használatba kerülnek majd egy alkalmazható erőforrás megkeresésére a termelési ütemezés közben. A 20-as művelet (Cbnt CtSc) esetében figyelje meg, hogy olyan erőforrásra van szükség, amelynek két képessége van, a **bevonás** és a **bevont kabinetek**.
 
-    ![Bevonás és bevont kabinetek képességek az erőforrás-követelményeknek fülön](./media/subcontract06_resource-requirements-tab.png)
+    ![Bevonás és bevont kabinetek képességek az erőforrás-követelményeknek fülön.](./media/subcontract06_resource-requirements-tab.png)
 
 8. Válassza ki az **Alkalmazható erőforrások** opciót az **Alkalmazható erőforrások** párbeszédpanel megnyitásához.
 
     Három erőforrás található, amely megfelel a művelethez tartozó erőforrás-követelményeknek. Figyelje meg, a 8851 és 8852 erőforrások **szállító** típusúak.
 
-    ![Három kívánt erőforrás a megfelelő erőforrások párbeszédpanelen](./media/subcontract07_applicable-resources-dialog.png)
+    ![Három kívánt erőforrás a megfelelő erőforrások párbeszédpanelen.](./media/subcontract07_applicable-resources-dialog.png)
 
 9. Válassza ki az **OK** opciót az **Alkalmazható erőforrások** párbeszédpanel bezárásához és az **Útvonal** oldalra való visszatéréshez.
 10. Zárja be az **Útvonal** oldalt a **Kiadott termék részletei** oldalra való visszatéréshez.
 
-    ![Megjelent termék részletei oldal](./media/subcontract08_released-product-details-page.png)
+    ![Megjelent termék részletei oldal.](./media/subcontract08_released-product-details-page.png)
 
 11. A műveleti ablakon, a **Mérnök** lapon válassza ki az **Anyajegyzék verziók** opciót az **Anyajegyzék verziók** oldal megnyitásához.
 
@@ -97,7 +94,7 @@ Ez az eljárás végigvezeti Önt a kiadott D8100 termék, a "Bevont kabinet" be
 
     Figyelje meg, hogy az S8050 cikk egy **Szolgáltatás** elemtípusú termék. Ez a cikk az alvállalkozói munkát jelöli.
 
-    ![A négy anyagjegyzék-verzió az anyagjegyzék-verziók oldalon](./media/subcontract09_bom-versions-page.png)
+    ![A négy anyagjegyzék-verzió az anyagjegyzék-verziók oldalon.](./media/subcontract09_bom-versions-page.png)
 
 12. Az **Anyagjegyzéksorok** gyorslapon válassza a **Szerkesztés** opciót az **Anyagjegyzéksor szerkesztése** párbeszédpanel megnyitásához.
 
@@ -105,7 +102,7 @@ Ez az eljárás végigvezeti Önt a kiadott D8100 termék, a "Bevont kabinet" be
 
     Figyelje meg, hogy az anyajegyzéksor a műveleti számon (ebben az esetben az 20) keresztül kapcsolódik a bevonás művelethez.
 
-    ![anyajegyzéksor párbeszédpanel szerkesztése](./media/subcontract10_edit-bom-line-dialog.png)
+    ![anyajegyzéksor párbeszédpanel szerkesztése.](./media/subcontract10_edit-bom-line-dialog.png)
 
 ### <a name="create-a-password-for-warehouse-workers"></a>Jelszó létrehozása a raktári dolgozóknak
 
@@ -114,7 +111,7 @@ Meg kell adni egy jelszót a kéziszámítógépet használó raktári dolgozók
 1. Válassza ki a **Raktárkezelés \> Beállítás \> Dolgozó** opciót a **Munkafelhasználók** oldal megnyitásához.
 2. A **Felhasználók** gyorslapon válassza ki az **51-es** felhasználó sorát.
 
-    ![Munkafelhasználók oldal](./media/subcontract11_work-users-page.png)
+    ![Munkafelhasználók oldal.](./media/subcontract11_work-users-page.png)
 
 3. Válassza ki az **Új jelszó létrehozása** opciót.
 4. A **Jelszó** és a **Jelszó megerősítése** mezőkben adja meg az **1** értéket.
@@ -129,14 +126,14 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
 1. Válassza ki a **Gyártásvezérlés \> Termelési rendelések \> Minden termelési rendelés** opciót a **Minden termelési rendelés** oldal megnyitásához.
 2. A műveleti ablakon válassza ki az **Új termelési rendelés** opciót a **Termelési rendelés létrehozása** párbeszédpanel megnyitásához.
 
-    ![Termelési rendelés létrehozása párbeszédpanel](./media/subcontract12_create-production-order-dialog.png)
+    ![Termelési rendelés létrehozása párbeszédpanel.](./media/subcontract12_create-production-order-dialog.png)
 
 3. A **Cikkszám** mezőben válassza ki a **D8100** cikkszámot.
 4. A cikkszám kiválasztása után eltűnnek a készletdimenzió-mezők. A **Szín** mezőben válassza ki a **Chrome** opciót.
 
     Megjelenik egy üzenetpanel, amely rákérdez, hogy az anyagjegyzék és az útvonal aktív verzióit be kell-e szúrni.
 
-    ![Üzenetpanel](./media/subcontract13_message-box.png)
+    ![Üzenetpanel.](./media/subcontract13_message-box.png)
 
 5. Válassza ki az **Igen** lehetőséget. 
 
@@ -152,15 +149,15 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
     > [!NOTE]
     > Az anyagjegyzék és az útvonal esetében is a 000042 verzió használatos a kabinetbevonás US-801 szállítóhoz való alvállalkozásba adásához.
 
-    ![A termelési rendelés létrehozása párbeszédpanelen beállított értékek](./media/subcontract14_create-production-order-dialog-set.png)
+    ![A termelési rendelés létrehozása párbeszédpanelen beállított értékek.](./media/subcontract14_create-production-order-dialog-set.png)
 
 9. Válassza ki a **Létrehozás** opciót a termelési rendelés létrehozásához, és térjen vissza a **Minden termelési rendelés** oldalra.
 
-    ![Új termelési rendelés a minden termelési rendelés oldalon](./media/subcontract15_new-production-order.png)
+    ![Új termelési rendelés a minden termelési rendelés oldalon.](./media/subcontract15_new-production-order.png)
 
 10. A műveleti ablakon, a **Termelési rendelés** lapon válassza ki a **Becslés** opciót a **Becslés** párbeszédpanel megnyitásához.
 
-    ![Becslés párbeszédpanel](./media/subcontract16_estimate-dialog.png)
+    ![Becslés párbeszédpanel.](./media/subcontract16_estimate-dialog.png)
 
 11. Válassza ki az **OK** opciót a becslés megerősítéséhez, és térjen vissza a **Minden termelési rendelés** oldalra.
 
@@ -171,7 +168,7 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
 
     Figyelje meg az S8050 szolgáltatási tételnél, hogy van egy hivatkozás a beszerzési rendelésre, amely akkor generálódott, amikor a termelési rendelést megbecsülték.
 
-    ![Termelési rendelések anyagjegyzéksorai az Anyagjegyzék lapon](./media/subcontract17_production-order-bom-lines.png)
+    ![Termelési rendelések anyagjegyzéksorai az Anyagjegyzék lapon.](./media/subcontract17_production-order-bom-lines.png)
 
 13. Zárja be az **Anyagjegyzék** lapot a **Minden termelési rendelés** lapra való visszatéréshez.
 14. A mműveleti ablaktábla **Ütemezés** lapján válassza ki a **Munkák ütemezése** opciót a **Feladatütemezés** párbeszédpanel megnyitásához.
@@ -180,24 +177,24 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
     - Az **Ütemezés iránya** mezőben válassza ki a **Holnaptól továbbítás** lehetőséget.
     - Állítsa a **Véges kapacitás** lehetőséget **Igen** értékre.
 
-    ![Feladatütemezés párbeszédpanel](./media/subcontract18_job-scheduling-dialog.png)
+    ![Feladatütemezés párbeszédpanel.](./media/subcontract18_job-scheduling-dialog.png)
 
 16. Válassza ki az **OK** opciót az **Feladatütemezés** párbeszédpanel bezárásához és a **Minden termelési rendelés** oldalra való visszatéréshez.
 17. A műveleti ablaktáblán, az **Ütemezés** lapon válassza a **Gantt** elemet a **Gantt-diagram – erőforrás nézet** lap megnyitásához.
 
     A Gantt-diagram vizuálisan jeleníti meg a termelési feladatok erőforrás-ütemezését. Figyelje meg, hogy a Külső bevonás művelete három feladatból áll: egy feldolgozási feladatból, egy szállítási feladatból és egy várakozási idő típusú feladatból.
 
-    ![Gantt-diagram a Gantt-diagramon – Erőforrás nézet lap](./media/subcontract19_gantt-chart.png)
+    ![Gantt-diagram a Gantt-diagramon – Erőforrás nézet lap.](./media/subcontract19_gantt-chart.png)
 
 18. Zárja be a **Gantt-diagram – Erőforrás nézet** lapot a **Minden termelési rendelés** lapra való visszatéréshez.
 19. A műveleti ablakon, a **Termelési rendelés** lapon válassza ki a **Kiadás** opciót a **Kiadás** párbeszédpanel megnyitásához.
 
-    ![Kiadás párbeszédpanel](./media/subcontract20_release-dialog.png)
+    ![Kiadás párbeszédpanel.](./media/subcontract20_release-dialog.png)
 
 20. Kattintson az **OK** gombra a **Kiadás** párbeszédpanel bezárásához.
 21. Válassza ki a **Gyártásvezérlés \> Időszakos feladatok \> Kiadás raktárba \> Darabjegyzék és receptúrasorok automatikus kiadása** lehetőséget a **Darabjegyzék és receptúrasorok automatikus kiadása** párbeszédpanel megnyitásához.
 
-    ![Darabjegyzék és receptúrasorok automatikus kiadása párbeszédpanel](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
+    ![Darabjegyzék és receptúrasorok automatikus kiadása párbeszédpanel.](./media/subcontract21_auto-release-bom-formula-lines-dialog.png)
 
 22. Válassza az **OK** lehetőséget az Anyagjegyzék és receptúrasorok automatikus kiadása feladat futtatásához.
 
@@ -211,7 +208,7 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
 
     ![A Munka lap kétféle munkát jelenít meg a nyersanyag kitárolásához.](./media/subcontract22_work-page.png)
 
-26. Indítsa el a raktár alkalmazást a 10-es művelet raktári munkájának feldolgozásához.
+26. Indítsa el a Raktárkezelés mobilalkalmazást a 10-es művelet raktári munkájának feldolgozásához.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -223,13 +220,13 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
     - A **Kezdő műveletszám** mezőben válassza a **10** értéket.
     - A **Záró műveletszám** mezőben válassza a **10** értéket.
 
-    ![Az Általános lapon beállított értékek](./media/subcontract23_start-dialog.png)
+    ![Az Általános lapon beállított értékek 1.](./media/subcontract23_start-dialog.png)
 
 31. Válassza ki az **OK** opciót az **Indítás** párbeszédpanel bezárásához és a **Minden termelési rendelés** oldalra való visszatéréshez.
 
     Vegye figyelembe, hogy a termelési rendelés állapota ekkor **Elindítva**. A 10-es művelet anyagait a kitárolási lista naplójának automatikus feladása használja el. A 10-es művelet időfelhasználásának elszámolása egy útvonalkártya-napló automatikus feladásával történik.
 
-32. Indítsa el a raktár alkalmazást a 20-as művelet raktári munkájának feldolgozásához.
+32. Indítsa el a Raktárkezelés mobilalkalmazást a 20-es művelet raktári munkájának feldolgozásához.
 
     <!-- TBD – screen shots for processing pick work for the materials. -->
 
@@ -241,7 +238,7 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
     - Írja be a **10** értéket a **Mennyiség** mezőbe.
     - Válassza a **Nem** lehetőséget a **Kitárolási lista feladása most** mezőben.
 
-    ![Az Általános lapon beállított értékek](./media/subcontract24_general-tab.png)
+    ![Az Általános lapon beállított értékek 2.](./media/subcontract24_general-tab.png)
 
 35. Válassza ki az **OK** opciót az **Indítás** párbeszédpanel bezárásához és a **Minden termelési rendelés** oldalra való visszatéréshez.
 
@@ -250,56 +247,59 @@ Egy 10 darabos termelési rendelés jön létre a D8100, "Bevont kabinet" termé
 36. A műveleti ablaktáblán, a **Nézet** lapon válassza a **Kitárolási lista** elemet a **Kitárolási lista** lap megnyitásához.
 37. Válassza ki azt a kitárolási listát, amely nincs feladva, majd válassza ki a napló számát a naplósorok megtekintéséhez.
 
-    ![Naplósorok a Kitárolási lista lapon](./media/subcontract25_picking-list.png)
+    ![Naplósorok a Kitárolási lista lapon.](./media/subcontract25_picking-list.png)
 
 38. A Műveleti ablaktáblán válassza a **Nyomtatás**\>**Kitárolási lista jelentése** pontot a **Kitárolási lista jelentése** párbeszédpanel megnyitásához.
 39. Állítsa a **Szállítólevél-elrendezés használata** opciót **Igen** értékre.
 
-    ![Kitárolási lista jelentésének párbeszédpanele](./media/subcontract26_picking-list-report-dialog.png)
+    ![Kitárolási lista jelentésének párbeszédpanele.](./media/subcontract26_picking-list-report-dialog.png)
 
 40. Válassza az **OK** lehetőséget egy **Kitárolási lista** jelentés készítéséhez.
 
     Ebben az esetben a szállítói szállítólevél nyomtatása a termelési kitárolási lista naplójából történik. A szállítólevél meghatározza azokat az anyagokat, amelyek a külső bevonást elvégző szállítóhoz elszállítottak.
 
-    ![Kitárolási lista jelentése](./media/subcontract27_picking-list-report.png)
+    ![Kitárolási lista jelentése.](./media/subcontract27_picking-list-report.png)
 
 41. Zárja be a **Kitárolási lista** jelentést, ha vissza szeretne térni a **Kitárolási lista** oldalra.
 42. A műveleti ablaktáblán kattintson a **Feladás** gombra a **Napló feladása** párbeszédpanel megnyitásához.
 
-    ![Napló feladása párbeszédpanel](./media/subcontract28_post-journal-dialog.png)
+    ![Napló feladása párbeszédpanel.](./media/subcontract28_post-journal-dialog.png)
 
 43. Kattintson az **OK** gombra a **Napló feladása** párbeszédpanel bezárásához.
 44. Nyissa meg a beszerzési rendelést.
 
-    ![Beszerzési rendelés lap](./media/subcontract29_purchase-order-page.png)
+    ![Beszerzési rendelés lap.](./media/subcontract29_purchase-order-page.png)
 
 45. A **Beszerzés** lap műveleti ablaktáblájában kattintson a **Megerősítés** pontra.
 46. Kattintson a **Feladás** gombra a **Napló feladása** párbeszédpanel megnyitásához.
 47. Válassza ki az **OK** opciót a **Napló feladása** párbeszédpanel bezárásához és a **Beszerzési rendelés** oldalra való visszatéréshez.
 48. Módosítsa az egységárat **33** értékről **40** értékre.
 
-    ![Módosult az egységár a Beszerzési rendelés lapon](./media/subcontract30_unit-price.png)
+    ![Módosult az egységár a Beszerzési rendelés lapon.](./media/subcontract30_unit-price.png)
 
 49. Erősítse meg újra a beszerzési rendelést.
 50. Termékbevételezés.
 
-    ![Termékbevételezés feladásának párbeszédpanele](./media/subcontract31_posting-product-receipt-dialog.png)
+    ![Termékbevételezés feladásának párbeszédpanele.](./media/subcontract31_posting-product-receipt-dialog.png)
 
 51. Beszerzési számla.
 52. Egyeztetési állapot frissítése.
 
-    ![Szállítói számla lapja](./media/subcontract32_vendor-invoice-page.png)
+    ![Szállítói számla lapja.](./media/subcontract32_vendor-invoice-page.png)
 
 53. Készként jelentés.
 
-    ![Jlentés készként párbeszédpanel](./media/subcontract33_report-as-finished-dialog.png)
+    ![Jlentés készként párbeszédpanel.](./media/subcontract33_report-as-finished-dialog.png)
 
 54. Vége.
 
-    ![Vége párbeszédpanel](./media/subcontract34_end-dialog.png)
+    ![Vége párbeszédpanel.](./media/subcontract34_end-dialog.png)
 
 55. Költség összehasonlítása.
 
-    ![Költség-összehasonlítás diagramjai](./media/subcontract35_cost-comparison-charts.png)
+    ![Költség-összehasonlítás diagramjai.](./media/subcontract35_cost-comparison-charts.png)
 
 Hiányzó beállítás az adatoknál.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

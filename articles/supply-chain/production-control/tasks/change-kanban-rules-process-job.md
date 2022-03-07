@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: KanbanRules, KanbanRuleDuplicate, KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, KanbanReassignRuleLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4d4c8fd8251aca2cc53e59afe4c104f2e5198426
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: ba77197f51b871f452c2aa94320aa2a68cf314df
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429248"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5255373"
 ---
 # <a name="change-kanban-rules-for-a-process-job"></a>Kanbanszabályok módosítása egy feldolgozási feladat számára
 
@@ -49,3 +48,6 @@ Ez az eljárás egy adott kanbanhoz használt kanbanszabály módosítását tek
 7. Kattintson a Finish gombra.
     * Most a kanbanfeladat már egy másik kanbanszabályt használ. Ez hasznos lehet a terhelési munkacellák szintezéséhez.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

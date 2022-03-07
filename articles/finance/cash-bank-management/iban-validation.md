@@ -1,23 +1,26 @@
 ---
 title: Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelése
 description: Ez a témakör bemutatja a Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelését
-author: roschlom
+author: mikefalkner
+manager: aolson
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 210d2f57e21ec5ac38ba8ca07195e40ff507e2b9
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
-ms.translationtype: MT
+ms.openlocfilehash: 28abef376e8462c9a69dbd8e5033ea799b6a4b3a
+ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860819"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "4443994"
 ---
 # <a name="manage-international-bank-account-number-iban-account-validation"></a>Nemzetközi bankszámlaszám (IBAN) számlák ellenőrzésének kezelése
 
@@ -45,6 +48,3 @@ Az IBAN szám felépítéséről szóló adatok a Microsoft Dynamics 365 Finance
     Az ellenőrzés azt is ellenőrzi, hogy a bankszámla száma megegyezik-e az IBAN szám a bankszámlaszámot jelölő részével. Ha a bankszámlaszám nem egyezik meg, egy figyelmeztető üzenetet kap. Ez az üzenet csak egy figyelmeztetés. Folytathatja, még akkor is, ha a bankszámlaszám nem egyezik meg.
 
     Az ellenőrzés azt is ellenőrzi, hogy a bank regisztrációs azonosítója megegyezik-e az IBAN-szám a bank regisztrációs azonosítóját jelölő részével. A bank regisztrációs azonosítója tartalmazza a banki számot, és gyakran egy további bankfiókot is. Ha a bank regisztrációs azonosítója nem egyezik meg, egy figyelmeztető üzenetet kap. Ez az üzenet csak egy figyelmeztetés. Folytathatja, még akkor is, ha a bank regisztrációs azonosítója nem egyezik meg.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

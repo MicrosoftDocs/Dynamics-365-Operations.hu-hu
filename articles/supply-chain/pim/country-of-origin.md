@@ -11,17 +11,16 @@ ms.technology: ''
 ms.search.form: COOVendorCerts
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: damadipa
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 0471785991a307de11147e9773d9abe1e02941d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: bb35770f32c21a685b21a41dc7c369ee01fe3891
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429182"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5243297"
 ---
 # <a name="country-of-origin"></a>Származási ország
 
@@ -91,3 +90,6 @@ Ha DBJ-jelentést hoz létre, akkor a **Származási ország szabályai** oldal 
 Létrejön és megjelenik egy jelentés, amely információt jelenít meg a származási országról az egyes alkatrészekhez. Íme, egy példa a jelentésre.
 
 ![Származási ország jelentés](media/country-of-origin-report.png "Származási ország jelentés")
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

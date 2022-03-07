@@ -1,28 +1,25 @@
 ---
 title: Rögzített mennyiségű kanbanszabály létrehozása gyártáshoz
 description: Ez az eljárás a rögzített gyártású kanbanszabály létrehozására koncentrál az átalakítási tevékenységek elindításához egy munkacellában, lean környezetben.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KanbanRules, LeanProductionFlowActivityLookup, InventItemIdLookupSimple, UnitOfMeasureLookup, KanbanCreate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 24eb705bf2de0d175a8a03a4e89ad11c51f15d15
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 16299427a8a6c74e43d7f0eb3ecb3edf4a8f08f0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429241"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576880"
 ---
 # <a name="create-a-fixed-quantity-kanban-rule-for-manufacturing"></a>Rögzített mennyiségű kanbanszabály létrehozása gyártáshoz
 
@@ -74,3 +71,6 @@ Ez az eljárás a rögzített gyártású kanbanszabály létrehozására koncen
     * Ez 5 kanbant hoz létre.  
     * Vegye figyelembe, hogy ehhez a gyártási kanbanszabályhoz 5 kanban, egyenként 10 került létrehozásra. Ez az eljárás utolsó lépése.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

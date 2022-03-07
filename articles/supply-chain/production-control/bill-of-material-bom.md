@@ -1,12 +1,10 @@
 ---
 title: Anyagjegyzékek és receptúrák
 description: Ez a témakör a termékek és termékváltozatok meghatározásának alapvető részét képező anyagjegyzékekkel (AJ) és receptúrákkal kapcsolatban tartalmaz tájékoztatást.
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace, ProdBOM, ProdJournalTransBOM, ProdBOMCurrent, PmfBOMDesignerEditCoBy, ProdJournalPickingListLineSummary, ProdBOMOverview, PmfCoReqPlanning, EcoResProductProdTypeFormulaNoActiveFormulaFormPart, EcoResItemsMissingActiveRouteVersionFormPart, EcoResItemsProdTypeBOMExpiringBOMFormPart, BOMDesignerBOMVersion, BOMExpandPurch, BOMChangeLine, BOMExpandSales, EcoResItemsProdTypeBOMExpiringRouteFormPart, EngChgEcmBomDesigner, EngChgEcmProductBOMItemIdLookup, EngChgEcmProductBOMConsistOf, EngChgEcmBOMCopyDialog, EngChgEcmBomDesignerEditBom, BOMDesignerFilterDialog, BOMDesignerFilterDialog, BOMPartOf, BOMSetupReportFinish, EcoResItemsMissingActiveBOMVersionFormPart, BOMIdLookup, EcoResProductProdTypeFormulaNoActiveRouteFormPart, BOMExpandPurchRFQ, EngChgCaseRouteTablePart
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 19331
 ms.assetid: c19b437a-2de2-4728-9477-2bcb0c2b1f5e
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 01491f15405e28e63e4b83f9a9c7af90c2e4a1b5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 12a70720775d9903a875dd1759ea2372f1f3b122
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966480"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578008"
 ---
 # <a name="bills-of-materials-and-formulas"></a>Anyagjegyzékek és receptúrák
 
@@ -31,8 +29,7 @@ ms.locfileid: "4966480"
 
 Ez a témakör a termékek és termékváltozatok meghatározásának alapvető részét képező anyagjegyzékekkel (AJ) és receptúrákkal kapcsolatban tartalmaz tájékoztatást. Az anyagjegyzékek és receptúrák határozzák meg az adott termékre vonatkozóan a szükséges anyagokat vagy összetevőket. A receptúrák emellett egy adott termelési környezetben kapott társ- és melléktermékeket is meghatároznak. 
 
-<a name="bills-of-materials"></a>Anyagjegyzékek
-------------------
+## <a name="bills-of-materials"></a>Anyagjegyzékek
 
 Az anyagjegyzék (AJ) határozza meg azokat az összetevőket, amelyek szükségesek egy termék előállításához. Az összetevők lehetnek nyersanyagok, félkész termékek vagy alapanyagok. Bizonyos esetekben a szolgáltatások hivatkozhatók az anyagjegyzékben. Azonban az anyagjegyzékek általában a szükséges *anyagi erőforrások* leírását tartalmazzák.  
 
@@ -117,3 +114,6 @@ Válassz ki a **Szállító** típust, ha a termelési folyamat alvállalkozót 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

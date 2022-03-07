@@ -1,27 +1,24 @@
 ---
 title: Szállítók másolása megosztott számsorozatok használatával
 description: Ez a témakör ismerteti, hogyan használhatók a megosztott számsorozatok a szállítók másik jogi személyhez való átmásolásához úgy, hogy a szállítók megőrzik ugyanazt a szállítóazonosítót.
-author: mikefalkner
-manager: aolson
+author: sunfzam
 ms.date: 08/24/2018
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 33338c331a53586b325def398267ab10db23f78a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e29932ca34576d15b7350ab6c711563682d8ddf8
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459156"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753543"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Szállítók másolása megosztott számsorozatok használatával
 
@@ -65,3 +62,6 @@ Szállítókat is másolhat az Adómentességi szám keresés funkció használa
 
 1. Megjelenik a **Szállító másolása** lehetőség. Alapértelmezés szerint ez a beállítás **Nem** értékre van beállítva. A szállító másolásához az aktuális jogi személybe, adja meg a beállítás esetében az **Igen** értéket.
 2. Válassza ki a **Kiválasztás** lehetőséget. Létrejön az új szállító.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

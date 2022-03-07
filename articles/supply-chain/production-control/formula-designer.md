@@ -1,30 +1,27 @@
 ---
 title: Képletszerkesztő
 description: Ez a témakör azt ismerteti, hogy a képletszerkesztő segítségével hogyan elemezhetők és tarthatók karban a receptúrák a fanézetben
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8778d6a4d834af2151e0bced0b0f27d98f088a34
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: bf45fdf44e6d060ee16edf1a6628c5ffd9920dcb
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429455"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566834"
 ---
 # <a name="formula-designer"></a>Képletszerkesztő
 
@@ -121,3 +118,6 @@ Kattintson a **Beállítás** menüpontra a képletszerkesztő fanézetében meg
 |     Anyagjegyzék     | A jelölőnégyzetek segítségével válassza ki a feltételeket, amelyek a faszerkezetben jelennek meg. A képletszerkesztő mindkét lap alján megjeleníti a kiválasztott kritériumokat. |
 |    Útvonal    |                                           A jelölőnégyzetek segítségével válassza ki a feltételeket, amelyek az útvonalak között megjelennek.                                           |
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

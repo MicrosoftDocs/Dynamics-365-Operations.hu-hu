@@ -2,36 +2,30 @@
 title: Nyelvek hozzáadása a webhelyhez
 description: Ez a témakör azt mutatja be, hogyan lehet további nyelvi támogatást adni a Microsoft Dynamics 365 Commerce webhelyhez.
 author: bicyclingfool
-manager: annbe
 ms.date: 12/12/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: fa3029387d5f1ca605fc9559c4272c8dfebcddaf
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: d118c90dc16be964bb22aa6f170fe2d2f009b3e9
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412801"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964554"
 ---
 # <a name="add-languages-to-your-site"></a>Nyelvek hozzáadása a webhelyhez
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet további nyelvi támogatást adni a Microsoft Dynamics 365 Commerce webhelyhez.
-
-## <a name="overview"></a>Áttekintés
 
 A webhely lokalizálható bármilyen, a Commerce által támogatott nyelvre. (A támogatott nyelvek listája a témakörben később jelenik meg.) Ha nyelvet szeretne hozzáadni a webhelyhez, először hozzá kell adnia a webhelyhez kötött online áruházhoz.
 
@@ -171,8 +165,9 @@ A hozzáadott nyelv elérhetővé válik, így a webhely beállítható úgy, ho
 
 [Kedvencek ikon hozzáadása](add-favicon.md)
 
-[Üdvözlő üzenet hozzáadása](add-welcome-message.md)
-
 [Szerzői jogi értesítés hozzáadása](add-copyright-notice.md)
 
 [Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához](add-telemetry.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

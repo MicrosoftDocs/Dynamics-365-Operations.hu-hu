@@ -2,28 +2,25 @@
 title: Hozzá nem rendelt szervizrendelések megtekintése
 description: Ez a témakör ismerteti, hogyan tudja megtekinteni a szervizrendelésen szereplő olyan tevékenységeket, amelyekhez nincs hozzárendelt dolgozó a kiszálló csoportból.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMADispatchBoard
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 540c0079a9fca8158ed507ce2bc50839bd585fc1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 1a93fccc1b2c73e0c32898b58384f590d393d939
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429468"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5824102"
 ---
 # <a name="view-undispatched-service-orders"></a>Hozzá nem rendelt szervizrendelések megtekintése 
 
@@ -61,3 +58,6 @@ Ez a témakör ismerteti, hogyan tudja megtekinteni a szervizrendelésen szerepl
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

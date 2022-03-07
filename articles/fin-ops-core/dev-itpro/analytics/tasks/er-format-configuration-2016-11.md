@@ -1,12 +1,10 @@
 ---
 title: ER – Formátumkonfiguráció létrehozása (2016. november)
-description: Ez a témakör leírja, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre formátum konfigurációt az Elektronikus jelentéshez (ER).
+description: Ez a témakör bemutatja, hogyan lehet formátumkonfigurációt létrehozni az Elektronikus jelentéskészítéshez (ER).
 author: NickSelin
-manager: AnnBe
 ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERComponentTypeDropDialog
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e4cd3960594ab37ca867792c655cfd28dc332fa9
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 46686b9e4f6197f565a324a9d03cbb695b6a933b
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684763"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5749069"
 ---
 # <a name="er-create-a-format-configuration-november-2016"></a>ER – Formátumkonfiguráció létrehozása (2016. november)
 
@@ -158,3 +156,6 @@ Ez a témakör leírja, hogy egy Rendszergazda vagy Elektronikus jelentések fej
 42. Kattintson a **Mentés** gombra.
 43. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

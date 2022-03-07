@@ -1,33 +1,35 @@
 ---
-title: Kérdőívek tervezése
-description: Ez a cikk a kérdőív készítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek.
-author: andreabichsel
-manager: AnnBe
-ms.date: 06/20/2017
+title: Kérdőívek létrehozása
+description: Ez a témakor a kérdőívkészítés folyamatát írja le.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KCMCollectionType, KMAnswerCollection, KMCollection, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations, Human Resources
+ms.search.scope: Human Resources
 ms.custom: 17341
 ms.assetid: b27e2f12-c7a0-4a54-b8d8-17819f8a1c72
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: da4250b281438c29c82150af8db9cb8cca41c6c9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 90dd59b605c21abd03d2e0d64a89dc787850c26e
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418913"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065201"
 ---
-# <a name="design-questionnaires"></a>Kérdőívek tervezése
+# <a name="create-questionnaires"></a>Kérdőívek létrehozása
 
-Ez a cikk a kérdőív készítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek. 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+Ez a témakor a kérdőívkészítés folyamatát írja le. Az első lépés a kérdőív megtervezése. Egy kérdőív megtervezésekor, nem csupán a kérdéseket és a válaszokat kell összeállítani, hanem olyan szerkezetet kell felállítani, amely lehetővé teszi, hogy a válaszok rögzíthetőek és rendezhetőek legyenek. 
 
 Egy alaposan megtervezett kérdőív segítségével javítható a begyűjtött adatok minősége. Alapos tervezéssel könnyebben kiválaszthatja a megfelelő beállításokat a megfelelő időben kérdőívhez. A következő szempontok segíthetnek hatékony kérdőívet tervezni:
 
@@ -64,7 +66,7 @@ Bizonyos előfeltételeket meg kell határoznia mielőtt kérdőíveket, kérdé
 
 ### <a name="questionnaire-types"></a>Kérdőívtípusok
 
-A kérdőívtípusok kötelezőek, és kötelező társítani őket egy kérdőív létrehozásakor. A kérdőív típusok segítenek, a kérdőívek könnyebb kezelésében és rendezésében. A kérdőívek rendezése és megkülönböztetése érdekében, használja a kérdőív típusokat. Például, amennyiben több kérdőív közül is választhat, kiszűrheti őket típusok alapján, hogy megkönnyítse a megfelelő kérdőív megtalálását. Az alábbiakban néhány példa látható a különböző kérdőív típusokra:
+**Kérdőív típusok** kötelezőek, és a kérdőív létrehozásakor hozzá kell rendelni. **Kérdőív típusok** segít a kérdőívek könnyebb kezelésében és osztályozásában. A kérdőívek rendezése és megkülönböztetése érdekében, használja a kérdőív típusokat. Például, amennyiben több kérdőív közül is választhat, kiszűrheti őket típusok alapján, hogy megkönnyítse a megfelelő kérdőív megtalálását. Az alábbiakban néhány példa látható a különböző kérdőív típusokra:
 
 -   Emberi erőforrások fejlesztése
 -   Vevői felmérések
@@ -72,9 +74,9 @@ A kérdőívtípusok kötelezőek, és kötelező társítani őket egy kérdő�
 
 ### <a name="question-types"></a>Kérdéstípusok
 
-A kérdéstípusok kötelezőek, és kötelező kijelölni őket egy kérdőív létrehozásakor. 
+**Kérdés típusok** kötelező, és hozzá kell rendelni a kérdés létrehozásakor. 
 
-Használja a kérdés típusokat, hogy kategorizálja a kérdéseket a jelentéshez. A kérdéstípusok megkönnyítik továbbá a kérdések megtalálását, mivel szűrőként is használhatja a típusokat a **kérdések** oldalon. Az alábbiakban néhány példa látható a különböző kérdés típusokra:
+Használat **Kérdés típusok** a jelentéshez szükséges kérdések kategorizálásához. **Kérdés típusok** megkönnyíti a kérdések megtalálását is, mert a típusokat szűrőként használhatja a **Kérdések** oldalon. Az alábbiakban néhány példa látható a különböző kérdés típusokra:
 
 -   Emberi erőforrások
 -   Üzletkezelés
@@ -91,9 +93,9 @@ A számsorozat-kódok a kérdések és a válaszok rendszerezésére szolgálnak
 Az adatok elkészítése előtt ajánlott minden paramétert meghatározni. A kérdőív beállítások később bármikor módosíthatóak.
 
 ## <a name="questionnaire-components"></a>A kérdőív részei
-A kérdőívek három fő elemből állnak: válaszcsoportok, melyek a feleletválasztós kérdések válaszait tartalmazzák, kérdések és a kérdőív maga.  A kérdéseket a kérdőíven válaszcsoportokba csoportosíthatja. A válaszcsoportok segítségével kérdéseket kategorizálhat és további elemzést végezhet a kérdőíven. 
+A kérdőívek három fő elemből állnak: válaszcsoportok, melyek a feleletválasztós kérdések válaszait tartalmazzák, kérdések és a kérdőív maga. A kérdéseket a kérdőíven válaszcsoportokba csoportosíthatja. A válaszcsoportok segítségével kérdéseket kategorizálhat és további elemzést végezhet a kérdőíven. 
 
-[![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
+[![QuestionnaireComponents.](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
 ### <a name="answer-groups-and-answers"></a>Válaszcsoportok és válaszok
 
@@ -106,7 +108,7 @@ Ahhoz, hogy eldöntendő kérdésekhez hozzon létre lehetséges válaszokat, ha
 
 A válaszcsoportok és a válaszok adják meg a fő információkat, melyekből a kérdések készülnek. Válaszcsoport létrehozása után, a válaszcsoportokat és a kérdéseket a **Válaszcsoport** mezőn, a **Kérdések** oldalon társíthatja. 
 
-Ugyanaz a válaszcsoport ugyanannak a kérdőívnek több kérdésére, illetve egynél több kérdőívre is alkalmazható. 
+An **Válaszcsoport** ugyanazon a kérdőíven több kérdésre is használható, és több kérdőíven is használható. 
 
 > [!NOTE]
 > Amennyiben olyan válaszcsoportban lévő válasz szövegét módosítja, amelyet már használtak befejezett kérdőíveken, az adatok nehezen kiértékelhetővé válhatnak és a kérdőív eredményei már nem biztos, hogy érvényesek lesznek. Amennyiben módosítani kell egy válaszcsoportot, fontolja meg az új válaszcsoport létrehozását, a meglévő megváltoztatása helyett. A kérdésekhez vagy válaszokhoz csatolt, illetve a már megválaszolt válaszcsoportok nem törölhetőek.
@@ -172,7 +174,7 @@ A következő típusú kérdések nem törölhetőek a kérdőívből:
 
 ### <a name="result-groups"></a>Eredménycsoportok
 
-Az eredménycsoportok használata nem kötelező, amennyiben a kérdéseket csatolja a kérdőívhez. 
+**Eredménycsoportok** nem kötelezőek, ha kérdéseket csatol a kérdőívhez. 
 
 Az eredménycsoport célja a kérdőív pontjainak a kiszámítása és az eredmények kategorizálása. Amennyiben eredménycsoportokat használ, a következő feladatokat hajthatja végre:
 
@@ -236,3 +238,5 @@ Amennyiben a kérdőívben egymásra alapuló kérdéseket szeretne létrehozni,
 A jogi személy mind eszközöket, mind pedig szolgáltatásokat kínál vásárlóinak. Ahogy az gyakran előfordul, egyes vásárlók csak eszközöket, míg mások csak szolgáltatásokat vesznek igénybe, megint csak mások pedig eszközöket és szolgáltatásokat is igénybe vesznek. Ebből adódóan tehát, mikor egy jogi személy kioszt egy vásárló-elégedettségi felmérést, feltételes szerkezetet alkalmaz a kérdőívben, így azok a vásárlók akik csak a szolgáltatásokat vásárolják meg, nem kell, hogy válaszoljanak a termékekkel kapcsolatos kérdésekre. 
 
 Másik lehetőségként egy kérdőív összeállítható úgy is, hogy ha a válaszadó az 1-es kérdésre az A választ adja, akkor a sorozat következő kérdése a 2-es kérdés lesz. Ha azonban a válaszadó az 1. kérdésre a B választ adja, az 5. kérdés következik.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Költségobjektumok
 description: Ez a cikk tájékoztatást ad a költségobjektumokról és elmagyarázza hogyan halmozódnak föl a költségek és a mennyiségek. Egy költségobjektum egy olyan entitás, amelyhez költségek és mennyiségek halmozódnak föl. A költségobjektum-entitás lehet egy termék vagy egy termékváltozat, úgy mint változatok a stílusra és színre.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventCostOnhandItem
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65a0f72f8d97bda36bacd691d545807c413f8825
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: d27e2dcfd8f70c8d4b0f2ae1254f3c4fce63bb4d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967658"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572169"
 ---
 # <a name="cost-objects"></a>Költségobjektumok
 
@@ -66,18 +64,20 @@ Az alábbi táblázat bemutatja, hogy mi a költségobjektum és mi a készletob
 
 **Megjegyzés**: A **Tényleges érték beszámítása** paraméter nem befolyásolja az előző számításokat.
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
-[Termékdimenzió-csoport](https://technet.microsoft.com/library/aa499382.aspx)
+[Termékdimenzió-csoport](/dynamicsax-2012/appuser-itpro/about-product-dimensions)
 
-[Tárolásidimenzió-csoport](https://technet.microsoft.com/library/hh209317.aspx)
+[Tárolásidimenzió-csoport](/dynamicsax-2012//storage-dimension-groups-form)
 
-[Nyomonkövetésidimenzió-csoport](https://technet.microsoft.com/library/hh209465.aspx)
+[Nyomonkövetésidimenzió-csoport](/dynamicsax-2012//tracking-dimension-groups-form)
 
-[Új vagy módosult elemek](../../fin-and-ops/get-started/whats-new-changed.md)
+[Új vagy módosult elemek](../../fin-ops-core/fin-ops/get-started/whats-new-changed.md)
 
 [Költségbejegyzések](cost-entries.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

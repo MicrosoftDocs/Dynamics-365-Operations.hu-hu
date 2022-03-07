@@ -2,11 +2,9 @@
 title: Kifizetések létrehozása beszedési megbízási felhatalmazásokkal rendelkező vevő számára
 description: Ez a folyamat bemutatja, hogyan hozhat létre egy ISO20022 állandó átutalásos kifizetési fájlt olyan vevőhöz, akihez beszedési megbízás van beállítva, és van egy kifizetendő számlája.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJournalTable, LedgerJournalTransCustPaym, SysQueryForm, CustPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 934d086661dbbf1c7ba1d868f90caafe5b0bebf2
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: fa017b1d5cab377d1f36604cf54435beb6a4abb5
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964566"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822677"
 ---
 # <a name="create-payments-for-a-customer-who-have-direct-debit-mandates"></a>Kifizetések létrehozása beszedési megbízási felhatalmazásokkal rendelkező vevő számára
 
@@ -67,3 +65,6 @@ Ez az ötödik a hat olyan feladat közül, amelyek vevői fizetési folyamat el
 11. Kattintson az OK gombra.
 12. Kattintson az OK gombra.
 13. Kattintson a Fizetések létrehozása lehetőségre.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

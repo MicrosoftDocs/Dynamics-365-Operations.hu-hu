@@ -2,28 +2,25 @@
 title: Degresszív értékcsökkenés felosztás után
 description: Ez a témakör azt a módszert ismerteti, amelyet a Tárgyi eszközök eszköz felosztása utáni értékcsökkenés kiszámítására használnak az egyenleg csökkentése módszerrel.
 author: moaamer
-manager: Ann Beebe
 ms.date: 11/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-11-17
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 615d17c71b904d426081d4c57492ba7e95c2c749
-ms.sourcegitcommit: 65f9e2584c0530b1a71655aae09101691726b47f
-ms.translationtype: HT
+ms.openlocfilehash: 8e59ff1ef2b06a7203c1023bade7f06019479f3929dfbd582860f102c46b49f0
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4650665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737701"
 ---
 # <a name="reduce-balance-depreciation-after-a-split"></a>Degresszív értékcsökkenés felosztás után
 
@@ -40,8 +37,11 @@ Például a következő feltételek vannak érvényben:
 - Az első pénzügyi év értékcsökkenése 18.000 dollár, a havi értékcsökkenés 150 dollár, majd az eszköz értékcsökkenése 2019 novemberéig 738,75 dollár.
 - 2019 novemberében az eszköz 80 százaléka feloszlik egy másik tárgyi eszközre.
 
-[![Degresszív értékcsökkenés felosztás után](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
+[![Degresszív értékcsökkenés felosztás után.](./media/reduce-balance-depreciation-after-split.png)](./media/reduce-balance-depreciation-after-split.png)
 
 Az eredeti eszköz értékcsökkenésének összege 1.822,25 dollár. Ez az összeg megegyezik az NBV-vel a felosztásos tranzakció feladása előtt (9111,25 dollár), valamint a felosztásos tranzakció feladása során keletkező beszerzési helyesbítés (-8000 dollár), valamint a felosztásos tranzakció során keletkező értékcsökkenési helyesbítés (711 dollár). Ezért a második év értékcsökkenése (1.822,25 × 18 százalék) ÷ 12 = 27,33 dollár.
 
 Az új tárgyi eszköz értékcsökkenésének összege az első évben (8 000 × 18 százalék) ÷ 12 = 120 dollár.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

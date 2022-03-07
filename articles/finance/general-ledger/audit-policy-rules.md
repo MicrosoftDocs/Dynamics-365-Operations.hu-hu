@@ -2,11 +2,9 @@
 title: Könyvvizsgálati irányelvszabály
 description: Naplózási házirendek segítségével kiértékelhet költségjelentéseket, szállítói számlákat és beszerzési rendeléseket, hogy így meggyőződhessen arról, hogy azok megfelelnek-e az Ön által létrehozandó irányelvszabályoknak. Minden olyan szabály, amelyhez egy könyvvizsgálati irányelv van társítva, kötegelt módban van futtatva a megadott ütemezés szerint.  Minden egyes irányelvszabály egy irányelvszabály-típus egy példánya. Minden egyes irányelvszabály-típusra nézve csak egy irányelvszabály lehet aktív egyszerre.
 author: panolte
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AuditPolicyAdditionalOption, AuditPolicyRule
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 998d4dbabec74528b4acb9e797faef0c449e7c28
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: bbf93f5b8b2f8d95102a52178b096d7e334894483c0ac0bacc62653aea845022
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021241"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6744306"
 ---
 # <a name="audit-policy-rules"></a>Könyvvizsgálati irányelvszabály
 
@@ -30,8 +28,7 @@ ms.locfileid: "5021241"
 
 Naplózási házirendek segítségével kiértékelhet költségjelentéseket, szállítói számlákat és beszerzési rendeléseket, hogy így meggyőződhessen arról, hogy azok megfelelnek-e az Ön által létrehozandó irányelvszabályoknak. Minden olyan szabály, amelyhez egy könyvvizsgálati irányelv van társítva, kötegelt módban van futtatva a megadott ütemezés szerint.  Minden egyes irányelvszabály egy irányelvszabály-típus egy példánya. Minden egyes irányelvszabály-típusra nézve csak egy irányelvszabály lehet aktív egyszerre. 
 
-<a name="queries-and-query-types"></a>Lekérdezések és a lekérdezéstípusok
------------------------
+## <a name="queries-and-query-types"></a>Lekérdezések és a lekérdezéstípusok
 
 Ha könyvvizsgálati irányelvszabályt hoz létre, először irányelvszabály-típust választ. Az irányelvszabály-típus megadja az irányelvszabályok létrehozásának kiinduló pontjaként használandó alkalmazásobjektum-fa (AOT) lekérdezést. Az irányelvszabályhoz használandó lekérdezés típusát is megadja. A lekérdezés meghatározza azt a forrásbizonylatot, amit az irányelvszabály kiértékel. Azokat a mezőket is megadja a forrásdokumentumban, amelyek mind a jogi személyt mind a használandó dátumot azonosítják, amikor dokumentumokat választanak ki ellenőrzésre. A lekérdezéstípus meghatározza a lekérdezési oldalon és a Könyvviteli irányelvszabály oldalon levő alapértelmezett mezőket. Az alábbi táblázatban az audit-irányelvszabályokhoz elérhető lekérdezéstípusok felsorolása található.
 
@@ -93,10 +90,12 @@ Az egy adott auditirányelvre vonatkozó összes irányelvszabály ugyanazon kö
 
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Könyvvizsgálati irányelvmegsértések és esetek](audit-policy-violations-cases.md)
 [Naplózási házirendek meghatározása a forrásbizonylatok számára](tasks/define-audit-policies-source-documents.md)
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

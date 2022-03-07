@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: WHSLocationProfile
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 320059184dc69c4fd34c4b50265ceb142d47a467
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a9be25004452ab0a0e2af0ac552a69f805d301d8
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429383"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5239062"
 ---
 # <a name="create-a-location-profile"></a>Helyprofil létrehozása
 
@@ -43,3 +42,6 @@ Ez a témakör bemutatja, hogyan lehet helyprofilokat létrehozni a Dynamics 365
 10. Válassza ki az **Igen** lehetőséget a **Ciklikus leltározás engedélyezése** mezőben.
 11. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

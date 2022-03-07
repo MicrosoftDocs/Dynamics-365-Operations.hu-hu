@@ -2,35 +2,30 @@
 title: Csatornaközi megosztás engedélyezése és használata
 description: Ez a témakör azt mutatja be, hogyan lehet engedélyezni és használni a Microsoft Dynamics 365 Commerce webhelykészítő csatornaközi megosztás funkcióját.
 author: psimolin
-manager: annbe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 77284045bda193500117978102c0565c5f15ec6d
-ms.sourcegitcommit: 1a12b42cc17f004a981c716aed3da6cf538475a5
-ms.translationtype: HT
+ms.openlocfilehash: 05614b3ec14bfca9551242e5cf31aee0cb21c39a85150114af446a187fac998a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4412991"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742416"
 ---
 # <a name="enable-and-use-cross-channel-sharing"></a>Csatornaközi megosztás engedélyezése és használata
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet engedélyezni és használni a Microsoft Dynamics 365 Commerce webhelykészítő csatornaközi megosztás funkcióját.
-
-## <a name="overview"></a>Áttekintés
 
 A csatornaközi megosztással a kiskereskedők újra felhasználhatják és megoszthatják a tartalmat a webhely több csatornája között. Ez a lehetőség akkor hasznos, ha a webhelycsatornák kompatibilis alapnyelvet használnak, vagy ha sok közös tartalmi elemük van.
 
@@ -53,15 +48,15 @@ A következő lépésekkel engedélyezheti a csatornaközi megosztást a Commerc
 1. Lépjen a **Webhelybeállítások \> Funkciók** elemre.
 1. Állítsa a **Csatornaközi** funkciót **Be** értékre.
 
-    ![„Be” értékre állított Csatornaközi opció a Commerce webhelyszerkesztőben](./media/enabling-cross-channel-sharing.png)
+    ![„Be” értékre állított Csatornaközi opció a Commerce webhelyszerkesztőben.](./media/enabling-cross-channel-sharing.png)
 
 Miután engedélyezte a csatornaközi megosztást, a csatornaközi adatok megjelennek a **Csatornák** szakaszban a **Webhelybeállítások \> Funkciók** alatt, ahogy az alábbi ábrán látható.
 
-![A csatornák megjelenített adatai a csatornaközi megosztás engedélyezése után](./media/channels-cross-channel.png)
+![A csatornák megjelenített adatai a csatornaközi megosztás engedélyezése után.](./media/channels-cross-channel.png)
 
 A csatornaközi megosztás engedélyezését követően a Commerce webhelyszerkesztő jobb felső sarkában a **Csatorna** mezőben megjelenik egy **Csatornaközi online áruház** opció, amely a csatornaközi tartalom kezelésére használható, amint azt a következő ábra mutatja.
 
-![A Csatornaközi online áruház opció a Csatornák mezőben, a csatornaközi megosztás engedélyezése után](./media/cross-channel-dropdown.png)
+![A Csatornaközi online áruház opció a Csatornák mezőben, a csatornaközi megosztás engedélyezése után.](./media/cross-channel-dropdown.png)
 
 ## <a name="create-and-use-cross-channel-content"></a>Csatornaközi tartalom létrehozása és használata
 
@@ -137,3 +132,6 @@ Most, ha a csatorna alap URL-címét használja, és felkeresi az adott webhelye
 [Állapotok és életciklus-dokumentálás](document-states-overview.md)
 
 [A közzétételi csoportokkal végzett munka](publish-groups.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

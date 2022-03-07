@@ -2,9 +2,11 @@
 title: Nyitvatartási idő létrehozása és frissítése
 description: Ez a témakör azt mutatja be, hogyan lehet a Commerce Headquarters alkalmazásban létrehozni és frissíteni a nyitvatartási időt.
 author: josaw1
+manager: AnnBe
 ms.date: 7/30/2019
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -14,12 +16,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: Retail 10.0.1 update
-ms.openlocfilehash: 703087f5311205e18b6b8f99b847b539770160b91574b12d505822c8e16ca96c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 00c532dfa9ceed2cda6652496d874cb82785dc7b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6770094"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5230640"
 ---
 # <a name="create-and-update-store-hours"></a>Nyitvatartási idő létrehozása és frissítése
 
@@ -49,14 +51,14 @@ A nyitvatartási idő konfigurálásához kövesse az alábbi lépéseket.
     > [!NOTE]
     > Több sablont is létrehozhat, egymást átfedő kezdő és a záró dátumokkal. Így például megadhatja a különböző időzónákban található üzletek nyitvatartási idejét.
 
-    ![Tartomány hozzáadása párbeszédpanel.](../dev-itpro/media/Storehours1.png "Tartomány hozzáadása párbeszédpanel")
+    ![Tartomány hozzáadása párbeszédpanel](../dev-itpro/media/Storehours1.png "Tartomány hozzáadása párbeszédpanel")
 
 4. A nyitvatartási idő sablonját társítsa azokkal az üzletekkel, ahol használatban lesz. A **Szervezeti csomópontok kiválasztása** párbeszédpanelen válassza ki azokat az üzleteket, régiókat és szervezeteket, amelyekkel a sablont társítani szeretné.
 
     - Minden üzlethez csak egy nyitvatartásiidő-sablon tartozhat.
     - A nyílgombokkal válassza ki az üzleteket, régiókat vagy szervezeteket. A naptár az üzletek vagy üzletcsoportok számára lesz hozzáférhető, és a pénztárnál is megjelenik referenciaként.
 
-    ![Szervezeti csomópontok párbeszédpanel kiválasztása.](../dev-itpro/media/Storehours2.png "Szervezeti csomópontok párbeszédpanel kiválasztása")
+    ![Szervezeti csomópontok párbeszédpanel kiválasztása](../dev-itpro/media/Storehours2.png "Szervezeti csomópontok párbeszédpanel kiválasztása")
 
 5. Az **Elosztási ütemezés** oldalon futtassa a **1070** és **1090** feladatokat, hogy a nyitvatartási időt elérhetővé tegye a pénztárnál.
 
@@ -75,7 +77,7 @@ A nyitvatartási idő kinyomtatott pénztári nyugtákon való feltüntetéséhe
 
 A pénztári nyugtákon ettől kezdve megjelenik a nyitvatartási idő. Ha a sablonban egy vagy több ünnepnap is meg van adva, akkor azok is megjelennek a nyugtán.
 
-![Példanyugta.](../dev-itpro/media/Storehours3.png "Példanyugta")
+![Példanyugta](../dev-itpro/media/Storehours3.png "Példanyugta")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

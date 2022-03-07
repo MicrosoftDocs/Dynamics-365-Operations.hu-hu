@@ -1,12 +1,10 @@
 ---
 title: Szállítói katalógusok importálása
 description: Ez a témakör leírja a szállítói katalógus adatainak importálása folyamatot.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendProspectiveVendorRegistrationRequests, CatVendorCatalogDetails, CatVendorCatalogReleaseApprovedProducts, CatVendorCMRDetails, CatVendorCatalogProductPerCompanyStatus, CatVendorMaintenanceEventLog, CatVendorCatalogReviewTool, CatVendorCatalogFileUpload, CatVendorCatalogMaintenanceRequest, CatVendorCatalogFileInLegalEntity, CatVendorCatalogSchema, CatVendorCatalogFilePreviewPane, CatVendorCatalogImportParameter
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 6a6fc2b4fe4245a1fe5b5a7eaafe8cc7fd337ab9
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: ee709d72098b4304cf7748cae1a328736fa16188
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020754"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5825230"
 ---
 # <a name="import-vendor-catalogs"></a>Szállítói katalógusok importálása
 
@@ -69,3 +67,6 @@ A katalógusimportálási fájlsablon egy XSD-fájl, amely egy szállító term�
 3. A **Mentés másként** párbeszédpanelen válassza ki azt a helyet, ahol a katalógusfájl-sablont tárolni szeretné, és mentse a fájlt.
 
 További tájékoztatás és példák ebben a blogbejegyzésben: [Dynamics AX](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) szállítói katalógusok.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,28 +2,28 @@
 title: Dolgozói adatok megadása
 description: Ha egy toborzó létrehozott egy tömeges felvételi projektet, és pozíciókat generált, a következő lépés a dolgozói információk megadása a felvehető emberek esetében.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: HRMMassHireProject, HRMMassHireLine, HcmPersonnelManagementWorkspace
+ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8d139b079c011b60af6d2b896e9edb5b9d27501a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f0331f63444a1058df9f58908a6a228161b3dd80
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418811"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5803513"
 ---
 # <a name="enter-worker-information"></a>Dolgozói adatok megadása
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -45,3 +45,6 @@ Ha egy toborzó létrehozott egy tömeges felvételi projektet, és pozíciókat
 8. A listában szüntesse meg a kiválasztott sor megjelölését.
     * Válassza ki a következő beosztásállapotot, és folytassa a dolgozói információk megadását a felvehető embereknél.  
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

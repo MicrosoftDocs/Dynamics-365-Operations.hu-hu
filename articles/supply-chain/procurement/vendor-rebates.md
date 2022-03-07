@@ -1,26 +1,24 @@
 ---
 title: Szállítói visszatérítések
 description: Ez a témakör áttekintést nyújt a szállítói visszatérítésekkel végzett munka során végrehajtandó leggyakoribb feladatokról. A szállítói visszatérítések segítséget nyújtanak a vállalatoknak szállító visszatérítési programjuk könnyebb kezelésében úgy, hogy automatizálják a megszerzett visszatérítések felügyeletéhez, nyomon követéséhez és igényléséhez szükséges feladatokat.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TAMVendRebateAgreement
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 46d6beb287f7d034c6fde09999f7854695a4987c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: ec8d054d023b7e3f6611199e60f661c480d44d57
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966655"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566863"
 ---
 # <a name="vendor-rebates"></a>Szállítói visszatérítések
 
@@ -55,7 +53,7 @@ A szállítói visszatérítési megállapodásban egy szállítóval kötött s
 
 A **szállítói visszatérítési megállapodások** oldal megnyitásához válassza a **Beszerzés és forrás** &gt; **Szállítói visszatérítések** &gt; **Visszatérítési megállapodások** elemet.
 
-![Beszerzési szerződés](media/purchase-agreement.PNG)
+![Beszerzési szerződés.](media/purchase-agreement.PNG)
 
 A **Szállítói visszatérítési megállapodások** lapon megtekintheti az adott szállítói szerződés egyeztetett feltételeinek részleteit.
 
@@ -131,7 +129,7 @@ Az igények jóváhagyást követően feldolgozhatók a Kötelezettségek (A/P) 
 
     Egy visszatérítési könyvelési napló feladásra kerül a követelés összegével. Ez a feladás tartozik tételként kerül az Elhatárolt szállítói visszatérítés-követelések számlára a várt szállítói jóváírás alapján és követel tételként az ideiglenes Elhatárolt szállítói visszatérítés-kiegyenlítések számlára a várható nyereséget illetően.
 
-    ![Üzenet](media/message.png)
+    ![Üzenet.](media/message.png)
 
 5. A visszatérítési listában válassza ki a sort, majd ezután a műveleti ablakban válassza a **Visszatérítési tranzakciók** elemet az elhatárolt visszatérítéshez tartozó naplókötegszám megjelenítéséhez és kikereséséhez.
 
@@ -166,3 +164,6 @@ A szállítói visszatérítések kezelésére szolgáló eljárásban több man
 - Pontos visszatérítési igények létrehozása
 - A várható kinnlevőségek és az ideiglenes nyereség elhatárolása a főkönyvben
 - A szállítói egyenleg és az eredménykimutatás frissítése az esedékes engedménnyel
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

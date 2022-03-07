@@ -3,6 +3,7 @@ title: STARTSWITH ER függvény
 description: A témakör tájékoztatást nyújt a STARTSWITH Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
 author: NickSelin
 ms.date: 02/11/2021
+ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: AX 10.0.18
-ms.openlocfilehash: b378f501ccf812cfa0ae09e7cfbfdcf4c8a24ab8747b8ffe6044769df14a3057
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50883bb604d2d1f2947545ce27fa02099e70b0e6
+ms.sourcegitcommit: 17cee26b03f7b5afe8a089a0a9b2380e8d377d70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762224"
+ms.lasthandoff: 05/15/2021
+ms.locfileid: "6048842"
 ---
 # <a name="startswith-er-function"></a>STARTSWITH ER függvény
 

@@ -2,25 +2,22 @@
 title: Eszközkezelés integrálása tárgyi eszközökkel
 description: Ez a témakör azt mutatja be, hogyan lehet integrálni az eszközkezelés és a tárgyi eszközök modulokat, hogy a tárgyi eszközöket a karbantartás alatt álló eszközökkel lehessen kapcsolni.
 author: kamaybac
-manager: tfehr
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: dabourq
 ms.search.validFrom: 2020-04-17
 ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: cdda44d361011706fe0ba170309908533aa0c2f7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a45bf1f62cdcc8abed2ec157a223e7f3fddec7ce
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429409"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809854"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Eszközkezelés integrálása tárgyi eszközökkel
 
@@ -115,3 +112,6 @@ Karbantartás alatt álló eszköz és tárgyi eszköz közti meglévő társít
 1. Keresse meg és nyissa meg a tárgyi eszközt.
 1. A **tárgyi eszköz** gyorslapon törölje a jelet az érték a **munkavégzési helyszín** mezőből.
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

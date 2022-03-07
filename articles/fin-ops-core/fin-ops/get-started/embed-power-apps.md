@@ -2,11 +2,9 @@
 title: 'Vászonalapú alkalmazások beágyazása a következőből: Power Apps'
 description: Ez a témakör azt mutatja be, hogyan végezhető el a vászonalapú alkalmazás Microsoft Power Apps szolgáltatásból az ügyfélbe történő beágyazása a termék funkcionalitásának kibővítése érdekében.
 author: jasongre
-manager: AnnBe
 ms.date: 11/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FormRunConfigurationAddPAControl, FormRunConfigurationEditPAControl
 audience: Application User, Developer, IT Pro
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
-ms.openlocfilehash: fbdd4dd1bb0b850319b12e55b0e68d6fdc516ad6
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 7b20d24f79bd84f516e005b9d4a0ecdf6ef848fc
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798377"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5752890"
 ---
 # <a name="embed-canvas-apps-from-power-apps"></a>Vászonalapú alkalmazások beágyazása a következőből: Power Apps
 
@@ -142,3 +140,6 @@ public final class ClassTest_Extension
     }
 }
 ```
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

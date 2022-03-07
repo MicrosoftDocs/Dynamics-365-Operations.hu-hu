@@ -1,7 +1,7 @@
 ---
 title: Készlet előrejelzések
 description: Ez a témakör leírja azokat a készlet- és igény-előrejelzési funkciókat, amelyek készlet.előrejelzések készítéséhez használhatók a Microsoft Dynamics 365 Supply Chain Management alkalmazásban.
-author: ChristianRytt
+author: crytt
 ms.date: 06/08/2021
 ms.topic: article
 ms.search.form: EcoResProductDetailsExtended, ForecastSales, ForecastPurch, ForecastInvent
@@ -10,13 +10,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-08
-ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 5ce997a0bb3d6766b801f3f4dea8ab3f19085d02
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 7901bcfc239885aa53863729e573d1f37ba67f81
+ms.sourcegitcommit: f21659f1c23bc2cd65bbe7fb7210910d5a8e1cb9
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577552"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "6306415"
 ---
 # <a name="inventory-forecasts"></a>Készlet előrejelzések
 
@@ -94,7 +94,7 @@ A következő táblázat az **Ellátási előrejelzés** oldal **Áttekintés** 
 
 | Parancs | Leírás |
 |---|---|
-| Előrejelzés felosztása | Ha felosztási módszert használ, hozza létre az előrejelzési tranzakció egyéni ütemezési sorait. A program ezután dátum szerint (a kiválasztott időintervallumok szerint), mennyiség és összeg szerint osztja el a sor mennyiségét a teljes időhatáron belül. (Lásd: [Előrejelzés felosztása](#allocate-forecast) szakaszt a témakör későbbi részében.) |
+| Előrejelzés felosztása | Ha felosztási módszert használ, hozza létre az előrejelzési tranzakció egyéni ütemezési sorait. A program ezután dátum szerint (a kiválasztott időintervallumok szerint), mennyiség és összeg szerint osztja el a sor mennyiségét a teljes időhatáron belül. |
 | Tömeges frissítés | Nyissa meg az **Előrejelzési tranzakciók szerkesztése** lapot. (Lásd: [Az előrejelzési tranzakciók tömeges frissítése](#bulk-update) szakaszt a témakör későbbi részében.) |
 | Készlet előrejelzése | A **Készlet-előrejelzés** lapnak a kiválasztott cikk-/modellkombinációra szűrt nézetének megnyitása. (Lásd: [Készlet-előrejelzések](#inventory-forecast) szakaszt a témakör későbbi részében.) |
 | Cikkszükséglet létrehozása | Egy párbeszédpanel megnyitása, ahol cikkeket, illetve értékesítési rendeléseket vagy cikknaplósorokat hozhat létre a projekthez kapcsolódó előrejelzési tranzakciókhoz. Bár ez a parancs az ellátási előrejelzési sorokhoz és az igény előrejelzési sorokhoz is elérhető, nem használható az **Ellátási előrejelzés** lapon. |
@@ -201,7 +201,7 @@ A következő táblázat az **Igényelőrejelzés** oldal **Áttekintés** lapj�
 
 | Parancs | Leírás |
 |---|---|
-| Előrejelzés felosztása | Ha felosztási módszert használ, hozza létre az előrejelzési tranzakció egyéni ütemezési sorait. A program ezután dátum szerint (a kiválasztott időintervallumok szerint), mennyiség és összeg szerint osztja el a sor mennyiségét a teljes időhatáron belül. (Lásd: [Előrejelzés felosztása](#allocate-forecast) szakaszt a témakör későbbi részében.)|
+| Előrejelzés felosztása | Ha felosztási módszert használ, hozza létre az előrejelzési tranzakció egyéni ütemezési sorait. A program ezután dátum szerint (a kiválasztott időintervallumok szerint), mennyiség és összeg szerint osztja el a sor mennyiségét a teljes időhatáron belül. |
 | Tömeges frissítés | Nyissa meg az **Előrejelzési tranzakciók szerkesztése** lapot. (Lásd: [Az előrejelzési tranzakciók tömeges frissítése](#bulk-update) szakaszt a témakör későbbi részében.) |
 | Készlet előrejelzése | A **Készlet-előrejelzés** lapnak a kiválasztott cikk-/modellkombinációra szűrt nézetének megnyitása. (Lásd: [Készlet-előrejelzések](#inventory-forecast) szakaszt a témakör későbbi részében.) |
 | Cikkszükséglet létrehozása | Egy párbeszédpanel megnyitása, ahol cikkeket, illetve értékesítési rendeléseket vagy cikknaplósorokat hozhat létre a projekthez kapcsolódó előrejelzési tranzakciókhoz. |
@@ -296,7 +296,7 @@ A **Készletdimenziók** lapon látható az **Áttekintés** lapon jelenleg kiv�
 
 ### <a name="the-allocation-grid-on-the-demand-forecast-page"></a>Az Igényelőrejelzés lap Felosztás rácsa
 
-Ha cikkfelosztási kulcsot használ, vagy egy vagy több jövőbeli időszakra vonatkozóan adott meg cikk-előrejelzést, az **Előrejelzés felosztása** lehetőség kiválasztásával az **Áttekintés** lap eszközsorán feloszthatja az előrejelzést. A program ezután úgy osztja el a mennyiséget, ahogy a **Felosztási** rács sorai jelzik. (Lásd: [Előrejelzés felosztása](#allocate-forecast) szakaszt a témakör későbbi részében.)
+Ha cikkfelosztási kulcsot használ, vagy egy vagy több jövőbeli időszakra vonatkozóan adott meg cikk-előrejelzést, az **Előrejelzés felosztása** lehetőség kiválasztásával az **Áttekintés** lap eszközsorán feloszthatja az előrejelzést. A program ezután úgy osztja el a mennyiséget, ahogy a **Felosztási** rács sorai jelzik.
 
 ## <a name="inventory-forecast"></a><a name="inventory-forecast"></a>Készlet előrejelzése
 
@@ -328,25 +328,6 @@ A következő táblázat a **Készlet-előrejelzés** oldal rácsának mezőit �
 | **Részanyagjegyzék** | A megadott részanyagjegyzék anyagjegyzékszáma. |
 | **Részútvonal** | A megadott részútvonal útvonalszáma. |
 | (Egyéb dimenziók) | A további dimenziók a rács oszlopaiként jeleníthetők meg. Válassza a **Készlet \> Dimenziók megjelenítése** lehetőséget a Művelet panelen a megjelenítendő dimenziók kiválasztásához. |
-
-## <a name="allocate-forecast"></a><a name="allocate-forecast"></a>Előrejelzés felosztása
-
-Használja a következő eljárást a kiválasztott előrejelzési tranzakciósorok feldolgozásához. Előrejelzés felosztásakor a program a **Felosztás** rács sorai szerint osztja fel a mennyiséget.
-
-1. Attól függően, hogy milyen entitáshoz szeretne előrejelzést létrehozni, és attól függően, hogy milyen típusú előrejelzést szeretne létrehozni, nyissa meg az ellátás- vagy igény-előrejelzési lapot a következőkben leírtak szerint: [Előrejelzési sorok megtekintése és manuális megadása](#manual-entry).
-1. A ellátás- vagy igény-előrejelzési sorok lapon válasszon ki egy előrejelzési sort, majd az **Áttekintés** lapon válassza az eszköztár **Előrejelzés felosztása** beállítását.
-1. Az **Előrejelzés felosztása** párbeszédpanelen állítsa be az alábbi táblázatban leírt mezőket. (Az érték, amelyet a **Metódus** mezőben kiválaszt határozza meg, hogy elérhetők-e más mezők.)
-
-    | Mező | Leírás |
-    |---|---|
-    | Metódus | <p>Az előrejelzési tranzakció felosztához használt módszer kiválasztása:</p><ul><li>**Nincs** – Nem kerül sor felosztásra.</li><li>**Időszak** – az egyes időszakokhoz azonos mennyiség előrejelzése. Ha ezt az értéket választja, adjon meg egy mennyiséget a **/** mezőben, és egy időegységet az **Egység** mezőben.</li><li>**Kulcs** – Az előrejelzett mennyiség felosztása az **Időszakkulcs** mezőben megadott Időszakfelosztási kulcs szerint történik. Ezt a módszert a szezonális eltérések figyelembevétele esetén célszerű használni.</li><ul>|
-    | / | <p>Adja meg, hogy hány időszakra előre terjed ki a jövőbe az előrejelzés. Ez a mező csak akkor érhető el, ha az *Időszak* lehetőséget választotta a **Metódus** mezőben.</p><p>Például válassza az *Időszakos* lehetőséget a **Metódus** mezőben, írjon be *1*-et a **Per** mezőbe, és válassza a *Hónapok* lehetőséget az **Egység** mezőben. Majd a **Befejezés** mezőben adja meg a záró dátumot, amely az elkövetkező egy évre terjedhet ki. Ebben az esetben az elkövetkező egy éves időtartam minden hónapjához létrehoz egy előrejelzési sort a fejlécsorban megadott cikk és mennyiség alapján. |
-    | Egység | Az időintervallum egysége: *Nap*, *Hónap* vagy *Év*. A felosztás ekkor a **Per** mezőben megadott napok, hónapok vagy évek számának felel meg.|
-    | Időszaki kulcs | Adja meg az előrejelzés felosztása során használt időszaki felosztási kulcsot. További információ: [Költségvetés-tervezés – adatok megadása](../../finance/budgeting/budget-planning-data-allocation.md). |
-    | Vége | Adja meg a **Per** és **Egység** mezőkben megadott beállításokra vonatkozó záró dátumot. |
-
-1. A beállítások jóváhagyásához kattintson az **OK** gombra.
-1. Ugyanannak a sornak a **Felosztás** lapján áttekintheti az eredményeket.
 
 ## <a name="bulk-update-forecast-transactions"></a><a name="bulk-update"></a>Előrejelzési tranzakciók tömeges frissítése
 

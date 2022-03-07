@@ -2,27 +2,24 @@
 title: Pénztár Kelet Európához és Oroszországhoz
 description: Ez a témakör ismerteti a házipénztár funkciót, amellyel a felhasználók az Észtország, Litvánia, a Cseh Köztársaság, Magyarország, Lettország, Lengyelország és Oroszország készpénzműveleteit tükrözhetik a rendszerben.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RCashBalance, RCashCountStatementForm, RCashPosting, RCashRemainLimit, RCashReportJour_PL, RCashTable, RCashTableBalance, RCashTableCredLimit, RCashTableLastRevaluation, RCashTableTransactions, RCashTrans
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 268504
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 890300d1251b2befce47f62535f44771378f3cb7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: a721d5602fa7b569b56e85e1bd66a8e543a39a41
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408056"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832700"
 ---
 # <a name="petty-cash-for-eastern-europe-and-russia"></a>Pénztár Kelet Európához és Oroszországhoz
 
@@ -479,3 +476,6 @@ A kiegyenlített összeg tükröződik a <strong>Kiegyenlített összeg pénznem
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

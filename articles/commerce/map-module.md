@@ -2,15 +2,12 @@
 title: Modul feltérképezése
 description: Ez a témakör a feltérképezési modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket konfigurálni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,23 +15,21 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: af6aedb6c0112822155c6d855909578a927d1c2c
-ms.sourcegitcommit: 9c05d48f6e03532aa711e1d89d0b2981e9d37200
-ms.translationtype: HT
+ms.openlocfilehash: bc5962d6bedba1f5abf423c396382e5c8a901c81797ae95132833e23c46cfd57
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "4665420"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6747393"
 ---
-# <a name="map-module"></a>Modul feltérképezése
+# <a name="map-module"></a>Térképmodul
 
 [!include [banner](includes/banner.md)]
 
 
 Ez a témakör a feltérképezési modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket konfigurálni a Microsoft Dynamics 365 Commerce alkalmazásban.
 
-## <a name="overview"></a>Áttekintés
-
-A modul feltérképezése egy interaktív térképen jeleníti meg az üzleteket, amelyeket a [8. verziós Bing Térképek webes vezérlő](https://docs.microsoft.com/bingmaps/v8-web-control/) használatával renderelnek. A Bing Maps API-kulcsot kötelező megadni, és hozzá kell adni a Commerce központ megosztott paraméterei oldalhoz. A modul feltérképezése különböző nézeteket nyújt – például közúti, légi és utcai –, amelyekkel a felhasználók megtekinthetik a leképezési helyeket. Olyan interakciókat is lehetővé tesznek, mint például a nagyítás és a felhasználó helyének használata.
+A modul feltérképezése egy interaktív térképen jeleníti meg az üzleteket, amelyeket a [8. verziós Bing Térképek webes vezérlő](/bingmaps/v8-web-control/) használatával renderelnek. A Bing Maps API-kulcsot kötelező megadni, és hozzá kell adni a Commerce központ megosztott paraméterei oldalhoz. A modul feltérképezése különböző nézeteket nyújt – például közúti, légi és utcai –, amelyekkel a felhasználók megtekinthetik a leképezési helyeket. Olyan interakciókat is lehetővé tesznek, mint például a nagyítás és a felhasználó helyének használata.
 
 A modul feltérképezése az üzletválasztó modullal együtt dolgozik a térképeken megjelenített üzletek földrajzi helyeinek meghatározásában. Az üzletválasztó és a modul feltérképezések akkor lépnek interakcióba, ha a felhasználó a webhely egyik moduljában kiválaszt egy üzletet. A modul feltérképezések az üzletválasztó modulokkal való interakción túl más forgatókönyvek esetén is kiterjeszthetőek. Azonban a modul testreszabása kötelező.
 
@@ -43,13 +38,13 @@ A modul feltérképezése az üzletválasztó modullal együtt dolgozik a térk�
 
 A következő kép egy üzlet oldalán használt letérképezési modul egy példáját jeleníti meg.
 
-![Példa egy üzletválasztó modulra](./media/ecommerce-Storelocator.PNG)
+![Példa egy üzletválasztó modulra.](./media/ecommerce-Storelocator.PNG)
 
 ## <a name="module-properties"></a>Modul tulajdonságai
 
 | Tulajdonság neve             | Érték                 | Leírás |
 |---------------------------|-----------------------|-------------|
-| Címsor | Szöveg | A modul címe. |
+| Fejléc | Szöveg | A modul címe. |
 | A gombostű beállításai: alapértelmezett ikon | Kép | A térképeken megjelenített üzletekhez használandó gombostű szimbólum képe. |
 | A gombostű beállításai: aktív ikon | Kép | A térképeken kiválasztott üzlethez használandó gombostű szimbólum képe. |
 | A gombostű beállításai: alapértelmezett ikon színe | Karaktersztring | A gombostű szimbólumok színének szöveges vagy hexadecimális értékének beállítása a térképen. |
@@ -81,4 +76,7 @@ A térképmodul oldalon lévő konfigurálásával kapcsolatban a következő t�
 
 [A szervezetéhez tartozó Bing Térképek kezelése](./dev-itpro/manage-bing-maps.md)
 
-[8. verziós Bing Maps webes vezérlő](https://docs.microsoft.com/bingmaps/v8-web-control/)
+[8. verziós Bing Maps webes vezérlő](/bingmaps/v8-web-control/)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

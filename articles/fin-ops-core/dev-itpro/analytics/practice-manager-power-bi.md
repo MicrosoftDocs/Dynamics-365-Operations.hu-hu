@@ -1,12 +1,10 @@
 ---
 title: Gyakorlatkezelés Power BI tartalom
-description: Ez a témakör azt ismerteti, mit tartalmaz a Gyakorlatvezető Power BI tartalom modul. Leírja, hogy hogyan kell hozzáférni a tartalomban szereplő jelentésekhez, és információkat nyújt a tartalom összeállításához használt entitásokkal és adatmodellekkel kapcsolatban.
+description: Ez a témakör azt ismerteti, mit tartalmaz a Gyakorlatvezető Power BI tartalom modul.
 author: KimANelson
-manager: AnnBe
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ProjManagementWorkspace
 audience: Application User, IT Pro
@@ -16,18 +14,18 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 17a68e5aedb8b085c85d1ed7b6ad87f3eaecfc25
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: d942ef8dcaa237935d3079b26c95ec5559c12b9904754688842527e4761f0aed
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4685705"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741708"
 ---
 # <a name="practice-manager-power-bi-content"></a>Gyakorlatkezelés Power BI tartalom
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, mit tartalmaz a **Gyakorlatvezető** Microsoft Power BI tartalom modul. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
+Ez a témakör azt ismerteti, mit tartalmaz a **Gyakorlatvezető** Microsoft Power BI-tartalom modul. Leírja, hogy hogyan kell hozzáférni a Power BI-jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához korábban használt entitásokkal és adatmodellekkel kapcsolatban.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -117,3 +115,6 @@ A következő szakaszok leírják az egyes entitások által használt összesí
 | Fő összesítő mérték       | Mező               | Leírás |
 |---------------------------------|---------------------|-------------|
 | Befejeződött tevékenység tervezett költsége | Sum(TotalCostPrice) | Befejeződött feladatokkal rendelkező projekttranzakció-típus becsléseinek teljes önköltségi ára. |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

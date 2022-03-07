@@ -1,12 +1,10 @@
 ---
 title: Raktár beállítása a raktári konfigurációs sablon segítségével
 description: Ez a témakör bemutatja, hogyan lehetséges egy raktár beállítása a raktári konfigurációs sablon segítségével.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
 audience: Application User
@@ -15,21 +13,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: d533eed984c188c5b6520232f2b875bddd1f57bf
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 6698d615826a1555426824bb76db654fde539360
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967130"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571089"
 ---
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Raktár beállítása a raktári konfigurációs sablon segítségével
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogyan lehetséges egy raktár beállítása a raktári konfigurációs sablon segítségével. Számos előre definiált konfigurációs sablont használhat. Ha tájékoztatást szeretne ezen sablonok használatáról, lásd a [Konfigurációs adatsablonok](../../dev-itpro/data-entities/configuration-data-templates.md) című részt.
+Ez a témakör bemutatja, hogyan lehetséges egy raktár beállítása a raktári konfigurációs sablon segítségével. Számos előre definiált konfigurációs sablont használhat. Ha tájékoztatást szeretne ezen sablonok használatáról, lásd a [Konfigurációs adatsablonok](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md) című részt.
 
 ## <a name="scenarios-where-configuration-templates-can-be-helpful"></a>Esetek, amikor a konfigurációs sablonok hasznosak lehetnek
 
@@ -90,10 +88,13 @@ Az adatcsomag zip-fájlját letöltheti. Ez a fájl minden adatot a kijelölt fo
 4. Válassza a **+ Fájl hozzáadása** lehetőséget, majd töltse fel az adatcsomag zip-fájlját.
 5. Válassza az **Importálás** lehetőséget. Aa **Bővített** nézetben a **Szűrő** beállítással gyorsan áttekintheti az importálás során esetlegesen előforduló hibákat.
 
-A **Végrehajtás megtekintése** napló részletes információt nyújt minden egyes importált adatentitásról. Az előkészítési adatok nézetének segítségével gyorsan megtekintheti a céladatokat. Ezzel a módszerrel megnézheti, hogy néznek ki az importált adatok a kapcsolódó lapokon az alkalmazásban. Az alapértelmezett adatsablonok használata esetén az egyes adatentitások importálási sorrendje az előre meghatározott módon történik annak biztosítása érdekében, hogy először az összes függő adat importálása történjen meg. Ha egyéni adatentitások is a projekt részét képezik, gondoskodnia kell arról, hogy meg van adva a megfelelő sorrend. További tájékoztatás: [Konfigurációs adatsablonok](../../dev-itpro/data-entities/configuration-data-templates.md).
+A **Végrehajtás megtekintése** napló részletes információt nyújt minden egyes importált adatentitásról. Az előkészítési adatok nézetének segítségével gyorsan megtekintheti a céladatokat. Ezzel a módszerrel megnézheti, hogy néznek ki az importált adatok a kapcsolódó lapokon az alkalmazásban. Az alapértelmezett adatsablonok használata esetén az egyes adatentitások importálási sorrendje az előre meghatározott módon történik annak biztosítása érdekében, hogy először az összes függő adat importálása történjen meg. Ha egyéni adatentitások is a projekt részét képezik, gondoskodnia kell arról, hogy meg van adva a megfelelő sorrend. További tájékoztatás: [Konfigurációs adatsablonok](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 Ha további információt szeretne arról, hogy miként használhatja a raktársablont egy raktárkonfiguráció adott vállalattól egy új vállalathoz való átmásolásához azonos példányban, nézze meg a következő a 3 perces videót a YouTube-on: [raktársablon használata konfiguráció másolásához a Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs) rendszerben.
 
 ## <a name="related-topic"></a>Kapcsolódó témakör
 
-[Konfigurációs adatsablonok](../../dev-itpro/data-entities/configuration-data-templates.md)
+[Konfigurációs adatsablonok](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,27 +1,24 @@
 ---
 title: Állítsa be a konfigurálható termékek attribútum-alapú árképzését
 description: Ez a témakör azt ismerteti, hogyan állítható be az attribútumalapú árképzés.
-author: ShylaThompson
-manager: tfehr
+author: t-benebo
 ms.date: 08/20/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, PCProductConfigurationModelListPage, PCPriceModelList, PCPriceModel, PCConstraintEditor
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3a75f3afcf4761ac6a9575eae9a620a1e9f01c8e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: c4acd7b423396124dd1059602f5aa6460ec5e259
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429367"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578152"
 ---
 # <a name="set-up-attribute-based-pricing-for-configurable-products"></a>Állítsa be a konfigurálható termékek attribútum-alapú árképzését
 
@@ -31,17 +28,18 @@ Ez a témakör azt ismerteti, hogyan állítható be az attribútumalapú árké
 
 
 ## <a name="create-a-new-price-model"></a>Új ármodell létrehozása
-1. Válassza ki a **Termékváltozat modelldefiníciója** elemet a kezdőlapon.
-2. Válassza ki a **Termékkonfigurációs modellek** lehetőséget a **hivatkozások** részben.
-3. A listában válassza ki a **High End hangszóró** sort, de ne válassza ki a név hivatkozását.
-4. A Műveleti ablaktáblán kattintson a **Modell** elemre.
-5. Válassza ki az **Ármodellek** lehetőséget.
-6. Válassza az **Új** lehetőséget.
-7. Írjon be egy értéket az **Ármodell neve** mezőbe. Olyan nevet használjon, amelyik könnyen azonosíthatóvá teszi a modellt.  
-8. Írjon egy értéket a **Leírás** mezőbe.
-9. Válassza a **Mentés** lehetőséget.
+
+1. Lépjen a **Termékinformáció-kezelés \> Termékek \> Termékkonfigurációs modellek** elemre.
+1. A listában válassza ki a **High End hangszóró** sort, de ne válassza ki a név hivatkozását.
+1. A Műveleti ablaktáblán kattintson a **Modell** elemre.
+1. Válassza ki az **Ármodellek** lehetőséget.
+1. Válassza az **Új** lehetőséget.
+1. Írjon be egy értéket az **Ármodell neve** mezőbe. Olyan nevet használjon, amelyik könnyen azonosíthatóvá teszi a modellt.  
+1. Írjon egy értéket a **Leírás** mezőbe.
+1. Válassza a **Mentés** lehetőséget.
 
 ## <a name="add-price-elements"></a>Árelem hozzáadása
+
 1. Válassza ki a **Szerkesztés** opciót. A termékmodell minden egyes összetevőjéhez tartozhat egy alapár elem és tetszőleges számú árkifejezés-szabály. Különböző pénznemben szereplő árak is hozzáadhatók.  
 2. Írjon be egy értéket az **Alapár kifejezése** mezőbe. Például írja be a „100” értéket. Az alapár kifejezése numerikus érték lehet, vagy számítás, amely magában foglal egy vagy több attribútumot.  
 3. Válassza a **Hozzáadás** lehetőséget.
@@ -52,3 +50,6 @@ Ez a témakör azt ismerteti, hogyan állítható be az attribútumalapú árké
 8. Adjon meg egy értéket a **Kifejezés** mezőben. Például írja be a `50` értéket. 
 9. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

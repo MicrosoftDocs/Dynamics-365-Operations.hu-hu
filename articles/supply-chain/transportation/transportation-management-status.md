@@ -2,25 +2,22 @@
 title: Szállításkezelési állapotok
 description: Ez a témakör azt mutatja be, hogyan lehet egy szállítási állapotot létrehozni, és az állapotot a szállítmányozó állapotához rendelni.
 author: Henrikan
-manager: tfehr
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-09-08
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 3f7d471771ec2b4703d878fbf395cd90902b6669
-ms.sourcegitcommit: fe7ac653efcb1ac6318083f482394b96ed82b4c7
+ms.openlocfilehash: 5a2b114be69d5e2e26f1fc7e82a4332f343adbaa71d7b7cf8c6df8ce09b08642
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429981"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753180"
 ---
 # <a name="transportation-management-statuses"></a>Szállításkezelési állapotok
 
@@ -49,3 +46,6 @@ Ha egy szállítási állapotot szállítmányozói állapothoz kíván hozzáre
 1. Válassza ki azt a szállítási állapotkódot, amelyet a kiválasztott szállítmányozó kódjához hozzá akar rendelni.
 1. Adja meg a szállítmányozó által használt külső kódot.
 1. Zárja be a lapot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

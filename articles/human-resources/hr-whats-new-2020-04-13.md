@@ -1,31 +1,30 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources (2020. április 13.) szolgáltatásban
 description: Ez a cikk a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. április 13-i kiadásban.
-author: Darinkramer
-manager: AnnBe
-ms.date: 4/13/2020
+author: andreabichsel
+ms.date: 04/13/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a7ea8348cfe1c66d6d0cfa39b46c8e69111fe185
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
+ms.openlocfilehash: 2a43b55c075102056ed7c752b72a85f2c9012d46
+ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4528521"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "6051041"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-13-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources (2020. április 13.) szolgáltatásban
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 [!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
@@ -43,9 +42,9 @@ Ezzel a módosítással a **Kerekítési pontosság** mező már elérhető a **
 
 Most szerkesztheti a regisztráció záró dátumát anélkül, hogy az „Elhatárolási dátum mezőt ki kell tölteni” hibaüzenetet kapná.
 
-## <a name="employment-entity-doesnt-sync-to-common-data-service-430834"></a>A foglalkoztatás entitása nem szinkronizál a Common Data Service szolgáltatásba (430834)
+## <a name="employment-entity-doesnt-sync-to-dataverse-430834"></a>A foglalkoztatás entitása nem szinkronizál a Dataverse szolgáltatásba (430834)
 
-A módosítás javítja azt a hibát, amikor a pénzügyi dimenziók hozzáadását követően a foglalkoztatási adatok nem lettek szinkronizálva a Common Data Service szolgáltatásba. 
+A módosítás javítja azt a hibát, amikor a pénzügyi dimenziók hozzáadását követően a foglalkoztatási adatok nem lettek szinkronizálva a Dataverse szolgáltatásba. 
 
 ## <a name="remove-multi-parenting-for-work-calendar-time-interval-entity-431775"></a>Több szülő eltávolítása a Munkanaptár időintervalluma entitáshoz (431775)
 
@@ -94,6 +93,8 @@ Ha egy, a SharePoint-ban tárolt dokumentum előnézete nem működik, próbálj
 ## <a name="see-also"></a>Lásd még
 
 [Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

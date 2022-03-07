@@ -1,33 +1,32 @@
 ---
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. március 10.)
 description: Ez a cikk a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. március 10-i kiadásban.
-author: Darinkramer
-manager: AnnBe
+author: andreabichsel
 ms.date: 03/10/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: dkrame
+ms.author: jaredha
 ms.search.validFrom: 2020-03-10
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 944481727f3222a10f128ac3078c117f5ae7d193
-ms.sourcegitcommit: e89bb3e5420a6ece84f4e80c11e360b4a042f59d
-ms.translationtype: HT
+ms.openlocfilehash: c6e4d93f89721bd722de523fbba7adfd2ee3f786
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4526915"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061151"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-march-10-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. március 10.)
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+
+
 
 Ez a cikk a Dynamics 365 Human Resources szolgáltatásban található új vagy módosított funkciókat írja le. A változtatások a 8.1.2985-es buildszámra vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok az LCS támogatási számaira vonatkoznak referenciaképpen.
 
@@ -45,7 +44,7 @@ A dolgozói feladatok karbantartása képernyő felsorolja az alkalmazottak öss
 
 Példa: Benjamin Martin a juttatások adminisztrátora. Az alkalmazotti beléptetés során Benjamin számára feladatok jönnek létre, hogy az új alkalmazott juttatásának kiválasztását vizsgálja felül. Benjaminnak vannak múltbéli befejezett feladatait és jövőbeni elvégzendő feladatai. Benjamin úgy dönt, hogy elhagyja a vállalatot, így a feladatait vagy újra hozzá kell rendelni, vagy el kell távolítani. A feladat karbantartása képernyő (a **Dolgozó** képernyő művelet ablaktábláján) lehetővé teszi Benjamin összes feladatának újbóli hozzárendelését egy másik dolgozóhoz, vagy azok eltávolítását.  
 
-## <a name="common-data-service-solution-is-now-available-with-the-following-changes"></a>A Common Data Service megoldás már elérhető a következő változtatásokkal:
+## <a name="dataverse-solution-is-now-available-with-the-following-changes"></a>A Dataverse megoldás már elérhető a következő változtatásokkal:
 
 | Leírás | Visszajáró |
 | --- | --- |
@@ -57,18 +56,18 @@ Példa: Benjamin Martin a juttatások adminisztrátora. Az alkalmazotti belépte
 | Új változó kompenzációs beállítási entitások | <ul><li>**Változó kompenzációs konstrukció típusa**</li><li>**Változó kompenzációs konstrukció**</li><li>**Kilépési szabályok**</li><li>**Változó kompenzációs konstrukció szintje**</li></ul> |
 | Új **Dolgozói naptár – foglalkoztatás** entitás | <ul><li>**Munkanaptár-entitás** hozzáadva</li></ul> |
 | Új **Bérlista szerinti beosztás részletei** entitás | <ul><li>**Bérlista szerinti beosztás** részletei</li></ul> |
-| Új **Beosztás** entitás | <ul><li>**Beosztás** hozzáadva</li></ul> Az új **Beosztás** entitást a Common Data Service tartalmazza, de jelenleg a **Munkakör** vagy **Munka** entitások nem hivatkoznak rá. |
+| Új **Beosztás** entitás | <ul><li>**Beosztás** hozzáadva</li></ul> Az új **Beosztás** entitást a Dataverse tartalmazza, de jelenleg a **Munkakör** vagy **Munka** entitások nem hivatkoznak rá. |
 
 > [!NOTE]
-> A beosztások és a foglalkoztatás pénzügyi dimenziói egyirányú integrációt biztosítanak a Human Resources és a Common Data Service közötti frissítésekhez. A pénzügyi dimenziók frissítései jelenleg nem szinkronizálnak a Common Data Service és a Human Resources között.
+> A beosztások és a foglalkoztatás pénzügyi dimenziói egyirányú integrációt biztosítanak a Human Resources és a Dataverse közötti frissítésekhez. A pénzügyi dimenziók frissítései jelenleg nem szinkronizálnak a Dataverse és a Human Resources között.
 
-Az elkövetkezendő hetekben ezek az entitásmódosítások minden környezetben elérhetők lesznek. A legújabb Common Data Service megoldás manuális telepítése a Human Resourcesbe:
+Az elkövetkezendő hetekben ezek az entitásmódosítások minden környezetben elérhetők lesznek. A legújabb Dataverse megoldás manuális telepítése a Human Resourcesbe:
 
 1.  Ugorjon a [Power Platform Adminisztrációs központba](https://admin.powerplatform.microsoft.com).
 
 2.  Válassza a **Környezetek** lehetőséget.
 
-3.  Keresse meg a frissíteni kívánt környezetet. A környezetnek meg kell egyeznie a **Környezet nevével** a **Common Data Service információk** szakaszban a Human Resources **Névjegy** képernyőjén.
+3.  Keresse meg a frissíteni kívánt környezetet. A környezetnek meg kell egyeznie a **Környezet nevével** a **Dataverse információk** szakaszban a Human Resources **Névjegy** képernyőjén.
 
 4.  A környezet adatainak megtekintéséhez válassza ki a környezetet.
 
@@ -103,6 +102,8 @@ A következő előzetes funkciók érhetők el 2020. február 3-tól:
 ## <a name="see-also"></a>Lásd még
 
 [Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

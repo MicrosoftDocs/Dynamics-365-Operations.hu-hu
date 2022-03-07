@@ -11,7 +11,6 @@ ms.technology: ''
 ms.search.form: ReqDemPlanForecastDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 72863
 ms.assetid: 810a0d63-f4c6-4167-b2b3-a178b74ead89
 ms.search.region: global
@@ -19,12 +18,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 60e5425e54f9e0093888f355a51064e7f0057976
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8548fa9f64a579816e51bbd7ad9f63db290eaa38
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429747"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244207"
 ---
 # <a name="monitor-forecast-accuracy"></a>Előrejelzés pontosságának követése
 
@@ -50,3 +49,6 @@ A Supply Chain Management a következő típusú előrejelzési pontosságokat s
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

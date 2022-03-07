@@ -2,11 +2,9 @@
 title: Az elektronikus aláírások beállítása
 description: Ezzel a folyamattal beállíthatja az Elektronikus aláírási eljárásokat.
 author: maertenm
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SysConfiguration, SIGParameters, SIGReasonCode, SIGProcSetup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 314f48fcac32793c96466ee807d5685e596193b1
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
-ms.translationtype: HT
+ms.openlocfilehash: 4075e47013bb6a3f42cb07f88df121cef8688463cab25c4a734c5363106ace4c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749532"
 ---
 # <a name="set-up-electronic-signatures"></a>Az elektronikus aláírások beállítása
 
@@ -77,3 +75,6 @@ Ezzel a folyamattal beállíthatja az Elektronikus aláírási eljárásokat. Az
 10. Kattintson a Mentés gombra.
 11. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből
 description: Ez a témakör az elektronikus jelentési (ER) konfiguráció Microsoft Dynamics Lifecycle Services (LCS) rendszerből történő letöltési folyamatát mutatja be.
 author: NickSelin
-manager: AnnBe
 ms.date: 08/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERSolutionImport, ERWorkspace
 audience: Application User, IT Pro
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 719b277fb828ea2085ea80bc4a36c2af3412f66b
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 418586113c038c3227f0704495a561eac319bdc9
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4683305"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5745087"
 ---
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Az elektronikus jelentéskészítési konfigurációk letöltése a Lifecycle Services rendszerből
 
@@ -40,7 +38,7 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 3. Jelölje be a **Microsoft** lapot a **Konfigurációs szolgáltatók** részben.
 4. Kattintson a **Tárak** lehetőségre a **Microsoft** lapon.
 
-    [![Microsoft csempe a Honosítási konfigurációk lapon](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+    [![Microsoft csempe a Honosítási konfigurációk oldalon](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 
 5. A **Konfigurációs tárházak** lapon lévő rácson jelölje ki az **LCS** meglévő tárházát. Ha a tárház nem jelenik meg a rácson, tegye a következőket:
 
@@ -76,3 +74,6 @@ Ez a témakör azt mutatja be, hogyan lehet letölteni az [Elektronikus jelenté
 [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 
 [ER-konfigurációk letöltése a konfigurációs szolgáltatás globális tárából](er-download-configurations-global-repo.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

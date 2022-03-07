@@ -1,12 +1,10 @@
 ---
 title: Karbantartási dolgozó naptára és ütemezése
 description: Ez a témakör a karbantartási dolgozók naptárának és az Eszközkezelőben történő ütemezésnek a kapcsolatát ismerteti.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorker
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c8856d0c7a7b76318755dc6bcdbb1859de1fa20a
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: ad76850fe055e96f3ed96e8a5d9524c58d8a187a87641a8669288468d542bb1e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021479"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6780279"
 ---
 # <a name="maintenance-worker-calendar-and-scheduling"></a>Karbantartási dolgozó naptára és ütemezése
 
@@ -38,3 +36,6 @@ Az alábbi képernyőképen egy, a „Termelés” munkaidőnaptárat használó
 
 Az eszközök naptári beállítására nincs szükség a munkarendelési ütemezéshez. A feltételezés szerint az eszközök egész nap elérhetők a karbantartáshoz.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

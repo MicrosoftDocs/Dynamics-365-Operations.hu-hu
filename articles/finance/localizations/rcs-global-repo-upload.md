@@ -2,7 +2,7 @@
 title: ER-konfigurációk létrehozása az RCS-ben, és feltöltésük a globális tárba
 description: Ez a témakör azt mutatja be, hogyan hozhatók létre a Microsoft Regulatory Configuration Services (RCS) elektronikus jelentéskészítési (ER) konfigurációi, és tölthetők fel a globális tárba.
 author: JaneA07
-ms.date: 01/11/2021
+ms.date: 09/21/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-02-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: eb04362d6d7261af56d2940b085fbc8d43c9d662
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
-ms.translationtype: MT
+ms.openlocfilehash: 6b89c3feb9287b6f445b1dff7252899532df8819
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7965089"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6361216"
 ---
 # <a name="create-er-configurations-in-regulatory-configuration-services-rcs-and-upload-them-to-the-global-repository"></a>ER-konfigurációk létrehozása a Regulatory Configuration Services (RCS) rendszerben, és feltöltésük a globális tárba
 
@@ -32,29 +32,24 @@ A következő lépések leírják, hogy a rendszergazda vagy az elektronikus jel
 
 Mielőtt teljesítené ezeket az eljárásokat, végre kell hajtania a következő előfeltételeket:
 
-- Hozzáférése a szervezet RCS-környezetéhez.
-- Hozzon létre egy aktív konfigurációs szolgáltatót, és tegye aktívvá. További információért tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
+- Nyisson meg egy RCS-példányt.
+- Hozzon létre egy aktív konfigurációszolgáltatót. További információért tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
 
-Gondoskodnia kell arról, hogy a szervezethez rcS-környezet legyen létesítve. Ha nincs rcS-példánya létesítve a szervezethez, a következő lépések segítségével használhatja ezt:
+Arról is meg kell győződnie, hogy a vállalatnál RCS-környezet van kiépítve.
 
-1. A Pénzügy és műveletek alkalmazásban használja a Szervezet **felügyelete** \> **– Munkaterületek** \> **elektronikus jelentéseit**.
-2. A Kapcsolódó hivatkozások / Külső hivatkozások mezőben válassza a Jogi szolgáltatások – Konfiguráció lehetőséget, majd az utasítások szerint regisztrálja **az** **·** **szolgáltatásokat**.
+1. A Finance and Operations alkalmazásban lépjen a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
+2. Ha nincs RCS környezete a vállalathoz, kattintson a **Regulatory services – Külső konfiguráció** lehetőségre, és kövesse az RCS-környezet létrehozására vonatkozó instrukciókat.
 
-Ha már létesített RCS-környezetet a szervezethez, az oldal URL-címével férhet hozzá, és válassza ki **a bejelentkezési** lehetőséget.
+Ha van már RCS-környezet létesítve a vállalat számára, akkor az oldal URL-címével érheti el a bejelentkezési beállítást.
 
 ## <a name="create-a-derived-version-of-a-configuration-in-rcs"></a>Konfiguráció származtatott verziójának létrehozása az RCS-ben
 
-> [!NOTE]
-> Ha az RCS első alkalommal van használva, akkor nem lesz elérhető konfiguráció, amelyből származtatható. Konfigurációt kell importálni a globális tárházból. További információért lásd: [ER-konfigurációk letöltése a Konfigurációs szolgáltatás globális tárolójából](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
-
-1. **Jelentkezzen be az** RCS-be, és válassza ki az **Elektronikus jelentéskészítés** munkaterületet.
-2. Győződjön meg róla, hogy van aktív konfigurációszolgáltató a szervezetnél aktívra állítva (lásd az előfeltételeket). 
-3. Válassza a **Jelentéskészítési konfigurációk** elemet.
-4. Válassza ki azt a konfigurációt, amelyből új verziót szeretne származtatni. A fa feletti szűrő mező segítségével tovább szűkítheti a keresés eredményeit.
-5. Válassza a **Konfiguráció létrehozása** \> **Származtatás névből** lehetőséget.
-6. Írjon be egy nevet és egy leírást, majd válassza a Konfiguráció létrehozása lehetőséget egy "Vázlat" állapotú új származtatott **verzió** létrehozásához.
-7. Válassza ki az újonnan származtatott konfigurációt, és szükség esetén adja meg a konfigurációs formátumot. 
-8. A módosítások befejezése után a Konfiguráció módosítása "Befejezve" állapotúra kell állítani, hogy közzé tudja tenni **a** **tárházban**. Válassza ki az **OK** lehetőséget.
+1. Az **Elektronikus jelentéskészítés** munkaterületen ellenőrizze, hogy rendelkezik-e a szervezethez tartozó aktív konfigurációszolgáltatóval. 
+2. Válassza a **Jelentéskészítési konfigurációk** elemet.
+3. Válassza ki azt a konfigurációt, amelyből új verziót szeretne származtatni. A fa feletti szűrő mező segítségével tovább szűkítheti a keresés eredményeit.
+4. Válassza a **Konfiguráció létrehozása** \> **Származtatás névből** lehetőséget.
+5. Adjon meg egy nevet és egy leírást, majd válassza a **Konfiguráció létrehozása** lehetőséget egy új származtatott verzió létrehozásához.
+6. Válassza ki az újonnan származtatott konfigurációt, adja meg a verzió leírását, majd kattintson az **OK** gombra. A konfiguráció állapota **Kész** értékre módosul.
 
 ![Új konfigurációverzió az RCS-ben.](media/RCS_CompleteConfig.JPG)
 
@@ -63,7 +58,7 @@ Ha már létesített RCS-környezetet a szervezethez, az oldal URL-címével fé
 
 ## <a name="upload-a-configuration-to-the-global-repository"></a>Konfiguráció feltöltése a globális tárba
 
-Ha egy új vagy származtatott konfigurációt meg kell osztania a szervezettel, akkor a következő lépésekkel töltheti fel a globális tárházba:
+Ha új vagy származtatott konfiguráció szeretne megosztani a szervezettel, akkor feltöltheti azt a globális tárba.
 
 1. Válassza ki a konfiguráció kész verzióját, majd válassza a **Feltöltés a tárba** parancsot.
 2. Válassza ki a **Globális (Microsoft)** beállítást, majd válassza a **Feltöltés** elemet.
@@ -71,16 +66,14 @@ Ha egy új vagy származtatott konfigurációt meg kell osztania a szervezettel,
     ![Feltöltés a tárba beállításai.](media/RCS_Upload_to_GlobalRepo_options.JPG)
 
 3. A megerősítő párbeszédpanelen válassza az **Igen** gombot. 
-4. Szükség szerint frissítse a verzió leírását, majd kattintson az **OK** gombra. A verzió tetszés szerint feltölthető egy csatlakoztatott alkalmazásba vagy EGYSTB-tárházba is.  
+4. Szükség szerint frissítse a verzió leírását, majd kattintson az **OK** gombra. 
 
-A konfiguráció állapota "Megosztott" lesz, és a rendszer feltölti a konfigurációt a **globális** tárházba. Létrejön a feltöltött konfiguráció vázlatverziója is, amely akkor használható, ha a további módosítások szükségesek.
-
-Miután a konfiguráció fel lett töltve a globális tárházba, a következőképpen lehet vele dolgozni:
+A konfiguráció állapota **Megosztás** értékre frissül, és a konfiguráció feltöltésre kerül a globális tárba. Innen a következő módokon dolgozhat vele:
 
 - Importálhatja a Dynamics 365-példányába. További információ: [(ER) Konfigurációk importálása RCS-ből](../../fin-ops-core/dev-itpro/analytics/tasks/import-configuration-rcs.md).
 - Megoszthatja egy harmadik féllel vagy külső szervezettel, lásd: [RCS elektronikus jelentéskészítési (ER) konfigurációk megosztása külső szervezetekkel](rcs-global-repo-share-configuration.md)
 
-    ![A globális tárházban található származtatott Intrastat Contoso konfigurációs verzió.](media/RCS_Config_upload_GlobalRepo.JPG)
+    ![Származtatott Intrastat Contoso konfigurációverzió a globális tárban.](media/RCS_Config_upload_GlobalRepo.JPG)
 
 ## <a name="delete-a-configuration-from-the-global-repository"></a>Konfiguráció törlése a Globális adattárból
 Hajtsa végre a következő lépéseket a szervezete által létrehozott konfiguráció törléséhez.

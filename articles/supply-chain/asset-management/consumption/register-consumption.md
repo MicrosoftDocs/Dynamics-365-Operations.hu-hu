@@ -1,12 +1,10 @@
 ---
 title: Felhasználás regisztrálása
 description: Ez a témakör azt mutatja be, hogyan lehet felhasználást regisztrálni az Eszközkezelés modulban.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderJournal, EntAssetWorkOrderAddSparePart
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ea1522f8a8e4867d8d70fea59b493d139a1b01ef
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: 619da584ea37e80b1803ae5983e52e8ee4053f3751a8df75a8f5bc1ddf7e65d6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020780"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765581"
 ---
 # <a name="register-consumption"></a>Felhasználás regisztrálása
 
@@ -94,3 +92,6 @@ Felhasználási regisztrációk végrehajtásakor a rendszer egy megadott sorren
 >[!NOTE]
 >A program mindhárom regisztrációtípusnál ellenőrzi a pénzügyi dimenzió kombinációját, és az érvénytelen kombinációkat üresen hagyja. Ez a szokásos beállítás más Finance and Operations alkalmazások esetében.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

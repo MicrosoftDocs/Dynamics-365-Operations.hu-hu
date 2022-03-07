@@ -10,17 +10,16 @@ ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2020-10-16
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: ceb3930cdb7764f846e88edfff6906b902a7f5fa
-ms.sourcegitcommit: fe7ac653efcb1ac6318083f482394b96ed82b4c7
+ms.openlocfilehash: 0d41d8665252a978962bf6a2e307dce3dad64a5b
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "4429983"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5233439"
 ---
 # <a name="transportation-management-modes-and-methods"></a>Szállításkezelési módok és módszerek
 
@@ -47,3 +46,6 @@ A szállítmányozási módszer létrehozásához kövesse az alábbi lépéseke
 1. Ha új szállímányozási módszert szeretne létrehozni, kattintson az **Új** gombra.
 1. Adjon meg egy egyedi Azonosítót és a szállítási mód jól felismerhető nevét.
 1. Zárja be a lapot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

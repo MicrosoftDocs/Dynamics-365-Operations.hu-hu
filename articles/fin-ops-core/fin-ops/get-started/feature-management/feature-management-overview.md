@@ -17,12 +17,12 @@ ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: a0f7391273e2374bdd136c5db47bcb65487e2a9c
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
+ms.openlocfilehash: 82c8172958f819735ea3f29fc331272f80b3a25a
+ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798352"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "4692966"
 ---
 # <a name="feature-management-overview"></a>Funkciókezelés áttekintése
 
@@ -101,8 +101,8 @@ Az összes olyan funkció, amely engedélyezhető, engedélyezve lesz. Ha egy fu
 
 Alapértelmezés szerint a környezethez hozzáadott összes funkció ki van kapcsolva, hacsak nem kötelező funkciók. Ha viszont automatikusan be kívánja kapcsolni az összes új funkciót, akkor a munkaterület címe alatti legördülő lista segítségével módosíthatja, hogy mi történik az új szolgáltatások hozzáadásakor.
 
-- Válassza az `Enable new features automatically` lehetőséget az összes új funkció bekapcsolásához, amikor hozzáadják őket a környezetéhez.
-- Válassza az `Do not enable new features automatically` lehetőséget alapértelmezésként az összes új funkció kikapcsolásához, amikor hozzáadják őket a környezetéhez.
+- Válassza az **Új funkciók automatikus engedélyezése** lehetőséget az összes új funkció bekapcsolásához, amikor hozzáadják őket a környezetéhez.
+- Válassza az **Új funkciókat ne engedélyezze automatikusan** lehetőséget az összes új funkció alapértelmezett kikapcsolásához, amikor hozzáadják őket a környezetéhez.
 
 
 Ha minden funkciót automatikusan engedélyez, azzal engedélyezi az olyan funkciókat, amelyek engedélyezve lesznek **Az összes engedélyezése** gombra kattintáskor. Az olyan funkciók nem lesznek engedélyezve, amelyek engedélyezéséhez valamilyen jóváhagyásra vagy műveletre van szükség.
@@ -199,7 +199,7 @@ internal final class BankCurrencyRevalGlobalEnableFeature implements IFeatureMet
 
 ### <a name="what-is-the-ifeaturelifecycle-implemented-by-some-feature-classes"></a>Mit jelent az egyes funkcióosztályok által végrehajtott IFeatureLifecycle?
 Az IFeatureLifecycle a Microsoft egyik belső mechanizmusa a funkció életciklusa szakaszának jelzésére. A funkciók a következők lehetnek:
-- `PrivatePreview` – Tesztcsomagra van szükség ahhoz, hogy látható legyen.
-- `PublicPreview` – Alapértelmezés szerint megjelenik, de figyelmeztetés jelzi, hogy a funkció előnézetben van.
-- `Released` – Teljesen kiadva.
+- PrivatePreview – Tesztcsomagra van szükség ahhoz, hogy látható legyen.
+- PublicPreview – Alapértelmezés szerint megjelenik, de figyelmeztetés jelzi, hogy a funkció előnézetben van.
+- Közzétéve – Teljesen közzétéve.
 

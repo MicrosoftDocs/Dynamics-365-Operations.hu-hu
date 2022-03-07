@@ -2,28 +2,25 @@
 title: Azonnali feltöltés
 description: Ez a témakör leírja, hogyan lehet az azonnali feltöltés segítségével feltölteni a készletet, ha egy helyutasításnak nem sikerül készletet felosztania.
 author: Mirzaab
-manager: tfehr
 ms.date: 03/15/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLocDirTable, WHSReplenishmentTemplates
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 1705903
 ms.assetid: 427e01b3-4968-4cff-9b85-1717530f72e4
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
-ms.openlocfilehash: c69a9c9fd595280ba4f05a11409a3e672e4b1691
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: 006160a3f7eada95ebdcdbf6694ee54be439f349
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429910"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5835654"
 ---
 # <a name="immediate-replenishment"></a>Azonnali feltöltés
 
@@ -57,3 +54,6 @@ Ha egy helyutasítási sornál azonnali feltöltés van kijelölve, de nem jön 
 
 - Győződjön meg arról, hogy az alkalmazott igényfeltöltési sablon be van állítva a megfelelő, **Feltöltési** típusú helysablonok és erőforrás-sablonokat használatára.
 - Győződjön meg arról, hogy van elegendő aktuális készlet azon helyeken, ahol az igényfeltöltési sablonnak aktuális készletet keres a feltöltéshez.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

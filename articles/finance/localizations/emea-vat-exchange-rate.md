@@ -2,28 +2,25 @@
 title: Áfa átváltási arány áttekintése
 description: Ez a témakör az áfaszámítás árfolyamairól nyújt tájékoztatást. Az áfa kiszámításához választott átváltási árfolyam eltérhet a vállalat könyvelési funkciói esetében alkalmazott átváltási árfolyamtól. Amikor külföldi pénznemben lévő dokumentumot adnak fel, az esetleges árfolyamkülönbségek a meghatározott főkönyvi számlákra kerülnek.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 272703
 ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
 ms.search.region: Czech Republic, Hungary, Poland
 ms.author: mrolecki
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 7e23581c73c3eb62e21dc3a53b5730c7c7cb0e62
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8a3f02d0a86ddf54e6f1a5a11a795561a7ec01af
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4408023"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5832669"
 ---
 # <a name="vat-exchange-rate-overview"></a>Áfa átváltási arány áttekintése
 
@@ -59,3 +56,6 @@ Miután beállította a rendszert az áfaárfolyamok használatára, ha be kell 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

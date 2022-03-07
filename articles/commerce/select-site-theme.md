@@ -2,35 +2,30 @@
 title: Webhely témájának kiválasztása
 description: Ez a témakör azt mutatja be, hogyan lehet egy webhely témáját beállítani vagy módosítani a Microsoft Dynamics 365 Commerce megoldásban.
 author: bicyclingfool
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: c54a3e9471fdeb56f27fe7c567c7cd7f0b7fd218
-ms.sourcegitcommit: 2ef23dcd4e42362186b9951e675010d97d55c6bd
-ms.translationtype: HT
+ms.openlocfilehash: a13400258a86087b6137b08ca724cbbfc1a90ad4
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "4556429"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964781"
 ---
 # <a name="select-a-site-theme"></a>Webhely témájának kiválasztása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet egy webhely témáját beállítani vagy módosítani a Microsoft Dynamics 365 Commerce megoldásban.
-
-## <a name="overview"></a>Áttekintés
 
 A webhely elrendezését és stílusát (például a betűtípusokat, a méreteket és a színeket) a kiválasztott téma határozza meg, amely a webhelyre alkalmazva van. A témát a vállalat fejlesztője hozza létre és telepíti. A témák áttekintését a [Témahasználat áttekintése](e-commerce-extensibility/theming.md)című témakörben tekintheti meg. További információ a témák létrehozásáról és telepítéséről: [Új téma létrehozása](e-commerce-extensibility/create-theme.md).
 
@@ -56,8 +51,6 @@ Ha ki szeretné választani a webhelyre alkalmazott témát, hajtsa végre az al
 
 [Kedvencek ikon hozzáadása](add-favicon.md)
 
-[Üdvözlő üzenet hozzáadása](add-welcome-message.md)
-
 [Szerzői jogi értesítés hozzáadása](add-copyright-notice.md)
 
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
@@ -68,3 +61,6 @@ Ha ki szeretné választani a webhelyre alkalmazott témát, hajtsa végre az al
 
 [Új téma létrehozása](e-commerce-extensibility/create-theme.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

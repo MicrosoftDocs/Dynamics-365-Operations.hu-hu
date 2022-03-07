@@ -1,12 +1,10 @@
 ---
 title: Tárgyi eszközök átsorolása
-description: A tárgyi eszközök átsorolása előtt át kell vinni az eszközöket egy új tárgyieszköz-csoportba, vagy ugyanazon a csoporton belül új tárgyieszközszámot kell társítani a tárgyi eszközhöz.
-author: saraschi2
-manager: AnnBe
+description: Ez a témakör bemutatja az eszközök átsorolásának folyamatát. A tárgyi eszközök átsorolása előtt át kell vinni az eszközöket egy új tárgyieszköz-csoportba, vagy ugyanazon a csoporton belül új tárgyieszközszámot kell társítani a tárgyi eszközhöz.
+author: moaamer
 ms.date: 05/14/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4cfc1425aca7a62205e0c7c50237f206a179a0e7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: a5fadebe685810d6833d1cb0581ed9a4869cc124
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968854"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883646"
 ---
 # <a name="reclassify-fixed-assets"></a>Tárgyi eszközök átsorolása
 
@@ -29,11 +27,25 @@ A tárgyi eszközök átsorolása előtt át kell vinni az eszközöket egy új 
 
 Ha egy tárgyi eszközt átsorolnak:
 
-* A létező tárgyi eszköz valamennyi könyve létrejön az új tárgyi eszközhöz. Az eredeti tárgyi eszköznél beállított valamennyi adat az új tárgyi eszköz adataként jelenik meg. Az eredeti tárgyi eszköz könyveinek állapota Lezárt lesz. 
+- A létező tárgyi eszköz valamennyi könyve létrejön az új tárgyi eszközhöz. Az eredeti tárgyi eszköznél beállított valamennyi adat az új tárgyi eszköz adataként jelenik meg. Az eredeti tárgyi eszköz könyveinek állapota Lezárt lesz. 
 
-* Az új tárgyi eszköz könyvénél az átsorolás dátuma fog szerepelni a **Beszerzési dátum** mezőben. Az **Értékcsökkenés** futtatásának dátuma mezőben szereplő dátum az eredeti eszközadatokból lesz átmásolva. Ha már elkezdődött az értékcsökkenés, akkor az **Utolsó értékcsökkenés futtatásának** dátuma mezőben az átsorolás dátuma jelenik meg. 
+- Az új tárgyi eszköz könyvénél az átsorolás dátuma fog szerepelni a **Beszerzési dátum** mezőben. Az **Értékcsökkenés** futtatásának dátuma mezőben szereplő dátum az eredeti eszközadatokból lesz átmásolva. Ha már elkezdődött az értékcsökkenés, akkor az **Utolsó értékcsökkenés futtatásának** dátuma mezőben az átsorolás dátuma jelenik meg. 
 
-* Az eredeti tárgyi eszköz tárgyieszköz-tranzakciói törlődnek, és ismét létrejönnek az új tárgyi eszközhöz.
+- Az eredeti tárgyi eszköz tárgyieszköz-tranzakciói törlődnek, és ismét létrejönnek az új tárgyi eszközhöz.
+
+- Ha egy átsorolási tranzakcióval rendelkező eszközt átsorolnak akkor a rendszer egy üzenetet jelenít meg a **Műveletközpontban**, amely azt jelzi, hogy az átsorolási folyamat során nem fejeződött be az átviteli tranzakció. Ahhoz, hogy a meglévő átsorolási tranzakciókat a megfelelő pénzügyi dimenziókba át lehessen helyezni végre kell hajtani egy átátviteli tranzakciót. 
+
+   Az átsorolási folyamat során a rendszer a következő műveleteket futtatja az eszközegyenleg átsorolásához az eredeti eszközről az új eszközre. 
+   
+   - Az átsorolási folyamat az eredeti tárgyieszköz-könyv adatait az új tárgyieszköz-könyvbe másolja.
+
+   - Az átsorolási tranzakció az eredeti feladott beszerzés adatait használja fel, és tartalmazza a beszerzési tranzakcióban szereplő pénzügyi dimenzióadatokat.  
+   
+   - Ugyanakkor az átsorolási folyamat sztornírozza az eredeti eszközbeszerzési és eszközátadási tranzakciót. 
+
+Az alábbi ábra és eljárás az átsorolási folyamatra mutat be egy példát. 
+
+[![Az átsorolási folyamatot megjelenítő diagram.](../media/reclassification-process-01.png)](../media/reclassification-process-01.png)
 
 A tárgyi eszköz átsorolásához kövesse az alábbi lépéseket:
 
@@ -44,4 +56,7 @@ A tárgyi eszköz átsorolásához kövesse az alábbi lépéseket:
     * Ha az új tárgyieszköz-csoport hozzá van csatolva egy specifikus számsorozathoz, az **Új tárgyieszköz-szám** mező frissítése az új tárgyieszköz-csoport számsorozatából származó számmal történik. Ellenkező esetben az **Új tárgyieszköz-szám** mező frissítése azzal a számmal történik, amelyik a **Tárgyi eszköz paraméterei** oldalon beállított számsorozatból származik. Ha a **Tárgyi eszköz paraméterei** oldalon nincs beállítva számsorozat, írjon be egy számot az **Új tárgyieszköz-szám** mezőbe.  
 5. Adjon meg egy dátumot az **Átsorolás dátuma** mezőben.
 6. A **Bizonylatsorozat** mezőben adjon meg vagy válasszon ki egy értéket.
-7. Kattintson az **OK** gombra.
+7. Válassza ki az **OK** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

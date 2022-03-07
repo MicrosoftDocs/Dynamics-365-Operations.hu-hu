@@ -2,11 +2,9 @@
 title: Indexelt eladási árak
 description: Amikor előfizetési díjat hoz létre, az árindexet állítja be egy előfizetés eladási árához.
 author: ShylaThompson
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionCreateDialog
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2103bc79e2a9671a059657838245e2d60455e168
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 49b9cb5d27a8b28398e7f502fccf7409b021f7224343afbda5a772071195e716
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4965880"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6734115"
 ---
 # <a name="indexed-sales-prices"></a>Indexelt eladási árak  
 
@@ -42,3 +40,6 @@ Ha például az alapár 1000 euró, az index pedig 110, az eladási ár 1100 eur
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

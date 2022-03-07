@@ -1,34 +1,29 @@
 ---
 title: Szolgáltatási szerződések teljesítése – áttekintés
 description: Ez a témakör a szolgáltatási szerződések teljesítéséhez kapcsolódó feladatokról nyújt áttekintést.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/03/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 65c26c5bcea386e7cdb3a2be95da26dcb53ce44c
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 39fe65638c413f5fbc1ea6ad4922e97f6e8fb35e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429740"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985886"
 ---
-# <a name="fulfill-service-agreements-overview"></a>Szolgáltatási szerződések teljesítése – áttekintés 
+# <a name="fulfill-service-agreements-overview"></a>Szolgáltatási szerződések teljesítése – áttekintés
 
 [!include [banner](../includes/banner.md)]
-
 
 Ez a témakör a szolgáltatási szerződések teljesítéséhez kapcsolódó feladatokról nyújt áttekintést. Ez a témakör felsorolja az üzleti folyamat egyes összetevőihez tartozó képernyőket, valamint tárgyalja az üzleti folyamat egyes összetevőihez kapcsolódó feladatokat.
 
@@ -44,9 +39,9 @@ Az alábbi táblázat felsorolja azokat a képernyőket, amelyek támogatják a 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -67,9 +62,9 @@ Az alábbi táblázat felsorolja azokat a képernyőket, amelyek támogatják a 
 <td><p>Szolgáltatás-előfizetések létrehozása és karbantartása.</p></td>
 </tr>
 <tr class="odd">
-<td><p> </p></td>
-<td><p> </p></td>
-<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 </tr>
 <tr class="even">
 <td><p>Szerződés nyomon követése és megvalósítása</p></td>
@@ -82,9 +77,9 @@ Az alábbi táblázat felsorolja azokat a képernyőket, amelyek támogatják a 
 <td><p>Szervizrendelések létrehozása és karbantartása.</p></td>
 </tr>
 <tr class="even">
-<td><p> </p></td>
-<td><p> </p></td>
-<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
+<td><p> </p></td>
 </tr>
 <tr class="odd">
 <td><p>Szerződés frissítése és kiértékelése</p></td>
@@ -107,3 +102,6 @@ Az alábbi táblázat felsorolja azokat a képernyőket, amelyek támogatják a 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

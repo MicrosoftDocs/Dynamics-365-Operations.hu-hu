@@ -2,40 +2,36 @@
 title: Szállítói együttműködés a vevőkkel
 description: Ez a témakör leírja, hogyan használhatja a szállítói együttműködést a beszerzési rendelések használatára és a bizományosi készlet felügyelésére.
 author: TaylorVH
-manager: tfehr
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart, VendVendorProfileCard, PurchVendorPortalAllResponse, PurchVendorPortalPendingResponsesPart, PurchVendorPortalResponses, PurchVendorPortalConfirmedOpenOrdersPart
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
 ms.author: v-savanh
 ms.search.validFrom: 2020-11-01
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: dc97b230f23056db90e654b4aea3272bb8f1ba13
-ms.sourcegitcommit: 0c33864efdd66c6ac11a4f35d971c0bb4efb15db
+ms.openlocfilehash: 5931d718d34db81ebd032eda821f071d9d329a26
+ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "4654340"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "5908035"
 ---
 # <a name="vendor-collaboration-with-customers"></a>Szállítói együttműködés a vevőkkel
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör leírja, hogyan használja a szállítói együttműködést a vevőkkel történő munkában a Microsoft Dynamics 365 Supply Chain Management rendszerben. A szállítók a következő munkaterületekről tudnak különböző üzleti folyamatokat végrehajtani:
 
 - **Beszerzési rendelés visszaigazolása** – Figyelje meg a beszerzési rendeléseket (POk), és válaszoljon rájuk.
 - **Szállítói ajánlattétel** – tekintse meg az ajánlatkéréseket (RFQk), és válaszoljon rájuk ajánlatok megadásával.
 - **Szállító adatai** – Tekintse meg és frissítse a szállítók alapadatait.
-- **Számlázás** – Használjon számlákat. Ez a témakör nem foglalkozik a **Számlázás** munkaterülettel. További tudnivalókért erről a munkaterületről lásd: [Szállítói együttműködési számlázás munkaterület](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Számlázás** – Használjon számlákat. Ez a témakör nem foglalkozik a **Számlázás** munkaterülettel. További tudnivalókért erről a munkaterületről lásd: [Szállítói együttműködési számlázás munkaterület](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 A szállítók is megfigyelhetik a bizományosi készlettel kapcsolatos adatokat.
 
@@ -147,3 +143,6 @@ Az elérhető adatok tartalmazzák a szállító nevét, címeit, kapcsolattart�
 ## <a name="additional-resources"></a>További erőforrások
 
 [Szállítói együttműködés felhasználóinak kezelése](manage-vendor-collaboration-users.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Áfatranzakciók létrehozása dokumentumokra
 description: A dokumentumok áfájának számítása az Áfacsoport és Cikkáfacsoport megadásával történik a bizonylatsorokra.
 author: twheeloc
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxTmpWorkTrans
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1a807ee2743f051528b6b96ddf1eaada65283933
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: c60913bda66e5facdf05106f621005b06ac4cf9c2d13b9df36eef42615395fa9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4968654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729678"
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>Áfatranzakciók létrehozása dokumentumokra
 
@@ -59,3 +57,6 @@ A dokumentumok áfájának számítása az Áfacsoport és Cikkáfacsoport megad
 29. Kattintson az Áfa elemre.
 30. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

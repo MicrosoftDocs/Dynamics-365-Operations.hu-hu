@@ -2,16 +2,13 @@
 title: Hívásközpontban jelentkező csalás-ellenőrzési figyelmeztetések beállítása és használata
 description: Ez a témakör ismerteti a szabályok beállítását az ügyfélszolgálati munkatársak figyelmeztetésére az esetleg csaló információról a rendelések feldolgozása során. Meghatározhat specifikus kódokat, amelyek arra szolgálnak, hogy automatikusan vagy manuálisan várakoztassák a gyanús rendeléseket.
 author: josaw1
-manager: AnnBe
 ms.date: 05/14/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: SalesPostingHistory, MCRHoldCodeTrans
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 79103
 ms.assetid: e342af8d-7498-4d20-8483-ab368429c578
 ms.search.region: global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 38649e40021d1caaf70f217b3ebae0d488806180
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8334b46f7e943e888c3a4db7580eeca30d49ad39
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412941"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5793969"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Hívásközpontban jelentkező csalás-ellenőrzési figyelmeztetések beállítása és használata
 
@@ -69,3 +66,6 @@ A rendelést menti a rendszer, de megjelöli a következőként: **Feldolgozni t
 A csalásellenőrzés miatt várakoztatott rendelések megtekintéséhez és kezeléséhez lépjen ide: **Retail és Commerce**\>**Vevők**\>**Várakoztatott rendelések**. A **Várakoztatott rendelések** oldalon jelöljön ki egy bejegyzést a listában, és kattintson a **Várakoztatott rendelés** lehetőségre, hogy olyan részletesebb nézetet lásson, amely tartalmazza a várakoztatás okát. A **Csalás részletei** gyorslapon meg lehet tekinteni azokat a szisztematikus csalási feltételeket, amelyek előfordultak a rendelés esetében, valamint itt találhatók az alkalmazott pontszámok is. Ha a rendelést manuálisan várakoztatják, megtekintheti annak a felhasználónak a megjegyzéseit, aki várakoztatott állapotba tette a rendelést; ehhez nézze meg a **Csalási megjegyzések** szakaszt a **Megjegyzések** gyorslapon.
 
 További tájékoztatás a rendelések várakoztatásával kapcsolatban itt találhatók: [ Rendelések várakoztatása: ](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

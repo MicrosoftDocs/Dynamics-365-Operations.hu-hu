@@ -1,24 +1,24 @@
 ---
 title: Az IoT-központ üzeneteinek sémaformátumai
 description: Ez a témakör azt mutatja be, hogyan kell megtervezni egy üzenetsémát, hogy használhassa az IoT-intelligenciát.
-author: tonyafehr
+author: robinarh
 ms.date: 04/25/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: rhaertle
 ms.custom: ''
 ms.search.region: Global
-ms.author: tfehr
+ms.author: rhaertle
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b24a6e14182baa91299abad0da2987b2dca92601
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
-ms.translationtype: MT
+ms.openlocfilehash: 5ecf4a70d69d24ea75f5448339057e7017cb93af
+ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781612"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "7652009"
 ---
 # <a name="schema-formats-for-iot-hub-messages"></a>Az IoT-központ üzeneteinek sémaformátumai
 

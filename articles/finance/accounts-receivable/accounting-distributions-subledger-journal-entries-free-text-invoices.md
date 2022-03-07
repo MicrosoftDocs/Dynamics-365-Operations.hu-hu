@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da1d1b41c4da1fafcf20246022c4020b60152917f5df85f8e003e23aaef9433c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 9c3609ed396b543bb708ea36f308eee60976e66f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728937"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837177"
 ---
 # <a name="accounting-distributions-and-subledger-entries-for-free-text-invoices"></a>Könyvelési felosztások és naplóbejegyzések szabadszöveges számlákhoz
 
@@ -28,7 +28,8 @@ ms.locfileid: "6728937"
 
 A könyvelési felosztások alkalmazásával meg lehet határozni, hogy hogyan legyen az összeg elszámolva, például hogyan lesznek könyvelve a bevételek, adó és költségek a szabadszöveges számlán. Minden olyan összeg, amelyet könyvelni kell a szabadszöveges számla naplózása esetén, egy vagy több könyvelési felosztással rendelkezik.
 
-## <a name="accounting-distributions"></a>Könyvelési felosztások
+<a name="accounting-distributions"></a>Könyvelési felosztások
+------------------------
 
 A következő gombokat használhatja a Szabadszöveges számla oldalon a szabadszöveges számlán szereplő minden összeg könyvelési felosztásának megtekintéséhez és lehetséges módosításához.
 

@@ -1,27 +1,24 @@
 ---
 title: Vevői visszatérítések létrehozása és feldolgozása
 description: Ez az eljárás bemutatja, hogyan lehet feldolgozni az ügyfél-visszatérítéseket az igénylés létrehozásától addig a pontig, hogy könyvelésekként felveszi őket a Kinnlevőségek közé.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/25/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PdsRebateAgreement, SalesTableListPage, SalesCreateOrder, SalesTable, MCRPriceHistory, SalesEditLines,  PdsRebateTableListPage, MCRBrokerWriteOffReason, MRCHierarchyAddCust, PdsItemRebateGroup, PdsRebate, PdsRebateProgramTMATable, PdsRebateTable, PdsRebateTableListPagePreviewPane, PdsRebateTrans, PdsRebateType_CustLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a8ebc281036842bdc8965e062990438e1fb466ff
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: a85c027571a6d77ed61cd874bb9d97221b099967
+ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429645"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7969087"
 ---
 # <a name="generate-and-process-customer-rebates"></a>Vevői visszatérítések létrehozása és feldolgozása
 
@@ -72,7 +69,7 @@ Ez az eljárás bemutatja, hogyan lehet feldolgozni az ügyfél-visszatérítés
 2. Kattintson az **Összesítés** gombra.
 3. Az **Ügyfél** mezőben adjon meg vagy válasszon ki egy értéket.
 4. A **Kezdő dátum** mezőben válassza ki a mai napot.
-5. Kattintson az **OK** gombra. A futó **Összegzés** funkció eredményeként a becsült igénylési összeget korrigáltuk úgy, hogy az figyelembe vegye azt a tényt, hogy a vevő teljes értékesítési mennyisége az adott időszakban magasabb, mint amikor az első visszatérítés létrejött. Konkrétabban mivel az összes beszerzett mennyiség elérte a 100 egységet, a vevő már jogosult a 40 USD/egység (a szerződés második mennyiségi szünete szerinti), vagy az összesen 400 USD visszatérítési összegre. A különbséget a rendszer új igény „helyesbítéseként” jegyzi fel a további 800 USD-re vonatkozóan. A Felhalmozási frissítésben megjelenő visszatérítési igény állapota most már Kiszámított. 
+5. Kattintson az **OK** gombra. A futó **Összegzés** funkció eredményeként a becsült igénylési összeget korrigáltuk úgy, hogy az figyelembe vegye azt a tényt, hogy a vevő teljes értékesítési mennyisége az adott időszakban magasabb, mint amikor az első visszatérítés létrejött. Konkrétabban mivel az összes beszerzett mennyiség elérte a 100 egységet, a vevő már jogosult a 40 USD/egység (a szerződés második mennyiségi szünete szerinti), vagy az összesen 4,000 USD visszatérítési összegre. A különbséget a rendszer új igény „helyesbítéseként” jegyzi fel a további 800 USD-re vonatkozóan. A Felhalmozási frissítésben megjelenő visszatérítési igény állapota most már Kiszámított. 
 6. A listában jelöljön ki minden sort.
 7. Kattintson a **Jóváhagyás** lehetőségre.
 8. Kattintson a **Folyamat** gombra.
@@ -82,3 +79,6 @@ Ez az eljárás bemutatja, hogyan lehet feldolgozni az ügyfél-visszatérítés
     - A Visszatérítés elhatárolási számlán jóváírás történt, hogy a vevő jövőbeli kötelezettségét jelezze.
     - A Visszatérítés költségszámlán terhelés történt, hogy az értékesítéssel kapcsolatban felmerült költségeket jelezze.   
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

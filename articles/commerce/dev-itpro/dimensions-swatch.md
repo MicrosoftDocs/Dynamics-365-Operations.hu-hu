@@ -2,7 +2,7 @@
 title: Termékdimenzió értékeinek konfigurálása palettaként való megjelenítésre
 description: Ez a témakör azt tekinti át, hogyan konfigurálhatók a termékdimenzió értékei palettaként a Microsoft Dynamics 365 Commerce-központban.
 author: anupamar-ms
-ms.date: 08/02/2021
+ms.date: 05/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: Retail
 ms.author: rapraj
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-ms.openlocfilehash: b1cef992b3d4e3889dd1d5dcc21a0d1ba3f55acc166f5003fc79f64fc54a8754
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4ffbb6a162e87fd19cdb44224adc8c223ba8e903
+ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764614"
+ms.lasthandoff: 07/17/2021
+ms.locfileid: "6638294"
 ---
 # <a name="configure-product-dimension-values-to-appear-as-swatches"></a>Termékdimenzió értékeinek konfigurálása palettaként való megjelenítésre
 
@@ -46,7 +46,7 @@ Az alábbi képen olyan példa látható, ahol a színek palettaként jelennek m
 
 ## <a name="enable-the-display-dimensions-as-swatches-feature-in-commerce-headquarters"></a>A dimenziók palettaként való megjelenítésének engedélyezésére szolgáló funkció a Commerce központjában
 
-Ha engedélyezni szeretné a dimenziók palettaként való megjelenítését a Commerce központjában, lépjen a **Munkaterületek \> Funkciókezelés** részre, és kapcsolja be a **Dimenziók palettaként való megjelenítéséhez szükséges mechanizmus engedélyezése** funkciót. Ha ez a funkciójelölő engedélyezve van, a Commerce központjában lévő megfelelő táblázatokban három új mező jelenik meg az egyes dimenzióknál: **Hexadecimális kód**, **URL** (képeknél) és **Finomító csoport**.
+Ha engedélyezni szeretné a dimenziók palettaként való megjelenítését a Commerce központjában, lépjen a **Munkaterületek \> Funkciókezelés** részre, és kapcsolja be a **Képek támogatásának engedélyezése a termékek dimenzióértékeihez** funkciót. Ha ez a funkciójelölő engedélyezve van, a Commerce központjában lévő megfelelő táblázatokban három új mező jelenik meg az egyes dimenzióknál: **Hexadecimális kód**, **URL** (képeknél) és **Finomító csoport**.
 
 ## <a name="configure-dimension-values-in-commerce-headquarters"></a>Dimenzióértékek konfigurálása a Commerce központjában
 
@@ -125,22 +125,9 @@ A paletták csak akkor jelenhetnek meg az e-kereskedelmi webhely olyan oldalain,
 
 Ezenkívül engedélyeznie kell a **Termékattribútumok hozzáadása a keresési eredményekhez** tulajdonságot a keresési eredmények moduljaiban. Ha a webhely testre szabott kategóriaoldalakat használ, frissítenie kell a keresési eredmények ilyen lapokon használt moduljait, hogy a **Termékattribútumok hozzáadása a keresési eredményekhez** tulajdonság engedélyezhető legyen. További információ: [Keresési eredmények modul](../search-result-module.md).
 
-## <a name="inventory-awareness-on-swatches"></a>Készletérzékenység a paletták esetén
-
-A paletták opcionálisan megmutathatják egy termékváltozat színének vagy dimenziójának rendelkezésre állását a készletben. Egy termék például többféle méretben kapható, de vannak olyan méretek, amelyek kifogytak. Ebben az esetben a készleten nem található termékek másféleképpen jelennek meg, így jelezve, hogy nem állnak rendelkezésre. Ezzel a lehetőséggel csökkenthető a termék elérhetőségének meghatározásához szükséges vevői kattintások száma.
-
-A készlet palettás elérhetőségi funkciója PDP-khez, illetve kereső- és kategórialista-oldalakhoz is konfigurálható, ahol a paletták megjelennek. Az aktiváláshoz a **Média frissítése dimenziókiválasztáskor** tulajdonságot **Igaz** értékre kell állítani a [médiatármodulban](../media-gallery-module.md). Ez a beállítás teszi lehetővé a médiatár képeinek frissítését a dimenziók kiválasztásakor. 
-
-> [!IMPORTANT]
-> A készlet palettás elérhetőségi funkciója a Commerce 10.0.21-es verziójú kiadásában érhető el. Ehhez a Commerce modultárcsomag 9.31-es verziójának telepítése szükséges.
-
-Az alábbi ábra a készletérzékenységre mutat példát egy PDP méretpalettáin.
-
-![Példa a készletérzékenységre egy PDP méretpalettáin](../dev-itpro/media/swatch_inventory.png)
-
 ## <a name="display-swatches-in-pos-and-other-channels"></a>Paletták megjelenítése a pénztári és az egyéb csatornákban
 
-A Commerce jelenleg nem rendelkezik olyan gyári implementációval, amely támogatja a paletták pénztári (POS) és egyéb csatornákban való megjelenítését. A palettamegjelenítési funkció azonban megvalósítható bővítményként, mivel a csatorna API-jai visszaadják a paletták megjelenítéséhez szükséges hexadecimális kódokat és kép-URL-eket.
+A Commerce jelenleg nem rendelkezik olyan beépített implementációval, amely támogatja a paletták pénztári és egyéb csatornákban való megjelenítését. A palettamegjelenítési funkció azonban megvalósítható olyan bővítményként, amely használatakor a csatorna API-jai visszaadják a paletták megjelenítéséhez szükséges hexadecimális kódokat és kép-URL-eket.
 
 ## <a name="additional-resources"></a>További erőforrások
 

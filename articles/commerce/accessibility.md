@@ -10,19 +10,18 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6f6bca3589da4055eef000fc3b2c88b93eabb4d5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 094ad8d34e13051ce7596be462070ead4cbc4f14
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412783"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5206655"
 ---
 # <a name="accessibility-features-and-capabilities"></a>Kisegítő funkciók és lehetőségek
 
@@ -114,3 +113,6 @@ A videóeszköz **Minimális életkor** attribútumának beállításához köve
 [Adatvédelmi irányelv oldalának hozzáadása](add-privacy-page.md)
 
 [Nyomon követett tartalmi változásokhoz társított felhasználói azonosítók kicserélése](replace-IDs-tracked-changes.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

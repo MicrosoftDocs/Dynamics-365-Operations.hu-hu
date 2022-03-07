@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c297479bc89ffb2f837f7236939e6eef17b1103b
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 2f6cb15b115de9bf076da9062f14fcdf88662946
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021454"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5240762"
 ---
 # <a name="create-and-validate-journals"></a>Naplók létrehozása és érvényesítése
 
@@ -42,3 +42,6 @@ Ez az eljárás naplókat és naplósorokat hoz létre, illetve ellenőriz. Az U
 12. Kattintson a **Bejegyzés** lehetőségre.
 13. Kattintson a **Bizonylat** elemre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

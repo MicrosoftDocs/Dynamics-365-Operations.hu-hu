@@ -11,18 +11,17 @@ ms.technology: ''
 ms.search.form: Kanban, KanbanResetEmpty
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bb8559c0843d7e6e538b5b29dc394a50d05462ee
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 055765452579b1de74f1c2158de9c6cb4ee80f16
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429685"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5252822"
 ---
 # <a name="update-kanban-status"></a>Kanbanállapot frissítése
 
@@ -48,3 +47,6 @@ Amikor a rendszer tévedésből kiüríti a kanbant vagy a kapott kanbant ki kel
 2. A listában jelölje meg a kiválasztott sort.
     * Vegye figyelembe, hogy az Anyagkezelési egység állapota Kiürítve.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,16 +2,13 @@
 title: Egy értékesítési rendelés foglalása ugyanazon kötegből
 description: Ez a cikk ismerteti, hogyan végezze el termék beállítását a készletfoglalás engedélyezéséhez a készlet egyetlen adott kötegéből.
 author: omulvad
-manager: tfehr
 ms.date: 03/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDetailsExtended, EcoResStorageDimensionGroup, EcoResTrackingDimensionGroup, InventBatch, InventModelGroup, PdsAskSameLotForm, PdsCustSellableDays, WHSReservationHierarchy, WHSInventTableReservationHierarchy
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 28911
 ms.assetid: 5823d75e-f839-46dd-beb3-e09b79fc8aa4
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce750745d6f094a296b43827568ee1745179de2d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: e0937be76aa687ed986ff83e67f2db3e2dadd0f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429931"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5807656"
 ---
 # <a name="reserve-the-same-batch-for-a-sales-order"></a>Egy értékesítési rendelés foglalása ugyanazon kötegből
 
@@ -44,4 +41,7 @@ Amikor ugyanazon kötegből foglalja egy értékesítési rendelés termékeit, 
 - A köteg a lejárati dátum alapján és a vevői eladhatósági napok alapján már lejárt. A cikk még nem alkalmas lefoglalásra, ha a cikkmodellcsoportja FEFO dátumvezérelt, és a komissiózási feltétel a lejárati nap.
 - A köteg eltarthatósági napjaiból fennmaradó idő nem elégséges, a lejárati dátum és a szavatosság dátuma alapján, illetve a vevői eladhatósági napok alapján.
 
-Az engedélyezett **Raktárkezelési folyamatokkal** rendelkező tárolási csoportokhoz társított cikkek esetében a meghatározott kötegszámot foglalhat egy foglalási hierarchia használatával kötegszám raktárdimenzióval a hely dimenzió fölött. Az értékesítési és átmozgatási rendelés sorainak **Kötegelt foglalás** lapja is lehetővé teszi több sor kiválasztását és foglalását a rendelkezésre álló kötegszám alapján. Ha további tájékoztatást szeretne arról, hogy mi a teendő, ha olyan foglalási hierarchiát használ, amelyben a kötegszám dimenzió a hely alatt található, tekintse meg a [Rugalmas raktárszintű dimenzió foglalási irányelv](../warehousing/flexible-warehouse-level-dimension-reservation.md) dokumentumot.
+Az engedélyezett **Raktárkezelési folyamatokkal** rendelkező tárolási csoportokhoz társított cikkek esetében a meghatározott kötegszámot foglalhat egy foglalási hierarchia használatával, ahol a kötegszám készletdimenzió a hely dimenzió fölött van megadva. Az ilyen típusú foglalási hierarchia ismertebb neve *Kötegelt a \[hely\] felett* foglalási hierarchia. Az értékesítési és átmozgatási rendelés sorainak **Kötegelt foglalás** lapja is lehetővé teszi több sor kiválasztását és foglalását a rendelkezésre álló kötegszám alapján. Ha további tájékoztatást szeretne arról, hogy mi a teendő, ha olyan foglalási hierarchiát használ, amelyben a kötegszám dimenzió a hely alatt található (*Kötegelt a \[hely\] alatt*), tekintse meg a [Rugalmas raktárszintű dimenzió foglalási irányelv](../warehousing/flexible-warehouse-level-dimension-reservation.md) dokumentumot.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

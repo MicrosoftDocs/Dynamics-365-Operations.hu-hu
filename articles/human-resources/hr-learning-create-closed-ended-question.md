@@ -2,28 +2,28 @@
 title: Eldöntendő kérdés létrehozása
 description: A zárt kérdések lehetővé teszik, hogy válaszlehetőségeket kínáljon fel a válaszadók számára.
 author: andreabichsel
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion, HcmLearningWorkspace
 audience: Application User
 ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a2eb53290d39fef0bf439a199dfd774138823ec2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 41e12e6f35237ea125756b502d5cebed58c6bf55
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418914"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5790644"
 ---
 # <a name="create-a-closed-ended-question"></a>Eldöntendő kérdés létrehozása
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
 
@@ -68,3 +68,6 @@ A zárt kérdések lehetővé teszik, hogy válaszlehetőségeket kínáljon fel
 5. A Válaszcsoportok mezőben adjon meg, vagy válasszon ki egy értéket.
 6. Írjon be egy értéket a Szöveg mezőbe.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

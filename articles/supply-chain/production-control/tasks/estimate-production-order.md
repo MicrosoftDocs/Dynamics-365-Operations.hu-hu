@@ -2,26 +2,23 @@
 title: Termelési rendelés becslése
 description: Ezt a folyamatot az USMF bemutatócégen vagy saját adathalmaza használatával is elvégezheti.
 author: johanhoffmann
-manager: tfehr
 ms.date: 11/11/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5bbb541a09809c1f1bfada42094d840a2f6e7764
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 8544f468b7870b265b0c206471ad88e219258a03
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429216"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5828658"
 ---
 # <a name="estimate-a-production-order"></a>Termelési rendelés becslése
 
@@ -42,3 +39,6 @@ Ezt a folyamatot az USMF bemutatócégen vagy saját adathalmaza használatával
 1. A Művelet panelen kattintson a Költségkezelés elemre.
 2. Kattintson a Számítás részleteinek megjelenítése elemre.
     * Ezen a lapon a költséglebontás látható. Megtekintheti például az első sorban a késztermék egységenkénti teljes önköltségi árát. A következő sorok az anyagjegyzékcikkek, a termelési útvonal és a közvetett költségek költségeit tartalmazzák.  
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

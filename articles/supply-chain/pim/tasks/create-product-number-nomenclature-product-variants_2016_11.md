@@ -2,26 +2,23 @@
 title: Termékszám elnevezési rendszerének létrehozása konfigurált termékváltozatokhoz
 description: Ez az eljárás bemutatja, hogyan állítható be termékszámozás-elnevezési rendszer konfigurált termékváltozatok számára, és hogyan rendelhető hozzá konfigurálható alaptermékhez.
 author: ShylaThompson
-manager: tfehr
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductVariantMaintainWorkspace, EcoResNomenclature, EcoResProductListPage, EcoResProductDetails, PCProductConfigurationModelListPage, PCProductConfigurationModelDetails
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 5f75d7e493255b9c09c10b121f388854861cb0fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f342831d95f9988f9bb7807bac986e43cb317e0f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429515"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5820009"
 ---
 # <a name="create-a-product-number-nomenclature-for-configured-product-variants"></a>Termékszám elnevezési rendszerének létrehozása konfigurált termékváltozatokhoz
 
@@ -102,3 +99,6 @@ Ez az eljárás bemutatja, hogyan állítható be termékszámozás-elnevezési 
 43. Zárja be a lapot.
 44. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

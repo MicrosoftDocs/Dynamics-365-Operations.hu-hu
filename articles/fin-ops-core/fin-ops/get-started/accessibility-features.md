@@ -2,11 +2,9 @@
 title: Kisegítő lehetőségek funkciói
 description: Ez a témakör azokat a funkciókat mutatja be, amelyek a különböző fogyatékkal élő felhasználókat segítik.
 author: TLeforMicrosoft
-manager: AnnBe
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: sericks
@@ -14,16 +12,19 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 2d0dd3ebf4b50f43f9fb1893081ede2a93428c72
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
-ms.translationtype: HT
+ms.openlocfilehash: 022c51f7050d11caf5ce67c5df8f9f9040a54b98
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4798695"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071058"
 ---
 # <a name="accessibility-features"></a>Hozzáférhetőségi funkciók
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a témakör azokat a funkciókat mutatja be, amelyek a különböző fogyatékkal élő felhasználókat segítik az alkalmazás használatában. Bizonyos funkciók például azokat segítik, akik olyan, gyengénlátóknak kifejlesztett technológiákat használnak, mint a Microsoft Windows Narrátor.
 
@@ -54,13 +55,13 @@ Az oldalon megadott minden művelet elérhető a billentyűzetről, a TAB-sorren
 
 Szeretné futtatni az **E-mail értesítési napló** műveletet, amely az **E-mail értesítés** csoportban jelenik meg az **Értékesítési rendelés** lapon a Művelet ablakban.
 
-![E-mail-értesítési napló művelete a Művelet ablakban](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "„E-mail-értesítési napló” művelete a Művelet panelen")
+![E-mail-értesítési napló művelete a Művelet panelen.](media/f0d78399e7fafcd85ded1cd1e3d34f3c.jpg "„E-mail-értesítési napló” művelete a Művelet panelen")
 
 Az egyik lehetőség a billentyűzet használata. Nyomja le a Ctrl+F6 billentyűkombinációt a fókusz Művelet ablakra állításához, és nyomja le a TAB gombot többször a váltáshoz a lapok és a műveletek között, amíg az **E-mail értesítési napló** műveletre nem kerül a fókusz.
 
 Azonban a műveletet közvetlenebből is futtathatja. A lap tetszőleges pontján nyomja le a Ctrl+aposztróf (') kombinációt a műveletek keresőmezőjének megjelenítéséhez.
 
-![Műveletek keresőmezője](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Műveletek keresőmezője")
+![Műveletek keresőmezője.](media/80f7e8c5ac412fdf2c8a12f7728f135a.jpg "Műveletek keresőmezője")
 
 A keresőmezőbe írja be a szöveget, amely leírja a műveletet. A művelet ekkor elérhetővé válik, és közvetlenül futtatható. Például az **e-mail**, az **értes** (részleges szó) vagy **napló** beírásával az E-mail értesítési naplóhoz „ugorhat”.
 
@@ -97,3 +98,6 @@ Okostelefonokon és más kis képernyővel rendelkező eszközökön a vezérlő
 ## <a name="guidance-to-help-developers-and-customers-incorporate-accessible-thinking-in-their-customizations"></a>Útmutatás a fejlesztők és a vevők számára a könnyű kezelhetőség koncepciójának beépítéséhez a testreszabásaikba
 
 A kisegítő lehetőségekkel kapcsolatos legjobb Microsoft-gyakorlatokkal kapcsolatos további tudnivalókért lásd: [Űrlapok, termékek és vezérlők hozzáférhetősége](../../dev-itpro/user-interface/enable-accessibility.md).
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

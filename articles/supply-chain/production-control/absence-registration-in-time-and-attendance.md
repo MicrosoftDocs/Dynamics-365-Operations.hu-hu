@@ -2,11 +2,9 @@
 title: Munkaidő és jelenlét távollét regisztrálása
 description: Ez a témakör bemutatja, hogyan kezelje a távollét-regisztrációkat a munkaidő-nyilvántartásban.
 author: johanhoffmann
-manager: tfehr
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JMGParameters, JmgAbsenceCalendar
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 12a61f23ac5a16000275e53d3901c8aea202bab0
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 06adca12c172dffa241fe44a6b64bb30863bcb4a8f3867429ad10bc852efd7c3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966630"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730226"
 ---
 # <a name="absence-registration-in-time-and-attendance"></a>Munkaidő és jelenlét távollét regisztrálása
 
@@ -103,8 +101,11 @@ A dolgozó időregisztrációt ki kell számítani és jóvá kell hagyni, miel�
 
 A jóváhagyó módosíthatja a dolgozó időregisztrációit. A jóváhagyó bármilyen, a dolgozó által regisztrált távollétet is módosíthat. Ha a jóváhagyó kézzel beír egy időszakot, amelynek távolléti kódja van, az adott időszakra vonatkozó távolléti kódot nem bírálja felül a munkaidő és jelenlét oldal paramétereinek alapértelmezett távolléti kódja.
 
-Például egy dolgozó 10:00 órakor blokkol be, és kiválaszt egy távolléti kódot, amely azt jelzi, hogy késik. Később a dolgozó tájékoztatja a felettesét, hogy 08:00 és 10:00 között orvosnál volt. Az orvos vizsgálat nem okozhat levonást a dolgozó fizetéséből. Ezért ebben az esetben a felügyelő módosíthatja a két órás távollétet 08:00 és 10:00 között kézzel beírva egy távolléti kódot, amely azt jelzi, hogy a két óra oka betegség volt.
+Egy dolgozó például 10:00 órakor blokkol be, és kiválaszt egy távolléti kódot, amely azt jelzi, hogy késik. Később a dolgozó tájékoztatja a felettesét, hogy 08:00 és 10:00 között orvosnál volt. Az orvos vizsgálat nem okozhat levonást a dolgozó fizetéséből. Ezért ebben az esetben a felügyelő módosíthatja a két órás távollétet 08:00 és 10:00 között kézzel beírva egy távolléti kódot, amely azt jelzi, hogy a két óra oka betegség volt.
 
 ### <a name="calculate-and-approve-absence"></a>Távollét kiszámítására és a jóváhagyása
 
 - Válassza ki a **Munkaidő és jelenlét** &gt; **Ellenőrzés és jóváhagyás** &gt; **Jóváhagyás vagy Számítás** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

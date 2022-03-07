@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d30dd5ba29ee34784921047627642644c0c4ab2
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
-ms.translationtype: MT
+ms.openlocfilehash: 021d10fc2257d48a14ece9bbb904cbdacd0ea6f0
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182479"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5822299"
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Ismétlődő szabadszöveges számlák generálása és feladása
 
@@ -30,17 +30,17 @@ Az ismétlődő számlákkal rendszeresen számlákat állíthat ki a vevőknek 
 ## <a name="generate-recurring-invoices"></a>Ismétlődő számlák létrehozása
 
 ## <a name="post-recurring-invoices"></a>Ismétlődő számlák feladása
-1. Az ismétlődő **számlák felad > az ismétlődő > számlákról > a Kinnlevőségek között**.
+1. Ugrás a Kinnlevőségek > Számlák > Ismétlődő számlák > Ismétlődő számlák feladása pontra.
     * Ezen az oldalon megtekintheti és kinyomtathatja a létrehozott ismétlődő számlákat.  
 2. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * Válassza ki az ismétlődő számlacsoportot.  
-3. Kattintson az **Összegre** lehetőségre.
+3. Kattintson az Összegek lehetőségre.
     * Ellenőrizze az ismétlődő számlacsoportok összegeit.  
-4. Kattintson a **Bezárás** gombra.
-    * Az alábbi sorok mindegyike egy ismétlődő szabadszöveges számla. Kijelölhet egy sort, és a Részletek **gombra** kattintva megtekintheti a szabadszöveges számla adatait.  
-5. Kattintson az **Érvényesítés** gombra.
+4. Kattintson a Bezárás gombra.
+    * Az alábbi sorok mindegyike egy ismétlődő szabadszöveges számla. A szabadszöveges számla részleteinek megtekintéséhez válasszon ki egy sort, és kattintson a „Részletek” gombra.  
+5. Kattintson az Érvényesítés gombra.
     * Ellenőrizze, hogy a kiválasztott számlákban nincs hiba, de ne adja fel a számlákat.  
-6. Kattintson a **Bejegyzés** lehetőségre.
+6. Kattintson a Feladás lehetőségre.
     * Adja fel a kiválasztott számlákat.  
 
 

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: ea39a1fc9092aaa4622c7193f7538acc85aa0f46
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
-ms.translationtype: MT
+ms.openlocfilehash: 43814023474d44b8c95bae087c7b6a4d52d21471
+ms.sourcegitcommit: 7cbd53617af179a0de74aae30c149edc95e86684
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952677"
+ms.lasthandoff: 12/06/2021
+ms.locfileid: "7891926"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integráció külső gyártásvégrehajtási rendszerekkel
 
@@ -37,17 +37,10 @@ A következő ábra az integrált megoldásban cserélt üzleti események, foly
 
 ## <a name="turn-on-the-mes-integration-feature"></a>A MES-integráció funkció bekapcsolása
 
-A funkció használata előtt a rendszergazdának a következő eljárás szerint be kell kapcsolnia azt a rendszerben.
+A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
 
-1. Lépjen a **Rendszerfelügyelet \> Beállítás \> Licenckonfiguráció** elemre.
-1. Győződjön meg róla, hogy a Idő és jelenlét licenckulcs engedélyezve **van** (pipa látható). Erre a licenckulcsra azért van szükség, mert szabályozza a gyártásvégrehajtási rendszer funkcióit és adatait. Ha nincs engedélyezve, tegye a következő lépéseket:
-    1. Állítsa a rendszert karbantartási módba a [Karbantartási mód](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) alatt leírtak szerint.
-    1. Jelölje be **a Licenc konfigurációs lapján a Idő és jelenlét** **jelölőnégyzetet**.
-    1. A karbantartási mód kikapcsolása a Karbantartási [módban leírt módon](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
-1. Ugrás a **Rendszerfelügyeleti \>\> munkaterületek funkciókezeléshez.**
-1. A következő módon felsorolt funkció bekapcsolva (lásd még [a Funkciókezelés áttekintését):](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)
-    - **Modul:** *Gyártásvezérlés*
-    - **Funkciónév:** *Gyártás-végrehajtási rendszer integrációja*
+- **Modul:** *Gyártásvezérlés*
+- **Funkciónév:** *Gyártás-végrehajtási rendszer integrációja*
 
 ## <a name="processes-available-for-mes-integration"></a>MES-integrációhoz elérhető folyamatok
 
@@ -152,11 +145,11 @@ Az alábbi táblázat bemutatja azokat a mezőket, amelyek az üzenet szakaszán
 | `ProductionWarehouseLocationId` | Választható | Sztring |
 | `InventoryDimension1` és `InventoryDimension12` között | Választható | Sztring |
 
-A 12 extensible dimenziót (keresztül) testre kell szabni, `InventoryDimension1``InventoryDimension12` és nem mindig használatosak. A dimenziókkal kapcsolatos további tudnivalókat lásd [az Új készletdimenziók hozzáadása kiterjesztéssel](../../fin-ops-core/dev-itpro/extensibility/inventory-dimensions.md).
+A 12 extensible dimenziót (keresztül) testre kell szabni, `InventoryDimension1``InventoryDimension12` és nem mindig használatosak. A dimenziókkal kapcsolatos további tudnivalókat [lásd: Új készletdimenziók hozzáadása](../../fin-ops-core/dev-itpro/extensibility/inventory-dimensions.md) kiterjesztéssel.
 
 ### <a name="material-consumption-picking-list-message"></a>Anyagfelhasználási (kitárolási lista) üzenet
 
-Az *anyagfelhasználási (kitárolási lista) üzenet* értéke `_messageType` :`ProdProductionOrderPickingList` Az alábbi táblázat bemutatja az üzenet által támogatott mezőket.
+Az *anyagfelhasználási (kitárolási lista) üzenet* értéke `_messageType``ProdProductionOrderPickingList`: Az alábbi táblázat bemutatja az üzenet által támogatott mezőket.
 
 | Mezőnév | Állapot | Típus |
 |---|---|---|

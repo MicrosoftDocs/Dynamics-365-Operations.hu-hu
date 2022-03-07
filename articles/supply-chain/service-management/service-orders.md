@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b049b166edf2b5a318a4b1af85e7f74cfe433f2
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 26a1c693be9581bd26ad43c70a024b0a8115afdf
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429203"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5254239"
 ---
 # <a name="service-orders"></a>Szervizrendelések   
 
@@ -89,3 +88,6 @@ Az év második felében az egyik vevő úgy dönt, hogy a szervizlátogatások 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

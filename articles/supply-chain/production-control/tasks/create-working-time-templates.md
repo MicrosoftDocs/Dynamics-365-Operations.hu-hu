@@ -1,28 +1,25 @@
 ---
 title: Munkaidősablonok készítése
 description: A munkaidősablonok határozzák meg az egész hét munkaóráit, és ezek segítségével hozhatók létre munkaidők egy adott időszakra.
-author: sorenva
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: OpResLifeCycleManagementWorkspace, WorkTimeTable, WorkTimeCopyDayDialog, WorkPeriodTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b5bd1b384fe66dd7d59b776bdf1154cc5b8262ce
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 130a21d08e4e720f8bf803a5d4b03d315cefc26f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429225"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580672"
 ---
 # <a name="create-working-time-templates"></a>Munkaidősablonok készítése
 
@@ -30,52 +27,58 @@ ms.locfileid: "4429225"
 
 A munkaidősablonok határozzák meg az egész hét munkaóráit, és ezek segítségével hozhatók létre munkaidők egy adott időszakra. Ez az eljárás bemutatja, hogyan definiálhat munkaidősablonokat a munkaidő-ütemezési tulajdonságok segítségével a munkaidő-intervallumok kategorizálásához. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.
 
-1. Ugrás az összes munkaterületek > Erőforrás életciklusa kezelése elemre.
-2. Kattintson a Munkaidősablonok lehetőségre.
+1. Ugorjon a **Munkaterületek > Erőforrás életciklusa kezelése** elemre.
+1. Válassza a **Munkaidősablonok** lehetőséget.
 
 ## <a name="create-working-time-template"></a>Munkaidősablon létrehozása
-1. Kattintson az Új lehetőségre.
-2. Írjon be egy értéket a Munkidősablon mezőbe.
-3. Írjon be egy értéket a Név mezőbe.
-4. Bontsa ki a Hétfő szakaszt.
-5. Kattintson a Hozzáadás gombra.
-6. Az Kezdés mezőben adjon meg egy időpontot.
+
+1. Válassza az **Új** lehetőséget.
+1. Írjon be egy értéket a **Munkidősablon** mezőbe.
+1. Írjon be egy értéket a **Név** mezőbe.
+1. Bontsa ki a **Hétfő** szakaszt.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. A **Kezdés** mezőben adjon meg egy időpontot.
     * Adja meg az időt, amikor a munka reggel elkezdődik.  
-7. A Befejezés mezőben adjon meg egy időpontot.
+1. A **Befejezés** mezőben adjon meg egy időpontot.
     * Adja meg a dolgozók ebédszünetének időpontját.  
-8. Kattintson a Hozzáadás gombra.
-9. Az Kezdés mezőben adjon meg egy időpontot.
+1. Válassza a **Hozzáadás** lehetőséget.
+1. A **Kezdés** mezőben adjon meg egy időpontot.
     * Adja meg, hogy mikor folytatódik a munka ebéd után.  
-10. A Befejezés mezőben adjon meg egy időpontot.
+1. A **Befejezés** mezőben adjon meg egy időpontot.
     * A munkanap végének meghatározása.  
 
 ## <a name="replicate-working-times-to-all-week-days"></a>Munkaidők átmásolása minden hétköznapra
-1. Kattintson a Nap másolása elemre.
+
+1. Válassza a **Másolási nap** parancsot.
     * Másolja át a munkaidők definícióit hétfőről keddre.  
-2. Kattintson az OK gombra.
-3. Kattintson a Nap másolása elemre.
+1. Válassza ki az **OK** lehetőséget.
+1. Válassza a **Másolási nap** parancsot.
     * Másolja át a munkaidők definícióit hétfőről szerdára.  
-4. Válasszon egy lehetőséget a Befejező hétköznap mezőben.
-5. Kattintson az OK gombra.
-6. Kattintson a Nap másolása elemre.
+1. Válasszon egy lehetőséget a **Befejező hétköznap** mezőben.
+1. Válassza ki az **OK** lehetőséget.
+1. Válassza a **Másolási nap** parancsot.
     * Másolja át a munkaidők definícióit hétfőről csütörtökre.  
-7. Válasszon egy lehetőséget a Befejező hétköznap mezőben.
-8. Kattintson az OK gombra.
-9. Kattintson a Nap másolása elemre.
+1. Válasszon egy lehetőséget a **Befejező hétköznap** mezőben.
+1. Válassza ki az **OK** lehetőséget.
+1. Válassza a **Másolási nap** parancsot.
     * Másolja át a munkaidők definícióit hétfőről péntekre.  
-10. Válasszon egy lehetőséget a Befejező hétköznap mezőben.
-11. Kattintson az OK gombra.
+1. Válasszon egy lehetőséget a **Befejező hétköznap** mezőben.
+1. Válassza ki az **OK** lehetőséget.
 
 ## <a name="define-time-slots-for-special-operations"></a>Időközök meghatározása speciális műveletekhez
-1. Bontsa ki a Péntek szakaszt.
-2. Keresse meg és jelölje ki a kívánt rekordot a listán.
-3. A Tulajdonság mezőben adjon meg vagy válasszon ki egy értéket.
-4. Keresse meg és jelölje ki a kívánt rekordot a listán.
-5. A Tulajdonság mezőben adjon meg vagy válasszon ki egy értéket.
+
+1. Bontsa ki a **Péntek** szakaszt.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán.
+1. A **Tulajdonság** mezőben adjon meg vagy válasszon ki egy értéket.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán.
+1. A **Tulajdonság** mezőben adjon meg vagy válasszon ki egy értéket.
 
 ## <a name="mark-weekend-days-as-closed-for-pickup"></a>Hétvégek megjelölése zárt felvételhez
-1. Bontsa ki a Szombat szakaszt.
-2. A Lezárt felvétel mezőben válassza az Igen lehetőséget.
-3. Bontsa ki a Vasárnap szakaszt.
-4. A Lezárt felvétel mezőben válassza az Igen lehetőséget.
 
+1. Bontsa ki a **Szombat** szakaszt.
+1. A *Lezárt felvétel* mezőben válassza az **Igen** lehetőséget.
+1. Bontsa ki a **Vasárnap** szakaszt.
+1. A *Lezárt felvétel* mezőben válassza az **Igen** lehetőséget.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

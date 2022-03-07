@@ -10,7 +10,6 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,12 +17,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 8dd9e710f9a6ea593a0673e7902fadf84ca05cff
-ms.sourcegitcommit: 597476103bb695e3cbe6d9ffcd7a466400346636
+ms.openlocfilehash: d74e7116d68074bfc917784a8f51f85d5682c5d6
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "4594308"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213842"
 ---
 # <a name="upload-videos"></a>Videók feltöltése
 
@@ -73,3 +72,6 @@ Ha egyszerre több típusú eszközt (például képeket és videókat) tölt fe
 [Képfókuszpontok testreszabása](dam-custom-focal-point.md)
 
 [Statikus fájlok feltöltése és kiszolgálása](upload-serve-static-files.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

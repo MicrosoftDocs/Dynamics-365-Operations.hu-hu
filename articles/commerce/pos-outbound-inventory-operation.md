@@ -2,16 +2,13 @@
 title: Kimenő készletművelet a pénztárban
 description: Ez a témakör a pénztár (POS) kimenő készletműveletének képességeit írja le.
 author: hhaines
-manager: annbe
 ms.date: 07/30/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
@@ -19,14 +16,14 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 1f74df94b1647520880ff994581872b9d9f8e067
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e29a5295cd3c334aef88dc7a2a36b2eb8a6f636b159c0f69874fc51298a1ab7c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412748"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772278"
 ---
-# <a name="outbound-inventory-operation-in-pos"></a>Kimenő készletművelet a pénztárban
+# <a name="outbound-inventory-operation-in-pos"></a>Kimenő készletműveletek a pénztárban
 
 [!include [banner](includes/banner.md)]
 
@@ -74,7 +71,7 @@ A létrehozott kötegelt feladatok felhasználhatók a meghiúsult vagy időtúl
 
 ## <a name="prerequisite-add-outbound-operation-to-the-pos-screen-layout"></a>Előfeltétel: Kimenő művelet hozzáadása a pénztár képernyő-elrendezéséhez
 
-Mielőtt a szervezet használhatja a kimenő műveletek funkciókat, konfigurálnia kell a **Kimenő művelet** pénztárműveletet agy vagy több [Pénztári képernyőelrendezésen](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Az új művelet termelési környezetben történő üzembe helyezése előtt mindenképpen alaposan tesztelje, és tanítsa meg a felhasználókat a használatára.
+Mielőtt a szervezet használhatja a kimenő műveletek funkciókat, konfigurálnia kell a **Kimenő művelet** pénztárműveletet agy vagy több [Pénztári képernyőelrendezésen](/dynamics365/unified-operations/retail/pos-screen-layouts). Az új művelet termelési környezetben történő üzembe helyezése előtt mindenképpen alaposan tesztelje, és tanítsa meg a felhasználókat a használatára.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -193,3 +190,6 @@ A teljesen leszállított átmozgatási rendeléseket a **Kimenő művelet** dok
 ## <a name="related-topics"></a>Kapcsolódó témakörök
 
 [Bejövő készletműveletek a pénztárban](pos-inbound-inventory-operation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

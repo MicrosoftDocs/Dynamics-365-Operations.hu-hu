@@ -2,9 +2,11 @@
 title: Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani olyan Microsoft Dynamics 365 Commerce e-kereskedelmi oldalt, amely az URL-paraméterek alapján szolgáltat dinamikus tartalmat.
 author: StuHarg
+manager: AnnBe
 ms.date: 01/28/2021
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-365-commerce
 ms.technology: ''
 ROBOTS: ''
 audience: Application user
@@ -15,16 +17,17 @@ ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 3de589e908b20a90ba32fc49f1b987066283aafacfb4b879124b4f0677b34301
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 8d6b4756fc81dc99786da251d5d9a575a71ccc49
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747673"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5208015"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet beállítani olyan Microsoft Dynamics 365 Commerce e-kereskedelmi oldalt, amely az URL-paraméterek alapján szolgáltat dinamikus tartalmat.
 

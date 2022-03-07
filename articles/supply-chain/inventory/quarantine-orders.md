@@ -1,48 +1,62 @@
 ---
 title: Karanténutasítások
-description: Ez a témakör bemutatja, hogy a karanténutasításokat hogyan lehet a készlet blokkolására használni.
-author: perlynne
-manager: tfehr
-ms.date: 11/02/2017
+description: Ez a témakör bemutatja, hogy a karanténrendeléseket hogyan lehet a készlet blokkolására használni.
+author: yufeihuang
+ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, InventModelGroup, InventQuarantineOrder, InventQuarantineParmEnd, InventQuarantineParmReportFinished, InventQuarantineParmStartUp, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 30021
 ms.assetid: d5047727-653c-49da-b489-6fd3fe50445e
 ms.search.region: Global
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 25ba4aa92d968f4dfb0dc23b1ac459cda2d52b61
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 5cf0ec8f9f4d862724cb8ab72b48771ed68eaf39
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429792"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568783"
 ---
 # <a name="quarantine-orders"></a>Karanténutasítások
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy a karanténutasításokat hogyan lehet a készlet blokkolására használni.
+Ez a témakör bemutatja, hogy a karanténrendeléseket hogyan lehet a készlet blokkolására használni.
 
-A karantén-utasítások használhatóak a készlet blokkolására. Például lehet, hogy minőség-ellenőrzési okok miatt szeretne karanténba tenni cikkeket. A karanténba helyezett készlet át lesz szállítva egy karantén raktárba. **Megjegyzés:** Ha speciális raktárkezelési folyamatokat használ (a Raktárkezelésben), a karantén utasítás feldolgozása csak értékesítési visszáru-rendeléseknél lesz használva.
+A karanténutasításokkal blokkolhatja a készletet. Például lehet, hogy minőség-ellenőrzési okok miatt szeretne karanténba tenni cikkeket. A karanténba helyezett készlet át lesz szállítva egy karantén raktárba.
+
+> [!NOTE]
+> Ha speciális raktárkezelési folyamatokat használ (a Raktárkezelésben), a karantén utasítás feldolgozása csak értékesítési visszáru-rendeléseknél lesz használva.
 
 ## <a name="quarantine-on-hand-inventory-items"></a>Aktuálisan készleten lévő cikkek karanténba helyezése
-Cikkek karanténba helyezésekor létrehozhatja a karanténutasításokat manuálisan, vagy beállíthatja a rendszert, hogy automatikusan hozza létre a karantén utasításokat a bejövő feldolgozás során. Karantén-utasítások automatikus létrehozásához válassza ki a **Karantén kezelése** lehetőséget a **Készletre vonatkozó irányelvek** fülön a **Cikkmodellcsoportok** lapon. Az alapértelmezett karantén raktárt is meg kell adnia a **Karantén raktár** mezőben, a fogadó raktár esetén. Amikor az aktuális készlet rögzítve lesz egy beszerzési rendelésben vagy termelési rendelésben, a karanténba helyezett cikkek automatikus egy karantén raktárba kerülnek a Supply Chain Management rendszerben. Ez a mozgás akkor következik be, a karantén rendelés állapota felveszi a következő értéket: **Elindítva**. Amikor manuálisan hoz létre karanténutasításokat, akkor nincs rá szükség, hogy az aktuális cikkhez be legyen állítva a karantén kezelés a társított cikkmodellcsoportban. Ehhez a folyamathoz meg kell határoznia a karanténozásra váró aktuális készletet, valamint a használni kívánt karantén raktárt. A folyamat megtervezéséhez használhatja a karanténutasítás állapotokat.
+
+Cikkek karanténba helyezésekor létrehozhatja a karanténutasításokat manuálisan, vagy beállíthatja a rendszert, hogy automatikusan hozza létre azokat a bejövő feldolgozás során.
+
+A következő lépések szerint állítsa be a rendszert a karanténutasítások automatikus előállítására.
+
+1. Ugorjon a **Készletkezelés \> Beállítás \> Készlet \> Cikkmodellcsoportok** pontra.
+1. Válasszon ki egy kapcsolódó modellcsoportot a listapanelen, vagy hozzon létre egy új modellcsoportot.
+1. A **Készletszabályok** gyorslapon jelölje be a **Karantén kezelése** jelölőnégyzetet.
+1. Zárja be a lapot.
+1. Az alapértelmezett karantén raktárt is meg kell adnia a **Karantén raktár** mezőben, a fogadó raktár esetén.
+
+Ha egy, a raktárban bevételként regisztrált cikk olyan modellcsoportba tartozik, amelyben be van jelölve a **Karanténkezelés** jelölőnégyzet, akkor a rendszer létrehoz hozzá egy karanténutasítást. A karanténutasítás arra utasítja a dolgozókat, hogy helyezzék át a cikket a karanténraktárba.
+
+Amikor manuálisan hoz létre karanténutasításokat a **Karanténutasítások** oldalon, akkor nincs rá szükség, hogy az aktuális cikkhez be legyen állítva a karantén kezelés a társított cikkmodellcsoportban. Ehhez a folyamathoz meg kell határoznia a karanténozásra váró aktuális készletet, valamint a használni kívánt karantén raktárt. A folyamat megtervezéséhez használhatja a karanténutasítás állapotokat.
 
 ## <a name="quarantine-order-statuses"></a>Karanténutasítás-állapotok
+
 A karanténutasítások a következő állapotúak lehetnek:
 
--   Létrehozva
--   Elkezdve
--   Készként jelentve
--   Befejezve
+- Létrehozva
+- Elkezdve
+- Készként jelentve
+- Befejezve
 
 ### <a name="created"></a>Létrehozva
 
@@ -54,16 +68,18 @@ Ha egy karanténutasítás állapota **Elindítva** a készlet átkerül a szok�
 
 ### <a name="reported-as-finished"></a>Készként jelentve
 
-A **Jelentés készként** parancsra kattintva jelentheti, hogy egy elindított karanténutasítás befejeződött. A cikk felszabadul a karanténból, de még nem kerül vissza a szokásos raktárba. A visszamozgatást az eredeti raktárba egy cikkbeérkezési naplón keresztül lehet feldolgozni, amelyet a Jelentés során lehet befejezett folyamatként inicializálni.
+Ha egy elindított karanténutasítást készként szeretne jelenteni, nyissa meg a rendelést, és válassza a műveletpanel **Készként jelentés** elemét. A cikk felszabadul a karanténból, de még nem kerül vissza a szokásos raktárba. A visszamozgatást az eredeti raktárba egy cikkbeérkezési naplón keresztül lehet feldolgozni, amelyet a jelentés során lehet befejezett folyamatként inicializálni.
 
 ### <a name="ended"></a>Befejezve
 
-Egy karanténutasítás befejezésekor, a cikk a karantén raktárból visszakerül a rendes raktárba. A cikktranzakció állapota **Eladva** a karanténraktárban és **Beszerezve** a rendes raktárban.
+Egy karanténutasítás befejezésekor, a cikk a karantén raktárból visszakerül a rendes raktárba. A cikktranzakció állapota *Eladva* a karanténraktárban és *Beszerezve* a rendes raktárban.
 
 ## <a name="quarantine-order-scrap"></a>Karanténutasítás-selejt
-A karanténutasítási folyamat részeként lehetséges a készlet selejtezése. A selejt feldolgozásakor a készlet állapota **Értékesítve** lesz, a karantén raktárból származó kiadási tranzakció által.
 
-<a name="additional-resources"></a>További erőforrások
---------
+A karanténutasítási folyamat részeként lehetséges a készlet selejtezése. A selejt feldolgozásakor a készlet állapota *Értékesítve* lesz, a karantén raktárból származó kiadási tranzakció által.
 
-[Készletzárolás](inventory-blocking.md)
+## <a name="additional-resources"></a>További erőforrások
+
+- [Készletzárolás](inventory-blocking.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

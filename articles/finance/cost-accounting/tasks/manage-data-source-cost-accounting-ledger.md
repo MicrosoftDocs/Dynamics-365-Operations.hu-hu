@@ -2,9 +2,11 @@
 title: A költségkönyvelési főkönyv adatforrásának kezelése
 description: Ezzel az eljárással kezelheti a költségkönyvelési főkönyv főkönyvi adatforrását.
 author: ShylaThompson
+manager: AnnBe
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CAMAXGeneralLedgerEntryProviderConfiguration
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: da218df53fdca98ead748ce364c03502bd1f333959ebacab25339b665bcb9c66
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 48fef42f1866b0995182ac6fd022045f7dd31906
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6771704"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5218911"
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>A költségkönyvelési főkönyv adatforrásának kezelése
 

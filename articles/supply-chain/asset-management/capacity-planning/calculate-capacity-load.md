@@ -1,29 +1,26 @@
 ---
 title: Kapacitásterhelés kiszámítása
 description: Ez a témakör azt mutatja be, hogyan lehet kiszámítani a kapacitásterhelést az Eszközkezelés modulban.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetCapacityLoad, EntAssetWorkOrderCapacityLoadCalculate, EntAssetWorkOrderCapacityLoad
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5015955338a4cbc2b51585d6297756f20dccee8b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: eed75cd5268b19d819d42e764bdbb5e6f4c79a0a732c5023b3fc40da798e2ca1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757878"
 ---
 # <a name="calculate-capacity-load"></a>Kapacitásterhelés kiszámítása
 
@@ -61,3 +58,6 @@ Ez akkor lehet hasznos, ha egy adott időszakra vonatkozóan szeretne áttekint�
 >[!NOTE]
 >Ha csak az ütemezett munkarendelésekre vonatkozó kapacitástervezésre szeretne koncentrálni, lásd: [Kapacitásterhelés számítása ütemezett munkarendeléseken](../work-order-scheduling/calculate-capacity-load-on-scheduled-work-orders.md).
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

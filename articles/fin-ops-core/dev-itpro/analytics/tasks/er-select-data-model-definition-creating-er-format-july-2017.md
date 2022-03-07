@@ -2,11 +2,9 @@
 title: Adatmodell-definíciók kiválasztása formátumok létrehozásakor
 description: A jelen eljárás lépéseinek lezáráshoz először hajtsa végre az „ER – Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/19/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 44288cc3979a0ac2ed6b4a8478aac21a85aca24e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: b01f7afb6ca3bd1f317c25202e0cf72231008fca
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684211"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5744963"
 ---
 # <a name="select-data-model-definitions-when-you-create-formats"></a>Adatmodell-definíciók kiválasztása formátumok létrehozásakor
 
@@ -98,3 +96,6 @@ Ez az eljárás a Rendszergazda vagy az Elektronikus jelentések fejlesztője sz
     * Vegye figyelembe, hogy mostantól csak egy gyökérelem érhető el az alkalmazás adatforrásaihoz való hozzárendelésre. Amikor van legalább egy modell-hozzárendelés, csak a modell alkalmazás-adatforrásokhoz hozzárendelt gyökérelemei választhatók ki modelldefinícióként az ER-formátum hozzáadása közben.   
 5. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

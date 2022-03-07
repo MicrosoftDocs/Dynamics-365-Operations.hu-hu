@@ -5,6 +5,7 @@ author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
 ms.prod: ''
+ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -15,12 +16,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: f930cac61b747037b9fbecc7397a9b1b7db5dabd8a86b63a61c92ac7abe17516
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa00e9331693600ced2f4ead399a0c005b77ad08
+ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765170"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5801507"
 ---
 # <a name="cant-configure-a-security-group-for-commerce-site-builder-during-initial-deployment"></a>Nem konfigurálható biztonsági csoport a Commerce webhelyszerkesztő számára a kezdeti telepítés során
 
@@ -37,7 +38,7 @@ Amikor az e-kereskedelmi összetevőket a Commerce webhelyszerkesztő összetev�
 ### <a name="provision-the-e-commerce-site-with-a-user-in-the-correct-tenant"></a>Az e-kereskedelmi webhely telepítése a megfelelő bérlőben található felhasználóval
 
 1. Lépjen ide: [Azure Portal](https://portal.azure.com/).
-1. Azon bérlőnél, akinek az e-kereskedelmi webhelyére vonatkozó LCS-projektet létesítették, kövesse az [Alapcsoport létrehozása és tagok hozzáadása az Azure Active Directory segítségével](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) pontban leírt utasításokat.
+1. Azon bérlőnél, akinek az e-kereskedelmi webhelyére vonatkozó LCS-projektet létesítették, kövesse az [Alapcsoport létrehozása és tagok hozzáadása az Azure Active Directory segítségével](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) pontban leírt utasításokat.
 1. Lépejen az [LCS](https://lcs.dynamics.com/) oldalára, és jelentkezzen be egy olyan fiók használatával, amely ugyanazt a bérlőt használja, mint a most létrehozott Azure AD biztonsági csoport. A fióknak hozzáféréssel kell rendelkeznie az Azure AD biztonsági csoport megtekintéséhez.
 1. A beállításoknak megfelelően konfigurálhatja az e-kereskedelmi webhelyet. Az e-kereskedelmi összetevők telepítésekor a biztonsági csoportnak lehetőségként kell megjelennie a párbeszédpanelen.
 
@@ -46,6 +47,6 @@ Amikor az e-kereskedelmi összetevőket a Commerce webhelyszerkesztő összetev�
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Alapcsoport létrehozása és tagok hozzáadása az Azure Active Directory segítségével](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+[Alapcsoport létrehozása és tagok hozzáadása az Azure Active Directory segítségével](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
 
 [Új e-kereskedelmi bérlő telepítése](../deploy-ecommerce-site.md)

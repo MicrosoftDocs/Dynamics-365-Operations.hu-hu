@@ -2,25 +2,23 @@
 title: Európa – áttekintés
 description: Ez a témakör a Microsoft Dynamics 365 Finance dokumentációforrásokra mutató hivatkozásokat tartalmaz Európára vonatkozóan.
 author: ShylaThompson
-manager: AnnBe
-ms.date: 07/25/2019
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.custom: intro-internal
 ms.search.region: global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1d63d5682521b1991c387604c2cc219c7f147c8d
-ms.sourcegitcommit: cfd84321fba38e02e270d361df369a536a48efa3
+ms.openlocfilehash: 638e0468f9d200083d8263786f5f5750b6129e73
+ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "4512211"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "6336686"
 ---
 # <a name="europe-overview"></a>Európa – áttekintés
 
@@ -41,6 +39,7 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a jogi szem�
 - [EU értékesítési lista jelentése](emea-eu-sales-list.md)
 - [Árfolyam-korrekciók](emea-exchange-rate-adjustments.md)
 - [Fizetési módok fájlformátumai](emea-select-file-formats-for-the-method-of-payments.md)
+- [Pénzügyi (globalizációs) útmutatás a Brexit hatásával kapcsolatban](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Pénzügyi szolgáltatások (ESR) integrációja](emea-fiscal-service-integration.md)
 - [Tárgyi eszközök kivezetése Észtország és Litvánia esetében](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Átadási bizonylat létrehozása belső készlet átviteléhez](tasks/transfer-document-internal-inventory-transfer.md)
@@ -65,6 +64,7 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a jogi szem�
 - [Számla feldolgozása](emea-invoice-processing.md)
 - [EU beérkezési igazolás kiállítása](tasks/eur-00012-issue-eu-entry-certificate.md)
 - [Támogatott szabványok elektronikus számlázáshoz](emea-oioubl-standards-electronic-invoicing.md)
+- [Elektronikus számlák kényszerített létrehozása](emea-eur-forced-einvoices.md)
 - [Eredeti számlahivatkozás (Kelet-Európa)](tasks/ee-00004-original-invoice-reference.md)
 - [Fél keresése adószám használatával](tasks/eur-00015-party-search-vat-id.md)
 - [Fizetésihivatkozás-generáló eszköz](tasks/ee-00015-payment-reference-generation-tool.md)
@@ -97,5 +97,8 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a jogi szem�
 
 ## <a name="additional-resources"></a>További erőforrások
 
-- [Az Elektronikus jelentéskészítés áttekintése](../../dev-itpro/analytics/general-electronic-reporting.md)
-- [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+- [Az Elektronikus jelentéskészítés áttekintése](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
+- [Az elektronikus jelentési beállítások letöltése a Lifecycle Services rendszerből](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Munkarendelések ütemezése
 description: Ez a témakör azt mutatja be, hogyan lehet munkarendeléseket ütemezni az Eszközkezelés modulban.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/19/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetWorkOrderSchdulePreviewPart, EntAssetWorkOrderScheduleExclusively, EntAssetWorkOrderSchduleInfoPart, EntAssetWorkOrderScheduleListPage, EntAssetWorkOrderSchedule, EntAssetWorkOrderScheduleDelete
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 7e7751e3e2f216abf46f02ee0644909c6894c5b2
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: becd06c46afd92bf07d9a69147b7768e780aefa57f9045c11698c04154d6ddb8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5020229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718059"
 ---
 # <a name="schedule-work-orders"></a>Munkarendelések ütemezése
 
@@ -137,3 +135,6 @@ A Gantt-diagram megtekintése és használata:
     - A megjelenített munkarendelés újraütemezéséhez válassza ki azt, majd húzza át a megfelelő új dátumra és időpontra.
 
 1. Ha módosításokat hajtott végre, a Művelet panelen válassza a **Mentés** parancsot a mentéshez.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

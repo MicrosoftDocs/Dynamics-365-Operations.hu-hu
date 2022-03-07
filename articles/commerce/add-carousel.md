@@ -1,16 +1,13 @@
 ---
 title: Forgótármodul
-description: Ez a témakör a forgótármodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
+description: Ez a témakör ismerteti a forgótármodulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez a Microsoft Dynamics 365 Commerce segítségével.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f09f3f98d174f965a75e27ee6a5c2ed8599042fc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: cfbe254d225366f89779ffeef410bb0b1a29056e51a4719106e9bc495b898161
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412789"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6721055"
 ---
 # <a name="carousel-module"></a>Forgótármodul
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a forgótármodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
+Ez a témakör ismerteti a forgótármodulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez a Microsoft Dynamics 365 Commerce segítségével.
 
 A forgótármodul több, a felhasználók által böngészhető promóciós elem (például multimédiás képek) forgótár-szalagcímben való elhelyezésére használható. Például egy kiskereskedő a kezdőlapon a forgótármodul segítségével több új terméket vagy promóciót mutathat be.
 
@@ -45,7 +40,7 @@ A forgótármodulon belül tartalomblokk-modulokat adhat hozzá. A forgótármod
 
 A következő kép egy kezdőoldalon használt forgótár modul egy példáját jeleníti meg. Ez a forgótár modul több tartalomblokk elemet tartalmaz.
 
-![Példa egy forgótármodulra](./media/Hero.PNG)
+![Példa egy forgótármodulra.](./media/Hero.PNG)
 
 ## <a name="carousel-module-properties"></a>Forgótármodul tulajdonságai
 
@@ -86,3 +81,6 @@ A forgótármodul új oldalra való felvételéhez és a kötelező tulajdonság
 [Tartalomblokk-modul](add-hero-module.md)
 
 [Videólejátszó modul](add-video-player.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

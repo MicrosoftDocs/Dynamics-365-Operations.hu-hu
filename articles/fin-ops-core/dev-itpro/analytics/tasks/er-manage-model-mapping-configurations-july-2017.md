@@ -1,6 +1,6 @@
 ---
 title: ER modell-leképezés kezelése külön ER-konfigurációkban
-description: A következő lépések leírják, hogy egy Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörhöz rendelt felhasználó miként hozhat létre konfigurációszolgáltatót az Elektronikus jelentéshez (ER).
+description: Ez a témakör ismerteti az Elektronikus jelentés (ER) modell-leképezések kezelésének módját a különböző ER-konfigurációk között.
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 4e59e9f2dd5a0fa6d5955e3d93d25759a478ede7
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 2f1013cfc9f421525fb0661cd5ace5eeaa157f9a
+ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4684427"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "5093798"
 ---
 # <a name="manage-er-model-mapping-in-separate-er-configurations"></a>ER modell-leképezés kezelése külön ER-konfigurációkban
 

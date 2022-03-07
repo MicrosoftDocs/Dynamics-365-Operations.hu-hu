@@ -10,16 +10,18 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: fa0c9ea5a2e92ae5af7d937b5f7f16df0ee3c9ef
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: ae0aebc73fc9b5d31409131d78ad1bff7f3771cd
+ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985187"
+ms.lasthandoff: 11/23/2021
+ms.locfileid: "7860638"
 ---
 # <a name="invoke-process-automation-flows-to-create-quality-orders"></a>Folyamatautomatizálási folyamatok meghívása minőségi rendelések létrehozásához
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!--KFM: Preview until 12/1/2021 -->
 
 A szervezetek számára egyre fontosabb a szabványos üzleti folyamatok automatizálására, a munkatársak számára biztosított kényelmesebb kommunikációs környezet, és a különféle adatjelek és rendszerek használata az üzleti folyamatok automatizálásához. A robotikus folyamatautomatizálással (RPA) és a Microsoft Power Automate rendszerrel a cégek kód nélkül automatizálhatják az ismétlődő folyamatokat, így hatékonyabbá és pontosabbá válhat a munkavégzés.
 

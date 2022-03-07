@@ -2,25 +2,27 @@
 title: Projektszámlázás
 description: Ez a témakör az Idő- és anyagelszámolású projektek, illetve a Rögzített árú projektek projektszámlázásáról nyújt áttekintést. Számlajavaslatokkal (előzetes számlák), számlaellenőrzéssel, részszámlázással, szállítói számlázással és jóváírásokkal kapcsolatos információkat tartalmaz.
 author: TaylorVH
+manager: AnnBe
 ms.date: 07/10/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProjInvoiceCashFlow, ProjInvoiceControl, ProjInvoiceListPage, ProjInvoiceProposalDetail, ProjInvoiceProposalListPage
 audience: Application User, IT Pro
-ms.reviewer: zezhangzhao
+ms.reviewer: roschlom
 ms.custom: 23111
 ms.assetid: 1812d6f2-8b34-4258-8f5f-dcf12281547f
 ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2020-07-06
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 82de9c8ff1b3eeb1811332316522e541b2a405ff
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
-ms.translationtype: MT
+ms.openlocfilehash: 5a6a29b180564dc4e4dd768b9e4b97c8877ce00c
+ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883568"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "4979587"
 ---
 # <a name="project-invoicing"></a>Projektszámlázás
 
@@ -58,7 +60,7 @@ A következő tranzakciókhoz tud létrehozni számlajavaslatot:
 
 A rendszerben díjtranzakciókat is létre tud hozni egy számlajavaslatban. Lehetőség van az eladási ár, az óra, a költség, a cikk és a díjtranzakciók módosítására is. A számlajavaslat feladásakor a frissített árak és a tranzakciók hozzáadódnak a projektjelentésekhez és a tranzakció előzményeihez. 
 
-Amennyiben egy projekthez több vevői számlát szeretne létrehozni, ezekhez egyesével kell számlajavaslatot generálnia. Például tranzakciótípus alapján is létrehozhat számlákat. Ha órákat kell megadni az egyik vevői számlán, és a cikkeket egy másik számlán, külön számlajavaslatot kell létrehozni az óratranzakciókhoz és a díjtranzakciókhoz. 
+Amennyiben egy projekthez több vevői számlát szeretne létrehozni, ezekhez egyesével kell számlajavaslatot generálnia. Például tranzakciótípus alapján is létrehozhat számlákat. Amennyiben az egyik számlán órákat, egy másikon pedig cikkeket akar megadni, akkor létre kell hoznia egy számlajavaslatot az óratranzakciók számára, és egy másikat a díjtranzakciókhoz. 
 
 Ha egy projekt egynél több finanszírozási forráshoz tartozik, akkor önálló számlajavaslatot hozhat létre az összes finanszírozási forrás részére. A **Finanszírozási szabály felosztásai** lapon meghatározhatja a tranzakciós összeg, az egyes finanszírozási forrásokhoz rendelendő százalékát, valamint a kerekítési különbségek feladásához használatos forrást.
 
@@ -129,6 +131,3 @@ Létrehozhat negatív összegű számlát, ami így jóváírásnak minősülő 
 
 
 
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

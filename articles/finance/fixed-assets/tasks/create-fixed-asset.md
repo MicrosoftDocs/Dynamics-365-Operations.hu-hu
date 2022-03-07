@@ -2,23 +2,26 @@
 title: Tárgyi eszköz létrehozása
 description: Ez a témakör azt mutatja be, hogyan lehet új tárgyieszköz-rekordot létrehozni a tárgyi eszköz lista lapjáról.
 author: moaamer
+manager: AnnBe
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable, AssetBook
 audience: Application User
 ms.reviewer: roschlom
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7bf6e74253d2cf4150914fcb8bcc51aa2f32c0435c563b677def40115e0163fa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 481bdb55b813dad5366f382ae35d8345b0e67d9f
+ms.sourcegitcommit: a9efbd69f2670fd6ba0ad0babf304fc206d01249
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758125"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "4444206"
 ---
 # <a name="create-a-fixed-asset"></a>Tárgyi eszköz létrehozása
 
@@ -52,6 +55,3 @@ Ha nem definiálta a tárgyi eszköz számát az Excel-bővítmény sablonjában
 
 > [!WARNING]
 > A rögzített eszközrekord nem törlődik, ha a tranzakciókat a kapcsolódó könyvbe adták fel, vagy ha az újonnan létrehozott eszközt naplósorban adták meg, de nem adták fel. 
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

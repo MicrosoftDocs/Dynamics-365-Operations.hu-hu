@@ -10,7 +10,6 @@ ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
@@ -18,12 +17,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a6d7688e78a375bc262b1156c5439c0fff7cd1f0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: 5419c18a510b0d35dabe5329a9557780cb7637b3
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459165"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5257123"
 ---
 # <a name="configure-and-process-an-exchange-on-a-return-order"></a>Csere konfigurálása és feldolgozása visszárurendelésen
 
@@ -51,3 +50,6 @@ Annak érdekében, hogy a kosár különböző összegei kellően átláthatóak
 - **Alkalmazott letét** – A letét összege, amelyet a rendszer a tranzakcióra alkalmaz, amikor a felhasználó vevői rendelés felvételét végzi. Ha nincs letét-felülbírálat, és 10 százalékos letét van beállítva, akkor a mezőben található összeg a vevői rendelés teljes összegének 90 százalékát jeleníti meg.
 - **Végrehajtott összeg** – Az olyan sorok teljes összege, ahol a szállítási mód **Végrehajtás** állapotú volt, amikor a vevői rendelést létrehozták vagy szerkesztették, vagy a vevői rendelés cseréje során. A mezőben található összeg tartalmazza az adókat és díjakat.
 - **Visszáru összege** – Az olyan sorok teljes összege, amelyek negatív mennyiségekkel rendelkeznek a vevői rendelés cseréje során. A mezőben található összeg tartalmazza az adókat és díjakat.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

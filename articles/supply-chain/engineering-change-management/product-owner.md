@@ -2,11 +2,9 @@
 title: Terméktulajdonosok
 description: Ez a témakör a terméktulajdonosokkal kapcsolatban tartalmaz tájékoztatást. A terméktulajdonos olyan felhasználók csoportja, akik bizonyos termékekért felelősek. Csak a csoport tagjai adhatják ki ezeket a termékeket. A terméktulajdonos használható a jóváhagyási munkafolyamatban is.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductOwner
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 90f5596f9b5fc45e78cc49a3309c45864e07e70b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: a29ab169e9b24826fbe69fbc316040d4618750ee
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967333"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567511"
 ---
 # <a name="product-owners"></a>Terméktulajdonosok
 
@@ -60,3 +58,6 @@ Az X termék például a *Design kabinetek* terméktulajdonosi csoportjához van
 ## <a name="product-owners-and-approvals"></a>Terméktulajdonosok és jóváhagyások
 
 Mivel a terméktulajdonosok tudják, hogy az egyes mérnöki módosítások előnyösek-e termékeik számára, gyakran érdemes ezeket belefoglalni a mérnöki változáskezelés modul jóváhagyási folyamatának részeként. Ezt a módszert úgy hajthatja végre, hogy a termék tulajdonosait a mérnöki változtatások kezeléséhez használt munkafolyamatokban résztvevő szolgáltatókként állítja be. A rendszer ezután a munkafolyamatokban hozzárendeli a jóváhagyási feladatokat a mérnöki módosítási kérelmekben és a mérnöki módosítási rendelésekben szereplő termékek alapján. További tájékoztatást [A mérnöki termékek módosításának kezelése](engineering-change-management.md) részben talál.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

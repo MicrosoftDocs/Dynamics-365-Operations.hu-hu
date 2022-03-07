@@ -2,11 +2,8 @@
 title: SPLITLIST ER-függvény
 description: A témakör tájékoztatást nyújt a SPLITLIST Elektronikus jelentéskészítés (ER) függvény használatának módjáról.
 author: NickSelin
-manager: kfend
-ms.date: 12/12/2019
-ms.topic: article
+ms.date: 03/15/2021
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
@@ -17,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d0f527dcf313a6a5e3b6601cac9a0f6495f66833
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: ef0b548173a01cc5a15fcfb743dfb29397c1349b3c2926fa6401399459d07026
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680339"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6776122"
 ---
 # <a name="splitlist-er-function"></a>SPLITLIST ER-függvény
 
@@ -30,10 +27,16 @@ ms.locfileid: "4680339"
 
 A `SPLITLIST` függvény a megadott listát allistákká (vagy kötegekké) osztja fel, amelynek mindegyike megadott számú rekordot tartalmaz. Ezt követően az eredményt új *Rekordlista* értékként adja vissza, amely a kötegekből áll.
 
-## <a name="syntax"></a>Szintaxis
+## <a name="syntax-1"></a>Szintaxis 1
 
 ```vb
 SPLITLIST (list, number)
+```
+
+## <a name="syntax-2"></a>Szintaxis 2
+
+```vb
+SPLITLIST (list, number, on-demand reading flag)
 ```
 
 ## <a name="arguments"></a>Argumentumok
@@ -46,7 +49,11 @@ A *Rekordlista* adattípus adatforrásának érvényes elérési útja.
 
 A rekordok maximális száma kötegenként.
 
-## <a name="return-values"></a>Visszaadott értékek
+`on-demand reading flag`: *Logikai*
+
+Egy *Logikai* érték, amely meghatározza, hogy az allisták elemeit igény szerint létre kell-e hozni.
+
+## <a name="return-values"></a>Visszatérési értékek
 
 *Rekordlista*
 
@@ -63,6 +70,8 @@ A visszaadott kötegek listája a következő elemeket tartalmazza:
 - **BatchNumber:** *Egész*
 
     Az aktuális köteg száma a visszaadott listában.
+
+Ha az igény szerinti olvasási jelző **Igaz** értékre van állítva, kérésre allisták jönnek létre, amelyek lehetővé teszik a memóriafelhasználás csökkentését, de teljesítménycsökkenést okozhatnak, ha az elemeket nem egymás után használják.
 
 ## <a name="example"></a>Példa
 
@@ -81,3 +90,6 @@ Az alábbi ábrán a tervezett formátum futtatásának eredménye látható.
 ## <a name="additional-resources"></a>További erőforrások
 
 [Lista függvények](er-functions-category-list.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

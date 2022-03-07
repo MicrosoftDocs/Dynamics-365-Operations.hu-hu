@@ -4,18 +4,18 @@ description: Ez a témakör a Dynamics 365 Supply Chain Management 10.0.20 új v
 author: kamaybac
 ms.date: 05/28/2021
 ms.topic: article
-audience: Application User, Developer, IT Pro
+audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-05-28
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: a8f46165a89f064878d2e8af1b0b174b04eca37e
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
-ms.translationtype: MT
+ms.openlocfilehash: 09cdb039b9bde3f97db012f1aaaeaf4c8a7df944
+ms.sourcegitcommit: 908a85987b604a7782407da70fb70ef75c07989f
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647314"
+ms.lasthandoff: 07/19/2021
+ms.locfileid: "6641056"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10020-august-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.20 szolgáltatásban (2021. augusztus)
 
@@ -38,16 +38,16 @@ Ezen szolgáltatások többségét a használat előtt engedélyezni kell a [Fun
 | Készlet&nbsp;és&nbsp;logisztika | [Értékesítési rendelés részleteinek teljesítményjavítása](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/sales-order-details-performance-enhancement) | Ez a funkció válaszképesebbé teszi a felhasználói felületet az értékesítési rendelések – különösen a sok sorból álló rendelések – megnyitásakor. |
 | Gyártás | [Folyamatautomatizálási folyamatok meghívása minőségi rendelések létrehozásához](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/invoke-process-automation-flows-create-quality-orders) | [Folyamatautomatizálási folyamatok meghívása minőségi rendelések létrehozásához](../production-control/process-automation-quality-orders.md ) |
 | Gyártás | [Továbbfejlesztett termelési üzem végrehajtási felület gyártáshoz](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/enhanced-production-floor-execution-interface-manufacturing) | [A termelési üzem végrehajtási felületének konfigurálása](../production-control/production-floor-execution-configure.md) |
-| Tervezés | [Végtelen kapacitás ütemezése a tervezési optimalizáláshoz](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/schedule-infinite-capacity-support-planning-optimization) | [Ütemezés végtelen kapacitással](../master-planning/planning-optimization/infinite-capacity-planning.md) |
-| Termékinformációk kezelése | [Receptúrák és összetevők változásainak kezelése](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Receptúrák és receptúra-összetevők változásainak kezelése](../engineering-change-management/manage-formula-changes.md) |
+| Termékinformációk kezelése | [Receptúrák és receptúra-összetevők változásainak kezelése](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/engineering-change-management-support-process-manufacturing) | [Receptúrák és receptúra-összetevők változásainak kezelése](../engineering-change-management/manage-formula-changes.md) |
 | Termékinformációk kezelése | [Termékkészültségi ellenőrzések](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/product-readiness-checks) | [Termékkészenlét](../engineering-change-management/product-readiness.md) |
 
 ## <a name="feature-enhancements-included-in-this-release"></a>A kiadásban található funkciófejlesztések
 
 Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tartalmazza: Ezek közül mindegyik egy már meglévő funkciót fejleszt tovább. Mivel fejlesztésekről van szó, nem szerepelnek a [kiadási tervben](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Alapértelmezés szerint mindegyik fejlesztés ki van kapcsolva (hacsak nincs másképpen jelezve), így biztos lehet abban, hogy nem ütköznek a meglévő testreszabásokkal vagy beállításokkal. Ha e funkciók bármelyikét használni szeretné, kifejezetten engedélyeznie kell a [Funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Modul | Funkció&nbsp;neve&nbsp;a Funkció-&nbsp;kezelésben | További információ |
+| Szolgáltatásterület | Funkció&nbsp;neve&nbsp;a Funkció-&nbsp;kezelésben | További információ |
 |---|---|---|
+| Alaptervezés | Negatív napok a tervezési optimalizáláshoz | Ez a funkció lehetővé teszi, hogy a tervezési optimalizálás a fedezeti csoportokban megadott **Negatív napok** paraméter alapján figyelembe vegye a késés tűréshatárát. |
 | Alaptervezés | A helyesbített igény-előrejelzés párhuzamos engedélyezése | Ez a funkció engedélyezi a módosított igény-előrejelzés párhuzamos engedélyezését a **Módosított igény-előrejelzés** oldalon. A funkció célja az, hogy javítsa a teljesítményt, amikor nagy számú előrejelzés van engedélyezve. Az engedélyezés során a felhasználó megadhatja a **Szálak számát** az engedélyezési párbeszédpanelen. |
 | Alaptervezés | (Előzetes verzió) Kötegelhető megerősítés és konszolidáció a tervezett tömeges és csomagolt kötegelt rendelésekhez | Ez a funkció lehetővé teszi, hogy kötegelt feladattal erősítsen meg és konszolidáljon tervezett tömeges és csomagolás rendeléseket. |
 | Gyártásvezérlés | Általános útvonalak másolása | Ez a funkció a nem cikkspecifikus útvonalak másolására szolgáló útvonal-másolási funkciót tökéletesíti. Lehetővé teszi a rendszer számára, hogy minden releváns információt (például a helyet, az útvonal csoportját, a forrásszükségletet és a különböző időpontokat) frissítsen, miután az útvonalmásoló funkcióval felülírták a cikkhez még hozzá nem rendelt útvonalat. |

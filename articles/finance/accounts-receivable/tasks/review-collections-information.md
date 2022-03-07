@@ -2,9 +2,11 @@
 title: A beszedésekkel kapcsolatos adatok felülvizsgálata
 description: Ez a témakör végigvezet a beszedési adatok áttekintésén, valamint a különböző beállítási lehetőségeken és a beszedési tranzakciók ellenőrzésén.
 author: ShivamPandey-msft
+manager: AnnBe
 ms.date: 08/01/2019
 ms.topic: business-process
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustCollectionsPool, SysQueryForm, CustCollectionsAgent, OMTeamSelectMemberDialog, CustVendReportInterval, CustParameters, CustAgingSnapshot, CustVendAgingBucketLookUp, CustCollectionsPoolsListPage, CustCollectionsContactPart, CustCollections
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 59fcaef39460761dbe68273aecb5cbff8850ef031d43393277a17d07dd92db3b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7e727d8030c407635c97dab3a913441a75f4ffb0
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778386"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5220107"
 ---
 # <a name="review-collections-information"></a>A beszedésekkel kapcsolatos adatok felülvizsgálata
 

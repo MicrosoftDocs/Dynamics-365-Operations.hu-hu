@@ -2,9 +2,11 @@
 title: A keresztárfolyam megadása
 description: Ez a témakör általános tájékoztatást tartalmaz a Microsoft Dynamics 365 Finance keresztárfolyamaival kapcsolatban.
 author: abruer
+manager: AnnBe
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -13,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c46ac3324a985810ede61072190014538d0b7ed36f7eedfc387468619cc88cb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2a1463b9676e6b26543fd88607ca13b0ceb12be5
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737017"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5231566"
 ---
 # <a name="specify-the-cross-rate"></a>A keresztárfolyam megadása
 

@@ -11,19 +11,18 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f0d0bdde8b69148c72b8c645e040f0e596ecba92
-ms.sourcegitcommit: deb711c92251ed48cdf20ea514d03461c26a2262
+ms.openlocfilehash: b9d201125e9d9178ccfc1a7e52a20f1f12529345
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "4645625"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5222945"
 ---
 # <a name="snapshots-overview-preview"></a>Pillanatképek áttekintése (előzetes verzió)
 
@@ -48,3 +47,6 @@ Ha egy olyan előrejelzéssel szeretné összehasonlítani a tényleges pénzüg
 
 #### <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 Az előzetes verziók (1) kevesebb adatvédelmi és biztonsági intézkedést alkalmazhatnak, mint a Dynamics 365 Finance and Operations szolgáltatás (2) és nem vonatkozik a szolgáltatásiszint-szerződés (SLA) ehhez a szolgáltatáshoz, (3) nem használhatók olyan személyes adatok vagy más adatok feldolgozásához, melyekhez törvényi vagy jogszabályi megfelelési követelmények tartoznak, és (4) korlátozott támogatás tartozik hozzá.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

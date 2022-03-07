@@ -1,30 +1,32 @@
 ---
 title: Hozzáférés privát címekhez biztonsági szerepkörnek megfelelően
-description: Ez a cikk bemutatja az olyan probléma megoldását, amikor a vevő nem fér hozzá a személyes címekhez.
-author: andreabichsel
-manager: AnnBe
-ms.date: 11/02/2018
+description: Ez a téma elmagyarázza, hogyan oldható meg, ha egy ügyfél nem tud hozzáférni a privát címekhez.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fbe0e8acc1b879e4d7982b33413236432f25f630
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 05895d58cfd108c45c3c75921cb6930b904a6482
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418826"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068384"
 ---
-# <a name="access-to-private-addresses-by-security-role"></a>Személyes címekhez való hozzáférés biztonsági szerepkörönként
+# <a name="access-to-private-addresses-by-security-role"></a>Hozzáférés privát címekhez biztonsági szerepkörnek megfelelően
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 **Probléma**
 
@@ -38,4 +40,7 @@ A probléma megoldásához a vevőnek az alábbi lépéseket kell követnie a du
 2. A **Saját hely biztonsága** lapon helyezze át az új biztonsági szerepkört az **Elérhető szerepkörök** listából a **Kijelölt szerepkörök** listájába.
 3. Válassza a **Mentés** lehetőséget.
 
-![Globális címjegyzék paraméterei oldal](media/GAD-parameters.png)
+![Globális címjegyzék paraméterei oldal.](media/GAD-parameters.png)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -6,7 +6,6 @@ manager: AnnBe
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 53c9d6343422f64aed74ce436bafd2c8b2ce1c3e
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 4e757ce585b16b23d65506068dcc337211107199
+ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680936"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "5568490"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analitika hozzáadása munkaterületekhez Power BI Embedded használatával
 
@@ -29,11 +28,11 @@ ms.locfileid: "4680936"
 > Ez a funkció támogatott a Finance and Operations alkalmazásban (7.2-es vagy újabb verzió).
 
 ## <a name="introduction"></a>Bevezetés
-Ez a témakör bemutatja, hogy miként ágyazható be egy Microsoft Power BI jelentés egy munkaterület **Elemzés** lapjára. Például az itt megadott ajánlott kiterjed a **foglalási kezelési** a flottában-kezelés alkalmazást az analitikus munkaterület beágyazása a munkaterület egy **analitika** lapon.
+Ez a témakör bemutatja, hogy miként ágyazható be egy Microsoft Power BI-jelentés egy munkaterület **Elemzés** lapjára. Például az itt megadott ajánlott kiterjed a **foglalási kezelési** a flottában-kezelés alkalmazást az analitikus munkaterület beágyazása a munkaterület egy **analitika** lapon.
 
 ## <a name="prerequisites"></a>Előfeltételek
 + A fejlesztői környezet 8-as vagy újabb Platform frissítés futó való hozzáférést.
-+ Analitikai jelentés (.pbix fájl), amely Microsoft Power BI Desktop használatával lett létrehozva, és, amelynek adatmodellje az entitástár adatbázisból származik.
++ Analitikai jelentés (.pbix fájl), amelyet a Microsoft Microsoft Power BI Desktop használatával hoztak létre, és amelynek adatmodellje az entitástár adatbázisból származik.
 
 ## <a name="overview"></a>Áttekintés
 Alkalmazás meglévő munkaterülethez kiterjesztése, vagy saját új munkaterület bevezetésének, beágyazott elemző nézetek segítségével az üzleti adatokban osztályon és interaktív nézetei szállítani. A folyamat hozzáadása egy analitikai munkaterület lap négy lépés tartozik.
@@ -175,3 +174,6 @@ public static void initializeReportControl(
 | showFilterPane   | Logikai érték, amely azt jelzi, hogy megjelenjen (**true**) vagy rejtve maradjon (**false**) a szűrés ablaktáblája.     |
 | showNavPane      | Logikai érték, amely azt jelzi, hogy megjelenjen (**true**) vagy rejtve maradjon (**false**) a navigációs ablaktábla. |
 | defaultFilters   | A Power BI jelentés alapértelmezett szűrői.                                                                 |
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

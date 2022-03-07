@@ -2,9 +2,11 @@
 title: Többszakaszos út beállítása
 description: Ez a témakör azt ismerteti, hogyan lehet többszakaszos utakat beállítani a Partraszállítási költség modulhoz.
 author: sherry-zheng
+manager: tfehr
 ms.date: 12/04/2020
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ITMLegTable, ITMJourneyTable, ITMActivityTable
 audience: Application User
@@ -13,17 +15,18 @@ ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-04
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 57d49af9ca9f2f7e0e4b038c62578ae1993779d6
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.dyn365.ops.version: Release 10.0.17
+ms.openlocfilehash: 88e1d94f7c3a9b624447c5fc000afc3faab395f1
+ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577576"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "5500430"
 ---
 # <a name="multi-leg-journey-setup"></a>Többszakaszos út beállítása
 
 [!include [banner](../../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Ez a témakör azt ismerteti, hogyan lehet többszakaszos utakat beállítani a **Partraszállítási költség** modulhoz.
 

@@ -2,27 +2,25 @@
 title: Lingek hozzáadása vagy másolása (előzetes verzió)
 description: Ez a témakör azt mutatja be, hogyan lehet új lízinget létrehozni az eszközlízingben való adatok megadásával vagy egy meglévő lízing adatainak másolásával.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 01/11/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: abbf04d009a4b347792cd8b317e334da2a4cbbee
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: b09a87c7d4f5ba076647218c3586d17a13e6c558
+ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4969603"
+ms.lasthandoff: 01/13/2022
+ms.locfileid: "7967926"
 ---
 # <a name="add-or-copy-leases-preview"></a>Lingek hozzáadása vagy másolása (előzetes verzió)
 
@@ -37,6 +35,19 @@ A következő lépéseket követve hozzon létre egy lízinget az Eszközlízing
 1. A **Lízing összefoglalása** lap műveleti paneljén válassza ki az **Új** elemet.
 2. Adja meg a lízing adatait. A kötelezően kitöltendő mezők piros szegéllyel rendelkeznek.
 
+A bérleti díj kezdő dátuma nem lehet korábbi a bérlet kezdő dátumán. Ha a bérlet kezdő dátumán korábbi dátumot ad meg a bérleti díj kifizetésére, akkor hibaüzenetet kap.
+
+Alapértelmezés szerint a Bérlet részletei lap Általános gyorslapján a Fizetési összeg lebontása beállítás Nem beállítás van megjelölve, ha a Fizetéslebontás engedélyezése az Eszköz paraméterei lapon Az Igen **beállítás** **van** **·** **·** **·** **·** **megjelölve**. 
+
+Ha a Kifizetés összegének lebontása beállítás Igen, a Fizetési ütemezés sorai gyorsábra Fizetési összeg **mezője** **·** **·** **zárolva** van. Ez lesz a kifizetés összegének összesítése, amely a kifizetési összegeket lebontó katalógusból később **van** beállítva.
+
+Válassza **ki a Kifizetés összegének** lebontását egy olyan lap megnyitásához, ahol hozzáadhatja a részletezett kifizetéstípusokat. Az **Összegek hozzáadása a kifizetés összeghez gombja az összegeket a Kifizetés összege** **mezőbe** mozgatja.
+
+> [!NOTE]
+> Ha egy tételes kifizetési összeget ad hozzá, majd az Esc billentyűt választja, a beírt összegek nem kerülnek be a Fizetési ütemezés sorai gyorsbillentyű Fizetési ütemezés **sorai** **·** **mezőbe**. Ehelyett a Kifizetés összegeit részletező párbeszédpanelen **tárolja** őket a rendszer. Ha azt szeretné, hogy a párbeszédpanelen a teljes összeg látható, válassza az Összeg oszlopot, válassza ki és tartsa lenyomva (vagy kattintson a jobb **gombbal**), majd válassza az Összesítés ezt az **oszlopot**. 
+
+A **Sor** másolása gomb a részletezett kifizetés részletezését másolja.
+
 ## <a name="create-a-lease-schedule"></a>Lízingütemezés létrehozása
 
 Miután befejezte a lízing adatainak megadását, hajtsa végre az alábbi lépéseket a lízingütemezés létrehozásához.
@@ -50,6 +61,9 @@ Miután befejezte a lízing adatainak megadását, hajtsa végre az alábbi lép
     A **Könyv részletei** lap mutatja, hogy a lízinget milyen módon kell elszámolni a hozzárendelt könyvek között. Itt megtekintheti a lízingütemezéseket.
 
     A fizetési ütemezés tartalmazza a **Lízing hozzáadása** lap **Fizetési ütemezés sorai** fül bemeneteit. Továbbra is módosíthatja az egyes kifizetési összegeket és a változó fizetéseket. A lízingkötelezettséget a módosított fizetési ütemezés alapján számítja ki a program.
+
+    > [!NOTE]
+    > A bérleti díj kezdő dátuma nem lehet későbbi, mint a bérlet kezdő dátuma. Hibaüzenetet kap, ha a kifizetés kezdő dátuma korábbi a bérlet kezdő dátumán. 
 
 4. Miután befejezte a kifizetési ütemezés áttekintését, jelölje be az **Ütemezés jóváhagyása** jelölőnégyzetet. Az ütemezés megerősítése után a lízing már nem érhető el szerkesztésre.
 
@@ -88,3 +102,6 @@ Az eszközlízing-naplóban létrehozott összes naplóbejegyzés az eszközlíz
 
 > [!NOTE]
 > Az Eszközlízing napló nem hozható létre manuálisan. Automatikusan létrejön a lízingütemezések létrehozásakor.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

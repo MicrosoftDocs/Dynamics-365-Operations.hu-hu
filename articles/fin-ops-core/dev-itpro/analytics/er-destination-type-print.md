@@ -1,12 +1,10 @@
 ---
 title: Nyomtató ER céltípusa
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy nyomtatót célhelyként a kimenő dokumentumok létrehozásához konfigurált elektronikus jelentési (ER) formátumú fájlok MAPPA vagy FÁJL összetevőihez PDF vagy Microsoft Office-formátumokban (Excel/Word).
+description: Ez a témakör bemutatja, hogyan kell konfigurálni egy nyomtatási célt az Elektronikus jelentéskészítési (ER) formátumok egyes MAPPA vagy FÁJL összetevőihez.
 author: NickSelin
-manager: AnnBe
-ms.date: 03/17/2020
+ms.date: 02/24/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 audience: Application User
@@ -17,14 +15,14 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-ms.openlocfilehash: b7a279dcb30e7681ae654ab17d898a5364391d57
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
+ms.openlocfilehash: 83081f8c17a903cd447a34596df2e61ebda0cafc
+ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4679606"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "5753432"
 ---
-# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Nyomtató célhely
+# <a name="printer-destination"></a><a name="PrinterDestinationType"></a>Nyomtatási cél
 
 [!include [banner](../includes/banner.md)]
 
@@ -49,8 +47,6 @@ A **Nyomtató** célhely csak olyan fájlösszetevőkhöz konfigurálható, amel
 
 ### <a name="limitations"></a>Korlátozások
 
-Ez a funkció egy előnézeti funkció, azok a felhasználási feltételek vonatkoznak rá, amelyek itt olvashatók: [Kiegészítő felhasználási feltételek a Microsoft Dynamics 365 előnézetek esetén](https://go.microsoft.com/fwlink/?linkid=2105274).
-
 A **Nyomtató** célhely csak felhőalapú telepítések esetén van a rendszerben.
 
 ### <a name="use-the-printer-destination"></a>A Nyomtató célhely használata
@@ -70,3 +66,6 @@ Ha egy adott [oldaltájolást](electronic-reporting-destinations.md#SelectPdfPag
 
 - [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md)
 - [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

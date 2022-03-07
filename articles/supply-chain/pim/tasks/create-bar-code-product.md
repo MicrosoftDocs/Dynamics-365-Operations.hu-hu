@@ -1,27 +1,24 @@
 ---
 title: Vonalkód létrehozása termékhez
 description: Ez az témakör bemutatja, hogyan hozható létre manuálisan vonalkód, példaként az M0001 cikkszám használatával.
-author: ShylaThompson
-manager: tfehr
+author: t-benebo
 ms.date: 07/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemBarcode, InventItemBarcodeLookup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: b178701ca745a4317bf271bba726741e104f0804
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: dcdf062ed14cc4cf395de006d55aba3dc2a94bae
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429526"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577360"
 ---
 # <a name="create-a-bar-code-for-a-product"></a>Vonalkód létrehozása termékhez
 
@@ -29,17 +26,19 @@ ms.locfileid: "4429526"
 
 Ez az témakör bemutatja, hogyan hozható létre manuálisan vonalkód, példaként az M0001 cikkszám használatával. Ez az eljárás az USMF bemutatócéget használja.
 
-1. Válassza a **Kiadott termék karbantartása** lehetőséget a kezdőlapon.
-2. Válassza a **Termékek > Kiadott termékek** lehetőséget a **Hivatkozások** szakaszban.
-3. Keresse meg és jelölje ki a kívánt rekordot a listán. Ebben a példában válassza ki az **M0001** cikkszámot.
-4. A Művelet panelen kattintson a **Készletkezelés** elemre.
-5. Válassza a **Vonalkódok** lehetőséget.
-6. Válassza az **Új** lehetőséget.
-7. A kiválasztott sort jelölje meg, amely az alábbi listából jön létre.
-8. A **Vonalkódbeállítás** mezőben adjon meg vagy válasszon ki egy értéket.
-9. A **Vonalkód** mezőben adjon meg vagy válasszon ki egy értéket.
-10. A **Vonalkód** mezőben adjon meg egy értéket.  
-11. Adjon meg egy számot a **Mennyiség** mezőben.
-12. Válassza a **Mentés** lehetőséget.
-13. Zárja be a lapot. 
+1. Kattintson a **Termékinformációk kezelése \> Termékek \> Kiadott termékek** lehetőségre.
+1. Keresse meg és jelölje ki a kívánt rekordot a listán. Ebben a példában válassza ki az **M0001** cikkszámot.
+1. A Művelet panelen kattintson a **Készletkezelés** elemre.
+1. Válassza a **Vonalkódok** lehetőséget.
+1. Válassza az **Új** lehetőséget.
+1. A kiválasztott sort jelölje meg, amely az alábbi listából jön létre.
+1. A **Vonalkód beállítása** mezőben írjon be vagy válasszon ki egy értéket.
+1. A **Vonalkód** mezőben adjon meg vagy válasszon ki egy értéket.
+1. A **Vonalkód** mezőben adjon meg egy értéket.  
+1. Adjon meg egy számot a **Mennyiség** mezőben.
+1. Válassza a **Mentés** lehetőséget.
+1. Zárja be a lapot. 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

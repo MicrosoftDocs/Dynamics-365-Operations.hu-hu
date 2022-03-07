@@ -2,29 +2,25 @@
 title: Tervezés optimalizálása – áttekintés
 description: Ez a témakör áttekintést ad a Tervezésoptimalizálása funkcióiról.
 author: ChristianRytt
-manager: tfehr
 ms.date: 10/31/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 110045d4c7e4f32c29b73096dd4df3a09b5434ac
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 49da88be9faff8f327f8079245b3c07db79308e6
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429299"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983442"
 ---
 # <a name="planning-optimization-overview"></a>Tervezés optimalizálása – áttekintés
 
@@ -36,7 +32,7 @@ A Tervezésoptimalizálás funkció használatához telepítenie kell a Microsof
 
 A következő ábra bemutatja, hogy milyen előnyökkel jár a Tervezésoptimalizálás a nyitvatartási órákban.
 
-![A Tervezésoptimalizálás irodai órákban történő futtatásának előnyei](media/PlanningOptimization1.png)
+![A Tervezésoptimalizálás irodai órákban történő futtatásának előnyei.](media/PlanningOptimization1.png)
 
 ## <a name="improved-performance"></a>Javított teljesítmény
 
@@ -65,11 +61,11 @@ Ha eltávolítja a Tervezésoptimalizálás bővítményt, akkor a program eltá
 
 A következő ábra ábrázolja az adatok áramlását.
 
-![Adatforgalom a regenerálási futtatásokhoz](media/PlanningOptimization2.png)
+![Adatforgalom a regenerálási futtatásokhoz.](media/PlanningOptimization2.png)
 
 ## <a name="related-resources"></a>Kapcsolódó erőforrások
 
-[Első lépések a tervezési optimalizálással](get-started.md)
+[Tervezési optimalizálás kezdő lépései](get-started.md)
 
 [A tervezésoptimalizálása illeszkedési elemzése](planning-optimization-fit-analysis.md)
 
@@ -78,3 +74,6 @@ A következő ábra ábrázolja az adatok áramlását.
 [Szűrők alkalmazása egy tervre](plan-filters.md)
 
 [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

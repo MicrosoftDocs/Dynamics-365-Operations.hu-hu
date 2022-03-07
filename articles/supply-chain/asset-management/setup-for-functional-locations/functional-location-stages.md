@@ -1,12 +1,10 @@
 ---
 title: Munkavégzési helyszín életciklus-állapotai
 description: Ez a cikk azt ismerteti, hogyan állítható be a munkavégzési helyszínek állapota és életciklusmodellje az Eszközkezelésben.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/24/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetFunctionalLocationLifecycleModel, EntAssetFunctionalLocationLifecycleState
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8f119e68319b901b052fa4aa659260f386f44bcf
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: a1ab19358857440e46d3df2323fbcea19a476903
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5021275"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5837753"
 ---
 # <a name="functional-location-lifecycle-states"></a>Munkavégzési helyszín életciklus-állapotai
 
@@ -62,3 +60,6 @@ A munkavégzési helyszínekhez szükséges életciklus-állapotok létrehozása
 5. Ha egy modellhez az összes rendelkezésre álló állapotot ki szeretné választani, kattintson a ![minden elérhető állapot kiválasztása](media/03-setup-for-functional-locations.png) gombra. Az összes állapot átkerül az **Életciklus-állapotok kiválasztva** szakaszba.
 6. Ha el szeretne távolítani egy állapotot a kijelölt modellből, válassza ki az **Életciklus-állapotok kiválasztva** szakaszban, és kattintson a ![vissza nyíl](media/04-setup-for-functional-locations.png) gombra.
 7. Az **Életciklus-állapot frissítései** lehetőséggel megadhatja, hogy melyik életciklus-állapotok követhetnek egy kiválasztott állapotot.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

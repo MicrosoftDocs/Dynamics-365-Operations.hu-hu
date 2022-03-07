@@ -2,7 +2,7 @@
 title: TDS visszatéríthető tanúsítvány számának rögzítése
 description: Ez a témakör elmagyarázza, hogyan lehet a Visszatéríthető tanúsítványok oldalt használni az adott szállítóhoz, vevőhöz vagy főkönyvhöz tartozó Forrásnál levont adó (TDS) tanúsítványszámainak és dátumainak rögzítéséhez.
 author: kailiang
-ms.date: 02/12/2021
+mms.date: 02/12/2021
 ms.topic: article
 ms.prod: ''
 ms.service: dynamics-ax-applications
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-02-12
 ms.dyn365.ops.version: AX 10.0.17
-ms.openlocfilehash: bc92a1321e6b2fe44bf7967c2aa1ad21dc353a03
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 2c7fe2e1050053fb2ddaf85854e7ac46dd6912a5
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402448"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6358362"
 ---
 # <a name="record-tds-recoverable-certificate-numbers"></a>TDS visszatéríthető tanúsítvány számának rögzítése
 

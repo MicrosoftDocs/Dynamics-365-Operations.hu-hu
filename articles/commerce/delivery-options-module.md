@@ -10,27 +10,24 @@ ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: f9e8df576efd1e58fde235828823f31e87ed58bf
-ms.sourcegitcommit: 12d271bb26c7490e7525d9b4bbf125cdc39fef43
+ms.openlocfilehash: d0e5fa731d4b808cda9863074d17d1917410f399
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "4413028"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5213674"
 ---
 # <a name="delivery-options-module"></a>Szállítási lehetőségek modul
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör ismerteti a szállítási lehetőségek modult, és bemutatja, hogyan konfigurálhatjuk őket a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A szállítási lehetőségek modulok lehetővé teszik a vevők számára, hogy kiválaszthassanak egy szállítási módot, mint például a szállítást vagy a felvételt online rendeléseikhez. A szállítási mód megadásához szállítási cím szükséges. Ha a szállítási cím megváltozik, a szállítási lehetőségek újra lekérésre kell kerüljenek. Ha a rendelés csak olyan cikkeket tartalmaz, melyek az üzletben átvehető, ez a modul automatikusan elrejtésre kerül.
 
@@ -83,3 +80,6 @@ A szállítási lehetőségek modul csak a pénztár modulhoz adható hozzá. A 
 [Fejlécköltségek arányosítása az egyező értékesítési sorokhoz](pro-rate-charges-matching-lines.md)
 
 [Szállítási módok beállítása](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/set-up-modes-of-delivery)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

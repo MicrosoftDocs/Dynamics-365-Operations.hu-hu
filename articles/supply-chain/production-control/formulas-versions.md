@@ -2,16 +2,13 @@
 title: Receptúrák és receptúraverziók
 description: Ez a témakör receptúrákkal és receptúraverziókkal kapcsolatban tartalmaz tájékoztatást. A receptúra határozza meg az anyagokat, az összetevőket és egy adott folyamat eredményeit a folyamatszerű gyártás során. Receptúrák segítségével tervezhet és állíthat elő termékeket a folyamatszerű gyártásban.
 author: cvocph
-manager: tfehr
 ms.date: 09/12/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule, EcoResProductProdTypeFormulaNoActiveFormulaFormPart
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7fb37483412fdd09fe3734ddb148b050ec02951
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: e8a168da2309709baaf9f8006880d738f754751d
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429452"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5809110"
 ---
 # <a name="formulas-and-formula-versions"></a>Receptúrák és receptúraverziók
 
@@ -71,3 +68,6 @@ A skálázható funkció akkor használható, csak ha a receptúrában az össze
 
 ## <a name="use-step-consumption"></a>Fokozatos felhasználás felhasználása
 A fokozatos felhasználással nem kell az összetevőknél mennyiséget megadni a **Receptúrasor** lapon. A fokozatos felhasználás ehelyett úgy van beállítva, hogy van egy **Kezdő sorozat** értéke és egy **Mennyiség** értéke. A rendszer a Fokozatos felhasználás sorozatonként rekordból azt az adatot választja ki, amely megfelel a kötegrendelés mennyiségének. A fokozatos felhasználás akkor hasznos, ha a felhasználási ráta nem lineáris a köterrendelés méretéhez képest, és csak konkrét mennyiségi küszöbérték elérése esetén növeli a követelményt. A funkció engedélyezéséhez új receptúrához a **Felhasználás számítása** csoportban módosítsa az érintett összetevőnél a receptúra beállítását **Normál** értékről **Lépés** értékre. A felhasználási módszer a **Beállítás** lapon adható meg a **Receptúrasor** oldalon.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

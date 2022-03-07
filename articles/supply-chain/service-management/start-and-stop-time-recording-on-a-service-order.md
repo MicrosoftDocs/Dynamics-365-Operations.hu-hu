@@ -1,29 +1,26 @@
 ---
 title: Szervizrendeléshez kapcsolódó időrögzítés elindítása és leállítása
 description: Szervizrendeléshez kapcsolódó időrögzítés elindítása és leállítása.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9590a4924442ceccf6f30c35e1dce907f54d368e
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 3f6a704629b70fceb6cf0c3d1b689a750bbcb468
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429188"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567823"
 ---
 # <a name="start-and-stop-time-recording-on-a-service-order"></a>Szervizrendeléshez kapcsolódó időrögzítés elindítása és leállítása 
 
@@ -65,3 +62,6 @@ Ezzel a művelettel indíthatja el és állíthatja le az idő rögzítését ol
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

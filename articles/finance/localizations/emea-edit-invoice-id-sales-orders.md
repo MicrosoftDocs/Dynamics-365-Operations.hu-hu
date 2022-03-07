@@ -2,11 +2,9 @@
 title: Számlaazonosítók szerkesztése kelet-európai értékesítési rendeléseken
 description: Ez a témakör olyan kinnlevőségi paramétereket ismertet, amelyek hatással vannak a csomagjegyzékeken található számlaszámokra, valamint a cseh, észt, magyar, litván, lett és lengyel számlákra.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustParameters
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 2c17ec8720dc40ba50aa2364e03cf363c1122a9c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 09d4a941171b448a555a0011952291f04a8df73f
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4962802"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5839835"
 ---
 # <a name="edit-invoice-ids-on-sales-orders-for-eastern-europe"></a>Számlaazonosítók szerkesztése kelet-európai értékesítési rendeléseken
 
@@ -60,3 +58,6 @@ Csehország, Észtország, Magyarország, Litvánia, Lettország és Lengyelorsz
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

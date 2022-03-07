@@ -1,29 +1,26 @@
 ---
 title: A szolgáltatás tárgyának kapcsolatai
 description: A szolgáltatásitárgy-kapcsolatokat egy szolgáltatási tárgy és egy szolgáltatási szerződés vagy szervizrendelés között lehet létrehozni.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 02/21/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceObjectRelation
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e2b1b76dffc2751d51c2a25d831fab512b747c15
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 7eb5b185ca2ef5903eb1739edfdd7b60749babd4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429207"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576352"
 ---
 # <a name="service-object-relations"></a>A szolgáltatás tárgyának kapcsolatai 
 
@@ -78,3 +75,6 @@ Az Anyagjegyzék-tervező megnyitása egy szolgáltatásitárgy-kapcsolat segít
 
 Ha automatikusan hoz létre szervizrendeléseket egy szolgáltatási szerződéshez, a szerződés szolgáltatásitárgy-kapcsolatai átkerülnek a létrehozott szervizrendelésekbe is.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

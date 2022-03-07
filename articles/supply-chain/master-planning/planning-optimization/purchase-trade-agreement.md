@@ -2,16 +2,13 @@
 title: Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
 description: Ez a témakör azt mutatja be, hogyan lehet megkeresni a tervezett rendelés szállítói és/vagy átfutási idejét a beszerzési kereskedelmi megállapodásokban található legjobb ár vagy átfutási idő alapján.
 author: ChristianRytt
-manager: tfehr
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: b302c5ace34a11a53a98c733b59633a11a463bfa
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 10b4f9f45899b808bd0baa73974a173cf120aa6c3fd33e10d0d79a59614f1f70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429296"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6757758"
 ---
 # <a name="master-planning-with-purchase-trade-agreements"></a>Alaptervezés a beszerzésre vonatkozó kereskedelmi megállapodásokkal
 
@@ -70,23 +67,26 @@ Miután a rendszer készen áll az előző szakaszban ismertetett módon, köves
 1. Ismételje meg az eljárást minden érintett termék esetén.
 
 > [!NOTE]
-> A beszerzési kereskedelmi megállapodási sorban szereplő pénznemnek meg kell egyeznie a kiválasztott szállító pénznemével. Az alaptervezés csak olyan beszerzési kereskedelmi megállapodási sorokból származó adatokat dolgoz fel, amelyeknél a pénznem megfelel a szállító pénznemének.
+> A több pénznemű beszerzési kereskedelmi megállapodások tervezésének optimalizálása. Amikor a **Legalacsonyabb egységár** beállítás használatával keres kereskedelmi megállapodást, a rendszer figyelembe veszi a különböző pénznemekkel rendelkező kereskedelmi megállapodási sorokat, amennyiben a kereskedelmi megállapodási sor pénzneméhez és a jogi személy könyvelési pénzneméhez meg lett határozva egy árfolyam. Ellenkező esetben a rendszer figyelmen kívül hagyja a kereskedelmi megállapodás sorát, és hibaüzenetet jelenik meg az alaptervezés során. Emiatt az alaptervezés minden olyan beszerzési kereskedelmi megállapodási sor adatát tartalmazni fogja, amelyekben az árak átválthatók a könyvelési pénznemre. Fontos megjegyezni, hogy a kerekítési szabályokat nem veszik figyelembe a kereskedelmi megállapodás sorárának átalakítása során.
 
 ## <a name="examples-of-how-planning-optimization-finds-vendor-and-lead-times"></a>A példák arra, ahogy a tervezés optimalizálása a szállítói és az átfutási időket észleli
 
-A következő táblázat bemutatja, hogy a kiadott termék és a hozzájuk kapcsolódó beszerzési kereskedelmi megállapodások különböző beállításai hogy befolyásolják a létrejövő tervezett beszerzési rendeléshez tartozó értékeket. A két jobb szélső oszlop **félkövér** értékei a tervezés optimalizálása képernyőn kiválasztott értékek. A többi oszlop ***félkövér és dőlt*** értékei az egyes sorokhoz létrejövő értékeket létrehozó beállítások.
+A következő táblázat bemutatja, hogy a kiadott termék és a hozzájuk kapcsolódó beszerzési kereskedelmi megállapodások különböző beállításai hogy befolyásolják a létrejövő tervezett beszerzési rendeléshez tartozó értékeket. A két jobb szélső oszlop **félkövér** értékei a tervezés optimalizálása képernyőn kiválasztott értékek. A többi oszlop **_félkövér és dőlt_** értékei az egyes sorokhoz létrejövő értékeket létrehozó beállítások.
 
 | Kibocsátott termék: Szállító | Alapértelmezett rendelési beállítás: Átfutási idő | Cikkfedezeti tétel: Szállító felülbírálása | Cikkfedezeti tétel: Átfutási idő felülbírálása | Kereskedelmi megállapodás: Szállító | Kereskedelmi megállapodás: Átfutási idő | Kereskedelmi megállapodás: Átfutási idő figyelmen kívül hagyása | Létrejövő szállító | Létrejövő átfutási idő |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| ***US001*** | ***1*** | Nincs | Nincs | US003 | 3 | Nincs | **US001** | **1** |
-| US001 | 1 | ***Igen: US002*** | ***Igen: 2*** | US003 | 3 | Nincs | **US002** | **2** |
-| *(Üres)* | 1 | Nincs | Nincs | ***US003*** | ***3*** | Nincs | **US003** | **3** |
-| *(Üres)* | ***1*** | Nincs | Nincs | ***US003*** | 3 | Igen | **US003** | **1** |
-| *(Üres)* | ***1*** | ***Igen: US002*** | Nincs | US003 | 3 | Nincs | **US002** | **1** |
-| *(Üres)* | ***1*** | ***Igen: US002*** | Nincs | US003 | 3 | Nincs | **US002** | **1** |
-| *(Üres)* | 1 | Nincs | Igen: 2 | ***US003*** | ***3*** | Nincs | **US003** | **3** |
-| *(Üres)* | 1 | Nincs | ***Igen: 2*** | ***US003*** | 3 | Igen | **US003** | **2** |
+| ***US001** _ | _*_1_*_ | Nem | Nem | US003 | 3 | Nem | _ *US001** | **1** |
+| US001 | 1 | ***Igen: US002** _ | _*_Igen: 2_*_ | US003 | 3 | Nem | _ *US002** | **2** |
+| *(Üres)* | 1 | Nem | Nem | ***US003** _ | _*_3_*_ | Nem | _ *US003** | **3** |
+| *(Üres)* | ***1** _ | Nem | Nem | _*_US003_*_ | 3 | Igen | _ *US003** | **1** |
+| *(Üres)* | ***1** _ | _*_Igen: US002_*_ | Nem | US003 | 3 | Nem | _ *US002** | **1** |
+| *(Üres)* | ***1** _ | _*_Igen: US002_*_ | Nem | US003 | 3 | Nem | _ *US002** | **1** |
+| *(Üres)* | 1 | Nem | Igen: 2 | ***US003** _ | _*_3_*_ | Nem | _ *US003** | **3** |
+| *(Üres)* | 1 | Nem | ***Igen: 2** _ | _*_US003_*_ | 3 | Igen | _ *US003** | **2** |
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Beszerzési szerződések](../../procurement/purchase-agreements.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

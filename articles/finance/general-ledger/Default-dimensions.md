@@ -2,9 +2,11 @@
 title: A pénzügyi dimenziók és a feladás
 description: Amikor megtervezi beállítja a számlatükröt, át kell gondolnia, hogyan működnek majd együtt az egyes elemek egy dokumentum vagy egy napló feladásakor. Ezen összetevők közé tartoznak a számlastruktúrák, a speciális szabályok, valamint a kiegyenlítő és a rögzített dimenziók. Ez a témakör ismerteti az összetevőket, valamint az összetevők együttműködését.
 author: aprilolson
+manager: AnnBe
 ms.date: 08/04/2017
 ms.topic: article
 ms.prod: ''
+ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerChartofAccounts,DimensionDetails
 audience: Application User
@@ -15,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 9e7416c1ed69fa9783694e2adee7ada4e25e14054daeb1761428855690eb522f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 086270fda7da17c60239c7c86e9ff4ab3f31ef77
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778966"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5225246"
 ---
 # <a name="financial-dimensions-and-posting"></a>A pénzügyi dimenziók és a feladás 
 
@@ -71,29 +73,29 @@ Az emberekben gyakran felmerül az egyes elemek futtatásával kapcsolatos sorre
 
 A következő ábrán a rögzített alapértelmezett dimenzió látható, amely a 401100 fő számlán van beállítva.
 
-[![Alapértelmezett pénzügyi dimenziók.](./media/default-dimensions.png)](./media/default-dimensions.png)
+[![Alapértelmezett pénzügyi dimenziók](./media/default-dimensions.png)](./media/default-dimensions.png)
 
 Nagyon egyszerű példaként megadunk egy főkönyvi naplót, ahol a Részlegdimenziót a **023** (Műveletek) alapértelmezett érték használatára állítottuk be. Most beírunk és feladunk egy főkönyvi számlát. A következő ábrán az alapértelmezett pénzügyi dimenzió látható a főkönyv fejlécén.
 
-[![Általános naplók.](./media/general-journal.png)](./media/general-journal.png)
+[![Általános naplók](./media/general-journal.png)](./media/general-journal.png)
 
 A naplófejlécen levő alapértelmezett dimenzió következtében a 023 részleg alapértelmezés szerint alkalmazandó lesz az értékesítési számlasorban. A következő ábrák az általános naplósort jelenítik, ahol a rendszer alkalmazza a **023** alapértelmezett dimenzióértéket a fejlécből.
 
-[![Naplóbizonylat.](./media/journal-voucher.png)](./media/journal-voucher.png)
+[![Naplóbizonylat](./media/journal-voucher.png)](./media/journal-voucher.png)
 
 Azonban a sor feladásakor a rendszer a rögzített dimenziót alkalmazza, és a sort a 022 részlegnek adja fel. Az alábbi ábra a feladott bizonylatot jeleníti meg, amelyre a rendszer a rögzített dimenziót alkalmazta az értékesítési számlára.
 
-[![Rögzített dimenzióval alkalmazott bizonylattranzakciók.](./media/voucher-transactions.png)](./media/voucher-transactions.png)
+[![Bizonylattranzakciók](./media/voucher-transactions.png)](./media/voucher-transactions.png)
 
 ### <a name="example-2"></a>2. példa
 
 Ez a példa ugyanazt a beállítást használja, mint az első példa. Mi azonban egy második összetevőt adunk hozzá, a Részlegdimenziót pedig kiegyenlítő dimenzióként használjuk. Az alábbi példában a **Részleg** az USMF főkönyvhöz beállított kiegyenlítő pénzügyi dimenzió.
 
-[![A részleget kiegyenlítő pénzügyi dimenzióként megjelenítő ábra.](./media/ledger.png)](./media/ledger.png)
+[![Főkönyv](./media/ledger.png)](./media/ledger.png)
 
 Ha a napló fejléce ugyanazt a beállítást használja, és ugyanazt a tranzakciót adja fel, először a rögzített dimenzió érvényesül. Ezután a kiegyenlítő logika következik, amely garantálja, hogy minden részleg kiegyensúlyozott tétellel rendelkezzen. Az alábbi ábra olyan bizonylattranzakciókat jelenít meg, amelyek tartalmazzák a rögzített dimenziók alkalmazása utáni kiegyenlítő bejegyzést.
 
-[![Bizonylattranzakciók a kiegyenlítő bejegyzés alkalmazása után.](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
+[![Bizonylattranzakciók](./media/voucher-transactions2.png)](./media/voucher-transactions2.png)
 
 ### <a name="example-3"></a>3. példa
 
@@ -101,11 +103,11 @@ Ebben a példában hozzáadunk egy speciális szabályt. A speciális szabály m
 
 Ez a példa a sorrend miatt fontos. A számlastruktúra meghatározása a fő számla megadása után történik. Ha a számlastruktúra beállítására hivatkozik, a rendszer meghatározhatja, hogy a fő számla, az üzleti részleg, a részleg és a költséghely relevánsak-e. Ezen a ponton a speciális szabályra még nem került sor, mert rögzített dimenziók alkalmazása nem történik meg mindaddig, amíg az alapértelmezett dimenziókat nem alkalmazták a naplóbizonylathoz a feladás során. Az alábbi példában a Vevő szegmens nincs jelen, mert a speciális szabály kritériumai nem teljesültek.
 
-[![Főkönyvi számla.](./media/drop-down.png)](./media/drop-down.png)
+[![Főkönyvi számla](./media/drop-down.png)](./media/drop-down.png)
 
 A feladás sikertelen lesz, mert a rögzített dimenziót a folyamat végén alkalmazták. A dimenzió ellenőrzése meghatározza, hogy a Vevő szegmensre akkor van szükség, ha a fő számla 401100, a részleg pedig 022. A feladás ellenőrzési hiba miatt nem hajtható végre. A következő ábrán látható az az üzenet, amely azután jelenik meg, hogy a dimenzió ellenőrzése meghatározza, hogy a Vevő szükséges szegmens.
 
-[![Üzenet részletei.](./media/message.png)](./media/message.png)
+[![Üzenet részletei](./media/message.png)](./media/message.png)
 
 Ebben a példában felül kell írni az alapértelmezett értéket úgy, hogy a speciális szabály elinduljon és megadhassa a Vevő szegmenst. Azonban ez a megoldás nem mindig lehetséges, és bizonyos felhasználók nem is tudnak a feladási szabályok létezéséről. Ezért fontos megérteni az alapértelmezett dimenziók alkalmazási sorrendjét a számlatükrök beállítása során.
 
@@ -119,11 +121,11 @@ Az alábbi segédanyagok egy része szoftverünk egy korábbi verziójára vonat
 
 [Számlatükör tervezése](plan-chart-of-accounts.md) 
 
-[Számlatükör tervezése az AX 2012 rendszerben blog](/archive/blogs/axsa/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7) – A hivatkozás egy hétrészes cikksorozat első részére mutat.
+[Számlatükör tervezése az AX 2012 rendszerben blog](https://blogs.msdn.microsoft.com/axsa/2014/06/12/planning-your-chart-of-accounts-in-ax-2012-part-1-of-7/) – A hivatkozás egy hétrészes cikksorozat első részére mutat.
 
-[Dimenzió alapértelmezés a könyvelési felosztásokban](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-in-accounting-distributions-part-1-introduction)
+[Dimenzió alapértelmezés a könyvelési felosztásokban](https://blogs.msdn.microsoft.com/ax_gfm_framework_team_blog/2013/12/16/dimension-defaulting-in-accounting-distributions-part-1-introduction/)
 
-[Dimenzió alapértelmezés a Dimenzió-keretrendszerben](/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
+[Dimenzió alapértelmezés a Dimenzió-keretrendszerben](https://docs.microsoft.com/archive/blogs/ax_gfm_framework_team_blog/dimension-defaulting-part-1-financial-dimensions-discovery)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

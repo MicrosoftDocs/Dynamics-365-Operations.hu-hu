@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: riluan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 585f5c6cf83ad93b649e3f36e0d486a037915cd4
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 54d84e38a8816ec716414661d002cbe171623772
+ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5017292"
+ms.lasthandoff: 02/15/2021
+ms.locfileid: "5244015"
 ---
 # <a name="set-up-permissions-for-ordering-products-on-behalf-of-someone-else"></a>Engedélyek létrehozása, amelyek birtokában mások nevében lehet termékeket rendelni
 
@@ -44,3 +44,6 @@ Ez a témakör bemutatja, hogyan adhat engedélyt dolgozóknak más dolgozók ne
 2. Használja a Gyors Szűrést, hogy megtalálja azt a dolgozót, akit most adott hozzá kérelmezőként.
 3. Válassza ki a kérelmezőt. A Készítő lista azokat az embereket mutatja, akik engedéllyel rendelkeznek a bal oldali ablakban kiválasztott kérelmező nevében történő cikk rendeléshez.  További készítőknek itt is hozzáadhat. Ez a nézet lehetővé teszi a kérelmező engedély igénylés kiosztására, hogy igénylést hozhasson létre olyan jogi személyek és üzemi egységek nevében, amelyek nem az illető elsődleges jogi személye vagy üzemi egysége.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

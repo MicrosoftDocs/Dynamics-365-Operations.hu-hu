@@ -2,27 +2,24 @@
 title: Termékek áttárolása a fogadó raktárból az üzletekbe
 description: Ez az eljárás bemutatja, hogy mely lépésekkel hozhat létre és dolgozhat fel egy Áttárolást, amellyel termékeket oszthat el egy beszerzési rendelés bevételezési helyéről egy vagy több üzletbe.
 author: ShylaThompson
-manager: tfehr
 ms.date: 02/17/2016
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RetailBuyersPushPerPackage
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: kamaybac
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 033d4f72b626130c144faff30fe0d35349b26c6d
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
+ms.openlocfilehash: a7caec5329774baaa03c72f9236f8e3192399089
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429904"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5810390"
 ---
 # <a name="cross-dock-products-from-receiving-warehouse-to-stores"></a>Termékek áttárolása a fogadó raktárból az üzletekbe
 
@@ -49,3 +46,6 @@ Ez az eljárás bemutatja, hogy mely lépésekkel hozhat létre és dolgozhat fe
 15. A listában keressen meg és jelöljön ki egy raktárat, amely termékeket fogadott.
 16. A kiválasztott raktár létrejött rendeléseinek megtekintéséhez kattintson a Rendelés gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

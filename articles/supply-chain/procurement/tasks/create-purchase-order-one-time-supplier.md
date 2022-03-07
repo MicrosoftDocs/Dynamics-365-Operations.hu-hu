@@ -1,26 +1,24 @@
 ---
 title: Beszerzési rendelés létrehozása egyszeri szállítóhoz
 description: Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy beszerzési rendelést egy egyszeri szállítóhoz.
-author: RichardLuan
-manager: tfehr
+author: kamaybac
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchTablePart, PurchCreateOrder
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: dabourq
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c4885547cdf2f8496446761e27ce39e67e670f15
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
+ms.openlocfilehash: 3fe76a3d481c3bc8dd3a3d45eda031df61ece4aa
+ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016402"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "5812373"
 ---
 # <a name="create-a-purchase-order-for-a-one-time-supplier"></a>Beszerzési rendelés létrehozása egyszeri szállítóhoz
 
@@ -38,3 +36,6 @@ Ez az eljárás bemutatja, hogy hogyan lehet létrehozni egy beszerzési rendel�
 5. Kattintson az OK gombra.
     * Lehetséges, hogy már kész van a beszerzési rendelés, és ugyanúgy fel van dolgozva, mint a többi rendelés. Nincsenek olyan különleges jellemzők, amelyek kapcsolatban állnak azzal, hogy hogyan jött létre. A számla számot ad az esedékes tranzakcióról azon a szállítói számlán, amelyet a rendeléssel hoztak létre, illetve a kifizetés ezt követően történik meg.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
