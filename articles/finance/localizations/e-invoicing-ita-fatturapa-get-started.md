@@ -1,8 +1,8 @@
 ---
-title: Az olasz FatturaPA közvetlen integrációja az SDI-vel
-description: Ez a témakör olyan információkat tartalmaz, amelyek segítenek az olaszországi elektronikus számlázás megkezdésében, és az olasz FatturaPA közvetlen integrációjának beállításában az Exchange rendszerrel (SDI).
+title: Az olasz És az SDI közvetlen integrációjának beállítása
+description: Ez a témakör olyan információkat tartalmaz, amelyek segítséget nyújtnak az Olaszországnak történő elektronikus számlázással kapcsolatos lépések megsegítésében, valamint az olasz ÁtturaPA és az Árfolyamrendszer (SDI) közvetlen integrációjának beállításában.
 author: abaryshnikov
-ms.date: 12/14/2021
+ms.date: 01/15/2022
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -10,82 +10,80 @@ ms.search.region: Global
 ms.author: abaryshnikov
 ms.search.validFrom: 2021-10-18
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: 0ccc9f04e42e748b4531622a1c90559d4ca17196
-ms.sourcegitcommit: b1c758ec4abfcf3bf9e50f18c1102d4a9c1316d0
-ms.translationtype: HT
+ms.openlocfilehash: 73cb08c880d7b3459201acfc7aeaa8d0dee1674f
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/15/2021
-ms.locfileid: "7922462"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984803"
 ---
-# <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Az olasz FatturaPA közvetlen integrációja az SDI-vel
+# <a name="set-up-direct-integration-of-italian-fatturapa-with-sdi"></a>Az olasz És az SDI közvetlen integrációjának beállítása
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > Előfordulhat, hogy az Olasz elektronikus számlázás jelenleg nem támogatja az elektronikus számlákhoz rendelkezésre álló összes funkciót a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management számára.
 
-Ez a témakör olyan információkat tartalmaz, amelyek segítenek az olaszországi elektronikus számlázás megkezdésében a pénzügyi és ellátási lánc menedzsment területén. Végigvezeti Önt a szabályozási konfigurációs szolgáltatásokban (RCS) országtól/régiótól függő konfigurációs lépéseken. Ezek a lépések kiegészítik az Elektronikus számlázás első lépések című témakörben ismertetett [lépéseket](e-invoicing-get-started.md).
+Ez a témakör az Olaszország elektronikus számlázással kapcsolatban nyújt segítséget a Pénzügy és az Ellátásilánc-kezelés modulban. Ez a varázsló végigvezeti a konfigurációs lépéseken, amelyek ország-/területfüggőek az RCS (Regulatory Configuration Services) szolgáltatásokban. Ezek a lépések kiegészítik az Első lépések az elektronikus számlázással modulban ismertetett [lépéseket](e-invoicing-get-started.md).
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A témakör lépéseinek elvégzése előtt a következő előfeltételeknek kell teljesülniük:
+A témakörben található lépések befejezése előtt teljesülnie kell a következő előfeltételeknek:
 
-- Végezze el az [Elektronikus számlázás első lépéseit](e-invoicing-get-started.md).
-- Importálja az **olasz FatturaPA (IT)** elektronikus számlázási funkciót az RCS-be a globális adattárból. További információt a [Korábban említett "Az elektronikus számlázással való kezdés" témakör Elektronikus számlázás importálása című](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) témakörben talál.
-- Hivatkozásokat adhat hozzá a szükséges tanúsítványokból a szolgáltatási környezetbe. A szükséges tanúsítványok közé tartozik a digitális aláírási tanúsítvány, a hitelesítésszolgáltatói tanúsítvány és az Ügyfelek tanúsítvány. További információ: [Digitális tanúsítvány titkos létrehozása az](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) "Első lépések az elektronikus számlázási szolgáltatás adminisztrációjával" témakörben.
+- Az Elektronikus számlázás első lépései modulban [kell végrehajtani a szükséges lépéseket](e-invoicing-get-started.md).
+- Importálja az olasz ExportálásturaPA (IT) elektronikus számlázási funkciót az **RCS**-be a globális tárházból. A további tudnivalókat lásd az Elektronikus számlázás importálása a Microsoft konfigurációs szolgáltató szakaszának "Első lépések az elektronikus [számlázással](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider)" című témakörében.
+- Hivatkozások hozzáadása a szükséges tanúsítványokból a szolgáltatási környezetbe. A szükséges tanúsítványok közé tartozik a digitális aláírási tanúsítvány, a hitelesítésszolgáltatói tanúsítvány és az ügyféltanúsítvány. A további tudnivalókat lásd az "Elektronikus számlázás szolgáltatásfelügyelet – Első lépések" témakör Digitális tanúsítvány titkos létrehozása [című](e-invoicing-get-started-service-administration.md#create-a-digital-certificate-secret) részében.
 
-## <a name="country-specific-configuration-for-the-italian-fatturapa-it-electronic-invoicing-feature"></a>Az olasz FatturaPA (IT) elektronikus számlázási funkció országspecifikus konfigurációja
+## <a name="country-specific-configuration-for-the-italian-fatturapa-it-electronic-invoicing-feature"></a>Országspecifikus konfiguráció az olasz MelluraPA (IT) elektronikus számlázás funkcióhoz
 
-Az alkalmazás beállításának üzembe helyezése előtt hajtsa végre a következő eljárásokat a csatlakoztatott Pénzügyi vagy Ellátási Lánckezelő alkalmazásban.
+A következő eljárásokat kell végrehajtani, mielőtt az alkalmazásbeállításokat a kapcsolódó Pénzügy vagy ellátásilánc-kezelés alkalmazásra telepíte.
 
-Ez a szakasz kiegészíti az ["Első lépések az elektronikus számlázással" témakör alkalmazásbeállítási szakaszának országspecifikus](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) konfigurációját.
+Ez a szakasz kiegészíti az "Elektronikus számlázás – első lépés" témakör alkalmazásbeállítási szakaszának [Országspecifikus](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) konfigurációját.
 
 ### <a name="create-a-new-feature"></a>Új funkció létrehozása
 
 1. Bejelentkezés az RCS alkalmazásba.
-2. Az **Elektronikus jelentéskészítés** munkaterület **Konfigurációs szolgáltatók** szakaszában jelölje meg a vállalat konfigurációs szolgáltatóját aktívként.
+2. Az Elektronikus jelentés munkaterület Konfigurációk területen jelölje meg aktívként a **vállalat** **konfigurációszolgáltatóját**.
 3. A **Globalizációs funkció** munkaterületen a **Funkciók** szakaszban válassza ki az **Elektronikus számlázás** csempét.
-4. Az Elektronikus számlázási szolgáltatások lapon válassza a **Hozzáadás a meglévő funkció alapján** **·** \> **lehetőséget**.
-5. A **Microsoft konfigurációs szolgáltatója területen válassza az Olasz** **FatturaPA (IT)** elemet alapfunkcióként, adjon meg egy nevet, majd válassza a Szolgáltatás létrehozása **lehetőséget**.
+4. Az Elektronikus számlázás funkció lapon válassza a Hozzáadás meglévő funkció **alapján** **·** \> **lehetőséget**.
+5. A Microsoft konfigurációs szolgáltatónál válassza alapként **az** **olaszLétrehozásáraturaPA (IT) beállítást, adjon meg egy nevet, majd** válassza a Szolgáltatás létrehozása **lehetőséget**.
 
 ### <a name="set-up-application-specific-parameters"></a>Alkalmazásfüggő paraméterek beállítása
 
-1. Az **Elektronikus számlázási szolgáltatások** lapon válassza ki a szerkeszteni kívánt funkciót.
+1. Az Elektronikus **számlázás funkció** lapon válassza ki a szerkeszteni kívánt funkciót.
 2. A **Verziók** lapon ellenőrizze, hogy a **Piszkozat** verzió ki van-e választva.
-3. A **Konfigurációk** lapon válasszon ki egy konfigurációt, majd válassza a **Alkalmazásspecifikus paraméterek** lehetőséget.
-4. A **Keresések** szakaszban győződjön meg arról, hogy a **Natura fordított adózási alkategóriák listája** beállítás van kiválasztva.
-5. A **Feltételek** szakaszban válassza a **Hozzáadás** lehetőséget.
-6. Adjon hozzá konkrét feltételeket a rendszerben definiált minden alkategóriához, majd mentse a módosításokat.
+3. A **Konfigurációk lapon válasszon egy** konfigurációt, majd válassza ki az **alkalmazásspecifikus** paramétereket.
+4. A Keresések szakaszban győződjön meg arról, hogy be van jelölve a Fordított **költség** **alkategóriák** listája keresés.
+5. A Feltételek **szakaszban válassza a Hozzáadás** **lehetőséget**.
+6. Adja hozzá az egyes alkategóriákhoz a rendszerben meghatározott feltételeket, majd mentse a módosításokat.
 
     > [!NOTE]
-    > A **Név** oszlopban egy adott érték helyett az **\* Üres vagy Nem üres \*** **\* helyőrző értéket választhatja \*** ki.
+    > A **Név** oszlopban adott érték helyett az **\*Üres\*** vagy a **\*Nem\*** üres helyőrző értéket lehet kiválasztani.
 
-### <a name="configure-a-processing-pipeline-for-export"></a>Feldolgozási folyamat konfigurálása exportálásra
+### <a name="configure-a-processing-pipeline-for-export"></a>Feldolgozási folyamat konfigurálása exportáláshoz
 
-1. Az **Elektronikus számlázási szolgáltatások** lapon válassza ki a szerkeszteni kívánt funkciót.
-2. A Beállítások lapon válassza a **Eladási** számlák lehetőséget, majd válassza **a Szerkesztés** **parancsot**.
-3. A **Folyamat feldolgozása** szakaszban végigmenjen a műveleteken, és állítsa be az összes szükséges mezőt:
+1. Az Elektronikus **számlázás funkció** lapon válassza ki a szerkeszteni kívánt funkciót.
+2. Válassza a Beállítások lapon az Értékesítési számlák, majd a **Szerkesztés** **·** **lehetőséget**.
+3. A Feldolgozási **folyamat szakaszban menjen végig a műveleteken, és állítsa be** az összes szükséges mezőt:
 
-    - A **Dokumentum aláírása** művelethez a **Tanúsítvány neve** mezőben adja meg a Digitális aláírási tanúsítványt.
-    - A **Küldés** művelethez állítsa be az **URL-címet és a Tanúsítványok** **mezőket**. A Tanúsítványok mező értéke **tanúsítványok** láncolata, amelyek közül az első a legfelső szintű hitelesítésszolgáltatói tanúsítvány (caentrate.cer), a második pedig az Ügyfelek tanúsítvány.
+    - A Dokumentum aláírása művelet Tanúsítvány neve mezőjében adja meg **a** Digitális **aláírási** tanúsítványt.
+    - A Küldés **művelethez** állítsa be az **URL-cím és a** Tanúsítványok **mezőket**. A Tanúsítványok mező értéke tanúsítványlánc, az első a legfelső szintű hitelesítésszolgáltatói tanúsítvány **(caentrate.cer), a második pedig az** Ügyfél tanúsítvány.
 
-4. Válassza az Érvényesítés lehetőséget **az összes szükséges mező** beállításának ellenőrzéséhez.
+4. Válassza az Ellenőrzés lehetőséget, ha gondoskodnia kell arról, hogy az összes **kötelező mező be legyen** állítva.
 5. Mentse el a módosításokat, és zárja be az oldalt.
-6. A Beállítások lapon válassza a **Projektszámlák** lehetőséget, **majd válassza a Szerkesztés** **parancsot**.
-7. Ismételje meg a projektszámlák 3–5. lépését.
+6. A Beállítások lapon válassza ki a **Projekt** **számláit, majd a Szerkesztés** **lehetőséget**.
+7. Ismételje meg a 3–5. lépést a projektszámlákra.
 
-### <a name="configure-the-processing-pipeline-for-import"></a>A feldolgozási folyamat konfigurálása importálásra
+### <a name="configure-the-processing-pipeline-for-import"></a>A feldolgozási folyamat konfigurálása importáláshoz
 
-1. Az **Elektronikus számlázási szolgáltatások** lapon válassza ki a szerkeszteni kívánt funkciót.
-2. A Beállítások lapon válassza a **Számlák** **importálása** lehetőséget, majd válassza a Szerkesztés **lehetőséget**.
+1. Az Elektronikus **számlázás funkció** lapon válassza ki a szerkeszteni kívánt funkciót.
+2. Válassza a **Beállítások lapon a Számlák** importálása, **majd a Szerkesztés** **lehetőséget**.
 3. Az Adatcsatorna szakasz Paraméterek lapján az Adatcsatorna mezőben adjon meg **egy** **·** **karakterláncot**.
 4. Állítsa be a beállítások mezőit az Alkalmazhatósági **szabályok** lapon. Az alapértelmezett csatornazáradékot úgy használhatja, hogy az előző lépésben az Adatcsatorna mezőben beállított értéket az **Érték** mezőbe **adja** **át**.
 
     ![Alkalmazhatósági szabályok beállítása](media/e-invoicing-ita-fatturapa-get-started-apprules-setup.png)
 
-5. Válassza az Érvényesítés lehetőséget **az összes szükséges mező** beállításának ellenőrzéséhez.
+5. Válassza az Ellenőrzés lehetőséget, ha gondoskodnia kell arról, hogy az összes **kötelező mező be legyen** állítva.
 
 ### <a name="deploy-the-feature"></a>A funkció telepítése
 
@@ -208,145 +206,145 @@ Ez a szakasz olyan információkat tartalmaz, amelyek segítségével beállíth
     ![Nyilvános IP-cím létrehozása](media/e-invoicing-ita-fatturapa-get-started-create-vm-4.png)
 
 9. A Kezelés lapon törölje a jelölést az **Automatikus** **leállítás** jelölőnégyzetből, ha le szeretné tiltani az automatikus leállítást.
-10. Állítsa a **vendég operációs rendszer frissítés** mezőjét Kézi **mezőbe**, majd állítsa be az egyéb házirendeket.
-11. Tekintse át és hozza létre a virtuális gépet.
-12. Az új virtuális gépen lépjen **a** \> **Hozzárendelt Identitásrendszer** elemre, és állítsa be az **Állapot beállítást** Be **parancsra**.
-13. Adja meg a virtuális gépnek a kulcstartóhoz való hozzáférést.
+10. Állítsa Manuális beállításra a Vendég operációs rendszer frissítése mezőt, majd **állítsa be az egyéb** **irányelveket**.
+11. Tekintse át és hozza létre az VM-t.
+12. Az új VM-példányon menjen a hozzárendelt identitásrendszerhez, és állítsa be **az** \> **Állapot beállítást** a **Be** **állapotra**.
+13. A kulcshoz való hozzáférés megadása az VM számára
 
-    1. A kulcstartóban nyissa meg a **Hozzáférés-vezérlés (IAM)** \> **szerepkör-hozzárendelések** parancsát.
-    2. Válassza a **Szerepkör-hozzárendelés hozzáadása** lehetőséget, majd állítsa be a következő mezőket:
+    1. A kulcs kulcsában menjen a **Hozzáférés-vezérlési szerepkör** \> **hozzárendeléseihez.**
+    2. Válassza **a Szerepkör-hozzárendelés** hozzáadása lehetőséget, majd állítsa be a következő mezőket:
 
-        1. A **Szerepkör** mezőben adja meg **a Key Vault Secrets User** parancsot.
-        2. A **Hozzáférés hozzárendelése** mező mezőben adja meg a **Virtuális gép** parancsot.
-        3. Az **Előfizetés** mezőben adja meg az előfizetést.
-        4. A **Kijelölés** mezőben adja meg a virtuális gépet.
+        1. A Szerepkör **mezőben** adja meg **a Kulcs És ys felhasználó** beállítását.
+        2. A Hozzáférés **hozzárendelése** mezőben adja meg a **virtuális** gépet.
+        3. Az Előfizetés **mezőben** adja meg az előfizetést.
+        4. A **Kijelölés** mezőben adja meg az VM-t.
 
-    3. Nyissa meg az **Access-házirendeket**.
-    4. Válassza a **Hozzáférési házirend hozzáadása** lehetőséget, majd állítsa be a következő mezőket:
+    3. Ugrás **a Hozzáférési** irányelvekhez.
+    4. Válassza **a Hozzáférési irányelv hozzáadása** gombra, majd állítsa be a következő mezőket:
 
-        1. A **Kijelölt fő** mezőben válassza ki a virtuális gépet.
-        2. A **Tanúsítvány szakaszban válassza a Lista és az** Engedélyek **·** **lekért** lehetőséget.
+        1. A Kiválasztott **alapvető** mezőben válassza ki az VM-t.
+        2. A Tanúsítvány szakaszban válassza a Lista és **az** Engedélyek **·** **bejede** lehetőséget.
 
-14. Az [Azure Portal](https://portal.azure.com) webhelyen lépjen a **Nyilvános IP-címek** elemre, és válassza ki a virtuális gépen létrehozott IP-címet.
-15. Lépjen a **Konfiguráció** elemre, és állítsa be a DNS-nevet.
+14. Az [Azure-portálon menjen a nyilvános IP-címekhez, és válassza ki az VM-ban létrehozott](https://portal.azure.com)**IP**-címet.
+15. Menjen a konfigurációhoz, és állítsa be a **tartománynév**-rendszer (DNS) nevét.
 
-### <a name="prepare-the-proxy-service-environment"></a>A proxyszolgáltatás környezetének előkészítése
+### <a name="prepare-the-proxy-service-environment"></a>A proxy szolgáltatási környezetének előkészítése
 
-Kövesse az alábbi lépéseket azon a gépen, ahol a proxyszolgáltatást üzemelteti.
+Hajtsa végre a következő lépéseket ezen a számítógépen, ahol a proxyszolgáltatás található.
 
-1. Csatlakozzon a virtuális géphez a Távoli asztali kapcsolat használatával.
-2. Nyissa meg a Helyigép-tanúsítvány beépülő modult. További információ: [Hogyan: Tanúsítványok megtekintése az MMC beépülő modullal](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in) című témakörben.
-3. Importálja a **caentrate.cer** tanúsítványt a termeléshez és a **CAEntratetest.cer** teszteléshez a [Megbízható legfelső szintű hitelesítésszolgáltatók tárolóba](/dotnet/framework/wcf/feature-details/working-with-certificates#certificate-stores). (**A CAEntratetest.cer** a hitelesítésszolgáltató által biztosított legfelső szintű hitelesítésszolgáltatói tanúsítvány.)
-4. A Vezérlőpulton nyissa meg **a Windows-szolgáltatások be- és kikapcsolása** című részt, vagy nyissa meg a **Kiszolgálókezelő** \> **Szerepkörök és szolgáltatások hozzáadása** a kiszolgáló operációs rendszeréhez (OS) elemre, és kapcsolja be az Internet Information Services (IIS) funkcióit:
+1. Csatlakozás az VM-hez távoli asztali kapcsolat segítségével
+2. Nyissa meg a helyi számítógép tanúsítványának be- és betárolóját. A további tudnivalókat lásd: Az HHC-beásású tanúsítványok [megtekintése](/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
+3. Importálja a caentrate.cer tanúsítványt a termeléshez, és **a** **CAEntratetest.cer tanúsítványt a Megbízható gyökér hitelesítésszolgáltató üzletben való**[teszteléshez](/dotnet/framework/wcf/feature-details/working-with-certificates#certificate-stores). (A CAEntratetest.cer a hatóság által megadott legfelső szintű **hitelesítésszolgáltatói** tanúsítvány.)
+4. A Vezérlőpult Windows-funkcióinak be- és kikapcsolása, illetve a kiszolgálói operációs rendszer Szerepkör és szolgáltatások hozzáadása funkciójának megnyitása a Vezérlőpulton, és az **Internet** Information **Services** \> **·** (IIS) szolgáltatásainak funkciói:
 
-    - Webkezelő eszközök
-        - IIS menedzsment concole
-    - Világszintű webszolgáltatások
+    - Webkezelési eszközök
+        - IIS-kezelési konole
+    - Webes szolgáltatások az egész világra kiterjedően
         - Alkalmazásfejlesztési funkciók
-            - .NET Bővíthetőség 4,7 (vagy 4,8)
-            - ÁSPISKÍGYÓ
-            - ASP.NET 4.7 (vagy 4.8.)
+            - .NET extensibility 4.7 (vagy 4.8)
+            - ASP
+            - ASP.NET 4.7 (vagy 4.8)
             - CGI
             - ISAPI-bővítmények
-            - ISAPI szűrők
-        - Gyakori HTTP-funkciók
+            - ISAPI-szűrők
+        - GYAKORI HTTP-funkciók
             - Alapértelmezett dokumentum
-            - Könyvtárböngészés
+            - Címtár tallózása
             - HTTP-hibák
             - Statikus tartalom
         - Egészség és diagnosztika
-            - HTTP naplózás
+            - HTTP-naplózás
             - Nyomkövetés
-        - Teljesítményjellemzők
+        - Teljesítményszolgáltatásokat
             - Statikus tartalomtömörítés
         - Biztonság
-            - Szűrés kérése
+            - Kérelemszűrés
 
-    ![Az IIS-funkciók bekapcsolása.](media/e-invoicing-ita-fatturapa-get-started-turnon-features.png)
+    ![Az IIS szolgáltatásainak bekapcsolása.](media/e-invoicing-ita-fatturapa-get-started-turnon-features.png)
 
-### <a name="set-up-the-sdi-proxy-service-in-iis"></a>Az SDI-proxy szolgáltatás beállítása az IIS-ben
+### <a name="set-up-the-sdi-proxy-service-in-iis"></a>Az SDI Proxy szolgáltatás beállítása az IIS szolgáltatásban
 
-1. Az Microsoft Dynamics Életciklus-szolgáltatások (LCS) területen lépjen a Megosztott eszköz tárba, és válassza az Adatcsomag lehetőséget **eszköztípusként**.
-2. Keresse meg **az Elektronikus számlázási szolgáltatás Sdi Proxy** parancsot, és töltse le a virtuális gépre.
-3. Konfigurálja a szolgáltatást.
+1. A Lifecycle Services (LCS) szolgáltatásban menjen a Megosztott eszköz tárba, és válassza ki az Adatcsomagot Microsoft Dynamics **eszköztípusként**.
+2. Az elektronikus számlázási szolgáltatás Sdi Proxy megkeresása **és letöltése az** VM-be.
+3. A szolgáltatás konfigurálása
 
-    1. Csomagolja ki a **letöltött Elektronikus számlázási szolgáltatás Sdi Proxy** archív mappáját.
-    2. Az **src \\ FattureService** mappában nyissa meg az **appsettings.json** fájlt, és állítsa be a következő paramétereket:
+    1. Az elektronikus **számlázási szolgáltatás letöltött Sdi Proxy archív** mappájának kibontása.
+    2. Nyissa meg az **appsettings.json** fájlt a **src\\Egyesetservice** mappában, és állítsa be akövetkező paramétereket:
 
-        - **KeyVaultUri** – Adja meg annak a kulcstartónak a címét, amely a számlázási szolgáltatás ügyféltanúsítványát tárolja.
-        - **TenantId** – Adja meg az ügyfél bérlőjének globálisan egyedi azonosítóját (GUID).
-        - **EnvironmentId** – Adja meg az LCS-környezet azonosítóját.
-        - **ClientId** – Adja meg a köztes szolgáltatások alkalmazásregisztrációjának alkalmazásazonosítóját az ügyfél bérlőjében.
-        - **ClientCertificateName** – Adja meg az S2S tanúsítvány nevét a kulcstartóban.
-        - **SecurityServiceClientOptions.Endpoint** – Adja meg a biztonsági szolgáltatás URL-címét.
-        - **SecurityServiceClientOptions.Resource** – Adja meg azt a hatókört, amelyhez be szeretné szerezni a jogkivonatot.
-        - **SzámlázásServiceClientOptions.Endpoint –** Adja meg a számlázási szolgáltatás végpontját. Ennek az értéknek ugyanaznak a végpontnak kell lennie, amelyet az RCS és a Finance használ.
-        - **SzámlázásServiceClientOptions.ServiceEnvironmentId –** Adja meg a szolgáltatási környezet nevét. Ennek az értéknek kell lennie a pénzügyi környezetének.
-        - **NotificationsFolder** – Adja meg azt a mappát, amelybe a bejövő értesítési fájlokat menteni szeretné.
+        - **KeyVaultUri – adja meg a számlázási szolgáltatás ügyfélbizonyítványát tároló** kulcscímet.
+        - **Bérlőazonosító – adja meg a vevő bérlőjéhez globálisan egyedi** azonosítót (GUID).
+        - **EnvironmentId** – adja meg az LCS-környezet azonosítóját.
+        - **ClientId – a közbenső szolgáltatások alkalmazásregisztrációs azonosítójának** megadása a vevő bérlőjében.
+        - **ClientCertificateName – adja meg a kulcskulcsban az** S2S-tanúsítvány nevét.
+        - **SecurityServiceClientOptions.Endpoint – a** biztonsági szolgáltatás URL-címének megadása.
+        - **SecurityServiceClientOptions.Resource – adja meg azt a hatókört, amely számára be kell szerezni** a tokent.
+        - **InvoicingServiceClientOptions.Endpoint – a számlázási szolgáltatás** végpontjának megadása. Ennek az értéknek meg kell egy lennie az RCS és a Pénzügy esetében használt végpontnak.
+        - **InvoicingServiceClientOptions.ServiceEnvironmentId – adja meg** a szolgáltatási környezet nevét. Ennek az értéknek a pénzügyi környezet nevének kell lennie.
+        - **NotificationsFolder – a bejövő értesítési fájlok** mentésére vonatkozó mappa megadása.
 
-    3. A **web.config** fájlban keresse meg a következő sort, és adja hozzá a proxykiszolgáló tanúsítványának ujjlenyomatát.
+    3. A web.config fájlban keresse meg a következő sort, és adja hozzá a proxykiszolgáló tanúsítványának **ujjlenyomatát**.
 
         `<serviceCertificate findValue="[certificate thumbprint]" storeLocation="LocalMachine" storeName="My" x509FindType="FindByThumbprint">`
 
         > [!TIP]
-        > Amikor a rendszer élesbe kerül, módosíthatja a web.config fájl egyes értékeit, hogy csökkentse az összegyűjtött naplóadatok mennyiségét, és segítsen megtakarítani a lemezterületet. A **\<system.diagnostics\>\<source\>** csomópontban módosítsa a **switchValue értékét** **Kritikus,Hiba** értékre. További információ: [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe).
+        > Ha a rendszer termelésbe kerül, a web.config fájlban található értékek módosítva csökkenthetők az összegyűjtött naplóinformációk mennyisége, és csökkenthető a lemezterület. A **\<system.diagnostics\>\<source\>** csomópontban módosítsa a **switchValue értékét** **Kritikus,Hiba** értékre. A további tudnivalókat lásd az [MS Service Trace Viewer](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe) szolgáltatásnál.
 
-4. Nyissa meg az IIS-kezelőt. A bal oldali fán maradjon a gyökércsomópontban. A jobb oldalon válassza a **Kiszolgálótanúsítványok** lehetőséget.
+4. Nyissa meg az IIS-kezelőt. A bal oldali fában maradjon a gyökércsomópontban. Válassza a jobb oldalon a Kiszolgálói tanúsítványok **lehetőséget**.
 
-    ![A szolgáltatási tanúsítványok kiválasztása az IIS-kezelőben.](media/e-invoicing-ita-fatturapa-get-started-proxy-cert-1.png)
+    ![Szolgáltatás-tanúsítványok kiválasztása az IIS-kezelőben](media/e-invoicing-ita-fatturapa-get-started-proxy-cert-1.png)
 
-5. Nyissa meg a menüt, és válassza a **Importálás** lehetőséget.
-6. A **Tanúsítvány importálása** párbeszédpanel **Tanúsítványfájl (.pfx)** mezőjében adja meg a proxykiszolgálói tanúsítvány .pfx fájljának elérési útját.
+5. Nyissa meg a menüt, és válassza az Importálás **elemet**.
+6. Adja meg a Tanúsítvány importálása **párbeszédpanel** **Tanúsítványfájl (.pfx) mezőjében a** proxykiszolgáló tanúsítványának .pfx fájljának elérési útját.
 
-    ![A proxyszolgáltatás tanúsítványfájljának megadása.](media/e-invoicing-ita-fatturapa-get-started-proxy-cert-2.png)
+    ![A proxyszolgáltatás tanúsítványfájlja.](media/e-invoicing-ita-fatturapa-get-started-proxy-cert-2.png)
 
-7. Jelölje ki és tartsa lenyomva (vagy kattintson a jobb gombbal) **a Webhelyek** elemre, majd válassza a Webhely hozzáadása **lehetőséget**.
-8. A **Webhely hozzáadása** párbeszédpanel **Webhelynév** mezőjében adja meg a webhely nevét.
-9. A **Fizikai elérési út** mezőben mutasson az **src \\ FattureService** mappára.
-10. A **Kötés típusa** mezőben válassza a **https** lehetőséget.
-11. A **Gazdagép neve** mezőben adja meg az állomás nevét.
-12. Hagyja az **IP-címet** és a Port **mezőket** az alapértelmezett értékekre állítva.
-13. Győződjön meg arról, hogy a **Kiszolgálónév-indikáció megkövetelése** jelölőnégyzet be van jelölve, mert az SDI nem támogatja ezt a technológiát.
-14. Az **SSL-tanúsítvány** mezőben jelölje ki az importált proxykiszolgáló-tanúsítványt.
-15. Az **Alkalmazáskészlet** mezőben adjon meg egy készletet a webhelyhez, és jegyezze fel a nevét (például **SdiAppPool**).
+7. Válassza ki és tartsa lenyomva a webhelyeket (vagy kattintson rá a jobb gombbal), majd válassza a **Webhely** hozzáadása **lehetőséget**.
+8. A Webhely hozzáadása párbeszédpanel Webhely neve mezőjébe írja **be** a webhely **nevét**.
+9. A Fizikai **elérési út** mezőben mutasson a **src Arra a \\ mappára, amelybe a tetkre** mutat.
+10. A **Kötéstípus** mezőben válassza a **https** lehetőséget.
+11. Az **Állomásnév** mezőben adja meg az állomás nevét.
+12. Hagyja az **IP-címet** és a **portmezőket** az alapértelmezett értékekre állítva.
+13. Győződjön meg arról, hogy a Kiszolgálónév jelzése megkövetelése jelölőnégyzetből törölve van a jelölés, mert az **SDI** nem támogatja ezt a technológiát.
+14. Az **SSL-tanúsítvány mezőben válassza ki az** importált proxykiszolgálói tanúsítványt.
+15. Az Alkalmazáskészlet mezőben adjon meg egy készletet a hely számára, és jegyezze fel a **nevét** (például **SdiAppPool).**
 
-    ![Weboldal hozzáadása.](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-1.png)
+    ![Webhely hozzáadása](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-1.png)
 
 16. Miután befejezte a webhely létrehozását, nyissa meg az **SSL-beállítások** menüt.
 
-    ![Az SSL-beállítások menüjének megnyitása.](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-2.png)
+    ![Az SSL-beállítások menü megnyitása](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-2.png)
 
-17. Jelölje be az **SSL megkövetelése** jelölőnégyzetet, majd az **Ügyféltanúsítványok** mezőben válassza a **Igény** lehetőséget.
+17. Jelölje be **az SSL megkövetelt jelölőnégyzetet, majd az Ügyféltanúsítványok mezőcsoportban válassza a** Kötelező **·** **lehetőséget**.
 
-    ![SSL-beállítások konfigurálása.](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
+    ![SSL-beállítások konfigurálása](media/e-invoicing-ita-fatturapa-get-started-proxy-iis-setup-3.png)
 
-18. Nyissa meg **a Címtárböngészés** lehetőséget, és válassza a **Engedélyezés** lehetőséget.
-19. Bármely webböngészőben látogasson el a **serverDNS/TrasmissioneFatture.svc** webhelyre. Meg kell jelennie a szolgáltatásról szóló szabványos oldalnak.
+18. Nyissa meg **a Címtár** tallózást, és válassza az **Engedélyezés** lehetőséget.
+19. Bármelyik webböngészőben menjen **a serverDNS/TrasmissioneFatture.svc** fájlra. Meg kell jelennie a szolgáltatásra vonatkozó szokásos lapnak.
 
-    ![A szolgáltatás ellenőrzése böngészőben.](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
+    ![A szolgáltatás ellenőrzése böngészőben](media/e-invoicing-ita-fatturapa-get-started-proxy-open-browser.png)
 
-20. Hozza létre a következő mappákat a naplók és fájlok tárolásához:
+20. Hozza létre a következő mappákat a naplók és fájlok tárolására:
 
-    - **C: \\ Naplók \\** – Tárolja a naplófájlokat itt. Ezeket a fájlokat az [MS Service Trace Viewer tekintheti](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe) meg.
-    - **C: \\ Fájlok – Tárolja az összes \\** válaszfájlt itt.
+    - **C: \\\\** Naplók – itt tárolja a naplófájlokat. Ezeket a fájlokat az [MS Service Trace Viewer segítségével lehet](/dotnet/framework/wcf/service-trace-viewer-tool-svctraceviewer-exe) megtekinteni.
+    - **C: \\ Fájlok – az összes \\** válaszfájl tárolása itt.
 
-21. A Fájlkezelőben biztosítson **hozzáférést a NETWORK SERVICE és az** **IIS AppPool \\ SdiAppPool** (vagy az **IIS AppPool \\ DefaultAppPool,** ha az alapértelmezett készlet használatával) a **Naplók és fájlok** **mappához**.
+21. A Fájlkezelőben adja meg a HÁLÓZATI SZOLGÁLTATÁS és **az** **IIS AppPool \\ SdiAppPool** (vagy **az IIS AppPool \\ DefaultAppPool)** **·** **hozzáférést** az Alapértelmezett csoport használata esetén a Naplók és fájlok mappához.
 
-    1. Jelölje ki és tartsa lenyomva (vagy kattintson a jobb gombbal) az egyik mappára, majd válassza a **Tulajdonságok** lehetőséget.
-    2. A **Tulajdonságok** párbeszédpanel Biztonság **lapján válassza a Szerkesztés** **lehetőséget**.
-    3. Adja hozzá a felhasználókat, ha nem szerepelnek a listában.
-    4. Ismételje meg az 1–3. lépést a másik mappához.
+    1. Jelölje ki és tartsa lenyomva az egyik mappát (vagy kattintson rá a jobb gombbal), majd válassza a **Tulajdonságok** parancsot.
+    2. A Tulajdonságok párbeszédpanel Biztonsági lapján **válassza** a **Szerkesztés** **lehetőséget**.
+    3. Vegye fel a felhasználókat, ha nem szerepelnek a listán.
+    4. Ismételje meg az 1–3. lépést a másik mappával.
 
-    ![Engedélyek hozzáadása a szolgáltatás felhasználójához.](media/e-invoicing-ita-fatturapa-get-started-proxy-add-user.png)
+    ![Engedélyek hozzáadása a szolgáltatás felhasználója számára](media/e-invoicing-ita-fatturapa-get-started-proxy-add-user.png)
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat 
 
-Az olasz elektronikus számla funkció engedélyezése **korlátozott** adatok küldését teheti szükségessé. Ezek az adatok tartalmazzák a szervezet adóregisztrációs azonosítóját. A rendszergazda engedélyezheti és letilthatja az olasz elektronikus számla funkciót. A funkció letiltásához kövesse az alábbi lépéseket.
+Az olasz **elektronikus számla** funkció engedélyezéséhez korlátozott adatok küldhetik el a szolgáltatást. Ezek az adatok tartalmazzák a szervezet adóregisztrációs azonosítóját. A rendszergazda engedélyezheti és letilthatja az olasz elektronikus számla funkciót. A funkció letiltásához kövesse az alábbi lépéseket.
 
 1. Menjen a **Szervezeti adminisztráció** \> **Beállítás** \> **Elektronikus dokumentumparaméterek** lehetőségre.
-2. A **Szolgáltatások** lapon jelölje ki az olasz elektronikus számla funkciót tartalmazó sorokat, **majd válassza a** **Letiltás most lehetőséget**.
+2. A Szolgáltatások lapon jelölje ki azokat a sorokat, amelyek tartalmazzák az olasz elektronikus számla funkciót, majd **válassza a Disable now** **·** **lehetőséget**.
 
-Az ezekből a külső rendszerekből ebből a Dynamics 365 online szolgáltatásba importált adatokra [adatvédelmi nyilatkozatunk vonatkozik](https://go.microsoft.com/fwlink/?LinkId=512132). További információért tekintse meg az ország-/régióspecifikus funkciódokumentáció "Adatvédelmi nyilatkozat" című szakaszát.
+A külső rendszerekből ebbe a Dynamics 365 online szolgáltatásba importált adatokra az adatvédelmi [nyilatkozatunk vonatkozik](https://go.microsoft.com/fwlink/?LinkId=512132). A további tudnivalókat lásd az ország-/régióspecifikus funkciódokumentáció "Adatvédelmi nyilatkozat" szakaszában.
 
 ## <a name="additional-resources"></a>További erőforrások
 

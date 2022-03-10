@@ -1,7 +1,7 @@
 ---
 title: Indexelt eladási árak
 description: Amikor előfizetési díjat hoz létre, az árindexet állítja be egy előfizetés eladási árához.
-author: ShylaThompson
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 49b9cb5d27a8b28398e7f502fccf7409b021f7224343afbda5a772071195e716
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: c1cd4436f48dde570dc1582d0be902e1f66264b8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734115"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578824"
 ---
 # <a name="indexed-sales-prices"></a>Indexelt eladási árak  
 

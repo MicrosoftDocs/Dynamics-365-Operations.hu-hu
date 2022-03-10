@@ -2,38 +2,39 @@
 title: Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével
 description: Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-útmutatók, hogyan hozhat létre rögzítéseket, és hogyan szabhatja testre a Microsoft-feladatútmutatókat, illetve hogyan szerepeltesse azokat a Súgóban.
 author: josaw1
-manager: AnnBe
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: SysHelpSetup
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 25391
 ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5b0a31b709c964bbb896079f2db5aeee3c1f22f2
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
-ms.translationtype: HT
+ms.openlocfilehash: 448c2b302136e595852c423d53e49adfcc40d12d
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563130"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070526"
 ---
 # <a name="create-documentation-or-training-with-task-recorder"></a>Dokumentáció vagy képzés létrehozása Feladatrögzítő segítségével
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a témakör azt ismerteti, hogy mik azok a Feladatrögzítő és a feladat-útmutatók, hogyan hozhat létre feladatrögzítéseket, és hogyan szabhatja testre a Microsoft-feladatútmutatókat, illetve hogyan szerepeltesse azokat a Súgóban.
 
 > [!IMPORTANT]
 > Rögzítheti saját feladat-útmutatóit a Dynamics 365 Human Resources számára, de jelenleg nem mentheti őket az Üzletifolyamat-modellező (BPM) tárba, illetve nem nyithatja meg őket a Súgó ablaktáblából. Mentheti őket helyben vagy egy hálózati helyre, majd megnyithatja és újra lejátszhatja őket a Feladatrögzítő használatával. 
 
-<a name="learn-about-task-recorder"></a>További tudnivalók a Feladatrögzítőről
--------------------------
+## <a name="learn-about-task-recorder"></a>További tudnivalók a Feladatrögzítőről
 
 A Feladatrögzítő egy olyan eszköz, amellyel a termék felhasználói felületén (UI) elvégzett műveleteket jegyezheti fel. A Feladatrögzítő használatakor az összes, felhasználói felületben elvégzett, a szerveren végrehajtott esemény — beleértve az értékhozzáadást, beállítások megváltoztatását, adatok eltávolítását — rögzítésre kerül. A rögzített lépések összességét *feladatrögzítésnek* hívják. A Feladatrögzítő sokféleképpen használható:
 
@@ -64,21 +65,21 @@ Ha új feladatrögzítést készít vagy a rögzítéseit Microsoft feladatrögz
 
 Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készítése közben. Írja be a címjegyzetet a **Cím** mezőbe. 
 
-[![A szerkesztési ablaktábla címjegyzettel](./media/screen1.png)](./media/screen1.png) 
+[![A szerkesztési ablaktábla címjegyzettel.](./media/screen1.png)](./media/screen1.png) 
 
 Így néz ki a feladat-útmutató „buborékdiagramjában” található címjegyzet. 
 
-[![A címjegyzet megjelenése a feladatok útmutatóban](./media/screen2.png)](./media/screen2.png)
+[![A címjegyzet megjelenése a feladatok útmutatóban.](./media/screen2.png)](./media/screen2.png)
 
 -   **Megjegyzések:** A megjegyzéshez tartozó jegyzet a Feladatrögzítő által automatikusan létrehozott lépés szövege után jelenik meg. A feladat útmutatóban csak akkor lesz látható, ha a felhasználó rákattint a **Részletesebben** hivatkozásra a felada útmutató buborékdiagramjában. E típus használatával mindent leírhat, amit a felhasználónak tudnia kell a lépés teljesítéséhez.
 
 Ez a szerkesztési ablak látható jegyzet hozzáadásakor, rögzítés készítése közben. Írjon be jegyzetet a megjegyzésekhez a **Megjegyzések** mezőbe. 
 
-[![Szerkesztés ablaktábla megjegyzésekkel a Megjegyzések mezőben](./media/screen3.png)](./media/screen3.png) 
+[![Szerkesztés ablaktábla megjegyzésekkel a Megjegyzések mezőben.](./media/screen3.png)](./media/screen3.png) 
 
 Így néznek ki a feladat-útmutató „buborékdiagramjában” található jegyzetek.
 
-[![A címmegjegyzések megjelenése a feladatok útmutatóban](./media/screen4.png)](./media/screen4.png)
+[![A címmegjegyzések megjelenése a feladatok útmutatóban.](./media/screen4.png)](./media/screen4.png)
 
 -   **Tájékoztató lépés**: Ezek a megjegyzések létrehozhatóak jobb kattintással egy vezérlőelemen vagy bárhol a képernyőn &lt; **Feladatrögzítő** &lt; **Tájékoztató lépés hozzáadása**. A tájékoztató lépések számozott lépésként jelennek meg bárhol, ahova beszúrta őket, még akkor is, ha művelet nem volt a felhasználói felületen rögzítve. Űrlapszíntű információs lépést adhat hozzá vagy információs lépéshez hozzárendelt vezérlést. Ha az információs lépés képernyőhöz van hozzárendelve, a feladat útmutató "buborékdiagramja" jelenik meg a képernyőn, kurzor nélkül, a feladat útmutató lejátszása közben. Ha az információs lépés vezérlőelemhez van társítva, a feladat útmutató "buborékdiagramja" a vezérlőelemre elemre mutat, a feladat-útmutató lejátszása közben. A Súgó ablaktáblán egy információs lépésről szóló jegyzet jelenik meg számozott lépésként az Ön által beírt szöveggel. Használja az információs lépéseket a felhasználó következő lépésre való felkészítésére, az alkalmazáson kívüli lépések leírására, vagy más rögzítésekre való hivatkozásra (hiperhivatkozások létrehozása a jegyzetekben nem lehetséges).
 
@@ -112,8 +113,7 @@ Letöltheti és szerkesztheti a Microsoft feladatrögzítéseit a saját képzé
 
 
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Súgórendszer](../../fin-ops/get-started/help-overview.md)
 

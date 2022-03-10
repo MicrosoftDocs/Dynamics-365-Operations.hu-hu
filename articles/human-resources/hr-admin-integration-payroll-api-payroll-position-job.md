@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-04-07
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 842c459acd8b5e1a8b6074243b3afa18dc6a13c5
-ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
-ms.translationtype: HT
+ms.openlocfilehash: 349479d9e77861b54d879bcfd93f7af0e38cff95
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314237"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069832"
 ---
 # <a name="payroll-position-job"></a>Bérlista szerinti beosztás feladata
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -34,16 +37,22 @@ Fizikai név: mshr_payrollpositionjobentity.
 
 ## <a name="properties"></a>Tulajdonságok
 
-| Tulajdonság<br>**Fizikai név**<br>**_Típus_** | Használat | Leírás |
+| Tulajdonság</br>**Fizikai név**</br>**_Típus_** | Használat | Leírás |
 | --- | --- | --- |
-| **Beosztásazonosító**<br>mshr_jobid<br>*Sztring* | Írásvédett<br>Szükséges |A feladat azonosítója. |
-| **Érvényesség kezdete**<br>mshr_validto<br>*Dátum és idő eltolása* | Írásvédett <br>Szükséges | Az a dátum, amelytől a beosztás és a feladat kapcsolata érvényes. |
-| **Érvényesség vége:**<br>mshr_validto<br>*Dátum és idő eltolása* | Írásvédett <br>Szükséges | Az a dátum, ameddig a pozíció és a beosztás kapcsolata érvényes.  |
-| **Beosztásazonosító**<br>mshr_positionid<br>*Sztring* | Írásvédett<br>Szükséges | A pozíció azonosítója. |
-| **Elsődleges mező**<br>mshr_primaryfield<br>*Sztring* | Szükséges<br>Rendszer által előállított |  |
-| **Beosztáshoz tartozó feladat azonosítójának értéke**<br>_mshr_fk_positionjob_id_value<br>*GUID* | Írásvédett<br>Szükséges<br>Idegen kulcs:mshr_PayrollPositionJobEntity ehhez: mshr_payrollpositionjobentity |A pozícióhoz társított beosztás azonosítója.|
-| **Fix kompenzációs konstrukció azonosítójának értéke**<br>_mshr_fk_fixedcompplan_id_value<br>*GUID* | Írásvédett<br>Szükséges<br>Idegen kulcs: mshr_payrollfixedcompensationplanentity entitáshoz tartozó mshr_FixedCompPlan_id  | A pozícióhoz társított fix kompenzációs konstrukció azonosítója. |
-| **Bérlista szerinti beosztás feladata azonosítója**<br>mshr_payrollpositionjobentityid<br>*Guid* | Szükséges<br>Rendszer által előállított. | A beosztás egyedi azonosítására szolgáló, rendszer által generált GUID-értéke.  |
+| **Beosztásazonosító**</br>mshr_positionid</br>*Sztring* | Írásvédett | A pozíció azonosítója. |
+| **Érvényesség kezdete**</br>mshr_validto</br>*Dátum és idő eltolása* | Írásvédett | A dátum, amelytől a beosztás és a feladat kapcsolata érvényes. |
+| **Érvényesség vége:**</br>mshr_validto</br>*Dátum és idő eltolása* | Írásvédett | A dátum, ameddig a pozíció és a beosztás kapcsolata érvényes. |
+| **Beosztásazonosító**</br>mshr_jobid</br>*Sztring* | Írásvédett | A feladat azonosítója. |
+| **Elsődleges mező**</br>mshr_primaryfield</br>*Sztring* | Rendszer által előállított | Az elsődleges mező. |
+| **Bérlista szerinti beosztás feladata azonosítója**</br>mshr_payrollpositionjobentityid</br>*Guid* | Rendszer által előállított. | Rendszer által generált globálisan egyedi azonosító (GUID) érték, amely egyedileg azonosítja a munkát. |
+
+## <a name="relations"></a>Kapcsolatok
+
+| Eszközérték | Kapcsolódó entitás | Navigációs tulajdonság | Gyűjtemény típusa |
+| --- | --- | --- | --- |
+| _mshr_fk_fixedcompplan_id_value | mshr_payrollfixedcompensationplanentity | mshr_FK_FixedCompPlan_id | mshr_FK_PayrollFixedCompensationPlanEntity_Job |
+| _mshr_fk_jobdetail_id_value | mshr_hcmjobdetailentity | mshr_FK_JobDetail_id | Nem alkalmazható |
+| _mshr_fk_payroll_id_value | mshr_payrollpositionentity | mshr_FK_Payroll_id | mshr_FK_PayrollPositionEntity_Job |
 
 ## <a name="example-query"></a>Példa lekérdezésre
 

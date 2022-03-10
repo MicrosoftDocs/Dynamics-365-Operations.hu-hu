@@ -1,6 +1,6 @@
 ---
-title: Dynamics 365 Finance és az Egyesült Egyesült Államokkal és az Egyesült Dynamics 365 Supply Chain Management Államokkal közös felhőben (GCC)
-description: Ez a témakör a minősített kormányzati és magán jogi személyek számára elérhető 365 egyesült államoki kormányzati termékről nyújt Microsoft Dynamics tájékoztatást.
+title: Dynamics 365 Finance és Dynamics 365 Supply Chain Management az USA kormányzati közösségi felhőjében (GCC)
+description: Ez a témakör tájékoztatást nyújt a Microsoft Dynamics 365 amerikai kormányzat termékei, amelyek elérhetőek a minősített kormányzati és magánszervezetek számára.
 author: hasaid
 ms.date: 11/12/2021
 ms.topic: article
@@ -9,77 +9,77 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: hasaid
 ms.search.validFrom: 2021-11-09
-ms.openlocfilehash: 17702ada5bf75a44652e194c2555a83e76e7a36b
-ms.sourcegitcommit: 9f8da0ae3dcf3861e8ece2c2df4f693490563d5e
-ms.translationtype: HT
+ms.openlocfilehash: 0c8b88e5d190f6dc9beb9342909d1e489d4af10b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/16/2021
-ms.locfileid: "7817467"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062286"
 ---
-# <a name="dynamics-365-finance-and-dynamics-365-supply-chain-management-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance és az Egyesült Egyesült Államokkal és az Egyesült Dynamics 365 Supply Chain Management Államokkal közös felhőben (GCC)
+# <a name="dynamics-365-finance-and-dynamics-365-supply-chain-management-in-us-government-community-cloud-gcc"></a>Dynamics 365 Finance és Dynamics 365 Supply Chain Management az USA kormányzati közösségi felhőjében (GCC)
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-A 365-ös (egyesült államokbeli) kormányzati termékek a minősített kormányzati és magán jogi személyek számára Microsoft Dynamics érhetők el. Ezek az entitások csak a következő típusokra korlátozódnak:
 
-- Usa szövetségi, állami, helyi, törzsi és területi kormányzati szervek
-- A Dynamics 365 Egyesült Államokkal rendelkező magánentitások, amelyek a kormányzati entitásoknak vagy a felhőalapú közösség minősített tagjainak nyújtják a megoldásokat.
-- A kormányzati szabályozás alá tartozó vevői adatokkal érintett magánjellegű entitások, és a jogszabályok követelményeinek megfelelő Szolgáltatás a Dynamics 365 egyesült állam lesz.
+Válassza ki Microsoft Dynamics 365 Egyesült Államok (USA) Kormányzati termékek elérhetők a minősített kormányzati és magánszervezetek számára. Ezek az entitások a következő típusokra korlátozódnak:
 
-A további tudnivalókat lásd: [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
+- Az Egyesült Államok szövetségi, állami, helyi, törzsi és területi kormányzati szervei
+- Magánszemélyek, amelyek a Dynamics 365 US Government szolgáltatást használják arra, hogy megoldásokat kínáljanak kormányzati szerveknek vagy a felhőközösség minősített tagjainak
+- A kormányzati szabályozás hatálya alá tartozó ügyféladatokkal rendelkező magánszemélyek, és a Dynamics 365 US Government a megfelelő szolgáltatás a szabályozási követelmények teljesítéséhez
+
+További információkért lásd [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
 
 ## <a name="onboarding"></a>Onboarding
 
-A Lifecycle Services (LCS) egy megvalósítási projekt kezdeti telepítésének befejezéséhez kövesse a Microsoft Dynamics "Onboard" (A bevezetési) projektben található [utasításokat](../../../fin-ops-core/fin-ops/imp-lifecycle/onboard.md). Ne használja azonban a hivatkozást az útmutatásban megadott nyilvános LCS-fájlra. Ehelyett a következő URL-cím használatával nyissa meg az LCS-t az Egyesült Államok kormányzati közösségi felhőjéhez (GCC):<https://gov.lcs.microsoftdynamics.us>.
+A bevezetési projekt kezdeti bevezetésének befejezéséhez Microsoft Dynamics Lifecycle Services (LCS), kövesse az utasításokat [Egy megvalósítási projekt fedélzetén](../../../fin-ops-core/fin-ops/imp-lifecycle/onboard.md). Azonban ne használja a nyilvános LCS-re mutató hivatkozást, amely az utasításokban található. Ehelyett használja a következő URL-t az LCS megnyitásához a US Government Community Cloud (GCC) számára:<https://gov.lcs.microsoftdynamics.us>.
 
-A kezdeti berakodási művelet befejezése után kövesse a Project onboarding szakaszban található [...](../lifecycle-services/project-onboarding.md) utasításokat. Ismét használja az [LCS-t GCC-ként](https://gov.lcs.microsoftdynamics.us) a nyilvános LCS helyett.
+A kezdeti betanítás befejezése után kövesse az utasításokat [Projektbevezetés](../lifecycle-services/project-onboarding.md). Még egyszer használd [LCS a GCC számára](https://gov.lcs.microsoftdynamics.us) nyilvános LCS helyett.
 
-## <a name="environment-deployment"></a>Környezet telepítése
+## <a name="environment-deployment"></a>Környezeti telepítés
 
-Miután befejezte a projekt továbbkozását, áttekintheti az LCS további, a [Lifecycle Services (LCS) alkalmazások vevőkkel kapcsolatos Finance and Operations](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md) funkcióit. Ezután lépjen tovább a környezet telepítésére.
+Miután befejezte a projekt bevezetését, áttekintheti az LCS további lehetőségeit, amelyek leírása a következő helyen található: [Lifecycle Services (LCS) a Finance and Operations alkalmazások ügyfelei számára](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Ezután folytassa a környezeti telepítéssel.
 
-- A Microsoft által kezelt környezetek LCS-en keresztüli telepítéséhez kövesse az alkalmazások vevőinek [lifecycle Services (LCS) Finance and Operations](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience) útmutatóját.
-- A felhőben tárolt környezetek esetén lásd a Fejlesztői környezetek telepítése [és elérése.](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md) Az egyesült államokbeli lifecycle Services-projektekre vonatkozó Azure erőforrás-kezelő on-boarding folyamatának befejezéseként az Erőforrás-kezelő továbbjelző folyamatot is be kell [...](arm-onbarding-us-goverment.md) fejeznie.
+- A Microsoft által felügyelt környezetek LCS-n keresztüli üzembe helyezéséhez kövesse az alábbi utasításokat [Lifecycle Services (LCS) a Finance and Operations alkalmazások ügyfelei számára](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- A felhő által üzemeltetett környezetekhez lásd [Fejlesztői környezetek telepítése és elérése](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). Ezenkívül be kell fejeznie a Resource Manager-beépítési folyamatot a csatlakozási szoftverekhez, a leírás szerint [Végezze el az Azure Resource Manager bevezetési folyamatát az Egyesült Államok kormányzati életciklus-szolgáltatási projektjeihez](arm-onbarding-us-goverment.md).
 
 > [!NOTE]
-> Az egyesült államokbeli LCS-projektek esetében csak az Azure-kormányspecifikus Azure-előfizetések támogatottak.
+> Az Egyesült Államok kormányzati LCS-projektjei esetében csak az Azure Government-specifikus Azure-előfizetések támogatottak.
 
 ## <a name="features-that-arent-available"></a>Nem elérhető funkciók
 
-Egyes szolgáltatások nem érhetők el a GCC-telepítéshez, vagy nem lesznek elérhetők a Dynamics 365 rendszer használata során a GCC-ben. A szolgáltatások Azure DevOps például nem érhetők el a GCC-ben. A létesítményben és a Azure DevOps nyilvános Azure DevOps szolgáltatásokban azonban használhatók. A funkciók elérhetőségére vonatkozó részletes tudnivalókat lásd az Üzleti alkalmazások egyesült államok kormányzati [funkciók rendelkezésre állása](https://aka.ms/BAPFunctionalParity) oldalon.
+Egyes funkciók nem lesznek telepíthetők a GCC-ben, vagy nem lesznek használhatók a Dynamics 365-tel a GCC-ben. Például,Azure DevOps A szolgáltatások nem lesznek elérhetők az GCC-ben. Azonban a helyszínen Azure DevOps vagy nyilvános Azure DevOps szolgáltatásokat lehet igénybe venni. A funkciók elérhetőségével kapcsolatos részletes információkért lásd: [Üzleti alkalmazások US kormányzati funkciók elérhetősége](https://aka.ms/BAPFunctionalParity).
 
 ## <a name="frequently-asked-questions"></a>Gyakori kérdések
 
-### <a name="are-dynamics-365-finance-and-dynamics-365-supply-chain-management-supported-in-gcc-high"></a>Használhatók Dynamics 365 Finance Dynamics 365 Supply Chain Management és támogatottak a GCC-High ?
+### <a name="are-dynamics-365-finance-and-dynamics-365-supply-chain-management-supported-in-gcc-high"></a>Vannak Dynamics 365 Finance és Dynamics 365 Supply Chain Management támogatja a GCC-Hig?
 
-Nem. Dynamics 365 Finance és Dynamics 365 Supply Chain Management csak GCC-kben támogatottak.
+Nem. Dynamics 365 Finance és Dynamics 365 Supply Chain Management csak a GCC támogatja.
 
-### <a name="can-i-use-public-azure-devops-with-finance-and-supply-chain-management-in-gcc"></a>Használható a nyilvános és Azure DevOps az ellátásilánc-kezelés a GCC-ben?
+### <a name="can-i-use-public-azure-devops-with-finance-and-supply-chain-management-in-gcc"></a>Használhatom nyilvános Azure DevOps pénzügyi és ellátási lánc menedzsmenttel az ÖET-ben?
 
-A nyilvános szolgáltatásokat akkor használhatja, ha nem rendelkezik a Azure DevOps FEDRAMP (Federal Risk and Authorization Management Program) által hitelesített megoldás követelményeivel. Másik lehetőségként használhatja a Azure DevOps Kiszolgálót is.
+Igen, használhatod nyilvánosan Azure DevOps szolgáltatásokat, ha nem rendelkezik követelményekkel a Szövetségi Kockázat- és Jogosultságkezelési Program (FEDRAMP) által tanúsított megoldással szemben. Alternatív megoldásként használhatja Azure DevOps Szerver.
 
-### <a name="can-i-deploy-a-cloud-hosted-environment-tier-1-development-environment-on-an-azure-commercial-subscription"></a>Telepíthet a felhőben tárolt Tier-1 fejlesztői környezetet Azure kereskedelmi előfizetésre?
+### <a name="can-i-deploy-a-cloud-hosted-environment-tier-1-development-environment-on-an-azure-commercial-subscription"></a>Telepíthetek felhőalapú környezetet, Tier-1 fejlesztői környezetet egy kereskedelmi Azure-előfizetésen?
 
-Nem. A GCC LCS szolgáltatásban Azure Government előfizetéssel kell telepíteni egy felhőben tárolt [...](https://gov.lcs.microsoftdynamics.us) környezetet.
+Nem. Ban ben [LCS a GCC számára](https://gov.lcs.microsoftdynamics.us), az Azure Government-előfizetést kell használnia egy felhőalapú környezet üzembe helyezéséhez.
 
-### <a name="what-can-i-do-if-i-need-a-package-from-the-shared-asset-library-but-it-isnt-available-in-lcs-for-gcc"></a>Mit lehet tenni, ha a Megosztott eszköz tára egy csomagjára van szükség, de nem érhető el a GCC LCS-ben?
+### <a name="what-can-i-do-if-i-need-a-package-from-the-shared-asset-library-but-it-isnt-available-in-lcs-for-gcc"></a>Mit tehetek, ha szükségem van egy csomagra a Megosztott eszköztárból, de az nem érhető el az LCS for GCC-ben?
 
-Ugyanazt a csomagot a megosztott eszköztárból töltheti le [a nyilvános LCS-fájlban.](https://lcs.dynamics.com) Másik lehetőségként partnerével letöltheti a csomagot.
+Ugyanezt a csomagot letöltheti a Megosztott eszközök könyvtárából [nyilvános LCS](https://lcs.dynamics.com). Alternatív megoldásként partnere segíthet a csomag letöltésében.
 
-### <a name="is-the-code-upgrade-tool-available-in-gcc"></a>Elérhető a kódfrissítési eszköz a GCC-ben?
+### <a name="is-the-code-upgrade-tool-available-in-gcc"></a>Elérhető a kódfrissítő eszköz a GCC-ben?
 
-Nem, a kódfrissítési eszköz jelenleg nem érhető el a GCC-ben. A nyilvános LCS-kben azonban létrehozhat egy potenciális vevői projektet, [...](https://lcs.dynamics.com) és használhatja a kódfrissítési eszközt. A potenciális vevők projektjeiben nem lehet környezeteket telepíteni.
+Nem, a kódfrissítő eszköz jelenleg nem érhető el a GCC-ben. Létrehozhat azonban potenciális projektet [nyilvános LCS](https://lcs.dynamics.com) és használja a kódfrissítő eszközt. Vegye figyelembe, hogy a potenciális projektekben nem tud majd környezeteket telepíteni.
 
-### <a name="can-my-partner-open-a-support-ticket-on-my-behalf"></a>A partner megnyithat egy támogató jegyet a nevében?
+### <a name="can-my-partner-open-a-support-ticket-on-my-behalf"></a>Nyithat-e a partnerem támogatási jegyet a nevemben?
 
-Igen. Ha azonban a partner nem GCC-személyazonosságot használ, a támogatási jegy a nyilvános támogatási várólistára kerül. Javasoljuk, hogy az LCS-ben a vevő GCC-jogosultsága segítségével nyissa meg a támogatási jegyeket.
+Igen. Ha azonban partnere nem GCC-azonosítót használ, a támogatási jegy a nyilvános támogatási sorba kerül. Javasoljuk, hogy az ügyfél GCC-jogosultságát használja az LCS-ben a támogatási jegyek megnyitásához.
 
 ## <a name="see-also"></a>Lásd még
 
-- [Dynamics 365 Egyesült Állam -](/power-platform/admin/microsoft-dynamics-365-government)
-- [Üzleti alkalmazások - USA kormányzati funkciók](https://aka.ms/BAPFunctionalParity) elérhetősége.
+- [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government)
+- [Üzleti alkalmazások US kormányzati funkciók elérhetősége](https://aka.ms/BAPFunctionalParity).
 - [Lifecycle Services (LCS) használati útmutató](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
 - [Felhőbeli telepítés áttekintése](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
 

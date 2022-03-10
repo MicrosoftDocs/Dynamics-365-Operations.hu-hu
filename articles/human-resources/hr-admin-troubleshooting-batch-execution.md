@@ -7,7 +7,6 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -15,14 +14,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2021-03-19
 ms.dyn365.ops.version: Platform update 42
-ms.openlocfilehash: 906a391b3c28d15445f6ddf0fc547ebcf842ba19
-ms.sourcegitcommit: d18d9cdb175c9d42eafbed66352c24b2aa94258b
-ms.translationtype: HT
+ms.openlocfilehash: 859f039a928cdc57c9f227885d0f00ef79980f28
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5881760"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070400"
 ---
 # <a name="reset-stuck-batch-jobs"></a>Beragadt kötegelt feladatok alaphelyzetbe állítása
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -47,7 +49,7 @@ Ha egy kötegelt feldolgozás **Végrehajtás** vagy **Megszakítás** állapotb
 
 5. Az **Új állapot kiválasztása** lapon válassza a **Várakozás** lehetőséget, majd kattintson az **OK** gombra.
 
-   ![Új kötegelt feldolgozási állapot kiválasztása](./media/hr-admin-reset-batch-job-status.png)
+   ![Új kötegelt feldolgozási állapot kiválasztása.](./media/hr-admin-reset-batch-job-status.png)
 
 ## <a name="see-also"></a>Lásd még
 

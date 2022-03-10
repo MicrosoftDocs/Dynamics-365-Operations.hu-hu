@@ -1,26 +1,24 @@
 ---
 title: Konfigurációs csoportok meghatározása
 description: Ez az eljárás bemutatja, hogyan határozhatja meg a termékkonfigurációs csoportokat az USMF bemutatócégben két csoport létrehozásával.
-author: ShylaThompson
-manager: tfehr
+author: t-benebo
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ConfigGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 8b92448ee9bd0eb337fc5860f7694b16ade19710
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8bb95be93bccad431948beea67bb2860f7c68617
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235041"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569553"
 ---
 # <a name="define-configuration-groups"></a>Konfigurációs csoportok meghatározása
 

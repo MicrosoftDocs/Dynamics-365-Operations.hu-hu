@@ -2,27 +2,27 @@
 title: SEPA beszedési megbízás – áttekintés
 description: Az egységes euro-pénzforgalmi övezet (SEPA) az Európai Bizottság által került meghatározásra, és szabályai előírják, hogy minden elektronikusan küldött kifizetés belföldinek számít, függetlenül az egyes személyek, vállalatok, szervezetek vagy bankok elhelyezkedésétől. Az országon belüli és a nemzetközi kifizetések között nincs különbség. A SEPA magában foglalja a 28 Európai Uniós (EU) tagállamot, csak úgy mint Izlandot, Liechtensteint, Norvégiát, Svájcot, Monacót és San Marinót. A SEPA egységes piacot teremt az Európai Gazdasági Térségen (EGT) belüli kifizetési tranzakciók számára. A várakozások szerint a SEPA csökkenteni fogja a bankok, vállalatok és személyek által használt és kezelt kifizetési formátumok számát.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/22/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankAccountTable, CustBankAccounts, CustParameters, CustTable
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 11144
+ms.custom:
+- "11144"
+- intro-internal
 ms.assetid: 3277c9b6-e46e-40c9-aa76-9b0449467842
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cca929a42c99966af0fac92f1565509e10207d91
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 5f71eca0ca9ee07d43bdf737874f442f0029e87e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4995518"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984378"
 ---
 # <a name="sepa-direct-debit-overview"></a>SEPA beszedési megbízás – áttekintés
 
@@ -30,8 +30,7 @@ ms.locfileid: "4995518"
 
 Az egységes euro-pénzforgalmi övezet (SEPA) az Európai Bizottság által került meghatározásra, és szabályai előírják, hogy minden elektronikusan küldött kifizetés belföldinek számít, függetlenül az egyes személyek, vállalatok, szervezetek vagy bankok elhelyezkedésétől. Az országon belüli és a nemzetközi kifizetések között nincs különbség. A SEPA magában foglalja a 28 Európai Uniós (EU) tagállamot, csak úgy mint Izlandot, Liechtensteint, Norvégiát, Svájcot, Monacót és San Marinót. A SEPA egységes piacot teremt az Európai Gazdasági Térségen (EGT) belüli kifizetési tranzakciók számára. A várakozások szerint a SEPA csökkenteni fogja a bankok, vállalatok és személyek által használt és kezelt kifizetési formátumok számát.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Mi a SEPA beszedési megbízások célja?
----------------------------------------
+## <a name="what-is-the-goal-of-sepa-direct-debits"></a>Mi a SEPA beszedési megbízások célja?
 
 A SEPA beszedési megbízással egy hitelező pénzt szedhet be a vevő bankszámlájáról, ha a vevő aláírt felhatalmazást adott erre a hitelezőnek. A vevő aláír egy felhatalmazást, amellyel engedélyezi a hitelezőnek a fizetés beszedését, és saját bankjának utasítást ad a pénz kifzetésére. 
 
@@ -83,3 +82,6 @@ A vevőnek mindkét SEPA beszedési megbízási rendszerben rendelkezik bizonyos
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Minőségi társítások
 description: Ez a témakör azt mutatja be, hogyan használhatók a Microsoft Dynamics 365 Supply Chain Management minőségi társításai az értékesítési, beszerzési és termelési folyamatokkal kapcsolatos minőségi rendelések automatikus létrehozása során.
-author: rachel-profitt
+author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2020-06-18
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c6fab1b89b7e58d9e443c27da03a6b13afcc9c6
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
-ms.translationtype: HT
+ms.openlocfilehash: 28984730e5660414eec1ba087eb5de1eba4cbbb8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6022324"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571929"
 ---
 # <a name="quality-associations"></a>Minőségi társítások
 
@@ -344,7 +344,7 @@ Ha a gyártásban az **Eseménytípus** mezőt a *Befejezettnek jelentés* ért�
 </tr>
 <tr>
 <td>Rögzített mennyiség: 1</td>
-<td>Nincs</td>
+<td>Nem</td>
 <td>
 <p>Kötegszám: Nincs</p>
 <p>Sorozatszám: Nincs</p>
@@ -399,7 +399,7 @@ Ha a gyártásban az **Eseménytípus** mezőt a *Befejezettnek jelentés* ért�
 </tr>
 <tr>
 <td>Rögzített mennyiség: 2</td>
-<td>Nincs</td>
+<td>Nem</td>
 <td>
 <p>Kötegszám: Igen</p>
 <p>Sorozatszám: Igen</p>

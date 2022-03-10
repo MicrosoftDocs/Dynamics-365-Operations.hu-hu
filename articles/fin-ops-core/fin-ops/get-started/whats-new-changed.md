@@ -1,6 +1,6 @@
 ---
-title: Új vagy módosult elemek a Finance and Operations-alkalmazások kezdőlapján
-description: Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Finance and Operations-alkalmazások legújabb verziójának új szolgáltatásait.
+title: Újdonságok vagy változások a Finance and Operations alkalmazások kezdőlapján
+description: Ez az oldal olyan témaköröket mutat be, amelyek segítenek megismerni a Finance and Operations alkalmazások legújabb verzióinak új szolgáltatásait.
 author: josaw1
 ms.date: 02/14/2020
 ms.topic: article
@@ -17,30 +17,37 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 06f7e9b39b72a5e2cbbc06949dda7f16f2405250dd6c25b919260daca76e33bc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 8348f935ddee557a5f47b550c24f78cf68e37db2
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759185"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8075200"
 ---
-# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Új vagy módosult elemek a Finance and Operations-alkalmazások kezdőlapján
+# <a name="whats-new-or-changed-in-finance-and-operations-apps-home-page"></a>Újdonságok vagy változások a Finance and Operations alkalmazások kezdőlapján
 
 [!include [banner](../includes/banner.md)]
 
 
 ## <a name="application-releases"></a>Alkalmazáskiadások
 
-Ha látni szeretné, hogy mi új vagy módosult a Finance and Operations-alkalmazások egyes verzióiban, tekintse át az alábbi témaköröket:
+Ha meg szeretné tekinteni, hogy a Finance and Operations alkalmazás egyes kiadásaiban milyen újdonságok vagy változások történtek, tekintse meg a következő témaköröket:
 
-- **Pénzügy:** [Új vagy módosult elemek a Dynamics 365 Finance alkalmazásban](../../../finance/get-started/whats-new-home-page.md) 
+- **Pénzügy:** [Új vagy módosult elemek a Dynamics 365 Finance alkalmazásban](../../../finance/get-started/whats-new-home-page.md)
+- **Humánerőforrás (összevont infrastruktúra):**[A Microsoft újdonságai vagy változásai Dynamics 365 Human Resources](../../../human-resources/get-started/hr-whats-new-changed-10-0-25.md)  
 - **Supply Chain Management:** [Új vagy módosult elemek a Dynamics 365 Supply Chain Management alkalmazásban](../../../supply-chain/get-started/whats-new-home-page.md) 
 - **Kereskedelem:** [Új vagy módosult elemek a Dynamics 365 Commerce alkalmazásban](../../../commerce/get-started/whats-new-home-page.md)
+
+
+## <a name="stand-alone-applications"></a>Önálló alkalmazások
+
+Hogy megnézze, mi új vagy változott az önálló Dynamics 365 Human Resources, lásd a következő témát:
+
 - **Human Resources:** [Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban](../../../human-resources/hr-admin-whats-new.md)
 
 ## <a name="platform-updates"></a>Platformfrissítések
 
-A következő témakörben tekintheti meg, hogy milyen újdonságokat vagy módosításokat tartalmaznak a Finance and Operations-alkalmazások platformfrissítései:
+A Finance and Operations alkalmazások platformfrissítéseinek újdonságainak vagy változásainak megtekintéséhez tekintse meg a következő témakört:
 
 - [Új vagy módosult elemek a Platform frissítésekben](../../dev-itpro/get-started/whats-new-home-page.md)
 

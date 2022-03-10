@@ -1,12 +1,10 @@
 ---
 title: Állapotellenőrzés pénztárperifériákhoz és -szolgáltatásokhoz
 description: Ez a témakör áttekintést nyújt az állapotfelmérés műveleteiről a pénztárban (POS).
-author: rubendel
-manager: AnnBe
+author: BrianShook
 ms.date: 03/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -14,15 +12,15 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 48391a3160c42fdc94be9e7e62024e9e193b94dc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: cd4e97b8dbfc4faf336d4ea927342fd4fa3cc7cd
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5216675"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779872"
 ---
 # <a name="health-check-for-pos-peripherals-and-services"></a>Állapotellenőrzés pénztárperifériákhoz és -szolgáltatásokhoz
 

@@ -1,8 +1,8 @@
 ---
-title: Mértékváltozások feldolgozása
-description: A juttatási mérték változásainak feldolgozása a Microsoft Dynamics 365 Human Resources rendszerben, ha egy új vagy meglévő juttatási terv módosult a jogosultsági szabály beállításaiban.
-author: andreabichsel
-ms.date: 04/06/2020
+title: Módosítások arányának feldolgozása
+description: Ez a téma elmagyarázza, hogyan kell feldolgozni a juttatási mértékek módosítását a Microsoft Dynamics 365 Human Resources rendszerben.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,24 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 5cfecc4da90b4fb39bdece38095f3b25023e4cae
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
-ms.translationtype: HT
+ms.openlocfilehash: 5e0dfbdde8ee950a0341fffb1e268fff05434953
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6055700"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070375"
 ---
-# <a name="process-rate-changes"></a>Mértékváltozások feldolgozása
+# <a name="process-rate-changes"></a>Módosítások arányának feldolgozása
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A juttatási mérték változásainak feldolgozása a Microsoft Dynamics 365 Human Resources rendszerben, ha egy új vagy meglévő juttatási terv módosult a jogosultsági szabály beállításaiban. Ha új jogosultsági szabályt létre, majd hozzárendeli a tervhez, akkor a rendszer újból lefuttatja az ellenőrzést arra vonatkozóan, hogy a dolgozó jogosult-e a tervre az új jogosultsági lehetőségek alapján. 
+Ez a témakör elmagyarázza, hogyan kell feldolgozni a Microsoft Dynamics 365 Human Resources rendszerben a juttatási díjak módosítását, amikor egy új vagy meglévő juttatási terv jogosultsági szabályainak beállításai megváltoznak. Ha új jogosultsági szabályt létre, majd hozzárendeli a tervhez, akkor a rendszer újból lefuttatja az ellenőrzést arra vonatkozóan, hogy a dolgozó jogosult-e a tervre az új jogosultsági lehetőségek alapján. 
 
 1. A **Juttatások kezelése** munkaterületen, amely a **Feldolgozás** menüpontban található, válassza a **Mértékváltozásra vonatkozó frissítés feldolgozása** lehetőséget.
 

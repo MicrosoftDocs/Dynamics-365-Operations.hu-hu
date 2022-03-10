@@ -1,7 +1,7 @@
 ---
 title: Szállítási ütemezések
 description: A szállítási ütemezések lehetővé teszik a rendeléssor mennyiségének nyomon követését, amikor több szállítást használ egyetlen értékesítési rendeléshez, értékesítési ajánlathoz vagy beszerzési rendeléshez.
-author: ShylaThompson
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 213984
 ms.assetid: 44cac104-c36c-4371-a992-9178b3fd65e9
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3dbd66d499b5d5f9f8ef21c0ce3752031a5f4672
-ms.sourcegitcommit: 74e47075eab2b0b28f82b0d57f439719847ecb01
-ms.translationtype: HT
+ms.openlocfilehash: b50558c5da71351082d36276a3185e1f91543f2b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "6193782"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573465"
 ---
 # <a name="delivery-schedules"></a>Szállítási ütemezések
 

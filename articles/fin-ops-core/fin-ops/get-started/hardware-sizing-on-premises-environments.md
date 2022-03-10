@@ -2,8 +2,7 @@
 title: Hardverméretezési követelmények helyszíni környezetekben
 description: Ez a témakör a hardverméretezési követelményekkel foglalkozik helyszíni környezetekben.
 author: sericks007
-manager: AnnBe
-ms.date: 11/27/2019
+ms.date: 06/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +14,12 @@ ms.search.region: Global
 ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 07bbfa7c655a7125e0a9c61d2af2ba49b45782b0
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
-ms.translationtype: HT
+ms.openlocfilehash: 443b80e44a90a68610fbb2bb5a5f4b6b7d545fa7ad772edb3672972fa82f8cbd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570873"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763434"
 ---
 # <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Hardverméretezési követelmények helyszíni környezetekben
 
@@ -37,7 +36,7 @@ A dokumentáció áttekintése után megkezdheti a tranzakciós és egyidejű fe
 
 A következő ábrán látható összes tényező befolyásolja a méretezést. Minél részletesebb a begyűjtött információ, ön annál pontosabban tudja megállapítani a méretezést. A támogató adatok nélküli hardverméretezés valószínűleg pontatlan. Az abszolút minimális szükséges adat a tranzakció óránkénti sorsebesség-terhelés csúcspontja.
 
-[![Hardverméretezés helyszíni környezetekhez](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
+[![Hardverméretezés helyszíni környezetekhez.](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
 Balról jobbra haladva az első és az egyik legfontosabb tényező, ami a méretezés pontos becsléséhez szükséges, a tranzakció profil vagy a tranzakció jellemzés. Fontos, hogy mindig megtalálja a tranzakciós terjedelem óránkénti csúcspontját. Ha több csúcspont időszak van, akkor ezeket az időszakokat pontosan meg kell határozni.
 
@@ -133,9 +132,11 @@ A legtöbb esetben a két csomópontot használó ajánlott minimális követelm
 
 Az általános elérhetőségű verzió esetén csak egy SSRS-csomópontot lehet telepíteni. Figyelje az SSRS-csomópontját tesztelés közben, és szükség szerint emelje az SSRS számára elérhető processzormagok számát. Győződjön meg arról, hogy rendelkezik a virtuális állomáson olyan előre konfigurált másodlagos csomóponttal, amely eltér az SSRS virtuális géptől. Ez akkor fontos, ha probléma van az SSRS-t tároló virtuális géppel vagy a virtuális állomással. Ez esetben ki kellene őket cserélni.
 
+A 10.0.17-es verziótól kezdve további SSRS-csomópontokat is be lehet állítani a nagyobb rendelkezésre állás érdekében. További információ: [Az SQL Server Reporting Services (SSRS) csomópontok magas rendelkezésre állásának konfigurálása](../../dev-itpro/deployment/onprem-ssrsha.md).
+
 ## <a name="environment-orchestrator"></a>Környezeti szervező
 
-A szervező szolgáltatás kezeli az ön telepítését és az ehhez kapcsolódó LCS-szel való kommunikációt. Ez a szolgáltatás az elsődleges Service Fabric szolgáltatásként van telepítve, és legalább három virtuális gépet igényel. Ez a szolgáltatás egy helyen található a Service Fabric szervezési szolgáltatásokkal. Ezt a fürt terhelési csúcspontja alapján kell méretezni. További információkért lásd: [Önálló Service Fabric fürttelepítés tervezése és előkészítése](https://docs.microsoft.com/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+A szervező szolgáltatás kezeli az ön telepítését és az ehhez kapcsolódó LCS-szel való kommunikációt. Ez a szolgáltatás az elsődleges Service Fabric szolgáltatásként van telepítve, és legalább három virtuális gépet igényel. Ez a szolgáltatás egy helyen található a Service Fabric szervezési szolgáltatásokkal. Ezt a fürt terhelési csúcspontja alapján kell méretezni. További információkért lásd: [Önálló Service Fabric fürttelepítés tervezése és előkészítése](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
 ## <a name="virtualization-and-oversubscription"></a>Virtualizáció és túljegyzés
 

@@ -2,11 +2,9 @@
 title: Készletjelölés tervezési optimalizálással
 description: Ez a témakör a megerősített rendelések készletének megjelölésére használható beállításokról nyújt tájékoztatást a tervezésoptimalizálás során.
 author: ChristianRytt
-manager: tfehr
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MpsIntegrationParameters, MpsFitAnalysis
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 7813f570afb0260e6740507c9504320c3e87be93
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: dc94ca8b15d626d8ff64f50718d7d2e3e0326144465f3d27787805220842849f
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5263350"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6711905"
 ---
 # <a name="inventory-marking-with-planning-optimization"></a>Készletjelölés tervezési optimalizálással
 

@@ -2,11 +2,9 @@
 title: Rakomány-összeállítási munkaterület
 description: Ez a témakör azt mutatja be, hogyan lehet használni a rakományépítő munkaterületet.
 author: Henrikan
-manager: ''
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TMSLoadBuildWorkbench,TMSLoadBuildTemplateCreate,TMSLoadBuildStrategy,TMSLoadBuildTemplateApply
 audience: Application User
@@ -16,14 +14,16 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: d1ed91adba5c7accf9a18d7a754d33b2b35b848f
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 306ca4f77d9c1d4879d750992e51c8b83917839e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974225"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574857"
 ---
 # <a name="load-building-workbench"></a>Rakomány-összeállítási munkaterület
+
+[!include [banner](../../includes/banner.md)]
 
 A rakomány-összeállítási munkaterületen a rakományok létrehozásakor használhatók a rakomány-összeállítási stratégiák.
 
@@ -66,3 +66,6 @@ Ezután hozzárendelheti a rakomány-összeállítási stratégiát egy rakomán
 1. Tekintse át a javasolt rakományokat és a javasolt rakománysorokat.
 1. A művelet ablaktáblán válassza a **Rakományok létrehozása** lehetőséget, ha a **Javasolt rakománysorok** gyorslapjon szereplő forrásdokumentum-sorokon alapuló rakományokat kíván létrehozni.
 1. Zárja be a **Rakomány-összeállítási munkaterület** oldalt.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,9 +1,9 @@
 ---
-title: Figyelmeztetések áttekintése
+title: Figyelmeztetések áttekintése (videofelvételt tartalmaz)
 description: Ez a témakör általános tájékoztatást tartalmaz a figyelmeztetésekkel kapcsolatban. A figyelmeztetések használatával lehet információkat nyerni a munkanap során nyomon követni kívánt eseményekről.
 author: RichdiMSFT
 ms.date: 09/04/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: EventCreateRule
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: 5a92d84a5e8eaa2477d90df5065c0941d90dad5a
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
-ms.translationtype: HT
+ms.openlocfilehash: c3332bdf7f2edb693c95a4d5a6f95906e14c0a42
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5749852"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984968"
 ---
 # <a name="alerts-overview"></a>Figyelmeztetések áttekintése
 
@@ -77,7 +77,7 @@ A figyelmeztetési szabályok öt összetevőből állnak:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-A [Figyelmeztetések használata szűrt adatok figyeléséhez](https://youtu.be/ZYKMcv6kl9s) videó (fent látható) része a [Finance and Operations lejátszási listának](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), amely a YouTube oldalon érhető el.
+A [Figyelmeztetések használata szűrt adatok figyeléséhez](https://youtu.be/ZYKMcv6kl9s) video (fent látható) része a [Finance and Operations lejátszási listának](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), amely a YouTube oldalon érhető el.
 
 ### <a name="alert-rule-options"></a>Riasztási szabály beállításai
 

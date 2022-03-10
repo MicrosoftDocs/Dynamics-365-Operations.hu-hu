@@ -1,12 +1,10 @@
 ---
 title: Elektronikus számlák kibocstása a Finance és Supply Chain Management szolgáltatásokban
-description: Ez a témakör bemutatja, hogyan állíthat ki elektronikus számlákat a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban az Elektronikus számlázási bővítmény segítségével.
+description: Ez a témakör bemutatja, hogyan állíthat ki elektronikus számlákat a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban az Elektronikus számlázás segítségével.
 author: gionoder
-manager: AnnBe
-ms.date: 02/26/2021
+ms.date: 03/29/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -17,29 +15,27 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 099ebb56710e920f7b1453f32f23f59a80486ebf
-ms.sourcegitcommit: 105f65468b45799761c26e5d0ad9df4ff162c38d
-ms.translationtype: HT
+ms.openlocfilehash: 24909c2a2505724c159e939535c1d57cb66e48629862bebb32b3d72c0eb06c97
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5486953"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752126"
 ---
-# <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Elektronikus számlák kibocstása a Finance és Supply Chain Management szolgáltatásokban
+# <a name="issue-electronic-invoices-in-finance-and-supply-chain-management"></a>Elektronikus számlák kiállítása a Finance és a Supply Chain Management szolgáltatásban
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
-Ez a témakör bemutatja, hogyan állíthat ki elektronikus számlákat a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban az Elektronikus számlázási bővítmény segítségével.
+Ez a témakör bemutatja, hogyan állíthat ki elektronikus számlákat a Microsoft Dynamics 365 Finance és Dynamics 365 Supply Chain Management szolgáltatásokban az Elektronikus számlázás segítségével.
 
 
 ## <a name="feature-activation"></a>Funkció aktiválása
 
-Az elektronikus számlák Elektronikus számlázási bővítménnyel történő kiadásához aktiválnia kell a Finance and Supply Chain Management megoldásban a Funkcióhivatkozást.
+Az elektronikus számlák Elektronikus számlázással történő kiadásához aktiválnia kell a Finance és a Supply Chain Management megoldásban a Funkcióhivatkozást.
 
 Minden funkció egy adott elektronikus számlázási funkciónak felel meg, amely megfelel az adott ország/régió elektronikus számlázási követelményeinek.
 
-Az alábbi tábla bemutatja az Elektronikus számlázási bővítmény által potenciálisan támogatott funkciók listáját.
+Az alábbi tábla bemutatja az Elektronikus számlázás által potenciálisan támogatott funkciók listáját.
 
 | Név                                              | Ország/régió |
 |---------------------------------------------------|----------------|
@@ -60,19 +56,19 @@ Az alábbi tábla bemutatja az Elektronikus számlázási bővítmény által po
 |Norvég elektronikus számla                       |Norvégia          |
 |Spanyol elektronikus számla                         |Spanyolország           |
 
-Abban az esetben, ha van egy örökölt elektronikus számlázási funkció, amelyet az ország/régió honosítási köre támogat, ezen funkciók aktiválásának egyike kikapcsolja az örökölt funkciót és lehetővé teszi elektronikus számlák kiállítását az elektronikus számlázási bővítményen keresztül.
+Abban az esetben, ha van egy örökölt elektronikus számlázási funkció, amelyet az ország/régió honosítási köre támogat, ezen funkciók aktiválásának egyike kikapcsolja az örökölt funkciót és lehetővé teszi elektronikus számlák kiállítását az elektronikus számlázáson keresztül.
 
 > [!IMPORTANT]
-> Az Elektronikus számlázás bővítmény integrációs funkciójának engedélyezése után az új elektronikus számlázási tapasztalat alapértelmezés szerint ki van kapcsolva. A funkciókoncepció segítségével szelektíven engedélyezheti a jogi személyek számára az ország-/régióspecifikus funkciókat használó új élmények használatát. A **Globális** beállítás meghatározza a fennmaradó azon megyék/területek új élményét, amelyek nem szerepelnek kifejezetten a táblában.
+> Az Elektronikus számlázás integrációs funkciójának engedélyezése után az új elektronikus számlázási tapasztalat alapértelmezés szerint ki van kapcsolva. A funkciókoncepció segítségével szelektíven engedélyezheti a jogi személyek számára az ország-/régióspecifikus funkciókat használó új élmények használatát. A **Globális** beállítás meghatározza a fennmaradó azon megyék/területek új élményét, amelyek nem szerepelnek kifejezetten a táblában.
 
 ## <a name="submit-electronic-documents"></a>Elektronikus dokumentumok elküldése
 
-Az elektronikus dokumentumok beküldése jelenti a Finance and Supply Chain Management, valamint az Elektronikus számlázási bővítmény közötti kommunikáció egységes pontját. A kommunikációs folyamatok mindkét irányban folynak minden benyújtási esemény során:
+Az elektronikus dokumentumok beküldése jelenti a Finance and Supply Chain Management, valamint az Elektronikus számlázás közötti kommunikáció egységes pontját. A kommunikációs folyamatok mindkét irányban folynak minden benyújtási esemény során:
 
-- A **Finance and Supply Chain Management modultól az Elektronikus számlázási bővítményig** – a Finance and Supply Chain Management modul elküldi az absztrakt számlákat az Elektronikus számlázási bővítménybe. Szükség esetén az elektronikus számlázási funkciók részeként konfigurált változók tartalmát is elküldik.
-- **Az Elektronikus számlázási bővítményből a Finance and Supply Chain Management modulba** – az elektronikus számlázási funkciótól függően a Finance and Supply Chain Management megoldás a korábban benyújtott számlák feldolgozási eredményeiről kap frissítéseket az Elektronikus számlázási bővítményből. Ezenkívül az elektronikus számlázási funkciók részeként konfigurált változók tartalmát is elküldik.
+- A **Finance and Supply Chain Management modultól az Elektronikus számlázásig** – a Finance és a Supply Chain Management modul elküldi az absztrakt számlákat az Elektronikus számlázásnak. Szükség esetén az elektronikus számlázási funkciók részeként konfigurált változók tartalmát is elküldik.
+- **Az Elektronikus számlázásból a Finance and Supply Chain Management modulba** – az elektronikus számlázási funkciótól függően a Finance and Supply Chain Management megoldás a korábban benyújtott számlák feldolgozási eredményeiről kap frissítéseket az Elektronikus számlázásból. Ezenkívül az elektronikus számlázási funkciók részeként konfigurált változók tartalmát is elküldik.
 
-Ha elektronikus dokumentumokat szeretne benyújtani az Elektronikus számlázási bővítményhez a Finance and Supply Chain Management megoldásban, kattintson a **Szervezeti adminisztráció &gt; Időszakos &gt; Elektronikus dokumentumok &gt; Elektronikus dokumentumok benyújtása** lehetőségre.
+Ha elektronikus dokumentumokat szeretne benyújtani az Elektronikus számlázáshoz a Finance and Supply Chain Management megoldásban, kattintson a **Szervezeti adminisztráció &gt; Időszakos &gt; Elektronikus dokumentumok &gt; Elektronikus dokumentumok benyújtása** lehetőségre.
 
 A kiindulópont egy feladott számla. Ez a számla eltérő eredetű lehet, például értékesítési rendelésekből, projektszámlákból vagy szabadszöveges számlákból.
 
@@ -83,25 +79,25 @@ A benyújtási folyamat futtatható manuálisan vagy a háttérben.
 
 ## <a name="view-the-submission-logs"></a>A beküldési naplók megtekintése
 
-A Finance and Supply Chain Management modulban a benyújtási naplók segítségével megtekintheti az Elektronikus számlázási bővítménybe küldött adatok feldolgozásának eredményeit. Lépjen a **Szervezeti adminisztráció &gt; Időszakos &gt; Elektronikus dokumentumok &gt; Elektronikus dokumentum benyújtása** lehetőségre, majd a **Dokumentumtípus** mezőben válasszon ki egy értéket, amely szűri a naplókban szereplő számlák típusát.
+A Finance and Supply Chain Management modulban a benyújtási naplók segítségével megtekintheti az Elektronikus számlázásba küldött adatok feldolgozásának eredményeit. Lépjen a **Szervezeti adminisztráció &gt; Időszakos &gt; Elektronikus dokumentumok &gt; Elektronikus dokumentum benyújtása** lehetőségre, majd a **Dokumentumtípus** mezőben válasszon ki egy értéket, amely szűri a naplókban szereplő számlák típusát.
 
 Három lehetséges benyújtási állapot lehetséges:
 
-- **Ütemezve** – az Elektronikus számlázási bővítmény megkapta a Finance and Supply Chain Management modulból az adatokat, és folyamatban van az elektronikus számlázási funkció feldolgozása.
-- **Befejeződött** – az Elektronikus számlázási bővítmény a konfigurált módon sikeresen feldolgozta az elektronikus számlázási funkciót.
-- **Sikertelen** – az Elektronikus számlázási bővítmény hibát észlelt, vagy egy kivétel miatt leállt az elektronikus számlázási funkció feldolgozása közben.
+- **Ütemezve** – az Elektronikus számlázás megkapta a Finance and Supply Chain Management modulból az adatokat, és folyamatban van az elektronikus számlázási funkció feldolgozása.
+- **Befejeződött** – az Elektronikus számlázás a konfigurált módon sikeresen feldolgozta az elektronikus számlázási funkciót.
+- **Sikertelen** – az Elektronikus számlázás hibát észlelt, vagy egy kivétel miatt leállt az elektronikus számlázási funkció feldolgozása közben.
 
 > [!IMPORTANT]
-> A benyújtási állapot a feldolgozás azon állapotát jelenti, amelyet az Elektronikus számlázási bővítmény az elektronikus számlázási funkción végez. Nem magát az elektronikus számla végső állapotát jelzi.
+> A benyújtási állapot a feldolgozás azon állapotát jelenti, amelyet az Elektronikus számlázás az elektronikus számlázási funkción végez. Nem magát az elektronikus számla végső állapotát jelzi.
 >
-> Ha például egy elektronikus számlát egy külső webszolgáltatásnak kell jóváhagyásra benyújtani, a benyújtási állapot **Befejeződött**, de lehet, hogy az elektronikus számla állapota **Elutasítva**. Ebben az esetben az Elektronikus számlázási bővítmény a konfigurált módon sikeresen feldolgozta az elektronikus számlázási funkciót. Az elektronikus számlát azonban elutasították, mert nem felelt meg a webszolgáltatás által a számla jóváhagyására vonatkozóan létrehozott kritériumoknak.
+> Ha például egy elektronikus számlát egy külső webszolgáltatásnak kell jóváhagyásra benyújtani, a benyújtási állapot **Befejeződött**, de lehet, hogy az elektronikus számla állapota **Elutasítva**. Ebben az esetben az Elektronikus számlázás a konfigurált módon sikeresen feldolgozta az elektronikus számlázási funkciót. Az elektronikus számlát azonban elutasították, mert nem felelt meg a webszolgáltatás által a számla jóváhagyására vonatkozóan létrehozott kritériumoknak.
 
 A benyújtási naplók a következő további funkciókat foglalják magukban:
 
 - **Benyújtás részletei** – a fő benyújtás részleteinek megtekintése. A vizualizáció az elektronikus számlázási funkcióban konfigurált műveletek teljes végrehajtási naplóját jeleníti meg. Lehetővé teszi továbbá a felhasználók számára a feldolgozás során létrehozott fájlok letöltését is. Olyan helyzetekben, amikor a számlát egy külső webszolgáltatásnak kell jóváhagynia, lehetővé teszi a felhasználók számára a számla állapotának megtekintését.
 - **Kapcsolódó benyújtások** – a gyermekbenyújtások részleteinek megtekintése.
-- **Beküldések érvénytelenítése** – ez a funkció speciális benyújtási folyamatot tesz lehetővé olyan helyzetekben, amikor az elektronikus számlát egy külső webszolgáltatásnak kell jóváhagynia. Arra utasítja az Elektronikus számlázási bővítményt, hogy a webszolgáltatásnak olyan üzenetet küldjön, amely egy jóváhagyott elektronikus számla állapotának érvénytelenítésére szolgál a webszolgáltatás adatbázisában.
-- **Dokumentum újbóli benyújtása** – az Elektronikus számlázási bővítménybe már elküldött elektronikus dokumentum újbóli benyújtása. Teljesen új napló jön létre a **Benyújtás részletei** oldalon.
+- **Beküldések érvénytelenítése** – ez a funkció speciális benyújtási folyamatot tesz lehetővé olyan helyzetekben, amikor az elektronikus számlát egy külső webszolgáltatásnak kell jóváhagynia. Arra utasítja az Elektronikus számlázást, hogy a webszolgáltatásnak olyan üzenetet küldjön, amely egy jóváhagyott elektronikus számla állapotának érvénytelenítésére szolgál a webszolgáltatás adatbázisában.
+- **Dokumentum újbóli benyújtása** – az Elektronikus számlázásba már elküldött elektronikus dokumentum újbóli benyújtása. Új napló jön létre a **Benyújtás részletei** oldalon.
 - **Kapcsolódó beküldés küldése**
 
 

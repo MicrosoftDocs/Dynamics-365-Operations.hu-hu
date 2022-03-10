@@ -13,14 +13,17 @@ ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-06-25
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 43362589a31fa5a8ea3c109cef73c0889273dcc5
-ms.sourcegitcommit: 89bb2a7f402deed32998eddc1e56e75250e3d15e
-ms.translationtype: HT
+ms.openlocfilehash: b715aac51a27f691ec5369d062f233fbcf9b0abe
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "6314400"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069121"
 ---
 # <a name="payroll---no-yes-option-set"></a>Bérlista – Nem Igen beállításkészlet
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -34,7 +37,7 @@ Ez a felsorolás biztosítja a beállításkészletet a Human Resources virtuál
 
 | Érték | Címke | Leírás |
 | --- | --- | --- |
-| 200000000 | Nincs | Nem. |
+| 200000000 | Nem | Nem. |
 | 200000001 | Igen | Igen. |
 
 ## <a name="see-also"></a>Lásd még

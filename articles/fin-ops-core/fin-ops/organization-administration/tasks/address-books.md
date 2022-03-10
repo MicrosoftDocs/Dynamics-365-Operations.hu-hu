@@ -1,8 +1,7 @@
 ---
 title: Címjegyzékek konfigurálása
-description: Ezzel az eljárással, illetve A globális címjegyzék konfigurálásának tervezése során hozott döntésekkel, valamint a további címjegyzék témakörökkel a szervezet számára További címjegyzékeket állíthat be.
+description: Ezzel az eljárással további címjegyzékeket állíthat be a szervezet számára.
 author: msftbrking
-manager: AnnBe
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e3f415c7e1c05d36d22baf7a4e6119a25b1e9916
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
-ms.translationtype: HT
+ms.openlocfilehash: 1e9edd384cf8cc1373481fd47c040cdaeae7d050d2cdba5e0a9afb7c1d361362
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5570288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759113"
 ---
 # <a name="configure-address-books"></a>Címjegyzékek konfigurálása
 

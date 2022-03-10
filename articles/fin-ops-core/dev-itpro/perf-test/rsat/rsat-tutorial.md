@@ -1,26 +1,21 @@
 ---
 title: Regression Suite Automation Tool-oktatóanyag
 description: Ez a témakör bemutatja, hogy hogyan használható a Regression Suite Automation Tool (RSAT). Leírja a különböző funkciókat, és speciális parancsfájlkezelést használó példákat tartalmaz.
-author: robinarh
-manager: AnnBe
-ms.date: 01/15/2021
+author: FrankDahl
+ms.date: 09/23/2021
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-platform
-ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: rhaertle
-ms.custom: 21761
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 7c4c0f9340085341ab60f97b55dacf36624e5f46
-ms.sourcegitcommit: b337b647a1be4908fc361fb6d962e96a69f301a9
-ms.translationtype: HT
+ms.openlocfilehash: 2f31009424629221a8e4f130b0ec1879c6c6e3d4
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "5036713"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7781963"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool-oktatóanyag
 
@@ -69,11 +64,11 @@ A RSAT használatával több feladatrögzítést is felhasználhat több tesztes
 
 Ez a funkció annak ellenőrzésére használható, hogy történt-e művelet. Például egy termelési rendelés létrehozása, becslése, majd elindítása történt, megjelenik a „Termelés – Indítás” üzenetet, amellyel értesíti, hogy a termelési rendelés elindult.
 
-![Termelés – Indítás értesítés](./media/use_rsa_tool_05.png)
+![Termelés – Indítás értesítés.](./media/use_rsa_tool_05.png)
 
 Ezt az üzenetet a RSAT programon keresztül ellenőrizni lehet, ha megadja az üzenet szövegét a megfelelő rögzítéshez tartozó Excel paraméterfájl **MessageValidation** lapján.
 
-![Üzenet ellenőrzése lap](./media/use_rsa_tool_06.png)
+![Üzenet ellenőrzése lap.](./media/use_rsa_tool_06.png)
 
 Miután lefutott a teszteset, az Excel-paraméterfájlban szereplő üzenetet a program összehasonlítja az üzenettel. Ha az üzenetek nem egyeznek, a teszteset nem fog sikerülni.
 
@@ -84,13 +79,19 @@ Miután lefutott a teszteset, az Excel-paraméterfájlban szereplő üzenetet a 
 
 Ez a funkció képernyőképeket készít a feladatrögzítés során végrehajtott lépésekről. Ez a ellenőrzés vagy hibakeresés céljából hasznos.
 
-- A funkció használatához nyissa meg a **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elem értékét **hamis** értékről **igaz** értékre.
+- A funkció használatához az RSAT futtatása során felhasználói felülettel nyissa meg a **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\ Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Amikor futtatja a tesztesetet, az RSAT pillanatképeket (képeket) fog generálni a lépésekről a visszajátszási mappában munkakönyvtárban. Ha egy korábbi RSAT-verziót használ a képek a különálló **C:\\Users\\\<Username\>\\AppData\\Roaming\\regressionTool\\playback** mappába lesznek mentve, és minden futtatott tesztesethez egy külön mappa jön létre.
+- A funkció használatához az RSAT futtatása CLI-n keresztül (például Azure DevOps) nyissa meg a **Microsoft.Dynamics.ConsoleApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\ Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
+
+    ```xml
+    <add key="VerboseSnapshotsEnabled" value="false" />
+    ```
+
+Amikor futtatja a teszteseteket, az RSAT pillanatképeket (képeket) fog generálni a lépésekről a visszajátszási mappába elmenti azokat a munkakönyvtárban. Az mappában egy külön almappa jön létre **StepSnapshots** nevű mappában. Ez a mappa a futtatott tesztesetek pillanatképét tartalmazza.
 
 ## <a name="assignment"></a>Hozzárendelés
 
@@ -106,15 +107,15 @@ Amikor futtatja a tesztesetet, az RSAT pillanatképeket (képeket) fog generáln
 
 A következő ábra bemutatja az adott eset folyamatát.
 
-![A bemutató eset folyamata](./media/use_rsa_tool_14.png)
+![A bemutató eset folyamata.](./media/use_rsa_tool_14.png)
 
 A következő ábra bemutatja az üzleti folyamatok hierarchiáját ehhez a forgatókönyvhöz az LCS Üzletifolyamat-modellező moduljában.
 
-![A bemutató eset üzleti folyamatai](./media/use_rsa_tool_15.png)
+![A bemutató eset üzleti folyamatai.](./media/use_rsa_tool_15.png)
 
 ## <a name="strategy--key-learning"></a>Stratégia – Kulcsfontosságú tanulási pontok
 
-### <a name="data"></a>Adat
+### <a name="data"></a>Adatok
 
 - Győződjön meg róla, hogy rendelkezik reprezentatív adatmennyiséggel (termelési/arany konfigurációs adatok másolata és áttelepített adatok).
 - Amikor a feladatrögzítőn keresztül új adatokat hoz létre, olyan tesztneveket hozzon létre, amelyek nem ütköznek a meglévő nevekkel (például használjon **RSATxxx** előtagot).
@@ -523,7 +524,7 @@ for ($i = $start; $i -lt $start + $nr; $i++ )
 
 A következő példa egy Open Data protokoll (OData) hívással keresi meg a beszerzési rendelések rendelési állapotát. Ha az állapot nem **számlázott**, akkor például lehívhat egy RSAT-tesztet, amely feladja a számlát.
 
-```xpp
+```powershell
 function Odata_Get
 {
     Param ( [string] $environment, [string] $cmd )
@@ -556,3 +557,6 @@ $orderStatus = PurchaseOrderStatus -environment $environment -purchaseOrderNumbe
 if ($orderStatus -eq $null) {   write-host 'doesn''t exist'}
 elseif ($orderStatus -ne 'invoiced') { RunTestCase "PostInvoice" }
 ```
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

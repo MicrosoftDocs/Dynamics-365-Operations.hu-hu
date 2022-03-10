@@ -2,7 +2,6 @@
 title: Mezőleírások megtekintése és exportálása
 description: Ez a cikk leírja, hogy hogyan tekinthetőek a mezőleírások, illetve hogy hogyan exportálhatóak a leírások a Mezőleírások oldal segítségével.
 author: rschloma
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -16,16 +15,19 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 265b540ba36b7526a8d6cb64f29157b6126e4dae
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
-ms.translationtype: HT
+ms.openlocfilehash: ea52c39ef1c7d7b62f20da9fe4d94103119ccc23
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5566198"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069273"
 ---
 # <a name="view-and-export-field-descriptions"></a>Mezőleírások megtekintése és exportálása
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a cikk leírja, hogy hogyan tekinthetőek a mezőleírások, illetve hogy hogyan exportálhatóak a leírások a Mezőleírások oldal segítségével.
 
@@ -44,7 +46,7 @@ A mezőleírásokat az egérmutató adott mező fölé navigálásával tekinthe
 
 Az alábbi ábrán az a mezőleírás látható, amely az egérmutató **Cikkek zárolása leltár közben** mező fölé vitelekor jelenik meg.
 
-[![Példa egy mezőleírásra](./media/field-description.png)](./media/field-description.png)
+[![Példa egy mezőleírásra.](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>A Mezőleírások oldal segítségével megtekintheti és exportálhatja a mezőkhöz tartozó súgót
 

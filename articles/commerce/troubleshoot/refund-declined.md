@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 99fd4b816b1a3a1fe3c2d1579be45b43fdc3d385
-ms.sourcegitcommit: 08ce2a9ca1f02064beabfb9b228717d39882164b
-ms.translationtype: HT
+ms.openlocfilehash: 8880d72d702758d611755bce48a331e3f2e28ca1b7abf485e8b4f7301317c875
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "6020756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738624"
 ---
 # <a name="refund-on-a-return-order-is-declined"></a>Visszárurendelés visszatérítése elutasítva
 
@@ -34,9 +34,9 @@ A visszatérítés nem alkalmazható, ha a visszárurendelés számlázására h
 
 A fizetésengedélyezési részletek a következő hibaüzenetet tartalmazzák: „Az Adyen gateway SendRequest() sikertelen volt "InternalServerError".22144; Adyen üres választ adott vissza. (22001);”
 
-![Visszárurendelés visszatérítését elutasították](media/refund-order-decline.jpg)
+![Visszárurendelés visszatérítését elutasították.](media/refund-order-decline.jpg)
 
-## <a name="resolution"></a>Felbontás
+## <a name="resolution"></a>Megoldás
 
 ### <a name="enable-blind-returns-in-adyen"></a>Nyugta nélküli visszatérítések engedélyezése az Adyenben
 

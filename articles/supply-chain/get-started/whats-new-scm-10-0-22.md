@@ -1,28 +1,27 @@
 ---
-title: A Dynamics 365 Supply Chain Management 10.0.22 előzetes verziója (2021. november)
+title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.22 alkalmazásban (2021. november)
 description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.22 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
 ms.date: 08/09/2021
 ms.topic: article
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c4aac62b36cd271e1c5fc3bcbbfdd785963fc368
-ms.sourcegitcommit: 24e20b3b96834b23311f1bf5dbab28baf3323728
-ms.translationtype: HT
+ms.openlocfilehash: a795f88aed78582ad4a2faa90ab1c2529017850f
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "7484072"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778157"
 ---
-# <a name="preview-of-dynamics-365-supply-chain-management-10022-november-2021"></a>A Dynamics 365 Supply Chain Management 10.0.22 előzetes verziója (2021. november)
+# <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10022-november-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.22 alkalmazásban (2021. november)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.22 előzetes kiadásának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.995 a buildszáma, és a következő módon érhető el:
+Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.22 változatának új vagy módosított szolgáltatásait írja le. Ennek a verziónak 10.0.995 a buildszáma, és a következő módon érhető el:
 
 - **Kiadás előzetes verziója:** 2021. szeptember
 - **A kiadás nyilvános megjelenése (önkiszolgáló frissítés):** 2021. október
@@ -40,13 +39,11 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: A *F
 
 Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tartalmazza: Ezek közül mindegyik fejlesztés egy már meglévő funkciót fejleszt tovább. Mivel fejlesztésekről van szó, nem szerepelnek a [kiadási tervben](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features). Alapértelmezés szerint mindegyik fejlesztés ki van kapcsolva (hacsak nincs másképpen jelezve), így biztos lehet abban, hogy nem ütköznek a meglévő testreszabásokkal vagy beállításokkal. Ha e funkciók bármelyikét használni szeretné, kifejezetten engedélyeznie kell a [Funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Szolgáltatásterület | Funkcióneve a funkciókezelésben | További információ |
+| Modul | Funkcióneve a funkciókezelésben | További információ |
 |---|---|---|
-| Költségkezelés | Kapcsolódó bizonylatok létrehozása elszámolóár kerekítési átértékeléseihez | <p>Pénzügyi készletfeladáskor (például értékesítési rendelés számlája vagy készlettranzakció) történik, ennek a funkciónak az hatására a rendszer létrehoz egy külön bizonylatot minden kapcsolódó elszámolóáras kerekítési átértékeléshez, és kapcsolódó bizonylatként csatolja a pénzügyi feladási bizonylathoz.</p><p>E funkció nélkül a rendszer ugyanazon bizonylatfeladás elszámolóár-kerekítési átértékeléseit rögzíti. Ez a viselkedés bizonyos esetekben ütköző dátumadatokat is okozhat, mivel az átértékelések a munkamenet vagy a rendszer dátumát használják, míg a pénzügyi feladások a feladási dátumot használják.</p> |
 | Elosztott hibrid topológia | *(Nincs szükség funkciókezelésre.)* | <p>Ez a kiadás kibővíti a raktárkezelési munkaterhelés kimenő rakománytervezési lehetőségeit a felhő- és peremskálaegységek esetén.</p><p>További információk: [Raktárkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-warehousing.md).</p> |
 | Tervezési változáskezelés | Változatlétrehozás tervezési termékekhez | <p>Ezzel a funkcióval egy termék színe, mérete, stílusa és konfigurációdimenziói alapján több változat is létrehozható egy mérnöki termékhez.</p><p>További tájékoztatás: [Változatok létrehozása tervezési termékekhez](../engineering-change-management/engineering-variants.md).</p> |
 | Készlet- és raktárkezelés | Készletláthatósági integráció foglalási ellenszámlával | <p>Ez a funkció csak akkor engedélyezhető, ha engedélyezve van a *Készletláthatóság integrációja* funkció. Ezzel a funkcióval a készlet láthatóságán végzett ellenfoglalásokat lehet kiegyenlítetni.</p><p>További információért lásd a [Készletláthatósági foglalások](../inventory/inventory-visibility-reservations.md) című részt.</p> |
-| Értékesítés és marketing | A feladásra kiválasztható értékesítési rendelések számának korlátozása | <p>Ez a paraméter automatikusan engedélyezett. A **Követelések paraméterei** laphoz hozzáadja a **Könyveléshez szükséges értékesítési megbízások maximális száma** nevű beállítást. Ez a mező lehetővé teszi, hogy meghatározza a visszaigazolások, komissiózási listák, csomagolószelvények és számlák feladásakor az értékesítési rendelés listaoldaláról történő feladásakor kiválasztható értékesítési rendelések maximális számát. Az alapértelmezett érték *100*.</p><p>ez a funkció segít javítani az értékesítési rendeléslista oldal teljesítményét, amikor jelentős számú értékesítési megrendelés van kijelölve. Ez nincs hatással az időszakos feladat által feldolgozható értékesítési megbízások számára.</p> |
 
 ## <a name="new-and-updated-documentation-resources"></a>Új és frissített dokumentáció-erőforrások
 
@@ -63,7 +60,7 @@ A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelent�
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>A Finance and Operations-alkalmazások platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.22 platformfrissítéseket tartalmaz. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.22 verziójához (2021. november)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md). <!-- KFM: Confirm link -->
+A Microsoft Dynamics 365 Supply Chain Management 10.0.22 platformfrissítéseket tartalmaz. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.22 verziójához (2021. november)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 

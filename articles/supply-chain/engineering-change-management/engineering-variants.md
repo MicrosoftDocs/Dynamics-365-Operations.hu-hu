@@ -10,18 +10,22 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 57eda6a833df6ff8e91c006bbc5096554eff6c503a8b7ba2bd0b13e2f8e98f56
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 7921983a965af5557f54f608418c8ec922256ba6
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766147"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103638"
 ---
 # <a name="generate-variants-for-engineering-products"></a>Változatok létrehozása tervezési termékekhez
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör azt ismerteti, hogyan lehet változatokat létrehozni tervezési termékekhez.
+
+## <a name="turn-variant-generation-for-engineering-products-on-or-off"></a>Változatok generálása mérnöki termékeknél be- és kikapcsolása
+
+Az ebben a *témakörben* *leírt* funkciókhoz a mérnöki termékekhez szükséges, hogy mind a Mérnöki változáskezelés, mind a Változatok generálása be legyen kapcsolva a rendszerben. A szolgáltatások be- és kikapcsolásáról a Géptervezési változáskezelés áttekintése című témakörben [olvashat](product-engineering-overview.md).
 
 ## <a name="generate-one-or-more-new-variants-of-an-engineering-product"></a>Tervezési termék egy vagy több új változatának létrehozása
 
@@ -38,10 +42,15 @@ Az alábbi eljárás bemutatja, hogyan lehet több változatot létrehozni, amel
 1. Szükség szerint adjon hozzá egy anyagjegyzéket (BOM) és egy útvonalat a változathoz.
 1. Nyissa meg a műveleti ablaktáblán a **Termék** lapját, és az **Alaptermék** csoportban válassza a **Termékdimenziók** lehetőséget.
 1. Megnyílik a **Termékdimenziók** lap. Ez a lap tartalmaz egy lapot az egyes elérhető dimenziókhoz. Minden egyes lapon adjon meg egy sort mindegyik értékhez, amely az egyes dimenziókhoz támogatottak lesznek. (Ebben a példában sorokat adhat hozzá a **Szín** lapon a *Fehér*, a *Sárga* és a *Zöld* színekhez).
-1. Zárja be a lapot, és válassza a **Kiadott termékváltozatok** lehetőséget. Figyelje meg, hogy megjelenik az első létrehozott változat (fehér V-1).
-1. Válassza a **Változatjavaslatok** lehetőséget.
-1. A rendszer a létrehozott színértékekkel (például fehér V-1, sárga V-1 és zöld V-1) javasol változatokat.
-1. Válassza ki a javasolt változatokat, és az **OK** lehetőséget választva adja ki a változatokat a tervezővállalatnak. Figyeljen arra, hogy a következő feltételek érvényesek: 
+1. Zárja be a lapot, majd válassza a **Kiadott termékváltozatok** lehetőséget. Figyelje meg, hogy az első létrehozott változat (kék V-1) megjelenik.
+1. A Művelet panel **Termékváltozat** lapján válassza az **Változatjavaslatok** menüpontot.
+1. A **Változatjavaslatok** párbeszédpanelen hajtsa végre a következő lépések valamelyikét:
+
+    - A párbeszédpanel tetején minden egyes elérhető dimenzióhoz van egy szakasz. Mindegyik dimenziónál jelölje be mindegyik érték jelölőnégyzetét, amelyekhez változatjavaslatot szeretne létrehozni, majd válassza a **Javaslat** lehetőséget az eszköztáron. A rendszer hozzáadta a megfelelő javaslatokat a **Javasolt változatok** szakaszhoz.
+    - Válassza az eszköztárban az **Javaslat mindenhez** lehetőséget a dimenzióértékek összes elérhető kombinációjához használható változatjavaslatok létrehozásához. A rendszer hozzáadta a javaslatokat a **Javasolt változatok** szakaszhoz.
+
+1. A **Javasolt változatok** szakaszban jelölje be mindegyik létrehozni kívánt változat jelölőnégyzetét. Ezután nyomja meg a **Létrehozás** elemet a kiválasztott változatok létrehozásához és kibocsátásához a tervezővállalat számára. A következő feltételeket kell figyelembe venni:
+
     - A létrehozott változatok közül egyiknek sem lesz anyagjegyzéke vagy útvonala.
     - Ezeknek a változatoknak az attribútumai alapértelmezésben a tervezési kategóriából lesznek átmásolva, és nem másolhatók át az előző változatból.
 

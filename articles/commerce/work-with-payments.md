@@ -2,11 +2,9 @@
 title: Fizetési módok hívásközpontoknál
 description: Ez a témakör bemutatja a Dynamics 365 Commerce rendszer hívásközpontjaiban használható különböző fizetési módokat.
 author: josaw1
-manager: AnnBe
 ms.date: 03/28/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: MCRSalesTableOrderHistory, MCRCCAuthManagement
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 939776b7bf55eafa8ca548905faa47cfa578a7e0
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: b89daf41c8a14f5e03dc2a67c95e9d1fed2d5cab891ae65e20655c285b1f6ac2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5210803"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762572"
 ---
 # <a name="payment-methods-in-call-centers"></a>Fizetési módok hívásközpontoknál
 

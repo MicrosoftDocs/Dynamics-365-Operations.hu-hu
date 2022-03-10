@@ -1,28 +1,25 @@
 ---
 title: Használja a biztonsági készlet naplót, hogy frissítse a minimális fedezetet
 description: Ez az eljárás bemutatja, hogyan számolja ki a minimális fedezet javaslatokat a már meglévő tranzakciók alapján és ezután frissítse a cikkfedezetet a javaslatokkal.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqItemJournalName, ReqItemJournalSafetyStock, EcoResProductInformationDialog, EcoResProductDetailsExtended, ReqItemTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0d69daf3d307ba72ff6017d91849e3d22bd0bd85
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5ae2209fc2412a4a67b46d6eb82ecb70aafc0159
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429748"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573609"
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Használja a biztonsági készlet naplót, hogy frissítse a minimális fedezetet
 
@@ -66,3 +63,6 @@ Ez az eljárás bemutatja, hogyan számolja ki a minimális fedezet javaslatokat
 5. A **Művelet panelen** kattintson a Tervezés elemre.
 6. Kattintson a **Cikkfedezet** elemre. Fontos megjegyezni, hogy a **Minimális mennyiség** frissült, így most már a biztonsági készlet naplójában szereplő minimum mennyiséget tükrözi.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

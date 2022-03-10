@@ -5,22 +5,22 @@ author: t-benebo
 ms.date: 10/09/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: benebotg
 ms.search.validFrom: 2019-08-15
-ms.openlocfilehash: b7c0d8b4108821d1bf0f505f3578cb931781dbb835ae4a2519398a5549584224
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 66c5962933387831bbc3f17b9f29128ceaaf750b
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6761390"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063212"
 ---
-# <a name="integrated-sites-and-warehouses"></a>Integrált telephelyek és raktárak
+# <a name="integrated-sites-and-warehouses"></a>Integrált helyek és raktárak
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ez a témakör a hely- és raktáradatok integrációját ismerteti a Finance and Operations és a Dataverse között. Az üzemeltetési helyszínek és a raktárak közös fogalmak az Supply Chain Management alkalmazásban. Ezek a vállalat ellátási láncának modellezésére használatosak.
 

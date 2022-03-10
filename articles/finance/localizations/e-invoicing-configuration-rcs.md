@@ -2,7 +2,7 @@
 title: Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
 description: Ez a témakör bemutatja, hogy hogyan konfigurálhatja az Elektronikus számlázást a Dynamics 365 Regulatory Configuration Services (RCS) szolgáltatásban.
 author: gionoder
-ms.date: 03/29/2021
+ms.date: 11/08/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: d7945cc899cf161f294dfcc3f6d1a9a79c9453ab
-ms.sourcegitcommit: 7d0cfb359a4abc7392ddb3f0b3e9539c40b7204d
-ms.translationtype: HT
+ms.openlocfilehash: 640244612a2a553ec09661635787cb7f8694283b
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "5897720"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779670"
 ---
 # <a name="configure-electronic-invoicing-in-regulatory-configuration-services-rcs"></a>Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
 
@@ -28,7 +28,7 @@ ms.locfileid: "5897720"
 
 Ez a témakör a Dynamics 365 Regulatory Configuration Services (RCS) Elektronikus számlázásnak konfigurációs lehetőségeiről nyújt tájékoztatást.
 
-Az Elektronikus számlázás konfigurációs lehetőségei révén segíti az elektronikus számlákra vonatkozó üzleti és jogi követelményeknek programozás nélkül való megfelelését. Az olyan helyzetekben pedig, amikor az elektronikus számlákat elektronikusan egy webes szolgáltatásnak jóvá kell hagynia, a konfigurációs képességek segítséget nyújtanak a webes szolgáltatásokkal történő üzenetváltásban, mindezt programozás nélkül.
+Az Elektronikus számlázás konfigurációs lehetőségei révén segíti az elektronikus számlákra vonatkozó üzleti és jogi követelményeknek programozás nélkül való megfelelését. És olyan helyzetekben, amikor egy webszolgáltatásnak elektronikusan jóvá kell hagynia az elektronikus számlákat, a konfigurációs képességek segítséget nyújtanak a webszolgáltatással történő üzenetcserével kapcsolatos, kód nélküli követelményeknek is.
 
 ## <a name="electronic-reporting"></a>Elektronikus jelentés
 
@@ -46,21 +46,13 @@ Ez a funkció olyan eseteket is támogat, ahol meg kell adni a fájlformátum-sp
 
 Végül a funkciók támogatják az olyan külső webes szolgáltatásokkal történő üzenetváltást, amelyek az adóhatóság vagy valamilyen elismert fél által biztosított szolgáltatásokat, valamint engedélyezési kéréseket vagy jóváhagyási pecsétet tartalmaznak az elektronikus számlán.
 
-### <a name="availability-of-electronic-invoicing-features"></a>Az elektronikus számlázási funkciók elérhetősége
+## <a name="availability-of-electronic-invoicing-features"></a>Az elektronikus számlázási funkciók elérhetősége
 
 Az elektronikus számlázási funkciók elérhetősége az országtól vagy területtől függ. Bár egyes szolgáltatások általában elérhetők, mások előnézetben érhetők el.
 
-#### <a name="generally-available-features"></a>Általánosan elérhető funkciók
+### <a name="generally-available-features"></a>Általánosan elérhető funkciók
 
 Az alábbi táblázat bemutatja az általánosan elérhető elektronikus számlázási funkciókat.
-
-| Ország/régió | Funkció neve                         | Üzleti dokumentum |
-|----------------|--------------------------------------|-------------------|
-| Egyiptom          | Egyiptomi elektronikus számla (EG) | Értékesítési és projektszámlák |
-
-#### <a name="preview-features"></a>Előnézeti funkciók
-
-Az alábbi táblázat bemutatja az előnézetben jelenleg elérhető elektronikus számlázási funkciókat.
 
 | Ország/régió | Funkció neve                         | Üzleti dokumentum |
 |----------------|--------------------------------------|-------------------|
@@ -68,29 +60,40 @@ Az alábbi táblázat bemutatja az előnézetben jelenleg elérhető elektroniku
 | Belgium        | Belga elektronikus számla (BE)      | Értékesítési és projektszámlák |
 | Brazília         | Brazil NF-e (BR)                  | 55-ös modellű pénzügyi bizonylat, helyesbítő levelek, érvénytelenítések és elvetések |
 | Brazília         | Brazil NFS-e ABRASF Curitiba (BR) | Szolgáltatási pénzügyi bizonylatok |
+| Brazília         | Brazíliai NF-e import e-mailből (BR) | 55. modell típusú pénzügyi bizonylat |
 | Dánia        | Dán elektronikus számla (DK)       | Értékesítési és projektszámlák |
+| Egyiptom          | Egyiptomi elektronikus számla (EG)     | Értékesítési és projektszámlák |
 | Észtország        | Észt elektronikus számla (EE)     | Értékesítési és projektszámlák |
 | Finnország        | Finn elektronikus számla (FI)      | Értékesítési és projektszámlák |
 | Franciaország         | Francia elektronikus számla (FR)       | Értékesítési és projektszámlák |
 | Németország        | Német elektronikus számla (DE)       | Értékesítési és projektszámlák |
 | Olaszország          | FatturaPA (IT)                       | Értékesítési és projektszámlák |
-| Mexikó         | Mexican CFDI (MX)                    | Értékesítési számlák, szállítólevelek, készletátvitelek, fizetéskiegészítések és érvénytelenítések |
 | Hollandia    | Holland elektronikus számla (NL)        | Értékesítési és projektszámlák |
 | Norvégia         | Norvég elektronikus számla (NO)    | Értékesítési és projektszámlák |
 | Spanyolország          | Spanyol elektronikus számla (ES)      | Értékesítési és projektszámlák |
 | Európa         | PEPPOL elektronikus számla            | PEPPOL értékesítési és projektszámlák |
+| Európa         | PEPPOL szállítói számla                | PEPPOL import szállítói számlák |
+| Szaúd-Arábia   | Szaúd-arábiai elektronikus számla (SA)| Értékesítési és projektszámlák |
+
+### <a name="preview-features"></a>Előnézeti funkciók
+
+Az alábbi táblázat bemutatja az előnézetben jelenleg elérhető elektronikus számlázási funkciókat.
+
+| Ország/régió | Funkció neve                         | Üzleti dokumentum |
+|----------------|--------------------------------------|-------------------|
+| Mexikó         | Mexican CFDI (MX)                    | Értékesítési számlák, szállítólevelek, készletátvitelek, fizetéskiegészítések és érvénytelenítések |
 
 ### <a name="configurable-components-of-electronic-invoicing-features"></a>Az elektronikus számlázási funkciók konfigurálható összetevői
 
 Az elektronikus számlázás funkciói a konfigurálható összetevők következő csoportjaiból állnak:
 
-- **Formátumok** – A formátumok segítségével konfigurálhatja, hogy mit kell az Elektronikus számlázásnak generálnia, amikor egy elektronikus dokumentum elektronikus számlává válik. A formátumok közé tartozik az elektronikus számla formátumkonfigurációja, valamint a kérések és a válaszok küldésére használt fájlok és üzenetek formátuma, amikor egy külső webszolgáltatással való kommunikációra van szükség.
-- **Műveletek** – a Műveletek segítségével beállíthatja, hogy hogyan generálja az Elektronikus számlázás a Finance and Supply Chain Management szolgáltatás által küldött elektronikus dokumentum átalakítását elektronikus számlává.
-- **Alkalmazhatósági szabályok** – az alkalmazhatósági szabályok segítségével konfigurálhatja azt a kontextust, amelyet az Elektronikus számlázásnak figyelembe kell vennie az elektronikus számlázási funkciók feldolgozásához.
-- **Változók** – a változók segítségével konfigurálhatja a konfigurációs logika felépítését. A változók egy adott művelet végrehajtásához értékbemenetkén is működhetnek. Arra is lehetőség van, hogy értékcsereként működjenek a Finance and Supply Chain Management és az Elektronikus számlázás között.
-- **Elektronikusdokumentum-modell leképezése** – az elektronikus dokumentummodellek leképezése lehetővé teszi az ER modell-leképezés konfigurálását. A modell-leképezés meghatározza annak az absztrakt számlának az adatleképezését, amely elektronikus dokumentumok beküldése esetén integrálva van az Elektronikus számlázásba.
-- **Számla kontextusmodellje** – a számla kontextusmodellje segítségével konfigurálhatja az ER számla kontextusmodelljét, és megadhatja az elektronikus számlázási funkciók kontextusát.
-- **Választípusok** – a választípusok segítségével beállíthatja, hogy az Elektronikus számlázásnak mit kell frissítenie a Finance and Supply Chain Management modulban az elektronikus számlafeldolgozás eredményeként.
+- **Formátumok**: A formátumok segítségével konfigurálhatja, hogy mit kell az Elektronikus számlázásnak generálnia, amikor egy elektronikus dokumentum elektronikus számlává válik. A formátumok közé tartozik az elektronikus számla formátumkonfigurációja, valamint a kérések és a válaszok küldésére használt fájlok és üzenetek formátuma, amikor egy külső webszolgáltatással való kommunikációra van szükség.
+- **Műveletek**: A Műveletek segítségével beállíthatja, hogy hogyan generálja az Elektronikus számlázás a Finance and Supply Chain Management szolgáltatás által küldött elektronikus dokumentum átalakítását elektronikus számlává.
+- **Alkalmazhatósági szabályok**: Az alkalmazhatósági szabályok segítségével konfigurálhatja azt a kontextust, amelyet az Elektronikus számlázásnak figyelembe kell vennie az elektronikus számlázási funkció feldolgozásához.
+- **Változók**: A változók segítségével konfigurálhatja a konfigurációs logika felépítését. A változók egy adott művelet végrehajtásához értékbemenetkén is működhetnek. Arra is lehetőség van, hogy értékcsereként működjenek a Finance and Supply Chain Management és az Elektronikus számlázás között.
+- **Elektronikusdokumentum-modell leképezése**: Az elektronikus dokumentummodellek leképezése lehetővé teszi az ER modell-leképezés konfigurálását. A modell-leképezés meghatározza annak az absztrakt számlának az adatleképezését, amely elektronikus dokumentumok beküldése esetén integrálva van az Elektronikus számlázásba.
+- **Számla kontextusmodellje**: A számla kontextusmodellje segítségével konfigurálhatja az ER számla kontextusmodelljét, és megadhatja az elektronikus számlázási funkció kontextusát.
+- **Választípusok**: A választípusok segítségével beállíthatja, hogy az Elektronikus számlázásnak mit kell frissítenie a Finance and Supply Chain Management modulban az elektronikus számlafeldolgozás eredményeként.
 
 ### <a name="formats"></a>Formátumok
 
@@ -195,6 +198,13 @@ A következő listák megjeleníti az elektronikus számlázási funkciókhoz el
 - Értékesítési számla (ES)
 - Projektszámla (ES)
 
+#### <a name="saudi-arabian-sa-electronic-invoice-sales-and-project-invoices-for-saudi-arabia"></a>Szaúd-arábiai elektronikus számla : Szaúd-Arábia értékesítési és projektszámlái
+
+- Értékesítés - e-számla (SA)
+- Projekt - e-számla (SA)
+
+Az elektronikus számlázási szolgáltatással azonnal használatba vehető elektronikus jelentéskészítési formátumkonfigurációk mellett saját elektronikus jelentéskészítési formátumkonfigurációkat is létrehozhat. Az elektronikus számlázási funkciókhoz létrehozott formátumkonfigurációk azonban nem támogatják a Finance és a Supply Chain Management tábláira történő közvetlen hivatkozást, illetve a megfelelő metaadatokat. Csak az elektronikus jelentéskészítési modellleképezésre mutató hivatkozások támogatottak.
+
 ### <a name="actions"></a>Műveletek
 
 A következő táblázat felsorolja a rendelkezésre álló műveleteket, valamint azt, hogy jelenleg elérhetők-e vagy még az előzetes verzióban vannak.
@@ -202,10 +212,10 @@ A következő táblázat felsorolja a rendelkezésre álló műveleteket, valami
 | Művelet                                        | Leírás                                                                  | Elérhetőség         |
 |-----------------------------------------------|------------------------------------------------------------------------------|----------------------|
 | Dokumentum átalakítása                            | Az Elektronikus jelentés formátum futtatása a dokumentum átalakításához.                   | Általánosan elérhető  |
-| XML-dokumentum aláírása                             | XML-dokumentumok aláírása digitális aláírással.                                   | Előnézetben           |
+| XML-dokumentum aláírása                             | XML-dokumentumok aláírása digitális aláírással.                                   | Általánosan elérhető  |
 | JSON-dokumentum aláírása az egyiptomi adóhatóság számára | JSON-dokumentumok aláírása digitális aláírással az egyiptomi adóhatóság számára.       | Általánosan elérhető  |
 | Integráció az Egyiptomi ETA-szolgáltatással           | Kommunikáció az egyiptomi adóhatósággal.                                     | Általánosan elérhető  |
-| Brazil SEFAZ-szolgáltatás hívása                  | Integráció a Brazil SEFAZ-szolgáltatással a pénzügyi bizonylatok benyújtásához.       | Előnézetben           |
+| Brazil SEFAZ-szolgáltatás hívása                  | Integráció a Brazil SEFAZ-szolgáltatással a pénzügyi bizonylatok benyújtásához.       | Általánosan elérhető  |
 | Mexikói PAC-szolgáltatás hívása                      | Integráció a mexikói PAC-szolgáltatással CFDI beküldéséhez.                      | Előnézetben           |
 | Folyamatválasz                              | A webszolgáltatás hívása alapján kapott válasz elemzése.                     | Általánosan elérhető  |
 | MS Power Automate használata                         | Integrálható a beépített Microsoft Power Automate-folyamatokkal.                       | Előnézetben           |
@@ -270,7 +280,7 @@ Logikai operátorok:
 - És
 - Vagy
 
-Operátorok típusai:
+Kezelőtípusok:
 - Equal
 - Not equal
 - Greater than

@@ -2,11 +2,9 @@
 title: Az adó feladása nem a megfelelő főkönyvi számlára történik a bizonylaton
 description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítséget nyújtnak, amikor az adót nem a megfelelő főkönyvi számlára adják fel a bizonylaton.
 author: qire
-manager: beya
 ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application user
 ms.reviewer: kfend
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: 0404d71f0492e188ed5da62387bb90a336e69c5a
-ms.sourcegitcommit: 57668404d61359b33e0c0280f2f7c4eb829b1ed2
-ms.translationtype: HT
+ms.openlocfilehash: 3d60265df7ff1f447e20866b8b8a447d88db8cc4b3dccedebc0f18ce8f0f70dc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "5947651"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6746320"
 ---
 # <a name="tax-is-posted-to-the-wrong-ledger-account-in-the-voucher"></a>Az adó feladása nem a megfelelő főkönyvi számlára történik a bizonylaton
 
@@ -32,26 +30,26 @@ A feladás során lehetséges, hogy az adó feladása nem a megfelelő főkönyv
 
 1. A **Bizonylattranzakciók** lapon válassza ki a tranzakciót, amellyel dolgozni szeretne, majd válassza a **Feladott áfa** lehetőséget.
 
-    [![A Feladott áfa gomb a Bizonylattranzakciók lapon](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
+    [![A Feladott áfa gomb a Bizonylattranzakciók lapon.](./media/tax-posted-to-wrong-ledger-account-Picture1.png)](./media/tax-posted-to-wrong-ledger-account-Picture1.png)
 
 2. Ellenőrizze az értéket az **Áfakód** mezőben. Ebben a példában ez az **Áfa 19**.
 
-    [![Áfakód mező a Feladott áfa lapon](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
+    [![Áfakód mező a Feladott áfa lapon.](./media/tax-posted-to-wrong-ledger-account-Picture2.png)](./media/tax-posted-to-wrong-ledger-account-Picture2.png)
 
 ## <a name="check-the-ledger-posting-group-of-the-tax-code"></a>Az adókód főkönyvi feladási csoportjának ellenőrzése
 
 1. Ugrás az **Adó** \> **Közvetett adók** \> **Áfa** \> **Áfakódok** pontra.
 2. Keresse meg és válassza ki az adókódot, majd ellenőrizze a **Főkönyvi feladási csoport** mezőben az értékét. Ebben a példában ez az **Áfa**.
 
-    [![Főkönyvi feladási csoport mező az Áfakódok oldalon](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
+    [![Főkönyvi feladási csoport mező az Áfakódok oldalon.](./media/tax-posted-to-wrong-ledger-account-Picture3.png)](./media/tax-posted-to-wrong-ledger-account-Picture3.png)
 
 3. A **Főkönyvi feladási csoport** értéke egy hivatkozás. A csoport konfigurációjának részleteinek megtekintéséhez válassza ki a hivatkozást. Másik lehetőségként jelölje ki és tartsa lenyomva (vagy kattintson a jobb gombbal) a mezőben, majd válassza a **Részletek megtekintése** lehetőséget.
 
-    [![Részletek megtekintése parancs](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
+    [![Részletek megtekintése parancs.](./media/tax-posted-to-wrong-ledger-account-Picture4.png)](./media/tax-posted-to-wrong-ledger-account-Picture4.png)
 
 4. A **Fizetendő áfa** mezőben ellenőrizze a számlaszám helyességét, a tranzakció típusának megfelelően. Ha nem, akkor válassza ki a megfelelő számlát, amelyre könyvelni kell. Ebben a példában az értékesítési rendelés forgalmi adóját a 222200-ás számlára kell könyvelni.
 
-    [![A főkönyvi feladási csoportok lapon található forgalmi adó kötelezettségek mezője](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
+    [![A főkönyvi feladási csoportok lapon található forgalmi adó kötelezettségek mezője.](./media/tax-posted-to-wrong-ledger-account-Picture5.png)](./media/tax-posted-to-wrong-ledger-account-Picture5.png)
 
     Az alábbi táblázat a **Főkönyvi feladási csoportok** lap egyes mezőiről nyújt információkat.
 
@@ -73,11 +71,11 @@ A kódban a feladási számlát a főkönyvi dimenzió határozza meg. A főkön
 
 1. Értékesítési rendeléshez adjon meg egy töréspontot a **Tax::saveAndPost()** és **Tax::post()** metódusokhoz. Ügyeljen a **\_ledgerDimension** értékére.
 
-    [![Értékesítési rendelés kódminta törésponttal](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
+    [![Értékesítési rendelés kódminta törésponttal.](./media/tax-posted-to-wrong-ledger-account-Picture6.png)](./media/tax-posted-to-wrong-ledger-account-Picture6.png)
 
     Beszerzési rendelés esetén adjon meg egy töréspontot a **TaxPost::saveAndPost()** és **TaxPost::postToTaxTrans()** metódusoknál. Ügyeljen a **\_ledgerDimension** értékére.
 
-    [![Beszerzési rendelés kódminta törésponttal](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
+    [![Beszerzési rendelés kódminta törésponttal.](./media/tax-posted-to-wrong-ledger-account-Picture7.png)](./media/tax-posted-to-wrong-ledger-account-Picture7.png)
 
 2. A következő SQL-lekérdezés futtatásával keresse meg a számla megjelenítendő értékét az adatbázisban, a főkönyvi dimenzió által mentett rekordazonosító alapján.
 
@@ -85,7 +83,7 @@ A kódban a feladási számlát a főkönyvi dimenzió határozza meg. A főkön
     select * from DIMENSIONATTRIBUTEVALUECOMBINATION where recid={the value of _ledgerDimension}
     ```
 
-    [![A rekordazonosító megjelenő értéke](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
+    [![A rekordazonosító megjelenő értéke.](./media/tax-posted-to-wrong-ledger-account-Picture8.png)](./media/tax-posted-to-wrong-ledger-account-Picture8.png)
 
 3. Vizsgálja meg a hívási vermet, és keresse meg **_ledgerDimension** érték hol van hozzárendelve. Az érték általában a **TmpTaxWorkTrans** helyről származik. Ebben az esetben egy töréspontot kell hozzáadnia a **TmpTaxWorkTrans::insert()** és **TmpTaxWorkTrans::update()** elemeknél, hogy megtudja hová van hozzárendelve az érték.
 

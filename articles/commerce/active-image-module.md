@@ -14,17 +14,16 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6cc2f9bafcdd17ac33d5591b8c21f3354d95d92e
-ms.sourcegitcommit: 7e976059118938b0089e40bef948029a8c088b38
-ms.translationtype: HT
+ms.openlocfilehash: 36b7d6dea87c7f309c07608794d443a0ae19be211847d2cddcad95f2d933a8db
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "6479469"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6716908"
 ---
 # <a name="active-image-module"></a>Aktívképmodul
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör ismerteti az aktívképmodulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez a Microsoft Dynamics 365 Commerce segítségével.
 

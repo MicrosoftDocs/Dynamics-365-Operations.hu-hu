@@ -1,28 +1,26 @@
 ---
 title: A Warehouse Management mobilalkalmazás előléptetett mezőinek konfigurálása
 description: Ez a témakör azt ismerteti, hogyan lehet előléptetni vagy kiemelni bizonyos információkat bármelyik lépésben a Warehouse Management mobilalkalmazás feladatfolyamataiban.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
 ms.search.form: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 392fc4d7e4f423b38e8394fa25d2e42de913bfc6
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
-ms.translationtype: HT
+ms.openlocfilehash: 0ce3fb829d349a35c6c2f29838a2c725f7b61c55
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860458"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920323"
 ---
 # <a name="configure-promoted-fields-for-steps-in-the-warehouse-management-mobile-app"></a>A Warehouse Management mobilalkalmazás előléptetett mezőinek konfigurálása
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until GA with 10.0.23 -->
 
 > [!IMPORTANT]
 > Az ebben a témakörben ismertetett funkciók csak az új Warehouse Management mobilalkalmazásra vonatkoznak. Ezek nem érintik a régi raktár alkalmazást, amely már elavult.

@@ -2,7 +2,7 @@
 title: Az adószámítás első lépései
 description: Ez a témakör bemutatja, hogyan állítsuk be az adószámítást.
 author: wangchen
-ms.date: 08/17/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,55 +15,77 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: a849343cda54745f5ba3afc53e2082e79f71a29a
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
-ms.translationtype: HT
+ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
+ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562126"
+ms.lasthandoff: 01/10/2022
+ms.locfileid: "7952521"
 ---
 # <a name="get-started-with-tax-calculation"></a>Az adószámítás első lépései
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
+Ez a témakör az adószámítással kapcsolatos első lépésekről nyújt tájékoztatást. A témakör szakaszai a Microsoft Dynamics Lifecycle Services (LCS), a Regulatory Configuration Service (RCS) és a . Dynamics 365 Finance Dynamics 365 Supply Chain Management 
 
-Ez a témakör az adószámítással kapcsolatos első lépésekről nyújt tájékoztatást. Végigvezeti Önt a Microsoft Dynamics Lifecycle Services (LCS), a Regulatory Configuration Service (RCS), a Dynamics 365 Finance és a Dynamics 365 Supply Chain Management konfigurációs lépésein. Ezt követően áttekinti a Finance és a Supply Chain Management tranzakcióiban az adószámítási funkciója használatának közös folyamatát.
-
-A beállítás négy fő lépésből áll:
+A beállítás három lépésből áll.
 
 1. Az LCS-ben telepítse az Adószámítás bővítményt.
 2. Az RCS-ben állítsa be az adószámítás funkciót. Ez a beállítási adat nem specifikus jogi személyre. Megosztható a Finance és a Supply Chain Management jogi személyei között.
 3. A Finance és a Supply Chain Management alkalmazásokban állítsa be az adószámítási paramétereket jogi személy szerint.
-4. A Finance és a Supply Chain Management alkalmazásban hozzon létre tranzakciókat, például értékesítési rendeléseket, és az adószámítás segítségével határozza meg és számítsa ki az adókat.
+
+## <a name="high-level-design"></a>Magas szintű tervezés
+
+### <a name="runtime-design"></a>Futásidejű terv
+
+Az alábbi ábra az adószámítás magas szintű futásidejű tervét mutatja be. Mivel az adószámítás több Dynamics 365-alkalmazással is integrálható, az ábra példaként a Pénzügy integrációt használja.
+
+1. A Pénzügyben tranzakció, például értékesítési vagy beszerzési rendelés jön létre.
+2. A Pénzügy automatikusan az áfacsoport és a cikk áfacsoportja alapértelmezett értékeit használja.
+3. Ha a tranzakcióhoz be van jelölve az Áfa gomb, akkor a program **elindítja** az adószámítást. A Pénzügy program ezután elküldi a rakományt az adószámítási szolgáltatásnak.
+4. Az adószámítási szolgáltatás megfelel a rakománynak az adó funkció előre meghatározott szabályaival, hogy egyidejűleg pontosabb áfacsoportot és cikk áfacsoportot keressen.
+
+    - Ha a rakomány megfeleltetható az Adócsoport alkalmazhatósági mátrixának, akkor felülbírálja az áfacsoport értékét az alkalmazhatósági szabályban megadott, az egyező adócsoport **értékével**. Ellenkező esetben továbbra is a Pénzügy áfacsoport értékét használja.
+    - Ha a rakomány megfeleltetható a Cikkadócsoport alkalmazhatósági mátrixának, akkor felülbírálja a cikk áfacsoportértékét az alkalmazhatósági szabályban megadott, egyező cikkadócsoport-értékkel. **·** Ellenkező esetben továbbra is a Pénzügy cikk áfacsoport-értékét használja.
+
+5. Az adószámítási szolgáltatás az áfacsoport és a cikk áfacsoportja alapján határozza meg a végső áfakódokat.
+6. Az adószámítási szolgáltatás az ő által meghatározott végső adókódok alapján számítja ki az adót.
+7. Az adószámítási szolgáltatás visszaküldi az adószámítás eredményét a Pénzügy számára.
+
+![Adószámítás futásidejű tervezése.](media/tax-calculation-runtime-logic.png)
+
+### <a name="high-level-configuration"></a>Magas szintű konfiguráció
+
+A következő lépések magas szintű áttekintést nyújtanak az adószámítási szolgáltatás konfigurációs folyamatról.
+
+1. Az LCS-be telepítse az **Adószámítás** bővítményt az LCS-projektbe.
+2. Az RCS-ben hozza létre az **Adószámítás** szolgáltatást.
+3. Az RCS-ben állítsa be az **Adószámítás** funkciót:
+
+    1. Az adókonfigurációs verzió kiválasztása.
+    2. Adókódok létrehozása.
+    3. Hozzon létre egy adócsoportot.
+    4. Cikkadócsoport létrehozása.
+    5. Választható: Az áfacsoport alkalmazhatóságának létrehozása, ha felül szeretné bírálni a vevői vagy szállítói alapadatokból megadott alapértelmezett áfacsoportot.
+    6. Nem kötelező: Akkor hozza létre a cikkcsoport alkalmazhatóságát, ha felül szeretné bírálni a cikk alapadataiból megadott alapértelmezett cikk áfacsoportot.
+
+4. Az RCS szolgáltatásban töltse ki és tegye közzé az **Adószámítás** szolgáltatást.
+5. A Pénzügyben válassza ki a közzétett **adószámítási** funkciót.
+
+A lépések után a következő beállítások automatikusan szinkronizálódnak az RCS és a Pénzügy között.
+
+- Áfakódok
+- Áfacsoportok
+- Cikkáfacsoportok
+
+A témakör további részei részletesebb konfigurációs lépéseket tartalmaznak.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Mielőtt a témakörben leírt eljárásokat elvégezhetné, az egyes környezettípusok esetében előfeltételeknek kell teljesülniük.
-
-### <a name="for-a-production-environment"></a>Termelési környezetben
-
-Termelési környezetben a következő előfeltételeknek kell teljesülniük:
+A témakör további eljárásainak befejezése előtt teljesülnie kell a következő előfeltételeknek:<!--TO HERE-->
 
 - Hozzá kell férnie az LCS-fiókjához, és rendelkeznie kell egy telepített LCS-projekttel, amely Tier 2 vagy annál magasabb szintű környezetet tartalmaz, és a Dynamics 365 10.0.21-es vagy újabb verzióját futtatja.
 - Létre kell hoznia egy RCS-környezetet a szervezet számára, és hozzáféréssel kell rendelkeznie a fiókjához. Az RCS-környezet létrehozásával kapcsolatos további információkért lásd a [Regulatory Configuration Service áttekintése](rcs-overview.md) című részt.
-- A következő funkciókat az üzleti igényeknek megfelelően be kell kapcsolni a bevezetett pénzügyi vagy Supply Chain Management környezet **funkciókezelési** munkaterületén:
-
-    - Áfaszámítási szolgáltatás
-    - Több áfaregisztrációs szám támogatása
-    - Adó az átmozgatási rendelésben
-
-- A következő funkciókat be kell kapcsolni a telepített RCS-környezet **funkciókezelési** munkaterületén.
-
-    - Globalizációs funkciók
-
-### <a name="for-a-test-environment-public-preview"></a>Tesztkörnyezethez (nyilvános előnézet)
-
-A tesztkörnyezethez a következő előfeltételeknek kell teljesülniük:
-
-- Hozzá kell férnie az LCS-fiókjához, és rendelkeznie kell egy telepített LCS-projekttel, amely Tier 2 vagy annál magasabb szintű környezetet tartalmaz, és a Dynamics 365 10.0.21-es vagy újabb verzióját futtatja.
-- Létre kell hoznia egy RCS-környezetet a szervezet számára, és hozzáféréssel kell rendelkeznie a fiókjához. Az RCS-környezet létrehozásával kapcsolatos további információkért lásd a [Regulatory Configuration Service áttekintése](rcs-overview.md) című részt.
-- A <taxcalc@microsoft.com> e-mail címen kapcsolatba kell lépnie a Microsofttal, hogy engedélyezze a repülést a telepített pénzügyi vagy Supply Chain Management környezetben.
 - A következő funkciókat az üzleti igényeknek megfelelően be kell kapcsolni a bevezetett pénzügyi vagy Supply Chain Management környezet **funkciókezelési** munkaterületén:
 
     - Áfaszámítási szolgáltatás
@@ -93,15 +115,7 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
 5. A **Típus** mezőben válassza ki a **Globális** lehetőséget.
 6. Válassza ki a **Megnyitás** lehetőséget.
 7. Válassza az **Adóadatok modell** lehetőséget, bontsa ki a fájlfát, majd válassza az **Adókonfiguráció** lehetőséget.
-8. Válassza ki a megfelelő adókonfigurációs verziót a Pénzügyi verzió alapján, majd válassza az **Importálás** lehetőséget.
-
-    | Kiadás verziója | Adókonfiguráció                       |
-    | --------------- | --------------------------------------- |
-    | 10.0.18         | Adókonfiguráció - Európa 30.12.82     |
-    | 10.0.19         | Adószámítási konfiguráció 36.38.193 |
-    | 10.0.20         | Adószámítási konfiguráció 40.43.208 |
-    | 10.0.21         | Adószámítási konfiguráció 40.48.215 |
-
+8. Válassza ki a megfelelő adókonfigurációs verziót a Pénzügy verzió [alapján](global-tax-calcuation-service-overview.md#versions), majd válassza az **Importálás** lehetőséget.
 9. A **Globalizációs funkciók** munkaterületen válassza a **Funkciók** lehetőséget, majd jelölje ki az **Adószámítás** lapot, és válassza a **Hozzáadás** lehetőséget.
 10. Válassza ki az alábbi szolgáltatástípusok valamelyikét:
 
@@ -222,7 +236,7 @@ Az ebben a szakaszban található beállításokat jogi személy végzi. Be kell
 3. A **Számítás** lapon határozza meg a jogi személy elvárt kerekítési szabályát. A kerekítési logikával kapcsolatos további információkért lásd: [Adószámítás kerekítési szabályok](https://go.microsoft.com/fwlink/?linkid=2166988).
 4. Adja meg a **Hibakezelés** lapon a jogi személy elvárt hibakezelési módját. Három lehetőség áll rendelkezésre:
 
-    - Nincs
+    - Nem
     - Figyelmeztetés
     - Hiba
 
@@ -230,42 +244,3 @@ Az ebben a szakaszban található beállításokat jogi személy végzi. Be kell
 
 5. A **Többszörös áfa-regisztráció** lapon külön-külön bekapcsolhatja a HÉA-nyilatkozat, az EU értékesítési lista és az Intrastat funkciót, hogy többszörös áfa-regisztráció esetén is dolgozhasson. A több HÉA-regisztrációra vonatkozó adóbevallással kapcsolatos további információkért lásd: [Több HÉA-regisztrációra vonatkozó bevallás](emea-reporting-for-multiple-vat-registrations.md).
 6. Mentse a beállítást, és ismételje meg az előző lépéseket minden további jogi személy esetében. Amikor egy új verzió megjelenik, és azt szeretné, hogy azt alkalmazzák, állítsa be az **Adószámítási paraméterek** lap **Általános** lapján a **Jellemző beállítása** mezőt (lásd a 2. lépést).
-
-## <a name="transaction-processing"></a>Tranzakciófeldolgozás
-
-Miután elvégezte az összes beállítási műveletet, az Adószámítás segítségével meghatározhatja és kiszámíthatja az adót a Pénzügyekben. A tranzakciók feldolgozásának lépései változatlanok maradnak. A Finance 10.0.21-as verziója a következő tranzakciókat támogatja:
-
-- Értékesítési folyamat
-
-    - Értékesítési ajánlat
-    - Értékesítési rendelés
-    - Visszaigazolás
-    - Kitárolási lista
-    - Szállítólevél
-    - Értékesítési számla
-    - Jóváírás
-    - Visszárurendelés
-    - Fejlécdíj
-    - Sorköltség
-
-- Beszerzési folyamat
-
-    - Beszerzési rendelés
-    - Visszaigazolás
-    - Bevételezések listája
-    - Termékbevételezés
-    - Beszerzési számla
-    - Fejlécdíj
-    - Sorköltség
-    - Jóváírás
-    - Visszárurendelés
-    - Beszerzési igénylés
-    - A beszerzési igénylési sor díja
-    - Ajánlatkérés
-    - Ajánlatkérés fejlécének díja
-    - Ajánlatkérés sorának díja
-
-- Készletfolyamat
-
-    - Átmozgatási rendelések – szállítás
-    - Átmozgatási rendelés - bevételezés

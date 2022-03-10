@@ -1,7 +1,7 @@
 ---
 title: Szállítói katalógusok importálása
 description: Ez a témakör leírja a szállítói katalógus adatainak importálása folyamatot.
-author: kamaybac
+author: Henrikan
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: ''
 ms.search.region: Global
 ms.search.industry: ''
-ms.author: dabourq
+ms.author: henrikan
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: ee709d72098b4304cf7748cae1a328736fa16188
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.openlocfilehash: fb7e9735ac29fae50a4a3874b713a9a75799605c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825230"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7570393"
 ---
 # <a name="import-vendor-catalogs"></a>Szállítói katalógusok importálása
 

@@ -2,11 +2,9 @@
 title: Anyagjegyzék-számítások
 description: A költségösszesítés és az eladási ár számítását anyagjegyzék-számításoknak nevezik, és indításuk a Számítások lapról történik. A témakör tájékoztatást nyújt az anyagjegyzék-számításokkal kapcsolatban.
 author: AndersGirke
-manager: tfehr
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, ProdSetupCostEstimation
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: aevengir
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
-ms.openlocfilehash: 94023157512a683ba82313c7867a054fc09b6a31
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 2a3939d092bcba00aa9dc63c0fe7546beed2041d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5266247"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7575945"
 ---
 # <a name="bom-calculations"></a>Anyagjegyzék-számítások
 

@@ -2,11 +2,9 @@
 title: Költségváltozások szimulálása, a tervezett költségek költségszámítási verziójának alkalmazásával
 description: Ez a cikk azt mutatja be, hogy hogyan szimulálhatja a költségmódosítások hatásait egy termék kiszámított költségein egy külön költségszámítási verzió alkalmazásával a tervezett költségekre vonatkozóan.
 author: AndersGirke
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CostingVersion
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 74bea14699628bf5ec1d8bc8a3d6d1f341f5b982
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: e288a5f00e43901ba1bf6ec50f460be4b62ea2db73adbaf0f9204c988e812f58
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5239590"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6781561"
 ---
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Költségváltozások szimulálása, a tervezett költségek költségszámítási verziójának alkalmazásával
 

@@ -2,11 +2,9 @@
 title: Kosár és pénztár oldalainak áttekintése
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce kosár és pénztár oldalaihoz.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -16,20 +14,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: a9b7fe1722c366eb504882c61a337a95500c92ab
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 3e450192025b29c655be49050aa3e61fc8acd898
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5000509"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982968"
 ---
 # <a name="cart-and-checkout-pages-overview"></a>Kosár és pénztár oldalainak áttekintése
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce kosár és pénztár oldalaihoz.
-
-## <a name="overview"></a>Áttekintés
 
 Az e-kereskedelmi webhely kosár lapja minden olyan cikket megjelenít, amelyet egy vevő hozzáad a kosárhoz. A kosár lap a kosár modul segítségével épül fel. A kosár modul olyan tároló, amely az összes olyan modult tárolja, amely szükséges a kosárban található elemek megjelenítéséhez. A kosár modul más modulokat is használhat a rendelés összesítését és a vevői rendelésre alkalmazott promóciós kódok megjelenítéséhez.
 
@@ -41,7 +37,7 @@ A kosár lap egy bevásárlókosárként szolgál, és minden olyan cikket tarta
 
 A következő ábra egy olyan kosár-lapot mutat be, amely a modulkönyvtár és a „gyár” téma alapján készült.
 
-![Példa a kosár oldalra](./media/cart2.PNG)
+![Példa a kosár oldalra.](./media/cart2.PNG)
 
 A kosár lap fő törzse minden olyan cikket megjelenít, amelyet egy vevő hozzáadott a kosárhoz. Minden vonatkozó kedvezmény megjelenítésre kerül. A kedvezmények között a összetett kedvezmények is szerepelnek. A példák között szerepel a "„Vásároljon 3 terméket, és kap 10% kedvezményt” vagy a „Vásároljon egy üveget és egy hátizsákot, hogy 10% kedvezményt kapjon”. A rendelésösszesítő modul az engedmények, a szállítási költség, az adók stb. alkalmazása utáni összeget jeleníti meg. Van egy promóciós kód modul is, amely lehetővé teszi, hogy a vevő hozzáadja vagy eltávolítsa a promóciós kódokat.
 
@@ -57,7 +53,7 @@ A pénztár oldalon a vevők a rendelés leadásához szükséges adatokat adjá
 
 A következő ábra egy olyan pénztár lapot mutat be, amely a modulkönyvtár és a „gyár” téma alapján készült.
 
-![Példa a pénztár oldalra](./media/Checkout.PNG)
+![Példa a pénztár oldalra.](./media/Checkout.PNG)
 
 A pénztári lap fő törzse az a rész, ahol minden rendelési adatot gyűjtenek. Ez az információ tartalmazza a szállítási címet, a szállítási lehetőségeket és a fizetési adatokat. A pénztári folyamatoknak meghatározott lépéseket kell követnie, mivel az adatokat meghatározott sorrendben kell megadni a feldolgozáshoz. Például a szállítási címet meg kell adni, mielőtt a szállítási költségek kiszámíthatók lennének, és a kifizetés engedélyezhető lenne.
 
@@ -106,3 +102,6 @@ A pénztár lap létrehozásával kapcsolatos további tudnivalókat lásd [Pén
 [Termékadatok oldalainak áttekintése](quick-tour-pdp.md)
 
 [Fiókkezelési oldalak áttekintése](quick-tour-account-management.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

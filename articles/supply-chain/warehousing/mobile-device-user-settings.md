@@ -15,12 +15,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 13c99854224a6d220e73a43636d85ec1951f8149
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
-ms.translationtype: HT
+ms.openlocfilehash: 4ea0fcfa7a165587567968f95549799859edaa60
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7901872"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103713"
 ---
 # <a name="mobile-device-user-settings"></a>Mobileszköz felhasználói beállításai
 
@@ -39,12 +39,9 @@ Ez a funkció gyors kezdést biztosít a dolgozóknak új eszköz használata es
 > [!IMPORTANT]
 > A *Mobileszköz-felhasználói beállítások* funkció csak az új Raktárkezelés mobilalkalmazásra vonatkozik. Nem működik a régi raktári alkalmazással.
 
-## <a name="turn-on-the-mobile-device-user-settings-feature"></a>A Mobileszköz-felhasználói beállítások funkció bekapcsolása
+## <a name="turn-the-mobile-device-user-settings-feature-on-or-off"></a>A mobileszköz felhasználói beállításai funkciójának be- és kikapcsolása
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
-
-- **Modul:** *Raktárkezelés*
-- **Funkciónév:** *Felhasználói beállítások, ikonok és lépéscímek az új raktári alkalmazáshoz*
+Az ebben a témakörben *leírt funkciók használatához a rendszer számára be kell kapcsolva lennie az új raktári alkalmazás felhasználói beállításainak,* ikonjainak és lépéscímének. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák a Funkciókezelés munkaterület új raktári alkalmazás funkciójának Felhasználói beállításai,*[ikonjai](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) és lépéscímei alapján kapcsolhatják be és kapcsolhat ki a funkciót.
 
 ## <a name="create-and-manage-user-settings"></a>Felhasználói beállítások létrehozása és kezelése
 

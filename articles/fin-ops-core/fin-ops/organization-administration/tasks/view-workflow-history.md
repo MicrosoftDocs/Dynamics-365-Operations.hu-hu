@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 351f9c80eab8e9810fa6a4538f003eaef1a4a4fd
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
-ms.translationtype: HT
+ms.openlocfilehash: 0ca9a8bff246cc878a0703947a7f8c1c4fc01963
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747225"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069959"
 ---
 # <a name="view-workflow-history"></a>Munkafolyamat-előzmények megtekintése
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Ez a témakör azokat a lépéseket ismerteti, amelyekkel megtekintheti azoknak a dokumentumoknak az állapotát, amelyeket a munkafolyamat-rendszerbe küldtek feldolgozásra és jóváhagyásra. Ez az eljárás az USMF bemutatócéget használja.
 

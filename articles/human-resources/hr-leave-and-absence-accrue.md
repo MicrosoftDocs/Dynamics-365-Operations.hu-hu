@@ -16,14 +16,17 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86ca63b1703faa6f57ed2e5591c89a5e84363481
-ms.sourcegitcommit: 318e406b84d43381d450272eb83c5eea9c5cf1c0
-ms.translationtype: HT
+ms.openlocfilehash: a5f3ae95d0670369ac63e5a5d521885fe55ce8af
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6059473"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070652"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Szabadság- és távolléti tervek halmozódása
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -104,11 +107,9 @@ Törli az adott tervhez és dátumtartományhoz tartozó elhatárolási rekordok
 
 2. A **Szabadság kezelése** alatt válassza a **Szabadságelhatárolás auditálásának törlése** lehetőséget.
 
-## <a name="preview-leave-accrual-transaction-auditing"></a>(Előzetes verzió) Szabadságelhatárolási tranzakció auditálása
+## <a name="leave-accrual-transaction-auditing"></a>Szabadságelhatárolási tranzakció auditálása
 
-[!include [Preview feature](includes/preview-feature.md)]
-
-Ez az előzetes verziójú funkció segít a szabadságokat és a távolléteket kezelőknek áttekinteni a szabadság- és a távollétkönyvelési tranzakciókat, amelyek egy alkalmazott távolléti egyenlegével kapcsolatosak egy adott távolléttípusnál.
+Ez a verziójú funkció segít a szabadságokat és a távolléteket kezelőknek áttekinteni a szabadság- és a távollétkönyvelési tranzakciókat, amelyek egy alkalmazott távolléti egyenlegével kapcsolatosak egy adott távolléttípusnál.
 
 A tranzakció részleteinek megtekintése:
 
@@ -125,7 +126,7 @@ Adott könyvelési összegek tranzakciós részleteinek megtekintéséhez válas
 - A könyvelési időszak és a díjak részletei
 - A szabadságterv konfigurációin végrehajtott módosítások
 
-![Szabadságelhatárolási tranzakció auditálásának megjelenítése](media/hr-leave-and-absence-accrue-audit.png)
+![Szabadságelhatárolási tranzakció auditálásának megjelenítése.](media/hr-leave-and-absence-accrue-audit.png)
 
 ## <a name="see-also"></a>Lásd még
 

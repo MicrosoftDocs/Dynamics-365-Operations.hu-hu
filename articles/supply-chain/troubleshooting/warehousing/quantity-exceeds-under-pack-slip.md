@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ecdd377d12faf40f64736e93671dcf42ff132403
-ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
-ms.translationtype: HT
+ms.openlocfilehash: 7cdc22eeabda6cf9f08484d698e5096f66af4a12
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "6249110"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920698"
 ---
 # <a name="quantity-exceeds-under-delivery-percentage-during-packing-slip-generation"></a>A szállítólevél létrehozása során a mennyiség meghaladja a szállítási hiány arányát
 
@@ -49,8 +49,8 @@ Az alábbi módon korrigálja a szállítási hiány százalékos értékét.
 
 1. Lépjen a **Kinnlevőségek \> Rendelések \> Minden rendelés** részre.
 1. Válassza ki azt az értékesítési rendelést, amelynél nem tud szállítólevelet feladni a rakományhoz.
-1. Az  **Értékesítési rendelés sorai** lapon válassza ki az értékesítési rendelésnek azt a sorát, amely meghaladja a szállítási hiány százalékos arányát.
-1. A  **Sor részletei** lapon válassza ki a **Szállítás** lehetőséget.
+1. Az Értékesítésirendelés-sorok lapon válassza ki a cikk azon értékesítésirendelés-sorát, amely meghaladja az **alulszállítás** százalékos arányát.
+1. A Sor **részletei lapon válassza a Szállítás** **lehetőséget**.
 1. A **Szállítási hiány** mezőben állítson be olyan, nagyobb százalékértéket, amely megfelelő a rakománymennyiséggel szemben kitárolt mennyiségnek; így a rendszer létre tudja hozni a szállítólevelet.
 
 ### <a name="reverse-and-make-adjustments"></a>Sztornírozzon, és végezzen kiigazításokat
@@ -60,14 +60,14 @@ A rakományhoz feladott minden részletet (például a szállítólevelet, a sz�
 Az alábbi módon érvénytelenítse a szállítólevelet.
 
 1. Lépjen a **Raktárkezelés \> Rakományok \> Minden rakomány** elemhez.
-1. A Művelet panel  **Szállítás és fogadás** lapján lévő  **Sztornírozás** csoportban válassza a  **Szállítólevelek érvénytelenítése** lehetőséget.
+1. A Munkaablak Szállítás és fogadás lap Sztornírozási csoportjában válassza **a** **·** **Csomagjegyzékek visszavonása** lehetőséget.
 
 Az alábbi módon sztornírozza a szállítmányok visszaigazolását.
 
 1. Lépjen a **Raktárkezelés \> Rakományok \> Minden rakomány** elemhez.
-1. A Művelet panel  **Szállítás és fogadás** lapján lévő  **Sztornírozás** csoportban válassza a  **Szállítmány visszaigazolásának sztornírozása** lehetőséget.
+1. A Művelet ablakTábla Szállítás és fogadás lap Sztornírozási csoportjában válassza a **Szállítmány** **·** **visszaigazolásának sztornírozására lehetőséget**.
 
 A munkák az alábbi módon sztornírozahtók.
 
 1. Lépjen a **Raktárkezelés \> Rakományok \> Minden rakomány** elemhez.
-1. A Művelet ablaktábla  **Rakományok** lapjának  **Munka** csoportjában válassza a  **Munka sztornírozása** elemet.
+1. Válassza a Munka sztornírozva lehetőséget a munkaablak **Rakományok** **·** **lapján**.

@@ -2,28 +2,28 @@
 title: 'Szűrési gyakoriság generálása innen:'
 description: 'Ez a témakör bemutatja a Szűrési gyakoriság generálása innen: beállításkészletet a Dynamics 365 Human Resources rendszerben.'
 author: jaredha
-manager: tfehr
 ms.date: 02/05/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-human-resources
 ms.technology: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-02-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 238cd5da750d815c904090cc9002e3d1a5d2bcc7
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
-ms.translationtype: HT
+ms.openlocfilehash: 27c6c62f3ac312ee502df969f25f1b16761cba03
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5464574"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067804"
 ---
 # <a name="screening-frequency-generate-from"></a>Szűrési gyakoriság generálása innen:
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

@@ -13,16 +13,19 @@ ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ede109f42b255008511b6f9a94430fd6ba78e2de
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
-ms.translationtype: HT
+ms.openlocfilehash: 32417694e53600836370ecc5601d36057cc55de9
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5747273"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065605"
 ---
 # <a name="set-a-users-preferred-time-zone"></a>Felhasználó preferált időzónájának beállítása
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 A következő témakör bemutatja, hogyan állíthatja be egy rendszergazda szerepkörű felhasználó az időzónát egy felhasználó számára.
 

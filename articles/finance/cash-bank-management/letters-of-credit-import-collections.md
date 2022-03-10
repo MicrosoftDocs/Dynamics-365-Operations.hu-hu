@@ -2,11 +2,9 @@
 title: Akkreditívek és importbeszedvények
 description: Ez a cikk általános információt biztosít a hitellevéllel és az import-beszedésekkel kapcsolatban. A banki dokumentumok ezen két formáját gyakran alkalmazzák termékek nemzetközi beszerzésekor és értékesítésekor.
 author: panolte
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankLCImport
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ad39951902395ebd2f78169f77e8d1a2e03a5762
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 47309612ea7cbd0bb1047bec9c18f976e7063ce95f1708f27beae540cc3194ea
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4978839"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751326"
 ---
 # <a name="letters-of-credit-and-import-collections"></a>Akkreditívek és importbeszedvények
 
@@ -30,8 +28,7 @@ ms.locfileid: "4978839"
 
 Ez a cikk általános információt biztosít a hitellevéllel és az import-beszedésekkel kapcsolatban. A banki dokumentumok ezen két formáját gyakran alkalmazzák termékek nemzetközi beszerzésekor és értékesítésekor.
 
-<a name="letters-of-credit"></a>Akkreditívek
------------------
+## <a name="letters-of-credit"></a>Akkreditívek
 
 A kifizetések végrehajtását garantálására szolgáló akkreditíveket nemzetközi tranzakciók használják. Az akkreditív egy bank által kiállított megállapodás, amelyben a bank garantálja a kifizetés teljesítését a vevő részéről, amennyiben a vevő és eladó közti megállapodás feltételei fennállnak. Az akkreditívet okmányos meghitelezésnek (DC) is nevezik.
 
@@ -53,3 +50,6 @@ Az importbeszedvény segítségével garantálható, hogy az eladó megkapja a f
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

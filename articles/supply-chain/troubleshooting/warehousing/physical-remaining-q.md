@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: v-gfedorova
 ms.search.validFrom: 2021-05-31
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: bfd381160bcfd1e6e5489e16cc22178b8a5142ee
-ms.sourcegitcommit: e6437d994c3be0c5bb4a9263af3aa8351020d83a
-ms.translationtype: HT
+ms.openlocfilehash: d767fdce861ccb481a3fe289480a51a7534dc207
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "6248784"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920224"
 ---
 # <a name="physical-remaining-quantity-in-the-unit-must-not-be-zero"></a>Az egységben maradó fizikai mennyiség nem lehet nulla
 
@@ -63,10 +63,10 @@ Az alábbi módon tekintse át a rakománysorokat, és hajtsa végre a szükség
 
 1. Lépjen a **Raktárkezelés \> Rakományok \> Minden rakomány** elemhez.
 1. Válassza ki azt a rakományt, amelyhez nem hozható létre a szállítólevél.
-1. A Művelet panel  **Szállítás és fogadás** lapján lévő  **Sztornírozás** csoportban válassza a  **Szállítmány visszaigazolásának sztornírozása** lehetőséget.
-1. A  **Rakománysorok** lapon válassza ki annak a cikknek rakománysorát, amely meghaladja a felülszállítás százalékos arányát.
+1. A Művelet ablakTábla Szállítás és fogadás lap Sztornírozási csoportjában válassza a **Szállítmány** **·** **visszaigazolásának sztornírozására lehetőséget**.
+1. A Rakománysorok lapon válassza ki a túlszállítást meghaladó cikk **rakománysorát**.
 1. A kiválasztott mennyiség beállításához válassza a **Kitárolt mennyiség csökkentése** lehetőséget.
-1. A  **Sor részletei** lapon válassza ki a **Rendelés** lehetőséget.
+1. A Sor részletei lapon válassza a **Rendelés** **lehetőséget**.
 1. A **Mennyiség** mezőben állítsa be a kitárolt mennyiség értékét (azaz a **Munka létrehozott mennyisége** mező értékét), hogy a szállítólevél létrehozása elvégezhető legyen.
 
 ### <a name="review-your-load-lines-and-make-adjustments-to-ensure-that-the-unit-and-quantity-are-aligned-with-the-decimal-precision-of-the-unit"></a>Tekintse át a rakománysorokat, és hajtsa végre a szükséges módosításokat, hogy az egység és a mennyiség igazodjon az egység tizedes pontosságához

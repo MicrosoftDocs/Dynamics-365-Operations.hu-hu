@@ -12,14 +12,17 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 7.2999999999999998
-ms.openlocfilehash: 71767e733dd6ac9d11e8757abf0b12dcf2a7a441
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
-ms.translationtype: HT
+ms.openlocfilehash: 60e85841ec940ed65d73dc052848168be70301d6
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6348605"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069323"
 ---
 # <a name="user-interface-elements"></a>A felhasználói felület elemei
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a témakör az alkalmazásban használt felhasználói felület (UI) elemeit mutatja be. Mielőtt a felhasználók navigálni tudnak a kezelőfelületen, fontos tudni a felületet alkotó elemek neveit és funkcióit.
 

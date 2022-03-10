@@ -2,27 +2,25 @@
 title: Oldal modell szószedete
 description: Ez a témakör a Microsoft Dynamics 365 Commerce webhelyének oldalain használt különböző elemeket ismerteti.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
+ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5c772a19958ebf0687d09af4c3055c733d99d750
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: c5ec6dfd9147fd5e054303b4fd612caef78b7467d7f6f4850e46fcc9fb1346f2
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412957"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758312"
 ---
 # <a name="page-model-glossary"></a>Oldal modellszószedete
 
@@ -64,3 +62,6 @@ A következő táblázat bemutatja, hogy milyen kifejezéseket érdemes ismernie
 [Sablonok és elrendezések áttekintése](templates-layouts-overview.md)
 
 [Webhely-navigáció testreszabása](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

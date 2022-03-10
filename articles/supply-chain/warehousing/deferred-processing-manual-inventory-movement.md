@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: Mirzaab
 ms.search.validFrom: 2021-04-27
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: a15c913c876e961c6824c1e8812ab2be2d6ffa4333cd0d4e6f80cae8bac79394
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 21dd01448fcf6c2b3ca90a5476fad061bb0f55e4
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746747"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8102739"
 ---
 # <a name="deferred-processing-of-manual-inventory-movement"></a>Kézi készletmozgás halasztott feldolgozása
 
@@ -32,10 +32,10 @@ A háttérbeli feldolgozást a [Raktári alkalmazás eseményeinek feldolgozása
 
 A funkció elérhetővé tétele érdekében kapcsolja be a [funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) modulban a következő funkciókat. A következő sorrendben kell bekapcsolni őket:
 
-1. Szervezeti szintű munkazárolás
-1. Raktári alkalmazás eseményeinek feldolgozása
-1. Halasztott Put műveletek
-1. Manuális készletmozgási művelet halasztott feldolgozása
+1. *Szervezeti szintű munkazárolás*<br>(Az Ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció kötelező, ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni.)
+1. *Raktári alkalmazás eseményeinek feldolgozása*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója alapértelmezés szerint be van kapcsolva.)
+1. *Halasztott Put műveletek*
+1. *Manuális készletmozgási művelet halasztott feldolgozása*<br>(Az Ellátásilánc-kezelés 10.0.25-ös verziója esetén ez a funkció kötelező, ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni.)
 
 ## <a name="configure-the-work-processing-policies"></a>Konfigurálja a munkafeldolgozási irányelveket
 

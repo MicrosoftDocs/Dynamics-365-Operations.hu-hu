@@ -2,11 +2,9 @@
 title: A globális címjegyzék konfigurálása
 description: Ezekkel a lépésekkel beállíthatja az alapértelmezett értékeket és a globális címjegyzék biztonsági irányelveit.
 author: msftbrking
-manager: AnnBe
 ms.date: 07/23/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirParameters
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: brking
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4dcee425fc1225dcfcf8ba4282f4176acfeaa268
-ms.sourcegitcommit: b112925c389a460a98c3401cc2c67df7091b066f
-ms.translationtype: HT
+ms.openlocfilehash: 34b0ab8b2d3ffa840e20d73716265c445e77189044840fd6850c5bffb3e3365b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "4796802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759065"
 ---
 # <a name="configure-the-global-address-book"></a>A globális címjegyzék konfigurálása
 
@@ -45,3 +43,6 @@ A feladat létrehozásához az USMF bemutató vállalatot használtuk példakén
 13. Keresse meg és jelölje ki a kívánt rekordot a listán. Nyomja le a Shift billentyűt, jelöljön be több szerepkört a **Kijelölt szerepkörök** ablakban való hozzáadáshoz, és kattintson a nyílra a kijelölt szerepkörök hozzáadásához.  
 14. Kattintson a **Mentés** gombra.
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

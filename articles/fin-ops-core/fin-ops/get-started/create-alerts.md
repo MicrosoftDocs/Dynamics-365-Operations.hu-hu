@@ -1,8 +1,7 @@
 ---
 title: Figyelmeztetési szabályok létrehozása
-description: Ez a témakör a figyelmeztetések kapcsolatban tartalmaz tájékoztatást, és ismerteti, hogyan kell létrehozni egy figyelmeztetésszabályt, hogy értesítést kapjon például az olyan eseményekről, mint az elérkező dátumok vagy bizonyos módosítások.
-author: tjvass
-manager: AnnBe
+description: Ez a témakör a riasztásokkal kapcsolatos információkat ismerteti, és bemutatja, hogyan hozhat létre riasztási szabályt.
+author: RichdiMSFT
 ms.date: 10/08/2020
 ms.topic: article
 ms.prod: ''
@@ -11,15 +10,15 @@ ms.search.form: EventCreateRule
 audience: Application user
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
-ms.openlocfilehash: b0c37c1f948b072c64c54308cb85c90cfa248700
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
-ms.translationtype: HT
+ms.openlocfilehash: 597785e65f127794ca84fe3053a664f717b056bd7374e0396732d4bcf59a743c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559408"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6736198"
 ---
 # <a name="create-alert-rules"></a>Figyelmeztetési szabályok létrehozása
 
@@ -102,7 +101,7 @@ Nem hozhatók létre figyelmeztetések az űrlapok egyes másodlagos adatforrás
 2. Hozzon létre figyelmeztetést a SysTableBrowser űrlapról.
 
 ### <a name="change-based-alerts-do-not-work-for-batch-status-changes"></a>A Módosításalapú figyelmeztetések funkció nem működik kötegelt állapotváltozások esetén
-A Módosításalapú figyelmeztetések funkció nem működik kötegelt állapotváltozások esetén, mert a teljesítmény miatt ki van kapcsolva. Ehelyett be kell állítania a **Kötegelt figyelmeztetések** funkciót. A további tudnivalókat lásd a [Figyelmeztetések beállítása továbbfejlesztett kötegelt képernyők számára](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/sysadmin/alerts#set-up-alerts-for-batch-enhanced-forms) pontban.
+A Módosításalapú figyelmeztetések funkció nem működik kötegelt állapotváltozások esetén, mert a teljesítmény miatt ki van kapcsolva. Ehelyett be kell állítania a **Kötegelt figyelmeztetések** funkciót. A további tudnivalókat lásd a [Figyelmeztetések beállítása továbbfejlesztett kötegelt képernyők számára](../../dev-itpro/sysadmin/alerts.md#set-up-alerts-for-batch-enhanced-forms) pontban.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
