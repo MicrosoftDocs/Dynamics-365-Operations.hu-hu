@@ -2,8 +2,36 @@
   items:
     - name: Dynamics 365 Finance
       items:
-        - name: Dynamics 365 Finance kezdőlapja
+        - name: A Dynamics 365 Finance kezdőlapja
           href: index.md
+        - name: Újdonságok és változások
+          items:
+            - name: Újdonságok és változások a Finance and Operations alkalmazásaiban
+              href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
+            - name: Újdonságok és változások a Finance szolgáltatásban
+              items:
+                - name: Újdonságok és változások a Finance kezdőlapján
+                  href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.26 (május)
+                  href: get-started/whats-new-changed-10-0-26.md
+                - name: Finance 10.0.25 (április)
+                  href: get-started/whats-new-changed-10-0-25.md
+                - name: Finance 10.0.24 (február)
+                  href: get-started/whats-new-changed-10-0-24.md
+                - name: Finance 10.0.23 (január)
+                  href: get-started/whats-new-changed-10-0-23.md
+            - name: Eltávolított vagy elavult funkciók
+              items:
+                - name: Eltávolított vagy elavult funkciók a kezdőlapon
+                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+                - name: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
+                  href: get-started/removed-deprecated-features-finance.md
+                - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
+                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
+            - name: Az AX 2012 elhalasztott funkciói
+              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
+            - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
+              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
         - name: Első lépések
           items:
             - name: Szolgáltatásleírás
@@ -62,36 +90,6 @@
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Raktárkezelés konfigurálása helyszíni telepítések esetében
                   href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-                - name: 'Finance and Operations alkalmazások, amelyeket a 21Vianet működtet Kínában'
-                  href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and Operations alkalmazások Franciaországban
-                  href: ../fin-ops-core/dev-itpro/deployment/france-local-deployment.md?toc=/dynamics365/finance/toc.json
-            - name: Új vagy módosult elemek
-              items:
-                - name: Új vagy módosult elemek az Finance and Operations alkalmazásokban
-                  href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
-                - name: Újdonságok és változások a Finance szolgáltatásban
-                  items:
-                    - name: Újdonságok és változások a Finance kezdőlapján
-                      href: get-started/whats-new-home-page.md
-                    - name: Finance 10.0.23
-                      href: get-started/whats-new-changed-10-0-23.md
-                    - name: Finance 10.0.22 (2021. november)
-                      href: get-started/whats-new-changed-10-0-22.md
-                    - name: Finance 10.0.21 (2021. október)
-                      href: get-started/whats-new-changed-10-0-21.md
-            - name: Eltávolított vagy elavult funkciók
-              items:
-                - name: Eltávolított vagy elavult funkciók a kezdőlapon
-                  href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
-                - name: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
-                  href: get-started/removed-deprecated-features-finance.md
-                - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
-                  href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
-            - name: Az AX 2012 elhalasztott funkciói
-              href: ../fin-ops-core/fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/finance/toc.json
-            - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
-              href: ../fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/finance/toc.json
             - name: Dokumentum-erőforrások
               items:
                 - name: Súgórendszer
@@ -108,8 +106,6 @@
                   href: ../fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs.md?toc=/dynamics365/finance/toc.json
                 - name: Videók
                   href: ../fin-ops-core/fin-ops/get-started/videos.md?toc=/dynamics365/finance/toc.json
-                - name: Fogalomtár
-                  href: ../fin-ops-core/fin-ops/get-started/glossary.md?toc=/dynamics365/finance/toc.json
             - name: Képzési katalógus
               items:
                 - name: Tanulási katalógus kezdőlapja
@@ -178,7 +174,7 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: Finance and OperationsAlkalmazások architektúrája
+                - name: A Finance and Operations alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/index
@@ -202,7 +198,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/move-lcs-implementation-project-tenant.md?toc=/dynamics365/finance/toc.json
                 - name: LCS végrehajtási projektek áthelyezése helyszíni verzióból a felhőbe
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/finance/toc.json
-                - name: Több LCS-projekt és gyártási környezet egyetlen Azure AD-bérlőnél
+                - name: Több LCS-projekt és működési környezet egyetlen Azure AD-bérlőnél
                   href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/finance/toc.json
         - name: Kötelezettségek
           items:
@@ -224,6 +220,8 @@
                   href: accounts-payable/vendor-copy.md
                 - name: Szállítói számla rögzítése a számlanaplóban
                   href: accounts-payable/tasks/record-vendor-invoice-invoice-journal.md
+                - name: Fizetési ütemezés alkalmazása a számlanaplóba
+                  href: accounts-payable/payment-invoice-journal.md
             - name: A kötelezettségkezelésben levő számlák és kulcsfontosságú adatok vizsgálata
               href: general-ledger/tasks/audit-invoices-key-data-ap-system.md
             - name: Háromirányú egyeztetési irányelvek
@@ -412,6 +410,12 @@
                   href: accounts-receivable/rev-rec-reallocation-scenario-3.md
                 - name: Bevételelszámolás újbóli felosztása – 4. eset
                   href: accounts-receivable/rev-rec-reallocation-scenario-4.md
+            - name: Előfizetéses számlázás
+              items:
+                - name: Előfizetéses számlázás áttekintése
+                  href: accounts-receivable/subscription-billing-summary.md
+                - name: Számlázási ütemezések beállítása
+                  href: accounts-receivable/sb-billing-schedules.md
             - name: Kifizetések és kiegyenlítések
               items:
                 - name: Vevői kifizetések áttekintése
@@ -500,6 +504,8 @@
               href: accounts-receivable/customer-aging-snapshot.md
             - name: Vevő korosítási jelentése
               href: accounts-receivable/customer-aging.md
+            - name: Vevőkorosítási adattároló
+              href: accounts-receivable/customer-aging-data-storage.md
             - name: Leírási napló létrehozása vevőhöz
               href: accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Speciális megjegyzések kezelése
@@ -518,11 +524,13 @@
               href: budgeting/budget-planning-overview-configuration.md
             - name: Költségvetés-ellenőrzés áttekintése
               href: budgeting/budget-control-overview-configuration.md
-            - name: Költségvetés áttekintése
+            - name: Költségvetés-készítés áttekintése
               href: budgeting/basic-budgeting-overview-configuration.md
-            - name: Beosztás előre jelzése
+            - name: Rendelkezésre álló költségvetési források
+              href: budgeting/budget-funds-available.md
+            - name: Pozíciós előrejelzés
               href: budgeting/position-forecasting.md
-            - name: Költségvetés-tervezés igazoló dokumentumai
+            - name: Költségvetés-tervezés alátámasztó dokumentumai
               href: budgeting/budget-planning-justification-docs.md
             - name: Költségvetés létrehozása tranzakciószámlákból vagy összegző számlákból
               href: budgeting/create-budget-transaction-accounts-total-accounts.md
@@ -640,7 +648,7 @@
               href: general-ledger/CFO-workspace.md
             - name: Számlastruktúrák létrehozása
               href: general-ledger/tasks/create-account-structures.md
-            - name: Költségvetés áttekintése
+            - name: Költségvetés-készítés áttekintése
               href: budgeting/basic-budgeting-overview-configuration.md
             - name: Dimenziók létrehozása és dimenziótagok importálása
               href: cost-accounting/cost-dimension.md
@@ -708,48 +716,6 @@
               href: general-ledger/electronic-messaging-work-with-em.md
             - name: Egyszerű exportálási ER-formátum hívása Excel-jelentés generálásához
               href: general-ledger/electronic-messaging-example.md
-        - name: Költséggazdálkodás
-          items:
-            - name: Költséggazdálkodás – áttekintés
-              href: /dynamics365/project-operations/prod-exp/expense-management
-            - name: Költségjelentések újragondolva
-              href: /dynamics365/project-operations/prod-exp/ExpenseWorkspaceNew
-            - name: Költséggazdálkodás tervezése
-              href: /dynamics365/project-operations/prod-exp/plan-expense-management
-            - name: Költséggazdálkodási paraméterek
-              href: /dynamics365/project-operations/prod-exp/Expense-Management-Parameters
-            - name: Költségkezelési mobil munkaterület
-              href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace
-            - name: Munkafolyamatok beállítása a költséggazdálkodáshoz
-              href: /dynamics365/project-operations/prod-exp/expense-workflows
-            - name: A költséggazdálkodás munkafolyamata
-              href: /dynamics365/project-operations/prod-exp/expense-workflow
-            - name: Költség delegálásának kezelése
-              href: /dynamics365/project-operations/prod-exp/manage-expense-delegation
-            - name: Költség a bevételezés feldolgozásakor
-              href: /dynamics365/project-operations/prod-exp/expense-receipt-processing
-            - name: Hitelkártya-tranzakciók importálása és karbantartása
-              href: /dynamics365/project-operations/prod-exp/import-credit-card
-            - name: Felosztások egy költségjelentésben
-              href: /dynamics365/project-operations/prod-exp/expense-report-distributions
-            - name: Vállalatközi költségek
-              href: /dynamics365/project-operations/prod-exp/intercompany-expense
-            - name: Költségszabályok meghatározása
-              href: /dynamics365/project-operations/prod-exp/travel-expense-policies
-            - name: Költségjelentés megtekintése
-              href: /dynamics365/project-operations/prod-exp/view-expense-report
-            - name: Költségjelentés feladása
-              href: /dynamics365/project-operations/prod-exp/post-expense
-            - name: Költségjelentések és több jóváhagyó
-              href: /dynamics365/project-operations/prod-exp/expense-report-multiple-approvers
-            - name: Áfa-visszaigénylés a Költséggazdálkodás modulban
-              href: /dynamics365/project-operations/prod-exp/VAT-expense-report
-            - name: Napidíj-szabályok
-              href: /dynamics365/project-operations/prod-exp/per-diem
-            - name: Utazási igénylések
-              href: /dynamics365/project-operations/prod-exp/travel-req
-            - name: Személyes kiadások a költségjelentéseken
-              href: /dynamics365/project-operations/prod-exp/personal-expenses
         - name: Tárgyi eszközök
           items:
             - name: Tárgyi eszközök kezdőlap
@@ -878,6 +844,8 @@
                   href: asset-leasing/set-up-lease-books.md
                 - name: Lízingcsoport létrehozása
                   href: asset-leasing/create-lease-group.md
+                - name: Kifizetett összeg típusa
+                  href: asset-leasing/Payment-amount-type.md
                 - name: Referencia-kamatláb beállítása
                   href: asset-leasing/set-up-index-rate-types.md
                 - name: Költségtípusok beállítása
@@ -938,147 +906,145 @@
               href: asset-leasing/asset-leasing-rprts.md
         - name: Főkönyv
           items:
-            - name: Főkönyv áttekintése
+            - name: A Főkönyv kezdőlapja
               href: general-ledger/general-ledger.md
-            - name: Számlák
+            - name: Számlatükör
               items:
-                - name: Elhatárolások áttekintése
-                  href: general-ledger/accruals-overview.md
-                - name: Eltávolítási szabályok
-                  href: general-ledger/elimination-rules.md
-                - name: Számla- és dimenziókombinációk
-                  href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
-                - name: Kiegyensúlyozott naplók egységközi könyveléshez
-                  href: general-ledger/example-balanced-journals-interunit-accounting.md
-                - name: Feladásdefiníciók
-                  href: general-ledger/posting-definitions.md
-                - name: Feladásdefiníció-példák
-                  href: general-ledger/example-posting-definitions.md
-                - name: Alapértelmezett leírások beállítása az automatikus feladáshoz
-                  href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
-                - name: Főkönyvi számlaegyenlegek
-                  href: general-ledger/general-ledger-account-balances.md
-                - name: Pénzügyi dimenziók meghatározása
-                  href: general-ledger/tasks/define-financial-dimensions.md
-                - name: Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása
-                  href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
-                - name: Pénzügyi dimenziókészletek
-                  href: general-ledger/financial-dimension-sets.md
-                - name: Számlastruktúrák létrehozása
-                  href: general-ledger/tasks/create-account-structures.md
-                - name: A pénzügyi dimenziók és a feladás
-                  href: general-ledger/default-dimensions.md
-                - name: Elhatárolási sémák létrehozása
-                  href: general-ledger/tasks/create-accrual-schemes.md
-                - name: Pénzügyi konszolidáció és pénznemátváltás
-                  items:
-                    - name: Pénzügyi konszolidáció és pénznemátváltás áttekintése
-                      href: general-ledger/financial-consolidations-currency-translation.md
-                    - name: Online konszolidálás
-                      href: general-ledger/consolidate-online.md
-                    - name: Konszolidált pénzügyi kimutatások létrehozása
-                      href: general-ledger/generating-consolidated-financial-statements.md
-                    - name: A fájlokba exportált leányvállalati adatok importálása
-                      href: general-ledger/import-subsidiary-data-from-files.md
-                    - name: A leányvállalatok adatainak exportálása fájlba
-                      href: general-ledger/export-subsidiary-data-to-file.md
-                    - name: Konszolidálás importálással – formátum
-                      href: general-ledger/consolidate-with-import-format.md
-                    - name: Jogi személy előkészítése a konszolidációs folyamathoz
-                      href: general-ledger/prepare-company-for-consolidation.md
-                    - name: Alárendelt jogi személy beállítása a konszolidációra
-                      href: general-ledger/set-up-subsidiary-company-for-consolidation.md
-                - name: Konszolidációs csoportok és további konszolidációs számla létrehozása
-                  href: general-ledger/tasks/create-consolidation-groups.md
-                - name: Fő számla típusai
-                  href: general-ledger/main-account-types.md
-                - name: Fő számla létrehozása
-                  href: general-ledger/tasks/create-main-account.md
                 - name: Számlatükör tervezése
                   href: general-ledger/plan-chart-of-accounts.md
-                - name: Helyi számlatükör tervezése
-                  href: general-ledger/plan-local-chart-of-accounts.md
-                - name: Kiegyenlítési tranzakciók a főkönyvi számlák között
-                  href: general-ledger/tasks/settle-transactions-between-ledger-accounts.md
-                - name: Főkönyvi számlaalias beállítása
-                  href: general-ledger/tasks/set-up-ledger-account-alias.md
-                - name: Fő számla kategóriáinak beállítása
-                  href: general-ledger/tasks/set-up-main-account-categories.md
-                - name: Könyvelési források böngészője
-                  href: accounts-payable/accounting-source-explorer.md
-                - name: Könyvelési felosztások
-                  href: accounts-payable/accounting-distributions.md
+                - name: Fő számlák
+                  items:
+                    - name: Fő számla típusai
+                      href: general-ledger/main-account-types.md
+                    - name: Fő számla kategóriáinak beállítása
+                      href: general-ledger/tasks/set-up-main-account-categories.md
+                    - name: Főkönyvi számlaalias beállítása
+                      href: general-ledger/tasks/set-up-ledger-account-alias.md
+                    - name: Fő számla létrehozása
+                      href: general-ledger/tasks/create-main-account.md
+                    - name: Felosztási feltételek
+                      href: general-ledger/main-account-allocation-terms.md
+                - name: Pénzügyi dimenziók
+                  items:
+                    - name: Pénzügyi dimenziók
+                      href: general-ledger/financial-dimensions.md
+                    - name: Pénzügyi dimenziók meghatározása
+                      href: general-ledger/tasks/define-financial-dimensions.md
+                    - name: Számla- és dimenziókombinációk
+                      href: general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
+                    - name: Pénzügyi dimenziókészletek
+                      href: general-ledger/financial-dimension-sets.md
+                    - name: Pénzügyi dimenzió alapértelmezett sablonjainak karbantartása
+                      href: general-ledger/tasks/maintain-financial-dimension-default-templates.md
+                    - name: A pénzügyi dimenziók és a feladás
+                      href: general-ledger/default-dimensions.md
+                    - name: Számlastruktúrák konfigurálása
+                      href: general-ledger/configure-account-structures.md
+                    - name: Számlastruktúrák létrehozása
+                      href: general-ledger/tasks/create-account-structures.md
+                    - name: Speciális szabálystruktúrák létrehozása és hozzárendelése
+                      href: general-ledger/tasks/create-assign-advanced-rule-structures.md
+                    - name: Hogyan lehet beállítani a kiegyenlítő pénzügyi dimenziókat?
+                      href: general-ledger/set-up-balance-dimensions.md
+            - name: Beállítás
+              items:
                 - name: Felosztások feldolgozása
                   href: general-ledger/process-allocations.md
-                - name: Felosztási feltételek
-                  href: general-ledger/main-account-allocation-terms.md
-                - name: Pénzügyi dimenziók
-                  href: general-ledger/financial-dimensions.md
-                - name: Konszolidációs csoportok és további konszolidációs számlák
-                  href: budgeting/consolidation-account-groups-consolidation-accounts.md
-                - name: Konszolidáció és megszüntetés áttekintése
-                  href: budgeting/consolidation-elimination-overview.md
-                - name: 'Pénzügyi naptárak, pénzügyi évek és időszakok'
-                  href: budgeting/fiscal-calendars-fiscal-years-periods.md
-                - name: Számlastruktúrák konfigurálása
-                  href: general-ledger/configure-account-structures.md
-                - name: Kettős pénznem
-                  href: general-ledger/dual-currency.md
-            - name: Naplók és főkönyvek
+                - name: A főkönyv konfigurálása
+                  items:
+                    - name: 'Pénzügyi naptárak, pénzügyi évek és időszakok'
+                      href: budgeting/fiscal-calendars-fiscal-years-periods.md
+                    - name: Főkönyvek konfigurálása
+                      href: general-ledger/configure-ledger.md
+                    - name: Könyvelési vagy jelentési pénznem módosítása
+                      href: general-ledger/add-change-acctg-rprtg-crrncy.md
+                    - name: Főkönyvi naptár módosítása vagy újbóli hozzárendelése
+                      href: general-ledger/change-mdfy-clndr-to-ledger.md
+                - name: Vállalatközi és kiegyenlítő dimenziók
+                  items:
+                    - name: Kiegyensúlyozott naplók egységközi könyveléshez
+                      href: general-ledger/example-balanced-journals-interunit-accounting.md
+                    - name: Vállalatközi könyvelés beállítása
+                      href: general-ledger/intercompany-accounting-setup.md
+                    - name: Hogyan lehet beállítani a kiegyenlítő pénzügyi dimenziókat?
+                      href: general-ledger/set-up-balance-dimensions.md
+                - name: Napló- és feladási alapértelmezések
+                  items:
+                    - name: Alapértelmezett leírások beállítása az automatikus feladáshoz
+                      href: general-ledger/set-up-default-descriptions-for-automatic-posting.md
+                    - name: Elhatárolások áttekintése
+                      href: general-ledger/accruals-overview.md
+                    - name: Elhatárolási sémák létrehozása
+                      href: general-ledger/tasks/create-accrual-schemes.md
+                    - name: Főkönyvi napló típusai
+                      href: general-ledger/ledger-journal-types.md
+                    - name: Speciális szabályok létrehozása naplók részére
+                      href: general-ledger/tasks/create-advanced-rules-journals.md
+                    - name: Keresőértékek hozzáadása az Excel-sablonokban szereplő pénzügyi dimenziókhoz
+                      href: ../fin-ops-core/dev-itpro/financial/add-dimensions-excel-templates.md
+                    - name: Feladásdefiníciók
+                      href: general-ledger/posting-definitions.md
+                    - name: Feladásdefiníció-példák
+                      href: general-ledger/example-posting-definitions.md
+                - name: Pénznem
+                  items:
+                    - name: Devizaárfolyamok importálása
+                      href: general-ledger/import-currency-exchange-rates.md
+                    - name: Kettős pénznem
+                      href: general-ledger/dual-currency.md
+                - name: Felosztási szabályok
+                  items:
+                    - name: Főkönyvi felosztási szabályok
+                      href: general-ledger/ledger-allocation-rules.md
+                    - name: Főkönyvi felosztási napló feldolgozása
+                      href: general-ledger/tasks/process-ledger-allocation-journal.md
+            - name: Naplók és forrásdokumentumok
               items:
-                - name: Általános napló feldolgozása
-                  href: general-ledger/general-journal-processing.md
-                - name: Időszaki naplók feladása
-                  href: general-ledger/tasks/post-periodic-journals.md
-                - name: Fordított naplófeladás
-                  href: general-ledger/reverse-journal-posting.md
-                - name: Főkönyvi felosztási napló feldolgozása
-                  href: general-ledger/tasks/process-ledger-allocation-journal.md
-                - name: Vállalatközi könyvelés beállítása
-                  href: general-ledger/intercompany-accounting-setup.md
-                - name: Főkönyvi felosztási szabályok
-                  href: general-ledger/ledger-allocation-rules.md
-                - name: Speciális szabályok létrehozása naplók részére
-                  href: general-ledger/tasks/create-advanced-rules-journals.md
-                - name: Speciális szabálystruktúrák létrehozása és hozzárendelése
-                  href: general-ledger/tasks/create-assign-advanced-rule-structures.md
-                - name: Főkönyvi napló típusai
-                  href: general-ledger/ledger-journal-types.md
-                - name: Főkönyvek konfigurálása
-                  href: general-ledger/configure-ledger.md
-                - name: Naplók létrehozása és érvényesítése
-                  href: general-ledger/tasks/create-validate-journals.md
-                - name: Naplóbejegyzések vagy tranzakciók megtekintése
-                  href: general-ledger/tasks/view-journal-entries-or-transactions.md
-                - name: Kapcsolódó vállalatközi bizonylat megtekintése egy naplóból
-                  href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
-                - name: Naplóbejegyzés létrehozása sablon alapján
-                  href: general-ledger/tasks/create-journal-entry-template.md
-                - name: Főkönyvi könyvelés tranzakcióinak létrehozása
-                  href: general-ledger/tasks/create-ledger-accrual-transactions.md
-                - name: Analitikus napló átvitele a főkönyvbe
-                  href: general-ledger/subledger-transfer.md
-                - name: Naplósorok és dokumentumok közzététele az Excel programból
-                  href: general-ledger/open-lines-excel-journals-documents.md
+                - name: Naplók
+                  items:
+                    - name: Általános napló feldolgozása
+                      href: general-ledger/general-journal-processing.md
+                    - name: Időszaki naplók feladása
+                      href: general-ledger/tasks/post-periodic-journals.md
+                    - name: Naplók létrehozása és érvényesítése
+                      href: general-ledger/tasks/create-validate-journals.md
+                    - name: Naplófeladási hiba egyensúlyhiány miatt
+                      href: general-ledger/posting-fail-imbalance.md
+                    - name: Fordított naplófeladás
+                      href: general-ledger/reverse-journal-posting.md
+                    - name: Miért nem lehet visszafordítani ezt a tranzakciót?
+                      href: general-ledger/cant-reverse-transctns.md
+                    - name: Naplóbejegyzés létrehozása sablon alapján
+                      href: general-ledger/tasks/create-journal-entry-template.md
+                    - name: Főkönyvi felosztási napló feldolgozása
+                      href: general-ledger/tasks/process-ledger-allocation-journal.md
+                    - name: Naplóbejegyzések vagy tranzakciók megtekintése
+                      href: general-ledger/tasks/view-journal-entries-or-transactions.md
+                    - name: Kapcsolódó vállalatközi bizonylat megtekintése egy naplóból
+                      href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
+                    - name: Naplósorok és dokumentumok közzététele az Excel programból
+                      href: general-ledger/open-lines-excel-journals-documents.md
+                    - name: Főkönyvi könyvelés tranzakcióinak létrehozása
+                      href: general-ledger/tasks/create-ledger-accrual-transactions.md
+                    - name: Egy bizonylat
+                      href: general-ledger/one-voucher.md
+                    - name: Egy bizonylat – GYIK
+                      href: general-ledger/one-voucher-faq.md
+                - name: Forrásdokumentumok
+                  items:
+                    - name: Könyvelési felosztások
+                      href: accounts-payable/accounting-distributions.md
+                    - name: Analitikus napló átvitele a főkönyvbe
+                      href: general-ledger/subledger-transfer.md
+                    - name: Könyvelési források böngészője
+                      href: accounts-payable/accounting-source-explorer.md
+            - name: Jelentések és lekérdezések
+              items:
                 - name: Naplóbejegyzések és tranzakciók megtekintése
                   href: general-ledger/view-journal-entries-transactions.md
                 - name: Főkönyvi kivonat a tranzakciós részletek jelentésével
                   href: public-sector/general-ledger-public-sector-trial-balance.md
-                - name: Feladott naplóbejegyzések naplózása
-                  href: general-ledger/tasks/journalize-posted-journal-entries.md
-                - name: Devizaátértékelés konszolidált vállalatban
-                  href: general-ledger/currency-revaluation-consolidation-company.md
-                - name: Főkönyvi devizaátértékelés
-                  href: general-ledger/foreign-currency-revaluation-general-ledger.md
-                - name: Devizaárfolyamok importálása
-                  href: general-ledger/import-currency-exchange-rates.md
-                - name: Egy bizonylat
-                  href: general-ledger/one-voucher.md
-                - name: Egy bizonylat – GYIK
-                  href: general-ledger/one-voucher-faq.md
-                - name: Főkönyvi kiegyenlítések
-                  href: general-ledger/ledger-settlements.md
-            - name: Időszak végi lezárás
+            - name: Időszakvégi lezárás
               items:
                 - name: A főkönyv lezárása az időszak végén
                   href: general-ledger/close-general-ledger-at-period-end.md
@@ -1092,80 +1058,48 @@
                   href: general-ledger/tasks/mass-financial-period-close.md
                 - name: Év végi tevékenységek – GYIK
                   href: general-ledger/faq-year-end-activities.md
-            - name: Áfa
+                - name: Főkönyvi kiegyenlítések
+                  href: general-ledger/ledger-settlements.md
+                - name: Figyelem a főkönyvi kiegyenlítés és az év végi zárás között
+                  href: general-ledger/awareness-between-ledger-settlement-year-end-close.md
+                - name: Főkönyvi devizaátértékelés
+                  href: general-ledger/foreign-currency-revaluation-general-ledger.md
+                - name: Főkönyvi számlaegyenlegek
+                  href: general-ledger/general-ledger-account-balances.md
+                - name: Főkönyvi felosztási napló feldolgozása
+                  href: general-ledger/tasks/process-ledger-allocation-journal.md
+                - name: Főkönyvi felosztási szabályok
+                  href: general-ledger/ledger-allocation-rules.md
+                - name: Feladott naplóbejegyzések naplózása
+                  href: general-ledger/tasks/journalize-posted-journal-entries.md
+            - name: Konszolidációk és eltávolítások
               items:
-                - name: Áfa áttekintése
-                  href: general-ledger/indirect-taxes-overview.md
-                - name: Számítás alapján és számítási módokon alapuló áfa értéke
-                  href: general-ledger/marginal-base-field.md
-                - name: Áfakifizetések és kerekítési szabályok
-                  href: general-ledger/round-sales-tax-payments.md
-                - name: Áfaszámítási módok a Kiindulás mezőben
-                  href: general-ledger/sales-tax-calculation-methods-origin-field.md
-                - name: Teljes összeg és intervallumszámítási opciók áfakódokhoz
-                  href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
-                - name: Áfa számítása az általános naplósorokhoz
-                  href: general-ledger/sales-tax-calculation-on-general-journal.md
-                - name: Szállítói számla áfatartalmának kiszámítása és kiigazítása
-                  href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
-                - name: Késleltetett adószámítás engedélyezése a naplóban
-                  href: general-ledger/enable-delayed-tax-calculation.md
-                - name: Áfakifizetés létrehozása
-                  href: general-ledger/tasks/create-sales-tax-payment.md
-                - name: Adóelszámolás-kerekítés a pénznemhez beállított egyéni tizedesjegyek alapján
-                  href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
-                - name: Áfatranzakciók létrehozása dokumentumokra
-                  href: general-ledger/tasks/create-sales-tax-transactions-documents.md
-                - name: Főkönyvi feladási csoportok beállítása az áfához
-                  href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
-                - name: Adóhatóságok beállítása
-                  href: general-ledger/tasks/set-up-sales-tax-authorities.md
-                - name: Áfakódok beállítása
-                  href: general-ledger/tasks/set-up-sales-tax-codes.md
-                - name: Áfacsoportok és cikkáfacsoportok beállítása
-                  href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
-                - name: Áfabevallás kódjainak beállítása
-                  href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
-                - name: Kettős pénznemtámogatás áfa esetén
-                  href: general-ledger/dual-currency-for-tax.md
-                - name: Áfameghatározás a főkönyvi tranzakciós jelentés szerint
-                  href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
-                - name: Áfafizetési időszakok beállítása
-                  href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
-                - name: Feladott áfatranzakciók megtekintése
-                  href: general-ledger/tasks/view-posted-sales-tax-transactions.md
-                - name: Áfafizetés kód szerint jelentés nyomtatása
-                  href: general-ledger/print-sales-tax-payment-by-code-report.md
-                - name: Áfa hibajavítása
-                  items:
-                    - name: Adószámítás nem történt meg vagy az adó összege nulla
-                      href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
-                    - name: Az adószámítási teljesítmény hatással van a tranzakciókra
-                      href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
-                    - name: Helytelen mezőérték a TaxTransban
-                      href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
-                    - name: TaxTrans rekord létrehozása nem történt meg
-                      href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
-                    - name: Az adó rossz főkönyvi számlába lett feladva a bizonylatban
-                      href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
-                    - name: Bizonylat létrehozása nem történt meg
-                      href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
-            - name: Adóelőleg
-              items:
-                - name: Adóelőleg beállítása
-                  href: general-ledger/tasks/set-up-withholding-tax.md
-                - name: Globális adóelőleg
-                  items:
-                    - name: Globális adóelőleg – áttekintés
-                      href: general-ledger/global-withholding-tax-overview.md
-                    - name: Globális adóelőleg beállítása
-                      href: general-ledger/set-up-global-withholding-tax.md
-                    - name: Adóelőleg a beszerzési tranzakciókban
-                      href: general-ledger/withholding-tax-in-purchase-transactions.md
-                    - name: Adóelőleg az értékesítési tranzakciókban
-                      href: general-ledger/withholding-tax-in-sales-transactions.md
-                    - name: Adóelőleg-kifizetés létrehozása
-                      href: general-ledger/create-a-withholding-tax-payment.md
+                - name: Konszolidáció és megszüntetés áttekintése
+                  href: budgeting/consolidation-elimination-overview.md
+                - name: Pénzügyi konszolidáció és pénznemátváltás áttekintése
+                  href: general-ledger/financial-consolidations-currency-translation.md
+                - name: Konszolidációs csoportok és további konszolidációs számlák
+                  href: budgeting/consolidation-account-groups-consolidation-accounts.md
+                - name: Konszolidációs csoportok és további konszolidációs számla létrehozása
+                  href: general-ledger/tasks/create-consolidation-groups.md
+                - name: Jogi személy előkészítése a konszolidációs folyamathoz
+                  href: general-ledger/prepare-company-for-consolidation.md
+                - name: Alárendelt jogi személy beállítása a konszolidációra
+                  href: general-ledger/set-up-subsidiary-company-for-consolidation.md
+                - name: Online konszolidálás
+                  href: general-ledger/consolidate-online.md
+                - name: A fájlokba exportált leányvállalati adatok importálása
+                  href: general-ledger/import-subsidiary-data-from-files.md
+                - name: A leányvállalatok adatainak exportálása fájlba
+                  href: general-ledger/export-subsidiary-data-to-file.md
+                - name: Konszolidálás importálással – formátum
+                  href: general-ledger/consolidate-with-import-format.md
+                - name: Eltávolítási szabályok
+                  href: general-ledger/elimination-rules.md
+                - name: Konszolidált pénzügyi kimutatások létrehozása
+                  href: general-ledger/generating-consolidated-financial-statements.md
+                - name: Devizaátértékelés konszolidált vállalatban
+                  href: general-ledger/currency-revaluation-consolidation-company.md
             - name: Könyvvizsgálati munkaterület
               items:
                 - name: Könyvvizsgálati irányelvszabályok
@@ -1248,14 +1182,14 @@
               href: finance-insights/finance-insights-home-page.md
             - name: Beállítás és felügyelet
               items:
-                - name: A Finance Insights konfigurálása nyilvános előzetes verzióhoz
-                  href: finance-insights/configure-for-fin-insites-PubPrvw.md
-                - name: A Finance Insights konfigurálása privát előzetes verzióhoz
+                - name: A Finance Insights konfigurálása
                   href: finance-insights/configure-for-fin-insites.md
                 - name: Vevői fizetési előrejelzések engedélyezése
                   href: finance-insights/enable-cust-paymnt-prediction.md
                 - name: Pénzforgalmi előrejelzés engedélyezése
                   href: finance-insights/enable-cash-flow-forecasting.md
+                - name: Külső adatok a pénzforgalmi előrejelzésekben
+                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Költségvetési javaslatok engedélyezése
                   href: finance-insights/enable-budget-proposal.md
                 - name: Adatintegrációs projekt létrehozása
@@ -1276,10 +1210,8 @@
                   href: finance-insights/budget-proposals.md
                 - name: Készpénzpozíció
                   href: finance-insights/cash-position.md
-                - name: Pénzforgalmi előrejelzés
+                - name: Készpénzre vonatkozó előrejelzés
                   href: finance-insights/cash-flow-forecast-intro.md
-                - name: Külső adatok használata pénzforgalmi előrejelzésekben
-                  href: finance-insights/external-data-in-cash-flow.md
                 - name: Vevői fizetési előrejelzések
                   href: finance-insights/payment-insights-overview.md
                 - name: Vevői fizetési előrejelzések használata
@@ -1288,88 +1220,6 @@
                   href: finance-insights/payment-snapshots.md
             - name: Finance Insights – hibaelhárítási GYIK
               href: finance-insights/finance-insights-troubleshooting-faq.md
-        - name: Projektvezetés és könyvelés
-          items:
-            - name: Projektvezetés és könyvelés áttekintése
-              href: /dynamics365/project-operations/prod-pma/overview-project-management-accounting
-            - name: Vállalatközi számlázás
-              href: /dynamics365/project-operations/prod-pma/intercompany-invoicing
-            - name: Vállalatközi projektszámlázás konfigurálása
-              href: /dynamics365/project-operations/prod-pma/configure-intercompany-project-invoicing
-            - name: Munka és kiadások elszámolóárainak konfigurálása
-              href: /dynamics365/project-operations/prod-pma/configure-standard-costs-labor-expenses
-            - name: Szállítói kifizetések visszatartási feltételeinek létrehozása és alkalmazása
-              href: /dynamics365/project-operations/prod-pma/create-and-apply-vendor-payment-retention-terms
-            - name: Saját fizetés beérkezésekor fizetendő szállítói fizetések beállítása és használata
-              href: /dynamics365/project-operations/prod-pma/setup-manage-vendor-payments
-            - name: Projektköltség-könyvelési beszerzési bizonylatok
-              href: accounts-payable/project-cost-accrual-purchase-receipts.md
-            - name: Projektszámlázás
-              href: accounts-payable/project-invoicing.md
-            - name: Projektszerződések
-              href: /dynamics365/project-operations/prod-pma/project-contracts
-            - name: Speciális szerződések létrehozása a folyamat alapján történő számlázáshoz
-              href: /dynamics365/project-operations/prod-pma/project-create-advanced-contracts-for-billing-based-progress
-            - name: Projekt-előrejelzések és -költségvetések
-              href: /dynamics365/project-operations/prod-pma/project-forecasts-budgets
-            - name: Előrejelzési modellek létrehozása projektköltségvetésekhez
-              href: /dynamics365/project-operations/prod-pma/create-forecast-models-project-budgets
-            - name: Projekt költségvetéseinek átvitele a pénzügyi év végén
-              href: /dynamics365/project-operations/prod-pma/process-project-budgets-for-fiscal-year-end
-            - name: Projekt értékesítési rendelései
-              href: /dynamics365/project-operations/prod-pma/project-sales-orders
-            - name: Projekt beszerzési rendelései
-              href: /dynamics365/project-operations/prod-pma/project-purchase-orders
-            - name: Projektajánlatok
-              href: /dynamics365/project-operations/prod-pma/project-quotations
-            - name: 'Projektárajánlat megerősítése, frissítése és elküldése'
-              href: /dynamics365/project-operations/prod-pma/confirm-update-send-project-quotation
-            - name: Árajánlat átvitele egy projektbe
-              href: /dynamics365/project-operations/prod-pma/transfer-quote-new-existing-project
-            - name: Projekterőforrások
-              items:
-                - name: Projekterőforrások áttekintése
-                  href: /dynamics365/project-operations/prod-pma/project-resourcing
-                - name: Projekterőforrások beállítása
-                  href: /dynamics365/project-operations/prod-pma/set-up-project-resources
-                - name: Erőforrás-kompetenciák kezelése
-                  href: /dynamics365/project-operations/prod-pma/manage-resource-competencies
-                - name: Új projekt létrehozása
-                  href: /dynamics365/project-operations/prod-pma/create-new-project
-                - name: Szerepköralapú árképzés beállítása
-                  href: /dynamics365/project-operations/prod-pma/set-up-role-based-pricing
-                - name: Projektcsapat létrehozása
-                  href: /dynamics365/project-operations/prod-pma/create-project-team
-                - name: Erőforrás-kapacitás szinkronizálása
-                  href: /dynamics365/project-operations/prod-pma/synchronize-resource-capacity
-                - name: Projekterőforrás-ütemezés teljesítménye
-                  href: /dynamics365/project-operations/prod-pma/project-scheduling-performance
-                - name: Szerepkörök beállítása a munkalebontási struktúra sablonjain
-                  href: /dynamics365/project-operations/prod-pma/set-up-roles-wbs-template
-                - name: A tervezett erőforrások erőforrás-teljesítése
-                  href: /dynamics365/project-operations/prod-pma/resource-fulfillment-planned-resources
-            - name: Cikkek átvétele cikkszükségletből származó beszerzési rendelés alapján
-              href: /dynamics365/project-operations/prod-pma/receive-items-purchase-order-item-requirement
-            - name: Munkalebontási struktúrák
-              items:
-                - name: Munkalebontási struktúrák áttekintése
-                  href: /dynamics365/project-operations/prod-pma/work-breakdown-structures
-                - name: Microsoft Project Client-integráció
-                  href: /dynamics365/project-operations/prod-pma/project-integration
-                - name: Project-mobilalkalmazások áttekintése
-                  href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview
-                - name: Projektidő megadására szolgáló mobil munkaterület
-                  href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace
-                - name: Project Timesheet mobilalkalmazás
-                  href: /dynamics365/project-operations/prod-pma/project-timesheet
-                - name: Projekthez tartozó időnyilvántartások mobileszközön
-                  href: /dynamics365/project-operations/prod-pma/Mobile-timesheets
-                - name: Egyéni mezők alkalmazása a Project Timesheet mobilalkalmazás esetében
-                  href: /dynamics365/project-operations/prod-pma/custom-fields-mobile
-            - name: Projekttámogatások
-              href: /dynamics365/project-operations/prod-pma/project-grants
-            - name: Projektbecslés figyelmen kívül hagyása
-              href: /dynamics365/project-operations/prod-pma/eliminate-project-estimate
         - name: Állami szektor
           items:
             - name: Állami szektor – kezdőlap
@@ -1532,18 +1382,84 @@
                   items:
                     - name: Elektronikus számlázás áttekintése
                       href: localizations/e-invoicing-service-overview.md?toc=/dynamics365/finance/toc.json
-                    - name: Elektronikus számlázás adminisztrációs összetevői
-                      href: localizations/e-invoicing-service-administration.md?toc=/dynamics365/finance/toc.json
-                    - name: Elektronikus számlázás konfigurálása a Regulatory Configuration Services (RCS) megoldásban
-                      href: localizations/e-invoicing-configuration-rcs.md?toc=/dynamics365/finance/toc.json
-                    - name: Elektronikus számlák kiállítása a Finance és a Supply Chain Management szolgáltatásban
-                      href: localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md?toc=/dynamics365/finance/toc.json
-                    - name: Azure-tárfiók és Key Vault létrehozása
-                      href: localizations/e-invoicing-create-azure-storage-account-key-vault.md?toc=/dynamics365/finance/toc.json
-                    - name: Felhasználáskezelési irányítópult
-                      href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
-                    - name: Első lépések
+                    - name: Elektronikus számlázás adminisztrációs és integrációs összetevői
+                      href: localizations/e-invoicing-administration-integration-components.md?toc=/dynamics365/finance/toc.json
+                    - name: Az elektronikus számlázás beállítása
                       items:
+                        - name: Az elektronikus számlázás beállítása
+                          href: localizations/e-invoicing-set-up-overview.md?toc=/dynamics365/finance/toc.json
+                        - name: Elektronikus számlázás regisztrálása és telepítése
+                          items:
+                            - name: Elektronikus számlázás regisztrálása és a telepítés áttekintése
+                              href: localizations/e-invoicing-sign-up-install.md?toc=/dynamics365/finance/toc.json
+                            - name: A mikroszolgáltatások bővítményének telepítése a Lifecycle Services szolgáltatásba
+                              href: localizations/e-invoicing-install-add-in-microservices-lcs.md?toc=/dynamics365/finance/toc.json
+                            - name: Regulatory Configuration Services (RCS) telepítése
+                              href: localizations/e-invoicing-set-up-rcs.md?toc=/dynamics365/finance/toc.json
+                            - name: Power Platform beépülő modul rendszergazdai hivatkozása
+                              href: localizations/e-invoicing-power-platform-plug-in.md?toc=/dynamics365/finance/toc.json
+                        - name: Azure-erőforrások beállítása
+                          items:
+                            - name: Azure-erőforrások beállítása elektronikus számlázáshoz
+                              href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
+                            - name: Azure Key Vault létrehozása az Azure Portalon
+                              href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/finance/toc.json
+                            - name: Azure-tárfiók létrehozása az Azure Portalon
+                              href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
+                            - name: SharePoint kapcsolat konfigurálása
+                              href: localizations/e-invoicing-create-sharepoint-connection.md?toc=/dynamics365/finance/toc.json
+                        - name: Környezetek beállítása
+                          items:
+                            - name: Szolgáltatáskörnyezetek és csatlakoztatott alkalmazások konfigurálása
+                              href: localizations/e-invoicing-configure-service-environments-connected-applications.md?toc=/dynamics365/finance/toc.json
+                            - name: Szolgáltatáskörnyezetek
+                              href: localizations/e-invoicing-service-environments.md?toc=/dynamics365/finance/toc.json
+                            - name: Vevői tanúsítványok és titkos kódok
+                              href: localizations/e-invoicing-customer-certificates-secrets.md?toc=/dynamics365/finance/toc.json
+                            - name: Csatlakoztatott alkalmazások
+                              href: localizations/e-invoicing-connected-applications.md?toc=/dynamics365/finance/toc.json
+                    - name: Globalizációs funkciók használata
+                      items:
+                        - name: Globalizációs funkciók használatának áttekintése
+                          href: localizations/e-invoicing-working-globalization-features.md?toc=/dynamics365/finance/toc.json
+                        - name: Funkció importálása a globális adattárból
+                          href: localizations/e-invoicing-import-feature-global-repository.md?toc=/dynamics365/finance/toc.json
+                        - name: Új globalizációs funkció létrehozása
+                          href: localizations/e-invoicing-create-new-globalization-feature.md?toc=/dynamics365/finance/toc.json
+                        - name: Konfigurációk használata
+                          href: localizations/e-invoicing-work-configurations.md
+                        - name: Funkcióbeállítás használata
+                          href: localizations/e-invoicing-feature-setup.md?toc=/dynamics365/finance/toc.json
+                        - name: 'Globalizációs funkció befejezése, közzététele és üzembe helyezése'
+                          href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
+                        - name: Megosztás más szervezetekkel
+                          href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+                        - name: Bejövő elektronikus dokumentumok feldolgozása
+                          items:
+                            - name: Bejövő elektronikus dokumentumok feldolgozása
+                              href: localizations/e-invoicing-process-incoming-electronic-documents.md
+                            - name: E-mail-csatorna konfigurálása
+                              href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
+                            - name: SharePoint csatorna konfigurálása
+                              href: localizations/e-invoicing-configure-sharepoint-channel.md
+                        - name: Elektronikus számlázás beállítása és használata a Finance és a Supply Chain Management szolgáltatásban
+                          items: null
+                        - name: Elektronikus számlázással való integráció aktiválása és beállítása
+                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                        - name: Az elektronikus számlázási paraméterek beállítása
+                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                        - name: Az elektronikus számlázás használata
+                          items:
+                            - name: Elektronikus dokumentumok elküldése elektronikus számlázásra
+                              href: localizations/e-invoicing-submit-electronic-documents.md?toc=/dynamics365/finance/toc.json
+                            - name: Elektronikus dokumentumok beküldési naplójának használata
+                              href: localizations/e-invoicing-submission-log.md?toc=/dynamics365/finance/toc.json
+                            - name: Elektronikus dokumentumok bevételezési naplójának használata
+                              href: localizations/e-invoicing-electronic-documents-receiving-log.md?toc=/dynamics365/finance/toc.json
+                    - name: Országspecifikus forgatókönyvek
+                      items:
+                        - name: Az elektronikus számlázási funkciók elérhetősége
+                          href: localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
                           href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések az elektronikus számlázás használata során
@@ -1558,10 +1474,14 @@
                           href: localizations/e-invoicing-mex-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések a Szaúd-Arábiára vonatkozó Elektronikus számlázás használata során
                           href: localizations/e-invoicing-sa-get-started.md
+                        - name: Olasz FatturaPA és az SDI közvetlen integrációjának beállítása
+                          href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Az elektronikus számlázási szolgáltatás használata a szállítói számlák importálására
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
                         - name: Az elektronikus számlázás beállítása
                           href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
+                        - name: Power Platform beépülő modul rendszergazdai hivatkozása
+                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: Elektronikus számlázás – GYIK
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
                 - name: Áfaszámítás
@@ -1572,8 +1492,18 @@
                       items:
                         - name: Az adószámítás első lépései
                           href: localizations/global-get-started-with-tax-calculation-service.md?toc=/dynamics365/finance/toc.json
-                        - name: Alapadat-keresés környezetének beállítása
+                        - name: Adókódok beállítása
+                          href: localizations/set-up-tax-codes.md
+                        - name: Adócsoportok beállítása
+                          href: localizations/set-up-tax-groups.md
+                        - name: Cikk adócsoportjainak beállítása
+                          href: localizations/set-up-item-tax-groups.md
+                        - name: Adószámítások importálása és exportálása
+                          href: localizations/tax-calculation-import-export-feature.md
+                        - name: Alapadat-lekérdezés környezetének beállítása
                           href: localizations/tax-service-set-up-environment-master-data-lookup.md?toc=/dynamics365/finance/toc.json
+                        - name: Adóbeállítások szinkronizálása az adószámítási szolgáltatásból a Finance alkalmazásba
+                          href: localizations/global-master-data-sync-tax-calculation-service-finance.md
                     - name: Meghatározás
                       items:
                         - name: Adószámítási adatmodell
@@ -1602,6 +1532,10 @@
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
+                        - name: Németországi jelentés
+                          items:
+                            - name: Áfabevallás
+                              href: localizations/emea-deu-vat-declaration-germany.md
                         - name: Hollandiai jelentés
                           items:
                             - name: Áfabevallás
@@ -1612,6 +1546,8 @@
                           items:
                             - name: 'Azonnali információbiztosítás az áfáról (Suministro Inmediato de Información del IVA, SII)'
                               href: localizations/emea-esp-sii-spain.md
+                            - name: Áfabevallás
+                              href: localizations/emea-esp-vat-declaration-spain.md
                         - name: Svédországi jelentés
                           items:
                             - name: Áfabevallás
@@ -1624,6 +1560,10 @@
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-gbr-vat-declaration.md
+                        - name: Norvégiai jelentés
+                          items:
+                            - name: Áfabevallás
+                              href: localizations/emea-nor-vat-declaration.md
                     - name: Adószámítás engedélyezése átmozgatási rendeléshez
                       items:
                         - name: Adófunkció támogatása átmozgatási rendelésekhez
@@ -1636,12 +1576,96 @@
                           href: localizations/tax-service-add-data-fields-tax-configurations.md?toc=/dynamics365/finance/toc.json
                         - name: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
                           href: localizations/tax-service-add-data-fields-tax-integration-by-extension.md?toc=/dynamics365/finance/toc.json
-                        - name: Adókonfigurációk testreszabása az alapadatok kereséséhez
+                        - name: Adókonfigurációk testreszabása az alapadatok lekérdezéséhez
                           href: localizations/customize-tax-configurations-master-data-lookup.md
-                    - name: Áfaszámítási GYIK
+                    - name: Hibaelhárítás
+                      items:
+                        - name: Nem sikerült hozzáférni az adószolgáltatáshoz
+                          href: localizations/tcs-troubleshooting-failed-access-tax-service.md
+                        - name: Üres adófunkció-lista az Adószámítási paraméterekben
+                          href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
+                    - name: Áfaszámítás – GYIK
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
+            - name: Adó
+              items:
+                - name: Áfa
+                  items:
+                    - name: Áfa áttekintése
+                      href: general-ledger/indirect-taxes-overview.md
+                    - name: Áfakulcsok a marginális alap és a számítási módok alapján
+                      href: general-ledger/marginal-base-field.md
+                    - name: Áfakifizetések és kerekítési szabályok
+                      href: general-ledger/round-sales-tax-payments.md
+                    - name: Áfaszámítási módok a Kiindulás mezőben
+                      href: general-ledger/sales-tax-calculation-methods-origin-field.md
+                    - name: Teljes összeg és intervallumszámítási opciók áfakódokhoz
+                      href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: Áfa számítása az általános naplósorokhoz
+                      href: general-ledger/sales-tax-calculation-on-general-journal.md
+                    - name: Szállítói számla áfatartalmának kiszámítása és kiigazítása
+                      href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+                    - name: Késleltetett adószámítás engedélyezése a naplóban
+                      href: general-ledger/enable-delayed-tax-calculation.md
+                    - name: Áfakifizetés létrehozása
+                      href: general-ledger/tasks/create-sales-tax-payment.md
+                    - name: Adóelszámolás-kerekítés a pénznemhez beállított egyéni tizedesjegyek alapján
+                      href: localizations/global-tax-settlement-rounding-based-customized-currency-decimal-places.md
+                    - name: Áfatranzakciók létrehozása dokumentumokra
+                      href: general-ledger/tasks/create-sales-tax-transactions-documents.md
+                    - name: Főkönyvi feladási csoportok beállítása az áfához
+                      href: general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md
+                    - name: Adóhatóságok beállítása
+                      href: general-ledger/tasks/set-up-sales-tax-authorities.md
+                    - name: Áfakódok beállítása
+                      href: general-ledger/tasks/set-up-sales-tax-codes.md
+                    - name: Áfacsoportok és cikkáfacsoportok beállítása
+                      href: general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md
+                    - name: Áfabevallás kódjainak beállítása
+                      href: general-ledger/tasks/set-up-sales-tax-reporting-codes.md
+                    - name: Kettős pénznemtámogatás áfa esetén
+                      href: general-ledger/dual-currency-for-tax.md
+                    - name: Áfameghatározás a főkönyvi tranzakciós jelentés szerint
+                      href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
+                    - name: Áfafizetési időszakok beállítása
+                      href: general-ledger/tasks/set-up-sales-tax-settlement-periods.md
+                    - name: Feladott áfatranzakciók megtekintése
+                      href: general-ledger/tasks/view-posted-sales-tax-transactions.md
+                    - name: Áfafizetés kód szerint jelentés nyomtatása
+                      href: general-ledger/print-sales-tax-payment-by-code-report.md
+                    - name: Áfa hibajavítása
+                      items:
+                        - name: Adószámítás nem történt meg vagy az adó összege nulla
+                          href: general-ledger/sales-tax-troubleshooting-tax-not-calculated-amount-zero.md
+                        - name: Az adószámítási teljesítmény hatással van a tranzakciókra
+                          href: general-ledger/sales-tax-troubleshooting-tax-calculation-bad-performance.md
+                        - name: Helytelen mezőérték a TaxTransban
+                          href: general-ledger/sales-tax-troubleshooting-field-value-taxtrans-incorrect.md
+                        - name: TaxTrans rekord létrehozása nem történt meg
+                          href: general-ledger/sales-tax-troubleshooting-taxtrans-record-not-generated.md
+                        - name: Az adó rossz főkönyvi számlába lett feladva a bizonylatban
+                          href: general-ledger/sales-tax-troubleshooting-tax-posted-to-wrong-ledger-account.md
+                        - name: Bizonylat létrehozása nem történt meg
+                          href: general-ledger/sales-tax-troubleshooting-voucher-not-generated.md
+                - name: Adóelőleg
+                  items:
+                    - name: Adóelőleg beállítása
+                      href: general-ledger/tasks/set-up-withholding-tax.md
+                    - name: Globális adóelőleg
+                      items:
+                        - name: Globális adóelőleg – áttekintés
+                          href: general-ledger/global-withholding-tax-overview.md
+                        - name: Globális adóelőleg beállítása
+                          href: general-ledger/set-up-global-withholding-tax.md
+                        - name: Adóelőleg a beszerzési tranzakciókban
+                          href: general-ledger/withholding-tax-in-purchase-transactions.md
+                        - name: Adóelőleg az értékesítési tranzakciókban
+                          href: general-ledger/withholding-tax-in-sales-transactions.md
+                        - name: Adóelőleg-kifizetés létrehozása
+                          href: general-ledger/create-a-withholding-tax-payment.md
             - name: Jogszabálykövetési frissítések
               href: localizations/regulatory-updates.md
+            - name: Jogszabálykövetési frissítések keresése
+              href: localizations/search-for-regulatory-updates.md
             - name: Ausztrália
               items:
                 - name: Ausztrália – áttekintés
@@ -1666,16 +1690,18 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Csomagolóanyag díjai
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: Áfabevallás
+                - name: Áfakimutatás
                   href: localizations/emea-aut-vat-statement-details.md
                 - name: Nemzetközi szolgáltatásokra vonatkozó jelentés
-                  href: localizations/emea-aut-vat-statement-details.md
+                  href: localizations/emea-aut-cross-border-services-report.md
                 - name: Osztrák Intrastat
                   href: localizations/emea-aut-intrastat.md
                 - name: Beszerzési illetékek
                   href: localizations/emea-aut-purchase-duties.md
                 - name: Áfabevallás
                   href: localizations/emea-aut-vat-declaration-austria.md
+                - name: EU értékesítési lista
+                  href: localizations/emea-aut-eu-sales-list.md
             - name: Bahrein
               items:
                 - name: Bahrein – áttekintés
@@ -1804,6 +1830,8 @@
                       href: localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
                     - name: NF-e paraméterek beállítása a pénzügyi létesítményhez
                       href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+                    - name: NF-e XML-fájlok áthelyezése mellékletként
+                      href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
                     - name: NT2020.005 – Az elektronikus pénzügyi bizonylat (NF-e) elrendezési és ellenőrzési frissítései
                       href: localizations/latam-bra-nfe-nt2020.005.md
                     - name: NT2020.006 – Közvetítő értékesítési digitális platform az NF-e esetében
@@ -1858,6 +1886,8 @@
                   href: localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
                 - name: Kamat és bírságok kiszámítása a vevői kifizetésekhez
                   href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
+                - name: Bankszámlaszámok beállítása Brazíliához
+                  href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
                 - name: Adók
                   items:
                     - name: Brazília – adók áttekintése
@@ -1886,6 +1916,8 @@
                       href: localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
                     - name: 'ICMS-ST kiegészítési és visszaszolgáltatási folyamat és nyilatkozat az RS, SC és SP államok számára'
                       href: localizations/latam-bra-complement-restitution.md
+                    - name: Más államok szállítói termékeire vonatkozó ICMS-DIF adószámítások alapváltozása
+                      href: localizations/latam-brazil-basis-change-ICMS-DIF-tax-calculation-products-suppliers-other-states.md
                     - name: Kiigazítási kódok beállítása az IPI-adókhoz
                       href: localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
                     - name: PIS és COFINS tárgyi eszközök
@@ -1916,7 +1948,7 @@
               items:
                 - name: Kína – áttekintés
                   href: localizations/china.md
-                - name: 'Finance and Operations, amelyet a 21Vianet működtet Kínában'
+                - name: Kínában a Finance and Operations üzemeltetője a 21Vianet
                   href: ../fin-ops-core/dev-itpro/deployment/china-local-deployment.md
                 - name: Számlacsoportok kiválasztása kínai utalványtípusokhoz
                   href: localizations/apac-chn-account-groups-selection.md
@@ -1934,7 +1966,7 @@
                   href: localizations/tasks/golden-tax-integration-export-setup.md
                 - name: Értékcsökkenés módjai tárgyi eszközöknél
                   href: localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Kínai Aranyadó adatentitás importálása
+                - name: Kínai Aranyadó fájljainak importálása
                   href: localizations/apac-chn-import-golden-tax-data-entity.md
                 - name: Havi átlagos készletköltségmodell
                   href: localizations/apac-chn-monthly-average-cost-model.md
@@ -1984,10 +2016,12 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése
                   href: localizations/emea-amount-printing-forms.md
-                - name: Áfabevallás
+                - name: Áfakimutatás
                   href: localizations/emea-cze-vat-statement-details.md
                 - name: Áfabevallás (Cseh Köztársaság)
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
+                - name: Cseh Intrastat
+                  href: localizations/emea-cze-intrastat.md
                 - name: Bankszámlák banki szimbólumai
                   href: localizations/emea-cze-specify-bank-symbols-for-bank-accounts.md
                 - name: Közösségi áfa
@@ -2020,6 +2054,8 @@
                   href: localizations/tasks/set-up-oioubl-electronic-invoicing.md
                 - name: Fizetési bizonylat formátumának beállítása
                   href: localizations/tasks/set-up-payment-slip-format.md
+                - name: Dán Intrastat
+                  href: localizations/emea-dnk-intrastat.md
             - name: Egyiptom
               items:
                 - name: Egyiptom – áttekintés
@@ -2040,8 +2076,10 @@
                   href: localizations/estonia.md
                 - name: Személyes információk kérése
                   href: localizations/emea-est-personal-info.md
-                - name: Áfabevallás
+                - name: Áfakimutatás
                   href: localizations/emea-est-vat-statement-details.md
+                - name: Észt Intrastat
+                  href: localizations/emea-est-intrastat.md
             - name: Európa
               items:
                 - name: Európa – áttekintés
@@ -2070,6 +2108,8 @@
                   href: localizations/emea-entry-certificates.md
                 - name: EU értékesítési lista jelentés
                   href: localizations/emea-eu-sales-list.md
+                - name: Példa általános európai uniós (EU) értékesítési listára
+                  href: localizations/emea-eu-sales-list-example.md
                 - name: Árfolyam-korrekciók
                   href: localizations/emea-exchange-rate-adjustments.md
                 - name: Fizetési módok fájlformátumai
@@ -2080,8 +2120,6 @@
                   href: localizations/emea-credit-note-reverse-fixed-asset-sale.md
                 - name: Átadási bizonylat létrehozása belső készlet átviteléhez
                   href: localizations/tasks/transfer-document-internal-inventory-transfer.md
-                - name: EU értékesítési listajelentés készítése
-                  href: localizations/tasks/eur-00011-eu-sales-list-report.md
                 - name: ISO20022-fájlok
                   items:
                     - name: ISO20022 fájlok importálása
@@ -2152,8 +2190,6 @@
                   href: accounts-receivable/sepa-direct-debit-overview.md
                 - name: Vevői és szállítói kompenzáció beállítása
                   href: localizations/emea-compensation-customer-vendor-transactions.md
-                - name: EU értékesítési lista jelentés beállítása
-                  href: localizations/tasks/eur-00011-eu-sales-list-reporting.md
                 - name: Fizetési bizonylat formátumának beállítása projektszámlákhoz
                   href: localizations/tasks/set-up-payment-slip-format-project-invoices.md
                 - name: Aláírók beállítása a nyomtatási képernyőkhöz
@@ -2184,18 +2220,24 @@
                       href: localizations/emea-vat-register-transactions.md
                     - name: Adópont dátuma (áfatételjegyzék dátuma)
                       href: localizations/emea-tax-point-date.md
-                    - name: Áfabevallás
+                    - name: Áfajelentés
                       href: localizations/emea-vat-reporting.md
                     - name: Áfajelentés létrehozása és elküldése
                       href: localizations/tasks/create-submit-vat-report.md
+                    - name: Szállító áfatételjegyzékének dátuma
+                      href: localizations/emea-date-vendor-vat-register.md
                 - name: Kiegyenlítési tranzakciók megtekintése
                   href: localizations/emea-transactions-settlement-form.md
+                - name: Pénzügyi ok
+                  href: localizations/emea-financial-reason.md
             - name: Finnország
               items:
                 - name: Finnország – áttekintés
                   href: localizations/finland.md
                 - name: Áfafizetéssel kapcsolatos jelentés Finnország esetén
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
+                - name: Finn Intrastat
+                  href: localizations/emea-fin-intrastat.md
             - name: Franciaország
               items:
                 - name: Franciaország – áttekintés
@@ -2236,6 +2278,8 @@
                   href: localizations/tasks/fr-00018-daily-interest.md
                 - name: Különbözeti értékcsökkenés
                   href: localizations/emea-fra-derogatory-depreciation.md
+                - name: EU értékesítési lista
+                  href: localizations/emea-fra-eu-sales-list.md
                 - name: Francia váltók és kötelezvények
                   href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
                 - name: Francia Intrastat
@@ -2282,11 +2326,13 @@
                       href: localizations/emea-deu-gdpdu-data-filtering.md
                 - name: Értékcsökkentési helyesbítések további beszerzésekhez a második év során
                   href: localizations/tasks/de-00002-depreciation.md
+                - name: Áfabevallás
+                  href: localizations/emea-deu-vat-declaration-germany.md
                 - name: Elektronikus áfabevallás (ELSTER) továbbítása
                   href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Német Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Áfabevallási nyilatkozat Németország számára
+                - name: Áfakimutatás
                   href: localizations/emea-de-vat-declaration.md
                 - name: Elektronikus vevői számlák (jelentés)
                   href: localizations/emea-deu-e-invoices.md
@@ -2296,6 +2342,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
                 - name: Külön címke nyomtatása értékesítésből származó jóváírásokhoz
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
+                - name: EU értékesítési lista
+                  href: localizations/emea-deu-eu-sales-list.md
             - name: Magyarország
               items:
                 - name: Magyarország – áttekintés
@@ -2372,6 +2420,8 @@
                       href: localizations/apac-ind-news-letter-10-0-01.md
                     - name: Újdonságok és változások a 10.0.0-s verzióban
                       href: localizations/apac-ind-news-letter-10-0-00.md
+                - name: Audit- és szerkesztési naplók könyvelési szoftverhez
+                  href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
                 - name: Közvetett adók
                   items:
                     - name: Indiai GST
@@ -2712,13 +2762,17 @@
               items:
                 - name: Indonézia – áttekintés
                   href: localizations/indonesia.md
+                - name: Adószámla-számozás és -számlázás
+                  href: localizations/apac-idn-invoicing.md
                 - name: Áfabevallás Indonézia számára
                   href: localizations/apac-idn-ppn-declaration.md
+                - name: Adóelőleg-jelentés Indonéziában
+                  href: localizations/apac-idn-wht-declaration.md
             - name: Olaszország
               items:
                 - name: Olaszország – áttekintés
                   href: localizations/italy.md
-                - name: Áfabevallások részletei
+                - name: Áfakimutatások részletei
                   href: localizations/emea-ita-vat-statements-details.md
                 - name: Negyedéves áfaügyi kommunikációs jelentés
                   href: localizations/emea-ita-quarterly-vat-communication.md
@@ -2750,10 +2804,14 @@
                   href: localizations/emea-ita-exil-zero-invoice-posting.md
                 - name: Banki adatok használhatóságának javítása
                   href: localizations/emea-ita-exil-bank-accounts-setup.md
-                - name: Olasz Intrastat
-                  href: localizations/emea-ita-intrastat.md
-                - name: Érkezések és küldemények feladása az Intrastat számára
-                  href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                - name: Intrastat
+                  items:
+                    - name: Olasz Intrastat
+                      href: localizations/emea-ita-intrastat.md
+                    - name: Érkezések és küldemények feladása az Intrastat számára
+                      href: localizations/emea-ita-post-arrivals-and-dispatches-for-intrastat.md
+                    - name: Intrastat (IT) fájlformátum
+                      href: /dynamics/s-e/365business/dynamices365finance_itintrastatfile
                 - name: Vegyes költségek kilogrammonként egy Intrastat-bevallásban
                   href: localizations/emea-ita-exil-misc-charges-intrastat.md
                 - name: Szándéknyilatkozatok – A szokásos exportőrök számlázása
@@ -2776,6 +2834,8 @@
                   href: localizations/emea-ita-exil-tax-plafond.md
                 - name: Elektronikus vevői számlák
                   href: localizations/emea-ita-e-invoices.md
+                - name: Szállítói elektronikus számlák
+                  href: localizations/emea-ita-vend-e-invoices.md
                 - name: Éves adóügyi kommunikáció
                   href: localizations/emea-ita-yearly-tax-communication.md
                 - name: Kifizetés nyomonkövethetősége
@@ -2958,8 +3018,10 @@
                   href: localizations/emea-invoices-packing-slips-numbering.md
                 - name: Természeti erőforrások adójáról szóló jelentés
                   href: localizations/emea-lva-tax-natural-resources.md
-                - name: Áfabevallás részletei
+                - name: Áfakimutatás részletei
                   href: localizations/emea-lva-vat-statement-details.md
+                - name: Lett Intrastat
+                  href: localizations/emea-lva-intrastat.md
             - name: Litvánia
               items:
                 - name: Litvánia – áttekintés
@@ -2968,7 +3030,7 @@
                   href: localizations/emea-ltu-fixed-asset-repair-statement.md
                 - name: Bizonylat létrehozása a raktárak közti tárgyieszköz-átvitelről
                   href: localizations/tasks/lt-00003-fixed-asset-transfer.md
-                - name: Áfabevallás részletei
+                - name: Áfakimutatás részletei
                   href: localizations/emea-ltu-vat-statement-details.md
                 - name: i.SAF-jelentés Litvánia esetében
                   href: localizations/emea-ltu-isaf.md
@@ -3076,8 +3138,22 @@
                   href: localizations/tasks/no-00002-customer-payment-based-payment-id.md
                 - name: Nets importálási formátum
                   href: localizations/emea-nor-nets-import-format.md
-                - name: Áfabevallás
+                - name: Áfakimutatás
                   href: localizations/emea-nor-sales-tax-payment-report.md
+                - name: Áfa-visszatérítés az Altinnba küldött közvetlen beküldéssel
+                  items:
+                    - name: 'Áttekintés: Áfa-visszatérítés az Altinnba küldött közvetlen beküldéssel'
+                      href: localizations/emea-nor-vat-return.md
+                    - name: Integrációs pont regisztrálása az ID-porten webportálon
+                      href: localizations/emea-nor-vat-return-integration-point.md
+                    - name: A környezet előkészítése az ID-porten és az Altinn webszolgáltatásokkal való együttműködésre
+                      href: localizations/emea-nor-vat-return-setup.md
+                    - name: Ellenőrzőlista az áfa-visszatérítéssel kapcsolatos Elektronikus üzenetek beállításához
+                      href: localizations/emea-nor-vat-return-checklist.md
+                    - name: A Finance-környezet engedélyezése az ID-Porten és az Altinn webszolgáltatásokkal való együttműködésre
+                      href: localizations/emea-nor-vat-return-authorization.md
+                    - name: Áfa-visszatérítés beküldése az Altinn webszolgáltatásnak
+                      href: localizations/emea-nor-vat-return-submission.md
                 - name: Standard könyvvizsgálati fájl adóhoz (SAF-T) Norvégia esetén
                   href: localizations/emea-nor-satndard-audit-file-for-tax.md
                 - name: Elektronikus vevői számlák Norvégiában
@@ -3110,6 +3186,8 @@
                   href: localizations/emea-pol-returnable-packages.md
                 - name: Áfajelentések
                   href: localizations/emea-pol-sales-tax-reports.md
+                - name: Lengyelország – Intrastat
+                  href: localizations/emea-pol-intrastat.md
                 - name: Raktárak szerinti számsorozatok beállítása
                   href: localizations/emea-pol-number-sequence-warehouses.md
                 - name: Standard könyvvizsgálati fájl
@@ -3132,6 +3210,8 @@
                       href: localizations/emea-pol-vdek-reporting.md
                     - name: Konkrét üzleti esetek részletei a JPK-V7M jelentésben
                       href: localizations/emea-pol-vdek-scenarios.md
+                - name: Kereskedelmi tranzakciók fizetési feltételei – jelentés
+                  href: localizations/emea-pol-payment-terms-report.md
             - name: Katar
               items:
                 - name: Katar – áttekintés
@@ -3152,10 +3232,14 @@
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Főkönyv átszámítása
                       href: localizations/rus-ledger-translation-procedure.md
-                    - name: Forgalom- és mérlegkimutatások jelentései
+                    - name: Forgalmi mérlegkimutatások jelentései
                       href: localizations/rus-turnover-balance-statement-reports.md
-                    - name: Számlamozgás-jelentések
+                    - name: Számlatevékenység-jelentések
                       href: localizations/rus-account-activity-reports.md
+                    - name: 27-2021-es szövetségi számviteli szabvány
+                      href: localizations/emea-rus-federal-accounting-standard-27-2021.md
+                    - name: Elektronikus jelentéskészítési célok engedélyezése az orosz könyvelési dokumentumok tárolásához
+                      href: localizations/rus-enable-er-destinations-ru-accounting-documents.md
                 - name: Előlegre jogosultak
                   items:
                     - name: Oroszország – előlegre jogosultak áttekintése
@@ -3254,11 +3338,13 @@
                           href: localizations/rus-fa-inquiries-reports.md
                     - name: Nem értékes tárgyi eszközök és munkaruházat
                       items:
-                        - name: Érték nélküli tárgyi eszközök (Oroszország)
+                        - name: Nem értékes tárgyi eszközök – NVFA-k (Oroszország)
                           href: localizations/rus-not-valuable-assets.md
                         - name: Munkaruházat/különleges felszerelés könyvelése (Oroszország)
                           href: localizations/rus-working-clothes-instruments-accounting.md
-                - name: Kötelezettségek és kinnlevőségek
+                    - name: Tárgyi eszközök integrálása az eszközkezelési modul segítségével
+                      href: localizations/rus-integration-eam-with-fixed-asset.md
+                - name: Kötelezettségek és követelések
                   items:
                     - name: Jóváírás-helyesbítések (Oroszország)
                       href: localizations/rus-credit-note-correction.md
@@ -3290,8 +3376,10 @@
                           href: localizations/rus-transactions-through-intermediary.md
                         - name: Beszerzések jutalékkal
                           href: localizations/rus-purchases-on-commission.md
-                        - name: Értékesítés jutalékkal
+                        - name: Értékesítések jutalékkal
                           href: localizations/rus-sales-on-commission.md
+                    - name: Helyi jelentések és elsődleges űrlapok a Kötelezettségekben és a Követelésekben
+                      href: localizations/rus-local-reports-primary-forms-ar-ap.md
                 - name: Készlet
                   items:
                     - name: Szállítótól úton lévő áruk
@@ -3428,9 +3516,11 @@
                   href: localizations/emea-esp-report-340.md
                 - name: 347-es bevallás jelentése
                   href: localizations/emea-esp-declaration-347-report.md
+                - name: 303-as áfabevallás
+                  href: localizations/emea-esp-vat-declaration-spain.md
                 - name: Beszerzési és értékesítési ciklusok
                   href: localizations/emea-esp-sales-purchase-cycle.md
-                - name: Speciális bevitelek és nyitólapok
+                - name: Speciális bejegyzések és nyitólapok
                   href: localizations/emea-esp-opening-sheets-spain.md
                 - name: Azonnali áfa-információk beküldése
                   href: localizations/emea-esp-sii.md
@@ -3448,6 +3538,8 @@
                   href: localizations/emea-swe-VAT-declaration-Sweden.md
                 - name: Svéd Intrastat
                   href: localizations/emea-swe-intrastat.md
+                - name: EU értékesítési lista
+                  href: localizations/emea-swe-eu-sales-list.md
             - name: Svájc
               items:
                 - name: Svájc – áttekintés
@@ -3514,7 +3606,7 @@
                       href: localizations/emea-gbr-mtd-vat-integration-sandbox.md
                     - name: A Finance környezet engedélyezése a HMRC MTD ÁFA webszolgáltatással való együttműködésre
                       href: localizations/emea-gbr-mtd-vat-integration-authorization.md
-                    - name: Áfa visszatérítés beküldése a HMRC MTD webszolgáltatásnak
+                    - name: Áfa-visszatérítés beküldése a HMRC MTD webszolgáltatásnak
                       href: localizations/emea-gbr-mtd-vat-integration-submission.md
                     - name: Áfa fizetések és kötelezettségekkel kapcsolatos adatok beolvasása a HMRC-ből
                       href: localizations/emea-gbr-mtd-vat-integration-optional-scenarios.md
@@ -3534,168 +3626,6 @@
                   href: localizations/noam-usa-form-1099-public-sector.md
                 - name: Szállítók beállítása 1099-es kimutatáshoz
                   href: localizations/noam-usa-set-up-vndrs-1099-rprtg.md
-        - name: Human Resources
-          items:
-            - name: Human Resources áttekintése
-              href: ../fin-ops-core/fin-ops/hr/hr-landing-page.md
-            - name: Human Resources beállítása
-              items:
-                - name: A Human Resources paramétereinek konfigurálása
-                  href: ../human-resources/hr-setup-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: A Human Resource megosztott paramétereinek konfigurálása
-                  href: ../human-resources/hr-setup-shared-parameters.md?toc=/dynamics365/finance/toc.json
-                - name: Emberi erőforrásokkal kapcsolatos munkafolyamatok beállítása
-                  href: /dynamics365/finance/hr-workflow-manage-employee-information?toc=%2fdynamics365%2ffinance%2ftoc.json
-                - name: Dátum és Idő mezők ismertetése
-                  href: ../human-resources/hr-setup-date-time-fields.md?toc=/dynamics365/finance/toc.json
-            - name: Személyzet kezelése
-              items:
-                - name: Munkaerő-szervezés
-                  href: ../human-resources/hr-personnel-departments-jobs-positions.md?toc=/dynamics365/finance/toc.json
-                - name: Feladat összetevőinek beállítása
-                  href: ../human-resources/hr-personnel-jobs.md?toc=/dynamics365/finance/toc.json
-                - name: Részlegek meghatározása
-                  href: ../human-resources/hr-personnel-define-departments.md?toc=/dynamics365/finance/toc.json
-                - name: Részleg hozzáadása hierarchiához
-                  href: ../human-resources/hr-personnel-add-department-hierarchy.md?toc=/dynamics365/finance/toc.json
-                - name: Feladatok meghatározása
-                  href: ../human-resources/hr-personnel-define-jobs.md?toc=/dynamics365/finance/toc.json
-                - name: Munkaidőnaptár létrehozása
-                  href: ../human-resources/hr-personnel-create-working-time-calendar.md?toc=/dynamics365/finance/toc.json
-                - name: Személyzeti műveletekkel kapcsolatos GYIK
-                  href: ../human-resources/hr-personnel-actions-faq.md?toc=/dynamics365/finance/toc.json
-                - name: Alkalmazotti adatok kezelése munkafolyamatok segítségével
-                  href: ../human-resources/hr-workflow-manage-employee-information.md?toc=/dynamics365/finance/toc.json
-                - name: Beosztás jelentési kapcsolatainak módosítása
-                  href: ../human-resources/hr-personnel-modify-reporting-relationships-position.md?toc=/dynamics365/finance/toc.json
-                - name: Dolgozói adatok megadása
-                  href: ../human-resources/hr-personnel-enter-worker-information.md?toc=/dynamics365/finance/toc.json
-                - name: Cikkek kölcsönzése dolgozóknak
-                  href: ../human-resources/hr-personnel-loan-item-worker.md?toc=/dynamics365/finance/toc.json
-                - name: Kölcsöncikkek létrehozása
-                  href: ../human-resources/hr-personnel-create-loan-items.md?toc=/dynamics365/finance/toc.json
-                - name: Kölcsöncikkek kezelése
-                  href: ../human-resources/hr-personnel-loan-items.md?toc=/dynamics365/finance/toc.json
-                - name: Utódlási terv kialakítása
-                  href: ../human-resources/hr-personnel-develop-succession-plan.md?toc=/dynamics365/finance/toc.json
-                - name: Projekt időnyilvántartásainak megadása
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hr-enter-project-timesheets.md
-                - name: Tömeges felvételi projektek
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md?toc=/dynamics365/finance/toc.json
-                - name: Tömeges felvételi projekt létrehozása
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md?toc=/dynamics365/finance/toc.json
-                - name: Beosztások beállítása
-                  href: ../human-resources/hr-personnel-set-up-positions.md?toc=/dynamics365/finance/toc.json
-                - name: Sérülések és megbetegedések adatainak beállítása
-                  href: ../human-resources/hr-personnel-set-up-injury-illness-information.md?toc=/dynamics365/finance/toc.json
-                - name: Alkalmazotti sérülések és megbetegedések adatainak karbantartása
-                  href: ../human-resources/hr-personnel-maintain-employee-injury-illness-information.md?toc=/dynamics365/finance/toc.json
-            - name: Jelöltek toborzása
-              items:
-                - name: Toborzási folyamatok kezelése
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: Tömeges felvételi projektek
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: Tömeges felvételi projektek létrehozása
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: Pályázók és a pályázatok adatainak manuális megadása
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: Feladatigénylések kialakítása és megnyitása
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Beosztások beállítása
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: Jelöltek felvétele toborzás útján
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: Meglévő alkalmazottak felvétele toborzás útján
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: Jelentkezők kiválasztására szolgáló eszközök azonosítása és telepítése
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Kompenzációs konstrukciók beállítása
-              items:
-                - name: Kompenzációs konstrukciók áttekintése
-                  href: ../human-resources/hr-compensation-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Kompenzációs rácsok beállítása
-                  href: ../human-resources/hr-compensation-grids.md?toc=/dynamics365/finance/toc.json
-                - name: Kompenzációs struktúra és terv kialakítása
-                  href: ../human-resources/hr-compensation-structure.md?toc=/dynamics365/finance/toc.json
-                - name: Fix kompenzációs konstrukciók létrehozása
-                  href: ../human-resources/hr-compensation-fixed-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Változó kompenzációs konstrukciók létrehozása
-                  href: ../human-resources/hr-compensation-variable-plans.md?toc=/dynamics365/finance/toc.json
-                - name: Alkalmazottak regisztrációja fix kompenzációs konstrukcióba
-                  href: ../human-resources/hr-compensation-enroll-employees-fixed.md?toc=/dynamics365/finance/toc.json
-                - name: Alkalmazottak regisztrációja változó kompenzációs konstrukcióba
-                  href: ../human-resources/hr-compensation-enroll-employees-variable.md?toc=/dynamics365/finance/toc.json
-                - name: Kompenzációs folyamat meghatározása és eredmények kiszámítása
-                  href: ../human-resources/hr-compensation-define-process.md?toc=/dynamics365/finance/toc.json
-                - name: Kompenzációs konstrukciók feldolgozása
-                  href: ../human-resources/hr-compensation-process.md?toc=/dynamics365/finance/toc.json
-            - name: Juttatások kezelése
-              items:
-                - name: Juttatási program meghatározása és kezelése
-                  href: ../human-resources/hr-benefits-manage-program.md?toc=/dynamics365/finance/toc.json
-                - name: Juttatásra vonatkozó jogosultsággal kapcsolatos irányelvek
-                  href: ../human-resources/hr-benefits-eligibility-policies.md?toc=/dynamics365/finance/toc.json
-                - name: Juttatási jogosultsággal kapcsolatos folyamat
-                  href: ../human-resources/hr-benefits-eligibility-process.md?toc=/dynamics365/finance/toc.json
-                - name: Juttatásra való jogosultsági szabályok és irányelvek meghatározása
-                  href: ../human-resources/hr-benefits-define-eligibility-rules.md?toc=/dynamics365/finance/toc.json
-                - name: Alkalmazotti juttatási program végrehajtása
-                  href: ../human-resources/hr-benefits-deliver-employee-benefits-program.md?toc=/dynamics365/finance/toc.json
-                - name: Új juttatások létrehozása
-                  href: ../human-resources/hr-benefits-create.md?toc=/dynamics365/finance/toc.json
-                - name: Dolgozók felvétele juttatásokhoz
-                  href: ../human-resources/hr-benefits-enroll-workers.md?toc=/dynamics365/finance/toc.json
-                - name: Juttatások lejárati dátumainak kezelése
-                  href: ../human-resources/hr-benefits-expiration-dates.md?toc=/dynamics365/finance/toc.json
-                - name: ACA-jelentések generálása
-                  href: ../human-resources/hr-benefits-aca-reports.md?toc=/dynamics365/finance/toc.json
-            - name: Alkalmazottak fejlesztése
-              items:
-                - name: Teljesítménykezelés – áttekintés
-                  href: ../human-resources/hr-develop-performance-management-overview.md?toc=/dynamics365/finance/toc.json
-                - name: Munkaerő-készségek összehangolása
-                  href: ../human-resources/hr-develop-skills.md?toc=/dynamics365/finance/toc.json
-                - name: Hozzáadás a teljesítménynaplóhoz
-                  href: ../human-resources/hr-develop-add-performance-journal.md?toc=/dynamics365/finance/toc.json
-                - name: Cél létrehozása
-                  href: ../human-resources/hr-develop-create-goal.md?toc=/dynamics365/finance/toc.json
-                - name: Teljesítménykimutatás létrehozása
-                  href: ../human-resources/hr-develop-create-performance-review.md?toc=/dynamics365/finance/toc.json
-            - name: Tanfolyamok létrehozása
-              items:
-                - name: Tanfolyamok beállítása
-                  href: ../human-resources/hr-learning-courses.md?toc=/dynamics365/finance/toc.json
-                - name: Kérdőívek áttekintése
-                  href: ../human-resources/hr-learning-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Kérdőívek tervezése
-                  href: ../human-resources/hr-learning-design-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Kérdőívek terjesztése és ütemezése
-                  href: ../human-resources/hr-learning-distribute-questionnaires.md?toc=/dynamics365/finance/toc.json
-                - name: Kérdőívek terjesztése ütemezés segítségével
-                  href: ../human-resources/hr-learning-distribute-questionnaires-scheduling.md?toc=/dynamics365/finance/toc.json
-                - name: Kérdőív eredményeinek megtekintése
-                  href: ../human-resources/hr-learning-evaluate-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-                - name: Kérdőív eredményeinek elemzése
-                  href: ../human-resources/hr-learning-analyze-questionnaire-results.md?toc=/dynamics365/finance/toc.json
-                - name: Kifejtős kérdés létrehozása
-                  href: ../human-resources/hr-learning-create-open-ended-question.md?toc=/dynamics365/finance/toc.json
-                - name: Eldöntendő kérdés létrehozása
-                  href: ../human-resources/hr-learning-create-closed-ended-question.md?toc=/dynamics365/finance/toc.json
-                - name: Függő kérdés létrehozása
-                  href: ../human-resources/hr-learning-depending-question.md?toc=/dynamics365/finance/toc.json
-            - name: Munkahelyi biztonság és megfelelőség (Egyesült Államok)
-              items:
-                - name: I-9-es űrlap ellenőrzése
-                  href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-form-i-9-verification.md
-                - name: Alkalmazhatóság igazolása az I-9-es űrlap segítségével
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/employment-verification-i9-verification.md
-                - name: Dokumentumtípusok beállítása az I-9-es űrlaphoz
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/set-up-i9-document-types.md
-                - name: A fogyatékossággal élő amerikaiakra vonatkozó jogszabály (Americans with Disabilities Act – ADA) betartása
-                  href: ../fin-ops-core/fin-ops/hr/localizations/noam-usa-comply-ada.md
-                - name: Dolgozói szállások kezelése
-                  href: ../fin-ops-core/fin-ops/hr/localizations/tasks/manage-worker-accommodations.md
         - name: Jelentéskészítés és Power BI-integrációk
           items:
             - name: Jelentéskészítés és elemzések a Power BI szolgáltatással
@@ -3943,7 +3873,9 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-sessiontoday.md?toc=/dynamics365/finance/toc.json
                         - name: Today
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-today.md?toc=/dynamics365/finance/toc.json
-                    - name: Lista
+                        - name: WeekNum
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-datetime-weeknum.md?toc=/dynamics365/finance/toc.json
+                    - name: List
                       items:
                         - name: Listafüggvények
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-category-list.md?toc=/dynamics365/finance/toc.json
@@ -4049,6 +3981,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-format.md?toc=/dynamics365/finance/toc.json
                         - name: GetEnumValueByName
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getenumvaluebyname.md?toc=/dynamics365/finance/toc.json
+                        - name: GetLabelText
+                          href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-getlabeltext.md?toc=/dynamics365/finance/toc.json
                         - name: GuidValue
                           href: ../fin-ops-core/dev-itpro/analytics/er-functions-text-guidvalue.md?toc=/dynamics365/finance/toc.json
                         - name: JsonValue
@@ -4185,6 +4119,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/dynamics365/finance/toc.json
                     - name: ER-formátum megtervezése a létrehozott dokumentumok Excel programban való oldalszámozásához
                       href: ../fin-ops-core/dev-itpro/analytics/er-paginate-excel-reports.md?toc=/dynamics365/finance/toc.json
+                    - name: ER-formátum megtervezése a sorok ugyanazon az Excel-lapon való együttes megtartására
+                      href: ../fin-ops-core/dev-itpro/analytics/er-keep-excel-rows-together.md?toc=/dynamics365/finance/toc.json
                 - name: Konfigurációk tervezése Word-formátumú jelentések generálásához
                   items:
                     - name: Új ER-konfiguráció tervezése Word formátumú jelentések generálásához
@@ -4235,6 +4171,8 @@
                   items:
                     - name: Konfigurációk létrehozása adatok külső XML-fájlból történő importálásához
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/dynamics365/finance/toc.json
+                    - name: Importálás manuálisan kiválasztott fájlokból kötegelt módban
+                      href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-batch.md?toc=/dynamics365/finance/toc.json
                 - name: SharePoint felületén tárolt fájlokból származó adatok kötegelt módban történő importálásának konfigurálása
                   href: ../fin-ops-core/dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/dynamics365/finance/toc.json
                 - name: Fájlok importálása XML-formátumban
@@ -4315,6 +4253,8 @@
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/dynamics365/finance/toc.json
                         - name: Jelentések futtatása
                           href: ../fin-ops-core/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/dynamics365/finance/toc.json
+                    - name: 'Rekordok csoportosítása, valamint leltározás és összegzés végrehajtása GROUPBY adatforrások használatával'
+                      href: ../fin-ops-core/dev-itpro/analytics/er-groupby-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: A létrehozott kimenet adatforrásként való használata leltározás és összegzés végrehajtásához
                       items:
                         - name: Formátumok létrehozása
@@ -4375,11 +4315,13 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-components-inspections.md?toc=/dynamics365/finance/toc.json
                 - name: Adatkötések relatív elérési útja
                   href: ../fin-ops-core/dev-itpro/analytics/relative-path-data-bindings-er-models-format.md?toc=/dynamics365/finance/toc.json
+                - name: Kifejezések tervezése az alkalmazásosztályú metódusok meghívására
+                  href: ../fin-ops-core/dev-itpro/analytics/tasks/design-expressions-app-class-er.md?toc=/dynamics365/finance/toc.json
             - name: ER-megoldások használata a Finance szolgáltatásban
               items:
                 - name: Keretrendszer konfigurálása
                   items:
-                    - name: Az Elektronikus jelentéskészítéskészítési keretrendszer konfigurálása
+                    - name: Az elektronikus jelentéskészítési keretrendszer konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/dynamics365/finance/toc.json
                     - name: Elektronikus jelentéskészítéskészítési sablonok biztonsági mentése és helyreállítása
                       items:
@@ -4465,6 +4407,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-21.md?toc=/dynamics365/finance/toc.json
                     - name: 10.0.23-as alkalmazásfrissítés
                       href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-23.md?toc=/dynamics365/finance/toc.json
+                    - name: 10.0.25-ös alkalmazásfrissítés
+                      href: ../fin-ops-core/dev-itpro/analytics/er-apis-app10-0-25.md?toc=/dynamics365/finance/toc.json
                 - name: Egyéni tárhely meghatározása a létrehozott dokumentumoknak
                   items:
                     - name: 'Feliratkozás egy eseményre, hogy választ kérjen a feliratkozáskezelőtől'
@@ -4477,7 +4421,7 @@
                   href: ../fin-ops-core/dev-itpro/analytics/er-initiate-uip-data-source-value-from-source-code.md?toc=/dynamics365/finance/toc.json
                 - name: 'A kód módosítása, hogy a felhasználók számára lehetővé tegye a névre szóló ER-célpontok konfigurálását és használatát'
                   href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/finance/toc.json
-                - name: Bejövő dokumentumok egyéni elektronikus jelentéskészítéskészítési forrásának implementálása
+                - name: Bejövő dokumentumok egyéni ER-forrásának implementálása
                   href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/finance/toc.json
         - name: Mobilalkalmazás
           items:
@@ -4791,13 +4735,15 @@
               items:
                 - name: Árfolyam-szolgáltatók létrehozása
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-providers.md
-                - name: Árfolyam-szolgáltatók létrehozása a Finance and Operations 8.0-s verzióban
+                - name: Árfolyam-szolgáltatók létrehozása a Finance and Operations 8.0 alkalmazásban
                   href: ../fin-ops-core/dev-itpro/financial/create-exchange-rate-8.md
             - name: 'Tranzakciók kiegyenlítése a CustTrans::settleTransaction használatával'
               href: ../fin-ops-core/dev-itpro/financial/settletransact-obsolete.md
-    - name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
+    - name: Pénzügyi és műveleti alkalmazások fejlesztése és felügyelete
       href: ../fin-ops-core/dev-itpro/index.md
     - name: Dynamics 365 Supply Chain Management
       href: ../supply-chain/index.md
     - name: Dynamics 365 Commerce
       href: ../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../human-resources/index.md

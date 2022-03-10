@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: e29932ca34576d15b7350ab6c711563682d8ddf8
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 4cea8269082b39e2374ffb3c3dc82def8ce35679
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753543"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358465"
 ---
 # <a name="copy-vendors-by-using-shared-number-sequences"></a>Szállítók másolása megosztott számsorozatok használatával
 
@@ -36,9 +36,9 @@ A manuális szállítóazonosító használatakor átmásolhatja továbbá a sz�
 
 ## <a name="copy-a-vendor"></a>Szállító másolása
 
-Szállító másolásához válassza a **Minden szállító** listaoldalon az **Új** lehetőséget, amely megnyitja a **Minden szállító, új rekord** oldalt. Figyelje meg, hogy az új szállítóazonosító nincs azonnal hozzárendelve. Ez a viselkedés eltér a korábbi verziókban megszokott viselkedéstől. Mivel nem választotta ki a szállítócsoportot, a rendszer nem tudja megállapítani a megfelelő, felhasználni kívánt számsorozatot. Nem tudja továbbá megállapítani, hogy új szállítót próbál létrehozni, vagy másolni szeretne egy szállítót. A rendszer ezért a szállítóazonosítót csak azután rendeli hozzá, miután az oldal alsó részén található **Mentés** gombra kattint.
+Szállító másolásához válassza a **Minden szállító** listaoldalon az **Új** lehetőséget, amely megnyitja a **Minden szállító, új rekord** oldalt. Az új szállítóazonosító hozzárendelése nem történik meg azonnal. Ez a viselkedés eltér a korábbi verziókban megszokott viselkedéstől. Mivel nem választotta ki a szállítócsoportot, a rendszer nem tudja megállapítani a megfelelő, felhasználni kívánt számsorozatot. Nem tudja továbbá megállapítani, hogy új szállítót próbál létrehozni, vagy másolni szeretne egy szállítót. A rendszer ezért a szállítóazonosítót csak azután rendeli hozzá, miután az oldal alsó részén található **Mentés** gombra kattint.
 
-Ha új szállítót hoz létre, folytathatja a szokásos módon a mezők értékeinek megadásával. Amikor végzett, és kiválasztja a **Mentés** lehetőséget, láthatja, hogy a rendszer automatikusan hozzárendelte a szállítóazonosítót. A másik esetben, a manuális számsorozatok esetén láthatja, hogy a manuális szállítóazonosítót használja a rendszer.
+Ha új szállítót hoz létre, folytathatja a szokásos módon a mezők értékeinek megadásával. Amikor végzett, és kiválasztja a **Mentés** lehetőséget, a rendszer automatikusan hozzárendeli a szállítóazonosítót. A másik esetben, a manuális számsorozatok esetén láthatja, hogy a manuális szállítóazonosítót használja a rendszer.
 
 Egy szállító másolásához adjon meg a **Név** mezőben legalább egy, a keresett szállítónak megfelelő karaktert. A keresőmező megjeleníti a felek listáját, akik megfelelhetnek a keresett szállítónak. A felek egyikének kiválasztásakor a párbeszédpanel jobb oldalán további információk jelennek meg:
 
@@ -58,7 +58,7 @@ A szállító másolásakor a rendszer megpróbálja menteni az új szállító 
 
 ## <a name="copy-a-vendor-by-using-the-tax-exempt-number-search-feature"></a>Szállító másolása Adómentességi szám keresés funkció használatával
 
-Szállítókat is másolhat az Adómentességi szám keresés funkció használatával, amely a **Regisztráció** csoportban található a **Minden szállító** oldal Művelet panelének **Szállító** lapján. A megjelenő **Adómentességi szám keresés** párbeszédpanel megjeleníti az adómentességi számot, a szállítóazonosítót, a szállító nevét, valamint a jogi személyt, ahol az adómentességi azonosító használatban van. Csak akkor másolhatja a szállítót, ha az olyan jogi személyben van, ami nem az aktuális jogi személy. Miután kiválasztott egy, a követelménynek megfelelő szállítót, kövesse az alábbi lépéseket.
+Szállítókat is másolhat az **Adómentességi szám** keresés funkció használatával, amely a **Regisztráció** csoportban található a **Minden szállító** oldal Művelet panelének **Szállító** lapján. A megjelenő **Adómentességi szám keresés** párbeszédpanel megjeleníti az adómentességi számot, a szállítóazonosítót, a szállító nevét, valamint a jogi személyt, ahol az adómentességi azonosító használatban van. Csak akkor másolhatja a szállítót, ha az olyan jogi személyben van, ami nem az aktuális jogi személy. Miután kiválasztott egy, a követelménynek megfelelő szállítót, kövesse az alábbi lépéseket.
 
 1. Megjelenik a **Szállító másolása** lehetőség. Alapértelmezés szerint ez a beállítás **Nem** értékre van beállítva. A szállító másolásához az aktuális jogi személybe, adja meg a beállítás esetében az **Igen** értéket.
 2. Válassza ki a **Kiválasztás** lehetőséget. Létrejön az új szállító.

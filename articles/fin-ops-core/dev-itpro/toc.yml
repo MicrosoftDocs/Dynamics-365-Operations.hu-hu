@@ -1,25 +1,27 @@
-- name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
+- name: A Finance and Operations alkalmazások fejlesztése és felügyelete
   items:
-    - name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
+    - name: A Finance and Operations alkalmazások fejlesztése és felügyelete
       items:
-        - name: Finance and Operations alkalmazásdokumentáció
+        - name: A Finance and Operations-alkalmazás dokumentációja
           href: ../fin-ops/index.md
-        - name: Finance and Operations alkalmazások fejlesztése és adminisztrációja
+        - name: A Finance and Operations alkalmazások fejlesztése és felügyelete
           href: index.md
-        - name: Új vagy módosult elemek
+        - name: Újdonságok és változások
           items:
-            - name: Új vagy módosult elemek az Finance and Operations alkalmazásokban
+            - name: Újdonságok és változások a Finance and Operations alkalmazásaiban
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Új vagy módosult elemek a Platform frissítésekben
+            - name: Újdonságok és változások a Platformfrissítésekben
               items:
                 - name: Újdonságok és változások a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
-                - name: Platformfrissítések a 10.0.21-es verzióhoz (2021. október)
-                  href: get-started/whats-new-platform-updates-10-0-21.md
-                - name: Platformfrissítés a 10.0.20-as verzióhoz (2021. augusztus)
-                  href: get-started/whats-new-platform-updates-10-0-20.md
-                - name: Platformfrissítés a 10.0.19-es verzióhoz (2021. június)
-                  href: get-started/whats-new-platform-updates-10-0-19.md
+                - name: Platformfrissítés a 10.0.26-es verzióhoz (2022. május)
+                  href: get-started/whats-new-platform-updates-10-0-26.md
+                - name: Platformfrissítés a 10.0.25-as verzióhoz (2022. április)
+                  href: get-started/whats-new-platform-updates-10-0-25.md
+                - name: Platformfrissítések a 10.0.24-es verzióhoz (2022. február)
+                  href: get-started/whats-new-platform-updates-10-0-24.md
+                - name: Platformfrissítések a 10.0.23-es verzióhoz (2022. január)
+                  href: get-started/whats-new-platform-updates-10-0-23.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -32,42 +34,6 @@
               href: ../fin-ops/get-started/ax-2012-features-not-implemented-but-not-deprecated.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: A Microsoft Dynamics AX 2009 és 2012 fő támogatásának vége
               href: ../fin-ops/get-started/mainstream-support-ax-2009-2012.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-        - name: Üzleti események
-          items:
-            - name: Üzleti események áttekintése
-              href: business-events/home-page.md
-            - name: Alkalmazás – üzleti események
-              href: business-events/app-business-events.md
-            - name: Munkafolyamat – üzleti események
-              href: business-events/business-events-workflow.md
-            - name: Kötegelt üzleti események
-              href: business-events/system-business-events.md
-            - name: Figyelmeztetések üzleti eseményekként
-              href: business-events/alerts-business-events.md
-            - name: Üzleti események Microsoft Flow szolgáltatásban
-              href: business-events/business-events-flow.md
-            - name: Üzleti események fejlesztői dokumentációja
-              href: business-events/business-events-dev-doc.md
-            - name: Üzleti események hibaelhárítása
-              href: business-events/troubleshooting.md
-            - name: Esetek üzleti eseményekhez történő használata
-              href: business-events/potential-use-cases.md
-            - name: Oktatóanyagok
-              items:
-                - name: Üzleti események és a Microsoft Flow
-                  href: business-events/how-to/how-to-flow.md
-                - name: Üzleti események és az Azure Event Grid
-                  href: business-events/how-to/how-to-eventgrid.md
-                - name: Üzleti események és az Azure Service Bus
-                  href: business-events/how-to/how-to-servicebus.md
-                - name: Üzleti események és munkafolyamat-jóváhagyások
-                  href: business-events/how-to/how-to-workflow.md
-                - name: Üzleti események és a Microsoft Forms Pro
-                  href: business-events/how-to/FormsPro.md
-                - name: Üzleti események és az Azure Event Hubs
-                  href: business-events/how-to/event-hub.md
-                - name: Üzleti események a pénzügyi időszak lezárásakor
-                  href: business-events/how-to/period-close.md
         - name: Folyamatos szállítás
           items:
             - name: Folyamatos szállítás kezdőlap
@@ -108,7 +74,7 @@
                   href: data-entities/recurring-integrations.md
                 - name: Szolgáltatások tesztelése harmadik fél segédprogramjaival
                   href: data-entities/third-party-service-test.md
-            - name: Finance and Operations Csatlakoztató
+            - name: Finance and Operations csatlakoztató
               href: data-entities/fin-ops-connector.md
             - name: Fejlesztés integrációhoz
               items:
@@ -130,41 +96,41 @@
                   items:
                     - name: Potenciális vevő készpénzre váltási esetének konfigurálása
                       items:
-                        - name: Potenciális vevők készpénzre váltása
+                        - name: Potenciális készpénzre váltás
                           href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-                        - name: A Sales-partnerek közvetlen szinkronizálása a Finance and Operations-ügyfelekhez
+                        - name: A Sales-számlák közvetlen szinkronizálása a Finance and Operations-ügyfelekre
                           href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                        - name: A termékek közvetlen szinkronizálása a Finance and Operations Sales-termékekre
+                        - name: A Finance and Operations-termékek közvetlen szinkronizálása a Sales-termékekre
                           href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-                        - name: A Sales-kapcsolatok közvetlen szinkronizálása a kapcsolatokra vagy ügyfelekre Finance and Operations
+                        - name: A Sales-kapcsolatok közvetlen szinkronizálása a Finance and Operations-kapcsolatokra vagy -ügyfelekre
                           href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
                         - name: Értékesítésiajánlat-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations szolgáltatásba
                           href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
                         - name: Értékesítési rendelések közvetlen szinkronizálása a Sales és a Finance and Operations szolgáltatások között
                           href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                        - name: Értékesítésszámla-fejlécek és -sorok szinkronizálása közvetlenül a Sales szolgáltatásból a Finance and Operations Sales szolgáltatásba
+                        - name: Értékesítésiszámla-fejlécek és -sorok szinkronizálása közvetlenül a Finance and Operations szolgáltatásból a Sales szolgáltatásba
                           href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
                     - name: A Field Service szolgáltatással való integráció konfigurálása
                       items:
                         - name: A Field Service szolgáltatással való integráció konfigurálása – áttekintés
                           href: ../../supply-chain/sales-marketing/field-service.md
-                        - name: A termékek szinkronizálása Finance and Operations a Field Service szolgáltatásokban lévő termékekkel
+                        - name: A Finance and Operations-termékek szinkronizálása a Field Service szolgáltatásokban lévő termékekkel
                           href: ../../supply-chain/sales-marketing/field-service-product.md
-                        - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása az értékesítési rendeléseivel Finance and Operations
+                        - name: A Field Service szolgáltatásokban lévő munkarendelések szinkronizálása a Finance and Operations értékesítési rendeléseivel
                           href: ../../supply-chain/sales-marketing/field-service-work-order.md
-                        - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a szabadszöveges számláival Finance and Operations'
+                        - name: 'A Field Service szolgáltatásokban lévő, szerződéshez kapcsolódó számlák szinkronizálása a Finance and Operations szabadszöveges számláival'
                           href: ../../supply-chain/sales-marketing/field-service-invoice.md
-                        - name: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból az alkalmazásba Finance and Operations
+                        - name: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból a Finance and Operations alkalmazásba
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-                        - name: Készletszintű információk szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
+                        - name: Készletszintű információk szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
                           href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-                        - name: Készletegységgel rendelkező termékek szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
+                        - name: Készletegységgel rendelkező termékek szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
                           href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-                        - name: Projektlista szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
+                        - name: Projektlista szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
                           href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-                        - name: Raktárak szinkronizálása az alkalmazásból a Finance and Operations Field Service alkalmazásba
+                        - name: Raktárak szinkronizálása a Finance and Operations alkalmazásból a Field Service alkalmazásba
                           href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-                        - name: Munkarendelések szinkronizálása projekttel az alkalmazásból a Field Service alkalmazásba Finance and Operations
+                        - name: Munkarendelések szinkronizálása projekttel a Field Service alkalmazásból a Finance and Operations alkalmazásba
                           href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
                     - name: Project Service Automation integráció konfigurálása
                       items:
@@ -226,11 +192,11 @@
                   href: data-entities/data-synchronize-date-and-time.md
                 - name: Bizonylatok importálása az Általános napló entitással
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Adatmigrálás optimalizálása a Finance and Operations alkalmazásoknál
+                - name: Az adatáttelepítés optimalizálása a Finance and Operations alkalmazásokra
                   href: sysadmin/optimize-data-migration.md
             - name: Fejlesztés adatentitásokhoz
               items:
-                - name: Tervezési elvek és gyakorlati tanácsok az adatentitásokhoz
+                - name: Tervezési elvek és ajánlott eljárások az adatentitásokhoz
                   href: dev-tools/design-best-practices.md
                 - name: Új adatentitások létrehozása
                   href: data-entities/build-consuming-data-entities.md
@@ -268,13 +234,13 @@
               href: data-entities/dm-error-descriptions.md
         - name: Azure Data Lake
           items:
-            - name: Azure Data Lake – áttekintés
-              href: data-entities/azure-data-lake-overview.md
-            - name: Export konfigurálása az Azure Data Lake-hez
+            - name: Exportálás az Azure Data Lake-be – áttekintés
+              href: data-entities/Azure-Data-Lake-GA-version-overview.md
+            - name: Exportálás az Azure Data Lake-be bővítmény telepítése
               href: data-entities/configure-export-data-lake.md
-            - name: Finance and Operations alkalmazások az Azure Data Lake szolgáltatásban
+            - name: Finance and Operations alkalmazások az Azure Data Lake-ben
               href: data-entities/finance-data-azure-data-lake.md
-            - name: Entitástár elérhetővé tétele Data Lake alkalmazásként
+            - name: Entitástár elérhetővé tétele Data Lake-alkalmazásként
               href: data-entities/entity-store-data-lake.md
             - name: Adatok módosítása az Azure Data Lake-ben
               href: data-entities/Azure-data-lake-Change-feeds.md
@@ -372,7 +338,7 @@
                   href: deployment/arm-onbarding-us-goverment.md
                 - name: Azure ExpressRoute és Finance and Operations
                   href: deployment/expressroute.md
-                - name: Finance and Operations architektúra
+                - name: Finance and Operations-architektúra
                   href: ../fin-ops/imp-lifecycle/architecture-overview.md
                 - name: Frissítések alkalmazása felhőalapú környezetekre
                   href: deployment/apply-deployable-package-system.md
@@ -396,7 +362,7 @@
                       href: deployment/on-premises-overview.md
                     - name: Helyszíni telepítések tervezése és előkészítése
                       href: deployment/plan-onprem-deployment.md
-                    - name: Microsoft Dynamics 365 Finance + Műveletek (on-premises) támogatott szoftver
+                    - name: Microsoft Dynamics 365 Finance + Operations (on-premises) által támogatott szoftver
                       href: deployment/onprem-compatibility.md
                     - name: Hardver méretezésére vonatkozó követelmények
                       href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
@@ -442,9 +408,11 @@
                       href: deployment/onprem-remove-reinstall-AOS-node.md
                     - name: Ugyanazon AD FS-példány újrahasznosítása több környezet esetén
                       href: deployment/onprem-reuseadfs.md
+                    - name: A Microsoft Dynamics 365 Finance + Operations (on-premises) SQL Server környezetpéldányának frissítése
+                      href: deployment/onprem-upgrade-sqlserver.md
                 - name: Helyi ügynök
                   items:
-                    - name: AD FS és Microsoft 365 kompatibilitása
+                    - name: AD FS Microsoft 365 kompatibilitása
                       href: deployment/onprem-adfscompatibility.md
                     - name: Helyi ügynök telepítés előtti és telepítés utáni parancsfájljai
                       href: lifecycle-services/pre-post-scripts.md
@@ -466,6 +434,8 @@
                   href: deployment/install-deployable-package.md
                 - name: Csomag eltávolítása
                   href: deployment/uninstall-deployable-package.md
+                - name: Egyéni X++ parancsfájlok futtatása nullás leállással
+                  href: deployment/run-custom-scripts.md
                 - name: Csomagalkalmazási problémák elhárítása
                   href: deployment/deployable-package-troubleshooting.md
             - name: Egyéni súgó telepítése
@@ -494,6 +464,16 @@
                   href: help/language-locale.md
                 - name: 'Bővítse, szabja testre és működjön együtt a súgóval'
                   href: help/contributor-guide.md
+            - name: Telepítési szempontok
+              items:
+                - name: A rendszer és a helyi felhőbeli telepítési beállításai Dynamics 365 Finance és a Dynamics 365 Supply Chain Management számára
+                  href: deployment/deployment-options-geo.md
+                - name: Finance és Supply Chain Management az Egyesült Államok Government Community Cloud felhőben (GCC)
+                  href: deployment/us-gcc-deployment.md
+                - name: A Finance és a Supply Chain Management alkalmazás üzemeltetője Kínában a 21Vianet
+                  href: deployment/china-local-deployment.md
+                - name: Finance and Operations alkalmazások Franciaországban
+                  href: deployment/france-local-deployment.md
         - name: Fejlesztés és testreszabás
           items:
             - name: Fejlesztés és testreszabás kezdőoldala
@@ -536,6 +516,8 @@
                   href: dev-tools/pipeline-deploy-asset.md
                 - name: Lifecycle Services (LCS)-kapcsolat létrehozása Azure Pipelines szolgáltatásban
                   href: dev-tools/pipeline-lcs-connection.md
+                - name: LCS-kapcsolat hitelesítési feladatainak frissítése az Azure Pipelines szolgáltatásban elérhető MSAL felületre
+                  href: dev-tools/pipeline-lcs-connection-update.md
                 - name: A szolgáltatott Azure Pipeline frissítése új NuGet-csomagokhoz
                   href: dev-tools/pipeline-nuget-split.md
                 - name: Örökölt folyamat frissítése az Azure Pipelines szolgáltatásban
@@ -582,7 +564,7 @@
                   href: dev-tools/metadata-search-visual-studio.md
                 - name: Modellek és csomagok
                   href: dev-tools/models.md
-                - name: Finance and Operations projekt típusa
+                - name: Finance and Operations projekttípus
                   href: dev-tools/projects.md
                 - name: Eszközökhöz tartozó bővítmények a Visual Studio szolgáltatáshoz
                   href: dev-tools/developer-tools-add-ins.md
@@ -590,24 +572,24 @@
                   href: dev-tools/update-development-tools.md
             - name: X++ programozási nyelv
               items:
-                - name: X++ és hibakeresési funkciók
-                  href: dev-tools/new-x-debugger-features.md
-                - name: A Visual Studio 2017 követelményei az X++ nyelvhez
-                  href: dev-tools/developer-tools-vs2017.md
-                - name: Hibakeresés az X++-kódban
-                  href: dev-tools/debug-xpp.md
-                - name: EventHandlerResult-osztályok a kérelmi vagy válaszesetekben
-                  href: dev-tools/event-handler-result-class.md
-                - name: Üzleti logika írása C# és X++ forráskóddal
-                  href: dev-tools/write-business-logic.md
-                - name: Az X ++ és az X ++ fordító változásai
-                  href: dev-tools/programming-language-support.md
-                - name: LINQ-szolgáltató a C#-nyelvhez
-                  href: dev-tools/linq-provider-c.md
-                - name: Ajánlott eljárási szabályok írása
-                  href: dev-tools/author-best-practice-rules.md
-                - name: Az Alkalmazásböngésző tulajdonságai
-                  href: dev-ref/application-explorer-aot-properties.md
+                - name: X++ nyelvi támogatás
+                  items:
+                    - name: A Visual Studio követelményei az X++ nyelvhez
+                      href: dev-tools/developer-tools-vs2017.md
+                    - name: Hibakeresés az X++-kódban
+                      href: dev-tools/debug-xpp.md
+                    - name: EventHandlerResult-osztályok a kérelmi vagy válaszesetekben
+                      href: dev-tools/event-handler-result-class.md
+                    - name: Üzleti logika írása C# és X++ forráskóddal
+                      href: dev-tools/write-business-logic.md
+                    - name: LINQ-szolgáltató a C#-nyelvhez
+                      href: dev-tools/linq-provider-c.md
+                    - name: Ajánlott eljárási szabályok írása
+                      href: dev-tools/author-best-practice-rules.md
+                    - name: Az Alkalmazásböngésző tulajdonságai
+                      href: dev-ref/application-explorer-aot-properties.md
+                    - name: SysSetupConfigAttribute attribútum
+                      href: dev-tools/syssetupconfigattribute.md
                 - name: X++ nyelvi referencia
                   items:
                     - name: X++ nyelvi referencia áttekintése
@@ -652,7 +634,7 @@
                           href: dev-ref/xpp-interfaces.md
                         - name: Tárak
                           href: dev-ref/xpp-library-objects.md
-                        - name: Események
+                        - name: Események és delegáltak
                           href: dev-ref/xpp-events.md
                     - name: X++-adatkiválasztás és -manipuláció
                       items:
@@ -878,6 +860,8 @@
                   href: perf-test/continuous-build-test-automation.md
                 - name: SysTest-szűrés osztály- és metódusattribútumok használatával
                   href: perf-test/systest-filtering.md
+                - name: SysTestRow-attribútum több érték tesztelésére
+                  href: perf-test/systest-row.md
                 - name: Elfogadásiteszt-könyvtárak
                   items:
                     - name: Elfogadásiteszt-könyvtár erőforrásai
@@ -906,6 +890,8 @@
               href: dev-tools/date-effectivity.md
             - name: Fejlesztés független szoftverszállítók számára
               items:
+                - name: ISV fejlesztés kezdőlapja
+                  href: dev-tools/isv-dev-home-page.md
                 - name: X++-modulok csatolása a csomagokhoz az ISV Studio használatával
                   href: dev-tools/isv-studio-solutions.md
                 - name: Független szoftverszállítók licencelése
@@ -1005,7 +991,11 @@
                 - name: Tervezett karbantartási időtartamra vonatkozó GYIK
                   href: lifecycle-services/planned-maintenance-window-faq.md
             - name: Megfigyelés és diagnosztika
-              href: lifecycle-services/monitoring-diagnostics.md
+              items:
+                - name: Megfigyelési és diagnosztikai eszközök
+                  href: lifecycle-services/monitoring-diagnostics.md
+                - name: Az Azure Data Explorer használata a nyers adatnaplók lekérdezésére
+                  href: lifecycle-services/azure-data-explorer.md
             - name: Környezeti szolgáltatások újraindítása
               href: lifecycle-services/restart-environment-services.md
             - name: Termelési kimaradás jelentése
@@ -1018,6 +1008,8 @@
               href: lifecycle-services/performancetroubleshooting.md
             - name: Lekérdezési útmutató
               href: lifecycle-services/querycookbook.md
+            - name: Lejárt előfizetések és adatok törlése
+              href: lifecycle-services/expired-subscription-data-deletion.md
             - name: Microsoft Dynamics 365 Translation Service
               items:
                 - name: Dynamics 365 Translation Service áttekintése
@@ -1026,12 +1018,18 @@
                   href: lifecycle-services/use-translation-service.md
                 - name: Dokumentációs fájlok fordítása
                   href: lifecycle-services/use-translation-service-ua.md
-                - name: Fordításimemória-fájlok
+                - name: Fordítómemória-fájlok
                   href: lifecycle-services/use-translation-service-tm.md
+                - name: Azure DevOps bővítmény (nyilvános előzetes verzió)
+                  href: lifecycle-services/dts-devops-extension.md
         - name: Microsoft Power Platform-integráció
           items:
-            - name: Microsoft Power Platform-integráció a Finance and Operations alkalmazással
+            - name: Áttekintés
               href: power-platform/overview.md
+            - name: A Power Platform-integráció engedélyezése
+              href: power-platform/enable-power-platform-integration.md
+            - name: Hitelesítés és engedélyezés
+              href: power-platform/authentication-and-authorization.md
             - name: Kettős írás
               items:
                 - name: Kettős írás kezdőlapja
@@ -1048,11 +1046,13 @@
                       href: data-entities/dual-write/connection-setup.md
                     - name: Szempontok a kezdeti szinkronizáláshoz
                       href: data-entities/dual-write/initial-sync-guidance.md
+                    - name: Az élő szinkronizálás korlátai
+                      href: data-entities/dual-write/sync-limits.md
                     - name: Kettős írás beállítása a Lifecycle Services szolgáltatásból
                       href: data-entities/dual-write/lcs-setup.md
-                    - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
+                    - name: Kettős írás engedélyezése meglévő Finance and Operations alkalmazásokhoz
                       items:
-                        - name: A kettős írás engedélyezése a meglévő Finance and Operations alkalmazásoknál
+                        - name: Kettős írás engedélyezése meglévő Finance and Operations alkalmazásokhoz
                           href: data-entities/dual-write/enable-dual-write.md
                         - name: Rendszerkövetelmények és előfeltételek
                           href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -1060,6 +1060,8 @@
                           href: data-entities/dual-write/link-your-environment.md
                         - name: Entitásleképezés engedélyezése a kettős íráshoz
                           href: data-entities/dual-write/enable-entity-map.md
+                    - name: Szétválasztott kettős írású alkalmazás lebonyolítási csomagja
+                      href: data-entities/dual-write/separated-solutions.md
                     - name: Pénznem-adattípus áttelepítése a kettős íráshoz
                       href: data-entities/dual-write/currrency-decimal-places.md
                     - name: Az értékesítési rendelés állapotmezőihez tartozó leképezés beállítása
@@ -1070,10 +1072,14 @@
                   items:
                     - name: Entitás- és mezőleképezések testreszabása
                       href: data-entities/dual-write/customizing-mappings.md
+                    - name: Testreszabási útmutató a kettős íráshoz
+                      href: data-entities/dual-write/custom-best-practices.md
                     - name: Több entitásleképezés kezelése
                       href: data-entities/dual-write/multiple-entity-maps.md
                     - name: Jogi személy szerkesztése a kettős írás beállítása után
                       href: data-entities/dual-write/edit-legal-entity.md
+                    - name: A kettős írás szüneteltetése karbantartáshoz
+                      href: data-entities/dual-write/pause-for-maintenance.md
                     - name: Hibakezelő és riasztási értesítések
                       href: data-entities/dual-write/errors-and-alerts.md
                     - name: Alkalmazáséletciklus-kezelés
@@ -1136,6 +1142,8 @@
                       href: data-entities/dual-write/party-gab-portal.md
                     - name: Frissítés a fél és globális címjegyzék modelljére
                       href: data-entities/dual-write/upgrade-party-gab.md
+                    - name: Fél adatainak megtekintése
+                      href: data-entities/dual-write/view-party.md
                     - name: Jegyzetintegráció
                       href: data-entities/dual-write/notes-integration.md
                     - name: Leképezési hivatkozás
@@ -1156,16 +1164,18 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
                         - name: Élő szinkronizálási problémák elhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: A kettős írással kapcsolatos hibaelhárítás a Finance and Operations alkalmazásokban
+                        - name: A Finance and Operations alkalmazások kettős írással kapcsolatos problémáinak elhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
-                        - name: A fél és a globális címjegyzék problémáinak hibaelhárítása
+                        - name: A félhez tartozó és globális címjegyzék problémáinak hibaelhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: A megoldások érzékenységével kapcsolatos problémák elhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: A Finance and Operations alkalmazások frissítése miatti problémák elhárítása
+                        - name: A Finance and Operations alkalmazások frissítéseivel kapcsolatos problémák elhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: A kettős írás konfigurációjának ellenőrzése a Finance and Operations alkalmazásokban és a Dataverse szolgáltatásban
+                        - name: A kettős írás Finance and Operations alkalmazásokban és a Dataverse-ben történő konfigurálásának igazolása
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
+                        - name: Hibakódok a táblaleképezési állapot-ellenőrzéshez
+                          href: data-entities/dual-write/table-map-health-check.md
                 - name: Kettős írás – gyakori kérdések
                   href: data-entities/dual-write/dual-write-faq.md
             - name: Virtuális entitások
@@ -1176,12 +1186,58 @@
                   href: power-platform/entity-modeling.md
                 - name: Alkalmazáséletciklus-kezelés
                   href: power-platform/application-lifecycle-management.md
-                - name: Finance and Operations és Dataverse rendszergazdai hivatkozás
+                - name: Dataverse-beli virtuális entitások konfigurálása
                   href: power-platform/admin-reference.md
-                - name: Power Apps-portálok a Finance and Operations alkalmazáshoz
+                - name: Dataverse-beli virtuális entitások engedélyezése
+                  href: power-platform/enable-virtual-entities.md
+                - name: Power Apps-portálok a Finance and Operations szolgáltatással
                   href: power-platform/power-portal-reference.md
-                - name: Finance and Operations virtuális entitások GYIK
+                - name: A Finance and Operations virtuális entitásai – gyakori kérdések
                   href: power-platform/faq.md
+            - name: Üzleti események
+              items:
+                - name: Üzleti események áttekintése
+                  href: business-events/home-page.md
+                - name: Üzletiesemény-végpontok kezelése
+                  href: business-events/managing-business-event-endpoints.md
+                - name: Alkalmazás – üzleti események
+                  href: business-events/app-business-events.md
+                - name: Munkafolyamat – üzleti események
+                  href: business-events/business-events-workflow.md
+                - name: Kötegelt üzleti események
+                  href: business-events/system-business-events.md
+                - name: Figyelmeztetések üzleti eseményekként
+                  href: business-events/alerts-business-events.md
+                - name: Adatesemények
+                  href: business-events/data-events.md
+                - name: Üzleti események Power Automate szolgáltatásban
+                  href: business-events/business-events-flow.md
+                - name: Üzleti események fejlesztői dokumentációja
+                  href: business-events/business-events-dev-doc.md
+                - name: Üzleti események hibaelhárítása
+                  href: business-events/troubleshooting.md
+                - name: Esetek üzleti eseményekhez történő használata
+                  href: business-events/potential-use-cases.md
+                - name: Oktatóanyagok
+                  items:
+                    - name: Üzleti események és a Power Automate
+                      href: business-events/how-to/how-to-flow.md
+                    - name: Üzleti események és az Azure Event Grid
+                      href: business-events/how-to/how-to-eventgrid.md
+                    - name: Üzleti események és az Azure Service Bus
+                      href: business-events/how-to/how-to-servicebus.md
+                    - name: Üzleti események és az Azure Service Bus várakozási sora
+                      href: business-events/how-to/how-to-servicebus-queue.md
+                    - name: Üzleti események és munkafolyamat-jóváhagyások
+                      href: business-events/how-to/how-to-workflow.md
+                    - name: Üzleti események és a Microsoft Forms Pro
+                      href: business-events/how-to/FormsPro.md
+                    - name: Üzleti események és az Azure Event Hubs
+                      href: business-events/how-to/event-hub.md
+                    - name: Feliratkozás Dataverse-eseményekre
+                      href: business-events/how-to/how-to-dataverse-events.md
+                    - name: Üzleti események a pénzügyi időszak lezárásakor
+                      href: business-events/how-to/period-close.md
             - name: Bővítmények
               items:
                 - name: Bővítmények áttekintése
@@ -1412,15 +1468,15 @@
               href: process-automation/log-results.md
             - name: A felhasználói felület testreszabása
               href: process-automation/ui-customization.md
-        - name: Regression Suite Automation Tool
+        - name: Regression suite automation tool
           items:
-            - name: Regression Suite Automation Tool áttekintése
+            - name: Regression suite automation tool áttekintése
               href: perf-test/rsat/rsat-overview.md
             - name: Telepítés és konfiguráció
               href: perf-test/rsat/rsat-install-configure.md
-            - name: A Regression Suite Automation Tool használata
+            - name: A Regression suite automation tool használata
               href: perf-test/rsat/rsat-run.md
-            - name: Tesztesetek karbantartása a Regression Suite Automation Tool eszközben
+            - name: Tesztesetek karbantartása a Regression suite automation tool eszközben
               href: perf-test/rsat/rsat-maintain-test-cases.md
             - name: Várható értékek ellenőrzése
               href: perf-test/rsat/rsat-validate-expected.md
@@ -1430,17 +1486,19 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Paraméterfájlok frissítése
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
-            - name: Regression Suite Automation Tool-oktatóanyag
+            - name: Regression suite automation tool-oktatóanyag
               href: perf-test/rsat/rsat-tutorial.md
             - name: Nem rendszergazda felhasználók konfigurálása
               href: perf-test/rsat/rsat-configure-nonadmin.md
-            - name: Gyakorlati tanácsok
+            - name: Bevált gyakorlatok
               href: perf-test/rsat/rsat-best-practices.md
-            - name: Adatagnosztikus tesztelés a Regression Suite Automation Tool használatával
+            - name: Adatagnosztikus tesztelés a Regression Suite Automation Tool segítségével
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
+            - name: A Regression Suite Automation Tool (RSAT) futtatása párhuzamos végrehajtással
+              href: perf-test/rsat/rsat-parallel-execution.md
             - name: Hibaelhárítás
               href: perf-test/rsat/rsat-troubleshooting.md
-        - name: Megoldások kiadása a Lifecycle Services használatával
+        - name: Megoldások kiadása a Lifecycle Services segítségével
           items:
             - name: Fejlesztés és kiadás
               href: lcs-solutions/lcs-solutions-app-source.md
@@ -1476,17 +1534,17 @@
                   href: lcs-solutions/submit-localization-alerts.md
         - name: Támogatás
           items:
-            - name: Támogatás Finance and Operations és Lifecycle Services szolgáltatások támogatása
+            - name: 'Támogatás igénylése a Finance and Operations, illetve a Lifecycle Services szolgáltatáshoz'
               href: lifecycle-services/lcs-support.md
             - name: A Dynamics 365 támogatásának áttekintése
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-            - name: A 21Vianet által Kínában működtetett Finance and Operations támogatása
+            - name: Támogatás kérése a Kínában a 21Vianet által működtetett Finance and Operations szolgáltatással kapcsolatban
               href: lifecycle-services/21vianet-support.md
-            - name: Technikai támogatás beállítása a Finance and Operations alkalmazásokhoz
+            - name: Műszaki támogatás beállítása a Finance and Operations alkalmazásokhoz
               href: lifecycle-services/support-experience.md
-            - name: A Finance and Operations alkalmazások támogatásával kapcsolatos gyakorlatok kezelése
+            - name: A Finance and Operations alkalmazások támogatási tapasztalatainak kezelése
               href: lifecycle-services/cloud-powered-support-lcs.md
-            - name: Termeléstámogatás és -felügyelet
+            - name: Üzemeléstámogatás és -felügyelet
               href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
         - name: Rendszerfelügyelet
           items:
@@ -1554,10 +1612,12 @@
                   href: sysadmin/batch-server-overview.md
                 - name: Kötegelt feladatok létrehozása
                   href: sysadmin/tasks/create-batch-job.md
-                - name: Kötegelt feladatok automatikus újrapróbálásának engedélyezése
+                - name: Köteg-újrapróbálások engedélyezése
                   href: sysadmin/retryable-batch.md
                 - name: Kötegelt feladat másolása
                   href: sysadmin/copy-batch-job.md
+                - name: Prioritáson alapuló kötegütemezés
+                  href: sysadmin/priority-based-batch-scheduling.md
                 - name: Aktív kötegidőszakok
                   href: sysadmin/activeperiod.md
                 - name: Nyári időszámítás támogatása aktív kötegelési időszakoknál
@@ -1572,6 +1632,8 @@
                   href: sysadmin/batch-history-cleanup.md
                 - name: Végrehajtás alatt lévő kötegelt feladat megszakítása
                   href: sysadmin/batch-abort.md
+                - name: Köteg – OData API
+                  href: sysadmin/batch-odata-api.md
             - name: Optimalizálási tanácsadó
               items:
                 - name: Optimalizálási tanácsadó – áttekintés
@@ -1594,7 +1656,7 @@
               href: migration-upgrade/upgrade-home-page.md
             - name: Frissítés AX 2012-ről
               items:
-                - name: Frissítés AX 2012-ről Finance and Operations
+                - name: Frissítés AX 2012-ről a Finance and Operations alkalmazásra
                   href: migration-upgrade/upgrade-overview-2012.md
                 - name: AX 2012 frissítés – A frissítési elemzőeszköz használata a tervezéshez
                   href: migration-upgrade/upgrade-analyzer-tool.md
@@ -1606,8 +1668,6 @@
                   href: migration-upgrade/data-upgrade-2012.md
                 - name: AX 2012 frissítése – Frissítés előtti ellenőrzőlista az adatfrissítéshez
                   href: migration-upgrade/prepare-data-upgrade.md
-                - name: Frissítés AX 2012 megoldásról – SQL tranzakciós replikáció
-                  href: database/replication-setup.md
                 - name: Frissítés AX 2012 megoldásról – Adatfrissítés önkiszolgáló környezetekben
                   href: migration-upgrade/data-upgrade-self-service.md
                 - name: AX 2012 frissítése – Helyszíni környezetek
@@ -1628,8 +1688,6 @@
                   items:
                     - name: A számlatükör elválasztó karakterének egyedivé tétele
                       href: migration-upgrade/chart-accounts-delimiter-unique.md
-                    - name: Egyetlen bizonylatos naplók és pénznemértékelések frissítése
-                      href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
                     - name: Projekterőforrás-ütemezés adatmodellje
                       href: migration-upgrade/data-model-changes-resource-management.md
                     - name: Munkafolyamat alrendszer módosításai
@@ -1642,7 +1700,7 @@
                       href: migration-upgrade/upgrade-budget-planning.md
             - name: Adatok áttelepítése AX 2009-ből
               items:
-                - name: Adatok áttelepítése AX 2009-ből Finance and Operations
+                - name: Adatok áttelepítése AX 2009-ből a Finance and Operations alkalmazásba
                   href: migration-upgrade/data-migration-tool.md
                 - name: AX 2009 áttelepítése – Az adatáttelepítési eszköz telepítése
                   href: migration-upgrade/install-dmt.md
