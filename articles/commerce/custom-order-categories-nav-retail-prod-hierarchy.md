@@ -12,20 +12,20 @@ ms.reviewer: josaw
 ms.custom: 268444
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 31798508e4cc71e31a30dc91acebfdde8226b16c
-ms.sourcegitcommit: 9eadc7ca08e2db3fd208f5fc835551abe9d06dc8
-ms.translationtype: HT
+ms.openlocfilehash: 444f1ebd99cf8443181a51d93a48b6b4d1addf4d
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "5937062"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779542"
 ---
 # <a name="change-the-sort-order-for-merchandising-entities"></a>Árusítási entitások rendezési sorrendjének módosítása
 
 
-[!include [banner](includes/banner.md)]
+[!Include [banner](includes/banner.md)]
 
 A kiskereskedők a termékfelderítésre elsődleges eszközként tekintenek az ügyfélinterakciókhoz összes kereskedelmi csatornán. A különböző funkciók segítségével a vevők könnyedén felfedezhetik a termékeket. Tallózhatók például a kategóriák között, a kereshetnek és a szűrhetnek.
 
@@ -51,9 +51,9 @@ Ennek a műveletnek az elvégzése előtt a demóadatokat telepítenie kell a k�
 
 A csatorna navigációs hierarchiájának megjelenítési sorrendje tükröződni fog a központ számára a kereskedelmi termékek hierarchiájában, és kategóriánként kiadott termékeknél.
 
-![A termékek hierarchiájának egyéni sorrendje negatív értékekkel](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
+![A termékek hierarchiájának egyéni sorrendje negatív értékekkel.](./media/RetailProductHierarchyCustomSortedWithNegativeValues.png)
 
-![Közzétett termékek kategóriák szerint, a termékek hierarchiája alapján egyéni módon rendezve](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
+![Közzétett termékek kategóriák szerint, a termékek hierarchiája alapján egyéni módon rendezve.](./media/ReleasedProductsByCategoryCustomSortedBasedOnRetailProductHierarchy.png)
 
 ## <a name="configure-the-display-order-for-categories-in-the-channel-navigation-hierarchy"></a>A csatornanavigáció hierarchiájában megjelenítési sorrend konfigurálása a kategóriákhoz
 
@@ -77,11 +77,11 @@ Ennek a műveletnek az elvégzése előtt a demóadatokat telepítenie kell a k�
 
 A csatorna navigációs hierarchiájának megjelenítési sorrendje a központ, katalógus és csatornákban is tükröződik.
 
-![Csatornanavigáció hierarchiája egyéni módon rendezve](./media/ChannelNavCustomSorted.png)
+![Csatornanavigáció hierarchiája egyéni módon rendezve.](./media/ChannelNavCustomSorted.png)
 
-![Katalógus-navigációs hierarchia egyéni módon rendezve a csatorna navigációs hierarchiája alapján](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
+![Katalógus-navigációs hierarchia egyéni módon rendezve a csatorna navigációs hierarchiája alapján.](./media/CatalogNavHierarchyCustomSortedBasedOnChannelNav.png)
 
-![Pénztár egyéni módon rendezett kategóriákkal](./media/POSChannelCategoriesCustomSorted.png)
+![Pénztár egyéni módon rendezett kategóriákkal.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
 > Alapértelmezés szerint az egyéni rendezési sorrend funkció ki van kapcsolva. Ennek a funkciónak és egyéb funkcióknak a bekapcsolásával kapcsolatosan lásd: [Funkciókezelés](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).

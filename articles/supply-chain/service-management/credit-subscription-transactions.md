@@ -1,12 +1,10 @@
 ---
 title: Előfizetési tranzakciók jóváírása
 description: Ez a témakör bemutatja, hogy hogyan lehet előfizetésidíj-tranzakciót jóváírni.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ff8dbf5cad2cc1fa2cd465420629e39c9ffb512b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 8ca690bc97aff2112c9464d8a6f7cee8fbc0879c
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974610"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571449"
 ---
 # <a name="credit-subscription-transactions"></a>Előfizetési tranzakciók jóváírása 
 
@@ -55,3 +53,6 @@ Ha a **Szolgáltatáskezelés paraméterei** képernyő **Könyvelések sztorní
 
 
  
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

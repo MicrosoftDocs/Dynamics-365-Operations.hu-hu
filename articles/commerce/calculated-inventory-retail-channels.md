@@ -2,7 +2,7 @@
 title: Kiskereskedelmi csatornák készletelérhetőségének kiszámítása
 description: Ez a témakör azt mutatja be, hogyan használhatja a Microsoft Dynamics 365 Commerce szolgáltatást a termékek becsült aktuális elérhetőségét az online és üzleti csatornán.
 author: hhainesms
-ms.date: 04/23/2021
+ms.date: 09/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,17 +14,16 @@ ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-ms.openlocfilehash: fdf6df7e393bcc401e770bd1b8afcaedcadc2660
-ms.sourcegitcommit: 593438a145672c55ff6a910eabce2939300b40ad
-ms.translationtype: HT
+ms.openlocfilehash: 1b1e0ea264dd74f6583d3b7fd3ecce551c73fbae
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "5937434"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674675"
 ---
 # <a name="calculate-inventory-availability-for-retail-channels"></a>Kiskereskedelmi csatornák készletelérhetőségének kiszámítása
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan használhatja a Microsoft Dynamics 365 Commerce szolgáltatást a termékek becsült aktuális elérhetőségét az online és üzleti csatornán.
 
@@ -44,6 +43,21 @@ A csatornaoldali készletszámítási logikában jelenleg a következő készlet
 - Üzletben vagy online csatornán keresztül, vevői rendelések által értékesített készlet
 - Az üzletnek visszaküldött készlet
 - Az üzlet raktárából teljesített (kitárolt, csomagolt, szállított) készlet
+
+A csatornaoldali készletszámítás használatához engedélyeznie kell az **Optimalizált termékelérhetőségi számítás** szolgáltatást.
+
+Ha a Kereskedelem környezet a **10.0.8–10.0.11** kiadásokban van, kövesse ezeket a lépéseket.
+
+1. A Kereskedelem központban lépjen a **Kiskereskedelem és kereskedelem** \> **Kereskedelmi megosztott paraméterek** menüpontra.
+1. A **Készlet** lap **Termékelérhetőségi feladat** mezőben válasza az **Optimalizált folyamat használata Termékelérhetőségi feladatnál** lehetőséget.
+
+Ha a Kereskedelem környezet a **10.0.12 vagy későbbi** kiadásokban van, kövesse ezeket a lépéseket.
+
+1. A Kereskedelmi központban lépjen a **Munkaterületek \> Funkciókezelés** menüpontba, és engedélyezze az **Optimalizált termékelérhetőségi számítás** funkciót.
+1. Ha az online és az áruházi csatornák ugyanazokat a teljesítési raktárakat használják, akkor engedélyeznie kell a **Továbbfejlesztett e-kereskedelmi csatornaoldali készletszámítási logika** funkciót is. Ilyen módon a csatornaoldali számítási logika figyelembe veszi az üzlet csatornájában létrehozott, fel nem adott tranzakciókat. (Ezek a tranzakciók készpénzzel fizetett, azonnal átvett tranzakció, vevői rendelések és visszáruk is lehetek.)
+1. Futtassa a **1070** (**csatornakonfiguráció**) feladatot.
+
+Ha a Kereskedelem környezet egy, a kereskedelmi rendszer 10.0.8-as verziójánál korábbi kiadásról lett frissítve, az **Optimalizált termékelérhetőségi számítás funkció** engedélyezése után futtatnia kell a **Kereskedelmi ütemező inicializálása** elemet is ahhoz, hogy ez a funkció életbe lépjen. Az inicializálás futtatásához ugorjon a **Kiskereskedelem és kereskedelem** \> **Központ beállítása** \> **Kereskedelmi ütemező** elemre.
 
 A csatornaoldali készletszámítás alkalmazásához előfeltételként a csatorna-adatbázisoknak el kell küldeni egy időszakos pillanatképet a központból származó, a **Termék elérhetősége** feladat által létrehozott adatokról. A pillanatkép a központ azon adatait jeleníti meg, amelyek a termék vagy a termék változatának és a raktárnak egy meghatározott kombinációját jelentik. Ez csak azokat a készlettranzakciókat tartalmazza, amelyek feldolgozása és feladása a központban a pillanatkép készítésekor történt meg, és elképzelhető, hogy valós időben nem 100%-os pontosságú a felosztott kiszolgálókon történő folyamatos értékesítési feldolgozás miatt.
 
@@ -76,8 +90,6 @@ Mindkét API belsőleg használja a csatornaoldali számítási logikát, és vi
 
 Bár más, a Commerce-ben elérhető API-k közvetlenül a központból is lekérhetik a termékek tényleges készletmennyiségeit, nem javasoljuk ezek e-kereskedelmi környezetben való használatát a lehetséges teljesítményproblémák miatt, és a gyakori kérések központi kiszolgálókra tett kapcsolt hatása miatt. Ezenkívül a csatornaoldali számítás során a két fent említett API pontosabb becslést nyújthat a termékek elérhetőségével kapcsolatban, figyelembe véve a csatornákban létrehozott tranzakciókat, amelyek még nem ismertek a központ számára.
 
-A két API-használatához engedélyeznie kell az **Optimalizált termékelérhetőségi számítás** funkciót a **Funkciókezelés** munkaterület segítségével, a központban. Ha az online és üzleti csatornák ugyanazt a teljesítési raktárt használják, akkor a **Továbbfejlesztett e-kereskedelmi csatornaoldali készletszámítási logika** funkciót is engedélyeznie kell, hogy a csatornaoldali számítási logika szerepeljen a két API-ban, amellyel figyelembe vehetők a nem feladott tranzakciók (készpénzzel fizetett, azonnal átvett, vevői rendelések, visszáruk), amelyeket az üzlet csatornájában hoztak létre. A funkciók engedélyezése után le kell futtatnia az **1070**-es (**Csatornakonfiguráció**) feladatot.
-
 A következő lépések szerint adhatja meg, hogyan adja vissza a termékmennyiséget az API kimenete.
 
 1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce paraméterek** menüpontra.
@@ -86,7 +98,7 @@ A következő lépések szerint adhatja meg, hogyan adja vissza a termékmennyis
 
 A **Mennyiség az API kimenetében** beállítás három lehetőséget kínál:
 
-- **Visszadott készletmennyiség** - A kért termék elérhető tényleges és elérhető teljes mennyiségét adja vissza a rendszer az API kimenetében.
+- **Visszaadott készletmennyiség** – A kért termék elérhető tényleges és elérhető teljes mennyiségét adja vissza a rendszer az API kimenetében.
 - **Visszaadott készletmennyiség mínusz készletpuffer** – Az API kimenetében visszaadott mennyiség, amelyet a készletpuffer értékének levonásával korrigáltak. További információért a készletpufferrel kapcsolatban lásd: [Készletpufferek és készletszintek konfigurálása](inventory-buffers-levels.md).
 - **Nincs visszaadott készletmennyiség** – Az API kimenete csak a készletszintet adja vissza. További információért a készletszintekkel kapcsolatban lásd: [Készletpufferek és készletszintek konfigurálása](inventory-buffers-levels.md).
 
@@ -94,7 +106,7 @@ A `QuantityUnitTypeValue` API-paraméter használatával lehet megadni, hogy mil
 
 A **GetEstimatedAvailability** API a következő bemeneti paramétereket kínálja fel a különböző lekérdezési helyzetek támogatása érdekében:
 
-- `DefaultWarehouseOnly`– Ezzel a paraméterrel az online csatorna alapértelmezett raktárában lekérdezhető egy termék készlete. 
+- `DefaultWarehouseOnly` – Ezzel a paraméterrel az online csatorna alapértelmezett raktárában lekérdezhető egy termék készlete. 
 - `FilterByChannelFulfillmentGroup`és `SearchArea` – ennek a két paraméternek a használatával lehet lekérdezni egy termék készletét egy adott keresési terület minden felvételi helyéről a `longitude`, a `latitude` és a `radius` értéke alapján. 
 - `FilterByChannelFulfillmentGroup`és `DeliveryModeTypeFilterValue` – ennek a két paraméternek a használatával lehet lekérdezni egy termék készletét olyan megadott raktárakból, amelyek az online csatorna teljesítési csoportjához vannak kapcsolva, és úgy vannak konfigurálva, hogy támogassanak bizonyos szállítási módokat. A `DeliveryModeTypeFilterValue` paraméter támogatja az **összes** (alapértelmezett), **szállítás** és **átvétel** beállítást. Például olyan helyzetekben, amikor egy online rendelés több szállítási raktárból is teljesíthető, e két paraméter használatával lekérdezhető egy termék készletének elérhetősége az összes ilyen szállítási raktárból. Ebben az esetben az API visszaadja a termék aktuális mennyiségét és készletszintjét az egyes szállítási raktárakban, valamint az összesített mennyiségét és összesített készletszintet a lekérdezés hatókörében szereplő összes szállítási raktárból.
  
@@ -106,7 +118,7 @@ A Commerce 10.0.9-es és korábbi kiadásaiban a pénztár **Készletkeresés** 
 
 Amikor a csatornaoldali számítást helyesen konfigurálták és kezelték, megbízhatóbb becslést biztosíthat az aktuális üzletkészletről, mivel a Kereskedelmi csatorna-adatbázisban található tranzakciós adatokat használ, amelyről a központ még lehet, hogy nem tud. Ha például a pénztár készletkereséseire vonatkozó meglévő valós idejű szolgáltatáshívást használja, a központ valószínűleg még nem rendelkezik az információval a termékkel éppen történt készpénzzel fizetett és azonnal átvett értékesítésről. Így a központ által az adott termékre vonatkozóan visszadatott tényleges készlet értéke valószínűleg meghaladja az üzlet aktuális tényleges készletét egy egységgel. Ha viszont a csatornaoldali számítást használja, akkor a készpénzzel fizetett és azonnal átvett értékesítést a rendszer beleszámítja a számításba, és levonja a megjelenő tényleges értékből. Annak ellenére, hogy a csatornaoldali számítás és a valós idejű szolgáltatáshívások által biztosított értékek is csak a tényleges készlet becslését jelentik, a csatornaoldali számítás által adott érték nagyobb valószínűséggel pontos az aktuális üzletre nézve.
 
-Ha úgy szeretné konfigurálni a pénztár **Készletkeresés** műveletét a központban, hogy a csatornaoldali számítási logikát használja, és kikapcsolja a valós idejű szolgáltatáshívást, kövesse ezeket a lépéseket.
+Ha konfigurálni szeretné a pénztári **Készletkeresés** művelet a Commerce Headquarters rendszerében ahhoz, hogy használhassa a csatornaoldali számítási logikát és kikapcsolhassa a valós idejű szolgáltatáshívásokat, először engedélyeznie kell az **Optimalizált termékelérhetőségi számítás** funkciót a **Funkciókezelés** munkaterületen a Commerce Headquartersben, majd követnie kell ezeket a lépéseket.
 
 1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**.
 1. Válasszon funkcióprofilt.
@@ -137,6 +149,5 @@ A készlet lehető legjobb becslésének biztosításához fontos, hogy a követ
 > - Teljesítménnyel kapcsolatos okokból, amikor a csatornaoldali készletelérhetőségi számításokkal hoznak létre egy készletelérhetőségi kérést az e-kereskedelmi API-k vagy a pénztári csatornaoldali készletlogika használatával, a számítás gyorsítótárat használt annak meghatározására, hogy elég idő telt-e el, hogy igazolható legyen a számítási logika újbóli futtatása. Az alapértelmezett gyorsítótár értéke 60 másodperc. Például bekapcsolta az üzlet csatorna-oldali számítását, és megtekintette egy termék tényleges készletét a **készletkeresés** oldalán. Ha a termék egy egységét értékesítik, akkor a **készletkeresés** lapja nem jeleníti meg a csökkentett készletet mindaddig, amíg a gyorsítótár ki nem ürül. Miután a felhasználó feladta a tranzakciókat a pénztárban, várnia kell 60 másodpercig, mielőtt ellenőrizheti, hogy a tényleges készlet csökkent.
 
 Ha az üzleti helyzethez kisebb gyorsítótárazási idő szükséges, forduljon a terméktámogatási szolgálat képviselőjéhez.
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,30 +2,27 @@
 title: Változatcsoport létrehozása
 description: Ez a témakör azt mutatja be, hogyan hozhat létre szín-, stílus- vagy színváltozat csoportot egy termékhez a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: RetailSizeGroupTable, ConfigGroupIdLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 5d9279e1076796bb455429e5ff004c89ec5829e7
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 49e6860fa22bbfba8b86a8243fa29b831e22b489d967a45310648e5debd7512b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412860"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6749931"
 ---
-# <a name="create-a-variant-group"></a>Változatcsoport létrehozása
+# <a name="create-a-variant-group"></a>Variánscsoport létrehozása
 
 
 [!include [banner](includes/banner.md)]
@@ -64,12 +61,15 @@ Attribútum hozzáadásához egy méretcsoporthoz kövesse az alábbi lépéseke
 
 A következő kép egy példát mutat be az „utcai pólóméretek” méretcsoportjára.
 
-![Méretcsoport létrehozása](media/create-variant-group.png)
+![Méretcsoport létrehozása.](media/create-variant-group.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Termékek adatainak áttekintése](../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json)
+[Termékadatok áttekintése](../supply-chain/pim/product-information.md?toc=/dynamics365/commerce/toc.json)
 
 [Retail termékek beállítása](set-up-retail-products.md)
 
 [Termékdimenziók](../supply-chain/pim/product-dimensions.md?toc=/dynamics365/commerce/toc.json)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

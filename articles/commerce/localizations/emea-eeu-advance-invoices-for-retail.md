@@ -2,11 +2,9 @@
 title: Commerce előlegszámlák (Kelet-Európa)
 description: Ez a témakör bemutatja az előzetes értesítések beállítását a Commerce megoldásban Kelet-Európa esetében.
 author: epopov
-manager: annbe
 ms.date: 10/23/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application user
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: Retail
 ms.author: epopov
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5199d745eea467408eed32c5cd5ba8f964fec497
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 4433dfad61aacb41aba9cf233515460410c7260304e8e3d690b015b193ffe774
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5225723"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718689"
 ---
 # <a name="advance-invoices-for-commerce-for-eastern-europe"></a>Commerce előlegszámlák (Kelet-Európa)
 
@@ -32,7 +30,7 @@ Lengyelország, Magyarország és Csehország számára egy vevőtől Point of S
 
 Az értékesítési rendelés számlájának feladásakor a végső dokumentumnak tartalmaznia kell az előlegszámlát, és bármely előleget meg kell jelölni.
 
-Értékesítési rendelések készítéskor a Kinnlevőségekből, manuálisan generálnia kell előlegszámlákat az itt ismertetettek szerint: [Előlegszámlák Kelet-Európa számára](https://docs.microsoft.com/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Ha értékesítési rendeléseket POS útján generál, a rendszer létrehozza és feladja az előlegszámlákat.
+Értékesítési rendelések készítéskor a Kinnlevőségekből, manuálisan generálnia kell előlegszámlákat az itt ismertetettek szerint: [Előlegszámlák Kelet-Európa számára](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice). Ha értékesítési rendeléseket POS útján generál, a rendszer létrehozza és feladja az előlegszámlákat.
 
 ## <a name="supported-scenarios"></a>Támogatott esetek
 

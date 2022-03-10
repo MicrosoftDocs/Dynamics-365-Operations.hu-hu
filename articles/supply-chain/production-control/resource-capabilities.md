@@ -1,30 +1,27 @@
 ---
 title: Erőforrás-képességek
 description: Ez a cikk az erőforrás képességeivel kapcsolatos információkról nyújt tájékoztatást. A képesség egy üzemi erőforrás képességét jelenti egy adott tevékenység végrehajtására. A cikk bemutatja, hogy hogyan használják a képességeket és a kapcsolódó fogalmakat (például a szakértelemszint és a prioritás) a megfelelő erőforrások kiválasztására egy tevékenységre vonatkozóan.
-author: sorenva
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WrkCtrCapability, WrkCtrTable, WrkCtrCapRes, WrkCtrApplicableResources
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: 29961
 ms.assetid: 30e38233-2a64-4070-911f-8ffd78dd8281
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: sorenand
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc01e2d28758008d2e147a92c498da7ccb14b173
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 260537767d083445aa908c850526a5472c529763
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429448"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572769"
 ---
 # <a name="resource-capabilities"></a>Erőforrás-képességek
 
@@ -58,3 +55,6 @@ Ha **Emberi erőforrások** típusú üzemi erőforrással rendelkezik, amelyik 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

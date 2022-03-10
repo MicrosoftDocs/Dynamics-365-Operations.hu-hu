@@ -1,12 +1,10 @@
 ---
 title: Szolgáltatási tevékenységek
 description: Hozzon létre szolgáltatási tevékenységeket a szolgáltatási rendelés definiálásához és fenntartásához.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: smmActivityTypeGroup, SMADispatchBoard
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 47df457d92f6eb41d04c63db6d3a99a4a9a74439
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 656c16f812afccd58ea9031fd83a4b09a4c44957
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001325"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566143"
 ---
 # <a name="service-activities"></a>Szolgáltatási tevékenységek        
 
@@ -39,3 +37,6 @@ A tevékenységek státusza megtekinthető a **Diszpécserközpont** lapon. Azon
 
 [Diszpécserközpont (képernyő)](https://technet.microsoft.com/library/hh242789\(v=ax.60\))
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

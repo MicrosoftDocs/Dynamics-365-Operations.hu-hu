@@ -2,11 +2,9 @@
 title: Áfatételjegyzék-tranzakciók (Kelet-európa)
 description: Ez a témakör az Észtország, Litvánia, Csehország, Magyarország, Lettország és Lengyelország esetén használt áfatételjegyzék-tranzakciókhoz tartalmaz információkat.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: RegisterVAT_W, TaxTable
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland
 ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 71f0a348c41bdc1abc792fcb58ce95ec211ce982
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: eec31a4d4c0df1ffe693465e8e7df2367f4b39e38569c6f44241941712054f38
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5224622"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735442"
 ---
 # <a name="vat-register-transactions-for-eastern-europe"></a>Áfatételjegyzék-tranzakciók (Kelet-európa)
 

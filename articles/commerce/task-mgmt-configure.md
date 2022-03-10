@@ -13,12 +13,12 @@ ms.search.industry: ''
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Release 10.0.9
-ms.openlocfilehash: 742d49b1b7b46952d0a8bb6c8a33cde2a35d124f
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
-ms.translationtype: HT
+ms.openlocfilehash: 0ae0f3bd58db587d9024beceedd790cc3d3e4ee990a2f4c727dfda96b2f0785c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5791702"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730803"
 ---
 # <a name="configure-task-management"></a>Feladatkezelés konfigurálása
 
@@ -44,7 +44,7 @@ A következő lépésekkel konfigurálhatja az üzletvezetők feladatkezelési e
 
 A következő ábra megmutatja, hogyan konfigurálhatja az üzletvezetők feladatkezelési engedélyeit.
 
-![Az üzletvezetők feladatkezelési engedélyeinek konfigurálása](media/HQ-POS-Tasks-Notifications-User-Permission.png)
+![Az üzletvezetők feladatkezelési engedélyeinek konfigurálása.](media/HQ-POS-Tasks-Notifications-User-Permission.png)
 
 ## <a name="configure-permissions-for-employees"></a>Alkalmazottak engedélyeinek konfigurálása
 
@@ -78,7 +78,7 @@ A POS-értesítések konfigurálásához a feladatokhoz kövesse az alábbi lép
 
 A következő ábra a **Feladatkezelő** műveletet jeleníti meg a **Pénztári műveletek** lapon.
 
-![Feladatkezelő működése a POS-műveletek lapon](media/HQ-POS-Tasks-Notifications.png)
+![Feladatkezelő működése a POS-műveletek lapon.](media/HQ-POS-Tasks-Notifications.png)
 
 A POS-értesítések konfigurálásával kapcsolatos további tudnivalókat lásd: [Rendelési értesítések megjelenítése a pénztárnál (POS)](notifications-pos.md).
 
@@ -95,7 +95,7 @@ A **Feladatok** csempe konfigurálásához a Pénztáralkalmazás kezdőlapján 
 
 A következő ábra a pénztár kezdőlapján található **Feladatok** csempére mutat be egy példát.
 
-![A Feladatok mozaikja a pénztár kezdőlapján](media/POS-home-screen-tasks-button-image.png)
+![A Feladatok mozaikja a pénztár kezdőlapján.](media/POS-home-screen-tasks-button-image.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

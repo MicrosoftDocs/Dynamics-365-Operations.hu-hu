@@ -1,32 +1,34 @@
 ---
 title: Kiegyenlítés áttekintése
 description: Ez a témakör a rendezési folyamat általános ismertetését tartalmazza. Leírja, hogy mely tranzakciótípusok kiegyenlítése lehetséges, és milyen ütemezés és folyamat tartozik a kiegyenlítésükhöz. Ez a kiegyenlítési folyamat eredményeit is leírja.
-author: kweekley
-manager: AnnBe
-ms.date: 04/10/2020
-ms.topic: article
+author: panolte
+ms.date: 07/30/2021
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym, LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 14551
+ms.custom:
+- "14551"
+- intro-internal
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a4ad8a124b2de2d364e11b6a32f8845ef438e1d1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 57f2b209a852bb9513218fab3df118c7d7a2a1e7
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4989167"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986383"
 ---
 # <a name="settlement-overview"></a>Kiegyenlítés áttekintése
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Ez a témakör a rendezési folyamat általános ismertetését tartalmazza. Leírja, hogy mely tranzakciótípusok kiegyenlítése lehetséges, és milyen ütemezés és folyamat tartozik a kiegyenlítésükhöz. Ez a kiegyenlítési folyamat eredményeit is leírja.
 
@@ -74,6 +76,25 @@ A kiegyenlítések létre is hozhatnak tranzakciókat. Például egy számla és
 
 Ha megpróbál kiegyenlíteni egy tranzakciót, akkor észrevehet egy szimbólumot, amely azt jelzi, hogy a tranzakció egy másik helyen meg van jelölve. Ebben az esetben kiválaszthatja a tranzakciót a **Tranzakciók kiegyenlítése** lapon, majd választhatja a **Lekérdezés \> Kiegyenlítés a kiegyenlítés ablakból** lehetőséget. A lekérdezés nézete azokat a naplókat, értékesítési rendeléseket, számlákat, fizetési javaslatokat és vevői helyeket jeleníti meg, amelyek a tranzakció kiegyenlítését blokkolhatják. A probléma megoldásához a hivatkozás kiválasztásával a lekérdezésből közvetlenül a zárolt helyre ugorhat. Ezután frissítheti a dokumentumot a kiegyenlítéséhez szükséges módosításokkal. A **Megjelölt** jelölő segítségével azonosíthat más dokumentumokat is, amelyek ugyanazon a blokkolási helyen szerepelnek.
 
+## <a name="resolve-issues-with-transactions-that-cant-be-settled"></a>A nem rendezhető tranzakciókkal kapcsolatos problémák megoldása
+
+Előfordul, hogy azért nem tudja rendezni a tranzakciókat, mert egy másik tevékenység éppen feldolgozza a dokumentumot. Ha megpróbálja kiegyenlíteni a tranzakciókat, hiba lép fel, mert ezeket a tranzakciókat használják. A probléma megoldásához a **Megjelölt tranzakciók részletei** lap segítségével megkeresheti az elszámolásra megjelölt tranzakciókat, és azonosíthatja az azokat elérő egyéb folyamatokat.
+
+A tranzakciókat akkor jelölik ki elszámolásra, amikor a szállítói számlák kifizetése folyamatban van, vagy amikor az ügyfelek kifizetik a nyitott számláikat. Előfordulhat, hogy ezek a számlák már elszámolásra megjelöltek. Ezért a felhasználók nem választhatják ki őket fizetésre. A számlákat jelölheti egy másik ügyfélfizetési napló, értékesítési megbízás, szállítói fizetési napló vagy beszerzési megbízás a jelenlegi vagy egy másik jogi személynél.
+
+Ha egy tranzakciót az ügyfélfizetés rögzítésekor blokkolnak elszámolásra, nyissa meg az **Ügyfél megjelölt tranzakció adatai** oldalt **(Követelések \> Időszakos feladatok \> Ügyfél megjelölt tranzakció adatai**). Annak gyors azonosításához, hogy hol van blokkolva egy tranzakció, a következő kiválasztási paraméterek bármelyikét beállíthatja: **Ügyfélszámla**, **Utalvány**, **Dátum** vagy **Számla**. Ha nem állít be semmilyen kiválasztási paramétert, a rendszer az aktuális vagy egy másik kiválasztott vállalat összes zárolt dokumentumát megjeleníti. Miután azonosította az elszámolásra zárolt tranzakciót, kijelölheti azt, majd válassza a **Kijelölt tranzakciók jelölésének feloldása** lehetőséget. A kiválasztott tranzakciót ezután a rendszer eltávolítja minden olyan naplóból, amely tartalmazza azt. A dokumentum azonban nem kerül eltávolításra a másik helyről. A naplóból csak a jelölési információk kerülnek eltávolításra.
+
+Ha a szállítói kifizetés rögzítésekor egy tranzakciót blokkolnak elszámolásra, nyissa meg a **Szállítóval megjelölt tranzakció adatai** oldalt **(Fizetendő számlák \> Időszakos feladatok \> Szállítóval megjelölt tranzakció adatai**). Annak gyors azonosításához, hogy hol van egy tranzakció blokkolva, beállíthatja a következő kiválasztási paraméterek bármelyikét: **szállítói számla**, **bizonylat**, **dátum** vagy **számla**. Ha nem állít be semmilyen kiválasztási paramétert, a rendszer az aktuális vagy egy másik kiválasztott vállalat összes zárolt dokumentumát megjeleníti. Miután a tranzakciót azonosította, kijelölheti azt, majd a **Kijelölt tranzakciók kijelölésének megszüntetése** opciót választhatja a blokkolási probléma megoldásához. A kiválasztott tranzakciót ezután a rendszer eltávolítja minden más naplóból, ahol az ki van jelölve. A dokumentum azonban nem kerül eltávolításra a másik helyről. A naplóból csak a jelölési információk kerülnek eltávolításra.
+
+Az összes zárolt dokumentum azonosításához nyissa meg a **Minden megjelölt tranzakció részletei** oldalt **(Követelések \> Időszakos feladatok \> Minden megjelölt tranzakció részletei** vagy **Fizetendő számlák \> Időszakos feladatok \> Minden megjelölt tranzakció részletei**). Annak gyors azonosításához, hogy hol van egy tranzakció blokkolva, beállíthatja a következő kiválasztási paraméterek bármelyikét: **Ügyfélszámla**, **Szállítói számla**, **Bizonylat**, **Dátum** vagy **Számla**. Ha nem állít be semmilyen kiválasztási paramétert, a rendszer az aktuális vagy egy másik kiválasztott vállalat összes zárolt dokumentumát megjeleníti. Miután a tranzakciót azonosította, kijelölheti azt, majd a **Kijelölt tranzakciók kijelölésének megszüntetése** opciót választhatja a blokkolási probléma megoldásához. A kiválasztott tranzakciót ezután a rendszer eltávolítja minden más naplóból, ahol az ki van jelölve. A dokumentum azonban nem kerül eltávolításra a másik helyről. A naplóból csak a jelölési információk kerülnek eltávolításra.
+
+A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a **Funkciókezelés** munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A funkció a következő módon jelenik meg:
+
+- **Modul:** Készpénz- és bankkezelés
+- **Jellemző neve:** Megjelölt tranzakció részletező űrlap
+
 ## <a name="additional-resources"></a>További erőforrások
 
 - [Hátralék kiegyenlítése](settle-remainder.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

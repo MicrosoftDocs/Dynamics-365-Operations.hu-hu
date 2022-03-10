@@ -1,12 +1,10 @@
 ---
 title: Fedezeti beállítások
 description: Ez a témakör az alapütemezés által a cikkszükségletek számításához használt fedezeti beállításokkal kapcsolatban tartalmaz tájékoztatást.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 09/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqGroup, ReqItemTable, ReqItemTableWizard, ReqItemTableSetup
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 2494
 ms.assetid: 5a95ae4f-ca75-47d9-a1c3-68c97b42f166
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6ab86db68ddfebe0ffdce26e062defc16c848a1d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 1d0fec443ee4c531d2bc7edc6623d309e863348b
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240413"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7569793"
 ---
 # <a name="coverage-settings"></a>Fedezeti beállítások
 

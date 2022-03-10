@@ -1,34 +1,24 @@
 ---
 title: Integrált adó
-description: Ez a témakör az adóügyi adatok integrációját ismerteti a Finance and Operations és a Dataverse között.
-author: robinarh
-manager: AnnBe
+description: Ez a témakör az adóadatok Finance and Operations és Dataverse közötti integrációját ismerteti.
+author: tonyafehr
 ms.date: 09/06/2019
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
-ms.author: rhaertle
-ms.dyn365.ops.version: ''
+ms.author: tfehr
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 7501ef21492a96c81b971e1d9077beaba9be897b
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
-ms.translationtype: HT
+ms.openlocfilehash: 532e6603b74ad0293d65684d2d6858ef31fbc496
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5560337"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063187"
 ---
 # <a name="integrated-tax"></a>Integrált adó
 
 [!include [banner](../../includes/banner.md)]
-
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
 
 
@@ -38,33 +28,14 @@ Az adóadatok beállítása határozza meg mind a közvetett adók (áfa, GST), 
 
 Az adóadatok tartalmazzák azokat a táblaleképezéseket, amelyek – az alábbi táblázatban látható módon – együttműködnek az adatok interakciója során.
 
-Finance and Operations-alkalmazásoknak | Modellvezérelt alkalmazások a Dynamics 365-ben | Leírás |
--------------------------|---------------------------------|----|
-Cikkáfacsoport | msdyn_taxitemgroups |
-Adóhatóságok | msdyn_taxauthorities |
-Áfamentességi kódentitáshoz tartozó CDS | msdyn_taxexemptcodes |
-Áfacsoportok | msdyn_taxgroups |
-Áfás főkönyvi feladási csoportok V2 | msdyn_taxpostinggroups |
-Adóelőlegkódok | msdyn_withholdingtaxcodes |
-Adóelőleg-csoportok | msdyn_withholdingtaxgroups | 
-
-
-[!include [banner](../../includes/dual-write-symbols.md)]
-
-[!include [Tax item groups](includes/TaxItemGroupHeadings-msdyn-taxitemgroups.md)]
-
-[!include [Tax Authorities](includes/SalesTaxAuthorities-msdyn-taxauthorities.md)]
-
-[!include [Tax Exemptions](includes/CdsTaxExemptCodes-msdyn-taxexemptcodes.md)]
-
-[!include [Tax groups](includes/TaxGroupEntity-msdyn-taxgroups.md)]
-
-[!include [Tax Ledger Account Group](includes/TaxPostingGroupsV2--msdyn-taxpostinggroups.md)]
-
-[!include [Withholding tax codes](includes/WithholdingCode-msdyn-withholdingtaxcodes.md)]
-
-[!include [Withholding tax groups](includes/WithholdingGroups-msdyn-withholdingtaxgroups.md)]
-
-
+| Finance and Operations alkalmazások | Customer Engagement alkalmazások | Leírás |
+|-----------------------------|-----------------------------------|-------------|
+[Cikkáfacsoport](mapping-reference.md#196) | msdyn_taxitemgroups | |
+[Adóhatóságok](mapping-reference.md#193) | msdyn_taxauthorities | |
+[Áfamentességi kódentitáshoz tartozó CDS](mapping-reference.md#194) | msdyn_taxexemptcodes | |
+[Áfacsoportok](mapping-reference.md#195) | msdyn_taxgroups | |
+[Áfás főkönyvi feladási csoportok V2](mapping-reference.md#197) | msdyn_taxpostinggroups | |
+[Adóelőlegkódok](mapping-reference.md#210) | msdyn_withholdingtaxcodes | |
+[Adóelőleg-csoportok](mapping-reference.md#211) | msdyn_withholdingtaxgroups | |
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

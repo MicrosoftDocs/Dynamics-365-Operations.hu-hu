@@ -2,7 +2,6 @@
 title: Adatbevitel megkönnyítése érdekében rekordsablon létrehozása
 description: Ez a témakör bemutatja, hogyan hozható létre rekordsablon azért, hogy a gyakran használt mezőértékeket ne kelljen minden új rekordhoz explicit módon megadni.
 author: margoc
-manager: AnnBe
 ms.date: 07/29/2019
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d50dbb161fca0b0bfda18a258e5cef03e43fbeb
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
-ms.translationtype: HT
+ms.openlocfilehash: 72ffb6458ca3b10415d75fc835677ed2fa03e4197978ab648f2b244248f45058
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5561098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6767725"
 ---
 # <a name="create-a-record-template-to-facilitate-data-entry"></a>Adatbevitel megkönnyítése érdekében rekordsablon létrehozása
 

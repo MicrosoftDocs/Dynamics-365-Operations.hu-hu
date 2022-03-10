@@ -2,27 +2,27 @@
 title: Ellenőrzött fizetési áttekintés
 description: Ez a cikk az ellenőrzött kifizetésről nyújt tájékoztatást, amely a bankoknak benyújtható elektronikus csekklista létrehozásához használatos.
 author: panolte
-manager: AnnBe
 ms.date: 08/22/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankPositivePaySummary
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 88463
+ms.custom:
+- "88463"
+- intro-internal
 ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 611cd7c46cf160a3e4e2b43acecaacdb6c79b16d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 5f36230b68986cffc985353a7130ba429dabd10e
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5235909"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984052"
 ---
 # <a name="positive-pay-overview"></a>Ellenőrzött fizetési áttekintés
 

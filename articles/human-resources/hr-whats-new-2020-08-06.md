@@ -2,15 +2,12 @@
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. augusztus 06.)
 description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. augusztus 06-i kiadásban.
 author: andreabichsel
-manager: tfehr
 ms.date: 08/06/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -18,40 +15,40 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 235af2d4d10687e9d7d7676c29c95428eab99b0a
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
-ms.translationtype: HT
+ms.openlocfilehash: dbcf854330b7c5ba6ca812a5aed384584c05ce8d
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5467723"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062186"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. augusztus 06.)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ez a témakör a Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le. A változtatások a 8.1.3444-es buildszámra vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok az LCS támogatási számaira vonatkoznak referenciaképpen.
 
 ## <a name="platform-update-1001236-is-now-available"></a>A 10.0.12(36) platformfrissítés elérhető
 
-További információ: [Platformfrissítések a Finance and Operations-alkalmazások 10.0.12 verziójához (2020. augusztus)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12).
+További információkért lásd [Platformfrissítések a Finance and Operations alkalmazások 10.0.12-es verziójához (2020. augusztus)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Az adatkezelési keretrendszer (DMF) entitásai a juttatások kezeléséhez
  
 A juttatások kezelése entitások kiadnak. A DMF entitások lehetővé teszik az adatok importálását és exportálását a juttatáskezelés egyszerű konfigurálásához. A juttatáskezelési sablon az adatok áthelyezésére elérhető lesz. A sablon egymást követően exportálja és importálja az adatokat az adatfüggőségek tiszteletben tartásához. További tájékoztatás:
 
-- [A DMF entitás támogatása](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) a Dynamics 365 2020-as kiadási hullámának 1. csomagjában
-- [Adatkezelés – áttekintés](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages)
+- [A DMF entitás támogatása](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/dmf-entity-support) a Dynamics 365 2020-as kiadási hullámának 1. csomagjában
+- [Adatkezelés – áttekintés](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md)
 
 
 ## <a name="claire-creates-a-workflow-for-buying-and-selling-leave-requests-446557"></a>Claire munkafolyamatot hoz létre a szabadságkérelmek adás-vételére (446557)
 
 További tájékoztatás:
 
-- [A kérelmek cseréjének engedélyezése az alkalmazottak számára](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
-- [Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [Szabadság vásárlása és eladása](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [A kérelmek cseréjének engedélyezése az alkalmazottak számára](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
+- [Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Szabadság vásárlása és eladása](./hr-employee-self-service-buy-sell-leave.md)
 
 
 ## <a name="worker-postal-addresses-v2-entity-has-access-across-legal-entities-with-restricted-access-459126"></a>A Dolgozói postai címek V2 entitás hozzáfér a korlátozott hozzáférésű jogi személyekhez (459126).
@@ -64,7 +61,7 @@ Amikor helyőrzőt használ egy teljesítménykimutatás véleményezési munkaf
 
 ## <a name="new-entities-for-buying-and-selling-leave-473180"></a>Új entitások a szabadság adás-vételére (473180)
 
-Az adatkezelési keretrendszer entitásai már használhatók szabadság megvásárlására és eladására. További információ: [Adatkezelés – áttekintés](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
+Az adatkezelési keretrendszer entitásai már használhatók szabadság megvásárlására és eladására. További információ: [Adatkezelés – áttekintés](../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md).
 
 ## <a name="when-viewing-record-information-and-using-advanced-filters-a-user-could-gain-access-to-other-employees-records-472490"></a>A rekordok adatainak megtekintésekor és a speciális szűrők használatakor a felhasználó hozzáférhetett más alkalmazottak rekordjaihoz (472490)
 
@@ -98,9 +95,9 @@ A módosítás után a beosztáshierarchia körkörös hivatkozásainak észlel�
 
 Néhány szervezet olyan juttatást biztosít, amely lehetővé teszi az alkalmazottak számára, hogy megvásárolják vagy eladják a szabadságukat. Ezt a folyamatot gyakran manuálisan kell kezelni. Ez a funkció automatizálja a HR osztályhoz tartozó kezelési házirendek és kérelmek kezelését. Racionalizálja a szabadság-kezelési folyamatot, és segít kiküszöbölni a hibákat. További tájékoztatás:
 
-- [A kérelmek cseréjének engedélyezése az alkalmazottak számára](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
-- [Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése](https://docs.microsoft.com/dynamics365/human-resources/hr-leave-and-absence-manage-buy-and-sell-leave-policies)
-- [Szabadság vásárlása és eladása](https://docs.microsoft.com/dynamics365/human-resources/hr-employee-self-service-buy-sell-leave)
+- [A kérelmek cseréjének engedélyezése az alkalmazottak számára](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/allow-employees-buy-sell-leave) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
+- [Szabadság vásárlásával és eladásával kapcsolatos irányelv kezelése](./hr-leave-and-absence-manage-buy-and-sell-leave-policies.md)
+- [Szabadság vásárlása és eladása](./hr-employee-self-service-buy-sell-leave.md)
 
 ## <a name="leave-accrual-for-a-single-company-or-single-plan"></a>Szabadság elhatárolása egyetlen vállalat vagy egy terv esetében
 
@@ -128,15 +125,15 @@ Olyan szabályt hozhat létre, amely felfüggeszti a távolléti elhatárolások
 
 Kötelezővé teheti a mezőket a Human Resources személyre szabási funkcióival. Ehhez a funkcióhoz **Mentett nézetek** szükségesek. További információ a mentett nézetekről:
 
-- [Mentett nézetek – nyilvános megjelenés](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
-- [A mentett nézeteket teljes mértékben kihasználó képernyők létrehozása](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/user-interface/understanding-saved-views)
+- [Mentett nézetek – nyilvános megjelenés](/dynamics365-release-plan/2020wave2/finance-operations/finance-operations-crossapp-capabilities/saved-views--general-availability) a Dynamics 365 2020-as kiadási hullámának 2. csomagjában
+- [A mentett nézeteket teljes mértékben kihasználó képernyők létrehozása](../fin-ops-core/dev-itpro/user-interface/understanding-saved-views.md)
 
 ### <a name="human-resources-application-in-teams"></a>Human Resources alkalmazás a Teamsben
 
 Az alkalmazottak megtekinthetik és kérhetik a munkából való távollétet a Microsoft Teams alkalmazásban. Ezek egy robottal lépnek interakcióba a szabadságkérelmek létrehozásához. További tájékoztatás:
 
-- [Alkalmazott szabadsága és távolléte a Microsoft Teams rendszerben](https://docs.microsoft.com/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) a Dynamics 365 2020-as kiadási hullámának 1. csomagjában
-- [Human Resources alkalmazás a Teamsben](https://go.microsoft.com/fwlink/?linkid=2127841)
+- [Alkalmazott szabadsága és távolléte a Microsoft Teams rendszerben](/dynamics365-release-plan/2020wave1/dynamics365-human-resources/employee-leave-absence-experience-teams) a Dynamics 365 2020-as kiadási hullámának 1. csomagjában
+- [Human Resources alkalmazás a Teamsben](./hr-admin-teams-leave-app.md)
 
 ### <a name="dmf-entity-available-for-accrual-suspensions"></a>A DMF entitás elérhető az elhatárolás-felfüggesztésekhez
 
@@ -174,7 +171,7 @@ Előfordulhat, hogy a **Funkciókezelés** munkaterületen olyan általánosan e
 ## <a name="see-also"></a>Lásd még
 
 [Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
 

@@ -2,11 +2,9 @@
 title: Készpénzcímletek konfigurálása a pénztár (POS) számára
 description: A háttérirodában meghatározható a pénztárosok, értékesítési munkatársak és a vezetők által az üzletben levő POS modulban használandó bankjegyek és érmék készpénzcímlete.
 author: jblucher
-manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailStoreCashDeclarationTable
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: b2fb6676f45bc7efa4652de60e829b507292ac37
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 0ff4eb5bc7c5e2c0192a5349219301b26e479ac6be978eb05063b68f348b4e55
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213186"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6743458"
 ---
 # <a name="configure-cash-denominations-for-the-point-of-sale-pos"></a>Készpénzcímletek konfigurálása a pénztár (POS) számára
 
@@ -35,7 +33,7 @@ A háttérirodában meghatározható a pénztárosok, értékesítési munkatár
 
 A címletek üzletenként állíthatók be a **Beállítás** \> **Készpénzelszámolás** lehetőségnél az üzlet tulajdonságainak oldalán.
 
-![Készpénzelszámolás beállítás](./media/image1-denomination.png)
+![Készpénzelszámolás beállítás.](./media/image1-denomination.png)
 
 Címlet meghatározása:
 
@@ -43,7 +41,7 @@ Címlet meghatározása:
 1. Adja meg a típust (érme vagy bankjegy).
 1. Adja meg az összeget (érték).
 
-![Készpénzelszámolás címletek szerint oldal](./media/image2-denomination.png)
+![Készpénzelszámolás címletek szerint oldal.](./media/image2-denomination.png)
 
 ## <a name="configure-the-functionality-profile"></a>A funkcióprofil konfigurálása
 

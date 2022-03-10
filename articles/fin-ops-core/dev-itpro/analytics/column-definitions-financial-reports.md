@@ -2,11 +2,9 @@
 title: Oszlopdefiníciók a pénzügyi jelentésben
 description: Ez a cikk az oszlopdefiníciókról nyújt információkat. Egy oszlopdefiníció egy jelentés-összetevő, amely meghatározza az oszlopok tartalmait egy jelentésben.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 10/10/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 820604fac96f5c86be3f7206ca88b3eb1fc6c32a
-ms.sourcegitcommit: 5192cfaedfd861faea63d8954d7bcc500608a225
-ms.translationtype: HT
+ms.openlocfilehash: 199dceb91195a3488dd269786a8cd59811d8d828db686c3636e3d6320c77bbeb
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "5093109"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729095"
 ---
 # <a name="column-definitions-in-financial-reports"></a>Oszlopdefiníciók a pénzügyi jelentésben
 
@@ -598,3 +596,6 @@ Egy oszlopban szereplő összeget időszakok egy megadott számával oszhat el. 
 [Sordefiníciók a pénzügyi jelentéstervezőben](row-definitions-financial-reporting.md)
 
 [Speciális formázási beállítások a pénzügyi jelentésben](advanced-formatting-options-financial-reporting.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

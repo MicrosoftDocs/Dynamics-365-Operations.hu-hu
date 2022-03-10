@@ -1,12 +1,10 @@
 ---
 title: Javításkezelés
 description: A problémákat csoportokba rendszerezheti, így hozzájárul ahhoz, hogy a korábban már bevált megoldások javaslatként elérhetők legyenek.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAConditionTable, SMASymptomArea, SMADiagnosisArea, SMAResolutionTable, SMARepairStage
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8ebb9833be5e51fe59e9895e67cd8e55058078aa
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 1456c65f28d2a1d06497ddde81c9e68cc078c061
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001348"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567919"
 ---
 # <a name="repair-management"></a>Javításkezelés       
 
@@ -37,15 +35,11 @@ A javításkezeléshez a roblémákat csoportokba rendszerezheti. Ez hozzájáru
 
 A következő beállítási űrlapok segítségével adja meg a tünetek, a diagnózis és a megoldás meghatározásához használt adatokat a javításhoz.
 
-1.  Kattintson a **Szolgáltatáskezelés**\>**Beállítás**\>**Javítás**\>**Feltételek** elemre.
-
-2.  Kattintson a **Szolgáltatáskezelés**\>**Beállítás**\>**Javítás**\>**Tünetterületek** elemre.
-
-3.  Kattintson a **Szolgáltatáskezelés**\>**Beállítás**\>**Javítás**\>**Diagnózisterületek** elemre.
-
-4.  Kattintson a **Szolgáltatáskezelés**\>**Beállítás**\>**Javítás**\>**Megoldások** elemre.
-
-5.  Kattintson a **Szolgáltatáskezelés**\>**Beállítás**\>**Javítás**\>**Javítási állapotok** elemre.
+- **Szolgáltatáskezelés** \> **Beállítás** \> **Javítás** \> **Feltételek**.
+- **Szolgáltatáskezelés** \> **Beállítás** \> **Javítás** \> **Tünetterületek**.
+-  **Szolgáltatáskezelés** \> **Beállítás** \> **Javítás** \> **Diagnózisterületek**.
+- **Szolgáltatáskezelés** \> **Beállítás** \> **Javítás** \> **Megoldások**.
+- **Szolgáltatáskezelés** \> **Beállítás** \> **Javítás** \> **Javítási állapotok**.
 
 ## <a name="symptoms-and-conditions"></a>Tünetek és feltételek
 
@@ -81,19 +75,19 @@ A javítási folyamat minden lépéséhez létrehozhat külön javítási sort.
 
 ## <a name="create-a-repair-line-on-a-service-order"></a>Javítási sor létrehozása szervizrendeléshez
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
+1.  Lépjen ide: **Szolgáltatáskezelés** \> **Közös** \> **Szervizrendelések** \> **Szervizrendelések**.
 
 2.  Válassza ki azt a szervizrendelést, amelyik a javítást igénylő szolgáltatási objektumot tartalmazza.
 
-3.  Kattintson a **Javítás** \>**Javítási sorok** elemre a **Javítási sorok** képernyő megnyitásához.
+3.  Válassza a **Javítás** \> **Javítási sorok** elemet a **Javítási sorok** képernyő megnyitásához.
 
-4.  Új sor létrehozásához nyomja le a CTRL+N billentyűkombinációt.
+4.  Válassza ki az **Új** lehetőséget egy új sor létrehozásához.
 
 5.  Válasszon ki egy szolgáltatási objektumot. Bármely szolgáltatási objektum választható, amelyiknél be van állítva objektumkapcsolat a szervizrendeléshez.
 
 6.  Válassza ki a javítási sorban az odavágó, előre beállított tüneteket, diagnózis- és végrehajtási értékeket, és ha szükséges, a **Megjegyzés** fülre kattintva hozzon létre jegyzetet a javítási sorhoz.
 
-7.  A CTRL+S billentyűkombinációval mentse az új javítási sort. A **Javítási sorok** képernyő **Általános** lapjának **Létrehozás dátuma és időpontja** mezője frissül a mentés dátumával.
+7.  Az új javítási sor mentéséhez válassza a **Mentés** parancsot. A **Javítási sorok** képernyő **Általános** lapjának **Létrehozás dátuma és időpontja** mezője frissül a mentés dátumával.
 
 ## <a name="tracking-progress-and-resolving-a-repair-issue"></a>Nyomon követési állapot és egy javítási feladat megoldása
 
@@ -112,3 +106,6 @@ Amikor egy javítási feladat elkészül, lezárhatja a javítási sort. A javí
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

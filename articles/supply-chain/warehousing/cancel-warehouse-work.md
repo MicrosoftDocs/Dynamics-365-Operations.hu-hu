@@ -1,26 +1,24 @@
 ---
 title: A kivétel kezelésére vonatkozó raktári munka visszavonása
 description: Ez a témakör a Munka érvénytelenítése funkciót mutatja be, amellyel a raktár felügyelői kezelhetik a blokkolt munkát.
-author: omulvad
-manager: tfehr
+author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSTroubIeshootingSeIfService, WHSTroubleshootingSelfService
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ae4062401cd5be2371c45642b78bf3708b04f664
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: af0c147eefbfe22cb6b6d531f514e6f293d66689
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5001198"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572409"
 ---
 # <a name="cancel-warehouse-work-for-exception-handling"></a>A kivétel kezelésére vonatkozó raktári munka visszavonása
 
@@ -44,3 +42,6 @@ A munka visszavonása funkcióval csak az **Értékesítés**, **Átmozgatási p
 A munka blokkolásának feloldásához a rendszer törli a hátralévő munkasorokat, és rögzíti a munkaazonosítóhoz társított felhasználó által megadott raktári adatokat. A program ezután folytatja az érintett cikkmennyiséget magába foglaló szokásos raktárkezelési műveleteket.
 
 Ha azt szeretné, hogy az érintett elem egy meghatározott helyre kerüljön a munka érvénytelenítése után, a felhasználónak egy készletmozgatás mennyiségi helyesbítési műveletét kell használnia egy mobileszközön.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -5,23 +5,22 @@ author: laneswenka
 ms.date: 08/03/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 060734154607263b5fed80b21fc9355b513ea26e3b1be88498310905531dceaa
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729043"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063672"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services szolgáltatásból
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ez a témakör bemutatja, hogyan lehet engedélyezni a kettős írást a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
 
@@ -29,8 +28,8 @@ Ez a témakör bemutatja, hogyan lehet engedélyezni a kettős írást a Microso
 
 A következő témakörökben leírtak szerint végre kell hajtani a Power Platform-integrációt:
 
-+ [Power Platform-integráció – engedélyezés a környezet telepítése során](../../power-platform/overview.md#enable-during-environment-deployment)
-+ [Power Platform-integráció – beállítás a környezet telepítése után](../../power-platform/overview.md#set-up-after-environment-deployment)
++ [Power Platform-integráció – engedélyezés a környezet telepítése során](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
++ [Power Platform-integráció – engedélyezés a környezet telepítése után](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
 
 ## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Kettős írás beállítása az új Dataverse-környezetekhez
 
@@ -54,22 +53,22 @@ A kettős írás **Környezet részletes adatai** LCS-oldalról történő beál
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Összekapcsolás Power Platform-környezettel.":::
 
-8. Ha befejeződött az összekapcsolás, megjelenik egy hivatkozás. A hivatkozásra kattintva jelentkezzen be a Finance and Operations-környezet kettős íráshoz használatos felügyeleti területére. Itt beállíthatja az entitások leképezését.
+8. Ha befejeződött az összekapcsolás, megjelenik egy hivatkozás. A hivatkozás segítségével jelentkezzen be a Finance and Operations környezet kettős írású adminisztrációs területére. Itt beállíthatja az entitások leképezését.
 
 ## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Kettős írás beállítása meglévő Dataverse-környezetekhez
 
 Ha meglévő Dataverse-környezetben szeretne kettős írást beállítani, [támogatási jegyet](../../lifecycle-services/lcs-support.md) kell küldenie a Microsoftnak. A jegynek a következőket kell tartalmaznia:
 
-+ A Finance and Operations-környezet azonosítója.
++ Az Ön Finance and Operations környezeti azonosítója.
 + A környezet neve a Lifecycle Services szolgáltatásból.
 + A Dataverse-szervezetazonosító, vagy a Power Platform-környezetazonosító a Power Platform Adminisztrációs központjából. A jegyben kérje, hogy az azonosító legyen a Power Platform-integrációhoz használt példány.
 
 > [!NOTE]
-> A környezetek nem csatolhatók le az LCS használatával. Egy környezet kapcsolatának megszüntetése érdekében nyissa meg az **Adatintegráció** munkaterületet a Finance and Operations környezetben , majd válassza a **Csatolás megszüntetése** parancsot.
+> A környezetek nem csatolhatók le az LCS használatával. Egy környezet leválasztásához nyissa meg a **Adatintegráció** munkaterületet a Finance and Operations környezetben, majd válassza ki **Leválasztás**.
 
 ## <a name="linking-mismatch"></a>Kapcsolódási eltérés
 
-Lehetséges, hogy az Ön LCS-környezete egy Dataverse példányhoz, míg a kétírásos környezet egy másik Dataverse példányhoz kapcsolódik. Ez a kapcsolódási eltérés váratlan viselkedést okozhat, és a végén a rendszer rossz környezetbe küldhet adatokat. A kettős íráshoz ajánlott a Power Platform integráció részeként létrehozott környezetet használni, és hosszú távon ez lesz az egyetlen módja a környezetek közötti kapcsolat létrehozásának.
+Lehetséges, hogy az Ön LCS-környezete egy Dataverse példányhoz, míg a kétírásos környezet egy másik Dataverse példányhoz kapcsolódik. Ez a kapcsolódási eltérés váratlan viselkedést okozhat, és a végén a rendszer rossz környezetbe küldhet adatokat. A kettős íráshoz a Power Platform integráció részeként létrehozott környezet használata ajánlott, és hosszú távon ez lesz az egyetlen módja a környezetek közötti kapcsolat létrehozásának.
 
 Ha a környezetben nem egyezik a kapcsolat, az LCS figyelmeztetést jelenít meg a környezet adatlapján, amely a következőhöz hasonló: "A Microsoft észlelte, hogy a környezet a kettős írás segítségével a Power Platform integrációban megadottól eltérő célhoz van kapcsolva, ami nem ajánlott":
 
@@ -78,6 +77,6 @@ Ha a környezetben nem egyezik a kapcsolat, az LCS figyelmeztetést jelenít meg
 Ha ezzel a hibával találkozik, az Ön igényei alapján két lehetősége van:
 
 + [A kétírásos környezetek összekapcsolásának feloldása és újbóli összekapcsolása (összekapcsolás visszaállítása vagy módosítása)](relink-environments.md#scenario-reset-or-change-linking) az LCS-környezet adatlapján megadottak szerint. Ez az ideális megoldás, mert a Microsoft támogatása nélkül is futtatható.  
-+ Ha a kapcsolatot továbbra is kettős írással szeretné fenntartani, kérhet segítséget a Microsoft ügyfélszolgálatától, hogy a Power Platform integrációt úgy módosítsa, hogy az a meglévő Dataverse környezetet használja az előző szakaszban leírtak szerint.  
++ Ha a kapcsolatot továbbra is kettős írással szeretné fenntartani, kérhet segítséget a Microsoft ügyfélszolgálattól a Power Platform integráció módosításához, hogy a meglévő Dataverse környezetet használja az előző szakaszban dokumentáltak szerint.  
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

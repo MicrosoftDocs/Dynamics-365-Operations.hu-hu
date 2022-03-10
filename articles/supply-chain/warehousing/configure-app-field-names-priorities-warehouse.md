@@ -1,7 +1,7 @@
 ---
 title: A Raktárkezelés mobilalkalmazás mezőinek konfigurálása
 description: Ez a témakör ismerteti, hogyan történik a Raktárkezelés mobilalkalmazásban szereplő mezők neveinek és prioritásainak meghatározása és konfigurálása.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: 269434
 ms.assetid: 6cf3d7da-29bb-4d3d-aaf5-544ca9cc2980
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bc224d3fd6cf5b111f61066202090f10ba4a7e8a
-ms.sourcegitcommit: ff09736563d3cd2bc74c7664edd1767b218401cb
-ms.translationtype: HT
+ms.openlocfilehash: 8c9c1d921f68538d5b84db16b1e88e28147e6b41
+ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "6189250"
+ms.lasthandoff: 12/09/2021
+ms.locfileid: "7902296"
 ---
 # <a name="configure-fields-for-the-warehouse-management-mobile-app"></a>A Raktárkezelés mobilalkalmazás mezőinek konfigurálása
 
@@ -50,7 +50,7 @@ Amikor a Warehousing alkalmazást a mobileszközön használja, konfigurálható
 <tbody>
 <tr class="odd">
 <td>Preferált beviteli mód</td>
-<td>Ez a beállítás határozza meg, hogy egy keresési mező vagy egy kézi beviteli mező jelenjen-e meg a kijelölt mezőnévnél. Ez a mezők vonalkódhasználaton alapuló megkülönböztetéséhez hasznos. <strong>Megjegyzés:</strong> azon mezőneveknél, amelyeknél az elsődleges beviteli mód beállítása <strong>Beolvasás</strong>, adatokat manuálisan is megadhat, ha a vonalkód nem olvasható vagy sérült.</td>
+<td>Ez a beállítás határozza meg, hogy egy keresési mező vagy egy kézi beviteli mező jelenjen-e meg a kijelölt mezőnévnél. Ez hasznos a mezők megkülönböztetéséhez attól függően, hogy a mezőhöz vonalkódot használnak-e. <strong>Megjegyzés:</strong> Azon mezőnevek esetében, amelyeknél az előnyben részesített beviteli mód <strong>Beolvasás</strong> beállítása van megadva, manuálisan is megadhatja az adatokat, ha a vonalkód nem olvasható vagy sérült.</td>
 </tr>
 <tr class="even">
 <td>Beviteltípus</td>

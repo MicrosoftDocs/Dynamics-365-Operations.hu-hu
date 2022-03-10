@@ -2,11 +2,9 @@
 title: Munkasor adatai
 description: Ez a témakör a Munkasor adatai oldalról nyújt tájékoztatást, amely a rendszer egyes munkasorainak átfogó, csoportosítható és szűrhető listáját tartalmazza.
 author: mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkLocationChange, WHSWorkLineDetails
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 0cb182242a42443d5894b864523fc5f5fea9c5b1
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.8
+ms.openlocfilehash: f37d161bf3d27e15eaaf1230c05270f3769f9901
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5245106"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778281"
 ---
 # <a name="work-line-details"></a>Munkasor adatai
 
@@ -30,7 +28,7 @@ A **Munkasor adatai** oldal a rendszer egyes munkasorainak átfogó, csoportosí
 
 ## <a name="turn-on-the-work-line-details-feature"></a>A munkasor adatai funkció bekapcsolása
 
-A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkció kezelése** munkaterületen a funkció a következő módon van listázva:
+Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A rendszergazdák a Szolgáltatáskezelés lapon ellenőrizhetik a funkció állapotát, és szükség esetén engedélyezhetik vagy [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) letilthatják azt. Itt a funkció a következőként szerepel:
 
 - **Modul:** *Raktárkezelés*
 - **Szolgáltatás neve:** *Munkasor adatai*

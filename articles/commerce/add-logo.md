@@ -2,11 +2,9 @@
 title: Embléma hozzáadása
 description: Ez a témakör azt mutatja be, hogyan adhat hozzá logót a webhelyéhez a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: bicyclingfool
-manager: AnnBe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application user
@@ -18,20 +16,18 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 073c3d6f8d5ee88d51efb41f6b9c1a204b82fa12
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 583462755838e51b4c988b8da057dbeeee773e0b
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980307"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964579"
 ---
 # <a name="add-a-logo"></a>Embléma hozzáadása
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör azt mutatja be, hogyan adhat hozzá logót a webhelyéhez a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 Amikor felépíti a webhelyét, valószínűleg az első dolgai egyike lesz hozzáadni a vállalata vagy márkája logóját a webhely fejlécéhez. A Dynamics 365 Commerce online modulkönyvtár tartalmaz egy modult ennek a megkönnyítéséhez.
 
@@ -65,11 +61,12 @@ A frissített fejléctöredék közzététele után a webhely összes olyan olda
 
 [Kedvencek ikon hozzáadása](add-favicon.md)
 
-[Üdvözlő üzenet hozzáadása](add-welcome-message.md)
-
 [Szerzői jogi értesítés hozzáadása](add-copyright-notice.md)
 
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
 
 [Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

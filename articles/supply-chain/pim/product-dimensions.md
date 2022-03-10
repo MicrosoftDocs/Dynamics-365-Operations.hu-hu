@@ -2,16 +2,13 @@
 title: Termékdimenziók
 description: 'Öt termékdimenzió létezik: szín, konfiguráció, méret, stílus és verzió. A termékdimenziókat dimenziócsoportokban kombinálhatja és hozzárendelheti a dimenziócsoportokat az alaptermékekhez. A cikkdimenziók kombinációi meghatározzák a termékváltozatokat is.'
 author: t-benebo
-manager: tfehr
 ms.date: 09/22/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EcoResProductDimension, EcoResProductDimensionGroup, EcoResProductMasterDimension, RetailEcoResColor, RetailEcoResSize, RetailEcoResStyle, EcoResVersionNameLookup, RetailStyleGroupTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations, Retail
 ms.custom: 19171
 ms.assetid: 81fa3709-4ab8-4fbf-9806-359892a05985
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Retail
 ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: bdfd9482d30bd65cf84fae032df78e1243e05239
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 46079daafc744421abcbdf0a3539428f2a39f13c
+ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429291"
+ms.lasthandoff: 12/14/2021
+ms.locfileid: "7920523"
 ---
 # <a name="product-dimensions"></a>Termékdimenziók
 
@@ -81,7 +78,7 @@ Egy vállalat farmernadrágokat értékesít. A *Farmernadrág* cikk a szín és
 
 ## <a name="the-version-product-dimension"></a>A verzió termékdimenzió
 
-A verzió olyan termékdimenzió, amellyel könnyebb karbantartani és nyomon követni a termék különböző verzióit az ellátási láncon keresztül. A verziók nyomon követése elengedhetetlen az olyan gyártók sikeréhez, amelyek esetében a termékéletciklus folyamatosan zsugorodik, a minőségi és megbízhatósági követelmények egyre komolyabbak lesznek, valamint a termék biztonságossága egyre fontosabb.
+A verzió olyan termékdimenzió, amellyel könnyebb karbantartani és nyomon követni a termék különböző verzióit az ellátási láncon keresztül. A verziókövetés rendkívül fontos az olyan gyártók sikerességéhez, amelyek a termék életciklusának folyamatos méretével, a jobb minőséggel és megbízhatósággal kapcsolatos követelmények területén tevékenykednek, és még inkább a termékbiztonságra fókuszálnak.
 
 Normál termékdimenzióként a verzió a meglévő termékdimenziókhoz (méret, stílus, szín, konfiguráció) hasonlóan viselkedik. Ennek megfelelően a termékverziók nyomon követése mellett másra is használható.
 
@@ -107,7 +104,7 @@ A verzió dimenzióval való kompatibilitáshoz szükséges megoldások tesztel�
     - PCVariantConfiguration::findByProductMasterAndDimensions
 
 1. **Leképezések:** ha bármelyik leképezés használ készletdimenziót, akkor az ezeknek a leképezéseknek a kapcsolódó objektumkapcsolat-leképezését úgy kell frissíteni, hogy tartalmazza a verzió dimenziót. A kiterjesztett modellben vagy a táblabővítményekben keresse meg azokat a táblákat, amelyeknél a mezők készletdimenziókat tartalmaznak.
-1. **Microsoft Dynamics 365 Commerce-funkciók:** miután be van kapcsolta, a verzió dimenzió megjelenik a Dynamics 365 Supply Chain Management Commerce-specifikus kódjában. A Commerce csatorna-adatbázisa és a pénztári vagy e-kereskedelmi alkalmazások azonban még nem támogatják a verzió dimenziót. Ezek a Commerce-specifikus alkalmazások nem támogatják azokat a felhasználókat, akik értékesítenek/szállítanak vagy visszaküldenek/fogadnak készletet verziódimenzió szerint. A készlet elérhetőségének keresési funkciói nem határozzák meg a készletet verziódimenzió szerint a Commerce alkalmazásokban. Ez a viselkedés hasonlít a konfiguráció dimenzió Commerce-en belüli aktuális viselkedésére.
+1. **Microsoft Dynamics 365 Commerce-funkciók:** Bekapcsolás után a verziódimenzió megjelenik a Dynamics 365 Supply Chain Management Commerce-specifikus kódjában. A Commerce csatorna-adatbázisa és a pénztári vagy e-kereskedelmi alkalmazások azonban még nem támogatják a verzió dimenziót. Ezek a Commerce-specifikus alkalmazások nem támogatják azokat a felhasználókat, akik értékesítenek/szállítanak vagy visszaküldenek/fogadnak készletet verziódimenzió szerint. A készlet elérhetőségének keresési funkciói nem határozzák meg a készletet verziódimenzió szerint a Commerce alkalmazásokban. Ez a viselkedés hasonlít a konfiguráció dimenzió Commerce-en belüli aktuális viselkedésére.
 
 #### <a name="turn-on-the-version-dimension"></a>A verzió dimenzió bekapcsolása
 
@@ -122,7 +119,7 @@ A verzió dimenziót a használat előtt be kell kapcsolnia a rendszerben. A fel
 
 ### <a name="areas-where-the-version-dimension-isnt-supported"></a>Területek, ahol a verzió dimenzió nem támogatott
 
-A következő területek nem támogatják a verzió dimenziót, mivel ennek a dimenziónak a bevezetése kompatibilitástörő változásokat okozna:
+A következő területek nem támogatják a verziódimenziót (továbbra is használhatja ezeket a területeket, de verziószámmal rendelkező termékeket – a verziódimenziót is használó termékeket – nem adhat hozzá). Verziószámmal rendelkező cikket nem lehet például szállítói katalógushoz hozzáadni. Ez azért van így, mert ha ezen területekhez verziódimenzióval rendelkező termékeket ad hozzá, akkor az kompatibilitástörő változásokat idézne elő.
 
 - Költségobjektum havi kimutatása
 - Költségobjektum-kimutatás gyorsítótára
@@ -146,3 +143,6 @@ A verzió dimenzió a többi termékdimenzióhoz hasonlóan működik. A sajáto
 
 > [!IMPORTANT]
 > Ha bekapcsolja és használja a verzió dimenziót, akkor a készletdimenziókra hivatkozó bizonyos megoldások nem a várt módon működhetnek. A problémák megerősítéséhez és javításához forduljon az érintett megoldás független szoftverszállítójához (ISV). További információ: [A verzió dimenzió engedélyezése](#enable-version-dim).
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

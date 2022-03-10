@@ -1,12 +1,10 @@
 ---
 title: Projektlista szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management projektjeinek a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 03/13/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -15,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: 12708b35be87baf1ad13296b56507f3246f96394
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: b825e2fce61e96b963ba0d41f8db49ca9ba646f6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5010872"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571593"
 ---
 # <a name="synchronize-project-list-from-supply-chain-management-to-field-service"></a>Projektlista szinkronizálása a Supply Chain Management alkalmazásból a Field Service alkalmazásba
 
@@ -31,7 +29,7 @@ ms.locfileid: "5010872"
 
 Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management projektjeinek a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 
-[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között](./media/FSProjectOW.png)](./media/FSProjectOW.png)
+[![Üzleti folyamatok szinkronizálása a Supply Chain Management és a Field Service között.](./media/FSProjectOW.png)](./media/FSProjectOW.png)
 
 ## <a name="templates-and-tasks"></a>Sablonok és feladatok
 A következő sablonokat és alapul szolgáló feladatokat használják a projektszinkronizálás futtatásához a Supply Chain Management és a Field Service között:
@@ -65,4 +63,7 @@ A változáskövetés engedélyezése az Adatentitás projektekhez.
 
 ### <a name="projects-supply-chain-management-to-field-service-projects"></a>Projektek (Supply Chain Management és Field Service között): Projektek
 
-[![Sablonleképezés az adatintegrátorban](./media/FSProject1.png)](./media/FSProject1.png)
+[![Sablonleképezés az adatintegrátorban.](./media/FSProject1.png)](./media/FSProject1.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

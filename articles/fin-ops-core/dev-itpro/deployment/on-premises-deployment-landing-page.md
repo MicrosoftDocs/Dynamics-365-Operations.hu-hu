@@ -2,7 +2,7 @@
 title: Helyszíni telepítés kezdőlapja
 description: Ez a témakör az on-premises telepítésekhez nyújt információkat és hivatkozásokat.
 author: sericks007
-ms.date: 03/22/2021
+ms.date: 07/01/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: ef19a154b4e18246c88adea48ee2709af17f039f
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
-ms.translationtype: HT
+ms.openlocfilehash: 93ed4e81db18cd02c097ff188003569e7bb391c511fd93fcab0961c14029dc96
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6338930"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6712568"
 ---
 # <a name="on-premises-deployment-home-page"></a>Helyszíni telepítés kezdőlapja
 
@@ -33,6 +33,7 @@ Telepíthet Dynamics 365 Finance  + Operations (helyi) alkalmazást. Amikor egy 
 - [Helyszíni telepítés áttekintése](on-premises-overview.md)
 - [Helyszíni telepítések tervezése és előkészítése](plan-onprem-deployment.md)
 - [Helyszíni telepítések rendszerkövetelményei](../../fin-ops/get-started/system-requirements-on-prem.md)
+- [Microsoft Dynamics 365 Finance + Műveletek (on-premises) támogatott szoftver](onprem-compatibility.md)
 - [Hardverméretezési követelmények helyszíni környezetekben](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [A Finance + Operations (on-premises) megvásárlása](../../fin-ops/get-started/purchase-on-premises.md)
 - [Felhőalapú és helyszíni szolgáltatások összehasonlítása](../../fin-ops/get-started/cloud-prem-comparison.md)

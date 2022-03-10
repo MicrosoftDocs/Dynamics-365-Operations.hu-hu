@@ -2,28 +2,25 @@
 title: Pénzügyi dimenziók hozzáadása a pénzügyi igazgatói munkaterülethez
 description: Ez a témakör bemutatja a pénzügyi dimenziók hozzáadását a pénzügyi igazgatói munkaterülethez, így felhasználhatók a főkönyvi és költségvetési jelentésekhez.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 3817c6688339735c7478e85786efe15bd2372c91
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 3acff8a0cf36ee6958effd9c5384895df20c180499437c43feddce31c884dbbf
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729582"
 ---
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Pénzügyi dimenziók hozzáadása a pénzügyi igazgatói munkaterülethez
 
@@ -48,11 +45,14 @@ Ez a témakör bemutatja a pénzügyi dimenziók hozzáadását a pénzügyi iga
 11. Módosítsa a **Keresztszűrő iránya** értéket **Egyetlen** lehetőségre.
 12. Jelölje be a **Kapcsolat aktívvá tétele** és a **Hivatkozási integritás feltételezése** pontokat, válassza az **OK** lehetőséget, majd a **Lezárás** lehetőséget.
 
-    [![Kapcsolat létrehozása](./media/Create-relationship.png)](./media/Create-relationship.png)
+    [![Kapcsolat létrehozása.](./media/Create-relationship.png)](./media/Create-relationship.png)
 
 13. A **Mezők** listában megjelenik a tábla és a rendelkezésre álló pénzügyi dimenziók. Húzza át a kívánt pénzügyi dimenziókat a jelentésszintű szűrőkhöz.
 14. Mentse el a módosításokat.
 15. Az alkalmazásobjektum-fa (AOT), kattintson a jobb gombbal a projektre, és válassza a **Szinkronizálás** lehetőséget.
 16. Hozza létre a projektet, és nyissa meg az alkalmazást az eredmények megtekintéséhez.
 
-    [![Kész munkaterület](./media/workspace.png)](./media/workspace.png)
+    [![Kész munkaterület.](./media/workspace.png)](./media/workspace.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,81 +1,119 @@
 ---
-title: Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
-description: Ebben a témakörben részletes leírást találhat a Dynamics 365 Commerce tranzakció konzisztencia-ellenőrzésre használatos funkciójáról.
-author: josaw1
-manager: AnnBe
-ms.date: 10/07/2020
+title: Üzleti tranzakciók ellenőrzése kimutatásszámításhoz
+description: Ez a témakör az üzleti tranzakciók ellenőrzésével kapcsolatos funkciókat ismerteti a Microsoft Dynamics 365 Commerce alkalmazásban.
+author: analpert
+ms.date: 01/31/2022
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
+ms.reviewer: v-chgriffin
 ms.custom: ''
 ms.assetid: ed0f77f7-3609-4330-bebd-ca3134575216
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: josaw
+ms.author: analpert
 ms.search.validFrom: 2019-01-15
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 3c7ca41b9e8a4c3127c98c756348959530a87996
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
+ms.openlocfilehash: f51b1f39aa212fe8587761721194db7791bec5bc
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4459129"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087449"
 ---
-# <a name="retail-transaction-consistency-checker"></a>Kiskereskedelmi tranzakció konzisztencia-ellenőrzése
+# <a name="validate-store-transactions-for-statement-calculation"></a>Üzleti tranzakciók ellenőrzése kimutatásszámításhoz
 
 [!include [banner](includes/banner.md)]
 
-Ebben a témakörben részletes leírást találhat a Microsoft Dynamics 365 Commerce tranzakció konzisztencia-ellenőrzésre használatos funkciójáról. A konzisztencia-ellenőrző azonosítja és elkülöníti az inkonzisztens tranzakciókat, mielőtt a kimutatásfeladási folyamat kezeli őket.
+Ez a témakör az üzleti tranzakciók ellenőrzésével kapcsolatos funkciókat ismerteti a Microsoft Dynamics 365 Commerce alkalmazásban. Az ellenőrzési folyamat a feladási hibákat okozó tranzakciókat azonosítja és jelöli meg, mielőtt a kimutatásfeladási-folyamat feldolgozná azokat.
 
-Egy kimutatás feladása során a szolgáltatásban a feladás sikertelen lehet, ha inkonzisztens adatok találhatók a kereskedelmi tranzakciók táblájában. Az adatokkal kapcsolatos problémákat a pénztár (POS) alkalmazás előre nem látható problémái okozhatják, vagy ha a tranzakciók importálása nem megfelelően történt egy külső fél pénztárrendszeréből. Az alábbiakban az inkonzisztenciák megjelenésére mutatunk be példákat: 
+Amikor kimutatást próbál feladni, az ellenőrzési folyamat sikertelen lehet, ha inkonzisztens adatok találhatók a kereskedelmi tranzakciók tábláiban. Íme néhány példa olyan tényezőkre, amelyek a ezeket az inkonzisztenciákat okozhatják:
 
 - A fejléctáblában szereplő tranzakciós végösszeg nem egyezik meg a sorokban található tranzakciók összegével.
-- A fejléctábla sorainak száma nem egyezik meg a tranzakciós tábla sorainak számával.
+- A fejléctáblában megadott cikkek száma nem egyezik meg a tranzakciós táblában lévő cikkek számával.
 - A fejléctáblában szereplő adók nem egyeznek meg a sorokban szereplő adó összegével. 
 
-Ha a kimutatásfeladási folyamat feldolgozza az inkonzisztens tranzakciókat, akkor inkonzisztens értékesítési számlák és fizetési naplók keletkeznek, és emiatt a teljes kimutatásfeladási folyamat sikertelen lesz. Ha a kimutatásokat ebből az állapotból szeretné helyreállítani, ahhoz számos tranzakciós táblát érintő, komplex adathelyesbítési művelet szükséges. A tranzakció konzisztencia-ellenőrzője megelőzi az ehhez hasonló problémák létrejöttét.
+Ha a kimutatásfeladási folyamat feldolgozza az inkonzisztens tranzakciókat, akkor értékesítési számlák és fizetési naplók keletkeznek, és emiatt a feladási folyamat sikertelen lehet. Az **Üzleti tranzakciók ellenőrzése** folyamat kiküszöböli ezeket a problémákat, azáltal, hogy csak a tranzakcióellenőrzési szabályoknak megfelelő tranzakciókat adja át a tranzakciókimutatás számítási folyamatának.
 
-Az alábbi ábrán a tranzakció konzisztencia-ellenőrzőjével végrehajtott feladási folyamat látható.
+A következő ábra a tranzakciók feltöltésére, a tranzakciók ellenőrzésére, a tranzakció-kimutatások kiszámítására és feladására, valamint a pénzügyi kimutatások nap végi kiszámítására és feladására vonatkozó ismétlődő napi folyamatokat mutatja be.
 
-![Kimutatás feladási folyamata a tranzakció konzisztenciájának ellenőrzőjével](./media/validchecker.png "Kimutatás feladási folyamata a kiskereskedelmi tranzakció konzisztenciájának ellenőrzőjével")
+![A tranzakciók feltöltésére, a tranzakciók ellenőrzésére, a tranzakció-kimutatások kiszámítására és feladására, valamint a pénzügyi kimutatások nap végi kiszámítására és feladására vonatkozó ismétlődő napi folyamatokat bemutató ábra](./media/valid-checker-statement-posting-flow.png)
 
-Az **Üzleti tranzakciók ellenőrzése** kötegfolyamat ellenőrzi a kereskedelmi tranzakciós táblázatok konzisztenciáját az alábbi esetekben.
+## <a name="store-transaction-validation-rules"></a>Üzleti tranzakció ellenőrzési szabályai
 
-- **Vevői számla** – Ellenőrzi, hogy a kereskedelmi tranzakciós táblában szereplő vevői számla létezik a HQ-ban a vevői alapadatok között.
-- **Sorok száma** – Ellenőrzi, hogy a tranzakciós fejléctáblában rögzített sorok száma megegyezik az értékesítési tranzakciók táblájában található sorok számával.
-- **Az ár tartalmazza az adót** – Ellenőrzi, hogy az **Ár tartalmazza az adót** paraméter konzisztens-e a tranzakció soraiban, és az értékesítési soron szereplő ár egyezik-e az adót tartalmazó ár és az adómentesség konfigurációjával.
-- **Kifizetett összeg** – Ellenőrzi, hogy a kifizetési rekordok megegyeznek-e a fejlécben található kifizetett összeggel, miközben figyelembe veszik a főkönyvben szereplő fillérkerekítési konfigurációt.
-- **Bruttó összeg** – Ellenőrzi, hogy a fejlécben szereplő bruttó összeg megfelel-e a sorokban található nettó összegek és az adó összegének összesítésével, miközben figyelembe veszi a főkönyvben szereplő fillérkerekítési konfigurációt is.
-- **Nettó összeg** – Ellenőrzi, hogy a fejlécben szereplő nettó összeg megfelel-e a sorokban található nettó összegeknek, miközben figyelembe veszi a főkönyvben szereplő fillérkerekítési konfigurációt is.
-- **Alulfizetés/Túlfizetés** – Ellenőrzi, hogy a fejlécben található bruttó összeg és a kifizetett összeg közti különbség nem haladja meg a maximális alulfizetés/túlfizetés konfigurációját, miközben figyelembe veszi a főkönyvben szereplő fillérkerekítési konfigurációt.
-- **Engedmény összege** – Ellenőrzi, hogy az engedménytáblákban szereplő engedmény összege és a kiskereskedelmi tranzakció sorában szereplő engedmény összege konzisztens-e, és hogy a fejlécben található engedmény összege egyenlő-e a sorok engedményeinek összegével, miközben figyelembe veszi a főkönyvben szereplő fillérkerekítési konfigurációt.
-- **Sorengedmény** – Ellenőrzi, hogy a tranzakciós sorban található sorengedmény megegyezik-e az adott tranzakciós sorhoz kapcsolódó engedménytábla összes sorának összegével.
-- **Ajándékutalvány-cikk** – A Commerce alkalmazás nem támogatja az ajándékutalvány-cikkek visszaküldését. Azonban az ajándékutalvány egyenlegét ki lehet fizetni készpénzben. Ha az ajándékutalványcikket visszárusorként dolgozzák fel készpénzes kifizetési sor helyett, akkor a kimutatás feladási folyamata sikertelen lesz. Az ajándékutalvány-cikkek ellenőrzési folyamata segítségével garantálható, hogy a tranzakciós táblákban szereplő, ajándékutalvány-cikkek visszaküldésére vonatkozó sorok ajándékutalvány készpénzes kifizetési sorok legyenek.
-- **Negatív ár** – Ellenőrzi, hogy nincsenek negatív árt tartalmazó tranzakciós sorok.
-- **Cikk és változat** – Ellenőrzi, hogy a tranzakciós sorban szereplő cikkek és változatok léteznek a cikk és a változat törzsadatfájljában.
-- **Adó összege** – Ellenőrzi, hogy az adórekordok megegyeznek-e a sorokban szereplő adók összegével.
-- **Sorozatszám** – Ellenőrzi, hogy azon cikkekhez tartozó tranzakciósorokban szerepeljen a sorozatszám, amelyek ellenőrzése sorozatszámmal történik.
-- **Előjel** – Ellenőrzi, hogy a mennyiség és a nettó összeg előjele megegyezik-e az összes tranzakciós sorban.
-- **Üzleti dátum** – Ellenőrzi, hogy a tranzakciókhoz tartozó összes üzleti dátum pénzügyi időszaka nyitott-e.
-- **Költségek** – ellenőrzi, hogy a fejléc és a sor költségösszege megfelel-e az adót tartalmazó ár és az adómentesség konfigurációjának.
-
-## <a name="set-up-the-consistency-checker"></a>Konzisztencia-ellenőrző beállítása
-
-Konfigurálja az „Üzleti tranzakciók ellenőrzése” kötegfolyamatot időszakos futásokhoz a **Retail és Commerce \> Retail és Commerce IT \> Pénztárfeladás** menüpontban. A kötegelt feladat az üzlet szervezeti hierarchiája alapján ütemezhető, hasonlóan a „Kimutatások kötegelt kiszámítása” és a „Kimutatások kötegelt feladása” folyamatok beállításához. Javasoljuk, hogy úgy konfigurálja ezt a kötegfolyamatot, hogy az naponta többször fusson, és úgy ütemezze, hogy minden P-feladat végrehajtása végén fusson.
-
-## <a name="results-of-validation-process"></a>Ellenőrzési folyamat eredményei
-
-A kötegfolyamat által végzett ellenőrzés eredményeit a rendszer felcímkézi a megfelelő tranzakcióra. A tranzakció rekordján található **Ellenőrzés állapota** mező vagy **Sikeres** vagy **Hiba** értékre van beállítva, és az utolsó ellenőrzés futásának dátuma a **Legutóbbi ellenőrzés időpontja** mezőben látható.
-
-Ha további, ellenőrzési hibához kapcsolódó leíróbb jellegű hibaüzenetet szeretne megtekinteni, válassza ki a megfelelő üzlet tranzakciós rekordját, majd kattintson az **Ellenőrzési hibák** gombra.
-
-Azokat a tranzakciókat, amelyek nem feleltek meg az ellenőrzésen, valamint a még nem ellenőrzött tranzakciókat a rendszer nem szerepelteti a kimutatásokban. A „Kimutatás számítása” folyamat során a felhasználók értesítést kapnak, ha olyan tranzakciók találhatók, amelyeknek szerepelniük kellett volna a kimutatásban, de mégsem szerepeltek.
-
-Ha ellenőrzési probléma merül fel, a hiba javítása csak a Microsoft ügyfélszolgálata segítségével lehetséges. A jövőbeli kiadások egyikében hozzáadásra kerül majd a lehetőség, amely segítségével a felhasználók maguk is kijavíthatják a rekordokat a felhasználói felületen, amelyek sikertelenek voltak. A később hozzáférhetővé váló naplózási és auditálási lehetőségek segítségével a módosítások előzményei is nyomon követhetők lesznek.
+Az **Üzleti tranzakciók ellenőrzése** kötegfolyamat ellenőrzi a kereskedelmi tranzakciók tábláinak konzisztenciáját a következő ellenőrzési szabályok alapján.
 
 > [!NOTE]
-> A jövőbeli kiadásokban olyan további ellenőrzési szabályokat adunk hozzá, amellyel még több eset ellenőrzése válik lehetővé.
+> Az ellenőrzési szabályok hozzáadása a későbbi verziókban is folytatódik.
+
+### <a name="transaction-header-validation-rules"></a>Tranzakciófejléc ellenőrzési szabályai
+
+Az alábbi táblázat felsorolja azokat a tranzakciófejléc-ellenőrzési szabályokat, amelyekkel szemben ellenőrizve vannak a kereskedelmi tranzakciók fejlécei, mielőtt a tranzakciók át lennének adva kimutatás-feladásra.
+
+| Szabály | Leírás |
+|-------|-------------|
+| Üzleti dátum | Ez a szabály ellenőrzi, hogy a tranzakció üzleti dátuma egy nyitott pénzügyi időszakhoz van-e társítva a főkönyvben. |
+| Pénznemkerekítés | Ez a szabály ellenőrzi, hogy a tranzakcióösszegek kerekítése a pénznemkerekítési szabály szerint történik-e. |
+| Vevői számla | Ez a szabály azt ellenőrzi, hogy a tranzakcióban használt vevő létezik-e az adatbázisban. |
+| Engedmény összege | Ez a szabály azt ellenőrzi, hogy a fejlécben szereplő engedményösszeg megfelel-e a sorokban található engedményösszegek összesítésével. |
+| Pénzügyi bizonylat feladási állapota (Brazília) | Ez a szabály azt ellenőrzi, hogy a pénzügyi bizonylat sikeresen feladható-e. |
+| Bruttó összeg | Ez a szabály azt ellenőrzi, hogy a tranzakció fejlécében szereplő bruttó összeg megfelel-e a nettó összegnek a tranzakciósorok adójával, plusz a költségekkel együtt. |
+| Nettó | Ez a szabály azt ellenőrzi, hogy a tranzakció fejlécében szereplő nettó összeg megfelel-e a nettó összegnek a tranzakciósorok adója nélkül és költségekkel. |
+| Nettó+adó | Ez a szabály azt ellenőrzi, hogy a tranzakció fejlécében szereplő bruttó összeg megfelel-e a nettó összegnek a tranzakciósorok adója nélkül, plusz az összes adó és költség. |
+| Cikkek száma | Ez a szabály ellenőrzi, hogy a tranzakció fejlécében megadott cikkek száma megegyezik-e a tranzakciósorok mennyiségeinek összegével. |
+| Kifizetett összeg | Ez a szabály ellenőrzi, hogy a tranzakció fejlécében található kifizetett összeg megegyezik-e az összes fizetési tranzakció összegével. |
+| Adómentesség számítása | Ez a szabály ellenőrzi, hogy a számított összeg és a költségsorok adómentességi összeg megegyezik-e az eredeti számított összeggel. |
+| Díjszabás adóval együtt | Ez a szabály ellenőrzi, hogy az **Ár tartalmazza az adót** jelölő konzisztens-e a tranzakciófejlécben és az adótranzakciókban. |
+| A tranzakció nem üres | Ez a szabály ellenőrzi, hogy a tranzakció tartalmaz-e sorokat, és hogy legalább egy olyan sor van-e, ami nincsen érvénytelenítve. |
+| Alulfizetés/túlfizetés | Ez a szabály ellenőrzi, hogy a fejlécben található bruttó összeg és a kifizetett összeg közti különbség nem nagyobb, mint a maximális alulfizetés/túlfizetés konfigurációja. |
+
+### <a name="transaction-line-validation-rules"></a>Tranzakciósor ellenőrzési szabályai
+
+Az alábbi táblázat felsorolja azokat a tranzakciósor-ellenőrzési szabályokat, amelyekkel szemben ellenőrizve vannak a kereskedelmi tranzakciók sorainak részletei, mielőtt a tranzakciók át lennének adva kimutatás-feladásra.
+
+| Szabály | Leírás |
+|-------|-------------|
+| Vonalkód | Ez a szabály ellenőrzi, hogy a tranzakciósorok minden cikkvonalkódja létezik-e az adatbázisban. |
+| Költségsorok | Ez a szabály ellenőrzi, hogy a számított összeg és a költségsorok adómentességi összeg megegyezik-e az eredeti számított összeggel. |
+| Ajándékutalvány-visszáruk | Ez a szabály ellenőrzi, hogy a tranzakcióban nincsenek-e ajándékutalványok visszárui. |
+| Cikkváltozat | Ez a szabály ellenőrzi, hogy a tranzakciósorok minden cikke és változata létezik-e az adatbázisban. |
+| Sorengedmény | Ez a szabály azt ellenőrzi, hogy a sorengedmény összege megfelel-e az engedménytranzakciók összegének. |
+| Sor adója | Ez a szabály azt ellenőrzi, hogy a sor adóösszege megfelel-e az adótranzakciók összegének. |
+| Negatív ár | Ez a szabály azt ellenőrzi, hogy nincsenek negatív árak használva a tranzakciós sorokban. |
+| Sorozatszámmal vezérelt | Ez a szabály ellenőrzi, hogy azon cikkekhez tartozó tranzakciósorokban, amelyek ellenőrzése sorozatszámmal történik szerepeljen a sorozatszám. |
+| Sorozatszám dimenziója | Ez a szabály ellenőrzi, hogy ne legyen megadva sorozatszám, ha a cikk sorozatszám-dimenziója inaktív. |
+| Előjel ellentmondása | Ez a szabály, hogy a mennyiség és a nettó összeg előjele megegyezik-e az összes tranzakciós sorban. |
+| Adómentes | Ez a szabály ellenőrzi, hogy a sorcikk ára és a költségsorok adómentességi összege megegyezik-e az eredeti árral. |
+| Adócsoport-hozzárendelés | Ez a szabály ellenőrzi, hogy az áfacsoport és a cikkáfacsoport kombinációja érvényes adómetszetet hoz-e létre. |
+| Mértékegység-átváltások | Ez a szabály ellenőrzi, hogy az összes sor mértékegységének érvényes átváltása van-e a készlet mértékegységére. |
+
+## <a name="enable-the-store-transaction-validation-process"></a>Az üzleti tranzakció ellenőrzési folyamatának engedélyezése
+
+Konfigurálja az **Üzleti tranzakciók ellenőrzése** feladatot időszakos futásokhoz a Commerce központban (**Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem IT \> Pénztárfeladás**). A kötegelt feladat ütemezése az üzlet szervezeti hierarchiája alapján történik. Javasoljuk, hogy ezt a kötegfolyamatot ugyanolyan gyakorisággal futtassa, mint a **P-feladat** és a **Tranzakciós kimutatások számítása** feladat kötegelt feladatokat.
+
+## <a name="results-of-the-validation-process"></a>Az ellenőrzési folyamat eredményei
+
+Az **Üzleti tranzakciók ellenőrzése** kötegfolyamat eredménye megtekinthető minden kiskereskedelmi üzleti tranzakcióban. A tranzakciórekord **Ellenőrzés állapota** mezőjének beállítása **Sikeres**, **Hiba** vagy **Nincs**. A **Legutóbbi ellenőrzés időpontja** mező a legutóbbi ellenőrzés futtatásának dátumát mutatja.
+
+A következő táblázat az egyes ellenőrzési állapotokat ismerteti.
+
+| Ellenőrzés állapota | Leírás |
+|-------------------|-------------|
+| Sikeres | Minden engedélyezett ellenőrzési szabály teljesült. |
+| Hiba | Egy engedélyezett ellenőrzési szabály hibát észlelt. A hibával kapcsolatos további részleteket a Művelet panel **Ellenőrzési hibák** elemének kiválasztásával lehet megtekinteni. |
+| Nincs | A tranzakciótípushoz nem szükséges ellenőrzési szabályokat alkalmazni. |
+
+![Az Ellenőrzés állapota mezőt és az Ellenőrzési hibák gombot megjelenítő Üzleti tranzakciók lap.](./media/valid-checker-validation-status-errors.png)
+
+Csak a **Sikeres** ellenőrzési állapotú tranzakciók lesznek feléve a tranzakciós kimutatásokba. A **Hiba** állapotú tranzakciók megtekintéséhez tekintse át a **Készpénzzel fizetett, azonnal átvett ellenőrzési hibák** csempét az **Üzlet pénzügyi adatai** munkaterületen.
+
+![Csempék az Üzlet pénzügyi adatai munkaterületen.](./media/valid-checker-cash-carry-validation-failures.png)
+
+A Készpénzzel fizetett, azonnal átvett ellenőrzési hibák javításával kapcsolatos további tudnivalókat lásd: [Készpénzzel fizetett, azonnal átvett és készpénzkezelési tranzakciók szerkesztése és auditálása](edit-cash-trans.md).
+
+## <a name="additional-resources"></a>További erőforrások
+
+[Készpénzzel fizetett, azonnal átvett és készpénzkezelési tranzakciók szerkesztése és auditálása](edit-cash-trans.md)
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

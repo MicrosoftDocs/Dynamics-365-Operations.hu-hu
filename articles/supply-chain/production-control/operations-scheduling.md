@@ -1,12 +1,10 @@
 ---
 title: Műveletek ütemezése
 description: Ez a témakör információkat nyújt a műveletek ütemezésével kapcsolatban. A műveletek ütemezését arra használhatja, hogy általános időbeli becslést készítsen a termelési folyamatról.
-author: ChristianRytt
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/20/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProdSchedule
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 198073
 ms.assetid: 12c28b11-80aa-4668-b15b-724cb24890bd
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eb4e1a38c675a3c8d102741a027d54294e335ac1
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: e3c380297b56f615a6b285ef7daf1ecbd7bb420f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966405"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7574569"
 ---
 # <a name="operations-scheduling"></a>Műveletek ütemezése
 
@@ -76,10 +74,12 @@ Műveletütemezés futtatásakor törölheti az útvonal meghatározott részeit
 ## <a name="finite-materials"></a>Véges anyagmennyiség
 Ha véges anyagokkal dolgozik, az ütemezés a termeléshez szükséges anyagok rendelkezésre állásától is függ. Ha nincs elég elérhető összetevő a termeléshez, a termelés elhúzódhat. Az ütemezést az anyagok felhasználására alapozhatja úgy, hogy meghatározza, melyek a termeléshez feltétlenül szükséges anyagok. Ha az optimalizálás az erőforrások kapacitása és anyagok rendelkezésre állásától is függ, a rendszer a termelést ezen megszorítások alapján számolja ki. A termelési rendelés nem ütemezhető amíg a kapacitás és az anyagok egyszerre és a szükséges mennyiségben nem állnak rendelkezésre.
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [A műveletek ütemezésének beállításai](operation-scheduling-options.md)
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

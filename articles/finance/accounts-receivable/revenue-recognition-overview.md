@@ -3,23 +3,22 @@ title: Bevételelszámolás – áttekintés (videót tartalmaz)
 description: Ez a témakör a Bevételelszámolás funkcióról nyújt tájékoztatást. Ez a funkció rugalmas keretet biztosít, amely lehetővé teszi, hogy vállalatspecifikus szabályokat határozzon meg a többelemű rendelések bevételi árának és bevételütemezésének elszámolásához.
 author: kweekley
 ms.date: 11/11/2019
-ms.topic: index-page
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: Customer
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: intro-internal
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: c027b3edb12c34c2373c58a5aa7e39cfbff39045
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
-ms.translationtype: HT
+ms.openlocfilehash: a5e7b6407fe72c56ea04920532d4327d2b89f8d1
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937582"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982587"
 ---
 # <a name="revenue-recognition-overview"></a>A bevételelszámolás áttekintése
 
@@ -39,7 +38,7 @@ Olyan iparágak vállalatai esetében, ahol több elem (például termékek, szo
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]
 
-A [bevételelszámolás használata a szolgáltatásban Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) című videóban (fent) szerepel a [Finance and Operations lejátszási listán](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), amely elérhető a YouTube-on.
+A [Bevételelszámolás használata a Dynamics 365 Finance szolgáltatásban](https://youtu.be/v3amIsiqvoo) című videó (fent) szerepel a [Finance and Operations lejátszási listán](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW), amely elérhető a YouTube felületén.
 
 A Bevételelszámolás funkció egy keretet biztosít, amely lehetővé teszi, hogy vállalatspecifikus szabályokat határozzon meg a bevételi árak és bevételütemezésének elszámolásához.
 

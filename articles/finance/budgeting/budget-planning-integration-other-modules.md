@@ -1,12 +1,10 @@
 ---
 title: A Költségvetés-tervezés integrálása más modulokkal
 description: Költségvetési tervek számos különböző forrásból hozhatók létre. Az időszaki folyamat alapvető összetevői ugyanazok, mint a többi forrás esetében.
-author: ShylaThompson
-manager: AnnBe
+author: panolte
 ms.date: 01/12/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BudgetPlanGenerate
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c497f6ff4588ab1fd334f98ea822006006f16e4e
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: ceae7296ef6d8a0f181c306bd533694c0219e467
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4971228"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594742"
 ---
 # <a name="budget-planning-integration-with-other-modules"></a>A Költségvetés-tervezés integrálása más modulokkal
 
@@ -32,8 +30,7 @@ ms.locfileid: "4971228"
 
 
 
-<a name="periodic-processes-for-generating-budget-plans"></a>Időszaki folyamatok költségvetési tervek létrehozásához
-----------------------------------------------
+## <a name="periodic-processes-for-generating-budget-plans"></a>Időszaki folyamatok költségvetési tervek létrehozásához
 
 Költségvetési tervek az alábbi forrásokból hozhatók létre:
 
@@ -146,3 +143,6 @@ További rendelkezésre álló jelentés például az **Előre jelzett beosztás
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

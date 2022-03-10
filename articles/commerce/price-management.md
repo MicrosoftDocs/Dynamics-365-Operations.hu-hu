@@ -2,27 +2,24 @@
 title: Kiskereskedelmi eladási ár kezelése
 description: Ez a témakör leírja a kiskereskedelmi eladási árak létrehozása és kezelése koncepcióit a Dynamics 365 Commerce rendszerben.
 author: ShalabhjainMSFT
-manager: AnnBe
-ms.date: 05/28/2020
+ms.date: 07/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
 ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a90f5706c87d398f495fae40f42f6c2d408b1c2a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: f78a4f328d6962db373990ea60dc03cec35718dc719aa0b284b319db5bc059ab
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412738"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759285"
 ---
 # <a name="retail-sales-price-management"></a>Kiskereskedelmi értékesítési ár kezelése
 
@@ -43,21 +40,21 @@ A témakör a következő fogalmakat használja.
 
 ## <a name="price-groups"></a>Árcsoportok
 
-Az árcsoportok a Commerce ár- és engedménykezelésének középpontjában állnak. Az árcsoportok használatával árakat és engedményeket lehet hozzárendelni az entitásokhoz (csatornákhoz, fiókokhoz, katalógusokhoz és hűségprogramokhoz). Mivel árcsoportokat használunk az összes árképzéshez és engedményhez, nagyon fontos, hogy megtervezze, hogyan használja őket, még a használat megkezdése előtt.
+Az árcsoportok a Commerce ár- és engedménykezelésének középpontjában állnak. Az árcsoportok használatával árakat és engedményeket lehet hozzárendelni a Commerce entitásokhoz (azaz csatornákhoz, katalógusokhoz, fiókokhoz és hűségprogramokhoz). Mivel árcsoportokat használunk az összes árképzéshez és engedményhez, nagyon fontos, hogy megtervezze, hogyan használja őket, még a használat megkezdése előtt.
 
-Önmagában az árcsoport csak név, leírás és opcionálisan árképzési prioritás. A legfontosabb tudnivaló az árcsoportokkal kapcsolatban az, hogy a több a többhöz kapcsolatok kezelésére szolgálnak, amelyekkel az engedmények és az árak rendelkeznek a kereskedelmi entitásokkal.
+Önmagában az árcsoport csak név, leírás és opcionálisan árképzési prioritás. A legfontosabb tudnivaló az árcsoportokkal kapcsolatban az, hogy a több a többhöz kapcsolatok kezelésére szolgálnak, amelyekkel az engedmények és az árak rendelkeznek a Commerce entitásokkal.
 
-A következő ábrán az árcsoportok használata látható. Az ábrán láthatja, hogy az „Árcsoport” szó szerint az árképzés és az engedmények kezelésének középpontjában van. A kereskedelmi entitások, amelyek segítségével kezelheti a különbözeti árakat és engedményeket a bal oldalon láthatók, és a tényleges ár- és engedményrekordok vannak a jobb oldalon.
+A következő ábrán az árcsoportok használata látható. Az ábrán láthatja, hogy az „Árcsoport” szó szerint az árképzés és az engedmények kezelésének középpontjában van. A Commerce entitások, amelyek segítségével kezelheti a különbözeti árakat és engedményeket, a bal oldalon láthatók, és a tényleges ár- és engedményrekordok vannak a jobb oldalon.
 
-![Árcsoportok](./media/PriceGroups.png "Árcsoportok")
+![Árcsoportok.](./media/PriceGroups.png "Árcsoportok")
 
-Árcsoportok létrehozása esetén ne használjon egyetlen árcsoportot többféle kereskedelmi entitástípushoz. Ellenkező esetben nehéz meghatározni, hogy miért meghatározott ár vagy engedmény van alkalmazva adott tranzakcióhoz.
+Árcsoportok létrehozása esetén ne használjon egyetlen árcsoportot többféle Commerce entitástípushoz. Ellenkező esetben nehéz meghatározni, hogy miért meghatározott ár vagy engedmény van alkalmazva adott tranzakcióhoz.
 
 Ahogy piros szaggatott vonal az ábrán bemutatja, a Commerce támogatja a Microsoft Dynamics 365 árcsoport alapszolgáltatását, amely közvetlenül a vevőhöz van állítva. Azonban ebben az esetben csak eladási árra vonatkozó kereskedelmi megállapodásokat fog kapni. Ha vevőspecifikus árak kíván alkalmazni, azt ajánljuk, hogy ne állítson be árcsoportokat közvetlenül a vevőhöz. Ehelyett fiókokat kell használnia. 
 
 Ne feledje, hogy ha az árcsoport be van állítva a vevőnél, akkor ez az árcsoport lesz társítva az ehhez a vevőhöz létrehozott rendelések értékesítési rendelés fejlécéhez. Ha a felhasználó megváltoztatja a rendelés fejlécében szereplő árcsoportot, akkor a régi árcsoportot csak az aktuális rendelésnél váltja az új árcsoport. A régi árcsoport például nem befolyásolja az aktuális rendelést, de a jövőbeli rendelésekhez továbbra is a vevőhöz lesz társítva.
 
-A következő szakaszok további tájékoztatást tartalmaznak a kereskedelmi entitásokról, amelyeket különböző árak beállításához használhat az árcsoportok használatakor. Az árak és engedmények konfigurációja az összes entitáshoz két lépésből áll. Ezeket a lépéseket tetszőleges sorrendben teheti meg. Azonban a logikai sorrend először az árcsoportok beállítása az entitásokon, mivel ez a lépés valószínűleg a telepítés során végrehajtott, egyszer végrehajtandó beállítást. Ezután, az árak és engedmények létrehozásakor, az árak és engedmények esetében egyenként állíthatók be az árcsoportok.
+A következő szakaszok további információkat tartalmaznak azokról a Commerce entitásokról, amelyekkel az árcsoportok használata esetén külön árakat állíthat be. Az árak és engedmények konfigurációja az összes entitáshoz két lépésből áll. Ezeket a lépéseket tetszőleges sorrendben teheti meg. Azonban a logikai sorrend először az árcsoportok beállítása az entitásokon, mivel ez a lépés valószínűleg a telepítés során végrehajtott, egyszer végrehajtandó beállítást. Ezután, az árak és engedmények létrehozásakor, az árak és engedmények esetében egyenként állíthatók be az árcsoportok.
 
 ### <a name="channels"></a>Csatornák
 
@@ -217,26 +214,30 @@ A Dynamics 365 alkalmazásban eladási árak beállításakor nem adja meg, hogy
 
 Ha befoglalt és kizárt áfával egyaránt dolgozik, nagyon fontos az árak megfelelő beállítása, mert teljes összeg, amelyet a vevő fizet, változni fog, ha az **Ár tartalmazza az áfát** beállítása a csatornán módosul.
 
-## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>A kiskereskedelmi árképzés és a nem kiskereskedelmi árképzés közötti különbségek
+## <a name="differences-between-commerce-pricing-and-non-commerce-pricing"></a>A Commerce és a nem Commerce árképzés közötti különbségek
 
-Az árak kiszámítására egyetlen árképzési motor használatos az összes csatornán: hívásközpont, kiskereskedelmi üzlet és online áruházak. Ez segít abban, hogy megvalósíthatók legyenek az egyesített kereskedelmi esetek.
+Egyetlen árképző motor számolja ki az árakat minden csatornán: a hívásközpontban, a kiskereskedelmi üzletben és az online áruházakban. Ez segít az egységes Commerce forgatókönyvek megvalósításában.
 
-Az árképzést úgy tervezték, hogy kiskereskedelmi entitásokkal működjön, nem kiskereskedelmi entitások helyett. Konkrétabban arra tervezték, hogy az árakat üzlet, nem pedig raktár szerint állítsa be.
+Az árképzést úgy tervezték, hogy a nem Commerce egységek helyett a Commerce egységekkel működjön. Konkrétabban arra tervezték, hogy az árakat üzlet, nem pedig raktár szerint állítsa be.
 
-Az árképzési motor **nem támogatja** a következő árképzési funkciókat:
+A Commerce árképző motor **nem támogatja** a következő árképzési funkciókat:
 
 - Az árak beállítása hely vagy hely és raktári tárolási dimenziók szerint nem támogatott. Ha a kereskedelmi megállapodásokban csak a Hely dimenziót adja meg, akkor az árképzési motor figyelmen kívül hagyja a helyet, és a kereskedelmi megállapodást minden helyre alkalmazza. Ha a hely és raktár módot is megadja, akkor a viselkedés nem definiált/nem tesztelt, mert várható, hogy a kiskereskedők az áruház árcsoportjai segítségével szabályozzák az egyes üzletek/raktárak árait.
 - Az attribútumalapú árképzés nem támogatott.
 - A szállítói engedmény áthárítása nem támogatott.
-- A Supply Chain Management alapszolgáltatási árképzési motor a „kért szállítási dátum”, a „kért beérkezési dátum” és az aktuális dátum szerinti árképzési számítást támogatja. A kiskereskedelmi árak azonban jelenleg nem támogatják ezeket az értékeket. Ennek az az oka, hogy a B2C esetekhez a vevők nem számítanak arra, hogy a kért szállítási dátumnak hatása lehet a tárgy árára. Bizonyos esetekben a kiskereskedőknek B2B és B2C műveleteik is vannak. A B2B műveleteknél gyakori, hogy a szállítási dátumok alapján változik az ár. Ezek a kiskereskedők az ellátásilánc-gazdálkodási árképzést a B2B üzleti tevékenységhez, és kiskereskedelmi árat pedig a B2C tevékenységhez használhatják fel. A kiskereskedelmi árképzés csak abban az esetben aktiválódik, ha az alkalmazás felhasználóját hívásközponti felhasználóként adták hozzá, így a kiskereskedők bizonyos felhasználókat rendelhetnek hozzá, akik az ellátásilánc-kezelés árképzésével fognak dolgozni, illetve néhány, a kiskereskedelmi árakkal dolgozót felhasználót is hozzárendelhetnek, vagyis ezeket a felhasználókat a hívásközponti felhasználókként kell megadni. Ezenkívül be kell kapcsolni a **Mai dátum használata az árak kiszámításához** tulajdonságot a **Commerce paraméterek > árképzés és az engedmények > Vegyes** szakaszban. Ily módon a kinnlevőségek paraméter értékének a kért szállítási dátumhoz vagy a kért átadási dátumához lehet használni az ellátásilánc-kezelési árakhoz, de a kiskereskedelmi árazás továbbra is a mai árat használja az árkalkulációhoz.
+- Az általános pénznem funkció nem támogatott, azaz még ha egy kereskedelmi megállapodásban be is van kapcsolva az **Általános pénznem szerepeltetése** kapcsoló, ez a kereskedelmi megállapodás csak a kereskedelmi megállapodásban meghatározott pénznemre lesz érvényes.
+- A Supply Chain Management alapszolgáltatási árképzési motor a „kért szállítási dátum”, a „kért beérkezési dátum” és az aktuális dátum szerinti árképzési számítást támogatja. A kiskereskedelmi árak azonban jelenleg nem támogatják ezeket az értékeket. Ennek az az oka, hogy a B2C esetekhez a vevők nem számítanak arra, hogy a kért szállítási dátumnak hatása lehet a tárgy árára. Bizonyos esetekben a kiskereskedőknek B2B és B2C műveleteik is vannak. A B2B műveleteknél gyakori, hogy a szállítási dátumok alapján változik az ár. Ezek a kiskereskedők a Supply Chain Management árképzést a B2B üzleti tevékenységhez, és kiskereskedelmi árat pedig a B2C tevékenységhez használhatják fel. A kiskereskedelmi árképzés csak abban az esetben aktiválódik, ha az alkalmazás felhasználóját hívásközponti felhasználóként adták hozzá, így a kiskereskedők bizonyos felhasználókat rendelhetnek hozzá, akik a Supply Chain Management árképzésével fognak dolgozni, illetve néhány, a kiskereskedelmi árakkal dolgozót felhasználót is hozzárendelhetnek, vagyis ezeket a felhasználókat a hívásközponti felhasználókként kell megadni. Ezenkívül be kell kapcsolni a **Mai dátum használata az árak kiszámításához** tulajdonságot a **Commerce paraméterek > árképzés és az engedmények > Vegyes** szakaszban. Ily módon a kinnlevőségek paraméter értékének a kért szállítási dátumhoz vagy a kért átadási dátumához lehet használni a Supply Chain Management áraihoz, de a kiskereskedelmi árazás továbbra is a mai árat használja az árkalkulációhoz.
 
-Emellett **csak** az árképzés motor támogatja a következő árképzési funkciókat:
+Ezenkívül **csak** a Commerce árképző motor támogatja a következő árképzési funkciókat:
 
-- Az ár a termékdimenziókon alapul, a következő sorrendben: a leginkább specifikus változatártól a legkevésbé specifikus változatárig, majd az alaptermékárig. A két termékdimenzió (például szín és méret) használatával beállított ár a csak egy termékdimenzió használatával beállított ár (például a méret) előtt használatos.
+- Az ár a termékdimenziókon alapul, a következő sorrendben: a leginkább specifikus változatártól a legkevésbé specifikus változatárig, majd az alaptermékárig. A két termékdimenzió (például szín és méret) felhasználásával meghatározott ár előbb kerül felhasználásra, mint a csak egy termékdimenzió (például méret) felhasználásával meghatározott ár.
 - Ugyanaz az árcsoport használható az árképzés és az engedmények kezelésére.
 
 ## <a name="pricing-api-enhancements"></a>Árképzési API-fejlesztések
 
 Az ár az egyik legfontosabb tényező, amely a vevők vásárlási döntéseit vezérli, és a vásárlás előtt számos vevő a különböző helyek árait hasonlítja össze. A kiskereskedők – annak érdekében, hogy versenyképes árakat tudjanak biztosítani – szorosan figyelemmel a kísérik versenytársaikat, és gyakran biztosítanak promóciókat. Ahhoz, hogy a kiskereskedők megfelelően fel tudják kelteni a vevők figyelmét, fontos, hogy a termékek keresése, a böngészési funkció, a listákat és a termék részleteit tartalmazó lap a legpontosabb árakat jelenítse meg.
 
-A Commerce közelgő kiadásában a **GetActivePrices** alkalmazásprogramozási felület (API) olyan árakat ad vissza, amelyek egyszerű engedményeket tartalmaznak (például egysoros engedményeket, amelyek nem függnek a kosár egyéb cikkeitől). Ily módon a megjelenített árak a cikkeknél a vevők által kifizetett tényleges összeg közelében találhatók. Ez az API az egyszerű engedmények minden típusát fogja tartalmazni: fiókon alapuló, hűségprogramon alapuló, a katalóguson alapuló és a csatorna alapú engedmények. Az API emellett az alkalmazott kedvezmények neveit és érvényességi adatait is visszaadja, így a kiskereskedők részletesebb leírást adhatnak az árhoz, és sürgető érzést teremtenek, ha a kedvezmény érvényessége hamarosan lejár.
+A **GetActivePrices** alkalmazásprogramozási felület (API) a Commerce-ben olyan árakat ad vissza, amelyek egyszerű kedvezményeket tartalmaznak (például egysoros kedvezményeket, amelyek nem függenek a kosárban lévő egyéb tételektől). Ily módon a megjelenített árak a cikkeknél a vevők által kifizetett tényleges összeg közelében találhatók. Ez az API tartalmazza az egyszerű kedvezmények összes típusát: a tagságon alapuló, a hűségalapú, a katalógusalapú és a csatornaalapú kedvezményeket. Az API emellett visszaadja az alkalmazott kedvezmények nevét és érvényességi információit, így a kiskereskedők részletesebb leírást adhatnak az árról, és sürgető érzést teremthetnek, ha a kedvezmény érvényessége hamarosan lejár.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

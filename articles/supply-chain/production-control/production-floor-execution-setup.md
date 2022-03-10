@@ -2,11 +2,9 @@
 title: Eszköz beállítása a termelési üzem végrehajtási felületének futtatására
 description: A termelési üzem végrehajtási felülete a termelési üzemben található összes eszközhöz be van állítva. A vállalatok általában minden eszközt különbözően állítanak be, attól függően, hogy az eszköz milyen célra szolgál. Előfordulhat például, hogy egy vállalatnak van egy eszköze a recepción, ahol a dolgozók érkezéskori és távozáskori ki- és beblokkolást végeznek, és egy másik az üzemszinten, ahol a dolgozók jezelik a feladataikat.
 author: johanhoffmann
-manager: tfehr
 ms.date: 10/05/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgProductionFloorExecution, HcmWorker, JmgProductionFloorExecutionDeviceConfiguration
 audience: Application User
@@ -14,26 +12,25 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: 641273dd3ae189853326bf7af7ceb06d48465b5c
-ms.sourcegitcommit: 2b4809e60974e72df9476ffd62706b1bfc8da4a7
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: f0be79b54a279893f93d41981342e42c8880f059
+ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "5500550"
+ms.lasthandoff: 11/04/2021
+ms.locfileid: "7752832"
 ---
 # <a name="set-up-a-device-to-run-the-production-floor-execution-interface"></a>Eszköz beállítása a termelési üzem végrehajtási felületének futtatására
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A termelési üzem végrehajtási felülete a termelési üzemben található összes eszközhöz be van állítva. A vállalatok általában minden eszközt különbözően állítanak be, attól függően, hogy az eszköz milyen célra szolgál. Előfordulhat például, hogy egy vállalatnak van egy eszköze a recepción, ahol a dolgozók érkezéskori és távozáskori ki- és beblokkolást végeznek, és egy másik az üzemszinten, ahol a dolgozók jezelik a feladataikat.
 
 ## <a name="set-the-configuration-and-filters-for-a-specific-device"></a>Egy adott eszköz konfigurációjának és szűrőinek beállítása
 
-Egy eszköz konfigurációs és feladattípusának beállításához jelentkezzen be a **Termelési üzem végrehajtása** lapjára olyan fiókkal, amely olyan biztonsági szerepkörrel rendelkezik, amely tartalmazza a *Felügyelői idő fenntartása* kötelességet. (A beépített biztonsági szerepkörök közül az *Üzemirányítás vezetője* rendelkezik ezzel a kötelességgel.) Hajtsa végre az alábbi lépéseket.
+Egy eszköz konfigurációjának és feladatszűrőinek beállításéhez jelentkezzen be a Termelés - üzem végrehajtási lapjára egy olyan fiók használatával, amely rendelkezik egy olyan biztonsági szerepkörsel, amely tartalmazza az Időfelügyeleti feladat **·** karbantartása *·* feladatot. (A beépített biztonsági szerepkörök közül az *Üzemirányítás vezetője* rendelkezik ezzel a kötelességgel.) Hajtsa végre az alábbi lépéseket.
 
-1. Nyissa meg a beállítani kívánt eszközt, és jelentkezzen be a Microsoft Dynamics 365 Supply Chain Management szolgáltatásba üzemfelügyelőként. (Olyan fiókot használjon, amely tartalmazza a *Felügyelői idő fenntartása* kötelességet.)
+1. Nyissa meg a beállítani kívánt eszközt, és jelentkezzen be a Microsoft Dynamics 365 Supply Chain Management szolgáltatásba üzemfelügyelőként. (Olyan számla használata, amely tartalmazza a következőt: *Időfelügyeleti* feladat karbantartása.)
 1. Győződjön meg róla, hogy a beállított eszköz számára elérhető legyen a konfiguráció. Ha még nem létezik konfiguráció, akkor a rendszer egy alapértelmezett konfigurációt ad meg. A konfiguráció beállításával kapcsolatos további tudnivalókért lásd [A termelési üzem végrehajtási felületének konfigurálása](production-floor-execution-configure.md) című témakört.
 1. Lépjen a **Gyártásvezérlés \> Gyártásvégrehajtás \> Termelési üzem végrehajtásának konfigurálása** részre.
 
@@ -73,7 +70,7 @@ Gyakran egy kizárólag erre a célra használt eszközön futtatja a termelési
 
 Az alábbi ábra felső részén látható a kezelőfelület alapértelmezett megjelenése. Az alsó részen látható, hogy hogyan néz ki teljes képernyős módban, amikor a navigációs ablak el van rejtve.
 
-![Normál, ill. teljes képernyős kezelőfelület](media/pfei-full-screen.png "Normál, ill. teljes képernyős kezelőfelület")
+![Normál, ill. teljes képernyős kezelőfelület.](media/pfei-full-screen.png "Normál, ill. teljes képernyős kezelőfelület")
 
 ## <a name="extend-the-session-past-12-hours"></a>A munkamenet kiterjesztése 12 óránál hosszabbra
 

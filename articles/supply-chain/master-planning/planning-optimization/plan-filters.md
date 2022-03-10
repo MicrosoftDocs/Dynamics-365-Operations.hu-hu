@@ -2,16 +2,13 @@
 title: Szűrők alkalmazása egy tervre
 description: Ez a témakör azt mutatja be, hogyan lehet szűrőket használni egy terven, amikor a Tervezés optimalizálása funkciót használja.
 author: ChristianRytt
-manager: tfehr
 ms.date: 01/08/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -19,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 9ddf9934965bd06ec805731a1cc1a667846fa180
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 3612dd45a3f4b8c3597c81962a66c21ed14fb206
+ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429488"
+ms.lasthandoff: 11/01/2021
+ms.locfileid: "7729027"
 ---
 # <a name="apply-filters-to-a-plan"></a>Szűrők alkalmazása egy tervre
 
@@ -46,7 +43,7 @@ Az A, B és C cikkeket tartalmazó tervszűrő van beállítva. Az alaptervezés
 - **Az összes cikket tartalmazó futásidejű szűrő (üres szűrő)** : az A, a A és a C cikkek szerepelnek a tervezés futtatásakor, és korábbi tervezési kimenet A és B eleme felülíródik.
 
 > [!NOTE]
-> Lehetőleg ne állítson be tervszűrőt olyan terven, amelyet az **Alaptervezés paraméterei** oldalon **Aktuális dinamikus alaptervként** állított be. Ellenkező esetben a rendszer a szűrt cikkekre korlátozza a dinamikus alapterv funkcióját. Ha például a nettó követelmények olyan cikkeknél frissülnek, amelyek nem részei a tervszűrőnek, akkor nem jön létre eredmény.
+> Ha az Alaptervezés paraméterei lapon az Aktuális dinamikus alapterv beállítású tervhez beállít egy tervszűrőt, akkor a dinamikus alapterv funkció a szűrt cikkekre **·** **·** korlátozódik. Ha például a nettó követelmények olyan cikkeknél frissülnek, amelyek nem részei a tervszűrőnek, akkor nem jön létre eredmény.
 
 ## <a name="related-resources"></a>Kapcsolódó erőforrások
 
@@ -59,3 +56,6 @@ Az A, B és C cikkeket tartalmazó tervszűrő van beállítva. Az alaptervezés
 [Tervelőzmények és tervezési naplók megtekintése](plan-history-logs.md)
 
 [Tervezési feladat érvénytelenítése](cancel-planning-job.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

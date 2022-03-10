@@ -1,12 +1,10 @@
 ---
 title: Szállítási alternatívák
 description: Az értékesítési rendelések a Szállítási alternatívák lap használatával tájékozódhatnak az alternatív rendelésteljesítési beállításokról.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesLineDeliveryDetails
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 271623
 ms.assetid: 527f6084-44fe-41bb-924f-4386e926358a
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.openlocfilehash: 783307ea5cc764f4a04d069dfd7d614a4f63dd2d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: f58f7923d82f3aa371ba916352211195870f9a75
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5229255"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572625"
 ---
 # <a name="delivery-alternatives"></a>Szállítási alternatívák
 

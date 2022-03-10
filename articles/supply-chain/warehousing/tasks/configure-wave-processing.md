@@ -13,13 +13,13 @@ ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 10277c22f5988797dd55a33ef5151d2bc7a4b0be
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 39c3fecf9250ee89c22003d5dff4ea662c3042e3
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5831050"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7572985"
 ---
 # <a name="configure-wave-processing-example"></a>A hullámfeldolgozási példa konfigurálása
 

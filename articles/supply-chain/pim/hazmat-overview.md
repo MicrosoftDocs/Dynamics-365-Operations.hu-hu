@@ -1,23 +1,23 @@
 ---
 title: Veszélyes anyagok áttekintése
 description: Ez a témakör áttekintést nyújt azokról a szolgáltatásokról, amelyek a termékadatok kezelése és a raktárkezelés során a veszélyes anyagok kezelésével és feldolgozásával kapcsolatosak.
-author: dasani-madipalli
+author: t-benebo
 ms.date: 06/10/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: damadipa
+ms.author: benebotg
 ms.search.validFrom: 2020-06-10
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 15edf61cba03a57b9b4d2c939228fd064b797942
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: cfea2cd6a2699bdf2a14de72a8bdeb3e8cd32a17
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5829378"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986276"
 ---
 # <a name="hazardous-materials-overview"></a>Veszélyes anyagok áttekintése
 
@@ -27,7 +27,7 @@ A szállítási és szállítmányozási előírásoknak való megfelelés érde
 
 A következő ábra a veszélyes anyagok funkció beállításához és használatához szükséges lépéseket mutatja be.
 
-![A veszélyes anyagok funkció beállítása és használata](media/hazmat-overview.png "A veszélyes anyagok funkció beállítása és használata")
+![A veszélyes anyagok funkció beállítása és használata.](media/hazmat-overview.png "A veszélyes anyagok funkció beállítása és használata")
 
 A veszélyes anyagok funkció a Termékinformációk kezelésénél van beállítva, és olyan dokumentumokat biztosít, amelyek a Raktárkezelésen keresztül nyomtathatók. Ennek megfelelően túlnyomórészt a következő két fő területen tekinti át, állítja be és használja ennek a szolgáltatásnak a funkcióit:
 

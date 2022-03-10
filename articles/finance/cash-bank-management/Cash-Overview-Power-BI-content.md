@@ -2,28 +2,25 @@
 title: Készpénzáttekintés Power BI tartalom
 description: Ez a témakör a Készpénzáttekintés Power BI-tartalmat ismerteti. Leírja, hogy hogyan kell hozzáférni a tartalomcsomagban szereplő jelentésekhez, és információkat nyújt a tartalomcsomag összeállításához előzőleg használt entitásokkal és adatmodellekkel kapcsolatban.
 author: saraschi2
-manager: AnnBe
 ms.date: 07/16/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankTreasurerWorkspace
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 6ad99f00438b0f9ccbf84e504219e39aa49f2bc1
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 3f7e0c792df8519f3bcb2ade2e29cc4c5c8e4730
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444016"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7986408"
 ---
-# <a name="cash-overview-power-bi-content"></a>Készpénzáttekintés Power BI tartalom
+# <a name="cash-overview-power-bi-content"></a>Készpénzáttekintés Power BI-tartalom
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,7 +38,7 @@ A következő beállításokat el kell végezni ahhoz, hogy az adatok megjelenje
 2. Lépjen a **Főkönyv > Naptárak > Pénzügyi naptárak** részre, hogy ellenőrizze az aktív időszakhoz hozzárendelt pénzügyi naptár dátumait.
 3. Ugrás a **Főkönyv > Beállítás > Főkönyv** részre a **Könyvelési pénznem** és az **Árfolyamtípus** beállításához.
 4. Adja meg az árfolyamokat a tranzakció pénznemei és a könyvelési pénznem, a könyvelési pénznem és a rendszer pénzneme, a könyvelési pénznem és a banki pénznemek között. Lépjen ide: **Főkönyv > Pénznemek > Pénznemek árfolyamtípusai**.
-5. Pénzforgalmi előrejelzés konfigurálása és futtatása. A Pénzforgalmi előrejelzés beállításával kapcsolatos további tudnivalókat lásd: [Pénzforgalmi előrejelzés](https://docs.microsoft.com/dynamics365/finance/cash-bank-management/cash-flow-forecasting). 
+5. Pénzforgalmi előrejelzés konfigurálása és futtatása. A Pénzforgalmi előrejelzés beállításával kapcsolatos további tudnivalókat lásd: [Pénzforgalmi előrejelzés](./cash-flow-forecasting.md). 
 6. Lépjen a **Rendszerfelügyelet > Beállítás > Entitástár** részre a **LedgerCovLiquidityMeasurement** összesítő mérték frissítéséhez.
 
 ## <a name="accessing-the-power-bi-content"></a>A Power BI tartalom elérése
@@ -79,3 +76,6 @@ A következő táblázat megjeleníti azokat az entitásokat, amelyeken a **Kés
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceCompany    | Összegzett pénzbevételek, kiadások és egyenlegek az egyes vállalatok könyvelési pénznemében |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityInflowOutflowBalanceEnterprise | Összegzett pénzbevételek, kiadások és egyenlegek az összes vállalatnál a rendszer pénznemében |
 | LedgerCovLiquidityMeasurement\_LedgerCovLiquidityTransactionCurrency            | Összegzett nettó tranzakciós összeg és devizaegyenleg a tranzakciós pénznem használatával |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

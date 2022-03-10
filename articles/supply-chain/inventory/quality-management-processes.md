@@ -1,26 +1,28 @@
 ---
 title: A minőség- és a szabálytalanságkezelés áttekintése
 description: Ez a témakör bemutatja a Microsoft Dynamics 365 Supply Chain Management minőség- és szabálytalanságkezelési funkcióit, és azt, hogyan lehet javítani az ellátási láncban a termékek minőségét.
-author: perlynne
+author: yufeihuang
 ms.date: 03/23/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: InventItemSampling, InventNonConformanceHistory, InventNonConformanceTable, InventQualityOrderLineResults, InventQualityOrderTable, InventTestCorrection, InventTestDiagnosticType, InventTestInstrument, InventTestReportSetup, InventTestTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 11574
+ms.custom:
+- "11574"
+- intro-internal
 ms.assetid: 5ac8a059-5cb4-4cb5-ba14-b944bd08dae9
 ms.search.region: Global
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7ca6f9884b1d977e36f04f6da04ab8a0ea228632
-ms.sourcegitcommit: 8362f3bd32ce8b9a5af93c8e57daef732a93b19e
-ms.translationtype: HT
+ms.openlocfilehash: 1bb4bcb7f554c22b4e1ab1b41867bd2d3dcca4d4
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "5956230"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985509"
 ---
 # <a name="quality-and-nonconformance-management-overview"></a>A minőség- és a szabálytalanságkezelés áttekintése
 
@@ -62,7 +64,7 @@ A minőségkezelés rugalmas és sokféle módon megvalósítható, így meg tud
 - Dokumentálja a szabálytalanság kezelésének költségeit. Ezek a költségek magukba foglalhatnak eszközöket (például pótalkatrészeket), különféle díjakat, és a szabálytalanság kijavítására szánt óradíjakat.
 - Ütemezze a javítási folyamatokat a minőségi rendelésekhez csatolt korrekció kezelő segítségével.
 
-[![Minőségkezelési folyamat](media/quality-management-process-diagram.png)](media/quality-management-process-diagram.png)
+[![Minőségkezelési folyamat.](media/quality-management-process-diagram.png)](media/quality-management-process-diagram.png)
 
 ## <a name="product-testing-and-quality-orders"></a>Terméktesztelés és minőségi rendelések.
 

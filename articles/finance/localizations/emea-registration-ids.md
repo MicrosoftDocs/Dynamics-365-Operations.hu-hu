@@ -2,27 +2,24 @@
 title: Nyilvántartási azonosítók
 description: Ez a témakör a nyilvántartási azonosítók beállításával és karbantartásával kapcsolatban nyújt tájékoztatást.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: 264824
 ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7a0b978228e26ec70457a4bcb1c064070953909b
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 544e994a18811995afc64c052a3f97e622529162b8a14b17206c370026b78ac4
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6782816"
 ---
 # <a name="registration-ids"></a>Nyilvántartási azonosítók
 
@@ -58,7 +55,7 @@ A nyilvántartási kategória egy olyan ország-/régióalapú nyilvántartási 
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Globális címjegyzék nyilvántartási azonosítóinak megadása
 
-A globális címjegyzék vevők, szállítók, partnerek, üzleti kapcsolatok és jogi személyek összevont címadatait tartalmazza. A további tudnivalókat lásd: [Globális címjegyzék áttekintése](../../fin-and-ops/organization-administration/overview-global-address-book.md). A globális címjegyzékben tárolt partnerrekordok egy vagy több címrekordot tartalmazhatnak. Ezeket a címeket különböző – például számlázási vagy szállítási – célokra használják. Nyilvántartási azonosítók beállíthatók vevők, szállítók, dolgozók és jogi személyek címadataihoz. Keresse meg a fél (jogi személy, szállító, vevő, dolgozó) rekordját, amelyhez meg kívánja adni a nyilvántartási azonosítót, majd kattintson a **Regisztrációs azonosítók** elemre a fél, jogi személy, szállító, vevő, dolgozó űrlapján a **Címek kezelése** oldal megnyitásához. Az **Adóregisztráció** lapon kattintson a **Hozzáadás** elemre, és adja meg a következő információkat a nyilvántartási azonosítóhoz.
+A globális címjegyzék vevők, szállítók, partnerek, üzleti kapcsolatok és jogi személyek összevont címadatait tartalmazza. A további tudnivalókat lásd: [Globális címjegyzék áttekintése](../../fin-ops-core/fin-ops/organization-administration/overview-global-address-book.md). A globális címjegyzékben tárolt partnerrekordok egy vagy több címrekordot tartalmazhatnak. Ezeket a címeket különböző – például számlázási vagy szállítási – célokra használják. Nyilvántartási azonosítók beállíthatók vevők, szállítók, dolgozók és jogi személyek címadataihoz. Keresse meg a fél (jogi személy, szállító, vevő, dolgozó) rekordját, amelyhez meg kívánja adni a nyilvántartási azonosítót, majd kattintson a **Regisztrációs azonosítók** elemre a fél, jogi személy, szállító, vevő, dolgozó űrlapján a **Címek kezelése** oldal megnyitásához. Az **Adóregisztráció** lapon kattintson a **Hozzáadás** elemre, és adja meg a következő információkat a nyilvántartási azonosítóhoz.
 
 
 |Mező                |Leírás                                                |
@@ -112,3 +109,6 @@ A nyilvántartási azonosítók feldolgozásával kapcsolatos további informác
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

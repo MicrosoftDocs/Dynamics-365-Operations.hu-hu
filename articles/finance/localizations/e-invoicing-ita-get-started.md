@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 8bbb78f0b20ec12fe59dfb3c656b3177b2464004
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
-ms.translationtype: HT
+ms.openlocfilehash: c0197ff9d93833aa50fef56ec597fa0c904d792d
+ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6356077"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8313646"
 ---
 # <a name="get-started-with-electronic-invoicing-for-italy"></a>Első lépések az Olaszországra vonatkozó elektronikus számlázási használata során
 

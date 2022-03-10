@@ -15,20 +15,23 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: ff9f9404ebbcbc7359ee9927d7a92e31808a478a
-ms.sourcegitcommit: e91a1797192fd9bc4048b445bb5c1ad5d333d87d
-ms.translationtype: HT
+ms.openlocfilehash: 9093944a2e225565fc8fdba8f9a487303369c251
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/01/2021
-ms.locfileid: "7728759"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067276"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Dolgozóknak kölcsönzött cikkek kezelése
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A kölcsöncikkek olyan rekordok, amelyek segítik a menedzsert a cég által a munkavállalók számára kölcsönadott tényleges cikkkek követésében. 
 
-Néhány példa olyan cikkekre, amelyek a vállalat kölcsönt adhatnak a dolgozóknak:
+Íme néhány példa azokra a tárgyakra, amelyeket egy vállalat kölcsönözhet a dolgozóknak:
 
 -   Mobiltelefonok
 -   Gépjárművek
@@ -38,7 +41,7 @@ Minden fizikai cikknek rendelkeznie kell egy megfelelő kölcsöncikkel. Minden 
 
 Tétel kölcsönzése esetén jegyezze fel a tétel kölcsönzésének az időpontját és a visszaadás tervezett időpontját. Ha a cikk visszaérkezett, adja meg a tényleges visszaadási időpontot is.
 
-Az alkalmazottak az Alkalmazott önkiszolgáló munkaterületén megtekinthetik a számukra kölcsönadott cikkek **·** rekordjait. Szerkeszthetik a meglévő rekordokat is, illetve új kölcsönadott cikkeket is beírhatnak, ha további fizikai cikkeket kaptak. Egy munkafolyamat beállítható az új vagy meglévő kölcsönadott cikkek módosításainak egy jóváhagyási folyamaton keresztüli útvonal-módosítására. 
+Az alkalmazottak használhatják a **Alkalmazotti önkiszolgáló** munkaterület a nekik kölcsönadott tételek nyilvántartásának megtekintéséhez. A meglévő rekordokat is szerkeszthetik, vagy új kölcsöntételeket adhatnak meg, ha további fizikai tételeket kaptak. Beállítható egy munkafolyamat az új vagy meglévő kölcsöntételek módosításainak átirányítására egy jóváhagyási folyamaton keresztül. 
 
 A vezetők megtekinthetik a közvetlen jelentések közvetlen cikkeit. Megkaphatják az engedélyt új kölcsön cikkek hozzáadására az alkalmazottaik nevében.
 

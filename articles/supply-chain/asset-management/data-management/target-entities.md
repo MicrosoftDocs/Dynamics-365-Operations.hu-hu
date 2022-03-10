@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 3b9fd32d539a8f2e038f571910314889f92e3fd9
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.openlocfilehash: c2d08781ff75b2435e9b71531ce77a59dbee2d90e647087d7c2c58bb4b1227e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5838634"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6772568"
 ---
 # <a name="target-entities"></a>Célentitások
 

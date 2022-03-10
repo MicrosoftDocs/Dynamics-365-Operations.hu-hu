@@ -1,29 +1,26 @@
 ---
 title: Cím hozzáadása szolgáltatási rendeléshez
 description: Ez a témakör bemutatja, hogyan lehet hozzáadni egy vevő címét a szervizrendeléshez.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/02/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 41497eacae8bcc0e57df8062f7f318a39c2b4909
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 055903628b2d72f420415bae5c72d0c7d9d57cba
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429701"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573321"
 ---
 # <a name="add-an-address-to-a-service-order"></a>Cím hozzáadása szolgáltatási rendeléshez    
 
@@ -75,3 +72,6 @@ Egy másodlagos cím hozzáadásához a szervizrendeléshez, tegye a következő
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

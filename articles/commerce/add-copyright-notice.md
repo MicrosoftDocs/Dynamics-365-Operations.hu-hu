@@ -2,11 +2,9 @@
 title: Szerzői jogi értesítés hozzáadása
 description: Ez a témakör azt mutatja be, hogyan lehet az e-kereskedelmi webhelyhez szerzői jogi nyilatkozatot hozzáadni.
 author: psimolin
-manager: AnnBe
 ms.date: 10/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 54d9ccbb56131333159cdf8858dfca23b75b61fd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 4a9a7fed4393f9c35b0bdc765fe7d0723c193f89
+ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980456"
+ms.lasthandoff: 01/12/2022
+ms.locfileid: "7964756"
 ---
 # <a name="add-a-copyright-notice"></a>Szerzői jogi értesítés hozzáadása
 
@@ -68,9 +66,10 @@ A szerzői jogi nyilatkozatot tartalmazó lábléc automatikusan megjelenik a ki
 
 [Kedvencek ikon hozzáadása](add-favicon.md)
 
-[Üdvözlő üzenet hozzáadása](add-welcome-message.md)
-
 [Nyelvek hozzáadása a webhelyhez](add-languages-to-site.md)
 
 [Parancsfájl hozzáadása a webhely oldalaihoz a telemetria támogatásához](add-telemetry.md)
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

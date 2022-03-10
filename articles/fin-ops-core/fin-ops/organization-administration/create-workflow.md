@@ -2,31 +2,34 @@
 title: Munkafolyamatok létrehozása – áttekintés
 description: Ez a témakör a munkafolyamat létrehozásának lépéseit mutatja be.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WorkflowSelectTemplateRnr, WorkflowTableListPageRnr
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.custom: 195583
+ms.custom:
+- "195583"
+- intro-internal
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.openlocfilehash: 23fe13f7e3c7e8138b690c96fafc075c4700a60f
-ms.sourcegitcommit: f5e31c34640add6d40308ac1365cc0ee60e60e24
-ms.translationtype: HT
+ms.openlocfilehash: abdb8ce3186806ac1b756c9161d53547dd8ae40b
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "4693306"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8067958"
 ---
 # <a name="create-workflows-overview"></a>Munkafolyamatok létrehozása – áttekintés
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Ez a témakör a munkafolyamat létrehozásának lépéseit mutatja be.
 
@@ -83,3 +86,6 @@ Ha készen áll a munkafolyamat mentésére és aktiválására, kövesse az al�
 
     - A munkafolyamat aktuális verziójának aktiválásához kattintson az **Új verzió aktiválása** lehetőségre. Ha egy munkafolyamat aktív, akkor a felhasználók dokumentumokat küldhetnek feldolgozásra.
     - Ha nem szeretné aktiválni ezt a verziót, kattintson a **Ne aktiválja az új verziót** lehetőségre. A munkafolyamatot később is aktiválhatja.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

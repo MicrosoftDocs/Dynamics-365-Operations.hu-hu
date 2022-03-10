@@ -1,36 +1,37 @@
 ---
 title: Tanfolyamok beállítása
 description: Az emberi erőforrások-rendszergazdák és a vezetők a tanfolyamok szolgáltatások segítségével karbantartják a dolgozóknak nyújtott képzések információit.
-author: andreabichsel
-ms.date: 06/24/2019
+author: twheeloc
+ms.date: 08/26/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 0718987583d02a76acc2420e5a371c418757e384
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
-ms.translationtype: HT
+ms.openlocfilehash: c66459a044419535d66875cddac7eb73af744ca7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793537"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8066750"
 ---
 # <a name="set-up-training-courses"></a>Tanfolyamok beállítása
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Az emberi erőforrások-rendszergazdák és a vezetők a tanfolyamok szolgáltatások segítségével karbantartják a dolgozóknak nyújtott képzések információit.
 
- <a name="set-up-prerequisites"></a> A telepítés előfeltételei
----------------------
+##  <a name="set-up-prerequisites"></a> A telepítés előfeltételei
 
 A következő adatokat kötelező megadni, és be kell állítani a tanfolyamok létrehozása előtt.
 -   **Tanfolyamtípusok**
@@ -82,7 +83,7 @@ Például a következő műveleteket végezheti:
 - A résztvevők minimális és maximális számának beállítása
 - A tanfolyam helyszínének és tantermének kiválasztása
 - Ajánlott szállodák a tanfolyam résztvevőinek
-- A tanfolyam leírásának létrehozása, amelyet közzé lehet tenni az Alkalmazott önkiszolgáló rendszerben
+- A tanfolyamleírás létrehozása, amelyet közzé lehet tenni az **Alkalmazotti önkiszolgáló** rendszerben
 
   >**Megjegyzés** Csak akkor törölhet egy tanfolyamot, ha nincs hozzá regisztráció. 
 
@@ -128,8 +129,7 @@ Az alábbi táblázat felsorolja a tanfolyam lehetséges állapotok és a művel
 ## <a name="course-participants"></a>Tanfolyam résztvevői
 A tanfolyam résztvevői olyan munkavállalók, akik részt vesznek egy tanfolyamon vagy eseményen. Csak nyitott tanfolyamok résztvevőinek is regisztrálható. A tanfolyamra regisztrálható résztvevők minimális és maximális számát az **Általános** gyorslapon a **Tanfolyamok** lapján határozhatja meg.
 
-<a name="workflow"></a>Munkafolyamat
---------
+## <a name="workflow"></a>Munkafolyamat
 
 Azok az alkalmazottak regisztrációja, akik a tanfolyamra az **Alkalmazotti önkiszolgáló rendszer** oldalán keresztül regisztrálnak, jóváhagyási munkafolyamaton mehet keresztül. Munkafolyamatot tanfolyamhoz a **Tanfolyamok** oldal **Általános** gyorslapján lehet hozzárendelni.
 

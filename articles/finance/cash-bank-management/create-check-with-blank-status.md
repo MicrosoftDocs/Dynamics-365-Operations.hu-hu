@@ -2,11 +2,9 @@
 title: Üres állapotú csekkek létrehozása
 description: Ez a témakör azt mutatja be, hogyan hozhatók létre üres csekkek egy bankszámlához a Csekkek oldalon.
 author: abruer
-manager: AnnBe
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankChequeTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: aa1c4c33b977c0173da98aee409389b9242980fb
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
+ms.openlocfilehash: 3c431ed975aecf116fbf626018038b112a0a8cca063e1462e31e206480643e11
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4976452"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6720550"
 ---
 # <a name="create-checks-that-have-blank-status"></a>Üres állapotú csekkek létrehozása
 
@@ -38,3 +36,6 @@ A **Csekkek** oldalon hajthatók végre a csekkekhez tartozó karbantartási fel
 A **Csekkek** oldal megnyitásához lépjen a **Készpénz- és bankkezelés \> Bankszámlák \> Bankszámlák** részre, és a műveleti ablaktábla **Kifizetések kezelése** lapjának **Kapcsolódó információ** csoportjában válassza a **Csekkek** lehetőséget. Egy másik megoldás, hogy a **Készpénz- és bankkezelés \> Lekérdezések és jelentések \> Csekkek** részre lép.
 
 Ezután az **Üres** állapotú csekkek létrehozásához válassza az **Üres csekkek létrehozása** lehetőséget a műveleti ablaktáblán. Amikor a rendszer üres csekkeket hoz létre, ideiglenesen inaktiválja a társított bankszámlát. Így kisebb annak a kockázata, hogy az üres csekkek létrehozása közben kifizetések jönnek létre. A művelet befejezése után a társított bankszámla újra aktiválódik.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

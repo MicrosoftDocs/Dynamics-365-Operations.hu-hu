@@ -1,28 +1,25 @@
 ---
 title: Előfizetési munkafolyamat áttekintése
 description: Ez a témakör az előfizetési munkafolyamatról nyújt áttekintést.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/07/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionGroup, SMASubscriptionCreateDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 05111ab53e8bf19bb25869155284cdc9d6ea3b2a
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: cd1484563e9650b9ddae543e3440eec2a3ed075c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5242277"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983044"
 ---
 # <a name="subscription-workflow-overview"></a>Előfizetési munkafolyamat áttekintése 
 

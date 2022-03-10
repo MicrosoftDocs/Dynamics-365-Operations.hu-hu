@@ -1,26 +1,24 @@
 ---
 title: Értékesítési ajánlatok létrehozása és szerkesztése
 description: Ez az eljárás bemutatja, hogyan hozhat létre és frissíthet értékesítési árajánlatokat.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/26/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesQuotationListPage, SalesCreateQuotation, SalesQuotationTable, SalesQuotationTotals, SalesQuotationPriceSimulation, SalesQuotationEditLines, SrsReportViewerForm, smmSetNumSeqIfManual, CustTable, SalesTable, CustQuotationConfirmationJournal, CustQuotationJournal, CustSalesLines, SalesQuotationCopying, SalesQuotationDeleteQuotations, SalesQuotationListPagePreviewPane, SalesQuotationTypeGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6735b1a538c7e4c82eb57282ab810490baee1923
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 1c409d294565f89eac95e42f6207573d22859100
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974935"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578944"
 ---
 # <a name="create-and-edit-sales-quotations"></a>Értékesítési ajánlatok létrehozása és szerkesztése
 
@@ -69,3 +67,6 @@ Ez az eljárás bemutatja, hogyan hozhat létre és frissíthet értékesítési
 13. Kattintson az **Értékesítési rendelések** gombra.
 14. Zárja be a lapot.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

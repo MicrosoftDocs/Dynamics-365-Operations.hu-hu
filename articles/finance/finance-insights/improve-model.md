@@ -1,5 +1,5 @@
 ---
-title: Az előrejelzési modell javítása (előzetes verzió)
+title: Az előrejelzési modell javítása
 description: Ez a témakör az előrejelzési modellek teljesítményének javítására használható funkciókat ismerteti.
 author: ShivamPandey-msft
 ms.date: 07/16/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 376e48a442f5a1b459077fb7a0d52faf974a792f
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
-ms.translationtype: HT
+ms.openlocfilehash: 804c18c1b165fff99390db1fda22da0137249373
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638416"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7595037"
 ---
-# <a name="improve-the-prediction-model-preview"></a>Az előrejelzési modell javítása (előzetes verzió)
+# <a name="improve-the-prediction-model"></a>Az előrejelzési modell javítása
 
 [!include [banner](../includes/banner.md)]
 
@@ -75,6 +75,6 @@ A következő mezőt nem szabad kiválasztani betanításhoz:
 
 A képzésre használt számlák szűréséhez szűrőfeltételeket kell meghatározni a számla vagy a vevőtáblák mezőihez. Beállíthatja például azt a küszöbértéket, hogy csak azok a számlák szerepeljenek a halmazban, amelyek teljes összege eléri vagy meghaladja a megadott összeget. Arra is lehetőség van, hogy kizárja az adott vevőcsoportba tartozó vevőkhöz kapcsolódó számlákat.
 
-Az adatszűréssel kapcsolatos további tudnivalókat lásd: [Előrejelzési modell létrehozása](https://docs.microsoft.com/ai-builder/prediction-create-model#filter-your-data).
+Az adatszűréssel kapcsolatos további tudnivalókat lásd: [Előrejelzési modell létrehozása](/ai-builder/prediction-create-model#filter-your-data).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

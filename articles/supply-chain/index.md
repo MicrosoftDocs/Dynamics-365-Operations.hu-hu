@@ -2,27 +2,25 @@
 title: Supply Chain Management kezdőlapja
 description: Ez az oldal a Supply Chain Management-funkciók súgótémaköreinek és más erőforrásainak listáját tartalmazza.
 author: kamaybac
-manager: tfehr
-ms.date: 01/08/2021
+ms.date: 09/15/2021
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: ''
+ms.custom: intro-internal
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 17c8b95dd9cf05813d765d4552f493a1a1b00f31
-ms.sourcegitcommit: 79621e667cd7f48ba3bdbf2731f6f33d8e9f57f6
+ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
+ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "5154279"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "7487864"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management kezdőlapja
 
@@ -64,7 +62,6 @@ Ez a rövid videó összefoglalja a Microsoft Dynamics 365 for Finance and Opera
 
 Ezek a rövid videók összefoglalják a Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3-as verziójához (2017. december) hozzáadott új ellátásilánc-kezelési funkciókat.
 
-- [Potenciális ügyfelek készpénzre váltása – integráció](https://youtu.be/AVV9x5x-XCg) 
 - [Optimalizálási tanácsadó](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Konfiguráció másolása a raktársablon segítségével](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
@@ -83,8 +80,8 @@ A következő műszaki konferencián készült felvételek a Finance and Operati
 - **Alaptervezés:**
   - [Az igény-előrejelzési funkció kiterjesztése](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
   - [Alaptervezés – tippek és trükkök a hibajavítási teljesítményért](https://youtu.be/7v8BPmEs9Dg)
-  - [Segítség! Lassú az MRP!](https://youtu.be/RLXybx20B5o)
-- **Termékinformáció-kezelés:**
+  - [MRP teljesítményhangolás](https://youtu.be/RLXybx20B5o)
+- **Termékinformációk kezelése:**
   - [Termékkonfiguráló a Microsoft Dynamics AX szolgáltatásban](https://youtu.be/zotrj3SbCl4)
 - **Raktárkezelés:**
   - [Hozza ki a legtöbbet a raktárkezelési rendszeréből](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
@@ -96,13 +93,16 @@ A következő műszaki konferencián készült felvételek a Finance and Operati
 
 ## <a name="blogs"></a>Blogok
 
-A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/axmfg/) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm/) több témakör is szól a gyártásról és az ellátásilánc-kezelésről. A bejegyezések legnagyobb része az előző verzióval kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban.
+A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](/archive/blogs/axmfg/) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm/) több témakör is szól a gyártásról és az ellátásilánc-kezelésről. A bejegyezések legnagyobb része az előző verzióval kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban.
 
 ## <a name="white-papers"></a>Tanulmányok
 
-- [Lean manufacturing: Ígérhető és kanbanfeladatok ütemezése](https://docs.microsoft.com/dynamics/s-e/)
+- [Lean manufacturing: Ígérhető és kanbanfeladatok ütemezése](/dynamics/s-e/)
 - [Darabjegyzék-számítás költségszámítási táblázat segítségével](https://www.microsoft.com/download/details.aspx?id=101937/)
 
 ## <a name="elearning-courses"></a>eLearning-tanfolyamok
 
-Az online tanfolyamokkal és tréningekkel kapcsolatban tekintse meg a következőt: [Dynamics 365 Supply Chain Management a Microsoft Learn szolgáltatásban](https://docs.microsoft.com/learn/browse/?products=dynamics-scm&resource_type=learning%20path).
+Az online tanfolyamokkal és tréningekkel kapcsolatban tekintse meg a következőt: [Dynamics 365 Supply Chain Management a Microsoft Learn szolgáltatásban](/learn/browse/?products=dynamics-scm&resource_type=learning+path).
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,26 +2,23 @@
 title: Rendszer által irányított munka sorrendbe állítása
 description: Ez a témakör a rendszer által irányított munka sorrendbe állítással kapcsolatban tartalmaz tájékoztatást. Ez a funkció lehetővé teszi a rendszer által a felhasználóknak a végrehajtásra bemutatott munkarendelések rendezését és szűrését. Ez olyan esetekben hasznos, amikor további feltételek szükségesek a raktári kitárolási folyamat vezetéséhez.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/03/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSRFSystemDirectedWorkSequenceQuery, WHSLocDirTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-03
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 86d396b069a354b8fa7e15793372a8293273d238
-ms.sourcegitcommit: 827d77c638555396b32d36af5d22d1b61dafb0e8
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: b433787f330de3634c59f7b1b2babfe07e3bdf09
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4429907"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577816"
 ---
 # <a name="system-directed-work-sequencing"></a>Rendszer által irányított munka sorrendbe állítása
 
@@ -305,3 +302,6 @@ A rendszer által irányított munka sorrendbe állítás lekérdezések *inkluz
 Emiatt a forgatókönyv példájában a lekérdezés a *4.* munkaazonosítót is rögzítette. A létrehozásakor két sor lett hozzáadva: egy 25 ea-val, egy másik pedig 10 ea-val. A munka továbbra is megjelenik a felhasználó számára, mert legalább egy munkasornak 20 ea-nál kisebb a mennyisége.
 
 A forgatókönyvtől függően megakadályozhatja ezt a viselkedést munkaszünetek segítségével.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

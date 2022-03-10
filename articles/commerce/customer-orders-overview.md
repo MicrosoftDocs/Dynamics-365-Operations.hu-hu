@@ -2,32 +2,34 @@
 title: Vevői rendelések a pénztárban (POS)
 description: Ez a témakör a pénztár (POS) vevői rendeléseivel kapcsolatban tartalmaz információkat. A vevői rendelések speciális rendelések néven is ismertek. A témakör a kapcsolódó paramétereket és tranzakciófolyamatokat is tárgyalja.
 author: josaw1
-ms.date: 01/06/2021
-ms.topic: article
+ms.date: 08/02/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: RetailFunctionalityProfile
 audience: Application User
 ms.reviewer: josaw
-ms.custom: 260594
+ms.custom:
+- "260594"
+- intro-internal
 ms.assetid: 6fc835ef-d62e-4f23-9d49-50299be642ca
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: anpurush
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: a310c7067b399fb35ccc8a1b17d8bd6822a27a62
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.openlocfilehash: 9ebdad47d761f775cf26666dc3e2736818fb4832
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5821008"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982818"
 ---
 # <a name="customer-orders-in-point-of-sale-pos"></a>Vevői rendelések a pénztárban (POS)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a pénztár (POS) azzal kapcsolatban tartalmaz információkat, hogyan hozhat létre és kezelhet vevői rendeléseket a pénztárban (POS). A vevői rendelések arra használhatók fel, hogy olyan értékesítéseket rögzítsenek, amelyeknél a vásárlók egy későbbi időpontban kívánnak termékeket felvenni, másik helyről szeretnének termékeket átvenni, vagy kiszállítást kérnek. 
+Ez a témakör a pénztár (POS) alkalmazásban a vevői rendelések létrehozásának és kezelésének módjáról tartalmaz információkat. A vevői rendelések arra használhatók fel, hogy olyan értékesítéseket rögzítsenek, amelyeknél a vásárlók egy későbbi időpontban kívánnak termékeket felvenni, másik helyről szeretnének termékeket átvenni, vagy kiszállítást kérnek. 
 
 A sokcsatornás kereskedelmi világ számos kiskereskedő biztosít lehetőséget vevői rendelésekre vagy speciális rendelésekre, hogy így elégítsen ki termékkel és teljesítéssel kapcsolatos különböző igényeket. Íme néhány tipikus forgatókönyv:
 
@@ -42,9 +44,9 @@ Mielőtt megpróbálja használni a POS rendszer vevői rendelés funkcióját, 
 
 ### <a name="configure-modes-of-delivery"></a>Szállítási módok beállítása
 
-A vevői rendelések használatához konfigurálni kell azokat a szállítási módokat, amelyeket az üzlet csatornája használhat. Legalább egy szállítási módot meg kell határoznia, amely akkor használható, ha a rendelési sorokat egy üzletből a vevőhöz szállítják. Legalább egy átvételi módot is meg kell határoznia, amely akkor használható, ha a rendelési sorokat egy üzletben veszik át. A szállítási módok a Commerce-központ **Szállítási módok** oldalán vannak meghatározva . A szállítási módok konfigurálásával kapcsolatos további információkat a Kereskedelmi csatornákon lásd: [Szállítási módok definiálása](https://docs.microsoft.com/dynamics365/commerce/configure-call-center-delivery#define-delivery-modes).
+A vevői rendelések használatához konfigurálni kell azokat a szállítási módokat, amelyeket az üzlet csatornája használhat. Legalább egy szállítási módot meg kell határoznia, amely akkor használható, ha a rendelési sorokat egy üzletből a vevőhöz szállítják. Legalább egy átvételi módot is meg kell határoznia, amely akkor használható, ha a rendelési sorokat egy üzletben veszik át. A szállítási módok a Commerce-központ **Szállítási módok** oldalán vannak meghatározva . A szállítási módok konfigurálásával kapcsolatos további információkat a Kereskedelmi csatornákon lásd: [Szállítási módok definiálása](./configure-call-center-delivery.md#define-delivery-modes).
 
-![Szállítási módok oldal](media/customer-order-modes-of-delivery.png)
+![Szállítási módok oldal.](media/customer-order-modes-of-delivery.png)
 
 
 ### <a name="set-up-fulfillment-groups"></a>Teljesítési csoportok beállítása
@@ -53,7 +55,7 @@ Előfordulhat, hogy egyes raktárak vagy raktári helyek nem tudják teljesíten
 
 A Commerce 10.0.12 és újabb verzióiban a vállalatok meghatározhatják, hogy a teljesítési csoportokban definiált raktár vagy raktár- és üzletkombinációk használhatók-e vagy szállításra, felvételre vagy szállításra és felvételre is. Ezzel még nagyobb rugalmasságot biztosít a vállalat számára annak meghatározásához, hogy mely raktárak választhatók ki a szállítandó cikkek vevői rendelésének létrehozásakor, illetve, hogy a szállítandó cikkek vevői rendelésének létrehozásakor mely üzleteket lehet kiválasztani. Ezen konfigurációs beállítások hasznáaltához be kell kapcsolni azt a **Helyek meghatározása „Szállításra” vagy „Átvételre” engedélyezve Teljesítési csoportban** funkciót. Ha egy teljesítési csoporthoz csatolt raktár nem üzlet, akkor csak szállítási helyként konfigurálható. Nem használható, ha a pénztárban átvételre konfigurálták a rendelést.
 
-![Teljesítési csoportok oldal](media/customer-order-fulfillment-group.png)
+![Teljesítési csoportok oldal.](media/customer-order-fulfillment-group.png)
 
 ### <a name="configure-channel-settings"></a>Csatornabeállítások megadása
 
@@ -65,7 +67,7 @@ Amikor a vevői rendelésekkel dolgozik a pénztárban, figyelembe kell vennie a
 - **Célhelyen alapuló adó használata** – Ez a beállítás azt jelzi, hogy a szállítási cím használatos-e a vevő címére leszállított rendeléssorok esetében alkalmazott áfacsoportok meghatározására.
 - **Vevőn alapuló adó használata** – Ez a beállítás azt jelzi, hogy a vevő szállítási címéhez megadott adócsoport van-e alkalmazva a vevő otthonába történő szállításhoz a POS rendszerben létrehozott vevői rendelésekre.
 
-![A csatorna beállításának használat az Áruházak lapon](media/customer-order-all-stores.png)
+![A csatorna beállításának használat az Áruházak lapon.](media/customer-order-all-stores.png)
 
 ### <a name="set-up-customer-order-parameters"></a>Ügyfélrendelés paramétereinek beállítása
 
@@ -78,24 +80,24 @@ Mielőtt megpróbálkozna a vevői rendelések létrehozásával a POS rendszerb
 - **Lemondási díj százalékos értéke** – ha vevői rendelés visszavonásakor díjfizetés szükséges, úgy adja meg ezen díj összegét.
 - **Lemondás költségkódja** – adja meg a Kinnlevőség költségkódját, amelyet akkor kell alkalmazni, ha a lemondott vevői rendelésekre a lemondási költséget alkalmaz a program a pénztárban. A költségkód határozza meg a lemondási díj pénzügyi feladási logikáját.
 - **Szállítás költségkódja** – Ha a **Speciális automatikus költségek használata** beállítás értéke **Igen**, akkor ennek a paraméterbeállításnak nincs hatása. Ha ez a beállítás **Nem** értékre van állítva, akkor a program felkéri a felhasználót, hogy manuálisan adja meg a szállítási költséget, amikor vevői rendeléseket hoz létre a pénztárban. Ezzel a paraméterrel hozzárendelheti a Kinnlevőségek költségkódját, amelyet a program a rendelésekre alkalmaz, amikor a felhasználók szállítási költséget határoznak meg. A költségkód határozza meg a szállítási díj pénzügyi feladási logikáját.
-- **Speciális automatikus költség használata** – Ezt a beállítást **Igen** értékre kell állítani, ha a rendszer által kiszámított automatikus költséget kívánja használni a vevői rendelések létrehozásakor a POS rendszerben. Ezek az automatikus költségek szállítási költségek vagy más rendelés vagy tételspecifikus költségek kiszámítására használhatók. A speciális automatikus költség funkció beállításával és használatával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Többcsatornás speciális automatikus költségek](https://docs.microsoft.com/dynamics365/commerce/omni-auto-charges).
+- **Speciális automatikus költség használata** – Ezt a beállítást **Igen** értékre kell állítani, ha a rendszer által kiszámított automatikus költséget kívánja használni a vevői rendelések létrehozásakor a POS rendszerben. Ezek az automatikus költségek szállítási költségek vagy más rendelés vagy tételspecifikus költségek kiszámítására használhatók. A speciális automatikus költség funkció beállításával és használatával kapcsolatban a következő témakör tartalmaz további tájékoztatást: [Többcsatornás speciális automatikus költségek](./omni-auto-charges.md).
 
-![Vevői rendelések lap a Commerce-paraméterek oldalon](media/customer-order-parameters.png)
+![Vevői rendelések lap a Commerce-paraméterek oldalon.](media/customer-order-parameters.png)
 
 ### <a name="update-transaction-screen-layouts-in-pos"></a>Tranzakciós képernyő-elrendezések frissítése a pénztár rendszerben
 
-Győződjön meg róla, hogy a pénztár [képernyő elrendezése](https://docs.microsoft.com/dynamics365/commerce/pos-screen-layouts) úgy van beállítva, hogy támogassa a vevői rendelések létrehozását és kezelését, valamint az összes szükséges POS-művelet konfigurálva legyen. Az alábbiakban néhány olyan Pénztári művelet szerepel, amelyeket a vevői rendelések helyes létrehozásához és kezeléséhez ajánlott használni:
+Győződjön meg róla, hogy a pénztár [képernyő elrendezése](./pos-screen-layouts.md) úgy van beállítva, hogy támogassa a vevői rendelések létrehozását és kezelését, valamint az összes szükséges POS-művelet konfigurálva legyen. Az alábbiakban néhány olyan Pénztári művelet szerepel, amelyeket a vevői rendelések helyes létrehozásához és kezeléséhez ajánlott használni:
 - **Minden termék szállítása** – Ennek a műveletnek a segítségével megadhatja, hogy a program a tranzakciós kosár minden sorát egy célhelyre szállítsa ki.
 - **Kiválasztott termékek szállítása** – Ennek a műveletnek a segítségével megadhatja, hogy a program a tranzakciós kosár kiválasztott sorait egy célhelyre szállítsa ki.
 - **Minden termék átvétele** – Ennek a műveletnek a segítségével megadhatja, hogy a tranzakciós kosár minden sora a kiválasztott áruházi helyről lesz átvéve.
 - **Kiválasztott termékek átvétele** – Ennek a műveletnek a segítségével megadhatja, hogy a tranzakciós kosár kiválasztott sorai a kiválasztott áruházi helyről lesznek átvéve.
 - **Az összes termék kiszállítása** – Ennek a műveletnek a segítségével megadhatja, hogy a tranzakciós kosár minden sora ki lesz szállítva. Ha ez a művelet a POS rendszerben használatos, akkor a program a vevői rendelést készpénz-és szállítási tranzakcióra fogja átalakítani.
-- **A kiválasztott termékek elvitele** – Ennek a műveletnek a segítségével megadhatja, hogy a vevő a vásárláskor a tranzakciós kosárban szereplő kiválasztott sorokat elviszi. Ez a művelet csak [hibrid rendelés](https://docs.microsoft.com/dynamics365/commerce/hybrid-customer-orders) esetén hasznos.
+- **A kiválasztott termékek elvitele** – Ennek a műveletnek a segítségével megadhatja, hogy a vevő a vásárláskor a tranzakciós kosárban szereplő kiválasztott sorokat elviszi. Ez a művelet csak [hibrid rendelés](./hybrid-customer-orders.md) esetén hasznos.
 - **Rendelés előhívása** – Ennek a műveletnek a használatával lehet megkeresni és előhívni a vevői rendeléseket, hogy a pénztári felhasználók igény szerint szerkesszék érvénytelenítsék vagy végrehajtsák a teljesítéssel kapcsolatos műveleteiket.
 - **Szállítási mód módosítása** – Ezzel a művelettel gyorsan megváltoztathatja a szállítási módot azoknál a soroknál, amelyek már be vannak állítva a szállításhoz, anélkül, hogy a felhasználó ismét végigmenne az „összes termék szállítása” vagy a „kiválasztott termék szállítása” folyamaton.
 - **Letét felülbírálása** – Ezzel a művelettel módosítható a vevő által a kiválasztott vevői rendeléshez fizetett letét összege.
 
-![Műveletek a pénztár tranzakciós képernyőjén](media/customer-order-screen-layout.png)
+![Műveletek a pénztár tranzakciós képernyőjén.](media/customer-order-screen-layout.png)
 
 ## <a name="work-with-customer-orders-in-pos"></a>Vevői rendelések használata a pénztárban
 
@@ -128,7 +130,11 @@ Győződjön meg róla, hogy a pénztár [képernyő elrendezése](https://docs.
 Az online vagy az áruházi csatornában létrehozott kiskereskedelmi rendelések igény szerint visszahívhatók és szerkeszthetők a pénztári rendszer használatával.
 
 > [!IMPORTANT]
-> Nem minden kiskereskedelmi rendelés szerkeszthető a pénztáralkalmazáson keresztül. Egy hívásközpont-csatornában létrehozott rendelések nem szerkeszthetők a pénztárban ha a [Rendeléskiegészítés engedélyezése](https://docs.microsoft.com/dynamics365/commerce/set-up-order-processing-options#enable-order-completion) beállítás be van kapcsolva a hívásközpont csatornához. A helyes fizetésfeldolgozásbiztosításához a hívásközpont-csatornából származó és a rendelés kiegészítését engedélyező szolgáltatásokat a Commerce-központ hívásközpont alkalmazásán keresztül kell szerkeszteni.
+> Nem minden kiskereskedelmi rendelés szerkeszthető a pénztáralkalmazáson keresztül. Egy hívásközpont-csatornában létrehozott rendelések nem szerkeszthetők a pénztárban ha a [Rendeléskiegészítés engedélyezése](./set-up-order-processing-options.md#enable-order-completion) beállítás be van kapcsolva a hívásközpont csatornához. A helyes fizetésfeldolgozásbiztosításához a hívásközpont-csatornából származó és a rendelés kiegészítését engedélyező szolgáltatásokat a Commerce-központ hívásközpont alkalmazásán keresztül kell szerkeszteni.
+
+> [!NOTE]
+> Azt ajánljuk, hogy a Commerce Headquarters alkalmazásban ne szerkessze a nem hívásközponti felhasználó által létrehozott rendeléseket és árajánlatokat a POS-ban. Ezek a rendelések és árajánlatok nem használják a Commerce árképzési motort, ezért ha a POS-ban szerkesztik őket, akkor a Commerce árképzési motor újra fogja árazni őket.
+
 
 A 10.0.17-es és újabb verziókban a felhasználók még akkor is szerkeszthetik a felveendő rendeléseket a pénztáralkalmazáson keresztül, ha a rendelést részlegesen teljesítették. A teljesen kiszámlázott rendelések azonban a pénztári rendszerből továbbra sem szerkeszthetők. A funkció engedélyezéséhez kapcsolja be az **(Előzetes verzió) Részben teljesített rendelések szerkesztése** funkciót a **Funkciókezelés** munkaterületen a Pénztárban. Ha ez a funkció nincs engedélyezve, vagy ha a 10.0.16-os vagy korábbi verziót használja, a felhasználók csak akkor szerkeszthetik a vevői rendeléseket a pénztárban, ha a rendelés teljesen nyitva van. Ezenkívül ha a funkció engedélyezve van, korlátozhatja, hogy mely üzletek szerkeszthetik a részlegesen teljesített rendeléseket. Ezen képesség adott üzletekre vonatkozó letiltását az **Általános** gyorslap **Funkcióprofil** pontjában állíthatja be.
 
@@ -140,7 +146,23 @@ A 10.0.17-es és újabb verziókban a felhasználók még akkor is szerkesztheti
 5. Fejezze be a szerkesztési folyamatot egy kifizetési művelet kiválasztásával.
 6. He ki szeretne lépni a szerkesztési folyamatból a módosítások mentése nélkül, akkor használja a **Tranzakciós érvénytelenítése** műveletet.
 
+#### <a name="pricing-impact-when-orders-are-edited"></a>Árképzés hatása a megrendelések szerkesztésekor
 
+Amikor a megrendeléseket a POS-ban vagy egy Commerce e-kereskedelmi webhelyen adják le, a vevők elkötelezik magukat egy összeg mellett. Ez az összeg tartalmaz egy árat, valamint tartalmazhat engedményt is. Az a vevő, aki rendelést ad fel, majd később kapcsolatba lép a hívásközponttal, és módosítja a rendelést (például egy másik cikk felvétele érdekében), különleges elvárásai lesznek az engedmények alkalmazásával kapcsolatban. Még ha a meglévő rendeléssorok promóciói le is járnak, a vevő arra számít, hogy az eredetileg az ilyen sorokra alkalmazott kedvezmények érvényben maradnak. Ha viszont a rendelés eredeti leadásakor nem volt érvényben engedmény, de azóta hatályba lépett egy engedmény, akkor a vevő azt várja, hogy az új engedményt a módosított rendelésre alkalmazzák. Ellenkező esetben előfordulhat, hogy a vevő egyszerűen érvényteleníti a meglévő rendelést, és létrehoz egy új rendelést, amely az új engedményt is tartalmazza. Ahogy ez a helyzet is mutatja, meg kell őrizni azokat az árakat és engedményeket, amelyekre a vevők kötelezettséget vállalnak. Ugyanakkor a POS és a hívásközpont felhasználóinak is rugalmasan kell újraszámolniuk szükség szerint az értékesítésirendelés-sorok árait és engedményeit.
+
+Amikor a rendeléseket a POS-ban visszahívják és szerkesztik, a meglévő rendeléssorok árai és engedményei "zároltnak" minősülnek. Más szóval nem módosulnak akkor sem, ha bizonyos rendeléssorokat visszavonnak vagy módosítnak, vagy új rendeléssorokat adnak hozzá. A meglévő értékesítési sorok árainak és engedményeinek módosításához a POS felhasználónak az **Újraszámítás** lehetőséget kell választania. Ezt követően a rendszer eltávolítja az árzárolást a meglévő rendeléssorokból. A Commerce 10.0.21-es verziója előtt azonban ez a képesség nem volt elérhető a hívásközpontban. Ehelyett a rendeléssorok módosításai az árak és engedmények újraszámításával jártak.
+
+A Commerce rendszer 10.0.21-es verziójának kiadásában egy új, **Nem szándékos árszámítás megakadályozása kereskedelmi rendelésekhez** nevű funkció érhető el a **Funkciókezelés** munkaterületen. Ez a funkció alapértelmezés szerint be van kapcsolva. Ha be van kapcsolva, minden e-kereskedelmi rendelés számára egy új, **Zárolt ár** nevű tulajdonság érhető el. Miután a rendelésrögzítés befejeződött a bármely csatornából származó rendelésekhez, ez a tulajdonság automatikusan engedélyezett lesz (azaz a jelölőnégyzete be lesz jelölve) az összes rendeléssornál. A Commerce árképző motor ezután kizárja ezeket a rendeléssorokat az összes ár- és engedményszámításból. Ezért ha módosítja a rendelést, akkor alapértelmezés szerint a rendeléssorok ki lesznek zárva az árképzési és engedményszámításból. A hívásközponti felhasználók azonban letilthatják a tulajdonságot (azaz törölhetik a jelölőnégyzetet) bármely rendelési sorhoz, majd az **Újraszámítás** kiválasztásával a meglévő rendeléssorokat belefoglalhatják az árképzési számításokba.
+
+Még akkor is, ha manuális engedményt alkalmaznak egy meglévő értékesítési sorra, a hívásközponti felhasználóknak le kell tiltaniuk az értékesítési sor **Zárolt ár** tulajdonságát, mielőtt a manuális engedményt alkalmazhatják.
+
+A hívásközponti felhasználók szintén letilthatják a **Zárolt ár** tulajdonságot a tömeges rendeléssorok esetén, ha az **Értékesítési rendelés** lap Művelet ablaktáblájának **Eladás** lapján a **Számítás** csoportban az **Árzárolás eltávolítása** lehetőséget választják. Ebben az esetben a rendszer eltávolítja az árzárolást minden rendeléssorból, kivéve azokat a sorokat, amelyek nem szerkeszthetők (más szóval a **Részlegesen számlázott** vagy **Számlázott** állapotú sorokat). Ezután a rendelés módosításainak befejezését és beküldését követően a rendszer az összes rendeléssorhoz újrarendeli az árzárolást.
+
+> [!IMPORTANT]
+> Ha be van kapcsolva a **Kereskedelmi rendelések véletlen árszámításának megakadályozása** funkció, az árképzési munkafolyamatokban figyelmen kívül lesznek hagyva a kereskedelmi megállapodások kiértékelésének beállítása. Más szóval a kereskedelmi megállapodás kiértékelése párbeszédpaneleken nem jelenik meg az **Árhoz kapcsolódó** szakasz. Ez a viselkedés azért következik be, mert mind a kereskedelmi megállapodás kiértékelési beállításának, mind az árrögzítési funkciónak hasonló a célja: a nem szándékos árváltozások megakadályozása. A kereskedelmi megállapodások kiértékelésében szerzett felhasználói tapasztalat azonban nem megfelelő a nagy rendelésekhez, ahol a felhasználóknak ki kell választaniuk egy vagy több rendelési sort az ismételt árképzéshez.
+
+> [!NOTE]
+> A **Zárolt ár** tulajdonság csak akkor tiltható le egy vagy több kiválasztott sorra, ha a **Hívásközpont** modult használják. A POS működése változatlan marad. Más szóval a POS-felhasználó nem tudja feloldani a kiválasztott rendeléssorok árait. Választhatja azonban az **Újraszámítás** lehetőséget, hogy az árzárolást eltávolítsa az összes meglévő rendeléssorból.
 
 ### <a name="cancel-a-customer-order"></a>Vevői visszavonása
 
@@ -153,7 +175,7 @@ A 10.0.17-es és újabb verziókban a felhasználók még akkor is szerkesztheti
 
 ## <a name="finalizing-the-customer-order-shipment-or-pickup-from-pos"></a>A vevői rendelési szállításának vagy felvételének véglegesítése a pénztárból
 
-Miután létrehozta a rendelést, a cikkeket a vevő egy üzletből veszi fel, vagy ki lesznek szállítva a rendelés konfigurációjától függően. A folyamattal kapcsolatos további tudnivalókat lásd az [áruházi rendelés teljesítése](https://docs.microsoft.com/dynamics365/commerce/order-fulfillment-overview) dokumentációt.
+Miután létrehozta a rendelést, a cikkeket a vevő egy üzletből veszi fel, vagy ki lesznek szállítva a rendelés konfigurációjától függően. A folyamattal kapcsolatos további tudnivalókat lásd az [áruházi rendelés teljesítése](./order-fulfillment-overview.md) dokumentációt.
 
 ## <a name="asynchronous-transaction-flow-for-customer-orders"></a>Tranzakció aszinkron folyamata vevői rendeléseknél
 

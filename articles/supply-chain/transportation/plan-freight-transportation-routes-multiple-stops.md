@@ -1,7 +1,7 @@
 ---
 title: Többmegállós szállítási útvonal tervezése
 description: Ez a cikk a Dynamics 365 Supply Chain Management szállítási útvonalak tervezéséhez használt különböző elemeit ismerteti.
-author: MarkusFogelberg
+author: Henrikan
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 90013
 ms.assetid: 50d6f58c-f1c8-4321-9e83-8445cec57a85
 ms.search.region: Global
-ms.author: mafoge
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c7c52adcd93bf90f99329a2eeb8519e01e5893f3
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.openlocfilehash: eff1efd7530c410b392646e39325b58cbd8bcf78
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5810558"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571233"
 ---
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Többmegállós szállítási útvonal tervezése
 

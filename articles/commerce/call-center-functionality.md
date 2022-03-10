@@ -2,11 +2,9 @@
 title: Hívásközpont eladási funkciói
 description: Ez a témakör áttekintést ad a hívásközpont értékesítési funkcióiról a Dynamics 365 Commerce szolgáltatásban.
 author: josaw1
-manager: AnnBe
 ms.date: 04/03/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: d3bdba4ac29f5e5b49af02110eb976f154327a43
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: e7b26ab8c6d752b994c280d2bb9cef75060905fde0becec6202d7d1ecb98f47c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5213210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6714735"
 ---
 # <a name="call-center-sales-functionality"></a>Hívásközpont értékesítési funkciói
 

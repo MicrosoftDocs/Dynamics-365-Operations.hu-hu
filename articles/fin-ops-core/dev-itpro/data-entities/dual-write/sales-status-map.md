@@ -4,24 +4,17 @@ description: Ez a témakör azt mutatja be, hogyan lehet beállítani az érték
 author: dasani-madipalli
 ms.date: 06/25/2020
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ms.search.form: ''
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
-ms.custom: ''
-ms.assetid: ''
+ms.reviewer: tfehr
 ms.search.region: global
-ms.search.industry: ''
 ms.author: damadipa
-ms.dyn365.ops.version: ''
 ms.search.validFrom: 2020-06-25
-ms.openlocfilehash: 9afa64df73aa17e7a15a0ee4f4529ac74bcd3c67
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
-ms.translationtype: HT
+ms.openlocfilehash: 53d824ca2fb1eadf34e62bf9c08b837db3efaf42
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750714"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782284"
 ---
 # <a name="set-up-the-mapping-for-the-sales-order-status-columns"></a>Az értékesítési rendelés állapotoszlopaihoz tartozó leképezés beállítása
 
@@ -100,7 +93,7 @@ Az **IsSOPIntegrationEnabled** attribútum engedélyezéséhez kövesse az aláb
 1. Lépjen egy böngészőben a `https://<test-name>.crm.dynamics.com/api/data/v9.0/organizations` címre. Cserélje le a **\<test-name\>** elemet a vállalat a Sales alkalmazásra mutató hivatkozásra.
 2. A megnyitott lapon keresse meg a **organizationid** elemet, és jegyezze fel az értéket.
 
-    ![Az organizationid megkeresése](media/sales-map-orgid.png)
+    ![Az organizationid megkeresése.](media/sales-map-orgid.png)
 
 3. A Sales alkalmazásban meg a böngésző konzolt, majd futtassa a következő parancsfájlt. A 2. lépésből használja az **organizationid** értéket.
 
@@ -119,33 +112,33 @@ Az **IsSOPIntegrationEnabled** attribútum engedélyezéséhez kövesse az aláb
     );
     ```
 
-    ![JavaScript-kód a böngésző konzolján](media/sales-map-script.png)
+    ![JavaScript-kód a böngésző konzolján.](media/sales-map-script.png)
 
 4. Ellenőrizze, hogy a **IsSOPIntegrationEnabled** **igaz** értékre legyen állítva. A 1. lépésből használja az URL-címet az érték ellenőrzéséhez.
 
-    ![A IsSOPIntegrationEnabled igaz értékre van állítva](media/sales-map-integration-enabled.png)
+    ![A IsSOPIntegrationEnabled igaz értékre van állítva.](media/sales-map-integration-enabled.png)
 
 Az **isIntegrationUser** attribútum engedélyezéséhez kövesse az alábbi lépéseket.
 
 1. A Sales alkalmazásban nyissa meg a **Beállítás \> Testreszabás \> Rendszer testreszabása** lehetőséget, válassz a **Felhasználói tábla** lehetőséget, és nyissa meg a **Képernyő \> Felhasználó** elemet.
 
-    ![A feéhasználó képernyő megnyitása](media/sales-map-user.png)
+    ![A feéhasználó képernyő megnyitása.](media/sales-map-user.png)
 
 2. A Mezőkezelőben keresse meg **Integráció felhasználói mód** lehetőséget, majd kattintson rá duplán, hogy hozzáadja a képernyőhöz. Mentse el a módosítást.
 
-    ![Az integrációs felhasználói mód oszlop hozzáadása a képernyőhöz](media/sales-map-field-explorer.png)
+    ![Az integrációs felhasználói mód oszlop hozzáadása a képernyőhöz.](media/sales-map-field-explorer.png)
 
 3. Az Sales alkalmazásban nyissa meg a **Beállítás \> Biztonság \> Felhasználók** lehetőséget és a nézetet módosítsa **Engedélyezett felhasználók** helyett **Alkalmazás felhasználói** értékre.
 
-    ![A nézet módosítása az Engedélyezett felhasználókról az Alkalmazás felhasználóira](media/sales-map-enabled-users.png)
+    ![A nézet módosítása az Engedélyezett felhasználókról az Alkalmazás felhasználóira.](media/sales-map-enabled-users.png)
 
 4. Válassza ki a **DualWrite IntegrationUser** két bejegyzését.
 
-    ![Alkalmazásfelhasználók listája](media/sales-map-user-mode.png)
+    ![Alkalmazásfelhasználók listája.](media/sales-map-user-mode.png)
 
 5. Módosítsa az **Integrációs felhasználói mód** oszlop értékét **Igen** értékre.
 
-    ![Az integrációs felhasználói mód oszlop értékének módosítása Igen értékre](media/sales-map-user-mode-yes.png)
+    ![Az integrációs felhasználói mód oszlop értékének módosítása Igen értékre.](media/sales-map-user-mode-yes.png)
 
 Az értékesítési rendeléseket már le vannak képezve.
 

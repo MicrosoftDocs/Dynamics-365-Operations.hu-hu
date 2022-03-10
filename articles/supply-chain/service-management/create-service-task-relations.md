@@ -1,12 +1,10 @@
 ---
 title: Szervizfeladat-kapcsolatok létrehozása
 description: A szervizfeladatok társítani lehet a szolgáltatási szerződésekhez vagy szervizrendelésekhez, annak leírásához, hogy milyen szervizfeladatokat kell elvégezni a szerződéhez vagy a rendeléshez.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable, SMAAgreementTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea5952376fe30f489d385c8f8295fbf86f2af085
-ms.sourcegitcommit: 34b8f6f5c6134b7b97a9fb41d0b2e63215c67062
-ms.translationtype: HT
+ms.openlocfilehash: b13309816af6984e77f828e827ecffe6266b3ede
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5470737"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576544"
 ---
 # <a name="create-service-task-relations"></a>Szervizfeladat-kapcsolatok létrehozása    
 

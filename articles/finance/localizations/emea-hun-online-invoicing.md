@@ -2,7 +2,7 @@
 title: Online számlázási rendszer
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani az elektronikus jelentéskészítési (ER) konfigurációkat, valamint azt, hogy hogyan lehet beállítani és használni az elektronikus üzenetküldési funkciókat (EM) a valós idejű számlajelentéshez (RTIR).
 author: anasyash
-ms.date: 03/19/2021
+ms.date: 09/20/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 343375641897894589ee0932cc33402ce22dde9e
-ms.sourcegitcommit: 951393b05bf409333cb3c7ad977bcaa804aa801b
-ms.translationtype: HT
+ms.openlocfilehash: b32711efa6cb0ed95022aa7621daf212f920ad41
+ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "5894762"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "7647675"
 ---
 # <a name="online-invoicing-system"></a>Online számlázási rendszer
 
@@ -36,6 +36,8 @@ A témakör a következő feladatok végrehajtásával kapcsolatban tartalmaz t�
 - ER-konfigurációk importálása és a alkalmazásspecifikus paraméterek beállítása.
 - Az EM (elektronikus üzenetküldés) funkció beállítása.
 - Az EM funkció használata az RTIR-hez.
+
+A magyarországi online számlázási rendszerben a TLS 1.2 használata szükséges. A TLS 1.2 engedélyezésével kapcsolatos további tudnivalókat lásd [A TLS 1.2 engedélyezése](/mem/configmgr/core/plan-design/security/enable-tls-1-2). 
 
 ## <a name="import-er-configurations"></a>ER-konfigurációk importálása
 
@@ -66,6 +68,9 @@ Az ER-konfigurációk a Microsoft globális tárából való letöltésével kap
 A számlázási adatoknak a magyar online számlázási rendszerbe történő jelentéséhez használt formátum bizonyos elemekhez (például mértékegység vagy sor kifejezési mutatók) meghatározott értékeket kér számozott listákból. Ezekhez az elemekhez az RTIR használata előtt be kell állítania az alkalmazásfüggő paramétereket, amelyeket az **RTIR számlaadatok (HU)** formátum használni fog.
 
 Ha befejezte a feltételek beállítását, módosítsa az **Állapot** mező értékét **Kész** értékre, mentse a módosításokat, és zárja be a lapot.
+
+> [!NOTE]
+> Javasoljuk, hogy engedélyezze az **Alkalmazásspecifikus paraméterek használata az elektronikus jelentéskészítési formátumok előző verzióiból** funkciót a **Szolgáltatáskezelés** munkaterületen. Ha ez a funkció engedélyezve van, akkor az ER-formátum korábbi verziójához beállított paraméterek automatikusan alkalmazhatók ugyanannak a formátumnak a későbbi verzióira is. Ha ez a funkció nincs engedélyezve, akkor explicit módon konfigurálnia kell az alkalmazásspecifikus paramétereket az egyes formátumverziókhoz. Az **Alkalmazásspecifikus paraméterek használata az elektronikus jelentéskészítési formátumok előző verzióiból** funkció a **Szolgáltatáskezelés** munkaterületen a Finance 10.0.23 verziójától érhető el. Az egyes jogi személyek ER-formátumának paramétereinek beállítását lásd: [Az ER-formátum paramétereinek beállítása jogi személyenként](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md).
 
 ### <a name="line-expression-indicator"></a>Sorkifejezési mutató
 
@@ -211,13 +216,13 @@ Az EM funkciónak a RTIR-hez történő beállításának folyamata számos lép
 10. Válassza a **Feltöltés és hozzáadás** lehetőséget , válassza ki a **HU RTIR setup.zip** fájlt a számítógépen, és töltse fel azt.
 11. Az adatentitások feltöltése után a műveleti ablaktáblán válassza az **Importálás** elemet.
 
-![Adatkezelési munkaterület](media/1_Setup_EM.png)
+![Adatkezelési munkaterület.](media/1_Setup_EM.png)
 
 Értesítést fog kapni az **Üzenetekben**, vagy a lap manuális frissítésével megtekintheti az adatimportálási folyamatokat. Az importálási folyamat befejezésekor a **Végrehajtási összesítő** lap az eredményeket jeleníti meg.
 
 A HU RTIR setup.zip csomag a Magyar online számlázási rendszerrel való együttműködésre képes **Online számlázás** feldolgozás beállítását teszi lehetővé. A következő ábra az **Online számlázás** feldolgozásának sémáját mutatja be.
 
-![Online számlázás feldolgozásának diagramja](media/2_Scema.png)
+![Online számlázás feldolgozásának diagramja.](media/2_Scema.png)
 
 A következő táblázat leírja az **Online számlázás** feldolgozásának feldolgozási műveleteit.
 
@@ -250,12 +255,12 @@ Az adatentitások adatbázisba importálását követően hajtsa végre az aláb
 2. A Műveleti panelen válassza a **Paraméterek** elemet.
 3. A párbeszédpanelen a **Szerepeltetni kívánt rekordok** gyorslapon határozza meg a lekérdezés paramétereinek értékeit.
 
-    ![Új elektronikus üzenetelemek hozzáadása párbeszédpanel](media/3_emea-hun-exec-class.png)
+    ![Új elektronikus üzenetelemek hozzáadása párbeszédpanel.](media/3_emea-hun-exec-class.png)
 
 4. Válassza ki az **OK** lehetőséget.
 5. A **Végrehajtható osztály beállításai** lapon válassza ki az **EMAdditionalFieldsEvaluationController_HU** végrehajtható osztály nevéhez **További mezők értékelése** lehetőséget válassza ki a **Paraméterek** elkemet a Műveleti ablaktáblán, majd a párbeszádpanelen határozza meg a végrehajtható osztály paramétereinek értékeit.
 
-    ![További mezők értékelési paramétereinek párbeszédpanel](media/4_Additional_fields.png)
+    ![További mezők értékelési paramétereinek párbeszédpanel.](media/4_Additional_fields.png)
 
     A paramétereknél a következő értékeket kell beállítani.
 
@@ -279,7 +284,7 @@ Az adatentitások adatbázisba importálását követően hajtsa végre az aláb
 7. Nyissa meg a **Rendszerfelügyelet** \> **Beállítások** \> **Rendszerparaméterek** lehetőséget , és állítsa be a **Speciális tanúsítványtároló használata** lehetőséget **Nem** értékre, ha szeretné helyben tárolni a kényes adatokat. A Key Vault-tárhely használatához válassza az **Igen** beállítást. A Key Vault beállításával kapcsolatos további tudnivalókat lásd: [Azure Key Vault-ügyfél beállítása](https://support.microsoft.com/help/4040305/setting-up-azure-key-vault-client) és [Azure Key Vault-tárhely karbantartása](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage).
 8. Ha a **Rendszerparaméterek** lap **Speciális tanúsítványtároló használata** beállítását **Igen** értékre állítja , akkor be kell állítania a Key Vault paramétereit a **Rendszerfelügyelet** \> **Beállítások** \> **Key Vault paraméterei** helyen.
 
-    ![Key Vault paraméterek oldala](media/5_Key_Vault.png)
+    ![Key Vault paraméterek oldala.](media/5_Key_Vault.png)
 
 9. Nyissa meg az **Adó** \> **Beállítások** \> **Paraméterek** \> **Online számlázási rendszer paraméterei** menüpontot, és adja meg a következő adatokat:
 
@@ -290,11 +295,11 @@ Az adatentitások adatbázisba importálását követően hajtsa végre az aláb
 
 10. Ha a **Rendszerparaméterek** lap **Speciális tanúsítványtároló használata** beállítását **Igen** értékre állítja , válassza a kapcsolódó titkokat az **Online számlázási rendszer paraméterei** lap **Általános** lapján.
 
-    ![Az online számlázási rendszer azon paraméterei, amelyeknél a Speciális tanúsítványtároló használata beállítás értéke Igen](media/6_Key_Vault.png)
+    ![Az online számlázási rendszer azon paraméterei, amelyeknél a Speciális tanúsítványtároló használata beállítás értéke Igen.](media/6_Key_Vault.png)
 
     Azt is megteheti, hogy ha a **Speciális tanúsítványtároló használata** beállítást **Nem** értékre állítja, és manuálisan adja meg a magyar online számlázási rendszerrel való együttműködéshez kapott technikai felhasználónevet és jelszót, illetve az aláírási kulcsot és a helyettesítő kulcsot. A további tudnivalókat lásd [Regisztrációs eljárással kapcsolatos információk](https://onlineszamla-test.nav.gov.hu/tajekoztatas_a_regisztraciorol).
 
-    ![Az online számlázási rendszer azon paraméterei, amelyeknél a Speciális tanúsítványtároló használata beállítás értéke Nem](media/7_system_parameters.png)
+    ![Az online számlázási rendszer azon paraméterei, amelyeknél a Speciális tanúsítványtároló használata beállítás értéke Nem.](media/7_system_parameters.png)
 
 11. Nyissa meg az **Adó** \> **Beállítások** \> **Paraméterek** \> **Elektronikus üzenetek** \> **Webszolgáltatás beállításai** lehetőséget, és adja meg a következő adatokat a webszolgáltatások internetcímének meghatározásához.
 
@@ -310,10 +315,9 @@ Az adatentitások adatbázisba importálását követően hajtsa végre az aláb
 13. Az **Üzenetek száma exportálásonként** mezőben határozza meg, hogy hány üzenetelemet lehet szerepeltetni egy üzenetben. Ez a szám nem lehet nagyobb, mint 100.
 14. A **Mellékelt elemek tömörítési típusa** mezőben adja meg a **Nincs** beállítást , és a **Fájlok csatolása a kimeneti archívumból az elemekhez** lehetőséget **Igen** értékre.
 
-    ![Üzenetfeldolgozási műveletek lap, "EM" létrehozása lap](media/8_actions.png)
+    ![Üzenetfeldolgozási műveletek oldal, EM létrehozása lap.](media/8_actions.png)
 
-15. Nyissa meg az **Adó** \> **Beállítások** \> **Elektronikus üzenetek** \> **Elektronikus üzenetfeldolgozás** menüpontot, válassza ki az **Online számlázás** feldolgozását, majd a **Köteg** gyorslapon válassza ki a **Köteg létrehozása** elemet.
-16. Biztonsági szerepkörök beállítása az **Online számlázás** feldolgozásához. Előfordulhat, hogy a felhasználók különböző csoportjainak kell hozzáféréstadni **Online számlázás** feldolgozásához. A feldolgozáshoz való hozzáférést korlátozhatja a rendszerben megadott biztonsági csoportok alapján. Nyissa meg az **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Elektronikus üzenetek feldolgozása** menüpontot, válassza ki az **Online számlázás feldolgozása** lehetőséget, és adja hozzá azokat a biztonsági csoportokat, amelyeknek dolgozniuk kell a feldolgozással kapcsolatosan. Ha nincs definiálva biztonsági csoport a feldolgozáshoz, akkor csak a rendszergazda láthatja a feldolgozást az **Elektronikus üzenetek** oldalon.
+15. Állítson be biztonsági szerepköröket a számlázás online feldolgozásához. Előfordulhat, hogy felhasználók különböző csoportjainak kell hozzáférést adni a számlázás online feldolgozásához. A feldolgozáshoz való hozzáférést korlátozhatja a rendszerben megadott biztonsági csoportok alapján. Nyissa meg az **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **Elektronikus üzenetek feldolgozása** menüpontot, válassza ki az **Online számlázás** lehetőséget, és adja hozzá azokat a biztonsági csoportokat, amelyeknek működniük kell a feldolgozás esetében. Ha nincs definiálva biztonsági csoport a feldolgozáshoz, akkor csak a rendszergazda láthatja a feldolgozást az **Elektronikus üzenetek** oldalon.
 
 ## <a name="set-up-financial-reasons-for-rtir"></a>Pénzügyi okok beállítása az RTIR-hez
 
@@ -347,7 +351,7 @@ Minden üzenetelem további, a feldolgozáshoz szükséges mezőkkel rendelkezik
 | Művelet                  | Az értékek többek között a **Létrehozás**, **Helyesbítés** és **Sztornó**. A Finance a kiegészítő mező értékét az **EM elemek kiértékelése** művelet végrehajtása során állítja be. A **Művelethez** tartozó további mező értéke automatikusan vagy a számlán szereplő pénzügyi indokkal definiálható. További tudnivalókért lásd a [Pénzügyi okok beállítása az RTIR-hez](#set-up-financial-reasons-for-rtir) című részt, a témakör korábbi részében. |
 | Eredeti üzenetelem      | Ha a **Művelet** kiegészítő mező **Helyesbítés** vagy **Sztornó** értékre van beállítva , akkor az **Eredeti üzenetelem** kiegészítő mezőt be kell állítani. Ha a rendszer nem tudja beállítani ezt a mezőt, a kapcsolódó üzenet elemét **Manuális szerkesztés** értékre állítja , és ezt a mezőt manuálisan kell beállítania. |
 | Index                      | Ez a kiegészítő mező meghatározza a számla pozícióját a kérelemben (a számlák csomagja). Az érték jelentése a **ManageInvoiceRequest.xml** fájl **\<index\>** elemében történik. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor a **Számlázási kérelem létrehozása** művelet fut. |
-| Módosítási index         | Ez a további mező az eredeti számlára (a módosító bizonylat sorszámára) hivatkozó egyedi sorszámot adja meg. Ez az érték a **Módosítás** vagy **Sztornó** művelettípusú üzenetelemek **\<modificationIndex\>** elemében jelenik meg. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor az **EM-elemek értékelése** művelet fut. |
+| Módosítási index         | Ez a további mező az eredeti számlára (a módosító dokumentum sorszámára) hivatkozó egyedi sorszámot adja meg. Ez az érték a **Módosítás** vagy **Sztornó** művelettípusú üzenetelemek **\<modificationIndex\>** elemében jelenik meg. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor az **EM-elemek értékelése** művelet fut. |
 | Utolsó sor hivatkozási száma | A **Létrehozás** művelettípusú üzenetelemeknél ez a kiegészítő mező a számla utolsó számát (a számlasor száma) tartalmazza. A **Módosítás** vagy **Sztornó** művelettípusú üzenetelemei esetén ez a további mező az utolsó sorszámot tartalmazza a teljes dokumentumláncon belül az eredeti számlától kezdve figyelembe véve annak minden módosítását. Ez az érték a **Módosítás** vagy **Sztornó** művelettípusú üzenetelemek **\<lineNumberReference\>** által jelentett érték kiszámításához használatos. Ezt a kiegészítő mezőt a program automatikusan kitölti, amikor az **EM-elemek értékelése** művelet fut. |
 
 ### <a name="run-online-invoicing-processing"></a>Online számlázás feldolgozásának futtatása
@@ -378,6 +382,10 @@ A számlák RTIR-be történő jelentésének elhalasztásához kövesse az alá
 4. További feltételek meghatározása a **Rekordok belefoglalása** gyorslap használatával, annak meghatározásához, hogy mely számlák jelentését kell elhalasztani.
 
 Az üzenetelemek **Kizárt** vagy **Elhalasztott** állapotát bármikor vissza lehet állítani a **Frissítés a kezdeti állapotra** lehetőség kiválasztásával.
+
+### <a name="run-online-invoicing-processing-in-batch-mode"></a>Online számlázás feldolgozásának futtatása kötegelt módban
+
+A számlázás online feldolgozása futtatható kötegelt módban. A kötegelt feldolgozás paramétereit a **Feldolgozás futtatása** párbeszédpanel **Futtatás a háttérben** gyorslapján adhatja meg. További tudnivalók a kötegelt feldolgozásról: [A kötegelt feldolgozás áttekintése](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ## <a name="appendix-1-electronic-message-setup-for-rtir"></a>1. függelék: Elektronikus üzenetek beállítása az RTIR-hez
 
@@ -436,27 +444,27 @@ Az **Online számlázás** feldolgozása a következő elektronikus üzenetálla
 
 | Állapot                                  | Leírás                                                                             | Az ilyen állapotú rekordok törölhetők |
 |-----------------------------------------|-----------------------------------------------------------------------------------------|---------------------------------------|
-| Hiba a számlakérelem létrehozásakor        | Technikai hiba történt a számlakérelem létrehozásakor.                | Nincs                                    |
-| Hiba az állapotkérelem létrehozásakor         | Technikai hiba történt az állapotkérelem létrehozásakor.                 | Nincs                                    |
-| Hiba a tokenkérelem létrehozásakor          | Technikai hiba történt az tokenkérelem létrehozásakor.                  | Nincs                                    |
-| Hiba a számlaválasz importálásakor        | Technikai hiba történt a számlaválasz importálása során.                | Nincs                                    |
-| Az állapotkérelem hibaválaszának importálása | Technikai hiba történt a az állapotkérelemre adott válasz importálása során. | Nincs                                    |
-| Hiba a számlakérelem küldésekor           | Technikai hiba történt a számlakezelési kérelem elkeüldésekor.              | Nincs                                    |
-| Hiba az állapotkérelem küldésekor            | Technikai hiba történt a számlaállapot-kérelem elküldésekor.              | Nincs                                    |
-| Hiba a tokenkérelem küldésekor             | Technikai hiba történt az tokenkérelem elküldésekor.                       | Nincs                                    |
-| Hiba a tokenválasz importálásakor          | Technikai hiba történt a tokenválasz importálása során.                  | Nincs                                    |
-| Létrehozva                               | Az üzenet létre lett hozva.                                                              | Nincs                                    |
-| Folyamatban                              | Az online számlázási rendszer feldolgozza az üzenetet.                          | Nincs                                    |
-| Számlakérelem létrehozva               | A számlák beküldésére vonatkozó kérelem létre lett hozva.                                           | Nincs                                    |
-| Számlakérelem beküldve               | A számlákat tartalmazó kérelem az Online számlázási rendszerbe be lett küldve.        | Nincs                                    |
-| Feldolgozva                               | Az online számlázási rendszer feldolgozta az üzenetet.                               | Nincs                                    |
-| Elküldött                                    | Az üzenet létre el lett küldve.                                                                   | Nincs                                    |
-| Állapotkérelem létrehozva                | A számlaállapot-kérelem létrejött.                                               | Nincs                                    |
-| Állapotkérelem beküldve                | A számlaállapot-kérelem be lett küldve.                                               | Nincs                                    |
-| Token fogadva                          | A token fogadva lett.                                                                 | Nincs                                    |
-| A tokenkérelem létrehozva                 | A tokenkérelem létre lett hozva.                                                        | Nincs                                    |
-| Tokenkérelem beküldve                 | A tokenkérelem be lett küldve.                                                        | Nincs                                    |
-| Tranzakcióazonosító fogadva                 | A tranzakcióazonosítót tartalmazó számlaválasz beérkezett.                     | Nincs                                    |
+| Hiba a számlakérelem létrehozásakor        | Technikai hiba történt a számlakérelem létrehozásakor.                | Nem                                    |
+| Hiba az állapotkérelem létrehozásakor         | Technikai hiba történt az állapotkérelem létrehozásakor.                 | Nem                                    |
+| Hiba a tokenkérelem létrehozásakor          | Technikai hiba történt az tokenkérelem létrehozásakor.                  | Nem                                    |
+| Hiba a számlaválasz importálásakor        | Technikai hiba történt a számlaválasz importálása során.                | Nem                                    |
+| Az állapotkérelem hibaválaszának importálása | Technikai hiba történt a az állapotkérelemre adott válasz importálása során. | Nem                                    |
+| Hiba a számlakérelem küldésekor           | Technikai hiba történt a számlakezelési kérelem elkeüldésekor.              | Nem                                    |
+| Hiba az állapotkérelem küldésekor            | Technikai hiba történt a számlaállapot-kérelem elküldésekor.              | Nem                                    |
+| Hiba a tokenkérelem küldésekor             | Technikai hiba történt az tokenkérelem elküldésekor.                       | Nem                                    |
+| Hiba a tokenválasz importálásakor          | Technikai hiba történt a tokenválasz importálása során.                  | Nem                                    |
+| Létrehozva                               | Az üzenet létre lett hozva.                                                              | Nem                                    |
+| Folyamatban                              | Az online számlázási rendszer feldolgozza az üzenetet.                          | Nem                                    |
+| Számlakérelem létrehozva               | A számlák beküldésére vonatkozó kérelem létre lett hozva.                                           | Nem                                    |
+| Számlakérelem beküldve               | A számlákat tartalmazó kérelem az Online számlázási rendszerbe be lett küldve.        | Nem                                    |
+| Feldolgozva                               | Az online számlázási rendszer feldolgozta az üzenetet.                               | Nem                                    |
+| Elküldött                                    | Az üzenet létre el lett küldve.                                                                   | Nem                                    |
+| Állapotkérelem létrehozva                | A számlaállapot-kérelem létrejött.                                               | Nem                                    |
+| Állapotkérelem beküldve                | A számlaállapot-kérelem be lett küldve.                                               | Nem                                    |
+| Token fogadva                          | A token fogadva lett.                                                                 | Nem                                    |
+| A tokenkérelem létrehozva                 | A tokenkérelem létre lett hozva.                                                        | Nem                                    |
+| Tokenkérelem beküldve                 | A tokenkérelem be lett küldve.                                                        | Nem                                    |
+| Tranzakcióazonosító fogadva                 | A tranzakcióazonosítót tartalmazó számlaválasz beérkezett.                     | Nem                                    |
 
 ### <a name="electronic-message-actions"></a>Elektronikusüzenet-műveletek
 
@@ -468,22 +476,22 @@ Az **Online számlázás** feldolgozása a következő elektronikus feldolgozás
 
 | Név                           | Futtatás külön |
 |--------------------------------|----------------|
-| EM-elemek létrehozása                | Nincs             |
-| EM-elemek értékelése              | Nincs             |
+| EM-elemek létrehozása                | Nem             |
+| EM-elemek értékelése              | Nem             |
 | EM-elemek kizárása               | Igen            |
-| EM létrehozása                    | Nincs             |
-| Számlakérelem létrehozása       | Nincs             |
-| Állapotkérelem létrehozása        | Nincs             |
-| Token-kérelem létrehozása         | Nincs             |
-| Számlaválasz importálása        | Nincs             |
-| Állapotválasz importálása         | Nincs             |
-| Tokenválasz importálása          | Nincs             |
+| EM létrehozása                    | Nem             |
+| Számlakérelem létrehozása       | Nem             |
+| Állapotkérelem létrehozása        | Nem             |
+| Token-kérelem létrehozása         | Nem             |
+| Számlaválasz importálása        | Nem             |
+| Állapotválasz importálása         | Nem             |
+| Tokenválasz importálása          | Nem             |
 | EM cikkek belefoglalása a fedolgozásba | Igen            |
 | EM elem állapotának visszaállítása           | Igen            |
 | EM állapot visszaállítása                | Igen            |
-| Számlakérelem benyújtása         | Nincs             |
-| Állapotkérelem elküldése          | Nincs             |
-| Token-kérelem beküldése           | Nincs             |
+| Számlakérelem benyújtása         | Nem             |
+| Állapotkérelem elküldése          | Nem             |
+| Token-kérelem beküldése           | Nem             |
 
 ## <a name="appendix-2-implementation-details"></a>2. függelék: Az implementálás részletei
 
@@ -498,7 +506,7 @@ Az **XSD 3.0-s verziójától** az Online Számla rendszer megköveteli a **cust
 | Érték           | Leírás |
 |-----------------|-------------|
 | BELFÖLDI        | A vevő olyan belföldi vevő, aki az áfa hatálya alá tartozik. |
-| MAGÁN\_SZEMÉLY | A vevő olyan belföldi vagy külföldi természetes személy, aki nem tartozik az áfa hatálya alá. |
+| MAGÁN\_SZEMÉLY | A vevő olyan belföldi vagy külföldi természetes személy, akinek nem kell áfát fizetnie. |
 | EGYÉB           | A vevőnek más státusza van. A vevő például olyan belföldi nem természetes személy, aki nem tartozik áfa hatálya alá, külföldi nem természetes személy, aki áfa hatálya alá tartozik, vagy külföldi nem természetes személy, aki nem tartozik az áfa hatálya alá. |
 
 Az Online számlázási rendszer XSD 3.0-s verziójának támogatására kiadott **94.50-es verziótól** az **RTIR Számlaadatok (HU)** formátum a következő algoritmust támogatja a **customerVatStatus** értékének meghatározásához.
@@ -536,7 +544,7 @@ A Dynamics 365 Finance megoldásában magyar Online számlázási rendszerhez t�
     > [!NOTE]
     > Az Online Számla rendszerben a helyes jelentéskészítés érdekében ne kapcsoljon több számlát ugyanazon értékesítési rendelésen több előlegszámlához.
 
-    A könyvelt végső számla jelentve van az Online Számláza rendszernek. Tartalmazza a hivatkozási információkat a **\<advancePaymentData\>** csomópontban és az összegeket az összefoglalásban, amelyek csökkentve vannak az előlegekhez kapcsolat áfával, amelyek ugyanahhoz az előlegszámlához vannak kapcsolva. Az előlegszámla árfolyama a hivatkozott előlegszámla-adatokhoz van jelentve. Ha azonban az előlegszámla pénzneme eltér a záró bizonylat pénznemétől, az előlegszámla minden sora negatív összegként lesz jelentve a végső számlára, és a végleges bizonylat pénznemében újra lesznek számítva..
+    A könyvelt végső számla jelentve van az Online Számláza rendszernek. Tartalmazza a **\<advancePaymentData\>** csomópontban lévő hivatkozási információkat, illetve az összegzésben lévő, az ugyanahhoz az előlegszámlához kapcsolt előlegekből származó feladott adókkal csökkentett összegeket. Az előlegszámla árfolyama a hivatkozott előlegszámla-adatokhoz van jelentve. Ha azonban az előlegszámla pénzneme eltér a záró bizonylat pénznemétől, az előlegszámla minden sora negatív összegként lesz jelentve a végső számlára, és a végleges bizonylat pénznemében újra lesznek számítva..
 
 #### <a name="scenario-2-a-prepayment-that-has-no-sales-tax-transactions-is-posted-accounts-receivable-module"></a>2. forgatókönyv: Áfatranzakciókat nem tartalmazó előleget könyvelnek (Követelések modul)
 
@@ -554,7 +562,7 @@ A Dynamics 365 Finance megoldásában magyar Online számlázási rendszerhez t�
     > [!NOTE]
     > Az Online Számla rendszerben a helyes jelentéskészítés érdekében ne kapcsoljon több számlát ugyanazon értékesítési rendelésen több előlegszámlához.
 
-    A könyvelt végső számla jelentve van az Online Számláza rendszernek. Tartalmazza a hivatkozási információkat a **\<advancePaymentData\>** csomópontban és az összegeket az összefoglalásban, amelyek csökkentve vannak az előlegekhez kapcsolat áfával, amelyek ugyanahhoz az előlegszámlához vannak kapcsolva. Az előlegszámla árfolyama a hivatkozott előlegszámla-adatokhoz van jelentve. Ha azonban az előlegszámla pénzneme eltér a záró bizonylat pénznemétől, az előlegszámla minden sora negatív összegként lesz jelentve a végső számlára, és a végleges bizonylat pénznemében újra lesznek számítva..
+    A könyvelt végső számla jelentve van az Online Számláza rendszernek. Tartalmazza a **\<advancePaymentData\>** csomópontban lévő hivatkozási információkat, illetve az összegzésben lévő, az ugyanahhoz az előlegszámlához kapcsolt előlegekből származó feladott adókkal csökkentett összegeket. Az előlegszámla árfolyama a hivatkozott előlegszámla-adatokhoz van jelentve. Ha azonban az előlegszámla pénzneme eltér a záró bizonylat pénznemétől, az előlegszámla minden sora negatív összegként lesz jelentve a végső számlára, és a végleges bizonylat pénznemében újra lesznek számítva..
 
 #### <a name="scenario-3-an-advance-invoice-is-posted-by-using-the-customer-advance-on-a-project-project-management-and-accounting-module"></a>3. forgatókönyv: Előlegszámla feladása vevői előlegével egy projekthez (Projektvezetés és könyvelési modul)
 

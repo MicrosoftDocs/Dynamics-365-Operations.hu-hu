@@ -2,11 +2,9 @@
 title: Kamatfeldolgozás
 description: Ez az eljárás a kamatlevél létrehozását, nyomtatását és feladását mutatja be.
 author: ShivamPandey-msft
-manager: AnnBe
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustPosting, SysQueryForm, CustInterestNote, SrsReportViewerForm
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ad30984f55017ee275af15ddb4f1a46c6a50db69
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 3b97515e29d04866172216fc29af9a8d992568276c5e01acd67ad9d0028ea0c5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4992939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6764359"
 ---
 # <a name="process-interest"></a>Kamatfeldolgozás
 
@@ -67,3 +65,6 @@ Ez az eljárás a kamatlevél létrehozását, nyomtatását és feladását mut
 5. Kattintson az **OK** gombra.
 6. Az **Állapot** mezőben válassza ki a „Feladott” értéket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

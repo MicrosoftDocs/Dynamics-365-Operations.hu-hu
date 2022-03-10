@@ -1,12 +1,10 @@
 ---
 title: Bank – devizaátértékelés
 description: Ez a témakör a banki devizaátértékelés folyamatával kapcsolatban nyújt áttekintést. A telepítéssel, a folyamat futtatásával, a folyamathoz tartozó számításokkal és az újraértékelési tranzakciók sztornírozásával kapcsolatban tartalmaz információkat.
-author: mikefalkner
-manager: AnnBe
+author: roschlom
 ms.date: 05/16/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: BankCurrencyRevalHistory
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-03-08
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: df717c174877ce14ab78fcb2840b8fc7a8fc1bb6
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 3df6a22e06abbfa75a12ffddac242dd34f5beba5
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5249461"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7754120"
 ---
 # <a name="bank-foreign-currency-revaluation"></a>Bank – devizaátértékelés
 

@@ -1,12 +1,10 @@
 ---
 title: Előfizetések könyvelése
 description: A szolgáltatási előfizetésekkel manuálisan könyvelhető a bevétel a díjtranzakció kiszámlázását követő időszakokban.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 04/30/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMASubscriptionGroup
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 7a1b955d200afa7474eb8940a118118cfc2f8904
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 3d17737c415f6204359dae3ea4b2a0cb4ebb5d65
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5232158"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580480"
 ---
 # <a name="accruing-subscriptions"></a>Előfizetések könyvelése 
 
@@ -43,7 +41,7 @@ Ha meghitelezi a kiszámlázott előfizetési összeget, a könyvelt összegek s
 
   - Vagy sztornírozhatja a könyvelt összegeket a jóváírási javaslat feladási dátumán vagy a könyvelés eredeti feladási dátumán.
 
-További tudnivalókkal kapcsolatban lásd: [Subscription parameters (form)](https://technet.microsoft.com/library/aa619615.aspx).
+További tudnivalókkal kapcsolatban lásd: [Subscription parameters (form)](/dynamicsax-2012//subscription-parameters-form).
 
 ## <a name="setup-requirements"></a>A beállítás előfeltételei
 
@@ -67,7 +65,7 @@ Ahhoz, hogy az előfizetések bevétele elhatárolható legyen, a **Bevétel elh
 
 ## <a name="enable-revenue-accrual-on-a-subscription-group"></a>Bevételelhatárolás engedélyezése az előfizetéscsoportokban
 
-1.  Kattintson a következőkre: **Szolgáltatáskezelés**\>**Beállítás**\>**Szolgáltatási előfizetések**\>**Előfizetési csoportok**.
+Kattintson a következőkre: **Szolgáltatáskezelés**\>**Beállítás**\>**Szolgáltatási előfizetések**\>**Előfizetési csoportok**.
 
 ## <a name="periods"></a>Időszakok
 
@@ -77,8 +75,8 @@ A következő táblázat áttekintést ad arról, hogy mely könyvelési idősza
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">

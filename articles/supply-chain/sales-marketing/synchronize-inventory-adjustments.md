@@ -1,7 +1,7 @@
 ---
 title: Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból a Supply Chain Management alkalmazásba
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management készletkorrekcióinak és átviteleinek közvetlenül a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
-author: ChristianRytt
+author: Henrikan
 ms.date: 04/30/2019
 ms.topic: article
 ms.prod: ''
@@ -13,21 +13,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: 8.1.3
 ms.search.validFrom: 2018-12-01
-ms.openlocfilehash: f1fc4b65fefcc050591f721cf5271fdd79f1b648d992be988af7ac02e220850c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: cfa7f617cbc4cd75d669972b35f8d33ba3cbcc56
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6717891"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8061679"
 ---
 # <a name="synchronize-inventory-transfers-and-adjustments-from-field-service-to-supply-chain-management"></a>Készletátvitelek és -kiigazítások szinkronizálása a Field Service alkalmazásból a Supply Chain Management alkalmazásba
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Supply Chain Management készletkorrekcióinak és átviteleinek közvetlenül a Dynamics 365 Field Service szolgáltatásba történő szinkronizálására használatosak.
 
@@ -72,12 +72,12 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 
 ### <a name="inventory-adjustment-field-service-to-supply-chain-management-inventory-adjustment"></a>Készletkiigazítás (Field Service alkalmazásból a Supply Chain Management alkalmazásba): Készletkiigazítás
 
-[![Sablonleképezés az adatintegrátorban.](./media/FSAdj1.png)](./media/FSAdj1.png)
+[![Sablonleképezés adatintegrációban, készletkorrekció (Field Service – Supply Chain Management): Készletkorrekció.](./media/FSAdj1.png)](./media/FSAdj1.png)
 
 
 ### <a name="inventory-transfer-field-service-to-supply-chain-management-inventory-transfer"></a>Készletűtvitel (Field Service alkalmazásból a Supply Chain Management alkalmazásba): Készletátvitel
 
-[![Sablonleképezés az adatintegrátorban.](./media/FSTrans1.png)](./media/FSTrans1.png)
+[![Sablonleképezés adatintegrációban, készletátvitel (Field Service – Supply Chain Management): Készletátvitel.](./media/FSTrans1.png)](./media/FSTrans1.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

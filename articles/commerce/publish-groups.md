@@ -2,36 +2,30 @@
 title: A közzétételi csoportokkal végzett munka
 description: Ez a témakör a Microsoft Dynamics 365 Commerce közzétételi csoportok funkciójával foglalkozik.
 author: phinneyridge
-manager: annbe
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail, Core
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: a83affb5b383b50317ddf53de4d3bf565f0d9439
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: d757f34d3e16850e4f5de122f63b2b3342f612e49f07c7cf6585362999f03c02
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412971"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6717672"
 ---
 # <a name="work-with-publish-groups"></a>A közzétételi csoportokkal végzett munka
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Commerce közzétételi csoportok funkciójával foglalkozik.
-
-## <a name="overview"></a>Áttekintés
 
 Az e-kereskedelmi webhelyeket egész évben folyamatosan frissítik új tartalmakkal. A frissítéseket leggyakrabban kötegelve teszik közzé zsúfolt e-kereskedelmi események környékén, mint ünnepek, szezonális marketingkampányok vagy promóciós bevezetések. Ezek a frissítések gyakran megkívánják a webhelytartalmak csoportjainak (példák, képek, töredékek és sablonok) előkészítését, ellenőrzését és közzétételét egyszerre, egyetlen műveletben.
 
@@ -155,3 +149,6 @@ Jelenleg, a közzétételi csoportok funkció csak webhelytartalmat támogat. A 
 [Sablonok és elrendezések áttekintése](templates-layouts-overview.md)
 
 [Webhely-navigáció testreszabása](customize-site-navigation.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

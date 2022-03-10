@@ -2,7 +2,6 @@
 title: Egy munkafolyamat munkatételeinek delegálása
 description: Ha azt tervezi, hogy távol lesz a munkahelyétől, vagy valamilyen más okból nem tud elvégezni egy adott munkaelemet, a munkaelemeket más felhasználóknak delegálhatja, illetve hozzárendelheti a felhasználókhoz.
 author: ChrisGarty
-manager: AnnBe
 ms.date: 07/07/2020
 ms.topic: business-process
 ms.prod: ''
@@ -14,16 +13,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 054e183374d2b24f38b0f90ff90acfeeca013861
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
-ms.translationtype: HT
+ms.openlocfilehash: 128dce6a1b852d908e01c348cb767088031b11a5
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5560555"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8070097"
 ---
 # <a name="delegate-work-items-in-a-workflow"></a>Egy munkafolyamat munkatételeinek delegálása
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 ## <a name="manually-delegate-a-work-item"></a>Munkaelem delegálátsa manuálisan
 

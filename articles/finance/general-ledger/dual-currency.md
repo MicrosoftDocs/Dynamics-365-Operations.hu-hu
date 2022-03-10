@@ -2,26 +2,23 @@
 title: Kettős pénznem
 description: Ez a témakör a kettős pénznemről szól, ahol a könyvelési pénznem használt második könyvelési pénznemként a Microsoft Dynamics 365 Finance esetében.
 author: kweekley
-manager: AnnBe
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: ''
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 8b71b571b03e8fa2648c90258bbcaa020baeabc0
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: b20c45952d2c0c28a1b785fd92bf47cfb25251fa3a3308d14130ad0f1c78305d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443825"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6762067"
 ---
 # <a name="dual-currency"></a>Kettős pénznem
 
@@ -209,3 +206,6 @@ A Főkönyv konszolidálásához egy új beállítás lett hozzáadva, amely a f
 -  Ezután kiválaszthatja, hogy a forrás vállalattól a könyvelési pénznemet vagy a jelentési pénznemet használja-e a konszolidációs vállalatban a tranzakciós pénznemnek.
 
 - A forrásvállalat könyvelési vagy jelentési pénzneme közvetlenül lesz másolva a konszolidációs vállalat könyvelési vagy jelentési pénznemösszegeire, ha valamelyik pénznem megegyezik. A konszolidációs vállalatban a könyvelési és jelentési pénznem összegeit az árfolyam alapján számítja ki a program, ha a pénznemek egyike sem egyezik meg.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

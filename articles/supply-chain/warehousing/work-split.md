@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: e3f14dd25a60f8d185f0e58a0612a322c5175ab2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
+ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7579880"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7778257"
 ---
 # <a name="work-split"></a>Felosztott munka
 
@@ -33,7 +33,7 @@ A munkafelosztás lehetővé teszi, hogy a nagy munkaazonosítókat (azaz több 
 
 A munkafelosztási funkció használata előtt be kell kapcsolnia a funkciót és az annak előfeltételként szolgáló funkciót a rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkciók állapotának ellenőrzéséhez, és szükség esetén bekapcsolásukhoz.
 
-Először kapcsolja be a *Szervezet szintű munkazárolás* előfeltétel funkciót, ha még nincs bekapcsolva. A **Funkció kezelése** munkaterületen ez a funkció a következő módon van listázva:
+Először kapcsolja be a *Szervezet szintű munkazárolás* előfeltétel funkciót, ha még nincs bekapcsolva. Az Ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció kötelező, ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni. Ennek ellenére a funkció a következő módon továbbra is megjelenik a [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) Szolgáltatáskezelésben:
 
 - **Modul:** *Raktárkezelés*
 - **Funkció neve:** *Szervezeti szintű munkazárolás*

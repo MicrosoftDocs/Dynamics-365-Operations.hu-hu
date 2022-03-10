@@ -2,7 +2,7 @@
 title: A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 description: Ez a témakör azt mutatja be, hogyan lehet ellenőrizni a konfigurált Elektronikus jelentéskészítési (ER) összetevőket az esteleges futásidejű problémák megelőzésére.
 author: NickSelin
-ms.date: 08/26/2021
+ms.date: 01/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a855619ebd1c41dc3ca583912f758ed8a8f9ceef
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
-ms.translationtype: HT
+ms.openlocfilehash: c63ffc6316d21d36bb2aad57194b8aa1c477607e
+ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7488114"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8074791"
 ---
 # <a name="inspect-the-configured-er-component-to-prevent-runtime-issues"></a>A konfigurált ER-összetevő ellenőrzése a futásidejű problémák megelőzése érdekében
 
 [!include[banner](../includes/banner.md)]
 
-Minden konfigurált [Elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) [formátum](general-electronic-reporting.md#FormatComponentOutbound) és [modell-leképezési](general-electronic-reporting.md#data-model-and-model-mapping-components) összetevő [ellenőrizhető](er-fillable-excel.md#validate-an-er-format) a tervezés során. Ennek az ellenőrzésnek a során a rendszer konzisztencia-ellenőrzést futtat a futásidejű problémák megelőzése érdekében, mint például a végrehajtási hibák és a teljesítmény romlása. Minden megtalált probléma esetében az ellenőrzés elérési utat biztosít a problémás elemhez. Bizonyos problémák esetében automatikus javítás is rendelkezésre áll.
+Minden konfigurált [Elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) [formátum](er-overview-components.md#format-components-for-outgoing-electronic-documents) és [modell-leképezési](er-overview-components.md#model-mapping-component) összetevő [ellenőrizhető](er-fillable-excel.md#validate-an-er-format) a tervezés során. Ennek az ellenőrzésnek a során a rendszer konzisztencia-ellenőrzést futtat a futásidejű problémák megelőzése érdekében, mint például a végrehajtási hibák és a teljesítmény romlása. Minden megtalált probléma esetében az ellenőrzés elérési utat biztosít a problémás elemhez. Bizonyos problémák esetében automatikus javítás is rendelkezésre áll.
 
 Alapértelmezés szerint a program automatikusan alkalmazza az ellenőrzést a következő esetekben egy ER-konfiguráció esetében, amely tartalmazza a korábban említett ER-komponenseket.
 
@@ -236,6 +236,15 @@ Az alábbi táblázat tartalmazza az ER által kínált vizsgálatokat. Ha tová
 <td>Hiba</td>
 <td>Több mint két tartomány-összetevő van replikáció nélkül. Távolítsa el a szükségtelen összetevőket.</td>
 </tr>
+<tr>
+<td><a href='#i18'>Egy kifejezés végrehajthatósága ORDERBY függvénnyel</a></td>
+<td>Végrehajthatóság</td>
+<td>Hiba</td>
+<td>
+<p>Az ORDERBY függvény listakifejezése nem kérdezhető le.</p>
+<p><b>Futtatási hiba:</b> A rendezés nem támogatott. A konfiguráció ellenőrzésével további részleteket kaphat erről.</p>
+</td>
+</tr>
 </tbody>
 </table>
 
@@ -365,7 +374,7 @@ A következő lépések a problémák előfordulásának módját mutatják be.
 8. Nevezze el az új beágyazott mezőt **$AccNumber** néven adatforrást , és konfigurálja úgy, hogy a `TRIM(Vendor.AccountNum)` kifejezést tartalmazza.
 9. Válassza az **Ellenőrzés** lehetőséget , ha ellenőrizni szeretné a **Modell-leképezés tervező** lapjának szerkeszthető modell-leképezési összetevőjét , és ellenőrizze, hogy a **Szállító** adatforrás `FILTER(Vendor, Vendor.AccountNum="US-101")` kifejezését le lehet-e kérdezni.
 
-    ![A kifejezés ellenőrzése a modell-leképezés tervező lapján kérdezhető le.](./media/er-components-inspections-04.gif)
+    ![Annak ellenőrzése, hogy a FILTER funkcióval rendelkező kifejezés lekérdezhető-e a Modell-leképezés tervező oldalon.](./media/er-components-inspections-04.gif)
 
 10. Figyelje meg, hogy érvényesítési hiba lép fel, mert a **Szállító** adatforrás a **Számított mező** típusú beágyazott mezőt tartalmaz, amely nem teszi lehetővé a **FilteredVendor** adatforrás kifejezésének a közvetlen SQL utasításra történő lefordítását.
 
@@ -892,6 +901,47 @@ A hiba automatikus javítása nem lehetséges.
 #### <a name="option-1"></a>1. beállítás
 
 Módosítsa a konfigurált formátumot az **Excel\\Tartomány** inkonzisztens összetevőinél a **Replikációs irány** tulajdonságának módosításával.
+
+## <a name="executability-of-an-expression-with-orderby-function"></a><a id="i18"></a> Egy kifejezés végrehajthatósága ORDERBY függvénnyel
+
+A beépített [RENDEZÉS](er-functions-list-orderby.md) Az ER funkció az ER adatforrás rekordjainak rendezésére szolgál **[Rekordlista](er-formula-supported-data-types-composite.md#record-list)** típus, amely a függvény argumentumaként van megadva.
+
+Érvei a`ORDERBY` funkció lehet [meghatározott](er-functions-list-orderby.md#syntax-2) az alkalmazástáblák, nézetek vagy adatentitások rekordjainak rendezéséhez egyetlen adatbázishívással, hogy a rendezett adatokat rekordlistaként kapja meg. Az adatforrás a **Rekordlista** A típus a függvény argumentumaként használatos, és meghatározza a hívás alkalmazásforrását.
+
+Az ER ellenőrzi, hogy létrehozható-e közvetlen adatbázis-lekérdezés egy adatforráshoz, amelyre hivatkozik`ORDERBY` funkció. Ha nem sikerül megvalósítani a közvetlen lekérdezést, akkor ellenőrzési hiba fordul elő az ER modell-leképezés tervezőben. Az üzenet arról tájékoztatja, hogy a függvényt tartalmazó ER kifejezés, amely a `ORDERBY` függvényt tartalmazza nem futtatható futásidőben.
+
+A következő lépések a problémák előfordulásának módját mutatják be.
+
+1. Kezdje el konfigurálni az ER modell-leképezési összetevőt.
+2. Adjon hozzá egy **Dynamics 365 for Operations \\ Táblarekordok** típusú adatforrást.
+3. Adja a következő nevet az új adatforrásnak: **Szállító**. Ban,-ben **asztal** mezőben válassza ki **VendTable** annak megadásához, hogy ez az adatforrás kérni fogja a **VendTable** asztal.
+4. Adjon hozzá egy **Számított mező** típusú adatforrást.
+5. Nevezze el az új adatforrást **RendeltVendors**, és állítsa be úgy, hogy tartalmazza a kifejezést `ORDERBY("Query", Vendor, Vendor.AccountNum)`.
+ 
+    ![Adatforrások konfigurálása a Modell-leképezés-tervező oldalon.](./media/er-components-inspections-18-1.png)
+
+6. Válassza ki **Érvényesít** a szerkeszthető modellleképezési komponens ellenőrzéséhez a **Modelltérképező tervező** oldalon, és ellenőrizze, hogy a kifejezés a **RendeltVendors** adatforrás lekérdezhető.
+7. Módosítsa a **Szállító** adatforrást úgy, hogy hozzáad egy **Számított mező** típusú beágyazott mezőt, hogy megkapja a rövidített szállítói számlaszámot.
+8. Nevezze el az új beágyazott mezőt **$AccNumber** néven adatforrást , és konfigurálja úgy, hogy a `TRIM(Vendor.AccountNum)` kifejezést tartalmazza.
+9. Válassza ki **Érvényesít** a szerkeszthető modellleképezési komponens ellenőrzéséhez a **Modelltérképező tervező** oldalon, és ellenőrizze, hogy a kifejezés a **Eladó** adatforrás lekérdezhető.
+
+    ![Annak ellenőrzése, hogy a Szállító adatforrásban lévő kifejezés lekérdezhető-e a Modell-leképezés tervező oldalon.](./media/er-components-inspections-18-2.png)
+
+10. Figyelje meg, hogy érvényesítési hiba történik, mert a **Eladó** adatforrás tartalmazza a beágyazott mezőt **Számított mező** típus, amely nem teszi lehetővé a kifejezést **RendeltVendors** adatforrást le kell fordítani a közvetlen adatbázis-utasításra. Ugyanez a hiba lép fel futás közben, ha figyelmen kívül hagyja az érvényesítési hibát, és kiválasztja **Fuss** a modellleképezés futtatásához.
+
+### <a name="automatic-resolution"></a>Automatikus megoldás
+
+A hiba automatikus javítása nem lehetséges.
+
+### <a name="manual-resolution"></a>Manuális megoldás
+
+#### <a name="option-1"></a>1. beállítás
+
+Ahelyett, hogy hozzáadna egy beágyazott mezőt a **Számított mező** írja be a **Eladó** adatforrást, adja hozzá a **$AccNumber** beágyazott mező a **FilteredVendors** adatforrást, és konfigurálja a mezőt úgy, hogy az tartalmazza a kifejezést `TRIM(FilteredVendor.AccountNum)`. Ily módon a`ORDERBY("Query", Vendor, Vendor.AccountNum)` kifejezés futtatható adatbázis szinten, és a számítás a **$AccNumber** beágyazott mező után tehető meg.
+
+#### <a name="option-2"></a>2. beállítás
+
+Módosítsa a kifejezést **FilteredVendors** adatforrásból`ORDERBY("Query", Vendor, Vendor.AccountNum)` nak nek `ORDERBY("InMemory", Vendor, Vendor.AccountNum)`. Nem javasoljuk, hogy módosítsa a kifejezést egy nagy mennyiségű adatot tartalmazó tábla (tranzakciós tábla) esetén, mert a rendszer minden rekordot lekér, és a szükséges rekordok sorrendje a memóriában történik. Ezért ez a megközelítés gyenge teljesítményt okozhat.
 
 ## <a name="additional-resources"></a>További erőforrások
 

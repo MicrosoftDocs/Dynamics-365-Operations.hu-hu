@@ -2,11 +2,9 @@
 title: Fizetésmodul
 description: Ez a témakör egy fizetésmodul egy laphoz való hozzáadásának és a kötelező tulajdonságok beállításának módját mutatja be.
 author: anupamar-ms
-manager: annbe
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: cb32b014ac35e33db28d3dee03b01dfa43f5d6a5
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6715506"
 ---
 # <a name="checkout-module"></a>Fizetésmodul
 
@@ -29,15 +27,13 @@ ms.locfileid: "4980506"
 
 Ez a témakör egy fizetésmodul egy laphoz való hozzáadásának és a kötelező tulajdonságok beállításának módját mutatja be.
 
-## <a name="overview"></a>Áttekintés
-
 A fizetésmodul egy speciális tároló, amely a rendelés létrehozásához szükséges összes modult tárolja. Lépésről lépésre bemutatja a folyamatot, amely során a vevő megadja a vásárláshoz szükséges összes információt. A szállítási cím, a szállítási mód és a számlázási adatok rögzítése történik. Ezenkívül a rendelés összesítését és a vevői rendeléshez kapcsolódó egyéb információkat is tartalmaz.
 
 A fizetésmodul a kosár azonosítója alapján jeleníti meg az adatokat. Ezt a kosárazonosítót a rendszer böngésző-cookie-ként menti. Egy kosárazonosító szükséges a fizetésmodul adatainak megjelenítéséhez, például a rendelésben szereplő cikkekhez, a teljes összeghez és az engedményekhez. 
 
 A következő kép egy Pénztár oldalon használt Fabrikam pénztár modul egy példáját jeleníti meg.
 
-![Példa egy pénztármodulra](./media/Checkout.PNG)
+![Példa egy pénztármodulra.](./media/Checkout.PNG)
 
 ## <a name="checkout-module-properties"></a>Fizetésmodul tulajdonságai
 
@@ -56,13 +52,13 @@ A fizetési modul a rendelés összesítését jeleníti meg, és biztosítja a 
 
     A következő kép egy Pénztár oldalon használt szállítási cím modul egy példáját jeleníti meg.
 
-    ![Példa a szállítási cím modulra](./media/ecommerce-shippingaddress.PNG)
+    ![Példa a szállítási cím modulra.](./media/ecommerce-shippingaddress.PNG)
 
 - **Szállítási lehetőségek** – Ez a modul lehetővé teszi a vevő számára, hogy kiválasszon egy szállítási módot rendeléséhez. A modullal kapcsolatos további tudnivalókért lásd: [Szállítási lehetőségek modul](delivery-options-module.md).
 
     A következő kép egy Pénztár oldalon használt szállítási lehetőségek modul egy példáját jeleníti meg.
  
-    ![Példa a szállítási lehetőségek modulra](./media/ecommerce-deliveryoptions.PNG)
+    ![Példa a szállítási lehetőségek modulra.](./media/ecommerce-deliveryoptions.PNG)
 
 - **Fizetési szakasz tárolója** – Ez a modul egy olyan tároló, amelyben több modult is elhelyezhet egy szakasz létrehozásához a fizetési folyamaton belül. Például az összes fizetéshez kapcsolódó modult elhelyezheti ebben a tárolóban, hogy egy szakaszként jelenjenek meg. Ez a modul csak a folyamat elrendezését érinti.
 
@@ -74,7 +70,7 @@ A fizetési modul a rendelés összesítését jeleníti meg, és biztosítja a 
 
     A következő képen egy példa látható az ajándékutalványra, a hűségpontokra és a fizetési modulokra a fizetési oldalon.
 
-    ![Példa az ajándékutalványra, a hűségpontokra és a fizetési modulokra a fizetési oldalon](./media/ecommerce-payments.PNG)
+    ![Példa az ajándékutalvány, a hűségpontok és a fizetési modulokra a fizetési oldalon.](./media/ecommerce-payments.PNG)
 
 - **Kapcsolattartási adatok** – Ez a modul lehetővé teszi a vevő számára, hogy megadja vagy módosítsa a rendeléshez tartozó kapcsolattartási adatokat (e-mail-cím).
 
@@ -84,7 +80,7 @@ A fizetési modul a rendelés összesítését jeleníti meg, és biztosítja a 
 
     A következő képen egy példa látható szerződési feltételekről egy fizetési oldalon.
 
-    ![Példa szerződési feltételekre egy fizetési oldalon](./media/ecommerce-checkout-terms.PNG)
+    ![Példa szerződési feltételekre egy fizetési oldalon.](./media/ecommerce-checkout-terms.PNG)
 
 ## <a name="commerce-scale-unit-interaction"></a>Commerce Scale Unit-interakció
 
@@ -126,3 +122,6 @@ A fizetésmodul új oldalra való felvételéhez és a kötelező tulajdonságok
 [Rendelési részletek modul](order-confirmation-module.md)
 
 [Ajándékutalvány modul](add-giftcard.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

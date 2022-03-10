@@ -1,40 +1,45 @@
 ---
-title: Nyitott kérdés létrehozása
+title: Kifejtős kérdés létrehozása
 description: A kifejtős kérdések esetében a válaszadók maguk adhatják meg válaszukat.
-author: andreabichsel
-manager: AnnBe
-ms.date: 08/29/2018
+author: twheeloc
+ms.date: 01/03/2022
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: KMQuestion, HcmLearningWorkspace
 audience: Application User
-ms.reviewer: anbichse
-ms.search.scope: Core, Operations
+ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ebcacb2aa53d58e06cec18f30b358f7ec85b61e9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: b1feab5ec5185a5f2625620431e9d13542bfe940
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4418915"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8071735"
 ---
 # <a name="create-an-open-ended-question"></a>Nyitott kérdés létrehozása
 
 
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
-A kifejtős kérdések esetében a válaszadók maguk adhatják meg válaszukat. Azt megszabhatja, hogy a válasz szám, decimális, dátum, megjegyzés vagy más legyen. Ez az eljárás végigvezeti egy speciális kérdéstípus, a kifejtős kérdés létrehozásának folyamatán. Az eljárás megkezdéséhez ugorjon a Kérdőív > Tervezés > Kérdések lehetőségre. Ez az eljárás az USMF bemutatócéget használja.
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-1. Kattintson az Új lehetőségre.
+
+
+A kifejtős kérdések esetében a válaszadók maguk adhatják meg válaszukat. Azt megszabhatja, hogy a válasz szám, decimális, dátum, megjegyzés vagy más legyen. Ez az eljárás végigvezeti egy speciális kérdéstípus, a kifejtős kérdés létrehozásának folyamatán. Az eljárás megkezdéséhez lépjen a következőre: **Kérdőív > Tervezés > Kérdések**. Ez az eljárás az USMF bemutatócéget használja.
+
+1. Kattintson az **Új** elemre.
 2. Válasszon ki egy Csoportosítási típushoz kapcsolódó kérdést.
 3. Keresse meg és jelölje ki a kívánt rekordot a listán.
 4. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * A kifejtős kérdések esetében Szöveg, Egész, Valós, Dátum, Idő és Jegyzet beviteli típust használ a rendszer.  
-5. Válasszon ki egy lehetőséget a Beviteli típus mezőben.
+5. Válasszon ki egy lehetőséget a **Beviteli típus** mezőben.
     * A kifejtős kérdések esetében Szöveg vagy Jegyzet beviteli típust használ a rendszer.  
-6. A Szöveg mezőbe írja be a kérdését.
+6. Ban,-ben **Szöveg** mezőbe írja be a kérdést.
 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

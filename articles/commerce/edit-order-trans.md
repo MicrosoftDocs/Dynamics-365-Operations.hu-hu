@@ -2,11 +2,9 @@
 title: Online rendeléses és aszinkron vevői rendeléses tranzakciók szerkesztése és auditálása
 description: Ez a témakör azt ismerteti, hogy miként szerkesztheti és auditálhatja az online rendeléses és aszinkron vevői rendeléses tranzakciókat a Microsoft Dynamics 365 Commerce szolgáltatásban.
 author: josaw1
-manager: AnnBe
 ms.date: 11/04/2020
 ms.topic: index-page
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0fee5ef7ad61e9581e7b2797bb1bd26b1a48ddbd
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
+ms.openlocfilehash: 99ad5be36587a3f726f5b40cccfdd30ab0ef48e1a87563a884f83264f40842fc
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5221774"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6765290"
 ---
 # <a name="edit-and-audit-online-order-and-asynchronous-customer-order-transactions"></a>Online rendeléses és aszinkron vevői rendeléses tranzakciók szerkesztése és auditálása
 

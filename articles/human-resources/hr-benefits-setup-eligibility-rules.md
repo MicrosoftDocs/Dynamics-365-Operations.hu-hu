@@ -1,8 +1,8 @@
 ---
 title: Jogosultsági szabályok és beállítások konfigurálása
-description: A Microsoft Dynamics 365 Human Resources szolgáltatás juttatáskezelésében megadhatja a jogosultsági szabályokat és beállításokat.
-author: andreabichsel
-ms.date: 05/20/2021
+description: Ez a témakör leírja, hogyan állíthatók be a jogosultsági szabályok és beállítások a Microsoft Dynamics 365 Human Resources rendszerben a Juttatások kezelése menüpontban.
+author: twheeloc
+ms.date: 08/24/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,31 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7679afa29e5e4ef8482c71558275297d7359362
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
-ms.translationtype: HT
+ms.openlocfilehash: e87bef8994fe1eac0089764c8d4f9b18289c13ea
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6351657"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069630"
 ---
-# <a name="configure-eligibility-rules-and-options"></a>Jogosultsági szabályok és beállítások konfigurálása
+# <a name="configure-eligibility-rules-and-options"></a>Jogosultsági szabályok és beállítások konfigurálása 
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Miután konfigurálta a szükséges paramétereket a Microsoft Dynamics 365 Human Resources juttatáskezeléséhez, létrehozhat a juttatási konstrukciókhoz rendelhető jogosultsági szabályokat, csomagokat, időszakokat és programokat.
+Miután konfigurálta a szükséges paramétereket a Juttatáskezeléséhez, létrehozhat a juttatási konstrukciókhoz rendelhető jogosultsági szabályokat, csomagokat, időszakokat és programokat.
+
+A jogosultsági szabályok határozzák meg, hogy az alkalmazott jogosult-e egy konstrukcióra. Az alkalmazottaknak teljesíteniük kell legalább egy szabály feltételét ahhoz, hogy a juttatásra jogosultnak minősüljenek. Például egy tervhez két szabály tartozik. Az első szabály (1. sor) szerint az alkalmazott típusa csak **Alkalmazott** lehet. Az második szabály (2. sor) szerint az alkalmazottnak teljes munkaidősnek kell lennie. Ennek megfelelően az 1. szabálynak megfelelő alkalmazottak akkor is jogosultak, ha csak részmunkaidős alkalmazásban állnak.
+
+Beállítható azonban egyetlen szabály, amely több feltételt is támaszt. Ebben az esetben az alkalmazottaknak teljesíteniük kell legalább a szabály összes feltételét ahhoz, hogy a juttatásra jogosultnak minősüljenek. Van például egy **Teljes munkaidős alkalmazott** nevű szabálya. Ez a szabály írja le, hogy az alkalmazott típusának **Alkalmazottnak** kell lennie, *és* az alkalmazottnak teljes munkaidősnek kell lennie. Ennek megfelelően az alkalmazottaknak teljesíteniük kell a szabály mindkét feltételét ahhoz, hogy jogosulttá tehetők legyenek.
+
+> [!IMPORTANT]
+> Minden juttatási csomaghoz legalább egy jogosultsági szabályt hozzá kell rendelni. Egy juttatáshoz több szabályt is társíthat.
 
 ## <a name="create-an-eligibility-rule"></a>Jogosultsági szabály létrehozása
 
@@ -72,7 +82,7 @@ A nyitott jelentkezés során az alkalmazottak választhatnak juttatási konstru
    | **Jogosult beosztástípus** | Megadja a jogosultsági szabálynak eleget tevő beosztástípust vagy -típusokat. Például: teljes munkaidős. |
    | **Jogosult állapot** | Megadja a jogosultsági szabálynak eleget tevő államokat vagy tartományokat. Például: Észak-Dakota, USA vagy Brit Kolumbia, Kanada. |
    | **Jogosult foglalkoztatási feltételek** | Megadja a jogosultsági szabálynak eleget tevő foglalkoztatási feltételeket. Például: rendelkezésre vagy csoportos szerződés. |
-   | **Jogosult szakszervezet** | Megadja a jogosultsági szabálynak eleget tevő szakszervezeti tagságot. Például: Forklift Drivers of America. </br></br>Ha szakszervezeti alapú jogosultsági szabályt alkalmaz, a dolgozó szakszervezeti rekordjában szerepelnie kell a záró dátumnak. Nem hagyhatja üresen. |
+   | **Jogosult szakszervezet** | Megadja a jogosultsági szabálynak eleget tevő szakszervezeti tagságot. Például: Forklift Drivers of America.</br></br>Ha szakszervezeti alapú jogosultsági szabályt alkalmaz, a dolgozó szakszervezeti rekordjában szerepelnie kell a záró dátumnak. Nem hagyhatja üresen. |
    | **Jogosult irányítószám** | Megadja a jogosultsági szabálynak eleget tevő irányítószámokat. Például, 58104 elem. |
 
 5. A **További részletek** területen a következő további részleteket tekintheti meg.
@@ -210,13 +220,13 @@ A rugalmas jóváírási programokkal az alkalmazottakat előre meghatározott s
 
    | Mező | Leírás |
    | --- | --- |
-   | Juttatás-jóváírás azonosítója | A rugalmas jóváírási program egyedi azonosítója. |
-   | Leírás | A rugalmas jóváírási program leírása. | 
-   | Kezdő dátum | A rugalmas jóváírási program aktívvá válásának dátuma. |
-   | Záró dátum | A rugalmas jóváírási program záró dátuma. Az alapértelmezett érték (2154. 12. 31.) megtartásával jelezheti, hogy a rugalmas jóváírási programnak nincs ütemezett lejárata. |
-   | Jóváírás értéke összesen | Azoknak a jóváírásoknak a száma, amelyeket az alkalmazottak használni fognak a juttatásaikhoz. |
-   | Arányosítási szabály | A rugalmas jóváírások arányosításához használt szabály, amely akkor használható, amikor az alkalmazottat a rugalmas jóváírási program időszakának közepén veszik fel. </br></br><ul><li>**Nincs** – Az alkalmazott nem kap rugalmas jóváírásokat, ha a rugalmas jóváírási program időszak kezdete után veszik fel.</li><li>**Teljes jóváírás** – Az alkalmazott megkapja a rugalmas jóváírások teljes összegét, függetlenül attól, hogy mikor vették fel.</li><li>**Arányosítás** – Az alkalmazott a rugalmas jóváírások arányosított összegét kapja meg a kezdési dátumától függően.</li></ul> |
-   | Rugalmas jóváírás arányosítási képlete | A rugalmas jóváírások arányosításához használt szabály azon alkalmazottak esetében, akiket a rugalmas jóváírási program juttatási időszakának közepén vesznek fel. Az arányosítás az alkalmazott foglalkoztatásának kezdő dátuma alapján történik. Ez a mező csak akkor használható, ha az **Arányosítás** lehetőséget választja az **Arányosítási szabály** mezőben. </br></br><ul><li>**Napi** – Az alkalmazott által kapott rugalmas jóváírások számát a nap szintjéig arányosítja. A rugalmas jóváírások számát az időszak napjainak számával kell elosztani. Ha például a juttatási időszak 400 nap, akkor a rendszer a rugalmas jóváírások számát 400-zal elosztva számítja ki, hogy az alkalmazottak hány rugalmas jóváírást kapnak naponta.</li><li>**Aktuális hónap** – Az alkalmazott által kapott rugalmas jóváírások számát a hónap szintjéig arányosítja, az aktuális hónapra kerekítve. A rugalmas jóváírások számát az időszak hónapjainak számával kell elosztani. Ha például a juttatási időszak 15 hónap, akkor a rendszer a rugalmas jóváírások számát 15-tel elosztva számítja ki, hogy az alkalmazottak hány rugalmas jóváírást kapnak havonta.</li><li>**Következő hónap** – Az alkalmazott által kapott rugalmas jóváírások számát a hónap szintjéig arányosítja, a következő hónapra kerekítve. A rugalmas jóváírások számát az időszak hónapjainak számával kell elosztani. Ha például a juttatási időszak 15 hónap, akkor a rendszer a rugalmas jóváírások számát 15-tel elosztva számítja ki, hogy az alkalmazottak hány rugalmas jóváírást kapnak havonta.</li></ul> |
+   | **Juttatás-jóváírás azonosítója** | A rugalmas jóváírási program egyedi azonosítója. |
+   | **Leírás** | A rugalmas jóváírási program leírása. | 
+   | **Kezdő dátum** | A rugalmas jóváírási program aktívvá válásának dátuma. |
+   | **Záró dátum** | A rugalmas jóváírási program záró dátuma. Az alapértelmezett érték (2154. 12. 31.) megtartásával jelezheti, hogy a rugalmas jóváírási programnak nincs ütemezett lejárata. |
+   | **Jóváírás értéke összesen** | Azoknak a jóváírásoknak a száma, amelyeket az alkalmazottak használni fognak a juttatásaikhoz. |
+   | **Arányosítási szabály** | A rugalmas jóváírások arányosításához használt szabály, amely akkor használható, amikor az alkalmazottat a rugalmas jóváírási program időszakának közepén veszik fel. </br></br><ul><li>**Nincs** – Az alkalmazott nem kap rugalmas jóváírásokat, ha a rugalmas jóváírási program időszak kezdete után veszik fel.</li><li>**Teljes jóváírás** – Az alkalmazott megkapja a rugalmas jóváírások teljes összegét, függetlenül attól, hogy mikor vették fel.</li><li>**Arányosítás** – Az alkalmazott a rugalmas jóváírások arányosított összegét kapja meg a kezdési dátumától függően.</li></ul> |
+   | **Rugalmas jóváírás arányosítási képlete** | A rugalmas jóváírások arányosításához használt szabály azon alkalmazottak esetében, akiket a rugalmas jóváírási program juttatási időszakának közepén vesznek fel. Az arányosítás az alkalmazott foglalkoztatásának kezdő dátuma alapján történik. Ez a mező csak akkor használható, ha az **Arányosítás** lehetőséget választja az **Arányosítási szabály** mezőben. </br></br><ul><li>**Napi** – Az alkalmazott által kapott rugalmas jóváírások számát a nap szintjéig arányosítja. A rugalmas jóváírások számát az időszak napjainak számával kell elosztani. Ha például a juttatási időszak 400 nap, akkor a rendszer a rugalmas jóváírások számát 400-zal elosztva számítja ki, hogy az alkalmazottak hány rugalmas jóváírást kapnak naponta.</li><li>**Aktuális hónap** – Az alkalmazott által kapott rugalmas jóváírások számát a hónap szintjéig arányosítja, az aktuális hónapra kerekítve. A rugalmas jóváírások számát az időszak hónapjainak számával kell elosztani. Ha például a juttatási időszak 15 hónap, akkor a rendszer a rugalmas jóváírások számát 15-tel elosztva számítja ki, hogy az alkalmazottak hány rugalmas jóváírást kapnak havonta.</li><li>**Következő hónap** – Az alkalmazott által kapott rugalmas jóváírások számát a hónap szintjéig arányosítja, a következő hónapra kerekítve. A rugalmas jóváírások számát az időszak hónapjainak számával kell elosztani. Ha például a juttatási időszak 15 hónap, akkor a rendszer a rugalmas jóváírások számát 15-tel elosztva számítja ki, hogy az alkalmazottak hány rugalmas jóváírást kapnak havonta.</li></ul> |
    
    Ügyeljen arra, hogy minden juttatási konstrukciót juttatási időszakonként csak egy rugalmas jóváírási programba léptessen be. Ellenkező esetben a rendszer nem fogja tudni, hogy melyik rugalmas jóváírási programot kell használnia, és ez problémákat fog okozni. 
 

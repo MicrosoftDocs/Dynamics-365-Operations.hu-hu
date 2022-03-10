@@ -1,28 +1,28 @@
 ---
-title: A Dynamics 365 Supply Chain Management Ügyfélportáljának áttekintése
+title: Ügyfélportál a számára Dynamics 365 Supply Chain Management áttekintés (videót tartalmaz)
 description: Ez a témakör bemutatja a Ügyfélportált, valamint ismerteti, hogy kinek érdemes használnia, és hogyan működik.
-author: dasani-madipalli
+author: Henrikan
 ms.date: 06/16/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: intro-internal
 ms.search.region: Global
-ms.author: damadipa
+ms.author: henrikan
 ms.search.validFrom: 2020-04-22
-ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: fc0f8187c10bfc95f94e59b62be8e89d4556dbfc373294aa17579d8c69caed18
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.13
+ms.openlocfilehash: 50bdbe6c5f5d23f49bdf8040f2c7811a28da3f32
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6764011"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8062009"
 ---
 # <a name="customer-portal-for-dynamics-365-supply-chain-management-overview"></a>A Dynamics 365 Supply Chain Management Ügyfélportáljának áttekintése
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+[!include [banner](../includes/banner.md)]
+
 
 ## <a name="what-is-the-customer-portal"></a>Mi is az Ügyfélportál?
 
@@ -42,7 +42,7 @@ A Ügyfélportál-sablon minden olyan testreszabási funkcióval rendelkezik, am
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ylwW]
 
-A [Ügyfélportál webhely áttekintése a Dynamics 365 Supply Chain Management megoldásban](https://youtu.be/nPrqoLuHfV8) videó (lásd fentebb) a [Finance and Operations lejátszási lista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) része, amely elérhető a YouTube szolgáltatásban.
+A [Az Ügyfélportál sablon áttekintése itt Dynamics 365 Supply Chain Management](https://youtu.be/nPrqoLuHfV8) videó (fent látható) szerepel a [Finance and Operations lejátszási lista](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) elérhető YouTube.
 
 ## <a name="who-should-use-it"></a>Kinek érdemes használnia?
 
@@ -62,7 +62,7 @@ Az Ügyfélportál Power Apps-portálok sablonként van szállítva. A Power App
 
 A [Power Apps-portálok](/powerapps/maker/portals/overview) olyan funkció, amely lehetővé teszi, hogy a felhasználók egy kívülről elérhető hozzanak létre, amelybe a szervezeten kívüli személyek be tudnak jelentkezni. A portálok létrehozásához alig vagy nem szükséges kódolás. A Ügyfélportál a Microsoft által elérhető számos [Dynamics 365 portálsablon egyike](/powerapps/maker/portals/portal-templates#environment-with-model-driven-apps-in-dynamics-365).
 
-A [kettős írás](/powerapps/maker/portals/overview) egy olyan beépített infrastruktúratermék, amely közel valós idejű interakciót tesz lehetővé az ügyfélkapcsolati alkalmazások és a Finance and Operations alkalmazások között. A kettős írás kétirányú integrációt tesz lehetővé a Finance and Operations alkalmazások és a Microsoft Dataverse között. Ezért integrált felhasználói élményt nyújt az alkalmazások között. A Ügyfélportál a kettős írással szinkronizált táblákra épül. Mielőtt az Supply Chain Management alkalmazásból adatok felhasználhatók lennének a vevői portálon, a kettős írást az összes szükséges táblához engedélyezni kell.
+[Kettős írás](/powerapps/maker/portals/overview) egy beépített infrastrukturális termék, amely közel valós idejű interakciót biztosít az ügyfél-elköteleződési alkalmazások és a Finance and Operations alkalmazások között. A kettős írás kétirányú integrációt biztosít a Finance and Operations alkalmazások és a Microsoft Dataverse. Ezért integrált felhasználói élményt nyújt az alkalmazások között. A Ügyfélportál a kettős írással szinkronizált táblákra épül. Mielőtt az Supply Chain Management alkalmazásból adatok felhasználhatók lennének a vevői portálon, a kettős írást az összes szükséges táblához engedélyezni kell.
 
 ![Ügyfélportál függőségei.](media/customer-portal-elements.png "Ügyfélportál függőségei")
 

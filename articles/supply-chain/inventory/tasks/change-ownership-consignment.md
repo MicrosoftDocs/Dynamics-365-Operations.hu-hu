@@ -1,27 +1,25 @@
 ---
 title: Bizományosi készlet tulajdonosának módosítása gyártási igény alapján
 description: Ez az eljárás bemutatja, hogyan módosítható a bizományosi készlet tulajdonosa a szállítóról a jogi személyére, amikor a készletre gyártási igény van.
-author: perlynne
-manager: tfehr
+author: yufeihuang
 ms.date: 08/14/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalOwnershipChange, InventJournalCreate
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 508226a3b5693b123af639cf6f130be07811c3c2
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: e735a9003f2859ed173f399525297506ec458e8d
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5209515"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565831"
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Bizományosi készlet tulajdonosának módosítása gyártási igény alapján
 

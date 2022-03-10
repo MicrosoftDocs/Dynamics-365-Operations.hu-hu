@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce értékelési környezet kiépítése
 description: Ez a témakör bemutatja, hogyan lehet egy Microsoft Dynamics 365 Commerce értékelési környezetet létesíteni.
 author: psimolin
-manager: annbe
 ms.date: 12/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
@@ -17,12 +15,12 @@ ms.search.industry: ''
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a57cc02c6d62f288f14b65191c2f4927a019963c
-ms.sourcegitcommit: c88b54ba13a4dfe39b844ffaced4dc435560c47d
-ms.translationtype: HT
+ms.openlocfilehash: c8241c31e82d124398189666c3a1709d25884b8acd9c8f3b1068529cbd216684
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/19/2021
-ms.locfileid: "5478164"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777500"
 ---
 # <a name="provision-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet kiépítése
 
@@ -78,7 +76,7 @@ Ezek az eljárások ismertetik a Commerce értékelési környezet kiépítésé
 
 ### <a name="add-the-azure-connector"></a>Azure-összekötő hozzáadása
 
-Az Azure összekötőnek az LCS-projekthez történő hozzáadásához kövesse az [Azure Resource Manager felvételi folyamat teljesítése](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/deployment/arm-onboarding) lépéseit.
+Az Azure összekötőnek az LCS-projekthez történő hozzáadásához kövesse az [Azure Resource Manager felvételi folyamat teljesítése](../fin-ops-core/dev-itpro/deployment/arm-onboarding.md) lépéseit.
 
 ### <a name="deploy-the-environment"></a>Környezet telepítése
 
@@ -92,16 +90,16 @@ Tegye a következőket a környezet telepítéséhez.
 1. Válassza ki az **Alkalmazás verziószáma** mezőben a legfrissebb verziót. Ha a legfrissebb verziótól különböző verziót kell kijelölni, akkor ne válasszon **10.0.14** előtti verziót.
 1. A **Platform verziószáma** mezőben használja a kiválasztott alkalmazás verziójának automatikusan kiválasztott platform verzióját. 
 
-    ![Válassza ki az alkalmazás- és a platformverziókat](./media/project1.png)
+    ![Válassza ki az alkalmazás- és a platformverziókat.](./media/project1.png)
 
 1. Válassza ki **Következő** lehetőséget.
 1. **Demó** kiválasztása környezeti topológiaként.
 
-    ![1. környezeti topológia kiválasztása](./media/project2.png)
+    ![1. környezeti topológia kiválasztása.](./media/project2.png)
 
 1. A **Környezet telepítése** oldalán adja meg a környezet nevét. A Speciális beállításokat ne módosítsa.
 
-    ![Környezet telepítése oldal](./media/project4.png)
+    ![Környezet telepítése oldal.](./media/project4.png)
 
 1. Szükség szerint állítsa be a virtuális gép méretét. (A következő virtuálisgép-raktározási egységet javasoljuk: \[SKU\] **D13 v2**.)
 1. Tekintse át az árképzési és licencelési feltételeket, majd jelölje be a jelölőnégyzetet annak jelzésére, hogy elfogadja azokat.
@@ -182,9 +180,9 @@ A Kereskedelem értékelési környezetének létesítési és konfigurálási f
 
 [Dynamics 365 Commerce értékelési környezet GYIK](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Commerce Scale Unit (felhő)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Commerce Scale Unit (felhő)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portál](https://azure.microsoft.com/features/azure-portal)
 

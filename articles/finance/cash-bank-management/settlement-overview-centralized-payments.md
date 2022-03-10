@@ -2,28 +2,27 @@
 title: Kiegyenlítés áttekintése (központosított kifizetések)
 description: Ez a témakör leírja a központosított kifizetések kiegyenlítését a Microsoft Dynamics 365 Finance alkalmazásban.
 author: abruer
-manager: AnnBe
 ms.date: 08/02/2018
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustOpenTrans
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
-ms.custom: 222414
+ms.custom:
+- "222414"
+- intro-internal
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ea661441c6c810d144d423b054c1bef058cdd9d6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 4d00455d36b4350deffdd0bccb5529ce9e69a7cc
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443966"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982227"
 ---
 # <a name="settlement-overview-for-centralized-payments"></a>Kiegyenlítés áttekintése központosított kifizetésekre vonatkozóan
 
@@ -108,3 +107,6 @@ Szállítói kifizetések esetében a kifizető jogi személy a jogi személytő
 
 ## <a name="withholding-tax"></a>Adóelőleg
 A számlához társított szállítókód alapján lehet meghatározni, hogy kell-e adóelőleget számítani. Ha az adóelőleg érvényes, a számlához társított jogi személlyel együtt számítja ki a rendszer. A jogi személyek különféle pénznemeket használnak, a rendszer a használt számlához társított jogi személy árfolyamát használja.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

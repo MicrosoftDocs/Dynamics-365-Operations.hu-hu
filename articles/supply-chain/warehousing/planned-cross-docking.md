@@ -2,11 +2,9 @@
 title: Tervezett áttárolás
 description: Ez a témakör a tervezett speciális áttárolást mutatja be, ahol a rendeléshez szükséges készletmennyiség a fogadástól vagy létrehozástól egyenesen a megfelelő kimenő vagy előkészítő területre irányul. A program a bejövő forrásból származó összes fennmaradó készletet a megfelelő tárolóhelyre irányítja a rendszeres elraktározási folyamaton keresztül.
 author: Mirzaab
-manager: tfehr
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate, WHSLoadPostMethod, WHSWorkClass, WHSWorkTemplateTable, WHSLocDirTable, WHSPlannedCrossDocking
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
-ms.dyn365.ops.version: Release 10.0.7
-ms.openlocfilehash: 722b004e607cb2e6b7de292d92b67b18c2024696
-ms.sourcegitcommit: 70b1567d316f19c15a4b032b4897f15c8dcdca09
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.7
+ms.openlocfilehash: c28639a4a575f5f356bf947ba8e0aee6bcd256b4
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "5556266"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7573033"
 ---
 # <a name="planned-cross-docking"></a>Tervezett áttárolás
 
@@ -30,19 +28,21 @@ Ez a témakör a speciális tervezett áttárolást mutatja be. Az áttárolás 
 
 Az áttárolás segítségével a dolgozók kihagyhatják a bejövő elraktározást és a készlet kimenő kitárolását, amely már ki van jelölve egy kimenő rendeléshez. Ezért a készlettel való tényleges munkavégzés száma ahol lehet minimalizálásra kerül. Ezenkívül, mivel kevesebb az interakció a rendszerrel, nagyobb idő- és területmegtakarítás érhető el a raktárban.
 
-Az áttárolás futtatása előtt a felhasználónak konfigurálnia kell egy új áttárolási sablont, ahol az ellátási forrás és az áttárolás egyéb követelményhalmazai meg vannak határozva. A kimenő rendelés létrehozásakor a sort egy olyan bejövő rendeléssel szemben kell megjelölni, amely ugyanazt a tételt tartalmazza.
+Az áttárolás futtatása előtt konfigurálnia kell egy új áttárolási sablont, ahol az ellátási forrás és az áttárolás egyéb követelményhalmazai meg vannak határozva. A kimenő rendelés létrehozásakor a sort egy olyan bejövő rendeléssel szemben kell megjelölni, amely ugyanazt a tételt tartalmazza. Az áttárolási sablonban kiválaszthatja az utasításkód mezőt, hasonlóan ahhoz, ahogyan a feltöltést és a beszerzési rendeléseket beállítja.
 
 A bejövő rendelés bevételezése idején az áttárolási beállítás automatikusan azonosítja az áttárolási igényt, és létrehozza a szükséges mennyiséghez tartozó áthelyezési munkát a helyutasítás beállításai alapján.
 
 > [!NOTE]
-> A készlettranzakciók **nem** frissülnek, ha az áttárolási munka érvénytelenítve van, még akkor sem, ha a raktárkezelési paraméterekben be van kapcsolva a beállítás ehhez a tulajdonsághoz.
+> A készlettranzakciók *nem* frissülnek, ha az áttárolási munka érvénytelenítve van, még akkor sem, ha a raktárkezelési paraméterekben be van kapcsolva a beállítás ehhez a tulajdonsághoz.
 
 ## <a name="turn-on-the-planned-cross-docking-features"></a>A tervezett áttárolási funkciók bekapcsolása
 
 Ha a rendszer még nem tartalmazza az ebben a témakörben leírt funkciókat, lépjen a [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) lehetőségre, és a következő sorrendben kapcsolja be a következő funkciókat:
 
 1. *Tervezett áttárolás*
-2. *Áttárolási sablonok helyutasításokkal*
+1. *Áttárolási sablonok helyutasításokkal*
+    > [!NOTE]
+    > Ez a funkció lehetővé teszi, hogy az áttárolási sablonban is meg legyen adva az **Irányelvkód** mező, hasonlóan ahhoz, ahogyan a feltöltési sablonokat beállítja. A funkció engedélyezése megakadályozza, hogy a rendszer irányelvkódot ad hozzá az áttárolási munkasablonsorokhoz a végső *betárolási* sorhoz. Így garantálható, hogy a munkasablonok figyelembe vétele előtt meg lehet határozni a végső berakodandó helyet a munka létrehozása során.
 
 ## <a name="setup"></a>Beállítás
 
@@ -90,9 +90,9 @@ A tervezett áttárolás a rakományok feladási módjaként történik. A funkc
 
         Ez a beállítás határozza meg, hogy a készletet a bevételezés során újra kell-e érvényesíteni. Ha ez a beállítás *Igen* értékre van állítva, akkor mind a maximális idő ablak, mind a lejárati napok tartománya be van jelölve.
 
-    - **Utasításkód** Hagyja üresen ezt a mezőt
+    - **Utasításkód:** Hagyja üresen ezt a mezőt
 
-        Ez a beállítás lehetővé teszi, hogy a rendszer helyadatokat használjon, hogy meghatározza az áttárolási készlet ideális helyét, amelybe áttárolási készletet lehet áthelyezni. Ezt úgy állíthatja be, hogy az egyes áttárolási sablonokhoz egy-egy műveletkódot rendel hozzá. Minden egyes műveletkód egyedi helyutasítási műveletet azonosít.
+        Ezt a lehetőséget az *Áttárolási sablonok helyutasításokkal* funkció engedélyezi. A rendszer helyadatokat használ, hogy meghatározza az áttárolási készlet ideális helyét, amelybe áttárolási készletet lehet áthelyezni. Ezt úgy állíthatja be, hogy az egyes áttárolási sablonokhoz egy-egy műveletkódot rendel hozzá. Ha egy utasításkód meg van adva, a munka létrehozásakor a rendszer helyutasításokat fog keresni az utasításkód alapján. Ily módon korlátozhatja az adott áttárolási sablonhoz használt helyutasításokat.
 
     - **Ellenőrzési időablak:** *Igen*
 
@@ -116,6 +116,9 @@ A tervezett áttárolás a rakományok feladási módjaként történik. A funkc
 
     - **Sorszám:** *1*
     - **Beszerzési forrás:** *Beszerzési rendelés*
+
+> [!NOTE]
+> Beállíthat egy lekérdezést, amivel szabályozza, hogy egy adott áttárolási sablon mikor legyen használva. Az áttárolási sablonok lekérdezése csak az *InventTable* (cikkek) táblát és a belső összekapcsolt *WHSInventTable* (WHS-cikkek) táblát tartalmazza. Ha további táblákat szeretne hozzáadni a lekérdezéshez, akkor csak *létező egyesítéseket* vagy *nem létező egyesítések* használatával egyesítheti ezeket. Amikor az összekapcsolt táblákra szűr, a főtáblából egy rekordot olvassa be a rendszer az összekapcsolt tábla mindegyik egyező rekordjához. Ha az összekapcsolástípus *létező összekapcsolás*, a keresés az első egyezés megtalálása után ér véget. Ha például az értékesítési rendelési sor tábláját a cikkek táblához kapcsolja, a rendszer ellenőrzi és visszaadja azokat a cikkeket, amelyekre legalább egy értékesítésirendelés-sornál meg van adva a megadott feltétel. A rendszer alapvetően a szülő (cikkek) táblából, nem a gyermek táblából (értékesítésirendelés-sor) másolja át az adatokat. Emiatt forrásdokumentumok (például értékesítésirendelés-sorok vagy vevők) alapján alapkivitelben nem lehet szűrést végezni.
 
 ### <a name="create-a-work-class"></a>Munkaosztály létrehozása
 
@@ -151,6 +154,9 @@ A tervezett áttárolás a rakományok feladási módjaként történik. A funkc
     - **Munkaosztály azonosítója:** *CrossDock*
 
 1. Válassza a **Mentés** lehetőséget, és győződjön meg arról, hogy az **Érvényes** jelölőnégyzet be van jelölve az *51 Áttárolás* sablonhoz.
+1. Nem kötelező: Válassza a **Lekérdezés szerkesztése** lehetőséget, ha be szeretné állítani, hogy a munkasablon mikor és hol használható.
+
+    Beállíthat egy lekérdezést, amivel szabályozza, hogy egy adott munkasablon mikor legyen használva. Megadhatja például, hogy egy sablon csak egy meghatározott helyen használható munkához. Ha az áttárolási munkasablont egy adott helyen szeretné alkalmazni, akkor nem a **Hely** mezőre, hanem a **Kezdés helye** mezőre kell szűrni, mert a bejövő folyamatok (beszerzés, áttárolás és feltöltés) munkalétrehozása a betárolási sortól kezdődik. A munka létrehozásakor a helyutasítás a **Hely** mezőt a betárolási helyre állítja. A kitárolási hely azonban a **Kezdési hely** mezőben van tárolva.
 
 > [!NOTE]
 > A *Kitárolás* és a *Betárolás* munkatípusok munkaosztályainak azonosnak kell lennie.
@@ -318,7 +324,7 @@ Jelenleg mindkét munkaazonosítónak ugyanaz a cél azonosítótáblája. A kö
 
 A következő ábra bemutatja, hogy hogyan jelenhet meg a teljesített áttárolási munka a Microsoft Dynamics 365 Supply Chain Management rendszerben.
 
-![Áttárolási munka befejezve](media/PlannedCrossDockingWork.png "Áttárolási munka befejezve")
+![Áttárolási munka befejezve.](media/PlannedCrossDockingWork.png "Áttárolási munka befejezve")
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

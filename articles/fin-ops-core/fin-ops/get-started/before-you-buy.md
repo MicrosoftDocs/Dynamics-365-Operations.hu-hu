@@ -2,7 +2,7 @@
 title: Vásárlás előtti teendők
 description: Lépésenkénti útmutatás, ha a Dynamics 365 Finance, Dynamics 365 Supply Chain Management vagy Dynamics 365 Commerce beszerzését fontolgatja.
 author: ShellyBakke
-ms.date: 11/23/2020
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: smiller
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 648a793b15df5597c0c4c6f2f972e28bb0ce79a5
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
-ms.translationtype: HT
+ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
+ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5750914"
+ms.lasthandoff: 11/30/2021
+ms.locfileid: "7874584"
 ---
 # <a name="before-you-buy"></a>Vásárlás előtti teendők
 
@@ -42,7 +42,7 @@ A következő megfontolásokat kell figyelembe venni, amikor telepítési opció
 - [Helyszíni telepítések rendszerkövetelményei](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> A helyszíni telepítések nem támogatott a nyilvános felhő infrastruktúrákon, többek között a Microsoft Azure rendszerben.
+> A helyszíni telepítések nem támogatott a nyilvános felhő infrastruktúrákon, többek között a Microsoft Azure rendszerben. A verem HCI és Veremközpont futtatása [Microsoft Azure](https://azure.microsoft.com/products/azure-stack/hci/) azonban [Microsoft Azure támogatott](https://azure.microsoft.com/products/azure-stack/hub/).
 
 A további információkat lásd: [Telepítési beállítások](../../dev-itpro/deployment/choose-deployment-type.md)
 
@@ -86,7 +86,7 @@ További erőforrásokhoz lásd:
 
 ## <a name="step-four-learn-about-fasttrack-and-plan-your-deployment"></a>4\. lépés: A FastTrack megismerése és a telepítés megtervezése
 
-A Microsoft FastTrack for Dynamics 365 az ügyfelek sikerességére koncentráló szolgáltatás, amelynek célja, hogy zökkenőmentessé tegye az átmenetet a Dynamics 365 szolgáltatásba annak érdekében, hogy Ön gyorsabban realizálhassa az üzleti értéket. Ha részt vesz a FastTrack programban, akkor útmutatást nyújtunk a bevált eljárásokról, továbbá arról, hogy miként tervezheti meg a sikeres bevezetéseket. Megismerhet továbbá módszereket is arról, hogy miként engedélyezhet új felhasználókat, illetve bővíthet funkciókat – mindezt az Ön saját tempójában. Továbbá hozzáférése lesz a Microsoft mérnökeinek segítségéhez, akik elkötelezettek az iránt, hogy a Dynamics 365 használata sikertörténet legyen Önnek. További információért lásd: [Microsoft FastTrack](fasttrack-dynamics-365-overview.md).
+A Microsoft FastTrack for Dynamics 365 az ügyfelek sikerességére koncentráló szolgáltatás, amelynek célja, hogy zökkenőmentessé tegye az átmenetet a Dynamics 365 szolgáltatásba annak érdekében, hogy Ön gyorsabban realizálhassa az üzleti értéket. Ha részt vesz a FastTrack programban, akkor útmutatást nyújtunk a bevált eljárásokról, továbbá arról, hogy miként tervezheti meg a sikeres bevezetéseket. Megismerhet továbbá módszereket is arról, hogy miként engedélyezhet új felhasználókat, illetve bővíthet funkciókat – mindezt az Ön saját tempójában. Továbbá hozzáférése lesz a Microsoft mérnökeinek segítségéhez, akik elkötelezettek az iránt, hogy a Dynamics 365 használata sikertörténet legyen Önnek. További információért lásd: [Microsoft FastTrack](/dynamics365/fasttrack/).
 
 ## <a name="if-you-are-upgrading-from-dynamics-ax-2012-or-migrating-from-ax-2009"></a>Ha a Dynamics AX 2012-ről frissít, illetve az AX 2009-ről tér át
 

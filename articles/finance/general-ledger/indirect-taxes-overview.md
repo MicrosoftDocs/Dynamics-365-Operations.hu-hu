@@ -1,26 +1,28 @@
 ---
 title: Áfa áttekintése
 description: Ez a témakör a forgalmiadó-rendszerről nyújt áttekintést. Bemutatja az áfa beállításának az elemeit, és azt, hogy ezek hogyan kapcsolódnak egymáshoz.
-author: ShylaThompson
+author: kailiang
 ms.date: 10/28/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: roschlom
-ms.custom: 13111
+ms.custom:
+- "13111"
+- intro-internal
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kailiang
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c8dcb5c9860cb617612dade03b55b8bd4a0983b6
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.openlocfilehash: 021692e0b599731db1d991405fcb4632080582bf
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5826618"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983928"
 ---
 # <a name="sales-tax-overview"></a>Áfa áttekintése
 
@@ -28,14 +30,13 @@ ms.locfileid: "5826618"
 
 Ez a témakör a forgalmiadó-rendszerről nyújt áttekintést. Bemutatja az áfa beállításának az elemeit, és azt, hogy ezek hogyan kapcsolódnak egymáshoz.
 
-<a name="overview"></a>Áttekintés
---------
+## <a name="overview"></a>Áttekintés
 
 A forgalmiadó-keretrendszer számos különböző típusú közvetett adót támogat, mint például a forgalmi adót, általános forgalmi adót (áfa), az áruk és szolgáltatások adóját (GST), darabszám szerinti díjakat és adóelőleget. Ezen adók kiszámítása és dokumentálása beszerzési és értékesítési tranzakciók során történik. Rendszeres időközönként be kell vallani és be kell fizetni őket az adóhatóságoknak. 
 
 A következő ábra az adóbeállítás entitásait és azok viszonyait szemlélteti.
 
-[![Az adóbeállítási entitások áttekintését bemutató ábra](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
+[![Az adóbeállítási entitások áttekintését bemutató ábra.](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
 Minden forgalmi adóhoz, amit a vállalatnak könyvelnie kell, áfakódot kell megadni. Az áfakód tartalmazza az adókulcsokat és a forgalmi adó számítási szabályait. 
 

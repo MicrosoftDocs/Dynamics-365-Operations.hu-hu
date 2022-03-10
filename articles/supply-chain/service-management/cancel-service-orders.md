@@ -1,12 +1,10 @@
 ---
 title: Szervizrendelések érvénytelenítése
 description: A szervizrendelést és annak sorait magából a rendelésből is érvénytelenítheti, több szervizrendelés egyidejű érvénytelenítéséhez pedig futtathat egy ismétlődő feladatot.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAServiceOrderTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b60feec05e923c25e0f0bacb28b510906d5f73cd
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: cca6c34bb43702e2c33935a73dc24f1a630065c0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974686"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571521"
 ---
 # <a name="cancel-service-orders"></a>Szervizrendelések érvénytelenítése   
 
@@ -77,3 +75,6 @@ A kiválasztott szervizrendelések vagy érvénytelenítésre kerülnek, vagy a 
   
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

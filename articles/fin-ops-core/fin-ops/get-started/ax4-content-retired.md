@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: margoc
 ms.search.validFrom: 2018-04-10
 ms.dyn365.ops.version: AX 2012
-ms.openlocfilehash: 7f6098fd7231921fe8702f7928dc0b35d32b5647
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
-ms.translationtype: HT
+ms.openlocfilehash: 6ab0f2be9761e167acd821ed499891d5c37abe72649e56dd6c5c6077780c6e5d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744075"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758154"
 ---
 # <a name="ax-40-content-that-has-been-retired"></a>AX 4.0 tartalmak, amelyek már nem érhetők el
 
@@ -28,7 +28,7 @@ ms.locfileid: "5744075"
 A Microsoft Dynamics AX 4.0 tartalom a TechNet és MSDN rendszeren megszüntetve. További tájékoztatás:
 
 - [Microsoft életciklus-irányelv](https://support.microsoft.com/lifecycle/search?alpha=Microsoft%20Dynamics%20AX%204.0)
-- [Támogatott frissítési útvonalak a Dynamics AX 2012-höz](https://technet.microsoft.com/library/dd362093.aspx)
+- [Támogatott frissítési útvonalak a Dynamics AX 2012-höz](/dynamicsax-2012/appuser-itpro/supported-upgrade-paths)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

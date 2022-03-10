@@ -1,8 +1,8 @@
 ---
-title: Jövőbeli életesemények konfigurálása
-description: 'A jövőbeli életesemények ütemezése a következőben végezhető el: Dynamics 365 Human Resources.'
-author: andreabichsel
-ms.date: 04/06/2020
+title: A jövőbeli életesemények konfigurálása
+description: Ez a téma azt írja le, hogyan lehet a jövőbeli életeseményeket a Dynamics 365 Human Resources rendszerben ütemezni.
+author: twheeloc
+ms.date: 08/23/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,17 +12,17 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d52e91e7b050027485b3536f40f6ad80afd90de8
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
-ms.translationtype: HT
+ms.openlocfilehash: aa772f5c58e199e8786185c783db7016c8aebafd
+ms.sourcegitcommit: 4f9c889e5cf72f34dd9746a322f8c0d6b983037b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6056732"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "7417582"
 ---
-# <a name="configure-future-life-events"></a>Jövőbeli életesemények konfigurálása
+# <a name="configure-future-life-events"></a>A jövőbeli életesemények konfigurálása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

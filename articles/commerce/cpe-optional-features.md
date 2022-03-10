@@ -2,11 +2,9 @@
 title: Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása
 description: Ez a témakör bemutatja, hogyan lehet opcionális funkciókat konfigurálni egy Microsoft Dynamics 365 Commerce értékelési környezethez.
 author: psimolin
-manager: annbe
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
@@ -16,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 6639de250557ce9a25fc2cde3807abf64b0ddc18
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 2f4e93b7ece7652b72ae2067be4de73f45a8261ada1b0bc731e2bd2147dcccc6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993450"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728291"
 ---
 # <a name="configure-optional-features-for-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet választható funkcióinak konfigurálása
 
@@ -133,17 +131,17 @@ Ezeket a tokeneket az e-mail renderelése során a program lecseréli a vevőkre
 
 A következő tokenek érvényesek a teljes értékesítési rendelésre.
 
-| A token neve | Jogkivonat |
+| A token neve | Token |
 |-------------------|-------|
-| Rendelés száma      | %salesid% |
+| Rendelésszám      | %salesid% |
 | Vevő neve   | %customername% |
 | Szállítási cím  | %deliveryaddress% |
 | Számlázási cím   | %customeraddress% |
 | Megrendelési dátum        | %shipdate% |
-| Kézbesítés módja     | %modeofdelivery% |
-| Engedmény          | %discount% |
+| Szállítási mód     | %modeofdelivery% |
+| Kedvezmény          | %discount% |
 | Áfa         | %tax% |
-| Rendelés végösszege       | %total% |
+| Rendelés összesen       | %total% |
 
 #### <a name="sales-line"></a>Értékesítési sor
 
@@ -156,10 +154,10 @@ A következő tokeneket cseréli ki a rendszer értékekre az egyes termékek es
 |------------------------|-------|
 | Terméklista – kezdés   | \<!--%tablebegin.salesline% --\> |
 | Terméklista – befejezés     | \<!--%tableend.salesline%--\> |
-| Termék neve           | %lineproductname% |
+| Terméknév           | %lineproductname% |
 | Leírás            | %lineproductdescription% |
 | Mennyiség               | %linequantity% |
-| Sor egységára        | %lineprice% (verify) |
+| Sor egységára        | %lineprice% (ellenőrzés) |
 | sortétel összege        | %linenetamount% |
 | sorkedvezmény          | %linediscount% |
 | Szállítási dátum              | %lineshipdate% |
@@ -179,10 +177,13 @@ A következő tokeneket cseréli ki a rendszer értékekre az egyes termékek es
 
 [Dynamics 365 Commerce értékelési környezet GYIK](cpe-faq.md)
 
-[Microsoft Lifecycle Services (LCS)](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
+[Microsoft Lifecycle Services (LCS)](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-user-guide)
 
-[Retail Cloud Scale Unit (RCSU)](https://docs.microsoft.com/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
+[Retail Cloud Scale Unit (RCSU)](/business-applications-release-notes/october18/dynamics365-retail/retail-cloud-scale-unit)
 
 [Microsoft Azure-portál](https://azure.microsoft.com/features/azure-portal)
 
 [Dynamics 365 Commerce-webhely](https://aka.ms/Dynamics365CommerceWebsite)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

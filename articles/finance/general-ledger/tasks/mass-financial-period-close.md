@@ -2,11 +2,9 @@
 title: Pénzügyi időszakok tömeges lezárása
 description: Ez a cikk bemutatja, hogyan várakoztatható, illetve hogyan zárható le véglegesen egy időszak egyszerre, több jogi személyre vonatkoztatva.
 author: aprilolson
-manager: AnnBe
 ms.date: 08/16/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerCalendar, LedgerPeriodModuleAccessControlUpdate, SysLookupPicklist, LedgerFiscalCalendarPeriodStatus
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4db0f68a22f9129041c7a7c081f397c34c2b07eb
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 7dac267d2d4ce0824bc47b63b8d07913a8dd7f02bcccc025880701cb4d0bdd3d
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254439"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6751277"
 ---
 # <a name="mass-financial-period-close"></a>Pénzügyi időszakok tömeges lezárása
 

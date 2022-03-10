@@ -1,30 +1,27 @@
 ---
-title: Új termék létrehozása Commerce-ben
+title: Új termék létrehozása a Commerce szolgáltatásban
 description: Ez a témakör azt mutatja be, hogyan lehet új terméket létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: samjarawan
-manager: annbe
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: eb2dd36c6149f2aa40305cd57eac060b232b09e5
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 73911d9d8e3fdc6d72eadb8d071382e15dd5375eae8274f88d88b1078e7720f6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412820"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753722"
 ---
-# <a name="create-a-new-product-in-commerce"></a>Új termék létrehozása Commerce-ben
+# <a name="create-a-new-product-in-commerce"></a>Új termék létrehozása a Commerce szolgáltatásban
 
 
 [!include [banner](includes/banner.md)]
@@ -52,13 +49,13 @@ A terméket elsősorban a termékszáma, a neve és a leírása határozza meg. 
 
 A következő képen egy példaként hozzáadott termék jelenik meg.
 
-![Termék létrehozása](media/create-new-product.png)
+![Termék létrehozása.](media/create-new-product.png)
 
 A termék hozzáadását követően további adatok is megadhatók, például a **Termék leírása**, **Változatcsoportok**, **Dimenziócsoportok**, **Termékattribútumok** és **Kapcsolódó termékek**.
 
 A következő kép egy termék további részleteit jeleníti meg.
 
-![Termék részletei](media/create-new-product-2.png)
+![Termék részletei.](media/create-new-product-2.png)
 
 ### <a name="create-product-variants"></a>Termékváltozatok létrehozása
 
@@ -77,23 +74,23 @@ A termék értékesítéséhez először egy jogi személynek ki kell adni azt.
 
 1. A termék lapon válassza ki a **Termékek kiadása** lehetőséget.
 
-    ![Termék kiadása](media/create-new-product-3.png)
+    ![Termék kiadása.](media/create-new-product-3.png)
 
 1. Válassza ki a kiadni kívánt terméket, majd kattintsona **Tovább** gombra.
 
-    ![Válasszon egy terméket kiadásra](media/create-new-product-4.png)
+    ![Válasszon egy terméket a kiadáshoz.](media/create-new-product-4.png)
 
 1. Válassza ki a kiadni kívánt termékváltozatok készletét, majd kattintson a **Tovább** gombra.
 
-    ![Változatok kiválasztása kiadásra](media/create-new-product-5.png)
+    ![Változatok kiválasztása a kiadáshoz.](media/create-new-product-5.png)
 
 1. Válassza ki a jogi személyt, majd kattintsona **Tovább** gombra.
 
-    ![Jogi személy kiválasztása](media/create-new-product-6.png)
+    ![Válasszon jogi személyt.](media/create-new-product-6.png)
 
 1. Válassza a **Befejezés** lehetőséget.
 
-    ![Termékkiadás befejezése](media/create-new-product-7.png)
+    ![Termékkiadás befejezése.](media/create-new-product-7.png)
 
 ## <a name="configure-a-released-product"></a>Egy kiadott termék konfigurálása
 
@@ -108,10 +105,13 @@ Egy termék kiadása után a rendszer további konfigurációt igényel, amely t
 
 A következő kép egy példát mutat egy kiadott termék beállítási konfigurációjáról.
 
-![Kiadott termék konfigurálása](media/create-new-product-8.png)
+![Kiadott termék konfigurálása.](media/create-new-product-8.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
 [Jogi személyek létrehozása](channels-legal-entities.md)
 
-[Változatcsoport létrehozása](create-variant-group.md) 
+[Variánscsoport létrehozása](create-variant-group.md) 
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

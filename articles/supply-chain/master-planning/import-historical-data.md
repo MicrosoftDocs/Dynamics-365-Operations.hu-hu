@@ -1,29 +1,26 @@
 ---
 title: Előzményadatok importálása az igény-előrejelzésekhez
 description: Ahhoz, hogy pontos igény-előrejelzéseket kaphasson, cikkenként vagy cikkfelosztási kulcsonként kell rendelkeznie a korábbi igényadatokkal. Ez a témakör azt ismerteti, hogy miként használhatja az adatentitásokat a korábbi igényadatok bármely rendszerből való importálására annak érdekében, hogy Ön több igény-előrejelzési adattal rendelkezhessen.
-author: roxanadiaconu
-manager: tfehr
+author: ChristianRytt
 ms.date: 05/10/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c66481b1dd8650960cad2947425c1e6c7450afcb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 6dba31279541c20949dd1e86236103045c48b701
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429759"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579664"
 ---
 # <a name="import-historical-data-for-demand-forecasts"></a>Előzményadatok importálása az igény-előrejelzésekhez
 
@@ -34,28 +31,14 @@ Az igény-előrejelzések pontosságának biztosítása érdekében minél több
 Az **Adatkezelés** munkaterületen megtekintheti az entitás összes mezőjének áttekintését.
 
 1. Nyissa meg az **Adatkezelés** munkaterületet.
-2. Kattintson az **Adatentitások** mozaikra.
+2. Válassza ki az **Adatentitások** mozaikot.
 3. Keresse ki a **Korábbi külső igény** entitáslistáját.
-4. Kattintson a **Célmezők** pontra. A következő entitásmezők kötelezőek: hely (**DeliveringSiteId**), dátum (**DemandDate**), mennyiség (**DemandQuantity**), továbbá vagy a cikkszám (**ItemNumber**), vagy a cikkfelosztási kulcs (**ProductAllocationKeyId**).
+4. Válassza ki a **Célmezők** lehetőséget. A következő entitásmezők kötelezőek: hely (**DeliveringSiteId**), dátum (**DemandDate**), mennyiség (**DemandQuantity**), továbbá vagy a cikkszám (**ItemNumber**), vagy a cikkfelosztási kulcs (**ProductAllocationKeyId**).
 
 Az adatentitás használatához rendelkeznie kell egy olyan Microsoft Excel fájllal vagy CSV-fájllal, amely tartalmazza a korábbi igényadatokat. Az alábbi példa az adatok CSV-fájlból való importálását mutatja be.
 
-## <a name="example"></a>Példa
+Az adatok importálásával és az adatok importálás utáni tisztításával kapcsolatos további tudnivalókat lásd az [Adatimportálási és -exportálási feladatok áttekintése](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md) és a kapcsolódó témakörökben.
 
-A következő fájlt példaként használhatja. Töltse le a [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast) fájlt. Ez a fájl a D0001 cikk korábbi igényadatait tartalmazza. Csak a következő kötelező mezők szerepelnek benne: hely, mennyiség és az igény dátuma.
+Lásd még: [Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md).
 
-1. Válassza ki azt a vállalatot, amelyikbe a korábbi igényadatokat importálni szeretné.
-2. Nyissa meg az **Adatkezelés** munkaterületet.
-3. Kattintson az **Importálás** mozaikra.
-4. Adjon meg egy nevet az importálási projektnek, mint például a következőt: **A D0001 cikk korábbi igényének importálása**.
-5. A **Forrásadatok formátuma** mezőben válassza ki az importált fájl formátumát. Ennél a példánál a HistoricalDemandData fájl importálásához jelölje be a **CSV** lehetőséget.
-6. Az **Entitásnév** mezőben válassza a **Korábbi külső igény** lehetőséget.
-7. Mentse a fájlt a számítógépre, majd töltse fel.
-8. Kattintson az **Importálás** gombra.
-9. A **Végrehajtás összefoglalása** lap automatikusan megnyílik. Ellenőrizze az importált adatokat a lapon.
-
-A korábbi igényadatok importálása után létrehozhatja az igény-előrejelzést.
-
-## <a name="additional-resources"></a>További erőforrások
-
-[Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md)
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

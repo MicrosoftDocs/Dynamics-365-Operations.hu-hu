@@ -1,7 +1,7 @@
 ---
 title: Eszközkezelés integrálása tárgyi eszközökkel
 description: Ez a témakör azt mutatja be, hogyan lehet integrálni az eszközkezelés és a tárgyi eszközök modulokat, hogy a tárgyi eszközöket a karbantartás alatt álló eszközökkel lehessen kapcsolni.
-author: kamaybac
+author: johanhoffmann
 ms.date: 04/17/2020
 ms.topic: article
 ms.prod: ''
@@ -9,15 +9,15 @@ ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: dabourq
+ms.author: johanho
 ms.search.validFrom: 2020-04-17
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: a45bf1f62cdcc8abed2ec157a223e7f3fddec7ce
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 40e4fdce50b335668a53d2efe53b7cf6c66f364f
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5809854"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7567583"
 ---
 # <a name="integrate-asset-management-with-fixed-assets"></a>Eszközkezelés integrálása tárgyi eszközökkel
 

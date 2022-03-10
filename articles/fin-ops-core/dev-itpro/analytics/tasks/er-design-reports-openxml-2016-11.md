@@ -1,12 +1,10 @@
 ---
 title: ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)
-description: Ez a témakör leírja, hogy a Rendszergazda vagy Elektronikus jelentések fejlesztője szerepkörrel rendelkező felhasználó miként hozhat létre egy új Elektronikus jelentés (ER) konfigurációt, amely tartalmazza az elektronikus dokumentumok létrehozására vonatkozó sablont az OPENXML formátumban.
+description: Ez a témakör azt ismerteti, hogyan lehet létrehozni egy olyan új Elektronikus jelentéskészítési konfigurációt, amely egy sablont tartalmaz az elektronikus dokumentumok OPENXML-formátumú előállításához.
 author: NickSelin
-manager: AnnBe
-ms.date: 08/12/2019
+ms.date: 04/23/2021
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ERWorkspace, ERVendorPart, ERSolutionRepositoryTable, ERSolutionRepositoryCreateDropDialog, ERSolutionImport,  ERSolutionTable, ERSolutionCreateDropDialog, EROperationDesigner, ERDataSourceAddDropDialog, ERModelGroupByFunctionEditor, VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: bf909efbac5dce8e22d9713ad2e694ce624ffeb0
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: c3dfe6ce9c918b5fccbd7097096fa359facdf41bbf6fd0fab6c61153171484cd
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4681901"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6753028"
 ---
 # <a name="er-design-a-configuration-for-generating-reports-in-openxml-format-november-2016"></a>ER – Az OPENXML formátumban létrejövő jelentésekre vonatkozó konfigurációk tervezése (2016. november)
 
@@ -30,7 +28,7 @@ Ez a témakör leírja, hogy a Rendszergazda vagy Elektronikus jelentések fejle
 
 Ebben a példában a mintavállalatra, Litware-ra, Inc.-ra vonatkozóan létrehoz egy konfigurációs szolgáltatót. Ezeket a lépéseket a GBSI vállalatban hajthatja végre.
 
-Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit. Egy Excel-fájllal is rendelkeznie kell, amelyet importálni kell a sablon létrehozásakor. Ez a fájl a [Kifizetési jelentés sablonja](https://go.microsoft.com/fwlink/?linkid=862266) dokumentumból érhető el.
+Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfigurációszolgáltató létrehozása és aktívként történő megjelölése” eljárás lépéseit. Egy Excel-fájllal is rendelkeznie kell, amelyet importálni kell a sablon létrehozásakor. Ez a fájl a [Kifizetési jelentés sablonja](https://download.microsoft.com/download/3/f/0/3f0658b2-042c-43cf-a776-0f4c7f7cfe4e/SampleVendPaymWsReport.xlsx) dokumentumból érhető el.
 
 
 ## <a name="upload-the-payments-data-model-configuration"></a>A Fizetési adatmodell-konfiguráció feltöltése
@@ -150,3 +148,6 @@ Hajtsa végre az alábbi lépéseket: először hajtsa végre a „Konfiguráci�
 17. A **Bankszámla** mezőben írja be a `GBSI OPER` szöveget.
 18. Válassza az **OK** parancsot, majd válassza ismét az **OK** elemet. Tekintse át a létrehozott munkalapot, többek között a kifizetési sorok részleteit, valamint az ebben a fizetési üzenetben használt pénznemkódra vonatkozó összegeket is.  
 
+
+
+[!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Eszköz életciklus-állapotai
 description: Ez a témakör az Eszközkezelés modul eszköz-életciklusállapotait és életciklus-modelljeit írja le.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CatProcureCatalogEdit, CatProcureCatalogListPage, EntAssetLifecycleModelStateNext, EntAssetObjectLifecycleState, EntAssetLifecycleStateUpdate, EntAssetObjectLifecycleModel
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 2214
 ms.assetid: 2f3e0441-414d-402b-b28b-7ab0d650d658
 ms.search.region: Global
-ms.author: riluan
+ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: dffedfafd9d75320accf0e27f072bab6fd51f135
-ms.sourcegitcommit: deac22ba5377a912d93fe408c5ae875706378c2d
-ms.translationtype: HT
+ms.openlocfilehash: 55139c6458e569b15518f0f11f1c12c3a26cae2f26c6a2046a7ebdc1277cb144
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "5016552"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6722463"
 ---
 # <a name="asset-lifecycle-states"></a>Eszköz életciklus-állapotai
 
@@ -63,9 +61,12 @@ Miután létrehozta a szükséges eszközéletciklus-állapotokat, beállíthat 
 
 5. Az **Életciklus-állapotok** gyorslapon válassza ki azokat az eszközéletciklus-állapotokat, amelyeket fel kell venni az eszközéletciklus-modellbe:
 
-    - A modellben használandó életciklus-állapotot válassza ki a **Hátralevő életciklus-állapotok** szakaszban, majd a jobbra nyíl ![Jobbra nyíl](media/15-setup-for-objects.png) gombbal helyezze át a **Kijelölt életciklus-állapotok** szakaszba.
-    - Ahhoz, hogy az összes elérhető életciklus-állapotot használhassa a modellhez, nyomja meg az **Összes elérhető életciklus-állapot** ![Összes elérhető életciklus-állapot](media/20-setup-for-objects.png) gombot. Az összes életciklus-állapot a **Kijelölt életciklus-állapotok** szakaszba kerül.
-    - Ha el kíván távolítani egy életciklus-állapotot a modellből, válassza ki az adott állapotot a **Kijelölt életciklus-állapotok** szakaszban, majd a Balra nyíl ![Balra nyíl](media/16-setup-for-objects.png) gombbal helyezze át a **Hátralévő életciklus-állapotok** szakaszba.
+    - Ha életciklus-állapotot szeretne használni a modellhez, válassza ki azt a **Hátralévő életciklus-állapotok** szakaszban, majd válassza a jobb nyílgombot ![Jobb nyíl.](media/15-setup-for-objects.png) elemet az áthelyezéshez az **Életciklus-állapotok kiválasztva** szakaszba.
+    - Ahhoz, hogy az összes elérhető életciklus-állapotot használhassa a modellhez, nyomja meg az **Összes elérhető életciklus-állapot** ![Összes elérhető életciklus-állapot.](media/20-setup-for-objects.png) gombot. Az összes életciklus-állapot a **Kijelölt életciklus-állapotok** szakaszba kerül.
+    - Ha életciklus-állapotot szeretne eltávolítani a modellből, válassza ki azt a **kiválasztott életciklus-állapotok** szakaszban, majd válassza a bal nyílgombot ![Bal nyíl.](media/16-setup-for-objects.png) elemet az áthelyezéshez a **Fennmaradó életciklus-állapotok** szakaszba.
 
 6. Válassza az **Életciklus-állapot frissítései** elemet, amellyel meghatározhatja a kijelölt életciklus-állapotot követő eszközéletciklus-állapotokat.
 7. Az **Eszközállapot** gyorslapon a javításra kapott eszközök kezelése használható. A **Bejövő/kimenő** szakaszban kiválaszthat eszközéletciklus-állapotokat, amelyekkel jelezheti a javításra kapott eszköz munkafolyamatát. Ha ügyfelei vagy részlegei számára hiteleszközöket kínál, akkor a **Kölcsön** részben kiválaszthatja a kölcsönzött eszközökre vonatkozó életciklus-állapotokat.
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

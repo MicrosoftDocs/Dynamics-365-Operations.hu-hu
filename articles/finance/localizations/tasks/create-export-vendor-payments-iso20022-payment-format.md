@@ -2,11 +2,9 @@
 title: Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban
 description: Ez az eljárás bemutatja, hogyan hozhat létre fizetési sorokat a szállítói kifizetési naplóban, és hogyan hozhat létre szállítói fizetési fájlt az ISO2022 átutalást használva példaként.
 author: mrolecki
-manager: AnnBe
 ms.date: 01/17/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, SysQueryForm, VendPaymProposalEdit, BankAccountTableLookUp
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1df738e3925dc23e7723d93f33acf6a9d811b113
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: c7bd5308e7589cb280244ea85e184422cbe2aa09f1cb548a81445defbd082e42
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4964541"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752098"
 ---
 # <a name="create-and-export-vendor-payments-using-iso20022-payment-format"></a>Szállítói kifizetések létrehozása és exportálása ISO20022 fizetési formátumban
 
@@ -49,3 +47,6 @@ Ez az ötödik azon öt eljárás közül, amelyek elektronikus jelentési beál
     3.    Írjon be egy értéket a **Fájlnév** mezőbe. Ebben a példában az euróban történő fizetés miatt a létrehozott fájl SEPA kompatibilis lesz. A ISO20022 jóváírás-átutalás és a többi szállítói fizetési dormátum is használható a fizetések létrehozására más pénznemekben.
     4.    A **Bankszámlák** mezőben adjon meg vagy válasszon ki egy értéket.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

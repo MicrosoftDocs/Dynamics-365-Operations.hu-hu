@@ -2,7 +2,6 @@
 title: Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával
 description: Az ebben a témakörben leírtak azt mutatják be, hogy a Regulatory Configuration Service felhasználói hogyan tervezhetik meg egy új elektronikus jelentési modell hozzárendelését a metaadatok használatával.
 author: NickSelin
-manager: AnnBe
 ms.date: 06/28/2019
 ms.topic: business-process
 ms.prod: ''
@@ -14,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 91c50047781fdc21c9157ceb634822c6cfb5a075
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
-ms.translationtype: HT
+ms.openlocfilehash: 6ad175f81edcf6b21927d85927c42a3398a0286b4a766e06c88a61952384f75e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5559651"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6754342"
 ---
 # <a name="access-application-metadata-by-using-er-configuration"></a>Alkalmazás-metaadatokhoz való hozzáférés ER-konfiguráció használatával
 

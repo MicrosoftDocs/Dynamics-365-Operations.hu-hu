@@ -1,29 +1,26 @@
 ---
 title: Szabadszöveges számla helyesbítése
 description: Ez a cikk a már feladott szabadszöveges számlák kijavításának és azok javított számlaként való újbóli kiadásának módszereit mutatja be.
-author: ShivamPandey-msft
-manager: AnnBe
+author: abruer
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CustFreeInvoice
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 13991
 ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0bf6e7a070d7c151c6ff5d868f4f916359b82683
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: cf4503e3d4b200219d6b444b69c866871d21787d
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443846"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753802"
 ---
 # <a name="correct-a-free-text-invoice"></a>Szabadszöveges számla helyesbítése
 
@@ -44,10 +41,13 @@ A javított számla feladásakor, három számlája lesz:
 Kétféle módon határozhatja meg a számlák érvénytelenítését és javítását:
 
 -   Az **összes szabadszöveges számlák** lap tartalmazza a **Javítás** oszlopot, amelyen megtekintheti, hogy mely számlák érvénytelenítési számlák és javított számlák.
--   A szabadszöveges számla fejlécének állapotjelzője **Érvénytelenítési számla '\[számlaszám\]'** vagy **Javított számla '\[számlaszám\]'**.
+-   A szabadszöveges számla fejlécének állapotjelzője **Érvénytelenítési számla '\[ számlaszám\]'** vagy **Javított számla '\[ számlaszám\]'**.
 
 > [!NOTE]
 > Ez a funkció csak akkor használható, ha be van állítva a **Szabadszöveges számla javítása** konfigurációs kulcs. A konfigurációs kulcsok engedélyezésével (vagy letiltásával) kapcsolatos további tudnivalókért lásd a [Karbantartási mód](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) konfigurációs kulcsok szakaszát. 
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

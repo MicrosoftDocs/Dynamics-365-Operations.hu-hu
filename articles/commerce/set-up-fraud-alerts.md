@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 8334b46f7e943e888c3a4db7580eeca30d49ad39
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
-ms.translationtype: HT
+ms.openlocfilehash: e692d43b8c2648a424ff3b4fdc9d0cf16d0e03702d6a237f71caaf49646c5ec3
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5793969"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6763668"
 ---
 # <a name="set-up-and-work-with-call-center-fraud-alerts"></a>Hívásközpontban jelentkező csalás-ellenőrzési figyelmeztetések beállítása és használata
 
@@ -34,13 +34,13 @@ Ez a témakör azt ismerteti, hogyan lehet kritériumokat és szabályokat létr
 
 ## <a name="turning-on-the-fraud-check-feature"></a>A csalásellenőrző funkció bekapcsolása
 
-A csalásellenőrzési funkció használatához a csatorna **Rendeléskiegészítés engedélyezése** opcióját **Igenre** kell állítania, amikor a hívásközpont [meghatározása:](https://docs.microsoft.com/dynamics365/unified-operations/retail/set-up-order-processing-options). Amikor a rendelésteljesítés be van kapcsolva, a hívásközpont felhasználóinak ki kell választania a **Kész** lehetőséget az értékesítési rendelés lapján, minden létrehozott értékesítési rendeléshez. A Kész művelet eredményeképpen megnyílik az **Értékesítési rendelés összesítése** lap. Miután a felhasználók megadták a szükséges fizetési adatokat az **Értékesítési rendelés összesítése** lapon, kiválasztják a **Küldés** lehetőséget a rendelés véglegesítéséhez. A rendelés elküldésekor elindul a csalásellenőrzés funkció, és a rendszer esetleges szabályai automatikusan érvényesítésre kerülnek.
+A csalásellenőrzési funkció használatához a csatorna **Rendeléskiegészítés engedélyezése** opcióját **Igenre** kell állítania, amikor a hívásközpont [meghatározása:](/dynamics365/unified-operations/retail/set-up-order-processing-options). Amikor a rendelésteljesítés be van kapcsolva, a hívásközpont felhasználóinak ki kell választania a **Kész** lehetőséget az értékesítési rendelés lapján, minden létrehozott értékesítési rendeléshez. A Kész művelet eredményeképpen megnyílik az **Értékesítési rendelés összesítése** lap. Miután a felhasználók megadták a szükséges fizetési adatokat az **Értékesítési rendelés összesítése** lapon, kiválasztják a **Küldés** lehetőséget a rendelés véglegesítéséhez. A rendelés elküldésekor elindul a csalásellenőrzés funkció, és a rendszer esetleges szabályai automatikusan érvényesítésre kerülnek.
 
-A hívásközpont felhasználói manuálisan is visszatarthatnak értékesítési rendeléseket csalásellenőrzésre, mielőtt kiválasztják a **Küldést**. Ahhoz, hogy manuálisan várakoztassanak egy értékesítési rendelést az **Értékesítési rendelés összesítése** oldalon, válassza a **Tartás**\>**Manuális csalási várakoztatás** lehetőséget. Felugrik egy ablak, hogy megjegyzés beírásával megindokolja, miért várakoztatja a rendelést. Ez a megjegyzés fog meg fog jelenni a [várakoztatott rendelések](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds) munkaterületen, hogy tájékoztassa azt a felhasználót, aki ellenőrzi a várakoztatott rendeléseket, és megállapítja, hogy a rendelés kiadható-e.
+A hívásközpont felhasználói manuálisan is visszatarthatnak értékesítési rendeléseket csalásellenőrzésre, mielőtt kiválasztják a **Küldést**. Ahhoz, hogy manuálisan várakoztassanak egy értékesítési rendelést az **Értékesítési rendelés összesítése** oldalon, válassza a **Tartás**\>**Manuális csalási várakoztatás** lehetőséget. Felugrik egy ablak, hogy megjegyzés beírásával megindokolja, miért várakoztatja a rendelést. Ez a megjegyzés fog meg fog jelenni a [várakoztatott rendelések](/dynamics365/unified-operations/retail/work-with-order-holds) munkaterületen, hogy tájékoztassa azt a felhasználót, aki ellenőrzi a várakoztatott rendeléseket, és megállapítja, hogy a rendelés kiadható-e.
 
 A **Rendelés teljesítésének engedélyezése** opció konfigurálásán túlmenően a csalásellenőrzési funkciót a hívásközpont paraméterei között is konfigurálnia kell. Lépjen ide: **Retail és Commerce**\>**Csatorna beállításai**\>**Hívásközponti beállítása**\>**Hívásközponti paraméterei**. A **Hívásközponti paraméterei** oldalon, a **Várakoztatás** lapon állítsa a **Csalásellenőrzés** opciót **Igenre**.
 
-A **Várakoztatás** lapon meg kell adnia azokat a [várakoztatási kódokat is](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds), amelyek olyan rendelésekre vonatkoznak, amelyeket manuálisan vagy automatikusan várakoztatnak csalás ellenőrzésére. Állítsa be a várakoztatási kódokat a **Csalás manuális várakoztatási kódja** és a **Csalás várakoztatási kód** mezőben. Érdemes két egyedi várakoztatási kódot létrehozni, hogy a várakoztatási munkaterületen dolgozó felhasználók könnyen szűrhessék és megkülönböztethessék az automatikus várakoztatásokat a manuális várakoztatásoktól.
+A **Várakoztatás** lapon meg kell adnia azokat a [várakoztatási kódokat is](/dynamics365/unified-operations/retail/work-with-order-holds), amelyek olyan rendelésekre vonatkoznak, amelyeket manuálisan vagy automatikusan várakoztatnak csalás ellenőrzésére. Állítsa be a várakoztatási kódokat a **Csalás manuális várakoztatási kódja** és a **Csalás várakoztatási kód** mezőben. Érdemes két egyedi várakoztatási kódot létrehozni, hogy a várakoztatási munkaterületen dolgozó felhasználók könnyen szűrhessék és megkülönböztethessék az automatikus várakoztatásokat a manuális várakoztatásoktól.
 
 A csalásellenőrzési funkció hatékony működéséhez be kell állítania a **Minimális pontszám** mezőt is. A rendszerben meghatározott, mindegyik csalási feltételhez és a szabályhoz tartozik egy pontszám. Amikor egy értékesítési rendelést csalás szempontjából ellenőriznek, és az egy vagy több találatot eredményez, akkor a pontszámok összeadódnak, és kijön a teljes csalási pontszám. Ha a teljes csalási pontszám értéke meghaladja a **Minimális pontszám** mezőben megadott értéket, a rendelés el automatikusan várakoztatásra kerül. Tetszés szerint használhatja a pontszámhoz kapcsolódó többi mezőt is a **Várakoztatás** fülön, és meghatározhat pontszámot e-mail címhez, telefonszámhoz és postai irányítószámhoz. Ha nem ad meg pontszámot egyik ilyen statikus csalási feltételhez sem, amikor meghatározza ezeket a **Statikus csalási adatok** oldalon, a rendszer hozzájuk rendeli a pontszámokat azon alapértelmezett pontszámok segítségével, amelyeket Ön a **Várakoztatás** lapon, a **Hívásközponti paraméterek** oldalon megadott.
 
@@ -65,7 +65,7 @@ A rendelést menti a rendszer, de megjelöli a következőként: **Feldolgozni t
 
 A csalásellenőrzés miatt várakoztatott rendelések megtekintéséhez és kezeléséhez lépjen ide: **Retail és Commerce**\>**Vevők**\>**Várakoztatott rendelések**. A **Várakoztatott rendelések** oldalon jelöljön ki egy bejegyzést a listában, és kattintson a **Várakoztatott rendelés** lehetőségre, hogy olyan részletesebb nézetet lásson, amely tartalmazza a várakoztatás okát. A **Csalás részletei** gyorslapon meg lehet tekinteni azokat a szisztematikus csalási feltételeket, amelyek előfordultak a rendelés esetében, valamint itt találhatók az alkalmazott pontszámok is. Ha a rendelést manuálisan várakoztatják, megtekintheti annak a felhasználónak a megjegyzéseit, aki várakoztatott állapotba tette a rendelést; ehhez nézze meg a **Csalási megjegyzések** szakaszt a **Megjegyzések** gyorslapon.
 
-További tájékoztatás a rendelések várakoztatásával kapcsolatban itt találhatók: [ Rendelések várakoztatása: ](https://docs.microsoft.com/dynamics365/unified-operations/retail/work-with-order-holds).
+További tájékoztatás a rendelések várakoztatásával kapcsolatban itt találhatók: [ Rendelések várakoztatása: ](/dynamics365/unified-operations/retail/work-with-order-holds).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

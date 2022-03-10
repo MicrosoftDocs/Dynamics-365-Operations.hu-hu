@@ -2,11 +2,9 @@
 title: Készpénzkezelés fejlesztései
 description: Ez a témakör a Dynamics 365 Commerce készpénzkezeléssel kapcsolatos pénztári fejlesztéseit mutatja be.
 author: anpurush
-manager: AnnBe
 ms.date: 05/21/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,12 +15,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-21
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 86cdd70919926243bbf2cb5cc2f26690accdac80
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: f878f39e8e9913edbe1da192e199090139a88adb6b7ed9a1e9b779c5748171b5
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993681"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6735654"
 ---
 # <a name="cash-management-improvements"></a>Készpénzkezelés fejlesztései
 
@@ -61,3 +59,6 @@ A Retail 10.0.3-as és újabb verzióiban a készpénzforgalmi tranzakciókkal k
 - Ha egyeztetés közben a kiválasztott tranzakció nem kerül egyensúlyba, a felhasználónak meg kell adnia a kiegyenlítetlen egyeztetés okának a leírását. A felhasználók kiválaszthatnak egy tranzakciót, és szükség szerint egyeztetik a releváns ok leírásával.
 - A felhasználók a műszak lezárása előtt folytathatják a tranzakciók egyeztetését és egyeztetések visszavonását. A műszak lezárása után nem lehet a tranzakciók egyeztetését visszavonni.
 - Amikor egy felhasználó egy műszak zárását választja, a Commerce ellenőrzi, hogy nincsenek-e nem egyeztetett készpénzgazdálkodási tranzakciók a műszakban. A felhasználó nem zárhatja le a műszakot, amíg nem egyeztetett tranzakciók vannak.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

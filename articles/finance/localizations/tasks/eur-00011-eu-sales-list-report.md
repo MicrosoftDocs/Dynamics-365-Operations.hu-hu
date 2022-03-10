@@ -2,11 +2,9 @@
 title: EUR-00011 EU értékesítési lista jelentés létrehozása.
 description: Ezzel az eljárás végigvezeti az EU értékesítési lista jelentésének létrehozásán.
 author: ShylaThompson
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, SalesEditLines,  EUSalesList, EUSalesListSelection, SysQueryForm, SysLookup
 audience: Application User
@@ -15,12 +13,12 @@ ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, F
 ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: fdedf153ae17ac90032e8998ce3b97ba9b734b64
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 1247f8268387b9084350883a3f56ff6e61bdb4d1b05aedfe4e886ccf97c166b9
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5227981"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6758772"
 ---
 # <a name="eur-00011-generate-the-eu-sales-list-report"></a>EUR-00011 EU értékesítési lista jelentés létrehozása.
 

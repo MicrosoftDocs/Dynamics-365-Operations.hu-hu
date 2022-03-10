@@ -2,11 +2,9 @@
 title: Egyéni tárolóhely meghatározása a létrehozott dokumentumoknak
 description: Ez a témakör ismerteti, hogyan bővítheti a dokumentumok tárolóhelyeinek listáját, amelyeket az elektronikus jelentési (ER) formátumok hoznak létre.
 author: NickSelin
-manager: AnnBe
 ms.date: 02/22/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-platform
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 5e9afad936a353c8db3c316ad45c4ce28d33b129
-ms.sourcegitcommit: 659375c4cc7f5524cbf91cf6160f6a410960ac16
-ms.translationtype: HT
+ms.openlocfilehash: 61a1e46497d650e2c063a5fe7537d17cf7aa1828a5a4504bb781e84aeb88f04a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "4680806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6718501"
 ---
 # <a name="specify-a-custom-storage-location-for-generated-documents"></a>Egyéni tárolóhely meghatározása a létrehozott dokumentumoknak
 
@@ -29,7 +27,7 @@ A alkalmazásprogramozási felület (API) az Elektronikus jelentéskészítéshe
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-Telepítenie kell egy topológiát, amely támogatja a folyamatos buildet. (További tájékoztatás: [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Hozzáféréssel kell rendelkezzen ezen topológiához a következő szerepkörök egyikében:
+Telepítenie kell egy topológiát, amely támogatja a folyamatos buildet. (További tájékoztatás: [A folyamatos build- és tesztautomatizálást támogató topológiák telepítése](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation).) Hozzáféréssel kell rendelkezzen ezen topológiához a következő szerepkörök egyikében:
 
 - Elektronikus jelentések fejlesztője
 - Elektronikus jelentések funkcióival foglalkozó konzulens
@@ -41,7 +39,7 @@ Ezen topológia fejlesztői környezetéhez való hozzáféréssel is kell rende
 
 A jelenlegi topológiában [hozzon létre egy új ER formátumot](tasks/er-format-configuration-2016-11.md) dokumentumok létrehozásához, amelyekhez egyéni tárolóhely hozzáadását tervezi. Másik lehetőségként [Importáljon egy a meglévő ER formátum ehhez a topológiához](general-electronic-reporting-manage-configuration-lifecycle.md).
 
-![Formátumtervező oldal](media/er-extend-file-storages-format.png)
+![Formátumtervező oldal.](media/er-extend-file-storages-format.png)
 
 > [!IMPORTANT]
 > Az ER formátumának, amelyet létrehoz vagy importál a következő formátum-elemek valamelyikét tartalmaznia kell:
@@ -55,12 +53,12 @@ A jelenlegi topológiában [hozzon létre egy új ER formátumot](tasks/er-forma
 
 Annak megadásához, hogy az ER formátum által létrehozott dokumentumok hogyan továbbítódnak, konfigurálnia kell [Elektronikus jelentéskészítési (ER) célokat](electronic-reporting-destinations.md). A létrehozott dokumentumok fájlként tárolására konfigurált minden ER cél esetében meg kell adnia egy dokumentumtípust, a dokumentumkezelő keretrendszerben. A különféle dokumentumtípusok használhatók az ER formátumok által generált dokumentumok átirányításához.
 
-1. Adjon hozzá új [dokumentumtípust](https://docs.microsoft.com/dynamics365/fin-ops-core/fin-ops/organization-administration/configure-document-management) a korábban importált vagy létrehozott ER formátumhoz. A következő illusztrációban a dokumentumtípus **FileX**.
+1. Adjon hozzá új [dokumentumtípust](../../fin-ops/organization-administration/configure-document-management.md) a korábban importált vagy létrehozott ER formátumhoz. A következő illusztrációban a dokumentumtípus **FileX**.
 2. A dokumentumtípus megkülönböztetéséhez egyéb dokumentumtípusoktól adja meg az adott kulcsszót nevében. Például a következő ábrán a név **(LOCAL) mappa**.
 3. Az **Osztály** mezőben adja meg a **Fájl csatolása** elemet.
 4. A **Csoport** mezőben adja meg a **Fájl** elemet.
 
-![Dokumentumtípusok oldal](media/er-extend-file-storages-document-type.png)
+![Dokumentumtípusok lapja.](media/er-extend-file-storages-document-type.png)
 
 > [!NOTE]
 > A dokumentumtípusok vállalatspecifikusak. ER formátumú használatához több vállalathoz konfigurált célhoz konfigurálnia kell egy külön dokumentumtípust minden vállalatnál.
@@ -115,18 +113,18 @@ Az **AttachingFile()** esemény akkor következik be, amikor a következő ER c�
 - **Archív** – Ezen cél használata esetén a futtatott ER formátumhoz új rekord jön létre a ERFormatMappingRunJobTable táblában. Az **Archivált** mező értéke a rekordban **Hamis** lesz. Ha az ER-formátum sikeresen lefut, ha a generált dokumentum csatolva lesz ehhez a rekordhoz, és az **AttachingFile()** esemény bekövetkezik. A dokumentumtípus, amelyet ki van választva ebben az ER célban határozza meg a csatolt fájl tárolási helyét (Microsoft Azure tároló vagy a Microsoft SharePoint mappa).
 - **Munkaarchívum** – Ezen cél használata esetén a futtatott ER űrlaphoz új rekord jön létre a ERFormatMappingRunJobTable táblában. Az **Archivált** mező értéke a rekordban **Igaz** lesz. Ha az ER-formátum sikeresen lefut, ha a generált dokumentum csatolva lesz ehhez a rekordhoz, és az **AttachingFile()** esemény bekövetkezik. A dokumentumtípus, amely konfigurálva van az ER paraméterekben határozza meg a csatolt fájl tárolási helyét (Azure tároló vagy a Microsoft SharePoint mappa).
 
-![Elektronikus jelentéskészítés paraméterei lap](media/er-extend-file-storages-parameters.png)
+![Elektronikus jelentéskészítés paraméterei lap.](media/er-extend-file-storages-parameters.png)
 
 ## <a name="configure-an-er-destination"></a>Egy ER-célhely konfigurálása
 
-1. Konfigurálja az archivált célt valamelyik korábban említett elemhez (fájl, mappa, egyesítés vagy melléklet) a létrehozott vagy importált ER formátumhoz. Útmutatásért lásd: [ER célok konfigurálása](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
+1. Konfigurálja az archivált célt valamelyik korábban említett elemhez (fájl, mappa, egyesítés vagy melléklet) a létrehozott vagy importált ER formátumhoz. Útmutatásért lásd: [ER célok konfigurálása](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
 2. Használja a dokumentumtípust, amelyet korábban hozzáadott a konfigurált célhoz. (Például ebben a témakörben a dokumentumtípus **FileX**.)
 
-![Célhely beállításai párbeszédablak](media/er-extend-file-storages-destination.png)
+![Célhely beállításai párbeszédablak.](media/er-extend-file-storages-destination.png)
 
 ## <a name="modify-source-code"></a>Forráskód módosítása
 
-1. Adjon hozzá új osztályt a Microsoft Visual Studio projekthez, és írjon kódot a korábban említett **AttachingFile()** eseményre való feliratkozáshoz. (A használt bővítési mintával kapcsolatos további tudnivalókat lásd: [Válasz EventHandlerResult használatával](https://docs.microsoft.com/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Az új osztályban például írjon kódot a következő műveletek végrehajtásához:
+1. Adjon hozzá új osztályt a Microsoft Visual Studio projekthez, és írjon kódot a korábban említett **AttachingFile()** eseményre való feliratkozáshoz. (A használt bővítési mintával kapcsolatos további tudnivalókat lásd: [Válasz EventHandlerResult használatával](/dynamics365/unified-operations/dev-itpro/extensibility/respond-event-handler-result).) Az új osztályban például írjon kódot a következő műveletek végrehajtásához:
 
     1. Előállított fájlok tárolása az Application Object Server (AOS) szolgáltatást futtató kiszolgáló a helyi fájlrendszerének, egy mappájában.
     2. A létrehozott fájlok tárolása, csak akkor, amikor az új dokumentumtípus (például a **FileX** típus, amelynek nevében szerepel a"(LOCAL)" kulcsszó) van használva, amikor egy fájlt a rekordhoz van csatolva az ER végrehajtási munkanaplóban.
@@ -175,3 +173,6 @@ Az **AttachingFile()** esemény akkor következik be, amikor a következő ER c�
 
 - [Elektronikus jelentéskészítés (ER) céljai](electronic-reporting-destinations.md)
 - [Bővíthetőség kezdőlap](../extensibility/extensibility-home-page.md)
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

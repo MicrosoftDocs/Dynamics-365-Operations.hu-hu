@@ -1,26 +1,24 @@
 ---
 title: Raktári munka halasztott feldolgozása
 description: Ez a témakör azt a funkcionalitást ismerteti, amely lehetővé teszi a raktári munkakelések késleltetett feldolgozását a Dynamics 365 Supply Chain Management programban.
-author: josaw1
-manager: tfehr
+author: Mirzaab
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2019-6-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: c85dd895e18805da2d1daf5f90f64db82bdc0116
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: f99e960ffe7ca383563cc49c2e0825592ef5de57
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4973785"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577864"
 ---
 # <a name="deferred-processing-of-warehouse-work"></a>Raktári munka halasztott feldolgozása
 
@@ -30,7 +28,7 @@ Ez a témakör azt a funkcionalitást ismerteti, amely lehetővé teszi a késle
 
 A halasztott feldolgozási funkciók esetében a raktári dolgozók továbbra is más munkát folytatnak, mialatt a betárolási művelet a háttérben lesz feldolgozva. A halasztott feldolgozás akkor hasznos, ha több munkasort kell feldolgozni, és a dolgozó lehetővé tudja tenni a munka aszinkron feldolgozását. Akkor is hasznos, ha a kiszolgálón előfordulhat a feldolgozási idő megnövekedése alkalomszerűen vagy nem tervezetten, és a megnövekedett feldolgozási idő hatással lehet a felhasználó termelékenységére.
 
-A háttérben történő feldolgozás a SysOperation keretrendszer használatával érhető el. A további tudnivalókat lásd: [A SysOperation keretrendszer áttekintése](https://docs.microsoft.com/dynamicsax-2012/developer/sysoperation-framework-overview).
+A háttérben történő feldolgozás a SysOperation keretrendszer használatával érhető el. A további tudnivalókat lásd: [A SysOperation keretrendszer áttekintése](/dynamicsax-2012/developer/sysoperation-framework-overview).
 
 ## <a name="configuring-the-work-processing-policies"></a>A munkafeldolgozási irányelvek konfigurálása
 
@@ -109,3 +107,9 @@ A **Kimenő munka megfigyelése** munkaterülethez két csempe tartozik, amelyek
 ## <a name="deleting-completed-tasks"></a>Befejezett feladatok törlése
 
 A már befejezett, halasztott betárazási feldolgozási tevékenységeket törölheti, ehhez jelölje ki, és törölje azokat a lapon.
+
+## <a name="additional-resources"></a>További erőforrások
+
+- [Manuális készletmozgási művelet halasztott feldolgozása](deferred-processing-manual-inventory-movement.md)
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,11 +2,9 @@
 title: Idők hozzárendelése egy feladatköteg feladataihoz
 description: A gyártásvégrehajtásban kötegelhetők a feladatok. Egyszerre több feladatot is elkezdhet a feladatlista lapon.
 author: johanhoffmann
-manager: tfehr
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: JmgBundleSlize, JmgProdParameters, JmgRegistration
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 382cf8d12d9695c80c3b13497886d20f29f3680c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: fb0236f9f39afc67cb5c8cedecee5278a6555d03deefb859fc134a4a4160285b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4966580"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6766607"
 ---
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Idők hozzárendelése egy feladatköteg feladataihoz
 
@@ -82,7 +80,7 @@ Az alábbi táblázat bemutatja a felhasznált idő kiszámításának képleté
 ## <a name="net-time-allocation-key"></a>Nettó idő foglalási kulcs
 Az alábbi táblázat bemutatja a felhasznált idő kiszámításának képletét. A képlet: Jelentésenkénti számított idő = kötegidő ÷ feladatok száma
 
-|                              | 09:00–10:00 (1 óra) | 10:00–11:00 (1 óra) | 11:00–13:00 (2 óra) | 13:00–15:00 (2 óra) | Felhasznált idő |
+| Példa                       | 09:00–10:00 (1 óra) | 10:00–11:00 (1 óra) | 11:00–13:00 (2 óra) | 13:00–15:00 (2 óra) | Felhasznált idő |
 |------------------------------|----------------------|----------------------|-----------------------|-----------------------|----------------|
 | A kötegben található feladatok száma | 1                    | 3                    | 2                     | 1                     | Nem alkalmazható |
 | 1. feladat                        | 1 ÷ 1 = 1 óra       | 1 ÷ 3 = 0,33 óra    | Nem alkalmazható        | Nem alkalmazható        | 1,33 óra     |
@@ -110,3 +108,6 @@ A javított óránkénti költséget és a feladatidőt a termelési naplóba ad
 
 
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

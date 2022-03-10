@@ -2,11 +2,9 @@
 title: Rendelési művelet visszahívása a pénztárban
 description: Ez a témakör a pénztárban található, továbbfejlesztett rendelés-visszahívási oldalak kiemelt funkcióit ismerteti.
 author: hhainesms
-manager: annbe
 ms.date: 03/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -14,12 +12,12 @@ ms.search.region: global
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 174821fce4baf81e4298da4b066f855bfec98ca5
-ms.sourcegitcommit: 6c108be3378b365e6ec596a1a8666d59b758db25
-ms.translationtype: HT
+ms.openlocfilehash: 43d6b2e4e5d923b16b02337432fc5259f66c0bf1a8ba1dbf311fb76cb3f085e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "5585130"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6737604"
 ---
 # <a name="recall-order-operation-in-pos"></a>Rendelési művelet visszahívása a pénztárban
 
@@ -31,7 +29,7 @@ A funkció engedélyezéséhez kapcsolja be a **Továbbfejlesztett rendelés-vis
 
 A **Rendelés-visszahívás** művelet gombjának konfigurálásával a szervezetek előre meghatározott megjelenítéssel telepíthetik a műveletet.
 
-![Gombrács konfigurálása](media/recallorderbuttongrid.png)
+![Gombrács konfigurálása.](media/recallorderbuttongrid.png)
 
 A megjelenítés beállítási lehetőségei a következők:
 - **Nincs** – Ezzel a beállítással a művelet speciális megjelenítés nélkül telepíthető. Amikor egy felhasználó ezzel a konfigurációval nyitja meg a műveletet, a program felkéri, hogy keressen megrendeléseket vagy válasszon egy előre definiált rendelésszűrőből.
@@ -44,11 +42,11 @@ A **Rendelés-visszahívás** művelet pénztárból való elindításakor, ha a
 - Válassza ki a **Rendelések keresése** vagy **Keresés és szűrése** ikont az AppBar felületen, hogy a szűrési mechanizmus segítségével megkeresse azokat a rendeléseket, amelyek megfelelnek a szűrési feltételeknek.
 - Előre definiált szűrőkből választhat a **Rendelések megjelenítése** legördülő listából (teljesítendő rendelések, összeszedendő rendelések vagy szállítandó rendelések).
 
-![RecallOrderMainMenu](media/recallordermain.png)
+![RecallOrderMainMenu.](media/recallordermain.png)
 
 A keresési feltételekkel végzett keresés után az alkalmazás megjeleníti az egyezést mutató értékesítési rendeléseket. Fontos megjegyezni, hogy a keresési/szűrési beállítások használata esetén a beolvasni kívánt rendeléseknek nem kell a felhasználó aktuális üzletéhez kapcsolt rendeléseknek lenniük. Ez a keresési folyamat beolvassa és megjeleníti a keresési feltételeknek megfelelő vevői rendeléseket, még akkor is, ha a rendelést egy másik üzlet/csatorna vagy raktár hely által teljesítendőként hozták létre vagy állították be.
 
-![RecallOrderDetail](media/orderrecalldetail.png)
+![RecallOrderDetail.](media/orderrecalldetail.png)
 
 A felhasználó kiválaszthat a listán egy rendelést, és megtekintheti a további részleteket. A képernyő jobb oldalán látható információs ablak a kiválasztott rendelés részleteit jeleníti meg, többek között a rendelési sor adatait, a szállítási adatokat és a teljesítési adatokat.
 

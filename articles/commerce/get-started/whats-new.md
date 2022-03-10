@@ -2,11 +2,9 @@
 title: Új vagy módosult elemek a Dynamics 365 Retail rendszerben
 description: Ez az oldal olyan forrásokat mutat be, amelyek segítenek megismerni a Microsoft Dynamics 365 Retail rendszer legújabb kiadásainak új szolgáltatásait.
 author: sericks007
-manager: AnnBe
 ms.date: 10/20/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User, IT Pro, Developer
 ms.reviewer: josaw
@@ -15,12 +13,12 @@ ms.search.industry: retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-ms.openlocfilehash: 690e73bfe24be3ba3cf6d25b361b2afb0938d02f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 7c2fa01a0d15142bd7a4d5f46572953706037fd6bf9638e975f75c5514293612
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5206204"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6777548"
 ---
 # <a name="whats-new-and-changed-in-dynamics-365-retail"></a>Új és módosult elemek a Dynamics 365 Retail szolgáltatásban
 

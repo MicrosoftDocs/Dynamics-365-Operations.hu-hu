@@ -1,45 +1,39 @@
 ---
-title: Új vagy módosult elemek a Human Resources szolgáltatásban
-description: A Microsoft Dynamics 365 Human Resources szolgáltatáshoz új kiadást biztosítunk hetente. Az itt található témakörök ismertetik a hetente végrehajtott módosításokat.
-author: andreabichsel
-manager: tfehr
-ms.date: 09/01/2020
+title: Újdonságok és változások a Human Resources szolgáltatásban
+description: A Microsoft Dynamics 365 Human Resources szolgáltatáshoz új kiadást biztosítunk kéthetente. Az itt található témakörök ismertetik a hetente végrehajtott módosításokat.
+author: twheeloc
+ms.date: 12/09/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm, FeatureManagementWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ec952f8c121f97396c135d10258a6431e8f2257e
-ms.sourcegitcommit: ea2d652867b9b83ce6e5e8d6a97d2f9460a84c52
-ms.translationtype: HT
+ms.openlocfilehash: 86322fdf14bdefb5c9d4793a69e95ca913843e53
+ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "5112881"
+ms.lasthandoff: 02/02/2022
+ms.locfileid: "8087524"
 ---
-# <a name="whats-new-or-changed-in-human-resources"></a>Új vagy módosult elemek a Human Resources szolgáltatásban
+# <a name="whats-new-or-changed-in-human-resources"></a>Újdonságok és változások a Human Resources szolgáltatásban
+
+> [!IMPORTANT]
+> Az ebben a témakörben említett funkciók jelenleg önállóan érhetők el az ügyfelek számára Dynamics 365 Human Resources. A funkciók egy része vagy mindegyike a Finance 10.0.25-ös kiadása után elérhető lesz a Finance infrastruktúra egy jövőbeli kiadásának részeként.  
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Microsoft Dynamics 365 Human Resources szolgáltatáshoz új kiadást biztosítunk kéthetente. Az itt található témakörök ismertetik az egyes kiadások által végrehajtott módosításokat.
 
->[!NOTE]
->A munkaszüneti napok figyelembe vételéhez a 2020. novemberi és decemberi kiadások ütemezése a következő:
->
->- Novemberi kiadás: november 2. – november 13.
->- Decemberi kiadás: November 30. – December 11.
-> 
->A kéthetes kiadási ütemezés a szokásos módon fog folytatódni 2021. január 11-én.
-
 Ha további tájékoztatást szeretne kapni a hamarosan megjelenő szolgáltatásokról, illetve a Human Resources szolgáltatás frissítési folyamatáról, olvassa el a következő cikkeket: 
 
-- [A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)
+- [A Dynamics 365 Human Resources 2021-es kiadás 2. hullámának áttekintése](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/)
 
 - [Rendelés frissítése](hr-admin-setup-update-process.md)
 
@@ -47,37 +41,34 @@ Ha további tájékoztatást szeretne kapni a hamarosan megjelenő szolgáltatá
 
 ## <a name="human-resources-weekly-releases"></a>Human Resources heti kiadások
 
-Ha tudni szeretné, hogy mi új vagy módosult a Human Resources egyes kétheti verzióiban, tekintse át az alábbi cikkeket:
+Ha tudni szeretné, hogy mi új vagy módosult a Human Resources egyes kétheti verzióiban, tekintse át az alábbi témaköröket:
 
+[2021. november 29.](hr-whats-new-2021-11-29.md)<br>
+[2021. október 5.](hr-whats-new-2021-10-04.md)</br>
+[2021. szeptember 20.](hr-whats-new-2021-09-20.md)</br>
+[2021. szeptember 6.](hr-whats-new-2021-09-06.md)</br>
+[2021. augusztus 23.](hr-whats-new-2021-08-23.md)</br>
+[2021. augusztus 9.](hr-whats-new-2021-08-09.md)</br>
+[2021. július 26.](hr-whats-new-2021-07-26.md)</br>
+[2021. július 12.](hr-whats-new-2021-07-12.md)</br>
+[2021. június 22.](hr-whats-new-2021-06-22.md)</br>
+[2021. május 20.](hr-whats-new-2021-05-20.md)</br>
+[2021. május 3.](hr-whats-new-2021-05-03.md)</br>
+[2021. április 19.](hr-whats-new-2021-04-19.md)</br>
+[2021. április 5.](hr-whats-new-2021-04-05.md)</br>
+[2021. március 22.](hr-whats-new-2021-03-22.md)</br>
+[2021. március 8.](hr-whats-new-2021-03-08.md)</br>
+[2021. február 22.](hr-whats-new-2021-02-22.md)</br>
 [2021. január 28.](hr-whats-new-2021-01-28.md)</br>
 [2021. január 21.](hr-whats-new-2021-01-21.md)</br>
-[2020. december 02.](hr-whats-new-2020-12-02.md)</br>
-[2020. október 22.](hr-whats-new-2020-10-22.md)</br>
-[2020. szeptember 16.](hr-whats-new-2020-09-16.md)</br>
-[2020. szeptember 3.](hr-whats-new-2020-09-03.md)</br>
-[2020. augusztus 20.](hr-whats-new-2020-08-20.md)</br>
-[2020. augusztus 6.](hr-whats-new-2020-08-06.md)</br>
-[2020. július 23.](hr-whats-new-2020-07-23.md)</br>
-[2020. július 8.](hr-whats-new-2020-07-08.md)</br>
-[2020. június 23.](hr-whats-new-2020-06-23.md)</br>
-[2020. június 11.](hr-whats-new-2020-06-11.md)</br>
-[2020. május 28.](hr-whats-new-2020-05-28.md)</br>
-[2020. május 14.](hr-whats-new-2020-05-14.md)</br>
-[2020. május 1.](hr-whats-new-2020-05-01.md)</br>
-[2020. április 13.](hr-whats-new-2020-04-13.md)</br>
-[2020. április 3.](hr-whats-new-2020-04-03.md)</br>
-[2020. március 24.](hr-whats-new-2020-03-24.md)</br>
-[2020. március 19.](hr-whats-new-2020-03-19.md)</br>
-[2020. március 10.](hr-whats-new-2020-03-10.md)</br>
-[2020. március 3.](hr-whats-new-2020-03-03.md)</br>
-[2020. február 25.](hr-whats-new-2020-02-25.md)</br>
-[2020. február 18.](hr-whats-new-2020-02-18.md)</br>
-[2020. február 12.](hr-whats-new-2020-02-12.md)</br>
-[2020. február 7.](hr-whats-new-2020-02-07.md)</br>
-[2020. február 3.](hr-whats-new-2020-02-03.md)
+
+
 
 ## <a name="see-also"></a>Lásd még
 
-[A Dynamics 365 Human Resources 2020. második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2021-es kiadás 2. hullámának áttekintése](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

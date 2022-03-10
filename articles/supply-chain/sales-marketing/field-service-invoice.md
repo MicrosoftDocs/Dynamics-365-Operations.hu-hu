@@ -1,12 +1,10 @@
 ---
 title: Field Service megállapodási számlák szinkronizálása Supply Chain Management szabadszöveges számlákká
 description: Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Field Service szerződési számláinak a Dynamics 365 Supply Chain Management szolgáltatásban található szabadszöveges számláival történő szinkronizálására használatosak.
-author: ChristianRytt
-manager: tfehr
+author: Henrikan
 ms.date: 04/10/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User, IT Pro
@@ -15,21 +13,21 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: ''
-ms.author: crytt
+ms.author: henrikan
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
-ms.openlocfilehash: f1790366cebf317472bc1ef9a5ecd2a19fe755d3
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 70f1c072c3a2a1b201aac1f1d2beea9979a3b792
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4980831"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8060764"
 ---
 # <a name="synchronize-agreement-invoices-in-field-service-to-free-text-invoices-in-supply-chain-management"></a>Field Service megállapodási számlák szinkronizálása Supply Chain Management szabadszöveges számlákká
 
 [!include[banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ez a témakör bemutatja a sablonokat és a mögöttes feladatokat, amelyek a Dynamics 365 Field Service szerződési számláinak a Dynamics 365 Supply Chain Management szolgáltatásban található szabadszöveges számláival történő szinkronizálására használatosak.
 
@@ -70,7 +68,7 @@ A **Szerződéses eredetet tartalmaz** oszlop hozzá lett adva a **Számlasor** 
 A **Számla dátuma** kötelező mező a Supply Chain Management szolgáltatásban. Ebből következően az oszlopnak értékkel kell rendelkeznie a Field Service szolgáltatásban a szinkronizálás előtt. E követelmény teljesítéséhez a következő logika került hozzáadásra:
 
 - Ha a **Számladátum** oszlop üres a **Számla** táblában (azaz nincs értéke), akkor szerződésből eredő számlasor hozzáadásánál az aktuális dátumra kerül beállításra.
-- A felhasználó módosíthatja a **Számladátum** oszlopot. Ha azonban a felhasználó megpróbál egy szerződésből eredő számlát menteni, üzletifolyamat-hibát kap, ha a **Számladátum** oszlop üres a számlán.
+- A felhasználó módosíthatja a **Számladátum** oszlopot. Ha azonban a felhasználó megpróbál egy szerződésből eredő számlát menteni, az üzleti folyamatra vonatkozó hibát kap, ha a **Számladátum** oszlop üres a számlán.
 
 ## <a name="prerequisites-and-mapping-setup"></a>Előfeltételek és hozzárendelési beállítás
 
@@ -102,8 +100,11 @@ Az alábbi ábrákon látható a sablonleképezés az Adatintegrálásban.
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-headers"></a>Szerződéses számlák (Field Service-ből Supply Chain Managementbe): Számlafejlécek
 
-[![Sablonleképezés az adatintegrátorban](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
+[![Sablonleképezés a számlafejlécek adatintegrációjában.](./media/FSFreeTextInvoice1.png)](./media/FSFreeTextInvoice1.png)
 
 ### <a name="agreement-invoices-field-service-to-supply-chain-management-invoice-lines"></a>Szerződéses számlák (Field Service-ből Supply Chain Managementbe): Számlasorok
 
-[![Sablonleképezés az adatintegrátorban](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+[![Sablonleképezés a számlasorok adatintegrációjában.](./media/FSFreeTextInvoice2.png)](./media/FSFreeTextInvoice2.png)
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,12 +1,10 @@
 ---
 title: Szolgáltatás intervallumai
-description: A szerviz intervalluma azt a gyakoriságot jelzi, amellyel a szervizrendeléssorok létrejönnek a szervizrendelések automatikus létrehozása esetén.
-author: ShylaThompson
-manager: tfehr
+description: Ez a témakör a szolgáltatási intervallumok használatával kapcsolatban nyújt áttekintést. A szolgáltatási szerződés intervalluma azt a gyakoriságot jelzi, amellyel a szervizrendeléssorok létrejönnek a szervizrendelések automatikus létrehozása esetén.
+author: kamaybac
 ms.date: 02/20/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAAgreementTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1b14061d5356cd61ab8cb1b1b2fbba859c16f904
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 08ec58037657f7d04e50c31aec0f343a09b9fa4e
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4974410"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580312"
 ---
 # <a name="service-intervals"></a>Szolgáltatás intervallumai
 
@@ -93,3 +91,6 @@ Az ebben a példányban létrehozott három szervizrendeléssor a **Szervizrende
 
 [Szolgáltatás intervallumainak beállítása](set-up-service-intervals.md)  
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

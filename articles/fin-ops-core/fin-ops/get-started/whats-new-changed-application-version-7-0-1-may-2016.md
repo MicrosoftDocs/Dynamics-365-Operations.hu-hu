@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: f1d0361da03f2fc4aaaa749d632192265483db2d
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
-ms.translationtype: HT
+ms.openlocfilehash: 9a455ffbc4396ea4bf0e3df12e7acdcbfeaa5f5269dbe772848341ac0d22a5e1
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5752821"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6748264"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Mi az új vagy mi változott a Dynamics AX alkalmazásban verziószám 7.0.1 (2016. május)
 
@@ -76,7 +76,7 @@ Ez a cikk a Microsoft Dynamics AX 7.0.1 alkalmazásverziójában található új
 </tr>
 <tr>
 <td>Eltérő termékdimenziókkal rendelkező azonos termékeket tartalmazó anyagjegyzék támogatása.</td>
-<td>A termelés során egy vagy több termékméretet használva előfordulhatnak olyan helyzetek, ahol ugyanazt az elemet szeretné egy másik változata alapján létrehozni. További tájékoztatást a <a href="https://blogs.msdn.microsoft.com/axmfg/2015/12/22/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item/">ezen a blogon talál</a>.</td>
+<td>A termelés során egy vagy több termékméretet használva előfordulhatnak olyan helyzetek, ahol ugyanazt az elemet szeretné egy másik változata alapján létrehozni. További tájékoztatást a <a href="/archive/blogs/axmfg/support-for-boms-that-includes-items-with-different-product-dimensions-of-the-same-item">ezen a blogon talál</a>.</td>
 </tr>
 <tr>
 <td>Az anyagjegyzékek első szintjén lévő körkörös struktúrájú termelési rendelések kizárásra kerülnek az anyagjegyzék-szint erőforrás-tervezés kiszámításánál.</td>

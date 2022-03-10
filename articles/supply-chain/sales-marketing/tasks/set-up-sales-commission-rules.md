@@ -1,27 +1,24 @@
 ---
 title: Értékesítési jutalékok szabályainak beállítása
 description: Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az értékesítési jutalékszámítást és követést.
-author: omulvad
-manager: tfehr
+author: Henrikan
 ms.date: 06/21/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: CommissionCustomerGroup, CommissionItemGroup, CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, CommissionCalc, InventPosting, CustTable, EcoResProductDetailsExtended, CommissionEmplSalesGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2b1ea016817462269a13e450c8c7576546c7f0eb
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8f42f2fbe22124dbaaf2c4bd2f4394f734d166d5
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429443"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578896"
 ---
 # <a name="set-up-sales-commission-rules"></a>Értékesítési jutalékok szabályainak beállítása
 
@@ -96,3 +93,6 @@ Ez az eljárás bemutatja, hogyan állíthatja be és engedélyezheti az érték
 17. A listában válassza ki a korábban létrehozott értékesítési csoportot.
 18. Válassza a **Mentés** lehetőséget.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

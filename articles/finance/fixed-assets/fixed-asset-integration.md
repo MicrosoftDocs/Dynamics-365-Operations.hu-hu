@@ -1,12 +1,10 @@
 ---
 title: Tárgyieszköz-integráció
 description: A tárgyi eszközök integrálhatók a főkönyvvel, a készletkezeléssel, a kinnlevőségekkel és a követelésekkel. A tárgyi eszközök emellett a beszerzési rendelésekkel integrálva is beállíthatók.
-author: ShylaThompson
-manager: AnnBe
+author: moaamer
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: AssetTable
 audience: Application User
@@ -14,15 +12,15 @@ ms.reviewer: roschlom
 ms.custom: 3501
 ms.assetid: f0639053-d99c-432a-8ead-5c26e0d4eaec
 ms.search.region: Global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ba1fad55082abaaeaf1874698d7475597f23904f
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 3e53d171ba0b9be7bbfffa25c27bd21fe036acee
+ms.sourcegitcommit: 1707cf45217db6801df260ff60f4648bd9a4bb68
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5240914"
+ms.lasthandoff: 10/23/2021
+ms.locfileid: "7674775"
 ---
 # <a name="fixed-assets-integration"></a>Tárgyieszköz-integráció
 
@@ -30,8 +28,7 @@ ms.locfileid: "5240914"
 
 A tárgyi eszközök integrálhatók a főkönyvvel, a készletkezeléssel, a kinnlevőségekkel és a követelésekkel. A tárgyi eszközök emellett a beszerzési rendelésekkel integrálva is beállíthatók.
 
-<a name="general-ledger"></a>Főkönyv
---------------
+## <a name="general-ledger"></a>Főkönyv
 
 A Főkönyvön belül a tárgyi eszközök értékének összegzése általában több, a pénzügyi jelentések készítéséhez szükséges fő számlán történik. Azonban a **Tárgyi eszközök** lapon számos tárgyieszköz-rekordot létrehozhat. Ezek a rekordok tartalmazhatják például árat, az értékcsökkenést és az értékelést. Tárgyieszköz-tranzakció feladása esetén mindig a megfelelő fő számlát frissíti. A tárgyi eszközök fő számláin mindig a tárgyi eszközök frissített értékei láthatók.
 

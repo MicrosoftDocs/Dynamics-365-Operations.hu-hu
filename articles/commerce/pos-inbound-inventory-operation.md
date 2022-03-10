@@ -2,11 +2,9 @@
 title: Bejövő készletműveletek a pénztárban
 description: Ez a témakör a pénztár (POS) bejövő készletműveletének képességeit írja le.
 author: hhaines
-manager: annbe
 ms.date: 09/17/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 2254453201817d906de9805e2cfd3c9e74c9497c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 8848c10e9f8f931ee66414075d28b8910a02e5a000525a63bc38ab6851f11276
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5234485"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6741782"
 ---
 # <a name="inbound-inventory-operation-in-pos"></a>Bejövő készletműveletek a pénztárban
 
@@ -72,7 +70,7 @@ A létrehozott kötegelt feladatok felhasználhatók a meghiúsult vagy időtúl
 
 ## <a name="prerequisite-add-inbound-operation-to-the-pos-screen-layout"></a>Előfeltétel: Bejövő művelet hozzáadása a pénztár képernyő-elrendezéséhez
 
-Mielőtt a szervezet használhatja a bejövő műveletek funkciókat, konfigurálnia kell a **Bejövő művelet** pénztárműveletet agy vagy több [Pénztári képernyőelrendezésen](https://docs.microsoft.com/dynamics365/unified-operations/retail/pos-screen-layouts). Az új művelet termelési környezetben történő üzembe helyezése előtt mindenképpen alaposan tesztelje, és tanítsa meg a felhasználókat a használatára.
+Mielőtt a szervezet használhatja a bejövő műveletek funkciókat, konfigurálnia kell a **Bejövő művelet** pénztárműveletet agy vagy több [Pénztári képernyőelrendezésen](/dynamics365/unified-operations/retail/pos-screen-layouts). Az új művelet termelési környezetben történő üzembe helyezése előtt mindenképpen alaposan tesztelje, és tanítsa meg a felhasználókat a használatára.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -161,9 +159,9 @@ A Commerce 10.0.14 és újabb verzióiban a felhasználók olyan terméket fogad
 
 Ez a funkció csak a beszerzési rendelések bevételezéséhez használható. Az átmozgatási rendelésekből nem lehet cikkeket bevételezni, ha a cikkeket korábban nem rendelték meg és nem szállították ki a kimenő raktárból.
 
-A felhasználók nem adhatnak hozzá új termékeket a beszerzési rendeléshez a pénztári bevételezés során, ha a beszerzési rendelés [változáskezelési munkafolyamata](https://docs.microsoft.com/dynamics365/supply-chain/procurement/purchase-order-approval-confirmation) engedélyezve van a Commerce központban (HQ). A változtatások kezelésének engedélyezéséhez előbb jóvá kell hagynia a beszerzési rendelés minden módosítását, mielőtt a bevételezés engedélyezve van. Mivel ez a folyamat lehetővé teszi a bevételező számára, hogy új sorokat vegyen fel a beszerzési rendelésbe, a bevételezés sikertelen lesz, ha engedélyezve van a változáskezelési munkafolyamat. Ha minden beszerzési rendeléshez vagy a pénztári rendszerbe aktívan beérkezett beszerzési rendeléshez kapcsolódó szállítónál engedélyezve van a változtatások kezelése, akkor a felhasználó nem veheti fel a beszerzési rendelésbe az új termékeket a pénztári rendszerbe történő bevételezés során.
+A felhasználók nem adhatnak hozzá új termékeket a beszerzési rendeléshez a pénztári bevételezés során, ha a beszerzési rendelés [változáskezelési munkafolyamata](../supply-chain/procurement/purchase-order-approval-confirmation.md) engedélyezve van a Commerce központban (HQ). A változtatások kezelésének engedélyezéséhez előbb jóvá kell hagynia a beszerzési rendelés minden módosítását, mielőtt a bevételezés engedélyezve van. Mivel ez a folyamat lehetővé teszi a bevételező számára, hogy új sorokat vegyen fel a beszerzési rendelésbe, a bevételezés sikertelen lesz, ha engedélyezve van a változáskezelési munkafolyamat. Ha minden beszerzési rendeléshez vagy a pénztári rendszerbe aktívan beérkezett beszerzési rendeléshez kapcsolódó szállítónál engedélyezve van a változtatások kezelése, akkor a felhasználó nem veheti fel a beszerzési rendelésbe az új termékeket a pénztári rendszerbe történő bevételezés során.
 
-Azok a funkciók, amelyek lehetővé teszik a sorok hozzáadását, nem használhatók megoldásként a már a beszerzési rendelésen szereplő termékek további mennyiségeinek fogadására. A túlbevétezés a szokásos [túlbevételezés](https://docs.microsoft.com/dynamics365/commerce/pos-inbound-inventory-operation#over-receiving-validations) beállításokkal történik a terméksorhoz a beszerzési rendelésen.
+Azok a funkciók, amelyek lehetővé teszik a sorok hozzáadását, nem használhatók megoldásként a már a beszerzési rendelésen szereplő termékek további mennyiségeinek fogadására. A túlbevétezés a szokásos [túlbevételezés](#over-receiving-validations) beállításokkal történik a terméksorhoz a beszerzési rendelésen.
 
 Ha **Sorok hozzáadása beszerzési rendeléshez a pénztári fogadás során** engedélyezve van, és a felhasználó fogadja a **Bejövő műveletet** a pénztári rendszerben, ha a felhasználó olyan termékazonosítót vagy termékazonosítót olvas be, amely nem az aktuális beszerzési rendelésen szereplő cikként van azonosítva, de érvényes cikkként ismerhető fel, akkor a felhasználó üzenetet kap a cikknek a beszerzési rendelésbe történő hozzáadásáról. Ha a felhasználó hozzáadja a tételt a beszerzési rendeléshez, akkor a **Bevételezés most** helyen megaott mennyisége lesz a beszerzésirendelés-sor megrendelt mennyiségének tekintve.
 

@@ -1,27 +1,24 @@
 ---
 title: Korlátozott terv létrehozása
 description: Ez a témakör elmagyarázza, hogyan lehet olyan tervet létrehozni, amely számításba veszi mind az anyagi mind pedig a kapacitásbeli megszorításokat.
-author: ShylaThompson
-manager: tfehr
+author: ChristianRytt
 ms.date: 08/02/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqPlanSched
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d8b9d5712dd1b4f9958de775e1a2224b64485d05
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 5fea315d41d01cb578d7d60c9eb7006e4b6c3362
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429539"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7578344"
 ---
 # <a name="generate-a-constrained-plan"></a>Korlátozott terv létrehozása
 
@@ -53,3 +50,6 @@ Ez az eljárás az USMF bemutatócéget használja. Ezt az eljárást a termelé
 3. Válassza ki az **OK** lehetőséget.
 4. **Tervezett rendelések** kiválasztása.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

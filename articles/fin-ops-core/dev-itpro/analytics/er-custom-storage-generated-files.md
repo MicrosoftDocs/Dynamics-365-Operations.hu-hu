@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 83b2d3c35e3e68aaad22bc03a46b17abc1526073895057717fd055dacdfbee5c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 337e760f28161721d886c7bbec09b5ff8dbfad45
+ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6718477"
+ms.lasthandoff: 10/02/2021
+ms.locfileid: "7594909"
 ---
 # <a name="specify-custom-storage-locations-for-generated-documents"></a>Egyéni tárhelyek meghatározása a létrehozott dokumentumoknak
 
@@ -255,7 +255,7 @@ class AssetRollForwardService extends SysOperationServiceBase
 3. Módosítsa a meglévő `AssetRollForwardService` osztályt, és írja meg kódot az egyéni cél-gyár beállításához a jelentésfuttatóhoz. Figyelje meg, hogy egy egyéni cél-gyár létrehozásakor az alkalmazás által vezérelt paraméter, amely meghatároz egy célmappát át lesz adva. Ily módon a célmappa a létrejövő fájlok tárolásához használatos.
 
     > [!NOTE] 
-    > Győződjön meg róla, hogy a megadott mappa (**c:\\0**, ebben a példában) szerepel az AOS szolgáltatást futtató kiszolgáló helyi fájlrendszerében. Ellenkező esetben egy [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception?view=netcore-3.1) kivétel fog megjelenni futásidőben.
+    > Győződjön meg róla, hogy a megadott mappa (**c:\\0**, ebben a példában) szerepel az AOS szolgáltatást futtató kiszolgáló helyi fájlrendszerében. Ellenkező esetben egy [DirectoryNotFoundException](/dotnet/api/system.io.directorynotfoundexception) kivétel fog megjelenni futásidőben.
 
     ```xpp
     using Microsoft.Dynamics365.LocalizationFramework;

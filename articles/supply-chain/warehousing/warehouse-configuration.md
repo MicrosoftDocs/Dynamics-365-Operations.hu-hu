@@ -2,27 +2,27 @@
 title: Raktár konfigurálása – áttekintés
 description: Ez a cikk a raktárak konfigurálásának módját ismerteti. A raktárelrendezések és a raktári folyamatok engedélyezésének módjáról nyúlt információkat.
 author: perlynne
-manager: tfehr
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventLocation, WHSLocation, WHSLocationBuild, WHSLocationProfile, WHSLocationType, WHSLocDirTable, WHSParameters, WHSWaveTemplateTable, WHSWorkPool, WHSWorkTemplateTable, WHSZone, WHSZoneGroup
 audience: Application User
 ms.reviewer: kamaybac
-ms.custom: 11554
+ms.custom:
+- "11554"
+- intro-internal
 ms.assetid: 262b7b88-2cce-44f7-9a5b-77c12af1be20
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5196460576d1bd516c5b5449fabf5421343e429d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 28e026b01bbc2b2534556ce6018eec66fc5517d6
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5248667"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7983002"
 ---
 # <a name="warehouse-configuration-overview"></a>Raktár konfigurálása – áttekintés
 
@@ -111,8 +111,7 @@ Ahogy a név javasolja, a helyutasításokat a munkatranzakciók irányításáh
 
 A különböző helyutasítássorokhoz tartozó tevékenységek meghatározása könnyebbé és gyorsabbá tehető, ha egy előre meghatározott stratégiát használ. Használhatja például az **Bejövő munka nélküli üres hely** stratégiát a raktárban lévő szabad helyek keresésére, vagy használhatja a **FEFO-Köteg lefoglalása** stratégiát a kimenő értékesítési kitárolási listához.
 
-<a name="additional-resources"></a>További erőforrások
---------
+## <a name="additional-resources"></a>További erőforrások
 
 [Helyek konfigurálása WMS szolgáltatással rendelkező raktárban](tasks/configure-locations-wms-enabled-warehouse.md)
 

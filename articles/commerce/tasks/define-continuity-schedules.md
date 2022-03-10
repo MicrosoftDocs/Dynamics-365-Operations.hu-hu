@@ -2,11 +2,9 @@
 title: Folytonossági ütemezések meghatározása
 description: Ez a témakör végigvezeti a folyamatos program (más néven ismétlődő rendelések) beállításának lépésein.
 author: josaw1
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: MCRContinuitySchedule, EcoResProductDetailsExtended
 audience: Application User
@@ -16,12 +14,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 37c4022cb2f2acf567437c821946ad452ba8f37c
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: c7b05bc82acfad89c9b50777bd0c5fd85f7bda90efd73f278f122c9aa0d073df
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4972330"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6724491"
 ---
 # <a name="define-continuity-schedules"></a>Folytonossági ütemezések meghatározása
 
@@ -63,3 +61,6 @@ Ez a témakör végigvezeti a folyamatos program (más néven ismétlődő rende
     * Amikor sor kerül ennek a cikknek az eladására egy hívásközpontban, további üzleti logika kerül alkalmazásra a kijelölt folytonos programra.  
 7. Kattintson a Mentés gombra.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

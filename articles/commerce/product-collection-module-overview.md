@@ -2,31 +2,27 @@
 title: Termékgyűjtési modulok
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékgyűjtési moduljairól.
 author: v-chgri
-manager: annbe
 ms.date: 01/28/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 4bae9ca722c2b6e776abb0e1da9694edc8afadf8
-ms.sourcegitcommit: 872600103d2a444d78963867e5e0cdc62e68c3ec
-ms.translationtype: HT
+ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "5097103"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984544"
 ---
-# <a name="product-collection-modules"></a>Termékgyűjtési modulok
+# <a name="product-collection-modules"></a>Termékgyűjtemény-modulok
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékgyűjtési moduljairól.
 
@@ -43,7 +39,7 @@ A termékgyűjtemények forrásai a következő négy típusba foglalhatók:
 
 A következő ábra bemutatja az e-kereskedelmi webhelyeken használt termékgyűjtemények különböző típusait.
 
-![Példa egy e-kereskedelmi webhely különböző típusú termékgyűjteményére](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
+![Példa egy e-kereskedelmi webhely különböző típusú termékgyűjteményére.](./media/ProductCollectionsAcrossTheSiteUseProductPlacement.png)
 
 > [!NOTE]
 > Hasonló típusú termékek csoportjának megjelenítéséhez mindig a termékgyűjtési modulokat használja.
@@ -112,3 +108,6 @@ A következő táblázat felsorolja azokat a lista-típusokat, amelyek a **Term�
 [Termékajánlatok áttekintése](product-recommendations.md)
 
 [Gyorsnézeti modul](quick-view-module.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

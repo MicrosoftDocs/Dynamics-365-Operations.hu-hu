@@ -2,16 +2,13 @@
 title: Ajánlatok hozzáadása a tranzakciós képernyőhöz
 description: Ez a témakör ismerteti, hogyan adható hozzá ajánlásvezérlő a tranzakciós képernyőhöz pénztári (POS) eszközön a Microsoft Dynamics 365 Commerce képernyő-elrendezés tervezőjének használatával.
 author: bebeale
-manager: AnnBe
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
 ms.custom: 260624
 ms.assetid: a4f9d315-9951-451c-8ee6-37f9b3b15ef0
 ms.search.region: global
@@ -19,14 +16,14 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: af2450b27106325a86f6db68f9791637694cda63
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: af76169455cef16467b1faa9eda92a969aa923e85750cf245b0a6bd071a092e8
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4412746"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731007"
 ---
-# <a name="add-recommendations-to-the-transaction-screen"></a>Ajánlatok hozzáadása a tranzakciós képernyőhöz
+# <a name="add-recommendations-to-the-transaction-screen"></a>Ajánlatok hozzáadása a tranzakció képernyőjéhez
 
 [!include [banner](includes/banner.md)]
 
@@ -46,7 +43,7 @@ A Commerce használata esetén megjeleníthet termékajánlásokat a pénztáres
 6. A bejelentkezéstkor az alábbihoz hasonló oldal jelenik meg. Az elrendezés a bolthoz végzett testreszabásoktól függően eltérő lesz.
 
 
-    [![Elrendezéstervező](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
+    [![Elrendezéstervező.](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png)
 
 ## <a name="choose-a-display-option"></a>Válasszon ki egy megjelenítési beállítást
 
@@ -61,11 +58,11 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 1. Csökkentse a tranzakciós sorok részletei terület magasságát úgy, hogy a tőle balra eső ügyfélpanellel egyforma magas legyen.
 
 
-    [![A tranzakciós sorok részletezési területének magassága csökkentve](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+    [![A tranzakciós sorok részletezési területének magassága csökkentve.](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 
 2. A bal oldali menüből húzza az ajánlások vezérlőt a tranzakciós sor részletei terület és a tranzakciós képernyőn lent középen látható gombrács közé. Méretezze át a vezérlőt, hogy elférjen.
 
-    [![Javaslatok vezérlő az elrendezéshez adva](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+    [![Javaslatok vezérlő az elrendezéshez adva.](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
 
 
 3. Az **X** gombra kattintva zárja be az Elrendezéstervezőt.
@@ -80,13 +77,13 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 
 2. Kattintson a **Testreszabás** lehetőségre.
 
-    [![Testreszabás – Lapvezérlő párbeszédpanel](./media/pic-5.png)](./media/pic-5.png)
+    [![Testreszabás – Lapvezérlő párbeszédpanel.](./media/pic-5.png)](./media/pic-5.png)
 
 3. Kattintson az **Új lap** elemre.
 4. Keresse meg a most felvett új lapot. Ehhez lehet, hogy le kell görgetnie.
 5. A **Tartalom** legördülő menüben válassza az **Ajánlott termékek** elemet.
 
-    [![Javasolt termékek kiválasztása a Tartalmak mezőben](./media/pic-6.png)](./media/pic-6.png)
+    [![Javasolt termékek kiválasztása a Tartalmak mezőben.](./media/pic-6.png)](./media/pic-6.png)
 
 6. A **Címke** mezőben adjon meg egy nevet a javaslatok lapnak Például „Javasolt termékek”.
 7. A **Kép** mezőben válassza ki a lapon megjelenítendő képet.
@@ -119,3 +116,6 @@ Két konfigurációs lehetőség áll rendelkezlésre. Válassza azt a lehetős�
 [Ajánlások létrehozása bemutató adatokkal](product-recommendations-demo-data.md)
 
 [Termékajánlatok GYIK-je](faq-recommendations.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,15 +2,12 @@
 title: Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. május 14.)
 description: Ez a témakör a Microsoft Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le a 2020. május 14-i kiadásban.
 author: andreabichsel
-manager: tfehr
 ms.date: 05/14/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-talent
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
@@ -18,24 +15,24 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f1ef15bec1d2eb7b7aaca3a413e13089b36315fd
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
-ms.translationtype: HT
+ms.openlocfilehash: cb4693f3c856e7abcc39cbd658183d01ec98a066
+ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465294"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8063747"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-may-14-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. május 14.)
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Ez a témakör a Dynamics 365 Human Resources új vagy módosított szolgáltatásait írja le. A változtatások a 8.1.3244-es buildszámra vonatkoznak. A néhány fejlécben látható, zárójelben lévő számok tájékoztatásként a Lifecycle Services (LCS) támogatási számaira vonatkoznak.
 
 ## <a name="platform-changes"></a>Platformok módosításai
 
-Ez a heti kiadás tartalmazza a platform változásait. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.10 verziójához (2020. május)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34). Ez a kiadás hibajavításokat és a mentett nézetek módosításait tartalmazza.
+Ez a heti kiadás tartalmazza a platform változásait. További információkért lásd [Platformfrissítések a Finance and Operations alkalmazások 10.0.10-es verziójához (2020. május)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). Ez a kiadás hibajavításokat és a mentett nézetek módosításait tartalmazza.
  
 ## <a name="ensure-dataverse-picklists-are-consistent-with-leave-enums-436343"></a>Biztosítja, hogy a Dataverse választási listák megfelelnek a Szabadság felsorolásainak (436343)
 
@@ -118,7 +115,7 @@ Megadhatja, hogy az átviteli szabadságtípust az átviteli egyenlegekhez, ahov
 ## <a name="see-also"></a>Lásd még
 
 [Új vagy módosult elemek a Human Resources szolgáltatásban](hr-admin-whats-new.md)</br>
-[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](https://docs.microsoft.com/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
+[A Dynamics 365 Human Resources 2019 második kiadási hullámának áttekintése](/dynamics365-release-plan/2019wave2/dynamics365-human-resources/)</br>
 [Rendelés frissítése](hr-admin-setup-update-process.md)</br>
 [Szolgáltatások kezelése](hr-admin-manage-features.md)
 

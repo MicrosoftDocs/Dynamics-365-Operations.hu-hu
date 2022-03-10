@@ -1,42 +1,42 @@
 ---
-title: Dataverse-virtuális táblák konfigurálása
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani a virtuális táblákat a Dynamics 365 Human Resources esetén. Meglévő virtuális táblák létrehozása és frissítése, valamint létrehozott és elérhető táblák elemzése.
-author: andreabichsel
-manager: tfehr
-ms.date: 01/25/2021
+title: A Dataverse virtuális tábláinak konfigurálása
+description: Ez a témakör bemutatja, hogyan kell konfigurálni, létrehozni, frissíteni a meglévő virtuális táblákat, valamint elemezni a generált és a rendelkezésre álló táblákat a Dynamics 365 Human Resources számára.
+author: twheeloc
+ms.date: 08/19/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: CDSIntegrationAdministration
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d8780be777c9a204fcb95950f5679a5711aee298
-ms.sourcegitcommit: 6affb3316be757c99e1fe9c7c7b312b93c483408
-ms.translationtype: HT
+ms.openlocfilehash: f7ffe522f0f17a21280e53728c6efc2823743733
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "5465822"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069146"
 ---
-# <a name="configure-dataverse-virtual-tables"></a>Dataverse-virtuális táblák konfigurálása
+# <a name="configure-dataverse-virtual-tables"></a>A Dataverse virtuális tábláinak konfigurálása
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 A Dynamics 365 Human Resources egy virtuális adatforrás a következőben: Microsoft Dataverse. Teljes körű létrehozási, olvasási, frissítési és törlési (CRUD) műveletek végrehajtását teszi lehetővé a következőkből: Dataverse és Microsoft Power Platform. A virtuális táblák adatait a Dataverse tárolja, hanem az alkalmazás-adatbázis.
 
 A HR-entitásokon, Dataverse segítségével végrehajtandó CRUD-műveletek engedélyezéséhez virtuális táblákként elérhetővé kell tennie az entitásokat a következőben: Dataverse. Ezáltal CRUD-műveleteket hajthat végre Dataverse és Microsoft Power Platform segítségével a HR-ben található adatokon. A műveletek támogatják továbbá a HR teljes üzleti logikájának érvényesülését, hogy az adatok épsége biztosított legyen az adatoknak az entitásokba írásakor.
 
 > [!NOTE]
-> A Human Resources entitások Dataverse-tábláknak felelnek meg. A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](https://docs.microsoft.com/powerapps/maker/data-platform/data-platform-intro)
+> A Human Resources entitások Dataverse-tábláknak felelnek meg. A Dataverse (a korábbi Common Data Service) rendszer kapcsolatos további tudnivalókat és a terminológiai frissítéseket lásd: [Mi a Microsoft Dataverse?](/powerapps/maker/data-platform/data-platform-intro)
 
 ## <a name="available-virtual-tables-for-human-resources"></a>A Human Resources számára elérhető virtuális táblák
 
@@ -44,7 +44,7 @@ A HR-ben található összes Open Data Protocol (OData) entitások virtuális t�
 
 A [Power Apps](https://make.powerapps.com)-ben megtekintheti a környezetben engedélyezett virtuális táblák listáját, valamint elkezdheti a munkát az táblákon a **Dynamics 365 HR Virtual Tables** megoldásban.
 
-![Dynamics 365 HR Virtual Tables a Power Apps rendszerben](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
+![Dynamics 365 HR Virtual Tables a Power Apps rendszerben.](./media/hr-admin-integration-virtual-entities-power-apps.jpg)
 
 ## <a name="virtual-tables-versus-native-tables"></a>Virtuális táblák és natív táblák
 
@@ -53,7 +53,7 @@ A HR-hez tartozó virtuális táblák nem azonosak a HR számára létrehozott n
 A HR-hez tartozó natív táblákat külön hozzák létre és kezelik a Dataverse szolgáltatáson belüli közös humántőke-menedzsment megoldásban. A natív táblák esetén az adatok tárolása a Dataverse szolgáltatásban történik, és szinkronizálni kell őket a HR alkalmazás-adatbázisával.
 
 > [!NOTE]
-> A HR-hez tartozó natív Dataverse-táblák listájához lásd: [Dataverse-táblák](https://docs.microsoft.com/dynamics365/human-resources/hr-developer-entities).
+> A HR-hez tartozó natív Dataverse-táblák listájához lásd: [Dataverse-táblák](./hr-developer-entities.md).
 
 ## <a name="setup"></a>Beállítás
 
@@ -73,7 +73,7 @@ A funkciók aktiválásával és letiltásával kapcsolatos további részletek�
 
 ### <a name="register-the-app-in-microsoft-azure"></a>Regisztrálja az alkalmazást a Microsoft Azure-ban
 
-Először az Azure Portal webhelyen kell regisztrálnia a Human Resources példányt, hogy a Microsoft identitásplatform hitelesítési és engedélyezési szolgáltatásokat nyújthasson az alkalmazás és a felhasználók számára. Az alkalmazások Azure-ban való regisztrálásával kapcsolatos további tudnivalókat lásd: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app).
+Először az Azure Portal webhelyen kell regisztrálnia a Human Resources példányt, hogy a Microsoft identitásplatform hitelesítési és engedélyezési szolgáltatásokat nyújthasson az alkalmazás és a felhasználók számára. Az alkalmazások Azure-ban való regisztrálásával kapcsolatos további tudnivalókat lásd: [Rövid útmutató: Alkalmazások regisztrálása a Microsoft Identity platformmal](/azure/active-directory/develop/quickstart-register-app).
 
 1. Nyissa meg a [Microsoft Azure portált](https://portal.azure.com).
 
@@ -95,7 +95,7 @@ Először az Azure Portal webhelyen kell regisztrálnia a Human Resources péld�
 
 10. Adjon meg egy leírást, válassza ki az időtartamot, majd válassza a **Hozzáadás** elemet.
 
-11. Rögzítse a titok értékét. Ezt az információt akkor kell megadnia, amikor a [virtuális tábla adatforrását konfigurálja](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
+11. A titkos érték rekordja a tábla **Érték** tulajdonságából. Ezt az információt akkor kell megadnia, amikor a [virtuális tábla adatforrását konfigurálja](hr-admin-integration-common-data-service-virtual-entities.md#configure-the-virtual-table-data-source).
 
     > [!IMPORTANT]
     > A titok értéket ekkor feltétlenül rögzítse. A titok az oldal elhagyása után már többé nem fog megjelenni.
@@ -104,27 +104,15 @@ Először az Azure Portal webhelyen kell regisztrálnia a Human Resources péld�
 
 Telepítse a Dynamics 365 HR Virtual Table alkalmazást a saját Power Apps környezetében, hogy a virtuális tábla megoldáscsomagot telepíthesse a Dataverse szolgáltatáshoz.
 
-1. Nyissa meg a [Power Platform felügyeleti központot](https://admin.powerplatform.microsoft.com).
+1. A HR-modulban nyissa meg a **Microsoft Dataverse integrációja** oldalt.
 
-2. A **Környezetek** listán válassza ki a saját HR-instanciájához társított Power Apps környezetet.
+2. Válassza ki a **Virtuális táblák** lapot.
 
-3. Az oldal **Erőforrások** részében válassza ki a **Dynamics 365 alkalmazások** elemet.
+3. Válassza a **Virtuális táblaalkalmazás telepítése** lehetőséget.
 
-4. Válassza ki az **Alkalmazás telepítése** műveletet.
+### <a name="configure-the-virtual-table-data-source"></a>A virtuális tábla adatforrásának konfigurálása
 
-5. Válassza ki a **Dynamics 365 HR Virtual Table** elemet, majd pedig a **Tovább** elemet.
-
-6. Olvassa át, majd pedig kijelöléssel jelezze, hogy elfogadja-e a szolgáltatási feltételeket.
-
-7. Válassza a **Telepítés** parancsot.
-
-A telepítés néhány percet igényel. Befejezéskor folytassa a következő lépésekkel.
-
-![A Dynamics 365 HR Virtual Table alkalmazás telepítése a Power Platform felügyeleti központból](./media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
-
-### <a name="configure-the-virtual-table-data-source"></a>A virtuális tábla adatforrásának konfigurálása 
-
-A következő lépésben a virtuális tábla adatforrásának a Power Apps környezetben történő konfigurálása történik. 
+A következő lépésben a virtuális tábla adatforrásának a Power Apps környezetben történő konfigurálása történik.
 
 1. Nyissa meg a [Power Platform felügyeleti központot](https://admin.powerplatform.microsoft.com).
 
@@ -134,7 +122,10 @@ A következő lépésben a virtuális tábla adatforrásának a Power Apps körn
 
 4. A **Megoldás-állapotfelügyeleti központ** felületén válassza ki az alkalmazásoldal jobb felső sarkában található **Összetett keresés** ikont.
 
-5. Az **Összetett keresés** oldalon, az **Elem keresése** legördülő listán válassza ki a **Finance and Operations virtuális adatforrás konfigurációi** elemet.
+5. A **Speciális keresés** oldalon, a **Keres** legördülő listából válassza ki **Finance and Operations virtuális adatforrás konfigurációk**.
+
+   > [!NOTE]
+   > Az előző beállítási lépés virtuális tábla alkalmazás telepítése néhány percig is eltarthat. Ha **Finance and Operations virtuális adatforrás konfigurációk** nem érhető el a listában, várjon egy percet, és frissítse a listát.
 
 6. Válassza az **Eredmények** lehetőséget.
 
@@ -153,13 +144,16 @@ A következő lépésben a virtuális tábla adatforrásának a Power Apps körn
      >[!NOTE]
      >Ügyeljen arra, hogy az URL-cím végén a „**/**” karakter is szerepeljen a hibák elkerülése érdekében.
 
+     >[!NOTE]
+     >A Cél URL határozza meg azt a humánerőforrás-környezetet, amelyre a virtuális táblák az adatokért mutatnak. Ha tesztkörnyezetet hoz létre a termelési környezet másolatának létrehozásával, frissítse ezt az értéket az új tesztkörnyezet névtér-URL-ére. Ez biztosítja, hogy a virtuális táblák a tesztkörnyezet adataihoz kapcsolódnak, és nem továbbra is a termelési környezetre mutatnak.
+
    - **Bérlő azonosítója**: az Azure Active Directory (Azure AD) bérlő azonosítója.
 
    - **AAD-alkalmazásazonosító**: Az Microsoft Azure portálon regisztrált alkalmazáshoz létrehozott alkalmazásazonosító (ügyfél-azonosító). Ezt az információt korábban, az [Alkalmazás regisztrálása a Microsoft Azure-ban](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) lépésben kapta meg.
 
    - **AAD-alkalmazástitok**: A Microsoft Azure portálon regisztrált alkalmazáshoz létrehozott ügyféltitok. Ezt az információt korábban, az [Alkalmazás regisztrálása a Microsoft Azure-ban](hr-admin-integration-common-data-service-virtual-entities.md#register-the-app-in-microsoft-azure) lépésben kapta meg.
 
-   ![Microsoft HR-adatforrás](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
+   ![Microsoft HR-adatforrás.](./media/hr-admin-integration-virtual-entities-hr-data-source.jpg)
 
 9. Válassza ki a **Mentés és bezárás** lehetőséget.
 
@@ -188,7 +182,7 @@ Engedélyek kiosztása a HR-ben lévő két Azure AD-alkalmazáshoz:
 
 A telepítés befejezését követően kiválaszthatja, hogy mely virtuális táblákat szeretné létrehozni és engedélyezni a saját Dataverse-példányában.
 
-1. A HR-modulban nyissa meg a **Dataverse integrációja** oldalt.
+1. A HR-modulban nyissa meg a **Microsoft Dataverse integrációja** oldalt.
 
 2. Válassza ki a **Virtuális táblák** lapot.
 
@@ -199,7 +193,7 @@ A telepítés befejezését követően kiválaszthatja, hogy mely virtuális tá
 
 4. Válassza a **Létrehozás/frissítés** lehetőséget.
 
-![Dataverse-integráció](./media/hr-admin-integration-common-data-service-integration.jpg)
+![Dataverse-integráció.](./media/hr-admin-integration-dataverse-integration.png)
 
 ## <a name="check-table-generation-status"></a>Táblagenerálási állapot ellenőrzése
 
@@ -217,12 +211,11 @@ A kicsúszó ablaktábla megjeleníti a folyamat legutóbbi végrehajtásának e
 
 ## <a name="see-also"></a>Lásd még
 
-[Mi az a Dataverse?](https://docs.microsoft.com/powerapps/maker/common-data-service/data-platform-intro)<br>
-[Táblák a Dataverse-rendszerben](https://docs.microsoft.com/powerapps/maker/common-data-service/entity-overview)<br>
-[Táblakapcsolatok áttekintése](https://docs.microsoft.com/powerapps/maker/common-data-service/relationships-overview)<br>
-[Külső adatforrásból származó adatokat tartalmazó virtuális táblák létrehozása és szerkesztése](https://docs.microsoft.com/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
-[Mik azok a Power Apps portálok?](https://docs.microsoft.com/powerapps/maker/portals/overview)<br>
-[Alkalmazások Power Apps-ben való létrehozásának áttekintése](https://docs.microsoft.com/powerapps/maker/)
-
+[Mi az a Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)<br>
+[Táblák a Dataverse-rendszerben](/powerapps/maker/common-data-service/entity-overview)<br>
+[Táblakapcsolatok áttekintése](/powerapps/maker/common-data-service/relationships-overview)<br>
+[Külső adatforrásból származó adatokat tartalmazó virtuális táblák létrehozása és szerkesztése](/powerapps/maker/common-data-service/create-edit-virtual-entities)<br>
+[Mik azok a Power Apps portálok?](/powerapps/maker/portals/overview)<br>
+[Alkalmazások Power Apps-ben való létrehozásának áttekintése](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

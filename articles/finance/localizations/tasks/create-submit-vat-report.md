@@ -2,11 +2,9 @@
 title: Áfajelentés létrehozása és elküldése
 description: Ez az eljárás végigvezeti az áfajelentés létrehozásán és elküldésén a német hatóság számára.
 author: mrolecki
-manager: AnnBe
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 335d086dba899b6b09298d96606db63e4e28b89c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 26418be526ff13d8b77e0418b3b252881ff05140e6eb7678f526444a0850a84b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264995"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6719675"
 ---
 # <a name="create-and-submit-vat-report"></a>Áfajelentés létrehozása és elküldése
 

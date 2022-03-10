@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: e963cf8cbae4651ad05126cdf465a386dea2d7a5
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
-ms.translationtype: HT
+ms.openlocfilehash: f28e9d301b0a3c30f903ccc32e785ae09f0d702f3625f5febe03817ba44046ce
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5798729"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6729854"
 ---
 # <a name="create-new-address-book"></a>Új címjegyzék létrehozása
 
@@ -40,7 +40,7 @@ Címjegyzék létrehozásához kövesse az alábbi lépéseket.
 
 A következő kép bemutatja egy alkalmazotti címjegyzék létrehozását egy kiskereskedelmi áruház számára.
 
-![Alkalmazotti címjegyzék példája](media/address-books.png)
+![Alkalmazotti címjegyzék példája.](media/address-books.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 

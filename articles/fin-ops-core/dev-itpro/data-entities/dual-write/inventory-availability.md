@@ -5,16 +5,16 @@ author: RamaKrishnamoorthy
 ms.date: 05/26/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-05-26
-ms.openlocfilehash: f967f832fc716938c544aad266d2c14a9ea19dd0ca8ee11fe228ce47145f3e78
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 989ba6cd26d6e48c24db856fa9bb0bd5d2bae80e
+ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762426"
+ms.lasthandoff: 11/10/2021
+ms.locfileid: "7782529"
 ---
 # <a name="inventory-availability-in-dual-write"></a>Készlet rendelkezésre állása kettős írásban
 
@@ -40,7 +40,7 @@ A párbeszédpanel a Dynamics 365 Supply Chain Management készletadatait jelen�
 
 ## <a name="atp-information"></a>Információk az ígérethez rendelkezésre álló készletről
 
-A Sales alkalmazásban az **Árajánlatok** , **Rendelések** és **Számlák** oldalain egy új, **ATP-információ** gombbal bővült a cikkek sora. Amikor ezt a gombot választja, megjelenik egy párbeszédpanel, amelyen megadhatja a vállalatot, terméket, helyet, készletraktárat és rendelési mennyiséget. Ez a párbeszédpanel ugyanolyan beállításokat tartalmaz, mint a [Rendelési ígéret](../../../../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md#atp-calculations).
+A Sales alkalmazásban az **Árajánlatok**, **Rendelések** és **Számlák** oldalain egy új, **ATP-információ** gombbal bővült a cikkek sora. Amikor ezt a gombot választja, megjelenik egy párbeszédpanel, amelyen megadhatja a vállalatot, terméket, helyet, készletraktárat és rendelési mennyiséget. Ez a párbeszédpanel ugyanolyan beállításokat tartalmaz, mint a [Rendelési ígéret](../../../../supply-chain/sales-marketing/delivery-dates-available-promise-calculations.md#atp-calculations).
 
 A párbeszédpanel a Supply Chain Management „ígérethez rendelkezésre áll” adatait adja vissza. Ez az információ az alábbi mennyiségeket tartalmazza:
 

@@ -3,24 +3,23 @@ title: Fiókkezelési oldalak áttekintése
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce fiókkezelés oldalairól.
 author: anupamar-ms
 ms.date: 09/15/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.custom: intro-internal
 ms.search.region: Global
 ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7efd9096a85ccafd114448f9ba7ca924c198aacb
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
-ms.translationtype: HT
+ms.openlocfilehash: b21ae257ce84034f05fa22a93a2c622ee14c0a2b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6352060"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7984519"
 ---
 # <a name="account-management-pages-overview"></a>A fiókkezelési oldalak áttekintése
 

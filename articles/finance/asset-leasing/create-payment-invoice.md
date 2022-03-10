@@ -2,32 +2,31 @@
 title: Fizetési számlák létrehozása
 description: Ez a témakör bemutatja, hogyan lehet havi lízingszámlákat létrehozni. Létrehozhat számlákat az egyes lízingekhez, vagy kötegelt folyamattal több lízinghez is létrehozhatja őket.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeasePaymentSchedule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 32618814d00cb1e1f1082169a64b187cce1e76b4
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
-ms.translationtype: HT
+ms.openlocfilehash: bc87c329f6f5dd9532b1319f8d88fbc41dcd4d14
+ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4444165"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "7344320"
 ---
 # <a name="create-payment-invoices"></a>Fizetési számlák létrehozása
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 Létrehozhat havi számlákat az egyes lízingekhez, vagy kötegelt folyamattal több lízinghez is létrehozhatja őket. Az alábbi eljárás bemutatja, hogyan hozhat létre egyéni lízingfizetési bejegyzést, ha a **Lízingkönyv beállítás** lapján a **Fizetés szállítónak** paraméter be van kapcsolva.
 
@@ -42,6 +41,8 @@ Létrehozhat havi számlákat az egyes lízingekhez, vagy kötegelt folyamattal 
 5. Válassza a napló helyesbítése lehetőséget, majd a kifizetendő számlát.
 
     Ebben a példában a lízingkönyv **Fizetés a szállítónak** paramétere be van kapcsolva. Ezért a számla a számlanaplóban lesz. Az **Áttekintés** szakasz a naplóbejegyzés összegzését, a **Sorok** szakasz pedig a tényleges naplósorok részleteit jeleníti meg.
+    
+   A rendszer bizonyos pénzügyi mezőket zárolja a szerkesztéstől, hogy megakadályozza a tranzakciók és az ütemtervek közötti eltéréseket. Néhány zárolt mező: **Számla**, **Összegek**, **Pénzügyi dimenziók**, **Pénznem** és **Tranzakciótípus**. Ezenkívül nem lesz lehetősége naplóbejegyzési sorokat hozzáadni vagy törölni az eszközlízing naplóbejegyzésekben, mivel ez eltéréseket okozhat az ütemezések és a tranzakciók között.
 
     > [!NOTE]
     > Ha a **Fizetés a szállítónak** paraméter ki van kapcsolva, a kifizetési napló bejegyzései megjelennek a lízingkönyv **Eszközlízing** oldalán, és a rendszer számla helyett eszközlízing-bejegyzést hoz létre. A lízingdíjfizetés bejegyzés a **Havi lízingnapló** mezőben megadott naplónévre lesz feladva.
@@ -49,3 +50,6 @@ Létrehozhat havi számlákat az egyes lízingekhez, vagy kötegelt folyamattal 
 6. A tranzakció feladása után megtekintheti a tranzakció adatainak és a lízingkötelezettség könyv szerinti értékét a **Kötelezettségtranzakciók** lehetőség kiválasztásával a lízingkönyvben.
 
     A fizetési ütemezésben be van jelölve a **Feladott napló** jelölőnégyzet, és a sorban megjelenik a számlanapló száma. A kifizetési napló és a naplóhoz való bejegyzés létrehozása után a tétel újbóli létrehozása előtt sztornírozásra van szüksége.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,27 +1,25 @@
 ---
 title: A szállítói számla automatizálásának beállítási lehetőségei (előzetes verzió)
 description: Ez a témakör a szállítóiszámla-automatizálás beállításának és konfigurálásának lehetőségeit ismerteti.
-author: abruer
-manager: AnnBe
-ms.date: 10/16/2020
+author: sunfzam
+ms.date: 02/14/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 40de7c378bff602fa3629bb190a7a89fe584d2a6
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: c1dc443e4225a3ffc6b88cedf7add396a66ec25d
+ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4993202"
+ms.lasthandoff: 02/16/2022
+ms.locfileid: "8182438"
 ---
 # <a name="setup-options-for-vendor-invoice-automation"></a>A szállítói számla automatizálásának beállítási lehetőségei
 
@@ -29,12 +27,18 @@ ms.locfileid: "4993202"
 
 Ez a témakör a szállítóiszámla-automatizálás beállításának és konfigurálásának lehetőségeit ismerteti. A számlázásautomatizáló szolgáltatások a következő típusú beállítási paramétereket használják:
 
+- Az előlegek automatikus alkalmazásának paraméterei az importált számlákon.
 - Az importált szállítói számlák munkafolyamat-rendszerbe történő beküldésének paraméterei és a feladott terméknyugta sorainak egyeztetése a függőben lévő szállítói számlák soraival.
 - Az automatizálás háttérfeladatok feldolgozásának paraméterei. A folyamatautomatizálási keretrendszer segítségével importált szállítói számlákat küldhet a munkafolyamat-rendszerbe. A program a feladott szállítólevél sorainak a függőben lévő szállítói számlasorok számára történő automatikus egyeztetését, valamint a termék-visszaigazolási sorokhoz automatikusan egyeztetett manuális számlákhoz kapcsolódó számlaegyeztetési ellenőrzések végrehajtását is használja. A különböző üzleti folyamatok ezt a keretrendszert alkalmazzák annak meghatározására, hogy a kiválasztott folyamat milyen gyakorisággal fusson. A **terméknyugta egyeztetése a számlasorokkal** és a **Szállítói számlák beküldése a munkafolyamatba** háttérfolyamatokhoz elérhető gyakoriságok az **Óra** és a **Napi**.
 
 Egy adott háttérfeladat beállításához vagy azzal kapcsolatos információk megtekintéséhez lépjen a **Rendszerfelügyelet \> Beállítás \> Folyamatautomatizációk** felületre, majd válassza ki a **Háttérfeladat** fület.
 
 Az importálás folyamatától a szállítói számla feladásáig teljes körű automatizálás megvalósításához be kell állítania egy szállítóiszámla-munkafolyamatot. A munkafolyamat beállításához lépjen a **Kötelezettségek > Beállítás > Kötelezettségek munkafolyamatai** felületre. Ha azt szeretné, hogy a számla manuális beavatkozás nélkül is feldolgozható legyen az elejétől a végéig, akkor a munkafolyamat-konfigurációban szerepelnie kell egy automatikus feladási feladatnak.
+
+## <a name="parameters-for-automatically-applying-prepayments-in-imported-invoices"></a>Az előlegek automatikus alkalmazásának paraméterei az importált számlákon
+
+- **Előleg automatikus alkalmazása az importált számlákra** – Ha ez a beállítás **Igen**, a rendszer a szállítói számlák importálása esetén automatikusan keresi a megfelelő beszerzési rendelés meglévő előlegeit. Ha alkalmazható előlegek találhatók, egy további sor hozzáadódik az előlegek alkalmazáshoz az importált szállítói számlákon.
+- **Követési automatizálási folyamat letiltása sikertelen előlegalkalmazás esetén** – Ha ez a beállítás **Igen**, akkor a program letiltja a számlákat, ha nem lehet előleget alkalmazni. A többi automatizált folyamathoz, például a nyugtaegyeztetési folyamathoz és a munkafolyamatba történő küldéséhez hasonló módon a számlaautomatizálási folyamat addig nem felveszi a zárolt számlákat, amíg az előleget nem manuálisan nem alkalmazzák. 
 
 ## <a name="parameters-for-submitting-imported-vendor-invoices-to-the-workflow-system"></a>Az importált szállítói számlák munkafolyamat-rendszerbe történő elküldésének paraméterei
 
@@ -51,7 +55,7 @@ A következő paraméterek állnak rendelkezésre:
 
 - **Terméknyugták egyeztetése a számlasorokkal az automatikus beküldés előtt** – Ha ezt a beállítást **Igen** értékűre állítja, akkor az importált számla nem küldhető be automatikusan a munkafolyamat-rendszerbe mindaddig, amíg az egyeztetett terméknyugta mennyisége nem egyezik meg a számla szerinti mennyiséggel. Ha ezt a beállítást **Igen** értékre állítja, akkor engedélyezi a feladott terméknyugták automatikus egyeztetését olyan számlasorok esetében, amelyekhez háromirányú egyeztetési irányelvet határoztak meg. Ez a folyamat addig fog futni, amíg az egyeztetett terméknyugták mennyisége nem egyezik meg a számla szerinti mennyiséggel. Ezen a ponton a program automatikusan elküldi a számlát a munkafolyamat-rendszernek.
 
-    A „Terméknyugták egyeztetése a számlasorokkal az automatikus beküldés előtt” lehetőség akkor érhető el, ha a **Számlaegyeztetés érvényesítésének engedélyezése** beállítást kiválasztotta. Ha ezt a lehetőséget kiválasztotta, akkor a **Terméknyugták automatikus egyeztetése a számlasorokkal** beállítás automatikusan kiválasztottá válik.
+    A **termékbevételezések egyeztetése** a számlasorokkal az automatikus küldés előtt beállítás csak akkor érhető el, **ha be van jelölve a Számlaegyeztetés-ellenőrzés** engedélyezése beállítás. Ha ezt a lehetőséget kiválasztotta, akkor a **Terméknyugták automatikus egyeztetése a számlasorokkal** beállítás automatikusan kiválasztottá válik.
 
 - **Számított összegek egyezzenek az automatikus munkafolyamatba küldéshez tartozó importált összegekkel** – Ha ezt a beállítást **Igen** értékre állítja, akkor a számla nem küldhető el automatikusan a munkafolyamat-rendszerbe mindaddig, amíg a számlára kiszámított összegek nem egyeznek az importált összegekkel. Ha ezt a beállítást **Nem** értékre állítja, akkor a számla automatikusan elküldhető a munkafolyamat-rendszerbe, de nem lehet feladni addig, amíg a kiszámított összegeket nem korrigálja úgy, hogy egyezzenek az importált összegekkel. Ha nem importálja a számlaösszeget vagy az áfaösszeget, akkor ezt a beállítást **Nem** értékre kell állítani.
 - **Terméknyugták automatikus egyeztetése a számlasorokkal** – Ha ezt a beállítást **Igen** értékűre állítja, akkor a háttérben történő feldolgozással elvégezhető a feladott terméknyugták automatikus egyeztetése azokkal a számlasorokkal, amelyekhez háromirányú egyeztetési irányelvet határoztak meg. Ezt a folyamatot addig futtatja a program, amíg az egyeztetett terméknyugta mennyisége nem egyezik a számla mennyiségével, vagy amíg az **Automatikus egyeztetési próbálkozások száma** mezőben megadott értéket el nem éri. A folyamat addig futtatható, amíg a számlát el nem küldik a munkafolyamat-rendszernek.
@@ -62,3 +66,6 @@ A következő paraméterek állnak rendelkezésre:
 
 - **Automatikus egyeztetési próbálkozások száma** – Kiválaszthatja, hogy hány alkalommal próbálja meg a rendszer egyeztetni a terméknyugtákat egy adott számlasorral, mielőtt a folyamatot sikertelenként lezárná. Ha a rendszer eléri a megadott próbálkozásszámot, a számla törlődik az automatizált feldolgozásból.
 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

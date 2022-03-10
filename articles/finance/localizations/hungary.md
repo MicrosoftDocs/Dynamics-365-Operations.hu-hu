@@ -3,22 +3,21 @@ title: Magyarország – áttekintés
 description: Ez a témakör a Microsoft Dynamics 365 Finance dokumentációforrásokra mutató hivatkozásokat tartalmaz Magyarországra vonatkozóan.
 author: ShylaThompson
 ms.date: 09/04/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.search.region: Hungary
 ms.author: roschlom
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2ead952b2c33b248b9a0e1706fa7c5960b21bf51
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
-ms.translationtype: HT
+ms.openlocfilehash: 696ea7c93475531038dea13a8c141970eb4d060b
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336596"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7985953"
 ---
 # <a name="hungary-overview"></a>Magyarország – áttekintés
 

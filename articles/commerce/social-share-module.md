@@ -2,15 +2,12 @@
 title: Közösségi megosztás modul
 description: Ez a témakör a közösségi megosztás modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-manager: annbe
 ms.date: 09/15/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
@@ -18,20 +15,18 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 82a8795360f453cdee19fa6e9e376a42e8276849
-ms.sourcegitcommit: 510ca8b14d8b5334e50aca1b15d636c65fcc9888
-ms.translationtype: HT
+ms.openlocfilehash: 2e997cad97d45949c8f542764126a08fb6daa73551079eb2d400d7edfb98ca2b
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "4412992"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6730947"
 ---
-# <a name="social-share-module"></a>Közösségi megosztás modul
+# <a name="social-share-module"></a>Közösségi megosztási modul
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör a közösségi megosztás modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
-
-## <a name="overview"></a>Áttekintés
 
 A Közösségi megosztás modulok lehetővé teszik a felhasználók számára, hogy megosszanak e-kereskedelmi oldal URL-címeket közösségi felületeken, mint a Facebook, a Twitter, a Pinterest és a LinkedIn. A webhely URL-címeit e-mailen keresztül is meg lehet osztani. A Közösségi megosztási modulokat gyakran használják a termékek részletező oldalain (PDP-k), hogy segítsenek a felhasználóknak megosztani a termék adatait.
 
@@ -41,7 +36,7 @@ Minden közösségimédia-platform nyomon követhet a sütiket, így ez a modul 
 
 A következő ábra bemutatja a termék részletei oldalon használt közösségi megosztási modul egy példáját.
 
-![Példa egy közösségi megosztási modulra](./media/ecommerce-socialshare.png)
+![Példa egy közösségi megosztási modulra.](./media/ecommerce-socialshare.png)
 
 ## <a name="social-share-module-properties"></a>Közösségi megosztási modul tulajdonságai
 
@@ -82,3 +77,6 @@ Közösségimédia-modul hozzáadásához egy vásárlásmező-modulhoz kövesse
 [Vásárlásmező-modul](add-buy-box.md)
 
 [Cookie-k megfelelősége](cookie-compliance.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

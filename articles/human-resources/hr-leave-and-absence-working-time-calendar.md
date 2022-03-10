@@ -1,31 +1,33 @@
 ---
 title: Munkaidőnaptár létrehozása
 description: A Dynamics 365 Human Resources alkalmazásban munkaidőnaptárt, szabadnapokat és munkaidőket definiálhat.
-author: andreabichsel
-manager: tfehr
-ms.date: 04/01/2020
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-human-resources
 ms.technology: ''
 ms.search.form: LeavePlanFormPart, LeaveAbsenceWorkspace
 audience: Application User
-ms.reviewer: anbichse
 ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: ccf7901ebbea655b7f795a48944c6f03f9cf210a
-ms.sourcegitcommit: 18e626c49ccfdb12c1484b985e3a275e51f61320
-ms.translationtype: HT
+ms.openlocfilehash: 54aa85acb43c1e9a474bea9996c72c7e7017c245
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "5115102"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8068919"
 ---
 # <a name="create-a-working-time-calendar"></a>Munkaidőnaptár létrehozása
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
+
+[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A Dynamics 365 Human Resources alkalmazásban a munkaidőnaptár jeleníti meg azokat a napokat és órákat, amikor az alkalmazottak dolgoznak a szervezetben. Amikor egy alkalmazott szabadságra vonatkozó kérelmet küld, nem kell aggódnia a szabadnapok és a leállások miatt.
 
@@ -65,7 +67,7 @@ A munkaidőnaptárban külön is hozzáadhatja és módosíthatja a szabadnapoka
 
 A munkaidőnaptárban külön is hozzáadhatja és módosíthatja a nem munkaidőnek számító időket.
 
-1. A **Szervezet felügyelete** oldalon válassza a **Nem munkaidő** elemet.
+1. A **Szervezeti adminisztráció** oldal, válassza ki **MUNKAIDŐ**.
 
 2. Válassza az **Új** lehetőséget, és adja meg a nem munkaidőnek számító idő nevét és időtartományát.
 
@@ -75,3 +77,6 @@ Ha engedélyezte a szabadsággal és a távolléttel kapcsolatos munkaszünet-ko
 
 - [Szabadság és távollét áttekintése](hr-leave-and-absence-overview.md)
 - [Szabadság- és távolléttípusok konfigurálása](hr-leave-and-absence-types.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

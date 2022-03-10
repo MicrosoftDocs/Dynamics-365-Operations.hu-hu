@@ -1,12 +1,10 @@
 ---
 title: Bevételezési formátumok beállítása és tervezése
 description: Ez a cikk ismerteti, hogyan módosíthatja a képernyőelrendezések létrehozását, hogy irányíthassa a nyugták, számlák és egyéb dokumentumok nyomtatását. A Dynamics 365 Commerce és kiskereskedelem és kereskedelem képernyőelrendezés-tervezője lehetővé teszi különféle képernyőelrendezések egyszerű grafikus létrehozását és módosítását.
-author: rubencdelgado
-manager: AnnBe
-ms.date: 06/20/2017
+author: BrianShook
+ms.date: 09/16/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailFormLayout
 audience: Application User
@@ -15,15 +13,15 @@ ms.custom: 57841
 ms.assetid: e530dd8e-95e2-4021-90bd-ce1235f9e250
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: a66590f18df04d2be0500b7fb1ab183cf64718e8
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: dac0ad75ff35367b5d6ac84c75c68e22e2cb0cb1
+ms.sourcegitcommit: f4823a97c856e9a9b4ae14116a43c87f9482dd90
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4979753"
+ms.lasthandoff: 11/09/2021
+ms.locfileid: "7779401"
 ---
 # <a name="set-up-and-design-receipt-formats"></a>Bevételezési formátumok beállítása és tervezése
 
@@ -48,7 +46,12 @@ Ez a cikk ismerteti, hogyan módosíthatja a képernyőelrendezések létrehozá
 
 ## <a name="print-images"></a>Képek nyomtatása
 
-A nyugtatervező egy **Logó** változót tartalmaz, amely a nyugtára nyomtatandó képek megadására használható. A **Logó** változót használó nyugtákban szereplő képeknek monokróm bitkép fájltípusúnak (.bmp) kell lenniük. Ha a nyugtatervezőben meg van adva egy .bmp kép, de a nyomtatóra küldve nem nyomtat, akkor előfordulhat, hogy a fájl mérete túl nagy, vagy a képen található képpontméret nem kompatibilis a nyomtatóval. Ha ez történik, próbálja meg csökkenteni a képfájl felbontását.   
+A nyugtatervező egy **Logó** változót tartalmaz. Ezzel a változóval meghatározhatja, hogy mi legyen a nyugtákra nyomtatandó kép. A **Logó** változót használó nyugtákban nyomatatott képeknek monokróm bitkép fájltípusúnak (.bmp) kell lenniük. Ha a nyugtatervezőben bitkép van megadva, de a nyugta kinyomtatása nem történik meg, akkor a következő problémák lehetnek:
+
+- A fájl mérete túl nagy, vagy a kép méretei nem kompatibilisek a nyomtatóval. Ebben az esetben próbálja meg csökkenteni a képfájl felbontását vagy fizikai méreteit.
+- Néhány Object Linking and Embedding for Retail POS (OPOS) nyomtató-illesztőprogramokhoz nem implementálja a **PrintMemoryBitmap** metódust, amelyet a hardverállomások a logóképek nyomtatásához használnak. Ebben az esetben próbálja meg hozzáadni a következő jelzőt a kijelölt vagy megosztott hardverállomás **HardwareStation.Extension.config** fájljához:
+
+    `<add name="HardwareStation.UsePrintBitmapMethod" value="true"/>`
 
 ## <a name="design-a-receipt-format"></a>Nyugtaformátum tervezése
 
@@ -85,3 +88,6 @@ A nyugtaprofilok közvetlenül a nyomtatókhoz vannak rendelve a hardver profilo
 
 > [!NOTE]
 > Két nyomtató használata esetén egy nyomtató használható standard 40-oszlopos hő-papiros nyugta nyomtatására. A második nyomtató általában a teljes oldalas, több információt leíró nyugta nyomtatására szolgál. Ezek a nyugta típusok vásárlói rendelés nyugtákat és vevői számlákat tartalmaznak.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

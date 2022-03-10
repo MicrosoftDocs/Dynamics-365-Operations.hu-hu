@@ -1,26 +1,24 @@
 ---
 title: Beszerzési katalógus létrehozása
 description: Ez a témakör a beszerzési katalógus létrehozásának lépéseit mutatja be.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/19/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ProcCategoryHierarchyManagement, CatProcureCatalogListPage, CatProcureCatalogCreate, CatProcureCatalogEdit, SysPolicyListPage, SysPolicy, CatCatalogPolicyRule, PurchReqTableListPage, PurchReqCreate, PurchReqTable, PurchReqAddItem
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 91c377b2d155fb7b53ef9a15fa9d6e80cd69ed44
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: ef3747874d43143925bd08dbecc2d60f4e38701a
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5237251"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565423"
 ---
 # <a name="create-a-procurement-catalog"></a>Beszerzési katalógus létrehozása
 

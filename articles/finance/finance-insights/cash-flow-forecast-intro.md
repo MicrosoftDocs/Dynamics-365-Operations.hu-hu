@@ -1,8 +1,8 @@
 ---
-title: Pénzforgalmi előrejelzés
+title: Készpénzre vonatkozó előrejelzés
 description: Ez a témakör a Pénzforgalmi előrejelzési képességet mutatja be.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 12/21/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,20 +17,20 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: ad568fcd126ad3dc9e5ff269cc3bc99b218e822a
-ms.sourcegitcommit: 822aea26c5da259efe11ff3b3dc4cf1598425689
-ms.translationtype: HT
+ms.openlocfilehash: 62e30e382d94e4eff73789b3e884c6b81afce6c1
+ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/16/2021
-ms.locfileid: "7386613"
+ms.lasthandoff: 12/23/2021
+ms.locfileid: "7945829"
 ---
-# <a name="cash-flow-forecast"></a>Pénzforgalmi előrejelzés
+# <a name="cash-forecast"></a>Készpénzre vonatkozó előrejelzés
 
 [!include [banner](../includes/banner.md)]
 
 A pénzforgalom kritikus fontosságú minden üzleti tevékenységhez. Még a nyereséges vállalatok is szembesülnek a fizetésképtelenséggel, ha nem tartják fenn a pénzforgalmat, amivel meg tudnak felelni az azonnali igényeknek. A pénzforgalmi előrejelzések pénzforgalmi előrejelzési képessége segít a vállalatoknak a pénzforgalmi egyenleg hatékony nyomon követésében és kezelésében. Ez a funkció a gépi tanulást használja a vállalatok számára, hogy a korábbinál pontosabban előrejelzést nyújtson a pénzforgalomhoz. Ezenkívül segítséget nyújt a menedzsereknek a lehetőségek optimalizálása érdekében, hogy az aktuális készpénzpozíció kontextusában optimalizálják a lehetőségeket. 
 
-A legtöbb vállalatnál a pénzforgalom kezelése és a pénzforgalmi előrejelzések futtatása unalmas, ismétlődő és manuális művelet. A legtöbb vállalat a különböző komplexitású Microsoft Excel-megoldásokra támaszkodik. A pénzforgalom pontos előrejelzésének kihívásai a következők:
+A legtöbb vállalatnál a pénzforgalom kezelése és a pénzforgalmi előrejelzések futtatása unalmas, ismétlődő és manuális művelet. A legtöbb vállalat a különböző komplexitású Microsoft Excel-megoldásokra támaszkodik. A pénzforgalom pontos előrejelzésének előrejelzése a következő pontokat foglalja magában:
 
 - Az adatok nem érhetők el a döntéshozók számára, mert több helyen elszórtan találhatók, többek között a következők: 
   - A könyvelés vagy a vállalati erőforrástervezési rendszer
@@ -43,25 +43,17 @@ A legtöbb vállalatnál a pénzforgalom kezelése és a pénzforgalmi előrejel
 ## <a name="details-of-the-cash-flow-forecasts-capability"></a>A pénzforgalmi előrejelzések funkcióval kapcsolatos részletek
 A Pénzforgalmi előrejelzések funkció a következő lehetőségeket tartalmazza. 
 
-- Segítségével egyszerű a pénzforgalmi adatok külső rendszerekből Dynamics 365 Finance-be történő integrálása. A pénzforgalmi előrejelzések az adatimport, -export keretrendszer használatára is használhatók. Ez a keretrendszer megkönnyíti az Excel OData-val történő integrációt. Egy átfogó pénzforgalmi megoldást több forrásból származó adatok egyesítésével is lehet létrehozni. 
-
-- Intelligens készpénzpozíciót vezet be. A készpénzpozíció létrehozása a vevői fizetési mód alapján történik, amely azt jelzi, hogy a vállalat mikorra várhatja a számlájára a bejövő összeget. A fizető szállítók múltbeli feladatainak elemzésével azt is megjósolhatja, hogy a jövőbeli számlákat és rendeléseket valószínűleg mikor fizetik ki. 
-
 - Bemutatja az intelligens pénzforgalmi előrejelzést a hosszú távú előrejelzésekhez, az idősor előrejelzést használva az AI Builder automatizált integrációján keresztül.
 
-- Lehetőséget nyújt bizonyos pénzforgalmi helyzetek vagy előrejelzések mentésére, szerkesztésére, majd az előrejelzési teljesítmény tényleges pénzügyekkel való egyszerű összehasonlítására és mérésére.
+- Lehetővé teszi meghatározott pénzforgalmi beosztások vagy előrejelzések mentését, szerkesztését, majd az előrejelzési teljesítménynek a tényleges pénzügyekkel való összehasonlítását és mérését.
 
 - A mi lenne, ha elemzést engedélyezi a pillanatkép összehasonlításon keresztül. Létrehozhat például több pillanatképet, amely optimista, pesszimista vagy a pénzforgalom leginkább valósághű nézeteit jeleníti meg, majd összevetheti és megtekintheti a különbségeket.
 
-- Lehetőséget nyújt a pénzforgalmi előrejelzések több pénznemben történő megtekintésére jogi személyek között, valamint a bankszámlához kapcsolódó pénzforgalom szűrésére és megtekintésére. 
+- Lehetővé teszi a pénzforgalmi előrejelzés megtekintését különböző pénznemekben, jogi személyeknél, valamint a bankszámlához kapcsolódó pénzforgalom szűrését és megtekintését. 
 
 - A pénzügyi dimenziókkal kapcsolatos bankszámlák szűrését és megjelenítését teszi lehetővé.
 
 A pénzforgalom-előrejelzési funkció segíti a szervezetet, hogy az unalmas, összetett, mégis ismétlődő pénzforgalmi előrejelzést egyszerű, automatizált folyamatra alakítsa át a Dynamics 365 Finance-ben. A pénzforgalmi előrejelzések leginkább unalmas aspektusainak automatizálása lehetővé teszi a kritikus döntések meghozatalát a kívánt üzleti eredmények eléréséhez.
 
-## <a name="setting-up-dimensions-for-cash-flow-forecasting"></a>A Pénzforgalmi előrejelzés dimenzióinak beállítása
-A **Pénzforgalmi előrejelzés beállítása** lap egy új lapján beállíthatja, hogy milyen pénzügyi dimenziókat kell használni a **Pénzforgalmi előrejelzés** munkaterületen végzett szűréshez. Ez a lap csak akkor jelenik meg, ha engedélyezve van a Pénzforgalmi előrejelzések funkció. 
-
-A **Dimenziók** fülön válassza ki a szűréshez használni kívánt dimenziók listáját, és a nyilakkal helyezze át őket a jobb oldali oszlopba. A pénzforgalmi előrejelzések adatainak szűréséhez csak két dimenzió választható ki. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,27 +1,25 @@
 ---
 title: Részlegesen foglalt átmozgatási rendelések kötegelt kiadása
 description: Ez a témakör leírja, hogyan állíthatja be és alkalmazhatja mobileszközről a részlegesen foglalt átmozgatási rendelések kötegelt kiadását.
-author: pjacobse
-manager: tfehr
+author: perlynne
 ms.date: 05/26/2017
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSLoadPlanningWorkbench, WHSFulfillmentPolicy
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 269384
 ms.search.region: Global
-ms.author: pjacobse
+ms.author: perlynne
 ms.search.validFrom: 2017-09-20
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 173e003fbddb0b021f87a8e28a553f4578b16e9b
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 0fbe12b66da68bcd130fdb188eb0106b686200c3b59edc2af96b79f65022567a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4977463"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6759382"
 ---
 # <a name="batch-release-of-partially-reserved-transfer-orders"></a>Részlegesen foglalt átmozgatási rendelések kötegelt kiadása
 
@@ -63,3 +61,6 @@ A **Mennyiség** paraméter határozza meg, hogy a teljes mennyiséget vagy a t�
 -   Az átmozgatási rendelések **Mennyiség** és **Részben kiadott rendelések kiadásának engedélyezése** paramétereinek beállításához kattintson a **Raktárkezelés** \> **Raktárba való kiadás** \> **Átmozgatási rendelések automatikus kiadása** elemre.
 
 -   Az értékesítési rendelések **Mennyiség** és **Részben kiadott rendelések kiadásának engedélyezése** paramétereinek beállításához kattintson a **Raktárkezelés** \> **Raktárba való kiadás** \> **Értékesítési rendelések automatikus kiadása** elemre.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

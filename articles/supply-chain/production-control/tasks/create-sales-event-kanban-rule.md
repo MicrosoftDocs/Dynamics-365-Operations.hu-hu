@@ -1,7 +1,7 @@
 ---
 title: Az értékesítési esemény kanbanszabályának létrehozása
 description: Ez az eljárás egy olyan kanbanszabály létrehozásához szükséges beállításokkal foglalkozik, amely az értékesítési rendelés létrehozásakor aktiválódik.
-author: ChristianRytt
+author: johanhoffmann
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 9325bbb8d28587baeb60cdf1fc37121c236f1a10
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3cd2b579e542b9f905fc51b63f2120e5a5c883ae
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5828922"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566647"
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Az értékesítési esemény kanbanszabályának létrehozása
 

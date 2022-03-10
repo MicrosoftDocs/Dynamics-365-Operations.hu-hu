@@ -2,32 +2,31 @@
 title: Használatijog-eszköz értékcsökkenésének rögzítése (előzetes verzió)
 description: Ez a témakör azt mutatja be, hogyan lehet létrehozni a napló azon bejegyzését, amely a szervezet mérlegében elismert lízingekhez szükséges.
 author: moaamer
-manager: Ann Beebe
-ms.date: 10/28/2020
+ms.date: 04/12/2021
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
-ms.search.form: ''
+ms.search.form: AssetLeaseAssetSchedule
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations, Retail
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0dd8308acb875affc96ca6d9ed856d74d4b2eb37
-ms.sourcegitcommit: aeee39c01d3f93a6dfcf2013965fa975a740596a
-ms.translationtype: HT
+ms.openlocfilehash: a766247e5482677429706a324c09cc9be4386c0b
+ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "4444170"
+ms.lasthandoff: 12/29/2021
+ms.locfileid: "7947315"
 ---
 # <a name="record-right-of-use-asset-depreciation-preview"></a>Használatijog-eszköz értékcsökkenésének rögzítése (előzetes verzió)
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
 
 A szervezet mérlegében elismert lízingek esetében a használatijog-eszközt (ROU) havi rendszerességgel kell elszámolni. Ez a témakör azt mutatja be, hogyan lehet létrehozni naplóbejegyzést az amortizációhoz. Az amortizáció megterheli a költség főkönyvi számlát, és jóváírja a halmozott értékcsökkenési főkönyvi számlát a feladási profil és a lízingtípus beállítása alapján. Ezek a bejegyzések minden lízinghez létrehozhatók, vagy több lízinghez is létrehozhatók a kötegnapló funkció használatával.
 
@@ -36,9 +35,12 @@ A szervezet mérlegében elismert lízingek esetében a használatijog-eszközt 
 1. A **Lízing összegzése** lapon válasszon ki egy lízinget. Ezután válassza a **Könyvek \> Eszköz értékcsökkenési ütemezése** lehetőséget az **Eszköz értékcsökkenési ütemezése** lap megnyitásához.
 
     A ROU-eszköz értékcsökkenési költség naplóbejegyzése az **Értékcsökkenési költség** oszlopban szereplő összegen alapul. A könyvelési standardok megfelelőségére vonatkozó útmutatást lásd a témakör későbbi részében található [ROU-eszközamortizációs költség számítása a pénzügyi lízingeknél](#calculation-of-rou-asset-amortization-expense-for-finance-leases) című szakaszban.
-
+    
 2. Jelölje ki az értékcsökkenési időszakot, majd válassza a **Napló létrehozása** lehetőséget. Megjelenik egy üzenet arról szólt, hogy létrehozták az értékcsökkenés rögzítésére használt naplót.
 3. Válassza a **Naplók \> Eszközlízing-naplók** lehetőséget az **Eszközlízing napló** lap megnyitásához, ahol megtekintheti a létrehozott értékcsökkenési költségnapló-bejegyzést.
+
+   A rendszer bizonyos pénzügyi mezőket zárolja a szerkesztéstől, hogy megakadályozza a tranzakciók és az ütemtervek közötti eltéréseket. Néhány zárolt mező: **Számla**, **Összegek**, **Pénzügyi dimenziók**, **Pénznem** és **Tranzakciótípus**. Ezenkívül nem lesz lehetősége naplóbejegyzési sorokat hozzáadni vagy törölni az eszközlízing naplóbejegyzésekben, mivel ez eltéréseket okozhat az ütemezések és a tranzakciók között.
+
 4. Jelölje ki a naplóbejegyzést, majd válassza a **Feladás** lehetőséget az értékcsökkenési tétel Főkönyvbe történő rögzítéséhez.
 
 ## <a name="calculation-of-rou-asset-amortization-expense-for-operating-leases"></a>A ROU-eszközamortizációs költség kiszámítása az operatív lízingek esetében
@@ -69,6 +71,8 @@ Ahogy azt korábban említettük, a rendszer az összes fizetés és a meghatár
 > [!NOTE]
 > Az ASC 842 szerint az operatív lízing ROU-eszköz értéke lízingráfordításként van besorolva az eredménykimutatásban. A láthatóság érdekében az eszközlízing a tételt a ROU-eszköz értékcsökkenéseként írja le. A tartozás bejegyzést azonban egy operatív lízingköltség számlához kell rendelni, és a hiteltételt közvetlenül a ROU-eszközhöz kell hozzárendelni az operatív lízinghez. Mindazonáltal a lízingparaméterekben megadhatja, hogy a jóváírás tételeket a ROU-eszközök működő eszközeinek halmozott értékcsökkenési számlájára kell tenni.
 
+Ha a bérlet üzemi bérleti díjnak van minősítve, a értékvesztés utáni havi értékcsökkenés számítása straight-line értékcsökkenéssel történik.
+
 ## <a name="calculation-of-rou-asset-amortization-expense-for-finance-leases"></a>A ROU-eszközamortizációs költség kiszámítása a pénzügyi lízingek esetében
 
 A pénzügyi osztályozással rendelkező lízingek esetében a rendszer a ROU-eszközamortizációt lineárisan számítja ki. Ezért az értékcsökkenési költség minden hónapban azonos lesz.
@@ -86,3 +90,6 @@ A Nemzetközi pénzügyi jelentési standard 16 (IFRS 16) és ASC 842 szabványn
 | 1                                    | 22.889,87 ÷ 24 = 953,74                 |
 | 2                                    | 22.889,87 ÷ 24 = 953,74                 |
 | 3                                    | 22.889,87 ÷ 24 = 953,74                 |
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

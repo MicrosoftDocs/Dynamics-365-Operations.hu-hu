@@ -1,7 +1,7 @@
 ---
 title: Alaptervezés beállítása
 description: Ez a témakör az alaptervezés beállításához használt különböző fontos stratégiákat és paramétereket ismerteti.
-author: t-benebo
+author: ChristianRytt
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: e30b02a6f98f638954adc7ec335babd518b92bf4
-ms.sourcegitcommit: 34b478f175348d99df4f2f0c2f6c0c21b6b2660a
-ms.translationtype: HT
+ms.openlocfilehash: 6d33fd53dd088ae4c6b4680d2604f783a3e1a5a0
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "5909403"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580720"
 ---
 # <a name="set-up-master-planning"></a>Alaptervezés beállítása
 

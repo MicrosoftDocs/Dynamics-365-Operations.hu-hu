@@ -1,27 +1,25 @@
 ---
 title: Tényleges készlet áthelyezése a raktáron belül
 description: Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladható egy készletmozgatási napló egy cikk egy adott raktáron belüli átszállításának nyilvántartásba vételéhez.
-author: MarkusFogelberg
-manager: tfehr
+author: yufeihuang
 ms.date: 08/08/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: mafoge
+ms.author: yufeihuang
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: c00b6d18b036482cd96e2287119ddb7fd80bfa2d
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: cf5a3711cfcd6e5a2ddce09af8569ea26c3502c8
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5011447"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7580792"
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a>Tényleges készlet áthelyezése a raktáron belül
 
@@ -58,3 +56,6 @@ Ez az eljárás végigvezeti a folyamaton, amellyel létrehozható és feladhat�
 1. Kattintson a **Készlet** parancsra.
 2. Kattintson a **Tranzakciók** elemre. Itt láthatók a napló feladásakor létrehozott tranzakciók.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

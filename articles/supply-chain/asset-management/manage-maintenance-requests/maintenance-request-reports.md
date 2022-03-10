@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0057d1a2dc00cef2474bc77b76af0d2e2b783d0c
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.openlocfilehash: cd0d50bacd43fe66628fec94aead3a2406e8d4e62c1e2e6c3d31afa9073baa6a
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5839655"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6773609"
 ---
 # <a name="maintenance-request-reports"></a>Karbantartáskérési jelentések
 
@@ -41,7 +41,7 @@ A **Karbantartási kérés részletei** jelentés a karbantartási kérésekkel 
 
 A következő ábra egy példát mutat be a **Karbantartási kérés részletei** jelentésre.
 
-![Karbantartási kérés részletei jelentés](media/09-manage-maintenance-requests.png)
+![Karbantartási kérés részletei jelentés.](media/09-manage-maintenance-requests.png)
 
 ## <a name="create-a-maintenance-request-list-report"></a>Karbantartási kérés listája jelentés létrehozása
 
@@ -54,7 +54,7 @@ A **Karbantartási kérések listája** jelentés megjeleníti az azonos kérés
 
 A következő ábra egy példát mutat be a **Karbantartási kérések listája** jelentésre az összes aktív karbantartási kérés esetében.
 
-![Karbantartási kérés lista jelentései](media/10-manage-maintenance-requests.png)
+![Karbantartási kérés lista jelentései.](media/10-manage-maintenance-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

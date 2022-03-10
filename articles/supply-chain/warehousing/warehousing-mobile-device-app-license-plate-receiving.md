@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2020-03-31
-ms.dyn365.ops.version: Release 10.0.11
-ms.openlocfilehash: 8c662da296bea7def443cb166bd3f7e501c9abcc
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.11
+ms.openlocfilehash: 6663188334c70035906f924c7850a0dc5002f306
+ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5823191"
+ms.lasthandoff: 02/09/2022
+ms.locfileid: "8103063"
 ---
 # <a name="license-plate-receiving-via-the-warehouse-management-mobile-app"></a>Azonosítótábla fogadása a Raktárkezelés mobilalkalmazáson keresztül
 
@@ -77,15 +77,13 @@ Ha ez a funkció be van kapcsolva, akkor az azonosítótábla fogadására és b
 - **Részletes összefoglalás megjelenítése** – Az azonosítótábla fogadása során a dolgozók egy külön lapot fognak látni, amely a teljes ASN-információt jeleníti meg.
 - **Az összefoglalás kihagyása** – A dolgozók nem fogják látni a teljes ASN-információt. A raktári dolgozók nem állíthatnak be intézkedési kódot sem, illetve kivételeket adhatnak meg a bevételezési folyamat során.
 
-Ha azt szeretné, hogy a funkció elérhető legyen a rendszerében, akkor be kell kapcsolni az *Annak szabályzása, hogy meg legyen-e jelenítve egy fogadás összegzése lap a mobileszközökön* funkciót a [szolgáltatáskezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Ennek a funkciónak a használatához be kell-e kapcsolva lennie a *rendszernek ahhoz,* hogy megjelenítsen-e fogadó összefoglaló oldalt a mobileszköz-szolgáltatásban. Az Ellátásilánc-kezelés 10.0.21-es verziója szerint ez a funkció alapértelmezés szerint be van kapcsolva. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10,0,25-ösnél régebbi verziót futtat, *akkor a rendszergazdák be- vagy kikapcsolhatják ezt a funkciót, ha a vezérlő segítségével eldöntik, hogy megjeleníti-e a fogadó összesítő oldalt a*[Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) munkaterületének mobileszköz-szolgáltatásán.
 
 ## <a name="prevent-transfer-ordershipped-license-plates-from-being-used-at-warehouses-other-than-the-destination-warehouse"></a>Átmozgatási rendeléssel szállított azonosítótáblák használatának megakadályozása a célraktártól eltérő raktárban
 
 Az azonosítótábla-bevételezési folyamat nem használható, ha az ASN tartalmaz egy rendszámtábla-azonosítót, amely már létezik, és tényleges aktuális adatokkal rendelkezik egy olyan raktári helyen, amely nem az a raktári hely, ahol az azonosítótábla regisztrációja történik.
 
-Az átmozgatási rendelés esetében, amikor az átmozgatási raktár nem követi nyomon az azonosítótáblákat (és ezért nem követi a tényleges aktuális készletet azonosítótáblánként) használhatja a *Átmozgatási rendeléssel szállított azonosítótáblák használatának megakadályozása a célraktártól eltérő raktárban* funkciót, amellyel megakadályozható az átvitel alatt lévő azonosítótáblák tényleges aktuális frissítése.
-
-Ha azt szeretné, hogy a funkció elérhető legyen a rendszerében, akkor be kell kapcsolni az *Átmozgatási rendeléssel szállított azonosítótáblák használatának megakadályozása a célraktártól eltérő raktárakban* funkciót a [szolgáltatáskezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Az átmozgatási rendelés esetében, amikor az átmozgatási raktár nem követi nyomon az azonosítótáblákat (és ezért nem követi a tényleges aktuális készletet azonosítótáblánként) használhatja a *Átmozgatási rendeléssel szállított azonosítótáblák használatának megakadályozása a célraktártól eltérő raktárban* funkciót, amellyel megakadályozható az átvitel alatt lévő azonosítótáblák tényleges aktuális frissítése. Ahhoz, hogy ez a funkció használható legyen, be kell kapcsolva lennie a rendszernek ahhoz, *hogy* a szállított át szállított rendelési táblákat a célraktár funkciótól különböző raktárakban használják. A 10.0.25-ös ellátásilánc-kezelésben ez a funkció kötelező, és nem lehet kikapcsolni. Ha 10.0.25-ösnél régebbi verziót futtat, [akkor](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) a rendszergazdák a Funkciókezelés munkaterületén való kereséssel kapcsolják be és kapcsolják ki a funkciót.
 
 Ha elérhetővé szeretné tenni ezt a funkciót, hajtsa végre az alábbi lépéseket.
 

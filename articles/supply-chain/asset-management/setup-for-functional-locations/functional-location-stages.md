@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1ab19358857440e46d3df2323fbcea19a476903
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
+ms.openlocfilehash: 3a9893ad497bbe442d74f5212153fa466d2c85eb
+ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5837753"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "6360970"
 ---
 # <a name="functional-location-lifecycle-states"></a>Munkavégzési helyszín életciklus-állapotai
 
@@ -56,8 +56,8 @@ A munkavégzési helyszínekhez szükséges életciklus-állapotok létrehozása
 1. Válassza ki az **Eszközök kezelése** > **Beállítás** > **Munkavégzési helyszínek** > **Életciklusmodellek** lehetőséget.
 2. Válassza ki az **Új** lehetőséget egy új életciklusmodell létrehozásához.
 3. Adja meg az életciklusmodell azonosítóját az **Életciklusmodell** mezőben, és az életciklusmodell nevét a **Név** mezőben. A **Munkavégzési helyszínek típusai** és az **Életciklus-állapotok** mezőben látható, hogy a munkavégzési helyszínek hány típusa használja az életciklusmodellt, illetve az életciklusmodellben kiválasztott állapotok számát.
-4. Az **Életciklus-állapotok** gyorslapon válassza ki a modellben használandó állapotokat. Ehhez kattintson az állapotra a **Fennmaradó életciklus-állapotok** szakaszban, majd az ![előre nyíl](media/02-setup-for-functional-locations.png) gombra.
-5. Ha egy modellhez az összes rendelkezésre álló állapotot ki szeretné választani, kattintson a ![minden elérhető állapot kiválasztása](media/03-setup-for-functional-locations.png) gombra. Az összes állapot átkerül az **Életciklus-állapotok kiválasztva** szakaszba.
+4. Az **Életciklus-állapotok** gyorslapon válassza ki a modellben használandó állapotokat. Ehhez kattintson az állapotra a **Fennmaradó életciklus-állapotok** szakaszban, majd az ![előre nyíl.](media/02-setup-for-functional-locations.png) gombra.
+5. Ha egy modellhez az összes rendelkezésre álló állapotot ki szeretné választani, kattintson a ![minden elérhető állapot kiválasztása.](media/03-setup-for-functional-locations.png) gombra. Az összes állapot átkerül az **Életciklus-állapotok kiválasztva** szakaszba.
 6. Ha el szeretne távolítani egy állapotot a kijelölt modellből, válassza ki az **Életciklus-állapotok kiválasztva** szakaszban, és kattintson a ![vissza nyíl](media/04-setup-for-functional-locations.png) gombra.
 7. Az **Életciklus-állapot frissítései** lehetőséggel megadhatja, hogy melyik életciklus-állapotok követhetnek egy kiválasztott állapotot.
 

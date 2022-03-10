@@ -1,26 +1,23 @@
 ---
 title: Alvállalkozói munkacella létrehozása a lean manufacturing szolgáltatáshoz
 description: A lean manufacturing feladatokhoz alvállalkozásba adott munka modellezése érdekében létre kell hoznia egy olyan munkacellát, amely a munkát nyújtó szállítóhoz van társítva.
-author: cvocph
-manager: tfehr
+author: johanhoffmann
 ms.date: 06/23/2017
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: johanho
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 2bc1e8551bbebd11cad18d47f9e74a2dedcb908d
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: f37a38227ef57e6e66a77e90883bf157792e7f81
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429230"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7576832"
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>Alvállalkozói munkacella létrehozása a lean manufacturing szolgáltatáshoz
 
@@ -71,3 +68,6 @@ A lean manufacturing feladatokhoz alvállalkozásba adott munka modellezése ér
 24. Az Egység mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
 25. ResolveChanges az Egység.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,9 +1,9 @@
 ---
-title: Vevői fizetési előrejelzések (előzetes verzió)
+title: Vevői fizetési előrejelzések
 description: Ez a témakör a fizetési előrejelzések képességét ismerteti, amelyek segíthetnek jobban megérteni a vevők tipikus fizetési gyakorlatait. Ez a funkció segíthet azonosítani azokat a körülményeket, amelyek a begyűjtési folyamatok az eredeti kezdésnél korábbi megkezdését okozhatják..
 author: ShivamPandey-msft
-ms.date: 07/16/2021
-ms.topic: article
+ms.date: 11/03/2021
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
@@ -17,14 +17,14 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 25542e72e620e5273a9cd215d5b6cd2f89a2f364
-ms.sourcegitcommit: e42c7dd495829b0853cebdf827b86a7cf655cf86
-ms.translationtype: HT
+ms.openlocfilehash: 04897e3a7765264ab2e664422caa928c49b9cc61
+ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "6638368"
+ms.lasthandoff: 01/15/2022
+ms.locfileid: "7982039"
 ---
-# <a name="customer-payment-predictions-preview"></a>Vevői fizetési előrejelzések (előzetes verzió)
+# <a name="customer-payment-predictions"></a>Vevői fizetési előrejelzések
 
 [!include [banner](../includes/banner.md)]
 
@@ -38,7 +38,7 @@ Szervezetek gyakran nehezen jósolják meg, hogy a vevők mikor fizetik ki a sz�
 - Túl későn elindított gyűjtési folyamatok
 - Azoknak a vevőknek kiadott rendelések, akik elmulaszthatják a kifizetést
 
-A Vevői kifizetés előrejelzések (előzetes verzió) segítenek a szervezeteknek megjósolni a vevői számla kifizetését. Ezért olyan gyűjtési stratégiákat hozhatnak létre, amelyek növelik annak valószínűségét, hogy időben fizessenek.
+A vevői kifizetések előrejelzései segítik a szervezeteket annak előrejelzésében, hogy mikor lesz kifizetve a vevői számla. Ezért olyan gyűjtési stratégiákat hozhatnak létre, amelyek növelik annak valószínűségét, hogy időben fizessenek.
 
 ## <a name="predictions"></a>Előrejelzések
 
@@ -66,12 +66,6 @@ A beszedési folyamat számos vállalkozásban reaktív tevékenység. Más szó
 
 ## <a name="methodology"></a>Módszertan
 
-A múltban általában nehéz mesterséges intelligencia-(AI) megoldást fejleszteni és alkalmazni. A folyamatnak adatszakértők, adott téma szakértői (SME-k) és mérnökök csapatára van szükség, akik idővel dolgoznak egy használható AI-megoldás kialakításán, fejlesztésén, üzembe helyezésén és karbantartásán. A vevői kifizetési előrejelzések segítségével egyszerűen telepíthető és használható a Microsoft Dynamics 365 Finance AI megoldása. A Microsoft AI Builder tetejére épülő AI megoldásokat építünk be. Ezért a felhasználók egyetlen kattintással telepíthetik az AI megoldást, hogy kihasználhassák egy intelligens előrejelzés előnyeit. Ha nem elégedett az előrejelzések pontosságával, egy kiemelt felhasználó, szintén egy kattintással beléphet az AI Builder bővítmény gyakorlatába, majd kiválaszthatja vagy törölheti azon mezőket, amiket az előrejelzések létrehozásához szeretne használni. Ha készen áll a programra, akkor „tanítsa be” a modellt, majd tegye közzé a változtatásokat. Az újonnan betanított modell automatikusan felveszi az előrejelzések létrehozásához a Dynamics 365 Finance-ben.
-
-## <a name="release-details"></a>Kiadás adatai
-
-A Finance Insights nyilvános előzetes verzió az Amerikai Egyesült Államokban, Európában és az Egyesült Királyságban is elérhető telepítéshez. A Microsoft fokozatosan adja hozzá a további régiók támogatását.
-
-A nyilvános előzetes verziójú funkciók csak 2. szintű tesztkörnyezetekben kell bekapcsolni. A tesztkörnyezetben létrehozott telepítési és AI-modellek lehet, hogy nem telepíthetők át éles környezetbe. További információ: [A Microsoft Dynamics 365 előzetes verziók kiegészítő használati feltételei](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md).
+A múltban általában nehéz mesterséges intelligencia-(AI) megoldást fejleszteni és alkalmazni. A folyamatnak adatszakértők, adott téma szakértői (SME-k) és mérnökök csapatára van szükség, akik idővel dolgoznak egy használható AI-megoldás kialakításán, fejlesztésén, üzembe helyezésén és karbantartásán. A vevői kifizetési előrejelzések segítségével egyszerűen telepíthető és használható a Microsoft Dynamics 365 Finance AI megoldása. A Microsoft előre csomagolja a Microsoftra épülő AI-megoldásokat AI Builder. Ezért a felhasználók egyetlen kattintással telepíthetik az AI megoldást, hogy kihasználhassák egy intelligens előrejelzés előnyeit. Ha nem elégedett az előrejelzések pontosságával, egy felhasználó (ismét, egyetlen kattintással) megadhatja a hosszabbítást, majd kiválaszthatja vagy törli a megfelelő mezőket, amelyek az előrejelzések generálásával AI Builder használatosak. Ha készen áll a programra, akkor „tanítsa be” a modellt, majd tegye közzé a változtatásokat. Az újonnan betanított modell automatikusan felveszi az előrejelzések létrehozásához a Dynamics 365 Finance-ben.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

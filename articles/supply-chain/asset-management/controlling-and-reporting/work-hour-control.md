@@ -1,29 +1,26 @@
 ---
 title: Munkaóra-ellenőrzés
 description: Ez a témakör az Eszközkezelés munkaóra-ellenőrzését ismerteti.
-author: josaw1
-manager: tfehr
+author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EntAssetHourControl
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
-ms.author: mkirknel
+ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 0d2f4e86b5dec84d4a24db6a4f9f9f16f6a765bd
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 90c4f649cc9ea45341ede923294a7c5a892cd68714db356c3799430d18f5de60
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429412"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742776"
 ---
 # <a name="work-hour-control"></a>Munkaóra-ellenőrzés
 
@@ -69,8 +66,11 @@ Az alábbi képernyőfotón az **Eszközórák ellenőrzése** számítás egyik
 - A **Tényleges órák** mező a munkarendeléseken feladott órákat jeleníti meg. 
 - A **Vállalt óraszám** mezőben az órák összes száma látható, amelyet a vállalat a munkarendelésekkel kapcsolatban vállalt.
 
-![Példa a tárgyi eszköz óraellenőrzési számítására](media/04-controlling-and-reporting.png)
+![Példa a tárgyi eszköz óraellenőrzési számítására.](media/04-controlling-and-reporting.png)
 
 Az órák számításának másik módja az, ha többszörös kiválasztással kiválasztja az eszközöket az **Összes eszköz** vagy **Aktív eszközök** pontban. Ezután kattintson az **Óraellenőrzés** gombra az **Általános** gyorslapon. A rendszer automatikusan beilleszti a kiválasztott eszközöket az **Eszköz** mezőbe a **Szerepeltetni kívánt rekordok** gyorslapon. Kattintson az **OK** gombra az **Eszközórák ellenőrzése** párbeszédablakban, és megjelenik a kiválasztott eszközökre vonatkozó számítás. Ugyanez az eljárás hajtható végre az **Összes munkavégzési helyszín** vagy **Aktív munkavégzési helyszínek** pontban található munkavégzési helyszíneknél, valamint a munkarendeléseknél az **Összes munkarendelés** vagy **Aktív munkarendelések** pontban.
 
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

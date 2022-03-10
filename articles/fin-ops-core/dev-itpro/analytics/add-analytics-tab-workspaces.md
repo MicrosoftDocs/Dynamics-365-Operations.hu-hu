@@ -1,8 +1,7 @@
 ---
 title: Analitika hozzáadása munkaterületekhez Power BI Embedded használatával
 description: Ez a témakör bemutatja, hogy miként ágyazható be egy Power BI jelentés egy munkaterület Elemzés lapjára.
-author: tjvass
-manager: AnnBe
+author: RichdiMSFT
 ms.date: 06/21/2017
 ms.topic: article
 ms.prod: ''
@@ -10,15 +9,15 @@ ms.technology: ''
 audience: Application user, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: tjvass
+ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 4e757ce585b16b23d65506068dcc337211107199
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
-ms.translationtype: HT
+ms.openlocfilehash: ed562dca621acea24efa3f157f695257cb919cdda577cf9ae6dd0b0c942e1b70
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5568490"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6760152"
 ---
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Analitika hozzáadása munkaterületekhez Power BI Embedded használatával
 
@@ -55,11 +54,11 @@ Kövesse ezeket a lépéseket a .pbix fájl Visual Studio projekt műtermékkén
 3. Az a **új elem hozzáadása** párbeszédpanel **műveletek műtermékek**, jelölje be a **erőforrás** sablon.
 4. Írjon be egy nevet, amely veszi figyelembe a jelentés X ++ metaadatokban hivatkozik, és kattintson a **hozzáadása**.
 
-    ![Új elem párbeszédpanelen hozzáadása](media/analytical-workspace-add.png)
+    ![Új elem párbeszédpanelen hozzáadása.](media/analytical-workspace-add.png)
 
 5. Keresse meg a .pbix fájlt, amely tartalmazza az elemzési jelentés, és kattintson a **nyitott**.
 
-    ![Válassza ki az erőforrás párbeszédpanel jelenik meg](media/analytical-workspace-select-resource.png)
+    ![Válassza ki az erőforrást párbeszédpanel.](media/analytical-workspace-select-resource.png)
 
 Dynamics 365 erőforrásként felvett .pbix fájl, hogy a jelentések beágyazása munkaterületek, és közvetlen kapcsolatokat menüelemek vehet fel.
 
@@ -68,7 +67,7 @@ Ebben a példában ajánlott kiterjed a **foglalási kezelése** munkaterület h
 
 A következő ábra azt mutatja, hogy a **FMClerkWorkspace** képernyő hogyan néz ki a a Microsoft Visual Studio-tervezőben.
 
-![A képernyőn FMClerkWorkspace változtatások előtt](media/analytical-workspace-definition-before.png)
+![Az FMClerkWorkspace űrlap változtatások előtt.](media/analytical-workspace-definition-before.png)
 
 Kövesse az alábbi lépéseket képernyő definíció kiterjeszteni az **foglalási kezelési** munkaterület.
 
@@ -93,7 +92,7 @@ Kövesse az alábbi lépéseket képernyő definíció kiterjeszteni az **foglal
 
 A következő ábra mutatja, hogy a terv néz módosítások alkalmazása után.
 
-![Módosítások után FMClerkWorkspace](media/analytical-workspace-definition-after.png)
+![Az FMClerkWorkspace változtatások után.](media/analytical-workspace-definition-after.png)
 
 Most, hogy a munkaterület jelentés beágyazása használt űrlap-vezérlőelemek felvett tulajdonságaként méretét, hogy így alkalmazkodik az elrendezés kell megadni. Alapértelmezés szerint mind **szűrők ablak** lap és a **lap** oldal a jelentésen látható lesz. Ezeket a vezérlőelemeket a jelentés a cél fogyasztó megfelelő láthatóságát azonban módosítható.
 
@@ -143,7 +142,7 @@ Kövesse az alábbi lépéseket, amely inicializálja a jelentésmegjelenítő v
 
 Üzleti logika inicializálja a jelentésmegjelenítő vezérlőben beágyazott felvételét a feladat már befejeződött. A következő ábra mutatja, hogy a munkaterület néz módosítások alkalmazása után.
 
-![A munkaterület ágyazott jelentés](media/analytical-workspace-final.png)
+![A munkaterületbe beágyazott jelentés.](media/analytical-workspace-final.png)
 
 > [!NOTE]
 > A meglévő működési nézet alatt az oldalcím a munkaterület lapok használatával hozzáfér.

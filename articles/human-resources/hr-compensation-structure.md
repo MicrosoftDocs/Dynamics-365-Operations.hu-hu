@@ -1,8 +1,8 @@
 ---
 title: Kompenzációs struktúra kialakítása
-description: Ez a cikk végigvezeti a fix kompenzációs konstrukció létrehozásának és az alkalmazottak konstrukcióba való regisztrálásának folyamatán alkalmazhatósági szabályokon keresztül.
-author: andreabichsel
-ms.date: 02/10/2020
+description: Ez a témakör végigvezeti a fix kompenzációs konstrukció létrehozásának és az alkalmazottak konstrukcióba való regisztrálásának folyamatán alkalmazhatósági szabályokon keresztül.
+author: twheeloc
+ms.date: 08/25/2021
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -10,21 +10,24 @@ ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPar
 audience: Application User
 ms.search.scope: Human Resources
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2649a392b5c8bb2482622eba22b0b2f458058314dce25a8b9032eb2ef518240c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 2e35f4978cc4e8162c56ba05de28ab5b2366ccc7
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732369"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8065286"
 ---
 # <a name="develop-a-compensation-structure"></a>Kompenzációs struktúra kialakítása
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a cikk végigvezeti a fix kompenzációs konstrukció létrehozásának és az alkalmazottak konstrukcióba való regisztrálásának folyamatán alkalmazhatósági szabályokon keresztül. Ez a cikk a USMF bemutató adatait használja, és a kompenzációs és juttatási vezetőket érinti.
+Ez a témakör leírja a fix kompenzációs konstrukció létrehozásának és az alkalmazottak konstrukcióba való regisztrálásának folyamatát az alkalmazhatósági szabályokon keresztül. Ez a témakör a USMF bemutató adatait használja, és a kompenzációs és juttatási vezetőket érinti.
 
 ## <a name="create-a-fixed-compensation-plan"></a>Fix kompenzációs konstrukciók létrehozása
 

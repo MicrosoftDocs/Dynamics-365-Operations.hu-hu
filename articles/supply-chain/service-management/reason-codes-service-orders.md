@@ -1,12 +1,10 @@
 ---
 title: Okkódok a szervizrendelésekhez
 description: Okkódok segítségével magyarázhatja meg egy szervizrendelés státusát, amikor a szervizrendelés új fokozatba kerül.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMAStageTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b059ad5b2ea9cd577624355cf17925cfb9b4867b
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: ac21174cc0e6319494f2db0530e68229325b07f6
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5258518"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7566191"
 ---
 # <a name="reason-codes-for-service-orders"></a>Okkódok a szervizrendelésekhez   
 

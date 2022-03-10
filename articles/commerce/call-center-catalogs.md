@@ -2,11 +2,9 @@
 title: Hívásközpont-katalógusok
 description: Ez a témakör a Dynamics 365 Commerce-katalógusok hívásközpont-specifikus funkcióit ismerteti.
 author: josaw1
-manager: AnnBe
 ms.date: 05/15/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 ms.search.form: RetailMCRChannelDetailPage, RetailCatalogDetails
 audience: Application User
@@ -18,12 +16,12 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 259b68aa28aa0c84699fc6d2e691bae0af135ab7
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 6fae877b04fdbd84e1c2508f91bbf53b5412b350c5d2c8978aafb2d7f49783f6
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4997800"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6742512"
 ---
 # <a name="call-center-catalogs"></a>Hívásközpont-katalógusok
 
@@ -41,7 +39,7 @@ A "közvetlenül a fogyasztónak" marketingvállalatok szorosan követik a vevő
 
 Lépjen a **Kiskereskedelem és kereskedelem** \> **Katalógusok és szortimentek** \> **Minden katalógus** ponthoz a katalógus konfigurálásához.
 
-Új katalógus létrehozásakor először a katalógust hozzá kell rendelnie egy vagy több csatornához. Ezt a **Kereskedelmi csatornák** gyorslapon teheti meg a **Katalógusbeállítások** űrlapon. Kattintson a **Hozzáadás** lehetőségre, és válasszon ki egy vagy több csatornát. Csak a kiválasztott csatorna [szortimenthez](https://docs.microsoft.com/dynamics365/unified-operations/retail/assortments) kapcsolt elemeket használhatja a katalógus létrehozásakor.
+Új katalógus létrehozásakor először a katalógust hozzá kell rendelnie egy vagy több csatornához. Ezt a **Kereskedelmi csatornák** gyorslapon teheti meg a **Katalógusbeállítások** űrlapon. Kattintson a **Hozzáadás** lehetőségre, és válasszon ki egy vagy több csatornát. Csak a kiválasztott csatorna [szortimenthez](/dynamics365/unified-operations/retail/assortments) kapcsolt elemeket használhatja a katalógus létrehozásakor.
 
 Ha termékeket szeretne hozzáadni a katalógushoz, ki kell választania a navigációs hierarchiát. A navigációs hierarchia célja a katalógus a kategóriaszerkezetének támogatása. Választania kell egyet a **Katalógus** oldal **Kereskedelmi csatornák** gyorslapon a kiválasztott csatornákhoz kapcsolt navigációs hierarchiák közül. Ha egy navigációs csatorna korábban nem volt hozzákapcsolva egy csatornához, lépjen a **Kiskereskedelem és kereskedelem** \> **Csatorna beállítása** \> **Csatornakategóriák és termékattribútumok** lehetőséghez, ahol hozzákapcsolhat egy alapértelmezett navigációs hierarchiát minden egyes csatornához.
 
@@ -100,3 +98,6 @@ A **Katalógusok** lapon lehetősége van a **Fizetési ütemezés** és az **In
 ## <a name="additional-notes"></a>További megjegyzések
 
 Jelenleg ha egy forráskód-azonosítót alkalmaznak egy értékesítési rendelésre a hívásközpontban, arra használják, hogy katalógusspecifikus árak, promóciók, forgatókönyvek és értéknövelő/párhuzamosan értékesített cikkek hajtóereje legyen. A rendszer nem tiltja és nem akadályozza meg a katalógusban nem szereplő termékek értékesítési rendelés során történő rendelését. Ha egy katalógusban nem szereplő cikket rendelnek, a rendszer először a hívásközponti csatornában meghatározott **Árcsoportot** használja (**Kiskereskedelem és kereskedelem** \> **Csatornák** \> **Hívásközpontok** \> **Összes hívásközpont**) a cikk árához vagy a promóciókhoz. Ha nem talál konkrét árat a csatornában, a termék alap eladási árát használja.
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

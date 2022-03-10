@@ -1,12 +1,10 @@
 ---
 title: Hitelkeret-kiigazítások
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani és hozzáadni a hitelkorlát-korrekciókat.
-author: mikefalkner
-manager: AnnBe
+author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschloma
@@ -14,12 +12,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 31d83e2083806a518928dc2079c31fab6f95872c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: c171ab99a434e529c48f39be9147ac411fb08b9b
+ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5254522"
+ms.lasthandoff: 11/05/2021
+ms.locfileid: "7753898"
 ---
 # <a name="credit-limit-adjustments"></a>Hitelkeret-kiigazítások 
 

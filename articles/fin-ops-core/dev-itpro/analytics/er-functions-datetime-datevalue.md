@@ -2,9 +2,7 @@
 title: DATEVALUE ER-függvény
 description: A témakör tájékoztatást nyújt a DATEVALUE Elektronikus jelentéskészítési (ER) függvény használatának módjáról.
 author: NickSelin
-manager: kfend
-ms.date: 12/04/2019
-ms.topic: article
+ms.date: 09/08/2021
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -16,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 82feb8284f4b6116a53d174dcdd9b8c09c4fa63a
-ms.sourcegitcommit: 6cb174d1ec8b55946dca4db03d6a3c3f4c6fa2df
-ms.translationtype: HT
+ms.openlocfilehash: 446f1357e54342073e73f86ef36e6467e029ebc4
+ms.sourcegitcommit: e7eeca05d738e9e46d6185d1ba349836ebafc1a4
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "5563558"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "7485574"
 ---
 # <a name="datevalue-er-function"></a>DATEVALUE ER-függvény
 
 [!include [banner](../includes/banner.md)]
 
-A `DATEVALUE` függvény egy *Dátum* értéket ad eredményül, amely egy megadott formátumú szövegértékről kerül átalakításra egy opcionálisan megadható [területi beállításokban](https://docs.microsoft.com/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) egy dátumértékre. A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](https://msdn.microsoft.com/library/az4se3k1(v=vs.110).aspx) és [egyéni](https://msdn.microsoft.com/library/8kb3ddd4(v=vs.110).aspx).
+A `DATEVALUE` függvény egy *[Dátum](er-formula-supported-data-types-primitive.md#date)* értéket ad eredményül, amely egy megadott formátumú szövegértékről kerül átalakításra egy opcionálisan megadható [területi beállításokban](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes) egy dátumértékre. A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](/dotnet/standard/base-types/standard-date-and-time-format-strings) és [egyéni](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## <a name="syntax-1"></a>Szintaxis 1
 
@@ -43,19 +41,19 @@ DATEVALUE (text, format, culture)
 
 ## <a name="arguments"></a>Argumentumok
 
-`text`: *Karakterlánc*
+`text`: *[Sztring](er-formula-supported-data-types-primitive.md#string)*
 
 A formázni kívánt értéket reprezentáló szöveg.
 
 `format`: *Karakterlánc*
 
-Az adott szöveg formátuma.
+Az adott szöveg formátuma. A támogatott formátumokkal kapcsolatos további tudnivalókat lásd: [szokásos](/dotnet/standard/base-types/standard-date-and-time-format-strings) és [egyéni](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 `culture`: *Karakterlánc*
 
-A megadott szöveg formázásához használt területi beállítás.
+A megadott szöveg formázásához használt területi beállítás. További tájékoztatás a támogatott kulturális környezetről: [Kulturális környezet](/bingmaps/rest-services/common-parameters-and-types/supported-culture-codes).
 
-## <a name="return-values"></a>Visszaadott értékek
+## <a name="return-values"></a>Visszatérési értékek
 
 *Dátum*
 

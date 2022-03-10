@@ -1,42 +1,37 @@
 ---
 title: Sablonanyagjegyzékek
 description: A sablondarabjegyzékek segítségével szabványosított listát készíthet a rendszeresen szervizelt szolgáltatási tárgyak összetevőiről.
-author: ShylaThompson
-manager: tfehr
+author: kamaybac
 ms.date: 09/19/2018
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: SMATemplateBOMTable
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 88e732f64b389acafee23427594225dfacda71cc
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: d34502d74590595f26ba5aae78158ed893a095df
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429471"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7571307"
 ---
-# <a name="template-boms"></a>Sablonanyagjegyzékek    
+# <a name="template-boms"></a>Sablonanyagjegyzékek
 
 [!include [banner](../includes/banner.md)]
-
 
 A sablondarabjegyzékek segítségével szabványosított listát készíthet a rendszeresen szervizelt szolgáltatási tárgyak összetevőiről. A sablondarabjegyzékben felsorolt összetevők a szolgáltatási objektum különálló alösszetevőit képviselik. Amikor a sablondarabjegyzéket a szolgáltatás tárgyára alkalmazza, egy olyan alösszetevő-rekordot kap, amely nyilvántartja a szolgáltatás tárgyában kicserélt alkatrészeket.
 
 A sablonanyagjegyzéket úgy alkalmazhatja a szolgáltatási szerződésre vagy szervizrendelésre, hogy egy szolgáltatásitárgy-kapcsolathoz csatolja.
 
-
 > [!NOTE]
-> <P>Minden szolgáltatás tárgyához csak egy sablondarabjegyzék csatolható.</P>
+> Minden szolgáltatás tárgyához csak egy sablondarabjegyzék csatolható.
 
 ## <a name="create-a-template-bom"></a>Sablonanyagjegyzék létrehozása
 
@@ -44,8 +39,8 @@ Az alábbi táblázat tartalmazza a sablondarabjegyzékek létrehozásához hasz
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <thead>
 <tr class="header">
@@ -73,7 +68,6 @@ Az alábbi táblázat tartalmazza a sablondarabjegyzékek létrehozásához hasz
 </tbody>
 </table>
 
-
 ## <a name="apply-the-template-bom-to-a-service-agreement-or-service-order"></a>Sablonanyagjegyzék alkalmazása szolgáltatási szerződésre vagy szervizrendelésre
 
 A sablonanyagjegyzék szolgáltatási szerződésre és szervizrendelésre vagy minkettőre alkalmazható. A szolgáltatási szerződés általában egy hosszú távú viszonyt testesít meg a vevővel. A szolgáltatási anyagjegyzék által nyilvántartott korábbi cserék hasznos információkat szolgáltatnak a szolgáltatási szerződéshez.
@@ -84,7 +78,7 @@ A sablonanyagjegyzék egy szervizrendelésre is alkalmazható, a szolgáltatás 
 
 A szolgáltatási anyagjegyzék előzménysorai másolhatók az egyik szolgáltatási szerződésből egy másikba. A szolgáltatási előzmények szerződések közötti másolásával megőrizheti a nyilvántartást a cikkek cseréiről.
 
-**Példa**
+### <a name="example"></a>Példa
 
 A vállalat három évre szóló szolgáltatási szerződést kötött a vevő autójára. Ezen időszak alatt a vevő hozzászokik a vállalat által nyújtott kiváló szolgáltatáshoz. Emiatt a szerződés lejárta után a vevő szeretne beállítani egy újat. Ebben a helyzetben lehetősége van arra, hogy a vállalat számára kedvezőbb szerződést kössön. Mivel a cserélt alkatrészek nyilvántartása hasznos lehet a jövőben is, ezért a szolgáltatási anyagjegyzék sorait átmásolja az új szerződésbe.
 
@@ -102,26 +96,18 @@ Minden sablonban és szolgáltatási anyagjegyzékre nézve módosíthatja, hogy
 
 Sablonanyagjegyzékek használatához két számsorozatot kell beállítani. Állítson be egy számsorozatot a sablonanyagjegyzékhez, és egyet az anyagjegyzék-előzmény sorszámához.
 
-
 > [!NOTE]
-> <P>A számsorozatokat a rendszer mindenütt használja azonosítók kiosztásához azoknak a rekordoknak, amelyek igénylik őket. Mielőtt hozzárendelhetne egy számsorozatot egy sablonanyagjegyzékhez vagy egy anyagjegyzék-előzmény sorszámához, be kell állítania a számsorozat kódokat.</P>
-
+> A számsorozatokat a rendszer mindenütt használja azonosítók kiosztásához azoknak a rekordoknak, amelyek igénylik őket. Mielőtt hozzárendelhetne egy számsorozatot egy sablonanyagjegyzékhez vagy egy anyagjegyzék-előzmény sorszámához, be kell állítania a számsorozat kódokat.
 
 ## <a name="set-up-number-sequences"></a>Számsorozatok beállítása
 
-1.  A **Számsorozatok** listaoldalon hozza létre számsorozatokat a sablonanyagjegyzékek és az anyagjegyzék-előzmény sorszámához. 
-
-2.  Kattintson a **Szolgáltatáskezelés** \> **Beállítás** \> **Szolgáltatáskezelési paraméterek** pontra.
-
-3.  Kattintson a **Számsorozatok** elemre, és ezután válassza ki a számsorozat kódját a számsorozat-hivatkozásokhoz, amelyeket létrehozott a **Számsorozatok** képernyőn.
-
-4.  A módosítások mentéséhez zárja be a képernyőt.
-
+1. A **Számsorozatok** listaoldalon hozza létre számsorozatokat a sablonanyagjegyzékek és az anyagjegyzék-előzmény sorszámához.
+1. Válassza a **Szolgáltatáskezelés** \> **Beállítás** \> **Szolgáltatáskezelési paraméterek** pontot.
+1. Válassz a **Számsorozatok** elemet, és ezután válassza ki a számsorozat kódját a számsorozat-hivatkozásokhoz, amelyeket létrehozott a **Számsorozatok** képernyőn.
+1. A módosítások mentéséhez zárja be a képernyőt.
 
 > [!NOTE]
-> <P>Az anyagjegyzék-előzmény sorszáma szolgál a rendszerben az anyagjegyzék-előzményekben a tranzakciók társítására egy szolgáltatási szerződéssel vagy szervizrendeléssel. A szám nem jelenik meg a felhasználói felületen.</P>
-
-
+> Az anyagjegyzék-előzmény sorszáma szolgál a rendszerben az anyagjegyzék-előzményekben a tranzakciók társítására egy szolgáltatási szerződéssel vagy szervizrendeléssel. A szám nem jelenik meg a felhasználói felületen.
 
 ## <a name="see-also"></a>Lásd még
 
@@ -131,6 +117,4 @@ Sablonanyagjegyzékek használatához két számsorozatot kell beállítani. Ál
 
 [Szolgáltatási anyagjegyzék módosítása](modify-service-bom.md)
 
- 
-
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

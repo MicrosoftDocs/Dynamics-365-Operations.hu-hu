@@ -1,8 +1,8 @@
 ---
 title: Kérdőívek
-description: Ez a cikk a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket.
-author: andreabichsel
-ms.date: 06/20/2017
+description: Ez a témakör a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz.
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,21 +12,24 @@ ms.search.scope: Human Resources
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 480e4bd41fcd24e7a9c8ce6704eacb03069f19c8
-ms.sourcegitcommit: 879ee8a10e6158885795dce4b3db5077540eec41
-ms.translationtype: HT
+ms.openlocfilehash: ad5f3572e7b4b0594ffce6abaddceac955d1c678
+ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "6051833"
+ms.lasthandoff: 01/31/2022
+ms.locfileid: "8069504"
 ---
 # <a name="questionnaires"></a>Kérdőívek
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a cikk a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket. 
+Ez a témakör a kérdőívekkel kapcsolatos általános tudnivalókról szól, valamint részletes információkkal szolgáló hivatkozásokat tartalmaz. A kérdőív olyan kérdések összessége, amiket különböző információk gyűjtésére használnak. Megtervezhet, létrehozhat, terjeszthet és kitölthet kérdőíveket, majd elemezheti az eredményeket. 
 
 A Microsoft Dynamics 365 Finance különböző funkcióival testre szabhatja a kérdőívet, hogy megfeleljen az Ön követelményeinek. Íme néhány példa a kérdőív használatához:
 
@@ -40,9 +43,9 @@ Az alábbi táblázatban találhatóak hivatkozások, a kérdőív fő feladatai
 
 | Témakör| Leírás|
 |------|------------|
-| [Kérdőívek tervezése](hr-learning-design-questionnaires.md) | Ez a cikk a kérdőívek tervezésével kapcsolatban tartalmaz tájékoztatást. A tervezési folyamat magában foglalja az előfeltételeket, a kérdéseket, a válaszokat, valamint ezek egyesítését kérdőív formába. |
-| [Kérdőívek terjesztése és ütemezése](hr-learning-distribute-questionnaires.md) | Ez a cikk a kérdőívek válaszadóknak történő kiosztásáról, valamint a kérdőívek kitöltéséről szól. |
-| [A kérdőív eredményeinek megtekintése és kiértékelése](hr-learning-evaluate-questionnaire-results.md) | Ez a cikk a kitöltött kérdőívek eredményének megtekintéséről és kiértékeléséről szól. |
+| [Kérdőívek tervezése](hr-learning-design-questionnaires.md) | Ez a témakör a kérdőív megtervezésével kapcsolatban nyújt információkat. A tervezési folyamat magában foglalja az előfeltételeket, a kérdéseket, a válaszokat, valamint ezek egyesítését kérdőív formába. |
+| [Kérdőívek terjesztése és ütemezése](hr-learning-distribute-questionnaires.md) | Ez a témakör tájékoztatást nyújt arról, hogyan lehet kérdőívet kiosztani a válaszadóknak, és hogyan kell kitölteni a kérdőíveket. |
+| [A kérdőív eredményeinek megtekintése és kiértékelése](hr-learning-evaluate-questionnaire-results.md) | Ez a témakör tájékoztatást nyújt a kitöltött kérdőívek eredményeinek megtekintéséről és értékeléséről. |
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

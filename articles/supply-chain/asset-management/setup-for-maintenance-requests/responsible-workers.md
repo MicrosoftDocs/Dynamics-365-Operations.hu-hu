@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-07-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a1330aa04a57809ff34dcca9791f8fb0a93c8d71
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.openlocfilehash: d68c9e6de6e9d62d1dea95c747b17900d343e7324857dcfc083d48e5c1006b0e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5808448"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6731295"
 ---
 # <a name="responsible-maintenance-workers"></a>Felelős karbantartási dolgozók
 
@@ -50,7 +50,7 @@ A felelős karbantartási dolgozók beállítása előtt be kell állítania a k
 
 A következő ábra a **Felelős karbantartási dolgozók** oldalt szemlélteti.
 
-![Felelős karbantartási dolgozók oldal](media/08-setup-for-requests.png)
+![Felelős karbantartási dolgozók oldal.](media/08-setup-for-requests.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

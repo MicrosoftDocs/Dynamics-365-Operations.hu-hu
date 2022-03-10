@@ -2,11 +2,9 @@
 title: Közös értékek létrehozása a mérnöki módosításkezeléshez
 description: Ez a témakör azt ismerteti, hogyan hozhat létre közös értékeket, amelyeket a mérnöki módosításkezelés különböző részeinek paramétereihez használnak.
 author: t-benebo
-manager: tfehr
 ms.date: 09/28/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: EngChgProductParameters, EngChgEcmSeverityTable, EngChgEcmSeverityRuleSet, EngChgEcmSeverityLookup,EngChgEcmSeverityChart,EngChgEcmRequestSeverityChart,EngChgEcmPriorityTable, EngChgEcmPriorityLookup, EngChgEcmPriorityChart, EngChgEcmMaterialDisposition, EngChgEcmEH
 audience: Application User
@@ -14,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: ee2be7d59f327876b92386c66433aeaf06df489c
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.15
+ms.openlocfilehash: c2ff21490dc71859d75923dd757e264096d4fcba
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5262357"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7565927"
 ---
 # <a name="establish-common-values-for-engineering-change-management"></a>Közös értékek létrehozása a mérnöki módosításkezeléshez
 

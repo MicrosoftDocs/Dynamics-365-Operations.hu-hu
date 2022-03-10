@@ -1,32 +1,30 @@
 ---
 title: Egy helyre vonatkozó terv létrehozása
 description: A termeléstervező kiszámítja az anyag és a kapacitásszükségletét egy adott cikk termelésére vonatkozóan.
-author: ShylaThompson
-manager: tfehr
+author: ChristianRytt
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: DefaultDashboard, ReqCreatePlanWorkspace, ReqTransPlanCard, ReqTransPOUrgentFormPart, SysQueryForm
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: crytt
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b6d433257056c604500953060bf11ce3a3f5866
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 3f7da319d4c28af311d79dc01bb93a9fe2f76480
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5007941"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7568591"
 ---
 # <a name="create-a-plan-for-a-site"></a>Egy helyre vonatkozó terv létrehozása
 
 [!include [banner](../../includes/banner.md)]
 
-A termeléstervező kiszámítja az anyag és a kapacitásszükségletét egy adott cikk termelésére vonatkozóan. A Forrás javaslatok létrehozása után a rendeléseket azon a telephelyen találja, amelyre vonatkozóan eltervezi és megerősíti a rendeléseket, kezdve a sürgős esetektől. A legtöbb sürgős rendelések azok a rendelések, amelyeket meg kell erősíteni az aktuális napon. Az USMF bemutató vállalati adatainak használatával elvégezheti ezeket a műveleteket.
+A termeléstervező kiszámítja az anyag és a kapacitásszükségletét egy adott cikk termelésére vonatkozóan. A forrásjavaslatok létrehozása után a rendeléseket azon a helyen találja, amelyre vonatkozóan megtervezi és megerősíti a rendeléseket, kezdve a sürgős esetektől. A legtöbb sürgős rendelések azok a rendelések, amelyeket meg kell erősíteni az aktuális napon. Az USMF bemutató vállalati adatainak használatával elvégezheti ezeket a műveleteket.
 
 
 ## <a name="create-a-materials-and-capacity-plan-for-an-item"></a>Hozzon létre Anyag- és Kapacitástervet egy cikkre vonatkozóan
@@ -54,3 +52,6 @@ A termeléstervező kiszámítja az anyag és a kapacitásszükségletét egy ad
 2. Kattintson a Megerősítés gombra.
 3. Kattintson az OK gombra.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

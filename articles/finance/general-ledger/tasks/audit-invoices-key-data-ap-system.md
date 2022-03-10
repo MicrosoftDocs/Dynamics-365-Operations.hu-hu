@@ -1,26 +1,24 @@
 ---
 title: A kötelezettségkezelésben levő számlák és kulcsfontosságú adatok vizsgálata
 description: Ez a témakör a kötelezettségkezelésben levő számlák és kulcsfontosságú adatok vizsgálatát mutatja be.
-author: saraschi2
-manager: AnnBe
+author: kweekley
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchTable, PurchCreateOrder, PurchEditLines, VendEditInvoice, VendEditInvoiceDefaultQuantityForLinesDropDialog,  VendJournalMatch_PackingSlip, VendInvoiceMatchingDetails
 audience: Application User
 ms.reviewer: roschlom
 ms.search.region: Global
-ms.author: saraschi
+ms.author: kweekley
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: e173d2efe0d5acb1be60c9ba315c21563c2bf105
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: f49f8c87f628d68f2c7f355b93cdf5e0a9403251
+ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4994765"
+ms.lasthandoff: 12/03/2021
+ms.locfileid: "7883719"
 ---
 # <a name="audit-invoices-and-key-data-in-accounts-payable"></a>A kötelezettségkezelésben levő számlák és kulcsfontosságú adatok vizsgálata
 
@@ -61,3 +59,6 @@ Ez az eljárás az USMF bemutatócéget használja. A kötelezettségeket kezel�
 9. A Művelet panelen kattintson az **Áttekintés** lehetőségre.
 10. Kattintson a **Részletek egyeztetése** elemre.
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

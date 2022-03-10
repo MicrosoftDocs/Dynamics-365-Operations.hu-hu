@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-30
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: fae899bcfa8bb2566d1a9aee3f0dbe22bc219edf
-ms.sourcegitcommit: 0e8db169c3f90bd750826af76709ef5d621fd377
-ms.translationtype: HT
+ms.openlocfilehash: 4ace2da2c4bc3d5cc404301fc4ecef5ceeef240dae6569a4d28f621b02637930
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "5825638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6779666"
 ---
 # <a name="scheduled-execution"></a>Ütemezett végrehajtás
 
@@ -39,7 +39,7 @@ A munkarendelésekhez kapcsolódó ütemezett végrehajtás beállítása lehet 
 5. Válassza ki az időintervallumot az **Ütemezett végrehajtás** mezőben.
 6. Válassza a **Mentés** lehetőséget.
 
-![Ütemezett végrehajtás](media/20-setup-for-work-orders.png)
+![Ütemezett végrehajtás.](media/20-setup-for-work-orders.png)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

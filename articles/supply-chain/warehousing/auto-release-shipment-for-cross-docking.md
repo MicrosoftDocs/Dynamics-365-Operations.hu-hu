@@ -1,27 +1,24 @@
 ---
 title: Szállítmány automatikus kiadása áttároláshoz
 description: Ez a témakör egy olyan áttárolási stratégiát mutat be, amely lehetővé teszi az igény szerinti rendelés automatikus kiadását a raktárban, ha az igény szerinti mennyiséget átadó termelési rendelés készre van jelentve, hogy a mennyiség közvetlenül a termelési kimenetből legyen kiszállítva a kimenő helyre.
-author: omulvad
-manager: tfehr
+author: Mirzaab
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: WHSCrossDockingTemplate
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: kamaybac
+ms.author: mirzaab
 ms.search.validFrom: 2019-10-1
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: b86fe2f3ea4321dbe598233018934187ba0d713a
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 1315bda1fd284eb326d4f08bf36bfea59074fde3
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4429317"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7577936"
 ---
 # <a name="auto-release-shipment-for-cross-docking"></a>Szállítmány automatikus kiadása áttároláshoz
 
@@ -164,7 +161,7 @@ Ha a késztermékek mennyiségét át szeretné tárolni a társított értékes
 8. A **Termelési rendelés** lap műveleti ablakának **Termelési rendelés** lapján a **Feldolgozás** csoportban válassza a **Becslés** elemet, majd válassza az **OK** lehetőséget. A rendelés becslése megtörténik, és a nyersanyag mennyisége a termeléshez le lesz foglalva.
 9. A **Termelési rendelés lap** műveleti ablakában a **Feldolgozás** csoportban válassza ki a **Felszabadítás** elemet, majd válassza az **OK** lehetőséget. A raktári kitárolási munka létrejön a nyersanyagokhoz.
 10. A munka megnyitása és áttekintése. A Művelet ablaktábla **Raktár** lapjának **Általános** csoportjában válassza a **Munka részletei** elemet. Jegyezze fel a munkaazonosítót
-11. Jelentkezzen be raktáralkalmazásba, hogy munkát futtasson az 51-es raktárban.
+11. Jelentkezzen be a Raktárkezelés mobilalkalmazásba, hogy munkát futtasson az 51-es raktárban.
 12. Válassza a **Termelés** \> **Termelési kitárolás** lehetőséget.
 13. Adja meg, hogy melyik munkaazonosító induljon el, és végezze el a nyersanyag kitárolását. 
 
@@ -179,3 +176,6 @@ Felhívjuk figyelmét, hogy ebben a szakaszban a következő események zajlanak
 - A raktárba történő kiadás a csatolt értékesítési rendeléshez elindítja.
 - A kiadás alapján egy szállítás és egy áttárolási munka jön létre. Ez a munka arra utasítja a raktári kezelőt, hogy kitárolja az értékesítésirendelés-sor teljesítéséhez szükséges mennyiségeket, és azokat az áttárolási hely irányelvében meghatározott kimeneti helyre helyezze.
 - Ha a termelési rendelés mennyisége meghaladja az értékesítési rendeléshez szükséges mennyiséget, létrejön a szokásos betárolási munka. Ez a munka arra utasítja a raktári kezelőt, hogy kiválassza azt a mennyiséget a készárukból, ami az áttárolás után marad, és áthelyezze azt a szokásos tárolóhelyre a helyirányelvek alapján.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

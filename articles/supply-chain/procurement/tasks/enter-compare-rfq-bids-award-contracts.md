@@ -1,26 +1,24 @@
 ---
 title: Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket
 description: Ez a cikk azt tekinti át, hogyan adhatók válaszok az ajánlatkérésre, hogyan pontozhatók és hasonlíthatók össze az ajánlatok, illetve hogyan ítélhető a szerződés az egyik szállítónak.
-author: RichardLuan
-manager: tfehr
+author: Henrikan
 ms.date: 07/09/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: PurchRFQCaseTableListPage, PurchRFQCaseTable, PurchRFQReplyTable, PurchRFQCompare, PurchRFQEditLines, PurchRFQEditLinesParameters, PurchTable, PurchTablePart, PurchRFQCompareLinePrices, PurchRFQCompareRFQ
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: riluan
+ms.author: henrikan
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 6dc3d21c4e7afc579e908ac770edef7b211abdfc
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.dyn365.ops.version: AX 7.0.0
+ms.openlocfilehash: 8378a491e528c1e1166f0688e29f923a25f23eed
+ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5244111"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "7579472"
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Adja meg és hasonlítsa össze az Ajánlatkérés ajánlatait, és rendeljen hozzá szerződéseket
 
@@ -34,7 +32,7 @@ Az ajánlatot szállítóként vagy beszerzési szakemberként is beviheti. Tov�
 
 ## <a name="enter-a-reply-as-a-vendor"></a>Válasz megadása szállítóként
 
-1. Az irányítópulton válassza a **Szállítói ajánlattétel** lehetőséget.
+1. Menjen a **Szállítói együttműködés \> Munkaterületek \> Szállítói ajánlattétel** lehetőségre.
 2. Az **Új ajánlati felhívások** listán keressen egy olyan ajánlatkérés, amely éppen el lett küldve. Válassza ki azt a ajánlatkérést, amelyben át szeretné tekinteni a kért elemeket.
 3. Válassza ki az **Ajánlatkérés mellékletei** elemet a hozzáadott mellékletek áttekintéséhez.
 4. Válassza ki az **Ajánlat** elemet, hogy szerkeszthetővé tegye a mezőket. Figyelje meg, hogy az **Ajánlati folyamat** mező értéke **A szállító frissítést végez**.

@@ -2,33 +2,33 @@
 title: Szállítói számla irányelveinek beállítása
 description: Ez a témakör ismerteti a szállítói számlákkal kapcsolatos irányelvek beállítását.
 author: ShivamPandey-msft
-ms.date: 07/11/2019
+ms.date: 02/11/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: VendParameters,  SysPolicyListPage, SysPolicyParameters, SysPolicySourceDocumentRuleType, SysPolicy, SysPolicySourceDocumentRule, SysQueryForm, SysQueryTableLookUp, SysQueryPrefixLookUp, SysQueryFieldLookUp
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 339f52727b6f5a680f711cf4e6e0b8b0bc290853316fc2f2ff63164c8292d2d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 1f9707c7b283f42729126efa57e890e0df65ca8b
+ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728841"
+ms.lasthandoff: 02/12/2022
+ms.locfileid: "8109756"
 ---
 # <a name="set-up-vendor-invoice-policies"></a>Szállítói számla irányelveinek beállítása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör ismerteti a szállítói számlákkal kapcsolatos irányelvek beállítását. A Szállítói számlára vonatkozó irányelvek akkor futnak, amikor a szállítói számla oldal használatával ad fel egy szállítói számlát, és amikor megnyitja a szállítói számlára vonatkozó irányelv megszegéseinek lapját. A szállítói számla munkafolyamatát is beállíthatja úgy, hogy a valahányszor számlát küld egy munkafolyamathoz, futtatja a szállítói számlára vonatkozó irányelveket. 
+Ez a témakör ismerteti a szállítói számlákkal kapcsolatos irányelvek beállítását. A szállítói számlákra vonatkozó irányelvek akkor futnak le, amikor szállítói számlát **a** **Szállítói számla lapon felad, és amikor megnyitja a szállítói számla irányelvének megszegése lapot.** A szállítói számla munkafolyamatát is beállíthatja úgy, hogy a valahányszor számlát küld egy munkafolyamathoz, futtatja a szállítói számlára vonatkozó irányelveket. 
 
 - A szállítói számla irányelvek nem vonatkoznak azokra a számlákra, amelyek a számlajegyzékben vagy a számlanaplóban jöttek létre.  
-- A számlaegyeztetés érvényesítése nem használja a szállítói számla irányelveket, ehelyett egy Kötelezettségek paraméterei oldalt hoz létre.  
-- Ez a felvétel az USMF bemutatócéget használja. A kötelezettségeket kezelő vezető vagy a könyvelésért felelős vezető ezeket a lépéseket hajtja végre. Mielőtt elkezdené a beállítást, győződjön meg arról, hogy a Számlaegyeztetés konfigurációs kulcs be van állítva.
+- A számlaegyeztetés érvényesítése nem használ szállítói számla irányelveket, **hanem a Kötelezettségek paraméterei lapon van beállítva**.  
+- Ez a felvétel az USMF bemutatócéget használja. A kötelezettségeket kezelő vezető vagy a könyvelésért felelős vezető ezeket a lépéseket hajtja végre. Mielőtt hozzákezd, győződjön meg arról, hogy ki van **választva a Számlaegyeztetés** konfigurációs kulcs.
 
 
 ## <a name="prepare-to-create-vendor-invoice-policies"></a>Felkészülés a szállítói számlára vonatkozó irányelvek létrehozására
@@ -56,7 +56,7 @@ Ez a témakör ismerteti a szállítói számlákkal kapcsolatos irányelvek be�
 2. Válassza az **Új** lehetőséget.
 3. Töltse ki a **Név** és a **Leírás** mezőt.
 4. Csukja be vagy bontsa ki az **Irányelv szervezetei** szakaszt.
-5. A fán válassza a **Contoso Entertainment System USA** lehetőséget.
+5. A fán válassza ki a **Contoso Entertainment System USA** lehetőséget.
 6. Válassza a **Hozzáadás** lehetőséget.
 7. Csukja be vagy bontsa ki az **Irányelvszabályok** szakaszt.
 8. Válassza ki az **Irányelvszabály létrehozása** lehetőséget.

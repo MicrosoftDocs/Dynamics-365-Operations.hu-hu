@@ -2,11 +2,9 @@
 title: Tárgyi eszközök kivezetése selejtként
 description: Ez a témakör azt mutatja be, hogyan lehet kiküszöbölni a tranzakciókat olyan tárgyi eszközök esetében, amelyek selejtként kerültek kivezetésre.
 author: moaamer
-manager: Ann Beebe
 ms.date: 08/14/2019
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: TaxTable
 audience: Application User
@@ -17,12 +15,12 @@ ms.search.region: Global
 ms.author: roschlom
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
-ms.openlocfilehash: 20f5fe0f8f2654df5027c363ebf5922f8344d928
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 90eb791bae2bbe70cf9fe7127a98962305449e1d0b370cfa001afbd3654046ec
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5241122"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6752918"
 ---
 # <a name="dispose-of-a-fixed-asset-as-scrap"></a>Tárgyi eszközök kivezetése selejtként
 
@@ -45,7 +43,7 @@ Ez a témakör azt mutatja be, hogyan lehet kiküszöbölni a tranzakciókat oly
 A tárgyi eszköz selejtezése előtt létre kell hoznia azokat a főkönyvi számlákat, amelyek a tárgyi eszköz beszerzési értékéhez, az aktuális évi értékcsökkenéshez, az előző évek értékcsökkenéséhez és az eszköz NKÉ-jéhez tartoznak. A tárgyieszköz-tranzakciók típusai a **Tárgyi eszközök feladási profiljai** lapon láthatók. Nyissa meg a **Tárgyi eszközök \> Beállítások \> Tárgyieszköz-feladási profilok** menüt, majd a **Selejtezés** gyorslapon válassza ki a **Selejt** lehetőséget a rács fölötti mezőben. A következő ábra a tárgyieszköz-tranzakciótípusok listáját mutatja a **Tárgyieszköz-feladási profilok** oldalon.
 
 
-[![Eszköz selejtezése selejtként, 1. ábra](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
+[![Eszköz selejtezése, 1. ábra.](./media/Fixed_asset_Disposal_scrap_scenario_1.png)](./media/Fixed_asset_Disposal_scrap_scenario_1.png)
 
 A következő példában a tárgyi eszköz a 2018. január 1-én került beszerzésre, és azt 2019 március 31-én selejtezték le.
 
@@ -60,27 +58,27 @@ Nettó könyv szerinti érték = Beszerzési ár – értékcsökkenés
 
 Ebben a példában a tárgyi eszköz beszerzése és avultatása 15 hónapig, 2018 januárjától 2019 márciusáig tartott. Ennek megfelelően az eszköz NKÉ-je 9000,00 USD (24 000,00 USD – 15 000,00 USD).
 
-[![Tárgyi eszköz avultatása példa](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
+[![Tárgyi eszköz avultatása példa.](./media/Fixed_asset_Disposal_scrap_scenario_2.png)](./media/Fixed_asset_Disposal_scrap_scenario_2.png)
 
 
 A kivezetési napló létrehozásához nyissa meg a **Tárgyi eszközök \> Naplóbejegyzések \> Tárgyi eszközök naplója** lehetőséget, majd a műveleti ablaktáblán válassza a **Sorok** lehetőséget. Válassza a **Kivezetés – selejt** lehetőséget, majd válassza ki a tárgyi eszköz azonosítóját. Az eszköz teljes mértékű kivezetéséhez ne írjon be értéket **Terhelés** vagy a **Jóváírás** mezőbe.
 
-[![Tárgyi eszközök naplója](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
+[![Tárgyi eszközök naplója.](./media/Fixed_asset_Disposal_scrap_scenario_3.png)](./media/Fixed_asset_Disposal_scrap_scenario_3.png)
 
 A tárgyi eszközök kivezetési tranzakciója a következő módon módosítja a tárgyi eszköz könyvének mezőértékeit:
 
 - Az **Egyenleg** szakaszban az **Állapot** mező a **selejtezettre** módosul.
 - A **Kiadás** szakaszban a **Kivezetés dátuma** mező az eszköz selejtezésének dátumát adja meg.
 
-[![Tárgyieszköz-napló részletei](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
+[![Tárgyieszköz-napló részletei.](./media/Fixed_asset_Disposal_scrap_scenario_4.png)](./media/Fixed_asset_Disposal_scrap_scenario_4.png)
 
 A következő ábra a tárgyi eszköz egyenlegét jeleníti meg.
 
-[![Tárgyieszköz egyenleg](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
+[![Tárgyieszköz-egyenleg.](./media/Fixed_asset_Disposal_scrap_scenario_5.png)](./media/Fixed_asset_Disposal_scrap_scenario_5.png)
 
 A következő ábrán egy feladott bizonylat látható.
 
-[![Nettó könyv szerinti érték](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
+[![Könyv szerinti nettó érték.](./media/Fixed_asset_Disposal_scrap_scenario_6.png)](./media/Fixed_asset_Disposal_scrap_scenario_6.png)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

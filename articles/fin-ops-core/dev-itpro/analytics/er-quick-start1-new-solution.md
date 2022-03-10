@@ -9,18 +9,20 @@ ms.technology: ''
 ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.custom: 220314
+ms.custom:
+- "220314"
+- intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 986beb6d46ac69192206c86fc3660c2e2345d6a9
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
-ms.translationtype: HT
+ms.openlocfilehash: 36998d299e166709778bfaa7bfd0d8980890d4fe
+ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5743727"
+ms.lasthandoff: 02/17/2022
+ms.locfileid: "8323842"
 ---
 # <a name="design-a-new-er-solution-to-print-a-custom-report"></a>Új ER-megoldás tervezése egyéni jelentés nyomtatásához
 
@@ -119,19 +121,19 @@ A következő lépések áttekintik, hogy a Rendszergazda, az Elektronikus jelen
 
 - [További erőforrások](#References)
 
-Ebben a példában új ER-megoldást hoz létre a [Kérdőív](https://docs.microsoft.com/dynamics365/human-resources/hr-learning-questionnaires) modulhoz. Ezzel az új ER-megoldással jelentést tervezhet úgy, hogy Microsoft Excel-munkalapot használ sablonként. Ezt követően létrehozhatja a **Kérdőív** jelentést Excel- vagy PDF-formátumban, valamint elkészítheti a meglévő SQL Server Reporting Services- (SSRS) jelentéseket. Az új jelentést igény szerint módosíthatja később. Nincs szükség kódolásra.
+Ebben a példában új ER-megoldást hoz létre a [Kérdőív](../../../human-resources/hr-learning-questionnaires.md) modulhoz. Ezzel az új ER-megoldással jelentést tervezhet úgy, hogy Microsoft Excel-munkalapot használ sablonként. Ezt követően létrehozhatja a **Kérdőív** jelentést Excel- vagy PDF-formátumban, valamint elkészítheti a meglévő SQL Server Reporting Services- (SSRS) jelentéseket. Az új jelentést igény szerint módosíthatja később. Nincs szükség kódolásra.
 
 1. A meglévő jelentés futtatásához lépjen a **Kérdőív** \> **Tervezés** \> **Kérdőívek jelentése** részre.
 
-    ![A Kérdőívek jelentése menüelem kiválasztása a Kérdőív modulban a meglévő SSRS-jelentés futtatásához](./media/er-quick-start1-application-menu-origin.png)
+    ![A Kérdőívek jelentése menüelem kiválasztása a Kérdőív modulban a meglévő SSRS-jelentés futtatásához.](./media/er-quick-start1-application-menu-origin.png)
 
 2. A **Kérdőívek jelentése** párbeszédpanelen adja meg a kiválasztási feltételeket. Alkalmazzon egy szűrőt, hogy a jelentés csak a **SBCCrsExam** kérdőívet tartalmazza.
 
-    ![A kiválasztási feltételek megadása a Kérdőívek jelentése párbeszédpanelen](./media/er-quick-start1-ssrs-report-dialog.png)
+    ![A kiválasztási feltételek megadása a Kérdőívek jelentése párbeszédpanelen.](./media/er-quick-start1-ssrs-report-dialog.png)
 
 A következő ábrán az **SBCCrsExam** kérdőívhez SSRS-jelentés létrehozott változata látható.
 
-![Létrehozott SSRS-jelentés](./media/er-quick-start1-ssrs-report.png)
+![Létrehozott SSRS-jelentés.](./media/er-quick-start1-ssrs-report.png)
 
 ## <a name="configure-the-er-framework"></a><a name="ConfigureFramework"></a>ER-keretrendszer konfigurálása
 
@@ -179,13 +181,13 @@ További információért az ER-konfigurációszolgáltatókkal kapcsolatban tek
 
 ## <a name="design-a-domain-specific-data-model"></a><a name="DesignModel"></a>Tartományspecifikus adatmodell kialakítása
 
-Létre kell hoznia egy olyan új ER-konfigurációt, amely tartalmaz egy [adatmodell](general-electronic-reporting.md#data-model-and-model-mapping-components) összetevőt a **Kérdőív** üzleti tartományhoz. Ez az adatmodell lesz az adatforrás, amikor megtervezi az ER-formátumot a **Kérdőív** jelentés létrehozásához.
+Olyan új ER-konfigurációt kell létrehoznia, amely a Kérdőív üzleti tartomány adatmodell-összetevőjét **tartalmazza**. Ez az adatmodell lesz az adatforrás, amikor megtervezi az ER-formátumot a **Kérdőív** jelentés létrehozásához.
 
 Az [Új adatmodell-konfiguráció importálása](#ImportDataModel) szakasz lépéseivel importálhatja a szükséges adatmodellt a megadott XML-fájlból. Egy másik megoldás, hogy az [Új adatmodell-konfiguráció létrehozása](#DesignDataModel) szakasz lépéseit követve az alapoktól kezdve tervezi meg az adatmodellt.
 
 ### <a name="import-a-new-data-model-configuration"></a><a name="ImportDataModel"></a>Új adatmodell-konfiguráció importálása
 
-1. Töltse le a [Questionnaires model.version.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) fájlt, és mentse a helyi számítógépen.
+1. Töltse le a [Questionnaires model.version.1.xml](https://download.microsoft.com/download/b/6/3/b633bd34-d200-4422-96d9-8f62eb5218f8/Questionnaires_model.version.1.xml) fájlt, és mentse a helyi számítógépen.
 2. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 3. Az **Elektronikus jelentéskészítés** munkaterületen válassza ki a **Jelentéskészítési konfiguráció** lehetőséget.
 4. A Műveleti ablaktáblában válassza az **Átváltás** \> **Betöltés XML-fájlból** elemet.
@@ -271,7 +273,7 @@ A folytatáshoz ugorja át a következő eljárást: [Új adatmodell-konfigurác
 
     A következő ábra a befejezett szerkeszthető adatmodellt mutatja az **Adatmodell-tervező** oldalon.
 
-    ![Konfigurált adatmodell az ER adatmodell-tervezőjében](./media/er-quick-start1-model2.png)
+    ![Konfigurált adatmodell az ER-adatmodell tervezőjében.](./media/er-quick-start1-model2.png)
 
 7. Mentse el a módosításokat.
 8. Zárja be az **Adatmodell-tervező** oldalt.
@@ -285,7 +287,7 @@ A folytatáshoz ugorja át a következő eljárást: [Új adatmodell-konfigurác
 
 A konfiguráció 1. verziójának állapota **Piszkozatról** **Befejezett** értékre módosul. Az 1. verzió a későbbiekben már nem módosítható. Ez a verzió tartalmazza a konfigurált adatmodellt, és a többi ER-konfiguráció alapjaként használható. A konfiguráció 2. változata létrejön **Piszkozat** állapottal. Ezt a verziót a **Kérdőív** adatmodell módosításával szerkesztheti.
 
-![A szerkeszthető ER-konfiguráció verziói a Konfigurációk oldalon](./media/er-quick-start1-model-configuration.png)
+![A szerkeszthető konfiguráció verziói a Konfigurációk oldalon.](./media/er-quick-start1-model-configuration.png)
 
 További információ az ER-konfigurációk verziószámozásáról: [Elektronikus jelentéskészítés (ER) áttekintése](general-electronic-reporting.md#component-versioning).
 
@@ -294,13 +296,13 @@ További információ az ER-konfigurációk verziószámozásáról: [Elektronik
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a><a name="DesignMapping"></a>Modell-leképezés tervezése a konfigurált adatmodellhez
 
-Elektronikus jelentések fejlesztője szerepkörű felhasználóként létre kell hoznia egy olyan új ER-konfigurációt, amely [modell-leképezési](general-electronic-reporting.md#data-model-and-model-mapping-components) összetevőt tartalmaz a **Kérdőív** adatmodellhez. Mivel ez az összetevő a Finance konfigurált adatmodelljét valósítja, Finance-specifikus. A modell-hozzárendelési összetevőt úgy kell konfigurálni, hogy megadja azokat az alkalmazásobjektumokat, amelyeket a futásidőben használni kell a konfigurált adatmodell alkalmazásadatokkal való feltöltéséhez. Ennek a feladatnak a végrehajtásához ismernie kell a **Kérdőív** üzleti terület adatszerkezetét megvalósítási részleteit a Finance rendszerben.
+Az Elektronikus jelentéskészítő fejlesztő szerepkör felhasználójaként létre kell hoznia egy új ER-konfigurációt, amely tartalmazza a kérdőív adatmodelljének modellleképezési **összetevőjét**. Mivel ez az összetevő a Finance konfigurált adatmodelljét valósítja, Finance-specifikus. A modell-hozzárendelési összetevőt úgy kell konfigurálni, hogy megadja azokat az alkalmazásobjektumokat, amelyeket a futásidőben használni kell a konfigurált adatmodell alkalmazásadatokkal való feltöltéséhez. Ennek a feladatnak a végrehajtásához ismernie kell a **Kérdőív** üzleti terület adatszerkezetét megvalósítási részleteit a Finance rendszerben.
 
 Az alábbi [Új modell-leképezési konfiguráció importálása](#ImportModelMapping) szakasz lépéseivel importálhatja a szükséges modell-leképezési konfigurációt a megadott XML-fájlból. Egy másik megoldás, hogy az [Új modell-leképezés létrehozása](#CreateModelMapping) szakasz lépéseit követve az alapoktól kezdve tervezi meg a modell-leképezést.
 
 ### <a name="import-a-new-model-mapping-configuration"></a><a name="ImportModelMapping"></a>Új modell-leképezési konfiguráció importálása
 
-1. Töltse le a [Questionnaires mapping.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) fájlt, és mentse a helyi számítógépen.
+1. Töltse le a [Questionnaires mapping.version.1.1.xml](https://download.microsoft.com/download/7/b/2/7b258e4e-4bd5-46a4-8114-27419ae4acd8/Questionnaires_mapping.version.1.1.xml) fájlt, és mentse a helyi számítógépen.
 2. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 3. Az **Elektronikus jelentéskészítés** munkaterületen válassza ki a **Jelentéskészítési konfiguráció** lehetőséget.
 4. A Műveleti ablaktáblában válassza az **Átváltás** \> **Betöltés XML-fájlból** elemet.
@@ -366,7 +368,7 @@ Az adatforrásokat konfigurálni kell, hogy elérjék a kérdőív részleteit t
     2. Válassza a **Hozzáadás** lehetőséget.
     3. A párbeszédpanel **Név** mezőjébe írja be a következőt: **\$ResultGroup**.
     4. Válassza a **Képlet szerkesztése** elemet.
-    5. Az [ER-receptúraszerkesztő](general-electronic-reporting-formula-designer.md) **Receptúra** mezőjében adja meg a **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** képletet a KMCollection és a KMQuestionResultGroup tábla közötti egy-a-többhöz kapcsolat [elérési útjának](er-formula-language.md#paths) használatához.
+    5. Az [ER-receptúraszerkesztő](general-electronic-reporting-formula-designer.md) **Receptúra** mezőjében adja meg a **FIRSTORNULL(\@.'\<Relations'.KMQuestionResultGroup)** képletet a KMCollection és a KMQuestionResultGroup tábla közötti egy-a-többhöz kapcsolat [elérési útjának](er-formula-language.md#Paths) használatához.
     6. Válassza a **Mentés** gombot, majd zárja be a receptúraszerkesztőt.
     7. Az új számított mező hozzáadásához kattintson az **OK** gombra.
 
@@ -439,7 +441,7 @@ Ha bizonyos adatforrásokat úgy szeretne konfigurálni, hogy olyan értékeket 
 5. Zárja be a **Szöveg fordítása** párbeszédpanelt.
 6. Válassza a **Mégse** lehetőséget.
 
-![ER-címkék hozzáadása szerkeszthető modell-leképezéshez](./media/er-quick-start1-adding-labels.png)
+![ER-címkék hozzáadása szerkeszthető modell-leképezéshez.](./media/er-quick-start1-adding-labels.png)
 
 Eddig csak az alapértelmezett nyelvhez vett fel ER-címkéket. További információ az ER-címkék más nyelvekre való lefordításáról: [Többnyelvű jelentések tervezése](er-design-multilingual-reports.md).
 
@@ -473,7 +475,7 @@ Mivel a különböző forrásokhoz többször át kell alakítani a felsorolás 
     8. Válassza a **Mentés** gombot, majd zárja be a receptúraszerkesztőt.
     9. Az új adatforrás hozzáadásához kattintson az **OK** gombra.
 
-![Konfigurált modell-leképezés az ER modell-leképezésének tervezőjében](./media/er-quick-start1-added-data-sources.png)
+![Konfigurált modell-leképezés az ER-modell leképezésének tervezőjében.](./media/er-quick-start1-added-data-sources.png)
 
 #### <a name="bind-data-sources-to-data-model-fields"></a><a name="AddMmBindings1"></a>Adatforrások kötése az adatmodell mezőihez
 
@@ -524,7 +526,7 @@ Ha meg szeretné adni, hogy az adatmodell hogyan legyen feltöltve az alkalmazá
 
     A következő ábra a **Modell-leképezés tervező** oldal konfigurált modell-leképezésének végleges állapotát mutatja.
 
-    ![Teljesen konfigurált modell-leképezés az ER modell-leképezésének tervezőjében](./media/er-quick-start1-mapping2.png)
+    ![Teljesen konfigurált modell-leképezés az ER-modell leképezésének tervezőjében.](./media/er-quick-start1-mapping2.png)
 
 7. Mentse el a módosításokat.
 8. Zárja be a **Modell-hozzárendelési tervező** lapot.
@@ -538,7 +540,7 @@ Ha meg szeretné adni, hogy az adatmodell hogyan legyen feltöltve az alkalmazá
 
 A konfiguráció 1.1. verziójának állapota **Piszkozatról** **Befejezett** értékre módosul. Az 1.1. verzió a későbbiekben már nem módosítható. Ez a verzió tartalmazza a konfigurált modell-leképezést, és a többi ER-konfiguráció alapjaként használható. A konfiguráció 1.2. változata létrejön **Piszkozat** állapottal. Ezt a verziót a **Kérdőív leképezése** konfiguráció módosításával szerkesztheti.
 
-![A szerkeszthető ER-konfiguráció verziói a Konfigurációk oldalon](./media/er-quick-start1-mapping-configuration.png)
+![A szerkeszthető ER-konfiguráció verziói a Konfigurációk oldalon.](./media/er-quick-start1-mapping-configuration.png)
 
 > [!NOTE]
 > A konfigurált modell-leképezés a **Kérdőív** üzleti területet képviselő absztrakt adatmodell Finance-specifikus megvalósítása.
@@ -547,32 +549,32 @@ A konfiguráció 1.1. verziójának állapota **Piszkozatról** **Befejezett** �
 
 Az ER keretrendszer előre definiált sablonok használatával készít jelentéseket Microsoft Office-formátumban (Excel-munkafüzetek vagy Word-dokumentumok). A szükséges jelentés létrehozása során a program a konfigurált adatfolyamnak megfelelően kitölti a szükséges adatokkal a sablont. Ennek megfelelően először egy sablont kell terveznie a saját egyéni jelentéséhez. Ezt a sablont Excel-munkafüzetként kell megtervezni; a szerkezet képezi le az egyéni jelentés elrendezését. Minden olyan Excel-tételt meg kell neveznie, amelyet fel szeretne tölteni a szükséges adatokkal.
 
-1. Töltse le a [Questionnaires report template.xslx](https://go.microsoft.com/fwlink/?linkid=851448) fájlt, és mentse a helyi számítógépen.
+1. Töltse le a [Questionnaires report template.xlsx](https://download.microsoft.com/download/3/8/2/382c3cf0-87bb-473f-b7bb-3015b4facb74/Questionnaires_report_template.xlsx) fájlt, és mentse a helyi számítógépen.
 2. Nyissa meg a fájlt az Excel programban, és tekintse át a munkafüzet struktúráját.
 
 Ahogy a következő ábrán látható, a letöltött sablon úgy lett kialakítva, hogy olyan konkrét kérdőíveket lehessen vele kinyomtatni, amelyek tartalmazzák a kérdőív kérdéseit és a megfelelő válaszokat.
 
-![Excel-sablon a megadott kérdőívek nyomtatásához](./media/er-quick-start1-template-layout.png)
+![Excel-sablon a megadott kérdőívek nyomtatásához.](./media/er-quick-start1-template-layout.png)
 
 A sablonhoz Excel-neveket adtunk a kérdőív részleteinek kitöltéséhez. Az Excel-neveket a Névkezelővel ellenőrizheti.
 
-![A megadott Excel-sablonban lévő Excel-nevek ellenőrzése a Névkezelővel](./media/er-quick-start1-template-names.png)
+![A megadott Excel-sablonban lévő Excel-nevek ellenőrzése a Névkezelővel.](./media/er-quick-start1-template-names.png)
 
 A jelentés címkéit angol nyelvű rögzített szövegként adtuk hozzá. A jelentés címkéit olyan új Excel-nevekre cserélheti, amelyek az ER-formátum [címkéivel](#AddMmLabels) töltik ki nyelvtől függő szöveggel a címkéket (ahogy a konfigurált modell-leképezés nyelvtől függő kifejezései esetében is tette). Ebben az esetben az ER-címkéket szerkeszthető ER-formátumban kell megadni.
 
 A következő ábrán látható egyéni jelentés fejléce úgy lett megadva, hogy az Excel számára engedélyezze a lapozást.
 
-![Egyéni jelentés fejléce a megadott Excel-sablonban](./media/er-quick-start1-template-header.png)
+![Egyéni jelentés fejléce a megadott Excel-sablonban.](./media/er-quick-start1-template-header.png)
 
 ## <a name="design-a-format"></a><a name="DesignFormat"></a>Formátum tervezése
 
-Elektronikus jelentéskészítési funkció tanácsadója szerepkörű felhasználóként Önnek kell olyan új ER-konfigurációt létrehoznia, amely tartalmaz [formátum](general-electronic-reporting.md#FormatComponentOutbound) összetevőt. A formátum összetevőt úgy kell konfigurálni, hogy megadhatja, hogy a program milyen módon töltse ki a futásidőben a jelentés sablonját a szükséges adatokkal.
+Elektronikus jelentéskészítési funkció tanácsadója szerepkörű felhasználóként Önnek kell olyan új ER-konfigurációt létrehoznia, amely tartalmaz formátum összetevőt. A formátum összetevőt úgy kell konfigurálni, hogy megadhatja, hogy a program milyen módon töltse ki a futásidőben a jelentés sablonját a szükséges adatokkal.
 
 A [Megtervezett formátumkonfiguráció importálása](#FormatImport) szakasz lépéseivel importálhatja a szükséges formátumot a megadott XML-fájlból. Egy másik megoldás, hogy az [Új formátumkonfiguráció létrehozása](#FormatCreate) szakasz lépéseit követve az alapoktól kezdve tervezi meg a formátumot.
 
 ### <a name="import-a-designed-format-configuration"></a><a name="FormatImport"></a>Megtervezett formátumkonfiguráció importálása
 
-1. Töltse le a [Questionnaires format.version.1.1.xml](https://go.microsoft.com/fwlink/?linkid=851448) fájlt, és mentse a helyi számítógépen.
+1. Töltse le a [Questionnaires format.version.1.1.xml](https://download.microsoft.com/download/1/b/a/1ba39ec2-257a-44d8-972f-25bf7d18fb41/Questionnaires_format.version.1.1.xml) fájlt, és mentse a helyi számítógépen.
 2. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 3. Az **Elektronikus jelentéskészítés** munkaterületen válassza ki a **Jelentéskészítési konfiguráció** lehetőséget.
 4. A Művelet ablaktáblában válassza az **Átváltás** \> **Betöltés XML-fájlból** elemet.
@@ -612,11 +614,11 @@ A folytatáshoz ugorja át a következő eljárást: [Új formátumkonfiguráci�
     2. Keresse meg és válassza ki a helyileg mentett **Questionnaires report template.xslx** fájlt, és válassza a **Megnyitás** lehetőséget.
     3. A sablon importálásához kattintson az **OK** gombra.
 
-    ![Jelentéssablon importálása](./media/er-quick-start1-template-import.png)
+    ![Jelentéssablon importálása.](./media/er-quick-start1-template-import.png)
 
 Az **Excel\\File** formátumelemet a rendszer automatikusan hozzáadja gyökérelemként a szerkeszthető formátumhoz. Ezenkívül vagy az **Excel\\Range**, vagy a **Excel\\Cell** formátumelemet automatikusan hozzáadja az importált sablon valamennyi felismert Excel-nevéhez. A **Sztring** elembe beágyazott **Excel\\Header** formátumot a rendszer automatikusan hozzáadja, hogy lehessen látni az importált sablon fejlécbeállításait.
 
-![Formátumstruktúra, amely tartalmazza az automatikusan hozzáadott elemeket az ER-művelet tervezőjében](./media/er-quick-start1-template-import2.png)
+![Formátumstruktúra, amely tartalmazza az automatikusan hozzáadott elemeket az ER-művelet tervezőjében.](./media/er-quick-start1-template-import2.png)
 
 #### <a name="configure-a-format"></a><a name="ConfigureFormat"></a>Formátum konfigurálása
 
@@ -627,12 +629,12 @@ Az **Excel\\File** formátumelemet a rendszer automatikusan hozzáadja gyökére
 
     További információ a nyelvi és kulturális környezet ER-folyamathoz történő megadásáról: [Többnyelvű jelentések tervezése](er-design-multilingual-reports.md).
 
-    ![A tervezett jelentés nyelvi és kulturális beállításainak konfigurálása az ER-művelettervezőben](./media/er-quick-start1-template-format-structure1.png)
+    ![A tervezett jelentés nyelvi és kulturális beállításainak konfigurálása az ER-művelet tervezőjében.](./media/er-quick-start1-template-format-structure1.png)
 
 5. A formátumfában bontsa ki a gyökércsomópontot, majd válassza ki a **ResultsGroup** lehetőséget.
 6. A **Formátum** lap **Replikációs irány** mezőjében válassza a **Nem replikál** lehetőséget, mert egy kérdőív esetében nem várható több eredménycsoport.
 
-    ![A replikálási irány meghatározása a Tartomány formátumelemhez az ER-művelettervezőben](./media/er-quick-start1-template-format-structure2.png)
+    ![A replikálási irány meghatározása a Tartomány formátumelemhez az ER-művelet tervezőjében.](./media/er-quick-start1-template-format-structure2.png)
 
 7. Válassza a **Mentés** lehetőséget.
 
@@ -652,7 +654,7 @@ Az olyan formátumelemekhez, amelyek a létrehozott jelentések címének kitöl
 
 5. Zárja be a receptúraszerkesztőt.
 
-    ![A kötés konfigurálása a létrehozott jelentés címének kitöltéséhez](./media/er-quick-start1-add-report-title-label.png)
+    ![A kötés konfigurálása a létrehozott jelentés címének kitöltéséhez.](./media/er-quick-start1-add-report-title-label.png)
 
 Ezzel a technikával az aktuális sablon sablonnyelvtől függő összes további címke elkészíthető. Ha további információt szeretne arról, hogyan egy adott ER-konfiguráció hozzáadott címkéi hogyan fordíthatók le az összes támogatott nyelvre, tekintse át a [Többnyelvű jelentések tervezése](er-design-multilingual-reports.md) részt.
 
@@ -662,7 +664,7 @@ Ezzel a technikával az aktuális sablon sablonnyelvtől függő összes tovább
 2. Válassza ki a **Szerkesztés** opciót.
 3. Tekintse át az **Adatforrás-tulajdonságok** párbeszédpanelen lévő adatokat. Ez az adatforrás jelöli a **Kérdőívek** adatmodell-összetevő 1. verzióját, amely a **Kérdőívek modell** ER-konfigurációjában található.
 
-![A modelladatforrás tulajdonságai az ER-művelettervezőben](./media/er-quick-start1-model-data-source.png)
+![A modelladatforrás tulajdonságai az ER-művelet tervezőjében.](./media/er-quick-start1-model-data-source.png)
 
 #### <a name="bind-format-elements-to-data-source-fields"></a><a name="BindFormatElements"></a>Formátum-összetevők összekötése az adatforrás mezőivel
 
@@ -678,11 +680,11 @@ Ha meg szeretné adni, hogyan történjen egy sablon kitöltése a futásidőben
 
     A **Kérdőív** tartomány formátumeleme vertikálisan replikáltként van konfigurálva. Amikor **Rekordlista** típusú adatforráshoz kötik, a program megismétli az Excel-sablon megfelelő **Kérdőív** tartományát a kötésben lévő adatforrás minden rekordjánál.
  
-    ![A Kérdőív tartomány formátumelemének kötése a megfelelő Rekord lista adatforrásaihoz az ER-művelettervezőben](./media/er-quick-start1-bindings1.png)
+    ![A Kérdőívtartomány formátumelem kötése a megfelelő Rekordlista adatforrásaihoz az ER-művelet tervezőjében.](./media/er-quick-start1-bindings1.png)
 
     Mivel az Excel-sablon **Kérdőív** tartományának definiálása az 5–14. sor között történik, ezeket a sorokat a rendszer minden jelentett kérdőívnél megismétli.
 
-    ![Az Excel-sablon olyan sorai, amelyek egy létrehozott jelentésben a Rekord lista adatforrásainak valamennyi rekordjához megismétlődnek](./media/er-quick-start1-template-questionnaire-range.png)
+    ![Az Excel-sablon olyan sorai, amelyek egy létrehozott jelentésben a Rekordlista adatforrásainak valamennyi rekordjához megismétlődnek.](./media/er-quick-start1-template-questionnaire-range.png)
 
 8. A fennmaradó formátumelemekhez konfiguráljon hasonló kötéseket, a következő táblázatban leírt módon.
 
@@ -718,7 +720,7 @@ Ha meg szeretné adni, hogyan történjen egy sablon kitöltése a futásidőben
 
 A következő ábra a **Formátumtervező** oldal konfigurált adatkötéseinek végleges állapotát mutatja.
 
-![Konfigurált adatkötések az ER-művelettervezőben](./media/er-quick-start1-bindings2.png)
+![Konfigurált adatkötések az ER-művelet tervezőjében.](./media/er-quick-start1-bindings2.png)
 
 > [!IMPORTANT]
 > A megadott adatforrások és kötések egész gyűjteménye a konfigurált formátum formátumleképezési összetevőjét jelöli. A rendszer ezt a formátumleképezést hívja meg, amikor Ön futtatja konfigurált formátumot jelentések létrehozásához.
@@ -738,9 +740,9 @@ Most tesztelési célra futtathat egy tervezett formátumot a **Konfigurációk*
 
 [Alapértelmezés szerint](electronic-reporting-destinations.md#default-behavior) a létrejövő jelentések letölthető Excel-fájlként jelennek meg. A következő képeken a létrejövő Excel-formátumú jelentés két oldala látható.
 
-![A létrejövő Excel-formátumú jelentés példája, 1. oldal](./media/er-quick-start1-report1a.png)
+![A létrejövő Excel-formátumú jelentés példája, 1. oldal.](./media/er-quick-start1-report1a.png)
 
-![A létrejövő Excel-formátumú jelentés példája, 2. oldal](./media/er-quick-start1-report1b.png)
+![A létrejövő Excel-formátumú jelentés példája, 2. oldal.](./media/er-quick-start1-report1b.png)
 
 ## <a name="tune-a-designed-format"></a><a name="TuneFormat"></a>Megtervezett formátum finomhangolása
 
@@ -761,7 +763,7 @@ A kérdések nem megfelelő sorrendben vannak a létrejövő jelentésekben. A s
 1. A **Formátumtervező** lapon válassza a **Jelentés** gyökérelemet.
 2. A **Leképezés** lapon lévő formátumfán bontsa ki a **Report\\Questionnaire\\Question** részt.
 
-    ![A Tartomány típus Kérdés formátumeleme az ER-művelettervezőben](./media/er-quick-start1-bindings3.png)
+    ![A Tartománytípus Kérdés formátumeleme az ER-művelettervezőben.](./media/er-quick-start1-bindings3.png)
 
 3. A **Leképezés** lapon válassza a **model.Questionnaire** lehetőséget.
 4. Válassza a **Hozzáadás** \> **Functions\\Calculated field** lehetőséget, majd a **Név** mezőben adja meg, hogy **OrderedQuestions**.
@@ -774,7 +776,7 @@ A kérdések nem megfelelő sorrendben vannak a létrejövő jelentésekben. A s
 11. Válassza a **Kötés** lehetőséget, majd győződjön meg arról, hogy az aktuális **model.Questionnaire.Questions** elérési utat a rendszer az új **model.Questionnaire.OrderedQuestions** elérési útra cserélte a beágyazott elemek összes kötésében.
 12. Válassza a **Mentés** lehetőséget.
 
-![A Kérdés formátumú elem kötése a konfigurált OrderedQuestions-adatforráshoz az ER-művelettervezőben](./media/er-quick-start1-bindings4.png)
+![A Kérdés formátumelem kötése a konfigurált OrderedQuestions-adatforráshoz az ER-művelettervezőben.](./media/er-quick-start1-bindings4.png)
 
 ### <a name="run-a-modified-format-from-er"></a><a name="RunFormatFromER2"></a>Módosított formátum futtatása az ER-ből
 
@@ -788,7 +790,7 @@ Most már futtathat módosított formátumokat tesztelési célból az ER-keretr
 
 A következő képen egy olyan Excel-formátumú létrehozott jelentés látható, amelyen helyes sorrendben vannak a kérdések.
 
-![Excel-formátumú létrehozott jelentés, amely helyes sorrendbe rendezett kérdéseket tartalmaz](./media/er-quick-start1-report2.png)
+![Excel-formátumú létrehozott jelentés, amely helyes sorrendbe rendezett kérdéseket tartalmaz.](./media/er-quick-start1-report2.png)
 
 ### <a name="complete-the-format-design"></a><a name="CompleteFormat"></a>A formátum kialakításának befejezése
 
@@ -799,7 +801,7 @@ A következő képen egy olyan Excel-formátumú létrehozott jelentés láthat�
 
 A konfiguráció 1.1. verziójának állapota **Piszkozatról** **Befejezett** értékre módosul. Az 1.1. verzió a későbbiekben már nem módosítható. Ez a verzió a konfigurált formátumot tartalmazza, és egyéni jelentés nyomtatására is használható. A konfiguráció 1.2. változata létrejön **Piszkozat** állapottal. Ezt a verziót a **Kérdőív** jelentés formátumának módosításával szerkesztheti.
 
-![A szerkeszthető ER-konfiguráció verziói a Konfigurációk oldalon](./media/er-quick-start1-format-configuration.png)
+![A szerkeszthető ER-konfiguráció a Konfigurációk oldalon.](./media/er-quick-start1-format-configuration.png)
 
 > [!NOTE]
 > A konfigurált formátum az Ön kialakítása a **Kérdőív** jelentéshez, és nincs kapcsolata Finance-specifikus összetevőkkel.
@@ -1049,7 +1051,7 @@ Készítse el a felhasználók számára új menüelemet elérhetővé tevő pro
 
 1. Lépjen a **Kérdőív** \> **Tervezés** \> **Kérdőívek jelentése (ER használatával)** részre.
 
-    ![A Kérdőívek jelentése (ER használatával) menüelem kiválasztása a Kérdőív modulban a konfigurált ER-formátum futtatásához](./media/er-quick-start1-application-menu-modified.png)
+    ![A Kérdőívek jelentése (ER használatával) menüelem kiválasztása a Kérdőív modulban a konfigurált ER-formátum futtatásához.](./media/er-quick-start1-application-menu-modified.png)
 
 2. A párbeszédpanel **Formátum leképezése** mezőjében válassza a **Kérdőívek jelentése** lehetőséget.
 3. Válassza ki az **OK** lehetőséget.
@@ -1057,7 +1059,7 @@ Készítse el a felhasználók számára új menüelemet elérhetővé tevő pro
 5. A szűrési beállítás megerősítéséhez kattintson az **OK** lehetőségre.
 6. A jelentés futtatásához válassza az **OK** lehetőséget.
 
-    ![A kiválasztási feltételek megadása az Elektronikus jelentés párbeszédpanelen](./media/er-quick-start1-report-run-dialog-page.png)
+    ![A kiválasztási feltételek megadása az Elektronikus jelentés párbeszédpanelen.](./media/er-quick-start1-report-run-dialog-page.png)
 
 7. Tekintse át a létrehozott jelentést.
 
@@ -1082,7 +1084,7 @@ A konfigurált ER megoldást módosíthatja úgy, hogy azt az adatszolgáltató 
 
 A hozzáadott adatforrás információt tartalmaz a futó ER-formátumleképezés rekordazonosítójáról.
 
-![Hozzáadott adatforrás az ER-modell-leképezés tervezőjében](./media/er-quick-start1-mapping3.png)
+![Hozzáadott adatforrás az ER-modell-leképezés tervezőjében.](./media/er-quick-start1-mapping3.png)
 
 #### <a name="add-a-data-source-to-access-er-format-mapping-records"></a><a name="AddDataSource2"></a>Adatforrások hozzáadása az ER-formátum leképezési rekordjaihoz való hozzáféréshez
 
@@ -1117,7 +1119,7 @@ Folytassa a kiválasztott modell-leképezés szerkesztését, hogy megadhassa az
 
 Mivel a **FormatName** mezőt használta, a konfigurált modell-leképezés megjeleníti egy olyan ER-formátum nevét, amely ezt a modellt hívja meg a végrehajtás során.
 
-![Az adatmodell mezőjének kötése az ER-modell-leképezés tervezőjében hozzáadott adatforrás metódusához](./media/er-quick-start1-mapping4.png)
+![Az adatmodell mezőjének kötése az ER-modell-leképezés tervezőjében hozzáadott adatforrás metódusához.](./media/er-quick-start1-mapping4.png)
 
 #### <a name="complete-the-design-of-the-model-mapping"></a><a name="CompleteModelMapping2"></a>A modell-leképezés kialakításának befejezése
 
@@ -1154,7 +1156,7 @@ A konfigurált ER-formátum módosítható úgy, hogy a neve megjelenjen az ER-f
 
 A konfigurált formátum már módosult, így a rendszer a létrehozott jelentés láblécébe írja be a nevét, a **Footer\\String** elem használatával.
 
-![A Lábléc formátumelem hozzáadása a konfigurált formátumhoz az ER-művelettervezőben](./media/er-quick-start1-template-format-structure3.png)
+![A Lábléc formátumelem hozzáadása a konfigurált formátumhoz az ER-művelettervezőben.](./media/er-quick-start1-template-format-structure3.png)
 
 #### <a name="complete-the-format-design"></a><a name="CompleteFormat2"></a>A formátum kialakításának befejezése
 
@@ -1176,7 +1178,7 @@ A konfiguráció 1.2. verziójának állapota **Piszkozatról** **Befejezett** �
 
 Figyelje meg, hogy a létrehozott jelentés lábléce a létrehozásához használt ER-formátum nevét tartalmazza.
 
-![A létrehozott jelentés Excel-formátumban](./media/er-quick-start1-report4.png)
+![A létrehozott jelentés Excel-formátumban.](./media/er-quick-start1-report4.png)
 
 ### <a name="run-a-format-from-er"></a><a name="RunFormatFromER3"></a>Formátum futtatása az ER-ből
 
@@ -1197,7 +1199,7 @@ Figyelje meg, hogy a létrehozott jelentés lábléce nem tartalmazza a létreho
 3. A **Fájl célja** gyorslapon állítsa be a **Képernyő** [célt](er-destination-type-screen.md) ahhoz a **Jelentés** formátum-összetevőhöz, amelyet [hozzáadott](#AddFormatRootElement) a konfigurált **Jelentés a kérdőívről** ER-formátum gyökérelemeként.
 4. A **PDF-konverzió beállításai** gyorslapon konfigurálja a célhelyet a jelentés **Fekvő** tájolást használó [PDF-formátumra](electronic-reporting-destinations.md#OutputConversionToPDF) történő konvertálásához.
 
-![Az egyéni Képernyő cél konfigurálása az ER-formátumhoz az Elektronikus jelentéskészítés célja oldalon](./media/er-quick-start1-destination.png)
+![Az egyéni Képernyő cél konfigurálása az ER-formátumhoz az Elektronikus jelentéskészítés célja oldalon.](./media/er-quick-start1-destination.png)
 
 ### <a name="run-a-format-from-the-application-to-preview-it-as-a-pdf-document"></a><a name="RunFormatFromApp3"></a>Formátum futtatása az alkalmazásból PDF-dokumentumként történő előzetes verzió készítéséhez
 
@@ -1209,12 +1211,12 @@ Figyelje meg, hogy a létrehozott jelentés lábléce nem tartalmazza a létreho
 
     A **Célok** gyorslapon figyelje meg, hogy a **Kimenet** mező értéke **Képernyő**. Ha módosítani szeretné a konfigurált célt, válassza a **Módosítás** lehetőséget.
 
-    ![ER-jelentés konfigurált cél módosítását lehetővé tevő párbeszédpanelje futásidőben](./media/er-quick-start1-run-settings.png)
+    ![Az ER-jelentés konfigurált cél módosítását lehetővé tevő párbeszédpanelje futásidőben.](./media/er-quick-start1-run-settings.png)
 
 6. A jelentés futtatásához válassza az **OK** lehetőséget.
 7. Tekintse meg a létrehozott jelentést PDF-formátumban.
 
-    ![A létrehozott PDF-formátumú jelentés képernyőn látható előnézete](./media/er-quick-start1-preview-PDF.png)
+    ![A létrehozott PDF-formátumú jelentés képernyőn látható előnézete.](./media/er-quick-start1-preview-PDF.png)
 
 ## <a name="additional-resources"></a><a name="References"></a>További erőforrások
 

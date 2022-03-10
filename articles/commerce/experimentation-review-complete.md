@@ -2,11 +2,9 @@
 title: Változat előléptetése és egy kísérlet végrehajtása
 description: Ez a témakör azt mutatja be, hogyan lehet egy sikeres változatot előléptetni és egy kísérletet végrehajtani a Dynamics 365 Commerce rendszerben.
 author: sushma-rao
-manager: AnnBe
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-365-retail
 ms.technology: ''
 audience: Application User
 ms.reviewer: josaw
@@ -17,18 +15,18 @@ ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: AX 10.0.13
-ms.openlocfilehash: 25cccbeae5c263a3032eeebf2fc5335e22c1415a
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: 48d66e84ce52e77e83843853e3d528f9394a7676cadc4a4be5198065696dd10e
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "5009925"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6738746"
 ---
 # <a name="promote-a-variation-and-complete-an-experiment"></a>Változat előléptetése és egy kísérlet végrehajtása
 
 Ez a témakör azt mutatja be, hogyan lehet előléptetni a kísérletek legjobb eredményeit hozó változatokat, valamint a kísérleteket végrehajtani. A következő ábra azokat a lépéseket mutatja be, amelyekkel egy e-kereskedelmi webhelyhez tartozó kísérletet lehet létrehozni és futtatni a Dynamics 365 Commerce rendszerben. A további lépések külön témákban szerepelnek.
 
-[ ![Kísérletezés felhasználói interakciósorozata – Áttekintés és befejezés](./media/experimentation_review_complete.svg) ](./media/experimentation_review_complete.svg#lightbox)
+[ ![Kísérletezés felhasználói interakciósorozata – Áttekintés és befejezés.](./media/experimentation_review_complete.svg) ](./media/experimentation_review_complete.svg#lightbox)
 
 Miután [elvégezte a kísérletet](experimentation-run-monitor.md), és összegyűjtötte a szükséges adatokat annak meghatározására, hogy melyik változatot szeretné használni az élő webhelyén, előléptetheti a változatot, és befejezheti a kísérletet.
 
@@ -60,3 +58,6 @@ A következő lépésekkel törölhet egy kísérletet a Commerce webhelyszerkes
 
 ## <a name="previous-step"></a>Előző lépés
 [Kísérlet futtatása és nyomon követése](experimentation-run-monitor.md)
+
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

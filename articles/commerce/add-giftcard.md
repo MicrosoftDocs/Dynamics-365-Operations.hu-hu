@@ -2,7 +2,7 @@
 title: Ajándékutalvány-modul
 description: Ez a témakör az ajándékutalvány-modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 04/29/2021
+ms.date: 08/02/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8db7e597241f1fd552f6b960c2b57b0ba83da949
-ms.sourcegitcommit: efde05c758b2e02960760d875569d780d77d5550
-ms.translationtype: HT
+ms.openlocfilehash: 5a4aaf8e072f6547fe1dcf6fa156d2e144fd03ed806a2dc809a2cedb991461f7
+ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "5962763"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "6728339"
 ---
 # <a name="gift-card-module"></a>Ajándékutalvány modul
 
@@ -42,17 +42,23 @@ Két ajándékutalvány-modul érhető el:
 
 A következő kép egy Pénztár oldalon használt ajándékutalvány modul egy példáját jeleníti meg.
 
-![Példa egy ajándékutalvány modulra](./media/ecommerce-giftcard.PNG)
+![Példa egy ajándékutalvány-modulra.](./media/ecommerce-giftcard.PNG)
 
 ## <a name="module-properties"></a>Modul tulajdonságai
 
 - **További mezők megjelenítése** – Ez a tulajdonság határozza meg, hogy milyen mezőket kell megjeleníteni az ajándékutalványokhozaz ajándékutalvány számán túl, amely alapértelmezés szerint mindig látható. Például egyes ajándékutalványok támogatják a személyes azonosítószám (PIN-kód) megjelenítését, mások a PIN-kód és a lejárati dátum megjelenítését. Másik lehetőségként a tulajdonság értéke „Nincs” lehet, amely csak az ajándékutalvány számát jeleníti meg, és további mezőket nem.
 
-Támogatott értékek:
--   PIN-kód
--   Lejárat dátuma
--   PIN és lejárati dátum 
--   None
+    A következő értékek támogatottak:
+
+    - PIN-kód
+    - Lejárati dátum
+    - PIN és lejárati dátum 
+    - None
+
+- **Engedélyezés a vendégfelhasználók számára** – Ha ez a tulajdonság engedélyezve van, a vendégfelhasználók beválthatják vagy ellenőrizhetik az ajándékutalványok egyenlegét. Ez a tulajdonság megköveteli, hogy az ajándékutalványok anonim (vendég) hozzáférése engedélyezve legyen a Commerce központban. A további tudnivalókat lásd: [Ajándékutalványos fizetések engedélyezése vendégkifizetéshez](#enable-gift-card-payments-for-guest-checkout).
+
+> [!IMPORTANT]
+> Az **Engedélyezés a vendégfelhasználók számára** tulajdonság a Commerce 10.0.21-es verziójától érhető el. Ehhez a Commerce modultárcsomag 9.31-es verziójának telepítése szükséges.
 
 ## <a name="site-settings-for-gift-card-modules"></a>Ajándékutalvány-modulok webhely-beállításai
 
