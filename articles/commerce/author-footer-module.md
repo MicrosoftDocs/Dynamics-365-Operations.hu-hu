@@ -2,7 +2,7 @@
 title: Láblécmodul
 description: Ez a témakör a láblécmodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket létrehozni a Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 03/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: d6e7b0ad4fe0723575a0ec55a9b02d110568db58
-ms.sourcegitcommit: 3cdc42346bb653c13ab33a7142dbb7969f1f6dda
-ms.translationtype: HT
+ms.openlocfilehash: 81db5cf32f23b7ee1ca8325eeec2e6ceafda55e0
+ms.sourcegitcommit: 90a553e271e7cd471fed2e4f006d753fdb67b47d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5797233"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8374831"
 ---
 # <a name="footer-module"></a>Láblécmodul  
 
@@ -31,7 +31,7 @@ A láblécmodul egy speciális tároló, amely a láblécben megjelenő modulok 
 
 A következő kép egy webhelyoldalon használt láblécmodul egy példáját jeleníti meg.
 
-![Példa egy lábléc modulra](./media/ecommerce-footer.PNG)
+![Példa egy láblécmodulra.](./media/ecommerce-footer.PNG)
 
 ## <a name="footer-module-properties"></a>Láblécmodul tulajdonságai 
 
@@ -39,7 +39,7 @@ A legtöbb tárolóhoz hasonlóan a láblécmodul a fejlécre és a szélességr
 
 ## <a name="modules-available-in-a-footer-module"></a>A láblécmodulban elérhető modulok
 
-**Láblécelemek** – Az láblécelemek modul tartalmaz egy fejlécet, egy képet és egy hivatkozást. A fejléc használható akár önmagában, akár egy képpel és hivatkozással együtt. A lábléc minden hivatkozása konfigurálható úgy, hogy csak szöveggel (például „Kapcsolat” és „Adatvédelem” hivatkozások) vagy szöveggel és képpel (például a közösségi média hivatkozások) rendelkezzen.
+**Lábléccikk** – a láblécelem-modul fejlécet vagy hivatkozást tartalmazhat. A fejléc általában láblécszakasz címeként használatos.  A lábléc minden hivatkozása konfigurálható úgy, hogy csak szöveggel (például „Kapcsolat” és „Adatvédelem” hivatkozások) vagy szöveggel és képpel (például a közösségi média hivatkozások) rendelkezzen. Ha mind fejléc, mind hivatkozás meg van téve, akkor a fejléc tulajdonság elsőbbséget élvez a hivatkozással képest. 
 
 **Vissza a tetejére** – A vissza a tetejére modul egy hivatkozást biztosít a lap tetejére történő gyors navigáláshoz. Kötelező megadni egy célt. Az alapértelmezett célérték a \#, amely a felhasználó a lap tetejére viszi.
 

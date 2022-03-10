@@ -1,6 +1,6 @@
 ---
 title: Juttatási kimutatás
-description: A Juttatási kimutatás jelentés bemutatja, hogy milyen juttatásokban részesül az alkalmazott.
+description: A juttatási kimutatás bemutatja, hogy milyen juttatásokban részesül jelenleg az alkalmazott.
 author: twheeloc
 ms.date: 09/21/2021
 ms.topic: article
@@ -14,14 +14,17 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 46f7358684502a4bf05854fbcb5cca9a1eb2c87c
-ms.sourcegitcommit: fcfd85a508c0de52cfe11d1986892219e39ef406
-ms.translationtype: HT
+ms.openlocfilehash: 602e4f9459aac8fdbea5f2752e51cc2c1b71360c
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "7548055"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358243"
 ---
 # <a name="benefit-statement"></a>Juttatási kimutatás
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 A **Juttatási kimutatás** jelentés kimutatást ad arról, hogy milyen juttatásokban részesül az alkalmazott. A jelentéshez közvetlenül az alkalmazott vagy a juttatások adminisztrátora fér hozzá. A **Juttatási kimutatás** listát nyújt az alkalmazott juttatásairól, fedezeti lehetőségeiről, költségeiről, valamint az esetleges eltartottakról és kedvezményezettekről. A kimutatás egyetlen dolgozóra vagy több dolgozóra is kinyomtatható.
 

@@ -1,26 +1,26 @@
 ---
 title: Szervezeti hierarchia a Dataverse szolgáltatásban
-description: Ez a témakör a szervezeti adatok integrációját ismerteti a Finance and Operations alkalmazás és a Dataverse között.
+description: Ez a témakör a szervezeti adatok integrációját ismerteti a Finance and Operations alkalmazások és a Dataverse között.
 author: RamaKrishnamoorthy
 ms.date: 07/15/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
-ms.openlocfilehash: 30826bf69525a85bede6ec0b64ec1a579aea26a0a6c487583739ad3fcb787a28
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 9174612743c68595d12dd223f0932ace1857c0fb
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6769245"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358364"
 ---
 # <a name="organization-hierarchy-in-dataverse"></a>Szervezeti hierarchia a Dataverse szolgáltatásban
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 Mivel a Dynamics 365 Finance egy pénzügyi rendszer a *szervezet* egy alapvető koncepciója, és a rendszerbeállítás a szervezeti hierarchia konfigurációjával kezdődik. A vállalati pénzügyei nyomon követhetők a szervezet szintjén, illetve a szervezeti hierarchia bármely szintjén.
 
@@ -32,15 +32,15 @@ Egy olyan üzleti ökoszisztéma, amely a Finance and Operations alkalmazásokb�
 
 ![Architektúra képe.](media/dual-write-data-flow.png)
 
-A szervezeti hierarchiához tartozó táblaleképezések a Finance and Operations alkalmazások és a Dataverse szolgáltatás közötti egyirányú adatáramlást szolgálják.
+Szervezeti hierarchia tábla-leképezések állnak rendelkezésre a Pénzügy és műveletek alkalmazásból a következőbe történő adatok egy egy átszinkronizálásához Dataverse.
 
 ## <a name="templates"></a>Sablonok
 
-A termékinformációk tartalmazzák a termékhez és a termék meghatározásához kapcsolódó összes információt, például a termékdimenziókat, illetve a nyomon követési és tárolási dimenziókat. A következő táblázat bemutatja a termékek és a kapcsolódó információk szinkronizálására létrehozott táblaleképezések gyűjteményét.
+Egy szervezet olyan emberek csoportja, akik valamely üzleti folyamat végrehajtása vagy egy cél elérése érdekében együtt dologoznak Szervezeti hierarchiák a vállalkozását alkotó szervezetek közötti kapcsolatotat jelölik. A következő típusú belső szervezeteket adhatja meg: jogi személyek operatív egységek és csoportok. Ahogy a következő táblázat mutatja, a rendszer létrehoz egy táblatérkép-gyűjteményt, amely szinkronizálja a jogi személyeket, az üzemi egységet, valamint a kapcsolódó és a kapcsolódó orgnization hierarchiaadatokat.
 
 Finance and Operations alkalmazások | Customer Engagement alkalmazások     | Leírás
 -----------------------|--------------------------------|---
-[Jogi személyek](mapping-reference.md#102) | cdm_companies | A jogi személy (vállalat) adatainak kétirányú szinkronizálását teszi lehetővé.
+[Jogi személyek](mapping-reference.md#102) | cdm_companies | 
 [Jogi személyek](mapping-reference.md#142) | msdyn_internalorganizations |
 [Üzemi egység](mapping-reference.md#143) | msdyn_internalorganizations |
 [Szervezeti hierarchia – közzétéve](mapping-reference.md#139) | msdyn_internalorganizationhierarchies | Ez a sablon a Szervezeti hierarchia közzétéve tábla egyirányú szinkronizálását teszi lehetővé.

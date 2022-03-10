@@ -1,147 +1,184 @@
 ---
-title: Üzembe helyezési irányelvek az olaszországi adónyomtató-integrációs mintához (örökölt)
-description: Ez a témakör útmutatást ad a fiskális nyomtató integrációs mintájának telepítéséhez Olaszországban Microsoft Dynamics 365 Commerce Kiskereskedelmi szoftverfejlesztő készlet (SDK).
+title: A pénzügyi nyomtató integrációs mintája olaszországi telepítési irányelvei (legacy)
+description: Ez a témakör a pénzügyi Microsoft Dynamics 365 Commerce nyomtató integrációs mintáinak a Retail szoftverfejlesztői csomagból (SDK) való telepítésével kapcsolatban nyújt tájékoztatást.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: 93aca34239affb41998f4309d7c03f29f7b5f003
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
-ms.translationtype: HT
+ms.openlocfilehash: c820c320410c43cafaae43c59cad04efdee24ab2
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8076886"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388444"
 ---
-# <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>Üzembe helyezési irányelvek az olaszországi adónyomtató-integrációs mintához (örökölt)
+# <a name="deployment-guidelines-for-the-fiscal-printer-integration-sample-for-italy-legacy"></a>A pénzügyi nyomtató integrációs mintája olaszországi telepítési irányelvei (legacy)
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
-Ez a témakör útmutatást ad a fiskális nyomtató integrációs mintájának telepítéséhez Olaszországban Microsoft Dynamics 365 Commerce Kiskereskedelmi szoftverfejlesztő készlet (SDK) fejlesztői virtuális gépen (VM) be Microsoft Dynamics Életciklus-szolgáltatások (LCS). Erről a költségvetési integrációs mintáról további információkért lásd: [Fiskális nyomtató integrációs minta Olaszországban](emea-ita-fpi-sample.md). 
+Ez a témakör a Microsoft Dynamics 365 Commerce Lifecycle Services (LCS) fejlesztői virtuális gépére (VM) telepített Retail szoftverfejlesztői csomagból (SDK) Microsoft Dynamics származó, Olaszországhoz tartozó pénzügyi nyomtató-integrációs minta telepítésével kapcsolatban nyújt tájékoztatást. A pénzügyi integrációs mintával kapcsolatos további tudnivalókat lásd [a Pénzügyi nyomtató integrációs mintája Olaszország esetében](emea-ita-fpi-sample.md). 
 
-Az olaszországi fiskális integrációs minta a Retail SDK része. Az SDK telepítésével és használatával kapcsolatos információkért lásd: [Kiskereskedelmi szoftverfejlesztő készlet (SDK) architektúrája](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ez a minta a Commerce futtatókörnyezet bővítményeiből áll (CRT) és a hardver állomás. A minta futtatásához módosítania kell és össze kell építenie a CRT és Hardver állomás projektek. Javasoljuk, hogy módosítatlan kiskereskedelmi SDK-t használjon a témakörben ismertetett módosítások végrehajtásához. Azt is javasoljuk, hogy használjon forrásvezérlő rendszert, mint pl Azure DevOps ahol még nem módosítottak fájlokat.
+Az Olaszországhoz tartozó pénzügyi integrációs minta a Retail SDK része. Az SDK [telepítésével és használatával kapcsolatos tudnivalókat lásd a Retail szoftverfejlesztői csomag (SDK) architektúráját](../dev-itpro/retail-sdk/retail-sdk-overview.md). Ez a minta a Commerce runtime (CRT) és a hardverállomás bővítményeiből áll. A minta futtatásához módosítania és fel kell építenie a és CRT a hardverállomás-projekteket. Javasoljuk, hogy egy nem módosított Retail SDK készlet használatával tegye meg az ebben a témakörben leírt változtatásokat. Javasoljuk továbbá, hogy forrásvezérlő rendszert használjon, Azure DevOps például olyanokat, ahol a fájlok még nem módosultak.
 
 ## <a name="development-environment"></a>Fejlesztői környezet
 
-Kövesse az alábbi lépéseket egy fejlesztői környezet beállításához, amely lehetővé teszi a minta tesztelését és kiterjesztését.
+A következő lépések szerint állíthatja be a fejlesztői környezetet, hogy tesztelni és ki tudja terjeszteni a mintát.
 
-### <a name="commerce-runtime-extension-components"></a>Kereskedelmi futásidejű bővítmény összetevői
+### <a name="commerce-runtime-extension-components"></a>Commerce runtime kiterjesztésű összetevők
 
-A CRT A bővítmény összetevői megtalálhatók a Retail SDK-ban. A következő eljárások végrehajtásához nyissa meg a **CommerceRuntimeSamples.sln** alatti megoldás **RetailSdk\\ SampleExtensions\\ CommerceRuntime**.
+A CRT bővítmények összetevői a Retail SDK szoftverfejlesztő készletében találhatók. A következő eljárások **befejezéséhez nyissa meg a CommerceRuntimeSamples.sln megoldást** a **RetailSdkSampleExtensionsCommerceRuntime\\\\ alatt**.
 
-1. Találd meg **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample** projektet, és megépíteni.
-2. Ban,-ben **Extensions.DocumentProvider.EpsonFP90IIISample\\ kuka\\ Debug** mappát, keresse meg a **Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll** összeállítási fájl.
-3. Másolja az összeállítási fájlt a CRT kiterjesztések mappa:
+1. A Runtime.Extensions.DocumentProvider.EpsonFP90IISample **projekt** megkeresása és összeállítása.
+2. **Az Extensions.DocumentProvider.EpsonFP90IISamplebinDebug\\\\ mappában** **keresse meg a Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IISample.dll** szerelvényfájlt.
+3. A szerelvényfájl másolása a bővítmények CRT mappájába:
 
-    - **Kereskedelmi mértékegység:** Másolja a fájlt a **\\ kuka\\ ext** mappát az Internet Information Services (IIS) Commerce Scale Unit webhely helye alatt.
-    - **Helyi CRT a modern POS-on:** Másolja a fájlt a **\\ ext** mappát a helyi alatt CRT ügyfél bróker helye.
+    - **Commerce Scale Unit:** A **\\ fájl másolása az Internet Information Services (IIS) Commerce Scale Unit webhelyének binext\\** mappájába.
+    - **Helyi CRT a Modern POS terminálon:** Másolja **\\ a fájlt a helyi ügyfélügynök helye alatti ext** CRT mappába.
 
-4. Keresse meg a kiterjesztés konfigurációs fájlját CRT:
+4. A következő bővítmény-konfigurációs fájl megkeresve CRT:
 
-    - **Kereskedelmi mértékegység:** A fájl neve **commerceruntime.ext.config**, és benne van a **kuka\\ ext** mappát az IIS Commerce Scale Unit webhely helye alatt.
-    - **Helyi CRT a modern POS-on:** A fájl neve **CommerceRuntime.MPOSOffline.Ext.config**, és a helyi alatt van CRT ügyfél bróker helye.
+    - **Commerce Scale Unit:** **A fájl neve commerceruntime.ext.config**, **és az IIS Commerce Scale Unit webhely binext\\** mappájában található.
+    - **Helyi CRT a Modern POS terminálon:** **A fájl neve CommerceRuntime.MPOSOffline.Ext.config**, CRT és a helyi ügyfélügynök helye alatt található.
 
-5. Regisztrálja a CRT módosítás a kiterjesztés konfigurációs fájljában.
+5. A változás CRT regisztrálása a kiterjesztés konfigurációs fájljában.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
     ```
 
-6. Indítsa újra a Commerce Scale Unit:
+6. A Commerce Scale Unit újraindítása:
 
-    - **Kereskedelmi mértékegység:** Indítsa újra a Commerce Scale Unit webhelyet az IIS Managerből.
-    - **Ügyfél bróker:** Vége a **dllhost.exe** folyamatot a Feladatkezelőben, majd indítsa újra a Modern POS-t.
+    - **Commerce Scale Unit: Indítsa** újra a Commerce Scale Unit webhelyet az IIS-kezelőből.
+    - **Ügyfélügynök:** Indítsa el a **dllhost.exe folyamatot** a Feladatkezelőben, majd indítsa újra a Modern POS alkalmazást.
 
-### <a name="hardware-station-extension-components"></a>Hardverállomás-bővítési összetevők
+### <a name="hardware-station-extension-components"></a>Hardverállomás bővítési összetevői
 
-A hardverállomás-bővítmény összetevői a kiskereskedelmi SDK-ban találhatók. A következő eljárások végrehajtásához nyissa meg a **HardwareStationSamples.sln** alatti megoldás **RetailSdk\\ SampleExtensions\\ HardwareStation**.
+A Retail SDK tartalmazza a Hardverállomás bővítmény összetevőit. A következő eljárások **befejezéséhez nyissa meg a HardwareStationSamples.sln** megoldást a **RetailSdkSampleExtensionsHardwareStation\\\\ alatt**.
 
-1. Találd meg **HardwareStation.Extensions.EpsonFP90IIIFiscalDeviceSample** projektet, és megépíteni.
-2. Ban,-ben **Extensions.EpsonFP90IIIFiscalDeviceSample\\ kuka\\ Debug** mappát, keresse meg a **Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll** összeállítási fájl.
-3. Másolja az összeállítási fájlt egy telepített hardver állomás gépre:
+1. Keresse meg **és építse ki a HardwareStation.Extensions.EpsonFP90IIFiscalDeviceSample** projektet.
+2. **Az Extensions.EpsonFP90IIFiscalDeviceSamplebinDebug\\\\** **mappában keresse meg a Contoso.Commerce.HardwareStation.EpsonFP90IIFiscalDeviceSample.dll** szerelvényfájlt.
+3. A szerelvényfájl másolása egy telepített hardverállomás-gépre:
 
-    - **Távoli hardver állomás:** Másolja a fájlt a **kuka** mappát az IIS hardver állomás helye alatt.
-    - **Helyi hardver állomás:** Másolja a fájlt a Modern POS kliens közvetítő helyére.
+    - **Távoli hardverállomás:** Másolja a **fájlt** az IIS hardverállomás helyének bin mappájába.
+    - **Helyi hardverállomás:** A fájl másolása a Modern POS ügyfélügynöki helyére.
 
-4. Keresse meg a hardverállomás kiterjesztéseinek konfigurációs fájlját. A fájl neve **HardwareStation.Extension.config**:
+4. A hardverállomás bővítményeihez található konfigurációs fájl megkeresve. A fájl neve **HardwareStation.Extension.config**:
 
-    - **Távoli hardver állomás:** A fájl az IIS hardver állomás helye alatt található.
-    - **Helyi hardver állomás:** A fájl a Modern POS kliens bróker helye alatt található.
+    - **Távoli hardverállomás:** A fájl az IIS hardverállomás helye alatt található.
+    - **Helyi hardverállomás:** A fájl a Modern POS ügyfélügynök helye alatt található.
 
-5. Adja hozzá a következő részt a **fogalmazás** szakasza a konfigurációs fájlban.
+5. Adja hozzá a következő szakaszt **a** konfigurációs fájl összeállítási szakaszhoz.
 
     ``` xml
     <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
     ```
 
-6. Indítsa újra a Hardverállomás szolgáltatást:
+6. Indítsa újra a hardverállomás szolgáltatást:
 
-    - **Távoli hardver állomás:** Indítsa újra a Hardverállomás webhelyét az IIS-kezelőből.
-    - **Helyi hardver állomás:** Vége a **dllhost.exe** folyamatot a Feladatkezelőben, majd indítsa újra a Modern POS-t.
+    - **Távoli hardverállomás: Indítsa** újra a hardverállomás webhelyet az IIS-kezelőből.
+    - **Helyi hardverállomás:** A feladatkezelőben **le kell indítani a dllhost.exe** folyamatot, majd újra kell indítani a Modern POS rendszert.
 
 ## <a name="production-environment"></a>Működési környezet
 
-A Commerce összetevőket tartalmazó telepíthető csomagok létrehozásához és a csomagok éles környezetben történő alkalmazásához kövesse az alábbi lépéseket.
+A Commerce összetevőket tartalmazó telepíthető csomagok létrehozásához és a csomagok éles környezetben való alkalmazáshoz kövesse ezeket a lépéseket.
 
-1. Végezze el a következőben leírt lépéseket [Fejlesztőkörnyezet](#development-environment) részben ebben a témában.
-2. Végezze el a következő módosításokat a csomag konfigurációs fájljaiban a **RetailSdk\\ Eszközök** mappa:
+1. A témakör korábbi [részében](#development-environment), a Fejlesztői környezetben leírt lépések befejezése.
+2. Tegye a következő módosításokat **a RetailSdkAssets\\ mappa csomagkonfigurációs fájljaiban**:
 
-    - Ban,-ben **commerceruntime.ext.config** és **CommerceRuntime.MPOSOffline.Ext.config** konfigurációs fájlokat, adja hozzá a következő sort a **fogalmazás** szakasz.
+    1. **A Commerceruntime.ext.config** **és CommerceRuntime.MPOSOffline.Ext.config** **konfigurációs fájlokban adja hozzá a következő sort az összeállítási szakaszhoz**.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample" />
         ```
 
-    - Ban,-ben **HardwareStation.Extension.config** konfigurációs fájlt, adja hozzá a következő sort a **fogalmazás** szakasz.
+    1. **A HardwareStation.Extension.config** konfigurációs fájlban adja hozzá a következő sort az összeállítási **szakaszhoz**.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample" />
         ```
 
-3. Végezze el a következő módosításokat a **Testreszabás.beállítások** alatti csomag testreszabási konfigurációs fájlja **BuildTools** mappa:
+3. Tegye a következő módosításokat a **Testreszabás.beállítások** csomag testreszabása konfigurációs fájlban a **BuildTools mappában**:
 
-    - Adja hozzá a következő sort a CRT bővítmény a telepíthető csomagokban.
+    1. Adja hozzá a következő sort, hogy a CRT bővítmény bele legyen foglalva a telepíthető csomagokba.
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.dll"/>
         ```
 
-    - Adja hozzá a következő sort a Hardverállomás-bővítménynek a telepíthető csomagokba való felvételéhez.
+    1. Adja hozzá a következő sort, hogy a hardverállomás bővítmény szerepeljen a telepíthető csomagokban.
 
         ``` xml
         <ISV_HardwareStation_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.HardwareStation.EpsonFP90IIIFiscalDeviceSample.dll"/>
         ```
 
-4. Indítsa el az MSBuild parancssort a következőhöz:Visual Studio segédprogramot, majd futtassa **msbuild** a Retail SDK mappa alatt telepíthető csomagok létrehozásához.
-5. Alkalmazza a csomagokat LCS-n keresztül vagy manuálisan. További információkért lásd [Hozzon létre telepíthető csomagokat](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
+4. **A következő módosítások hajthatóak végre az Sdk.ModernPos.Shared.csproj** **fájlban a PackagesSharedPackagingProjectComponents\_ mappában**, hogy a telepíthető csomagokban szerepeljenek az Olaszországhoz tartozó erőforrásfájlok:
 
-## <a name="design-of-extensions"></a>Bővítések tervezése
+    1. Adjon hozzá **egy ItemGroup szakaszt**, amely a kívánt fordítások erőforrásfájljaira mutató csomópontokat tartalmaz. Győződjön meg róla, hogy a megfelelő névtereket és mintaneveket adja meg. A következő példa erőforrás-csomópontokat ad hozzá **az** **adott és az it-CH** területi beállításokhoz.
 
-### <a name="commerce-runtime-extension-design"></a>Kereskedelmi futásidejű bővítmény tervezése
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
 
-Az adódokumentum-szolgáltató bővítmény célja, hogy nyomtató-specifikus dokumentumokat állítson elő, és kezelje a fiskális nyomtatótól érkező válaszokat.
+    1. A Célnév **="CopyPackageFiles"** szakaszban adjon hozzá minden területi beállításokhoz egy sort, amint azt az alábbi példa mutatja.
 
-A CRT kiterjesztése az **Runtime.Extensions.DocumentProvider.EpsonFP90IIISample**.
+        ```xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\CustomizedFiles\ClientBroker\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
 
-A fiskális integrációs megoldás kialakításával kapcsolatos további információkért lásd: [Fiskális regisztrációs folyamat és fiskális integrációs minták a fiskális eszközökhöz és szolgáltatásokhoz](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
+5. **A következő módosítások hajthatóak végre az Sdk.RetailServerSetup.proj** **fájlban a PackagesSharedPackagingProjectComponents\_ mappában**, hogy a telepíthető csomagokban szerepeljenek az Olaszországhoz tartozó erőforrásfájlok:
+
+    1. Adjon hozzá **egy ItemGroup szakaszt**, amely a kívánt fordítások erőforrásfájljaira mutató csomópontokat tartalmaz. Győződjön meg róla, hogy a megfelelő névtereket és mintaneveket adja meg. A következő példa erőforrás-csomópontokat ad hozzá **az** **adott és az it-CH** területi beállításokhoz.
+
+        ```xml
+        <ItemGroup>
+            <ResourcesIt Include="$(SdkReferencesPath)\it\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+            <ResourcesItCh Include="$(SdkReferencesPath)\it-CH\Contoso.Commerce.Runtime.DocumentProvider.EpsonFP90IIISample.resources.dll"/>
+        </ItemGroup>
+        ```
+
+    1. A Célnév **="CopyPackageFiles"** szakaszban adjon hozzá minden területi beállításokhoz egy sort, amint azt az alábbi példa mutatja.
+
+        ``` xml
+        <Copy SourceFiles="@(ResourcesIt)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ResourcesItCh)" DestinationFolder="$(OutputPath)content.folder\RetailServer\Code\bin\ext\it-CH" SkipUnchangedFiles="true" />
+        ```
+
+6. Indítsa el az MSBuild Visual Studio parancssort a segédprogrammal, **majd futtassa az msbuild** csomagot a Retail SDK mappában, hogy telepíthető csomagokat hozzon létre.
+7. A csomagok alkalmazása LCS-en keresztül vagy manuálisan. A további tudnivalókat lásd [a Telepíthető csomagok létrehozása.](../dev-itpro/retail-sdk/retail-sdk-packaging.md)
+
+## <a name="design-of-extensions"></a>Bővítmények tervezése
+
+### <a name="commerce-runtime-extension-design"></a>Commerce runtime bővítmény tervezése
+
+A kiterjesztés célja, amely egy pénzügyi bizonylatot szolgáltató, az a cél, hogy nyomtatóspecifikus dokumentumokat generáljon, és kezelni tudja a pénzügyi nyomtató válaszait.
+
+A CRT kiterjesztés a **Runtime.Extensions.DocumentProvider.EpsonFP90IISample**.
+
+A pénzügyi integráció megoldásának [kialakításával kapcsolatos további tudnivalókat lásd a Pénzügyi nyilvántartási folyamat és a pénzügyi eszközök és szolgáltatások pénzügyi integrációs mintáiban](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services).
 
 #### <a name="request-handler"></a>Kérelemkezelő
 
-A **DocumentProviderEpsonFP90III kérelemkezelő** a belépési pont a dokumentumok költségvetési nyomtatóról történő létrehozására irányuló kérelemhez.
+A **DocumentProviderEpsonFP90II** kéréskezelő a pénzügyi nyomtatón történő dokumentum-generálás igénylésének belépési pontja.
 
-A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName** metódus felelős a kezelő nevének visszaadásáért. A kezelő nevének meg kell egyeznie a Kereskedelmi központban megadott összekötő dokumentumszolgáltató nevével.
+A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName metódus** felelős a kezelő nevének visszaküldéséért. A kezelő nevének meg kell egyeznie a Commerce Headquarters szolgáltatásban megadott csatlakoztató dokumentumszolgáltató nevével.
 
-Az összekötő a következő kéréseket támogatja:
+Az csatlakoztató a következő kéréseket támogatja:
 
-- **GetFiscalDocumentDocumentProviderRequest** – Ez a kérés információt tartalmaz arról, hogy milyen dokumentumot kell létrehozni. Nyomtatóspecifikus dokumentumot ad vissza, amelyet regisztrálni kell az adónyomtatóban.
-- **GetSupportedRegistrableEventsDocumentProviderRequest** – Ez a kérés visszaadja az előfizetendő események listáját. Jelenleg a következő események támogatottak: értékesítés, X-jelentés nyomtatása és Z-jelentés nyomtatása.
+- **GetFiscalDocumentDocumentProviderRequest** – ez a kérés tartalmazza a létrehozandó dokumentum adatait. Olyan nyomtatóspecifikus bizonylatot ad vissza, amely regisztrálva kell lennie a pénzügyi nyomtatón.
+- **GetSupportedRegistrableEventsDocumentProviderRequest** – ez a kérés a regisztrált események listáját adja eredményül. Jelenleg a következő események támogatottak: értékesítés, X-jelentés nyomtatás és Z-jelentés nyomtatás.
 
 #### <a name="configuration"></a>Konfiguráció
 
-A konfigurációs fájl a **projekt konfigurációs** mappájában található. A fájl célja, hogy engedélyezze a dokumentumszolgáltató beállításait a Commerce központjából. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállítások kerülnek hozzáadásra:
+A konfigurációs fájl a bővítményprojekt **Konfigurációs** mappájában található. A fájl célja, hogy lehetővé tegye a dokumentumszolgáltató Commerce Headquarters rendszerből származó konfigurálásának beállításait. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállításokat lehet hozzáadni:
 
 - Áfakódok leképezése
 - Áfakulcsok leképezése
@@ -149,27 +186,27 @@ A konfigurációs fájl a **projekt konfigurációs** mappájában található. 
 - A nyugtaszám vonalkódtípusa
 - Letét fizetési típusa
 
-### <a name="hardware-station-extension-design"></a>Hardverállomás-bővítés kialakítása
+### <a name="hardware-station-extension-design"></a>Hardverállomás bővítményének tervezése
 
-A fiskális összekötő bővítmény célja a fiskális nyomtatóval való kommunikáció.
+A pénzügyi csatlakoztatóként használt bővítmény célja a pénzügyi nyomtatóval való kommunikáció.
 
-A Hardver állomás kiterjesztése a **HardwareStation.Extension.EpsonFP90IIIFiscalDeviceSample**. Ez a bővítmény a HTTP protokollt használja a CRT bővítmény által generált dokumentumok pénzügyi nyomtatóra történő küldéséhez. Kezeli a költségvetési nyomtatótól kapott válaszokat is.
+A Hardverállomás kiterjesztése **HardwareStation.Extension.EpsonFP90IIFiscalDeviceSample**. Ez a kiterjesztés a HTTP protokollal küldheti CRT el a kiterjesztés által a pénzügyi nyomtatón generált dokumentumokat. A pénzügyi nyomtatóról kapott válaszokat is kezeli.
 
 #### <a name="request-handler"></a>Kérelemkezelő
 
-A **EpsonFP90IIIMinta** A kéréskezelő a belépési pont az adózási perifériára irányuló kérések kezeléséhez.
+Az **EpsonFP90IISample** kérelemkezelő a pénzügyi perifériás eszközre vonatkozó kérések kezelésének belépési pontja.
 
-A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName** metódus felelős a kezelő nevének visszaadásáért. A kezelő nevének meg kell egyeznie a Kereskedelmi központban megadott pénzügyi összekötő nevével.
+A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName metódus** felelős a kezelő nevének visszaküldéséért. A kezelő nevének meg kell egyeznie a Commerce Headquartersban megadott pénzügyi csatlakoztató nevével.
 
-Az összekötő a következő kéréseket támogatja:
+Az csatlakoztató a következő kéréseket támogatja:
 
-- **SubmitDocumentFiscalDeviceRequest** – Ez a kérelem dokumentumokat küld a nyomtatóknak, és visszaadja a válaszát a költségvetési nyomtatóról.
-- **IsReadyFiscalDeviceRequest** – Ez a kérés az eszköz állapotfelmérésére szolgál.
-- **InitializeFiscalDeviceRequest** – Ez a kérés a nyomtató inicializálásához használatos.
+- **SubmitDocumentFiscalDeviceRequest** – ez a kérés dokumentumokat küld a nyomtatóknak, és visszaküldi a választ a pénzügyi nyomtatóról.
+- **IsReadyFiscalDeviceRequest** – ez a kérés az eszköz állapotának ellenőrzésére használható.
+- **InitializeFiscalDeviceRequest** – ez a kérés a nyomtató inicializálásához használatos.
 
 #### <a name="configuration"></a>Konfiguráció
 
-A konfigurációs fájl a **projekt konfigurációs** mappájában található. A fájl célja, hogy engedélyezze az összekötő beállításait a Commerce központjából. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállítások kerülnek hozzáadásra:
+A konfigurációs fájl a bővítményprojekt **Konfigurációs** mappájában található. A fájl célja, hogy lehetővé tegye a csatlakoztató Commerce Headquarters alkalmazásból származó konfigurálásának beállításait. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállításokat lehet hozzáadni:
 
-- **Végpont címe** – A nyomtató URL-címe.
-- **Dátum és idő szinkronizálása** – Egy érték, amely megadja, hogy a nyomtató dátumát és idejét szinkronizálni kell-e a csatlakoztatott hardverállomással.
+- **Végpont címe** – a nyomtató URL-címe.
+- **Dátum- és időszinkronizálás** – ez az érték határozza meg, hogy szinkronizálni kell-e a nyomtató dátumát és időpontját a csatlakoztatott hardverállomással.

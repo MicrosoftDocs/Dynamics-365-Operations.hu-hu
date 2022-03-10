@@ -1,8 +1,8 @@
 ---
-title: Adóügyi regisztrációs szolgáltatás integrációs mintája a Cseh Köztársaságban
-description: Ez a témakör áttekintést nyújt a Cseh Köztársaság fiskális integrációs mintájáról Microsoft Dynamics 365 Commerce.
+title: Pénzügyi nyilvántartási szolgáltatás integrációs mintája a Cseh Köztársaság számára
+description: Ez a témakör áttekintést nyújt a Cseh Köztársaság pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 03/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -10,345 +10,383 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: 990de96f57f4a22b4d58da5f970b1b96f5fc21f5
-ms.sourcegitcommit: 5cefe7d2a71c6f220190afc3293e33e2b9119685
-ms.translationtype: HT
+ms.openlocfilehash: cb9679bd02c5400fc015c6807407b01e9bf55343
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/01/2022
-ms.locfileid: "8077090"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388236"
 ---
-# <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Adóügyi regisztrációs szolgáltatás integrációs mintája a Cseh Köztársaságban
+# <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Pénzügyi nyilvántartási szolgáltatás integrációs mintája a Cseh Köztársaság számára
 
 [!include[banner](../includes/banner.md)]
+[!include[banner](../includes/preview-banner.md)]
 
-Ez a témakör áttekintést nyújt a Cseh Köztársaság fiskális integrációs mintájáról Microsoft Dynamics 365 Commerce.
+Ez a témakör áttekintést nyújt a Cseh Köztársaság pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
 
-A pénztárgépekre vonatkozó helyi adókövetelmények teljesítése érdekében a Cseh Köztársaságban a Dynamics 365 Commerce A Cseh Köztársaság funkcionalitása magában foglalja az értékesítési pont (POS) mintaintegrációját egy külső adóregisztrációs szolgáltatással. A minta kiterjeszti a [fiskális integrációs funkcionalitás](fiscal-integration-for-retail-channel.md). Azon alapul [EFR (elektronikus adónyilvántartás)](https://efsta.org/sicherheitsloesungen/) megoldástól [EFSTA](https://efsta.org/) és lehetővé teszi a kommunikációt az EFR szolgáltatással a HTTPS protokollon keresztül. Az EFR szolgáltatás biztosítja az értékesítések elektronikus regisztrációját (EET - Elektronická bizonyíték tržeb), azaz az értékesítési adatok online továbbítását az adóhatóság adóhatósági webszolgáltatásához.
+A Cseh Dynamics 365 Commerce Köztársaság készpénzjegyzékekkel kapcsolatos helyi pénzügyi követelményeinek megfelelően a Cseh Köztársaság funkciói között szerepel a pénztári terminál és egy külső pénzügyi regisztrációs szolgáltatás mintaintegrációja. A minta kiterjeszti a pénzügyi [integrációs funkciókat](fiscal-integration-for-retail-channel.md). [Az EFSTA](https://efsta.org/sicherheitsloesungen/) EFR (Electronic Fiscal Register) [megoldásán](https://efsta.org/) alapul, és HTTPS protokollon keresztül engedélyezi a kommunikációt az EFR szolgáltatással. Az EFR szolgáltatás biztosítja az értékesítések elektronikus regisztrációját (EET - Elektronická evidence treb), azaz az értékesítési adatok online átvitele az adóhatóságok pénzügyi webszolgáltatásának.
 
-Az EFR szolgáltatást a Commerce Hardware állomáson vagy egy különálló gépen kell tárolni, amelyhez a hardver állomásról lehet csatlakozni. A minta forráskód formájában áll rendelkezésre, és a kiskereskedelmi szoftverfejlesztő készlet (SDK) része.
+Az EFR-szolgáltatásnak a Commerce Hardverállomáson vagy egy hardverállomásról csatlakoztatott külön számítógépen kell lennie. A minta forráskód formájában kapható, és része a Retail szoftverfejlesztői csomagnak (SDK).
 
-A Microsoft nem ad ki semmilyen hardvert, szoftvert vagy dokumentációt az EFSTA-tól. Az EFR megoldás beszerzésével és üzemeltetésével kapcsolatos információkért forduljon a következőhöz: [EFSTA](https://efsta.org/kontakt/).
+A Microsoft nem ad ki hardvert, szoftvert vagy dokumentációt az EFSTA rendszerből. Az EFR-megoldás bejle- és működésről az EFSTA-hoz [forduljon](https://efsta.org/kontakt/).
 
 ## <a name="scenarios"></a>Forgatókönyvek
 
-A Cseh Köztársaságra vonatkozó adóregisztrációs szolgáltatás integrációs mintája a következő forgatókönyveket fedi le.
+A Cseh Köztársaságra vonatkozó pénzügyi nyilvántartási szolgáltatási integrációs minta a következő helyzeteket tartalmazza.
 
-- Készpénzes tranzakciók nyilvántartása az adónyilvántartási szolgáltatásban.
+- Készpénztranzakciók regisztrálása a pénzügyi nyilvántartási szolgáltatásban.
 
-    - Küldje el a részletes tranzakciós adatokat az adóregisztrációs szolgáltatásnak. Ezek az adatok az értékesítési vonalra vonatkozó információkat, valamint a kedvezményekkel, kifizetésekkel és adókkal kapcsolatos információkat tartalmaznak. Az adónyilvántartási szolgáltatás továbbküldi az adatokat az adóhatóság webszolgáltatásának, és onnan visszaigazolást kap, amely tartalmazza az ügylet adóazonosító kódját.
-    - Válasz rögzítése az adóregisztrációs szolgáltatástól. Ez a válasz olyan adózási adatokat tartalmaz, mint az adóazonosító kód és a tranzakció biztonsági kódja stb.
-    - Nyomtassa ki egy regisztrált tranzakció fiskális adatait a nyugtára.
+    - Részletes tranzakcióadatok küldése a pénzügyi regisztrációs szolgáltatásnak Ezek az adatok tartalmazzák az értékesítési sorok adatait, valamint az engedményekkel, kifizetésekkel és adókkal kapcsolatos adatokat. Az adóügyi regisztrációs szolgáltatás továbbküldi az adatokat az adóhatóságok webszolgáltatásának, és visszaigazolást kap arról, hogy tartalmazza a tranzakció pénzügyi azonosító kódját.
+    - Válasz rögzítése a pénzügyi regisztrációs szolgáltatástól. Ez a válasz olyan pénzügyi adatokat is tartalmaz, mint például a pénzügyi azonosító kód, a tranzakció biztonsági kódja stb.
+    - A regisztrált tranzakció pénzügyi adatainak nyomtatása a nyugtára.
 
-- Ajándékkártya-műveletek és ügyfélbetétek nyilvántartása az adónyilvántartási szolgáltatásban.
+- Ajándékutalvány-műveletek és vevői betétek regisztrálása a pénzügyi regisztrációs szolgáltatásban
 
-    - Ajándékkártya kibocsátása vagy pénz hozzáadása.
-    - Ügyfélszámla befizetés regisztrálása.
-    - Hozzon létre egy vásárlói rendelést, és regisztráljon letétet a megrendeléshez.
-    - Szerkessze az ügyfél megrendelését, és írja felül a rendelés letétjét.
-    - Törölje az ügyfél megrendelését és térítse vissza a rendelés előlegét.
+    - Ajándékutalvány kiadása vagy pénz hozzáadása
+    - Vevői számla letétének regisztrálása.
+    - Vevői rendelés létrehozása és letét regisztrálása a rendeléshez.
+    - Vevői rendelés szerkesztése és a rendelés letétje felülbírálása
+    - Vevői rendelés érvénytelenítése és a rendelés letétje visszatérítése
 
 - Hibakezelés, például a következő lehetőségek.
 
-    - Próbálkozzon újra a fiskális regisztrációval, ha lehetséges, például ha az adóregisztrációs szolgáltatás nem elérhető, nem áll készen vagy nem válaszol.
-    - Az adóbejegyzés elhalasztása.
-    - Hagyja ki a fiskális regisztrációt, vagy jelölje meg a tranzakciót regisztráltként, és adjon meg információs kódokat a hiba okának rögzítéséhez és további információkhoz.
-    - Ellenőrizze az adóregisztrációs szolgáltatás elérhetőségét, mielőtt új értékesítési tranzakciót nyitna vagy véglegesítene.
+    - Próbálja meg újra a pénzügyi regisztrációt, ha egy újrapróbálkozási művelet lehetséges, például ha a pénzügyi regisztrációs szolgáltatás nem érhető el, nem áll készen vagy nem válaszol.
+    - Pénzügyi regisztráció elhalasztása.
+    - Pénzügyi regisztráció kihagyása, vagy a tranzakció megjelölése regisztráltként, és infókódok beírása a hiba okának és a további információknak a rögzítéséhez.
+    - Ellenőrizze a pénzügyi regisztrációs szolgáltatás elérhetőségét, mielőtt új értékesítési tranzakciót nyit meg vagy egy értékesítési tranzakciót véglegesítettek.
 
 ### <a name="gift-cards"></a>Ajándékutalványok
 
-A fiskális regisztrációs szolgáltatás integrációs mintája a következő, ajándékkártyákhoz kapcsolódó szabályokat valósítja meg.
+A pénzügyi nyilvántartási szolgáltatás integrációs mintája az ajándékutalványokkal kapcsolatos következő szabályokat valósítja meg.
 
-- Értékesítési vonalak, amelyek kapcsolódnak a *Ajándékkártya kiadása* vagy *Hozzáadás ajándékkártyához* az értékesítési tranzakciók műveletei egy speciális attribútummal vannak megjelölve, amikor a tranzakciót regisztrálják az adóregisztrációs szolgáltatásban.
-- Az ajándékkártyával történő fizetés normál fizetésnek minősül, és speciális attribútummal van megjelölve, amikor a tranzakciót az adónyilvántartási szolgáltatásban regisztrálják.
+- Az értékesítési *tranzakcióban* *az* Ajándékutalvány kiadásához vagy az Ajándékutalványhoz hozzáadás művelethez kapcsolódó értékesítési sorok egy speciális attribútummal vannak megjelölve, amikor a tranzakciót regisztrálják a pénzügyi regisztrációs szolgáltatásban.
+- Az ajándékutalványos fizetés rendszeres fizetésnek számít, és speciális attribútummal van megjelölve, amikor a tranzakciót regisztrálják a pénzügyi regisztrációs szolgáltatásban.
 
-### <a name="customer-account-deposits-and-customer-order-deposits"></a>Ügyfélszámla befizetések és vevői rendelési betétek
+### <a name="customer-account-deposits-and-customer-order-deposits"></a>Vevői számlabetétek és vevői rendelési betétek
 
-Az adóregisztrációs szolgáltatás integrációs mintája a következő szabályokat valósítja meg, amelyek az ügyfélszámla-betétekkel és az ügyfélmegrendelés-betétekkel kapcsolatosak.
+A pénzügyi nyilvántartási szolgáltatás integrációs mintája a vevői számlára való betétekre és a vevői rendelési betétekre vonatkozó következő szabályokat valósítja meg.
 
-- Az ügyfélszámla betéthez vagy vevői megbízási betéthez kapcsolódó tranzakció egysoros tranzakcióként kerül rögzítésre az adónyilvántartási szolgáltatásban, és speciális attribútummal van megjelölve. Ebben a sorban van megadva a betéti áfacsoport.
-- Hibrid vevői rendelés létrehozásakor, azaz olyan vevői megrendelés esetén, amely a vevő által az üzletből kivihető termékeket, valamint a későbbiekben átvételre vagy kiszállításra kerülő termékeket tartalmaz, a tranzakciót az adónyilvántartási szolgáltatásban rögzítik. sorokat tartalmaz az elvégzett termékekhez, valamint egy sort a rendelési letéthez.
-- Az ügyfélszámláról történő fizetés normál befizetésnek minősül, és speciális attribútummal van megjelölve, amikor a tranzakciót az adóregisztrációs szolgáltatásban regisztrálják.
-- A vevői rendelés letéti összege, amelyet az ügyfél megrendelésére alkalmaznak *Felvenni* A művelet rendszeres fizetésnek minősül, és speciális attribútummal van megjelölve, amikor a tranzakciót az adónyilvántartási szolgáltatásban regisztrálják.
+- A pénzügyi nyilvántartási szolgáltatásban egy tranzakciósorként regisztrálják a vevői számla letéthez vagy vevői rendelés letéthez kapcsolódó tranzakciót, és egy speciális attribútummal jelölik meg. Ebben a sorban van megadva a letéti áfacsoport.
+- Amikor létrejön egy vevői rendelés, vagyis egy olyan vevői rendelés, amely a vevő által az üzletben szállítható termékeket, valamint a később fel- vagy leszállított termékeket tartalmazza, a pénzügyi nyilvántartási szolgáltatásban regisztrált tranzakció tartalmazza az elvégzett termékek sorait, valamint a rendelési letét sorait.
+- A vevői számláról történő fizetés rendszeres kifizetésnek számít, és speciális attribútummal van megjelölve, amikor a tranzakció regisztrálva van a pénzügyi nyilvántartási szolgáltatásban.
+- A vevői rendelés felvételi műveletére alkalmazott letéti összeg rendszeres kifizetésnek számít, és speciális attribútummal van megjelölve, amikor a tranzakciót regisztrálják a pénzügyi nyilvántartási szolgáltatásban.
 
 ### <a name="offline-registration"></a>Offline regisztráció
 
-Ha az adóregisztrációs szolgáltatás nem továbbítja a tranzakciós adatokat az adóhatóság fiskális webszolgáltatásának (például a válaszidőtúllépés miatt), és nem kap visszaigazolást a webszolgáltatástól (azaz a tranzakció adóazonosító kódját),, helyi aláírást generál a tranzakcióhoz, és azt, valamint egy speciális hibakódot tartalmaz a válaszban. Az adóregisztrációs szolgáltatás az eredeti sorrendben újraküldi a tranzakciókat a háttérben, amint a hálózati kapcsolat helyreáll.
+Ha a pénzügyi regisztrációs szolgáltatás nem tud tranzakcióadatokat továbbítani az adóhatóságok pénzügyi webszolgáltatásának (például a válasz időtúllépése miatt), és nem kap visszaigazolást a webszolgáltatástól (azaz a tranzakció pénzügyi azonosító kódját), akkor helyi aláírást generál a tranzakcióhoz, és tartalmazza azt, valamint egy speciális hibakódot a válaszban. A pénzügyi regisztrációs szolgáltatás a hálózati kapcsolat visszaállítása után ismét eredeti sorrendben újraküldi a tranzakciókat a háttérben.
 
 ### <a name="limitations-of-the-sample"></a>A minta korlátai
 
-Az adóregisztrációs szolgáltatás csak azokat a forgatókönyveket támogatja, amelyeknél az ár tartalmazza a forgalmi adót. Ezért a **Az ár forgalmi adót tartalmaz** opcióra kell állítani **Igen** üzleteknek és vásárlóknak egyaránt.
+A pénzügyi nyilvántartási szolgáltatás csak azokat a helyzeteket támogatja, amelyekben az ár tartalmazza az adót. Emiatt az üzletek **és** **a** vevők esetében az Ár tartalmazza az áfa beállítását Igen beállítást kell beállítani.
 
-## <a name="set-up-commerce-for-the-czech-republic"></a>A Commerce beállítása a Cseh Köztársaság számára
+## <a name="set-up-commerce-for-the-czech-republic"></a>A Commerce for The Csehország beállítása
 
-Ez a rész a Cseh Köztársaságra jellemző és a Cseh Köztársaság számára ajánlott Kereskedelmi beállításokat ismerteti. További információkért lásd [Kereskedelmi főoldal](../index.md).
+Ez a szakasz a Cseh Köztársaságra jellemző és ajánlott Kereskedelmi beállításokat ismerteti. A további tudnivalókat lásd [a Commerce honlapon](../index.md).
 
-A cseh-specifikus funkciók használatához a következő beállításokat kell megadnia.
+A cseh funkciók használatához a következő beállításokat kell megadni.
 
-- A jogi személy elsődleges címében állítsa be a **Ország/régió** mezőt **CZE** (Cseh Köztársaság).
-- Minden Cseh Köztársaságban található üzlet POS funkcióprofiljában állítsa be a **ISO kód** mezőt **CZ** (Cseh Köztársaság).
+- A jogi személy elsődleges címében **állítsa az Ország/régió** **mezőt CZE** (Csehország) beállításra.
+- Minden Cseh Köztársaságban **található üzlet POS funkcióprofiljában állítsa CZ (Csehország) iso-kód** **mezőt**.
 
-A következő beállításokat is meg kell adnia a Cseh Köztársaságban. Vegye figyelembe, hogy a telepítés befejezése után megfelelő terjesztési feladatokat kell futtatnia.
+A Cseh Köztársaság esetében a következő beállításokat is meg kell adnia. Ne feledje, hogy a beállítások befejezése után futtatnia kell a megfelelő elosztási feladatokat.
 
-### <a name="set-up-vat-per-czech-republic-requirements"></a>Állítsa be az áfát a Cseh Köztársaság szerint
+### <a name="set-up-vat-per-czech-republic-requirements"></a>Cseh Köztársaságonkénti áfakövetelmények beállítása
 
 
-Létre kell hoznia áfakódokat, áfacsoportokat és cikkek forgalmiadó-csoportjait. Ezenkívül be kell állítania a forgalmi adóval kapcsolatos információkat a termékekhez és szolgáltatásokhoz. A forgalmiadó-szolgáltatások beállításával és használatával kapcsolatos további információkért lásd: [A forgalmi adó áttekintése](../../finance/general-ledger/indirect-taxes-overview.md).
+Létre kell hoznia áfakódokat, áfacsoportokat és cikkadócsoportokat. A termékekre és szolgáltatásokra vonatkozó áfaadatokat is be kell állítani. Az áfa funkció beállítási és használatával kapcsolatos további tudnivalókat lásd: [Áfa áttekintése](../../finance/general-ledger/indirect-taxes-overview.md).
 
-### <a name="set-up-stores"></a>Üzletek létrehozása
+### <a name="set-up-stores"></a>Üzletek beállítása
 
-A **Minden üzlet** oldalon, frissítse az üzlet adatait. Pontosabban állítsa be a következő paramétereket.
+Az Üzletek **lapon** frissítse az üzlet adatait. Konkrétabban, állítsa be a következő paramétereket.
 
-- Ban,-ben **Forgalmi adó csoport** mezőben adja meg az áfacsoportot, amelyet az alapértelmezett vevőnek történő értékesítéshez kell használni.
-- Állítsa be a **Az árak tartalmazzák a forgalmi adót** opciót **Igen**.
-- Állítsa be a **Név** mezőbe a cég nevét. Ez a változtatás segít garantálni, hogy a cégnév megjelenjen az értékesítési bizonylaton. Alternatív megoldásként hozzáadhatja a cég nevét az értékesítési bizonylat elrendezéséhez szabad formátumú szövegként.
-- Állítsa be a **Adóazonosító szám (TIN)** mezőben a cégazonosító számra. Ez a változtatás segít garantálni, hogy a cégazonosító szám megjelenjen az értékesítési bizonylaton. Alternatív megoldásként hozzáadhatja a cégazonosító számot az értékesítési bizonylat elrendezéséhez szabad formátumú szövegként.
+- Adja meg **az Áfacsoport** mezőben azt az áfacsoportot, amely az alapértelmezett vevőnek való értékesítéshez használatos.
+- Az Árak tartalmazzák **az áfa beállítást** Igen **beállításra**.
+- Állítsa be **a Név** mezőt a vállalat nevére. Ezzel a módosítással garantálható, hogy a vállalat neve megjelenik az értékesítési nyugtán. Másik lehetőségként a vállalat nevét felveheti az értékesítési nyugtaelrendezésbe szabadszövegként.
+- Állítsa be **az Adóazonosító szám (TIN) mezőt** a vállalat azonosítószáma mezőre. Ezzel a módosítással garantálható, hogy a vállalat azonosítószáma megjelenik az értékesítési nyugtán. Másik lehetőségként a vállalat azonosítóját hozzáadhatja az értékesítési nyugta elrendezéséhez szabadszövegként.
 
 ### <a name="set-up-functionality-profiles"></a>Funkcióprofilok beállítása
 
-Állítsa be a POS funkcióprofilokat.
+POS funkcióprofilok beállítása.
 
-- A **Nyugta számozás** FastTab, állítsa be a nyugtaszámozást a rekordok létrehozásával vagy frissítésével **Eladás**, **rendelés**, és **Visszatérés** átvételi tranzakció típusok.
+- Állítsa be **a** **nyugtaszámozást** a Nyugtaszámozás gyorsábra az értékesítés, **·** **értékesítési** rendelés és visszáru-bevételezési tranzakciótípusok rekordjainak létrehozásával vagy frissítésével.
 
-### <a name="set-up-registration-numbers"></a>Állítsa be a regisztrációs számokat
+### <a name="set-up-registration-numbers"></a>Regisztrációs számok beállítása
 
-1. Menj **Szervezeti adminisztráció \> Globális címjegyzék \> Regisztrációs típusok \> Regisztrációs típusok**. Hozzon létre egy új regisztrációs típust. Adja meg a **Ország/régió** mezőt **CZE** (Cseh Köztársaság), és korlátozza a Szervezetre.
-2. Menj **Szervezeti adminisztráció \> Globális címjegyzék \> Regisztrációs típusok \> Regisztrációs kategóriák**. Hozzon létre egy új regisztrációs kategóriát. Válassza ki a regisztráció típusát az előző lépésből, és állítsa be a **Regisztrációs kategória** nak nek **Üzlethelyiség azonosítója**.
-3. Nyissa meg a következőt: **Szervezeti adminisztráció \> Szervezetek \> Üzemi egységek**. Minden Cseh Köztársaságban található üzlethez válassza ki az üzlethez kapcsolódó egységet. A **Cím** A FastTab bontsa ki a **Több lehetőség** legördülő listából, és válassza ki **Fejlett**. 
-4. A megnyitotton **Címek kezelése** oldalon a következő beállítást kell megadnia.
+1. Ugrás a Szervezetfelügyelet **globális \> címjegyzék regisztrálási \> típusainak \> regisztrálási típusaihoz**. Új regisztrációtípus létrehozása. Adja meg **az Ország/terület** mezőt a **CZE** (Csehország) számára, és csak a szervezetre korlátozza.
+2. Ugrás a Szervezetfelügyelet **globális \> címjegyzék regisztrálási \> típusainak regisztrálási \> kategóriáihoz** Új regisztrációs kategória létrehozása. Válassza ki a regisztráció típusát az előző lépésből, és állítsa **a** **Regisztrációs kategóriát Üzleti előzetes azonosítóra**.
+3. Nyissa meg a következőt: **Szervezeti adminisztráció \> Szervezetek \> Üzemi egységek**. A Cseh Köztársaságban található valamennyi üzletnél válassza ki az üzlethez kapcsolódó egységet. Bontsa ki **a Cím gyorslistában a További** **beállítások legördülő listát, és válassza a Speciális lehetőséget** **.** 
+4. A megnyitott Címek **kezelése lapon** meg kell adnia a következő beállítást.
 
-    - A **Cím** FastTab állítsa be a **Ország/régió** mezőt **CZE**.
-    - A **Regisztrációs azonosító** A FastTab új rekordot hoz létre. Válassza ki a korábban létrehozott regisztrációs típust, és állítsa be a regisztrációs számot.
+    - A Cím gyors területen állítsa az **Ország/terület** **mezőt CZE beállításra**.**·**
+    - Hozzon létre **egy új** rekordot a Regisztrációs azonosító gyors oldalon. Válassza ki a korábban létrehozott regisztrációtípust, és állítsa be a regisztrációs számot.
 
-### <a name="configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts"></a>Állítsa be az egyéni mezőket úgy, hogy azokat az értékesítési bizonylatok nyugtaformátumaiban lehessen használni
+### <a name="configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts"></a>Egyéni mezők konfigurálása az értékesítési nyugták nyugtaformátumában való használhatóra
 
-Beállíthatja a POS nyugtaformátumokban használt nyelvi szöveget és egyéni mezőket. A nyugtabeállítást létrehozó felhasználó alapértelmezett cégének ugyanannak a jogi személynek kell lennie, mint ahol a nyelvi szövegbeállítás létrejött. Alternatív megoldásként ugyanazokat a nyelvű szövegeket kell létrehozni a felhasználó alapértelmezett vállalatában és annak az áruháznak a jogi személyében, amelyhez a beállítást létrehozták.
+A POS nyugtaformátumokban használt nyelvi szövegeket és egyéni mezőket beállíthatja. A nyugtabeállítást létrehozó felhasználó alapértelmezett vállalatának ugyanaznak kell lennie, mint ahol a nyelvi szöveg beállítása létre van hozva. Másik lehetőségként ugyanazt az idegen nyelvű szöveget kell létrehozni a felhasználó alapértelmezett vállalatában, valamint annak az üzletnek a jogi személyében, amely számára a beállítást létrehozták.
 
-A **Nyelvi szöveg** oldalon adja hozzá a következő rekordokat a nyugtaelrendezések egyéni mezőinek címkéihez. Vegye figyelembe, hogy a **Nyelvazonosító**, **azonosító**, és **Szöveg** a táblázatban szereplő értékek csak példák. Módosíthatja őket, hogy megfeleljenek igényeinek. Azonban a **Szöveges azonosító** A használt értékeknek egyedinek kell lenniük, és egyenlőnek vagy nagyobbaknak kell lenniük a 900001 értékkel.
+Adja hozzá **a Nyelv szöveglapon** a következő rekordokat a nyugtaelrendezések egyéni mezőinek címkéihez. Ne feledje, **hogy** **a táblázatban** látható nyelvazonosító, **szövegazonosító** és szöveg értékek példák. A beállításokat az igényeknek megfelelően módosíthatja. A használt **szövegazonosító** értékeknek azonban egyedinek kell lennie, és nem lehet kisebbek a 900001.
 
-Adja hozzá a következő POS-címkéket a **pozíció** szakasza **Nyelvi szöveg** a táblázatból:
+Adja hozzá a következő POS-címkéket **a** tábla Nyelvi szövegének **POS** szakaszához:
 
 | Nyelvazonosító | Szövegazonosító | Szöveg                   |
 |-------------|---------|------------------------|
-| hu-US       | 900001  | ID provozovny/pokladny |
-| hu-US       | 900002  | BKP                    |
-| hu-US       | 900003  | PKP                    |
-| hu-US       | 900004  | FIK                    |
-| hu-US       | 900005  | Információ                   |
-| hu-US       | 900006  | Sorszám        |
+| hu-USA       | 900001  | Azonosító: provoz proxy/pokladny |
+| hu-USA       | 900002  | BKP                    |
+| hu-USA       | 900003  | KKP                    |
+| hu-USA       | 900004  | FIK                    |
+| hu-USA       | 900005  | Információ                   |
+| hu-USA       | 900006  | Sorszám        |
 
-A **Egyéni mezők** oldalon adja hozzá a következő rekordokat a nyugtaelrendezések egyéni mezőihez. Vegye figyelembe, hogy **Felirat szövegének azonosítója** értékeknek meg kell felelniük a **Szöveges azonosító** oldalon megadott értékeket **Nyelvi szöveg** oldal:
+Adja hozzá **a** következő rekordokat az Egyéni mezők lapon a nyugtaelrendezések egyéni mezőihez. A felirat **szövegazonosító értékeinek** meg **·** **kell felelniük a Nyelv szövegoldalán megadott szövegazonosító értékeknek:**
 
 | Név                 | Típus    | Képaláírás-szöveg azonosítója |
 |----------------------|---------|-----------------|
 | TLT                  | Fogadás | 900001          |
 | SEC                  | Fogadás | 900002          |
 | JEL                 | Fogadás | 900003          |
-| FISKÁLIS               | Fogadás | 900004          |
+| PÉNZÜGYI               | Fogadás | 900004          |
 | INFO                 | Fogadás | 900005          |
-| FOLYAMATOS SZÁM     | Fogadás | 900006          |
+| FOLYTONOS SZÁM     | Fogadás | 900006          |
 
 > [!NOTE]
-> Fontos, hogy helyes egyéni mezőneveket adjon meg, az előző táblázatban felsoroltak szerint. A helytelen egyéni mezőnév adatok hiányát okozza a nyugtákban.
+> Fontos, hogy a megfelelő egyéni mezőneveket adja meg az előző táblázatban felsoroltak szerint. Helytelen egyéni mezőnév esetén hiányoznak az adatok a nyugtákból.
 
-### <a name="configure-receipt-formats"></a>Konfigurálja a nyugtaformátumokat
+### <a name="configure-receipt-formats"></a>Nyugtaformátumok konfigurálása
 
-Minden szükséges nyugtaformátumnál módosítsa az értékét **Nyomtatási viselkedés** mezőt **Mindig nyomtasson**.
+Minden szükséges bevételezési formátumnál módosítsa **a** Nyomtatás viselkedése mező értékét "Mindig **nyomtatás" értékre**.
 
-A Nyugtaformátum-tervezőben adja hozzá a következő egyéni mezőket a megfelelő nyugtarészekhez. Vegye figyelembe, hogy a mezőnevek megfelelnek az előző szakaszban megadott nyelvi szövegeknek.
+A Nyugtaformátum-tervezőben adja hozzá a következő egyéni mezőket a megfelelő nyugtaszakaszokhoz. A mezőnevek megfelelnek az előző szakaszban meghatározott nyelvszövegnek.
 
 - **Fejléc:** Adja hozzá a következő mezőket.
 
-    - **Az üzlet neve** és **Adószám** : ezek a mezők a cégnév és az azonosító szám nyomtatására szolgál a nyugtákra. Alternatív megoldásként hozzáadhatja a cégnevet és az azonosító számot az elrendezéshez szabad formátumú szövegként.
-    - **Az üzlet címe**, **·**, **24 óra**, **száma**, és **Regisztrációs szám**.
-    - **Sorszám** : ez a mező azonosítja a készpénzes tranzakció számát az adónyilvántartási szolgáltatásban.
+    - **Üzlet neve** és **adóazonosító száma**: ezekkel a mezőkkel nyomtatható ki a vállalat neve és azonosítószáma a nyugtákra. Másik lehetőségként a vállalat nevét és azonosító számát is hozzáadhatja az elrendezéshez szabadszövegként.
+    - **Üzlet címe**, **dátuma**, **ideje 24 órás**, **nyugtaszám** és pénztárgép **száma**.
+    - **Sorszám**: ez a mező azonosítja a készpénztranzakció számát a pénzügyi regisztrációs szolgáltatásban.
 
 - **Sorok:** Adja hozzá a következő mezőket.
 
     - **Cikknév**
     - **Mennyiség**
-    - **Teljes ár áfával**
+    - **Teljes ár adóval**
 
 - **Lábléc:** Adja hozzá a következő mezőket.
 
-    - Fizetési mezők, így az egyes fizetési módokhoz tartozó fizetési összegek kinyomtatásra kerülnek. Például adja hozzá a **Pályázat neve** és **Pályázati összeg** mezőket az elrendezés egyik sorába.
-    - **ID provozovny/pokladny** : ez a mező írja ki az üzlethelyiség és a pénztárgép azonosítóit.
-    - **BKP** : ez a mező kiírja az adózó biztonsági kódját, amelyet az adónyilvántartási szolgáltatás rendelt.
-    - **FIK** : ez a mező a tranzakció adózási azonosító kódját írja ki, amelyet sikeres online regisztráció esetén az adóhatóság webszolgáltatása ad hozzá.
-    - **PKP** : ez a mező az adózó aláírási kódját írja ki, amelyet offline regisztráció esetén az adónyilvántartási szolgáltatás generál.
-    - **Info** : ez a mező az adóregisztrációs szolgáltatásból származó további információkat nyomtatja ki.
+    - Fizetési mezők, amelyek segítségével kinyomtathatók az egyes fizetési módok kifizetési összegei. Hozzáadhatja például a **Fizetőeszköz neve** **és** a Fizetőeszköz összege mezőket az elrendezés egy sorában.
+    - **Provoz proxy/pokladny** azonosító: ez a mező kinyomtatja az üzleti létesítmény és a pénztárgép azonosítóit.
+    - **BKP**: ez a mező kinyomtatja az adófizető biztonsági kódját, amelyet a pénzügyi regisztrációs szolgáltatás rendel hozzá.
+    - **FIK**: sikeres online regisztráció esetén az adóhatóság webszolgáltatása által hozzárendelt tranzakció pénzügyi azonosító kódját nyomtatja ki ez a mező.
+    - **PKP**: ez a mező kinyomtatja az adófizető aláírási kódját, amelyet a pénzügyi regisztrációs szolgáltatás generál offline regisztráció esetén.
+    - **Információ**: ez a mező a pénzügyi regisztrációs szolgáltatás további adatait nyomtatja ki.
 
-A beérkezési formátumok működéséről a Beérkezési formátumok [beállítása és tervezése című témakörben talál](../receipt-templates-printing.md) további információt.
+A nyugtaformátumok beállításával [és tervezésával kapcsolatos további tudnivalókat lásd a Nyugtaformátumok beállításával és tervezésával kapcsolatban](../receipt-templates-printing.md).
 
-## <a name="set-up-fiscal-integration-for-the-czech-republic"></a>Fiskális integráció létrehozása a Cseh Köztársaság számára
+## <a name="set-up-fiscal-integration-for-the-czech-republic"></a>Pénzügyi integráció beállítása a Cseh Köztársaság számára
 
-A Cseh Köztársaság fiskális regisztrációs szolgáltatás integrációs mintája a [fiskális integrációs funkcionalitás](fiscal-integration-for-retail-channel.md) és a Retail SDK része. A minta a **Solutions\\ adattár srcFiscalIntegration\\Efr**[Dynamics 365 Commerce mappájában](https://github.com/microsoft/Dynamics365Commerce.Solutions/) található (például [a kiadási/9.33-as](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr) minta). A minta [egy pénzügyi bizonylatszolgáltatóból áll](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services), amely a Commerce futtatókörnyezet (CRT) kiterjesztése, és egy fiskális összekötőből, amely a Commerce Hardware Station kiterjesztése. A Kiskereskedelmi SDK használatáról a Retail SDK architektúrája [és](../dev-itpro/retail-sdk/retail-sdk-overview.md) build-folyamat beállítása a független csomagolású SDK-hoz [című témakörben talál](../dev-itpro/build-pipeline.md) további információt.
+A Cseh Köztársaság pénzügyi nyilvántartási [szolgáltatásintegrációs](fiscal-integration-for-retail-channel.md) mintája a pénzügyi integrációs funkciókon alapul, és része a Retail SDK csomagnak. A minta a megoldástárház **srcFiscalIntegrationEfr\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található ([például a release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr) mintában). A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, amely a Commerce runtime () futási idő kiterjesztése CRT, és egy pénzügyi csatlakoztató, amely a Commerce Hardware Station kiterjesztése. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
 
 > [!WARNING]
-> Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját egy fejlesztői virtuális gépen (VM) kell használnia az Microsoft Dynamics Életciklus-szolgáltatásokban (LCS). További információkért lásd [Beépítési irányelvek a Cseh Köztársaság költségvetési integrációs mintájához (örökölt)](emea-cze-fi-sample-sdk.md).
+> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK korábbi verzióját egy fejlesztő virtuális gépen (VM) kell használnia a Lifecycle Services (LCS) Microsoft Dynamics szolgáltatásban. A további tudnivalókat [lásd a Cseh Köztársaság pénzügyi integrációs mintája (legacy) telepítési irányelveinél](emea-cze-fi-sample-sdk.md).
 >
-> A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
+> Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
-Végezze el a költségvetési integráció beállítási lépéseit [a Kereskedelmi csatornák](setting-up-fiscal-integration-for-retail-channel.md) pénzügyi integrációjának beállítása:
+A pénzügyi integráció beállítási lépéseit [a Commerce-csatornákhoz való pénzügyi integráció beállítása lépései szerint lehet végrehajtani](setting-up-fiscal-integration-for-retail-channel.md):
 
-1. [Hozzon létre egy pénzügyi regisztrációs folyamatot](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Jegyezze fel a pénzügyi regisztrációs folyamatnak [a pénzügyi regisztrációs szolgáltatásintegrációs mintájára](#set-up-the-registration-process) jellemző beállításait is.
-1. [Állítsa be a hibakezelési beállításokat](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Az elhalasztott adóregisztráció](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration) manuális végrehajtásának engedélyezése.
-1. [Csatornaösszetevők konfigurálása](#configure-channel-components).
+1. [Pénzügyi regisztrációs folyamat beállítása](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Ezenkívül jegyezze fel a [pénzügyi nyilvántartási folyamatnak az ehhez a pénzügyi regisztrációs szolgáltatásintegrációs mintához specifikus beállításait](#set-up-the-registration-process).
+1. [Hibakezelési beállítások megadása](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+1. [Halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezése](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration)
+1. [Csatornaösszetevők konfigurálása](#configure-channel-components)
 
 ### <a name="set-up-the-registration-process"></a>A regisztrációs folyamat beállítása
 
-A regisztrációs folyamat engedélyezéséhez kövesse az alábbi lépéseket a Kereskedelmi központ beállításához. További információ: [A kereskedelmi csatornák](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process) pénzügyi integrációjának beállítása.
+A regisztráció engedélyezéséhez kövesse az alábbi lépéseket a Commerce Headquarters beállításához. A további tudnivalókat lásd [A Commerce-csatornák pénzügyi integrációjának beállítása.](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process)
 
-1. Konfigurációs fájlok letöltése a pénzügyi dokumentumszolgáltatóhoz és a pénzügyi összekötőhöz:
+1. A pénzügyi bizonylat szolgáltatójának és a pénzügyi csatlakoztatónak megfelelő konfigurációs fájlok letöltése:
 
-    1. Nyissa meg a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattárat.
-    1. Válassza ki a megfelelő kiadási ágverziót az SDK/alkalmazás verziója szerint (például **[release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**).
-    1. Nyissa meg **az src \> FiscalIntegration \> Efr**.
-    1. Töltse le az adódokumentum-szolgáltató konfigurációs fájlját a következő címről: **Konfigurációk \> Dokumentumszolgáltatók \> DocumentProviderFiscalEFRSampleCzech.xml** (például, [a kiadáshoz tartozó fájl/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders/DocumentProviderFiscalEFRSampleCzech.xml)).
-    1. Töltse le a pénzügyi összekötő konfigurációs fájlját a **Configurations \> Connectors \> ConnectorEFRSample.xml** (például [a kiadáshoz szükséges fájl/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
+    1. Nyissa meg [Dynamics 365 Commerce a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions/).
+    1. Az SDK/alkalmazás verziójának (**[például kiadás/9.33) megfelelő kiadási ágverzió kiválasztása](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33)**.
+    1. A **pénzügyiintegration-efr.rc \>\> megnyitása**
+    1. Töltse le a pénzügyi bizonylat szolgáltatójának konfigurációs **fájlját a Configurations \> DocumentProviders \> DocumentProviderFiscalEFRSample Xml.xml** fájlban ([például a release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/DocumentProviders/DocumentProviderFiscalEFRSampleCzech.xml) fájlban).
+    1. Töltse le a pénzügyi csatlakoztató konfigurációs fájlját **a Configurations Connectors \>\> ConnectorEFRSample.xml** fájlban ([például a release/9.33 fájlban](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.33/src/FiscalIntegration/Efr/Configurations/Connectors/ConnectorEFRSample.xml)).
 
     > [!WARNING]
-    > Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői virtuális gépen az LCS-ben. A pénzügyi integrációs minta konfigurációs fájljai a Retail SDK következő mappáiban találhatók egy fejlesztői virtuális gépen az LCS-ben:
+    > Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A pénzügyi integrációs minta konfigurációs fájljai a Retail SDK készlet alábbi mappáiban találhatók az LCS egy fejlesztői VIRTUÁLIS eszközében:
     >
-    > - **Fiskális dokumentum-szolgáltató konfigurációs fájlja:** RetailSdk\\ SampleExtensions\\ CommerceRuntime\\ Extensions.DocumentProvider.EFRSample\\ Konfiguráció\\ DocumentProviderFiscalEFRSampleCzech.xml
-    > - **Fiskális csatlakozási konfigurációs fájl:** RetailSdk\\ SampleExtensions\\ HardwareStation\\ Kiterjesztés.EFRSminta\\ Konfiguráció\\ CsatlakozóEFRSample.xml
+    > - **Pénzügyi bizonylat szolgáltatójának konfigurációs fájlja:** RetailSdkSampleExtensionsCommerceRuntimeExtensions.DocumentProvider.EFRSampleConfigurationDocumentProviderFiscalEFRSample\\\\\\\\\\ Sample.xml
+    > - **Pénzügyi csatlakoztató konfigurációs fájlja:** RetailSdkSampleExtensionsHardwareStationExtension.EFRSampleConfigurationConnectorEFRSample.xml\\\\\\\\\\
     > 
-    > A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
+    > Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
-1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce megosztott paraméterek** menüpontra. Az Általános **lapon állítsa a** Költségvetési integráció **engedélyezése beállítást Igen értékre** **.**
-1. Menj **Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Fiskális integráció \> Fiskális dokumentumszolgáltatók**, és töltse be a korábban letöltött adódokumentum-szolgáltató konfigurációs fájlját.
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Pénzügyi összekötők, és töltse be a korábban letöltött pénzügyi összekötő konfigurációs** fájlt.
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integrációs \> összekötő funkcionális profiljai**. Hozzon létre egy új csatlakozó funkcionális profilt. Válassza ki a dokumentumszolgáltatót és a korábban betöltött csatlakozót. Szükség szerint frissítse az [adatleképezési beállításokat](#default-data-mapping).
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Összekötő technikai profiljai**. Hozzon létre egy új összekötő műszaki profilját, és válassza ki a korábban betöltött pénzügyi összekötőt. Szükség szerint frissítse az [összekötő beállításait](#fiscal-connector-settings).
-1. Lépjen a **Kiskereskedelem és kereskedelem \> csatorna beállítására \> Pénzügyi integráció \> Pénzügyi összekötő csoportok**. Hozzon létre egy új pénzügyi összekötő-csoportot a korábban létrehozott összekötő funkcionális profilhoz.
-1. Lépjen a **Kiskereskedelmi és kereskedelmi \> csatorna beállítására \> Pénzügyi integráció \> Pénzügyi regisztrációs folyamatok**. Hozzon létre egy új adóregisztrációs folyamatot és egy fiskális regisztrációs folyamat lépést, és válassza ki a korábban létrehozott adóösszekötő csoportot.
-1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**. Válasszon ki egy olyan funkcióprofilt, amely ahhoz az üzlethez kapcsolódik, ahol a regisztrációs folyamatot aktiválni kell. **A Pénzügyi regisztrációs folyamat** gyorslapon válassza ki a korábban létrehozott pénzügyi regisztrációs folyamatot.
-1. Lépjen a **Kiskereskedelem és kereskedelem \> Csatorna beállítás \> POS beállítás \> POS profilok \> Hardverprofilok** pontra. Válasszon ki egy hardverprofilt, amely ahhoz a hardverállomáshoz kapcsolódik, amelyhez a pénzügyi nyomtató csatlakozik. **A Pénzügyi perifériák** gyorslapon válassza ki a korábban létrehozott összekötő műszaki profilját.
-1. Nyissa meg a terjesztési ütemezést (**Kiskereskedelmi és \> kereskedelmi kiskereskedelem és kereskedelem IT-terjesztési \> ütemezése**), és válassza az 1070-es és **1090-es** **feladatokat** az adatok csatornaadatbázisba történő átviteléhez.
+1. Lépjen a **Retail és Commerce \> Központ beállítása \> Paraméterek \> Commerce megosztott paraméterek** menüpontra. Az Általános **lapon** állítsa **a** Pénzügyi integráció engedélyezése lehetőséget Igen **beállításra**.
+1. Menjen a **Retail és Commerce \> Csatorna beállítása pénzügyi \> integráció \> pénzügyi dokumentumszolgáltatóihoz**, és töltse be a korábban letöltött pénzügyidokumentum-szolgáltató konfigurációs fájlját.
+1. Menjen a **Retail és Commerce \> csatorna beállítása \> Pénzügyi integráció \> pénzügyi csatlakoztatóihoz**, és töltse be a korábban letöltött pénzügyi csatlakoztató konfigurációs fájlját.
+1. Ugrás a **Retail és Commerce \> csatorna beállítása \> Fiscal integration \> Connector funkcionális profiljaihoz**. Új funkcionális csatlakoztatóprofil létrehozása. Válassza ki a korábban betöltött dokumentumszolgáltatót és csatlakoztatót. Szükség szerint [frissítse az adatleképezés](#default-data-mapping) beállításait.
+1. Ugrás a **Retail és Commerce \> csatorna beállítása \> Fiscal integration \> Connector műszaki profilokhoz**. Hozzon létre egy új technikai csatlakoztatóprofilt, és válassza ki a korábban betöltött pénzügyi csatlakoztatóját. Szükség szerint [frissítse a csatlakoztató](#fiscal-connector-settings) beállításait.
+1. Ugrás a **Retail és Commerce \> csatorna beállítása Pénzügyi \> integráció \> Pénzügyi csatlakoztatócsoportjához** Hozzon létre egy új pénzügyi csatlakoztatócsoportot a korábban létrehozott csatlakoztató funkcionális profil számára.
+1. Ugrás a Kiskereskedelmi és **Commerce csatorna \> beállítása pénzügyi \> integráció \> pénzügyi regisztrációs folyamatainak lépéseihez**. Hozzon létre egy új pénzügyi regisztrációs folyamatot és egy pénzügyi nyilvántartási folyamat lépését, és válassza ki a korábban létrehozott pénzügyi csatlakoztatócsoportot.
+1. Ugorjon a következő elemre: **Retail és Commerce \>  Csatorna beállítása \> Pénztárbeállítás \>  Pénztárprofilok \> Funkcióprofilok**. Válasszon ki egy funkcióprofilt, amely ahhoz az üzlethez kapcsolódik, ahol aktiválni kell a regisztrációs folyamatot. A Pénzügyi regisztráció **folyamata** gyors oldalon válassza ki a korábban létrehozott pénzügyi regisztrációs folyamatot.
+1. Lépjen a **Kiskereskedelem és kereskedelem \> Csatorna beállítás \> POS beállítás \> POS profilok \> Hardverprofilok** pontra. Válassza ki azt a hardverprofilt, amely ahhoz a hardverállomáshoz van kapcsolva, amelyhez a pénzügyi nyomtató csatlakozik. Válassza ki a **korábban** létrehozott csatlakoztató-technikai profilt a Pénzügyi perifériák gyorstára.
+1. Nyissa meg az elosztási ütemezést (**Retail and Commerce \> Retail és Commerce IT \> Distribution schedule**), **majd válassza ki a 1070-es** **és 1090-es** feladatokat az adatoknak a csatorna-adatbázisba történő átviteléhez.
 
 #### <a name="default-data-mapping"></a>Alapértelmezett adatleképezés
 
-A költségvetési integrációs minta részeként megadott pénzügyi bizonylatszolgáltató konfigurációja a következő alapértelmezett adatleképezést tartalmazza:
+A pénzügyiintegrációs minta részeként megadott pénzügyi bizonylatszolgáltató konfigurációja a következő alapértelmezett adatleképezést tartalmazza:
 
-- **Hozzáadottérték-adó (ÁFA) díjak leképezése** – Az áfakódokhoz beállított adószázalékértékek leképezése a **TaxG** (adócsoport) attribútum értékeihez a adószolgáltatásnak küldött kérelmekben. Íme az alapértelmezett leképezés:
+- **Áfakulcsok megfeleltetése** – **az áfakódok százalékértékének megfeleltetése a pénzügyi szolgáltatásnak elküldött kérések TaxG** (adócsoport) attribútumának értékeihez. Az alapértelmezett hozzárendelés:
 
     ```
     A: 21.00; B: 15.00; C: 10.00; Z: 0.00
     ```
 
-    Az egyes párok első összetevője egy áfaadó-csoportot képvisel, amelyet az EFR adóregisztrációs szolgáltatás támogat. A második összetevő a megfelelő héakulcsot képviseli. Az EFR által a Cseh Köztársaságban támogatott áfa-adócsoportokkal kapcsolatos további információkért lásd a [EFR hivatkozás](https://public.efsta.net/efr/).
+    Minden pár első összetevője egy áfacsoportot képvisel, amelyet az EFR pénzügyi regisztrációs szolgáltatás támogat. A második összetevő a megfelelő áfakulcsot képviseli. Az EFR által a Cseh Köztársaság számára támogatott áfacsoportokkal kapcsolatban lásd [az EFR-hivatkozást](https://public.efsta.net/efr/).
 
-- **Alapértelmezett áfacsoport-leképezés** – Minden olyan áfaösszeg, amely nem rendelhető hozzá valamelyik előre meghatározott áfacsoporthoz, az alapértelmezett (alap) áfacsoporthoz lesz rendelve. Íme az alapértelmezett leképezés:
+- **Alapértelmezett áfacsoport-hozzárendelés** – minden olyan áfaösszeget, amely nem leképezhető egy előre meghatározott áfacsoportra, az alapértelmezett (alapvető) áfacsoporthoz lesz hozzárendelve. Az alapértelmezett hozzárendelés:
 
     ```
     A
     ```
 
-- **Betéti ÁFA csoport leképezés** – A vevői betét összegei és a vevői rendelési betét összegei a betéti ÁFA csoporthoz tartoznak. Íme az alapértelmezett leképezés:
+- **Letéti áfacsoport hozzárendelése** – a vevő letéti összegei és a vevői rendelés letéti összegei a letéti áfacsoporthoz lesznek rendelve. Az alapértelmezett hozzárendelés:
 
     ```
     Z
     ```
 
-#### <a name="fiscal-connector-settings"></a>Pénzügyi összekötő beállításai
+#### <a name="fiscal-connector-settings"></a>Pénzügyi csatlakoztató beállításai
 
-A költségvetési integrációs minta részeként megadott pénzügyi összekötő konfiguráció a következő beállításokat tartalmazza:
+A pénzügyi integrációs minta részeként biztosított pénzügyi csatlakoztató konfigurációja a következő beállításokat tartalmazza:
 
-- **Végpont címe** – A pénzügyi regisztrációs szolgáltatás URL-címe.
-- **Időtúllépés** – Az az idő, ezredmásodpercben, ameddig a fiskális összekötő vár a fiskális regisztrációs szolgáltatás válaszára.
+- **Végpont címe** – a pénzügyi regisztrációs szolgáltatás URL-címe.
+- **Időtúllépés** – az az idő ezredmásodpercben, ahányszor a pénzügyi csatlakoztató választ vár a pénzügyi regisztrációs szolgáltatástól.
 
 ### <a name="configure-channel-components"></a>Csatornaösszetevők konfigurálása
 
 > [!WARNING]
-> Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői virtuális gépen az LCS-ben. További információkért lásd [Beépítési irányelvek a Cseh Köztársaság költségvetési integrációs mintájához (örökölt)](emea-cze-fi-sample-sdk.md).
+> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat [lásd a Cseh Köztársaság pénzügyi integrációs mintája (legacy) telepítési irányelveinél](emea-cze-fi-sample-sdk.md).
 >
-> A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
+> Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
-#### <a name="set-up-the-development-environment"></a>A fejlesztési környezet beállítása
+#### <a name="set-up-the-development-environment"></a>A fejlesztői környezet beállítása
 
-A minta tesztelésére és kiterjesztésére vonatkozó fejlesztési környezet beállításához kövesse az alábbi lépéseket.
+A minta tesztelésére és kiterjesztésére fejlesztői környezet beállításához kövesse az alábbi lépéseket.
 
-1. Klónozza vagy töltse le a [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions) adattárat. Válassza ki a megfelelő kiadási ágverziót az SDK/alkalmazás verziójának megfelelően. További információkért lásd [Töltsön le Retail SDK-mintákat és referenciacsomagokat a GitHubból és a NuGet](../dev-itpro/retail-sdk/sdk-github.md).
-1. Nyissa meg az EFR-megoldást itt: **Dynamics365Commerce.Solutions\\ Fiskális integráció\\ Efr\\ EFR.sln**, és megépíteni.
-1. Telepítés CRT kiterjesztések:
+1. Le kell tölteni vagy le kell [Dynamics 365 Commerce tölteni a megoldástárházat](https://github.com/microsoft/Dynamics365Commerce.Solutions). Válassza ki a kiadási ág megfelelő verzióját az SDK-nak vagy az alkalmazásverziónak megfelelően. A további tudnivalókat lásd [a Retail SDK-minta- és hivatkozáscsomagok letöltése aHub és a NuGet](../dev-itpro/retail-sdk/sdk-github.md).
+1. Nyissa meg az EFR-megoldást **a Dynamics365Commerce.SolutionsFiscalIntegrationEfrEFR.sln\\\\\\ fájlban**, és építse fel.
+1. A következő CRT bővítmények telepítése:
 
-    1. Találd meg CRT bővítmény telepítő:
+    1. A bővítmény telepítője CRT:
 
-        - **Kereskedelmi mértékegység:** Ban,-ben **Efr\\ ScaleUnit\\ ScaleUnit.EFR.Installer\\ kuka\\ Debug\\ net461** mappát, keresse meg a **ScaleUnit.EFR.Installer** telepítő.
-        - **Helyi CRT a modern POS-on:** Ban,-ben **Efr\\ Modern POS\\ ModernPOS.EFR.Installer\\ kuka\\ Debug\\ net461** mappát, keresse meg a **ModernPOS.EFR.Installer** telepítő.
+        - **Commerce Scale Unit:** Az EfrScaleUnitScaleUnit.EFR.InstallerbinDebugnet461 **\\\\\\\\\\** mappában keresse meg a ScaleUnit.EFR.Installer **telepítőjét.**
+        - **Helyi CRT a Modern POS terminálon:** Az **EfrModernPOSModernPOS.EFR.InstallerbinDebugnet461\\\\\\\\\\ mappában** keresse meg a **ModernPOS.EFR.Installer** telepítőjét.
 
-    1. Indítsa el a CRT kiterjesztés telepítője a parancssorból:
+    1. A kiterjesztés telepítőjét CRT a következő parancssorból indítja el:
 
-        - **Kereskedelmi mértékegység:**
+        - **Commerce Scale Unit:**
 
             ```Console
             ScaleUnit.EFR.Installer.exe install --verbosity 0
             ```
 
-        - **Helyi CRT a modern POS-on:**
+        - **Helyi CRT a Modern POS terminálon:**
 
             ```Console
             ModernPOS.EFR.Installer.exe install --verbosity 0
             ```
 
-1. Hardverállomás-bővítmények telepítése:
+1. Pénzügyi csatlakoztató-bővítmények telepítése:
 
-    1. Ban,-ben **Efr\\ HardwareStation\\ HardwareStation.EFR.Telepítő\\ kuka\\ Debug\\ net461** mappát, keresse meg a **HardwareStation.EFR.Telepítő** telepítő.
-    1. Indítsa el a bővítménytelepítőt a parancssorból:
+    A pénzügyi csatlakoztató bővítményei a hardverállomásra [vagy](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-connected-to-the-hardware-station) a PÉNZTÁRi pénztárgépre [telepíthetők](fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-via-a-device-or-service-in-the-local-network).
 
-        ```Console
-        HardwareStation.EFR.Installer.exe install --verbosity 0
-        ```
+    1. Hardverállomás-bővítmények telepítése:
+
+        1. **Az EfrHardwareStationHardwareStation.EFR.InstallerbinDebugnet461\\\\\\\\\\** **mappában keresse meg a HardwareStation.EFR.Installer** telepítőjét.
+        1. A kiterjesztés telepítőjét a parancssorból a következő parancs futtatásával indítja el.
+
+            ```Console
+            HardwareStation.EFR.Installer.exe install --verbosity 0
+            ```
+
+    1. Pos-bővítmények telepítése:
+
+        1. Nyissa meg a POS pénzügyi **csatlakoztató minta megoldását a Dynamics365Commerce.SolutionsFiscalIntegrationPosFiscalConnectorSampleContoso.PosFiscalConnectorSample.sln\\\\\\** fájlban, és építse ki.
+        1. **A PosFiscalConnectorSampleStoreCommerce.InstallerbinDebugnet461\\\\\\\\** **mappában keresse meg a Contoso.PosFiscalConnectorSample.StoreCommerce.Installer** telepítőjét.
+        1. A kiterjesztés telepítőjét a parancssorból a következő parancs futtatásával indítja el.
+
+            ```Console
+            Contoso.PosFiscalConnectorSample.StoreCommerce.Installer.exe install --verbosity 0
+            ```
 
 #### <a name="production-environment"></a>Működési környezet
 
-Kövesse a lépéseket [Állítson be egy összeállítási folyamatot a fiskális integrációs mintához](fiscal-integration-sample-build-pipeline.md) a Cloud Scale Unit és az önkiszolgáló telepíthető csomagok létrehozása és kiadása a költségvetési integrációs mintához. A **EFR build-pipeline.yml** sablon YAML fájl megtalálható a **Csővezeték\\ YAML_Files** mappa a [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions) adattár.
+Hajtsa végre [a pénzügyi integrációs minta felépítési folyamatának beállításához szükséges lépéseket a](fiscal-integration-sample-build-pipeline.md) felhőskálaegység és az önkiszolgáló rendszer telepíthető csomagjainak előállításához és kiadásához a pénzügyi integrációs mintához. Az **EFR build-pipeline.yml** sablonFÁJL a csővezetékben **\\ található YAML_Files**[Dynamics 365 Commerce a](https://github.com/microsoft/Dynamics365Commerce.Solutions) megoldástárház mappájában.
 
-## <a name="design-of-extensions"></a>Bővítések tervezése
+## <a name="design-of-extensions"></a>Bővítmények tervezése
 
-A Cseh Köztársaság fiskális regisztrációs szolgáltatás integrációs mintája a [fiskális integrációs funkcionalitás](fiscal-integration-for-retail-channel.md) és a Retail SDK része. A minta a **Solutions\\ adattár srcFiscalIntegration\\Efr**[Dynamics 365 Commerce mappájában](https://github.com/microsoft/Dynamics365Commerce.Solutions/) található (például [a kiadási/9.33-as](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr) minta). A minta [áll](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) egy fiskális dokumentumszolgáltató, amely a kiterjesztése CRT és egy fiskális csatlakozó, amely a Commerce Hardware Station kiterjesztése. A Kiskereskedelmi SDK használatáról a Retail SDK architektúrája [és](../dev-itpro/retail-sdk/retail-sdk-overview.md) build-folyamat beállítása a független csomagolású SDK-hoz [című témakörben talál](../dev-itpro/build-pipeline.md) további információt.
+A Cseh Köztársaság pénzügyi nyilvántartási [szolgáltatásintegrációs](fiscal-integration-for-retail-channel.md) mintája a pénzügyi integrációs funkciókon alapul, és része a Retail SDK csomagnak. A minta a megoldástárház **srcFiscalIntegrationEfr\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található ([például a release/9.33](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.33/src/FiscalIntegration/Efr) mintában). A minta [egy](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) pénzügyi dokumentumszolgáltatóból áll, CRT amely a Commerce Hardverállomás kiterjesztése, és egy pénzügyi csatlakoztató. A Retail SDK használatával kapcsolatos további tudnivalókat lásd a Retail SDK [architektúrája és a független csomagolásos SDK](../dev-itpro/retail-sdk/retail-sdk-overview.md)[felépítési csővezetékének beállítása.](../dev-itpro/build-pipeline.md)
 
 > [!WARNING]
-> Az új független csomagolási és kiterjesztési [modell](../dev-itpro/build-pipeline.md) korlátai miatt jelenleg nem használható ehhez a költségvetési integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői virtuális gépen az LCS-ben. További információkért lásd [Beépítési irányelvek a Cseh Köztársaság költségvetési integrációs mintájához (örökölt)](emea-cze-fi-sample-sdk.md). A költségvetési integrációs minták új független csomagolási és kiterjesztési modelljének támogatását tervezik a későbbi verziókhoz.
+> Az új független csomagolási és [bővítési](../dev-itpro/build-pipeline.md) modell korlátai miatt jelenleg nem használható ehhez a pénzügyi integrációs mintához. A Retail SDK előző verzióját kell használnia egy fejlesztői VM-n az LCS-en. A további tudnivalókat [lásd a Cseh Köztársaság pénzügyi integrációs mintája (legacy) telepítési irányelveinél](emea-cze-fi-sample-sdk.md). Az új független csomagolási és kiterjesztésmodell támogatása a pénzügyi integrációs mintákkal a későbbi verziókban tervezve lesz.
 
-### <a name="commerce-runtime-extension-design"></a>Kereskedelmi futásidejű bővítmény tervezése
+### <a name="commerce-runtime-extension-design"></a>Commerce runtime bővítmény tervezése
 
-Az adódokumentum-szolgáltató bővítmény célja szolgáltatás-specifikus dokumentumok előállítása és válaszok kezelése az adónyilvántartási szolgáltatástól.
-
-#### <a name="request-handler"></a>Kérelemkezelő
-
-Egyetlen van **DocumentProviderEFRFiscalCZE** dokumentumszolgáltató kéréskezelője, amely az adónyilvántartási szolgáltatás adódokumentumainak előállítására szolgál.
-
-Ezt a kezelőt a **INamedRequestHandler** felület. A **HandlerName** metódus felelős a kezelő nevének visszaadásáért. A kezelő nevének meg kell egyeznie a Kereskedelmi központban megadott összekötő dokumentumszolgáltató nevével.
-
-Az összekötő a következő kéréseket támogatja.
-
-- **GetFiscalDocumentDocumentProviderRequest** – Ez a kérés információt tartalmaz arról, hogy milyen dokumentumot kell létrehozni. Egy szolgáltatásspecifikus dokumentumot ad vissza, amelyet regisztrálni kell a pénzügyi regisztrációs szolgáltatásban.
-- **GetSupportedRegistrableEventsDocumentProviderRequest** – Ez a kérés visszaadja az előfizetendő események listáját. Jelenleg a következő rendezvények támogatottak: értékesítés, ügyfélszámla befizetés és ügyfélrendelési betét.
-- **GetFiscalRegisterResponseToSaveDocumentProviderRequest** – Ez a kérelem a pénzügyi regisztrációs szolgáltatás válaszát adja vissza. Ez a válasz szerializálva karakterláncot képez, hogy készen álljon a mentésre.
-
-#### <a name="configuration"></a>Konfiguráció
-
-Az adódokumentum-szolgáltató konfigurációs fájlja a címen található **src\\ Fiskális integráció\\ Efr\\ Konfigurációk\\ Dokumentumszolgáltatók\\ DocumentProviderFiscalEFRSampleCzech.xml** ban,-ben [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattár. A fájl célja, hogy lehetővé tegye a költségvetési dokumentumszolgáltató beállításainak konfigurálását a Commerce központjából. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
-
-### <a name="hardware-station-extension-design"></a>Hardverállomás-bővítés kialakítása
-
-A költségvetési összekötő bővítmény célja a pénzügyi regisztrációs szolgáltatással való kommunikáció. A hardverállomás-bővítmény a HTTP protokollt használja az olyan dokumentumok benyújtására, amelyek a CRT kiterjesztést generál az adóregisztrációs szolgáltatáshoz. Kezeli továbbá a pénzügyi regisztrációs szolgáltatástól kapott válaszokat.
+A kiterjesztés célja, amely egy pénzügyi bizonylat szolgáltatója, a szolgáltatásspecifikus dokumentumok generálása és a pénzügyi nyilvántartási szolgáltatás válaszának kezelnie kell.
 
 #### <a name="request-handler"></a>Kérelemkezelő
 
-Az **EFRHandler** kérelemkezelője a belépési pont a pénzügyi regisztrációs szolgáltatáshoz benyújtott kérelmek kezeléséhez.
+A dokumentumszolgáltatóhoz **egyetlen DocumentProviderEFRFiscalIUSE** kérelemkezelő van, amely a pénzügyi nyilvántartási szolgáltatás pénzügyi bizonylatok előállítására használható.
 
-A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName** metódus felelős a kezelő nevének visszaadásáért. A kezelő nevének meg kell egyeznie a Kereskedelmi központban megadott pénzügyi összekötő nevével.
+Ez a kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName metódus** felelős a kezelő nevének visszaküldéséért. A kezelő nevének meg kell egyeznie a Commerce Headquarters szolgáltatásban megadott csatlakoztató dokumentumszolgáltató nevével.
 
-Az összekötő a következő kéréseket támogatja.
+Az csatlakoztató a következő kéréseket támogatja.
 
-- **SubmitDocumentFiscalDeviceRequest** – Ez a kérelem dokumentumokat küld a pénzügyi regisztrációs szolgálatnak, és visszaküldi a választ.
-- **IsReadyFiscalDeviceRequest** – Ez a kérés a pénzügyi regisztrációs szolgáltatás állapotfelmérésére szolgál.
-- **InitializeFiscalDeviceRequest** – Ez a kérés a pénzügyi regisztrációs szolgáltatás inicializálására szolgál.
+- **GetFiscalDocumentDocumentProviderRequest** – ez a kérés tartalmazza a létrehozandó dokumentum adatait. Olyan szolgáltatásspecifikus dokumentumot ad vissza, amely regisztrálva kell lennie a pénzügyi regisztrációs szolgáltatásban.
+- **GetSupportedRegistrableEventsDocumentProviderRequest** – ez a kérés a regisztrált események listáját adja eredményül. Jelenleg a következő események támogatottak: értékesítés, vevői számlabetétek és vevői rendelési betétek.
+- **GetFiscalRegisterResponseToSaveDocumentProviderRequest** – ez a kérés a pénzügyi regisztrációs szolgáltatás válaszát adja eredményül. A válasz egy karakterlánc formájában van szerializálva, hogy készen legyen a mentésre.
 
 #### <a name="configuration"></a>Konfiguráció
 
-A fiskális csatlakozó konfigurációs fájlja a következő címen található: **src\\ Fiskális integráció\\ Efr\\ Konfigurációk\\ Csatlakozók\\ CsatlakozóEFRSample.xml** ban,-ben [Dynamics 365 Commerce Megoldások](https://github.com/microsoft/Dynamics365Commerce.Solutions/) adattár. A fájl célja, hogy lehetővé tegye a pénzügyi összekötő beállításainak konfigurálását a Commerce központjából. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
+A pénzügyi bizonylat **szolgáltatójának konfigurációs fájlja a megoldások tárházában található srcFiscalIntegrationEfrConfigurationsDocumentProvidmentProviderFiscalEFRSample\\\\\\\\\\ Egy xml**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) fájlban található. A fájl célja, hogy lehetővé tegye a pénzügyi bizonylat szolgáltatójának beállításait a Commerce Headquarters alkalmazásból való konfigurálásban. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
+
+### <a name="hardware-station-extension-design"></a>Hardverállomás bővítményének tervezése
+
+A pénzügyi csatlakoztatóként használt bővítmény célja a pénzügyi regisztrációs szolgáltatással való kommunikáció. A hardverállomás bővítménye a HTTP CRT protokollal küldheti el a kiterjesztés által a pénzügyi regisztrációs szolgáltatásnak generált dokumentumokat. Kezeli a pénzügyi regisztrációs szolgáltatástól kapott válaszokat is.
+
+#### <a name="request-handler"></a>Kérelemkezelő
+
+Az **EFRHandler** kérelemkezelő a pénzügyi regisztrációs szolgáltatás kérésének kezelésére használt belépési pont.
+
+A kezelő az **INamedRequestHandler felületről öröklődik**. A **HandlerName metódus** felelős a kezelő nevének visszaküldéséért. A kezelő nevének meg kell egyeznie a Commerce Headquartersban megadott pénzügyi csatlakoztató nevével.
+
+Az csatlakoztató a következő kéréseket támogatja.
+
+- **SubmitDocumentFiscalDeviceRequest** – ez a kérés dokumentumokat küld a pénzügyi regisztrációs szolgáltatásnak, és visszaküldi a választ.
+- **IsReadyFiscalDeviceRequest** – ez a kérés az adóügyi regisztrációs szolgáltatás állapotellenőrzésére használható.
+- **InitializeFiscalDeviceRequest** – ez a kérés a pénzügyi regisztrációs szolgáltatás inicializálására használatos.
+
+#### <a name="configuration"></a>Konfiguráció
+
+A pénzügyi csatlakoztató **konfigurációs fájlja a megoldástárházban található srcFiscalIntegrationEfrConfigurationsConnectorsConnectorEFRSample.xml\\\\\\\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/). A fájl célja, hogy engedélyezze a pénzügyi csatlakoztató beállításait a Commerce Headquarters alkalmazásból való konfigurálásban. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez.
+
+### <a name="pos-fiscal-connector-extension-design"></a>POS pénzügyi csatlakoztató bővítményének tervezése
+
+A POS pénzügyi csatlakoztató bővítményének célja, hogy kommunikáljon a POS pénzügyi regisztrációs szolgáltatásával. A HTTPS-protokollt használja kommunikációra.
+
+#### <a name="fiscal-connector-factory"></a>Pénzügyi csatlakoztató gyára
+
+A pénzügyi csatlakoztató gyári leképezi a csatlakoztató **nevét a pénzügyi csatlakoztató megvalósításra, és a Pos.ExtensionConnectorsFiscalConnectorFactory.ts\\\\ fájlban** található. A csatlakoztató nevének meg kell egyeznie a Commerce Headquarters által megadott pénzügyi csatlakoztató nevével.
+
+#### <a name="efr-fiscal-connector"></a>EFR pénzügyi csatlakoztató
+
+Az EFR pénzügyi csatlakoztató a **Pos.ExtensionConnectorsEfrEfrFiscalConnector.ts\\\\\\ fájlban** található. Az IFiscalConnector **felületet** valósítja meg, amely a következő kéréseket támogatja:
+
+- **FiscalRegisterSubmitDocumentClientRequest** – ez a kérés dokumentumokat küld a pénzügyi regisztrációs szolgáltatásnak, és visszaküldi a választ.
+- **FiscalRegisterIsReadyClientRequest** – ez a kérés a pénzügyi nyilvántartási szolgáltatás állapotellenőrzésére használható.
+- **FiscalRegisterInitializeClientRequest** – ez a kérés a pénzügyi regisztrációs szolgáltatás inicializálására használható.
+
+#### <a name="configuration"></a>Konfiguráció
+
+A konfigurációs fájl a **megoldástárház srcFiscalIntegrationEfrConfigurationsConnectors\\\\\\\\**[Dynamics 365 Commerce](https://github.com/microsoft/Dynamics365Commerce.Solutions/) mappájában található. A fájl célja, hogy engedélyezze a Commerce Headquarters alkalmazásból konfigurálható pénzügyi csatlakoztató beállításait. A fájlformátum igazodik a pénzügyi integráció konfigurációjának követelményeihez. A következő beállításokat lehet hozzáadni:
+
+- **Végpont címe** – a pénzügyi regisztrációs szolgáltatás URL-címe.
+- **Időtúllépés** – az az idő ezredmásodpercben, ahányszor a csatlakoztató választ vár a pénzügyi regisztrációs szolgáltatástól.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

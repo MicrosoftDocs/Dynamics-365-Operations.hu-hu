@@ -3,7 +3,6 @@ title: Elektronikus jelentéskészítés összetevői
 description: Ez a témakör az elektronikus jelentéskészítés (ER) összetevőit ismerteti.
 author: nselin
 ms.date: 09/28/2021
-ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERWorkspace
@@ -12,15 +11,16 @@ ms.reviewer: kfend
 ms.custom: 58941
 ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
+ms.topic: overview
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6356fdaee4c6298dd87ef965fcd91937144cd529
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: HT
+ms.openlocfilehash: aca1b9bbca490a8a9551ed97d6e100c9115a0d41
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985734"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367824"
 ---
 # <a name="electronic-reporting-components"></a>Elektronikus jelentéskészítés összetevői
 
@@ -91,9 +91,23 @@ A formátum-összetevő lehetővé teszi bizonyos fájlok csatolását, amelyek 
 
 A következő ábra azt mutatja, hogy hogyan áramlanak az adatok ezeknek a formátumoknak az esetében.
 
-[![Bejövő formátum-összetevők adatáramlása.](./media/ER-overview-03.png)](./media/ER-overview-03.png)
+[![Kimenő formátum-összetevők adatáramlása](./media/ER-overview-02.png)](./media/ER-overview-02.png)
+
+Egyetlen ER-formátumkonfiguráció futtatásához és egy kimenő elektronikus dokumentum létrehozásához meg kell adni a formátumkonfiguráció hozzárendelését.
+
+#### <a name="format-components-for-incoming-electronic-documents"></a>Bejövő elektronikus dokumentumok komponensformázása
+A formátum-összetevő a futásidőben importált bejövő dokumentum sémája. A rendszer az alábbi elemekből áll:
+
+- Egy formátumból, amely a bejövő, adatokat tartalmazó elektronikus dokumentum futásidőben importált struktúráját és tartalmát határozza meg Egy formátum-összetevőből, amely különböző formátumú bejövő dokumentumok elemzésére szolgál: ilyen például a szöveg és az XML.
+- Egy formátum-hozzárendelésből, amely összekapcsolja az egyes formátumelemeket egy tartományspecifikus adatmodell elemeivel. Futási időben az adatmodell elemei megadják az adatfolyamot és az adatok importálásának szabályait a bejövő dokumentumokból, majd ezt követően tárolják az adatokat egy adatmodellben.
+- Formátumérvényesítésből, amely olyan konfigurálható szabályok formájában jelenik meg, melyek az adatimportálást kontrollálják a futásidőben a futó környezetben. Létezhet például egy olyan szabály, amely leállítja egy szállító kifizetéseivel rendelkező banki kivonat importálását, és kivételt okoz, ha a kiválasztott szállító attribútumai hiányoznak, például a szállító azonosító kódja.
+
+A következő ábra azt mutatja, hogy hogyan áramlanak az adatok ezeknek a formátumoknak az esetében.
+
+[![Bejövő formátum-összetevők adatáramlása](./media/ER-overview-03.png)](./media/ER-overview-03.png)
 
 Egyetlen ER-formátumkonfiguráció futtatásához, adatok importálásához egy bejövő elektronikus dokumentumból, meg kell adni egy formátumkonfiguráció kívánt hozzárendelését, valamint a modell-hozzárendelés integrációs pontját. A különböző típusú bejövő dokumentumokhoz ugyanaz a modell-leképezés és célok használhatók különböző formátumokkal.
+
 
 ## <a name="component-versioning"></a>Összetevő verziókövetése
 

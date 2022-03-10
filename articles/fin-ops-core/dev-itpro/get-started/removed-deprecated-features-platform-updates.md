@@ -1,8 +1,8 @@
 ---
 title: Eltávolított vagy elavult Platform-funkciók
-description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
+description: Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve amelyek a pénzügyi és műveleti alkalmazások platformfrissítései során tervezett eltávolításra vannak tervezve.
 author: sericks007
-ms.date: 05/26/2021
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,27 +12,119 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7bd5a64553afa04517633ed03d8bbd6077208c0b511d8fa131dc9a2849998708
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774409"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384720"
 ---
-# <a name="removed-or-deprecated-platform-features"></a>Eltávolított vagy elavult Platform-funkciók
+# <a name="removed-or-deprecated-platform-features"></a>A platform eltávolított vagy elavult funkciói
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva a platformfrissítésekben a Finance and Operations alkalmazásokból vagy az eltávolításuk be van tervezve.
+Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve amelyek a pénzügyi és műveleti alkalmazások platformfrissítései során tervezett eltávolításra vannak tervezve.
 
 - Az *eltávolított* szolgáltatások már nem érhetők el a termékben.
 - Az *elavult* szolgáltatás már nincs aktív fejlesztés alatt, és egy jövőbeli frissítésben eltávolíthatjuk.
 
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
-A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](/dynamics/s-e/global/axtechrefrep_61) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük a Pénzügyi és műveleti alkalmazások egyes verzióiban módosult vagy eltávolított objektumokat.
 
-## <a name="feature-deprecation-notice-effective-may-2021"></a>Funkciók eltávolításával kapcsolatos értesítés; 2021 májusától érvényes
+## <a name="feature-removal-effective-october-2021"></a>2021. októbertől hatályos funkcióeltávolítás
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL-jelentések a LifeCycle Services (LCS) szolgáltatásban
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Minden tevékenységet és megfigyelést belsőleg, a platformon keresztül, az automatizáláson keresztül hajt végre a rendszer. Ehhez nem szükséges kézi beavatkozás.|
+| **Felváltotta másik szolgáltatás?**   | Igen, jelenleg egy automatizált rendszer van, amely ezeket a képességeket elavulttá teszi. |
+| **Érintett területek**         | SQL-jelentések: jelenlegi DTU, aktuális DTU-részletek, Zárolási részletek lekérdezése, Aktuális csomagútmutató listája, Lekérdezésazonosítók listájának lekérdezése, SQL-lekérdezési csomag lekérése adott csomagazonosítóhoz, Lekérdezési csomagok és végrehajtási állapotok lekérdezése, Szabályozási konfiguráció lekérdezése, Várakozási statisztikák lekérése, Legdrágább lekérdezések listája |
+| **Telepítési beállítás**              | Felhőtelepítés: a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
+| **Állapot**                         | Kivéve |
+
+### <a name="azure-sql-actions-in-lcs"></a>Azure SQL-műveletek az LCS szolgáltatásban
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az LCS szolgáltatásban elavult néhány SQL-művelet. Minden tevékenységet és megfigyelést belsőleg, a platformon keresztül, az automatizáláson keresztül hajt végre a rendszer. Ehhez nem szükséges kézi beavatkozás. |
+| **Felváltotta másik szolgáltatás?**   | Igen, jelenleg egy automatizált rendszer van, amely ezeket a képességeket elavulttá teszi. |
+| **Érintett területek**         | SQL-műveletek: Csomagútmutató létrehozása a tervazonosító kényszerítésére, Csomagútmutató létrehozása táblatippek hozzáadásához, Csomagútmutató eltávolítása, Oldalzárolások letiltása/engedélyezése és eszkaláció zárolása, Tábla statisztikáinak frissítése, Index újjáépítése, Index létrehozása |
+| **Telepítési beállítás**              | Felhőtelepítés: a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
+| **Állapot**                         | Kivéve |
+
+
+## <a name="feature-deprecation-effective-october-2021"></a>Funkciók eltávolításával kapcsolatos értesítés; 2021 októberétől érvényes
+
+### <a name="show-related-document-attachments-feature"></a>"Kapcsolódó dokumentummellékletek megjelenítése" funkció
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A funkció nem várt eredményeket adott vissza. |
+| **Felváltotta másik szolgáltatás?**   | Nem. A funkcióval kapcsolatos további tervek kommunikálását a szokásos kiadási hullám közzétételi folyamata fogja tartalmazni. |
+| **Érintett területek**         | Webes ügyfél - Dokumentummelléklet-élmény |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult  |
+
+## <a name="platform-updates-for-version-10023-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.23-as verziójának platformfrissítései
+
+### <a name="ondbsynchronize-event"></a>OnDBSynchronize esemény
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az esemény végrehajtásához nincs vezérlő. |
+| **Felváltotta másik szolgáltatás?**   | Igen, helyezze át **az OnDBSynchronize** esemény által előfizetett meglévő metódusokat egy SysSetup kiterjesztett osztályba. |
+| **Érintett területek**         | Adatbázis szinkronizálása |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult. A tervezett eltávolítás dátuma: 2022. október. |
+
+
+### <a name="systemnotificationsmanageraddnotification-api"></a>SystemNotificationsManager.AddNotification API
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Microsoft további paramétereket kér az értesítések hozzáadásakor. |
+| **Felváltotta másik szolgáltatás?**   | Igen, a **SystemNotificationsManager.AddSystemNotification()** API. Az API-hoz explicit módon be kell állítania a Létrehozott értesítésekhez az ExpirationDateTime és a RuleID értékeket. |
+| **Érintett területek**         | Webes ügyfél |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult. A tervezett eltávolítás dátuma: 2023. április. |
+
+## <a name="platform-updates-for-version-10021-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.21-es verziójának platformfrissítései
+
+### <a name="skype-for-business-online-support"></a>Skype for Business Online-támogatás
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A Skype for Business Online szolgáltatás ki lett vezetve. A további tudnivalókat lásd: [A Skype for Business Online szolgáltatás ki lett vezetve](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/the-skype-for-business-online-service-has-retired/ba-p/2596601). |
+| **Felváltotta másik szolgáltatás?**   | Jelenleg nem, bár előfordulhat, hogy a jövőben megfontoljuk a Teams jelenlét hozzáadását.|
+| **Érintett területek**         | Webes ügyfél |
+| **Telepítési beállítás**              | Összes |
+| **Állapot**                         | Elavult. A10.0.21-es kiadásban már ki van kapcsolva a **Skype engedélyezve** beállítás. A beállítás eltávolítása 2022. áprilisára várható; A funkció azonban akkor áll le, amikor a Skype csapat lezárja a szolgáltatást. |
+ 
+## <a name="feature-deprecation-effective-august-2021"></a>Funkciók eltávolításával kapcsolatos értesítés; 2021 augusztusától érvényes
+
+### <a name="microsoft-azure-sql-reports-in-lifecycle-services-lcs"></a>Microsoft Azure SQL-jelentések a LifeCycle Services (LCS) szolgáltatásban
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Minden tevékenységet és megfigyelést belsőleg, a platformon keresztül, az automatizáláson keresztül hajt végre a rendszer. Ehhez nem szükséges kézi beavatkozás.|
+| **Felváltotta másik szolgáltatás?**   | Igen, jelenleg egy automatizált rendszer van, amely ezeket a képességeket elavulttá teszi. |
+| **Érintett területek**         | SQL-jelentések: jelenlegi DTU, aktuális DTU-részletek, Zárolási részletek lekérdezése, Aktuális csomagútmutató listája, Lekérdezésazonosítók listájának lekérdezése, SQL-lekérdezési csomag lekérése adott csomagazonosítóhoz, Lekérdezési csomagok és végrehajtási állapotok lekérdezése, Szabályozási konfiguráció lekérdezése, Várakozási statisztikák lekérése, Legdrágább lekérdezések listája |
+| **Telepítési beállítás**              | Felhőtelepítés: a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
+| **Állapot**                         | Elavult: A tervezett eltávolítási dátum 2021 októbere. |
+
+### <a name="azure-sql-actions-in-lcs"></a>Azure SQL-műveletek az LCS szolgáltatásban
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az LCS szolgáltatásban elavult néhány SQL-művelet. Minden tevékenységet és megfigyelést belsőleg, a platformon keresztül, az automatizáláson keresztül hajt végre a rendszer. Ehhez nem szükséges kézi beavatkozás. |
+| **Felváltotta másik szolgáltatás?**   | Igen, jelenleg egy automatizált rendszer van, amely ezeket a képességeket elavulttá teszi. |
+| **Érintett területek**         | SQL-műveletek: Csomagútmutató létrehozása a tervazonosító kényszerítésére, Csomagútmutató létrehozása táblatippek hozzáadásához, Csomagútmutató eltávolítása, Oldalzárolások letiltása/engedélyezése és eszkaláció zárolása, Tábla statisztikáinak frissítése, Index újjáépítése, Index létrehozása |
+| **Telepítési beállítás**              | Felhőtelepítés: a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
+| **Állapot**                         | Elavult: A tervezett eltávolítási dátum 2021 októbere. |
+
+## <a name="feature-deprecation-effective-may-2021"></a>Funkciók elavulásával kapcsolatos értesítés; 2021 májusától érvényes
 
 ### <a name="globalization-portal-in-lifecycle-services-lcs"></a>A Lifecycle Services (LCS) globalizációs portálja
 
@@ -53,12 +145,12 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A szolgáltatás el lett távolítva, hogy csökkentse indexkezelés vevők általi üzemeltetéséből, figyeléséből és fenntartásából származó járulékos költségeket. |
 | **Felváltotta másik szolgáltatás?**   | A továbbiakban az index karbantartását a Microsoft szolgáltatásai végzik. Ez a folyamat folyamatosan, a felhasználói terhelések befolyásolása nélkül történik. |
-| **Érintett területek**         | Finance and Operations-alkalmazásoknak|
+| **Érintett területek**         | Finance and Operations alkalmazások|
 | **Telepítési beállítás**              | Felhőtelepítés – a Microsoft által kezelt működési környezeteket és a 2.-tól az 5. szintig tartó tesztkörnyezeteket érinti. |
 | **Állapot**                         | Ez a funkció el lett távolítva. |
 
 
-## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.17 verziójához
+## <a name="platform-updates-for-version-10017-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.17-es verziójának platformfrissítései
 
 
 ### <a name="visual-studio-2015"></a>Visual Studio2015
@@ -85,24 +177,25 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A Dynamics 2012 AX Enterprise Portal (EP) alkalmazással összefüggő metaadat-műtermékei elavultak, mert az EP soha nem volt támogatott a Finance and Operations alkalmazásokban. |
-| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Elavulás/eltávolítás oka** | A Dynamics AX 2012 Enterprise Portal (EP) metaadat-műtermékei elavultak, mert az EP nem volt támogatva a Pénzügy és műveletek alkalmazásokban. |
+| **Felváltotta másik szolgáltatás?**   | Nem |
 | **Érintett területek**         | Webes ügyfél |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Elavult: Az összes EP-kód eltávolítása a 2021. októberi kiadásban van ütemezve. |
 
-## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.15 verziójához
+## <a name="deprecation-effective-december-2020"></a>Értékcsökkenés 2020. december 20-án hatályos
 
 ### <a name="internet-explorer-11-support-for-dynamics-365-is-deprecated"></a>Internet Explorer 11 támogatás a Dynamics 365-höz elavult
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A 2020 decemberétől hatályos Microsoft Internet Explorer 11 támogatás az összes Dynamics 365 termékre elavulttá válik, ezért az Internet Explorer 11 nem lesz támogatott 2021. augusztus után.<br><br>Ez hatással lesz azokra, akik Dynamics 365 termékeket használnak, amelyeket a Internet Explorer 11 interfészen való használatra terveztek. 2021. augusztus után az Internet Explorer 11 nem lesz támogatott az ilyen Dynamics 365 termékek esetében. |
+| **Elavulás/eltávolítás oka** | A Microsoft 2020 Internet Explorer . december 11-e óta támogatja minden Dynamics 365 termék és a Dynamics Lifecycle Services (LCS) használatát, Internet Explorer 2021. augusztus óta pedig 11 nem lesz támogatott.<br><br>Ez hatással lesz az ügyfelekre, akik a Dynamics 365 termékeket és az LCS-t Internet Explorer használják, és 11 felületet használnak. 2021 Internet Explorer . augusztus után 11 nem lesz támogatott az ilyen Dynamics 365 termékek és LCS esetében. |
 | **Felváltotta másik szolgáltatás?**   | Azt ajánljuk, hogy a vevők térjenek át a Microsoft Edgere.|
-| **Érintett területek**         | Az összes Dynamics 365 termék |
+| **Érintett területek**         | Minden Dynamics 365 termék és LCS |
 | **Telepítési beállítás**              | Összes|
 | **Állapot**                         | Elavult: Az Internet Explorer 11 támogatása 2021. augusztusban megszűnik.|
 
+## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.15-ös verziójának platformfrissítései
 
 ### <a name="visual-studio-add-in-to-apply-metadata-hotfixes"></a>Visual Studio-bővítmény a metaadatok gyorsjavításának alkalmazásához
 
@@ -115,7 +208,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Állapot**                         | A 10.0.15-ös verziónál a bővítmény már nem szerepel a Visual Studio-eszközök között. |
 
 
-## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.14 verziójához
+## <a name="platform-updates-for-version-10014-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.14-es verziójának platformfrissítései
 
 ### <a name="online-users-page"></a>Online felhasználók oldala 
 
@@ -128,7 +221,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Állapot**                         | 2021 októberétől ez a képernyő el lesz távolítva.   |
 
 
-## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.13 verziójához
+## <a name="platform-updates-for-version-10013-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.13-as verziójának platformfrissítései
 
 
 ### <a name="custom-code-defined-in-ssrs-report-properties"></a>Az SSRS-jelentés tulajdonságai között definiált egyéni kód 
@@ -136,7 +229,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Az egyéni kód általában korlátozott kedvezményeket biztosít, a támogatásához viszont jelentős erőforrások és számítás szükséges. Az egyéni kódokat elsősorban a jelentések készítői használják, hogy nyilvános metódusokat hívjanak egyéni kódszerelvényekből. A felhőben tárolt szolgáltatás azonban nem támogatja az SSRS-jelentésekhez az egyéni szerelvényekre mutató hivatkozásokat. |
-| **Felváltotta másik szolgáltatás?**   | A jelentés szerzője dönthetnek úgy továbbra nyilvános .NET-API-kra hivatkoznak a szövegdobozban lévő kifejezésekből származó matematikai, konverziós és formátumműveletekhez. További információ: [Kód hozzáadása jelentéshez (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs?view=sql-server-ver15).  |
+| **Felváltotta másik szolgáltatás?**   | A jelentés szerzője dönthetnek úgy továbbra nyilvános .NET-API-kra hivatkoznak a szövegdobozban lévő kifejezésekből származó matematikai, konverziós és formátumműveletekhez. További információ: [Kód hozzáadása jelentéshez (SSRS)](/sql/reporting-services/report-design/add-code-to-a-report-ssrs).  |
 | **Érintett területek**         | Egyéni kódot tartalmazó, RDL-jelentésben alkalmazásjelentési megoldások csoportjai. |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | A 10.0.13-as verzióban a fordító figyelmeztetést küld az olyan példányok esetében, ahol egyéni kódokat észlel egy SSRS-jelentésdefinícióban. A hiba elhárításához nyissa meg a jelentéstervezési definíciót, és távolítsa el az összes egyéni kódot használó megoldás. Ezt a figyelmeztetést egy jövőbeli frissítés fordítói hibára fog lecserélni.   |
@@ -159,7 +252,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Felváltotta másik szolgáltatás?**   | Az [új rácsvezérlő](../..//fin-ops/get-started/grid-capabilities.md) |
 | **Érintett területek**         | Webes ügyfél |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | A 10.0.13 verzióban az új rácsvezérlő általánosan elérhető, és a vevők tetszés szerint be tudják kapcsolni ezt a funkciót. Az új rácsvezérlő használata kötelezővé válik a 2021 októberi kiadástól. Amikor az új rácsvezérlő használata kötelezővé válik, a **forceLegacyGrid()** API többé nem lesz figyelembe véve. |
+| **Állapot**                         | A 10.0.13 verzióban az új rácsvezérlő általánosan elérhető, és a vevők tetszés szerint be tudják kapcsolni ezt a funkciót. Az új rácsvezérlő alapértelmezés szerint a 2021. októberi kiadással lesz bekapcsolva,és a jelenleg célok szerint kötelező lesz 2022. áprilisban. Amikor az új rácsvezérlő használata kötelezővé válik, a **forceLegacyGrid()** API többé nem lesz figyelembe véve. |
 
 ### <a name="personalization-without-saved-views"></a>Mentett nézetek nélküli személyre szabás 
 
@@ -172,19 +265,19 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | **Állapot**                         | A 10.0.13 vezió/Platform update 37, a mentett nézetek funkció általánosan elérhető, és a vevők tetszés szerint be tudják kapcsolni ezt a funkciót. A mentett nézetek funkció használata kötelezővé válik a 2021 októberi kiadástól. |
 
 
-## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.12 verziójához
+## <a name="platform-updates-for-version-10012-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.12-es verziójának platformfrissítései
 
 ### <a name="grid-or-group-control-form-extensions-containing-invalid-field-references"></a>Érvénytelen mezők hivatkozásait tartalmazó rács vagy csoport vezérlő képernyő-kiterjesztések
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A rács vagy csoport vezérlőelem adatcsoport-tulajdonsága automatikusan megjeleníti a mezőcsoport összes mezőjét. A kiterjesztéssel hozzáadott rács vagy csoport tartalmazhat olyan mezőket, amelyek már nincsenek definiálva a mezőcsoportban, vagy hiányoznak azok a mezők, amelyek meg vannak határozva a mezőcsoportban. Ez inkonzisztens működést okozhat futásidőben. A Finance and Operations alkalmazások 10.0.12 verzióihoz tartozó platformfrissítések most már fordítási *figyelmeztetésként* kategorizálják ezt a problémát. A hiba elhárításához nyissa meg a képernyő-kiterjesztést, és mentse.
+| **Elavulás/eltávolítás oka** | A rács vagy csoport vezérlőelem adatcsoport-tulajdonsága automatikusan megjeleníti a mezőcsoport összes mezőjét. A kiterjesztéssel hozzáadott rács vagy csoport tartalmazhat olyan mezőket, amelyek már nincsenek definiálva a mezőcsoportban, vagy hiányoznak azok a mezők, amelyek meg vannak határozva a mezőcsoportban. Ez inkonzisztens működést okozhat futásidőben. A Pénzügyi és műveleti alkalmazások 10.0.12-es verziójának platformfrissítései most fordítói figyelmeztetésként kategorizálják ezt a *problémát*. A hiba elhárításához nyissa meg a képernyő-kiterjesztést, és mentse.
 | **Felváltotta másik szolgáltatás?**   | Ezt a fordítói figyelmeztetést egy jövőbeli frissítés fordítói hibára fog lecserélni. |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Egy fordítói figyelmeztetés került bevezetésre a Finance and Operations alkalmazások 10.0.12 verziójának platformfrissítéseiben. |
+| **Állapot**                         | Fordítói figyelmeztetés jelenik meg a Pénzügy és műveletek alkalmazások 10.0.12-es verziójának platformfrissítéseiben. |
 
-## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>Platform-frissítések az Finance and Operations alkalmazások 10.0.11 verziójához
+## <a name="platform-updates-for-version-10011-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.11-es verziójának platformfrissítései
 
 ### <a name="explicit-safe-lists-for-self-service-environments"></a>Explicit biztonságos lista az önkiszolgáló környezetek számára
 
@@ -210,11 +303,11 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | A tábla metaadatok definíciójában található mezőcsoportok olyan mezőhivatkozásokat tartalmazhatnak, amelyek nem érvényesek. Ezen mezőcsoportok telepítése esetén hibákat okozhatnak futásidőben a Financial Reporting és a Microsoft SQL Server Reporting Services (SSRS) szolgálatásokban. A 23-as platformfrissítés bevezetett egy fordítási *figyelmeztetést*, amely a metaadat-problémák kezelését teszi lehetővé. A Finance and Operations alkalmazások 10.0.11 verzióihoz tartozó platformfrissítések fordítási *hibaként* kategorizálják ezt a problémát.<p>Ezen hiba javításához kövesse az alábbi lépéseket.</p><ol><li>Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.</li><li>Végezzen újrafordítást.</li><li>Győződjön meg arról, hogy minden hiba orvosolva lett.</li></ol> |
+| **Elavulás/eltávolítás oka** | A tábla metaadatok definíciójában található mezőcsoportok olyan mezőhivatkozásokat tartalmazhatnak, amelyek nem érvényesek. Ezen mezőcsoportok telepítése esetén hibákat okozhatnak futásidőben a Financial Reporting és a Microsoft SQL Server Reporting Services (SSRS) szolgálatásokban. A 23-as platformfrissítés bevezetett egy fordítási *figyelmeztetést*, amely a metaadat-problémák kezelését teszi lehetővé. A Pénzügyi és műveleti alkalmazások 10.0.11-es verziójának platformfrissítései fordítói hibaként kategorizálják ezt a *problémát*.<p>Ezen hiba javításához kövesse az alábbi lépéseket.</p><ol><li>Távolítsa el az érvénytelen mezőhivatkozást a tábla a mezőcsoport-definíciójából.</li><li>Végezzen újrafordítást.</li><li>Győződjön meg arról, hogy minden hiba orvosolva lett.</li></ol> |
 | **Felváltotta másik szolgáltatás?**   | Ez a fordítóhiba véglegesen lecseréli a fordítói figyelmeztetését.  |
 | **Érintett területek**         | Visual Studio fejlesztőeszközök |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: A fordítói figyelmeztetés fordítói hiba a Finance and Operations-alkalmazások 10.0.11 verziójának platformfrissítéseiben. |
+| **Állapot**                         | Elavult: A fordító figyelmeztetés egy fordítói hiba a Pénzügy és műveletek alkalmazások 10.0.11-es verziójának platformfrissítései során. |
 
 ### <a name="isv-licenses-created-by-using-the-sha1-hashing-algorithm"></a>Az SHA1 kivonatolási algoritmussal létrehozott ISV-licencek
 
@@ -243,7 +336,7 @@ A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai r
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | A szolgáltatás által megjelenített, dokumentumokba ágyazott navigációs URL-címek bizalmas üzleti adatokat is tartalmazhatnak. Biztonsági óvintézkedésként megszüntetjük a dokumentumok beágyazott részletező hivatkozásainak támogatását a vevők adatainak további védelme érdekében. A felhasználók számára is előnyös a jobb teljesítményt, miközben interaktívan állítanak elő dokumentumokat a módosítás eredményeképpen.  |
-| **Felváltotta másik szolgáltatás?**   | Nincs |
+| **Felváltotta másik szolgáltatás?**   | Nem |
 | **Érintett területek**         | Jelentés |
 | **Telepítési beállítás**              | Összes |
 | **Állapot**                         | Ez a funkció aktívan el lesz távolítva a szolgáltatásból.<br><br>A korszerű ügyfél számos lehetőséget kínál olyan nézetek készítésére, amelyek automatikusan létrejövő hivatkozásokat is tartalmaznak, hogy segítsék a navigálást az alkalmazásban. A szolgáltatás által megjelenített, oldalszámmal ellátott dokumentumok olyan külső kommunikációhoz ajánlottak, amelyeket e-mailben elküldenek, archiválnak és kinyomtatnak címzetteknek. A dokumentumok közvetlenül a böngészőben történő előnézetének élményét a tapasztalatok alapján javítottuk amely közvetlen hozzáférést biztosít a helyi nyomtatókhoz. A további tudnivalókat lásd: [PDF-dokumentumok előnézete beágyazott megjelenítővel](../analytics/preview-pdf-documents.md). |

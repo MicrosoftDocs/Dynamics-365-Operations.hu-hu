@@ -1,24 +1,23 @@
 ---
 title: Európa – áttekintés
 description: Ez a témakör a Microsoft Dynamics 365 Finance dokumentációforrásokra mutató hivatkozásokat tartalmaz Európára vonatkozóan.
-author: ShylaThompson
-ms.date: 02/24/2021
-ms.topic: article
+author: kfend
+ms.date: 01/15/2022
+ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kfend
-ms.custom: intro-internal
 ms.search.region: global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 638e0468f9d200083d8263786f5f5750b6129e73
-ms.sourcegitcommit: 92ff867a06ed977268ffaa6cc5e58b9dc95306bd
-ms.translationtype: HT
+ms.openlocfilehash: 1b7a3dd75f526a076b6fe696f71ec623e20abb24
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "6336686"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367848"
 ---
 # <a name="europe-overview"></a>Európa – áttekintés
 
@@ -37,13 +36,13 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a jogi szem�
 - [Számlaazonosítók szerkesztése kelet-európai értékesítési rendeléseken](emea-edit-invoice-id-sales-orders.md)
 - [EU-s beérkezési igazolás](emea-entry-certificates.md)
 - [EU értékesítési lista jelentése](emea-eu-sales-list.md)
+  - [Példa általános EU értékesítési listára](emea-eu-sales-list-example.md)
 - [Árfolyam-korrekciók](emea-exchange-rate-adjustments.md)
 - [Fizetési módok fájlformátumai](emea-select-file-formats-for-the-method-of-payments.md)
 - [Pénzügyi (globalizációs) útmutatás a Brexit hatásával kapcsolatban](https://businesscenter.mbs.microsoft.com/#contentdetail/GuidanceBrexitImpact)
 - [Pénzügyi szolgáltatások (ESR) integrációja](emea-fiscal-service-integration.md)
 - [Tárgyi eszközök kivezetése Észtország és Litvánia esetében](emea-credit-note-reverse-fixed-asset-sale.md)
 - [Átadási bizonylat létrehozása belső készlet átviteléhez](tasks/transfer-document-internal-inventory-transfer.md)
-- [EU értékesítési lista jelentés készítése](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-fájlok
   - [ISO20022 fájlok importálása](emea-ISO20022-file-formats.md)
   - [ISO20022 beszedési megbízási konfiguráció importálása](tasks/import-iso20022-direct-debit-configuration.md)
@@ -78,7 +77,6 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a jogi szem�
 - [SEPA-átutalás áttekintése](../accounts-payable/sepa-credit-transfer.md)
 - [SEPA beszedési megbízás – áttekintés](../accounts-receivable/sepa-direct-debit-overview.md)
 - [Vevői és szállítói kompenzáció beállítása](emea-compensation-customer-vendor-transactions.md)
-- [EU értékesítési lista jelentés beállítása](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Fizetési bizonylat formátumának beállítása projektszámlákhoz](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Aláírók beállítása a nyomtatási képernyőkhöz](emea-set-up-signers-for-printing-forms.md)
 - [Sztornókönyvelés](emea-storno.md)
@@ -94,6 +92,8 @@ Ez a témakör adatok és forrásokat tartalmaz, amelyek segítenek a jogi szem�
   - [Áfajelentés létrehozása és elküldése](tasks/create-submit-vat-report.md)
   - [A kelet-európai elszámolási tranzakciók megtekintése](emea-transactions-settlement-form.md)
   - [Adópont dátuma (áfatételjegyzék dátuma)](emea-tax-point-date.md)
+  - [Szállító áfatételjegyzékének dátuma](emea-date-vendor-VAT-register.md)
+- [Pénzügyi ok funkciókiterjesztése](emea-financial-reason.md)
 
 ## <a name="additional-resources"></a>További erőforrások
 

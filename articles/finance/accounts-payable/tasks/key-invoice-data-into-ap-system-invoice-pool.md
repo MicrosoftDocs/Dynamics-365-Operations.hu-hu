@@ -2,25 +2,22 @@
 title: A legfontosabb számlaadatok a kötelezettségkezelési rendszerbe számlagyűjtő használatával
 description: Ez a témakör azt mutatja be, hogyan lehet számlákat létrehozni a számlajegyzékben.
 author: abruer
-manager: AnnBe
 ms.date: 07/31/2019
 ms.topic: business-process
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Operations
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cd6de42dda650d42d703e905f8d48f73b9e4afd6
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: a4768ee6ddbaba8ae5bab5e2f9f7df9239efeb90
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4443925"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358289"
 ---
 # <a name="key-invoice-data-into-the-ap-system-using-invoice-pool"></a>A legfontosabb számlaadatok a kötelezettségkezelési rendszerbe számlagyűjtő használatával
 
@@ -61,10 +58,13 @@ Ez a témakör azt mutatja be, hogyan lehet számlákat létrehozni a számlajeg
 6. Válassza ki a **Nézetváltás** lehetőséget.
 7. Válassza a **Rácsnézet** elemet.
 8. Válassza a **Feladás** parancsot.
-9. Zárja be az űrlapot.
+9. Zárja be a lapot.
 10. A Navigációs ablaktáblán válassza a **Modulok > Kötelezettségek > Szállítók > Beszállítók** elemet.
 11. Válassza ki a beszerzési rendeléshez tartozó szállítót. Válassza ki például az **1001**-es szállítót.
 12. A műveleti ablaktáblán válassza a **Szállító** lehetőséget.
 13. Válassza a **Tranzakciók** lehetőséget.
 14. Válassza ki a létrehozott számlát. A számlajegyzék-elhatárolás sztornírozásra, illetve a megfelelő költségszámlára feladásra került.  
 
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

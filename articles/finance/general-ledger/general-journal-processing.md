@@ -1,29 +1,26 @@
 ---
 title: Általános napló feldolgozása
 description: Ez a témakör a Microsoft Dynamics 365 Finance alkalmazásban szereplő funkciókat mutatja be, amelyek megkönnyítik az általános napló feldolgozását, illetve biztosítják a megfelelő adatok tárolását, illetve a belső ellenőrzés megfelelő működését.
-author: ShylaThompson
-manager: AnnBe
-ms.date: 08/09/2019
+author: kweekley
+ms.date: 02/28/2022
 ms.topic: article
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
 ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c067b7b6cbbcad4456df6037da8ab124776261e9
-ms.sourcegitcommit: 199848e78df5cb7c439b001bdbe1ece963593cdb
-ms.translationtype: HT
+ms.openlocfilehash: 7096d8576cf124e5e1d814c360d96639f66a742a
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "4444091"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367880"
 ---
 # <a name="general-journal-processing"></a>Általános napló feldolgozása
 
@@ -45,14 +42,14 @@ A **Naplónevek** lapon az alábbi elemeket állíthatja be:
 
 A naplónév csak módosításokra használható. Ebben az esetben megadhatja, hogy csak a **Főkönyv** számlatípus legyen érvényes minden vállalat esetében. 
 
-[![Napló-ellenőrzési számlatípusok](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+[![Naplóellenőrzési számlatípusok.](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
 A naplónév csak egy adott szegmens vagy egy tartomány esetében használható fő számlákhoz. 
 
-[![Naplóellenőrzési szegmens](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Naplóellenőrzési szegmens.](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 Az **Automatikus sztornírozás** lehetőség elérhető az általános naplók esetében. Tegyük fel például, hogy van egy elhatároláskiigazítása, ahol a tényleges dokumentum feldolgozása még nem történt meg (lásd az alábbi ábrán).
-[![Általános napló sztornírozása](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Általános napló sztornírozása.](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
 A Microsoft Excel-bővítmény naplóbejegyzésekhez még nagyobb automatizálást és egyszerűbb adatbevitelt tesz lehetővé. A **Sorok megnyitása az Excelben** művelet elérhető az **Általános napló** és **Naplóbizonylat** oldalakon. 
 
@@ -104,4 +101,7 @@ Egy gomb érhető el a naplóoldal alján az olyan napló zárolásának felold�
 A „javíthatatlan” állapotú munkafolyamatok naplójának visszahívása a napló **Munkafolyamat** gombján és a **Munkafolyamat-előzmények** lapon érhető el. Ezt a funkciót a **Funkciókezelés** lapon a **Naplók munkafolyamat-állapotának alaphelyzetbe állítása** funkció engedélyezi.
 
 ## <a name="delete-journal-lines"></a>Naplósorok törlése
-Az összes naplósor gyors törlésének lehetőség engedélyezve van egy naplóban a **Funkciók** > **Naplósorok törlése**. A funkció engedélyezéséhez kattintson a **Szolgáltatások kezelése** modul **Napló teljesítményoptimalizálásainak törlése** parancsára.
+Az összes naplósor gyors törlésének lehetőség engedélyezve van egy naplóban a **Funkciók** > **Naplósorok törlése**. A funkció engedélyezéséhez kattintson a **Szolgáltatások kezelése** modul **Napló teljesítményoptimalizálásainak törlése** parancsára. Ez a funkció a **LedgerJournalTrans** **táblára** és a Törlés metódusra is hatással van, mivel a sorkészlet úgy törlődik, **hogy** nem kell minden sor Törlés módszerét hívni. 
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

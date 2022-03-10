@@ -1,158 +1,152 @@
 ---
 title: LIFO dátum tényleges értékkel és jelöléssel
-description: A LIFO dátum készletmodell a LIFO-elv alapján működik. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat. Ha a dátum szerinti LIFO készletmodellben nincs bevételezés a kiadás előtt, akkor a kiadás az utána következő bármelyik bevételezéssel kiegyenlíthető. Ha ugyanazzal a dátummal több kiadás van, akkor az az utolsó kiadás, utolsó bevételezés sorrendben egyenlíthető ki.
+description: Az utolsóként be, elsőként ki (DÁTUM LIFO) egy készletmodell, amely a LIFO-elven alapul. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat. A LIFO dátum használatával, ha a kiadás előtt nincs bevételezés, a kiadás bármely a kiadás dátuma utáni bevételezés alapján lesz kiegyenlítve. Ha ugyanazzal a dátummal több kiadás van, akkor az az utolsó kiadás, utolsó bevételezés sorrendben egyenlíthető ki.
 author: AndersGirke
-manager: tfehr
-ms.date: 06/20/2017
+ms.date: 02/21/2022
 ms.topic: article
-ms.prod: ''
-ms.service: dynamics-ax-applications
-ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 51592
-ms.assetid: d9f13274-3268-444f-85c8-b686fd39286d
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: kamaybac
+ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c2c06443532519ad5d6c36a6f4ed1f1c4d136664
-ms.sourcegitcommit: 38d40c331c8894acb7b119c5073e3088b54776c1
-ms.translationtype: HT
+ms.openlocfilehash: f6f5f447724ace473bece3007a96c4b56e90a908
+ms.sourcegitcommit: addae271ddfc5a8b0721c23337f69916153db4cd
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "4967633"
+ms.lasthandoff: 02/21/2022
+ms.locfileid: "8330276"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO dátum tényleges értékkel és jelöléssel
 
 [!include [banner](../includes/banner.md)]
 
-A LIFO dátum készletmodell a LIFO-elv alapján működik. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat. Ha a dátum szerinti LIFO készletmodellben nincs bevételezés a kiadás előtt, akkor a kiadás az utána következő bármelyik bevételezéssel kiegyenlíthető. Ha ugyanazzal a dátummal több kiadás van, akkor az az utolsó kiadás, utolsó bevételezés sorrendben egyenlíthető ki. 
+Az utolsóként be, elsőként ki (LIFO dátum) egy készletkezelés és értékelési módszer, amelyben az utoljára termelt vagy beszerzett készletet elsőként értékesítik, használják vagy adják el. A Microsoft Dynamics 365 Supply Chain Management készletzárási folyamata során a rendszer kiegyenlítéseket hoz létre, ahol a legutóbbi bevételezést minden egyes megadott dátum első kiadásával, a legrégebbi dátummal kezdve stb. Az utolsóként be, elsőként ki (DÁTUM LIFO) készletmodell használata esetén, ha a kiadás előtt nincs bevételezés, akkor a kiadást bármely a kiadás dátuma utáni bevételezés alapján egyenlíti ki a rendszer. A kiegyenlítések és az egyeztetési elv a készlettranzakciók pénzügyi dátumán alapul. Ha több kiadás van ugyanazon a dátumon, akkor az utolsó kiadás, utolsó bevételezés sorrendben egyenlítik ki őket. A kiegyenlítések és helyesbítések előzetes értékelése a készlet-újraszámítási folyamat futtatásával végezhető el.
 
-Ha a LIFO dátumos készletmodellt használja és ha nincs bevételezés a kiadás előtt, akkor a kiadás az utána következő bármelyik bevételezéssel kiegyenlíthető. Ha ugyanazzal a dátummal több kiadás van, akkor az az utolsó kiadás, utolsó bevételezés sorrendben egyenlíthető ki. A LIFO dátum módszer használata esetén nem kell használni a LIFO-dátumszabályt. Ehelyett egyes készlettranzakciók megjelölésével meghatározhatja, hogy egy adott bevételezés egy meghatározott kiadással legyen kiegyenlítve. 
+A LIFO dátumszabály felülbírálható a készlettranzakciók megjelölésével, így egy adott cikkbevételezést egy adott kiadással szemben lehet kiegyenlíteni. Időszakos készletzárásra van szükség, ha a LIFO dátum készletmodellel kiegyenlítéseket lehet létrehozni, és a LIFO elv szerint módosítani lehet a problémák értékét. Amíg nem futtatja a készletzárási folyamatot, a kiadási tranzakciók értékének a tényleges és pénzügyi frissítések esetén a mozgóátlagon történik a program. Ha nem használ jelölést, akkor a rendszer a fizikai vagy pénzügyi frissítéskor kiszámítja a mozgóátlagot.
 
-A dátum szerinti LIFO-elvű készletmodell használata esetén javasoljuk, hogy időszakonként tartson készletzárást. 
+A DÁTUM LIFO készletmodell használata esetében javasoljuk, hogy időszaki készletzárást követően.
 
-Az alábbi példák bemutatják a LIFO-dátumelv alkalmazásának hatását három különböző konfiguráción:
+Az alábbi példák bemutatják a DÁTUM LIFO-dátum használatának hatását három konfigurációban:
 
--   LIFO dátum a **Tényleges értékkel együtt** beállítás nélkül
--   LIFO dátum a **Tényleges értékkel együtt** beállítással
--   LIFO dátum jelöléssel
+- LIFO dátum a Tényleges értékkel **való be nem foglalva beállítás** nélkül
+- LIFO dátum a Tényleges értékkel **együtt beállítással**
+- LIFO dátum jelöléssel
 
-## <a name="lifo-date-without-the-include-physical-value-option"></a>LIFO dátum a Tényleges értékkel együtt beállítás nélkül
+## <a name="lifo-date-without-the-include-physical-value-option"></a>LIFO dátum a Tényleges értékkel való be nem foglalva beállítás nélkül
+
 Ebben a példában a cikkmodellcsoport nem tartalmazza a tényleges értéket. A következő ábrán ezek a tranzakciók láthatók:
 
--   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
--   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
--   4a. Fizikai kiadás készletről, 1 mennyiséggel, 15,00 USD önköltségi áron (a pénzügyileg frissített tranzakciók mozgóátlaga).
--   4b. Pénzügyi kiadás készletről, 1 mennyiséggel, 15,00 USD önköltségi áron (a pénzügyileg frissített tranzakciók mozgóátlaga).
--   5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
--   5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
--   6. Készletzárást hajtanak végre. A LIFO dátummódszer alapján a legutóbbi pénzügyileg frissített kiadás teljesítése a legutóbb pénzügyileg frissített bevételezéssel szemben történik. A kiadási tranzakción 5,00 USD értékű korrekció történik. Ezeknek a tranzakcióknak az elszámolása egymással szemben történik.
+- 1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+- 2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 22,00 USD áron.
+- 3a. Fizikai kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
+- 3b. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
+- 4a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
+- 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 23.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga)
+- 7\. Készletzárást hajtanak végre. A LIFO dátum módszer alapján az első pénzügyi kiadást az első dátumtól kezdődően utoljára frissített bevételezésekkel kell kiegyenlíteni, stb. Ebben a példában egy kiegyenlítés jön létre 3b és 2b között. A program USD 6.00 korrekciót a 3b értékre, az így kapott végső költséget pedig USD 22.00.
 
-Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg frissített tranzakciók átlagának, azaz 15,00 USD összegnek felel meg. 
+A következő ábra a dátum LIFO készletmodell hatását mutatja be, **ha a Tényleges értékkel** együtt beállítás nincs használva.
 
-A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás nincs bekapcsolva. ![LIFO dátum a tényleges értékkel együtt](./media/lifodatewithoutincludephysicalvalue.gif) 
+![LIFO dátum a Tényleges értékkel való be nem foglalva beállítás nélkül.](media/lifo-date-without-include-physical-value.png)
 
 **Jelmagyarázat**
 
 - A készlettranzakciókat függőleges nyilak jelölik.
-- A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
-- A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
-- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, Quantity@Unitprice formátumban.
-- Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
-- Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
+- A fizikai tranzakciókat rövidebb világosszürke nyilak ábrázolják.
+- A pénzügyi tranzakciókat hosszabb fekete nyilak jelzik.
+- A készletre való bevételezéseket a tengely fölötti függőleges nyilak jelzik.
+- A készletről való problémákat a tengely alatti függőleges nyilak jelzik.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
 - Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
-- A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
+- A diagram minden dátumát egy vékony fekete függőleges vonal választja el egymástól. A dátum a diagram alján látható.
+- A készletzárásokat egy piros színű, szaggatott függőleges vonal ábrázolja.
 - A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 ## <a name="lifo-date-with-the-include-physical-value-option"></a>LIFO dátum a Tényleges értékkel együtt beállítással
-A **Tényleges értékkel együtt** a jelölőnégyzetet a **Modell cikkcsoportok** lapon választhatja ki. Ebben az esetben a rendszer a fizikai és pénzügyi bevételezési tranzakciókat egyaránt felhasználja a mozgóátlagon alapuló önköltségi ár kiszámításához. Ahol erre lehetőség van, a rendszer a fizikailag frissített kiadási tranzakción is végez korrekciót. Ha a **Tényleges értékkel együtt** jelölőnégyzet nincs bejelölve, a LIFO dátum készletmodellel végrehajtott készletzárás csak a pénzügyileg frissített tranzakciókkal szemben végez teljesítést. 
+
+Ha a **Cikkmodellcsoportok** **lapon** be van jelölve a Tényleges értékkel együtt jelölőnégyzet, a rendszer fizikai és pénzügyi bevételezési tranzakciókat egyaránt használ a mozgóátlagon áteső önköltségi ár kiszámításához. Ahol lehetséges, a rendszer a fizikailag frissített kiadási tranzakciót is korrigálja. Ha a **Tényleges értékkel be** van véve jelölőnégyzet törölve, akkor a LIFO dátum készletmodellt használó készletzárás csak a pénzügyileg frissített tranzakciókkal teszi a kiegyenlítést.
 
 Ebben a példában a cikkmodellcsoport tartalmazza a tényleges értéket. 
 
 A következő ábrán ezek a tranzakciók láthatók:
 
--   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
--   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
--   4a. Fizikai kiadás készletről, 1 mennyiséggel, 18,33 USD önköltségi áron (a pénzügyileg frissített tranzakciók mozgóátlaga).
--   4b. Pénzügyi kiadás készletről, 1 mennyiséggel, egyenként 18,33 USD önköltségi áron (a pénzügyileg frissített tranzakciók mozgóátlaga).
--   5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
--   5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
--   6. Készletzárást hajtanak végre. A Dátum LIFO módszer alapján a legutóbbi frissített kiadás korrekciója vagy teljesítése a legutóbb frissített bevételezéssel szemben történik. Ezeknek a tranzakcióknak az elszámolása nem egymással szemben történik, mert a pénzügyi bevételezési tranzakciót fizikai frissítési tranzakcióhoz igazítja a rendszer. Ehelyett csak egy 6,67 USD értékű korrekció történik a kiadási tranzakción.
+- 1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+- 2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 22,00 USD áron.
+- 3a. Fizikai kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+- 3b. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+- 4a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
+- 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 23.67 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+- 7\. Készletzárást hajtanak végre. A LIFO dátum módszer alapján az első pénzügyi kiadást az első napon kezdődő minden egyes dátumon a legutóbb pénzügyileg frissített bevételezésekkel stb. egyenlíti ki a program. Ebben a példában egy kiegyenlítés jön létre 2b és 3b között. A program USD 6.00 korrekciót a 3b értékre, az így kapott végső költséget pedig USD 22.00. Ezenkívül a 6a. tranzakciót az 5b bevételezési tranzakció költségére módosítja a a tranzakció. A rendszer nem egyenlíti ki ezeket a tranzakciókat, mert a bevételezés fizikailag frissítve van, de pénzügyileg nem. Ehelyett a tényleges kiadási USD 6.33 csak az összeg korrekciója lesz feladva, és az így kapott helyesb USD 30.00.
 
-Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg frissített tranzakciók átlagának, azaz 20,00 USD összegnek felel meg. 
+A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva.
 
-A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva. ![LIFO dátum a tényleges értékkel együtt](./media/lifodatewithincludephysicalvalue.gif) 
+![LIFO dátum a Tényleges értékkel együtt beállítással.](media/lifo-date-with-include-physical-value.png)
 
 **Jelmagyarázat**
 
 - A készlettranzakciókat függőleges nyilak jelölik.
-- A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
-- A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
-- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, Quantity@Unitprice formátumban.
-- Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
-- Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
+- A fizikai tranzakciókat rövidebb világosszürke nyilak ábrázolják.
+- A pénzügyi tranzakciókat hosszabb fekete nyilak jelzik.
+- A készletre való bevételezéseket a tengely fölötti függőleges nyilak jelzik.
+- A készletről való problémákat a tengely alatti függőleges nyilak jelzik.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
 - Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
-- A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
+- A diagram minden dátumát egy vékony fekete függőleges vonal választja el egymástól. A dátum a diagram alján látható.
+- A készletzárásokat egy piros színű, szaggatott függőleges vonal ábrázolja.
 - A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 ## <a name="lifo-date-with-marking"></a>LIFO dátum jelöléssel
-A jelölés egy olyan folyamat, amellyel összekapcsolható egy kiadási tranzakció egy bevételezési tranzakcióval. A jelölés történhet a tranzakciók feladása előtt és után is. A jelölés használható a készlet pontos költségének megállapítására a tranzakció feladásakor vagy a készletzárás végrehajtásakor. 
 
-Tegyük fel például, hogy az ügyfélszolgálati osztály elfogadott egy sürgős megrendelést egy fontos vevőtől. Mivel ez a rendelés sürgős, tehát többe fog kerülni az ügyfél kérésének teljesítése. Azt szeretné, ha a készlet költsége tükröződne az árrésben is (más szóval az eladott áruk beszerzési értékébe, ELÁBÉ) az adott értékesítési számla esetében. 
+A jelölés egy olyan folyamat, amellyel összekapcsolható egy kiadási tranzakció egy bevételezési tranzakcióval. A jelölés történhet a tranzakciók feladása előtt és után is. A jelölés használható a készlet pontos költségének megállapítására a tranzakció feladásakor vagy a készletzárás végrehajtásakor. Tegyük fel például, hogy az ügyfélszolgálati osztály elfogadott egy sürgős megrendelést egy fontos vevőtől. Mivel ez a rendelés sürgős rendelés, többe kell fizetnie a cikkért, hogy teljesíteni tudja az ügyfél kérését.
 
-A beszerzési rendelés feladásakor a készlet bevételezése 120,00 USD értéken történik. Ha ezt az értékesítési rendelési dokumentumot jelöléssel összekapcsolják a beszerzési rendeléssel még a csomagjegyzék vagy a számla feladása előtt, az ELÁBÉ nem a cikk jelenlegi mozgóátlaga lesz, hanem 120,00 USD. Ha még a jelölés előtt feladják a csomagjegyzéket vagy a számlát, a feladott ELÁBÉ megfelel a beszerzési ár mozgóátlagának. 
+Meg kell győződnie arról, hogy a készletcikk költsége megjelenik az értékesítési rendelés számlájának árrésében vagy eladott áruk költségében (ELÁBÉ). A beszerzési rendelés feladásakor a készlet bevételezése 120,00 USD értéken történik. Ha ezt az értékesítési rendelési dokumentumot jelöléssel összekapcsolják a beszerzési rendeléssel még a csomagjegyzék vagy a számla feladása előtt, az ELÁBÉ nem a cikk jelenlegi mozgóátlaga lesz, hanem 120,00 USD. Ha még a jelölés előtt feladják a csomagjegyzéket vagy a számlát, a feladott ELÁBÉ megfelel a beszerzési ár mozgóátlagának.
 
-A két tranzakció még a készletzárás végrehajtása előtt is összekapcsolható egymással. 
+A két tranzakció még a készletzárás végrehajtása előtt is összekapcsolható egymással.
 
-Például egy bevételezési tranzakció egy kiadási tranzakcióhoz van megjelölve. Ebben az esetben a cikk cikkmodelcsoportjában meghatározott értékelési mód nincs figyelembe véve, és a rendszer ezeket a tranzakciókat egymással szemben egyenlíti ki. 
+Kiadási tranzakciót a tranzakció feladása előtt jelölhet hozzá egy nyugtához. Ezt a **jelölést** **\>** **az** Értékesítési rendelés részletei lap egyik értékesítésirendelés-sorában használhatja, ha az Értékesítésirendelés-sorok gyorslapon a Készletjelölés adatokat választja. A nyitott bevételezési tranzakciókat megtekintheti **Jelölés** oldalon.
 
-Kiadási tranzakciót a tranzakció feladása előtt jelölhet hozzá egy nyugtához. Ezt megteheti egy értékesítési rendelés sorából az **Értékesítési rendelés** oldalon. A nyitott bevételezési tranzakciókat megtekintheti **Jelölés** oldalon. 
-
-Kiadási tranzakciót a tranzakció feladása után jelölhet hozzá egy nyugtához. Egyeztethet vagy megjelölhet egy kiadási tranzakciót egy nyílt nyugtájú tranzakcióhoz egy leltárazott cikk esetén, feladott készlethelyesbítési naplósorból. 
+Kiadási tranzakciót a tranzakció feladása után jelölhet hozzá egy nyugtához. Egyeztethet vagy megjelölhet egy kiadási tranzakciót egy nyílt nyugtájú tranzakcióhoz egy leltárazott cikk esetén, feladott készlethelyesbítési naplósorból.
 
 A következő ábrán ezek a tranzakciók láthatók:
 
--   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
--   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
--   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
--   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
--   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
--   5a. Fizikai kiadás készletről, 1 mennyiséggel, 21,25 USD önköltségi áron (a pénzügyileg és fizikailag frissített tranzakciók mozgóátlaga).
--   5b. Egy 1 mennyiségű pénzügyi készletkiadást jelöléssel összekötnek a 2b bevételezéssel a tranzakció feladása előtt. Ezt a tranzakciót 20,00 USD önköltségi árral adja fel a program.
--   6a. Fizikai kiadás készletről, 1 mennyiséggel, 21,25 USD áron.
--   7. Készletzárást hajtanak végre. Mivel a pénzügyileg frissített FIFO tranzakció össze van kapcsolva egy meglévő kiadással, ezeket a tranzakciókat egymással szemben számolja el a program, és nem kerül sor helyesbítésre.
+- 1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+- 2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 22,00 USD áron.
+- 3a. Fizikai kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
+- 3b. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
+- 3c. A 3b pénzügyi készlet kiadását egy 1b pénzügyi készlet kiadására jelölték.
+- 4a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
+- 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 23.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga)
+- 7\. Készletzárást hajtanak végre. A LIFO dátum módszert használó jelölési elv alapján a megjelölt tranzakciókat egymással szemben egyenlítik ki. Ebben a példában a 3b értékét 1b-el egyenlítik ki, és egy -6,00 USD értékű korrekciót ad fel a 3b részére, hogy az értéket a USD 10.00. Ebben a példában nincs további kiegyenlítés, mivel a lezárás csak a pénzügyileg frissített tranzakciókhoz hoz létre kiegyenlítéseket.
 
-Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg. 
+Az alábbi ábra a dátum LIFO készletmodell hatását mutatja be a bevételek és a bevételek közötti jelölés használata során. 
 
-A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a kiadások és bevételek közötti jelölés használva van. ![LIFO dátum jelöléssel](./media/lifodatewithmarking.gif) 
+![LIFO dátum jelöléssel.](media/lifo-date-with-marking.png)
 
 **Jelmagyarázat**
 
 - A készlettranzakciókat függőleges nyilak jelölik.
-- A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
-- A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
-- Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, Quantity@Unitprice formátumban.
-- Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
-- Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
+- A fizikai tranzakciókat rövidebb világosszürke nyilak ábrázolják.
+- A pénzügyi tranzakciókat hosszabb fekete nyilak jelzik.
+- A készletre való bevételezéseket a tengely fölötti függőleges nyilak jelzik.
+- A készletről való problémákat a tengely alatti függőleges nyilak jelzik.
 - Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
 - Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
-- A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
-- A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
+- A diagram minden dátumát egy vékony fekete függőleges vonal választja el egymástól. A dátum a diagram alján látható.
+- A készletzárásokat egy piros színű, szaggatott függőleges vonal ábrázolja.
+- A készletzárás által végrehajtott elszámolásokat és jelöléseket piros átlós, szaggatott nyilak jelzik, amelyek bevételezésről kiadásra váltnak.
 
-
-
-
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-08-13
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 6c8aa0338ab30e6366601e3759141c7e41bf99fb
-ms.sourcegitcommit: ab1455c67f6ee6ca36bec148bea0dbb0f7704eda
-ms.translationtype: HT
+ms.openlocfilehash: 3269bf3f8a5475fb85e6b51514db29006be9aab1
+ms.sourcegitcommit: b52ff5dfd32580121f74a5f262e5c2495e39d578
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "7428935"
+ms.lasthandoff: 03/03/2022
+ms.locfileid: "8376208"
 ---
 # <a name="release-to-warehouse"></a>Kiadás raktárba
 
@@ -125,6 +125,7 @@ A rendelések raktárba való automatikus kiadásához használja az **Értékes
     - A **Kiadni kívánt mennyiség** – Válassza ki, hogy a teljes mennyiséget vagy csak a ténylegesen lefoglalt mennyiséget kell kiadni a raktárba.
     - **Részlegesen kiadott rendelések kiadásának engedélyezése** – Adja meg, hogy a részlegesen kiadott rendelések fennmaradó mennyiségét ki kell-e adni a raktárba.
     - **Foglalások megtartása sikertelen kiadás esetén** – Adja meg, hogy az értékesítési rendelésekhez automatikusan lefoglalt mennyiségek megmaradnak-e, ha a raktárba való kiadás folyamata sikertelen.
+    - **Csoportos kiadás vevő szerint** – adja meg, hogy a rendszer feldolgozta-e a raktári műveletek kiadását minden vevőnél, vagy egyszerre adja ki az összes értékesítési rendelést. Ha ez a beállítás *Igen*, a rendszer összegyűjti a kiválasztott vevő összes értékesítésirendelés-sorát, kiadja a rendeléseket a raktárba, majd feldolgozja a következő vevőt. Ha ez a beállítás *Nem*, a rendszer egyetlen raktári kiadási műveletben az összes elérhető értékesítésirendelés-sort kiadja. A beállítás engedélyezésével javítható a raktárba való kiadás folyamata teljesítményének és minőségének javítása. Ugyanakkor ügyelnie kell arra, hogy ezt a lehetőséget olyan hullámsablonokkal együtt használja, amelyek a hullámok raktárba való kiadáskor való feldolgozására vannak beállítva, mivel ez a kombináció több egy vevői hullámot generálhat, amelyek mindegyikét csak az ügyfél számára generálták. Ha olyan munkát szeretne létrehozni, amely több vevő szállítását egyesiti, akkor vagy ki kell kapcsolnia a Csoport kiadása vevő *szerint beállítást,* vagy ha a hullámsablonokat úgy szeretné beállítani, hogy a halasztott feldolgozást használja.
     - **Zárolt rendelések kezelése** – Válassza ki, hogyan kezelje a rendszer azokat az értékesítési rendeléseket, amelyek jelenleg zárolva vannak, mert más felhasználók vagy folyamatok szerkesztik őket:
 
         - *Várja meg a rendelések zárolásának feloldását* – A rendszernek meg kell várnia a rendelések zárolásának feloldását, mielőtt a raktárba kiadja azokat. Ebben az esetben a raktárba való kiadás folyamata több időt is igénybe vehet.

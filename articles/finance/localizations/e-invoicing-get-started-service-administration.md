@@ -2,7 +2,7 @@
 title: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
 description: Ez a témakör bemutatja az Elektronikus számlázás szolgáltatásfelügyeletének használatának első lépéseit.
 author: gionoder
-ms.date: 05/24/2021
+ms.date: 08/17/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: feb8160cd920906765f7ef4a393e15c2be5d8c2cd60c3646e15648980ff27a06
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: f77c8fd1696b74f852d04cc0a696d4816ef9af1f
+ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765644"
+ms.lasthandoff: 02/23/2022
+ms.locfileid: "7984828"
 ---
 # <a name="get-started-with-electronic-invoicing-service-administration"></a>Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
 
@@ -33,7 +33,7 @@ ms.locfileid: "6765644"
 Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a következő előfeltételeknek kell megfelelnie:
 
 - Hozzá kell férnie a Microsoft Dynamics Lifecycle Services (LCS) fiókjához.
-- Olyan LCS-projekttel kell rendelkeznie, amely a Microsoft Dynamics 365 Finance és a Dynamics 365 Supply Chain Management 10.0.17-as vagy újabb verzióját tartalmazza. Ezenkívül ezeket az alkalmazásokat a következő Azure földrajzi régiók egyikében kell telepíteni:
+- Olyan LCS-projekttel kell rendelkeznie, amely a Microsoft Dynamics 365 Finance vagy a Dynamics 365 Supply Chain Management 10.0.17-es vagy újabb verzióját tartalmazza. Ezenkívül ezeket az alkalmazásokat a következő Azure földrajzi régiók egyikében kell telepíteni:
 
     - Amerikai Egyesült Államok
     - Európa
@@ -47,24 +47,24 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 ## <a name="install-the-add-in-for-microservices-in-lifecycle-services"></a>A mikroszolgáltatások bővítményének telepítése a Lifecycle Services szolgáltatásba
 
 1. Jelentkezzen be az LCS-fiókba, és az LCS projekt irányítópultján válasszon ki egy LCS-projektet.
-2. A projektben, akörnyezet irányítópultján válassza ki az LCS-telepítési projektet. A kiválasztott projektnek futnia kell.
+2. A projektben, a **Környezet** irányítópulton válassza ki a saját telepített környezetet. A kiválasztott környezetnek futnia kell.
 3. A **Power Platform Integráció** lapon a **Környezeti bővítmények** mezőcsoportban válassza az **Új bővítmény telepítése** lehetőséget.
 4. Válassza az **Elektronikus számlázás** lehetőséget.
 5. Az **AAD-alkalmazásazonosító** mezőbe írja: **091c98b0-a1c9-4b02-b62c-7753395ccabe**. Ez egy rögzített érték.
-6. Az **AAD-bérlőazonosító** mezőbe írja be az Azure előfizetési fiókja bérlőazonosítóját.
+6. Az **AAD-bérlőazonosító** mezőbe írja be az Azure előfizetési fiókja bérlőazonosítóját. A megadott Azure Active Directory (Azure AD) bérlőnek ugyanannak kell lennie, mint az RCS-hez használt bérlőnek.
 7. Olvassa el az Általános Szerződési Feltételeket, majd jelölje be a jelölőnégyzetet.
-8. Válassza a **Telepítés** parancsot.
+8. Válassza a **Telepítés** parancsot. A telepítés akár több percig is eltarthat.
 
 
 ## <a name="set-up-the-parameters-for-rcs-integration-with-electronic-invoicing"></a>RCS-integráció paramétereinek beállítása az Elektronikus számlázással
 
 1. Jelentkezzen be a RCS-fiókba.
-2. Az **Elektronikus jelentéskészítés** munkaterületen, a **Kapcsolódó hivatkozások** szakaszban, válassza az **Elektronikus jelentéskészítés paraméterei** elemet.
-3. Az **e-számlázási szolgáltatás** lapon a **Szolgáltatási végpont URI** mezőben adja meg az Azure földrajzi régió megfelelő szolgáltatási végpontját, amint azt a következő tábla mutatja.
+2. A **Globalizációs funkciók** munkaterületen, a **Kapcsolódó beállítások** szakaszban, válassza az **Elektronikus jelentéskészítés paraméterei** hivatkozást.
+3. Az **Elektronikus számlázás** lapon a **Szolgáltatási végpont URI** mezőben adja meg az Azure földrajzi régió megfelelő szolgáltatási végpontját, amint azt a következő tábla mutatja.
 
     | Adatközpont Azure földrajzi régió | Szolgáltatási végpont URI-címe                                                       |
     |----------------------------|----------------------------------------------------------------------------|
-    | Amerikai Egyesült Államok              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
+    | Egyesült Államok              | <p>`https://gw.us-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.us-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Európa                     | <p>`https://gw.eu-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il103.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il104.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il105.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il106.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il107.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il108.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il109.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.eu-il110.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Egyesült Királyság             | <p>`https://gw.uk-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.uk-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | Ázsia                       | <p>`https://gw.as-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p><p>`https://gw.as-il102.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
@@ -77,7 +77,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 
 1. Jelentkezzen be a RCS-fiókba.
 2. A **Globalizációs funkció** munkaterületen a **Környezet** szakaszban válassza ki az **Elektronikus számlázás bővítmény** csempét.
-3. A **Környezet beállítása** lapon a Művelet ablaktáblán válassza ki a **Szolgáltatási környezet**, majd a **Key Vault-paraméterek** lehetőséget.
+3. A **Környezet beállítása** lapon a Művelet ablaktáblán válassza ki a **Szolgáltatási környezetek**, majd a **Key Vault-paraméterek** lehetőséget.
 4. Kulcstartó hivatkozás létrehozásához válassza az **Új** lehetőséget.
 5. A **Név** mezőben adja meg a kulcstartó hivatkozásának nevét. Adjon meg egy leírást a **Leírás** mezőben.
 6. A **Key Vault – URI** mezőbe másolja be a kulcstartó titkos kódját az Azure Key Vault megoldásból. További információért lásd az [Azure tárfiók és kulcstartó létrehozása](e-invoicing-create-azure-storage-account-key-vault.md) lehetőséget.
@@ -113,17 +113,19 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 8. A **Felhasználói azonosító** mezőbe írja be a felhasználó aliasát. Az **E-mail** mezőbe írja be a feladó e-mail-címét.
 9. Válassza a **Mentés** lehetőséget.
 10. Ha az ország-/régióspecifikus számlákhoz egy tanúsítványlánc szükséges a digitális aláírások alkalmazásához, akkor válassza a Művelet ablaktábla **Key Vault-paraméterek** elemét, majd a **Tanúsítványlánc** lehetőséget, és kövesse az alábbi lépéseket:
+
     1. Tanúsítványlánc létrehozásához válassza az **Új** lehetőséget.
     2. A **Név** mezőbe írja be a tanúsítványlánc nevét. Adjon meg egy leírást a **Leírás** mezőben.
     3. A **Tanúsítványok** szakaszban válassza a **Hozzáadás** lehetőséget, ha tanúsítványt szeretne hozzáadni a lánchoz.
     4. A **Fel** és a **Le** gombbal módosíthatja a tanúsítványnak a láncon belül elfoglalt pozícióját.
     5. Válassza a **Mentés** gombot, majd zárja be az oldalt.
     6. Zárja be a lapot.
+
 11. A Művelet ablaktáblán válassza a **Szolgáltatási környezet**, majd a **Közzététel** lehetőséget a környezet felhőben történő közzétételéhez. Az **Állapot** mező értéke **Közzétéve** értékre módosul.
 
 ## <a name="create-a-connected-application"></a>Csatlakoztatott alkalmazás létrehozása
 
-1. A **Környezet beállítása** oldalon a Művelet ablaktáblán válassza a **Csatlakoztatott alkalmazások** lehetőséget.
+1. A **Környezetek beállítása** oldalon a Művelet ablaktáblán válassza a **Csatlakoztatott alkalmazások** lehetőséget.
 2. Válassza ki az **Új** lehetőséget egy csatlakoztatott alkalmazás létrehozásához.
 3. A **Név** mezőben adja meg a csatlakoztatni kívánt alkalmazás nevét.
 4. Az **Alkalmazás** mezőben adja meg a csatlakozáshoz szükséges Finance and Supply Chain Management környezet URL-címét.
@@ -133,7 +135,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 
 ## <a name="link-connected-applications-to-environments"></a>Csatlakoztatott alkalmazások csatolása környezetekhez
 
-1. A **Környezet beállítása** oldalon válassza az **Új** lehetőséget, ha a környezethez hozzá szeretne rendelni egy csatlakoztatott alkalmazást.
+1. A **Környezetek beállítása** oldalon válassza az **Új** lehetőséget, ha a környezethez hozzá szeretne rendelni egy csatlakoztatott alkalmazást.
 2. A **Csatlakoztatott alkalmazás** mezőben válasszaon ki egy csatlakoztatott alkalmazást.
 3. Válassza ki a szolgáltatási környezetet a **Szolgáltatási környezet** mezőben.
 4. Válassza a **Mentés** gombot, majd zárja be az oldalt.
@@ -149,7 +151,7 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 ### <a name="set-up-the-service-endpoint-url"></a>A szolgáltatásvégpont URL-címének beállítása
 
 1. Menjen a **Szervezeti adminisztráció \> Beállítás \> Elektronikus dokumentumparaméterek** lehetőségre.
-2. A **Beküldési szolgáltatás** lapon a **Szolgáltatási végpont URL** mezőben adja meg az Azure földrajzi régió megfelelő szolgáltatási végpontját, amint azt a következő tábla mutatja.
+2. Az **Elektronikus számlázás** lapon a **Végpont URL-címe** mezőben adja meg az Azure földrajzi régió megfelelő szolgáltatási végpontját, amint azt a következő tábla mutatja.
 
     | Adatközpont Azure földrajzi régió | Szolgáltatási végpont URI-címe                                                       |
     |----------------------------|----------------------------------------------------------------------------|
@@ -161,9 +163,8 @@ Mielőtt teljesítené az ebben a témakörben ismertetett eljárásokat, a köv
 3. A **Környezet** mezőben adja meg az Elektronikus számlázásban közzétett szolgáltatási környezet nevét.
 4. Válassza a **Mentés** gombot, majd zárja be az oldalt.
 
-### <a name="enable-flighting-keys"></a>Tesztkulcsok engedélyezése
+### <a name="enable-flighting-keys-for-finance-or-supply-chain-management-version-10017"></a>A tesztkulcsokat a Finance vagy Supply Chain Management 10.0.17-es verziójában engedélyezheti
 
-Engedélyezze a tesztkulcsokat a Microsoft Dynamics 365 Finance vagy a Microsoft Dynamics 365 Supply Chain Management 10.0.17-es vagy korábbi verzióihoz. 
 1. Hajtsa végre a következő SQL-parancsot:
 
     ILLESSZE BE A SYSFLIGHTING (JÁRATNÉV, ENGEDÉLYEZETT) ÉRTÉKEKBE ('BusinessDocumentSubmissionServiceEnabled', 1)

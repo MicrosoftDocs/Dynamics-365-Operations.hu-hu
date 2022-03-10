@@ -2,7 +2,7 @@
 title: E-kereskedelmi webhely létrehozása
 description: Ez a témakör bemutatja azokat a lépéseket és információkat, amelyek egy új e-kereskedelmi webhely létrehozásához szükségesek Dynamics 365 Commerce webhelyépítőben.
 author: bicyclingfool
-ms.date: 02/03/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 01f22772fd8c8984a2f92c516972d6659325a18c
-ms.sourcegitcommit: 1eef00796f7c5511f432b01800cdf8920992d7d5
-ms.translationtype: HT
+ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
+ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/04/2022
-ms.locfileid: "8090769"
+ms.lasthandoff: 03/05/2022
+ms.locfileid: "8388211"
 ---
 # <a name="create-an-e-commerce-site"></a>E-kereskedelmi webhely létrehozása
 
@@ -30,6 +30,19 @@ ms.locfileid: "8090769"
 Ez a témakör bemutatja azokat a lépéseket és információkat, amelyek egy új e-kereskedelmi webhely létrehozásához szükségesek Dynamics 365 Commerce webhelyépítőben.
 
 A Dynamics 365 Commerce e-kereskedelmi lehetőségek licencelése esetén a webhelykészítő a saját webhely alapjaként használható kezdő webhellyel lesz biztosítva. Ha azonban a nulláról szeretné kezdeni, vagy egy második webhelyet szeretne létrehozni, akkor egy új helyet kell létrehoznia a webhelylétrehozási környezetben. 
+
+## <a name="site-creation-prerequisites"></a>Webhely létrehozásának előfeltételei
+
+A webhelyszerkesztő egy felhasználója számára az e-commerce rendszer rendszergazdáihoz rendelt Biztonsági csoportban szerepelnie kell egy Microsoft Azure Active Directory Azure AD() Azure AD felhasználói fióknak. További tájékoztatás: Új [e-commerce bérlő telepítése](deploy-ecommerce-site.md).
+
+> [!NOTE]
+> Azure AD Előfordulhat, hogy a vendég felhasználóknak eltérő hozzáférési engedélyei vannak a bérlőjéhez Azure AD. Még ha az Azure AD e-commerce rendszer rendszergazdáihoz rendelt biztonsági csoport is tagja, előfordulhat, hogy a Azure AD **vendég** felhasználónak módosítania kell a külső felhasználók engedélybeállítását ahhoz, hogy létrehoz egy e-commerce webhelyet a Commerce rendszerben. 
+
+A külső felhasználók Azure AD **beállításainak módosításához** kövesse ezeket a lépéseket.
+
+1. Az Azure-portálon lépjen a bérlőhöz Azure AD.
+1. Menjen a Felhasználói **beállításokhoz \> : Külső felhasználók**, és válassza **a Külső együttműködési beállítások kezelése hivatkozást**. Nyílik a Külső **együttműködési beállítások** lap, ahol be lehet állítani a vendégfelhasználó hozzáférését, a vendég meghívási beállításait és az együttműködési korlátozásokat. 
+1. A külső együttműködési beállítások a vállalat biztonsági házirendje szerint módosíthatók. 
 
 ## <a name="set-up-your-site"></a>A webhely beállítása
 
@@ -50,13 +63,13 @@ A webhelyének beállításához tegye a következőket.
 
 Miután létrehozta a webhelyet, a **Termékek** lap kiválasztásával ellenőrizheti, hogy az online áruházhoz van-e társítva. Az online áruházhoz rendelt termékek választékát kell látnia. A lap bal felső részén található legördülő menü segítségével is megnyithatja a hozzárendelt termékeket kategóriánként.
 
-## <a name="rename-your-site"></a>Nevezze át webhelyét
+## <a name="rename-your-site"></a>A webhely átnevezése
 
-Ha át szeretné nevezni webhelyét a Webhelykészítőben, kövesse az alábbi lépéseket.
+A webhelyet a következő lépések szerint nevezheti át a webhelyre a webhelyszerkesztőben.
 
-1. A webhelylista nézet megnyitásához válassza a lehetőséget **Webhelyváltó** a jobb felső sarokban, majd válassza a lehetőséget **Webhelyek kezelése**. 
-1. Jelölje be az átnevezni kívánt webhely melletti jelölőnégyzetet, majd válassza ki **Átnevezés** a parancssorban.
-1. Ban,-ben **Új webhelynév** párbeszédpanelen adja meg az új webhely nevét, majd válassza ki **rendben**. A webhelylista frissül, és megjelenik a webhely új neve.
+1. A webhelylista nézet megnyitásához válassza **a Webhely kapcsolóját** a jobb felső sarokban, majd **válassza a Helyek kezelése lehetőséget**. 
+1. Jelölje be az átnevezni kívánt webhely melletti jelölőnégyzetet, **majd válassza az Átnevezés** lehetőséget a parancssorban.
+1. Adja meg **az új webhely nevét az Új webhely neve** párbeszédpanelen, majd válassza az **OK gombra.** A webhelylista frissülni fog, hogy a hely új neve megjelenik.
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -2,33 +2,35 @@
 title: Szállítói számlák áttekintése
 description: Ez a témakör a szállítói számlákkal kapcsolatos általános információkat tartalmazza.
 author: abruer
-manager: AnnBe
-ms.date: 12/18/2019
-ms.topic: article
+ms.date: 02/25/2022
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: VendorInvoiceWorkspace, VendInvoiceInfoListPage
 audience: Application User
-ms.reviewer: roschlom
-ms.custom: 13971
+ms.reviewer: twheeloc
+ms.custom:
+- "13971"
+- intro-internal
 ms.assetid: 0ec4dbc0-2eeb-423b-8592-4b5d37e559d3
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1799fb18a1dd4b7c532259ab198e1ba30a89c09d
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: b54a60ac3b1868ea7cc5ed88d5a31203b4bd29d3
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5264131"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358424"
 ---
 # <a name="vendor-invoices-overview"></a>Szállítói számlák áttekintése
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-Ez a témakör a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák a bevételezett termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak.
+
+Ez a témakör a szállítói számlákkal kapcsolatos általános információkat tartalmazza. A szállítói számlák termékekért és szolgáltatásokért cserébe igényelt kifizetés kérelmei. A szállítói számlák vonatkozhatnak már folyamatban lévő szolgáltatásokra, vagy bizonyos termékek és szolgáltatások esetén beszerzési rendeléseken is alapulhatnak.
 
 ## <a name="vendor-invoices"></a>Szállítói számlák
 
@@ -49,10 +51,10 @@ Az alábbi vitafórumon további információkat tudhat meg a **Nyitott szállí
 
 Ha szállítói számlát egy kapcsolódó beszerzési rendelésből nyit meg, akkor a rendszerben számlasorok jönnek létre a beszerzési rendelésből. Alapértelmezés szerint a rendszer a mennyiségeket termékbevételezésből veszi át. Azonban a következő alapértelmezett viselkedések bármelyikét használhatja:
 
-- **Most bevételezett mennyiség** – Használja részleges szállítmányokhoz ezt a lehetőséget. A rendszer beállítja az az alapértelmezett értéket a **Mennyiség** mezőben a beszerzési rendelés **Bevételezés most** mezőjében meghatározott mennyiségből.
-- **Rendelt mennyiség** – Használja teljes szállítmányokhoz ezt a lehetőséget. A rendszer beállítja az az alapértelmezett értéket a **Mennyiség** mezőben a beszerzési rendelés **Megrendelve** mezőjében meghatározott mennyiségből.
+- **Most bevételezett mennyiség** – Használja részleges szállítmányokhoz ezt a lehetőséget. A Mennyiség mezőben **szereplő** **alapértelmezett** érték a beszerzési rendelés Bevétele mezőben megadott mennyiségre lesz állítva.
+- **Rendelt mennyiség** – Használja teljes szállítmányokhoz ezt a lehetőséget. A Mennyiség mezőben **szereplő** **alapértelmezett** érték a beszerzési rendelés Megrendelve mezőjében megadott mennyiségre lesz állítva.
 - **Regisztrált mennyiség** – Használja ezt a lehetőséget, ha a cikkhez regisztráció szükséges a megadott a **Cikkmodell csoportok** oldalon. A **Mennyiség** mezőben szereplő alapértelmezett érték a regisztrált fizikai módosítási mennyiség.
-- **Termékbevételezési mennyiség** – Akkor válassza, ha a rendelés már átesett termékbevételezésen. A **Mennyiség** mezőben szereplő alapértelmezett érték a termékbevételezéseken elérhető teljes mennyiség.
+- **Termékbevételezési mennyiség** – Akkor válassza, ha a rendelés már átesett termékbevételezésen. A Mennyiség mezőben szereplő alapértelmezett **érték** az elérhető termékbevételezések összmennyisége.
 - **Regisztrált mennyiség és szolgáltatások** – Akkor használja, ha az érkeztetési naplóban raktározott cikkek vagy a nem raktározott cikkek regisztrált mennyiségek. Ez a beállítás a szolgáltatásokat is tartalmazza, függetlenül attól, hogy regisztrálva vannak-e.
 
 Ha a jogi személy számlaegyeztetést használ, akkor megtekintheti a mennyiségegyeztetés eredményeit a **Termékbevételezés mennyiségi egyeztetése** oszlopban. Használhatja az **Egyezetés részletei** gombot is a műveleti ablaktábla **Ellenőrzés** fülén a mennyiségegyeztetés eredményeinek megtekintéséhez.
@@ -63,17 +65,16 @@ Hozzáadhat sorokat, amelyek nem voltak a szállítói számla beszerzési rende
 
 ## <a name="submitting-a-vendor-invoice-for-review"></a>Szállítói számla küldése ellenőrzésre
 
-A szervezet használhat meghatározott munkafolyamatokat a szállítói számlák ellenőrzési eljárásához. A munkafolyamat előírhatja a számlafejléc, a számlasor vagy mindkettő ellenőrzését. A munkafolyamat vezérlőelemei a fejlécre vagy a sorra vonatkoznak, attól függően, hogy hol van a fókusz, amikor a vezérlőelemet választja. A **Feladás** gomb helyett a **Küldés** gomb jelenik meg, amelyet használhat szállítói számla feladásához az ellenőrzési folyamat során.
+A szervezet használhat meghatározott munkafolyamatokat a szállítói számlák ellenőrzési eljárásához. A munkafolyamat előírhatja a számlafejléc, a számlasor vagy mindkettő ellenőrzését. A munkafolyamat vezérlőelemei a fejlécre vagy a sorra vonatkoznak, attól függően, hogy hol van a fókusz, amikor a vezérlőelemet választja. A Küldés gomb **helyett** a Küldés **gomb elküldi a** szállítói számlát az felülvizsgálati folyamaton keresztül.
 
 ### <a name="preventing-invoice-from-being-submitted-to-workflow"></a>A számla beküldésének megakadályozása a munkafolyamatba 
 
 A következőkben többféle módot ismerhet meg, amelyekkel megakadályozhatja, hogy egy számla beküldésre kerüljön a munkafolyamatba.
 
-- **A számla végösszege és a regisztrált végösszeg nem egyenlő.** A számlát benyújtó személynek figyelmeztetés érkezik, ha az összegek nem egyeznek meg. A figyelmeztetés lehetőséget biztosít az egyenlegek korrigálására, mielőtt újból benyújtja a számlát a munkafolyamatba. Ez a funkció akkor érhető el , ha a **Munkafolyamatba küldés tiltása, ha a számla végösszege és a regisztrált végösszeg nem egyeznek** paraméter a **Funkciókezelés** oldalon be van kapcsolva. 
-
+- **A számla végösszege és a regisztrált végösszeg nem egyenlő.** A számlát benyújtó személynek figyelmeztetés érkezik, hogy az összegek nem egyeznek meg. A figyelmeztetés lehetőséget biztosít az egyenlegek korrigálására, mielőtt újból benyújtja a számlát a munkafolyamatba. Ez a funkció akkor érhető el , ha a **Munkafolyamatba küldés tiltása, ha a számla végösszege és a regisztrált végösszeg nem egyeznek** paraméter a **Funkciókezelés** oldalon be van kapcsolva. 
 - **A számla nem hozzárendelt költségeket tartalmaz.** A számlát benyújtó személy figyelmeztetést kap, hogy a számlán hozzárendeletlen költségek találhatók, így a számlának a munkafolyamatba való újraküldése előtt javítani tudja a számlát. Ez a funkció akkor érhető el , ha a **Munkafolyamatba küldés tiltása, ha a szállítói számlán hozzárendeletlen költéségek találhatók** paraméter a **Funkciókezelés** oldalon be van kapcsolva.
-
-- **A számla sorszáma megegyezik egy másik feladott számla sorszámával.** A számlát benyújtó személy figyelmeztetést kap, hogy a számlán duplikált sorszám található, így a számlának a munkafolyamatba való újraküldése előtt javítani tudja azt. Ez a figyelmeztetés akkor jelenik meg, ha a Kötelezettségek pont **Használt számlaszám ellenőrzése** paraméterének beállítása **Ismétlődések tiltása**. Ez a funkció akkor érhető el **Munkafolyamatba küldés tiltása, ha a számlaszám már létezik egy feladott számlán, és az Ön rendszere nincs beállítva ismétlődő számlaszámok fogadására** paraméter a **Funkciókezelés** oldalon be van kapcsolva.  
+- **A számla sorszáma megegyezik egy másik feladott számla sorszámával.** A számlát beküldő személy üzenetet kap, amely tájékoztatja, hogy ismétlődő számú számla található. Az ismétlődő szám a számla munkafolyamatba való újrabevallása előtt kijavítható. Ez a figyelmeztetés akkor jelenik meg, ha a Kötelezettségek pont **Használt számlaszám ellenőrzése** paraméterének beállítása **Ismétlődések tiltása**. Ez a funkció akkor érhető el **Munkafolyamatba küldés tiltása, ha a számlaszám már létezik egy feladott számlán, és az Ön rendszere nincs beállítva ismétlődő számlaszámok fogadására** paraméter a **Funkciókezelés** oldalon be van kapcsolva.
+- **A számla olyan sort tartalmaz, ahol a számlázott mennyiség kisebb, mint az egyező termékbevételezési mennyiség.** A számlát beküldő vagy feladni próbáló személy üzenetet kap arról, hogy a mennyiségek nem egyeznek. Az üzenet lehetőséget biztosít az értékeknek a számla munkafolyamatba való újbóli beküldése előtti korrigálására. Ez a funkció akkor áll rendelkezésre, ha a **Szállítói számlák munkafolyamatba történő benyújtásának és feladásának blokkolása** paraméter be van kapcsolva a **Funkciókezelés** oldalon, és a **Munkafolyamatba történő benyújtás és feladás blokkolása** paraméter be van kapcsolva a **Kötelezettségek paraméterei** oldalon.
 
 ## <a name="matching-vendor-invoices-to-product-receipts"></a>Szállítói számlák egyeztetése a termékbevételezésekkel
 
@@ -101,7 +102,7 @@ Megadhatja, hogy hány számla kerüljön egy kötegbe, valamint a köteg újra�
 
 ## <a name="working-with-multiple-invoices"></a>Több számla használata
 
-Dolgozhat egyszerre több számlával, és fel is adhatja azokat egyszerre. Ha több számlát kell létrehoznia, akkor használja a **Függőben lévő szállítói számlák** oldalt. Ha több szállítói számlát kell feladni és nyomtatni, akkor használja a számlajóváhagyási naplót. Ha számla-jóváhagyási naplót használ, legalább egy termékbevételezést feladtak, és a beszerzési rendelés számláját fel kell adni a számlajegyzékbe. A számla pénzügyi adatai a számlajegyzékbe feladott számláról származnak.
+Dolgozhat egyszerre több számlával, és fel is adhatja azokat egyszerre. Ha több számlát kell létrehoznia, akkor használja a **Függőben lévő szállítói számlák** oldalt. Ha több szállítói számlát kell feladásra és nyomtatásra használnia, használja a Számla-jóváhagyási **naplót**. Ha számla-jóváhagyási **naplót** használ, a beszerzési rendeléshez legalább egy termékbevételezést fel kell lennie adva, a beszerzési rendelés számláját pedig egy számlajegyzékbe. A számla pénzügyi adatai a számlajegyzékbe feladott számláról származnak.
 
 ## <a name="recovering-vendor-invoices-that-are-being-used"></a>Használatban lévő szállítói számlák visszaállítása
 
@@ -118,9 +119,32 @@ A helyreállíthatatlan hiba miatt leállított munkafolyamat-példány **Helyre
 A **Munkafolyamat-előzmények** oldal segítségével visszaállíthatja a munkafolyamat állapotát **Tervezet** értékre. Ezt az oldalt a **Szállítói számla**  vagy a **Közös > Lekérdezések > Munkafolyamatok** lehetőséghez navigálva nyithatja meg. A munkafolyamat állapotának **Tervezet** értékre való visszaállításához válassza ki a **Visszahívás** lehetőséget. A munkafolyamat-állapotot úgy is visszaállíthatja tervezetnek, ha a **Szállítói számla** vagy a **Függőben lévő szállítói számlák** oldalon kiválasztja a **Visszahívás** műveletet. Miután a munkafolyamat állapotát visszaállította **Tervezet** állapotba, szerkeszthetővé válik a **Szállítói számlák** lapon.
 
 ## <a name="viewing-the-invoice-total-on-the-pending-vendor-invoices-page"></a>A számla végösszegének megtekintése a függőben lévő szállítói számlák lapon
+
 A függőben lévő szállítói számlák lapon megtekintheti a számla összegét a **Függőben lévő szállítói számlák** oldalon a **Kötelezettségek paraméterei** oldalon lévő **Számla végösszegének megjelenítése a függő szállítói számlák listájában** paraméter engedélyezésével. 
 
+## <a name="vendor-open-transactions-report"></a>Nyitott szállítói tranzakciók – jelentés
 
+A **Nyitott szállítói tranzakciók** jelentés részletes adatokat nyújt az egyes szállítókhoz tartozó, a megadott dátumon nyitott tranzakciókról. Ezt a jelentést gyakran használják auditálási eljárás során a szállító könyvi tranzakciók és a főkönyvi számlatranzakciók közötti egyenlegek ellenőrzésére.
+
+A jelentés minden tranzakcióhoz a következő adatokat tartalmazza:
+
+- Számla száma
+- Tranzakció dátuma
+- Bizonylatszám
+- A tranzakció összege a tranzakció pénznemében és a könyvelési pénznemben
+- Jóváírás egyenlege a tranzakció pénznemében és a könyvelési pénznemben
+- Terhelés egyenlege a tranzakció pénznemében és a könyvelési pénznemben
+- Részösszeg a könyvelési pénznemben
+- Fizetési határidő
+
+### <a name="filter-the-data-on-the-report"></a>A jelentésen látható adatok szűrése
+
+A **Szállító nyitott tranzakciói** jelentés létrehozásakor a következő alapértelmezett paraméterek állnak rendelkezésre. Ezekkel szűrheti a jelentésben lévő adatokat.
+
+- **Jövőbeli kiegyenlítés kizárása** – jelölje be ezt a jelölőnégyzetet, ha ki szeretné zárni a tranzakciókat, amelyek azután a dátum után vannak kiegyenlítve, amely meg van adva a **Nyitott tranzakciók ekkor** mezőben.
+- **Nyitott tranzakciók ekkor** – Adjon meg egy dátumot, hogy tartalmazza az adott napon nyitott tranzakciókat. Ha nem ad meg dátumot, akkor ez a mező a maximális dátumra lesz állítva. (A legkésőbbi dátum az a legkésőbbi dátum, amit a rendszer elfogad, tehát 2154 december 31.)Alapértelmezés szerint a jelentés következő futtatásakor ebben a mezőben az utolsó korábban beállított dátum lesz beállítva.
+
+A **Szerepeltetni kívánt rekord** mezővel tovább korlátozhatja a jelentésben szereplő tranzakcióadatokat.
 
 ## <a name="additional-resources"></a>További erőforrások
 

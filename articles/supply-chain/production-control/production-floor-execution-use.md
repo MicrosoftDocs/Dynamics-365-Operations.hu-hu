@@ -2,7 +2,7 @@
 title: A termelési üzem végrehajtási felületének dolgozók általi használata
 description: Ez a témakör azt mutatja be, hogyan kell használni a termelési üzem végrehajtási felületét egy dolgozó szemszögéből.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 01/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,13 +12,13 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
-ms.dyn365.ops.version: Release 10.0.15
-ms.openlocfilehash: c8c50a9a6f9f3c6582e9fd0f28080a3259faab21
-ms.sourcegitcommit: c08a9d19eed1df03f32442ddb65a2adf1473d3b6
-ms.translationtype: HT
+ms.dyn365.ops.version: 10.0.24
+ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "6349770"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384419"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -72,6 +72,18 @@ Az aktív feladatokat tartalmazó lista az alábbi oszlopokkal rendelkezik.
 - **Selejtezett** – Ez az oszlop azt a mennyiséget jeleníti meg, amelyet selejteztek a feladathoz.
 - **Hátralévő** – Ez az oszlop azt a mennyiséget jeleníti meg, amely még hátravan a feladatból.
 
+## <a name="my-jobs-tab"></a>Feladatok lap
+
+A **Feladatok lap** segítségével a dolgozók egyszerűen megtekinthetik a kifejezetten hozzájuk rendelt még el nem adott és be nem adott feladatokat. Olyan vállalatoknál hasznos, ahol a feladatokat időnként vagy mindig meghatározott dolgozókhoz (emberi erőforrásokhoz) rendelik, nem pedig más típusú erőforrásokhoz (például gépekhez). 
+
+Az ütemezési rendszer automatikusan hozzárendel minden termelési feladatot egy adott erőforrásrekordhoz, és minden erőforrásrekordnak van típusa (például gép vagy emberi). Amikor beállít egy alkalmazottat termelési dolgozóként, a dolgozói számlát egy egyedi emberierőforrás-rekordhoz társíthatja. 
+
+A **Feladatok lap** felsorolja azokat a még el nem adott és be nem adott feladatokat, amelyek a bejelentkezett dolgozó emberierőforrás-rekordhoz vannak rendelve, amennyiben van bejelentkezett dolgozó. Soha nem sorolja fel azokat a feladatokat, amelyek hozzá vannak rendelve egy géphez vagy más típusú erőforráshoz, még akkor sem, ha a bejelentkezett dolgozó elkezdte dolgozni ezeket a feladatokat.
+
+Ha az összes olyan feladatot meg kell tekinteni, amelyet a bejelentkezett dolgozó elindított, az egyes feladatokhoz rendelt erőforrás típusától függetlenül az **Aktív feladatok lapot** használja. A helyi feladatszűrő **konfigurációjának megfelelő összes befejezetlen feladat megtekintéséhez a dolgozó vagy a kezdés állapotától függetlenül használja a Minden feladat lapot**.
+
+![Feladatok lap](media/pfei-my-jobs-tab.png "Feladatok lap")
+
 ## <a name="my-machine-tab"></a>Saját gép lap
 
 A **Saját gép** lapon a dolgozók kiválasztják azt az eszközt, amely egy géperőforráshoz kapcsolódik a **Minden feladat** lapon beállított szűrőn belül. A dolgozó ezután megtekintheti a kiválasztott eszköz állapotát: legfeljebb négy kijelölt számláló értékét és a közelmúltbeli karbantartási kérések és a regisztrált leállások listáját olvassa be. A dolgozó a kiválasztott eszköz karbantartását is kérheti, valamint regisztrálhatja és szerkesztheti a gép leállását. (Ez a lapnév testreszabható, és az ön rendszerénél más lehet.)
@@ -93,7 +105,6 @@ A **Saját gép lap** a következő oszlopokat tartalmazza. A számok az előző
 1. **Leállás regisztrálása** – Ezzel a gombbal megnyithat egy párbeszédpanelt, ahol regisztrálhatja a gép leállását. Kiválaszthatja az okkódot, és megadhatja a leállás dátumát/tartományát. A gép leállási idejének regisztrációja a gépi eszköz hatékonyságának kiszámítására használható.
 1. **Megtekintés vagy szerkesztés** – Ezzel a gombbal megnyithat egy párbeszédpanelt, ahol szerkesztheti és megtekintheti a meglévő leállási rekordokat.
 
-
 ## <a name="starting-and-completing-production-jobs"></a>Termelési feladatok elindítása és befejezése
 
 A dolgozók egy termelési feladatot úgy indíthatnak el, hogy kijelölnek egy feladatot a **Minden feladat** lapon, majd a **Feladat megkezdése** lehetőséget választják a **Feladat megkezdése** párbeszédpanel megnyitásához.
@@ -110,11 +121,110 @@ Amikor egy dolgozó befejezte vagy részben befejezte a feladatot, akkor az **Ak
 
 ![Az Előrehaladás jelentése párbeszédpanel.](media/pfei-report-progress-dialog.png "Az Előrehaladás jelentése párbeszédpanel")
 
+## <a name="reporting-good-quantities-on-batch-orders-that-have-co-products-and-by-products"></a>Helyes mennyiségek jelentése olyan kötegelt rendelések esetén, amelyek társ- és melléktermékeket tartalmaznak
+
+A dolgozók használhatják a gyártóterületi végrehajtási felületet a kötegelt rendelések előrehaladásának jelentéséhez. Ez a jelentésfunkció jelentéseket tartalmaz a társtermékekről és melléktermékekről.
+
+Egyes gyártók, különösen a feldolgozóiparban, a kötegrendelések segítségével felügyelik a termelési folyamatokat. A kötegrendelések receptúrákból vannak létrehozva, és ezek a receptúrák úgy is definiálhatók, hogy társ- és melléktermékekkel is rendelkezzenek kimeneten. A kötegrendelésekre vonatkozó visszajelzések jelentésénél a kimenet mennyiségét regisztrálni kell a receptúracikken, valamint a társ- és melléktermékeken.
+
+Amikor egy dolgozó kötegelt rendelésen befejez vagy részben befejez egy feladatot, akkor jelenteni tudja a jó vagy selejt termékek mennyiségét minden egyes termékhez, amely a rendelés kimeneteként van meghatározva. A kötegelt rendelés kimeneteként definiált termékek *Receptúra*, *Társtermék* vagy *Melléktermék* típusúak is lehetek.
+
+A termékek jó mennyiségének jelentéséhez egy dolgozó kiválaszt egy feladatot az **Aktív feladatok** lapon, majd kiválasztja a **Jelentés az előrehaladásról** lehetőséget.
+
+Ezután a **Jelentés az előrehaladásról** párbeszédpanelen a dolgozó kiválaszthat azok közül a termékek közül, amelyek kimenetként vannak megadva a kötegrendeléshez. A dolgozó kiválaszthat egy vagy több terméket a listából, majd kiválaszthatja a **Jelentés az előrehaladásról** lehetőséget. Alapértelmezés szerint minden terméknél üres a mennyiség, és a dolgozó a numerikus billentyűzet használatával adhatja meg a mennyiséget. A dolgozó az **Előző** és a **Következő** gombbal mozoghat a kijelölt termékek között. A mennyiség megadása után íz egyes termékekhez a dolgozó a feladatra vonatkozó állapotot frissítheti az alábbiak valamelyikére: *Folyamatban*, *Leállítva* vagy *Befejezve*.
+
+![Társtermékek és melléktermékek jelentése.](media/report-co-by-products.png "Társtermékek és melléktermékek jelentése")
+
+### <a name="reporting-on-batch-orders-for-planning-items"></a>Jelentés kötegrendelésről cikkek tervezéséhez
+
+Amikor egy dolgozó befejez egy tervezési cikkre vonatkozó kötegrendelési feladatot, akkor a mennyiségeket csak a társ- és melléktermékekről jelenti, mivel a tervezési cikkek nem tartalmaznak *Receptúra* típusú cikket.
+
+### <a name="reporting-co-product-variation"></a>Társtermék variációinak jelentése
+
+Ha olyan receptúraverzióból jött létre kötegrendelés, amelyben a **Társtermékek változatai** beállítás *Igen* értékű a dolgozó jelenthet az olyan társtermékekről, amelyek nem részei a kötegrendelés definíciójának. Ez a funkció olyan helyzetekben használatos, amikor váratlan termékkimenet fordulhat elő a termelési folyamatban.
+
+Ebben az esetben a dolgozó meghatározhatja a társterméket és a jelentendó mennyiséget, ha kiválasztja a **Társtermékek variációi** elemet az előrehaladás jelentése párbeszédpanelen. A dolgozó ezután választhat a társtermékként definiált kiadott termék közül.
+
+### <a name="reporting-catch-weight-items"></a>A cikkeket jelentéskészítése
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+A dolgozók a termelés emeletének végrehajtási felületével jelentést tehetnek a cikkekhez létrehozott kötegrendelések előrehaladásáról. A kötegrendelések képletek alapján vannak létrehozva, amelyek definiálhatóak úgy, hogy receptúrás cikkként, társtermékként vagy társtermékként tartalmazzanak egy cikkeket. A receptúra úgy is definiálható, hogy receptúrás sorokat kap az összetevőkből, amelyek meg vannak határozva a catch weight számára. A tényleges stömegű cikkek két mértékegységet használnak a készlet nyomon követésére: a tényleges súly és a készletmennyiség. Például az élelmiszeriparban a dobozolt hús tényleges ssúlyos cikkként definiálható, ahol a tényleges súly mennyiségét használják a dobozok számának nyomon követésére, a készletmennyiséget pedig a dobozok súlyának nyomon követésére.
+
 ## <a name="reporting-scrap"></a>Selejt jelentése
 
 Amikor egy dolgozó befejezte vagy részben befejezte a feladatot, akkor az **Aktív feladatok** lapon kiválaszthatna a **Selejtek jelentése** lehetőséget, hogy jelentse a legyártott leselejtezett mennyiséget. Ezután a **Selejtek jelentése** párbeszédpanelen a dolgozó beírja a leselejtezett mennyiséget a numerikus billentyűzet segítségével. A dolgozó az okot (*Semmilyen*, *Gép*, *Kezelő* vagy *Anyag*) is kiválasztja.
 
 ![A Selejtek jelentése párbeszédpanel.](media/pfei-report-scrap-dialog.png "A Selejtek jelentése párbeszédpanel")
+
+## <a name="adjust-material-consumption-and-make-material-reservations"></a>Anyagfelhasználás kiigazítása és anyagfoglalások foglalása
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+A dolgozók minden termelési feladat esetében módosíthatja az anyagfelhasználást. Ez a funkció olyan helyzetekben használatos, amikor a termelési feladat által ténylegesen felhasznált anyagok mennyisége nagyobb vagy kisebb volt a tervezett mennyiségnél. Ezért módosítani kell, hogy a készletszintek aktuálisak maradjon.
+
+A dolgozók foglalásokat is fel tudnak foglalni a köteg- és sorozatszámokra. Ez a funkció olyan helyzetekben használatos, amikor egy dolgozónak manuálisan meg kell adnia, hogy melyik anyagkötemény- vagy sorozatszámot használta a rendszer, hogy megfeleljen az anyag nyomonkövethetőségi követelményeinek.
+
+A dolgozók az Anyag beállítása beállításával adhatja meg a módosítandó **mennyiséget**. Ez a gomb a következő helyeken érhető el:
+
+- A Jelentés selejtes **párbeszédpanelén**
+- A Jelentés állapota **párbeszédpanelen**
+- A jobb oldalon található eszköztáron
+
+### <a name="adjust-material-consumption-from-the-report-scrap-and-report-progress-dialog-boxes"></a>Az anyagfelhasználás beállítása a Selejtjelentés és a Jelentés állapota párbeszédpanelről
+
+Miután a dolgozó beírja a jelentandó mennyiséget a **Jelentés** **állapota** vagy a Selejt jelentése párbeszédpanelen, **elérhetővé válik az Anyag** módosítása gomb. Amikor a felhasználó kiválasztja ezt a gombot, megjelenik az **Anyag** beállítása párbeszédpanel. Ezen a párbeszédpanelen azokat a cikkeket listázza, amelyek a feladathoz jelentett jó vagy selejt mennyiségei alapján tervezetten felhasználandók.
+
+A párbeszédpanelen található lista a következő információkat mutatja:
+
+- **Termékszám** – az alaptermék és a termékváltozat.
+- **Terméknév** – A termék neve.
+- **Javaslat** – a feladathoz megadott mennyiségre vonatkozó haladás vagy selejt jelentésekor felhasznált anyag becsült mennyisége.
+- **Felhasználás** – az a tényleges anyagmennyiség, amely akkor lesz felhasználva, amikor a feladathoz megadott mennyiségre vonatkozó haladást vagy selejtet jelentik.
+- **Lefoglalva** – a készletben fizikailag lefoglalt anyag mennyisége.
+- **Egység** – az anyagjegyzék egysége.
+
+A párbeszédpanel jobb oldala a következő információkat mutatja:
+
+- **Termékszám** – az alaptermék és a termékváltozat.
+- **Becsült** – a becsült felhasználandó mennyiség.
+- **Elindítva** – a termelési feladatban elindított mennyiség.
+- **Fennmaradó mennyiség** – a becsült mennyiségből a még felhasználandó mennyiség.
+- **Kiadott mennyiség** – a felhasznált mennyiség.
+
+A következő műveletek végezhetők el:
+
+- A dolgozó a Felhasználás beállítása lehetőség választásával meghatározhatja az **anyagmennyiséget**. A mennyiség megerősítést követően **a** Felhasználás oszlopban szereplő mennyiség frissül a módosított mennyiséggel.
+- Ha a dolgozó az Anyag beállítása lehetőséget **választja**, létrejön egy termelési kitárolásilista-napló. Ez a napló ugyanazokból a cikkekből és mennyiségekből áll, mint az Anyag **beállítása** lista.
+- Amikor a dolgozó az Anyag beállítása párbeszédpanelen módosít egy mennyiséget, **a** megfelelő naplósor Javaslat mezőjében is ugyanannak a **mennyiségnek** a frissítése történik. Ha a dolgozó a Mégse **lehetőséget** választja az **Anyag** módosítása párbeszédpanelen, a kitárolási lista törlődik.
+- Ha a dolgozó az OK **lehetőséget** választja, a kitárolási lista nem törlődik. A feladásra akkor történik meg, amikor **a** **feladatot jelentik a Selejtjelentés vagy a Jelentés állapota párbeszédpanelen.**
+- Ha a dolgozó a Jelentés **folyamatban** **·** **vagy** a Selejt jelentése párbeszédpanelen a Mégse lehetőséget választja, a kitárolási lista törlődik.
+
+### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Anyag beállítása a jobb oldalon található eszköztárból
+
+Az **Anyag beállítása** gomb beállítható úgy, hogy megjelenjen a jobb eszköztáron. (További tájékoztatás: [A termelési emelet végrehajtási felületének tervezése](production-floor-execution-tabs.md).) Egy dolgozó beállíthatja az **Anyagok** kiigazítása lehetőséget a folyamatban lévő termelési feladathoz. Ebben az esetben megjelenik az **Anyag** beállítása párbeszédpanel, ahol a dolgozó módosíthatja a kívánt módosításokat. A párbeszédpanel megnyitásakor a termelési rendeléshez létrejön egy termelési kitárolási lista, amely tartalmazza a módosított mennyiségek sorait. Ha a dolgozó a Feladás lehetőséget **választja**, a módosítást visszaigazoljuk, és meg történik a kitárolási lista feladása. Ha a dolgozó a Mégse **lehetőséget választja**, a kitárolási lista törlődik, és nem kerül sor helyesbítésre.
+
+### <a name="adjust-material-consumption-for-catch-weight-items"></a>Anyagfelhasználás kiigazítása a catch weight cikkekhez
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until further notice -->
+
+A dolgozók módosíthatja az anyagfelhasználást a catch weight cikkekhez. Ez a funkció olyan helyzetekben használatos, amikor a termelési feladat által felhasznált tényleges súlyú anyag tényleges mennyisége több vagy kevesebb volt, mint a tervezett mennyiség. Ezért módosítani kell, hogy a készletszintek aktuálisak maradjon. Ha egy dolgozó módosítja egy tényleges ssúlyos cikkfelhasználását, akkor a tényleges súly és a készletmennyiség is módosítható. Ha például egy termelési feladat a tervek szerint öt dobozt fog felhasználtani, amelyekben a becsült súly 2 kilogramm/doboz, akkor a dolgozó módosíthatja a felhasznált dobozok számát és a mezők súlyát is. A rendszer ellenőrzi, hogy a mezők megadott súlya a kiadott termékhez meghatározott minimális és maximális küszöbértéken belül van-e.
+
+### <a name="reserve-materials"></a>Anyagok foglalása
+
+Az Anyag beállítása **párbeszédpanelen** a **dolgozó az Anyagfoglalás lehetőség választásával anyagfoglalásokat hozhat és módosíthat**. A **megjelenő Anyag lefoglalása** párbeszédpanelen látható a cikk fizikailag elérhető készlete az egyes tárolási és nyomon követési dimenziókhoz.
+
+Ha az anyag engedélyezve van a speciális raktári folyamatokban, akkor a lista csak a ténylegesen elérhető készletet jeleníti meg az anyag termelési bemeneti helyéhez. A termelés bemeneti helye abban az erőforrásban van definiálva, ahol a termelési feladatot tervezik. Ha a cikkszám köteg- vagy sorozatszám szerint ellenőrzött, akkor a ténylegesen elérhető köteg- és sorozatszámok teljes listája látható. A lefoglalandó mennyiség megadásához a dolgozó az Anyag lefoglalása lehetőséget **választhatja**. Meglévő foglalás eltávolításához a dolgozó a Foglalás eltávolítása lehetőséget **választhatja**.
+
+A termelés bemeneti helyének beállításával kapcsolatos további tudnivalókat lásd a következő post- és utócímben: [A termelés bemeneti helyének beállítása](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
+
+> [!NOTE]
+> A dolgozó által a Foglalások **párbeszédpanelen** **·** **·** **alkalmazott foglalások megmaradnak, ha a dolgozó a Mégse lehetőséget választja a Jelentés állapota vagy a Selejt jelentése párbeszédpanelen.**
+>
+> A cikk-foglalások nem helyesb módosíthatók.
 
 ## <a name="completing-a-job-and-starting-a-new-job"></a>Feladat befejezése és új feladat megkezdése
 
@@ -138,7 +248,7 @@ A dolgozó kiválasztja a harmadik feladatot a **Minden feladat** lapon, majd ki
 
 A közvetett tevékenységek olyan tevékenységek, amelyek nem kapcsolódnak közvetlenül a termelési rendeléshez. A közvetett tevékenységek rugalmasan meghatározhatók, a [Munkaidő és jelenlét közvetett tevékenységeinek beállítása](/dynamicsax-2012/appuser-itpro/set-up-indirect-activities-for-time-and-attendance) című témakörben leírtak szerint.
 
-Például Shannon, egy dolgozó a(z) Contoso nevű vállalatnál, egy vállalati találkozón szeretne részt venni, és a találkozókat közvetett tevékenységnek tekinti. A következő két eset valamelyike érvényes:
+Például Shannon, egy dolgozó a Contoso nevű vállalatnál, egy vállalati találkozón szeretne részt venni, és a találkozókat közvetett tevékenységnek tekinti. A következő két eset valamelyike érvényes:
 
 - **Shannon egy vagy több aktív feladaton dolgozik.** Shannon kiválasztja a **Tevékenység** lehetőséget, azonosítja a tevékenységet (találkozó), és megerősíti a kijelölést. A megjelenő üzenet arról tájékoztatja, hogy már vannak folyamatban lévő feladatai. Az üzenetből Shannon eldöntheti, hogy befejezi vagy leállítja azokat a feladatokat, amelyeken dolgozik, mielőtt elmenne a találkozóra.
 - **Shannonnak nincsenek aktív feladatai.** Shannon kiválasztja a **Tevékenység** lehetőséget, azonosítja a tevékenységet (találkozó), és megerősíti a kijelölést. A rendszer regisztrálta, hogy a találkozón van.

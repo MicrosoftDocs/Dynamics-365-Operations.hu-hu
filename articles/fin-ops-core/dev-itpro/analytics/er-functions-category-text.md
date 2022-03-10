@@ -2,7 +2,7 @@
 title: A szöveges kategóriába tartozó ER-függvények listája
 description: A témakör tájékoztatást nyújt az Elektronikus jelentéskészítésben (ER) támogatott szövegfüggvényekről.
 author: NickSelin
-ms.date: 09/09/2021
+ms.date: 02/28/2022
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: afe45bf1ff5c641346997aa4f32f3241dce2f0a2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
-ms.translationtype: HT
+ms.openlocfilehash: 5d185c128de1120e93d1779db04a7666ba557707
+ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075500"
+ms.lasthandoff: 03/01/2022
+ms.locfileid: "8367767"
 ---
 # <a name="list-of-er-functions-of-the-text-category"></a>A szöveges kategóriába tartozó ER-függvények listája
 
@@ -35,7 +35,7 @@ Az Elektronikus jelentéskészítés (ER) szövegfüggvényei a *Karakterlánc* 
 | [Összefűzés](er-functions-text-concatenate.md) | Ez a függvény az összes megadott karakterláncot *Sztring* értékként adja vissza, miután egy karakterláncba lettek egyesítve. |
 | [Formátum](er-functions-text-format.md) | Ez a függvény a megadott karakterláncot egy *Karakterlánc* értékként adja vissza, miután az **%N** minden előfordulását az *N*. argumentummal helyettesítve formázza. |
 | [GetEnumValueByName](er-functions-text-getenumvaluebyname.md) | Ez a függvény egy adott *Felsorolás* értéket keres a megadott felsorolási adatforrásban a *Karakterlánc* értékként megadott felsorolási név használatával. Ha a *Felsorolás* értéke megtalálható, a függvény azt visszaadja. |
-| [GetLabelText](er-functions-text-getlabeltext.md) | Ez a függvény egy adott címkét keres az a *[Húr](er-formula-supported-data-types-primitive.md#string)* érték, amely a megadott címke fordítását jelenti a megadott nyelven. |
+| [GetLabelText](er-functions-text-getlabeltext.md) | Ez a funkció megkeres egy konkrét címkét, és olyan Karakterlánc *[értéket ad vissza, amely a](er-formula-supported-data-types-primitive.md#string)* megadott címke adott nyelven megadott fordításának megfelelő. |
 | [GuidValue](er-functions-text-guidvalue.md) | Ez a függvény a megadott *Karakterlánc* típusú bemenetet *GUID* típusú adatelemmé konvertálja. |
 | [JsonValue](er-functions-text-jsonvalue.md) | Ez a funkció elemzi az adatokat a megadott elérési úton elérhető JavaScript Object Notation (JSON) formátumban, a megadott azonosítón alapuló skaláris érték kibontásához. Ezután *Karakterlánc* értékként adja vissza a kivont skaláris értéket. |
 | [Balra](er-functions-text-left.md) | Ez a függvény olyan *Karakterlánc* értéket ad vissza, amely megadott számú karaktert mutat a megadott karakterlánc kezdete után. |
@@ -51,7 +51,7 @@ Az Elektronikus jelentéskészítés (ER) szövegfüggvényei a *Karakterlánc* 
 | [Jobbra](er-functions-text-right.md) | Ez a függvény olyan *Karakterlánc* értéket ad vissza, amely megadott számú karaktert mutat a megadott karakterlánc vége után. |
 | [Szöveg](er-functions-text-text.md) | A függvény a megadott számot egy *Karakterlánc* értékként adja vissza, miután az aktuális alkalmazás példányának kiszolgálója területi beállításainak megfelelően formázott szöveges karakterlánccá alakítja. |
 | [Fordítás](er-functions-text-translate.md) | Ez a függvény olyan *Karakterlánc* értéket ad vissza, amely a megadott szöveg karakterrel történő helyettesítésének eredményét tartalmazza egy másik megadott halmaz karaktereivel. |
-| [Trim](er-functions-text-trim.md) | Ez a funkció a megadott karakterláncot *Karakterlánc* értékként adja vissza, miután a kezdő és záró szóközöket levágta, és a szavak közötti több szóközt eltávolította. |
+| [Trim](er-functions-text-trim.md) | Ez a függvény a megadott szöveg-karakterláncot ad vissza karakterláncként a *lap*, a visszahelyezés, a sorbeszúrás és a képernyőbeszúrás karakterei egy karakterrel, a vezető és záró szóközök csonkolása, illetve a szavak közötti szóközök eltávolítása után. |
 | [Upper](er-functions-text-upper.md) | Ez a függvény *Karakterlánc* értékként adja vissza a megadott karakterláncot, miután a program nagybetűssé alakította. |
 
 ## <a name="additional-resources"></a>További erőforrások

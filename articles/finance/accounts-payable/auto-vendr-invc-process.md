@@ -2,26 +2,24 @@
 title: Automatizált szállítói számlázási folyamatok – áttekintés
 description: Ez a témakör szállítói számla feldolgozásának automatizálási lehetőségét és az automatikus folyamat használatának előnyeit mutatja be.
 author: abruer
-manager: AnnBe
 ms.date: 02/12/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-ax-applications
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.assetid: ''
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2017-08-30
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 6ad26dbfb4e45e15cd6e6f2ab32bc69f108ffb5a
-ms.sourcegitcommit: 88babb2fffe97e93bbde543633fc492120f2a4fc
-ms.translationtype: HT
+ms.openlocfilehash: f21b76bb0d30370e4ea4fdd718999d537e9ce925
+ms.sourcegitcommit: 9cbff8a2cdeaf606488fb0044b3de4ab4409c9dc
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "5555159"
+ms.lasthandoff: 02/26/2022
+ms.locfileid: "8358430"
 ---
 # <a name="automated-vendor-invoicing-processes-overview"></a>Automatizált szállítói számlázási folyamatok – áttekintés
 
@@ -35,6 +33,7 @@ A Kötelezettségek szállítói számlázási folyamatait is automatizálhatók
 
 Az automatizálási folyamatok a következő feladatok végrehajtásához használhatók:
 
+- Előlegek automatikus alkalmazása a szállítói számlákra
 - Importált számlák automatikus elküldése a munkafolyamat-rendszerbe.
 - Terméknyugták egyeztetése a függőben lévő szállítói számlák soraival.
 - A feladás szimulálása a szállítói számla feladását megelőzően.
@@ -44,7 +43,7 @@ Az automatizálási folyamatok a következő feladatok végrehajtásához haszn�
 
 ## <a name="submit-imported-vendor-invoices-to-the-workflow-system"></a>Importált szállítói számlák elküldése a munkafolyamat-rendszerbe
 
-Az érintés nélküli, Kötelezettségeken belüli számlázási folyamat részeként a rendszer automatikusan elküldhet importált számlákat a munkafolyamat-rendszerbe. A folyamat futtatása a háttérben történik, az Ön által megadott gyakorisággal (óránként vagy naponta). Az importált számláknak a munkafolyamat-rendszerbe történő automatikus elküldése képességhez szükséges, hogy a folyamat egy importált számlával kezdődjön. Ha azt szeretné, hogy a számla manuális beavatkozás nélkül is feldolgozható legyen az elejétől a végéig, akkor a munkafolyamat-konfigurációban szerepelnie kell egy automatikus feladási feladatnak.
+A nem érintőképernyős kötelezettségek számlázási folyamatának részeként az importált számlát automatikusan el lehet nyújtani a munkafolyamat-rendszernek. A folyamat futtatása a háttérben történik, az Ön által megadott gyakorisággal (óránként vagy naponta). Az importált számláknak a munkafolyamat-rendszerbe történő automatikus elküldése képességhez szükséges, hogy a folyamat egy importált számlával kezdődjön. Ha azt szeretné, hogy a számla manuális beavatkozás nélkül is feldolgozható legyen az elejétől a végéig, akkor a munkafolyamat-konfigurációban szerepelnie kell egy automatikus feladási feladatnak.
 
 
 A vételi megbízásokhoz (PO-k) kapcsolódó számlák, valamint a nem PO-beszerzési kategóriát és nem raktározott sorokat tartalmazó számlák automatikusan elküldhetők a munkafolyamat-rendszerbe. A manuálisan bevitt számlákat és a **Szállítói együttműködés számlázási** munkaterületen keresztül létrehozott számlákat kézzel kell elküldenie a munkafolyamat-rendszerbe. A fennmaradó előleg feldolgozását manuálisan kell végrehajtani az importált számlák esetében. Az előlegeket kézzel alkalmazhatja az importált számla feladása előtt vagy után. A fel nem adott normál számlákra manuálisan lehet előlegeket alkalmazni a **Szállítói számlák** oldalon. A feladást követően a kiegyenlített előleg elérhető lesz manuálisan az adott szállító egyéb számláira való alkalmazásra a **Szállítók** oldalon (**Kötelezettségek \> Közös \> Szállítók \> Minden szállító \> Számla lap \> Alkalmazás**).
@@ -53,7 +52,7 @@ Az automatizálási funkció egy rugalmas keretet biztosít ahhoz, hogy vállala
 
 ## <a name="match-product-receipts-to-invoice-lines-that-have-a-three-way-matching-policy"></a>A terméknyugták sorainak egyeztetése olyan számlasorokkal, amelyekhez háromirányú egyeztetési irányelv tartozik
 
-A rendszer automatikusan egyezteti a feladott terméknyugtákat azokkal a számlasorokkal, amelyekhez háromirányú egyeztetési irányelvet határoztak meg. A folyamat addig fog futni, amíg az egyeztetett terméknyugták mennyisége nem egyezik meg a számla szerinti mennyiséggel. E folyamat részeként kiválaszthatja, hogy hány alkalommal próbálja meg a rendszer egyeztetni a terméknyugtákat egy adott számlasorral, mielőtt a folyamatot sikertelenként lezárná. A folyamat a háttérben fog futni, óránként vagy naponta. Az automatizált egyeztetési folyamat futtatható a számlák munkafolyamat-rendszerbe történő elküldéséhez kapcsolódó eljárás részeként. Azt is megteheti, hogy önálló folyamatként futtatja.
+A feladott termékbevételezéseket automatikusan egyeztetni lehet azokkal a számlasorokkal, amelyekre háromjegyű egyeztetési irányelv van meghatározva. A folyamat addig fog futni, amíg az egyeztetett terméknyugták mennyisége nem egyezik meg a számla szerinti mennyiséggel. E folyamat részeként kiválaszthatja, hogy hány alkalommal próbálja meg a rendszer egyeztetni a terméknyugtákat egy adott számlasorral, mielőtt a folyamatot sikertelenként lezárná. A folyamat a háttérben fog futni, óránként vagy naponta. Az automatizált egyeztetési folyamat futtatható a számlák munkafolyamat-rendszerbe történő elküldéséhez kapcsolódó eljárás részeként. Azt is megteheti, hogy önálló folyamatként futtatja.
 
 ## <a name="pre-validate-vendor-invoice-posting"></a>Szállítói számla feladásának előzetes ellenőrzése
 
@@ -61,7 +60,7 @@ A feladási szimuláció végrehajtja a szállítói számlák feladási folyama
 
 ## <a name="enhanced-experience-for-viewing-workflow-and-automation-historical-information-for-vendor-invoices"></a>A szállítói számlákra vonatkozó munkafolyamat-előzményinformációk megtekintésének és automatizálásának továbbfejlesztett módja
 
-A szállítói számla munkafolyamat-előzményeinek könnyen olvasható nézete jeleníthető meg. A szállítói számla munkafolyamat-előzményeit közvetlenül a szállítói számláról lehet elérni. Ezért kevesebb kattintás szükséges az információ megtalálásához. Ha a szervezet lehetővé tette az importált szállítói számlák automatikus elküldésének lehetőségét a munkafolyamatba, az importált számlák automatizálási előzményei meg vannak adva. Az automatizálási előzmények segítségével azonosíthatja az aktuális folyamatlépést, valamint a már elvégzett lépéseket. Ha egy lépés sikertelen, a rendszer részletes információkat nyújt a hiba okának megértéséhez.
+A szállítói számla munkafolyamat-előzményeinek könnyen olvasható nézete jeleníthető meg. A szállítói számla munkafolyamat-előzményeit közvetlenül a szállítói számláról lehet elérni. Ezért kevesebb kattintás szükséges az információ megtalálásához. Ha a szervezet lehetővé tette az importált szállítói számlák automatikus elküldésének lehetőségét a munkafolyamatba, az importált számlák automatizálási előzményei meg vannak adva. Az automatizálási előzmények segítségével azonosíthatja az aktuális folyamatlépést, valamint a már elvégzett lépéseket. Ha egy lépés sikertelen, a részletes információk segítséget fognak adni a hiba okának a tájékoztatása érdekében.
 
 ## <a name="analytics-and-metrics"></a>Analitika és metrikák
 
@@ -79,9 +78,9 @@ A **Számla megérkezési dátuma** érték azt a dátumot jelzi, amikor a váll
 
 ## <a name="tracking-the-imported-invoice-amount-and-imported-sales-tax-amount-values"></a>Az Importált számla összegének és az Importált áfaösszeg értékének nyomon követése
 
-A szállítói számlák importálási fájljában megadhatja az **Importált számla összege** és az **Importált áfaösszeg** értékét. Ezek az értékek általában olyan számláról származnak, amelyet egy külső szolgáltató beszkennelt és megtalálhatók az importfájlban. Mivel a számla feldolgozása a Kötelezettségek pontban történik, a rendszer a számlaadatok alapján számítja ki az értékeket. A számla csak akkor adható fel, ha az importált értékek megegyeznek a számított értékekkel. Az egyező értékek garantálják, hogy a számla pontosan megegyezzen a szállítónak fizetendő esedékes összeggel. Ha a szervezet lehetővé teszi az importált számlák automatikus elküldését a munkafolyamat-rendszerbe, akkor opcionálisan előírhatja, hogy az importált összegek megegyezzenek a kiszámított összegekkel, és csak ezt után lehessen a számlát benyújtani a munkafolyamat-rendszerbe.
+A szállítói számlák importálási fájljában megadhatja az **Importált számla összege** és az **Importált áfaösszeg** értékét. Ezek az értékek általában olyan számláról származnak, amelyet egy külső szolgáltató beszkennelt és megtalálhatók az importfájlban. Amint a számla feldolgozása a Kötelezettségekben történik, az értékek számítása a számlaadatok alapján történik. A számla csak akkor adható fel, ha az importált értékek megegyeznek a számított értékekkel. Az egyező értékek garantálják, hogy a számla pontosan megegyezzen a szállítónak fizetendő esedékes összeggel. Ha a szervezet lehetővé teszi az importált számlák automatikus elküldését a munkafolyamat-rendszerbe, akkor opcionálisan előírhatja, hogy az importált összegek megegyezzenek a kiszámított összegekkel, és csak ezt után lehessen a számlát benyújtani a munkafolyamat-rendszerbe.
 
 ## <a name="vendor-invoice-automation---resume-automation-processing-for-multiple-invoices"></a>Szállítói számla automatizálása – Több számla automatizálásának folytatása
-Ha egy importált számlát nem küld el sikeresen a munkafolyamatnak az automatizált folyamaton keresztül, a rendszer eltávolítja azt a további automatizált feldolgozásból. A kötelezettségek ügyintézője áttekintheti és szerkesztheti a számlát, mielőtt az automatikus folyamat újra beküldi azt a munkafolyamatba. Ha egy hiba oka több számla esetében is megoldható, újraindíthatja az automatikus folyamatot az **Automatikus számlafeldolgozás folytatása** lapon. 
+Ha egy importált számla nem lett sikeresen elküldve a munkafolyamatba az automatizált folyamat során, akkor a rendszer eltávolítja a további automatikus feldolgozásból. A kötelezettségek ügyintézője áttekintheti és szerkesztheti a számlát, mielőtt az automatikus folyamat újra beküldi azt a munkafolyamatba. Ha egy hiba oka több számla esetében is megoldható, újraindíthatja az automatikus folyamatot az **Automatikus számlafeldolgozás folytatása** lapon. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

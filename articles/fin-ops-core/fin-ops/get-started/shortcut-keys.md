@@ -1,8 +1,8 @@
 ---
 title: Billentyűparancsok
-description: Ez a témakör áttekintést nyújt azokról a billentyűparancsokról, amelyeket a Finance and Operations alkalmazásokkal folytatott munka során használhat.
+description: Ez a témakör áttekintést nyújt a Pénzügy és műveletek alkalmazások használata során használható billentyűparancs-kombinációkról.
 author: jasongre
-ms.date: 10/05/2020
+ms.date: 03/03/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,21 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bbb60a8d6de01affbf5d257145cbe660434fa914
-ms.sourcegitcommit: 074b6e212d19dd5d84881d1cdd096611a18c207f
-ms.translationtype: HT
+ms.openlocfilehash: 7d66c1fd08c29b85ca14bf1ae5d08c603e4a1945
+ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "5744591"
+ms.lasthandoff: 03/04/2022
+ms.locfileid: "8384563"
 ---
 # <a name="keyboard-shortcuts"></a>Billentyűparancsok
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
-A következő billentyűparancsok segítségével gyorsan és hatékonyan viheti be az adatokat a Finance and Operations alkalmazásokban.
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+A billentyűparancsokkal gyorsan és hatékonyabban adhatja meg az adatokat a Pénzügy és műveletek alkalmazásokban. 
 
 > [!NOTE]
 > Az itt ismertetett billentyűparancsok az Egyesült Államokban használt billentyűelrendezésre vonatkoznak. Egyéb billentyűzetkiosztások billentyűi esetén előfordulhat, hogy nem az amerikai billentyűzet billentyűinek felelnek meg.
@@ -34,11 +37,11 @@ Az ezen a lapon található billentyűparancsok egy része a *billentyűkombiná
 
 ## <a name="finding-a-shortcut"></a>Billentyűparancs megkeresése
 
-A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billentyűparancsokat közvetlenül a felhasználói felületről fedezhetik fel. Egyszerűen kattintson jobb gombbal a kívánt vezérlőelemre, és válassza a **Billentyűparancsok megtekintése** elemet. Ennek hatására megnyílik egy párbeszédpanel, melyen láthatók az oldal adott részén használható billentyűparancsok.
+A felhasználók közvetlenül a felhasználói felületről fedezhetik fel a jelenleg elérhető gyorsbillentyűket. Egyszerűen kattintson jobb gombbal a kívánt vezérlőelemre, és válassza a **Billentyűparancsok megtekintése** elemet. Ennek hatására megnyílik egy párbeszédpanel, melyen láthatók az oldal adott részén használható billentyűparancsok. Másik lehetőségként nyomja le az Alt+Shift+K billentyűkombinációt a párbeszédpanel megnyitásához (majd nyomja le még egyszer az Alt+Shift+K billentyűkombinációt a lap aktuálisan elérhető parancsikonjainak a megjelenítéséhez).    
 
 ## <a name="action-shortcuts"></a>Műveleti billentyűparancsok
 
-| Művelet                                      | Billentyű vagy billentyűkombináció                            |
+| Művelet                                      | Nyomja meg a(z)  billentyűt                            |
 |-------------------------------------------------|----------------------------------|
 | Műveletkeresés megnyitása                              | Ctrl+' vagy Alt+Q                  |
 | Ugrás a szokásos műveleti ablakba                | Alt+M,A vagy Ctrl+F6               |
@@ -127,8 +130,10 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 
 ## <a name="grid-shortcuts"></a>Rács billentyűparancsok
 
-| Művelet                                                                                                             | Billentyű vagy billentyűkombináció                           |
+| Művelet                                                                                                             | Nyomja meg a(z)  billentyűt                           |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| Függőleges görgetés                                                                                                     | Egérkerék                     |
+| Vízszintes görgetés                                                                                                   | Műszak + egérkerék             |
 | Ugrás a következő/előző oszlopra                                                                                       | Tab/Shift+Tab                 |
 | Ugrás a következő/előző sorra                                                                                          | Lefelé nyíl/Felfelé nyíl           |
 | Lépés a következő/előző sorra kijelölés nélkül<blockquote>[!NOTE] Ez a billentyűparancs csak többszörös kijelölésekre vonatkozik.</blockquote> | Ctrl+Felfelé nyíl / Ctrl+Lefelé nyíl |
@@ -140,22 +145,24 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Ugrás az első rekordra                                                                                               | Ctrl+Home                       |
 | Ugrás az utolsó rekordra                                                                                                | Ctrl+End                        |
 | Az összes sor kijelölése vagy törlése                                                                                               | Ctrl+Shift+M                    |
-| Ugrás az első megjelölt sorra                                                                                           | Alt+Shift+M, F                    |
-| Ugrás a következő megjelölt sorra                                                                                            | Alt+Shift+M, L                    |
-| Ugrás az előző megjelölt sorra                                                                                        | Alt+Shift+M, P                    |
-| Ugrás az utolsó megjelölt sorra                                                                                           | Alt+Shift+M, N                    |
+| Ugrás az első megjelölt sorra                                                                                           | Alt+Shift+M, F                  |
+| Ugrás a következő megjelölt sorra                                                                                            | Alt+Shift+M, L                  |
+| Ugrás az előző megjelölt sorra                                                                                        | Alt+Shift+M, P                  |
+| Ugrás az utolsó megjelölt sorra                                                                                           | Alt+Shift+M, N                  |
 | Az alapértelmezett művelet végrehajtása rácsban<blockquote>[!NOTE] Ez a billentyűparancs akkor van engedélyezve, amikor a fókusz egy hivatkozást tartalmazó cellán van, és az adott oszlop összes cellájában vannak hivatkozások.</blockquote> | Bevitel                           |
 | A fókusz váltása a kiválasztott sor és a fejlécsor között                                                               | Alt+Shift+H                     |
 | Az aktuális oszlop nagyítása/kicsinyítése (a fókusz a fejlécsorban)                                                  | Jobbra nyíl / balra nyíl        |
-| Rácsszűrés megnyitása az aktuális oszlopnál (a fókusz a fejlécsorban)                                              | Bevitel                           |
+| Az aktuális oszlop áthelyezése a következő/előző pozícióba (a fejléc sorában lévő fókuszsal)                                   | Ctrl+Shift+Jobbra nyíl / Ctrl+Shift+Balra nyíl |
+| Rácsszűrés megnyitása az aktuális oszlopnál (a fókusz a fejlécsorban)                                              | Enter                           |
+| Az aktuális oszlop átméretezése a tartalomnak megfelelőre (a fejlécsorban lévő fókuszsal)                                           | A (vagy kattintson duplán az oszlopméretező gombra) |
 
 ## <a name="input-control-shortcuts"></a>Beviteli vezérlő gyorsbillentyűk
 
-| Művelet                                                                   | Billentyű vagy billentyűkombináció                         |
+| Művelet                                                                   | Nyomja meg a(z)  billentyűt                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Hivatkozás megnyitása                                                           | Ctrl+Enter                    |
-| A munkamenet dátumának bevitele egy dátummezőbe.                                       | T                         |
-| A mai dátum bevitele egy dátummezőbe.                                       | K                         |
+| A munkamenet dátumának bevitele egy dátummezőbe.                                       | T                             |
+| A mai dátum bevitele egy dátummezőbe.                                       | K                             |
 | Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel megnyitása                         | Alt+Lefelé nyíl                |
 | Keresés, kombinált lista, dátumválasztó, legördülő párbeszédpanel bezárása                        | Esc                           |
 | Fókusz áthelyezése egy keresésbe (Ha a keresés már meg nyitva)                   | Alt+Lefelé nyíl                |
@@ -192,9 +199,12 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Ugrás a fő oldal tartalmára (a fókusszal egy másik ablakban)                    | Alt+M,M                    |
 | Ugrás az adatterület panelre (ami a megnyitását is jelentheti)                       | Alt+M,B vagy Ctrl+F2         |
 
+> [!NOTE]
+> **A lapfülek racionalizálása a teljes oldalas képernyők funkcióban, amely a 10.0.26-os** verzióban található, lehetővé teszi a felhasználók számára, hogy végiglépkedhetnek a lap összes régióján, anélkül, hogy a régiók között az egérnek vagy egy külön billentyűparancsnak a használatát megkövetelték volna. A meglévő gyorsbillentyűk (például az Alt+M billentyűkombinációk) továbbra is használhatók a gyorsbillentyűknek a lap régiói közötti gyors mozgatása érdekében.
+
 ## <a name="personalization-shortcuts"></a>[Személyre szabási](personalize-user-experience.md) gyorsbillentyűk 
 
-| Művelet                                                                                                             | Billentyű vagy billentyűkombináció                               |
+| Művelet                                                                                                             | Nyomja meg a(z)  billentyűt                               |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | Lap áttérése személyre szabási módba                                                                          | Ctrl+Shift+P                        |
 | A Kijelölés eszköz használata (személyre szabási módban)                                                                     | z                                   |
@@ -202,8 +212,8 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Az Áthelyezés eszköz használata (személyre szabási módban)                                                                       | M                                   |
 | Az aktuális vezérlőelem kiválasztása áthelyezéshez (az Áthelyezés eszköz használata esetén, ha és még nincs kijelölve vezérlő áthelyezésre)  | Szóköz vagy Enter                      |
 | Áthelyezendő vezérlőelem kijelölésének törlése (a Mozgatás eszköz használata esetén)                                                                   | Esc                                 |
-| A kijelölt vezérlőelem áthelyezése a következő helyre (a Mozgatás eszköz használata esetén)                                          | Lap vagy Jobbra nyíl vagy Lefelé nyíl    |
-| A kijelölt vezérlőelem áthelyezése az előző helyre (a Mozgatás eszköz használata esetén)                                      | Shift + Tab vagy Balra nyíl és Felfelé nyíl |
+| A kijelölt vezérlőelem áthelyezése a következő helyre (a Mozgatás eszköz használata esetén)                                              | Lap vagy Jobbra nyíl vagy Lefelé nyíl    |
+| A kijelölt vezérlőelem áthelyezése az előző helyre (a Mozgatás eszköz használata esetén)                                          | Shift + Tab vagy Balra nyíl és Felfelé nyíl |
 | Az Elrejtés eszköz használata (személyre szabási módban)                                                                       | H:                                   |
 | Átváltás aközött, hogy az aktuális vezérlőelem látható-e vagy rejtett (az Elrejtés eszköz használata esetén)                                     | Szóköz vagy Enter                      |
 | A Kihagyás eszköz használata (személyre szabási módban)                                                                       | ezer                                   |
@@ -249,10 +259,14 @@ A 11-es platformfrissítés óta a felhasználók a jelenleg elérhető billenty
 | Az animált előugró ablak kibontása/összecsukása (a feladat útmutatójának lejátszása közben)              | Alt+R,C                    |
 | Az animált előugró ablakon több/kevesebb adat megjelenítése (a feladatok útmutatójának lejátszásakor) | Alt+R,M                    |
 
+## <a name="focus-management"></a>Fókuszkezelés 
+A fókuszkezelés azt írja le, hogyan kezeli a rendszer a felhasználói fókuszt az alkalmazásokban. A Pénzügy és a Művelet alkalmazás speciális fókuszműveleteket tartalmaz a felhasználói hatékonyság optimalizálása érdekében, különösen adatbeviteli helyzetekben. A fókusz viselkedése a következőkre kiterjed:  
+
+-  A lap betöltésekor a lap első szerkeszthető beviteli vezérlőjére fókuszál a rendszer, és azonnal el lehet fogadni a felhasználói adatokat. Ha a lapon nincs szerkeszthető beviteli vezérlő, akkor a kezdeti fókusz tartalékának lehetősége az első beviteli vezérlő a lapon, amelyet az első, fókuszálható vezérlő követ az oldalon.   
+-  Ha egy gomb ki van választva, akkor a program feldolgoz egy műveletet, és a fókusz visszatérhet a laphoz. Ilyen esetben a fókusz visszatér a kiválasztott gombvezérlőre. Ez igaz a Pénzügy **és** Művelet alkalmazásokban is, kivéve ha a gomb a műveleti ablakban vagy egy eszköztáron található. Ilyen esetben a művelet befejezésekor a fókusz a műveletpanel (vagy eszköztár) azon utolsó vezérlőjára áll vissza, *amely* a gomb kiválasztása előtt volt a fókuszban.
+
 ## <a name="additional-resources"></a>További erőforrások
 
 [Billentyűparancsok a hiányzó számla elemzéshez](../../../finance/general-ledger/financial-reporting-keyboard-shortcuts.md)
-
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

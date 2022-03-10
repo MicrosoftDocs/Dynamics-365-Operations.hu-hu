@@ -2,43 +2,37 @@
 title: Felhőalapú keresés – áttekintés
 description: Ez a témakör áttekintést nyújt a felhőalapú keresésről a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: ashishmsft
-manager: annbe
-ms.date: 06/29/2020
-ms.topic: article
+ms.date: 02/28/2022
+ms.topic: overview
 ms.prod: ''
-ms.service: dynamics-365-commerce
 ms.technology: ''
 audience: Application user
 ms.reviewer: v-chgri
-ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 2e94338cb55f3298d0a33d7b086480f16e83f271
-ms.sourcegitcommit: eaf330dbee1db96c20d5ac479f007747bea079eb
-ms.translationtype: HT
+ms.openlocfilehash: 9116dd415d44a56fbe8c7852382c413b0a75872c
+ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/15/2021
-ms.locfileid: "5220656"
+ms.lasthandoff: 03/02/2022
+ms.locfileid: "8371429"
 ---
 # <a name="cloud-powered-search-overview"></a>Felhőalapú keresés – áttekintés
-
 
 [!include [banner](includes/banner.md)]
 
 Ez a témakör áttekintést nyújt a felhőalapú keresésről a Microsoft Dynamics 365 Commerce alkalmazásban.
 
-## <a name="overview"></a>Áttekintés
+A termék felderíthetővé tételével biztosíthatja, hogy a vevők gyorsan és egyszerűen megtalálják a termékeket a kategóriák böngészésével, kereséssel és szűréssel. A kiskereskedők úgy gondolja, hogy a termékfeloldás elsődleges eszköz a vevőknek a csatornákon keresztüli kommunikációjához, amelyet a felhőskálaegység (SCALE UNIT) ellát, például az e-commerce és a point of sale (POS).
 
-A termék felderíthetővé tételével biztosíthatja, hogy a vevők gyorsan és egyszerűen megtalálják a termékeket a kategóriák böngészésével, kereséssel és szűréssel. A kiskereskedők a termékfelderítésre elsődleges eszközként tekintenek az ügyfélinterakciókhoz összes kereskedelmi csatornán.
+A vevők megszokták a webes keresőmotorok, a kifinomult e-kereskedelmi webhelyek, a közösségi alkalmazások, a keresőkifejezések gépelésekor megjelenő automatikus javaslatok, a jellemzőalapú navigáció és a kiemelés szinte azonnali reakcióidejét. Ha az ügyfelek nem tudják gyorsan megtalálni azt a terméket, amit egy e-commerce üzletben keresnek, akkor nem fognak másik e-kereskedelmi üzletbe lépni.
 
-A vevők megszokták a webes keresőmotorok, a kifinomult e-kereskedelmi webhelyek, a közösségi alkalmazások, a keresőkifejezések gépelésekor megjelenő automatikus javaslatok, a jellemzőalapú navigáció és a kiemelés szinte azonnali reakcióidejét. Ha a vevők nem találnak meg elég gyorsan egy terméket egy e-kereskedelmi áruházban, akkor habozás nélkül váltani fognak egy másik e-kereskedelmi áruházra.
+A Commerce rendszer felhőalapú termékkövetéssel segíti a kiskereskedőket a felhasználói visszatartások és átváltások számának növelésében a csatornákon keresztül.
 
-A felhőalapú termék-felderíthetőség a Dynamics 365 Commerce alkalmazásban segít a kiskereskedőknek a vásárlók megtartásának és a konverziós rátának a növelésében az összes csatornán, mind az e-kereskedelmi csatornákat, mind a pénztár (POS) csatornákat beleértve.
-
-A Dynamics 365 Commerce keresési élmény továbbfejlesztett képességekkel rendelkezik, amelyek segítenek a kiskereskedők számára a jobb termék-felderíthetőség elérésében. Ezek a képességek egyidejűleg az e-kereskedelmi forgalomhoz szükséges méretezhetőséget és teljesítményt is biztosítják.
+A Commerce keresési tapasztalat jobb lehetőségeket kínál a kiskereskedők számára a jobb termékkereskedhetőség érdekében. Ugyanakkor ezek a funkciók az e-commerce forgalomhoz szükséges skálázhatóságot és teljesítményt is biztosítják.
 
 ## <a name="browse-and-search"></a>Böngészés és keresés
 
@@ -46,7 +40,7 @@ A keresés relevanciája és teljesítménye kulcsfontosságú tényező a több
 
 A következő ábra a jellemző böngészési és keresési funkciók egy példáját mutatja be.
 
-![Keresés céloldala](./media/SearchLanding.png)
+![Keresés céloldala.](./media/SearchLanding.png)
 
 ## <a name="faceted-navigation-and-choice-summary"></a>A jellemzőalapú navigáció és a választási lehetőségek összegzése 
 
@@ -56,31 +50,31 @@ A jellemzőalapú navigáció segítségével különböző finomítók állíth
 
 A következő ábra egy példát mutat be, ahol a jellemzőalapú navigálás kerül felhasználásra egy keresésben.
 
-![Választási lehetőségek összegzése](./media/ChoiceSummary.png)
+![Választási lehetőségek összegzése.](./media/ChoiceSummary.png)
 
 ## <a name="immersive-autosuggest"></a>Modern automatikus ajánlások
 
-A jelenlegi automatikus ajánlások funkció csak azokat a kulcsszavakat jeleníti meg, amelyek a megfelelő kulcsszó keresését jelenítik meg. Az új fejlesztések miatt a Dynamics 365 Commerce vevői gyakran a gépelés befejeződése előtt felfedezhetik a termékekre mutató hivatkozásokat.
+A jelenlegi automatikus visszacsatlott funkció azokat a kulcsszavakat jeleníti meg, amelyek az egyező kulcsszó keresését indítják. A Commerce rendszer új fejlesztései miatt a vevők gyakran még a beírás befejezése előtt is fel tudják fedezni a termékekre mutató hivatkozásokat.
 
-Dynamics 365 Commerce támogatja a kulcsszavas egyeztetések működését is a különböző kategóriákban. Ez a funkció lehetővé teszi a vevők számára, hogy megtekintsék az egyező kulcsszavak számát a kategóriákban, és más kategóriákban keressenek egy kifejezést.
+A Commerce ezenkívül támogatja a különböző kategóriák kulcsszó-egyezésekkel kapcsolatos funkcióit is. Ez a funkció lehetővé teszi a vevők számára, hogy megtekintsék az egyező kulcsszavak számát a kategóriákban, és más kategóriákban keressenek egy kifejezést.
 
 A következő ábra egy példát mutat be, ahol a modern automatikus javaslat van használatban.
 
-![modern automatikus ajánlások](./media/ImmersiveAutoSuggestUX.png)
+![Modern automatikus ajánlások.](./media/ImmersiveAutoSuggestUX.png)
 
 ## <a name="sort"></a>Rendezés
 
-A Dynamics 365 Commerce továbbfejlesztett rendezésével a vevők rendezhetnek, kereshetnek és böngészhetnek a keresési találatok között, valamint finomíthatják azokat ár, terméknév és termékszám szerint. A vevők az eredményeket úgy is rendezhetik, hogy a termék új, a legnépszerűbb vagy újonnan hozzáadott-e.
+A Commerce rendszer továbbfejlesztett rendezése – például ár, terméknév és termékszám – alapján rendezheti, keresheti és megkeresheti a keresési eredményeket. A vevők az eredményeket úgy is rendezhetik, hogy a termék új, a legnépszerűbb vagy újonnan hozzáadott-e.
 
->[!NOTE]
->Ezek a felhőalapú keresési funkciók a 10.0.8 verziótól érhetők el. Ellenőrizze, hogy a **Kereskedelmi paraméterek > Konfigurációs paraméterek** között van-e egy bejegyzés a következőhöz: „ProductSearch. UseAzureSearch 'igaz' értékre állítva”. 
-![A felhőalapú keresés konfigurációs paraméterei](./media/CloudPoweredSearchConfigurationParameters.png)
+> [!NOTE]
+> Ezek a felhőalapú keresési funkciók a 10.0.8 verziótól érhetők el. Győződjön meg róla, hogy van "True" **értékű bejegyzés a Commerce Parameters és a Configuration Parameters > "ProductSearch.UseAzureSearch" paraméterben**. 
+![A felhőalapú keresés konfigurációs paraméterei.](./media/CloudPoweredSearchConfigurationParameters.png)
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Alapértelmezett kategória-céloldal és keresési találatoldal áttekintése](category-search-page-overview.md)
+[Az alapértelmezett kategória-céloldal és keresési találatoldal áttekintése](category-search-page-overview.md)
 
 [SEO-metaadatok kezelése](manage-seo-metadata.md)
 
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE [footer-include](../includes/footer-banner.md)]
