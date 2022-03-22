@@ -11,7 +11,7 @@ ms.author: ramasri
 ms.search.validFrom: 2021-02-22
 ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
 ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 01/31/2022
 ms.locfileid: "8060332"

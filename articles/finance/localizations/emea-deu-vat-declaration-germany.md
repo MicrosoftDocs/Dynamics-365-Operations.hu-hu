@@ -11,7 +11,7 @@ ms.author: anasyash
 ms.search.validFrom: ''
 ms.openlocfilehash: 29c04e1034c05b4672f3657ce0b7bc9d5f6d7c9c
 ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 11/23/2021
 ms.locfileid: "7860866"

@@ -11,7 +11,7 @@ ms.author: psimolin
 ms.search.validFrom: 2017-06-20
 ms.openlocfilehash: 284a33099fecc5a8e8d5d5d31612abab51735773
 ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 03/04/2022
 ms.locfileid: "8386911"
