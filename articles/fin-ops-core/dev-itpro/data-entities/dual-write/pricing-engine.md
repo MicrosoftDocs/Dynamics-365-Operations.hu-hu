@@ -11,7 +11,7 @@ ms.author: ramasri
 ms.search.validFrom: 2020-01-06
 ms.openlocfilehash: 134bfc2ec0e69938c945e384a98676d3708c8e17
 ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 11/10/2021
 ms.locfileid: "7783307"

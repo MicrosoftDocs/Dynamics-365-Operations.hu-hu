@@ -14,7 +14,7 @@ ms.author: brshoo
 ms.search.validFrom: 2016-11-30
 ms.openlocfilehash: fa9b8c79d1b3b5ed04a7d277bf09cd05dbd332d2
 ms.sourcegitcommit: 116898def829c0f78bda8a117242aa308793465d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 03/01/2022
 ms.locfileid: "8370976"

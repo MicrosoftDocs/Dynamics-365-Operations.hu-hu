@@ -11,7 +11,7 @@ ms.author: analpert
 ms.search.validFrom: 2018-04-30
 ms.openlocfilehash: 6ee0cea76be05634aa21643acef5b341f19d75ef
 ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 02/02/2022
 ms.locfileid: "8087603"
