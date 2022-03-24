@@ -1,198 +1,303 @@
 ---
-title: Dátum szerinti súlyozott átlag
+title: Dátummal súlyozott átlag a tényleges értékkel és a jelöléssel együtt
 description: A dátum szerinti súlyozott átlag elvű készletmodell a súlyozott átlag elven alapul, amelyben a készletből történő kiadásokat a készletzárási időszak egyes napjain a készletbe bevételezett cikkek átlagos értékével súlyozzák.
 author: AndersGirke
-ms.date: 10/25/2017
+ms.date: 03/04/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 28991
-ms.assetid: 945d5088-a99d-4e54-bc42-d2bd61c61e22
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: ce056a661130d30426ccfa4c288a0ce5b62ff959
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 3cf2206863d891eceb9c65ff879da3f9f72032b1
+ms.sourcegitcommit: fcded93fc6c27768a24a3d3dc5cc35e1b4eff22b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572025"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392001"
 ---
-# <a name="weighted-average-date"></a>Dátum szerinti súlyozott átlag
+# <a name="weighted-average-date-with-include-physical-value-and-marking"></a>Dátummal súlyozott átlag a tényleges értékkel és a jelöléssel együtt
 
 [!include [banner](../includes/banner.md)]
 
-A dátum szerinti súlyozott átlag elvű készletmodell a súlyozott átlag elven alapul. A súlyozott átlag elven alapul, amelyben a készletből történő kiadásokat a készletzárási időszak egyes napjain a készletbe bevételezett cikkek átlagos értékével súlyozzák. 
+*A dátummal* súlyozott átlag olyan készletmodell, amely az egyes összetevők (cikktranzakciók) és az időszak egyes napjaiban fontosságának (mennyiségének) megfelelő tényezővel (önköltségi ár) megszorzódik. Más szóval ez a készletmodell a kiadási tranzakciók költségét a minden napon beérkezett készlet átlagos értéke, valamint az előző napi aktuális készlet alapján rendeli hozzá.
 
-Ha a dátum szerinti súlyozott átlag elv alapján készletzárást futtat, az egyes napok minden bevételezését egy virtuális kiadással egyenlíti ki. Ez a virtuális kiadás tárolja a teljes bevételezett mennyiséget az adott napra. A virtuális kiadáshoz egy hasonló virtuális bevételezés tartozik, amelyből a kiadások egyenlíthetők ki. Ily módon minden kiadás ugyanazzal a költséggel történik. A virtuális kiadást és bevételezést virtuális átmozgatásnak lehet tekinteni, ezt a *súlyozott átlagú készletzárás átmozgatásának* hívják. 
+Ha a dátummal súlyozott átlagon és dátumon súlyozott átlag készletmodellen futtat egy készletzárást, akkor két módszer használható a kiegyenlítés létrehozására. Általában minden bevételezés egy virtuális kiadásval van kiegyenlítve, amely a teljes bevételezési mennyiséget és értéket tartalmazza. Ehhez a virtuális kiadáshoz egy virtuális bevételezés is van, amelyből a kiadást kiegyenlítik. Ily módon minden egyes nap ugyanaz lesz az átlagköltség. A virtuális kiadás és a virtuális bevételezés virtuális transzfernek tekinthető. Ezt a virtuális transzfert *súlyozott átlagú készletzárási transzfernek is nevezik*. Ennek megfelelően ezt a kiegyenlítési módszert *súlyozott átlagú összesített kiegyenlítésnek is nevezik*. Ha csak egy bevételezés van, akkor minden bevételezést ebből egyenlíthet ki, és nem jön létre virtuális transzfer. Ezt a kiegyenlítési módszert nevezik közvetlen *elszámolásnak*. A készletzárás után aktuális készleteket az előző időszak utolsó napja sorának súlyozott átlaga alapján számítja ki a program, és a következő időszak dátummal súlyozott átlaga alapján számítja ki a készletet.
 
-Ha az adott napon vagy azelőtt csak egy bevételezés történt akkor nem kell értékelnie az átlagot. Amiért az összes kiadást kiegyenlítette erről a bevételezésből, a virtuális transzfer nem jön létre. Hasonlóképpen, ha az adott napig csak egy kiadás történik, akkor nincsenek olyan bevételezések, amelyekből átlagot lehetne számítani, tehát nem jön létre a virtuális transzfer. A súlyozott átlag dátum alkalmazása esetén egyes készlettranzakciók megjelölésével meghatározhatja, hogy egy adott bevételezés ne a súlyozott átlag elv szerint, hanem egy meghatározott kiadással legyen kiegyenlítve. Ebben az esetben nem használható a súlyozott átlagos dátum szabály. A dátum szerinti súlyozott átlagon alapuló készletmodell alkalmazása esetén tanácsos havonta készletzárást végezni. 
+A dátummal súlyozott átlag elv felülbírálható a készlettranzakciók megjelölésével, így egy adott cikkbevételezést egy adott kiadással szemben lehet kiegyenlíteni. Időszaki készletzárásra van szükség, ha a dátummal súlyozott átlag elvű készletmodellel kiegyenlítéseket lehet létrehozni, és a dátum szerinti súlyozott átlag elv szerint módosítani lehet a problémák értékét. Amíg nem futtatja a készletzárást, a kiadási tranzakciókat a tényleges és pénzügyi frissítések mozgóátlagon értékelik. Ha nem használ jelölést, akkor a rendszer a fizikai vagy pénzügyi frissítéskor kiszámítja a mozgóátlagot.
 
-A rendszerben az alábbi képlet segítségével számítja ki a súlyozott átlagos dátum költségét: 
+A dátummal súlyozott átlagon és a készlet költségszámítási módszerének számítása az alábbi napi képlet alkalmazásával történik:
 
-Súlyozott átlag = (\[Q1 × P1\] + \[Q2 × P2\] + \[Q *n* × P *n*\]) ÷ (Q1 + Q2 + Q *n*) 
+*Költség* = \[ (*Qb*<sub>*·*</sub> × *Pb*<sub>*·*</sub>) + &#x2211;<sub>*n*</sub>(*Qn*<sub>*·*</sub> × *Pn*<sub>*·*</sub>)\] ÷ (*Qb*<sub>*·*</sub> + &#x2211;<sub>*nQn)*</sub>*·*<sub>*·*</sub>
 
-A készlet zárása során a számítás minden nap lefut a zárási időszak alatt, ahogy az alábbi ábrán is látható. 
+- *Q* = A tranzakció mennyisége
+- *P* = A tranzakció ára
 
-![Dátummal súlyozott átlagos napi számítási modell.](./media/weightedaveragedatedailycalculationmodel.gif) 
+Más szóval a súlyozott átlagköltség egyenlő a kezdő mennyiség és a kezdő ár szorzóval, valamint az egyes bevételezési mennyiségek összegével és a bevételezési árral, elosztva a kezdő mennyiséggel és a bevételezési mennyiségek összegével.
 
-A készletkiadásokat hagyó készlettranzakciók, például az értékesítési rendelések, készletnaplók, beszerzési jóváírások és termelési rendelések a feladás dátumakor becsült átlagos önköltségi áron kerülnek be a rendszerbe. Ezt a becsült önköltségi árat más néven mozgóátlagon alapuló önköltségi árnak is nevezik. A készletzárás napján a rendszer elemzi az előző időszak, előző napok és az adott nap készlettranzakcióit. Az elemzéssel meghatározható hogy az alábbiak közül melyik zárási elv használata szükséges:
+A készletzárás során a program a záró időszak minden napját kiszámítja.
 
--   Közvetlen kiegyenlítés
--   Összesített kiegyenlítés
+> [!NOTE]
+> További tájékoztatás a kiegyenlítésről: Készletzárás [...](inventory-close.md).
 
-Az elszámolások készletzárási feladások, amelyek módosítják a kiadásokat a záró dátumnak megfelelő helyes súlyozott átlagra. 
+A következő példák azt mutatják be, hogy milyen hatással van a dátummal súlyozott átlag öt konfigurációra:
 
-**Megjegyzés:** További információkért a kiegyenlítéssel kapcsolatban lásd a készletzárás cikket. A következő példák azt mutatják be, hogy milyen hatást fejt ki a súlyozott átlag öt konfigurációban:
-
--   Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a **Tényleges értékkel együtt** beállítás nincs aktiválva
--   Dátummal súlyozott átlagot alkalmazó összesített elszámolás a **Tényleges értékkel együtt** beállítás aktiválása nélkül
--   Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a **Tényleges értékkel együtt** beállítással
--   Dátummal súlyozott átlagot alkalmazó összesített elszámolás a **Tényleges értékkel együtt** beállítással
--   Dátummal súlyozott átlag jelölés használatával
+- Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a **Tényleges értékkel együtt** beállítás nincs aktiválva
+- Dátummal súlyozott átlagot alkalmazó összesített elszámolás a **Tényleges értékkel együtt** beállítás aktiválása nélkül
+- Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a **Tényleges értékkel együtt** beállítással
+- Dátummal súlyozott átlagot alkalmazó összesített elszámolás a **Tényleges értékkel együtt** beállítással
+- Dátummal súlyozott átlag jelölés használatával
 
 ## <a name="weighted-average-date-direct-settlement-when-the-include-physical-value-option-isnt-used"></a>Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a Tényleges értékkel együtt beállítás nincs aktiválva
-A jelenlegi verzióban a dátummal súlyozott átlaghoz alkalmazott közvetlen elszámolási elv megegyezik a termék korábbi verzióiban használttal. A rendszer a bevételezések és kiadások között közvetlen elszámolást alkalmaz. A rendszer ezt a közvetlen elszámolási elvet az alábbi konkrét helyzetekben alkalmazza:
 
--   Az időszak folyamán egy bevételezést, illetve egy vagy több kiadást adtak fel.
--   Az időszak folyamán csak kiadásokat adtak fel, és a tényleges készletben csak egy előző zárásból származó cikkek találhatók.
+A közvetlen kiegyenlítési elv a további készlettranzakciók létrehozása nélkül közvetlenül hozza létre a kiegyenlítéseket a bevételezések és a problémák között. A rendszer a következő helyzetekben használja ezt a közvetlen kiegyenlítési elvet:
 
-Az alábbi esetben egy pénzügyi szempontból frissített bevételezés és kiadás feladására került sor. A készlet zárása során a rendszer közvetlenül a kiadással szemben számolja el a bevételezést, és a kiadás alkalmával nem kell módosítani az önköltségi árat. 
+- Az időszak során egy bevételezést és egy vagy több problémát feladtak.
+- Az időszak folyamán csak kiadásokat adtak fel, és a tényleges készletben csak egy előző zárásból származó cikkek találhatók.
 
-A következő ábrán ezek a tranzakciók láthatók:
-
--   1a. Fizikai bevételezés készletre, 5 mennyiséggel, egyenként 10,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 5 mennyiséggel, egyenként 10,00 USD áron.
--   2a. Fizikai kiadás készletről, 2 mennyiséggel, egyenként 10,00 USD áron.
--   2b. Pénzügyi kiadás készletről, 2 mennyiséggel, egyenként 10,00 USD áron.
--   3. A közvetlen elszámolási módszer alkalmazásával készletzárás történik a pénzügyi készlet bevételezés elszámolására a pénzügyi készletkiadással szemben.
-
-![Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a Tényleges értékkel együtt beállítás nélkül.](./media/weightedaveragedatedirectsettlementwithoutincludephysicalvalue.gif) 
-
-**Az ábra jelmagyarázata:**
-
--   A készlettranzakciókat függőleges nyilak jelölik.
--   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
--   A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
--   Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, a *mennyiség*@*egységár* formátumban.
--   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
--   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
--   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
--   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
--   A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
-
-## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-isnt-used"></a>Dátummal súlyozott átlagot alkalmazó összesített elszámolás a Tényleges értékkel együtt beállítás aktiválása nélkül
-A súlyozott átlag az alábbi elven alapul: minden bevétel a zárási időszakban összeadódik egy új készlettranszfer tranzakcióba. A tranzakció neve *súlyozott átlagú készletzárás*. A nap bevételezéseit az újonnan létrehozott készletmozgási tranzakcióval szemben számolja el a program. A nap minden kiadását az új készletmozgási tranzakció bevételezésével szemben számolja el a program. Ha pozitív a tényleges készlet a készletzárás után, akkor ezt a tényleges készletet és a készlet értékét összegzi az új készletmozgási tranzakció-bevételezés. Ha negatív a készlet a készletzárás után, a tényleges készlet és a készletérték a nem teljesen elszámolt egyes kiadások összege. 
-
-Az alábbi helyzetben az időszak során több pénzügyi szempontból frissített bevételezés és kiadás feladására került sor. A rendszer a készletzárás során minden egyes nap kiértékelésével állapítja meg, hogy a zárásnak hogyan kell kezelnie az egyes napokat. 
-
-A következő ábrán ezek a tranzakciók láthatók: 
+Ebben a példában a tényleges értékkel **kapcsolatos** **jelölőnégyzetből törölve van a jelölés a kiadott termék cikkmodellcsoport-lapján**. A következő diagram a következő tranzakciókat mutatja be:
 
 **1. nap:**
 
--   1a. Fizikai bevételezés készletre, 3 mennyiséggel, egyenként 15,00 USD áron.
--   1b. Pénzügyi bevételezés készletre, 3 mennyiséggel, egyenként 15,00 USD áron.
--   2a. Fizikai kiadás készletről, 1 mennyiséggel, 15,00 USD mozgó átlagáron.
--   2b. Pénzügyi kiadás készletről, 1 mennyiséggel, 15,00 USD mozgó átlagáron.
-
-A rendszer az 1. naphoz a közvetlen elszámolási megközelítést fogja alkalmazni. 
+- 1a. Fizikai bevételezés készletre, 10 mennyiséggel, 10,00 USD áron.
+- 1b. Pénzügyi bevételezés készletre, 10 mennyiséggel, 10,00 USD áron.
+- 2a. Fizikai bevételezés készletre, 10 mennyiséggel, 20,00 USD áron.
+- 3a. Fizikai kiadás készletről, 1 mennyiséggel, USD 10.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
+- 3b. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 10.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
 
 **2. nap:**
 
--   3a. Fizikai kiadás készletről, 1 mennyiséggel, 15,00 USD mozgó átlagáron
--   3b. pénzügyi készletkiadás, a mennyiség 1, a költség a 15.00 USD-s mozgóátlag.
-
-A rendszer a 2. naphoz a közvetlen elszámolási megközelítést fogja alkalmazni. 
+- 4a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
+- 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 6a. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 20.00 egységenként (a pénzügyileg feladott tranzakciók mozgóátlaga).
 
 **3. nap:**
 
--   4a. Fizikai kiadás készletről, 1 mennyiséggel, 15,00 USD mozgó átlagáron
--   4b. pénzügyi készletkiadás, a mennyiség 1, a költség a 15.00 USD-s mozgóátlag.
--   5a. Fizikai bevételezés készletre, 1 mennyiséggel, egyenként 17,00 USD áron
--   5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, egyenként 17,00 USD áron
+- 7\. Készletzárást hajtanak végre. A dátummal súlyozott átlagon alapuló rendszer a december 30-ai (12/30) közvetlen kiegyenlítési módszert használja, mivel pénzügyileg csak egy bevételezés frissül december 12-30-án. Ebben a példában egy kiegyenlítés jön létre az 1b és 3b tranzakciók között. A program USD 10.00, hogy a 3b tranzakció értékét 20,00-ra vigye. December 31-én (12/31) nem kerül sor helyesbítésre vagy kiegyenlítésre, mert nincs pénzügyileg frissített probléma 12/31-én.
 
-Készletzárást hajtanak végre. A közvetlen elszámolást kell alkalmazni, mert több napon átívelő módon több bevételezés van.
+A következő ábra ezt a tranzakciósorozatot mutatja **be**, és a súlyozott átlag készletmodell, valamint a tényleges értékkel való be nem foglalva beállítás nélkül a közvetlen kiegyenlítési elv hatását a folyamatra.
 
--   7a. Pénzügyi kiadás jön létre 2 mennyiséggel 32,00 USD értékben a súlyozott átlagot alkalmazó készletzáráshoz, amely összesíti az addig nem lezárt összes pénzügyi készletre vételt.
--   7b. A program létrehoz egy súlyozott átlagú készletzárási tranzakció pénzügyi bevételezést a 7a. tétel ellentételezéseként.
+![Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a Tényleges értékkel együtt beállítás nélkül.](media/weighted-average-date-direct-settlement-without-include-physical-value.png)
 
-A rendszer előállítja és feladja az összesített készletmozgási tranzakciót. Továbbá a rendszer kiegyenlíti az adott napra vonatkozó összes bevételezést és az előző napok aktuális készletét elszámolja az összesített készletmozgási kiadási tranzakcióval szemben. Az adott nap összes kiadását az összesített készletmozgási bevételezési tranzakcióval szemben számolja el. A súlyozott átlaggal számított önköltségi ár 16,00 USD lesz. A kiadáshoz 1,00 USD értékű módosítás fog tartozni a súlyozott átlaggal megállapított költség korrekciója céljából. Az új mozgóátlagon alapuló önköltségi ár 16,00 USD. 
+**A diagram kulcsa:**
 
-Az alábbi ábrán ez a tranzakciósorozat, és a súlyozott átlag készletmodell használatának hatása látható, továbbá az összesített tartozáskiegyenlítés elv a **Tényleges értékkel együtt** lehetőség nélkül. 
+- A készlettranzakciókat függőleges nyilak jelölik.
+- A fizikai tranzakciókat rövidebb világosszürke nyilak ábrázolják.
+- A pénzügyi tranzakciókat hosszabb fekete nyilak jelzik.
+- A készletre való bevételezéseket a tengely fölötti függőleges nyilak jelzik.
+- A készletről való problémákat a tengely alatti függőleges nyilak jelzik.
+- Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- A dátumokat vékony fekete függőleges sorok választják el egymástól. A dátumok a diagram alján jelölve vannak.
+- A készletzárásokat piros színű, szaggatott függőleges sorok ábrázolják.
+- A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
-![Dátummal súlyozott átlagot alkalmazó összesített elszámolás a Tényleges értékkel együtt beállítás nélkül.](./media/weightedaveragedatesummarizedsettlementwithoutincludephysicalvalue.gif) 
+## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-isnt-used"></a>Dátummal súlyozott átlagot alkalmazó összesített elszámolás a Tényleges értékkel együtt beállítás aktiválása nélkül
 
-**Az ábra jelmagyarázata**
+Ha egy időszakban több bevételezés van, akkor a *dátummal súlyozott átlag az összesített kiegyenlítési elvet használja, és egy nap minden bevételezését egy olyan tranzakcióba összegzi, amely súlyozott átlagú készletzárásnak van nevezve*. A nap bevételezései az újonnan létrehozott készlettranzakció kiadásának ellenében lesznek kiegyenlítve. A nap minden bevételezését az új készlettranzakció bevételezésével szemben egyenlíti ki a rendszer. Ha a készletzárás után is marad aktuális készletérték, a súlyozott átlagú készletzárási tranzakciók bevételezési tranzakciója az aktuális készletértéket is tartalmazza.
 
--   A készlettranzakciókat függőleges nyilak jelölik.
--   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
--   A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
--   Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, a *mennyiség*@*egységár* formátumban.
--   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
--   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
--   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
--   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
--   A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
--   A piros átlós nyilak jelzik azt a bevételezési tranzakciót, amelyet a rendszer által létrehozott kiadási tranzakciókkal szemben elszámol a program.
--   A zöld átlósnyilak jelzik azokat a rendszer által ellentételként generált bevételezési tranzakciókat, amelyekkel szemben az eredetileg feladott kiadási tranzakciót elszámolja a program.
+A következő diagram a következő tranzakciókat mutatja be:
+
+**1. nap:**
+
+- 1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+- 2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 22,00 USD áron.
+- 3a. Fizikai kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
+- 3b. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
+
+**2. nap:**
+
+- 4a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
+- 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 23.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
+
+**3. nap:**
+
+- 7\. Készletzárást hajtanak végre.
+- 7a. Súlyozott átlagú készletzárási tranzakció pénzügyi kiadás jön létre az összes pénzügyi készletbevételezés kiegyenlítésének összegzése érdekében.
+
+    - Az 1b. tranzakciót 1 mennyiséggel egyenlítik ki, kiegyenlített összeggel, USD 10.00.
+    - A 2b. tranzakciót 1 mennyiséggel egyenlítik ki, kiegyenlített összeggel, USD 22.00.
+    - A 7a. tranzakció 2 mennyiségre jön létre, kiegyenlített összeggel, USD 32.00. Ez a tranzakció kiegyenlíti az időszakban pénzügyileg frissített két bevételezési tranzakció összegét.
+
+- 7b. Súlyozott átlagú készletzárási tranzakció pénzügyi bevételezése jön létre a pénzügyileg feladott problémák ellentételeként.
+
+    - A 3b. tranzakciót 1 mennyiséggel egyenlítik ki, kiegyenlített összeggel, USD 16.00. Ez a tranzakció nem helyesbül, mert a pénzügyileg feladott tranzakciók súlyozott átlaga, december 1-ján (12/1).
+    - A 7b. tranzakció 2 mennyiséggel jön létre, pénzügyi összeggel és USD 32.00 a 3b. ellentranzakcióhoz USD 16.00 kiegyenlített összeggel. Ez a tranzakció kiegyenlíti az időszakban pénzügyileg frissített egyetlen kiadási tranzakció összegét. A tranzakció nyitott marad, mert még mindig van egy.
+
+A következő ábra ezt a tranzakciósorozatot mutatja be, és a súlyozott átlag készletmodell és az összesített kiegyenlítési elv hatását, **de a Tényleges értékkel való értékkel kapcsolatos beállítás használata** nélkül.
+
+![Dátummal súlyozott átlagot alkalmazó összesített elszámolás a Tényleges értékkel együtt beállítás nélkül.](media/weighted-average-date-summarized-settlement-without-include-physical-value.png)
+
+**A diagram kulcsa:**
+
+- A készlettranzakciókat függőleges nyilak jelölik.
+- A fizikai tranzakciókat rövidebb világosszürke nyilak ábrázolják.
+- A pénzügyi tranzakciókat hosszabb fekete nyilak jelzik.
+- A készletre való bevételezéseket a tengely fölötti függőleges nyilak jelzik.
+- A készletről való problémákat a tengely alatti függőleges nyilak jelzik.
+- Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- A dátumokat vékony fekete függőleges sorok választják el egymástól. A dátumok a diagram alján jelölve vannak.
+- A készletzárásokat piros színű, szaggatott függőleges sorok ábrázolják.
+- A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 ## <a name="weighted-average-date-direct-settlement-when-the-include-physical-value-option-is-used"></a>Dátummal súlyozott átlagot alkalmazó közvetlen elszámolás a Tényleges értékkel együtt beállítással
-A jelenlegi verzióban a dátummal súlyozott átlaghoz alkalmazott közvetlen elszámolási elv megegyezik a termék korábbi verzióiban használttal. A rendszer a bevételezések és kiadások között közvetlen elszámolást alkalmaz. A rendszer ezt a közvetlen elszámolási elvet az alábbi konkrét helyzetekben alkalmazza:
 
--   Az időszak folyamán egy bevételezést, illetve egy vagy több kiadást adtak fel.
--   Az időszak folyamán csak kiadásokat adtak fel, és a készletben egy előző zárásból származó, tényleges készlet található.
+A termék jelenlegi verziójában **a** Tényleges értékkel együtt beállítás másképp működik a dátummal súlyozott átlagon és készletmodellen, mint a korábbi verziókban. Ha **a** **Cikkmodellcsoport** lapon egy cikk tényleges értékkel való beszámítása jelölőnégyzetet választja, a rendszer a ténylegesen frissített bevételezéseket fogja használni a becsült kiadási önköltségi ár vagy a mozgóátlag kiszámításakor. A kiadások feladása az időszaknak ezen a becsült önköltségi árán alapul. A készletzárás során a súlyozott átlag számításában csak a pénzügyi bevételezések számítanak.
 
-Ha bejelöli a **Tényleges értékkel együtt** jelölőnégyzetet egy cikknél a **Cikkmodell csoport** oldalon, akkor a rendszer fizikailag frissített nyugtákat használ a becsült költségár vagy mozgóátlag kiszámításához. A kiadások feladása az időszaknak ezen a becsült önköltségi árán alapul. A készletzárás során a súlyozott átlag számításában csak a pénzügyi bevételezések számítanak.
+A következő diagram a következő tranzakciókat mutatja be:
+
+**1. nap:**
+
+- 1a. Fizikai bevételezés készletre, 10 mennyiséggel, 10,00 USD áron.
+- 1b. Pénzügyi bevételezés készletre, 10 mennyiséggel, 10,00 USD áron.
+- 2a. Fizikai bevételezés készletre, 10 mennyiséggel, 20,00 USD áron.
+- 3a. Fizikai kiadás készletről, 1 mennyiséggel, USD 15.00 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+- 3b. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 15.00 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+
+**2. nap:**
+
+- 4a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
+- 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 21.25 egységenként (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+
+**3. nap:**
+
+- 7\. Készletzárást hajtanak végre. A dátummal súlyozott átlagon alapuló rendszer a december 30-ai (12/30) közvetlen kiegyenlítési módszert használja, mivel pénzügyileg csak egy bevételezés frissül december 12-30-án. Ebben a példában egy kiegyenlítés jön létre az 1b és 3b tranzakciók között. Nem történt módosítás a kiadáson 12/30-án. Emellett december 31-én (12/31) nem kerül sor helyesbítésre vagy kiegyenlítésre, mivel nincs pénzügyileg frissített probléma december 31-én.
+
+A következő ábra ezt a tranzakciósorozatot mutatja **be, és a súlyozott átlag készletmodell, valamint a közvetlen kiegyenlítési elv hatását a Tényleges értékkel együtt beállításra**.
+
+![Súlyozott átlagú közvetlen kiegyenlítés a tényleges értékkel együtt.](media/weighted-average-date-direct-settlement-with-include-physical-value.png)
+
+**A diagram kulcsa:**
+
+- A készlettranzakciókat függőleges nyilak jelölik.
+- A fizikai tranzakciókat rövidebb világosszürke nyilak ábrázolják.
+- A pénzügyi tranzakciókat hosszabb fekete nyilak jelzik.
+- A készletre való bevételezéseket a tengely fölötti függőleges nyilak jelzik.
+- A készletről való problémákat a tengely alatti függőleges nyilak jelzik.
+- Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- A dátumokat vékony fekete függőleges sorok választják el egymástól. A dátumok a diagram alján jelölve vannak.
+- A készletzárásokat piros színű, szaggatott függőleges sorok ábrázolják.
+- A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 ## <a name="weighted-average-date-summarized-settlement-when-the-include-physical-value-option-is-used"></a>Dátummal súlyozott átlagot alkalmazó összesített elszámolás a Tényleges értékkel együtt beállítással
-Ha bejelöli a **Tényleges értékkel együtt** jelölőnégyzetet egy cikknél a **Cikkmodell csoport** oldalon, akkor a rendszer fizikailag frissített nyugtákat használ a becsült költségár vagy mozgóátlag kiszámításához. A kiadások feladása az időszaknak ezen a becsült önköltségi árán alapul. A készletzárás során a súlyozott átlag számításában csak a pénzügyi bevételezések számítanak. A súlyozott átlag kiegyenlítés, amely azon az elven alapul, hogy a minden, a záró időszakban szereplő bevételezés egy új készletmozgási tranzakcióban összegződik, amelynek *súlyozott átlagú készletzárás* a neve. A nap bevételezéseit az újonnan létrehozott készletmozgási tranzakcióval szemben számolja el a program. A nap minden kiadását az új készletmozgási tranzakció bevételezésével szemben számolja el a program. Ha pozitív a tényleges készlet a készletzárás után, akkor ezt a tényleges készletet és a készlet értékét összegzi az új készletmozgási tranzakció-bevételezés. Ha negatív a készlet a készletzárás után, a tényleges készlet és a készletérték a nem teljesen elszámolt egyes kiadások összege.
+
+A termék jelenlegi verziójában **a** Tényleges értékkel együtt beállítás másképp működik a súlyozott átlaggal, mint a korábbi verziókban. Ha **a** **Cikkmodellcsoport** lapon egy cikk tényleges értékkel való beszámítása jelölőnégyzetet választja, a rendszer a ténylegesen frissített bevételezéseket fogja használni a becsült önköltségi ár számítása vagy a mozgóátlag kiszámításakor. A kiadások feladása az időszaknak ezen a becsült önköltségi árán alapul. A készletzárás során a súlyozott átlag számításában csak a pénzügyi bevételezések számítanak. A súlyozott átlagon áteső készletmodell használata esetében javasoljuk, hogy havonta zárjon készletzárást. Ebben a példában a dátummal súlyozott átlagon és összesített kiegyenlítésen a készletmodell magában foglalja a tényleges értéket.
+
+A következő diagram a következő tranzakciókat mutatja be:
+
+**1. nap:**
+
+- 1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+- 2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 22,00 USD áron.
+- 3a. Fizikai kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+- 3b. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+
+**2. nap:**
+
+- 4a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
+- 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 23.67 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+
+**3. nap:**
+
+- 7\. Készletzárást hajtanak végre.
+- 7a. Súlyozott átlagú készletzárási tranzakció pénzügyi kiadás jön létre az összes pénzügyi készletbevételezés kiegyenlítésének összegzése érdekében.
+
+    - Az 1b. tranzakciót 1 mennyiséggel egyenlítik ki, kiegyenlített összeggel, USD 10.00.
+    - A 2b. tranzakciót 1 mennyiséggel egyenlítik ki, kiegyenlített összeggel, USD 22.00.
+    - A 7a. tranzakció 2 mennyiségre jön létre, kiegyenlített összeggel, USD 32.00. Ez a tranzakció kiegyenlíti az időszakban pénzügyileg frissített két bevételezési tranzakció összegét.
+
+- 7b. Súlyozott átlagú készletzárási tranzakció pénzügyi bevételezése jön létre a pénzügyileg feladott problémák ellentételeként.
+
+    - A 3b. tranzakciót 1 mennyiséggel egyenlítik ki, kiegyenlített összeggel, USD 16.00. Ez a tranzakció nem helyesbül, mert a pénzügyileg feladott tranzakciók súlyozott átlaga, december 1-ján (12/1).
+    - A 7b. tranzakció 2 mennyiséggel jön létre, pénzügyi összeggel és USD 32.00 a 3b. ellentranzakcióhoz USD 16.00 kiegyenlített összeggel. Ez a tranzakció kiegyenlíti az időszakban pénzügyileg frissített egyetlen kiadási tranzakció összegét. A tranzakció nyitott marad, mert még mindig van egy.
+
+A következő ábra ezt a tranzakciósorozatot mutatja **be**, és a súlyozott átlag készletmodell, valamint a Tényleges értékkel való be nem foglalva beállítás nélküli összesített kiegyenlítési elv hatását a folyamatra.
+
+![Súlyozott átlagú összesített kiegyenlítés a tényleges értékkel együtt.](media/weighted-average-date-summarized-settlement-with-include-physical-value.png)
+
+**A diagram kulcsa:**
+
+- A készlettranzakciókat függőleges nyilak jelölik.
+- A fizikai tranzakciókat rövidebb világosszürke nyilak ábrázolják.
+- A pénzügyi tranzakciókat hosszabb fekete nyilak jelzik.
+- A készletre való bevételezéseket a tengely fölötti függőleges nyilak jelzik.
+- A készletről való problémákat a tengely alatti függőleges nyilak jelzik.
+- Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- A dátumokat vékony fekete függőleges sorok választják el egymástól. A dátumok a diagram alján jelölve vannak.
+- A készletzárásokat piros színű, szaggatott függőleges sorok ábrázolják.
+- A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 ## <a name="weighted-average-date-when-marking-is-used"></a>Dátummal súlyozott átlag jelölés használatával
-A jelölés egy olyan folyamat, amellyel összekapcsolható egy kiadási tranzakció egy bevételezési tranzakcióval. A jelölés történhet a tranzakciók feladása előtt és után is. A jelölés használható a készlet pontos költségének megállapítására a tranzakció feladásakor vagy a készletzárás végrehajtásakor. 
 
-Tegyük fel például, hogy az ügyfélszolgálati osztály elfogadott egy sürgős megrendelést egy fontos vevőtől. A rendelés sürgős, tehát többe fog kerülni az ügyfél kérésének teljesítése. Azt szeretné, ha a készlet költsége tükröződne az árrésben is (más szóval az eladott áruk beszerzési értékébe, ELÁBÉ) az adott értékesítési számla esetében. A beszerzési rendelés feladásakor a készlet bevételezése 120,00 USD értéken történik. A beszerzési rendelési dokumentum meg van jelölve a beszerzési rendelésben, mielőtt a szállítólevelet vagy a számlát feladják. Az ELÁBÉ ekkor 120,00 USD lesz, az aktuális cikk mozgóátlaga helyett. Ha még a jelölés előtt feladják a csomagjegyzéket vagy a számlát, a feladott ELÁBÉ megfelel a beszerzési ár mozgóátlagának. A két tranzakció még a készletzárás végrehajtása előtt is összekapcsolható egymással. Amikor megjelölnek egy bevételezési tranzakciót egy kiadási tranzakcióval, a cikk modellcsoportjában meghatározott módszert nem veszi figyelembe a program. Ehelyett a rendszer kiegyenlíti ezeket a tranzakciókat egymással szemben. 
+A jelölés egy olyan folyamat, amellyel összekapcsolható egy kiadási tranzakció egy bevételezési tranzakcióval. A jelölés történhet a tranzakciók feladása előtt és után is. A jelölés használható a készlet pontos költségének kiértékelésére a tranzakció feladott vagy a készletzárás során.
 
-Kiadási tranzakciót a tranzakció feladása előtt jelölhet hozzá egy nyugtához. Ezt megteheti egy értékesítési rendelés sorából az **Értékesítési rendelés** oldalon. A nyitott bevételezési tranzakciókat megtekintheti **Jelölés** oldalon. Kiadási tranzakciót a tranzakció feladása után jelölhet hozzá egy nyugtához. Egyeztethet vagy megjelölhet egy kiadási tranzakciót egy nyílt nyugtájú tranzakcióhoz egy leltárazott cikk esetén, feladott készlethelyesbítési naplósorból. A következő ábrán ezek a tranzakciók láthatók:
+Tegyük fel például, hogy az ügyfélszolgálati osztály elfogadott egy sürgős megrendelést egy fontos vevőtől. A rendelés sürgős, ezért a vevő kérésének kiszolgálása érdekében többet kell fizetni. Meg kell bizonyosodni arról, hogy ennek a készletcikknek a költsége megjelenik az árrésben vagy az eladott áruk költségében (ELÁBÉ) az adott értékesítési számla esetében.
 
--   1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD önköltségi áron.
--   1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD önköltségi áron.
--   2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD önköltségi áron.
--   2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 20,00 USD önköltségi áron.
--   3a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD önköltségi áron.
--   4a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD önköltségi áron.
--   4b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD önköltségi áron.
--   5a. Fizikai kiadás készletről, 1 mennyiséggel, 21,25 USD önköltségi áron (a pénzügyileg és fizikailag frissített tranzakciók mozgóátlaga).
--   5b. Egy 1 mennyiségű pénzügyi készletkiadást jelöléssel összekötnek a 2b bevételezéssel a tranzakció feladása előtt. Ezt a tranzakciót 20,00 USD önköltségi árral adja fel a program.
--   6a. Fizikai kiadás készletről, 1 mennyiséggel, 21,25 USD áron.
--   7. Készletzárást hajtanak végre. Mivel a pénzügyileg frissített tranzakció össze van kapcsolva egy meglévő kiadással, ezeket a tranzakciókat egymással szemben számolja el a program, és nem kerül sor helyesbítésre.
+A beszerzési rendelés feladásakor a készlet bevételezése 120,00 USD értéken történik. Ha a csomagjegyzék vagy a számla feladása előtt meg van jelölve az értékesítési rendelési dokumentum a beszerzési rendelésen, akkor a program elábéként USD 120.00 elábé költséget, nem pedig a cikk aktuális mozgóátlagát. Ha a jelölés az értékesítési rendelés csomagjegyzékének vagy számlájának feladása után történik, az ELÁBÉ feladása a mozgóátlagon áteső önköltségi áron történik.
 
-Az új, mozgóátlagon alapuló önköltségi ár a pénzügyileg és fizikailag frissített tranzakciók átlagának, azaz 27,50 USD összegnek felel meg. A következő ábrán a tranzakciók sorozata látható, és a súlyozott átlag dátumon alapuló készletmodell és jelölés folyamatra gyakorolt hatását ábrázolja.
+A két tranzakció még a készletzárás végrehajtása előtt is összekapcsolható egymással.
 
-![Dátummal súlyozott átlag jelöléssel.](./media/weightedaveragedatewithmarking.gif) 
+Ha egy bevételezési tranzakció egy kiadási tranzakcióhoz van megjelölve, a program figyelmen kívül hagyja a cikk cikkmodellcsoportjaként kiválasztott értékelési módot, és egymással egyenlíti ki ezeket a tranzakciókat.
 
-**Az ábra jelmagyarázata:**
+Kiadási tranzakciót a tranzakció feladása előtt jelölhet hozzá egy nyugtához. Ezt a jelölést az **Értékesítési rendelés részletei lapon található értékesítésirendelés-sorból lehet** megtenni. A nyitott bevételezési tranzakciók a Jelölés lapon **jelennek** meg.
 
--   A készlettranzakciókat függőleges nyilak jelölik.
--   A készletre való bevételezéseket az idősor fölötti függőleges nyilak jelölik.
--   A készletről való kiadásokat az idősor alatti függőleges nyilak jelölik.
--   Minden függőleges nyíl alatt vagy fölött a készlettranzakció értéke van megadva, a *mennyiség*@*egységár* formátumban.
--   Ha zárójelbe van téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció fizikailag van feladva a készletre.
--   Ha nincs zárójelbe téve egy készlettranzakció értéke, akkor az arra utal, hogy a készlettranzakció pénzügyileg van feladva a készletre.
--   Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
--   Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
--   A készletzárásokat egy piros színű, szaggatott függőleges vonal és a *Készletzárás* felirat jelöli.
--   A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
+Kiadási tranzakciót a tranzakció feladása után jelölhet hozzá egy nyugtához. Egyeztethet vagy megjelölhet egy kiadási tranzakciót egy nyílt nyugtájú tranzakcióhoz egy leltárazott cikk esetén, feladott készlethelyesbítési naplósorból.
 
+A következő diagram a következő tranzakciókat mutatja be:
 
+**1. nap:**
 
+- 1a. Fizikai bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 1b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 10,00 USD áron.
+- 2a. Fizikai bevételezés készletre, 1 mennyiséggel, 20,00 USD áron.
+- 2b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 22,00 USD áron.
+- 3a. Fizikai kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
+- 3b. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 16.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
+- 3c. A 3b. tranzakcióhoz kapcsolódó pénzügyi készlet-kiadás a 2b. tranzakció pénzügyi készlet kiadására van bejelölve.
 
+**2. nap:**
 
+- 4a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
+- 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
+- 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 23.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga).
+
+**3. nap:**
+
+- 7\. Készletzárást hajtanak végre. A súlyozott átlag módszert használó jelölési elv alapján a megjelölt tranzakciókat egymással szemben egyenlítik ki. Ebben a példában a 3b. tranzakciót a 2b. tranzakcióval szemben egyenlítik ki, és a USD 6.00 korrekcióját a 3b tranzakcióba feladja, hogy az értéket USD 22.00. Ebben a példában nem kerül sor további kiegyenlítésre, mert a lezárás csak a pénzügyileg frissített tranzakciókhoz hoz létre kiegyenlítéseket.
+
+A következő diagram bemutatja a tranzakciósorozatot, valamint a súlyozott átlagon és jelölésen áteső készletmodell hatását.
+
+![Súlyozott átlag jelöléssel.](media/weighted-average-date-with-marking.png)
+
+**A diagram kulcsa:**
+
+- A készlettranzakciókat függőleges nyilak jelölik.
+- A fizikai tranzakciókat rövidebb világosszürke nyilak ábrázolják.
+- A pénzügyi tranzakciókat hosszabb fekete nyilak jelzik.
+- A készletre való bevételezéseket a tengely fölötti függőleges nyilak jelzik.
+- A készletről való problémákat a tengely alatti függőleges nyilak jelzik.
+- Minden új bevételezési és kiadási tranzakciót egy új címke jelöl.
+- Mindegyik függőleges nyíl egy sorszámozott azonosítóval van ellátva, például *1a*. Az azonosítók a készlettranzakciók feladásának időbeli sorrendjét jelölik.
+- A dátumokat vékony fekete függőleges sorok választják el egymástól. A dátumok a diagram alján jelölve vannak.
+- A készletzárásokat piros színű, szaggatott függőleges sorok ábrázolják.
+- A készletzárás által végrehajtott elszámolásokat szaggatott piros nyilak jelölik, amelyek átlósan haladnak egy bevételezéstől egy kiadás felé.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

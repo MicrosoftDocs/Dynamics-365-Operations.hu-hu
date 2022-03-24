@@ -2,7 +2,7 @@
 title: A Dynamics 365 Supply Chain Management 10.0.25 előzetes verziója (2022. április)
 description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management 10.0.25 új vagy módosított szolgáltatásait írja le.
 author: kamaybac
-ms.date: 02/01/2022
+ms.date: 03/14/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 068e65d0bd76d7a9af36c6c3539d0c813efd528a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 26f67be72948e33738cf805b541d3c7e701f8dba
+ms.sourcegitcommit: a8f4d7d21d9af17d80b1213e5e1a81f42fb8b928
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384538"
+ms.lasthandoff: 03/14/2022
+ms.locfileid: "8414120"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10025-april-2022"></a>A Dynamics 365 Supply Chain Management 10.0.25 előzetes verziója (2022. április)
 
@@ -39,6 +39,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Lehe
 | Készlet&nbsp;és&nbsp;logisztika | [Vonalkódok beolvasása a raktárban a GS1 formátumszabványok alapján](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/scan-barcodes-warehouse-using-gs1-format-standards) | [GS1-vonalkódok és QR-kódok](../warehousing/gs1-barcodes.md) | Funkciókezelés:<br>*GS1-vonalkódok beolvasása* |
 | Gyártás | [Anyagfelhasználás és -foglalások a termelési emelet végrehajtási felületén](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/material-consumption-reservations-production-floor-execution-interface) | [A termelési üzem végrehajtási felületének használata dolgozók számára](../production-control/production-floor-execution-use.md) | Funkciókezelés:<br>*(Előzetes verzió) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (nem WMS)*<br><br>Illetve:<br><br>Funkciókezelés:<br>*(Előnézet) Anyagfelhasználás regisztrálása a termelési üzem végrehajtási felületén (WMS-kompatibilis)* |
 | Gyártás | [Anyagfelhasználás regisztrálása mérlegegységekben](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/register-material-consumption-scale-units) | [Gyártási végrehajtás munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-manufacturing.md) | Funkciókezelés:<br>*Anyagfelhasználás regisztrálása a mobilalkalmazáson egy skálázási egységben* |
+| Tervezés | [Tervezési optimalizálás központosított naptár karbantartása](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-centralized-calendar-maintenance) | [Naptárak és alaptervezés](../master-planning/supply-chain-calendars-master-planning.md) | Alapértelmezés szerint engedélyezve |
 | Tervezés | [Tervezési optimalizálási javaslatok a meglévő készlet optimalizálása érdekében](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-suggestions-optimize-existing-supply) | [Műveletkérő üzenetek](../master-planning/action-messages.md) | Alapértelmezés szerint engedélyezve |
 | Tervezés | Tervezett rendelések egyszerűsítve | [Tervezett rendelések egyszerűsítve](../master-planning/planning-optimization/planned-orders-simplified.md ) | Funkciókezelés:<br>*Tervezett rendelések egyszerűsítve* |
 
@@ -46,7 +47,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Lehe
 
 Ez a kiadás a következő táblázatban felsorolt funkciófejlesztéseket tartalmazza: Ezek közül mindegyik fejlesztés egy már meglévő funkciót fejleszt tovább. Mivel fejlesztésekről van szó, nem szerepelnek a [kiadási tervben](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). Alapértelmezés szerint mindegyik fejlesztés ki van kapcsolva (hacsak nincs másképpen jelezve), így biztos lehet abban, hogy nem ütköznek a meglévő testreszabásokkal vagy beállításokkal.
 
-Ha bármelyik funkciót be szeretné kapcsolni [, akkor ezt a funkciókezelésben kell megtenni](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+Ha bármelyik funkciót be szeretné kapcsolni [, akkor ezt a funkciókezelésben kell megtenni.](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)
 
 | Modul | Funkcióneve a funkciókezelésben | További információ |
 |---|---|---|
@@ -54,7 +55,7 @@ Ha bármelyik funkciót be szeretné kapcsolni [, akkor ezt a funkciókezelésbe
 | Beszerzés és forrás | Több beszerzési igénylés konszolidálása egyetlen beszerzési rendelésben, könyvelési dátum alapján | Ez a funkció lehetővé teszi több beszerzési igénylés egyetlen beszerzési rendelésbe történő konszolidálását, ha a különböző beszerzési igénylések könyvelési dátuma eltérő. A beszerzési rendelések létrehozására és az igénykonszolidációra vonatkozó beszerzési irányelvszabályok beállításával automatizálható az igénylési soroknak a beszerzési rendelés szintjén könyvelési dátum szerinti csoportosítására vonatkozó döntés. A beszerzési rendelés könyvelési dátum szerinti konszolidációja nem támogatott, ha engedélyezve van a költségvetés-ellenőrzés, mert a könyvelési dátum költségvetési foglalások és kötelezettségvállalás esetén használatos. Ezért azt meg kell őrizni a beszerzési igénylésről a beszerzési rendelésre való átállás során. |
 | Beszerzés és forrás | Örökölt alapértelmezett ajánlatkérési válaszmező-beállítások megjelenítése | Ez a funkció visszaállítja az ajánlatkérésre adott korábbi alapértelmezett válaszmező-beállításokat, amelyeket korábban eltávolítottak a felhasználói felületről. Ezek a beállítások nem biztosítanak a dobozból semmilyen funkciót, de igény szerint testreszabhatók. Akkor engedélyezze ezt a funkciót, ha a szervezet már hozzáadott funkciókat az alapértelmezett ajánlatkérési mező beállításaihoz, vagy tervezi. Ha ez a funkció engedélyezve van, **akkor a beállítások eléréséhez el kell férni a Beszerzés és forrás paraméterei lapra,** **megnyitva az Ajánlatkérés lapot,** és be kell választani az Alapértelmezett ajánlatkérés válaszmezőit **.** |
 | Beszerzés és forrás | A szállító pénzügyi dimenzióinak egyesítése aktív dimenziókapcsolatú pénzügyi dimenzióval a beszerzési rendelésen | Ezzel a funkcióval a beszerzési igénylés jóváhagyása után egyesítheti az aktív dimenziókapcsolat-dimenziókkal működő szállítók pénzügyi dimenzióit, amennyiben kapcsolatot ad meg a pénzügyi dimenzió és a hely készletdimenzió között. A beszerzési rendelések létrehozása és az igénykonszolidáció beszerzési irányelvszabályai a beszerzési rendelés fejlécének szintjén lévő, aktív dimenziókapcsolattal működő szállítók pénzügyi dimenzióinak egyesítésére vonatkozó döntést lehet hozni. |
-| Gyártásvezérlés | (Oroszország) Alapértelmezett helybeállítás engedélyezése termelési receptúrához/anyagjegyzékhez és automatikus GTD-foglalás/felhasználás termelésben | Ez a funkció további beállításokat ad az importált nyersanyagokból való termeléshez (csak orosz honosítás):<ul><li>Beállítás a termelési képletek és az anyagjegyzékek automatikus alapértelmezett helyének beállításával mind az erőforráscsoportokban, mind a raktárakban.</li><li>A nyersanyagok automatikus foglalása *a WMS által aktivált raktárak GTD-szám* dimenziója alapján, a nem WMS foglalási algoritmus szerint. Ez akkor érvényes, ha a nyersanyag-kitárolásra vonatkozó munkaházirend Soha beállítású, és a raktár, a hely és a cikkszám beállítása megegyezik *a* **·** *termelési* rendelés (kötegrendelés) készlettranzakcióival.</li><li>Nyersanyagok automatikus felhasználás *GTD-szám dimenzió* szerint a kitárolási lista feladása során, a korábban ismertetett beszerzett foglalásnak megfelelően.</li></ul> |
+| Gyártásvezérlés | (Oroszország) Alapértelmezett helybeállítás engedélyezése a termelési receptúrához/anyagjegyzékhez, valamint automatikus GTD-foglalás/-felhasználás a termelésben | Ez a funkció további beállításokat ad az importált nyersanyagokból való termeléshez (csak orosz honosítás):<ul><li>Beállítás a termelési képletek és az anyagjegyzékek automatikus alapértelmezett helyének beállításával mind az erőforráscsoportokban, mind a raktárakban.</li><li>A nyersanyagok automatikus foglalása *a WMS által aktivált raktárak GTD-szám* dimenziója alapján, a nem WMS foglalási algoritmus szerint. Ez akkor érvényes, ha a nyersanyag-kitárolásra vonatkozó munkaházirend Soha beállítású, és a raktár, a hely és a cikkszám beállítása megegyezik *a* **·** *termelési* rendelés (kötegrendelés) készlettranzakcióival.</li><li>Nyersanyagok automatikus felhasználás *GTD-szám dimenzió* szerint a kitárolási lista feladása során, a korábban ismertetett beszerzett foglalásnak megfelelően.</li></ul> |
 | Raktárkezelés | (Előnézet) Skálázási egység támogatása bejövő és kimenő raktári rendelésekhez | A funkció hatására a rendszer létrehozza a kimenő raktári rendeléseket a raktárba történő kiadási folyamat során, és bejövő raktári rendeléseket hoz létre az áthozott rendelések kiszállítva történő feladása során. A rendszer ezután szinkronizálja az egyes bejövő vagy kimenő raktári rendeléseket a rendelés szállításáért vagy fogadásáért felelős mérlegegységével. Ne feledje, hogy a funkció engedélyezése után frissíteni kell a raktár-végrehajtási terheléseket. További információk: [Raktárkezelés munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez](../cloud-edge/cloud-edge-workload-warehousing.md).<br><br>Ehhez a *funkcióhoz szükség van az ASN-szolgáltatásból* való kivezetésre, és lehetővé teszi az átvezetési rendelések fogadását a Raktárkezelés mobilalkalmazás tábla bevételi folyamatának használatával. |
 
 ## <a name="feature-state-changes-in-this-release"></a>Funkcióállapot-változások ebben a verzióban

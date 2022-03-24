@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 01edccbf1a50264b3867e303cbca44eb1b1d7dd9
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087499"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408230"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>A tervezésoptimalizálás által nem használt paraméterek
 
@@ -60,7 +60,7 @@ A tervezésoptimalizálás nem használja a következő paramétereket és beál
 
 - **Általános** Gyorslap:
 
-  - **Pozitív napok** - A *Pozitív napok* érték nincs felhasználva. A tervezési optimalizálással a pozitív napokat végtelennek tekintjük.
+  - **Pozitív napok** – *a pozitív napok* értéke nincs használva. A tervezési optimalizálás során a pozitív napok végtelennek számítanak.
   - **Aktuális készletfelhasználás** – az *Aktuális készletfelhasználás* támogatása függőben van.
   - **A megadott anyagjegyzék- vagy receptúraverzió használata** – a *Képletverziók társ- vagy melléktermékekkel* támogatása függőben van.
   - **A megadott útvonalverzió használata** – az *Igény megadott darajegyzék- vagy meghatározott útvonal-követelményekkel* támogatása függőben van.
@@ -161,9 +161,9 @@ A tervezésoptimalizálás nem használja a következő paramétereket és beál
   - **A számított késés hozzáadása a szükségletdátumhoz** (a **Tervezett átvitel** szakaszban) – a *Számított késések* támogatása függőben van.
   - **A számított késés hozzáadása a szükségletdátumhoz** (a **Tervezett kanban** szakaszban) – a *Számított késések* támogatása függőben van.
 
-- **Akció üzenet** FastTab:
+- **Műveletkértes üzenet** gyorsattab:
 
-  - **Az elhalasztott dátum frissítése kötelező dátumként** - Ez a paraméter a Tervezési optimalizálásnál megszűnik.
+  - **Frissítés elhalasztási dátuma szükségletdátumként** – ez a paraméter már nincs tervezésoptimalizálásban.
 
 - **Sorrendbe állítás** gyorslap:
 
@@ -194,12 +194,6 @@ A tervezésoptimalizálás nem használja a következő paraméterbeállítások
   - **Szállítási dátum ellenőrzése** – a tervezésoptimalizálás nem támogatja a *CTP* beállítást, mert a *CTP* támogatása függőben van.
   - **Készlet átfutási ideje** – A 2021. augusztus 6-ai kiadásnál régebbi tervezésoptimalizálási szolgáltatásverziókban a tervezési optimalizálás ezt a paramétert használja a helyes rendelési és szállítási dátum kiszámításához, de a kiszámított átfutási időt nem menti a tervezett rendelésbe. A későbbi verziókban a szolgáltatás a számított átfutási időt is használja az **Átfutási idő** mező és a **Munkanapok** beállítások kötelezőként történő beállításához a relevánt tervezési rendeléshez.
   - **Munkanapok** – A 2021. augusztus 6-ai kiadásnál régebbi tervezésoptimalizálási szolgáltatásverziókban a tervezési optimalizálás ezt a paramétert használja a helyes rendelési és szállítási dátum kiszámításához, de a kiszámított átfutási időt nem menti a tervezett rendelésbe. A későbbi verziókban a szolgáltatás a számított átfutási időt is használja az **Átfutási idő** mező és a **Munkanapok** beállítások kötelezőként történő beállításához a relevánt tervezési rendeléshez.
-
-## <a name="working-time-calendars-page"></a>Munkaidőnaptárak oldal
-
-A tervezésoptimalizálás nem használja a következő paramétereket a **Munkaidőnaptárak** lapon:
-
-- **Alapnaptár** – függőben van az *Alapnaptárak* támogatása.
 
 ## <a name="batch-disposition-master-page"></a>Köteg alapintézkedése oldal
 

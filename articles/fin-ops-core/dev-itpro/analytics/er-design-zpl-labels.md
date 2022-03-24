@@ -15,16 +15,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 8e5fb1515d4bdf36c22f617b6bfd2fa3ce3efa36
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
-ms.translationtype: HT
+ms.openlocfilehash: 4fb89f4b56ce8189482bf1a86582ef7e3684b15a
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8389137"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392963"
 ---
 # <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Új ER-megoldás megtervezése ZPL-címkék nyomtatásához
 
 [!include [banner](../includes/banner.md)]
+
+[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör leírja, hogyan konfigurálhatja az elektronikus jelentéskészítő (ER) [keretrendszer paramétereit a Rendszergazda,](general-electronic-reporting.md) elektronikus jelentéskészítő fejlesztő vagy elektronikus jelentéskészítő funkcionális tanácsadó szerepkörű felhasználók, hogyan tervezheti meg egy új ER-megoldás SZÜKSÉGES ER-konfigurációit [...](general-electronic-reporting.md#Configuration), hogy hozzáférjenek a raktárkezelő rendszer adataihoz, és létrehozták az egyéni raktári helycímkéket a ZPL II formátumban. Ezeket a lépéseket a **USRT** vállalatban hajthatja végre.
 
@@ -314,7 +316,7 @@ A raktári helycímkék aktuális elrendezése megváltoztatható. A következő
 ## <a name="encoding"></a>Kódolás
 
 > [!NOTE]
-> Szinkronizálni kell a **szerkeszthető ER-formátum CommonFile\\** összetevő kódolási beállítását és a tervezett címke megfelelő beállítását. A **Common\\File** összetevő **[kódolási](er-suppress-bom-characters.md)** mezőjének értéke nem szabad ellentétesnek lennie a címke kódolásának szabályozására használt ZPL-paranccsal (például `^CI` a parancssal). Az ER nem ellenőrzi, hogy ezek a beállítások szinkronizálva vannak-e.
+> Szinkronizálni kell a szerkeszthető ER-formátum **Common\\File** összetevő kódolási beállítását és a tervezett címke megfelelő beállítását. A CommonFile **[...](er-suppress-bom-characters.md)** összetevő kódolási **Common\\File** mezőjének értéke nem szabad ellentétesnek lennie a címke kódolásának szabályozására használt ZPL-paranccsal (például `^CI` a parancssal). Az ER nem ellenőrzi, hogy ezek a beállítások szinkronizálva vannak-e.
 
 ## <a name="additional-resources"></a>További erőforrások
 

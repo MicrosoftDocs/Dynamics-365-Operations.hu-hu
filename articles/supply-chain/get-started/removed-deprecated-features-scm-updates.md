@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-03-03
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 43e57b75933a67c1ee3fb0a59400b0d1bdab931cec5826346247cc361a0206df
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: e7350e697beec42b349082df06b77a89d526c27c
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720420"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396524"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-supply-chain-management"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
 
@@ -31,7 +31,7 @@ Ez a témakör frissítve lesz a Dynamics 365 Supply Chain Management újonnan e
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére.
 
 > [!NOTE]
-> A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](/dynamics/s-e/) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+> A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük a Pénzügyi és műveleti alkalmazások egyes verzióiban módosult vagy eltávolított objektumokat.
 
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10019-release"></a>Eltávolított vagy elavult szolgáltatások a Supply Chain Management 10.0.19 kiadásában
@@ -52,7 +52,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | 2021 áprilisától a *Dynamics 365 for Finance and Operations – Raktárkezelés* (a raktár alkalmazás) elavult, és 2022 áprilisa után már nem támogatott. Ezt most felváltja a *Raktárkezelés mobilalkalmazás*, amelyet a Supply Chain Management 10.0.17-es verziójával adtunk ki. Az új alkalmazás egy teljeskörű helyettesítő alkalmazás, de ugyanazt a mögöttes keretrendszert használja, ami megkönnyíti az áttelepítést. Szükség esetén a két alkalmazás egymás mellett is használható, hogy a felhasználók fokozatosan alkalmazkodjanak az új alkalmazás használatához.<br><br>További információért az új Raktárkezelés mobilalkalmazásról lásd: [Raktárkezelés mobilalkalmazás](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) és a [Raktárkezelés mobilalkalmazás telepítése és összekapcsolása](../warehousing/install-configure-warehouse-management-app.md). |
+| **Elavulás/eltávolítás oka** | 2021. április 365., *Dynamics 365 for Finance és Operations* – Raktárkezelési (raktári alkalmazás) elavult, ezért 2022. április után nem lesz támogatott. Ezt most felváltja a *Raktárkezelés mobilalkalmazás*, amelyet a Supply Chain Management 10.0.17-es verziójával adtunk ki. Az új alkalmazás egy teljeskörű helyettesítő alkalmazás, de ugyanazt a mögöttes keretrendszert használja, ami megkönnyíti az áttelepítést. Szükség esetén a két alkalmazás egymás mellett is használható, hogy a felhasználók fokozatosan alkalmazkodjanak az új alkalmazás használatához.<br><br>További információért az új Raktárkezelés mobilalkalmazásról lásd: [Raktárkezelés mobilalkalmazás](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/warehouse-management-mobile-application) és a [Raktárkezelés mobilalkalmazás telepítése és összekapcsolása](../warehousing/install-configure-warehouse-management-app.md). |
 | **Felváltotta másik szolgáltatás?**   | Igen, ezt az új Raktárkezelés mobilalkalmazás váltotta le. |
 | **Érintett területek**         | Supply Chain Management – Raktár alkalmazás |
 | **Telepítési beállítás**              | Felhőbeli és helyszíni |
@@ -78,7 +78,7 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 | **Felváltotta másik szolgáltatás?**   | Igen, a Tervezés optimalizálása átveszi a meglévő beépített Supply Chain Management alaptervezési motorjának szerepét. |
 | **Érintett területek**         | Supply Chain Management – Alaptervezés |
 | **Telepítési beállítás**              | Csak felhő. A Tervezés optimalizálása nem támogatott helyszíni telepítések esetében. |
-| **Állapot**                         | Elavult. 2022. április 1-e után a gyártási forgatókönyvek már nem lesznek támogatottak a beépített Dynamics 365 Supply Chain Management alaptervezési motorral. Gyártási esetekhez a vevőknek a Tervezési optimalizációt kell használniuk az alaptervezés számításaihoz. További tájékoztatás: [Tervezésoptimalizálás dokumentációja](../master-planning/planning-optimization/planning-optimization-overview.md). A Dynamics 365 Supply Chain Management helyszíni telepítését használó ügyfelek továbbra is használhatják a Supply Chain Management alaptervezés motorját a gyártási forgatókönyvekhez 2022 áprilisa után. Azonban nem lesz több funkciófejlesztés. |
+| **Állapot**                         | Elavult. 2022. április 1-ig a gyártási helyzetek már nem lesznek támogatottak a beépített ellátásilánc-kezelési alaptervezési motorban. A Microsoft ezzel a dátummal leállítja a beépített tervezőmotor gyártási helyzetekkel kapcsolatos összes aktív fejlesztési tervét, nem ad ki új funkciókat, és csak a kritikus hibajavításokat fogja kiadni. A dátum után minden vállalatnak, amely a gyártási esetekhez támogatást igényel, az alaptervezési számításaiban a tervezési optimalizálást kell használnia. A tervezési optimalizálás várhatóan 2022 októberére teljes mértékben támogatja a gyártási helyzeteket. A további tudnivalókat lásd a Tervezési optimalizálás [dokumentációjában](../master-planning/planning-optimization/planning-optimization-overview.md).<br><br>Előfordulhat, hogy a vállalatok, ahol az Ellátásilánc-kezelés telepítések vannak, 2022 áprilisa után is a beépített alaptervezési motort használják a gyártási helyzetek kezelésére. Azonban nem lesz több funkciófejlesztés. |
 
 ## <a name="features-removed-or-deprecated-in-the-supply-chain-management-10011-release"></a>Eltávolított vagy elavult szolgáltatások a Supply Chain Management 10.0.11 kiadásában
 

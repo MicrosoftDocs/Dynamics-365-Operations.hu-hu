@@ -2,7 +2,7 @@
 title: Cookie-k megfelelősége
 description: Ez a témakör a cookie-megfelelőséggel és a Microsoft Dynamics 365 Commerce által tartalmazott alapértelmezett irányelvekkel kapcsolatos szempontokat ismerteti.
 author: BrianShook
-ms.date: 07/30/2021
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 509ae998b4d0fa8ab6dd5e3d242dfb4abc492952cd66addc04050fbaff949326
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 2efb866d513ba90630b0397c1ca144c92d40719c
+ms.sourcegitcommit: 4645278a4b4a38dcb18fdfb49ce2e276eabb59de
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747697"
+ms.lasthandoff: 03/11/2022
+ms.locfileid: "8403147"
 ---
 # <a name="cookie-compliance"></a>Cookie-k megfelelősége
 
@@ -58,6 +58,7 @@ A következő táblázat felsorolja a Dynamics 365 Commerce helyek által felado
 | \_msdyn365___aud_0                          | A célzás által használt szegmensértékeket tárolja, és csak akkor használatos, ha a célzás egy lapon vagy egy webhely egyik felhasználója által kért töredéken konfigurálják. A sütit csak akkor helyezi el a rendszer, ha a szegmensértékek egy külső fél szegmentációszolgáltatótól származnak.      | 7 nap |
 | \_msdyn365___aud_1                           | A célzás által használt szegmensértékeket tárolja, és csak akkor használatos, ha a célzás egy lapon vagy egy webhely egyik felhasználója által kért töredéken konfigurálják. A sütit csak akkor helyezi el a rendszer, ha a szegmensértékek egy külső fél szegmentációszolgáltatótól származnak.      | 7 nap |
 | \_msdyn365___aud_2                           | A célzás által használt szegmensértékeket tárolja, és csak akkor használatos, ha a célzás egy lapon vagy egy webhely egyik felhasználója által kért töredéken konfigurálják. A sütit csak akkor helyezi el a rendszer, ha a szegmensértékek egy külső fél szegmentációszolgáltatótól származnak.      | 7 nap |
+| d365gi                                       | Ez a sütemény tárolja a földrajzi elhelyezkedési adatokat harmadik fél földrajzi helyszolgáltatásának használata esetén.      | 1 nap |
 
 Ha egy webhely felhasználója a webhely bármelyik közösségi média hivatkozását kiválasztja, az alábbi táblában található cookie-k is nyomon lesznek követve a böngészőikben.
 
@@ -65,17 +66,17 @@ Ha egy webhely felhasználója a webhely bármelyik közösségi média hivatkoz
 | Tartomány                      | Cookie               | Leírás                                                  | Forrás                                          |
 | --------------------------- | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | .linkedin.com                | UserMatchHistory         | LinkedIn-hirdetések azonosítójának szinkronizálása                                      | LinkedIn-csatorna és betekintés címke                                |
-| .linkedin.com               | li_sugr                  | Böngésző azonosítója                                           | LinkedIn betekintés címke, ha az IP-cím nem egy kijelölt országban van |
+| .linkedin.com               | li_sugr                  | Böngésző azonosítója                                           | LinkedIn Címke, ha az IP-cím nem egy kijelölt országban van. |
 | .linkedin.com               | BizographicsOptOut       | Meghatározza a harmadik fél követéselutasítási állapotát.              | A LinkedIn vendégvezérlők és az iparág elutasító oldalai           |
 | .linkedin.com               | \_guid                    | Böngészőazonosító a Google hirdetésekhez.                            | LinkedIn-csatorna                                                |
 | .linkedin.com               | li_oatml                 | Az átalakítások nyomon követésének, újracélzásának és analitikájának a tag közvetett azonosítója. | LinkedIn hirdetések és betekintés címkék                                |
 | Különböző belső tartományok | li_fat_id                | Az átalakítások nyomon követésének, újracélzásának és analitikájának a tag közvetett azonosítója. | LinkedIn hirdetések és betekintés címkék                                |
-| .adsymptotic.com            | U                        | Böngészőazonosító                                           | LinkedIn betekintés címke, ha az IP-cím nem egy Kijelölt országban van |
+| .adsymptotic.com            | U                        | Böngésző azonosítója                                           | LinkedIn Címke, ha az IP-cím nem egy kijelölt országban van. |
 | .linkedin.com                | b                  | Böngészőazonosító cookie                                            | Kérések a LinkedInhez                                         |
 | .linkedin.com                | bs                 | Biztonságos böngészőcookie                                        | Kérések a LinkedInhez                                         |
 | .linkedin.com               | nyelv                     | Beállítja az alapértelmezett területi beállításokat és a nyelvet.                                 | Kérések a LinkedInhez                                         |
 | .linkedin.com                | lidc                     | Útvonaltervezlshez használatos.                                             | Kérések a LinkedInhez                                         |
-| .linkedin.com               | aam_uuid                 | Adobe-célközönség kezelői cookie                                                     | Beállítás azonosítószinkronizáláshoz                                              |
+| .linkedin.com               | aam_uuid                 | Adobe célközönség-kezelői sütemény                                                     | Beállítás azonosítószinkronizáláshoz                                              |
 | .linkedin.com               | \_ga                      | Google Analytics cookie                                            | Google Analytics                                             |
 | .linkedin.com               | \_gat                     | Google Analytics cookie                                             | Google Analytics                                             |
 | .linkedin.com               | liap                     | Google Analytics cookie                                             | Google Analytics                                             |
@@ -106,9 +107,9 @@ Ha egy webhely felhasználója a webhely bármelyik közösségi média hivatkoz
 | .pinterest.com              | Szolgáltató dolgozók          |                                                              |  Pinterest                                                            |
 
 
-## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>Webhely felhasználó cookie-hozzájárulása egy e-kereskedelmi weboldalon 
+## <a name="site-user-cookie-consent-on-an-e-commerce-site"></a>A webhely felhasználói cookie-hozzájárulásának egy e-commerce webhelyen 
 
-Ha egy e-kereskedelmi oldal funkciója vagy modulja nem alapvető cookie-t használ, akkor a webhely felhasználójának hozzájárulását a cookie nyomon követése előtt kell beszerezni. Ha engedélyezni szeretné, hogy a webhely felhasználói cookie-hozzájárulást adjanak az e-kereskedelemi webhelyen a webhelyhez tartozó szerzőnek hozzá kell adnia és be kell állítania egy cookie-hozzájárulási modult a lap fejlécmoduljában, hogy a rendszer biztosítsa a jóváhagyás fogadását. A webhely felhasználói hozzájárulását meg kell adni, mielőtt a nem alapvető cookie-t használó funkció vagy modul a webhely oldalán meg lenne jelenítve.
+Ha az e-commerce webhely szolgáltatása vagy modulja nem lényeges süteményt használ, a webhely felhasználója által megadott hozzájárulást meg kell szerezni a sütemény nyomon követése előtt. Ahhoz, hogy engedélyezze a webhely felhasználói számára, hogy egy sütemény-hozzájárulást adjanak meg az e-commerce webhelyen, a webhely szerzőjének hozzá kell adnia és be kell állítania egy cookie-hozzájárulási modult a lap fejlécmodulában, hogy a program kér és fogadott legyen. A webhely felhasználói hozzájárulását meg kell adni, mielőtt a nem alapvető cookie-t használó funkció vagy modul a webhely oldalán meg lenne jelenítve.
 
 ## <a name="additional-resources"></a>További erőforrások
 

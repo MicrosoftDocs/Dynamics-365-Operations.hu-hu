@@ -2,7 +2,7 @@
 title: Bevételelszámolás – áttekintés (videót tartalmaz)
 description: Ez a témakör a Bevételelszámolás funkcióról nyújt tájékoztatást. Ez a funkció rugalmas keretet biztosít, amely lehetővé teszi, hogy vállalatspecifikus szabályokat határozzon meg a többelemű rendelések bevételi árának és bevételütemezésének elszámolásához.
 author: kweekley
-ms.date: 11/11/2019
+ms.date: 03/15/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: a5e7b6407fe72c56ea04920532d4327d2b89f8d1
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: HT
+ms.openlocfilehash: aae46fa90d306355608200f96ae5cf10793c8464
+ms.sourcegitcommit: 0925b9ee0cb0df93047681a243aacc2abd404dea
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982587"
+ms.lasthandoff: 03/16/2022
+ms.locfileid: "8446178"
 ---
 # <a name="revenue-recognition-overview"></a>A bevételelszámolás áttekintése
 
@@ -26,10 +26,7 @@ ms.locfileid: "7982587"
 
 Olyan iparágak vállalatai esetében, ahol több elem (például termékek, szolgáltatások, előfizetések stb.) értékesítése történik, képesnek kell lennie a több elemből álló rendelések szétbontására, hogy a bevételeket vállalat-és iparág-specifikus irányelvek alapján lehessen elszámolni.
 
-> [!NOTE]
-> A bevételelszámolási funkció nem kapcsolható be a Funkciókezelés lehetőségen keresztül. Jelenleg konfigurációs kulcsok használatával kapcsolhatja be.
-
-> A bevételelszámolási funkció, beleértve a csomagfunkciót is, nem támogatott a Commerce Channels rendszerben (e-kereskedelem, pénztár, hívásközpont). A bevételelszámolási funkcióval konfigurált tételeket nem lehet hozzáadni a Commerce Channels rendszerben létrehozott rendelésekhez vagy tranzakciókhoz.
+A bevételelszámolási funkció, beleértve a csomagfunkciót is, nem támogatott a Commerce Channels rendszerben (e-kereskedelem, pénztár, hívásközpont). A bevételelszámolási funkcióval konfigurált tételeket nem lehet hozzáadni a Commerce Channels rendszerben létrehozott rendelésekhez vagy tranzakciókhoz.
 
 Általánosságban a bevételelszámolási folyamat a következő feladatok végrehajtásához használható:
 

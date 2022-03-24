@@ -2,19 +2,19 @@
 title: Fél és globális címjegyzék
 description: Ez a témakör a kettős írás Fél és globális címjegyzék-funkcióit ismerteti.
 author: RamaKrishnamoorthy
-ms.date: 08/11/2021
+ms.date: 03/10/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 601c49e21c3a97d2da225705ddbb386e491d4d25
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: HT
+ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060332"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407765"
 ---
 # <a name="party-and-global-address-book"></a>Fél és globális címjegyzék
 
@@ -22,22 +22,22 @@ ms.locfileid: "8060332"
 
 
 
-*Buli* és *globális címjegyzék* fogalmak a Finance and Operations alkalmazásokban. Egy fél lehet személy vagy szervezet. Hasznos egy fél tulajdonságainak –például név, nyelv, névjegyek és címek – globális tárolása és kezelése. Majd ha egy tulajdonság értéke egy helyen változik, az a változás minden olyan helyen tükröződik, ahol a fél érintett.
+*A* fél *és a globális címjegyzék* a pénzügyi és az üzemeltetési alkalmazások alapfogalmai. Egy fél lehet személy vagy szervezet. Hasznos egy fél tulajdonságainak –például név, nyelv, névjegyek és címek – globális tárolása és kezelése. Majd ha egy tulajdonság értéke egy helyen változik, az a változás minden olyan helyen tükröződik, ahol a fél érintett.
 
 ## <a name="party"></a>Fél
 
-A fél az üzletben részt vevő személy vagy szervezet. Amikor a fél fogalmának használatával egy személy vagy szervezet egynél több szerepkört (például dolgozó, vevő, szállító vagy kapcsolattartó) is játszhat egy vállalkozásban. A szerepkör a kontextuson és a célon alapul. Íme néhány példa két fiktív cég, a Contoso és a Fabrikam szerepeire:
+A fél az üzletben részt vevő személy vagy szervezet. Amikor a fél fogalmának használatával egy személy vagy szervezet egynél több szerepkört (például dolgozó, vevő, szállító vagy kapcsolattartó) is játszhat egy vállalkozásban. A szerepkör a kontextuson és a célon alapul. Néhány példa két fiktív vállalat, a Contoso és a Gyár szerepi szerepire:
 
-+ **Dolgozó** – Egy alkalmazott. Példa erre a Contoso alkalmazottja.
-+ **Szállító** – Egy szállító szervezetre vagy egy olyan kizárólagos tulajdonosra vonatkozik, aki árukat vagy szolgáltatásokat nyújt egy vállalkozásnak. Például, ha a Fabrikam kellékeket ad el a Contoso számára, akkor a Fabrikam a Contoso szállítója.
-+ **Névjegy** – Kapcsolattartó személy. Például, ha a Contoso kellékeket vásárol a Fabrikamtól, a Contoso alkalmazottai kapcsolatba lépnek a Fabrikam kapcsolattartójával.
-+ **Vevő** – Olyan személy vagy vállalat, aki vagy amely dolgokat vásárol egy vállalattól. Például, ha a Contoso kellékeket vásárol a Fabrikamtól, akkor a Contoso a Fabrikam ügyfele.
++ **Dolgozó** – Egy alkalmazott. Ilyen például a Contoso alkalmazottja.
++ **Szállító** – Egy szállító szervezetre vagy egy olyan kizárólagos tulajdonosra vonatkozik, aki árukat vagy szolgáltatásokat nyújt egy vállalkozásnak. Ha például a Gyár kellékeket értékesít a Contoso számára, akkor a Gyár a Contoso szállítója.
++ **Névjegy** – Kapcsolattartó személy. Ha például a Contoso kellékeket vásárol a Gyártól, akkor a Contoso alkalmazottai kapcsolatba lépnek a Gyár kapcsolattartóval.
++ **Vevő** – Olyan személy vagy vállalat, aki vagy amely dolgokat vásárol egy vállalattól. Ha például a Contoso kellékeket vásárol a Gyártól, akkor a Contoso a Gyár vevői.
 
 A fél modellt gyakran használják a szervezetek és az emberek közötti közepes és összetett kapcsolatok képviseletére, különösen akkor, ha egy párt egynél több szerepet játszik. Íme néhány gyakori példa:
 
-+ A fél lehet vevő és szállító is. Például Észak-Amerikában a Fabrikam elektromos vezetékeket ad el a Contosónak, és összeszerelt hangszórókat vásárol a Contosótól. Európában a Fabrikam alkatrészt ad el a Contosónak, de nem vesz semmit a Contosótól.
++ A fél lehet vevő és szállító is. Például Észak-Amerika, a Gyár elektromos autókat értékesít a Contoso számára, és összeállítva vásárol a Contoso vállalattól. Európában a Gyár alkatrészeket értékesít a Contoso számára, de nem vásárol a Contoso vállalattól.
 + A fél lehet munkavállaló és vevő is. A Contoso egyik alkalmazottja például személyes használatra vásárol elektronikai termékeket a Contoso-tól.
-+ Egy személy és egy szervezet között sok a sokhoz (N:N) kapcsolat is lehet. A Fabrikam például szervizszakértőket biztosít, és elhelyezési koordinátort alkalmaz. A helyettes koordinátor elosztja a Fabrikam több ügyféltől érkező munkakérelmeihez a szervizszakembereket. A Contoso a Fabrikam egyik ügyfele. Amikor a Contoso szervizszakértőt igényel, felveszi a kapcsolatot az elhelyezési koordinátorral, aki ezután megkönnyíti a kérést. Mivel a helyettes koordinátor kezeli az összes vevő kérését, egy N:N kapcsolatban vesz részt.
++ Egy személy és egy szervezet között sok a sokhoz (N:N) kapcsolat is lehet. A Fabrikam például szervizszakértőket biztosít, és elhelyezési koordinátort alkalmaz. A helyettes koordinátor elosztja a Fabrikam több ügyféltől érkező munkakérelmeihez a szervizszakembereket. A Contoso a Gyár egyik vevői. Ha a Contoso szakértőt igényel, akkor kapcsolatba lép az elhelyezések koordinálóját, aki ezután megkönnyíti a kérést. Mivel a helyettes koordinátor kezeli az összes vevő kérését, egy N:N kapcsolatban vesz részt.
 
 A következő ábrán a fél adatmodellje látható.
 
@@ -46,7 +46,7 @@ A következő ábrán a fél adatmodellje látható.
 > [!TIP]
 > Amikor új fiókrekordot próbál létrehozni, a **Fél** mezővel név szerint keresheti meg a rekordot. Így, ha a rekordot megtalálja, csak ki kell választania. A rendszer ezután automatikusan kitölti a fél összes adatát. Nem kell manuálisan beállítania az összes szükséges mezőt. Ez a viselkedés megtalálható a **Partner**, **Névjegy** és **Szállító** lapokon, amelyek gyárilag elérhetők.
 
-A kettős írás nem támogatja a Finance and Operations alkalmazások összes fél szerepkörét. A fél szerepkörök teljes listáját a [Globális címjegyzék áttekintése](../../../fin-ops/organization-administration/overview-global-address-book.md) című témakörben találja.
+A kettős írás nem támogatja a pénzügyi és műveletalkalmazások összes félszerepét. A fél szerepkörök teljes listáját a [Globális címjegyzék áttekintése](../../../fin-ops/organization-administration/overview-global-address-book.md) című témakörben találja.
 
 ### <a name="global-address-book"></a>Globális címjegyzék
 
@@ -75,7 +75,7 @@ A **Kapcsolattartó** tábla az alábbi típusú sorokat tudja tárolni.
 |----------|-------------|
 | Olyan személy, aki vevő (például eladásra alkalmas kapcsolattartó vagy B2C vevő) | Olyan csíkozott kapcsolattartói rekord, ahol a **Vállalat** mező nem üres, és a **Vevő** mező beállítása **Igen**. |
 | Olyan személy, aki szállító (például egyéni vállalkozóhoz hasonló szállító) | Olyan csíkozott kapcsolattartói rekord, ahol a **Vállalat** mező nem üres, és a **Szállító** mező beállítása **Igen**. |
-| A személy lehet vevő és szállító is | Olyan csíkozott kapcsolattartói rekord, ahol a **Vállalat** mező nem üres, és a **Vevő** mező beállítása **Igen**, és a **Szállító** mező beállítása is **Igen**. Egy személy egyszerre lehet az egyik termék gyártója és egy másik termék fogyasztója. Mind a Finance and Operations alkalmazások, mind a kettős írás támogatja ezt a kapcsolatot. |
+| A személy lehet vevő és szállító is | Olyan csíkozott kapcsolattartói rekord, ahol a **Vállalat** mező nem üres, és a **Vevő** mező beállítása **Igen**, és a **Szállító** mező beállítása is **Igen**. Egy személy egyszerre lehet az egyik termék gyártója és egy másik termék fogyasztója. Ezt a kapcsolatot mind a pénzügy, mind az üzemeltetési alkalmazások, mind a kettősírásos alkalmazások támogatják. |
 | Olyan személy, aki egy szervezet kapcsolattartója, de nem vevő vagy szállító | Olyan nem csíkozott kapcsolattartói rekord, ahol a **Vállalat** mező nem üres, és a **Vevő** mező beállítása **Nem**, és a **Szállító** mező beállítása is **Nem**. |
 
 ## <a name="contact-for-party-table"></a>Fél kapcsolattartója tábla
@@ -142,7 +142,7 @@ A rács fölötti **Új elektronikus cím** gombbal annyi címet hozhat létre, 
 Az elektronikus címek csak ebben a rácsban érhetők el. A jövőbeni kiadásokban a postai cím és az elektronikus cím mezőit eltávolítjuk más lapokról, például az **Összefoglaló** és a **Részletek** lapokról. A **Részletek** lapon megjelenő elérhetőségi adatok az elsődleges elektronikus cím csak olvasható másolatai, mint például az elsődleges telefon, az elsődleges e-mail, az elsődleges telefon, az elsődleges fax és az elsődleges Twitter azonosító. A leadminősítési folyamat során megadhat egy üzleti telefonszámot és egy mobiltelefonszámot is. Az üzleti telefonszámot tekintjük elsődleges telefonszámnak, ha **IsMobile=No**, és a mobiltelefonszámot tekintjük másodlagos telefonszámnak, ha **IsMobile=Yes**.
 
 > [!TIP]
-> A postai és elektronikus címek kezeléséhez használja a **Címek** és az **Elektronikus címek** lapokat a **Fiók** és a **Kapcsolat** űrlapokon. Ez biztosítja, hogy a címadatok szinkronizálva legyenek a Finance and Operations alkalmazásokkal.
+> A postai és elektronikus címek kezeléséhez használja a **Címek** és az **Elektronikus címek** lapokat a **Fiók** és a **Kapcsolat** űrlapokon. Így garantálható, hogy a címadatok szinkronizálva lesznek a pénzügyekkel és a műveletekkel kapcsolatos alkalmazásokkal.
 
 ## <a name="setup"></a>Beállítás
 
@@ -226,11 +226,11 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A jövőbeni kiadáso
 
     ![Ismétlődő szabály a Kapcsolattartókhoz.](media/duplicate-rule-2.PNG)
 
-11. Ha Ön kettős írású felhasználó, hajtsa végre a [Frissítés a fél és globális címjegyzék modelljére](upgrade-party-gab.md) megadott utasításokat, és frissítse az adatait.
+11. Ha Ön kettős írású felhasználó, hajtsa végre a [Frissítés a fél és globális címjegyzék modelljére](upgrade-party-gab.md) megadott utasításokat, és frissítse az adatait. **Ne lépjen tovább a 12. lépésre a lépés befejezése nélkül.** Ha Ön egy új kettős írású felhasználó, folytassa a 12. lépéssel.
 
-12. Futtassa a leképezéseket a következő sorrendben. Ha a „Projektellenőrzés sikertelen. Hiányzó célmező...” hibaüzenet jelenik meg, akkor nyissa meg a leképezést, és válassza a **Táblák frissítése** lehetőséget. Ezután futtassa a leképezést.
+12. Ha ön kettős írású felhasználó, a 11. lépést kell végrehajtania, és a következő sorrendben futtathatja a leképezések futtatását. Ha Ön egy új kétírásos vevő, közvetlenül folytathatja. Ha megjelenik egy hibaüzenet, amely a "Projektellenőrzés sikertelen" üzenetet jelenik meg. Hiányzik a célmezőből,nyissa meg a leképezés, és válassza **a** Táblák frissítése lehetőséget, majd futtassa a leképezés.
 
-    Finance and Operations alkalmazás | Customer Engagement alkalmazás  
+    Pénzügy és műveletek alkalmazás | Customer Engagement alkalmazás  
     ----------------------------|------------------------
     [CDS-felek](mapping-reference.md#220) | msdyn_parties
     [CDS postai címének helyei](mapping-reference.md#234) | msdyn_postaladdresscollections
@@ -269,7 +269,7 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A jövőbeni kiadáso
 
 Ahogy az alábbi táblázatban látható, az táblaleképezések gyűjteménye együttműködik a fél és globális címjegyzék interakciók során.
 
-| Finance and Operations alkalmazás | Customer Engagement alkalmazás | Leírás |
+| Pénzügy és műveletek alkalmazás | Customer Engagement alkalmazás | Leírás |
 |----------------------------|-------------------------|-------------|
 | [Kapcsolattartó megszólításai](mapping-reference.md#223) | msdyn\_salescontactpersontitles |
 | [Vevők V3](mapping-reference.md#101) | számlák |
@@ -295,10 +295,10 @@ További tájékoztatás: [Kettős írású leképezési hivatkozás](mapping-re
 
 ## <a name="known-issues-and-limitations"></a>Ismert problémák és korlátozások
 
-+ A Finance and Operations alkalmazásokban, amikor létrehoz egy ügyfelet a címmel együtt, és elmenti, előfordulhat, hogy a cím nem szinkronizálódik **Cím** asztal. Ez a kettős írású platform sorrendbe állítási hibája miatt van. Ez a megoldás megoldás: először hozza létre a vevőt, és mentse el. Ezután adja meg a címet.
-+ A Finance and Operations alkalmazásokban, ha egy ügyfélrekordnak van elsődleges címe, és új kapcsolattartót hoz létre az ügyfélhez, akkor a kapcsolatfelvételi rekord örökli az elsődleges címet a társított ügyfélrekordtól. Ez a szállító kapcsolattartója esetén is megtörténik. Dataverse jelenleg nem támogatja ezt a viselkedést. Ha a kettős írás engedélyezve van, a Finance and Operations alkalmazásból származó elsődleges címmel örökölt ügyfélkapcsolatok szinkronizálva lesznek Dataverse címével együtt.
++ A pénzügyi és műveleti alkalmazásokban előfordulhat, hogy a címvel együtt vevőt hoz létre és ment, előfordulhat, hogy a cím nem szinkronizálható a Cím **táblával**. Ez a kettős írású platform sorrendbe állítási hibája miatt van. Ez a megoldás megoldás: először hozza létre a vevőt, és mentse el. Ezután adja meg a címet.
++ A pénzügyi és műveleti alkalmazásokban, amikor egy vevőrekordhoz elsődleges cím tartozik, és az adott vevőhöz új kapcsolattartót hoz létre, akkor a kapcsolattartó-rekord a társított vevőrekordból örökli az elsődleges címet. Ez a szállító kapcsolattartója esetén is megtörténik. Dataverse jelenleg nem támogatja ezt a viselkedést. Ha engedélyezve van a kettős írás, a rendszer a címével szinkronizálja a Dataverse pénzügyek és műveletek alkalmazásában elsődleges címmel örökölt vevői kapcsolattartókat.
 + A `msdyn_partyelectronicaddress` táblából származnak a **Partner**, **Kapcsolattartó** és **Szállító** űrlapok elektronikus cím fülében beállított elektronikus címek. Ezek az információk nem jutnak el a társított tranzakciókhoz, mint például az értékesítési rendeléshez, árajánlathoz vagy beszerzési rendeléshez. A probléma javítását a növekményes kiadásban tervezzük eszközölni. A számla és a kapcsolattartó rekord e-mail-cím mezőiben lévő adatok továbbra is működni fognak az olyan tranzakciókon, mint az értékesítési rendelés, az árajánlat és a beszerzési rendelés.
-+ A Finance and Operations alkalmazásokban kapcsolatfelvételi rekordot hozhat létre a **Kapcsolat hozzáadása** forma. Amikor a **Kapcsolattartó megtekintése** képernyőről megpróbál új kapcsolattartót létrehozni, a művelet sikertelen lesz. Ez egy ismert probléma.
++ A Pénzügy és műveletek alkalmazásokban kapcsolattartó-rekordot hozhat létre a **Kapcsolattartó hozzáadása képernyőn**. Amikor a **Kapcsolattartó megtekintése** képernyőről megpróbál új kapcsolattartót létrehozni, a művelet sikertelen lesz. Ez egy ismert probléma.
 
     ![Ismert probléma a Kapcsolattartó hozzáadásával kapcsolatban.](media/party-gab-contact-issue.png)
 
@@ -307,4 +307,4 @@ További tájékoztatás: [Kettős írású leképezési hivatkozás](mapping-re
 
     ![Ismert probléma a Címmel kapcsolatban.](media/party-gab-address-issue.png)
 
-+ Nem adhat meg továbbítási dátumú postai címet a Finance and Operations alkalmazásban kettős írással, mert Dataverse nem támogatja a dátum érvényességét. Ha egy Finance and Operations alkalmazással jövőbeli postai címet ad meg, az szinkronizálódik a következővel Dataverse teljesen, és azonnal látni fogja a címet a felhasználói felületen. A rekord minden frissítése hibát eredményez, mivel az jövőbeli dátum, és nem aktuális a Finance and Operations alkalmazásban.
++ Előredátumozott postai címet nem lehet kettős írású pénzügyi és műveleti alkalmazással megadni, mert Dataverse ez nem támogatja a dátumhatályt. Ha egy pénzügyi és műveleti alkalmazás segítségével ad meg egy jövőbeli postai címet, Dataverse akkor az teljesen szinkronizál, és a cím azonnal látható a felhasználói felületen. A rekord minden frissítése hibát eredményez, mivel az jövőbeli dátumú, nem pedig aktuális a pénzügy és a műveletek alkalmazásban.

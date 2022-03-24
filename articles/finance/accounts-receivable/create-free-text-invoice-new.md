@@ -1,23 +1,23 @@
 ---
 title: Szabadszöveges számla létrehozása
 description: Ez a témakör bemutatja, hogyan lehet szabadszöveges számlákat létrehozni.
-author: mikefalkner
-ms.date: 08/24/2018
+author: abruer
+ms.date: 02/15/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e5ca9e00ec881707248d966470288fd3ddba4e785127f30bd0e6dd4e7186c7e6
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 6e9578d9b2d61f241ab5e92fc9740b88b80969f6
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6763286"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392885"
 ---
 # <a name="create-a-free-text-invoice"></a>Szabadszöveges számla létrehozása
 
@@ -68,6 +68,7 @@ Ez a témakör bemutatja, hogyan lehet szabadszöveges számlákat létrehozni. 
 
     * A számla nyomtatásának időpontját megváltoztathatja. Válassza ki a **Jelenlegi** lehetőséget az egyes számlák frissítéskori kinyomtatásához. Válassza ki az **Után** lehetőséget, ekkor az összes számla frissítése után történik a nyomtatás.
     * Annak módosításához, hogy a vevő hitelkerete hogyan legyen ellenőrizve a számla feladása előtt, módosítsa az értéket a **Hitelkeret típusa** mezőben.
+    * Be **lehet** **állítani** a szabadszöveges számla feladását, ha hiba történik a Kinnlevőségek paraméterei lap Frissítések lapján (**Kinnlevőségek > Kinnlevőségek > Kinnlevőségek paramétereinek beállítása).** Válassza **az Igen** **lehetőséget** a szabadszöveges számlák feladásának megállítása az első hibaparaméteren, ha hiba esetén leállítja a szabadszöveges számlák feladását. Ha kötegelt feladást ad fel, **a** hiba leállítja a feladást, és a köteg állapota Hiba lesz. Ha ez a beállítás nincs bejelölve, akkor a feladási folyamat kihagy egy feladási hibát jelzett számlát, és folytatja a további számlák feladását. Kötegelt feladás esetén a feladási hiba nem akadályozza meg a többi számla feladását. A köteg állapota Véget **ér**. A részletes feladási folyamat jelentés elérhető lesz ellenőrzésre a kötegelt feladatok előzményeiben.
     * Állítsa ezt az opciót **Igen** értékre a számla nyomtatásához.
     * Állítsa ezt az opciót **Igen** értékre a számla feladásához. Feladás nélkül is kinyomtathatja a számlát.
 
@@ -82,6 +83,12 @@ A sorok másolása után módosíthatja az adatokat, szükség szerint.
 Szabadszöveges számla sablonól létrehozása is lehetséges. Az **Új sablonból** kiválasztásakor a **Számla** lapon ki lehet választani a sablon nevét és az új szabadszöveges számlához kapcsolódó vevőszámlát. Alapértelmezett értékek, például a fizetési feltételek és a fizetési mód kitölthető a vevőtől, vagy a sablonnal mentett értékek is használhatók.
 
 Ekkor létrejön a szabadszöveges számla, és igény szerint szerkesztheti az értékeket.
+
+## <a name="resetting-the-workflow-status-for-free-text-invoices-from-unrecoverable-to-draft"></a>A szabadszöveges számlákra vonatkozó munkafolyamat állapotának helyreállítása Helyreállíthatatlan állapotról Tervezet állapotra
+A helyreállíthatatlan hiba miatt leállított munkafolyamat-példány **Helyreállíthatatlan** munkafolyamat-állapotot kap. Ha egy szabadszöveges **vevői** számla munkafolyamatának állapota nem állítható vissza, **·** **a** Munkafolyamat-műveletek visszahívása lehetőség választásával visszaállíthatja Vázlat állapotúra. Ezután szerkesztheti a vevői szabadszöveges számlát. Ez a funkció akkor használható, **·** **ha** a Szolgáltatáskezelési lapon be van kapcsolva a Szabadszöveges számlák munkafolyamat-állapotának visszaállítása Helyreállíthatatlan értékről Vázlat paraméterre.
+
+A **Munkafolyamat-előzmények** oldal segítségével visszaállíthatja a munkafolyamat állapotát **Tervezet** értékre. Ezt a lapot a Szabadszöveges **számla** **vagy a Munkafolyamat > Lekérdezések > megnyithatja.** A munkafolyamat állapotának **Tervezet** értékre való visszaállításához válassza ki a **Visszahívás** lehetőséget. A munkafolyamat állapotát **Vázlat** **·** **·** **állapotra** is visszaállíthatja, ha a Szabadszöveges számla lapon vagy a Minden szabadszöveges számla lapon a Visszahívás műveletet válassza. Miután a munkafolyamat állapota visszaáll **a** Vázlat állapotra, elérhetővé válik szerkesztésre **a Szabadszöveges számla oldalon**.
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

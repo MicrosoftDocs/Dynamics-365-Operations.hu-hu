@@ -15,21 +15,20 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 86322fdf14bdefb5c9d4793a69e95ca913843e53
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
-ms.translationtype: HT
+ms.openlocfilehash: d8f0d91667d22ddd1dd7131ca3d03bb2fa70659c
+ms.sourcegitcommit: 1819a11ae22019f1de6991d233c1c51e9950d7a3
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087524"
+ms.lasthandoff: 03/18/2022
+ms.locfileid: "8457451"
 ---
 # <a name="whats-new-or-changed-in-human-resources"></a>Újdonságok és változások a Human Resources szolgáltatásban
 
 > [!IMPORTANT]
-> Az ebben a témakörben említett funkciók jelenleg önállóan érhetők el az ügyfelek számára Dynamics 365 Human Resources. A funkciók egy része vagy mindegyike a Finance 10.0.25-ös kiadása után elérhető lesz a Finance infrastruktúra egy jövőbeli kiadásának részeként.  
+> Az ebben a témakörben említett funkciók jelenleg önálló vevők számára érhetők el Dynamics 365 Human Resources. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.25-ös kiadása után.  
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A Microsoft Dynamics 365 Human Resources szolgáltatáshoz új kiadást biztosítunk kéthetente. Az itt található témakörök ismertetik az egyes kiadások által végrehajtott módosításokat.
 
 Ha további tájékoztatást szeretne kapni a hamarosan megjelenő szolgáltatásokról, illetve a Human Resources szolgáltatás frissítési folyamatáról, olvassa el a következő cikkeket: 
 

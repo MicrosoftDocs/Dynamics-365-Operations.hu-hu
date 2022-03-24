@@ -2,7 +2,7 @@
 title: Újdonságok és változások a Warehouse Management mobilalkalmazásban
 description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új és módosult funkcióit ismerteti.
 author: Mirzaab
-ms.date: 02/21/2022
+ms.date: 03/11/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: b146fb12f89559efcb3b0973b0dd1ce9b98ffe2a
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
-ms.translationtype: HT
+ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
+ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384371"
+ms.lasthandoff: 03/15/2022
+ms.locfileid: "8418640"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Újdonságok és változások a Warehouse Management mobilalkalmazásban
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új funkcióit, hibajavításait, fejlesztéseit és ismert hibáit ismerteti.
+
+## <a name="version-20190"></a>2.0.19.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+
+- Az általános adat lekérdezési folyamat tovább tökéletesített.
+- A munkalista és a cikk-lekérdezési **·** **lapokon javítva lett a probléma javítása**.
+- Csökkentett elemfelhasználás.
+- A rendszer eltávolította a munkakártyák mezői számának korlátozását.
+- A munkakártyák magasságát úgy beállította, hogy mindegyiknek ugyanaz a mérete, függetlenül attól, hogy hány mező van az egyes kártyákban.
+- Javítva egy olyan hiba, amely miatt a vonalkódok szóköz karaktereit levágná a alkalmazás.
+- Hozzáadta **a Gomb stílusbeállítást**, így minden eszköztípus esetében felcserélheti a nézetet a gombnézet és a gombnézet között.
+- Kijavított különféle problémák, amelyek az alkalmazás összeomlódását okozhatják.
+- A fókusz automatikus beállítása az egyéni oldalak első szövegmezőjára.
+- A kisegítő lehetőségek javításai, amelyek a kisegítő lehetőségek, az ellentét, a kísérőszöveg és a hiányzó helyőrző szövegek javítására használhatók.
 
 ## <a name="version-20170"></a>2.0.17.0-s verzió
 

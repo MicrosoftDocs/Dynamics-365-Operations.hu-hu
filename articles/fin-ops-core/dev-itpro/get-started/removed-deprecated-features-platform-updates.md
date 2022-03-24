@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve amelyek a pénzügyi és műveleti alkalmazások platformfrissítései során tervezett eltávolításra vannak tervezve.
 author: sericks007
-ms.date: 03/03/2022
+ms.date: 03/08/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 6b4c514d34e4afbaac4afabed6865496747c0411
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
-ms.translationtype: HT
+ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
+ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384720"
+ms.lasthandoff: 03/08/2022
+ms.locfileid: "8396549"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>A platform eltávolított vagy elavult funkciói
 
@@ -31,6 +31,18 @@ Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, ill
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
 A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük a Pénzügyi és műveleti alkalmazások egyes verzióiban módosult vagy eltávolított objektumokat.
+
+## <a name="feature-removal-effective-march-14-2022"></a>A szolgáltatás eltávolítása 2022. március 14-én hatályos
+
+### <a name="xslt-scripting-in-data-management"></a>XSLT-parancsfájlok az Adatkezelésben
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az XSLT parancsfájlok használata az Adatkezelésben elavult, így javítható a biztonság és az adatok védelme a Pénzügy és műveletek alkalmazáson belül.  |
+| **Felváltotta másik szolgáltatás?**   | Nem. A vevőknek és az isV-knek érdemes megfontolni, hogy XSLT-parancsfájlok használata esetén az X++ nyelv alapján újra legyen edzve a megoldásuk. |
+| **Érintett területek**         | A Pénzügy és a Műveletek alkalmazás. |
+| **Telepítési beállítás**              | Mind. |
+| **Állapot**                         | Elavult – a tervezett eltávolítás dátuma 2022. március 14.<br><br>Kivétel: AZ XLST parancsfájlt jelenleg használó vevők. A verzió a 10.0.30-as vagy újabb verzióra való frissítésig továbbra is használható. A kivétellel értesítő vevők értesítést kaptak az Microsoft 365 Adminisztrációs központban elérhető Üzenetközpontban. |
 
 ## <a name="feature-removal-effective-october-2021"></a>2021. októbertől hatályos funkcióeltávolítás
 

@@ -2,41 +2,40 @@
 title: Feladott naplóbejegyzések naplózása
 description: Az eljárás bemutatja, hogyan naplózhatók a feladott naplóbejegyzések.
 author: aprilolson
-ms.date: 08/09/2019
+ms.date: 03/09/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerParameters, SysQueryForm
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 519431684cd26d566ae4c9dd75010d5c98881b602681211908c0c70215448fea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: HT
+ms.openlocfilehash: 8d8fca167563b14c825ebe29874c6488ddfb4d9a
+ms.sourcegitcommit: 06acdfbccd7bd213a2397ea7b85d104f01914437
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6738455"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8400875"
 ---
 # <a name="journalize-posted-journal-entries"></a>Feladott naplóbejegyzések naplózása
 
 [!include [banner](../../includes/banner.md)]
 
-Az eljárás bemutatja, hogyan naplózhatók a feladott naplóbejegyzések. Ez az eljárás az USMF bemutatócéget használja.
+A főkönyvben a naplózási folyamat segítségével csoportosítani és jelenteni lehet a feladott bizonylatbejegyzéseket a főkönyvben. A megadott feltételek alapján a feldolgozás létrehozza azon **bizonylatok** listáját, amelyek egyedi számsorozatot és hivatkozásként a főkönyvi napló számát használják.
 
-1. A **Navigációs panelen** válassza a **Modulok > Főkönyv > Főkönyv beállítás > Főkönyv paraméterei** lehetőséget.
-2. A **Bővített főkönyvnapló** mező értéke lehet Igen vagy Nem. Ha Igen, akkor a kapott jelentés eltérő lesz.
-3. Válassza ki, hogy az időszak lezárható-e, ha a naplózási folyamatot még nem futtatták le. Ha a megadott érték Igen, az időszakot nem lehet lezárni mindaddig, amíg az adott időszakra a naplózási folyamat be nem fejeződött.  
+A következő lépések szerint naplózhatja a feladott naplóbejegyzéseket. Ez az eljárás az **USMF bemutatóadat-vállalatot** használja.
+
+1. Menjen a **Főkönyv** \> **Főkönyv beállítás** \> **Főkönyv paraméterei** pontra.
+2. A Kiterjesztett főkönyvi **napló** mezőben válasszon ki egy értéket. Ha az Igen lehetőséget **választja**, a jelentés kimenete eltérő lesz.
+3. Válassza ki, hogy az időszak lezárható-e, ha a naplózási folyamatot még nem futtatták le. Ha az Igen **lehetőséget** választja, az időszakot nem lehet lezárni, amíg az adott időszak naplózási folyamata be nem fejeződött.
 4. Zárja be a lapot.
-5. Nyissa meg a **Navigációs ablakban** a **Modulok > Főkönyv > Időszakos feladatok >Naplózás** elemet.
-6. Kattintson a **Szűrő** parancsra.
-7. Jelölje ki a sort a megadni kívánt szűrőfeltételekkel.
-8. A **Feltételek** mezőben adja meg vagy válassza ki a szűrőfeltételeket.
-9. Kattintson az **OK** gombra a szűrőoldal bezárásához.
-10. Kattintson az **OK** gombra a naplózási folyamat elindításához. A folyamat befejezése után jelentés készül.  
-
-
+5. Menjen a Főkönyv **időszakos** \> **feladatai –** \> **Naplózás,** és válassza a Szűrő **lehetőséget.**
+6. Válassza ki a definiálni kívánt szűrési feltételek sorát.
+7. A Feltételek **mezőben** adja meg vagy válassza ki a szűrési feltételeket.
+8. Válassza az **OK** lehetőséget az oldal bezárásához.
+9. A **naplózási folyamat az OK** gombra való beállításának kiválasztásával indítódik el. A folyamat befejezése után létrejön egy jelentés.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

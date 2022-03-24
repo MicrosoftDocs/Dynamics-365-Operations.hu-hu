@@ -2,7 +2,7 @@
 title: Vevői számla létrehozása
 description: Egy értékesítési rendeléshez kiállított vevői számla az értékesítéshez kapcsolódó váltó, amelyet a szervezet egy vevőnek ad.
 author: ShivamPandey-msft
-ms.date: 02/01/2022
+ms.date: 03/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: d408ca5265802cf17a53dd5cb004f707f6f7855b
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
-ms.translationtype: HT
+ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
+ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087423"
+ms.lasthandoff: 03/07/2022
+ms.locfileid: "8392911"
 ---
 # <a name="create-a-customer-invoice"></a>Vevői számla létrehozása
 
@@ -43,22 +43,22 @@ További tudnivalók:
 
 A **pro forma számla** olyan számla, amely a tényleges számla mennyiségeinek becsléseként készül el a számla feladása előtt. Pro forma számlát értékesítési rendeléshez kiadott vevői és szabadszöveges számlához is ki lehet nyomtatni.
 
-## <a name="using-sales-order-customer-invoice-data-entities"></a>Értékesítési rendelés ügyfélszámla adat entitások használata
-Adatentitások segítségével importálhat és exportálhat egy vevői számlával kapcsolatos információkat egy értékesítési rendeléshez. Az értékesítési számla fejlécében és az értékesítési számla soraiban lévő információkhoz különböző entitások tartoznak.
+## <a name="using-sales-order-customer-invoice-data-entities"></a>Értékesítési rendelés vevői számlaadat-entitások használata
+Az adatentitások segítségével lehet értékesítési rendeléshez kapcsolódó vevői számlával kapcsolatos adatokat importálni és exportálni. Az értékesítési számla fejlécében és az értékesítési számla sorában különböző entitások vannak az adatokra vonatkozóan.
 
-A következő entitások állnak rendelkezésre az értékesítési számla fejlécében található információkhoz:
+Az értékesítési számla fejlécének adataihoz a következő entitások érhetők el:
 
-- **Értékesítési számla napló fejléce** entitás (SalesInvoiceJournalHeaderEntity)
-- **Értékesítési számla fejlécek V2** entitás (SalesInvoiceHeaderV2Entity)
+- **Értékesítési számlanapló fejlécentitása** (SalesInvoiceJournalHeaderEntity)
+- **Értékesítési számlafejlécek V2** entitás (SalesInvoiceHeaderV2Entity)
 
-Javasoljuk, hogy használja a **Értékesítési számla napló fejléce** entitást, mert hatékonyabb élményt nyújt az értékesítési fejlécek importálásához és exportálásához. Ez az entitás nem tartalmazza a **A forgalmi adó összege** (INVOICEHEADERTAXAMOUNT) oszlopban, amely az értékesítési számla fejlécében szereplő forgalmi adó értékét jelöli. Ha az üzleti szcenárió megköveteli ezeket az információkat, használja a **Értékesítési számla fejlécek V2** entitás az értékesítési számla fejléc információinak importálására és exportálására.
+Javasoljuk, hogy az **értékesítési** számlanapló fejlécentitását használja, mert így jobb tapasztalatokat nyújt az értékesítési fejlécek importálása és exportálása során. Ez az entitás nem tartalmazza az **Áfa** összege (INVOICEHEADERTAMOUNT) oszlopot, amely az értékesítési számla fejlécében szereplő áfaértéknek megfelelő. Ha az üzleti helyzet megköveteli ezt az információt, **az értékesítési számla fejléce V2** entitás használatával importálhatja és exportálhatja az értékesítési számla fejlécének adatait.
 
-A következő entitások érhetők el az értékesítési számlasorok információihoz:
+Az értékesítési számlasorok adataihoz a következő entitások érhetők el:
 
-- **Ügyfélszámla sorai** entitás (BusinessDocumentSalesInvoiceLineItemEntity)
-- **Értékesítési számla sorai V3** entitás (SalesInvoiceLineV3Entity)
+- **Vevői számlasorok** entitása (BusinessDocumentSalesInvoiceLineItemEntity)
+- **Értékesítési számlasorok V3** entitás (SalesInvoiceLineV3Entity)
 
-Amikor meghatározza, hogy melyik sor entitást használja az exportáláshoz, fontolja meg, hogy a teljes vagy a növekményes leküldést használja-e. Ezenkívül vegye figyelembe az adatok összetételét. A **Értékesítési számla sorai V3** Az entitás összetettebb forgatókönyveket is támogat (például leképezés a készletmezőkre). Támogatja a teljes lenyomású exportálási forgatókönyveket is. Növekményes lökésekhez javasoljuk, hogy használja a **Ügyfélszámla sorai** entitás. Ez az entitás sokkal egyszerűbb adatösszetételt tartalmaz, mint a **Értékesítési számla sorai V3** entitás, és előnyben részesítjük, különösen akkor, ha nincs szükség a készletmező integrációjára. A vonal entitások közötti leképezési támogatásbeli különbségek miatt a **Ügyfélszámla sorai** Az entitás általában gyorsabban teljesít, mint a **Értékesítési számla sorai V3** entitás.
+Amikor az exportáláshoz használt sorentitást határozza meg, fontolja meg, hogy teljes vagy növekményes küldés lesz használva. Ezenkívül vegye figyelembe az adatok összetételét is. Az Értékesítési **számla sorai V3** entitás összetettebb helyzetek alkalmazását támogatja (például megfeleltetés a készletmezőknek). Támogatja a teljes küldésű exportálási eseteket is. A növekményes küldésnél javasoljuk, hogy használja a Vevői **számlasorok entitást**. Ez az entitás egy **mennyivel egyszerűbb adatösszetételt tartalmaz, mint az Értékesítési számla sorai V3** entitás, és különösen akkor, ha nincs szükség készletmező-integrációra. A sorentitások közötti hozzárendelési támogatás eltérései miatt **a** vevői számlasorok **entitás általában gyorsabb teljesítményt nyújt, mint az értékesítési számlasorok V3 entitása**.
 
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-sales-orders"></a>Vevői számla feladása és nyomtatása az értékesítési rendelések alapján
 Ezzel az eljárással olyan számlát hozhat létre, amely értékesítési rendelésen alapul. Erre akkor lehet szükség, ha az áruk vagy a szolgáltatások szállítása előtt kíván számlázni az ügyfélnek. 
@@ -82,6 +82,9 @@ Tekintse meg az **Összes értékesítési rendelés** listaoldalon az értékes
 Ezt a folyamatot akkor kell használni, amikor egy vagy több értékesítési rendelés is számlázásra kész, és azokat össze kívánja vonni egyetlen számlába. 
 
 Több számlát is kiválaszthat az **Értékesítési rendelés** listaoldalon, és ezután a **Számlák létrehozása** lehetőséggel konszolidálhatja azokat. A **Számla feladása** lapon módosíthatja a **Rendelés összesítése** beállítást a rendelési szám (ha egy értékesítési rendeléshez több szállítólevél tartozik) vagy a számlaszám (ha egyetlen számlához több értékesítési rendelés tartozik) alapján történő összegzéshez. Használja az **Elrendezés** gombot az értékesítési rendelések összevonásához egyetlen számlába – a **Rendelés összesítése** beállítás alapján.
+
+## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Feladás a bevételi számlára az olyan értékesítésirendelés-sorokhoz, amelyekhez nem volt ár
+A nem árhoz **kötött** **értékesítésirendelés**-sorok bevételi számláját a főkönyvben frissítheti. Az adatok **beállítását** **·** **vagy megtekintéséhez a Nulla árú értékesítési rendelési számlasorok Feladása számlára paramétert kell beállítania a Kinnlevőségek paraméterei oldal Főkönyv és áfa lapján.** (**Kinnlevőségek > Beállítása > Kinnlevőségek paraméterei)** Válassza az **Igen** lehetőséget, ha frissíteni kell **az** eladási rendelési számlasorok bevételi számláját, ha nincs ár. Bevételi számla definiálása az **Értékesítési** rendelés számladefiníció lapján, **a** Készletfeladás paraméterlapon található. Ha ez a beállítás nincs bejelölve, az árinformációt nem adó sorok nem adnak fel a Bevétel **számlára**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>További beállítások a feladás módjának megváltoztatásához
 A következő mezők esetében módosul a viselkedés a feladási folyamat során.

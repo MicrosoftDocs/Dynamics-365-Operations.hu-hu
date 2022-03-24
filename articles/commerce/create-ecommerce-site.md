@@ -2,7 +2,7 @@
 title: E-kereskedelmi webhely létrehozása
 description: Ez a témakör bemutatja azokat a lépéseket és információkat, amelyek egy új e-kereskedelmi webhely létrehozásához szükségesek Dynamics 365 Commerce webhelyépítőben.
 author: bicyclingfool
-ms.date: 03/04/2022
+ms.date: 03/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 5e451b1c95c3e26d1292e7b8300b62af43c81f2f
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
-ms.translationtype: HT
+ms.openlocfilehash: 37734e2ceea3a50c70a2f7945329d4a9cf660cc6
+ms.sourcegitcommit: 9c19898e1f41495f804c7f07e2636b53a098c4c1
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388211"
+ms.lasthandoff: 03/10/2022
+ms.locfileid: "8402775"
 ---
 # <a name="create-an-e-commerce-site"></a>E-kereskedelmi webhely létrehozása
 
@@ -70,6 +70,14 @@ A webhelyet a következő lépések szerint nevezheti át a webhelyre a webhelys
 1. A webhelylista nézet megnyitásához válassza **a Webhely kapcsolóját** a jobb felső sarokban, majd **válassza a Helyek kezelése lehetőséget**. 
 1. Jelölje be az átnevezni kívánt webhely melletti jelölőnégyzetet, **majd válassza az Átnevezés** lehetőséget a parancssorban.
 1. Adja meg **az új webhely nevét az Új webhely neve** párbeszédpanelen, majd válassza az **OK gombra.** A webhelylista frissülni fog, hogy a hely új neve megjelenik.
+
+## <a name="delete-a-site"></a>Hely törlése
+
+Ha törölni szeretne egy webhelyet a webhelyszerkesztőből, kövesse ezeket a lépéseket.
+
+1. A webhelylista nézet megnyitásához válassza **a Webhely kapcsolóját** a jobb felső sarokban, majd válassza **a Helyek kezelése lehetőséget**.
+1. Válassza ki a törölni kívánt webhelyet, majd válassza a Törlés **lehetőséget** a parancssorból.
+1. A Törlés **párbeszédpanelen \<site name\>** adja meg a webhely nevét, majd válassza a Törlés **lehetőséget**.
 
 ## <a name="additional-resources"></a>További erőforrások
 

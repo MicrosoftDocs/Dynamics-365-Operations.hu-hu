@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: fd0fdd677824db823f9bc42f0ad1bdd90cf3b16d
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344978"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8408015"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Tervezési optimalizálás igazítási elemzése
 
@@ -58,7 +58,7 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | Funkció | Felsorolt probléma | Magyarázat | Várható elérhetőség |
 | --- | --- | --- | --- |
 | Műveletek | Lefedettségi csoportok, amelyeknél engedélyezve van a Műveletek kiszámítása: _\#_ | Ez a funkció függőben van. A program jelenleg a tervezés optimalizálása engedélyezése esetén nem hozza létre a műveleteket az Alaptervezés során, a beállítástól függetlenül. A műveletek fő célja a meglévő sorrend változásainak javaslata. Annak megállapítása, hogy a műveletek aktívan alkalmazva vannak-e az üzleti folyamatok részeként, vagy a rendelésekhez kapcsolódó késésleltetési információk elegendőek-e. | április 2022. |
-| Alapnaptárak | Az alapnaptárat használó naptárak: _\#_ | Ez a funkció függőben van. Jelenleg az alapnaptárat figyelmen kívül hagyja a program a tervezés optimalizálása funkciónál. Annak megállapítása, hogy szükség van-e az üzleti folyamatokhoz alapnaptárra, vagy a naptárban történő közvetlen beállítás elegendő. | április 2022. | 
+| Alapnaptárak | Az alapnaptárat használó naptárak: _\#_ | Ez a funkció már támogatott. | március 2022. | 
 | Kötegrendelkezési kódok | Nem nettósítható kötegelt alapintézkedések: _\#_ | Ez a funkció függőben van. A tervezés optimalizálása során a program figyelmen kívül hagyja a kötegrendelkezési kódokat. | 2022. októberi és újabb |
 | Ígérhető (CTP) | Alapértelmezett rendelési beállítások, amelyeknél a kiszállítási dátum ellenőrzése ígérhető: _\#_ | Ez a funkció függőben van. Jelenleg az ígérhető értéke figyelmen kívül marad, ha a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | Október 2022. |
 | Statikus dinamikus tervbe másolása | A statikus dinamikus tervbe való másolása engedélyezett az alaptervezési paramétereknél. | A tervezés optimalizálása a beállítástól függetlenül nem másolja át a statikus tervet a dinamikus tervbe. Általában ez a koncepció kevésbé fontos a Tervezési optimalizáció által biztosított gyorsaság és teljes regeneráció miatt. Ha két vagy több terv van használatban, akkor minden tervhez alaptervezést kell indítani. | Október 2022. |

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: crytt
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: f9674bb68d7f577a6efdef3416d1731d743d0555
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: fd6ecb0b7bc1fcf85feab2588622a96cf43b6155
+ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087166"
+ms.lasthandoff: 03/12/2022
+ms.locfileid: "8407845"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Tervezési optimalizálás kiadási folyamata és kiadási előzmények
 
@@ -33,11 +33,12 @@ Mivel az értesítések nem jelennek meg, amikor a környezetben frissítik a Te
 
 | Változások | Funkciókezelés részletei | Kiadási dátumok |
 |---|---|---|
-| <p>Hozzáadott tervezési prioritási támogatás a gyártási rendelésekhez. | Elérhető a 10.0.25-ös verzióval a nevezett szolgáltatás részeként *Prioritásvezérelt MRP támogatás a tervezés optimalizálásához*. | 2021. november 12-18 |
-| <p>Általános teljesítmény-, minőség- és stabilitásjavítások. | Nincs szükség funkciókezelésre. | 2021. november 12-18 |
-| <p>Hozzáadott támogatás a folyamatidő-számítási képletekhez, a termelési útvonalhoz átfedéssel és a termelési műveletszámhoz a követelménytranzakciókhoz.</p><p>Továbbfejlesztett hibaüzenetek a termelés ütemezéséhez az időtúllépéssel, a kapacitás nem található és a ciklikus útvonallal kapcsolatban.</p><p>Fokozott következetesség a beérkezési dátumok és a kiadási dátumok kiszámításakor mind a tervezett, mind a rögzített rendeléseknél.</p><p>Általános teljesítmény-, minőség- és stabilitásjavítások. | Funkció neve: *Végtelen kapacitásütemezés a tervezési optimalizáláshoz* | 2021. október 22-27 |
-| <p>Támogatás hozzáadva a selejt százalékának figyelembevételéhez a feldolgozási idő kiszámításakor.</p><p>Támogatás hozzáadva a műveletszámhoz és az anyaghasználathoz az ütemezés során. | Funkció neve: *Végtelen kapacitásütemezés a tervezési optimalizáláshoz* | 2021. október 5-7 |
-| <p>Hozzáadott támogatás a termelési útvonal feladattípusokhoz: **Sor előtt**, **után**, és **Szállítási idő**.</p><p>Általános teljesítmény-, minőség- és stabilitásjavítások. | Funkció neve: *Végtelen kapacitásütemezés a tervezési optimalizáláshoz* | 2021. szeptember 25-30 |
+| <p>Általános teljesítmény-, minőség- és stabilitásjavítások.<p>Tervezési optimalizálás központosított naptár karbantartása<p>Tervezési optimalizálási javaslatok a meglévő készlet optimalizálása érdekében | Nincs szükség funkciókezelésre. | 2022. március 7. 11. |
+| <p>A termelési rendelések tervezési prioritásának támogatása hozzáadva. | A 10.0.25-ös verzióban elérhető a *Tervezés optimalizálása prioritás által vezérelt MRP-támogatás nevű funkció részeként*. | 2021. november 12.18. |
+| <p>Általános teljesítmény-, minőség- és stabilitásjavítások. | Nincs szükség funkciókezelésre. | 2021. november 12.18. |
+| <p>A program támogatja a számítási képleteket, az átfedésben található termelési útvonalat és a követelménytranzakciók termelési műveletének számát.</p><p>Nem található továbbfejlesztett hibaüzenet a termelés ütemezéséhez az időtúllépés, a kapacitás és a ciklikus útvonal egymáshoz kapcsolódóan.</p><p>Jobb konzisztencia a tervezett rendelések és a visszaeső rendelések kézhezvételi dátumának és kiadási dátumának számításakor.</p><p>Általános teljesítmény-, minőség- és stabilitásjavítások. | Funkció neve: *Végtelen kapacitásütemezés a tervezési optimalizáláshoz* | 2021. október 22. 27. |
+| <p>Segítséget adott a selejtszázalék figyelembe venni a feldolgozási idő számításában.</p><p>Az ütemezés során a műveletszám és az anyagfelhasználás támogatással tért vissza. | Funkció neve: *Végtelen kapacitásütemezés a tervezési optimalizáláshoz* | 2021. október 5.7. |
+| <p>Hozzáadva a termelési útvonal feladattípusához: **Várakozás előtte**, **Várakozás utána** és **Szállítási idő**.</p><p>Általános teljesítmény-, minőség- és stabilitásjavítások. | Funkció neve: *Végtelen kapacitásütemezés a tervezési optimalizáláshoz* | 2021. szeptember 25.30. |
 | <p>Az alaptervek támogatása, ha a **Műveletek ütemezése** beállítása *Műveletek ütemezése*.</p><p>Az **Útvonalcsoportok** lapon tiszteletben tartja az **Aktiválás**, **Munkaidő** és **Kapacitás** jelölőmezőket az **Útvonal/munka típusa** vagy *Beállítás* vagy *Folyamat* értékkel rendelkező sorokhoz. </p><p>Általános teljesítmény-, minőség- és stabilitásjavítások. | <p>A műveltek ütemezése a funkciókezelésben a 10.0.20 verziótól elérhető.</p><p>Funkció neve: *Végtelen kapacitásütemezés a tervezési optimalizáláshoz*</p>  | 2021. szeptember 9–17. |
 | Általános teljesítmény-, minőség- és stabilitásjavítások. | Nincs szükség funkciókezelésre. | 2021. augusztus 25–30. |
 | <p>A tervezett megrendelésekhez hozzáadtuk **az átfutási idő** mezőt.</p><p>Általános teljesítmény-, minőség- és stabilitásjavítások.</p> | Nincs szükség funkciókezelésre. | 2021. augusztus 12–17. |
