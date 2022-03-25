@@ -6,7 +6,7 @@
           href: index.md
         - name: Újdonságok és változások
           items:
-            - name: Újdonságok és változások a Finance and Operations alkalmazásaiban
+            - name: Újdonságok és változások a pénzügyi és műveleti alkalmazásokban
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Újdonságok és változások a Finance szolgáltatásban
               items:
@@ -1522,13 +1522,17 @@
                       items:
                         - name: Több adószám
                           href: localizations/emea-multiple-vat-registration-numbers.md
-                        - name: Jelentés több adószámhoz
+                        - name: Jelentés több áfaregisztrációhoz
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
-                        - name: Osztrák jelentés
+                        - name: Osztrák jelentések
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-aut-vat-declaration-austria.md
-                        - name: Franciaországi jelentés
+                        - name: Dán jelentések
+                          items:
+                            - name: Áfabevallás
+                              href: localizations/emea-dnk-vat-declaration-denmark.md
+                        - name: Franciaországi jelentések
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
@@ -2344,6 +2348,8 @@
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
                 - name: EU értékesítési lista
                   href: localizations/emea-deu-eu-sales-list.md
+                - name: Áfabevallás
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Magyarország
               items:
                 - name: Magyarország – áttekintés
@@ -3566,13 +3572,13 @@
                   href: localizations/apac-tha-average-vat-for-purchase-transactions.md
                 - name: Adózási fiókiroda dimenziói
                   href: localizations/apac-tha-tax-branch-dimensions.md
-                - name: Kimeneti áfával kapcsolatos jelentés
+                - name: Áfajelentések
                   href: localizations/apac-tha-sales-vat-report.md
                 - name: Adóelőleg
                   href: localizations/apac-tha-withholding-tax.md
             - name: Egyesült Arab Emírségek (UAE)
               items:
-                - name: A hozzáadottérték-adó (ÁFA) beállítása és jelentése
+                - name: Általános forgalmi adó (ÁFA) beállítása és jelentése
                   href: localizations/uae-vat-setup-reporting.md
             - name: Egyesült Királyság
               items:
@@ -4285,9 +4291,13 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/finance/toc.json
                     - name: Adatforrásokban történő hibakeresés
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/finance/toc.json
+                - name: Adatmodellek konfigurálása
+                  items:
+                    - name: ER-adatmodellekhez tartozó paraméterezett hívások támogatása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/finance/toc.json
                 - name: Modell-hozzárendelések konfigurálása
                   items:
-                    - name: Országkörnyezet-függő ER-modell leképezések konfigurálása
+                    - name: Országkörnyezet-függő ER-modell-leképezések konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/finance/toc.json
                     - name: ER-modell leképezés kezelése külön ER-konfigurációkban
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/finance/toc.json
@@ -4353,8 +4363,10 @@
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/dynamics365/finance/toc.json
                     - name: Műveletfüggő célok konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/er-action-dependent-destinations.md?toc=/dynamics365/finance/toc.json
-                    - name: Nyomtatáskezelési rekord-specifikus ER-célpontok konfigurálása
+                    - name: Nyomtatáskezelési rekord-specifikus célpontok konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/er-named-destinations.md?toc=/dynamics365/finance/toc.json
+                    - name: Új ER-megoldás tervezése ZPL-címkék nyomtatásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-design-zpl-labels.md?toc=/dynamics365/finance/toc.json
                 - name: Egy ER-formátumra mutató hivatkozás beállítása
                   href: ../fin-ops-core/dev-itpro/analytics/er-extended-format-lookup.md?toc=/dynamics365/finance/toc.json
                 - name: Létrehozott jelentések automatikus ellenőrzése

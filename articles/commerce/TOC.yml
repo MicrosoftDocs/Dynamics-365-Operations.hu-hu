@@ -1016,15 +1016,17 @@
                   href: manage-csp.md
                 - name: Webes esemény jellegű tevékenység gyűjtésének kikapcsolása
                   href: web-activity-opt-out.md
-                - name: Mértékegységre vonatkozó beállítás alkalmazása
+                - name: Mértékegységbeállítások alkalmazása
                   href: unit-of-measure.md
-                - name: Termékdimenziók megjelenítési beállításainak alkalmazása
+                - name: Megjelenítési beállítások alkalmazása termékdimenziókra
                   href: dimension-settings.md
+                - name: E-kereskedelem karbantartási üzemmódjának engedélyezése és aktiválása
+                  href: enable-maintenance-mode.md
             - name: Saját webhelytartalom kezelése
               items:
                 - name: A tartalom hozzáadásának módjai
                   href: add-manage-content.md
-                - name: Oldal modellszószedete
+                - name: Oldalmodell szószedete
                   href: page-elements-overview.md
                 - name: Állapotok és életciklus dokumentálása
                   href: document-states-overview.md
@@ -2100,9 +2102,13 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Adatforrásokban történő hibakeresés
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
+                - name: Adatmodellek konfigurálása
+                  items:
+                    - name: ER-adatmodellekhez tartozó paraméterezett hívások támogatása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/commerce/toc.json
                 - name: Modell-hozzárendelések konfigurálása
                   items:
-                    - name: Országkörnyezet-függő ER-modell leképezések konfigurálása
+                    - name: Országkörnyezet-függő ER-modell-leképezések konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/commerce/toc.json
                     - name: ER-modell leképezés kezelése külön ER-konfigurációkban
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/commerce/toc.json
@@ -2760,6 +2766,8 @@
                           href: e-commerce-extensibility/clone-starter-module.md
                         - name: Moduldefiníció kiterjesztése
                           href: e-commerce-extensibility/extend-module-definition.md
+                        - name: Modultár statikus sztringjeinek módosítása
+                          href: e-commerce-extensibility/change-module-library-strings.md
                     - name: Adatműveletek
                       items:
                         - name: Adatművelet-felülbírálások
@@ -2774,6 +2782,8 @@
                           href: e-commerce-extensibility/override-theme-component.md
                         - name: Téma kiterjesztése alaptémából
                           href: e-commerce-extensibility/extend-theme.md
+                        - name: Témamodul beállításainak módosítása
+                          href: e-commerce-extensibility/change-theme-module-strings.md
                 - name: Csomagolás és telepítés
                   items:
                     - name: Csomagok konfigurálása és telepítése online környezetbe
@@ -2798,6 +2808,8 @@
                           href: e-commerce-extensibility/page-caching.md
                         - name: Adatművelet-példány gyorsítótára
                           href: e-commerce-extensibility/instance-cache.md
+                        - name: Modul CSS-optimalizációja
+                          href: e-commerce-extensibility/module-css-optimization.md
                     - name: Telemetria és elemzések
                       items:
                         - name: Telemetria-naplózó

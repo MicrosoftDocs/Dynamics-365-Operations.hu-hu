@@ -6,7 +6,7 @@
           href: index.md
         - name: Újdonságok és változások
           items:
-            - name: Újdonságok és változások a Finance and Operations alkalmazásaiban
+            - name: Újdonságok és változások a pénzügyi és műveleti alkalmazásokban
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
             - name: A Supply Chain Management újdonságai és változásai
               items:
@@ -747,13 +747,37 @@
                   href: cost-management/simulate-cost-changes-costing-version-planned-costs.md
                 - name: Cikkárak összehasonlítása tárolási jelentés
                   href: cost-management/compare-item-price.md
+            - name: Költségszámítási módszertanok
+              items:
+                - name: Mozgóátlagon alapuló önköltségi ár
+                  href: cost-management/running-average-cost-price.md
+                - name: Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként
+                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
+                - name: FIFO tényleges értékkel és jelöléssel
+                  href: cost-management/fifo-physical-value-marking.md
+                - name: LIFO dátum tényleges értékkel és jelöléssel
+                  href: cost-management/lifo-date-physical-value-marking.md
+                - name: LIFO tényleges értékkel és jelöléssel
+                  href: cost-management/lifo-physical-value-marking.md
+                - name: Súlyozott átlag tényleges értékkel és jelöléssel
+                  href: cost-management/weighted-average-physical-value-marking.md
+                - name: Súlyozott átlag dátuma tényleges értékkel és jelöléssel
+                  href: cost-management/weighted-average-date.md
+                - name: Mozgóátlag
+                  href: cost-management/moving-average.md
+                - name: Mozgóátlag – tartalék költségsorrend
+                  href: cost-management/moving-average-fallback.md
             - name: Készletkönyvelés
               items:
+                - name: Fizikai és pénzügyi frissítések
+                  href: cost-management/physical-financial-updates.md
+                - name: Tényleges értékkel együtt
+                  href: cost-management/include-physical-value.md
                 - name: Költségobjektumok
                   href: cost-management/cost-object.md
                 - name: Költségobjektum egyenlegének megtekintése
                   href: cost-management/tasks/view-cost-object-balance.md
-                - name: Készletkimutatás és költségobjektumonkénti KPI megtekintése
+                - name: Készletkimutatás és KPI megtekintése költségobjektumonként
                   href: cost-management/tasks/view-inventory-statement-kpi-cost-object.md
                 - name: Költségbejegyzések
                   href: cost-management/cost-entries.md
@@ -761,33 +785,11 @@
                   href: cost-management/tasks/view-cost-entries-cost-object.md
                 - name: Költségcsoportok
                   href: cost-management/cost-groups.md
-                - name: FIFO tényleges értékkel és jelöléssel
-                  href: cost-management/fifo-physical-value-marking.md
-                - name: Tényleges értékkel együtt
-                  href: cost-management/include-physical-value.md
                 - name: Készletobjektum-értékek
                   href: cost-management/physical-quantity.md
-                - name: LIFO dátum tényleges értékkel és jelöléssel
-                  href: cost-management/lifo-date-physical-value-marking.md
-                - name: LIFO tényleges értékkel és jelöléssel
-                  href: cost-management/lifo-physical-value-marking.md
-                - name: Mozgóátlag
-                  href: cost-management/moving-average.md
-                - name: 'Mozgóátlag, tartalék költségsorrend'
-                  href: cost-management/moving-average-fallback.md
-                - name: Fizikai és pénzügyi frissítések
-                  href: cost-management/physical-financial-updates.md
-                - name: Mozgóátlagon alapuló önköltségi ár
-                  href: cost-management/running-average-cost-price.md
-                - name: Mozgóátlagon alapuló önköltségi ár követése készletdimenziónként
-                  href: cost-management/track-running-average-cost-per-inventory-dimension.md
-                - name: Dátum szerinti súlyozott átlag
-                  href: cost-management/weighted-average-date.md
-                - name: Súlyozott átlag tényleges értékkel és jelöléssel
-                  href: cost-management/weighted-average-physical-value-marking.md
                 - name: Készlet zárása
                   href: cost-management/inventory-close.md
-                - name: Az aktuális készlet költségértékeinek korrekciója
+                - name: Az aktuális készlet költségértékeinek helyesbítése
                   href: cost-management/adjust-hand-inventory-cost-values.md
                 - name: Készletérték-jelentések
                   href: cost-management/inventory-value-report-storage.md
@@ -1431,9 +1433,13 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Adatforrásokban történő hibakeresés
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                - name: Adatmodellek konfigurálása
+                  items:
+                    - name: ER-adatmodellekhez tartozó paraméterezett hívások támogatása
+                      href: ../fin-ops-core/dev-itpro/analytics/er-data-model-parameterized-calls.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Modell-hozzárendelések konfigurálása
                   items:
-                    - name: Országkörnyezet-függő ER-modell leképezések konfigurálása
+                    - name: Országkörnyezet-függő ER-modell-leképezések konfigurálása
                       href: ../fin-ops-core/dev-itpro/analytics/er-country-dependent-model-mapping.md?toc=/dynamics365/supply-chain/toc.json
                     - name: ER-modell leképezés kezelése külön ER-konfigurációkban
                       href: ../fin-ops-core/dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/dynamics365/supply-chain/toc.json
@@ -3855,7 +3861,9 @@
               items:
                 - name: Warehouse mobile app
                   items:
-                    - name: Nem található a tanúsítvány elérési útjához tartozó megbízhatósági kapcsolatok alapja az alkalmazáskapcsolat beállításakor
+                    - name: Váratlan különbség a kérelem- és munkamenetadatok között a tesztelés során.
+                      href: troubleshooting/warehousing/request-session-data-difference.md
+                    - name: Nem található a tanúsítvány elérési útjához tartozó megbízhatósági horgonyzás az alkalmazáskapcsolat beállításakor
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Nem található a tanúsítvány elérési útjának megbízhatósági fixpontja a WMS-be történő frissítéskor és migráláskor
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md

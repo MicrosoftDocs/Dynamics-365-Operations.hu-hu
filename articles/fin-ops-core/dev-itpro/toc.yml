@@ -8,7 +8,7 @@
           href: index.md
         - name: Újdonságok és változások
           items:
-            - name: Újdonságok és változások a Finance and Operations alkalmazásaiban
+            - name: Újdonságok és változások a pénzügyi és műveleti alkalmazásokban
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Újdonságok és változások a Platformfrissítésekben
               items:
@@ -238,10 +238,12 @@
               href: data-entities/Azure-Data-Lake-GA-version-overview.md
             - name: Exportálás az Azure Data Lake-be bővítmény telepítése
               href: data-entities/configure-export-data-lake.md
-            - name: Finance and Operations alkalmazások az Azure Data Lake-ben
+            - name: Pénzügyi és műveleti alkalmazások az Azure Data Lake-ben
               href: data-entities/finance-data-azure-data-lake.md
             - name: Entitástár elérhetővé tétele Data Lake-alkalmazásként
               href: data-entities/entity-store-data-lake.md
+            - name: Az Exportálás Azure Data Lake-be szolgáltatás által generált üzleti események (előzetes verzió)
+              href: data-entities/Azure-Data-Lake-Generates-Biz-events.md
             - name: Adatok módosítása az Azure Data Lake-ben
               href: data-entities/Azure-data-lake-Change-feeds.md
         - name: Adatbázis-áthelyezési műveletek
@@ -1066,8 +1068,10 @@
                       href: data-entities/dual-write/currrency-decimal-places.md
                     - name: Az értékesítési rendelés állapotmezőihez tartozó leképezés beállítása
                       href: data-entities/dual-write/sales-status-map.md
-                    - name: Vállalatközi rendelések szűrése a Rendelések és a RendelésiSorok szinkronizálásának elkerülése érdekében
+                    - name: Vállalatközi rendelések szűrése a Rendelések és a Megrendelési sorok szinkronizálásának elkerülése érdekében
                       href: data-entities/dual-write/filtering-intercompany-orders.md
+                    - name: Kettős írású alkalmazás lebonyolítási megoldások eltávolítása
+                      href: data-entities/dual-write/uninstall-solutions.md
                 - name: A kettős írás kezelése
                   items:
                     - name: Entitás- és mezőleképezések testreszabása
