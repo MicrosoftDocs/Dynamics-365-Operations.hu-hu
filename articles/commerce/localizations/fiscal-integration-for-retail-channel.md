@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 46e0afd5a8cb692da56a7d5f261ca30d9b3aaa80
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
-ms.translationtype: HT
+ms.openlocfilehash: 00c68155088ff2aabbe2fe0c4f431b665aebcd0a
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388313"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462523"
 ---
 # <a name="fiscal-integration-overview-for-commerce-channels"></a>Commerce-csatornák pénzügyi integrációja – áttekintés
 
 [!include [banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 Ez a témakör a Dynamics 365 Commerce szolgáltatásban rendelkezésre álló pénzügyi integrációs lehetőségek áttekintése. 
 

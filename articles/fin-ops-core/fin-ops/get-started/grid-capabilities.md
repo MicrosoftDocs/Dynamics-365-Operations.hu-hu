@@ -2,7 +2,7 @@
 title: Rács funkciói
 description: Ez a témakör ismerteti a rács vezérlőelem számos erőteljes funkcióját. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 58a05f893549a8b9e2e5cb83d02475d0fb5b7277
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
-ms.translationtype: HT
+ms.openlocfilehash: 81577f54bd7fdc7d683c760dd4410f27da8ee1f0
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384440"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462792"
 ---
 # <a name="grid-capabilities"></a>Rácsfunkciók
 
@@ -151,7 +151,7 @@ Az Excelhez hasonlóan a felhasználók az oszlopban jelenleg látható tartalom
 
 A **Új rácsvezérlő** funkció elérhető közvetlenül a Funkciókezelésben bármilyen környezetben. Miután engedélyezte a funkciót a Funkciókezelésben, minden ezt követő felhasználói munkamenet az új rácsvezérlőt fogja használni. 
 
-Ez a funkció alapértelmezés szerint a 10.0.21-es verziótól be van kapcsolva, és a cél az, hogy kötelezővé váljon a 10.0.25-ös verzióban. 
+Ez a funkció alapértelmezés szerint a 10.0.21-es verzióból indul ki, és a cél az, hogy 2022. októberben kötelező legyen.  
 
 ## <a name="developer-opting-out-individual-pages-from-using-the-new-grid"></a>[Fejlesztő] Egyes oldalak elutasítása az új rács használatából 
 Ha a szervezet egy olyan oldalt észlel, amelyen problémák lépnek fel az új rács használata miatt, akkor egy API felület lehetővé teszi, hogy az egyes űrlapok használhassák a régi rácsvezérlőt, miközben a rendszer további részei az új rácsvezérlőt használják. Ha el szeretné utasítani az egyes oldalakat az új rácsból, adja hozzá a következő hívásfeladást `super()` az űrlap `run()` módjához.

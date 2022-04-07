@@ -1,7 +1,7 @@
 ---
 title: Cikkek fedezeti szabályainak meghatározása
 description: Ez az eljárás bemutatja, hogyan tud fedezeti szabályokat létrehozni és egy adott cikk fedezeti beállításait felülírni. Azt is bemutatja, hogyan kell megadni az alapértelmezett készletbeállításokat.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/01/2019
 ms.topic: business-process
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: ReqGroup, DefaultDashboard, EcoResProductDetailsExtended, EcoRes
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c3947c8a51facfb02012cc8e9a3ffd5887073bd9
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: bca0e1786adb08a7cd4795b49c974ab95183b1dd
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860613"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469322"
 ---
 # <a name="define-coverage-rules-for-items"></a>Cikkek fedezeti szabályainak meghatározása
 
@@ -114,6 +114,6 @@ Hozzon létre cikkfedezeti-szabályokat a következő lépések alapján:
 1. Válassza a **Mentés** lehetőséget.
 
 > [!NOTE]
-> Gyártott cikkek esetén a termelés átfutási idejét használja a rendszer, ha **nincs útvonal a** cikkhez. Ha a cikkhez van aktív útvonal társítva, az alaptervezés ütemezi a rendelést, és kiszámítja a dátumokat az erőforrások útvonal-időpontjai és kapacitása alapján (ha van ilyen).
+> Gyártott cikkek esetén a termelés átfutási **idejét** használja a rendszer, ha nincs útvonal a cikkhez. Ha a cikkhez van aktív útvonal társítva, az alaptervezés ütemezi a rendelést, és kiszámítja a dátumokat az erőforrások útvonal-időpontjai és kapacitása alapján (ha van ilyen).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

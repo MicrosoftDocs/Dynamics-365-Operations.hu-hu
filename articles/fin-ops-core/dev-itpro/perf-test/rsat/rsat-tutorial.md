@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: 2f31009424629221a8e4f130b0ec1879c6c6e3d4
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
+ms.openlocfilehash: e2273aefb98880a1ae746ef7ec65b4f2262f3560
+ms.sourcegitcommit: 49c97b0c94e916db5efca5672d85df70c3450755
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781963"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8492920"
 ---
 # <a name="regression-suite-automation-tool-tutorial"></a>Regression Suite Automation Tool-oktatóanyag
 
@@ -43,7 +43,7 @@ A következő példa bemutatja, hogyan használható ez a funkció annak ellenő
     5. A listában jelölje meg a kiválasztott sort.
     6. Ellenőrizze, hogy az **Összes rendelkezésre álló** mező értéke **411,0000000000000000**.
 
-2. Mentse a feladatrögzítést **fejlesztői felvételként**, és csatolja a tesztesetéhez az Azure Devopsban.
+2. A feladatrögzítés mentése fejlesztői rögzítésként, **és csatolása a** tesztesethez a következőben:Azure DevOps
 3. Adja hozzá a tesztesetet a tesztelési tervhez, és töltse be a tesztesetet a RSAT-be.
 4. Nyissa meg az Excel paraméterfájlt, és ugorjon a **TestCaseSteps** laphoz.
 5. Ha ellenőrizni kell, hogy az aktuális készlet mindig nagyobb-e, mint **0**, lépjen az **Összes rendelkezésre álló** ellenőrzése lépéshez, és módosítsa az **411** értéket **0** értékre. Módosítsa a **Kezelő** mező értékét egyenlőség jelről (**=**) nagyobb, mint (**\>**) jelre.
@@ -79,19 +79,19 @@ Miután lefutott a teszteset, az Excel-paraméterfájlban szereplő üzenetet a 
 
 Ez a funkció képernyőképeket készít a feladatrögzítés során végrehajtott lépésekről. Ez a ellenőrzés vagy hibakeresés céljából hasznos.
 
-- A funkció használatához az RSAT futtatása során felhasználói felülettel nyissa meg a **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\ Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
+- A funkció használatához az RSAT futtatása során felhasználói felülettel nyissa meg a **Microsoft.Dynamics.RegressionSuite.WindowsApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-- A funkció használatához az RSAT futtatása CLI-n keresztül (például Azure DevOps) nyissa meg a **Microsoft.Dynamics.ConsoleApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\ Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
+- A funkció használatához az RSAT futtatása CLI-n keresztül (például Azure DevOps) nyissa meg a **Microsoft.Dynamics.ConsoleApp.exe.config** fájlt az RSAT telepítési mappájából (például: **C:\\Program Files (x86)\\Regression Suite Automation Tool**), és módosítsa az alábbi elemet **hamis** értékről **igaz** értékre.
 
     ```xml
     <add key="VerboseSnapshotsEnabled" value="false" />
     ```
 
-Amikor futtatja a teszteseteket, az RSAT pillanatképeket (képeket) fog generálni a lépésekről a visszajátszási mappába elmenti azokat a munkakönyvtárban. Az mappában egy külön almappa jön létre **StepSnapshots** nevű mappában. Ez a mappa a futtatott tesztesetek pillanatképét tartalmazza.
+Tesztesetek futtatásakor az RSAT pillanatképeket (képeket) készít a lépésekről, és menti azokat a munkakönyvtárban található tesztesetek mappájában. Az mappában egy külön almappa jön létre **StepSnapshots** nevű mappában. Ez a mappa a futtatott tesztesetek pillanatképét tartalmazza.
 
 ## <a name="assignment"></a>Hozzárendelés
 
@@ -172,6 +172,7 @@ Az RSAT-ot a **Parancssor** vagy a **PowerShell** ablakból is be lehet hívni.
         about
         cls
         download
+        downloadsuite
         edit
         generate
         generatederived
@@ -181,11 +182,13 @@ Az RSAT-ot a **Parancssor** vagy a **PowerShell** ablakból is be lehet hívni.
         list
         listtestplans
         listtestsuite
+        listtestsuitebyid
         listtestsuitenames
         playback
         playbackbyid
         playbackmany
         playbacksuite
+        playbacksuitebyid
         quit
         upload
         uploadrecording
@@ -194,17 +197,17 @@ Az RSAT-ot a **Parancssor** vagy a **PowerShell** ablakból is be lehet hívni.
 
 #### <a name=""></a>?
 
-A rendelkezésre álló parancsokkal és a paraméterekkel kapcsolatos súgó megjelenítése.
+Felsorolja a parancsokat, illetve megjeleníti egy adott parancshoz a súgót, valamint a rendelkezésre álló paramétereket.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``?``**``[command]``
 
 ##### <a name="-optional-parameters"></a>?: Nem kötelező paraméterek
 
-`command`: Ahol ``[command]`` az alább megadott parancsok egyike.
+`command`– hol ``[command]`` található az előző lista egyik parancsa.
 
 #### <a name="about"></a>névjegy
 
-Az aktuális verziót jeleníti meg.
+A telepített RSAT verziójának megjelenítése.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``about``**
 
@@ -216,21 +219,57 @@ Törli az adatokat a képernyőről.
 
 #### <a name="download"></a>letöltés
 
-Letölti a megadott tesztesethez tartozott mellékleteket a kimeneti környvtárba.
-A ``list`` paranccsal lekérheti az összes rendelkezésre álló tesztesetet. Az első oszlopból bármelyik értéket használhatja **test_case_id** paraméterként.
+A megadott teszteset mellékletének (Rögzítés, Végrehajtás és Paraméterfájlok) letöltése a Azure DevOps kimeneti könyvtárból. Ezzel a paranccsal ``list`` lehet az összes elérhető tesztesetet behozni, **és az első oszlop bármely értékét használni test_case_id** paraméterként.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``download``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="download-optional-switches"></a>letöltés: választható kapcsolók
+
++ `/retry[=seconds]`– ha ez a kapcsoló meg van adva, és az esetteszt eseteket más RSAT-példányok zárolják, akkor a letöltési folyamat a megadott számú másodpercet várakozik, majd újra próbálkozik. A másodperc alapértelmezett \[értéke\] 120 másodperc. E kapcsoló nélkül a folyamat azonnal megszakad, ha a tesztesetek blokkolva vannak.
 
 ##### <a name="download-required-parameters"></a>letöltés: szükséges paraméterek
 
 + `test_case_id`: A teszteset azonosítóját jeleníti meg.
-+ `output_dir`: A kimeneti könyvtárat jelöli. A könyvtárnak léteznie kell.
+
+##### <a name="download-optional-parameters"></a>letöltés: nem kötelező paraméterek
+
++ `output_dir`– a kimeneti munkakönyvtárat jelöli. A könyvtárnak léteznie kell. A beállítások munkakönyvtárát használja a rendszer, ha ez a paraméter nincs megadva.
 
 ##### <a name="download-examples"></a>letöltés: példák
 
 `download 123 c:\temp\rsat`
 
-`download 765 c:\rsat\last`
+`download /retry=240 765`
+
+#### <a name="downloadsuite"></a>downloadsuite
+
+A megadott tesztcsomagban található összes teszteset mellékletének (rögzítés, végrehajtás és paraméterfájlok) letöltése a Azure DevOps kimeneti könyvtárból. Ezzel a paranccsal ``listtestsuitenames`` lehet az összes elérhető tesztcsomagot behozni, és bármilyen értéket használni test_suite_name **paraméterként**.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``downloadsuite``**``[/retry[=<seconds>]] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="downloadsuite-optional-switches"></a>downloadsuite: választható kapcsolók
+
++ `/retry[=seconds]`– ha ez a kapcsoló meg van adva, és az esetteszt eseteket más RSAT-példányok zárolják, akkor a letöltési folyamat a megadott számú másodpercet várakozik, majd újra próbálkozik. A másodperc alapértelmezett \[értéke\] 120 másodperc. E kapcsoló nélkül a folyamat azonnal megszakad, ha a tesztesetek blokkolva vannak.
++ `/byid`– ez a kapcsoló azt jelzi Azure DevOps, hogy a kívánt tesztcsomagot az azonosítója azonosítja a tesztcsomag neve helyett.
+
+##### <a name="downloadsuite-required-parameters"></a>downloadsuite: szükséges paraméterek
+
++ `test_suite_name`: A tesztcsomag nevét jeleníti meg. Ha nincs megadva a /byid kapcsoló, kötelező megadni ezt a **paramétert**. Ez a név a tesztcsomag Azure DevOps neve.
++ `test_suite_id`: A tesztcsomag azonosítóját jeleníti meg. Ezt a paramétert kötelező megadni, ha meg van adva **a** /byid kapcsoló. Ez az azonosító tesztcsomag-azonosító Azure DevOps.
+
+##### <a name="downloadsuite-optional-parameters"></a>downloadsuite: nem kötelező paraméterek
+
++ `output_dir`– a kimeneti munkakönyvtárat jelöli. A könyvtárnak léteznie kell. A beállítások munkakönyvtárát használja a rendszer, ha ez a paraméter nincs megadva.
+
+##### <a name="downloadsuite-examples"></a>downloadsuite: példák
+
+`downloadsuite NameOfTheSuite c:\temp\rsat`
+
+`downloadsuite /byid 123 c:\temp\rsat`
+
+`downloadsuite /retry=240 /byid 765`
+
+`downloadsuite /retry=240 /byid 765 c:\temp\rsat`
 
 #### <a name="edit"></a>szerkesztés
 
@@ -244,7 +283,7 @@ Lehetővé teszi a paraméterek fájl megnyitását Excel programban, és annak 
 
 ##### <a name="edit-examples"></a>szerkesztés: példák
 
-`edit c:\RSAT\TestCase_123_Base.xlsx`
+`edit c:\RSAT\123\TestCase_123_Base.xlsx`
 
 `edit e:\temp\TestCase_456_Base.xlsx`
 
@@ -252,24 +291,41 @@ Lehetővé teszi a paraméterek fájl megnyitását Excel programban, és annak 
 
 Létrehozza a tesztvégrehajtási és paraméterfájlokat a megadott tesztesethez a kimeneti könyvtárban. A ``list`` paranccsal lekérheti az összes rendelkezésre álló tesztesetet. Az első oszlopból bármelyik értéket használhatja **test_case_id** paraméterként.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generate``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] [test_case_id] [output_dir]``
+
+##### <a name="generate-optional-switches"></a>generálás: választható kapcsolók
+
++ `/retry[=seconds]`– ha ez a kapcsoló meg van adva, és az esetteszt eseteket más RSAT-példányok zárolják, akkor a generálási folyamat a megadott számú másodpercet várja, majd újra próbálkozik. A másodperc alapértelmezett \[értéke\] 120 másodperc. E kapcsoló nélkül a folyamat azonnal megszakad, ha a tesztesetek blokkolva vannak.
++ `/dllonly`: Csak a teszt-végrehajtási fájlok létrehozása. Ne újragenerálja az Excel paraméterfájlt.
++ `/keepcustomexcel`– a meglévő paraméterfájl frissítése. A végrehajtási fájlok újragenerálása.
 
 ##### <a name="generate-required-parameters"></a>generálás: szükséges paraméterek
 
 + `test_case_id`: A teszteset azonosítóját jeleníti meg.
-+ `output_dir`: A kimeneti könyvtárat jelöli. A könyvtárnak léteznie kell.
+
+##### <a name="generate-optional-parameters"></a>generálás: választható paraméterek
+
++ `output_dir`– a kimeneti munkakönyvtárat jelöli. A könyvtárnak léteznie kell. A beállítások munkakönyvtárát használja a rendszer, ha ez a paraméter nincs megadva.
 
 ##### <a name="generate-examples"></a>generálás: példák
 
 `generate 123 c:\temp\rsat`
 
-`generate 765 c:\rsat\last`
+`generate /retry=240 765 c:\rsat\last`
+
+`generate /retry=240 /dllonly 765`
+
+`generate /retry=240 /keepcustomexcel 765`
 
 #### <a name="generatederived"></a>generatederived
 
-Új tesztesetet hoz létre, amely a megadott tesztesetből származik. A ``list`` paranccsal lekérheti az összes rendelkezésre álló tesztesetet. Az első oszlopból bármelyik értéket használhatja **test_case_id** paraméterként.
+A megadott teszteset új származtatott tesztesetének (gyermek tesztesetnek) a létrehozása. Az új teszteset a megadott tesztcsomaghoz is hozzáadódik. Ezzel a paranccsal ``list`` lehet az összes elérhető tesztesetet behozni, **és az első oszlop bármely értékét használni test_case_id** paraméterként.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[parent_test_case_id] [test_plan_id] [test_suite_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatederived``**``[/retry[=<seconds>]] [parent_test_case_id] [test_plan_id] [test_suite_id]``
+
+##### <a name="generatederived-optional-switches"></a>generatederived: választható kapcsolók
+
++ `/retry[=seconds]`– ha ez a kapcsoló meg van adva, és az esetteszt eseteket más RSAT-példányok zárolják, akkor a generálási folyamat a megadott számú másodpercet várja, majd újra próbálkozik. A másodperc alapértelmezett \[értéke\] 120 másodperc. E kapcsoló nélkül a folyamat azonnal megszakad, ha a tesztesetek blokkolva vannak.
 
 ##### <a name="generatederived-required-parameters"></a>generatederived: szükséges paraméterek
 
@@ -281,39 +337,63 @@ Létrehozza a tesztvégrehajtási és paraméterfájlokat a megadott tesztesethe
 
 `generatederived 123 8901 678`
 
+`generatederived /retry 123 8901 678`
+
 #### <a name="generatetestonly"></a>generatetestonly
 
-Csak a tesztvégrehajtási fájlt hozza létre a megadott tesztesethez a kimeneti könyvtárban. A ``list`` paranccsal lekérheti az összes rendelkezésre álló tesztesetet. Az első oszlopból bármelyik értéket használhatja **test_case_id** paraméterként.
+Csak a megadott tesztesethez szükséges Teszt-végrehajtási fájlokat generálja. Nem generálja az Excel paraméterfájlt. A fájlok a megadott kimeneti könyvtárban jönnek létre. Ezzel a paranccsal ``list`` lehet az összes elérhető tesztesetet behozni, **és az első oszlop bármely értékét használni test_case_id** paraméterként.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[test_case_id] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestonly``**``[/retry[=<seconds>]] [test_case_id] [output_dir]``
+
+##### <a name="generatetestonly-optional-switches"></a>generatetestonly: választható kapcsolók
+
++ `/retry[=seconds]`– ha ez a kapcsoló meg van adva, és az esetteszt eseteket más RSAT-példányok zárolják, akkor a generálási folyamat a megadott számú másodpercet várja, majd újra próbálkozik. A másodperc alapértelmezett \[értéke\] 120 másodperc. E kapcsoló nélkül a folyamat azonnal megszakad, ha a tesztesetek blokkolva vannak.
 
 ##### <a name="generatetestonly-required-parameters"></a>generatetestonly: szükséges paraméterek
 
 + `test_case_id`: A teszteset azonosítóját jeleníti meg.
-+ `output_dir`: A kimeneti könyvtárat jelöli. A könyvtárnak léteznie kell.
+
+##### <a name="generatetestonly-optional-parameters"></a>generatetestonly: választható paraméterek
+
++ `output_dir`– a kimeneti munkakönyvtárat jelöli. A könyvtárnak léteznie kell. A beállítások munkakönyvtárát használja a rendszer, ha ez a paraméter nincs megadva.
 
 ##### <a name="generatetestonly-examples"></a>generatetestonly: példák
 
 `generatetestonly 123 c:\temp\rsat`
 
-`generatetestonly 765 c:\rsat\last`
+`generatetestonly /retry=240 765`
 
 #### <a name="generatetestsuite"></a>generatetestsuite
 
-Létrehozza az összes tesztesetet a megadott csomaghoz a kimeneti könyvtárban. A ``listtestsuitenames`` paranccsal lekérheti az összes rendelkezésre álló tesztcsomagot. Az oszlopból bármelyik értéket használhatja **test_suite_name** paraméterként.
+Tesztautomatizálási fájlokat generál a megadott tesztcsomagban található összes tesztesethez. Ezzel a paranccsal ``listtestsuitenames`` lehet az összes elérhető tesztcsomagot behozni, és bármilyen értéket használni test_suite_name **paraméterként**.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[test_suite_name] [output_dir]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``generatetestsuite``**``[/retry[=<seconds>]] [/dllonly] [/keepcustomexcel] ([test_suite_name] | [/byid] [test_suite_id]) [output_dir]``
+
+##### <a name="generatetestsuite-optional-switches"></a>generatetestsuite: választható kapcsolók
+
++ `/retry[=seconds]`– ha ez a kapcsoló meg van adva, és az esetteszt eseteket más RSAT-példányok zárolják, akkor a generálási folyamat a megadott számú másodpercet várja, majd újra próbálkozik. A másodperc alapértelmezett \[értéke\] 120 másodperc. E kapcsoló nélkül a folyamat azonnal megszakad, ha a tesztesetek blokkolva vannak.
++ `/dllonly`: Csak a teszt-végrehajtási fájlok létrehozása. Ne újragenerálja az Excel paraméterfájlt.
++ `/keepcustomexcel`: Meglévő paraméterfájl frissítése. A végrehajtási fájlok újragenerálása.
++ `/byid`– ez a kapcsoló azt jelzi Azure DevOps, hogy a kívánt tesztcsomagot az azonosítója azonosítja a tesztcsomag neve helyett.
 
 ##### <a name="generatetestsuite-required-parameters"></a>generatetestsuite: szükséges paraméterek
 
-+ `test_suite_name`: A tesztcsomag nevét jeleníti meg.
-+ `output_dir`: A kimeneti könyvtárat jelöli. A könyvtárnak léteznie kell.
++ `test_suite_name`: A tesztcsomag nevét jeleníti meg. Ha nincs megadva a /byid kapcsoló, kötelező megadni ezt a **paramétert**. Ez a név a tesztcsomag Azure DevOps neve.
++ `test_suite_id`: A tesztcsomag azonosítóját jeleníti meg. Ezt a paramétert kötelező megadni, ha meg van adva **a** /byid kapcsoló. Ez az azonosító tesztcsomag-azonosító Azure DevOps.
+
+##### <a name="generatetestsuite-optional-parameters"></a>generatetestsuite: választható paraméterek
+
++ `output_dir`– a kimeneti munkakönyvtárat jelöli. A könyvtárnak léteznie kell. A beállítások munkakönyvtárát használja a rendszer, ha ez a paraméter nincs megadva.
 
 ##### <a name="generatetestsuite-examples"></a>generatetestsuite: példák
 
 `generatetestsuite Tests c:\temp\rsat`
 
-`generatetestsuite Purchase c:\rsat\last`
+`generatetestsuite /retry Purchase c:\rsat\last`
+
+`generatetestsuite /dllonly /byid 121`
+
+`generatetestsuite /keepcustomexcel /byid 121`
 
 #### <a name="help"></a>súgó
 
@@ -321,7 +401,7 @@ Azonos a következővel: [?](#section) parancs.
 
 #### <a name="list"></a>lista
 
-Felsorolja az összes elérhető teszt esetet.
+Felsorolja az aktuális teszttervben rendelkezésre álló teszteseteket.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``list``**
 
@@ -333,13 +413,13 @@ Felsorolja az összes elérhető tesztkonstrukciót.
 
 #### <a name="listtestsuite"></a>listtestsuite
 
-Felsorolja a megadott tesztcsomag teszteseteit. A ``listtestsuitenames`` paranccsal lekérheti az összes rendelkezésre álló tesztcsomagot. Az első oszlopból bármelyik értéket használhatja **suite_name** paraméterként.
+Felsorolja a megadott tesztcsomag teszteseteit. Ezzel a paranccsal ``listtestsuitenames`` lehet az összes elérhető tesztcsomagot behozni, és a **listából bármely értéket suite_name** használni.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuite``**``[test_suite_name]``
 
 ##### <a name="listtestsuite-required-parameters"></a>listtestsuite: szükséges paraméterek
 
-+ `suite_name`: A kívánt csomag neve.
++ `test_suite_name`– a kívánt csomag neve.
 
 ##### <a name="listtestsuite-examples"></a>listtestsuite: példák
 
@@ -347,39 +427,67 @@ Felsorolja a megadott tesztcsomag teszteseteit. A ``listtestsuitenames`` parancc
 
 `listtestsuite NameOfTheSuite`
 
+#### <a name="listtestsuitebyid"></a>listtestsuitebyid
+
+Felsorolja a megadott tesztcsomag teszteseteit.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitebyid``**``[test_suite_id]``
+
+##### <a name="listtestsuitebyid-required-parameters"></a>listtestsuitebyid: szükséges paraméterek
+
++ `test_suite_id`– a kívánt suite azonosítója.
+
+##### <a name="listtestsuitebyid-examples"></a>listtestsuitebyid: példák
+
+`listtestsuitebyid 12345`
+
 #### <a name="listtestsuitenames"></a>listtestsuitenames
 
-Felsorolja az összes elérhető tesztcsomagot.
+Felsorolja az aktuális teszttervben elérhető összes tesztcsomagot.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``listtestsuitenames``**
 
 #### <a name="playback"></a>visszajátszás
 
-Visszajátszik egy tesztesetet Excel-fájl segítségével.
+A megadott Excel-paraméterfájlhoz társított teszteset visszahozassza. Ez a parancs a meglévő helyi automatizálási fájlokat használja, és nem tölt le fájlokat innen Azure DevOps. Ez a parancs a POS kereskedelmi tesztesetek esetében nem támogatott.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[excel_file]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playback``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file]``
+
+##### <a name="playback-optional-switches"></a>playback: optional switches
+
++ `/retry[=seconds]`– ha ez a kapcsoló meg van adva, és az esetteszt eseteket más RSAT-példányok zárolják, akkor a folyamat a megadott számú másodpercet várakozik, majd újra próbálkozik. A másodperc alapértelmezett \[értéke\] 120 másodperc. E kapcsoló nélkül a folyamat azonnal megszakad, ha a tesztesetek blokkolva vannak.
++ `/comments[="comment"]`– adjon meg egy egyéni információs karakterláncot, **·** Azure DevOps amely szerepelni fog a teszteset-futtatásokat összefoglaló és teszteredményeket összefoglaló oldal Megjegyzés mezőjében.
 
 ##### <a name="playback-required-parameters"></a>lejátszás: szükséges paraméterek
 
-+ `excel_file`: Az Excel-fájl teljes elérési útja. A fájlnak léteznie kell.
++ `excel_parameter_file`– egy Excel-paraméterfájl teljes elérési útja. A fájlnak léteznie kell.
 
 ##### <a name="playback-examples"></a>lejátszás: példák
 
-`playback c:\RSAT\TestCaseParameters\sample1.xlsx`
+`playback c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playback e:\temp\test.xlsx`
+`playback /retry e:\temp\test.xlsx`
+
+`playback /retry=300 e:\temp\test.xlsx`
+
+`playback /comments="Payroll solution 10.0.0" e:\temp\test.xlsx`
 
 #### <a name="playbackbyid"></a>playbackbyid
 
-Egyszerre több tesztesetet játszik le. A ``list`` paranccsal lekérheti az összes rendelkezésre álló tesztesetet. Az első oszlopból bármelyik értéket használhatja **test_case_id** paraméterként.
+Több teszteset egyszerre lejátssza. A teszteseteket azonosítójuk azonosítja. Ez a parancs fájlokat fog le tölteni Azure DevOps innen. Ezzel a paranccsal ``list`` lehet az összes elérhető tesztesetet behozni, **és az első oszlop bármelyik értékét használni test_case_id** paraméterként.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[test_case_id1] [test_case_id2] ... [test_case_idN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackbyid``**``[/retry[=<seconds>]] [/comments[="comment"]] [test_case_id1] [test_case_id2] ... [test_case_idN]``
+
+##### <a name="playbackbyid-optional-switches"></a><a2/<a2/<a2/<a
+
++ `/retry[=seconds]`– ha ez a kapcsoló meg van adva, és az esetteszt eseteket más RSAT-példányok zárolják, akkor a folyamat a megadott számú másodpercet várakozik, majd újra próbálkozik. A másodperc alapértelmezett \[értéke\] 120 másodperc. E kapcsoló nélkül a folyamat azonnal megszakad, ha a tesztesetek blokkolva vannak.
++ `/comments[="comment"]`– adjon meg egy egyéni információs karakterláncot, **·** Azure DevOps amely szerepelni fog a teszteset-futtatásokat összefoglaló és teszteredményeket összefoglaló oldal Megjegyzés mezőjében.
 
 ##### <a name="playbackbyid-required-parameters"></a>playbackbyid: szükséges paraméterek
 
-+ `test_case_id1`: A meglévő teszteset azonosítója.
-+ `test_case_id2`: A meglévő teszteset azonosítója.
-+ `test_case_idN`: A meglévő teszteset azonosítója.
++ `test_case_id1`– egy meglévő teszteset azonosítója.
++ `test_case_id2`– egy meglévő teszteset azonosítója.
++ `test_case_idN`– egy meglévő teszteset azonosítója.
 
 ##### <a name="playbackbyid-examples"></a>playbackbyid: példák
 
@@ -387,75 +495,132 @@ Egyszerre több tesztesetet játszik le. A ``list`` paranccsal lekérheti az ös
 
 `playbackbyid 2345 667 135`
 
+`playbackbyid /comments="Payroll solution 10.0.0" 2345 667 135`
+
+`playbackbyid /retry /comments="Payroll solution 10.0.0" 2345 667 135`
+
 #### <a name="playbackmany"></a>playbackmany
 
-Több tesztesetet játszik le egyszerre, Excel-fájlok használatával.
+Sok tesztesetet egyszerre tesztel. A teszteseteket Excel-paraméterfájlok azonosítják. Ez a parancs a meglévő helyi automatizálási fájlokat használja, és nem tölt le fájlokat innen Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[excel_file1] [excel_file2] ... [excel_fileN]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbackmany``**``[/retry[=<seconds>]] [/comments[="comment"]] [excel_parameter_file1] [excel_parameter_file2] ... [excel_parameter_fileN]``
+
+##### <a name="playbackmany-optional-switches"></a><a1/<a1/<a2/<a2
+
++ `/retry[=seconds]`– ha ez a kapcsoló meg van adva, és az esetteszt eseteket más RSAT-példányok zárolják, akkor a folyamat a megadott számú másodpercet várakozik, majd újra próbálkozik. A másodperc alapértelmezett \[értéke\] 120 másodperc. E kapcsoló nélkül a folyamat azonnal megszakad, ha a tesztesetek blokkolva vannak.
++ `/comments[="comment"]`– adjon meg egy egyéni információs karakterláncot, **·** Azure DevOps amely szerepelni fog a teszteset-futtatásokat összefoglaló és teszteredményeket összefoglaló oldal Megjegyzés mezőjében.
 
 ##### <a name="playbackmany-required-parameters"></a>playbackmany: szükséges paraméterek
 
-+ `excel_file1`: Az Excel-fájl teljes elérési útja. A fájlnak léteznie kell.
-+ `excel_file2`: Az Excel-fájl teljes elérési útja. A fájlnak léteznie kell.
-+ `excel_fileN`: Az Excel-fájl teljes elérési útja. A fájlnak léteznie kell.
++ `excel_parameter_file1`– az Excel paraméterfájl teljes elérési útja. A fájlnak léteznie kell.
++ `excel_parameter_file2`– az Excel paraméterfájl teljes elérési útja. A fájlnak léteznie kell.
++ `excel_parameter_fileN`– az Excel paraméterfájl teljes elérési útja. A fájlnak léteznie kell.
 
 ##### <a name="playbackmany-examples"></a>playbackmany: példák
 
-`playbackmany c:\RSAT\TestCaseParameters\param1.xlsx`
+`playbackmany c:\RSAT\2745\attachments\Create_Purchase_Order_2745_Base.xlsx`
 
-`playbackmany e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
+`playbackmany e:\temp\test.xlsx f:\RSAT\sample1.xlsx c:\RSAT\sample2.xlsx`
+
+`playbackmany /retry=180 /comments="Payroll solution 10.0.0" e:\temp\test.xlsx f:\rsat\sample1.xlsx c:\RSAT\sample2.xlsx`
 
 #### <a name="playbacksuite"></a>playbacksuite
 
-A megadott tesztcsomagból minden tesztesetet lejátszik.
-A ``listtestsuitenames`` paranccsal lekérheti az összes rendelkezésre álló tesztcsomagot. Az első oszlopból bármelyik értéket használhatja **suite_name** paraméterként.
+Az összes teszteset visszahozassza egy vagy több meghatározott tesztcsomagból. Ha a /local kapcsoló meg van adva, akkor a helyi mellékleteket használja a program a csatolások cseréihez. Ellenkező esetben a mellékletek innen lesznek letöltve Azure DevOps. Ezzel a paranccsal ``listtestsuitenames`` lehet az összes elérhető tesztcsomagot behozni, **és az első oszlop bármely értékét használni suite_name** paraméterként.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[suite_name]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuite``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] ([test_suite_name1] .. [test_suite_nameN] | [/byid] [test_suite_id1] .. [test_suite_idN])``
+
+##### <a name="playbacksuite-optional-switches"></a>playbacksuite: optional switches
+
++ `/updatedriver`– ha ez a kapcsoló meg van adva, akkor a folyamat futtatása előtt a program szükség szerint frissíti az internet-böngésző webkiszolgálóját.
++ `/local`: Ez a kapcsoló azt jelzi, hogy helyi mellékleteket kell használni az adatokat a innen való fájlletöltés helyett Azure DevOps.
++ `/retry[=seconds]`– ha ez a kapcsoló meg van adva, és az esetteszt eseteket más RSAT-példányok zárolják, akkor a folyamat a megadott számú másodpercet várakozik, majd újra próbálkozik. A másodperc alapértelmezett \[értéke\] 120 másodperc. E kapcsoló nélkül a folyamat azonnal megszakad, ha a tesztesetek blokkolva vannak.
++ `/comments[="comment"]`– adjon meg egy egyéni információs karakterláncot, **·** Azure DevOps amely szerepelni fog a teszteset-futtatásokat összefoglaló és teszteredményeket összefoglaló oldal Megjegyzés mezőjében.
++ `/byid`– ez a kapcsoló azt jelzi Azure DevOps, hogy a kívánt tesztcsomagot az azonosítója azonosítja a tesztcsomag neve helyett.
 
 ##### <a name="playbacksuite-required-parameters"></a>playbacksuite: szükséges paraméterek
 
-+ `suite_name`: A kívánt csomag neve.
++ `test_suite_name1`: A tesztcsomag nevét jeleníti meg. Ha nincs megadva a /byid kapcsoló, kötelező megadni ezt a **paramétert**. Ez a név a tesztcsomag Azure DevOps neve.
++ `test_suite_nameN`: A tesztcsomag nevét jeleníti meg. Ha nincs megadva a /byid kapcsoló, kötelező megadni ezt a **paramétert**. Ez a név a tesztcsomag Azure DevOps neve.
++ `test_suite_id1`: A tesztcsomag azonosítóját jeleníti meg. Ezt a paramétert kötelező megadni, ha meg van adva **a** /byid kapcsoló. Ez az azonosító a tesztcsomag Azure DevOps azonosítója.
++ `test_suite_idN`: A tesztcsomag azonosítóját jeleníti meg. Ezt a paramétert kötelező megadni, ha meg van adva **a** /byid kapcsoló. Ez az azonosító a tesztcsomag Azure DevOps azonosítója.
 
 ##### <a name="playbacksuite-examples"></a>playbacksuite: példák
 
 `playbacksuite suiteName`
 
-`playbacksuite sample_suite`
+`playbacksuite suiteName suiteNameToo`
+
+`playbacksuite /updatedriver /local /retry=180 /byid 151 156`
+
+`playbacksuite /updatedriver /local /comments="Payroll solution 10.0.0" /byid 150`
+
+#### <a name="playbacksuitebyid"></a>playbacksuitebyid
+
+A megadott tesztcsomagban található összes teszteset Azure DevOps futtatása.
+
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``playbacksuitebyid``**``[/updatedriver] [/local] [/retry[=<seconds>]] [/comments[="comment"]] [test_suite_id]``
+
+##### <a name="playbacksuitebyid-optional-switches"></a>a<a2/<a2/<a2/<a2/<a3
+
++ `/retry[=seconds]`– ha ez a kapcsoló meg van adva, és az esetteszt eseteket más RSAT-példányok zárolják, akkor a folyamat a megadott számú másodpercet várakozik, majd újra próbálkozik. A másodperc alapértelmezett \[értéke\] 120 másodperc. E kapcsoló nélkül a folyamat azonnal megszakad, ha a tesztesetek blokkolva vannak.
++ `/comments[="comment"]`– adjon meg egy egyéni információs karakterláncot, **·** Azure DevOps amely szerepelni fog a teszteset-futtatásokat összefoglaló és teszteredményeket összefoglaló oldal Megjegyzés mezőjében.
++ `/byid`– ez a kapcsoló azt jelzi Azure DevOps, hogy a kívánt tesztcsomagot az azonosítója azonosítja a tesztcsomag neve helyett.
+
+##### <a name="playbacksuitebyid-required-parameters"></a>binebyid: szükséges paraméterek
+
++ `test_suite_id`: A tesztcsomag-azonosítónak megfelelő azonosító a létezik a következőben Azure DevOps:
+
+##### <a name="playbacksuitebyid-examples"></a>a<a2/<a2/<a2/<
+
+`playbacksuitebyid 2900`
+
+`playbacksuitebyid /retry 2099`
+
+`playbacksuitebyid /retry=200 2099`
+
+`playbacksuitebyid /retry=200 /comments="some comment" 2099`
 
 #### <a name="quit"></a>kilépés
 
-Bezárja az alkalmazást.
+Bezárja a pályázatot. Ez a parancs csak akkor hasznos, ha az alkalmazások interaktív módban futnak.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``quit``**
 
+##### <a name="quit-examples"></a>kilépés: példák
+
+`quit`
+
 #### <a name="upload"></a>feltöltés
 
-A megadott tesztcsomaghoz vagy tesztesetekhez tartozó összes fájlt feltölti.
+Feltölti a megadott tesztcsomaghoz vagy tesztesethez tartozó mellékletfájlokat (rögzítés, végrehajtás és paraméterfájlok Azure DevOps).
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``[suite_name] [testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``upload``**``([test_suite_name] | [test_case_id1] .. [test_case_idN])``
 
-#### <a name="upload-required-parameters"></a>feltöltés: szükséges paraméterek
+##### <a name="upload-required-parameters"></a>feltöltés: szükséges paraméterek
 
-+ `suite_name`: A megadott tesztcsomaghoz tartozó összes fájlt feltölti.
-+ `testcase_id`: A megadott teszteset(ek)hez tartozó összes fájlt feltölti.
++ `test_suite_name`– a rendszer a megadott tesztcsomaghoz tartozó összes fájlt feltölti.
++ `test_case_id1`– az első feltöltendő teszteset-azonosítót jelöli. Ezt a paramétert csak akkor használja, ha nincs megadva tesztcsomag-név.
++ `test_case_idN`– az utolsó teszteset-azonosítót jelöli, amely feltöltődik. Ezt a paramétert csak akkor használja, ha nincs megadva tesztcsomag-név.
 
 ##### <a name="upload-examples"></a>feltöltés: példák
 
 `upload sample_suite`
 
-`upload 123`
+`upload 2900`
 
 `upload 123 456`
 
 #### <a name="uploadrecording"></a>uploadrecording
 
-Csak a megadott tesztesetekhez tartozó rögzítési fájlt tölti fel.
+Csak annak a rögzítési fájlnak a feltöltése, amelybe egy vagy több megadott teszteset tartozik Azure DevOps.
 
-``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[testcase_id]``
+``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``uploadrecording``**``[test_case_id1] .. [test_case_idN]``
 
 ##### <a name="uploadrecording-required-parameters"></a>uploadrecording: szükséges paraméterek
 
-+ `testcase_id`: Csak a megadott tesztesetekhez tartozó rögzítési fájlt tölti fel.
++ `test_case_id1`– annak a rögzítésnek az első teszteset-azonosítóját jelöli, amelybe feltölthetők Azure DevOps.
++ `test_case_idN`– annak a rögzítésnek az utolsó teszteset-azonosítóját jelöli, amelybe fel kell tölteni Azure DevOps.
 
 ##### <a name="uploadrecording-examples"></a>uploadrecording: példák
 
@@ -465,9 +630,21 @@ Csak a megadott tesztesetekhez tartozó rögzítési fájlt tölti fel.
 
 #### <a name="usage"></a>használat
 
-Kétféle módszert mutat be az alkalmazás meghívására: az egyik alapértelmezett beállítási fájlt használ, a másik egy beállítási fájlt ad meg.
+Az alkalmazás három használati módja.
 
 ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``usage``**
+
+Az alkalmazás interaktív futtatása:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``
+
+Az alkalmazás futtatása parancs megadásával:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp ``**``[command]``**
+
+Az alkalmazás futtatása a következő beállítási fájllal:
+
++ ``Microsoft.Dynamics.RegressionSuite.ConsoleApp``**``/settings [drive:\Path to\file.settings] [command]``**
 
 ### <a name="windows-powershell-examples"></a>Windows PowerShell-példák
 

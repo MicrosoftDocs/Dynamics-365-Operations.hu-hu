@@ -2,7 +2,7 @@
 title: Többcsatornás speciális automatikus költségek
 description: Ez a témakör a Commerce csatorna rendeléseihez kapcsolódó egyéb rendelési költségek automatikus költségfunkciók használatával való kezelésére vonatkozó lehetőségeket írja le.
 author: hhaines
-ms.date: 03/30/2020
+ms.date: 03/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: ef6396ec66a0f96ba97b176c46bf70d83a080883cf496312398f14dce3ad9758
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 69432e13424b08b75e8ce7c88eaf6be66db59e65
+ms.sourcegitcommit: 94ebdaae6dc996b205ac78ed546e38f91f4f46ed
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6743431"
+ms.lasthandoff: 03/28/2022
+ms.locfileid: "8489618"
 ---
 # <a name="omni-channel-advanced-auto-charges"></a>Többcsatornás speciális automatikus költségek
 
@@ -187,6 +187,9 @@ Ha az okkódot rögzítették a felülírt költségekre, új jelentés érthet�
 ### <a name="refunding-charges-on-a-pos-return-transaction"></a>Költségek visszatérítése pénztár visszáru-tranzakciójában
 
 Ha a **Speciális automatikus költségek használata** paraméter értéke **Igen**, a meglévő **Szállítási költségek visszatérítése** Commerce-paraméter már nem érvényes. Annak jelzésére, hogy a speciális automatikus költségek alkalmazása esetén mely költségeket kell szisztematikusan visszatéríteni a vevőnek, győződjön meg arról, hogy a kapcsolódó költségkódot **Visszatéríthető** értékkel konfigurálta a **Költségkód** beállító oldalon. Győződjön meg arról, hogy a beállításokat szinkronizálta a Commerce csatorna-adatbázisokkal az elosztási ütemezés feldolgozásán keresztül.
+
+> [!TIP]
+> Útmutatásért, amely segítséget nyújt annak biztosítására, hogy a sor szintű visszatéríthető költségek számítása a visszaküldött mennyiség alapján történik, [lásd: A visszatéríthető költségek számítása nem a visszaküldött mennyiség alapján történik](/troubleshoot/Refund-charges-miscalculated-for-partial-quantity-returned.md).
 
 ### <a name="refunding-charges-on-a-return-order-transaction"></a>Költségek visszatérítése visszárurendelési tranzakcióban
 

@@ -10,18 +10,27 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: c4731c5f0b0a1553deb53753d82d29a34e5525df
-ms.sourcegitcommit: 399d0d3f8e2ebb81b6b9d640365ebe182690bab2
+ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/15/2022
-ms.locfileid: "8418640"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487836"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Újdonságok és változások a Warehouse Management mobilalkalmazásban
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új funkcióit, hibajavításait, fejlesztéseit és ismert hibáit ismerteti.
+
+## <a name="version-20200"></a>2.0.20.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+
+- Több ütközést kijavított.
+- Javítva egy olyan hiba, amely miatt a kártyákon helytelen értékek jelennek meg a Munkalista **oldalon**.
+- Javította a görgetést, és megszüntette a görgetést a **munkalista** **és a cikk-lekérdezési oldalakon** Android.
+- Kilépési gomb hozzáadva a bejelentkezési laphoz, amely kilép az alkalmazásból.
 
 ## <a name="version-20190"></a>2.0.19.0-s verzió
 

@@ -1,7 +1,7 @@
 ---
 title: Első lépések a tervezési optimalizálással
 description: Ez a témakör bemutatja, hogyan kezdje el használni a tervezési optimalizáció funkciót.
-author: ChristianRytt
+author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: intro-internal
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 8e6328902cec840b98b401fe8dd46c2a6f18cb54
-ms.sourcegitcommit: 88f8a0369ce66b82314db9639491b695e18a7e5c
+ms.openlocfilehash: faaa2aa921457a3d26c2a921a856a61296192a04
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902559"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469813"
 ---
 # <a name="get-started-with-planning-optimization"></a>Tervezési optimalizálás kezdő lépései
 
@@ -58,7 +58,7 @@ Mielőtt telepítené a Tervezési optimalizálási bővítményt, a következő
 
 - A Supply Chain Management rendszert egy 2. szintű vagy magasabb szintű, LCS-kompatibilis magas rendelkezésre állású környezeten kell futtatnia (nem OneBox környezet), a Dynamics 365 Supply Chain Management 10.0.7-es vagy újabb verziójával. Ha OneBox- környezetbe próbálja meg telepíteni a bővítményt, akkor a telepítés nem fejeződik be, és a telepítést vissza kell vonni.
 
-- Be kell állítani a rendszert a Power Platform-integrációhoz. További információ: [A Microsoft Power Platform integrálása Finance and Operations-alkalmazásokkal](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
+- Be kell állítani a rendszert a Power Platform-integrációhoz. A további tudnivalókat lásd [Microsoft Power Platform a Pénzügy és műveletek alkalmazásokkal való integrációban](../../../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ### <a name="enable-the-planning-optimization-license"></a>A Tervezési optimalizálás licencének engedélyezése
 

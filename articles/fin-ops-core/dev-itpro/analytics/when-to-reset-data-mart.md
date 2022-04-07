@@ -2,7 +2,7 @@
 title: Az adatpiac alaphelyzetbe állítása – GYIK
 description: Ez a témakör az adatpiac alaphelyzetbe állításával kapcsolatos néhány gyakran ismételt kérdésre ad választ.
 author: jinniew
-ms.date: 02/14/2022
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 53f45f469c39f9e389763aa0daed658e5a62d377
-ms.sourcegitcommit: 6a269db08e8bb3bb3405c9f4a512091d13c80faa
-ms.translationtype: HT
+ms.openlocfilehash: ab6417a739e9a7b67b9e67d93f3bef654e55e5e4
+ms.sourcegitcommit: 2c2ef3e312e7221006a9e230c9378bb4c1b4cd33
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/14/2022
-ms.locfileid: "8119512"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8466411"
 ---
 # <a name="data-mart-resets-faq"></a>Az adatpiac alaphelyzetbe állítása – GYIK
 
@@ -47,10 +47,14 @@ Ha a következők közül egy vagy több érvényes, akkor a szervezete számár
 Az alábbi körülmények között nem ajánljuk az adatpiac alaphelyzetbe állítását:
 
 - Adatintegrációs teljesítményproblémák vannak.
+- A Pénzügyi jelentés jelentés integrálása nincs engedélyezve. 
+
+    - Ez azt jelenti, hogy a főkönyvi adatok már nem lesznek szinkronizálva a pénzügyi jelentési adatmartokkal. Lehet, hogy a Pénzügyi jelentés jelentés nem kap naprakész számot a pénzügyi jelentésekhez. Ez általában akkor fordul elő, ha már hosszú ideje nem használja a Financial Reportert.
+    - A program az adatpiac alaphelyzetbe állításával kéri az integráció engedélyezését. A folytatáshoz válassza az Igen **et**. Választhatja azt is, hogy később alaphelyzetbe állítja-e az adatpiacot. Az integráció engedélyezése után a főkönyvi adatok újra szinkronizálódnak a Financial Reporter alkalmazásban. 
 - A következő okok valamelyike miatt ismétlődik az alaphelyzetbe állítás:
 
     - **Hiányzó vagy nem várt adatok** a jelentésben – ha az adatok hiányát észleli, nyisson meg egy támogatási jegyet a Microsofttal, hogy áttekintse a jelentés formátumát és az esetleges adatszinkronizálási problémákat.
-    - **Elakadt integrációs állapot**
+    - **Nem figyelt integrációs állapot** – ha azt veszi észre, hogy az integráció állapota nem fut, akkor ennek oka a rendszerben nagy mennyiségű tranzakció lehet. Ez az állapot feloldja magát. Ha azonban azt veszi észre, hogy az intregrációs állapot több mint négy órán keresztül nem marad, nyisson meg egy támogatási jegyet a Microsoft számára. 
    
 ## <a name="if-i-reset-the-data-mart-will-i-lose-reports-that-ive-already-designed"></a>Ha alaphelyzetbe állítom az adatpiacot, elvesznek a már megtervezett jelentések?
 

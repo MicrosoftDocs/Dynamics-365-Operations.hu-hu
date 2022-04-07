@@ -1,5 +1,5 @@
 ---
-title: Előfizetés számlázása – áttekintés
+title: Előfizetéses számlázás áttekintése
 description: Ez a témakör a Microsoft előfizetéses számlázását írja le Dynamics 365 Finance.
 author: JodiChristiansen
 ms.date: 02/09/2022
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: b94ac36e49d55ad42909877d77903cd40cb22cbe
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
-ms.translationtype: HT
+ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182709"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462469"
 ---
-# <a name="subscription-billing-overview"></a>Előfizetés számlázása – áttekintés
+# <a name="subscription-billing-overview"></a>Előfizetéses számlázás áttekintése
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 Az előfizetési számlázás segítségével a szervezetek számlázási ütemezések segítségével kezelhetik az előfizetési bevételi lehetőségeket és az ismétlődő számlázási lehetőségeket. Az összetett árképzési és számlázási modelleket és bevételfelosztásokat egyszerűen kezelik, és a sor szintjén számláznak és ismernek fel. A többelemű bevételfelosztás révén a bevétel felosztása megfelel a Nemzetközi Könyvelési Szabványok (International Financial Reporting Standard 15 IFRS 15\[\]) és az általánosan elfogadott könyvelési elvek (US CAAP) szabványának (Accounting Standards Codification Topic 606 \[ASC 606\]).
 

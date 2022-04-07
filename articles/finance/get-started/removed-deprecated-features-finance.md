@@ -1,23 +1,23 @@
 ---
 title: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve a Dynamics 365 Finance alkalmazásban.
-author: roschlom
-ms.date: 12/03/2021
+author: kfend
+ms.date: 03/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2020-03-02
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: ad3df2ee9c10972dac8258b6ee41ae0a6eabfbea
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
+ms.openlocfilehash: 6df84e5c2d530e708560495bceaeb23e2ee0dd4b
+ms.sourcegitcommit: acac5e59be7c8f4e9a7ae9be58c636c70342e784
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890953"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8466834"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-finance"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
 
@@ -31,7 +31,21 @@ Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, va
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
 > [!NOTE]
-> A Finance and Operations alkalmazások objektumaival kapcsolatban a [Technikai referenciajelentésekben](/dynamics/s-e/global/axtechrefrep_61) talál részletes információkat. Ezen jelentések különböző verzióit összehasonlíthatja, hogy megismerje azokat az objektumokat, melyek módosítva lettek vagy el lettek távolítva a Finance and Operations alkalmazások egyes verzióiban.
+> A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük a Pénzügyi és műveleti alkalmazások egyes verzióiban módosult vagy eltávolított objektumokat.
+
+## <a name="features-removed-or-deprecated-in-the-finance-10026-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.26 kiadásában
+
+### <a name="sales-tax-report-for-finland-design-based-on-reporting-codes"></a>Áfajelentés Finnországhoz (terv a jelentési kódok alapján)
+
+[Áfajelentés Finnországhoz](../localizations/emea-fin-sales-tax-payment-report-finland.md)
+
+| &nbsp; | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Lecserélve a Finnországra vonatkozó új áfabevallási tervvel, [áfabevallással](../localizations/emea-fin-vat-declaration.md). |
+| **Felváltotta másik szolgáltatás?**   | Igen |
+| **Érintett területek**         | Alkalmazás |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult: 2023. március 1-jével úgy tervezjük, hogy a továbbiakban nem lesz támogatva a Finnország áfajelentése (finn jelentéselrendezés). Az adóbevallási **modellben új áfabevallási TXT** **és áfabevallási Excel (FI)** elektronikus jelentési formátumok (**ER)** találhatók. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10024-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.24 kiadásában
 
@@ -41,11 +55,11 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Lecserélve Svédországra vonatkozó új áfabevallási [tervvel, áfabevallással](../localizations/emea-swe-vat-declaration-sweden.md) |
+| **Elavulás/eltávolítás oka** | Lecserélve Svédországra vonatkozó új áfabevallási tervvel, [áfabevallással](../localizations/emea-swe-vat-declaration-sweden.md) |
 | **Felváltotta másik szolgáltatás?**   | Igen |
-| **Érintett területek**         | Pályázat |
-| **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: 2022. december 1-jéig úgy tervezjük, hogy a továbbiakban nem lesz támogatva a Svéd Áfajelentés (svéd jelentéselrendezés). Az adóbevallási modellben új ÁFAbevallási XML-formátum és áfabevallási Excel (SE) elektronikus **jelentési** **formátumok** (ER) vannak **bevetve**. |
+| **Érintett területek**         | Alkalmazás |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult: 2022. december 1-jéig úgy tervezjük, hogy a továbbiakban nem lesz támogatva a Svéd Áfajelentés (svéd jelentéselrendezés). Az adóbevallási **modellben új ÁFAbevallási XML- (SE**) **és áfabevallási Excel -formátumok (SE)** **formátumok** bevezetettek. |
 
 ### <a name="vat-statement-for-austria-design-based-on-reporting-codes"></a>Áfabevallás Ausztriában (jelentési kódokon alapuló terv)
 
@@ -55,13 +69,13 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Lecserélve egy új áfabevallási tervvel, [áfabevallással Ausztriában](../localizations/emea-aut-vat-declaration-austria.md) |
 | **Felváltotta másik szolgáltatás?**   | Igen |
-| **Érintett területek**         | Pályázat |
-| **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: 2022. december 1-éig azt terveztük, hogy az áfabevallási modellen már nem lesz támogatva az elektronikus **bevallási** (AT) **formátum**. Az adóbevallási modellben új ÁFAbevallási XML- és áfabevallási Excel-formátumok **·** **·** (AT) is **bevezethetők**. |
+| **Érintett területek**         | Alkalmazás |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult: 2022. december 1-éig azt terveztük, **hogy az áfabevallási modellen már nem lesz támogatva az elektronikus bevallási (AT)** **formátum**. Az **adóbevallási modellben új ÁFAbevallási XML** **- és áfabevallási Excel-formátumok (AT)** **is bevezethetők**. |
 
 ### <a name="elster-declaration-for-germany-design-based-on-reporting-codes"></a>ELSTER nyilatkozat Németország számára (terv a jelentési kódok alapján)
 
-[Áfabevallás](../localizations/emea-de-vat-declaration.md)</br>
+[Áfakimutatás](../localizations/emea-de-vat-declaration.md)</br>
 [Elektronikus adóbevallás beállítása Németország számára](../../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md)</br>
 [Elektronikus áfabevallás (ELSTER) továbbítása](../localizations/tasks/de-00003-electronic-transmission-elster.md)
 
@@ -69,9 +83,9 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 |------------|--------------------|
 | **Elavulás/eltávolítás oka** | Lecserélve egy új áfabevallási tervre, [egy németországi áfabevallásra](../localizations/emea-deu-vat-declaration-germany.md) |
 | **Felváltotta másik szolgáltatás?**   | Igen |
-| **Érintett területek**         | Pályázat |
-| **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: 2022. december 1-jére már nem terveztük az Elster (DE) és az Elster elektronikus **jelentés** **·** (ER) formátumok támogatását. Az adóbevallási modellben új ÁFAbevallási XML- és áfabevallási Excel-formátumok **·** (DE) is **·** **bevezethetők**. |
+| **Érintett területek**         | Alkalmazás |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult: 2022 **. december 1-jére már nem terveztük az Elster (DE)** **és az Elster elektronikus** jelentés (ER) formátumok támogatását. Az **adóbevallási modellben új ÁFAbevallási XML** **- és áfabevallási Excel-formátumok (DE)** **is bevezethetők**. |
 
 ### <a name="ob-declaration-for-netherlands-design-based-on-reporting-codes"></a>Holland ob-nyilatkozat (jelentéskódok alapján terv)
 
@@ -79,11 +93,11 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Lecserélve a holland áfabevallás új [tervére, áfabevallásra](../localizations/emea-nl-vat-declaration-netherlands.md) |
+| **Elavulás/eltávolítás oka** | Lecserélve a holland áfabevallás új tervére, [áfabevallásra](../localizations/emea-nl-vat-declaration-netherlands.md) |
 | **Felváltotta másik szolgáltatás?**   | Igen |
-| **Érintett területek**         | Pályázat |
-| **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: 2022. december 1-éig azt tervezjük, hogy a továbbiakban nem lesz támogatva az OB nyilatkozat (NL) és a **OB** **nyilatkozatmodell elektronikus** jelentési (ER) formátuma. Az adóbevallási modellben új ÁFAbevallási XML- és **áfabevallási** **Excel-formátumok** (NL) is **bevezetett**. |
+| **Érintett területek**         | Alkalmazás |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult: 2022. december 1-éig azt tervezjük, **hogy a továbbiakban nem lesz támogatva az OB nyilatkozat (NL)** **és a OB nyilatkozatmodell** elektronikus jelentési (ER) formátuma. Az **adóbevallási modellben új ÁFAbevallási XML** **- és áfabevallási Excel-formátumok (NL)** **is bevezetett**. |
 
 ## <a name="features-removed-or-deprecated-in-the-finance-10020-release"></a>Eltávolított vagy elavult szolgáltatások a Finance 10.0.20 kiadásában
 

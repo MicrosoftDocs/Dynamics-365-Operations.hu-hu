@@ -1,7 +1,7 @@
 ---
 title: Várakozási napok konfigurálása
 description: A Microsoft Dynamics 365 Human Resources rendszerben a várakozási napokkal hozhatók létre havi mérföldkövek, amelyek a juttatási konstrukciókhoz használhatók.
-author: andreabichsel
+author: twheeloc
 ms.date: 04/06/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b718e016203c0492eef490c3997e3b143b5c85ed
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ba08feacf48b9ae4ec312b5382892719f70c3dda
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068209"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8533881"
 ---
 # <a name="configure-waiting-days"></a>Várakozási napok konfigurálása
 

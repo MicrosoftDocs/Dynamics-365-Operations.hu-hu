@@ -1,5 +1,5 @@
 ---
-title: Számlázási ütemezés – áttekintés
+title: Számlázási ütemezések létrehozása
 description: Ez a témakör bemutatja a számlázási ütemezések létrehozásához, törléséhez és szerkesztéséhez szükséges beállításokat.
 author: JodiChristiansen
 ms.date: 02/09/2022
@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: e42be3f359e96f0861354ebc8e1e9c87478a5d89
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
-ms.translationtype: HT
+ms.openlocfilehash: 2c4e3c0edadd00fd3a3f2ae9968248a226147996
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182710"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462587"
 ---
-# <a name="billing-schedule-overview"></a>Számlázási ütemezés – áttekintés
+# <a name="create-billing-schedules"></a>Számlázási ütemezések létrehozása
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 A Számlázási **ütemezés** lapon lehet számlázási ütemezéseket létrehozni, törölni vagy szerkeszteni. A számlázási ütemezések listáját is áttekintheti. Számlázási ütemezés létrehozásakor annak alapértelmezett értékeit a társított számlázási csoport határozza meg. További információk az Ismétlődő szerződés számlázási paraméterei **oldalon vannak beállítva**.
 
@@ -171,7 +170,7 @@ Ezenkívül a Következő gombok érhetők el a **Megújítások** lapon.
 
 | Gomb | Leírás |
 |--------|-------------|
-| Nemszámlázandó bevételnapló-bejegyzés ellenőrzése | A nemszámlázandó bevétel szolgáltatást használt cikkek minden módosításának megtekintése. |
+| Nem számlázott bevételnapló-bejegyzésének auditálása | A nemszámlázandó bevétel szolgáltatást használt cikkek minden módosításának megtekintése. |
 | Megújítási időszak hozzáadása | A cikk megújítási időtartamának hozzáadása. Az új megújítási időszak kezdő dátuma az előző időszak záró dátuma utáni következő dátum. A **megújítás záró dátuma**, **a halasztás kezdő** dátuma, **a halasztás záró dátuma**, **a Cikkmennyiség** **és az Egységár** mező frissíthető. |
 | Megújítási időszak módosítása | <p>Megújítási időszak módosítása Az első kifejezéshez a kezdő naplóbejegyzés létrehozása előtt módosíthatja a halasztás kezdő és záró dátumát. A következő feltételek szerint a kezdő dátum nem módosítható. Ez mindig az előző időszak vége utáni következő dátum.</p><p>Ha a módosítási időszak után létezik megújítási időszak, akkor a kifejezés dátumai nem módosíthatók. Ebben az esetben csak a **megújítási** **cikk** Mennyiség és Egységár mezői frissíthetők.</p><p>Például három feltétel létezik. <ul><li>Az első kifejezés nem módosítható, mert már elkezdődött.</li><li>Második fogalomként csak a mennyiség és az egységár módosítható.</li><li>Harmadik fogalomként a kezdő dátum kivételével minden érték módosítható. Ezenkívül az Ütemezés **sablonból** beállítással olyan halasztás-ütemezést lehet létrehozni, amely a nem kiszámlázatlan bevételi cikk sablonja alapján jött létre. Ha ez a beállítás **Igen**, válassza **ki** a halasztássablont a Sablon mezőben, és módosítsa a halasztás kezdő és záró dátumát, ahogy az szükséges. Az ezt követő megújítási feltételek ugyanazt a halasztássablont használják. A halasztássablon azonban módosítható.</p></li></ul> |
 

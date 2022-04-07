@@ -1,7 +1,7 @@
 ---
 title: Bérlista-integrációs API bemutatása
 description: Ez a témakör a Dynamics 365 Human Resources bérszámfejtés integrációs API-ját írja le.
-author: andreabichsel
+author: twheeloc
 ms.date: 02/03/2021
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2021-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 4c71d31d7045c73097b81671793181a29dcac3b5
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3743561e3ea3c798c37d71d851eb6b197c8d1c41
+ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064941"
+ms.lasthandoff: 04/02/2022
+ms.locfileid: "8533826"
 ---
 # <a name="payroll-integration-api-introduction"></a>Bérlista-integrációs API bemutatása
 

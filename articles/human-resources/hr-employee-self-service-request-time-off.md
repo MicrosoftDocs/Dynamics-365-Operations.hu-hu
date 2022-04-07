@@ -1,5 +1,5 @@
 ---
-title: Szabadság kérése
+title: Távollét kérelmezése
 description: Szabadság kérése a Dynamics 365 Human Resources rendszerben.
 author: twheeloc
 ms.date: 11/03/2021
@@ -12,20 +12,20 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7ca3fd03cda720187cb9c21b7f3ef3545c8901e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 92e9f6cc04a2dae49267cf92bdd309e82ee6561a
+ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066775"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8509640"
 ---
-# <a name="request-time-off"></a>Szabadság kérése
+# <a name="request-time-off"></a>Távollét kérelmezése
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+>[!Important]
+>Az ebben a témakörben említett funkciók jelenleg csak a különálló Dynamics 365 Human Resources rendszerében lévő vevőknek érhetők el. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -45,11 +45,11 @@ A Dynamics 365 Human Resources rendszerben elküldheti a szabadságra vonatkozó
 
 6. Ha elkészült, válassza a **Küldés** elemet a kérés elküldéséhez. Ellenkező esetben válassza a **Mentés vázlatként** elemet.
 
-Azok az alkalmazottak, akik új szabadságkérelmet nyújtanak be különböző szabadságtípusokat választanak ki a szabadságkérelem létrehozásához. Az egy szabadságkérés részeként kiválasztott összes szabadságtípushoz azonban ugyanazt a szabadságegységet kell választani. Az alkalmazottak megtekinthetik az egyes szabadságtípusokhoz tartozó szabadságegységeket a webhelyen **Kérjen szabadságot** oldalon.
+Azok az alkalmazottak, akik új szabadságkérelmet nyújtanak be különböző szabadságtípusokat választanak ki a szabadságkérelem létrehozásához. Az egy szabadságkérés részeként kiválasztott összes szabadságtípushoz azonban ugyanazt a szabadságegységet kell választani. Az alkalmazottak a Szabadság kérelmezve **lapon megtekinthetik az egyes szabadságtípusokkal mértékegységeket**.
 
 ## <a name="add-an-attachment-to-an-existing-request"></a>Melléklet hozzáadása egy meglévő kéréshez
 
-Ha egy már létező szabadságkérést frissít, hozzáadhat egy mellékletet. Ezenkívül megtekintheti az összes kapcsolódó kérést egy adott dátumra vonatkozóan.
+Ha egy már létező szabadságkérést frissít, hozzáadhat egy mellékletet. Az adott dátumra vonatkozó összes kérelem is látható.
 
 ## <a name="view-leave-balances"></a>Szabadságegyenlegek megjelenítése
 
@@ -61,13 +61,13 @@ Ha egy már létező szabadságkérést frissít, hozzáadhat egy mellékletet. 
 
 1. Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Részletek** (...) lehetőséget a **Szabadságegyenlegek** csempén.
 
-2. A jóváhagyott szabadságkérelmek megtekintéséhez válassza a lehetőséget **Jóváhagyott szabadság**. A függőben lévő szabadságkérelmek megtekintéséhez válassza a lehetőséget **Szabadidő kérések**.
+2. A jóváhagyott idő-/idő-időigénylések megtekintéséhez válassza a Jóváhagyva **időkorét lehetőséget**. A függőben lévő időkorrek mertek megtekintéséhez válassza az Idő-idő **igénylések lehetőséget**.
 
-## <a name="cancel-time-off-requests"></a>Törölje a szabadságigényeket
+## <a name="cancel-time-off-requests"></a>Idő-/idő-visszavonási kérelmek
 
 1. Az **Alkalmazotti önkiszolgáló rendszer** munkaterületen válassza a **Szabadság megtekintése** lehetőséget a **Szabadságegyenlegek** csempén.
 
-2. A **Szabadidő** oldalon válasszon ki egy vagy több szabadságkérést a törléshez.
+2. Az Idő **szerint oldalon** válassza ki a visszavonni kívánt idő-idő igényléseket.
 
 3. Kattintson a **Törlés** gombra.
 

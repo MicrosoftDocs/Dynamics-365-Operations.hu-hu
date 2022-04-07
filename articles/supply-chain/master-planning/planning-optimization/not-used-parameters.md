@@ -1,22 +1,22 @@
 ---
 title: A tervezésoptimalizálás által nem használt paraméterek
 description: Ez a témakör felsorolja azokat a paramétereket, amelyeket a tervezésoptimalizálás a működése során jelenleg nem vesz figyelembe.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/02/2021
 ms.topic: article
 ms.search.form: ReqParameters, ReqGroup, ReqItemTable, ReqPlanSched, EcoResProductDetailsExtended, InventItemOrderSetup, WorkCalendarTable, PdsDispositionMaster
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-29
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 32e5ceb607d2c4f3d9794421db5382441ac30467
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
-ms.translationtype: HT
+ms.openlocfilehash: 82bdd522b5b6ca1cf149f9fea508d8d6a96a1466
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408230"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469114"
 ---
 # <a name="parameters-not-used-by-planning-optimization"></a>A tervezésoptimalizálás által nem használt paraméterek
 
@@ -60,23 +60,11 @@ A tervezésoptimalizálás nem használja a következő paramétereket és beál
 
 - **Általános** Gyorslap:
 
-  - **Pozitív napok** – *a pozitív napok* értéke nincs használva. A tervezési optimalizálás során a pozitív napok végtelennek számítanak.
+  - **Pozitív napok** – A *pozitív napok* értékét nem használjuk. A tervezésoptimalizálással a pozitív napok végtelennek tekinthetők.
   - **Aktuális készletfelhasználás** – az *Aktuális készletfelhasználás* támogatása függőben van.
   - **A megadott anyagjegyzék- vagy receptúraverzió használata** – a *Képletverziók társ- vagy melléktermékekkel* támogatása függőben van.
   - **A megadott útvonalverzió használata** – az *Igény megadott darajegyzék- vagy meghatározott útvonal-követelményekkel* támogatása függőben van.
 
-- **Műveletek** gyorslap:
-
-  - **Műveletküzenet** – a *Műveletek* támogatása függőben van.
-  - **Műveleti időkorlát** – a *Műveletek* támogatása függőben van.
-  - **Árrés halasztás** – a *Műveletek* támogatása függőben van.
-  - **Előleg árrés** – a *Műveletek* támogatása függőben van.
-  - **Alapdátum** – a *Műveletek* támogatása függőben van.
-  - **Előleg** – a *Műveletek* támogatása függőben van.
-  - **Halasztás** – a *Műveletek* támogatása függőben van.
-  - **Csökkentés** – a *Műveletek* támogatása függőben van.
-  - **Növelés** – a *Műveletek* támogatása függőben van.
-  - **Származtatott műveletek** – a *Műveletek* támogatása függőben van.
 
 - **Egyéb** gyorslap:
 
@@ -149,7 +137,6 @@ A tervezésoptimalizálás nem használja a következő paramétereket és beál
   - **Előrejelzési terv** – függőben van a további *Előrejelzés* támogatása.
   - **Kapacitás** – az *Ütemezés* támogatása függőben van.
   - **Folytonossági terv** – a *Folytonosság ütemezésének* támogatása függőben van.
-  - **Műveletküzenet** – a *Műveletek* támogatása függőben van.
   - **Számított késések** – a *Számított késések* további támogatása függőben van.
   - **Sorrendbe állítás** – a *Termelés* támogatása függőben van.
 
@@ -161,9 +148,9 @@ A tervezésoptimalizálás nem használja a következő paramétereket és beál
   - **A számított késés hozzáadása a szükségletdátumhoz** (a **Tervezett átvitel** szakaszban) – a *Számított késések* támogatása függőben van.
   - **A számított késés hozzáadása a szükségletdátumhoz** (a **Tervezett kanban** szakaszban) – a *Számított késések* támogatása függőben van.
 
-- **Műveletkértes üzenet** gyorsattab:
+- **Műveletkérő üzenet** gyorslapja:
 
-  - **Frissítés elhalasztási dátuma szükségletdátumként** – ez a paraméter már nincs tervezésoptimalizálásban.
+  - **Elhalasztott dátum frissítése követelménydátumként** – Ez a paraméter a Tervezésoptimalizálás funkcióval megszűnik.
 
 - **Sorrendbe állítás** gyorslap:
 

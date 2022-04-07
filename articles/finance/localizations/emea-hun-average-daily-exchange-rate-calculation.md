@@ -2,7 +2,7 @@
 title: Átlagos és napi árfolyam kiszámítása
 description: Ez a témakör azt mutatja be, hogyan lehet kiszámítani a kimenő banki és a készpénzfizetési tranzakciók átlagos árfolyamát.
 author: anasyash
-ms.date: 01/04/2021
+ms.date: 03/30/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Hungary
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-ms.openlocfilehash: 7f4a4184ca199a55513d1f3b11113ab8bfdab29e720867bc3a5ad81196d75eab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: fcd107b504eee317cf0ca70cb615b275da43520b
+ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714431"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8509257"
 ---
 # <a name="calculate-average-and-daily-exchange-rates"></a>Átlagos és napi árfolyam kiszámítása
 
@@ -140,6 +140,9 @@ A második sor **92,0000** értékének kiszámítása (100 * 0,91 + 200 * 0,92 
 A harmadik sorhoz tartozó **92,0000** érték számítása (100 * 0,91 + 200 * 0,92 + 100 * 0,93-150 * 0,92)/(100 + 200 + 100-150). Három korábbi bejövő tranzakciót és egy korábbi kimenő tranzakciót vettek figyelembe a képletben.
 
 Az átlagos árfolyam-számítási mód elérhető a kimenő banki tranzakcióhoz. Figyelembe veszi a feladott banki tranzakciókat (az aktuális főkönyvi naplóban feladott és fel nem adott banki tranzakciókat is, amelyek a figyelembe vett banki tranzakció előtt jöttek létre) azon időszakra vonatkozóan, amely a párbeszédpanelen megadott „kezdő dátum” beállításnál kezdődik, és a kimenő banki tranzakció dátumára végződik. Ez a módszer ezeknek a tranzakcióknak az átlagos átváltási árfolyamát úgy számítja ki, hogy az összes korábbi tranzakció teljes összegét a könyvelési pénznemben minden korábbi tranzakció teljes összegével elosztja. A program ezután a létrejövő árfolyamot hozzárendeli a kimenő tranzakcióhoz. Az átlagos átváltási árfolyam kiszámítása olyan dimenzióértékek alapján történik, amelyek aktívak abban a számlastruktúrában, amelyhez a készpénzes vagy banki főkönyvi számla tartozik.
+
+   > [MEGJEGYZÉS!] Ha **csak a fő számlakód alapján szeretné kiszámítani a készpénz- és bankszámlák átlagos átváltási árfolyamát, a pénzügyi dimenziókat nem figyelembe véve, engedélyezze a funkciót (** Magyarország) **Az** átlagárfolyamot csak a funkciókezelés munkaterületén, a fő számlakód alapján számítsa ki.
+ 
 
 A Napi árfolyamok és az Átlagos árfolyam-módszerek a bizonylatnaplóban (**Készpénz-és banki kezelés** \> **Készpénz-tranzakciók** \> **Bizonylatnaplók**) megadott pénztári tranzakciókra is használhatók. A banki tranzakcióknál használt algoritmus az átlagos arány kiszámítására is szolgál.
 

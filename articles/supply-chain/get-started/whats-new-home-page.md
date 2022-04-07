@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 55547e51dbb8bdc33bc729b10b0bded11e36bd9e
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
-ms.translationtype: HT
+ms.openlocfilehash: 4b92c86d6ef2e9462316ddd344a516283329be0d
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384388"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462182"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management rendszerben
 
@@ -32,7 +32,7 @@ Ha látni szeretné, hogy mi új vagy módosult a Dynamics 365 Supply Chain Mana
 | Verzió | Szám felépítése | Automatikus frissítés rendelkezésre állása | További információk |
 |---|---|---|---|
 | 10.0.26 | 10.0.1192 | május 2022. | [A Dynamics 365 Supply Chain Management 10.0.26 előzetes verziója](whats-new-scm-10-0-26.md) |
-| 10.0.25 | 10.0.1149 | április 2022. | [A Dynamics 365 Supply Chain Management 10.0.25 előzetes verziója](whats-new-scm-10-0-25.md) |
+| 10.0.25 | 10.0.1149 | április 2022. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.25-es verziójában](whats-new-scm-10-0-25.md) |
 | 10.0.24 | 10.0.1084 | február 2022. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.24-es verziójában](whats-new-scm-10-0-24.md) |
 | 10.0.23 | 10.0.1037 | Január 2022. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.23-es verziójában](whats-new-scm-10-0-23.md) |
 | 10.0.22 | 10.0.995 | 2021. november | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.22-es verziójában](whats-new-scm-10-0-22.md) |

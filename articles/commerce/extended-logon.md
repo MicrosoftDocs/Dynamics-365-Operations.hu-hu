@@ -1,8 +1,8 @@
 ---
-title: Kiterjesztett bejelentkezés funkció beállítása MPOS-hoz és Pénztár felhőhöz
-description: A témakör magába foglalja a Cloud POS és Retail Modern POS (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit.
-author: boycezhu
-ms.date: 09/07/2021
+title: A kiterjesztett bejelentkezési képesség beállítása és használata
+description: Ez a témakör azt ismerteti, Microsoft Dynamics 365 Commerce hogyan lehet beállítani és használni a pénztári alkalmazás kiterjesztett bejelentkezési képességét.
+author: boycez
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,56 +16,52 @@ ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: 0cc3d3a3cadbc614e82b8cc7ae0b78406247cece
-ms.sourcegitcommit: efcb853a68a77037cca23582d9f6f96ea573727a
+ms.openlocfilehash: d211ecfe1550f6093e1d35e7c2b37c036b50dd4a
+ms.sourcegitcommit: 5aebb181004eb63210503fb566dcda5c55032bee
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/07/2021
-ms.locfileid: "7478671"
+ms.lasthandoff: 03/29/2022
+ms.locfileid: "8491439"
 ---
-# <a name="set-up-extended-logon-functionality-for-mpos-and-cloud-pos"></a>Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hez
+# <a name="set-up-and-use-the-extended-logon-capability"></a>A kiterjesztett bejelentkezési képesség beállítása és használata
 
 [!include [banner](includes/banner.md)]
 
-A témakör magába foglalja a Cloud POS és Retail Modern POS (MPOS) kiterjesztett bejelentkezés beállításainak lehetőségeit.
+Ez a témakör azt ismerteti, Microsoft Dynamics 365 Commerce hogyan lehet beállítani és használni a pénztári alkalmazás kiterjesztett bejelentkezési képességét.
 
-## <a name="setting-up-extended-logon"></a>Kiterjesztett bejelentkezés beállítása
+A Cloud POS (CPOS) és a Modern POS (MPOS) egy kiterjesztett bejelentkezési funkciót biztosít, amely lehetővé teszi a kiskereskedelmi üzlet dolgozóinak, hogy egy vonalkód beolvasásával vagy egy kártya mágnescsíkolvasóval történő leolvasásával jelentkezzenek be a POS-alkalmazásba.
 
-A vonalkódmaszkok beállítását megtalálja a következő helyen: **Retail és Commerce** &gt; **Csatornabeállítás** &gt; **Pénztárbeállítás** &gt; **Pénztárprofilok** &gt; **Funkcióprofilok**. A **Funkciók** gyorslap a következő kiterjesztett belépéshez tartozó beállításokat tartalmazza.
+## <a name="set-up-extended-logon"></a>Kiterjesztett bejelentkezés beállítása
 
-### <a name="staff-bar-code-logon"></a>Munkatárs - vonalkódos bejelentkezés
+A következő lépések szerint állíthatja be a kiskereskedelmi üzlet POS-pénztárgépeibe való kiterjesztett bejelentkezést.
 
-Amikor a **Személyzeti vonalkódos bejelentkezés** beállítás engedélyezve van, a pénztárhoz tartozó kiterjesztett bejelentkezéssel rendelkező dolgozók be tudnak lépni vonalkód használatával.
+1. A Commerce Headquarters alkalmazás a **Retail and Commerce \> Channel setup \> POS beállítási \> POS-profilok funkcióprofiljainál \> használható**. 
+2. A bal oldali navigációs ablakban válassza ki a kiskereskedelmi üzlethez társított funkcióprofilt.
+3. A Funkciók **gyorséta a További** **·** **bejelentkezési** hitelesítési beállításoknál állítsa a következő Igen vagy Nem **gombra:**
 
-### <a name="staff-bar-code-logon-requires-password"></a>A személyzeti vonalkódos bejelentkezéshez jelszó szükséges
+    - **Személyzeti vonalkódos bejelentkezés** – **Akkor** állítsa Igen beállításra ezt a lehetőséget, ha azt szeretné, hogy a dolgozók vonalkód beolvasással jelentkezzenek be a POS-be. 
+    - **A személyzeti vonalkódos** bejelentkezéshez jelszó szükséges – **Akkor** állítsa Igen beállításra ezt a beállítást, ha azt szeretné, hogy a dolgozók egy jelszót adjanak meg, amikor vonalkód beolvasásával jelentkeznek be a POS-be.
+    - **Munkatársak kártyás bejelentkezése** – Akkor állítsa **Igen** beállításra ezt a lehetőséget, ha azt szeretné, hogy a dolgozók kártya letöltésével jelentkezzenek be a POS-be.
+    - **A személyzeti kártyás** bejelentkezéshez jelszó szükséges – **Akkor** állítsa Igen beállításra ezt a lehetőséget, ha azt szeretné, hogy a dolgozók jelszót adjanak meg, amikor kártya le.
 
-Ha a **A személyzeti vonalkódos bejelentkezéshez jelszó szükséges** beállítás engedélyezve van, a személyzeti vonalkódos bejelentkezés csak azt a dolgozót engedi belépni, akinek van jogosultsága az aktuális kiterjesztett belépéshez. A dolgozóknak be kell írniuk jelszavukat akkor is, ha ez a beállítás van engedélyezve.
+A vonalkód vagy kártya olyan hitelesítő adatokhoz van társítva, amelyek hozzárendelhetőek egy dolgozóhoz. A hitelesítő adatoknak legalább hat karakterből kell állni. Az első öt karaktert tartalmazó karakterláncnak egyedinek kell lennie, és a rendszer olyan *hitelesítőadat*-azonosítónak számít, amely a dolgozók ki keresse őket. A fennmaradó karaktereket a rendszer a biztonság ellenőrzéséhez használja. Van például két kártya, amelyek egyike a 12345DGYDEYTDW hitelesítő adatokkal rendelkezik, és amelyek egyike a 12345EWBDAJH hitelesítő adatokkal rendelkezik. Mivel ennek a két kártyanek ugyanaz a hitelesítőadat-azonosítója (12345, nem lehet mindkettőt sikeresen hozzárendelni a dolgozókhoz).
 
-### <a name="staff-card-logon"></a>Munkatárs - kártyás bejelentkezés
-
-Amikor a **Személyzeti kártyás bejelentkezés** beállítás van engedélyezve, a pénztárhoz tartozó kiterjesztett bejelentkezéssel rendelkező dolgozók be tudnak lépni mágnescsík használatával.
-
-### <a name="staff-card-logon-requires-password"></a>A személyzeti kártyás bejelentkezéshez jelszó szükséges
-
-Ha a **A személyzeti kártyás bejelentkezéshez jelszó szükséges** beállítás engedélyezve van, a személyzeti kártyás bejelentkezés csak azt a dolgozót engedi belépni, akinek van jogosultsága az aktuális kiterjesztett belépéshez. A dolgozóknak be kell írniuk jelszavukat akkor is, ha ez a beállítás van engedélyezve.
-
-## <a name="assigning-an-extended-logon"></a>Hozzárendelés kiterjesztett bejelentkezéshez
+## <a name="assign-extended-logon"></a>Kiterjesztett bejelentkezés hozzárendelése
 
 Alapesetben csak a menedzser tud kiterjesztett bejelentkezést hozzárendelni a dolgozókhoz. Kiterjesztett bejelentkezés hozzárendeléséhez, kattintson a **Kiterjesztett bejelentkezés** opcióra a pénztárban. Ezután keressen rá a dolgozóra úgy, hogy begépeli annak dolgozói azonosítóját a keresőmezőbe. Válassza ki a dolgozót, majd kattintson az **Hozzáadás** gombra. A következő oldalon húzza le vagy olvassa be a kiterjesztett belépést, hogy hozzárendelhesse azt a dolgozóhoz. Ha a lehúzás vagy a beolvasás sikeresen megtörtént, az **OK** gomb elérhetővé válik. Kattintson a **OK** gombra, hogy elmentse az adott dolgozóhoz kapcsolódó kiterjesztett bejelentkezést.
 
-## <a name="deleting-an-extended-logon"></a>Kiterjesztett bejelentkezés törlése
+## <a name="delete-extended-logon"></a>Kiterjesztett bejelentkezés törlése
 
 A dolgozó kiterjesztett bejelentkezésének törléséhez keresse meg a dolgozót a **Kiterjesztett bejelentkezés** művelet használatával. Válassza ki a dolgozót, majd kattintson az **Törlés** gombra. Minden (az adott dolgozóhoz tartozó) kiterjesztett bejelentkezési hitelesítő adat törlődik.
 
-## <a name="extending-extended-logon"></a>Kiterjesztett bejelentkezés kiterjesztése
+## <a name="use-extended-logon"></a>Kiterjesztett bejelentkezés használata
 
-A kiterjesztett bejelentkezés alapból csak öt lényeges karaktert enged meg használni egyedi azonosítóként. Ha például két olyan kártyát konfigurál, amelyek "1234567" és "1234578" azonosítóval rendelkeznek, akkor mindkettő "12345" értékű lesz. További karaktereket támogató kiterjesztést is fel lehet építeni. A részletes útmutatást itt talál: [Kiterjesztett bejelentkezési funkció beállítása az MPOS-hez és a Cloud POS-hoz](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/).
+Ha be van állítva a kiterjesztett bejelentkezés, és a dolgozóhoz vonalkód vagy mágnescsík van hozzárendelve, akkor a dolgozónak egyszerűen le kell húzza vagy be kell olvasnia a kártyáját, miközben a POS bejelentkezési lapja megjelenik. Ha a bejelentkezés folytatása előtt jelszó is szükséges, a dolgozónak meg kell adnia a jelszavát.
 
-A bejelentkezés szolgáltatás kibővíthető, így pedig további beléptető szerkezetek is használhatóvá válnak (például: tenyér beolvasó). További részletek a Pénztár kiterjesztés dokumentációban találhatók.
+## <a name="extend-extended-logon"></a>Kiterjesztett bejelentkezés kiterjesztése
 
-## <a name="using-extended-logon"></a>Kiterjesztett bejelentkezés használata
+A kiterjesztett bejelentkezési képesség azonnali megvalósítása megköveteli, hogy a hitelesítő adatok minimális hossza hat karakter legyen, és az első öt karakter (a hitelesítő azonosító) egyedi legyen. Eredetileg olyan mintaként készült, amelyet a fejlesztők testreszabhatnak egy adott megvalósítás követelményeinek megfelelően. (Például testreszabható, hogy több karaktert támogat, vagy különböző biztonsági ellenőrzési szabályokat használjon.) A kiterjesztett bejelentkezéshez [használható bővítmények felépítéséről az MPOS és a Felhő POS](https://cloudblogs.microsoft.com/dynamics365/no-audience/2018/12/14/extending-the-extended-logon-functionality-for-mpos-and-cloud-pos/) kiterjesztett bejelentkezési funkcióinak bővítése nyújt tájékoztatást.
 
-Amennyiben a kiterjesztett bejelentkezés konfigurációja megtörtént és a dolgozóhoz hozzá lett rendelve jelszó vagy mágnescsík, a dolgozónak csupán le kell húznia vagy beolvastatnia a kártyáját, míg a pénztár belépő oldala meg van jelenítve. Ha a jelszó is szükséges a bejelentkezéshez, a dolgozónak azt is szükséges beütnie..
-
+A bejelentkezési szolgáltatás kiterjeszthető további kiterjesztett bejelentkezési eszközök, például a tenyérolvasók támogatására. A további tudnivalókat lásd [a POS extensibility dokumentációjában](dev-itpro/pos-extension/pos-extension-overview.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

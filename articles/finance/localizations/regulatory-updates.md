@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 663b7d3162af6d385bc9c445b1e98cf5f74a1471
-ms.sourcegitcommit: f2a78e0d7d461ca843ac2f9abff7690275db9196
+ms.openlocfilehash: 19aadf844f239ef06ca4d9dbe60b597228d72e52
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8105564"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470093"
 ---
 # <a name="regulatory-updates"></a>Jogszabály-követési frissítések
 
@@ -39,36 +39,26 @@ A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan te
 
 |Ország/régió|Kiadás dátuma|Kiadás verziója|Jogszabály-követési frissítés|
 |--------------------|---------------|-------|-------| 
-|      Ausztria         |   2021. augusztus      | 10.0.22      |   Áfabevallás XML formátumban és előnézeti kép az Excel programban   |
-|      Ausztria         |   Szeptember 2021.      | 10.0.22HF      |   Az Intrastat-formátum frissítése 2022-től kezdődik - a származási ország/régió és a partner áfaazonosítója kötelezővé válik az elküldések esetében.   |
-|      Belgium        |   Október 2021.      | 10.0.22HF     |   Az Intrastat-tranzakciókódok 2022-től 2 számjegyre változnak.  |
-|      Brazília         |   2021. augusztus      | 10.0.22      |   NT-e NT2020.006 – A digitális platform közvetítőjének azonosítója (Elrendezési és ellenőrzési szabályok frissítései)   |
-|      Brazília         |   december 2021.         | 10.0.22, 10.0.23, 10.0.24         |    SPED Fiscal - 2022-es elrendezés  |
-|      Cseh Köztársaság         |   Október 2021.         | 10.0.23HF         |     Az Intrastat-formátum frissítése 2022-től kezdődik - a származási ország/régió és a partner áfaazonosítója kötelezővé válik az elküldések esetében.  |
-|      Dánia         |   december 2021.         | 10.0.22HF         |    Az Intrastat formátum frissítése 2022-től  |
-|      Észtország         |   december 2021.      | 10.0.22HF      |   Az Intrastat-formátum frissítése 2022-től kezdődik - a származási ország/régió és a partner áfaazonosítója kötelezővé válik az elküldések esetében.  |
-|      Finnország         |   2021. november         | 10.0.22HF         |    Az Intrastat-formátum frissítése 2022-től kezdődik.  |
-|      Németország        |   2021. augusztus       | 10.0.22HF      |   Az Intrastat INSTAT XML-formátum frissítése 2022-től kezdődik. Az Intrastat-formátum TXT nem alkalmazható 01.07.2021  |
-|      Németország        |   Október 2021.       | 10.0.23      |   XML-áfabevallás és előnézeti kép excelben (az új terv az adókód pénznemében, a fordított fizetésű funkcióval működő mezőben való munkavégzés után végrehajtható nem DE jogi személyeknél, és több jogi személytől is be lehet hajtani adótranzakciót)  |
-|      Olaszország         |   2021. november         | 10.0.22HF, 10.0.23HF, 10.0.24         |    Elektronikus számlázás a határokon átívelő tranzakciókhoz  |
-|      Mexikó         |   2021. november      | 10.0.22      |   Carta de Porte kiegészítés CFDI-dokumentumokban   |
+|      Brazília         |   december 2021.         | 10.0.24, 10.0.25         |    SPED Fiscal - 2022-es elrendezés  |
+|      Brazília         |   március 2022.    | 10.0.24HF, 10.0.25HF         |    ICMS-DIFAL-begyűjtés a nem adófizetőre irányuló műveletekben (kiegészítő törvénysz. 190/22)  |
+|      Dánia         |   Január 2022.  | 10.0.25HF         |    Áfabevallás előnézete az Excel programban |
+|      Franciaország   |   2021. november | 10.0.25         |    Francia adatarchiválási export (FEC) - "Hiányzó számok indoklása" melléklet |
+|      Olaszország         |   2021. november         | 10.0.24         |    Elektronikus számlázás a határokon átívelő tranzakciókhoz  |
+|      Olaszország         |   február 2022. | 10.0.24HF, 10.0.25HF| Egyedi tanúsítvány - 2022 - Dynamics 365 Finance  |
+|      Litvánia|   február 2022. | 10.0.24HF, 10.0.25HF | IMAF-változások a következőben2022-01-01 <a0/2022-01-01< Dynamics 365 Finance  |
 |      Mexikó         |   december 2021.      | 10.0.24      |   Carta de Porte kiegészítés a 2.0-s verzióhoz  |
-|      Hollandia        |   Október 2021.      | 10.0.22HF      |   Kétjegyű tranzakciókódok az Intrastat-fájlformátumban 2022-től  |
-|      Új-Zéland         |   2021. augusztus      | 10.0.22    |   GST nyilatkozat - GST101A  |
 |      Norvégia        |   2021. november      | 10.0.24      |   Áfabevallási formátum 2022 közvetlen benyújtással - Dynamics 365 Finance |
-|      Omán         |   2021. augusztus      | 10.0.22      |   Áfabevallás - 1-es verzió |
-|      Lengyelország          |   Október 2021.     | 10.0.23, 10.0.24     |   JPK_V7M - új sémaverzió 2022. januárból |
+|      Lengyelország          |   Október 2021.     | 10.0.24     |   JPK_V7M - új sémaverzió 2022. januárból |
 |      Lengyelország          |   2021. november     | 10.0.24HF     |   Éves jelentés a kereskedelmi tranzakciók fizetési dátumról |
 |      Lengyelország          |   Október 2021.     | 10.0.24     |   EU értékesítési lista elektronikus formátuma (ÁFA-UE) |
-|      Oroszország          |   Október 2021.     | 10.0.22HF, 10.0.23, 10.0.24    |   Változások az értékesítés, a bevételi számlakönyvek és a számlanaplók között|
+|      Oroszország          |   Október 2021.     | 10.0.24    |   Változások az értékesítés, a bevételi számlakönyvek és a számlanaplók között|
 |      Oroszország          |   Október 2021.     | 10.0.24HF    |   Változás az áfabevallás formátumában a mellékletekkel|
 |      Oroszország          |   2021. november     | 10.0.24    |   Szövetségi könyvelési szabványok 6/2020 (Tárgyi eszközök)|
-|      Szaúd-Arábia          |   2021. november     | 10.0.22HF, 10.0.23    |   Elektronikus számlázás létrehozása Szaúd-Arábia – 1. fázis|
-|      Szaúd-Arábia          |   2021. november     | 10.0.22HF, 10.0.23HF, 10.0.24    |   Kiskereskedelem - Elektronikus számlázás Szaúd-Arábia - 1. fázis|
-|      Spanyolország          |   Október 2021.     | 10.0.23    |    303-as áfabevallási modell txt-ben és előnézetben az Excel programban|
-|      Spanyolország          |   Szeptember 2021.     | 10.0.22    |    Intrastat-formátum lesz frissítve a 2022-es jelentéshez - a partner áfaazonosítója és a származási ország/régió kötelező lesz az elküldések esetén.|
-|      Svédország          |   Október 2021.     | 10.0.22HF    |    Az Intrastat formátum frissítése 2022-től kezdődik – a származási ország/régió és a partner áfaazonosítója kötelezővé válik az elküldések esetében. A rendszer kétjegyű tranzakciókódot használ.|
-|      Egyesült Királyság          |   2021. augusztus     | 10.0.22    |    Egyesült Királyság – MTD-csalások megakadályozása 2021)|
+|      Oroszország          |   Január 2022.     | 10.0.24HF, 10.0.25    |   Elektronikus jelentés célhelyének engedélyezése orosz könyvelési dokumentumok (elsődleges dokumentumok és könyvelési jelentések) tárolására|
+|      Oroszország          |   december 2021.     | 10.0.25    |   Orosz Tárgyi eszköz modul integrációja az Eszközkezelési modullal|
+|      Oroszország          |   február 2022.     | 10.0.24HF, 10.0.25    |  Szállítási számla új formátuma (Állami n-2116 30.11.2021)|
+|      Szaúd-Arábia          |   2021. november     | 10.0.24    |   Kiskereskedelem - Elektronikus számlázás Szaúd-Arábia - 1. fázis|
+|      Spanyolország      |   március 2022.| 10.0.24HF, 10.0.25HF | Spanyolország: a 303-as áfabevallási modell 2022. január 1-jén Dynamics 365 Finance|
 
 
 

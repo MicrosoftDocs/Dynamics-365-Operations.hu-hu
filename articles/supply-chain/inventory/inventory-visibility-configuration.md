@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 8ba478fef424a6c4688191ed4e5375bbce52de0c
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061001"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524521"
 ---
 # <a name="configure-inventory-visibility"></a>Készletláthatóság konfigurálása
 
@@ -39,29 +39,32 @@ Mielőtt elkezdene dolgozni a Készletláthatósággal, a következő konfigurá
 
 Mielőtt elkezdené, telepítse és állítsa be a Készletláthatóság bővítményt a [Készletláthatóság telepítés és beállítása](inventory-visibility-setup.md) című fejezetben leírtak szerint.
 
-## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>A Készlet láthatósága funkció engedélyezése a Power Apps szolgáltatáskezelésben
-
-A Készlet láthatósága bővítmény számos új funkcióval bővíti a Power Apps telepítését. Alapértelmezés szerint ezek a funkciók ki vannak kapcsolva. Használatukhoz nyissa meg a **Konfiguráció** oldalt a Power Apps oldalon, majd a **Funkicókezelés** lapon kapcsolja be a következő funkciókat.
-
-- *OnHandReservation*
-- *OnHandMostSpecificBackgroundService*
-
-## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>A szolgáltatás végpontjának keresése
-
-Ha nem ismeri a megfelelő Készletláthatóság szolgáltatás végpontját, nyissa meg a **Konfiguráció** oldalt a Power Apps oldalon, majd válassza a jobb felső sarokban a **Szolgáltatás végpontjának megjelenítése** lehetőséget. Az oldal a megfelelő szolgáltatás végpontját fogja megjeleníteni.
-
 ## <a name="the-configuration-page-of-the-inventory-visibility-app"></a><a name="configuration"></a>A Készlet láthatósága alkalmazás konfigurációs lapja
 
 A Power Apps alkalmazásban a [Készlet láthatósága alkalmazás](inventory-visibility-power-platform.md) **Konfiguráció** oldala segít a kézi konfiguráció és a lágy foglalási konfiguráció beállításában. A bővítmény telepítése után az alapértelmezett konfiguráció tartalmazza a Microsoft Dynamics 365 Supply Chain Management (a `fno` adatforrás) értékét. Az alapértelmezett beállítást felülvizsgálhatja. Ezenfelül, az Ön üzleti követelményei és a külső rendszer készletkönyvelési követelményei alapján módosíthatja a konfigurációt, hogy egységesítse a készletváltozások könyvelésének, rendszerezésének és lekérdezésének módját a több rendszerben. A témakör további részei a **Konfiguráció** lap egyes részeinek használatát ismertetik.
 
 A konfiguráció befejezése után mindenképpen válassza ki a **Konfiguráció frissítése** lehetőséget az alkalmazásban.
 
+## <a name="enable-inventory-visibility-features-in-power-apps-feature-management"></a><a name="feature-switch"></a>A Készlet láthatósága funkció engedélyezése a Power Apps szolgáltatáskezelésben
+
+A Készlet láthatósága bővítmény számos új funkcióval bővíti a Power Apps telepítését. Alapértelmezés szerint ezek a funkciók ki vannak kapcsolva. A használatukhoz nyissa meg **a** Konfiguráció lapot, **majd** a Funkciókezelés lapon kapcsolja be az alábbi funkciókat a szükséges szerint.
+
+| Funkciókezelés neve | Leírás |
+|---|---|
+| OnHandReservation | Ezzel a funkcióval foglalásokat, foglalásokat és/vagy nem foglalt készletmennyiségeket lehet létrehozni a Készlet láthatósága funkcióval. További információért lásd a [Készletláthatósági foglalások](inventory-visibility-reservations.md) című részt. |
+| OnHandMostSpecificBackgroundService | Ez a funkció a termékekkel és az összes dimenzióval együtt egy készletösszegzést ad meg. A készletösszegzési adatokat a rendszer rendszeres időközönként szinkronizálja a Készletláthatóságból. További információ a készlet összesítésében [található](inventory-visibility-power-platform.md#inventory-summary). |
+| OnhandChangeSchedule | A funkció lehetővé teszi a rendelkezésre álló változás ütemezését és az ígérethez rendelkezésre álló funkciókat (nem kötelező). A további tudnivalókat lásd [a Készlet láthatósága aktuális készlet változásának ütemezésében, és ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md). |
+
+## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>A szolgáltatás végpontjának keresése
+
+Ha nem ismeri a megfelelő Készletláthatóság szolgáltatás végpontját, nyissa meg a **Konfiguráció** oldalt a Power Apps oldalon, majd válassza a jobb felső sarokban a **Szolgáltatás végpontjának megjelenítése** lehetőséget. Az oldal a megfelelő szolgáltatás végpontját fogja megjeleníteni.
+
 ## <a name="data-source-configuration"></a>Adatforrás konfiguráció
 
-Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Példa adatforrásnevek közé tartozik`fno` (ami azt jelenti "Dynamics 365 Finance és Műveletek alkalmazások") és`pos` (ami "értékesítési pontot" jelent). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
+Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen lehet például az `fno` adatforrás neve (ami annyit jelent, "Dynamics 365 Finance és műveletalkalmazások") `pos` és (ami azt jelenti, hogy "értékesítési pont"). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
 
 > [!NOTE]
-> A`fno` az adatforrás az ellátási lánc menedzsment számára van fenntartva. Ha a készlet láthatósági bővítménye integrálva van egy Supply Chain Management környezetbe, javasoljuk, hogy ne törölje a következőhöz kapcsolódó konfigurációkat:`fno` az adatforrásban.
+> Az `fno` adatforrás le van foglalva az Ellátásilánc-kezeléshez. Ha a készlet láthatósági bővítménye integrálva van egy ellátásilánc-kezelési környezettel, javasoljuk, `fno` hogy ne törölje az adatforráshoz kapcsolódó konfigurációkat.
 
 Adatforrás hozzáadásához kövesse az alábbi lépéseket.
 
@@ -178,15 +181,21 @@ Egyéni számított mérőszám beállításához kövesse az alábbi lépéseke
 
 1. Jelentkezzen be a Power Apps környezetébe, és nyissa meg a **Készletláthatóság** menüpontot.
 1. Nyissa meg a **Konfiguráció** oldalt.
-1. A **Számított intézkedés** lapon válassza az **Új számítási intézkedés** lehetőséget egy számított mérőszám hozzáadásához. Ezután állítsa be a mezőket a következő táblázatban leírtak szerint.
+1. A **Számított intézkedés** lapon válassza az **Új számítási intézkedés** lehetőséget egy számított mérőszám hozzáadásához.
+1. Állítsa be a következő mezőket az új számított mértékhez:
 
-    | Mező | Érték |
-    |---|---|
-    | Új számított mérőszám neve | Adja meg a számított mérőszám nevét. |
-    | Adatforrás | A lekérdező rendszer egy adatforrás. |
-    | Módosító adatforrás | Adja meg a módosító adatforrását. |
-    | Módosító | Adja meg a módosító nevét. |
-    | Módosító típusa | Válassza ki a módosító típusát *(összeadás* vagy *kivonás*). |
+    - **Új számított mértéknév** – adja meg a számított mérték nevét.
+    - **Adatforrás** – válassza ki az új módosítóhoz társított adatforrást. A lekérdező rendszer egy adatforrás.
+
+1. Ha **módosítót** szeretne hozzáadni az új számított mértékhez, válassza a Hozzáadás lehetőséget.
+1. Állítsa be a következő mezőket az új módosítóhoz:
+
+    - **Módosító** – a módosító típusának kiválasztása (*Kiegészítés* vagy *Kivonás*).
+    - **Adatforrás** – válassza ki azt az adatforrást, ahol megtalálható a módosító értéket szolgáltató mérték.
+    - **Mérték** – válassza ki annak a mértékegységnek a nevét (a kiválasztott adatforrásból), amely a módosító értékét szolgáltatja.
+
+1. Ismételje meg az 5–6. lépést, amíg fel nem adott minden szükséges módosítót.
+1. Válassza a **Mentés** lehetőséget.
 
 Például a következő lehet a lekérdezés eredménye.
 
@@ -273,17 +282,17 @@ A `MyCustomAvailableforReservation` kimeneti értéke az egyéni mérések szám
 
 ## <a name="partition-configuration"></a><a name="partition-configuration"></a>Partíciókonfiguráció
 
-Jelenleg a partíció konfigurációja két alapdimenzióból áll (`SiteId` és`LocationId`), amelyek jelzik az adatok elosztásának módját. Az ugyanazon partíció alatt végzett műveletek nagyobb teljesítményt biztosítanak alacsonyabb költségek mellett. A következő táblázat a készlet láthatósági bővítmény által biztosított alapértelmezett partíciókonfigurációt mutatja be.
+Jelenleg a partíció-konfiguráció két alapdimenzióból (és `SiteId`) áll,`LocationId` amelyek az adatok elosztását jelzik. Az ugyanazon a partíción található műveletek magasabb teljesítményt és alacsonyabb költségű műveleteket is tudnak szállítani. A következő táblázat bemutatja a készlet láthatósági bővítménye által biztosít alapértelmezett partíció-konfigurációt.
 
 | Alapdimenzió | Hierarchia |
 |---|---|
 | `SiteId` | 1 |
 | `LocationId` | 2 |
 
-A megoldás alapértelmezés szerint tartalmazza ezt a partíciókonfigurációt. Ebből kifolyólag, *nem kell magadnak meghatároznod*.
+A megoldás alapértelmezés szerint tartalmazza ezt a partíciókonfigurációt. Nem kell *tehát saját magának meghatároznia*.
 
 > [!IMPORTANT]
-> Ne szabja testre az alapértelmezett partíciókonfigurációt. Ha törli vagy módosítja, valószínűleg váratlan hibát okoz.
+> Ne szabja testre az alapértelmezett partíciókonfigurációt. Ha törli vagy módosítja, akkor valószínűleg váratlan hibát fog okozhatni.
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Termékindex-hierarchia konfigurációja
 
@@ -465,6 +474,10 @@ Ebben a példában a foglalást a következő dimenziósorozatokban végezheti e
 - `(SiteId, LocationId, ColorId, SizeId, StyleId)`
 
 Az érvényes dimenzió-sorrendnek szigorúan követnie kell a foglalási hierarchiát, dimenzióról dimenzióra. Például a `(SiteId, LocationId, SizeId)` hierarchiasorozat nem érvényes, mert hiányzik a `ColorId`.
+
+## <a name="available-to-promise-configuration-optional"></a>Ígérethez rendelkezésre álló konfiguráció (nem kötelező)
+
+A készlet láthatóságának beállításával a jövőbeli aktuális készlet változásait ütemezheti, és kiszámíthatja az ígérethez rendelkezésre álló mennyiségeket. Az ígérethez rendelkezésre álló cikk mennyisége, amely a következő időszakban ígérhető a vevőnek. A számítás használata nagy mértékben megnövelheti a rendelés teljesítését. A funkció használatához engedélyeznie **kell** azt a Funkciókezelés lapon, majd be kell állítania azt **az "ATP- beállítás"** lapon. A további tudnivalókat lásd [a Készlet láthatósága aktuális készlet változásának ütemezésében, és ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md).
 
 ## <a name="complete-and-update-the-configuration"></a>A konfiguráció befejezése és frissítése
 

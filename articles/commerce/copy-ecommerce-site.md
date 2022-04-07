@@ -1,5 +1,5 @@
 ---
-title: E-commerce webhely másolása
+title: E-kereskedelmi webhely másolása
 description: Ez a témakör azt ismerteti, hogyan lehet másolni egy meglévő e-commerce webhelyet a webhelyszerkesztő e-commerce Microsoft Dynamics 365 Commerce környezetei között, illetve között.
 author: psimolin
 ms.date: 03/03/2022
@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: 284a33099fecc5a8e8d5d5d31612abab51735773
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
-ms.translationtype: HT
+ms.openlocfilehash: a23f544cbd1e960cb704d2b9666b7db4c3894b5e
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8386911"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462326"
 ---
-# <a name="copy-an-e-commerce-site"></a>E-commerce webhely másolása
+# <a name="copy-an-e-commerce-site"></a>E-kereskedelmi webhely másolása
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör azt ismerteti, hogyan lehet másolni egy meglévő e-commerce webhelyet a webhelyszerkesztő e-commerce Microsoft Dynamics 365 Commerce környezetei között, illetve között.
 

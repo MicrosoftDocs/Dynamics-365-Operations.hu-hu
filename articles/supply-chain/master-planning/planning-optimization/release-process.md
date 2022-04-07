@@ -1,21 +1,21 @@
 ---
 title: Tervezési optimalizálás kiadási folyamata és kiadási előzmények
 description: Ez a témakör a tervezési optimalizálás kiadási folyamatához és kiadási előzményeihez nyújt tájékoztatást.
-author: ChristianRytt
+author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-07-28
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: fd6ecb0b7bc1fcf85feab2588622a96cf43b6155
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
-ms.translationtype: HT
+ms.openlocfilehash: 673543ff2c9abefbca0529f35ce20bb26156acc4
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407845"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8469701"
 ---
 # <a name="planning-optimization-release-process-and-release-history"></a>Tervezési optimalizálás kiadási folyamata és kiadási előzmények
 
@@ -33,7 +33,7 @@ Mivel az értesítések nem jelennek meg, amikor a környezetben frissítik a Te
 
 | Változások | Funkciókezelés részletei | Kiadási dátumok |
 |---|---|---|
-| <p>Általános teljesítmény-, minőség- és stabilitásjavítások.<p>Tervezési optimalizálás központosított naptár karbantartása<p>Tervezési optimalizálási javaslatok a meglévő készlet optimalizálása érdekében | Nincs szükség funkciókezelésre. | 2022. március 7. 11. |
+| <p>Általános teljesítmény-, minőség- és stabilitásjavítások.<p>[Tervezési optimalizálás központosított naptár karbantartása](../supply-chain-calendars-master-planning.md)<p>[Tervezési optimalizálási javaslatok a meglévő készlet optimalizálása érdekében](../action-messages.md)<p>[Tervezési optimalizálás támogatása alvállalkozói szerződésekhez](../../production-control/manage-subcontract-work-production.md) | Nincs szükség funkciókezelésre. | 2022. március 7. 11. |
 | <p>A termelési rendelések tervezési prioritásának támogatása hozzáadva. | A 10.0.25-ös verzióban elérhető a *Tervezés optimalizálása prioritás által vezérelt MRP-támogatás nevű funkció részeként*. | 2021. november 12.18. |
 | <p>Általános teljesítmény-, minőség- és stabilitásjavítások. | Nincs szükség funkciókezelésre. | 2021. november 12.18. |
 | <p>A program támogatja a számítási képleteket, az átfedésben található termelési útvonalat és a követelménytranzakciók termelési műveletének számát.</p><p>Nem található továbbfejlesztett hibaüzenet a termelés ütemezéséhez az időtúllépés, a kapacitás és a ciklikus útvonal egymáshoz kapcsolódóan.</p><p>Jobb konzisztencia a tervezett rendelések és a visszaeső rendelések kézhezvételi dátumának és kiadási dátumának számításakor.</p><p>Általános teljesítmény-, minőség- és stabilitásjavítások. | Funkció neve: *Végtelen kapacitásütemezés a tervezési optimalizáláshoz* | 2021. október 22. 27. |

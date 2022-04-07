@@ -1,7 +1,7 @@
 ---
 title: Alaptervezés beállítási varázsló (videofelvételt tartalmaz)
 description: Ez a témakör azt ismerteti, hogyan lehet futtatni az alaptervezés telepítővarázslóját az alaptervezés beállításához.
-author: ChristianRytt
+author: t-benebo
 ms.date: 10/21/2019
 ms.topic: article
 ms.prod: ''
@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: AX 10.0.0
-ms.openlocfilehash: 453184a3fed567b3a09e5e45e7f904bcf855dd6d
-ms.sourcegitcommit: ef0dd4245fc499907ffe00e2a32f59a6cd96e45d
+ms.openlocfilehash: a5914f63de654acd076048240c6e37d5b67f4ffa
+ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/18/2021
-ms.locfileid: "7937633"
+ms.lasthandoff: 03/23/2022
+ms.locfileid: "8470205"
 ---
 # <a name="master-planning-setup-wizard"></a>Alaptervezés-beállítás varázslója
 
@@ -31,7 +31,7 @@ Ez a témakör útmutatót tartalmaz az **Alaptervezés-beállítási varázsló
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
-A (fenti videón látható) [Alaptervezés beállítási varázslója a Dynamics 365 Supply Chain Management rendszerben](https://youtu.be/c-e6n-8rZb4) szerepel a YouTube felületén megtalálható [Finance and Operations lejátszási listán](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW).
+A (fenti videón látható) [Mestertervezés beállítási varázslója a Dynamics 365 Supply Chain Management rendszerben](https://youtu.be/c-e6n-8rZb4) szerepel a YouTube felületén megtalálható [Finance and Operations lejátszási listán](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW).
 
 
 ## <a name="specific-requirements-of-your-company"></a>A vállalat egyedi igényei

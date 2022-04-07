@@ -1,7 +1,7 @@
 ---
 title: Szabadság vásárlására és eladására irányuló kérelem munkafolyamatának létrehozása
 description: Hozzon létre egy szabadság vásárlására és eladására irányuló kérelem munkafolyamatot, a szabadságkérelmeket egységes vételéhez és eladásához a Dynamics 365 Human Resources alkalmazásban.
-author: andreabichsel
+author: twheeloc
 ms.date: 08/20/2020
 ms.topic: article
 ms.prod: ''
@@ -12,20 +12,22 @@ ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-08-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: b9e56c130cd831e6a1ad258c679562cb6de57d9b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3f200fec48dc6bff2702b962c47cbd6951c5921c
+ms.sourcegitcommit: 67c4ed957e43d4d60bb609d93921a0be9619e675
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070665"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8509416"
 ---
 # <a name="create-a-buy-and-sell-leave-request-workflow"></a>Szabadság vásárlására és eladására irányuló kérelem munkafolyamatának létrehozása
 
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
+>[!Important]
+>Az ebben a témakörben említett funkciók jelenleg csak a különálló Dynamics 365 Human Resources rendszerében lévő vevőknek érhetők el. A funkciók egy része vagy egésze a Finance infrastruktúra jövőbeni kiadásának részeként lesz elérhető a Finance 10.0.26-ös kiadása után.
+
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 

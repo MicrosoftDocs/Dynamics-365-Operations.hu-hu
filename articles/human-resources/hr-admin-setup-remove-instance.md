@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: e32058280d0cb1eab436bc25bd29bc3e39fabc92
-ms.sourcegitcommit: 49f7528d3268abe15e40f719956e1ec8696a6f4e
+ms.openlocfilehash: ba5d69ca33ac84743b178ded80b482eee6edab1e
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "7393497"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487730"
 ---
 # <a name="remove-an-instance"></a>Példány eltávolítása
 
@@ -78,7 +78,7 @@ Ha törli azt a Power Apps környezetet, amelyhez a Emberi erőforrások környe
 
 A környezet helyreállítása:
 
-1. Kövesse a [Power Apps környzete visszaállítása](/power-platform/admin/recover-environment.md) részben található utasításokat.
+1. Kövesse a [Power Apps környzete visszaállítása](/power-platform/admin/recover-environment) részben található utasításokat.
 
 2. Az Emberi erőforrások környezet helyreállításához forduljon a támogatáshoz. További információért lásd a [Támogatás kérése](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md) lehetőséget.
 

@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: c15104e0f34c1f6cb6a599d506dad741be3e5e9e
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
-ms.translationtype: HT
+ms.openlocfilehash: e4b0b9f7eb4fb0ffab3237459d85ea92c83dd206
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388390"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462157"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>A Commerce csatornák pénzügyi integrálásának beállítása
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör bemutatja, hogyan állíthatja be a pénzügyi integráció funkciót a Commerce csatornákhoz. A pénzügyi integráció kapcsolatos további tudnivalókat lásd: [A pénzügyi integráció áttekintése a Commerce csatornákhoz](fiscal-integration-for-retail-channel.md).
 

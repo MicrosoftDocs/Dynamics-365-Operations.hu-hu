@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-09-15
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f3a930814a1fb98e3b1611adf309c10e66b49b9d
-ms.sourcegitcommit: fd6270dc7f49f93a8155d2b827153b13edb7be8a
-ms.translationtype: HT
+ms.openlocfilehash: c4cb36160e692cc12140b57037d2c9739f7b2ebd
+ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/09/2021
-ms.locfileid: "7902097"
+ms.lasthandoff: 03/22/2022
+ms.locfileid: "8462670"
 ---
 # <a name="mobile-device-user-accounts"></a>Mobileszköz felhasználói fiókjai
 
@@ -90,8 +90,8 @@ Amikor egy dolgozó bejelentkezik a Warehouse Management mobilalkalmazásba, a n
 1. A műveleti ablaktáblán válassza ki a **Felhasználói beállítások** elemet.
 1. A **Beállítások** lapon állítsa be a következő mezőket:
 
-    - **Nyelv** – A dolgozó által előnyben részesített nyelv kiválasztása. Ez a mező a raktári alkalmazásban megjelenő dátumformátumot is szabályozza.
-    - **Dátum, idő és szám formátuma** – A raktári alkalmazásban megjelenő számformátumokat meghatározó nyelv kiválasztása. A raktári alkalmazásban megjelenő dátum- és időformátumokat ténylegesen a **Nyelv** mező határozza meg, nem ez a mező.
+    - **Nyelv** – A dolgozó által előnyben részesített nyelv kiválasztása. Ez a mező a raktári alkalmazásban megjelenő számformátumot is szabályozza.
+    - **Dátum, idő és szám formátuma** – válassza ki a dátum- és időformátumot, amit a dolgozó előnyben részesít. A raktári alkalmazás az adott **beállítás** helyett a Nyelv mezőben kiválasztott nyelvhez rendelt számformátumot használja.
     - **Időzóna** – Válassza ki azt az időzónát, amelyben a dolgozó dolgozik. Ez a mező hatással van minden olyan regisztrációs időbélyegzőre, amelyet a dolgozó az alkalmazás használatával hoz létre.
 
 > [!NOTE]

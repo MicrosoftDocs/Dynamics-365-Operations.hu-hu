@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: f74bb4bd4ed66520c04261bd9f82faad7775817e
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
+ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062111"
+ms.lasthandoff: 03/31/2022
+ms.locfileid: "8524465"
 ---
 # <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
 
@@ -41,15 +41,17 @@ A következő táblázat a jelenleg elérhető API-kat sorolja fel:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Feladás | [Készleten lévő mennyiségek beállítása/felülbírálása](#set-onhand-quantities) |
 | /api/környezet/{environmentId}/onhand/reserve | Feladás | [Egy foglalási esemény létrehozása](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Feladás | [Több foglalási esemény létrehozása](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/on-hand/changeschedule | Feladás | [Ütemezett aktuális módosítás létrehozása](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Feladás | [Több ütemezett aktuális módosítás létrehozása](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Feladás | [Lekérdezés a post módszer használatával](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Beolvasás | [Lekérdezés a get módszer használatával](#query-with-get-method) |
-
-A Microsoft biztosít egy out-of-box *Postman* kérésgyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 > [!NOTE]
 > Az elérési útvonal {environmentId} része a Microsoft Dynamics Lifecycle Services (LCS) környezetazonosítója.
 > 
-> A tömeges API legfeljebb 512 rekordot tud visszaadni minden kérésnél.
+> A tömeges API kérésenként legfeljebb 512 rekordot adhat vissza.
+
+A Microsoft biztosít egy out-of-box *Postman* kérésgyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>A Lifecycle Services környezetének megfelelő végpont megkeresése
 
@@ -251,7 +253,7 @@ A következő példa a `dimensionDataSource` nélküli törzstartalom mintáját
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Több változási esemény létrehozása
 
-Ez az API egyszerre több rekordot is létrehozhat. Az egyetlen különbség az API és az [egyszeri esemény API](#create-one-onhand-change-event) között a `Path` és a `Body` értékek. Ehhez az API-hoz a `Body` egy rekordtömböt biztosít. A rekordok maximális száma 512, ami azt jelenti, hogy az aktuális tömeges módosítási API egyszerre akár 512 változási eseményt is támogathat.
+Ez az API egyszerre több rekordot is létrehozhat. Az egyetlen különbség az API és az [egyszeri esemény API](#create-one-onhand-change-event) között a `Path` és a `Body` értékek. Ehhez az API-hoz a `Body` egy rekordtömböt biztosít. A rekordok maximális száma 512, ami azt jelenti, hogy az aktuális változás tömeges API egyszerre akár 512 változási eseményt is támogathat.
 
 ```txt
 Path:
@@ -478,7 +480,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Készleten lévő lekérdezés
 
-Használja a _Lekérdezés kéznél_ API a termékek aktuális készletadatainak lekéréséhez. Az API jelenleg legfeljebb 100 egyedi elem lekérdezését támogatja`ProductID` érték. Többszörös`SiteID` és`LocationID` értékek is megadhatók az egyes lekérdezésekben. A maximális korlát a következőképpen van meghatározva `NumOf(SiteID) * NumOf(LocationID) <= 100`.
+_Az aktuális_ lekérdezés API-val lekérheti a termékek aktuális aktuális készletadatait. Az API jelenleg legfeljebb 100 egyedi elem érték szerinti `ProductID` lekérdezését támogatja. Minden lekérdezésben több `SiteID` érték és `LocationID` érték is megadható. A maximális korlát a következőképpen `NumOf(SiteID) * NumOf(LocationID) <= 100` van definiálva: .
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Lekérdezés a post módszer használatával
 
@@ -516,6 +518,9 @@ A kérés törzsrészében a `dimensionDataSource` még mindig egy választható
 A `groupByValues` paraméternek követnie kell az indexelés konfigurációját. További információért lásd: [Termékindex-hierarchia konfigurálása](./inventory-visibility-configuration.md#index-configuration).
 
 A `returnNegative` paraméter szabályozza, hogy az eredmények tartalmaznak-e negatív bejegyzéseket.
+
+> [!NOTE]
+> Ha engedélyezte az aktuális módosítási ütemezést és az ígérhető (ATP) funkciókat, a lekérdezés tartalmazhatja a `QueryATP` Logikai paramétert is, amely azt szabályozza, hogy a lekérdezés eredményei tartalmaznak-e ATP-információkat. További információ és példák: [Készlet láthatósága aktuális változási ütemezések és az ígéretek lehetősége](inventory-visibility-available-to-promise.md).
 
 A következő példa a törzs tartalmának mintáját mutatja.
 
@@ -572,5 +577,9 @@ Query(Url Parameters):
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
+
+## <a name="available-to-promise"></a>Ígérethez rendelkezésre áll
+
+Beállíthatja a Készlet láthatóságát, hogy ütemezhesse a jövőbeli aktuális módosításokat, és kiszámíthassa az ATP-mennyiségeket. Az ígérethez rendelkezésre álló cikk mennyisége, amely a következő időszakban ígérhető a vevőnek. Az ATP-számítás használata jelentősen növelheti a megrendelések teljesítésének képességét. A szolgáltatás engedélyezéséről és a készlet láthatóságának az API-n keresztüli használatáról a funkció engedélyezése után a Készlet láthatósága aktuális változás ütemezésében és ígéretre [rendelkezésre álló készlet láthatóságáról című témakörben olvashat](inventory-visibility-available-to-promise.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

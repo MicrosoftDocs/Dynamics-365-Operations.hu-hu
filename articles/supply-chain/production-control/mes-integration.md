@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 8917c9b265bc3df19517f052e28fb7644057cb46
-ms.sourcegitcommit: 19f0e69a131e9e4ff680eac13efa51b04ad55a38
-ms.translationtype: HT
+ms.openlocfilehash: 9ec0bedcf1a3a2888a91158ea0353283660d3266
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/22/2022
-ms.locfileid: "8330701"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487581"
 ---
 # <a name="integrate-with-third-party-manufacturing-execution-systems"></a>Integráció külső gyártásvégrehajtási rendszerekkel
 
@@ -65,6 +65,8 @@ Az alábbi folyamatok bármelyikét engedélyezheti integrációra.
 ## <a name="monitor-incoming-messages"></a>Bejövő üzenetek figyelése
 
 A rendszerbe beérkező üzenetek figyelése érdekében nyissa meg **a Gyártásvégrehajtási rendszerek integrációs lapját**. Itt megtekintheti, feldolgozhatja és elháríthatja a problémákat.
+
+Egy adott termelési rendelés minden üzenetét a fogadási sorrendben feldolgozi a rendszer. A különböző termelési rendelések üzeneteit azonban a kapott sorrendben nem lehet feldolgozni, mert a kötegelt feladatok párhuzamos feldolgozásra futnak. Hiba esetén a kötegelt feladat háromszor próbál meg feldolgozni minden üzenetet, mielőtt *Sikertelen állapotúra áll*.
 
 ## <a name="call-the-api"></a>Az API hívása
 
@@ -119,13 +121,13 @@ Az alábbi táblázat bemutatja azokat a mezőket, amelyek az `ReportFinishedLin
 | `ReportedGoodQuantity` | Választható | Valós|
 | `ReportedErrorCatchWeightQuantity` | Választható | Valós |
 | `ReportedGoodCatchWeightQuantity` | Választható | Valós |
-| `AcceptError` | Választható |Logikai |
+| `AcceptError` | Választható | Enum (igen, \| nem) |
 | `ErrorCause` | Választható | Enum (Nincs \| material \| Machine \| OperatingStaff), extensible |
 | `ExecutedDateTime` | Választható | DateTime |
 | `ReportAsFinishedDate` | Választható | Dátum |
 | `AutomaticBOMConsumptionRule` | Választható | Enum (FlushingPrincip \| mindig soha \|) |
 | `AutomaticRouteConsumptionRule` | Választható |Enum (RouteDependent \| mindig soha \|) |
-| `RespectFlushingPrincipleDuringOverproduction` | Választható | Logikai |
+| `RespectFlushingPrincipleDuringOverproduction` | Választható | Enum (igen, \| nem) |
 | `ProductionJournalNameId` | Választható | Sztring |
 | `PickingListProductionJournalNameId` | Választható | Sztring|
 | `RouteCardProductionJournalNameId` | Választható | Sztring |
@@ -133,11 +135,11 @@ Az alábbi táblázat bemutatja azokat a mezőket, amelyek az `ReportFinishedLin
 | `ToOperationNumber` | Választható | Egész|
 | `InventoryLotId` | Választható | Sztring |
 | `BaseValue` | Választható | Sztring |
-| `EndJob` | Választható | Logikai |
-| `EndPickingList` | Választható | Logikai |
-| `EndRouteCard` | Választható | Logikai |
-| `PostNow` | Választható | Logikai |
-| `AutoUpdate` | Választható | Logikai |
+| `EndJob` | Választható | Enum (igen, \| nem) |
+| `EndPickingList` | Választható | Enum (igen, \| nem) |
+| `EndRouteCard` | Választható | Enum (igen, \| nem) |
+| `PostNow` | Választható | Enum (igen, \| nem) |
+| `AutoUpdate` | Választható | Enum (igen, \| nem) |
 | `ProductColorId` | Választható | Sztring|
 | `ProductConfigurationId` | Választható | Sztring |
 | `ProductSizeId` | Választható | Sztring |
@@ -181,7 +183,7 @@ Az alábbi táblázat bemutatja azokat a mezőket, amelyek az `PickingListLines`
 | `OperationNumber` | Választható | Egész |
 | `LineNumber` | Választható | Valós |
 | `PositionNumber` | Választható | Sztring |
-| `IsConsumptionEnded` | Választható | Logikai |
+| `IsConsumptionEnded` | Választható | Enum (igen, \| nem) |
 | `ErrorCause` | Választható | Enum (Nincs \| material \| Machine \| OperatingStaff), extensible |
 | `InventoryLotId` | Választható | Sztring |
 
@@ -217,9 +219,9 @@ Az alábbi táblázat bemutatja azokat a mezőket, amelyek az `RouteCardLines``P
 | `ConsumptionDate` | Választható | Dátum |
 | `TaskType` | Választható | Enum (QueueBefore beállítási \| folyamat \| átfedésben \| van \| a szállítási \| várólistaAfter terhelése \|) |
 | `ErrorCause` | Választható | Enum (Nincs \| material \| Machine \| OperatingStaff), extensible |
-| `OperationCompleted` | Választható | Logikai |
-| `BOMConsumption` | Választható | Logikai |
-| `ReportAsFinished` | Választható | Logikai |
+| `OperationCompleted` | Választható | Enum (igen, \| nem) |
+| `BOMConsumption` | Választható | Enum (igen, \| nem) |
+| `ReportAsFinished` | Választható | Enum (igen, \| nem) |
 
 ### <a name="end-production-order-message"></a>Termelési rendelés üzenetének vége
 
@@ -230,9 +232,13 @@ A termelési *rendelés záró üzenetének* értéke `_messageType` :`ProdProdu
 | `ProductionOrderNumber` | Kötelező | Sztring |
 | `ExecutedDateTime` | Választható | DateTime |
 | `EndedDate` | Választható | Dátum |
-| `UseTimeAndAttendanceCost` | Választható | Logikai |
-| `AutoReportAsFinished` | Választható | Logikai |
-| `AutoUpdate` | Választható | Logikai |
+| `UseTimeAndAttendanceCost` | Választható | Enum (igen, \| nem) |
+| `AutoReportAsFinished` | Választható | Enum (igen, \| nem) |
+| `AutoUpdate` | Választható | Enum (igen, \| nem) |
+
+## <a name="other-production-information"></a>Egyéb termelési adatok
+
+Az üzenetek az üzletben történik műveleteket és eseményeket támogatják. A feldolgozásuk az ebben a témakörben ismertetett MES integrációs keretrendszer használatával folyamatban van. A terv feltételezi, hogy a rendszer más hivatkozási adatokat (például a termékhez kapcsolódó információkat, vagy az anyagjegyzéket vagy útvonalat (a konkrét beállítási és konfigurációs időivel) fájlátvitel útján), illetve OData adatok felhasználásával olvassa be a [rendszerből](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities).
 
 ## <a name="receive-feedback-about-the-state-of-a-message"></a>Visszajelzés fogadása egy üzenet állapotáról
 

@@ -1,7 +1,7 @@
 ---
 title: A tervezésoptimalizálása illeszkedési elemzése
 description: Ez a témakör azt mutatja be, hogyan lehet ellenőrizni az aktuális beállításokat és adatokat a Tervezésoptimalizálás funkció szolgáltatásaival szemben.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: ''
@@ -13,15 +13,15 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 440cddca11df8d705757c6f6adf01e08626c5158
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
-ms.translationtype: HT
+ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
+ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8408015"
+ms.lasthandoff: 03/25/2022
+ms.locfileid: "8487642"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Tervezési optimalizálás igazítási elemzése
 
@@ -84,7 +84,7 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 | Termelés | Darabjegyzék-/képletsorok erőforrás-felhasználással: _\#_ | Ez a funkció függőben van. Jelenleg az erőforrás-felhasználást tartalmazó darabjegyzék- és képletsorok figyelmen kívül maradnak, amikor a tervezés optimalizálása engedélyezve van. Ha ez a funkció támogatott, akkor a program a termelés kezdő dátumára állítja be az anyagszükségletet. Amíg ez a funkció támogatott az erőforrás-felhasználás jelzővel rendelkező anyagokhoz nem lesz generálva követelmény. | Október 2022. |
 | Termelés | Darabjegyzék-/képletsorok lépésfelhasználással: _\#_ | Ez a funkció függőben van. Jelenleg a lépésfelhasználás figyelmen kívül marad a darabjegyzék- és képletsorokon, amikor a tervezés optimalizálása engedélyezve van. | Október 2022. |
 | Termelés | Darabjegyzékek állandó selejttel vagy változó selejttel meghatározva: _\#_ | Ez a funkció függőben van. Jelenleg a tervezés optimalizálás engedélyezésekor a program figyelmen kívül hagyja az anyagjegyzékeken definiált állandó selejtet és változó selejtet. | Október 2022. |
-| Termelés | Darabjegyzékek alvállalkozásba adással: _\#_ | Ez a funkció függőben van. Jelenleg a rendszer figyelmen kívül hagyja darabjegyzékeken az alvállalkozásba adás beállítását, ha a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | április 2022. |
+| Termelés | Darabjegyzékek alvállalkozásba adással: _\#_ | Ez a funkció már támogatott. | Támogatott |
 | Termelés | Telephely nélküli darabjegyzékek: _\#_ | Ez a funkció már támogatott. További információkért lásd: [Termeléstervezés](production-planning.md) | Támogatott |
 | Termelés | Igény megadott darajegyzék- vagy meghatározott útvonal-követelményekkel: _\#_ | Ez a funkció függőben van. A program jelenleg az igényen meghatározott specifikus darabjegyzék- vagy útvonal-követelményt (például egy értékesítési rendelésen szereplő aldarabjegyzéket vagy alútvonalat) figyelmen kívül hagyja, amikor a tervezés optimalizálása engedélyezve van. A program a beállítástól függetlenül a szokásos darabjegyzéket vagy útvonalat használja. | Október 2022. |
 | Termelés | Képletverziók társ- vagy melléktermékekkel: _\#_ | Ez a funkció függőben van. Jelenleg a tervezésoptimalizálás engedélyezése esetén a képletverzióhoz társított társtermékek és a melléktermékek figyelmen kívül maradnak. | Október 2022. |
