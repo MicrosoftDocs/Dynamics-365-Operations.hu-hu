@@ -20,8 +20,6 @@
                   href: get-started/whats-new-platform-updates-10-0-25.md
                 - name: Platformfrissítések a 10.0.24-es verzióhoz (2022. február)
                   href: get-started/whats-new-platform-updates-10-0-24.md
-                - name: Platformfrissítések a 10.0.23-es verzióhoz (2022. január)
-                  href: get-started/whats-new-platform-updates-10-0-23.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -240,7 +238,9 @@
               href: data-entities/configure-export-data-lake.md
             - name: Pénzügyi és műveleti alkalmazások az Azure Data Lake-ben
               href: data-entities/finance-data-azure-data-lake.md
-            - name: Entitástár elérhetővé tétele Data Lake-alkalmazásként
+            - name: Az Azure Data Lake-ben tárolt adatok és metaadatok
+              href: data-entities/Azure-Data-Lake-Enhanced-Metadata.md
+            - name: Entitástár elérhetővé tétele Data Lake-ként
               href: data-entities/entity-store-data-lake.md
             - name: Az Exportálás Azure Data Lake-be szolgáltatás által generált üzleti események (előzetes verzió)
               href: data-entities/Azure-Data-Lake-Generates-Biz-events.md
@@ -408,8 +408,10 @@
                       href: deployment/redeploy-on-prem.md
                     - name: 'AOS-csomópont eltávolítása és újratelepítése, vagy hozzáadása'
                       href: deployment/onprem-remove-reinstall-AOS-node.md
-                    - name: Ugyanazon AD FS-példány újrahasznosítása több környezet esetén
+                    - name: Ugyanazon AD FS-példány újrahasznosítása több környezetben
                       href: deployment/onprem-reuseadfs.md
+                    - name: A Windows Server frissítése a Microsoft Dynamics 365 Finance + Operations (on-premises) környezetekben
+                      href: deployment/onprem-upgrade-os.md
                     - name: A Microsoft Dynamics 365 Finance + Operations (on-premises) SQL Server környezetpéldányának frissítése
                       href: deployment/onprem-upgrade-sqlserver.md
                 - name: Helyi ügynök
@@ -932,6 +934,8 @@
                   href: lifecycle-services/lcs-works-lcs.md
                 - name: LCS partnerek számára
                   href: lifecycle-services/getting-started-lcs.md
+                - name: Támogatott böngészők
+                  href: lifecycle-services/web-browsers.md
                 - name: RESTful API-k
                   items:
                     - name: Környezetek indítása és leállítása
@@ -1490,7 +1494,9 @@
               href: perf-test/rsat/rsat-derived-test-cases.md
             - name: Paraméterfájlok frissítése
               href: perf-test/rsat/rsat-upgrade-parameter-files.md
-            - name: Regression suite automation tool-oktatóanyag
+            - name: Próbamód Azure DevOps nélkül
+              href: perf-test/rsat/rsat-trial-without-devops.md
+            - name: Regression Suite Automation Tool-oktatóanyag
               href: perf-test/rsat/rsat-tutorial.md
             - name: Nem rendszergazda felhasználók konfigurálása
               href: perf-test/rsat/rsat-configure-nonadmin.md

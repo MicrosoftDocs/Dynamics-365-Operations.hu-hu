@@ -18,8 +18,6 @@
                   href: get-started/whats-new-changed-10-0-25.md
                 - name: Finance 10.0.24 (február)
                   href: get-started/whats-new-changed-10-0-24.md
-                - name: Finance 10.0.23 (január)
-                  href: get-started/whats-new-changed-10-0-23.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -414,8 +412,20 @@
               items:
                 - name: Előfizetéses számlázás áttekintése
                   href: accounts-receivable/subscription-billing-summary.md
-                - name: Számlázási ütemezések beállítása
-                  href: accounts-receivable/sb-billing-schedules.md
+                - name: Ismétlődő szerződéses számlázás
+                  items:
+                    - name: Számlázási ütemezések létrehozása
+                      href: accounts-receivable/sb-billing-schedules.md
+                    - name: Számlázási ütemezés másolása
+                      href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Mérföldkő-számlázás
+                      href: accounts-receivable/sb-milestonebilling.md
+                    - name: Számlázási ütemezések megszüntetése
+                      href: accounts-receivable/terminate-billing-schedule.md
+                - name: Bevétel- és költséghalasztások
+                  items: null
+                - name: Többelemes bevételfelosztás
+                  items: null
             - name: Kifizetések és kiegyenlítések
               items:
                 - name: Vevői kifizetések áttekintése
@@ -1443,11 +1453,11 @@
                             - name: SharePoint csatorna konfigurálása
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
                         - name: Elektronikus számlázás beállítása és használata a Finance és a Supply Chain Management szolgáltatásban
-                          items: null
-                        - name: Elektronikus számlázással való integráció aktiválása és beállítása
-                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                        - name: Az elektronikus számlázási paraméterek beállítása
-                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                          items:
+                            - name: Elektronikus számlázással való integráció aktiválása és beállítása
+                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                            - name: Az elektronikus számlázási paraméterek beállítása
+                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: Az elektronikus számlázás használata
                           items:
                             - name: Elektronikus dokumentumok elküldése elektronikus számlázásra
@@ -1524,15 +1534,19 @@
                           href: localizations/emea-multiple-vat-registration-numbers.md
                         - name: Jelentés több áfaregisztrációhoz
                           href: localizations/emea-reporting-for-multiple-vat-registrations.md
-                        - name: Osztrák jelentések
+                        - name: Osztrák jelentés
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-aut-vat-declaration-austria.md
-                        - name: Dán jelentések
+                        - name: Dán jelentés
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-dnk-vat-declaration-denmark.md
-                        - name: Franciaországi jelentések
+                        - name: Finn jelentés
+                          items:
+                            - name: Áfabevallás
+                              href: localizations/emea-fin-vat-declaration-mult-tax-id.md
+                        - name: Francia jelentés
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-fra-VAT-declaration-preview-France.md
@@ -1544,8 +1558,12 @@
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-nl-vat-declaration-netherlands.md
-                            - name: EU értékesítési lista
+                            - name: EU-s értékesítési lista
                               href: localizations/emea-nl-eu-sales-list.md
+                        - name: Norvégiai jelentés
+                          items:
+                            - name: Áfabevallás
+                              href: localizations/emea-nor-vat-declaration.md
                         - name: Spanyolországi jelentés
                           items:
                             - name: 'Azonnali információbiztosítás az áfáról (Suministro Inmediato de Información del IVA, SII)'
@@ -1564,10 +1582,6 @@
                           items:
                             - name: Áfabevallás
                               href: localizations/emea-gbr-vat-declaration.md
-                        - name: Norvégiai jelentés
-                          items:
-                            - name: Áfabevallás
-                              href: localizations/emea-nor-vat-declaration.md
                     - name: Adószámítás engedélyezése átmozgatási rendeléshez
                       items:
                         - name: Adófunkció támogatása átmozgatási rendelésekhez
@@ -1694,8 +1708,6 @@
                   href: localizations/emea-aut-half-year-depreciation.md
                 - name: Csomagolóanyag díjai
                   href: localizations/emea-aut-packing-material-fee-calculation.md
-                - name: Áfakimutatás
-                  href: localizations/emea-aut-vat-statement-details.md
                 - name: Nemzetközi szolgáltatásokra vonatkozó jelentés
                   href: localizations/emea-aut-cross-border-services-report.md
                 - name: Osztrák Intrastat
@@ -1704,7 +1716,7 @@
                   href: localizations/emea-aut-purchase-duties.md
                 - name: Áfabevallás
                   href: localizations/emea-aut-vat-declaration-austria.md
-                - name: EU értékesítési lista
+                - name: EU-s értékesítési lista
                   href: localizations/emea-aut-eu-sales-list.md
             - name: Bahrein
               items:
@@ -2020,9 +2032,7 @@
                   href: localizations/emea-create-post-periodic-journals.md
                 - name: A jelentéseken és dokumentumokon levő összegek megjelenítési módjának frissítése
                   href: localizations/emea-amount-printing-forms.md
-                - name: Áfakimutatás
-                  href: localizations/emea-cze-vat-statement-details.md
-                - name: Áfabevallás (Cseh Köztársaság)
+                - name: Áfabevallás
                   href: localizations/emea-cze-vat-declaration-tax-declaration-model.md
                 - name: Cseh Intrastat
                   href: localizations/emea-cze-intrastat.md
@@ -2060,6 +2070,8 @@
                   href: localizations/tasks/set-up-payment-slip-format.md
                 - name: Dán Intrastat
                   href: localizations/emea-dnk-intrastat.md
+                - name: Áfabevallás
+                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Egyiptom
               items:
                 - name: Egyiptom – áttekintés
@@ -2110,7 +2122,7 @@
                   href: localizations/emea-edit-invoice-id-sales-orders.md
                 - name: EU beérkezési igazolások
                   href: localizations/emea-entry-certificates.md
-                - name: EU értékesítési lista jelentés
+                - name: EU-s értékesítési lista jelentés
                   href: localizations/emea-eu-sales-list.md
                 - name: Példa általános európai uniós (EU) értékesítési listára
                   href: localizations/emea-eu-sales-list-example.md
@@ -2242,6 +2254,8 @@
                   href: localizations/emea-fin-sales-tax-payment-report-finland.md
                 - name: Finn Intrastat
                   href: localizations/emea-fin-intrastat.md
+                - name: Áfabevallás
+                  href: localizations/emea-fin-vat-declaration.md
             - name: Franciaország
               items:
                 - name: Franciaország – áttekintés
@@ -2282,7 +2296,7 @@
                   href: localizations/tasks/fr-00018-daily-interest.md
                 - name: Különbözeti értékcsökkenés
                   href: localizations/emea-fra-derogatory-depreciation.md
-                - name: EU értékesítési lista
+                - name: EU-s értékesítési lista
                   href: localizations/emea-fra-eu-sales-list.md
                 - name: Francia váltók és kötelezvények
                   href: localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
@@ -2332,12 +2346,8 @@
                   href: localizations/tasks/de-00002-depreciation.md
                 - name: Áfabevallás
                   href: localizations/emea-deu-vat-declaration-germany.md
-                - name: Elektronikus áfabevallás (ELSTER) továbbítása
-                  href: localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Német Intrastat
                   href: localizations/emea-deu-intrastat.md
-                - name: Áfakimutatás
-                  href: localizations/emea-de-vat-declaration.md
                 - name: Elektronikus vevői számlák (jelentés)
                   href: localizations/emea-deu-e-invoices.md
                 - name: Naplólista (jelentés)
@@ -2346,10 +2356,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/dynamics365/finance/toc.json
                 - name: Külön címke nyomtatása értékesítésből származó jóváírásokhoz
                   href: localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md
-                - name: EU értékesítési lista
+                - name: EU-s értékesítési lista
                   href: localizations/emea-deu-eu-sales-list.md
-                - name: Áfabevallás
-                  href: localizations/emea-dnk-vat-declaration-denmark.md
             - name: Magyarország
               items:
                 - name: Magyarország – áttekintés
@@ -2562,6 +2570,8 @@
                                   href: localizations/apac-ind-GST-import-goods-gst.md
                                 - name: GST-t tartalmazó szolgáltatások importálása
                                   href: localizations/apac-ind-import-services-gst.md
+                                - name: Költségek felosztása az importrendelések Vámjegyzék oldalán
+                                  href: localizations/apac-ind-charge-allocation-boe-page-import-orders.md
                                 - name: Nulla kulcsos adót tartalmazó áruk exportálása
                                   href: localizations/apac-ind-GST-export-goods-zero-rated-tax.md
                                 - name: Nulla kulcsos adót tartalmazó szolgáltatások exportálása
@@ -3116,23 +3126,19 @@
               items:
                 - name: Hollandia – áttekintés
                   href: localizations/netherlands.md
-                - name: Áfabevallás
-                  href: localizations/emea-nl-VAT-declaration.md
-                - name: Elektronikus adóbevallások (EVAT)
-                  href: localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integráció
                   href: localizations/tasks/nl-00003-semansys-xbrl-integration.md
                 - name: Könyvvizsgálati fájl (XML Auditfile Financieel XAF)
                   href: localizations/emea-nl-audit-file.md
                 - name: Áfabevallás (Hollandia)
                   href: localizations/emea-nl-vat-declaration-netherlands.md
-                - name: Hollandia – Intrastat
+                - name: Intrastat
                   href: localizations/emea-nl-intrastat.md
-                - name: EU értékesítési lista
+                - name: EU-s értékesítési lista
                   href: localizations/emea-nl-EU-sales-list.md
             - name: Új-Zéland
               items:
-                - name: GST bevallási űrlap GST101A - Új-Zéland (NZ-00003)
+                - name: GST101A GST-bevallási űrlap – Új-Zéland (NZ-00003)
                   href: localizations/apac-nzl-gst-declaration.md
             - name: Norvégia
               items:
@@ -3540,11 +3546,11 @@
                   href: localizations/emea-swe-payment-formats-import.md
                 - name: Áfafizetéssel kapcsolatos jelentés Svédország esetén
                   href: localizations/emea-swe-sales-tax-payment-report-sweden.md
-                - name: Áfabevallás – Svédország
+                - name: Áfabevallás
                   href: localizations/emea-swe-VAT-declaration-Sweden.md
                 - name: Svéd Intrastat
                   href: localizations/emea-swe-intrastat.md
-                - name: EU értékesítési lista
+                - name: EU-s értékesítési lista
                   href: localizations/emea-swe-eu-sales-list.md
             - name: Svájc
               items:

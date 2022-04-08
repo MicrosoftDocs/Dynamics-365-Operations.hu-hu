@@ -1707,8 +1707,10 @@
                   href: inventory/inventory-visibility-configuration.md
                 - name: Használja a készletláthatóság alkalmazást
                   href: inventory/inventory-visibility-power-platform.md
-                - name: Készletláthatóság-foglalások
+                - name: Készletláthatósági foglalások
                   href: inventory/inventory-visibility-reservations.md
+                - name: Készletláthatóság aktuális módosítási ütemezése és az ígérethez rendelkezésre álló készlet
+                  href: inventory/inventory-visibility-available-to-promise.md
                 - name: Készletláthatóság nyilvános API-jai
                   href: inventory/inventory-visibility-api.md
                 - name: Készletláthatósággal kapcsolatos tanácsok
@@ -3737,7 +3739,7 @@
                   href: troubleshooting/procurement/consolidate-multiple-receipts.md
                 - name: Az alapértelmezett adócsoport és a készpénzfizetési engedmény nem a számlaszám alapján van kitöltve.
                   href: troubleshooting/procurement/default-tax-group-and-discount.md
-                - name: A szállítási név nincs szinkronizálva a beszerzési rendelés szállítási címének módosítása után.
+                - name: A szállítási név nincs szinkronizálva a beszerzési rendelés szállítási címének módosítása után
                   href: troubleshooting/procurement/delivery-name-isnt-synced.md
                 - name: Kivétel történik a szállítói számla feladása közben.
                   href: troubleshooting/procurement/invocation-target-exception.md
@@ -3867,6 +3869,8 @@
                       href: troubleshooting/warehousing/certification-path-app-connection-error.md
                     - name: Nem található a tanúsítvány elérési útjának megbízhatósági fixpontja a WMS-be történő frissítéskor és migráláskor
                       href: troubleshooting/warehousing/upgrade-migration-certification-path-error.md
+                - name: Leállított értékesítésirendelés-sorhoz nem lehet szállítólevelvet feladni
+                  href: troubleshooting/warehousing/unable-to-post-packi.md
                 - name: Feldolgozási problémák fordulnak elő a skálázási egység szerinti raktári terhelés telepítése után
                   href: troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md
                 - name: A kötegszám automatikus foglalási kérésekor még a rendelkezésre álló készlet is megjelenik

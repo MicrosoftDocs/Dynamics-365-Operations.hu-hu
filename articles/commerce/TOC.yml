@@ -390,7 +390,7 @@
                   href: tasks/worker.md
                 - name: 'Modern Point of Sale (MPOS), Cloud POS és Store Commerce'
                   items:
-                    - name: Store Commerce alkalmazás a Microsoft Dynamics 365 Commerce szolgáltatásban (előzetes verzió)
+                    - name: Store Commerce alkalmazás
                       href: dev-itpro/store-commerce.md
                     - name: Eszközkezelés megvalósítási útmutatója
                       href: implementation-considerations-devices.md
@@ -2872,6 +2872,8 @@
               items:
                 - name: A visszárurendeléssel kapcsolatos visszatérítése elutasítva
                   href: troubleshoot/refund-declined.md
+                - name: A visszatéríthető költségek a visszaküldött mennyiség alapján helytelenül vannak kiszámítva.
+                  href: troubleshoot/refund-miscalculated-partial-return.md
                 - name: Dynamics 365 Payment Connector az Adyen szolgáltatáshoz
                   items:
                     - name: Dynamics 365 Payment Connector az Adyen szolgáltatáshoz – problémák hibaelhárítása
