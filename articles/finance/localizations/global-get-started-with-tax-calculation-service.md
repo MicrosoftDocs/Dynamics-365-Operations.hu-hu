@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
 ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
 ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 01/10/2022
 ms.locfileid: "7952521"

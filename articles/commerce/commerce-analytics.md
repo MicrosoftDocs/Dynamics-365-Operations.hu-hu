@@ -10,7 +10,7 @@ ms.author: aamiral
 ms.search.validFrom: 2021-11-12
 ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
 ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: hu-HU
 ms.lasthandoff: 02/25/2022
 ms.locfileid: "8349743"
