@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 197a5b983b307758425b1acc1f354d0a8bfbf8a1
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: 94038b0eb412632c348081bbf467f44310d9e955
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371902"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603025"
 ---
 # <a name="create-a-globalization-feature"></a>Globalizációs funkció létrehozása
 
@@ -47,7 +47,7 @@ Az alábbi lépésekkel lehet elektronikus számlázási funkciókat létrehozni
 8. A Konfigurációk **rácsban** tallózással keresse meg és válassza ki a feldolgozási folyamathoz szükséges formátumkonfigurációkat (például elektronikus számlafájlok generálása vagy a külső webszolgáltatásoktól származó válaszok feldolgozása).
 9. Válassza ki az **OK** lehetőséget. Most használhatja a konfigurációkat a feldolgozási folyamat műveletei során. További tájékoztatás a konfigurációkban [való munkáról.](e-invoicing-work-configurations.md)
 10. Ha elektronikus számlázási funkcióbeállítást szeretne hozzáadni, **·** **hozza létre az Új funkciólap Beállítások lapján.** A további tudnivalókat lásd [a Funkcióbeállítások használata funkcióval kapcsolatban](e-invoicing-feature-setup.md).
-11. A beállítás befejezése és az elektronikus számlázás szolgáltatás telepítése a szolgáltatási környezetbe. A további tudnivalókat lásd [a Globalizációs funkció befejezése, közzététele és telepítése során](e-invoicing-complete-publish-deploy-globalization-feature).
+11. A beállítás befejezése és az elektronikus számlázás szolgáltatás telepítése a szolgáltatási környezetbe. A további tudnivalókat lásd [a Globalizációs funkció befejezése, közzététele és telepítése során](e-invoicing-complete-publish-deploy-globalization-feature.md).
 
 ### <a name="create-file-format-configurations-that-are-derived-from-the-existing-invoice-model"></a>A meglévő számlamodellből származtatott fájlformátum-konfigurációk létrehozása
 
@@ -91,4 +91,4 @@ Az új fájlformátum-konfigurációkat meg kell osztani a Microsoft tartomány�
     - Ellenőrizze a konfigurációkat, ha testre kell szabni az ER-formátumokat és a formátum-hozzárendeléseket a funkcióverzió formátum-hozzárendelései alapján.
     - Ellenőrizze a beállítást, **ha** testre kell szabni a funkcióverzió Műveletek, **·** **Alkalmazhatósági** szabályok vagy Változók lapját.
 
-9. A beállítás befejezése és az elektronikus számlázás szolgáltatás telepítése a szolgáltatási környezetbe. A további tudnivalókat lásd [a Globalizációs funkció befejezése, közzététele és telepítése során](e-invoicing-complete-publish-deploy-globalization-feature).
+9. A beállítás befejezése és az elektronikus számlázás szolgáltatás telepítése a szolgáltatási környezetbe. A további tudnivalókat lásd [a Globalizációs funkció befejezése, közzététele és telepítése során](e-invoicing-complete-publish-deploy-globalization-feature.md).

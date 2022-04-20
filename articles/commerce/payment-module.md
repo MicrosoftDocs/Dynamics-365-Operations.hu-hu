@@ -2,7 +2,7 @@
 title: Fizetési modul
 description: Ez a témakör ismerteti a fizetési modult, és bemutatja, hogyan konfigurálhatjuk őket a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 01/07/2022
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: de92e137815cb79944a2793fc4841c949ed43346
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: ba95386143ca830aeb1b50b31b4bbd2b54f53a40
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952469"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565729"
 ---
 # <a name="payment-module"></a>Fizetési modul
 
@@ -52,7 +52,7 @@ A következő ábrán egy példa látható az ajándékutalvány-, a hűség- é
 
 A Commerce 10.0.14 kiadásától a fizetési modul integrálva van a Dynamics 365 fizetési összekötővel a PayPalhoz. A fizetési összekötő telepítésével és konfigurálásával kapcsolatos további információkért lásd: [Dynamics 365 fizetési összekötő a PayPal szolgáltatáshoz](paypal.md).
  
-A fizetési oldalon az Adyen és a PayPal összekötők konfigurálhatók. A fizetési modult továbbfejlesztették további tulajdonságokkal, hogy könnyebben azonosíthassa, hogy melyik összekötővel kell dolgoznia. A részleteket lásd a Támogatott fizetési módok és az Elsődleges **fizetési modul tulajdonságai az alábbi** **táblázatban**.
+A fizetési oldalon az Adyen és a PayPal összekötők konfigurálhatók. A fizetési modult továbbfejlesztették további tulajdonságokkal, hogy könnyebben azonosíthassa, hogy melyik összekötővel kell dolgoznia. A részleteket lásd **a Támogatott fizetési módok és** **az Elsődleges fizetési** modul tulajdonságai az alábbi táblázatban.
   
 Ha a fizetési modul a PayPal fizetési összekötő használatára van konfigurálva, egy PayPal gomb jelenik meg a fizetési oldalon. Amikor a vevő aktiválja, a fizetési modul egy PayPal információt tartalmazó iframe-et jelenít meg. Az ügyfél bejelentkezhet, és megadhatja PayPal adatait ezen az iframe-en belül a tranzakció befejezéséhez. Ha egy ügyfél úgy dönt, hogy PayPal használatával fizet, a rendelés fennmaradó egyenlege PayPalon keresztül kerül felszámolásra.
 
@@ -74,6 +74,8 @@ A következő ábra egy példát mutat be a PayPal gombbal megmeghívott PayPal 
 | Fizetés stílus felülbírálása | Stíluslapok (CSS) kód | Mivel a fizetési modul az iframe-en keresztül van szolgáltatva, véges számú formázási képesség áll rendelkezésre. Elérhet néhány formázási lehetőséget ennek a tulajdonságnak a használatával. A webhelystílusok felülírásához be kell illesztenie a CSS-kódot a tulajdonság értékeként. A webhely CSS -építő felülbírálásai és a stílusok nem vonatkoznak erre a modulra. |
 |Támogatott fizetőeszköz-típusok| Sztring| Ha több fizetési csatlakoztató van konfigurálva, akkor a Commerce Headquarters fizetési csatlakoztató konfigurációjában megadott támogatott fizetési mód karakterláncot kell használnia (lásd a következő képet). Ha üres, akkor az Adyen fizetési összekötő az alapértelmezett. Hozzáadva a Commerce 10.0.14-es kiadásában.|
 |Elsődleges fizetés|  **Igaz** vagy **Hamis** | Ha **Igaz**, a rendszer hibaüzeneteket hoz létre a fizetési oldalon található elsődleges fizetési összekötőből. Ha mind az Adyen, mind PayPal fizetési összekötők konfigurálva vannak, állítsa az Adyen értéket **Igaz** értékre, amely a 10.0.14 Commerce kiadásban lett hozzáadva.|
+|Összekötő-azonosító használata| **Igaz** vagy **Hamis** | Akkor használja ezt a tulajdonságot, ha a helyhez több fizetési csatlakoztató van konfigurálva. Ha **igaz**, a csatlakoztatónak a csatlakoztató azonosítóját kell használnia a fizetési korrelációhoz.|
+|Böngészőkészlet nyelvkódja a <a0/<a0/<a iFrame|  **Igaz** vagy **Hamis** | (Csak Adyen) Ha **igaz**, akkor az Adyen iFrame a webhely felhasználója böngészőkörnyezete alapján adja meg a nyelvet, nem pedig a webhelyhez beállított Commerce-csatorna nyelvkódja alapján. Hozzáadva a Commerce 10.0.27-es kiadásában.|
 
 A következő ábra egy példát mutat be, ahol a **Támogatott fizetőeszköz-típusok** érték "PayPal" értékre állítva a Commerce központ fizetési összekötő konfigurációjában.
 ![Példa támogatott fizetőeszköz-típusokra a Commerce Központban.](./media/ecommerce-paymenttendertypes.png)
@@ -97,17 +99,17 @@ Ha a webhely mind az Adyen, mind a PayPal fizetési csatlakoztatóját használn
 1. A PayPal fizetési modul tulajdonságainak ablaktáblájában hajtsa végre a következő lépéseket:
 
     1. A Támogatott fizetőeszköz-típusok tulajdonság **mezőjében** adja meg a **PayPal mezőt**.
-    1. Törölje a jelölést az **Elsődleges fizetési tulajdonság** jelölőnégyzetből.
-    1. Jelölje be a Use **Connector ID tulajdonság** jelölőnégyzetét.
+    1. Törölje a jelölést az **Elsődleges fizetési tulajdonság jelölőnégyzetből**.
+    1. Jelölje be a **Use Connector ID tulajdonság** jelölőnégyzetét.
 
 1. Az Adyen fizetési modul tulajdonságainak ablaktáblájában hajtsa végre a következő lépéseket:
 
     1. Hagyja üresen a Mezőt **a Támogatott fizetési típusok** tulajdonságnál.
-    1. Jelölje be az Elsődleges fizetési tulajdonság **jelölőnégyzetét**.
-    1. Jelölje be a Use **Connector ID tulajdonság** jelölőnégyzetét.
+    1. Jelölje be az Elsődleges **fizetési tulajdonság jelölőnégyzetét**.
+    1. Jelölje be a **Use Connector ID tulajdonság** jelölőnégyzetét.
 
 > [!NOTE]
-> Amikor konfigurálja az Adyen és a PayPal csatlakoztató együttesen történő felhasználhatóságát, a **Dynamics 365 Payment Connector for Adyen konfigurációnak az online csatorna Commerce Headquarters Fizetési számlák csatlakoztató-konfigurációjában az első helyen kell** **lennie**. A csatlakoztató rendelés megerősítéséhez vagy módosítása érdekében váltson **online áruházakba, és válassza ki** a webhely csatornáját. Ezután a Fizetési számlák gyorslapOn, a Csatlakoztatva lapon győződjön meg arról, hogy **az** **·** **·** **Adyen-konfiguráció Dynamics 365 Payment Connectorja az első pozícióban** van (azaz **a** felső sorban), és hogy a Dynamics 365 Payment Connector for PayPal konfiguráció a második sorban van. Az újrarendeléshez szükséges csatlakoztatók hozzáadása vagy eltávolítása.
+> Amikor konfigurálja az Adyen és a PayPal csatlakoztató együttesen történő felhasználhatóságát, **a Dynamics 365 Payment Connector for Adyen** konfigurációnak az online **csatorna** Commerce Headquarters Fizetési számlák csatlakoztató-konfigurációjában az első helyen kell lennie. A csatlakoztató rendelés megerősítéséhez vagy módosítása érdekében váltson **online áruházakba**, és válassza ki a webhely csatornáját. **·** **·** **Ezután** a Fizetési számlák gyorslapOn, a Csatlakoztatva lapon győződjön meg arról, **hogy az Adyen-konfiguráció** Dynamics 365 Payment Connectorja az első pozícióban van (azaz a felső sorban), **és hogy a Dynamics 365 Payment Connector for PayPal** konfiguráció a második sorban van. Az újrarendeléshez szükséges csatlakoztatók hozzáadása vagy eltávolítása.
 
 ## <a name="additional-resources"></a>További erőforrások
 

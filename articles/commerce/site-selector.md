@@ -2,7 +2,7 @@
 title: Webhelyválasztó modul
 description: Ez a témakör leírja a webhelyválasztó modult, és bemutatja, hogyan lehet a webhely lapjaihoz hozzáadni Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 02/11/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: 381163fdd6180a76def2e1bfb733f597b611c517
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
-ms.translationtype: HT
+ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109706"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551694"
 ---
 # <a name="site-picker-module"></a>Webhelyválasztó modul
 
@@ -28,14 +28,9 @@ ms.locfileid: "8109706"
 
 Ez a témakör leírja a webhelyválasztó modult, és bemutatja, hogyan lehet a webhely lapjaihoz hozzáadni Microsoft Dynamics 365 Commerce.
 
-Ha egy vállalatnak különböző webhelyei vannak a különböző piacokon, régiókban és nyelvi területeken, a felhasználóknak egyszerű lehetőséget kell kapniuk a helyek közötti váltásra, hogy kiválaszthassák a preferált vásárlási oldalt. Ennek az esetnek az alkalmazással a webhelyválasztó modul lehetővé teszi a felhasználók számára a több telephelyen keresztüli böngészést.
+Ha egy vállalatnak különböző webhelyei vannak a különböző piacokon, régiókban és nyelvi területeken, a felhasználóknak egyszerű lehetőséget kell kapniuk a helyek közötti váltásra, hogy kiválaszthassák a preferált vásárlási oldalt. Ennek az esetnek az alkalmazással a webhelyválasztó modul lehetővé teszi a felhasználók számára a több telephelyen keresztüli böngészést. A helyválasztót [akkor](geo-detection-redirection.md) is ajánlott használni, ha az e-commerce webhelyhez földrajzi észlelés és átirányítás is van megvalósítva, így a vevők felülbírálhatják az [ország/ régió választó](country-region-picker-module.md) modul segítségével javasolt hely által előnyben részesítést. 
 
-A webhelyválasztó modulban konfigurálni kell azokat a helyeket (piacokat, régiókat vagy helyeket), amelyek között a felhasználók böngészni tudnak.
-
-> [!NOTE]
-> A webhelyválasztó modul a Dynamics 365 Commerce 10.0.14-es verzióban érhető el.
-
-A következő ábra egy olyan helyválasztó modulra mutat be, amely megjelenik egy olyan helyválasztó modulra, amely megjelenik a webhely oldalának fejlécében.
+A webhelyválasztó modulban konfigurálni kell azokat a helyeket (piacokat, régiókat vagy helyeket), amelyek között a felhasználók böngészni tudnak. A következő ábra egy olyan helyválasztó modulra mutat be, amely megjelenik egy olyan helyválasztó modulra, amely megjelenik a webhely oldalának fejlécében.
 
 ![Példa a webhelyválasztó modulra a webhelyoldal fejlécében.](./media/ecommerce-sitepicker.PNG)
 

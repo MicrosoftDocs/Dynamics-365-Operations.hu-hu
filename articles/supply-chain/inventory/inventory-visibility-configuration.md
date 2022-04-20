@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: adab5ee3f626390355f4bab1227efd5fe58c2fcf
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
-ms.translationtype: HT
+ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524521"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547788"
 ---
 # <a name="configure-inventory-visibility"></a>Készletláthatóság konfigurálása
 
@@ -51,9 +51,10 @@ A Készlet láthatósága bővítmény számos új funkcióval bővíti a Power 
 
 | Funkciókezelés neve | Leírás |
 |---|---|
-| OnHandReservation | Ezzel a funkcióval foglalásokat, foglalásokat és/vagy nem foglalt készletmennyiségeket lehet létrehozni a Készlet láthatósága funkcióval. További információért lásd a [Készletláthatósági foglalások](inventory-visibility-reservations.md) című részt. |
-| OnHandMostSpecificBackgroundService | Ez a funkció a termékekkel és az összes dimenzióval együtt egy készletösszegzést ad meg. A készletösszegzési adatokat a rendszer rendszeres időközönként szinkronizálja a Készletláthatóságból. További információ a készlet összesítésében [található](inventory-visibility-power-platform.md#inventory-summary). |
-| OnhandChangeSchedule | A funkció lehetővé teszi a rendelkezésre álló változás ütemezését és az ígérethez rendelkezésre álló funkciókat (nem kötelező). A további tudnivalókat lásd [a Készlet láthatósága aktuális készlet változásának ütemezésében, és ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md). |
+| *OnHandReservation* | Ezzel a funkcióval foglalásokat, foglalásokat és/vagy nem foglalt készletmennyiségeket lehet létrehozni a Készlet láthatósága funkcióval. További információért lásd a [Készletláthatósági foglalások](inventory-visibility-reservations.md) című részt. |
+| *OnHandMostSpecificBackgroundService* | Ez a funkció a termékekkel és az összes dimenzióval együtt egy készletösszegzést ad meg. A készletösszegzési adatokat a rendszer rendszeres időközönként szinkronizálja a Készletláthatóságból. További információ a készlet összesítésében [található](inventory-visibility-power-platform.md#inventory-summary). |
+| *OnhandChangeSchedule* | Ez az opcionális funkció lehetővé teszi az ígérethez rendelkezésre álló változási ütemezést és az ígérethez rendelkezésre álló funkciókat. A további tudnivalókat lásd [a Készlet láthatósága aktuális készlet változásának ütemezésében, amely ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md). |
+| *Raktári cikkek engedélyezése a Készletláthatóság funkcióban* | Ez az opcionális funkció lehetővé teszi a készlet láthatóságát a speciális raktári folyamatokban (raktárkezelési cikkeknél) engedélyezett cikkek támogatása érdekében. A további tudnivalókat lásd [a raktárkészlet-készlet cikkekkel kapcsolatos láthatósági támogatásában](inventory-visibility-whs-support.md). |
 
 ## <a name="find-the-service-endpoint"></a><a name="get-service-endpoint"></a>A szolgáltatás végpontjának keresése
 
@@ -61,7 +62,7 @@ Ha nem ismeri a megfelelő Készletláthatóság szolgáltatás végpontját, ny
 
 ## <a name="data-source-configuration"></a>Adatforrás konfiguráció
 
-Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen lehet például az `fno` adatforrás neve (ami annyit jelent, "Dynamics 365 Finance és műveletalkalmazások") `pos` és (ami azt jelenti, hogy "értékesítési pont"). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
+Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen lehet például az `fno` adatforrás neve (ami a "Dynamics 365 Pénzügyi és műveleti alkalmazások" nevet jelenti) `pos` és (ami azt jelenti, hogy "értékesítési pont"). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
 
 > [!NOTE]
 > Az `fno` adatforrás le van foglalva az Ellátásilánc-kezeléshez. Ha a készlet láthatósági bővítménye integrálva van egy ellátásilánc-kezelési környezettel, javasoljuk, `fno` hogy ne törölje az adatforráshoz kapcsolódó konfigurációkat.

@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2021-06-08
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: abc827139c71f7942335cd2b7e2c7502f7fc1cfe
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
-ms.translationtype: HT
+ms.openlocfilehash: 1446928c2f5fe606d1d0732764a2a4460643afcf
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469394"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548167"
 ---
 # <a name="inventory-forecasts"></a>Készlet előrejelzések
 
@@ -39,7 +39,7 @@ Az előrejelzési sorok létrehozására vannak más lehetőségek is:
 - [Statisztikai kiinduló előrejelzés létrehozása](generate-statistical-baseline-forecast.md).
 - [Előzményadatok importálása az igény-előrejelzésekhez](import-historical-data.md).
 - [Az előrejelzés létrehozásához a Microsoft Azure Machine Learning webszolgáltatást](demand-forecasting-setup.md) használja.
-- [Igény- vagy ellátás-előrejelzési sorok importálása az adatkezelési keretrendszer használatával (ForecastDemandForecastEntryStaging és ForecastSupplyForecastEntryStaging adatentitások)](../../dev-itpro/data-entities/data-entities-data-packages.md).
+- [Igény- vagy ellátás-előrejelzési sorok importálása az adatkezelési keretrendszer használatával (ForecastDemandForecastEntryStaging és ForecastSupplyForecastEntryStaging adatentitások)](/dynamics365/fin-ops-core/dev-itpro/data-entities/data-entities-data-packages).
 
 Ahogy az 1. lépésben található táblázat mutatja, különböző lehetőségek állnak rendelkezésre a használt oldalak elérésére.
 

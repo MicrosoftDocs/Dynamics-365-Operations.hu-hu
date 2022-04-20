@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0c856bca32c3dee44469c098961d85b4d8cb70a6
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8060424"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565628"
 ---
 # <a name="provision-human-resources"></a>Human Resources kiépítése
 
@@ -40,6 +40,10 @@ Mielőtt elkezdené egy új termelési környezet biztosítását, a következő
 
 ## <a name="provision-a-human-resources-trial-environment"></a>Az Emberi erőforrások próbakörnyezetének kiépítése
 
+>[!NOTE]
+> 2022. április elején az Emberi erőforrások próbakörnyezete nem lesz elérhető a különálló alkalmazásban. Azok a potenciális vevők, akik az emberi erőforrásokkal kapcsolatos képességek felmérése iránt érdeklődők a Pénzügy és Műveletek alkalmazáson belül, ezt az ingyenes 30 napos próbaidőszakban, a bemutató adataival együtt megtenni. A Dynamics 365 Pénzügy az emberi erőforrások azon képességeit fogja tartalmazni, amelyek a pénzügyi infrastruktúra számára a különálló alkalmazás egyesítése révén biztosítanak majd szolgáltatásokat. A további tudnivalókat [lásd a HR-ajánlatok](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers)[egyesítése és a vevőknek való képességek egyesítésével kapcsolatban. A Dynamics 365 pénzügyekkel kapcsolatos további tudnivalókat lásd a lépésenként útmutatóban](/fin-ops/get-started/before-you-buy). 
+
+
 Az első üzenetkészlet vagy termelési környezet létesítása előtt szükség lehet egy Emberi erőforrások próbakörnyezet építésére, hogy érvényes legyen az [Emberi erőforrások próbakörnyezet](https://go.microsoft.com/fwlink/p/?LinkId=2115962) Emberi erőforrások szolgáltatás. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók a Human Resources környezet rendszergazdai felületén keresztül. 
 
 A próbakörnyezet lehetővé teszi az emberi erőforrások funkcióinak kiértékelését az olyan személyek számára, akik még nem férnek hozzá Human Resources környezethez. Ha próbakörnyezetet létesít, és a hitelesített felhasználónak már van hozzáférése egy vagy több meglévő Human Resources környezethez, a rendszer átirányítja a felhasználót a meglévő környezetre vagy a környezetek listájára.
@@ -58,7 +62,7 @@ Az első Human Resources-környezet létrehozása előtt gondosan tervezze meg a
 További környezetekre vonatkozó megfontolások:
 
 - **Adatáttelepítés**: Előfordulhat, hogy egy további környezetre lehet szükség az adatáttelepítési tevékenységekhez ahhoz, hogy a rendszer tesztkörnyezetét használ a projekt teljes egészében tesztelési célokra használhassa. A további környezetek lehetővé teszik az adatáttelepítési tevékenységek folytatását úgy, hogy a tesztelés és a konfigurálás ezzel egyidejűleg egy másik környezetben történik.
-- **Integráció**: Előfordulhat, hogy egy további környezetre is szükség lesz az integrációk konfigurálásához és teszteléséhez. Idetartozhatnak az olyan natív integrációk, mint például a Ceridian Dayforce LinkedIn Talent Hub-integrációk, vagy olyan egyéni integrációk, mint például a bérszámfejtési, a pályázókövetési rendszerek, illetve a juttatási rendszerek és a szolgáltatók egyéni integrációi.
+- **Integráció**: Előfordulhat, hogy egy további környezetre is szükség lesz az integrációk konfigurálásához és teszteléséhez. Ide tartozhatnak az olyan natív integrációk, mint például a Ceridian Dayforce vagy a LinkedIn Talent Hub integráció, vagy egyéni integrációk, mint például a bérszámfejtési, a pályázó-nyomon követési rendszerek, illetve a juttatási rendszerek és a szolgáltatók integrációja.
 - **Képzés**: Lehet, hogy külön környezetre lesz szüksége, amelyet a képzési adatok készletével konfigurált, hogy az alkalmazottakat ki tudja képezni az új rendszer használatára. 
 - **Többfázisos projekt**: Szükség lehet egy további környezetre a konfiguráció, az adatáttelepítés, a tesztelés és más tevékenységek támogatásához egy olyan projektfázisban, amelyet a projekt kezdeti indulása után terveztek be.
 

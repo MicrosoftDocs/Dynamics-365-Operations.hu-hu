@@ -1,5 +1,5 @@
 ---
-title: Új ER-megoldás megtervezése ZPL-címkék nyomtatásához
+title: Új ER-megoldás tervezése ZPL-címkék nyomtatásához
 description: Ez a témakör bemutatja, hogy hogyan lehet új elektronikus jelentéskészítő (ER) megoldást tervezni a programozási nyelv (ZPL) címkéinek nyomtatására.
 author: NickSelin
 ms.date: 02/28/2022
@@ -15,24 +15,23 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 4fb89f4b56ce8189482bf1a86582ef7e3684b15a
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: c1bedf1184b45741102000fa68c8d662c7383301
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392963"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612356"
 ---
-# <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Új ER-megoldás megtervezése ZPL-címkék nyomtatásához
+# <a name="design-a-new-er-solution-to-print-zpl-labels"></a>Új ER-megoldás tervezése ZPL-címkék nyomtatásához
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör leírja, hogyan konfigurálhatja az elektronikus jelentéskészítő (ER) [keretrendszer paramétereit a Rendszergazda,](general-electronic-reporting.md) elektronikus jelentéskészítő fejlesztő vagy elektronikus jelentéskészítő funkcionális tanácsadó szerepkörű felhasználók, hogyan tervezheti meg egy új ER-megoldás SZÜKSÉGES ER-konfigurációit [...](general-electronic-reporting.md#Configuration), hogy hozzáférjenek a raktárkezelő rendszer adataihoz, és létrehozták az egyéni raktári helycímkéket a ZPL II formátumban. Ezeket a lépéseket a **USRT** vállalatban hajthatja végre.
 
 ## <a name="business-scenario"></a>Üzleti eset
 
-Ön egy olyan vállalatot képvisel, amely a raktárkezelést megvalósította a Microsoftban Dynamics 365 Finance. Minden raktári helyet egy vonalkódot tartalmazó, önfelfedő címkével kell címkézni. A raktári dolgozók kézi vonalkódolvasókat fognak használni a vonalkódok beolvasására.
+Ön egy raktárkezelést megvalósító Microsoft Dynamics vállalat a 365 Pénzügyben. Minden raktári helyet egy vonalkódot tartalmazó, önfelfedő címkével kell címkézni. A raktári dolgozók kézi vonalkódolvasókat fognak használni a vonalkódok beolvasására.
 
 Minden raktári hely címkéje az élő tevékenységek előzetes hatókörében van megcímkézve. A raktári helycímkéket azonban igény szerint ki kell nyomtatni, ha a meglévő címkék megsérülnek, vagy a raktári polcokat újrakonfigurálják. A legutóbb kiadott ER funkciók használatával olyan új ER-megoldást konfigurálhat, amellyel a raktárvezetők közvetlenül kinyomtatják a címkéket egy címkenyomtatóba.
 
@@ -69,7 +68,7 @@ A konfigurált adatmodell szerkeszthető változatát az Adatmodell-tervező **o
 
 ## <a name="design-a-model-mapping-for-the-configured-data-model"></a>Modell-leképezés tervezése a konfigurált adatmodellhez
 
-Az Elektronikus jelentéskészítő fejlesztő szerepkör felhasználójaként létre kell hoznia egy új ER-konfigurációt, amely tartalmazza a [Raktár](er-overview-components.md#model-mapping-component) adatmodell modell-hozzárendelési összetevőjét. Ez az összetevő implementálja a konfigurált adatmodellt Dynamics 365 Finance ehhez az alkalmazáshoz, és erre az alkalmazásra vonatkozik. Konfigurálnia kell úgy, hogy megadja azokat az alkalmazásobjektumokat, amelyek a konfigurált adatmodell futásidőben való kitöltéséhez lesznek használva. A feladat végrehajtásához meg kell értenie, hogyan valósítja meg a Raktárkezelés üzleti tartomány adatszerkezetét a Pénzügyben.
+Az Elektronikus jelentéskészítő fejlesztő szerepkör felhasználójaként létre kell hoznia egy új ER-konfigurációt, amely tartalmazza a [Raktár](er-overview-components.md#model-mapping-component) adatmodell modell-hozzárendelési összetevőjét. Ez az összetevő a Dynamics 365 Pénzügy konfigurált adatmodelljét valósítja meg, és az adott alkalmazásra vonatkozik. Konfigurálnia kell úgy, hogy megadja azokat az alkalmazásobjektumokat, amelyek a konfigurált adatmodell futásidőben való kitöltéséhez lesznek használva. A feladat végrehajtásához meg kell értenie, hogyan valósítja meg a Raktárkezelés üzleti tartomány adatszerkezetét a Pénzügyben.
 
 ### <a name="import-a-model-mapping-configuration"></a>Modellleképezés konfigurációjának importálása
 

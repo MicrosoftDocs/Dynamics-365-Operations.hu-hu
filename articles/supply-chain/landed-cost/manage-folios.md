@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5b84237844ec1d8f6c0716a0a13b05c83b358901
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: d414ed7ac55afbbc58b8f5542c713f56392f9bc7
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7575776"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570436"
 ---
 # <a name="manage-folios"></a>A levelek kezelése
 
 [!include [banner](../../includes/banner.md)]
 
-A leveleket gyakran vámszabályok határozzák meg. Egy szállító szállításonként egy entitásnak vagy vállalatnak szánt termékeiből állhat. A levélben található áruk lehetnek egy konténerben vagy több konténer között elosztva is.
+A leveleket gyakran vámszabályok határozzák meg. Egy szállító szállításonként egy entitásnak vagy vállalatnak szánt termékeiből állhat. A fóliában található áruk kezelése egy tárolóban van.
 
 Az **Összes levél** oldal megnyitásához nyissa meg a **Partraszállítási költség \> Levelek \> Összes levél** menüpontot. Ez az oldal az összes aktuális levél listáját jeleníti meg. A Művelet panel gombjaival leveleket hozhat létre, törölhet és kezelhet. A lista bármely levelét kiválasztva megtekintheti a részleteit **Levelek** oldalon.
 

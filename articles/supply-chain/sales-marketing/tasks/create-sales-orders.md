@@ -2,7 +2,7 @@
 title: Értékesítési rendelések létrehozása
 description: Ez az eljárás bemutatja, hogyan lehet eladási rendelést létrehozni.
 author: Henrikan
-ms.date: 06/25/2019
+ms.date: 04/06/2022
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5746fa0ab9fd7ef3e288adc88a755324309a27c0
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: 462f47ab5d85665ed8132e5bfb6dd945c537c1ef
+ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7566311"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8551724"
 ---
 # <a name="create-sales-orders"></a>Értékesítési rendelések létrehozása
 
@@ -66,5 +66,7 @@ Szervezetünk által forgalmazott termékek különböző változatokban kerülh
     
 3. Válassza ki az **OK** lehetőséget.
 
+## <a name="sales-order-creation-performance-enhancement"></a>Értékesítési rendelések létrehozásának teljesítményjavítása
+Az alkalmazás 10.0.26-os **verziójában bevezetett új funkció csökkenti a SourceDocumentHeader** **és SourceDocumentLine táblák további rekord-létrehozási többletét**. A teljesítmény csökken, és csökken a tárolási méret, mivel ezek a rekordok nincsenek létrehozva. A forrásdokumentum keretrendszerének ezen alapul szolgáló táblái jelenleg nem használatosak a termék értékesítési rendeléseit használva, és nincsenek ütemezett tervek a termékek alkalmazására. Ennek a funkciónak a engedélyezése biztonságos változásnak számít a jobb teljesítmény érdekében. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

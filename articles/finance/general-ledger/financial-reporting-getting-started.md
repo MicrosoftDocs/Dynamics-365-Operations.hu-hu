@@ -1,6 +1,6 @@
 ---
 title: Pénzügyi jelentéskészítés – áttekintés
-description: Ez a témakör azt ismerteti, hol érheti el a Microsoft Dynamics 365 Finance pénzügyi jelentéseit, és hogyan használhatja a pénzügyi jelentési képességeket.
+description: Ez a témakör leírja, hogy hol lehet hozzáférni a pénzügyi jelentésekhez a Microsoft Dynamics 365 Pénzügyben, és hogyan lehet használni a pénzügyi jelentéskészítő funkciókat.
 author: aprilolson
 ms.date: 03/31/2022
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e1db676024f5ec0f254500bd2ceee85ab2150502
-ms.sourcegitcommit: 777f9581dccc0f963c6a04c95b85e00e68573db5
+ms.openlocfilehash: fcdb5a934818468e00be960f9afe541966e5eabf
+ms.sourcegitcommit: e8a2a1e34fa48a42afac9724828f4ec72b6d7085
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8527313"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8573650"
 ---
 # <a name="get-started-with-financial-reporting"></a>Első lépések a Pénzügyi jelentéskészítéssel 
 
@@ -138,7 +138,7 @@ Amikor rákattint a **Pénzügyi jelentéskészítés** menüre, a vállalat ala
 
 ## <a name="creating-and-modifying-financial-reports"></a>Pénzügyi jelentések létrehozása és módosítása
 
-A pénzügyi jelentések listából új jelentést hozhat létre, vagy módosíthat egy meglévő jelentést. Ha rendelkezik a megfelelő engedélyekkel, új pénzügyi jelentést hozhat létre az **Új** gombra kattintva a műveletpanelen. Letöltődik a készülékére egy jelentéstervező program. A jelentéstervező elindulása után új jelentést hozhat létre. Az új jelentés mentése után megjelenik a pénzügyi jelentések listájában. A listában csak a Dynamics 365 Finance rendszerben használt vállalatra vonatkozó jelentések jelennek meg. 
+A pénzügyi jelentések listából új jelentést hozhat létre, vagy módosíthat egy meglévő jelentést. Ha rendelkezik a megfelelő engedélyekkel, új pénzügyi jelentést hozhat létre az **Új** gombra kattintva a műveletpanelen. Letöltődik a készülékére egy jelentéstervező program. A jelentéstervező elindulása után új jelentést hozhat létre. Az új jelentés mentése után megjelenik a pénzügyi jelentések listájában. A lista csak a Dynamics 365 Pénzügyben használt vállalathoz létrehozott jelentéseket jeleníti meg. 
 
 ## <a name="reporting-tree-definitions"></a>Jelentési-fa definíciók
 
@@ -150,9 +150,9 @@ Korlátlan számú jelentési fát hozhat létre, hogy szervezete adatait külö
 
 A Pénzügy és a Műveletek alkalmazás minden hónapban frissül. A Financial Reporting azonban nem feltétlenül frissülnek ebben az ütemben. Ezenkívül a vevőknek több lehetőség áll rendelkezésre arról, hogy mikor valósítják meg a Pénzügyi és üzemeltetési alkalmazások frissítéseit. A Financial Reporting frissítései automatikusan telepítve vannak. A Financial Reporting egy erre a célra kijelölt verziót használ fel, amely az ügyfél környezetében lesz betöltve, amikor szolgáltatásfrissítés történik, amikor a szolgáltatás leállítását kezdeményezik, vagy ha a vevő környezete Karbantartási módban van. Ennek a folyamatnak az neve *slipstreaming* vagy *valós frissítés* mivel minden ügyfél-implementáció a Financial Reporting ugyanazon verziójára van beállítva.
 
-Az egyes verziókban kiadott módosítások [A Dynamics 365 Finance újdonságai és módosításai](../../finance/get-started/whats-new-home-page.md) részben találhatók. A platformfrissítések és hibajavítások az egyes kiadásokhoz a lap alján, a "További erőforrások" szakaszban találhatók.
+Az egyes verziókban kiadott módosítások [a Dynamics 365 Pénzügy újdonságei és újdonságei című témakörben találhatók](../../finance/get-started/whats-new-home-page.md). A platformfrissítések és hibajavítások az egyes kiadásokhoz a lap alján, a "További erőforrások" szakaszban találhatók.
 
-A kiválasztott slipstreamed verzió a termelésre kész Financial Reporting felülvizsgált és ellenőrzött verziója. Kompatibilis a Dynamics 365 Finance minden korábbi és későbbi verziójával. Például a Financial Reporting a legutóbbi 10.0.19-es builden lehet, miközben a vevő még mindig a 10.0.16-os alkalmazásverziót használja.
+A kiválasztott slipstreamed verzió a termelésre kész Financial Reporting felülvizsgált és ellenőrzött verziója. A Dynamics 365 Pénzügy bármely korábbi vagy jövőbeli verziójával kompatibilis. Például a Financial Reporting a legutóbbi 10.0.19-es builden lehet, miközben a vevő még mindig a 10.0.16-os alkalmazásverziót használja.
 
 > [!NOTE]
 > Az egyetlen körülmények, amikor a vevők egy korábbi verzióra (visszalépési esetbe) állhatnak át, ha a Microsoft egy probléma miatt leállít egy valós bevezetést. Amint elérhető egy javítás, automatikusan alkalmazva lesz.
@@ -212,7 +212,7 @@ Az alábbi lépésekkel hatékonyabbá teheti a Microsoft ügyfélszolgálatáva
 A következő lépésekben a Financial Reporting szolgáltatáshoz tartozó Eseménynapló üzenetei bekapcsolásának folyamatát ismertetjük. Az Eseménynapló által generált naplók segítenek az ügyfélszolgálati szakértőknek a kapcsolati probléma forrásának gyors azonosításában. A naplók másolatát küldje be a jegyével együtt, amikor kapcsolatba lép az ügyfélszolgálattal.
 
 
-1. Másolja a RegisterETW.zip fájlt a kliens munkaállomásra (lehetőleg az Asztalra), és csomagolja ki a [RegisterETW.zip](https://dev.azure.com/msdyneng/e6f12261-a46a-4af1-ac0c-e22bc2c5a478/_apis/git/repositories/ff923027-67f0-43fb-b63c-6d6b6423840f/Items?path=%2F.attachments%2FRegisterETW-c1a35291-6aa6-4462-a2bc-4ba117fd5f8e.zip&download=false&resolveLfs=true&%24format=octetStream&api-version=5.0-preview.1&sanitize=true&versionDescriptor.version=wikiMaster) fájlt.
+1. Másolja a RegisterETW.zip fájlt a kliens munkaállomásra (lehetőleg az Asztalra), és csomagolja ki a [RegisterETW.zip](https://mbs2.microsoft.com/fileexchange/?fileID=60b1106b-d5f8-4e0f-8041-039102505122) fájlt.
 2. Győződjön meg róla, hogy a Windows Eseménynapló be van zárva.
 3. Nyisson meg egy Administrator PowerShell parancssort, és lépjen abba a könyvtárba, ahol a RegisterETW.ps1 található.
 4. Futtassa a következő parancsot: .\RegisterETW.ps1
@@ -242,7 +242,7 @@ Probléma: A következő hibaüzenetet kapja: „Nem sikerült csatlakozni a Fin
 * Amikor megkapja a kapcsolódási hibaüzenetet, válassza az **Ellenőrzés** lehetőséget a kapcsolat teszteléséhez, és nézze meg, milyen üzenet jelenik meg. 
 * A probléma oka lehet, hogy egy másik felhasználónak nincs hozzáférése a Financial Reporting szolgáltatáshoz. Ha egy felhasználónak nincs hozzáférése, akkor egy üzenetet kap, amely szerint nincs jogosultsága.
 * Ha a probléma több böngészőben is jelentkezik, győződjön meg arról, hogy a munkaállomáson az óra Automatikus értékre van állítva.
-* Működjön együtt olyan felhasználóval, aki biztonsági rendszergazdai jogokkal rendelkezik a Dynamics 365 Finance alkalmazásban, és rendszergazdai jogosultsággal rendelkezik a hálózati tartományban, jelentkezzen be a munkaállomásra, és nézze meg, hogy tud-e csatlakozni. Ha tud csatlakozni, a probléma a hálózati engedélyekkel lehet összefüggésben.
+* Ha egy olyan felhasználóval dolgozik, aki biztonsági rendszergazdai jogokkal rendelkezik a Dynamics 365 Pénzügyben, és rendszergazdai jogosultsággal rendelkezik a hálózati tartományhoz, jelentkezzen be a munkaállomásra, és nézze meg, hogy tud-e csatlakozni a munkaállomáshoz. Ha tud csatlakozni, a probléma a hálózati engedélyekkel lehet összefüggésben.
 * A munkaállomáson ideiglenesen tiltsa le a tűzfalat. Ha ezután képes csatlakozni a Report Designerhez, a probléma a tűzfallal van. Működjön együtt a szervezet informatikai osztályával a probléma megoldása érdekében.
 
 ## <a name="additional-resources"></a>További erőforrások

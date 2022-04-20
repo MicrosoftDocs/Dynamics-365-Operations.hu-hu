@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: e4861c0e8b3680f3cd3229facf059b671a4fc765
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 90410585f314aa9f17f2c132afb6568307fb28ab
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983417"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570381"
 ---
 # <a name="landed-cost-module"></a>Partraszállási költség modul
 
@@ -39,7 +39,7 @@ A partraszállási költség pontos és megfelelő időben történő becslést 
 
 ### <a name="voyages"></a>Utak
 
-A partraszállási költségnél a hajóút egy olyan elkülönült mozgás, amely a kimenő helyről egy megadott időszakban, megadott célhelyek csoportján keresztül egy megadott bemeneti raktár helyéig tart. A beszerzési rendelések és a rendeléssorok egy hajóút egyetlen tárolójához vagy több tárolójához is hozzáadhatók, és a költségek felosztása helyesen történik egy cikksorra megadva. Egyetlen hajóútnál több jogi személyhez is hozzá lehet adni rendeléseket és rendeléssorokat.
+A partraszállási költségnél a hajóút egy olyan elkülönült mozgás, amely a kimenő helyről egy megadott időszakban, megadott célhelyek csoportján keresztül egy megadott bemeneti raktár helyéig tart. A beszerzési rendelések és a rendeléssorok egy hajóút egyetlen tárolójához vagy több tárolójához is hozzáadhatók, és a költségek felosztása helyesen történik egy cikksorra megadva. 
 
 ### <a name="item-ownership"></a>Cikk tulajdonjoga
 

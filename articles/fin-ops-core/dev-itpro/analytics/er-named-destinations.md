@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 1e06fafe8d8bbe92ddf4fcd94d7271a1fbb6362a
-ms.sourcegitcommit: 7e32e5e39e762a4b1606161cb603a450d13b5251
+ms.openlocfilehash: 4cd99b1d2c0dbbf48e7eee7e1233e3b078d14ba3
+ms.sourcegitcommit: 6109fc2fe5f407363bb6f240d64b7214657f5914
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "7413597"
+ms.lasthandoff: 04/15/2022
+ms.locfileid: "8603054"
 ---
 # <a name="configure-print-management-record-specific-er-destinations"></a>Nyomtatáskezelési rekord-specifikus ER-célpontok konfigurálása
 
@@ -35,9 +35,9 @@ Az eljárásokat az USMF vállalatnál lehet elvégezni. Nincs szükség kódol�
 
 ## <a name="introduction"></a>Bevezetés
 
-A kimenő dokumentum létrehozásához használt [ER-formátum](general-electronic-reporting.md#FormatComponentOutbound) [konfiguráció](general-electronic-reporting.md#Configuration) fájlkimeneti összetevőjében minden egyes mappához beállíthatja a [célállomásokat](electronic-reporting-destinations.md). Egy ilyen típusú ER-formátum futtatásakor, ha rendelkezik a megfelelő hozzáférési jogokkal, a konfigurált célbeállításokat is módosíthatja futás közben.
+A kimenő dokumentum létrehozásához használt [ER-formátum](general-electronic-reporting.md) [konfiguráció](general-electronic-reporting.md#Configuration) fájlkimeneti összetevőjében minden egyes mappához beállíthatja a [célállomásokat](electronic-reporting-destinations.md). Egy ilyen típusú ER-formátum futtatásakor, ha rendelkezik a megfelelő hozzáférési jogokkal, a konfigurált célbeállításokat is módosíthatja futás közben.
 
-A Microsoft Dynamics 365 Finance **10.0.17-es és újabb verziójában** egy ER-formátumhoz műveleti kódot lehet [beállítani](er-apis-app10-0-17.md), amely meghatározza azt a műveletet, amelyet a felhasználók az adott ER-formátum futtatásával végeznek. Például a **Számlakövetelések** modulban a nyomtatáskezelési beállítások között kiválaszthat egy olyan ER formátumot, amely egy adott üzleti dokumentumot, például egy szabad szöveges számlát generál. Ezután a számla előnézeti képe megtekinthető a **Nézet** lehetőséggel, illetve a **Nyomtatás** gombbal elküldheti egy nyomtatóra. Ha a futó ER-formátumhoz futáskor átad egy műveletet, akkor a [különböző felhasználói műveletekhez különböző ER-célpontokat konfigurálhat.](er-action-dependent-destinations.md)
+Microsoft Dynamics A 365 Pénzügyi **csoport 10.0.17-es** és újabb verziójában egy ER-formátumhoz be lehet állítani egy műveletkódot, [amely](er-apis-app10-0-17.md) meghatározza, hogy a felhasználók az ER-formátum futtatásával hogyan végezzenek. Például a **Számlakövetelések** modulban a nyomtatáskezelési beállítások között kiválaszthat egy olyan ER formátumot, amely egy adott üzleti dokumentumot, például egy szabad szöveges számlát generál. Ezután a számla előnézeti képe megtekinthető a **Nézet** lehetőséggel, illetve a **Nyomtatás** gombbal elküldheti egy nyomtatóra. Ha a futó ER-formátumhoz futáskor átad egy műveletet, akkor a [különböző felhasználói műveletekhez különböző ER-célpontokat konfigurálhat.](er-action-dependent-destinations.md)
 
 A Pénzügyek **10.0.21-es és újabb verziójában** egy ER-formátumhoz be lehet [állítani](er-apis-app10-0-21.md) egy nevesített célállomást, és azt hozzá lehet rendelni ahhoz a nyomtatáskezelési rekordhoz, amelyet az adott ER-formátum futtatásakor feldolgoznak. Például a **Számlakövetelések** modulban a Nyomtatáskezelési beállítások között az **Eredeti** rekordot a következő műveletek elvégzésére kívánja beállítani:
 

@@ -8,12 +8,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: aamiral
 ms.search.validFrom: 2021-11-12
-ms.openlocfilehash: 7e3721421e15bc3e5937691cdbaee51e4d3cdd17
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
-ms.translationtype: HT
+ms.openlocfilehash: 63d6e5ef7e883578106495d5ec778bbd686ee92d
+ms.sourcegitcommit: 722854cb0d302d01ce3d9580ac80dc7c23d19bf5
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349743"
+ms.lasthandoff: 04/06/2022
+ms.locfileid: "8550007"
 ---
 # <a name="commerce-analytics-preview"></a>Commerce elemzések (Előzetes verzió)
 
@@ -88,7 +88,7 @@ A Commerce Analytics sablonalkalmazás a következő fő jelentésoldalakat tart
 3. [Vevők](#CustomersPage)
 4. [Csatornák](#ChannelsPage)
 5. [Értékesítés](#SalesPage)
-6. [Margók](#MarginsPage)
+6. [Árrések](#MarginsPage)
 7. [Visszáruk](#ReturnsPage)
 8. [Engedmények](#DiscountsPage)
 9. [Kifizetések](#PaymentsPage)
@@ -352,15 +352,20 @@ A **Jelentések jelentés** a következő mérőszámokat tartalmazza:
 
 ### <a name="enable-and-configure-commerce-analytics-preview"></a><a name="enableCommerceAnalytics"></a> Commerce analitikának engedélyezése és konfigurálása (előnézet)
 
-A Commerce Analytics (Preview) telepítéséhez jogosultsággal kell rendelkeznie erőforrások Azure-előfizetésben való létrehozásához. A bővítmények LCS-be való telepítéséhez is rendelkeznie kell engedéllyel. 
+A Commerce Analytics (Preview) telepítéséhez jogosultsággal kell rendelkeznie erőforrások Azure-előfizetésben való létrehozásához. A bővítmények LCS-be való telepítéséhez is rendelkeznie kell engedéllyel.
 
 A Commerce Analytics (Preview) engedélyezéséhez és konfigurálhoz hajtsa végre a következő lépéseket.
 
-1. [Az Exportálás a Következőbe bővítmény engedélyezése és konfigurálása](#enableExportToDataLake):
-1. [Munkaterület telepítése és Azure Synapse konfigurálása](#configureAzureSynapse).
-1. [Hozzáadás a kulcshoz.](#addSecrets)
-1. [A Commerce Analytics (Preview) bővítmény engedélyezése és konfigurálása](#enableCommerceAnalyticsAddin)
-1. [Telepítse a Power BI sablonalkalmazást](#powerbi).
+1. [Az Előnézet űrlap elküldése Commerce analitikának (Előnézet)](#joinPreview)
+2. [Az Exportálás a Következőbe bővítmény engedélyezése és konfigurálása](#enableExportToDataLake):
+3. [Munkaterület telepítése és Azure Synapse konfigurálása](#configureAzureSynapse).
+4. [Hozzáadás a kulcshoz.](#addSecrets)
+5. [A Commerce Analytics (Preview) bővítmény engedélyezése és konfigurálása](#enableCommerceAnalyticsAddin)
+6. [Telepítse a Power BI sablonalkalmazást](#powerbi).
+
+### <a name="submit-the-preview-intake-form-for-commerce-analytics-preview"></a><a name="joinPreview"></a> Az Előnézet űrlap elküldése Commerce analitikának (Előnézet)
+
+Az Előnézet űrlap [elküldése Commerce analitikának (Előnézet)](https://forms.office.com/r/vW5VLJGXZ2) A kérés feldolgozása után a visszaigazoló e-mail meg lesz küldve a képernyőn megadott e-mail címre.
 
 ### <a name="enable-and-configure-the-export-to-data-lake-add-in"></a><a name="enableExportToDataLake"></a> Az Exportálás a Következőbe bővítmény engedélyezése és konfigurálása:
 
@@ -420,7 +425,7 @@ A Commerce Analytics (Preview) bővítmény telepítéséhez és konfiguráléhe
     | Az Azure-kulcs DNS-neve | Adja meg kulcskulcsának DNS-nevét. Ezt az értéket meg kell jegyezte volna, [miközben az Adatexportált bővítményt konfigurálta](#keyVault). | `https://contosod365datafeedpoc.vault.azure.net/` |
     | Az alkalmazásazonosítót tartalmazó titkos név | Adja meg az alkalmazásazonosítót tároló titkos nevet. Ezt az értéket meg kell jegyezte volna, [miközben az Adatexportált bővítményt konfigurálta](#keyVault). | `app-id` |
     | Az alkalmazás titkos nevét tartalmazó titkos név | Adja meg az alkalmazás titkos nevét. Ezt az értéket meg kell jegyezte volna, [miközben az Adatexportált bővítményt konfigurálta](#keyVault). | `app-secret` |
-    | A kiszolgáló nélküli SQL-végpontot tartalmazó titkos név a következő számára: Azure Synapse | Adja meg a kiszolgáló nélküli SQL-végpontot tároló titkos nevet. A titkos kulcsot létre kellett volna hozatni, miközben a [kulcsértékhez hozzáadott egy új 5000 000 000 000](#addSecrets) 000 000 000 00 | `synapse-sql-server` |
+    | A kiszolgáló nélküli SQL-végpontot tartalmazó titkos név a következő számára: Azure Synapse | Adja meg a kiszolgáló nélküli SQL-végpontot tároló titkos nevet. A titkos kulcsot létre kellett volna hozatni, miközben a [kulcsértékhez hozzáadott egy új 5000 000 000 000 000 000 000 00](#addSecrets) | `synapse-sql-server` |
     | Az SQL írásra csak olvasható felhasználók számára beállított jelszót tartalmazó titkos név a következőben: Azure Synapse | Annak a titkos névnek a megadása, amely a kiszolgáló nélküli SQL-írás nélküli felhasználók számára beállított jelszót tárolja. Ezt a felhasználót fogja létrehozni a rendszer, Power BI és a felhasználónak kell használnia a jelentésben a kiszolgáló nélküli SQL-kiszolgálóhoz való csatlakozásra. A titkos kulcsot akkor kellett volna létrehoznia, amikor hozzáadta [a kulcs értékét](#addSecrets). | `readonly-sql-pwd` |
 
 1. Fogadja el az ajánlat feltételeit: jelölje be a jelölőnégyzetet, majd válassza a Telepítés **lehetőséget**.

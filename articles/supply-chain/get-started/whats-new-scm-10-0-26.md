@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 2b39eef816aaa383f0f8cbf1b2c308a6eafebd8f
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
-ms.translationtype: HT
+ms.openlocfilehash: 996988b1a4d59ae9ad7b4031e492824c0a6abc95
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524437"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547873"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10026-may-2022"></a>A Dynamics 365 Supply Chain Management 10.0.26. előzetes verziója (2022. május)
 
@@ -34,7 +34,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Lehe
 
 | Szolgáltatásterület | Szolgáltatás | További információ | Engedélyezte:   |
 |---|---|---|---|
-| Készlet és logisztika | [Készlet-láthatósági lekérdezés a speciális raktárkezelési cikkek támogatásához](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | Hamarosan | Funkciókezelés:<br>*Raktári cikkek engedélyezése a Készletláthatóság funkcióban* |
+| Készlet és logisztika | [Készlet-láthatósági lekérdezés a speciális raktárkezelési cikkek támogatásához](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-visibility-support-advanced-warehouse-management) | [Készlet láthatóságának támogatása raktárkészlet-készleten lévő cikkekhez](../inventory/inventory-visibility-whs-support.md) | Funkciókezelés:<br>*Raktári cikkek engedélyezése a Készletláthatóság funkcióban* |
 | Készlet és logisztika | [Ígérethez rendelkezésre áll a készlet láthatósági bővítménye számára](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/available-to-promise-inventory-visibility-add-in) | [A készlet láthatósága – az aktuális készlet változásának ütemezése, amely ígérethez rendelkezésre áll](../inventory/inventory-visibility-available-to-promise.md) | Szolgáltatáskonfiguráció által engedélyezve |
 | Gyártás | [A termelési emelet végrehajtási felületének cikkekkel súlyozott súlya](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/catch-weight-items-production-floor-execution-interface) | [A termelési üzem végrehajtási felületének használata dolgozók számára](../production-control/production-floor-execution-use.md) | Funkciókezelés:<br>*(Előzetes verzió) Jelentés a termelési üzem végrehajtási felületéről származó tényleges súly szerinti cikkekről* |
 | Gyártás | A saját feladatok lap a termelési üzem végrehajtási felületén <!-- KFM: Add link to release plan when available --> | [A termelési üzem végrehajtási felületének használata dolgozók számára](../production-control/production-floor-execution-use.md) | Funkciókezelés:<br>*A saját feladatok lap a termelési üzem végrehajtási felületén* |
@@ -51,7 +51,7 @@ Ha bármelyik funkciót be szeretné kapcsolni [, akkor ezt a funkciókezelésbe
 | Beszerzés és forrás | Nyomon követési dimenziók szinkronizálása vállalatközi értékesítési és beszerzésirendelési-sorokban | Ezzel a funkcióval szabályozható, hogy a sorozatszám- és kötegszám-követési dimenziók szinkronizálva vannak-e a vállalatközi értékesítési és beszerzésirendelés-sorok között. Új beállításokat **ad** **·** **hozzá** a vevőkhöz és szállítókhoz a Vállalatközi beállítási lap beszerzési rendelésekkel és értékesítési rendelésekkel kapcsolatos irányelveit is. Ezenkívül frissíti néhány kapcsolódó, közeli beállítás nevét is.<br><br>Ha speciális raktárkezelést (WMS) használ, akkor ne feledje, hogy ez a funkció csak akkor szinkronizálja a köteg- és sorozatszámokat, ha a dimenziók a cél foglalási hierarchiájában a hely fölött vannak. |
 | Termékinformációk kezelése | Termékattribútum-értékek tisztítása | Ez a funkció hozzáad egy **Termékattribútum-értékek** tisztítása nevű ismétlődő feladatot, amely tisztítja az olyan termékattribútum-értékrekordokat, amelyek már nem termékkategórián keresztül kapcsolódnak egy termékhez sem. |
 | Készlet- és raktárkezelés | (Oroszország) Eltérések megakadályozása GTD-k kiadásakor az olyan beszerzési rendeléseknél, amelyekhez WMS-hez engedélyezett cikkek tartoznak | Ez a funkció csak az orosz honosításhoz használható. Megakadályozza az orosz vámárunyilatkozat-számok (GTD-k) kiadása során a magas szintű raktározásra engedélyezett cikkeket is magukban foglaló importbeszeddő rendelések (GTD) ellentmondásait. A GTD-kiadási folyamat módosítja az egyéni naplóban szereplő számlák kapcsolódó készlettranzakcióinak néhány készletdimenzió-értékét, ami eltéréseket okozhat a beszerzési rendelés munkarekordjai és a beszerzés készlettranzakciói között. Ha ez a funkció engedélyezve van, akkor a GTD-kiadási folyamat olyan helyesbítési munkát generál, amely kiküszöböli az ilyen eltéréseket. |
-| Raktárkezelés | GS1 vonalkódok továbbfejlesztett elemzője | Ez a funkció továbbfejlesztett elemzőt ad a GS1 szimbólumadatokhoz. Az új elemző a GS1 Általános specifikáció algoritmust valósítja meg a GS1 szimbólumok elemzési funkcióval, és megerősített adatellenőrzést biztosít. |
+| Raktárkezelés | GS1 vonalkódok továbbfejlesztett elemzője | Ez a funkció továbbfejlesztett elemzőt ad a GS1 szimbólumadatokhoz. Az új elemző a GS1 Általános specifikáció algoritmust valósítja meg a GS1 szimbólumok elemzési funkcióval, és megerősített adatellenőrzést biztosít. További információ a [GS1 vonalkód beolvasásában található](../warehousing/gs1-barcodes.md). |
 | Raktárkezelés | Új rakománytervezési munkaterületlapok | Két új rakománytervezési munkaterületi lap hozzáadása: **a bejövő** **rakománytervezési munkaterület és a kimenő rakománytervezési munkaterület**. |
 | Raktárkezelés | Warehouse Management alkalmazás – üres GTD | Ez a funkció csak az orosz honosításhoz használható. Lehetővé teszi a Raktárkezelés mobilalkalmazást használó dolgozók számára, hogy szükség esetén üresen hagyják az orosz vámárunyilatkozat-számokat (GTD-ket). Ha a GTD nyomon követési dimenzió úgy van beállítva, hogy üres értékeket engedélyezzen, a rendszer elfogadja az üres értékeket az aktuális készlet rendelkezésre álló készletének megfelelő készletműveletek GTD-értékeként. |
 
@@ -68,7 +68,7 @@ A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelent�
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.26 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások 10.0.26-os verziójának platformfrissítései (2022. május).](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md)<!-- KFM Confirm link -->
+A Microsoft Dynamics 365 Supply Chain Management 10.0.26 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások 10.0.26-os verziójának platformfrissítései (2022. május).](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md)
 
 ### <a name="bug-fixes"></a>Hibajavítások
 

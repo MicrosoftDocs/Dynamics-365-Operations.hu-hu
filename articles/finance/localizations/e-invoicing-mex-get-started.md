@@ -17,19 +17,19 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f512a6208bc85cd5796ce9515d2bc440f92ea79f
-ms.sourcegitcommit: 5033d42a2aac852916d726e40bd98a164d1a837d
+ms.openlocfilehash: 6fc8a9eaf6c6e4c82719e7c1ebccd4272548e73f
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/23/2022
-ms.locfileid: "7986358"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565999"
 ---
 # <a name="get-started-with-electronic-invoicing-for-mexico"></a>Első lépések a Mexikóra vonatkozó elektronikus számlázás használata során
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> Előfordulhat, hogy a Mexikói elektronikus számlázás jelenleg nem támogatja a CFDI dokumentumban elérhető összes funkciót, valamint a Microsoft Dynamics 365 Finance vagy Dynamics 365 Supply Chain Management szolgáltatással kapcsolatos beépített integrációt.
+> Lehet, hogy Mexikó elektronikus számlázása jelenleg nem minden funkciót támogat a Comprobante Fiscal Digital por Internet (CFDI) dokumentumban, illetve a kapcsolódó integrációban, Microsoft Dynamics amely a 365 Finance vagy az Dynamics 365 Supply Chain Management.
 
 Ez a témakör olyan információkat tartalmaz, amelyek bemutatják a mexikói Elektronikus számlázással kapcsolatos első lépéseket. Végigvezeti a Regulatory Configuration Services (RCS) és a Finance szolgáltatásban található ország-függő konfigurációs lépéseken. Ezenkívül végigvezeti azokon a lépéseken, amelyeket a CFDI a szolgáltatáson keresztül történő elküldése érdekében, a Finance szolgáltatásban követnie kell, valamint bemutatja, hogyan kell áttekinteni a feldolgozási eredményeket és a CFDI-számlák állapotát.
 
@@ -141,7 +141,7 @@ A CFDI-számla érvénytelenítésre való beküldéséhez az **Érvénytelenít
 1. A Funkcióverzió **beállítása** **lapon**, a Változók lapon válassza ki a változó nevét(**DigitalSignatureXSLT).**
 2. Az Értékek **mezőben** adja meg a következőt: {"containerUrl":"https://&lt; AccountStorageName&gt;.blob.core.windows.net/&lt; ContainerName&gt;","path":"&lt; RelativePath&gt;"}
    
-    where: <RelativePath> = mappanév\\\\ _fájlnév kettős perjelekkel, a ContainerName a szolgáltatáshoz használt tárolót jelöli.
+    where: \<RelativePath\> = mappanév\\\\ _fájlnév kettős perjelekkel, a ContainerName a szolgáltatáshoz használt tárolót jelöli.
    
     Példa a változóra:
     

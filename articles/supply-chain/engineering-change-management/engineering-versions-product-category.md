@@ -2,7 +2,7 @@
 title: Mérnöki változatok és mérnöki termékkategóriák
 description: Ez a témakör a mérnöki verziók fogalmával kapcsolatban tartalmaz tájékoztatást. A mérnöki verziók gondoskodnak arról, hogy a termék különböző állapotai, valamint az adatok folyamatos és egyértelműek legyenek, és hogy megjeleníthetők legyenek a rendszerben.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-09-28
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 42faa9e5f073d718c18422e37212c2ae8a28b28d
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: HT
+ms.openlocfilehash: a4d057c603e6592e491af7597e50fce2497860ec
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572889"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553362"
 ---
 # <a name="engineering-versions-and-engineering-product-categories"></a>Mérnöki változatok és mérnöki termékkategóriák
 
@@ -137,7 +137,7 @@ A rácshoz hozzáadott minden egyes sorhoz állítsa be a következő mezőket.
 |---|---|
 | Név | Válassza ki a hozzáadni kívánt attribútumot. |
 | Érték | Válassza ki az attribútum alapértelmezett értékét. |
-| Kötelező | *Logikai* típusú attribútumok esetén, ha ez a beállítás *Igen*, a felhasználóknak az attribútumot *Igen* értékre kell állítaniuk. Ha ez a beállítás *Nem*, a felhasználók az attribútumot *Igen* vagy *Nem* beállításra állíthatják. Más adattípusok esetén ennek a beállításnak a beállítása csak tájékoztató. |
+| Kötelező | Annak megadása, hogy az attribútum kötelező-e, ami azt jelenti, hogy a felhasználóknak érvényes értéket kell adniuk az attribútumnak, mielőtt egy terméket mentenének. A beállítás hatása kis mértékben függ a kiválasztott attribútum adattípusától, a következő listában meghatározottak szerint.<ul><li>**Logikai –** Igen *értékre* állítva az attribútum Igen értéket ad meg (*a* *rendszer elutasítja egy Olyan termék mentését, ahol az attribútum Értéke Nem*). Állítsa Nem értékre *az* Igen vagy *a* Nem értéket *.* (Típus attribútumai *A logikai* érték nem lehet üres.)</li><li>**Egész vagy Tizedes** – *Igen* értékre állítva kötelező megadni a felhasználóknak, hogy nem nulla értéket adjanak meg ehhez az attribútumhoz. Állítsa Nem *értékre*, hogy a felhasználók nulla értékkel mentsenek.  (Ezeknek a típusoknak az attribútumai nem lehet üresek.)</li><li>**Lista** – a listák szöveg adattípust *tartalmaznak*, de tartalmaznak egy előre definiált listát a lehetséges értékekről. Emiatt nem lehet üres értéket megadni az ilyen típusú attribútumok számára, ezért ennek a beállításnak nincs hatása, és csak tájékoztatásra való.</li><li>**Minden más adattípus –** az attribútum kötelezővé teendővé *való beállítása* Igen beállítás. Állítsa Nem *értékre*, ha engedélyeznie kell a felhasználóknak, hogy egy terméket mentsenek az attribútum értéke nélkül.</li></ul> |
 | Kötegattribútum | Adja meg, hogy az attribútumot propagálni kell-e a kötegfunkción keresztül. |
 
 ### <a name="readiness-policy-fasttab"></a>Készenléti házirend gyorslap

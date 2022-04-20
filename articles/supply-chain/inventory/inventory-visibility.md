@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 9ee6229937ea27adf231dcd1c9921878e53bd981
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
-ms.translationtype: HT
+ms.openlocfilehash: 9eb8a135d2415c867c746a1c40a80cdb84819c0e
+ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524493"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547901"
 ---
 # <a name="inventory-visibility-add-in-overview"></a>Készletláthatóság bővítményének áttekintése
 
@@ -63,7 +63,7 @@ Az ígérethez rendelkezésre álló szolgáltatás könnyen használható a nap
 
 ### <a name="compatibility-with-advanced-warehouse-management-items"></a>Kompatibilitás a speciális raktárkezelési cikkekkel
 
-A Microsoft gondoskodik a speciális raktárkezelés (WHS) ingyenes integrációjáról, így a raktárkezelési szolgáltatás vevői is élvezhedhetnek a készlet-láthatósági szolgáltatás előnyeiben. A 2022-es Hullám 1. kiadásának (nyilvános betekintő ablak) szerint a készletszolgáltatás támogatja az aktuális raktárkészlet -lekérdezéseket és az ATP-t. A következő hullámban a whs vevők számára támogatott lesz az "soft reservation" és a "allocation" funkció. <!-- KFM: Add this link when target is published: For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). -->
+A Microsoft gondoskodik a speciális raktárkezelés (WHS) ingyenes integrációjáról, így a raktárkezelési szolgáltatás vevői is élvezhedhetnek a készlet-láthatósági szolgáltatás előnyeiben. A 2022-es Hullám 1. kiadásának (nyilvános betekintő ablak) szerint a készletszolgáltatás támogatja az aktuális raktárkészlet -lekérdezéseket és az ATP-t. A következő hullámban a whs vevők számára támogatott lesz az "soft reservation" és a "allocation" funkció. A további tudnivalókat lásd [a raktárkészlet-készlet cikkekkel kapcsolatos láthatósági támogatásában](inventory-visibility-whs-support.md).
 
 ## <a name="licensing"></a>Licenckezelés
 

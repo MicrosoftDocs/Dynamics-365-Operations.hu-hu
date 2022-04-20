@@ -1,5 +1,5 @@
 ---
-title: A globalizációs funkció befejezése, közzététele és telepítése
+title: Globalizációs funkció befejezése, közzététele és üzembe helyezése
 description: Ez a témakör a globalizációs funkciók életciklusával kapcsolatban tartalmaz tájékoztatást.
 author: dkalyuzh
 ms.date: 12/15/2021
@@ -15,14 +15,14 @@ ms.search.region: Global
 ms.author: dkalyuzh
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: a842a3ba31c0a8e0d80ad1856d9d6d861a8514ea
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
-ms.translationtype: HT
+ms.openlocfilehash: 21e03660387c7e715bc0f4cb1dbcd3ec9ec6cee2
+ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371890"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8554561"
 ---
-# <a name="complete-publish-and-deploy-a-globalization-feature"></a>A globalizációs funkció befejezése, közzététele és telepítése
+# <a name="complete-publish-and-deploy-a-globalization-feature"></a>Globalizációs funkció befejezése, közzététele és üzembe helyezése
 
 [!include [banner](../includes/banner.md)]
 
@@ -59,7 +59,7 @@ Az RCS **esetében** a Deploy paranccsal lehet közzétenni egy elektronikus sz�
 2. A lap **jobb** oldalán található Verziók lapon válassza ki azt az elektronikus számlázási funkcióverziót, amely a szolgáltatási környezetbe vagy a csatlakoztatott alkalmazásba telepítve van. A kiválasztott verziónak Kész vagy Közzétett állapotúnak **kell** **lennie**.
 3. Válassza **a Telepítés** lehetőséget, majd válassza az alábbi beállítások egyikét vagy mindkettőt a telepítés célának meghatározásához:
 
-    - **Csatlakoztatott alkalmazás** – az alkalmazásbeállítás által biztosított konfigurációt a Microsoft Dynamics 365 Finance Dynamics 365 Supply Chain Management példánya írja, vagy az már hozzá van társítva.
+    - **Csatlakoztatott alkalmazás** – az alkalmazásbeállítás Microsoft Dynamics által biztosított konfigurációt a 365 Pénzügy Dynamics 365 Supply Chain Management példányán írják, vagy már hozzá társították.
     - **Szolgáltatási környezet** – az elektronikus számlázási funkció verziója a szolgáltatási környezetre van telepítve. Az elektronikus számlázás ezután készen áll a Pénzügy vagy az Ellátásilánc-kezelés által küldött elektronikus dokumentumok fogadására és feldolgozására.
 
 > [!NOTE]

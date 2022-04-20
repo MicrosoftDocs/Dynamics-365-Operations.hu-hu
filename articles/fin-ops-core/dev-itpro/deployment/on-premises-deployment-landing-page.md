@@ -4,7 +4,8 @@ description: Ez a témakör az on-premises telepítésekhez nyújt információk
 author: sericks007
 ms.date: 07/01/2021
 ms.topic: article
-ms.prod: ''
+ms.prod: dynamics-365
+ms.service: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -16,24 +17,24 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
-ms.openlocfilehash: 93ed4e81db18cd02c097ff188003569e7bb391c511fd93fcab0961c14029dc96
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b57183a0c06f4735757c3c0c8d9e355879585e7a
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712568"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8566039"
 ---
 # <a name="on-premises-deployment-home-page"></a>Helyszíni telepítés kezdőlapja
 
 [!include [banner](../includes/banner.md)]
 
-Telepíthet Dynamics 365 Finance  + Operations (helyi) alkalmazást. Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól. Ez a témakör az on-premises telepítésekre vonatkozó információk tartalmaihoz nyújt hivatkozásokat.
+Telepítheti Dynamics 365 Finance + Operations (on-premises). Amikor egy on-premises telepítést választ, a rendszerkövetelmények, a hardverméretezés és a funkciók eltérnek a felhőalapú telepítésnél érvényes adatoktól. Ez a témakör az on-premises telepítésekre vonatkozó információk tartalmaihoz nyújt hivatkozásokat.
 
 ## <a name="get-started"></a>Első lépések
 - [Helyszíni telepítés áttekintése](on-premises-overview.md)
 - [Helyszíni telepítések tervezése és előkészítése](plan-onprem-deployment.md)
 - [Helyszíni telepítések rendszerkövetelményei](../../fin-ops/get-started/system-requirements-on-prem.md)
-- [Microsoft Dynamics 365 Finance + Műveletek (on-premises) támogatott szoftver](onprem-compatibility.md)
+- [Microsoft Dynamics 365 Finance + Operations (on-premises) támogatott szoftver](onprem-compatibility.md)
 - [Hardverméretezési követelmények helyszíni környezetekben](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md)
 - [A Finance + Operations (on-premises) megvásárlása](../../fin-ops/get-started/purchase-on-premises.md)
 - [Felhőalapú és helyszíni szolgáltatások összehasonlítása](../../fin-ops/get-started/cloud-prem-comparison.md)
@@ -52,7 +53,7 @@ Telepíthet Dynamics 365 Finance  + Operations (helyi) alkalmazást. Amikor egy 
 - [Elektronikus jelentéskészítési (ER) konfigurációk importálása](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Dokumentumok létrehozása, közzététele és nyomtatása helyszíni telepítéseknél](../analytics/printing-capabilities-on-premises.md)
 - [Proxyk konfigurálása a helyszíni környezetekhez](onprem-reverseproxy.md)
-- [Technikai támogatás beállítása a Finance and Operations alkalmazásokhoz](../lifecycle-services/support-experience.md)
+- [Műszaki támogatás beállítása a Finance and Operations alkalmazásokhoz](../lifecycle-services/support-experience.md)
 - [Kliens internetkapcsolata](../user-interface/client-disconnected.md)
 - [Frissítések alkalmazása helyszíni telepítésekhez](apply-updates-on-premises.md)
 - [Helyszíni környezetek ismételt telepítése](redeploy-on-prem.md)
@@ -72,7 +73,7 @@ Telepíthet Dynamics 365 Finance  + Operations (helyi) alkalmazást. Amikor egy 
 - [Forgatókönyvek a helyszíni környezetekben felmerült problémák megoldásához](onprem-tsg-implementations.md)
 - [Tanúsítványváltás](certificate-rotation-on-prem.md)
 - [Helyszíni diagnosztika](on-premises-diagnostics.md)
-- [Eltávolított vagy elavult funkciók a Finance and Operations szolgáltatásnál](../migration-upgrade/deprecated-features.md)
+- [Eltávolított vagy elavult szolgáltatások a Finance and Operations megoldásban](../migration-upgrade/deprecated-features.md)
 - [A szoftver életciklusára vonatkozó irányelv és a helyszíni kiadások](../migration-upgrade/on-prem-version-update-policy.md)
  
 

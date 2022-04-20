@@ -1,20 +1,20 @@
 ---
 title: A Finance and Operations alkalmazások kettős írással kapcsolatos problémáinak elhárítása
-description: Ez a témakör hibaelhárítási információkat tartalmaz, amelyek segíthetnek a Finance and Operations alkalmazások kettős írási moduljával kapcsolatos problémák megoldásában.
+description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítséget nyújtnak a Pénzügy és műveletek alkalmazások Kettős írású modulja hibáinak megoldásához.
 author: RamaKrishnamoorthy
-ms.date: 08/10/2021
+ms.date: 04/12/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: db49c6a4555f39800362a5b248f9757b07ee5481
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
-ms.translationtype: MT
+ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8061808"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565966"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>A Finance and Operations alkalmazások kettős írással kapcsolatos problémáinak elhárítása
 
@@ -22,12 +22,12 @@ ms.locfileid: "8061808"
 
 
 
-Ez a témakör hibaelhárítási információkat tartalmaz a Finance and Operations alkalmazások és a kettős írási integrációhoz Dataverse. Konkrétan olyan információkat nyújt, amelyek segíthetnek a következővel kapcsolatos problémák megoldásában **Kettős írás** modul a Finance and Operations alkalmazásokban.
+Ez a témakör hibaelhárítási információkat tartalmaz a Pénzügy és művelet alkalmazások, illetve a Dataverse. Olyan információkat **tartalmaz**, amelyek segítségével kijavíthatja a problémákat a Pénzügy és műveletek alkalmazások Kettős írású modulja segítségével.
 
 > [!IMPORTANT]
 > Előfordulhat, hogy az ebben a témakörben leírt problémák egy része a rendszergazda szerepkört vagy Microsoft Azure Active Directory (Azure AD) bérlői adminisztrátori hitelesítő adatait igénylik. Az egyes problémákat tárgyaló szakaszok leírják, hogy szükség van-e konkrét szerepkörre vagy hitelesítő adatokra.
 
-## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Nem töltheti be a kétírásos modult a Finance and Operations alkalmazásba
+## <a name="you-cant-load-the-dual-write-module-in-a-finance-and-operations-app"></a>Nem lehet betölteni a kettős írású modult a Pénzügy és műveletek alkalmazásban.
 
 Ha nem tudja megnyitni a **Kettős írás** lapot a **Kettős írás** csempe kiválasztásával az **Adatkezelés** munkaterületen, az adatintegrációs szolgáltatás valószínűleg üzemen kívül van. Hozzon létre egy támogató jegyet az adatintegrációs szolgáltatás újraindításának kérelmezéséhez.
 
@@ -49,7 +49,7 @@ A hiba elhárításához jelentkezzen be egy InPrivate-ablakon a Microsoft Edge-
 
 ## <a name="error-when-you-link-the-environment-for-dual-write-or-add-a-new-table-mapping"></a>Hiba, amikor a környezetet összekapcsolja kettős íráshoz, vagy új táblaleképezést ad hozzá
 
-**A probléma megoldásához szükséges szerepkör:** Rendszergazda mind a Finance and Operations alkalmazásban, mind a Dataverse.
+**A probléma megoldásához szükséges szerepkör: a** rendszergazda a Pénzügy és a Műveletek alkalmazásokban és a Dataverse.
 
 A következő hiba merülhet fel összekapcsoláskor vagy leképezések létrehozásakor:
 
@@ -59,7 +59,7 @@ Session ID: \<your session id\>
 Root activity ID: \<your root activity\> id
 ```
 
-Ez a hiba akkor fordulhat elő, ha nincs megfelelő jogosultsága a kettős írás összekapcsolásához vagy a leképezések létrehozásához. Ez a hiba akkor is előfordulhat, ha a Dataverse-környezet alaphelyzetbe állítása a kettős írás csatolásának felbontása nélkül történt. Bármely felhasználó, aki rendszergazdai szerepkörrel rendelkezik mind a Finance and Operations alkalmazásokban, mind Dataverse összekapcsolhatja a környezeteket. Csak a kettős írás kapcsolatot beállító felhasználó adhat hozzá új táblaleképezéseket. A telepítés után bármely rendszergazdai szerepkörrel rendelkező felhasználó nyomon követheti az állapotot, és szerkesztheti a leképezéseket.
+Ez a hiba akkor fordulhat elő, ha nincs megfelelő jogosultsága a kettős írás összekapcsolásához vagy a leképezések létrehozásához. Ez a hiba akkor is előfordulhat, ha a Dataverse-környezet alaphelyzetbe állítása a kettős írás csatolásának felbontása nélkül történt. Bármely felhasználó, aki rendszergazdai szerepkörrel van mind a Pénzügy, mind az Üzemeltetési Dataverse alkalmazásokban, és összekapcsolhatja a környezeteket. Csak a kettős írás kapcsolatot beállító felhasználó adhat hozzá új táblaleképezéseket. A telepítés után bármely rendszergazdai szerepkörrel rendelkező felhasználó nyomon követheti az állapotot, és szerkesztheti a leképezéseket.
 
 ## <a name="error-when-you-stop-the-table-mapping"></a>Hiba a táblaleképezés leállításakor
 
@@ -70,6 +70,21 @@ A következő hibaüzenetek jelenhetnek meg a táblaleképezések leállításak
 Ez a hiba akkor fordul elő, ha a csatolt Dataverse-környezet nem érhető el.
 
 A hiba elhárításához hozzon létre egy jegyet az adatintegrációs csoporthoz. A hálózati nyomkövetést csatolja annak érdekében, hogy az adatintegrációs csoport megjelölje a leképezéseket a háttérben **nem futóként**.
+
+## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>A párhuzamos feldolgozás engedélyezése a Pénzügy és a Műveletek alkalmazásokban a teljesítmény javítása érdekében
+
+A párhuzamos feldolgozás engedélyezése csökkentheti a Pénzügy és művelet alkalmazásokból az ügyfél-megállapodási alkalmazásokba és az alkalmazásokba történő adatimporthoz szükséges időt Microsoft Dataverse. 
+
+Ha engedélyezni szeretné a párhuzamos feldolgozást a Pénzügy és a Műveletek alkalmazásokban, kövesse az alábbi lépéseket.
+
+1. Jelentkezzen be a Pénzügy és műveleti környezetbe.
+2. Ugrás az **Adatkezelési keretrendszer > paramétereihez**
+3. Válassza ki az **entitásbeállításokat**, és válassza az Entitás-végrehajtási **paraméterek konfigurálása lehetőséget**.
+4. A párhuzamos feldolgozás paramétereinek hozzáadása:
+    - **Importálási küszöbérték rekordszáma** – a párhuzamos feldolgozás engedélyezése előtt teljesülnie kell a rekordoknak.
+    - **Feladatszám importálása** – a párhuzamosan futtatott szálak (feladatok) száma.
+5. Válassza a **Mentés** lehetőséget.
+
 
 ## <a name="errors-while-trying-to-start-a-table-mapping"></a>Hibák egy táblázat leképezésének elindítása közben
 
@@ -82,7 +97,7 @@ Előfordulhat, hogy a következő hibaüzenetet kapja, amikor megpróbálja futt
 Ha megpróbálja a leképezés állapotát **Futó** állapotra állítani, a következő hibaüzenetet kaphatja. A javítás a hiba okától függ:
 
 + Ha a leképezés függő leképezésekkel rendelkezik, akkor győződjön meg róla, hogy engedélyezi az táblaleképezés függő leképezését.
-+ A leképezésből valószínűleg hiányzik a forrás- vagy céloszlopok. Ha hiányzik egy oszlop a Finance and Operations alkalmazásból, kövesse a szakaszban leírt lépéseket [Hiányzó táblázatoszlopok probléma a térképeken](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Ha hiányzik egy oszlop a Dataverse szolgáltatásból, kattintson a **Táblák frissítése** gombra a leképezésen, így az oszlopokat a rendszer automatikusan visszatölti a leképezésbe.
++ A leképezésből valószínűleg hiányzik a forrás- vagy céloszlopok. Ha hiányzik egy oszlop a Pénzügy és műveletek alkalmazásból, [kövesse a Hiányzó táblaoszlopok probléma a leképezések szakaszban található lépéseket](dual-write-troubleshooting-finops-upgrades.md#missing-table-columns-issue-on-maps). Ha hiányzik egy oszlop a Dataverse szolgáltatásból, kattintson a **Táblák frissítése** gombra a leképezésen, így az oszlopokat a rendszer automatikusan visszatölti a leképezésbe.
 
 ### <a name="version-mismatch-error-and-upgrading-dual-write-solutions"></a>Verzióillesztési hiba és a dual-write megoldások frissítése
 

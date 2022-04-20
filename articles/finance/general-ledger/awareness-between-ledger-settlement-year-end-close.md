@@ -2,7 +2,7 @@
 title: Figyelem a főkönyvi kiegyenlítés és az év végi zárás között
 description: Ez a témakör a főkönyvi kiegyenlítéseket és a főkönyv év végi zárát növelő fejlesztésekről nyújt tájékoztatást.
 author: kweekley
-ms.date: 03/18/2022
+ms.date: 04/06/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,19 +13,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: e18f77d73239de23000b5310d9342c6db95bc524
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
-ms.translationtype: HT
+ms.openlocfilehash: 13d0a0a11a8f31e4ba647ccc23906f6b137051c2
+ms.sourcegitcommit: b96e0c70553bca9b3f5eb65105a52cb71d978a36
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462352"
+ms.lasthandoff: 04/07/2022
+ms.locfileid: "8553332"
 ---
 # <a name="awareness-between-ledger-settlement-and-year-end-close"></a>Figyelem a főkönyvi kiegyenlítés és az év végi zárás között
 
 [!include [banner](../includes/banner.md)]
 
 
-A Microsoft Dynamics 365 Finance 10.0.25-ös **·** **verziójában** a Funkciókezelés munkaterületén elérhető a Főkönyvi kiegyenlítés és az év végi lezárás közötti tudatosság. Ez a funkció két elsődleges fejlesztést ad hozzá, amelyek a főkönyvi kiegyenlítést és a főkönyv év végi zárást érintik.
+A Microsoft Dynamics 365 Pénzügyi modul 10.0.25-ös **·** **verziójában** a Funkciókezelés munkaterületén elérhető a figyelem a főkönyvi kiegyenlítés és az év végi zárás között. Ez a funkció két elsődleges fejlesztést ad hozzá, amelyek a főkönyvi kiegyenlítést és a főkönyv év végi zárást érintik.
 
 A főkönyv év végi zárása során a kiegyenlített főkönyvi tranzakciók már nem fognak szerepelni a következő pénzügyi év nyitó egyenlegében. Ezzel a fejlesztéssel garantálható, hogy csak a még ki nem adott főkönyvi tranzakciókat tartalmazza a nyitó egyenleg. Fontos a főkönyvi devizaátértékelés futtatásakor. A devizaátértékelés csak a **Nem kiegyenlített állapotú főkönyvi tranzakciók esetében fut le**. **Ugyanakkor** a főkönyvi kiegyenlítés és az év végi zárási funkció közötti tudatosság feladása előtt a nyitó egyenleg összegzi mind a Kiegyenlített állapotú, mind **a** **Kiegyenlített** állapotú tranzakciókat, **és az összesített összeg állapotát Még nincs kiegyenlítve állapotra állítva.**
 
@@ -48,12 +48,16 @@ Az új fejlesztések támogatása érdekében módosításokat történt a fők�
 
 A funkciók és az adatmodell változásai miatt fontos, hogy a funkció engedélyezése előtt figyelembe kell venni az alábbi pontokat:
 
+- Mivel csak a kiegyenlített tranzakciókat veszi fel a program a nyitó egyenlegbe, ki kell egyenlítenie az aktuális pénzügyi év olyan tranzakcióit, amelyek az előző pénzügyi év tranzakcióival vannak kiegyenlítve. A tranzakciókat vissza kell állítani az aktuális pénzügyi év tranzakcióihoz. Ez az aktuális pénzügyi év korrigáló bejegyzése révén ható meg. A korrekció sztornírozza az összesített nyitó egyenlegeket és ellentételeket az aktuális év főkönyvi bejegyzéseinek kiegyenlítéshez szükséges részletes tranzakcióval. 
+
+  > [!IMPORTANT]
+  > Ha ez nem történik meg, **akkor** az aktuális pénzügyi évre vonatkozó év végi zárás futtatásakor egyenlegen nem megfelelő összeg jelenik meg. Ha az azonos pénzügyi évhez kapcsolódó főkönyvi tranzakciók ki- és alaphelyzetbe állítása nem lehetséges, akkor ne engedélyezze ezt a funkciót, amíg be nem fejeződött az év végi lezárás. A funkció engedélyezése közvetlenül az év végi lezárás után, illetve az új főkönyvi tranzakcióknak a következő pénzügyi évben való kiegyenlítetsége előtt. 
+  
 - A funkció engedélyezése esetén minden olyan tranzakció jelölése törlődik, amely meg van jelölve kiegyenlítésre, de még nincs kiegyenlítve. A munkaveszteség elkerülése érdekében a funkció engedélyezése előtt egyenlítsen ki minden megjelölt tranzakciót.
 - Egyes szervezetek többször futtatják az év végi lezárásokat ugyanannak a pénzügyi évnek. Ne engedélyezze a funkciót, ha az év végi lezárás egyszer már lefutott, és ugyanannak a pénzügyi évnek újra lesz futtatva. A funkciót az első év végi zárás feldolgozása előtt vagy a pénzügyi év utolsó év végi zárása után kell engedélyezni.
 
   Ha engedélyezni szeretné a funkciót, de az év végi lezárás egyszer már lefutott, a funkció engedélyezése előtt sztornírozni kell az év végi zár funkciót.
 
-- Mivel a pénzügyi éveken keresztüli elszámolás már nem engedélyezett, ajánlott engedélyezni ezt a funkciót, még az év végi zárási folyamat megkezdése előtt. Ezután annak érdekében, hogy a következő pénzügyi év nyitóegyenlegét ne érintik a korábbi, több pénzügyi évre vonatkozó kiegyenlítések, a nyitóegyenleg-tranzakciót ki kell egyenlíteni a lezárás alatt található pénzügyi évre.
 - Mivel a fő számlákon keresztüli kiegyenlítés már nem engedélyezett, módosítsa a számlatükret vagy a folyamatokat úgy, hogy a főkönyvi kiegyenlítést ugyanazon a fő számlán is el lehet végezve.
 - A funkció nem engedélyezhető az állami szektor év végi lezárási folyamatának használata esetén.
 
@@ -84,14 +88,14 @@ A 2021-es pénzügyi 130100 feladott fő számlára például több tranzakciót
 
 | Napló száma | Bizonylat   | Dátum       | Típus      | Főkönyvi számla | Számla neve        | Leírás       | Pénznem | Összeg a tranzakció pénznemében. | Összeg  | Összeg a jelentési pénznemben |
 |----------------|----------|------------|-----------|----------------|---------------------|-------------------|----------|--------------------------------|---------|------------------------------|
-| 20853          | FTV-3000 | 12/3/2021  | Működési | 130100-001-    | Kinnlevőségek | Szolgáltatási díj       | USD      | 100                            | 100     | 100                          |
-| 20855          | FTV-3004 | 12/5/2021  | Működési | 130100-002-    | Kinnlevőségek | Segédprogramok         | USD      | 175                            | 175     | 175                          |
-| 20854          | CMV-4000 | 12/16/2021 | Működési | 130100-001-    | Kinnlevőségek | Visszatérítés            | USD      | -100                           | -100    | -100                         |
-| 20851          | ARP-8000 | 12/20/2021 | Működési | 130100-002-    | Kinnlevőségek |                   | USD      | -0.88                          | -0.88   | -0.88                        |
-| 20853          | ARPM0004 | 12/20/2021 | Működési | 130100-002-    | Kinnlevőségek |                   | EUR      | -127.11                        | -174.12 | -174.12                      |
-| 20856          | CMV-4010 | 12/21/2021 | Működési | 130100-002-    | Kinnlevőségek | Követel - számlán | USD      | -175                           | -175    | -175                         |
-| 20857          | FTV-3011 | 12/28/2021 | Működési | 130100-001-    | Kinnlevőségek | Segédprogramok         | USD      | 400                            | 400     | 400                          |
-| 20910          | FTV-3020 | 12/29/2021 | Működési | 130100-002-    | Kinnlevőségek | Szolgáltatás           | USD      | 300                            | 300     | 300                          |
+| 20853          | FTV-3000 | 2021/3/12  | Működési | 130100-001-    | Kinnlevőségek | Szolgáltatási díj       | USD      | 100                            | 100     | 100                          |
+| 20855          | FTV-3004 | 2021/5/12  | Működési | 130100-002-    | Kinnlevőségek | Segédprogramok         | USD      | 175                            | 175     | 175                          |
+| 20854          | CMV-4000 | 2021/16/12 | Működési | 130100-001-    | Kinnlevőségek | Visszatérítés            | USD      | -100                           | -100    | -100                         |
+| 20851          | ARP-8000 | 2021/20/12 | Működési | 130100-002-    | Kinnlevőségek |                   | USD      | -0.88                          | -0.88   | -0.88                        |
+| 20853          | ARPM0004 | 2021/20/12 | Működési | 130100-002-    | Kinnlevőségek |                   | EUR      | -127.11                        | -174.12 | -174.12                      |
+| 20856          | CMV-4010 | 2021/21/12 | Működési | 130100-002-    | Kinnlevőségek | Követel - számlán | USD      | -175                           | -175    | -175                         |
+| 20857          | FTV-3011 | 2021/28/12 | Működési | 130100-001-    | Kinnlevőségek | Segédprogramok         | USD      | 400                            | 400     | 400                          |
+| 20910          | FTV-3020 | 2021/29/12 | Működési | 130100-002-    | Kinnlevőségek | Szolgáltatás           | USD      | 300                            | 300     | 300                          |
 
 E tranzakciók közül három kiegyenlítése a főkönyvi kiegyenlítés során történik.
 
@@ -99,9 +103,9 @@ E tranzakciók közül három kiegyenlítése a főkönyvi kiegyenlítés során
 
 | Napló száma | Bizonylat   | Dátum       | Típus      | Főkönyvi számla | Számla neve        | Leírás | Pénznem | Összeg a tranzakció pénznemében. | Összeg  | Összeg a jelentési pénznemben |
 |----------------|----------|------------|-----------|----------------|---------------------|-------------|----------|--------------------------------|---------|------------------------------|
-| 20855          | FTV-3004 | 12/5/2021  | Működési | 130100-002-    | Kinnlevőségek | Segédprogramok   | USD      | 175                            | 175     | 175                          |
-| 20851          | ARP-8000 | 12/20/2021 | Működési | 130100-002-    | Kinnlevőségek |             | USD      | -0.88                          | -0.88   | -0.88                        |
-| 20853          | ARPM0004 | 12/20/2021 | Működési | 130100-002-    | Kinnlevőségek |             | EUR      | -127.11                        | -174.12 | -174.12                      |
+| 20855          | FTV-3004 | 2021/5/12  | Működési | 130100-002-    | Kinnlevőségek | Segédprogramok   | USD      | 175                            | 175     | 175                          |
+| 20851          | ARP-8000 | 2021/20/12 | Működési | 130100-002-    | Kinnlevőségek |             | USD      | -0.88                          | -0.88   | -0.88                        |
+| 20853          | ARPM0004 | 2021/20/12 | Működési | 130100-002-    | Kinnlevőségek |             | EUR      | -127.11                        | -174.12 | -174.12                      |
 
 A fő számla eredményeinek 130100 attól függ, hogy ez a funkció engedélyezve van-e az év végi zárás futtatása előtt. Ha a funkció engedélyezve van, akkor az eredmény az év végi lezáráskor a Részletek megtartása beállításától is függ.
 
@@ -172,7 +176,7 @@ Főkönyvi tranzakciók kiegyenlítéséhez kövesse az alábbi lépéseket.
 5.  Ha befejezte a tranzakciók kijelölését, válassza a Megjelölés **lehetőséget**. Minden kijelölt tranzakciónál megjelenik egy pipa a Megjelölt **oszlopban**. Ezenkívül a rács **fölötti Megjelölt** összeg mező értéke a megjelölt sorok teljes összegének megfelelően nő vagy csökken.
 6.  Ha a Megjelölt **összeg** **mezőben 0** (nulla) érték van megjelölve, **válassza a Megjelölt tranzakciók egyenlítő értékét.**
 
-    - A részleges elszámolás nem engedélyezett. Nem lehet például olyan jóváírási tranzakcióval szemben $100 a terhelési tranzakciót, $90 tartozik tranzakciót. A $10 jóváírási tranzakciót is meg kell jelölni az elszámolásba való felvételre.
+    - A részleges elszámolás nem engedélyezett. Nem lehet például olyan jóváírási tranzakcióval szemben $100 a terhelési tranzakciót, $90 tartozik tranzakciót. A fennmaradó $10 jóváírási tranzakciót is meg kell jelölni, hogy belefoglalja a kiegyenlítésbe.
     - Adja meg a kiegyenlítés dátumát. A dátumnak a kiegyenlítésre megjelölt tranzakciók legkésőbbi dátumán vagy utána kell lennie.
 
 A megjelölt tranzakciók állapota **Kiegyenlített** értékre frissül.

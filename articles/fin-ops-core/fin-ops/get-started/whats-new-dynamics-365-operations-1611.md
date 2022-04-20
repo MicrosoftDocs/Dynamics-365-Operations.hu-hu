@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 0625010143b7df9c3c897bf7f43ef25993303240
-ms.sourcegitcommit: 03fa7556840aa59f825697f6f9edeb58ea673fca
-ms.translationtype: HT
+ms.openlocfilehash: 43a53d5940b2595abb305a08e6f52661bee8ca62
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/04/2021
-ms.locfileid: "7752808"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8548080"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Új vagy módosult elemek a Dynamics 365 for Operations 1611-es verziójában (2016. november)
 
@@ -816,7 +816,7 @@ A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asz
 | Szállítóként információ lekérése a bizományosi készletről, amelynek az átvitele megtörténik a vevőhöz. | A számla kiállításához a vevő számára a szállítónak szüksége van bizományosi készletből megvásárolt nyersanyagok adataira, valamint a vásárlás dátumára. A szállító is figyelemmel követheti a vevő telephelyén rendelkezésre álló készletet a szállítói együttműködés felhasználói felületén. |
 | A szállító tulajdonában lévő készlet átvitele átmozgatási napló segítségével. | A szállító által birtokolt készlet fizikai helyének nyomon követésére a helynek rögzíthetőnek kell lennie a rendszerben. Az átmozgatási naplót segítségével rögzítheti a készlet tényleges mozgatását, többek között az átmozgatást az egyik helyről a raktárban egy másik helyre a raktárban. |
 | A szállító tulajdonában lévő készlet igazítása számlálási napló segítségével. | Fontos, hogy a rendszerbeli aktuális készlet mindig szinkronban legyen a tényleges készlettel. A szállító által birtokolt készlet folyamatosan igazítható a számlálási eljárásokkal, például a mennyiség módosítása és a számlálási napló folyamatokkal. |
-| További tudnivalók a szállítmány-támogatásról a Dynamics 365 for Operations rendszerben | A bizományosi folyamatok támogatásával kapcsolatos további tudnivalókat lásd: [Szállítmány](../../../supply-chain/inventory/consignment.md), [Szállítmány beállítása](../../../supply-chain/inventory/set-up-consignment.md), [Bizományosi feltöltési rendelés létrehozása (Feladat-útmutató)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) és [Bizományosi készlet tulajdonosának módosítása gyártási igény alapján (Feladat-útmutató)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
+| További tudnivalók a szállítmány-támogatásról a Dynamics 365 for Operations rendszerben | A bizományosi folyamatok támogatásával kapcsolatos további tudnivalókat lásd: [Szállítmány](../../../supply-chain/inventory/consignment.md), [Szállítmány beállítása](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Bizományosi feltöltési rendelés létrehozása (Feladat-útmutató)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md) és [Bizományosi készlet tulajdonosának módosítása gyártási igény alapján (Feladat-útmutató)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
 ### <a name="vendor-collaboration-previously-known-as-the-vendor-portal"></a>Szállítói együttműködési (korábbi nevén a szállítói portál)
 
@@ -942,7 +942,7 @@ A Retail Modern POS jelenleg csak Windows 8.1 alkalmazásként elérhető el asz
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Új vagy módosult elemek Finance and Operations kezdőlapján](whats-new-changed.md)
+[Új vagy módosult elemek a Finance and Operations kezdőlapján](whats-new-changed.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

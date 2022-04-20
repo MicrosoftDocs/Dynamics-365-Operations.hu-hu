@@ -2,7 +2,7 @@
 title: A számlatükör-elválasztó egyedivé tétele
 description: Ez a témakör elmagyarázza, hogy a rendszerben hogyan nem lehet ugyanaz az elválasztó a számlatükörhöz és a dimenzióértékekhez. Frissítés után módosítania kell az elválasztóértékeket.
 author: panolte
-ms.date: 03/23/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8
-ms.openlocfilehash: 433e9f8a7b0a9f476c74096a4bd7fef03c87dee1
-ms.sourcegitcommit: 0d5ee97670bdeb1986aaea880f32962b5e374751
+ms.openlocfilehash: 6081a62077f1fc6b6920991ed6faae667c25a47c
+ms.sourcegitcommit: e8a2a1e34fa48a42afac9724828f4ec72b6d7085
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8468048"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8573618"
 ---
 # <a name="make-the-chart-of-accounts-delimiter-unique"></a>A számlatükör-elválasztó egyedivé tétele
 
 [!include [banner](../includes/banner.md)]
 
-A Microsoft Dynamics AX 2012-ben használható volt ugyanaz az elválasztó a számlatükörhöz és a dimenzióértékekhez. In Finance and Operations aktuális verzióiban nem használható ugyanaz az elválasztó a számlatükörhöz és a dimenzióértékekhez. Ha egy elválasztó ismétlődik, frissítés után módosíthatja. 
+A Microsoft Dynamics AX 2012-ben használható volt ugyanaz az elválasztó a számlatükörhöz és a dimenzióértékekhez. A Pénzügy és műveletek jelenlegi verzióiban nem lehet ugyanaz az elválasztó a számlatükrhez, a dimenziónevekhez és -értékekhez. Ha egy elválasztó ismétlődik, frissítés után módosíthatja. 
 
 ## <a name="update-delimiter"></a>Elválasztó frissítése
 Ha van ütközés a számlatükörrel, akkor a számlatükör elhatárolója és a projekt/alprojekt azonosítóformátuma módosítható. Egyéb dimenzióhatárolók nem változtathatók meg. 

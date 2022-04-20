@@ -1,5 +1,5 @@
 ---
-title: ER-formátum megtervezése a sorok ugyanazon az Excel-lapon való együtttartására
+title: ER-formátum megtervezése a sorok ugyanazon az Excel-lapon való együttes megtartására
 description: Ez a témakör bemutatja egy olyan elektronikus jelentés (ER) formátumot, amely egy oldalon tartja a sorokat Microsoft Excel.
 author: NickSelin
 ms.date: 02/28/2022
@@ -15,18 +15,17 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-ms.openlocfilehash: 711681ab38fb24b57a83f008f86a8261176aa5a5
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 06782a4933fb5c3e86ad436b853f207fd3d5cddb
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8389136"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612352"
 ---
-# <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>ER-formátum megtervezése a sorok ugyanazon az Excel-lapon való együtttartására
+# <a name="design-an-er-format-to-keep-rows-together-on-the-same-excel-page"></a>ER-formátum megtervezése a sorok ugyanazon az Excel-lapon való együttes megtartására
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör leírja, hogyan konfigurálhat egy, a Rendszergazda vagy elektronikus jelentéskészítő funkcionális konzulens szerepkörű felhasználó egy elektronikus jelentési formátumot, [...](general-electronic-reporting.md)[amely](er-overview-components.md#format-component) kimenő dokumentumokat hoz létre, és kezeli a dokumentumlapozást úgy, hogy a Microsoft Excel létrehozott sorok ugyanazon az oldalon maradnak.
 
@@ -55,7 +54,7 @@ Kövesse az [ER-keretrendszer konfigurálása](er-quick-start2-customize-report.
 
 ## <a name="import-the-standard-er-format-configuration"></a>A szabvány ER-formátumkonfiguráció importálása
 
-A [A szabvány ER-formátumkonfiguráció importálása](er-quick-start2-customize-report.md#ImportERSolution1) rész lépéseit követve adja hozzá a szabványos ER-konfigurációkat az aktuális Dynamics 365 Finance-példányhoz. Importálja például **a szabadszöveges számla (Excel) formátumkonfiguráció 252.116-os** **verzióját**. A rendszer **a számlamodell alapkonfigurációjának 252-es** **·** **alapverzióját automatikusan importálja a tárházból a szükséges számlamodell-hozzárendelési konfigurációval** együtt.
+A Szabványos ER [formátumkonfiguráció](er-quick-start2-customize-report.md#ImportERSolution1) importálása lépéseit követve adja hozzá a normál ER-konfigurációkat a Dynamics 365 Pénzügy aktuális példányához. Importálja például **a szabadszöveges számla (Excel) formátumkonfiguráció 252.116-os** **verzióját**. A rendszer **a számlamodell alapkonfigurációjának 252-es** **·** **alapverzióját automatikusan importálja a tárházból a szükséges számlamodell-hozzárendelési konfigurációval** együtt.
 
 ## <a name="set-up-print-management-to-use-the-standard-er-format"></a>A nyomtatáskezelés beállítása a szabványos ER-formátum használatára
 

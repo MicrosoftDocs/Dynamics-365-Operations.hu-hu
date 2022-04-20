@@ -2,7 +2,7 @@
 title: Az adószámítás első lépései
 description: Ez a témakör bemutatja, hogyan állítsuk be az adószámítást.
 author: wangchen
-ms.date: 01/05/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,18 +15,18 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: ae2c20fe79c2f8fd8d102740441230ae443f16a3
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
-ms.translationtype: HT
+ms.openlocfilehash: 61ee15901a091ee733b83c8cbaa5b84801fa8e5d
+ms.sourcegitcommit: 4afd1e0b325d27cd7c4e0d9a198400b038262ac7
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952521"
+ms.lasthandoff: 04/09/2022
+ms.locfileid: "8558313"
 ---
 # <a name="get-started-with-tax-calculation"></a>Az adószámítás első lépései
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az adószámítással kapcsolatos első lépésekről nyújt tájékoztatást. A témakör szakaszai a Microsoft Dynamics Lifecycle Services (LCS), a Regulatory Configuration Service (RCS) és a . Dynamics 365 Finance Dynamics 365 Supply Chain Management 
+Ez a témakör az adószámítással kapcsolatos első lépésekről nyújt tájékoztatást. A témakör szakaszai Microsoft Dynamics a Lifecycle Services (LCS), a Regulatory Configuration Service (RCS), a Dynamics 365 Pénzügy és a Dynamics 365 Supply Chain Management. 
 
 A beállítás három lépésből áll.
 
@@ -36,17 +36,17 @@ A beállítás három lépésből áll.
 
 ## <a name="high-level-design"></a>Magas szintű tervezés
 
-### <a name="runtime-design"></a>Futásidejű terv
+### <a name="runtime-design"></a><a name="runtime"></a> Futásidejű terv
 
 Az alábbi ábra az adószámítás magas szintű futásidejű tervét mutatja be. Mivel az adószámítás több Dynamics 365-alkalmazással is integrálható, az ábra példaként a Pénzügy integrációt használja.
 
 1. A Pénzügyben tranzakció, például értékesítési vagy beszerzési rendelés jön létre.
 2. A Pénzügy automatikusan az áfacsoport és a cikk áfacsoportja alapértelmezett értékeit használja.
-3. Ha a tranzakcióhoz be van jelölve az Áfa gomb, akkor a program **elindítja** az adószámítást. A Pénzügy program ezután elküldi a rakományt az adószámítási szolgáltatásnak.
+3. Ha a **tranzakcióhoz be van** jelölve az Áfa gomb, akkor a program elindítja az adószámítást. A Pénzügy program ezután elküldi a rakományt az adószámítási szolgáltatásnak.
 4. Az adószámítási szolgáltatás megfelel a rakománynak az adó funkció előre meghatározott szabályaival, hogy egyidejűleg pontosabb áfacsoportot és cikk áfacsoportot keressen.
 
-    - Ha a rakomány megfeleltetható az Adócsoport alkalmazhatósági mátrixának, akkor felülbírálja az áfacsoport értékét az alkalmazhatósági szabályban megadott, az egyező adócsoport **értékével**. Ellenkező esetben továbbra is a Pénzügy áfacsoport értékét használja.
-    - Ha a rakomány megfeleltetható a Cikkadócsoport alkalmazhatósági mátrixának, akkor felülbírálja a cikk áfacsoportértékét az alkalmazhatósági szabályban megadott, egyező cikkadócsoport-értékkel. **·** Ellenkező esetben továbbra is a Pénzügy cikk áfacsoport-értékét használja.
+    - Ha a rakomány **megfeleltetható** az Adócsoport alkalmazhatósági mátrixának, akkor felülbírálja az áfacsoport értékét az alkalmazhatósági szabályban megadott, az egyező adócsoport értékével. Ellenkező esetben továbbra is a Pénzügy áfacsoport értékét használja.
+    - Ha a rakomány **megfeleltetható** a Cikkadócsoport alkalmazhatósági mátrixának, akkor felülbírálja a cikk áfacsoportértékét az alkalmazhatósági szabályban megadott, egyező cikkadócsoport-értékkel. Ellenkező esetben továbbra is a Pénzügy cikk áfacsoport-értékét használja.
 
 5. Az adószámítási szolgáltatás az áfacsoport és a cikk áfacsoportja alapján határozza meg a végső áfakódokat.
 6. Az adószámítási szolgáltatás az ő által meghatározott végső adókódok alapján számítja ki az adót.
@@ -59,8 +59,8 @@ Az alábbi ábra az adószámítás magas szintű futásidejű tervét mutatja b
 A következő lépések magas szintű áttekintést nyújtanak az adószámítási szolgáltatás konfigurációs folyamatról.
 
 1. Az LCS-be telepítse az **Adószámítás** bővítményt az LCS-projektbe.
-2. Az RCS-ben hozza létre az **Adószámítás** szolgáltatást.
-3. Az RCS-ben állítsa be az **Adószámítás** funkciót:
+2. Az RCS-ben hozza létre az Adószámítás **szolgáltatást**.
+3. Az RCS-ben állítsa be az Adószámítás **funkciót**:
 
     1. Az adókonfigurációs verzió kiválasztása.
     2. Adókódok létrehozása.
@@ -69,7 +69,7 @@ A következő lépések magas szintű áttekintést nyújtanak az adószámítá
     5. Választható: Az áfacsoport alkalmazhatóságának létrehozása, ha felül szeretné bírálni a vevői vagy szállítói alapadatokból megadott alapértelmezett áfacsoportot.
     6. Nem kötelező: Akkor hozza létre a cikkcsoport alkalmazhatóságát, ha felül szeretné bírálni a cikk alapadataiból megadott alapértelmezett cikk áfacsoportot.
 
-4. Az RCS szolgáltatásban töltse ki és tegye közzé az **Adószámítás** szolgáltatást.
+4. Az RCS szolgáltatásban töltse ki és tegye közzé az Adószámítás **szolgáltatást**.
 5. A Pénzügyben válassza ki a közzétett **adószámítási** funkciót.
 
 A lépések után a következő beállítások automatikusan szinkronizálódnak az RCS és a Pénzügy között.
@@ -96,6 +96,14 @@ A témakör további eljárásainak befejezése előtt teljesülnie kell a köve
 
     - Globalizációs funkciók
 
+- Az RCS környezetben a következő szerepköröket kell a megfelelő felhasználókhoz rendelni:
+
+    - Elektronikus jelentések fejlesztője
+    - Globalizációs funkciófejlesztő
+    - Adómotor fejlesztője
+    - Adómotor funkcióival foglalkozó tanácsadó
+    - Adószolgáltatás fejlesztője
+
 ## <a name="set-up-tax-calculation-in-lcs"></a>Állítsa be az adószámítást az LCS-be.
 
 1. Jelentkezzen be az [LCS-be](https://lcs.dynamics.com)
@@ -115,7 +123,7 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
 5. A **Típus** mezőben válassza ki a **Globális** lehetőséget.
 6. Válassza ki a **Megnyitás** lehetőséget.
 7. Válassza az **Adóadatok modell** lehetőséget, bontsa ki a fájlfát, majd válassza az **Adókonfiguráció** lehetőséget.
-8. Válassza ki a megfelelő adókonfigurációs verziót a Pénzügy verzió [alapján](global-tax-calcuation-service-overview.md#versions), majd válassza az **Importálás** lehetőséget.
+8. Válassza ki a megfelelő adókonfigurációs [verziót](global-tax-calcuation-service-overview.md#versions) a Pénzügy verzió alapján, majd válassza az Importálás **lehetőséget**.
 9. A **Globalizációs funkciók** munkaterületen válassza a **Funkciók** lehetőséget, majd jelölje ki az **Adószámítás** lapot, és válassza a **Hozzáadás** lehetőséget.
 10. Válassza ki az alábbi szolgáltatástípusok valamelyikét:
 
@@ -203,15 +211,21 @@ Az ebben a szakaszban található lépések nem egy adott jogi személyhez kapcs
     | Értékesítés            | DEU       | FRA     | DEU_EU       |
     | Értékesítés            | BEL       | BEL     | BEL_Domestic |
     | Értékesítés            | BEL       | FRA     | BEL_EU       |
+    
+    > [!NOTE]
+    > Ha az adóköteles bizonylatsorok alapértelmezett áfacsoportja helyes, akkor hagyja üresen ezt a mátrixot. A további tudnivalókat lásd [a témakör Futásidejű](#runtime) tervezés szakaszában.
 
 22. A **Tétel adócsoport alkalmazhatósága** lapon jelölje ki a helyes adókód meghatározásához szükséges oszlopokat, majd válassza a **Hozzáadás** gombot. Adja meg vagy válassza ki az egyes oszlopok értékeit. Ennek a mátrixnak a kimenete a **tételadó-csoport** mező lesz. Ha ez a lap nincs beállítva, akkor a tranzakciósoron lévő tétel forgalmi adócsoportját kell használni.
 
     Íme, egy példa.
 
-    | Cikk kódja | Tétel adócsoport |
+    | Cikk kódja | Cikk adócsoportja |
     | --------- | -------------- |
     | D0001     | Teli           |
     | D0003     | Csökkentett        |
+
+    > [!NOTE]
+    > Ha az adóköteles bizonylatsorok alapértelmezett cikk áfacsoportja helyes, akkor hagyja üresen ezt a mátrixot. A további tudnivalókat lásd [a témakör Futásidejű](#runtime) tervezés szakaszában.
 
     Az adókódok Adószámításban történő meghatározásáról további információt az [Értékesítési adócsoport és tétel értékesítési adócsoport meghatározási logikája](global-sales-tax-group-determination.md) című témakörben talál.
 

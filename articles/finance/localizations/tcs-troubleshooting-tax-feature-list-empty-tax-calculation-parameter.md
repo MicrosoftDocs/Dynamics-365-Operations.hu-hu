@@ -1,5 +1,5 @@
 ---
-title: Üres adó funkciólista az adószámítási paraméterekben
+title: Üres adófunkció-lista az Adószámítási paraméterekben
 description: Ez a témakör azt mutatja be, hogyan lehet elhárítani azokat a problémákat, amelyeknél az Adószámítási paraméterek lapon üres a lista.
 author: wangchen
 ms.date: 03/04/2022
@@ -13,22 +13,21 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-10-26
 ms.dyn365.ops.version: Version 10.0.21
-ms.openlocfilehash: 5b87499042c9c4bfe76e182b170adf4f1cfeac4b
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: ef8158c2ada18e7d132eebbedef559b3f80ab19f
+ms.sourcegitcommit: 2977e92a76211875421e608555311c363cfbdc25
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8389125"
+ms.lasthandoff: 04/16/2022
+ms.locfileid: "8612289"
 ---
-# <a name="empty-tax-feature-list-in-tax-calculation-parameters"></a>Üres adó funkciólista az adószámítási paraméterekben
+# <a name="empty-tax-feature-list-in-tax-calculation-parameters"></a>Üres adófunkció-lista az Adószámítási paraméterekben
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
 
 ## <a name="symptom"></a>Tünet
 
-Közzétett egy funkciót a Regulatory Configuration Service (RCS) szolgáltatásban, hogy használni tudja a Microsoftban Dynamics 365 Finance. Amikor azonban megnyitja a Pénzügy szolgáltatást, **·** \> **·** \> **·** \> **nyissa** meg az Adóbeállítás adóbeállítása konfigurációs adó számítási paramétereit, és válasszon ki egy értéket a **Funkcióbeállítás neve** mezőben, az értékek listája üres.
+Közzétett egy funkciót a Regulatory Configuration Service (RCS) szolgáltatásban, Microsoft Dynamics így azt a 365 Pénzügyben használhatja. Amikor azonban megnyitja a Pénzügy szolgáltatást, **·** \> **·** \> **·** \> **nyissa** meg az Adóbeállítás adóbeállítása konfigurációs adó számítási paramétereit, és válasszon ki egy értéket a **Funkcióbeállítás neve** mezőben, az értékek listája üres.
 
 ## <a name="reason"></a>OK
 

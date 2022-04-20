@@ -1,6 +1,6 @@
 ---
 title: Áfakódok beállítása
-description: Ez a témakör bemutatja, hogyan állítsuk be az áfát a Dynamics 365 Finance szolgáltatásban.
+description: Ez a témakör bemutatja az áfakódok beállítását a Dynamics 365 Pénzügyben.
 author: twheeloc
 ms.date: 09/27/2021
 ms.topic: business-process
@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxTable, TaxData
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2539d701dda4ef5e1484d095b2d86d1f68a0dc98
-ms.sourcegitcommit: 86f0574363fb869482ef73ff294f345f81d17c5b
+ms.openlocfilehash: 69e2cf9a16fe0e694154cccf9b49944b49c79b90
+ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7562102"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8565853"
 ---
 # <a name="set-up-sales-tax-codes"></a>Áfakódok beállítása
 
@@ -45,7 +45,7 @@ Ez a feladat az USMF bemutatócéget használja.
 12. Zárja be a lapot.
 13. Válassza a **Mentés** lehetőséget.
 
-A Microsoft Dynamics 365 Finance 10.0.22-es verziója óta az [Adószolgáltatás](../../localizations/global-tax-calcuation-service-overview.md) használata esetén, illetve a [**Több adószám támogatása**](../../localizations/emea-multiple-vat-registration-numbers.md) funkció engedélyezése esetén a **Funkciókezelés** munkaterületen, használhatja az **Adó típusa** mezőt az adókód meghatározásához. A következő értékek állnak rendelkezésre:
+Microsoft Dynamics Az Adószolgáltatás használata esetén a 10.0.22-es [...](../../localizations/global-tax-calcuation-service-overview.md)[**·**](../../localizations/emea-multiple-vat-registration-numbers.md)**pénzügyi** verzió 365-ös verziója szerint a Funkciókezelés munkaterületén engedélyezve van a Több áfaregisztrációs szám támogatása funkció, **az** adókód típusának megadására az Adótípus mező használható. A következő értékek állnak rendelkezésre:
 
 - Normál áfa
 - Csökkentett áfa

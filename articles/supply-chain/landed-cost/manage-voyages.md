@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 50b6f306da1d32b1fd98da68bd997de1f1c23ffb
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 996a8b62b59dd27691a1eaa5ed619f94e899e8cf
+ms.sourcegitcommit: 197e6ddee84522fd587c6e4ee4f9089101e301c2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570946"
+ms.lasthandoff: 04/13/2022
+ms.locfileid: "8570424"
 ---
 # <a name="manage-voyages"></a>Hajóutak kezelése
 
@@ -66,9 +66,9 @@ A következő táblázat a Művelet panel **Kezelés** lapján elérhető művel
 | Szállítás alatt | Az **Hajóút állapota** mező frissítése a **[Partraszállítási költség paraméterei](landed-cost-parameters.md)** oldalon megadott úton lévő állapotra. A folyamaton nincs további logika. A [Követési vezérlőközpont](delivery-information-setup.md) beállításai alapján a hajóút automatikusan is frissíthető az átszállítási állapotra.
 | Költségszámításra kész | Az **Hajóút állapota** mező frissítése a **[Partraszállítási költség paraméterei](landed-cost-parameters.md)** oldalon megadott költségszámításra kész állapotra. Egy hajóút költsége akkor számolható el, ha minden számla feldolgozásra került (a készletszámlák és az hajóút költségszámlái is), és az árukat bevételezték. Ha egy hajóúthoz társított becsült költségek nem lettek elszámolva, akkor hiba történik a hajóút költségszámításának feldolgozásakor. |
 | Költség elszámolva | Az esetleges költségszámítási szabálytalanságok tisztítása, ha már létezik számla minden beszerzési rendelésre és hajóútra vonatkozó költségre. Ha megnyomja ezt a gombot, megjelenik a **Hajóút frissítése – Költség elszámolva** párbeszédpanel. Itt választhatja a szokásos pénzügyi dátumon való feladást, vagy megadhat egy feladási dátumot, majd futtathatja a műveletet. Tetszőleges alkalommal újrafuttathatja a műveletet. A **Hajóút frissítése – Költség elszámolva** párbeszédpanel használatával is ütemezheti a művelet futtatását időszakos feladatként (kötegelt feladat). Javasoljuk, hogy a műveletet rendszeresen, kötegelt feladatként futtassa. |
-| Bevételezési lista feladása | Bevételezési lista feladása a hajóúton található összes beszerzésirendelés-sorhoz. Többvállalatos hajóút használata esetén minden vállalathoz egy új bevételezésilista-feladási párbeszédpanel jelenik meg, és azt minden jogi személy esetében fel kell dolgozni. |
-| Termékbevételezés feladása | Termékbevételezés feladása a hajóúton található összes beszerzésirendelés-sorhoz. A hajóúthoz kapcsolódó beszerzésirendelés-sorok termékbevételezési folyamata csak akkor lesz használva, ha az áruk **nem** mennek át úton lévő áruk feldolgozásán. Ha az áruk átmennek úton lévő áruk feldolgozásán, akkor egy hibaüzenet jelenik meg, amikor megpróbálja feladni a termékbevételezést egy beszerzésirendelés-sorhoz. Többvállalatos hajóút használata esetén minden vállalat számára új szállítólevél-feladási párbeszédpanel nyílik meg. |
-| Számlafeladás | Számla feladása a hajóúton található összes beszerzésirendelés-sorhoz. Ha az áruk a hajóúton áthaladnak az úton lévő áruk feldolgozásán, a beszerzésirendelés-sorok számlázása a bevételezési folyamat végrehajtása előtt történik meg. Az eredeti beszerzési rendelés számlázásakor a program az eredeti beszerzésirendelés-sorokhoz társított úton lévő áruk rendeléseket fogja létrehozni. Ezeket a rendeléseket ezután bevételezheti a raktár. Többvállalatos szállítmányok használata esetén minden vállalat számára új számlafeladási párbeszédpanel nyílik meg. |
+| Bevételezési lista feladása | Bevételezési lista feladása a hajóúton található összes beszerzésirendelés-sorhoz.  |
+| Termékbevételezés feladása | Termékbevételezés feladása a hajóúton található összes beszerzésirendelés-sorhoz. A hajóúthoz kapcsolódó beszerzésirendelés-sorok termékbevételezési folyamata csak akkor lesz használva, ha az áruk **nem** mennek át úton lévő áruk feldolgozásán. Ha az áruk átmennek úton lévő áruk feldolgozásán, akkor egy hibaüzenet jelenik meg, amikor megpróbálja feladni a termékbevételezést egy beszerzésirendelés-sorhoz.  |
+| Számlafeladás | Számla feladása a hajóúton található összes beszerzésirendelés-sorhoz. Ha az áruk a hajóúton áthaladnak az úton lévő áruk feldolgozásán, a beszerzésirendelés-sorok számlázása a bevételezési folyamat végrehajtása előtt történik meg. Az eredeti beszerzési rendelés számlázásakor a program az eredeti beszerzésirendelés-sorokhoz társított úton lévő áruk rendeléseket fogja létrehozni. Ezeket a rendeléseket ezután bevételezheti a raktár.  |
 | Átmozgatási rendelések szállítása | Átszállítási rendelés hajóútjának feladása a hajóúton található összes átszállításirendelés-sorhoz. Ha ez a gomb be van jelölve, akkor csak az átszállítási rendelések érhetők el frissítésre. |
 | Átmozgatási rendelés bevételezése | Átszállítási rendelés bevételezésének feladása a hajóúton található összes átszállításirendelés-sorhoz. |
 | Úton lévő áruk bevételezése | Minden olyan rendelési sor bevételezése, amely úton van a hajóúton. Ez a gomb egyike annak a három lehetőségnek, amelyek a hajóúton úton lévő áruk bevételezésére használhatók. (A másik két lehetőség az **Érkeztetési napló létrehozása** gomb, amely később ebben a táblában és a Raktárkezelés mobilalkalmazásban van leírva). Ez a beállítás a legegyszerűbb választási lehetőség, és feldolgozza az úton lévő áruk raktárából a végső célraktárba úton lévő árukat. Ha jobban szabályozni szeretné a folyamatot, használja az érkeztetési naplót vagy egy mobileszközt az árubevételezés feldolgozására. |
@@ -84,7 +84,7 @@ A következő táblázat a Művelet panel **Általános** lapján elérhető gom
 
 | Gomb | Leírás |
 |---|---|
-| Bevételezések listája | Termékbevételezések listájának megnyitása a hajóúton található összes beszerzésirendelés-sorhoz. Többvállalatos hajóút használata esetén minden vállalat számára új bevételezési lista nyílik meg. Ha még nincs feldolgozva termékbevételezési lista, ez a gomb nem érhető el. |
+| Bevételezések listája | Termékbevételezések listájának megnyitása a hajóúton található összes beszerzésirendelés-sorhoz.  Ha még nincs feldolgozva termékbevételezési lista, ez a gomb nem érhető el. |
 | Termékbevételezés | Az úthoz kapcsolódó beszerzésirendelés-sorok termékbevételezési rekordját nyitja meg, amennyiben ez a rekord használatban van. Ha még nincs feladva termékbevételezés, ez a gomb nem érhető el. A termékbevételezési folyamat nem lesz használatban, ha az úton lévő áruk feladolgozását használja. |
 | Cikk érkezése | Ha használja, nyissa meg a cikkérkeztetési naplót. |
 | Nyomon követés | A **Bejövő nyomon követés** oldal megnyitása, ahol frissítheti az áruk érkezésének várható dátumát a szállítókonténerben és a hajóúton, majd frissítheti a beszerzésirendelés-sorok várható szállítási dátumait. |

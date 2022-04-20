@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-ms.openlocfilehash: 68f1ed6a6d6bb0d15a81539da7f483ad71a4d696
-ms.sourcegitcommit: 477efa4cb138f41d4f68bcd82552af3473bcc3d9
-ms.translationtype: HT
+ms.openlocfilehash: 8862f42f3ceaed7e1413c49cf9b91f0449fab67b
+ms.sourcegitcommit: 4c8223c9540fbc1c1e554962938058d432e4c681
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/29/2021
-ms.locfileid: "7715230"
+ms.lasthandoff: 04/05/2022
+ms.locfileid: "8547982"
 ---
 # <a name="regulatory-configuration-service-rcs--lifecycle-services-lcs-storage-deprecation"></a>Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) tárhely kivezetése
 
@@ -29,17 +29,17 @@ ms.locfileid: "7715230"
 A Microsoft Dynamics Lifecycle Services (LCS) használata tárolási adattárként az Elektronikus jelentéskészítés (ER) konfigurációihoz ki lesz vezetve. Ez a kivezetés a következő változásokkal jár:
 
 - A Microsoft Dynamics 365 alkalmazásokban használt Microsoft által előállított konfigurációk a továbbiakban nem lesznek közzétéve az LCS Közös eszköz könyvtárában. Ehelyett csak az RCS globális tárházon keresztül lesznek közzétéve. Ugyanakkor a Dynamics AX 2012 konfigurációi mindaddig közzé lesznek téve az LCS közös eszközkönyvtárában, amíg az AX 2012 támogatási életciklusa véget nem ér.
-- Inaktiválva lesz az a funkció, amely lehetővé teszi a konfigurációk feltöltését az LCS projekt eszközkönyvtárába a Finance and Operations alkalmazásokból és az RCS-ből. Ennek ellenére használhatja az LCS böngészőjét a konfigurációknak a Projekt eszköztárba való feltöltésére. Ennek megfelelően továbbra is hozzáadhat konfigurációkat az LCS-hez, hogy azok a megoldáscsomagokba bekerülhessenek.
-- Az LCS-ből való konfiguráció importálások egy ideig még elérhetők és támogatottak lesznek a Finance and Operations alkalmazásokban, illetve az RCS szolgáltatásban. Ugyanakkor az a funkció egy idő után ki lesz vezetve. (A kivezetés pontos dátumát később fogjuk bejelenteni.)
+- Ez a funkció inaktiválva lesz az LCS-alkalmazásokból és az RCS-alkalmazásokból származó konfigurációknak a Projekt eszköztárába való feltöltésére. Ennek ellenére használhatja az LCS böngészőjét a konfigurációknak a Projekt eszköztárba való feltöltésére. Ennek megfelelően továbbra is hozzáadhat konfigurációkat az LCS-hez, hogy azok a megoldáscsomagokba bekerülhessenek.
+- Az LCS-ről való konfigurációimportációk egy ideig továbbra is elérhetők és támogatottak lesznek a Pénzügy és műveletek alkalmazásokban, illetve az RCS-ben. Ugyanakkor az a funkció egy idő után ki lesz vezetve. (A kivezetés pontos dátumát később fogjuk bejelenteni.)
 
 ## <a name="deprecation-notice"></a>Elavulásáról szóló értesítés
 
-Az LCS tárhelyként való felhasználása kivezetésének kommunikálása a [Dynamics 365 Finance eltávolított vagy avultatott funkciói – LCS avultatás bejelentése](../get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release) közleményben megtörtént. A tervezett kivezetés dátuma 2022. április 1.
+Az LCS-tárolás [használatának értékcsökkenése kommunikálva a Dynamics 365 Pénzügy - LCS értékcsökkenési értesítés eltávolított vagy elavult funkcióiban](../get-started/removed-deprecated-features-finance.md#features-removed-or-deprecated-in-the-finance-10017-release). A tervezett kivezetés dátuma 2022. április 1.
 
 ## <a name="key-features"></a>Fő funkciók
 
 - Az RCS használatával ER-konfigurációkat és globalizációs funkciókat hozhat létre és szerkeszthet.
-- A konfigurációkat közvetlenül az RCS-tervezőből küldheti át egy csatlakoztatott alkalmazásba, például egy Dynamics 365 Finance környezetbe, így gyorsan el lehet elvégezni és tesztelni a konfigurációk módosításait.
+- A konfigurációkat közvetlenül az RCS-tervezőből egy csatlakoztatott alkalmazásba, például a Dynamics 365 Pénzügyi környezetbe használhatja, így gyorsan és tesztelheti a konfigurációk változásait.
 - Az ER-konfigurációk és a globalizációs funkciók életciklusának központi tárolása, megosztása és kezelése a globális tárház központi tárolóján keresztül.
 
 ## <a name="guidance-for-one-time-and-ongoing-actions"></a>Útmutatás az egyszeri és folyamatos műveletekhez
@@ -52,7 +52,7 @@ Importálja az összes szükséges konfigurációt az LCS-ről az RCS szolgálta
 
 1. Ha még nem érhető el RCS-példány, létesítsen egyet. A további tudnivalókat lásd: [RCS áttekintése](rcs-overview.md).
 2. A létesített RCS-példányban a származtatott ER-konfigurációkat tartalmazó eszköztár minden LCS-projekthez regisztráljon megfelelő LCS-tárházat.
-3. Az LCS-tárházból az RCS-be importálja az ER-konfigurációkat. További információ: [Konfigurációk importálása LCS-ből](../../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md).
+3. Az LCS-tárházból az RCS-be importálja az ER-konfigurációkat. További információ: [Konfigurációk importálása LCS-ből](/dynamics365/fin-ops-core/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services).
 4. Ha nincs automatikusan biztosítva globális tárház, regisztrálja az RCS szolgáltatásban.
 5. Az aktuális RCS-példány összes származtatott konfigurációját töltse fel a globális adattárba. A **Konfigurációs csomagok** funkció használata segíthet a feltöltésben. A további tudnivalókat lásd: [RCS globális adattár felöltés](rcs-global-repo-upload.md).
 
@@ -73,7 +73,7 @@ A Globalizációs tárhely a következő célokra használható:
 
 ### <a name="does-this-change-mean-that-lcs-cant-be-used-as-central-storage-for-configurations"></a>Ez a módosítás azt jelenti, hogy az LCS nem használható központi tárolóként a konfigurációkhoz?
 
-Igen. Ki lesz vezetve az a funkció, amely lehetővé teszi a konfigurációk feltöltését az LCS projekt eszközkönyvtárába a Finance and Operations alkalmazásokból és az RCS-ből ki. Ennek ellenére használhatja az LCS böngészőjét a konfigurációknak a Projekt eszköztárba való feltöltésére igény szerint.
+Igen. Ezzel a funkcióval lehet feltölteni a konfigurációkat a Pénzügyi és üzemeltetési alkalmazásokból az LCS Projekt eszköztárába. Ennek ellenére használhatja az LCS böngészőjét a konfigurációknak a Projekt eszköztárba való feltöltésére igény szerint.
 
 ### <a name="i-thought-that-rcs-was-a-replacement-repository-for-importing-global-template-files-i-didnt-think-that-its-used-to-store-configurations-which-is-correct"></a>Úgy gondoltam, hogy az RCS egy helyettesítő tárház a globális sablonfájlok importálásához. Nem hittem, hogy ez konfigurációk tárolására használatos. Mi a valóság?
 
@@ -81,7 +81,7 @@ Az RCS az ER-konfigurációk létrehozására és szerkesztésére szolgáló te
 
 ### <a name="without-lcs-what-is-the-suggested-way-to-store-configurations-so-that-test-and-production-configurations-can-easily-be-managed-and-transferred"></a>Az LCS nélkül milyen módszer javasolt a konfigurációk tárolására, hogy a "teszt" és a "termelési" konfigurációk egyszerűen kezelhetők és átvihetők legyenek?
 
-Az RCS a *csatlakoztatott alkalmazás* koncepcióját használja. A csatlakoztatott alkalmazás kapcsolatot létesít az RCS és minden Finance and Operations alkalmazáspéldány között. Mivel az RCS a konfigurációk szerkesztésére használható, a csatlakoztatott alkalmazás segítségével közvetlenül lehet átküldeni a konfigurációkat a tervezőből a Finance and Operations alkalmazáskörnyezetbe. Így gyorsan módosíthatja és tesztelheti a konfigurációkat, ahelyett, hogy végig kellene mennie az LCS-projektszintű tárhelyen.
+Az RCS a *csatlakoztatott alkalmazás* koncepcióját használja. A csatlakoztatott alkalmazás kapcsolatot létesít az RCS, illetve a Pénzügy és a Művelet alkalmazás bármely példánya között. Mivel az RCS a konfigurációk szerkesztésére használható, a csatlakoztatott alkalmazás segítségével közvetlenül el lehet tolni a konfigurációkat a tervezőből a Pénzügyi és műveleti alkalmazások környezeteibe. Így gyorsan módosíthatja és tesztelheti a konfigurációkat, ahelyett, hogy végig kellene mennie az LCS-projektszintű tárhelyen.
 
 ### <a name="are-there-any-examples-that-show-the-setup-and-management"></a>Vannak példák a beállításokra és a kezelésre?
 
@@ -104,4 +104,4 @@ A terméktámogatásról a [Dynamics globalizációs szolgáltatások áttekint�
 
 ### <a name="whats-the-cost-of-using-rcs"></a>Mi az RCS használatának költsége?
 
-Az RCS és a globalizációs tárház ingyenesen elérhető a meglévő Finance and Operations alkalmazáslicencek részeként. Nincs külön költség társítva az RCS tervezőszolgáltatás használatához vagy a konfigurációknak a globális tárházban való tárolásához. Jelenleg nincs korlátozva a konfigurációk vagy a csatlakoztatott alkalmazások száma.
+Az RCS és a globalizációs tárház ingyenes a meglévő Pénzügy és műveletek alkalmazáslicencek részeként. Nincs külön költség társítva az RCS tervezőszolgáltatás használatához vagy a konfigurációknak a globális tárházban való tárolásához. Jelenleg nincs korlátozva a konfigurációk vagy a csatlakoztatott alkalmazások száma.
