@@ -16,13 +16,11 @@
                   href: get-started/whats-new-changed-10-0-26.md
                 - name: Finance 10.0.25 (április)
                   href: get-started/whats-new-changed-10-0-25.md
-                - name: Finance 10.0.24 (február)
-                  href: get-started/whats-new-changed-10-0-24.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
-                - name: Eltávolított vagy elavult funkciók a Dynamics 365 Finance szolgáltatásban
+                - name: Eltávolított vagy elavult szolgáltatások a Dynamics 365 Finance alkalmazásban
                   href: get-started/removed-deprecated-features-finance.md
                 - name: Eltávolított vagy elavult funkciók a korábbi kiadásokban
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/finance/toc.json
@@ -418,14 +416,30 @@
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Számlázási ütemezés másolása
                       href: accounts-receivable/sb-copy-schedules-items.md
+                    - name: Számlázási ütemezés funkciói
+                      href: accounts-receivable/sb-schedule-billing-features.md
                     - name: Mérföldkő-számlázás
                       href: accounts-receivable/sb-milestonebilling.md
+                    - name: Támogatási és megújítási folyamat
+                      href: accounts-receivable/sb-support-renewals.md
+                    - name: Fogyasztói árindex ütemezései
+                      href: accounts-receivable/cpischedules.md
                     - name: Számlázási ütemezések megszüntetése
                       href: accounts-receivable/terminate-billing-schedule.md
                 - name: Bevétel- és költséghalasztások
-                  items: null
+                  items:
+                    - name: Bevétel- és költséghalasztások beállítása
+                      href: accounts-receivable/sb-deferrals.md
+                    - name: Halasztási ütemezések
+                      items:
+                        - name: Halasztási ütemezések létrehozása
+                          href: accounts-receivable/sb-deferrals-schedules.md
+                        - name: Halasztás alapértelmezett tranzakciói
+                          href: accounts-receivable/sb-deferral-transactions.md
                 - name: Többelemes bevételfelosztás
-                  items: null
+                  items:
+                    - name: Több elem bevételfelosztásának beállítása
+                      href: accounts-receivable/sb-rev-alloc-setup.md
             - name: Kifizetések és kiegyenlítések
               items:
                 - name: Vevői kifizetések áttekintése
@@ -922,11 +936,13 @@
               items:
                 - name: Számlatükör tervezése
                   href: general-ledger/plan-chart-of-accounts.md
+                - name: Helyi számlatükör tervezése
+                  href: general-ledger/plan-local-chart-of-accounts.md
                 - name: Fő számlák
                   items:
                     - name: Fő számla típusai
                       href: general-ledger/main-account-types.md
-                    - name: Fő számla kategóriáinak beállítása
+                    - name: Főszámla-kategóriák beállítása
                       href: general-ledger/tasks/set-up-main-account-categories.md
                     - name: Főkönyvi számlaalias beállítása
                       href: general-ledger/tasks/set-up-ledger-account-alias.md
@@ -2288,9 +2304,9 @@
                       href: localizations/emea-fra-fec-audit-file-structure.md
                     - name: Környezet előkészítése FEC létrehozásához
                       href: localizations/emea-fra-fec-audit-file-setup.md
-                    - name: FEC létrehozása a Dynamics 365 Finance szolgáltatásban
+                    - name: FEC létrehozása a Dynamics 365 Finance alkalmazásban
                       href: localizations/emea-fra-fec-audit-file-generation.md
-                - name: Vevői és szállítói számlakivonat
+                - name: Vevői és szállítói számlakivonatok
                   href: localizations/tasks/fr-00002-customer-vendor-account-statements.md
                 - name: A megkésett fizetésekre és egyösszegű elemekre vonatkozó napi kamatszámítás a számlákon és a fizetési felszólításokon
                   href: localizations/tasks/fr-00018-daily-interest.md
@@ -3092,6 +3108,8 @@
                   href: localizations/tasks/mx-00010-cancel-electronic-invoice.md
                 - name: 3.3-as CFDI-verzió
                   href: localizations/latam-mex-cfdi-3-3.md
+                - name: 4.0-ás CFDI-verzió
+                  href: localizations/latam-mex-cfdi-4-0.md
                 - name: Vevői regisztrációs azonosítók és egyéb adatok
                   href: localizations/tasks/mx-00007-customer-registration-ids-other-information.md
                 - name: DIOT-nyilatkozat kimutatása

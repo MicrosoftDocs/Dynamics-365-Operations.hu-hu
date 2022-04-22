@@ -14,12 +14,10 @@
               items:
                 - name: Újdonságok és változások a Platformfrissítések kezdőlapján
                   href: get-started/whats-new-home-page.md
-                - name: Platformfrissítés a 10.0.26-es verzióhoz (2022. május)
+                - name: Platformfrissítések a 10.0.26-os verzióhoz (2022. május)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: Platformfrissítés a 10.0.25-as verzióhoz (2022. április)
+                - name: Platformfrissítések a 10.0.25-ös verzióhoz (2022. április)
                   href: get-started/whats-new-platform-updates-10-0-25.md
-                - name: Platformfrissítések a 10.0.24-es verzióhoz (2022. február)
-                  href: get-started/whats-new-platform-updates-10-0-24.md
             - name: Eltávolított vagy elavult funkciók
               items:
                 - name: Eltávolított vagy elavult funkciók a kezdőlapon
@@ -396,6 +394,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Proxyk konfigurálása helyszíni környezetekhez
                       href: deployment/onprem-reverseproxy.md
+                    - name: Hálózati nyomtatók helyszíni környezetben történő telepítése
+                      href: analytics/install-network-printer-onprem.md
                     - name: Helyszíni diagnosztika
                       href: deployment/on-premises-diagnostics.md
                     - name: Helyszíni vészhelyreállítás konfigurálása
@@ -470,7 +470,7 @@
                   href: help/contributor-guide.md
             - name: Telepítési szempontok
               items:
-                - name: A rendszer és a helyi felhőbeli telepítési beállításai Dynamics 365 Finance és a Dynamics 365 Supply Chain Management számára
+                - name: A rendszer és a helyi felhőbeli telepítési beállításai a Dynamics 365 Finance és a Dynamics 365 Supply Chain Management számára
                   href: deployment/deployment-options-geo.md
                 - name: Finance és Supply Chain Management az Egyesült Államok Government Community Cloud felhőben (GCC)
                   href: deployment/us-gcc-deployment.md
@@ -496,6 +496,8 @@
                   href: dev-tools/configure-developer-vm.md
                 - name: Rendszergazdai hozzáférést nem engedélyező virtuális gépek fejlesztése és összeállítása – GYIK
                   href: sysadmin/VMs-no-admin-access.md
+                - name: A letölthető VHD beállítása első használatra
+                  href: dev-tools/vhd-setup.md
                 - name: Helyi környezetek átnevezése az Azure DevOps eléréséhez
                   href: migration-upgrade/vso-machine-renaming.md
                 - name: Fejlesztési rendszerkövetelmények
@@ -1028,6 +1030,8 @@
                   href: lifecycle-services/use-translation-service-tm.md
                 - name: Azure DevOps bővítmény (nyilvános előzetes verzió)
                   href: lifecycle-services/dts-devops-extension.md
+                - name: Azure DevOps bővítmény oktatóanyag (nyilvános előzetes verzió)
+                  href: lifecycle-services/dts-ado-tutorial.md
         - name: Microsoft Power Platform-integráció
           items:
             - name: Áttekintés
@@ -1506,6 +1510,8 @@
               href: ../fin-ops/get-started/recommendation-data-agnostic-testing-rsat.md
             - name: A Regression Suite Automation Tool (RSAT) futtatása párhuzamos végrehajtással
               href: perf-test/rsat/rsat-parallel-execution.md
+            - name: Az RSAT integrációja az Azure DevOps folyamatokkal
+              href: perf-test/rsat/rsat-devops-extension.md
             - name: Hibaelhárítás
               href: perf-test/rsat/rsat-troubleshooting.md
         - name: Megoldások kiadása a Lifecycle Services segítségével
