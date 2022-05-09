@@ -2,19 +2,19 @@
 title: A Finance and Operations alkalmazások kettős írással kapcsolatos problémáinak elhárítása
 description: Ez a témakör olyan hibaelhárítási információkat tartalmaz, amelyek segítséget nyújtnak a Pénzügy és műveletek alkalmazások Kettős írású modulja hibáinak megoldásához.
 author: RamaKrishnamoorthy
-ms.date: 04/12/2022
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 58b20e38269922203b54173509e31c5e6f30c25b
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
-ms.translationtype: HT
+ms.openlocfilehash: 0696d525e985f1cfcac1998d4c0bd8a380ca9551
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565966"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8613882"
 ---
 # <a name="troubleshoot-dual-write-issues-in-finance-and-operations-apps"></a>A Finance and Operations alkalmazások kettős írással kapcsolatos problémáinak elhárítása
 
@@ -73,7 +73,7 @@ A hiba elhárításához hozzon létre egy jegyet az adatintegrációs csoportho
 
 ## <a name="enable-parallel-processing-in-finance-and-operations-apps-to-improve-performance"></a>A párhuzamos feldolgozás engedélyezése a Pénzügy és a Műveletek alkalmazásokban a teljesítmény javítása érdekében
 
-A párhuzamos feldolgozás engedélyezése csökkentheti a Pénzügy és művelet alkalmazásokból az ügyfél-megállapodási alkalmazásokba és az alkalmazásokba történő adatimporthoz szükséges időt Microsoft Dataverse. 
+A párhuzamos feldolgozás engedélyezése csökkentheti a Dynamics 365 Microsoft Dataverse ügyfél-megállapodási alkalmazásokból és a Pénzügy és Műveletek alkalmazásokba történő adatimporthoz szükséges időt. 
 
 Ha engedélyezni szeretné a párhuzamos feldolgozást a Pénzügy és a Műveletek alkalmazásokban, kövesse az alábbi lépéseket.
 

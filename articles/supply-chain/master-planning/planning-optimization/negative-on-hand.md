@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: 4eb8f6aee50d74127ecc816af691a96bb1d8966b
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: bb837a38485bad2b9b76a5e4f20d311c0281e192
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469142"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625423"
 ---
 # <a name="planning-with-negative-on-hand-quantities"></a>Tervezés negatív tényleges készleten lévő mennyiségekkel
 
@@ -75,7 +75,7 @@ Az eredmény 25 darabból álló tervezett rendelés. (= 25 db. &minus; 0 db.) a
 
 ## <a name="planning-when-there-is-a-reservation-against-negative-on-hand-inventory"></a>Tervezés negatív aktuális készletre vonatkozó foglalás esetén
 
-Ha úgy módosítja a készletet, hogy közben tényleges foglalások vannak, olyan helyzet alakulhat, amikor egy rendelés ténylegesen le lesz foglalva a negatív készletből. Ebben az esetben fizikai foglalás létezik, ezért a Tervezési optimalizálás azt feltételezi, hogy az aktuális készlet támogatja azt, még akkor is, ha az aktuális készlet bevételezése még nincs regisztrálva a rendszerben. Ebből következően azt feltételezi, hogy a feltöltés nem szükséges, és nem hoz létre tervezett rendelést a rendelés mennyiségének feltöltéséhez.
+Ha úgy módosítja a készletet, hogy közben tényleges foglalások vannak, olyan helyzet alakulhat, amikor egy rendelés ténylegesen le lesz foglalva a negatív készletből. Ebben az esetben fizikai foglalás miatt fedezetre van szüksége a lefoglalt mennyiséghez. Emiatt feltöltés szükséges, tehát a rendszer vagy létrehoz egy tervezett rendelést, amely feltölti azt a mennyiséget, amelyet nem tudott fedezni a meglévő aktuális készlet, vagy fedezni fogja a cikk egy meglévő rendelésével.
 
 Az alábbi forgatókönyv ezt a példát ábrázolja.
 
@@ -88,7 +88,7 @@ A rendszer a következő módon van konfigurálva:
 - *10* db. mennyiségre van egy értékesítési rendelés Az *FG* termékből.
 - Az értékesítési rendelés mennyisége ténylegesen le van foglalva a meglévő aktuális készlettel szemben.
 
-Ezután módosítja az *FG* termék mennyiségét úgy, hogy az aktuális készlet 0 (nulla) legyen. Mivel az aktuális termékkészlet nulla, az értékesítési rendelés mennyisége most negatív készlettel szemben lesz lefoglalva. Ha azonban most futtatja az alaptervezést, nem jön létre tervezett rendelés az értékesítési rendelés ellátásához, mivel a Tervezési optimalizálás feltételezi, hogy a tényleges foglaláshoz szükséges aktuális készlet létezik.
+Ezután módosítsa az *FG* termék mennyiségét úgy, hogy az aktuális készlet 5 leárazhatóvá válik. Mivel az aktuális termék készlete 5, az értékesítési rendelés mennyisége most olyan mennyiségre lesz lefoglalva, amely nem elérhető az aktuális készletben (hasonló lenne, ha az aktuális készlet 0, ebben az esetben az értékesítési rendelés negatív készlethez lenne lefoglalva). Ha most futtatja az alaptervezést, létrejön egy 5 *mennyiségű tervezett rendelés az FG* számára az értékesítési rendelés ellátásához, mert a tervezési optimalizálás mindig a meglévő készletet használja, vagy létrehoz egy új tervezett rendelést a fizikai foglalás ellátásához.
 
 ## <a name="related-resources"></a>Kapcsolódó erőforrások
 

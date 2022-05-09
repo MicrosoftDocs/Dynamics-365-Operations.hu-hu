@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 2c8cf4866b6a8c239359d726d8cd4f03a9eb4137
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: a7353d7d8149ff1316fbc0adc55b7e1050f443a8
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8324087"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661658"
 ---
 # <a name="customize-electronic-reporting-configurations-to-generate-an-electronic-document"></a>Elektronikus jelentéskészítési konfigurációk testreszabása elektronikus bizonylat előállításához
 
 [!include[banner](../includes/banner.md)]
 
-Az [elektronikus jelentéskészítési (ER) keretrendszer](general-electronic-reporting.md) segítségével feltöltheti a Microsoft által a Microsoft Dynamics 365 Finance példányában biztosított ER-[konfigurációkat](general-electronic-reporting.md#Configuration). Ily módon a Microsoft által biztosított konfigurációk az elektronikus Ügyfélszámlák (e-számlák) létrehozásához használt ER-megoldásként szolgálhatnak. Ez az ER-megoldás az egyéni ER-megoldások az egyéni adatbázismezők eléréséhez való konfigurációjára használható, és olyan e-számlák létrehozására, amelyek megfelelnek a megadott követelményeknek, anélkül, hogy szerkeszteni kellene a forráskódot.
+Az [Elektronikus jelentéskészítési (ER) keretrendszer](general-electronic-reporting.md) lehetővé teszi [a](general-electronic-reporting.md#Configuration) Microsoft Microsoft Dynamics által az Ön 365-ös pénzügyi példánya számára konfigurált ER-konfigurációk feltöltését. Ily módon a Microsoft által biztosított konfigurációk az elektronikus Ügyfélszámlák (e-számlák) létrehozásához használt ER-megoldásként szolgálhatnak. Ez az ER-megoldás az egyéni ER-megoldások az egyéni adatbázismezők eléréséhez való konfigurációjára használható, és olyan e-számlák létrehozására, amelyek megfelelnek a megadott követelményeknek, anélkül, hogy szerkeszteni kellene a forráskódot.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -61,7 +61,7 @@ Elektronikus jelentések funkcióival foglalkozó tanácsadó vagy Elektronikus 
 ### <a name="configure-er-parameters"></a>ER-paraméterek konfigurálása
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
-2. A **Lokalizációs konfigurációk** oldalon, a **Kapcsolódó hivatkozások** szakaszban, válassza az **Elektronikus jelentéskészítés paraméterei** elemet.
+2. Válassza az Elektronikus **jelentés paramétereit a Honosítási tervezet** **oldalon,** a Kapcsolódó **hivatkozások szakaszban**.
 3. Az **Elektronikus jelentéskészítési paraméterek** oldalon, az **Általános** lapon a **Tervezői mód engedélyezése** lehetőséget állítsa **Igen** értékre.
 4. Válassza a **mellékletek** lap **konfigurációk** mezőjének **fájl** pontját.
 5. A **Feladatarchívum**, **Ideiglenes**, **Alap** és **Egyebek** mezőkben válassza a **Fájl** típust.
@@ -78,13 +78,13 @@ Minden hozzáadott ER-konfigurációt egy ER-konfigurációszolgáltató által 
 #### <a name="review-the-list-of-er-configuration-providers"></a>Az ER-konfigurációszolgáltatók listájának áttekintése
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
-2. A **Lokalizációs konfigurációk** oldalon, a **Kapcsolódó hivatkozások** szakaszban, válassza a **Konfigurációszolgáltatók** elemet.
+2. Válassza ki **a Konfiguráció-szolgáltatókat** a Honosítási tervezet **oldalon,** a Kapcsolódó **hivatkozások szakaszban**.
 3. A **Konfigurációszolgáltatók tábla** oldalon minden szolgáltatói rekordnak egyedi neve és URL-címe van. Tekintse át az oldal tartalmát. Ha a már létezik a **Litware, Inc.** (`https://www.litware.com`) rekordja, hagyja ki a következő eljárást: [Új ER-konfigurációszolgáltató hozzáadása](#AddProvider).
 
 #### <a name="add-a-new-er-configuration-provider"></a><a id="AddProvider"></a>Új ER-konfigurációszolgáltató hozzáadása
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
-2. A **Lokalizációs konfigurációk** oldalon, a **Kapcsolódó hivatkozások** szakaszban, válassza a **Konfigurációszolgáltatók** elemet.
+2. Válassza ki **a Konfiguráció-szolgáltatókat** a Honosítási tervezet **oldalon,** a Kapcsolódó **hivatkozások szakaszban**.
 3. A **Konfigurációszolgáltatók** oldalon válassza az **Új** elemet.
 4. A **Név** mezőbe írja be a következőt: **Litware, Inc.**.
 5. Az **Internetcím** mezőben adja meg a következőt: `https://www.litware.com`.
@@ -93,7 +93,7 @@ Minden hozzáadott ER-konfigurációt egy ER-konfigurációszolgáltató által 
 #### <a name="activate-an-er-configuration-provider"></a>ER-konfigurációszolgáltató aktiválása
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
-2. A **Lokalizációs konfigurációk** oldalon, a **Konfigurációszolgáltatók** szakaszban válassza ki a **Litware, Inc.** csempét, majd válassza a **Beállítás aktívként** lehetőséget.
+2. Válassza a **Konfigurációszolgáltatók szakasz Honosítási tervezetének** **·** **lapján a Litware, Inc.** csempe lehetőséget, **majd válassza az Aktív beállítása lehetőséget.**
 
 További információért az ER-konfigurációszolgáltatókkal kapcsolatban tekintse át a [Konfigurációszolgáltatók létrehozása és megjelölése aktívként](tasks/er-configuration-provider-mark-it-active-2016-11.md) eljárást.
 
@@ -102,7 +102,7 @@ További információért az ER-konfigurációszolgáltatókkal kapcsolatban tek
 Ha a szabvány ER-konfigurációkat a Finance jelenlegi példányához szeretné hozzáadni, importálnia kell azokat az adott példányhoz konfigurált ER [adattárból](general-electronic-reporting.md#Repository).
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
-2. A **Lokalizációs konfigurációk** oldalon, a **Konfigurációszolgáltatók** szakaszban válassza ki a **Microsoft** csempét, majd válassza ki az **Adattárak** lehetőséget a Microsoft szolgáltatóhoz tartozó adattárak listájának megtekintéséhez.
+2. Jelölje ki **a Microsoft csempe,** **majd** válassza ki a Tárházakat a Konfigurációk **tervezete szakasz Honosítási tervezet lapján,** **majd válassza ki a Tárházakat a Microsoft-szolgáltató tárházai listájának megtekintéséhez.**
 3. A **Konfigurációs adattárak** lapon válassza ki a **Globális** típusú adattárat, majd válassza a **Megnyitás** lehetőséget. Ha a rendszer felkéri a hitelesítésre a Regulatory Configuration Service szolgáltatáshoz való kapcsolódáshoz, kövesse a hitelesítési utasításokat.
 4. A **Konfigurációs adattárak** oldalon, a bal oldali panel konfigurációs fájában válassza ki a **Peppol értékesítési számla** formátumkonfigurációt.
 5. Válassza ki a **Verziók** gyorslap **11.2.2.** verzióját.
@@ -116,7 +116,7 @@ Ha a szabvány ER-konfigurációkat a Finance jelenlegi példányához szeretné
 ### <a name="review-the-imported-er-configurations"></a>Importált ER-konfigurációk áttekintése
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
-2. A **Lokalizációs konfigurációk** oldalon, a **Konfigurációk** szakaszban, válassza ki a **Jelentéskészítési konfiguráció** csempét.
+2. A Honosítási **tervezet oldalon**, **a Konfigurációk** szakaszban jelölje be a Jelentési **konfigurációk csempe**.
 3. A **Konfigurációk** lapon bontsa ki a **Konfigurációs összetevők** gyorslapot.
 4. A bal oldali konfigurációs fában bontsa ki a **számla modell** elemet, majd bontsa ki a **UBL értékesítési számla** lehetőséget.
 

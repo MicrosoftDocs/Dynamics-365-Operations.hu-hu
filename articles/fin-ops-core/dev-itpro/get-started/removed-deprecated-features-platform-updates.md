@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve amelyek a pénzügyi és műveleti alkalmazások platformfrissítései során tervezett eltávolításra vannak tervezve.
 author: sericks007
-ms.date: 03/08/2022
+ms.date: 04/26/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 27be0e720b7eca5883c5d73dfe312c09fcd22c65
-ms.sourcegitcommit: ddcab9726e9dbcf3296cb0988b97a3ae7ccb3dfb
+ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/08/2022
-ms.locfileid: "8396549"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644607"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>A platform eltávolított vagy elavult funkciói
 
@@ -32,17 +32,29 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük a Pénzügyi és műveleti alkalmazások egyes verzióiban módosult vagy eltávolított objektumokat.
 
-## <a name="feature-removal-effective-march-14-2022"></a>A szolgáltatás eltávolítása 2022. március 14-én hatályos
+## <a name="feature-deprecation-effective-april-2022"></a>A funkció értékcsökkenése 2022. április 20-án hatályos.
+
+### <a name="xml-url-resolution-in-data-management"></a>XML URL-cím feloldása az Adatkezelésben 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az XML URL-címfeloldás támogatását megszüntetjük, mivel ezt a rendszer biztonsági résként azonosította. Ez azt jelenti, hogy az XML-fájlokhoz társított külső erőforrásokat a továbbiakban nem lehet feloldani.  |
+| **Felváltotta másik szolgáltatás?**   | Nem. |
+| **Érintett területek**         | Finance and Operations alkalmazások |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult. |
+
+## <a name="feature-deprecation-effective-march-14-2022"></a>A funkció értékcsökkenése 2022. március 14-én hatályos.
 
 ### <a name="xslt-scripting-in-data-management"></a>XSLT-parancsfájlok az Adatkezelésben
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Elavulás/eltávolítás oka** | Az XSLT parancsfájlok használata az Adatkezelésben elavult, így javítható a biztonság és az adatok védelme a Pénzügy és műveletek alkalmazáson belül.  |
+| **Elavulás/eltávolítás oka** | Az XSLT parancsfájlok használata az Adatkezelésben elavult, így javítható a biztonság és az adatbiztonság a Pénzügy és a Műveletek alkalmazáson belül.  |
 | **Felváltotta másik szolgáltatás?**   | Nem. A vevőknek és az isV-knek érdemes megfontolni, hogy XSLT-parancsfájlok használata esetén az X++ nyelv alapján újra legyen edzve a megoldásuk. |
-| **Érintett területek**         | A Pénzügy és a Műveletek alkalmazás. |
-| **Telepítési beállítás**              | Mind. |
-| **Állapot**                         | Elavult – a tervezett eltávolítás dátuma 2022. március 14.<br><br>Kivétel: AZ XLST parancsfájlt jelenleg használó vevők. A verzió a 10.0.30-as vagy újabb verzióra való frissítésig továbbra is használható. A kivétellel értesítő vevők értesítést kaptak az Microsoft 365 Adminisztrációs központban elérhető Üzenetközpontban. |
+| **Érintett területek**         | Finance and Operations alkalmazások |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult <br><br>**Kivétel:** AZ XLST parancsfájlt jelenleg használó vevők. A verzió a 10.0.30-as vagy újabb verzióra való frissítésig továbbra is használható. Korábbi verziók esetén a kivétel 2023. január 31-én lejár. A kivétellel értesítő vevők értesítést kaptak az Microsoft 365 Adminisztrációs központban elérhető Üzenetközpontban. |
 
 ## <a name="feature-removal-effective-october-2021"></a>2021. októbertől hatályos funkcióeltávolítás
 
@@ -204,7 +216,7 @@ A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes info
 | **Elavulás/eltávolítás oka** | A Microsoft 2020 Internet Explorer . december 11-e óta támogatja minden Dynamics 365 termék és a Dynamics Lifecycle Services (LCS) használatát, Internet Explorer 2021. augusztus óta pedig 11 nem lesz támogatott.<br><br>Ez hatással lesz az ügyfelekre, akik a Dynamics 365 termékeket és az LCS-t Internet Explorer használják, és 11 felületet használnak. 2021 Internet Explorer . augusztus után 11 nem lesz támogatott az ilyen Dynamics 365 termékek és LCS esetében. |
 | **Felváltotta másik szolgáltatás?**   | Azt ajánljuk, hogy a vevők térjenek át a Microsoft Edgere.|
 | **Érintett területek**         | Minden Dynamics 365 termék és LCS |
-| **Telepítési beállítás**              | Összes|
+| **Telepítési beállítás**              | Minden|
 | **Állapot**                         | Elavult: Az Internet Explorer 11 támogatása 2021. augusztusban megszűnik.|
 
 ## <a name="platform-updates-for-version-10015-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.15-ös verziójának platformfrissítései

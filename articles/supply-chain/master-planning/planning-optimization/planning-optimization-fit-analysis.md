@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: dccc955492d33e9e0156f2a5feb6b33387d80af3
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
+ms.openlocfilehash: bf63069c5f18fe67c7d7f538311853d79c0f4fe8
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487642"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649157"
 ---
 # <a name="planning-optimization-fit-analysis"></a>Tervezési optimalizálás igazítási elemzése
 
@@ -57,7 +57,7 @@ A következő táblázat bemutatja, hogy milyen eredmények jelenhetnek meg az i
 
 | Funkció | Felsorolt probléma | Magyarázat | Várható elérhetőség |
 | --- | --- | --- | --- |
-| Műveletek | Lefedettségi csoportok, amelyeknél engedélyezve van a Műveletek kiszámítása: _\#_ | Ez a funkció függőben van. A program jelenleg a tervezés optimalizálása engedélyezése esetén nem hozza létre a műveleteket az Alaptervezés során, a beállítástól függetlenül. A műveletek fő célja a meglévő sorrend változásainak javaslata. Annak megállapítása, hogy a műveletek aktívan alkalmazva vannak-e az üzleti folyamatok részeként, vagy a rendelésekhez kapcsolódó késésleltetési információk elegendőek-e. | április 2022. |
+| Műveletek | Lefedettségi csoportok, amelyeknél engedélyezve van a Műveletek kiszámítása: _\#_ | Ez a funkció függőben van. A program jelenleg a tervezés optimalizálása engedélyezése esetén nem hozza létre a műveleteket az Alaptervezés során, a beállítástól függetlenül. A műveletek fő célja a meglévő sorrend változásainak javaslata. Annak megállapítása, hogy a műveletek aktívan alkalmazva vannak-e az üzleti folyamatok részeként, vagy a rendelésekhez kapcsolódó késésleltetési információk elegendőek-e. | Támogatott |
 | Alapnaptárak | Az alapnaptárat használó naptárak: _\#_ | Ez a funkció már támogatott. | március 2022. | 
 | Kötegrendelkezési kódok | Nem nettósítható kötegelt alapintézkedések: _\#_ | Ez a funkció függőben van. A tervezés optimalizálása során a program figyelmen kívül hagyja a kötegrendelkezési kódokat. | 2022. októberi és újabb |
 | Ígérhető (CTP) | Alapértelmezett rendelési beállítások, amelyeknél a kiszállítási dátum ellenőrzése ígérhető: _\#_ | Ez a funkció függőben van. Jelenleg az ígérhető értéke figyelmen kívül marad, ha a tervezés optimalizálása engedélyezve van a beállítástól függetlenül. | Október 2022. |

@@ -2,7 +2,7 @@
 title: Költségvetés-ellenőrzés áttekintése
 description: Ez a témakör bemutatja a költségvetés-ellenőrzési funkciót, és segítséget nyújt a költségvetés-ellenőrzésnek a szervezet pénzügyi erőforrásainak kezeléséhez való konfigurálásában.
 author: panolte
-ms.date: 11/08/2021
+ms.date: 03/28/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14b852bb4aeca927adeeb2665b9887e467b71158
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
-ms.translationtype: MT
+ms.openlocfilehash: 7019b3546b83047e91fa129d8d92f209f131c993
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986056"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644847"
 ---
 # <a name="budget-control-overview"></a>Költségvetés-ellenőrzés áttekintése
 
@@ -31,7 +31,7 @@ ms.locfileid: "7986056"
 
 Ez a témakör bemutatja a költségvetés-ellenőrzési funkciót, és segítséget nyújt a költségvetés-ellenőrzésnek a szervezet pénzügyi erőforrásainak kezeléséhez való konfigurálásában.
 
-A költségvetés-ellenőrzés funkció támogatja a szervezet pénzügyi forrásainak kezelését a számlatükrökön, munkafolyamaton, felhasználói csoportokon, forrásbizonylatokon, naplókon, konfigurálható források számításán, költségvetési ciklusokon és küszöbértékeken keresztül. Ha a szabályzók a helyén vannak, a szervezet megtervezheti, megmérheti, kezelheti és előre jelezheti a pénzügyi forrásokat a pénzügyi évben. 
+A költségvetés-ellenőrzés támogatja a szervezet pénzügyi erőforrásainak kezelését a számlatükr, a munkafolyamatok, a felhasználócsoportok, a forrásdokumentumok és a naplók, a rendelkezésre álló alapok konfigurálható számítása, a költségvetési ciklusok és a küszöbértékek segítségével. Ha a szabályzók a helyén vannak, a szervezet megtervezheti, megmérheti, kezelheti és előre jelezheti a pénzügyi forrásokat a pénzügyi évben. 
 
 Miután a költségvetéseket jóváhagyták a rendszerben, a költségvetési tervek használatával lehet létrehozni Költségvetési tételjegyzék-bejegyzéseket a szervezetre vonatkozó kiadási költség rögzítéséhez. Másik lehetőségként létrehozhat vagy importálhat a külső programokból költségvetési tételjegyzék-bejegyzéseket a költségvetés-tervezési funkció használata helyett. 
 
@@ -78,9 +78,11 @@ A következő, a **Költségvetés-túllépési engedélyek** lapon megadhatja a
 A következő, az **Rendelkezésre álló költségvetési alapok** lapon meghatározhatja a rendelkezésre álló költségvetési alapok kiszámításához használt képletet. Attól függően, hogy a vállalat mennyire konzervatívan kezeli a pénzügyi forrásokat, vagy a szabályozásoktól vagy az iparági követelményektől függően a számítás vázlatot vagy fel nem adott dokumentumokat tartalmazhat. 
 
 > [!NOTE]
-> Ha egy költségvetési ciklus során módosítják a számítást, a módosítások nem befolyásolják a költségvetés-ellenőrzési ellenőrzést korábban átadott, feladott vagy befejezett dokumentumokat. A Csak a nyomon követések összegei a rendelkezésre álló költségvetési alapok számításában nevű funkcióval módosíthatja, hogy milyen adatok követhetők nyomon a **BudgetSourceTracking** táblákban. Ha ez a funkció be van kapcsolva, a rendszer csak akkor tárolja az összegeket, ha ki van választva a rendelkezésre álló költségvetési alapok számításához. A további tudnivalókat lásd a rendelkezésre [álló költségvetési alapoknál](budget-funds-available.md).
+> Ha egy költségvetési ciklus során módosítják a számítást, a módosítások nem befolyásolják a költségvetés-ellenőrzési ellenőrzést korábban átadott, feladott vagy befejezett dokumentumokat. A Csak a **nyomon követések összegei** a rendelkezésre álló költségvetési alapok számításában nevű funkcióval módosíthatja, hogy milyen adatok követhetők nyomon a BudgetSourceTracking táblákban. Ha ez a funkció be van kapcsolva, a rendszer csak akkor tárolja az összegeket, ha ki van választva a rendelkezésre álló költségvetési alapok számításához. A további tudnivalókat lásd a rendelkezésre álló [költségvetési alapoknál](budget-funds-available.md).
 
-Következő, a **Dokumentumok és naplók** lapon kiválaszthatja, hogy mely forrásbizonylat és napló legyen a tárgya a költségvetés-ellenőrzés csekkekre vonatkozóan, és hogy a csekkek sorbejegyzés szintjén vagy az egész dokumentumnál jelenjen-e meg. 
+### <a name="documents-and-journals"></a>Dokumentumok és naplók
+
+**A Dokumentumok és** naplók lapon kiválaszthatja, hogy mely forrásdokumentumokat és naplókat kell a költségvetés-ellenőrzési ellenőrzésnek kitéve, és hogy a csekkek a sorbejegyzés vagy a teljes dokumentum szintjén lesznek-e. Továbbá **az** Microsoft Dynamics új költségvetés-ellenőrzési dokumentumszűrés-növelő funkció, amely a 10.0.27-es verzió 365-ös verziójában érhető el, lekérdezés alapú szűrőt biztosít minden egyes, a költségvetés-ellenőrzésben szereplő dokumentumhoz. Ebből következően megadhatja, hogy mely költségvetés-ellenőrzési dokumentumokat ellenőrzi a rendszer. Ily módon a funkció csak a dokumentumtípusnak csak egy készletét teszi lehetővé költségvetés-ellenőrzésre. Például csak olyan beszerzési rendeléseket **lehet** **ellenőrizni, amelyeknél a Készlet mező 01-re van állítva.** A Dokumentumok és naplók **laphoz** hozzáadott új oszlop jelzi, hogy meg van-e adva lekérdezés a kiválasztott dokumentumtípushoz. Ezen kívül a dokumentumrács fölötti eszköztárhoz hozzáadott két új gomb használatával lehet szűrést hozzáadni, szerkeszteni vagy törölni. 
 
 Egyeztesse a kiválasztott forrásbizonylatokat az elérhető költségvetési alapok számításaiban szereplő egyenlegek jelölőnégyzeteivel. Például, ha a **Költségvetési zárolások a kötelezettségvállalásokhoz** lehetőséget választotta, akkor válassza a **Beszerzési rendelés** lehetőséget. Amikor a program költségvetés-ellenőrzést végez egy beszerzési sorban szereplő összegekre és számlákra vonatkozóan, a költségvetés-ellenőrzési kategóriát rendeli a **Kötelezettségvállaláshoz**. Amikor a program költségvetés-ellenőrzést végez egy beszerzési igénylésben szereplő összegekre és számlákra vonatkozóan, a költségvetés-ellenőrzési kategóriát rendel az **Előzetes kötelezettségvállalás** lehetőséghez. 
 

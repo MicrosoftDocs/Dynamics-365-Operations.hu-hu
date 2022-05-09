@@ -2,19 +2,19 @@
 title: Kimutatásfeladás funkcionalitás továbbfejlesztései
 description: Ez a témakör leírja a kimutatásfeladási funkción végrehajtott javításokat.
 author: analpert
-ms.date: 01/31/2022
+ms.date: 04/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: d7c7c330695cbcd18a44db5b3f4e28411d8de4f3
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: be9aa68aec1fd7deff315234a6dbf41edc3d6819
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462550"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649019"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Kimutatásfeladás funkcionalitás továbbfejlesztései
 
@@ -52,26 +52,7 @@ A kimutatásfeladási funkció javításának részeként három új paramétert
 > [!NOTE]
 > A Commerce rendszer 10.0.14-es **verziójának kiadásakor, ha engedélyezve van a Retail statements - Kötegelt** beadagolás funkció, **a** Készlet feladása kötegelt feladat már nem alkalmazható, ezért nem futtatható.
 
-Ezenkívül a következő paraméterek kerültek be a **Kötegelt feldolgozás** gyorslapra a **Feladás lapra** a **Commerce paraméterek** oldalon: 
-
-- **Párhuzamos kimutatásfeladások maximális száma** – Ez a mező a kötegelt feladatok számát határozza meg, amelyek több nyilatkozat feladása esetén használatosak. 
-- **Szálak maximális száma a rendelésfeladáshoz kimutatásonként** – Ez a mező a kimutatás feladására szolgáló kötegelt feladat által az egyes kimutatások értékesítési rendeléseinek létrehozásához és számlázásához használt szálak maximális számát jelzi. A kimutatásfeladási folyamat által használt szálak teljes számát a program úgy számítja ki, hogy ezen paraméter értékét megszorozza a **Párhuzamos kivonatfeladások maximális száma** értékével. A paraméter értékének beállítása túl magasra negatív hatással lehet a kimutatásfeladási folyamatának teljesítményére.
-- **Összesítésben szereplő maximális tranzakciós sorok** – Ez a mező azt határozza meg, hogy hány tranzakciós sor fog szerepelni egy összesített tranzakcióban, mielőtt újat hoz létre. Az összesített tranzakciók a különböző összesítési feltételek, például a vevő, az üzleti dátum vagy a pénzügyi dimenziók alapján jönnek létre. Fontos megjegyezni, hogy az egyetlen tranzakció sorait a rendszer nem osztja szét különböző összesített tranzakciók között. Ez azt jelenti, hogy az összesített tranzakció sorai egy kissé magasabbak vagy alacsonyabbak is lehet az olyan tényezők alapján, mint az egyedi termékek száma.
-- **Üzleti tranzakciók ellenőrzéséhez szükséges szálak maximális száma** – A szálak maximális száma, amelyek a tranzakció ellenőrzéséhez fel lesznek használva. A tranzakciók érvényesítése olyan szükséges lépés, amelyet el kell végezni azelőtt, hogy a tranzakciókat be lehessen húzni a kimutatásba. Emellett szükség van egy **Ajándékutalvány-termék** meghatározására az **Ajándékutalvány** gyorslapján a **Feladás** lapnak a **Kereskedelmi paraméterek** lapon. Ezt definiálni kell akkor is, ha a szervezet nem használ ajándékutalványokat.
-
-Az alábbi táblázat felsorolja az előző paraméterek javasolt értékeit. Ezeket az értékeket a telepítés konfigurációja és a rendelkezésre álló infrastruktúra alapján kell tesztelni és testreszedni. A javasolt értékek bármely növekedése kedvezőtlenül érintheti a többi kötegelt feldolgozást, ezért ellenőrizni kell.
-
-| Paraméter | Ajánlott érték | Részletek |
-|-----------|-------------------|---------|
-| Párhuzamos kivonatfeladások maximális száma | <p>Állítsa be ezt a paramétert **a kimutatási feladatot futtató kötegcsoport számára elérhető kötegelt feladatok számára elérhető kötegelt feladatok számára**.</p><p>**Általános szabály:** Az Application Object Server (AOS) virtuális kiszolgálók számának megszorzása az AOS virtuális kiszolgálónként elérhető kötegelt feladatok számával.</p> | Ez a paraméter nem alkalmazható, ha **engedélyezve van a Retail utasítások – Nagykereskedelem beadagolási** funkció. |
-| Rendelés feldolgozásához használt szálak maximális száma kimutatásonként | 4-es tesztértékek **kezdete**. Az érték általában nem haladhatja meg a **8-at**. | Ez a paraméter megadja az értékesítési rendelések létrehozásához és feladási szálaihoz használt szálak számát. Azt jelzi, hogy hány szál érhető el kimutatásonkénti feladásra. |
-| Egy aggregációban szereplő tranzakciós sorok maximális száma | Az értékek tesztelésének kezdete **1000-től**. A központ konfigurációjától függően a kisebb rendelések jobban megfelelőek lehetnek a teljesítmény szempontjából. | Ez a paraméter azt határozza meg, hogy a kimutatások feladása során hány sor fog szerepelni az egyes értékesítési rendelésekben. A szám elérése után a sorok egy új rendelésre lesznek felosztva. Bár az értékesítési sorok száma nem lesz pontos, mivel a felosztás az értékesítési rendelés szintjén történik, közel lesz a beállított számhoz. Ezzel a paraméterrel értékesítési rendeléseket lehet létrehozni olyan kiskereskedelmi tranzakciókhoz, amelyekhez nincs elnevezett vevő. |
-| Üzleti tranzakciók ellenőrzéséhez szükséges szálak maximális száma | Javasoljuk, hogy **ezt a paramétert 4-re** állítsa, és csak akkor növelje, ha nem elfogadható a teljesítmény. A folyamat által használt szálak száma nem haladhatja meg a kötegkiszolgáló számára elérhető processzorok számát. Ha túl sok szálat társít itt, előfordulhat, hogy más kötegfeldolgozásokat is befolyásol. | Ez a paraméter szabályozza az egy adott üzlet egyidejűleg érvényesíthető tranzakcióinak számát. |
-
-> [!NOTE]
-> Minden beállítás és paraméter, amely kapcsolódik a kimutatásfeladásokhoz, és meg van határozva a kiskereskedelmi áruházak és a **Kereskedelmi paraméterek** oldalon, alkalmazható a továbbfejlesztett kimutatásfeladási funkcióra.
-
-## <a name="processing"></a>Feldolgozás
+## <a name="processing"></a>Feldolgozás alatt
 
 A kimutatások kiszámíthatók és feladhatók kötegelve a **Kimutatások kötegelt kiszámítása** és a **Kimutatások feladása kötegben** menüpontban. Másik lehetőségként a kimutatások manuálisan kiszámíthatók és feladhatók a **Kimutatások** menüelemmel, amelyet a továbbfejlesztett kimutatásfeladási funkció lehetővé tesz.
 

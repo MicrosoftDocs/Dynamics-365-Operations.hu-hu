@@ -2,7 +2,7 @@
 title: Az ER-formátum paramétereinek beállítása jogi személyenként
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani egy Elektronikus jelentéskészítési (ER) formátum paramétereit jogi személyenként.
 author: NickSelin
-ms.date: 10/22/2021
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: Release 8.1.3
-ms.openlocfilehash: cb600c55cb2d40129d1b29ab989bc8f7cf3f4686
-ms.sourcegitcommit: a5861c2fef4071e130208ad20e26cb3a42a45cf1
+ms.openlocfilehash: f72ce72e9cbd268efc6ab09dbec7009794d69613
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/17/2021
-ms.locfileid: "7927454"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644499"
 ---
 # <a name="set-up-the-parameters-of-an-er-format-per-legal-entity"></a>Az ER-formátum paramétereinek beállítása jogi személyenként
 
@@ -30,7 +30,7 @@ ms.locfileid: "7927454"
 
 Ezeknek a lépéseknek a végrehajtásához először végre kell hajtania az [ER formátumok konfigurálása a jogi személyenként meghatározott paraméterek használatára](er-app-specific-parameters-configure-format.md) szakaszban megadott lépéseket.
 
-A jelen témakörben szereplő példák végrehajtásához hozzáféréssel kell rendelkeznie a Microsoft Dynamics 365 Finance modulnál a következő szerepkörök egyikéhez:
+Az ebben a témakörben található példák befejezéséhez Microsoft Dynamics a következő szerepkörök valamelyikével hozzá kell férnie a 365 Pénzügy hez:
 
 - Elektronikus jelentések fejlesztője
 - Elektronikus jelentések funkcióival foglalkozó konzulens
@@ -226,7 +226,7 @@ Ha egy ER-formátum alkalmazásspecifikus paramétereit konfigurálja, majd egy 
 Amikor importálásra kiválaszt egy fájlt, akkor az adott fájl alkalmazásspecifikus paramétereinek szerkezetét összeveti az importálásra kijelölt ER formátum kapcsolódó, **Keresés** típusú adatforrásainak szerkezetével. Az importálás alapértelmezetten csak akkor történik meg, amikor az alkalmazásspecifikus paraméterek szerkezete megfelel a kapcsolódó adatforrás struktúrájának az importáláshoz kiválasztott ER-formátumban. Ha a szerkezetek nem egyeznek, akkor egy figyelmeztető üzenet tájékoztatja, hogy az importálás nem hajtható végre. Ha kényszeríti az importálást, akkor a program a kijelölt ER formátumra vonatkozó meglévő alkalmazásfüggő paramétereket kitörli, és a kezdetektől fogva újra be kell állítani őket.
 
 
-A Dynamics 365 Finance 10.0.24-as verziójától kezdve módosítani lehet az alapértelmezett viselkedést, és így el lehet kerülni a figyelmeztető üzenetet az **ER-alkalmazásspecifikus paraméterek összehangolása az importálás során** funkció engedélyezésével a **Funkciókezelés** munkaterületen. Ha ez a funkció engedélyezve van, amikor az adott fájl alkalmazásspecifikus paramétereinek szerkezete eltér a cél ER-formátum kapcsolódó adatforrásainak struktúrájától, amely ki van választva importálásra, az importálás a következő esetekben lesz sikeres:
+A Pénzügy szolgáltatás 10.0.24-es verziójának megfelelően módosíthatja az alapértelmezett viselkedést, és így nem kap figyelmeztető üzenetet: **engedélyezi az ER-alkalmazásspecifikus** **paraméterek** beállítását a Szolgáltatáskezelési munkaterületen történő importálás közben. Ha ez a funkció engedélyezve van, amikor az adott fájl alkalmazásspecifikus paramétereinek szerkezete eltér a cél ER-formátum kapcsolódó adatforrásainak struktúrájától, amely ki van választva importálásra, az importálás a következő esetekben lesz sikeres:
 
 - A cél ER-formátum szerkezete úgy módosult, hogy új feltételoszlopokat adott hozzá a meglévő **Keresés** típusú adatforrásokhoz. Az importálás befejeztével frissülnek az alkalmazásspecifikus paraméterek. Az alkalmazásspecifikus paraméterek minden importált rekordjánál az értékek minden hozzáadott feltételoszlopban inicializálva lesznek az adott oszlop [adattípusának](er-formula-supported-data-types-primitive.md) alapértelmezett értékével.
 - A cél ER-formátum szerkezete úgy módosult, hogy új feltételoszlopokat távolított el a meglévő **Keresés** típusú adatforrásokból. Az importálás befejeztével frissülnek az alkalmazásspecifikus paraméterek. Az alkalmazásspecifikus paraméterek minden importált rekordjában az összes eltávolított feltételoszlop értékei törölve lesznek.
@@ -235,9 +235,33 @@ A Dynamics 365 Finance 10.0.24-as verziójától kezdve módosítani lehet az al
 
 Amikor az importálás befejeződik, az előbb leírt módosításokon túl az importált alkalmazásspecifikus paraméterek állapota **Folyamatban** értékre lesz módosítva. Figyelmeztető üzenet tájékoztatja, hogy az automatikusan módosított alkalmazásspecifikus paramétereket manuálisan kell szerkeszteni.
 
+#### <a name="replicate-parameters"></a>Paraméterek replikálása
+
+A Pénzügy 10.0.27-es verziója szerint az egyik vállalatban beállított paramétereket egyszerre más vállalatokba másolhatja.
+
+A paraméterek másolása a következő lépésekkel adatokat tartalmazza.
+
+1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
+2. Válassza a **Jelentéskészítési konfigurációk** elemet.
+3. A konfigurációs fában válassza ki a **LE adatok keresésének tanulási formátuma** formátumot.
+4. A Műveleti ablaktáblán a **Konfigurációk** lapon a **Alkalmazásspecifikus paraméterek** csoportban válassza a **Beállítás** lehetőséget.
+5. Válassza az ER formátum **1.1.1** verzióját.
+6. A műveletpanelen válassza a Replikáció **lehetőséget**.
+7. A Vállalatok **lap** Replikáció párbeszédpanelén **válassza** ki azokat a vállalatokat, amelyekbe paramétereket szeretne másolni.
+
+    > [!NOTE]
+    > A célvállalatok listáját csak azok a [felhasználók](../sysadmin/role-based-security.md#security-roles) kapják meg, akikhez olyan biztonsági szerepkör van hozzárendelve, amely az összes szervezethez való hozzáférés megadására van konfigurálva.
+
+8. Válassza ki az **OK** lehetőséget.
+
+    > [!NOTE]
+    > A megerősítő párbeszédpanel arról tájékoztat, hogy egyes célvállalatok korábban konfigurált paramétereket tartalmaznak az ER-formátum kiválasztott verziójához. Válassza az **Igen** lehetőséget, ha felül szeretné bírálni a paramétereket az aktuális vállalatból való másolással.
+
+    A konfigurált alkalmazásspecifikus paramétereket a program átmásolja a kiválasztott vállalatokba.
+
 ### <a name="reuse-existing-parameters"></a>Meglévő paraméterek újrafelhasználása
 
-A Dynamics 365 Finance 10.0.23-as verziótól kezdve újra fel lehet használni az alkalmazásspecifikus paramétereket, amelyek az ER-formátum egy verziójához vannak konfigurálva, amikor ugyanannak a formátumnak a magasabb verzióját futtatja. Ehhez engedélyezze az **Alkalmazásspecifikus paraméterek használata az elektronikus jelentéskészítési formátumok előző verzióiból** funkciót a **Szolgáltatáskezelés** munkaterületen. Ha ez a funkció engedélyezve van, és egy ER formátum egy verzióját futtatja, amely alkalmazásspecifikus paramétereket próbál beolvasni, az ER megpróbálja megtalálni a formátum futó verziójához konfigurált alkalmazásspecifikus paramétereket. Vagy ha nem állnak rendelkezésre, akkor ennek a formátumnak a legközelebbi alacsonyabb verzióját.
+A Pénzügy 10.0.23-as verziója szerint újra fel lehet használni az alkalmazásspecifikus paramétereket, amelyek az ER-formátum egy verziójához vannak konfigurálva, amikor ugyanannak a formátumnak a magasabb verzióját futtatja. A meglévő paraméterek újbóli használatához engedélyezni **kell az ER-formátumok** **korábbi verziói alkalmazásspecifikus paramétereinek használatát a Funkciókezelés munkaterületen**. Ha ez a funkció engedélyezve van, és egy OLYAN ER-formátumot futtat, amely alkalmazásspecifikus paramétereket próbál olvasni, az ER megpróbálja megtalálni a formátum futó verziójához beállított alkalmazásspecifikus paramétereket. Ha nem érhetők el, az erszes megpróbálja megtalálni őket a formátum legközelebbi alacsonyabb verziójához.
 
 > [!NOTE]
 > Az alkalmazásspecifikus paraméterek csak az aktuális jogi személy hatókörében használhatók újra.

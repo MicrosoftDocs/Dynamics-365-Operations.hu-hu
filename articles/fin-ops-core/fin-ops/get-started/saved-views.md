@@ -2,7 +2,7 @@
 title: Mentett nézetek
 description: Ez a témakör azt mutatja be, hogyan lehet használni a mentett nézetek funkcióit.
 author: jasongre
-ms.date: 09/13/2021
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2019-07-31
 ms.dyn365.ops.version: Platform update 28
-ms.openlocfilehash: bd1b034ebb66b996e20173c2ad4f958e643f9c2e
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e10137ff5d11ed06c32613e601e2fa7423e270ac
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065706"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644787"
 ---
 # <a name="saved-views"></a>Mentett nézetek
 
@@ -45,7 +45,7 @@ Miután a nézeteket elérhetővé tették egy környezethez, a nézeteket támo
 
 A nézetválasztó két méretben elérhető: 
 
-- **Nagyméretű nézetválasztók** – Az oldalakon, amelyeken jól láthatóan szerepel egy lista, nagyobb nézetválasztó szerepel több okból is. A legfontosabb, hogy a nagyobb nézetválasztó jelzi azokat a lapokat, amelyekben a nézet a felhasználó által definiált szűrőket tartalmazhat. Mivel a nézetek tartalmazzák a szűrőket, a nagyobb méretű választó azért is garantált, mivel a nézetek nevei gyakran a legjobb leírást nyújtják a képernyőn látható adatokról, és arra számítunk, hogy a felhasználók ezeken az oldaltípusokon gyakrabban váltanak nézeteket.
+- **Nagyméretű nézetválasztók** – Az oldalakon, amelyeken jól láthatóan szerepel egy lista, nagyobb nézetválasztó szerepel több okból is. A legfontosabb, hogy a nagyobb nézetválasztó jelzi azokat a lapokat, amelyekben a felhasználó által definiált szűrők és rendezések használhatók. Mivel a nézetek szűrőket és rendezéseket tartalmaznak, ezért a nagyobb választó méretét is garantálja a rendszer, mivel a nézetnevek gyakran a képernyőn látható adatok legjobb leírásai lesznek, és az elvárás az, hogy a felhasználók leggyakrabban váltsak a nézetek között az ilyen laptípusokon. A rácson való csoportosítást nagy nézetválasztókkal is el lehet menteni nézetként. 
 - **Kisméretű nézetválasztók** – Az összes többi teljes képernyős oldalon (a munkaterületek és az irányítópult kivételével) az a kisméretű nézetválasztó szerepel, amelyik az oldalfelirat mellett jelenik meg. Ezeken az oldalakon a nézetek csak testreszabásokat tartalmaznak, nem pedig felhasználó által megadott szűrőket. Ezeken a lapokon gyakran a felirat vagy rekordcím a legfontosabb információ az oldal felső részén. A nézetválasztó kisebb mérete azt is tükrözi, hogy ezeken az oldalakon kisebb gyakorisággal lehet a nézetek váltására számítani. 
  
 Ha kiválasztja a nézet nevét, megnyílik a nézetválasztó, és megjelenik a laphoz elérhető nézetek listája.
@@ -215,7 +215,7 @@ A mentett nézetekkel kapcsolatos ismert problémák listája a [Mentett nézete
 ### <a name="how-do-i-enable-saved-views-in-my-environment"></a>Hogyan lehet engedélyezni a mentett nézeteket a saját környezetemben?
 
 > [!NOTE]
-> A **Mentett nézetek** funkció megköveteli, hogy a Finance and Operations személyre szabott rendszere engedélyezve legyen. Ha a teljes környezetnél ki van kapcsolva a testreszabás, a nézeteket a rendszer akkor is letiltja, ha a lenti lépéseket elvégzi. 
+> A **Mentett nézetek** funkcióhoz engedélyezni kell a Pénzügy és műveletek személyre szabási rendszerét. Ha a teljes környezetnél ki van kapcsolva a testreszabás, a nézeteket a rendszer akkor is letiltja, ha a lenti lépéseket elvégzi. 
 
 A **Mentett nézetek** funkciót bármely környezetben be- és kikapcsolhatja a Funkciókezelés segítségével. Ha be van kapcsolva, a mentett nézetek minden későbbi felhasználói munkamenetben engedélyezve lesznek.
 

@@ -15,17 +15,16 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b9d8136ae4f960a586b9526751fc8bf6e7675c8d
-ms.sourcegitcommit: c85eac17fbfbd311288b50664f9e2bae101c1fe6
-ms.translationtype: MT
+ms.openlocfilehash: a92461e742f1675e4cfda89e6c80c5b087ff5bfb
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7890750"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644897"
 ---
 # <a name="set-up-lease-journal-names"></a>Lízingnaplónevek beállítása
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
 
 A lízingnapló nevei határozzák meg azokat a naplókat, amelyekre az Eszközlízing-tranzakciókból származó tételeket könyveli. Csak az **Eszközlízing** naplótípushoz rendelt naplónevek jelennek meg az **Eszközlízing-paraméterek** lap **Kezdeti elszámolás** és **Havi naplónév** mezőiben. A **Számlanapló neve** mezőhöz csak a **szállítói számla rögzítése** naplótípus rendelhető hozzá.
@@ -39,7 +38,7 @@ A bérletnaplók nevének beállítását a következő lépések szerint kell v
 2. Az **Általános** fül **Kezdeti elszámolás naplónév** mezőjében válasszon ki egy naplót. A program minden kezdeti elszámolási naplótételt erre a naplónévre ad fel.
 3. A **Számlanapló neve** mezőben válassza ki a napló nevét. Ha a **Szállítónak fizetés** lehetőség beállítás **Igen** értékre van állítva a lízingkönyvhöz, akkor a lízing- és költségfizetési számlákat a rendszer erre a naplónévre adja fel.
 4. A **Lízingnapló neve** mezőben válassza ki a napló nevét. Minden értékcsökkenési, kamat- és rövid távú átsorolási tétel erre a naplónévre lesz feladva. Ha a **Szállítónak fizetés** lehetőség beállítás **Nem** értékre van állítva a lízingkönyvhöz, akkor a lízingfizetések és költségfizetési bejegyzéseket a rendszer erre a naplónévre adja fel.
-5. Válasszon ki **egy naplót a Bérlése módosítási** napló neve mezőben. Ebbe a naplónévbe bérlet-helyesbítési, felmondási és értékvesztési tranzakciókat ad fel a program. A kiválasztott naplónévhez nem lehet munkafolyamat vagy jóváhagyás hozzárendelve. Ha nincs meghatározva a bérleti módosítási napló neve, akkor a bérleti díj módosítása, a felmondási és értékvesztési tranzakciók a Bérleti napló neve mezőben kiválasztott naplónévre lesznek **feladva**. 
+5. Válasszon ki egy **naplót a Bérlése módosítási** napló neve mezőben. Ebbe a naplónévbe bérlet-helyesbítési, felmondási és értékvesztési tranzakciókat ad fel a program. A kiválasztott naplónévhez nem lehet munkafolyamat vagy jóváhagyás hozzárendelve. Ha nincs meghatározva a bérleti módosítási napló neve, akkor a bérleti díj módosítása, **a felmondási és értékvesztési tranzakciók a Bérleti napló neve mezőben kiválasztott naplónévre lesznek feladva**. 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

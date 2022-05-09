@@ -2,7 +2,7 @@
 title: Üzleti partner típusú felhasználók kezelése a B2B e-kereskedelmi webhelyeken
 description: Ez a témakör azt ismerteti, hogyan adhat hozzá, Microsoft Dynamics 365 Commerce törölhet és szerkeszthet üzleti partnereket az üzleti partner felhasználóihoz a vállalattól vállalat számára szóló e-commerce webhelyeken és a Commerce Headquarters alkalmazáson keresztül.
 author: josaw1
-ms.date: 02/17/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: def8d4de082ceb4be77ed7e8898cbef82d52b749
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
-ms.translationtype: MT
+ms.openlocfilehash: c2fb4846a8457296a2ce758198ade5f4b0df8124
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323455"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616857"
 ---
 # <a name="manage-business-partner-users-on-b2b-e-commerce-websites"></a>Üzleti partner típusú felhasználók kezelése a B2B e-kereskedelmi webhelyeken
 
@@ -28,7 +28,8 @@ ms.locfileid: "8323455"
 Ez a témakör azt ismerteti, hogyan adhat hozzá, Microsoft Dynamics 365 Commerce törölhet és szerkeszthet üzleti partnereket az üzleti partner felhasználóihoz a vállalattól vállalat számára szóló e-commerce webhelyeken és a Commerce Headquarters alkalmazáson keresztül.
 
 > [!NOTE]
-> A [dokumentum előfeltétele a B2B üzleti partnerek kezelése a vevőhierarchiákat](partners-customer-hierarchies.md) használó témakörökben. 
+> - A [dokumentum előfeltétele a B2B üzleti partnerek kezelése a vevőhierarchiákat](partners-customer-hierarchies.md) használó témakörökben.
+> - A Dokumentumtípusok képernyő megnyitásával inicializálja a dokumentumtípus-entitásokat a Commerce **Headquarters** **\>\> alkalmazásból, hogy megnyitja a Szervezet felügyelete dokumentumkezelési dokumentumtípusok képernyőt**.
 
 A B2B e-kereskedelmi webhelyek esetén a szervezeteknek regisztrálniuk kell, hogy üzleti partnerekké váljanak. Miután egy szervezet elküldi a regisztrációs adatokat a B2B e-commerce webhelynek, a regisztrációra vonatkozó kérelem egy képesítési folyamaton megy keresztül. Ha a szervezet minősítése sikeres, üzleti partnerként léptetik be.
 
@@ -93,7 +94,7 @@ Az üzleti partner felhasználóinak szerkesztéséhez kövesse az alábbi lép�
 A rendszergazda szükség esetén eltávolíthatja egy üzleti partner szervezetének meglévő felhasználóit azon felhasználók listájáról, akik hozzáférhetnek a B2B e-kereskedelmi webhelyhez.
 Az üzleti partner felhasználójának eltávolításához kövesse az alábbi lépéseket.
 - Jelentkezzen be rendszergazdaként a B2B e-kereskedelmi webhelyre.
-- Váltson a Saját **fiók > A szervezet \> felhasználóinak** részletes adatait, **és válassza az Eltávolítás** gombot ("X" szimbólum). Amikor megjelenik egy megerősítő üzenet, erősítse meg, hogy el szeretné távolítani a felhasználót. A módosítás csak a **P-0001**, **a** Vevők és csatornakérések szinkronizálása, **valamint a 1010 -es (vevők)** feladat futtatása után lép érvénybe.
+- Menjen a Saját fiók **> Tekintse \>** meg a részletes adatokat, **és válassza az Eltávolítás** gombot ("X" szimbólum). Amikor megjelenik egy megerősítő üzenet, erősítse meg, hogy el szeretné távolítani a felhasználót. A módosítás csak a **P-0001**, **a** Vevők és csatornakérések szinkronizálása, **valamint a 1010 -es (vevők)** feladat futtatása után lép érvénybe.
 
 > [!NOTE]
 > Amikor eltávolít egy felhasználót azon felhasználók listájáról, akik hozzáférhetnek a B2B e-kereskedelmi webhelyhez, a megfelelő vevőrekord törlődik az üzleti partner vevői hierarchiarekordjáról. Ugyanakkor magát a vevőrekordot a rendszer nem törli a Commerce központi felületéről.

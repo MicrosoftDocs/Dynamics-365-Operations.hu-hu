@@ -2,7 +2,7 @@
 title: Pénzügyi dimenziók
 description: Ez a témakör leírja a pénzügyi dimenziók különféle típusait és azok beállításának módját.
 author: aprilolson
-ms.date: 01/03/2019
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 9d5de5b58f0d498c4766659671d43fdb216cd6a870345509505b5a6bc19bdd4a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 36e667e8dd1282e788eb40cd392baa9db824cec2
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6754194"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644359"
 ---
 # <a name="financial-dimensions"></a>Pénzügyi dimenziók
 
@@ -31,7 +31,7 @@ Használja a **Pénzügyi dimenziók** oldalt pénzügyi dimenziók létrehozás
 
 A pénzügyi dimenziók létrehozása után használja a **Pénzügyi dimenzióértékek** oldalt, és rendeljen hozzá további tulajdonságokat az egyes pénzügyi dimenziókhoz.
 
-A pénzügyi dimenziók segítségével jogi személyek képezhetők le. Nem kell jogi személyeket létrehozni a Dynamics 365 Finance rendszerben. Ugyanakkor a pénzügyi dimenziókat nem a jogi személyek üzemi vagy üzleti követelményeinek teljesítésére tervezték. Az egységközi könyvelési funkció a Finance programban csak az egyes tranzakciók által létrehozott könyvelési tételek megoldását szolgálja.
+A pénzügyi dimenziók segítségével jogi személyek képezhetők le. Nem kell létrehoznia a jogi személyeket a Dynamics 365 Pénzügyben. Ugyanakkor a pénzügyi dimenziókat nem a jogi személyek üzemi vagy üzleti követelményeinek teljesítésére tervezték. Az egységközi könyvelési funkció a Finance programban csak az egyes tranzakciók által létrehozott könyvelési tételek megoldását szolgálja.
 
 Jogi személyiséggel rendelkező pénzügyi dimenziók beállítása előtt a következő területeken értékelje ki az üzleti folyamatait annak meghatározására, hogy ez a beállítás működik-e a szervezete esetében:
 
@@ -79,8 +79,12 @@ Az adatok hivatkozási integritásának fenntartása érdekében a pénzügyi di
 - Használták a pénzügyi dimenziót bármilyen aktív számlastruktúrában, speciális szabálystruktúrában vagy pénzügyidimenzió-készletben?
 - Része a pénzügyi dimenzió az alapértelmezett pénzügyidimenzió-integrációs formátumnak?
 - A pénzügyi dimenzió be van állítva alapértelmezés szerinti dimenzióként?
+- Ki lett választva a pénzügyi dimenzió a Pénzügyi jelentés beállítása beállításból? 
 
 Ha a feltételek bármelyike teljesül, a pénzügyi dimenzió nem törölhető.
+
+> [!NOTE]
+> A Pénzügyi jelentés 10.0.27-es verziójától kezdődően a pénzügyi dimenziók a létrehozás során nem lesznek automatikusan kiválasztva a pénzügyi jelentések beállításaihoz. 
 
 ## <a name="default-dimension-values"></a>Alapértelmezett dimenzióértékek
 

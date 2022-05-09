@@ -16,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 7f765e7cfd97170bd144dfff12c18ced96e3332a
-ms.sourcegitcommit: d67f7edaf1a50077c2a7dd105e774f86fc586495
-ms.translationtype: MT
+ms.openlocfilehash: 3c9b9602e5c219be5756f5987b0497f2ce5c269d
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/02/2022
-ms.locfileid: "8533712"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644302"
 ---
 # <a name="accrue-leave-and-absence-plans"></a>Szabadság- és távolléti tervek halmozódása
 
@@ -105,8 +105,10 @@ Törli az adott tervhez és dátumtartományhoz tartozó elhatárolási rekordok
 **Szabadságelhatárolás auditálása** megjelenít minden egyes alkalmat, amikor elhatárolást futtatott vagy törölt egy vagy az összes munkavállalóhoz. Az dátum és a műveletet végrehajtó személy is meg lesz jelenítve.
 
 1. A **Szabadság és távollét** oldalon válassza a **Hivatkozások** lapot.
-
 2. A **Szabadság kezelése** alatt válassza a **Szabadságelhatárolás auditálásának törlése** lehetőséget.
+
+## <a name="leave-accrual-rounding"></a>Szabadságelhatárolás kerekítése
+Ha egy alkalmazott vagy belépt, vagy nincs regisztrálva, akkor a szabadság könyvelési kerekítését a program újrakorrektálja. Korábban a kerekítés csak akkor engedélyezett, ha a távolléti terv időkorrektáltként volt beállítva, és egy alkalmazottat az időszak közepe alatt regisztráltak/nem regisztráltak. A szabadság könyvelése ettől függetlenül kerekít, függetlenül attól, hogy az időszakon belül vagy az időszak elején beléptek-e vagy sem.
 
 ## <a name="leave-accrual-transaction-auditing"></a>Szabadságelhatárolási tranzakció auditálása
 

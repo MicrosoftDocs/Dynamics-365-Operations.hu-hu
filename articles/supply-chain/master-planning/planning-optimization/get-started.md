@@ -16,12 +16,12 @@ ms.search.industry: Manufacturing
 ms.author: benebotg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
-ms.openlocfilehash: faaa2aa921457a3d26c2a921a856a61296192a04
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: a08128f9529e576294181bd70134b02caae54b90
+ms.sourcegitcommit: 5130446fd5327595b2d67e67cbd1b5661bb2983c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469813"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8648709"
 ---
 # <a name="get-started-with-planning-optimization"></a>Tervezési optimalizálás kezdő lépései
 
@@ -40,7 +40,7 @@ A tervezés optimalizálása előtt kifejezetten ajánljuk, hogy értékelje a t
 
 ## <a name="availability"></a>Elérhetőség
 
-A tervezési optimalizálás jelenleg a következő Azure földrajzi elhelyezkedésben érhető el: Egyesült Államok, Kanada, Európa, Egyesült Királyság, Ausztrália, Ázsia csendes-óceáni, Japán és India. Ha egy másik földrajzi régióból kísérli meg telepíteni a bővítményt, akkor az LCS egy üzenetet jelenít meg, hogy ez a földrajzi hely nem támogatott. Az Azure földrajzi régiókkal és a kapcsolódó régiókkal kapcsolatos további tudnivalókat lásd: [Azure-földrajzi régiók](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
+A tervezési optimalizálás jelenleg a következő Azure földrajzi elhelyezkedésben érhető el: Egyesült Államok, Kanada, Brazília, Európa, Egyesült Királyság, Ausztrália, Ázsia csendes-óceáni, Japán és India. Ha egy másik földrajzi régióból kísérli meg telepíteni a bővítményt, akkor az LCS egy üzenetet jelenít meg, hogy ez a földrajzi hely nem támogatott. Az Azure földrajzi régiókkal és a kapcsolódó régiókkal kapcsolatos további tudnivalókat lásd: [Azure-földrajzi régiók](https://azure.microsoft.com/global-infrastructure/geographies/#geographies).
 
 Ne feledje, hogy a Tervezés optimalizálása nem támogatott a Dynamics 365 Supply Chain Management helyszíni telepítései esetében.
 

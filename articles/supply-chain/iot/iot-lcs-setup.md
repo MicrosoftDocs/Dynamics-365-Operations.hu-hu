@@ -14,18 +14,27 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: ebf11b55f1034b9a84dda9ada77c2f1b7f587a58
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
-ms.translationtype: MT
+ms.openlocfilehash: 89d2f53a761085949885c987d664654c3423524b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7781589"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645077"
 ---
 # <a name="install-the-iot-intelligence-add-in-in-lcs"></a>A IoT Intelligencia beépülő modul telepítése az LCS-ben
 
 [!include [banner](../../includes/banner.md)]
 
 Ez a témakör bemutatja, hogyan telepítheti az IoT Intelligencia beépülő modult a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban. Ne felejtse el, hogy a bővítmények nem telepíthetők bemutató/próbaverziós környezetbe. A bővítmény telepítése előtt [létre kell hoznia az Azure-erőforrásokat](iot-azure-setup.md).
+
+Az IoT-intelligenciát kód írása nélkül is be lehet állítani és lehet konfigurálni. Az alapvető lépések a következők.
+
+1. [Azure-erőforrások beállítása](iot-azure-setup.md) – Egy IoT-központ, egy Redis Cache és egy olyan kulcstartó beállítása, amely elérhető a Supply Chain Management alkalmazásból.
+2. [Üzenetsémák formátumai az IoT Huboz](iot-schema-format.md)– Állítsa be az eszközök úgy, hogy üzeneteket küldjenek az IoT Hubba, és definiálja a JavaScript Object Notation (JSON) üzenetformátumot.
+3. A Funkciókezelés helyen engedélyezze az IoT-intelligencia funkciójelölőt.
+4. Az IM-intelligenciához bővítmény telepítése a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban – telepítse a bővítményt az LCS-be, és konfigurálja az Azure-bővítményeket (az ebben a témakörben leírtak szerint).
+5. [Metrikák beállítása](iot-metrics-setup.md) – Metrikák beállítása a Supply Chain Management alkalmazásban.
+6. [Eset beállítása](iot-scenario-setup.md) – Az eseteket a Supply Chain Management alkalmazásban állíthatja be.
 
 ## <a name="set-up-the-lcs-environment"></a>Az LCS-környezet beállítása
 
@@ -47,7 +56,7 @@ Ez a témakör bemutatja, hogyan telepítheti az IoT Intelligencia beépülő mo
 
 Az LCS-beállítás befejeződött. A következő lépés a [forgatókönyvek beállítása](iot-scenario-setup.md).
 
-## <a name="uninstall-the-add-in"></a><a id="uninstall-addin"></a> A bővítmény eltávolítása
+## <a name="uninstall-the-add-in"></a><a id="uninstall-addin"></a>A bővítmény eltávolítása
 
 1. A Supply Chain Management alkalmazásban [tiltsa le a forgatókönyveket](iot-scenario-setup.md#disable-a-scenario).
 2. Az LCS-ben lépjen a Supply Chain Management környezet részleteihez.

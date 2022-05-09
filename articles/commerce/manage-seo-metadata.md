@@ -2,7 +2,7 @@
 title: SEO-metaadatok kezelése
 description: Ez a témakör azt mutatja be, hogyan lehet kezelni a keresőmotor-optimalizálási (SEO) metaadatokat a Microsoft Dynamics 365 Commerce megoldásban.
 author: psimolin
-ms.date: 04/14/2020
+ms.date: 04/21/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,16 +14,17 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 06d2da60695be499971904451fd56fb8a64dfd64c9192d93f87ababb349e9378
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 3d6f56968e9adfe90142955cba8e6c7ecc50fc92
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6751567"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644759"
 ---
 # <a name="manage-seo-metadata"></a>SEO-metaadatok kezelése
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet kezelni a keresőmotor-optimalizálási (SEO) metaadatokat a Microsoft Dynamics 365 Commerce megoldásban.
 
@@ -62,17 +63,21 @@ Dynamics 365 Commerce a SEO-metaadatok kezelését lehetővé teszi az egyes old
 ### <a name="modify-page-metadata"></a>Oldal metaadatainak módosítása
 
 Az oldal metaadatainak módosításához kövesse az alábbi lépéseket.
-
 1. A **Webhelyek** alatt válassza a **Gyár** (vagy a webhelye neve) lehetőséget.
 1. A bal oldali navigációs ablakban válassza ki a **Oldalak** lehetőséget.
 1. Válassza ki a kezdőlapot a megnyitáshoz a lapszerkesztőben.
 1. Válassza a parancssáv **Szerkesztés** elemét.
-1. A jobb oldali tulajdonságok ablaktáblán bontsa ki az **Alapértelmezett metacímkék** lehetőséget.
-1. Új metacímke hozzáadásához kattintson a **Hozzáadás** gombra, majd írja be a címkét a mezőbe. Ha törölni szeretne egy létező metacímkét, válassza a mellette, jobbra található kuka szimbólumot.
+1. Az oldalszerkesztő **bal felső tagolási vezérlőjében válassza a Szerkezeti mód** lehetőséget (fogaskerekek szimbóluma), majd válassza a Speciális **szerkezeti nézetet**.
+1. A szerkezeti nézetben bontsa ki a favezérlőket **a HTML-feji rés tartalmának megjelenítése** érdekében.
+1. A HTML-feji résben válassza ki a kívánt HTML-modult (**például** oldalösszegzés, **termékoldal** összegzése, **kategóriaoldal összegzése** **vagy metatagok).** **·**
+1. A jobb oldalon található tulajdonságok ablakában szerkessze a kiválasztott KÜLDŐ modul kívánt ADATOKAT (**például** Cím, **·** **Leírás vagy Megosztási kép**).
 1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
-1. A **Megjegyzések** mezőbe írja be a **Frissített metacímkék** szöveget, majd kattintson az **OK** gombra.
+1. A Megjegyzések **mezőben** adja meg **a Frissített ITT adatokat**, majd válassza az **OK gombra.**
 1. A oldal előnézetének megjelenítéséhez válassza az **Előnézet** lehetőséget. Ha befejezte, zárja be az előnézeti lapot, és térjen vissza a szerkesztési eszközhöz.
 1. Válassza a **Közzététel** lehetőséget.
+
+> [!TIP]
+> A vázlatok az oldalszerkesztő **bal** oldali tagolási vezérlőjének tetején található Szerkezeti mód beállítással (**fogaskerekek) beállítással válthatnak az Alap szerkezeti nézet** **és a Speciális szerkezeti nézet között**. **Az alapszintű szerkezeti nézet** az alapértelmezett **beállítás**, amely úgy szűri a szerkezetet, hogy csak a lap Törzs HTML-résének moduljait jeleníti meg. **A speciális szerkezeti nézet** a teljes oldalmodult mutatja, **beleértve a HTML-fejet**, **a Törzskezdetet** **és a Törzsvégi időszakokat**. Ez a nézet olyankor hasznos, amikor egy lapra vonatkozó KONKRÉT ÉS VAGY parancsfájlmodul-beállításokat kell szerkeszteni.
 
 ## <a name="additional-resources"></a>További erőforrások
 

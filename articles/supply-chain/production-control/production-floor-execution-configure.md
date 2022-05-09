@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 5a0ead85eaeb6b96b80716614990af8c8e5e70f7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 083f5a30323cdc813116af7462563c3b8dd5e4f5
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384747"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644344"
 ---
 # <a name="configure-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének konfigurálása
 
@@ -111,17 +111,67 @@ Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés
 
 - *(Előzetes verzió) Jelentés a termelési üzem végrehajtási felületéről származó tényleges súly szerinti cikkekről*
 
+### <a name="enable-the-my-day-dialog"></a>A "Saját nap" párbeszédpanel engedélyezése
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+A **Saját nap** párbeszédpanelen a dolgozók áttekintést kaphatnak a napi regisztrációikról és a fizetett időre, fizetett túlórára, távollétre és fizetett távollétre vonatkozó jelenlegi egyenlegeikről.
+
+Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés következő [szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Saját nap nézet a termelési üzem végrehajtási felületéhez*
+
+### <a name="enable-teams"></a>Csapatok engedélyezése
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Ha ugyanannak a termelési feladatnak több dolgozója van, akkor csapatokat lehet csapatokat formba rendelni. A csoport egy dolgozót jelölhet meg pilotként. A többi dolgozó automatikusan ennek az pilotnak az asszisztense lesz. Az eredményül kapott csapatnál csak az első csapatnak kell regisztrálnia a feladat állapotát. Az időrekordok minden csapattagra érvényesek.
+
+Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés következő [szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *Termelési csapatok a termelési üzem végrehajtási felületében*
+
+### <a name="enable-additional-configuration-in-the-production-floor-execution-interface"></a>További konfiguráció engedélyezése a termelési emelet végrehajtási felületén
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Ez a funkció a következő funkciók beállításait adja meg a Termelési **emelet végrehajtási konfigurálása lapon**:
+
+- Keresés befejezésekor **automatikusan** megnyílik a Feladat kezdete párbeszédpanel.
+- Keresés befejezésekor **a** Jelentés állapota párbeszédpanel automatikus megnyitása.
+- Töltse ki előre a fennmaradó mennyiséget a Jelentés **állapota** párbeszédpanelen.
+- Az anyagfelhasználási helyesbítések engedélyezése a Jelentés **állapota párbeszédpanelről**. (Ehhez a funkcióhoz szükség van a *Regisztrálja az anyagfelhasználást a termelési emelet végrehajtási felületén (nem WMS)* szolgáltatáson.)
+- Projektazonosító alapján való keresés engedélyezése.
+
+A beállítások használatával kapcsolatban a témakör későbbi tájékoztatást tartalmaz.
+
+Ennek a funkciónak a használatához be kell kapcsolni a Szolgáltatáskezelés következő [szolgáltatását](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+
+- *További konfigurációk a termelési üzem végrehajtási felületén*
+
+
 ## <a name="work-with-production-floor-execution-configurations"></a>A termelési üzem végrehajtási konfiguációinak használata
 
 A termelés-végrehajtási konfigurációk létrehozásához és karbantartásához **kattintson a Gyártásvezérlés \>\> beállítása – Gyártás-végrehajtási \> konfigurálás a termelési emelet létrehozására.** A **Termelési üzem végrehajtásának konfigurálása** lapon látható a meglévő konfigurációk listája. Ezen az oldalon az alábbi műveleteket végezheti:
 
 - Kiválaszthatja bal oldali oszlopban felsorolt termelésiüzem-konfigurációk bármelyikét, hogy megtekintse és szerkessze azt.
-- Ha új **konfigurációt szeretne** hozzáadni a listához, válassza az Új lehetőséget a munkaablakban. Adjon meg egy nevet a **Konfiguráció** mezőben, amely lehetővé teszi az új konfiguráció azonosítását. A beírott névnek egyedinek kell lennie minden konfigurációban, és később nem lesz lehetőség a szerkesztésére.
+- A munkaablak új konfigurációnak a **listához** való hozzáadásához válassza az Új lehetőséget. Adjon meg egy nevet a **Konfiguráció** mezőben, amely lehetővé teszi az új konfiguráció azonosítását. A beírott névnek egyedinek kell lennie minden konfigurációban, és később nem lesz lehetőség a szerkesztésére. A Leírás **mezőben** tetszés szerint megadhatja a konfiguráció leírását.
 
-Ezután állítsa be a kiválasztott konfiguráció különféle beállításait. Az alábbi mezők állnak rendelkezésre:
+Ezután állítsa be a kiválasztott konfiguráció különféle beállításait az alábbi alszakaszok szerint.
 
-- **Csak érkezéskori és távozáskori blokkolás** – állítsa ezt a lehetőséget az *Igen* értékre, hogy olyan egyszerűsített inferfészt hozzon létre, amely csak érkezéskori és távozáskori blokkolási funkciót biztosít. Ez letiltja az oldal beállításainak többségét is. A beállítás engedélyezése előtt el kell távolítania minden sort a **Lapkijelölés** gyorslapról.
-- **Keresés engedélyezése** – ha a feladatlistánál szeretne keresési mezőt szerepeltetni, adja meg az *Igen* értéket a beállításnál. A dolgozók a feladatazonosító megadásával rákereshetnek egy adott feladatra, vagy a rendelés azonosítójának megadásával megkereshetik egy adott rendelés összes feladatát. A dolgozók a billentyűzettel írhatják be vagy vonalkód beolvasásával adhatják meg az azonosítót.
+### <a name="the-general-fasttab"></a>Az Általános gyorslap
+
+Az Általános gyorsgombra a következő **beállítások** érhetők el:
+
+- **Csak az érkezéskori és a** kifelé való érkezéskori és a onnan való érkezéskori idő beállítása – *Ezzel a beállítással Igen* beállítással olyan egyszerűsített felületet hozhat létre, amely csak az érkezéskori és a onnan való érkezéskori funkciókat biztosítja. Ez a beállítás letiltja a lap legtöbb egyéb beállítását. A beállítás engedélyezése előtt el kell távolítania minden sort a **Lapkijelölés** gyorslapról.
+- **Keresés engedélyezése** – a feladatlista *keresési* mezőjének igenre való beállításával megjelenik a keresési mező. A dolgozók a feladatazonosító megadásával megkereshet egy adott feladatot, illetve a rendelés azonosítójának megadásával az adott rendelés összes feladatát. A dolgozók egy billentyűzet használatával vagy vonalkód beolvasásával adhatja meg az azonosítót.
+- **Projektazonosító** szerint való keresés engedélyezése – *a* dolgozók Igen beállítással projektazonosító (a feladatazonosítón és rendelésazonosítón kívül) alapján is kereshetnek a termelési terület keresési mezőjében. Ezt a beállítást csak akkor állíthatja *Igen beállításra, ha* a Keresés engedélyezése **beállítás is** Igen beállításra van *állítva*.
+- **Automatikusan megnyitható kezdő párbeszédpanel** – *ha* ez a beállítás Igen, a rendszer automatikusan megnyitja a Feladat kezdete párbeszédpanelt, **amikor** a dolgozók a keresősávon keresnek feladatot.
+- **Jelentés folyamatjelző párbeszédpanelének** automatikus megnyitása – *ha* ez a beállítás Igen, a jelentés állapota párbeszédpanel automatikusan megnyílik, **amikor** a dolgozók a keresősávon keresnek feladatot.
+- **Anyag módosításának engedélyezése** – a *Beállítás* Igen beállítással engedélyezheti **az** Anyag beállítása gombot **a Jelentés folyamatjelző párbeszédpanelén**. A dolgozók ezzel a gombbal módosíthatja a feladat anyagfelhasználását.
 - **Mennyisége jelentése távozáskori blokkoláskor** – Ezt állítsa *Igen* értékre, és megkérheti a dolgozókat, hogy adjanak visszajelzést a folyamatban lévő munkákról a távozáskori blokkoláskor. Ha *Nem* értékre van állítva, akkor a dolgozókat nem figyelmezteti a rendszer.
 - **Alkalmazott zárolása** – Ha a beállítás értéke *Nem*, akkor a program közvetlenül a regisztráció után (például új feladat) kilépteti a dolgozókat. A felület ezután visszatér a bejelentkezési oldalra. Ha ez a beállítás *Igen*, a dolgozók bejelentkezve maradnak a termelési emelet végrehajtási felületére. A dolgozó azonban manuálisan kijelentkezhet, így egy másik dolgozó bejelentkezhet, miközben a termelés-végrehajtási felület ugyanannak a rendszerfióknak a használatával fut. A fiókok típusairól a [Hozzárendelt felhasználók](config-job-card-device.md#assigned-users) című témakörben olvashat bővebben.
 - **A regisztráció tényleges időpontjának használata** – Ezt a beállítást *Igen* értékre állíthatja, ha azt szeretné, hogy az egyes új regisztrációk időpontja megegyezzen a dolgozó által benyújtott regisztráció pontos időpontjával. Ha a beállítás értéke *Nem*, akkor a bejelentkezési időt használja a rendszer. Ezt a beállítást általában *Igen* értékre kell állítani, ha *Igen* értékre állította az **Alkalmazott zárolása** és/vagy az **Egy dolgozó** beállítást, aminek következtében a dolgozók általában hosszabb ideig bejelentkezve maradnak.
@@ -130,7 +180,17 @@ Ezután állítsa be a kiválasztott konfiguráció különféle beállításait
 - **Képernyő zárolásának időtartama** – Ha a **Képernyő zárolásának engedélyezése** beállítást *Igen* értékre állították akkor ezzel a beállítással adja meg, hogy hány másodpercig kell zárolni az érintőképernyőt a fertőtlenítéshez. Az időtartamnak 5 és 120 másodperc között kell lennie.
 - **Előállít** egy táblát – *a* beállítás Igen beállítással minden alkalommal új tábla generálható, amikor egy dolgozó a termelési emelet végrehajtási felületét használja a készként jelentésre. Az azonosítótábla a **Raktárkezelési paraméterek** lapon beállított számsorozatból jön létre. Ha a beállítás értéke *Nem*, akkor a dolgozóknak a készként való jelentéskor meg kell határozniuk egy meglévő azonosítótáblát.
 - **Címke nyomtatása** – a beállítás Igen *beállítással* nyomtatható meg az tábla címkéje, amikor egy dolgozó a termelés emeletének végrehajtási felületét használja a készként jelentéshez. A címke konfigurációja a dokumentumirányításban van beállítva, a [Dokumentumirányítási elrendezés azonosítótábla-címkékhez](../warehousing/document-routing-layout-for-license-plates.md) részben leírtak szerint.
-- **Lap kiválasztása** – A szakasz beállításaival kiválaszthatja, hogy mely lapok jelenjenek meg a termelési üzem végrehajtási felületén, amikor az aktuális konfiguráció aktív. A tetszőleges számú lapot tervezhet meg, és szükség szerint hozzáadhatja és elrendezheti őket. A lapok tervezésével és az itt megadott beállításokkal kapcsolatos további tudnivalókat lásd: [A termelési üzem végrehajtási felületének tervezése](production-floor-execution-tabs.md).
+
+### <a name="the-tab-selection-fasttab"></a>A Lap kiválasztása gyorslap
+
+A Lapkijelölés gyorslap **beállításaival** kiválaszthatja, hogy a termeléshez használt emelet végrehajtási felületének melyik lapja legyen látható, ha az aktuális konfiguráció aktív. Ha szükséges, annyi lapot tervezhet, amennyit csak szeretne, majd a Gyorslap eszköztár gombjai segítségével lehetőség van a lapok hozzáadására és elrendezésére. A lapok tervezésével és az [itt megadott beállításokkal kapcsolatos tudnivalókat lásd: Termelés- és üzemvégrehajtási felület tervezése](production-floor-execution-tabs.md).
+
+### <a name="the-report-progress-fasttab"></a>A Jelentés állapota gyorsjelentés
+
+A Jelentés folyamatjelző gyorsjelentése a következő **beállításokat** tartalmazza:
+
+- **Anyag módosításának engedélyezése** – Állítsa *·* **·** **Igen beállításra, ha a Jelentés folyamatjelző párbeszédpanelén az Anyag beállítása gombot szeretné** szerepeletni. A dolgozók ezzel a gombbal módosíthatja a feladat anyagfelhasználását.
+- **Alapértelmezett fennmaradó mennyiség** – Állítsa *Igen* beállításra a termelési feladat várható fennmaradó mennyiségének előzetes kitöltéséhez a **Jelentés állapota párbeszédpanelen**.
 
 ## <a name="clean-up-job-configurations"></a>Feladatkonfigurációk megtisztítása
 

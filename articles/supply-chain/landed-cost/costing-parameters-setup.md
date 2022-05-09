@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: chuzheng
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 1bcce7af0a15add63f1d9c3b32563de0ab6698bd
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: MT
+ms.openlocfilehash: 335bed49b05bf64547d7ded885f365a30487484f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7577648"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644638"
 ---
 # <a name="costing-parameter-values-setup"></a>Költségszámítási paraméterértékek beállítása
 
@@ -123,9 +123,9 @@ Az alábbi táblázat bemutatja az egyes sablonokhoz rendelkezésre álló beál
 
 ## <a name="volumetric-divisors"></a>Térfogatosztók
 
-A térfogatosztók a térfogatsúly kiszámítására használhatók. Minden szállítmányozási/teherszállítási vállalat saját térfogatosztókat alkot. A vállalat osztói jellemzően eltérőek a szállítási módtól függően. Például a légi és a tengeri szállításnak gyakran nagyon különböző osztói vannak. Attól függően, hogy honnan szállít, a vállalat még összetettebb szabályokat hozhat.
+A térfogatosztók a térfogatsúly kiszámítására használhatók. Minden szállítmányozási/teherszállítási vállalat saját térfogatosztókat alkot. A vállalat osztói jellemzően eltérőek a szállítási módtól függően. Például a légi és a tengeri szállításnak gyakran nagyon különböző osztói vannak. Attól függően, hogy honnan szállít, a vállalat még összetettebb szabályokat hozhat. A rendszer a következő képlet alapján találja meg a térfogat súlyát: VolumetricWeight = Volume ÷ VolumetricDivisor.
 
-Például egy légi csomag térfogata 3 köbméter (m³). A vállalat térfogati súly alapján számít fel díjat, és 6-os térfogatosztót alkalmaz. Ezt az osztót megszorozza a térfogattal a térfogati súly meghatározásához. Ezért ebben a példában a térfogati súly 3 × 6 = 18 kilogramm (kg).
+Például egy légi csomag térfogata 3 köbméter (m³). A vállalat térfogati súly alapján számít fel díjat, és 6-os térfogatosztót alkalmaz. Ez az osztó el van osztva a térfogat meghatározásához. Ebből következően a példában 3 és 6 ÷ = 0,5 kilogramm (kg).
 
 A térfogatosztók beállításához kattintson a **Partraszállítási költségek \> Költségszámítás beállítása \> Térfogatosztók** gombra. A **Térfogatosztók** oldal egy rácsot biztosít, amely minden meglévő térfogatosztót felsorol. A Művelet panel gombjaival lehet sorokat hozzáadni, eltávolítani és szerkeszteni a rácsban.
 
@@ -136,4 +136,7 @@ Az alábbi táblázat bemutatja a rács egyes soraiban rendelkezésre álló mez
 | Szállítmányozási vállalat | A térfogatosztóhoz társított szállítóvállalat szállítói számlájának kiválasztása. |
 | Költségtípus kódja | A térfogatosztóhoz társított költségtípuskód kiválasztása. Ezzel a mezővel költségtípusokat lehet a jelentési időszakba tenni. A jelentések jelentési kategóriák vagy költségtípus szerint nyomtathatók. |
 | Kiindulási kikötő | Válassza ki az „indulási” kikötőt, amelyre a térfogatosztó vonatkozik. |
-| Térfogatosztó | A sorra vonatkozó térfogatosztó értékének megadása. A megadott értéket a rendszer *megszorozza* az egyes csomagok térfogatával, és így megállapítja a csomag térfogati súlyát. |
+| Térfogatosztó | A sorra vonatkozó térfogatosztó értékének megadása. Az egyes csomagok térfogatát elosztja az itt megadott értékkel, hogy megállapítsa a csomag térfogati súlyát. |
+
+> [!NOTE]
+> A rendszer a maximális értéket használja a tényleges **súly és a** **térfogati súly között**.

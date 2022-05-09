@@ -1,8 +1,8 @@
 ---
 title: Előfizetéses számlázás áttekintése
-description: Ez a témakör a Microsoft előfizetéses számlázását írja le Dynamics 365 Finance.
+description: Ez a témakör a Microsoft Dynamics 365 Pénzügyben található előfizetéses számlázást írja le.
 author: JodiChristiansen
-ms.date: 02/09/2022
+ms.date: 04/13/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: 10.0.25
-ms.openlocfilehash: 2796e25ec783941de381fb5ae96145eeba870bde
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 9d46492cca3cc435048fa497f6b1f3a28b77140a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462469"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644527"
 ---
 # <a name="subscription-billing-overview"></a>Előfizetéses számlázás áttekintése
 
@@ -33,6 +33,8 @@ A megoldás három modult tartalmaz, amelyek egymástól függetlenül használh
 - **Ismétlődő szerződés számlázása** – ez a modul lehetővé teszi az ismétlődő számlázás és árkezelés vezérlését az árképzési és számlázási paraméterek, a szerződések megújítása és a konszolidált számlázás fölött.
 - **Bevétel- és költség halasztások** – ez a modul eltávolítja a manuális folyamatokat és a külső rendszerekkel való függőséget a bevételek kezelésével és a havi ismétlődő bevételnek lehetővé tevő valós idejű használatának engedélyezésével.
 - **Többelemű bevételfelosztás** – ez a modul segít a bevételnek való megfelelésben, ha több cikkre kezeli az árképzést és a bevételfelosztást.
+
+Az előfizetési számlázással kapcsolatos további tudnivalókat lásd [az Előfizetéses számlázás tartalomban Power BI](sub-bill-power-bi.md).
 
 Az előfizetéses számlázás a Funkciókezelés segítségével **engedélyezhető**. Nem használható azonban a Bevétel-kimutatás **funkcióval**. Ezért az előfizetési számlázás engedélyezése előtt le kell tiltani ezt a funkciót.
 

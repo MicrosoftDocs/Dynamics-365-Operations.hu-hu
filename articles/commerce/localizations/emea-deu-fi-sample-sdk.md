@@ -9,17 +9,16 @@ ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-3-1
-ms.openlocfilehash: c578420783a8d19fe4a1522486e0b0146a390722
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: c49e6cedcce1d336486e9fbcc0620bcdf455cc9d
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388184"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614124"
 ---
 # <a name="deployment-guidelines-for-the-fiscal-registration-service-integration-sample-for-germany-legacy"></a>A pénzügyi regisztrációs szolgáltatás integrációs mintája Németország telepítési irányelvei (legacy)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Commerce Pénzügyi nyilvántartási szolgáltatás integrációs mintáinak telepítéséhez nyújt tájékoztatást a Lifecycle Services (LCS) fejlesztői virtuális gépére (SDK) Microsoft Dynamics származó Retail szoftverfejlesztői csomagból (SDK). A pénzügyi integrációs mintával kapcsolatos további [tudnivalókat lásd a Pénzügyi nyilvántartási szolgáltatás integrációs mintája Németország esetében](emea-deu-fi-sample.md). 
 
@@ -128,7 +127,7 @@ A következő lépésekkel használhatja a POS-bővítményt az örökölt SDK k
 1. Nevezze át a **Pos.Extension** mappa **PosFiscalConnector példányát**.
 1. Távolítsa el a következő mappákat és fájlokat a **PosFiscalConnector mappából**:
 
-    - Bin
+    - raktárhely
     - DataService
     - devDependencies
     - Tárak

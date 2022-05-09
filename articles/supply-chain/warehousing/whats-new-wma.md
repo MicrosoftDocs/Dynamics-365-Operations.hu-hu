@@ -2,7 +2,7 @@
 title: Újdonságok és változások a Warehouse Management mobilalkalmazásban
 description: Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új és módosult funkcióit ismerteti.
 author: Mirzaab
-ms.date: 03/11/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
@@ -10,18 +10,33 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-06-07
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 2544c30afe18f290b681efed1705f7cef0cb7620
-ms.sourcegitcommit: 6f6ec4f4ff595bf81f0b8b83f66442d5456efa87
-ms.translationtype: MT
+ms.openlocfilehash: 679222005fe12009004921fa75a56145ae94c3ba
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/25/2022
-ms.locfileid: "8487836"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644732"
 ---
 # <a name="whats-new-or-changed-in-the-warehouse-management-mobile-app"></a>Újdonságok és változások a Warehouse Management mobilalkalmazásban
 
 [!include [banner](../includes/banner.md)]
 
 Ez a témakör a Microsoft Dynamics 365 Supply Chain Management rendszerhez használatos Warehouse Management mobilalkalmazás egyes kiadásainak új funkcióit, hibajavításait, fejlesztéseit és ismert hibáit ismerteti.
+
+## <a name="version-20210"></a>2.0.21.0-s verzió
+
+Ez a kiadás az alábbi új funkciókat, hibajavításokat és fejlesztéseket tartalmazza:
+
+- Több ütközést kijavított.
+- Javítva egy olyan hiba, amelynél egyes karakterek nem ismerhetők fel az alapértelmezett lap beolvasása vagy beírása során.
+- Kijavított egy hibát, amikor az alapértelmezett lapon egy háttértér beírásakor egyszerre két karaktert törölne.
+- Rögzített hiba, amely **miatt** **a** Munkalista lap Rendezési mezője helytelen értéket jelenít meg, amely nem felel meg a kártyák aktuális rendezési sorrendjének.
+- Javítva egy olyan hiba, amely miatt az alkalmazás ablakának a futtatása közbeni átméretezése után helytelen elrendezés jelenik meg Microsoft Windows.
+- Kijavított egy problémát, ahol az előugró lista görgetése azt eredményezheti, hogy egyes listaelemek még rejtve maradnak, vagy kezdnek elkeseredni.
+- Újratervezte a bejelentkezési oldalt, hogy nagyobb kijelzőkön való futtatáskor ugyanazon az oldalon jelenítse meg a felhasználónevet és a jelszó mezőit.
+- Javította a gyors visszahozás szabályozásának módját.
+- Alkalmazáson belüli hibanapló-nézet hozzáadva.
+- További kisegítő lehetőségekkel kapcsolatos fejlesztések (továbbfejlesztett kísérőszöveg, Android rögzített hiányzó helyőrzők, billentyűzet-bevitel engedélyezve a vezérlőkhöz stb.)
 
 ## <a name="version-20200"></a>2.0.20.0-s verzió
 

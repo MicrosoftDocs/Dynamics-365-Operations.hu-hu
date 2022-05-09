@@ -1,6 +1,6 @@
 ---
 title: Elektronikus számlázás Egyiptomihoz
-description: Ez a témakör az Egyiptomi elektronikus számlázással kapcsolatban tartalmaz tájékoztatást a Microsoft Dynamics 365 Finance és a Dynamics 365 Supply Chain Management.
+description: Ez a témakör az Microsoft Dynamics Egyiptomi elektronikus számlázással kapcsolatban nyújt segítséget a 365-ös pénzügyi és az elektronikus számlázásban Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 02/09/2022
 ms.topic: article
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: janeaug
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 6fe1dd4254db8b390c17558320a6eaff2b0dcd19
-ms.sourcegitcommit: ffdb6794746ffe5461f9dcf34ed8e64976d22d2d
+ms.openlocfilehash: e21c4ce4d676c3194665672a078dc1e3d0492799
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/02/2022
-ms.locfileid: "8371356"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661722"
 ---
 # <a name="electronic-invoicing-for-egypt"></a>Elektronikus számlázás Egyiptomihoz
 
@@ -41,8 +41,8 @@ Mielőtt elkezdené a témakörben található eljárásokat, teljesítsen a kö
     - [Azure-erőforrások beállítása elektronikus számlázáshoz](e-invoicing-set-up-azure-resources.md)
     - [A mikroszolgáltatások bővítményének telepítése a Lifecycle Services szolgáltatásba](e-invoicing-install-add-in-microservices-lcs.md)
     
-- Az Aktiválás és az Elektronikus számlázás modul integrációjának aktiválása a Microsoft Dynamics 365 Finance Dynamics 365 Supply Chain Management[és](e-invoicing-activate-setup-integration.md) az Elektronikus számlázás között.
-- Digitális tanúsítványtitk létrehozása az Azure kulcstárolóban, [és beállítása a vevői tanúsítványokban és azok tanúsítványában leírt módon](e-invoicing-customer-certificates-secrets.md). Tesztelési célokra az egyiptomi adóhatóság olyan specifikus digitális tesztelési tanúsítványokat biztosít, amelyek csak a tesztelési és megoldás-ellenőrzési fázisok során használhatók. További információt az [egyiptomi adóhatóság webhelyén talál az egyiptomi e-számlázási SDK-ban megadott hivatkozás használatával](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+- Aktiválja a Microsoft Dynamics 365 Pénzügy Dynamics 365 Supply Chain Management [vagy -alkalmazás és az Elektronikus számlázás szolgáltatás közötti integrációt az Aktiválás és beállítás integráció az Elektronikus számlázással leírtak szerint](e-invoicing-activate-setup-integration.md).
+- Digitális tanúsítványtitk létrehozása az Azure kulcstárolóban, [és beállítása a vevői tanúsítványokban és azok tanúsítványában leírt módon](e-invoicing-customer-certificates-secrets.md). Tesztelési célokra az egyiptomi adóhatóság olyan specifikus digitális tesztelési tanúsítványokat biztosít, amelyek csak a tesztelési és megoldás-ellenőrzési fázisok során használhatók. További információt az [egyiptomi adóhatóság webhelyén talál az egyiptomi e-számlázási SDK-ban megadott hivatkozás használatával](https://sdk.invoicing.eta.gov.eg/faq/).
 
 ## <a name="country-specific-configuration-for-the-egyptian-electronic-invoice-eg-feature"></a>Országspecifikus konfiguráció az Egyiptomi elektronikus számla (ENGEDMÉNY) szolgáltatáshoz
 
@@ -56,7 +56,7 @@ Az Egyiptomi elektronikus számla **(EGYIPTOMI)** elektronikus számlázás funk
 6. A Feldolgozási **folyamat lapon**, **a Feldolgozási** folyamat szakaszban jelölje **be a JSON-dokumentum aláírási dokumentumát az egyiptomi adóhatóság számára**.
 7. A Paraméterek **szakaszban** válassza **ki a Tanúsítvány nevét**, majd válassza ki a létrehozott digitális tanúsítvány nevét.
 8. A Feldolgozási folyamat **szakaszban** válassza **az Egyiptomi ETA-szolgáltatással való integrálás lehetőséget**. Ismételje meg ezt a lépést a művelet két előfordulásával.
-9. A Paraméterek **szakaszban** válassza a webszolgáltatás **URL-címét** **és bejelentkezési szolgáltatásÁNAK URL-címét**. Ezután tekintse át az URL-paramétereket. A tesztelési és termelési URL-cím [az egyiptomi adóhatóság webhelyén, az Egyiptomi e-számlázási SDK-ban megadott hivatkozás használatával olvasható](https://sdk.sit.invoicing.eta.gov.eg/faq/).
+9. A Paraméterek **szakaszban** válassza a webszolgáltatás **URL-címét** **és bejelentkezési szolgáltatásÁNAK URL-címét**. Ezután tekintse át az URL-paramétereket. A tesztelési és termelési URL-cím [az egyiptomi adóhatóság webhelyén, az Egyiptomi e-számlázási SDK-ban megadott hivatkozás használatával olvasható](https://sdk.invoicing.eta.gov.eg/faq/).
 10. Válassza a **Mentés** gombot, és zárja be az oldalt.
 11. Ismételje meg a 4–10. lépést a Projektszámla **származtatott funkcióbeállítása** esetén.
 
@@ -78,7 +78,7 @@ Mindkét beállításban ugyanazok a paraméterek. Ha az elektronikus számláz�
 4. A Kapcsolódó **alkalmazások mezőben** válassza ki azt az alkalmazást, ahová telepíteni szeretné a paramétereket.
 5. Az Elektronikus dokumentumtípusok **lapon** válassza a **Hozzáadás** gombra rekord létrehozásához.
 6. A Tábla **neve mezőben** adja hozzá a **CustInvoiceJour táblát**.
-7. A Környezet **mezőben** adjon hozzá hivatkozást a vevői **számla** környezetének megfeleltetési nevéhez. A konfiguráció a vevői **számla környezetmodell**.
+7. A Környezet **mezőben** adjon hozzá hivatkozást a vevői **számla** környezetének megfeleltetési nevéhez. A konfiguráció a vevői **számla környezetmodell.**
 8. Az Elektronikus dokumentumok **megfeleltetése mezőben** adjon hozzá hivatkozást a vevői **számla megfeleltetésének** nevére. A konfiguráció a számlamodell **megfeleltetése**.
 9. Válassza a **Mentés** lehetőséget.
 10. A **Választípusok lapon** válassza a Hozzáadás **lehetőséget**.

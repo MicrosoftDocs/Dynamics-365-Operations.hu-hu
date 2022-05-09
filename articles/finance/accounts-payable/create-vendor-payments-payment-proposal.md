@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 71e87b1102e21e035c25af4c63245eaaa59e4babb82bcf59c5cfba48f7d114f3
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 101cbcc77b2e1eab9fb4b6724fc5e3e8925a54c5
+ms.sourcegitcommit: 836695c0e95d366ba993f34eee30f57191f356d8
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6749052"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8629720"
 ---
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Szállítói kifizetések készítése fizetési javaslat segítségével
 
@@ -48,7 +48,7 @@ A fizetési javaslat lekérdezés különféle lapokat tartalmaz, melyek mindegy
 - **Más jogi személyektől származó szállítói számlák tartalmazása** – Amennyiben az ön szervezete központosított kifizetési rendszert alkalmaz és a kifizetési javaslatnak tartalmaznia kell más jogi személyektől származó, valamint a kritériumoknak megfelelő számlákat is, állítsa be az **Igen** opciót.
 - **Javasoljon jogi személyenként eltérő szállítói kifizetést** – Ha ezt a beállítást **Igen** opcióra állítja, szállítónként minden jogi személyhez külön kifizetés jön létre. A kifizetésen szereplő szállító megegyezik az egyes jogi személyek számláin szereplő szállítóval. Amennyiben ez a beállítás a **Nem** opcióra van állítva és ugyanaz a szállító tartozik több jogi személyhez, egy kifizetés készül a kiválasztott számlák teljes összegével. A kifizetésen szereplő szállító megegyezik a jelenlegi jogi személy szállítójával. Amennyiben a szállító számla nem létezik jogi személyként, abban az esetben az első számlán szereplő szállító számlát kell alkalmazni.
 - **Kifizetés pénzneme** – Ez a mező határozza meg az összes fizetés pénznemét. Amennyiben a pénznem nincs meghatározva, minden számla kifizetése a számláén megadott pénznemben történik.
-- **Fizetésnap** – Adja meg a hét azon napján, amelyen a kifizetésre sor kerül. Ez a mező csak akkor kitöltendő ha a kifizetés módja az összes számla kifizetését a hét egy adott napjára adja meg.
+- **Fizetés hétköznapja** – adja meg a hétnek azt a napját, amikor a fizetésnek meg kell történik, ez a mező csak akkor használatos, ha a fizetési mód a **Hét**. A kifizetésre vonatkozó számlák összegét a kifizetésnek a hét megadott napján összegzi a rendszer.
 - **Ellenszámla típusa** és **Ellenszámla** – Használja ezeket a mezőket konkrét számlatípus (például **Főkönyv** vagy **Bank**), illetve ellenszámla (specifikus bankszámla) beállítására. A számla kifizetési módja határozza meg az alapértelmezett ellenszámla-, illetve számlatípust, de ezeket a mezőket használhatja a alapértelmezett értékek átírására.
 - **Összesített kifizetés dátuma** – Ez csak akkor használatos, amikor az **Időszak** mező értéke a fizetési mód mezőjében **Teljes**. Amennyiben konkrét dátumot ad meg, minden kifizetés az adott napra lesz kiírva. A **Minimális kifizetési dátum** mezőt a program figyelmen kívül hagyja.
 - **További szűrők** – a **Belefoglalandó rekordok** gyorslapon, plusz kritériumokat adhat meg. Például ha csak szállítók egy részét szeretné kifizetni, szűrővel megadhatja a kifizetendő szállítókat. Ezt a funkció általában a bizonyos befizetésmódú számlák kiválasztásakor használjuk. Például, ha meghatározott szűrő a **Fizetés módja** = **Csekk**, akkor (amennyiben a lekérdezés egyéb kritériumainak is megfelelnek) csak a csekkes befizetésű számlák jelennek meg kifizetésre.

@@ -2,7 +2,7 @@
 title: Adatmezők hozzáadása az adóintegrációhoz bővítmények használatával
 description: Ebből a témakörből megtudhatja, hogyan vehet fel adatmezőket az X++ bővítmények használatával az adóintegrációban.
 author: qire
-ms.date: 02/17/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: acbe8070424febf24883362448ea56857d9d72d9
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
-ms.translationtype: MT
+ms.openlocfilehash: 79b51812eac354072ebf2a0ef6fe8d39610c6385
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323575"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649101"
 ---
 # <a name="add-data-fields-in-the-tax-integration-by-using-extension"></a>Adatmezők hozzáadása az adóintegrációhoz bővítmény használatával
 
@@ -334,9 +334,10 @@ Terjessza ki a `copyToTaxableDocumentHeaderWrapperFromTaxIntegrationDocumentObje
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
+    // private const str IOEnumExample = 'Enum Example';
 
     /// <summary>
     /// Copies to <c>TaxableDocumentLineWrapper</c> from <c>TaxIntegrationLineObject</c> by line.
@@ -349,20 +350,24 @@ final static class TaxIntegrationCalculationActivityOnDocument_CalculationServic
         // Set the field we need to integrated for tax service
         _destination.SetField(IOCostCenter, _source.getCostCenter());
         _destination.SetField(IOProject, _source.getProjectId());
+
+        // If the field to be extended is an enum type, use enum2Symbol to convert an enum variable exampleEnum of ExampleEnumType to a string
+        // _destination.SetField(IOEnumExample, enum2Symbol(enumNum(ExampleEnumType), _source.getExampleEnum()));
     }
 }
 ```
 
-Ebben a kódban a `_destination` a burkoló objektum, amely a közzétételi kérés létrehozásához használható, és a `_source` a `TaxIntegrationLineObject` objektum.
+Ebben a kódban `_destination` ez a csomagolóobjektum, amely a kérést generálja, és `_source` ez az `TaxIntegrationLineObject` objektum.
 
 > [!NOTE]
-> Definiálja a kérési képernyőn **személyes konstként használt kulcsot**. A karakterláncnak pontosan meg kell egy lennie a témakörben hozzáadott mértéknévvel ([Adatmezők hozzáadása az adókonfigurációkban)](tax-service-add-data-fields-tax-configurations.md).
-> Állítsa be a **mezőt a copyToTaxableDocumentLineWrafromTaxIntegrationLineObjectByLine metódusban** **a SetField metódus** használatával. A második paraméter adattípusának karakterláncnak kell **lennie**. Ha az adattípus nem **karakterlánc**, konvertálja.
-> Ha bővített X++ **felsorolásos** típust ad meg, jegyezze fel az érték, a címke és a név közötti különbséget.
+> A kérésben saját korlátozásként **használt mezőnév megadása**. A karakterláncnak pontosan meg kell egy lennie a csomópont nevével (nem a címkével), [amely az Adókonfigurációk Adatmezőinek hozzáadása témakörben van hozzáadva](tax-service-add-data-fields-tax-configurations.md).
 > 
+> Állítsa be a **mezőt a copyToTaxableDocumentLineWrafromTaxIntegrationLineObjectByLine metódusban** **a SetField metódus** használatával. A második paraméter adattípusának karakterláncnak kell **lennie**. Ha az adattípus nem **karakterlánc**, konvertálja karakterláncra.
+> Ha az adattípus X++ **enum** típusú, akkor javasoljuk, **hogy az enum2Symbol** metódust használja az enum érték karakterláncgé konvertálására. Az adókonfigurációban hozzáadott felsorolási értéknek pontosan meg kell egy lennie a felsorolás nevével. Az alábbiakban a felsorolási érték, címke és név eltérései vannak felsorolva.
+> 
+>   - A felsorolás neve szimbólumos név a kódban. **Az enum2Symbol() konvertálhatja** az enum értéket a nevére.
 >   - A felsorolás értéke egész szám.
->   - A felsorolás címkéje a preferált nyelvek között eltérő lehet. Ne használja az **enum2Str karakterlánc** típust.
->   - A felsorolás neve ajánlott, mert rögzített. **Az enum2Symbol** segítségével konvertálható a felsorolás a nevére. Az adókonfigurációban hozzáadott felsorolási értéknek pontosan meg kell egy lennie a felsorolás nevével.
+>   - A felsorolás címkéje a preferált nyelvek között eltérő lehet. **Az enum2Str() konvertálhatja** az enum értéket a címkéje értékre.
 
 ## <a name="model-dependency"></a>Modellfüggőség
 
@@ -526,7 +531,7 @@ final class TaxIntegrationPurchTableDataRetrieval_Extension
 [ExtensionOf(classStr(TaxIntegrationCalculationActivityOnDocument_CalculationService))]
 final static class TaxIntegrationCalculationActivityOnDocument_CalculationService_Extension
 {
-    // Define key for the form in post request
+    // Define the field name in the request
     private const str IOCostCenter = 'Cost Center';
     private const str IOProject = 'Project';
 

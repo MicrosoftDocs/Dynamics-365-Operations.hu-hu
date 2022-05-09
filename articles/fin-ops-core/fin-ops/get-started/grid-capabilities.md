@@ -2,7 +2,7 @@
 title: Rács funkciói
 description: Ez a témakör ismerteti a rács vezérlőelem számos erőteljes funkcióját. Az új rács funkciónak engedélyezve kell lennie ahhoz, hogy hozzáférhessen ezekhez a funkciókhoz.
 author: jasongre
-ms.date: 03/21/2022
+ms.date: 04/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 08348185a424d20b6da1563189496b7dd51944d9
-ms.sourcegitcommit: edc887e0526c415466e9691e642028ecd97cdbe7
+ms.openlocfilehash: 57133a853d1700b2d8ebb938f93af475410b82cb
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/14/2022
-ms.locfileid: "8602962"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644413"
 ---
 # <a name="grid-capabilities"></a>Rácsfunkciók
 
@@ -106,7 +106,7 @@ A funkció használatához kattintson a jobb egérgombbal a csoportosítani kív
 - A csoportban levő adatsorok száma
 - Részösszegek az összes olyan oszlophoz, amelyet összegek megjelenítésére konfiguráltak
 
-A [Mentett nézetek](saved-views.md) engedélyezése esetén ezt a csoportosítást személyre szabhatja az oldal legközelebbi meglátogatásakori gyors hozzáférés részeként.
+Ha [engedélyezve van a](saved-views.md) Mentett nézetek, a csoportosítást menteni lehet olyan lapokon található nézet részeként, amelyek lehetővé teszik a lekérdezések mentését a nézetekbe. Például azok, akiknek nagy a nézetválasztójuk. További részleteket [a Nézetváltás a nézet](saved-views.md#switching-between-views) között szakasz tartalmaz. 
 
 ### <a name="multiple-levels-of-grouping"></a>Több szintű csoportosítás
 Miután egyetlen oszlop szerint csoportosította az adatokat, csoportosíthatja az adatokat egy másik oszlop szerint, ha a kívánt oszlopban a **Csoportosítás az oszlop szerint** lehetőséget választja. Ez a folyamat addig megismételhető, amíg 5 egymásba ágyazott csoportosítási szintet nem ér el, ami a maximális támogatott mélység. Ezen a ponton a továbbiakban nem tud további oszlopok szerint csoportosítani.

@@ -14,12 +14,12 @@ ms.search.industry: Distribution
 ms.author: henrikan
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3e9bc4fefb6aabc0b93d4d96f5930590ef99235b
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
-ms.translationtype: MT
+ms.openlocfilehash: 38bf1f9f201e7f34e6a7ea76fbef399ba94caafa
+ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567656"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8660379"
 ---
 # <a name="set-up-shipping-carriers"></a>A szállítmányozók beállítása
 
@@ -27,8 +27,8 @@ ms.locfileid: "7567656"
 
 Ez a témakör bemutatja, hogyan lehet beállítani a szállítmányozót, és meghatározni az olyan részleteket, mint például a szolgáltatás, a szállítási mód, a szállítási ajánlat, a szállítási megszorítások és a szállítási díj. A szállítási koordinátor ezután hozzárendelheti a szállítmányozót egy bejövő vagy kimenő rakományhoz.
 
-
 ## <a name="create-a-new-shipping-carrier"></a>Új szállítmányozó létrehozása
+
 1. Ugorjon a **Navigációs ablaktábla > Modulok > Szállításkezelés > Beállítás > Szállítmányozók > Szállítmányozók** lehetőségre.
 2. A Művelet panelen válassza az **Új** lehetőséget.
 3. Adjon meg egy értéket a **Szállítmányozók** mezőben.
@@ -36,6 +36,7 @@ Ez a témakör bemutatja, hogyan lehet beállítani a szállítmányozót, és m
 5. A **Mód** mezőben válasszon ki egy opciót a legördülő menüben.
 
 ## <a name="fill-in-the-general-information-for-the-shipping-carrier"></a>A szállítmányozóra vonatkozó általános információk kitöltése
+
 1. Bontsa ki az **Áttekintés** részt.
 2. Jelölje be a **Szállítmányozó aktiválása** jelölőnégyzetet, vagy törölje a kijelölést.
 3. A **Szállítói számla** mezőben válasszon ki egy lehetőséget a legördülő menüben. Válassza ki a szállítmányozóhoz hozzárendelendő szállítókódot.  
@@ -43,13 +44,16 @@ Ez a témakör bemutatja, hogyan lehet beállítani a szállítmányozót, és m
 5. Jelölje be a **Szállítmányozóminősítés engedélyezése** jelölőnégyzetet, vagy törölje a kijelölést.
 
 ## <a name="create-the-necessary-services-for-the-shipping-carrier"></a>A szállítmányozó számára szükséges szolgáltatások létrehozása
+
 1. Bontsa ki a **Szolgáltatások** részt.
 2. Válassza az **Új** lehetőséget.
 3. Adjon meg egy értéket a **Szállítmányozói szolgáltatás** mezőben.
 4. Írjon be egy értéket a **Név** mezőbe.
-5. A **Szállítási mód** mezőben válasszon ki egy opciót a legördülő menüben.
+5. A Rakománysablon **azonosítója mezőben** válassza ki a szolgáltatáshoz társítani kívánt rakománysablont. A rakománysablon határozza meg a teljes rakomány súlyának és térfogatának maximális mértékeit. Például a rakomány sablon jelentheti a konténer vagy teherautó méretét. A rakománysablon-sablonok ezenkívül a [rakományépítési](load-building-workbench.md) sablonokban és a rakományépítési munkaterületek használata során is meg vannak adva, amelyek a rakományok rakományépítési stratégiájának alkalmazásában segítenek a rakományok létrehozásában. Ennek eredményeképpen a rendszer a megadott rakománysablon-adatok összehasonlításával minden egyes új rakományt megfeleltet a megfelelő szállítmányozói szolgáltatásnak.
+6. A **Szállítási mód** mezőben válasszon ki egy opciót a legördülő menüben.
 
 ## <a name="set-up-the-address-for-the-carrier-optional"></a>A szállítmányozó címének beállítása (opcionális)
+
 1. Bontsa ki a **Címek** szakaszt.
 2. Válassza az **Új** lehetőséget.
 3. Adjon meg egy értéket a **Név vagy leírás** mezőben.
@@ -59,6 +63,7 @@ Ez a témakör bemutatja, hogyan lehet beállítani a szállítmányozót, és m
 7. Válassza ki az **OK** lehetőséget.
 
 ## <a name="set-up-the-rating-profile-for-the-shipping-carrier"></a>A szállítmányozó díjazási profil beállítása.
+
 1. Bontsa ki a **Díjazási profilok** részt.
 2. Válassza az **Új** lehetőséget.
 3. Adjon meg egy értéket a **Díjazási profilok** mezőben.

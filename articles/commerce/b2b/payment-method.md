@@ -2,7 +2,7 @@
 title: A B2B e-commerce webhelyekhez használt vevői számlafizetési mód konfigurálása
 description: Ez a témakör azt ismerteti, hogyan kell konfigurálni a vevői számla fizetési módját a következőben:Microsoft Dynamics 365 Commerce Ismerteti azt is, hogy a hitelkeretek hogyan befolyásolják a részszámla-kifizetések rögzítését a vállalat és vállalat között e-kereskedelmi webhelyeken.
 author: josaw1
-ms.date: 02/16/2022
+ms.date: 04/19/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 0366f7b51ac138cc7305f98d5607c554440e6d34
-ms.sourcegitcommit: 68114cc54af88be9a3a1a368d5964876e68e8c60
-ms.translationtype: MT
+ms.openlocfilehash: a8fdeb109204557f0e44457e23a60224e662474f
+ms.sourcegitcommit: 96e2fb26efd2cd07bbf97518b5c115e17b77a0a8
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323355"
+ms.lasthandoff: 04/20/2022
+ms.locfileid: "8616832"
 ---
 # <a name="configure-the-customer-account-payment-method-for-b2b-e-commerce-sites"></a>A B2B e-commerce webhelyekhez használt vevői számlafizetési mód konfigurálása
 
@@ -80,9 +80,9 @@ A Hitelkeret típus tulajdonság **által** támogatott értékek: **Nincs**, Eg
 > [!NOTE]
 > Javasoljuk **·** **, hogy a Hitelkeret típus tulajdonságát Egyenleg +** csomagolólevél vagy termékrendelés beállítására állítsa be, hogy a nyitott értékesítési rendelések ne számítsanak bele az egyenlegszámításba. Ezt követően, ha a vevők jövőbeni rendeléseket adnak fel, nem kell okkal befolyásolni az aktuális egyenlegüket.
 
-A **számlarendelést** **befolyásoló** másik tulajdonság a vevőrekord Jóváírás és beszedés gyorslapján található kötelező hitelkeret-tulajdonság. Ha adott **vevők** esetében Igenre állítani ezt a tulajdonságot, a rendszer ráveheti a hitelkeret-ellenőrzésre, még akkor is, **·** **ha** a Hitelkeret típusa tulajdonság beállítása "Nincs" beállítással határozza meg, hogy a hitelkeret ellenőrzése egyik vevőnél sem történik meg.
+A **számlarendelést** **befolyásoló** másik tulajdonság a vevőrekord Jóváírás és beszedés gyorslapján található kötelező hitelkeret-tulajdonság. **Ha** adott vevők esetében Igenre állítani ezt a tulajdonságot, a rendszernek arra kényszerítheti a hitelkeretét, hogy ellenőrizze a hitelkeretét, még akkor is, **·** **ha** a Hitelkeret típusa tulajdonság beállítása "Nincs" beállítással azt határozza meg, hogy a hitelkeret ellenőrzése egyik vevőnél sem történik meg.
 
-Jelenleg olyan B2B helyek **is** használhatók, ahol engedélyezve van a Kötelező hitelkeret tulajdonság. Ha a tulajdonság engedélyezve van egy vevőrekordban, és a vevő rendelést ad fel, akkor a B2B webhely megakadályozza, hogy a fennmaradó hitelegyenlegnél nagyobb összeget fizessen meg a számlára történő fizetésre. Ha például a vevő fennmaradó hitelegyenlege $1,000, de a rendelés érdemes $1,200, akkor a vevő csak $1,000 fizethet a számla módszerével. Más fizetési módot kell használniuk az egyenleg kifizetésére. Ha egy **vevőrekordban** le van tiltva a Kötelező hitelkeret tulajdonság, akkor a vevő bármilyen összeget kifizethet a számlánkénti fizetési mód használatával. Bár a vevő rendeléseket ad fel, a rendszer nem engedélyezi ezeknek a rendeléseknek a teljesítését, ha túllépik a hitelkeretet. Ha **a** **·** **hitelkeretet minden olyan vevőnél ellenőriznie kell, akinél ez a hitelkeret-kifizetésre jogosult, akkor javasoljuk,** **hogy** a Hitelkeret típus tulajdonságát Az egyenleg + csomagolási bizonylat vagy termékkifizetés, a kötelező hitelkeret tulajdonságot pedig Nem beállításra állítsa.
+Jelenleg a számlához használt fizetési módot használó vevő nem fizethet többet, mint a rendelés fennmaradó követel egyenlege. Ha például a vevő fennmaradó követel egyenlege $1,000 de a rendelés értéke $1,200, akkor a vevő csak a $1,000 fizethet a számla módszerével. A vevőnek ezután más fizetési módot kell használnia az egyenleg kifizetésére. A Commerce rendszer egy későbbi kiadásában a felhasználók a hitelkereteiken túl is költenek a rendelések kiadásakor.
 
 A **Jóváírás és beszedési modul** új hitelkezelési funkciókat kínál. Ha be szeretné kapcsolni ezeket a funkciókat, engedélyezze **a** Jóváíráskezelés funkciót a Szolgáltatáskezelés **munkaterületen**. Az új lehetőségek egyike lehetővé teszi, hogy a blokkolási szabályok alapján az értékesítési rendeléseket visszatartsa a rendszer. A hitelkártya-vezető ezután további elemzés után kiadhatja vagy elutasíthatja a rendeléseket. Az értékesítési rendelések a Commerce rendelések esetében nem alkalmazhatóak, mivel az értékesítési rendelésekhez gyakran van előleg, **és** a jóváírás-kezelési funkció nem támogatja teljesen az előlegfizetési helyzeteket. 
 
@@ -95,7 +95,7 @@ A commerce rendszer a zárolási szabályok alapján a commerce értékesítési
 - RetailCreateCustomerOrderExtensions_CredMan_Extension.xml
 - RetailCallCenterOrderExtensions_CredMan_Extension.xml
 
-Ne feledje, **hogy ha a CredManExcludeSalesOrder** **jelző** nemre van állítva, és a B2B-vevők a pénztári alkalmazás használatával vásárolnak az üzletekből, akkor sikertelen lehet a készpénz- és áthozott tranzakciók feladása. Például a készpénzfizetési típusra egy blokkolási szabály vonatkozik, és a B2B vevő készpénzzel vásárolt néhány, az üzletben található cikkeket. Ebben az esetben az eredményül kapott értékesítési rendelés számlázása nem lesz sikeres, mert az fel lesz függve. Ennek megfelelően a feladás sikertelen lesz. Ezért javasoljuk, hogy a testreszabás megvalósítása után hajtsa végre a teljes tesztelést.
+**Ha a CredManExcludeSalesOrder** **jelző** a Nem beállításra van állítva, és a B2B-vevők a pénztári alkalmazás használatával vásárolnak az üzletekből, akkor sikertelen lehet a készpénz- és áthozott tranzakciók feladása. Például a készpénzfizetés típusának blokkolási szabálya van, és a B2B vevő készpénzzel vásárolt néhány, az üzletben található cikkeket. Ebben az esetben az eredményül kapott értékesítési rendelés számlázása nem lesz sikeres, mert az fel lesz függve. Ennek megfelelően a feladás sikertelen lesz. Ezért javasoljuk, hogy a testreszabás megvalósítása után hajtsa végre a teljes tesztelést.
 
 ## <a name="additional-resources"></a>További erőforrások
 

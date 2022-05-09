@@ -2,19 +2,19 @@
 title: Általános hibaelhárítás
 description: Ez a témakör általános hibaelhárítási információkat tartalmaz a Pénzügy és művelet alkalmazások, illetve a Dataverse.
 author: RamaKrishnamoorthy
-ms.date: 04/07/2020
+ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
-ms.openlocfilehash: 8b5951f9f40179ca0bf31f5cccf1f05a0f968213
-ms.sourcegitcommit: 1843235766b6f8cf950a13a310e9f4f2f53c59a4
-ms.translationtype: HT
+ms.openlocfilehash: 5896b031229c7fe7e02c8ccf038dd2b1a4f2de05
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/07/2022
-ms.locfileid: "8554599"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8614095"
 ---
 # <a name="general-troubleshooting"></a>Általános hibaelhárítás
 
@@ -131,6 +131,29 @@ Az **Adatok** űrlapbeállítás újbóli engedélyezéséhez kövesse az alább
 2. Keresse meg az **Adatok** űrlapot az űrlapok csomópont alatt.
 3. Válassza ki az **Adatok** űrlapot, és kattintson a **Biztonsági szerepkörök engedélyezése** pontra.
 4. Módosítsa a biztonsági beállítást: **Megjelenítés mindenkinek**.
+
+## <a name="how-to-ensure-data-integration-is-using-the-most-current-finance-and-operations-schema"></a>Hogyan lehet gondoskodni az adatintegrációról a legfrissebb pénzügyi és műveleti séma használatával?
+
+Ha nem használja a legfrissebb sémát, akkor adatintegrációja során problémákba okozhatja az adatintegráció. A következő lépések segítséget fognak tenni az entitáslista frissítésében a Pénzügy és műveletek alkalmazásokban, valamint az Adat integrátorban található entitások frissítésében.
+
+### <a name="refresh-entity-list-in-finance-and-operations-environment"></a>Entitáslista frissítése a Pénzügyi és műveleti környezetben
+1.  Jelentkezzen be a Pénzügy és műveleti környezetbe.
+2.  Válassza ki **az Adatkezelést**.
+3.  Az Adatkezelési keretrendszeren belül válassza ki a **Keretrendszer paramétereit**.
+4.  Az Adatimportási **és -exportálási keretrendszer paraméterei** lapon jelölje **ki** az Entitásbeállítások lapot, és válassza az **Entitáslista frissítése lehetőséget**. Az érintett entitások számától függően a frissítés több mint 30 percig is eltarthat.
+5.  Nyissa meg az **Adatkezelést**, és válassza **ki az Adatentitások** listában a várt entitások érvényességét. Ha a várt entitások nincsenek felsorolva, ellenőrizze, hogy az entitások megjelennek-e a Pénzügyi és műveleti környezetben, és szükség szerint állítsa vissza a hiányzó entitásokat.
+
+#### <a name="if-the-refresh-fails-to-resolve-the-issue-delete-and-re-add-the-entities"></a>Ha a frissítés nem oldja meg a problémát, törölje és adja hozzá újra az entitásokat.
+
+> [!NOTE]
+> Lehet, hogy le kell állítania minden olyan feldolgozási csoportot, amely aktív módon használja az entitásokat a törlés előtt.
+
+1.  Válassza **ki az adatkezelést** a Pénzügyi és műveleti környezetben, és válassza ki az **Adatentitásokat**.
+2.  Problémákat okozható entitások keresése, valamint megjegyzés megadása a célentitásról, az előkészítő tábláról, az entitásnévről és egyéb beállításokról. Az entitás vagy entitások törlése a listából.
+3.  Válassza az **Új** lehetőséget, és adja hozzá újra az entitásokat a 2. lépésben származó adatok használatával. 
+
+#### <a name="refresh-entities-in-data-integrator"></a>Entitások frissítése az Adatentitásban
+Jelentkezzen be az Power Platform Adminisztrációs központba, és válassza az Adatintegráció **lehetőséget**. Nyissa meg azt a projektet, amelyben a problémák fordulnak elő, és válassza az **Entitások frissítése lehetőséget**.
 
 ## <a name="how-to-enable-and-save-network-trace-so-that-traces-can-be-attached-to-support-tickets"></a>Hogyan engedélyezheti és mentheti a hálózati nyomkövetést, hogy a nyomkövetés csatolható legyen a támogatási jegyekhez?
 

@@ -2,27 +2,42 @@
 title: A Commerce csatornák pénzügyi integrálásának beállítása
 description: Ez a témakör bemutatja, hogyan állíthatja be a pénzügyi integráció funkciót a Commerce csatornákhoz.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 04/28/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2017-06-20
-ms.openlocfilehash: e4b0b9f7eb4fb0ffab3237459d85ea92c83dd206
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: 51a75ce03b0ae6b744ec56df35bd3fdb1f40cf3a
+ms.sourcegitcommit: 5f7177b9ab192b5a6554bfc2f285f7cf0b046264
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462157"
+ms.lasthandoff: 04/30/2022
+ms.locfileid: "8661749"
 ---
 # <a name="set-up-the-fiscal-integration-for-commerce-channels"></a>A Commerce csatornák pénzügyi integrálásának beállítása
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 Ez a témakör bemutatja, hogyan állíthatja be a pénzügyi integráció funkciót a Commerce csatornákhoz. A pénzügyi integráció kapcsolatos további tudnivalókat lásd: [A pénzügyi integráció áttekintése a Commerce csatornákhoz](fiscal-integration-for-retail-channel.md).
 
+## <a name="enable-features-in-commerce-headquarters"></a>A Commerce Headquarters szolgáltatásainak engedélyezése
+
+A Commerce csatornák pénzügyi integrációs funkcióival kapcsolatos funkciók engedélyezéséhez kövesse ezeket a lépéseket.
+
+1. A Commerce-központban lépjen a **Rendszerfelügyelet \> Munkaterületek \> Funkciókezelés** részre.
+1. A következő funkciók megkeresik és engedélyezhetik:
+
+    - **Közvetlen pénzügyi integráció POS-pénztárgépekkel** – ez a funkció a pénztárnál futtatott pénzügyi csatlakoztatók létrehozására való képesség felvételének lehetőséggel bővíti a pénzügyi integrációs keretrendszert. Az ilyen típusú csatlakoztató egy PÉNZÜGYI eszközzel vagy szolgáltatással kommunikál, amely HTTP alkalmazásprogramozási felületet (API) biztosít, és nem igényel külön fizikai gépet az üzletben. Ez a funkció például lehetővé teszi a pénzügyi integrációt mobileszközök esetében, a megosztott hardverállomás használata nélkül.
+    - **Pénzügyi integráció technikai profil-felülbírálásai** – ez a funkció lehetővé teszi a pénzügyi integráció konfigurációjának kibontást, és lehetővé teszi a kapcsolati paraméterek ellenőrzését a POS-pénztárgép beállítási lapján. Ha ez a funkció engedélyezve van, akkor felülbírálhatja egy technikai profil paramétereit.
+    - **PÉNZTÁRi pénztárgép** pénzügyi nyilvántartási állapota – ha ez a funkció engedélyezve van, akkor letilthatja a pénzügyi regisztrációs folyamatot az egyes PÉNZTÁRi pénztárgépekkel. Ha a PÉNZTÁRi pénztárgépen le van tiltva a pénzügyi regisztráció, akkor az értékesítési tranzakciókat nem lehet végrehajtani a pénztárgépen.
+    - **Pénzügyi integráció - helyi tárolás** biztonsági mentése – ez a funkció kiterjeszti a pénzügyi integrációs keretrendszer hibakezelési lehetőségeit. Lehetővé teszi továbbá a pénzügyi regisztrációs adatok automatikus biztonsági mentését adatvesztés esetén, így az eszköz aktiválása közben a helyi tárolóban található adatok visszaállítása történik.
+
 ## <a name="set-up-commerce-parameters"></a>Commerce-paraméterek beállítása
+
+A Commerce rendszer paramétereinek beállítását a következő lépések szerint hajtsa végre.
 
 1. A **Commerce megosztott paraméterek** oldalon, az **Általános** lapon a **Pénzügyi integráció engedélyezése** lehetőséget állítsa **Igen** értékre.
 1. A **Számsorozatok** lapon határozza meg az alábbi hivatkozások számsorozatkódját:
@@ -33,8 +48,8 @@ Ez a témakör bemutatja, hogyan állíthatja be a pénzügyi integráció funkc
 
 1. A számsorozatot határozza meg a **Commerce paraméterek** lapon a pénzügyi funkcionális profilszám számára.
 
-    > [!NOTE]
-    > Számsorozatok megadása nem kötelező. Pénzügyi integráció entitásokhoz számok számsorozatokkal vagy manuálisan hozhatók létre.
+> [!NOTE]
+> Számsorozatok megadása nem kötelező. Pénzügyi integráció entitásokhoz számok számsorozatokkal vagy manuálisan hozhatók létre.
 
 ## <a name="set-up-a-fiscal-registration-process"></a>A pénzügyi regisztrációs folyamat beállítása
 
@@ -43,7 +58,7 @@ A pénzügyi integráció beállításának folyamata a következő általános 
 - Állítsa be a pénzügyi csatlakozókat, amelyek megjelenítik pénzügyi eszközöket és a szolgáltatásokat, amelyek a pénzügyi nyilvántartásokhoz használatosak például a pénzügyi nyomtatókat.
 - A dokumentum-szolgáltatók konfigurálása, amelyek pénzügyi dokumentumokat hoznak létre, amelyeket a pénzügyicsatlakozók regisztrálnak a pénzügyi eszközökbe vagy szolgáltatásokba.
 - Állítsa be a pénzügyi regisztrációs folyamatot, amely meghatározza a pénzügyi regisztrációs lépéseket, valamint a pénzügyi csatlakozókat és a pénzügyi dokumentumszolgáltatókat, amelyeket az egyes lépésekhez lesznek használva.
-- A pénztári (POS) funkcióprofilokhoz rendelje hozzá a pénzügyi regisztrációs eljárásokat.
+- Rendelje hozzá a pénzügyi regisztrációs folyamatot a POS funkcióprofiljaihoz.
 - Csatlakozó technikai profilok hozzárendelése a hardverprofilokhoz.
 - A csatlakoztató műszaki profilok hozzárendelése a POS hardver- vagy funkcióprofiljaihoz.
 
@@ -176,7 +191,7 @@ A pénzügyi nyilvántartási folyamatot a pénzügyi nyilvántartási folyamat 
 - A feliratkozások a pénzügyi regisztráció eseményeire és tranzakcióira a pénzügyi dokumentumszolgáltatóban vannak előre meghatározva.
 - A pénzügyi bizonylat szolgáltató feladata továbbá a pénzügyi regisztrációhoz használt pénzügyi csatlakozó azonosítása. Ez illeszkedik a csatlakozó funkcionális profiljaihoz, amelyek szerepelnek a pénzügyi csatlakozócsoportban, amely meg van adva az aktuális lépéshez a pénzügyi regisztrációs folyamatban azzal a műszaki profillal, amely hozzá van rendelve annak a Hardverállomásnak a hardverprofiljához, amellyel a pénztár párosítva van.
 - A pénzügyi bizonylat szolgáltató a pénzügyi dokumentumszolgáltató adattérképezési beállításait használja az olyan tranzakció-/eseményadatok átviteléhez, mint az adók és kifizetések, a pénzügyi dokumentum generálása során.
-- Amikor pénzügyi dokumentumszolgáltató pénzügyi dokumentum hoz létre, a pénzügyi csatlakozó elküldheti azt változatlanul a pénzügyi eszköznek, vagy elemezheti és átalakíthatja azt parancssorozattá a alkalmazásprogramozási felület (API) számára, attól függően, hogy hogyan történik a kommunikáció kezelése.
+- Amikor a pénzügyi bizonylat szolgáltatója pénzügyi bizonylatot generál, a pénzügyi csatlakoztató vagy a megfelelő módon elküldheti a pénzügyi eszköznek, vagy elemezheti, és az eszköz API-parancssorozata szerint átalakíthatja azt, a kommunikáció kezelésétől függően.
 
 ### <a name="set-up-registers-with-fiscal-registration-restrictions"></a>Pénztárak beállítása pénzügyi regisztrációs korlátozásokkal
 
@@ -283,4 +298,21 @@ Az halasztott pénzügyi regisztráció kézi végrehajtásának engedélyezés�
     1. Az **Elosztási ütemezés** lapon, futtassa a **1090** feladatot a módosításai átviteléhez a csatorna-adatbázisba.
 
 
+## <a name="view-connection-parameters-and-other-information-in-pos"></a>A POS kapcsolati paramétereinek és egyéb információinak megtekintése
+
+A pos rendszer kapcsolati paramétereinek és egyéb információinak megtekintéséhez kövesse ezeket a lépéseket.
+
+1. Nyissa meg a Modern POS (MPOS) vagy a Felhő POS (CPOS) terminált.
+1. Válassza a **Beállítások** lehetőséget. Ha engedélyezve van a pénzügyi integráció, **a** jobb oldalon található Pénzügyi integráció szakasz a következő adatokat mutatja:
+
+    - A pénzügyi regisztráció állapota
+    - A legutóbbi pénzügyi tranzakció állapota
+    - A függő könyvvizsgálati események száma
+
+1. A **részletek kiválasztásával** a következő információkat lehet megtekinteni:
+
+    - Regisztrációs folyamat lépései
+    - Kapcsolódási paraméterek
+    - Könyvvizsgálati események részletei
+ 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

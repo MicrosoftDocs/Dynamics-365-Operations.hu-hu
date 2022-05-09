@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 65891e380f740f4a1fa404d57789a6f50506d3b5
-ms.sourcegitcommit: 23588e66e25c05e989f3212ac519d7016820430a
+ms.openlocfilehash: 7ce30b64bc7c3889347bec94186614bd6cc337f4
+ms.sourcegitcommit: 1050e58e621d9a0454895ed07c286936f8c03320
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/13/2022
-ms.locfileid: "8565628"
+ms.lasthandoff: 04/21/2022
+ms.locfileid: "8625416"
 ---
 # <a name="provision-human-resources"></a>Human Resources kiépítése
 
@@ -41,7 +41,7 @@ Mielőtt elkezdené egy új termelési környezet biztosítását, a következő
 ## <a name="provision-a-human-resources-trial-environment"></a>Az Emberi erőforrások próbakörnyezetének kiépítése
 
 >[!NOTE]
-> 2022. április elején az Emberi erőforrások próbakörnyezete nem lesz elérhető a különálló alkalmazásban. Azok a potenciális vevők, akik az emberi erőforrásokkal kapcsolatos képességek felmérése iránt érdeklődők a Pénzügy és Műveletek alkalmazáson belül, ezt az ingyenes 30 napos próbaidőszakban, a bemutató adataival együtt megtenni. A Dynamics 365 Pénzügy az emberi erőforrások azon képességeit fogja tartalmazni, amelyek a pénzügyi infrastruktúra számára a különálló alkalmazás egyesítése révén biztosítanak majd szolgáltatásokat. A további tudnivalókat [lásd a HR-ajánlatok](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers)[egyesítése és a vevőknek való képességek egyesítésével kapcsolatban. A Dynamics 365 pénzügyekkel kapcsolatos további tudnivalókat lásd a lépésenként útmutatóban](/fin-ops/get-started/before-you-buy). 
+> 2022. április elején az Emberi erőforrások próbakörnyezete nem lesz elérhető a különálló alkalmazásban. Azok a potenciális vevők, akik az emberi erőforrásokkal kapcsolatos képességek felmérése iránt érdeklődők a Pénzügy és Műveletek alkalmazáson belül, ezt az ingyenes 30 napos próbaidőszakban, a bemutató adataival együtt megtenni. A Dynamics 365 Pénzügy az emberi erőforrások azon képességeit fogja tartalmazni, amelyek a pénzügyi infrastruktúra számára a különálló alkalmazás egyesítése révén biztosítanak majd szolgáltatásokat. A további tudnivalókat [lásd a HR-ajánlatok](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers)[egyesítése és a vevőknek való képességek egyesítésével kapcsolatban. A Dynamics 365 pénzügyekkel kapcsolatos további tudnivalókat lásd a lépésenként útmutatóban](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
 
 
 Az első üzenetkészlet vagy termelési környezet létesítása előtt szükség lehet egy Emberi erőforrások próbakörnyezet építésére, hogy érvényes legyen az [Emberi erőforrások próbakörnyezet](https://go.microsoft.com/fwlink/p/?LinkId=2115962) Emberi erőforrások szolgáltatás. A próbakörnyezetek olyan kitalált adatokat tartalmaznak, amelyek segítségével biztonságosan fel lehet fedezni a programot. Bár a próbakörnyezetek tulajdonosa az a felhasználó, aki kérte pket, más felhasználók is meghívhatók a Human Resources környezet rendszergazdai felületén keresztül. 

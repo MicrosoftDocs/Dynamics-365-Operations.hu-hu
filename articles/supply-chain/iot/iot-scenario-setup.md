@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2020-04-04
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: b8e8c65cebe64f86dcf158668e8a4f5600c158a1
-ms.sourcegitcommit: 9acfb9ddba9582751f53501b82a7e9e60702a613
-ms.translationtype: MT
+ms.openlocfilehash: 2956a9e18e24532c5a26bbbaf61438c9b7550a1a
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7782427"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644700"
 ---
 # <a name="scenario-setup-for-iot-intelligence"></a>Forgatókönyv beállítása IoT Intelligencia esetén
 
 [!include [banner](../../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani a IoT-intelligencia forgatókönyveit a Microsoft Dynamics 365 Supply Chain Management alkalmazásban. A forgatókönyvek helyek beállítása előtt [be kell állítania a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatást](iot-lcs-setup.md).
+Ez a témakör azt mutatja be, hogyan lehet beállítani a IoT-intelligencia forgatókönyveit a Microsoft Dynamics 365 Supply Chain Management alkalmazásban. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
 
 Ebben a témakörben konfigurálni fogja a **Berendezés üzemkimaradása** forgatókönyvet, hogy értesítést hozzon létre a Supply Chain Management alkalmazásban, amikor egy gép leáll. A témakör bemutatja, hogy hogyan lehet beállítani a **Termékminőség** esetet, hogy az értesítés jöjjön létre, ha a cikk egy attribútuma egy megadott tartományon kívülre esik, és hogyan kell beállítani a **Termelési késések** esetet, ha a termelési teljesítmény egy küszöbérték alá esik.
 

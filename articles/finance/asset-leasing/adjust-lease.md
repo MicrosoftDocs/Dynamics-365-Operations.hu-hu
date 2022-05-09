@@ -2,7 +2,7 @@
 title: Lízingek kiigazítása
 description: A témakör azt mutatja be, hogyan lehet beállítani egy lízinget. Előfordulhat, hogy kiigazításra van szükség a lízingfeltételek módosításakor, a lízing meghosszabbításakor vagy más körülmény változásakor.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 1016b69fd59bbe90924996f5c931cb5d0f779253de66f5f3821a8c3001d3313b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
-ms.translationtype: MT
+ms.openlocfilehash: 7d7151c28d124420638dc4e69a8ab5359ecf443c
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729654"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644555"
 ---
 # <a name="adjust-leases"></a>Lízingek kiigazítása
 
@@ -134,5 +134,19 @@ Ha a lízinget kiigazították, megtekintheti a különböző verzióit. Megteki
 2. Ha meg szeretné tekinteni a múltbeli ütemezéseket, nyissa meg a **Lízingösszesítő** oldalon a módosított lízinget, válassza ki a kívánt könyvet, majd a művelet ablaktáblán válassza ki a **Könyv verziójának előzményeit**.
 3. A **Könyvverzió** oldalon válasszon ki egy verziót és egy megtekinteni kívánt ütemezést.
 
+## <a name="adjust-a-lease-book"></a>Bérletkönyv beállítása
+
+A következő lépések szerint módosíthatja csak a bérletkönyveket.
+
+1. Ugrás az **Eszköz bérletbérletének** \> **összegzésére** \> **·**
+2. Válasszon ki és nyisson meg egy bérletet.
+3. Válassza a Könyvek **lehetőséget a Bérlet** részletei **lapon**.
+4. A Könyvek **részletei lapon** **·** **, a Munkaablak Csoport csoportban válassza a Könyv beállítása lehetőséget.** 
+5. A fizetési ütemezés sorainak eltávolítása.
+6. Adja meg **a** módosítás dátumát a Bérlet módosítási dátuma mezőben. Ezután fontolja meg minden további eszköz/kötelezettség (kezdeti közvetlen költség, bérlet ösztönző, bérletelőfizetés, szétszerelés költsége és maradványérték-garancia) eltávolítását, ha van ilyen. 
+7. A bérlet-módosításra vonatkozó nem pontos számítások elkerülése érdekében a módosítási dátumnak megfelelő új fizetési ütemezési sorokat adjon hozzá az új fizetési dátumokhoz. 
+
+> [!NOTE] 
+> Javasoljuk, hogy a bérlet helyesbítése **varázslóval** korrigáljon egy bérletet. A varázsló csökkenti a manuális lépések számát, előnézetet ad az egyenlegről a helyesbítés után, és lehetővé teszi az összegek feladás előtti változtatását.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

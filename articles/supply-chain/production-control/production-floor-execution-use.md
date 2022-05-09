@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: a677eb71f97a953c625a1f667b055e5b7696fbe6
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: f163b8feb906470f31a648bf09abf5647c5f1bab
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384419"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644990"
 ---
 # <a name="how-workers-use-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének dolgozók általi használata
 
@@ -74,9 +74,9 @@ Az aktív feladatokat tartalmazó lista az alábbi oszlopokkal rendelkezik.
 
 ## <a name="my-jobs-tab"></a>Feladatok lap
 
-A **Feladatok lap** segítségével a dolgozók egyszerűen megtekinthetik a kifejezetten hozzájuk rendelt még el nem adott és be nem adott feladatokat. Olyan vállalatoknál hasznos, ahol a feladatokat időnként vagy mindig meghatározott dolgozókhoz (emberi erőforrásokhoz) rendelik, nem pedig más típusú erőforrásokhoz (például gépekhez). 
+A **Feladatok lap** segítségével a dolgozók egyszerűen megtekinthetik a kifejezetten hozzájuk rendelt még el nem adott és be nem adott feladatokat. Olyan vállalatoknál hasznos, ahol a feladatokat időnként vagy mindig meghatározott dolgozókhoz (emberi erőforrásokhoz) rendelik, nem pedig más típusú erőforrásokhoz (például gépekhez).
 
-Az ütemezési rendszer automatikusan hozzárendel minden termelési feladatot egy adott erőforrásrekordhoz, és minden erőforrásrekordnak van típusa (például gép vagy emberi). Amikor beállít egy alkalmazottat termelési dolgozóként, a dolgozói számlát egy egyedi emberierőforrás-rekordhoz társíthatja. 
+Az ütemezési rendszer automatikusan hozzárendel minden termelési feladatot egy adott erőforrásrekordhoz, és minden erőforrásrekordnak van típusa (például gép vagy emberi). Amikor beállít egy alkalmazottat termelési dolgozóként, a dolgozói számlát egy egyedi emberierőforrás-rekordhoz társíthatja.
 
 A **Feladatok lap** felsorolja azokat a még el nem adott és be nem adott feladatokat, amelyek a bejelentkezett dolgozó emberierőforrás-rekordhoz vannak rendelve, amennyiben van bejelentkezett dolgozó. Soha nem sorolja fel azokat a feladatokat, amelyek hozzá vannak rendelve egy géphez vagy más típusú erőforráshoz, még akkor sem, ha a bejelentkezett dolgozó elkezdte dolgozni ezeket a feladatokat.
 
@@ -87,7 +87,7 @@ Ha az összes olyan feladatot meg kell tekinteni, amelyet a bejelentkezett dolgo
 ## <a name="my-machine-tab"></a>Saját gép lap
 
 A **Saját gép** lapon a dolgozók kiválasztják azt az eszközt, amely egy géperőforráshoz kapcsolódik a **Minden feladat** lapon beállított szűrőn belül. A dolgozó ezután megtekintheti a kiválasztott eszköz állapotát: legfeljebb négy kijelölt számláló értékét és a közelmúltbeli karbantartási kérések és a regisztrált leállások listáját olvassa be. A dolgozó a kiválasztott eszköz karbantartását is kérheti, valamint regisztrálhatja és szerkesztheti a gép leállását. (Ez a lapnév testreszabható, és az ön rendszerénél más lehet.)
- 
+
 ![Saját gép lap.](media/pfei-my-machine-tab.png "Saját gép lap")
 
 A **Saját gép lap** a következő oszlopokat tartalmazza. A számok az előzőekben bemutatott számoknak felelnek meg.
@@ -202,9 +202,9 @@ A következő műveletek végezhetők el:
 - Ha a dolgozó az OK **lehetőséget** választja, a kitárolási lista nem törlődik. A feladásra akkor történik meg, amikor **a** **feladatot jelentik a Selejtjelentés vagy a Jelentés állapota párbeszédpanelen.**
 - Ha a dolgozó a Jelentés **folyamatban** **·** **vagy** a Selejt jelentése párbeszédpanelen a Mégse lehetőséget választja, a kitárolási lista törlődik.
 
-### <a name="adjust-material-from-the-toolbar-on-the-right"></a>Anyag beállítása a jobb oldalon található eszköztárból
+### <a name="adjust-material-from-the-primary-or-secondary-toolbar"></a>Az elsődleges vagy másodlagos eszköztár anyagának beállítása
 
-Az **Anyag beállítása** gomb beállítható úgy, hogy megjelenjen a jobb eszköztáron. (További tájékoztatás: [A termelési emelet végrehajtási felületének tervezése](production-floor-execution-tabs.md).) Egy dolgozó beállíthatja az **Anyagok** kiigazítása lehetőséget a folyamatban lévő termelési feladathoz. Ebben az esetben megjelenik az **Anyag** beállítása párbeszédpanel, ahol a dolgozó módosíthatja a kívánt módosításokat. A párbeszédpanel megnyitásakor a termelési rendeléshez létrejön egy termelési kitárolási lista, amely tartalmazza a módosított mennyiségek sorait. Ha a dolgozó a Feladás lehetőséget **választja**, a módosítást visszaigazoljuk, és meg történik a kitárolási lista feladása. Ha a dolgozó a Mégse **lehetőséget választja**, a kitárolási lista törlődik, és nem kerül sor helyesbítésre.
+Az **Anyag beállítása** gomb beállítható úgy, hogy megjelenjen az elsődleges vagy a másodlagos eszköztáron. (További tájékoztatás: [A termelési emelet végrehajtási felületének tervezése](production-floor-execution-tabs.md).) Egy dolgozó beállíthatja az **Anyagok** kiigazítása lehetőséget a folyamatban lévő termelési feladathoz. Ebben az esetben megjelenik az **Anyag** beállítása párbeszédpanel, ahol a dolgozó módosíthatja a kívánt módosításokat. A párbeszédpanel megnyitásakor a termelési rendeléshez létrejön egy termelési kitárolási lista, amely tartalmazza a módosított mennyiségek sorait. Ha a dolgozó a Feladás lehetőséget **választja**, a módosítást visszaigazoljuk, és meg történik a kitárolási lista feladása. Ha a dolgozó a Mégse **lehetőséget választja**, a kitárolási lista törlődik, és nem kerül sor helyesbítésre.
 
 ### <a name="adjust-material-consumption-for-catch-weight-items"></a>Anyagfelhasználás kiigazítása a catch weight cikkekhez
 
@@ -260,6 +260,42 @@ Mindkét esetben, miután Shannon megerősíti a kijelölést, vagy a bejelentke
 A dolgozók a szüneteket is regisztrálhatják. A szünetek rugalmasan meghatározhatók, a [Regisztrációk alapján történő fizetés](pay-based-on-registrations.md) témakör leírása alapján.
 
 Ha dolgozó egy szünetet akar regisztrálni, kijelöli a **Szünet** lehetőséget , majd kiválasztja a szünet típusát képviselő lapot (például ebéd). Miután a dolgozó megerősíti a kijelölést, az eszköz a bejelentkezési oldalt vagy egy olyan oldalt jelenít meg, amelyen a dolgozónak vissza kell igazolnia, hogy visszatért a szünetből. A megjelenő lap a termelési üzem végrehajtási felületének konfigurációjától függ. (További tájékoztatás: [A termelési üzem végrehajtási felületének konfigurálása](production-floor-execution-configure.md).)
+
+## <a name="view-the-my-day-dialog"></a>A "Saját nap" párbeszédpanel megjelenítése
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+A **Saját nap** párbeszédpanelen a dolgozók áttekintést kaphatnak regisztrációikról és egyenlegeikről. A párbeszédpanel a következő három szakaszra van felosztva:
+
+- A fő szakasz felsorolja azokat a regisztrációkat, amelyekre az aktuális dolgozó a kiválasztott dátumon tett. Megjeleníti az aktuális nap regisztrációit, és olyan dátumválasztót biztosít, amely lehetővé teszi a dolgozó egyéb napok megjelenítését.
+- A **Legutóbbi számított napi egyenleg** szakasz a dolgozó fizetett időre, fizetett túlórára, távollétre és fizetett távollétre vonatkozó aktuális egyenlegét mutatja. Ezek az értékek a jóváhagyási folyamat során kiszámított regisztrációkon alapulnak.
+- Az **Egyenlegek** szakasz áttekintést nyújt a kiválasztott regisztrációs kategóriák (például szabadság, normál idő és túlóra) egy adott időszakon belüli egyenlegeiről. Ezek az egyenlegek azon alapulnak, hogy hogyan vannak beállítva a **statisztikai egyenlegek a Munka és jelenlét modulban**. További tájékoztatás a beállításról: [Szabadságegyenlegek megjelenítése a termelési emelet végrehajtási felületén](production-floor-execution-payroll-stats.md).
+
+A rendszergazdák úgy **adhatják** hozzá ezt a funkciót a felülethez, hogy minden megfelelő laphoz egy eszköztáron elhelyezik a [Saját nap gombot, amint azt a Termelési üzem végrehajtási felületének tervezése című témakör ismerteti](production-floor-execution-tabs.md).
+
+## <a name="working-in-teams"></a>Csapatokban való munka
+
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: preview until 10.0.27 GA -->
+
+Ha ugyanannak a termelési feladatnak több dolgozója van, akkor csapatokat lehet csapatokat formba rendelni. A csoport egy dolgozót jelölhet meg pilotként. A többi dolgozó automatikusan ennek az pilotnak az asszisztense lesz. Az eredményül kapott csapatnál csak az első csapatnak kell regisztrálnia a feladat állapotát. Az időrekordok minden csapattagra érvényesek.
+
+### <a name="prerequisites"></a>Előfeltételek
+
+A csapatok alkalmazáshoz a **rendszergazdáknak engedélyezniük kell az Asszisztens** **műveletet** az elsődleges eszköztáron a termelési emelet végrehajtási felületÉnek Minden feladat lapján. Az utasításokat lásd [a Termelés - emelet végrehajtási felületének tervezése.](production-floor-execution-tabs.md)
+
+### <a name="form-a-new-team-that-has-a-pilot-and-an-assistant"></a>Új csapat létrehozása, amely rendelkezik vezetővel és asszisztenssel
+
+Ha egy dolgozó asszisztensként **regisztrál, válassza az Asszisztens** gombra a Minden feladat **lapon**. Ezután a Megjelenő Alkalmazott kiválasztása **párbeszédpanelen** a dolgozó kiválaszthat egy pilot listában azokat a dolgozókat, akik aktívan dolgoznak egy adott munkakörben. Miután a dolgozó megerősíti a választást, a kiválasztott dolgozó asszisztense lesz, aki az új csapat jelölője lesz.
+
+### <a name="assign-a-new-pilot-to-an-existing-team"></a>Új pilot hozzárendelése meglévő csapathoz
+
+Ha egy csapat új alkalmazottat szeretne kijelölni, akkor az aktuális pilotnak a csoportban egy másik dolgozót kell kijelölnie új pilotként. Új pilot elnevezésére az aktuális vezető a **Minden feladat lapon az Asszisztens** **lehetőséget** választja. Ezután a megjelenő **Változásválasztó párbeszédpanelen** az pilot kiválaszthat egy új pilotot a már a csapatban dolgozó dolgozók listájáról. Miután a jelenlegi pilot megerősíti a választásukat, teljesen el lesz dobva a csapatból. Azonban ha szükséges, újra egyesedhet a csapattal.
+
+### <a name="assistant-clocks-out"></a>Asszisztens - érkezéskori érkezéskori idő
+
+Amikor egy asszisztensként dolgozó elhagyja a csapatát, akkor elhagyják a csapatát. Ha a állandó **csapatok** **·** *és* az Újraindítás érkezéskori idő beállítása Igen, egy olyan dolgozó, aki a következő érkezéskori érkezéskor csatlakozik a csapathoz, automatikusan újra csatlakozik a csapathoz. Ezek a lehetőségek a Jelenléti és jelenléti **paraméterek lap** Általános lapján találhatóak **.**
 
 ## <a name="opening-instructions"></a>Utasítások megnyitása
 

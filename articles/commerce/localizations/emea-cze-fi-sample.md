@@ -10,17 +10,16 @@ ms.search.region: Global
 ms.author: epopov
 ms.search.validFrom: 2019-4-1
 ms.dyn365.ops.version: 10.0.2
-ms.openlocfilehash: cb9679bd02c5400fc015c6807407b01e9bf55343
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: 1c764de42f727bb72adbb8b015745599f428656e
+ms.sourcegitcommit: 7faf82fa7ce269c0201abb8473af861ef7ce00bf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388236"
+ms.lasthandoff: 04/19/2022
+ms.locfileid: "8613909"
 ---
 # <a name="fiscal-registration-service-integration-sample-for-the-czech-republic"></a>Pénzügyi nyilvántartási szolgáltatás integrációs mintája a Cseh Köztársaság számára
 
 [!include[banner](../includes/banner.md)]
-[!include[banner](../includes/preview-banner.md)]
 
 Ez a témakör áttekintést nyújt a Cseh Köztársaság pénzügyi integrációs mintája ről Microsoft Dynamics 365 Commerce.
 
@@ -130,12 +129,12 @@ Adja hozzá a következő POS-címkéket **a** tábla Nyelvi szövegének **POS*
 
 | Nyelvazonosító | Szövegazonosító | Szöveg                   |
 |-------------|---------|------------------------|
-| hu-USA       | 900001  | Azonosító: provoz proxy/pokladny |
-| hu-USA       | 900002  | BKP                    |
-| hu-USA       | 900003  | KKP                    |
-| hu-USA       | 900004  | FIK                    |
-| hu-USA       | 900005  | Információ                   |
-| hu-USA       | 900006  | Sorszám        |
+| hu       | 900001  | Azonosító: provoz proxy/pokladny |
+| hu       | 900002  | BKP                    |
+| hu       | 900003  | KKP                    |
+| hu       | 900004  | FIK                    |
+| hu       | 900005  | Információ                   |
+| hu       | 900006  | Sorszám        |
 
 Adja hozzá **a** következő rekordokat az Egyéni mezők lapon a nyugtaelrendezések egyéni mezőihez. A felirat **szövegazonosító értékeinek** meg **·** **kell felelniük a Nyelv szövegoldalán megadott szövegazonosító értékeknek:**
 

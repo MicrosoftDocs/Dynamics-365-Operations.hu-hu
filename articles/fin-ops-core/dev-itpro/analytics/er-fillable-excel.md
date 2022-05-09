@@ -2,7 +2,7 @@
 title: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
 description: Ez a témakör azt mutatja be, hogyan lehet az Elektronikus jelentéskészítés (ER) formátumát egy Excel-sablon kitöltéséhez tervezni, majd a kimenő Excel-formátumú dokumentumokat generálni.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1b2f38aa9e5eff9366697afd57ceefd06f026096
-ms.sourcegitcommit: b80692c3521dad346c9cbec8ceeb9612e4e07d64
+ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/05/2022
-ms.locfileid: "8388263"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645135"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
@@ -141,7 +141,12 @@ Az Excel-sablont úgy is beállíthatja, hogy cellákat használjon a szöveges 
 > [!NOTE]
 > Az Excel [egy ismert korlátozása miatt még akkor is, ha a cellákat a szöveg csomagolására konfigurálja, és úgy konfigurálja a cellákat tartalmazó sorokat, hogy azok automatikusan módosítják a magasságukat, hogy elférjen a](https://support.microsoft.com/topic/you-cannot-use-the-autofit-feature-for-rows-or-columns-that-contain-merged-cells-in-excel-34b54dd7-9bfc-6c8f-5ee3-2715d7db4353) szövegbe illesztésében, előfordulhat, **hogy az egyesített cellákhoz és az őket tartalmazó sorokhoz nem tudja használni az AutoFit** **és a Csomagoló** szöveg Excel szolgáltatást. 
 
-Dynamics 365 Finance A 10.0.23-as verziótól az ER-t kényszerítheti arra, hogy egy generált dokumentumban kiszámítsa minden olyan sor magasságát, amely úgy volt beállítva, hogy automatikusan elférjen az egymásba ágyazott cellák tartalmához, valahányszor ez a sor legalább egy olyan egyesített cellát tartalmaz, amely úgy van beállítva, hogy a szöveget a fájlba csomagolja. A kiszámított magasság segítségével átméretezheti a sort, hogy a létrehozott dokumentumban a sor minden cellája látható legyen. Ha elkezdi használni ezt a funkciót, amikor bármilyen OLYAN ER-formátumot futtat, amely a kimenő dokumentumok előállításához Excel-sablonokat használt, kövesse ezeket a lépéseket.
+A Dynamics 365 Pénzügy 10.0.23-as verziója szerint, amikor egy generált dokumentumon dolgozik, az ER számára ki lehet kényszeríteni, hogy kiszámítsa minden olyan sor magasságát, amely úgy van beállítva, hogy automatikusan elférjen a beágyazott cellák tartalmához, valahányszor ez a sor legalább egy olyan egyesített cellát tartalmaz, amely úgy van beállítva, hogy a szöveget a fájlba csomagolja. A kiszámított magasság segítségével átméretezheti a sort, hogy a létrehozott dokumentumban a sor minden cellája látható legyen.
+
+> [!NOTE]
+> Ne feledje, hogy ez a funkció nem működik a várt módon, amikor egy egyesített cella formázására egyéni betűtípust használ. Mivel az Excel nem beágyaz egyéni betűtípusokat, nem ad meg információt az egyéni betűméretről. Ebből következően az egyesített cella mérete helytelenül becsülhető.
+
+Ha elkezdi használni ezt a funkciót, amikor bármilyen OLYAN ER-formátumot futtat, amely a kimenő dokumentumok előállításához Excel-sablonokat használt, kövesse ezeket a lépéseket.
 
 1. Ugorjon a **Szervezeti adminisztráció** \> **Munkaterületek** \> **Elektronikus jelentés** pontra.
 2. A **Lokalizációs konfigurációk** oldalon, a **Kapcsolódó hivatkozások** szakaszban, válassza az **Elektronikus jelentéskészítés paraméterei** elemet.
@@ -224,7 +229,7 @@ Ha az **Oldal** összetevőt használja az Excel oldalakra töréséhez, a gener
 > [!TIP]
 > Ennek az eredménynek az eléréséhez egy Excel-fejlécben vagy láblécben, használjon különleges Excel [formázást](/office/vba/excel/concepts/workbooks-and-worksheets/formatting-and-vba-codes-for-headers-and-footers) a fejlécekhez és láblécekhez.
 
-Ha egy Excel-sablont a Dynamics 365 Finance 10.0.22-es verzióban szerkeszthető formátumban frissít, akkor a program nem figyelembe venni a konfigurált **Oldal** összetevők használatát. Ez a funkció a Finance további kiadásai során tervezett.
+**Ha** a Dynamics 365 Pénzügy 10.0.22-es verziójában szerkeszthető formátumban frissít egy Excel-sablont, akkor a program nem figyelembe venni konfigurált lapösszetevőeket. Ez a funkció a Finance további kiadásai során tervezett.
 
 Ha [feltételes formázásra](/office/dev/add-ins/excel/excel-add-ins-conditional-formatting) használatára konfigurálja az Excel-sablont, bizonyos esetekben előfordulhat, hogy az nem a várt módon működik.
 

@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 description: Ez a témakör azokat a funkciókat ismerteti, amelyek el lettek távolítva, vagy eltávolításuk be van tervezve a Dynamics 365 Commerce alkalmazásban.
 author: josaw
-ms.date: 03/04/2022
+ms.date: 04/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 7b06f8ca65e4fac13f322f8d72b8ad4f9db8ccd7
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 213ed2091b1f2359f2481b162cba07812b3ffe90
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384607"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8649075"
 ---
 # <a name="removed-or-deprecated-features-in-dynamics-365-commerce"></a>Eltávolított vagy elavult funkciók a Dynamics 365 Commerce szolgáltatásban
 
@@ -32,6 +32,20 @@ Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatáso
 
 > [!NOTE]
 > A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük a Pénzügyi és műveleti alkalmazások egyes verzióiban módosult vagy eltávolított objektumokat.
+
+## <a name="features-removed-or-deprecated-in-the-commerce-10025-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.25 kiadásában
+
+### <a name="modern-point-of-sale-mpos"></a>Modern pénztár (MPOS)
+
+A Modern Point of Sale (MPOS) alkalmazás a Commerce 10.0.25-ös verziójában elavult lesz, és a Store Commerce alkalmazás helyettesíti.
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | Az üzleten lévő alkalmazások a felcserélhető Dynamics 365 Commerce szolgáltatás alapcsomópontját kínálják. Folyamatosan inszerzentáljuk a modern és intelligens áruházi tapasztalatokat, és a megoldás további modernizációja érdekében olyan új módosításokat hozunk létre, amelyek jelentős mértékben javítják az it-működést és a felhasználói tapasztalatokat a Windows rendszerben már meglévő, üzleten lévő alkalmazásokkal. Az új Store Commerce alkalmazás a meglévő MPOS technológiafrissítése. Jobb teljesítményt, megbízhatóságot és hosszú távú támogatást nyújt a Windows platformon, és nem szükséges az alkalmazás minden egyes frissítéssel történő átcsomagolása. |
+| **Felváltotta másik szolgáltatás?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
+| **Érintett területek**         | Modern értékesítési pont |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult: A Commerce rendszer 10.0.25-ös verziójának kiadásakor az LCS virtuális gépekkel (VM) szállított MPOS-telepítő eltávolítja a 2023-as verzióból. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10021-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.21 kiadásában
 
@@ -59,7 +73,7 @@ A kiskereskedelmi SDK-t a Lifecycle Services (LCS) csomagban szállítjuk. Ez a 
 | **Felváltotta másik szolgáltatás?**   |  [Töltse le a kiskereskedelmi SDK mintákat és referenciacsomagokat a GitHubról és innen: NuGet](../dev-itpro/retail-sdk/sdk-github.md) |
 | **Érintett területek**         | Retail SDK |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: A 10.0.21-es verzióban az LCS VM-ekkel szállított SDK-k 2023 áprilisában törlődnek. |
+| **Állapot**                         | Megszűnt: A 10.0.21-es kiadástól kezdve az LCS VM-eken keresztül szállított SDK 2023 októberében eltávolításra kerül. |
 
 ### <a name="retail-deployable-package-and-combined-pos-hardware-station-and-cloud-scale-unit-installers"></a>Kiskereskedelmi telepíthető csomag és kombinált POS, hardverállomás és Cloud Scale egység telepítői
 
@@ -92,7 +106,7 @@ POS-bővítmény fejlesztés a ModernPos.sln, CloudPos.sln, POS használatával.
 | **Felváltotta másik szolgáltatás?**   | [POS-független csomagolási SDK](../dev-itpro/pos-extension/pos-extension-getting-started.md) |
 | **Érintett területek**         | Dynamics 365 Commerce POS bővítés és telepítés |
 | **Telepítési beállítás**              | Összes |
-| **Állapot**                         | Elavult: A 10.0.21-es kiadásnak megfelelő kombinált POS-csomagok és bővítménymodellek támogatása a ModernPos.Sln, a CloudPOs.sln és a POS segítségével. A Retail SDK extensons.csproj készlete 2023 áprilisában lesz eltávolítva. |
+| **Állapot**                         | Megszűnt: A 10.0.21-es kiadástól kezdve a ModernPos.Sln, CloudPOs.sln és POS.Extensons.csproj csomagok és bővítmények kombinált POS csomagok és bővítmény modelljének támogatása a Retail SDK-ban 2023 októberében megszűnik. |
 
 ## <a name="features-removed-or-deprecated-in-the-commerce-10017-release"></a>Eltávolított vagy elavult szolgáltatások a Commerce 10.0.17 kiadásában
 

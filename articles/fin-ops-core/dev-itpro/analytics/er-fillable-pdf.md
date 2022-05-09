@@ -2,7 +2,7 @@
 title: A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
 description: Ez a témakör a PDF-sablon kitöltéséhez szükséges elektronikus jelentéskészítési (ER) formátum megtervezésével kapcsolatban tartalmaz tájékoztatást.
 author: NickSelin
-ms.date: 02/28/2022
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: ''
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: a568ddd93bfbc7d536e951a13470b3dedb796e1b
-ms.sourcegitcommit: 753714ac0dabc4b7ce91509757cd19f7be4a4793
+ms.openlocfilehash: 706256300cf0b64bc5b5e1e7adb77c1da500d16f
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/01/2022
-ms.locfileid: "8367856"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8645107"
 ---
 # <a name="design-er-configurations-to-fill-in-pdf-templates"></a>A PDF-sablonokat kitöltő ER-konfigurációk megtervezése
 
 [!include[banner](../includes/banner.md)]
 
-Az ebben a témakörben szereplő eljárások példák arra, hogy egy **Rendszergazda** vagy **Elektronikus jelentések fejlesztője** szerepkörrel rendelkező felhasználó hogyan tudja konfigurálni az Elektronikus jelentéskészítési (ER) formátumot, amely PDF-formátumban jelentéseket hoz létre jelentéssablonként használt, kitölthető PDF-dokumentumok segítségével. Ezeket a lépéseket bármely Dynamics 365 Finance vagy Regulatory Configuration Service (RCS)-vállalatban végrehajthatja.
+Az ebben a témakörben szereplő eljárások példák arra, hogy egy **Rendszergazda** vagy **Elektronikus jelentések fejlesztője** szerepkörrel rendelkező felhasználó hogyan tudja konfigurálni az Elektronikus jelentéskészítési (ER) formátumot, amely PDF-formátumban jelentéseket hoz létre jelentéssablonként használt, kitölthető PDF-dokumentumok segítségével. Ezek a lépések a Dynamics 365 Finance vagy Regulatory Configuration Services (RCS) bármely vállalatában elvégezhetők.
 
 ## <a name="prerequisites"></a>Előfeltételek
 
@@ -252,10 +252,14 @@ Mivel egyik tulajdonság megadása sem kötelező a **Mező** formátumelemhez, 
 - Ha a **Név** attribútum meghatározott, és a **Név** kifejezés konfigurált, akkor a program a formátumelem **Név** kifejezése által visszaadott érték nevével megegyező PDF-mezőt tölti ki.
 
 > [!NOTE]
-> A PDF-jelölőnégyzetet a kiválasztás szerint az alábbi módokon töltheti ki:
+> Ha a PDF-sablonban lévő egyik jelölőnégyzet nem tartozik jelölőnégyzetek csoportjához, akkor a szerkeszthető ER formátumban egy olyan mezőelemként jelenik meg, amely **a** **PDF-fájl** elem alá van ágyazva. A PDF-jelölőnégyzet ilyen típusú beállítása a következőképpen lehet beállítva:
 >
-> - Amikor a megfelelő **Mező** formátumelem egy **Logikai** adattípusú adatforrásmezőhöz van kötve, amely **Igaz** értékkel rendelkezik
-> - Amikor megfelelő **Mező** formátumelemben szerepel egy beágyazott **Karakterlánc** formátum elen, amely össze van kötve egy olyan adatforrásmezővel, amelynek szöveges értéke **1**, **Igaz** vagy **Igen**.
+> - A megfelelő **mező formátumeleme** egy *[...](er-formula-supported-data-types-primitive.md#boolean)* True értékű logikai adattípus adatforrásmezőjéhez van **kötve**.
+> - A megfelelő **mezőformátumelem** **·** **egy olyan beágyazott karakterlánc-formátumelemet tartalmaz, amely egy 1**,**·** **Igaz vagy Igen szöveges értékkel megadott adatforrásmezőhöz van kötve.**
+>
+> A sablon olyan jelölőnégyzetek csoportját tartalmazhatja, amelyeknél egyszerre csak egy jelölőnégyzet választható be. Ezek a jelölőnégyzetek a PDF-sablonban a CHECKBOX *típusú űrlapmezők* formájában formában stb. Mindegyik mezőnek ugyanaz a neve, de az exportálási értéke eltérő. Amikor a sablont szerkeszthető ER formátumba importálja, **·** **a** formátumhierarchia minden jelölőnégyzete egy jelölőnégyzetcsoport-elemként fog jelenni, amely a jelölőnégyzetek ugyanazon csoporteleme alá van beágyazva. A jelölőnégyzet csoportelemének **neve** megegyezik a PDF-sablonban található jelölőnégyzetmezők nevével. A Jelölőnégyzetek csoport minden **elemének neve** meg fog egyenni a PDF-sablon megfelelő jelölőnégyzetének exportálási értékével.
+>
+> A jelölőnégyzetek csoportosítási **elemét** csak logikai *adattípusú* adatforrásmezőhöz lehet kötni.
 
 ## <a name="run-the-format-configuration"></a>A formátumkonfigurációjának futtatása
 

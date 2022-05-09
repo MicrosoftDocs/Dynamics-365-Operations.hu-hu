@@ -2,7 +2,7 @@
 title: Adatimportálási és -exportálási feladatok áttekintése
 description: Az Adatezelése munkaterület segítségével hozhatja létre és kezelheti az adatimportálási és -exportálási feladatokat.
 author: peakerbl
-ms.date: 10/21/2021
+ms.date: 04/25/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: e63daad6f206500bfa21c28635648c717f5bbdde
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 74430aadc661a49e330960135ce7b0912079f79b
+ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071085"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8644459"
 ---
 # <a name="data-import-and-export-jobs-overview"></a>Adatimportálási és -exportálási feladatok áttekintése
 
@@ -74,8 +74,11 @@ Ha kiválaszt egy entitást, ki kell választania az exportálandó vagy import�
 > [!NOTE]
 > Fontos kiválasztani a helyes értéket a **Sorelválasztó**, az **Oszlopelválasztó** és a **Szövegminősítő** számára, ha a **Fájlformátum** beállítása **Tagolt**. Győződjön meg róla, hogy az adatok nem tartalmazzák elválasztóként vagy minősítőként használt karaktert, mivel ez hibákat okozhat az importálás és exportálás során.
 
+> [!NOTE]
+> XML-alapú fájlformátumok esetén ügyeljen arra, hogy csak jogi karaktereket használjon. Az érvényes karakterekről [az 1.0 XML-kódban szereplő érvényes karaktereknél olvashat bővebben](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). Az XML 1.0 nem enged meg vezérlő karaktereket, kivéve lapok, visszkocsik és sorbeadagolások esetén. A szabálytalan karakterekre példák a szögletes zárójelek, a szögletes zárójelek és a törtpillák. 
+
 ### <a name="sequence-the-entities"></a>Az entitások sorozetba állítása
-Az entitások sorrendbe állíthatók egy adatsablonban, valamint az importálási és exportálási feladatokban. Ha egy több adatentitást tartalmazó feladatot futtat, meg kell győződnie arról, hogy az adatentitások megfelelően vannak sorrendbe állítva. Az entitásokat alapvetően úgy kell sorozatba állítani, hogy meg lehessen címezni a funkcionális függőségeket az entitások között. Ha az entitások között nincsenek funkcionális függőségek, párhuzamos importálásra vagy exportálásra lehet ütemezni őket.
+Az entitások sorrendbe állíthatók egy adatsablonban, valamint az importálási és exportálási feladatokban. Ha egy több adatentitást tartalmazó feladatot futtat, meg kell győződnie arról, hogy az adatentitások megfelelően vannak sorrendbe állítva. Az entitásokat alapvetően úgy kell sorozatba állítani, hogy meg lehessen címezni a funkcionális függőségeket az entitások között. Ha az entitások között nincsenek funkcionális függőségek, párhuzamos importálásra vagy exportálásra lehet ütemezni őket. 
 
 #### <a name="execution-units-levels-and-sequences"></a>Végrehajtási egységek, szintek és sorozatok
 A végrehajtási egység, a végrehajtási egységbeli szint és az entitás sorrendje határozza meg az adatok exportálási vagy importálási sorrendjét.
@@ -206,7 +209,7 @@ A tisztítási folyamat ütemezésekor a következő paramétereket kell megadni
 ## <a name="job-history-clean-up-and-archival"></a>Feladatelőzmények tisztítása és archiválása 
 A feladat előzmények törlése és archiválása funkció felülírja a karbantartás funkció korábbi verzióit. Ez a szakasz ezeket az új képességeket fogja elmagyarázni.
 
-A karbantartás funkció egyik fő változtatása a rendszer kötegelt munkájának használata a előzmények törlésére. A rendszer kötegelt jobjának használata lehetővé teszi a Finance and Operations alkalmazások számára, hogy a tisztító kötegelt feladatot automatikusan ütemezzék és futtassák, amint a rendszer készen áll. A kötegelt feladat manuális ütemezésére már nincs szükség. Ebben az alapértelmezett végrehajtási módban a kötegelt feladat éjféltől óránként indul, és a legutóbbi 7 nap végrehajtási előzményeit fogja megtartani. A program archiválja a kiürített előzményeket a jövőbeli visszakeresés céljából. A 10.0.20-as verziótól kezdve ez a funkció mindig be van kapcsolva.
+A karbantartás funkció egyik fő változtatása a rendszer kötegelt munkájának használata a előzmények törlésére. A rendszer kötegelt feladatának használata lehetővé teszi, hogy a pénzügyi és a műveletalkalmazások a tisztítási kötegelt feladatot automatikusan ütemezve tásszák, és a rendszer elkészültének amint a rendszer készen áll. A kötegelt feladat manuális ütemezésére már nincs szükség. Ebben az alapértelmezett végrehajtási módban a kötegelt feladat éjféltől óránként indul, és a legutóbbi 7 nap végrehajtási előzményeit fogja megtartani. A program archiválja a kiürített előzményeket a jövőbeli visszakeresés céljából. A 10.0.20-as verziótól kezdve ez a funkció mindig be van kapcsolva.
 
 A karbantartási folyamat második változása a törölt végrehajtási előzmények archiválása. A karbantartási feladat archiválja a törölt rekordokat a blob-tárolóba amelyet a DIXF használ a rendszeres integrációhoz. Az archivált fájl DIXF-csomagformátumú lesz, és 7 napig elérhető lesz a blobban, és ekkor azt le lehet tölteni. Az archivált fájl alapértelmezett megtartási időtartama 7 nap, ami legfeljebb 90 napra módosítható a paraméterekben.
 

@@ -2,24 +2,20 @@
 title: Visszatérítések létrehozása a pénztárban
 description: Ez a témakör azt ismerteti, hogyan lehet visszatérítéseket kezdeményezni a készpénzben fizetett, azonnal átvett tranzakciókhoz vagy vevői rendelésekhez a Microsoft Dynamics 365 Commerce pénztár (POS) alkalmazásban.
 author: hhainesms
-ms.date: 02/24/2022
+ms.date: 04/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application User
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 2020-02-20
 ms.dyn365.ops.version: Release 10.0.20
-ms.openlocfilehash: 3250f702f033fb8b00763542fd8342c089b47b2e
-ms.sourcegitcommit: d2e5d38ed1550287b12c90331fc4136ed546b14c
+ms.openlocfilehash: c8e06c0d83e3bc2f5efea1e3a8124c700706aa2e
+ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/25/2022
-ms.locfileid: "8349691"
+ms.lasthandoff: 04/27/2022
+ms.locfileid: "8648988"
 ---
 # <a name="create-returns-in-pos"></a>Visszatérítések létrehozása a pénztárban
 
@@ -107,9 +103,64 @@ Az alábbi lista tartalmazza a különböző összetevők minimális verzióköv
 ## <a name="enable-proper-tax-calculation-for-returns-with-partial-quantity"></a>A megfelelő adószámítás engedélyezése a részleges mennyiséggel történő visszáru esetében
 
 Ez a funkció biztosítja, hogy amikor egy rendelés visszáruja több számla igénybevételével történik, akkor az adók végső soron megegyezzenek az eredetileg felszámolt adó összegével.
-1.  Nyissa meg a **Funkciókezelés** munkaterületet, és keresse meg a következőt: **A megfelelő adószámítás engedélyezése a részleges mennyiséggel történő visszáru esetében**.
-2.  Válassza az **A megfelelő adószámítás engedélyezése a részleges mennyiséggel történő visszáru esetében** elemet, és kattintson az **Engedélyezés** lehetőségre.
 
+1. A Funkciókezelési **munkaterületen** keresse **meg a megfelelő adószámítást a részleges mennyiséggel visszaadóhoz**.
+1. Válassza a Részleges mennyiség **funkcióval visszahozott** visszatérítések megfelelő adószámításának engedélyezése, majd az Engedélyezés **lehetőséget**.
+
+## <a name="set-up-return-locations-for-retail-stores"></a>Visszahozatali helyek beállítása a kiskereskedelmi áruházak számára
+
+A Commerce lehetővé teszi a kiskereskedelmi infókódok, valamint az értékesítési és marketing-okkódok alapján visszaküldési helyek beállítását. Amikor a vevők visszahoznak beszerzéseket, a pénztárosok gyakran jelzik a visszáru okát. Meghatározhatja, hogy a visszaküldött termékeket a pénztárosok által kiválasztott infókódok és okkódok alapján a készlet különböző visszáruhelyhez rendelik.
+
+Például a vevő egy hibás terméket ad vissza, és a pénztáros feldolgozza a visszáru-tranzakciót. Amikor a Retail POS megjeleníti a visszaadott cikkek infókódját, a pénztáros kiválasztja a hibásak visszaküldésének alkódját. A visszaküldött termék ezután automatikusan hozzá lesz rendelve egy adott visszáruhelyhez.
+
+A visszaszállítási hely lehet raktár, hely a raktárban, vagy akár egy bizonyos raklap, a szervezet által beállított készlethelyektől függően. Az egyes visszahelyeket leképezheti egy vagy több kiskereskedelmi infókódra, valamint értékesítési és marketing-okkódra.
+
+### <a name="prerequisites"></a>Előfeltételek
+
+A visszahelyeket csak akkor lehet beállítani, ha be vannak állítva a következő elemek:
+
+- **Kiskereskedelmi infókódok** – rákérdez a Retail modulban beállított POS-pénztárgépre **·**. További információ az infókódok [beállításával kapcsolatban tartalmaz tájékoztatást](/dynamicsax-2012/appuser-itpro/setting-up-info-codes).
+- **Értékesítés és marketing okkódok** – rákérdez az Értékesítés és marketing modulban beállított POS-pénztárgépre **·**. További tájékoztatás az okkódok [beállításával kapcsolatban tartalmaz tájékoztatást](/dynamicsax-2012/appuser-itpro/set-up-return-reason-codes).
+- **Készlethelyek** – az a hely, ahol a készletet tartják. További információ a készlethelyek [beállítása.](/dynamicsax-2012/appuser-itpro/about-locations)
+    
+### <a name="set-up-return-locations"></a>Visszahely beállítása
+
+A következő lépések szerint állíthatja be a visszahelyeket.
+
+1. Menjen a **Retail and Commerce \> Channel beállítási raktárakhoz \>**, és válasszon ki egy raktárat.
+1. **A Retail** gyorskódok Alapértelmezett **visszáruhely** mezőjében válassza ki azt a készlethelyet, amely olyan visszáruhoz van hozzárendelve, ahol az infókódok vagy okkódok nincsenek leképezve a visszahelyre.
+1. Az Alapértelmezett visszáru **raklap** mezőben válassza ki azt a raklapot, amely olyan visszáru esetén használható, ahol az infókódok vagy okkódok nincsenek leképezve a visszahelyre.
+1. Menjen a **Retail and Commerce \> Inventory management Visszáruhelyre \>**.
+1. A visszaküldési **hely** irányelvének létrehozásához válassza az Új lehetőséget.
+1. Adjon egyedi nevet a visszavételi helynek és írja be a leírását.
+
+    > [!NOTE]
+    > Ha a visszahelyhez be van állítva számsorozat, a rendszer automatikusan beírta a nevet.
+
+1. Az Általános **gyorscsoport** Igen beállítással nyomtassa ki a címkéket minden olyan termékhez, **·** **amely** visszáruhelyhez van rendelve.
+1. A Készletzárakozás **beállítás** **Igen** beállítással az alapértelmezett visszáruhelyen található termékeket a készletből kihozhatja, és megakadályozhatja az értékesítést.
+1. A következő lépések szerint lehet leképezni bizonyos kiskereskedelmi infókódokat és alkódokat a visszahelyre:
+
+    1. A Retail **infókódok** gyorsában válassza a Hozzáadás **lehetőséget**.
+    1. Az Infókód **mezőben** válassza ki a visszaküldés infókódját.
+    1. Az Alkód **mezőben** válassza ki a visszaküldés okának alkódját. A **Leírás** mezőben a kiválasztott alkód leírása látható.
+    1. Az Üzlet **mezőben** válassza ki azt az üzletet, ahol az infókódot használja.
+    1. A visszáru **helyét** **a** Raktár, **Hely és Raklap-azonosító** mezőkben adhatja meg. Például egy üzlet helyének megadásához válasszon **ki** egy üzletet az Üzlet mezőben, és egy helyet a Hely **mezőben**.
+    1. Jelölje be **a Készletzároló** jelölőnégyzetet, ha a visszaküldött termékeket ki szeretné venni a készletből, és meg szeretné akadályozni az értékesítést.
+
+1. Ha konkrét értékesítési és marketing-okkódokat kell leképezni a visszaadási helyekre, kövesse az alábbi lépéseket:
+
+    1. Az Értékesítési és **marketing okkódok gyorsában válassza** a Hozzáadás **lehetőséget**.
+    1. Az Okkód **mezőben** válassza ki a visszaadások okkódját. A **Leírás** mezőben a kiválasztott okkód leírása látható.
+    1. Az Üzlet **mezőben** válassza ki azt az üzletet, ahol az okkódot használja.
+    1. A visszáru **helyét** **a** Raktár, **Hely és Raklap-azonosító** mezőkben adhatja meg. Ha például meg kell adni egy raklapot egy raktár helyében, válasszon egy raktárat a **Raktár mezőben, egy helyet a** **Hely mezőben, és egy raklapot a** Raklap azonosítója **mezőben**.
+    1. Jelölje be **a Készletzároló** jelölőnégyzetet, ha a visszaküldött termékeket ki szeretné venni a készletből, és meg szeretné akadályozni az értékesítést.
+
+    > [!NOTE]
+    > Ha egy cikkhez visszaküldésihely-házirendet használnak, de **a** **pénztáros által kiválasztott visszaküldési ok nem felel meg a Kiskereskedelmi infókódok vagy az Értékesítési és marketing-okkódok** gyorslapon megadott kódoknak, **a** rendszer a cikket a Raktár lapon meghatározott alapértelmezett visszahelyre küldi. Ez azt is meghatározza, **·** **·** **hogy** a Visszáru helyei lap Általános gyorslapján található Készletzárak zárás jelölőnégyzetének beállítása határozza meg, hogy a visszárunál blokkolva legyen-e a készlet.
+
+1. Ugrás a **Retail and Commerce \> termékhierarchiára**
+1. A Készletkategória **tulajdonságainak** kezelése gyorscsoport Visszáruhely **mezőjében** válassza ki a visszáru helyét. Mivel ugyanannak az üzletnek több visszaküldési hely irányelve is meghatározható, az itt kiválasztott érték határozza meg a használt visszáruhely-házirendet.
 
 ## <a name="additional-resources"></a>További erőforrások
 
