@@ -10,15 +10,17 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Újdonságok és változások a Finance szolgáltatásban
               items:
-                - name: Újdonságok és változások a Finance kezdőlapján
+                - name: Újdonságok és változások a Finance szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Finance 10.0.27 (július)
+                  href: get-started/whats-new-changed-10-0-27.md
                 - name: Finance 10.0.26 (május)
                   href: get-started/whats-new-changed-10-0-26.md
                 - name: Finance 10.0.25 (április)
                   href: get-started/whats-new-changed-10-0-25.md
             - name: Eltávolított vagy elavult funkciók
               items:
-                - name: Eltávolított vagy elavult funkciók a kezdőlapon
+                - name: Eltávolított vagy elavult funkciók – kezdőlap
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
                 - name: Eltávolított vagy elavult szolgáltatások a Dynamics 365 Finance alkalmazásban
                   href: get-started/removed-deprecated-features-finance.md
@@ -412,30 +414,36 @@
                   href: accounts-receivable/subscription-billing-summary.md
                 - name: Ismétlődő szerződéses számlázás
                   items:
+                    - name: Ismétlődő szerződéses számlázás beállítása
+                      href: accounts-receivable/sb-recur-bill-parameters.md
                     - name: Számlázási ütemezések létrehozása
                       href: accounts-receivable/sb-billing-schedules.md
                     - name: Számlázási ütemezés másolása
                       href: accounts-receivable/sb-copy-schedules-items.md
                     - name: Számlázási ütemezés funkciói
                       href: accounts-receivable/sb-schedule-billing-features.md
-                    - name: Mérföldkő-számlázás
+                    - name: Mérföldkőszámlázás
                       href: accounts-receivable/sb-milestonebilling.md
+                    - name: Bevétel felosztása
+                      href: accounts-receivable/sb-rev-allocation.md
                     - name: Támogatási és megújítási folyamat
                       href: accounts-receivable/sb-support-renewals.md
+                    - name: Számlázatlan bevétel
+                      href: accounts-receivable/sb-unbilled-revenue.md
                     - name: Fogyasztói árindex ütemezései
                       href: accounts-receivable/cpischedules.md
                     - name: Számlázási ütemezések megszüntetése
                       href: accounts-receivable/terminate-billing-schedule.md
+                    - name: Igazítási dátumok esetei
+                      href: accounts-receivable/sb-alignment-date-examples.md
                 - name: Bevétel- és költséghalasztások
                   items:
                     - name: Bevétel- és költséghalasztások beállítása
                       href: accounts-receivable/sb-deferrals.md
-                    - name: Halasztási ütemezések
-                      items:
-                        - name: Halasztási ütemezések létrehozása
-                          href: accounts-receivable/sb-deferrals-schedules.md
-                        - name: Halasztás alapértelmezett tranzakciói
-                          href: accounts-receivable/sb-deferral-transactions.md
+                    - name: Halasztási ütemezések létrehozása
+                      href: accounts-receivable/sb-deferrals-schedules.md
+                    - name: Halasztás alapértelmezett tranzakciói
+                      href: accounts-receivable/sb-deferral-transactions.md
                 - name: Többelemes bevételfelosztás
                   items:
                     - name: Több elem bevételfelosztásának beállítása
@@ -1429,7 +1437,7 @@
                             - name: Azure-erőforrások beállítása elektronikus számlázáshoz
                               href: localizations/e-invoicing-set-up-azure-resources.md?toc=/dynamics365/finance/toc.json
                             - name: Azure Key Vault létrehozása az Azure Portalon
-                              href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md?toc=/dynamics365/finance/toc.json
+                              href: localizations/e-invoicing-create-azure-key-vault-azure-portal.md?toc=/dynamics365/finance/toc.json
                             - name: Azure-tárfiók létrehozása az Azure Portalon
                               href: localizations/e-invoicing-create-azure-storage-account-azure-portal.md
                             - name: SharePoint kapcsolat konfigurálása
@@ -1460,6 +1468,8 @@
                           href: localizations/e-invoicing-complete-publish-deploy-globalization-feature.md?toc=/dynamics365/finance/toc.json
                         - name: Megosztás más szervezetekkel
                           href: localizations/e-invoicing-share-other-organizations.md?toc=/dynamics365/finance/toc.json
+                        - name: Felhasználáskezelési irányítópult
+                          href: localizations/e-invoicing-usage-management-dashboard.md?toc=/dynamics365/finance/toc.json
                         - name: Bejövő elektronikus dokumentumok feldolgozása
                           items:
                             - name: Bejövő elektronikus dokumentumok feldolgozása
@@ -1468,12 +1478,12 @@
                               href: localizations/e-invoicing-configure-email.md?toc=/dynamics365/finance/toc.json
                             - name: SharePoint csatorna konfigurálása
                               href: localizations/e-invoicing-configure-sharepoint-channel.md
-                        - name: Elektronikus számlázás beállítása és használata a Finance és a Supply Chain Management szolgáltatásban
-                          items:
-                            - name: Elektronikus számlázással való integráció aktiválása és beállítása
-                              href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
-                            - name: Az elektronikus számlázási paraméterek beállítása
-                              href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
+                    - name: Elektronikus számlázás beállítása és használata a Finance és a Supply Chain Management szolgáltatásban
+                      items:
+                        - name: Elektronikus számlázással való integráció aktiválása és beállítása
+                          href: localizations/e-invoicing-activate-setup-integration.md?toc=/dynamics365/finance/toc.json
+                        - name: Az elektronikus számlázási paraméterek beállítása
+                          href: localizations/e-invoicing-set-up-parameters.md?toc=/dynamics365/finance/toc.json
                         - name: Az elektronikus számlázás használata
                           items:
                             - name: Elektronikus dokumentumok elküldése elektronikus számlázásra
@@ -1486,12 +1496,6 @@
                       items:
                         - name: Az elektronikus számlázási funkciók elérhetősége
                           href: localizations/e-invoicing-country-specific-availability.md?toc=/dynamics365/finance/toc.json
-                        - name: Első lépések az elektronikus számlázási szolgáltatás adminisztrálása során
-                          href: localizations/e-invoicing-get-started-service-administration.md?toc=/dynamics365/finance/toc.json
-                        - name: Első lépések az elektronikus számlázás használata során
-                          href: localizations/e-invoicing-get-started.md?toc=/dynamics365/finance/toc.json
-                        - name: Új elektronikus számlázási funkció létrehozása
-                          href: localizations/e-invoicing-create-new-e-invoicing-feature.md
                         - name: Első lépések a Brazíliára vonatkozó elektronikus számlázás használata során
                           href: localizations/e-invoicing-bra-get-started.md?toc=/dynamics365/finance/toc.json
                         - name: Első lépések az Egyiptomra vonatkozó elektronikus számlázás használata során
@@ -1504,13 +1508,9 @@
                           href: localizations/e-invoicing-ita-fatturapa-get-started.md
                         - name: Az elektronikus számlázási szolgáltatás használata a szállítói számlák importálására
                           href: localizations/e-invoicing-get-started-import-vendor-invoices.md
-                        - name: Az elektronikus számlázás beállítása
-                          href: localizations/e-invoicing-setup.md?toc=/dynamics365/finance/toc.json
-                        - name: Power Platform beépülő modul rendszergazdai hivatkozása
-                          href: localizations/e-invoicing-power-platform-plug-in.md
                     - name: Elektronikus számlázás – GYIK
                       href: localizations/e-invoicing-faq.md?toc=/dynamics365/finance/toc.json
-                - name: Áfaszámítás
+                - name: Adószámítás
                   items:
                     - name: Adószámítás áttekintése
                       href: localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/finance/toc.json
@@ -1618,7 +1618,13 @@
                           href: localizations/tcs-troubleshooting-failed-access-tax-service.md
                         - name: Üres adófunkció-lista az Adószámítási paraméterekben
                           href: localizations/tcs-troubleshooting-tax-feature-list-empty-tax-calculation-parameter.md
-                    - name: Áfaszámítás – GYIK
+                        - name: Az adókód nem állapítható meg
+                          href: localizations/tcs-troubleshooting-tax-code-cannot-be-determined.md
+                        - name: Nem található megfelelő eredmény
+                          href: localizations/tcs-troubleshooting-no-matching-result.md
+                        - name: Hibakeresési mód engedélyezése az Adószámítási szolgáltatásban
+                          href: localizations/tcs-troubleshooting-enable-debug-mode.md
+                    - name: Adószámítás – GYIK
                       href: localizations/global-tax-calcuation-service-faq.md?toc=/dynamics365/finance/toc.json
             - name: Adó
               items:
@@ -3725,6 +3731,8 @@
                   href: ../fin-ops-core/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/dynamics365/finance/toc.json
                 - name: Értékesítési és jövedelmezőségi teljesítmény
                   href: ../fin-ops-core/dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/dynamics365/finance/toc.json
+                - name: Előfizetéses számlázásra vonatkozó Power BI-tartalmak
+                  href: accounts-receivable/sub-bill-power-bi.md
                 - name: Szállítói kifizetések
                   href: accounts-payable/Vendor-payments-workspace.md
                 - name: Munkaerő-mutatók

@@ -10,6 +10,8 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
             - name: Újdonságok és változások a Human Resources szolgáltatásban
               items:
+                - name: Human Resources 10.0.27 (egyesített infrastruktúra)
+                  href: ./get-started/hr-whats-new-changed-10-0-27.md
                 - name: Human Resources 10.0.26 (egyesített infrastruktúra)
                   href: ./get-started/hr-whats-new-changed-10-0-26.md
                 - name: Human Resources 10.0.25 (egyesített infrastruktúra)

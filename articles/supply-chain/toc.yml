@@ -10,19 +10,17 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/supply-chain/toc.json
             - name: A Supply Chain Management újdonságai és változásai
               items:
-                - name: Újdonságok és változások a Supply Chain Management kezdőlapján
+                - name: Újdonságok és változások a Supply Chain Management szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.27 (2022. július)
+                  href: get-started/whats-new-scm-10-0-27.md
                 - name: Supply Chain Management 10.0.26 (2022. május)
                   href: get-started/whats-new-scm-10-0-26.md
                 - name: Supply Chain Management 10.0.25 (2022. április)
                   href: get-started/whats-new-scm-10-0-25.md
-                - name: Supply Chain Management 10.0.24 (2022. február)
-                  href: get-started/whats-new-scm-10-0-24.md
-                - name: Supply Chain Management 10.0.23 (2022. január)
-                  href: get-started/whats-new-scm-10-0-23.md
             - name: Eltávolított vagy elavult funkciók
               items:
-                - name: Eltávolított vagy elavult funkciók a kezdőlapon
+                - name: Eltávolított vagy elavult funkciók – kezdőlap
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Eltávolított vagy elavult funkciók a Dynamics 365 Supply Chain Management szolgáltatásban
                   href: get-started/removed-deprecated-features-scm-updates.md
@@ -346,7 +344,7 @@
                           href: ../finance/localizations/e-invoicing-power-platform-plug-in.md?toc=/dynamics365/supply-chain/toc.json
                         - name: Elektronikus számlázás – GYIK
                           href: ../finance/localizations/e-invoicing-faq.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Áfaszámítás
+                - name: Adószámítás
                   items:
                     - name: Adószámítás áttekintése
                       href: ../finance/localizations/global-tax-calcuation-service-overview.md?toc=/dynamics365/supply-chain/toc.json
@@ -1719,19 +1717,17 @@
                   href: inventory/inventory-visibility-tips.md
         - name: IoT-intelligencia
           items:
-            - name: Az IoT-intelligencia kezdőlapja
+            - name: IoT-intelligencia – kezdőlap
               href: iot/iot-intelligence-home-page.md
             - name: Azure-erőforrások beállítása
               href: iot/iot-azure-setup.md
-            - name: Az IoT-központhoz tartozó üzenetséma-formátumok
+            - name: Az IoT Hubhoz tartozó üzenetséma-formátumok
               href: iot/iot-schema-format.md
-            - name: Telepítse a bővítményt az LCS-ben
-              href: iot/iot-lcs-setup.md
             - name: Mutatók beállítása
               href: iot/iot-metrics-setup.md
             - name: Eset beállítása
               href: iot/iot-scenario-setup.md
-            - name: Figyelemmel kísérés és kezelés
+            - name: Figyelés és kezelés
               href: iot/iot-management.md
         - name: Alaptervezés
           items:
@@ -2757,6 +2753,8 @@
                   href: production-control/production-floor-execution-setup.md
                 - name: A termelési üzem végrehajtási felületének használata dolgozók számára
                   href: production-control/production-floor-execution-use.md
+                - name: Szabadságegyenlegek megjelenítése a termelési üzem végrehajtási felületében
+                  href: production-control/production-floor-execution-payroll-stats.md
                 - name: A termelési üzem végrehajtási felületének kialakítása
                   href: production-control/production-floor-execution-styles.md
                 - name: A termelési üzem végrehajtási felületének testreszabása

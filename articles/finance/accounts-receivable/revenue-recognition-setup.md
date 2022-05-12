@@ -2,7 +2,7 @@
 title: A bevételelszámolás beállítása
 description: Ez a cikk a bevételmegjelenítés beállítási lehetőségeit és a beállítások hatását mutatja be.
 author: kweekley
-ms.date: 11/24/2021
+ms.date: 04/28/2022
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: e8e29ec1ca5a02db67bb4baf522da96ec23c740f
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 5f72ebd743763db7c68340a833c2501d47d27081
+ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867220"
+ms.lasthandoff: 04/29/2022
+ms.locfileid: "8656721"
 ---
 # <a name="revenue-recognition-setup"></a>A bevételelszámolás beállítása
 [!include [banner](../includes/banner.md)]
@@ -100,7 +100,7 @@ Adjon meg leíró értéket a **Bevétel ütemezése** és a **Leírás** mezőb
     - **Előfordulások** – Az összeg egyenlően oszlik el az előfordulások között, de ha a **Tényleges indítási dátumot** választja ki megjelenítési szabályként, akkor egy további időszakra is kiterjedhet.
     - **Pénzügyi időszak, napok szerint** – Az összeg felosztása az egyes pénzügyi időszakok tényleges napjai alapján történik. 
 
-    A **Havi, napok szerint** és a **Pénzügyi időszak, napok szerint** beállítás ugyanazt az eredményt adja, ha a pénzügyi időszakok megegyeznek a naptári hónapokkal. Az egyetlen kivétel, ha a Megjelenítési szabály beállításnál a **Hónap/időszak vége** beállítást választja, és a **Szerződés kezdő dátuma** és a **Záró dátum** mezőket üresen hagyják az értékesítési rendelés soránál.
+         - A **Havi, napok szerint** és a **Pénzügyi időszak, napok szerint** beállítás ugyanazt az eredményt adja, ha a pénzügyi időszakok megegyeznek a naptári hónapokkal. Az egyetlen kivétel, ha a Megjelenítési szabály beállításnál a **Hónap/időszak vége** beállítást választja, és a **Szerződés kezdő dátuma** és a **Záró dátum** mezőket üresen hagyják az értékesítési rendelés soránál.
 
 - **Megjelenítési szabály** – A megjelenítési szabály határozza meg a számla bevételi ütemezésének dátumait.
 
@@ -108,7 +108,7 @@ Adjon meg leíró értéket a **Bevétel ütemezése** és a **Leírás** mezőb
     - **Hónap/időszak első napja** – Az első ütemezési sor dátuma a szerződés kezdő dátuma (vagy a számla dátuma). A program azonban az összes további ütemezési sort a hónap vagy a pénzügyi időszak első napjához hozza létre.
     - **Felosztás a hónap közepén** – Az ütemezés első sorának dátuma a számla dátumától függ. Ha a számla feladása a hónap első és tizenötödik napja közé esik, a bevétel ütemezése a hónap első napja alapján jön létre. Ha a számla feladása a hónap tizenhatodik napjára vagy később esik, a bevétel ütemezése a következő hónap első napja alapján jön létre.
 
-        A **Felosztás a hónap közepén** beállítás nem választható ki, ha a megjelenítési beállításnál a **Pénzügyi időszak, napok szerint** értéket választotta.
+        - A **Felosztás a hónap közepén** beállítás nem választható ki, ha a megjelenítési beállításnál a **Pénzügyi időszak, napok szerint** értéket választotta.
 
     - **Következő hónap/időszak első napja** – Az ütemezés kezdő dátuma a következő hónap vagy pénzügyi időszak első napja.
     - **Hónap/időszak vége** – Az első ütemezési sor dátuma a szerződés kezdő dátuma (vagy a számla dátuma). A program azonban az összes további ütemezési sort a hónap vagy a pénzügyi időszak utolsó napjához hozza létre. 

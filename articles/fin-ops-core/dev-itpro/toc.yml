@@ -12,15 +12,17 @@
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
             - name: Újdonságok és változások a Platformfrissítésekben
               items:
-                - name: Újdonságok és változások a Platformfrissítések kezdőlapján
+                - name: Újdonságok és változások a Platform-frissítések terén – kezdőlap
                   href: get-started/whats-new-home-page.md
-                - name: Platformfrissítések a 10.0.26-os verzióhoz (2022. május)
+                - name: Platform-frissítések a 10.0.27-es verzióhoz (2022. július)
+                  href: get-started/whats-new-platform-updates-10-0-27.md
+                - name: Platform-frissítések a 10.0.26-os verzióhoz (2022. május)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: Platformfrissítések a 10.0.25-ös verzióhoz (2022. április)
+                - name: Platform-frissítések a 10.0.25-ös verzióhoz (2022. április)
                   href: get-started/whats-new-platform-updates-10-0-25.md
             - name: Eltávolított vagy elavult funkciók
               items:
-                - name: Eltávolított vagy elavult funkciók a kezdőlapon
+                - name: Eltávolított vagy elavult funkciók – kezdőlap
                   href: ../fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
                 - name: A platform eltávolított vagy elavult funkciói
                   href: get-started/removed-deprecated-features-platform-updates.md
@@ -66,6 +68,8 @@
                   href: data-entities/odata.md
                 - name: Egyéni szolgáltatásfejlesztés
                   href: data-entities/custom-services.md
+                - name: Szolgáltatáskérés követése
+                  href: data-entities/service-request-tracing.md
                 - name: Ismétlődő integrációk
                   href: data-entities/recurring-integrations.md
                 - name: Szolgáltatások tesztelése harmadik fél segédprogramjaival
@@ -1714,6 +1718,22 @@
                       href: migration-upgrade/migrate-upgraded-cube-entity-store.md
                     - name: Költségvetés-tervezés frissítése
                       href: migration-upgrade/upgrade-budget-planning.md
+                - name: A frissítés hibaelhárítása
+                  items:
+                    - name: Fejlesztői környezetek hibaelhárítása a frissítés során
+                      href: migration-upgrade/troubleshoot-dev-env.md
+                    - name: Az önkiszolgáló környezetek frissítéseinek hibaelhárítása
+                      href: migration-upgrade/troubleshoot-self-service-env.md
+                    - name: PreSync és PostSync frissítési szkriptek hibaelhárítása
+                      href: migration-upgrade/pre-post-upgrade-scripts.md
+                - name: Környezeti műveletek
+                  items:
+                    - name: Dokumentummellékletek áttelepítése
+                      href: migration-upgrade/migrate-doc-attachments-ax-2012.md
+                    - name: Forrásadatok karbantartása a frissítéshez
+                      href: migration-upgrade/clean-up-source-data-upgrade.md
+                    - name: Táblák tömörítése Dynamics AX 2012-környezetekben
+                      href: migration-upgrade/compress-tables-ax-2012.md
             - name: Adatok áttelepítése AX 2009-ből
               items:
                 - name: Adatok áttelepítése AX 2009-ből a Finance and Operations alkalmazásba
@@ -2000,3 +2020,5 @@
       href: ../../finance/index.md
     - name: Dynamics 365 Commerce
       href: ../../commerce/index.md
+    - name: Dynamics 365 Human Resources
+      href: ../../human-resources/index.md

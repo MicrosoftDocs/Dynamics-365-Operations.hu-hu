@@ -10,19 +10,17 @@
               href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
             - name: Újdonságok és változások a Commerce szolgáltatásban
               items:
-                - name: Újdonságok és változások a Commerce kezdőlapján
+                - name: Újdonságok és változások a Commerce szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.27 (2022. július)
+                  href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (2022. május)
                   href: get-started/whats-new-commerce-10-0-26.md
                 - name: Commerce 10.0.25 (2022. április)
                   href: get-started/whats-new-commerce-10-0-25.md
-                - name: Commerce 10.0.24 (2022. február)
-                  href: get-started/whats-new-commerce-10-0-24.md
-                - name: Commerce 10.0.23 (2022. január)
-                  href: get-started/whats-new-commerce-10-0-23.md
             - name: Eltávolított vagy elavult funkciók
               items:
-                - name: Eltávolított vagy elavult funkciók a kezdőlapon
+                - name: Eltávolított vagy elavult funkciók – kezdőlap
                   href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
                 - name: Eltávolított vagy elavult szolgáltatások a Finance and Operations alkalmazásban
                   href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
@@ -356,6 +354,8 @@
                           href: tax-exempt-price-inclusive.md
                         - name: Az online rendelések áfájának konfigurálása
                           href: sales-tax-config.md
+                        - name: Adózásrészletezési információk elrejtése a rendelésösszesítésekben
+                          href: hide-taxes-breakup.md
                     - name: E-mail-értesítési profil beállítása
                       href: email-notification-profiles.md
                     - name: Számsorozatok
@@ -394,7 +394,7 @@
                       href: dev-itpro/store-commerce.md
                     - name: Eszközkezelés megvalósítási útmutatója
                       href: implementation-considerations-devices.md
-                    - name: Az MPOS és a Cloud POS közötti választás
+                    - name: A Store Commerce és a Cloud POS közötti választás
                       href: MPOS-or-CPOS.md
                     - name: Online és offline pénztárműveletek
                       href: pos-operations.md
@@ -496,6 +496,8 @@
                   href: tasks/configure-functionality-profile-sales-representative.md
                 - name: Pénzügyi dimenziók létrehozása Retail csatornákhoz és a dimenziók értékeinek konfigurálása az áruházakban
                   href: tasks/create-financial-dimensions-retail-channels.md
+                - name: Számsorozatok beállítása kiskereskedelmi kimutatásokhoz
+                  href: retail-statements-number-sequences.md
                 - name: Konzisztens szállítási mód kezelésének engedélyezése az e-kereskedelmi csatornákban
                   href: consistent-delivery-mode-handling.md
             - name: Online csatorna beállítása
@@ -884,6 +886,8 @@
           items:
             - name: Kimutatások áttekintése
               href: retail-statements.md
+            - name: Commerce feladási paraméterek
+              href: commerce-posting-parameters.md
             - name: Üzleti tranzakciók ellenőrzése kimutatásszámításhoz
               href: valid-checker.md
             - name: Kiskereskedelmi tranzakciók konzisztencia-ellenőrzési szabályainak letiltása
@@ -1100,6 +1104,8 @@
                       href: adventure-works-theme.md
                     - name: Az Adventure Works téma telepítése
                       href: install-adventure-works.md
+                - name: Commerce honosítási útmutató
+                  href: e-commerce-localization-guide.md
             - name: Digitális eszközök kezelése
               items:
                 - name: Digitális eszközök kezelésének áttekintése
@@ -1312,6 +1318,14 @@
               href: b2b/payment-method.md
             - name: A termékmennyiség-limitek beállítása a B2B e-kereskedelmi webhelyeken
               href: b2b/quantity-limits.md
+            - name: Commerce-katalógusok B2B webhelyekhez
+              items:
+                - name: Commerce-katalógusok létrehozása B2B webhelyekhez
+                  href: catalogs-b2b-sites.md
+                - name: Commerce-katalógusok B2B-testreszabásokra vonatkozó bővíthetőségi hatása
+                  href: catalogs-b2b-sites-dev.md
+                - name: Commerce-katalógusok B2B-hez – GYIK
+                  href: catalogs-b2b-sites-FAQ.md
         - name: Megfigyelés és elemzés
           items:
             - name: Értékesítés és teljesítménykülönbözet megfigyelése
@@ -2474,13 +2488,17 @@
                       href: dev-itpro/extension-resource-localization.md
             - name: Nem központosított Commerce
               items:
-                - name: API-k és hivatkozás
+                - name: Áttekintés
                   items:
-                    - name: Commerce Scale Unit – ügyfél és fogyasztói API-k
+                    - name: A Commerce Scale Unit (CSU) Core bemutatása
+                      href: dev-itpro/CSU-core.md
+                - name: API-k és referencia
+                  items:
+                    - name: Commerce Scale Unit – ügyfél- és fogyasztói API-k
                       href: dev-itpro/retail-server-customer-consumer-api.md
                     - name: Retail Server API-k felhasználása külső alkalmazásokban
                       href: dev-itpro/consume-retail-server-api.md
-                    - name: Typescript és C# proxyk a Retail POS-hoz
+                    - name: TypeScript- és C#-proxyk a Retail POS-hoz
                       href: dev-itpro/typescript-proxy-retail-pos.md
                     - name: A Commerce Runtime (CRT) architektúrája és konfigurációja
                       href: dev-itpro/commerce-runtime-overview.md
@@ -2528,7 +2546,9 @@
                       href: dev-itpro/extensions-shipping-carrier-integration.md
                 - name: Csomagolás és telepítés
                   items:
-                    - name: Felhőskálázási egység bővítményeinek eltávolítása
+                    - name: Cloud Scale Unit-bővítménycsomag létrehozása
+                      href: dev-itpro/CSU-packaging.md
+                    - name: Cloud Scale Unit-bővítményeinek eltávolítása
                       href: dev-itpro/retail-sdk/remove-csu-package.md
             - name: Store Commerce
               items:
@@ -2540,17 +2560,19 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Pénztárbővítmények áttelepítése a Commerce SDK-ra
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Store Commerce-bővítmények hibakeresése a VS Code használatával
+                      href: dev-itpro/sc-debug.md
                 - name: Környezet beállítása
                   items:
                     - name: Helyi fejlesztőkörnyezet
                       href: dev-itpro/setup-local-dev-env.md
-                    - name: Pénztárbővítmény csomagprojekt létrehozása
+                    - name: Pénztárbővítmény-csomagprojekt létrehozása
                       href: dev-itpro/pos-extension/create-pos-extension-package.md
                     - name: Egy .appx-fájl létrehozása a Modern POS-bővítménycsomaghoz
                       href: dev-itpro/pos-extension/create-pos-extension-appx.md
                     - name: Pénztárbővítmények hibakeresése
                       href: dev-itpro/pos-extension/debug-pos-extension.md
-                - name: API-k és hivatkozás
+                - name: API-k és referencia
                   items:
                     - name: Pénztárbővítmény csomaginformációjának megtekintése
                       href: dev-itpro/view-pos-extension-package-details.md
@@ -2610,10 +2632,12 @@
                   items:
                     - name: MPOS-bővítménycsomag létrehozása
                       href: dev-itpro/pos-extension/mpos-extension-packaging.md
-                    - name: MPOS (MSIX) bővítménycsomag kódaláírása
+                    - name: MPOS (MSIX)-bővítménycsomag kódaláírása
                       href: dev-itpro/pos-extension/mpos-extension-signing.md
                     - name: Cloud POS-bővítménycsomag létrehozása
                       href: dev-itpro/pos-extension/cpos-extension-package.md
+                    - name: Store Commerce-bővítménytelepítő csomag létrehozása
+                      href: dev-itpro/store-comm-extension-installer.md
             - name: E-kereskedelem
               items:
                 - name: Áttekintés
@@ -2636,7 +2660,7 @@
                       href: e-commerce-extensibility/configure-env-file.md
                     - name: E-kereskedelmi fejlesztési környezet konfigurálása Commerce felhőalapú környezetben
                       href: e-commerce-extensibility/debug-tier-1.md
-                - name: API-k és hivatkozás
+                - name: API-k és referencia
                   items:
                     - name: CLI-parancs referenciája
                       href: e-commerce-extensibility/cli-command-reference.md
@@ -2814,8 +2838,12 @@
                       items:
                         - name: Telemetria-naplózó
                           href: e-commerce-extensibility/telemetry-logger.md
-            - name: Commerce HQ
+            - name: Commerce Headquarters
               items:
+                - name: CDX-csomag bővítése
+                  items:
+                    - name: Ügyfél CDX-csomagjának bővítése egyéni adatok hozzáadásához
+                      href: dev-itpro/extend-customer-CDX-package.md
                 - name: Csomagolás és telepítés
                   items:
                     - name: Commerce-fizetéscsomag létrehozása a pénzügyi és műveleti alkalmazások telepítéséhez
@@ -2896,7 +2924,7 @@
                   href: troubleshoot/restrict-access-storefront.md
                 - name: A bejelentkezési hivatkozás visszairányít az e-kereskedelmi webhelyre
                   href: troubleshoot/sign-in-redirects-back.md
-                - name: Az ügyfélrekordok nem jelennek meg a Commerce központban
+                - name: Az ügyfélrekordok nem jelennek meg a Commerce headquartersben
                   href: troubleshoot/customer-record-not-appearing.md
                 - name: A Személyes átvétel beállítás nem jelenik meg
                   href: troubleshoot/pickup-store-link-missing.md
