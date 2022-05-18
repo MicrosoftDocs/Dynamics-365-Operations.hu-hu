@@ -1,6 +1,6 @@
 ---
 title: Bevételkimutatás pénzügyi jelentés
-description: Ez a cikk a bevételkimutatások alapvető jelentését írja le. Emellett a jelentéshez tartozó építőelemeket is leírja.
+description: Ez a témakör a bevételi kimutatások alapértelmezett jelentését írja le. Emellett a jelentéshez tartozó építőelemeket is leírja.
 author: jcart1106
 ms.date: 06/20/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 12294
 ms.assetid: 30820be0-d943-4f8b-8c25-6414ec393b3d
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 118c7207f6efc252c0265d6c8f7b949c0e178203bf8523585aa2bfc53a69a6a2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6f664eeaa5cf40ce856b424d10ba2d1c3bd46e1c
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6746392"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734747"
 ---
 # <a name="income-statement-financial-report"></a>Bevételkimutatás pénzügyi jelentés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk a bevételkimutatások alapvető jelentését írja le. Emellett a jelentéshez tartozó építőelemeket is leírja. 
+Ez a témakör a bevételi kimutatások alapértelmezett jelentését írja le. Emellett a jelentéshez tartozó építőelemeket is leírja. 
 
 ## <a name="default-income-statement-report"></a>Alapértelmezett bevételkimutatás jelentés
 

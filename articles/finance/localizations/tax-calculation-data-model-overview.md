@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 976a90b1a04a5bba91d73712d4d38a8c9038d885
-ms.sourcegitcommit: 6fd739976b46122f9a9002309aba60edb89e5468
+ms.openlocfilehash: 759803767111c27cba76b68430e09a0d9dd6110f
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/16/2022
-ms.locfileid: "8453482"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694256"
 ---
 # <a name="tax-calculation-data-model"></a>Adószámítási adatmodell
 
@@ -99,7 +98,7 @@ A jobb és második adatmodellek a tranzakció fejlécében szereplő mezőkkén
 | Szállítás címzettjéhez tartozó ország/régió típusa      | <ul><li>Ha a **Szállítás feladójának országa/régiója** és a **Szállítás címzettjének országa/régiója** mezők ugyanazzal az értékkel rendelkeznek, akkor a típus **Belföldi**.</li><li>A megfeleltetést a **Külkereskedelmi paraméterek** oldal **Ország/régió paraméterei** lapjának konfigurációja határozza meg (**Adó** &gt; **Beállítás** &gt; **Külkereskedelem** &gt; **Külkereskedelmi paraméterek**), a **Szállítás címzettjének országa/régiója** mező értéke alapján.</li><li>Nem alkalmazható beszerzési **igénylésre**.</li></ul> |
 | Szállítás címzettjének megyéje/állama          | <ul><li>**Értékesítési rendelés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Állam</li></ol></li><li>**Beszerzési rendelés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Állam</li></ol></li><li>**Átmozgatási rendelések – Szállítás**<ol><li>Fejléc &gt; Címzett raktár &gt; Elsődleges cím &gt; Állam</li><li>Fejléc &gt; Címzett telephely &gt; Elsődleges cím &gt; Állam</li></ol></li><li>**Átmozgatási rendelés – Bevételezés**<ol><li>Fejléc &gt; Címzett raktár &gt; Elsődleges cím &gt; Állam</li><li>Fejléc &gt; Címzett telephely &gt; Elsődleges cím &gt; Állam</li></ol></li><li>**Ajánlatkérés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Állam</li></ol></li><li>**Értékesítési ajánlat:**<ol><li>Fejléc &gt; Szállítási cím &gt; Állam</li></ol></li><li>**Szabadszöveges számla:**<ol><li>Fejléc &gt; Vevői számla &gt; Alapértelmezett szállítási cím &gt; Állam</li><li>Fejléc &gt; Vevői számla &gt; Elsődleges cím &gt; Állam</li></ol></li><li>**Napló (vevő):**<ol><li>Vevői számla alapértelmezett &gt; szállítási címének állama &gt;</li><li>Vevői számla Elsődleges &gt; címének állama &gt;</li></ol></li><li>**Napló (szállító):**<ol><li>Jogi személy &gt; Alapértelmezett szállítási cím &gt; Állam</li><li>Jogi személy &gt; Elsődleges cím &gt; Állam</li></ol></li></ul> |
 | Szállítás címzettjének irányítószáma                 | <ul><li>**Értékesítési rendelés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Irányítószám</li></ol></li><li>**Beszerzési rendelés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Irányítószám</li></ol></li><li>**Átmozgatási rendelések – Szállítás**<ol><li>Fejléc &gt; Címzett raktár &gt; Elsődleges cím &gt; Irányítószám</li><li>Fejléc &gt; Címzett telephely &gt; Elsődleges cím &gt; Irányítószám</li></ol></li><li>**Átmozgatási rendelés – Bevételezés**<ol><li>Fejléc &gt; Címzett raktár &gt; Elsődleges cím &gt; Irányítószám</li><li>Fejléc &gt; Címzett telephely &gt; Elsődleges cím &gt; Irányítószám</li></ol></li><li>**Ajánlatkérés:**<ol><li>Fejléc &gt; Szállítási cím &gt; Irányítószám</li></ol></li><li>**Értékesítési ajánlat:**<ol><li>Fejléc &gt; Szállítási cím &gt; Irányítószám</li></ol></li><li>**Szabadszöveges számla:**<ol><li>Fejléc &gt; Vevői számla &gt; Alapértelmezett szállítási cím &gt; Irányítószám</li><li>Fejléc &gt; Vevői számla &gt; Elsődleges cím &gt; Irányítószám</li></ol></li><li>**Napló (vevő):**<ol><li>Vevőkód Alapértelmezett szállítási &gt; cím - &gt; irányítószám</li><li>Vevőkód – &gt; Elsődleges cím &gt; irányítószáma</li></ol></li><li>**Napló (szállító):**<ol><li>Jogi személy &gt; Alapértelmezett szállítási cím &gt; Irányítószám</li><li>Jogi személy &gt; Elsődleges cím &gt; Irányítószám</li></ol></li></ul> |
-| Telephely                             | <ul><li>**Értékesítési rendelés**: Telephely</li><li>**Beszerzési rendelés:** Telephely</li><li>**Átmozgatási rendelések – Szállítás:** A Feladó raktár telephelye</li><li>**Átmozgatási rendelések – Bevételezés:** A Címzett raktár telephelye</li><li>**Ajánlatkérés:** Telephely</li><li>**Értékesítési árajánlat:** Telephely</li></ul> |
+| Webhely                             | <ul><li>**Értékesítési rendelés**: Telephely</li><li>**Beszerzési rendelés:** Telephely</li><li>**Átmozgatási rendelések – Szállítás:** A Feladó raktár telephelye</li><li>**Átmozgatási rendelések – Bevételezés:** A Címzett raktár telephelye</li><li>**Ajánlatkérés:** Telephely</li><li>**Értékesítési árajánlat:** Telephely</li></ul> |
 | Adó iránya                    | <ul><li>**Értékesítési rendelés:** Kimenet</li><li>**Beszerzési rendelés:** Bemenet</li><li>**Átmozgatási rendelés - Szállítás:** Kimenet</li><li>**Átmozgatási rendelés – Bevételezés** Bemenet</li><li>**Beszerzési igénylések:** Bemenet</li><li>**Ajánlatkérés:** Bemenet</li><li>**Értékesítési árajánlat:** Kimenet</li><li>**Szabadszöveges számla:** Kimenet</li></ul> |
 | Szállítói számla                   | <ul><li>**Beszerzési rendelés:** Szállítói számla</li><li>**Napló (szállító):** Szállítói számla</li></ul> |
 | Szállító számlaszáma           | <ul><li>**Beszerzési rendelés:** Számlafogadó</li><li>**Napló (szállító):**<ol><li>Szállító fő számlaszáma &gt;</li><li>Szállítói számla</li></ol></li></ul> |

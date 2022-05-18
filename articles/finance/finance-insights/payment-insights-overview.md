@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "14151"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 04897e3a7765264ab2e664422caa928c49b9cc61
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f3d6f328ff3fd4da6ad3e7d4f3f751d3be692736
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982039"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713190"
 ---
 # <a name="customer-payment-predictions"></a>Vevői fizetési előrejelzések
 
@@ -66,6 +66,6 @@ A beszedési folyamat számos vállalkozásban reaktív tevékenység. Más szó
 
 ## <a name="methodology"></a>Módszertan
 
-A múltban általában nehéz mesterséges intelligencia-(AI) megoldást fejleszteni és alkalmazni. A folyamatnak adatszakértők, adott téma szakértői (SME-k) és mérnökök csapatára van szükség, akik idővel dolgoznak egy használható AI-megoldás kialakításán, fejlesztésén, üzembe helyezésén és karbantartásán. A vevői kifizetési előrejelzések segítségével egyszerűen telepíthető és használható a Microsoft Dynamics 365 Finance AI megoldása. A Microsoft előre csomagolja a Microsoftra épülő AI-megoldásokat AI Builder. Ezért a felhasználók egyetlen kattintással telepíthetik az AI megoldást, hogy kihasználhassák egy intelligens előrejelzés előnyeit. Ha nem elégedett az előrejelzések pontosságával, egy felhasználó (ismét, egyetlen kattintással) megadhatja a hosszabbítást, majd kiválaszthatja vagy törli a megfelelő mezőket, amelyek az előrejelzések generálásával AI Builder használatosak. Ha készen áll a programra, akkor „tanítsa be” a modellt, majd tegye közzé a változtatásokat. Az újonnan betanított modell automatikusan felveszi az előrejelzések létrehozásához a Dynamics 365 Finance-ben.
+A múltban általában nehéz mesterséges intelligencia-(AI) megoldást fejleszteni és alkalmazni. A folyamatnak adatszakértők, adott téma szakértői (SME-k) és mérnökök csapatára van szükség, akik idővel dolgoznak egy használható AI-megoldás kialakításán, fejlesztésén, üzembe helyezésén és karbantartásán. A vevői kifizetések előrejelzései megkönnyítik az AI-megoldás Microsoft Dynamics üzembe helyezését és használatát a 365 Pénzügyben. A Microsoft előre csomagolja a Microsoftra épülő AI-megoldásokat AI Builder. Ezért a felhasználók egyetlen kattintással telepíthetik az AI megoldást, hogy kihasználhassák egy intelligens előrejelzés előnyeit. Ha nem elégedett az előrejelzések pontosságával, egy felhasználó (ismét, egyetlen kattintással) AI Builder megadhatja a hosszabbítást, majd kiválaszthatja vagy törli a megfelelő mezőket, amelyek az előrejelzések generálásával használatosak. Ha készen áll a programra, akkor „tanítsa be” a modellt, majd tegye közzé a változtatásokat. A rendszer automatikusan felveszi az újonnan modellmodellt, hogy előrejelzéseket generáljon a Dynamics 365 Pénzügyben.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 308e2a538666522edf4a76be13b93c82c3f3a774
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9b83250bdb54ea6e78709dd3a3ea434a994f6211
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071110"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694004"
 ---
 # <a name="integration-with-finance-faq"></a>Integráció a Finance GYIK szolgáltatással
 
@@ -30,11 +29,11 @@ ms.locfileid: "8071110"
 
 
 
-Ez a témakör gyakori kérdésekre válaszol azzal kapcsolatban, hogy milyen adatok szinkronizálása történik a Dynamics 365 Human Resources és a Dynamics 365 Finance integrációja esetén.
+Ez a témakör megválaszolja a Dynamics 365 Human Resources Dynamics 365 Pénzügy integrálásakor szinkronizált adatokkal kapcsolatos gyakori kérdéseket.
 
 ## <a name="can-i-edit-the-dynamics-365-talent-application-user-in-power-apps"></a>Szerkeszthetem az Dynamics 365 Talent alkalmazás felhasználóját a Power Apps-ben?
 
-Szám Ha módosítja a Human Resources alkalmazás felhasználóját, a Human Resources és a Dataverse integrációja sikertelen lehet. Az alábbi táblázat a Talent alkalmazásfelhasználó alapértelmezett beállításait mutatja be.
+Nem. Ha módosítja a Human Resources alkalmazás felhasználóját, a Human Resources és a Dataverse integrációja sikertelen lehet. Az alábbi táblázat a Talent alkalmazásfelhasználó alapértelmezett beállításait mutatja be.
 
 | Teljes név | Pályázat azonosítója | Azure AD Objektumazonosító | Alkalmazásazonosító URI |
 | --- | --- | --- | --- |
@@ -44,7 +43,7 @@ Szám Ha módosítja a Human Resources alkalmazás felhasználóját, a Human Re
 
 ## <a name="is-all-data-synchronized-or-just-some-data-entities"></a>A programok minden adatokat szinkronizálják vagy csak bizonyos adatentitásokat?
 
-A rendszer szinkronizálja az adatok egy részhalmazát. Az összes entitás listáját lásd: [Integráció a Dynamics 365 Finance](hr-admin-integration-finance.md) szolgáltatással.
+A rendszer szinkronizálja az adatok egy részhalmazát. Az összes entitást a [Dynamics 365 Pénzügy integrációja című témakör tartalmazza](hr-admin-integration-finance.md).
 
 ## <a name="why-dont-i-see-any-data-synced-to-dataverse"></a>Miért nem látok semmilyen adatot szinkronizálva a Dataverse megoldásba?
 
@@ -89,7 +88,7 @@ Speciális beállítás nem szükséges a kivételek kezeléséhez. Az Adatinteg
 
 ## <a name="can-i-set-up-bi-directional-integration"></a>Beállíthatók kétirányú integrációt?
 
-Nem, az integráció jelenleg egyirányú (Emberi erőforrás a pénzügyekhez és a műveletekhez). Azonban van egy alapértelmezett sablon, amelynek segítségével adatokat küldhet a Human Resources rendszerből a Finance alkalmazásba.
+Nem, az integráció jelenleg egy megoldás (emberi erőforrások a pénzügyek és műveletek számára). Azonban van egy alapértelmezett sablon, amelynek segítségével adatokat küldhet a Human Resources rendszerből a Finance alkalmazásba.
 
 ## <a name="can-i-allow-record-deletion-as-part-of-my-integration"></a>Rekordok törlését engedélyezhetem integráció részeként?
 
@@ -157,7 +156,7 @@ A Human Resources alkalmazás végrehajtása során ellenőrizze, hogy a számso
 
 ## <a name="when-creating-my-connection-set-i-am-unable-to-see-the-connection-in-the-connection-drop-down-list-what-do-i-do"></a>Csatlakozókészlet létrehozása során nem látom a kapcsolatot a Kapcsolat legördülő listában. Mi a teendő?
 
-Ügyeljen arra, hogy a kapcsolatok létrehozása során a Dynamics 365 Finance és a Dataverse lehetőségeket válassza ki.
+A kapcsolatok létrehozásakor a Dynamics 365 Pénzügy és a Dataverse.
 
 ## <a name="when-syncing-employments-i-get-the-errors-companyinfo_fk-doesnt-exist-or-the-value-12312154-115959-pm-in-field-employment-end-date-is-not-found-in-the-related-table-employment-what-should-i-do"></a>Munkaviszonyok szinkronizáláskor a következő hibaüzenet jelenik meg: „CompanyInfo_FK nem létezik” vagy „A 12/31/2154 11:59:59 pm' érték a 'Munkaviszony befejezésének dátuma' mezőben a kapcsolódó 'Munkaviszony' táblában nem található” Mit tegyek?
 

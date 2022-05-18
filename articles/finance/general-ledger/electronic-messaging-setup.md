@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: ''
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: elgolu
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: a9d623c712de34afd1b38dbc6a8738ebf9613d49
-ms.sourcegitcommit: 8c17717b800c2649af573851ab640368af299981
+ms.openlocfilehash: 652d8684473d1c1505a80eb1d860c57a214b9488
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/23/2021
-ms.locfileid: "7860558"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734219"
 ---
 # <a name="set-up-electronic-messages"></a>Elektronikus üzenetek beállítása
 
@@ -72,7 +72,7 @@ Az alábbi táblázat ismerteti az **Üzenetállapotok** oldalon elérhető mez�
 
 ## <a name="additional-fields"></a><a id="additional"></a>További mezők
 
-Az EM funkcióval rekordokat lehet gyűjteni üzenetelemként a Microsoft Dynamics 365 Finance tranzakciós tábláiból. Ezzel a módszerrel a rekordokat előkészítheti a jelentéskészítésre, majd jelentheti őket. Azonban néha a tranzakciós táblák nem tartalmaznak elég információt ahhoz, hogy a rekordokat a jelentéskészítési követelményeknek megfelelő módon ki lehessen tölteni. Annak érdekében, hogy a rekordhoz tartozó jelentéshez szükséges összes adatot ki tudja tölteni, létrehozhat további mezőket. A további mezőket üzenetekhez és üzenetelemekhez társíthatja. További mezőket az **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **További mezők** oldalon állíthat be.
+Az EM funkcióval üzenetelemekként Microsoft Dynamics gyűjtheti össze a rekordokat a 365 Pénzügy tranzakciós tábláiból. Ezzel a módszerrel a rekordokat előkészítheti a jelentéskészítésre, majd jelentheti őket. Azonban néha a tranzakciós táblák nem tartalmaznak elég információt ahhoz, hogy a rekordokat a jelentéskészítési követelményeknek megfelelő módon ki lehessen tölteni. Annak érdekében, hogy a rekordhoz tartozó jelentéshez szükséges összes adatot ki tudja tölteni, létrehozhat további mezőket. A további mezőket üzenetekhez és üzenetelemekhez társíthatja. További mezőket az **Adó** \> **Beállítás** \> **Elektronikus üzenetek** \> **További mezők** oldalon állíthat be.
 
 Az alábbi táblázat ismerteti a **További mezők** oldalon elérhető általános mezőket.
 
@@ -142,25 +142,25 @@ Az **Adatforrások beállítása** gyorslapon adjon hozzá egy sort minden olyan
 
 ## <a name="populate-records-from-multiple-companies"></a><a id="multiple-companies-populate"></a> Rekordok feltöltése több vállalatból
 
-Ha a vállalatnak több jogi személytől kell jelentést készítése ugyanabban a pénzügyi adatbázisban, állítsa be a rekordműveletek feltöltését az összes olyan jogi személyhez, amelyből az adatokat jelenteni [kell](#populate).
+Ha a vállalatnak több jogi személytől kell jelentést készítése ugyanabban a pénzügyi adatbázisban, állítsa be a rekordműveletek feltöltését az összes olyan jogi személyhez, [amelyből](#populate) az adatokat jelenteni kell.
 
 A képesség pénzügyi környezetben való engedélyezéséhez kövesse az alábbi lépéseket. 
 
 1. Menjen a **Munkaterületek** \> **Funkciókezelés** lehetőségre.
-2. A listában található, a rekordműveletek feltöltése funkcióhoz használható több vállalatot **átfedő** lekérdezések megkeresések és kijelölése.
+2. A listában található, a rekordműveletek **feltöltése funkcióhoz használható több vállalatot átfedő** lekérdezések megkeresések és kijelölése.
 3. Válassza az **Engedélyezés most** lehetőséget. 
 
-A következő lépések szerint állíthatja be több olyan vállalat rekordműveletének feltöltését, amelyek adatait szerepelíteni [kell](#populate) a jelentésekben.
+A következő lépések szerint [állíthatja](#populate) be több olyan vállalat rekordműveletének feltöltését, amelyek adatait szerepelíteni kell a jelentésekben.
 
-1. Ugrás az **Adóbeállítás** \> **elektronikus üzenetek** \> **–** \> **Rekordok feltöltése műveletekbe**
+1. Ugrás az **Adóbeállítás** \> **–** \> **Elektronikus üzenetek –** \> **Rekordok feltöltése műveletekhez**
 
-    Ha engedélyezve van a Rekordok feltöltése műveletek funkció több vállalatot tartalmazó lekérdezése, akkor a Rekordok feltöltése műveletlap Adatforrások beállítási rácsa tartalmaz egy **Vállalat** **·** **·** **mezőt**. A rekord-feltöltési műveletek általános beállítása során létrehozott, meglévő rekordokhoz ez a mező az aktuális jogi [személy](#populate) azonosítóját jeleníti meg.
+    Ha engedélyezve van a Rekordok **feltöltése műveletek funkció több vállalatot tartalmazó lekérdezése,** **·** **akkor a** Rekordok feltöltése műveletlap Adatforrások beállítási rácsa tartalmaz egy Vállalat mezőt **.** A rekord-feltöltési [műveletek](#populate) általános beállítása során létrehozott meglévő rekordok esetén ez a mező az aktuális jogi személy azonosítóját mutatja.
 
-2. A DataSources beállítási rácsában adjon hozzá egy sort minden olyan leányvállalat jogi személyhez, amely részt kell vennie a jelentéskészítésben, és állítsa be **a** következő mezőket.
+2. A DataSources **beállítási rácsában** adjon hozzá egy sort minden olyan leányvállalat jogi személyhez, amely részt kell vennie a jelentéskészítésben, és állítsa be a következő mezőket.
 
     | Mezőnév             | Érték |
     |------------------------|-------|
-    | Név                   | Adjon meg egy szöveges értéket, amely segít megérteni, hogy honnan származik ez a rekord. Például adja meg **az adatforrás nevét – 1.** leányvállalat. |
+    | Név                   | Adjon meg egy szöveges értéket, amely segít megérteni, hogy honnan származik ez a rekord. Például adja meg az **adatforrás nevét – 1**. leányvállalat. |
     | Üzenetelem típusa      | Válassza ki az EM feldolgozásához szükséges üzenettétel-típust. |
     | Számla típusa           | Adja meg az EM feldolgozásához szükséges számlatípust. Ha az EM feldolgozásnak nincsenek meghatározott számlatípusai, válassza az Összes **lehetőséget**. |
     | Fő tábla neve      | Adja meg az EM feldolgozáshoz szükséges mestertábla nevét. |
@@ -168,9 +168,9 @@ A következő lépések szerint állíthatja be több olyan vállalat rekordműv
     | Dokumentumdátum mező    | Az EM feldolgozás rekordjaiban a dokumentumdátumot tartalmazó mező megadása. |
     | Dokumentumszámla mező | Az EM feldolgozás rekordjaiban a dokumentumfiókot tartalmazó mező megadása. |
     | Vállalat                | Válassza ki a leányvállalat jogi személy azonosítóját. |
-    | Felhasználó lekérdezése             | A lekérdezés szerkesztése lehetőség kiválasztásával automatikusan be van jelölve ez a **jelölőnégyzet**. |
+    | Felhasználó lekérdezése             | A lekérdezés szerkesztése lehetőség kiválasztásával automatikusan be van jelölve ez **a jelölőnégyzet**. |
 
-3. Minden új sornál válassza a Lekérdezés szerkesztése lehetőséget, és adja meg a sor Vállalat mezőjében megadott **jogi** **személyhez** tartozó kapcsolódó feltételeket.
+3. Minden új sornál válassza a **Lekérdezés** szerkesztése lehetőséget, **és** adja meg a sor Vállalat mezőjében megadott jogi személyhez tartozó kapcsolódó feltételeket.
 
 ## <a name="web-applications"></a><a id="applications"></a>Webalkalmazások
 

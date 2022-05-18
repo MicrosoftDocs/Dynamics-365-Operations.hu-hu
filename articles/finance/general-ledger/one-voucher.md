@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 8.0.2
-ms.openlocfilehash: 978d0dc28f86860335a782bd2ddaa141ed639fe5
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 9a0a9a3f23a3aec0077fd1a64c55fea567b72800
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7344058"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722492"
 ---
 # <a name="one-voucher"></a>Egy bizonylat
 
@@ -72,7 +72,7 @@ Az Egy bizonylat használata esetén előforduló problémák miatt ez a funkci�
 
 Miután minden működési hiányt kitöltött, a Microsoft közli, hogy a funkció elavulttá válik. Az értékcsökkenés azonban a tájékoztatás után legalább egy évig nem lép hatályba. Bár a Microsoft nem tud becslést adni arról, hogy mikorra válik elavulttá az Egy bizonylat funkció, az értékcsökkenés valószínűleg legalább két év múlva következik be. A Microsoft irányelve az, hogy legalább 12 hónapot hagyjon az elavult funkció bejelentése és a tényleges értékcsökkenés között, hogy a vevőknek és független szoftverszállítóknak és független szoftverszállítóknak elegendő idejük legyen arra, hogy a módosításra reagáljanak. Például előfordulhat, hogy egy szervezetnek frissítenie kell az üzleti folyamatait, entitásait és integrációit.
 
-Az Egy bizonylat értékcsökkenése jelentős változás, amelyről széles körben folyik majd tájékoztatás. A tájékoztatás részeként a Microsoft frissíti ezt a témakört, közzétesz egy blogbejegyzést a Microsoft Dynamics 365 Finance blogon, frissíti az Eltávolított vagy elavult funkciók témakört, közli a változtatást a megfelelő Microsoft-konferenciákon stb.
+Az Egy bizonylat értékcsökkenése jelentős változás, amelyről széles körben folyik majd tájékoztatás. A kommunikáció részeként a Microsoft frissíti ezt a témakört, felad egy postát a 365 Pénzügyi évhez, frissíti az "Eltávolított vagy elavult funkciók" témakört, a megfelelő Microsoft konferenciakon keresztül kommunikálja a Microsoft Dynamics változtatást stb.
 
 ## <a name="why-use-one-voucher"></a>Miért használjon egy bizonylatot?
 

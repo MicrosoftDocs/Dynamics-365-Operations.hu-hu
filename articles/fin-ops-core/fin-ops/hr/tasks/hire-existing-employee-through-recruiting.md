@@ -12,41 +12,41 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9e7343a485ae4779b075eeb48dabc39467e1a176
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 07dae424f32281a39c3887437ac7976fb3beb8d3
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8074913"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734923"
 ---
 # <a name="hire-existing-employees-through-recruitment"></a>Meglévő dolgozók felvétele toborzás útján
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Az ebben a témakörben említett funkciók jelenleg a pénzügyi infrastruktúra humánerőforrás-ügyfelei számára érhetők el.  
+> Az ebben a témakörben található toborzási funkciókat a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni.  
 
 
-Néha a nyitott pozíciókat olyan jelöltek is betölthetik, akik már alkalmazottak a szervezetben. Ez az eljárás végigvezeti egy meglévő alkalmazott felvételén a toborzási folyamat lépéseivel. Ezzel az eljárással egy toborzási projekt már létrejött, és egy meglévő alkalmazott már beküldött a toborzási projekthez egy kérelmet. A **USMF** demóadat-társaságot használtak ennek az eljárásnak a létrehozásához.
+Bizonyos esetekben a nyitott pozíciókat kitöltik azok a pályázók, akik már alkalmazottak a szervezetben. Ez az eljárás végigvezeti egy meglévő alkalmazott felvételén a toborzási folyamat lépéseivel. Ezzel az eljárással egy toborzási projekt már létrejött, és egy meglévő alkalmazott már beküldött a toborzási projekthez egy kérelmet. A **művelet az USMF** bemutatóadat-vállalatot használta az eljárás létrehozásához.
 
-1. Menj **Emberi Erőforrások \> Toborzás \> Alkalmazások \> Alkalmazások**.
-2. A listában keresse meg a felvenni kívánt alkalmazott jelentkezését. Például válassza ki **00002 John Emory**.
-3. Válassza ki **Alkalmazás állapota**.
+1. Ugrás az Emberi erőforrások **toborzási \> pályázatokhoz \>\>**
+2. Keresse meg a listában a felvenni kívánt alkalmazott pályázatát. Válassza például a **00002 John Emory lehetőséget**.
+3. Válassza ki **a pályázat állapotát**.
 
-    A pályázat állapota jelzi, hogy a pályázat hol áll a toborzási folyamatban. Minden lépés nem kötelező. Az alkalmazások általában a következő sorrendben mozognak az állapotok között: **Megkapta**, **·**, és **Meginterjúvolt**. Az interjú után döntés születik a felvételről.
+    A pályázat állapota jelzi, hogy a pályázat hol áll a toborzási folyamatban. Minden lépés nem kötelező. Egy alkalmazás általában a következő sorrendben halad végig az állapoton: **Beérkezett,** **Visszaigazolt és** Interjúzva **.** Az interjúfolyamat után felvételi döntés készül.
 
-4. Válassza ki **Változtass pozíciót**.
-5. Válassza ki azt a pozíciót, amelyre felveszi az alkalmazottat.
-6. Ban,-ben **Új feladat kezdési dátuma** mezőbe írja be azt a dátumot, amikor a munkavállaló elkezd dolgozni az új beosztásban.
-7. Ban,-ben **A megbízás befejezésének dátuma** mezőbe írja be azt a dátumot, amikor a munkavállaló abbahagyja a jelenlegi beosztásában való munkát.
+4. Pozíció **módosítása**
+5. Válassza ki azt a beosztást, amelyért az alkalmazottat felveszi.
+6. Az Új **megbízás kezdő dátuma mezőben** adja meg azt a dátumot, amikor az alkalmazott elkezdi az új beosztásban dolgozni.
+7. A Megbízás **záró dátuma mezőben** adja meg azt a dátumot, amikor az alkalmazott fel fog állni az aktuális beosztásában.
 
-    Az új pozíció kezdő dátuma és a régi pozíció befejezési dátuma átfedheti egymást. Ez az átfedés akkor fordulhat elő, ha egy személy egy átmeneti időszakban mindkét pozícióban lát el feladatokat.
+    Az új beosztás kezdő dátuma és a régi beosztás záró dátuma átfedésben lehet. Ez átfedés akkor fordulhat elő, ha egy személy feladatokat hajt végre mindkét beosztáson az átmeneti időszakban.
 
-8. Nem kötelező: válasszon okkódot. Például válassza ki **Átszervezés**.
-9. Válassza ki **Változtass pozíciót**.
+8. Választható lehetőség: Válasszon egy okkódot. Válassza például az Átszervezés **lehetőséget**.
+9. Pozíció **módosítása**
 
-    Ekkor a kompenzációt is módosíthatja. Ha nem, később módosíthatja a kiválasztással **Fix terv** a **Kártérítés** lap a **Munkás** oldalon.
+    Ebben az időpontban a kompenzációt is módosíthatja. Ha nem, később **·** **·** **is** módosíthatja, ha a Dolgozó lap Kompenzáció lapján a Fix konstrukció gombra választ.
 
-    Miután kiválasztottad **Változtass pozíciót**, az alkalmazás állapota a következőre frissül **Munkavállaló**.
+    A Beosztás módosítása **beállítás kiválasztása után** a pályázat állapota **Alkalmazva állapotúra változik**.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

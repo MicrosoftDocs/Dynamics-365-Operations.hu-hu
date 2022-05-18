@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2021-06-30
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d221e1a47dca85880fd683177ca95dd1b7766fb9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 350fb5a00b85f28fa8aef2ca50cf1f277b8f635e
+ms.sourcegitcommit: e4cc43b06ef3f0f562849e2c960025cb244d6017
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8064922"
+ms.lasthandoff: 05/12/2022
+ms.locfileid: "8743541"
 ---
 # <a name="server-to-server-authentication-for-the-ats-integration-api"></a>Kiszolgálók közötti hitelesítés az ATS integrációs API-hoz
 
@@ -89,7 +89,7 @@ Az új szerepkörhöz legalább a következő entitásokhoz kell megfelelő hozz
 
 A második lépés annak biztosítása, hogy az alkalmazás megfelelő engedélyeket kap az emberi erőforrások adataihoz. Ehhez össze kell kapcsolni a Human Resources alkalmazással. Az alkalmazásfelhasználók esetén a Dataverse virtuális táblákon keresztüli, kiszolgálók közötti hívások a Dataverse rendszerében műveletet indító felhasználó (alkalmazás) identitásának kontextusában zajlanak. A virtuális táblák adapterszolgáltatása ezután kikeresi a társított felhasználót a Human Resources rendszeréből, és a felhasználó kontextusán belül lefuttatja a lekérdezést. Ez azt jelenti, hogy a felhasználót a megfelelő szerepkörökkel kell létrehozni a Human Resources rendszerében, hogy hozzáférést biztosítson az integráló alkalmazás számára szükséges adatokhoz.
 
-A Human Resources felhasználójához is az emberi erőforrások adataira vonatkozó megfelelő engedélyeket kell hozzárendelni. A **Toborzási alkalmazás** (HcmRecruitingIntegrator) szerepkör jogosultságokkal rendelkezik a toborzási adatok integrálásához szükséges elsődleges entitásokhoz. Ez a szerepkör a **Felhasználók** lapon rendelhető hozzá az alkalmazásfelhasználóhoz, és megadja a megfelelő hozzáférést az adatokhoz. A Human Resources biztonsági szerepköreivel kapcsolatos további tudnivalókat lásd a [Szerepköralapú biztonság](/fin-ops-core/dev-itpro/sysadmin/role-based-security) című cikkben.
+A Human Resources felhasználójához is az emberi erőforrások adataira vonatkozó megfelelő engedélyeket kell hozzárendelni. A **Toborzási alkalmazás** (HcmRecruitingIntegrator) szerepkör jogosultságokkal rendelkezik a toborzási adatok integrálásához szükséges elsődleges entitásokhoz. Ez a szerepkör a **Felhasználók** lapon rendelhető hozzá az alkalmazásfelhasználóhoz, és megadja a megfelelő hozzáférést az adatokhoz. A Human Resources biztonsági szerepköreivel kapcsolatos további tudnivalókat lásd a [Szerepköralapú biztonság](/dynamics365/fin-ops-core/dev-itpro/sysadmin/role-based-security) című cikkben.
 
 ### <a name="set-up-the-new-user-with-appropriate-permissions"></a>Az új felhasználó beállítása a megfelelő jogosultságokkal
 

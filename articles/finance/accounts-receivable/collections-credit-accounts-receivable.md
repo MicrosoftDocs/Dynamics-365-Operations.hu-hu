@@ -1,6 +1,6 @@
 ---
 title: Beszedések a Kinnlevőségek modulban
-description: A kinnlevőségek kezelésével kapcsolatos adatokat egyetlen központi nézetből, a Microsoft Dynamics 365 Finance Beszedések oldalán kezelheti. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a beszedések kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a Vevők oldalon.
+description: A kinnlevőségek beszedési információinak kezelése egyetlen központi nézetben Microsoft Dynamics, a 365 Pénzügyi begyűjtemények lapon található. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a beszedések kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a Vevők oldalon.
 author: ShivamPandey-msft
 ms.date: 10/26/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b143ebead89804af57e7d2dbfa6f7d366c1ae664573776d78bff44763ddeb819
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 03d1304c39628323c6d6e15181263a73ba965930
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6723919"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710357"
 ---
 # <a name="collections-in-accounts-receivable"></a>Beszedések a Kinnlevőségek modulban
 
 [!include [banner](../includes/banner.md)]
 
-A kinnlevőségek kezelésével kapcsolatos adatokat egyetlen központi nézetből, a Microsoft Dynamics 365 Finance Beszedések oldalán kezelheti. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a beszedések kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából.
+A kinnlevőségek beszedési információinak kezelése egyetlen központi nézetben Microsoft Dynamics, a 365 Pénzügyi begyűjtemények lapon található. A hitelezési és beszedési kezelő ezt a központi vezérlőt használja a beszedések kezelésére. A pénzbehajtó elkezdheti a beszedési folyamatot az előre meghatározott beszedési feltételek használata által létrehozott vevői listából vagy a vevői listából.
 
 Mielőtt elkezdené beállítani a beszedéseket vagy elkezdene dolgozni velük, ismerje meg a következő fogalmakat:
 -   Vevő korosítási pillanatképei egy időpontban tartalmazzák Korosított egyenleget
@@ -65,7 +65,7 @@ A következő listaoldalak megkönnyítik beszedési információk rendezését.
 
 > [!NOTE]
 > A korosítási pillanatképet létre kell hozni, mielőtt megtekintheti ezeken az oldalakon lévő információkat. Csak olyan vevők adatai jelennek meg, akikről készült korosítási pillanatkép. A listalapon megjelenített rekordokat szűrni is lehet, a következőképpen:
-> <li>Alapértelmezés szerint a Finance and Operations felhasználók hozzáféréssel rendelkeznek az összes korosítási pillanatképpel rendelkező vevőhöz.</li>
+> <li>Alapértelmezés szerint a Finance and Operations-felhasználó hozzáféréssel rendelkezik az összes korosítási pillanatképpel rendelkező vevőhöz.</li>
 > <li>Ha léteznek vevőgyűjtők, a felhasználót pénzbehajtóként kell beállítani, hogy használhassa a gyűjtőt a beszedési listaoldalon lévő információk szűréséhez. A kiválasztott vevőgyűjtőben lévő vevők számára az információ korlátozott.</li>
 > <li>Ha egy felhasználó pénzbehajtóként van beállítva, csak annak a pénzbehajtónak kiválasztott gyűjtők érhetők el a listaoldalon. Ha a Beszedéskezelő megtekintheti az összes vevőgyűjtőt váltás van kiválasztva a Pénzbehajtó oldalon a pénzbehajtó számára, minden gyűjtő elérhető számára.</li>
 

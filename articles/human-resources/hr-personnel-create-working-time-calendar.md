@@ -8,24 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: OpResLifeCycleManagementWorkspace, WorkCalendarTable, WorkCalendarDate, HcmPersonnelManagementWorkspace, WrkCtrGroupDateCalendar, WrkCtrDateCalendar
 audience: Application User
-ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d56e38edc00780ad16aaafdb501b8f5df49020f2
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 1b49b5393448bc501abd1b96123b64c034d7cc67
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075249"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8692891"
 ---
 # <a name="create-calendars-and-generate-working-times"></a>Naptárak létrehozása és munkaidők generálása
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!IMPORTANT]
-> Az ebben a témakörben említett funkciók jelenleg a pénzügyi infrastruktúra humánerőforrás-ügyfelei számára érhetők el.  
+> Az ebben a témakörben jelezhető funkció jelenleg elérhető a pénzügyi infrastruktúra emberi erőforrás vevői számára.  
 
 
 A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását. Ez a témakör bemutatja, hogyan definiálhat egy munkanaptárat egy munkaidősablon alapján. Ezt a folyamatot az USMF bemutatócégen vagy saját adata használatával is elvégezheti.
@@ -34,9 +33,9 @@ A naptárak írják le az üzemi erőforrásokhoz munkaidejét és kapacitását
 2. Válassza a **Naptárak** lehetőséget.
 3. Válassza az **Új** lehetőséget.
 4. A **Naptár** mezőben osztályozza a naptárát. Ez azon naptár azonosítója, amely referenciaként szolgál naptárak hozzárendelésekor például üzemi erőforrásokhoz vagy egy erőforráscsoporthoz.  
-5. Ban,-ben **Név** mezőbe írja be a naptár nevét.
+5. A Név **mezőbe** írja be a naptár nevét.
 6. A **Normál munkanap órákban** mezőbe írjon be egy számot.
-7. Győződjön meg arról, hogy a sor ki van jelölve, majd válassza ki **Munkaidő** tól **Művelet ablak**.
+7. Győződjön meg róla, hogy a sor ki van választva, majd válassza ki **a** Munkaidők lehetőséget a **munkaablakban**.
 8. Válasza a **Munkaidők felépítése** lehetőséget. Hozzon létre munkaórákat minden egyes naphoz abban az időszakban, amikorra a munkát akarja ütemezni. Az idő előrehaladtával további időszakokhoz is létrehozhat munkaidőket.  
 9. Adjon meg egy dátumot a **Kezdő dátum** mezőben. Ez az első nap, amelyen ezt a naptárat ki kell nyitni.  
 10. Adjon meg egy dátumot a **Záró dátum** mezőben. Ez az utolsó nap, amelyen ez a naptár nyitva van.  

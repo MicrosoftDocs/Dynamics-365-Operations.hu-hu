@@ -1,6 +1,6 @@
 ---
 title: Adja meg a számla és dimenzió kombinációkat (szegmentált bejegyzés ellenőrzés)
-description: A cikk bemutatja, hogyan adhat meg számla és dimenzió kombinációkat vagy főkönyvi számlákat. A bejegyzés tapasztalatot gyakran nevezik szegmentált bejegyzés ellenőrzésnek.
+description: Ez a témakör azt ismerteti, hogyan lehet számla- és dimenziókombinációkat vagy főkönyvi számlákat megadni. A bejegyzés tapasztalatot gyakran nevezik szegmentált bejegyzés ellenőrzésnek.
 author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: DimensionConfigureAccountStructure
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14071
 ms.assetid: e6fce826-c403-4d91-a78b-e9a58c44ac03
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6aad3c6044141c80103fe05706d77af52245432f0374223a75b2ba63b2c9a89b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 779c455cb842fda941ce716eb644b9e3020f5e90
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6778918"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717502"
 ---
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Adja meg a számla és dimenzió kombinációkat (szegmentált bejegyzés ellenőrzés)
 
 [!include [banner](../includes/banner.md)]
 
-A cikk bemutatja, hogyan adhat meg számla és dimenzió kombinációkat vagy főkönyvi számlákat. A bejegyzés tapasztalatot gyakran nevezik szegmentált bejegyzés ellenőrzésnek.
+Ez a témakör azt ismerteti, hogyan lehet számla- és dimenziókombinációkat vagy főkönyvi számlákat megadni. A bejegyzés tapasztalatot gyakran nevezik szegmentált bejegyzés ellenőrzésnek.
 
 A felhasználók több oldalon adhatnak meg számla- és dimenziókombinációkat, például általános naplók, költségvetés-tervezés és feladásdefiníciók. Az érvényes számla és dimenzió kombináció a főkönyvhöz rendelt számlastruktúrától és a számlastruktúrához rendelt speciális szabályok függ. Amikor egy felhasználó megad egy kombinációt, begépelheti az értékeket vagy élvezheti a gazdag keresési tapasztalatok előnyeit. Amikor belép a mezőbe, elkezdhet gépelni, és a rendszer megkeresi az értéket és a leírást. Például ha 180-at ír be, a rendszer minden értéket megkeres, amely ezzel a számkombinációval kezdődik. Vagy ha azt írja be, hogy Készpénz, a rendszer minden értéket megkeres, amely leírása a Készpénz szóval kezdődik. Helyettesítő karaktert is használhat (például \*Készpénz vagy \*180) a keresésre, ha az érték vagy a leírás tartalmazza a keresési feltételeket. 
 

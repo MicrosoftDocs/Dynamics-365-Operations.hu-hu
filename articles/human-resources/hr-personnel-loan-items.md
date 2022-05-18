@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmLoanItem, HcmLoanType, HcmPersonLoan, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 3581
 ms.assetid: b14bdddb-f10e-4619-9f91-8c88439da862
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 9093944a2e225565fc8fdba8f9a487303369c251
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 9a5f5adea61b898fb884fd41fd187089a57efb00
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067276"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8690666"
 ---
 # <a name="manage-items-that-are-lent-to-workers"></a>Dolgozóknak kölcsönzött cikkek kezelése
 
@@ -31,7 +30,7 @@ ms.locfileid: "8067276"
 
 A kölcsöncikkek olyan rekordok, amelyek segítik a menedzsert a cég által a munkavállalók számára kölcsönadott tényleges cikkkek követésében. 
 
-Íme néhány példa azokra a tárgyakra, amelyeket egy vállalat kölcsönözhet a dolgozóknak:
+Néhány példa olyan cikkekre, amelyek a vállalat kölcsönt adhatnak a dolgozóknak:
 
 -   Mobiltelefonok
 -   Gépjárművek
@@ -41,7 +40,7 @@ Minden fizikai cikknek rendelkeznie kell egy megfelelő kölcsöncikkel. Minden 
 
 Tétel kölcsönzése esetén jegyezze fel a tétel kölcsönzésének az időpontját és a visszaadás tervezett időpontját. Ha a cikk visszaérkezett, adja meg a tényleges visszaadási időpontot is.
 
-Az alkalmazottak használhatják a **Alkalmazotti önkiszolgáló** munkaterület a nekik kölcsönadott tételek nyilvántartásának megtekintéséhez. A meglévő rekordokat is szerkeszthetik, vagy új kölcsöntételeket adhatnak meg, ha további fizikai tételeket kaptak. Beállítható egy munkafolyamat az új vagy meglévő kölcsöntételek módosításainak átirányítására egy jóváhagyási folyamaton keresztül. 
+Az alkalmazottak az Alkalmazott **önkiszolgáló munkaterületén** megtekinthetik a számukra kölcsönadott cikkek rekordjait. Szerkeszthetik a meglévő rekordokat is, illetve új kölcsönadott cikkeket is beírhatnak, ha további fizikai cikkeket kaptak. Egy munkafolyamat beállítható az új vagy meglévő kölcsönadott cikkek módosításainak egy jóváhagyási folyamaton keresztüli útvonal-módosítására. 
 
 A vezetők megtekinthetik a közvetlen jelentések közvetlen cikkeit. Megkaphatják az engedélyt új kölcsön cikkek hozzáadására az alkalmazottaik nevében.
 

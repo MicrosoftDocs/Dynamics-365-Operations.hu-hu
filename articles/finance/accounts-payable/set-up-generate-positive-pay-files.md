@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BankPositivePayFormat
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 88433
 ms.assetid: 73f3dcf6-040a-44ad-9512-7b3e0d17a571
 ms.search.region: Global
-ms.author: shpandey
+ms.author: panolte
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: 992c73b1ba1f461542873a7df97f1539b99fc015c3e6ef090993e90212993851
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: eb5a9595ea1a93a9b15348eb1b291d744f660d40
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737185"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727762"
 ---
 # <a name="set-up-and-generate-positive-pay-files"></a>Fizetési ellenőrző fájlok beállítása és létrehozása
 
@@ -31,7 +31,7 @@ Ez a témakör ismerteti az ellenőrzött fizetések beállítását és az elle
 A fizetési ellenőrzés beállítása elektronikus csekklista generálásához, amely a banknak elküldhető. Ezután, amikor egy csekket bemutatnak a banknak a bank összehasonlítja azt a csekklistával. Ha a csekk megfelel a listában szereplő csekkel a bank törli azt. Ha a csekk nem egyezik meg a listában szereplő csekkel, akkor a bank bent tartja ellenőrzésre.
 
 ## <a name="security-for-positive-pay-files"></a>A fizetési ellenőrző fájlok biztonsága
-Az ellenőrzött fizetési fájlok bizalmas információt tartalmazhatnak a kedvezményezettekről és a csekk-összegekről. Ezért győződjön meg róla, hogy a megfelelő biztonsági intézkedéseket használja attól az időponttól, hogy a fájlok létrejönnek addig, amíg a bank meg nem kapja őket. A fizetési ellenőrző fájlok a webböngészője által megadott helyre lesznek letöltve. Mivel a fizetési ellenőrző fájlok bizalmas adatokat is tartalmazhatnak, fontos, hogy csak engedéllyel rendelkező felhasználók férjenek hozzá ezen információk létrehozásához és megtekintéséhez a Microsoft Dynamics 365 Finance rendszerben. A következő táblázat segítségével határozza meg a szükséges jogosultságokkal.
+Az ellenőrzött fizetési fájlok bizalmas információt tartalmazhatnak a kedvezményezettekről és a csekk-összegekről. Ezért győződjön meg róla, hogy a megfelelő biztonsági intézkedéseket használja attól az időponttól, hogy a fájlok létrejönnek addig, amíg a bank meg nem kapja őket. A fizetési ellenőrző fájlok a webböngészője által megadott helyre lesznek letöltve. Mivel a fizetési fizetési fájlok bizalmas adatokat tartalmazhatnak, ezért fontos, Microsoft Dynamics hogy csak erre jogosult felhasználóknak legyen hozzáférésük az adatok generálása és megtekintése a Pénzügy 365-ben. A következő táblázat segítségével határozza meg a szükséges jogosultságokkal.
 
 <table>
 <colgroup>

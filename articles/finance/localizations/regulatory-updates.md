@@ -2,7 +2,7 @@
 title: Jogszabály-követési frissítések
 description: Ez a témakör a Microsoft Dynamics 365 Pénzügy tervezett és kiadott hatósági frissítéseit tartalmazza.
 author: VStamberg
-ms.date: 01/20/2022
+ms.date: 04/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: vastrup
 ms.search.validFrom: 2019-3-31
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 734a4abf4559d05b1f96bcfbde151b49bba8e827
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
-ms.translationtype: HT
+ms.openlocfilehash: 4e9a74f814e6ae93fd5c12b05c4fbd00ad503fca
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649129"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711914"
 ---
 # <a name="regulatory-updates"></a>Jogszabálykövetési frissítések
 
@@ -29,11 +29,11 @@ A szabályozói frissítések olyan funkciók amelyek új vagy módosult ország
 
 A Microsoft nagy hangsúlyt fektet az új szabályozói követelmények lehető legyorsabb alkalmazására. A tényleges szállítási dátum függ a törvény bejelentés dátumál, a követelmények részleteinek rendelkezésre állásától, a helyi hatóságoktól, az ellenőrzőeszközök rendelkezésre állásától és a változás méretétől összetettségétől.
 
-A szabályozó frissítések szállítását Egy verziószolgáltatás frissítésekben tervezzük, olyan időtervvel, hogy az ügyfelek felkészülhessenek a hatályba lépés dátumára (tranzakciós szabályozó frissítések), vagy az első kötelező jelentési határidőre (a jogszabályban előírt jelentésekhez kapcsolódó frissítések). A Vevők és a partnerek megtekinthetik az új szabályozó frissítések előnézetét a Preview Early Adoption Program (PEAP) keretében.
+A szabályozó frissítések szállítását Egy verziószolgáltatás frissítésekben tervezzük, olyan időtervvel, hogy az ügyfelek felkészülhessenek a hatályba lépés dátumára (tranzakciós szabályozó frissítések), vagy az első kötelező jelentési határidőre (a jogszabályban előírt jelentésekhez kapcsolódó frissítések). A vevők és partnerek megtekinthetik az egyes szolgáltatásfrissítések számára biztosított előnézeti csomagokban az új hatósági módosítások előnézetét.
 
 Késedelmes bejelentési dátumok, a követelmény részletei vagy ellenőrzési eszközök késedelmes elérhetősége és/vagy rendkívül nagy és összetett módosítások esetén előfordulhat, hogy nem lehet elérhetővé tenni a szabályozói frissítést egy havi frissítés általános elérhetőségi dátumán. Ebben az esetben a szabályozói módosítás gyorsjavításként lesz kiadva a releváns rendelkezésre álló havi frissítések esetében.
 
-A havi frissítés részeként kiadott szabályozói frissítéseket csak a kiadási verziókban tüntetik fel a program. A gyorsjavítások vagy kiadás-előnézetek részeként leszállított szabályozói frissítések a HF és a PEAP rövidítéssel azonosíthatók. 
+A havi frissítés részeként kiadott szabályozói frissítéseket csak a kiadási verziókban tüntetik fel a program. Azok a hatósági frissítések, amelyek vagy gyorsjavításként, vagy egy előzetes verzió részeként vannak kézbesítve, ennek megfelelően a HF és az Előnézet rövidítésekkel azonosíthatók. 
 
 A legújabb szabályozó frissítésekkel kapcsolatos tervekkel kapcsolatosan tekintse meg az alábbi táblázatot.   
 
