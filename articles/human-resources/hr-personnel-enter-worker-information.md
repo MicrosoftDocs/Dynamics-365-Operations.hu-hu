@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: abb45fe6f398de71565732dce6249daa0c39fce2
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 75bb9d5112656d36891d54af9ed9dd3c9017edf4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069454"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693612"
 ---
 # <a name="enter-worker-information"></a>Dolgozói adatok megadása
 
@@ -29,16 +28,16 @@ ms.locfileid: "8069454"
 
 
 
-Ha egy toborzó létrehozott egy tömeges felvételi projektet, és pozíciókat generált, a következő lépés a dolgozói információk megadása a felvehető emberek esetében. Ez az eljárás az USMF bemutatócéget használja. A bemutatóadatok tartalmaznak egy nyitott tömeges felvételi projektet. Az eljárás megkezdéséhez lépjen a következőre: **Emberi Erőforrások** > **Toborzás** > **Tömeges bérbeadási projektek**.
+Ha egy toborzó létrehozott egy tömeges felvételi projektet, és pozíciókat generált, a következő lépés a dolgozói információk megadása a felvehető emberek esetében. Ez az eljárás az USMF bemutatócéget használja. A bemutatóadatok tartalmaznak egy nyitott tömeges felvételi projektet. Az eljárás megkezdéséhez menjen a **Humán erőforrásokRecruitmentMass** > **·** > **felvételi projektekhez**.
 
 1. A listában jelölje meg a kiválasztott sort.
-2. Kattintson **Pozíció részletei**.
-    * Szerkessze a **Kezdő dátum** a munkás számára.  
-    * Szerkessze a **Befejezés dátuma** a munkás számára.  
-    * Változtasd meg a **Munkás típus** a dolgozó számára, ha szükséges.  
-3. Ban,-ben **Keresztnév** mezőbe írjon be egy értéket.
-4. Ban,-ben **Középső név** mezőbe írjon be egy értéket.
-5. Ban,-ben **Vezetéknév** mezőbe írjon be egy értéket.
+2. Kattintson a beosztás **részleteire**.
+    * A dolgozó **kezdő** dátumának szerkesztése.  
+    * A dolgozó **záró** dátumának szerkesztése.  
+    * Szükség esetén **módosítsa** a dolgozó dolgozótípusát.  
+3. Az Első **név mezőbe** írjon be egy értéket.
+4. A Második **név mezőbe** írjon be egy értéket.
+5. Írjon be **egy** értéket a Vezetéknév mezőbe.
     * Módosítsa a feladat típusát a dolgozó számára, ha szükséges.  
     * Módosítsa a részleget a dolgozó számára, ha szükséges.  
     * Módosítsa a teljes munkaidőssel egyenértékű állapotot a dolgozó számára, ha szükséges.  

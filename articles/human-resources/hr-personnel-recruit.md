@@ -1,6 +1,6 @@
 ---
 title: Állásjelöltek toborzása
-description: Ez a témakör leírja, hogyan toborozhat jelölteket itt:Dynamics 365 Human Resources.
+description: Ez a témakör azt írja le, hogyan lehet pályázókat toborozni a toborzáshoz a következőben:Dynamics 365 Human Resources
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 77d37cba84fcd6fb8f93da79b10db2db91d91db0
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: ef2f2c82708fd48055faa7546e7e0c4da51e7b6c
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066600"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733985"
 ---
 # <a name="recruit-job-candidates"></a>Állásjelöltek toborzása
 
@@ -29,7 +28,7 @@ ms.locfileid: "8066600"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A Dynamics 365 Human Resources segít a toborzási kérelmek kezelésében. Segít abban is, hogy zökkenőmentesen vezessen át állásjelölteket az alkalmazottak közé. Ha a szervezet külön toborzási alkalmazást használ, a toborzási folyamat a következő lépéseket foglalhatja magában:
+A Dynamics 365 Human Resources segít a toborzási kérelmek kezelésében. Segít abban is, hogy zökkenőmentesen vezessen át állásjelölteket az alkalmazottak közé. Ha a szervezet külön toborzási alkalmazást használ, a toborzási folyamat a következő lépéseket foglalhatja magában:<!--note from editor: Should this be a numbered list? These steps do seem to follow a particular order.-->
 
 - Adja meg toborzási kérelmét a Human Resources alkalmazásban.
 - Fogadja a toborzási kérelmeket a toborzó alkalmazásból a Human Resources alkalmazásban.
@@ -38,30 +37,35 @@ A Dynamics 365 Human Resources segít a toborzási kérelmek kezelésében. Seg�
 Ha nem használ külön toborzási alkalmazást, manuálisan is kezelheti a jelölteket az Human Resources alkalmazásban.
 
 > [!NOTE]
-> Ha Ön rendszergazda vagy fejlesztő, és integrálni szeretné az Human Resources alkalmazást egy külső toborzó alkalmazással, olvassa el a [Dataverse integráció konfigurálása](hr-admin-integration-common-data-service.md) és a [Dataverse virtuális táblák konfigurálása](hr-admin-integration-common-data-service-virtual-entities.md) című témakört
+> Ha ön rendszergazda vagy fejlesztő, és integrálni szeretné az Emberi erőforrásokat egy külső toborzási pályázatkal, akkor [Dataverse](hr-admin-integration-common-data-service.md)[Dataverse használja az Integráció konfigurálása és a Virtuális táblák konfigurálása című témakört.](hr-admin-integration-common-data-service-virtual-entities.md)
 >
 > Integrálható toborzó alkalmazásokat találhat az [AppSource](https://appsource.microsoft.com/marketplace/apps?search=recruiting%20dynamics) felületén is.
 >
-## <a name="enable-recruiting-requests"></a>Toborzási kérelmek engedélyezése
+## <a name="enable-recruiting-requests-on-the-merged-infrastructure"></a>Toborzási kérelmek engedélyezése az egyesített infrastruktúra esetében
 
-Ha toborzási kérelmeket szeretne benyújtani a Human Resources alkalmazásban, először engedélyeznie kell a funkciót a **Human Resources megosztott paraméterei** lehetőségben.
+Ha a HR-toborzásnál toborzási kéréseket szeretne benyújtani, **először engedélyeznie kell a HR** **felhasználói élmény és a Toborzás folyamatkezelési funkciókat**.
 
-1. A **Személyzetkezelés** munkaterületen válassza a **Hivatkozások** lehetőséget.
-2. A **Beállítás** alatt válassza a **Humán erőforrás megosztott paraméterek** lehetőséget.
-3. A **Toborzás** fül, alatt **Toborzás**, készlet **Toborzási kérelmek engedélyezése** nak nek **Igen**.
+Miután bekapcsolta a funkciókat, válassza ki a következő lépéseket: 
+1. Ugrás a **Human resourcesSetup** > **·** > **Tuan erőforrások paramétereihez**.
+2.  **ARecruitmenttabán** **állítsa a Toborzás letiltva mezőben** a Nem **gombra.**
+3. A Toborzási **tapasztalat** legördülő menüben válassza ki a **HR-toborzást**.   
+
+> [!Note] 
+> A **HR toborzás** kiválasztása után **a toborzási** projektek (legacy) csak olvashatók. 
+
 
 ## <a name="add-a-recruiting-request-location"></a>Toborzási kérelem helyének hozzáadása
 
 Ha a szervezetnek több helyszíne van, hozzáadhatja őket, így a kérelmezők kiválaszthatják azt a helyet, ahol az új belépő dolgozik majd. A hely szerepelni fog az álláshirdetésben.
 
-1. A keresősávba írja be **Toborzási kérelem helye**.
+1. A keresési sávon adja **meg a Toborzási kérelem helyét**.
 2. Válassza az **Új** lehetőséget.
 3. A **Toborzási kérelem helye** mezőben adja meg a hely nevét.
 
     ![Toborzási kérelem helyének hozzáadása.](./media/hr-recruit-0a-add-location.png)
 
-4. A **Leírás** mezőben adja meg a hely leírását.
-5. A **Hely** alatt válassz a **Hozzáadás** lehetőséget. Ha a **Új cím** párbeszédpanel jelenik meg, írja be a hely címét.
+4. Leírás **:** adja meg a hely leírását.
+5. A **Hely** alatt válassz a **Hozzáadás** lehetőséget. **Ha megjelenik az Új cím** párbeszédpanel, adja meg a hely címét.<!--note from editor: Please make the address in this image less plausible. Via the fictitious guidelines on CELAweb: For street addresses, you should use sequential numbers, common street names, and incorrect zip codes (e.g., 4567 Main St Buffalo, NY 98052). (See https://microsoft.sharepoint.com/sites/CELAWeb-Copyrights-Trademarks-And-Patents/SitePages/trademarks-fictitious-names.aspx)-->
 
     ![Cím megadása.](./media/hr-recruit-0b-address.png)
 
@@ -74,7 +78,7 @@ A vezetők toborzási kérelmeket nyújthatnak be a Human Resources alkalmazásb
 
 1. Válassza az **Alkalmazotti önkiszolgáló rendszer** lehetőséget.
 2. Válassza ki a **Saját csapat** lapot.
-3. Válassza ki **Toborzási kérelem**.
+3. Toborzási **kérelem kiválasztása**.
 
     ![Toborzási kérelem indítása.](./media/hr-recruit-1-request-to-recruit.png)
 
@@ -83,25 +87,25 @@ A vezetők toborzási kérelmeket nyújthatnak be a Human Resources alkalmazásb
     ![A toborzási kérelem befejezése.](./media/hr-recruit-2-request-to-recruit.png)
 
 5. Válassza **Folytatás** parancsot. Megjelenik a toborzási kérelem a pozíciójához.
-6. Az **Általános** részben válasszon ki egy toborzót a **Toborzó** legördülő menüből, majd válasszon ki egy helyet a **Toborzási kérelem helye** legördülő menüből.
+6. Az **Általános** mezőben válasszon ki egy toborzót a **Toborzás** legördülő listából, majd válasszon egy helyet a **Toborzás igénylés helyének** legördülő listájából.
 7. A **Munka** részben szükség szerint módosítsa az adatokat, majd válassza a **Részletek létrehozása a munkából** lehetőséget.
 
     ![Részletek létrehozása a feladatból.](./media/hr-recruit-3-create-details-from-job.png)
 
-    A toborzási kérelem többi része ki lesz töltve a megadott munka alapértelmezett adataival.
+    A toborzási kérelem többi része az Ön által megadott munkakörre vonatkozó alapértelmezett adatokkal lesz kitöltve.
 
 8. A **Külső leírás** részben adjon meg egy a szervezeten kívülről megtekinthető leírást.
-9. A **Pozíciók** részben válassza a **Hozzáadás** lehetőséget, majd válassza ki a toborzási kérelemhez tartozó beosztást.
+9. A **Pozíciók** részben válassza a **Hozzáadás** lehetőséget, majd válassza ki a toborzási kérelemhez tartozó beosztást.<!--note from editor: In all of these images, are they approved fictitious names, or do they come from sample data included with the app?-->
 
     ![Pozíció hozzáadása.](./media/hr-recruit-4-select-position.png)
 
 10. A **Szakértelmek** részben válassza a **Hozzáadás** lehetőséget, majd válasszon ki egy szakértelmet.
-11. Az **Oktatási követelmények** csoportban válassza a **Hozzáadás** lehetőséget, majd válasszon értékeket a **Végzettség** és az **Végzettség szintje** legördülő menüből.
+11. A Tanulmányi **követelmények részen válassza** a Hozzáadás **lehetőséget**, **majd** válassza ki az értékeket a Végzettség és **végzettség** szintje legördülő menükből.
 
     ![Végzettségi követelmények hozzáadása.](./media/hr-recruit-5-select-educational-requirements.png)
 
 12. A **Megjegyzés** részben szükség szerint fűzzön hozzá megjegyzéseket.
-13. A **Kompenzáció** részben válasszon egy szintet a **Szint** legördülő menüből, majd szükség szerint módosítsa az **Alacsony küszöb**, az **Ellenőrzőpont** és a **Magas küszöb** értéket.
+13. A **Kompenzáció** mezőben válasszon egy szintet a **Szint** legördülő listából, **majd** szükség szerint módosítsa az alsó küszöbértéket, **·** **a vezérlőpontot és a felső küszöbértéket.**
 14. Amikor a toborzási kérelem elkészült, és készen áll a toborzási folyamat elindítására, válassza az **Aktiválás** lehetőséget a menüsorban.
 
     ![Toborzási kérelem aktiválása.](./media/hr-recruit-6-activate-recruit-request.png)
@@ -141,7 +145,7 @@ Ha a szervezet integrált egy másik alkalmazást a toborzási kérelmek kezelé
 
 4. Jelölt hozzáadásához válassza az **Új** lehetőséget. Meglévő jelentkező szerkesztéséhez jelölje ki a jelentkezőt a listában, majd válassza a **Szerkesztés** lehetőséget. Megjelenik a jelölt profilja.
 5. A **Jelölt összegzése** részben szükség szerint adja meg vagy szerkessze a pályázó adatait.
-6. A **Toborzási kérelem** alatt válassza ki azt a toborzási kérelmet, amelyhez a jelöltet kapcsolni szeretné. Ezután töltse ki a **Becsült kezdési dátum**, **Felvételi vezető**, **Beosztás** és **Leírás** mezőket igény szerint.
+6. A **Toborzási kérelem** alatt válassza ki azt a toborzási kérelmet, amelyhez a jelöltet kapcsolni szeretné. Ezután szükség szerint **töltse ki a Becsült kezdő dátum**, **Felvételi vezető**, **Beosztás** és **Leírás** mezőket.
 
     ![Toborzási kérelemre mutató hivatkozás.](./media/hr-recruit-10-link-to-recruiting-request.png)
 
@@ -161,11 +165,11 @@ Ha a szervezet integrált egy másik alkalmazást a toborzási kérelmek kezelé
 
 Ha készen áll egy jelölt felvételére, kövesse ezt az eljárást a jelölt alkalmazottá való átalakításához.
 
-1. A **Jelölt** oldal, válassza ki **Bérel**.
+1. A Pályázó **lapon** válassza a Felvétel **lehetőséget**.
 
     ![Jelentkező felvétele.](./media/hr-recruit-11-hire.png)
 
-2. A **Vegyél fel új dolgozót** oldal, alatt **Részletek**, töltse ki az összes mezőt.
+2. Az Új dolgozó **felvétele** lapon, a Részletek **területen** töltse ki az összes mezőt.
 
     ![Új felvétel adatainak megadása.](./media/hr-recruit-12-hire-new-worker.png)
 
@@ -174,13 +178,13 @@ Ha készen áll egy jelölt felvételére, kövesse ezt az eljárást a jelölt 
 5. Válassza a **Folytatás** lehetőséget az alkalmazotti rekord létrehozásához.
 
     > [!NOTE]
-    > A szervezet munkafolyamataitól függően a jelölt rekordja további jóváhagyási lépéseken is átmehet, mielőtt alkalmazotti rekorddá válna.
+    > A szervezet munkafolyamataitól függően a pályázó rekordja további jóváhagyási lépéseken is áteshet, mielőtt alkalmazotti rekordná vál.
 
 ## <a name="decide-not-to-hire-a-candidate"></a>Úgy dönt, hogy nem vesz fel jelöltet
 
 Ha úgy dönt, hogy nem vesz fel jelöltet, kövesse ezt az eljárást, hogy távolítsa el őket az ellenőrzési folyamatból. 
 
-1. A **Jelölt** oldal, válassza ki **Ne béreljen**.
+1. A Pályázó **lapon** válassza a Nem **felvétel lehetőséget**.
 
     ![Nem vesz fel jelentkezőt.](./media/hr-recruit-13-do-not-hire.png)
 
@@ -191,7 +195,7 @@ Ha úgy dönt, hogy nem vesz fel jelöltet, kövesse ezt az eljárást, hogy tá
 
 Szükség esetén a felvétel után elbocsáthat egy jelöltet. Előfordulhat például, hogy egy jelölt elutasítja az ajánlatot, vagy nem jelenik meg az első napon.
 
-- A **Jelölt** oldal, válassza ki **A jelölt elbocsátása**.
+- A Jelölt **lapon** válassza a Jelölt elbocsátása **lehetőséget**.
 
     ![Jelölt elutasítása.](./media/hr-recruit-14-dismiss-candidate.png)
 

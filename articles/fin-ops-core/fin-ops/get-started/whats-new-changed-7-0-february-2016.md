@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bcc69cbf418131d0b1747f1c904de3188d7ba84216cb3145607b45553263244c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d81d20045c7b06de01a023d1a34ee653dd696ff1
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6757219"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711320"
 ---
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Újdonságok és változások a Dynamics AX 7.0 (2016. február) architektúrájában
 
@@ -969,7 +969,7 @@ Van egy továbbfejlesztett „kevés támogatást igénylő” ügyfélösszetev
 </tr>
 <tr>
 <td>A rendszer állapotának figyelése, hibák és problémák diagnosztizálása.</td>
-<td>Ehhez a funkcióhoz a következő szükséges: <a href="https://www.microsoft.com/download/details.aspx?id=42636">System Center 2012 felügyeleti csomag a Microsoft Dynamics AX 2012 R3 CU8 Kiskereskedelemhez</a>.</td>
+<td>Ehhez a funkcióhoz a következő szükséges: <a href="https://www.microsoft.com/en-us/download/details.aspx?id=58205">System Center 2012 felügyeleti csomag a Microsoft Dynamics AX 2012 R3 CU8 Kiskereskedelemhez</a>.</td>
 <td>A kiskereskedelmi összetevők felügyelete és diagnosztizálás már elérhető az <strong>Üzemeltetési elképzelések</strong> irányítópulton keresztül az LCS-ben.</td>
 <td>Az <strong>Üzemeltetési elképzelések</strong> irányítópult egy felhőalapú ellenőrzési portál, amely felülírja a System Center üzemeltetési vezető (SCOM) infrastruktúra telepítését.</td>
 </tr>
@@ -1028,7 +1028,7 @@ Van egy továbbfejlesztett „kevés támogatást igénylő” ügyfélösszetev
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[Új vagy módosult elemek Finance and Operations kezdőlapján](whats-new-changed.md)
+[Új vagy módosult elemek a Finance and Operations kezdőlapján](whats-new-changed.md)
 
 [Új feladatútmutatók (2016. február)](new-task-guides-available-february-2016.md)
 

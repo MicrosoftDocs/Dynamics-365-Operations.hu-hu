@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: c171ab99a434e529c48f39be9147ac411fb08b9b
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: 4d96f50db4379a44ad8f2b06725db654a27393f9
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753898"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734803"
 ---
 # <a name="credit-limit-adjustments"></a>Hitelkeret-kiigazítások 
 
@@ -27,7 +27,7 @@ A hitelkeret-korrekciók segítségével a hitelvezetők frissíthetik egyetlen 
 
 ## <a name="set-up-credit-limit-adjustments"></a>Hitelkeret-korrekció beállítása
 
-Bejegyzéseket hozhat létre a Hitelkeret-korrekciós naplóban **Hitelkeret-korrekció** oldalon (**Hitelkezelés \> Hitelkeret-korrekciók \> Hitelkeret-korrekciók**).
+A hitelkeret-helyesbítési **·** **naplóban** a hitelkeret-helyesbítési lapon hozhat létre bejegyzéseket (**Hitelkeret-helyesbítések \>\> hitelkeret-helyesbítései**).
 
 1. Válassza az **Új** lehetőséget. A bejegyzések egy új csoportja jön létre, amelynek van hitelkeret-korrekciós száma.
 2. A hitelkeret-módosítás típusának kiválasztása:

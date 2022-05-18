@@ -1,20 +1,20 @@
 ---
 title: Svéd Intrastat
 description: Ez a téma a svédországi Intrastat jelentéssel kapcsolatos információkat tartalmazza.
-author: andosip
+author: anasyash
 ms.date: 8/24/2021
 ms.topic: article
 audience: Application User
-ms.reviewer: kfender
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: ''
-ms.openlocfilehash: 152bfd24843867685b1d303484ed61ad98ec652a
-ms.sourcegitcommit: 3f6cbf4fcbe0458b1515c98a1276b5d875c7eda7
+ms.openlocfilehash: 1031b93950e44fe3b1b6254bf1503b4c09d6fd10
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "7486946"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727398"
 ---
 # <a name="swedish-intrastat"></a>Svéd Intrastat
 
@@ -43,7 +43,7 @@ További információért lásd: [ER-konfigurációk letöltése a Konfiguráci�
 
 ## <a name="set-up-foreign-trade-parameters"></a>Külkereskedelmi paraméterek beállítása
 
-1. A Microsoft Dynamics 365 Finance oldalon az **Adó** > **Beállítás** > **Külkereskedelmi paraméterek** menüpontra lépjen.
+1. A Microsoft Dynamics 365 Pénzügyben menjen a **TaxSetupForeign** > **·** > **kereskedelmi paraméterekhez**.
 2. Az **Intrastat** lapon az **Elektronikus jelentéstétel** gyorslapon a **Fájlformátum leképezése** mezőben válassza az **Intrastat (SE)** lehetőséget.
 3. A **Jelentésformátum-hozzárendelés** mezőben válassza az **Intrastat jelentés** lehetőséget.
 4. Az **Árucikk-kódok hierarchiája** gyorslapon a **Kategóriahierarchia** mezőben válassza az **Intrastat** lehetőséget.

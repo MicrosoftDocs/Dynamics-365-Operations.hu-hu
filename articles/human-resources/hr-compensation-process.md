@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 7c72f866886f320d8a7fa22d6ccfa7e43284b5bf
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e4aa910d92c2905d54d96f656e1d3d1c36388636
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071744"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693864"
 ---
 # <a name="process-compensation"></a>Folyamatkompenzáció
 
@@ -44,7 +43,7 @@ A feldolgozási esemény paramétereinek mentése után kattinthat a **Beállít
 
 Kattintson a **Hozzáadás** gombra a **Csomagok** lapon egy kompenzációs konstrukció feldolgozási eseményhez történő hozzáadása érdekében. A **Más emelés használata**, **Emelési tényező** és **Emelés leírása** oszlopok csak a változó kompenzációs konstrukciók használatosak, és nem tartoznak ebbe a témakörbe.
 
-Mentse a rekordot, majd kattintson a **Hozzáadás** gombra a **Műveletek** lapon a fix kompenzációs műveletek kijelölt konstrukcióhoz való hozzáadásához. Használja az **Ajánlás engedélyezése** lehetőséget, ha a művelethez más összeget szeretne megadni, mint a kiszámított előirányzott növekmény. Több kompenzációs művelet összekapcsolása érdekében az előző művelet eredményének eredménye alapján kiszámításához jelölje be az **Előző eredmény használata** lehetőséget. A fix kompenzációs műveletek olyan kompenzációs logikatípusok, amelyek leíró nevet is adhatnak. Mert **Fokozat** és **Zenekar** terveket, csak a következő típusú fix kompenzációs műveleteket adhatja hozzá:
+Mentse a rekordot, majd kattintson a **Hozzáadás** gombra a **Műveletek** lapon a fix kompenzációs műveletek kijelölt konstrukcióhoz való hozzáadásához. Használja az **Ajánlás engedélyezése** lehetőséget, ha a művelethez más összeget szeretne megadni, mint a kiszámított előirányzott növekmény. Több kompenzációs művelet összekapcsolása érdekében az előző művelet eredményének eredménye alapján kiszámításához jelölje be az **Előző eredmény használata** lehetőséget. A fix kompenzációs műveletek olyan kompenzációs logikatípusok, amelyek leíró nevet is adhatnak. Osztály **-** és **sávtervek** esetén csak a következő típusú fix kompenzációs műveleteket lehet hozzáadni:
 
 | Fix kompenzációs művelet típusa | Funkciók                  |
 |-------------------------------|-------------------------------------------------------------------------|
@@ -61,7 +60,7 @@ Lépés típusú tervhez kizárólag Lépés típusú **Fix kompenzációs** mű
 | Lépés                           | Az **Általános** lapon adja meg, hogy ez a Lépés művelet az alkalmazottakat 0, 1 vagy két lépéssel vigye előre az alkalmazottakat.                                                                                  |
 |                                | **0 lépés** – Az alkalmazott megkapja az aktuális lépés fizetési díjalapját.                                                                                                                      |
 |                                | **1 lépés** – A rendszer ellenőrzi, hogy az alkalmazott a szintje utolsó hivatkozási pontjánál van-e már.                                                                                             |
-|                                | **2 lépés** - A munkavállaló két lépést lép előre jelenlegi szintjén. A munkavállaló csak egy vagy nulla lépést tehet meg, ha eléri a szintje utolsó referenciapontját. |
+|                                | **2 lépés** – az alkalmazott az aktuális szinten két lépéssel előrelép. Az alkalmazott csak akkor mozgathat egy vagy nulla lépést, ha eléri a szint utolsó hivatkozási pontját. |
 
 ## <a name="run-the-compensation-process"></a>A kompenzációs folyamat futtatása
 Miután a Feldolgozási eseményben beállította a szükséges dátummezőket, terveket és műveleteket, kattinthat a **Folyamat futtatása** lehetőségre a **Feldolgozási esemény** lapon, ezzel megnyitja a **Kompenzációfeldolgozási események futtatása** párbeszédpanelt. Kattintson a **Feldolgozási eredmények megjelenítése** lehetőségre, hogy megtudja, hogyan számolták ki a kompenzációs összegeket az egyes alkalmazottak esetében. Az **OK** gombra történő kattintással futtatja a kompenzációs folyamatot minden olyan alkalmazott esetében, akik a kiválasztott kompenzációs tervekben vannak a ciklus záró dátuma szerint.

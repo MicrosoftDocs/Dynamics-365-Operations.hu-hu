@@ -1,6 +1,6 @@
 ---
-title: Mi új vagy megváltozott Dynamics 365 Human Resources 2021. november 19
-description: Ez a témakör az önálló Microsoft új vagy módosított szolgáltatásait írja le Dynamics 365 Human Resources 2021. november 19-re.
+title: Dynamics 365 Human Resources A 2021. november 19. újdonsága vagy módosult
+description: Ez a témakör olyan funkciókat ír le, amelyek vagy újak, vagy módosulnak a Microsoft Dynamics 365 Human Resources önálló verziójában 2021. november 19-én.
 author: marcelbf
 ms.date: 12/03/2021
 ms.topic: article
@@ -8,21 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-12-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 618d90f95637002f444b334e16d3fef466dda65e
-ms.sourcegitcommit: 7893ffb081c36838f110fadf29a183f9bdb72dd3
+ms.openlocfilehash: f28057c370b27dbdad4bfe1104e9289f7df65621
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/02/2022
-ms.locfileid: "8087474"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691946"
 ---
-# <a name="whats-new-or-changed-in-dynamics-365-human-resources-november-19-2021"></a>Mi új vagy megváltozott Dynamics 365 Human Resources 2021. november 19
+# <a name="whats-new-or-changed-in-dynamics-365-human-resources-november-19-2021"></a>Dynamics 365 Human Resources A 2021. november 19. újdonsága vagy módosult
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -30,7 +29,7 @@ Ez a téma a Microsoft Dynamics 365 Human Resources új, megváltozott vagy hama
 
 A frissítési folyamattal és ütemezéssel kapcsolatos további tudnivalókért lásd: [Frissítési folyamat](hr-admin-setup-update-process.md).
 
-Az új funkciókkal és várható általános elérhetőségükkel kapcsolatos további információkért lásd: [Dynamics 365 Human Resources 2021-es kiadási hullám 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
+Az új funkciókról és várható [Dynamics 365 Human Resources általános elérhetőségi dátumukról a 2021-es kiadási hullámban található további tájékoztatás](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
 
 ## <a name="in-this-release"></a>Ebben a verzióban
 
@@ -45,12 +44,12 @@ Ez a kiadás az alábbi hibajavításokat tartalmazza.
 
 | Kiadás száma | Probléma | Leírás |
 |---|---|---|
-| 626178 | Hiányzik a navigáció a dolgozó lapkából **Menedzser önkiszolgáló** | Ez a probléma most már javítva van. A navigáció elérhető a jelentés részleteinek megtekintéséhez **Menedzser önkiszolgáló**. |
-| 632573 | Nincs érvényesítési hiba az a **Tanfolyam** | Ez a probléma most már javítva van. Tanfolyam létrehozásakor a **Minimális résztvevők száma** 0-nál nagyobbra még akkor is engedélyezték a mentést, ha a **A résztvevők maximális száma** az 0. |
-| 615955 | Hiba "Mező **Célja** ki kell tölteni' új toborzási kérelem hely létrehozásakor. | Amikor létrehoz egy címet egy új toborzási kérelem helyéhez, a következő hibaüzenet jelenik meg: "A "Cél" mezőt ki kell tölteni." Azonban a **Célja** mező nem érhető el az oldalon. |
-| 620797 | Üres **Nem** mező hiba félrevezető | Ha nem ad meg nemet egy személyes kapcsolathoz, a jelentésben megjelenik a „Szöveg beviteléhez kattintson vagy koppintson ide” felirat – Ez félrevezető, mivel semmit nem lehet beírni a mezőbe. |
-| 620800 | Az előnyökről szóló nyilatkozat linkje el van rejtve | A haszonnyilatkozat alapértelmezés szerint nem látható itt **Alkalmazotti önkiszolgáló**.  A jobb oldalához egy hivatkozás került hozzáadásra **Alkalmazotti önkiszolgáló** alatt **Linkek** szakasz |
-| 629778 | Teljesítményhiba a CDS-integrációval. | Az engedélyezéssel kapcsolatos kérés teljesítményproblémát okozott. |
+| 626178 | A vezető önkiszolgáló rendszerében található dolgozói navigációs **folyamat hiányzik.** | Ez a probléma most már javítva van. Navigációs módban a vezetői önkiszolgáló rendszer **részletes adatai érhetők el**. |
+| 632573 | Nincs ellenőrzési hiba a tanfolyam mentésekor **.** | Ez a probléma most már javítva van. Ha olyan tanfolyamot hoz létre, **amelynél** a résztvevők minimális száma 0-t **meghaladja**, még akkor is menthető, ha a résztvevők maximális száma 0. |
+| 615955 | Hiba: Az új **toborzási** kérelem helyének létrehozásakor a "Mező célja" mezőt ki kell tölteni. | Amikor címet ad meg egy új toborzási kérelem helyének, a következő hibát okozza: a "Cél" mezőt ki kell tölteni. A Cél **mező** azonban nem érhető el a lapon. |
+| 620797 | Az üres **Nemek mező** hibát jelez. | Ha egy személyes kapcsolattartó neme nincs megadva, akkor a jelentésen a "Szöveg beviteléhez kattintson vagy ide lépve" felirat jelenik meg – ez félrevezető, mivel a mezőben nem lehet megadni semmit. |
+| 620800 | A juttatások kimutatásának hivatkozása rejtett. | A juttatási kimutatás alapértelmezés szerint nem megtekinthető az alkalmazotti **önkiszolgáló szolgáltatásban**.  Az Alkalmazotti önkiszolgáló **szolgáltatás** jobb oldalára felkerült egy hivatkozás a Hivatkozások **szakaszban**. |
+| 629778 | Teljesítmény-probléma a CDS-integrációval. | Az engedélyezéshez kapcsolódó kérés teljesítmény problémát okozott. |
 
 ## <a name="in-preview"></a>Előnézetben
 
@@ -62,6 +61,6 @@ Az alábbi új funkciók előzetes verzióban érhetők el. A funkciók be- és 
 
 
 ## <a name="coming-soon"></a>Hamarosan
-A tervezett szolgáltatások teljes listáját és ütemezett kiadásaikat lásd: [Dynamics 365 és iparági felhők: 2021-es kiadási hullám, 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
+A tervezett funkciók és [ütemezett kiadások teljes listáját lásd a Dynamics 365 és az iparági felhők: 2021-es kiadási hullám 2](/dynamics365-release-plan/2021wave2/human-resources/dynamics365-human-resources/).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

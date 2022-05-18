@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 206c7f590b495278b7899271db0e83b3a4da3edc
-ms.sourcegitcommit: 42bd701179e664947b6eafcd1804c83a5e64abcb
+ms.openlocfilehash: 3cf83421d5385e3c95dfda6db35edfb8eb4b9336
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "7641430"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695760"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-october-5-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2021. október 5.)
 
@@ -42,7 +41,7 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 
 | Funkció | Kiadási terv | Dokumentáció |
 |---|---|---|
-| Platform frissítése erre: 10.0.21 (45) | -- | [Platformfrissítések a Finance and Operations alkalmazás 10.0.21 verziójához (2021. október)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
+| Platform frissítése erre: 10.0.21 (45) | -- | [A Pénzügy és műveletek alkalmazások 10.0.21-es verziójának platformfrissítései (2021. október)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
 
 
 ### <a name="bug-fixes"></a>Hibajavítások
@@ -87,7 +86,7 @@ A tervbe vett funkciók és azok tervezett kiadásainak teljes listáját lásd:
 
 | Funkció | Részletek |
 |---|---|
-| Platform frissítése erre: 10.0.22 (46) | A 10.0.22-es platformfrissítés bevezetése a tervek szerint a 2021. november 1-i szolgáltatási kiadással kezdődik. További információért lásd: [Platformfrissítések a Finance and Operations alkalmazások 10.0.22-es verziójához (2021. november)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
+| Platform frissítése erre: 10.0.22 (46) | A 10.0.22-es platformfrissítés bevezetése a tervek szerint a 2021. november 1-i szolgáltatási kiadással kezdődik. A további tudnivalókat [lásd a Pénzügy és műveletek alkalmazások 10.0.22-es verziójának Platformfrissítései (2021. november)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
 
 
 

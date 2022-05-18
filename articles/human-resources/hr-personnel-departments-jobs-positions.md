@@ -1,6 +1,6 @@
 ---
 title: Munkaerő szervezése részlegek, feladatok és beosztások szerint
-description: Ez a témakör fogalmi információkat ír le a részlegekről, munkakörökről és pozíciókról, amelyek az emberi erőforrásokon belül karbantartott szervezeti elemek.
+description: Ez a témakör általános tájékoztatást tartalmaz a részlegekkel, feladatokkal és beosztásokkal kapcsolatban, amelyek az Emberi erőforrások által karbantartott szervezeti elemek.
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: article
@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 87933
 ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: 2b4c1efac249b315de25348a104f00a613c32df9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 717bf7dcbd9a7e19a6dc960648655fdbd3e2465a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8071732"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694823"
 ---
 # <a name="organize-your-workforce-by-using-departments-jobs-and-positions"></a>Munkaerő szervezése részlegek, feladatok és beosztások szerint
 
@@ -64,7 +63,7 @@ Létrehozhat olyan munkaköri feladatokat, amelyek bemutatják az adott pozíci�
 
 ### <a name="job-functions"></a>Feladatfunkciók
 
-A beosztási funkciók hasonlók a munkaköri feladatokhoz. A munkafunkciók egy vagy több feladatot, kötelezettséget vagy felelősséget írnak le, amelyek egy munkához vannak rendelve. A beosztásokat a munkákhoz lehet hozzárendelni, és segítségükkel a kompenzációs tervekhez kapcsolódó jogosultsági szabályokat lehet beállítani és alkalmazni. Az alábbi táblázatban látható néhány példa munkaköri beosztásokra.
+A beosztási funkciók hasonlók a munkaköri feladatokhoz. A beosztás funkciója egy vagy több, a beosztáshoz rendelt feladatot, feladatkört vagy feladatkört ír le. A beosztásokat a munkákhoz lehet hozzárendelni, és segítségükkel a kompenzációs tervekhez kapcsolódó jogosultsági szabályokat lehet beállítani és alkalmazni. Az alábbi táblázatban látható néhány példa munkaköri beosztásokra.
 
 | Munka           | Beosztás                                                |
 |---------------|-------------------------------------------------------------|
@@ -100,15 +99,15 @@ Minden pozícióhoz tartozik egy időtartam, amely a beosztás érvényességi i
 Ha hozzárendel egy dolgozót egy beosztáshoz, akkor betölti a pozíciót. Egy dolgozót több beosztáshoz is hozzárendelhet, de egy beosztáshoz egyszerre csak egy dolgozót lehet hozzárendelni.
 
 ### <a name="reporting-relationships"></a>Jelentési kapcsolatok
-A beosztások a szervezeti hierarchia alacsonyabb szintjének fontos részei. A **Pozíció** oldalon megadhatja azt a beosztást, amely felé az adott beosztásnak jelentenie kell. Ha hozzárendel egy dolgozót egy olyan pozícióhoz, amely egy másik pozíció számára jelent, akkor jelentési kapcsolatot hoz létre a két beosztáshoz hozzárendelt dolgozók között. Például a „Könyvelő-A” pozíció a „Számviteli felügyelő” számára tesz jelentéseket. Ana Bowmant a „Számviteli felügyelő” pozícióba, Felix Hendersont pedig az „A Accountant-A” pozícióba osztják be. Ez azt jelenti, hogy Felix Henderson Ana Bowmannek jelent. 
+A beosztások a szervezeti hierarchia alacsonyabb szintjének fontos részei. A **Pozíció** oldalon megadhatja azt a beosztást, amely felé az adott beosztásnak jelentenie kell. Ha hozzárendel egy dolgozót egy olyan pozícióhoz, amely egy másik pozíció számára jelent, akkor jelentési kapcsolatot hoz létre a két beosztáshoz hozzárendelt dolgozók között. Például a „Könyvelő-A” pozíció a „Számviteli felügyelő” számára tesz jelentéseket. Az Ana Egyensman a "Könyvelési felügyelő" pozícióhoz van hozzárendelve, És Sánchez az "Könyvelő-A" pozícióhoz. Ez azt jelenti, hogy Az Ana Ésmannak jelent. 
 
-Ha szervezete mátrix hierarchiát vagy egyéb egyéni hierarchiát alkalmaz, beállíthat pozíció hierarchia típusokat, majd hozzáadhat jelentési kapcsolatokat minden egyes beállított hierarchia típushoz. Például Olivia Wilson az Adventure Works vezérigazgatója, és a „General Manager” pozícióba van beosztva. Olivia irányítja a widgetek tisztítására használt termék fejlesztését. Oliviának szüksége van egy könyvelőre, aki segít a pénzügyekben a termék fejlesztéséhez. Ezért Felix Hendersont vette fel könyvelőnek. Felix közvetlenül Ana Bowmannek számol be, de Olivia Wilsonnal együtt dolgozik a widgettisztító fejlesztésének pénzügyeivel kapcsolatos munkájában. 
+Ha szervezete mátrix hierarchiát vagy egyéb egyéni hierarchiát alkalmaz, beállíthat pozíció hierarchia típusokat, majd hozzáadhat jelentési kapcsolatokat minden egyes beállított hierarchia típushoz. Például 1444-ben a Kalandorban dolgozik, és a "Fővezető" beosztáshoz van rendelve. Az IM kezeli a termékek alakulását, amely az elemek tisztítására használható. Az IM-hez könyvelőnek kell segítséget kérnie a termék fejlesztésére vonatkozó pénzügyek fejlesztésére. Ezért toborozta Tobort könyvelőnek. Az Ana Bacman közvetlen bejelentéseket készít, de Az imóeszköz-elemek fejlesztésével kapcsolatos pénzügyekkel kapcsolatos munkáiról is készít jelentést. 
 
-Az előző példa esetében a következő feladatokat kell végrehajtania Felix Henderson és Ana Bowman közötti munkakapcsolat létrehozásához:
+Az előző példában a következő feladatokat kell elvégeznie annak érdekében, hogy beállítsa a Dolgozókapcsolatot Toni és Azna Andman között:
 1.  Egyéni pozícióhierarchia létrehozása „Eszköz” néven az eszköztisztító termék fejlesztéséért felelős beosztásokat magában foglaló hierarchia létrehozásához.
 2.  Az Általános igazgatói pozíció hozzárendelése a Könyvelő-A pozícióhoz úgy, hogy utóbbi jelentsen az előző számára.
 
-Használja a **Pozícióhierarchia** oldalon megtekintheti a pozíciók jelentési szerkezetét. Ha több pozícióhierarchiája van, megtekintheti az egyes hierarchiatípusok hierarchiáját **Pozícióhierarchia**. Emellett a pozícióazonosító vagy a beosztáshoz hozzárendelt dolgozó neve alapján is megkereshet egy pozíciót. A **Pozícióhierarchia** egy szervezeti hierarchia.
+A Beosztáshierarchia **lapon** megtekintheti a beosztások jelentési szerkezetét. Ha több beosztáshierarchiája van, akkor a Beosztáshierarchia valamennyi típusának hierarchiáját **meg lehet tekinteni**. Emellett a pozícióazonosító vagy a beosztáshoz hozzárendelt dolgozó neve alapján is megkereshet egy pozíciót. A **beosztáshierarchia** egy szervezeti hierarchia.
 
 ## <a name="date-effective-records"></a>Érvényességidátum-rekordok
 Bizonyos rekordok esetében jövőbeni módosításokat is be lehet állítani a rekordhoz. A következő adatok érvényességi dátumhoz kötöttek.

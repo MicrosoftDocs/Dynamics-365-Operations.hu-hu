@@ -1,6 +1,6 @@
 ---
 title: Mérleg pénzügyi jelentés
-description: Ez a cikk a mérlegek alapértelmezett jelentéseit mutatja be. Emellett az e jelentésekhez tartozó építőelemeket is leírja.
+description: Ez a témakör a mérlegek alapértelmezett jelentéseit írja le. Emellett az e jelentésekhez tartozó építőelemeket is leírja.
 author: jcart1106
 ms.date: 06/20/2017
 ms.topic: article
@@ -8,32 +8,32 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: FinanicalReports
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 12274
 ms.assetid: 52f78229-f531-4d16-b337-e2628994acb6
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b0fae7ccb216ced0cbcbdb69980b3bae754a4980ecaf9314893368ae89459fa0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 276e877db42361282ad2bf4a01dd971ec02e2af7
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734514"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734306"
 ---
 # <a name="balance-sheet-financial-reports"></a>Mérleg pénzügyi jelentés
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk a mérlegek alapértelmezett jelentéseit mutatja be. Emellett az e jelentésekhez tartozó építőelemeket is leírja. 
+Ez a témakör a mérlegek alapértelmezett jelentéseit írja le. Emellett az e jelentésekhez tartozó építőelemeket is leírja. 
 
 ## <a name="default-balance-sheet-reports"></a>Alapértelmezett mérlegkimutatások
 
 Két alapértelmezett mérlegkimutatás áll rendelkezésre. Az egyik jelentésen a szakaszok halmozottak. A jelentésen a szakaszok egymás mellett vannak.
 
 | Alapértelmezett jelentés                       | Mire szolgál?                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|--------------------------------------|----------------------------------------------------------------------------------------------|
 | Mérleg – Alapértelmezett              | Megtekinthető a szervezet éves pénzügyi helyzete.                                                                 |
 | Mérleg egymás mellett – Alapértelmezett | Megtekinthető a szervezet éves pénzügyi helyzete. Az eszközöket és a kötelezettséget, valamint a részvényesek saját tőkéjét jeleníti meg egyidejűleg. |
 

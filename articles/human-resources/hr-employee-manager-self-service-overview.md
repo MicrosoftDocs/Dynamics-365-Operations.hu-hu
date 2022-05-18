@@ -8,7 +8,6 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMParameters, EssWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom:
 - "51941"
 - intro-internal
@@ -17,12 +16,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-03-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 28bf4ff4e456505efda3777a4f820c54f270c74b
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 51883730c36a3df2538adbe85ad8ead7d3cf1e98
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068944"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694481"
 ---
 # <a name="employee-and-manager-self-service-overview"></a>Alkalmazotti és vezetői önkiszolgáló rendszer áttekintése
 
@@ -96,7 +95,7 @@ Dokumentumainak megtekintése és kezelése a **Mellékletek** csempével. Minde
 
 Ez a szakasz az **Alkalmazotti önkiszolgáló rendszer** más területeire mutató hivatkozásokat tartalmaz, hasonlóan a **Saját karrieradatok** szakaszhoz.
 
-A **Juttatások** hivatkozással regisztrálhat a juttatásokra. A juttatások kezelésével kapcsolatos további információkért lásd: [Előnyök áttekintése](hr-benefits-management-overview.md).
+A **Juttatások** hivatkozással regisztrálhat a juttatásokra. A juttatások kezelésével kapcsolatos további tudnivalókat lásd a [Juttatások áttekintése témakörben](hr-benefits-management-overview.md).
 
 A **Teljesítmény** területen kiválaszthatja a **Teljesítménynapló** elemet ahol teljesítménnyel kapcsolatos naplóbejegyzéseket hozhat létre, amelyeket a teljesítménycélokhoz és -értékelésekhez is használhat. A **Visszajelzés küldése** lehetőséget választva a szervezeten belüli más alkalmazottaknak is küldhet visszajelzést. A szervezet beállításaitól függően előfordulhat, hogy e-mailek lesznek küldve a címzettnek, a feladónak és a vezetőknek. A szervezeten belül az összes alkalmazottnak lehet visszajelzést küldeni. A visszajelzések küldése nincs vállalatra korlátozva.
 

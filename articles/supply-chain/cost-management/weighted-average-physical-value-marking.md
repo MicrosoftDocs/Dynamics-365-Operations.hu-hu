@@ -1,7 +1,7 @@
 ---
 title: Súlyozott átlag tényleges értékkel és jelöléssel
 description: A súlyozott átlag olyan készletmodell, amely a súlyozott átlag elven alapul, ahol a készletből történő kiadások értékét a készletzárási időszakban a készletbe bevételezett cikkek átlagos értéke, valamint az előző időszakban meglévő tényleges készlet határozza meg.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 02/21/2022
 ms.topic: article
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
@@ -9,15 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 65501
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 6c124716b70be837573506a738ef2034397f2bda
-ms.sourcegitcommit: addae271ddfc5a8b0721c23337f69916153db4cd
+ms.openlocfilehash: 41c80dcdc08432bb68478827c8763735e644aa4a
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2022
-ms.locfileid: "8330226"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8675263"
 ---
 # <a name="weighted-average-with-physical-value-and-marking"></a>Súlyozott átlag tényleges értékkel és jelöléssel
 
@@ -99,11 +99,11 @@ A következő ábra a következő tranzakciókat mutatja be:
 - 7\. Készletzárást hajtanak végre.
 - 7a. Súlyozott átlagú készletzárási tranzakció pénzügyi kiadás jön létre az összes pénzügyi készletbevételezés kiegyenlítésének összegzése érdekében.
   - Az 1b. tranzakciót 1 mennyiséggel egyenlítik ki, a kiegyenlített összeg 1 USD 10.00.
-  - A 2b. tranzakciót 1 mennyiséggel egyenlítik ki, a kiegyenlített összeg 1 USD 22.00.
+  - A 2b. tranzakciót 1 mennyiséggel egyenlítik ki, 1 összeggel, USD 22.00.
   - Az 5b. tranzakciót 1 mennyiséggel egyenlítik ki, a kiegyenlített összeg pedig USD 30.00.
   - 7a. tranzakció A (USD 62.00) mennyiség 3 mennyiséghez jön USD 62.00. Ez a tranzakció kiegyenlíti az időszakban pénzügyileg frissített három bevételezési tranzakció összegét.
 - 7b. Súlyozott átlagú készletzárási tranzakció pénzügyi bevételezése jön létre a pénzügyileg feladott problémák ellentételeként.
-  - A 3b. tranzakciót 1 mennyiséggel egyenlítik ki, 1 összeggel, USD 20.67. Ez a tranzakció USD 4.67 úgy módosul, hogy az eredeti USD 16.00 értékét 20,67-re állítsa, amely az időszakra vonatkozóan a pénzügyileg feladott tranzakciók súlyozott átlaga.
+  - A 3b. tranzakciót 1 mennyiséggel egyenlítik ki, a kiegyenlített összeg pedig USD 20.67. Ez a tranzakció USD 4.67 úgy módosul, hogy a USD 16.00 eredeti értékét 20,67-re állítsa, amely az időszakra vonatkozóan a pénzügyileg feladott tranzakciók súlyozott átlaga.
   - 7b. tranzakció 1 mennyiségre jött létre, 3b ellenszámlára USD 20.67 kiegyenlített összeggel. Ez a tranzakció kiegyenlíti az időszakban pénzügyileg frissített egyetlen kiadási tranzakció összegét.
 
 A következő diagram bemutatja **a** tranzakciósorozatot, és a súlyozott átlag készletmodell, valamint a Tényleges értékkel együtt beállítás nélkül az összesített kiegyenlítési elv hatását a folyamatra.
@@ -134,9 +134,9 @@ A következő ábra a következő tranzakciókat mutatja be:
 - 2a. Fizikai bevételezés készletre, 10 mennyiséggel, 20,00 USD áron.
 - 3a. Fizikai kiadás készletről, 1 mennyiséggel, USD 15.00 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
 - 3b. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 15.00 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
-- 4a. Fizikai kiadás készletről, 1 mennyiséggel, USD 15.00 egységenként (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
-- 4b. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 15.00 költséggel (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
-- 5a. Fizikai kiadás készletről, 1 mennyiséggel, USD 15.00 egységenként (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+- 4a. Fizikai kiadás készletről, 1 mennyiséggel, USD 15.00 költséggel (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+- 4b. Pénzügyi kiadás készletről, 1 mennyiséggel, USD 15.00 egységenként (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+- 5a. Fizikai kiadás készletről, 1 mennyiséggel, USD 15.00 költséggel (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
 - 6\. Készletzárást hajtanak végre. A súlyozott átlagon alapuló rendszer a közvetlen kiegyenlítési módszert használja, mivel az időszakban csak egy bevételezés van pénzügyileg frissítve. Ebben a példában az egyik kiegyenlítés 1b és 3b, egy másik pedig 1b és 4b között jön létre. A 3b. és a 4b. tranzakciót -5,00 USD-s értékkel korrigálja a USD 10.00.
 
 A következő diagram bemutatja **a** tranzakciósorozatot, és a súlyozott átlag készletmodell, valamint a tényleges értékkel együtt beállítással történő közvetlen kiegyenlítési elv hatását a folyamatra.
@@ -175,11 +175,11 @@ A következő ábra a következő tranzakciókat mutatja be:
 - 7\. Készletzárást hajtanak végre.
 - 7a. Súlyozott átlagú készletzárási tranzakció pénzügyi kiadás jön létre az összes pénzügyi készletbevételezés kiegyenlítésének összegzése érdekében.
   - Az 1b. tranzakciót 1 mennyiséggel egyenlítik ki, a kiegyenlített összeg 1 USD 10.00.
-  - A 2b. tranzakciót 1 mennyiséggel egyenlítik ki, a kiegyenlített összeg 1 USD 22.00.
+  - A 2b. tranzakciót 1 mennyiséggel egyenlítik ki, 1 összeggel, USD 22.00.
   - Az 5b. tranzakciót 1 mennyiséggel egyenlítik ki, a kiegyenlített összeg pedig USD 30.00.
   - 7a. tranzakció A (USD 62.00) mennyiség 3 mennyiséghez jön USD 62.00.  
 - 7b. Súlyozott átlagú készletzárási tranzakció pénzügyi bevételezése jön létre a pénzügyileg lezárt kiadási tranzakciók ellentételeként.
-  - A 3b. tranzakciót 1 mennyiséggel egyenlítik ki, 1 összeggel, USD 20.67. Ez a tranzakció USD 4.67 úgy módosul, hogy az eredeti USD 16.00 értékét 20,67-re állítsa, amely az időszakra vonatkozóan a pénzügyileg feladott tranzakciók súlyozott átlaga.
+  - A 3b. tranzakciót 1 mennyiséggel egyenlítik ki, a kiegyenlített összeg pedig USD 20.67. Ez a tranzakció USD 4.67 úgy módosul, hogy a USD 16.00 eredeti értékét 20,67-re állítsa, amely az időszakra vonatkozóan a pénzügyileg feladott tranzakciók súlyozott átlaga.
   - 7b. tranzakció 1 mennyiségre jött létre, 3b ellenszámlára USD 20.67 kiegyenlített összeggel.
 
 A következő diagram bemutatja **a** tranzakciósorozatot, és a súlyozott átlag készletmodell, valamint a Tényleges értékkel együtt beállítás nélkül az összesített kiegyenlítési elv hatását a folyamatra.

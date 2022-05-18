@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-10-12
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 174cbd85139db5cee75481041fb721dc7646ab66
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: e74336270ab46fc19adb4c797745c9582028391a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913602"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687471"
 ---
 # <a name="print-tax-information-on-transfer-order-documents"></a>Adóinformációk rányomtatása az átmozgatási rendelésekre
 
@@ -39,7 +38,7 @@ Az adatok konfigurálása érdekében a következő fő lépéseket kell végreh
 
 1. [Az átátviteli rendelések adófunkciójának engedélyezése és beállítása](tasks/Tax-feature-support-for-transfer-order.md).
 2. [Több adószám létrehozása és beállítása egy jogi személyhez](emea-multiple-vat-registration-numbers.md).
-3. Állítsa be a mentességi kódot, a leírást, az adóügyi irányelveket, és nyomtassa ki a kódot az adókódok között. Ebben a példában három adókód jön létre és lesz szinkronizálva a Microsoft Dynamics 365 Finance alkalmazással: **NL-Exempt**, **BE-RC-21** és **BE-RC+21**.
+3. Állítsa be a mentességi kódot, a leírást, az adóügyi irányelveket, és nyomtassa ki a kódot az adókódok között. Ebben a példában három Microsoft Dynamics adókódot hoz létre és szinkronizál a 365 Pénzügyben: **NL-Exempt**, **BE-RC-21** és **BE-RC+21**.
 
     1. A Finance-ben lépjen az **Adó** \> **Beállítás** \> **Áfa** \> **Áfamentességi kódok** menüpontra.
     2. Válassza a **Szerkesztés** lehetőséget, és adja meg az **EU** mentességi kód leírását. Például írja be az **Adómentes EK-szállítmányok adóregisztrációs számmal** értéket.

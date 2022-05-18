@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollectorUserResults, HcmLearningWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: dc71748a5081b90feb69ed0da936c42b4d0e572a
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d783664da957192575bbd2b1f0286243be190715
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070702"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688064"
 ---
 # <a name="view-and-evaluate-the-results-of-questionnaires"></a>A kérdőívek megtekintése és az eredmények kiértékelése
 
@@ -34,7 +33,7 @@ Ez a témakör ismerteti, hogyan tudja megtekinteni és elemezni a kitöltött k
 Ha a válaszadók kitöltötték a kérdőívet, megtekintheti, valamint kiértékelheti a kérdőív eredményét az alábbi módokon:
 
 -   **Befejezett válaszmunkamenetek** – A válaszadók által kitöltött kérdőívek részleteinek megtekintése, valamint a válaszok és elért pontok összesítésére szolgáló jelentés létrehozása.
--   **Eredmény csoportok** – A kérdőív eredménycsoportjainak és statisztikájának megtekintése. Az eredménycsoport statisztikái egy kérdőív egyetlen válaszmenetére vagy az összes válaszadásra is előállíthatók.
+-   **Eredmény csoportok** – A kérdőív eredménycsoportjainak és statisztikájának megtekintése. Eredménycsoport-statisztika generálható egy kérdőív egyetlen válasz-munkamenetére vagy az összes válasz-munkamenetre.
 -   **Kérdőív-statisztika** – A válaszadók bizonyos csoportjához tartozó statisztika kiszámítási feltételeinek megadása.
 
 Létrehozhat az eredmények megtekintéséhez személy, válaszmunkamenet vagy eredménycsoport alapján rendezett jelentéseket. Az alábbi jelentések érhetőek el a kitöltött kérdőívekhez:

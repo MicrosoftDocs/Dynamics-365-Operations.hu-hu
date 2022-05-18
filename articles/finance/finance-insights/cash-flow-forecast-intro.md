@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "14151"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 62e30e382d94e4eff73789b3e884c6b81afce6c1
-ms.sourcegitcommit: c8dc60bb760553f166409c2e06dd2377f601c006
+ms.openlocfilehash: 2ed6795073b4a013df7a6a8a7a61df2c11525c51
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/23/2021
-ms.locfileid: "7945829"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711002"
 ---
 # <a name="cash-forecast"></a>Készpénzre vonatkozó előrejelzés
 
@@ -43,7 +43,7 @@ A legtöbb vállalatnál a pénzforgalom kezelése és a pénzforgalmi előrejel
 ## <a name="details-of-the-cash-flow-forecasts-capability"></a>A pénzforgalmi előrejelzések funkcióval kapcsolatos részletek
 A Pénzforgalmi előrejelzések funkció a következő lehetőségeket tartalmazza. 
 
-- Bemutatja az intelligens pénzforgalmi előrejelzést a hosszú távú előrejelzésekhez, az idősor előrejelzést használva az AI Builder automatizált integrációján keresztül.
+- Intelligens pénzforgalmi előrejelzést vezet be a hosszú távú előrejelzéshez, és az idősorozatok automatikus integrációján keresztüli előrejelzést használ AI Builder.
 
 - Lehetővé teszi meghatározott pénzforgalmi beosztások vagy előrejelzések mentését, szerkesztését, majd az előrejelzési teljesítménynek a tényleges pénzügyekkel való összehasonlítását és mérését.
 
@@ -53,7 +53,7 @@ A Pénzforgalmi előrejelzések funkció a következő lehetőségeket tartalmaz
 
 - A pénzügyi dimenziókkal kapcsolatos bankszámlák szűrését és megjelenítését teszi lehetővé.
 
-A pénzforgalom-előrejelzési funkció segíti a szervezetet, hogy az unalmas, összetett, mégis ismétlődő pénzforgalmi előrejelzést egyszerű, automatizált folyamatra alakítsa át a Dynamics 365 Finance-ben. A pénzforgalmi előrejelzések leginkább unalmas aspektusainak automatizálása lehetővé teszi a kritikus döntések meghozatalát a kívánt üzleti eredmények eléréséhez.
+A Dynamics 365 Pénzügy pénzforgalmi előrejelzési funkciói segítik a szervezetet annak érdekében, hogy egy egyszerű, automatizált folyamat során át tudja alakítani az összetett, összetett, de repetitív pénzforgalmi előrejelzéseket. A pénzforgalmi előrejelzések leginkább unalmas aspektusainak automatizálása lehetővé teszi a kritikus döntések meghozatalát a kívánt üzleti eredmények eléréséhez.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

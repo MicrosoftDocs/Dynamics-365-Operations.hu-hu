@@ -1,27 +1,27 @@
 ---
 title: Költségkönyvelési terminológia
 description: Ez a témakör a költségkönyveléshez használt kulcskifejezéseket határozza meg.
-author: ShylaThompson
+author: aprilolson
 ms.date: 08/31/2017
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedger
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f61ae7a6657eaad3510833c17f342b7266be247aec2a9bfe80b97172f662ae0a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: f50f7849ac3c097d64a8499a19157f24d7a7b317
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6774377"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712425"
 ---
 # <a name="cost-accounting-terminology"></a>Költségkönyvelési terminológia
 
@@ -115,7 +115,7 @@ Két dimenzióhierarchia van: kategorizálási hierarchia és osztályozási hie
 A költségkönyvelés adatcsatlakozók sorának révén támogatja a forrásrendszerekből származó adatok integrálását. A következő adatcsatlakozók állnak rendelkezésre:
 
 -  Importált tranzakciók (előre konfigurált)
--  Dynamics 365 Finance (előre konfigurált)
+-  Dynamics 365 Pénzügy (előre konfigurálva)
 -  Dynamics AX (konfiguráció szükséges)
 
 **Megjegyzés:** az Importált tranzakciók adatcsatlakozó adatentitásokon alapul.
@@ -124,9 +124,9 @@ A költségkönyvelés adatcsatlakozók sorának révén támogatja a forrásren
 
 A legtöbb forrásrendszer olyan adatokat tud biztosítani, amelyek megfelelnek a költségkönyvelés egy vagy több adatforrásának. A forrásrendszerekből származó adatok a költségkönyvelés adatforrásához igazításával adatszolgáltatót kell konfigurálni. Az alábbi táblázat adatcsatlakozónként és adatforrásonként sorolja fel az adatszolgáltatók elérhetőségét.
 
-|  **Adatforrások** |  **Importált tranzakciók adatcsatlakozó** | **Dynamics 365 Finance adatcsatlakozó**  | **Dynamics AX adatcsatlakozó**  |
+|  **Adatforrások** |  **Importált tranzakciók adatcsatlakozó** | **Dynamics 365 Pénzügyi adatcsatlakozó**  | **Dynamics AX adatcsatlakozó**  |
 |---|---|---|---|
-| Költségösszetevő-dimenziótagok  |  Igen | Igen  | Igen  |
+| Költségösszetevő-dimenzió tagjai  |  Igen | Igen  | Igen  |
 |  Költségobjektum-dimenziótagok |  Igen | Igen  | Igen  |
 |  Statisztikai dimenziótagok | Igen  | Nem  | Nem  |
 |  Főkönyv | Igen  | Igen  | Igen  |

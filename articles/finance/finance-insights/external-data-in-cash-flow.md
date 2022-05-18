@@ -1,26 +1,26 @@
 ---
 title: Külső adatok a pénzforgalmi előrejelzésekben
 description: Ez a témakör azokat a beállítási lépéseket ismerteti, amelyeket el kell végrehajtani annak érdekében, hogy a pénzforgalmi előrejelzésekbe külső adatokat lehet beírni vagy importálni.
-author: rcarlson
+author: RyanCCarlson2
 ms.date: 02/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
-ms.author: peakerbl
+ms.author: rcarlson
 ms.search.validFrom: 2020-06-08
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: 23342114c25cd1b59d47aa7ce63f09de029fa690
-ms.sourcegitcommit: 465c84eb5cdc211692e2ae09b45d1400f9a315ee
+ms.openlocfilehash: f7fac80b7ad0fde273fbd33aa5df146e569be46e
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8314708"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713726"
 ---
 # <a name="external-data-in-cash-flow-forecasts"></a>Külső adatok a pénzforgalmi előrejelzésekben
 

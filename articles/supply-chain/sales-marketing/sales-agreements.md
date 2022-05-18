@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 14f76e06f7265a4dc1837a66171d3db13bc2e580
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: c36ace4fe61d4f3add7750c66594c0f1060f8127
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982509"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694368"
 ---
 # <a name="sales-agreements-overview"></a>Értékesítési szerződések áttekintése
 
@@ -36,7 +36,8 @@ Az értékesítési szerződés érvényességi időszakát a szerződés **Érv
 
 Értékesítési rendelést közvetlenül létrehozhat az értékesítési szerződésből a **Kiadási rendelés** művelet felhasználásával. Másik lehetőségként kiválaszthatja az érvényes értékesítési szerződést, amikor megteszi a rendelést (lásd az „Értékesítési szerződések alkalmazása a rendelési folyamatban” bekezdést ebben a cikkben).  
 
-> [Megjegyzés!] A korábbi verzióiban az értékesítési szerződések értékesítési keretrendelés néven futottak.
+> [!NOTE] 
+> A korábbi verziókban az értékesítési szerződéseket keretrendelésnek nevezik.
 
 ## <a name="commitment-types"></a>Kötelezettségtípusok
 Az értékesítési szerződés minden sora egy-egy kötelezettségvállalás bizonyos eladásra. A kötelezettségek alapvetően két csoportra oszlanak:

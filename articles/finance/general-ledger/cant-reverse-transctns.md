@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-07-21
 ms.dyn365.ops.version: 10.0.20
-ms.openlocfilehash: 869832f085ee91f6c1fee53dad508cf5e54535627dadd6fb59a7586b03c8ec3b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e18caf1dbdf8191713c17b1793f5da44cf2f182b
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719733"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8724529"
 ---
 # <a name="why-cant-i-reverse-this-transaction"></a>Miért nem lehet sztornírozni ezt a tranzakciót?
 
@@ -35,7 +35,7 @@ A szervezetek olyan helyzetben lehetnek, amikor sztornírozniuk kell egy feladot
 
 ## <a name="resolution"></a>Megoldás
 
-Csak akkor lehet sztornírozni a tranzakciókat, ha teljesülnek bizonyos feltételek. A témakör további részei az egyes modulokra vonatkozó ellenőrzést biztosítják. Bár ez a témakör a Microsoft Dynamics 365 Finance tranzakcióira fókuszál, néhány fogalom és ellenőrzés más alkalmazásokra, például az Dynamics 365 Supply Chain Management alkalmazásra is alkalmazható.
+Csak akkor lehet sztornírozni a tranzakciókat, ha teljesülnek bizonyos feltételek. A témakör további részei az egyes modulokra vonatkozó ellenőrzést biztosítják. Bár ez a témakör a Microsoft Dynamics 365 Pénzügy tranzakcióira fókuszál, néhány fogalom és ellenőrzés más alkalmazásokra, például az alkalmazásokra is alkalmazható Dynamics 365 Supply Chain Management.
 
 Ezenkívül a tranzakció sztornírozásának helye is befolyásolhatja, hogy visszafordítható-e a tranzakció. Például egy csekként feladott szállítói kifizetést csak a bankszámlák tranzakciós lapján található **Csekkek** szakaszból lehet sztornírozni. Nem sztornírozható a főkönyv **Bizonylattranzakciók** lapján.
 

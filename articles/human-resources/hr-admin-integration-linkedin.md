@@ -8,26 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2020-10-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fb75c391809f1ce5c7d48728a735f347ef1784ed
-ms.sourcegitcommit: 696796ca5635863850ae9ef16fc1fb0fc46ce8f0
+ms.openlocfilehash: d14a8cb1973e0ed55ef10ddb43415eba80eb5c1b
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/28/2021
-ms.locfileid: "7441265"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717111"
 ---
 # <a name="integrate-with-linkedin-talent-hub"></a>Integráció a LinkedIn Talent Hub szolgáltatással
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 > [!IMPORTANT]
-> Az ebben a témakörben leírt, a Dynamics 365 Human Resources és a LinkedIn Talent Hub közötti integráció 2021. december 31-én lesz visszavonva. Az integrációs szolgáltatás ezután az időpont után nem lesz elérhető. Az integrációs szolgáltatást még nem használó szervezetek a visszavonás előtt nem fogják tudni bevezetni a szolgáltatást.
+> Az ebben a témakörben Dynamics 365 Human Resources leírt LinkedIn Talent Hub és az integráció 2021. december 31-én történt meg. Az integrációs szolgáltatás ezután az időpont után nem lesz elérhető. Az integrációs szolgáltatást még nem használó szervezetek a visszavonás előtt nem fogják tudni bevezetni a szolgáltatást.
 
 A [LinkedIn Talent hub](https://business.linkedin.com/talent-solutions/talent-hub) egy pályázókövetési rendszer (applicant tracking system, ATS) platform. Ez lehetővé teszi a munkaerő sourcingját, kezelését és alkalmazását egyetlen helyen. A Microsoft Dynamics 365 Human Resources és a LinkedIn Talent hub integrálásával könnyedén létrehozhat alkalmazotti rekordokat a Human Resources alkalmazásban azok számára, akiket felvettek valamilyen beosztásra.
 

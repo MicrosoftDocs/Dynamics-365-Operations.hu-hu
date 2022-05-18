@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
 ms.custom: 539093
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: d59eee6e858c4f0051ec103adc4e1e99e79feec9
-ms.sourcegitcommit: 4d7bc52e6cdf6afce3793893ba2aa07176302314
+ms.openlocfilehash: 7de74f2b12e8e7201663ba78d936131b301b1ff9
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/11/2022
-ms.locfileid: "8560509"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8685770"
 ---
 # <a name="support-and-renewals"></a>Támogatás és megújítások 
 
@@ -127,6 +126,6 @@ A **Támogatás és megújítás vizsgálati lap** a következő mezőket tartal
 | Eredeti támogatási szint | Az előző támogatási szint. |
 | Eredeti megújítási százalék | Az előző megújítási százalék |
 | Eredeti megújítási összeg | Az előző megújítási összeg |
-| Módosította | A változtatást eló felhasználó neve. |
+| Módosította: | A változtatást eló felhasználó neve. |
 | Módosítás dátuma és időpontja | A módosítás dátuma. |
 | OK | A változtatás oka. |

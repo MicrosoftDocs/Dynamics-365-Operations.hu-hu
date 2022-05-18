@@ -1,22 +1,22 @@
 ---
 title: Biztonsági készlet teljesítése cikkek számára
 description: Ez a témakör bemutatja a biztonsági készlet teljesítését és a biztonsági készletmennyiség beállítását cikkek számára.
-author: thethehelga
+author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-oldolg
+ms.author: benebotg
 ms.dyn365.ops.version: 7.2999999999999998
 ms.search.validFrom: 2017-12-31
-ms.openlocfilehash: 937341e17688959e5721153c61af904a88608b17
-ms.sourcegitcommit: bc9e75c38e192664cde226ed3a94df5a0b304369
+ms.openlocfilehash: c539b804198ddc5d5dac52c958a851ee55116711
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/10/2021
-ms.locfileid: "7790938"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672066"
 ---
 # <a name="safety-stock-fulfillment-for-items"></a>Biztonsági készlet teljesítése cikkek számára
 
@@ -90,7 +90,7 @@ A következő forgatókönyv bemutatja, hogyan működik ez a paraméter, és mi
 > [!NOTE]
 > Minden ebben a témakörben található illusztráció esetében az x tengely a készletet, az y tengely a napokat, az oszlopok a készlet szintjét, és a nyilak a tranzakciókat, mint például az értékesítési rendeléssorok, beszerzési rendeléssorok, vagy tervezett rendelések, jelölik.
 
-[![ Gyakori forgatókönyv biztonsági készlet teljesítése számára.](media/Scenario1.png)](media/Scenario1.png)
+[![Gyakori forgatókönyv biztonsági készlet teljesítése számára.](media/Scenario1.png)](media/Scenario1.png)
 
 A **Minimális teljesítése** paraméter a következő értékeket tartalmazhatja:
 
@@ -98,17 +98,17 @@ A **Minimális teljesítése** paraméter a következő értékeket tartalmazhat
 
 A megadott minimum mennyiség az alaptervezés futtatásának napján teljesül. A rendszer megpróbálja a lehető leghamarabb teljesíteni a biztonsági készletkorlátot, ez azonban irreális lehet az átfutási idő miatt.
 
-[![ Követelmény a mai dátumra.](media/TodayReq.png)](media/TodayReq.png)
+[![Követelmény a mai dátumra.](media/TodayReq.png)](media/TodayReq.png)
 
 Egy P1 tervezett rendelés jön létre a mai dátumra az elérhető készlet biztonsági készletszintre hozásához ezen a dátumon. Az értékesítési rendeléssorok S1 és S3 között folytatják a készletszint csökkentését. A P2-P4 tervezett rendeléseket az Alaptervezés hozza létre úgy, hogy a készletszint minden értékesítési rendelés-követelmény után visszaáll a biztonsági korlátra.
 
 Ha a **Követelmény** fedezeti kódot használja, több tervezett rendelés lesz létrehozva. Mindig érdemes **Időszak** vagy **Min/Max** fedezetet használni a folyamatosan keresett cikkek és anyagok esetén, a feltöltés kötegelésének érdekében. A következő ábrán egy példa látható az **Időszak** fedezeti kódra.
 
-[![ Időszak. Mai dátum.](media/TodayPeriod.png)](media/TodayPeriod.png)
+[![Időszak. Mai dátum.](media/TodayPeriod.png)](media/TodayPeriod.png)
 
 A következő ábrán egy példa látható a **Min/Max** fedezeti kódra.
 
-[![ Min/Max. Mai dátum.](media/TodayMinMax.png)](media/TodayMinMax.png)
+[![Min/Max. Mai dátum.](media/TodayMinMax.png)](media/TodayMinMax.png)
 
 ### <a name="todays-date--procurement-time"></a>Mai dátum + beszerzési idő
 
@@ -118,11 +118,11 @@ Ez a teljesítési mód kevesebb késéssel és tervezett rendeléssel rendelkez
 
 A következő ábra a terv eredményét mutatja be, ha a fedezeti kód **Követelmény** vagy **Időszak**.
 
-[![ Követelmény vagy Időszak. Mai dátum és átfutási idő.](media/TodayPLTReq.png)](media/TodayPLTReq.png)
+[![Követelmény vagy Időszak. Mai dátum és átfutási idő.](media/TodayPLTReq.png)](media/TodayPLTReq.png)
 
 A következő ábra a terv eredményét mutatja be, ha a fedezeti kód **Min/Max**.
 
-[![ Min/Max. Mai dátum és átfutási idő.](media/TodayPLTMinMax.png)](media/TodayPLTMinMax.png)
+[![Min/Max. Mai dátum és átfutási idő.](media/TodayPLTMinMax.png)](media/TodayPLTMinMax.png)
 
 ### <a name="first-issue"></a>Első kiadás
 
@@ -130,21 +130,21 @@ A megadott minimum mennyiség azon a napon teljesül, amikor az elérhető kész
 
 A következő ábrán egy példa látható a **Követelmény** fedezeti kódra.
 
-[![ Cikk tervezése Követelmény fedezeti kóddal és Első kiadás teljesítéssel.](media/FirstIssueReq.png)](media/FirstIssueReq.png)
+[![Cikk tervezése Követelmény fedezeti kóddal és Első kiadás teljesítéssel.](media/FirstIssueReq.png)](media/FirstIssueReq.png)
 
 A következő ábrán egy példa látható az **Időszak** fedezeti kódra.
 
-[![ Cikk tervezése Időszak fedezeti kóddal és Első kiadás teljesítéssel.](media/FirstIssuePeriod.png)](media/FirstIssuePeriod.png)
+[![Cikk tervezése Időszak fedezeti kóddal és Első kiadás teljesítéssel.](media/FirstIssuePeriod.png)](media/FirstIssuePeriod.png)
 
 A következő ábrán egy példa látható a **Min/Max** fedezeti kódra.
 
-[![ Cikk tervezése MinMax fedezeti kóddal és Első kiadás teljesítéssel.](media/FirstIssueMinMax.png)](media/FirstIssueMinMax.png)
+[![Cikk tervezése MinMax fedezeti kóddal és Első kiadás teljesítéssel.](media/FirstIssueMinMax.png)](media/FirstIssueMinMax.png)
 
 Az alaptervezés futtatásának napján, ha az elérhető készlet már a biztonsági készletkorlát alatt van, akkor a **Mai dátum** és a **Mai dátum + beszerzési idő** azonnal elindítják a feltöltést. Az **Első kiadás** vár, amíg nem érkezik még egy kiadási tranzakció (például értékelési rendelés vagy anyajegyzéksor-követelmény) a cikkre, majd a tranzakció napján elindítja a feltöltést.
 
 Az alaptervezés futtatásának napján, ha az elérhető készlet nem ment a biztonsági készletkorlátozás alá, akkor a **Mai dátum** és az **Első kiadás** pontosan ugyanazt az eredményt nyújtja, ahogy az az alábbi ábrán is látható.
 
-[![ Nem korláton belül.](media/ReqFirstIssue.png)](media/ReqFirstIssue.png)
+[![Nem korláton belül.](media/ReqFirstIssue.png)](media/ReqFirstIssue.png)
 
 Az alaptervezés futtatásának napján, ha az elérhető készlet nem ment a biztonsági készletkorlátozás alá, akkor a **Mai dátum + beszerzési idő** a következő eredményt nyújtja, mivel elhalasztja a teljesítést a beszerzési átfutási idő végéig.
 
@@ -160,23 +160,23 @@ A biztonsági készlet számára bármilyen időpontban a legkésőbbi lejárati
 
 A folyamat megértéséhez vegye figyelembe a következő forgatókönyvet.
 
-[![ FEFO eset.](media/FEFOScenario.png)](media/FEFOScenario.png)
+[![FEFO eset.](media/FEFOScenario.png)](media/FEFOScenario.png)
 
 A tervezés futtatásakor az fedezi az első értékesítési rendelést az aktuális készletből, illetve egy további rendelést a hátralévő mennyiséggel.
 
-[![ FEFO 1.](media/FEFO1.png)](media/FEFO1.png)
+[![FEFO 1.](media/FEFO1.png)](media/FEFO1.png)
 
 Egy tervezett rendelés jön létre, hogy biztosítsa, hogy az elérhető készlet visszaáll a biztonsági korlátra.
 
-[![ FEFO 2.](media/FEFO2.png)](media/FEFO2.png)
+[![FEFO 2.](media/FEFO2.png)](media/FEFO2.png)
 
 A második értékesítési rendelés tervezésekor az előző, a biztonsági készletet fedező tervezett rendelés kerül használatba ezen mennyiség fedezésére. Emiatt a biztonsági készlet folyamatosan gördül.
 
-[![ FEFO 3.](media/FEFO3.png)](media/FEFO3.png)
+[![FEFO 3.](media/FEFO3.png)](media/FEFO3.png)
 
 Végül egy másik tervezett rendelés jön létre a biztonsági készlet fedezésére.
 
-[![ FEFO 4.](media/FEFO4.png)](media/FEFO4.png)
+[![FEFO 4.](media/FEFO4.png)](media/FEFO4.png)
 
 Az összes köteg ennek megfelelően jár le, és tervezett rendelések jönnek létre a biztonsági készlet feltöltéséhez annak lejárta után.
 

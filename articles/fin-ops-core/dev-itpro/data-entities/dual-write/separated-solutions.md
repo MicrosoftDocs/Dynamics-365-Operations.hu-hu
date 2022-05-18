@@ -1,62 +1,62 @@
 ---
-title: Elkülönített, kétírásos alkalmazáshangosítási csomag
-description: A Dual-write Application Orchestration csomag már nem egyetlen csomag, hanem kisebb csomagokra lett szétválasztva. Ez a témakör bemutatja az egyes csomagokban található megoldásokat és leképezéseket, valamint a többi csomagtól való függőségét.
+title: Két írásos alkalmazás- és előírásos csomag elválasztása
+description: A kettős írású Application Orchestration csomag már nem egy csomag, hanem kisebb csomagokra lett bontva. Ez a témakör ismerteti az egyes csomagok megoldásait és leképezését, valamint a más csomagoktól való függőségét.
 author: RamaKrishnamoorthy
-ms.date: 11/29/2021
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.custom: separate-solution
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-11-29
-ms.openlocfilehash: e2f870368dc662032a3e7ca7ddca902feb23a713
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: f6950ec3e6ded49a71f119c21be67f538c8e1c69
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063262"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716552"
 ---
-# <a name="separated-dual-write-application-orchestration-package"></a>Elkülönített, kétírásos alkalmazáshangosítási csomag
+# <a name="separated-dual-write-application-orchestration-package"></a>Két írásos alkalmazás- és előírásos csomag elválasztása
 
 [!include [banner](../../includes/banner.md)]
 
 
 
-Korábban a Dual-write Application Orchestration csomag egyetlen csomag volt, amely a következő megoldásokat tartalmazta:
+Korábban a Dual-write Application Orchestration csomag egy olyan csomag volt, amely a következő megoldásokat tartalmazza:
 
-- Dynamics 365 Notes
-- Dynamics 365 Finance és Operations Common Anchor
-- Dynamics 365 Finance és Műveletek Dual Write Entity Maps
-- Dynamics 365 Asset Management alkalmazás
-- Dynamics 365 Asset Management
+- Dynamics 365 Megjegyzések
+- Dynamics 365 Pénzügy és Műveletek közös horgonya
+- Dynamics 365 Pénzügy és Műveletek – Két írásos entitás leképezés
+- Dynamics 365 eszközkezelési alkalmazás
+- Dynamics 365 Eszközkezelés
 - HCM Közös
-- Dynamics 365 Supply Chain Extended
+- Dynamics 365 Ellátási lánc kiterjesztve
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance és Operations Common
-- Dynamics 365 Company
-- Valuta árfolyamok
-- Field Service Common
+- Dynamics 365 Pénzügy és Műveletek – Közös
+- Dynamics 365 vállalat
+- Devizaárfolyamok
+- Field Service - általános
 
-Mivel egyetlen csomagról volt szó, ez a csomag "mindent vagy semmit" helyzetet teremtett az ügyfelek számára. A Microsoft azonban most kisebb csomagokra bontotta. Ezért az ügyfél csak az általa igényelt megoldásokhoz választhatja ki a csomagokat. Például, ha Ön egy Microsoft Dynamics 365 Supply Chain Management ügyfél, és nincs szükség integrációra Dynamics 365 Human Resources, jegyzetek és eszközkezelés, kizárhatja ezeket a megoldásokat a telepített megoldások közül. Mivel az alapul szolgáló megoldásnevek, a kiadók és a térképváltozatok változatlanok maradnak, ez a változás nem töretlen. A meglévő telepítéseket frissíteni kell.
+Mivel ez egy csomag volt, ez a csomag "minden vagy semmi" helyzetet hozott létre a vevők számára. A Microsoft azonban kisebb csomagokra bontotta. Ebből következően a vevők csak a szükséges megoldáscsomagokat választhatják ki. Ha például Ön Microsoft-ügyfél Dynamics 365 Supply Chain Management, Dynamics 365 Human Resources és nincs szükség a – megjegyzések és eszközkezelés – integrációra, akkor ezeket a megoldásokat ki lehet zárni a telepített megoldásokból. Mivel a mögöttes megoldásnevek, közzétevők és leképezésverziók változatlanok maradnak, ez a módosítás nem törés. A meglévő telepítéseket frissíteni kell.
 
-![Külön csomag.](media/separated-package-1.png)
+![Csomag elválasztva.](media/separated-package-1.png)
 
-Ez a témakör bemutatja az egyes csomagokban található megoldásokat és leképezéseket, valamint a többi csomagtól való függőségét.
+Ez a témakör ismerteti az egyes csomagok megoldásait és leképezését, valamint a más csomagoktól való függőségét.
 
-## <a name="dual-write-application-core"></a>Kettős írású alkalmazásmag
+## <a name="dual-write-application-core"></a>Két írásos Application Core
 
-A Dual-write Application Core csomag lehetővé teszi a felhasználók számára a kettős írási mód telepítését és konfigurálását az ügyfelek bevonása nélkül. A következő öt megoldást tartalmazza.
+A kettős írású Application Core csomag lehetővé teszi a felhasználók számára a kettős írású, ügyfél-kapcsolati alkalmazás nélküli telepítést és konfigurálást. A következő öt megoldást tartalmazza.
 
 | Egyedi név                           | Megjelenítendő név                               |
 |---------------------------------------|--------------------------------------------|
-| Dynamics365Company                    | Dynamics 365 Company                       |
-| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Finance és Operations Common |
-| CurrencyExchangeRates                 | Valuta árfolyamok                    |
-| msdyn_DualWriteAppCoreMaps            | Kettős írásmódú alkalmazások alapvető entitástérképei   |
-| msdyn_DualWriteAppCoreAnchor          | Kettős írású alkalmazások mag horgony        |
+| Dynamics365Company                    | Dynamics 365 vállalat                       |
+| Dynamics365FinanceAndOperationsCommon | Dynamics 365 Pénzügy és Műveletek – Közös |
+| CurrencyExchangeRates                 | Devizaárfolyamok                    |
+| msdyn_DualWriteAppCoreMaps            | Két írásos alkalmazások alapentitás-leképezések   |
+| msdyn_DualWriteAppCoreAnchor          | Két írásos alkalmazások központi horgonya        |
 
-A következő térképek érhetők el ebben a csomagban.
+A következő térképeket tartalmazza ez a csomag.
 
 | Finance and Operations alkalmazások     | Customer Engagement alkalmazások                    |
 |---------------------------------|---------------------------------------------|
@@ -73,51 +73,51 @@ A következő térképek érhetők el ebben a csomagban.
 | Pénznemek                      | transactioncurrencies                       |
 | Vegyes valóság útmutatók entitás     | msmrw_guides                                |
 
-**Függőségi információk**
+**Függőségi információ**
 
-A Dual-write Application Core csomag nem függ más csomagoktól.
+A kettős írású Application Core csomag nem függ más csomagoktól.
 
-## <a name="dual-write-human-resources"></a>Kettős írásmódú emberi erőforrások
+## <a name="dual-write-human-resources"></a>Kettős írású emberi erőforrások
 
-A Dual-write Human Resources csomag tartalmazza azokat a megoldásokat és térképeket, amelyek az emberi erőforrások adatainak szinkronizálásához szükségesek. A következő három megoldást tartalmazza.
+A kettős írású Emberi erőforrások csomag tartalmazza az emberi erőforrások adatainak szinkronizálásához szükséges megoldásokat és térképeket. A következő három megoldást tartalmazza.
 
 | Egyedi név                | Megjelenítendő név                             |
 |----------------------------|------------------------------------------|
 | HCMCommon                  | HCM Közös                               |
-| msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entitástérképek |
-| msdyn_Dynamics365HCMAchor | Dynamics 365 Human Resources horgony      |
+| msdyn_Dynamics365HCMMaps   | Dynamics 365 Human Resources entitás-leképezések |
+| msdyn_Dynamics365HCMAnchor | Dynamics 365 Human Resources Horgony      |
 
-A következő térképek érhetők el ebben a csomagban.
+A következő térképeket tartalmazza ez a csomag.
 
 | Finance and Operations alkalmazások | Customer Engagement alkalmazások         |
 |-----------------------------|----------------------------------|
 | Etnikumok              | cdm_ethnicorigins                |
 | Kompenzáció - beosztás funkciója   | cdm_jobfunctions                 |
 | Pozíciók V2                | cdm_jobpositions                 |
-| Beosztások                        | cdm_jobs                         |
+| Munkák                        | cdm_jobs                         |
 | Kompenzáció - beosztás típusa       | cdm_jobtypes                     |
 | Nyelvkódok              | cdm_languages                    |
 | Beosztás típusa               | cdm_positiontypes                |
 | Beosztáshoz rendelt dolgozók | cdm_positionworkerassignmentmaps |
-| Veteránállapot              | cdm_veteranstatus              |
+| Veteránállapot              | cdm_veteranstatuses              |
 | Dolgozó                      | cdm_workers                      |
 | Foglalkoztatás vállalkozásonként      | cdm_employments                  |
 
-**Függőségi információk**
+**Függőségi információ**
 
-A kettős írásmódú emberi erőforrás csomag a Dual-write Application Core csomagtól függ. Ezért a Dual-write Application Core csomagot a Dual-write Human Resources csomag telepítése előtt telepítenie kell.
+A kettős írású Emberi erőforrások csomag a kettős írású Application Core csomagtól függ. Ezért a kettős írású Application Core csomagot még a kétírásos Emberi erőforrások csomag telepítése előtt telepítenie kell.
 
 ## <a name="dual-write-supply-chain"></a>Kettős írású ellátási lánc
 
-A Dual-Write Supply Chain csomag tartalmazza azokat a megoldásokat és térképeket, amelyek a Supply Chain Management adatok szinkronizálásához szükségesek. A következő három megoldást tartalmazza.
+A kettős írású Ellátásilánc-kezelés csomag tartalmazza az ellátásilánc-kezelés adatainak szinkronizálásához szükséges megoldásokat és térképeket. A következő három megoldást tartalmazza.
 
 | Egyedi név                                | Megjelenítendő név                                              |
 |--------------------------------------------|-----------------------------------------------------------|
-| Dynamics365SupplyChainExtended             | Dynamics 365 Supply Chain Extended                        |
-| msdyn_Dynamics365SupplyChainExtendedMaps   | Dynamics 365 Supply Chain Management kiterjesztett entitástérképek |
+| Dynamics365SupplyChainExtended             | Dynamics 365 Ellátási lánc kiterjesztve                        |
+| msdyn_Dynamics365SupplyChainExtendedMaps   | Dynamics 365 Supply Chain Management kiterjesztett entitás leképezések |
 | msdyn_Dynamics365SupplyChainExtendedAnchor | Dynamics 365 Supply Chain Management kiterjesztett horgony      |
 
-A következő térképek érhetők el ebben a csomagban.
+A következő térképeket tartalmazza ez a csomag.
 
 | Finance and Operations alkalmazások                 | Customer Engagement alkalmazások                      |
 |---------------------------------------------|-----------------------------------------------|
@@ -165,43 +165,43 @@ A következő térképek érhetők el ebben a csomagban.
 | Termékkategóriák hozzárendelései                | msdyn_productcategoryassignments              |
 | Termékkategóriák                          | msdyn_productcategories                       |
 | Raktárhelyek                         | msdyn_inventorylocations                      |
-| CDS-leltár bekapcsolva                            | msdyn_inventoryonhandentries                  |
+| CDS-készlet a                            | msdyn_inventoryonhandentries                  |
 | Termékkategóriák                          | msdyn_productcategories                       |
-| CDS-leltár bekapcsolva                            | msdyn_inventoryonhandrequests                 |
+| CDS-készlet a                            | msdyn_inventoryonhandrequests                 |
 | Termékszám alapján azonosított vonalkód           | msdyn_productbarcodes                         |
 | Hűségkártya                                | msdyn_loyaltycards                            |
 | Hűségpontok                       | msdyn_loyaltyrewardpoints                     |
 | Ár vevőcsoportjai                       | msdyn_pricecustomergroups                     |
-| Helyek                                       | msdyn_operationalsites                        |
+| Webhelyek                                       | msdyn_operationalsites                        |
 | CDS értékesítési ajánlat sorai                   | quotedetails                                  |
 | CDS értékesítési rendelés sorai                       | salesorderdetails                             |
 
-**Függőségi információk**
+**Függőségi információ**
 
-A Dual-Write Supply Chain csomag a következő három csomagtól függ. Ezért ezeket a csomagokat a Dual-write Supply Chain csomag telepítése előtt telepítenie kell.
+A kettős írású Ellátásilánc-csomag a következő három csomagtól függ. Ezért ezeket a csomagokat még a két írásos Ellátásilánc-csomag telepítése előtt telepítenie kell.
 
-- Dual Write Application Core csomag
-- Kettős írásos pénzügyi csomag
-- Kétszeres emberi erőforrás csomag
+- Két írásos Application Core csomag
+- Két írású pénzügyi csomag
+- Két írású emberi erőforrás csomag
 
-## <a name="dual-write-finance"></a>Kettős írásmódú pénzügyek
+## <a name="dual-write-finance"></a>Kettős írású pénzügy
 
-A Dual-write Finance csomag tartalmazza a szinkronizáláshoz szükséges megoldásokat és térképeket Dynamics 365 Finance adat. A következő négy megoldást tartalmazza.
+A Dual-write Finance csomag tartalmazza a Dynamics 365 Pénzügyi adatok szinkronizálásához szükséges megoldásokat és térképeket. A következő négy megoldást tartalmazza.
 
 | Egyedi név                            | Megjelenítendő név                               |
 |----------------------------------------|-------------------------------------------|
 | Dynamics365FinanceExtended             | Dynamics 365 Finance Extended             |
-| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Finance kiterjesztett entitástérképek |
-| FieldServiceCommon                     | Field Service Common                      |
-| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Finance kiterjesztett horgony      |
+| msdyn_Dynamics365FinanceExtendedMaps   | Dynamics 365 Pénzügyi kiterjesztett entitás leképezések |
+| FieldServiceCommon                     | Field Service - általános                      |
+| msdyn_Dynamics365FinanceExtendedAnchor | Dynamics 365 Pénzügy kiterjesztett horgonya      |
 
-A következő térképek érhetők el ebben a csomagban.
+A következő térképeket tartalmazza ez a csomag.
 
 | Finance and Operations alkalmazások             | Customer Engagement alkalmazások        |
 |-----------------------------------------|---------------------------------|
 | Adóelőleg-csoportok                  | msdyn_withholdingtaxgroups      |
-| CDS Contacts V2 (ügyfél)              | kapcsolattartók                        |
-| CDS Contacts V2 (szállító)                | kapcsolattartók                        |
+| CDS-kapcsolattartók V2 (vevő)              | kapcsolattartók                        |
+| CDS -kapcsolattartók V2 (szállító)                | kapcsolattartók                        |
 | Vevők V3                            | kapcsolattartók                        |
 | Adóelőlegkódok                   | msdyn_withholdingtaxcodes       |
 | Szállítók V2                              | msdyn_vendors                   |
@@ -227,52 +227,52 @@ A következő térképek érhetők el ebben a csomagban.
 | Fizetési nap sorai, CDS V2                | msdyn_paymentdaylines           |
 | Fő számla                            | msdyn_mainaccounts              |
 | Főszámla-kategóriák                 | msdyn_mainaccountcategories     |
-| Ledger                                  | msdyn_ledgers                   |
+| Főkönyv                                  | msdyn_ledgers                   |
 | Vevők V3                            | számlák                        |
 
-**Függőségi információk**
+**Függőségi információ**
 
-A Dual-write Finance csomag a Dual-write Application Core csomagtól függ. Ezért telepítenie kell a Dual-write Application Core csomagot a Dual-write Finance csomag telepítése előtt.
+A kettős írású pénzügyi csomag a kettős írású Application Core csomagtól függ. Ezért a Kettős írású Pénzügy csomag telepítése előtt telepítenie kell a Kettős írású Application Core csomagot.
 
-## <a name="dual-write-notes"></a>Kettős írásjegyek
+## <a name="dual-write-notes"></a>Kettős írású megjegyzések
 
-A Dual-write Notes csomag tartalmazza azokat a megoldásokat és leképezéseket, amelyek a jegyzet- vagy annotációs adatok szinkronizálásához szükségesek. A következő négy megoldást tartalmazza.
+A kettős írású Megjegyzések csomag tartalmazza azokat a megoldásokat és térképeket, amelyek szükségesek a megjegyzés- vagy jegyzetadatok szinkronizálásához. A következő négy megoldást tartalmazza.
 
 | Egyedi név                  | Megjelenítendő név                   |
 |------------------------------|--------------------------------|
-| Dynamics365Notes             | Dynamics 365 Notes             |
-| Dynamics365NotesExtended     | Dynamics 365 jegyzetek kiterjesztve    |
-| msdyn_Dynamics365NotesMaps   | A Dynamics 365 jegyzetek entitásleképezéseket |
-| msdyn_Dynamics365NotesAnchor | Dynamics 365 jegyzethorgony      |
+| Dynamics365Notes             | Dynamics 365 Megjegyzések             |
+| Dynamics365NotesExtended     | Dynamics 365 megjegyzések kiterjesztve    |
+| msdyn_Dynamics365NotesMaps   | Dynamics 365 megjegyzések entitás-leképezések |
+| msdyn_Dynamics365NotesAnchor | Dynamics 365 megjegyzések horgonya      |
 
-A következő térképek érhetők el ebben a csomagban.
+A következő térképeket tartalmazza ez a csomag.
 
 | Finance and Operations                     | Customer Engagement |
 |--------------------------------------------|---------------------|
-| Értékesítési rendelési fejléc bizonylatmellékletei    | megjegyzések         |
-| Vevői mellékletek                       | megjegyzések         |
-| Szállítóidokumentum-mellékletek                | megjegyzések         |
-| Beszerzési rendelési fejléc bizonylatmellékletei | megjegyzések         |
+| Értékesítési rendelési fejléc bizonylatmellékletei    | Széljegyzetek         |
+| Vevői mellékletek                       | Széljegyzetek         |
+| Szállítóidokumentum-mellékletek                | Széljegyzetek         |
+| Beszerzési rendelési fejléc bizonylatmellékletei | Széljegyzetek         |
 
-**Függőségi információk**
+**Függőségi információ**
 
-A Dual-write Notes csomag a következő két csomagtól függ. Ezért ezeket a csomagokat a Dual-write Notes csomag telepítése előtt telepítenie kell.
+A kettős írású Megjegyzések csomag a következő két csomagtól függ. Ezért ezeket a csomagokat még a két írásos Megjegyzések csomag telepítése előtt telepítenie kell.
 
-- Dual Write Application Core csomag
-- Kettős írásos pénzügyi csomag
+- Két írásos Application Core csomag
+- Két írású pénzügyi csomag
 
-## <a name="dual-write-asset-management"></a>Kettős írásmódú eszközkezelés
+## <a name="dual-write-asset-management"></a>Kettős írású eszközkezelés
 
-A Dual-write Asset Management csomag tartalmazza azokat a megoldásokat és térképeket, amelyek szükségesek az eszközadatok szinkronizálásához a Supply Chain Management ill.Dynamics 365 Field Service. A következő négy megoldást tartalmazza.
+A kettős írású eszközkezelési csomag azokat a megoldásokat és térképeket tartalmazza, amelyek szükségesek az eszközadatoknak az Ellátásilánc-kezelés vagy az Dynamics 365 Field Service. A következő négy megoldást tartalmazza.
 
 | Egyedi név                          | Megjelenítendő név                              |
 |--------------------------------------|-------------------------------------------|
-| Dynamics365AssetManagement           | Dynamics 365 Asset Management             |
-| Dynamics365AssetManagementApp        | Dynamics365 Asset Management alkalmazás          |
-| msdyn_DualWriteAssetManagementMaps   | Dynamics 365 Asset Management entitástérképek |
-| msdyn_DualWriteAssetManagementAnchor | Dynamics 365 Asset Management horgony      |
+| Dynamics365AssetManagement           | Dynamics 365 Eszközkezelés             |
+| Dynamics365AssetManagementApp        | Dynamics365 eszközkezelési alkalmazás          |
+| msdyn_DualWriteAssetManagementMaps   | Dynamics 365 Eszközkezelési entitás leképezések |
+| msdyn_DualWriteAssetManagementAnchor | Dynamics 365 Eszközkezelés – horgony      |
 
-A következő térképek érhetők el ebben a csomagban.
+A következő térképeket tartalmazza ez a csomag.
 
 | Finance and Operations alkalmazások                           | Customer Engagement alkalmazások                |
 |-------------------------------------------------------|-----------------------------------------|
@@ -288,15 +288,59 @@ A következő térképek érhetők el ebben a csomagban.
 | Tárgyieszközkezelés eszközéletciklus állapotai               | msdyn_assetlifecyclestates              |
 | Tárgyieszközkezelés eszközéletciklus modelljei               | msdyn_assetlifecyclemodels              |
 
-**Függőségi információk**
+**Függőségi információ**
 
-A kettős írásmódú eszközkezelési csomag a kettős írásmódú alkalmazásmag-csomagtól függ. Ezért telepítenie kell a Dual-write Application Core csomagot a Dual-write Asset Management csomag telepítése előtt.
+A kettős írású eszközkezelési csomag a kettős írású Application Core csomagtól függ. Ezért a kettős írású Application Core csomagot még a Kétírásos eszközkezelés csomag telepítése előtt telepítenie kell.
 
-## <a name="packages-required-for-project-operations"></a>Projektműveletekhez szükséges csomagok
-A projektműveletek a következő csomagoktól függenek. Ezért ezeket a csomagokat a Project Operations telepítése előtt telepítenie kell.
+## <a name="packages-required-for-project-operations"></a>Projektművelethez szükséges csomagok
+A projektműveletek a következő csomagoktól függnek. Ezért ezeket a csomagokat a Projektműveletek telepítése előtt telepítenie kell.
 
-- Dual Write Application Core csomag
-- Kettős írásos pénzügyi csomag
-- Kettős írású Supply Chain csomag
-- Kettős írásmódú Asset Management csomag
-- Kétszeres emberi erőforrás csomag
+- Két írásos Application Core csomag
+- Két írású pénzügyi csomag
+- Két írású ellátásilánc-csomag
+- Két írású eszközkezelési csomag
+- Két írású emberi erőforrás csomag
+
+## <a name="dual-write-party-and-global-address-book-solutions"></a>Kettős írású fél és globális címjegyzék megoldásai
+
+A kettős írású fél és globális címjegyzék csomag a következő megoldásokat és térképeket tartalmazza, amelyek szükségesek a felek és a globális címjegyzék adatainak szinkronizálásához. 
+
+| Egyedi név                       | Megjelenítendő név                            |
+|-----------------------------------|-----------------------------------------|
+| Fél                             | Fél                                   |
+| Dynamics365GABExtended            | Dynamics 365 GAB kiterjesztve               |
+| Dynamics365GABDualWriteEntityMaps | Dynamics 365 GAB két írású entitás leképezések |
+| Dynamics365GABParty_Anchor        | Dynamics 365 GAB és fél              |
+
+A következő térképeket tartalmazza ez a csomag.
+
+| Finance and Operations alkalmazások | Customer Engagement alkalmazások | 
+|-----------------------------|--------------------------|
+| CDS-felek | msdyn_parties | 
+| CDS postai címének helyei | msdyn_postaladdresscollections | 
+| CDS-fél postai címének előzményei V2 | msdyn_postaladdresses | 
+| CDS-fél postai címének helyei | msdyn_partypostaladdresses | 
+| Ügyfél-kapcsolattartók V3 | msdyn_partyelectronicaddresses | 
+| Vevők V3 | számlák | 
+| Vevők V3 | kapcsolattartók | 
+| Szállítók V2 | msdyn_vendors | 
+| Kapcsolattartó megszólításai | msdyn_salescontactpersontitles | 
+| Udvarias levélzárások | msdyn_complimentaryclosings | 
+| Üdvözlések | msdyn_salutations | 
+| Döntéshozatali szerepkörök | msdyn_decisionmakingroles | 
+| Foglalkoztatási beosztásfunkciók | msdyn_employmentjobfunctions | 
+| Hűségszintek | msdyn_loyaltylevels | 
+| Személyes karaktertípusok | msdyn_personalcharactertypes | 
+| Kapcsolattartók V2 | msdyn_contactforparties | 
+| CDS értékesítésiajánlat-fejléc | ajánlatok | 
+| CDS értékesítésirendelés-fejlécek | salesorders | 
+| Értékesítésiszámla-fejlécek V2 | számlák | 
+| CDS-címszerepkre | msdyn_addressroles |
+
+**Függőségi információ**
+
+A kettős írású fél és globális címjegyzék megoldásai a következő három csomagtól függenek. Ezért ezeket a csomagokat még a két írásos fél és globális címjegyzék megoldáscsomag telepítése előtt telepíteni kell.
+
+- Két írásos Application Core csomag
+- Két írású pénzügyi csomag
+- Két írású ellátásilánc-csomag

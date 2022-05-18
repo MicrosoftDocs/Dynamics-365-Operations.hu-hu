@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: v-chgri
-ms.search.scope: Retail, Core, Operations
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: c6356f7c085b93e3e3f292e72f813f823e924487
-ms.sourcegitcommit: 7adf9ad53b4e6d1c4d5d612ce0977b76c61ec173
+ms.openlocfilehash: f8d79697aaf17e2860d2c47e7d1bf6b4352f0089
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968177"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691055"
 ---
 # <a name="ratings-and-reviews-faq"></a>Értékelések és vélemények GYIK
 
@@ -48,10 +47,10 @@ Ha útmutatásra van szüksége, hogyan engedélyezze és kényszerítse a minő
 
 [A termék minősítések szinkronizálása](sync-product-ratings.md)
 
-[A minősítések és az értékelések moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
+[Az értékelések és vélemények moderátor általi manuális közzétételének engedélyezése](manual-publish-rating-reviews.md)
 
-[Minősítések és felülvizsgálatok importálása és exportálása](import-export-reviews.md)
+[Értékelések és véleményezések importálása és exportálása](import-export-reviews.md)
 
-[Szolgáltatás-szolgáltatás hitelesítés konfigurálása](service-to-service-auth.md)
+[Szolgáltatás a szolgáltatáshoz típusú hitelesítés konfigurálása](service-to-service-auth.md)
 
 [Ha a minősítések és az áttekintések megoldása nincs engedélyezve, akkor a minősítések finomítója megjelenik a keresési eredményekben és a kategóriaoldalakon.](troubleshoot/hide-ratings-refiner.md)

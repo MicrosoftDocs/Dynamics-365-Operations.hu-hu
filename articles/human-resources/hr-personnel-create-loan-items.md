@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmLoanType, DefaultDashboard, HcmLoanItem, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 21127c46615015c30e06465b390f67b835e746cb
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 26bf5a83a6d25e99996ec4219c5fbbeed806e22d
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068134"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693724"
 ---
 # <a name="create-loan-items"></a>Kölcsöncikkek létrehozása
 
@@ -33,9 +32,9 @@ A kölcsöncikkek olyan rekordok, amelyek segítik követni a dolgozóknak kölc
 
 
 ## <a name="create-loan-types"></a>Kölcsöntípus létrehozása
-1. Menj **Emberi Erőforrások** > **Munkások** > **Kölcsön cikkek** > **Hiteltípusok**.
+1. Menjen a **Human resourcesWorkersLoan** > **·** > **itemsLoan** > **típusú elemekhez**.
 2. Kattintson az **Új** elemre.
-3. Ban,-ben **Kölcsön típusa** mezőbe írjon be egy értéket.
+3. A Kölcsön **típusa mezőbe** írjon be egy értéket.
 4. Írjon egy értéket a **Leírás** mezőbe.
 5. Adja meg azon napok számát, ahány nappal túlléphető a határidő az e kölcsöntípushoz rendelt cikkek esetében. 
 6. Kattintson a **Mentés** gombra.
@@ -43,21 +42,21 @@ A kölcsöncikkek olyan rekordok, amelyek segítik követni a dolgozóknak kölc
 8. Frissítse a lapot..
 
 ## <a name="create-loan-items"></a>Kölcsöncikkek létrehozása
-1. Menj **Emberi Erőforrások** > **Munkások** > **Kölcsön cikkek** > **Kölcsön cikkek**.
-2. Kattintson **Hitelelemek létrehozása**.
-3. Ban,-ben **Menny.** mezőbe írjon be egy számot.
+1. Ugrás a **Human resourcesWorkersLoan** > **·** > **itemsLoan** > **cikkekhez**.
+2. Kattintson a **Kölcsön cikkek létrehozása gombra**.
+3. A Mennyiség **mezőbe** írjon be egy számot.
 4. Írjon egy értéket a **Leírás** mezőbe.
-5. Ban,-ben **Kölcsön típusa** mezőben kattintson a legördülő gombra a keresés megnyitásához.
+5. A Kölcsöntípus **mezőben** kattintson a legördülő gombra a keresés megnyitásához.
 6. A kívánt rekord megkeresése és kijelölése a listán
 7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 8. Adja meg, hogy hány napra kölcsönözhető a cikk.
     * A Kölcsönzött felszerelés oldal Tervezett visszakerülés mezőjének alapértelmezés szerinti értékét a rendszer az aktuális dátumból, plusz ebből a számból számítja ki.  
-9. Ban,-ben **Felelős személy** mezőben kattintson a legördülő gombra a keresés megnyitásához.
+9. A felelős **személy mezőben** kattintson a legördülő gombra a keresés megnyitásához.
 10. Kattintson a **Kiválasztás** lehetőségre.
-11. Ban,-ben **Kiinduló érték** mezőbe írjon be egy számot.
+11. A Kezdő **érték mezőbe** írjon be egy számot.
 12. Az **Intervallum** mezőben adjon meg egy számot.
-13. Ban,-ben **Formátum** mezőbe írjon be egy értéket.
-    * Például, ha egy kölcsöncikk kezdőszáma 10, írjon be két számszimbólumot a **Formátum** terület.  
+13. A Formátum **mezőbe** írjon be egy értéket.
+    * Ha például egy kölcsöncikk kezdő száma 10, írjon be két számszimbólumát a Formátum **mezőbe**.  
 14. Kattintson az **OK** gombra.
 15. Frissítse a lapot..
 

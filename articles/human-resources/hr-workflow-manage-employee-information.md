@@ -1,25 +1,24 @@
 ---
 title: Alkalmazotti adatok kezelése munkafolyamatok segítségével
-description: Ez a témakör bemutatja, hogyan használhatja a munkafolyamatokat az alkalmazottak adatainak kezelésére.
+description: Ez a témakör bemutatja, hogy hogyan használhatók a munkafolyamatok az alkalmazotti adatok kezelésére.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: d80ed49a4f423179997ac35562284a4e28af803f
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 7c416a82976bc39464006325f02f1af4d2f32ea4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068085"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691526"
 ---
 # <a name="use-workflows-to-manage-employee-information"></a>Alkalmazotti adatok kezelése munkafolyamatok segítségével
 
@@ -30,7 +29,7 @@ ms.locfileid: "8068085"
 
 Ez a témakör bemutatja, hogy miként használhatja az Emberi erőforrások munkafolyamatait az alkalmazottak információinak kezelésére. Például egy munkafolyamatot társíthat egy pozícióhoz, és konfigurálhat egy jóváhagyási munkafolyamatot, amely akkor kezdődik, amikor az alkalmazottak módosítják a rekordjaikat.
 
-Az Emberi erőforrások munkafolyamat-lehetőségei számos munkafolyamatot biztosítanak az emberierőforrás-tevékenységek kezeléséhez. Ezenkívül számos opció áll rendelkezésre, hogy bizonyos munkafolyamatokat módosíthasson, és társíthassa azokat egy jelentéshierarchiához. Munkafolyamatok állnak rendelkezésre, amelyek segítenek kezelni a különböző típusú munkavállalói információk változásait. A munkafolyamatok beosztásokkal társíthatók. Ha az alkalmazottak ezután megváltoztatják az alkalmazotti rekordjukat, akkor elindul egy munkafolyamat, amely jóváhagyást igényel az új információk mentése előtt. A munkafolyamatok előre meghatározottak a következő típusú információkhoz, hogy segítsenek hatékonyan kezelni a változásokat, és pontosak legyenek az alkalmazottak adatai:
+Az Emberi erőforrások munkafolyamat-lehetőségei számos munkafolyamatot biztosítanak az emberierőforrás-tevékenységek kezeléséhez. Ezenkívül számos opció áll rendelkezésre, hogy bizonyos munkafolyamatokat módosíthasson, és társíthassa azokat egy jelentéshierarchiához. A munkafolyamatok segítségével kezelni lehet az alkalmazotti adatok különféle típusainak módosításait. A munkafolyamatok beosztásokkal társíthatók. Ha az alkalmazottak ezután megváltoztatják az alkalmazotti rekordjukat, akkor elindul egy munkafolyamat, amely jóváhagyást igényel az új információk mentése előtt. A munkafolyamatok előre definiált adatokkal segítik a változások hatékony kezelését és az alkalmazottak adatainak pontosságát:
 
 -   Azonosítószámok
 -   Tanfolyamok
@@ -44,20 +43,20 @@ Az Emberi erőforrások munkafolyamat-lehetőségei számos munkafolyamatot bizt
 -   Emberi erőforrásokkal kapcsolatos műveletek
 -   Tanfolyami regisztráció
 
-Alkalmazottak felvétele, áthelyezése vagy elbocsátása esetén a munkafolyamat felülvizsgálati folyamatot is tartalmazhat. Ily módon a dokumentum felülvizsgálható, vagy egy művelet feltételei meghatározhatók a munkafolyamat részeként. Az ellenőrzési folyamat befejezése után a dokumentum vagy a művelet befejeződik, és a munkafolyamat egy végső jóváhagyási lépéshez kerül.
+Alkalmazottak felvétele, áthelyezése vagy elbocsátása esetén a munkafolyamat felülvizsgálati folyamatot is tartalmazhat. Ily módon a dokumentumot módosítani lehet, vagy a művelet feltételeit meg lehet határozni a munkafolyamat részeként. Az ellenőrzési folyamat befejezése után a dokumentum vagy a művelet befejeződik, és a munkafolyamat egy végső jóváhagyási lépéshez kerül.
 
 ## <a name="associate-a-workflow-with-a-position-hierarchy"></a>Munkafolyamatok társítása beosztáshierarchiával
-A munkafolyamatot egy tetszőleges, Ön által konfigurált hierarchiához társíthatja. Ha például egy pozíció egy mátrixjelentési hierarchiához társul, akkor konfigurálhat egy olyan munkafolyamatot, amely egy adott projekt költségeit a projektvezetőhöz irányítja az adott pozícióhoz társított munkavállaló vezetője helyett. Új munkafolyamat létrehozásához vagy egy meglévő munkafolyamat módosításához a **Emberi erőforrás munkafolyamat** oldal, válassza ki **Új**. A Munkafolyamat-tervező megnyitásához válasszon egy munkafolyamatot a listából. A tervező segítségével új munkafolyamatot hozhat létre, illetve módosíthatja egy meglévő munkafolyamat lépéseit. Amikor módosít egy meglévő munkafolyamatot, a módosításai új verzióként kerülnek mentésre. Így szükség esetén bármikor visszatérhet egy korábbi verzióhoz.
+A munkafolyamatot egy tetszőleges, Ön által konfigurált hierarchiához társíthatja. Ha például egy pozíció egy mátrixjelentési hierarchiához társul, akkor konfigurálhat egy olyan munkafolyamatot, amely egy adott projekt költségeit a projektvezetőhöz irányítja az adott pozícióhoz társított munkavállaló vezetője helyett. Új munkafolyamat létrehozásához vagy meglévő munkafolyamat módosításához válassza az **Új lehetőséget az Emberi erőforrások munkafolyamat** **lapon**. Válasszon ki egy munkafolyamatot a listából a Munkafolyamat-tervező megnyitásához. A tervező segítségével új munkafolyamatot hozhat létre, illetve módosíthatja egy meglévő munkafolyamat lépéseit. Amikor módosít egy meglévő munkafolyamatot, a módosításai új verzióként kerülnek mentésre. Így szükség esetén bármikor visszatérhet egy korábbi verzióhoz.
 
 ## <a name="configure-a-human-resources-workflow"></a>Emberi erőforrások munkafolyamatának konfigurálása
 Ha konfigurálni szeretne egy alapvető munkafolyamatot, amelyik akkor indul el, amikor az alkalmazottak személyes azonosítójuk módosításait kérik, kövesse az alábbi lépéseket.
 
-1.  A **Emberi erőforrás munkafolyamatok** oldal, válassza ki **Új**.
+1.  Az Emberi erőforrások **munkafolyamatok lapon** válassza az Új **lehetőséget**.
 2.  Válassza ki a rendelkezésre álló munkafolyamatok listájánál az **Azonosítószámok** lehetőséget.
-3.  Válassza ki **Fuss** a Munkafolyamat-tervező megnyitásához, majd adja meg felhasználónevét és jelszavát, amikor a rendszer kéri.
+3.  A **Munkafolyamat-tervező** megnyitásához válassza a Futtatás lehetőséget, majd a kérdés kérdésére írja be a felhasználónevet és a jelszót.
 4.  Húzza az **Azonosítószám jóváhagyása** elemet a munkafolyamat-elemek listájáról a tervezői vászonra.
 5.  Csatlakoztassa a jóváhagyási elemet a **Kezdés** és **Befejezés** pontokhoz.
-6.  Koppintson duplán (vagy kattintson duplán) **Elem jóváhagyása**, jelölje ki és tartsa lenyomva (vagy kattintson a jobb gombbal), majd válassza ki **Tulajdonságok**.
+6.  Kattintson duplán az elem jóváhagyására, **válassza** ki és tartsa lenyomva (vagy kattintson a jobb gombbal), majd válassza a Tulajdonságok **lehetőséget**.
 7.  Kövesse az alábbi lépéseket a munkatétel hozzáadásához:
 
     1.  Válassza ki a **Hozzárendelés** elemet, majd a **Hierarchia** lehetőséget a hozzárendelés típusánál.

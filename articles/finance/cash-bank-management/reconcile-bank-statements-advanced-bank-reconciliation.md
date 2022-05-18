@@ -1,32 +1,32 @@
 ---
 title: Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával
-description: A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Microsoft Dynamics 365 Finance rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti.
-author: saraschi2
+description: A Speciális banki egyeztetési funkció lehetővé teszi az elektronikus banki kivonatok importálását Microsoft Dynamics és automatikus egyeztetését a 365 Pénzügy banki tranzakcióival. Ez a témakör az egyeztetési folyamatot ismerteti.
+author: moaamer
 ms.date: 06/22/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: BankReconciliationWorksheet
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fbfa999d2aaa4b6dad711bb57916a68fb37c57d9add09092783ad3a8d6450c1f
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 27956cbc4d51c1b907138b49947b57a570d98da1
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6714448"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727566"
 ---
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Banki kivonatok egyeztetése továbbfejlesztett banki egyeztetés használatával
 
 [!include [banner](../includes/banner.md)]
 
-A Továbbfejlesztett banki egyeztetés funkció lehetővé teszi Önnek az elektronikus banki kivonatok és az automatikus egyeztetés importálását a Dynamics 365 Finance rendszer banki tranzakcióiba. Ez a témakör az egyeztetési folyamatot ismerteti.  
+A Speciális banki egyeztetési funkció lehetővé teszi az elektronikus banki kivonatok importálását és automatikus egyeztetését a Dynamics 365 Pénzügy banki tranzakcióival. Ez a témakör az egyeztetési folyamatot ismerteti.  
 
 ## <a name="import-an-electronic-bank-statement"></a>Az elektronikus banki kivonat importálása
 

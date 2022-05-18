@@ -1,7 +1,7 @@
 ---
 title: Fuvarlevél egyeztetése manuálisan
 description: Ez az eljárás bemutatja, hogyan lehet manuálisan elvégezni a fuvaregyeztetést.
-author: Henrikan
+author: Weijiesa
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 1342f8b26d3f629c9fe4439761ffc26372dce061
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8afec41cdb10185077d39a665d0153df1c9bdb9f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7573105"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672738"
 ---
 # <a name="reconcile-freight-manually"></a>Fuvarlevél egyeztetése manuálisan
 

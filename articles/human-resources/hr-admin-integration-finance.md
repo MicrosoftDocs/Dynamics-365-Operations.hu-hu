@@ -1,6 +1,6 @@
 ---
 title: A Finance szolgáltatással való integráció konfigurálása
-description: Ez a téma a Dynamics 365 Human Resources és a Dynamics 365 Finance közötti integrációt írja le.
+description: Ez a témakör a Dynamics 365 Human Resources Dynamics 365 Pénzügy és az integrációt írja le.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 0a2c5dd0ce97f33f5f8b65c801fbc15dfc65e8d4
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 3880601b40ce8ec544a1976f7f0ac7391dab32e1
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8065016"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687532"
 ---
 # <a name="configure-integration-with-finance"></a>A Finance szolgáltatással való integráció konfigurálása
 
@@ -31,7 +30,7 @@ ms.locfileid: "8065016"
 
 
 
-A Dynamics 365 Human Resources integrációjához Dynamics 365 Finance megoldással használhatja A Human Resources to Finance integrációs folyamat sablont az [Adatintegrátorban](/powerapps/administrator/data-integrator). A Human Resources to Finance sablon lehetővé teszi a feladatok, beosztások és dolgozók adatáramlását. A sablon lehetővé teszi, hogy az adatok a Human Resources alkalmazásból a Finance alkalmazásba áramoljanak de nem teszik lehetővé a Finance alkalmazásból a Human Resources alkalmazásba az áramlást.
+Ha integrálni Dynamics 365 Human Resources kell a Dynamics 365 Pénzügyet, az Adatintegrátor Emberi erőforrások – Pénzügy [sablont használhatja](/powerapps/administrator/data-integrator). A Human Resources to Finance sablon lehetővé teszi a feladatok, beosztások és dolgozók adatáramlását. A sablon lehetővé teszi, hogy az adatok a Human Resources alkalmazásból a Finance alkalmazásba áramoljanak de nem teszik lehetővé a Finance alkalmazásból a Human Resources alkalmazásba az áramlást.
 
 ![A Human Resources to Finance integrációs folyamata.](./media/hr-admin-integration-finance-flow.png)
 
@@ -47,7 +46,7 @@ A Human Resources to Finance megoldás a következő adatszinkronizálási típu
 A Human Resources és a Finance következő verziói szükségesek az integrációs megoldáshoz: 
 
 - Dynamics 365 Human Resources, helye: Dataverse
-- A Dynamics 365 Finance 7.2 vagy újabb verziója
+- Dynamics 365 Pénzügy - 7.2-es és újabb verzió
 
 ## <a name="template-and-tasks"></a>Sablon és feladatok
 
@@ -248,7 +247,7 @@ A következő sablon-hozzárendelési táblákban a feladat neve tartalmazza az 
 
 A Human Resources és a Finance közötti integráció megkísérli a rekordok egyeztetését az azonosító alapján. Ha a rekordok egyeznek az Adatintegrátor a Human Resources alkalmazás értékeivel felülírja a Finance-adatokat. Probléma merülhet fel azonban, ha logikusan ezek különböző rekordok, és a program ugyanazt az azonosítót vagy a Human Resources alkalmazásban vagy a Finance alkalmazásban, a megfelelő számsorozat alapján generálta.
 
-Probléma merülhet fel olyan **Dolgozó** esetén, amely a **Személyzeti szám** használatával hozza létre az egyezést, illetve a **Beosztásokat**. A feladatok nem használnak számsorozatokat. Ennek eredményeképpen, ha ugyanaz a feladatazonosító a Human Resources alkalmazásban és a Finance modulban is szerepel, a Human Resources-adatok felülírják a Dynamics 365 Finance rendszer adatait. 
+Probléma merülhet fel olyan **Dolgozó** esetén, amely a **Személyzeti szám** használatával hozza létre az egyezést, illetve a **Beosztásokat**. A feladatok nem használnak számsorozatokat. Emiatt ha ugyanaz a feladatazonosító létezik az Emberi erőforrások és a Pénzügy csoportban is, akkor az emberi erőforrások adatai felülírják a Dynamics 365 Pénzügyi adatokat. 
 
 Ha meg szeretné akadályozni az ismétlődő azonosítókkal kapcsolatos problémákat, adjon hozzá egy előtagot a [számsorozathoz](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=%2fdynamics365%2funified-operations%2ftalent%2ftoc.json), vagy állítson be egy kezdő számot a számsorozathoz, amely túllépi a másik rendszer tartományát. 
 

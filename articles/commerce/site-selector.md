@@ -2,7 +2,7 @@
 title: Webhelyválasztó modul
 description: Ez a témakör leírja a webhelyválasztó modult, és bemutatja, hogyan lehet a webhely lapjaihoz hozzáadni Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 04/06/2022
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: ad4d4d5f950d0631059d8f509e9e808a9106eb98
-ms.sourcegitcommit: 4861ec2d3ae24cc9dd4ad3ac748fd05be3d80c70
+ms.openlocfilehash: a1954f6b2fea35d5138218e6a2a23ab1fd04c8fc
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/06/2022
-ms.locfileid: "8551694"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710303"
 ---
 # <a name="site-picker-module"></a>Webhelyválasztó modul
 
@@ -43,7 +43,23 @@ A webhelyválasztó modulban konfigurálni kell azokat a helyeket (piacokat, ré
 
 ## <a name="add-a-site-picker-module-to-a-page"></a>Webhelyválasztó modul hozzáadása egy laphoz
 
-A webhelyválasztó modul hozzáadható **a fejlécmodul Webhelyválasztó-réséhez**[...](author-header-module.md). A helyválasztó modul hozzáadása után megadhatja a modul fejlécét és a hely beállításait. A fejlécmodul általában egy fejlécrészletben található, amely egy hely e-commerce lapjai között megosztható. A következő példában a **helyválasztó** modul hozzá lett adva egy **HeaderContainer nevű fejlécrészletben szereplő fejlécmodul Webhelyválasztó-réséhez**.
+A webhelyválasztó modul hozzáadható **a fejlécmodul Webhelyválasztó-réséhez**[...](author-header-module.md). A helyválasztó modul hozzáadása után megadhatja a modul fejlécét és a hely beállításait. A fejlécmodul általában egy fejlécrészletben található, amely egy hely e-commerce lapjai között megosztható. 
+
+A webhelyválasztó modul fejlécmodulhoz való hozzáadásához kövesse ezeket a lépéseket.
+
+1. Válassza ki **a** fejlécrészlet fejlécmodulának Helyválasztó rését, és **·** **válassza ki a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** adjon hozzá egy **Webhelyválasztó** modult, majd válassza az **OK gombra.**
+1. A Webhelyválasztó **tulajdonságai** ablakban válassza a Webhely beállításainak **hozzáadása listát**. Megjelenik egy szerkeszthető **helybeállítások listája**.
+1. Helybeállítások **listájának kiválasztása**. **Megjelenik a Webhely beállításai lista** párbeszédpanel.
+1. Adja **meg a Hely neve** mezőben a helynév szövegét, amely a helyválasztó legördülő listájában jelenik meg.
+1. A Webhely **átirányítási URL-címében** válassza a Hivatkozás **hozzáadása lehetőséget**. **Megjelenik a Hivatkozás hozzáadása** feláras ablak.
+1. A Hivatkozás hozzáadása feláras ablakban válassza **az** Egyéni lap, majd a Tovább **lehetőséget**.**·**
+1. Válassza ki a webhely URL-címének listából azt az URL-címet, amely a csatorna webhelyhez ad létrehozásakor létre van hozva (`www.adventure-works.com/fr-ca` például), majd válassza **az Alkalmaz lehetőséget**.
+1. Válassza ki az **OK** lehetőséget.
+1. Válassza a **Mentés** parancsot, majd válassza a **Szerkesztés befejezése** elemet.
+1. A lap **közzétételéhez** válassza a Közzététel lehetőséget.
+
+A következő példában a **helyválasztó** modul hozzá lett adva egy **HeaderContainer nevű fejlécrészletben szereplő fejlécmodul Webhelyválasztó-réséhez**.
 
 ![Példa a helyválasztó modulra fejlécrészletben.](./media/ecommerce-sitepicker-2.png)
 

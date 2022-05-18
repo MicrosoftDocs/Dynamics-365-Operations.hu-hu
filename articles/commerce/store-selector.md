@@ -3,7 +3,7 @@ title: Üzletkiválasztó modul
 description: Ez a témakör az üzletválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 07/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 0ee9d3cec9c524f73472929052d46d87f8270ba67568314eceb462b1803cf149
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6772156"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710780"
 ---
 # <a name="store-selector-module"></a>Üzletválasztó modul
 
@@ -59,6 +59,16 @@ Az üzlet helyének földrajzi hosszúságának és szélességének beállítá
     ![Példa az áruház földrajzi szélességi és földrajzi hosszúsági beállítására a központban.](./media/Store-latitude-longitude.png)
 
 1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget. 
+
+### <a name="hide-a-store-from-the-store-selector-module"></a>Üzlet elrejtése az üzletválasztó modulban
+
+A teljesítőcsoportban található üzletek némelyike nem lehet érvényes felvételi hely. A Commerce Headquarters alábbi lépéseit követve gondoskodhatja arról, hogy csak érvényes felvételi helyek jelenjenek meg beállításként az üzletválasztó modulban.
+
+1. Menjen a **Retail and Commerce \> telepítő \> Minden üzlet beállítási csoportjaihoz \>**.
+1. A műveleti ablaktáblán válassza a **Szerkesztés** lehetőséget.
+1. A **Beállítás** helyen minden olyan üzlet számára, amely nem érvényes felvételi hely, **törölje** a Felvétel helye jelölőnégyzetet.
+1. A műveleti ablaktáblán válassza a **Mentés** lehetőséget.
+1. Futtassa a 1070-es **csatorna-konfiguráció elosztási** ütemezési feladatát.
 
 ## <a name="bing-maps-integration"></a>Bing Maps – integráció
 

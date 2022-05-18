@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: ec7fcb97bd46551846ccee13b369a1b02a589688
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: cf38717ab3768249e3c9b988ee3893c5e539bcd0
+ms.sourcegitcommit: 90ffd763d18f97654b9dbc9e3f71c998e6094c6b
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075299"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8739387"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management-10021-october-2021"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management szolgáltatásban – 10.0.21. (2021. október)
 
@@ -69,10 +69,10 @@ Ez a kiadás a 10.0.21 verzióban alapértelmezetten bekapcsolt funkciókat tart
 | Átmozgatási rendelés érvénytelenítése | 2021/9/1 | 2020/7/13 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
 | Készletnapló feloldása | 2021/9/1 | 2020/8/17 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
 | Mentett nézetek a készletgazdálkodáshoz | 2021/9/1 | 2020.09.30. | Alapértelmezés szerint be | Készlet- és raktárkezelés |
-| Navigáció a BOM-verzióhoz a BOM-sorokból | 2021/9/1 | 2019/11/11 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
-| Mértékegység és egységnyi mennyiség használata a készletnaplókban | 2021/9/1 | 2019/11/11 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
+| Navigálás az anyagjegyzéksorok anyagjegyzék-verziójához | 2021/9/1 | 2019/11/11 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
+| Mértékegység és egységmennyiség használata a készletnaplókban | 2021/9/1 | 2019/11/11 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
 | Kötegattribútumok üres értékeinek engedélyezése | 2021/9/1 | 2019/11/11 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
-| A készletátviteli rendeléssorok sorszámának automatikus növelése | 2021/9/1 | 2019/10/11 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
+| Készletátviteli rendelési sorok sorszámának automatikus növekménye | 2021/9/1 | 2019/10/11 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
 | Készletnapló jóváhagyási munkafolyamata | 2021/9/1 | 2020/1/6 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
 | Készletminőség-kezelési paraméterek figyelmeztetési funkciójának engedélyezése | 2021/9/1 | 2019/10/7 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
 | Átmozgatási rendelés létrehozása az értékesítési sorból | 2021/9/1 | 2019/8/31 | Alapértelmezés szerint be | Készlet- és raktárkezelés |
@@ -92,7 +92,7 @@ Ez a kiadás a 10.0.21 verzióban alapértelmezetten bekapcsolt funkciókat tart
 | Kiadott termékekhez tartozó mentett nézet | 2021/9/1 | 2020.09.30. | Alapértelmezés szerint be | Termékinformációk kezelése |
 | A Jóváhagyás és az Átviteli feladatok párbeszédpanelek javításai | 2021/9/1 | 2019/10/11 | Alapértelmezés szerint be | Gyártásvezérlés |
 | A Feladatkártya eszközhöz hozzáadott, készként történő jelentéshez használt azonosítótábla | 2021/9/1 | 2019/8/31 | Alapértelmezés szerint be | Gyártásvezérlés |
-| A Munkakártya-terminál oldalon egy új gomb került a szünet leállításához | 2021/9/1 | 2020/2/19 | Alapértelmezés szerint be | Gyártásvezérlés |
+| A Szünet vége új gombja felkerült a feladatkártya termináljára | 2021/9/1 | 2020/2/19 | Alapértelmezés szerint be | Gyártásvezérlés |
 | Alvállalkozói cikkek részleges bevételezésének engedélyezése, és a szállító típusú DBJ-sorokhoz tartozó selejt kiszámításával kapcsolatos hiba javítása. | 2021/9/1 | 2019/11/11 | Alapértelmezés szerint be | Gyártásvezérlés |
 | Mentett nézetek a termelés vezérléséhez | 2021/9/1 | 2020/8/17 | Alapértelmezés szerint be | Gyártásvezérlés |
 | Dynamics 365 Guides gyártáshoz | 2021/9/1 | 2020/7/13 | Alapértelmezés szerint be | Gyártásvezérlés |
@@ -130,16 +130,16 @@ A következő súgótémakörök a közelmúltban lettek hozzáadva vagy jelent�
 | Alaptervezés | [Tervelőzmények és tervezési naplók megtekintése](../master-planning/planning-optimization/plan-history-logs.md) |
 | Raktárkezelés | [Tároló csomagolási stratégiái](../warehousing/container-packing-strategy-overview.md) |
 | Raktárkezelés | [Ciklikus leltározás – példa forgatókönyvek](../warehousing/cycle-counting-scenarios.md) |
-| Raktárkezelés | [Bejövő ASN-ek importálása a V2 adatentitáson keresztül](../warehousing/import-asn-v2-data-entity.md) |
+| Raktárkezelés | [Bejövő ASN-ek importálása a V3 adatentitáson keresztül](../warehousing/import-asn-data-entity.md) |
 | Raktárkezelés | [Értékesítési és átmozgatási rendeléseknél az előírtnál nagyobb mennyiségek kitárolása](../warehousing/over-picking-for-sales-and-transfer-orders.md) |
 | Raktárkezelés | [Hullámcímke-nyomtatás ütemezése hullám közben](../warehousing/configure-task-based-wave-label-printing.md) |
 | Raktárkezelés | [Újdonságok és változások a Warehouse Management mobilalkalmazásban](../warehousing/whats-new-wma.md) |
 
 ## <a name="additional-resources"></a>További erőforrások
 
-### <a name="platform-updates-for-finance-and-operations-apps"></a>Platformfrissítések a Finance and Operations alkalmazásokhoz
+### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.21 platformfrissítéseket tartalmaz. További információért lásd [Platformfrissítések a Finance and Operations alkalmazások 10.0.21-es verziójához (2021. október)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
+A Microsoft Dynamics 365 Supply Chain Management 10.0.21 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások 10.0.21-es verziójának Platformfrissítései (2021. október)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 

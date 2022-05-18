@@ -1,5 +1,5 @@
 ---
-title: Alkalmazotti önkiszolgáló konfigurálása
+title: Alkalmazotti önkiszolgáló rendszer konfigurálása
 description: A Microsoft Dynamics 365 Human Resources alkalmazásban lehetősége van csempéket konfigurálni az Alkalmazotti önkiszolgáló rendszer felső szintű navigációjához.
 author: twheeloc
 ms.date: 12/06/2021
@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 83718856a864123d7941b21c078bcdb96a62cca8
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d7ddb1f1ea74a16265dac701151b2c25a4f9d4dc
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8067579"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687163"
 ---
 # <a name="configure-employee-self-service"></a>Alkalmazotti önkiszolgálás konfigurálása
 
@@ -41,12 +40,12 @@ A Microsoft Dynamics 365 Human Resources rendszerben a felső szintű navigáci�
 
    | Mező | Leírás |
    | --- | --- |
-   | **Konstrukció típuskódja** | A csempe kiválasztásakor megjelenő tervtípus **Önkiszolgálás előnyei**. |
+   | **Konstrukció típuskódja** | Az a tervtípus, amely akkor jelenik meg, ha ez a csempe be van jelölve a Juttatások **önkiszolgáló szolgáltatásban**. |
    | **Csempe azonosítója** | A mozaik egyedi azonosítója. |
-   | **CSempecímke felirata** | A szöveg, amely a csempéhez fog megjelenni **Önkiszolgálás előnyei**. |
+   | **CSempecímke felirata** | A csempe szövege a **Juttatások önkiszolgáló szolgáltatásban** |
    | **Leírás** | A csempe leírása. |
    | **Csempeháttérkép** | A csempéhez használandó kép URL-címe (nem kötelező). |
-   | **Nyitott jelentkezés nyomon követése** | Válassza ezt a lehetőséget, ha nyomon szeretné követni az ehhez a tervtípushoz tartozó nyitott regisztráció előrehaladását. Előfordulhat például, hogy hol készített terveket **Terv típusa = Egyéb**. Ezek a konstrukciók választható konstrukciók lehetnek, amelyekhez nem szeretné nyomon követni a beléptetés előrehaladását. Ha nem választja ki ezt a tervtípust, a rendszer figyelmen kívül hagyja ezt a típusú csomagot a beiratkozás előrehaladásának vagy a regisztráció befejezésének nyomon követésekor.**Nyitott jelentkezés** lapon. Ez a beállítás az összes időszakra és jogi személyre kiválasztott tervtípusra vonatkozik. |
+   | **Nyitott beléptetés követése** | Válassza ezt a lehetőséget, ha nyomon követi ennek a tervtípusnak a nyitott beléptetési folyamatát. Létrehozhat például olyan terveket, amelyekben **a Terv típusa = Egyéb**. Ezek a konstrukciók választható konstrukciók lehetnek, amelyekhez nem szeretné nyomon követni a beléptetés előrehaladását. Ha nem ezt a tervtípust választja, **akkor a rendszer figyelmen kívül hagyja az ilyen típusú terveket, amikor nyomon követi a beléptetés előrehaladását vagy a beléptetés teljesítését a Nyitott beléptetés lapon** . Ez a beállítás az összes időszakra és jogi személyre vonatkozóan kiválasztott tervtípusra vonatkozik. |
 
 4. Válassza a **Mentés** lehetőséget.
 
@@ -60,12 +59,12 @@ A Microsoft Dynamics 365 Human Resources rendszerben a felső szintű navigáci�
 
    | Mező | Leírás |
    | --- | --- |
-   | **Juttatás-jóváírás azonosítója** | A rugalmas beszámítási programtervek, amelyek akkor jelennek meg, ha ez a csempe ki van választva **Önkiszolgálás előnyei**. |
+   | **Juttatás-jóváírás azonosítója** | A Rugalmasidő-jóváírási program terve, amely akkor jelenik meg, ha ez a csempe be van jelölve a Juttatások **önkiszolgáló szolgáltatásban**. |
    | **Csempe azonosítója** | A mozaik egyedi azonosítója. |
-   | **CSempecímke felirata** | A szöveg, amely a csempéhez fog megjelenni **Önkiszolgálás előnyei**. |
+   | **CSempecímke felirata** | A csempe szövege a **Juttatások önkiszolgáló szolgáltatásban** |
    | **Leírás** | A csempe leírása. |
    | **Csempeháttérkép** | A csempéhez használandó kép URL-címe (nem kötelező). |
-   | **Nyitott jelentkezés nyomon követése** | Válassza ezt a lehetőséget, ha nyomon szeretné követni az ehhez a tervtípushoz tartozó nyitott regisztráció előrehaladását. Előfordulhat például, hogy hol készített terveket **Terv típusa = Egyéb**. Ezek a konstrukciók választható konstrukciók lehetnek, amelyekhez nem szeretné nyomon követni a beléptetés előrehaladását. Ha nem választja ki ezt a tervtípust, a rendszer figyelmen kívül hagyja ezt a típusú csomagot a beiratkozás előrehaladásának vagy a regisztráció befejezésének nyomon követésekor.**Nyitott jelentkezés** lapon. Ez a beállítás az összes időszakra és jogi személyre kiválasztott tervtípusra vonatkozik. |
+   | **Nyitott beléptetés követése** | Válassza ezt a lehetőséget, ha nyomon követi ennek a tervtípusnak a nyitott beléptetési folyamatát. Létrehozhat például olyan terveket, amelyekben **a Terv típusa = Egyéb**. Ezek a konstrukciók választható konstrukciók lehetnek, amelyekhez nem szeretné nyomon követni a beléptetés előrehaladását. Ha nem ezt a tervtípust választja, **akkor a rendszer figyelmen kívül hagyja az ilyen típusú terveket, amikor nyomon követi a beléptetés előrehaladását vagy a beléptetés teljesítését a Nyitott beléptetés lapon** . Ez a beállítás az összes időszakra és jogi személyre vonatkozóan kiválasztott tervtípusra vonatkozik. |
 
 4. Válassza a **Mentés** lehetőséget.
 

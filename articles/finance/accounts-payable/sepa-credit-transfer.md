@@ -1,6 +1,6 @@
 ---
 title: SEPA átutalás áttekintése
-description: Ez a cikk általános információkat tartalmaz az ISO 20022 átutalásokról, amelyek magukban foglalják a SEPA-átutalásokat és minden más elektronikus kifizetést a szállítók számára. A SEPA átutalás olyan euroalapú kifizetéstípus, amely egy vállalattól vagy személytől egy másik vállalatnak vagy személynek történik. A témakör azt is elmagyarázza, hogyan lehet beállítani és elküldeni a SEPA jóváírás-átutalási fájlt.
+description: Ez a témakör általános tájékoztatást tartalmaz az ISO 20022 szabvány szerinti átutalásokról, amelyek között szerepel az egy euró fizetési terület (SEPA) átutalás és más, a szállítóknak történő elektronikus kifizetések.
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: overview
@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendInvoice, LedgerJournalTransVendPaym, VendPaymMode
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom:
 - "11124"
 - intro-internal
@@ -17,18 +17,18 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: fc37dde8829abdd26a224adbd788538834f4d320
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f43c45aa4f22f5044e7c10329dafa76226970b3d
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984027"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734516"
 ---
 # <a name="sepa-credit-transfer-overview"></a>SEPA átutalás áttekintése
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk általános információkat tartalmaz az ISO 20022 átutalásokról, amelyek magukban foglalják a SEPA-átutalásokat és minden más elektronikus kifizetést a szállítók számára. A SEPA átutalás olyan euroalapú kifizetéstípus, amely egy vállalattól vagy személytől egy másik vállalatnak vagy személynek történik. A témakör azt is elmagyarázza, hogyan lehet beállítani és elküldeni a SEPA jóváírás-átutalási fájlt.
+Ez a témakör általános tájékoztatást tartalmaz az ISO 20022 szabvány szerinti átutalásokról, amelyek között szerepel az egy euró fizetési terület (SEPA) átutalás és más, a szállítóknak történő elektronikus kifizetések. A SEPA átutalás olyan euroalapú kifizetéstípus, amely egy vállalattól vagy személytől egy másik vállalatnak vagy személynek történik. A témakör azt is elmagyarázza, hogyan lehet beállítani és elküldeni a SEPA jóváírás-átutalási fájlt.
 
 ## <a name="what-is-a-credit-transfer-message"></a>Mi a jóváírási üzenet?
 A jóváírási üzenet egy olyan kérés, amelyet a kezdeményező fél (az Ön vállalata) elküld annak érdekében, hogy összegeket helyezzen át saját számlájáról egy hitelezőnek. Számos ország-/régióspecifikus és benkspecifikus megvalósítása létezik a jóváírási üzeneteknek. Néhányat csak egy országon/régión belül használnak, míg néhány már szabványossá vált. Az egyik jól megalapozott globális szabvány az ISO 20022 és annak indítási üzenetei, például a Jóváírás átvitele. Az alábbi ábrán a kapcsolatok és a lefedettség látható a kijelölt jóváírási üzenetekre vonatkozóan. 
@@ -50,7 +50,7 @@ Az európai bankokból álló EPC kereskedelmi és műszaki keretrendszereket fe
 A SEPA átutalás olyan kifizetés, amely egy vállalattól vagy személytől egy másik vállalatnak vagy személynek történik. A kifizetésnek euróban kell történnie, és tartalmaznia kell mindkét fél nemzetközi bankszámlaszámát (IBAN) és bankazonosító kódját (BIC). (A BIC kód a \[SWIFT\] (Society for Worldwide Interbank Financial Telecommunication) kód néven is ismert.) Ezenkívül a tranzakciós költségek a két fél között oszlanak el. A felek között előforduló átutalások az ISO-20022 kifizetés-feldolgozási szabványt és az EPC által meghatározott XML fájlokat és formátumot kötelesek használni.
 
 ## <a name="how-is-a-credit-transfer-implemented"></a>Hogyan történik az átutalás?
-A jóváírási átmozgatás formátuma az európai országokban az elektronikus jelentéskészítés (ER) és a Fizetési módszerek funkciók segítségével készülnek a Microsoft Dynamics 365 Finance rendszerben. Néhány átutalási formátum, amelyet más régiókban használnak, még mindig a régi fizetési keretrendszert használja. Számos más formátum közül 12 elérhető ISO 20022 átutalási fájlformátum létezik. Ezek az exportformátumok megfelelnek a SEPA ISO 20022 XML szabványnak. Használatukkal nem euró-átutalások juttathatók el azoknak az országoknak/régióknak, ahol használják őket az EPC által kiadott SEPA Credit Transfer Scheme szabálykönyv 8.2-es verziójában meghatározott szabályok szerint. Mielőtt megvalósítana egy átutalást, kapcsolatba kell lépnie a bankjával az elektronikus bankhasználati fájlok feltöltéséhez használt szoftver érvényesítéséhez. Ezt a szoftvert fogja használni az utalványokat tartalmazó XML fájlok banki átviteléhez.
+Az európai országok számára Microsoft Dynamics 365 Finance elérhető átutalási fizetési formátum az elektronikus jelentés és fizetési módok funkció segítségével valósítható meg. Néhány átutalási formátum, amelyet más régiókban használnak, még mindig a régi fizetési keretrendszert használja. Számos más formátum közül 12 elérhető ISO 20022 átutalási fájlformátum létezik. Ezek az exportformátumok megfelelnek a SEPA ISO 20022 XML szabványnak. Használatukkal nem euró-átutalások juttathatók el azoknak az országoknak/régióknak, ahol használják őket az EPC által kiadott SEPA Credit Transfer Scheme szabálykönyv 8.2-es verziójában meghatározott szabályok szerint. Mielőtt megvalósítana egy átutalást, kapcsolatba kell lépnie a bankjával az elektronikus bankhasználati fájlok feltöltéséhez használt szoftver érvényesítéséhez. Ezt a szoftvert fogja használni az utalványokat tartalmazó XML fájlok banki átviteléhez.
 
 ## <a name="what-credit-transfer-formats-are-currently-supported"></a>Melyik jóváírási átmozgatási formátumok támogatottak jelenleg?
 Mindig meg kell keresnie a Microsoft Dynamics Lifecycle services (LCS) megosztott eszközkönyvtárát, és meg kell tekintenie a legfrissebb listát a rendelkezésre álló fájlokról, amelyek **GER-konfiguráció** eszköztípusúak. A következő szakasz, a "Mit kell beállítanom?" hivatkozást biztosít a témához, amely leírja, hogyan hozhat létre LCS-adattárat az elérhető konfigurációk áttekintéséhez és a kiválasztott konfigurációk importálásához.

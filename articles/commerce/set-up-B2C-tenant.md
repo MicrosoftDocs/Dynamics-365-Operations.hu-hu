@@ -2,7 +2,7 @@
 title: B2C-bérlő beállítása a Commerce-ben
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani az Azure Active Directory (Azure AD) cég-ügyfél (B2C) bérlőket felhasználói webhely-hitelesítéshez Dynamics 365 Commerce alkalmazásban.
 author: BrianShook
-ms.date: 02/11/2022
+ms.date: 05/05/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2020-02-13
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: d4cbb117e47940491266134fb1e2dbe87374d4a3
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 086128091b23ce6ab46dd2dfc0803af38de6bac7
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109889"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8714312"
 ---
 # <a name="set-up-a-b2c-tenant-in-commerce"></a>B2C-bérlő beállítása a Commerce-ben
 
@@ -137,9 +137,9 @@ Választhat, hogy a Azure AD B2C által biztosított alapértelmezett felhaszná
 
 A felhasználói irányelvek oldalainak Dynamics 365 Commerce alkalmazásban létrehozott oldalakkal való testreszabásáról lásd: [Felhasználói bejelentkezéshez használt egyéni lapok beállítása](custom-pages-user-logins.md). További tájékoztatás: [A felhasználói élmények kezelőfelületének testreszabása az Azure Active Directory B2C-ben](/azure/active-directory-b2c/tutorial-customize-ui).
 
-### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Feliratkozás és bejelentkezés felhasználóifolyamat-házirend létrehozása
+### <a name="create-a-sign-up-and-sign-in-user-flow-policy"></a>Felhasználói folyamatra vonatkozó bejelentkezési irányelv létrehozása
 
-Feliratkozási és bejelentkezési felhasználóifolyamat-házirend konfigurálásához kövesse az alábbi lépéseket.
+A következő lépések szerint hozzon létre egy bejelentkezési és bejelentkezési felhasználói folyamatra vonatkozó házirendet.
 
 1. Az Azure Portal modul bal oldali navigációs ablakában válassza ki a **Felhasználói folyamatok (házirendek)** elemet.
 1. Az **Azure AD B2C – Felhasználói folyamatok (házirendek)** lapon válassza az **Új felhasználói folyamat** elemet.
@@ -159,7 +159,7 @@ Feliratkozási és bejelentkezési felhasználóifolyamat-házirend konfigurál�
 
 1. Válassza a **Létrehozása** lehetőséget.
 
-A következő kép egy példa a Azure AD B2C feliratkozási és bejelentkezési felhasználói folyamatra.
+A következő kép egy példa Azure AD a B2C regisztrációra és a bejelentkezési felhasználói folyamatra.
 
 ![A Regisztráció és bejelentkezés irányelv konfigurálása.](./media/B2CImage_11.png)
 
@@ -239,15 +239,15 @@ Egy közösségi identitásszolgáltató hozzáadásához és beállításához 
 
 1. Az Azure portálon menjen az **Identitásszolgáltató** részre.
 1. Válassza a **Hozzáadás** lehetőséget. Megjelenik az **Identitásszolgáltató** hozzáadása képernyő.
-1. A **Név** mezőbe írja be azt a nevet, amelyet meg szeretne jeleníteni a bejelentkezési képernyőn a felhasználók számára.
+1. A **Név** csoportban adja meg a bejelentkezési képernyőn a felhasználók számára megjelenítendő nevet.
 1. Az **Identitásszolgáltatótípusa** területen válasszon ki egy identitásszolgáltatót a listából.
 1. Válassza ki az **OK** lehetőséget.
 1. Válassza az **Identitásszolgáltató beállítása** lehetőséget, hogy elérje a **Közösségi identitásszolgáltató beállítása** képernyőt.
 1. Az **Ügyfélazonosító** területen írja be az ügyfél azonosítóját, amelyet az identitásszolgáltató alkalmazás-beállításaiban kapott.
 1. A **Titkos ügyfélkód** területen írja be aza titkos ügyfélkódot, amelyet az identitásszolgáltató alkalmazás-beállításaiban kapott.
-1. Felhasználói folyamat csatolása a bejelentkezési házirendekhez:
+1. Felhasználói folyamat csatolása a bejelentkezési/bejelentkezési irányelvekhez:
 1. Nyissa meg az **Azure AD B2C – Felhasználói folyamatok (házirendek) \> {az Ön regisztrációs házirendje} \> Identitásszolgáltatók** lehetőséget.
-1. A regisztráció/bejelentkezés felhasználóifolyamat-házirend csatolásához válassza ki a fiókhoz beállított egyes identitásszolgáltatókat. Ezek teszteléséhez válassza ki a **Felhasználói folyamat futtatása** lehetőséget az egyes identitásszolgáltatókhoz. Egy új lap a bejelentkezési lapot jeleníti meg, amely az új identitásszolgáltató kiválasztási dobozát jeleníti meg.
+1. A bejelentkezési/bejelentkezési felhasználói folyamat irányelvének csatolásához válassza ki a fiókhoz beállított összes identitásszolgáltatót. Ezek teszteléséhez válassza ki a **Felhasználói folyamat futtatása** lehetőséget az egyes identitásszolgáltatókhoz. Egy új lap a bejelentkezési lapot jeleníti meg, amely az új identitásszolgáltató kiválasztási dobozát jeleníti meg.
 
 A következő képen példákat talál az **Identitásszolgáltató hozzáadása** és az **Identitiásszolgáltató beállítása** képernyőkre az Azure AD B2C-ben.
 
@@ -332,27 +332,28 @@ A B2C Azure AD bérlőalkalmazási információinak a Commerce alkalmazásba val
 
 1. Jelentkezzen be rendszergazdaként a saját környezetéhez tartozó Commerce oldalkészítőbe.
 1. A bal oldali navigációs panelen válassza a **Bérlőbeállítások** elemet a kibontáshoz.
-1. A **Bérlői beállítások** részben válassza a **B2C beállítások** lehetőséget. 
-1. A **B2C alkalmazások** melletti fő ablakban válassza a **Kezelés** elemet. (Ha a bérlő a B2C alkalmazások listájában szerepel, akkor már hozzárendelte egy adminisztrátor. Győződjön meg róla, hogy a 6. lépésben megadott elemek megfelelnek a B2C alkalmazásának.)
-1. Válassza a **B2C alkalmazás hozzáadása** elemet.
+1. A Bérlő **beállításai csoportban** válassza a Webhely hitelesítésének **beállításait**. 
+1. Válassza a Kezelés lehetőséget a Webhely **hitelesítési** profiljai melletti fő **ablakban**. (Ha a bérlő megjelenik a webhely hitelesítési profiljainak listáján, azt már egy rendszergazda hozzáadta. Győződjön meg róla, hogy az alábbi 6. lépésben lévő cikkek megegyeznek a B2C beállításokban tervezett cikkekkel. Új profilt a Azure AD B2C hasonló bérlők vagy pályázatok segítségével is létre lehet hozni, hogy kisebb különbségeket is figyelembe tudjanak venni, például eltérő felhasználói irányelv-azonosítókat.
+1. Válassza a **Webhely hitelesítési profiljának hozzáadása lehetőséget**.
 1. A megjelenő képernyőn adja meg a következő szükséges elemeket a B2C bérlő és az alkalmazás értékeit használva. A nem kötelező mezők (a csillag nélküliek) üresen maradhatnak.
 
     - **Alkalmazás neve**: A B2C alkalmazás neve (például „Fabrikam B2C”).
     - **Bérlő neve**: A B2C bérlője neve (például használja a „fabrikam” beállítást, ha a B2C-bérlőnek a tartomány „fabrikam.onmicrosoft.com” néven jelenik meg). 
     - **Felejtse el a jelszót házirend azonosító**: A felejtse el a jelszót felhasználóifolyamat házirend azonosítója „B2C_1_PasswordReset”.
-    - **Regisztrációs bejelentkezési házirendazonosító**: A regisztrációs és bejelentkezési felhasználói folyamatok házirendjének azonosítója, például „B2C_1_signup_signin”.
+    - **Bejelentkezési irányelv azonosítója**: A regisztráció és a bejelentkezés felhasználói folyamatának irányelvazonosítója, például "B2C_1_signup_signin".
     - **Ügyfél GUID**: A B2C alkalmazás azonosítója: (például „22290eb2-c52e-42e9-8b35-a2b0a3bcb9e6” B2C).
     - **Profilirányelv azonosítója**: A profilszerkesztő felhasználói folyamatazonosító, például „B2C_1A_ProfileEdit”.
 
 1. Válassza ki az **OK** lehetőséget. Ekkor megjelenik a B2C alkalmazásának neve a listán.
 1. A változtatások mentéséhez válassza a **Mentés** elemet.
 
+A Bejelentkezési **név egyéni tartomány választható mezőjét** csak akkor kell használni, ha egyéni tartományt ad meg a Azure AD B2C bérlő számára. Az egyéni tartománynév bejelentkezési **mezőjének**[használatáról az alábbi További B2C-információk tartalmaznak további részleteket és](#additional-b2c-information) szempontokat.
+
 ### <a name="associate-the-b2c-application-to-your-site-and-channel"></a>A B2C alkalmazás társítása a webhelyéhez és a csatornához
 
 > [!WARNING]
-> Ha webhelye már B2C alkalmazáshoz van társítva, a másik B2C alkalmazásra történő módosítás eltávolítja a korábban a környezetben már feliratkozott felhasználók számára létrehozott aktuális hivatkozásokat. Módosítás eseténe az aktuálisan hozzárendelt B2C alkalmazáshoz társított hitelesítő adatok nem lesznek elérhetők a felhasználók számára. 
-> 
-> Csak akkor frissítse a B2C alkalmazást, ha első alkalommal állítja be a csatorna B2C alkalmazását, vagy ha szeretné, hogy a felhasználók újra regisztrálják magukat a csatornára új hitelesítő adatokkal az új B2C alkalmazással. A csatornáknak a B2C alkalmazásokkal történő társítása során legyen körültekintő, valamint az alkalmazásoknevét egyértelműen adja meg. Ha egy csatorna nincs egy B2C alkalmazáshoz van társítva az alábbi lépésekben, akkor a program a webhelyébe bejelentkező felhasználókat belépteti az **alapértelmezett** B2C alkalmazásba a **Bérlői beállítások \> B2C beállítások** helyen található B2C alkalmazások listáján.
+> - Ha webhelye már B2C alkalmazáshoz van társítva, a másik B2C alkalmazásra történő módosítás eltávolítja a korábban a környezetben már feliratkozott felhasználók számára létrehozott aktuális hivatkozásokat. Módosítás eseténe az aktuálisan hozzárendelt B2C alkalmazáshoz társított hitelesítő adatok nem lesznek elérhetők a felhasználók számára. 
+> - Csak akkor frissítse a B2C alkalmazást, ha első alkalommal szeretné bejelenni a csatorna B2C-alkalmazását, vagy ha szeretné, hogy a felhasználók újra regisztrálják az új B2C-alkalmazást erre a csatornára. A csatornáknak a B2C alkalmazásokkal történő társítása során legyen körültekintő, valamint az alkalmazásoknevét egyértelműen adja meg. Ha egy csatorna nincs egy B2C alkalmazáshoz van társítva az alábbi lépésekben, akkor a program a webhelyébe bejelentkező felhasználókat belépteti az **alapértelmezett** B2C alkalmazásba a **Bérlői beállítások \> B2C beállítások** helyen található B2C alkalmazások listáján.
 
 A B2C alkalmazás társításához a webhelyéhez és a csatornához kövesse az alábbi lépéseket.
 
@@ -378,6 +379,23 @@ További tájékoztatás az Azure AD B2C által kínált interakciók és irány
 ### <a name="secondary-admin"></a>Másodlagos adminisztrátor
 
 Egy opcionális, másodlagos adminisztrátori fiók is hozzáadható a B2C bérlő **Felhasználók** szakaszához. Ez lehet egy közvetlen fiók vagy egy általános fiók. Ha egy csoport erőforrásai között egy fiókot meg kell osztania, akkor egy közös fiókot is létre lehet hozni. Az Azure AD B2C-ben tárolt adatok érzékenysége miatt egy közös fiókot a vállalat biztonsági eljárásai szerint gondosan nyomon kell követni.
+
+### <a name="set-up-a-custom-sign-in-domain"></a>Egyéni bejelentkezési tartomány beállítása
+
+Azure AD A B2C lehetővé teszi a B2C bérlő Azure AD egyéni bejelentkezési tartományának beállítását. Az útmutatásért lásd [egyéni tartományok engedélyezése a Azure Active Directory B2C számára](/azure/active-directory-b2c/custom-domain). 
+
+Egyéni bejelentkezési tartomány használata esetén a tartományt meg kell adni a Commerce Webhelyszerkesztőben.
+
+A webhelyszerkesztőben egyéni bejelentkezési tartományt a következő lépések szerint lehet megadni.
+
+1. A Webhelyszerkesztő jobb felső sarkában válassza ki a hely kapcsolóját, majd válassza **a Helyek kezelése lehetőséget**.
+1. A bal oldali navigációs ablakban válassza a Bérlő **beállításai \> webhely hitelesítésének beállítását**.
+1. Válassza a **Kezelés lehetőséget a Webhely hitelesítési** profiljai **szakaszban**.
+1. A jobboldali menüben **válassza** a Szerkesztés gombot (szimbólumot) annak a hely hitelesítési profilnak a mellett, amelybe egyéni tartományt szeretne megadni.
+1. A Webhely hitelesítési **profiljának** szerkesztése **párbeszédpanel** Egyéni tartomány bejelentkezése területen adja meg az egyéni bejelentkezési tartományt (például " login.fabrikam.com").
+
+> [!WARNING]
+> Amikor a B2C bérlő egyéni tartományát frissíti, a módosítás hatással van a Azure AD bérlő által létrehozott token kibocsátójának adataira. A kibocsátó adatai ezután az egyéni tartományt tartalmazzák, nem pedig a B2C által biztosított Azure AD alapértelmezett tartományt. **A** Commerce Headquarters más kibocsátó konfigurációja (**Retail and Commerce \> Headquarters \>\>\>** beállítása – Megosztott kereskedelmi paraméterek – Azonosító szolgáltatók) módosítja a rendszer és a webhely felhasználói közötti kommunikációt, potenciálisan új vevőrekordot hoz létre, ha egy felhasználó az új kibocsátóval szemben hitelesítést kap. Az egyéni tartományváltozásokat Azure AD alaposan tesztelni kell, mielőtt élő B2C környezetben átváltanának az egyéni tartományra.
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -1,7 +1,7 @@
 ---
 title: Beszerzési cXML fejlesztései
 description: A Beszerzési cXML-fejlesztések funkció a meglévő külső katalógus funkcióra, a PunchOut-funkcióra épül, amely a beszerzési igénylésekhez használatos.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 08/03/2020
 ms.topic: article
 ms.prod: ''
@@ -10,15 +10,15 @@ ms.search.form: CatCXMLParameters, CatCXMLPurchRequest
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2020-08-03
 ms.dyn365.ops.version: 10.0.13
-ms.openlocfilehash: 2942b141eb3a5b83fb39b0de721bae60c074e01c
-ms.sourcegitcommit: f5885999e008a49fe072d95f15e239905c24918a
+ms.openlocfilehash: 319079ca82ea91a4ab963a1dfa34ed256a3ddb21
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/08/2021
-ms.locfileid: "7900705"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8674281"
 ---
 # <a name="purchasing-cxml-enhancements"></a>Beszerzési cXML fejlesztései
 
@@ -141,7 +141,7 @@ Ha befejezte az összes tulajdonság beállítását és a külső katalógus eg
 
 Amint azt a [Rendelés tulajdonságainak beállítása](#set-order-properties) szakasz említi , ha azt szeretné, hogy a leszállított cXML tartalmazza a megfelelő beszerzési rendeléshez és/vagy szállítói rekordhoz csatolt megjegyzések szövegét, akkor a külső katalógus beállításaiban a **POCOMMENTS** és/vagy a **VENDCOMMENTS** tulajdonságot is _IGAZ_ értékre állíthatja. Ez a szakasz részletesen bemutatja, hogy a rendszer hogyan választja és dolgozza fel ezeket a mellékleteket, ha használja őket.
 
-A rendszer által keres majd jegyzetek típusának beállításához keresse meg a Beszerzés és forrás – Beállítás képernyő **\>\>\> beállítását**. Ezután a **Beszerzési rendelés** lapon állítsa be a **Belefoglalandó dokumentumtípus** mezőt arra a megjegyzéstípusra, amelynek hozzáadását lehetővé szeretné tenni. Csak szöveget tartalmazó megjegyzések szerepelnek, a dokumentumok mellékletei nem.
+A rendszer által keres majd jegyzetek **típusának beállításához keresse meg a Beszerzés és forrás \>\>\> – Beállítás képernyő beállítását**. Ezután a **Beszerzési rendelés** lapon állítsa be a **Belefoglalandó dokumentumtípus** mezőt arra a megjegyzéstípusra, amelynek hozzáadását lehetővé szeretné tenni. Csak szöveget tartalmazó megjegyzések szerepelnek, a dokumentumok mellékletei nem.
 
 ![Képernyőbeállítás lap.](media/cxml-form-setup.png "Képernyőbeállítás lap")
 

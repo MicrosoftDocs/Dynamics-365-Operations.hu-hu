@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: e012b88465e98e788f65697d95fc141d453888e3
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 31266f84270f170e172eadea75a90397c5a6e8e6
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983317"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691918"
 ---
 # <a name="set-up-a-b2b-e-commerce-site"></a>B2B e-kereskedelmi webhely beállítása
 
@@ -313,19 +313,19 @@ A PDP-lapon található tömeges beszerzési modul mátrixalapú tapasztalatokat
 
 A commerce webhelyszerkesztőben a tömeges beszerzési modulnak a PDP-hez való hozzáadásához kövesse ezeket a lépéseket.
 
-1. Menjen **a Sablonok** pontra, és válassza ki a webhely PDP-sablonját.
+1. Menjen a **Sablonok webhelyre**, és válassza ki a webhely PDP-sablonját.
 1. Válassza ki a **Szerkesztés** opciót.
 1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
 1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A Modul hozzáadása párbeszédpanelen válassza ki a Tömeges beszerzés **modult, majd kattintson az OK** **·** **gombra**.
+1. A Modul **hozzáadása párbeszédpanelen** válassza ki **a** Tömeges beszerzés modult, majd kattintson az **OK gombra**.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
-1. Menjen az **Oldalak** lapra, és válassza ki a webhely PDP-ját.
+1. Menjen az **Oldalak lapra**, és válassza ki a webhely PDP-ját.
 1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
 1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
-1. A Tároló modul tulajdonságok ablakában, a Szélesség mezőben válassza **a** **·** **Kitöltési tároló** lehetőséget.
+1. A Tároló modul tulajdonságok **ablakában**, **a Szélesség mezőben** válassza a Kitöltési **tároló lehetőséget**.
 1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A Modul hozzáadása párbeszédpanelen válassza ki a Tömeges beszerzés **modult, majd kattintson az OK** **·** **gombra**.
+1. A Modul **hozzáadása párbeszédpanelen** válassza ki **a** Tömeges beszerzés modult, majd kattintson az **OK gombra**.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 > [!NOTE] 

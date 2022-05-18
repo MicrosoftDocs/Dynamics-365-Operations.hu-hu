@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-10-28
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: b104cec399a368ada64a73688c42476e6fbd9e52
-ms.sourcegitcommit: 304a482dfcc31dcb61849f710ae73432324ddef3
+ms.openlocfilehash: 497739e56c6ce0f4fe0bd4aec889f0782d08fc4a
+ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/29/2021
-ms.locfileid: "7947340"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8720167"
 ---
 # <a name="impair-right-of-use-assets"></a>Használatijog-eszközök értékvesztésének könyvelése
 
@@ -38,9 +38,9 @@ A ROU-eszköz fennmaradó egyenlegét a fennmaradó időszakok száma alapján p
 3. A megjelenő párbeszédpanel **Értékvesztés összege** mezőjében adja meg az eszközértékvesztés összegét. A ROU-eszköz csökkentéséhez pozitív értéket kell megadnia.
 4. A **Tranzakció dátuma** mezőben adja meg azt a dátumot, amikor az értékvesztés tételt könyvelni kell.
 5. A **Fennmaradó időszakok** mezőben adja meg az amortizálandó hónapok fennmaradó számát.
-6. Az Előnézet beállítással megtekintheti a javasolt eszközegyenleget és pénzügyi bejegyzést létrehozás vagy **feladás** előtt.
+6. Az Előnézet **beállítással** megtekintheti a javasolt eszközegyenleget és pénzügyi bejegyzést létrehozás vagy feladás előtt.
 7. Állítsa a **Könyv bezárása** beállítást **Igen** értékre a lízingkönyv bezárásához. Ezt a műveletet a Bérlet ismételt megnyitása állapottal **lehet** visszavonni. A tételek nem könyvelhetők lezárt lízingekkel, és a lezárt lízingek nem módosíthatók. 
-8. Válassza **a Post lehetőséget az** értékvesztési bejegyzés létrehozásához vagy felad létrehozásához.
+8. Válassza a **Post** lehetőséget az értékvesztési bejegyzés létrehozásához vagy felad létrehozásához.
 
     > [!NOTE]
     > A értékvesztési tranzakció feladása után új könyvverzió jön létre.

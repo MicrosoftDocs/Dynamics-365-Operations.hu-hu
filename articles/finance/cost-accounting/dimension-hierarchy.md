@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 40ae7b61537cdcd1934056b9e289f342e96b57d3eebe5a6e713b2db91310ed9a
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 852cfa536ed7e6985ce1f7de612b34e2a492ee07
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766975"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735082"
 ---
 # <a name="dimension-hierarchy"></a>Dimenzióhierarchia
 
@@ -203,13 +203,13 @@ Ha jelentéseket készít az Excel vagy a Power BI segítségével, csak a dimen
 A következő példában bemutatjuk, hogyan nézhet ki egy dimenzióhierarchia a jelentések szerkezetében.
 
 | Költségobjektum-dimenzióhierarchia - 1. szint | Költségobjektum-dimenzióhierarchia - 2. szint | Költségobjektum-dimenzióhierarchia - 3. szint | Költségobjektum-dimenzióhierarchia - 4. szint | Költségobjektum-dimenzióhierarchia - 15. szint |
-|-------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|--------------------------------------------|
-| Szervezet                              | Rendszergazda                                     | Pénzügy                                   | CC002                                     |                                            |
-| Szervezet                              | Rendszergazda                                     | Pénzügy                                   | CC003                                     |                                            |
-| Szervezet                              | Rendszergazda                                     | Pénzügy                                   | CC007                                     |                                            |
-| Szervezet                              | Rendszergazda                                     | HR                                        | CC001                                     |                                            |
-| Szervezet                              | Termelés                                | Csomagolás                                 | CC005                                     |                                            |
-| Szervezet                              | Termelés                                | Szerelvény                                  | CC006                                     |                                            |
+|----------------------------------|---------------------------------|-------------------------|-------------------------|----------------------------------------|
+| Szervezet              | Rendszergazda                 | Pénzügy                    | CC002              |                                            |
+| Szervezet              | Rendszergazda                 | Pénzügy                    | CC003              |                                            |
+| Szervezet              | Rendszergazda               | Pénzügy                     | CC007               |                                            |
+| Szervezet              | Rendszergazda                | HR                           | CC001              |                                            |
+| Szervezet              | Termelés           | Csomagolás                    | CC005             |                                            |
+| Szervezet              | Termelés          | Szerelvény                      | CC006            |                                            |
 
 ### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a>Frissítse a jelentéskészítéshez használt dimenzióhierarchiákat 
 
@@ -328,7 +328,7 @@ A Hozzáférési lista hierarchiájának beállításait használja a rendszer a
 - Power BI:
 
     - Adatok, amelyek megjelennek a Power BI ábrázolásaiban
-    - Az adatok Power BI-megjelenítései, amelyek a Dynamics 365 Finance kliensbe vannak ágyazva
+    - A Power BI Dynamics 365 Pénzügyi ügyfélben található adatmegjelenítések
 
 > [!NOTE] 
 > - Ahhoz, hogy a hozzáférési lista hierarchia befolyásolhassa a Power BI adatait, párosítani kell a hozzáférési lista hierarchiáját és a sorszintű biztonságot a Power BI-ben. További információ: [Biztonság beállítása a Költségkönyvelés tartalmi csomagban](../../fin-ops-core/dev-itpro/analytics/setup-security-cost-accounting-content-pack.md)

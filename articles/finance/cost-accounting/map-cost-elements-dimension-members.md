@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 223234
 ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 ms.search.region: global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b9ac59f305afd55edfcfb3b47bf38ddd44d92a706904f55a069a6a9fc9050825
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7654f748fb0cfc70d76718f03a235c5d4d13a908
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6728031"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735464"
 ---
 # <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Költségösszetevő-dimenziótagok hozzárendelése a dimenziótagok általános készletéhez
 
@@ -33,12 +33,12 @@ Ha Ön vállalata egy globális vállalat, és teljesíti a kötelezően előír
 ## <a name="map-cost-element-dimension-members-to-a-common-format"></a>Költségösszetevő-dimenziótagok hozzárendelése egy közös formátumhoz
 A következő példa azt mutatja meg, hogy Ön költségellenőrként létrehozhat egy olyan új költségösszetevő-dimenziótagot a költségkönyvelésben, amely az egyesült államokbeli számlatükör-struktúrából és a francia számlatükör-struktúrából származó költségösszetevő-dimenziótagokat hozzárendeli a költségösszetevő-dimenziótagok egy közös csoportjához. A költségösszetevő-dimenziótagok közös csoportjának segítségével elemezheti a két jogi entitás költségkönyvelési főkönyvéből származó költségadatokat.
 
-| Forrás: egyesült államokbeli számlatükrök                                          | Forrás: francia számlatükrök                                          | A költségösszetevő-dimenziótagok új, közös csoportja                        |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Forrás: egyesült államokbeli számlatükrök          | Forrás: francia számlatükrök           | A költségösszetevő-dimenziótagok új, közös csoportja                        |
+|------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|
 | Egyesült államokbeli számlatükrökből importált költségösszetevő-dimenziótagok | Francia számlatükrökből importált költségösszetevő-dimenziótagok | Egyesült államokbeli és francia költségösszetevő-dimenziótagok hozzárendelése egy közös csoporthoz |
-| 5001: Értékesítés                                                           | 5001: Értékesítés és reklám                                               | 5000: Értékesítés és reklám                                             |
-| 5030: Hirdetés                                                     | 6390: Készlet beszerzése\*                                                    | 7000: Takarítási költségek                                                 |
-| 7001: Takarítási költségek                                               | 7001: Utazási költségek                                                      | 7001: Utazási költségek                                                   |
+| 5001: Értékesítés                   | 5001: Értékesítés és reklám                      | 5000: Értékesítés és reklám                               |
+| 5030: Hirdetés             | 6390: Készlet beszerzése\*                          | 7000: Takarítási költségek                                   |
+| 7001: Takarítási költségek              | 7001: Utazási költségek                     | 7001: Utazási költségek                                                   |
 
 \*A készletbeszerzési francia költségösszetevő-dimenziótag nincs megfeleltetve.
 

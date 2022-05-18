@@ -1,8 +1,8 @@
 ---
 title: A termelési üzem végrehajtási felületének testreszabása
-description: Ez a témakör elmagyarázza, hogyan lehet kiterjeszteni a jelenlegi űrlapokat, illetve hogyan lehet új űrlapokat és gombokat létrehozni a termelési szint végrehajtási felületéhez.
+description: Ez a témakör leírja, hogyan lehet kiterjeszteni az aktuális képernyőkat, illetve új képernyők és gombok létrehozása a termelési emelet végrehajtási felületére.
 author: johanhoffmann
-ms.date: 11/08/2021
+ms.date: 05/04/2022
 ms.topic: article
 ms.search.form: ''
 ms.technology: ''
@@ -11,56 +11,56 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2021-11-08
-ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 67fb381cbef6f1673afcaa834666b4a859bdf4e6
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.dyn365.ops.version: 10.0.25
+ms.openlocfilehash: ad5037442f27a5068b38613655591f1298808eac
+ms.sourcegitcommit: 28537b32dbcdefb1359a90adc6781b73a2fd195e
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066546"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712943"
 ---
 # <a name="customize-the-production-floor-execution-interface"></a>A termelési üzem végrehajtási felületének testreszabása
 
 [!include [banner](../includes/banner.md)]
 
-A fejlesztők kiterjeszthetik a jelenlegi űrlapokat, vagy létrehozhatják saját űrlapjaikat és gombjaikat a termelési szint végrehajtási felületéhez. Miután hozzáadta ezekhez az új elemekhez a kódot, az adminisztrátorok vagy a műhelyvezetők a szabványos konfigurációs vezérlők segítségével könnyedén hozzáadhatják őket a felülethez.
+A fejlesztők bővíthetnek az aktuális képernyőt, vagy létrehozhatják a saját képernyőiket és gombjaikat a termelési emelet végrehajtási felületére. Miután hozzáadta az új elemek kódját, a rendszergazdák vagy az üzletvezetők egyszerűen hozzáadhatják őket a felülethez a szabványos konfigurációvezérlők segítségével.
 
-Például itt van néhány lehetséges megoldás, ha új oszlopokra van szükség fő formában:
+Íme néhány példa a lehetséges megoldásokból, ha új oszlopokra van szükség a fő képernyőn:
 
-- Hosszabbítsa meg a`JmgProductionFloorExecutionMainGrid` űrlapot, és adja hozzá a kívánt mezőket.
-- Hozzon létre egy új űrlapot, és adja hozzá új főnézetként (lapként).
+- A képernyő kiterjesztése `JmgProductionFloorExecutionMainGrid` és a kívánt mezők hozzáadása.
+- Hozzon létre egy új képernyőt, és adja hozzá új fő nézetként (lap).
 
 ## <a name="add-a-new-button-action"></a>Új gomb hozzáadása (művelet)
 
-Új gomb (művelet) hozzáadásához kövesse az alábbi lépéseket az egyéni műveletet megvalósító osztály létrehozásához.
+Ha új gombot (műveletet) szeretne hozzáadni, a következő lépésekkel hozzon létre egy osztályt, amely megvalósítja az egyéni műveletet.
 
-1. Hozzon létre egy új osztályt, amelynek neve`<ExtensionPrefix>_JmgProductionFloorExecution<ActionName>Action`, ahol:
+1. Új nevű osztály létrehozása, ahol `<ExtensionPrefix>_JmgProductionFloorExecution<ActionName>Action`:
 
-    - `<ExtensionPrefix>` egyedileg azonosítja a megoldást, jellemzően a vállalat nevével.
-    - `<ActionName>` az osztály egyedi neve. Jellemzően a cselekvés típusát azonosítja.
+    - `<ExtensionPrefix>` Egyedi módon azonosítja a megoldást, jellemzően a vállalat neve alapján.
+    - `<ActionName>` az osztály egyedi neve. Általában azonosítja a művelet fajtáját.
 
-1. Az új osztálynak ki kell terjesztenie a`JmgProductionFloorExecutionAction` osztály.
-1. Minden szükséges módszer felülírása.
+1. Az új osztálynak ki kell bővítenie az osztályt `JmgProductionFloorExecutionAction`.
+1. Minden szükséges metódus felülbírálása.
 
-Példákért nézze meg a következő osztályok kódját:
+Például nézze meg a következő osztályok kódját:
 
-- `JmgProductionFloorExecutionBreakAction`– Egy osztály egy egyszerű művelethez, amelyhez nincs szükség rekordokra.
-- `JmgProductionFloorExecutionReportFeedbackAction`– Összetettebb funkcionalitást biztosító osztály.
+- `JmgProductionFloorExecutionBreakAction`– egy egyszerű művelet osztálya, amely nem szükséges rekordokhoz.
+- `JmgProductionFloorExecutionReportFeedbackAction`– olyan osztály, amely összetettebb funkciókat kínál.
 
-Ha végzett, az új gomb (művelet) automatikusan megjelenik a listában **Tervezési lapok** oldal a Microsoftban Dynamics 365 Supply Chain Management. Ott Ön (vagy egy adminisztrátor vagy az emeleti menedzser) könnyedén hozzáadhatja az elsődleges vagy másodlagos eszköztárhoz, ahogy a szabványos gombokat is. Az utasításokat lásd [Tervezze meg a termelési szint végrehajtási felületét](production-floor-execution-tabs.md).
+Ha végzett, az új gomb (művelet) **automatikusan megjelenik a Microsoft Tervező lapjain** Dynamics 365 Supply Chain Management. Itt Ön (vagy rendszergazda vagy az emeleti vezető) egyszerűen hozzáadhatja az elsődleges vagy másodlagos eszköztárhoz, akár csak a szokásos gombokat. Az utasításokat lásd [a Termelés - emelet végrehajtási felületének tervezése.](production-floor-execution-tabs.md)
 
-## <a name="add-a-new-main-view"></a>Új főnézet hozzáadása
+## <a name="add-a-new-main-view"></a>Új fő nézet hozzáadása
 
-1. Hozzon létre egy új űrlapot, amely rendelkezik a kívánt elemekkel és funkciókkal. Vegye figyelembe, hogy ez az űrlap új űrlap, nem kiterjesztés. Nevezze el az űrlapot`<ExtensionPrefix>_JmgProductionFloorExecution<FormName>`, ahol:
+1. Hozzon létre egy új képernyőt, amely tartalmazza a kívánt elemeket és funkciókat. Ne feledje, hogy ez a képernyő egy új képernyő, nem kiterjesztés. A képernyő neve `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>`, ahol:
 
-    - `<ExtensionPrefix>` egyedileg azonosítja a megoldást, jellemzően a vállalat nevével.
-    - `<FormName>` az űrlap egyedi neve.
+    - `<ExtensionPrefix>` Egyedi módon azonosítja a megoldást, jellemzően a vállalat neve alapján.
+    - `<FormName>` A <a0/<a0/<a2/aki a képernyő egyedi neve.
 
-1. Hozzon létre egy menüelemet, amelynek neve `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>`.
-1. Hozzon létre egy nevű bővítményt`<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension`, hol a`getMainMenuItemsList` módszer kibővül az új menüpont hozzáadásával a listához. A következő kód példát mutat.
+1. Nevű menüelem létrehozása `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>`.
+1. Hozzon létre egy névvel kiegészített `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension` kiterjesztést, `getMainMenuItemsList` ahol a módszer kibővíthető az új menüelemnek a listához való hozzáadásával. A következő kód egy példát mutat be.
 
     ```xpp
-    [ExtensionOf(classStr(JmgProductionFloorExecutionForm))]
+    [ExtensionOf(classStr(JmgProductionFloorExecutionMenuItemProvider))]
     public final class <ExtensionPrefix>_JmgProductionFloorExecutionForm<FormName>_Extension{
         static public List getMainMenuItemsList()
         {
@@ -70,25 +70,25 @@ Ha végzett, az új gomb (művelet) automatikusan megjelenik a listában **Terve
         }
     ```
 
-Ha végzett, az új fő nézet automatikusan megjelenik a listában **Fő nézet** kombinált doboz a **Tervezési lapok** oldalon a Supply Chain Management oldalon. Itt Ön (vagy egy adminisztrátor vagy az emeleti menedzser) könnyedén hozzáadhatja új vagy meglévő lapokhoz, ahogyan a szabványos fő nézeteket is. Az utasításokat lásd [Tervezze meg a termelési szint végrehajtási felületét](production-floor-execution-tabs.md).
+Ha végzett, **·** **az** új fő nézet automatikusan megjelenik az Ellátásilánc-kezelés Lap Tervezés lapján, a Fő nézet kombinált mezőben. Itt Ön (vagy rendszergazda vagy emeleti vezető) egyszerűen hozzáadhatja az új vagy meglévő lapokhoz, ahogy a szokásos fő nézeteket is hozzáadhatja. Az utasításokat lásd [a Termelés - emelet végrehajtási felületének tervezése.](production-floor-execution-tabs.md)
 
-## <a name="add-a-details-view"></a>Részletek nézet hozzáadása
+## <a name="add-a-details-view"></a>Részletes nézet hozzáadása
 
-1. Hozzon létre egy új űrlapot, amely rendelkezik a kívánt elemekkel és funkciókkal. Vegye figyelembe, hogy ez az űrlap új, nem bővítmény. Nevezze el az űrlapot`<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail`, ahol: 
+1. Hozzon létre egy új képernyőt, amely tartalmazza a kívánt elemeket és funkciókat. Ne feledje, hogy ez a képernyő új, nem bővítmény. A képernyő neve `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail`, ahol: 
 
-    - `<ExtensionPrefix>` egyedileg azonosítja a megoldást, jellemzően a vállalat nevével.
-    - `<FormName>` az űrlap egyedi neve.
+    - `<ExtensionPrefix>` Egyedi módon azonosítja a megoldást, jellemzően a vállalat neve alapján.
+    - `<FormName>` A <a0/<a0/<a2/aki a képernyő egyedi neve.
 
-1. Hozzon létre egy menüelemet, amelynek neve `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail`.
-1. Hozzon létre egy nevű bővítményt`<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension`, hol a`getDetailsMenuItemList` módszer kibővül az új menüpont hozzáadásával a listához.
+1. Nevű menüelem létrehozása `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>Detail`.
+1. Hozzon létre egy névvel kiegészített `<ExtensionPrefix>_JmgProductionFloorExecution<FormName>_Extension` kiterjesztést, `getDetailsMenuItemList` ahol a módszer kibővíthető az új menüelemnek a listához való hozzáadásával.
 
-Ha végzett, az új részletes nézet automatikusan megjelenik a listában **Részletek nézet** kombinált doboz a **Tervezési lapok** oldalon a Supply Chain Management oldalon. Itt Ön (vagy egy adminisztrátor vagy az emeleti menedzser) egyszerűen hozzáadhatja új vagy meglévő lapokhoz, ugyanúgy, mint a szabványos részletes nézeteket. Az utasításokat lásd [Tervezze meg a termelési szint végrehajtási felületét](production-floor-execution-tabs.md).
+Ha végzett, **·** **az** új részletek nézet automatikusan megjelenik az Ellátásilánc-kezelés Lap Tervezés lapján, a Részletek nézet kombinált listában. Itt Ön (vagy rendszergazda vagy emeleti vezető) könnyen hozzáadhatja az új vagy meglévő lapokhoz, akár csak úgy, ahogyan a szokásos részletek nézetét is hozzáadhatja. Az utasításokat lásd [a Termelés - emelet végrehajtási felületének tervezése.](production-floor-execution-tabs.md)
 
-## <a name="add-a-numeric-keypad-to-a-form-or-dialog"></a>Számbillentyűzet hozzáadása egy űrlaphoz vagy párbeszédpanelhez
+## <a name="add-a-numeric-keypad-to-a-form-or-dialog"></a>Numerikus billentyűzet hozzáadása képernyőkhez vagy párbeszédpanelhez
 
-A következő példa bemutatja, hogyan lehet számbillentyűzeteket hozzáadni egy űrlaphoz.
+Az alábbi példa bemutatja, hogyan lehet numerikus billentyűzeteket hozzáadni a képernyőkhez.
 
-1. Az egyes űrlapokon található számbillentyűzet-vezérlők számának meg kell egyeznie az adott űrlapon lévő numerikus billentyűzetek számával.
+1. Az egyes képernyőket tartalmazó numerikus billentyűzetvezérlők számának meg kell egynie a képernyőn található numerikus billentyűzetek számával.
 
     ```xpp
     private JmgProductionFloorExecutionNumpadController   numpadController1;
@@ -96,7 +96,7 @@ A következő példa bemutatja, hogyan lehet számbillentyűzeteket hozzáadni e
     private JmgProductionFloorExecutionNumpadController   numpadController3;
     ```
 
-1. Állítsa be az egyes számbillentyűzet-vezérlők viselkedését, és csatlakoztassa az egyes számbillentyűzet-vezérlőket egy számbillentyűzet-alkatrészhez.
+1. Állítsa be az egyes numerikus billentyűzetvezérlők viselkedését, és kapcsolja az egyes numerikus billentyűzetvezérlőket egy numerikus billentyűzet képernyőrészhez.
 
     ```xpp
     /// <summary>
@@ -116,9 +116,9 @@ A következő példa bemutatja, hogyan lehet számbillentyűzeteket hozzáadni e
     }
     ```
 
-## <a name="use-a-numeric-keypad-as-a-pop-up-dialog"></a>Használjon számbillentyűzetet felugró párbeszédpanelként
+## <a name="use-a-numeric-keypad-as-a-pop-up-dialog"></a>Numerikus billentyűzet használata előugró párbeszédpanelként
 
-A következő példa bemutatja a számbillentyűzet-vezérlő beállításának egyik módját egy felugró párbeszédpanelhez.
+A következő példa egy, az előugró párbeszédpanelen használható numerikus billentyűzetvezérlő beállítását mutatja be.
 
 ```xpp
 private void setupNumpadController()
@@ -129,7 +129,7 @@ private void setupNumpadController()
 }
 ```
 
-A következő példa bemutatja a számbillentyűzet felugró párbeszédablak meghívásának egyik módját.
+A következő példa bemutatja az egyik módja a numerikus billentyűzet előugró párbeszédpanelének hívását.
 
 ```xpp
 Args args = new Args();
@@ -142,6 +142,79 @@ formRun.setNumpadController(numpadController);
 numpadController.setValueToNumpad(333.56);
 formRun.run();
 ```
+
+## <a name="add-a-date-and-time-controls-to-a-form-or-dialog"></a>Dátum- és idővezérlők hozzáadása képernyőhöz vagy párbeszédpanelhez
+
+Ez a szakasz bemutatja, hogyan lehet dátum- és idő vezérlőelemeket hozzáadni egy képernyőhöz vagy párbeszédpanelhez. A felhasználóbarát dátum- és idővezérlők segítségével a dolgozók megadhatják a dátumokat és időpontokat. A következő képernyőképek mutatják, hogyan jelennek meg a vezérlőelemek az oldalon. Az idővezérlő 12 órás és 24 órás verziókat is biztosít; A megjelenő verzió annak a felhasználói fióknak a preferenciakészletét követi, amelyen a felület fut.
+
+![Példa dátumellenőrzésre.](media/pfe-customize-date-control.png "Dátumellenőrzés – példa")
+
+![Idő-ellenőrzési példa 12 órás órákkal.](media/pfe-customize-time-control-12h.png "Idő-ellenőrzési példa 12 órás órákkal")
+
+![Idő-ellenőrzési példa 24 órás órákkal.](media/pfe-customize-time-control-24h.png "Idő-ellenőrzési példa 24 órás órákkal")
+
+Az alábbi művelet egy példát mutat be arra, hogyan lehet dátum- és idővezérlőket hozzáadni egy képernyőhöz.
+
+1. Adjon hozzá egy kontrollert a képernyőhöz minden olyan dátum- és idővezérlőhöz, amelybe a képernyőnek tartalmaznia kell. (A kontrollerek számának meg kell egynie a képernyő dátum- és idővezérlőinek számában.)
+
+    ```xpp
+    private JmgProductionFloorExecutionDateTimeController  dateFromController; 
+    private JmgProductionFloorExecutionDateTimeController  dateToController; 
+    private JmgProductionFloorExecutionDateTimeController  timeFromController; 
+    private JmgProductionFloorExecutionDateTimeController  timeToController;
+    ```
+
+1. A szükséges változók (típus) deklarálva `utcdatetime`.
+
+    ```xpp
+    private utcdatetime fromDateTime;
+    private utcdatetime toDateTime;
+    ```
+
+1. Olyan metódusok létrehozása, amelyekben a dátum-/idő frissítését a dátum-idő kontrollerek frissítik. A következő példa egy ilyen módszert mutat be.
+
+    ```xpp
+    private void setFromDateTime(utcdatetime _value)
+        {
+            fromDateTime = _value;
+        }
+    ```
+
+1. Az egyes dátum-idő kontrollerek viselkedésének beállítása és az egyes vezérlők csatlakoztatása egy képernyőrészhez. Az alábbi példa bemutatja, hogyan lehet beállítani a "dátumtól" és az "időtől" vezérlők adatait. A program ad hozzá hasonló kódot a dátumhoz és az időhöz (nem jelenik meg).
+
+    ```xpp
+    /// <summary>
+    /// Initializes all date and time controllers, defines their behavior, and connects them with the form parts.
+    /// </summary>
+    private void initializeDateControlControllers()
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        timeFromController = new JmgProductionFloorExecutionDateTimeController();
+        timeFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        timeFromController.parmDateTimeValue(fromDateTime);
+        
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, timeFromController);
+        TimeFromFormPart.getPartFormRun().setTimeControlController(timeFromController, dateFromController);
+        
+        ...
+
+    }
+    ```
+
+    Ha csak egy dátumellenőrzésre van szüksége, akkor átugorhatja az időellenőrzés beállításait, és ehelyett beállíthatja a dátumellenőrzést, amint azt az alábbi példa mutatja:
+
+    ```xpp
+    {
+        dateFromController = new JmgProductionFloorExecutionDateTimeController();
+        dateFromController.setDateControlValueToCallerFormDelegate += eventhandler(this.setFromDateTime);
+        dateFromController.parmDateTimeValue(fromDateTime);
+    
+        DateFromFormPart.getPartFormRun().setDateControlController(dateFromController, null);
+    }
+    ```
 
 ## <a name="additional-resources"></a>További erőforrások
 

@@ -9,16 +9,15 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 66e73ff2bd5dbff2cb0bcca8e0645c485f3a0bba
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 7ea395b1514cb632b823ca62eb92c098d4e0c0ce
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402397"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687359"
 ---
 # <a name="learning-catalog-for-commerce-microsoft-partner-sales-and-marketing-roles-for-dynamics-365-commerce"></a>Commerce Microsoft partner Dynamics 365 Commerce szolgáltatással kapcsolatos értékesítési és marketing szerepköreinek képzési katalógusa
 
@@ -26,7 +25,7 @@ Az Ön felelőssége segítséget nyújtani ügyfeleinek a megfelelő megoldás 
 
 A következő katalógus az alapismeretekből a meghatározott tartományokra, a legalapvetőbbtől a legkorszerűbb szintig van rendszerezve. Ha a tartalom több formátumban van, akkor tudatja Önnel, hogy kiválaszthassa a szükségleteknek leginkább megfelelő képzési formátumot.
 
-A többi Finance and Operations alkalmazással megosztott funkciókkal kapcsolatos képzések a [Dynamics 365 Finance Képzési katalógusban](../../finance/get-started/learning-catalog-partner-sales.md) olvashatók.
+A többi Pénzügyi és Művelet alkalmazással [megosztott funkciókról a Dynamics 365 Pénzügyi oktatókatalógus tartalmaz](../../finance/get-started/learning-catalog-partner-sales.md).
 
 ## <a name="get-started"></a>Első lépések<a name="get-started"></a>
 

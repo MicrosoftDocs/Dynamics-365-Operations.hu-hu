@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 7d43657573ea8092f047615fc50a1a50ab97f094
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: 1c6d394cb192a88316beb2e8746b558eb8dd184b
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7968987"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711659"
 ---
 # <a name="cash-position"></a>Készpénzpozíció
 
@@ -50,7 +50,7 @@ A készpénzpozíció mentéséhez és szerkesztéséhez hozzon létre egy pilla
 A Készpénzpozíció funkció a következő funkciókat tartalmazza. 
 
 - A készpénzpozíció funkció a pénzkiáramlást a rendszerben meglévő dokumentumok, valamint a külső rendszerekből importált pénzbeáramlási és pénzkiáramlási sorok alapján mutatja be.
-- Segítségével egyszerű a pénzforgalmi adatok külső rendszerekből Dynamics 365 Finance-be történő integrálása. A készpénzpozíció az adatimportport-exportálási keretrendszert is használhatja. Ez a keretrendszer megkönnyíti az Excel OData-val történő integrációt. Többféle forrásból származó adatok kombinálával átfogó készpénzpozíció-megoldást hozhat létre.
+- Megkönnyíti a külső rendszerek pénzforgalom-adatainak integrálását a Dynamics 365 Pénzügy alkalmazásba. A készpénzpozíció az adatimportport-exportálási keretrendszert is használhatja. Ez a keretrendszer megkönnyíti az Excel OData-val történő integrációt. Többféle forrásból származó adatok kombinálával átfogó készpénzpozíció-megoldást hozhat létre.
 - Intelligens készpénzpozíciót vezet be. A készpénzpozíció a vevő fizetési viselkedése alapján jön létre, amely előre jelezheti, hogy a vállalat mikorra várja a készpénz érkezését a számláira.
 - Vevői rendelések és számlák esetén a vevői kifizetések előrejelzése az AI funkcióval határozza meg a vevői kifizetések múltbeli viselkedését a rendelés vagy számla kifizetése esetén.
 - A szállítói rendeléseknél és számláknál a szállítás és a számla közötti átlagos idő, illetve a szállítónkénti számlafizetés közötti átlagos idő alapján határozzák meg, hogy mikor történik a szállítói rendelés vagy számla kifizetése a pénzkiáramlás pontosabb megállapításához.

@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-04-19
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fadad34be31f6522654bc3af47a4f71695dcc5fea7f0b3e760ff26d79d88eb4c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 6734069b1448999c62a8c538f97d786fc10995e5
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722511"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8685742"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-april-19-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban, 2021. április 19.
 
@@ -42,7 +41,7 @@ Az alábbi funkciók általában a következő verzióval lesznek elérhetők.
 
 | Funkció | Kiadási terv | Dokumentáció |
 | --- | --- | --- |
-| Platform frissítése erre: 10.0.17 (41) | -- | [Platformfrissítések a Finance and Operations alkalmazás 10.0.17 verziójához (2021. április)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
+| Platform frissítése erre: 10.0.17 (41) | -- | [A Pénzügy és műveletek alkalmazások 10.0.17-es verziójának platformfrissítései (2021. április)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md) |
 | Egyéni mezők támogatása a Juttatások kezelése űrlapokon | [Egyéni mező támogatása a juttatások kezelésében](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-benefits-management)| [Juttatáskezelés áttekintése](hr-benefits-management-overview.md)|
 
 ### <a name="bug-fixes"></a>Hibajavítások
@@ -78,7 +77,7 @@ Az alábbi új funkciók előzetes verzióban érhetők el. A funkciók be- vagy
 | Funkció | Részletek |
 | --- | --- |
 | A vezető által az alkalmazottakhoz megadott szakértelmet egy munkafolyamat automatikusan jóváhagyhatja | Hamarosan. |
-| Platform frissítése erre: 10.0.18 (42) | A 10.0.18-es verziófrissítés az ütemezés szerint a szolgáltatáskiadással, 2021. május 17-én indul el. További tájékoztatás: [Platform-frissítések az Finance and Operations alkalmazások 10.0.18 verziójához (2021. május)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
+| Platform frissítése erre: 10.0.18 (42) | A 10.0.18-es verziófrissítés az ütemezés szerint a szolgáltatáskiadással, 2021. május 17-én indul el. A további tudnivalókat [lásd a Pénzügyi és üzemeltetési alkalmazások 10.0.18-as verziójának Platformfrissítései (2021. május)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18). |
 | Egyéni mező támogatása a Juttatások kezelése jogosultsági szabályokban  | [Egyéni mezőtámogatás a jogosultságok feldolgozásához](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/custom-field-support-eligibility-processing) |
 
 A tervezett funkciók és az ütemezett kiadásaik teljes listáját lásd: [A Dynamics 365 Human Resources 2021. első kiadási hullámának áttekintése](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).

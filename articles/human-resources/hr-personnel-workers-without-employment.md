@@ -1,6 +1,6 @@
 ---
 title: Foglalkoztatás nélküli dolgozók
-description: Azok a munkavállalók, akiknek nincs jövőbeli, aktív vagy múltbeli állása a szervezeténél, megjelennek az Alkalmazottak nélkül oldalon.
+description: A jövőbeli, aktív vagy múltbeli foglalkoztatással nem bíró dolgozók a szervezetnél megjelennek a foglalkoztatás nélküli dolgozók oldalon.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: ''
@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmWorkerV2, HRMMassHireProject, HRMMassHireLine, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2021-04-06
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: d0b8fe7dd0818fa1c3cc4224e73035849f9dadfe
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d3b2d5d470e780c708941fd3d08eae1a042b4c03
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070551"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689803"
 ---
 # <a name="workers-without-employment"></a>Foglalkoztatás nélküli dolgozók
 
@@ -27,9 +26,9 @@ ms.locfileid: "8070551"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Azok a munkavállalók, akiknek nincs jövőbeli, aktív vagy történelmi munkaviszonyuk az Ön szervezeténél, megjelennek az oldalon **Munkavállalás nélkül dolgozók** oldalon. Az ilyen típusú munkavállalók akkor jelenhetnek meg, ha olyan munkavállalókat importál, akiknek nincs munkaügyi nyilvántartása, vagy ha törli egy munkavállaló foglalkoztatását a következőn keresztül: **Munkások \> Foglalkoztatási előzmények**.
+Azok a dolgozók, akiknek nincs jövőbeli, aktív **vagy múltbeli munkaviszonya a szervezettel, megjelennek az alkalmazás nélküli dolgozók oldalon**. Az ilyen típusú dolgozók akkor is megjelenhetnek, ha olyan dolgozókat importál, akiknek nincs alkalmazotti rekordja, vagy ha a dolgozók foglalkoztatását törli a **\> dolgozók munkavállalási előzményein keresztül**.
 
-Alapértelmezés szerint a **Munkavállalás nélkül dolgozók** oldal a következő szerepkörök számára érhető el:
+Alapértelmezés szerint az alkalmazás nélküli **dolgozók** lap a következő szerepkörök számára érhető el:
 
 - Emberi erőforrás asszisztens
 - Emberi erőforrás vezető

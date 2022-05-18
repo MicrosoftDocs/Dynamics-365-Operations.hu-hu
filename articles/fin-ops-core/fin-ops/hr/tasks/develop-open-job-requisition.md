@@ -13,64 +13,64 @@ ms.search.region: Global
 ms.author: anbichse
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 4e3287fc824f2f7eb725b11c990a1c457d45439f
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: 364117133cb7a868e613088b14a33869fd9fedb1
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075149"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735346"
 ---
 # <a name="develop-and-open-job-requisition"></a>Beosztásigénylés kialakítása és megnyitása
 
 [!include [banner](../../includes/banner.md)]
 
 > [!IMPORTANT]
-> Az ebben a témakörben említett funkciók jelenleg a pénzügyi infrastruktúra humánerőforrás-ügyfelei számára érhetők el.  
+> Az ebben a témakörben található toborzási funkciókat a toborzási projekteknek, illetve a pályázókra, pályázatokra és toborzási projektekre kell fókuszálni.  
 
 
-A toborzási projektek segítenek a toborzási folyamat kezelésében. Minden egyes toborzási projekthez beállíthat olyan információkat, mint a munkakör, amelyhez a toborzás történik, a toborzó neve, a projekt állapota és az osztály, ahol a feladat elhelyezkedik. Miután elkészített egy toborzási projektet, írhat rá álláshirdetést, közzéteheti a hirdetést **Alkalmazotti önkiszolgáló** oldalt, társítsa az álláspályázatokat a projekthez, és kövesse nyomon a projekt tevékenységeit. A **USMF** demóadat-társaságot használtak ennek az eljárásnak a létrehozásához.
+A toborzási projektek segítenek a toborzási folyamat kezelésében. Minden toborzási projekthez be lehet állítani olyan adatokat, mint például az a feladat, ahol a toborzás történik, a toborzó nevét, a projekt állapotát, valamint azt a részleget, ahol a feladat található. Miután létrehozott egy toborzási projektet, be lehet írni egy álláshirdetést, közzé lehet tenni a **hirdetést** az Alkalmazott önkiszolgáló oldalán, hozzá lehet társítani az álláspályáztatási pályázatokat a projekthez, és nyomon lehet követni a projekt tevékenységeit. A **művelet az USMF** bemutatóadat-vállalatot használta az eljárás létrehozásához.
 
-1. Menj **Emberi Erőforrások \> Toborzás \> Toborzási projektek \> Toborzási projektek**.
+1. Ugrás az Emberi erőforrások **toborzási \>\> projektek toborzási \> projektjeihez**
 2. Válassza az **Új** lehetőséget.
 3. A **Toborzási projekt** mezőben adjon meg egy értéket.
 4. A **Leírás** mezőben adjon meg egy értéket.
-5. Ban,-ben **Toborzó** mezőben válassza ki a legördülő nyilat a keresés megnyitásához.
+5. A Toborzás **mezőben** válassza ki a legördülő lista nyílát a keresés megnyitásához.
 6. Keresse meg és jelölje ki a kívánt rekordot a listán.
 7. A listában válassza ki a kiválasztott sorból a hivatkozást.
 8. Válassza ki a **Kiválasztás** lehetőséget.
-9. Ban,-ben **Osztály** mezőben válassza ki a legördülő nyilat a keresés megnyitásához.
+9. A Részleg **mezőben** válassza a legördülő lista nyílát a keresés megnyitásához.
 10. A listában válassza ki a kiválasztott sorból a hivatkozást.
-11. Ban,-ben **Munka** mezőben válassza ki a legördülő nyilat a keresés megnyitásához.
+11. A Feladat **mezőben** válassza a legördülő lista nyílát a keresés megnyitásához.
 12. Keresse meg és jelölje ki a kívánt rekordot a listán.
 13. A listában válassza ki a kiválasztott sorból a hivatkozást.
-14. Ban,-ben **Nyitások száma** mezőbe írjon be egy számot.
-15. Ban,-ben **Munkaerő-menedzser** mezőben válassza ki a legördülő nyilat a keresés megnyitásához.
+14. Írjon **be egy számot a Nyitószám** mezőbe.
+15. A Felvételkezelő **mezőben** válassza ki a legördülő lista nyílát a keresés megnyitásához.
 16. Keresse meg és jelölje ki a kívánt rekordot a listán.
 17. A listában válassza ki a kiválasztott sorból a hivatkozást.
 18. Válassza ki a **Kiválasztás** lehetőséget.
 19. Írjon be egy dátumot a **Pályázati határidő** mezőbe.
 20. Válassza a **Média** lehetőséget.
 
-    A toborzási projektek magukban foglalják a nyitott pozíciók meghirdetésére használt médiák megadásának lehetőségét.
+    A toborzási projektek magukban foglalják a médiafájlokat, amelyek a nyitott beosztások hirdetésére használhatók.
 
 21. Válassza az **Új** lehetőséget.
-22. Ban,-ben **Média** mezőben válassza ki a legördülő nyilat a keresés megnyitásához.
+22. A Média **mezőben** válassza a legördülő lista nyílát a keresés megnyitásához.
 23. A listában válassza ki a kiválasztott sorból a hivatkozást.
 24. Adja meg a dátumot a **Kezdő dátum** mezőben.
 25. Adja meg a dátumot a **Záró dátum** mezőben.
 26. Válassza a **Mentés** lehetőséget.
 27. Zárja be a lapot.
-28. Válassza ki **Álláshirdetések**.
+28. Álláshirdetések **kiválasztása**.
 29. Válassza a **Mentés** lehetőséget.
 30. Zárja be a lapot.
-31. Válassza ki vagy törölje a lehetőséget **Megjelenítés az alkalmazottak önkiszolgálóján** jelölőnégyzetet.
+31. Jelölje be a Megjelenítés alkalmazott **önkiszolgálón jelölőnégyzetét, vagy** törölje a jelölést a jelölőnégyzetből.
 
-    Jelölje be a jelölőnégyzetet, hogy a toborzási projekt látható legyen az alkalmazottak számára **Alkalmazotti önkiszolgáló** oldalon.
+    Jelölje be ezt a jelölőnégyzetet, ha az **Alkalmazottak** önkiszolgáló lapján láthatóvá teszi a toborzási projektet az alkalmazottak számára.
 
-32. Válaszd ki a **Toborzási projekt** állapot.
+32. Toborzási **projekt állapotának** kiválasztása.
 33. Válassza az **Indítás** lehetőséget.
 
-    A **Elindult** állapot azt jelzi, hogy a projekt készen áll a jelentkezések fogadására.
+    Az **Elindítva** állapot azt jelzi, hogy a projekt készen áll a pályázatok fogadására.
 
 34. Válassza ki az **OK** lehetőséget.
 

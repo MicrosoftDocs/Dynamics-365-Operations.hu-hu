@@ -1,24 +1,24 @@
 ---
 title: Költségobjektumok létrehozása
 description: Ez az eljárás bemutatja, hogyan lehet költségobjektumokat létrehozni költséghely pénzügyi dimenziók importálásával a Költségkönyvelésbe az adatcsatlakozón keresztül.
-author: ShylaThompson
+author: twheeloc
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMDimension, CAMAXFinancialDimensionMemberProviderConfiguration, CAMDimensionMember
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 0215e815e3e44568fb81ab7fad9b44c219e961cb6ef68996bf43218ef817e8d9
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 88196ea19488cd8572bf0e7883298317c9c84696
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765052"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734130"
 ---
 # <a name="create-cost-objects"></a>Költségobjektumok létrehozása 
 
@@ -28,25 +28,25 @@ Ez az eljárás bemutatja, hogyan lehet költségobjektumokat létrehozni költs
 
 
 ## <a name="create-new-cost-objects"></a>Új költségobjektumok létrehozása
-1. Ugrás a Költségkönyvelés > Dimenziók > Költségobjektum-dimenziók elemre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket a Név mezőbe.
-4. A Dimenziótagok adatcsatlakozója mezőben adjon meg, vagy válasszon ki egy értéket.
-5. A Leírás mezőben adjon meg egy értéket.
-6. Kattintson a Mentés gombra.
+1. Ugrás a Költségobjektum **-> dimenziók > költségkönyvelési dimenziókhoz**.
+2. Kattintson az **Új** elemre.
+3. Írjon be egy értéket a **Név** mezőbe.
+4. A dimenziótagok **Adat csatlakoztató mezőjében** adjon meg vagy válasszon ki egy értéket.
+5. Írjon egy értéket a **Leírás** mezőbe.
+6. Kattintson a **Mentés** gombra.
 
 ## <a name="configure-the-data-connector"></a>Az adatcsatlakozó konfigurálása
-1. Kattintson a Dimenziótag-szolgáltató konfigurálása lehetőségre.
+1. Kattintson a Dimenziótag-szolgáltató **konfigurálása elemre**.
     * Válassza ki a CostCenter lehetőséget a CostCenter dimenzió importálásához a Költségkönyvelésbe.  
-2. A Dimenzió neve mezőben válassza ki a Költséghelyet.
-3. Kattintson az OK gombra.
+2. A Dimenzió **neve mezőben** válassza ki a Költségközpont lehetőséget.
+3. Kattintson az **OK** gombra.
 
 ## <a name="import-cost-centers"></a>Költséghelyek importálása
-1. Kattintson a Dimenziótagok importálása elemre.
-2. Kattintson az OK gombra.
+1. Kattintson a Dimenziótagok **importálása elemre**.
+2. Kattintson az **OK** gombra.
 
 ## <a name="view-the-imported-cost-centers"></a>Az importált költséghelyek megtekintése
-1. Kattintson a Dimenziótagok megtekintése elemre.
+1. Kattintson a Dimenziótagok **megtekintése elemre**.
 
 
 

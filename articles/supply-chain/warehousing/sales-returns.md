@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5cfcfd165b5f7b97d1ee88175b3f6c9d418c30c2
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 672f24a720f48c420916c197722eb2d9599744fa
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565279"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695563"
 ---
 # <a name="sales-returns"></a>Értékesítési visszáruk
 
@@ -76,7 +76,6 @@ Visszáru rendelés létrehozásakor szerepelnie kell a következő táblázatba
 | RMA-szám         | A tevékenységhez rendelt kategória.              | Másodlagos kulcs a visszáru-rendelési folyamat során az RMA-szám lesz. Az automatikusan hozzárendelt RMA-szám, amely a **Kinnlevőségek paraméterei** lapon beállított RMA-számsorozaton alapszik.                                                                                                                              |
 | Határidő           | Az utolsó dátum, amikor visszaadható egy cikk               | Az alapértelmezett érték számítása az aktuális dátum plusz érvényességi idő alapján történik. Például ha csak 90 napig érvényes a visszaküldés a visszáru-rendelés dátumától, és a visszáru rendelés május 1-jén jött létre, a mező értéke **július 30**. Az érvényességi időtartam beállítása a **Kinnlevőségek paraméterei** oldalon. |
 | Visszaadási okkód | Az ok, ami miatt a vevő visszaadta a terméket          | Az Okkód választható ki a felhasználó által definiált okkódjainak listáját. A mező a későbbiekben bármikor szerkeszthető.                                                                                                                                                                                                                                    |
-
 ### <a name="create-return-order-lines"></a>Visszárurendelés sorainak létrehozása
 
 Miután befejezte a visszáru fejlécét, az alábbi módszerek egyikével visszárusorokat hozhat létre:
@@ -84,7 +83,8 @@ Miután befejezte a visszáru fejlécét, az alábbi módszerek egyikével vissz
 -   Manuálisan adja meg a cikk részleteit, a mennyiséget és az egyéb adatokat minden visszárusornál.
 -   Hozzon létre egy visszárusort az **Értékesítési rendelés megkeresése** funkcióval. Javasoljuk, hogy ezt a funkciót használja visszáru-rendelés létrehozásakor. Az **Értékesítési rendelés keresése** funkció a számlázott értékesítésirendelés-sort a visszáru rendelés sornak a hivatkozást hoz létre, és olvassa be a részletek, például cikkszám, mennyiség, ár, engedmény és az eladás sorból költségértékek sor. A hivatkozás segít garantálni, hogy amikor a terméket visszaküldik a vállalatnak, az ugyanazon egységköltséggel kerüljön felértékelésre, mint az eladás során. A hivatkozás azt is igazolja, hogy a visszáru-rendeléseket nem olyan mennyiségben hozták létre, amely meghaladja a számlán eladott mennyiséget.
 
->[Megjegyzés!] Az értékesítési rendelésre hivatkozó visszárusorokat az értékesítés korrekciójaként vagy visszavonásaként kezelik. További tudnivalókért lásd a "Feladás a főkönyvbe" című részt, a témakör későbbi részében.
+>[!NOTE] 
+>Az értékesítési rendelésre hivatkozó visszárusorokat az értékesítés helyesbítéseként vagy annak visszáru-újrarendeléseként kell kezelni. További tudnivalókért lásd a "Feladás a főkönyvbe" című részt, a témakör későbbi részében.
 
 ### <a name="charges"></a>Költségek
 
@@ -189,8 +189,10 @@ A beérkezési folyamat során az általános folyamat a raktári beérkezés in
 
 ### <a name="identify-products-in-the-arrival-overview-list"></a>Érkezés áttekintés listájában termékek azonosítása
 
-A **Érkeztetési áttekintés** lap felsorolja az összes tervezett bejövő érkezők. 
->[Megjegyzés!] érkezése tranzakció típusú külön-külön kell feldolgozni az érkezések visszárurendelésekből. Után már azonosítani egy bejövő csomag a **Beérkezés áttekintése** (például úgy, hogy az RMA kísérőokmány segítségével), a műveletek ablaktábla a lap **Érkeztetés indítása** hozzon létre, és az cikkérkezési napló, amely megfelel az érkezési inicializálása.
+A **Érkeztetési áttekintés** lap felsorolja az összes tervezett bejövő érkezők.
+
+>[!NOTE] 
+>A visszárurendelések érkezéseit a többi érkezési tranzakciótípustól elkülönítve kell feldolgozni. Után már azonosítani egy bejövő csomag a **Beérkezés áttekintése** (például úgy, hogy az RMA kísérőokmány segítségével), a műveletek ablaktábla a lap **Érkeztetés indítása** hozzon létre, és az cikkérkezési napló, amely megfelel az érkezési inicializálása.
 
 ### <a name="edit-the-arrival-journal"></a>Szerkessze az Érkeztetési napló tartalmát.
 
@@ -232,7 +234,8 @@ Ha az ügyfélnek szállított egy cserecikket, és használja a **csere és sel
 
 A csereeszköz önálló értékesítési megrendeléssel, a helyettesítő értékesítési rendeléssel történik. Ez az értékesítési rendelés a visszáru-rendelés szállítólevelének létrehozásakor jön létre. A rendelés fejlécében a visszáru rendelés fejen a hivatkozott vevőtől származó adatokat használja. A sor adatgyűjtés megadott adatok alapján a **Helyettesítő cikk** oldalon. A **Helyettesítő cikk** lapot ki kell tölteni intézkedési műveleteket a word "csere." kezdetű sorok Azonban a mennyiség és a helyettesítő cikk azonosításával járó nem érvényesített vagy korlátozott. Ez a viselkedés lehetővé teszi, hogy olyan esetekben, ahol a vevő szeretné ugyanazt a cikket, de egy másik konfigurációt vagy méretét, valamint esetekben azt szeretné, ahol a vevők egy teljesen másik elemet. Alapértelmezés szerint egy azonos elemet meg a **Helyettesítő cikk** oldalon. Választhatja azonban egy másik elemet, feltéve, hogy a funkció be van állítva. 
 
->[Megjegyzés!] Szerkesztheti és törölheti a cserecikk-eladási rendelést létrehozását követően.
+>[!NOTE] 
+>A csere értékesítési rendelés létrehozás után szerkeszthető és törölhető.
 
 ## <a name="generate-a-packing-slip"></a>Hozzon létre szállítólevelet
 Ahhoz, hogy a visszaküldött cikkeket bevételezni lehessen a készletbe, frissíteni kell annak a rendelésnek a csomagjegyzékét, amelyhez a cikkek tartoznak. Ahogyan a számlafrissítés folyamata a pénzügyi tranzakció frissítése, úgy a csomagjegyzék-frissítés folyamata a készletrekord fizikai frissítése, amely véglegesíti a készlet változásait. Más szóval ez a folyamat véglegesíti a készlet módosításait. Visszaküldés esetén a csomagjegyzék frissítésekor az intézkedési művelethez tartozó lépéseket is végrehajtják. A csomagjegyzék létrehozásakor a következők történnek:
@@ -253,8 +256,10 @@ Bár a **Visszárurendelés** lapon található információk és tevékenysége
 
 ### <a name="credit-correction"></a>Jóváírás korrekciója
 
-A számlázási folyamat részeként a vegyes költségek helyességének ellenőrzése. Ahhoz, hogy a főkönyvi feladások javításokat (sztornó) válik, fontolja meg a **jóváírás-korrekció** a beállítás a **más** lapján a **számla** oldal a számla/jóváírás könyvelésekor. 
->[Megjegyzés!] Alapértelmezés szerint a **Hitel javítás** beállítás aktiválva van, ha a **Jóváírás helyesbítésként** a beállítás a **Kinnlevőségek paraméterei** lap engedélyezve van. Azonban azt javasoljuk, hogy Ön nem post visszaad sztornó.
+A számlázási folyamat részeként a vegyes költségek helyességének ellenőrzése. Ahhoz, hogy a főkönyvi feladások javításokat (sztornó) válik, fontolja meg a **jóváírás-korrekció** a beállítás a **más** lapján a **számla** oldal a számla/jóváírás könyvelésekor.
+
+> [!NOTE]
+> Alapértelmezés szerint a **Jóváírás** **helyesbítése** beállítás aktív, ha engedélyezve van a Jóváírás helyesbítése beállítás a Kinnlevőségek **paraméterei** lapon. Azonban azt javasoljuk, hogy Ön nem post visszaad sztornó.
 
 ## <a name="create-intercompany-return-orders"></a>A vállalatközi visszárurendelések létrehozása
 Visszárurendelések hajtható végre a szervezeten belül a két vállalat között. A varázsló a következő forgatókönyveket támogatja:
@@ -308,7 +313,8 @@ A visszárurendelés nem hivatkozhat a vevői számla A visszárucikk létrejön
 
 ![Visszárurendelés nem hivatkozik a vevő számlára.](./media/SalesReturn09.png)  
 
->[Megjegyzés!] A cikkár fő része lesz az alapértelmezett érték a **Visszáru-önköltségi ár** paraméter. Az alapértelmezett ár készletkiadás alkalmával az önköltségi ár eltér. A tényezők ezért 3 veszteség keletkezett. Ezenkívül a visszáru rendelést az eladási rendelésen a vevőnek adott engedmény nem tartalmaz. Ezért a túlzott követel következik be.
+> [!NOTE]
+> A program a cikk alapárát használja alapértelmezett értékként a Visszáru-önköltségi **ár paraméterhez**. Az alapértelmezett ár készletkiadás alkalmával az önköltségi ár eltér. A tényezők ezért 3 veszteség keletkezett. Ezenkívül a visszáru rendelést az eladási rendelésen a vevőnek adott engedmény nem tartalmaz. Ezért a túlzott követel következik be.
 
 ### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>2. példa: A jóváírás-korrekció kijelöltük a visszárurendelés
 
@@ -316,7 +322,8 @@ A visszárurendelés nem hivatkozhat a vevői számla A visszárucikk létrejön
 
 ![A jóváírás-korrekció kijelöltük a visszárurendelés.](./media/SalesReturn10.png)  
 
->[Megjegyzés!] Negatív helyesbítés főkönyvi feladások kerülnek.
+>[!NOTE] 
+>A főkönyvi feladások negatív korrekcióként vannak megadva.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>3. példa: A visszáru-rendelési sor létrejön az eladási rendelés keresés funkció használatával
 
@@ -324,7 +331,8 @@ A visszáru-rendelési sor létrejön az **Értékesítési rendelés keresése*
 
 ![A visszáru-rendelési sor létrejön az eladási rendelés keresés funkció használatával.](./media/SalesReturn11.png)  
 
->[Megjegyzés!] Az **Engedmény** és a **Visszáru-önköltségi ár** mezők helyesen vannak beállítva. Ezért a vevői számla pontos sztornírozása következik be.
+> [!NOTE]
+> **Az** engedmény és **a visszáru önköltségi** ára helyesen van beállítva. Ezért a vevői számla pontos sztornírozása következik be.
 
 
 

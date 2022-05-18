@@ -9,26 +9,25 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2022-1-17
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 16f78b85567e6d08c588e621119513ff070bf618
-ms.sourcegitcommit: 68655c5673aef9892063e5913ffee6bfc3817387
+ms.openlocfilehash: 63e3cbaaf77456b55f08ea91831ba9d49cb57185
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/21/2022
-ms.locfileid: "8016143"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689156"
 ---
 # <a name="basis-change-in-icms-dif-tax-calculations-for-products-from-suppliers-in-other-states"></a>Más államok szállítói termékeire vonatkozó ICMS-DIF adószámítások alapváltozása
 
-Ez a témakör az ICMS-DIF adótípus számításának konfigurációját írja le, amikor egy pénzügyi bizonylatot a brazil **Grande** do Sul (RS) vagy São Bizonylato (SP) államban érkezik.
+Ez a témakör az **ICMS-DIF** adótípus számításának konfigurációját írja le, amikor egy pénzügyi bizonylatot a brazil Grande do Sul (RS) vagy São Bizonylato (SP) államban érkezik.
 
 Az állami törvényben leírott definíciók szerint az összegyűjtött Mercadorias e De Mercadorias e Serviços (ICMS) szabálynak követnie kell ezt a szabályt:
 
-*Beszedni szükséges* ICMS = ([( Művelet *összege* - *ICMS* a forrástól) ÷ (1 – *ICMS % belső*)] × *ICMS %* belső) – *ICMS-összeg a forrásból*
+*Beszedni szükséges ICMS* = ([(*Művelet* összege - *forrásból származó ICMS*) ÷ (1 – *ICMS %* belső)] × *ICMS %* belső) – *ICMS-összeg a forrásból*
 
 ## <a name="example"></a>Példa
 
@@ -37,16 +36,16 @@ Az RS-államban brazil vállalat pénzügyi bizonylatot kap egy beszerzésről a
 - **Művelet összege:** 1 000,00 Brazil reál (R$ 1 000,00)
 - **ICMS-interstate:** R$ 120,00
 - **ICMS-százalék AZ RS-állapotban:** 18 százalék
-- **AZ RS-államban beszedhető ICMS-**(\[(1000 – 120) ÷ (1 – 0,18) \] × 0,18 ) – 120 = 73,17 R$ 
+- **AZ RS-államban beszedhető ICMS-** (\[(1000 – 120) ÷ (1 – 0,18)\] × 0,18) – 120 = R$ 73,17 
 
 ## <a name="resolution"></a>Megoldás
 
 Az ICMS-DIF eltérésnek az RS-állam szabályai szerinti kiszámításához a következő módon kell áfakódokat és áfacsoportokat beállítani:
 
 1. Hozzon létre egy áfakódot a 12 százalékos ICMS fogadására (a másik államban). Ezzel a kóddal lehet regisztrálni a szállítótól visszakövethető adó összegét.
-2. Hozzon létre egy áfakódot az ICMS-DIF összegyűjtéséhez. Ennek az áfakódnak 18 százalékos összeggel kell lennie (a saját államban), hogy meghatározza a 18 és 12 százalék közötti különbséget. Állítsa az adótípust **ICMS-DIF** típusúra. Ezt az áfakódot a következő módon kell meghatározni a számítási paraméterek között:
+2. Hozzon létre egy áfakódot az ICMS-DIF összegyűjtéséhez. Ennek az áfakódnak 18 százalékos összeggel kell lennie (a saját államban), hogy meghatározza a 18 és 12 százalék közötti különbséget. Állítsa az adótípust **ICMS-DIF típusúra**. Ezt az áfakódot a következő módon kell meghatározni a számítási paraméterek között:
 
-    - Az **Eredet** mezőben válassza **a Bruttó összeg százaléka** lehetőséget.
-    - A **Számítás alapja** mezőben válassza a Soronkénti nettó összeg vagy a Számlaegyenleg **nettó** összege **lehetőséget**.
-    - Az adózási kód megadása úgy, hogy 3 értékű pénzügyi **értéket** tartalmazzon. Ilyen módon a pénzügyi könyvek modul engedélyezésekor automatikusan létrejön a **korrekciós** tranzakció.
-    - Az áfacsoport konfigurációjában válassza ki **az** **ICMS-DIF áfakódhoz az "Use** tax" beállítást.
+    - Az Eredet **mezőben** válassza a Bruttó **összeg százaléka lehetőséget**.
+    - A Számítás **alapja mezőben** válassza a **Soronkénti nettó összeg** **vagy a Számlaegyenleg nettó összege lehetőséget**.
+    - Az adózási kód megadása úgy, hogy 3 értékű **pénzügyi értéket tartalmazzon**. Ilyen módon a pénzügyi **könyvek** modul engedélyezésekor automatikusan létrejön a korrekciós tranzakció.
+    - Az áfacsoport konfigurációjában válassza **ki az ICMS-DIF** áfakódhoz az "Use **tax**" beállítást.

@@ -1,7 +1,7 @@
 ---
 title: LIFO dátum tényleges értékkel és jelöléssel
 description: Az utolsóként be, elsőként ki (DÁTUM LIFO) egy készletmodell, amely a LIFO-elven alapul. A program a készletbe a készlettranzakció dátuma alapján legutoljára bevételezett cikkekből egyenlíti ki a kiadásokat. A LIFO dátum használatával, ha a kiadás előtt nincs bevételezés, a kiadás bármely a kiadás dátuma utáni bevételezés alapján lesz kiegyenlítve. Ha ugyanazzal a dátummal több kiadás van, akkor az az utolsó kiadás, utolsó bevételezés sorrendben egyenlíthető ki.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 02/21/2022
 ms.topic: article
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
@@ -9,15 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 51592
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f6f5f447724ace473bece3007a96c4b56e90a908
-ms.sourcegitcommit: addae271ddfc5a8b0721c23337f69916153db4cd
+ms.openlocfilehash: 8ca344e6ca81814e787046f6ece97625d035346d
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/21/2022
-ms.locfileid: "8330276"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8671450"
 ---
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO dátum tényleges értékkel és jelöléssel
 
@@ -86,7 +86,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 - 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 - 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 - 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 23.67 önköltségi áron (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
-- 7\. Készletzárást hajtanak végre. A LIFO dátum módszer alapján az első pénzügyi kiadást az első napon kezdődő minden egyes dátumon a legutóbb pénzügyileg frissített bevételezésekkel stb. egyenlíti ki a program. Ebben a példában egy kiegyenlítés jön létre 2b és 3b között. A program USD 6.00 korrekciót a 3b értékre, az így kapott végső költséget pedig USD 22.00. Ezenkívül a 6a. tranzakciót az 5b bevételezési tranzakció költségére módosítja a a tranzakció. A rendszer nem egyenlíti ki ezeket a tranzakciókat, mert a bevételezés fizikailag frissítve van, de pénzügyileg nem. Ehelyett a tényleges kiadási USD 6.33 csak az összeg korrekciója lesz feladva, és az így kapott helyesb USD 30.00.
+- 7\. Készletzárást hajtanak végre. A LIFO dátum módszer alapján az első pénzügyi kiadást az első napon kezdődő minden egyes dátumon a legutóbb pénzügyileg frissített bevételezésekkel stb. egyenlíti ki a program. Ebben a példában egy kiegyenlítés jön létre 2b és 3b között. A program USD 6.00 korrekciót a 3b értékre, az így kapott végső költséget pedig USD 22.00. Ezenkívül a 6a. tranzakciót az 5b bevételezési tranzakció költségére módosítja a a tranzakció. A rendszer nem egyenlíti ki ezeket a tranzakciókat, mert a bevételezés fizikailag frissítve van, de pénzügyileg nem. Ehelyett a tényleges kiadási USD 6.33 csak a tényleges kiadási tranzakcióhoz ad fel korrekciót, és az így kapott helyesb USD 30.00.
 
 A következő ábra bemutatja, milyen hatása van a LIFO dátum készletmodellnek, ha a **Tényleges értékkel együtt** beállítás be van kapcsolva.
 
@@ -130,7 +130,7 @@ A következő ábrán ezek a tranzakciók láthatók:
 - 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 - 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 - 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 23.00 önköltségi áron (a pénzügyileg feladott tranzakciók mozgóátlaga)
-- 7\. Készletzárást hajtanak végre. A LIFO dátum módszert használó jelölési elv alapján a megjelölt tranzakciókat egymással szemben egyenlítik ki. Ebben a példában a 3b értékét 1b-el egyenlítik ki, és egy -6,00 USD értékű korrekciót ad fel a 3b részére, hogy az értéket a USD 10.00. Ebben a példában nincs további kiegyenlítés, mivel a lezárás csak a pénzügyileg frissített tranzakciókhoz hoz létre kiegyenlítéseket.
+- 7\. Készletzárást hajtanak végre. A LIFO dátum módszert használó jelölési elv alapján a megjelölt tranzakciókat egymással szemben egyenlítik ki. Ebben a példában a 3b értékét 1b-el egyenlítik ki, és egy -6,00 USD értékű korrekciót ad fel a 3b részére, hogy az értéket USD 10.00. Ebben a példában nincs további kiegyenlítés, mivel a lezárás csak a pénzügyileg frissített tranzakciókhoz hoz létre kiegyenlítéseket.
 
 Az alábbi ábra a dátum LIFO készletmodell hatását mutatja be a bevételek és a bevételek közötti jelölés használata során. 
 

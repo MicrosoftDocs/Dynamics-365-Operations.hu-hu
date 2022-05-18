@@ -1,5 +1,5 @@
 ---
-title: B2B webhelyrendelések gyors helyezése
+title: B2B webhelyrendelések gyors elküldése
 description: Ez a témakör leírja Microsoft Dynamics 365 Commerce azokat a lehetőségeket, amelyek lehetővé teszi a B2B webhely felhasználóinak, hogy gyorsan ömlesztett cikkeket adjanak fel, és újra megismétljék a rendeléseket.
 author: shajain
 ms.date: 02/16/2022
@@ -14,14 +14,14 @@ ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.23
-ms.openlocfilehash: 4909056435425f251efb45f5a4355f103a420ba8
-ms.sourcegitcommit: 4d52c67f52ad0add63cd905df61367b344389069
+ms.openlocfilehash: 8ac4833b2ca05e90b4019ffdfc4b669c542b0cf6
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8312131"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686546"
 ---
-# <a name="place-b2b-website-orders-quickly"></a>B2B webhelyrendelések gyors helyezése
+# <a name="place-b2b-website-orders-quickly"></a>B2B webhelyrendelések gyors elküldése
 
 [!include [banner](../../includes/banner.md)]
 

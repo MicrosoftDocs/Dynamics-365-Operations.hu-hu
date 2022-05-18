@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
 ms.custom: 539093
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: f66c538afc732caf3faed3cfea6c695ff7f16273
-ms.sourcegitcommit: d0e99545d722c924db57ae2bd06f72154a1f1f97
+ms.openlocfilehash: 5913308d4ee9fdcb8cf2b862171078f27f651662
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/08/2022
-ms.locfileid: "8557971"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686017"
 ---
 # <a name="deferral-default-transactions"></a>Halasztás alapértelmezett tranzakciói
 
@@ -105,7 +104,7 @@ A **Tranzakció halasztás lapja** a következő mezőket tartalmazza.
 | Meglévő ütemezés módosítása | <p>Adja meg, hogy a sor egy meglévő halasztás-ütemezés helyesbítése-e:</p><ul><li>**Igen** – az új értékesítési sor egy meglévő halasztás-ütemezés helyesbítése. Ebben az esetben a Halasztás ütemezése a Módosított **ütemezés mezőben választható** ki.</li><li>**Nem** – az új értékesítési sor nem egy meglévő halasztás-ütemezés helyesbítése.</li></ul><p>Ha ez a beállítás **Igen**, a Halasztott **lehetőség** nem érhető el.</p> |
 | Módosított ütemezés | <p>Válassza ki a sor korrigált halasztás-ütemezését. A lapon található összes érték frissül a származási halasztás ütemezésének értékeivel. Ezek az értékek nem szerkeszthetők.</p><p>Ez a mező csak akkor érhető el, ha **a Meglévő ütemezés** beállítása beállítás Igen **.**</p> |
 | Újraszámítás dátuma | <p>Adja meg annak az időszaknak a kezdő dátumát, amelyből újra szeretnészámozni a fennmaradó összeget. Az alapértelmezett dátum a következő fel nem ismert időszak dátuma.</p><p>Ez a mező csak akkor érhető el, ha **a Meglévő ütemezés** beállítása beállítás Igen **.**</p> |
-| Záró dátum | <p>A halasztás típusától függően előfordulhat, hogy a záró dátum nem frissül:</p><ul><li>Halasztásos straight line típusú halasztásoknál adja meg az ütemezés új záró dátumát. Az alapértelmezett érték a halasztás ütemezésének meglévő záró dátuma.</li><li>Halasztáson alapuló esemény esetén adja meg a jóváírási esemény sorának záró dátumát. Ez a dátum üresen is marad.</li></ul><p>Ez a mező csak akkor érhető el, ha **a Meglévő ütemezés** beállítása beállítás Igen **.**</p> |
+| Befejezés dátuma | <p>A halasztás típusától függően előfordulhat, hogy a záró dátum nem frissül:</p><ul><li>Halasztásos straight line típusú halasztásoknál adja meg az ütemezés új záró dátumát. Az alapértelmezett érték a halasztás ütemezésének meglévő záró dátuma.</li><li>Halasztáson alapuló esemény esetén adja meg a jóváírási esemény sorának záró dátumát. Ez a dátum üresen is marad.</li></ul><p>Ez a mező csak akkor érhető el, ha **a Meglévő ütemezés** beállítása beállítás Igen **.**</p> |
 | Számlázási ütemezés száma | <p>A számlázási ütemezés száma.</p><p>Ez a mező csak ismétlődő szerződéses számlázási ütemezések esetében érhető el.</p> |
 | Halasztás-kiigazítás módja | <p>A halasztott helyesbítési mód. Az érték megegyezik az ismétlődő szerződés számlázási ütemezésének **tömeges felmondási** feldolgozási lapján található értékkel.</p><p>Ez a mező csak ismétlődő szerződéses számlázási ütemezések esetében érhető el.</p> |
 | **Számlák - bevétel** | |

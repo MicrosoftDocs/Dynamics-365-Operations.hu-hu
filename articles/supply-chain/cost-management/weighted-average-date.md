@@ -1,7 +1,7 @@
 ---
 title: Dátummal súlyozott átlag a tényleges értékkel és a jelöléssel együtt
 description: A dátum szerinti súlyozott átlag elvű készletmodell a súlyozott átlag elven alapul, amelyben a készletből történő kiadásokat a készletzárási időszak egyes napjain a készletbe bevételezett cikkek átlagos értékével súlyozzák.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 03/04/2022
 ms.topic: article
 ms.search.form: InventJournalLossProfit, InventMarking, InventModelGroup, SalesTable
@@ -9,15 +9,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.custom: 28991
 ms.search.region: Global
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3cf2206863d891eceb9c65ff879da3f9f72032b1
-ms.sourcegitcommit: fcded93fc6c27768a24a3d3dc5cc35e1b4eff22b
+ms.openlocfilehash: 1497cb08f4cc5a455c832b9bf125c309cd90aa3d
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392001"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8672122"
 ---
 # <a name="weighted-average-date-with-include-physical-value-and-marking"></a>Dátummal súlyozott átlag a tényleges értékkel és a jelöléssel együtt
 
@@ -168,7 +168,7 @@ A következő diagram a következő tranzakciókat mutatja be:
 - 4a. Fizikai bevételezés készletre, 1 mennyiséggel, 25,00 USD áron.
 - 5a. Fizikai bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
 - 5b. Pénzügyi bevételezés készletre, 1 mennyiséggel, 30,00 USD áron.
-- 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 21.25 egységenként (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
+- 6a. Fizikai kiadás készletről, 1 mennyiséggel, USD 21.25 egység költségeként (a ténylegesen és pénzügyileg feladott tranzakciók mozgóátlaga).
 
 **3. nap:**
 
@@ -250,7 +250,7 @@ A jelölés egy olyan folyamat, amellyel összekapcsolható egy kiadási tranzak
 
 Tegyük fel például, hogy az ügyfélszolgálati osztály elfogadott egy sürgős megrendelést egy fontos vevőtől. A rendelés sürgős, ezért a vevő kérésének kiszolgálása érdekében többet kell fizetni. Meg kell bizonyosodni arról, hogy ennek a készletcikknek a költsége megjelenik az árrésben vagy az eladott áruk költségében (ELÁBÉ) az adott értékesítési számla esetében.
 
-A beszerzési rendelés feladásakor a készlet bevételezése 120,00 USD értéken történik. Ha a csomagjegyzék vagy a számla feladása előtt meg van jelölve az értékesítési rendelési dokumentum a beszerzési rendelésen, akkor a program elábéként USD 120.00 elábé költséget, nem pedig a cikk aktuális mozgóátlagát. Ha a jelölés az értékesítési rendelés csomagjegyzékének vagy számlájának feladása után történik, az ELÁBÉ feladása a mozgóátlagon áteső önköltségi áron történik.
+A beszerzési rendelés feladásakor a készlet bevételezése 120,00 USD értéken történik. Ha még a csomagjegyzék vagy a számla feladása előtt meg van jelölve az értékesítési rendelési dokumentum a beszerzési rendelésen, akkor a program elábéként USD 120.00 elábé költséget, nem pedig a cikk aktuális mozgóátlagát. Ha a jelölés az értékesítési rendelés csomagjegyzékének vagy számlájának feladása után történik, az ELÁBÉ feladása a mozgóátlagon áteső önköltségi áron történik.
 
 A két tranzakció még a készletzárás végrehajtása előtt is összekapcsolható egymással.
 
@@ -281,7 +281,7 @@ A következő diagram a következő tranzakciókat mutatja be:
 
 **3. nap:**
 
-- 7\. Készletzárást hajtanak végre. A súlyozott átlag módszert használó jelölési elv alapján a megjelölt tranzakciókat egymással szemben egyenlítik ki. Ebben a példában a 3b. tranzakciót a 2b. tranzakcióval szemben egyenlítik ki, és a USD 6.00 korrekcióját a 3b tranzakcióba feladja, hogy az értéket USD 22.00. Ebben a példában nem kerül sor további kiegyenlítésre, mert a lezárás csak a pénzügyileg frissített tranzakciókhoz hoz létre kiegyenlítéseket.
+- 7\. Készletzárást hajtanak végre. A súlyozott átlag módszert használó jelölési elv alapján a megjelölt tranzakciókat egymással szemben egyenlítik ki. Ebben a példában a 3b. tranzakciót a 2b. tranzakcióval szemben egyenlítik ki, és USD 6.00 a 3b tranzakcióba feladnak egy korrekciót, hogy az értéket USD 22.00. Ebben a példában nem kerül sor további kiegyenlítésre, mert a lezárás csak a pénzügyileg frissített tranzakciókhoz hoz létre kiegyenlítéseket.
 
 A következő diagram bemutatja a tranzakciósorozatot, valamint a súlyozott átlagon és jelölésen áteső készletmodell hatását.
 

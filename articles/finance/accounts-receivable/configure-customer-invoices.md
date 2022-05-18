@@ -15,22 +15,22 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 9ffb2c42748678ae265a706a00db327a160cc9f5
-ms.sourcegitcommit: 411874545d7c326fc4aa877948a059371f0ccb3c
+ms.openlocfilehash: 069ada071fe6a7d3e22ad6aa45e3c2f06a9f4b31
+ms.sourcegitcommit: 5a4b8ce4a7ae82c0ef22d2223c11c6b55f048cdd
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/07/2022
-ms.locfileid: "8392911"
+ms.lasthandoff: 05/14/2022
+ms.locfileid: "8756963"
 ---
 # <a name="create-a-customer-invoice"></a>Vevői számla létrehozása
 
 [!include [banner](../includes/banner.md)]
 
-Egy **értékesítési rendeléshez kiállított vevői számla** az értékesítéshez kapcsolódó váltó, amelyet a szervezet egy vevőnek ad. Ezen típusú értékesítési számla kiállítása egy értékesítési rendelés alapján történik, amely tartalmazza a rendeléssorokat és cikkszámokat. A cikkszámok a főkönyvben vannak meghatározva és feladva. Analitikus naplóbejegyzések nem érhetők el értékesítési rendeléshez tartozó vevői számlához. A további információkat lásd: [Értékesítési rendelési számlák létrehozása](tasks/create-sales-order-invoices.md).
+Az **értékesítési rendelés vevői számlája** olyan számla, amely értékesítéshez kapcsolódik, és a szervezet a vevőnek ad át. Ezen típusú értékesítési számla kiállítása egy értékesítési rendelés alapján történik, amely tartalmazza a rendeléssorokat és cikkszámokat. A cikkszámok a főkönyvben vannak meghatározva és feladva. Analitikus naplóbejegyzések nem érhetők el értékesítési rendeléshez tartozó vevői számlához. A további információkat lásd: [Értékesítési rendelési számlák létrehozása](tasks/create-sales-order-invoices.md).
 
-A **szabadszöveges számla** nincs kapcsolatban értékesítési rendeléssel. Olyan rendelési sorokat tartalmaz, amelyek személyesen megadott főkönyvi számlákat, szabadszöveges leírásokat és értékesítési mennyiséget foglalnak magukban. Ezen a számlafajtán nem tud cikkszámot megadni. A megfelelő áfaadatokat kell megadnia. Az értékesítéshez tartozó fő számla fel van tüntetve mindegyik számlasornál, amelyet szét lehet osztani több főkönyvi számla között az **Összegek felosztása** lehetőségre kattintva a **Szabadszöveges számla** lapon. Ezen kívül a vevői egyenleg is feladásra kerül az összegző számlához a szabadszöveges számla esetében használt feladási profilból.
+Szabadszöveges **számla** nem kapcsolódik értékesítési rendeléshez. Olyan rendelési sorokat tartalmaz, amelyek személyesen megadott főkönyvi számlákat, szabadszöveges leírásokat és értékesítési mennyiséget foglalnak magukban. Ezen a számlafajtán nem tud cikkszámot megadni. A megfelelő áfaadatokat kell megadnia. Az értékesítéshez tartozó fő számla fel van tüntetve mindegyik számlasornál, amelyet szét lehet osztani több főkönyvi számla között az **Összegek felosztása** lehetőségre kattintva a **Szabadszöveges számla** lapon. Ezen kívül a vevői egyenleg is feladásra kerül az összegző számlához a szabadszöveges számla esetében használt feladási profilból.
 
-További tudnivalók:
+További tájékoztatás:
 
 [Szabadszöveges számlák létrehozása](../accounts-receivable/create-free-text-invoice-new.md)
 
@@ -41,7 +41,10 @@ További tudnivalók:
 [Ismétlődő szabadszöveges számlák generálása és feladása](tasks/post-recurring-free-text-invoices.md)
 
 
-A **pro forma számla** olyan számla, amely a tényleges számla mennyiségeinek becsléseként készül el a számla feladása előtt. Pro forma számlát értékesítési rendeléshez kiadott vevői és szabadszöveges számlához is ki lehet nyomtatni.
+A **pro forma számla** olyan számla, amely a tényleges számlaösszegek becsléseként készül el a számla feladása előtt. Pro forma számlát értékesítési **rendeléshez** vagy szabadszöveges számlához lehet nyomtatni vevői számlához. 
+
+>[!NOTE]
+> Az értékesítési pro forma számla folyamatának rendszerszéta esetén elárvulhat egy pro forma számla. Az elárvult pro forma számlák törölhetők, **ha manuálisan futtatja a Pro forma számlák törlése ismétlődő** feladatot. Az Értékesítés és **marketing > az Időszakos feladatok > a pro forma számlák manuális törlése > adatok törlése érdekében**.
 
 ## <a name="using-sales-order-customer-invoice-data-entities"></a>Értékesítési rendelés vevői számlaadat-entitások használata
 Az adatentitások segítségével lehet értékesítési rendeléshez kapcsolódó vevői számlával kapcsolatos adatokat importálni és exportálni. Az értékesítési számla fejlécében és az értékesítési számla sorában különböző entitások vannak az adatokra vonatkozóan.
@@ -70,7 +73,7 @@ Az **Összes értékesítési rendelés** listaoldalon tekintheti meg az érték
 ## <a name="post-and-print-individual-customer-invoices-that-are-based-on-packing-slips-and-the-date"></a>Vevői számla feladása és nyomtatása a szállítólevelek és a dátum alapján
 Ezt a műveletet akkor alkalmazza, ha az értékesítési rendeléshez már legalább egy szállítólevél fel van adva. A vevői számla ezeken a szállítóleveleken alapul, és azok mennyiségeit tükrözi. A számla pénzügyi adatai a számla feladásakor megadott információkon alapulnak. 
 
-A csomagjegyzék eddig kiszállított cikksorai alapján lehet vevői számlát készíteni még abban az esetben is, ha egy adott értékesítési rendelés összes cikke még nincs kiszállítva. Akkor lehet például ezt tenni, ha a jogi személy minden hónapban ad ki számlát a vevő számára, amely az adott havi összes szállítást tartalmazza. Mindegyik csomagjegyzék az értékesítési rendelésen található cikkek részleges vagy teljes kiszállítását képviseli. 
+A csomagjegyzék eddig kiszállították cikksorai alapján lehet vevői számlát létrehozni, még akkor is, ha egy adott értékesítési rendelés minden cikkét még nem szállították le. Akkor lehet például ezt tenni, ha a jogi személy minden hónapban ad ki számlát a vevő számára, amely az adott havi összes szállítást tartalmazza. Mindegyik csomagjegyzék az értékesítési rendelésen található cikkek részleges vagy teljes kiszállítását képviseli. 
 
 A számla feladásakor az egyes cikkekhez tartozó **Számlahátralék** értékét frissíti a program a kijelölt csomagjegyzékeken található, kiszállított mennyiségek összesítésével. Ha az értékesítési rendelésen található összes cikknél 0 (nulla) a **Számlahátralék** és a **Fennmaradó szállítása** értéke, az értékesítési rendelés **Számlázott** állapotú lesz. Ha a számlához tartozó **Számlahátralék** mennyisége nem 0 (nulla), akkor az értékesítési rendelés állapota változatlan marad, és további számlákat lehet hozzá rögzíteni. 
 
@@ -83,8 +86,13 @@ Ezt a folyamatot akkor kell használni, amikor egy vagy több értékesítési r
 
 Több számlát is kiválaszthat az **Értékesítési rendelés** listaoldalon, és ezután a **Számlák létrehozása** lehetőséggel konszolidálhatja azokat. A **Számla feladása** lapon módosíthatja a **Rendelés összesítése** beállítást a rendelési szám (ha egy értékesítési rendeléshez több szállítólevél tartozik) vagy a számlaszám (ha egyetlen számlához több értékesítési rendelés tartozik) alapján történő összegzéshez. Használja az **Elrendezés** gombot az értékesítési rendelések összevonásához egyetlen számlába – a **Rendelés összesítése** beállítás alapján.
 
+## <a name="split-sales-order-invoices-by-site-and-delivery-information"></a>Értékesítési rendelési számlák felosztása telephely és szállítási adatok szerint
+Az értékesítési rendelés **vevői** **számlái telephely vagy szállítási cím szerint történő felosztását a Kinnlevőségek paraméterei oldal Összesítő frissítés lapján lehet** beállítani. 
+ - Válassza a **Felosztás a számlahely alapján** lehetőséget, ha a feladáskor telephelyenként egy számlát kell létrehozni. 
+ - Válassza a **Felosztás a számla szállítási adatai** alapján lehetőséget, ha a feladáskor az értékesítési rendelési sorok szállítási címenként egy számlát hoz létre. 
+
 ## <a name="post-to-revenue-account-for-sales-order-lines-that-have-no-price"></a>Feladás a bevételi számlára az olyan értékesítésirendelés-sorokhoz, amelyekhez nem volt ár
-A nem árhoz **kötött** **értékesítésirendelés**-sorok bevételi számláját a főkönyvben frissítheti. Az adatok **beállítását** **·** **vagy megtekintéséhez a Nulla árú értékesítési rendelési számlasorok Feladása számlára paramétert kell beállítania a Kinnlevőségek paraméterei oldal Főkönyv és áfa lapján.** (**Kinnlevőségek > Beállítása > Kinnlevőségek paraméterei)** Válassza az **Igen** lehetőséget, ha frissíteni kell **az** eladási rendelési számlasorok bevételi számláját, ha nincs ár. Bevételi számla definiálása az **Értékesítési** rendelés számladefiníció lapján, **a** Készletfeladás paraméterlapon található. Ha ez a beállítás nincs bejelölve, az árinformációt nem adó sorok nem adnak fel a Bevétel **számlára**.
+A **főkönyvben** **az** ár nem megfelelő értékesítésirendelés-sorokhoz lehetőség van a Bevétel számla frissítésére. Az adatok **beállítását** **·** **vagy megtekintéséhez a Nulla árú értékesítési rendelési számlasorok Feladása számlára paramétert kell beállítania a Kinnlevőségek paraméterei oldal Főkönyv és áfa lapján.** (**Kinnlevőségek > Beállítása > Kinnlevőségek paraméterei)** Válassza az **Igen** lehetőséget, ha frissíteni kell **az** eladási rendelési számlasorok bevételi számláját, ha nincs ár. Bevételi számla definiálása az **Értékesítési** rendelés számladefiníció lapján, **a** Készletfeladás paraméterlapon található. Ha ez a beállítás nincs bejelölve, akkor az árinformációt nem adó sorok nem adnak fel a bevételi **számlára**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>További beállítások a feladás módjának megváltoztatásához
 A következő mezők esetében módosul a viselkedés a feladási folyamat során.
@@ -152,7 +160,7 @@ A következő mezők esetében módosul a viselkedés a feladási folyamat sorá
 <td>Hitelkeret ellenőrzése</td>
 <td>Válassza ki a hitelkeret-ellenőrzés alkalmával ellenőrizendő adatokat.
 <ul>
-<li><strong>Nincs</strong> – Nincs előírva hitelkeret-ellenőrzés.</li>
+<li><strong>Nincs</strong> – nincs elő követelmény a hitelkeret-ellenőrzéshez.</li>
 <li><strong>Egyenleg</strong> – A rendszer összeveti a vevő egyenlegét a hitelkerettel.</li>
 <li><strong>Egyenleg + szállítólevél vagy termékbevételezési bizonylat</strong> – A hitelkeret összevetése a vevői egyenleggel és a szállításokkal.</li>
 <li><strong>Egyenleg + Minden</strong> – A hitelkeret összevetése a vevői egyenleggel, a szállításokkal és a nyitott rendelésekkel.</li>

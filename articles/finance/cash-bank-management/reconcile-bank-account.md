@@ -7,19 +7,19 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: panolte
 ms.search.validFrom:
 - month/year of release that feature was introduced in
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: e06a38a19a16a07d77d0c9aceaa4e3206646dd0561996681b417b785058f3938
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 75e5eb82686a0c124694ad349978f9c32482012b
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6739359"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8727650"
 ---
 # <a name="reconcile-a-bank-account"></a>Bankszámla egyeztetése
 
@@ -35,7 +35,7 @@ Nem lehetséges a banki kivonat és a bankszámla egyeztetése, ha a kivonaton s
 
 3.  A **Tranzakciók** lehetőség kiválasztásával megnyithatja a **Számlaegyeztetés** oldalon.
 
-4.  A banki kivonaton szereplő mindegyik tranzakciónál jelölje be a **Törölve** jelölőnégyzetet, ha a Dynamics 365 Finance szolgáltatásban szereplő összeg megfelel a bank kivonaton szereplő összegnek. Ezenkívül a **Banki tranzakció típusa** mező értékét is megadhatja vagy módosíthatja. Ez a mezőérték a banki tranzakciók statisztikája és egyes jelentések szempontjából fontos.
+4.  A banki kivonaton szereplő minden tranzakciónál jelölje be a Törölve jelölőnégyzetet, **ha** a Dynamics 365 Pénzügyben szereplő összeg megfelel a banki kivonaton szereplő összegnek. Ezenkívül a **Banki tranzakció típusa** mező értékét is megadhatja vagy módosíthatja. Ez a mezőérték a banki tranzakciók statisztikája és egyes jelentések szempontjából fontos.
     
 
     > [!NOTE]

@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: HcmJob, HcmJobFunction, HcmJobTask, HcmTitle, HcmPersonnelManagementWorkspace, HCMJobFamily
 audience: Application User
 ms.author: twheeloc
-ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7e2c9421646dacc5523f40b28b550881dc4b25dd
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: de828bc1ab764a8a1bd084a508f38ff19a3947d5
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068159"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693584"
 ---
 # <a name="set-up-the-components-of-a-job"></a>Feladat összetevőinek beállítása
 
@@ -63,7 +62,7 @@ A beosztási funkciók magas szintű funkcionális kategóriákat írnak le maga
 A beosztási funkciók karbantartásához használja a **Beosztási funkciók** oldalt. A **Beosztási funkciók** oldalon adja meg a beosztási funkció azonosító kódját és rövid leírását.
 
 ## <a name="compensation"></a>Kompenzáció
-Ha fix kompenzációs konstrukciót szeretne hozzárendelni egy olyan alkalmazotthoz, aki egy adott beosztásban van egy adott feladaton belül, kompenzációs szinteket kell beállítania a feladathoz. A **Kompenzációs szint** akkor használatos, ha a minimális, középponti és maximális összegeket egy kompenzációs struktúrában (kompenzációs rács) állítják be. Fix kompenzációs konstrukció létrehozása esetén a kompenzációs szerkezetet kell kiválasztani. A kompenzációs struktúra tartalmazza a kompenzációs szintet is. Amikor egy alkalmazotthoz fix kompenzációs konstrukciót választ, a kiválasztható kompenzációs szintek az alkalmazott beosztásához hozzárendelt feladattól függenek. A kompenzáció beállításával kapcsolatos további információkért lásd: [Kompenzációs konstrukciók](hr-compensation-overview.md).
+Ha fix kompenzációs konstrukciót szeretne hozzárendelni egy olyan alkalmazotthoz, aki egy adott beosztásban van egy adott feladaton belül, kompenzációs szinteket kell beállítania a feladathoz. A **kompenzációs** szint akkor használatos, amikor a minimális, a középső és a maximális összeg be van állítva egy kompenzációs struktúrában (kompenzációs rács). Fix kompenzációs konstrukció létrehozása esetén a kompenzációs szerkezetet kell kiválasztani. A kompenzációs struktúra tartalmazza a kompenzációs szintet is. Amikor egy alkalmazotthoz fix kompenzációs konstrukciót választ, a kiválasztható kompenzációs szintek az alkalmazott beosztásához hozzárendelt feladattól függenek. A kompenzáció beállításával kapcsolatos további információkért lásd: [Kompenzációs konstrukciók](hr-compensation-overview.md).
 
 ## <a name="job-skills"></a>Feladat – szakértelem
 A feladathoz tartozó szakértelem írja le a feladat végrehajtásához szükséges készségeket. A feladat minden szakértelmi eleméhez társítani kell a szakértelem szintjét. A szakértelem szintjeit a felhasználó határozza meg. Jelzik, hogy milyen szintű tudás vagy jártasság szükséges az szakterületen. A vállalatok beállíthatnak például numerikus, 1-től 5-ig terjedő szintrendszert, amelyben az **1** a kezdő, az **5** pedig a szakértő szintet jelzi. Másik lehetőségként a vállalatok beállíthatnak **Kezdő**, **Haladó** és **Szakértő** jelölésű szinteket is. A szakértelem szintjének beállítása után a szakértelem fontossága is beállítható. Ha például egy könyvelőnek alapos Microsoft Excel-ismeretekkel kell rendelkezni, létrehozható egy **Excel-ismeretek** szakértelem. A szakértelemszinthez ezután beállítható a **Haladó** érték, míg a fontossághoz a **Legfontosabb** szint.

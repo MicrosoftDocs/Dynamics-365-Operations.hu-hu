@@ -1,28 +1,28 @@
 ---
 title: Főkönyv és a pénzügyi kimutatási áttekintése
 description: A Főkönyv segítségével meghatározhatja és kezelheti a jogi személy pénzügyi nyilvántartásait.
-author: ShylaThompson
+author: kfend
 ms.date: 08/14/2020
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
 ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "65431"
 - intro-internal
 ms.assetid: d2c604df-daae-42cd-82d9-c80e3dee4a60
 ms.search.region: Global
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 639d77e43fc9a55e43ebb030f8fc292ce8fb7fce
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: bd832c32655aa52fec16852ec5550a34d06f00f4
+ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7985237"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8719916"
 ---
 # <a name="general-ledger-home-page"></a>A Főkönyv kezdőlapja
 
@@ -61,7 +61,7 @@ A pénzügyi jelentésekről a [Financial reporting – áttekintés](../../fin-
 
 #### <a name="blogs"></a>Blogok
 
-A 365-ös rendszer és a Microsoft és műveletek – Pénzügy kimutatásban található vélemény, hírek és [Microsoft Dynamics](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) egyéb [Dynamics 365 Finance információk](https://community.dynamics.com/365/financeandoperations/b/financials).
+A [Microsoft Dynamics 365 blogon](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) és a [Microsoft Dynamics 365 Finance and Operations – Pénzügyek blogon](https://community.dynamics.com/365/financeandoperations/b/financials) véleményeket, híreket és egyéb információkat talál.
 
 A [Microsoft Dynamics Operations Partner közösségi blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) egyetlen erőforrás segítségével tájékoztatja a Microsoft Dynamics-partnereket a Dynamics 365 új és népszerű fejlesztéseiről.
 

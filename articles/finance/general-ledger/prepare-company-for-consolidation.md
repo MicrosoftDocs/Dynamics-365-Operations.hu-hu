@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.0.1
-ms.openlocfilehash: a1ffbf79cdccab457b1aee1bc0f1d963bca49b3e390187c6be5da475f278a3d8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0ef6736046748b92357c41d27eeedfc88c610d33
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720502"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722038"
 ---
 # <a name="prepare-a-legal-entity-for-the-consolidation-process"></a>Jogi személy előkészítése a konszolidációs folyamathoz
 
@@ -27,7 +27,7 @@ ms.locfileid: "6720502"
 A konszolidációb során több jogi személy számláinak tranzakcióit foglalhatja össze egyetlen jogi személyhez tartozó számlakészletbe. Ez a témakör bemutatja a jogi személyek konszolidációra való előkészítését.
 
 > [!NOTE]
-> Javasoljuk, hogy a Management Reporter for Microsoft Dynamics 365 Finance szoftverrel egyesítse több jogi személy pénzügyi eredményeit konszolidált formátumban. A Management Reporter segítségével konszolidált pénzügyi jelentéseket készíthet több jogi személyre vonatkozóan, az Excel segítségével importálhatja a konszolidációs adatokat más forrásokból, és összegeket fordíthat le bármely jelentési pénznemre anélkül, hogy a konszolidációs folyamatot kellene futtatnia a Dynamics 365 Finance rendszerben.
+> Javasoljuk, hogy a Management Reporter for Microsoft Dynamics 365 Finance segítségével konszolidált formában egyesítse több jogi személy pénzügyi eredményeit. A Felügyeleti jelentéskészítő segítségével konszolidált pénzügyi jelentéseket készíthet több jogi személy között, az Excel segítségével importálhatja a konszolidációs adatokat más forrásokból, és összegeket fordíthat le bármely jelentési pénznemre anélkül, hogy futtatnia kell a Dynamics 365 Pénzügy konszolidációs folyamatát.
 
 Ezután lehetősége van a konszolidált jogi személyből jelentéseket, például pénzügyi kimutatásokat kinyomtatni. A konszolidált jogi személy azonban nem használható napi tranzakciókhoz.
 

@@ -2,19 +2,19 @@
 title: Fél és globális címjegyzék
 description: Ez a témakör a kettős írás Fél és globális címjegyzék-funkcióit ismerteti.
 author: RamaKrishnamoorthy
-ms.date: 03/10/2022
+ms.date: 04/25/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: josaw
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-02-22
-ms.openlocfilehash: 2e0d16b29a71da23acc925c09c87f0bb4776759c
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 1e2dcfa69308f6691e787a1ff1893f9080dcaef1
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407765"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8717446"
 ---
 # <a name="party-and-global-address-book"></a>Fél és globális címjegyzék
 
@@ -139,7 +139,7 @@ A rács a következő oszlopokat tartalmazza:
 
 A rács fölötti **Új elektronikus cím** gombbal annyi címet hozhat létre, amennyit csak szeretne.
 
-Az elektronikus címek csak ebben a rácsban érhetők el. A jövőbeni kiadásokban a postai cím és az elektronikus cím mezőit eltávolítjuk más lapokról, például az **Összefoglaló** és a **Részletek** lapokról. A **Részletek** lapon megjelenő elérhetőségi adatok az elsődleges elektronikus cím csak olvasható másolatai, mint például az elsődleges telefon, az elsődleges e-mail, az elsődleges telefon, az elsődleges fax és az elsődleges Twitter azonosító. A leadminősítési folyamat során megadhat egy üzleti telefonszámot és egy mobiltelefonszámot is. Az üzleti telefonszámot tekintjük elsődleges telefonszámnak, ha **IsMobile=No**, és a mobiltelefonszámot tekintjük másodlagos telefonszámnak, ha **IsMobile=Yes**.
+Az érdeklődő képesítési folyamata során meg lehet adni egy üzleti telefonszám és egy mobiltelefonszám is. Az üzleti telefonszám az **elsődleges telefonszám (ha Is Yes**=Nem). **A mobiltelefonszám a másodlagos telefonszámnak számít, ha Igen**.
 
 > [!TIP]
 > A postai és elektronikus címek kezeléséhez használja a **Címek** és az **Elektronikus címek** lapokat a **Fiók** és a **Kapcsolat** űrlapokon. Így garantálható, hogy a címadatok szinkronizálva lesznek a pénzügyekkel és a műveletekkel kapcsolatos alkalmazásokkal.
@@ -148,7 +148,7 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A jövőbeni kiadáso
 
 1. Nyissa meg az ügyfélkapcsolati alkalmazáskörnyezetét.
 
-2. Telepítse a [Kettős írású alkalmazás vezérlési megoldásának](https://aka.ms/dual-write-app) (2.2.2.60 vagy újabb) legújabb verzióját.
+2. Telepítse az összes előfeltétel-megoldást a [Részletes kétírásos alkalmazáscsomagban leírtak szerint](separated-solutions.md).
 
 3. [Kettős írású fél és globális címjegyzék megoldások](https://aka.ms/dual-write-gab) telepítése.
 
@@ -165,8 +165,8 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A jövőbeni kiadáso
 
     Megfeleltetés | Frissítés erre a verzióra | Változások
     ---|---|---
-    `CDS Parties (msdyn_parties)`| 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
-    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.5 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
+    `CDS Parties (msdyn_parties)`| 1.0.0.2 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
+    `Contacts V2 (msdyn_contactforparties)`| 1.0.0.6 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
     `Customers V3 (accounts)` | 1.0.0.5 |Eltávolítottuk a `PartyNumber` és más, félhez kapcsolódó mezőket, például a nevet, a személyes adatokat, a postai címmezőket, és az elektronikus kapcsolattartó címét.
     `Customer V3 (contacts)` | 1.0.0.5 | Eltávolítottuk a `PartyNumber` és más, félhez kapcsolódó mezőket, például a nevet, a személyes adatokat, a postai címmezőket, és az elektronikus kapcsolattartó címét.
     `Vendors V2 (msdyn_vendors)` | 1.0.0.6 | Eltávolítottuk a `PartyNumber` és más, félhez kapcsolódó mezőket, például a nevet, a személyes adatokat, a postai címmezőket, és az elektronikus kapcsolattartó címét.
@@ -174,16 +174,17 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A jövőbeni kiadáso
     `Sales invoice headers V2 (invoices)` | 1.0.0.4 | Kicseréltük a kapcsolattartót a `ContactforParty` hivatkozásra.
     `CDS Sales order headers (salesorders)` | 1.0.0.5 | Kicseréltük a kapcsolattartót a `ContactforParty` hivatkozásra.
     `CDS Party postal address locations (msdyn_partypostaladdresses)` | 1.0.0.1  | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
-    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.1 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
+    `CDS postal address history V2 (msdyn_postaladdresses)` | 1.0.0.2 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
     `CDS postal address locations (msdyn_postaladdresscollections)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
     `Party Contacts V3 (msdyn_partyelectronicaddresses)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
-    `Complimentary Closings ( msdyn_compliemntaryclosings)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
+    `Complimentary Closings (msdyn_compliemntaryclosings)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
     `Decision making roles (msdyn_decisionmakingroles)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
     `Loyalty levels (msdyn_loyaltylevels)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
     `Contact person titles (msdyn_salescontactpersontitles)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
     `Personal character types (msdyn_personalcharactertypes)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
     `Salutations (msdyn_salutations)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
     `Employment job functions (msdyn_employmentjobfunctions)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
+    `CDS Address roles (msdyn_addressroles)` | 1.0.0.0 | Ez egy új leképezés, amely ezen kiadás részeként lett hozzáadva.
 
 8. A fenti leképezések futtatása előtt manuálisan kell frissítenie az integrációs kulcsokat a következő lépéseknek megfelelően. Majd válassza a **Mentés** lehetőséget.
 
@@ -251,14 +252,15 @@ Az elektronikus címek csak ebben a rácsban érhetők el. A jövőbeni kiadáso
     [CDS értékesítésiajánlat-fejléc](mapping-reference.md#215) | ajánlatok
     [CDS értékesítésirendelés-fejlécek](mapping-reference.md#217) | salesorders
     [Értékesítésiszámla-fejlécek V2](mapping-reference.md#118) | számlák
+    [CDS-címszerepkre](mapping-reference.md#301) | msdyn_addressroles
 
 > [!NOTE]
-> A `CDS Contacts V2 (contacts)` leképezés az 1. lépésben leállított leképezés. Amikor más leképezéseket próbál futtatni, előfordulhat, hogy ez a 2 leképezés a függők listájában fog megjelenni. Ne futtassa ezeket a leképezéseket.
+> A `CDS Contacts V2 (contacts)` leképezés az 1. lépésben leállított térkép. Amikor más leképezéseket próbál futtatni, előfordulhat, hogy ez a 2 leképezés a függők listájában fog megjelenni. Ne futtassa ezeket a leképezéseket.
 >
-> Ha telepítve van a fél és globális címjegyzék megoldás, akkor le kell tiltani a `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead` nevű beépülő modult. Ha törli a fél és globális címjegyzék megoldást, akkor újra engedélyeznie kell a beépülő modult.
+> Ha telepítve van a fél és a globális címjegyzék megoldás, le kell tiltani a következő nevűt `Microsoft.Dynamics.SCMExtended.Plugins.Plugins.LeadPrimaryContactPostCreate: QualifyLead of lead`: . Ha törli a fél és globális címjegyzék megoldást, akkor újra engedélyeznie kell a beépülő modult.
 >
 > A `msdyn_*partynumber` mezőt (egyetlen sor szövegmezője) nem szabad előre használni a **Partner**, **Kapcsolattartó** és **Szállító** táblában. A címkenév az egyértelműség kedvéért az **(Elavult)** előtagot fogja viselni. Ehelyett használja az **msdyn_partyid** mezőt. A mező a **msdyn_party** tábla keresője.
-
+>
 > Tábla neve | Régi mező | Új mező
 > --------|-------|--------
 > Könyvelési számla | `msdyn_partynumber` | `msdyn_partyid`
@@ -290,21 +292,22 @@ Ahogy az alábbi táblázatban látható, az táblaleképezések gyűjteménye e
 | [Értékesítésiszámla-fejlécek V2](mapping-reference.md#118) | számlák |
 | [Üdvözlések](mapping-reference.md#228) | msdyn\_salutations |
 | [Szállítók V2](mapping-reference.md#202) | msdyn\_vendors |
+| [CDS-címszerepkre](mapping-reference.md#301) |msdynaddressroles\_|
 
 További tájékoztatás: [Kettős írású leképezési hivatkozás](mapping-reference.md).
+
+## <a name="address-roles-as-a-multi-select-drop-down-list"></a>Címszerepek több kijelölésű legördülő listaként
+Egy postai cím vagy e-mail cím több célra is használható. Például a postai cím számlázási címként és szállítási címként is szolgál. Ilyen esetben a felhasználók **a** **legördülő** listában a Számlázás és a Szállítás listában is választhatnak, amint azt az alábbi ábra mutatja. 
+
+![Cél/szerepkör legördülő lista](media/purpose.png)
 
 ## <a name="known-issues-and-limitations"></a>Ismert problémák és korlátozások
 
 + A pénzügyi és műveleti alkalmazásokban előfordulhat, hogy a címvel együtt vevőt hoz létre és ment, előfordulhat, hogy a cím nem szinkronizálható a Cím **táblával**. Ez a kettős írású platform sorrendbe állítási hibája miatt van. Ez a megoldás megoldás: először hozza létre a vevőt, és mentse el. Ezután adja meg a címet.
 + A pénzügyi és műveleti alkalmazásokban, amikor egy vevőrekordhoz elsődleges cím tartozik, és az adott vevőhöz új kapcsolattartót hoz létre, akkor a kapcsolattartó-rekord a társított vevőrekordból örökli az elsődleges címet. Ez a szállító kapcsolattartója esetén is megtörténik. Dataverse jelenleg nem támogatja ezt a viselkedést. Ha engedélyezve van a kettős írás, a rendszer a címével szinkronizálja a Dataverse pénzügyek és műveletek alkalmazásában elsődleges címmel örökölt vevői kapcsolattartókat.
-+ A `msdyn_partyelectronicaddress` táblából származnak a **Partner**, **Kapcsolattartó** és **Szállító** űrlapok elektronikus cím fülében beállított elektronikus címek. Ezek az információk nem jutnak el a társított tranzakciókhoz, mint például az értékesítési rendeléshez, árajánlathoz vagy beszerzési rendeléshez. A probléma javítását a növekményes kiadásban tervezzük eszközölni. A számla és a kapcsolattartó rekord e-mail-cím mezőiben lévő adatok továbbra is működni fognak az olyan tranzakciókon, mint az értékesítési rendelés, az árajánlat és a beszerzési rendelés.
 + A Pénzügy és műveletek alkalmazásokban kapcsolattartó-rekordot hozhat létre a **Kapcsolattartó hozzáadása képernyőn**. Amikor a **Kapcsolattartó megtekintése** képernyőről megpróbál új kapcsolattartót létrehozni, a művelet sikertelen lesz. Ez egy ismert probléma.
 
     ![Ismert probléma a Kapcsolattartó hozzáadásával kapcsolatban.](media/party-gab-contact-issue.png)
 
-+ A **Kezdeti szinkronizálás** nem támogatja az **Elérhető űrlap** és **Elérhető** lehetőségeket a **ContactForParty** időmezőkön, mivel a DIXF egész szám helyett karakterlánccá alakítja az értéket. Az átalakítás a `Cannot convert the literal '<say 08:00:00>’ to the expected type edm.int32` hibát váltja ki.
-+ Ha egy postai címet több célból használnak, például üzleti kommunikációs címként vagy számlázási címként, akkor a címnek a képen láthatóan, `Business;Invoice` kell megjelennie. Ha helyet ad az értékek közé, hibaüzenet jelenik meg.
-
-    ![Ismert probléma a Címmel kapcsolatban.](media/party-gab-address-issue.png)
-
++ A **Kezdeti szinkronizálás** nem támogatja az **Elérhető űrlap** és **Elérhető** lehetőségeket a **ContactForParty** időmezőkön, mivel a DIXF egész szám helyett karakterlánccá alakítja az értéket. Az átalakítás a `Cannot convert the literal '<say 08:00:00>' to the expected type edm.int32` hibát váltja ki.
 + Előredátumozott postai címet nem lehet kettős írású pénzügyi és műveleti alkalmazással megadni, mert Dataverse ez nem támogatja a dátumhatályt. Ha egy pénzügyi és műveleti alkalmazás segítségével ad meg egy jövőbeli postai címet, Dataverse akkor az teljesen szinkronizál, és a cím azonnal látható a felhasználói felületen. A rekord minden frissítése hibát eredményez, mivel az jövőbeli dátumú, nem pedig aktuális a pénzügy és a műveletek alkalmazásban.

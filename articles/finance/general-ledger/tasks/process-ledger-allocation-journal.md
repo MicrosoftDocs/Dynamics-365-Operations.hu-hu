@@ -1,6 +1,6 @@
 ---
 title: Főkönyvi felosztási napló feldolgozása
-description: Ez a cikk azt mutatja be, hogyan dolgozhatók fel a felosztási kérelmek a Dynamics 365 Finance rendszerben.
+description: Ez a témakör bemutatja a felosztási kérések feldolgozását a Dynamics 365 Pénzügyben.
 author: aprilolson
 ms.date: 07/26/2019
 ms.topic: business-process
@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerAllocationRequest, LedgerJournalTable, LedgerJournalTransAllocation
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 7d37b1a9869cc130786d0e8fde68184e04c881bad1f64c86943174213025db82
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 1ec3653085aed278eb5d13d47f345c713cd39f1f
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6765668"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722152"
 ---
 # <a name="process-ledger-allocation-journal"></a>Főkönyvi felosztási napló feldolgozása
 
@@ -26,7 +26,7 @@ ms.locfileid: "6765668"
 
 Ez a cikk azt mutatja be, hogyan dolgozhatók fel a felosztási kérelmek. A Felosztási kérés feldolgozása lapon létrehozhat egy felosztási naplót, amelyet a főkönyvbe történő feladás előtt átnézhet és jóváhagyhat. Ha erre nincs szükség, a tranzakciókat közvetlenül is feladhatja a főkönyvbe. Felosztási napló létrehozásához előtt legalább egy aktív Főkönyvi felosztási szabályt be kell állítani. Ez a feladat az USMF bemutatócéget használja.
 
-1. A navigációs ablakban lépjen a **Modulok > Főkönyv > Felosztások > Felosztási kérés feldolgozása** részre.
+1. A navigációs ablakban kattintson **a Főkönyv modul felosztási > és > a Felosztási kérés feldolgozása elemre**.
 2. A **Szabály** mező legördülő mezőjében válassza ki a kívánt rekordot.
 3. A **Dátum szerint** mezőbe írjon be egy dátumot.
 

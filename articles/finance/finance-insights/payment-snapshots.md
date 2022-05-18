@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "14151"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-19
 ms.dyn365.ops.version: AX 10.0.12
-ms.openlocfilehash: f9b6d44b7381817a40b86c17ee4eaf3dbfc46b67
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: f84afddb26136797a7d35faf52325702b8e41a45
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7983517"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725345"
 ---
 # <a name="snapshots-overview"></a>Pillanatképek áttekintése
 
@@ -40,6 +40,6 @@ A pillanatképek létrehozásához válassza a **Pénzforgalmi előrejelzés** m
 
 A pillanatképek pénzbe- és kiáramlásai bármikor szerkeszthetők. Ha egy beáramló összeg vagy egy kiáramló összeg szerkesztve van, akkor a frissített összeg az eredeti egyenleget elkészítő likviditási számlákkal arányos. Amikor befejezte a pillanatképek módosítását, válassza a **Mentés** elemet a módosítások mentéséhez.
 
-Ha egy olyan előrejelzéssel szeretné összehasonlítani a tényleges pénzügyi eredményt, amelyet pillanatfelvételként mentettek, válassza az **Összehasonlítás a tényleges adatokkal** elemet. A Tényleges adatok összehasonlítása lapon a tényleges összegek és az előrejelzés **összehasonlítása** látható. A lap felső részén található diagram bemutatja a pénzbeáramlások, a pénzkiáramlások és a banki egyenlegek összehasonlítását a két pillanatfelvétel közötti átfedésben lévő időszakok között. Az alsó részen látható rács a likviditási összegekhez tartozó időszakonkénti tényleges egyenlegek és az előrejelzett egyenleg. Az **Eltérés** oszlopa egy adott időszak tényleges egyenleg és az előrejelzett egyenleg különbségét mutatja.
+Ha egy olyan előrejelzéssel szeretné összehasonlítani a tényleges pénzügyi eredményt, amelyet pillanatfelvételként mentettek, válassza az **Összehasonlítás a tényleges adatokkal** elemet. A **Tényleges adatok összehasonlítása** lapon a tényleges összegek és az előrejelzés összehasonlítása látható. A lap felső részén található diagram bemutatja a pénzbeáramlások, a pénzkiáramlások és a banki egyenlegek összehasonlítását a két pillanatfelvétel közötti átfedésben lévő időszakok között. Az alsó részen látható rács a likviditási összegekhez tartozó időszakonkénti tényleges egyenlegek és az előrejelzett egyenleg. Az **Eltérés** oszlopa egy adott időszak tényleges egyenleg és az előrejelzett egyenleg különbségét mutatja.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

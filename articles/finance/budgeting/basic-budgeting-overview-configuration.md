@@ -1,6 +1,6 @@
 ---
 title: Költségvetés áttekintése
-description: Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 Finance rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations rendszerben.
+description: Szinte minden vállalatnak, amely a Microsoft Dynamics 365 Pénzügy pénzügyei funkciót használja, létre kell hoznia a költségvetés és a tényleges jelentéseket. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations rendszerben.
 author: panolte
 ms.date: 04/29/2021
 ms.topic: overview
@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetParameters
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "60113"
 - intro-internal
@@ -17,18 +17,18 @@ ms.search.region: global
 ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 8e881a878265062dc5ce8cec68a45237711f385d
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 48fcfec7126b4835b7d05e431bbc6ad7b9176bbe
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7986510"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710413"
 ---
 # <a name="budgeting-overview"></a>Költségvetés-készítés áttekintése 
 
 [!include [banner](../includes/banner.md)]
 
-Majdnem minden vállalatnak, amely használja a Pénzügy funkciót a Microsoft Dynamics 365 Finance rendszerben, képesnek kell lennie előirányzatot és tényleges adatokat összehasonlító jelentések készítésére. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations rendszerben.
+Szinte minden vállalatnak, amely a Microsoft Dynamics 365 Pénzügy pénzügyei funkciót használja, létre kell hoznia a költségvetés és a tényleges jelentéseket. Ez a cikk ismerteti a minimális konfigurációt, amely költségvetések létrehozásához vagy külső programból történő betöltéséhez szükséges a Finance and Operations rendszerben.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -68,7 +68,7 @@ A költségvetési kódok lehetővé teszik a jóváhagyott költségvetés kön
 
 Továbbá tetszés szerint megadhat *költségvetés-átviteli szabályokat*. Költségvetés-átviteli szabályok használatához jelölje be a **Költségvetés-átvitelekre vonatkozó szabályok használata** elemet a **Költségvetési paraméterek** oldalon. Költségvetés-átviteli szabályok használatának idejét, ha egy felhasználó a dokumentum létrehozása a költségvetési kódot, amely segítségével a **Átvitel** írja be a költségvetési egyenlegek nem frissíthető, ha a költségvetés-átviteli szabályokat nem sikeres. Ha például meg lehetővé teheti a költségvetés-átvitel dokumentumok ahol a kiadási költségvetés át, a fő számlát, amelyre az értékesítés és Marketing részleg között, de megtilthatják, hogy a költségvetési átvitel alatt a szervezeti egységhez, vagy csak az adott típusú költségvetési számlabejegyzés adott munkafolyamat-jóváhagyás.
 
-A Microsoft Dynamics 365 Finance 10.0.7 verzióban (2020 január) bevezetett funkció a költségvetési tételjegyzék-bejegyzések számára hozzáadott képességgel és rugalmassággal bővült. Ha engedélyezni kívánja ezeket a fejlesztéseket , nyissa meg a **Funkció-kezelési** munkaterületet, és válassza ki a **Költségvetési tételjegyzék-bejegyzések csak mennyiséghez** és/vagy **Költségvetési tételjegyzék-bejegyzések az összegtípus alapján**.
+Microsoft Dynamics A 365 Pénzügy 10.0.7 verziójában (2020. január) bevezetett funkciók hozzáadják a költségvetési tételjegyzék-bejegyzések rugalmasságát és képességét. Ha engedélyezni kívánja ezeket a fejlesztéseket , nyissa meg a **Funkció-kezelési** munkaterületet, és válassza ki a **Költségvetési tételjegyzék-bejegyzések csak mennyiséghez** és/vagy **Költségvetési tételjegyzék-bejegyzések az összegtípus alapján**.
 
 A **Költségvetési tételjegyzék-bejegyzések csak mennyiséghez** esetén csak mennyiségi értékkel adhatók fel olyan költségvetési tételjegyzék-bejegyzések. Például feladhat egy 32 és egy nulla árat tartalmazó költségvetési bejegyzést, ami nulla összeggel jár. Ezt a mennyiséget egy pénzügyi jelentés keretein belül használhatja, hogy meghatározza a mennyiségre jutó árat. Ne feledje, hogy a funkció részeként nem lettek frissítve a lekérdezések és a jelentések. Ez a funkció csak nulla összeg feladását teszi lehetővé.
 

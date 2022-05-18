@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: marcelbf
 ms.search.validFrom: 2021-09-20
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 3f4fc4768f8c96678b216709f78af6d3ddfd4132
-ms.sourcegitcommit: ba8ca42e43e1a5251cbbd6ddb292566164d735dd
+ms.openlocfilehash: a3fd8705c7735cb3c0945f71651fafa767a7addf
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/25/2021
-ms.locfileid: "7556933"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691582"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-september-20-2021"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2021. szeptember 20.)
 
@@ -84,7 +83,7 @@ A tervbe vett funkciók és azok tervezett kiadásainak teljes listáját lásd:
 
 | Funkció | Részletek |
 |---|---|
-| Platform frissítése erre: 10.0.21 (45) | A 10.0.21-es platformfrissítés bevezetése a tervek szerint a 2021. október 4-i szolgáltatási kiadással kezdődik. További információért lásd: [Platformfrissítések a Finance and Operations alkalmazások 10.0.21-es verziójához (2021. október](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21)). |
+| Platform frissítése erre: 10.0.21 (45) | A 10.0.21-es platformfrissítés bevezetése a tervek szerint a 2021. október 4-i szolgáltatási kiadással kezdődik. A további tudnivalókat [lásd a Pénzügy és műveletek alkalmazások 10.0.21-es verziójának Platformfrissítései (2021. október)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
 |Teljesítménynaplók bővített jelentésnézete | Ez a funkció alapértelmezés szerint a következő bevezetés során válik elérhetővé. |
 
 

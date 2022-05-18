@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LeaveAbsenceWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-05-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: d004e33d01dbd171626d7e23f93df081bc0210a9
-ms.sourcegitcommit: 70ac76be31bab7ed5e93f92f4683e65031fbdf85
+ms.openlocfilehash: 3ba1ecc97183c147b46ea2396df78fcdce07c27e
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/16/2021
-ms.locfileid: "7924747"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687980"
 ---
 # <a name="manage-leave-requests-in-teams"></a>Szabadságkérelmek kezelése a Teamsben
 
@@ -170,7 +169,7 @@ Ha nem sikerül bejelentkeznie a Dynamics 365 Human Resources Teams alkalmazásb
 
 Ha nem tud bejelentkezni az alkalmazásba, akkor előfordulhat, hogy a Microsoft Teamsbe való bejelentkezéshez használt fiók nincs alkalmazotti rekordhoz társítva a Dynamics 365 Human Resources alkalmazásban. Forduljon a rendszergazdához, és ellenőrizze, hogy az alkalmazotti rekord helyesen van-e társítva.
 
-### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>A környezet nem található Dynamics 365 Human Resources a beállítások között.
+### <a name="cant-find-the-dynamics-365-human-resources-environment-in-settings"></a>A környezet nem található a Dynamics 365 Human Resources beállítások között.
 
 Ha nem tudja kiválasztani a megfelelő Dynamics 365-környezetet, lehet, hogy a felhasználói rekord szinkronizálása nem megfelelő. Forduljon a rendszergazdához, és hozza létre újra a felhasználói rekordot, és társítsa azt a felhasználói hitelesítő adatokkal. Ezután próbáljon meg néhány perc múlva bejelentkezni a Human Resources alkalmazásba a Microsoft Teamsben.
 
@@ -186,7 +185,7 @@ A Humar Resources alkalmazásban válassza a **Beállítások** lehetőséget, m
 
 ![Human Resources Felhasználói beállítások.](./media/hr-teams-leave-app-user-options.png)
 
-Ha továbbra is fordítási problémákat tapasztal, tudassa velünk. További információért tekintse át a [Támogatás igénylése a Finance and Operations alkalmazásokhoz vagy a Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json) szolgáltatáshoz.
+Ha továbbra is fordítási problémákat tapasztal, tudassa velünk. A további tudnivalókat [lásd a Pénzügyi és műveleti alkalmazások, illetve a Lifecycle Services (LCS) támogatásában](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ### <a name="error-when-approving-leave-requests-in-the-human-resources-app-in-teams"></a>Hiba történt a Teamsen belüli Human Resource alkalmazásban a szabadságkérelmek jóváhagyásakor.
 
@@ -202,7 +201,7 @@ Ha hibaüzenetet kap, amikor megpróbálja jóváhagyni a szabadságkérelmeket 
 
 2. Győződjön meg róla, hogy a felhasználók ugyanolyan hitelesítő adatokkal vannak bejelentkezve a **Csevegések** fülön, mint a szabadságkérések jóváhagyásához. A „kijelentkezés” és a „bejelentkezés” üzenetekkel jelentkezzen be a megfelelő hitelesítő adatokkal.
 
-3. Ha a probléma továbbra is fennáll, ellenőrizze az Üzleti események rendszer kötegelt feladatának **állapotát** rendszergazdaként. Ha Várakozás vagy Végrehajtás **szakaszban** **van**, ellenőrizze újra pár perc múlva. Ha az állapot változatlan marad, akkor jelentkezzen be egy támogatási jegyre, hogy a mi csapatunk segíthet kijavítani a problémát.
+3. Ha a probléma továbbra is fennáll, ellenőrizze az **Üzleti** események rendszer kötegelt feladatának állapotát rendszergazdaként. Ha Várakozás **vagy** **Végrehajtás** szakaszban van, ellenőrizze újra pár perc múlva. Ha az állapot változatlan marad, akkor jelentkezzen be egy támogatási jegyre, hogy a mi csapatunk segíthet kijavítani a problémát.
 
 ## <a name="known-accessibility-issues"></a>Ismert kisegítő lehetőségekkel kapcsolatos problémák
 
@@ -211,7 +210,7 @@ A Teams Human Resources alkalmazásában a következőak adálymentességgel kap
 | Kiadás | Megoldás vagy magyarázat |
 | --- | --- |
 | Ha az asztalon 400%-ra nagyít, a műveletgombok egy része kikerül a képből. | Ehelyett azt javasoljuk, hogy használja a nagyítót, amíg nem tudjuk támogatni ezt a nagyítási szintet. |
-| Az Idő idő lapon a rendszer új gomb műveletet ad vissza, miközben **beolvassa az időkorrekta** fejlécét. | A rács fejlécei és elemei év szerint vannak csoportosítva, összecsukhatók. Azoverover műveletként értelmezi ezt a bemutatót, de nem az. |
+| Az Idő **idő lapon** a rendszer új gomb műveletet ad vissza, miközben beolvassa az időkorrekta fejlécét. | A rács fejlécei és elemei év szerint vannak csoportosítva, összecsukhatók. Azoverover műveletként értelmezi ezt a bemutatót, de nem az. |
 | A **Szabadságolás** lapon egy további pöccintési kézmozdulat jelenik meg, amikor egy új kérelemben az **Okkódra** navigál. | Nincs olyan rejtett vezérlő, amelyhez a pöccintési navigáció megpróbálna eljutni. |
 | Ha a **Szabadságolás** lapon pöccint, miközben a naptár meg van nyitva, akkor a vezérlőn kívülre kerül, nem pedig egy új kérés tetejére, vagy egy kérés szerkesztése közben. | Amikor eléri az **Ugrás a mai napra** elemet, vegye úgy, hogy elért a vezérlő végére, és pöccintsen az ellenkező irányba, hogy visszakerüljön felülre. |
 | A **Csevegés** lapon a fókusz visszaugrik a képernyő tetejére, amikor dátumot ad meg a kisegítő eszközt vagy a billentyűzetes navigációt használja. | Használja a Tab billentyűt addig, amíg újra el nem éri a beviteli területet. |
@@ -220,9 +219,9 @@ A Teams Human Resources alkalmazásában a következőak adálymentességgel kap
 
 ### <a name="microsoft-language-understanding-intelligent-service-luis"></a>Microsoft Language Understanding Intelligent Service (LUIS)
 
-A felhasználói szövegbevitel elemzése után a program elemzi a bejövő szövegeket, hogy megértsük a Dynamics 365 Human Resources Microsoft Teams mögöttes lekérdezést/célját. A felhasználó bevitele, például „Contoso partner keresése” továbbítódik a Microsoft Cognitive Service szolgáltatásához, amelynek neve Nyelvértő intelligens szolgáltatás (Language Understanding Intelligent Service – LUIS). A LUIS-ról  [itt](https://www.luis.ai/) olvashat többet. A LUIS szolgáltatás egyértelműsíti vagy megérti a felhasználói bevitel szándékát (ebben az esetben a szándék az, hogy információt találjon) és a cél entitást (ebben az esetben a szándékolt entitás egy Contoso nevű számla). Ezeket az adatokat a rendszer majd továbbítja a Microsoft  [Azure Bot Framework](https://azure.microsoft.com/services/bot-service/) keretrendszerének, amely a Dynamics 365 Human Resources adataival végez műveleteket, és lekéri a kívánt adatokat a felhasználói lekérdezéshez. 
+A felhasználói Dynamics 365 Human Resources szövegbevitel Microsoft Teams elemzése után a program elemzi a bejövő szövegeket, hogy megértsük a mögöttes lekérdezést/célját. A felhasználó által megadott adatok például a "Search account Contoso" a Microsoft language Understanding Intelligens szolgáltatás (LANGUAGE Understanding Intelligens szolgáltatás) nevű szolgáltatásának, a Language Understanding Intelligens szolgáltatásnak (STB) az egyikéhez vannak irányítva. A LUIS-ról  [itt](https://www.luis.ai/) olvashat többet. A LUIS szolgáltatás egyértelműsíti vagy megérti a felhasználói bevitel szándékát (ebben az esetben a szándék az, hogy információt találjon) és a cél entitást (ebben az esetben a szándékolt entitás egy Contoso nevű számla). Ez az információ ezután át lesz stb. a Microsoft'sAzure [bot keretrendszernek](https://azure.microsoft.com/services/bot-service/), Dynamics 365 Human Resources amely az adatokkal kommunikál a felhasználói lekérdezésből, és beolvassa a kívánt adatokat. 
 
-A robot telepítésével és a használatához való hozzáférés engedélyezésével Ön elfogadja, hogy a LUIS szolgáltatás és az Azure robot keretrendszer feldolgozza a bemenet mögötti szándékot, ami egy továbbfejlesztett, társalgásszerű felhasználói élményt eredményez. A LUIS szolgáltatás és az Azure robot keretrendszer különböző szintű megfeleléssel rendelkezhet a Dynamics 365 Human Resources alkalmazáshoz képest. Habár az ORI szolgáltatás csak a felhasználói lekérdezésekhez van hozzáférése, és nincs a felhasználó adataihoz vagy fiókjához való csatlakozásra tervezve, az adatbázis egy felhasználója tudott egy vevői adatokat, személyes adatokat vagy más adatokat tartalmazó lekérdezést, és ezeket a lekérdezési tartalmat el lehet küldeni aKISZOLGÁLÓ szolgáltatásnak és az Dynamics 365 Human Resources Dynamics 365 Human Resources Azure-keretrendszernek. 
+A robot telepítésével és a használatához való hozzáférés engedélyezésével Ön elfogadja, hogy a LUIS szolgáltatás és az Azure robot keretrendszer feldolgozza a bemenet mögötti szándékot, ami egy továbbfejlesztett, társalgásszerű felhasználói élményt eredményez. A LUIS szolgáltatás és az Azure robot keretrendszer különböző szintű megfeleléssel rendelkezhet a Dynamics 365 Human Resources alkalmazáshoz képest. Habár az ORI Dynamics 365 Human Resources szolgáltatás csak a felhasználói lekérdezésekhez van hozzáférése, és nincs a felhasználó adataihoz vagy fiókjához való csatlakozásra tervezve, az Dynamics 365 Human Resources adatbázis egy felhasználója tudott egy vevői adatokat, személyes adatokat vagy más adatokat tartalmazó lekérdezést, és ezeket a lekérdezési tartalmat el lehet küldeni aKISZOLGÁLÓ szolgáltatásnak és az Azure-keretrendszernek. 
 
 A felhasználó lekérdezései és üzenetei legfeljebb 30 napig megmaradnak a SSL rendszerben, más titkosítással vannak titkosítva, és nem használható képzésre és szolgáltatásfejlesztésre. A Cognitive Services szolgáltatással kapcsolatban  [itt](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/) olvashat többet. 
 
@@ -230,7 +229,7 @@ Az Microsoft Teams-alkalmazások felügyeleti beállításainak kezeléséhez ny
 
 ### <a name="microsoft-teams-azure-event-grid-and-azure-cosmos-db"></a>Microsoft Teams, Azure Event Grid és Azure Cosmos DB
 
-Az alkalmazás használata esetén bizonyos vevőadatok azon a földrajzi területen kívülre is kiterjedhetnek, ahová a bérlő emberi erőforrások Dynamics 365 Human Resources Microsoft Teams szolgáltatását telepítik.
+Az alkalmazás Dynamics 365 Human Resources használata esetén Microsoft Teams bizonyos vevőadatok azon a földrajzi területen kívülre is kiterjedhetnek, ahová a bérlő emberi erőforrások szolgáltatását telepítik.
 
 Dynamics 365 Human Resources az alkalmazott távolléti kérelmét és a munkafolyamat-feladat részleteit továbbítja az Microsoft Azure eseményrács és Microsoft Teams a. Ezeket az adatokat a Microsoft Azure Event Grid felületen az Egyesült Államokban legfeljebb 24 óráig tárolhatjuk, és a rendszer a szállítás és tárolás során titkosítja, és a Microsoft vagy az alfeldolgozók nem használják a tanításhoz vagy szolgáltatások fejlesztéséhez. Annak megértéséhez, hogy az adatok a Teamsben hol vannak tárolva akkor lásd: [Adatok helye Microsoft Teams-alkalmazásban](/microsoftteams/location-of-data-in-teams?preserve-view=true&view=o365-worldwide).
 

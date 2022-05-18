@@ -1,7 +1,7 @@
 ---
 title: Gyártásvégrehajtási munkaterhelések felhőalapú és peremhálózati skálázási egységekhez
 description: Ez a témakör ismerteti, hogyan működnek a gyártási végrehajtási számítási feladatok felhő- és peremhálózati skálázási egységekkel.
-author: cabeln
+author: johanhoffmann
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: ''
@@ -13,26 +13,26 @@ ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: SCM
-ms.author: cabeln
+ms.author: johanho
 ms.search.validFrom: 2020-10-06
 ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 633740ee1e26d2e4ed2ea7031ef298fb11c2ab58
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: b30e16489b0b0169f08e52c70cf4489c9bf4ce1b
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068844"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8674054"
 ---
 # <a name="manufacturing-execution-workloads-for-cloud-and-edge-scale-units"></a>Gyártási végrehajtás munkaterhelései felhőalapú és peremhálózat-lépték szerinti egységekhez
 
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> A gyártási végrehajtási munkaterhelés jelenleg csak előnézetben érhető el.
+> A gyártás-végrehajtási terhelés jelenleg csak előnézetben érhető el.
 >
 > Néhány üzleti funkció nem teljes mértékben támogatott a nyilvános előzetes verzióban, ha számítási feladatokat skálázási egységeken használja.
 >
-> Az előnézeti gyártási végrehajtási munkaterhelés nem futtatható olyan léptékű egységen, ahol a raktári végrehajtási munkaterhelés is telepítve van.
+> Az előnézeti gyártás végrehajtási terhelése nem futtatható olyan mérlegegységen, ahol a raktár végrehajtási terhelése is telepítve van.
 
 A gyártásvégrehajtásban a skálázási egységek a következő lehetőségeket biztosítják:
 
@@ -132,21 +132,21 @@ A jelenlegi kiadásban a készre jelentés és betárolási műveletek (készter
 
  -->
 
-## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Engedélyezze és használja az indítási műveletet egy mérlegegységen
+## <a name="enable-and-use-the-start-operation-on-a-scale-unit"></a>Az indítási művelet engedélyezése és használata mérlegegységen
 
-A jelenlegi kiadásban a gyártási és kötegelt rendelések indítási műveletét a [raktári végrehajtási terhelés](cloud-edge-workload-warehousing.md) (nem a gyártási végrehajtási munkaterhelés). Ezért ennek a funkciónak a használatához, amikor egy mérlegegységhez csatlakozik, el kell végeznie a következő feladatokat:
-
-- A raktári végrehajtási számítási feladatot és a gyártási végrehajtási számítási feladatot is telepítse a skálaegységre.
-- Engedélyezze a *Indítsa el a termelési rendelést a felhő- és peremléptékű egység raktárkezelési munkaterhelésén* jellemző be [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- Használja a Warehouse Management mobilalkalmazást a gyártási vagy kötegelt rendelés elindításához.
-
-## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Az anyagfelhasználás engedélyezése és használata a mérlegegységen
-
-A jelenlegi kiadásban a Warehouse Management mobilalkalmazásban az anyagfelhasználás regisztrálására szolgáló folyamatot támogatja a [raktári végrehajtási terhelés](cloud-edge-workload-warehousing.md) (nem a gyártási végrehajtási munkaterhelés). Ezért ennek a funkciónak a használatához, amikor egy mérlegegységhez csatlakozik, el kell végeznie a következő feladatokat:
+A jelenlegi verzióban a termelési és kötegrendelések indítási műveletét a [raktár](cloud-edge-workload-warehousing.md) végrehajtási terhelése támogatja (nem a gyártás-végrehajtási terhelés). Ezért ahhoz, hogy egy mérlegegységhez kapcsolódva használja ezt a funkciót, a következő feladatokat kell elvégeznie:
 
 - A raktári végrehajtási számítási feladatot és a gyártási végrehajtási számítási feladatot is telepítse a skálaegységre.
-- Engedélyezze a *Regisztrálja az anyagfelhasználást a mobilalkalmazásban egy mérlegegységen* jellemző be [Funkciókezelés](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
-- Az anyagfelhasználás regisztrálásához használja a Warehouse Management mobilalkalmazást.
+- Engedélyezze a *Termelési rendelés indítási beállítását a raktárkezelési terheléshez a felhő-* és szélskálaegység funkcióban a [Funkciókezelésben](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- A termelési vagy kötegrendelést a Raktárkezelés mobilalkalmazással indíthatja el.
+
+## <a name="enable-and-use-material-consumption-on-a-scale-unit"></a>Anyagfelhasználás engedélyezése és használata mérlegegységen
+
+A jelenlegi verzióban [a](cloud-edge-workload-warehousing.md) raktárkezelési mobilalkalmazás anyagfelhasználás regisztrálására használt folyamatát a raktár végrehajtási terhelése támogatja (nem pedig a gyártás-végrehajtási terhelés). Ezért ahhoz, hogy egy mérlegegységhez kapcsolódva használja ezt a funkciót, a következő feladatokat kell elvégeznie:
+
+- A raktári végrehajtási számítási feladatot és a gyártási végrehajtási számítási feladatot is telepítse a skálaegységre.
+- Engedélyezze az *anyagfelhasználás regisztrálását a mobilalkalmazásban a*[Funkciókezelés egységnyilvántartás funkcióján](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- Az anyagfelhasználás regisztrálására a Raktárkezelés mobilalkalmazás használható.
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

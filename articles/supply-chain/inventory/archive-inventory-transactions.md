@@ -2,7 +2,7 @@
 title: Készlettranzakciók archiválása
 description: Ez a témakör azt ismerteti, hogyan lehet archiválni a készlettranzakciók adatait a rendszer teljesítményének javítása érdekében.
 author: yufeihuang
-ms.date: 03/01/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-03-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 99a7b61d9bd5e1e2bd8d2c7df34882646bb51270
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 8b766d306f31fc531f33aa29e1f96048bbd90085
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7567463"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736061"
 ---
 # <a name="archive-inventory-transactions"></a>Készlettranzakciók archiválása
 
@@ -116,3 +116,110 @@ A rács feletti eszköztár a következő gombokat tartalmazza, amelyek a kivál
 - **Az archiválás szüneteltetése** – A jelenleg feldolgozás alatt álló kijelölt archívum szüneteltetése. A szünet csak az archiválási feladat létrehozása után lép életbe. Emiatt előfordulhat egy kis késés a szünet hatályba lépése előtt. Ha egy archívum szünetel, az **Aktuális frissítés leállítása** mezőben megjelenik egy pipa.
 - **Az archiválás folytatása** – A jelenleg szünetelő kijelölt archívum feldolgozásának folytatása.
 - **Sztornírozás** – A kijelölt archívum sztornírozása. Az archívum csak akkor sztornírozható, ha az **Állapot** mező beállítása *Kész*. Ha egy archívum sztornírozva van, a **Sztornírozás** mezőben megjelenik egy pipa.
+
+## <a name="extend-your-code-to-support-custom-fields"></a>A kód kiterjesztése az egyéni mezők támogatásához
+
+Ha a `InventTrans` tábla egy vagy több egyéni mezőt tartalmaz, akkor a névtől függően lehet, hogy ki kell bővítenie a kódot, hogy támogassák őket.
+
+- Ha a tábla egyéni mezőinek `InventTrans``InventtransArchive` ugyanazok a mezőnevek vannak, mint a táblában, ez azt jelenti, hogy 1:1 megfeleltetve vannak. Ezért az egyéni mezőket be lehet tenni a `InventoryArchiveFields` tábla mezőcsoportba `inventTrans`.
+- Ha a táblában található `InventTrans``InventtransArchive` egyéni mezőnevek nem egyeznek meg a táblában szereplő mezőnevekkel, akkor a leképezésükhöz kódokat kell hozzáadnia. Ha például `InventTrans.CreatedDateTime` rendszermezőt hívott, akkor más néven (`InventTransArchive` például) `InventtransArchive.InventTransCreatedDateTime``InventTransArchiveProcessTask` kell létrehoznia egy mezőt a `InventTransArchiveSqlStatementHelper` táblában, és kiterjesztéseket kell hozzáadnia az és az osztályokhoz, amint azt a következő mintakód mutatja.
+
+Az alábbi mintakód egy példát mutat be arra, hogyan lehet hozzáadni a szükséges kiterjesztést az osztályhoz `InventTransArchiveProcessTask`.
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveProcessTask))]
+Final class InventTransArchiveProcessTask_Extension
+{
+
+    protected void addInventTransFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTrans, ModifiedBy))
+            .add(fieldStr(InventTrans, CreatedBy)).add(fieldStr(InventTrans, CreatedDateTime));
+
+        next addInventTransFields(_selectionObject);
+    }
+
+
+    protected void addInventTransArchiveFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTransArchive, InventTransModifiedBy))
+            .add(fieldStr(InventTransArchive, InventTransCreatedBy)).add(fieldStr(InventTransArchive, InventTransCreatedDateTime));
+
+        next addInventTransArchiveFields(_selectionObject);
+    }
+}
+```
+
+Az alábbi mintakód egy példát mutat be arra, hogyan lehet hozzáadni a szükséges kiterjesztést az osztályhoz `InventTransArchiveSqlStatementHelper`.
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveSqlStatementHelper))]
+final class InventTransArchiveSqlStatementHelper_Extension
+{
+    private str     inventTransModifiedBy;  
+    private str     inventTransCreatedBy;
+    private str     inventTransCreatedDateTime;
+
+    protected void initialize()
+    {
+        next initialize();
+        inventTransModifiedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, ModifiedBy)).name(DbBackend::Sql);
+        inventTransCreatedDateTime = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedDateTime)).name(DbBackend::Sql);
+        inventTransCreatedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedBy)).name(DbBackend::Sql);
+    }
+
+    protected str buildInventTransArchiveSelectionFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransArchiveSelectionFieldsStatement();
+        
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransModifiedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedDateTime)).name(DbBackend::Sql));
+        }
+
+        return ret;
+    }
+
+    protected str buildInventTransTargetFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransTargetFieldsStatement();
+
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransModifiedBy);
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedBy);
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedDateTime);
+        }
+
+        return ret;
+    }
+}
+```

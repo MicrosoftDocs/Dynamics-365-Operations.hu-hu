@@ -8,27 +8,27 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalSetup
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 15631
 ms.assetid: 81613b31-bc3c-43a0-8474-e01c9a482c40
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 253da3d5cf894820e516b6b4f8d2a4fce40c92db
-ms.sourcegitcommit: 4f8465729d7ae0bf5150a2785a6140c984c7030e
+ms.openlocfilehash: 3e49d101bbbe576e0fcf2e9b243f4f29124fbd85
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/31/2021
-ms.locfileid: "7727017"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722269"
 ---
 # <a name="ledger-journal-types"></a>Főkönyvi napló típusai
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. Használja a **Napló nevek** lapot a Dynamics 365 Finance-ben használható naplók beállításához.
+Ez a témakör bemutatja, milyen naplótípusokat állíthat be a pénzügyi naplókhoz. A Naplónevek **lapon** beállíthatja a Dynamics 365 Pénzügyben használható naplókat.
 
-| Napló típusa                      | Cél                       | Adja meg a tranzakciókat ezen az oldalon                                |
+| Naplótípus                      | Alkalmazás célja                       | Adja meg a tranzakciókat ezen az oldalon                                |
 |-----------------------------------|-------------------------------|----------------------------------------------------------------|
 | Foglalás                        | Felosztási tranzakciók létrehozása felosztási naplóban. Mielőtt létrehozhatna egy felosztási naplót, létre kell hoznia egy felosztási szabályt a **Felosztási napló szabályi** oldalon.      | Felosztási kérés feldolgozása             |
 | Jóváhagyás                          | Jóváhagyott szállítói számlák feladása a megfelelő főkönyvi számlákra.  | Számla-jóváhagyási napló                                       |

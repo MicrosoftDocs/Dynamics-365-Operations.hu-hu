@@ -1,6 +1,6 @@
 ---
-title: A keresztárfolyam megadása
-description: Ez a témakör általános tájékoztatást tartalmaz a Microsoft Dynamics 365 Finance keresztárfolyamaival kapcsolatban.
+title: A keresztárfolyam meghatározása
+description: Ez a témakör a Microsoft Dynamics Pénzügy 365 rendszer keresztmértékeit tartalmazza.
 author: abruer
 ms.date: 05/16/2018
 ms.topic: article
@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: c46ac3324a985810ede61072190014538d0b7ed36f7eedfc387468619cc88cb2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: ed1db707cf6aed7c9def76ebbbdef7032b8776b6
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737017"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735290"
 ---
-# <a name="specify-the-cross-rate"></a>A keresztárfolyam megadása
+# <a name="specify-the-cross-rate"></a>A keresztárfolyam meghatározása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja a keresztárfolyam, és a keresztárfolyam megadása, amikor egy kifizetést számlát célját. A keresztárfolyam akkor kell használni, amikor az összes, a következő feltételek vonatkoznak: 
+Ez a témakör bemutatja a keresztárfolyam, és a keresztárfolyam megadása, amikor egy kifizetést számlát célját. Keresztárfolyam használata a következő feltételek alkalmazásakor: 
 -   A kifizetési számlát egyenlít ki. 
 -   A számlasor és a számlasor használja a különféle pénznemekben. 
 -   Sem pénzneme nem az alapértelmezett pénznemben. 

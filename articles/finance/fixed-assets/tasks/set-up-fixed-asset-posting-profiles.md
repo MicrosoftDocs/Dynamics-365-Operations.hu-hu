@@ -8,23 +8,23 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetPosting
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ee0006c9588a22d720687e7aceb49acc756b83e1
-ms.sourcegitcommit: 62ca651c94e61aaa69cfa59e861f263f89d01c4a
+ms.openlocfilehash: 2964be0b02d6a5553bad9a1b3788a5f1efb208ee
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/03/2021
-ms.locfileid: "7883768"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725261"
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Tárgyieszköz-feladási profilok beállítása
 
 [!include [banner](../../includes/banner.md)]
 
-Ez az eljárás bemutatja a tárgyieszköz-feladási profilok beállítását. A témakörben megadott példák egy alap feladási profilra vonatkoznak, bár a könyvelési profilokat létre kell hozni az adott számlatükörhöz és a pénzügyi beszámolási követelményekhez.
+Ez az eljárás bemutatja a tárgyieszköz-feladási profilok beállítását. A témakörben található példák egy alapvető feladási profilra vonatkoznak, de feladási profilokat kell létrehozni az adott számlatükre és a pénzügyi jelentési követelmények számára.
 
 1. A Navigációs ablaktáblán ugorjon a **Modulok > Tárgyi eszközök > Beállítás > Tárgyieszköz-feladási profilok** elemre.
 2. Kattintson az **Új** elemre.

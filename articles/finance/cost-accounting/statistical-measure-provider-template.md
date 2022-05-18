@@ -1,6 +1,6 @@
 ---
 title: Statisztikai dimenziótagok és statisztikaimérték-szolgáltató sablonok
-description: Ez a témakör a statisztikai dimenziótagokról és a statisztikaimérték-szolgáltató sablonokról nyújt tájékoztatást. A statisztikai dimenziótagok felosztási alapként használhatók olyan irányelvekben, mint a költségfelosztás és a költségfoglalás. Használhatók a nem pénzügyi költségfelhasználás bejelentésére is.
+description: Ez a témakör a statisztikai dimenziótagokról és a statisztikaimérték-szolgáltató sablonokról nyújt tájékoztatást.
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate, CAMAXStatisticalMeasureProviderConfiguration, CAMStatisticalDimensionMember, CAMDataConnectorStatisticalMeasure, CAMImportedStatisticalMeasure, CAMImportedStatisticalMeasureProviderConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: c79451a5145a6e419ae0e332c67f06ca2df65996f959333a508dbf62dbf435ff
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 5daac80fdc62fb996be82aa4c8bb7bb3c8dc03e9
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767647"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8733906"
 ---
 # <a name="provider-templates-for-statistical-dimension-members-and-measure-providers"></a>Statisztikai dimenziótagok és statisztikaimérték-szolgáltató sablonok
 
@@ -69,7 +69,7 @@ Az alábbiakban néhány példát talál tipikus statisztikai dimenziótagokra.
 
 ## <a name="statistical-measure-provider-template"></a>Statisztikaimérték-szolgáltató sablon
 
-A statisztikai mértékek többféle forrásból származhatnak. A Dynamics 365 Finance nagyszerű forrás a statisztikai mérések kivonatolásához. A statisztikaimérték-szolgáltató sablon használatával egyszerűen konfigurálhatja a kigyűhteni kívánt statisztikai mértékeket.
+A statisztikai mértékek többféle forrásból származhatnak. A Dynamics 365 Pénzügy nagy forrás a statisztikai intézkedések kinyerni innen. A statisztikaimérték-szolgáltató sablon használatával egyszerűen konfigurálhatja a kigyűhteni kívánt statisztikai mértékeket.
 
 A statisztikaimérték-szolgáltató sablon általános, és több statisztikai dimenziótagban is újrafelhasználható.
 
@@ -128,13 +128,13 @@ A statisztikai mértékek Költségkönyvelésben történő keresése előtt l�
 > [!NOTE]
 > Ebben a példában csak a **Tényleges verzió** esetében hozzuk létre a kapcsolatot.
 
-Lépjen a **Költségkönyvelési főkönyv** \> **Tényleges verzió** \> **Kezelés** \> **Statisztikai mérések** pontra a kapcsolat létesítéséhez. Ebben az esetben válassza a **Dynamics 365 Finance – Statisztikai mértékek** adatcsatlakozót, mivel a Finance rendszerből szeretnénk kigyűjteni az adatokat.
+Lépjen a **Költségkönyvelési főkönyv** \> **Tényleges verzió** \> **Kezelés** \> **Statisztikai mérések** pontra a kapcsolat létesítéséhez. Ehhez a helyzethez válassza **a Dynamics 365 Pénzügy – Statisztikai** intézkedések adatcsatlakozóját, mert a Pénzügy rendszerből szeretné kinyerni az adatokat.
 
 **Adatforrás**
 
 | Név        | Adatcsatlakozó                                                                     | Statisztikai dimenziótag |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| Teljes munkaidős alkalmazottak D365FO | Dynamics 365 Finance – Statisztikai mértékek | Teljes munkaidős alkalmazottak                         |
+| Teljes munkaidős alkalmazottak D365FO | Dynamics 365 Pénzügy – Statisztikai intézkedések | Teljes munkaidős alkalmazottak                         |
 
 **Adatszolgáltató konfigurációja**
 
@@ -216,13 +216,13 @@ A statisztikai mértékek Költségkönyvelésben történő keresése előtt l�
 > [!NOTE]
 > Ebben a példában csak a **Tényleges verzió** esetében hozzuk létre a kapcsolatot.
 
-Lépjen a **Költségkönyvelési főkönyv** \> **Tényleges verzió** \> **Kezelés** \> **Statisztikai mérések** pontra a kapcsolat létesítéséhez. Ebben az esetben válassza a **Dynamics 365 Finance – Statisztikai mértékek** adatcsatlakozót, mivel a Finance rendszerből szeretnénk kigyűjteni az adatokat.
+Lépjen a **Költségkönyvelési főkönyv** \> **Tényleges verzió** \> **Kezelés** \> **Statisztikai mérések** pontra a kapcsolat létesítéséhez. Ehhez a helyzethez válassza **a Dynamics 365 Pénzügy – Statisztikai** intézkedések adatcsatlakozóját, mert a Pénzügy rendszerből szeretné kinyerni az adatokat.
 
 **Adatforrás**
 
 | Név           | Adatcsatlakozó                                                                     | Statisztikai dimenziótag |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Csomag költséghelye D365FO | Dynamics 365 Finance – Statisztikai mértékek | Csomag költséghelye                      |
+| Csomag költséghelye D365FO | Dynamics 365 Pénzügy – Statisztikai intézkedések | Csomag költséghelye                      |
 
 A rendszer felismeri, hogy a ProdRouteTrans olyan tábla, amelyben minden rekord egy külön jogi személyhez tartozik. Ezért rendszer megkéri, hogy jelölje ki azt a jogi személyt, amely esetében szeretné importálni a tranzakciókat.
 

@@ -9,31 +9,30 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: pashao
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-ms.openlocfilehash: 455e8becfdfa910a3733719653e1a91557b2f59a
-ms.sourcegitcommit: ac23a0a1f0cc16409aab629fba97dac281cdfafb
+ms.openlocfilehash: 7640144b1687fc64e55f659d49cdb0817c17294a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/29/2021
-ms.locfileid: "7867352"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686711"
 ---
 # <a name="enable-master-data-lookup-for-tax-calculation-configuration"></a>Alapadat-keresés engedélyezése adószámítási konfigurációhoz 
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan lehet beállítani és engedélyezni az adószámítási alapadat-keresési funkciót. Az adószámítási konfigurációban az olyan mezők értékeit lehet kiválasztani, mint a jogi személy, a szállítókód, a cikk kódja és a **Szállítási** feltételek **legördülő** **·** **lista**. Ezek az értékek a Microsoft által csatlakoztatott Dynamics 365 Finance környezetből, az Microsoft Dataverse adatforrás használatával jönnek létre.
+Ez a témakör bemutatja, hogy hogyan lehet beállítani és engedélyezni az adószámítási alapadat-keresési funkciót. Az adószámítási konfigurációban a jogi személy, **·** **·** **a szállítókód, a cikk-kód és a szállítási időszak mezőiben legördülő lista használható értékek kiválasztására.** **·** Ezek az értékek a 365-ös Microsoft Dynamics pénzügyi környezetből, az adatforrás Microsoft Dataverse használatával jönnek.
 
 > [!NOTE] 
-> Az adószámítási alapadat-keresési funkció nem kötelező funkció. Ha letiltja a Tax Service adatforrás-támogatási szolgáltatását az RCS (Regulatory Configuration Service) szolgáltatásban, a következő lépéseket **Dataverse** kihagyhatja. Ebben az esetben azonban az adószámítási konfigurációban nem lesz elérhető a legördülő lista.
+> Az adószámítási alapadat-keresési funkció nem kötelező funkció. Ha letiltja a Tax Service **Dataverse adatforrás-támogatási szolgáltatását** az RCS (Regulatory Configuration Service) szolgáltatásban, a következő lépéseket kihagyhatja. Ebben az esetben azonban az adószámítási konfigurációban nem lesz elérhető a legördülő lista.
 
 1. A Microsoft Power Platform integráció beállítása a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásban. További informáciért lásd: [Microsoft Power Platform integráció – Bővítmények áttekintése](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). A lépés befejezése után a Microsoft Power Platform környezet neve megjelenik a **Power Platform Integráció** szakaszban.
 2. Menjen a [Microsoft Power Platform felügyeleti központba](https://admin.powerplatform.microsoft.com/environments), és válassza ki a környezet nevét. A környezet URL-címe meg van adva.
-3. Dynamics 365 Finance és Dataverse beállítása. A további tudnivalókat lásd [A virtuális entitás megoldás beszerzése](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution), valamint [Hitelesítés és engedélyezés](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
+3. A Dynamics 365 Pénzügy és Dataverse a. A további tudnivalókat lásd [A virtuális entitás megoldás beszerzése](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution), valamint [Hitelesítés és engedélyezés](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#authentication-and-authorization).
 4. Állítsa be a következő entitásokat: További tudnivalókért lásd: [A Microsoft Dataverse Virtuális entitások engedélyezése](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
     - CompanyInfoEntity

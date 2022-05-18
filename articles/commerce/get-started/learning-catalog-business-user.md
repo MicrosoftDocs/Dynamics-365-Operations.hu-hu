@@ -9,16 +9,15 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: d9c7dc006217edb40764d996e1dc5bdcbb94abd6
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: ca3734897172141243afcd0d6c7d734dac23aa83
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402349"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687814"
 ---
 # <a name="learning-catalog-for-users-of-dynamics-365-commerce"></a>Dynamics 365 Commerce-felhasználók képzési katalógusa
 
@@ -26,7 +25,7 @@ ms.locfileid: "7402349"
 
 A következő katalógus az alapismeretekből a meghatározott tartományokra, a legalapvetőbbtől a legkorszerűbb szintig van rendszerezve. Ha a tartalom több formátumban van, akkor tudatja Önnel, hogy kiválaszthassa a szükségleteknek leginkább megfelelő képzési formátumot.
 
-A többi Finance and Operations alkalmazással megosztott funkciókkal kapcsolatos képzések a [Dynamics 365 Finance képzési katalógusban](../../finance/get-started/learning-catalog-business-user.md) olvashatók.
+A többi Pénzügyi és Művelet alkalmazással [megosztott funkciókról a Dynamics 365 Pénzügyi oktatókatalógus tartalmaz](../../finance/get-started/learning-catalog-business-user.md).
 
 ## <a name="get-started"></a>Első lépések<a name="get-started"></a>
 

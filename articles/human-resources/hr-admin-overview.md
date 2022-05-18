@@ -8,18 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SystemAdministrationWorkspaceForm
 audience: Application User
-ms.search.scope: Human Resources
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a403390132443f29f12e11914b7a0f08faffa973
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 74569d26532dad476f2fbcf7b888eb90c48d4736
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8068409"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710835"
 ---
 # <a name="administration-overview"></a>Adminisztráció áttekintése
 
@@ -101,7 +100,7 @@ Ez a témakör a Dynamics 365 Human Resources beállításához, kezeléséhez �
 ## <a name="additional-resources"></a>További erőforrások
 
 ### <a name="elearning-courses"></a>eLearning-tanfolyamok
-Az online tanfolyamokkal és tréningekkel kapcsolatban tekintse meg a következőt: [Dynamics 365 Human Resources a Microsoft Learn szolgáltatásban](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+Az online tanfolyamokkal és tréningekkel kapcsolatban tekintse meg a következőt: [Dynamics 365 Human Resources a Microsoft Learn szolgáltatásban](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 ### <a name="videos"></a>Videók
 

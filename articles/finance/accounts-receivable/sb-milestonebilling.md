@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
 ms.custom: 539093
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 863ec55c8ba2fcc9d0e624fcca06f4491ce839ac
-ms.sourcegitcommit: c0f7ee7f8837fec881e97b2a3f12e7f63cf96882
+ms.openlocfilehash: ecc4ddbb4d22eefac36f8cf8205d3b6084bd7d9d
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8462909"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8686491"
 ---
 # <a name="milestone-billing"></a>Mérföldkőszámlázás
 
@@ -64,7 +63,7 @@ A **Mérföldkő sablonlap** a következő mezőket tartalmazza.
 | Leírás | A mérföldkősablon leírása. |
 | Felosztási mód | <p>Válassza ki a felosztási módot:</p><ul><li>**Százalékos teljesítési** érték – minden sorhoz egy összesített teljesítési értéket használ a program.</li><li>**Százalék** – a felosztáshoz egy százalékos összeg is meghatározható. A százalékok összegének 100-nak kell lennie.</li><li>**Változó összeg** – egy összeget lehet megadni a felosztáshoz. A felosztási összeg a tranzakció szintjén van meghatározva.</li><li>**Egyenlő összeg** – a felosztási százalékokat a program automatikusan kiszámítja, és egyenlően osztja fel a sablonban lévő cikkek között.</li></ul> |
 | Teljes időtartam | A sablon mérföldkőhöz tartozó összegének megadása. |
-| **Vonalak** | |
+| **Sorok** | |
 | Cikkszám | Válassza ki a cikkszámot a mérföldkősablonhoz. |
 | Termék neve | A cikk neve. |
 | Százalék | <p>Adja meg a sor felosztási százalékát:</p><ul><li>Ha a **Felosztási mód** mező értéke **Százalék**, adja meg a sor százalékos kulcsát.</li><li>Ha a **Felosztási mód** **mező** értéke Egyenlő összeg, a program automatikusan egyenlő százalékértékekre oszlik a sablonban található cikkek száma alapján.</li></ul><p>Az összes százalék összegének 100-nak kell lennie.</p><p>Ha a **fejlécben** meg van adva a Teljes összeg érték, **és** a sor százalékos értékét módosítja, **akkor a program frissíti az Összeg** értékét. Fordítva, ha módosítja az Összeg **értékét**, **akkor** a százalékérték is frissül.</p> |
@@ -117,7 +116,7 @@ A **Mérföldkő-felosztási** lap a következő mezőket tartalmazza.
 | Mérföldkősablon | A sorcikk mérföldkősablon-azonosítója |
 | Sablon leírása | A mérföldkősablon leírása. |
 | Felosztási mód | A mérföldkősablonhoz használt felosztási módszer. |
-| **Vonalak** | Az összes sor alapértelmezett értékei a kiválasztott mérföldkősablonon alapulnak. Szükség szerint módosíthatja őket. |
+| **Sorok** | Az összes sor alapértelmezett értékei a kiválasztott mérföldkősablonon alapulnak. Szükség szerint módosíthatja őket. |
 | Cikkszám | A mérföldkőhöz tartozó felosztási sablon cikkszáma. |
 | Termék neve | A termék neve. |
 | Százalék | <p>A sor felosztási százaléka. Az összes százalék összegének 100-nak kell lennie.</p><p>Ha módosítja a sor **Százalékos** értékét, **a nettó összeg** értéke frissül. Fordítva, ha a nettó összeg értékét **módosítja**, **akkor** a százalék is frissül.</p> |

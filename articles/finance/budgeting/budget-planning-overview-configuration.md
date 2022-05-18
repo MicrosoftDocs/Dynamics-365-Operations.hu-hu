@@ -8,21 +8,21 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "17251"
 - intro-internal
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 391f62f42e482f79420bbe1bbd4cec4930790229
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: d69d3d1620616bd7a136645d6f28f638e8bcf199
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982065"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711743"
 ---
 # <a name="budget-planning-overview"></a>Költségvetés-tervezés áttekintése
 
@@ -32,7 +32,7 @@ Ez a témakör bemutatja a költségvetés-tervezést. Olyan információt köz�
 
 ## <a name="overview-of-budget-planning"></a>A költségvetés-tervezés áttekintése
 
-Egy szervezet konfigurálhatja a költségvetés-tervezését, és beállíthat olyan költségvetés-tervezési folyamatokat, amelyek célja a szervezet irányelveiknek, eljárás-rendjeiknek és a költségvetési előkészítés követelményeinek való megfelelés. Ha megérti a Microsoft Dynamics 365 Finance rendszerben használt fogalmakat és terminológiát, könnyebben és hatékonyabban valósíthatja meg a szervezet költségvetés-tervezését.
+Egy szervezet konfigurálhatja a költségvetés-tervezését, és beállíthat olyan költségvetés-tervezési folyamatokat, amelyek célja a szervezet irányelveiknek, eljárás-rendjeiknek és a költségvetési előkészítés követelményeinek való megfelelés. Microsoft Dynamics A 365 Pénzügyben használt fogalmak és fogalmak ismerete segítségével könnyebben és hatékonyabban valósíthatja meg a költségvetés-tervezést a szervezetben.
 
 ### <a name="key-terms"></a>Kulcsfogalmak
 
@@ -57,7 +57,7 @@ A Költségvetés-tervezés integrálva van más modulokkal. Ezért az előző k
 
 ## <a name="configuring-budget-planning"></a>A költségvetés-tervezés konfigurálása.
 
-A Dynamics 365 Finance 10.0.9-es verziójában (2020. április) bemutatott funkcióhoz tartozik egy funkció, amellyel javítható a teljesítmény, amikor a **Közzététel** gomb segítségével frissít meglévő rekordokat az Excelben, majd közzéteszi őket az ügyfélnek. Ez a funkció felgyorsítja a frissítési folyamatot, és csökkenti a frissítés blokkolásának valószínűségét, ha egyszerre több rekordot frissít. A funkció elérhetővé tételéhez nyissa meg a **Funkciókezelés** munkaterületet, és kapcsolja be a **Költségvetéstervezési lekérdezés optimalizálása a teljesítmény érdekében** funkciónál a **Költségvetés** modulban. Javasoljuk, hogy kapcsolja be ezt a funkciót.
+A Dynamics 365 Pénzügy 10.0.9-es verziójában (2020. április) bevezetett funkciók olyan funkciókat tartalmaznak, amelyek javítják a teljesítményt, amikor a Közzététel gombbal frissítheti az Excelben található rekordokat, majd újra közzéteheti azokat **az** ügyfélen. Ez a funkció felgyorsítja a frissítési folyamatot, és csökkenti a frissítés blokkolásának valószínűségét, ha egyszerre több rekordot frissít. A funkció elérhetővé tételéhez nyissa meg a **Funkciókezelés** munkaterületet, és kapcsolja be a **Költségvetéstervezési lekérdezés optimalizálása a teljesítmény érdekében** funkciónál a **Költségvetés** modulban. Javasoljuk, hogy kapcsolja be ezt a funkciót.
 
 A **Költségvetés-tervezési konfiguráció** lap tartalmazza a legtöbb kötelező beállítást a költségvetés-tervezés beállításához. Az alábbiakban olvasható néhány kulcsfontosságú tényezőt ajánlott figyelembe venni a költségvetés-tervezés konfigurálásakor. A konfiguráció befejezése után a költségvetés-tervezési folyamat beállítása következik.
 
@@ -87,7 +87,7 @@ A költségvetés-tervezés két biztonsági modell egyikét követheti a felhas
 
 A költségvetés-tervezési munkafolyamatok a költségvetési munkafolyamatokkal együtt használhatók a költségvetési tervek létrehozására és kezelésére.
 
-A költségvetés-tervezési munkafolyamat egy rendezett szakaszokból álló rendszer, amelyen a költségvetési terv végigmegy. Minden költségvetési munkafolyamathoz tartozik egy költségvetés-tervezési munkafolyamat. A költségvetés-tervezési munkafolyamat az egyik olyan munkafolyamat, amelyet a Dynamics 365 Finance használ. A munkalapokkal, indoklásokkal és a mellékletekkel együtt a költségvetési munkafolyamatot irányítja a szervezeten keresztül ellenőrzésre és jóváhagyásra.
+A költségvetés-tervezési munkafolyamat egy rendezett szakaszokból álló rendszer, amelyen a költségvetési terv végigmegy. Minden költségvetési munkafolyamathoz tartozik egy költségvetés-tervezési munkafolyamat. A költségvetési munkafolyamatok a Dynamics 365 Pénzügy programban használt egyik munkafolyamat-típus. A munkalapokkal, indoklásokkal és a mellékletekkel együtt a költségvetési munkafolyamatot irányítja a szervezeten keresztül ellenőrzésre és jóváhagyásra.
 
 Költségvetés-tervezési munkafolyamatot létrehozhat a **Munkafolyamat szakaszai** menüpontban a **Költségvetés-tervezés konfigurációja** lapon. Itt ki tudja választani a program által használt szakaszt és a költségvetési munkafolyamatot, és további beállításokat is hozzáadhat.
 

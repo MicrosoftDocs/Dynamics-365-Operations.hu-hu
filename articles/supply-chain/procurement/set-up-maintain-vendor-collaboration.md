@@ -1,7 +1,7 @@
 ---
 title: Szállítói együttműködés beállítása és karbantartása
 description: Ez a témakör ismerteti a szállítói együttműködés beállítását a Dynamics 365 Supply Chain Management alkalmazásban. Bemutatja azt is, hogyan lehet új szállítói együttműködési felhasználókat létesíteni, és kezelni ezeknek a felhasználóknak a biztonsági szerepköreit.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 220774
 ms.assetid: 69d05e8b-7dc2-48ea-bc24-bea9ac963579
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: b635255fffa6fd3c6612cd248dc692df204aa76d
-ms.sourcegitcommit: 614d79cba238e466d445767a7d0a012e785a9861
+ms.openlocfilehash: 4b59513d86426d3c1bfd759b9aabc331e58d5423
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/19/2021
-ms.locfileid: "7652014"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677562"
 ---
 # <a name="set-up-and-maintain-vendor-collaboration"></a>Szállítói együttműködés beállítása és karbantartása
 
@@ -31,7 +31,7 @@ A szállítói együttműködési felület a beszerzési rendelésekkel, a szám
 Ez a témakör ismerteti a szállítói együttműködés beállítását a Dynamics 365 Supply Chain Management alkalmazásban. Bemutatja azt is, hogyan munkafolyamatot beállítani új szállítói együttműködési felhasználók létesítéséhez, és hogyan lehet kezelni ezeknek a felhasználóknak a biztonsági szerepköreit.
 
 > [!NOTE]
-> A biztonsági szerepkörök szállítói együttműködési beállításaival kapcsolatos információk csak a jelenlegi Finance and Operations verzióra vonatkoznak. A Microsoft Dynamics AX 7.0 (2016. február) és a Microsoft Dynamics AX 7.0.1 (2016. május) alkalmazásverziókban a **Szállítói portál** modul segítségével működhet együtt a szállítókkal. A szállítói portál felhasználói engedélyekkel kapcsolatos tudnivalókat a Microsoft Dynamics AX alkalmazásban lásd a [Szállítói portál felhasználói biztonsága](configure-security-vendor-portal-users.md) részben.
+> A szállítói együttműködési biztonsági szerepkörök beállításával kapcsolatos információk csak a Pénzügy és műveletek aktuális verziójára vonatkoznak. A Microsoft Dynamics AX 7.0 (2016. február) és a Microsoft Dynamics AX 7.0.1 (2016. május) alkalmazásverziókban a **Szállítói portál** modul segítségével működhet együtt a szállítókkal. A szállítói portál felhasználói engedélyekkel kapcsolatos tudnivalókat a Microsoft Dynamics AX alkalmazásban lásd a [Szállítói portál felhasználói biztonsága](configure-security-vendor-portal-users.md) részben.
 
 ## <a name="set-up-vendor-collaboration-security-roles"></a>Szállítói együttműködés beállítása biztonsági szerepkörökhöz
 

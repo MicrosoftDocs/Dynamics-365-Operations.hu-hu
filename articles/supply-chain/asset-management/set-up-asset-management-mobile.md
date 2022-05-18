@@ -1,6 +1,6 @@
 ---
 title: Eszközkezelés mobil munkaterület beállítása
-description: Ez a témakör azt mutatja be, hogyan lehet beállítani a Microsoft Dynamics 365 Supply Chain Management és a Finance and Operations (Dynamics 365) mobilalkalmazást egy eszközkezelési mobil munkaterület futtatására, amely a dolgozók számára az eszközkezelési feladatok elvégzésére használható.
+description: Ez a témakör azt mutatja be, hogyan lehet beállítani a Microsoftot és a Pénzügy Dynamics 365 Supply Chain Management és műveletek (Dynamics 365) mobilalkalmazást egy eszközkezelési mobileszköz-munkaterület futtatására, amely a dolgozók számára eszközkezelési feladatok elvégzésére használható.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -8,23 +8,22 @@ ms.prod: ''
 ms.technology: ''
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5d628f99d4fc6788ddb38590c65decb871d49f93
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: a056be417d266fd400ce1572312f327dc070cb6a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7572193"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693500"
 ---
 # <a name="set-up-the-asset-management-mobile-workspace"></a>Eszközkezelés mobil munkaterület beállítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt mutatja be, hogyan lehet beállítani a Microsoft Dynamics 365 Supply Chain Management és a Finance and Operations (Dynamics 365) mobilalkalmazást egy **Eszközkezelési** mobil munkaterület futtatására, amely a dolgozók számára az eszközkezelési feladatok elvégzésére használható.
+Ez a Dynamics 365 Supply Chain Management **témakör azt mutatja be, hogyan lehet beállítani a Microsoftot és a Pénzügy** és műveletek (Dynamics 365) mobilalkalmazást egy eszközkezelési mobileszköz-munkaterület futtatására, amely a dolgozók számára eszközkezelési feladatok elvégzésére használható.
 
 ## <a name="set-up-maintenance-worker-users-in-supply-chain-management"></a>Karbantartási dolgozói felhasználók beállítása a Supply Chain Management szolgáltatásban
 
@@ -42,7 +41,7 @@ Az alábbi lépéseket kell követni minden olyan felhasználó számára, akine
 
 ## <a name="publish-the-asset-management-mobile-workspace"></a>Eszközkezelés mobil munkaterület közzététele
 
-Ahhoz, hogy elérhetővé tegye az eszközkezelési funkciókat a Finance and Operations (Dynamics 365) mobilalkalmazásban, közzé kell tennie az **Eszközkezelés** mobil munkaterületet.
+Ahhoz, hogy elérhetővé tegye az eszközkezelési funkciókat a Pénzügy és műveletek (Dynamics 365) mobilalkalmazásban, **közzé kell tennie az Eszközkezelés mobileszköz-munkaterületét**.
 
 1. A Supply Chain Management szolgáltatásban válassza a **Beállítások** gombot (a jobb felső sarkában látható fogaskerekek szimbólumát), majd válassza a menüben a **Mobilalkalmazás** lehetőséget.
 1. A **Mobilalkalmazás-kezelés** párbeszédpanelen keresse meg az **Eszközkezelés** csempét. Ha azt a szöveget tartalmazza, hogy "Metaadatok között - nincs közzétéve", akkor a munkaterület még nincs közzétéve. Ha a "Metaadatok között - közzétett" szöveget tartalmazza, a munkaterület már közzé van téve, és a művelet hátralévő részét kihagyhatja.
@@ -51,14 +50,14 @@ Ahhoz, hogy elérhetővé tegye az eszközkezelési funkciókat a Finance and Op
 
 1. Válassza az **Eszközkezelés** csempét, majd az eszköztár **Közzététel** gombját. Néhány másodperc múlva értesítést kell kapnia arról, hogy sikeresen megtörtént a munkaterület közzététele. Ezenkívül a csempe szövegének a "Metaadatok között – közzétéve" szövegre kell váltania.
 
-## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>A Finance and Operations (Dynamics 365) mobilalkalmazás telepítése és beállítása
+## <a name="install-and-set-up-the-finance-and-operations-dynamics-365-mobile-app"></a>A Pénzügy és műveletek (Dynamics 365) mobilalkalmazás telepítése és beállítása
 
-1. Ha mobileszközére telepítenie kell a **Microsoft Finance and Operations (Dynamics 365)** alkalmazást, ugorjon a következő alkalmazásáruházak egyikére:
+1. Ha mobileszközére telepítenie **kell a Microsoft Pénzügy és műveletek (Dynamics 365)** alkalmazást, kattintson a következő alkalmazásüzletek egyikére:
 
     - [Google Android eszközök esetében](https://go.microsoft.com/fwlink/?linkid=850662)
     - [Apple IOS eszközök esetében](https://go.microsoft.com/fwlink/?linkid=850663)
 
-1. Nyissa meg Finance and Operations (Dynamics 365) alkalmazást. A bejelentkezési oldalnak meg kell jelenni. A **Bejelentkezés** mezőben adja meg a saját Supply Chain Management URL-címét, vagy válassza ki a közelmúltbeli URL-címet a **Közelmúltbeli környezetek** listában, majd koppintson a **Csatlakozás** gombra.
+1. Nyissa meg a Pénzügy és műveletek (Dynamics 365) alkalmazást. A bejelentkezési oldalnak meg kell jelenni. A **Bejelentkezés** mezőben adja meg a saját Supply Chain Management URL-címét, vagy válassza ki a közelmúltbeli URL-címet a **Közelmúltbeli környezetek** listában, majd koppintson a **Csatlakozás** gombra.
 
     ![Bejelentkezési oldal.](media/mobile-app-sign-in.png "Bejelentkezési oldal")
 
@@ -81,7 +80,7 @@ Ahhoz, hogy elérhetővé tegye az eszközkezelési funkciókat a Finance and Op
 
 Az **Eszközkezelés** mobil munkaterület használatával kapcsolatos további tudnivalókat lásd az [Eszközkezelés mobil munkaterület használata](asset-management-mobile-workspace.md) oldalt.
 
-A Finance and Operations (Dynamics 365) mobilalkalmazással kapcsolatos további tudnivalókat lásd: [Mobilalkalmazás kezdőlapja](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+A Pénzügy és műveletek (Dynamics 365) mobilalkalmazással [kapcsolatos további tudnivalókat lásd a Mobilalkalmazás kezdőlapján](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

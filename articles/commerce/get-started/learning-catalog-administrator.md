@@ -9,22 +9,21 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 74d349f6c870c638ee42086e47635817366c3a1a
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 57b284663021bd60dcaf83cda2e10a319b33512a
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402592"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8693362"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-administrators"></a>Képzési katalógus a Dynamics 365 Commerce adminisztrátorok számára
 
 Gondoskodnia kell a rendszerek és adatok folyamatos áramlásáról, kiépítéséről és biztonságáról?
 
-A következő katalógus az alapismeretekből a meghatározott tartományokra, a legalapvetőbbtől a legkorszerűbb szintig van rendszerezve. Ha a tartalom több formátumban van, akkor tudatja Önnel, hogy kiválaszthassa a szükségleteknek leginkább megfelelő képzési formátumot. Ez a katalógus csak a Dynamics 365 Commerce-re jellemző funkciókat tartalmazza. A többi Finance and Operations alkalmazással megosztott funkciókkal kapcsolatos képzések a [Dynamics 365 Finance képzési katalógusban](../../finance/get-started/learning-catalog-administrator.md) olvashatók.
+A következő katalógus az alapismeretekből a meghatározott tartományokra, a legalapvetőbbtől a legkorszerűbb szintig van rendszerezve. Ha a tartalom több formátumban van, akkor tudatja Önnel, hogy kiválaszthassa a szükségleteknek leginkább megfelelő képzési formátumot. Ez a katalógus csak a Dynamics 365 Commerce-re jellemző funkciókat tartalmazza. A többi Pénzügyi és Művelet alkalmazással [megosztott funkciókról a Dynamics 365 Pénzügyi oktatókatalógus tartalmaz](../../finance/get-started/learning-catalog-administrator.md).
 
 ## <a name="get-started"></a>Első lépések<a name="get-started"></a>
 

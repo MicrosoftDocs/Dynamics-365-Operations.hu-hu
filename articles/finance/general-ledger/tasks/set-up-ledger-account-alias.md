@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerAccountAlias
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 60e1dc0e61fd11e5498966031fbe7e6e65af2c6f57a820e1c99df05c6ad7f8f2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 50b486cd01850049ab3d23117d994c3db1038124
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745796"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716887"
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Főkönyvi számlaalias beállítása
 
@@ -26,17 +26,14 @@ ms.locfileid: "6745796"
 
 Ez az eljárás bemutatja, hogyan lehet aliast létrehozni egy számlához, amely parancsikont biztosít egy számlaszámhoz. Ez az eljárás az USMF bemutatócéget használja.
 
-1. Ugorjon a Főkönyv > Számlatükör > Számlák > Főszámla-alias pontra.
-2. Kattintson az Új lehetőségre.
-3. Írjon egy értéket a Főkönyvi alias mezőbe.
-4. A Számlastruktúra mezőben válassza ki azt a struktúrát, amelyhez a számla és a dimenziók tartoznak.
-5. A Cég neve mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-6. A listában keresse meg és válassza ki azt a vállalatot, amelyre az alias vonatkozik.
-7. A listában kattintson a kijelölt sorban lévő hivatkozásra.
-8. A Főkönyviszámla-alias definíciója mezőben adja meg a számlát és a dimenziókat.
+1. Kattintson a Főkönyvi **számla > számlatükre > a > számla aliasnevét**, és kattintson az Új **gombra**.
+2. Írjon be **egy** értéket a Főkönyvi számla aliasneve mezőbe.
+3. A Számlastruktúra **mezőben** válassza ki azt a struktúrát, amelyhez a számla és a dimenziók tartoznak.
+4. A Vállalat **mező** listájában válassza ki azt a vállalatot, amelyre az alias vonatkozik.
+5. A Főkönyvi **számla aliasdefiníció mezőjében** adja meg a számlát és a dimenziókat.
     * A számla és a dimenziók adatai a gyorsparancs használata esetén fognak megjelenni.  
-9. A Kezdeti fókusz mezőben válassza ki azt a dimenziót, amelyre a fókusz kerül az alias használata esetén.
-    * A gyorsparancs beírása után a számla és a dimenziók adatai megjelennek, a Kezdeti fókusz mező az lesz, ahol a kurzor vagy a fókusz helyezkedik el.  
+6. A Kezdeti **fókusz mezőben** válassza ki azt a dimenziót, amely az alias használata során fókuszt fogja alkalmazni.
+    * Miután beírta a parancsikont, és beírta a számlát és a dimenziókat, **a** Kezdeti fókusz mezőben látható a kurzor vagy a fókusz áthelyezése.  
 
 
 

@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: bf7178888e39a5f26ae92e77df9c996374b76bf3
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 933c8211276c1335a6a81bf4a8cb1c3f270762d4
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323665"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689242"
 ---
 # <a name="supported-composite-data-types-for-electronic-reporting-formulas"></a>Támogatott összetett adattípusok az elektronikus jelentési képletekben
 
@@ -81,7 +81,7 @@ A *rekordlista* a *rekord* típusba sorolt cikkek listáját tartalmazza. Által
 
 Alapértelmezés szerint a *rekordlista* rekordjai egymást követő sorrendben lesznek elérve. Egy adott rekord eléréséhez használhatja az [INDEX](er-functions-list-index.md) függvényt és megadhatja az *egész szám* indexet.
 
-Az *rekordlista* alapértelmezett értéke **üres**. Az [ISEMPTY](/er-functions-list-isempty.md) függvénnyel kiértékelheti, hogy üres-e egy *rekordlista*.
+Az *rekordlista* alapértelmezett értéke **üres**. Az [ISEMPTY](er-functions-list-isempty.md) függvénnyel kiértékelheti, hogy üres-e egy *rekordlista*.
 
 > [!NOTE]
 > Ha egy *rekordlista* üres, akkor a benne található *rekord* mezőértékének lekérésére irányuló kísérlet kivételt ad futásidőben. Ha meg szeretné tudni, hogyan lehet megakadályozni az ilyen típusú futásidejű kivételeket, olvassa el az [Üres listaesetek megfontolása](er-components-inspections.md#i9) részt.

@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: benebotg
 ms.search.validFrom: 2020-07-15
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: 21910c61cc330e0c9292990b7b1914f56bac844c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 787d0c4ebcf83d6bfec05943f2bb0ddc5961a93a
+ms.sourcegitcommit: e18ea2458ae042b7d83f5102ed40140d1067301a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7570753"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8736033"
 ---
 # <a name="dual-use-goods"></a>Kettős felhasználású áruk
 
@@ -34,7 +34,7 @@ Vegyük például a következő esetet:
 2. Az X-100 termék **Kiadott termék adatai** oldala azt jelzi, hogy ez egy kettős felhasználású áru. Együttesen a kód, a kategória, a csoport és a rendszer határozza meg, hogy melyik exportellenőrzési osztályozásba a termék tartozik.
 3. A **kettős felhasználású tanúsítványok** lap tartalmazza az X-100 termék tanúsítványát a Franciaországba való szállításhoz. Ez a tanúsítvány 2020. január 1-jén lejár.
 4. 2020. június 17-én értékesítési rendelést hoz létre egy Franciaországban működő vevői vállalatnak, és a rendelés tartalmaz X-100-es terméket.
-5. Az értékesítési rendelés mentésekor a rendszer a következő adatokat határozza meg:
+5. Az értékesítési rendelés megerősítésekor a rendszer a következő adatokat határozza meg:
 
     1. Tartalmaz a rendelés a kettős felhasználású termékeket?
     2. Ha a rendelés kettős felhasználású árukat tartalmaz, akkor a célországnak kettős használatú tanúsítványokra van szüksége?

@@ -1,24 +1,24 @@
 ---
 title: Költségviselkedési irányelv létrehozása egy költségellenőrző-egységhez
 description: A költségműködés a költségek fix vagy változó osztályozása.
-author: ShylaThompson
+author: twheeloc
 ms.date: 06/27/2017
 ms.topic: business-process
 ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostBehaviorRule
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 77e79b4959d546fd04c9705220c7f7a4c4a0ffd0621a66553adbe1a85b6cce39
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 653bfb69c4ca118c700755cb95a6b349d2c6bbad
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712267"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735142"
 ---
 # <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Költségviselkedési irányelv létrehozása egy költségellenőrző-egységhez
 
@@ -28,60 +28,60 @@ A költségműködés a költségek fix vagy változó osztályozása. Az irány
 
 
 ## <a name="create-a-cost-behavior-hierarchy"></a>Költségműködési hierarchia létrehozása
-1. Lépjen a Költségkönyvelés > Dimenziók > Dimenzióhierarchiák pontra.
-2. Kattintson az Új lehetőségre.
-3. Kattintson a Létrehozás lehetőségre.
-4. A Dimenzióhierarchia neve mezőbe írja be a következőt: „Költségműködés hierarchiája”.
-5. A Dimenzió mezőben adjon meg vagy válasszon ki egy értéket.
+1. Ugrás a Dimenziók **és > dimenziók > dimenzióhierarchiákhoz**.
+2. Kattintson az **Új** elemre.
+3. Kattintson az **Új** > lehetőségre.
+4. A Dimenzióhierarchia **neve** mezőbe írja be a "Költség viselkedése".
+5. A Dimenzió **mezőben** adjon meg vagy válasszon ki egy értéket.
     * Válassza ki a Költségösszetevőket.  
-6. Kattintson a Mentés gombra.
-7. Kattintson a Hierarchia megtekintése lehetőségre.
-8. Kattintson az Új lehetőségre.
-9. Írjon be egy értéket a Csomópont mezőbe.
+6. Kattintson a **Mentés** gombra.
+7. Kattintson a Hierarchia **megtekintése elemre**.
+8. Kattintson az **Új** elemre.
+9. A Csomópont **neve** mezőbe írjon be egy értéket.
     * Adja meg a Rögzített költséget.  
 10. A fán jelölje be a „Költségműködés hierarchiája” lehetőséget.
-11. Kattintson az Új lehetőségre.
-12. Írjon be egy értéket a Csomópont mezőbe.
+11. Kattintson az **Új** elemre.
+12. A Csomópont **neve** mezőbe írjon be egy értéket.
     * Adja meg a Változó költséget.  
-13. Kattintson a Mentés gombra.
+13. Kattintson a **Mentés** gombra.
 14. A fán jelölje be a „Költségműködés hierarchiája\Rögzített költség” lehetőséget.
-15. Kattintson az Új lehetőségre.
+15. Kattintson az **Új** elemre.
 16. A listában jelölje meg a kiválasztott sort.
-17. A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.
-    * A dimenziótagok tartománya tartalmazhat szüneteket, de a tagok nem lehetnek átfedésben.  
-18. A Céldimenziótag mezőben adjon meg, vagy válasszon ki egy értéket.
-    * A dimenziótagok tartománya tartalmazhat szüneteket, de a tagok nem lehetnek átfedésben.  
+17. Adjon meg **vagy válasszon ki egy értéket a From dimenziótag** mezőben.
+    * A dimenziótagok tartománya hiányokat tartalmazhat, de a tagok nem fedhetik át egymást.  
+18. A To dimenziótag **mezőben** adjon meg vagy válasszon ki egy értéket.
+    * A dimenziótagok tartománya hiányokat tartalmazhat, de a tagok nem fedhetik át egymást.  
 19. A fán jelölje be a „Költségműködés hierarchiája\Változó költség” lehetőséget.
-20. Kattintson az Új lehetőségre.
+20. Kattintson az **Új** elemre.
 21. A listában jelölje meg a kiválasztott sort.
-22. A Forrásdimenzió-tag mezőben adjon meg vagy válasszon ki egy értéket.
-    * A dimenziótagok tartománya tartalmazhat szüneteket, de a tagok nem lehetnek átfedésben.  
-23. A Céldimenziótag mezőben adjon meg, vagy válasszon ki egy értéket.
-    * A dimenziótagok tartománya tartalmazhat szüneteket, de a tagok nem lehetnek átfedésben.  
-24. Kattintson a Mentés gombra.
+22. Adjon meg **vagy válasszon ki egy értéket a From dimenziótag** mezőben.
+    * A dimenziótagok tartománya hiányokat tartalmazhat, de a tagok nem fedhetik át egymást.  
+23. A To dimenziótag **mezőben** adjon meg vagy válasszon ki egy értéket.
+    * A dimenziótagok tartománya hiányokat tartalmazhat, de a tagok nem fedhetik át egymást.  
+24. Kattintson a **Mentés** gombra.
 
 ## <a name="create-the-policy-and-rules"></a>Az irányelv és a szabályok létrehozása
-1. Ugorjon a Költségkönyvelés > Irányelvek > Költségműködési irányelvek lehetőségre.
-2. Kattintson az Új lehetőségre.
-3. Írjon be egy értéket az Irányelv neve mezőbe.
-4. A Költségösszetevő-dimenzió mezőben adjon meg vagy válasszon ki egy értéket.
+1. Menjen a Költségkönyvelés **> irányelvei > szabályokhoz**.
+2. Kattintson az **Új** elemre.
+3. A Házirend **neve mezőbe** írjon be egy értéket.
+4. A Költségelem **dimenzióhierarchia mezőben** adjon meg vagy válasszon ki egy értéket.
     * Válassza ki a most létrehozott irányelvhierarchiát.  
-5. A Költségobjektum dimenzióhierarchia mezőben adjon meg vagy válasszon ki egy értéket.
+5. A Költségobjektum **dimenzióhierarchia mezőben** adjon meg vagy válasszon ki egy értéket.
     * Válassza ki a szervezetet.  
-6. Kattintson a Mentés gombra.
-7. Kattintson az Új lehetőségre.
+6. Kattintson a **Mentés** gombra.
+7. Kattintson az **Új** elemre.
 8. A listában jelölje meg a kiválasztott sort.
-9. A Költségösszetevő dimenzióhierarchia-csomópont mezőben adjon meg vagy válasszon ki egy értéket.
+9. A Költségelem **dimenzióhierarchia csomópont mezőjében** adjon meg vagy válasszon ki egy értéket.
     * Bontsa ki a hierarchiát a Változó költség kiválasztásához.  
-10. A Költségobjektum dimenzióhierarchia-csomópont mezőben adjon meg vagy válasszon ki egy értéket.
+10. A Költségobjektum-dimenzió **hierarchia csomópont mezőjében** adjon meg vagy válasszon ki egy értéket.
     * Alapértelmezés szerint a változó százalékos értéke 100 százalék.  
-11. Kattintson a Költség-ellenőrzőegység irányelv-hozzárendelései lehetőségre.
-12. Kattintson az Új lehetőségre.
+11. Kattintson a **Költségellenőrzési egység Irányelv-hozzárendelései hivatkozásra**.
+12. Kattintson az **Új** elemre.
 13. A listában jelölje meg a kiválasztott sort.
-14. Adja meg a dátumot az Érvényesség kezdete a könyvelés dátumától mezőben.
+14. Adjon meg **egy** dátumot az Érvényesség a könyvelési dátumtól mezőben.
     * A szabályok naprakészek, és egy felhasználó vagy a rendszer is lejárthat minősíthet egy szabályt, ha annak újabb verziója jön létre.  
-15. A Költség-ellenőrzőegység mezőben adjon meg vagy válasszon ki egy értéket.
-16. Kattintson a Mentés gombra.
+15. A Költségellenőrzési **egység mezőben** adjon meg vagy válasszon ki egy értéket.
+16. Kattintson a **Mentés** gombra.
 
 
 

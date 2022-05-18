@@ -8,7 +8,7 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "14151"
 - intro-internal
@@ -17,12 +17,12 @@ ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2019-11-06
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: d359e3ceef0fb7213d52aeb265da2e75120ae223
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 59613e41eed95c248595be006f13fb2f32854728
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984002"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713218"
 ---
 # <a name="customer-payment-insights-preview"></a>Vevő fizetési információi (Előzetes)
 
@@ -69,7 +69,7 @@ Küldjön e-mailt a [Vevői kifizetéssel kapcsolatos háttérinformációk (el�
 
 ## <a name="privacy-notice"></a>Adatvédelmi nyilatkozat
 
-Az előnézetek (1) kevesebb adatvédelmi és biztonsági szintet használnak, mint az üzemeltetési szolgáltatás, (2) nem szerepelnek a szolgáltatás szolgáltatásiszint-szerződésében, (3) nem használhatók a személyes adatok vagy más olyan adatok feldolgozására, amelyek jogi vagy jogszabályban előírt megfelelési követelmények alá esnek, és Dynamics 365 Finance (4) korlátozottan támogatott.
+Az előnézetek (1) kisebb adatvédelmi és biztonsági intézkedésekre lehetnek szükség, mint a Dynamics 365 Pénzügy és műveletek szolgáltatás, (2) nem szerepelnek a szolgáltatás szolgáltatásiszint-szerződésében, (3) nem szabad használni a személyes adatok vagy más olyan adatok feldolgozására, amelyekre jogi vagy jogszabályban előírt megfelelési követelmények vonatkoznak, és (4) korlátozottan támogatja.
 
 
 

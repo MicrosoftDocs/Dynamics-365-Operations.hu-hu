@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 323a1e6d426208a880a72dd89f7be04bacbf13a8e6c5d8ab7599217cfc18f2c0
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 978c99ddd3e56e6699ab128a154a5594685d5956
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6720574"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712493"
 ---
 # <a name="configure-settlement"></a>Kiegyenlítés konfigurálása
 
@@ -28,7 +28,7 @@ ms.locfileid: "6720574"
 
 A tranzakciók elrendezésének ideje és módja összetett feladat lehet, ezért kiemelten fontos, hogy megértse és pontosan meghatározza az ön üzleti igényeinek megfelelő paramétereket. Ez a témakör a kötelezettségek és a kinnlevőségek elrendezéséhez használt paramétereket mutatja be. 
 
-A következő paraméterek befolyásolják, hogyan hajtja végre a Microsoft Dynamics 365 Finance a kiegyenlítéseket. A kiegyenlítés az a folyamat, amikor a számlát kiegyenlítjük egy kifizetéssel vagy jóváírással szemben. Ezek a paraméterek a **Kiegyenlítés** területen, a **Kinnlevőségek paraméterei** és a **Kötelezettségek paraméterei** lapokon találhatók.
+A következő paraméterek a kiegyenlítések feldolgozását befolyásolják a Microsoft Dynamics 365 Pénzügyben. A kiegyenlítés az a folyamat, amikor a számlát kiegyenlítjük egy kifizetéssel vagy jóváírással szemben. Ezek a paraméterek a **Kiegyenlítés** területen, a **Kinnlevőségek paraméterei** és a **Kötelezettségek paraméterei** lapokon találhatók.
 
 - **Automatikus kiegyenlítés** – Állítsa be az **Igen** értéket, ha a tranzakciót automatikusan más nyitott tranzakciókkal szemben kell állítani feladáskor. Ha a **Nem** értéket állítja be, a felhasználók manuálisan egyenlíthetik ki a tranzakciókat, amikor kifizetést adnak meg, vagy később a **Tranzakciók kiegyenlítése** lap segítségével.
 - **Készpénzfizetési engedmény adminisztrációja** – Határozza meg, hogyan [kell kezelni a kézpénzfizetési engedményt, ha egy számla túlfizetett](cash-discount-handling-overpayments.md). Túlfizetés esetén a készpénzfizetési engedmény csökkenthető, kezelhető különbözetként, vagy maradhat a szállító vagy a vevő számláján.

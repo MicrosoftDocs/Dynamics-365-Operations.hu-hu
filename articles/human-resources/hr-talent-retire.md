@@ -1,6 +1,6 @@
 ---
-title: Nyugdíjba vonulása Dynamics 365 Talent - Vonzza és beépített alkalmazásokat
-description: Ez a témakör a nyugdíjazását írja le Dynamics 365 Talent - Vonzza és beépített alkalmazásokat.
+title: Nyugdíjazás Dynamics 365 Talent – and onboard alkalmazások ki nyugdíjazása
+description: Ez a témakör a – jó és a külső alkalmazások ki- és nyugdíjazását Dynamics 365 Talent írja le.
 author: twheeloc
 ms.date: 01/27/2022
 ms.topic: article
@@ -8,72 +8,71 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HcmBenefitEligibilityDetail, SysPolicyListPage, SysPolicySourceDocumentRuleType, BenefitWorkspace, HcmBenefitSummaryPart
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 16441
 ms.assetid: 4ad0106f-5b07-4fd5-bc1a-5834fa9b198e
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
-ms.openlocfilehash: df33f35f66e356c3c2a99f0d81ebba1d0f34b5d9
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: e17b92621f05ad8483a7c578bfaece58a530df2d
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069404"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8692002"
 ---
-# <a name="dynamics-365-talent-attract-and-onboard-apps-retirement"></a>Dynamics 365 Talent: Attract és az Onboard alkalmazások nyugdíjazása
+# <a name="dynamics-365-talent-attract-and-onboard-apps-retirement"></a>Dynamics 365 Talent: Attract és a hajó fedélzetre telepített alkalmazásai – nyugdíjazás
 
 
-2019 decemberében bejelentettük a 2022. február 1-i nyugdíjazását Dynamics 365 Talent - Vonzza és beépített alkalmazásokat, így ügyfeleinknek két évet tervezhetnek.
+2019. decemberben leirasztjuk a 2022 Dynamics 365 Talent . február 1-jén kivetkedő – önzoktató és a hajóra telepített alkalmazásokat, így a vevőknek két év áll a tervben.
 
-Az alkalmazások megszüntetésével kapcsolatos további információkért lásd:
- - [Nyugdíjba vonuló Dynamics 365 Talent - Vonzza és Dynamics 365 Talent: Onboard Alkalmazások elemre](https://community.dynamics.com/365/humanresources/b/dynamics365forhumanresources/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
- - [Sikeresebb munkaerő felépítése Dynamics 365 Human Resources](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/12/06/building-a-more-successful-workforce-with-dynamics-365-human-resources)
+Az alkalmazások kivetlével kapcsolatos további tudnivalókat lásd:
+ - [Retiing Dynamics 365 Talent – visszahozaat és alkalmazások Dynamics 365 Talent: Onboard](https://community.dynamics.com/365/humanresources/b/dynamics365forhumanresources/posts/retiring-dynamics-365-talent-attract-and-onboard-apps)
+ - [Sikeresebb munkaerő építését a Dynamics 365 Human Resources](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/12/06/building-a-more-successful-workforce-with-dynamics-365-human-resources)
 
-Továbbra is támogatjuk Dynamics 365 Human Resources, amely segít ügyfeleinknek olyan munkaerő-betekintést szerezni, amely ahhoz szükséges, hogy több területen is adatvezérelt munkavállalói élményt építsenek ki, például:
+A rendszer továbbra Dynamics 365 Human Resources is támogatja a tapasztalatokat, amelyek segítséget nyújtanak a vevőknek ahhoz, hogy több területen adatvezérelt alkalmazotti tapasztalatokat készítsenek, például:
 
 - Kompenzáció
 - Juttatások
 - Szabadság és távollét
 - Megfelelés
-- Payroll
+- Bérszámfejtés
 - Teljesítmény-visszajelzés
 - Képzés és tanúsítványok
 - Önkiszolgáló programok
 
-## <a name="dynamics-365-talent-apps-retirement-faq"></a>Dynamics 365 Talent alkalmazások nyugdíjba vonulásával kapcsolatos GYIK
+## <a name="dynamics-365-talent-apps-retirement-faq"></a>Dynamics 365 Talent alkalmazások – nyugdíjazás – gyakori kérdések
 
-### <a name="what-is-the-user-experience-for-both-dynamics-365-talent---attract-and-onboard-apps-starting-february-1-2022"></a>Milyen a felhasználói élmény mindkettőnél Dynamics 365 Talent – 2022. február 1-jétől az Attract és Onboard alkalmazások?
+### <a name="what-is-the-user-experience-for-both-dynamics-365-talent---attract-and-onboard-apps-starting-february-1-2022"></a>Milyen felhasználói élményben lesz része Dynamics 365 Talent a 2022. február 1.-jén kezdődő Mindkét alkalmazásnak – Az 2022. február 1-jén kezdődően?
 
-A felhasználók nem fogják tudni használni az alkalmazásokat, és átirányítják őket egy nyugdíjas oldalra.
+A felhasználók nem tudják használni a pályázatokat, ezért a rendszer egy nyugdíjazási lapra irányítják át őket.
 
-### <a name="can-customers-continue-to-export-data-for-both-dynamics-365-talent---attract-and-onboard-apps-after-february-1-2022"></a>Továbbra is exportálhatják-e az ügyfelek mindkét adatait Dynamics 365 Talent – 2022. február 1. után vonzza az alkalmazásokat és az Onboard alkalmazásokat?
+### <a name="can-customers-continue-to-export-data-for-both-dynamics-365-talent---attract-and-onboard-apps-after-february-1-2022"></a>A vevők továbbra is exportálni Dynamics 365 Talent tudjanak adatokat mind az - után, hogy 2022. február 1.,
   
-Nem, 2019 decemberében bejelentették a nyugdíjazást, és 2022. február 1-ig biztosították a szükséges exportképességeket. 
+Nem, a nyugdíjazás 2019 decemberében volt szükséges, 2022. február 1-ig. 
 
-### <a name="will-the-customers-data-related-to-both-dynamics-365-talent---attract-and-onboard-apps-in-dataverse-be-deleted-after-february-1-2022"></a>Az ügyfél adatai mindkettőre vonatkoznak Dynamics 365 Talent - Vonzz be és fedélzeti alkalmazásokat Dataverse 2022. február 1. után törölni kell?
+### <a name="will-the-customers-data-related-to-both-dynamics-365-talent---attract-and-onboard-apps-in-dataverse-be-deleted-after-february-1-2022"></a>Törlődnek a vevő Dynamics 365 Talent Dataverse adatai mind a - megfelelő, mind a külső alkalmazásokból 2022. február 1.után?
 
-Nem, a Dataverse entitások az ügyfélnél maradnak Microsoft Dataverse környezetbe nyugdíjba vonulás után is, hacsak nem törlik vagy távolítják el a Human Capital Management Talent megoldást.
+Nem, az entitások Dataverse Microsoft Dataverse a kivezetés után is a vevő környezetében maradnak, hacsak nincs törölve vagy eltávolítva a Human Capital Management Talent megoldás.
 
-### <a name="i-know-the-name-of-the-talent-environment-how-can-i-see-the-attract-and-onboard-data-in-dataverse"></a>Ismerem a Talent környezet nevét. Hogyan láthatom az Attract és Onboard adatokat Dataverse?
+### <a name="i-know-the-name-of-the-talent-environment-how-can-i-see-the-attract-and-onboard-data-in-dataverse"></a>Jól ismeri a Tehetség környezet nevét. Hogyan lehet látni a 2019-et és a hajóra vonatkozó adatokat Dataverse?
 
-1.  bejelentkezni Power Apps :https://make.powerapps.com
-2.  Válassza ki azt a környezetet, amelyben látni szeretné az Attract és Onboard adatokat.
-3.  Menj **Dataverse > Táblázatok**. 
-4.  Írja be az "msdyn_" parancsot **Keresés**. Ha látja az "msdyn_" + táblanevekkel kezdődő táblák listáját (például: msdyn_candidate), akkor megtalálta az Attract és Onboard adatokat tartalmazó környezetet.
+1.  Power Apps bejelentkezés:https://make.powerapps.com
+2.  Válassza ki, hogy milyen környezetben szeretné látni a berakodva és a hajóra vonatkozó adatokat.
+3.  Ugrás a **Dataverse > táblákra** 
+4.  Írja be a "msdyn_" ot a **keresésbe**. Ha a "msdyn_" és a táblanevek (például: msdyn_candidate) nevével kezdődő táblák listáját látja, akkor a környezetben a Megfelelő és a Onboard adatok találhatók.
 
 [![Power Apps](./media/Powerapps.png)](./media/Powerapps.png)
 
-### <a name="i-dont-know-the-name-of-the-talent-environment-how-can-i-find-the-environment-that-has-the-data-for-the-dynamics-365-talent-attract-and-dynamics-365-talent-onboard-applications"></a>A Talent környezet nevét nem tudom. Hogyan találhatom meg azt a környezetet, amely tartalmazza a Dynamics 365 Talent: Attract és Dynamics 365 Talent: Onboard alkalmazások?
+### <a name="i-dont-know-the-name-of-the-talent-environment-how-can-i-find-the-environment-that-has-the-data-for-the-dynamics-365-talent-attract-and-dynamics-365-talent-onboard-applications"></a>Nem tudom a Tehetség környezet nevét. Hogyan lehet megtalálni azt a környezetet, amely az adatokat és az alkalmazásokat Dynamics 365 Talent: Attract Dynamics 365 Talent: Onboard tartalmaz?
 
-1)  bejelentkezni Power Platform admin központ:https://admin.powerplatform.microsoft.com/
+1)  Jelentkezzen be a rendszergazdai Power Platform központba: https://admin.powerplatform.microsoft.com/
 2)  Válassza a **Környezetek** lehetőséget.
-3)  Válasszon ki egy adott környezetet az értékeléshez.
-4)  Válassza ki **Erőforrások > Dynamics 365 alkalmazások**.
-5)  Ha látod **HCM Talent** megoldás telepítve, ebben a környezetben kell Attract és Onboard adatokat tárolni. 
+3)  Válassza ki az értékelni kívánt környezetet.
+4)  Válassza az **Erőforrások > Dynamics 365-alkalmazásokhoz**.
+5)  Ha azt látja, hogy **a HCM Talent megoldás** telepítve van, akkor ebben a környezetben tárolni kell a Megfelelő és a Onboard adatokat. 
 
 [![Power Platform](./media/HCMTalent.png)](./media/HCMTalent.png)
 
 > [!NOTE] 
-> A **HCM Talent** megoldást is alkalmazzák Dynamics 365 Human Resources.
+> A **HCM Talent megoldás** a következőben is használatos:Dynamics 365 Human Resources

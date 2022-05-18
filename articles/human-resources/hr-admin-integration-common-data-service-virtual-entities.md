@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CDSIntegrationAdministration
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 7521
 ms.assetid: ''
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-05
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: f7ffe522f0f17a21280e53728c6efc2823743733
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: d7f4d3770c754d2a7974d17fc7c40462ac8fc642
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8069146"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691386"
 ---
 # <a name="configure-dataverse-virtual-tables"></a>A Dataverse virtuális tábláinak konfigurálása
 
@@ -122,10 +121,10 @@ A következő lépésben a virtuális tábla adatforrásának a Power Apps körn
 
 4. A **Megoldás-állapotfelügyeleti központ** felületén válassza ki az alkalmazásoldal jobb felső sarkában található **Összetett keresés** ikont.
 
-5. A **Speciális keresés** oldalon, a **Keres** legördülő listából válassza ki **Finance and Operations virtuális adatforrás konfigurációk**.
+5. Válassza a **Speciális keresés** lap **Leugró** lista **Pénzügy és műveletek virtuális adatforrás-konfigurációit**.
 
    > [!NOTE]
-   > Az előző beállítási lépés virtuális tábla alkalmazás telepítése néhány percig is eltarthat. Ha **Finance and Operations virtuális adatforrás konfigurációk** nem érhető el a listában, várjon egy percet, és frissítse a listát.
+   > Az előző beállítási lépés virtuális tábla alkalmazás telepítése néhány percig is eltarthat. Ha **a Pénzügy és műveletek virtuális** adatforrás-konfigurációi nem érhetők el a listában, várjon egy percet, majd frissítse a listát.
 
 6. Válassza az **Eredmények** lehetőséget.
 

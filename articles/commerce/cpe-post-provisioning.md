@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce értékelési környezet konfigurálása
 description: Ez a témakör bemutatja, hogyan lehet konfigurálni egy Microsoft Dynamics 365 Commerce értékelési környezetet a létesítést követően.
 author: psimolin
-ms.date: 12/10/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-12-10
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 5883a6e68628d706fa19d7d23b68f17007c32890
-ms.sourcegitcommit: eef5d9935ccd1e20e69a1d5b773956aeba4a46bc
+ms.openlocfilehash: d9738700ca495d54c91ad91aa9c5a3d32c95a5a5
+ms.sourcegitcommit: 4a973ac0e7af0176270a8070a96a52293567dfbf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/11/2021
-ms.locfileid: "7913727"
+ms.lasthandoff: 05/13/2022
+ms.locfileid: "8747637"
 ---
 # <a name="configure-a-dynamics-365-commerce-evaluation-environment"></a>Dynamics 365 Commerce értékelési környezet konfigurálása
 
@@ -39,7 +39,9 @@ Miután a Commerce értékelési környezet teljes körűen kiépítésre kerül
 1. A listából válassza ki a környezetét.
 1. Kattintson a jobb oldalon található környezeti információk **Bejelentkezés a környezetbe** elemére. Megnyílik a Commerce központ modul.
 1. Győződjön meg róla , hogy az **USRT** jogi személy van kiválasztva a jobb felső sarokban.
-2. Menjen a Commerce >, és ellenőrizze, hogy van-e **a** **ProductSearch.UseAzureSearch paraméter igaz beállítású** **bejegyzése**. Ha hiányzik ez a bejegyzés, hozzáadhatja ezt a bejegyzést, és teljes szinkronizálást futtathat **> az eCommerce webhelyhez társított** Commerce Scale egység számára.
+1. Menjen a **Commerce rendszer paramétereihez \> : Konfigurációs paraméterek**, és ellenőrizze, hogy van-e bejegyzés a **ProductSearch.UseAzureSearch** fájlhoz, és hogy az érték igaz értékre van-e **állítva**. Ha hiányzik ez a bejegyzés, hozzáadhatja, az értéket igaz értékre állíthatja, **·** **\>** majd az e-commerce webhelyhez társított Commerce Scale Unit egységre vonatkozó Teljes adatszinkronizálási lehetőséget választhatja.
+1. Ugrás a **Retail and Commerce \> Headquarters telepítő \> Commerce ütemezője \>, a Commerce inicializálása ütemezőjére** A Commerce Scheduler **inicializálása** menü **·** **Igen** beállításúra állítsa a Létező konfiguráció törlése parancsot, majd válassza **az OK elemet.**
+1. Ha csatornákat szeretne hozzáadni a Commerce Scale Unit egységhez, **válassza a Retail and Commerce \> Headquarters \> beállítás commerce ütemező \> csatorna-adatbázisát**, majd a bal oldali ablakban válassza ki a Commerce Scale Unit beállítást. Adja hozzá a Kiskereskedelmi csatorna **gyorsblokkján** az AW online **áruházat,** az AW Business online **áruházat** és a Gyár bővített online áruházi csatornáit **.** A POS használata esetén kiskereskedelmi áruházakat is hozzáadhat (**például San** **Fransis, San Francisco** **és San Grace**).
 
 A Commerce központ alkalmazásban történő létesítés utáni tevékenységek során győződjön meg arról, hogy a **USRT** jogi személy mindig be van jelölve.
 
@@ -85,6 +87,7 @@ Az értékelési webhely beállításának megkezdéséhez a Commerce alkalmazá
 1. Alapértelmezett nyelvnek válassza az **en-us** elemet.
 1. Hagyja az **Útvonal** mező értékét változatlanul.
 1. Válassza ki az **OK** lehetőséget. Megjelenik a webhelyen lévő oldalak listája.
+1. Ismételje meg a 2-7 **AdventureWorks**. lépést a webhelyre (**amely az AW online** áruház csatornájára leképezi) **AdventureWorks** és az üzleti webhelyet (**amely az AW üzleti online áruház csatornájára leképezi**). **Ha a Gyár** webhely Elérési útja mező üres, AdventureWorks akkor hozzá kell adni a két hely elérési útvonalát (például "aw" és "awbusiness").
 
 ## <a name="enable-jobs"></a>Munkák engedélyezése
 
@@ -107,7 +110,7 @@ A feladatok engedélyezéséhez a Kereskedelemben kövesse az alábbi lépéseke
     1. A Művelet panel **Kötegelt feladat** lapján válassza az **Állapot módosítása** lehetőséget.
     1. Válassza a **Megszakítás**, majd az **OK** elemet.
 
-1. Ha a feladat állapota **Visszatartva, hajtsa végre a következő** lépéseket:
+1. Ha a feladat állapota **Visszatartva**, hajtsa végre a következő lépéseket:
 
     1. Válassza ki a rekordot.
     1. A Művelet panel **Kötegelt feladat** lapján válassza az **Állapot módosítása** lehetőséget.
@@ -149,6 +152,28 @@ A Commerce értékelési környezete nem kötelező funkcióinak konfigurálás�
 
 > [!NOTE]
 > A kereskedelmi értékelő környezetek egy előre feltöltött Azure Active Directory (Azure AD) üzleti-fogyasztói (B2C) bérlőt tartalmaznak bemutató célokra. A saját Azure AD B2C bérlő konfigurálása nem szükséges az értékelő környezetek esetében. Ha azonban az értékelő környezetet úgy konfigurálja, hogy a saját Azure AD B2C bérlőjét használja, kérjük, győződjön meg róla, hogy az Azure Portálon keresztül hozzáadja a ``https://login.commerce.dynamics.com/_msdyn365/authresp`` címet válasz URL-ként a Azure AD B2C alkalmazásban.
+
+## <a name="troubleshooting"></a>Hibaelhárítás
+
+### <a name="site-builder-channel-list-is-empty-when-configuring-site"></a>Üres a helyszerkesztő csatornalistja a hely konfigurálásakor.
+
+Ha a webhelyszerkesztő nem mutat online áruházi csatornákat, a központ gondoskodik arról, hogy a csatornákat hozzáadják a Commerce Scale Unit [egységhez](#before-you-start) a fenti Kezdés előtt szakaszban leírtak szerint. Futtassa a Commerce **Scheduler** inicializálását is Úgy, hogy **a Létező konfigurációs érték** törlése beállítás Igen értékre van **állítva**.  A lépések befejezése **után** a Csatorna-adatbázis oldalon (**Retail and Commerce Headquarters \> beállítás Commerce \> scheduler \> Channel database**) **futtassa a 9999-es** feladatot a Commerce Scale Unit osztályon.
+
+### <a name="color-swatches-are-not-rendering-on-the-category-page-but-are-rendering-on-the-product-details-page-pdp-page"></a>A színadatok nem a kategóriaoldalon, hanem a termék részletei (PDP) oldalon adatokat tartalmaznak.
+
+A következő lépések segítségével biztosíthatja, hogy a szín- és méretméretek finomíthatók legyen.
+
+1. A központ beállítási csatornakategóriáihoz **és \> termékattribútumainak a beállításához menjen a Retail és a Commerce \> Channel beállításához**.
+1. A bal oldali ablakban jelölje ki az online áruház csatornáját, majd válassza az Attribútum metaadatainak **beállítása lehetőséget**.
+1. Állítsa Igen **beállításra** **az Attribútum megjelenítése a csatornán beállítást, állítsa** **·** **Igen** beállításra a Lehet finomhangítható beállítást, majd válassza **a Mentés lehetőséget.** 
+1. Térjen vissza az online áruház csatornaoldalára, és válassza a Csatornafrissítések közzététele **lehetőséget**.
+1. Menjen a **Retail and Commerce \> Headquarters beállításához \> a Commerce scheduler \> Channel adatbázishoz** **, és futtassa a 9999-es** feladatot a Commerce Scale Unit osztályon.
+
+### <a name="business-features-dont-appear-to-be-turned-on-for-the-adventureworks-business-site"></a>Úgy látszik, hogy az üzleti funkciók nincsenek bekapcsolva az üzleti webhelyen AdventureWorks.
+
+A központnál győződjön meg arról, hogy az online **áruház** **csatornája a B2B vevőtípushoz van beállítva**. Ha a **Vevő típusa** **B2C**, új csatornát kell létrehozni, mert a meglévő csatorna nem szerkeszthető. 
+
+A Commerce 10.0.26-os **és korábbi verziójában szállított bemutatóadatoknál egy hiba történt, ahol az AW Business online áruház** csatornája hibás volt. A megoldás megoldás egy új csatorna létrehozása ugyanazokkal a **beállításokkal** és konfigurációval, kivéve a Vevőtípust, amelyet **B2B-re kell beállítani**.
 
 ## <a name="additional-resources"></a>További erőforrások
 

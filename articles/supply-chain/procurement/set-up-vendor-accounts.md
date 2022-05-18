@@ -1,7 +1,7 @@
 ---
 title: Szállítókódok beállítása
 description: Ez a témakör ismerteti azokat az információkat, amelyeket egy új szállítói számla létrehozása esetén meg kell adnia.
-author: Henrikan
+author: GalynaFedorova
 ms.date: 02/03/2020
 ms.topic: article
 ms.prod: ''
@@ -12,15 +12,15 @@ ms.reviewer: kamaybac
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: b9cbfd3a3c1afd794814bbbae07e1dc31eb9f181
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 5d524ff99cba733fdd607d9708abba440248d6cc
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7565471"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676974"
 ---
 # <a name="set-up-vendor-accounts"></a>Szállítókódok beállítása
 
@@ -63,7 +63,7 @@ Szállítói kapcsolattartókat előröl kezdve is létrehozhat. Másik lehetős
 
 Kapcsolattartás rögzítése nem törölhető, ha egy dokumentumra hivatkozik a kapcsolattartási adat. Ehelyett inaktiválhatja a kapcsolattartót.  
 
-A szállítói kapcsolattartókat hozzáadhatja a személyes kapcsolattartókhoz a Microsoft 365-ben. Azonban először be kell állítania a Supply Chain Management és a Microsoft 365 közötti szinkronizálást mind a Microsoft Exchange Server szinkronizálásban, mind a Microsoft Outlook beállítási varázslóban.
+A szállítói kapcsolattartókat hozzáadhatja a Microsoft 365 személyes kapcsolattartókhoz. Azonban először be kell állítania a Supply Chain Management és Microsoft 365 közötti szinkronizálást mind Microsoft Exchange Server szinkronizálásban, mind a Microsoft Outlook beállítási varázslóban.
 
 ## <a name="vendors-in-different-legal-entities"></a>Szállítók különböző jogi személyekként
 Ha a szállító csak egy jogi személyként van regisztrálva szervezetében, és más jogi személyeket kell regisztrálni ugyanahhoz a szállítóhoz, használhatja a **Szállító hozzáadása egy másik jogi személyhez** lapot, hogy konfigurálja a szállítót, hogy áll egy másik jogi személlyel üzletelhessen. Válasszon egy szállítói csoportot, egy pénznemet, és a szállító várakoztatási állapotát a kijelölt jogi személyhez.  

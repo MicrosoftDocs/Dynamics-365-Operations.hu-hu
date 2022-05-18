@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMInjurySetup, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 680f4cc529b6818d763730f253811a6edbe0dd76
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 03f68ca3b5d863844818c9f3489d30483f897296
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070577"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8692835"
 ---
 # <a name="set-up-injury-and-illness-information"></a>Sérülések és megbetegedések adatainak beállítása
 
@@ -29,35 +28,35 @@ ms.locfileid: "8070577"
 
 
 
-A munkáltatóknak tudniuk kell, ha alkalmazottaik sérülést vagy betegséget szenvednek el a munkahelyi veszélyek miatt. Használhatja a **Sérülés és betegség** oldalon olyan információkat állíthat be, amelyek megkönnyítik a munkahelyi sérülések vagy betegségek bejelentését. A sérülések és a betegségek típusait is beállíthatja, beleértve a kezelések típusát, a költségeket és az eredményeket is. A **USMF** demóadat-társaságot használtak ennek az eljárásnak a létrehozásához.
+A munkáltatóknak tudniük kell, hogy az alkalmazottak milyen sérüléseket vagy betegségeket okozhatnak a munkahelyen. A Sérülés és **betegség** lap használatával lehet beállítani olyan információkat, amelyek megkönnyítik a munkahelyi sérülések vagy betegségek jelentését. A sérülések és a betegségek típusait is beállíthatja, beleértve a kezelések típusát, a költségeket és az eredményeket is. A **művelet az USMF** bemutatóadat-vállalatot használta az eljárás létrehozásához.
 
-1. Menj **Emberi Erőforrások** \> **Munkások** \> **Sérülés és betegség** \> **Sérülés és betegség beállítása**.
+1. Ugrás az Emberi **erőforrások dolgozók sérülés** \> **·** \> **- és betegségbeállításához** \> **·**
 2. Válassza az **Új** lehetőséget.
-3. Ban,-ben **Sérülés vagy betegség típusa** mezőbe írjon be egy értéket (pl.**Törés**).
-4. Ban,-ben **Leírás** mezőbe írjon be egy értéket (pl.**Csonttörés**).
-5. Válaszd ki a **Testrészek** lapon.
+3. A Sérülés **vagy betegség típus mezőjébe** írjon be egy értéket (például: Sérülés **·**).
+4. A Leírás **mezőbe** írjon be egy értéket (például Visszahozott **érték**).
+5. Válassza a Testrészek **lapot**.
 6. Válassza az **Új** lehetőséget.
-7. Ban,-ben **Testrész** mezőbe írjon be egy értéket (pl.**Csukló**).
-8. Ban,-ben **Leírás** mezőbe írjon be egy értéket (például **Csukló**).
-9. Válaszd ki a **Kezelési típusok** lapon.
+7. A Törzsrész **mezőbe** írjon be egy értéket (például **Visszahozás**).
+8. A Leírás **mezőbe** írjon be egy értéket (például Visszahozat **).**
+9. Válassza ki **a Kezeléstípusok lapot**.
 10. Válassza az **Új** lehetőséget.
-11. Ban,-ben **A kezelés típusa** mezőbe írjon be egy értéket (például **sín**).
-12. Ban,-ben **Leírás** mezőbe írjon be egy értéket (például **Tegyél fel sínt**).
-13. Válaszd ki a **Költségtípusok** lapon.
+11. A Kezelés **típusa mezőbe** írjon be egy értéket (például **Splint**).
+12. A Leírás **mezőbe** írjon be egy értéket (például **egy splintet).**
+13. Válassza a Költségtípusok **lapot**.
 14. Válassza az **Új** lehetőséget.
-15. Ban,-ben **Költségtípus** mezőbe írjon be egy értéket (például **röntgensugarak**).
-16. Ban,-ben **Leírás** mezőbe írjon be egy értéket (például **röntgensugarak**).
-17. Válaszd ki a **Eredménytípusok** lapon.
+15. A Költségtípus **mezőbe** írjon be egy értéket (például **X-mezők**).
+16. A Leírás **mezőbe** írjon be egy értéket (például **X-mezők**).
+17. Válassza az Eredménytípusok **lapot**.
 18. Válassza az **Új** lehetőséget.
-19. Ban,-ben **Az eredmény típusa** mezőbe írjon be egy értéket (például **Terápia**).
-20. Ban,-ben **Leírás** mezőbe írjon be egy értéket (például **Fizikoterápia**).
-21. Válaszd ki a **Súlyossági szintek** lapon.
+19. Az Eredménytípus **mezőbe** írjon be egy értéket (például: Típus **·**).
+20. A Leírás **mezőbe** írjon be egy értéket (például fizikai **eszköz**).
+21. Válassza a Súlyossági **szintek lapot**.
 
-    Testreszabható súlyossági szintek hozhatók létre. Például az 1-es súlyosság kisebb, míg a 3-as súlyosság súlyos sérülést jelezhet.
+    Testreszabható súlyossági szintek hozhatók létre. Az 1-es súlyosság például kisebb sérülésre, míg a 3-as súlyosság súlyos sérülésre utalhat.
 
-22. Válaszd ki a **Jelentős ügynökségek** lapon.
+22. Válassza a Jelentéskészítő **szervezetek lapot**.
 
-    A jelentéstevő ügynökségek azok az ügynökségek, amelyeknek jelenteni kell az esetet. Válaszd ki a **Alapértelmezett** jelölőnégyzet ahhoz az ügynökséghez, amely az alapértelmezett ügynökség, amelyhez a sérüléseket és betegségeket jelenteni kell.
+    A bejelentési hivatalok azok az irodák, amelyek számára jelenteni kell az eseményt. Jelölje be **annak az ügynökségnek** az Alapértelmezett jelölőnégyzetét, amely számára a sérüléseket és betegségeket jelenteni kell.
 
 23. Válassza a **Mentés** lehetőséget.
 

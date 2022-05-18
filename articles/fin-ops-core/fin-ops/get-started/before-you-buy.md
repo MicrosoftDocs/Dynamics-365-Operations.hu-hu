@@ -1,7 +1,7 @@
 ---
 title: Vásárlás előtti teendők
-description: Lépésenkénti útmutatás, ha a Dynamics 365 Finance, Dynamics 365 Supply Chain Management vagy Dynamics 365 Commerce beszerzését fontolgatja.
-author: ShellyBakke
+description: A Dynamics 365 Pénzügy Dynamics 365 Supply Chain Management vagy a Dynamics 365 Commerce.
+author: sericks007
 ms.date: 11/30/2021
 ms.topic: article
 ms.prod: ''
@@ -10,29 +10,29 @@ audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
 ms.custom: 21761
 ms.search.region: Global
-ms.author: smiller
+ms.author: sericks
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-ms.openlocfilehash: f994acfb85e5bb7ccb9cbd3e6c0a0f3c4eec318a
-ms.sourcegitcommit: 34113bd588d53b9aed481da060a1c6738fca0eaf
+ms.openlocfilehash: 9c2f658fbf7fd4db38d572ff80e9d500b5548e0a
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/30/2021
-ms.locfileid: "7874584"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713276"
 ---
 # <a name="before-you-buy"></a>Vásárlás előtti teendők
 
 [!include [banner](../includes/banner.md)]
 
-Még nem ismeri a Dynamics 365 Finance, Dynamics 365 Supply Chain Management vagy Dynamics 365 Commerce szolgáltatást? Összeállítottunk egy lépésenkénti útmutatót, amely hasznára válhat; akár még teszteli a szolgáltatást, akár már készen áll a vásárlásra.
+Új a Dynamics 365 Pénzügyben, Dynamics 365 Supply Chain Management vagy Dynamics 365 Commerce? Összeállítottunk egy lépésenkénti útmutatót, amely hasznára válhat; akár még teszteli a szolgáltatást, akár már készen áll a vásárlásra.
 
-## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>Első lépés: Próbálja ki a Finance and Operations szolgáltatást 30 napig ingyen
+## <a name="step-one-try-out-finance-and-operations-free-for-30-days"></a>1\. lépés: A Finance and Operations program ingyenes kipróbálása 30 napig
 
-A Dynamics 365 for Finance and Operations, a Dynamics 365 Supply Chain Management vagy a Dynamics 365 Commerce 30 napos kipróbálásához mindössze egy egyszerű e-mailes feliratkozás szükséges. A Finance and Operations alkalmazások próbaverziója magában foglalja az „Első lépések” bemutatókat is, amelyek lépésenként mutatják be az elvégzendő feladatokat, hogy működés közben tekinthessen meg egyes forgatókönyveket. A termék segítségével felfedezheti és kipróbálhatja a forgatókönyveket, ám nem szabhatja személyre azt. A bemutató adatok segítségével könnyebben használható a termék, és tartalmasabb az élmény. A próbaverzió lejárata előtt 3 nappal emlékeztető-e-mailt küldünk. Részletek: [Regisztrálás az előzetes előfizetésekre](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
+A Dynamics 365 for Finance and Operations, a Dynamics 365 Supply Chain Management vagy a Dynamics 365 Commerce 30 napos kipróbálásához mindössze egy egyszerű e-mailes feliratkozás szükséges. A Pénzügy és műveletek alkalmazások főkönyvi verziójában olyan, Az első lépésekhez használható feladat-segédalkalmazások tartoznak, amelyek lépésről lépésre bevezető utasításokat tartalmaznak, amelyek lehetővé teszik a műveletekben meghatározott helyzetek megtekintését. A termék segítségével felfedezheti és kipróbálhatja a forgatókönyveket, ám nem szabhatja személyre azt. A bemutató adatok segítségével könnyebben használható a termék, és tartalmasabb az élmény. A próbaverzió lejárata előtt 3 nappal emlékeztető-e-mailt küldünk. Részletek: [Regisztrálás az előzetes előfizetésekre](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## <a name="step-two-choose-a-deployment-option"></a>2\. lépés: Válasszon egy telepítési beállítást
 
-Most már telepítheti a Finance and Operations alkalmazásokat a felhőben vagy a helyszínen. A felhőalapú telepítések olyan vállalatirányítási szolgáltatást kínálnak, amelyet teljes mértékben a Microsoft felügyel, míg az on-premises telepítések helyileg, az ügyfél adatközpontján keresztül történnek.
+Most már telepítheti a Pénzügy és üzemeltetés alkalmazásokat a felhőben vagy a létesítményben. A felhőalapú telepítések olyan vállalatirányítási szolgáltatást kínálnak, amelyet teljes mértékben a Microsoft felügyel, míg az on-premises telepítések helyileg, az ügyfél adatközpontján keresztül történnek.
 
 A következő megfontolásokat kell figyelembe venni, amikor telepítési opcióként a helyszínit választja:
 
@@ -42,7 +42,7 @@ A következő megfontolásokat kell figyelembe venni, amikor telepítési opció
 - [Helyszíni telepítések rendszerkövetelményei](system-requirements-on-prem.md).
 
 > [!IMPORTANT]
-> A helyszíni telepítések nem támogatott a nyilvános felhő infrastruktúrákon, többek között a Microsoft Azure rendszerben. A verem HCI és Veremközpont futtatása [Microsoft Azure](https://azure.microsoft.com/products/azure-stack/hci/) azonban [Microsoft Azure támogatott](https://azure.microsoft.com/products/azure-stack/hub/).
+> A helyszíni telepítések nem támogatott a nyilvános felhő infrastruktúrákon, többek között a Microsoft Azure rendszerben. A verem HCI [Microsoft Azure és](https://azure.microsoft.com/products/azure-stack/hci/) Veremközpont futtatása azonban [Microsoft Azure támogatott](https://azure.microsoft.com/products/azure-stack/hub/).
 
 A további információkat lásd: [Telepítési beállítások](../../dev-itpro/deployment/choose-deployment-type.md)
 
@@ -68,7 +68,7 @@ Egy partnerrel kell együttműködnie a Finance and Operations on-premises telep
 
 Ha szervezete 250 vagy több Dynamics 365-felhasználóval rendelkezik, akkor érdemes lehet megismernie a [mennyiségi licencen alapuló megállapodást](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
-A mennyiségi licencelésben a Finance and Operations alkalmazások a következő módon érhetők el:
+A mennyiségi licencek, pénzügyi és műveletalkalmazások a következőn keresztül érhetők el:
 
 - Vállalati szerződés
 - Előfizetés vállalati szerződés alapján

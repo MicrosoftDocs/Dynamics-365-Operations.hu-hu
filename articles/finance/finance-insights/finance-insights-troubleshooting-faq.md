@@ -8,21 +8,21 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom:
 - "14151"
 - intro-internal
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
-ms.author: shpandey
+ms.author: panolte
 ms.search.validFrom: 2021-08-20
 ms.dyn365.ops.version: AX 10.0.20
-ms.openlocfilehash: fc616e5fce6bbfeaa3b36ccc35f1b1cf407af4a6
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: 5669b414283013ae1de095de2201df066ab588dd
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109860"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725905"
 ---
 # <a name="troubleshoot-finance-insights-setup-issues"></a>A Finance Insights beállítási problémáinak elhárítása
 
@@ -34,7 +34,7 @@ Ez a témakör a Finance Insights funkciók használata során előforduló prob
 
 ### <a name="resolution"></a>Megoldás
 
-Előfordulhat, hogy egy korábbi verzióhoz készült sablont használ. A 10.0.17-es verzió kiadása előtt az előzetes verziót használó vevők az **Ügyfél fizetési információk eredményei (CDS – Fin and Ops)** adatintegrációs (DI) sablont konfigurálták a **Fizetési előrejelzés eredménye (előzetes verzió)** entitással. A 10.0.17-es és újabb verzióra történő frissítés után az **Ügyfelek fizetési információinak eredményei (CDS – Fin and Ops 10.0.17 és újabb)** DI sablonját kell használnia a megfeleltetés befejezéséhez. Lehet, hogy nem tudja leképezni a DI sablon céloszlopát mindaddig, amíg az adatkezelési entitások listája frissül, és a **Fizetési előrejelzés eredménye** entitás meg nem jelenik benne. Az entitáslista frissítésééhez és a fizetési előrejelzés eredményének a megjelenítése érdekében a Microsoft Dynamics 365 Finance és a Dataverse (korábban Common Data Service \[CDS\] rendszergazdai portál) lépéseit is végre kell hajtania.
+Előfordulhat, hogy egy korábbi verzióhoz készült sablont használ. A 10.0.17-es verzió kiadása előtt az előzetes verziót használó vevők az **Ügyfél fizetési információk eredményei (CDS – Fin and Ops)** adatintegrációs (DI) sablont konfigurálták a **Fizetési előrejelzés eredménye (előzetes verzió)** entitással. A 10.0.17-es és újabb verzióra történő frissítés után az **Ügyfelek fizetési információinak eredményei (CDS – Fin and Ops 10.0.17 és újabb)** DI sablonját kell használnia a megfeleltetés befejezéséhez. Lehet, hogy nem tudja leképezni a DI sablon céloszlopát mindaddig, amíg az adatkezelési entitások listája frissül, és a **Fizetési előrejelzés eredménye** entitás meg nem jelenik benne. Az entitáslista frissítésére Microsoft Dynamics és a fizetési előrejelzés eredményének a megjelenítése érdekében a 365 Pénzügy Dataverse és (korábban Common Data Service\[CDS\] admin portal) lépéseit is végre kell végrehajtania.
 
 ### <a name="in-finance"></a>A Finance-ben
 
@@ -58,7 +58,7 @@ Az alábbi lépések szerint frissítheti az adatintegrációs projekteket a [Po
 
 ### <a name="resolution"></a>Megoldás
 
-Dynamics 365 Finance A felhasználónak felhasználói fiókkal kell lennie a környezetnek, és annak a Microsoft Power Apps felhasználói fióknak a Rendszer szabó szerepkörével kell lennie. A Microsoft Power Apps rendszergazda létrehozhatja a felhasználói fiókot, és hozzárendelheti a szerepkört. Ezután a megfelelő felhasználói fiók <https://make.preview.powerapps.com/> használatával bejelentkezhet, majd újra megpróbálkodhat a hivatkozásokkal.
+A Dynamics 365 Pénzügy felhasználói fióknak kell lennie a környezetben, és annak a Microsoft Power Apps felhasználói fióknak a Rendszer szabó szerepkörével kell lennie. A Microsoft Power Apps rendszergazda létrehozhatja a felhasználói fiókot, és hozzárendelheti a szerepkört. Ezután a megfelelő felhasználói fiók <https://make.preview.powerapps.com/> használatával bejelentkezhet, majd újra megpróbálkodhat a hivatkozásokkal.
 
 ## <a name="symptom-why-doesnt-the-cash-forecast-tab-in-the-cash-flow-forecast-workspace-show-any-data"></a>Tünet: Miért nem mutat adatokat a Pénzforgalmi előrejelzés munkaterület Készpénzforgalmi-előrejelzés lapja?
 
@@ -85,10 +85,10 @@ Ha a megfelelő projektbiztonsági szerepkör van hozzárendelve, lehet, **hogy 
 A következő lépéseknek el kellett volna fejeződni.
 
 - Ellenőrizze, hogy rendelkezik-e **·** **rendszergazdai** és rendszer szabó hozzáféréssel a Power Portal admin center alkalmazásban.
-- Ellenőrizze, hogy alkalmazta-e Dynamics 365 Finance a bővítményt telepítő felhasználó egy vagy ezzel egyenértékű licencet.
+- Győződjön meg róla, hogy a bővítményt telepítő felhasználóhoz dynamics 365 pénzügyi vagy azzal egyenértékű licenc van alkalmazva.
 - Győződjön meg róla, hogy a következő Azure AD alkalmazás regisztrálva van a következőben Azure AD: 
 
-  | Pályázat                  | Alkalmazás azonosítója           |
+  | Alkalmazás                  | Alkalmazás azonosítója           |
   | ---------------------------- | ---------------- |
   | Microsoft Dynamics ERP mikroszolgáltatások CDS | 703e2651-d3fc-48f5-942c-74274233dba8 | 
   

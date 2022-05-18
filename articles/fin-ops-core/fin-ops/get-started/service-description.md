@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: cd033cfc3df21ddac5572aa70c18db5ffe26f54e
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
+ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8656803"
+ms.lasthandoff: 05/11/2022
+ms.locfileid: "8740652"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazás szolgáltatásleírása
 
@@ -265,7 +265,7 @@ Az ügyfél bérlő-rendszergazdája hozzáférhet működési példányokhoz va
 |---|---|---|
 | **Nem működési**<br>1. szintű tesztkörnyezet | Nem működési környezet, amelyet a vevők helyeznek üzembe fejlesztési, bemutatási vagy képzési célból. | Az 1. szintű tesztkörnyezet (más néven felhőben tárolt környezet) egy ügyfél által kezelt VM, amely a vevő Azure-előfizetésére telepítve van az LCS-ről. Mivel ez egy virtuális gép az ügyfél Azure-előfizetésében, az ügyfél teljes rendszergazdai hozzáféréssel rendelkezik a környezethez a távoli asztalon keresztül. |
 | **Nem működési**<br>2. (vagy magasabb) szintű tesztkörnyezet | Nem működési környezet, amelyet a vevők által a felhasználói elfogadás tesztelésére, integrációs tesztelésre, képzésre, előkészítésre vagy bármilyen más, éles üzem előtti helyzetre telepítik. | A 2. szint és a magasabb szintű mező a Pénzügy és műveletek – Előfizetések szolgáltatásba van telepítve. A nem működési környezethez társított Azure SQL-adatbázisokhoz való hozzáférést az [igény szerinti hozzáféréssel](../../dev-itpro/database/database-just-in-time-jit-access.md) biztosítják. A távoli asztali hozzáférés nem érhető el. |
-| **Termelés** | A működési környezet akkor telepíthető, ha a projekt [készen áll a kezdeti éles használatra](/imp-lifecycle/environment-planning.md#production-system-readiness). | A működési környezeteket a SaaS előfizetésre telepítik. Minden hozzáférés a böngészőn, a szolgáltatásvégpontokon vagy az LCS-n keresztüli elérést biztosít. |
+| **Termelés** | A működési környezet akkor telepíthető, ha a projekt [készen áll a kezdeti éles használatra](../imp-lifecycle/environment-planning.md#production-system-readiness). | A működési környezeteket a SaaS előfizetésre telepítik. Minden hozzáférés a böngészőn, a szolgáltatásvégpontokon vagy az LCS-n keresztüli elérést biztosít. |
 
 ### <a name="microsoft-administrative-access"></a>Microsoft adminisztratív hozzáférés
 
@@ -286,7 +286,7 @@ A Microsoft széles körű eszközkészletet biztosít a vevők működési pél
 |---|---|
 | <ul><li>A szolgáltatás elérhetőségének figyelése.</li><li>Folyamatos figyelés és riasztások az olyan kritikus összetevők állapotra vonatkozó mutatószámai és figyelői segítségével, mint például az Application Object Server (AOS), köteg, az adatok importálására/exportálására szolgáló keretrendszer (DIXF), Commerce és Management Reporter.</li><li>Kövesse nyomon az infrastruktúra-szolgáltatások (pl. Azure Active Directory \[Azure AD\] és Azure SQL) okozott teljesítménycsökkenést.</li><li>Ha a Microsoft úgy állapítja meg, hogy egyetlen folyamat vagy kötegelt feladat okozza a hibákat, akkor az adott feladatot vagy folyamatot leállítják az ügyféllel való kommunikációt követően.</li></ul> | <ul><li>Az alkalmazáskonfigurációk és -bővítmények módosításainak figyelése, amelyek működési és teljesítménybeli problémákat okozhatnak.</li><li>Az alkalmazáshibákat a figyelő eszközök segítségével kell diagnosztizálni. Ezekkel az eszközökkel diagnosztizálhatja a felhasználó által jelentett teljesítménybeli problémákat.</li><li>A Microsoft tájékoztatása, ha várható terhelés a rendszeren a becsült csúcsfelhasználáson túl.</li><li>Ha a megfelelő szolgáltatás nem érhető el a termelési példányon, akkor az ügyfél az LCS-en keresztül jelentést küldhet a [működés üzemkimaradásáról](../../dev-itpro/lifecycle-services/report-production-outage.md).</li></ul> |
 
-Ha a támogatási kéréseket online, LCS-en keresztül küldik el, azzal az ügyfelek lehetővé teszik, hogy a Microsoft gyors és mélyreható technikai szakértelmet biztosítson hatékony módon. Annak ellenére, hogy a telefonos lehetőség elérhető, csak akkor használható, ha az online lehetőség nem érhető el. További információért lásd: [Telefonos támogatási lehetőségek](/power-platform/admin/support-overview.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json#is-there-a-phone-number-i-can-call-to-contact-support).
+Ha a támogatási kéréseket online, LCS-en keresztül küldik el, azzal az ügyfelek lehetővé teszik, hogy a Microsoft gyors és mélyreható technikai szakértelmet biztosítson hatékony módon. Annak ellenére, hogy a telefonos lehetőség elérhető, csak akkor használható, ha az online lehetőség nem érhető el. További információért lásd: [Telefonos támogatási lehetőségek](/power-platform/admin/support-overview?toc=%2Fdynamics365%2Ffin-ops-core%2Fdev-itpro%2Ftoc.json&bc=%2Fdynamics365%2Fbreadcrumb%2Ftoc.json#is-there-a-phone-number-i-can-call-to-contact-support).
 
 ## <a name="incident-management"></a>Esetkezelés
 

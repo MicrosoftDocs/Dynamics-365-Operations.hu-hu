@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: ''
 ms.search.region: Global
 ms.author: kailiang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: 38760879d84d8262cc1e8395c59bcbc0429bc753
-ms.sourcegitcommit: b9c2798aa994e1526d1c50726f807e6335885e1a
+ms.openlocfilehash: 167db4d836aa754509bb28677916a30901cebbbb
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "7347685"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8694174"
 ---
 # <a name="tax-calculation-rounding-rules"></a>Adószámítás kerekítési szabályai
 
@@ -39,7 +38,7 @@ A **Kerekítési pontosság** és a **Kerekítési módszer** mezők határozzá
 
 ## <a name="rounding-precision"></a>Kerekítési pontosság
 
-A **Kerekítési pontosság** mezők hat tizedesjegyig terjedő értéket támogatnak. Ha például a **Kerekítési pontosság** mezőt **0,000000**-ra állítja, a kiszámított összegeket hat tizedesjegyre kerekíti, majd elküldi a Microsoft Dynamics 365 Finance rendszernek. Például, ha a **Normál** kerekítési módszert használja, a **987,1234567-es** összeget **987,123457-re** kerekíti.
+A **Kerekítési pontosság** mezők hat tizedesjegyig terjedő értéket támogatnak. Ha például a **Kerekítési pontosság** **mezőt** üresre 0.000000, Microsoft Dynamics a számított összegeket a program hat tizedesjegyre kerekítve küldi el a 365 Pénzügynek. Például, ha a **Normál** kerekítési módszert használja, a **987,1234567-es** összeget **987,123457-re** kerekíti.
 
 > [!NOTE]
 > A pénzügyek az összegeket a pénznem kerekítési szabályai szerint kerekíti. Ezért a tranzakciókban feltüntetett és nyilvántartott adóösszegeket mind az adószámítási kerekítési szabályok, mind a devizakerekítési szabályok befolyásolják.

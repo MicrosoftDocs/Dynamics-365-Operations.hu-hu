@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTable, LedgerJournalTransAsset
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: a6cf285e8764af8c6525fb3f9cbec7306917e57e832777588e8c2c1d4aeed818
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: db747bf8e3343082feda204fc56d9608313a280e
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6719246"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716382"
 ---
 # <a name="create-a-depreciation-proposal"></a>Értékcsökkenési javaslat létrehozása
 
@@ -28,7 +28,7 @@ Ez a témakör leírja, hogyan működnek az értékcsökkenési kötegjavaslato
 
 
 ## <a name="create-a-depreciation-proposal"></a>Értékcsökkenési javaslat létrehozása
-1. A navigációs ablaktáblán nyissa meg a **Modulok > Tárgyi eszközök > Naplóbejegyzések > Értékcsökkenési javaslat létrehozása** elemet.
+1. A navigációs ablakban menjen **a Tárgyi eszközök > az Értékcsökkenési javaslat létrehozása > lapra**.
 2. A **Napló neve** mezőben válasszon ki egy opciót a legördülő menüben.
 3. Adjon meg egy dátumot a **Záró dátum** mezőben.
 

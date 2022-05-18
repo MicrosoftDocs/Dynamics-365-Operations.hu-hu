@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 4fd46ea161fb4441d94a9e7c7f7ffbfb245eb873
-ms.sourcegitcommit: 9c2bc045eafc05b39ed1a6b601ccef48bd62ec55
+ms.openlocfilehash: 08e247bac577dc0bb8a4635d61f0082793380da9
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7919501"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722519"
 ---
 # <a name="create-email-templates-for-transactional-events"></a>E-mail-sablonok létrehozása tranzakciós eseményekhez
 
@@ -64,8 +64,8 @@ A csomagolás befejeződött értesítéstípus a következő további e-mail he
 | ------------------- | ------- |
 | `pickupstorename`     | Annak az üzletnek a neve, ahol a rendelés felvételre elérhető. |
 | `pickupstoreaddress`  | Annak az üzletnek a címe, ahol a rendelés felvételre elérhető. |
-| `pickupstorehourfrom` | A felvételi üzlet nyitási ideje. |
-| `pickupstorehourto`   | A felvételi üzlet zárásának időpontja. |
+| `pickupstoreopenfrom` | A felvételi üzlet nyitási ideje. |
+| `pickupstoreopento` | A felvételi üzlet zárásának időpontja. |
 | `pickupchannelid`     | A felvételi üzlet üzletcsatorna-azonosítója. |
 | `packingslipid`      | A rendelés csomagjegyzékének azonosítója, amely fel lesz véve. |
 | `confirmationid`      | A rendelés megerősítésének azonosítója, amely fel lesz véve. (Ezt az azonosítót nevezik csatornahivatkozás-azonosítónak.) |
@@ -102,7 +102,7 @@ Az ajándékutalvány kibocsátása értesítési típus a következő további 
 | Helyőrző neve      | Alkalmazás célja |
 | --------------------- | ------- |
 | `giftcardnumber`        | Az ajándékutalvány száma az ajándékutalvány-típus termékei esetében. |
-| `giftcardbalance`       | Az ajándékutalvány egyenlege az ajándékutalvány-típus termékei esetében. |
+| `availablebalance` | Az ajándékutalvány fennmaradó egyenlege |
 | `giftcardmessage`       | Az ajándékutalvány üzenete az ajándékutalvány-típus termékei esetében. |
 | `giftcardpin`         | Az ajándékutalvány személyes azonosító száma (PIN) az ajándékutalvány-típus termékei esetében. (Ez a helyőrző a külső ajándékutalvány-kártyákra vonatkozik.) |
 | `giftcardexpiration`    | Az ajándékutalvány lejárati dátuma az ajándékutalvány-típus termékei esetében. (Ez a helyőrző a külső ajándékutalvány-kártyákra vonatkozik.) |

@@ -1,24 +1,24 @@
 ---
 title: IoT-intelligencia kezdőlapja
 description: Ez a témakör az IoT-intelligenciával kapcsolatos információkra mutató hivatkozásokat tartalmaz.
-author: tonyafehr
+author: johanhoffmann
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User, Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: kamaybac
 ms.custom: intro-internal
 ms.search.region: Global
-ms.author: tfehr
+ms.author: johanho
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 5c587f4e6a1dd58a7b8c238fc5afb16774828b2a
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
-ms.translationtype: HT
+ms.openlocfilehash: 2386d71fde8196304fde846cbff4cd45d1edc834
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644386"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8674421"
 ---
 # <a name="iot-intelligence-home-page"></a>IoT-intelligencia kezdőlapja
 

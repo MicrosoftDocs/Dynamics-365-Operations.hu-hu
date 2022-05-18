@@ -7,19 +7,18 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 269074
 ms.assetid: 426c6127-42ee-4163-8dd0-b2867f95581d
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-08-07
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: bd7180c8f53687d561c429456387e0fe999dd508
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 819f22c58da485980c38d35dcc6dda6aebacf423
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8070175"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8695844"
 ---
 # <a name="view-and-manage-address-changes"></a>A cím változásainak megtekintése és kezelése
 
@@ -28,7 +27,7 @@ ms.locfileid: "8070175"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Ez a témakör bemutatja, hogyan tekintheti meg és kezelheti a címváltozásokat a **Személyes adatok szerkesztése** oldal (amelyet a **Alkalmazotti önkiszolgáló** munkaterület) vagy a **Munkás** részletek oldala a Dynamics 365 Human Resources.
+Ez a témakör bemutatja, **hogy** hogyan lehet megtekinteni és kezelni a címváltozásokat a Személyes adatok szerkesztése lapon (**amelyet** az Alkalmazott önkiszolgáló munkaterületén nyit meg) **vagy** a Dolgozó részletei lapról Dynamics 365 Human Resources.
 
 Számos szervezet azt szeretné, hogy az alkalmazottak saját maguk, saját felületen kezelhessék saját személyes adataikat. Engedélyezheti a felhasználóknak, hogy frissítsék a címüket az **Alkalmazotti önkiszolgáló rendszer** munkaterületén. Ezt követően a változásokat a **Személyzetkezelés** munkaterületen követheti nyomon. A funkció használatához meg kell adnia, hogy hány napig kívánja megtekinteni a változásokat az **Emberierőforrás-paraméterek** oldalon.
 
@@ -46,7 +45,7 @@ A következő lépésekkel konfigurálhatja, hogy hány napig legyenek látható
 
 Az alkalmazottak frissíthetik a saját címüket az **Alkalmazotti önkiszolgáló rendszer** munkaterületén. Cím létrehozásához vagy módosításához kövesse az alábbi lépéseket:
 
-1. Válaszd ki a **Alkalmazotti önkiszolgáló** csempe a **itthon** oldalon.
+1. Válassza az Alkalmazott **– önkiszolgáló szolgáltatás** csempe lehetőséget a **Kezdőlapon**.
 2. Válassza a **Személyes adatok szerkesztése** elemet.
 3. Cím hozzáadásához kattintson a **Hozzáadás** gombra. Meglévő cím frissítéséhez jelölje ki a címet a listában, majd válassza a **Szerkesztés** lehetőséget.
 4. Adja meg a **nevet vagy a leírást**.
@@ -90,7 +89,7 @@ Bizonyos esetekben előfordulhat, hogy valamikor a jövőben szeretné módosít
 
 ## <a name="view-and-monitor-address-changes"></a>A cím változásainak megtekintése és nyomon követése
 
-A HR munkatársai a **Személyzetkezelés** munkaterületen megtekinthetik és nyomon követik a címeket. A címváltozások megtekintéséhez válassza a lehetőséget **Személyzeti menedzsment** csempe a **itthon** oldalon. A címváltozások a jobb felső sarokban lévő csempén jelennek meg. A fenti szám **Címváltozások** megmutatja, hogy hány címmódosítás történt az oldalon megadott napok száma alatt **Humán erőforrás paraméterek** oldalon. 
+A HR munkatársai a **Személyzetkezelés** munkaterületen megtekinthetik és nyomon követik a címeket. A címváltozások megtekintéséhez jelölje be **a Személyzetkezelés** csempe a **Kezdőlapon**. A címváltozások a jobb felső sarkában lévő csempeen jelennek meg. A címváltozások feletti **szám** azt jelzi, hogy **hány** címváltozás történt az Emberi erőforrások paraméterei lapon megadott napok száma alatt. 
 
 Amikor kiválasztja a **Címváltozások** csempét, egy új lapon megjelennek az esetleges címváltozások részletei. Lehetősége van arra, hogy a jobb felső sarokban lévő **Jövőbeli címváltozásokkal** kiválasztásával megjelenítse a jövőbeli dátumú címváltozásokat.
 

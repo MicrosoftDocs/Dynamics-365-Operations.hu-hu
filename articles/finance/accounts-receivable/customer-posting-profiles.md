@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CustPosting, CustVendExternalItem
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5
 ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 91432a401a8f8a499e9f5e2bbe7157408faac822
-ms.sourcegitcommit: f5fd2122a889b04e14f18184aabd37f4bfb42974
+ms.openlocfilehash: 1ed5ab24e37c75222080bd242aa72a39ecb476bf
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/10/2022
-ms.locfileid: "7952571"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734632"
 ---
 # <a name="customer-posting-profiles"></a>Vevői feladási profilok
 
@@ -32,7 +32,7 @@ Ez a témakör a vevői feladási profilokat írja le, amelyek a vevői tranzakc
 
 A vevői feladási profilok segítségével főkönyvi számlákat és dokumentumbeállításokat rendelhet minden vevőhöz, vevőcsoporthoz vagy egyetlen vevőhöz. Ezeket a beállításokat használja a program, amikor értékesítési rendelési számlákat, szabadszöveges számlákat, projektszámlákat, fizetési naplókat, fizetési leveleket és kamatleveleket hoz létre. 
 
-Az alapértelmezett feladási profil a Kinnlevőségek paraméterei oldal Főkönyv és **Áfa** lapján **határozható** meg. Ez a mező automatikusan megjelenik az új dokumentumok fejlécében. Ha más feladási profil szükséges, akkor itt módosíthatja. 
+Az alapértelmezett feladási profil a Kinnlevőségek **paraméterei** oldal Főkönyv és Áfa **lapján határozható** meg. Ez a mező automatikusan megjelenik az új dokumentumok fejlécében. Ha más feladási profil szükséges, akkor itt módosíthatja. 
 
 A vevőktől előlegeket elfogadó szervezetek gyakran konfigurálnak egy második feladási profilt az előlegek számára, és az előlegek alapértelmezett feladási profiljaként csatolják a paraméterekhez. A további tudnivalókat lásd [a Vevői előlegek](customer-prepayments.md).
 
@@ -43,11 +43,11 @@ Határozza meg a tranzakciók feladásában használt főkönyvet, ami a kijelö
 
 | Számla kód mezőérték | Számla/Csoport száma mezőérték                | Keresési prioritás |
 |--------------------------|-------------------------------------------------|-----------------|
-| Tábla                    | Konkrét vevőkód                       | 1               |
+| Táblázat                    | Konkrét vevőkód                       | 1               |
 | Csoport                    | Az a vevőcsoport, amelyet a vevőhöz rendeltek. | 2               |
-| Összes                      | Üres                                           | 3               |
+| Minden                      | Üres                                           | 3               |
 
-Ha azt szeretné, hogy minden vevői tranzakció ugyanazt a feladási profilt tartalmazza, csak egy feladási profilt állítson be, és mindegyiket a **Számlakód** **mezőben adja** meg. Adja meg a következő értékeket a feladási profil beállításához.
+Ha azt szeretné, hogy minden vevői tranzakció ugyanazt a feladási profilt tartalmazza, csak egy feladási profilt állítson be, **·** **és mindegyiket a Számlakód mezőben adja** meg. Adja meg a következő értékeket a feladási profil beállításához.
 
 <table>
 <thead>
@@ -69,19 +69,19 @@ Ha azt szeretné, hogy minden vevői tranzakció ugyanazt a feladási profilt ta
 <td>Számlakód</td>
 <td>Adja meg, hogy a feladási profil egyetlen vevőre, vagy egy vevőcsoportra vagy az összes vevőre vonatkozik:
 <ul>
-<li><b>Asztal</b>– A feladási profilok egyetlen vevőre vonatkoznak. Válassza ki a vevőt a <b>Számla/csoport száma</b> mezőben.</li>
-<li><b>Csoport</b>– A feladási profilok vevő csoportra vonatkoznak. Válassza ki a vevőcsoportot <b>a Számla/csoport száma</b> mezőben.</li>
+<li><b>Asztal</b>– A feladási profilok egyetlen vevőre vonatkoznak. Válassza ki a vevőt a <b>Számla/csoport száma mezőben</b>.</li>
+<li><b>Csoport</b>– A feladási profilok vevő csoportra vonatkoznak. Válassza ki a vevőcsoportot <b>a Számla/csoport száma mezőben</b>.</li>
 <li><b>Összes</b>– A feladási profilok az összes vevőre vonatkoznak. Hagyja üresen a <b>Számla/csoport száma</b> mezőt.</li>
 </ul>
 </td>
 </tr>
 <tr>
 <td>Számla/csoport száma</td>
-<td>Ha a Számlakód mezőben a Tábla beállítás van megjelölve, válassza ki annak a vevőnek a számlaszámát, aki a feladási <b></b><b></b> profilhoz van társítva. Ha <b>a Csoport lehetőséget</b> választotta, válassza ki a vevőcsoportot. Ha az <b>Összes</b> lehetőséget választja, hagyja ezt a mezőt üresen.</td>
+<td>Ha <b>a</b> Számlakód mezőben <b></b> a Tábla beállítás van megjelölve, válassza ki annak a vevőnek a számlaszámát, aki a feladási profilhoz van társítva. Ha a <b>Csoport</b> lehetőséget választotta, válassza ki a vevőcsoportot. Ha az <b>Összes</b> lehetőséget választja, hagyja ezt a mezőt üresen.</td>
 </tr>
 <tr>
 <td>Összegzett számla</td>
-<td>Válassza ki azt a fő számlát, amely a kinnlevőségek kereskedelmi számlája lesz a feladási profilhoz társított vevők esetében. Ez a számla a vevői egyenleg <b>feladási</b> típusának számlája.</td>
+<td>Válassza ki azt a fő számlát, amely a kinnlevőségek kereskedelmi számlája lesz a feladási profilhoz társított vevők esetében. Ez a számla a vevői egyenleg feladási <b></b> típusának számlája.</td>
 </tr>
 <tr>
 <td>Likviditási számla a kifizetésekhez</td>
@@ -90,7 +90,7 @@ Ha azt szeretné, hogy minden vevői tranzakció ugyanazt a feladási profilt ta
 <tr>
 <td>Áfaelőlegek</td>
 <td><p>Válassza ki az előre törlesztett kifizetések forgalmi adójának számlaszámát.</p>
-<p><strong>Megjegyzés: A Kinnlevőségek paraméterei lapon lehet megadni az előlegként megjelölt kifizetésekhez</strong><b>használt</b> feladási profilt.</p>
+<p><strong>Megjegyzés:</strong> A Kinnlevőségek<b></b> paraméterei lapon lehet megadni az előlegként megjelölt kifizetésekhez használt feladási profilt.</p>
 </td>
 </tr>
 <tr>
@@ -110,12 +110,12 @@ Ha azt szeretné, hogy minden vevői tranzakció ugyanazt a feladási profilt ta
 
 ## <a name="posting-examples"></a>Feladási példák
 
-Az alábbi táblázat példákat mutat be az alapértelmezett feladási típusokra a minta fő számlákkal és leírásokkal. A Tartozik/Követel oszlop jelzi, hogy a tranzakciót általában tartozik vagy követel tételekként, vagy bizonyos esetekben **fel** lehet-e adni. Az Elszámolószámla oszlopban a feladás típusa **elszámolószámla**. Ez azt jelenti, hogy egy későbbi tranzakció feladása során a program automatikusan sztornírozi az erre a számlára feladott összeget. 
+Az alábbi táblázat példákat mutat be az alapértelmezett feladási típusokra a minta fő számlákkal és leírásokkal. A **Tartozik/Követel** oszlop jelzi, hogy a tranzakciót általában tartozik vagy követel tételekként, vagy bizonyos esetekben fel lehet-e adni. Az **Elszámolószámla** oszlopban a feladás típusa elszámolószámla. Ez azt jelenti, hogy egy későbbi tranzakció feladása során a program automatikusan sztornírozi az erre a számlára feladott összeget. 
 
 | Feladás típusa | Példa a fő számlára | Példa a fő számlanévre | Számla típusa | Tartozik/követel | Elszámolási számla | Leírás |
 |--------------|----------------------|---------------------------|--------------|--------------|------------------|-------------|
-| Vevői egyenleg | 130100 | Kinnlevőségek – kereskedelem | Eszközök | Mindkettő | Nem | Adja meg a számlát az **Összegző számla** mezőben.|
-| Nincs | 110110 | Bankszámla | Eszközök | Mindkettő | Nem | Adja meg a kifizetésekhez a **Likviditási számla mezőben a fő** számlát. Ez a számla nem használatos feladásra. Csak a pénzforgalmi előrejelzéshez használatos. |
+| Vevői egyenleg | 130100 | Kinnlevőségek – kereskedelem | Eszközök | Mindkettő | Nem | Adja meg a számlát az Összegző számla **mezőben**.|
+| Nincs | 110110 | Bankszámla | Eszközök | Mindkettő | Nem | Adja meg a kifizetésekhez a **Likviditási számla mezőben a fő számlát**. Ez a számla nem használatos feladásra. Csak a pénzforgalmi előrejelzéshez használatos. |
 | Áfaelőlegek | 202900 | Áfa elszámolása | Kötelezettség | Mindkettő | Igen | Válassza ki az előre törlesztett kifizetések forgalmi adójának számlaszámát. |
 | Kötelezettségek az engedményszámlához | 250600 | Halasztott bevétel és engedmények | Kötelezettség | Mindkettő | Igen | Válassza ki az engedmények kötelezettségeinek főkönyvi számláját.|     
 
@@ -127,10 +127,10 @@ Határozza meg a következő értékeket a feladási profil beállításához:
 
 | Mező                 | Leírás                                           |
 |-----------------------|-------------------------------------------------------|
-| Kiegyenlítés        | Válassza ki a váltót a feladási profillal rendelkező tranzakciók automatikus elszámolásának engedélyezéséhez. Ha a váltás nincs beszámítható, akkor manuálisan kell rendeznie a tranzakciókat a Nyitott tranzakciók kifizetése lapon vagy a Vevői **kifizetések** **beírása** lapon. |
+| Kiegyenlítés        | Válassza ki a váltót a feladási profillal rendelkező tranzakciók automatikus elszámolásának engedélyezéséhez. Ha a váltás nincs beszámítható, **akkor** manuálisan kell rendeznie a tranzakciókat a Nyitott tranzakciók kifizetése lapon vagy **a Vevői kifizetések beírása lapon**. |
 | Érdeklődési terület          | Válassza ki ezt a váltót, ha a kamatot ki kell számítani ezen profilt használó vevő számljának fennmaradó egyenlegei esetében. Ha a váltó nincs bejelölve, akkor az ilyen vevők esetében nem számít kamatot a program.                                           |
 | Fizetési felszólítás | Válassza ki ezt a váltót, ha a fizetési felszólításokat ezen profilt használó vevő számljához kell létrehozni. Ha a váltó nincs bejelölve, a program nem számít fizetési felszóltásokat ezen vevők esetében.                                                 |
-| Bezárás             | Válasszon ki egy másik feladási profilt, amelyre váltani szeretne a jelen feladási profilt használó tranzakciók bezárásakor. Egy tranzakció akkor minősül bezártnak, ha a teljes kiegyenlítése megtörtént.             |
+| Bezár             | Válasszon ki egy másik feladási profilt, amelyre váltani szeretne a jelen feladási profilt használó tranzakciók bezárásakor. Egy tranzakció akkor minősül bezártnak, ha a teljes kiegyenlítése megtörtént.             |
 
 
 

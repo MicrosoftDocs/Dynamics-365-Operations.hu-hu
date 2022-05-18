@@ -15,18 +15,16 @@ ms.search.region: Global
 ms.author: johanho
 ms.search.validFrom: 2019-08-31
 ms.dyn365.ops.version: 10.0.5
-ms.openlocfilehash: 511d875baed029df9083da36baf6c48ca4b7abf866ae569038b554bf594473c8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38b7371ab668eb76801fbe7f15894609a846bbd8
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6734427"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687669"
 ---
 # <a name="set-up-preferred-maintenance-workers"></a>Preferált karbantartási dolgozók beállítása
 
 [!include [banner](../../includes/banner.md)]
-
- 
 
 Amikor a program a munkarendelés ütemezésekor kiosztja a dolgozókat a munkarendeléshez lehetőség van arra, hogy megadja, melyik karbantartási dolgozót vagy dolgozócsoportot szeretné előnyben részesíteni. A funkció használata nem kötelező, de a dolgozó tudásának és szakértelme alapján a legalkalmasabb karbantartási dolgozót tudja kiválasztani egy feladatra. A program csak az ütemezés időpontban rendelkezésre álló karbantartási dolgozókat ütemezi. Ha egy előnyben részesített karbantartási dolgozó beállítása egyezik egy munkarendeléssel az ütemezés során, de a karbantartási dolgozó más feladatokra van beosztva, akkor a munkarendelést egy másik, rendelkezésre álló karbantartási dolgozó fogja megkapni.
 
@@ -51,13 +49,15 @@ Minél több lehetőséget választ ki egy rekordhoz, annál konkrétabb lesz a 
 
 3. Kezdjen egy „alapértelmezett” karbantartási dolgozói vagy dolgozói csoport létrehozásával. Ez azt jelenti, hogy csak a **Preferált karbantartási dolgozói csoport** vagy a **Preferált karbantartási dolgozó** mezőben lett kiválasztva. Az alábbi képernyőfotón egy példa látható az első rekordra, amelyben a „Kérések” lett kijelölve **Preferált karbantartási dolgozói csoportként**.
 
-    [!NOTE] A program az alapértelmezett beállítást használja a munkarendelés-ütemezés során, ha nincs más konkrétabb kombináció, amely jobban megfelel a munkarendelés tartalmának.
+    > [!NOTE]
+    > A program az alapértelmezett beállítást használja a munkarendelés-ütemezés során, ha nincs más konkrétabb kombináció, amely jobban megfelel a munkarendelés tartalmának.
 
 4. Új rekord létrehozásához ismételje meg a 2. lépést. A preferált dolgozótól vagy dolgozó csoporttól függően válassza ki a kívánt beállításokat. 
 
     *Példa:* Az alábbi képernyőfotón, a hatodik rekordban, Shawn Richardson karbantartási dolgozó van kiválasztva preferált dolgozóként. Ha az ütemezés időpontjában szabad, a CH-BP1-03-02 eszközt és a „Létesítményértékelés” típusú karbantartás feladattípust tartalmazó munkarendelés ütemezése során automatikusan ki lesz választva.
 
-    [!NOTE] Általában amikor a munkarendelés ütemezésekor egy preferált karbantartási dolgozó lesz kiválasztva, az Eszközkezelés ellenőrzi a **Preferált karbantartási dolgozók** rekordokban az esetleges egyezéseket. A rendszer a legkonkrétabb kombinációt ellenőrzi elsőként. Ha nem talál egyezést, akkor az olyan „alapértelmezett” rekordot használja, amelyik meg lett adva a **Preferált karbantartási dolgozói csoport** vagy a **Preferált karbantartási dolgozó** mezőben.
+    > [!NOTE]
+    > Általában amikor a munkarendelés ütemezésekor egy preferált karbantartási dolgozó lesz kiválasztva, az Eszközkezelés ellenőrzi a **Preferált karbantartási dolgozók** rekordokban az esetleges egyezéseket. A rendszer a legkonkrétabb kombinációt ellenőrzi elsőként. Ha nem talál egyezést, akkor az olyan „alapértelmezett” rekordot használja, amelyik meg lett adva a **Preferált karbantartási dolgozói csoport** vagy a **Preferált karbantartási dolgozó** mezőben.
 
 ![1. ábra](media/02-work-order-scheduling.png)
 

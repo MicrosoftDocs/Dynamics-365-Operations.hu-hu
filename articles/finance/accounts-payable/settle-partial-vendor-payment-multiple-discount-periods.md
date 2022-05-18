@@ -1,6 +1,6 @@
 ---
 title: Szállítói kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
-description: Ez a cikk egy olyan esetet mutat be, amely során több részleges kifizetés történik, egy több készpénzfizetési engedményt ajánló szállítónak.
+description: Ez a témakör olyan helyzetről ad képet, amikor több részleges kifizetést kell fizetni egy olyan szállítónak, amely több készpénzfizetési engedményt kínál.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: 14262
 ms.assetid: af95c48a-afd1-476c-978d-e34995100be4
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: a0538a522733a9df9ae3b8832959c68bb0c25056694786e4b1a46a2ee7d0fcfc
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d805ce2de866d0073b4bb797eb7ddae0736e8948
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6737089"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716279"
 ---
 # <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Szállítói kifizetés egy részének rendezése, amely több kedvezményes időszakkal rendelkezik
 
 [!include [banner](../includes/banner.md)]
 
-Ez a cikk egy olyan esetet mutat be, amely során több részleges kifizetés történik, egy több készpénzfizetési engedményt ajánló szállítónak. 
+Ez a témakör olyan helyzetről ad képet, amikor több részleges kifizetést kell fizetni egy olyan szállítónak, amely több készpénzfizetési engedményt kínál. 
 
 A 3054. szállító a Fabrikamnak 2 százalékos készpénzfizetési engedményt ad, ha a számlát öt napon belül kifizeti, és 1 százalékot, ha a számlát 14 napon belül kifizeti.
 

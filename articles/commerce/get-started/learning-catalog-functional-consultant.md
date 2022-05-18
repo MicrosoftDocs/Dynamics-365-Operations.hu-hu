@@ -9,16 +9,15 @@ ms.prod: ''
 ms.technology: ''
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 5539d8531dc5de273d80419135c9bcc224c8e8f0
-ms.sourcegitcommit: dca3279a8b7cd5d0bcd4e4a3aa9938b337aa8849
+ms.openlocfilehash: 4bab754afa5b35c34c6e1e5087d9268321b75bd0
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "7402618"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688882"
 ---
 # <a name="learning-catalog-for-dynamics-365-commerce-functional-consultants"></a>Képzési katalógus a Dynamics 365 Commerce funkcionális konzulensek számára
 
@@ -28,7 +27,7 @@ A következő katalógus az alapismeretekből a meghatározott tartományokra, a
 
 A funkcionális konzulensek esetében a feladatunk-feladat elemzése során a kutatás azt mutatta, hogy mindenkinek ismernie kell az alaptartalmat, valamint a tartományi területet.
 
-A többi Finance and Operations alkalmazással megosztott funkciókkal kapcsolatos képzések a [Dynamics 365 Finance képzési katalógusban](../../finance/get-started/learning-catalog-functional-consultant.md) olvashatók.
+A többi Pénzügyi és Művelet alkalmazással [megosztott funkciókról a Dynamics 365 Pénzügyi oktatókatalógus tartalmaz](../../finance/get-started/learning-catalog-functional-consultant.md).
 
 ## <a name="get-started"></a>Első lépések<a name="get-started"></a>
 

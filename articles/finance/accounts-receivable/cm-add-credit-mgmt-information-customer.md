@@ -7,17 +7,17 @@ ms.topic: article
 ms.prod: ''
 ms.technology: ''
 audience: Application User
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: ''
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 3c8584c33b4f77b6d1f5a4dc0d62208b76b3ffa3
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: d5ced2f2bc419f18431663273236d21546c5541b
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7753970"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734457"
 ---
 # <a name="add-credit-management-information-for-customers"></a>Hitelkezelési információk hozzáadása ügyfelek számára
 
@@ -32,7 +32,7 @@ Az ügyfelek adatait a **Hitel és beszedések** gyorslapon, az **Összes ügyf�
 1. A **Korlátlan hitelkeret** beállítását állítsa **Igen** értékre, ha az ügyfelet nem korlátozhatják a hitelkerettesztek.
 2. A **Kizárás hitelkezelésből** beállítást állítsa **Igen** értékre, ha az ügyfelet ki szeretné zárni bármely műveletből, amely általában a hitelkezelési folyamatok során bekövetkezik.
 3. Válassza ki az ügyfélhez a hitelkezelési csoportot.
-4. Ha az ügyfél pénznemében szeretné kiszámítani a hitelkeretet, a **Hitelkeret az ügyfél pénznemében** mezőben adja meg az ügyfél hitelkeretét. A rendszer a vállalat pénznemében vett hitelkeretet átváltja a Hitelkezelési paraméterekben kiválasztott hitelkeret-árfolyamtípus által meghatározott árfolyammal.
+4. Ha az ügyfél pénznemében szeretné kiszámítani a hitelkeretet, a **Hitelkeret az ügyfél pénznemében** mezőben adja meg az ügyfél hitelkeretét. A vállalati pénznemben megadott **hitelkeret átváltása a jóváírás-kezelési paraméterek között kiválasztott hitelkeret-árfolyamtípus által meghatározott árfolyamok használatával történik**.
 5. A **Legutóbbi értékelés dátuma** mezőben adja meg a dátumot, amikor az ügyfél hitelkeretét egy hitelvezető utoljára értékelte.
 6. A **Következő ütemezett értékelés dátuma** mezőben adja meg a dátumot, amikorra az ügyfél következő hitelbírálata és frissítése ütemezve van.
 7. A **Jogosult hitelkeret** mezőben adja meg az ügyfélhez rendelhető legmagasabb hitelkeretet, az ügyfél hiteltörténetének felülvizsgálata alapján. A jogosult hitelkeret eltérheti a **Hitel és beszedések** gyorslapon látható hitelkerettől.
@@ -46,7 +46,8 @@ Az ügyfelek adatait a **Hitel és beszedések** gyorslapon, az **Összes ügyf�
 15. Az **Ügyfélkapcsolat kezdete** mezőben adja meg a dátumot, amikor az ügyfél számára az első tranzakciókat feldolgozták. Ez az információ a kockázati pontszámok létrehozásakor használatos.
 16. Adjon meg megjegyzéseket, amelyeket a hitelcsoport az ügyfél hitelképességének további értékelésére használhat.
 
-Ne feledje, hogy az **Ügyfél** oldalon látható információk egy részét egy másik folyamat hozza létre:
+> [!Note] 
+> A Vevő lapon **megjelenő** információk egy része egy másik folyamat során jön létre:
 
 - A **Hitelkeret lejárati dátuma** mezőben a hitelkeret lejáratának dátuma látható. Ha nem állítja be ezt a mezőt, az ügyfél hitelkerete nem jár le.
 - A **Hitelkeret dátuma** mezőben a hitelkeret létrehozásának dátuma látható. A mező minden alkalommal frissül, ha a hitelkeretet módosítják.
@@ -86,7 +87,7 @@ A biztosítási kötvényeket és a garanciákat az **Összes ügyfél** oldalon
     - Az irányelv értéke (B) 50 000.
     - A **Hitelkeret frissítése** százaléka (C) 50,00.
     
-    Ebben az esetben a tényleges hitelkeret 125 000 (= A + \[ B × C\]).
+    Ebben az esetben a tényleges hitelkeret 125 000 (= A + \[B × C\]).
 
 11. Jelölje be a **Kitettségben szerepel** jelölőnégyzetet, amellyel csökkentheti a hitelkeret-számításokban használt hitelkeretet az irányelv teljes értékével. Ha ez a jelölőnégyzet be van jelölve, akkor a **Hitelkeret frissítése** százalék megadásakor kiszámított értéket a rendszer nem használja a hitelkeret-számításokban.
 
@@ -96,9 +97,9 @@ A biztosítási kötvényeket és a garanciákat az **Összes ügyfél** oldalon
     - Az irányelv értéke (B) 50 000.
     - A **Hitelkeret frissítése** százaléka (C) 50,00.
 
-    Ebben az esetben a tényleges hitelkeret 125 000 (= A + \[ B × C\]).
+    Ebben az esetben a tényleges hitelkeret 125 000 (= A + \[B × C\]).
     
-    Ha azonban bejelöli a **Kitettségben szerepel** jelölőnégyzetet, akkor a **Hitelkeret frissítése** 50 000-es értéke (=100 000 50%-a) törlődik, a kitettség értéke pedig 75 000 (= A + \[ B × C\] – B).
+    Ha azonban bejelöli a **Kitettségben szerepel** jelölőnégyzetet, akkor a **Hitelkeret frissítése** 50 000-es értéke (=100 000 50%-a) törlődik, a kitettség értéke pedig 75 000 (= A + \[B × C\] – B).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

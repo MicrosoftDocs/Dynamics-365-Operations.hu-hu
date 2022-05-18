@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: Ledger
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-09
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: 3e6c4d966f2720339941fb848ff9ac79e4593868ce10d3712efbb1ad18a9ceea
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 38c4364c47915cc0019cb6b3d471d3e60d413bf0
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6712219"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8711548"
 ---
 # <a name="configure-ledgers"></a>Főkönyvek konfigurálása
 
@@ -28,7 +28,7 @@ Ez a témakör a jogi személyek főkönyvi konfigurálásokkal kapcsolatos info
 
 ## <a name="selecting-the-chart-of-accounts"></a>A számlatükör kiválasztása
 
-A Microsoft Dynamics 365 Finance minden jogi személye esetében konfigurálni kell a főkönyv részleteit. A **Főkönyv** lapon kiválaszthatja az adott jogi személyhez használandó számlatükröt és számlastruktúrákat. A számlatükör és a számlastruktúrák megosztásához konfigurálja a jogi személyek **Főkönyv** lapját, hogy mindegyikhez ugyanazt a számla- és számlastruktúrát használja. A konfiguráció egy részét az egyes jogi személyekben is megoszthatja, és minden jogi személyben specifikus konfigurációkkal rendelkezik.
+Microsoft Dynamics A 365 Pénzügy modul minden jogi személye esetén konfigurálni kell a főkönyv részletes adatait. A **Főkönyv** lapon kiválaszthatja az adott jogi személyhez használandó számlatükröt és számlastruktúrákat. A számlatükör és a számlastruktúrák megosztásához konfigurálja a jogi személyek **Főkönyv** lapját, hogy mindegyikhez ugyanazt a számla- és számlastruktúrát használja. A konfiguráció egy részét az egyes jogi személyekben is megoszthatja, és minden jogi személyben specifikus konfigurációkkal rendelkezik.
 
 Ha a jogi személyeknek különböző számlatükörrel vagy fiókstruktúrával kell rendelkezniük, a jogi személy felülbírálási funkciója hasznos lehet. Ha ugyanazt a számla- és számlastruktúrákat több jogi személyhez használja, majd a kivételeket jogi személyek felülbírálásain keresztül kezeli, egyszerűsítheti a karbantartást az idő múlásával.
 
@@ -38,7 +38,7 @@ A számlatükör és a fő számlák tervezéséről és konfigurálásáról a 
 
 ## <a name="selecting-account-structures"></a>A számlastruktúrák kiválasztása
 
-A Dynamics 365 Finance-ben lévő minden jogi személy beállítható egy vagy több számlastruktúra használatára. Minden számlastruktúra meghatározza a tranzakciók feladásakor engedélyezett pénzügyi dimenziókat, valamint a fő számlák és pénzügyi dimenziók kombinációit. Ugyanazokat a számlastruktúrákat több jogi személyben is használhatja.
+A Dynamics 365 Pénzügy minden jogi személye konfigurálható egy vagy több számlastruktúrára. Minden számlastruktúra meghatározza a tranzakciók feladásakor engedélyezett pénzügyi dimenziókat, valamint a fő számlák és pénzügyi dimenziók kombinációit. Ugyanazokat a számlastruktúrákat több jogi személyben is használhatja.
 
 Vegye figyelembe, hogy ha több számlastruktúrával rendelkezik, csak azokat a számlastruktúrákat választhatja ki, amelyek nem rendelkeznek átfedésben lévő fő számlák és pénzügyi dimenziók kombinációival. Az egyik számlastruktúra például úgy van konfigurálva, hogy 1000 és 1999 között adjon hozzá egy üzleti egységet a fő számlákhoz. Egy másik számlastruktúrában hozzáadta a Részleg pénzügyi dimenzióját az 1-gyel kezdődő fő számlákhoz. Ebben az esetben csak az egyik számlastruktúra adható hozzá ugyanabban a jogi személyben.
 

@@ -1,6 +1,6 @@
 ---
-title: 'Adóbeállítások szinkronizálása az adószámítási szolgáltatásból a következőbe: Dynamics 365 Finance'
-description: Ez a témakör bemutatja, hogy hogyan lehet szinkronizálni az adóbeállítási alapadatokat az adószámítási szolgáltatásból a Microsoft számára Dynamics 365 Finance.
+title: Adóbeállítások szinkronizálása az adószámítási szolgáltatásból a Dynamics 365 Pénzügy szolgáltatásba
+description: Ez a témakör bemutatja, hogy hogyan Microsoft Dynamics lehet szinkronizálni az adóbeállítási alapadatokat az Adószámítási szolgáltatásból a 365-ös pénzügyi dokumentumba.
 author: wangchen
 ms.date: 01/05/2022
 ms.topic: article
@@ -9,30 +9,29 @@ ms.technology: ''
 ms.search.form: TaxIntegration, TaxServiceParameters
 audience: Application user
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
 ms.custom: intro-internal
 ms.search.region: Global
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: d5d994934014a146f825431cb53dfbef8fe20bc8
-ms.sourcegitcommit: 27475081f3d2d96cf655b6afdc97be9fb719c04d
+ms.openlocfilehash: 3a9c11a6f5946d56b9e58a02c37f18adec155661
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/12/2022
-ms.locfileid: "7965107"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687786"
 ---
-# <a name="sync-the-tax-setup-from-the-tax-calculation-service-to-dynamics-365-finance"></a>Adóbeállítások szinkronizálása az adószámítási szolgáltatásból a következőbe: Dynamics 365 Finance
+# <a name="sync-the-tax-setup-from-the-tax-calculation-service-to-dynamics-365-finance"></a>Adóbeállítások szinkronizálása az adószámítási szolgáltatásból a Dynamics 365 Pénzügy szolgáltatásba
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör bemutatja, hogy hogyan lehet szinkronizálni az adóbeállítási alapadatokat az adószámítási szolgáltatásból a Microsoft számára Dynamics 365 Finance.
+Ez a témakör bemutatja, hogy hogyan Microsoft Dynamics lehet szinkronizálni az adóbeállítási alapadatokat az Adószámítási szolgáltatásból a 365-ös pénzügyi dokumentumba.
 
-Miután befejezte az Adószámítás – Első lépésekkel lépést, a következő adóbeállítási adatok automatikusan szinkronizálódnak az adószámítási szolgáltatásból a [pénzügyekbe](global-get-started-with-tax-calculation-service.md).
+Miután befejezte az [Adószámítás](global-get-started-with-tax-calculation-service.md)– Első lépésekkel lépést, a következő adóbeállítási adatok automatikusan szinkronizálódnak az adószámítási szolgáltatásból a pénzügyekbe.
 
 ## <a name="sales-tax-code"></a>Áfakód
 
-| Áfaszámítási szolgáltatás           | Finance                             |
+| Adószámítási szolgáltatás           | Finance                             |
 | --------------------------------- | ----------------------------------- |
 | Adókód                          | Áfakód                      |
 | Leírás                       | Név                                |
@@ -43,7 +42,7 @@ Miután befejezte az Adószámítás – Első lépésekkel lépést, a követke
 
 ## <a name="tax-value"></a>Adó értéke
 
-| Áfaszámítási szolgáltatás | Finance                   |
+| Adószámítási szolgáltatás | Finance                   |
 | ----------------------- | ------------------------- |
 | Tranzakció kezdő dátuma   | Kezdő dátum                 |
 | Tranzakció záró dátuma     | Záró dátum                   |
@@ -54,7 +53,7 @@ Miután befejezte az Adószámítás – Első lépésekkel lépést, a követke
 
 ## <a name="tax-limits"></a>Adókorlátok
 
-| Áfaszámítási szolgáltatás | Finance           |
+| Adószámítási szolgáltatás | Finance           |
 | ----------------------- | ----------------- |
 | Tranzakció kezdő dátuma   | Kezdő dátum         |
 | Tranzakció záró dátuma     | Záró dátum           |
@@ -63,20 +62,20 @@ Miután befejezte az Adószámítás – Első lépésekkel lépést, a követke
 
 ## <a name="sales-tax-group"></a>Áfacsoport
 
-| Áfaszámítási szolgáltatás                         | Finance                                    |
+| Adószámítási szolgáltatás                         | Finance                                    |
 | ----------------------------------------------- | ------------------------------------------ |
 | Adócsoport                                       | Áfacsoport                            |
 | Az adócsoporthoz alatti adókódok                  | Az áfacsoport alatti áfakódok |
 | Az adókód Adómentesként **van megjelölve.**         | Mentes                                     |
 | Az adókód Adómentesként **van megjelölve.**         | Adómentesség kódja                                |
-| Az adókód fordított **áfafizetésűként van megjelölve.** | Fordított áfa                             |
-| Az adókód "Használat adó" **jelöléssel van megjelölve.**        | Importadó                                    |
+| Az adókód fordított áfafizetésűként **van megjelölve.** | Fordított áfa                             |
+| Az adókód "Használat adó" jelöléssel **van megjelölve.**        | Importadó                                    |
 
 ## <a name="item-sales-tax-group"></a>Cikkáfacsoport
 
-| Áfaszámítási szolgáltatás             | Finance                                         |
+| Adószámítási szolgáltatás             | Finance                                         |
 | ----------------------------------- | ----------------------------------------------- |
-| Tétel adócsoport                      | Cikkáfacsoport                            |
+| Cikk adócsoportja                      | Cikkáfacsoport                            |
 | A cikk adócsoportja alatti adókódok | A cikk áfacsoportja alatti áfakódok |
 
 A szinkronizálás befejezése után folytassa a feladási és jelentéskészítési célokra a Pénzügy fennmaradó paramétereinek karbantartását.

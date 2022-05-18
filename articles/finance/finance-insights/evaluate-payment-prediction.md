@@ -2,25 +2,25 @@
 title: A kezdeti vevői fizetési előrejelzési modell kiértékelése
 description: Ez a témakör azokat a lépéseket mutatja be, amelyekkel megismerheti a vevői kifizetési előrejelzési modellt, és értékelheti annak hatékonyságát.
 author: ShivamPandey-msft
-ms.date: 07/16/2021
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2020-05-28
 ms.dyn365.ops.version: AX 10.0.8
-ms.openlocfilehash: 874c6e938681537a0420eece6835a4c2124e11fc
-ms.sourcegitcommit: 133aa728b8a795eaeaef22544f76478da2bd1df9
+ms.openlocfilehash: c0951c8dcf6205ebbb15baf86b1272af4e95547f
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/13/2022
-ms.locfileid: "7969112"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8677954"
 ---
 # <a name="evaluate-the-initial-customer-payment-prediction-model"></a>A kezdeti vevői fizetési előrejelzési modell kiértékelése
 
@@ -30,17 +30,17 @@ Ez a témakör azt mutatja be, hogyan lehet értékelni egy előrejelzési model
 
 ## <a name="getting-details-about-the-model"></a>A modell részleteinek megszerzése
 
-A Microsoft Dynamics 365 Finance **Finance Insights paraméterei** lapon a **Modell pontosságának javítása** hivatkozás megjelenik a pontossági pontszám mellett.
+A Pénzügyi információk **paraméterei oldalon,** a 365 Pénzügy Microsoft Dynamics **, a Modellek pontosságának javítása hivatkozás jelenik meg a pontossági** pontszám mellett.
 
 [![Modell pontosságának javítása hivatkozás.](./media/prediction-model.png)](./media/prediction-model.png)
 
-Ez a hivatkozás a következő lépésekkel kapcsolható össze, ahol további tudnivalókat lehet ismerkedni az aktuális modellel, és lépéseket lehet tenni annak AI Builder javítása érdekében. A következő ábrán egy megnyitott oldal látható.
+Ez a hivatkozás a következő lépésekkel kapcsolható AI Builder össze, ahol további tudnivalókat lehet ismerkedni az aktuális modellel, és lépéseket lehet tenni annak javítása érdekében. A következő ábrán egy megnyitott oldal látható.
 
 [![AI Builder.](./media/what-to-predict.png)](./media/what-to-predict.png)
 
 A megnyitott oldal az alábbi információt mutatja:
 
-- A **Teljesítmény** szakaszban a modell teljesítményi osztálya biztosítja a modell minőségét. Erről az osztályról a dokumentáció [előrejelzési modell](/ai-builder/prediction-performance) teljesítményével kapcsolatban tartalmaz AI Builder további tájékoztatást.
+- A **Teljesítmény** szakaszban a modell teljesítményi osztálya biztosítja a modell minőségét. Erről az osztályról a dokumentáció [előrejelzési modell](/ai-builder/prediction-performance) teljesítményével kapcsolatban tartalmaz további AI Builder tájékoztatást.
 - A **Legbefolyásosabb adat** szakasz bemutatja, hogy milyen fontos a különböző típusú adatok bevitele a modellhez. A lista és a megfelelő százalékok értékelésével meghatározhatja, hogy az adatok összhangban vannak-e a vállalattal és a piaccal kapcsolatos ismeretekkel.
 
     [![Teljesítmény és legbefolyásosabb adatszakaszok az előrejelzési modellhez.](./media/models.png)](./media/models.png)
@@ -51,7 +51,7 @@ A megnyitott oldal az alábbi információt mutatja:
 
 ## <a name="digging-deeper"></a>Mélyebbre ásás
 
-Bár a pontosság jól kiindulópontként szolgál egy modell értékeléséhez, és a teljesítmény-fokozat ad szempontot, részletesebb mérőszámokat is biztosít, amelyek az értékeléshez AI Builder használhatók. A részletek letöltéséhez kattintson a **Teljesítmény** szakaszban a három pont gombra (**...**) a **Modell használata** gombra, majd válassza ki a **Részletes metrikák letöltése** lehetőségre.
+Bár a pontosság jól kiindulópontként szolgál egy modell értékeléséhez, és a teljesítmény-fokozat ad szempontot, AI Builder részletesebb mérőszámokat is biztosít, amelyek az értékeléshez használhatók. A részletek letöltéséhez kattintson a **Teljesítmény** szakaszban a három pont gombra (**...**) a **Modell használata** gombra, majd válassza ki a **Részletes metrikák letöltése** lehetőségre.
 
 [![Részletes metrikák letöltése parancs.](./media/performance.png)](./media/performance.png)
 
@@ -89,10 +89,10 @@ Ebben az esetben az F1 makrópontszám körülbelül 49,3 százalékban azt jelz
 
 ## <a name="improving-the-model"></a>A modell javítása
 
-Miután jobban megértette az első modell eredményeit, érdemes lehet javítani a modellt a jellemzőoszlopok hozzáadásával vagy eltávolításával, vagy az adatkészlet olyan részeinek szűrésével, amelyek nem támogatják a pontos előrejelzéseket. Ezután a Folyamat újraindításához kattintson a AI Builder Modell **javítása** Dynamics 365 Finance AI Builder hivatkozásra. Kísérletezhet a különböző jellemzőkkel anélkül, hogy befolyásolná a közzétett modellt. A közzétett modellt csak akkor befolyásolja, ha a **Közzététel** lehetőséget választja. Ne feledje, hogy a Dynamics 365 Finance példányához egyetlen modellt használ. Ezért a közzététel előtt alaposan tekintse át az új modelleket.
+Miután jobban megértette az első modell eredményeit, érdemes lehet javítani a modellt a jellemzőoszlopok hozzáadásával vagy eltávolításával, vagy az adatkészlet olyan részeinek szűrésével, amelyek nem támogatják a pontos előrejelzéseket. Zárja be AI Builder, majd indítsa **újra** a folyamatot a Dynamics 365 Pénzügy AI Builder modellhivatkozásával. Kísérletezhet a különböző jellemzőkkel anélkül, hogy befolyásolná a közzétett modellt. A közzétett modellt csak akkor befolyásolja, ha a **Közzététel** lehetőséget választja. Ne feledje, hogy a Dynamics 365 Pénzügy ön példánya egyetlen modellt használ. Ezért a közzététel előtt alaposan tekintse át az új modelleket.
 
 ## <a name="for-more-information"></a>További információ
 
-Az előrejelzési modellek kiértékelésével kapcsolatos további információt a [Gépi tanulási modellek eredményei](/confusion-matrix.md) részben talál
+Az előrejelzési modellek kiértékelésével kapcsolatos további információt a [Gépi tanulási modellek eredményei](confusion-matrix.md) részben talál
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

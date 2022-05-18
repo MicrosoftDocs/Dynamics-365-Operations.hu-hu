@@ -1,6 +1,6 @@
 ---
 title: Költségvetés-tervezés
-description: Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 Finance költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.
+description: Ennek a projektnek az a célja, hogy irányított nézetet biztosítson a Microsoft Dynamics Költségvetés-tervezési terület 365 Pénzügyi funkcióinak frissítéséről. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.
 author: panolte
 ms.date: 06/25/2018
 ms.topic: article
@@ -8,25 +8,25 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
 ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 0420887c35bbb07aaf8cce05a68173ab6c534f92
-ms.sourcegitcommit: e40a9fac5bac9f57a6dcfe73a1f21856eab9b6a9
+ms.openlocfilehash: 65ebfddb1baf39e20c22d3ed9bb26dbb33765e20
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/02/2021
-ms.locfileid: "7595334"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8712004"
 ---
 # <a name="budget-planning"></a>Költségvetés-tervezés
 
 [!include [banner](../includes/banner.md)]
 
-Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 Finance költségvetés tervező részének frissített funkcióiba. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Ez a labor az alábbi üzleti folyamatokra és feladatokra fókuszál:
+Ennek a projektnek az a célja, hogy irányított nézetet biztosítson a Microsoft Dynamics Költségvetés-tervezési terület 365 Pénzügyi funkcióinak frissítéséről. Ezen oktatóanyag célja, hogy illusztrálja a költségvetés tervező modul egy gyors konfigurációs példáját, valamint bemutassa, hogyan vihető véghez a költségvetés tervezés ennek a konfigurációnak a használatával.  Ez a labor az alábbi üzleti folyamatokra és feladatokra fókuszál:
 - Költségvetés-tervezési és felhasználóbiztonsági konfigurálási célra szervezeti hierarchia létrehozása
 - Költségvetési terv esetek, költségvetési terv oszlopok, elrendezések és Excel sablonok meghatározása
 - Költségvetés-tervezési folyamat létrehozása és aktiválása
@@ -36,7 +36,7 @@ Az oktatóanyag célja, hogy betekintést nyújtson a Microsoft Dynamics 365 Fin
 
 ## <a name="prerequisites"></a>Előfeltételek 
 
-A jelen oktatóanyaghoz a Microsoft Dynamics 365 Finance környezetet Contoso bemutatóadatokkal kell elérnie, és a példányra vonatkozóan rendszergazdai hozzáférés szükségessel kell rendelkeznie. Az oktatóanyag kapcsán ne használja a Privát böngészőmód beállítást - szükség esetén jelentkezzen ki az eltérő böngészőfiókból, majd jelentkezzen be rendszergazda adatokkal. A bejelentkezéskor **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ez az Excel alkalmazáshoz aktuálisan szükséges cookie-t hoz létre. Ha Internet Explorertől eltérő böngészővel bejelentkezik be az alkalmazásba, a rendszer arra kéri majd, hogy jelentkezzen be az Excel alkalmazás segítségével. Ha az Excel alkalmazásban a „Bejelentkezés” lehetőségre kattint, megnyílik egy Internet Explorer felugró ablak, a bejelentkezéskor pedig **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ha a „Bejelentkezés” lehetőség bejelölése az Excel alkalmazásban látszólag nem vezet eredményre, akkor törölje az Internet Explorer cookie-gyorsítótárat.
+Ehhez az oktatóanyaghoz Microsoft Dynamics el kell férni a 365 Pénzügyi környezethez a Contoso bemutató adataival, és rendszergazdaként kell rendelkeznie a példányhoz. Az oktatóanyag kapcsán ne használja a Privát böngészőmód beállítást - szükség esetén jelentkezzen ki az eltérő böngészőfiókból, majd jelentkezzen be rendszergazda adatokkal. A bejelentkezéskor **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ez az Excel alkalmazáshoz aktuálisan szükséges cookie-t hoz létre. Ha Internet Explorertől eltérő böngészővel bejelentkezik be az alkalmazásba, a rendszer arra kéri majd, hogy jelentkezzen be az Excel alkalmazás segítségével. Ha az Excel alkalmazásban a „Bejelentkezés” lehetőségre kattint, megnyílik egy Internet Explorer felugró ablak, a bejelentkezéskor pedig **KÖTELEZŐ** bejelölni a „Szeretnék bejelentkezve maradni” jelölőnégyzetet. Ha a „Bejelentkezés” lehetőség bejelölése az Excel alkalmazásban látszólag nem vezet eredményre, akkor törölje az Internet Explorer cookie-gyorsítótárat.
 
 ## <a name="scenario-overview"></a>**Eset áttekintése**
 Ágnes a Contoso Szórakozási Rendszerekben (DEMF) pénzügyi vezetőjeként dolgozik Németországban. Közeleg a 2016-os pénzügyi év, és Ágnesnek be kell állítania vállalat jövő évi költségvetését. A költségvetés előkészítése az alábbiak szerint történik:

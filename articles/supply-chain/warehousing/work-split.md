@@ -1,7 +1,7 @@
 ---
 title: Felosztott munka
 description: Ez a témakör a munkafelosztási funkcióval kapcsolatban tartalmaz információkat. Ez a funkció lehetővé teszi, hogy a nagy munkarendeléseket több kisebb munkarendelésre ossza fel, amelyeket azután több raktári dolgozóhoz rendelhet. Ily módon ugyanazt a munkát egyszerre több raktári dolgozó is kiválaszthatja.
-author: mirzaab
+author: Mirzaab
 ms.date: 10/15/2020
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.industry: WHSWorkTableListPage
 ms.author: mirzaab
 ms.search.validFrom: 2020-10-15
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 8b06164a81a18548cf9d98ea2f577b5783145100
-ms.sourcegitcommit: 8cb031501a2b2505443599aabffcfece50e01263
+ms.openlocfilehash: b9914958684d552f0b45ddca641238124ade3454
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/09/2021
-ms.locfileid: "7778257"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8669460"
 ---
 # <a name="work-split"></a>Felosztott munka
 
@@ -33,7 +33,7 @@ A munkafelosztás lehetővé teszi, hogy a nagy munkaazonosítókat (azaz több 
 
 A munkafelosztási funkció használata előtt be kell kapcsolnia a funkciót és az annak előfeltételként szolgáló funkciót a rendszerében. A rendszergazdák használhatják a [funkciókezelési](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) beállításokat a funkciók állapotának ellenőrzéséhez, és szükség esetén bekapcsolásukhoz.
 
-Először kapcsolja be a *Szervezet szintű munkazárolás* előfeltétel funkciót, ha még nincs bekapcsolva. Az Ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció kötelező, ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni. Ennek ellenére a funkció a következő módon továbbra is megjelenik a [...](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) Szolgáltatáskezelésben:
+Először kapcsolja be a *Szervezet szintű munkazárolás* előfeltétel funkciót, ha még nincs bekapcsolva. Az Ellátásilánc-kezelés 10.0.21-es verziója esetén ez a funkció kötelező, ezért alapértelmezés szerint be van kapcsolva, és nem lehet újra kikapcsolni. Ennek ellenére a funkció a következő módon továbbra [is](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) megjelenik a Szolgáltatáskezelésben:
 
 - **Modul:** *Raktárkezelés*
 - **Funkció neve:** *Szervezeti szintű munkazárolás*

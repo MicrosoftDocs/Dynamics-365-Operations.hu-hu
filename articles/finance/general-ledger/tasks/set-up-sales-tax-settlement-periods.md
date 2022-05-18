@@ -1,6 +1,6 @@
 ---
 title: Áfafizetési időszakok beállítása
-description: Ez a témakör bemutatja, hogyan állítsuk be az áfakiegyenlítési időszakokat a Dynamics 365 Finance szolgáltatásban.
+description: Ez a témakör bemutatja az áfafizetési időszakok beállítását a Dynamics 365 Pénzügyben.
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: business-process
@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: TaxPeriod
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 1f57cd2b5b0f8f86d67500086403c5f484a263f76601453c00f59ede901b01a8
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 197b85fb88f966b0a13fc061e2e780dd84e74acb
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6732957"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8735814"
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Áfafizetési időszakok beállítása
 
@@ -28,7 +28,7 @@ Ez a témakör bemutatja, hogyan állítsuk be az áfakiegyenlítési időszakok
 
 Ez a feladat az USMF bemutatócéget használja.
 
-1. A Navigációs ablaktáblán lépjen a **Modulok > Adó > Közvetett adók > Áfa > Áfakiegyenlítési időszakok** elemre.
+1. Ugrás az **áfafizetési > áfafizetési > áfafizetési > áfafizetési időszakokhoz**.
 2. Válassza az **Új** lehetőséget.
 3. Írjon be egy értéket a **Kiegyenlítési időszak** meghatározása mezőbe.
 4. Írjon egy értéket a **Leírás** mezőbe.

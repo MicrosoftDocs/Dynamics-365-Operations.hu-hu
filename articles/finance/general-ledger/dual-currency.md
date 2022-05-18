@@ -1,6 +1,6 @@
 ---
 title: Kettős pénznem
-description: Ez a témakör a kettős pénznemről szól, ahol a könyvelési pénznem használt második könyvelési pénznemként a Microsoft Dynamics 365 Finance esetében.
+description: Ez a témakör a kettős pénznemről nyújt tájékoztatást, ahol a 365 Pénzügy második könyvelési pénznemeként a Microsoft Dynamics jelentési pénznem használatos.
 author: kweekley
 ms.date: 04/17/2020
 ms.topic: article
@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerJournalTable, Ledger, AssetTransReportingCurrencyAmountsWizard,BankAccountTransReportingCurrencyAmountsWizard, LedgerTrialBalanceListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-10
 ms.dyn365.ops.version: 8.0999999999999996
-ms.openlocfilehash: b20c45952d2c0c28a1b785fd92bf47cfb25251fa3a3308d14130ad0f1c78305d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 04738d2fe88fef5c0e96a39febfec86fab3bee7d
+ms.sourcegitcommit: d1683d033fc74adbc4465dd26f7b0055e7639753
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6762067"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8713585"
 ---
 # <a name="dual-currency"></a>Kettős pénznem
 
@@ -199,7 +199,7 @@ Ezenkívül jelentős módosítást végeztünk az értékcsökkenés folyamaton
     
 ### <a name="consolidations"></a>Konszolidációk
     
-A Dynamics 365 Finance 10.0.5 verziójában (2019. október) bevezetett funkciók lehetővé teszik a szolgáltatások funkcióinak kezelését a konszolidáció és a kettős pénznem továbbfejlesztett rugalmassága érdekében. A funkció engedélyezéséhez nyissa meg a **Funkciókezelés** munkaterületet, és jelölje be a **Kettős pénznem funkció engedélyezése a Főkönyv konszolidálásához** jelölőnégyzetet.
+A Dynamics 365 Pénzügy 10.0.5-ös verziójában (2019. októberben) bevezetett funkciók a jobb konszolidációs és kettős pénznemű funkciók kezelésével teszik lehetővé a funkciókat. A funkció engedélyezéséhez nyissa meg a **Funkciókezelés** munkaterületet, és jelölje be a **Kettős pénznem funkció engedélyezése a Főkönyv konszolidálásához** jelölőnégyzetet.
 
 A Főkönyv konszolidálásához egy új beállítás lett hozzáadva, amely a forrásoldali vállalatoktól származó könyvelési vagy jelentési pénznemek összegeit összesíti. Ha a könyvelési vagy a jelentési pénznem megegyezik a konszolidációs vállalat könyvelési vagy jelentési pénznemével, akkor az összegeket a program az átváltás helyett közvetlenül másolja.
 

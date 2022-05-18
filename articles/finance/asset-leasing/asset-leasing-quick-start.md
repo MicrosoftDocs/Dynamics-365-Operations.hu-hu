@@ -8,25 +8,27 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: AssetLeaseLeasingWorkspace
 audience: Application User
-ms.reviewer: roschlom
-ms.custom: intro-internal
+ms.reviewer: kfend
+ms.custom:
+- "4464"
+- intro-internal
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-09-24
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 72c362e651787d2ff120944925e3bc35523f0059
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 991685f50a00e60026331bf573561be904c7f9ab
+ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7982009"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8710329"
 ---
 # <a name="asset-leasing-get-started"></a>Eszközlízing – első lépések
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör az eszközlízing-képességet ismerteti, valamint bemutatja az eszközlízing létrehozásának, valamint a lízingekkel kapcsolatos információk megtekintésének lépéseit. A témakör a felhasználói felületen és a dokumentációban használt terminológiát is meghatározza. Az eszközlízing egy speciális modul, amely lehetővé teszi a lízingelt eszközökre vonatkozó pénzügyi tranzakciók kezelését, nyomon követését és automatizálását a Microsoft Dynamics 365 Finance alkalmazásban. Az eszközlízing megfelel a nemzetközi könyvelési szabványoknak (IFRS 16) és az Egyesült Államokban GAAP szabványainak (ASC 842). Az eszközlízing modul rögzíti és dolgozza fel a lízinggel kapcsolatos adatokat, és segítséget nyújt a naplóbejegyzések létrehozásában a lízing életciklusa alatt – a kezdő elszámolástól és a havi naplóbejegyzésektől egészen a lízing értékvesztéséig és lezárásáig. Az eszközlízing modul zökkenőmentesen épül be a Dynamics 365 Finance egyéb összetevőibe, így például a tárgyi eszközökbe, a kötelezettségekbe és a főkönyvbe is.
+Ez a témakör az eszközlízing-képességet ismerteti, valamint bemutatja az eszközlízing létrehozásának, valamint a lízingekkel kapcsolatos információk megtekintésének lépéseit. A témakör a felhasználói felületen és a dokumentációban használt terminológiát is meghatározza. A tárgyi eszközök értékcsökkenése a bérelt eszközök pénzügyi tranzakcióinak a 365 Pénzügyben való kezelésére, Microsoft Dynamics nyomon követésére és automat kezelésére szolgáló speciális képesség. Az eszközlízing megfelel a nemzetközi könyvelési szabványoknak (IFRS 16) és az Egyesült Államokban GAAP szabványainak (ASC 842). Az eszközlízing modul rögzíti és dolgozza fel a lízinggel kapcsolatos adatokat, és segítséget nyújt a naplóbejegyzések létrehozásában a lízing életciklusa alatt – a kezdő elszámolástól és a havi naplóbejegyzésektől egészen a lízing értékvesztéséig és lezárásáig. A tárgyi eszközök problémamentesen integrálhatók a Dynamics 365 Pénzügy más összetevőivel, például a Tárgyi eszközök, a Kötelezettségek és a Főkönyv modulval.
 
 A funkció használata előtt be kell azt kapcsolnia saját rendszerében. A rendszergazdák használhatják a **Funkciókezelés** munkaterületet a funkció állapotának ellenőrzéséhez, és szükség esetén bekapcsolásához. A **Funkciókezelés** munkaterületen keresse meg és válassza ki az **Eszközlízing** funkciót, majd kattintson az **Engedélyezés most** gombra.
 
@@ -58,7 +60,7 @@ A következő ábra a lízingkönyvet, a lízinget, a számított fizetés ütem
 
 - **Lízingkönyv** – A lízingkönyv tartalmazza a lízingszerződés összes adatát, például a lízingfeltételeket, a valós értéket és a lízingdíjfizetéseket. A modul az Ön által követett könyvelési szabványt, illetve a lízingminősítési teszten figyelembe veendő lízingtípust és annak küszöbértékeit is tartalmazza. A lízingkönyv tartalmazza továbbá a főkönyvben feladott lízingtranzakciókat is. 
   
-- **Lízing** – A lízing magában foglalja az eszközlízing alapjául szolgáló eszközlízingadatokat, a lízingadatok forrása pedig a lízingszerződés és az ügyviteli döntés, melyek mind a Dynamics 365 Finance-en kívüli tényezők. Az eszköz valós értéke az az ár, amelyet az értékelés időpontjában végrehajtott tranzakció során az eszközért fizetnének. Ez az érték függhet az eszköz típusától, a piaci feltételektől, valamint az értékelés során figyelembe veendő egyéb feltételektől. Az eszköz valós értékét a program figyelembe veszi a minősítési teszt egyenletében.
+- **Bérlet** – a bérlet olyan tárgyieszköz-bérleti adatokat hordoz, amelyek a tárgyi eszköz bérletének alapját jelentik, a bérlet információforrása a bérleti szerződés és a mindkét esetben a Dynamics 365 Pénzügy programon kívüli vezetői döntés. Az eszköz valós értéke az az ár, amelyet az értékelés időpontjában végrehajtott tranzakció során az eszközért fizetnének. Ez az érték függhet az eszköz típusától, a piaci feltételektől, valamint az értékelés során figyelembe veendő egyéb feltételektől. Az eszköz valós értékét a program figyelembe veszi a minősítési teszt egyenletében.
 
 - **Eszköz hasznos élettartama** – Ez az eszköznek a lízing kezdő dátumától számolt hasznos élettartamából hátralévő időszakokat jelzi. Az eszköz hasznos élettartamát a program figyelembe veszi a minősítési teszt egyenletében. Ez nem egyezik a tárgyi eszközök modulban meghatározott hasznos élettartammal.
 

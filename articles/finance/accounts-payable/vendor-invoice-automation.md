@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: VendEditInvoiceHeaderStagingListPage
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: f407d42fe624206e32a2f58fe8c7fcaf2df52c729a1d945d3d801f450b6ed129
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 02fcb6ce49156c32f23bfb37478a1076f62aa868
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6722767"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716394"
 ---
 # <a name="invoice-automation-for-scanned-documents"></a>Számlaautomatizálás beolvasott dokumentumokhoz
 
@@ -58,7 +58,7 @@ Az adatcsomag kötelezően elküldendő munkaegység, hogy a számlafejlécek, a
 
 A szállítói számla dokumentummelléklet a funkció részeként bevezetett új adatentitás. A Szállítói számla fejlécének entitását úgy módosította a rendszer, hogy az támogassa a mellékleteket. A Szállítói számla sorentitást nem módosították ehhez a funkcióhoz.
 
-Az adatcsomagokkal kapcsolatos részletes tudnivalók: [Adatkezelés – áttekintés](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Az adatcsomagok adatkezelési munkaterületen történő létrehozásával kapcsolatos további tudnivalók: [Adatcsomagok feldolgozása és felhasználása a Dynamics 365 Finance and Operations alkalmazások megoldásban](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+Az adatcsomagokkal kapcsolatos részletes tudnivalók: [Adatkezelés – áttekintés](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). Az adatcsomagok adatkezelési munkaterület használatával való létrehozásáról a [Dynamics 365 Pénzügy és Műveletek alkalmazás megoldásában található Az adatcsomagok feldolgozása és használata című témakörben található részletes tájékoztatás](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 A számlákat és mellékleteket tartalmazó tesztadatok gyors létrehozásához kövesse az alábbi lépéseket.
 

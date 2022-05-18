@@ -9,18 +9,17 @@ ms.technology: ''
 ms.search.form: ''
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
 ms.custom: 539093
 ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 5ff8d2f4663c53bf6dece1ef9af6609d5f0c5b50
-ms.sourcegitcommit: cf7d4af11bf85638ee831a28ea5ee1a1e041a675
+ms.openlocfilehash: 9a12cf52d904db0396aa9914b8e324060289710f
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/04/2022
-ms.locfileid: "8544551"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8690948"
 ---
 # <a name="revenue-and-expense-deferrals-in-subscription-billing"></a>Bevétel- és költség halasztások előfizetés számlázásakor
 
@@ -114,7 +113,7 @@ A következő lépések szerint adja meg az értékesítési rendelések halaszt
 4. A cikk-kód alkalmazásának meghatározása:
 
     * Ha a **Cikk-kód mező** tábla **·** **vagy csoport beállításra van** állítva, akkor a Cikk-kapcsolat mezőben válassza ki a cikk-kapcsolatot.**·**
-    * Ha a **Cikk-kód mező** beállítása **Kategória**, válassza ki a kategóriakapcsolatot a **Kategóriakapcsolatban**.
+    * Ha a Cikk-kód mező **beállítása Kategória** **, válassza ki a kategóriakapcsolatot a Kategóriakapcsolatban** **.**
     * Ha a **Cikk-kód mező** értéke **Mind**, az alapértelmezett értékek minden vonatkozó rekordra érvényesek.
 
 5. A számlakód alkalmazásának meghatározása:

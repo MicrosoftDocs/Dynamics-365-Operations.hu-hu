@@ -1,7 +1,7 @@
 ---
 title: Munkagyűjtő módosítása a munkán
 description: Ez a témakör azt mutatja be, hogy hogyan lehet módosítani a Munkagyűjtő módosítása gombot a munkaelemekhez a meglévő munka munkagyűjtőjének módosításához.
-author: mirzaab
+author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: ''
@@ -13,12 +13,12 @@ ms.search.region: global
 ms.author: mirzaab
 ms.search.validFrom: 2020-07-16
 ms.dyn365.ops.version: 10.0.8
-ms.openlocfilehash: 9255b7d2eaf030592207b557b3b6567a1a5bda98
-ms.sourcegitcommit: fcb8a3419e3597fe855cae9eb21333698518c2c7
+ms.openlocfilehash: dc210de420705062ba52c674f3ddb8eb7944715a
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102863"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8669852"
 ---
 # <a name="change-work-pool-on-work"></a>Munkagyűjtő módosítása a munkán
 

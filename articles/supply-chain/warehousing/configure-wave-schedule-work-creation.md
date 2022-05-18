@@ -1,7 +1,7 @@
 ---
 title: Munka létrehozásának ütemezése hullám közben
 description: Ez a témakör a munka-létrehozási hullámfeldolgozás ütemezésének beállítását és használatát ismerteti.
-author: perlynne
+author: Mirzaab
 ms.date: 01/14/2021
 ms.topic: article
 ms.prod: ''
@@ -9,17 +9,16 @@ ms.technology: ''
 ms.search.form: WHSPostMethod, WHSWavePostMethodTaskConfig, WHSWaveTemplateTable, WHSParameters, WHSWaveTableListPage, WHSWorkTableListPage, WHSWorkTable, BatchJobEnhanced, WHSPlannedWorkOrder
 audience: Application User
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-01-14
 ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 5b1e798ac0558e7c5b0bbe4b6a732cbdcf5729a1
-ms.sourcegitcommit: 008779c530798f563fe216810d34b2d56f2c8d3c
+ms.openlocfilehash: c955e7275c0bdc12dc206dde1d7e390f16270148
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7920113"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691131"
 ---
 # <a name="schedule-work-creation-during-wave"></a>Munka létrehozásának ütemezése hullám közben
 
@@ -54,7 +53,7 @@ A meglévő feladat- és hullámfeldolgozási konfigurációk az összes olyan j
 Ha szükséges, manuálisan visszaállíthatja azokat a beállításokat, amelyek automatikusan megtörténtek, amikor engedélyezte a *Szervezeti szintű Munka létrehozásának ütemezése módszer* funkciót, a következő lépések alkalmazásával:
 
 - A hullámsablonok esetében lépjen a **Raktárkezelés \> Beállítás \> Hullámok \> Hullámsablonok** pontra. Cserélje le az *Munka létrehozásának ütemezése* módszert a *Munka létrehozása* lehetőségre.
-- A raktári paramétereknél kattintson a Raktárkezelés beállítása – **\>\> Raktárkezelési paraméterek gombra**. A **Hullámfeldolgozás** lapon alkalmazza az előnyben részesített értékeket a **Hullámok feldolgozása kötegben** és a **Várakozás zárolásra (ms)** mezőkben.
+- A raktári paramétereknél kattintson a Raktárkezelés **beállítása \>\> – Raktárkezelési paraméterek gombra**. A **Hullámfeldolgozás** lapon alkalmazza az előnyben részesített értékeket a **Hullámok feldolgozása kötegben** és a **Várakozás zárolásra (ms)** mezőkben.
 - A hullámmódszerek esetében lépjen a **Raktárkezelés \> Beállítás \> Hullámok \> Hullámfeldolgozás módszerei** lehetőségre. Válassza a `WHSScheduleWorkCreationWaveStepMethod` lehetőséget, és a Művelet panelen, kattintson a **Feladatkonfiguráció** elemre. Szükség szerint módosíthatja vagy törölheti a kötegelt tevékenységek számát és a hozzárendelt hullámcsoportot az egyes felsorolt raktárakhoz.
 
 ## <a name="manually-configure-scheduled-work-creation"></a>Ütemezett munkalétrehozás manuális konfigurálása
@@ -74,7 +73,7 @@ Ahhoz, hogy egy párhuzamos aszinkron módszert kihasználva raktári munkát ho
 Indítsa el az új hullámlépés-metódus létrehozásával, majd az aszinkron feladatok párhuzamos feldolgozásának engedélyezésével.
 
 1. Ugorjon a **Raktárkezelés \> Beállítás \> Hullámok \> Hullámfeldolgozás módszerei** lehetőségre.
-1. Válassza ki az Újragenerálás metódust, és jegyezze fel, hogy **a** *WHSScheduleWorkCreationCreationCreationMethod metódusok felkerültek a szállítási hullámsablonok során használható hullámfolyamati metódusok* listájára.
+1. Válassza **ki az Újragenerálás** *metódust, és jegyezze fel, hogy a WHSScheduleWorkCreationCreationCreationMethod* metódusok felkerültek a szállítási hullámsablonok során használható hullámfolyamati metódusok listájára.
 1. Válassza ki a *WHSScheduleWorkCreationAluStepMethod* **Metódusnevű** rekordot, és válassza a **Feladatkonfigurációt**.
 1. A Művelet panelen válassza az **Új** lehetőséget egy új dimenzió rácshoz való hozzáadásához, és használja a következő beállításokat:
 

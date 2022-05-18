@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMParameters, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: 51941
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-02-03
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: fd9bb907f95ba4c368871a470ca9b2bc807646ee
-ms.sourcegitcommit: 7e0e2a266d9a9473df72e207554d9bd150e17ce3
+ms.openlocfilehash: 1fc8ba3f69f216d66850485b6ba33cd324a57156
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7771435"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689410"
 ---
 # <a name="configure-human-resources-parameters"></a>A Human Resources paramétereinek konfigurálása
 
@@ -65,13 +64,13 @@ Az **Általános** lapon található beállítások határozzák meg a távollé
 
 A **Toborzás** lapon megadott beállítások határozzák meg azokat a dokumentumtípusokat, amelyek a pályázóknak automatikusan küldött levelezéshez használatosak. Jelezheti a kéretlen pályázatokhoz használt toborzási projektet is.
 
-A Toborzási projekt korosítási beállításában meghatározott időszak határozza meg, hogy mely toborzási projektek szerepelnek a Toborzáskezelés munkaterület Korosítási projektek **·** csempe **·** **·** területén. A jelentkezési határidő figyelmeztetéséhez megadott időszak használatával lehet látni a Toborzás munkaterületen a jelentkezési határidő felé közeledő toborzási **·** **·** projekteket.
+A Toborzási projekt korosítási **beállításában** **·** **meghatározott időszak határozza meg, hogy mely toborzási projektek szerepelnek a Toborzáskezelés munkaterület Korosítási projektek csempe** területén. A jelentkezési **határidő** **figyelmeztetéséhez** megadott időszak használatával lehet látni a Toborzás munkaterületen a jelentkezési határidő felé közeledő toborzási projekteket.
 
 A toborzásról a [Jelöltek toborzása](hr-personnel-recruit.md) oldalon található részletes tájékoztatás.
 
 ## <a name="compensation"></a>Kompenzáció
 
-A Dynamics 365 Finance alkalmazásban a **Kompenzáció** lap meghatározza, hogy a felhasználóknak meg kell-e erősíteniük, hogy menteni szeretnék-e a rögzített vagy változó kompenzációs terv adatait. Ha bejelöli a **Mentésellenőrzés engedélyezése** lehetőséget, amikor a felhasználók bezárnak egy kompenzációval kapcsolatos oldalt, megjelenik egy üzenet, amely megkérdezi, hogy akarják-e menteni a bejegyzést. A Kompenzációkezelés egyes oldalai nem teszik lehetővé adatok törlését felhasználók számára. Az által, hogy megerősítést kér a felhasználóktól az adatok mentésével kapcsolatban, képes lehet korlátozni az elmentett, de a későbbiekben nem törölhető adatok mennyiségét. Ha törli a **Mentésellenőrzés engedélyezése** jelölőnégyzetet, a bejegyzések mentése azonnal megtörténik, esetleg még az előtt, hogy a felhasználó készen állna. Ha Teljesítménymenedzsmentet alkalmaz, akkor a **Kompenzáció** lapon kiválaszthat egy osztályozási modellt, amelyet a teljesítmény osztályozáskor az alkalmazott kompenzációs konstrukciókhoz rendelt modell helyett használhat.
+A Dynamics 365 Pénzügy programban a Kompenzáció lap beállításai határozzák meg, **hogy** a felhasználóknak meg kell-e erősíteniük, hogy a fix vagy változó kompenzációs konstrukciók adatait menteni kívánják. Ha bejelöli a **Mentésellenőrzés engedélyezése** lehetőséget, amikor a felhasználók bezárnak egy kompenzációval kapcsolatos oldalt, megjelenik egy üzenet, amely megkérdezi, hogy akarják-e menteni a bejegyzést. A Kompenzációkezelés egyes oldalai nem teszik lehetővé adatok törlését felhasználók számára. Az által, hogy megerősítést kér a felhasználóktól az adatok mentésével kapcsolatban, képes lehet korlátozni az elmentett, de a későbbiekben nem törölhető adatok mennyiségét. Ha törli a **Mentésellenőrzés engedélyezése** jelölőnégyzetet, a bejegyzések mentése azonnal megtörténik, esetleg még az előtt, hogy a felhasználó készen állna. Ha Teljesítménymenedzsmentet alkalmaz, akkor a **Kompenzáció** lapon kiválaszthat egy osztályozási modellt, amelyet a teljesítmény osztályozáskor az alkalmazott kompenzációs konstrukciókhoz rendelt modell helyett használhat.
 
 A Human Resources alkalmazásban a **Kompenzáció** lapon kiválaszthatja, hogy korlátozza-e a hozzáférést a kompenzációs konstrukciókhoz, és beállít-e alapértelmezett pénznemet.
 
@@ -107,20 +106,20 @@ Az FMLA lapon lehet beállítani az FMLA-alkalmazhatósági követelmények és 
 
 ## <a name="employee-self-service"></a>Alkalmazotti önkiszolgáló rendszer
 
-Az Alkalmazott – önkiszolgáló szolgáltatás lapon megadott beállítások befolyásolják, hogy hogyan jelenik meg **·** az **·** alkalmazotti önkiszolgáló rendszer az alkalmazottaknak. Ezen a lapon a következő feladatokat lehet elvégezni:
+Az Alkalmazott – önkiszolgáló **szolgáltatás** lapon megadott beállítások befolyásolják, **hogy** hogyan jelenik meg az alkalmazotti önkiszolgáló rendszer az alkalmazottaknak. Ezen a lapon a következő feladatokat lehet elvégezni:
 
 - Adja meg az Alkalmazott önkiszolgáló **munkaterületének** nevét.
 - Adja meg, hogy a vezető mely adatokat adhatja meg az alkalmazottak számára
 - Hasznos hivatkozások hozzáadása az alkalmazottak számára
 - Az alkalmazottak korlátozása az üzleti kapcsolattartók részleteinek hozzáadása és szerkesztése tekintetében. A további tudnivalókat lásd: [Személyes adatok szerkesztésének korlátozása](hr-employee-self-service-restrict-editing.md).
 
-Az alkalmazotti önkiszolgáló rendszer beállításának további tudnivalókat lásd az Alkalmazott és a **·** Vezető [önkiszolgáló rendszer](hr-employee-manager-self-service-overview.md) áttekintésében.
+Az alkalmazotti önkiszolgáló **rendszer** beállításának további tudnivalókat lásd [az Alkalmazott és vezető önkiszolgáló rendszer áttekintésében](hr-employee-manager-self-service-overview.md).
 
 ![Alkalmazotti önkiszolgáló rendszer lap.](./media/hr-setup-parameters-employee-self-service.png)
 
 ## <a name="manager-self-service"></a>Vezetői önkiszolgáló rendszer
 
-A Vezetői önkiszolgáló lapon **megadott beállítások** azt befolyásolják, hogy milyen vezetők látnak a **Vezető önkiszolgáló szolgáltatásban.** Ezen a lapon a következő beállításokat lehet beállítani:
+A Vezetői önkiszolgáló **lapon megadott beállítások** befolyásolják, hogy milyen vezetők látnak a **vezető önkiszolgáló rendszerében**. Ezen a lapon a következő beállításokat lehet beállítani:
 
 - A lejáró rekordok tartománya
 - A vezetők által a lejáró rekordokban látható információk
@@ -128,13 +127,13 @@ A Vezetői önkiszolgáló lapon **megadott beállítások** azt befolyásolják
 - A kilépő dolgozók nézete
 - Hasznos hivatkozások a vezetőknek
 
-A vezetői önkiszolgáló rendszer beállításának további **tudnivalókat lásd: Alkalmazott és vezető**[önkiszolgáló szolgáltatás –](hr-employee-manager-self-service-overview.md) áttekintés.
+A vezetői önkiszolgáló **rendszer beállításának további tudnivalókat** lásd [az Alkalmazott és vezető önkiszolgáló rendszer áttekintésében](hr-employee-manager-self-service-overview.md).
 
 ![Vezetői önkiszolgáló rendszer lap.](./media/hr-setup-parameters-manager-self-service.png)
 
 ## <a name="benefits-management"></a>Juttatáskezelés
 
-A Juttatások kezelése lapon beállíthatja a Juttatások kezelése **·** e-mailben megadott beállításait. A Juttatások kezelése beállítási és használatával kapcsolatos további tudnivalókat lásd a [Juttatások kezelése](hr-benefits-management-overview.md) témakörben.
+A Juttatások **kezelése** lapon beállíthatja a Juttatások kezelése e-mailben megadott beállításait. A juttatások kezelésének [beállítását és használatát lásd a Juttatások kezelése témakörben](hr-benefits-management-overview.md).
 
 ![Juttatáskezelés lap.](./media/hr-setup-parameters-benefits-management.png)
 

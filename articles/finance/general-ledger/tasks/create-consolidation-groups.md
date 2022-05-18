@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: eaf48306607b27c70359e0d0faee4c92f4b82cac
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: a9ee95621f184b882ead1750d61626d184174cef
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182604"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716468"
 ---
 # <a name="create-consolidation-groups-and-additional-consolidation-accounts"></a>Konszolidációs csoportok és további konszolidációs számlák létrehozása
 
@@ -26,22 +26,19 @@ ms.locfileid: "8182604"
 
 Ez az eljárás bemutatja, hogyan lehet konszolidációsszámla-csoportot létrehozni, majd fiókokat hozzáadni a csoporthoz. Ez az eljárás az USMF bemutatócéget használja.
 
-
 ## <a name="create-a-consolidation-account-group"></a>Konszolidációs számlák csoportjának létrehozása
-1. Menjen a Főkönyv **> számlatükre és > a > számlacsoportokhoz**.
+1. Menjen a Főkönyv **> számlatükre és > a > számlacsoporthoz**.
 2. Kattintson az **Új** elemre.
 3. A Konszolidációsszámla-csoport **mezőbe** írja be a konszolidációsszámla-csoport egyedi azonosítóját.
 4. Írjon be egy értéket a **Név** mezőbe.
 
 ## <a name="add-accounts-to-consolidation-account-group"></a>Számlák hozzáadása a konszolidációsszámla-csoporthoz
-1. Ugorjon a Főkönyv > Számlatükör > Számlák > További konszolidációs számlák pontra.
-2. Kattintson az Új lehetőségre.
-3. A Fő számla mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-4. A listán keresse meg a leképezni kívánt fő számlát.
-5. A Konszolidációsszámla-csoport mezőben kattintson a legördítő nyílra a keresőlista megnyitásához.
-6. A listában kattintson a konszolidációsszámla-csoportra.
-7. Írjon be egy értéket a Konszolidációsszámla-csoport mezőbe.
-8. Írjon be egy értéket a Konszolidációsszámla-csoport neve mezőbe.
+1. Menjen a Főkönyv **> számlatükre és > Számlák > további konszolidációs számlákra**.
+2. Kattintson az **Új** elemre.
+3. A Fő **számla** mező listájában válassza ki a leképezni kívánt fő számlát.
+4. Kattintson a **konszolidációsszámla-csoport** mező listájában a konszolidációsszámla-csoportra.
+5. A Konszolidációs **számla** mezőbe írjon be egy értéket.
+6. A Konszolidációs **számla neve** mezőbe írjon be egy értéket.
 
 
 

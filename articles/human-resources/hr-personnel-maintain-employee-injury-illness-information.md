@@ -1,6 +1,6 @@
 ---
 title: Dolgozói sérülések és megbetegedések adatainak karbantartása
-description: Ez a feladat leírja, hogyan hozhat létre sérülést vagy betegséget.
+description: Ez a feladat azt írja le, hogyan lehet létrehozni egy sérülés vagy betegség esetet.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: business-process
@@ -8,17 +8,16 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: HRMInjuryIncident, HcmWorkerLookUp, HcmPersonnelManagementWorkspace
 audience: Application User
-ms.search.scope: Human Resources
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 06307331db4d420e99de21c0eb0b3cf1c233f0d5
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 36c25626bcc828a2d341d4ce4c9fe8fdcd4e6583
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066650"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688536"
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Dolgozói sérülések és megbetegedések adatainak karbantartása
 
@@ -33,54 +32,54 @@ Javasoljuk, hogy először a „Sérülés és betegség beállítása” felada
 
 
 
-Ez a feladatrögzítés leírja a sérülés- vagy betegségeset létrehozásának alapvető lépéseit. A sérülés vagy betegség részletein kívül az eset állapotát is nyomon követik. Alapértelmezés szerint az esetek állapota: **Nyisd ki**. Az állapotot a gombbal kezelheti **Az ügy állapota** menüpontot az oldal tetején.
+Ez a feladatrögzítés a sérülés vagy betegség esetének létrehozásának alapvető lépéseit írja le. A sérülés vagy betegség adatain kívül az eset állapotát nyomon követi a program. Alapértelmezés szerint az esetek állapota **Nyitott**. Az állapotot a lap tetején található **Eset állapot** menüeleme segítségével lehet kezelni.
 
-1. Menj **Emberi Erőforrások \> Munkások \> Sérülés és betegség \> Sérülések vagy betegségek**.
+1. Ugrás az **Emberi erőforrások dolgozókhoz \>\> – Sérülés és \> betegség Sérülés vagy betegség események**
 2. Válassza az **Új** lehetőséget.
-3. Ban,-ben **Esetleírás** mezőbe írjon be egy értéket (pl.**Csukló sérülés**).
-4. Ban,-ben **Munkás** mezőbe írjon be vagy válasszon egy értéket (például **Ana Bowman**).
-5. Ban,-ben **Az esemény dátuma és ideje** mezőben adjon meg egy dátumot és időt (például 2016. január 20. 10:00).
-6. Ban,-ben **Sérülés vagy betegség típusa** mezőbe írjon be vagy válasszon egy értéket (például **Törés**).
-7. Ban,-ben **Testrész** mezőbe írjon be vagy válasszon egy értéket (például **Csukló**).
-8. Ban,-ben **Az eredmény típusa** mezőbe írjon be vagy válasszon egy értéket (például **Terápia**).
-9. Ban,-ben **Jelentett dátum és idő** mezőbe írja be a dátumot és az időt.
+3. Az Eset **leírása mezőben** adjon meg egy értéket (például Súlyos **sérülés**).
+4. A Dolgozó **mezőben** adjon meg vagy válasszon ki egy értéket (például **Mottán** Ana).
+5. Az esemény **dátuma** és időpontja mezőbe írja be a dátumot és az időpontot (például 2016. január 20., 10:00 óra).
+6. A Sérülés **vagy betegség típusa mezőben** adjon meg vagy válasszon ki egy értéket (például **Rossz**).
+7. A Törzsrész **mezőben** adjon meg vagy válasszon ki egy értéket (például **Visszajelz**).
+8. Az Eredménytípus mezőben **adjon meg vagy válasszon ki egy értéket (például: Típus** **).**
+9. A Jelentett **dátum és idő** mezőbe írja be a dátumot és az időpontot.
 
-    A jelentés dátumának és időpontjának későbbinek kell lennie, mint az esemény dátuma és időpontja.
+    A jelentett dátumnak és időpontnak későbbinek kell lennie, mint az eseménynek.
 
-10. Ban,-ben **Az esetet bejelentő személy** mezőbe írjon be vagy válasszon egy értéket (például **Ana Bowman**).
+10. Az esetmezőt **bevivő** személynél adjon meg vagy válasszon ki egy értéket (**például Azna Mottán**).
 
-    A megadott személy lehet a munkavállaló vagy az esemény egy másik szemtanúja.
+    A megadott személy lehet az eset alkalmazottja vagy más személye.
 
-11. Ban,-ben **Incidens** részben, a **Ahol az incidens történt** mezőbe írjon be egy értéket (például **Raktár**).
-12. Ban,-ben **Munkahelyiségben** mezőben válassza ki **Igen** ha az esemény a munkaterületen történt.
-13. Ban,-ben **A munka megkezdésének dátuma és időpontja** mezőben adja meg azt a dátumot és időpontot, amikor az érintett személy az incidens bekövetkezte előtt dolgozni kezdett.
-14. Ban,-ben **Alkalmazotti munkakör vagy feladat** mezőbe írja be azt a munkát vagy feladatot, amelyet a munkavállaló végzett az esemény bekövetkeztekor (például **Dobozok betöltése**). 
-15. Ban,-ben **Az esemény oka** mezőbe írja be az incidens okát (például **Megcsúszott a nedves padlón**).
-16. Ban,-ben **Súlyossági szint** mezőbe írja be vagy válasszon értéket.
-17. Ban,-ben **Intézkedéseket kell hozni** mezőbe írjon be egy értéket (pl.**A kiömlött anyagot azonnal takarítsa fel**).
-18. Ban,-ben **Várhatóan távoli napok a munkától** mezőbe írja be, hogy az egyénnek várhatóan hány napja van távol a munkától.
+11. Az Esemény **terület** Where **esemény történt mezőjébe** írjon be egy értéket (például **Raktár**).
+12. Válassza az **Igen** lehetőséget a Munkahelyi létesítményekben mezőben, **ha** az esemény a munkahelyen történt.
+13. A Munka **elkezdésének** dátuma és időpontja mezőben adja meg azt a dátumot és időpontot, amikor az érintett személy elkezdte dolgozni az eseményt megelőzően.
+14. Az Alkalmazott **– feladat vagy** feladat mezőben adja meg azt a feladatot vagy feladatot, amit a dolgozó az esemény végrehajtásakor végzett (**például Doboz** betöltése). 
+15. Az Esemény **oka mezőben** adja meg az esemény okát (**például elszavadhat a padlón**).
+16. A Súlyossági **szint mezőben** adjon meg vagy válasszon ki egy értéket.
+17. Adjon meg **egy értéket a Szükséges** művelet mezőben (**például azonnal adja meg a figyelmeztetések tisztítását**).
+18. A Munkától **távol** napjainak várható mezőjébe írja be, hogy várhatóan hány nap távol van az adott személy a munkahelytől.
 
-    Miután az egyén visszatért dolgozni, frissítse a **Napok távol a munkától** mezőbe, amelyen az adott személy távol töltött napjainak tényleges száma látható.
+    Miután az egyes adatok visszaértek a munkahelyre, frissítse a Munkától távol napok mezőben a napok tényleges számát, ami azt jelenti, **hogy** az adott személy távol volt.
 
-19. Ban,-ben **Sérülés vagy betegség költségei** szakaszban válassza ki **Hozzáadás**.
+19. A Sérülés **vagy betegség költségei szakaszban válassza** a Hozzáadás **lehetőséget**.
 20. Adja meg a dátumot a **Dátum** mezőben.
-21. Ban,-ben **Költségtípus** mezőbe írjon be vagy válasszon egy értéket (például **Terápia**).
+21. A **Költségtípus** mezőben adjon meg vagy válasszon ki egy értéket (például: **Család**).
 
-    Ezenkívül megadhat egy összeget, és csatolhat bármilyen igazoló dokumentumot a költséghez (például számlák vagy orvosi feljegyzések).
+    Meg lehet továbbá adnia egy összeget, és csatolhatja a költséghez az alátámasztó dokumentációt (például a számlákat vagy az összeghez tartozó jegyzeteket).
 
 22. Válassza a **Hozzáadás** lehetőséget.
 23. Adja meg a dátumot a **Dátum** mezőben.
-24. Ban,-ben **Költségtípus** mezőbe írjon be vagy válasszon egy értéket (például **Orvos**).
-25. Ban,-ben **Sérülések vagy betegségek kezelése** szakaszban válassza ki **Hozzáadás**.
-26. Ban,-ben **A kezelés dátuma** mezőbe írja be a dátumot és az időt.
-27. Ban,-ben **A kezelés típusa** mezőbe írjon be vagy válasszon egy értéket (például **sín**).
-28. Opcionális: Állítsa be a **Sürgősségi kórházi látogatás** szakaszhoz **Igen**.
-29. Ban,-ben **Kezelési megjegyzések** mezőbe írjon be egy értéket (pl.**Sín 2 hétig**).
-30. Ban,-ben **Orvos neve** mezőbe írjon be egy értéket (pl.**Dr. Anderson**).
-31. A Kezelő létesítmény és **hely** mezőbe adjon meg egy értéket (például **Elm St. Emergency**).
-32. **A Kezelés részletei** mezőben adjon meg egy értéket (például **a röntgen megerősíti a törést, sín kopását**).
+24. A Költségtípus **mezőben** írjon be vagy válasszon ki egy értéket (például, **2015**).
+25. A Sérülés **vagy betegség kezelése területen** válassza a Hozzáadás **lehetőséget**.
+26. A Kezelés **dátuma mezőben** adja meg a dátumot és az időpontot.
+27. A Kezelés **típusa mezőben** adjon meg vagy válasszon ki egy értéket (például **Splint**).
+28. Nem kötelező: Állítsa a sürgősségi **kórházi ellátás** szakaszt Igen **beállításra**.
+29. A Kezelés **megjegyzései** mezőbe írjon be egy értéket (például **Splint 2 hétig**).
+30. Az Orvos **neve mezőbe** írjon be egy értéket (például **D. D.).**
+31. A Kezelés intézmény **és hely mezőjébe** írjon be egy értéket (például **Elm St. Emergency**).
+32. A Kezelés **részletei mezőben** adjon meg egy értéket (**például az X-megerősítés megerősíti a kezeléssel kapcsolatos kezeléssel kapcsolatos információkat**).
 33. Válassza a **Mentés** lehetőséget.
 
-Az eset állapotát bármikor frissítheti. Ha a sérülés vagy betegség feldolgozása folyamatban van, állítsa az állapotot Folyamatban **állásra**. Az incidens lezárása után csak az incidenshez kapcsolódó költségeket, kezeléseket vagy beadványokat adhat hozzá vagy távolíthat el. Más információk módosításához újra meg kell nyitnia a tokot.
+Az eset állapotát bármikor frissítheti. Ha a sérülés vagy betegség feldolgozása folyamatban van, **az állapotot Folyamatban állapotra kell állítani**. Az esemény bezárása után csak az esethez kapcsolódó költségeket, kezeléseket vagy iktatásokat lehet hozzáadni és eltávolítani. Egyéb adatok módosítása csak akkor nyitható meg, ha újra megnyitja az esetet.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

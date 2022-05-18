@@ -9,12 +9,12 @@ ms.reviewer: josaw
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2021-03-31
-ms.openlocfilehash: 95d272d9076f1ab25230e4efa98e321bdd618062
-ms.sourcegitcommit: 6dc2b877cf8ea9185a07964ec05c5ddb7a78471b
+ms.openlocfilehash: 22b31b46b247ca5f2d6b8b93f58c090b03a2b38c
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/12/2022
-ms.locfileid: "8407795"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8688375"
 ---
 # <a name="upgrade-to-the-party-and-global-address-book-model"></a>Frissítés a fél és globális címjegyzék modelljére
 
@@ -206,7 +206,7 @@ Ez a szakasz leírja a Felek postai címének és a Felek elektronikus címének
 
             + Microsoft.Dynamics.GABExtended.Stbs.CreatePartyAddress: Customeraddress frissítése
 
-        + Törlés
+        + Delete
 
             + Microsoft.Dynamics.GABExtended.Adatok.DeleteCustomerAddress: A customeraddress törlése
 
@@ -245,7 +245,7 @@ Ez a szakasz leírja a Felek postai címének és a Felek elektronikus címének
 
             + Microsoft.Dynamics.GABExtended.Bills.PartyElectronicAddressSync: Msdyn_partyelectronicaddress
 
-        + Törlés
+        + Delete
 
             + Microsoft.Dynamics.GABExtended.Bills.DeletePartyElectronicAddressSync: A(z) msdyn_partyelectronicaddress
 
@@ -281,7 +281,7 @@ Ez a szakasz leírja a Felek postai címének és a Felek elektronikus címének
 
     ![A Fél postai címének és a Fél elektronikus címsablonjainak futtatása](media/ADF-7.png)
 
-10. Ha frissíteni kell a Pénzügy és műveletek alkalmazást ezzel az adatokkal, akkor a .csv fájlokat egy Excel-munkafüzetké [kell konvertálni, és be kell importálni a Pénzügy és műveletek alkalmazásba](/data-entities/data-import-export-job). Ha a CSV importálása az Ön számára is megfelelő, akkor közvetlenül importálhatja a .csv fájlokat. A lépés a térfogattól függően néhány óráig is igénybe vehet.
+10. Ha frissíteni kell a Pénzügy és műveletek alkalmazást ezzel az adatokkal, akkor a .csv fájlokat egy Excel-munkafüzetké [kell konvertálni, és be kell importálni a Pénzügy és műveletek alkalmazásba](../data-import-export-job.md). Ha a CSV importálása az Ön számára is megfelelő, akkor közvetlenül importálhatja a .csv fájlokat. A lépés a térfogattól függően néhány óráig is igénybe vehet.
 
     ![Az importálás sikeresen befejeződött.](media/ADF-8.png)
 
@@ -340,7 +340,7 @@ Ez a szakasz leírja a Felek postai címének és a Felek elektronikus címének
 
             + Microsoft.Dynamics.GABExtended.Bills.PartyElectronicAddressSync: Msdyn_partyelectronicaddress
 
-        + Törlés
+        + Delete
 
             + Microsoft.Dynamics.GABExtended.Bills.DeletePartyElectronicAddressSync: A(z) msdyn_partyelectronicaddress
 

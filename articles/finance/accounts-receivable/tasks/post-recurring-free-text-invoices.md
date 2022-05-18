@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: SysLookupMultiSelectGrid, CustRecurrenceInvoiceGroup, CustFreeInvoice, CustRecurrenceInvoiceTotals
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.search.region: Global
 ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 3d30dd5ba29ee34784921047627642644c0c4ab2
-ms.sourcegitcommit: 6102f70d4595d01b90afe5b23dfd8ec2ea030653
+ms.openlocfilehash: 0e9e579c0b7782e4262093a1acc0e23f4f77d6c9
+ms.sourcegitcommit: e09f5c6d78d7942af950ae3f6407df2fedceeba4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/16/2022
-ms.locfileid: "8182479"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8719719"
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Ismétlődő szabadszöveges számlák generálása és feladása
 
@@ -30,7 +30,7 @@ Az ismétlődő számlákkal rendszeresen számlákat állíthat ki a vevőknek 
 ## <a name="generate-recurring-invoices"></a>Ismétlődő számlák létrehozása
 
 ## <a name="post-recurring-invoices"></a>Ismétlődő számlák feladása
-1. Az ismétlődő **számlák felad > az ismétlődő > számlákról > a Kinnlevőségek között**.
+1. Az ismétlődő **számlák felad > ismétlődő > számlákról > megtekintése**.
     * Ezen az oldalon megtekintheti és kinyomtathatja a létrehozott ismétlődő számlákat.  
 2. A listában kattintson a kijelölt sorban lévő hivatkozásra.
     * Válassza ki az ismétlődő számlacsoportot.  

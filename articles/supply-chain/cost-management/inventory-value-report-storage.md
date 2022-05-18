@@ -1,22 +1,22 @@
 ---
 title: Készletérték-jelentések
 description: Ez a témakör bemutatja a készletérték-jelentések beállítását, előállítását és használatát. Ezek a jelentések részletes adatokat szolgáltatnak a tényleges készletről, valamint a pénzügyi mennyiségekről és összegekről.
-author: banluo-ms
+author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
 ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: banluo
+ms.author: yanansong
 ms.search.validFrom: 2021-10-19
 ms.dyn365.ops.version: 10.0.9
-ms.openlocfilehash: d78cde26d238d18744adde9a576552588736e619
-ms.sourcegitcommit: 2e554371f5005ef26f8131ac27eb171f0bb57b4e
+ms.openlocfilehash: 4f710ff308bac42a284cd506143dd0ae21ff2ec7
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "8384695"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676159"
 ---
 # <a name="inventory-value-reports"></a>Készletérték-jelentések
 
@@ -84,27 +84,27 @@ A Készletérték-jelentések **lapon** lehet beállítani a különböző típu
     - **Készlet** – a készletértékek megjelenítése igenre *állítva*. Ezt követően egyeztetheti ezeket az értékeket a főkönyvi számla egyenlegeivel.
     - **Folyamatban lévő termelés** – a folyamatban lévő termelés értékeinek *megjelenítése igenre* állítva. Ezt követően egyeztetheti ezeket az értékeket a folyamatban lévő munka főkönyvi számlaegyenlegeivel. Ha Igen beállításra *választja* ezt a beállítást, a jelentés csak a tényleges mennyiségeket és a folyamatban lévő raktározási állapotú készletmennyiségeket mutatja. Azok a termelési rendelések, amelyek folyamatban lévő termelés állapotúak, ki vannak szedve vagy készként jelentve, de még nincsenek befejezve.
     - **Elhalasztott ELÁBÉ** – *a* halasztott ELÁBÉ tényleges mennyiségeket és készletmennyiségeket megjelenítő oszlop megjelenítéséhez állítsa Igen beállításra. A halasztott ELÁBÉ tényleges mennyiségek és összegek felhasználásával jelenik meg, mivel ellentételként használja a csomagjegyzéken megjelenő mennyiségeket és összegeket.
-    - **COGS** – Állítsa ezt a beállítást Igen *értékre* egy olyan oszlop megjelenítéséhez, amely a COGS pénzügyi mennyiségét és összegét jeleníti meg. A COGS pénzügyi mennyiségek és összegek használatával jelenik meg, mivel kiegyenlíti a számla mennyiségét és összegét.
-    - **Nyereség és veszteség** – Állítsa ezt a beállítást Igen *értékre* egy olyan oszlop megjelenítéséhez, amely a készlet eredménykimutatásába könyvelt pénzügyi összeget jeleníti meg.
-    - **Kumulatív számlaértékek nyomtatása összehasonlítás** céljából – Állítsa ezt a beállítást Igen *értékre* a főkönyvi számlaegyenleget megjelenítő oszlop megjelenítéséhez. Ily módon nem kell ellenőriznie az nyomvonal egyenlegét. Ez a beállítás csak a szabványos **Készletérték** jelentéssel működik, a **Készlet értékjelentés tárolási** jelentésével nem. Miután ezt a beállítást Igen értékre *állította, az engedélyezett pénzügyi pozícióbeállításoktól* függően a következő mezőkkel kell megadnia a **felsorolni kívánt főkönyvi számlákat.**
+    - **ELÁBÉ** – a beállítás Igen beállítással *megjeleníthető* az ELÁBÉ pénzügyi mennyiségei és összegei. Az ELÁBÉ pénzügyi mennyiségek és összegek felhasználásával jelenik meg, mivel ellentételét a számla mennyiségei és összegei.
+    - **Eredmény** – a beállítás Igen *beállítással* a készlet eredményszámláira feladott pénzügyi összegeket megjelenítő oszlop jelenik meg.
+    - **Összesített számlaértékek nyomtatása összehasonlításhoz** – a főkönyvi *számla egyenlegét megjelenítő oszlop megjelenítéséhez állítsa Igen* beállításra. Így nem kell ellenőriznie a csekkegyenleget. Ez a beállítás csak a szokásos **készletérték-jelentéssel** működik, a Készletérték-jelentés **tárolási jelentésével** nem. Ha igenre *beállította* ezt a beállítást, a következő mezők használatával kell megadnia az összes listához használni kívánt főkönyvi számlát, **az** engedélyezett pénzügyi pozícióbeállításoktól függően.
 
         > [!NOTE]
-        > Ha ezen mezők bármelyikéhez kiválaszt egy *teljes* számlát, megjelenik a teljes számlában szereplő minden készletszámla összege és a teljes számla összege is.
+        > Ha bármelyik mezőhöz teljes számlát választ, mind az *összeg* számlán szereplő készletszámla összege, mind az összegszámla összege megjelenik.
 
-        - **Készletszámla** – Adja meg azt a főkönyvi számlát, amelyhez a készletadatok megjelenítéséhez szükséges. (Mindkettő **A Készlet** beállítást és az **összehasonlítási** lehetőség kumulatív számlaértékeinek nyomtatása beállítást Igen *értékre* kell állítani.)
-        - **Folyamatban lévő munka számlája** – Adja meg azt a főkönyvi számlát, amelyhez a folyamatban lévő munka adatait meg szeretné jeleníteni. (Mindkettő **A folyamatban lévő munka** beállításnak és az **összehasonlítási** lehetőség kumulatív számlaértékeinek nyomtatása beállításnak Igen *értékre* kell állítania.)
-        - **Halasztott COGS-számla** – Adja meg azt a főkönyvi számlát, amelyhez a halasztott COGS-adatokat meg szeretné jeleníteni. (Mindkettő **A halasztott COGS** kapcsolót és az **összehasonlítási** lehetőség kumulatív számlaértékeinek nyomtatása beállítást Igen *értékre* kell állítani.)
-        - **COGS-számla** – Adja meg azt a főkönyvi számlát, amelyhez a COGS-adatokat megjeleníteni szeretné. (Mindkettő **A COGS** kapcsolót és az **összehasonlítási** lehetőség kumulatív számlaértékeinek nyomtatása beállítást Igen *értékre* kell állítani.)
+        - **Készletszámla** – adja meg azt a főkönyvi számlát, amelynél a készletinformációk megmutatjak. (Mindkettő **Az** összehasonlítási beállításhoz a **készlet lehetőséget és az összesített számlaértékek** nyomtatását Igen beállításra kell *állítani*.)
+        - **Folyamatban lévő ásszámla** – adja meg azt a főkönyvi számlát, amelyről a folyamatban lévő adatokat meg kell jelenni. (Mindkettő **A folyamatban lévő feladat** beállítás és **az összehasonlítási beállítás összegző** számlaértékének nyomtatása beállítást Igen beállításra kell *állítani*.)
+        - **Elhalasztott ELÁBÉ-számla** – adja meg azt a főkönyvi számlát, amely a halasztott ELÁBÉ-adatokat mutatja. (Mindkettő **A Halasztott ELÁBÉ beállítás** és **az** összehasonlítási beállítás összegző számlaértékének nyomtatása beállítást Igen beállításra kell *állítani*.)
+        - **ELÁBÉ-számla** – adja meg azt a főkönyvi számlát, amely számára meg kell jelenni az ELÁBÉ-adatok. (Mindkettő **Az ELÁBÉ** beállítás és **az összehasonlítási beállítás összegző** számlaértékének nyomtatása beállítást Igen beállításra kell *állítani*.)
 
-    - **Fizikai és pénzügyi értékek** összegzése – Állítsa ezt a beállítást Igen *értékre* egy olyan oszlop megjelenítéséhez, amely a teljes készletmennyiséget és a készletösszeget jeleníti meg (a fizikai és pénzügyi készletértékek összegzése). Ha ez a beállítás Nem *értékre* van állítva, a jelentés fizikai és pénzügyi készletértékeket is megjelenít.
-    - **A főkönyvbe** feladott bejegyzés belefoglalásA ezt a beállítást Igen *értékre* állítsa egy olyan oszlop megjelenítéséhez, amely azokat a tranzakciókat jeleníti meg, amelyeket soha nem könyveltek a főkönyvbe. Előfordulhat, hogy a következő típusú cikkek tranzakciói nem kerülnek fel a főkönyvbe:
+    - **A tényleges és a pénzügyi értékek** összesítése – *a* beállítás Igen beállítással a teljes készletmennyiséget és készletmennyiséget (a tényleges és a pénzügyi készletértékek összefoglalását) tartalmazó oszlop jelenik meg. Ha ez a beállítás *Nem*, a jelentés a tényleges és a pénzügyi készletértékeket is mutatja.
+    - **A főkönyvbe fel** nem adott tranzakciók megjelenítése: A *beállítás* Igen beállítással megjeleníthető a főkönyvbe fel nem adott tranzakciókat megjelenítő oszlop. Előfordulhat, hogy a következő típusú cikkek tranzakcióit nem lehet feladva a főkönyvbe:
 
-        - Beérkezett és még ki nem számlázott cikkek, ha a **Könyveltetés tényleges készlet** beállítás törlődik az adott cikkmodellcsoporthoz.
-        - Beérkezett és még ki nem számlázott cikkek, ha a **Termékbevételezés feladása főkönyvben** beállítás törlődik a **Termékbevételezés gyorslapon a** **Kötelezettségek paraméterek** oldal Általános lapján található Termékbevételezés **gyorslapon** (**Kötelezettségek kiegyenlítési \>\> paraméterei).**
+        - A beérkezett, de még nem számlázott **cikkek**, ha a Tényleges készlet feladása beállítás törölve van a megfelelő cikkmodellcsoportnál.
+        - Bevételezéssel **·** **·** **·** **rendelkező**, de még nem számlázott cikkek, ha a Termékbevételezés főkönyvi feladása beállítás törlődik, a Kötelezettségek paraméterei lap Általános lapjának Termékbevételezés gyorslapján (**Kötelezettségek \>\>** beállítása – Kötelezettségek paraméterei).
 
-    - **Átlagos egységköltség** kiszámítása – Állítsa ezt a beállítást Igen *értékre* az átlagos egységköltséget megjelenítő oszlop megjelenítéséhez. Az átlagos egységköltség a teljes összeg és a teljes mennyiség hányadosa.
-    - **Teljes mennyiség és érték** – Állítsa ezt a beállítást Igen *értékre* olyan oszlopok megjelenítéséhez, amelyek a tényleges készlet teljes mennyiségét (és pénzügyi mennyiségeit) és a tényleges készlet teljes összegét (és a pénzügyi összegeket) jelenítik meg. Ezt a beállítást csak akkor állíthatja Igen *értékre,* ha a **Fizikai és pénzügyi értékek** összegzése beállítás Nem *értékre* van állítva.
-    - **Készletdimenziók** – Ebben a rácsban jelölje be a **Jelentésben megjeleníteni kívánt minden dimenzió nézet jelölőnégyzetét**. Csak azok a dimenziók jelennek meg a jelentésben, ahol engedélyezve van a **Pénzügyi készlet** beállítás. A többi dimenzióban csak az üres oszlopok fognak láthatók. A látni kívánt dimenzióknál bejelenheti az Összesítés jelölőnégyzetet, **hogy** az összegek is szerepeljenek a mezőben.
+    - **Átlagos egységköltség számítása – Az Átlagos** egységköltség *oszlop megjelenítéséhez állítsa Igen* beállításra. Az átlagos egységköltség a végösszeg és a teljes mennyiség osztva.
+    - **Összes mennyiség és** érték – *Igen* értékre állítva a tényleges készlet (és pénzügyi mennyiségek) teljes mennyiségét és a tényleges készlet teljes összegét (és pénzügyi összegeket) megjelenítő oszlopok jelennek meg. Ez a beállítás csak akkor választható *Igen* beállításra, ha **a** Tényleges és pénzügyi értékek összesítése beállítás *Nem*.
+    - **Készletdimenziók** – ebben a rácsban jelölje be a Nézet **jelölőnégyzetet minden olyan dimenzió mellett,** amely meg szeretné tekinteni a jelentésen. Csak azok a dimenziók **mutassanak** a jelentésben, amelyeknél engedélyezve van a Pénzügyi készlet beállítás. A többi dimenzióban csak az üres oszlopok fognak láthatók. A látni kívánt dimenzióknál bejelenheti az Összesítés jelölőnégyzetet, **hogy** az összegek is szerepeljenek a mezőben.
     - **Erőforrás-azonosító** – a **Nézet** lehetőség Igen beállítással *megjeleníthető* egy oszlop, amely azonosítja a cikket az egyes sorokban. Az Összesítés **lehetőség beállítása** Igen beállítással *az* összegeket is tartalmazhatja. Az egyes sorokban felsorolt cikkek típusától függően az oszlop az alábbi típusú információkat jeleníti meg:
 
         - **Anyag** – az oszlop a megfelelő `ItemID` anyagrekord mezőértékét mutatja.

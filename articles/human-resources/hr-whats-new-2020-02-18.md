@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-02-18
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: 9cce93aab902a8ca269cf22e1999716fe49f3ed8
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 42d00f570403af6e7a6a39a6643eec1f59ccdc20
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063004"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8687924"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-february-18-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. február 18.)
 
@@ -32,7 +31,7 @@ Ez a cikk a Dynamics 365 Human Resources szolgáltatásban található új vagy 
 
 ## <a name="platform-update-32"></a>32-as platformfrissítés 
 
-A 32-es platform-frissítés már elérhető. További információkért lásd [A Finance and Operations 32-es platformfrissítésének újdonságai vagy változásai (2020. február)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+A 32-es platform-frissítés már elérhető. A további tudnivalókat [lásd a "Pénzügy és műveletek" 32 Platform frissítése újdonságai és módosulásai (2020. február)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 ## <a name="search-values-are-remembered-when-changing-view-options-in-streamlined-employee-form-383833"></a>A program a keresési értékeket az egyszerűsített alkalmazotti űrlap nézetbeállításainak módosításakor emlékszik (383833).
 

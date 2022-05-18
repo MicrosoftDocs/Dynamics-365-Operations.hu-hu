@@ -8,19 +8,19 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: LedgerClosingSheet
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: kfend
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 04eeb8886d74fa8c633d2ac4e9e47aa28a12ee30
-ms.sourcegitcommit: e06b7d4de6d5ee7ae491d437d6c0365608a5380b
+ms.openlocfilehash: 247c3286124da946937c8afd248a275e5a745044
+ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/06/2021
-ms.locfileid: "7892477"
+ms.lasthandoff: 05/07/2022
+ms.locfileid: "8725233"
 ---
 # <a name="year-end-close"></a>Év végi zárás
 
@@ -44,7 +44,7 @@ A **Fő számla** lapon:
 A **Főkönyvi paraméterek** oldalon, a **Pénzügyi év zárása** alatt:
 
 - Az **Meglévő év végi bejegyzések törlése az év ismételt zárása során** beállítással adható meg, hogy egy korábbi év végi zárás rendszer által generált nyitó tranzakciója törlődjön-e az év végi zárás újabb futtatásakor. Ha a beállítás értéke **Igen**, akkor az előző nyitó tranzakciót és az opcionális záró tranzakciókat törli a rendszer, majd létrehoz egy nyitóm vagy záró tranzakciót a jelenlegi egyenlegek alapján. Ha a beállítás értéke **Nem**, akkor megmarad a korábbi nyitó és opcionális záró tranzakciók megmaradnak , és létrejön még egy nyitó tranzakció annak érdekében, hogy áthelyezhessék azokat a korrekciós tranzakciókhoz tartozó egyenlegeket, amelyeket az előző év végi zárás után adtak fel.
-- A Záró tranzakciók létrehozása átátvitel során beállítással záró tranzakciók hozhatók létre a lezárás alatt található pénzügyi évben, így az összes fő számla egyenlege **0** (nulla) lesz. Ha a beállítás értéke **Igen**, akkor egyaránt létrejön a nyitó tranzakció és a záró tranzakció. Ha a beállítás értéke **Nem**, csak a nyitó tranzakció jön létre a következő pénzügyi évben az egyenlegek átviteléhez. A fő számla egyenlegei megmaradnak a pénzügyi év végén.
+- A **Záró tranzakciók létrehozása átátvitel** során beállítással záró tranzakciók hozhatók létre a lezárás alatt található pénzügyi évben, így az összes fő számla egyenlege 0 (nulla) lesz. Ha a beállítás értéke **Igen**, akkor egyaránt létrejön a nyitó tranzakció és a záró tranzakció. Ha a beállítás értéke **Nem**, csak a nyitó tranzakció jön létre a következő pénzügyi évben az egyenlegek átviteléhez. A fő számla egyenlegei megmaradnak a pénzügyi év végén.
 - A **Pénzügyi év beállítása Véglegesen lezárt állapotúra** beállítás segítségével állítható pénzügyi év véglegesen lezárt állapotúra. Ezt a beállítást körültekintően kell használni, mert a véglegesen lezárt állapotú időszakokat nem lehet újra megnyitni. A korrekciókat ezért nem lehet a pénzügyi évre feladni. Az ajánlott gyakorlat a beállítás **Nem** értékre állítása.
 - A **Bizonylatszámot ki kell tölteni** opció el lett távolítva. Az év végi zárási folyamat futtatásakor bizonylatra van szükség. Ekkor a bizonylatszámot manuálisan kell megadni.
 

@@ -2,7 +2,7 @@
 title: Tartományok a Dynamics 365 Commerce szolgáltatásban
 description: Ez a témakör azt mutatja be, hogyan kezelhetők a tartományok a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: BrShoo
-ms.date: 03/17/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: retail
 ms.author: BrShoo
 ms.search.validFrom: ''
 ms.dyn365.ops.version: Release 10.0.12
-ms.openlocfilehash: bf96c47b8f5e940ffdd9241c3bdda4162a3101c42004c58c431f135f11c39d14
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aab5e983b42aea7d8eb4f198f033634d4663f278
+ms.sourcegitcommit: 7181a022739d6107a75d84546c3379c23f722034
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6733991"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8737346"
 ---
 # <a name="domains-in-dynamics-365-commerce"></a>Tartományok a Dynamics 365 Commerce szolgáltatásban
 
@@ -28,6 +28,9 @@ ms.locfileid: "6733991"
 Ez a témakör azt mutatja be, hogyan kezelhetők a tartományok a Microsoft Dynamics 365 Commerce alkalmazásban.
 
 A tartományok a webböngészőkben a Dynamics 365 Commerce webhelyekhez való navigálásra használt webcímek . A tartomány kezelését a kiválasztott tartományi névkiszolgálóval (DNS-szolgáltatóval) vezérelheti. A tartományok a Dynamics 365 Commerce webhely-építők között hivatkoznak hogy koordinálják, hogyan lehet elérni a webhelyet a közzétételkor. Ez a témakör azt mutatja be, hogyan kezeli a rendszer a tartományokat a Commerce oldalfejlesztés és indítás életciklusok alatt.
+
+> [!NOTE]
+> 2022 Dynamics 365 Commerce`.dynamics365commerce.ms` . május 6-án minden környezetben létre lesz hozva a tartomány, amely a korábbi rendszert használja `.commerce.dynamics.com`. A tartománysal létesített `.commerce.dynamics.com` meglévő környezetek továbbra is működni fognak.
 
 ## <a name="provisioning-and-supported-host-names"></a>Üzembe helyezés és támogatott állomásnevek
 
@@ -44,7 +47,7 @@ Szolgáltatási kérelmeket úgy is létrehozhat, hogy további tartományokat a
 
 ## <a name="commerce-generated-urls"></a>Commerce által létrehozott URL-címek
 
-A Dynamics 365 Commerce e-kereskedelmi környezet létesítése során a Commerce egy URL-címet fog generálni, amely a környezet működési címe lesz. Ez az URL-cím a környezet létesítése után, szerepel az e-kereskedelmi oldal hivatkozásában, ami megjelenik az LCS-ben. A Commerce által generált URL-cím formátuma `https://<e-commerce tenant name>.commerce.dynamics.com`, ahol az e-kereskedelmi bérlő neve az LCS-ben a Commerce környezethez megadott név.
+A Dynamics 365 Commerce e-kereskedelmi környezet létesítése során a Commerce egy URL-címet fog generálni, amely a környezet működési címe lesz. Ez az URL-cím a környezet létesítése után, szerepel az e-kereskedelmi oldal hivatkozásában, ami megjelenik az LCS-ben. A Commerce által generált URL-cím formátuma `https://<e-commerce tenant name>.dynamics365commerce.ms`, ahol az e-kereskedelmi bérlő neve az LCS-ben a Commerce környezethez megadott név.
 
 A termelési webhely állomásneveit a tesztkörnyezetben is használhatja. Ez a beállítás akkor lehet hasznos, ha a wehelyet egy tesztkörnyezetből termelésbe másolja.
 
@@ -67,11 +70,11 @@ Az **Elérési út** mezőt üresen hagyhatja, vagy hozzáadhat egy további el�
 
 Ha például egy „xyz” nevű e-kereskedelmi bérlőhöz van egy „fabrikam” nevű webhelye a webhelykészítőben és a webhelyet üres útvonallal állítja be, akkor a webböngészőben elérhetővé teszi a közzétett webhely-tartalmat úgy, hogy közvetlenül a Commerce által létrehozott alap URL-címre irányítja a webhelyet:
 
-`https://xyz.commerce.dynamics.com`
+`https://xyz.dynamics365commerce.ms`
 
 Másik esetben, ha a „fabrikam” elérési utat adta hozzá ugyanezen webhely beállítása során, a közzétett webhely tartalmát a következő URL-címen éri el a böngészőben:
 
-`https://xyz.commerce.dynamics.com/fabrikam`
+`https://xyz.dynamics365commerce.ms/fabrikam`
 
 ## <a name="pages-and-urls"></a>Oldalak és URL-címek
 
@@ -92,16 +95,16 @@ A támogatott állomásnevek-értékek tartományhoz társíthatók a webhely be
 Ha webhelyekkel dolgozik a webhelykészítő modulban, és két különböző tartomány van beállítva, akkor a **?domain=** attribútum hozzáfűzhető a munka URL-címhez a közzétett webhely tartalmának böngészővel való eléréséhez.
 
 Például az „xyz” környezet létesítése már megtörtént, és két webhely van létrehozva, és társítva a webhelykészítőben: egy a `www.fabrikam.com` tartománnyal és egy `www.constoso.com` a tartománnyal. Mindkét webhely egy üres útvonallal lett beállítva. Ezt a két helyet ezután egy webböngészőben a következőképpen érhető el **?domain=** attribute:
-- `https://xyz.commerce.dynamics.com?domain=www.fabrikam.com`
-- `https://xyz.commerce.dynamics.com?domain=www.contoso.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.fabrikam.com`
+- `https://xyz.dynamics365commerce.ms?domain=www.contoso.com`
 
-Ha egy tartományilekérdezési karakterlánc nincs megadva olyan környezetben, amelyben több tartomány van, a Commerce a megadott első tartományt használja. Ha például a webhely kiépítése során a „fabrikam” elérési utat adták meg, akkor az URL-cím `https://xyz.commerce.dynamics.com` használható a közzétett `www.fabrikam.com` webhely tartalmának eléréséhez.
+Ha egy tartományilekérdezési karakterlánc nincs megadva olyan környezetben, amelyben több tartomány van, a Commerce a megadott első tartományt használja. Ha például a webhely kiépítése során a „fabrikam” elérési utat adták meg, akkor az URL-cím `https://xyz.dynamics365commerce.ms` használható a közzétett `www.fabrikam.com` webhely tartalmának eléréséhez.
 
 ## <a name="traffic-forwarding-in-production"></a>Forgalom továbbítása a termelésben
 
-Több tartomány szimulálható a tartományi lekérdezési karakterlánc paraméterei használatával a commerce.dynamics.com végponton is. Ha azonban a élesítés szükséges, akkor az egyéni tartomány forgalmát továbbítania kell a `<e-commerce tenant name>.commerce.dynamics.com` végpontnak.
+Több tartomány szimulálható a tartományi lekérdezési karakterlánc paraméterei használatával a commerce.dynamics.com végponton is. Ha azonban a élesítés szükséges, akkor az egyéni tartomány forgalmát továbbítania kell a `<e-commerce tenant name>.dynamics365commerce.ms` végpontnak.
 
-Az `<e-commerce tenant name>.commerce.dynamics.com` végpont nem támogatja az egyéni tartományi biztonságos csomagrétegeket (SSL), ezért egyéni tartományokat kell beállítania a front door-szolgáltatás vagy content delivery network (CDN) használatával. 
+Az `<e-commerce tenant name>.dynamics365commerce.ms` végpont nem támogatja az egyéni tartományi biztonságos csomagrétegeket (SSL), ezért egyéni tartományokat kell beállítania a front door-szolgáltatás vagy content delivery network (CDN) használatával. 
 
 Ha a Front Door-szolgáltatás vagy a CDN használatával egyéni tartományokat szeretne beállítani, akkor két lehetőség közül választhat:
 

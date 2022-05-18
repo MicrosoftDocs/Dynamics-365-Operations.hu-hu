@@ -1,7 +1,7 @@
 ---
 title: Díjazási profilok
 description: Ez a témakör az adatok beállítását írja le a díjazási profilokhoz.
-author: Henrikan
+author: Weijiesa
 ms.date: 10/30/2020
 ms.topic: business-process
 ms.prod: ''
@@ -11,15 +11,15 @@ audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2020-10-30
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: af9051c6bbaed311f1f841a82dfd145633acab2c
-ms.sourcegitcommit: 3b87f042a7e97f72b5aa73bef186c5426b937fec
+ms.openlocfilehash: 2512b79c87a4640a2b31b7699e85d743b451a14c
+ms.sourcegitcommit: 9166e531ae5773f5bc3bd02501b67331cf216da4
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/29/2021
-ms.locfileid: "7574809"
+ms.lasthandoff: 05/03/2022
+ms.locfileid: "8676439"
 ---
 # <a name="rating-profiles"></a>Díjazási profilok
 

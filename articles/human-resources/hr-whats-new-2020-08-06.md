@@ -8,19 +8,18 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.search.scope: Human Resources
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2020-08-06
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: dbcf854330b7c5ba6ca812a5aed384584c05ce8d
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: a8058c1acdde20a1b48130fa1e8b75aa415bafce
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8062186"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8691974"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-human-resources-august-06-2020"></a>Új vagy módosult elemek a Dynamics 365 Human Resources szolgáltatásban (2020. augusztus 06.)
 
@@ -32,7 +31,7 @@ Ez a témakör a Dynamics 365 Human Resources új vagy módosított szolgáltat�
 
 ## <a name="platform-update-1001236-is-now-available"></a>A 10.0.12(36) platformfrissítés elérhető
 
-További információkért lásd [Platformfrissítések a Finance and Operations alkalmazások 10.0.12-es verziójához (2020. augusztus)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+A további tudnivalókat [lásd a Pénzügy és művelet alkalmazások 10.0.12-es verziójának Platformfrissítései (augusztus 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ## <a name="data-management-framework-dmf-entities-for-benefits-management"></a>Az adatkezelési keretrendszer (DMF) entitásai a juttatások kezeléséhez
  

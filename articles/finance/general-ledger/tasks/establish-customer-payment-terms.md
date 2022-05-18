@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: PaymDay, PaymTerm, CashDisc
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: 12c26cfedca3f3b0eec1a3b068184522f87ff8d103a41b81a0775bf5a35d0e03
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 16d861294a80ddb44c78760b329e544bc4665130
+ms.sourcegitcommit: 1d2eeacad11c28889681504cdc509c90e3e8ea86
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6766958"
+ms.lasthandoff: 05/05/2022
+ms.locfileid: "8716971"
 ---
 # <a name="establish-customer-payment-terms"></a>Vevői kifizetések feltételeinek kialakítása
 
@@ -26,7 +26,7 @@ ms.locfileid: "6766958"
 
 Ez az eljárás a készpénzfizetési engedményt és az esedékességi dátumot állítja be. Ez az útmutató-feladat az USMF bemutatócéget használja.
 
-1. Válassza a **Navigációs ablaktábla >Modulok > Kinnlévőségek > Kifizetések beállítása > Kifizetési napok** elemet. A **fizetési feltételek** beállítását a **Kötelezettségek** és a **Kinnlevőségek** közösen használják. Ha azt megadja ebben a modulban, úgy az a többi modulban is elérhető lesz. Ebben a feladat-útmutatóban beállítom a **Kinnlevőségekre** vonatkozó fizetési feltételeket.
+1. Válassza a **Navigációs ablaktábla >Modulok > Kinnlévőségek > Kifizetések beállítása > Kifizetési napok** elemet. A **fizetési feltételek** beállítását a **Kötelezettségek** és a **Kinnlevőségek** közösen használják. Ha azt megadja ebben a modulban, úgy az a többi modulban is elérhető lesz. Ehhez a feladat-útmutatóhoz **a** Kinnlevőségek között minden fizetési feltétel be van állítva.
 2. Kattintson az **Új** elemre. Hozzon létre fizetési napot, amennyiben a fizetési feltételei a hét (hétfő, kedd stb.) vagy a hónap egy adott napját (5-e, 10-e stb.) írják elő. 
 3. A **Fizetési nap** mezőbe írjon egy azonosítót.
 4. Adja meg a fizetési nap leírását a **Leírás** mezőben.

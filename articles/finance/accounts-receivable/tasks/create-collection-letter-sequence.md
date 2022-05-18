@@ -8,17 +8,17 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CollectionLetterCourse
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: adeae6e20a799165e086df28b92a1357e8f2f0d3
-ms.sourcegitcommit: f82372b1e9bf67d055fd265b68ee6d0d2f10d533
+ms.openlocfilehash: af5d0a001fbe705834e116516933be67f2de8826
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 12/14/2021
-ms.locfileid: "7921199"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734158"
 ---
 # <a name="create-a-collection-letter-sequence"></a>Fizetésifelszólítás-sorozat létrehozása
 
@@ -26,10 +26,10 @@ ms.locfileid: "7921199"
 
 Ezzel az eljárással létrehozhat egy beszedőlevél-sorozatot. Ez a feladat az USMF bemutatócéget használja.
 
-1. A Navigációs ablaktáblán ugorjon a **Modulok > Követelések és beszedések > Beállítás > Fizetésifelszólítás-sorozat beállítása** lehetőségre.
+1. Kattintson a **Jóváírás és beszedés > gombra, > állítsa be a fizetésikérek sorrendjét**.
 2. Kattintson az **Új** elemre.
 3. A **fizetésifelszólítás-sorozat** mezőben adjon meg egy sorozatazonosítót, amely a sorozatot jelöli majd. Ezt akkor használja majd, ha feladási profilt állít be.
-4. Írjon egy értéket a **Leírás** mezőbe.  A fizetési feltétel opcionális. Ha itt megad egy értéket, a fizetési felszólítási díj számlája ezeket a fizetési feltételeket használja a vevőhöz tárolt fizetési feltételek helyett.  
+4. Írjon egy értéket a **Leírás** mezőbe. A fizetési feltétel opcionális. Ha itt megad egy értéket, a fizetési felszólítási díj számlája ezeket a fizetési feltételeket használja a vevőhöz tárolt fizetési feltételek helyett.  
 5. A **Fizetési felszólítás kódmezőjében** válassza ki az első elküldeni kívánt fizetési felszólítás kódját. A számlán szereplő határidő, a Napok mezőben megadott türelmi időszak és az ebben a sorban megadott értékek és egyéb információk alapján automatikusan létrehozza az első fizetési felszólítást a rendszer.  
 6. Írjon egy értéket a **Leírás** mezőbe. 
 7. A díj alapértelmezett pénzneme a jogi személy pénzneme. Ez a pénznemkód eltérhet a számla pénznemétől.   
@@ -52,9 +52,9 @@ Ezzel az eljárással létrehozhat egy beszedőlevél-sorozatot. Ez a feladat az
 22. A listában kattintson a kijelölt sorban lévő hivatkozásra.
 23. Az **Egyenleg esedékessé válásának minimuma** mezőben adjon meg egy számot.
 24. A **Napok** mezőbe írjon be egy számot.
-25. A **Blokk** jelölőnégyzetet bejelölve leállíthatja a további szállításokat és további számlák kiállítását a vevőnek. A számla zárolásának feloldásához válassza a **Nem** szót a Vevők oldal Számlázás és szállítás felfüggesztve mezőjében.  
+25. A **Blokk** jelölőnégyzetet bejelölve leállíthatja a további szállításokat és további számlák kiállítását a vevőnek. A számla zárolásának feloldásához válassza **a Nem** **·** **lehetőséget a Vevők lap Számlázás és szállítás függeső mezőjében.**  
 26. Bontsa ki a **Jegyzet** gyorslapot.
-27. Írja be a fizetési felszólításon megjelentetni kívánt szöveget az adott fizetési felszólítási kód esetén. Ezt a szöveget több nyelvre lefordíthatja a Fordítás menüben a megjegyzés doboz felett.  
+27. Írja be a fizetési felszólításon megjelentetni kívánt szöveget az adott fizetési felszólítási kód esetén. Ezt a szöveget több nyelven is lefordíthatja a **megjegyzésmező** fölötti Fordítások menü segítségével.  
 
 
 

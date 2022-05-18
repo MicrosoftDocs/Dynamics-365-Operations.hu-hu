@@ -10,18 +10,17 @@ ms.search.form: HcmPosition, HcmPersonnelManagementWorkspace
 audience: Application User
 ms.author: twheeloc
 ms.reviewer: twheeloc
-ms.search.scope: Human Resources
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
 ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 7a83dea308e3e2eec1edebd5d619f9455e1a2268
-ms.sourcegitcommit: 3a7f1fe72ac08e62dda1045e0fb97f7174b69a25
+ms.openlocfilehash: 8b7493aa2df65b42d0da8a451c40cccafbc1cda8
+ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8066575"
+ms.lasthandoff: 05/04/2022
+ms.locfileid: "8689466"
 ---
 # <a name="personnel-management-workspace"></a>Személyzetkezelési munkaterület
 
@@ -30,7 +29,7 @@ ms.locfileid: "8066575"
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-A **Személyzetkezelési** munkaterületen nagy mennyiségű tartalom található. Tartalmazza a személyzet mozgását, nyomon követi az alkalmazottak változásait, a nyitott pozíciókat, a címváltozásokat, a lejáró rekordokat és az elemzéseket, valamint hivatkozásokat biztosít konkrét információkhoz. Ez a témakör részletes információkat tartalmaz a munkaterületével minden egyes részéről.
+A **Személyzetkezelési** munkaterületen nagy mennyiségű tartalom található. Tartalmazza a személyzeti mozgásokat, nyomon követi az alkalmazottak módosításait, a nyitott pozíciókat, a címváltozásokat, a lejáró rekordokat és az analitikát, valamint hivatkozásokat tartalmaz az adott információkra. Ez a témakör részletes információkat tartalmaz a munkaterületével minden egyes részéről.
 
 ## <a name="activity-tab"></a>Tevékenység lap
 
@@ -68,7 +67,7 @@ A **Hamarosan indul** szakaszban olyan dolgozók jelennek meg, akik a jövőben 
 Ha a vezető nem jelenik meg a kártyán, nincs beosztás rendelve a dolgozóhoz.
 
 > [!NOTE] 
-> Javasoljuk, hogy az ellenőrzőlista alkalmazása előtt rendeljen egy pozíciót egy dolgozóhoz. Néha a bevezető feladatokat egy újonnan felvett alkalmazott vezetőjéhez rendelik. Ha azonban nincs beosztás hozzárendelve, akkor nem lehet meghatározni az új alkalmazott felettesét. Ebben az esetben a vezetőnek szánt előkészítési feladatokat az ellenőrzőlista tulajdonosához rendeli hozzá a rendszer.
+> Javasoljuk, hogy feladatlista alkalmazása előtt rendeljen beosztást egy dolgozóhoz. Előfordul, hogy a felvett alkalmazottak vezetőihez a berakodó feladatok vannak hozzárendelve. Ha azonban nincs beosztás hozzárendelve, akkor nem lehet meghatározni az új alkalmazott felettesét. Ebben az esetben a vezetőnek szánt előkészítési feladatokat az ellenőrzőlista tulajdonosához rendeli hozzá a rendszer.
 
 Amikor a dolgozók megjelennek a **Hamarosan indul** szakaszban, a következő műveletek érhetők el hozzájuk:
 
@@ -88,7 +87,7 @@ A **Legutóbbi felvételek** szakasz sorolja fel azokat a dolgozókat, akiknek a
 A lista alapértelmezés szerint az elmúlt hét napban felvett dolgozókat jeleníti meg. A beállítás módosításához az **Emberi erőforrások paraméterei** oldal **Általános** lapján adja meg a **Legutóbbi felvételek** időkeretét. A **Legutóbbi felvételek** szakaszban az adatok megadott számú napra, hónapra vagy évre vonatkozóan jeleníthetők meg. Például az elmúlt 14 napban felvett dolgozók listájának megtekintéséhez állítsa az **Időszak** mezőt **14** értékre, az **Egység** mezőben pedig adja meg a **Napok** értéket.
 
 > [!NOTE]
-> Az **Emberi erőforrások paraméterei** oldalon szereplő beállítások vállalatspecifikusak. Emiatt a megtekinthető közelmúltbeli felvételek időkerete vállalatonként eltérő lehet. Az USMF vállalatnál például szeretné az elmúlt hét nap minden új felvételét megtekinteni. Az USSI vállalatnál azonban érdemes megnézni az elmúlt 14 nap összes újonnan felvett személyét. Ebben az esetben nyissa meg a **Emberi erőforrás paraméterek** oldalon minden cégnél, és állítsa be a paramétereket igény szerint.
+> Az **Emberi erőforrások paraméterei** oldalon szereplő beállítások vállalatspecifikusak. Emiatt a megtekinthető közelmúltbeli felvételek időkerete vállalatonként eltérő lehet. Az USMF vállalatnál például szeretné az elmúlt hét nap minden új felvételét megtekinteni. Az USSI vállalatnál azonban érdemes lehet megtekinteni az összes, az elmúlt 14 napból származó új felvételeket. Ebben az esetben minden vállalatban nyissa **meg az Emberi** erőforrások paraméterei lapot, és állítsa be a szükséges paramétereket.
 
 Ha a vezető nem jelenik meg a kártyán, nincs beosztás rendelve a dolgozóhoz.
 

@@ -8,20 +8,20 @@ ms.prod: ''
 ms.technology: ''
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy, CAMOverheadRatePolicy
 audience: Application User
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 ms.custom: ''
 ms.assetid: ''
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: f86529359f548bf48fdef8817bd2e2260235561cce57cac28158739687ade2c1
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9c36587294ff157266e354e06d107000f198061
+ms.sourcegitcommit: 5d1772bdeb21a9bec6dc49e64550aaf34127a4e2
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6779956"
+ms.lasthandoff: 05/10/2022
+ms.locfileid: "8734429"
 ---
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Költségösszesítési irányelv többletköltségek kiszámítása 
 
@@ -30,9 +30,7 @@ ms.locfileid: "6779956"
 A Költségkönyvelés lehetővé teszi, hogy betekintést nyerjen a költségeknek a szervezeten belül szállított termékekhez és szolgáltatásokhoz való kapcsolatáról. A költségek átláthatóságának megítéléséhez kulcsfontosságú a költségfelosztás megvalósítása a megfelelő felosztási alapon a költségobjektumok között. Alapértelmezés szerint a költségfelosztás az elsődleges költségelemre érvényes, ami bizonyos helyzetekben kívánatos, de vannak olyan jellemzői, amelyeket figyelembe kell venni.
 
 -   A kiegészítő költségobjektumok nullás egyenleggel végződnek az elsődleges költségelem után az általános költségek felszámítását követően.
-
 -   Azoknak a költségbejegyzéseknek a mennyisége, amelyeket a járulékosköltség-számítás generál, magas lehet.
-
 -   Nem lehet követni a költségek áramlását a költségobjektumok között.
 
 Ezen következmények elkerülése érdekében a Költségkönyvelés segítségével költségfelosztást állíthat be a szervezet vezetői jelentési követelményeihez. Ez a témakör segítséget nyújt a másodlagos költségelemek helyes szintjének meghatározásáról és az olyan költségszerzési szabályok létrehozásáról, amelyek illeszkednek a szervezet jelentéseibe és a költségek nyomon követhetőségébe.
