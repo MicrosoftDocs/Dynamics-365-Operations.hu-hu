@@ -48,12 +48,8 @@
               href: dev-tools/version-models-build.md
         - name: Adatintegrálás
           items:
-            - name: A Finance and Operations-alkalmazások és külső fejlesztésű szolgáltatások közötti integráció
+            - name: A pénzügyi és műveleti alkalmazások és külső fejlesztésű szolgáltatások közötti integráció
               href: data-entities/integration-overview.md
-            - name: Prioritásalapú szabályozás
-              hreF: data-entities/priority-based-throttling.md
-            - name: Prioritásalapú szabályozás GYIK
-              href: data-entities/throttling-faq.md
             - name: Adatintegrációs API-k
               items:
                 - name: Adatkezelési csomag REST API-ja
@@ -74,7 +70,19 @@
                   href: data-entities/recurring-integrations.md
                 - name: Szolgáltatások tesztelése harmadik fél segédprogramjaival
                   href: data-entities/third-party-service-test.md
-            - name: Finance and Operations csatlakoztató
+            - name: Szolgáltatás adatvédelmi korlátai
+              items:
+                - name: Szolgáltatás API-korlátai
+                  href: data-entities/service-protection-api-limits.md
+                - name: Szabályozása priorizálása
+                  href: data-entities/priority-based-throttling.md
+                - name: Műveletek újrapróbálása
+                  href: data-entities/service-protection-retry-operations.md
+                - name: API-szabályozás figyelése
+                  href: data-entities/service-protection-monitoring.md
+                - name: API átviteli sebesség maximalizálása
+                  href: data-entities/service-protection-maximizing-api-throughput.md
+            - name: Pénzügyi és műveleti-összekötő
               href: data-entities/fin-ops-connector.md
             - name: Fejlesztés integrációhoz
               items:
@@ -398,6 +406,8 @@
                       href: deployment/onprem-SSRSHA.md
                     - name: Proxyk konfigurálása helyszíni környezetekhez
                       href: deployment/onprem-reverseproxy.md
+                    - name: A Raktárkezelés alkalmazás konfigurálása helyszíni telepítések esetében
+                      href: deployment/warehousing-for-on-premise-deployments.md
                     - name: Hálózati nyomtatók helyszíni környezetben történő telepítése
                       href: analytics/install-network-printer-onprem.md
                     - name: Helyszíni diagnosztika
@@ -472,16 +482,14 @@
                   href: help/language-locale.md
                 - name: 'Bővítse, szabja testre és működjön együtt a súgóval'
                   href: help/contributor-guide.md
-            - name: Telepítési szempontok
+            - name: Pénzügyi és műveleti alkalmazások – regionális szolgáltatások
               items:
-                - name: A rendszer és a helyi felhőbeli telepítési beállításai a Dynamics 365 Finance és a Dynamics 365 Supply Chain Management számára
+                - name: Helyi földrajzi régiók
                   href: deployment/deployment-options-geo.md
-                - name: Finance és Supply Chain Management az Egyesült Államok Government Community Cloud felhőben (GCC)
+                - name: Egyesült Államok Government Community Cloud felhőben (GCC)
                   href: deployment/us-gcc-deployment.md
-                - name: A Finance és a Supply Chain Management alkalmazás üzemeltetője Kínában a 21Vianet
+                - name: Kína – a 21Vianet működteti
                   href: deployment/china-local-deployment.md
-                - name: Finance and Operations alkalmazások Franciaországban
-                  href: deployment/france-local-deployment.md
         - name: Fejlesztés és testreszabás
           items:
             - name: Fejlesztés és testreszabás kezdőoldala
@@ -559,7 +567,7 @@
                     - name: Modellek és adatmodellelemek létrehozásának áttekintése
                       href: dev-tools/create-data-model-elements.md
                     - name: Bővítmények elnevezési irányelvei
-                      href: /dynamics365/fin-ops-core/dev-itpro/naming-guidelines-extensions
+                      href: /dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions
                     - name: A modelltestreszabási és elavulási funkciók kikapcsolása
                       href: dev-tools/lock-models.md
                 - name: Testreszabás-elemzési jelentés

@@ -1,25 +1,23 @@
 ---
 title: Pénzügyi jelentéskészítés – GYIK
 description: Ez a témakör a pénzügyi jelentéskészítéssel kapcsolatos néhány gyakran ismételt kérdésre ad választ.
-author: jiwo
+author: jinniew
 ms.date: 07/07/2021
 ms.topic: index-page
 ms.prod: ''
 ms.technology: ''
 ms.search.form: ''
 audience: Application User
-ms.reviewer: roschlom
-ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-01-13
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3690a541b503281f204221a72bfb5a371984d9e4
-ms.sourcegitcommit: 25b3dd639e41d040c2714f56deadaa0906e4b493
+ms.openlocfilehash: b5e0702864815c630f35e3f5b753ece1cb1daa71
+ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "7605279"
+ms.lasthandoff: 05/06/2022
+ms.locfileid: "8722296"
 ---
 # <a name="financial-reporting-faq"></a>Pénzügyi jelentéskészítés – GYIK
 
@@ -57,7 +55,7 @@ Ha a jelentés egyenlegei nem egyeznek meg, az alábbi eljárásokkal azonosíth
 9. Hozza létre a jelentést. 
 10. Exportálja a jelentést a Microsoft Excel szoftverbe.
 
-### <a name="in-dynamics-365-finance"></a>Itt: Dynamics 365 Finance
+### <a name="in-dynamics-365-finance"></a>A Dynamics 365 Finance-ban
 
 1. Lépjen a **Főkönyv \> Lekérdezések és jelentések \> Főkönyvi kivonat** lehetőségre.
 2. Állítsa be a következő mezőket:
@@ -102,7 +100,7 @@ Amikor a jelentésekben megjelenő adatokat frissítik, előfordulhat késés, m
 
 Hasonlóképpen, amikor a jelentések a historikus típusú számlák devizaátváltásának használatával készülnek, extra tranzakciónkénti számításokat kell végezni. A számlák számától függően a jelentés elkészítésének ideje több mint kétszeresére nőhet.
 
-## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Melyek a data mart becsült integrációs intervallumai?
+## <a name="what-are-the-estimated-data-mart-integration-intervals"></a>Melyek a adattérkép becsült integrációs intervallumai?
 
 A Financial Reporter 16 feladat segítségével másolja az adatokat a Dynamics 365 Finance szolgáltatásból a Financial Reporter adatbázisába. Az alábbi táblázat felsorolja ezt a 16 feladatot, és ismerteti az intervallumot, amely meghatározza, hogy milyen gyakran futnak az egyes feladatok. Az intervallumok nem módosíthatók.
 

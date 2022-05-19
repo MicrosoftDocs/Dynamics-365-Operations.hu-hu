@@ -110,7 +110,7 @@
                   href: dev-itpro/n-1-installation-configuration.md
                 - name: A Retail csatornabővítmény frissítése a legújabb Retail szoftverfejlesztői készletre (SDK)
                   href: dev-itpro/RetailSDK-update.md
-            - name: Dokumentum-erőforrások
+            - name: Dokumentáció-erőforrások
               items:
                 - name: Súgórendszer
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/commerce/toc.json
@@ -600,6 +600,8 @@
                       href: wallets.md
                     - name: Továbbfejlesztett kifizetések az üzletben történő fizetésnél
                       href: dev-itpro/enhanced-sca.md
+                    - name: Expressz kifizetések konfigurálása a PayPal-hoz
+                      href: dev-itpro/express-payments-paypal.md
                     - name: Kifizetésekkel kapcsolatos GYIK
                       href: dev-itpro/payments-retail.md
                 - name: E-mail és értesítések
@@ -954,11 +956,13 @@
                   href: teams-integration-faq.md
         - name: Az e-kereskedelmi webhely kezelése
           items:
-            - name: E-kereskedelmi webhely áttekintése
+            - name: Az e-kereskedelmi webhely áttekintése
               href: online-store-overview.md
             - name: E-kereskedelmi webhely létrehozása
               items:
-                - name: Tartománynév konfigurálása
+                - name: Csatornák leképezése e-kereskedelmi webhelyekhez
+                  href: map-channels-sites.md
+                - name: A tartománynevének konfigurálása
                   href: configure-your-domain-name.md
                 - name: Új e-kereskedelmi bérlő telepítése
                   href: deploy-ecommerce-site.md
@@ -2560,18 +2564,20 @@
                       href: dev-itpro/pos-extension/pos-extension-basics.md
                     - name: Pénztárbővítmények áttelepítése a Commerce SDK-ra
                       href: dev-itpro/pos-extension/migrate-pos-extension.md
+                    - name: Pénztárbővítmény-csomagprojekt létrehozása
+                      href: dev-itpro/pos-extension/create-pos-extension-package.md
                     - name: Store Commerce-bővítmények hibakeresése a VS Code használatával
                       href: dev-itpro/sc-debug.md
+                    - name: Lepecsételt MPOS- és CPOS-bővítmények
+                      items:
+                        - name: Egy .appx-fájl létrehozása a Modern POS-bővítménycsomaghoz
+                          href: dev-itpro/pos-extension/create-pos-extension-appx.md
+                        - name: MPOS- (lepecsételt) és CPOS-bővítmények hibakeresése
+                          href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: Környezet beállítása
                   items:
                     - name: Helyi fejlesztőkörnyezet
                       href: dev-itpro/setup-local-dev-env.md
-                    - name: Pénztárbővítmény-csomagprojekt létrehozása
-                      href: dev-itpro/pos-extension/create-pos-extension-package.md
-                    - name: Egy .appx-fájl létrehozása a Modern POS-bővítménycsomaghoz
-                      href: dev-itpro/pos-extension/create-pos-extension-appx.md
-                    - name: Pénztárbővítmények hibakeresése
-                      href: dev-itpro/pos-extension/debug-pos-extension.md
                 - name: API-k és referencia
                   items:
                     - name: Pénztárbővítmény csomaginformációjának megtekintése
@@ -2834,11 +2840,15 @@
                           href: e-commerce-extensibility/instance-cache.md
                         - name: Modul CSS-optimalizációja
                           href: e-commerce-extensibility/module-css-optimization.md
+                        - name: Képek optimalizálása a termék részletező lapjain
+                          href: e-commerce-extensibility/optimize-images-pdp.md
+                        - name: Képek optimalizálása a keresési és kategóriaoldalakon
+                          href: e-commerce-extensibility/optimize-images-search-cat.md
                     - name: Telemetria és elemzések
                       items:
                         - name: Telemetria-naplózó
                           href: e-commerce-extensibility/telemetry-logger.md
-            - name: Commerce Headquarters
+            - name: Commerce headquarters
               items:
                 - name: CDX-csomag bővítése
                   items:

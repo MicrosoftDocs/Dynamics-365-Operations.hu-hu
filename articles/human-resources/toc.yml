@@ -232,7 +232,7 @@
                   href: hr-admin-go-live-faq.md
                 - name: Human Resources infrastruktúra-egyesítési GYIK
                   href: hr-infrastructure-merge-faq.md
-                - name: Dokumentum-erőforrások
+                - name: Dokumentáció-erőforrások
                   items:
                     - name: Súgórendszer
                       href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/human-resources/toc.json
@@ -452,8 +452,6 @@
               href: hr-personnel-positions.md
             - name: Munkaidőnaptár létrehozása
               href: hr-personnel-create-working-time-calendar.md
-            - name: Jelöltek toborzása
-              href: hr-personnel-recruit.md
             - name: Személyzeti műveletekkel kapcsolatos GYIK
               href: hr-personnel-actions-faq.md
             - name: Alkalmazotti adatok kezelése munkafolyamatok segítségével
@@ -463,7 +461,7 @@
             - name: Beosztás jelentési kapcsolatainak módosítása
               href: hr-personnel-modify-reporting-relationships-position.md
             - name: Korszerű alkalmazotti belépés
-              href: ../talent/streamlined-employee-entry.md?toc=/dynamics365/human-resources/toc.json
+              href: stream-employee-entry.md
             - name: Dolgozói adatok megadása
               href: hr-personnel-enter-worker-information.md
             - name: Foglalkoztatás nélküli dolgozók
@@ -488,26 +486,34 @@
               href: hr-personnel-set-up-injury-illness-information.md
             - name: Alkalmazotti sérülések és megbetegedések adatainak karbantartása
               href: hr-personnel-maintain-employee-injury-illness-information.md
-            - name: Jelöltek toborzása
+            - name: Toborzás
               items:
-                - name: Toborzási folyamatok kezelése
-                  href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
-                - name: Tömeges felvételi projektek
-                  href: ../human-resources/hr-personnel-mass-hire-projects.md
-                - name: Tömeges felvételi projektek létrehozása
-                  href: ../human-resources/hr-personnel-create-mass-hire-project.md
-                - name: Pályázók és a pályázatok adatainak manuális megadása
-                  href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
-                - name: Feladatigénylések kialakítása és megnyitása
-                  href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
-                - name: Beosztások beállítása
-                  href: ../human-resources/hr-personnel-set-up-positions.md
-                - name: Jelöltek felvétele toborzás útján
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
-                - name: Meglévő alkalmazottak felvétele toborzás útján
-                  href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
-                - name: Jelentkezők kiválasztására szolgáló eszközök azonosítása és telepítése
-                  href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                - name: Áttekintés
+                  href: ../human-resources/hr-recruit-overview.md
+                - name: Toborzási projektek
+                  items:
+                    - name: Toborzási projektfolyamat kezelése
+                      href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+                    - name: Pályázók és a pályázatok adatainak manuális megadása
+                      href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
+                    - name: Feladatigénylések kialakítása és megnyitása
+                      href: ../fin-ops-core/fin-ops/hr/tasks/develop-open-job-requisition.md
+                    - name: Beosztások beállítása
+                      href: ../human-resources/hr-personnel-set-up-positions.md
+                    - name: Jelöltek felvétele toborzás útján
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-candidate-through-recruiting.md
+                    - name: Meglévő alkalmazottak felvétele toborzás útján
+                      href: ../fin-ops-core/fin-ops/hr/tasks/hire-existing-employee-through-recruiting.md
+                    - name: Jelentkezők kiválasztására szolgáló eszközök azonosítása és telepítése
+                      href: ../fin-ops-core/fin-ops/hr/tasks/identify-deploy-candidate-selection-tools.md
+                    - name: Tömeges felvételi projektek
+                      href: ../human-resources/hr-personnel-mass-hire-projects.md
+                    - name: Tömeges felvételi projektek létrehozása
+                      href: ../human-resources/hr-personnel-create-mass-hire-project.md
+                - name: Toborzási kérelmek (egyesített infrastruktúra)
+                  items:
+                    - name: Jelöltek toborzása
+                      href: hr-personnel-recruit.md
         - name: Feladatkezelés
           href: hr-task-mgmt.md
         - name: Szabadság és távollét
@@ -800,6 +806,8 @@
               href: hr-admin-integration-common-data-service-virtual-entities.md
             - name: A Finance szolgáltatással való integráció konfigurálása
               href: hr-admin-integration-finance.md
+            - name: Hivatkozások létrehozása az Human Resources alkalmazásból másik környezetbe
+              href: configure-links.md
             - name: A Dayforce szolgáltatással való integráció konfigurálása
               href: hr-admin-integration-dayforce.md
             - name: Ismétlődő adatexportálási alkalmazás létrehozása

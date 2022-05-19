@@ -86,9 +86,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/finance/toc.json
                 - name: A Finance + Operations (on-premises) megvásárlása
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/finance/toc.json
-                - name: Raktárkezelés konfigurálása helyszíni telepítések esetében
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/finance/toc.json
-            - name: Dokumentum-erőforrások
+            - name: Dokumentáció-erőforrások
               items:
                 - name: Súgórendszer
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/finance/toc.json
@@ -272,9 +270,11 @@
                   href: accounts-payable/tasks/research-resolve-exceptions.md
             - name: Szállítói feladási profilok
               href: accounts-payable/vendor-posting-profiles.md
+            - name: Költségkódok létrehozása
+              href: accounts-receivable/create-charges-codes.md
             - name: Szállítóiszámla-dátumok
               href: accounts-payable/vendor-invoice-dates.md
-            - name: A Kötelezettségek és a Kinnlevőségek modul devizaátértékelései
+            - name: A Kötelezettségek és a Követelések modul devizaátértékelései
               href: cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Mobilos számlajóváhagyások
               href: accounts-payable/mobile-invoice-approvals.md
@@ -292,7 +292,9 @@
               items:
                 - name: A Kötelezettségek modul központosított kifizetései
                   href: accounts-payable/centralized-payments-accounts-payable.md
-                - name: Kiegyenlítés konfigurálása
+                - name: Áthidalt kifizetések beállítása és feldolgozása
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
+                - name: Elszámolás konfigurálása
                   href: cash-bank-management/configure-settlement.md
                 - name: Hátralék kiegyenlítése
                   href: cash-bank-management/settle-remainder.md
@@ -354,8 +356,12 @@
               href: accounts-receivable/set-up-process-recurring-invoices.md
             - name: Könyvelési felosztások és analitikusnapló-bejegyzések szabadszöveges számlákhoz
               href: accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices.md
+            - name: Követelések feladása
+              href: general-ledger/accts-recvble-posting.md
             - name: Vevői feladási profilok
               href: accounts-receivable/customer-posting-profiles.md
+            - name: Költségkódok létrehozása
+              href: accounts-receivable/create-charges-codes.md
             - name: SEPA beszedési megbízás – áttekintés
               href: accounts-receivable/sepa-direct-debit-overview.md
             - name: SEPA beszedési megbízás beállítása
@@ -436,6 +442,8 @@
                       href: accounts-receivable/terminate-billing-schedule.md
                     - name: Igazítási dátumok esetei
                       href: accounts-receivable/sb-alignment-date-examples.md
+                    - name: Bevételfelosztás
+                      href: accounts-receivable/sb-revenue-split.md
                 - name: Bevétel- és költséghalasztások
                   items:
                     - name: Bevétel- és költséghalasztások beállítása
@@ -452,7 +460,9 @@
               items:
                 - name: Vevői kifizetések áttekintése
                   href: cash-bank-management/tasks/customer-payment-overview.md
-                - name: A Kinnlevőségek modul központosított kifizetései
+                - name: Áthidalt kifizetések beállítása és feldolgozása
+                  href: accounts-receivable/set-up-and-process-bridged-payments.md
+                - name: A Követelések modul központosított kifizetései
                   href: accounts-receivable/centralized-payments-accounts-receivable.md
                 - name: Vevői kifizetések letétbe helyezése
                   href: accounts-receivable/tasks/deposit-customer-payments.md
@@ -1026,6 +1036,14 @@
                       href: general-ledger/import-currency-exchange-rates.md
                     - name: Kettős pénznem
                       href: general-ledger/dual-currency.md
+                - name: Feladási profilok
+                  items:
+                    - name: Feladási profilok áttekintése
+                      href: general-ledger/pstg-prfles-ovrvw.md
+                    - name: Ajánlott eljárások a feladási profilokhoz
+                      href: general-ledger/recommended-practices-pstg-prfles.md
+                    - name: Számlák automatikus tranzakciókhoz
+                      href: general-ledger/accounts-for-auto-transactions.md
                 - name: Felosztási szabályok
                   items:
                     - name: Főkönyvi felosztási szabályok

@@ -86,9 +86,7 @@
                   href: ../fin-ops-core/fin-ops/get-started/system-requirements-on-prem.md?toc=/dynamics365/supply-chain/toc.json
                 - name: A Finance + Operations (on-premises) megvásárlása
                   href: ../fin-ops-core/fin-ops/get-started/purchase-on-premises.md?toc=/dynamics365/supply-chain/toc.json
-                - name: Raktárkezelés konfigurálása helyszíni telepítések esetében
-                  href: ../fin-ops-core/dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/dynamics365/supply-chain/toc.json
-            - name: Dokumentum-erőforrások
+            - name: Dokumentáció-erőforrások
               items:
                 - name: Súgórendszer
                   href: ../fin-ops-core/fin-ops/get-started/help-overview.md?toc=/dynamics365/supply-chain/toc.json
@@ -3299,8 +3297,8 @@
                   href: warehousing/tasks/register-items-advanced-warehousing.md
                 - name: 'Cikkek regisztrálása alapvető raktározásra engedélyezett cikkre, cikkérkeztetési napló használatával'
                   href: warehousing/tasks/register-items-basic-warehousing.md
-                - name: Bejövő ASN-ek importálása a V2 adatentitáson keresztül
-                  href: warehousing/import-asn-v2-data-entity.md
+                - name: Bejövő ASN-ek importálása a V3 adatentitáson keresztül
+                  href: warehousing/import-asn-data-entity.md
                 - name: Termékek áttárolása a fogadó raktárból az üzletekbe
                   href: warehousing/tasks/cross-dock-products-receiving-warehouse-stores.md
                 - name: Helyutasítás beállítása beszerzési rendelés eltárolásához
