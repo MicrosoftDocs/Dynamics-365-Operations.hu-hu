@@ -2,7 +2,7 @@
 title: Videólejátszó modul
 description: Ez a témakör a videólejátszó modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 8d09797d24572a99cc8f5ed2d34b73eb7144af7a35661a929b6a571a20dfed04
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: b7ec2ea0f8360bbf1dffa023e4546e4deadb5ff9
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6731719"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780764"
 ---
 # <a name="video-player-module"></a>Videólejátszó-modul
 
@@ -74,20 +74,23 @@ A következő kép egy kezdőoldalon használt videólejátszó modul egy péld�
 A videólejátszó modul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
-1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **Videólejátszó sablon** elemet, majd válassza az **OK** gombot.
-1. A **Törzs** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Alapértelmezett oldal** modult, majd kattintson az **OK** gombra.
-1. Az **Alapértelmezett lap** modul **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
-1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Videólejátszó** modult, majd kattintson az **OK** gombra.
+1. Az Új sablon **párbeszédpanel** Sablonnév listájában **adja** meg **a Video Player** sablonját, majd válassza az **OK gombra**.
+1. Válassza ki a **három** pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget** a Törzsnél.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **az Alapértelmezett** lap modult, majd kattintson az **OK gombra**.
+1. Az Alapértelmezett **lap** modul főbejáratában **válassza** ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a** Tároló modult, majd válassza az **OK gombra.**
+1. A tárolóhelyen **válassza** ki a három pontból (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Video Player** modult, majd válassza az **OK gombra.**
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez. 
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
-1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a létrehozott videólejátszó-sablont. Az **Oldal neve** alatta adja meg a **Videólejátszó oldalt**, majd kattintson az **OK** gombra.
-1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
-1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Videólejátszó** modult, majd kattintson az **OK** gombra.
+1. Az Új oldal **létrehozása párbeszédpanel** **Lap neve** csoportban adja **meg a Video Player** lapját, majd válassza **a Tovább gombra.**
+1. A **Sablon kiválasztása mezőben válassza** **ki a Létrehozott Video Player-sablont**, majd válassza **a Tovább lehetőséget**.
+1. Az **Elrendezés kiválasztása oldalon válasszon** egy lapelrendezést (például **rugalmas** elrendezés), majd válassza **a Tovább lehetőséget**.
+1. Az Ellenőrzés **és befejezés lapon** ellenőrizze a lap konfigurációját. Ha szerkesztenie kell a lap adatait, válassza a Vissza **lehetőséget**. Ha a lap adatai helyesek, válassza a Létrehozás **lapot**.
+1. Az új **lap főbejáratában** válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a** Tároló modult, majd válassza az **OK gombra.**
+1. A tárolóhelyen **válassza** ki a három pontból (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Video Player** modult, majd válassza az **OK gombra.**
 1. A videolejátszó modul tulajdonságlapján válassza a **Videó hozzáadása** elemet.
 1. A **Médiaválasztó** párbeszédablakon válasszon egy videót, majd válassza az **Új médiaelem feltöltése** elemet.
 1. A Fájlkezelő területen jelöljön ki egy vagy videófájlt, majd válassza a **Megnyitás** lehetőséget.

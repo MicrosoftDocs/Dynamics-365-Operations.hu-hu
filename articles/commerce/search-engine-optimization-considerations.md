@@ -2,26 +2,21 @@
 title: A webhely keresőmotor-optimalizálási (SEO) szempontjai
 description: Ez a témakör a keresőmotor-optimalizálással (SEO) kapcsolatosan megfontolandó témákat tárgyalja webhelyével kapcsolatosan a fejlesztéstől a termelésig.
 author: psimolin
-ms.date: 10/01/2019
+ms.date: 05/25/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-audience: Application user
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
 ms.search.region: Global
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: df92aeae967bbf248b90dffc6bc2239a8d2959183acb9e9181bc344b9e3eff8d
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2f90581766dba3d3a671df52ec08339a1a0fd7dc
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716857"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806405"
 ---
-# <a name="search-engine-optimization-seo-considerations-for-your-site"></a>A webhely keresőmotor-optimalizálási (SEO) szempontjai
+# <a name="search-engine-optimization-seo-considerations-for-your-site"></a>A webhellyel kapcsolatos keresőmotor-optimalizálási (SEO) szempontok
 
 
 [!include [banner](includes/banner.md)]
@@ -30,11 +25,15 @@ Ez a témakör a keresőmotor-optimalizálással (SEO) kapcsolatosan megfontolan
 
 ## <a name="a-site-that-is-under-development"></a>Fejlesztés alatt álló webhely
 
-A webhely fejlesztése alatt a webhely minden oldalának **NOINDEX** és **NOFOLLOW** címkékkel kell rendelkeznie, így a keresőmotorok nem indexelik a lapokat, és nem tárolják a webhely fejlesztői verzióit a gyorsítótárban. Ehhez a konfigurációhoz hozzá kell adnia az alapértelmezett metacímkék modult a webhely sablonjához. Az alapértelmezett metacímkék tulajdonságai ezután elérhetővé válnak a lapszerkesztő SEO-tulajdonságok szakaszában. Ezeket a tulajdonságokat a metacímkék kezelésére használhatja.
+Annak érdekében, hogy a keresőmotorok ne indexelnek fejlesztés alatt található webhelyet, **minden webhelyoldalon noindex** **és nofollow** metacímkének kell lennie. A helyes gyakorlat az, ha a MetaTags [modul alapján egy részletet hoznak létre, amely a következő metacímke-bejegyzést tartalmazza, és gondoskodik arról, hogy a részlet hozzá legyen adva a](metatags-module.md) webhelyen használt sablonok HTML \<head\> szakaszhoz.
+
+```html
+<meta name="robots" content="noindex,nofollow" /> 
+```
 
 ## <a name="soft-launch-of-a-site"></a>A webhely próbaindítása
 
-A „próbaindítás” során egy webhely csak korlátozott közönség vagy piac számára érhető el, mielőtt megtörténne a teljes indítás. Ha csinál egy próbaindítást of weboldalán akkor érdemes a **NOINDEX** metacímkéket a helyükön hagyni. Ily módon garantálhatja, hogy a próbaindítás továbbra is korlátozott a korlátozott közönségre korlátozódik, amelyet el kíván érni.
+A „próbaindítás” során egy webhely csak korlátozott közönség vagy piac számára érhető el, mielőtt megtörténne a teljes indítás. Ha a webhelyet csak úgy indítja el, **érdemes megfontolni a noindex** metacímkék helyét. Ily módon garantálhatja, hogy a próbaindítás továbbra is korlátozott a korlátozott közönségre korlátozódik, amelyet el kíván érni.
 
 ## <a name="a-site-that-is-in-production"></a>A termelésben részt vevő webhely
 
@@ -44,7 +43,7 @@ A keresőmotor indexelésének optimalizálása érdekében a renderelési keret
 
 ### <a name="page-seo-settings-for-internal-preview-limited-audiences-and-all-audiences"></a>Oldal SEO beállításai a belső előnézethez, korlátozott közönséghez és teljes közönséghez
 
-Mivel a Dynamics 365 Commerce támogatja a „valós megjelenítésű” (WYSIWYG), a hitelesített előnézeteket a vizuális oldalkészítőben, a szerkesztők úgy készíthetik el az oldal tartalmát, hogy nem kell azon aggódniuk, hogy az információk láthatóvá válnak az oldal látogatóinak. Ha egy lapot közzé kell tenni, de a kitettséget korlátozni kell, akkor a **NOINDEX** metacímkével kell ellátni, hogy a keresőmotorok ne indexeljék. Ezután, amikor a lap készen áll a teljes közönségre, minden alapvető SEO metaadatnak jelen kell lennie, hogy maximalizálni lehessen a keresőmotor-indexelés hatékonyságát. Ezenkívül a **NOLIMIT** metacímkét el kell távolítani.
+Mivel a Dynamics 365 Commerce támogatja a „valós megjelenítésű” (WYSIWYG), a hitelesített előnézeteket a vizuális oldalkészítőben, a szerkesztők úgy készíthetik el az oldal tartalmát, hogy nem kell azon aggódniuk, hogy az információk láthatóvá válnak az oldal látogatóinak. Ha egy oldalt közzé kell tenni, de az adott lapnak korlátozottnak kell lennie, **akkor a noindex** metacímkének kell lennie, hogy ne indexelje a keresőmotorok. Ezután, amikor a lap készen áll a teljes közönségre, minden alapvető SEO metaadatnak jelen kell lennie, hogy maximalizálni lehessen a keresőmotor-indexelés hatékonyságát. Ezenkívül a nolimit **metacímkét** is el kell távolítani.
 
 ## <a name="additional-resources"></a>További erőforrások
 

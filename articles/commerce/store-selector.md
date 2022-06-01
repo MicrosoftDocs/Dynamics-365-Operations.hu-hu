@@ -3,7 +3,7 @@ title: Üzletkiválasztó modul
 description: Ez a témakör az üzletválasztó modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
 manager: annbe
-ms.date: 05/04/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 7276f25daada8286490ad7e1af2b350e4a2805bb
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: 76682f26f62fe4686f5102e3099f038a50005f5e
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710780"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780639"
 ---
 # <a name="store-selector-module"></a>Üzletválasztó modul
 
@@ -135,26 +135,29 @@ A **Felvétel áruházban** módban a modul csak a PDP-k és a kosár oldalain h
 Ha az üzlethelyekhez szeretné konfigurálni az üzletválasztó modult az elérhető üzletek megjelenítéséhez, akkor a jelen témakörben korábban mutatott ábrához hasonlóan hajtsa végre az alábbi lépéseket.
 
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
-1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **Marketingsablon** elemet, majd válassza az **OK** gombot.
+1. Az Új **sablon párbeszédpanel** Sablon neve területén **adja** meg a **Marketingsablont**, majd válassza az **OK gombra.**
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
-1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a **Marketingsablon** sablonját. Az **Oldal neve** alatta adja meg az **Üzlethelyeket**, majd kattintson az **OK** gombra.
-1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
-1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló 2 oszloppal** modult, majd kattintson az **OK** gombra.
+1. Az Új lap **létrehozása párbeszédpanel** Lap neve **csoportban** adja **meg** az áruházi helyeket, majd válassza **a Tovább gombra.**
+1. A **Sablon kiválasztása mezőben válassza** ki **a létrehozott marketingsablont**, majd válassza a Tovább **gombra**.
+1. Az **Elrendezés kiválasztása oldalon válasszon** egy lapelrendezést (például **rugalmas** elrendezés), majd válassza **a Tovább lehetőséget**.
+1. Az Ellenőrzés **és befejezés lapon** ellenőrizze a lap konfigurációját. Ha szerkesztenie kell a lap adatait, válassza a Vissza **lehetőséget**. Ha a lap adatai helyesek, válassza a Létrehozás **lapot**. 
+1. Az új **lap főbejáratában** válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a** Tároló modult, majd válassza az **OK gombra.**
+1. A tárolóhelyen **válassza** ki a három pontból (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Tároló 2 oszlop modult**, majd kattintson az **OK gombra**.
 1. A modul tulajdonságai ablaktáblában a **Szélesség** értéket állítsa **Tároló kitöltése** lehetőségre.
 1. Az **X-Small megtekintési terület oszlop konfigurációja** értéket állítsa **100%**-ra.
 1. A **Small megtekintési terület oszlop konfigurációja** értéket állítsa **100%**-ra.
 1. A **Medium megtekintési terület oszlop konfigurációja** értéket állítsa **33 % 67 %**-ra.
 1. A **Large megtekintési terület oszlop konfigurációja** értéket állítsa **33 % 67 %**-ra.
-1. Az **Tároló 2 oszloppal** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Áruházválasztó** modult, majd kattintson az **OK** gombra.
+1. A kétoszlopos **tárolóban** válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **az** Üzletválasztó modult, majd kattintson az **OK gombra**.
 1. A modul tulajdonságai ablaktáblában a **Mód** értéket állítsa **Üzletek keresése** lehetőségre.
 1. A **keresési sugár** érték beállítása mérföldben.
 1. Egyéb tulajdonságokat, például a **Preferált üzlet beállítása**, az **Összes üzlet megjelenítése**, valamint az **Automatikus javaslat engedélyezése** tetszés szerint állíthat be.
-1. Az **Tároló 2 oszloppal** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Térkép** modult, majd kattintson az **OK** gombra.
+1. A kétoszlopos **tárolóban** válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Leképezés** modult, majd kattintson az **OK gombra**.
 1. A modul tulajdonságai ablaktáblában adja meg a szükséges további tulajdonságokat.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
  

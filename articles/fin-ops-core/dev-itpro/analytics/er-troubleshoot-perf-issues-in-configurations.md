@@ -2,7 +2,7 @@
 title: Hibaelhárítás az ER-konfigurációk teljesítményével kapcsolatban
 description: Ez a témakör leírja, hogyan lehet megtalálni és kijavítani a teljesítményproblémákat az elektronikus jelentési (ER) konfigurációkban.
 author: NickSelin
-ms.date: 06/08/2021
+ms.date: 05/12/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: maximbel
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.1
-ms.openlocfilehash: b5f5308f171b6cd4224debec897dbde133e6d8424673aabfab51e6b83b9014e2
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: e727e06c73ff445bf4219ac5a9eee7bec25740d9
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6744386"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811680"
 ---
 # <a name="troubleshooting-performance-issues-in-er-configurations"></a>Hibaelhárítás az ER-konfigurációk teljesítményével kapcsolatban
 
@@ -55,7 +55,7 @@ Bizonyos esetekben a teljesítményproblémákat nem a jelentésekhez használt 
 
 Állítson össze egy kis példát, vagy gyűjtsön több hívásláncot a jelentéskészítés véletlenszerű részeiből.
 
-Ezután a [Trace Parser](#trace-parser) megoldásban szabványos általános elemzéseket végezhet, és választ adhat a következő kérdésekre:
+Ezután a [Trace Parserben](#trace-parser) egy szabványos, alulról felfelé ható elemzésre válaszolva a következő kérdéseket válaszolja meg:
 
 - Melyek a legfontosabb metódusok az időfelhasználás szempontjából?
 - A teljes időnek mekkora részét használják ezek a metódusok?
@@ -82,7 +82,7 @@ Ezután nyissa meg a hívásláncot az ER modellleképezés-tervezőben, és né
 
 - A lekérdezések és beolvasási rekordok száma megfelel az adatok teljes összegének? Ha például egy dokumentumnak 10 sora van, akkor a statisztikai adatok azt mutatják, hogy a jelentés 10 sort vagy 1000 sort nyer ki? Ha jelentős számú lekért rekordja van, fontolja meg a következő javítások egyikét:
 
-    - Az SQL-szerveroldalon az adatok feldolgozása [a **WHERE** függvény helyett a **FILTER** függvényt használja](#filter).
+    - [Az oldalon **található adatok feldolgozása** a WHERE funkció helyett a **FILTER**](#filter) funkcióval Microsoft SQL Server lehetséges.
     - Ugyanazon adatok beolvasásának elkerülése érdekében használjon gyorsítótárazást.
     - Az [összegyűjtött adatfüggvények](#collected-data) segítségével elkerülheti, hogy ugyanezeket az adatokat olvassa be az összegzéshez.
 
@@ -191,6 +191,10 @@ Ez a megközelítés néhány korlátozással jár. Rendszergazdai hozzáférés
 
 Bár a gyorsítótárazás csökkenti az adatok újraolvasásához szükséges időt, memóriát fogyaszt. Gyorsítótárazás használata olyan esetekben, amikor a beolvasott adatok mennyisége nem túl nagy. A további tudnivalókat és a gyorsítótárazás használatát bemutató példát lásd a [modellleképezés javítása a végrehajtási nyomkövetés adatai alapján](trace-execution-er-troubleshoot-perf.md#improve-the-model-mapping-based-on-information-from-the-execution-trace) részben.
 
+#### <a name="reduce-volume-of-data-fetched"></a><a name="reduce-fetched-data"></a> Bekért adatok térfogatának csökkentése
+
+A gyorsítótárazás memóriafelhasználásának csökkentése érdekében korlátozhatja a futásidőben behívott alkalmazástáblák rekordjainak számát. Ebben az esetben csak azoknak a mezőértéknek a beolvasása történik meg az alkalmazástáblában, amelyekre szüksége van az ER modell megfeleltetése során. A tábla többi mezőjét nem lehet beolvasásra. Ennek megfelelően csökken a beolvasási rekordok gyorsítótárazához szükséges memória térfogata. A további tudnivalókat lásd az [ER-alapú megoldások teljesítményének javítása a futásidőben bekért táblamezők számának csökkentésével](er-reduce-fetched-fields-number.md).
+
 #### <a name="use-a-cached-parameterized-calculated-field"></a><a name="cached-parameterized"></a>Gyorsítótárazott, paraméterezett számított mező használata
 
 Időnként többször is meg kell keresni az értékeket. Ilyen lehet például a fióknév vagy fiókszám. Az idő megtakaraítása érdekében létrehozhat egy számított mezőt, amely a legfelső szinten paraméterekkel rendelkezik, majd hozzáadhatja a mezőt a gyorsítótárhoz.
@@ -218,4 +222,4 @@ Az ER a következő forrásokból használhat adatokat:
 - Osztályok (**objektum** és **osztály** adatforrások)
 - Táblák (**tábla** és **táblarekord** adatforrások)
 
-Az [ER API](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) segítségével az előkalkulált adatokat is küldheti a hívó kódból. Az alkalmazáscsomag számos példát tartalmaz erre a megközelítésre.
+Az [ER alkalmazásprogramozási felület (API)](er-apis-app73.md#how-to-access-internal-x-objects-by-using-erobjectsfactory) lehetőséget nyújt az előkalkulált adatoknak a hívó kódból történő elküldére is. Az alkalmazáscsomag számos példát tartalmaz erre a megközelítésre.

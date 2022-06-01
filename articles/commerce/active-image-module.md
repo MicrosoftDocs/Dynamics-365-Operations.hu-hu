@@ -2,7 +2,7 @@
 title: Aktívképmodul
 description: Ez a témakör ismerteti az aktívképmodulok működését és bemutatja, hogyan tudjuk hozzáadni azokat az egyes webhelyekhez a Microsoft Dynamics 365 Commerce segítségével.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 36b7d6dea87c7f309c07608794d443a0ae19be211847d2cddcad95f2d933a8db
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 06b9162029de3f5f3fede9583fa8a4a96fefb2f3
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6716908"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780285"
 ---
 # <a name="active-image-module"></a>Aktívképmodul
 
@@ -57,12 +57,12 @@ A következő ábra egy előnézeti előugró ablakra mutat be példát, amely e
 Az aktívképmodul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
 1. Nyissa meg a **Sablonok** lapot, és nyissa meg a webhely kezdőlapjának marketingsablonját (vagy hozzon létre új marketingsablont).
-1. Az Alapértelmezett lap **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Aktív kép** modult, majd kattintson az **OK** gombra.
+1. Az alapértelmezett **oldal** főbejáratában válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **az Aktív képmodult**, majd válassza az **OK gombra**.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Nyissa meg az **Oldalak** területet, majd a webhely kezdőlapját (vagy hozzon létre egy új kezdőlapot a marketingsablon használatával).
-1. Az alapértelmezett lap **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Aktív kép** modult, majd kattintson az **OK** gombra.
+1. Az alapértelmezett **oldal** főbejáratában jelölje ki az három pont gombot (**...**), majd válassza **a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **az Aktív képmodult**, majd válassza az **OK gombra**.
 1. Az aktívképmodul tulajdonságpanelén adjon hozzá egy képet, és állítsa a vászon szélességét a kép méretének megfelelően.
 1. Állítsa be az X és az Y koordinátát, és adja hozzá a megfelelő termékazonosító számot.
 1. Szükség szerint adjon hozzá és konfiguráljon további aktívképmodulokat.

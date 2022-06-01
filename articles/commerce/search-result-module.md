@@ -2,7 +2,7 @@
 title: Keresési eredmények modul
 description: Ez a témakör a keresési eredmények modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 04/21/2022
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 15b3bb50eb0b75fa19ac8e136da83cb362b4cec6
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: dcf3dedbb7c499135bbae45b917153854ecd4a28
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644926"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780918"
 ---
 # <a name="search-results-module"></a>Keresési eredmények modul
 
@@ -65,23 +65,26 @@ A keresési eredmények modul támogatja a [gyorsnézet modult](quick-view-modul
 
 ## <a name="add-a-search-results-module-to-a-category-page"></a>Keresési eredmények modul hozzáadása kategóriaoldalhoz
 
-A következő lépésekkel lehet hozzáadni egy keresési eredmények modult egy kategóriaoldalhoz.
+A webhelyszerkesztő kategóriaoldalára a következő lépésekkel lehet keresési eredménymodult hozzáadni.
 
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
 1. Az **Új sablon** párbeszédablakban írja be a **Keresési eredmények** nevet, majd válassza az **OK** gombot.
-1. A **Törzs** helyben válassza a három pont (…) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Alapértelmezett oldal** modult, majd kattintson az **OK** gombra.
-1. Az **Alapértelmezett oldal** modul **Fő** helyén válassza ki a három pont (…) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
-1. A **Tároló** helyben válassza a három pont (…) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Útkövetési** modult, majd kattintson az **OK** gombra.
+1. Válassza ki a **három** pontból (...), **majd válassza a Modul hozzáadása lehetőséget a Törzsnél**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **az Alapértelmezett** lap modult, majd kattintson az **OK gombra**.
+1. Az Alapértelmezett **lap** modul főbejáratában **válassza** ki a három pontból (...), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a** Tároló modult, majd válassza az **OK gombra.**
+1. A tárolóhelyen **válassza** ki a három pontból (...), majd válassza a **Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Navigációs modult**, majd kattintson az **OK gombra**.
 1. Az **Útkövetés** tulajdonságok panelen írja be az **1** értéket az **Előfordulások minimális száma** pontban.
-1. A **Tároló** helyben válassza a három pont (…) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Keresési eredmények** modult, majd kattintson az **OK** gombra.
+1. A tárolóhelyen **válassza** ki a három pontból (...), majd válassza a **Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Keresési** eredmények modult, majd válassza az **OK gombra.**
 1. A **Keresési eredmények** tulajdonságok panelen adja meg az **1** értéket az **Előfordulások minimális száma** pontban, majd állítsa be az egyéb szükséges tulajdonságokat a keresési eredmények modulhoz. A tulajdonságoknak a sablonban való beállításával biztosíthatja, hogy az adott kategóriaoldal minden testreszabása automatikusan tartalmazza ezeket a beállításokat.
 1. Válassza a **Szerkesztés befejezése** parancsot, majd a **Közzététel** elemet a sablon közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
-1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a létrehozott **Keresési eredmények** sablont, írja be a **Kategóriaoldal** lehetőséget az **OIdal neve** pontba, majd kattintson az **OK** gombra. Mivel a sablonban minden érték be van állítva, az oldal készen áll a közzétételre.
+1. Az Új lap **létrehozása párbeszédpanel** Lap neve **csoportban** adja **meg a Kategória** lapot, majd válassza a Tovább **gombra.**
+1. Válassza **ki a Létrehozott** **keresési** eredmények sablonját a Sablon kiválasztása, majd a Tovább **gombra.**
+1. Az **Elrendezés kiválasztása oldalon válasszon** egy lapelrendezést (például **rugalmas** elrendezés), majd válassza **a Tovább lehetőséget**.
+1. Az Ellenőrzés **és befejezés lapon** ellenőrizze a lap konfigurációját. Ha szerkesztenie kell a lap adatait, válassza a Vissza **lehetőséget**. Ha a lap adatai helyesek, válassza a Létrehozás **lapot**.
 1. Válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 
 ## <a name="enable-inventory-awareness-for-the-search-results-module"></a>Készletérzékenység engedélyezése a keresési eredmények modulban
@@ -102,7 +105,7 @@ A készletre vonatkozó termékkeresés termékattribútumokkal szerezheti meg a
 
 Ha külön termékattribútumokat is létre kell hozni a készletre vonatkozó keresési eredmények modul támogatása érdekében, kövesse ezeket a lépéseket.
 
-1. Ugorjon a **Kiskereskedelem és kereskedelem \> Kiskereskedelem és kereskedelem IT \> Termékek és készlet** lehetőségre.
+1. A központi központban menjen a **Retail and Commerce \> Retail and Commerce It \> Products és a Inventory webhelyre**.
 1. Válassza ki és nyissa **meg a Termékattribútumok feltöltése készletszinttel beállítását és megnyitását**.
 1. A párbeszédpanelen adja meg a következő adatokat:
 
@@ -116,11 +119,11 @@ Ha külön termékattribútumokat is létre kell hozni a készletre vonatkozó k
 
 A következő lépések szerint konfigurálhatja egy online csatorna termékattribútumát. 
 
-1. Nyissa meg a következőt: **Kiskereskedelem és kereskedelem \> Csatorna beállítása \> Csatornakategóriák és termékattribútumok**.
-2. Online csatorna kiválasztása a készletre vonatkozó keresési eredmények modul engedélyezéséhez.
-3. Válasszon ki és nyisson meg egy társított attribútumcsoportot, majd adja hozzá az újonnan létrehozott termékattribútumot.
-4. Commerce-verzióknál a 10.0.27-es **verzió** előtt válassza az Attribútum-metaadatok beállítása lehetőséget, jelölje ki az újonnan hozzáadott termékattribútumot, **·** **majd** kapcsolja be az Attribútum megjelenítése a csatornán, beolvasásra, **finomítható és lekérdezhető beállítások.** **·**
-5. Menjen a **Retail and Commerce \> Retail and Commerce IT \> Distribution** ütemezéshez, **és futtassa a 1150 -es (katalógus- és katalógus-) feladatot**. Ha kötegfolyamatként **ütemezi** a Készletszintű feladat feltöltése termékattribútumokat, akkor azt ajánljuk, hogy a 1150-es feladatot is ütemezje kötegfolyamatként, amely ugyanolyan gyakorisággal fut.
+1. A központ beállítási csatornakategóriáihoz **és \> termékattribútumainak a beállításához menjen a Retail és a Commerce \> Channel beállításához**.
+1. Online csatorna kiválasztása a készletre vonatkozó keresési eredmények modul engedélyezéséhez.
+1. Válasszon ki és nyisson meg egy társított attribútumcsoportot, majd adja hozzá az újonnan létrehozott termékattribútumot.
+1. Commerce-verzióknál a 10.0.27-es **verzió** előtt válassza az Attribútum-metaadatok beállítása lehetőséget, jelölje ki az újonnan hozzáadott termékattribútumot, **·** **majd** kapcsolja be az Attribútum megjelenítése a csatornán, beolvasásra, **finomítható és lekérdezhető beállítások.** **·**
+1. Menjen a **Retail and Commerce \> Retail and Commerce IT \> Distribution** ütemezéshez, **és futtassa a 1150 -es (katalógus- és katalógus-) feladatot**. Ha kötegfolyamatként **ütemezi** a Készletszintű feladat feltöltése termékattribútumokat, akkor azt ajánljuk, hogy a 1150-es feladatot is ütemezje kötegfolyamatként, amely ugyanolyan gyakorisággal fut.
 
 > [!NOTE]
 > A keresési eredmények modulban megjelenő termékeknél a készletszint az alaptermék szintjén jelenik meg, nem pedig az egyes változatok szintjén. Csak két lehetséges érték áll rendelkezésre: "elérhető" és a "nincs készleten". Az érték tényleges címkéje a készletszint-profil [definícióból van beolvasva](inventory-buffers-levels.md). Az alaptermék csak akkor minősül készlethiányosnak, ha az egyik változata nincs készleten.

@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2020-10-13
 ms.dyn365.ops.version: Human Resources
-ms.openlocfilehash: a905d752af2cf8397acb4927aa99edb4c23bfa6a
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 766ee49c17749841d8acac6637a0262e87e52e92
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8688120"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809613"
 ---
 # <a name="dynamics-365-human-resources-infrastructure-merge-faq"></a>Dynamics 365 Human Resources infrastruktúraegyesítés – GYIK
 
@@ -131,6 +131,9 @@ Ez az integrációs végponttól függ. A Pénzügy és műveletek alkalmazások
 Ha az Dynamics 365 Human Resources Dataverse új infrastruktúra környezetben a környezethez kapcsolódó pénzügyi és műveleti környezetek ugyan ahhoz a környezethez csatlakoznak, Dataverse a két alkalmazás az áttelepítés után is ugyanannak a környezetnek a csatlakoztatva lesz. A Dataverse bővítmények esetében nem lesz szükség migrációra.
 
 Ha azonban Dynamics 365 Human Resources Dataverse a pénzügy és a művelet környezete jelenleg külön környezetekhez kapcsolódik, Dataverse akkor a két környezetet össze kell kombinálni, hogy az új infrastruktúra egyetlen környezetéhez kapcsolódtak. A Dataverse áttelepítés során a Human Resources estében szabványos Dataverse táblákat lehet csatlakoztatni és újraszinkronizálni az új Dataverse környezethez. A Dataverse környezethez készült bővítmények nem kerülnek automatikusan áttelepítésre, hanem azokat újra kell telepíteni az új környezetbe. Javasoljuk, hogy a felügyelt megoldások segítségével kezelje a Dataverse-bővítményeket. A további tudnivalókat lásd: [Bevezetés a megoldásokba](/powerapps/developer/data-platform/introduction-solutions).
+
+### <a name="we-have-utilized-the-custom-field-functionality-within-dynamics-365-human-resources-will-those-custom-fields-migrate-automatically"></a>Kihasználjuk az egyéni mező funkciót a következőn belül Dynamics 365 Human Resources: automatikusan át fognak áttelepítésre ezek az egyéni mezők?
+Igen, a hozzáadott egyéni mezők átkerülnek az új infrastruktúrába.
 
 ### <a name="we-have-configured-microsoft-power-automate-flows-andor-microsoft-power-apps-to-work-with-dynamics-365-human-resources-will-these-microsoft-power-platform-components-be-migrated-and-work-automatically-after-the-infrastructure-change-is-completed"></a>Úgy konfiguráltuk a Microsoft Power Automate folyamatokra és/vagy Microsoft Power Apps alkalmazásokat, hogy működjenek Dynamics 365 Human Resources alkalmazással. Ezeket a Microsoft Power Platform összetevőket áttelepíti a program, és automatikusan működnek az infrastruktúra-módosítás befejezése után?
 

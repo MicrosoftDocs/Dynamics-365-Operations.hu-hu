@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-ms.openlocfilehash: a2f7929026f41e921b71bc5a899810695c859902
-ms.sourcegitcommit: d475dea4cf13eae2f0ce517542c5173bb9d52c1c
+ms.openlocfilehash: 7e42c0b49a4083edd0e64551f4840bd74d412fc1
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/05/2022
-ms.locfileid: "8547788"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786838"
 ---
 # <a name="configure-inventory-visibility"></a>Készletláthatóság konfigurálása
 
@@ -60,7 +60,7 @@ A Készlet láthatósága bővítmény számos új funkcióval bővíti a Power 
 
 Ha nem ismeri a megfelelő Készletláthatóság szolgáltatás végpontját, nyissa meg a **Konfiguráció** oldalt a Power Apps oldalon, majd válassza a jobb felső sarokban a **Szolgáltatás végpontjának megjelenítése** lehetőséget. Az oldal a megfelelő szolgáltatás végpontját fogja megjeleníteni.
 
-## <a name="data-source-configuration"></a>Adatforrás konfiguráció
+## <a name="data-source-configuration"></a><a name="data-source-configuration"></a>Adatforrás konfiguráció
 
 Minden adatforrás azt a rendszert jelöli, amelyből az adatok származnak. Ilyen lehet például az `fno` adatforrás neve (ami a "Dynamics 365 Pénzügyi és műveleti alkalmazások" nevet jelenti) `pos` és (ami azt jelenti, hogy "értékesítési pont"). Alapértelmezés szerint a Supply Chain Management alapértelmezett adatforrásként van beállítva (`fno`) a Készletláthatóságban.
 
@@ -141,7 +141,7 @@ A dimenzióleképezések hozzáadásához kövesse az alábbi lépéseket.
 
 Ha például az adatforrás tartalmaz egy termékszín dimenziót, akkor azt leképezheti a `ColorId` alapdimenzióra, hogy a `exterchannel` adatforrásban hozzáadhasson egy `ProductColor` egyéni dimenziót. Ezt követően a `ColorId` alapdimenzióra képezzük le.
 
-### <a name="physical-measures"></a>Fizikai mérőszámok
+### <a name="physical-measures"></a><a name="data-source-configuration-physical-measures"></a>Fizikai mérőszámok
 
 Amikor egy adatforrás készletváltozást könyvel a Készletláthatóságba, a változást *fizikai mérőszámok* segítségével könyveli. A fizikai mérőszámok módosítják a mennyiséget és tükrözik a készletállapotot. Az Ön igényei alapján meghatározhatja saját fizikai mérőszámait. A lekérdezések a fizikai mérőszámokon alapulhatnak.
 
@@ -175,6 +175,9 @@ Ha az adatforrás a Supply Chain Management, nem kell újra létrehoznia az alap
 ### <a name="calculated-measures"></a>Számított mérőszámok
 
 A Készletláthatóság funkcióval a fizikai készletmérések és az *egyéni számított mérések* lekérdezésére egyaránt használható. A kiszámított mérőszámok olyan testreszabott számítási képletet biztosítanak, amely fizikai mérőszámok kombinációjából áll. Ez a funkció lehetővé teszi, hogy meghatározzon egy sor fizikai mérőszámot, amelyeket hozzáad, és/vagy egy sor fizikai mérőszámot, amelyeket kivon, hogy kialakítsa a testreszabott mérést.
+
+> [!IMPORTANT]
+> A számított mérték a fizikai mértékek egy összeállítása. Képlete csak ismétlődés nélküli fizikai intézkedéseket tartalmazhat, számított intézkedéseket nem.
 
 A konfiguráció lehetővé teszi, hogy meghatározzon egy sor módosítót, amelyeket összead vagy kivon, hogy megkapja a teljes aggregált kimeneti mennyiséget.
 
@@ -297,7 +300,7 @@ A megoldás alapértelmezés szerint tartalmazza ezt a partíciókonfigurációt
 
 ## <a name="product-index-hierarchy-configuration"></a><a name="index-configuration"></a>Termékindex-hierarchia konfigurációja
 
-A legtöbbször a készletállomány-lekérdezés nem csak a legmagasabb „teljes” szinten lesz. Ehelyett a készletdimenziók alapján összesített eredményeket is láthat.
+A legtöbbször a készletállomány-lekérdezés nem csak a legmagasabb „teljes” szinten lesz. Ehelyett érdemes lehet a készletdimenziók alapján összesített eredményeket is látni.
 
 A Készletláthatóság rugalmasságot biztosít azáltal, hogy lehetővé teszi az _indexek_ beállítását. Ezek az indexek egy dimenzión vagy dimenziók kombinációján alapulnak. Egy index egy *halmazszámból*, egy *dimenzióból* és egy *hierarchiából* áll, a következő táblázatban meghatározottak szerint.
 

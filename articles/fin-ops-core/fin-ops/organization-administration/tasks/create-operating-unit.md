@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: dcfcd64ae24297c8e11f36629490ebe7cd063de53c717559e1b73743ccc61664
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: bc0020a7f7aa60305bfc7c66474e0bbc26f27bef
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6758993"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809558"
 ---
 # <a name="create-an-operating-unit"></a>Üzemi egység létrehozása
 
@@ -37,7 +37,7 @@ Egy üzemi egység olyan szervezet, amelynek segítségével meg lehet osztani a
     + Adja meg a címadatokat, mint például az utcanevet és a házszámot, az irányítószámot és a várost. A **Hozzáadás** gombra kattintva új címrekordot adhat meg, illetve a Szerkesztés gombra kattintva meglévő címrekordot módosíthat.   
     + Bontsa ki a **Kapcsolattartási adatok** szakaszt, ha szükséges.  
     + Adja meg a kommunikációs módszerekkel kapcsolatos adatokat, például e-mail-címeket, URL-címeket és telefonszámokat. Új kommunikációs rekord megadásához kattintson az Új gombra. Egy meglévő kommunikációs rekord módosításához kattintson a **További beállítások > Speciális** gombra.   
-6. Igény szerint módosítsa az **Üzemi egység számát**. Ne felejtse el, hogy ez a szám egyedi azonosító a vonatkozó **Fél** rekordban, és nem lehet ugyanaz, mint bármely más üzemi egységé.
+6. Igény szerint módosítsa az **Üzemi egység számát**. Ne feledje, hogy ez a szám a megfelelő Fél rekord egyedi **azonosító**, és nem lehet ugyanaz, mint bármelyik másik üzemi egység.
 7. Válassza a **Mentés** lehetőséget.
 
 

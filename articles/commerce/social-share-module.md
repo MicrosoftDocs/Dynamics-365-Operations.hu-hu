@@ -2,7 +2,7 @@
 title: Közösségi megosztás modul
 description: Ez a témakör a közösségi megosztás modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.14
-ms.openlocfilehash: 2e997cad97d45949c8f542764126a08fb6daa73551079eb2d400d7edfb98ca2b
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: d145602a217b32b97142251c65d51945569be9ac
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6730947"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780893"
 ---
 # <a name="social-share-module"></a>Közösségi megosztási modul
 
@@ -56,13 +56,13 @@ A következő ábra bemutatja a termék részletei oldalon használt közösség
 Közösségimédia-modul hozzáadásához egy vásárlásmező-modulhoz kövesse az alábbi lépéseket.
 
 1. A Fabrikam webhelyén válassza ki az **Oldalak** lehetőséget, majd válassza ki a **DefaultPDP** a termékrészletek oldal megnyitásához. 
-1. A **Vásárlásmező (kötelező)** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Közösségi megosztás** modult, majd kattintson az **OK** gombra.
-1. Az **Közösségi megosztás** helyben válassza a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **SocialShare** modult, majd kattintson az **OK** gombra.
+1. A buyboxban **(kötelező)** válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Social Share modult**, majd kattintson az **OK gombra**.
+1. A Social **Share-pontnál** válassza ki a három pontból (**...**), majd válassza a Modul **hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza a **SocialShare** modult, majd kattintson az **OK gombra**.
 1. A **SocialShare** modul tulajdonságok ablaktáblájában , a **Tájolás** területen válassza a **Vízszintes** elemet. Szükség szerint adjon meg egy feliratot.
-1. Az **SocialShare** helyben válassza a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **SocialShareItem** modult, majd kattintson az **OK** gombra.
+1. A SocialShare **slotban válassza ki a három pontból (**...**), majd válassza a Modul** hozzáadása lehetőséget **.**
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a SocialShareItem** modult, majd kattintson az **OK gombra**.
 1. A **SocialShareItem** modulban, a **Közösségi média** alatt válassza a **Facebook** lehetőséget.
 1. A **SocialShareItem** modulban az **Ikon** alatt válassza a **+ Kép hozzáadása** lehetőséget.
 1. A **Médiaválasztó** párbeszédpanelen válassza ki a Facebook logó képét, majd kattintson az **OK** gombra. Ha nincs Facebook logókép, válassza az **Új médiaelem feltöltése** lehetőséget, hogy feltöltsön egyet.

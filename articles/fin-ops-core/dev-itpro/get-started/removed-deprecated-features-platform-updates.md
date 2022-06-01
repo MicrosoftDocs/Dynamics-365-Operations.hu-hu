@@ -2,7 +2,7 @@
 title: Eltávolított vagy elavult Platform-funkciók
 description: Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, illetve amelyek a pénzügyi és műveleti alkalmazások platformfrissítései során tervezett eltávolításra vannak tervezve.
 author: sericks007
-ms.date: 04/26/2022
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,12 +12,12 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2020-02-29
 ms.dyn365.ops.version: Platform update 33
-ms.openlocfilehash: 0cf0d4b3ff108645c8542ce10a0be58d29cc68ed
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 3de9b9ea0bd20d1346a7cdfd2f919f50374b164c
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8644607"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811246"
 ---
 # <a name="removed-or-deprecated-platform-features"></a>A platform eltávolított vagy elavult funkciói
 
@@ -31,6 +31,33 @@ Ez a témakör olyan funkciókat ír le, amelyek már el vannak távolítva, ill
 Ez a lista segít figyelembe venni az elavult és eltávolított szolgáltatásokat a saját tervezése elősegítésére. 
 
 A Pénzügy és művelet alkalmazások objektumaival kapcsolatos részletes információk a Műszaki hivatkozási [jelentésekben találhatók](/dynamics/s-e/global/axtechrefrep_61). Ezeknek a jelentéseknek a különböző verzióit össze lehet hasonlítani, hogy megismerjük a Pénzügyi és műveleti alkalmazások egyes verzióiban módosult vagy eltávolított objektumokat.
+
+
+## <a name="feature-deprecation-effective-june-2022"></a>Funkció értékcsökkenése 2022. júniusban
+
+### <a name="finance-and-operations-dynamics-365-mobile-application-and-mobile-platform"></a>Pénzügy és műveletek (Dynamics 365) mobilalkalmazás és mobil platform 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A pénzügyek és műveletek (Dynamics 365) alkalmazás és platform elavult, hogy egyetlen mobil platformra, azaz egy platformra konszolidálunk Power Apps. |
+| **Felváltotta másik szolgáltatás?**   | Igen, a Pénzügy és műveletek alkalmazás adatain keresztüli mobil tapasztalatok integrációval is építhetőek Power Platform. További [részleteket a mobil](../power-platform/build-mobile-experiences.md) tapasztalatok építésénél talál. |
+| **Érintett területek**         | Finance and Operations alkalmazások |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult. A támogatás végének dátuma 2024. október. |
+
+
+## <a name="platform-updates-for-version-10029-of-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazások 10.0.29-es verziójának platformfrissítései
+
+### <a name="panorama-tab-style"></a>Tabulátorlap stílusa
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Elavulás/eltávolítás oka** | A lapok vízszintes görgetése igazodik a dátumozott elrendezésmintákhoz, amelyek ismert használhatósági és kisegítő lehetőségekkel kapcsolatos problémákat tartalmaznak.  |
+| **Felváltotta másik szolgáltatás?**   | Nem, de más tabulátorstílusok továbbra is elérhetők. |
+| **Érintett területek**         | Webes ügyfél |
+| **Telepítési beállítás**              | Minden |
+| **Állapot**                         | Elavult. |
+
 
 ## <a name="feature-deprecation-effective-april-2022"></a>A funkció értékcsökkenése 2022. április 20-án hatályos.
 

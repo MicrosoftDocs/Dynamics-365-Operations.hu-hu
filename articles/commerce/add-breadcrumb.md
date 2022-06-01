@@ -2,7 +2,7 @@
 title: Útkövetési modul
 description: Ez a témakör az útkövető modulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 10/20/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f387b6353e58ebb454b74568ddc17ae6d25d7e36
-ms.sourcegitcommit: 3105642fca2392edef574b60b4748a82cda0a386
+ms.openlocfilehash: aa7f6e2f2b15c3e5d89cd645b3f1cc4c83c5b8d9
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/12/2022
-ms.locfileid: "8109732"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780334"
 ---
 # <a name="breadcrumb-module"></a>Útkövetési modul
 
@@ -63,12 +63,12 @@ Egy útkövetési modul a PDP-re való felvételéhez és a kötelező tulajdons
 
 1. Nyissa meg a **Webhelybeállítások \> Bővítmények** elemet, majd az **Útkövető megjelenítési típus PDP-n** beállításnál válassza a **Kategória-hierarchia megjelenítése** parancsot.
 1. Nyissa meg a **Sablonok** lehetőséget, és válassza ki a PDP-sablont.
-1. Válassza ki a három pont (**...**) elemet a **Tároló** helyén, amely tartalmazz a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Útkövetési** modult, majd kattintson az **OK** gombra.
+1. A tárolóhely **modult** tartalmazó tárolóban válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Navigációs modult**, majd kattintson az **OK gombra**.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Ugorjon a **Lapok** lehetőségre, és nyissa meg a PDP-sablont használó PDP-t. Ha még nincs egy PDP sem, hozzon létre egyet.
-1. Válassza ki a három pont (**...**) elemet a **Tároló** helyén, amely tartalmazz a váráslásmező modult, majd válassza a **Modul hozzáadása** lehetőséget.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Útkövetési** modult, majd kattintson az **OK** gombra.
+1. A tárolóhely **modult** tartalmazó tárolóban válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Navigációs modult**, majd kattintson az **OK gombra**.
 1. Az **Útkövető** hely tulajdonságok panelén a **Gyökér** alatt válassz a **Hivatkozás szövege** lehetőséget.
 1. A **Hivatkozás szövege** párbeszédpanelen írja be a **Kezdőlap** kifejezést, majd a **Hivatkozás célja** területen válassza a **Hivatkozás hozzáadása** lehetőséget.
 1. A **Hivatkozás hozzáadása** párbeszédpanelen jelölje ki az útkövető gyökerét, majd kattintson az **OK** gombra.
@@ -81,7 +81,7 @@ Egy útkövetési modul a PDP-re való felvételéhez és a kötelező tulajdons
 
 [Navigációs menü modul](nav-menu-module.md)
 
-[Helyválasztó modul](site-selector.md)
+[Webhelyválasztó modul](site-selector.md)
 
 [Az alapértelmezett kategória-céloldal és keresési találatoldal áttekintése](category-search-page-overview.md)
 

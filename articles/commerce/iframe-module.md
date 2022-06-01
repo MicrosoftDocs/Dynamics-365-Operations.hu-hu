@@ -2,7 +2,7 @@
 title: iFrame modul
 description: Ez a témakör az iFrame modullal foglalkozik, és bemutatja, hogy hogyan lehet azt hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 11/04/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-ms.openlocfilehash: bce6a50e8c145f8961bd0c839fe16c1f4d69e811
-ms.sourcegitcommit: 408786b164b44bee4e16ae7c3d956034d54c3f80
+ms.openlocfilehash: eeb9d76367be6b2d2153578f6358594b807382ac
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 11/05/2021
-ms.locfileid: "7754014"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780234"
 ---
 # <a name="iframe-module"></a>iFrame modul
 
@@ -53,22 +53,25 @@ A következő kép példákat mutat be azokról az iFrame modulokról, amelyek k
 Ha fel szeretne venni egy iFrame modult egy oldalra egy külső videó bemutatásához, akkor kövesse az alábbi lépéseket.
 
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
-1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **Marketingsablon** elemet, majd válassza az **OK** gombot.
+1. Az Új **sablon párbeszédpanel** Sablon neve területén **adja** meg a **Marketingsablont**, majd válassza az **OK gombra.**
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
-1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a **Marketingsablon** sablonját. Az **Oldal neve** alatta adja meg a **Marketing oldalt**, majd kattintson az **OK** gombra.
-1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
+1. Az Új lap **létrehozása párbeszédpanel** Lap neve **területén** **adja meg a Marketing** lapot, majd válassza a Tovább **gombra**.
+1. A **Sablon kiválasztása mezőben válassza** ki **a létrehozott marketingsablont**, majd válassza a Tovább **gombra**.
+1. Az **Elrendezés kiválasztása oldalon válasszon** egy lapelrendezést (például **rugalmas** elrendezés), majd válassza **a Tovább lehetőséget**.
+1. Az Ellenőrzés **és befejezés lapon** ellenőrizze a lap konfigurációját. Ha szerkesztenie kell a lap adatait, válassza a Vissza **lehetőséget**. Ha a lap adatai helyesek, válassza a Létrehozás **lapot**. 
+1. Az új **lap főbejáratában** válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a** Tároló modult, majd válassza az **OK gombra.**
 1. A modul tulajdonságai ablaktáblában a **Szélesség** értéket állítsa **Tároló kitöltése** lehetőségre.
-1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **iFrame** modult, majd kattintson az **OK** gombra.
+1. A tárolóhelyen **válassza** ki a három pontból (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a keretmodult**, majd válassza az **OK gombra**.
 1. A modul tulajdonságai ablakban állítsa be a **Cél URL-cím** értékét egy külső URL-címre a videóhoz.
 1. Szükség szerint egyéb tulajdonságokat is megadhat, például **Fejlécet** és **Magasságot**.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot az oldal ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.
 1. Menjen a webhely marketing oldalára. Látnia kell, hogy a videó át lett renderelve az iFrame modulba.
 
 > [!NOTE]
-> Mivel a keretmodul külső tartalmat is lehetővé tesz, a webhely házirendnek gondoskodnia kell arról, hogy a keretmodulon belül tárolt tartalom ne sérti meg a tartalomkorlátozási házirendet az adott piacon. Ha a keretmodult használó lapon tartalom-megsértés történik, akkor a webhely szerzője eltávolíthatja a keretmodult, ha megnyitja az oldalt a webhelyszerkesztőben, kiválasztja a Modul eltávolítása gombra a keretmodulban, majd menti és újra közzéteszi az **·** oldalt.
+> Mivel a keretmodul külső tartalmat is lehetővé tesz, a webhely házirendnek gondoskodnia kell arról, hogy a keretmodulon belül tárolt tartalom ne sérti meg a tartalomkorlátozási házirendet az adott piacon. Ha a keretmodult használó lapon tartalom-megsértés történik, akkor a webhely szerzője eltávolíthatja a keretmodult, ha megnyitja az oldalt a webhelyszerkesztőben, **kiválasztja** a Modul eltávolítása gombra a keretmodulban, majd menti és újra közzéteszi az oldalt.
 
 ## <a name="additional-resources"></a>További erőforrások
 

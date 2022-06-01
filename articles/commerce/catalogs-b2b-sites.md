@@ -1,22 +1,22 @@
 ---
-title: Commerce katalógusok létrehozása B2B webhelyekhez
+title: Commerce-katalógusok létrehozása B2B webhelyekhez
 description: Ez a témakör azt ismerteti, hogyan lehet kereskedelmi katalógusokat létrehozni a Microsoft Dynamics 365 Commerce vállalathoz tartozó (B2B) webhelyek számára.
 author: ashishmsft
-ms.date: 04/28/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2022-02-28
-ms.openlocfilehash: 868f6bbeefeb1698bb136d52c09cebf293c95731
-ms.sourcegitcommit: 0abc777986112ea2332f5bf0e815b303b952356c
+ms.openlocfilehash: 7382062706c2de01c499ee05aeb0b45ff6fb37cb
+ms.sourcegitcommit: bca0cb730307948368a9aabe322cf963688ed8b1
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8657194"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782837"
 ---
-# <a name="create-commerce-catalogs-for-b2b-sites"></a>Commerce katalógusok létrehozása B2B webhelyekhez
+# <a name="create-commerce-catalogs-for-b2b-sites"></a>Commerce-katalógusok létrehozása B2B webhelyekhez
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "8657194"
 Ez a témakör azt ismerteti, hogyan lehet Kereskedelmi termékkatalógusokat létrehozni a Microsoft Dynamics 365 Commerce vállalat számára (B2B) webhelyek számára. A B2B webhelyek commerce katalógusai gyakran feltett kérdésekre adott válaszokkal [kapcsolatban lásd a Commerce Catalogs for B2B FAQ (Gyakori kérdések) című témakört](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
-> Ez a témakör a Dynamics 365 Commerce 10.0.26-os és későbbi verziókra vonatkozik.
+> Ez a témakör a Dynamics 365 Commerce 10.0.27-es és későbbi verziókra vonatkozik.
 
 A Commerce katalógusok segítségével azonosíthatja a B2B online áruházakban kínálni kívánt termékeket. Katalógus létrehozása esetén azonosítja azokat az online áruházakat, amelyekben a termékek felkínálják, hozzáadja a szerepelni kívánt termékeket, és árusítási részletek hozzáadásával javítja a termék kínálatát. Minden egyes B2B online áruházhoz több katalógust is létrehozhat.
 
@@ -42,7 +42,7 @@ A kereskedelmi termékkatalógusokkal a következő információkat lehet meghat
 - **Árcsoportok** – az adott katalógusra jellemző árakat és promóciókat konfigurálhatja. Ez a képesség a B2B-csatorna katalógusának meghatározásának alapvető oka. A katalógusok árcsoportja lehetővé teszi a szervezetek számára, hogy termékeket tegyenek elérhetővé a tervezett B2B szervezetek számára, és alkalmazzák a preferált árképzést és engedményeket. A konfigurált katalógusból rendelést vásárló B2B vevők a Commerce B2B webhelyre való bejelentkezés után különleges árakat és promóciókat kaphatnak. Katalógusspecifikus árak konfigurálása **érdekében** **válassza** ki az Árcsoportokat a Katalógusok lapon, ha egy vagy több árcsoportot a katalógushoz csatol. A katalógusból vevői rendelés esetén a rendszer az azonos árcsoporthoz kapcsolt valamennyi kereskedelmi megállapodást, árkorrekció-naplót és speciális engedményt alkalmazza. (Az speciális engedmények közé tartoznak a küszöbérték-, mennyiség- és kombinációs engedmények.) Az árcsoportokkal kapcsolatos további tudnivalókat lásd: [Árcsoportok](price-management.md#price-groups).
 
 > [!NOTE]
-> Ez a funkció a Dynamics 365 Commerce 10.0.26-os verzióban érhető el. A Commerce Headquarters **alkalmazásban** katalógusspecifikus konfigurációk – például navigációs hierarchia és vevőhierarchiák – konfigurálása érdekében nyissa meg a Szolgáltatáskezelés munkaterületét (**\>\> Rendszerfelügyelet – Munkaterületek funkciókezelés**), **engedélyezze több katalógus használatát a kiskereskedelmi csatornák szolgáltatásban,** majd futtassa a 1110 CDX-feladatot.**·**
+> Ez a funkció a Dynamics 365 Commerce 10.0.27-es verzióban érhető el. A Commerce Headquarters **alkalmazásban** katalógusspecifikus konfigurációk – például navigációs hierarchia és vevőhierarchiák – konfigurálása érdekében nyissa meg a Szolgáltatáskezelés munkaterületét (**\>\> Rendszerfelügyelet – Munkaterületek funkciókezelés**), **engedélyezze több katalógus használatát a kiskereskedelmi csatornák szolgáltatásban,** majd futtassa a 1110 CDX-feladatot.**·**
 
 ## <a name="catalog-process-flow"></a>Katalógus folyamatának folyamata
 
@@ -141,6 +141,6 @@ Ha egy katalógus Jóváhagyott **állapotú**, **·** **a** Katalógusok menü 
 
 ## <a name="additional-resources"></a>További erőforrások
 
-[A Commerce Katalógusok B2B testreszabásokkal kapcsolatos extensibility hatása](catalogs-b2b-sites-dev.md)
+[Commerce-katalógusok B2B-testreszabásokra vonatkozó bővíthetőségi hatása](catalogs-b2b-sites-dev.md)
 
-[Commerce catalogs for B2B – gyakori kérdések](catalogs-b2b-sites-FAQ.md)
+[Commerce-katalógusok B2B-hez – GYIK](catalogs-b2b-sites-FAQ.md)

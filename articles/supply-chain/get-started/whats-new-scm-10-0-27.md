@@ -10,12 +10,12 @@ ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
-ms.openlocfilehash: e8ec20c361f76a6012a7c8e1f03296007f5a05aa
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 77c79c88b08844bf7e399a762bb9eb9746ffb71a
+ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648165"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8812944"
 ---
 # <a name="preview-of-dynamics-365-supply-chain-management-10027-july-2022"></a>A Dynamics 365 Supply Chain Management 10.0.27 előzetes verziója (2022. július)
 
@@ -34,7 +34,7 @@ Ez a kiadás a következő táblázatban felsorolt funkciókat tartalmazza: Lehe
 
 | Szolgáltatásterület | Szolgáltatás | További információ | Engedélyezte:   |
 |---|---|---|---|
-| Készlet és logisztika | [Készletfelosztás a készlet láthatósági bővítménye számára](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | Hamarosan | Alapértelmezés szerint engedélyezve |
+| Készlet és logisztika | [Készletfelosztás a készlet láthatósági bővítménye számára](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/inventory-allocation-inventory-visibility-add-in) | [Készlet láthatóságának készletfelosztása](../inventory/inventory-visibility-allocation.md) | Alapértelmezés szerint engedélyezve |
 | Gyártás | Saját nap nézet a termelési üzem végrehajtási felületéhez | [Hogyan használják a dolgozók a termelés-végrehajtási felületet](../production-control/production-floor-execution-use.md)[és a szabadságegyenlegek megjelenítése a termelés emeletének végrehajtási felületén](../production-control/production-floor-execution-payroll-stats.md) | Funkciókezelés:<br>*Saját nap nézet a termelési üzem végrehajtási felületéhez* |
 | Tervezés | [Tervezési optimalizálás támogatása alvállalkozói szerződésekhez](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-subcontracting) | [Gyártás területén végzett alvállalkozói munka kezelése](../production-control/manage-subcontract-work-production.md) | Alapértelmezés szerint engedélyezve |
 
@@ -69,7 +69,7 @@ Nemrégiben hozzáadta vagy jelentősen frissítettük a következő súgótéma
 
 ### <a name="platform-updates-for-finance-and-operations-apps"></a>A Pénzügy és az Üzemeltetés alkalmazás platformfrissítései
 
-A Microsoft Dynamics 365 Supply Chain Management 10.0.27 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások 10.0.27-es verziójának Platformfrissítései (június 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).<!-- KFM Confirm link -->
+A Microsoft Dynamics 365 Supply Chain Management 10.0.27 platformfrissítéseket tartalmaz. A további [tudnivalókat lásd a Pénzügy és műveletek alkalmazások 10.0.27-es verziójának Platformfrissítései (június 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
 ### <a name="bug-fixes"></a>Hibajavítások
 

@@ -2,7 +2,7 @@
 title: Kiskereskedelmi csatorna beállítása
 description: Ez a témakör azt mutatja be, hogyan lehet egy új kiskereskedelmi csatornát létrehozni a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: samjarawan
-ms.date: 04/23/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: 6a8db8bb4b42c7ad6c0c0e0c257bc03e356de7d525f524c22eab46e38c018d49
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 74a4f0f61e0bbfd73d0006d3cf45863af6fef18f
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6745406"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770221"
 ---
 # <a name="set-up-a-retail-channel"></a>Retail-csatorna beállítása
 
@@ -90,6 +90,13 @@ A fizetési módok beállításához a csatornán támogatott valamennyi fizeté
 A következő kép egy példát mutat a készpénzfizetési módra.
 
 ![Fizetési módok – példa.](media/channel-setup-retail-5.png)
+
+Az alábbi kép egy példát mutat be a készpénzfizetési módra és az Összeg **lap** konfigurációra.
+
+![Példa az összegek fizetési mód beállításához.](media/payment-methods-recount.png)
+
+> [!NOTE]
+> Az Összeg lap **értékeit** a retail server gyorsítótárazza, és azok nem lépnek életbe azonnal az elosztási ütemezési feladatok futtatása után. Lehet, hogy újra kell indítania a felhőskála egységét, hogy azonnal alkalmazza ezeket az értékeket a teszteléshez.
 
 ### <a name="set-up-cash-declaration"></a>Készpénzelszámolás beállítása
 

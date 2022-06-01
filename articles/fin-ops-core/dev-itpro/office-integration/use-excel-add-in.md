@@ -2,7 +2,7 @@
 title: Az entitásadatok megtekintése és frissítése az Excel programmal
 description: Ez a témakör bemutatja, hogyan lehet megnyitni az entitásadatokat a Microsoft Excel programban, és hogyan lehet megtekinteni, frissíteni és szerkeszteni az adatokat az Excel Microsoft Dynamics Excel bővítményének segítségével.
 author: jasongre
-ms.date: 10/01/2021
+ms.date: 05/16/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 3b97c585009b50c6623036d10f54e78a65a89cea
-ms.sourcegitcommit: 3cb1f49a02e4a849fc34ffeb81fe507f0608b35e
+ms.openlocfilehash: f5090674fc4f7c49c55a8a12aea8c567545d519f
+ms.sourcegitcommit: 9f11ce4d24f546e96ab794a23479a43a89b742f0
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/22/2022
-ms.locfileid: "8464937"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8762639"
 ---
 # <a name="view-and-update-entity-data-with-excel"></a>Az entitásadatok megtekintése és frissítése az Excel programmal 
 
@@ -110,7 +110,7 @@ A tervező segítségével igazíthatja az oszlopokat, amelyek automatikusan ad�
 5. Ha hozzáadott egy mezőt (oszlop), kattintson a **Frissítés** lehetőségre egy frissített adatkészlet behúzásához.
 
 ## <a name="change-the-publish-batch-size"></a>A közzétételi köteg méretének módosítása
-Amikor a felhasználók az Excel-bővítmény segítségével közzéteszik az adatrekordok módosításait, a frissítéseket kötegben lehet benyújtani. A közzététel alapértelmezett kötegmérete 100 sor. A 10.0.17-es és újabb verziókban az **Excel bővítményben elérhető közzétételi kötegméret konfigurációjának engedélyezése** funkció rugalmas ellenőrzést biztosít a közzétételi kötegméret felett.
+Amikor a felhasználók az Excel-bővítmény segítségével közzéteszik az adatrekordok módosításait, a frissítéseket kötegben lehet benyújtani. A közzététel alapértelmezett (és maximális) mérete 100 sor; Ugyanakkor az Excel **bővítményben a közzétételi kötegméret konfigurálása lehetővé teszi a közzétételi köteg méretét, nagy rugalmasságot nyújt a közzététel kötegméretének csökkentésében, különösen akkor,** ha az Excelből frissítések közzétételére tett kísérletkor időkorlékokat lát.
 
 A rendszergazdák az egész rendszerre vonatkozó korlátozást meghatározhatnak a "Megnyitás Excelben" munkafüzetek közzétételi kötegméretére vonatkozóan, ha az **Office alkalmazásparaméterek** oldalának **Alkalmazásparaméterek** szakaszában meghatározzák a **Kötegkorlát közzététele** mezőt.
 

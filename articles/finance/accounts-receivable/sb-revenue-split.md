@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: jchrist
 ms.search.validFrom: 2021-11-05
 ms.dyn365.ops.version: 10.0.24
-ms.openlocfilehash: 5c2eb6c8e18770eb149c445f662ab7a90aad81a7
-ms.sourcegitcommit: 367e323bfcfe41976e5d8aa5f5e24a279909d8ac
+ms.openlocfilehash: 73dbc2242639a54d687506e7c325fec4b9a95d12
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/29/2022
-ms.locfileid: "8660514"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770154"
 ---
 # <a name="revenue-split-templates-in-subscription-billing"></a>Bevétel-felosztási sablonok előfizetési számlázásban
 
@@ -99,3 +99,54 @@ A következő lépések szerint hozhat létre olyan számlázási ütemezést, a
 > - A gyermekelemek automatikusan megjelennek az értékesítési rendelés vagy a számlázási ütemezés sorában.
 >
 > Ha a Bevétel felosztásának **automatikus** létrehozása beállítás Nem **beállításra** van állítva, a viselkedés magyarázata a korábbiak szerint történik.
+
+## <a name="additional-revenue-split-information"></a>További bevétel-felosztási információk
+
+Bevétel felosztása részeként hozzáad egy cikket, jegyezze fel a következő adatokat: 
+
+- A szülő összege nem halasztható.
+- A gyermekcikkek kezdő dátumán, záró dátumán, mennyiségén, egységén, telephelyén és raktári értékén a szülőcikk alapul. Ezek az értékek nem módosíthatók a gyermekelemeknél. A szülőcikken minden módosítást végre kell tenni. 
+- Az árképzési mód **7000** 000, ezért nem módosítható.
+- A gyermekelemek hozzáadhatók vagy eltávolíthatók.
+- A szülő- és a gyermekelemeknek ugyanazt a cikkcsoportot kell használniuk. 
+- A gyermekelemek a következő beállítások valamelyikét választhatják:
+
+    - A **Számlázási gyakoriság és** **a Számlázási intervallum** mezők értéke megegyezik a szülő cikk értékével. 
+    - A **Számlázási gyakoriság** mező beállítása **Egyszeres**. Ebben az esetben a Számlázási **intervallumok** mező automatikusan **1-et ad meg**. 
+
+- A gyermekelemek nettó összegének összege megegyezik a szülő összegével. Ha a felosztási mód Nulla **összeg**, a gyermekcikkösszegek és a szülőösszegek összege egyaránt 0 (nulla). 
+
+    > [!NOTE]
+    > Ha a felosztási **mód** Nulla szülőösszeg, a gyermekelemek (nem nulla) összege nem egyenlő a szülő összegével, amely 0 (nulla). Ez a felosztási mód belső célokat szolgál, hogy az alkalmazottak látják a gyermek cikkeket. A vevők azonban csak a szülőcikket láthatják.
+
+- Ha az értékesítési rendelés többelemes elrendezése (MEA) **egy**, akkor a szülő és gyermek cikkek hozzáadásakor létrejön a megfelelő többelemes bevételfelosztási tranzakciósor. 
+- Ha egy bevétel felosztási módja Egyenlő összeg, és módosul a **szülőösszeg**, a rendszer minden gyermeksor esetén újraszámítja az összegeket. 
+- Olyan bevételfelosztás esetén, ahol **a felosztási mód változó összeg**, a következő viselkedés történik:
+
+    - A szülőcikk nettó összege megjelenik a Szülő **összege oszlopban**. Az érték szerkeszthető. Az egységár, a nettó összeg és az engedmény azonban 0 (nulla) és nem szerkeszthető.
+    - A gyermekelemek egységára 0 (nulla). Az egységár és a nettó összeg szerkeszthető. Az egyik érték szerkesztésekor a másik automatikusan frissül.
+
+- Olyan bevételfelosztás esetén, ahol **a felosztási mód Százalék**, a következő viselkedés történik:
+
+    - A szülőcikk nettó összege megjelenik a Szülő **összege oszlopban**. Az érték szerkeszthető. Az egységár, a nettó összeg és az engedmény azonban 0 (nulla) és nem szerkeszthető. 
+    - A gyermekelemek nettó összegét a *szülő százalékos összegeként*&times;*számítja ki a program*.
+
+- Olyan bevételfelosztás esetén, ahol **a** felosztási mód egyenlő összeg, a következő viselkedés történik:
+
+    - A szülőcikk nettó összege megjelenik a Szülő **összege oszlopban**. Az érték szerkeszthető. Az egységár, a nettó összeg és az engedmény azonban 0 (nulla) és nem szerkeszthető. 
+    - A gyermekelemek nettó összegét úgy számítja ki a program, hogy a szülőösszeget egyenlően elosztja a gyermekelemek között. 
+    - Ha gyermek cikkeket távolít el vagy ad hozzá, akkor a nettó összeget és az egységárakat újraszámja a program, hogy az összes gyermeksor összege egyenlő legyen. 
+    - Ha a szülő összege nem osztható fel egyenlően, akkor az utolsó gyermekcikk nettó összege és egységára lehet egy kissé több vagy kevesebb, mint a többi gyermekcikk nettó összege és egységára. 
+
+- Olyan bevételfelosztás esetén, ahol **a felosztási mód Nulla** összeg, a következő viselkedés történik:
+
+    - Az egységár, a nettó összeg és az engedmény szerkeszthető. A szülő összege 0 (nulla), ezért nem szerkeszthető. 
+    - A gyermekcikkek mennyisége, egysége, telephelye és raktári értékei a szülő cikken alapulnak. A gyermekelemeknek nem lehet módosítani ezeket az értékeket. A szülőcikken minden módosítást végre kell tenni. 
+    - A gyermekelemek egységára és nettó ára 0 (nulla), ezért nem szerkeszthető. 
+
+- Olyan bevételfelosztás esetén, ahol **a felosztási mód Nulla szülőösszeg**, a következő viselkedés történik:
+
+    - A szülőcikk egységára, szülőösszege és nettó összege 0 (nulla).
+    - A számlázási ütemezésben a gyermeksorok úgy jelennek meg, mintha manuálisan hozzáadták volna őket, és minden érték frissítése a kiválasztott számlázási ütemezési csoport alapján történik. Ezek az értékek szerkeszthetők. Gyermek cikkek esetén elérhető **az Eszkaláció** **·** **és** engedmény, valamint a Speciális árképzés lehetőség a Megadott mennyiség, **Egységár**, **·** **·** **Engedmény és Nettó összeg mező használatával a Számlázási adatok megtekintése területen.** 
+    - Értékesítési rendelésnél a gyermeksorok 0 (nulla) engedmény- és engedményszázalékot kapnak. 
+    - Módosítani lehet a szülő és a gyermekelemek számlázási gyakoriságát, és az egyes sorok gyakorisága eltérő lehet. A szülőcikk azonban automatikusan frissül, hogy a gyermeksorok közül a legrövidebb gyakoriságot használja. Például a bevétel felosztása két gyermekelemet tartalmaz, **·** **amelyek** egyike a havi számlázási gyakoriságot, a másik pedig az éves számlázási gyakoriságot használja. Ebben az esetben a szülőcikk számlázási gyakorisága havira **módosul**.

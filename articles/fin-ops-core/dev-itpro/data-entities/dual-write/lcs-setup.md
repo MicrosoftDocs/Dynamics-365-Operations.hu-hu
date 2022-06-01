@@ -2,19 +2,19 @@
 title: Kettős írás beállítása a Lifecycle Services szolgáltatásból
 description: Ez a témakör bemutatja, hogyan lehet kettős írású kapcsolatot beállítani a Microsoft Dynamics Lifecycle Services (LCS) szolgáltatásból.
 author: laneswenka
-ms.date: 08/03/2021
+ms.date: 05/16/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
-ms.openlocfilehash: 825d6a4b3462077d0f4b3f4275792ea0fe5152df
-ms.sourcegitcommit: 4be1473b0a4ddfc0ba82c07591f391e89538f1c3
+ms.openlocfilehash: 53e82fbf8cff834c9eb0d14a0597561158b85fa1
+ms.sourcegitcommit: 6744cc2971047e3e568100eae338885104c38294
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8063672"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8783201"
 ---
 # <a name="dual-write-setup-from-lifecycle-services"></a>Kettős írás beállítása a Lifecycle Services szolgáltatásból
 
@@ -26,12 +26,12 @@ Ez a témakör bemutatja, hogyan lehet engedélyezni a kettős írást a Microso
 
 ## <a name="prerequisites"></a>Előfeltételek
 
-A következő témakörökben leírtak szerint végre kell hajtani a Power Platform-integrációt:
+A vevőknek az alábbi témakörökben Power Platform leírtak szerint kell végrehajtaniuk az integrációt:
 
-+ [Power Platform-integráció – engedélyezés a környezet telepítése során](../../power-platform/enable-power-platform-integration.md#enable-during-deploy)
-+ [Power Platform-integráció – engedélyezés a környezet telepítése után](../../power-platform/enable-power-platform-integration.md#enable-after-deploy)
+- Ha még nem használja, Microsoft Power Platform és a platform-funkciók hozzáadásával ki szeretné bonteni a Pénzügyi és műveleti környezetet, [Power Platform akkor lásd az Integráció – engedélyezés a környezet telepítése során](../../power-platform/enable-power-platform-integration.md#enable-during-deploy).
+- Ha már vannak környezetei Dataverse Power Platform és környezetei, és szeretné csatlakoztatni őket a Pénzügyi és műveleti környezetekhez, [Power Platform akkor tekintse meg az integrációt – engedélyezze a környezet telepítését követően](../../power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="set-up-dual-write-for-new-dataverse-environments"></a>Kettős írás beállítása az új Dataverse-környezetekhez
+## <a name="set-up-dual-write-for-new-or-existing-dataverse-environments"></a>Kettős írás beállítása új vagy meglévő környezetekhez Dataverse
 
 A kettős írás **Környezet részletes adatai** LCS-oldalról történő beállításához hajtsa végre a következő lépéseket:
 
@@ -53,30 +53,21 @@ A kettős írás **Környezet részletes adatai** LCS-oldalról történő beál
 
     :::image type="content" source="media/powerplat_integration_step3.png" alt-text="Összekapcsolás Power Platform-környezettel.":::
 
-8. Ha befejeződött az összekapcsolás, megjelenik egy hivatkozás. A hivatkozás segítségével jelentkezzen be a Finance and Operations környezet kettős írású adminisztrációs területére. Itt beállíthatja az entitások leképezését.
-
-## <a name="set-up-dual-write-for-an-existing-dataverse-environment"></a>Kettős írás beállítása meglévő Dataverse-környezetekhez
-
-Ha meglévő Dataverse-környezetben szeretne kettős írást beállítani, [támogatási jegyet](../../lifecycle-services/lcs-support.md) kell küldenie a Microsoftnak. A jegynek a következőket kell tartalmaznia:
-
-+ Az Ön Finance and Operations környezeti azonosítója.
-+ A környezet neve a Lifecycle Services szolgáltatásból.
-+ A Dataverse-szervezetazonosító, vagy a Power Platform-környezetazonosító a Power Platform Adminisztrációs központjából. A jegyben kérje, hogy az azonosító legyen a Power Platform-integrációhoz használt példány.
-
-> [!NOTE]
-> A környezetek nem csatolhatók le az LCS használatával. Egy környezet leválasztásához nyissa meg a **Adatintegráció** munkaterületet a Finance and Operations környezetben, majd válassza ki **Leválasztás**.
+8. Ha befejeződött az összekapcsolás, megjelenik egy hivatkozás. A hivatkozás segítségével jelentkezzen be a Pénzügy és műveletek környezet két írásos felügyeleti területére. Itt beállíthatja az entitások leképezését.
 
 ## <a name="linking-mismatch"></a>Kapcsolódási eltérés
 
-Lehetséges, hogy az Ön LCS-környezete egy Dataverse példányhoz, míg a kétírásos környezet egy másik Dataverse példányhoz kapcsolódik. Ez a kapcsolódási eltérés váratlan viselkedést okozhat, és a végén a rendszer rossz környezetbe küldhet adatokat. A kettős íráshoz a Power Platform integráció részeként létrehozott környezet használata ajánlott, és hosszú távon ez lesz az egyetlen módja a környezetek közötti kapcsolat létrehozásának.
+Lehetséges, hogy a kétírásos Dataverse környezet egy példányhoz kapcsolódik, miközben az LCS nincs beállítva integrációra Power Platform. Az ilyen csatolási eltérés nem várt viselkedést okozhat. Javasolt, hogy az LCS-környezet részletei megegyeznek azzal, amihez két írás alatt kapcsolódik, hogy ugyanazt a kapcsolatot használni tudja üzleti események, virtuális táblák és bővítmények.
 
-Ha a környezetben nem egyezik a kapcsolat, az LCS figyelmeztetést jelenít meg a környezet adatlapján, amely a következőhöz hasonló: "A Microsoft észlelte, hogy a környezet a kettős írás segítségével a Power Platform integrációban megadottól eltérő célhoz van kapcsolva, ami nem ajánlott":
+Ha környezete nem egyező a környezetben, az LCS egy figyelmeztetést mutat, amely hasonlít a környezeti részleteket tartalmazó lap következő példájához: "A Microsoft azt észlelte, hogy a környezete két írással kapcsolódik egy Power Platform másik célhoz, mint amit az integrációban meghatároztak, ami nem ajánlott."
 
 :::image type="content" source="media/powerplat_integration_mismatchLink.png" alt-text="Power Platform integrációs kapcsolat nem egyező.":::
 
-Ha ezzel a hibával találkozik, az Ön igényei alapján két lehetősége van:
+Ha megkapja ezt a figyelmeztetést, próbálkozzon a következő megoldások egyikével:
 
-+ [A kétírásos környezetek összekapcsolásának feloldása és újbóli összekapcsolása (összekapcsolás visszaállítása vagy módosítása)](relink-environments.md#scenario-reset-or-change-linking) az LCS-környezet adatlapján megadottak szerint. Ez az ideális megoldás, mert a Microsoft támogatása nélkül is futtatható.  
-+ Ha a kapcsolatot továbbra is kettős írással szeretné fenntartani, kérhet segítséget a Microsoft ügyfélszolgálattól a Power Platform integráció módosításához, hogy a meglévő Dataverse környezetet használja az előző szakaszban dokumentáltak szerint.  
+- Ha az LCS-környezet még Power Platform nincs beállítva integrációra, Dataverse az ebben a cikkben található utasítások szerint kapcsolódhat a két írásban konfigurált példányhoz.
+- Ha az LCS-környezet Power Platform már be van állítva integrációra, akkor fel kell szabad szünnni a kettős írást, és újracsatlakozni az LCS [által megadotthoz az Eset: Visszaállítás vagy a csatolás módosítása](relink-environments.md#scenario-reset-or-change-linking) segítségével.
+
+A múltban egy manuális támogató jegy rendelkezésre áll, de ez a fenti 1. lehetőségnél korábbi volt.  A Microsoft már nem támogatja a manuális újrakapcsolati kéréseket a támogatási webhelyről.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]

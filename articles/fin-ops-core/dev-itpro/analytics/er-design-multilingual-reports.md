@@ -2,7 +2,7 @@
 title: Többnyelvű jelentések tervezése elektronikus jelentésekben
 description: Ez a témakör azt mutatja be, hogyan lehet használni az elektronikus jelentések (ER) címkéit a többnyelvű jelentések tervezéséhez és létrehozásához.
 author: NickSelin
-ms.date: 11/30/2021
+ms.date: 04/28/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: eab17635494657740fe46364bde0773dae5b9e4b
-ms.sourcegitcommit: 8bcb9c13eccb14e61c39ca6578d135b64090fad2
+ms.openlocfilehash: aa8297d4f5c56a7a20561b1a90c5852e65dbff31
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8313691"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811607"
 ---
 # <a name="design-multilingual-reports-in-electronic-reporting"></a>Többnyelvű jelentések tervezése elektronikus jelentésekben
 
@@ -46,7 +46,7 @@ A nyelvtől függő erőforrásokat beállíthatja ER-címkékként. Ezeket a c�
 
 A ER-címkék konfigurálható minden olyan ER-[konfigurációban](general-electronic-reporting.md#Configuration), amely különböző összetevőket tartalmaz. A címkék önállóan karbantarthatók az ER-adatmodellek, a ER-modell-hozzárendelések és ER-formátumú-összetevők konfigurált logikájától.
 
-Minden ER-címkét egy olyan azonosító azonosít, amely a címkét birtokló ER-konfigurációban egyedi. Minden címke tartalmazhatja a Microsoft Dynamics 365 Finance jelenlegi példánya által támogatott összes nyelvhez tartozó címkeszöveget. Ezek a támogatott nyelvek magukban foglalják a telepített testreszabások nyelvét.
+Minden ER-címkét egy olyan azonosító azonosít, amely a címkét birtokló ER-konfigurációban egyedi. Minden címke tartalmazhat címkeszöveget minden olyan nyelvhez, Microsoft Dynamics amelyet támogat a 365 Pénzügy jelenlegi példánya. Ezek a támogatott nyelvek magukban foglalják a telepített testreszabások nyelvét.
 
 ## <a name="entry"></a>Bejegyzés
 
@@ -81,7 +81,7 @@ Ha ilyen módon konfigurálnak egy ER-adatmodellt, akkor a program a tartalmat a
 
 ### <a name="model-mapping-component"></a>Modell-leképezési összetevő
 
-Mivel az ER-modell-leképezés egy ER-adatmodellen alapul, a hivatkozott adatmodell-elemek címkéi a felhasználó preferált nyelvén jelennek meg a modell-leképezés tervezőjében. A következő ábra azt mutatja be, hogyan történik a **PurchaseOrder** mező jelentésének leírása a szerkeszthető modell hozzárendelésében a megadott adatmodellhez hozzáadott **Leírás** attribútum címkéjének használatával. Figyelje meg, hogy ez a címke a felhasználó preferált nyelvén jelenik meg (ebben a példában ez a DE-AT).
+Mivel az ER modell megfeleltetése egy ER-adatmodellen alapul, a hivatkozott adatmodellelemek címkéi megjelennek a felhasználó által a modellleképezés-tervezőben előnyben részesített nyelven. A következő ábra azt mutatja be, hogyan történik a **PurchaseOrder** mező jelentésének leírása a szerkeszthető modell hozzárendelésében a megadott adatmodellhez hozzáadott **Leírás** attribútum címkéjének használatával. Figyelje meg, hogy ez a címke a felhasználó preferált nyelvén jelenik meg (ebben a példában ez a DE-AT).
 
 ![Az ER-modell-leképezéstervező kinézete olyan felhasználóhoz, akinek a preferált nyelve a DE-AT.](./media/er-multilingual-labels-show-mapping.png)
 
@@ -89,7 +89,7 @@ Amikor a **Címke** attribútuma a **Felhasználó bemeneti paramétere** adatfo
 
 ### <a name="format-component"></a>Formátum összetevője
 
-Ha beállít egy ER-formátumot, akkor felveheti a szükséges ER-címkéket a számára. Minden konfigurált adatforrás **Címke** és **Súgószöveg** attribútumai csatolhatók az ER-formátumhoz hozzáadott ER-címkéhez. Az **Címke** és **Leírás** attribútuma az összes <a id="LinkFormatEnum"></a>formátum számbavételi értéknek is kapcsolható egy olyan ER-címkéhez, amely a szerkeszthető ER-formátumból érhető el.
+Ha beállít egy ER-formátumot, akkor felveheti a szükséges ER-címkéket a számára. Minden konfigurált adatforrás **Címke** és **Súgószöveg** attribútumai csatolhatók az ER-formátumhoz hozzáadott ER-címkéhez. Minden **formátum** enumerációs **·**<a id="LinkFormatEnum"></a> érték címke- és leírásattribútumát egy szerkeszthető ER-formátumból elérhető ER-címkéhez is lehet kapcsolni.
 
 > [!NOTE]
 > Ezeket az attribútumokat a szülő ER-adatmodell ER-címkéjéhez is csatolhatja, amely a modell címkéit újra felhasználja az ehhez az ER-adatmodellhez konfigurált minden ER-formátumban.
@@ -218,6 +218,11 @@ A szerkeszthető ER-összetevők címkéit a rendszer az összetevő egyéb tart
 
 Egy alapszintű ER-összetevő címkéi hivatkozhatók a módosítások bevezetéséhez létrehozott ER-komponens származtatott verziójában.
 
+> [!TIP]
+> ER-megoldás megtervezésekor a saját ER [adatmodell](er-overview-components.md#data-model-component)-összetevőt a megadott összetevőből származtathatja. Ebben a származtatott adatmodellben saját ER címkéket mutathat be, és azokat felhasználhatja minden OLYAN ER formátumban, amely az adatmodellt fogja adatforrásként használni. Ezután a származtatott ER adatmodellből származtathatja a saját ER [formátumösszetevőt](er-overview-components.md#format-component), amely a megadott helyett a származtatott ER adatmodellt biztosítja. A 10.0.28-as **és újabb verziókban a növekvő ER adatmodell funkció címkéihez továbbfejlesztett hozzáféréssel lehet hozzáférni a növekvő ER** adatmodell címkéihez, még akkor is, ha a származtatott ER-összetevőhöz választott ER-adatmodell eltér az ER alapösszetevő címkéitől.
+>
+> Ha ugyanaz a címkenév van használva a származtatott összetevőben és növekvő összetevőiben, akkor a program a címke fordítását használja leginkább.
+
 Az ER-verziószámozása vezérli az ER-összetevőben bármely attribútumához való címke-hozzárendelést. A címke-hozzárendelés módosításait a program rögzíti egy olyan szerkeszthető ER-komponens változásainak (delta) a listájában, amelyek a megadott ER-összetevő származtatott változataként lett létrehozva. Ezek a módosítások akkor lesznek ellenőrizve, ha a származtatott verzió új alapverzióra lesz alapozva.
 
 ## <a name="functions"></a>Funkciók
@@ -240,9 +245,9 @@ Ha vázlatról készre módosítja egy **ER** **konfigurációs** verzió állap
 
 Javasoljuk, hogy engedélyezze az ER címkék **gyorsított tárolási funkcióját** a Funkciókezelés munkaterületén **.** Ezzel a funkcióval javítható a hálózati sávszélesség kihasználtsága és a teljes rendszerteljesítmény, mivel a legtöbb esetben csak az egy nyelvű ER címkék használatosak egyetlen ER-konfiguráció használata esetén.
 
-A kiválasztott tárolási sémának a currenet Pénzügy példányán található összes ER-konfiguráció címkéinek tárolására való alkalmazásához kövesse az alábbi lépéseket.
+A kiválasztott tárolási sémának az aktuális Pénzügyi példányban található összes ER-konfiguráció címkéinek tárolására való alkalmazásához kövesse az alábbi lépéseket.
 
-1. Menjen a **Szervezet felügyeletePeriodicApply** > **elemhez** > **a kiválasztott címkéket, amelyek az összes ER-konfiguráció sémáját tják**.
+1. Ugrás a Szervezet **felügyelete** > **– Időszakos** > **a kijelölt címkék tárolósémának alkalmazása minden ER-konfigurációra**.
 2. Válassza ki az **OK** lehetőséget.
 
 

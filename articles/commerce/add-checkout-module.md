@@ -2,7 +2,7 @@
 title: Fizetésmodul
 description: Ez a témakör egy fizetésmodul egy laphoz való hozzáadásának és a kötelező tulajdonságok beállításának módját mutatja be.
 author: anupamar-ms
-ms.date: 08/31/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 031c70181e0dff9bc81450d2454f21e1dbaf1285d41b38ff6f7df6045923c27c
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 0d022ad98603b489a133a5b9f2326677e9ebb307
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715506"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780514"
 ---
 # <a name="checkout-module"></a>Fizetésmodul
 
@@ -91,14 +91,14 @@ A legtöbb fizetési információt (például a szállítási címet és a szál
 A fizetésmodul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
 1. Lépjen a **Töredékek** pontra, és válassza az **Új** lehetőséget új töredék létrehozásához.
-1. Az **Új töredék** párbeszédpanelen válassza ki a **Fizetés** modult.
+1. A Részlet kiválasztása párbeszédpanelen **válassza ki a** Pénztár modult **.**
 1. A **Töredék neve** pontban adja meg a **Fizetési töredék** nevet, majd válassza az **OK** lehetőséget.
 1. Válassza ki a **Pénztár modul** helyet.
 1. A jobb oldali tulajdonságok ablaktáblán válassza ki a ceruza szimbólumot, adja meg a címsor szövegét a mezőben, majd jelölje be a pipa jelet.
-1. Az **Fizetési információk** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Szállítási cím**, **Szállítási lehetőségek**, **Pénztár rész tárolója** és a **Kapcsolattartási adatok** modulokat, majd kattintson az **OK** gombra.
-1. Az **Fizetési szakasz tárolója** modulban válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza az **Ajándékkártya** **Hűség** és **Fizetés** modulokat majd kattintson az **OK** gombra. Így biztosíthatja, hogy az összes fizetési mód együtt jelenjen meg egy szakaszban.
+1. A Pénztár adatai **pontnál** válassza ki a három pontból (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki a Szállítási **cím,** **a** Szállítási beállítások, a **Pénztár szakasz** tárolóját és **a** Kapcsolattartási adatok modulokat, **majd válassza az OK gombra.**
+1. A Pénztár **szakasz tárolómodulban** válassza ki a három pontból (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
+1. A Modulok kiválasztása párbeszédpanelen válassza ki az Ajándékutalvány, **·** **·** **a** Hűség és a Fizetés modult, majd kattintson **az OK gombra.** **·** Így biztosíthatja, hogy az összes fizetési mód együtt jelenjen meg egy szakaszban.
 1. A **Feltételek és kikötések** helyen adja meg a **Fizetési feltételek és kikötések** modult, ha ez szükséges. A modul tulajdonságai ablakban adja meg a szerkessze meg a feltételek és kikötések szövegét szükséges esetben.
 1. Válassza a **Mentés** lehetőséget, majd a töredék előnézetének megtekintéséhez az **Előnézet** elemet. Előfordulhat, hogy egyes modulok nem jelennek meg az előnézetben, mert nem rendelkeznek kosárkontextussal.
 1. Válassza a **Szerkesztés befejezése** parancsot a töredék ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez.

@@ -2,7 +2,7 @@
 title: Online és offline pénztár (POS) műveletek
 description: Ez a témakör ismerteti a pénztár (POS) műveleteit Dynamics 365 Commerce alkalmazásban. Azt adja meg, ahol az alkalmazás a műveletek meghívhatók, és azt, hogy offline módban érhető el.
 author: jblucher
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.openlocfilehash: dc281a691b34731fb0b5986222b41b436912c782
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 7e4556ad11cbea0cb8fb3c5447116a1b54576e17
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740682"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811202"
 ---
 # <a name="online-and-offline-point-of-sale-pos-operations"></a>Online és offline pénztár (POS) műveletek
 
@@ -44,7 +44,7 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 > [!NOTE]
 > Az alább felsorolt műveletek a legújabb Commerce rendszerre vonatkoznak. Bizonyos műveletek megváltozhattak, vagy nem állnak rendelkezésre a termék korábbi verzióiban.
 
-| Azonosító   | Művelet                                         | Leírás                                                                                                                                                                                                    | Felhasználói művelet?    | Tranzakciós képernyő | Üdvözlőképernyő | Elérhető kapcsolat nélkül? | Területspecifikus |
+| Azonosító   | Művelet                                         | Leírás                                                                                                                                                                                                    | Felhasználói műveletek    | Tranzakciós képernyő | Üdvözlőképernyő | Elérhető kapcsolat nélkül? | Területspecifikus |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |
 | 100  | Termékértékesítés                                      | Meghatározott termék hozzáadása a tranzakcióhoz.                                                                                                                                                                    | Igen            | Igen                | Igen            | Igen               | Nem              |
 | 101  | Árkeresés                                       | Egy adott termék árának ki keresse meg.                                                                                                                                        | Igen            | Igen                | Igen            | Igen               | Nem              |
@@ -273,11 +273,11 @@ A következő oszlopok megadása, amennyiben a műveletek meghívhatók:
 | 1219 | URl megnyitása a pénztárban                                   | Rendszergazda által konfigurált URL-cím megnyitása a POS-terminálon                                                                                                                                                                           | Igen            | Igen                | Igen            | Igen               | Nem              |
 | 1220 | Széfes kezelés                                       | A különféle pénztárgépekkel kezelhető széf.                                                                                                                                                                       | Igen            | Igen                | Igen            | Igen               | Nem              |
 | 1221 | Felfüggesztett tranzakciók érvénytelenítése                       | Felfüggesztett tranzakciók érvénytelenítése                                                                                                                                                                               | Igen            | Igen                | Igen            | Igen               | Nem              |
-| 1300 | Pénzügyi regisztráció kihagyása                          | Pénzügyi regisztráció kihagyása.                                                                                                                                                                                       | Igen            | Igen                | Igen            | Igen               | Igen             |
-| 1301 | Pénzügyi esemény regisztráltként való megjelölése                      |  Pénzügyi esemény megjelölése regisztráltként.                                                                                                                                                                                  | Igen            | Igen                | Igen            | Igen               | Igen             |
-| 1302 | Pénzügyi regisztrációs folyamat befejezése              | A pénzügyi nyilvántartási folyamat befejezése.                                                                                                                                                                           | Igen            | Igen                | Igen            | Igen               | Igen             |
-| 1303 | Állapot-ellenőrzési hiba kihagyása                           | Állapot-ellenőrzés hiba kihagyása.                                                                                                                                                                                        | Igen            | Igen                | Igen            | Igen               | Igen             |
-| 1304 |  Pénzügyi regisztráció elhalasztása                     | Pénzügyi regisztráció elhalasztása.                                                                                                                                                                                  | Igen            | Igen                | Igen            | Igen               | Igen             |
+| 1300 | Pénzügyi regisztráció kihagyása                          | Pénzügyi regisztráció kihagyása.                                                                                                                                                                                       | Nem            | Nem                | Nem            | Igen               | Nem             |
+| 1301 | Pénzügyi esemény regisztráltként való megjelölése                      |  Pénzügyi esemény megjelölése regisztráltként.                                                                                                                                                                                  | Nem            | Nem                | Nem            | Igen               | Nem             |
+| 1302 | Pénzügyi regisztrációs folyamat befejezése              | A pénzügyi nyilvántartási folyamat befejezése.                                                                                                                                                                           | Nem            | Nem                | Igen            | Igen               | Igen             |
+| 1303 | Állapot-ellenőrzési hiba kihagyása                           | Állapot-ellenőrzés hiba kihagyása.                                                                                                                                                                                        | Igen            | Igen                | Igen            | Igen               | Nem             |
+| 1304 |  Pénzügyi regisztráció elhalasztása                     | Pénzügyi regisztráció elhalasztása.                                                                                                                                                                                  | Nem            | Nem                | Nem            | Igen               | Nem             |
 | 1400 | Ellenőrzőlisták és feladatok kezelése                       | Az alkalmazotti ellenőrzőlista és a feladatok kezelése.                                                                                                                                                                        | Nem             | Nem                 | Igen            | Nem                | Nem              |
 | 2000 | Ütemezéskezelés                               | Ez a művelet még nem támogatott.                                                                                                                                                                           | Igen            | Igen                | Igen            | Nem                | Nem              |
 | 2001 | Kérelmek ütemezése                                 | Ez a művelet még nem támogatott.                                                                                                                                                                           | Igen            | Igen                | Igen            | Nem                | Nem              |

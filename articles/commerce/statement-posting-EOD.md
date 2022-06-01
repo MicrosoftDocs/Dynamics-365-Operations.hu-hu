@@ -2,19 +2,19 @@
 title: Kimutatásfeladás funkcionalitás továbbfejlesztései
 description: Ez a témakör leírja a kimutatásfeladási funkción végrehajtott javításokat.
 author: analpert
-ms.date: 04/27/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: analpert
 ms.search.validFrom: 2018-04-30
-ms.openlocfilehash: be9aa68aec1fd7deff315234a6dbf41edc3d6819
-ms.sourcegitcommit: 9e1129d30fc4491b82942a3243e6d580f3af0a29
+ms.openlocfilehash: f3937ee7b34b7204c31d922900029ae3a2c59e18
+ms.sourcegitcommit: 2b4ee1fe05792332904396b5f495d74f2a217250
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8649019"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8770140"
 ---
 # <a name="improvements-to-statement-posting-functionality"></a>Kimutatásfeladás funkcionalitás továbbfejlesztései
 
@@ -151,6 +151,9 @@ Az összesített tranzakciók nézet a következő juttatásokat biztosítja:
 - A felhasználók rálátást kapnak, hogy hogyan vannak összesítve a tranzakciók.
 - A felhasználó teljes auditnaplóval rendelkezik, a tranzakcióktól az értékesítési rendelésekig és az értékesítési számlákig. Az auditnapló nem áll rendelkezésre az örökölt kimutatásfeladási szolgáltatásban.
 - Az összesített XML-fájl megkönnyíti a problémák azonosítását az értékesítési rendelések létrehozása és számlázása során.
+
+> [!NOTE]
+> Ha összesíti a tranzakciókat, **akkor** a tranzakcióhoz hozzárendelt munkatárs többé nem lesz elérhető a legfelső személyzeti értékesítési jelentés számára, ami azt jelenti, **hogy** a fő személyzeti jelentés nem mutatja meg az összes tranzakciót. Javasoljuk, hogy az **összesített tranzakciókat ne használja a személyzet legfontosabb** értékesítési jelentésében.
 
 ### <a name="journal-vouchers"></a>Naplóbizonylatok
 

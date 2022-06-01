@@ -2,35 +2,32 @@
 title: Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján
 description: Ez a témakör azt mutatja be, hogyan lehet beállítani olyan Microsoft Dynamics 365 Commerce e-kereskedelmi oldalt, amely az URL-paraméterek alapján szolgáltat dinamikus tartalmat.
 author: StuHarg
-ms.date: 01/28/2021
+ms.date: 05/27/2022
 ms.topic: article
-ms.prod: ''
-ms.technology: ''
-ROBOTS: ''
-audience: Application user
-ms.reviewer: v-chgri
-ms.custom: ''
-ms.assetid: ''
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: global
 ms.author: stuharg
 ms.search.validFrom: 2019-09-30
-ms.dyn365.ops.version: 10.0.17
-ms.openlocfilehash: 348fdb30f4d0104e80bea5235c1e337b9f977311
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.openlocfilehash: 3443dad9ead40b59da994c56e22fe2599f4bac82
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8694340"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811031"
 ---
 # <a name="create-dynamic-e-commerce-pages-based-on-url-parameters"></a>Dinamikus e-kereskedelmi oldalak létrehozása URL-paraméterek alapján
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 Ez a témakör azt mutatja be, hogyan lehet beállítani olyan Microsoft Dynamics 365 Commerce e-kereskedelmi oldalt, amely az URL-paraméterek alapján szolgáltat dinamikus tartalmat.
 
-Az e-kereskedelmi oldalak különböző tartalmak nyújtására konfigurálhatók az URL elérési útjának egy szegmense alapján. Ennek megfelelően az oldal dinamikus oldalként ismert. A szegmenst a program paraméterként használja az oldal tartalmának beolvasására. Létrehoznak például egy **blog\_viewer** nevű lapot, amelyet a `https://fabrikam.com/blog` URL-címhez társítanak. Ezen a lapon különböző tartalmak láthatók az URL elérési útjának utolsó szegmense alapján. A `https://fabrikam.com/blog/article-1` URL utolsó szegmense például: **article-1**.
+Az e-kereskedelmi oldalak különböző tartalmak nyújtására konfigurálhatók az URL elérési útjának egy szegmense alapján. Ennek megfelelően az oldal dinamikus oldalként ismert. A szegmenst a program paraméterként használja az oldal tartalmának beolvasására. Például egy webhelyszerkesztőben **létrehozott lap, amely a Viewer Viewer\_** nevet tartalmazza, az URL-címhez lesz hozzárendelve `https://fabrikam.com/blog`. Ezen a lapon különböző tartalmak láthatók az URL elérési útjának utolsó szegmense alapján. A `https://fabrikam.com/blog/article-1` URL utolsó szegmense például: **article-1**.
 
-Az URL elérési útjában található szegmenseihez különálló, a dinamikus oldalt felülbíráló egyéni lapok is társíthatók. Létrehoznak például egy **blog\_summary** nevű lapot, amelyet a `https://fabrikam.com/blog/about-this-blog` URL-címhez társítanak. Az URL lekérése esetén a rendszer az **about-this-blog** paraméterrel társított **blog\_summary** oldalt jeleníti meg a **blog\_viewer** oldal helyett.
+A paraméterezett URL-szegmenst a webhelyszerkesztő oldalával is felülbírálhatja. Például az URL-címhez hozzárendelhet egy webhelyszerkesztőben létrehozott **lapot, és elnevezi az\_** összegzést `https://fabrikam.com/blog/about-this-blog`. Amikor az `https://fabrikam.com/blog` URL-címet a `/about-this-blog` végén található szegmenssel kérik, **\_**`/about-this-blog` akkor a rendszer visszaadja az összegzési lap tartalmát, és nem azt a szegmenst, amelyet paraméterként értelmez a lap.`https://fabrikam.com/blog` 
+
+Amikor kiválasztja a dinamikus lapnak átadva kívánt paraméterek nevét, az URL-címben megjelenő dinamikus lap neve (`/blog` a fenti példában) nem használható paraméternévként vagy paraméternév alhálózataként. 
 
 > [!NOTE]
 > A dinamikus oldal tartalmának tárhelyre, beolvasásra és megjelenítésre vonatkozó funkcióit egy egyéni modul használatával valósítják meg. További információt az [Online csatorna bővíthetősége](e-commerce-extensibility/overview.md) című témakörben talál.
@@ -60,7 +57,7 @@ A dinamikus oldalra mutató útvonal Commerce webhelykészítőben történő ko
 1. A **Paraméterezett URL elérési utak** mezőben válassza a **Hozzáadás** lehetőséget, majd adja meg az URL létrehozásakor megadott URL elérési utat (ebben a példában: **/blog**).
 1. Válassza a **Mentés és közzététel** lehetőséget.
 
-Az útvonal konfigurálása után a paraméterezett URL elérési úthoz tartozó összes kérés az adott URL-hez társított oldalt tölti be. Ha a kérések egy további szegmenst tartalmaznak, a társított lap megjelenik, és az oldal tartalmának beolvasása a szegmens használatával történik paraméterként. A `https://fabrikam.com/blog/article-1` például a **blog\_summary** oldalt jeleníti meg, az oldal tartalmának betöltése pedig az **/article-1** paraméterrel történik.
+Az útvonal konfigurálása után a paraméterezett URL elérési úthoz tartozó összes kérés az adott URL-hez társított oldalt tölti be. Ha a kérések egy további szegmenst tartalmaznak, a társított lap megjelenik, és az oldal tartalmának beolvasása a szegmens használatával történik paraméterként. Visszaadja például azt a `https://fabrikam.com/blog/article-1``https://fabrikam.com/blog` lapot, **amely a /article-1 paraméterrel beolvasott tartalmat jeleníti** meg.
 
 ## <a name="override-a-parameterized-url-with-a-custom-page"></a>Paraméterezett URL elérési út felülbírálása egyéni oldal használatával
 

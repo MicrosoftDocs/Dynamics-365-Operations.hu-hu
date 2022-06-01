@@ -2,7 +2,7 @@
 title: Tárolómodul
 description: Ez a témakör a tárolómodulokkal foglalkozik, és bemutatja, hogy hogyan lehet őket hozzáadni webhelyek lapjaihoz a Microsoft Dynamics 365 Commerce alkalmazásban.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,12 +14,12 @@ ms.search.industry: ''
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 752d0ddc6f666a5d96a2593c8c246a82dc7e1de2fd4bd2356a275222d7abec29
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: aa4bf7523acee06e91f0ebb983dd8777dec4bac5
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6715440"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780714"
 ---
 # <a name="container-module"></a>Tárolómodul
 
@@ -98,17 +98,20 @@ További tulajdonságok használhatók a különböző megtekintési területek 
 A tárolómodul új oldalra való felvételéhez és a kötelező tulajdonságok beállításához hajtsa végre az alábbi lépéseket.
 
 1. Lépjen a **Sablonok** pontra, majd új sablon készítéséhez válassza az **Új** elemet.
-1. Az **Új sablon** párbeszédablakban a **Sablon neve** alatt adja meg a **Tárolósablon** elemet, majd válassza az **OK** gombot.
-1. A **Törzs** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Alapértelmezett oldal** modult, majd kattintson az **OK** gombra.
+1. Az Új **sablon párbeszédpanel** Sablon neve listájában **adja** meg a **Tároló** sablont, majd válassza az **OK gombra**.
+1. Válassza ki a **három** pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget** a Törzsnél.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **az Alapértelmezett** lap modult, majd kattintson az **OK gombra**.
 1. Válassza a **Mentés** elemet, válassza a **Szerkesztés befejezése** parancsot a sablon ellenőrzéséhez, majd a **Közzététel** elemet a közzétételhez. 
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
-1. A **Sablon kiválasztása** párbeszédpanelen válassza ki a létrehozott videólejátszó-sablont. Az **Oldal neve** alatta adja meg a **Tároló oldalt**, majd kattintson az **OK** gombra.
-1. Az új oldal **Fő** helyén válassza ki a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
+1. Adja meg **a Tároló lap nevét az Új** **oldal létrehozása párbeszédpanelEn,** **majd válassza a** Tovább **lehetőséget**.
+1. A **Sablon kiválasztása mezőben válassza** ki **a** létrehozott tárolósablont, majd válassza a Tovább **lehetőséget**.
+1. Az **Elrendezés kiválasztása oldalon válasszon** egy lapelrendezést (például **rugalmas** elrendezés), majd válassza **a Tovább lehetőséget**.
+1. Az Ellenőrzés **és befejezés lapon** ellenőrizze a lap konfigurációját. Ha szerkesztenie kell a lap adatait, válassza a Vissza **lehetőséget**. Ha a lap adatai helyesek, válassza a Létrehozás **lapot**. 
+1. Az új **lap főbejáratában** válassza ki a három pontból (**...**), **majd válassza a Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a** Tároló modult, majd válassza az **OK gombra.**
 1. A tárolómodul tulajdonságlapján adja meg az **Oszlopok száma** tulajdonságnak az **1**, a **Szélesség** tulajdonságnak pedig a **Tároló kitöltése** értéket.
-1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tartalomblokk** modult, majd kattintson az **OK** gombra.
+1. A tárolóhelyen **válassza** ki a három pontból (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki a **Tartalomblokk** modult, majd válassza az **OK gombra.**
 1. A szövegblokkmodul tulajdonságlapján konfigurálja a címsort, a képet és az elrendezést.
 1. Válassza a **Mentés** lehetőséget, majd az oldal előnézetének megtekintéséhez az **Előnézet** elemet. Egy olyan funkciómodult kell látnia, amely a tárolómodul szélességének felel meg.
 1. A tárolómodul tulajdonságlapján módosítsa az **Oszlopok száma** tulajdonságot **3** értékre.

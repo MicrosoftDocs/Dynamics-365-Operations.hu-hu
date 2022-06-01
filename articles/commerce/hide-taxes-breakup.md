@@ -1,22 +1,22 @@
 ---
-title: Adó-lebontó adatok elrejtése a rendelés összegzésében
+title: Adózásrészletezési információk elrejtése a rendelésösszesítésekben
 description: Ez a témakör azt írja le, hogyan lehet elrejteni az adó-lebontást a bevásárlókocsi, a pénztár, a rendelés-visszaigazolás és a rendelés részletező oldalait tartalmazó rendelési összefoglalókban Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 04/21/2022
+ms.date: 05/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-03-28
-ms.openlocfilehash: 9890b5cd92f8c07e6feabb26f4fdd076cb7a02bc
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 9a0bff7afaa10e49ec05f18e2b0fae7a19b5e8af
+ms.sourcegitcommit: 48d094d083c1bd45c3d72f8b666926b48ec7ae35
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8648133"
+ms.lasthandoff: 05/18/2022
+ms.locfileid: "8767814"
 ---
-# <a name="hide-tax-breakup-information-in-order-summaries"></a>Adó-lebontó adatok elrejtése a rendelés összegzésében
+# <a name="hide-tax-breakup-information-in-order-summaries"></a>Adózásrészletezési információk elrejtése a rendelésösszesítésekben
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
@@ -33,7 +33,7 @@ A következő ábra két rendelési összegzés példáját mutatja be. Az első
 > - **A** rendelési összegzésekben az adó-lebontást el lehet rejteni, csak akkor érhető el, ha az e-commerce **csatorna** Árak tartalmazzák az áfa beállítását a Commerce Headquarters Igen beállításánál a **Retail és Commerce \> Channels \> Minden \>** üzletben. 
 > - Alapértelmezés szerint a Helyszerkesztőben **engedélyezve van az Adók lebontva** megjelenítése a rendelésösszegzésben beállítás.
 
-## <a name="hide-tax-breakup-information-in-order-summaries"></a>Adó-lebontó adatok elrejtése a rendelés összegzésében
+## <a name="hide-tax-breakup-information-in-order-summaries"></a>Adózásrészletezési információk elrejtése a rendelésösszesítésekben
 
 A következő lépések szerint rejtheti el az adó-lebontó adatokat a rendelés összegzésében.
 
@@ -46,6 +46,9 @@ A rendelésösszegzések adó-lebontó információinak a megjelenítése érdek
 A következő ábra az adók **lebontva megjelenítése a webhelyszerkesztőben kijelölt** és be kijelölt rendelésösszegzési jelölőnégyzetben látható.
 
 ![Adó-lebontás megjelenítése a helyszerkesztő rendelésösszegzési beállításában.](media/prices-include-sales-tax-e-Commerce-site-settings.png)
+
+> [!NOTE]
+> Ha testreszabott rendelés-összegző modulokat használ, és nem szeretné örökölni a Commerce rendszer 10.0.27-es vagy újabb verziójának "Az adó-lebontás információinak elrejtése a rendelésösszegzések" funkciót, [akkor az egyedi rendelésösszegző modulok használata esetén a rendelésösszegzés részösszegzése](troubleshoot/summary-taxes-custom-modules-10.0.27.md#resolution) nem tartalmazza a költségek adóit.
 
 ## <a name="additional-resources"></a>További erőforrások
 

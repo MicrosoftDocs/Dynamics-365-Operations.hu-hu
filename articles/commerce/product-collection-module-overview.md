@@ -2,7 +2,7 @@
 title: Termékgyűjtési modulok
 description: Ez a témakör áttekintést nyújt a Microsoft Dynamics 365 Commerce termékgyűjtési moduljairól.
 author: v-chgri
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: overview
 ms.prod: ''
 ms.technology: ''
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-ms.openlocfilehash: 7bc76aa8d5728005711ee8f9758532a989e3568c
-ms.sourcegitcommit: 3754d916799595eb611ceabe45a52c6280a98992
+ms.openlocfilehash: 4ff891eef79835fb4a65535ce8152e5b17023b9c
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/15/2022
-ms.locfileid: "7984544"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780409"
 ---
 # <a name="product-collection-modules"></a>Termékgyűjtemény-modulok
 
@@ -70,11 +70,14 @@ A termékgyűjtési modul támogatja a [gyorsnézet modult](quick-view-module.md
 A következő lépésekkel lehet hozzáadni egy termékgyűjtési modult egy kategóriához.
 
 1. Lépjen az **Oldalak** pontra, majd válassza az **Új** lehetőséget új oldal létrehozásához.
-1. Válassza ki a **Sablon kiválasztása** párbeszédpanelen azt a sablont, amely a kategória alapértelmezett lapján használatos. Az **Oldal neve** alatta adja meg a megfelelő nevet, majd kattintson az **OK** gombra.
-1. Az **Allábléc** helyben válassza a három pont (**…**) gombot, majd válassza a **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki az **Tároló** modult, majd kattintson az **OK** gombra.
-1. Az **Tároló** helyben válassza a három pont (**…**) gombot, majd válassza az **Modul hozzáadása** elemet.
-1. A **Modul hozzáadása** párbeszédpanelen válassza ki a **Termékgyűjtemény** modult, majd kattintson az **OK** gombra.  
+1. Az Új lap **létrehozása párbeszédpanel** Lap neve **csoportban** írja be a megfelelő oldal nevét, majd válassza **a Tovább gombra**.
+1. A **Sablon kiválasztása csoportban** válassza ki az alapértelmezett kategóriaoldal által használt sablont, **majd válassza a Tovább gombra**.
+1. Az **Elrendezés kiválasztása oldalon válasszon** egy lapelrendezést (például **rugalmas** elrendezés), majd válassza **a Tovább lehetőséget**.
+1. Az Ellenőrzés **és befejezés lapon** ellenőrizze a lap konfigurációját. Ha szerkesztenie kell a lap adatait, válassza a Vissza **lehetőséget**. Ha a lap adatai helyesek, válassza a Létrehozás **lapot**. 
+1. Válassza ki a **három pontból (...**), **majd válassza a Modul hozzáadása lehetőséget a Sub footer** **slotban**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a** Tároló modult, majd válassza az **OK gombra.**
+1. A tárolóhelyen **válassza** ki a három pontból (**...**), majd válassza a **Modul hozzáadása lehetőséget**.
+1. A Modulok **kiválasztása párbeszédpanelen** válassza ki **a Termékgyűjtemény** modult, majd válassza az **OK gombra.**  
 1. A termékgyűjtési modultulajdonságok ablaktábláján válassza ki a **Terméklista hozzáadása** elemet.
 1. A **Terméklista-konfiguráció kiválasztása** párbeszédpanelen válassza ki a lista típusát, a lista forrását, és adja meg a cikkek számát. Adja meg a többi beállítást, amely elérhető ehhez a listatípushoz. A lista típusokkal kapcsolatosan a következő táblázatban olvashat bővebben. 
 1. Válassza ki az **OK** lehetőséget.

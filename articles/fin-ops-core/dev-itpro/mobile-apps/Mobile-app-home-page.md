@@ -1,8 +1,8 @@
 ---
 title: Mobilalkalmazás kezdőoldala
-description: Ez a témakör bemutatja a Finance and Operations (Dynamics 365) mobilalkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában.
+description: Ez a témakör a Pénzügy és műveletek (Dynamics 365) mobilalkalmazást írja le, és hivatkozásokat tartalmaz a szervezetben való implementációt segítő erőforrásokra.
 author: ChrisGarty
-ms.date: 01/22/2020
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -14,18 +14,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.dyn365.ops.version: Platform update 4
 ms.search.validFrom: 2017-02-28
-ms.openlocfilehash: 8a91f603b4dd058341110c59039a6d3c782e06ee768fbf0e7f94e9527a6354ba
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: a6928b1fc7713b6822f53aaa77b8d1281eb6d320
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6729708"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811173"
 ---
 # <a name="mobile-app-home-page"></a>Mobilalkalmazás kezdőoldala
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-Ez a témakör bemutatja a **Finance and Operations (Dynamics 365)** mobilalkalmazást, és olyan forrásokra mutató linkeket tartalmaz, amelyek segíthetnek annak szervezeténél történő implementálásában.
+Ez a témakör a Pénzügy **és műveletek (Dynamics 365)** mobilalkalmazást írja le, és hivatkozásokat tartalmaz a szervezetben való implementációt segítő erőforrásokra.
 
 ## <a name="overview"></a>Áttekintés
 
@@ -76,7 +77,7 @@ Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalma
 <tr class="odd">
 <td>1</td>
 <td>Rendszergazda</td>
-<td>A Finance and Operations alkalmazás megvalósítása a szervezeténél.</td>
+<td>Implementálja a Pénzügy és műveletek alkalmazást a szervezetben.</td>
 <td><ul><li>Ha még nem telepítette a Microsoft Dynamics 365 valamely verzióját, lásd: <a href="../deployment/deploy-demo-environment.md">Bemutatókörnyezet telepítése</a>.</li><li>A használható mobil munkaterületek listájának megtekintéséhez lásd <a href="mobile-workspaces-released.md">Nemrég kiadott mobil munkaterületek</a>.</li></ul></td>
 </tr>
 <tr class="even">
@@ -131,7 +132,7 @@ Az alábbi táblázat azokra az erőforrásokra mutató hivatkozásokat tartalma
 <td>Felhasználó</td>
 <td>Töltse le és telepítse a mobilalkalmazást.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations alkalmazás Android redszerhez</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations alkalmazás Android rendszerhez</a><BR/>
 <a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations alkalmazás iOS rendszerhez</a><BR/>
 (A Windows Phone nem támogatott)
 </td>

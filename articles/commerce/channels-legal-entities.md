@@ -14,12 +14,12 @@ ms.search.region: Global
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-ms.openlocfilehash: bc5f097a7f941dfa05f4011d9be5caffbb7f01b5f6e67cd7535ef3d1b13f59fe
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: c9812a828cb159400c6388f02f10e00694aa64ad
+ms.sourcegitcommit: d38d2fe85dc2497211ba5731617f590029d07145
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6740431"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809532"
 ---
 # <a name="create-legal-entities"></a>Jogi személyek létrehozása
 
@@ -62,7 +62,7 @@ Csatorna létrehozásakor meg kell adnia, hogy melyik jogi személy tartozik a c
 1. Az **Irányítópult képei** szakaszban tekintse meg vagy módosítsa a jogi személyhez társított emblémát és/vagy irányítópultot.
 1. Az **Adóregisztráció** szakaszban adja meg az adóhatóságnál tett jelentéshez használt nyilvántartási számokat.
 1. Az **Adó - 1099** szakaszban adja meg a 1099-es adatokat a jogi személyre vonatkozóan.
-1. Az **Adózási adatok** szakaszban adja meg az adózási adatokat a jogi személyre vonatkozóan.
+1. Az Adóinformációk **szakaszban** adja meg a jogi személy adóinformációját.
 1. Válassza a **Mentés** lehetőséget.
 
 A következő kép egy példa jogi személy részleteit mutatja.

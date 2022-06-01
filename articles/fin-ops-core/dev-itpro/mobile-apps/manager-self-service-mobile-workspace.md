@@ -2,7 +2,7 @@
 title: Saját csapat mobil munkaterület
 description: Ez a témakör tájékoztatást nyújt a Saját csapat mobil munkaterületről, amely lehetővé teszi a vezetők számára a közvetlen beosztottjaik és a bővebb személyzet megtekintését.
 author: ShielaSogge
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,16 +12,17 @@ ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 74abb4ce77b4fc13c614e8e1b734e1b9f5f24e0a728a10b79508e6be4faf3dca
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 7793bd6bb1c2dfb5f6840430914393e837242fb5
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6767112"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811057"
 ---
 # <a name="my-team-mobile-workspace"></a>Saját csapat mobil munkaterülete
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Ez a témakör a **Saját csapat** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület lehetővé teszi a vezetők számára a közvetlen beosztottjaik és a bővebb személyzet megtekintését. Emellett pozitív visszajelzést is küldhetnek beosztotti láncukban levő egyéneknek.
 
@@ -49,7 +50,7 @@ A mobil munkaterület csak a következő előfeltételek teljesülése esetén h
 <tbody>
 <tr class="odd">
 <td>A következő termékek egyikének telepítve kell lennie a szervezeténél:
-<ul><li>Egy Finance and Operations-alkalmazás</li>
+<ul><li>A Finance and Operations alkalmazás</li>
 <li>Microsoft Dynamics 365 Human Resources</li>
 </ul>
 </td>
@@ -67,7 +68,7 @@ A mobil munkaterület csak a következő előfeltételek teljesülése esetén h
 
 ## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
 
-A Finance and Operations mobilalkalmazás letöltése és telepítése:
+Töltse le és telepítse a Finance and Operations mobilalkalmazást:
 
 -   [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)

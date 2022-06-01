@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: Version 10.0.6
-ms.openlocfilehash: f8e74902e939355aba9bbadd8e7f8f8aa46fe5c5
-ms.sourcegitcommit: d5d6b81bd8b08de20cc018c2251436065982489e
+ms.openlocfilehash: 2c2d79c9ea36c42cfc0f6ba0d3c81d063d8d9446
+ms.sourcegitcommit: 6c1bf233748c4bc70fc5a1a9711758cdfd9e07dc
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/17/2022
-ms.locfileid: "8323925"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8782176"
 ---
 # <a name="suppress-word-content-controls-in-generated-reports"></a>Word tartalmi vezérlőelemek figyelmen kívül hagyása a létrehozott jelentésekben
 
@@ -26,7 +26,7 @@ ms.locfileid: "8323925"
 
 Ahhoz, hogy Microsoft Word-dokumentumként hozzon létre jelentéseket, meg kell terveznie egy sablont Word-dokumentumként a jelentésekhez. Ennek a sablonnak Word-tartalomvezérlőket kell tartalmaznia helyőrzőkként a futásidőben kitöltendő adatokhoz. Ha a létrehozott Word-dokumentumot szeretné használni a jelentések sablonjaként, egy új [Elektronikus jelentéskészítési (ER)](general-electronic-reporting.md) [megoldást](er-quick-start1-new-solution.md) is [konfigurálhat](er-design-configuration-word.md). A megoldásnak egy ER-formátumösszetevőt [tartalmazó](general-electronic-reporting.md#Configuration) ER-konfigurációt kell tartalmaznia. Ezt az ER-formátumot úgy kell konfigurálnia, hogy a jelentés generálásához a meghatározott sablont használja.
 
-A Dynamics 365 Finance 10.0.6-os és újabb verzióiban konfigurálhatja az ER-formátumban található képleteket annak érdekében, hogy mellőzzön néhány Word-tartalomvezérlőt a létrehozott dokumentumokban.
+A Dynamics 365 Pénzügy 10.0.6-os és későbbi verzióiban az ER formátumban konfigurálhatja a képleteket úgy, hogy a létrehozott dokumentumokban ne tartalmaztasa a Word bizonyos tartalomvezérlőit.
 
 A következő lépések bemutatják, hogy a Rendszergazdához vagy az Elektronikus jelentések funkcióival foglalkozó konzulenshez rendelt felhasználó hogyan konfigurálhatja az ER-formátumot, amely Word-fájlként generálja a jelentéseket, és elnyomja a létrehozott jelentésekben lévő, a Word-sablon használatával konfigurált tartalomvezérlőket.
 
@@ -47,7 +47,7 @@ A feladat-útmutatókban található lépések végrehajtása után létrejönne
 
 Le kell tölteni és menteni a következő sablont is a mintajelentéshez:
 
-- [Kifizetési jelentés bekötött sablonja 2 (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded2.docx)
+- [Kifizetési jelentés bekötött sablonja 2 (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/1/9/b/19b36e39-861a-414e-9150-9880d9d2487c/SampleVendPaymDocReportBounded2.docx)
 
 ## <a name="review-the-downloaded-word-template"></a><a id="tag-control"></a>A letöltött Word-sablon áttekintése
 

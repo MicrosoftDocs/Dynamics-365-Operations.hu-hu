@@ -16,12 +16,12 @@ ms.search.industry: ''
 ms.author: benebotg
 ms.search.validFrom: 2020-11-05
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 20e48fee237615c7b1acdb564e5e524d393f8eba
-ms.sourcegitcommit: ad1afc6893a8dc32d1363395666b0fe1d50e983a
+ms.openlocfilehash: 598e29ead50e1ecb249a7338c7f0952a912b4f69
+ms.sourcegitcommit: cbe9493d479f96f271d94599ec1b85131b26169f
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/23/2022
-ms.locfileid: "8469897"
+ms.lasthandoff: 05/27/2022
+ms.locfileid: "8809095"
 ---
 # <a name="migration-to-planning-optimization-for-master-planning"></a>Áttelepítés az alaptervezéshez használatos Tervezési optimalizálásra
 
@@ -47,7 +47,7 @@ Mint már említettük, a 10.0.16 és újabb verziókban egy hibaüzenet jelenik
 
 ### <a name="new-deployments"></a>Új telepítések
 
-A Tervezési optimalizálást kell az alapértelmezett alaptervezési motornak tekinteni az összes új felhőalapú telepítés esetében. Általánosan a tervezési optimalizálás minden olyan új telepítésnél használható, amely nem hoz létre tervezett termelési rendeléseket az alaptervezés során. Ha egy új telepítés olyan funkciótól függ, amelyet a Tervezési optimalizálás jelenleg nem támogat, akkor kivételt kérhet, így továbbra is használhatja a beépített alaptervezési motort.
+A tervezési optimalizálást a felhő minden új telepítésének alapértelmezett alaptervezési motorjaként kell figyelembe venni. Általánosan a tervezési optimalizálás minden olyan új telepítésnél használható, amely nem hoz létre tervezett termelési rendeléseket az alaptervezés során. Ha egy új telepítés olyan funkciótól függ, amelyet a Tervezési optimalizálás jelenleg nem támogat, akkor kivételt kérhet, így továbbra is használhatja a beépített alaptervezési motort.
 
 ### <a name="existing-deployments"></a>Meglévő telepítések
 
@@ -63,7 +63,7 @@ Jelenleg a Tervezési optimalizálás áttelepítési kivételei csak akkor rele
 
 A szükséges szolgáltatások elérhetővé válása után a Microsoft türelmi időszakot ad meg, amíg a kivétel lejár. A környezet adminisztrátorát tájékoztatni kell a szükséges szolgáltatások elérhetővé válásakor és a türelmi időszak indulásakor.
 
-Az alábbi folyamatábra összefoglalja a témakörben található információkat, így gyorsan ki tudja találni, hogy kivételt kér-e. Ha kivételt kell kérnie, töltse ki és küldje el a [Tervezési optimalizálás áttelepítése és kivétel kérdőívet](https://go.microsoft.com/fwlink/?linkid=2144962).
+Az alábbi folyamatábra összefoglalja a témakörben található információkat, így gyorsan ki tudja találni, hogy kivételt kér-e. Ha kivételt kell kérnie, töltse ki és küldje el a [Tervezési optimalizálás áttelepítése és kivétel kérdőívet](https://go.microsoft.com/fwlink/?linkid=2144962). A termékcsoport felelős az egyes kivételi kérelmek kiértékeléséért és jóváhagyásáért, ezért kérjük, a megadott hivatkozás használatával közvetlenül a termékcsoportnak küldje el a kérést, és ne hozzon létre támogató jegyet. Ha a kérést elutasítják, ne hozzon létre támogatási jegyet, mert a Microsoft-támogatás nem tudja újra kiértékelni vagy támogatni a kivételeket.
 
 ![Kivétel folyamatábra.](media/exception-diagram.png "Kivétel folyamatábra")
 

@@ -1,8 +1,8 @@
 ---
-title: MPOS aláírása kódalá aláírási tanúsítványsal
+title: Az MPOS .appx fájl aláírása kódalá aláírási tanúsítvánnyal
 description: Ez a témakör bemutatja, hogy hogyan lehet aláírni az MPOS-t a kódalálá aláírási tanúsítványával.
 author: mugunthanm
-ms.date: 05/11/2022
+ms.date: 05/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: tfehr
@@ -10,16 +10,17 @@ ms.custom: 28021
 ms.search.region: Global
 ms.author: mumani
 ms.search.validFrom: 2019-09-2019
-ms.openlocfilehash: e45961cf1ddb385d914b700d03bc95d07de47b68
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
+ms.openlocfilehash: 38c094de6f94381a809fdb68d2e76d410e406934
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8742581"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811085"
 ---
-# <a name="sign-mpos-appx-with-a-code-signing-certificate"></a>MPOS appx fájl aláírása kódaláíró tanúsítvánnyal
+# <a name="sign-the-mpos-appx-file-with-a-code-signing-certificate"></a>Az MPOS .appx fájl aláírása kódalá aláírási tanúsítvánnyal
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 A Modern POS (MPOS) telepítéséhez alá kell írnia az MPOS alkalmazást egy megbízható szolgáltatótól származó kódalá aláírási tanúsítványával, és telepítenie kell ugyanazt a tanúsítványt minden olyan gépre, ahol az MPOS az aktuális felhasználó megbízható gyökérmappába van telepítve.
 
@@ -37,12 +38,12 @@ Az MPOS alkalmazás tanúsítványos aláírásához használja a **Retail SDK\\
 > [!NOTE]
 > Az Azure-kulcsKént tárolt tanúsítványt és az Azure-aláírási eszközt is használhatja a Modern POS .appx fájl és az önkiszolgáló rendszer telepítőinek aláírására. A minta csővezeték-parancsfájlokkal és további információkkal [kapcsolatban a Azure DevOps Retail önkiszolgáló csomagokat generáló csővezeték beállítása](build-pipeline.md#set-up-a-build-pipeline-in-azure-devops-to-generate-retail-self-service-packages).
 
-Az universal Windows Platform (UWP) alkalmazásalá aláírásakor a biztonságos fájlfeladat használata ajánlott. A csomagalá aláírásával kapcsolatos további tudnivalókat lásd A csomagalá [aláírásának konfigurálása.](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing) Ez a folyamat a következő képben látható.
+Az universal Windows Platform (UWP) alkalmazásalá aláírásakor a biztonságos fájlfeladat használata ajánlott. A csomagalá aláírásával kapcsolatos további tudnivalókat lásd A csomagalá [aláírásának konfigurálása](/windows/uwp/packaging/auto-build-package-uwp-apps#configure-package-signing). Ez a folyamat a következő képben látható.
 
 ![MPOS-alkalmazás aláírási folyamat](media/POSSigningFlow.png)
 
 > [!NOTE]
-> A rendszer jelenleg az OOB csomagolóanyag csak az appxfájl aláírását támogatja, a folyamat nem írja alá a különböző önkiszolgáló rendszer telepítőit, például az MPÉRTÉKELÉSt, a FOGJAU-t és a HWS-t. Manuálisan kell aláírnia a SignTool vagy más aláírási eszközök segítségével. Az appxfájl aláírásához használt tanúsítványt arra a gépre kell telepíteni, ahol a Modern POS telepítve van.
+> Az OOB-csomagolás jelenleg csak az .appx fájl aláírását támogatja, a folyamat nem írja alá a különböző önkiszolgáló telepítőket, például az MPWS, a HOPU és a HWS adatokat. Manuálisan kell aláírnia a SignTool vagy más aláírási eszközök segítségével. Az .appx fájl aláírásához használt tanúsítványt telepíteni kell arra a gépre, ahol a Modern POS telepítve van.
 
 ## <a name="steps-to-configure-the-certificate-for-signing-in-azure-pipelines"></a>Az Azure csővezeték-ekben való naplózáshoz szükséges tanúsítvány konfigurálás lépései
 
@@ -51,21 +52,22 @@ Az universal Windows Platform (UWP) alkalmazásalá aláírásakor a biztonságo
 Töltse le [a DownloadFile feladatot,](/visualstudio/msbuild/downloadfile-task) és adja hozzá a feladat a buildfolyamat első lépéseként. A biztonságos fájl feladat használatának előnye az, hogy a fájl titkosítva van, és a lemezre kerül a build során, függetlenül attól, hogy a csővezeték sikeresen működik, sikertelen vagy megszakad. A fájl törlődik a letöltési helyről, miután a felépítési folyamat befejeződött.
 
 1. Töltse le és adja hozzá a biztonságos fájlfeladatot az Azure összeállítási folyamat első lépéseként. A biztonságos fájlfeladat letölthető a [DownloadFile fájlból](https://marketplace.visualstudio.com/items?itemName=automagically.DownloadFile).
-2. Töltse fel a tanúsítványt a biztonságos fájlfeladatba, és állítsa be a hivatkozás nevét a Kimeneti változók alatt, amint azt a következő kép mutatja.
+1. Töltse fel a tanúsítványt a biztonságos fájlfeladatba, és állítsa be a hivatkozás nevét a Kimeneti változók alatt, amint azt a következő kép mutatja.
     > [!div class="mx-imgBorder"]
     > ![A fájlfeladat biztonságossá teve.](media/SecureFile.png)
-3. Új változó létrehozása az Azure csővezeték-szolgáltatásban **az Új változó kiválasztásával a** **Változók** lapon.
-4. Adjon nevet a változónak az értékmezőben, **például MySigningCert**.
-5. Mentse a változót.
-6. Nyissa meg a **RetailSDK\\BuildTools** **testreszabási.beállításait**, és frissítse a **ModernPOSPackageCertificateKeyFile** fájlt a folyamatban létrehozott változónévvel (3. lépés). Példa:
+1. Új változó létrehozása az Azure csővezeték-szolgáltatásban **az Új változó kiválasztásával a** **Változók** lapon.
+1. Adjon nevet a változónak az értékmezőben, **például MySigningCert**.
+1. Mentse a változót.
+1. Nyissa meg a **RetailSDK\\BuildTools** **testreszabási.beállításait**, és frissítse a **ModernPOSPackageCertificateKeyFile** fájlt a folyamatban létrehozott változónévvel (3. lépés). Példa:
 
     ```Xml
     <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(MySigningCert)</ModernPOSPackageCertificateKeyFile>
     ```
     Erre a lépésre akkor van szükség, ha a tanúsítvány nem jelszóval védett. Ha a tanúsítvány jelszóval védett, folytassa a következő lépésekkel.
- 
-7. A csővezeték Változói lapján **adjon** hozzá egy új biztonságos szöveges változót. Állítsa be a **nevet a MySigningCert.titkos** névre, és adja meg a tanúsítványhoz hozzárendelt jelszó értékét. A változó biztonságának érdekében válassza ki a zárolási ikont.
-8. Powershell Parancsfájl-feladat **hozzáadása a csővezetékhez (a Biztonságos fájl letöltése után és a** buildlépés előtt). Adja meg **a Megjelenítendő** nevet, és állítsa be a típust Inline **típusúként**. A következők másolása és beillesztése a forgatókönyv szakaszba.
+    
+1. Ha szeretné időbélyegzővel időbélyegzőt az MPOS .appx fájllal aláírni, nyissa meg a Retail SDK Build tool **Customization.settings \\\\ fájlt,** és frissítse a ModernPOSPackageCertificateTimestamp változót **az időbélyeg-szolgáltatóval (**`http://timestamp.digicert.com` például).
+1. A csővezeték Változói lapján **adjon** hozzá egy új biztonságos szöveges változót. Állítsa be a **nevet a MySigningCert.titkos** névre, és adja meg a tanúsítványhoz hozzárendelt jelszó értékét. A változó biztonságának érdekében válassza ki a zárolási ikont.
+1. Powershell Parancsfájl-feladat **hozzáadása a csővezetékhez (a Biztonságos fájl letöltése után és a** buildlépés előtt). Adja meg **a Megjelenítendő** nevet, és állítsa be a típust Inline **típusúként**. A következők másolása és beillesztése a forgatókönyv szakaszba.
 
     ```powershell
     Write-Host "Start adding the PFX file to the certificate store."
@@ -74,7 +76,7 @@ Töltse le [a DownloadFile feladatot,](/visualstudio/msbuild/downloadfile-task) 
     Import-PfxCertificate -FilePath $pfxpath -CertStoreLocation Cert:\CurrentUser\My -Password $secureString
     ```
 
-9. Nyissa meg **a Testreszabás.beállítási** fájlt **a RetailSDK\\BuildTools** eszközből, és frissítse a **ModernPOSPackageCertificateTolásbprint-fájlt** a tanúsítvány ujjlenyomat-értékével.
+1. Nyissa meg **a Testreszabás.beállítási** fájlt **a RetailSDK\\BuildTools** eszközből, és frissítse a **ModernPOSPackageCertificateTolásbprint-fájlt** a tanúsítvány ujjlenyomat-értékével.
 
     ```Xml
        <ModernPOSPackageCertificateThumbprint Condition="'$(ModernPOSPackageCertificateThumbprint)' == ''"></ModernPOSPackageCertificateThumbprint>
@@ -82,7 +84,6 @@ Töltse le [a DownloadFile feladatot,](/visualstudio/msbuild/downloadfile-task) 
  
 A tanúsítvány ujjlenyomatának beolvasásával kapcsolatos részleteket [lásd a tanúsítvány ujjlenyomatának beolvasásával kapcsolatban](/dotnet/framework/wcf/feature-details/how-to-retrieve-the-thumbprint-of-a-certificate#to-retrieve-a-certificates-thumbprint). 
 
- 
 ## <a name="download-or-generate-a-certificate-to-sign-the-mpos-app-manually-using-msbuild-in-sdk"></a>Tanúsítvány letöltése vagy létrehozása az MPOS-alkalmazásnak az MSbuild készletben való manuális aláírásához
 
 Ha letöltött vagy generált tanúsítványt használnak az MPOS alkalmazás aláírására, akkor a **BuildTools\\Customization.settings** fájlBan található **ModernPOSPackageCertificateKeyFile** csomópont frissítése, amely a PFX-fájl helyére (**$(SdkReferencesPath)\\appxsignkey.pfx**) mutat. Példa:
@@ -91,11 +92,11 @@ Ha letöltött vagy generált tanúsítványt használnak az MPOS alkalmazás al
 <ModernPOSPackageCertificateKeyFile Condition="'$(ModernPOSPackageCertificateKeyFile)' ==''">$(SdkReferencesPath)\appxsignkey.pfx</ModernPOSPackageCertificateKeyFile>
 ```
 
-Ebben az esetben a tanúsítványfájl neve **appxsignkey.pfx**, amely a **Retail SDKReference\\ mappában** található.
+Ebben az esetben a tanúsítványfájl neve **appxsignkey.pfx**, amely a **Retail SDK\\ Hivatkozás** mappájában található.
 
 ## <a name="use-thumbprint-to-sign-the-mpos-app"></a>Ujjlenyomat használata az MPOS alkalmazás aláírására
 
-Ha az ujjlenyomat segítségével aláírja az MPOS alkalmazást, akkor telepítse helyileg a tanúsítványt. Az ujjlenyomat értékének frissítése a BuildToolsCustomization.settings **fájl ModernPOSPackageCertificateTprintbprint** **csomópontjában\\.**
+Ha az ujjlenyomat segítségével aláírja az MPOS alkalmazást, akkor telepítse helyileg a tanúsítványt. Az ujjlenyomat értékének frissítése a **ModernPOSPackageCertificateThumbprint** csomópontban a **BuildTools\\Customization.settings** fájlban.
 
 Ez a beállítás akkor működik, ha a buildfelhasználó helyi felhasználó. Ha azonban a Azure DevOps megbízottakat használja a build generál használatára, akkor lehet, hogy az ügynöknek nincs engedélye hozzáférni a tanúsítvány aláíráshoz való hozzáféréshez, vagy a buildgépen nem lesz telepítve a tanúsítvány. Ebben az esetben a megoldás az, hogy a buildfelhasználót helyi felhasználóra módosítják, és a mezőbe telepítik a tanúsítványt. Ez a beállítás azonban nem működik, ha nincs rendszergazdai hozzáférése a jelölőnégyzethez.
 

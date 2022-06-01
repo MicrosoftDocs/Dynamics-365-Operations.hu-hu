@@ -2,7 +2,7 @@
 title: Új vagy módosult elemek a Dynamics 365 Supply Chain Management rendszerben
 description: Ez a témakör a Dynamics 365 Supply Chain Management egyes kiadásainak új és módosított funkciókat leíró témaköreire mutat.
 author: kamaybac
-ms.date: 12/08/2020
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -13,13 +13,13 @@ ms.assetid: ''
 ms.search.region: Global
 ms.author: kamaybac
 ms.search.validFrom: 2020-07-08
-ms.dyn365.ops.version: 10.0.15
-ms.openlocfilehash: 744c07ff04c74386196d709d57f1c83ff53a9205
-ms.sourcegitcommit: a58dfb892e43921157014f0784bd411f5c40e454
+ms.dyn365.ops.version: 10.0.28
+ms.openlocfilehash: 6c1cfcd7ccc39f2742fd237278f97b4d3d0ad4fd
+ms.sourcegitcommit: 611202adaa080250636efabb3b3b32b850d92d04
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/04/2022
-ms.locfileid: "8691498"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8812972"
 ---
 # <a name="whats-new-or-changed-in-dynamics-365-supply-chain-management"></a>Új vagy módosult elemek a Dynamics 365 Supply Chain Management rendszerben
 
@@ -31,8 +31,9 @@ Ha látni szeretné, hogy mi új vagy módosult a Dynamics 365 Supply Chain Mana
 
 | Verzió | Szám felépítése | Automatikus frissítés rendelkezésre állása | További információk |
 |---|---|---|---|
+| 10.0.28 | 10.0.1264 | július 2022. | [A Dynamics 365 Supply Chain Management 10.0.28 előzetes verziója](whats-new-scm-10-0-28.md) |
 | 10.0.27 | 10.0.1227 | július 2022. | [A Dynamics 365 Supply Chain Management 10.0.27 előzetes verziója](whats-new-scm-10-0-27.md) |
-| 10.0.26 | 10.0.1192 | május 2022. | [A Dynamics 365 Supply Chain Management 10.0.26 előzetes verziója](whats-new-scm-10-0-26.md) |
+| 10.0.26 | 10.0.1192 | május 2022. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.26-es verziójában](whats-new-scm-10-0-26.md) |
 | 10.0.25 | 10.0.1149 | április 2022. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.25-es verziójában](whats-new-scm-10-0-25.md) |
 | 10.0.24 | 10.0.1084 | február 2022. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.24-es verziójában](whats-new-scm-10-0-24.md) |
 | 10.0.23 | 10.0.1037 | Január 2022. | [Új vagy módosult elemek a Dynamics 365 Supply Chain Management 10.0.23-es verziójában](whats-new-scm-10-0-23.md) |

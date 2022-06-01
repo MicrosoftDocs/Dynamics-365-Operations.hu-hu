@@ -2,7 +2,7 @@
 title: Számlajóváhagyások mobil munkaterület
 description: Ez a témakör a Számlajóváhagyások mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást.
 author: abruer
-ms.date: 12/01/2017
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -12,16 +12,17 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-ms.openlocfilehash: 0d19e99776f04eab28eb7371bc0ac90ac046b62af0ad785fd3ab28309cae43ab
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 08775a574bcd57948c6bf6a634d822b32112f782
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6759980"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811358"
 ---
 # <a name="invoice-approvals-mobile-workspace"></a>Számlajóváhagyások mobil munkaterület
 
 [!include [banner](../includes/banner.md)]
+[!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
 Ez a témakör a **Számlajóváhagyások** mobil munkaterülettel kapcsolatban tartalmaz tájékoztatást. A munkaterület a szállítói számla fejléce munkafolyamattal Önhöz rendelt számlák listáját tartalmazza. 
 
@@ -45,7 +46,7 @@ A mobil munkaterület csak a következő előfeltételek teljesülése esetén h
 </thead>
 <tbody>
 <tr class="odd">
-<td>A Microsoft Dynamics 365 Finance szolgáltatást telepíteni kell a szervezetében.</td>
+<td>Microsoft Dynamics A 365 Pénzügyet a szervezetben kell telepíteni.</td>
 <td>Rendszergazda</td>
 <td>Lásd: <a href="../deployment/deploy-demo-environment.md">Bemutatókörnyezet telepítése</a>.
 </td>
@@ -60,7 +61,7 @@ A mobil munkaterület csak a következő előfeltételek teljesülése esetén h
 
 ## <a name="download-and-install-the-mobile-app"></a>A mobilalkalmazás letöltése és telepítése
 
-A Finance and Operations mobilalkalmazás letöltése és telepítése:
+Töltse le és telepítse a Finance and Operations mobilalkalmazást:
 
 -   [Android telefonok esetében:](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [iPhone esetében:](https://go.microsoft.com/fwlink/?linkid=850663)

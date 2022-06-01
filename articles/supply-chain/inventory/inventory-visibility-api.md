@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.22
-ms.openlocfilehash: cbd33b16a4b21e8e1931bc61cb55e376e7d73179
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: cb02e8d10a5c673734727682436ba1b3fc996935
+ms.sourcegitcommit: 1877696fa05d66b6f51996412cf19e3a6b2e18c6
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8524465"
+ms.lasthandoff: 05/20/2022
+ms.locfileid: "8786865"
 ---
 # <a name="inventory-visibility-public-apis"></a>Készletláthatóság nyilvános API-jai
 
@@ -41,17 +41,22 @@ A következő táblázat a jelenleg elérhető API-kat sorolja fel:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Feladás | [Készleten lévő mennyiségek beállítása/felülbírálása](#set-onhand-quantities) |
 | /api/környezet/{environmentId}/onhand/reserve | Feladás | [Egy foglalási esemény létrehozása](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Feladás | [Több foglalási esemény létrehozása](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/on-hand/changeschedule | Feladás | [Ütemezett aktuális módosítás létrehozása](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/on-hand/changeschedule/bulk | Feladás | [Több ütemezett aktuális módosítás létrehozása](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule | Feladás | [Egy ütemezett, de még beütemelt időpontbani módosítás létrehozása](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Feladás | [Több ütemezett, ütemezett, de időpontban végrehajtott módosítás létrehozása](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Feladás | [Lekérdezés a post módszer használatával](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Beolvasás | [Lekérdezés a get módszer használatával](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation/allocation/allocate | Feladás | [Egy felosztási esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/unallocate | Feladás | [Egy nem lefoglalt esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/reallocate | Feladás | [Egy újrafokosó esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/consume | Feladás | [Egy felhasznált esemény létrehozása](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation/query | Feladás | [Lekérdezésfelosztás eredménye](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > Az elérési útvonal {environmentId} része a Microsoft Dynamics Lifecycle Services (LCS) környezetazonosítója.
 > 
-> A tömeges API kérésenként legfeljebb 512 rekordot adhat vissza.
+> A tömeges API legfeljebb 512 rekordot ad vissza minden kéréshez.
 
-A Microsoft biztosít egy out-of-box *Postman* kérésgyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
+A Microsoft biztosít egy out-of-box *Postman* kérésgyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
 
 ## <a name="find-the-endpoint-according-to-your-lifecycle-services-environment"></a>A Lifecycle Services környezetének megfelelő végpont megkeresése
 
@@ -84,7 +89,7 @@ A Microsoft egy felhasználói felületet (UI) épített be a Power Apps rendsze
 
 ## <a name="authentication"></a><a name="inventory-visibility-authentication"></a>Hitelesítés
 
-A platform biztonsági tokenje a készlet láthatóság nyilvános API hívására szolgál. Emiatt az Azure AD-alkalmazás használatával létre kell hozni egy _Azure Active Directory (Azure AD) tokent_. Ezt követően az Azure AD-tokent kell ahhoz használnia, hogy a _hozzáférési tokent_ be tudja szerezni a biztonsági szolgáltatásból.
+A platform biztonsági tokenje a készlet láthatóság nyilvános API hívására szolgál. Ennek megfelelően az _alkalmazás használatával Azure Active Directory (Azure AD) jogkivonatot_ kell Azure AD létrehoznia. Ezt követően az Azure AD-tokent kell ahhoz használnia, hogy a _hozzáférési tokent_ be tudja szerezni a biztonsági szolgáltatásból.
 
 A Microsoft biztosít egy gyári *Postman* jogkivonatlekérés-gyűjteményt. Ezt a gyűjteményt a következő megosztott link segítségével importálhatja a *Postman* szoftverébe: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
@@ -253,7 +258,7 @@ A következő példa a `dimensionDataSource` nélküli törzstartalom mintáját
 
 ### <a name="create-multiple-change-events"></a><a name="create-multiple-onhand-change-events"></a>Több változási esemény létrehozása
 
-Ez az API egyszerre több rekordot is létrehozhat. Az egyetlen különbség az API és az [egyszeri esemény API](#create-one-onhand-change-event) között a `Path` és a `Body` értékek. Ehhez az API-hoz a `Body` egy rekordtömböt biztosít. A rekordok maximális száma 512, ami azt jelenti, hogy az aktuális változás tömeges API egyszerre akár 512 változási eseményt is támogathat.
+Ez az API egyszerre több rekordot is létrehozhat. Az egyetlen különbség az API és az [egyszeri esemény API](#create-one-onhand-change-event) között a `Path` és a `Body` értékek. Ehhez az API-hoz a `Body` egy rekordtömböt biztosít. A rekordok maximális száma 512, ami azt jelenti, hogy az elérhető tömeges módosítási API egyszerre legfeljebb 512 módosítási eseményt támogathat.
 
 ```txt
 Path:
@@ -480,7 +485,7 @@ Body:
 
 ## <a name="query-on-hand"></a>Készleten lévő lekérdezés
 
-_Az aktuális_ lekérdezés API-val lekérheti a termékek aktuális aktuális készletadatait. Az API jelenleg legfeljebb 100 egyedi elem érték szerinti `ProductID` lekérdezését támogatja. Minden lekérdezésben több `SiteID` érték és `LocationID` érték is megadható. A maximális korlát a következőképpen `NumOf(SiteID) * NumOf(LocationID) <= 100` van definiálva: .
+Az aktuális _készlet lekérdezési API-ja_ segítségével lekérheti a termékek aktuális készletének adatait. Az API jelenleg legfeljebb 100 különálló cikk érték alapján való lekérdezését `ProductID` támogatja. Az `SiteID` egyes `LocationID` lekérdezések több és több értéket is meg lehet adni. A maximális korlát a következőként van meghatározva:`NumOf(SiteID) * NumOf(LocationID) <= 100`
 
 ### <a name="query-by-using-the-post-method"></a><a name="query-with-post-method"></a>Lekérdezés a post módszer használatával
 
@@ -520,7 +525,7 @@ A `groupByValues` paraméternek követnie kell az indexelés konfigurációját.
 A `returnNegative` paraméter szabályozza, hogy az eredmények tartalmaznak-e negatív bejegyzéseket.
 
 > [!NOTE]
-> Ha engedélyezte az aktuális módosítási ütemezést és az ígérhető (ATP) funkciókat, a lekérdezés tartalmazhatja a `QueryATP` Logikai paramétert is, amely azt szabályozza, hogy a lekérdezés eredményei tartalmaznak-e ATP-információkat. További információ és példák: [Készlet láthatósága aktuális változási ütemezések és az ígéretek lehetősége](inventory-visibility-available-to-promise.md).
+> Ha engedélyezte a módosítás ütemezését és az ígérethez rendelkezésre álló funkciókat, `QueryATP` a lekérdezés tartalmazhatja a Logikai paramétert is, amely meghatározza, hogy a lekérdezés eredményei tartalmazzák-e az ígérethez rendelkezésre álló adatokat. A további tudnivalókat és [példákat lásd a Készlet láthatósága az aktuális készlet változásának ütemezésében, és ígérethez rendelkezésre áll](inventory-visibility-available-to-promise.md).
 
 A következő példa a törzs tartalmának mintáját mutatja.
 
@@ -539,7 +544,7 @@ A következő példa a törzs tartalmának mintáját mutatja.
 }
 ```
 
-Az alábbi példák bemutatják, hogyan lehet lekérdezni egy adott telephely és hely összes termékét.
+A következő példa bemutatja, hogyan lehet lekérdezni egy adott telephely és hely összes termékét.
 
 ```json
 {
@@ -580,6 +585,10 @@ Query(Url Parameters):
 
 ## <a name="available-to-promise"></a>Ígérethez rendelkezésre áll
 
-Beállíthatja a Készlet láthatóságát, hogy ütemezhesse a jövőbeli aktuális módosításokat, és kiszámíthassa az ATP-mennyiségeket. Az ígérethez rendelkezésre álló cikk mennyisége, amely a következő időszakban ígérhető a vevőnek. Az ATP-számítás használata jelentősen növelheti a megrendelések teljesítésének képességét. A szolgáltatás engedélyezéséről és a készlet láthatóságának az API-n keresztüli használatáról a funkció engedélyezése után a Készlet láthatósága aktuális változás ütemezésében és ígéretre [rendelkezésre álló készlet láthatóságáról című témakörben olvashat](inventory-visibility-available-to-promise.md).
+A készlet láthatóságának beállításával a jövőbeli aktuális készletváltozások ütemezését és az "Aktuális készletben rendelkezésre álló mennyiség számítását" is beállíthatja. Az ígérethez rendelkezésre álló cikk mennyisége, amely a következő időszakban ígérhető a vevőnek. Az ígérethez rendelkezésre álló mennyiség számítása nagy mértékben növelheti a rendelés teljesítésére való képességét. A funkció engedélyezéséről, valamint a készlet-láthatóság és a készlet láthatóságának az API-ja [között a funkció engedélyezése után való kapcsolatról a Készlet láthatósága](inventory-visibility-available-to-promise.md#api-urls) az aktuális készlet változási ütemezésében található, és a funkció ígérethez rendelkezésre áll.
+
+## <a name="allocation"></a>Foglalás
+
+A felosztáshoz kapcsolódó API-k a készlet [láthatósági felosztásában találhatók](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 title: A készlet láthatósága – az aktuális készlet változásának ütemezése, amely ígérethez rendelkezésre áll
 description: Ez a témakör bemutatja, hogyan lehet ütemezni a jövőbeli készletváltozásokat, és kiszámítani az ígérethez rendelkezésre álló mennyiségeket.
 author: yufeihuang
-ms.date: 03/04/2022
+ms.date: 05/11/2022
 ms.topic: article
 ms.search.form: ''
 audience: Application User
@@ -11,12 +11,12 @@ ms.search.region: Global
 ms.author: yufeihuang
 ms.search.validFrom: 2022-03-04
 ms.dyn365.ops.version: 10.0.26
-ms.openlocfilehash: 7ce868871f093fd734a466bb8a06c5782bf83302
-ms.sourcegitcommit: a3b121a8c8daa601021fee275d41a95325d12e7a
+ms.openlocfilehash: 7456f87bede7bd0073223fa4762f96f919799e06
+ms.sourcegitcommit: 38d97efafb66de298c3f504b83a5c9b822f5a62a
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 03/31/2022
-ms.locfileid: "8526332"
+ms.lasthandoff: 05/17/2022
+ms.locfileid: "8763253"
 ---
 # <a name="inventory-visibility-on-hand-change-schedules-and-available-to-promise"></a>A készlet láthatósága – az aktuális készlet változásának ütemezése, amely ígérethez rendelkezésre áll
 
@@ -24,7 +24,7 @@ ms.locfileid: "8526332"
 
 Ez a témakör azt *írja* le, hogyan lehet beállítani az ígérethez rendelkezésre álló mennyiségeket az elérhető készlet változásainak ütemezésére és az ígérethez rendelkezésre álló mennyiségek ütemezésére. Az ígérethez rendelkezésre álló cikk mennyisége, amely a következő időszakban ígérhető a vevőnek. A számítás használata nagy mértékben megnövelheti a rendelés teljesítését.
 
-Sok gyártás, kiskereskedő vagy eladó esetében nem elég csak tudni, hogy mi van jelenleg rendelkezésre. A jövőbeli elérhetőségüknek teljes rálátással kell lennie. Ennek a jövőbeli elérhetőségnek figyelembe kell vennie a jövőbeli készletet, a jövőbeli igényt és az ATP-t.
+Számos gyártó, kiskereskedő vagy eladó számára nem elég csak tudni, hogy mi van aktuálisan elérhető. A jövőbeli elérhetőségüknek teljes rálátással kell lennie. Ennek a jövőbeli elérhetőségnek figyelembe kell vennie a jövőbeli készletet, a jövőbeli igényt és az ATP-t.
 
 ## <a name="enable-and-set-up-the-features"></a><a name="setup"></a> A funkciók engedélyezése és beállítása
 
@@ -32,17 +32,26 @@ Az "ATP" használata előtt az "ATP" mennyiségek kiszámításához egy vagy t�
 
 ### <a name="set-up-calculated-measures-for-atp-quantities"></a>Az "Egyen rendelkezésre álló mennyiségre" vonatkozó számított mennyiségek beállítása
 
-Az *"Elérhető* mennyiség" számított mértéke egy előre meghatározott számított mérték, amely jellemzően az aktuálisan rendelkezésre álló mennyiség megkeresére használható. A kiegészítés módosító mennyiségének összege az ellátási mennyiség, a kivonást módosító mennyiségek összege pedig az igény mennyisége.
+Az *"Elérhető* mennyiség" számított mértéke egy előre meghatározott számított mérték, amely jellemzően az aktuálisan rendelkezésre álló mennyiség megkeresére használható. A *szállítási mennyiség azoknak a* *fizikai intézkedéseknek az összege, amelyekhez a kiegészítés módosító típusa van megszava, és az igény mennyisége azoknak a* fizikai mértéknek az összege, *amelyek* módosító típusú kivonással vannak *.*
 
-Az "ATP" mennyiségek kiszámításához több számított mennyiséget is hozzáadhat. A módosítók összesített száma azonban az összes számított mennyiségben kilencnél kevesebb kell legyen.
+Több számított mennyiséget is hozzá lehet adni az egyenérték-mennyiség kiszámításához. Az egyedi fizikai intézkedések teljes száma azonban az összes számításban rendelkezésre álló mennyiségnél kisebbnek kell lennie.
+
+> [!IMPORTANT]
+> A számított mérték a fizikai mértékek egy összeállítása. Képlete csak ismétlődés nélküli fizikai intézkedéseket tartalmazhat, számított intézkedéseket nem.
 
 Például a következő számított mértéket állíthatja be:
 
-**Elérhető tényleges** csomag = (*PhysicalInventOnHandUnrestrictedQualityInservionInbound* + *·* + *·* + *·* + *·*) – (*ReservPhysicalSoftReservePhysicalOutbound)* + *·* + *·*
+**Elérhető elérhető** tényleges = (*PhysicalInvent* + *OnHand* + *–* + *korlátlan QualityInservion* + *Bejövő*) – (*ReservPhysical* + *SoftReservePhysical* + *Outbound*)
 
-Az összeg (PhysicalInventOnHandUnrestrictedQualityInservionInbound *·* + *·* + *·* + *·* + *) a készletet, az összeget (* *ReservPhysicalSoftReservePhysicalOutbound* + *·* + *·*) pedig az igényt képviseli. Ebből következően a számított mérték a következőképpen érthető:
+Az összeg (PhysicalInvent *OnHand* + *nem korlátozott QualityInservion* + *Bejövő* + *) a készletet, az összeget (* + *ReservPhysical* *SoftReservePhysical* + *Outbound* + *) pedig* az igényt képviseli. Ebből következően a számított mérték a következőképpen érthető:
 
 **Elérhető készlet –** = *·* *igény*
+
+A tényleges fizikai mennyiség **kiszámításához** hozzáadhat egy másik számított mértéket.
+
+**Tényleges- és** tényleges érték = (*PhysicalInvent* + *OnHand* + *–* + *korlátlan QualityInékonyion* + *bejövő*) – (*Kimenő*)
+
+Ebben a két számításban egyedi fizikai mérőművelet van: PhysicalInvent, OnHand *,* Unrestricted *,* QualityInservion *, Inbound*, *ReservPhysical* *,* SoftReservePhysical *és* Outbound.*·* *·*
 
 További tájékoztatás a számított intézkedésekről: Számított [intézkedések](inventory-visibility-configuration.md#calculated-measures).
 
@@ -80,7 +89,7 @@ Tegyük fel például, hogy 1000 forintos rendelést ad fel, és azt várja, hog
 
 Ha az aktuális készlet és az "ATP" mennyiségek készlet-láthatóságát lekérdezésekor az ütemezési időszak egyes napjaira vonatkozóan a következő adatokat adja eredményül:
 
-- **Dátum** – az a dátum, amelyre az eredmény vonatkozik.
+- **Dátum** – az a dátum, amelyre az eredmény vonatkozik. Az időzóna egyezményes világidő (UTC).
 - **Aktuális mennyiség** – a megadott dátumon aktuális készletmennyiség. Ez a számítás a készlet láthatósága beállításhoz beállított, az "Egy rendelkezésre álló mennyiség" számításának megfelelően történik.
 - **Ütemezett ellátás** – az ütemezett bejövő mennyiségek összege, amelyek ténylegesen nem állnak rendelkezésre azonnali felhasználásra vagy szállítmányra a megadott dátumon.
 - **Ütemezett igény** – az összes olyan ütemezett kimenő mennyiség összege, amely még nem lett felhasználva vagy leszállítva a megadott dátumon.
@@ -108,79 +117,79 @@ A példában az eredmények egy tervezett, az *ön által elért értékeket mut
 
     | Dátum | Aktuális készlet | Ütemezett ellátás | Ütemezett igény | Tervezetten kivetve | Ígérethez rendelkezésre áll |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 17 |
-    | 2022/02/02 | 20 | | | 17 | 17 |
-    | 2022/02/03 | 20 | | | 17 | 17 |
-    | 2022/02/04 | 20 | | | 17 | 17 |
-    | 2022/02/05 | 20 | | | 17 | 17 |
-    | 2022/02/06 | 20 | | | 17 | 17 |
-    | 2022/02/07 | 20 | | | 17 | 17 |
+    | 2022-02-01 | 20 | | 3 | 17 | 17 |
+    | 2022-02-02 | 20 | | | 17 | 17 |
+    | 2022-02-03 | 20 | | | 17 | 17 |
+    | 2022-02-04 | 20 | | | 17 | 17 |
+    | 2022-02-05 | 20 | | | 17 | 17 |
+    | 2022-02-06 | 20 | | | 17 | 17 |
+    | 2022-02-07 | 20 | | | 17 | 17 |
 
 1. Az aktuális dátumon (2022. február 1.) benyújt egy 10-es készletmennyiséget 2022. február 3-ra. A következő táblázat bemutatja az eredményt.
 
     | Dátum | Aktuális készlet | Ütemezett ellátás | Ütemezett igény | Tervezetten kivetve | Ígérethez rendelkezésre áll |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 17 |
-    | 2022/02/02 | 20 | | | 17 | 17 |
-    | 2022/02/03 | 20 | 10 | | 27 | 27 |
-    | 2022/02/04 | 20 | | | 27 | 27 |
-    | 2022/02/05 | 20 | | | 27 | 27 |
-    | 2022/02/06 | 20 | | | 27 | 27 |
-    | 2022/02/07 | 20 | | | 27 | 27 |
+    | 2022-02-01 | 20 | | 3 | 17 | 17 |
+    | 2022-02-02 | 20 | | | 17 | 17 |
+    | 2022-02-03 | 20 | 10 | | 27 | 27 |
+    | 2022-02-04 | 20 | | | 27 | 27 |
+    | 2022-02-05 | 20 | | | 27 | 27 |
+    | 2022-02-06 | 20 | | | 27 | 27 |
+    | 2022-02-07 | 20 | | | 27 | 27 |
 
 1. Az aktuális dátumon (2022. február 1.) benyújtja a következő ütemezett mennyiségi módosításokat:
 
     - 2022. február 4-15-ei igénymennyiség
     - 2022. február 5-1-jén szállítandó mennyiség
-    - 3. igénymennyiség 2022. február 6-ra
+    - 3. ellátási mennyiség 2022. február 6-ra
 
     A következő táblázat bemutatja az eredményt.
 
     | Dátum | Aktuális készlet | Ütemezett ellátás | Ütemezett igény | Tervezetten kivetve | Ígérethez rendelkezésre áll |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 20 | | 3 | 17 | 12 |
-    | 2022/02/02 | 20 | | | 17 | 12 |
-    | 2022/02/03 | 20 | 10 | | 27 | 12 |
-    | 2022/02/04 | 20 | | 15 | 12 | 12 |
-    | 2022/02/05 | 20 | 1 | | 13 | 13 |
-    | 2022/02/06 | 20 | 3 | | 16 | 16 |
-    | 2022/02/07 | 20 | | | 16 | 16 |
+    | 2022-02-01 | 20 | | 3 | 17 | 12 |
+    | 2022-02-02 | 20 | | | 17 | 12 |
+    | 2022-02-03 | 20 | 10 | | 27 | 12 |
+    | 2022-02-04 | 20 | | 15 | 12 | 12 |
+    | 2022-02-05 | 20 | 1 | | 13 | 13 |
+    | 2022-02-06 | 20 | 3 | | 16 | 16 |
+    | 2022-02-07 | 20 | | | 16 | 16 |
 
 1. Az aktuális dátumon (2022. február 1.) az ütemezett 3 igénymennyiség lesz szállítva. Ennek megfelelően a változtatást véglegesnek kell lennie, hogy az tükröződni tudja a tényleges aktuális készletben. A módosítás véglegesítésére olyan készletváltozási eseményt kell beküldni, amely kimenő mennyisége 3. Ezt követően az ütemezett változtatás visszaállítható egy -3 kimenő mennyiséget leadó, tényleges készlet változási ütemezésének küldésvel. A következő táblázat bemutatja az eredményt.
 
     | Dátum | Aktuális készlet | Ütemezett ellátás | Ütemezett igény | Tervezetten kivetve | Ígérethez rendelkezésre áll |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/01 | 17 | | 0 | 17 | 12 |
-    | 2022/02/02 | 17 | | | 17 | 12 |
-    | 2022/02/03 | 17 | 10 | | 27 | 12 |
-    | 2022/02/04 | 17 | | 15 | 12 | 12 |
-    | 2022/02/05 | 17 | 1 | | 13 | 13 |
-    | 2022/02/06 | 17 | 3 | | 16 | 16 |
-    | 2022/02/07 | 17 | | | 16 | 16 |
+    | 2022-02-01 | 17 | | 0 | 17 | 12 |
+    | 2022-02-02 | 17 | | | 17 | 12 |
+    | 2022-02-03 | 17 | 10 | | 27 | 12 |
+    | 2022-02-04 | 17 | | 15 | 12 | 12 |
+    | 2022-02-05 | 17 | 1 | | 13 | 13 |
+    | 2022-02-06 | 17 | 3 | | 16 | 16 |
+    | 2022-02-07 | 17 | | | 16 | 16 |
 
 1. A következő napon (2022. február 2.) az ütemezési időszak egy nappal előretol. A következő táblázat bemutatja az eredményt.
 
     | Dátum | Aktuális készlet | Ütemezett ellátás | Ütemezett igény | Tervezetten kivetve | Ígérethez rendelkezésre áll |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/02 | 17 | | | 17 | 12 |
-    | 2022/02/03 | 17 | 10 | | 27 | 12 |
-    | 2022/02/04 | 17 | | 15 | 12 | 12 |
-    | 2022/02/05 | 17 | 1 | | 13 | 13 |
-    | 2022/02/06 | 17 | 3 | | 16 | 16 |
-    | 2022/02/07 | 17 | | | 16 | 16 |
-    | 2022/02/08 | 17 | | | 16 | 16 |
+    | 2022-02-02 | 17 | | | 17 | 12 |
+    | 2022-02-03 | 17 | 10 | | 27 | 12 |
+    | 2022-02-04 | 17 | | 15 | 12 | 12 |
+    | 2022-02-05 | 17 | 1 | | 13 | 13 |
+    | 2022-02-06 | 17 | 3 | | 16 | 16 |
+    | 2022-02-07 | 17 | | | 16 | 16 |
+    | 2022-02-08 | 17 | | | 16 | 16 |
 
 1. Két nappal később (2022. február 4.) azonban a február 3-án beütemezett 10 mennyiség még nem érkezett meg. A következő táblázat bemutatja az eredményt.
 
     | Dátum | Aktuális készlet | Ütemezett ellátás | Ütemezett igény | Tervezetten kivetve | Ígérethez rendelkezésre áll |
     | --- | --- | --- | --- | --- | --- |
-    | 2022/02/04 | 17 | | 15 | 2 | 2 |
-    | 2022/02/05 | 17 | 1 | | 3 | 3 |
-    | 2022/02/06 | 17 | 3 | | 6 | 6 |
-    | 2022/02/07 | 17 | | | 6 | 6 |
-    | 2022/02/08 | 17 | | | 6 | 6 |
-    | 2022/02/09 | 17 | | | 6 | 6 |
-    | 2022/02/10 | 17 | | | 6 | 6 |
+    | 2022-02-04 | 17 | | 15 | 2 | 2 |
+    | 2022-02-05 | 17 | 1 | | 3 | 3 |
+    | 2022-02-06 | 17 | 3 | | 6 | 6 |
+    | 2022-02-07 | 17 | | | 6 | 6 |
+    | 2022-02-08 | 17 | | | 6 | 6 |
+    | 2022-02-09 | 17 | | | 6 | 6 |
+    | 2022-02-10 | 17 | | | 6 | 6 |
 
     Amint látható, az ütemezett (de még nem vállalt) aktuális készletváltozások nincsenek hatással a tényleges aktuális készletre.
 
@@ -188,10 +197,10 @@ A példában az eredmények egy tervezett, az *ön által elért értékeket mut
 
 A következő ALKALMAZÁSprogramozási felület (API) URL-címekkel küldheti el az elérhető változási ütemezéseket, az eseményeket és a lekérdezéseket.
 
-| Útvonal | Metódus | Leírás |
+| Elérési út | Metódus | Leírás |
 | --- | --- | --- |
-| `/api/environment/{environmentId}/on-hand/changeschedule` | `POST` | Egyetlen ütemezett, időpontban ütemezett módosítás létrehozása. |
-| `/api/environment/{environmentId}/on-hand/changeschedule/bulk` | `POST` | Több ütemezett, időpontban történő módosítás létrehozása. |
+| `/api/environment/{environmentId}/onhand/changeschedule` | `POST` | Egyetlen ütemezett, időpontban ütemezett módosítás létrehozása. |
+| `/api/environment/{environmentId}/onhand/changeschedule/bulk` | `POST` | Több ütemezett, időpontban történő módosítás létrehozása. |
 | `/api/environment/{environmentId}/onhand` | `POST` | Hozzon létre egy esemény az esethez való módosítási eseményt. |
 | `/api/environment/{environmentId}/onhand/bulk` | `POST` | Több módosítási esemény létrehozása |
 | `/api/environment/{environmentId}/onhand/indexquery` | `POST` | Lekérdezés a metódus `POST` használatával. |
@@ -199,31 +208,46 @@ A következő ALKALMAZÁSprogramozási felület (API) URL-címekkel küldheti el
 
 A további tudnivalókat lásd [a Készlet láthatósága nyilvános API-kban](inventory-visibility-api.md).
 
-### <a name="submit-on-hand-change-schedules"></a>Az időpont szerinti változási ütemezések elküldése
+### <a name="create-one-on-hand-change-schedule"></a>Egy,akkreta szerinti módosítási ütemezés létrehozása
 
-Az aktuális készletre `POST` vonatkozó módosítási ütemezések a készlet láthatósága szolgáltatás megfelelő URL-címéhez küldik el a kérést ([lásd a Módosítási ütemezések elküldése, az események módosítása és az ATP-lekérdezések api-szakaszon keresztüli elküldése](#api-urls)). Tömeges kéréseket is küldhet.
+Az aktuális készletre vonatkozó módosítási ütemezés úgy jön létre, hogy a rendszer elküldi a kérést a `POST` készlet láthatósága szolgáltatás megfelelő URL-címéhez (lásd [a Módosítási ütemezések elküldése, az események módosítása és az ATP-lekérdezések elküldése az API](#api-urls) szakaszon keresztül). Tömeges kéréseket is küldhet.
 
-Az aktuális készlet változási ütemezésének benyújtásához a kérelmező törzsnek tartalmaznia kell egy szervezetazonosítót, egy termékazonosítót, egy ütemezett dátumot és a mennyiségeket dátum szerint. Az ütemezett dátumnak az aktuális dátum és az aktuális ütemezési időszak vége közé kell esnie.
+Aktuális módosítási ütemezést csak akkor lehet létrehozni, ha az ütemezett dátum az aktuális dátum és az aktuális ütemezési időszak vége között van. A dátum-idő formátumnak az év *és a hónap* formátumának kell lennie (**például 2022-02-01**). Az időformátumnak csak a mai napig kell pontosnak lennie.
 
-#### <a name="example-request-body-that-contains-a-single-update"></a>Példa kérés törzse, amely egyetlen frissítést tartalmaz
+Ez az API egyetlen, az elérhető változás ütemezését hozza létre.
 
-A következő példa egy kérés törzsét mutatja be, amely egyetlen frissítést tartalmaz.
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        productId: string,
+        dimensionDataSource: string, # optional
+        dimensions: {
+            [key:string]: string,
+        },
+        quantitiesByDate: {
+            [datetime:datetime]: {
+                [dataSourceName:string]: {
+                    [key:string]: number,
+                },
+            },
+        },
+    }
+```
+
+A következő példa a `dimensionDataSource` nélküli törzstartalom mintáját mutatja.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -232,38 +256,60 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "ColorId": "Red",
-        "SizeId": "Small"
+        "SizeId&quot;: &quot;Small"
     },
     "quantitiesByDate":
     {
-        "2022/02/01": // today
+        "2022-02-01": // today
         {
             "pos":{
-                "inbound": 10,
-            },
-        },
-    },
+                "inbound": 10
+            }
+        }
+    }
 }
 ```
 
-#### <a name="example-request-body-that-contains-multiple-bulk-updates"></a>Több (tömeges) frissítést tartalmazó kérelem törzse
+### <a name="create-multiple-on-hand-change-schedules"></a>Több, az eszköz által használt módosítási ütemezés létrehozása
 
-A következő példa egy olyan kérés törzsét mutatja be, amely több (tömeges) frissítést tartalmaz.
+Ez az API egyszerre több rekordot is létrehozhat. Az API és az egyeseményes API `Path` között az és az értékek az eltérések`Body`. Ehhez az API-hoz a `Body` egy rekordtömböt biztosít. A rekordok maximális száma 512. A tömegesen ütemezett, az elérhető módosítási ütemezés API tehát egyszerre legfeljebb 512 ütemezett módosítást támogathat.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/changeschedule/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [
+        {
+            id: string,
+            organizationId: string,
+            productId: string,
+            dimensionDataSource: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            quantityDataSource: string, # optional
+            quantitiesByDate: {
+                [datetime:datetime]: {
+                    [dataSourceName:string]: {
+                        [key:string]: number,
+                    },
+                },
+            },
+        },
+        ...
+    ]
+```
+
+A következő példa a törzs tartalmának mintáját mutatja.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/changeschedule/bulk
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
 [
     {
         "id": "id-bike-0001",
@@ -273,67 +319,51 @@ Authorization: "Bearer {access_token}"
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/01": // today
+            "2022-02-01": // today
             {
                 "pos":{
-                    "inbound": 10,
-                },
-            },
-        },
+                    "inbound": 10
+                }
+            }
+        }
     },
     {
-        "id": "id-bike-0002",
+        "id": "id-car-0002",
         "organizationId": "usmf",
         "productId": "Car",
         "dimensions": {
             "SiteId": "1",
             "LocationId": "11",
             "ColorId": "Red",
-            "SizeId": "Small"
+            "SizeId&quot;: &quot;Small"
         },
         "quantitiesByDate":
         {
-            "2022/02/05":
+            "2022-02-05":
             {
                 "pos":{
-                    "outbound": 10,
-                },
-            },
-        },
+                    "outbound": 10
+                }
+            }
+        }
     }
 ]
 ```
 
-### <a name="submit-on-hand-change-events"></a>Az on-hand változási események elküldése
+### <a name="create-on-hand-change-events"></a>Kézben lévő változtatási események létrehozása
 
 Az aktuális készlet módosítási eseményei úgy történnek, hogy a rendszer egy kérést küld el a `POST` készlet láthatósága szolgáltatás megfelelő URL-címére (lásd [a Módosítási ütemezések elküldése, az események módosítása és az ATP-lekérdezések elküldése az API](#api-urls) szakaszon keresztül). Tömeges kéréseket is küldhet.
 
 > [!NOTE]
-> Az aktuális készlet módosítási eseményei nem egyediek az "ATP" funkciókban, de a készlet láthatósági API-jának részei. Ez a példa azért szerepel a példában, mert az "ATP" (mennyiség) munkához kapcsolódó események fontosak. Az elérhető módosítási események hasonlítanak az elérhető foglalások módosítási eseményeire, de az eseményüzeneteket más API-címre kell küldeni, `quantities``quantityByDate` és az eseményeket nem az üzenet törzsében kell használni. A készlet láthatósági API-ja és az aktuális készlet láthatósága API [egyéb szolgáltatásaival kapcsolatos további tudnivalókat lásd a Készlet láthatósága nyilvános API-kban](inventory-visibility-api.md).
-
-Aktuális módosítási esemény benyújtásához a kérelmező törzsnek tartalmaznia kell egy szervezetazonosítót, egy termékazonosítót, egy ütemezett dátumot és a mennyiségeket dátum szerint. Az ütemezett dátumnak az aktuális dátum és az aktuális ütemezési időszak vége közé kell esnie.
+> Az aktuális készlet módosítási eseményei nem egyediek az "ATP" funkciókban, de a készlet láthatósági API-jának részei. Ez a példa azért szerepel a példában, mert az "ATP" (mennyiség) munkához kapcsolódó események fontosak. Az elérhető módosítási események hasonlítanak az elérhető foglalások módosítási eseményeire, de az eseményüzeneteket más API-címre kell küldeni, `quantities``quantityByDate` és az eseményeket nem az üzenet törzsében kell használni. A készlet láthatósági API-ja és az aktuális készlet láthatósága API [egyéb szolgáltatásaival kapcsolatos további tudnivalókat lásd a Készlet láthatósága nyilvános API-kban](inventory-visibility-api.md#create-one-onhand-change-event).
 
 A következő példa egy olyan kérés szöveg törzsét mutatja be, amely egyetlen, az oldalon található változási eseményt tartalmaz.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand
-
-# Method
-Post
-
-# Header
-# Replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "id": "id-bike-0001",
     "organizationId": "usmf",
@@ -342,7 +372,7 @@ Authorization: "Bearer {access_token}"
         "SiteId": "1",
         "LocationId": "11",
         "SizeId": "Big",
-        "ColorId": "Red",
+        "ColorId": "Red"
     },
     "quantities": {
         "pos": {
@@ -362,46 +392,71 @@ A kérésben állítsa igazra, `QueryATP`*ha* az ütemezett készletváltozások
 - Ha a kérést ezzel a módszerrel elküldése, `POST` állítsa be ezt a paramétert a kérelem törzsében.
 
 > [!NOTE]
-> Attól függetlenül, `returnNegative`*·* *hogy* igaz vagy hamis a paraméter a kérés törzsében, az eredmény negatív értékeket fog tartalmazni az ütemezett készletváltozások és az ATP-eredmények lekérdezése során. Ezeket a negatív értékeket fogja tartalmazni a program, mivel ha csak az igényrendelések vannak ütemezve, vagy ha a szállítási mennyiségek kisebbek, mint az igény mennyisége, az ütemezett készletváltozási mennyiségek negatívak lesznek. Ha nem szerepelnek negatív értékek, akkor az eredmény megfelelő lenne. Ezzel a beállítással [és a más típusú lekérdezések esetén való használatával kapcsolatos további tudnivalókat lásd a Készlet láthatósága nyilvános API-kban](inventory-visibility-api.md).
+> Attól függetlenül, `returnNegative`*·* *hogy* igaz vagy hamis a paraméter a kérés törzsében, az eredmény negatív értékeket fog tartalmazni az ütemezett készletváltozások és az ATP-eredmények lekérdezése során. Ezeket a negatív értékeket fogja tartalmazni a program, mivel ha csak az igényrendelések vannak ütemezve, vagy ha a szállítási mennyiségek kisebbek, mint az igény mennyisége, az ütemezett készletváltozási mennyiségek negatívak lesznek. Ha nem szerepelnek negatív értékek, akkor az eredmény megfelelő lenne. Ezzel a beállítással [és a más típusú lekérdezések esetén való használatával kapcsolatos további tudnivalókat lásd a Készlet láthatósága nyilvános API-kban](inventory-visibility-api.md#query-with-post-method).
 
-### <a name="post-method-example"></a>POST metódus – példa
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/indexquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            siteId: string[],
+            locationId: string[],
+            [dimensionKey:string]: string[],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
 
 A következő példa bemutatja, hogyan lehet létrehozni egy olyan kérés törzsét, amely a módszer használatával a készlet láthatósága számára benyújtható`POST`.
 
 ```json
-# Url
-# replace {RegionShortName} and {EnvironmentId} with your value
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/on-hand/indexquery
-
-# Method
-Post
-
-# Header
-# replace {access_token} with the one from your security service
-Api-version: "1.0"
-Content-Type: "application/json"
-Authorization: "Bearer {access_token}"
-
-# Body
 {
     "filters": {
         "organizationId": ["usmf"],
         "productId": ["Bike"],
         "siteId": ["1"],
-        "LocationId": ["11"],
+        "LocationId": ["11"]
     },
     "groupByValues": ["ColorId", "SizeId"],
     "returnNegative": true,
-    "QueryATP":true,
+    "QueryATP":true
 }
 ```
 
 ### <a name="get-method-example"></a>GET metódus – példa
 
+```txt
+Path:
+    /api/environment/{environmentId}/onhand
+Method:
+    Get
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Query(Url Parameters):
+    groupBy
+    returnNegative
+    [Filters]
+```
+
 A következő példa bemutatja, hogyan lehet kérésként létrehozni egy kérés URL-címét`GET`.
 
 ```txt
-https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
+https://inventoryservice.{RegionShortName}-il301.gateway.prod.island.powerapps.com/api/environment/{EnvironmentId}/onhand?organizationId=usmf&productId=Bike&SiteId=1&LocationId=11&groupBy=ColorId,SizeId&returnNegative=true&QueryATP=true
 ```
 
 A kérelem eredménye `GET` pontosan megegyezik az előző `POST` példában történt kérés eredményének hasonlóval.

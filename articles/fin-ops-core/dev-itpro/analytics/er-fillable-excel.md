@@ -2,7 +2,7 @@
 title: Tervezzen konfigurációkat a kimenő dokumentumok Excel-formátumban történő létrehozásához
 description: Ez a témakör azt mutatja be, hogyan lehet az Elektronikus jelentéskészítés (ER) formátumát egy Excel-sablon kitöltéséhez tervezni, majd a kimenő Excel-formátumú dokumentumokat generálni.
 author: NickSelin
-ms.date: 03/25/2022
+ms.date: 05/09/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-ms.openlocfilehash: ec25065f2e3cc3b5dd3c9004d5330447f7b2ac61
-ms.sourcegitcommit: d715e44b92b84b1703f5915d15d403ccf17c6606
+ms.openlocfilehash: 4a34f990c865aa8c82213a60c23d5a44ad75aee4
+ms.sourcegitcommit: 336a0ad772fb55d52b4dcf2fafaa853632373820
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 04/27/2022
-ms.locfileid: "8645135"
+ms.lasthandoff: 05/28/2022
+ms.locfileid: "8811420"
 ---
 # <a name="design-a-configuration-for-generating-documents-in-excel-format"></a>(ER) Az Excel formátumban létrejövő dokumentumokra vonatkozó konfigurációk tervezése
 
@@ -288,6 +288,16 @@ Kiválaszthatja az **Frissítés Excelből** lehetőséget a Műveleti panel **I
 
 ![Az Excel lapformátum létrehozása elemopció a Frissítés az Excel programból párbeszédpanelen.](./media/er-excel-format-update-template.png)
 
+A 10.0.28-as **és újabb verziókban használható az Excel fejléc- és láblécformátumelemek** frissítése beállítás.
+
+- **Ha** Nem beállításra választja ezt a beállítást, az Excel fejléc- és Excel-láblécformátum elemei változatlanok maradnak még akkor is, ha a megfelelő fejlécek vagy láblécek az Excel munkafüzet-formátumban frissítették az importált sablon munkalapjait.
+- Ha Igen **beállításra** választja ezt a beállítást, akkor az Excel fejléc- és Excel-láblécformátum elemei megváltoznak, amikor a megfelelő fejlécek vagy láblécek az Excel-munkafüzet formátumában az importált sablon munkalapjaiban frissülnek.
+
+    - Ha a munkalap fejlécének vagy láblécének szerkezete nem módosult, vagy csak hozzáfűzve lett, módosul az Excel fejléc- vagy Excel-láblécformátum megfelelő elemének szerkezete. Megőrzik az Excel fejléc vagy Excel láblécformátumelem alá ágyazott formátumelemek kötését.
+    - Ha egy munkalap fejlécének vagy láblécének szerkezete megváltozott, akkor a program újra létrehoz egy Excel-fejléc- vagy Excel-láblécformátum-elemet. A rendszer eltávolítja az Excel fejléc vagy excel láblécformátumelem alá ágyazott formátumelemek kötését.
+
+![Az Excel fejléc- és Excel-láblécformátum elemeinek frissítése az Excelből frissítés párbeszédpanelen.](./media/er-excel-format-update-template2.png)
+
 Ha további tájékoztatást szeretne erről a funkcióról, kövesse az [Elektronikus jelentéskészítési formátumok módosítása az Excel-sablonok újraalkalmazásával](modify-electronic-reporting-format-reapply-excel-template.md) dokumentum lépéseit.
 
 ## <a name="validate-an-er-format"></a>ER-formátum érvényesítése
@@ -355,7 +365,7 @@ Az Microsoft Excel munkafüzet formátumú kimenő dokumentumok létrehozásakor
 
 ## <a name="example-2-fixing-the-merged-cells-epplus-issue"></a><a name="example-2"></a> 2. példa: Az egyesített cellák EPGra kiadásának kijavítása
 
-Az ER-formátum futtatásával Egy kimenő dokumentumot Excel-munkafüzet-formátumban generálhat. Ha az **Elektronikus jelentési keretrendszer EPGra** **tárhasználatának** engedélyezése a Szolgáltatáskezelési munkaterületen engedélyezve van, [akkor az EPGra](https://www.nuget.org/packages/epplus/4.5.2.1) függvénytár az Excel kimenetének létrehozásához használható. Az Ismert [Excel-viselkedés](https://answers.microsoft.com/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) és az EPGra függvénytár korlátozása miatt azonban a következő kivétel előfordulhat: "Egyesített cellákat nem lehet törölni/felülírni. Egy tartományt részben egyesít a másik egyesített tartománysal." A következő példában olvashatja, hogy milyen Excel-sablonok okozhatják ezt a kivételt, és hogyan javíthatja ki a problémát.
+Az ER-formátum futtatásával Egy kimenő dokumentumot Excel-munkafüzet-formátumban generálhat. Ha az **Elektronikus jelentési keretrendszer EPGra** **tárhasználatának** engedélyezése a Szolgáltatáskezelési munkaterületen engedélyezve van, [akkor az EPGra](https://www.nuget.org/packages/epplus/4.5.2.1) függvénytár az Excel kimenetének létrehozásához használható. Az Ismert [Excel-viselkedés](https://answers.microsoft.com/en-us/msoffice/forum/all/deleting-a-range-of-cells-that-includes-merged/8601462c-4e2c-48e0-bd23-848eecb872a9) és az EPGra függvénytár korlátozása miatt azonban a következő kivétel előfordulhat: "Egyesített cellákat nem lehet törölni/felülírni. Egy tartományt részben egyesít a másik egyesített tartománysal." A következő példában olvashatja, hogy milyen Excel-sablonok okozhatják ezt a kivételt, és hogyan javíthatja ki a problémát.
 
 1. Hozzon létre egy új Excel-munkafüzetet az Excel asztali alkalmazásban.
 2. A munkalap **1.** munkalapján adja hozzá **a ReportTitle nevét** az A2 **cellhoz**.

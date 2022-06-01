@@ -2,7 +2,7 @@
 title: Termék- és vevőkeresés a pénztárban (POS)
 description: Ez a témakör áttekintést nyújt a Dynamics 365 Commerce termék- és vevőkeresési funkcióján végrehajtott fejlesztésekről.
 author: ShalabhjainMSFT
-ms.date: 10/26/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Retail April 2017 update
-ms.openlocfilehash: 022dcaca9bb3c9e7e749ee143702325367e5149b
-ms.sourcegitcommit: f8b597b09157d934b62bd5fb9a4d05b8f82b5a0e
+ms.openlocfilehash: 460c7d3b00421ba43414f7343887edf9b8adad9c
+ms.sourcegitcommit: 9dd2d32fc303023a509d58ec7b5935f89d1e9c6d
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/26/2021
-ms.locfileid: "7700089"
+ms.lasthandoff: 05/26/2022
+ms.locfileid: "8806427"
 ---
 # <a name="product-search-and-customer-search-in-the-point-of-sale-pos"></a>Termék- és vevőkeresés a pénztárban (POS)
 
@@ -106,6 +106,8 @@ Keresési feltételek parancsikonokként történő beállításához a rendszer
 > Ha túl sok rövidítést ad hozzá, a pénztár keresés sávjának legördülő menüje zsúfolttá fog válni, ami hatással lehet a keresés használhatóságára az alkalmazott számára. Javasoljuk, hogy csak annyi rövidítést adjon hozzá, amennyire szüksége van.
 
 A **Megjelenítési sorrend** mező határozza meg, hogy melyik rövidítések jelennek meg a pénztárban. A látható feltételek alapból rendelkezésre álló tulajdonságok, amelyeket a vevőkeresési algoritmus a vevők keresésére használ. A partnerek azonban egyedi tulajdonságokat is hozzáadhatnak keresési rövidítésként. Ha egyéni tulajdonságokat kíván keresési rövidítésként hozzáadni, a rendszergazdának ki kell terjesztenie az ügyfélkeresési feltételekhez használt kiterjeszthető felsorolást (enum), majd meg kell jelölnie a partner egyedi tulajdonságait rövidítésekként. A partnerek felelősek azon kód megírásáért, amely találatokat biztosít, amikor amikor egyéni rövidítéseiket keresésekre használják.
+
+A parancsikonok fordítását akkor kell megadni, ha a pénztárban meg szeretné adni a parancsikonokat. Ha a csatorna nyelve eltér a rendszer alapértelmezett nyelvtől, akkor mindegyik parancsikon fordítását a várt nyelven kell definiálni. A fordításokat úgy adhatja meg, hogy az egyes parancsikonok **fordítását** kiválasztja. 
 
 > [!NOTE]
 > Az egyéni tulajdonság, amelyet hozzáadnak a felsoroláshoz, nem befolyásolja a normál vevői keresési algoritmust. Más szóval a vevőkereső algoritmus nem keres az egyéni tulajdonságban. A felhasználók csak akkor használhatják az egyéni tulajdonságokat keresésre, ha az adott tulajdonság hozzá van adva rövidítésként, vagy ha az alapértelmezett keresési algoritmust felülbírálják.

@@ -2,7 +2,7 @@
 title: Elektronikus jelentéskészítés (ER) céljai
 description: Ez a témakör az Elektronikus jelentéskészítés rendeltetési helyeinek kezelésével, a támogatott célhelyek típusaival, valamint a biztonsági szempontokkal kapcsolatban tartalmaz tájékoztatást.
 author: nselin
-ms.date: 09/16/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: ''
 ms.technology: ''
@@ -15,12 +15,12 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.openlocfilehash: e8e176b8d4e14eee2050b3c66f7547ff878b5174
-ms.sourcegitcommit: 9e8d7536de7e1f01a3a707589f5cd8ca478d657b
+ms.openlocfilehash: e3154cb62531bf956365b420b454c98ead7f7335
+ms.sourcegitcommit: ccb39767bd3430c24f4653c26560bba2cd66553c
 ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 10/18/2021
-ms.locfileid: "7647093"
+ms.lasthandoff: 05/19/2022
+ms.locfileid: "8780460"
 ---
 # <a name="electronic-reporting-er-destinations"></a>Elektronikus jelentéskészítés (ER) céljai
 
@@ -45,7 +45,7 @@ Másik lehetőségként telepíthet egyet a következő előfeltételek közül:
 - Microsoft Dynamics AX alkalmazás 7.0.1 verzió (2016. május)
 - [Elektronikus jelentéskészítési cél kezelési alkalmazás gyorsjavítása](https://fix.lcs.dynamics.com/issue/results/?q=3160213)
 
-Létezik egy [Nyomtatás](er-destination-type-print.md) céltípus is. A használatához telepíteni kell a Microsoft Dynamics 365 Finance 10.0.9 verziót (2020. április).
+Létezik egy [Nyomtatás](er-destination-type-print.md) céltípus is. A használathoz telepítenie Microsoft Dynamics kell a 365 Finance 10.0.9-es verzióját (2020. április).
 
 ## <a name="overview"></a>Áttekintés
 
@@ -173,11 +173,11 @@ A Finance-szolgáltatás **10.0.18 előtti verzióiban** a PDF-konverzió beáll
 
 ### <a name="limitations"></a>Korlátozások
 
-A PDF-átalakítási beállítás csak felhőtelepítések esetén érhető el.
+A Pénzügy 10.0.9 **szerint** a PDF-konverziós beállítás csak a felhőalapú telepítés esetén érhető el. A Pénzügy **10.0.27-es** verziójától kezdve a PDF-átváltási [lehetőség minden olyan létesítményben elérhető, amely internetkapcsolattal](../user-interface/client-disconnected.md) rendelkezik.
 
 A létrehozott PDF-fájl legfeljebb 300 oldalas lehet.
 
-A Finance **10.0.9 verziójában** csak a fekvő laptájolást támogatja a program az Excel-kimenetből előállított PDF-dokumentumban. A Finance **10.0.10-es (2020. május) és későbbi** verzióiban [megadhatja a lap tájolását](#SelectPdfPageOrientation) az Excel-kimenetből előállított PDF-dokumentumnak, miközben beállít egy ER-célhelyet.
+A Pénzügyi verzió **10.0.9** szerint az Excel-kimenetből előállított PDF-dokumentum csak a tájolást támogatja a tájolással. A Pénzügy 10.0.10 **·**[verziótól](#SelectPdfPageOrientation) kezdve megadhatja az Excel-kimenetből előállított PDF-dokumentum oldal tájolását az ER-cél konfigurálása során.
 
 Csak a Windows operációs rendszer közös rendszerbetűkészletei használhatók olyan kimenet konvertálásához, amely nem tartalmaz beágyazott betűtípusokat.
 

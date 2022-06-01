@@ -9,12 +9,12 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: whigginb
 ms.search.validFrom: 2021-09-03
-ms.openlocfilehash: 26b2821f33ea23dde1fda1d461baa5de1b4f9efc
-ms.sourcegitcommit: d70f66a98eff0a2836e3033351b482466bd9c290
-ms.translationtype: HT
+ms.openlocfilehash: 3385edf8961d04cf8bfc4ca06299f1911b76a4f5
+ms.sourcegitcommit: 2b119aec0e6f49bfd36125d9660f49cde5394446
+ms.translationtype: MT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/11/2022
-ms.locfileid: "8740652"
+ms.lasthandoff: 05/16/2022
+ms.locfileid: "8758769"
 ---
 # <a name="service-description-for-finance-and-operations-apps"></a>A Pénzügy és műveletek alkalmazás szolgáltatásleírása
 
@@ -132,9 +132,9 @@ Ez a szakasz a szolgáltatásban előforduló jellemző környezeti és adatkeze
 
 Az LCS [önkiszolgáló eszközöket](../../dev-itpro/deployment/infrastructure-stack.md) és [adatbázis-mozgási műveleteket](../../dev-itpro/database/dbmovement-operations.md) biztosít, amelyek a környezet- és adatkezelési feladatok elvégzésére használhatók. Íme néhány példa:
 
-**Esemény:** [Működési példány kérése](../imp-lifecycle/prepare-go-live.md#requesting-the-production-environment)
+**Esemény:** [Működési példány kérése](../imp-lifecycle/go-live-faq.md#when-can-i-configure-and-request-my-production-environment)
 
-- Töltse ki a [Közzétételi ellenőrzőlistát](../imp-lifecycle/prepare-go-live.md), és küldje el a [Microsoft FastTrack](/dynamics365/fasttrack/)-csapatnak.
+- A Go-live [készenlét](../imp-lifecycle/prepare-go-live.md) ellenőrzés befejezése és elküldése a [Microsoft FastTrack csapatának](/dynamics365/fasttrack/).
 - A termelési példány kérése előtt töltse ki az [LCS-előfizetés becslését](../../dev-itpro/lifecycle-services/subscription-estimator.md).
 - Az [LCS-módszertanban](../../dev-itpro/lifecycle-services/create-methodology.md) meghatározott összes megvalósítási feladat végrehajtása.
 
