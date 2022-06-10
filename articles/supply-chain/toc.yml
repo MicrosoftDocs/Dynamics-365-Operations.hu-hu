@@ -12,6 +12,8 @@
               items:
                 - name: Újdonságok és változások a Supply Chain Management szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Supply Chain Management 10.0.28 (2022. augusztus)
+                  href: get-started/whats-new-scm-10-0-28.md
                 - name: Supply Chain Management 10.0.27 (2022. július)
                   href: get-started/whats-new-scm-10-0-27.md
                 - name: Supply Chain Management 10.0.26 (2022. május)
@@ -711,6 +713,8 @@
           items:
             - name: Költségkezelés kezdőlapja
               href: cost-management/cost-management-home-page.md
+            - name: Készlet költségszámítása – gyakran ismételt kérdések
+              href: cost-management/inventory-costing-faq.md
             - name: Az elszámolóárak előfeltételei
               items:
                 - name: Az elszámolóár előfeltételeinek áttekintése
@@ -1427,6 +1431,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: ADATGYŰJTÉS adatforrások használata ER-formátumokban
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/supply-chain/toc.json
+                    - name: A FELHASZNÁLÓI ADATBEVITELI PARAMÉTER adatforrások használata a generálni kívánt jelentés paramétereinek megadásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                     - name: Adatforrásokban történő hibakeresés
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/supply-chain/toc.json
                 - name: Adatmodellek konfigurálása
@@ -1705,9 +1711,11 @@
                   href: inventory/inventory-visibility-whs-support.md
                 - name: Az Inventory Visibility alkalmazás használata
                   href: inventory/inventory-visibility-power-platform.md
-                - name: Inventory Visibility foglalások
+                - name: Inventory Visibility – foglalások
                   href: inventory/inventory-visibility-reservations.md
-                - name: Készletláthatóság aktuális módosítási ütemezése és az ígérethez rendelkezésre álló készlet
+                - name: Inventory Visibility – készlet felosztása
+                  href: inventory/inventory-visibility-allocation.md
+                - name: Inventory Visibility aktuális módosítási ütemezése és az ígérethez rendelkezésre álló készlet
                   href: inventory/inventory-visibility-available-to-promise.md
                 - name: Készletláthatóság nyilvános API-jai
                   href: inventory/inventory-visibility-api.md
@@ -3285,6 +3293,18 @@
               href: landed-cost/landed-cost-inquiries.md
             - name: Partraszállási költséggel kapcsolatos jelentések
               href: landed-cost/landed-cost-reports.md
+            - name: Partaszállítási költséggel kapcsolatos adatentitások
+              items:
+                - name: Partraszállási költség entitásai – áttekintés
+                  href: landed-cost\landed-cost-entities-overview.md
+                - name: Útlétrehozás entitásai
+                  href: landed-cost\landed-cost-entities-voyage-creation.md
+                - name: Költségtranzakció entitásai
+                  href: landed-cost\landed-cost-entities-cost-transactions.md
+                - name: Konténertevékenységek entitása
+                  href: landed-cost\landed-cost-entities-container-activities.md
+                - name: Szállítói számla entitásai
+                  href: landed-cost\landed-cost-entities-vendor-invoices.md
         - name: Raktárkezelés
           items:
             - name: Raktárkezelés áttekintése

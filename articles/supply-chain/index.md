@@ -15,12 +15,12 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 4ea45b238200d4d9d43d563e160e8574271a8ce7
-ms.sourcegitcommit: 7a2001e4d01b252f5231d94b50945fd31562b2bc
+ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
+ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/15/2021
-ms.locfileid: "7487864"
+ms.lasthandoff: 05/23/2022
+ms.locfileid: "8789212"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management kezdőlapja
 
@@ -52,7 +52,7 @@ További információkért válasszon ki egy szolgáltatásterületet.
 
 ## <a name="dynamics-365-finance"></a>Dynamics 365 Finance
 
-A Dynamics 365 Finance rendszerről a [Finance kezdőlap](../finance/index.md) tartalmaz információkat.
+A Dynamics 365 Finance rendszerről kapcsolatosan a [Finance kezdőlapja](../finance/index.md) tartalmaz információkat.
 
 ## <a name="videos"></a>Videók
 
@@ -98,7 +98,7 @@ A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](/arch
 ## <a name="white-papers"></a>Tanulmányok
 
 - [Lean manufacturing: Ígérhető és kanbanfeladatok ütemezése](/dynamics/s-e/)
-- [Darabjegyzék-számítás költségszámítási táblázat segítségével](https://www.microsoft.com/download/details.aspx?id=101937/)
+- [Darabjegyzék-számítás költségszámítási táblázat segítségével](https://www.microsoft.com/download/details.aspx?id=101937)
 
 ## <a name="elearning-courses"></a>eLearning-tanfolyamok
 

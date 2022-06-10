@@ -10,15 +10,17 @@
           items:
             - name: Újdonságok és változások a pénzügyi és műveleti alkalmazásokban
               href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
-            - name: Újdonságok és változások a Platformfrissítésekben
+            - name: Újdonságok és változások a platformfrissítésekben
               items:
-                - name: Újdonságok és változások a Platform-frissítések terén – kezdőlap
+                - name: Újdonságok és változások a platformfrissítések terén – kezdőlap
                   href: get-started/whats-new-home-page.md
-                - name: Platform-frissítések a 10.0.27-es verzióhoz (2022. július)
+                - name: Platformfrissítések a 10.0.28 verzióhoz (2022. augusztus)
+                  href: get-started/whats-new-platform-updates-10-0-28.md
+                - name: Platformfrissítések a 10.0.27 verzióhoz (2022. július)
                   href: get-started/whats-new-platform-updates-10-0-27.md
-                - name: Platform-frissítések a 10.0.26-os verzióhoz (2022. május)
+                - name: Platformfrissítések a 10.0.26 verzióhoz (2022. május)
                   href: get-started/whats-new-platform-updates-10-0-26.md
-                - name: Platform-frissítések a 10.0.25-ös verzióhoz (2022. április)
+                - name: Platformfrissítések a 10.0.25 verzióhoz (2022. április)
                   href: get-started/whats-new-platform-updates-10-0-25.md
             - name: Eltávolított vagy elavult funkciók
               items:
@@ -384,9 +386,9 @@
                   items:
                     - name: Helyszíni projektek beállítása az LCS rendszerben
                       href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-                    - name: Helyszíni környezetek beállítása és telepítése (Platformfrissítés 41-es és újabb verziókon)
+                    - name: Helyszíni környezetek beállítása és telepítése (41-es platformfrissítés és újabb)
                       href: deployment/setup-deploy-on-premises-pu41.md
-                    - name: Helyszíni környezetek beállítása és telepítése (Platformfrissítés 12–40-es verziókon)
+                    - name: Helyszíni környezetek beállítása és telepítése (12–40-es platformfrissítés)
                       href: deployment/setup-deploy-on-premises-pu12.md
                     - name: A Retail csatorna összetevőinek helyszíni környezetben való telepítési lépései
                       href: deployment/deploy-retail-onprem.md
@@ -1018,6 +1020,8 @@
                   href: lifecycle-services/azure-data-explorer.md
             - name: Környezeti szolgáltatások újraindítása
               href: lifecycle-services/restart-environment-services.md
+            - name: Környezeti rendszergazda frissítése
+              href: lifecycle-services/update-environment-admin.md
             - name: Termelési kimaradás jelentése
               href: lifecycle-services/report-production-outage.md
             - name: Felhasználói bejelentkezések nyomon követése
@@ -1266,6 +1270,8 @@
               items:
                 - name: Bővítmények áttekintése
                   href: power-platform/add-ins-overview.md
+            - name: Mobil élmények fejlesztése
+              href: power-platform/build-mobile-experiences.md
             - name: Irányelvek és kommunikáció
               href: /power-platform/admin/policies-communications?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json
         - name: Mobilplatform

@@ -12,6 +12,8 @@
               items:
                 - name: Újdonságok és változások a Commerce szolgáltatásban – kezdőlap
                   href: get-started/whats-new-home-page.md
+                - name: Commerce 10.0.28 (2022. július)
+                  href: get-started/whats-new-commerce-10-0-28.md
                 - name: Commerce 10.0.27 (2022. július)
                   href: get-started/whats-new-commerce-10-0-27.md
                 - name: Commerce 10.0.26 (2022. május)
@@ -1300,6 +1302,10 @@
               items:
                 - name: Egyéni válaszlapok összeállítása a 4xx/5xx állapotkódhibákhoz
                   href: build-pages-400-500-errors.md
+            - name: Szolgáltatásintegráció
+              items:
+                - name: A Customer Voice integrálása e-kereskedelmi webhelyek oldalaira
+                  href: customer-voice-integration.md
         - name: Csalás elleni védelem
           items:
             - name: Dynamics 365 Fraud Protection-integráció a Dynamics 365 Commerce alkalmazással
@@ -2118,6 +2124,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/er-lookup-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: ADATGYŰJTÉS adatforrások használata ER-formátumokban
                       href: ../fin-ops-core/dev-itpro/analytics/er-data-collection-data-sources.md?toc=/dynamics365/commerce/toc.json
+                    - name: A FELHASZNÁLÓI ADATBEVITELI PARAMÉTER adatforrások használata a generálni kívánt jelentés paramétereinek megadásához
+                      href: ../fin-ops-core/dev-itpro/analytics/er-user-input-parameter-data-sources.md?toc=/dynamics365/commerce/toc.json
                     - name: Adatforrásokban történő hibakeresés
                       href: ../fin-ops-core/dev-itpro/analytics/er-debug-data-sources.md?toc=/dynamics365/commerce/toc.json
                 - name: Adatmodellek konfigurálása
@@ -2728,6 +2736,8 @@
                               href: e-commerce-extensibility/interactive-components.md
                             - name: Bejelentkezett állapot tettetése helyi fejlesztés során
                               href: e-commerce-extensibility/mock-sign-in.md
+                            - name: Webes API-hitelesítés átvitelének beállítása az Azure Active Directory B2C használatával
+                              href: e-commerce-extensibility/web-api-auth-trans-aad-b2c.md
                             - name: A modul megjelenítendő tulajdonságainak konfigurálása kontextus alapján
                               href: e-commerce-extensibility/configure-properties-context.md
                             - name: Modulok globalizálása a CultureInfoFormatter osztály segítségével
@@ -2944,6 +2954,8 @@
                   href: troubleshoot/items-without-inventory-checked-out.md
                 - name: 'Ha a minősítések és az áttekintések megoldása nincs engedélyezve, akkor a minősítések finomítója megjelenik a keresési eredményekben és a kategóriaoldalakon.'
                   href: troubleshoot/hide-ratings-refiner.md
+                - name: A rendelésösszesítés részösszege nem tartalmazza a díjak adóját testreszabott rendelésösszesítő modulok használata esetén.
+                  href: troubleshoot/summary-taxes-custom-modules-10.0.27.md
             - name: Ügyfélkezelés
               items:
                 - name: Az új vevők létrehozásakor az üdvözlő e-mail küldése nem történik meg
