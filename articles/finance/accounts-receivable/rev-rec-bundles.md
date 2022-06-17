@@ -1,6 +1,6 @@
 ---
 title: Bevételelszámolási csomagok
-description: Ez a témakör a kinnlevőségek bevételelszámolási funkciójában elérhető csomagok működését mutatja be. A csomag egy szülőcikkből és több összetevő cikkből áll.
+description: Ez a cikk a kinnlevőségek bevételelszámolási funkciójában elérhető csomagok működését mutatja be. A csomag egy szülőcikkből és több összetevő cikkből áll.
 author: kweekley
 ms.date: 01/04/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-01-04
 ms.dyn365.ops.version: 10.0.7
-ms.openlocfilehash: 62a4d7f36ad0b36edeaec75e9b670e2aad143703
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 478fdfc69514fba829deb63b4e2904ff3fe1e199
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725819"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8876296"
 ---
 # <a name="revenue-recognition-bundles"></a>Bevételelszámolási csomagok
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör a kinnlevőségek bevételelszámolási funkciójában elérhető csomagok működését mutatja be. A csomag egy szülőcikkből és több összetevő cikkből áll. A szülőcikket a hatékonyabb rendelésbevitel érdekében az értékesítési rendelésnél kell megadni. A szülőcikk később összetevő cikkekre bontható. A belső dokumentumok, például a szállítólevél felsorolja az összetevő cikkeket. A külső dokumentumokban azonban csak a szülőcikk fog szerepelni.
+Ez a cikk a kinnlevőségek bevételelszámolási funkciójában elérhető csomagok működését mutatja be. A csomag egy szülőcikkből és több összetevő cikkből áll. A szülőcikket a hatékonyabb rendelésbevitel érdekében az értékesítési rendelésnél kell megadni. A szülőcikk később összetevő cikkekre bontható. A belső dokumentumok, például a szállítólevél felsorolja az összetevő cikkeket. A külső dokumentumokban azonban csak a szülőcikk fog szerepelni.
 
 > [!NOTE]
 > A Microsoft Dynamics 365 Commerce csatornái, például az online csatornák, a pénztár és hívásközpontok nem támogatják a bevételelszámolást (és így a csomagfunkciót sem). Ide tartozik a Dynamics 365 Supply Chain Management és a Dynamics 365 Sales szolgáltatásokban elérhető A potenciális vevők készpénzre váltása megoldás is. A bevételelszámolás használatára konfigurált cikkeket nem szabad hozzáadni a Commerce Channels rendszerben vagy a Potenciális vevők készpénzre váltása megoldásban létrehozott rendelésekhez és tranzakciókhoz.

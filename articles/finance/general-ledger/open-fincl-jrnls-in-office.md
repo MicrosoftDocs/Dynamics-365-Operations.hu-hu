@@ -1,6 +1,6 @@
 ---
 title: Pénzügyi naplósablonok megnyitása az Office programban
-description: Ez a témakör olyan problémákat ír le, amelyek akkor fordulhatnak elő, ha egyéni pénzügyi naplókat hoz létre Microsoft Excel-sablon alapján.
+description: Ez a cikk olyan problémákat ír le, amelyek akkor fordulhatnak elő, ha egyéni pénzügyi naplókat hoz létre Microsoft Excel-sablon alapján.
 author: kweekley
 ms.date: 05/14/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-05-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 099d3c0074a86913b79b732a4c2a34b6e6488672
-ms.sourcegitcommit: 602a319f4720b39a56b7660b530236912d484391
+ms.openlocfilehash: a29ab1cb2980ebfed6c6fa6409538bc802849156
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/06/2022
-ms.locfileid: "8723078"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8896347"
 ---
 # <a name="open-financial-journal-templates-in-office"></a>Pénzügyi naplósablonok megnyitása az Office programban
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör olyan problémákat ír le, amelyek akkor fordulhatnak elő, ha egyéni pénzügyi naplókat hoz létre Microsoft Excel-sablon alapján.
+Ez a cikk olyan problémákat ír le, amelyek akkor fordulhatnak elő, ha egyéni pénzügyi naplókat hoz létre Microsoft Excel-sablon alapján.
 
 ## <a name="symptom"></a>Tünet
 

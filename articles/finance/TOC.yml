@@ -60,6 +60,8 @@
                   href: ../fin-ops-core/dev-itpro/deployment/apply-updates-on-premises.md?toc=/dynamics365/finance/toc.json
                 - name: Szolgáltatásfrissítések konfigurálása
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/finance/toc.json
+                - name: Szervizelés előtt és után
+                  href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/finance/toc.json
                 - name: Szolgáltatásfrissítések szüneteltetése
                   href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/finance/toc.json
                 - name: Értesítések kérése szolgáltatásfrissítésekkel kapcsolatban
@@ -172,7 +174,7 @@
               items:
                 - name: Végrehajtási életciklus-kezelés kezdőlapja
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/finance/toc.json
-                - name: A Finance and Operations alkalmazások architektúrája
+                - name: A pénzügyi és műveleti alkalmazások architektúrája
                   href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/finance/toc.json
                 - name: Microsoft FastTrack
                   href: /dynamics365/fasttrack/index
@@ -1684,6 +1686,8 @@
                       href: general-ledger/sales-tax-calculation-methods-origin-field.md
                     - name: Teljes összeg és intervallumszámítási opciók áfakódokhoz
                       href: general-ledger/whole-amount-interval-options-sales-tax-codes.md
+                    - name: Az áfa számítása és kerekítése
+                      href: general-ledger/sales-tax-calculation-rounding.md
                     - name: Áfa számítása az általános naplósorokhoz
                       href: general-ledger/sales-tax-calculation-on-general-journal.md
                     - name: Szállítói számla áfatartalmának kiszámítása és kiigazítása
@@ -2164,10 +2168,12 @@
                   href: localizations/estonia.md
                 - name: Személyes információk kérése
                   href: localizations/emea-est-personal-info.md
-                - name: Áfakimutatás
+                - name: Áfabevallás
                   href: localizations/emea-est-vat-statement-details.md
                 - name: Észt Intrastat
                   href: localizations/emea-est-intrastat.md
+                - name: EU-s értékesítési lista
+                  href: localizations/emea-est-eu-sales-list.md
             - name: Európa
               items:
                 - name: Európa – áttekintés
@@ -2452,6 +2458,8 @@
                   href: localizations/emea-hun-online-invoicing.md
                 - name: Áfajelentések Magyarországról
                   href: localizations/emea-hun-sales-tax-reports.md
+                - name: Magyar Intrastat
+                  href: localizations/emea-hun-intrastat.md
                 - name: Halasztott áfa számításai
                   href: localizations/emea-hun-deferred-vat.md
             - name: Izland
@@ -3112,6 +3120,8 @@
                   href: localizations/emea-lva-vat-statement-details.md
                 - name: Lett Intrastat
                   href: localizations/emea-lva-intrastat.md
+                - name: EU-s értékesítési lista
+                  href: localizations/emea-lva-eu-sales-list.md
             - name: Litvánia
               items:
                 - name: Litvánia – áttekintés
@@ -3130,6 +3140,8 @@
                   href: localizations/emea-ltu-saf-t.md
                 - name: Vállalaton belüli árumozgás dokumentumainak beállítása
                   href: localizations/tasks/set-up-transfer-documents-goods-movement-inside-company.md
+                - name: EU-s értékesítési lista
+                  href: localizations/emea-ltu-eu-sales-list.md
             - name: Malajzia
               items:
                 - name: Malajzia – áttekintés
@@ -3228,7 +3240,7 @@
                   href: localizations/tasks/no-00002-customer-payment-based-payment-id.md
                 - name: Nets importálási formátum
                   href: localizations/emea-nor-nets-import-format.md
-                - name: Áfakimutatás
+                - name: Áfabevallás
                   href: localizations/emea-nor-sales-tax-payment-report.md
                 - name: Áfa-visszatérítés az Altinnba küldött közvetlen beküldéssel
                   items:
@@ -4483,6 +4495,8 @@
                       href: ../fin-ops-core/dev-itpro/analytics/trace-execution-er-troubleshoot-perf.md?toc=/dynamics365/finance/toc.json
                     - name: Az ER-konfigurációk teljesítményproblémáinak elhárítása
                       href: ../fin-ops-core/dev-itpro/analytics/er-troubleshoot-perf-issues-in-configurations.md?toc=/dynamics365/finance/toc.json
+                    - name: A futtatókörnyezetben lekért táblamezők számának csökkentése
+                      href: ../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md?toc=/dynamics365/finance/toc.json
                 - name: Üzleti dokumentumok kezelése (BDM)
                   items:
                     - name: BDM áttekintése

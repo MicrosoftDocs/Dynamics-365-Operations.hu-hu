@@ -1,6 +1,6 @@
 ---
 title: Supply Chain Management kezdőlapja
-description: Ez az oldal a Supply Chain Management-funkciók súgótémaköreinek és más erőforrásainak listáját tartalmazza.
+description: Ez a cikk a Supply Chain Management-funkciók súgótémaköreinek és más erőforrásainak listáját tartalmazza.
 author: kamaybac
 ms.date: 09/15/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: ''
 ms.author: kamaybac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.openlocfilehash: 9ae75f33d96261691eee52c963a1f1f00c75b0de
-ms.sourcegitcommit: 220101d2511a3164572226294ef090a43a1e6cdd
+ms.openlocfilehash: 189239ad6142af200e41cfe9cfcdbb56be65b0b7
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/23/2022
-ms.locfileid: "8789212"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8879076"
 ---
 # <a name="supply-chain-management-home-page"></a>Supply Chain Management kezdőlapja
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Dynamics 365 Supply Chain Management súgótémaköreinek és más erőforrásainak listáját tartalmazza.
+Ez a cikk a Dynamics 365 Supply Chain Management súgócikkeinek és más erőforrásainak listáját tartalmazza.
 
 ## <a name="whats-new-and-in-development"></a>Újdonságok és fejlesztés alatt levő megoldások
 
@@ -93,7 +93,7 @@ A következő műszaki konferencián készült felvételek a Finance and Operati
 
 ## <a name="blogs"></a>Blogok
 
-A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](/archive/blogs/axmfg/) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm/) több témakör is szól a gyártásról és az ellátásilánc-kezelésről. A bejegyezések legnagyobb része az előző verzióval kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban.
+A [Dynamics AX Manufacturing kutatás-fejlesztési csapatának blogjában](/archive/blogs/axmfg/) és a [Supply Chain Management in Dynamics AX kutatás-fejlesztési csapatának blogjában](https://blogs.msdn.microsoft.com/dynamicsaxscm/) több cikk is szól a gyártásról és az ellátásilánc-kezelésről. A bejegyezések legnagyobb része az előző verzióval kapcsolatban íródott, de ugyanazon fogalmak érvényesek továbbra is, és az eljárások is hasonlóak az aktuális verzióban.
 
 ## <a name="white-papers"></a>Tanulmányok
 

@@ -1,6 +1,6 @@
 ---
 title: Könyvelési vagy jelentési pénznem módosítása
-description: Ez a témakör azt ismerteti, hogyan módosítható a könyvelési vagy jelentési pénznem, illetve hogyan adható hozzá jelentési pénznem egy főkönyv beállításához.
+description: Ez a cikk azt ismerteti, hogyan módosítható a könyvelési vagy jelentési pénznem, illetve hogyan adható hozzá jelentési pénznem egy főkönyv beállításához.
 author: kweekley
 ms.date: 05/05/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2021-05-05
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: ff5c38193e8469cb806c525b77809844847d6c92
-ms.sourcegitcommit: 04e6c1c9400e1b582180cf3e0e4767434e736c26
+ms.openlocfilehash: b02432c8e0bdf52c2a588f67a581b78e682b1bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/05/2022
-ms.locfileid: "8710890"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904614"
 ---
 # <a name="change-the-accounting-or-reporting-currency"></a>Könyvelési vagy jelentési pénznem módosítása
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogyan módosítható a könyvelési vagy jelentési pénznem, illetve hogyan adható hozzá jelentési pénznem egy főkönyv beállításához.
+Ez a cikk azt ismerteti, hogyan módosítható a könyvelési vagy jelentési pénznem, illetve hogyan adható hozzá jelentési pénznem egy főkönyv beállításához.
 
 ## <a name="symptom"></a>Tünet
 
@@ -73,7 +73,7 @@ Kövesse ezeket a lépéseket a beállítási és alapadatok aktuális jogi szem
 10. A **Kiválasztott entitások** területen válassza a **Sablon hozzáadása** lehetőséget.
 11. Válassza ki a használni kívánt sablonokat. Az új jogi személy számára javasolt sablonok közé tartozik a **025 – Főkönyv** és a **Pénzügyek**. Javasoljuk, hogy tekintse át az összes többi rendelkezésre álló sablont is annak megállapításához, hogy ezek közül bármelyik vonatkozik-e az Ön követelményeire.
 12. Válassza a **Másolás jogi személybe** lehetőséget olyan kötegfolyamat elindításához, amely létrehozza a kijelölt entitásokat, és átmásolja őket a célként megadott jogi személybe.
-13. A folyamat befejezése után, de még a tranzakciók feladása előtt lépjen a főkönyvbe, és frissítse a könyvelési és jelentési pénznemeket a témakörben korábban leírtak szerint.
+13. A folyamat befejezése után, de még a tranzakciók feladása előtt lépjen a főkönyvbe, és frissítse a könyvelési és jelentési pénznemeket a cikkben korábban leírtak szerint.
 
 Ha új jogi személyt hozott létre a könyvelési vagy jelentési pénznem módosítása érdekében, ellenőrizze, hogy a nyitó egyenlegeket a rendszer átváltotta a régi jogi személy pénznemeiről az új pénznemeire.
 

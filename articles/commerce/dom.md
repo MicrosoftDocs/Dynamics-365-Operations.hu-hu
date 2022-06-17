@@ -1,6 +1,6 @@
 ---
 title: Felosztott rendeléskezelés (DOM)
-description: Ez a témakör a Dynamics 365 Commerce elosztott rendeléskezelés (DOM) funkcióját részletezi.
+description: Ez a cikk a Dynamics 365 Commerce elosztott rendeléskezelés (DOM) funkcióját részletezi.
 author: josaw1
 ms.date: 02/08/2022
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: f19fbe2a9f768a91c495a6a4bcb0e475adb867ae
-ms.sourcegitcommit: 8bea5a0c232ac31dcafddfcc0d715c496d8dd445
+ms.openlocfilehash: 26817321753c8e39d61957b4ea2004f20daf1b2f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 02/09/2022
-ms.locfileid: "8102009"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8878512"
 ---
 # <a name="distributed-order-management-dom"></a>Felosztott rendeléskezelés (DOM)
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a Microsoft Dynamics 365 Commerce elosztott rendeléskezelés (DOM) funkcióját részletezi.
+Ez a cikk a Microsoft Dynamics 365 Commerce elosztott rendeléskezelés (DOM) funkcióját részletezi.
 
 A DOM olyan többcsatornás rendelésteljesítés-optimalizálási megoldás, amely segít maximalizálni a rendelések teljesítését az ellátásilánc-hálózatokban. A DOM segítségével biztosíthatja, hogy a termékeket a megfelelő mennyiségben, a megfelelő forrásból és a megfelelő időben szállítsák a vevőknek. Ezen kívül a DOM használatával maximalizálhatja a nyereséget, minimálisra lehet csökkentheti a költségeket, és teljesítheti a szolgáltatásszintű követelményeket.
 

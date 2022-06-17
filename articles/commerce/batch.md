@@ -1,6 +1,6 @@
 ---
 title: Kötegelt nyomkövetésű cikkek továbbfejlesztett kezelése
-description: Ez a témakör a kötegelt nyomon követésű cikkek továbbfejlesztett kezelését mutatja be a kimutatások feladási folyamata során a Microsoft Dynamics 365 Commerce-ben.
+description: Ez a cikk a kötegelt nyomon követésű cikkek továbbfejlesztett kezelését mutatja be a kimutatások feladási folyamata során a Microsoft Dynamics 365 Commerce-ben.
 author: josaw1
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2019-05-28
 ms.dyn365.ops.version: 10
-ms.openlocfilehash: 513b6ca84fa71e851a5a3e4275e0b6572789e1eb
-ms.sourcegitcommit: a73df4ddc7f8ddc9e37269c0236dc1bb9b7c7966
+ms.openlocfilehash: 736ab8dd21f04d7119cca6d53bfeb5e408b8cbd2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "7485783"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8881878"
 ---
 # <a name="improved-handling-of-batch-tracked-items"></a>Kötegelt nyomkövetésű cikkek továbbfejlesztett kezelése
 
 [!include [banner](includes/banner.md)]
 
-Ez a témakör a kötegelt nyomon követésű cikkek továbbfejlesztett kezelését mutatja be a kimutatások feladási folyamata során a Microsoft Dynamics 365 Commerce-ben.
+Ez a cikk a kötegelt nyomon követésű cikkek továbbfejlesztett kezelését mutatja be a kimutatások feladási folyamata során a Microsoft Dynamics 365 Commerce-ben.
 
 A Dynamics 365 Commerce pénztár (POS) alkalmazásban a kötegelt nyomkövetésű cikkek kötegszámai nem rögzíthetők az értékesítés pillanatában. Bizonyos konfigurációk esetén azonban amikor az értékesítéseket a Commerce központban vevői rendeléseken vagy kimutatásfeladáson keresztül adják fel, a Commerce arra számít, hogy a kötegelt nyomkövetésű cikkekhez léteznek érvényes kötegszámok, és ezeket használják majd a számlázási folyamat során.
 

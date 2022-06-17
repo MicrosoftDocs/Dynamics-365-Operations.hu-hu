@@ -1,10 +1,10 @@
-- name: A Finance and Operations alkalmazások fejlesztése és felügyelete
+- name: A pénzügyi és műveleti alkalmazások fejlesztése és felügyelete
   items:
-    - name: A Finance and Operations alkalmazások fejlesztése és felügyelete
+    - name: A pénzügyi és műveleti alkalmazások fejlesztése és felügyelete
       items:
-        - name: A Finance and Operations-alkalmazás dokumentációja
+        - name: A pénzügyi és műveleti alkalmazás dokumentációja
           href: ../fin-ops/index.md
-        - name: A Finance and Operations alkalmazások fejlesztése és felügyelete
+        - name: A pénzügyi és műveleti alkalmazások fejlesztése és felügyelete
           href: index.md
         - name: Újdonságok és változások
           items:
@@ -202,7 +202,7 @@
                   href: data-entities/data-synchronize-date-and-time.md
                 - name: Bizonylatok importálása az Általános napló entitással
                   href: data-entities/tips-tricks-import-general-journal-entity.md
-                - name: Az adatáttelepítés optimalizálása a Finance and Operations alkalmazásokra
+                - name: Az adatáttelepítés optimalizálása a pénzügyi és műveleti alkalmazásokra
                   href: sysadmin/optimize-data-migration.md
             - name: Fejlesztés adatentitásokhoz
               items:
@@ -410,6 +410,8 @@
                       href: deployment/onprem-reverseproxy.md
                     - name: A Raktárkezelés alkalmazás konfigurálása helyszíni telepítések esetében
                       href: deployment/warehousing-for-on-premise-deployments.md
+                    - name: Az RSAT engedélyezése a Finance + Operations (on-premises) környezetekben
+                      href: deployment/onprem-rsat-configuration.md
                     - name: Hálózati nyomtatók helyszíni környezetben történő telepítése
                       href: analytics/install-network-printer-onprem.md
                     - name: Helyszíni diagnosztika
@@ -1048,6 +1050,8 @@
                   href: lifecycle-services/dts-devops-extension.md
                 - name: Azure DevOps bővítmény oktatóanyag (nyilvános előzetes verzió)
                   href: lifecycle-services/dts-ado-tutorial.md
+                - name: Dynamics 365 Translation Service Visual Studio kódbővítmény (nyilvános előzetes verzió)
+                  href: lifecycle-services/dts-vscode-doc.md
         - name: Microsoft Power Platform-integráció
           items:
             - name: Áttekintés
@@ -1076,9 +1080,9 @@
                       href: data-entities/dual-write/sync-limits.md
                     - name: Kettős írás beállítása a Lifecycle Services szolgáltatásból
                       href: data-entities/dual-write/lcs-setup.md
-                    - name: Kettős írás engedélyezése meglévő Finance and Operations alkalmazásokhoz
+                    - name: Kettős írás engedélyezése meglévő pénzügyi és műveleti alkalmazásokhoz
                       items:
-                        - name: Kettős írás engedélyezése meglévő Finance and Operations alkalmazásokhoz
+                        - name: Kettős írás engedélyezése meglévő pénzügyi és műveleti alkalmazásokhoz
                           href: data-entities/dual-write/enable-dual-write.md
                         - name: Rendszerkövetelmények és előfeltételek
                           href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -1192,15 +1196,15 @@
                           href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
                         - name: Élő szinkronizálási problémák elhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-                        - name: A Finance and Operations alkalmazások kettős írással kapcsolatos problémáinak elhárítása
+                        - name: A pénzügyi és műveleti alkalmazások kettős írással kapcsolatos problémáinak elhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
                         - name: A félhez tartozó és globális címjegyzék problémáinak hibaelhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
                         - name: A megoldások érzékenységével kapcsolatos problémák elhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-                        - name: A Finance and Operations alkalmazások frissítéseivel kapcsolatos problémák elhárítása
+                        - name: A pénzügyi és műveleti alkalmazások frissítéseivel kapcsolatos problémák elhárítása
                           href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-                        - name: A kettős írás Finance and Operations alkalmazásokban és a Dataverse-ben történő konfigurálásának igazolása
+                        - name: A kettős írás pénzügyi és műveleti alkalmazásokban és a Dataverse-ben történő konfigurálásának igazolása
                           href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
                         - name: Hibakódok a táblaleképezési állapot-ellenőrzéshez
                           href: data-entities/dual-write/table-map-health-check.md
@@ -1574,9 +1578,9 @@
               href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
             - name: Támogatás kérése a Kínában a 21Vianet által működtetett Finance and Operations szolgáltatással kapcsolatban
               href: lifecycle-services/21vianet-support.md
-            - name: Műszaki támogatás beállítása a Finance and Operations alkalmazásokhoz
+            - name: Műszaki támogatás beállítása a pénzügyi és műveleti alkalmazásokhoz
               href: lifecycle-services/support-experience.md
-            - name: A Finance and Operations alkalmazások támogatási tapasztalatainak kezelése
+            - name: A pénzügyi és műveleti alkalmazások támogatási tapasztalatainak kezelése
               href: lifecycle-services/cloud-powered-support-lcs.md
             - name: Üzemeléstámogatás és -felügyelet
               href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
@@ -1604,7 +1608,7 @@
                   href: sysadmin/role-based-security.md
                 - name: Biztonsági architektúra
                   href: sysadmin/security-architecture.md
-                - name: Titkosítás a Finance and Operations alkalmazásokban
+                - name: Titkosítás a pénzügyi és műveleti alkalmazásokban
                   href: sysadmin/encryption.md
                 - name: Munkamenet inaktivitási időkorlátjának beállítása
                   href: sysadmin/session-idle-timeout.md

@@ -1,6 +1,6 @@
 ---
 title: Év végi záráskor hiányzó nyitó egyenlegek
-description: Ez a témakör ismerteti, hogy miért hiányozhatnak nyitó egyenlegek egy év zárásakor, és hogyan tudja újból létrehozni ezeket az egyenlegeket, amennyiben hiányoznak.
+description: Ez a cikk ismerteti, hogy miért hiányozhatnak nyitó egyenlegek egy év zárásakor, és hogyan tudja újból létrehozni ezeket az egyenlegeket, amennyiben hiányoznak.
 author: kweekley
 ms.date: 05/12/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 582363ba6c5f6e63e695d41e73ee2f0b382cf26e
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 9b64118fc3ff368e21ea8935c1e706f2161c620f
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8727172"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8894848"
 ---
 # <a name="year-end-close-missing-opening-balances"></a>Év végi záráskor hiányzó nyitó egyenlegek
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör ismerteti, hogy miért hiányozhatnak nyitó egyenlegek egy év zárásakor, és hogyan tudja újból létrehozni ezeket az egyenlegeket, amennyiben hiányoznak.
+Ez a cikk ismerteti, hogy miért hiányozhatnak nyitó egyenlegek egy év zárásakor, és hogyan tudja újból létrehozni ezeket az egyenlegeket, amennyiben hiányoznak.
 
 ### <a name="symptom"></a>Tünet
 
@@ -36,7 +36,7 @@ Az alábbiakat érdemes ellenőriznie, ha végrehajtotta az év zárását a Fő
 
 Ha az **Előző zárás visszavonása** mezőnél az **Igen** érték szerepel, a rendszer ugyanarra a pénzügyi évre vonatkozóan vissza fogja vonni az előző év végi zárást. Az év végi zárás visszavonási folyamatának futtatásakor a program a záró és nyitó egyenlegekhez kapcsolódó összes bejegyzést törli, mintha az évet nem zárták volna még le. A program a bizonylatokat is törli. A program nem indítja el automatikusan újra az év végi zárás folyamatát. A folyamatot Önnek kell újraindítania. Ügyeljen rá, hogy az **Előző zárás visszavonása** lehetőség értékét a **Nem** értékre frissítse.
 
-Ezt a forgatókönyvet az év végi zárással kapcsolatos GYIK témakör tárgyalja. További információ: [Év végi tevékenységek GYIK](faq-year-end-activities.md).
+Ezt a forgatókönyvet az év végi zárással kapcsolatos GYIK-cikk tárgyalja. További információ: [Év végi tevékenységek GYIK](faq-year-end-activities.md).
 
 ### <a name="symptom"></a>Tünet
 

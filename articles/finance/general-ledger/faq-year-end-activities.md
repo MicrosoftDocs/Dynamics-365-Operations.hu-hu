@@ -1,6 +1,6 @@
 ---
 title: Év végi tevékenységek – GYIK
-description: Ebben a témakörben láthatja az év lezárásakor felmerülő kérdéseket, valamint azokat a válaszokat, az év végi zárással kapcsolatos tevékenységek terén nyújtanak segítséget.
+description: Ebben a cikkben láthatja az év lezárásakor felmerülő kérdéseket, valamint azokat a válaszokat, az év végi zárással kapcsolatos tevékenységek terén nyújtanak segítséget.
 author: moaamer
 ms.date: 12/21/2021
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: moaamer
 ms.search.validFrom: 2020-12-14
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 19d23c2c5a8fabd6799c6240c25f3ede4064c001
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 1c5aca6180821dfc9fd1d475d4726c82acdf4d78
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725600"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865740"
 ---
 # <a name="year-end-activities-faq"></a>Év végi tevékenységek – GYIK 
 
 [!include [banner](../includes/banner.md)]
 
-Ebben a témakörben láthatja az év lezárásakor felmerülő kérdéseket, valamint azokat a válaszokat, az év végi zárással kapcsolatos tevékenységek terén nyújtanak segítséget. Ez a témakör elsősorban a főkönyvhöz és a kötelezettségekhez kapcsolódó, év végi zárással kapcsolatos tevékenységekkel foglalkozik.
+Ebben a cikkben láthatja az év lezárásakor felmerülő kérdéseket, valamint azokat a válaszokat, az év végi zárással kapcsolatos tevékenységek terén nyújtanak segítséget. Ez a cikk elsősorban a főkönyvhöz és a kötelezettségekhez kapcsolódó, év végi zárással kapcsolatos tevékenységekkel foglalkozik.
 
 ## <a name="general-ledger-year-end-enhancements"></a>Főkönyv év végi fejlesztései 
 A 10.0.20-as verzió egy év végi zárási funkciót is bevezetett, amely a 10.0.25-ös verziótól kezdődően már alapértelmezett módon aktiválva lesz. Ha szervezete a 10.0.25-ösnél korábbi verziót használ, javasoljuk, hogy az év végi zárási folyamat megkezdése előtt aktiválja ezt a funkciót. Ahhoz, hogy használhassa a funkciót, először aktiválnia kell a rendszerében. A rendszergazdák a Funkciókezelés munkaterület segítségével ellenőrizhetik a funkció állapotát, és szükség esetén bekapcsolhatják. A funkció a következő módon jelenik meg:
@@ -75,7 +75,7 @@ A szükségtelen dimenziókészletek a **BudgetDimensionFocusInitializeBalance**
 [![Pénzügyi dimenziókészletek.](./media/faq-2020-yr-end-04.png)](./media/faq-2020-yr-end-04.png)
 
 ### <a name="year-end-close-template-configuration"></a>Év végi zárásra vonatkozó sablon konfigurálása
-Az év végi zárásra vonatkozó sablon segítségével a szervezetek kiválaszthatják a pénzügyidimenzió-szintet, amelyet az eredményegyenlegek mérleg szerinti egyenlegbe való átviteléhez szeretnének használni. A beállítások segítségével a szervezetek kezelhetik a részletes pénzügyi dimenziókat (**Az összes lezárása**), amikor az egyenlegeket átviszik a mérleg szerinti eredménybe, vagy ha úgy döntenek, hogy az összegeket egyetlen dimenzióértékben szeretnék összegezni (**Egyetlen lezárása**). Ezt minden pénzügyi dimenziónál meg lehet határozni. A beállításokkal kapcsolatos további információkért lásd az [Év végi zárás](year-end-close.md) című témakört.
+Az év végi zárásra vonatkozó sablon segítségével a szervezetek kiválaszthatják a pénzügyidimenzió-szintet, amelyet az eredményegyenlegek mérleg szerinti egyenlegbe való átviteléhez szeretnének használni. A beállítások segítségével a szervezetek kezelhetik a részletes pénzügyi dimenziókat (**Az összes lezárása**), amikor az egyenlegeket átviszik a mérleg szerinti eredménybe, vagy ha úgy döntenek, hogy az összegeket egyetlen dimenzióértékben szeretnék összegezni (**Egyetlen lezárása**). Ezt minden pénzügyi dimenziónál meg lehet határozni. A beállításokkal kapcsolatos további információkért lásd az [Év végi zárás](year-end-close.md) című cikket.
 
 A teljesítmény javítása érdekében javasoljuk, hogy értékelje ki a szervezet igényeit, és ha lehetséges, zárjon le a lehető legtöbb dimenziót az **Egyetlen lezárása** év végi lehetőséggel. Ha egyetlen dimenzióértékre (amely üres érték is lehet) végez lezárást, a rendszer kevésbé részletes számításokat végez az eredmény-zárószámla bejegyzéseire vonatkozó egyenleg meghatározásakor.
 

@@ -1,6 +1,6 @@
 ---
-title: A Finance and Operations-alkalmazás dokumentációja
-description: A Finance and Operations-alkalmazások dokumentációja.
+title: A pénzügyi és műveleti alkalmazás dokumentációja
+description: A pénzügyi és műveleti alkalmazások dokumentációja.
 author: tonyafehr
 ms.date: 04/13/2021
 ms.topic: index-page
@@ -14,18 +14,18 @@ ms.search.region: Global
 ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: cf2278cbf47c5fd2937e7da55c8777709ab7d356
-ms.sourcegitcommit: 89655f832e722cefbf796a95db10c25784cc2e8e
+ms.openlocfilehash: c6f646b3216c73e14b550dc438c500a569bb799c
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 01/31/2022
-ms.locfileid: "8075397"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8865832"
 ---
-# <a name="finance-and-operations-application-documentation"></a>A Finance and Operations-alkalmazás dokumentációja
+# <a name="finance-and-operations-application-documentation"></a>A pénzügyi és műveleti alkalmazás dokumentációja
 
 [!include [banner](includes/banner.md)]
 
-Ismerje meg, hogyan használhatja a vállalkozásában a Finance and Operations-alkalmazásokat. A cikk erőforrásai a végfelhasználók, a fejlesztők és az informatikai szakemberek számára is hasznosak lehetnek. 
+Ismerje meg, hogyan használhatja a vállalkozásában a pénzügyi és műveleti alkalmazásokat. A cikk erőforrásai a végfelhasználók, a fejlesztők és az informatikai szakemberek számára is hasznosak lehetnek. 
 
 Az alábbi tartalmak nagy része a kapcsolódó termékekre: Dynamics 365 Commerce és Dynamics 365 Human Resources is érvényes. 
 

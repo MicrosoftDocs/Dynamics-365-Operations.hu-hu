@@ -1,6 +1,6 @@
 ---
 title: Bevételelszámolás újbóli felosztása
-description: Ez a témakör az újbóli felosztás lehetőségét ismerteti, amellyel a szervezetek újraszámíthatják a bevételi árakat, ha megváltoznak a szerződéses értékesítési feltételek. Más témakörökre mutató hivatkozásokat is talál itt, amelyek a bevételelszámolás különböző eseteit írják le.
+description: Ez a cikk az újbóli felosztás lehetőségét ismerteti, amellyel a szervezetek újraszámíthatják a bevételi árakat, ha megváltoznak a szerződéses értékesítési feltételek. Más témakörökre mutató hivatkozásokat is talál itt, amelyek a bevételelszámolás különböző eseteit írják le.
 author: kweekley
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 7528202ed140dc2c0a7fc8c595178f155c3c1f75
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: a79288fd69a2e7780ff03952b05b99db2ed88e41
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726127"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8903420"
 ---
 # <a name="revenue-recognition-reallocation"></a>Bevételelszámolás újbóli felosztása
 
@@ -58,7 +58,7 @@ Az újból felosztás folyamatát egy paraméter befolyásolja.
 
 Mivel az újbóli felosztást a részben vagy teljesen kiszámlázott értékesítési rendeléseken lehet lefuttatni, a számla minden korábbi könyvelési tételét az új, újbóli felosztás szerinti bevételi árak alkalmazásával kell korrigálni. A korrekcióhoz sztornírozni kell az eredeti számlához tartozó könyvelési tételt, majd fel kell adni az újbóli felosztás szerinti bevételi árakon alapuló új könyvelési tételt.
 
-Minden szervezetnek el kell döntenie, hogy a korrekció csak a főkönyvet frissítse vagy a kinnlevőségeket is. Ennek alapján ki kell választani a megfelelő beállításokat a **Számlajavítások feladása a Kinnlevőségekbe** lehetőségnél, amely a **Bevételelszámolás** lapon, a **Főkönyvi paraméterek** oldalon található (**Bevételelszámolás \> Beállítás \> Főkönyvi paraméterek**). A megfelelő beállítás az adott esettől függ. A lehetséges esetekkel kapcsolatos további információkért nyissa meg a témakör későbbi részében, az [Újbóli felosztáshoz kapcsolódó esetek](#scenarios-for-reallocation) című szakaszában található hivatkozásokat.
+Minden szervezetnek el kell döntenie, hogy a korrekció csak a főkönyvet frissítse vagy a kinnlevőségeket is. Ennek alapján ki kell választani a megfelelő beállításokat a **Számlajavítások feladása a Kinnlevőségekbe** lehetőségnél, amely a **Bevételelszámolás** lapon, a **Főkönyvi paraméterek** oldalon található (**Bevételelszámolás \> Beállítás \> Főkönyvi paraméterek**). A megfelelő beállítás az adott esettől függ. A lehetséges esetekkel kapcsolatos további információkért nyissa meg a cikk későbbi részében, az [Újbóli felosztáshoz kapcsolódó esetek](#scenarios-for-reallocation) című szakaszában található hivatkozásokat.
 
 [![A Bevételelszámolás lap a Főkönyvi paraméterek oldalon.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
@@ -90,7 +90,7 @@ Az újbóli felosztási folyamat elindításához válassza **Az ár újrafelosz
 
 [![Az ár újrafelosztása új rendelési sorokba oldal.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-**Az ár újrafelosztása új rendelési sorokba** oldal felső rácsának neve **Értékesítés**. Itt láthatja a vevőhöz tartozó értékesítési rendeléseket. Válassza ki az újból felosztani kívánt értékesítési rendeléseket. Ha valamelyik értékesítési rendeléshez már tartozik újrafelosztási azonosító, ezt a rendelést egy másik felhasználó már megjelölte újbóli felosztásra. Ha egy vagy több értékesítési rendelésnél előzőleg ismételt elosztás történt, és egy másik újraelosztásban kell ezeknek szerepelniük, akkor először vissza kell vonni ezeknek az értékesítési rendeléseknek az ismételt elosztását. Csak ezután lehet őket bevonni egy új újrafelosztásban. A részletesebb információkért lásd az [Újrafelosztás visszavonása](#undo-a-reallocation) és [Többszöri újrafelosztás](#reallocate-multiple-times) szakaszokat később ebben a témában.
+**Az ár újrafelosztása új rendelési sorokba** oldal felső rácsának neve **Értékesítés**. Itt láthatja a vevőhöz tartozó értékesítési rendeléseket. Válassza ki az újból felosztani kívánt értékesítési rendeléseket. Ha valamelyik értékesítési rendeléshez már tartozik újrafelosztási azonosító, ezt a rendelést egy másik felhasználó már megjelölte újbóli felosztásra. Ha egy vagy több értékesítési rendelésnél előzőleg ismételt elosztás történt, és egy másik újraelosztásban kell ezeknek szerepelniük, akkor először vissza kell vonni ezeknek az értékesítési rendeléseknek az ismételt elosztását. Csak ezután lehet őket bevonni egy új újrafelosztásban. A részletesebb információkért lásd az [Újrafelosztás visszavonása](#undo-a-reallocation) és [Többszöri újrafelosztás](#reallocate-multiple-times) szakaszokat később ebben a cikkben.
 
 A lap alsó rácsának neve **Sorok**. Ha az **Értékesítés** rácsban kiválasztotta a kívánt értékesítési rendeléseket, a **Sorok** rácsban megjelennek a kapcsolódó értékesítésirendelés-sorok. Válassza ki az újból felosztani kívántértékesítésirendelés-sorokat. Ha csak egy értékesítési rendelést választott ki, az ahhoz tartozó sorokat újból fel kell osztani. Ez akkor fordulhat elő, ha az értékesítési rendelés egyik sorát korábban már kiszámlázták, majd új sort adtak hozzá a rendeléshez, vagy egy meglévő sort eltávolítottak vagy érvénytelenítettek. Az eltávolított sorok nem jelennek meg a rácsban. Ezért ezek nem választhatók ki. A rendszer azonban ezeket is figyelembe veszi az újbóli felosztási folyamat futtatásakor.
 

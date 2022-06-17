@@ -1,6 +1,6 @@
 ---
 title: Mezők hozzáadása Excel-munkafüzethez a kiskereskedelmi tranzakciók szerkesztéséhez
-description: Ez a témakör azt ismerteti, hogy miként adhat mezőket a Microsoft Excel-munkafüzethez a kiskereskedelmi tranzakciók szerkesztéséhez a Microsoft Dynamics 365 Commerce szolgáltatásban.
+description: Ez a cikk azt ismerteti, hogy miként adhat mezőket a Microsoft Excel-munkafüzethez a kiskereskedelmi tranzakciók szerkesztéséhez a Microsoft Dynamics 365 Commerce szolgáltatásban.
 author: josaw1
 ms.date: 11/04/2020
 ms.topic: index-page
@@ -15,18 +15,18 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2018-11-15
 ms.dyn365.ops.version: ''
-ms.openlocfilehash: 359d4c360238db746402321a82f825f0d2c9a88a012800c5455d453e3a8bda73
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 2abf121f42d8196e52ef98f1dcb4f6b6d9004140
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6725458"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8867812"
 ---
 # <a name="add-fields-to-an-excel-workbook-to-edit-retail-transactions"></a>Mezők hozzáadása Excel-munkafüzethez a kiskereskedelmi tranzakciók szerkesztéséhez
 
 [!include [banner](../includes/banner.md)]
 
-Ez a témakör azt ismerteti, hogy miként adhat mezőket a Microsoft Excel-munkafüzethez a kiskereskedelmi tranzakciók szerkesztéséhez a Microsoft Dynamics 365 Commerce szolgáltatásban.
+Ez a cikk azt ismerteti, hogy miként adhat mezőket a Microsoft Excel-munkafüzethez a kiskereskedelmi tranzakciók szerkesztéséhez a Microsoft Dynamics 365 Commerce szolgáltatásban.
 
 ## <a name="overview"></a>Áttekintés
 

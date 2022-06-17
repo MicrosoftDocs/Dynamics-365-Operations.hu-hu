@@ -1,6 +1,6 @@
 ---
 title: Bevételelszámolás újbóli felosztása – 2. eset
-description: Ebben a témakörben az újbóli felosztásnak azt az esetét mutatjuk be, amelyben két értékesítési rendelést adnak meg, majd a vevő az első értékesítési rendelés számlázása után hozzáad egy további cikket a szerződéshez. Amikor új cikket ad hozzá egy szerződéshez, a cikket hozzáadhatja egy új vagy egy meglévő értékesítési rendeléshez.
+description: Ebben a cikkben az újbóli felosztásnak azt az esetét mutatjuk be, amelyben két értékesítési rendelést adnak meg, majd a vevő az első értékesítési rendelés számlázása után hozzáad egy további cikket a szerződéshez. Amikor új cikket ad hozzá egy szerződéshez, a cikket hozzáadhatja egy új vagy egy meglévő értékesítési rendeléshez.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 4026b8c69e51cb33c64bcf71a62a13b28b86bd49
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: dec8dba9848b77e5c0a1007102789c8f88185fbc
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726154"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904844"
 ---
 # <a name="revenue-recognition-reallocation--scenario-2"></a>Bevételelszámolás újbóli felosztása – 2. eset
 
 [!include [banner](../includes/banner.md)]
 
-Ebben a témakörben az újbóli felosztásnak azt az esetét mutatjuk be, amelyben két értékesítési rendelést adnak meg, majd a vevő az első értékesítési rendelés számlázása után hozzáad egy további cikket a szerződéshez. Amikor új cikket ad hozzá egy szerződéshez, a cikket hozzáadhatja egy új vagy egy meglévő értékesítési rendeléshez.
+Ebben a cikkben az újbóli felosztásnak azt az esetét mutatjuk be, amelyben két értékesítési rendelést adnak meg, majd a vevő az első értékesítési rendelés számlázása után hozzáad egy további cikket a szerződéshez. Amikor új cikket ad hozzá egy szerződéshez, a cikket hozzáadhatja egy új vagy egy meglévő értékesítési rendeléshez.
 
 Ennél az esetnél a **Számlajavítások feladása a Kinnlevőségekbe** beállítás a **Nem** értékre van állítva. Ez a beállítás a **Bevételelszámolás** lapon, a **Főkönyvi paraméterek** oldalon található. (**Bevételelszámolás \> Beállítás \> Főkönyvi paraméterek**).
 

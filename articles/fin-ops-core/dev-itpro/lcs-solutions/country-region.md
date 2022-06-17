@@ -1,6 +1,6 @@
 ---
 title: Globalizációs erőforrások
-description: Ez a témakör olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország- és régióspecifikus funkciókról és ajánlatokról.
+description: Ez a cikk olyan erőforráslistákat tartalmaz, amelyek segítségével többet tudhat meg az ország- és régióspecifikus funkciókról és ajánlatokról.
 author: kfend
 ms.date: 02/19/2021
 ms.topic: index-page
@@ -14,27 +14,27 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.openlocfilehash: 822f00c21715b928027a7656f299a693686bf5dfc01f1f5a1738d5eb8d4bf124
-ms.sourcegitcommit: 42fe9790ddf0bdad911544deaa82123a396712fb
+ms.openlocfilehash: 4935d54a911701fda4740e3a1116c139730ceb08
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "6747515"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8866537"
 ---
 # <a name="globalization-resources"></a>Globalizációs erőforrások
 
 ## <a name="local-and-regional-deployments"></a>Helyi és regionális telepítések
 Ha a kormányzati szabályozás előírja, hogy az adatokat a többi országtól/régiótól eltérően kell tárolni vagy karbantartani, előfordulhat, hogy az adott országban/régióban érvényes követelményeknek kell megfelelni a rendszer telepítésekor. Vegye figyelembe a következő erőforrásokat, amelyek fontosak lehetnek az Ön számára:
 
-[Finance and Operations-alkalmazások, amelyeket a 21Vianet működtet Kínában](../deployment/china-local-deployment.md)
+[A pénzügyi és műveleti alkalmazások üzemeltetője Kínában a 21Vianet](../deployment/china-local-deployment.md)
 
 ## <a name="localization-and-regulatory-features"></a>Honosítási és szabályozási funkciók
 
 [!include [banner](../includes/banner.md)]
 
-A Finance and Operations-alkalmazások tartalmazzák a [Termékhonosítási és -fordítási rendelkezésre állási útmutatóban](https://aka.ms/dynamics_365_international_availability_deck) rögzített országokban/régiókban elérhető funkciókat. Ez a funkció az aktív jogi személy elsődleges címe alapján van engedélyezve. 
+A pénzügyi és műveleti alkalmazások tartalmazzák a [Termékhonosítási és -fordítási rendelkezésre állási útmutatóban](https://aka.ms/dynamics_365_international_availability_deck) rögzített országokban/régiókban elérhető funkciókat. Ez a funkció az aktív jogi személy elsődleges címe alapján van engedélyezve. 
 
-Ez a témakör olyan erőforrások listáját tartalmazza, amelyek segítségével a következőket teheti: 
+Ez a cikk olyan erőforrások listáját tartalmazza, amelyek segítségével a következőket teheti: 
 - További információkat szerezhet ország- vagy régióspecifikus megoldások kialakításáról.
 - Ország- vagy régióspecifikus frissítéseket kaphat.
 - Szabályozási figyelmeztetéseket küldhet el és ellenőrizhet.
@@ -62,8 +62,8 @@ A következő erőforrások a tervezett és új honosítási funkciókat ismerte
 #### <a name="dynamics-365-release-plans"></a>Dynamics 365 programverzióra vonatkozó kiadási tervek
 A [Dynamics 365 programverzióra vonatkozó kiadási tervek](/business-applications-release-notes/) ismertetik a Dynamics 365 üzleti alkalmazások és az alkalmazásplatformok tervezett új és továbbfejlesztett képességeit. 
 
-#### <a name="finance-and-operations-apps-whats-new"></a>Finance and Operations alkalmazások újdonságai
-Az [Új és módosult elemek szakasz a Finance and Operations kezdőlapján](../../fin-ops/get-started/whats-new-changed.md) felsorolja azokat a funkciókat, amelyek a Finance and Operations-alkalmazások meghatározott kiadásaiban szerepelnek.
+#### <a name="finance-and-operations-apps-whats-new"></a>pénzügyi és műveleti alkalmazások – újdonságok
+Az [Új vagy módosult elemek a Finance and Operations kezdőoldalán](../../fin-ops/get-started/whats-new-changed.md) szakasz felsorolja azokat a funkciókat, amelyek a pénzügyi és műveleti alkalmazások meghatározott kiadásaiban szerepelnek.
 
 ### <a name="electronic-reporting"></a>Elektronikus jelentéskészítés
 Az elektronikus jelentéskészítési (ER) eszközzel a különböző országok/régiók jogi követelményeinek megfelelően konfigurálható az elektronikus dokumentumok formátuma. Az ER lehetővé teszi, hogy ezeket a formátumokat a teljes életciklusuk során kezelje. További tájékoztatás a következő témakörök egyikében található:

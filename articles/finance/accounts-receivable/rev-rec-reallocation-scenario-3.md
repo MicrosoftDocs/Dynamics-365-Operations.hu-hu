@@ -1,6 +1,6 @@
 ---
 title: Bevételelszámolás újbóli felosztása – 3. eset
-description: Ebben a témakörben az újbóli felosztásnak azt az esetét mutatjuk be, amikor egy meglévő, számlázott értékesítési rendeléshez új sort adnak hozzá. Amikor új cikket ad hozzá egy szerződéshez, a cikket hozzáadhatja egy új vagy egy meglévő értékesítési rendeléshez.
+description: Ebben a cikkben az újbóli felosztásnak azt az esetét mutatjuk be, amikor egy meglévő, számlázott értékesítési rendeléshez új sort adnak hozzá. Amikor új cikket ad hozzá egy szerződéshez, a cikket hozzáadhatja egy új vagy egy meglévő értékesítési rendeléshez.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -13,18 +13,18 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2020-12-21
 ms.dyn365.ops.version: 10.0.14
-ms.openlocfilehash: 3b3b41b09cc9f4c56fdb04f6a2c4156bc1637699
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 7aa62406a80eb3381206172caaae457ec71b7bf8
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8726577"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8904816"
 ---
 # <a name="revenue-recognition-reallocation--scenario-3"></a>Bevételelszámolás újbóli felosztása – 3. eset
 
 [!include [banner](../includes/banner.md)]
 
-Ebben a témakörben az újbóli felosztásnak azt az esetét mutatjuk be, amikor egy meglévő, számlázott értékesítési rendeléshez új sort adnak hozzá. Amikor új cikket ad hozzá egy szerződéshez, a cikket hozzáadhatja egy új vagy egy meglévő értékesítési rendeléshez. Ez az eset azt is bemutatja, hogy mi történik akkor, ha a rendszer az újbóli felosztás miatt frissíti a kinnlevőségeket.
+Ebben a cikkben az újbóli felosztásnak azt az esetét mutatjuk be, amikor egy meglévő, számlázott értékesítési rendeléshez új sort adnak hozzá. Amikor új cikket ad hozzá egy szerződéshez, a cikket hozzáadhatja egy új vagy egy meglévő értékesítési rendeléshez. Ez az eset azt is bemutatja, hogy mi történik akkor, ha a rendszer az újbóli felosztás miatt frissíti a kinnlevőségeket.
 
 Ebben az esetben a **Számlajavítások feladása a Kinnlevőségekbe** lehetőség az **Igen** értékre van állítva. Ez a beállítás a **Bevételelszámolás** lapon, a **Főkönyvi paraméterek** oldalon található. (**Bevételelszámolás \> Beállítás \> Főkönyvi paraméterek**).
 

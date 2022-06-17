@@ -1,6 +1,6 @@
 ---
 title: Halasztott bevétel elszámolása
-description: Ez a témakör a bevétel Bevétel megjelenítése funkcióval történő megjelenítését ismerteti.
+description: Ez a cikk a bevétel Bevétel megjelenítése funkcióval történő megjelenítését ismerteti.
 author: kweekley
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 42e9aa20eb6f4a1c14f83c5a18a4699489a932a3
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 638e56c9bbbe0b377e804aa2ff55ffe4eded21f4
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725932"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8902544"
 ---
 # <a name="recognize-deferred-revenue"></a>Halasztott bevétel elszámolása
 
@@ -27,7 +27,7 @@ ms.locfileid: "8725932"
 > [!NOTE]
 > A bevételelszámolási funkció nem kapcsolható be a Funkciókezelés lehetőségen keresztül. Jelenleg konfigurációs kulcsok használatával kapcsolhatja be.
 
-Ez a témakör a bevételeknek a bevételmegjelenítési ütemezésben történő megjelenítését ismerteti. Amikor felad egy számlát egy értékesítési rendeléshez, a rendszer az értékesítési rendelés összes olyan sorához bevételmegjelenítési ütemezést hoz létre, amelyik rendelkezik bevételütemezéssel. A rendszer a sorban szereplő bevételütemezés alapján határozza meg, hogy el kell-e halasztani a sor bevételét.
+Ez a cikk a bevételeknek a bevételmegjelenítési ütemezésben történő megjelenítését ismerteti. Amikor felad egy számlát egy értékesítési rendeléshez, a rendszer az értékesítési rendelés összes olyan sorához bevételmegjelenítési ütemezést hoz létre, amelyik rendelkezik bevételütemezéssel. A rendszer a sorban szereplő bevételütemezés alapján határozza meg, hogy el kell-e halasztani a sor bevételét.
 
 ## <a name="view-revenue-recognition-schedule-details"></a>A bevételmegjelenítési ütemezés részleteinek megtekintése
 

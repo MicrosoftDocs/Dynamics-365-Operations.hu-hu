@@ -1,6 +1,6 @@
 ---
 title: Értékesítési rendelések bevételelszámolása
-description: Ez a témakör az értékesítési rendelések és számlák bevételének elkönyveléséhez szükséges alapvető funkciókat ismerteti. A bevételkönyvelés az értékesítési rendelés és az értékesítési rendelésből létrehozott megfelelő számla esetében érhető el.
+description: Ez a cikk az értékesítési rendelések és számlák bevételének elkönyveléséhez szükséges alapvető funkciókat ismerteti. A bevételkönyvelés az értékesítési rendelés és az értékesítési rendelésből létrehozott megfelelő számla esetében érhető el.
 author: kweekley
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -13,12 +13,12 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
-ms.openlocfilehash: 7aaa5e7c3b568400c72a1a84b5f29082579aeeae
-ms.sourcegitcommit: 631d2cea52590af15f208e9af584446e85540fcf
+ms.openlocfilehash: 5df7341160940f5c5db0dd4c5d86e4d9698d22e2
+ms.sourcegitcommit: 52b7225350daa29b1263d8e29c54ac9e20bcca70
 ms.translationtype: HT
 ms.contentlocale: hu-HU
-ms.lasthandoff: 05/07/2022
-ms.locfileid: "8725484"
+ms.lasthandoff: 06/03/2022
+ms.locfileid: "8899957"
 ---
 # <a name="revenue-recognition-on-sales-orders"></a>Értékesítési rendelések bevételelszámolása
 
@@ -27,10 +27,10 @@ ms.locfileid: "8725484"
 > [!NOTE]
 > A bevételelszámolási funkció nem kapcsolható be a Funkciókezelés lehetőségen keresztül. Jelenleg konfigurációs kulcsok használatával kapcsolhatja be.
 
-Ez a témakör az értékesítési rendelések és számlák bevételének elkönyveléséhez szükséges alapvető funkciókat ismerteti. A bevételkönyvelés az adott értékesítési rendelés és az értékesítési rendelésből létrehozott megfelelő számla esetében érhető el. Az értékesítési rendelés idő- és anyagelszámolású projekttel is létrehozható.
+Ez a cikk az értékesítési rendelések és számlák bevételének elkönyveléséhez szükséges alapvető funkciókat ismerteti. A bevételkönyvelés az adott értékesítési rendelés és az értékesítési rendelésből létrehozott megfelelő számla esetében érhető el. Az értékesítési rendelés idő- és anyagelszámolású projekttel is létrehozható.
 
 > [!NOTE]
-> Az ebben a témakörben található ábrákon hozzáadunk vagy eltávolítunk oszlopokat a táblázatokból, hogy jobban megjelenjenek a fogalmak. Ennek megfelelően előfordulhat, hogy az ábrán látható oldalak és adatok eltérnek a termékben láthatótól.
+> Az ebben a cikkben található ábrákon hozzáadunk vagy eltávolítunk oszlopokat a táblázatokból, hogy jobban megjelenjenek a fogalmak. Ennek megfelelően előfordulhat, hogy az ábrán látható oldalak és adatok eltérnek a termékben láthatótól.
 
 ## <a name="enter-a-sales-order"></a>Értékesítési rendelés megadása
 
